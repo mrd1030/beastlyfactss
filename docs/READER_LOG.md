@@ -5572,3 +5572,86 @@ First two changes: make the hub inherit the deep dives' numbers so tank size, ta
 - Sexing, calling, and breeding behavior in a mixed group.
 - Choosing a healthy animal at point of sale in a mostly wild-caught trade.
 - Keeping a room under 75 degrees beyond a fan or air conditioning. The axolotl tubbing and cooling guide covers cooling only for a sick axolotl.
+
+## Quaker Parakeet (2026-09-15, batch L)
+
+Raw reader output, one Opus agent, 8-page extract (hub, encyclopedia, cost,
+handling, health issues, tank setup, enrichment, legal).
+
+**1. Page by page**
+- 00 Hub: finished it. Actionable: cage spec, toxic food list, no non-stick, checklist. Grade B.
+- 01 Encyclopedia: finished it, short and honest about the JFK crate myth. Little to act on beyond size and lifespan. Grade B.
+- 02 Cost: finished it. The only page with real numbers I can budget from, dated and attributed to named retailers and clinics. Grade A-.
+- 03 Legal + handling: finished it, then distrusted it. Its state list contradicts 07, and nothing in it teaches handling. Grade D.
+- 04 Health: finished it. Actionable: the symptom lists, the vet-first rule. Grade B.
+- 05 Cage setup: finished it fast, it is thin. Actionable: size, bar gauge, liner. Grade C.
+- 06 Enrichment: finished it twice. Most actionable page in the set: weaving material, priority order, session length. Grade A.
+- 07 Legal: finished it, best-written page here. Actionable: my state's status and the reason behind it. Grade A.
+
+**2. Hub and encyclopedia**
+
+Both earn their place, barely. The hub is the only page in the set with a diet section, a toxic food list (avocado, xylitol), the kitchen fumes warning and the 65 to 80 F range. Nothing else covers feeding at all. The encyclopedia earns it on the JFK myth and the import history, though 07 repeats the import numbers better.
+
+Hub vs deep dives, disagreements:
+
+- Cage. Hub: "Give a single Quaker at least 24x24x30 inches" and "Bar spacing should be around five eighths of an inch." 05: "A reasonable minimum is 24 by 24 by 36 inches... Use 1/2 to 5/8 inch bar spacing." Two different minimums.
+- Cage price and shape. Hub cost table: "Flight cage (24-30 in wide) | $120 | $220." 02: "Flight cage, 31x20x53 inch, 1/2 inch bar spacing | $190 - $286." The recommended cage is 20 inches deep, under both stated minimums, and costs more than the hub's ceiling.
+- Running cost. Hub annual table sums to roughly $330 to $660 a year, about $27 to $55 a month. 02: "Ongoing costs: roughly $40 to $110 a month." The hub is also carrying "Fresh vegetables and some fruit | $200 | $400" for an eleven inch bird, which is the line driving its own total.
+- Vet. Hub: "Annual avian vet exam | $90 | $200." 02: "Wellness exam, established client | $78 - $115." Minor, but the hub's high end is not in 02 anywhere.
+- Shreddable material. Hub Housing: "Giving them safe material to do it with is enrichment," and the checklist says "Constant supply of shreddable and foraging toys." 03: "Reserve shredding toys for play areas, never the cage itself." Direct contradiction, and 05 and 06 both side with the hub.
+
+**3. The set as a whole**
+
+I could buy, set up, feed and house one. I could not confidently handle one. 03 promises handling and delivers temperament description only: no step-up, no what-to-do-when-it-bites, no routine for a cage-territorial bird beyond "do interactions away from the cage."
+
+Questions raised on one page, answered on another, without the text saying so:
+
+- 04 ends on "hygiene and quarantine practices prevent the spread of PBFD and psittacosis." The quarantine timeline is in the sidebar's quarantine guide, unlinked from that sentence.
+- 04 lists "green-tinted droppings" as a fatty liver sign and never points at the droppings guide.
+- Hub health says "Reduce daylight hours" for chronic laying. 05 links the photoperiod guide for exactly that mechanism; the hub does not.
+- 02 says "given how long this species lives... decades of these costs" and never reaches the succession planning guide.
+- 03's "buying before checking state legality" is the top first-timer mistake and does not link 07, the page that actually answers it.
+
+**4. Overlap and conflict across the deep dives**
+
+Read at least four times each: the nest-building fact (on all seven pages, near verbatim), the talking ability, the no-nest-box rule, the escaped-colonies rationale. The fun fact boxes are the worst offenders: 02, 03 and 06 all restate the same nest fact the body just gave.
+
+Conflicts:
+
+- The state lists. 03: "Commonly cited outright bans: California, Georgia, Hawaii, Kansas, Kentucky, Maine, Pennsylvania, Rhode Island, Tennessee, and Wyoming," plus "Colorado (only if owned before 1990), Connecticut (own but don't breed or sell), Wisconsin (special permit required)" and "Virginia (own but don't breed or sell), New York (identification banding/registration), Ohio (flight feathers must be clipped)." 07: "Thirteen: California, Colorado, Connecticut, Georgia, Hawaii, Kansas, Kentucky, Nebraska, New Jersey, Pennsylvania, Vermont, Wisconsin and Wyoming. Maine, Rhode Island and Arkansas require a permit." So Maine and Rhode Island flip from ban to permit, Colorado, Connecticut and Wisconsin flip from conditional to banned, Nebraska and Vermont appear from nowhere, Tennessee goes from banned to "Unclear," and Virginia's rule changes from "own but don't breed or sell" to a seamless band test. New York is the sharpest: 03 says "identification banding/registration," 07 says "in the remaining 34 jurisdictions on our map, including New York City, nothing reaches the species." Ohio's clipping requirement appears in 03 and in the hub FAQ and nowhere in 07.
+- Cage material. 03: "never the cage itself." 06: "Quakers push material into cage bars, weave it through toys, and work at the structure for hours," listed as priority one.
+
+**5. One link per page**
+
+- 00 Hub: "Check your state law before you buy." Point it at 07.
+- 01 Encyclopedia: "Several US states ban or restrict the species for that reason alone." Point it at 07.
+- 02 Cost: "The cage is the line to shop carefully." Point it at 05, since that is where the spec lives.
+- 03: "This list is a starting point, not a substitute for checking directly with your state's wildlife or agriculture agency before buying." Point it at 07. This is the single most needed link in the set.
+- 04: "And basic hygiene and quarantine practices prevent the spread of PBFD and psittacosis between birds." Point it at the quarantine guide.
+- 05: "Provide plenty of shreddable wood and foraging toys, this species needs an outlet for its natural building instinct." Point it at 06.
+- 06: "Do not let a quaker escape, which is how feral colonies start and why the bans exist." Point it at 07.
+- 07: needs none for its own job, but "The pet you would buy today is caught by a rule written about power lines" would earn a link to 06.
+
+**6. Trust**
+
+What hurt: 03 and 07 cannot both be right, and 03 reads like aggregated web folklore next to 07's citations to K.A.R. 115-18-10 and 58 Pa. Code. 05 still carries reptile template bones: a "Substrate and Lining" heading, "Humidity: No special humidity requirement," and an unsourced "Roughly 3 to 4 hours of daily UVB exposure" that no other page mentions and no cost table budgets a lamp for. 04 opens "Quaker parakeets are hardy birds" two pages after the hub calls this the species most associated with self-mutilation.
+
+The sentence that convinced me a keeper wrote this, from 06: "watch for territorial behavior: nest building sometimes brings cage aggression, particularly in spring, in which case scale the material back rather than cutting it off entirely." Runner up, same page: "A quaker in a cage in a busy room is not getting social contact, it is watching some."
+
+**7. Set grade: B-**
+
+Two genuinely excellent pages (06, 07) and one solid money page carrying a legal page that contradicts them and a cage page that is half template.
+
+First two changes:
+1. Gut 03's legal section, replace it with one paragraph and a link to 07, and rewrite the rest as a real handling guide: step-up, bite response, getting a cage-territorial bird out.
+2. Pick one cage spec and one running cost and make the hub, 02 and 05 say the same thing, including a recommended cage that meets the stated minimum.
+
+**Not covered anywhere**
+
+(checked against the Health and More list, so training, wing clipping, quarantine, droppings, weight method, emergencies, succession and where to buy are all covered there and dropped from this list)
+
+- How much to feed a Quaker in a day. No portion, no gram figure, no meal schedule anywhere in the set.
+- One bird or two, and how to introduce a second Quaker to the first.
+- Cage cleaning routine. 05 says liner "changed regularly" and no page says what regularly means or what gets a deep clean.
+- Bathing frequency. The hub budgets a bird bath at $12 to $16 a year and no page says how often to offer it.
+- What you actually do if you own a Quaker and have to move to a ban state.

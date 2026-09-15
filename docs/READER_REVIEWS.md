@@ -12490,3 +12490,113 @@ Left open: the encyclopedia's adult size of "1.5-2 inches (4-5 cm)" against
 ADW's wider "3.5 to 8 cm". Smithsonian gives "a maximum length of 2 inches",
 which supports the encyclopedia, and no deep dive states a size, so nothing
 conflicts and the one-field rule keeps it out of scope.
+
+## Quaker Parakeet (2026-09-15, batch L, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 96k tokens. Raw output in
+docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B | Cage spec, toxic foods, the fumes warning, a checklist. |
+| Encyclopedia | B | Honest about the JFK crate myth. |
+| Cost | A- | The only page with numbers to budget from, dated and attributed. |
+| Handling | D | Finished it, then distrusted it. Its state list contradicts the legal guide, and nothing in it teaches handling. |
+| Health issues | B | The symptom lists and the vet-first rule. |
+| Tank setup | C | Thin, and half template. |
+| Enrichment | A | The most actionable page in the set. |
+| Legal | A | The best-written page here. |
+
+Set grade: B-. "Two genuinely excellent pages and one solid money page carrying
+a legal page that contradicts them and a cage page that is half template."
+
+The law, and this is the sharpest cross-page contradiction any batch reader has
+found. The handling guide carried its own state list: ten "commonly cited
+outright bans" including Tennessee, three ban-with-exceptions, three
+legal-with-conditions, closing on "Sources genuinely disagree on the exact
+count." The legal guide had already read all 52 jurisdictions against the codes
+themselves (58 Pa. Code ch. 137, K.A.R. 115-18-10, 4 Va. Admin. Code 15-30-40,
+166 Neb. Admin. Code ch. 8, Wis. Admin. Code NR 40, plus Avery et al. 2002 for
+the power-outage figures) and found thirteen banned outright, three permit,
+Virginia banded, Tennessee unresolved. The reader listed the flips: Maine and
+Rhode Island ban to permit, Colorado, Connecticut and Wisconsin conditional to
+banned, Nebraska and Vermont appearing from nowhere, Tennessee banned to
+unresolved, and New York's banding requirement, which the legal guide finds
+nothing to support. Ohio's flight-feather clipping appears on the handling guide
+and the old hub and nowhere in the legal guide's reading of Ohio.
+
+The handling guide loses the whole list and defers to the legal guide, which is
+both the subject-matter page and the one with primary sources. Its sourced New
+Jersey paragraph, which cites N.J.A.C. directly, stays. The reader called this
+link "the single most needed in the set" and it is now there.
+
+Numbers checker, before: 23 topic groups, 8 conflicting. Decisions:
+
+- Cage minimum. Old hub 24x24x30 against the setup guide's 24x24x36. VCA's
+  Quaker page states "Minimum 2 ft x 2 ft x 3 ft long (60 cm x 60 cm x 90 cm)",
+  which is the setup guide's figure exactly. Hub prose retired.
+- Pellet share, and this one was low in the unsafe direction. The old hub said
+  pellets "should make up roughly 60 to 70 percent of intake". VCA's
+  species-specific feeding page says "Pellets should ideally represent a minimum
+  of 70% of the bird's diet", with fruits, vegetables and greens "no more than
+  20-40% of the daily diet" and seed "only a very small part of a balanced diet
+  and never be the entire diet". The corrected figures went into the new Diet
+  Basics section, and that VCA page is now in the tank setup guide's Sources.
+- Running cost. The old hub's annual table summed to about $27 to $55 a month
+  against the cost guide's stated $40 to $110, driven by a $200 to $400 fresh
+  produce line for an eleven inch bird. Retired with the hub's tables.
+- Vet. Old hub "$90 to $200" against the cost guide's "$78 to $115" for an
+  established-client wellness exam, a figure that page takes from three named
+  clinics' published price lists. Retired.
+- Shreddable material, a direct instruction contradiction and the one the
+  reader caught that the checker could not. Handling: "Reserve shredding toys
+  for play areas, never the cage itself". Enrichment makes weaving material into
+  the cage bars priority one, and both the setup guide and the old hub agree
+  with enrichment. Three pages against one, and the enrichment guide is the one
+  carrying the cited foraging evidence. The handling guide's blanket ban is
+  replaced by the enrichment guide's actual rule: give the material, watch for
+  cage aggression in spring, scale it back if it appears instead of cutting it
+  off, and never add a nest box.
+
+UVB, the reader's template-bones finding. The tank setup guide stated "Roughly 3
+to 4 hours of daily UVB exposure supports healthy vitamin D and calcium
+metabolism" as a requirement. No other page in the set mentions it and no cost
+table budgets a lamp. Lafeber's own answer on bird lighting says there are "no
+scientific studies on lighting", that full spectrum is "optional", that up to 4
+hours daily is the conservative figure for a standard bulb, and that "most pet
+birds have never had any special lighting and they do just fine". The 4 hour
+figure stays and the framing moves from requirement to optional, with the
+absence of controlled evidence stated plainly.
+
+The recommended cage does not meet the stated minimum, which the reader caught
+and nothing else would have. The cost guide prices a Prevue flight cage at 31 by
+20 by 53 inches. Twenty inches deep is under the 24 inch minimum the setup guide
+and VCA both give. The cage is not wrong to recommend, it buys the room back in
+width and height, but a reader shopping from that line deserves to know, and the
+page now says so.
+
+This species has no feeding guide, the seventh in a row this has come up on. The
+sourced Diet Basics section went into the tank setup guide as usual.
+
+Links: 3 added and 3 cut back. The handling guide's legal link and the health
+guide's quarantine link both went in. Three more (cost to setup, handling to
+enrichment, enrichment to legal) were written and then removed, because each of
+those articles already carried its one sibling link and the checker errors on
+two. In each case the correction stayed and only the link came out.
+
+Dates: cost, handling and tank setup bumped to 2026-09-15. Health issues and
+enrichment changed links only. The legal guide was not touched.
+
+Not fixed, recorded: the health guide names MSD, VCA and Merck inline as
+hyperlinks mid-sentence, which is the source-narration shape RULES describes.
+Left alone on this pass. On a disease page where three veterinary manuals each
+contribute a different part of one symptom list, the attribution is arguably
+doing real work, and the reader did not flag it. Worth a decision rather than a
+quiet edit.
+
+Gaps, checked against the Health and More list, which for this species is
+unusually deep and already covers training, wing clipping, quarantine,
+droppings, weight, emergencies and succession: a daily feeding portion, one bird
+or two and how to introduce a second, a cage cleaning cadence, bathing
+frequency, and what an owner actually does if they have to move to a ban state.
+All filed in docs/READER_LOG.md.
