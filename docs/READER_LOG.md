@@ -4677,3 +4677,78 @@ Checked against the Health and More shared guides first. Quarantine, shedding, p
 - Maintenance of a deep soil bed: spot cleaning, full changes, how often.
 - How to find a vet with monitor experience, called essential on the hub.
 - Free-roam safety, raised on the hub and dropped everywhere else.
+
+---
+
+# Mourning Gecko: Set Review
+
+Opus reader agent, first pass, 2026-09-15, batch J. Raw and unedited.
+
+## 1. Page by page
+
+- **00 Hub.** Finished it, and it is the most complete single page here. I can act on all of it: tank size, temps, humidity, food, checklist. Grade C+ (see the conflicts below).
+- **01 Encyclopedia.** Finished it. Nothing to act on, but the History paragraph is the only place I learned why this animal exists as it does. Grade B.
+- **02 Cost.** Finished it. I can budget: about $200 to $450 up front, $10 to $25 a month, $60 for a trio. Grade A-.
+- **03 Handling.** Finished it. Actionable: don't. Rest a hand in the enclosure, let one walk on, putty every gap. Grade B+.
+- **04 Health.** Finished it. Actionable: the MBD sign list, the 4 to 6 week clutch cycle, when to call a vet. Grade A-.
+- **05 Tank setup.** Finished it. Buildable as written. Grade B+.
+- **06 Feeding.** Finished it, twice. Best page in the set: it tells me the sources disagree instead of inventing a number. Grade A.
+- **07 Enrichment.** Finished it. Actionable priority list. Grade B+.
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: the parthenogenesis history, the 44 and 66 chromosome lineages, the cargo-ship spread are nowhere else. The hub does not. It is a full care sheet that restates every deep dive at lower resolution, and where it restates it, it disagrees.
+
+- Genus. Hub: "a different genus entirely from Lygodactylus lugubris, the mourning gecko." Encyclopedia: "Scientific: Lepidodactylus lugubris." The hub names the wrong genus in the FAQ meant to clear up a naming confusion.
+- Enclosure. Hub: "An 18x18x24" enclosure is suitable for a small colony of 3 to 5 mourning geckos." Tank setup: "A 12x18x18 inch, tall, front-opening enclosure works for a pair or small group of up to about three to five." Same group, two tanks, and only the bigger one is priced.
+- Prey size. Hub: "Prey should be no larger than the space between the gecko's eyes." Feeding: "Prey should be no larger than the width of the gecko's head." Those are very different insects.
+- Calcium dusting. Hub: "dust with calcium w/D3 2 to 3 times per week." Feeding: "dust with calcium at most feedings."
+- Schedule certainty. Hub: "offered every 2 to 3 days in a small raised dish." Feeding: "This is one of the more genuinely inconsistent schedules across care sources." The hub launders a real range into one number.
+
+## 3. The set as a whole
+
+Yes, I could buy, build, feed and keep one. What is missing: what to do with the eggs and the surplus animals. Three pages tell me the colony grows on its own, the hub says "Population management may eventually be necessary," and no page says what management means. Also missing: how to culture fruit flies when they are $50 to $100 a year and weekly; how to source and maintain the isopod and springtail crew the hub recommends; what a healthy animal looks like at purchase; what to actually do when one gets loose.
+
+Questions answered elsewhere without being told:
+- Cost: "Heat is usually the one line item you can skip entirely" is justified only by the tank setup temperatures.
+- Feeding: "a swollen abdomen paired with straining, which points to egg-binding" is fully explained on the Health page.
+- Health: the calcium and D3 warning has its actual dosing schedule on the Feeding page.
+- Tank setup: the dominant-female-guarding-the-dish problem is the same one Feeding lists as overcrowding and Enrichment solves with distributed stations.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice or more: parthenogenesis (all six pages), the 4 to 6 week clutch (health, feeding), escape-proofing with aquarium-safe putty (handling, tank setup, near word for word), 18x18x24 (cost, tank setup, enrichment), don't handle (handling, enrichment, hub).
+
+The real conflict is whether a colony is required. Handling: "a lone mourning gecko survives fine and will still lay viable eggs on its own, some breeders keep them solo without issue, so keeping a group is more a keeper preference than a hard requirement." Enrichment: "A colony over a single animal" and "You can, and it is an odd choice for a colonial parthenogenetic species." Smaller: handling says "Adult mourning geckos measure just 3.5 to 4 inches" against the hub and encyclopedia's 3 to 4.
+
+## 5. One link per page
+
+- Hub: "A mourning gecko loose in a home is nearly impossible to recover." → Tank setup, escape-proofing.
+- Encyclopedia: "They are tiny, fast, and thrive in communal setups, making them fascinating display animals." → Enrichment.
+- Cost: "Heat is usually the one line item you can skip entirely, most homes run warm enough already." → Tank setup, temperature.
+- Handling: "Before introducing any mourning geckos, especially hatchlings, seal every gap in the enclosure with aquarium-safe putty or a similar barrier." → Tank setup.
+- Health: "Skipping UVB or calcium and D3 supplementation doesn't just risk MBD in the abstract, it directly raises egg-binding risk." → Feeding, for the dusting schedule.
+- Tank setup: "Provide multiple feeding stations, a dominant female may guard a single food dish and prevent others from eating." → Enrichment.
+- Feeding: "a swollen abdomen paired with straining, which points to egg-binding and needs urgent vet care" → Health.
+- Enrichment: "And do not be surprised by eggs, because parthenogenesis means a colony grows on its own." → Health.
+
+## 6. Trust
+
+Doubts: the wrong genus on the hub. The hub calling hatchling geckos "nymphs," which is an insect word. A garbled hub sentence, "Monitor colony reproductive rate in optimal conditions, mourning gecko populations can grow quickly." And on Enrichment, the anchor "study on tokay geckos" points at the site's own tokay enrichment post, not the study, which reads like a citation and is not one.
+
+The sentence that convinced me a keeper wrote this: "Pinhead-sized insects can stop triggering a hunting response once a gecko is around a year old, the fix is simply upsizing the feeder, not a health concern." Nobody guesses that. The dominant female guarding the dish is the runner-up.
+
+## 7. Set grade: B
+
+The deep dives are honest, specific and unusually willing to say the sources disagree; the hub sitting on top of them is a lower-quality duplicate that contradicts them on five numbers.
+
+First two changes: (1) cut the hub back to a router with one set of numbers taken from the deep dives, and fix Lygodactylus. (2) Write the page on eggs and population management, then link it from the hub, health and enrichment.
+
+## Not covered anywhere
+
+- What to do with eggs and surplus geckos once the colony grows. The Health and More list has no breeding or rehoming guide.
+- Where females deposit eggs, and whether to leave, move, or incubate them.
+- Culturing fruit flies. The gut-loading guide covers feeding the flies, not producing them.
+- Sourcing and maintaining the bioactive cleanup crew the hub calls for.
+- How to pick a healthy animal at purchase and acclimate a shipped one. Quarantine is covered by the shared guide; selection and unboxing are not.
+- What to do once a gecko is loose in the house. Every page says prevent it; none says recover it.

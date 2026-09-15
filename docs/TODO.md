@@ -470,16 +470,22 @@ is why they kept getting deferred. Do them once section 7 is finished.
       generally, and every page in both sets says the animal soaks often
       without saying what that looks like. Two instances make it shared-guide
       work rather than a per-species gap.
-- [ ] The affiliate template fragment, eleven left, not the six READMEFIRST
-      has been saying. Grepping both phrasings across content/guides finds:
-      ackie monitor, amano shrimp, Argentine tegu, corydoras catfish, giant
-      millipede, koi, Madagascar hissing cockroach, neon tetra, parrotlet,
-      red-eared slider, sugar glider. Shop copy with the product missing,
-      in two shapes: "Other quantities are available and a proper depth needs
-      several" and a bare "and other sizes are available" tacked onto an
-      affiliate link. Five of the eleven are species whose hubs are already
-      reconciled, so this does not follow the batch order and wants one pass
-      of its own. Batch I cleared savannah monitor and degu.
+- [ ] The affiliate template fragment, 23 left, not the six READMEFIRST has
+      been saying. It has more shapes than anyone had counted, so the grep
+      that finds all of them is
+      `grep -rloE '(Other |other )(quantities|flavors|sizes|flavours)[^.]*are available' content/guides/*.mdx`.
+      As of 2026-09-15 that returns: ackie monitor, amano shrimp, Argentine
+      tegu, bristlenose pleco, corydoras catfish, emperor scorpion, fire
+      skink, gargoyle gecko, gerbil, giant millipede, koi, Madagascar hissing
+      cockroach, mouse, neon tetra, pacman frog, parrotlet, red-eared slider,
+      rosy boa, stick insect, sugar glider, tarantula, tiger salamander,
+      uromastyx, all in enrichment guides. Shop copy with the product
+      missing: "Other quantities are available and a proper depth needs
+      several", "and other sizes are available" tacked onto an affiliate
+      link, "Other flavors and sizes are available". Most are species whose
+      hubs are already reconciled, so this does not follow the batch order at
+      all and wants one pass of its own. Batch I cleared savannah monitor and
+      degu, batch J clears mourning gecko.
 - [ ] Legal guides missing from RELATED_ARTICLES, corpus-wide sweep. Three of
       batch I's five species had one (red-footed tortoise, degu, savannah
       monitor), so the legal guide was reachable from the hub and from

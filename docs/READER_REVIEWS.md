@@ -10603,3 +10603,113 @@ left a frontmatter copy of a retired claim behind again, folded the
 reader-review and reader-fixes commits into the hub commit with no
 before-and-after sentence list, and filed no Numbers checker subsection
 and no corydoras raw output.
+
+## Mourning Gecko (2026-09-15, batch J, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus 5 agent. Mourning gecko opened
+batch J as the strongest inbound target left on the list, nine articles
+pointing at it: African fat-tail from batch I on three pages, gargoyle
+gecko from batch H on four, the shared three-gecko overview, and tokay.
+Both of the last two batches' gecko work gets checked against fresh eyes
+here.
+
+Set grade: B. "The deep dives are honest, specific and unusually willing
+to say the sources disagree; the hub sitting on top of them is a
+lower-quality duplicate that contradicts them on five numbers." Feeding
+A, cost A-, health A-, handling B+, tank setup B+, enrichment B+,
+encyclopedia B, hub C+.
+
+### Numbers checker
+
+`check-species-numbers mourning-gecko --strict` before the rebuild, 78
+sentences with numbers across 31 groups. Three real hub-versus-deep-dive
+conflicts, the rest agreeing:
+
+- Enclosure. Hub: "An 18x18x24\" enclosure is suitable for a small colony
+  of 3 to 5 mourning geckos." Tank setup: "A 12x18x18 inch, tall,
+  front-opening enclosure works for a pair or small group of up to about
+  three to five," with 18x18x24 as the step up for a bigger group. The
+  reader: "Same group, two tanks, and only the bigger one is priced."
+- Food replacement. Hub: "Remove and replace after 48 hours." Feeding:
+  "Discard and replace food every 24 to 48 hours." The hub picked one end
+  of a range without saying so.
+- Adult size. Hub and encyclopedia: 3 to 4 inches. Handling guide: "just
+  3.5 to 4 inches total."
+
+### The wrong genus
+
+The hub's FAQ written to clear up the house gecko confusion said
+"Lygodactylus lugubris, the mourning gecko." The species is
+Lepidodactylus lugubris, which every other page in the set has, the
+encyclopedia included. It is the one defect here a reader would catch and
+a checker would not, and it sat in the sentence whose entire job was
+naming the animal correctly. Gone with the old FAQs.
+
+Two more the reader caught, also gone with the old sections: hatchling
+geckos called "nymphs", an insect word, and a sentence that never
+recovered from its own opening, "Monitor colony reproductive rate in
+optimal conditions, mourning gecko populations can grow quickly."
+
+### Encyclopedia
+
+Two fields, both researched against ReptiFiles' care guide, which the
+set already cites on three pages.
+
+- adultSize was "3-4 inches (7-10 cm)" against the handling guide's 3.5
+  to 4. ReptiFiles: "just 3.5\" to 4\" (8.5-10 cm) long." The handling
+  guide was right and the encyclopedia now matches it.
+- wildLifespan was "5-10 years", the eighth instance of a captive figure
+  sitting in the wild field across batches G, H, I and J. ReptiFiles
+  gives "as long as 10 years, and there have been some claims of 15" in a
+  care context, and no source found gives a wild figure at all. Now says
+  so.
+
+### Deep-dive fixes
+
+- Cost guide lifespan. It said "typically 10 to 15 years" in four places,
+  which is firmer than its own source supports. ReptiFiles' shape is "as
+  long as 10 years, and there have been some claims of 15", and the
+  heading, body, FAQ and description now carry that.
+- Feeding guide schedule, settled. The reader graded this page A
+  specifically because "it tells me the sources disagree instead of
+  inventing a number", and that honesty is worth keeping, but a hub row
+  cannot copy a narrated disagreement, and a reader still has to decide
+  what to do on Tuesday. ReptiFiles' feeding page settles it: fresh CGD
+  every 48 hours and dusted insects once or twice a week. The page now
+  leads with that and keeps the spread it found as the range a keeper
+  will meet, rather than as the answer.
+- Feeding guide calcium. Added the standing dish of calcium powder, which
+  the cost guide has been pricing as a line item ("Calcium
+  always-available dish") with no page explaining it, plus the detail
+  that fruit flies can be dusted by shaking them in a container with the
+  powder.
+- Solo versus colony, settled between two deep dives. Handling: "keeping
+  a group is more a keeper preference than a hard requirement."
+  Enrichment: "A colony over a single animal" and "You can, and it is an
+  odd choice for a colonial parthenogenetic species." The enrichment
+  guide has the better case, so the handling guide now says a lone gecko
+  survives and lays fine, and a group is still the default for a species
+  that lives in colonies.
+- Enrichment guide citation that was not one. The anchor "study on tokay
+  geckos" pointed at our own tokay enrichment post. The reader: "which
+  reads like a citation and is not one." The study is now named in the
+  sentence and cited in Sources, and the internal link says what it
+  actually goes to.
+- The affiliate template fragment, one more shape: "Other flavors and
+  sizes are available." Cut.
+- Six of the reader's eight link asks added.
+
+### Open
+
+- The six things not covered anywhere, in docs/READER_LOG.md. The first
+  two are the same gap and the sharpest in the set: what to do with the
+  eggs and the surplus animals. Three pages say the colony grows on its
+  own, the old hub said "population management may eventually be
+  necessary," and no page says what that means or where a female puts her
+  eggs. A parthenogenetic species is the one case where breeding
+  management is not an optional advanced topic.
+- Also open: culturing fruit flies, which the gut-loading guide does not
+  cover; sourcing and maintaining a bioactive cleanup crew; picking a
+  healthy animal at purchase; and what to do once a gecko is loose in the
+  house, which every page tells you to prevent and none tells you to
+  solve.
