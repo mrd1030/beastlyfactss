@@ -391,7 +391,7 @@ share a silhouette. That is roughly 25 species, about 175 images.
 ## 7. Router hubs, species by species
 
 Checked 2026-09-15 against `src/lib/data/guides/*.js`: a hub is a router hub
-when its entry carries `firstWeek` rows (RULES, Hubs). 61 of 108 done, 47
+when its entry carries `firstWeek` rows (RULES, Hubs). 76 of 108 done, 32
 still rendering the legacy care sheet. Batches of five, one branch each,
 per the READMEFIRST process. Dogs and cats last.
 Batches I and J both merged to main 2026-09-15 as 05a6fa6b. Batch I
@@ -402,18 +402,22 @@ done, checked and merged to main 2026-09-15. Pass grade B.
 Batch L (fire-bellied toad, quaker parakeet, molly, praying mantis, argentine
 tegu) done, checked and merged to main 2026-09-15 as 837d5cd. Pass grade B.
 Amphibians and birds are finished.
-Batch M (platy, cherry shrimp, green anole, leaf-tailed gecko, mouse) done and
-checked on branch claude/platy-cherryshrimp-greenanole-leaftailedgecko-mouse
-2026-09-15, not merged. Pass grade B-. Geckos are finished: leaf-tailed gecko was
-the last one. Next is batch N: pick five, one per class, where a set from a
-recent batch points at them. Only small mammals is down to one, and nothing but
-dogs and cats has more than five.
+Batch M (platy, cherry shrimp, green anole, leaf-tailed gecko, mouse) done,
+checked and merged to main 2026-09-15 as 4a39f2f. Pass grade B-. Geckos are
+finished: leaf-tailed gecko was the last one.
+Batch N (bristlenose pleco, discus, swordtail, zebra danio, ghost shrimp) done
+and checked on branch
+claude/bristlenosepleco-discus-swordtail-zebradanio-ghostshrimp 2026-09-15, not
+merged. Pass grade: pass, after fixes. Fish are finished: this batch took the
+last four. Next is batch O, and the classes left are invertebrates (4), lizards
+(3) and small mammals (1), so a one-per-class batch is no longer possible
+without dogs or cats.
 Batch J (mourning gecko, ackie monitor, garter snake, oscar, amano
 shrimp) passed its check at grade C+. Next is batch K: pick five, one per
 class, where a set from a recent batch points at them. Worker Opus 5 high effort, one Fable closing check per batch (the
 batch prompt in READMEFIRST has the reasoning).
 
-Done (56):
+Done (61):
 
 - [x] axolotl, White's tree frog
 - [x] African grey, budgie, cockatiel, cockatoo, conure, lovebird
@@ -439,16 +443,18 @@ Done (56):
 - [x] fire-bellied toad, quaker parakeet, molly, praying mantis, argentine
       tegu (batch L, merged to main 2026-09-15)
 - [x] platy, cherry shrimp, green anole, leaf-tailed gecko, mouse
-      (batch M, on branch 2026-09-15, not merged)
+      (batch M, merged to main 2026-09-15)
+- [x] bristlenose pleco, discus, swordtail, zebra danio, ghost shrimp
+      (batch N, on branch 2026-09-15, not merged)
 
-To do (37):
+To do (32):
 
 - [ ] Amphibians (0): none left, fire-bellied toad was the last one
 - [ ] Birds (0): none left, quaker parakeet was the last one
-- [ ] Fish (4): bristlenose pleco, discus, swordtail, zebra danio
+- [ ] Fish (0): none left, batch N took the last four
 - [ ] Geckos (0): none left, leaf-tailed gecko was the last one
-- [ ] Invertebrates (5): ghost shrimp, giant millipede, jumping spider,
-      hissing cockroach, stick insect
+- [ ] Invertebrates (4): giant millipede, jumping spider, hissing cockroach,
+      stick insect
 - [ ] Lizards (3): fire skink, Jackson's chameleon, uromastyx
 - [ ] Small mammals (1): flying squirrel
 - [ ] Snakes (0): none left, rosy boa was the last one
@@ -521,16 +527,73 @@ is why they kept getting deferred. Do them once section 7 is finished.
       plainly") and one on the garter feeding guide ("Sources land in a
       similar range"). Likely more of the same corpus-wide, since four
       batches running have found this shape in text the batch did touch.
-- [ ] Cherry shrimp and ghost shrimp have the same three-guide
-      RELATED_ARTICLES entry amano shrimp had before batch J, so their
-      sidebars are missing cycling, quarantine and the sick-tank check that
-      every fish species carries. One line each.
+- [ ] Cherry shrimp has the same three-guide RELATED_ARTICLES entry amano
+      shrimp had before batch J, so its sidebar is missing cycling, quarantine
+      and the sick-tank check that every fish species carries. One line.
+      Ghost shrimp gained cycling in batch N and still has neither the
+      quarantine guide nor the sick-tank check, which its own health guide's
+      four prevention habits lean on.
+- [ ] Bristlenose pleco lifespan ceiling, hub against encyclopedia. The cost
+      guide says well-kept individuals are "reasonably often reported living 12
+      to 14 years"; the encyclopedia's wildLifespan field says "up to 12-15 years
+      with excellent care". Neither is obviously wrong and that page's Sources do
+      not settle the ceiling, so it needs research rather than a pick. Found by
+      the numbers checker during batch N. (batch N)
+
+- [ ] Five shared-guide gaps batch N's readers found on multiple species at once,
+      which is what makes them shared-guide work rather than five hub lines.
+
+      - Water changes have no home anywhere on the site. Bristlenose pleco,
+        swordtail, zebra danio and ghost shrimp all carry a schedule that exists
+        only on the hub, and no deep dive and no shared aquarium guide states a
+        frequency or a percentage. Four of five species in one batch, and the
+        router conversion retires a hub-only figure, so this is actively losing
+        information unless a shared guide picks it up. Probably its own guide, or
+        a section in the filtration guide.
+      - Ich heat treatment contradicts the stated temperature ceiling, on two
+        species independently. The bristlenose health guide says to raise the
+        temperature with strong aeration and never says to what, against a setup
+        guide ceiling of 80F. The zebra danio health guide says the same on a
+        tank its own setup guide says needs no heater at all. Both readers caught
+        it separately, which makes it the shared fish-health material rather than
+        either species.
+      - The shared pH, GH and KH guide reads as coldwater goldfish material.
+        Flagged by platy's reader in batch M and by discus and bristlenose pleco
+        in batch N. Three species now, and the sidebar excerpt is what a reader
+        sees before deciding whether to click, so a discus keeper reading about
+        goldfish concludes the guide is not for them.
+      - The shared invertebrate molting guide is terrestrial. It covers
+        tarantulas, hermit crabs and jumping spiders by name and its timelines
+        and signs are written for those three, while molting is the single most
+        load-bearing topic for ghost shrimp and cherry shrimp, whose health
+        guides carry the aquatic version alone. Either a section in that guide
+        or an aquatic counterpart. Ghost shrimp's reader in batch N wanted the
+        feeding guide to point there and the page it would have pointed at is
+        not about shrimp.
+      - Stocking numbers past a floor. Swordtail ("how many in a 29 beyond a
+        trio"), zebra danio, ghost shrimp ("how many for a 5 or 10 gallon") and,
+        from batch M, platy and cherry shrimp all stop at a minimum tank size and
+        never say how many animals go in it. Five species across two batches.
+
 - [ ] The opens from batches K, L and M, which the reader passes recorded in
       docs/READER_REVIEWS.md and nothing promoted here until 2026-09-15. Each one
       is a real decision the batch could not make under its Never list, and they
       are listed by what they need rather than by species.
 
       Needs new research before anyone can decide:
+      - The white ring of death, what to actually do about it. The ghost shrimp
+        health guide calls it "frequently fatal" and stops there, which is the
+        one place in that set a reader is left with a named emergency and no
+        next step. Shrimp Science is the page's source and may or may not give
+        one. If the honest answer is that there is no intervention and
+        prevention is the whole of it, the guide should say that rather than
+        trailing off. (batch N)
+      - Zebra danio jump height. Both the tank setup and handling guides put it
+        at 20 to 30cm on housedpet.com alone, which is the weakest source in
+        either set and loses to almost anything under the ranking in
+        docs/RULES.md. The figure is plausible and consistent across the two
+        pages and nothing better turned up in the batch N pass, so it stays until
+        someone finds a real source or a reason to drop the number. (batch N)
       - Rosy boa lifespan. The cost guide's FAQ carries "20 to 30 typical" beside
         "the captive average sits nearer 18 to 22". ADW confirms both 18 to 22
         and past 30, so neither is wrong, but nothing in that page's Sources

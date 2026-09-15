@@ -164,51 +164,103 @@ export const fishGuides = [
   {
     id: "bristlenose-pleco",
     name: "Bristlenose Pleco",
-    emoji: "🐟",
+    emoji: "\u{1F41F}",
     difficulty: "Beginner",
     petType: "Fish",
     image: "/assets/guides/bristlenose-pleco.jpg",
     tagline: "The tentacle-snouted algae cleaner that actually stays small, unlike the 'baby pleco' at the pet store!",
     funFact: "Most of the cheap, inch-long 'plecos' sold for algae control are common plecos (Hypostomus plecostomus) or a related Pterygoplichthys species, and neither stays small: both regularly reach 12 to 24 inches and need a 75-gallon-or-larger tank as adults, a size surprise so common that escaped and released pet plecos have established breeding, invasive populations in Texas and Florida rivers. Researchers pulled more than 400 invasive armored catfish from a single stretch of Texas's San Marcos River in one 2022 removal effort. The bristlenose pleco profiled here is a different, deliberately smaller species that tops out around 4 to 6 inches for life, which is exactly why it's the pleco actually worth recommending to a beginner.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // Priced for a single bristlenose, the beginner-appropriate pleco species.
-    costs: {
-      setup: [
-        { item: "20-30 gallon tank", low: 90, high: 170 },
-        { item: "Filter sized above the tank minimum", low: 30, high: 50 },
-        { item: "Aquarium heater", low: 20, high: 35 },
-        { item: "Driftwood (required, not decorative) and caves", low: 25, high: 50 },
-      ],
-      annual: [
-        { item: "Algae wafers + fresh vegetables", low: 30, high: 60 },
-        { item: "Water conditioner and test kit", low: 15, high: 25 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Cycling, filtration, the hospital tank, water
+    // chemistry, the power outage rule and the sick-fish check cite the shared
+    // aquarium guides in the sidebar's Health and More list. Reconciled
+    // 2026-09-15 after the bristlenose pleco set test (docs/READER_REVIEWS.md).
+    //
+    // The reader graded the old hub B- and said the tank price alone "is the
+    // kind of thing that makes me re-check everything else." Retired rather
+    // than moved: a tank line of $90 to $170 against the cost guide's $35 to
+    // $60, roughly a factor of two on the biggest purchase; a filter at $30 to
+    // $50 against $45 to $60 and a heater at $20 to $35 against $18 to $30, both
+    // drifting the other way; a test kit filed as an annual cost where the cost
+    // guide has it upfront; a setup total of $165 to $305 against a stated $155
+    // to $265, with the test kit line missing entirely; "Keep water heated
+    // between 74 and 82 degrees F" against the setup guide's 74 to 80; and a
+    // checklist calling for a "20-30 gallon tank" where the cost guide prices a
+    // 20 long as the minimum, so a beginner shopping off the checklist either
+    // overpays or misreads the floor.
+    //
+    // The hub also called this fish "scaleless", where the health guide calls
+    // it an armored catfish with an unprotected belly. Those are different
+    // bodies, and the copper warning depends on which one is true, so the row
+    // below takes the health guide's wording.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Confirm the species first", value: "The single most expensive mistake in this hobby isn't a bristlenose pleco, it's buying a fish labeled simply \"pleco\" that turns out to be a common pleco (*Hypostomus plecostomus*) instead. At the size stores sell juveniles, an inch or two long, the two can look genuinely similar. A common pleco grows into a 12 to 24-inch adult that needs a 75-gallon-plus tank, while a bristlenose stays 4 to 6 inches for life.", source: "bristlenose-pleco-cost-guide" },
+        { label: "Why the bristles don't settle it", value: "A true bristlenose typically doesn't show its namesake bristles until around 3 inches, and even then only reliably on males, so don't count on the bristles alone to tell them apart early. Ask the store directly for the species name rather than settling for \"pleco.\"", source: "bristlenose-pleco-tank-setup-guide" },
+        { label: "Tank size", value: "20 gallons is the practical minimum for a single adult bristlenose, and 29 to 30 gallons is genuinely the better long-term choice given how much waste one fish produces relative to its size. Add roughly 10 gallons for each additional bristlenose, and favor extra floor space and driftwood surface over height.", source: "bristlenose-pleco-tank-setup-guide" },
+        { label: "Temperature and water", value: "74 to 80\u00B0F suits most captive-bred bristlenose, with some sources citing a somewhat wider tolerance either side of that range. Aim for a pH around 6.5 to 7.8, and keep ammonia and nitrite at zero through regular water changes.", source: "bristlenose-pleco-tank-setup-guide" },
+        { label: "Driftwood is required, not decorative", value: "This species rasps wood constantly and instinctively, and most care guides tie that grazing behavior to healthy digestion, fiber and the biofilm colonizing the wood's surface both appear to matter. Skipping it entirely is genuinely associated with digestive problems even in a fish that's otherwise being fed correctly.", source: "bristlenose-pleco-tank-setup-guide" },
+        { label: "How much wood", value: "Size matters more than variety. One small ornament piece in a tank with two plecos is not a wood provision, it is a decoration they will strip in a couple of weeks. Give a substantial piece, or several. It will tint the water with tannins, which is normal and harmless.", source: "bristlenose-pleco-enrichment-guide" },
+        { label: "Caves and shade", value: "Nocturnal fish that spend the day wedged into something. A cave gives that, and males use caves as spawning sites, which is why a cave per fish is sensible when you keep more than one. Add general shade: wood overhangs, broad-leaved plants, and a light that is not blasting the whole floor. A pleco visible in the open all day is often a pleco with nowhere better to be.", source: "bristlenose-pleco-enrichment-guide" },
+        { label: "Grazing surface", value: "Beyond the wood, anything that grows biofilm. Rock, plant leaves, the back glass left unscrubbed. Scrubbing every surface in the tank every week removes a genuine food source. Leave the back and sides, clean the front.", source: "bristlenose-pleco-enrichment-guide" },
+        { label: "Filtration and oxygen", value: "Plecos produce a lot of waste and need real filtration and current. Good flow and surface agitation matter, since a heavily stocked warm tank with a large catfish in it runs low on oxygen faster than people expect.", source: "bristlenose-pleco-enrichment-guide" },
+        { label: "Feeding schedule", value: "Feed once a day, ideally after lights-out since this is a nocturnal species that does most of its grazing overnight. Offer a wafer or vegetable portion the fish clears within a few hours, and remove anything still sitting untouched the next day. Dropping food near a favorite cave or driftwood perch helps a shy individual find it without competing in open water.", source: "bristlenose-pleco-feeding-guide" },
+        { label: "The algae myth", value: "The single most common and most damaging feeding mistake with this species. Tank algae rarely grows fast enough to keep pace with a full-grown adult, and a bristlenose left to fend for itself on algae and other fish's leftovers gradually loses condition rather than failing suddenly, which makes the problem easy to miss until it's fairly advanced.", source: "bristlenose-pleco-feeding-guide" },
+        { label: "Never handled, and hard to net", value: "A bristlenose pleco has stiff, lockable spines on its pectoral and dorsal fins, a defense mechanism it can raise when startled. Those spines catch easily in ordinary net mesh, and a fish that struggles while tangled risks real injury to itself in the process. Many experienced keepers avoid netting a pleco directly and instead herd it into a cup or wide plastic container, then lift the container out with the fish inside.", source: "bristlenose-pleco-handling-guide" },
+        { label: "Invisible all day is normal", value: "A bristlenose that's invisible all day and active only after the lights go off isn't hiding from a problem, it's just being a bristlenose. A cave, a gap behind the filter, or the underside of a piece of driftwood is exactly where it's supposed to spend the day.", source: "bristlenose-pleco-handling-guide" },
+        { label: "Territorial males", value: "Peaceful toward other species, but males are territorial toward each other and toward similarly shaped bottom dwellers, competing over caves rather than open water. Planning for enough hiding spots that more than one male isn't forced to share heads off most of the friction before it starts.", source: "bristlenose-pleco-handling-guide" },
+        { label: "The copper warning", value: "Bristlenose plecos are armored catfish with an unprotected belly and a mucous coating that copper damages badly, and this species is more medication sensitive than many community fish. Copper-based treatments belong on the avoid list entirely, use an alternative medication for any copper-susceptible parasite instead.", source: "bristlenose-pleco-health-issues-guide" },
+        { label: "Budget, the fish", value: "Common color morphs like albino and brown typically run $7 to $10, with green dragon and lemon varieties close behind and red bristlenose running a bit more, around $12. Larger or specialty specimens can reach $20 to $25.", source: "bristlenose-pleco-cost-guide" },
+        { label: "Budget, the setup", value: "Roughly $155 to $265, and ongoing costs run about $45 to $85 a year. Driftwood doesn't need frequent replacing, but budget for an occasional new piece, $15 to $30, every year or two once an older piece is fully grazed down.", source: "bristlenose-pleco-cost-guide" },
+        { label: "Vet costs", value: "Aquatic vets are genuinely uncommon, and most bristlenose health issues, water-quality problems and nutritional deficiency chief among them, are managed directly by the keeper rather than through professional visits.", source: "bristlenose-pleco-cost-guide" },
+        { label: "Lifespan", value: "5 to 10 years is typical with decent care, and well-kept individuals are reasonably often reported living 12 to 14 years. That's a genuinely long commitment for a fish this inexpensive and this unassuming.", source: "bristlenose-pleco-cost-guide" },
+        { label: "Adult size", value: "4 to 6 inches (10 to 15 cm)." },
+        { label: "Cycling, the finish line", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
+        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
+        { label: "Hospital tank", value: "A bare hospital tank with its own net and siphon hose, never shared with the display tank, and disinfected and stored dry between uses. A sponge filter gives gentle biological filtration without the flow of a hang-on-back or canister unit.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Water chemistry, the wider picture", value: "KH is the buffer holding pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you rather than chasing a number.", source: "freshwater-ph-gh-kh-guide" },
+        { label: "Power outage", value: "The threat is oxygen, not darkness. Once the filter and any air pump stop, the water surface stops moving, gas exchange slows, and dissolved oxygen starts dropping. Unplug the filter deliberately rather than letting it sit dead in the water.", source: "aquarium-power-outage-and-transport-guide" },
+        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
       ],
     },
-    sections: {
-      housing: "A single adult bristlenose needs at least 20 gallons, and 30 is a genuinely better long-term minimum given how much waste one fish produces relative to its size. Keep water heated between 74 and 82 degrees F with a filter sized above what the tank's gallon rating alone would suggest, since bristlenose plecos are messy eaters. Driftwood is not optional decor for this species: they rasp wood fiber for real digestive benefit, and a tank without it tends to produce a duller, less healthy fish over time. Add caves, PVC pipe, or dense decor for daytime hiding, since bristlenose are nocturnal and spend most of the day tucked out of sight, becoming active once the lights go down.",
-      diet: "Bristlenose plecos are often sold as if algae alone will feed them, and that's a genuine myth: tank algae isn't enough on its own for an adult, and a pleco fed only on what it can graze from the glass typically ends up with a sunken belly and a shortened lifespan. Sinking algae wafers should form the dietary staple, supplemented several times a week with blanched zucchini, cucumber, or sweet potato. A small amount of occasional protein, like frozen bloodworms or brine shrimp, rounds out the diet without overdoing it, since bristlenose stay primarily plant-based grazers even as adults.",
-      enrichment: "The single best enrichment for a bristlenose is simply letting it do what it evolved to do: grazing algae and biofilm off glass, decor, and especially driftwood through the night. They're peaceful, low-key tankmates for almost any non-aggressive community fish, and a mature male's branching facial bristles, used to signal sex and spar with rival males, are one of the more distinctive things to watch develop as a juvenile grows up. Breeding is a real possibility even in a community tank: males are cave spawners that guard and fan a clutch of eggs alone once a female has laid them, a genuine bit of solo paternal care to witness if you keep more than one.",
-      health: "Bristlenose plecos, like corydoras catfish, are scaleless and unusually sensitive to copper-based medications, so any ich or parasite treatment needs to be checked for pleco safety before it goes in the tank. Ich and fungal infections both follow poor water quality more than anything else. The biggest real health risk with any pleco, bristlenose included, is nutritional: an adult fed algae alone, with no wafers, vegetables, or driftwood to rasp, declines over months rather than failing suddenly, which makes the problem easy to miss until a fish is already in poor shape. Buying a pleco without confirming the exact species is the other major risk here, since a juvenile common pleco and a juvenile bristlenose can look deceptively similar at an inch or two long in a store tank, and only one of them stays that size.",
-      checklist: [
-        "20-30 gallon tank",
-        "Heater set to 74-82°F",
-        "Filter sized above the tank's gallon minimum",
-        "Driftwood (required for digestion, not just decor)",
-        "Caves or PVC pipe for daytime hiding",
-        "Sinking algae wafers as dietary staple",
-        "Blanched zucchini, cucumber, or sweet potato",
-        "Occasional bloodworms or brine shrimp",
-        "Water test kit and conditioner",
-        "Confirm species before buying (bristlenose vs. common pleco)",
+    emergencyCard: {
+      source: "bristlenose-pleco-health-issues-guide",
+      callNow: [
+        "A sunken, concave belly, sometimes alongside faded color or fins that start to look ragged even without an infection driving it",
+        "Small, pinhead-sized white spots across the body and fins",
+        "Frayed or discolored fin edges",
+        "Barbel and fin damage from rough decor: sharp gravel or rough decor can injure the soft underbelly and barbels as a bristlenose forages and grazes along the bottom, and an open wound like that is a real entry point for bacterial infection",
       ],
+      vetLine: "Diet drives the single biggest risk, decor and substrate drive physical injury, and water quality sits underneath nearly everything else on this list. A consistent, dedicated bottom-feeder food, rather than leftover algae and scraps, keeps a bristlenose in the kind of steady condition that makes it more resilient generally. Malnutrition: the biggest real risk. Slow malnutrition from relying on tank algae instead of a real diet. It's not dramatic, there's no single obvious symptom on day one, which is exactly why it does more long-term damage than a faster-moving illness that gets noticed and treated right away.",
     },
+    routes: [
+      { slug: "bristlenose-pleco-cost-guide", line: "$7 to $25 for the fish, $155 to $265 for the tank around it, and the labeling mistake that costs the most of all." },
+      { slug: "bristlenose-pleco-tank-setup-guide", line: "20 gallons as a floor and 29 to 30 as the real answer, 74 to 80F, and why driftwood is not decoration." },
+      { slug: "bristlenose-pleco-feeding-guide", line: "Once a day after lights-out, and why the algae myth is the most damaging thing a new keeper believes." },
+      { slug: "bristlenose-pleco-handling-guide", line: "Spines that lock into a net, why you herd one into a cup instead, and why you never see it during the day." },
+      { slug: "bristlenose-pleco-health-issues-guide", line: "A sunken belly as the tell, the copper medications that are off the list entirely, and what rough decor does to barbels." },
+      { slug: "bristlenose-pleco-enrichment-guide", line: "What the wood-eating research actually settles, how much driftwood counts as enough, and the back glass you leave unscrubbed." },
+    ],
+    buyList: [
+      "20-gallon long tank as a floor, 29 to 30 gallons for the long term",
+      "Submersible aquarium heater",
+      "Filter rated above the tank volume, for a messy eater",
+      "Substantial driftwood, or several pieces, not an ornament",
+      "A cave per fish, plus wood overhangs and broad-leaved plants for shade",
+      "Smooth substrate, sand or rounded gravel",
+      "Sinking wafers formulated for catfish and bottom feeders",
+      "Zucchini and cucumber to blanch",
+      "Liquid water test kit",
+      "Water conditioner",
+    ],
     faqs: [
-      { q: "Will a pleco stay small in my tank?", a: "Only if it's actually a bristlenose. The classic cheap 'plecostomus' sold as a tiny algae-eater is usually a common pleco or a related Pterygoplichthys species, both of which grow to 12 to 24 inches and need a 75-gallon-or-larger tank as an adult. A bristlenose pleco is the species that genuinely stays small, topping out around 4 to 6 inches." },
-      { q: "How can I tell a bristlenose pleco from a common pleco?", a: "At the size stores sell them, it's genuinely difficult, which is exactly the problem. Ask the store directly for the species name rather than just 'pleco,' and be skeptical of any unlabeled 'algae eater' sold at an inch or two long, since that's precisely the size both a bristlenose and a common pleco start out at." },
-      { q: "Do plecos only eat algae?", a: "No, and this is a common misconception. Tank algae alone isn't a complete diet for an adult of any pleco species. Sinking algae wafers and regular blanched vegetables need to be the actual dietary staple, with tank algae as a bonus rather than the main course." },
-      { q: "Why is my bristlenose pleco hiding all day?", a: "This is normal, not a sign of stress. Bristlenose plecos are nocturnal and spend daylight hours tucked into caves or driftwood, becoming active and visibly grazing once the lights go down." },
-      { q: "Can bristlenose plecos live with corydoras catfish?", a: "Yes, this is a genuinely good pairing. Both are peaceful, bottom-dwelling, scaleless catfish with similar water needs, and since [corydoras](/guides/corydoras-catfish/) forage the substrate while bristlenose graze surfaces and wood, they're not competing for the same food or space." },
-      { q: "How big does a bristlenose pleco get?", a: "4 to 6 inches for life, which is exactly what makes it the pleco worth recommending to a beginner. Compare that to a common pleco, which is regularly sold at the same tiny size but grows to 12 to 24 inches." },
+      { q: "What size tank does a bristlenose pleco need?", a: "20 gallons is the practical floor for one adult, though 29 to 30 holds up better long term, since this fish produces a lot of waste for its size. Add about 10 gallons per extra bristlenose." },
+      { q: "Can bristlenose plecos be treated with copper-based medication?", a: "No. Bristlenose plecos are armored catfish with an unprotected belly and a mucous coating that copper damages badly, and this species is more medication sensitive than many community fish. Copper-based treatments belong on the avoid list entirely, use an alternative medication for any copper-susceptible parasite instead." },
+      { q: "Why does my bristlenose pleco need driftwood if I'm already feeding it?", a: "Bristlenose rasp driftwood constantly and instinctively, and most care guides tie this to healthy digestion, ingesting fiber and the biofilm growing on the wood's surface. Skipping driftwood is associated with digestive problems even in a well-fed fish." },
     ],
   },
   {
@@ -396,52 +448,102 @@ export const fishGuides = [
   {
     id: "discus",
     name: "Discus",
-    emoji: "🐠",
+    emoji: "\u{1F41F}",
     difficulty: "Intermediate-Advanced",
     petType: "Fish",
     image: "/assets/guides/discus.jpg",
     tagline: "The self-styled king of the aquarium, a tall, social cichlid that raises its fry on its own skin!",
-    funFact: "Newly hatched discus fry feed on a nutrient-rich mucus secreted from both parents' skin for their first one to two weeks of life, a form of direct parental feeding called 'discus milk' that's genuinely rare among fish.",
-    // Verified against real research in the discus deep-dive articles
-    // (content/guides/discus-cost-guide.mdx and siblings) - a proper 55-75
-    // gallon setup with filtration sized well above tank volume realistically
-    // runs $600-800, not the $200-450 first-draft estimate.
-    costs: {
-      setup: [
-        { item: "55-75 gallon tall tank (group of 6)", low: 290, high: 450 },
-        { item: "Heater rated for sustained 82-86°F", low: 18, high: 30 },
-        { item: "Canister filter, sized well above tank volume", low: 250, high: 320 },
-        { item: "RO/DI unit or water softening (if tap is hard)", low: 70, high: 150 },
-      ],
-      annual: [
-        { item: "Discus pellets or beef-heart mix", low: 240, high: 480 },
-        { item: "Water test kit and conditioner", low: 25, high: 40 },
+    funFact: "Newly hatched discus fry feed on a nutrient-rich mucus secreted from both parents' skin, most intensively for roughly the first two weeks after they become free-swimming, with a gradual weaning over the following two weeks. It is one of the only documented cases of sustained direct parental feeding in fish, and a 2010 study found the mucus carries immune antibodies and protein at levels that rise and fall across the feeding period, in a pattern the researchers compared to mammalian milk.",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Cycling, filtration, the hospital tank, water
+    // chemistry, the power outage rule and the sick-fish check cite the shared
+    // aquarium guides in the sidebar's Health and More list. Reconciled
+    // 2026-09-15 after the discus set test (docs/READER_REVIEWS.md).
+    //
+    // Retired rather than moved: a tank line of "$290 | $450" against the cost
+    // guide's "$290 - $310", a $140 gap at the top; a checklist reading
+    // "Frequent large water changes (25-50% every 2-3 days in serious setups)",
+    // which flattens the setup guide's weekly baseline into the enthusiast
+    // cadence; "a group of 6 or more" against a cost guide that says 5 to 6;
+    // and a fry-feeding window of "one to two weeks" in the funFact against
+    // "about a month total" in its own diet section, a page contradicting
+    // itself. The funFact survives a router conversion, so it is corrected here
+    // against the feeding guide rather than retired: roughly two weeks
+    // intensively, then two weeks weaning.
+    //
+    // Two rows deliberately carry a hedge the old hub had flattened. The hub
+    // checklist said "Strong but gentle canister filtration" as settled where
+    // the setup guide records a discus-specialty source pushing back on
+    // canisters specifically, and the hub answered the neon tetra question flat
+    // where the handling guide calls it "a genuine point of disagreement". The
+    // reader preferred the article in both cases, and so does the router.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Tank size", value: "55 gallons is commonly cited as the practical entry point for a small group. Several experienced discus-keeping sources push back on treating 55 gallons as anything more than a floor, recommending 75 gallons or larger instead, since a 55-gallon tank forces meaningfully more frequent water changes to keep pace with a proper group's waste output. Taller and deeper tanks are generally preferred over long, shallow ones.", source: "discus-tank-setup-guide" },
+        { label: "How many", value: "Plan for a real group, 5 to 6 fish or more, since this is a genuinely social species that does poorly alone or in a pair outside of breeding.", source: "discus-tank-setup-guide" },
+        { label: "Why the number is six", value: "The reason is the pecking order. A group of three gives the bottom fish nothing but the bottom. Six or more spreads the aggression thinly enough that no individual is permanently targeted. Watch for the singled-out fish. A discus that hangs dark-colored at the surface in a corner is the one to act on, and the answer is usually more fish or more tank rather than removing the aggressor.", source: "discus-enrichment-guide" },
+        { label: "Temperature", value: "82 to 86\u00B0F, warmer than nearly every other common community fish and warm enough that it genuinely limits realistic tankmate options. Wild Heckel discus tolerate water closer to 90\u00B0F, but 82 to 86\u00B0F is the standard range cited for keeping captive-bred discus long term. Many keepers budget toward the higher end of standard heater wattage, or run two heaters, since a heater failure is a bigger problem at this temperature.", source: "discus-tank-setup-guide" },
+        { label: "Water changes", value: "The detail that actually defines a working discus tank more than any single equipment choice. Weekly changes in the 25 to 50% range are commonly recommended, and some serious keepers change water every 2 to 3 days rather than weekly. Budget the electricity and water use behind this routine into your ongoing costs.", source: "discus-tank-setup-guide" },
+        { label: "Filtration, which is genuinely debated", value: "Canister filters, sized well above the tank's actual volume, are the most common modern choice and handle this species' heavy bioload well. At least one discus-specialty source pushes back on canister filters specifically, arguing they're sealed systems that compete with the fish for dissolved oxygen and can fail dangerously during a power outage, recommending a hang-on-back filter instead, or a canister paired with extra surface agitation. Avoid under-gravel filters.", source: "discus-tank-setup-guide" },
+        { label: "Put the tank somewhere quiet", value: "An enrichment decision that costs nothing and is almost never mentioned. Discus are nervous fish, and a tank in a busy corridor with people passing and looming over it produces animals that live at the back. A low-traffic wall, approached from the side rather than above, and a background on the rear glass. Feed at the same times so the routine becomes predictable.", source: "discus-enrichment-guide" },
+        { label: "Structure and open water", value: "Tall plant stems and upright driftwood give them structure to orient to and break sight lines between individuals, which matters given the hierarchy. Leave open water. Discus cruise instead of darting, and they need somewhere to do it.", source: "discus-enrichment-guide" },
+        { label: "Feeding schedule", value: "Adults 2 to 3 times a day, small amounts cleared within a few minutes. Discus have a short gut relative to their body size, and smaller, more frequent meals suit that better than one large feeding.", source: "discus-feeding-guide" },
+        { label: "Diet", value: "A quality discus-formulated pellet or granule, sized appropriately for this species' small mouth, supplemented regularly with frozen or live bloodworms and brine shrimp. Many experienced keepers also feed a beef-heart mix as part of the rotation, though it works better as a supplement than as the sole staple.", source: "discus-feeding-guide" },
+        { label: "How fry feed", value: "Once free-swimming, fry feed directly on mucus secreted from both parents' skin, most intensively for roughly the first two weeks, with parents gradually weaning them off it over the following two weeks as they start swimming away more often and the fry begin investigating other food sources.", source: "discus-feeding-guide" },
+        { label: "Acclimation, where sources disagree", value: "General fishkeeping guidance commonly recommends a slow drip acclimation, sometimes 60 to 90 minutes. At least one discus-specialty breeder argues the opposite for this species, that drip acclimation keeps the fish confined in shipping water longer while oxygen depletes, and recommends a faster, controlled temperature and pH match instead. What does line up: keep the lights off during acclimation and for several hours after, and don't feed a newly introduced discus right away.", source: "discus-handling-guide" },
+        { label: "Tankmates", value: "Narrower than it looks from a typical peaceful-community list, because sustained 82 to 86\u00B0F rules a lot of standard tropical fish out. Cardinal tetras are named most consistently across dedicated discus sources, alongside rummynose tetras, Sterbai cory catfish, and bristlenose plecos. Neon tetras are a genuine point of disagreement, so cardinals are the safer default if you want a warm-water tetra.", source: "discus-handling-guide" },
+        { label: "Sexing", value: "Genuinely difficult outside of breeding. A more pointed dorsal fin and a somewhat larger body are rough cues, and sources are clear they aren't reliable alone. Most keepers raise a group and let pairs form and reveal themselves through spawning behavior instead of sexing young fish by eye.", source: "discus-handling-guide" },
+        { label: "Budget, the fish", value: "$20 to $450 or more, and price is heavily strain-dependent. Young, common-strain discus run $20 to $40, nicer adult specimens $50 to $150, and premium or rare strains regularly climb to $200 to $450 or more per fish. With a group of 5 to 6, the starting cost is closer to $150 to $250 even at the budget end.", source: "discus-cost-guide" },
+        { label: "Budget, the setup", value: "Roughly $600 to $800, with ongoing costs of $20 to $50 a month. The fish itself is rarely the biggest line item unless you're chasing a premium strain: what drives the budget is filtration sized well above the tank's volume and a water-change routine more demanding than most freshwater fish need.", source: "discus-cost-guide" },
+        { label: "Lifespan", value: "10 to 15 years with excellent, stable care is the commonly cited range, though some sources put the typical captive lifespan closer to 8 to 10 years. Consistency is the deciding factor here more than for most community fish.", source: "discus-cost-guide" },
+        { label: "Adult size", value: "6 to 8 inches (15 to 20 cm) in diameter." },
+        { label: "Cycling, the finish line", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
+        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
+        { label: "Hospital tank", value: "A bare hospital tank with its own net and siphon hose, never shared with the display tank, and disinfected and stored dry between uses. A sponge filter gives gentle biological filtration without the flow of a hang-on-back or canister unit.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Water chemistry, the wider picture", value: "KH is the buffer holding pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you rather than chasing a number.", source: "freshwater-ph-gh-kh-guide" },
+        { label: "Power outage", value: "The threat is oxygen, not darkness. Once the filter and any air pump stop, the water surface stops moving, gas exchange slows, and dissolved oxygen starts dropping. Unplug the filter deliberately rather than letting it sit dead in the water.", source: "aquarium-power-outage-and-transport-guide" },
+        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
       ],
     },
-    sections: {
-      housing: "A 55 to 75 gallon tank is the minimum for a proper group of 6, and taller, deeper tanks are strongly preferred over long ones since discus are a tall-bodied fish. Keep water heated between 82 and 86 degrees F, meaningfully warmer than most community tropical fish, which is exactly why tankmate choice is narrower than it looks. Soft, slightly acidic water (pH 6-7) mimicking Amazon blackwater is important; hard tap water often needs an RO/DI unit or a water softener to keep discus healthy long term.",
-      diet: "Discus do best on a high-protein diet: quality discus pellets, frozen bloodworms and brine shrimp, and the classic beef-heart mix used by experienced keepers, best rotated with other foods rather than fed as beef-heart alone given real fat and calcium-phosphorus caveats. Feed small amounts multiple times a day rather than one large feeding. Fry are fed by both parents through a nutrient-rich skin mucus for about a month total, most intensively through the first two weeks and weaning through weeks three and four, a genuine and peer-reviewed form of parental care rather than hobbyist folklore.",
-      enrichment: "Unlike most cichlids, which pair off and defend territory, discus are genuinely social and do best in a group of 6 or more rather than alone or in pairs. They're easily startled by sudden movement and bright light, so a calm room and a tank kept out of a high-traffic path reduces stress noticeably. Dense broad-leafed planting (Amazon sword, anubias) and driftwood give a shy group somewhere to retreat, closer to their native blackwater look than an open tank.",
-      health: "Hexamita infection, known as hole-in-the-head disease, causes pitting around the head and lateral line and has historically been blamed on poor water quality, stress, and diet-related calcium-phosphorus imbalance; a controlled 2019 study specifically tested severe dietary calcium deficiency over 16 weeks and found it did not produce the disease on its own, so water quality and stress remain the better-supported causes. Catch it early and it's treatable, but a vet or experienced aquatic specialist should confirm before treating. Discus carry a thick protective slime coat, and anything that damages it, rough handling or poor water, opens the door to secondary bacterial or fungal infection. This is not a fish for an uncycled or newly established tank; ammonia and nitrite sensitivity is high, and sudden water-quality swings are a common cause of unexplained decline.",
-      checklist: [
-        "55-75 gallon tall tank (group of 6+)",
-        "Heater holding a steady 82-86°F",
-        "Strong but gentle canister filtration",
-        "RO/DI unit or water softener (if needed for soft, acidic water)",
-        "Frequent large water changes (25-50% every 2-3 days in serious setups)",
-        "Discus pellets, frozen bloodworms, and/or beef-heart mix",
-        "Bare-bottom or fine sand substrate for easy cleaning",
-        "Driftwood and broad-leafed plants for cover",
-        "Water test kit and conditioner",
-        "Warm-water-tolerant, peaceful tankmates only",
+    emergencyCard: {
+      source: "discus-health-issues-guide",
+      callNow: [
+        "Small white spots on the skin and gills, usually preceded by flashing against decor, weakness, and appetite loss",
+        "Pitting, small holes, and erosion around the head and along the lateral line",
+        "Labored or rapid breathing, flashing against decor, excess mucus production, and sometimes visible spots on the body",
+        "Ragged, receding fins with discolored edges, along with cloudy eyes or abdominal swelling in more advanced bacterial cases",
       ],
+      vetLine: "Ich treatment for this species goes noticeably higher than the standard advice given for other fish, toward roughly 90\u00B0F rather than the 82 to 86\u00B0F this species already lives at, since discus have less headroom left before hitting ich's own upper survival limit. The common hobbyist explanation for hole-in-the-head disease is a calcium-to-phosphorus imbalance in the diet, beef heart in particular gets blamed. A 2019 controlled study in the Journal of Fish Diseases tested this directly: researchers fed discus a diet with a severely unfavorable calcium-to-phosphorus ratio for 16 weeks and found it did not produce hole-in-the-head lesions or measurable bone resorption in that window. Water quality and stress remain the better-supported explanations. Catching it early matters, advanced lesions can be genuinely disfiguring and are less likely to fully resolve.",
     },
+    routes: [
+      { slug: "discus-cost-guide", line: "$20 to $450 a fish by strain, $600 to $800 for the tank around them, and why the fish is rarely the biggest line." },
+      { slug: "discus-tank-setup-guide", line: "55 gallons as a floor and 75 as the real answer, 82 to 86F, and the water-change routine that defines the tank." },
+      { slug: "discus-feeding-guide", line: "Two to three small meals for a short gut, the small-mouth sizing issue, and the peer-reviewed truth about discus milk." },
+      { slug: "discus-handling-guide", line: "Why the acclimation advice genuinely splits, the narrow tankmate list, and sexing that mostly cannot be done by eye." },
+      { slug: "discus-health-issues-guide", line: "Ich at 90F rather than 86, flukes, and the hole-in-the-head study that undercuts the usual beef-heart explanation." },
+      { slug: "discus-enrichment-guide", line: "Why six is the number, the singled-out fish to watch for, and the free enrichment decision nobody mentions." },
+    ],
+    buyList: [
+      "55-gallon tank as an entry point, 75 gallons or larger for a proper group",
+      "Five to six discus, not one or two",
+      "Reliable heater, or two, sized for 82 to 86F",
+      "Canister filter above the tank volume, or a hang-on-back, plus extra surface agitation",
+      "Tall plant stems and upright driftwood, with open cruising water left clear",
+      "Background for the rear glass",
+      "Liquid water test kit",
+      "Water conditioner",
+      "Discus-formulated pellet or granule, sized for a small mouth",
+      "Frozen or live bloodworms and brine shrimp",
+      "Python or similar for the water-change routine",
+    ],
     faqs: [
-      { q: "Can discus live with neon tetras?", a: "Not well, long term. Discus need sustained 82 to 86°F water, and neon tetras genuinely struggle at the top of that range, so the classic community pairing is more of a temperature compromise than an ideal setup for either fish. [Cardinal tetras](/guides/cardinal-tetra/) tolerate the warmth noticeably better and are a more honest tankmate choice." },
-      { q: "How can I tell if my discus is male or female?", a: "It's genuinely difficult. Discus show almost no reliable external difference between sexes outside of breeding, when the genital papilla shape differs (males pointed, females rounder). Most keepers can't sex a non-breeding discus with confidence, and that's normal, not a sign you're missing something obvious." },
-      { q: "Why is my discus hiding and not eating?", a: "Discus are easily stressed by sudden movement, bright light, poor water quality, or a tank in a high-traffic area, and hiding with reduced appetite is usually the first visible sign. Check water parameters first, since ammonia or nitrite swings are a common trigger, then consider whether the tank's placement or a recent disturbance is the cause." },
-      { q: "How is a discus different from an angelfish?", a: "Both are Amazonian cichlids, but discus need meaningfully warmer, softer, cleaner water and are considered the more demanding of the two by a real margin, not just reputation. [Angelfish](/guides/angelfish/) are hardier, tolerate a wider temperature range, and are the more forgiving entry point into keeping a tall-bodied South American cichlid." },
-      { q: "How long do discus live?", a: "10 to 15 years with excellent, stable care, meaningfully shorter under fluctuating water quality. Discus reward consistency more than almost any other common aquarium fish; the fish that struggle are usually the ones kept in a tank that's clean one week and neglected the next." },
+      { q: "What size tank does a discus need?", a: "55 gallons is commonly cited as the practical minimum for a small group, though several experienced sources push that to 75 gallons or more, since a 55-gallon tank forces noticeably more frequent water changes to keep pace with this species' bioload. Taller tanks are preferred over long, low ones given this fish's body shape." },
+      { q: "What temperature do discus need?", a: "82 to 86\u00B0F, warmer than nearly every other common community fish, warm enough that it narrows the tankmate list. Wild Heckel discus take water closer to 90\u00B0F, but 82 to 86\u00B0F is the standard target for captive-bred fish." },
+      { q: "How often should I feed my discus?", a: "Adults 2 to 3 times a day, in small amounts they clear within a few minutes, rather than one large daily meal. Discus have a short gut for their body size, and smaller, more frequent meals suit that digestive setup better than a single big feeding." },
     ],
   },
   {
@@ -1089,49 +1191,103 @@ export const fishGuides = [
   {
     id: "swordtail",
     name: "Swordtail",
-    emoji: "🐠",
+    emoji: "\u{1F420}",
     difficulty: "Beginner",
     petType: "Fish",
     image: "/assets/guides/swordtail.jpg",
     tagline: "The active, sword-tailed livebearer that's basically a guppy's bigger, livelier cousin!",
     funFact: "Female swordtails that have already given birth can sometimes go on to develop a sword, male coloring, and even father broods of their own later in life. Hobbyists have reported the switch for generations, and scientists have studied it since the 1930s, though researchers still debate whether it's a true sex reversal or male traits simply emerging late in a fish that was missexed as a juvenile.",
-    costs: {
-      setup: [
-        { item: "20+ gallon tank", low: 70, high: 150 },
-        { item: "Aquarium heater", low: 18, high: 30 },
-        { item: "Filter sized to tank/bioload", low: 30, high: 50 },
-        { item: "Live or silk plants", low: 15, high: 30 },
-      ],
-      annual: [
-        { item: "Flake/pellet food + frozen bloodworms/brine shrimp", low: 35, high: 60 },
-        { item: "Water conditioner and test kit", low: 20, high: 30 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Cycling, filtration, the hospital tank, water
+    // chemistry, the power outage rule and the sick-fish check cite the shared
+    // aquarium guides in the sidebar's Health and More list. Reconciled
+    // 2026-09-15 after the swordtail set test (docs/READER_REVIEWS.md).
+    //
+    // Retired rather than moved: "A 20-gallon tank is a reasonable minimum",
+    // which takes the floor as the recommendation where the setup guide's own
+    // title is "A Real 29 to 30 Gallons"; "Keep water between 70 and 82 degrees
+    // F" against 64 to 82 with 72 to 79 cited most often, a range whose low end
+    // matched neither; a tank line of "$70 | $150" against the cost guide's $35
+    // to $60, with the filter, food, conditioner and test kit rows all drifting
+    // too; and "one male with two or three females", which is the floor the
+    // handling guide explicitly calls the weaker option.
+    //
+    // The ratio reads as three different numbers across the set and is not
+    // actually a disagreement: handling and health both say one male to three
+    // or four females, handling notes some sources say two or three, and
+    // enrichment says two to three minimum with four or more as the clean
+    // version. The hub was the only page that took the floor as the answer.
+    //
+    // The hub also never stated the enrichment guide's single most useful
+    // stocking rule, that two males is the problem number. It is the first
+    // behavioral row below.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Not two males", value: "The single most useful stocking rule for this species. With two, every contest is between the same pair and the loser has nowhere to be. One male with a group of females is the simplest answer. Several males in a large, well-planted tank works because the aggression distributes, and it needs the space to be real rather than nominal.", source: "swordtail-enrichment-guide" },
+        { label: "Sex ratio", value: "Two to three females per male minimum, more better, for the same reasons as any livebearer. A pursued female feeds less and rests less. Combined with the rule above: one male and four or more females is a clean, easy setup.", source: "swordtail-enrichment-guide" },
+        { label: "Why the ratio is a health item", value: "A ratio of one male to three or four females spreads mating attempts out enough to meaningfully reduce chasing, and a tank with real planted cover gives a harassed fish somewhere to break line of sight. If you already have a fish showing chewed fins or clamped, listless behavior in a male-heavy tank, separating that individual into a recovery tank alongside correcting the ratio addresses both the injury and its underlying cause at once.", source: "swordtail-health-issues-guide" },
+        { label: "Tank size", value: "20 gallons is the genuine floor for a small trio, a step up from the 10-gallon tank that gets a small guppy or platy group by. 29 to 30 gallons is the more realistic starting point that most direct retailers and care sheets recommend, since swordtails are more active, open-water swimmers than a molly or platy. Go long and rectangular rather than tall, and use a lid. A 20-gallon long tank is a workable starting point for a small trio, with a step up to 29 or 30 gallons the better real-world target for most keepers.", source: "swordtail-tank-setup-guide" },
+        { label: "Temperature", value: "A tropical range of roughly 64 to 82\u00B0F works, with 72 to 79\u00B0F cited most often as the steadier, more comfortable target. Stability matters more than hitting an exact number, avoid swings larger than about 2\u00B0F in a 24-hour period.", source: "swordtail-tank-setup-guide" },
+        { label: "The jumping risk", value: "Real, not hobbyist exaggeration. Reports from experienced keepers describe fish escaping through gaps of well under an inch between a glass lid and the tank rim. A full mesh or glass lid with no meaningful gaps is the fix, not an optional upgrade. Leave a feeding hatch or filter cutout no larger than necessary, and check it after any tank rearranging.", source: "swordtail-tank-setup-guide" },
+        { label: "Filtration", value: "Swordtails need more real filtration capacity than a guppy or molly. SeriouslyFish specifically recommends filter flow at 4 to 5 times the tank's volume per hour for this species, and a bigger, more active fish in a bigger tank produces a bigger bioload to match. For a standard or growing group, a hang-on-back filter or a stronger canister filter handles the load comfortably. A gentle sponge filter is the better call specifically if you're prioritizing fry survival.", source: "swordtail-tank-setup-guide" },
+        { label: "Cover and broken sight lines", value: "Dense live planting along the sides and back, with open water through the middle. Planting does double duty: cover for pursued females, and broken sight lines that stop a dominant male tracking a subordinate across the whole tank. If you are keeping several males, this is what makes it work.", source: "swordtail-enrichment-guide" },
+        { label: "Feeding", value: "Once or twice a day is the most commonly cited range for adults, though some sources recommend two to three smaller meals. Either way, feed only what's fully cleared within about 2 minutes, swordtails are active enough that overfeeding is the more common real mistake. Layer in real vegetable content, algae wafers, spirulina-based flakes, or blanched zucchini, spinach, and peas, a few times a week, and rotate in protein-rich foods regularly rather than sparingly: bloodworms, brine shrimp, and daphnia, offered live, frozen, or freeze-dried, all work well and swordtails take to them readily.", source: "swordtail-feeding-guide" },
+        { label: "Why a swordtail stops eating", value: "Stress from a new tank, aggressive tankmates or an unbalanced ratio; poor or unstable water quality; cold water, which slows metabolism directly; a female close to giving birth; and illness, which usually comes with other visible signs rather than appetite loss alone.", source: "swordtail-feeding-guide" },
+        { label: "Acclimation", value: "Float the sealed bag in your tank for 15 to 20 minutes to equalize temperature, then drip acclimate over 45 to 60 minutes so the fish adjusts gradually to your water chemistry. Net the fish into the tank rather than pouring in any bag water, since it can carry ammonia the fish produced during transport.", source: "swordtail-handling-guide" },
+        { label: "Quarantine", value: "A separate tank for 2 to 4 weeks before adding a new fish to your established tank catches most problems before they spread, the same practice that applies across nearly every aquarium fish.", source: "swordtail-handling-guide" },
+        { label: "Sexing", value: "Males carry the namesake sword, a colorful extension of the lower tail fin, along with a modified anal fin called a gonopodium used to fertilize females internally. Females lack the sword entirely, have a fuller fan-shaped anal fin, and are the larger sex, an unusual reversal for a fish where the male carries the flashier ornament.", source: "swordtail-handling-guide" },
+        { label: "Budget", value: "$3 to $25 a fish, more for lyretail and specialty patterns. Upfront setup is $115 to $190, more if you size up to the 29 or 30 gallons the setup guide recommends, and ongoing costs run $20 to $35 a month.", source: "swordtail-cost-guide" },
+        { label: "Vet costs", value: "As with most aquarium fish, swordtails rarely see a vet in any formal sense. Most swordtail health issues, ich, fin rot, and dropsy among them, get managed at home with water quality correction and over-the-counter medication rather than a clinic visit.", source: "swordtail-cost-guide" },
+        { label: "Lifespan", value: "3 to 5 years on average with stable water quality, the same range as a molly or platy despite the size difference.", source: "swordtail-cost-guide" },
+        { label: "Adult size", value: "Males up to 5.5 inches (14 cm) including the sword; females up to 6.2 inches (16 cm) and typically the larger sex overall." },
+        { label: "Cycling, the finish line", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
+        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
+        { label: "Hospital tank", value: "A bare hospital tank with its own net and siphon hose, never shared with the display tank, and disinfected and stored dry between uses. A sponge filter gives gentle biological filtration without the flow of a hang-on-back or canister unit.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Water chemistry, the wider picture", value: "KH is the buffer holding pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you rather than chasing a number.", source: "freshwater-ph-gh-kh-guide" },
+        { label: "Power outage", value: "The threat is oxygen, not darkness. Once the filter and any air pump stop, the water surface stops moving, gas exchange slows, and dissolved oxygen starts dropping. Unplug the filter deliberately rather than letting it sit dead in the water.", source: "aquarium-power-outage-and-transport-guide" },
+        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
       ],
     },
-    sections: {
-      housing: "A 20-gallon tank is a reasonable minimum for a small group, and swordtails appreciate a long footprint over a tall one since they're more active, energetic swimmers than platies or guppies and favor open water. Keep water between 70 and 82 degrees F with a heater to hold it steady, and use a secure lid, since swordtails are capable jumpers. Because males can be genuinely aggressive toward other males, keep one male with two or three females rather than multiple males in anything short of a large, well-planted tank; dense planting also gives females somewhere to break line of sight from an overly persistent male.",
-      diet: "Swordtails are omnivores that do well on a high-quality flake or pellet food as a dietary staple, and a real vegetable or algae component matters just as much here as it does for platies and mollies. Frozen or live bloodworms, brine shrimp, and daphnia add valuable protein and variety. Feed small amounts once or twice daily, only what's consumed within a couple of minutes.",
-      enrichment: "Swordtails are noticeably more active swimmers than platies or guppies and make good use of open water alongside planted cover. Male ratio matters here for real welfare reasons, not just breeding math: a single female housed with a male faces near-constant, stressful mating pursuit, so two or three females per male spreads that attention out and reduces chasing. Watching courtship and the arrival of new broods is itself a source of ongoing enrichment, though as with every livebearer on this site, adults will eat their own fry without dense cover or a separate nursery.",
-      health: "Swordtails are generally hardy, but ich and fin rot both follow poor water quality, and as larger, more active fish they produce more waste than a guppy or platy of the same age, so filtration and maintenance need to keep pace. Fry and juveniles are considerably more delicate than adults and benefit from more frequent, smaller water changes. Because male aggression is a genuine stress and injury risk in an unbalanced sex ratio, ongoing chasing and fin damage in a tank with too few females is a health issue as much as a behavioral one. Weekly 20 to 25 percent water changes support the heavier bioload of a full-grown group.",
-      checklist: [
-        "20+ gallon tank (longer footprint preferred)",
-        "Heater set to 70-82°F",
-        "Filter sized to tank and bioload",
-        "Secure lid (swordtails jump)",
-        "Live or silk plants",
-        "1 male to 2-3 females (reduces mating-chase stress)",
-        "High-quality flake or pellet food with vegetable content",
-        "Frozen bloodworms or brine shrimp for variety",
-        "Water conditioner and test kit",
-        "Weekly 20-25% water changes",
+    emergencyCard: {
+      source: "swordtail-health-issues-guide",
+      callNow: [
+        "Small white spots resembling grains of salt across the body and fins",
+        "Ragged, frayed, or discolored fin edges",
+        "Fluid buildup in the abdomen that makes the scales stand out in a raised, pinecone-like pattern",
+        "Buoyancy problems, floating, sinking, or swimming at odd angles, usually from overfeeding or constipation",
+        "Chewed fins or clamped, listless behavior in a male-heavy tank",
       ],
+      vetLine: "Poor or unstable water quality, overcrowding, and skipping quarantine are the common thread behind nearly every pathogen-driven condition on this list. Put plainly, an unbalanced male-to-female ratio doesn't just look unpleasant to watch, it measurably raises the odds of the pathogen-driven conditions above actually taking hold. Dropsy is the hardest condition on this list to treat successfully, often carrying a poor outlook by the time it's obvious.",
     },
+    routes: [
+      { slug: "swordtail-cost-guide", line: "$3 to $25 a fish, $115 to $190 for the tank, and why sizing up costs more than the table says." },
+      { slug: "swordtail-tank-setup-guide", line: "A real 29 to 30 gallons, 64 to 82F, four to five times turnover, and a lid that actually seals." },
+      { slug: "swordtail-feeding-guide", line: "The two-minute rule, vegetables a few times a week, and the five reasons a swordtail goes off its food." },
+      { slug: "swordtail-handling-guide", line: "Float then drip, net rather than pour, quarantine two to four weeks, and sexing by the sword." },
+      { slug: "swordtail-health-issues-guide", line: "Ich, fin rot, dropsy and swim bladder, plus the sex ratio treated as the health issue it is." },
+      { slug: "swordtail-enrichment-guide", line: "Why two males is the problem number, the ratio that follows from it, and what planting actually does." },
+    ],
+    buyList: [
+      "20-gallon long as a floor, 29 or 30 gallons as the real target",
+      "Lid that seals, with no gaps at the back or around cutouts",
+      "Submersible aquarium heater",
+      "Filter rated for 4 to 5 times the tank volume per hour",
+      "Sponge filter, if fry survival matters",
+      "Dense live plants along the sides and back, open water through the middle",
+      "One male and four or more females, or a single-sex group",
+      "Liquid water test kit",
+      "Water conditioner",
+      "Staple flake or pellet",
+      "Zucchini, spinach or peas to blanch",
+    ],
     faqs: [
-      { q: "How big do swordtails get?", a: "Males reach about 5.5 inches (14 cm) including the sword, and females grow slightly longer still, up to about 6.2 inches (16 cm), despite having no sword at all. That makes swordtails roughly double the length of a platy or guppy." },
-      { q: "Why do male swordtails have a 'sword'?", a: "It's an extension of the lower edge of the tail fin, and it's a genuine target of female mate choice, females show measurable preferences for males with longer swords and bolder color, similar to a peacock's tail. The sword itself plays no role in swimming." },
-      { q: "Can swordtails and platies really interbreed?", a: "Yes, and it's far more common than most keepers realize. [Platies](/guides/platy/) and swordtails are both in the genus Xiphophorus and close enough to produce fertile hybrids; deliberate crossbreeding between the two has been part of the aquarium hobby for close to a century, so many platies and swordtails sold today already carry some hybrid ancestry rather than being purely one species." },
-      { q: "Is a 'swordtail guppy' the same as a swordtail fish?", a: "No, and this trips up a lot of new keepers. 'Swordtail' is also the name of a [guppy](/guides/guppy/) tail shape, a single pointed extension top or bottom of the caudal fin, bred within Poecilia reticulata itself. A true swordtail (Xiphophorus hellerii) is a separate, larger species; a swordtail-finned guppy is still just a guppy." },
-      { q: "What size tank do swordtails need?", a: "20 gallons is a reasonable minimum for a small group, more than a guppy or platy needs, since swordtails are larger and considerably more active swimmers. A longer tank footprint suits their swimming style better than a tall one." },
-      { q: "Are swordtails good pets for beginners?", a: "Yes, they're hardy, colorful, and about as easy to breed as any livebearer. The main adjustment from a guppy or platy is size and activity level: swordtails need a bigger, longer tank and are more prone to male-on-male aggression, so stick to one male per group of females unless the tank is large and well planted." },
+      { q: "What size tank does a swordtail need?", a: "20 gallons is the genuine floor for a small trio, one male and two or three females, but 29 to 30 gallons is the more realistic starting point that most direct retailers and care sheets recommend, since swordtails are more active, open-water swimmers than a molly or platy. Go long and rectangular over tall, and use a lid, swordtails are capable jumpers." },
+      { q: "What temperature do swordtails need?", a: "Tropical, roughly 64 to 82\u00B0F, with 72 to 79\u00B0F cited most often as the steadier target. Hold it steady rather than chasing a number: keep swings under about 2\u00B0F a day. A submersible heater is necessary unless the room stays warm all year." },
+      { q: "Why does male-to-female ratio matter so much with swordtails?", a: "Because males can be persistent toward females and combative toward each other. Sources commonly recommend one male to three or four females, some say two or three is enough, but the higher end spreads out mating attempts more effectively and reduces the fin damage and stress that come with a single female fielding constant attention." },
     ],
   },
   {
@@ -1143,46 +1299,100 @@ export const fishGuides = [
     image: "/assets/guides/zebra-danio.jpg",
     tagline: "The tireless, torpedo-striped schooler that's equally at home in a beginner's tank and a genetics lab!",
     funFact: "Zebra danios, known to scientists as zebrafish, are the most widely used non-mammalian vertebrate model organism in developmental biology and genetics research. Their embryos develop transparently outside the mother's body within hours of fertilization, letting researchers watch organs form in real time, and roughly 70 percent of human genes have a working counterpart in the zebrafish genome, sequenced in full in 2013. That same genetic malleability is also how GloFish, the first genetically modified animal ever sold as a pet, came to exist: they're fluorescent zebra danios.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // Priced for a proper school of 5-6+, since they're obligate schooling fish.
-    costs: {
-      setup: [
-        { item: "10-20+ gallon long tank", low: 50, high: 100 },
-        { item: "Gentle filter", low: 20, high: 35 },
-        { item: "Live or silk plants for cover", low: 15, high: 30 },
-        { item: "Water test kit", low: 15, high: 20 },
-      ],
-      annual: [
-        { item: "Flake/micro-pellet food + frozen bloodworms", low: 30, high: 50 },
-        { item: "Water conditioner", low: 10, high: 15 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Cycling, filtration, the hospital tank, water
+    // chemistry, the power outage rule, summer cooling and the sick-fish check
+    // cite the shared aquarium guides in the sidebar's Health and More list.
+    // Reconciled 2026-09-15 after the zebra danio set test
+    // (docs/READER_REVIEWS.md).
+    //
+    // Retired rather than moved: a whole cost table written independently of
+    // the cost guide, with the tank at $50 to $100 against $18 to $60, the
+    // filter at $20 to $35 against $8 to $15, food at $30 to $50 against $15
+    // to $25, and the test kit filed as annual where the cost guide files it
+    // as a one-time purchase. Also "Feed small amounts once or twice daily"
+    // against the feeding guide's twice a day minimum, and a heater listed as
+    // optional equipment without the range that makes it optional.
+    //
+    // Group size is stated twice on purpose and is not a disagreement. The
+    // handling guide gives the floor and the target together, 5 to 6 workable
+    // against 8 to 10 or more for natural schooling; the enrichment guide
+    // gives the behavioral reason for the higher number. The old hub said
+    // "at least five or six" and stopped at the floor, which is the same
+    // failure the swordtail hub had with its sex ratio.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "How many", value: "At least 6. Aquarium Co-Op names 5 to 6 as the workable minimum, but Seriously Fish recommends starting with 8 to 10 or more for natural schooling behavior. A group that's too small is more likely to direct fin-nipping energy at tankmates instead of schooling normally.", source: "zebra-danio-handling-guide" },
+        { label: "Why the higher number", value: "In small groups the chasing and nipping that danios do among themselves lands repeatedly on the same individual, and a bigger group spreads it out. Eight or more, and more where the tank supports it.", source: "zebra-danio-enrichment-guide" },
+        { label: "Tank size", value: "A 10-gallon tank is workable for the bare minimum school of 6. Seriously Fish's recommended footprint, roughly 90x30cm even for a small group, lines up closely with a 20-gallon long tank, a better practical minimum for the fuller 8 to 10 fish school most sources recommend.", source: "zebra-danio-tank-setup-guide" },
+        { label: "Length over height", value: "The commonest mistake with this species is a small cube. Danios in a short tank do laps, and the behavior that gets described as energetic is a fish running out of tank. A long tank is worth far more to them than a tall one of the same volume.", source: "zebra-danio-enrichment-guide" },
+        { label: "Temperature, and the heater", value: "Not strictly needed. Multiple care sources put their comfortable range at 64 to 77\u00B0F, close enough to room temperature in most homes that a heater is optional. It's still worth adding if your home runs cool or if danios share a tank with tropical fish that need warmer, more stable water.", source: "zebra-danio-tank-setup-guide" },
+        { label: "Water chemistry", value: "Zebra danios are genuinely flexible here. Seriously Fish lists a comfortable pH range of 6.0 to 8.0 and hardness anywhere from about 90 to 357 ppm, soft to fairly hard water both work. That's a much wider window than a soft-water specialist like cardinal tetra needs. Ammonia and nitrite should still read zero before stocking regardless.", source: "zebra-danio-tank-setup-guide" },
+        { label: "Filtration", value: "Moderate water movement is fine, and this species actually does well with more current than a delicate soft-water fish would tolerate. Seriously Fish recommends filtration that turns over roughly 4 to 5 times the tank volume per hour. A sponge filter or hang-on-back filter both work well.", source: "zebra-danio-tank-setup-guide" },
+        { label: "The lid", value: "Because they're capable jumpers. Multiple sources put their jump height at 20 to 30cm, and even a small gap in a hood or lid is often enough for an active, easily startled danio to find its way out. A tight-fitting lid isn't optional the way it might be for a calmer fish.", source: "zebra-danio-tank-setup-guide" },
+        { label: "Planting", value: "Substrate and live planting instead of bare glass, plus driftwood for structure and surface. Plant the sides and back, leave the middle open. Danios need cover and they need somewhere to sprint, and a tank that is all one or all the other misses half of it.", source: "zebra-danio-enrichment-guide" },
+        { label: "Flow", value: "Stream fish. A filter outlet aimed to produce some flow along the length of the tank gets used rather than avoided. Not a torrent: enough that there is a fast end and a slow end, and the fish get to choose.", source: "zebra-danio-enrichment-guide" },
+        { label: "Feeding", value: "Twice a day is the practical standard, offering only what the school finishes in two to three minutes. That matches general zebrafish feeding guidance used in research settings too: the standard husbandry reference at ZFIN recommends adult zebrafish get fed at least twice daily.", source: "zebra-danio-feeding-guide" },
+        { label: "The accidental spawn", value: "Conditioning danios on live or frozen food is a classic way to trigger spawning, since it mimics the food abundance that kicks off breeding activity in the wild. If you don't want fry, skip the daily live-food routine and don't add fine-leaved plants or marbles the eggs can fall into and survive in.", source: "zebra-danio-feeding-guide" },
+        { label: "Catching one", value: "Chasing rarely works. Set a net flush against a front corner of the tank, then use your other hand, fingers spread, to guide the fish toward it rather than pursuing them directly. Lowering the water level a few inches and staying calm both help.", source: "zebra-danio-handling-guide" },
+        { label: "Acclimation", value: "Float the sealed bag for 15 to 20 minutes to match temperature, then add a quarter cup of tank water to the bag every 5 minutes for another 15 to 20 minutes before netting the fish into the tank. Discard the bag water rather than pouring it in.", source: "zebra-danio-handling-guide" },
+        { label: "Quarantine", value: "Two to four weeks before new fish join an established tank. A simple 10 to 20-gallon bare-bottom tank with its own sponge filter and heater works well for this and doubles as an isolation tank later if a fish gets sick.", source: "zebra-danio-handling-guide" },
+        { label: "Budget", value: "Roughly $2 to $3 a fish, so about $12 to $30 for a starting school of 6 to 10. Core equipment runs roughly $60 to $150, and most first setups land around $100 to $180 once substrate and a test kit go in. Ongoing costs are very low, even by cheap-fish standards.", source: "zebra-danio-cost-guide" },
+        { label: "The GloFish premium", value: "The same species, genetically engineered to carry a fluorescent protein gene. They run about $8 each regardless of pack size, roughly four times the price of a plain wild-type danio. That premium reflects licensing and patent costs tied to the fluorescent gene, not a harder-to-keep fish.", source: "zebra-danio-cost-guide" },
+        { label: "Vet costs", value: "Not applicable in the traditional sense. Fish health management here is almost entirely about water quality and, when needed, over-the-counter treatments, not veterinary visits.", source: "zebra-danio-cost-guide" },
+        { label: "Lifespan", value: "Outbred zebra danios average around 3.5 years in captivity and can live up to 5.5 years with excellent care, according to the AnAge longevity database. Most wild zebrafish live to be about one year old.", source: "zebra-danio-cost-guide" },
+        { label: "Adult size", value: "1.5 to 2.5 inches (4 to 6 cm); occasionally to 3 inches (7.5 cm) in captivity." },
+        { label: "The condition to know about", value: "Mycobacteriosis, sometimes called fish tuberculosis. Lethargy, loss of appetite and emaciation, along with skin ulcers, pale patches, and in advanced cases visible white nodules or a swollen abdomen. There's no reliable cure once a fish is visibly symptomatic.", source: "zebra-danio-health-issues-guide" },
+        { label: "Gloves, if you have a cut", value: "Mycobacterium marinum can also infect people, usually through a small cut or scrape exposed to contaminated tank water. It's uncommon and treatable, but it's a genuine reason to wear gloves for tank maintenance if you have any open cuts, and to mention aquarium exposure to a doctor if a slow-healing bump shows up.", source: "zebra-danio-health-issues-guide" },
+        { label: "Cycling, the finish line", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
+        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
+        { label: "Hospital tank", value: "A bare hospital tank with its own net and siphon hose, never shared with the display tank, and disinfected and stored dry between uses. A sponge filter gives gentle biological filtration without the flow of a hang-on-back or canister unit.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Water chemistry, the wider picture", value: "KH is the buffer holding pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you rather than chasing a number.", source: "freshwater-ph-gh-kh-guide" },
+        { label: "A hot week", value: "Reach for room air conditioning and a fan first, treat frozen bottles as a genuine last resort rather than a daily habit, and keep the aeration running no matter what else you're doing. Warmer water holds less dissolved oxygen at the same moment the fish need more of it.", source: "cooling-an-aquarium-without-a-chiller-guide" },
+        { label: "Power outage", value: "The threat is oxygen, not darkness. Once the filter and any air pump stop, the water surface stops moving, gas exchange slows, and dissolved oxygen starts dropping. Unplug the filter deliberately rather than letting it sit dead in the water.", source: "aquarium-power-outage-and-transport-guide" },
+        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
       ],
     },
-    sections: {
-      housing: "A 10-gallon tank is a workable minimum for a small group of zebra danios, but a 20-gallon long tank suits them far better, since these are fast, energetic swimmers that need horizontal racing room more than height. Keep water between 64 and 77 degrees F, close enough to room temperature in most homes that a heater is often optional, unless your house runs cool or your danios share a tank with warmth-loving tropical fish. Use a gentle filter and always fit a tight, secure lid, since zebra danios are genuinely capable jumpers and even a small gap is often enough for one to escape. A fully cycled tank matters just as much for this species as any other, despite their reputation for toughness.",
-      diet: "Zebra danios are omnivores that do well on a high-quality flake or micro-pellet food as a dietary staple, sized small enough for their upturned mouths. Frozen or live bloodworms, brine shrimp, and daphnia offered two to three times a week add valuable variety and bring out their color. Feed small amounts once or twice daily, offering only what's eaten within two to three minutes, since overfeeding fouls water quickly in a smaller tank.",
-      enrichment: "Zebra danios are obligate schooling fish and should always be kept in groups of at least five or six, both to feel secure and to keep their energy directed at each other rather than at slower or longer-finned tankmates, since an understocked group is more likely to fin-nip. A properly sized school moving together at speed through open water is genuinely one of the more mesmerizing sights a beginner tank can offer. Because danios are egg-scatterers rather than livebearers, unlike the guppies and mollies also covered on this site, watching a spawning chase, with no nest-building or parental care afterward, is itself a distinct behavior worth observing.",
-      health: "Ich, fin rot, and columnaris (a bacterial infection causing greyish patches) are the most common issues, and all three are far easier to prevent through stable water quality than to treat after the fact. Swim bladder problems, usually from overfeeding, can cause a danio to struggle swimming level. Zebra danios have a genuine reputation for tolerating ammonia and nitrite better than more sensitive fish like neon tetras, but that tolerance is relative, not absolute, and a brand-new, uncycled tank still damages their gills the same way it would any other fish. Weekly 25 to 30 percent water changes are the simplest way to keep a hardy fish actually healthy rather than just surviving.",
-      checklist: [
-        "10-20+ gallon long tank",
-        "Group of 5-6+ zebra danios",
-        "Gentle filter",
-        "Tight-fitting lid (danios jump)",
-        "Optional heater (64-77°F tolerated; add one for a warmer community tank)",
-        "Live or silk plants for cover",
-        "Flake or micro-pellet food",
-        "Frozen bloodworms or brine shrimp for variety",
-        "Water test kit and conditioner",
-        "Weekly 25-30% water changes",
+    emergencyCard: {
+      source: "zebra-danio-health-issues-guide",
+      callNow: [
+        "Small white spots resembling grains of salt, alongside increased mucus production, flashing against decor, rapid breathing, and lethargy",
+        "Discoloration on the fin edges first, then fraying as infected tissue dies off",
+        "Lethargy, loss of appetite, and emaciation, along with skin ulcers, pale patches, and in advanced cases visible white nodules or a swollen abdomen",
+        "Buoyancy problems, floating at the surface unable to swim down, or struggling to rise from the bottom",
+        "A slow-growing, sometimes painful bump or nodule on your own skin at the site of exposure after working in a tank",
       ],
+      vetLine: "Nearly everything treatable on this list traces back to water quality and stability, exactly what a properly cycled tank with consistent temperature and regular water changes prevents. Mycobacteriosis is the exception: there's no reliable cure once a fish is visibly symptomatic, and prevention through quarantine, clean equipment, and stable water is the real defense for home keepers. The bump on your own skin is uncommon and treatable, but it's a real reason to wear gloves or avoid putting broken skin in tank water, and to see a doctor if a slow-healing bump shows up after aquarium work.",
     },
+    routes: [
+      { slug: "zebra-danio-cost-guide", line: "$2 a fish, $100 to $180 for a first setup, and why GloFish cost four times as much for identical care." },
+      { slug: "zebra-danio-tank-setup-guide", line: "The 90x30cm footprint, 64 to 77F, and the rare community fish that might not need a heater." },
+      { slug: "zebra-danio-feeding-guide", line: "Twice a day, two to three minutes, and the live food that triggers an accidental spawn." },
+      { slug: "zebra-danio-handling-guide", line: "Trap and guide rather than chase, float-and-drip timings, and the school size that matters more than technique." },
+      { slug: "zebra-danio-health-issues-guide", line: "Ich, fin rot, swim bladder, and the fish tuberculosis this species is studied for." },
+      { slug: "zebra-danio-enrichment-guide", line: "The enrichment study that measured survival rather than behavior, and why a cube is the wrong tank." },
+    ],
+    buyList: [
+      "A school of 8 to 10, not two or three to start",
+      "20-gallon long for that school, 10 gallons only for a bare minimum six",
+      "Tight-fitting lid, every seam checked",
+      "Sponge or hang-on-back filter at 4 to 5 times tank volume per hour",
+      "Heater, only if the room runs cool or tankmates need one",
+      "Substrate and live plants along the sides and back, open water through the middle",
+      "Driftwood for structure",
+      "Liquid water test kit",
+      "Water conditioner",
+      "Flake or micro-pellet food",
+      "Frozen bloodworms or brine shrimp, for variety rather than daily",
+    ],
     faqs: [
-      { q: "Do zebra danios need a heater?", a: "Not strictly. They tolerate 64 to 77°F, which is close to room temperature in most homes, so many keepers run them unheated. A small heater is still worth adding if your home runs cool or if danios are sharing a tank with tropical fish that need warmer, more stable water." },
-      { q: "Why do my zebra danios keep jumping out of the tank?", a: "Zebra danios are genuinely capable jumpers, and even a small gap in a hood or lid is often enough for one to escape. A tight-fitting lid isn't optional for this species the way it might be for a slower, less energetic fish." },
-      { q: "How many zebra danios should I keep together?", a: "At least 5 to 6. They're obligate schooling fish, and an undersized group is more likely to direct fin-nipping energy at slower or longer-finned tankmates instead of schooling normally." },
-      { q: "Are zebra danios livebearers like guppies?", a: "No, this is a genuine point of difference. [Guppies](/guides/guppy/) and mollies give birth to free-swimming fry, but zebra danios are egg-scatterers: a pair releases eggs into open water or plants with no nest and no parental care afterward, closer to how most tetras breed." },
-      { q: "Why are zebra danios used in science labs?", a: "Zebrafish, the same species as the aquarium zebra danio, are the most widely used non-mammalian vertebrate model organism in developmental biology and genetics research. Their embryos develop transparently outside the body, and roughly 70 percent of human genes have a working counterpart in their genome, making them uniquely useful for studying development and disease." },
-      { q: "What are GloFish?", a: "Fluorescent zebra danios. GloFish were the first genetically modified animal ever sold as a pet, created by inserting a fluorescent protein gene into zebrafish embryos, and they need the exact same care as any other zebra danio." },
-      { q: "Are zebra danios good pets for beginners?", a: "Yes, genuinely, they're one of the hardiest community fish available and don't strictly need a heater. The real mismatch to avoid is tankmates: their speed and fin-nipping tendency in small groups can stress slow, long-finned fish like bettas, so stick to similarly active, non-delicate tankmates." },
+      { q: "What size tank does a school of zebra danios need?", a: "A 10-gallon tank is workable for the bare minimum school of 6. Seriously Fish's recommended footprint, roughly 90x30cm even for a small group, lines up closely with a 20-gallon long tank, a better practical minimum for the fuller 8 to 10 fish school most sources recommend." },
+      { q: "Do zebra danios need a heater?", a: "Not strictly. Multiple care sources put their comfortable range at 64 to 77\u00B0F, close enough to room temperature in most homes that a heater is optional. It's still worth adding if your home runs cool or if danios share a tank with tropical fish that need warmer, more stable water." },
+      { q: "How many zebra danios should I keep together?", a: "At least 6. Aquarium Co-Op names 5 to 6 as the workable minimum, but Seriously Fish recommends starting with 8 to 10 or more for natural schooling behavior. A group that's too small is more likely to direct fin-nipping energy at tankmates instead of schooling normally." },
     ],
   },
 ];

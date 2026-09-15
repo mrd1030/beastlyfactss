@@ -13620,3 +13620,452 @@ cited under a range it does not give, a care sheet was cited under a portion
 rule and a prey rule it does not state, a hedge was dropped in four places by a
 de-narration pass, a correct figure was changed on a misreading, and the review
 file says four raw outputs were filed when one was.
+
+## Bristlenose Pleco (2026-09-15, batch N, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 82k tokens. Raw output in
+docs/READER_LOG.md. Set grade: B-. "Genuinely useful and unusually honest about
+the wood evidence, undermined by a hub that contradicts its own deep dives on
+price and temperature."
+
+The tank price is what cost this set its grade, and the reader said why in a
+sentence worth keeping: "the hub and cost guide disagreeing on the price of a
+tank by a factor of two is the kind of thing that makes me re-check everything
+else." Hub: "20-30 gallon tank | $90 | $170". Cost guide: "20 gallon long tank
+(minimum) | $35 - $60". The filter and heater rows drift in opposite directions
+from each other, the test kit is filed as annual on one page and upfront on the
+other, and the hub's own setup table sums to $165 to $305 against a stated $155
+to $265 while missing the test kit line entirely. All retired with the hub.
+
+Two bodies, one fish. The hub called a bristlenose "scaleless"; the health guide
+calls it "armored catfish with an unprotected belly". The reader put it plainly,
+that those are different bodies, and it matters because the copper warning rests
+on which one is true. The hub row now takes the health guide's wording, which is
+also the version its Sources support.
+
+The circular pointer, which is the most useful structural finding here. The
+feeding guide said "Our Bristlenose Pleco tank setup guide covers exactly how to
+add it" about driftwood; the setup guide covers why, not how, and points back at
+the feeding guide for the science; and the answer to how much wood is enough sits
+in the enrichment guide, which neither links. Two pages pointing at each other
+with the answer in a third. Both now point at enrichment, and the setup guide
+gained the practical part it was promising: buy a substantial piece rather than
+an ornament, expect tannins.
+
+Also fixed on the reader's evidence: the enrichment guide's voice slips, a
+"fortnight" and a "courgette" on a US-spelling site, and a stray "Other sizes are
+available" fragment with no product behind it, which is the docs/TODO.md section
+8 template-fragment item for this species, done. That leaves 14 across the site.
+
+Temperature settled at the setup guide's 74 to 80 against the hub's 74 to 82, and
+the hub's "20-30 gallon tank" checklist line is gone in favour of the cost
+guide's 20 long as the floor with 29 to 30 as the better long-term answer, which
+is what the setup guide already said.
+
+Links: 2 rewritten rather than added (feeding and tank setup, both now pointing
+at enrichment), since the problem here was links that existed and pointed the
+wrong way. [Corrected from "3" by the batch N species check: the enrichment
+guide's edits were voice fixes, not a link.]
+
+Dates: tank setup and feeding bumped. Enrichment is future-dated to 2026-11-05
+and was not bumped despite the voice fixes, which changed no figure.
+
+Left open, needs research: the encyclopedia's "up to 12-15 years with excellent
+care" against the cost guide's "reasonably often reported living 12 to 14 years".
+Neither is obviously wrong and the cost guide's Sources do not settle the
+ceiling. Filed in section 8.
+
+Gaps, checked against the Health and More list: a water change schedule (three
+pages say "regular water changes" and none gives a number, which is now a
+shared-guide item in section 8), how to prepare driftwood, what to treat with
+instead of copper, the target temperature for ich heat treatment against the
+80F ceiling (also now a section 8 item, since zebra danio has the same problem),
+breeding follow-through, tankmates to avoid, and bag-to-tank acclimation.
+
+## Discus (2026-09-15, batch N, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 82k tokens. Raw output in
+docs/READER_LOG.md. Set grade: B+. "The articles are specific, honest about
+disagreement, and genuinely usable; the hub they hang off is looser than they
+are and the pages barely link to each other."
+
+The hub contradicted itself, which is rarer than a hub contradicting its
+articles and worse. Its funFact said discus fry feed on parental mucus "for their
+first one to two weeks of life"; its own diet section said "for about a month
+total, most intensively through the first two weeks and weaning through weeks
+three and four." The feeding guide settles it with the fuller version and a 2010
+Journal of Experimental Biology study behind it. A funFact survives a router
+conversion, so this one is corrected rather than retired, and it now carries the
+weaning window and the study's finding about amino acids and immune antibodies.
+
+Two rows deliberately keep a hedge the old hub had flattened, which is the
+interesting half of this species.
+
+Filtration. The hub checklist said "Strong but gentle canister filtration" as if
+settled. The setup guide records a discus-specialty source pushing back on
+canisters specifically, on the grounds that they are sealed systems competing
+with the fish for dissolved oxygen and can fail dangerously in a power outage.
+The router row carries the disagreement, because a reader choosing a filter needs
+to know the choice is contested rather than being handed one answer.
+
+Neon tetras. The hub answered flat; the handling guide calls it "a genuine point
+of disagreement," with dedicated discus sources avoiding neons at discus
+temperatures and at least one general retailer listing them as fine. The reader
+said "I prefer the article," and so does the router row: the disagreement stays
+and cardinals are named as the safer default.
+
+Acclimation is the third of these, and the handling guide already handled it
+well: general guidance says drip for 60 to 90 minutes, a discus-specialty breeder
+argues drip is worse for this species because it holds the fish in depleting
+shipping water longer. The row keeps both and then gives what does line up,
+lights off and no food on day one.
+
+Retired with the hub: a tank line of "$290 | $450" against the cost guide's "$290
+- $310"; a checklist reading "Frequent large water changes (25-50% every 2-3 days
+in serious setups)", which flattens the setup guide's weekly baseline into the
+enthusiast cadence and would have a new keeper doing three times the work; and
+"a group of 6 or more" against a cost guide that says 5 to 6.
+
+Links: 4 added, from the reader's list. Health to the cycling guide on the
+uncycled-tank sentence, which the reader called out for sitting next to that
+guide in its own sidebar and never pointing at it. Tank setup to cost on the
+electricity and water the routine consumes. Cost to tank setup on what actually
+drives the budget. Feeding to the hospital tank guide on "consider quarantine".
+
+Dates: none bumped. Every changed article gained links only; the fry-feeding
+correction was to the hub's funFact, not to an article. [Superseded by the batch
+N species check: the feeding guide was bumped to 2026-09-15 when its amino acid
+claim was corrected against the 2010 study, see that section.]
+
+Gaps: choosing a seller and judging a healthy discus at purchase, what to do with
+RO water once you have it, stocking density past "55 is a floor", grow-out care
+for juveniles, and practical breeding beyond the mucus fact. The reader also
+flagged that the shared pH, GH and KH guide's sidebar summary is written around
+goldfish and coldwater tanks, which is now a section 8 item on its third species.
+
+## Swordtail (2026-09-15, batch N, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 84k tokens. Raw output in
+docs/READER_LOG.md. Set grade: B+. "Strong, sourced, unusually honest about
+where evidence runs out, dragged down by a hub that disagrees with its own deep
+dives and one broken article."
+
+The broken article came first and was handled on its own, before any hub work,
+in commit b0ce643. The feeding guide's "Why Swordtails Stop Eating" list ran
+"1. Stress" straight to "5. Illness": items 2, 3 and 4 had been deleted and
+nobody reread the page, while the page's own FAQ still named all three missing
+causes. Item 1 had also absorbed an orphaned sentence belonging to the
+impending-birth item. Restored from the FAQ and the intact platy version of the
+same list, so recovered rather than invented. A numbered-list gap sweep across
+all 796 articles found no second case.
+
+The ratio reads as three different numbers across the set and is not actually a
+disagreement. Handling and health both say one male to three or four females,
+handling notes some sources say two or three, and enrichment says two to three
+minimum with four or more as the clean version. The hub was the only page that
+took the floor as the answer, "one male with two or three females", and that
+line is retired. Three rows now carry the ratio: the enrichment guide's rule,
+its ratio, and the health guide's reason for treating the ratio as a health
+item rather than a stocking preference.
+
+What the hub never said at all, and the reader caught it: two males is the
+problem number. The enrichment guide builds a whole page on it and the hub
+omitted it entirely, which is why it is now the first row rather than a row
+somewhere in the middle. The reader picked the same sentence out of the set as
+the one that convinced it a keeper wrote this: "With two, every contest is
+between the same pair and the loser has nowhere to be."
+
+The handling guide had the sharper version of the same gap. It recommended "a
+males-only group for a colorful, breeding-free display" with no two-males
+caveat at all, which points a reader at exactly the arrangement the enrichment
+guide warns about. That sentence now carries the caveat and the link.
+
+Retired with the hub: "A 20-gallon tank is a reasonable minimum", which takes
+the floor as the recommendation where the setup guide's own title is "A Real 29
+to 30 Gallons"; "Keep water between 70 and 82 degrees F" against 64 to 82 with
+72 to 79 cited most often, a range whose low end matched neither page; and four
+cost lines, the tank at $70 to $150 against the cost guide's $35 to $60, plus
+filter, food, conditioner and test kit all drifting.
+
+[Struck by the batch N species check: this section originally claimed the old
+hub said "4 to 6 inches including the male's sword" and had the sexes backwards.
+The base commit's swordtail hub FAQ read "Males reach about 5.5 inches (14 cm)
+including the sword, and females grow slightly longer still, up to about 6.2
+inches (16 cm)", which is the encyclopedia's figure. The adult size row carries
+the same numbers; nothing was corrected, and the claim that something was is
+withdrawn.]
+
+Links: 6 added, one per article, all from the reader's own list. No page had a
+sibling link before this.
+
+Dates: handling and health bumped, since handling gained the two-males caveat
+and health gained the two-minute feeding figure. Feeding was bumped earlier in
+commit b0ce643 for the restored causes. Cost and tank setup changed links only
+and were not bumped. Enrichment is future-dated to 2026-11-04 and was not
+bumped. [Corrected by the batch N species check: the original line listed
+feeding among the unbumped.]
+
+check-species-numbers swordtail: every hub value matches its source. Voice
+warning set identical to baseline. All gates and eslint clean.
+
+Gaps, checked against the Health and More list: tankmates, which no page in
+either list covers; stocking numbers past "a small trio", which is the fifth
+species in two batches with the same gap and is already a section 8 item; fry
+rearing beyond the fact that they breed; and judging a healthy fish at the shop
+before buying it.
+
+## Zebra Danio (2026-09-15, batch N, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 80k tokens. Raw output in
+docs/READER_LOG.md. Set grade: B+, with the hub alone at C+. "Strong, sourced,
+genuinely species-specific deep dives sitting under a hub that undercuts them on
+numbers."
+
+The cost table was written independently of the cost guide and it shows on every
+line. Tank $50 to $100 against $18 to $60. Filter $20 to $35 against $8 to $15.
+Food $30 to $50 against $15 to $25. Test kit filed as an annual cost where the
+cost guide files it as a one-time purchase. The reader's verdict on it, "the
+hub's cost table reads like it was written separately from the cost guide," is
+the plainest description of this failure anyone has given across four batches.
+All of it retired.
+
+Group size was the swordtail failure again, in a different species. The hub said
+"groups of at least five or six" and stopped there. The handling guide gives the
+floor and the target in the same sentence, Aquarium Co-Op's 5 to 6 workable
+minimum against Seriously Fish's 8 to 10 or more for natural schooling, and the
+enrichment guide gives the reason the higher number matters: in small groups the
+nipping lands repeatedly on the same fish. Two rows now, the number and the
+reason, and the hub no longer presents the floor as the recommendation.
+
+Feeding frequency was a quieter version of the same thing. Hub: "small amounts
+once or twice daily." Feeding guide: at least twice a day, on ZFIN's research
+husbandry guidance. The hub's "once or" was the entire disagreement.
+
+Ich against the heater. This is the reader's sharpest structural catch and it
+holds across two species in this batch. The health guide says to raise
+temperature toward the top of the comfort range; the setup guide says the top of
+that range is 77°F and that the tank may well have no heater in it at all. The
+health guide now says what that means, that an unheated tank needs a heater
+added for the length of the treatment. The shared-guide version of the problem,
+where general ich guidance assumes a heat treatment well above this species'
+ceiling, is a section 8 item and stays there.
+
+The planted-tank contradiction, kept rather than resolved. The feeding guide
+tells a keeper who does not want fry to keep fine-leaved plants and marbles out
+of the tank; the enrichment guide is built on a study where planted tanks
+produced better larval survival and less anxious adults than bare ones. Both are
+right and neither acknowledged the other. The feeding guide now names the trade
+and comes down on planting, since the adults eat the eggs anyway, which is the
+guide's own stated fact.
+
+Lee et al. was named in the enrichment guide's body with no year and no link
+while every other page on the site links out. The full citation was already in
+that page's Sources block, so this was a formatting miss rather than an unsourced
+claim, and the in-body mention now carries the year and the link.
+
+Links: 6 added, one per article, all from the reader's own list. The health guide
+had no in-body internal links at all before this.
+
+Dates: health and feeding bumped, since health gained the 77°F consequence and
+feeding gained the planting trade. Cost, handling and tank setup changed links
+only. Enrichment is future-dated to 2026-11-03 and was not bumped.
+
+check-species-numbers zebra-danio: every hub value matches its source. Voice
+warning set identical to baseline. All gates and eslint clean.
+
+Left open: the 20 to 30cm jump height, which both the setup and handling guides
+carry on housedpet.com alone. The figure is plausible and consistent across the
+two pages, but it is the weakest source in the set and would not survive the
+ranking in docs/RULES.md against anything better. Nothing better was found in
+this pass.
+
+Gaps, checked against the Health and More list: tankmate compatibility beyond
+"avoid bettas and slow long-finned fish"; sexing, which the breeding warnings
+assume a reader can do; what to actually do with an accidental spawn once it
+happens; and a maintenance routine, since the weekly 25 to 30% change existed
+only on the hub and no shared guide covers water changes, which is already the
+section 8 item this batch opened.
+
+## Ghost Shrimp (2026-09-15, batch N, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 86k tokens. Raw output in
+docs/READER_LOG.md. Set grade: B. "Genuinely useful and unusually honest about
+the feeder trade, undercut by a hub that contradicts the pages it introduces."
+
+Two hub claims were retired as wrong rather than merely different, which is a
+harder category than the usual drift.
+
+The hub said ghost shrimp are "unusually bold and active for a shrimp: rather
+than hiding through the day like most dwarf shrimp species, they wander openly
+in search of food." The feeding guide cites Wikipedia for the opposite, that
+this species is largely nocturnal and stays hidden among vegetation by day. The
+reader saw why that matters and said so: the health guide lists "staying hidden
+far more than normal" as a stress sign, so the hub's version turns a normal
+animal into a worrying one for anyone who bought on the strength of watching
+them. The hub row now carries the feeding guide's nocturnal sentence and its
+flashlight-after-dark sentence. [Amended by the batch N species check: the row
+originally added a hub-written line, "daytime hiding is normal rather than a
+warning sign in a settled tank", which no deep dive says; it was replaced with
+the feeding guide's own wording.]
+
+The hub also said true *Palaemonetes paludosus* "can complete their entire life
+cycle in freshwater." The setup guide's source, a 1990 *Journal of Crustacean
+Biology* study, puts reliable hatching and metamorphosis in a 0 to 5 ppt band
+and quotes the researchers concluding the species "can complete its life cycle
+in brackish water." Freshwater is inside the viable window, not the whole of it,
+and the hub had flattened a precise result into a marketing line. The hub row is
+now the study's version.
+
+The taxonomy contradiction was handled before any hub work, in commit d4daa59.
+The hub asserted the genus *Palaemonetes* while the encyclopedia's own history
+section said that genus was sunk, and the encyclopedia's `scientific` field
+still read "Palaemonetes spp." against its own prose. Verified against WoRMS,
+which lists *Palaemonetes paludosus* as accepted as *Palaemon paludosus* (Gibbes,
+1850), then corrected
+the one field and the prose elsewhere that asserted the old genus as current.
+Source titles and URLs that carry the old name as published were left alone.
+
+Retired with the hub: "Heater if room runs below 65°F" against the setup guide's
+72 to 82°F comfortable range, seven degrees apart on whether a keeper buys a
+heater at all; pH 6.5 to 8.0 against 7 to 8; 5 to 15 dGH against 3 to 15; and a
+cost table that differed from the cost guide on every line.
+
+Voice fixes on the reader's evidence, the same pattern as the bristlenose
+enrichment guide in this batch: two "fortnight"s and a "moulting guide" link on
+a US-spelling site.
+
+Links: 6 added, one per article, all from the reader's list. The health guide had
+no in-body internal links at all before this. The handling guide's "a separate,
+simple setup" now says what simple still has to clear, which was the reader's
+question about whether a quarantine tank needs cycling, answered from the set's
+own sourced material rather than by assertion.
+
+RELATED_ARTICLES gained aquarium-cycling-guide for this species, which the health
+guide's "confirm the tank is fully cycled before stocking" needed and the sidebar
+did not carry.
+
+Dates: none bumped. Every ghost shrimp article is future-dated, five to 2026-09-18
+and enrichment to 2026-11-02.
+
+check-species-numbers ghost-shrimp: every hub value matches its source. Voice
+warning set identical to baseline. All gates and eslint clean.
+
+Left open, both filed in section 8: what to actually do about the white ring of
+death, which the health guide calls frequently fatal and then drops, and the fact
+that the shared invertebrate molting guide is written for tarantulas, hermit
+crabs and jumping spiders, so the one shared page a shrimp keeper most needs is
+not about shrimp.
+
+Gaps, checked against the Health and More list: how many shrimp to buy for a 5 or
+10 gallon tank, which is the section 8 stocking item again; water change
+frequency and volume, the section 8 item this batch opened; how to sex them or
+spot a berried female, after the old hub sold watching eggs develop as the
+appeal; and a named calcium source for molting, where the health guide calls a
+calcium-inclusive diet prevention and the feeding guide says no dedicated
+supplement is required, with neither naming a food.
+
+## Bristlenose pleco, discus, swordtail, zebra danio, ghost shrimp (2026-09-15, batch N species check)
+
+Closing check on batch N, base 0701d2e through 88c6a34, on the branch
+claude/bristlenosepleco-discus-swordtail-zebradanio-ghostshrimp. Fixes are in
+973f54a. Method: every hub row, emergency bullet and vetLine sentence for the
+five species was matched against its `source` article by sentence, with the
+article's FAQ block counted as the article; every content change in the batch
+was read against the deep dive or source it leaned on; the review sections
+above were checked line by line against the diffs.
+
+The finding that set the grade. The discus hub funFact, new this batch, said
+"a 2010 study found the mucus carries amino acids and immune antibodies at
+levels that rise and fall across the feeding period." Opened the study
+(Buckley and colleagues, Journal of Experimental Biology 213:3787). The abstract
+reports total protein, cortisol, immunoglobulin, and Na, K and Ca; amino acids
+appear only in the methods as earlier work by others. The hub had copied the
+claim faithfully from the feeding guide's own FunFact, which carried the same
+overreach from before this batch, so the copy was correct and the source
+sentence was not. Both now say antibodies and protein, with the antibody peak at
+the free-swimming stage the abstract does report and the colostrum comparison
+the authors make. The feeding guide's lastUpdated and lastReviewed moved to
+2026-09-15 because a fact changed; the discus section above says none were
+bumped and is annotated.
+
+Also fixed, hub rows. Two emergency bullets came from the wrong article: the
+discus card's "a discus that hangs dark-colored at the surface in a corner" is
+the enrichment guide's sentence, and the ghost shrimp card's "a curled or
+clamped posture" is the handling guide's; neither exists in the health guide
+each card names, so both are gone. The swordtail feeding row said to keep
+bloodworms "as a supplement rather than a daily staple" where the feeding guide
+says to rotate protein in "regularly rather than sparingly," an inversion of the
+source; it now carries the guide's sentences. The swordtail acclimation row had
+"equalise"; it is now the handling guide's FAQ sentence. The ghost shrimp algae
+row had dropped the guide's "while other sources report them grazing on soft
+brush algae too," a flattened hedge; restored. The ghost shrimp feeding row's
+"daytime hiding is normal rather than a warning sign in a settled tank" was a
+hub-written reconciliation no deep dive states; replaced with the guide's own
+flashlight sentence, and the ghost shrimp section above is annotated. Beyond
+those, the swordtail tank size, filtration, quarantine, sexing, vet costs and
+lifespan rows, the swordtail and zebra danio vetLines, the bristlenose net and
+barbel rows, the zebra danio water chemistry and filtration rows, and the ghost
+shrimp feeder, filtration, cover, tankmates, quarantine and sentience rows were
+paraphrases or de-attributions of their source and are now the source's words.
+Every FAQ was already verbatim (check-hub-faqs: 76 clean, 0 non-verbatim).
+Hub numbers did not change: check-species-numbers --strict prints the same hub
+value set before and after for all five.
+
+Also fixed, files. The ghost shrimp encyclopedia overview still said "from the
+genus Palaemonetes" on the same entry whose scientific field d4daa59 had just
+corrected; it now says Palaemon with the old name noted, on the WoRMS record
+for Palaemon paludosus (Gibbes, 1850). The swordtail health guide's "The fix
+is a ratio of one male to three or four females spreads mating attempts" was
+never a sentence; the row copied from it is now grammatical on both pages, no
+date bump since no fact changed. "labelling" in a bristlenose route line.
+
+The review sections. Bristlenose claimed 3 links rewritten; the diff shows 2
+(feeding and tank setup), the enrichment guide's edits were voice fixes.
+Swordtail claimed the old hub said "4 to 6 inches including the male's sword"
+and had the sexes backwards; the base commit's swordtail hub FAQ reads "Males
+reach about 5.5 inches (14 cm) including the sword, and females grow slightly
+longer still, up to about 6.2 inches (16 cm)," which is the encyclopedia's
+figure, so nothing was wrong and nothing was corrected. Struck in place.
+Swordtail's dates line listed feeding among the unbumped when b0ce643 had
+bumped it for the restoration, which the same section describes two paragraphs
+earlier. Ghost shrimp's "WoRMS lists Palaemonetes as an accepted synonym of
+Palaemon" now says what WoRMS says. Everything else checked out: discus 4 links
+added, swordtail 6, zebra danio 6, ghost shrimp 6, the zebra danio and ghost
+shrimp health guides had zero in-body internal links at base, the two
+"fortnight"s and "moulting" in ghost shrimp enrichment, the Lee et al. link
+(DOI 10.1111/jfb.13865 resolves to Lee, Paull and Tyler 2019, J Fish Biol
+94:86), the ghost shrimp RELATED_ARTICLES addition, and the five raw reader
+outputs in docs/READER_LOG.md, one per species, with the .reader extracts on
+disk.
+
+Dates otherwise correct: swordtail feeding, handling and health, zebra danio
+feeding and health, bristlenose feeding and tank setup bumped for facts added;
+discus and every ghost shrimp article unbumped (ghost shrimp all future-dated);
+no future-dated enrichment guide bumped. The bristlenose feeding bump rests on
+one added clause ("one small ornament piece is a decoration, not a provision")
+rather than a number, which is defensible and left alone.
+
+Deliberately not actioned. Rows that trim a clause from the article's sentence
+or open with a two-word lead-in ("Flexible.", "Prey or predator depending on
+size.") were left, matching the platy, molly and amano hubs already accepted.
+The swordtail "why a swordtail stops eating" row compresses a five-item list
+into one sentence using the list's own phrases; left. The zebra danio jump
+height on housedpet.com, the bristlenose lifespan ceiling, and the white ring
+of death next step stay in section 8. The zebra danio health guide's "That
+ceiling is 77°F" is the setup guide's figure restated, not a new number, and
+the ich heat contradiction it exposes is the section 8 shared-guide item.
+
+Gates on the branch head: check-internal-links (796 articles carry a link),
+check-related-articles, check-affiliate-mdx, check-cost-coverage,
+check-seo-tags, check-hub-faqs (76 router hubs, 0 non-verbatim),
+check-encyclopedia (103 entries, 0 errors, 0 warnings), eslint --quiet exit 0,
+check-voice --strict (0 errors, 356 warnings, baseline unchanged). No em or en
+dash in any file the batch touched. check-species-numbers --strict for all
+five: hub values unchanged and each matched to a deep dive.
+
+Grade: pass, after fixes. The batch's structure held (router shape, retired
+figures, links, dates, gates), and the failures were the two the session keeps
+producing: rows written in the hub's voice instead of pasted, including two
+emergency bullets from the wrong article, and one study cited for a compound it
+never measured. The amino acid line was inherited rather than invented this
+batch, which is the difference between this pass and batch M's.
