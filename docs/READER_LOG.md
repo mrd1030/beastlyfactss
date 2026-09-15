@@ -6473,3 +6473,89 @@ Genuinely useful and unusually honest about the feeder trade, undercut by a hub 
 - How to sex them or spot a berried female, after the hub sells watching eggs develop as the appeal.
 - What to actually do when you see the white ring of death. Called "frequently fatal" with no next step.
 - A named calcium source for molting, given the health and feeding pages disagree on whether one is needed.
+
+## Giant Millipede (2026-09-15, batch O)
+
+Raw output, one Opus reader agent, extractor set of seven pages.
+
+## 1. Page by page
+
+**00 Hub.** Finished it, it is short and scannable; I can act on the 4 to 6 inch substrate depth, 72 to 80F, 70 to 80% humidity, and the checklist. No purchase price, no permit, and it contradicts two deep dives. **C**
+
+**01 Encyclopedia.** Finished it for one paragraph: the USDA plant pest permit and the 2014 SFO seizure. Actionable only as "check the law before you buy." **B**
+
+**02 Cost guide.** Finished it. I can budget $75 to $150 for the animal and roughly the same for setup, and I now know why. Does not say where to buy or how a permit is obtained. **B+**
+
+**03 Handling.** Finished it. Act on: handle low over something soft, never grab from above, stop at the curl, leave a buried animal alone for weeks. Named sources. **A-**
+
+**04 Health.** Finished it. Symptom to cause to fix, and the "never use mite spray" line is the kind of thing that saves an animal. **A-**
+
+**05 Tank setup.** Finished it. Act on: 4 to 6 inches of topsoil and coco fibre, oak or beech litter, no pine or cedar, tight lid, no isopods. **B**
+
+**06 Enrichment.** Finished it, and it is the best written of the set, but it is largely the setup guide again. Honest that there is no research. **B**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: the import permit history is nowhere else except a compressed version in the cost guide. The hub does not. It is the setup and health guides shortened, minus the two things I most needed on the landing page (what the animal costs, and that it is federally regulated).
+
+Direct conflicts:
+
+- Group housing. Hub: "A 20-gallon long terrarium (or equivalent) comfortably houses 2 to 3 adult... millipedes." Setup: "Keep one per enclosure unless you're intentionally planning to breed." Enrichment: "They are not predatory or territorial and are commonly kept in groups."
+- Enclosure size. Hub: "20-gallon+ enclosure". Setup: "A minimum of 10 to 15 gallons for one adult."
+- Tank cost. Hub table: "20-gallon+ enclosure | $40 | $80". Cost guide: "A 20 gallon long tank, or a 40-gallon breeder tank or tub | $35 - $60".
+- Substrate cost. Hub: "$20 | $40". Cost guide: "$17 - $21+".
+- Mite treatment. Hub: "mite infestations (treat with substrate replacement and drying one section of the enclosure)". Health: "Gently wipe affected areas with a damp cotton swab if needed."
+- The hub is about a species named Giant African Millipede but silently folds in "North American giant millipedes (Narceus americanus)".
+
+## 3. The set as a whole
+
+I could build the enclosure, feed it, handle it and recognise the four things likeliest to kill it. I could not confidently buy one. Still missing: how to obtain the plant pest permit and what it costs, where to buy, how to judge a healthy animal, and whether a new arrival needs quarantine. Also missing: how often to replace or top up substrate (the hub budgets for it annually, nobody says when), how often to offer produce, and whether a standing water dish is permanent kit.
+
+Questions answered on another page without being told:
+- Hub: "millipedes can live 5 to 10 years" and no price. The cost guide explains both the price and why.
+- Health: "provide a shallow water dish" with no humidity numbers. Setup has them.
+- Setup: "Add a calcium source" with no consequence stated. Health explains the soft exoskeleton.
+- Enrichment: "a mite bloom... is a genuine nuisance to clear." Health tells you how.
+- Handling: "a molt may take several weeks." Health explains what a failed one looks like.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three times: deep substrate is food and habitat, never pine or cedar, cuttlebone, do not dig up a buried millipede. Setup and enrichment are near duplicates on substrate and humidity.
+
+Conflicts:
+- Calcium source. Health: "add a genuine calcium source like cuttlebone or crushed oyster shell... not chalk." Enrichment and hub: "Crushed eggshell works as well." One of those is not vetted.
+- Wild lifespan. Encyclopedia: "Wild Lifespan: 5-10 years." Cost: "5 to 7 years in the wild, and up to 10 years in captivity."
+- Moisture. Setup: "misting once or twice daily." Enrichment: "Consistently damp and never wet, with the substrate itself doing most of the buffering."
+
+## 5. One link per page
+
+- **Hub:** "A 20-gallon long terrarium (or equivalent) comfortably houses 2 to 3 adult..." should point to the enclosure setup guide, which disagrees.
+- **Encyclopedia:** "requires a federal permit to import them" should point to the cost guide.
+- **Cost:** "Deep organic substrate, genuinely the biggest recurring cost for this species" should point to the enclosure setup guide.
+- **Handling:** "resist the urge to dig it up to check on it" should point to the health issues guide.
+- **Health:** "raise humidity, moisten the substrate more deeply, and provide a shallow water dish" should point to the enclosure setup guide.
+- **Setup:** "Add a calcium source, cuttlebone or crushed oyster shell, directly into the enclosure" should point to the health issues guide.
+- **Enrichment:** "a mite bloom in a millipede enclosure is a genuine nuisance to clear" should point to the health issues guide.
+
+## 6. Trust
+
+Doubts: the hub quietly swapping in a North American species; two different wild lifespans; eggshell approved on two pages and implicitly excluded on a third; the enrichment guide quoting tarantula percentages at a millipede and admitting they do not transfer; a passed-along claim that the secretions "contain cyanide" sitting next to benzoquinones everywhere else.
+
+Most convincing sentence, from the enrichment guide: "a millipede fed mostly on fruit rather than decaying wood is being fed the interesting part instead of the nutritious part."
+
+## 7. Set grade: B-
+
+Strong deep dives undercut by a hub that contradicts them and a buying story that never lands.
+
+First two changes: settle group housing and minimum enclosure size to one number across hub, setup and enrichment; put the purchase price, the permit, and a how-to-buy and quarantine section on the hub.
+
+## Not covered anywhere
+
+- How to obtain the USDA plant pest permit, what it costs, how long it takes.
+- Where to buy, and how to tell a healthy animal from a dehydrated one at purchase.
+- Whether a new arrival needs quarantine, and for how long.
+- How often to replace or top up substrate and leaf litter.
+- How often to offer fresh produce, and how much.
+- Whether a shallow water dish is permanent kit or only a dehydration fix.
+- Adult size, never stated outside the encyclopedia and absent from the hub.
+- Sexing, and what happens if a group breeds.

@@ -14069,3 +14069,98 @@ producing: rows written in the hub's voice instead of pasted, including two
 emergency bullets from the wrong article, and one study cited for a compound it
 never measured. The amino acid line was inherited rather than invented this
 batch, which is the difference between this pass and batch M's.
+
+## Giant Millipede (2026-09-15, batch O, single pass, before the router hub)
+
+Extractor set of seven pages, the legal guide not among them. One Opus agent,
+about 75k tokens. Raw output in docs/READER_LOG.md. Set grade: B-. "Strong deep
+dives undercut by a hub that contradicts them and a buying story that never
+lands."
+
+Numbers checker before the pass, eight groups: budget (hub cost table against the
+cost guide on every shared line), enclosure size in dollars and in gallons,
+humidity in dollars, lifespan in years twice, and two "other" groups that were
+the same lifespan disagreement seen from a different angle. Every one of them was
+either the old hub's cost table or the wild-versus-captive lifespan split. None
+survived the rewrite.
+
+The hub was the whole problem and the reader said so plainly: it was "the setup
+and health guides shortened, minus the two things I most needed on the landing
+page (what the animal costs, and that it is federally regulated)". Both are now
+rows, and the permit row is the legal guide's, not the cost guide's compressed
+version of it.
+
+Group housing, the conflict the reader put first. Hub: "comfortably houses 2 to 3
+adult... millipedes." Setup guide: "Keep one per enclosure unless you're
+intentionally planning to breed." Enrichment guide: "They are not predatory or
+territorial and are commonly kept in groups." Neither page cited anything for its
+version. Settled by opening two sources: Tree of Life Exotic Pet Medical Center,
+a vet clinic already cited on the handling guide, says a millipede "can be kept in
+groups if space, hides, and food are abundant" and warns against overcrowding;
+Bugs in Cyberspace says they are "very communal and will often cluster together
+even if they are offered a large cage". The setup guide changed, both sources
+went into its Sources block, and the hub row copies the settled sentence.
+
+The cyanide claim, which the reader caught as a trust problem rather than a
+numbers one: "a passed-along claim that the secretions 'contain cyanide' sitting
+next to benzoquinones everywhere else." The handling guide attributed it to
+Chicago Exotics. The legal guide already cites Wood (1974), which analysed this
+species specifically and found toluquinone and a related benzoquinone. A
+peer-reviewed species-specific paper beats a clinic care sheet written about
+millipedes generally, so the clause is gone and the irritation hedge is kept. The
+same edit took two source names out of the prose, and a third and fourth came out
+of the two paragraphs below it.
+
+Wild lifespan. Encyclopedia: "5-10 years". Cost guide: "5 to 7 years in the wild,
+and up to 10 years in captivity." CuriOdyssey, a science museum exhibiting the
+species, gives wild 5-7 and captivity 7-10, so the cost guide wins and the
+encyclopedia field now reads "5-7 years in the wild; 7-10 years in captivity".
+One field, nothing else in the entry touched.
+
+Diet Basics added to the tank setup guide. This species has no feeding guide, and
+the old hub's diet paragraph was the only feeding content anywhere in the set, so
+it is the tokay gecko and California kingsnake move again: staple (decaying
+hardwood and pesticide-free leaf litter, oak, beech, maple), produce list and the
+every-two-to-three-days frequency, permanent calcium, and the shallow water dish
+with pebbles in it, which answers the reader's "whether a standing water dish is
+permanent kit" directly.
+
+Calcium, which the reader read as a conflict, is not one. The health guide rules
+out chalk; the enrichment guide allows crushed eggshell. Eggshell is calcium
+carbonate and chalk is not, so both pages stay as written.
+
+Links: 5 added, one per article, all from the reader's table. The encyclopedia
+entry takes none, since its structured fields are not editable that way.
+
+Also fixed, not from the reader: the enrichment guide's two affiliate template
+fragments ("and other sizes and volumes are available", "and other sizes are
+available"), two of the eleven in docs/TODO.md section 8, and the "Our moulting
+guide covers" self-reference in the same paragraph.
+
+RELATED_ARTICLES gained three entries this species was missing: its own legal
+guide (reachable from the hub and from nowhere in the sidebar, the batch I
+finding again), the invertebrate molting guide its enrichment guide links to, and
+the four-species overview every article links to.
+
+Dates: bumped on the setup and handling guides, where facts changed. Not bumped
+on the cost, health or enrichment guides, where only links and template fragments
+moved. Noted and not touched: the enrichment guide is future-dated to 2026-11-02.
+
+check-species-numbers millipede after the pass: no line marked hub disagrees with
+its deep dive. The groups that remain are advisory, a minimum against a purchase
+size, and a wild figure against a captive one in the same sentence. Voice warning
+set identical to baseline on every changed file, all gates and eslint clean.
+
+Left open. The USDA permit process itself, what it costs and how long it takes,
+which the legal guide names but does not walk through. Where to buy and how to
+tell a healthy animal from a dehydrated one at the point of sale. Whether a new
+arrival needs quarantine, which no invertebrate page on the site answers. How
+often to replace or top up substrate, which the cost guide budgets for annually
+and no page schedules. Sexing, and what happens when a group breeds, which
+matters more now that the set says a group is fine.
+
+Gaps, checked against the Health and More list: the isopod warning on the setup
+guide is unsourced, and one of the two sources opened for the group-housing fix
+says the opposite, that millipedes coexist with isopods. Left as written, since
+the claim is Mike's and settling it needs its own research pass rather than a
+hub row.
