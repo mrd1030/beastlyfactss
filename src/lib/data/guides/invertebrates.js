@@ -883,55 +883,95 @@ export const invertebrateGuides = [
     image: "/assets/guides/stick-insect.jpg",
     tagline: "The master of disguise that is literally a twig with legs!",
     funFact: "Stick insects are parthenogenetic: females can reproduce without males and lay fertile eggs throughout their lives. The eggs of some species can remain viable in soil for years, hatching after the mother is long dead, mimicking plant seeds so perfectly that ants carry them underground.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // Host plant leaves are often free (garden/hedge cuttings), so annual
-    // food cost is low compared to most other pets on this list.
-    costs: {
-      setup: [
-        { item: "Tall mesh enclosure", low: 25, high: 50 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Fine misting bottle", low: 5, high: 10 },
-      ],
-      annual: [
-        { item: "Host plant cuttings (often free if garden-sourced)", low: 0, high: 40 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Pesticides, molting and the travel and outage plan
+    // cite the shared invertebrate guides in the sidebar's Health
+    // and More list. Reconciled 2026-09-15 after the stick insect set test
+    // (docs/READER_REVIEWS.md).
+    //
+    // The legality line is why this hub graded C+. It said "They are legal,
+    // widely available, cheap, hardy" while the cost guide on the same site
+    // says keeping a non-native species technically needs a USDA APHIS permit
+    // that hobbyists cannot obtain. The reader called it the one contradiction
+    // that changes whether a person buys, and the permit is now the first row.
+    //
+    // Also retired rather than moved: a 30x30x45 cm enclosure against the
+    // setup guide's 8x8x12 inches; 68 to 80F against 63 to 77F; 50 to 70%
+    // humidity, rising to 70 to 80% for tropicals, against the setup guide's
+    // 60 to 80% for tropicals; a mesh enclosure at $25 to $50 against the cost
+    // guide's $60 to $70; a checklist line reading "House species separately"
+    // next to an article subtitled "And Why You Can Keep More Than One"; and
+    // two molt durations on one page, 20 to 60 minutes in one section and 30
+    // minutes to over an hour in another. No deep dive states a molt duration,
+    // so that figure is retired rather than moved, and it is filed as a gap in
+    // docs/READER_LOG.md.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "The permit, first", value: "In the United States, keeping non-native stick insect species, which includes the common Indian and Vietnamese stick insects widely sold in the hobby, technically requires a USDA APHIS permit under the Plant Protection Act. That permit process requires import into an inspected containment facility, a bar that hobbyist keepers genuinely cannot meet, which means these permits are essentially never issued to individual pet owners. Generally, only species native to and collected within your own state are clearly legal to keep without a permit, and releasing any stick insect or its eggs into the environment is prohibited.", source: "stick-insect-cost-guide" },
+        { label: "The insect", value: "Often just a few dollars per nymph for common species, Indian stick insects especially, and sometimes given away free by keepers since many species reproduce prolifically. Rare giant species are a different story entirely, some command prices exceeding $1,000 for a single adult.", source: "stick-insect-cost-guide" },
+        { label: "Setup budget", value: "Roughly $77 to $98 for a tall, mesh-topped enclosure, substrate and a spray bottle, with the enclosure most of it. An optional small heat or grow light adds more and is not required for most commonly kept species.", source: "stick-insect-cost-guide" },
+        { label: "Ongoing costs", value: "Minimal. Fresh host-plant cuttings, often foraged for free depending on the species' specific dietary needs, plus water for misting make up nearly the entire ongoing cost.", source: "stick-insect-cost-guide" },
+        { label: "Vet costs", value: "Essentially none. Invertebrate veterinary care isn't really a thing for this species, care is entirely husbandry-based.", source: "stick-insect-cost-guide" },
+        { label: "Lifespan", value: "Around one year is typical, roughly 4 to 10 months as a nymph followed by 5 to 12 months as an adult. Females generally live longer than males, often close to 18 months. A small number of larger species can reach 2 to 3 years.", source: "stick-insect-cost-guide" },
+        { label: "Adult size", value: "1 to 22 inches (2 to 55 cm) depending on species." },
+        { label: "Enclosure size", value: "Length and width should each be at least twice the adult's body length, and height should be at least three times body length. Height is the detail that actually matters most, since it's what allows a proper molt. A single Indian stick insect does fine in a roughly 8 by 8 by 12 inch tall, mesh-topped enclosure; a small group or larger species needs correspondingly more room.", source: "stick-insect-tank-setup-guide" },
+        { label: "The mesh top", value: "A mesh or netting lid is essential, not just for ventilation, but because stick insects hang from the top of the enclosure to molt, and shedding from mesh succeeds far more reliably than from a branch alone.", source: "stick-insect-tank-setup-guide" },
+        { label: "Temperature", value: "Many commonly kept species, Indian stick insects especially, do perfectly well at normal room temperature, roughly 63 to 77°F. Tropical species like the giant prickly stick insect prefer it warmer. Supplemental heat is only needed if your space runs consistently cold, and a small basking bulb goes away from the mesh top, where the insect hangs, and off at night.", source: "stick-insect-tank-setup-guide" },
+        { label: "Humidity", value: "Varies by species, tropical types want 60 to 80%, while Indian stick insects are considerably more forgiving. Achieve this through daily light misting with dechlorinated or distilled water, combined with an inch or two of moisture-holding substrate, and track it with a digital hygrometer rather than guessing.", source: "stick-insect-tank-setup-guide" },
+        { label: "Substrate", value: "Coconut coir, peat moss, or plain paper towel all work, holding humidity and absorbing waste. Replace it regularly rather than letting it build up.", source: "stick-insect-tank-setup-guide" },
+        { label: "Lighting", value: "No UVB is needed for this species. Normal ambient room light on a roughly 12-hour cycle is sufficient.", source: "stick-insect-tank-setup-guide" },
+        { label: "Food", value: "Leaves, and that is the entire diet. Almost every commonly kept stick insect eats washed bramble, the blackberry stems that grow in any hedgerow, and it goes species by species from there: Indian stick insects also take privet and ivy, while rose, hawthorn, oak and eucalyptus each suit different species. Match the plant to the species you actually have.", source: "stick-insect-tank-setup-guide" },
+        { label: "Keeping the leaves alive", value: "Cut stems standing in water beat a pile of picked leaves, since foliage kept that way stays good for several days instead of crisping overnight. Block the opening of the water container so nothing can fall in, because a nymph drowned in a jar of stems is the routine avoidable loss in this hobby. Wash foliage before it goes in, and replace it before the leaves dry.", source: "stick-insect-tank-setup-guide" },
+        { label: "Water", value: "Stick insects drink water droplets rather than from a dish, so a reliable spray bottle and a consistent schedule is the hydration plan. An open water reservoir is a drowning risk for small nymphs.", source: "stick-insect-health-issues-guide" },
+        { label: "Failed molts", value: "The single biggest risk for a pet stick insect: a shed that doesn't complete properly, resulting in deformity or death. It's caused by insufficient vertical space or humidity that's too low leading up to the molt. This isn't something to treat after the fact, prevention through correct enclosure height and misting is really the only effective approach.", source: "stick-insect-health-issues-guide" },
+        { label: "Mold", value: "From an enclosure kept too damp combined with poor ventilation or infrequent cleaning. Prevented with good airflow and a regular substrate change, roughly weekly is a reasonable habit.", source: "stick-insect-health-issues-guide" },
+        { label: "Leg loss", value: "A genuine and common outcome of rough handling. A stick insect that loses a leg through autotomy may partially regrow it across subsequent molts if it's a nymph, but an adult's lost leg is permanent. Gentle, body-only handling is what prevents it.", source: "stick-insect-health-issues-guide" },
+        { label: "Handling", value: "Gently grasp the body or thorax if you need to move a stick insect, and never grab a leg. Most species practice autotomy, deliberately dropping a leg to escape a threat. Some species also have mildly irritating leg spines or can release a faint defensive scent, minor compared to most invertebrate defenses, but worth a gentle approach regardless.", source: "stick-insect-handling-guide" },
+        { label: "Reading a stressed one", value: "A dropped leg means the session was too rough. A stick insect that goes rigid and drops, or stays stiff in your hand, is not calm: it is in thanatosis, playing dead, and has classed the hand as a predator. A whiff of defensive scent is the same message. Stillness on its own means nothing, since stick insects spend most of the day motionless by design.", source: "stick-insect-handling-guide" },
+        { label: "More than one", value: "Unlike the praying mantis, which is solitary and cannibalistic, stick insects are herbivorous and non-aggressive toward each other, and Indian stick insects specifically can be housed in groups without issue.", source: "stick-insect-handling-guide" },
+        { label: "You will get eggs", value: "Several commonly kept species, Indian and Vietnamese stick insects among them, reproduce parthenogenetically, meaning females produce viable eggs without a male present at all. A single female can establish an ongoing colony on her own, worth knowing if you are not looking to breed but might end up with more stick insects than you started with.", source: "stick-insect-handling-guide" },
+        { label: "Crowding", value: "Overcrowding shows as damaged legs and antennae, and stick insects knock pieces off each other during molts in a crowded enclosure. If limbs are going missing, thin the group or enlarge the enclosure.", source: "stick-insect-enrichment-guide" },
+        { label: "What enrichment means here", value: "A stick insect's behavioral repertoire is standing on a plant, eating it, swaying, and periodically molting. Two of those four have hard requirements: fresh live host plant, and clear vertical space of at least three times body length to molt in. Get those right and there is very little left to add.", source: "stick-insect-enrichment-guide" },
+        { label: "Molting", value: "A stick insect that loses its grip mid-molt is usually finished, which is why the ceiling has to be grippable mesh or screen rather than smooth glass. What a molt involves, and what a failed one looks like across pet invertebrates, is worth knowing before it happens.", source: "invertebrate-molting-guide" },
+        { label: "Bug spray", value: "A stick insect is an arthropod and every insecticide sold for use inside a home is designed to kill arthropods. A healthy animal can be found dead the morning after an ordinary household task, a can of ant spray used in the kitchen, a plug-in device switched on in the hallway, a dog treated for fleas on the living room rug. Foraged foliage carries the same risk from outside.", source: "invertebrate-pesticide-hazards-guide" },
+        { label: "A power cut, and a trip", value: "A stick insect lives at whatever temperature the room already sits at, so a power cut is rarely the emergency it would be for a reptile or a fish tank. Fresh cuttings in water and stable humidity do more for a short absence than anything else.", source: "invertebrate-emergency-travel-shipping-guide" },
       ],
     },
-    sections: {
-      housing: "A tall, well-ventilated mesh enclosure is essential. The rule is at least 3 times the insect's body length in height and 2 times in width, to allow molting (they hang and pull free of their old exoskeleton). A 30x30x45 cm or larger mesh enclosure suits most adult species. Ventilation is critical: still air causes respiratory problems. Keep fresh host plant cuttings in a vase of water (covered so insects cannot drown) inside the enclosure. Temperatures of 68 to 80 degrees F suit most temperate and tropical species.",
-      diet: `Stick insects eat leaves of specific host plants, and the species must match the plant. Indian stick insects (Carausius morosus, the most common and beginner-friendly species) readily accept bramble (blackberry), rose, hawthorn, privet, ivy, and oak - providing multiple options ensures the insect always has fresh food when one plant is out of season.
-
-Always have fresh cuttings available. Replace them every 2 to 3 days or when leaves begin wilting significantly. Stand the cuttings in a small container of water (sealed around the stems so insects cannot drown) inside the enclosure - this keeps leaves fresh much longer than dry cuttings.
-
-Rinse all leaves thoroughly before offering to remove pesticide residue. Stick insects will refuse and eventually starve rather than eat a plant species they don't accept. Do not offer unfamiliar plants without confirming they are a valid host for your species. Thoroughly research the specific host plant requirements before acquiring any stick insect species.`,
-      enrichment: `Stick insects are observation animals - their enrichment comes from their environment and their behavior, not from interaction. Provide an abundance of twigs, branches, and the host plant itself as climbing surfaces, camouflage backdrop, and molting sites. The more the enclosure resembles a hedge or woodland interior, the more natural behavior you will observe.
-
-Watch for three primary behaviors: feeding (the slow, methodical leaf-eating), molting (a rare and dramatic event where the insect hangs and pulls free of its old exoskeleton over 20 to 60 minutes), and the classic "swaying" behavior - the insect rocks slowly side to side to mimic a twig moving in a breeze. This convincing predator-avoidance behavior is one of nature's finest performances.
-
-Most stick insect species can be handled but are fragile. Never grab a limb - they detach limbs under stress as a survival mechanism (autotomy), and while juvenile limbs regrow at the next molt, adult limbs do not. Always let the insect walk voluntarily onto an open palm. Their lightweight, delicate bodies make them one of the most fragile invertebrate pets.`,
-      health: `Molting is the primary health risk in captive stick insects. The insect hangs from a branch or the enclosure top, splits its old exoskeleton along the back, and slowly pulls free - this process takes 30 minutes to over an hour for large species. Any disturbance during this process can cause a fatal, trapped molt. Any enclosure insufficiency (too short, too dry, too crowded) dramatically increases molt failure rate.
-
-Maintain humidity around 50 to 70% for most temperate species, higher (70 to 80%) for tropical species. Mist the leaves once daily with a fine spray - stick insects drink by licking water droplets from leaf surfaces. They rarely or never drink from standing water. Desiccation during molt is the most common cause of death.
-
-After each molt, inspect the insect carefully. Missing limbs or deformed antennae indicate poor molting conditions. Monitor for droppings (small, hard pellets scattered on the floor) - absence of droppings for several days combined with an inactive insect suggests illness or premolt. Lifespan is typically 6 to 18 months depending on species and sex.`,
-      checklist: [
-        "Tall mesh enclosure (3x body height minimum)",
-        "Fresh host plant cuttings (bramble, rose, privet)",
-        "Covered water vase for plant cuttings",
-        "Twigs and branches for perching",
-        "Digital thermometer and hygrometer",
-        "Fine misting bottle (daily leaf misting for drinking water)",
-        "Mesh lid (never glass or solid plastic)",
-        "House species separately (most are docile but competitive for food)",
-        "Rinse all leaves before offering",
-        "Know your species' specific host plant",
+    emergencyCard: {
+      source: "stick-insect-health-issues-guide",
+      callNow: [
+        "A shed that doesn't complete properly, which results in deformity or death",
+        "An enclosure too short to hang and shed in, or humidity too low in the days before a molt",
+        "A nymph anywhere near an open water reservoir used to keep cut foliage fresh",
+        "Mold, from an enclosure kept too damp combined with poor ventilation or infrequent cleaning",
+        "A leg dropped during handling, which an adult never gets back",
       ],
+      vetLine: "This isn't something to treat after the fact. Prevention through correct enclosure height and misting, tracked with a digital hygrometer rather than guesswork, is really the only effective approach, and invertebrate veterinary care isn't really a thing for this species.",
     },
+    routes: [
+      { slug: "stick-insect-cost-guide", line: "The APHIS permit a hobbyist cannot get, a few dollars a nymph, and $1,000 for a rare giant." },
+      { slug: "stick-insect-tank-setup-guide", line: "Three times body length in height, 63 to 77F, bramble and the other host plants, and why the lid is mesh." },
+      { slug: "stick-insect-handling-guide", line: "Body not leg, the three stress signals including playing dead, and why a colony is fine here." },
+      { slug: "stick-insect-health-issues-guide", line: "Molting failure, the drowning risk in the cutting jar, mold, and the leg that never grows back." },
+      { slug: "stick-insect-enrichment-guide", line: "A short guide, honestly: height, fresh leaves, humidity, and what the tarantula study does not transfer." },
+    ],
+    buyList: [
+      "A tall mesh-topped enclosure, at least three times body length in height",
+      "Coconut coir, peat moss or plain paper towel for substrate",
+      "A fine mist spray bottle and dechlorinated or distilled water",
+      "A digital hygrometer",
+      "A water container for cut stems, with the opening blocked",
+      "A host plant you can actually get year round, bramble for most species",
+      "A small heat or grow light, only if the room runs cold or dark",
+    ],
     faqs: [
-      { q: "Are stick insects good beginner invertebrates?", a: "Indian stick insects (Carausius morosus) are widely considered one of the most beginner-friendly invertebrate pets. They are legal, widely available, cheap, hardy, and their care is minimal once you establish a supply of host plant cuttings. The single most important requirement is identifying the right host plant before you acquire the animal - bramble (blackberry), rose, hawthorn, privet, and ivy are all accepted by Indian stick insects and are accessible in most regions. Many other stick insect species have narrower host plant requirements and are better suited to experienced keepers." },
-      { q: "Can stick insects reproduce without a male?", a: "Yes - most common pet stick insect species are parthenogenetic, meaning females reproduce without males and lay fertile eggs throughout their lives. Indian stick insects and several other popular species are entirely or predominantly female in captivity. The eggs of some species are so well-adapted for dispersal that ants carry them underground, where they can remain viable for years before hatching - mimicking plant seeds in both size, shape, and chemical signals. A single female stick insect can produce dozens to hundreds of eggs over her lifetime." },
-      { q: "What do stick insects eat?", a: "Only the leaves of specific host plants - the exact species required depends on the stick insect species. Indian stick insects accept bramble (blackberry), rose, hawthorn, privet, and ivy. Always rinse leaves thoroughly to remove pesticide residue. Keep fresh cuttings standing in a water container inside the enclosure (seal around the stems so insects cannot drown) and replace every 2 to 3 days as leaves wilt. Stick insects will starve rather than eat a plant they don't recognize - confirming host plant compatibility before acquiring any species is not optional." },
-      { q: "What causes failed molts in stick insects?", a: "The same three factors that cause failed molts in mantises: enclosure too short (stick insects need 3x their body length in height to hang and pull free of the old exoskeleton), humidity too low (causing the old skin to harden before the insect fully exits), and disturbance during the process. Daily misting of the enclosure's leaves is how stick insects drink and how humidity is maintained. A properly sized, well-ventilated, regularly misted enclosure eliminates the majority of molt failures. Never pick up a stick insect that is hanging still and seems rigid - it is almost certainly mid-molt." },
-      { q: "How long do stick insects live?", a: "6 to 18 months depending on species and sex - females living longer than males in most species. Indian stick insects typically live 12 to 18 months for females and 6 to 8 months for males. Because of this relatively short lifespan and their prolific egg production, many keepers maintain a continuous cycle: collecting eggs (dropped on the enclosure floor) and incubating them in a separate container on moist substrate. New nymphs hatch in 2 to 4 months for Indian stick insects, allowing the keeper to maintain a continuous population." },
+      { q: "Do you need a permit to keep a stick insect in the US?", a: "Technically, yes, for non-native species. The common Indian and Vietnamese stick insects sold in the hobby fall under the Plant Protection Act, and the USDA APHIS permit requires import into an inspected containment facility. Hobbyists cannot meet that bar, so those permits are essentially never issued to individual pet owners. What is clearly legal without one is generally a species native to your own state and collected there. Releasing any stick insect or its eggs is prohibited either way. Check current USDA rules for your own situation before buying." },
+      { q: "What size enclosure does a stick insect need?", a: "Length and width at least twice the adult's body length, height at least three times it. Height is what matters most, since that is what allows a proper molt. One Indian stick insect is fine at roughly 8 by 8 by 12 inches; a group or a larger species needs more." },
+      { q: "Can you keep more than one stick insect together?", a: "Yes, generally. Unlike the praying mantis, which is solitary and cannibalistic, stick insects are herbivorous and non-aggressive toward each other. Indian stick insects specifically can be housed in groups without issue." },
     ],
   },
   {
