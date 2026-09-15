@@ -5497,3 +5497,78 @@ First two changes: reconcile the hub to the deep dives, or generate it from them
 - Spot-cleaning and water-dish cleaning cadence between full substrate changes.
 - An actual brumation protocol: temperature, duration, and whether to do it at all.
 - What to check on the animal at purchase, before the shared quarantine guide picks up.
+
+## Fire-Bellied Toad (2026-09-15, batch L)
+
+Raw reader output, one Opus agent, 7-page extract (hub, encyclopedia, cost,
+handling, health issues, tank setup, enrichment).
+
+**1. Page by page**
+
+- 00 hub: finished it, and it is the only page that tells me how often to feed, what to dust, and how big a water change to do. Actionable. Grade B minus, dragged down by numbers the deep dives contradict.
+- 01 encyclopedia: finished it for the chytrid trade history, which is genuinely interesting. Nothing to act on except "ask where it came from". Grade B.
+- 02 cost: finished it, but the table does not add to the total it claims and the numbers fight the hub. Actionable: budget a vet, expect wild-caught. Grade C plus.
+- 03 handling/toxin: finished it twice. The staged unken description is the best writing in the set and directly actionable: stop at stage one, close the lid. Grade A minus.
+- 04 health: finished it. Red leg as emergency, fecal exam on arrival, calcium check on twitching. Grade B plus.
+- 05 setup: finished it. Most actionable page for the build: gravel ban, lid, filter or 50 percent weekly. Grade B.
+- 06 enrichment: finished it, and it is the only page that admits its evidence is borrowed. Plant the water, move the food. Grade A.
+
+**2. Hub and encyclopedia versus the deep dives**
+
+The encyclopedia earns its place: origin, wild diet, and the 2018 chytrid provenance appear nowhere else. The hub half earns it. Its diet section (feeding every 2 to 3 days, calcium at every other feeding, multivitamin weekly, gut loading 24 to 48 hours) exists on no deep dive, so it is load bearing. Its housing, health, and enrichment sections are compressed reruns of pages 4, 5 and 6.
+
+Disagreements, hub first:
+
+- Tank. Hub: "A 20-gallon tank with approximately 60% water section and 40% land section works well for a group of 3 to 5 adults." Setup: "A 10 gallon tank works for one to three toads". Cost then lists "10 to 20 gallon tank".
+- Tank price. Hub table: "20-gallon paludarium (land + water sections) | $100 | $200". Cost table: "10 to 20 gallon tank, set up as a paludarium | $18 - $30".
+- Filter price. Hub: "$25 | $50". Cost: "$8 - $15".
+- Food. Hub annual: "Small live feeder insects | $60 | $110". Cost: "Roughly $15 to $30 a Month", which is $180 to $360 a year.
+- Layout. Hub: "60% water section and 40% land section". Setup: "roughly half land, half water".
+- Water depth. Hub: "3 to 4 inches deep". Setup: "several inches".
+- Heat. Hub FAQ: "Never use under-tank heaters, heat lamps". Setup: "a low-wattage bulb or a thermostat-controlled under-tank heater works".
+- Ceiling. Hub: "65 to 75 degrees F". Setup: "some sources allow up to about 78°F".
+- Lifespan. Hub: "10 to 15 years with proper care". Encyclopedia: "up to 30 years in captivity".
+- Toxin. Hub: "mild skin toxins (pumiliotoxins)". Handling: "specific defensive peptides". Those are different chemistry, and pumiliotoxins are a dart frog thing.
+
+**3. Could I actually keep one**
+
+Close. I can buy, build, feed, and spot red leg. Still missing after the whole set: how much to feed per toad per session, whether the water section needs cycling and an ammonia test kit before animals go in, cooling a room that runs warm beyond "AC or a fan", brumation or winter cooling, sexing and what the calling means, and how to pick a healthy animal in a mostly wild-caught trade.
+
+Questions answered on another page without being told: the hub's red leg paragraph does not point to the health page's Aeromonas detail. The cost page's wild-caught paragraph raises parasites and never says the health page prescribes a fecal exam. The setup page bans small gravel for impaction and never connects to the health page's impaction section. The encyclopedia's chytrid history and the health page's chytridiomycosis section never meet.
+
+**4. Overlap and conflict across the deep dives**
+
+Read three times: never house with other species, water quality is the whole game, toxins mean minimal handling. Setup and enrichment both re-explain the land/water split and dechlorination.
+
+Real conflict: feeders. Hub diet: "Dubia roaches, small mealworms, and black soldier fly larvae add variety." Setup: "Skip mealworms and other hard-shelled feeders too, for the same reason."
+
+Second: group size. Hub: "same-species groups of 3 to 6 individuals". Setup: "10 gallon tank works for one to three toads". A group of six in ten gallons is not on offer anywhere, and enrichment says "A 10 gallon tank suits a small group" without saying how small.
+
+**5. One link per page**
+
+- Hub: "Dirty water causes red-leg syndrome (bacterial infection causing redness, lethargy, and ulceration of the legs and belly)." Point to the health issues guide.
+- Encyclopedia: "Asian strains of that fungus were recovered from pet oriental fire-bellied toads, direct evidence that the trade carried it." Point to Amphibian Quarantine, Acclimation, and Water Hardness.
+- Cost: "Most animals in the trade are wild-caught, captive breeding isn't especially profitable at this price point". Point to the health issues guide, which is where the fecal exam lives.
+- Handling: "this species can also carry Salmonella like most reptiles and amphibians". Point to Salmonella and Reptile Hygiene.
+- Health: "Caused by introducing an infected animal without proper quarantine, or generally poor biosecurity." Point to Amphibian Quarantine, Acclimation, and Water Hardness.
+- Setup: "Skip mealworms and other hard-shelled feeders too, for the same reason." Point to the health issues guide's impaction section.
+- Enrichment: "Untreated tap water is the fastest way to harm one." Point to the health issues guide.
+
+**6. Trust**
+
+Doubts: the hub and cost tables cannot both be right about a tank, and nobody reconciled them. "Pumiliotoxins" reads like a memory error. The encyclopedia's 30 years in captivity sits next to 10 to 15 everywhere else with no note. The cost table lists five items summing to at most $101 and then asserts $150 to $300.
+
+Most convincing sentence, from the handling guide: "The arched back means the toad has classed the hand as a predator, and every stage after it is the toad spending toxin on you. Close the lid." Runner up, also there: "Hiding and refusing food are not listed as stress signs for this species by either source here, so this section does not list them either."
+
+**7. Set grade: B minus.** Strong, sourced, unusually honest deep dives sitting under a hub whose numbers contradict them on tank size, cost, heating, and feeders.
+
+First two changes: make the hub inherit the deep dives' numbers so tank size, tank cost, filter cost, food cost, mealworms, and under-tank heaters agree. Then give feeding its own page: amount per toad, cycling and testing the water section, and quarantine length in one place instead of a line on the hub.
+
+**Not covered anywhere**
+
+- How much to feed per toad at a session, and how to tell an overfed toad.
+- Whether the water section needs cycling, and what to test it with.
+- Brumation or seasonal cooling, and whether to do it.
+- Sexing, calling, and breeding behavior in a mixed group.
+- Choosing a healthy animal at point of sale in a mostly wild-caught trade.
+- Keeping a room under 75 degrees beyond a fan or air conditioning. The axolotl tubbing and cooling guide covers cooling only for a sick axolotl.

@@ -82,62 +82,84 @@ export const amphibianGuides = [
     petType: "Amphibians",
     image: "/assets/guides/fire-bellied-toad.jpg",
     tagline: "The vivid red and black toad that warns predators of its mild toxicity!",
-    funFact: "When threatened, fire-bellied toads perform the Unkenreflex: they arch their backs and flip their limbs upward to display the bright red and black warning coloration on their bellies. This 'unken' pose is a classic example of aposematism, advertising: 'I am toxic, do not eat me!'",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // Priced for a small group (3-5), the natural social size for this species.
-    costs: {
-      setup: [
-        { item: "20-gallon paludarium (land + water sections)", low: 100, high: 200 },
-        { item: "Aquarium filter for water section", low: 25, high: 50 },
-        { item: "Live or artificial plants + cork bark", low: 30, high: 55 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-      ],
-      annual: [
-        { item: "Small live feeder insects", low: 60, high: 110 },
-        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
-        { item: "Dechlorinated water treatment", low: 15, high: 30 },
-      ],
-    },
-    sections: {
-      housing: `A paludarium - a terrarium with both land and water sections - is the ideal and most natural setup for fire-bellied toads. A 20-gallon tank with approximately 60% water section and 40% land section works well for a group of 3 to 5 adults. The water section should be 3 to 4 inches deep with a small aquarium filter to keep the water clean between changes. The land section should feature moist coconut fiber substrate, sheet moss, and live or quality artificial plants.
-
-Temperature is critically important: fire-bellied toads prefer 65 to 75 degrees F and are distinctly cool-temperature amphibians. Temperatures above 80 degrees F cause significant and rapid heat stress. In warm climates, keeping them cool requires an air-conditioned room or a small fan directed at the tank. They do not require supplemental heating in most temperate home environments.
-
-Humidity of 70 to 80% is appropriate. The water section naturally maintains this. Mist the land section lightly in the evenings. Use only dechlorinated tap water for both the water section and misting, never distilled or reverse-osmosis water, which carries none of the electrolytes an amphibian needs and can be fatal without rebalancing. Frogs absorb everything through their permeable skin.`,
-      diet: `Fire-bellied toads eat small live insects. Appropriately-sized crickets (no larger than the space between the toad's eyes) are the most practical staple feeder. Fruit flies are appropriate for juveniles and very small adults. Dubia roaches, small mealworms, and black soldier fly larvae add variety. Waxworms are an occasional treat - too high in fat for regular feeding.
-
-Feed every 2 to 3 days. Dust all feeders with calcium w/D3 powder at every other feeding session, and with a reptile multivitamin once weekly. Gut-load insects 24 to 48 hours before offering: feed the crickets or roaches collard greens, carrot, and commercial gut-load powder so the nutritional value is passed to the toad.
-
-One natural advantage of the paludarium setup: toads will actively hunt small aquatic invertebrates (daphnia, blackworms, small bloodworms) in the water section. Adding these to the water occasionally provides excellent naturalistic enrichment and supplemental nutrition.`,
-      enrichment: `Fire-bellied toads are unusual among frogs for being diurnal - they are active and visible during daylight hours. This makes them far more engaging display animals than most nocturnal frog species, which spend their days hidden. A group of fire-bellied toads in a well-planted paludarium with floating cork bark, aquatic plants, and varied terrain is genuinely beautiful and actively interesting to watch.
-
-Provide floating cork bark platforms and submerged branches at different heights in the water section for toads to climb onto and bask. Dense live or artificial plants on the land section give the toads areas to hide between their active periods. Leaf litter on the land section adds natural texture and encourages rooting behavior.
-
-They are social and do well in same-species groups of 3 to 6 individuals. Their characteristic "unken" warning-display behavior (arching the back to show the red belly) is one of the most distinctive behaviors in amphibian keeping. They live 10 to 15 years with good care, making them a long-term companion species.`,
-      health: `Fire-bellied toads produce mild skin toxins (pumiliotoxins) - not dangerous in normal contact, but always wash hands thoroughly after handling and before touching eyes, mouth, or face. They should not be housed with other amphibian species: not with fire-bellied newts (common mistake, different care requirements and potential toxin incompatibility), not with tree frogs, and not with any species that might be a prey item.
-
-Water quality is the primary health variable. The aquatic section must be filtered and changed regularly: perform 25% water changes weekly using dechlorinated tap water. Dirty water causes red-leg syndrome (bacterial infection causing redness, lethargy, and ulceration of the legs and belly). Treat red-leg under veterinary guidance with antibiotics and improved water quality.
-
-Chytrid fungus (Bd) quarantine protocols apply to all new animals: quarantine any new toad for 30 to 60 days in a separate enclosure before introduction. Watch for lethargy, excessive skin shedding, and loss of appetite as early illness signs. An exotic/amphibian vet should be identified before acquiring this species.`,
-      checklist: [
-        "20-gallon paludarium (land and water sections)",
-        "Aquarium filter for water section",
-        "Dechlorinated tap water only",
-        "Moist coconut fiber and moss on land section",
-        "Live or quality artificial plants",
-        "Cork bark for basking",
-        "Calcium w/D3 + multivitamin supplements",
-        "Small live feeder insects",
-        "Digital thermometer and hygrometer (keep cool, 65 to 75 degrees F)",
-        "Wash hands immediately after handling (mild skin toxins)",
+    funFact: "The bright red-orange belly is a warning display, not decoration. Threatened, the toad arches its back and lifts its limbs to show the color off, and every stage after that arch is the animal spending toxin on whatever is holding it.",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size and lifespan come from the
+    // encyclopedia entry and the cost guide. Quarantine, the water rule and
+    // hygiene cite the shared amphibian and reptile guides in the sidebar's
+    // Health and More list. Built 2026-09-15 for the fire-bellied toad set test
+    // (docs/READER_REVIEWS.md). The old hub named the skin toxin as
+    // "pumiliotoxins", which is a dendrobatid alkaloid this species does not
+    // produce; it also contradicted its own deep dives on tank size, layout,
+    // water depth, heating, feeders and every line of both cost tables. This
+    // species has no feeding guide, so the diet rows come from the tank setup
+    // guide's Diet Basics section.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Enclosure size", value: "10 gallons covers one to three toads, since this is a social species that does fine in a small group of its own kind. Scale up for more. The screen lid has to fit tightly: they are strong jumpers and genuine escape artists.", source: "fire-bellied-toad-tank-setup-guide" },
+        { label: "Layout", value: "Roughly half land, half water, a true paludarium setup, or alternatively an all-water base with floating cork bark or flat rocks providing land access points.", source: "fire-bellied-toad-tank-setup-guide" },
+        { label: "Water depth", value: "Deep enough for your toads to genuinely swim, sloping gradually to about 3 inches, deeper if you want, with easy access in and out.", source: "fire-bellied-toad-tank-setup-guide" },
+        { label: "Water quality", value: "The defining requirement for this species, more important than temperature, substrate, or lighting combined. Always dechlorinate tap water before it goes in. Run a small filter in the water section, or commit to frequent partial water changes, up to half the water weekly if you're not filtering.", source: "fire-bellied-toad-tank-setup-guide" },
+        { label: "Temperature", value: "72 to 78°F through the day, dropping at night. Treat 65°F as the floor and 82°F as the hard ceiling. Most rooms at normal temperature need no supplemental heat at all.", source: "fire-bellied-toad-tank-setup-guide" },
+        { label: "Heating, if you need it", value: "If you do need a heat source because your space runs cold, a low-wattage bulb or a thermostat-controlled under-tank heater works, avoid overheating this species entirely.", source: "fire-bellied-toad-tank-setup-guide" },
+        { label: "Substrate", value: "Coconut fiber or a naturalistic soil blend for the land portion. For the water section, use no substrate at all, or large smooth river rock or slate, never small gravel, which can be swallowed and cause impaction.", source: "fire-bellied-toad-tank-setup-guide" },
+        { label: "Lighting", value: "Low-level UVB offers some benefit though isn't strictly required for this species. If used, a low-output bulb in the 5 to 7% range positioned 8 to 13 inches above the substrate works well.", source: "fire-bellied-toad-tank-setup-guide" },
+        { label: "Diet", value: "Live crickets make up the majority of the diet, with waxworms, earthworms, blackworms, small silkworms, dubia roach nymphs and black soldier fly larvae substituted in every few feedings for variety. Skip mealworms and the other hard-shelled feeders, which carry the same impaction risk as gravel.", source: "fire-bellied-toad-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Two to six food items per toad every two to three days works well for an adult, and juveniles are fed daily in smaller quantities. A practical ceiling either way is what the toad clears in about 15 minutes.", source: "fire-bellied-toad-tank-setup-guide" },
+        { label: "Supplements", value: "Gut-load feeders for at least 24 hours before they go in, then dust them with a calcium and vitamin D supplement at every feeding session, adding a multivitamin once or twice a week.", source: "fire-bellied-toad-tank-setup-guide" },
+        { label: "Handling", value: "Unless ingested, a fire-bellied toad's skin toxins aren't dangerous to people under normal handling. Even so, minimal handling is the right default for this species, not an overcautious rule.", source: "fire-bellied-toad-handling-guide" },
+        { label: "The toxin", value: "Bombinins, a family of defensive peptides secreted from glands in the skin, alongside bombesin, which was first isolated from this species and named after it. Never let a toad's skin secretions come into contact with your eyes, mouth, or any open wound.", source: "fire-bellied-toad-handling-guide" },
+        { label: "Reading the display", value: "The arched back means the toad has classed the hand as a predator, and every stage after it is the toad spending toxin on you. Close the lid.", source: "fire-bellied-toad-handling-guide" },
+        { label: "Tankmates", value: "Their skin toxins can harm tankmates that aren't the same species, so they should only ever be housed with their own kind.", source: "fire-bellied-toad-handling-guide" },
+        { label: "Red leg syndrome", value: "A bacterial infection, often Aeromonas, that takes hold in dirty or poorly maintained water. Reddening on the underside and legs, lethargy, and visible sores. Frequently fatal without prompt antibiotic treatment, and it progresses fast.", source: "fire-bellied-toad-health-issues-guide" },
+        { label: "Wild-caught stock", value: "Most fire-bellied toads in the pet trade are wild-caught rather than captive-bred, since breeding isn't especially profitable at this species' low price point. That's exactly why a vet fecal exam is genuinely worth doing for any newly acquired toad.", source: "fire-bellied-toad-health-issues-guide" },
+        { label: "Budget", value: "$10 to $25 for a standard oriental fire-bellied toad, sometimes as little as $5 to $10, with albino and other color variants reaching $100 or more. Roughly $150 to $300 for the setup, and $15 to $30 a month after that.", source: "fire-bellied-toad-cost-guide" },
+        { label: "Vet costs", value: "A routine exotic or amphibian exam runs $50 to $135, with emergency visits starting around $150 to $300.", source: "fire-bellied-toad-cost-guide" },
+        { label: "Lifespan", value: "10 to 15 years is the figure to plan around, and the documented ceiling runs well past it: 20 years in human care is recorded, and the maximum on record is 30.", source: "fire-bellied-toad-cost-guide" },
+        { label: "Adult size", value: "1.5 to 2 inches (4 to 5 cm)." },
+        { label: "Quarantine", value: "Six to eight weeks is typically adequate for a new amphibian, and a single pet keeper can reasonably land in the middle of that range rather than at the minimum. Zoo and aquarium practice runs a 30-day minimum with 60 days preferred before release.", source: "amphibian-quarantine-and-water-guide" },
+        { label: "Why not RO or distilled", value: "Distilled and RO water are usually not electrolyte-balanced and can be fatal to an amphibian without rebalancing with buffers, electrolytes, and pH adjustment. Dechlorinated tap water, checked with a test kit, is the more practical starting point for most home keepers.", source: "amphibian-quarantine-and-water-guide" },
+        { label: "Hygiene", value: "A completely healthy-looking reptile or amphibian can carry and shed Salmonella with no outward sign of illness at all, and the route is hands and surfaces to mouth rather than bites. Children younger than 5 should not handle or touch reptiles or amphibians or their environments at all.", source: "reptile-salmonella-hygiene-guide" },
       ],
     },
+    emergencyCard: {
+      source: "fire-bellied-toad-health-issues-guide",
+      callNow: [
+        "Reddening on the underside and legs, lethargy, and visible sores (red leg syndrome). This is a genuine emergency, always see a vet immediately, it is frequently fatal without prompt antibiotic treatment, and it progresses fast",
+        "Discolored skin, abnormal shedding, a real change in behavior, and lethargy (chytridiomycosis or fungal infection). Always see a vet",
+        "Fluid retention or bloat, which can point to infection, organ or kidney disease, or impaction. See a vet, severe bloat often carries a poor outlook",
+        "Muscle twitching alongside bloating, usually tied to calcium deficiency or parasites. See a vet, and review your supplementation routine",
+      ],
+      vetLine: "Mild swelling tied specifically to water chemistry issues sometimes improves once the water is properly conditioned and cleaned, worth ruling out before assuming a more serious cause. For a newly acquired toad, a vet fecal exam is genuinely worth doing: parasite loads carried in from the wild are common in this species' trade.",
+    },
+    routes: [
+      { slug: "fire-bellied-toad-cost-guide", line: "The toad at $10 to $25, what the paludarium actually costs to build, the monthly run rate, and a lifespan with a documented ceiling of 30 years." },
+      { slug: "fire-bellied-toad-tank-setup-guide", line: "The half-land half-water build, water quality as the whole game, temperature, substrate, lighting, and diet basics." },
+      { slug: "fire-bellied-toad-handling-guide", line: "The staged warning display, which toxin this animal actually has, and why it is a minimal-handling, single-species animal." },
+      { slug: "fire-bellied-toad-health-issues-guide", line: "Red leg syndrome first, then chytrid, bloat, twitching, and the parasite load that comes with wild-caught stock." },
+      { slug: "fire-bellied-toad-enrichment-guide", line: "Planting the water, moving the food around, and what the borrowed amphibian evidence does and does not support." },
+    ],
+    buyList: [
+      "10 gallon tank minimum for one to three toads, larger for more",
+      "Tight-fitting screen lid",
+      "Small aquarium or sponge filter for the water section",
+      "Water conditioner or dechlorinator",
+      "Coconut fiber or naturalistic soil blend for the land portion",
+      "Large smooth river rock or slate for the water section, never small gravel",
+      "Cork bark or flat rocks for land access",
+      "Live or artificial plants and hides",
+      "Thermometer",
+      "Low-output UVB bulb in the 5 to 7% range, optional",
+      "Crickets, plus waxworms, earthworms, blackworms or silkworms for variety",
+      "Calcium with vitamin D and a multivitamin",
+    ],
     faqs: [
-      { q: "Are fire-bellied toads poisonous?", a: "They produce mild skin toxins (pumiliotoxins) as a chemical defense. These are not dangerous to healthy humans in normal contact - touching a fire-bellied toad and then touching your eyes or mouth would cause irritation, but skin contact alone is low-risk. Always wash hands thoroughly immediately after handling, and avoid touching eyes, mouth, or face before doing so. The toxins are far more dangerous to other animals: never house fire-bellied toads with other amphibian species, and keep them away from other pets." },
-      { q: "What is the unken reflex?", a: "The unken reflex (Unkenreflex in German, where the behavior was first scientifically named) is the defensive posture fire-bellied toads perform when threatened: they arch their back upward and flip their feet and hands outward to expose the bright red and black warning coloration on their belly. This is a textbook example of aposematism - advertising toxicity through conspicuous coloration. It tells predators 'I taste terrible and will make you sick.' A fire-bellied toad performing the unken reflex in captivity usually means it has been startled by a sudden reach or movement." },
-      { q: "What temperature do fire-bellied toads need?", a: "65 to 75 degrees F is the ideal range - they are distinctly cool-temperature amphibians. Temperatures above 80 degrees F cause rapid and serious heat stress: hyperactivity, labored breathing, attempting to climb out of the enclosure, and deteriorating health. In warm climates, keeping fire-bellied toads requires either air conditioning or a cool basement. They typically do not need supplemental heating in temperate home environments. Never use under-tank heaters, heat lamps, or place the enclosure in direct sunlight." },
-      { q: "Can fire-bellied toads be kept in groups?", a: "Yes - they are one of the few social frog species that genuinely benefit from group housing. A group of 3 to 6 same-species individuals in a proper paludarium setup is natural and engaging. Do not mix them with other frog or amphibian species: not with fire-bellied newts (common mistake, different care requirements and potential toxin incompatibility), not with tree frogs, not with any species that could be perceived as prey or competition. Within-species, same-size groups are stable and actively enjoyable to observe." },
-      { q: "How long do fire-bellied toads live?", a: "10 to 15 years with proper care - a significantly longer lifespan than many keepers expect. The key factors for longevity are: consistent cool temperature (never above 80°F), pristine water quality in the aquatic section (25% water changes weekly using dechlorinated tap water), a varied gut-loaded insect diet with calcium supplementation, and prompt attention to any signs of red-leg syndrome or other illness. Annual exotic vet checkups are worthwhile given their long potential lifespan." },
+      { q: "What is red leg syndrome and why is it an emergency?", a: "A bacterial infection, often Aeromonas, that takes hold in dirty or poorly maintained water. Reddening on the underside and legs, lethargy, and visible sores. Frequently fatal without prompt antibiotic treatment, and it progresses fast. Always see a vet immediately." },
+      { q: "What size enclosure does a fire-bellied toad need?", a: "10 gallons covers one to three toads, since this is a social species that does fine in a small group of its own kind. Scale up for more. The screen lid has to fit tightly: they are strong jumpers and genuine escape artists." },
+      { q: "Is it safe to handle a fire-bellied toad?", a: "Unless ingested, a fire-bellied toad's skin toxins aren't dangerous to people under normal handling, according to veterinary sources. Even so, minimal handling is the right default for this species, not an overcautious rule." },
     ],
   },
   {

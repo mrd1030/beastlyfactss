@@ -12370,3 +12370,123 @@ left in frontmatter and table cells, six on rosy boa and koi, the exact pattern
 READMEFIRST warns about from batches D to J; source narration reaching a hub row
 and hub FAQ again; and a rosy boa emergency card written from headings when the
 health guide had the list ready to copy."
+
+## Fire-Bellied Toad (2026-09-15, batch L, single pass, before the router hub)
+
+Extractor set of seven pages (hub, encyclopedia, cost, handling, health issues,
+tank setup, enrichment). One Opus agent, about 84k tokens. The review reads the
+old legacy hub; the router hub was built from its findings the same day. Raw
+output in docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B- | The only page with a feeding schedule, dragged down by numbers the deep dives contradict. |
+| Encyclopedia | B | The chytrid trade history, and nothing to act on except "ask where it came from". |
+| Cost | C+ | The table does not add to the total it claims. |
+| Handling | A- | The staged warning display is the best writing in the set. |
+| Health issues | B+ | Red leg as emergency, fecal exam on arrival, calcium check on twitching. |
+| Tank setup | B | The most actionable page for the build. |
+| Enrichment | A | The only page that admits its evidence is borrowed. |
+
+Set grade: B-. "Strong, sourced, unusually honest deep dives sitting under a hub
+whose numbers contradict them on tank size, cost, heating, and feeders."
+
+The factual error. The old hub named this species' skin toxin as
+"pumiliotoxins", in its health section and again in a FAQ. Pumiliotoxins are
+dendrobatid alkaloids, sequestered from diet by poison dart frogs; Bombina
+orientalis produces nothing of the kind. The reader flagged it as reading like a
+memory error and was right. What the species actually secretes is a family of
+peptides called bombinins, alongside bombesin, which was first isolated from
+this animal in the 1970s and named after it (Xiang et al., 2017, Bioscience
+Reports, opened and added to the handling guide's Sources). The handling guide
+had it right but vague, "specific defensive peptides that have been identified
+and characterized in scientific research", and it now names them, in the body
+and in the FAQ that literally asks which toxin this animal has. The hub's
+version died with the rebuild. This is the first outright wrong fact, as opposed
+to a stale or conflicting figure, that a batch reader has caught.
+
+Hub versus the set, all resolved by the rebuild: tank size (20 gallon for 3 to 5
+adults against the setup guide's 10 gallon for one to three), layout (60/40
+water-to-land against roughly half and half, inverted), water depth, heating
+(the hub FAQ said never use an under-tank heater while the setup guide
+recommends a thermostat-controlled one), feeders (the hub listed mealworms as
+variety while the setup guide bans hard-shelled feeders for impaction risk),
+group size (3 to 6 against one to three), and every line of both cost tables.
+
+Numbers checker, before: 31 topic groups, 8 conflicting. Decisions:
+
+- Temperature, and this one was bigger than the reader could see. The page said
+  "65 to 75F, some sources allow up to about 78F" and the hub called the species
+  "distinctly cool-temperature". Both opened sources put the daytime band above
+  that ceiling: PetMD's care sheet by Maria Zayas, DVM (2023) gives "from 75 F to
+  78 F", with "should not exceed 82 F or fall below 65 F", and Amphibian Care
+  gives "Daytime temperatures should range from 72F to 78F and can drop at
+  night". The page's ceiling was where both sources put their floor. Settled at
+  72 to 78F through the day dropping at night, with 65F the floor and 82F the
+  hard ceiling, in the body, the FAQ and the seoDescription. This is the
+  gargoyle gecko pattern from batch H in a milder form: a page hedged toward a
+  thesis its own subject matter does not support.
+- Lifespan. Cost guide "10 to 15 commonly cited, with some sources putting the
+  range as wide as 10 to 20" against the encyclopedia's "Maximum longevity in
+  the wild is estimated at 20 years; up to 30 years in captivity". These never
+  actually conflicted, they were typical against maximum with the word missing.
+  ADW states both encyclopedia figures verbatim and Smithsonian's National Zoo
+  gives "frequently living to be 12 to 15 years old. In human care, they can
+  reach 20 years of age." The cost guide now says 10 to 15 to plan around with
+  20 in human care recorded and 30 the maximum on record. The encyclopedia was
+  right and was not touched.
+- The cost guide's setup table against its own heading. Five rows summing to $55
+  to $101 under a heading of $150 to $300, with a closing sentence claiming the
+  total was reached "once the tank, filter, conditioner, and substrate are all
+  accounted for", which are the rows. The page now says what the table is and
+  where the rest of the money goes (plants, hides, cork bark, lid, thermometer,
+  conditioner for the water changes).
+- Water depth. "Several inches" on the setup guide against the hub's 3 to 4.
+  Amphibian Care gives "The water depth should gradually slope to 3 inches,
+  although deeper water can be provided", so the vague half became the sourced
+  one.
+
+Sources. The cost guide and the tank setup guide both carried no `<Sources>`
+block at all, which is why every conflict above resolved against them. Both
+gained one: PetMD, Amphibian Care and Smithsonian on setup; PetMD, Smithsonian
+and ADW on cost. The cost guide also gained the "Prices last checked" line RULES
+asks for, which it had never had despite quoting retail prices.
+
+This species has no feeding guide, so the standing move applied for the sixth
+time (after Russian tortoise, tokay gecko, California kingsnake, savannah
+monitor and tiger salamander): a sourced Diet Basics section in the tank setup
+guide. It carries the staples both sources agree on, the schedule (two to six
+items per toad every two to three days for an adult, juveniles daily in smaller
+quantities, ceiling of what the animal clears in 15 minutes), gut-loading, and
+the supplement cadence. That also answers the reader's first "not covered
+anywhere" item, how much to feed per toad per session.
+
+Deep dives against each other, and one divergence recorded rather than acted on:
+PetMD's list of acceptable feeders includes mealworms, while the tank setup
+guide bans them along with other hard-shelled feeders on the same impaction
+reasoning it uses to ban small gravel. The ban is the conservative instruction,
+it is internally consistent with the health guide's impaction section, and
+weakening it would be a hedge change, so it stays and the new Diet Basics
+section lists the staples without mealworms. Recorded here so the next reader
+finds the decision.
+
+Links: 5 added (cost to health on the wild-caught fecal exam, setup to health on
+impaction, health to the shared amphibian quarantine guide, handling to the
+shared Salmonella guide, enrichment to health on untreated tap water). The
+reader's hub and encyclopedia suggestions are answered by hub rows and by the
+encyclopedia having no link slot.
+
+Dates: cost, tank setup and handling bumped to 2026-09-15, each having changed a
+fact. Health issues and enrichment changed links only and were not bumped.
+
+Gaps, checked against the Health and More list first: cycling and testing the
+water section, brumation or seasonal cooling, sexing and calling, choosing a
+healthy animal in a mostly wild-caught trade, and keeping a room under the
+ceiling beyond a fan. All filed in docs/READER_LOG.md. The cooling one is real:
+the shared axolotl tubbing and cooling guide is written for a sick axolotl, not
+a warm room.
+
+Left open: the encyclopedia's adult size of "1.5-2 inches (4-5 cm)" against
+ADW's wider "3.5 to 8 cm". Smithsonian gives "a maximum length of 2 inches",
+which supports the encyclopedia, and no deep dive states a size, so nothing
+conflicts and the one-field rule keeps it out of scope.
