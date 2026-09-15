@@ -695,53 +695,110 @@ export const fishGuides = [
   {
     id: "molly",
     name: "Molly",
-    emoji: "🐠",
+    emoji: "\u{1F420}",
     difficulty: "Beginner",
     petType: "Fish",
     image: "/assets/guides/molly.jpg",
     tagline: "The hardy, prolific livebearer with a genuine tolerance for brackish water!",
     funFact: "Unlike most freshwater aquarium fish, mollies are naturally a brackish-water species that can tightly regulate their salt and water balance well past normal seawater concentration. Whether a healthy freshwater tank needs aquarium salt added is genuinely disputed among experienced keepers though, some use it routinely, others argue consistent water changes do the same job without salt's downsides for live plants and snails.",
-    // Verified against real research in the molly deep-dive articles
-    // (content/guides/molly-cost-guide.mdx and siblings). The salt claim in
-    // particular was corrected: real sources genuinely disagree on whether
-    // standing salt dosing benefits a healthy tank, it isn't settled fact.
-    costs: {
-      setup: [
-        { item: "20 gallon tank", low: 50, high: 150 },
-        { item: "Aquarium heater", low: 15, high: 30 },
-        { item: "Filter sized to tank/bioload", low: 45, high: 60 },
-        { item: "Aquarium salt (long-lasting supply, optional)", low: 20, high: 22 },
-      ],
-      annual: [
-        { item: "Flake/pellet food with vegetable content", low: 25, high: 50 },
-        { item: "Water conditioner", low: 10, high: 15 },
-        { item: "Water test kit", low: 25, high: 40 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the handling
+    // guide. Cycling, the hospital tank, water chemistry, filter maintenance,
+    // the power outage rule and the sick-fish check cite the shared aquarium
+    // guides in the sidebar's Health and More list. Reconciled 2026-09-15
+    // after the molly set test (docs/READER_REVIEWS.md).
+    //
+    // Three hub-only figures are retired rather than moved. "Keep water
+    // between 72 and 78 degrees F" sat below the health guide's own shimmy
+    // fix of 76 to 80; the species range is now 72 to 82 across every page,
+    // from the vet-authored care sheet both the setup and health guides
+    // cite. The salt dose of "roughly a tablespoon per 5 gallons" appeared
+    // here as standing practice where the tank setup guide gives it as a
+    // hospital-tank treatment dose only. And "weekly 20-25% water changes"
+    // is a schedule no molly deep dive carries, so it is retired here and
+    // filed as a gap in docs/READER_LOG.md.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Tank size", value: "20 gallons is the real minimum for a small group, a step up from the 10-gallon tank that works fine for guppies. Mollies simply run bigger as adults, and a colony that starts breeding adds to the bioload fast. Sailfin varieties, or any growing group, do better in 30 gallons or more. Go long and rectangular rather than tall, and use a lid, mollies are capable jumpers.", source: "molly-tank-setup-guide" },
+        { label: "Temperature", value: "A tropical range of 72 to 82\u00B0F works well. Stability matters more than hitting an exact number, avoid swings larger than about 2\u00B0F in a 24-hour period, since temperature instability is one of the more commonly cited triggers behind the molly \"shimmy.\" A heater is necessary unless your room stays consistently warm year-round.", source: "molly-tank-setup-guide" },
+        { label: "Water chemistry", value: "Mollies do best with a pH of 7.5 to 8.5 and medium-hard to hard water. If your tap water runs soft, a mineral supplement, crushed coral or a commercial buffering product, can bring it into range.", source: "molly-tank-setup-guide" },
+        { label: "Hard water, not salt", value: "The advice to add salt to a molly tank is a crude proxy for what they actually want: hard, alkaline, mineral-rich water. Get the hardness right and the salt question mostly disappears. Most of this species' reputation for being delicate traces to being kept in water suited to a soft-water fish.", source: "molly-enrichment-guide" },
+        { label: "The salt question", value: "Mollies are a brackish-tolerant, euryhaline species, and peer-reviewed research on sailfin mollies shows they regulate their internal salt balance up to roughly 65 parts per thousand without major physiological stress. Whether a healthy freshwater display tank needs salt added as standing practice is genuinely contested. Salt shows up specifically in shimmy treatment, where a commonly cited dose is 1 tablespoon of aquarium salt per 5 gallons in a hospital tank, but that is a targeted treatment context rather than a standing requirement.", source: "molly-tank-setup-guide" },
+        { label: "If you do use salt", value: "Plain aquarium salt, additive-free sodium chloride. Never a marine or reef salt mix, which carries buffers formulated for full saltwater tanks, and never table salt, which contains iodine and anti-caking agents that aren't meant for fish.", source: "molly-tank-setup-guide" },
+        { label: "Filtration", value: "Mollies need more real filtration capacity than guppies, and a breeding colony compounds that quickly. For a standard or growing group, a hang-on-back or canister filter handles the bioload comfortably; the general guidance is a filter that can turn over the full tank volume at least four times an hour. A gentle sponge filter is the better call specifically for a breeding or nursery tank, since it won't pull small fry into strong current.", source: "molly-tank-setup-guide" },
+        { label: "Substrate", value: "Fine gravel or sand both work well. Avoid sharp or coarse gravel, which can damage fins, especially on longer-finned sailfin and lyretail varieties.", source: "molly-tank-setup-guide" },
+        { label: "Lighting", value: "A basic LED light on an 8 to 10 hour daily cycle is sufficient. It isn't strictly necessary for the fish's health, but it supports live plants and makes for better viewing.", source: "molly-tank-setup-guide" },
+        { label: "Cycle first", value: "Building the beneficial bacteria colony that processes waste takes 2 to 4 weeks with a fishless cycle, or somewhat less with a bottled bacteria product. Skipping this step is a fast route to the ammonia-driven stress that shows up as shimmy.", source: "molly-tank-setup-guide" },
+        { label: "Water conditioner", value: "Always use one on tap water before it goes in the tank, dechlorinating and neutralizing chloramine and heavy metals. Chlorine exposure specifically is one of the recognized shimmy triggers.", source: "molly-tank-setup-guide" },
+        { label: "Plants as a population lever", value: "Molly parents don't look after their fry, and adults will eat them given the chance. Dense live plants give fry somewhere to hide, meaningfully improving survival. Skipping dense cover lets normal predation keep numbers in check instead.", source: "molly-tank-setup-guide" },
+        { label: "Grazing surface", value: "They are the most herbivorous of the common livebearers and work surfaces all day. Dense live planting, driftwood, rock and any surface that grows biofilm all give them something to graze. A tank scrubbed spotless every week and fed a pinch of flake is the impoverished version.", source: "molly-enrichment-guide" },
+        { label: "Feeding schedule", value: "Adults: once or twice a day is the most commonly cited range, feeding only what's fully cleared within a minute or two. Fry need small amounts at least 3 to 5 times a day. Juveniles sit between the two, and that stage is less precisely documented across sources than fry or adult feeding.", source: "molly-feeding-guide" },
+        { label: "Diet", value: "A high-quality flake or pellet formulated for tropical community fish as the base, with real vegetable content layered on top rather than treated as optional. Rotate in blanched zucchini, spinach, cucumber, lettuce and peas two to three times a week. Bloodworms and brine shrimp stay a supplement, with some sources limiting bloodworms specifically to around three feedings a week.", source: "molly-feeding-guide" },
+        { label: "The feeding mistake", value: "An all-protein diet with no vegetable or algae component at all is the single most repeated molly-specific mistake across care sources, and it's tied directly to digestive and bloating problems over time.", source: "molly-feeding-guide" },
+        { label: "Feed across the tank", value: "Spread food instead of dropping it in one corner, so females that are being chased still eat. It is the direct practical answer to the vigilance finding in the harassment research.", source: "molly-enrichment-guide" },
+        { label: "Sex ratio", value: "At least two to three females per male, and more females is better. An all-male group is the other clean answer and avoids the fry entirely, with the caveat that male mollies squabble among themselves more than male guppies do, so it needs space and numbers rather than a trio.", source: "molly-enrichment-guide" },
+        { label: "Sexing", value: "Males carry a modified anal fin called a gonopodium, a slender, rod-like structure used to fertilize females internally, in place of the fuller fan-shaped anal fin females have. Females also tend to develop a dark \"gravid spot\" near the vent as they near giving birth, though not every individual female shows one clearly enough to rely on.", source: "molly-handling-guide" },
+        { label: "Breeding rate", value: "Gestation runs roughly 4 to 6 weeks, and a typical brood lands somewhere between 20 and 60 fry, though the documented range runs as wide as 10 to over 100 depending on the female's age and condition. Females store sperm internally, so a single mating keeps producing broods without a male present again.", source: "molly-handling-guide" },
+        { label: "Handling", value: "Mollies are an observation and enjoyment pet, not a hands-on one. If you need to move one, guide it with a net rather than touching it directly. Physical contact isn't part of normal molly care.", source: "molly-handling-guide" },
+        { label: "Quarantine", value: "Quarantining new fish for 2 to 3 weeks before adding them to an established tank catches most problems, shimmy included, before they spread.", source: "molly-health-issues-guide" },
+        { label: "Shimmy, the species condition", value: "A distinctive side-to-side, almost snake-like rocking motion as the fish swims. It isn't a disease in itself so much as a sign the fish has lost some nerve and muscle control. Treatment starts with correcting the environment, not medicating the fish: raise the temperature toward the 76 to 80\u00B0F range, check and correct pH toward 7.5 to 8.5, and address mineral hardness if your water runs very soft.", source: "molly-health-issues-guide" },
+        { label: "Budget", value: "Common short-fin varieties, black, silver, and dalmatian mollies, run about $2 to $8 each, nearer $4 a fish in a six-pack. Balloon and lyretail varieties run closer to $6 to $7, and rarer specialty color strains can reach $15 to $20 or more. A 20-gallon setup, tank, filter, heater, and basic supplies, commonly runs $130 to $260, and full monthly upkeep lands around $20 to $30.", source: "molly-cost-guide" },
+        { label: "Vet costs", value: "Mollies rarely see a vet in any traditional sense. Most molly health issues, things like ich, fin rot, and the species' well-known \"shimmy,\" get managed at home with water quality correction and over-the-counter medication rather than a clinic visit.", source: "molly-cost-guide" },
+        { label: "Lifespan", value: "3 to 5 years on average, up to 5 to 7 years with excellent, stable water quality.", source: "molly-cost-guide" },
+        { label: "Adult size", value: "Most common short-fin varieties run roughly 3 to 4.5 inches as adults, with sailfin varieties, distinguished by their males' tall, sail-like dorsal fin, reaching 4 to 6 inches.", source: "molly-handling-guide" },
+        { label: "Cycling, the finish line", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
+        { label: "Hospital tank", value: "A bare hospital tank with its own net and siphon hose, never shared with the display tank, and disinfected and stored dry between uses. A sponge filter gives gentle biological filtration without the flow of a hang-on-back or canister unit.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Water chemistry, the wider picture", value: "KH is the buffer holding pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you rather than chasing a number.", source: "freshwater-ph-gh-kh-guide" },
+        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
+        { label: "Power outage", value: "The threat is oxygen, not darkness. Once the filter and any air pump stop, the water surface stops moving, gas exchange slows, and dissolved oxygen starts dropping. Unplug the filter deliberately rather than letting it sit dead in the water.", source: "aquarium-power-outage-and-transport-guide" },
+        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
       ],
     },
-    sections: {
-      housing: "A 20 gallon tank suits a small group; mollies run larger than guppies and produce a real bioload as a colony grows. Keep water between 72 and 78 degrees F. Mollies are naturally a brackish-water species, and some keepers add a small amount of aquarium salt (roughly a tablespoon per 5 gallons is a common dose), but whether a healthy freshwater tank actually needs it is genuinely disputed: consistent water changes and stable parameters accomplish the same thing for many keepers without salt's downsides for live plants and snails. Lifespan is typically 3 to 5 years, up to 5 to 7 with excellent, stable water quality.",
-      diet: "Mollies need more plant matter than most livebearers - a flake or pellet food with a real vegetable or algae component, not just protein, is important. A diet that's protein-heavy with no vegetable content is one of the most common molly-specific mistakes and drives real digestive and health problems over time.",
-      enrichment: "Peaceful, active, and hardy, mollies are one of the most forgiving common aquarium fish for a genuine beginner. Like guppies, they're prolific livebearers: litters commonly run 20 to 60 fry every 4 to 6 weeks in a mixed-sex tank, with a documented range as wide as 10 to over 100 depending on the female's age, so population planning, either a single-sex group or a stocking and rehoming plan, matters from day one. Dense planting gives fry cover from adults if breeding isn't the goal.",
-      health: "\"Molly shimmy,\" a distinctive side-to-side swaying swim, is most commonly caused by temperature that's too low, low pH or mineral hardness, or unstable water quality; correcting those usually resolves it. Fancy mollies bred overseas in harder, mineral-rich water are especially prone to it when sold into softer home tap water. Ich and fin rot are both linked to temperature swings and poor water quality more than genetics. Digestive and bloating issues trace directly to an inadequate vegetable component in the diet often enough that it's worth checking first when a molly looks off.",
-      checklist: [
-        "20 gallon tank (more for sailfin varieties or a growing colony)",
-        "Heater set to 72-78°F",
-        "Filter sized to the tank and bioload",
-        "Aquarium salt (optional, disputed benefit; 1 tbsp per 5 gal if used)",
-        "Flake/pellet food with real vegetable content",
-        "Dense planting (fry cover)",
-        "Water test kit and conditioner",
-        "Single-sex group, or a plan for population growth",
-        "Weekly 20-25% water changes",
+    emergencyCard: {
+      source: "molly-health-issues-guide",
+      callNow: [
+        "A distinctive side-to-side, almost snake-like rocking motion as the fish swims",
+        "Small white spots resembling grains of salt across the body and fins, with flashing against decor",
+        "A fine, gold or rust-colored dusty coating on the body, with appetite loss, lethargy and scratching against decor",
+        "Ragged, frayed, or discolored fin edges",
+        "Fluid buildup in the abdomen that makes the scales stand out in a raised, pinecone-like pattern",
+        "Buoyancy problems: floating, sinking, or swimming at odd angles",
+        "Appetite loss combined with lethargy, hiding, or clamped fins",
       ],
+      vetLine: "Stress, poor or unstable water quality, overcrowding, and skipping quarantine are the common thread behind nearly every condition on this list, not just shimmy. Test the water first: a properly cycled tank, a stable temperature, and regular partial water changes with a conditioner prevent far more than any medication does after the fact. Dropsy is the hardest condition here to treat successfully and often carries a poor outlook by the time it's obvious.",
     },
+    routes: [
+      { slug: "molly-cost-guide", line: "$2 to $8 a common molly, the $130 to $260 the tank costs around it, and the $20 to $30 a month after that." },
+      { slug: "molly-tank-setup-guide", line: "A real 20 gallons, 72 to 82\u00B0F, hard alkaline water, four-times turnover, and the salt question answered honestly." },
+      { slug: "molly-feeding-guide", line: "Once or twice a day, blanched vegetables two to three times a week, and why an all-protein diet is the molly-specific mistake." },
+      { slug: "molly-handling-guide", line: "A netting-only fish, gonopodium versus gravid spot, and the breeding plan you need before you buy." },
+      { slug: "molly-health-issues-guide", line: "The shimmy protocol, ich, velvet, fin rot and dropsy, and the quarantine window that stops most of it." },
+      { slug: "molly-enrichment-guide", line: "The harassment research done on a molly, the sex ratio it implies, and why a spotless tank starves a grazer." },
+    ],
+    buyList: [
+      "20-gallon long tank, or 30-plus for sailfin varieties or a growing colony",
+      "Tight-fitting lid",
+      "Submersible aquarium heater",
+      "Hang-on-back or canister filter rated to turn the tank over four times an hour",
+      "Sponge filter, for a breeding or nursery tank",
+      "Fine gravel or sand",
+      "Dense live plants, including floating plants",
+      "Driftwood or rock for biofilm to grow on",
+      "Basic LED light on a timer",
+      "Liquid water test kit",
+      "Water conditioner",
+      "Crushed coral or a commercial buffering product, if your tap water runs soft",
+      "Flake or pellet with real vegetable or algae content, plus algae wafers",
+      "Zucchini, spinach, cucumber, lettuce or peas to blanch",
+      "Plain additive-free aquarium salt, only if you decide to use it",
+    ],
     faqs: [
-      { q: "How can I tell if my molly is male or female?", a: "Easily, the same way as with guppies. Males have a modified, pointed anal fin called a gonopodium; females have a fuller, rounder body and a dark \"gravid spot\" near the vent, especially visible when pregnant. This is one of the most straightforward sexing calls in the livebearer family." },
-      { q: "Do mollies really need aquarium salt?", a: "Not strictly, and it's genuinely disputed among experienced keepers. Mollies naturally inhabit brackish coastal waters and tolerate salt well, commonly around a tablespoon per 5 gallons if you use it, but some livebearer specialists argue consistent water changes accomplish the same thing without salt's downsides for live plants and snails. This is still a real point of difference from guppies and most other common livebearers, which don't tolerate salt the same way at all." },
-      { q: "What's the difference between a guppy and a molly?", a: "Mollies run noticeably larger, 3 to 4.5 inches versus a guppy's 1 to 2.4 inches, and genuinely tolerate brackish water in a way [guppies](/guides/guppy/) don't. Both are prolific livebearers in the same family (Poeciliidae) with very similar easy-beginner care otherwise." },
-      { q: "Why is my molly swimming with a shimmy or wobble?", a: "This is \"molly shimmy,\" a recognized species-specific issue most often caused by water that's too cold, low pH or mineral hardness, or unstable water quality generally. Fancy mollies bred overseas in harder water are especially prone to it once sold into softer home tap water. Check and correct temperature first, then pH, hardness, and general water parameters; most cases resolve once conditions stabilize." },
-      { q: "Why do I keep getting more mollies than I bought?", a: "Mollies are prolific livebearers, litters commonly run 20 to 60 fry every 4 to 6 weeks in a mixed-sex tank, with a documented range as wide as 10 to over 100 depending on the female. If you don't want an expanding colony, keep a single-sex group or have a stocking and rehoming plan ready before mixing sexes." },
-      { q: "What's the difference between a molly and a swordtail?", a: "Size and shape, mainly. A [swordtail](/guides/swordtail/) is more elongated and reaches 5 to 6 inches including the male's namesake tail extension, next to a molly's stockier 3 to 4.5 inches. The two also can't interbreed the way platies and swordtails do, mollies are a different genus (Poecilia) than swordtails and platies (Xiphophorus), so crossbreeding between a molly and a swordtail doesn't happen." },
+      { q: "What size tank does a molly need?", a: "20 gallons is the minimum for a small group, noticeably more than the 10-gallon starting point that works for guppies. Sailfin varieties, or any growing colony, do better in 30 gallons or more. Go long and rectangular over tall, and use a lid, mollies can jump." },
+      { q: "Do mollies need aquarium salt in their tank setup?", a: "Not strictly, and this is more debated than most molly care advice lets on. Mollies are a real brackish-tolerant species biologically, but whether a healthy freshwater tank needs salt added is disputed among experienced keepers, some argue good water changes and stable parameters do the same job without the downsides salt carries for live plants and snails." },
+      { q: "How do I manage molly population if I don't want constant breeding?", a: "Keep males and females in separate tanks to avoid breeding entirely, or keep a males-only group for a colorful, breeding-free tank, which needs space and numbers rather than a trio because males squabble among themselves. If you do want controlled breeding, a ratio of roughly one male to two or three females cuts down on females getting chased and stressed by mating attempts." },
     ],
   },
   {

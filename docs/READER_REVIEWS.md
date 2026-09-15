@@ -12600,3 +12600,98 @@ droppings, weight, emergencies and succession: a daily feeding portion, one bird
 or two and how to introduce a second, a cage cleaning cadence, bathing
 frequency, and what an owner actually does if they have to move to a ban state.
 All filed in docs/READER_LOG.md.
+
+## Molly (2026-09-15, batch L, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 91k tokens. Raw output in
+docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C | Short, and every section is a compressed reprint of a deep dive. |
+| Encyclopedia | B | The Mollienesia and black molly history is the only thing here I could not get elsewhere. |
+| Cost | B+ | I can budget: $2 to $8 a fish, $130 to $260 setup, $20 to $30 a month. |
+| Handling | B | Sexing, one male to two or three females, separate or single-sex groups. |
+| Health issues | A- | Shimmy protocol, salt types, quarantine 2 to 3 weeks. |
+| Tank setup | A- | 20 long, lid, 4x turnover, pH 7.5 to 8.5, 2 to 4 week cycle. |
+| Feeding | B+ | Adults once or twice daily, blanched veg 2 to 3 times a week, bloodworms capped at 3. |
+| Enrichment | A- | Grazing surface, hard water over salt, spread the food. |
+
+Set grade: B. "The deep dives are specific, sourced and unusually honest about
+what is disputed; the hub they hang off is a lossy summary that contradicts
+them."
+
+Two ranges settled, and both went to the same source. The tank setup and health
+guides each cite PetMD's molly care sheet, a vet-tier species-specific page,
+which is where the ranking sends a husbandry number when the two pages that
+carry it disagree.
+
+- Temperature. The old hub said "Keep water between 72 and 78 degrees F," which
+  sits below the health guide's own shimmy fix of "Raise the temperature toward
+  the 76 to 80°F range." The tank setup guide said "roughly 72 to 80°F, with
+  some sources extending the tolerated upper end to 82°F." PetMD states
+  "72-82 F". That is now the species range on every page, and the narration
+  about what some sources extend is gone rather than converted into a wider
+  claim of safety. Aquarium Co-Op's narrower 75 to 80 loses on tier, not on
+  disagreement: 76 to 80 stays where it belongs, as the shimmy treatment
+  target, and it sits inside the range.
+- pH. Tank setup: "Mollies do best with a pH of 7.5 to 8.5, tolerating down to
+  around 7.0." Health: "check and correct pH toward 7.0 to 8.0." The reader put
+  it exactly right, that the health guide's target floor is the tank setup
+  guide's tolerance floor, so a keeper correcting a shimmy case was aiming at
+  the bottom of the tolerated band. PetMD states "7.5-8.5". Both pages now say
+  that, and the unsourced tolerance floor came out with it.
+
+The salt dose, which is the hub turning a treatment into a habit. Hub FAQ:
+"commonly around a tablespoon per 5 gallons if you use it." Tank setup: the
+same dose, but "in a hospital tank... a targeted treatment context, not
+necessarily a standing requirement for every molly tank." The router hub carries
+the deep dive's sentence whole, treatment context included.
+
+Numbers checker, before: 26 topic groups, 4 conflicting on value. Also fixed:
+
+- Balloon and lyretail price. The cost guide's body said "$6 to $7 each" after
+  the retail names came out of the prose on the earlier pass, while its own FAQ
+  still said "$6 to $8." Both now read $6 to $7, and the hub copies it.
+- Aquarium salt. The reader caught a three-way split: $20 to $22 on the hub,
+  a flat $20 in the cost table, $21.72 in the body. One container, one number,
+  $22, and the retailer name came off the link text.
+- Tank size in the enrichment FAQ. "Some varieties reach a size that makes a
+  ten gallon inadequate" against a 20 gallon minimum on four other pages. The
+  body of that same guide already said 20 gallon long; only the FAQ had
+  drifted, and it now matches.
+
+The all-male group, an instruction the reader found incomplete rather than
+wrong. Handling: "Keep a males-only group for a colorful, breeding-free
+display." Enrichment carries the caveat handling omits, that "male mollies
+squabble among themselves more than male guppies do, so it needs space and
+numbers rather than a trio." Handling now carries it too, in body and FAQ,
+because it is the page a keeper reads while deciding.
+
+The sulcata tortoise link, cut. A molly lifespan paragraph detoured into what a
+multi-decade reptile costs. The reader called it "dropped into a molly budget
+for no reason" and that is the right reading: it is a link-carrying sentence,
+which RULES rules out.
+
+Links: 5 added, all to shared aquarium guides rather than siblings, which is
+where the reader's own list pointed. Health to the hospital tank guide on the
+sentence that says isolating a fish is standard practice and never said where.
+Handling to the cycling guide on the first-timer mistake it names. Tank setup
+and enrichment to the pH, GH and KH guide, one on soft tap water and one on the
+test kit. Feeding to the molly health guide on uneaten food, the set's one
+sibling link, which is the limit. The reader's structural note, that "nearly
+every in-body link goes to a guppy page," was the real finding here.
+
+Dates: cost, handling, health issues and tank setup bumped to 2026-09-15.
+Feeding changed links only. Enrichment is future-dated and was not bumped.
+
+Not fixed, recorded: the cost guide's Sources block still lists Splashy Fish
+Store, a retailer page, which RULES does not want as a source. Deleting a
+Sources entry is off the table on this pass, so it stays flagged.
+
+Gaps, checked against the Health and More list, which already covers cycling,
+filtration, water chemistry, the hospital tank, power outages and spotting a
+sick fish: tankmates and stocking density, acclimating a fancy molly out of
+hard shipping water, a hardness target in actual dGH, what happens to fry after
+birth, and juvenile feeding amounts, which the feeding guide itself flags as
+thin. All filed in docs/READER_LOG.md.

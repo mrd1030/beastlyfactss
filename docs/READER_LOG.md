@@ -5655,3 +5655,78 @@ First two changes:
 - Cage cleaning routine. 05 says liner "changed regularly" and no page says what regularly means or what gets a deep clean.
 - Bathing frequency. The hub budgets a bird bath at $12 to $16 a year and no page says how often to offer it.
 - What you actually do if you own a Quaker and have to move to a ban state.
+
+
+## Molly (2026-09-15, batch L)
+
+Raw reader output, one Opus agent, 8-page extract (hub, encyclopedia, cost,
+handling, health issues, tank setup, feeding, enrichment).
+
+**1. Page by page**
+
+- 00 hub: Finished it, it is short. Actionable: 20 gal, 72 to 78F, weekly 20 to 25% change, vegetable food, single sex or a plan. Grade C.
+- 01 encyclopedia: Finished it. Nothing to act on, but the Mollienesia and black molly history is the only thing on the site I could not get elsewhere. Grade B.
+- 02 cost: Finished it. I can budget: $2 to $8 a fish, $130 to $260 setup, $20 to $30 a month. Grade B+.
+- 03 handling: Finished it. Sexing, 1 male to 2 or 3 females, separate or single sex groups. Grade B.
+- 04 health: Finished it. Shimmy protocol, salt types, quarantine 2 to 3 weeks. Grade A-.
+- 05 tank setup: Finished it. 20 long, lid, 4x turnover, pH 7.5 to 8.5, 2 to 4 week cycle. Grade A-.
+- 06 feeding: Finished it. Adults once or twice daily, blanched veg 2 to 3 times a week, bloodworms capped at 3. Grade B+.
+- 07 enrichment: Finished it fastest. Grazing surface, hard water over salt, spread the food. Grade A-.
+
+**2. Hub and encyclopedia**
+
+The encyclopedia earns its place on history and origin alone. The hub does not: every section is a compressed reprint of a deep dive, and it contradicts them twice.
+
+Temperature. Hub: "Keep water between 72 and 78 degrees F." Health guide: "Raise the temperature toward the 76 to 80°F range." Tank setup: "roughly 72 to 80°F, with some sources extending the tolerated upper end to 82°F." A keeper following the hub checklist sits below the shimmy fix.
+
+Salt dose. Hub FAQ: "commonly around a tablespoon per 5 gallons if you use it." Tank setup: "a commonly cited dose there is 1 tablespoon of aquarium salt per 5 gallons in a hospital tank, but that's a targeted treatment context, not necessarily a standing requirement for every molly tank." The hub turns a treatment dose into standing practice.
+
+The hub also gives no pH or hardness target at all, then blames shimmy on "low pH or mineral hardness."
+
+**3. The set as a whole**
+
+I could buy, set up, cycle, feed, and troubleshoot mollies from this. What is missing: tankmates and stocking numbers (no page says how many mollies fit a 20 gallon, or what else can live there); acclimating fancy mollies from hard shipping water into soft tap water, which the health guide raises and never solves; a target hardness in actual dGH; what to do with fry once they are born, at what age they are safe, and where they go.
+
+Answers sitting on another page with no signpost: the health guide says "Isolating the affected fish in a hospital tank while you sort out the cause is standard practice" and never points at the hospital tank guide in its own sidebar. Tank setup and handling both name cycling as the big beginner error, and the cycling guide with real ammonia numbers is one list away, unlinked. Enrichment says "Get the hardness right and the salt question mostly disappears" with no route to the pH, GH and KH guide.
+
+**4. Overlap and conflict across the deep dives**
+
+Read three or four times: the brood numbers (20 to 60, 10 to over 100, every 4 to 6 weeks), the 20 gallon minimum versus a guppy's 10, the salt dispute, and the no-pure-protein rule.
+
+pH conflict. Tank setup: "Mollies do best with a pH of 7.5 to 8.5, tolerating down to around 7.0." Health guide: "check and correct pH toward 7.0 to 8.0." The health guide's target floor is the tank setup guide's tolerance floor.
+
+Tank size wobble. Enrichment FAQ: "some varieties reach a size that makes a ten gallon inadequate." Tank setup: "20 gallons is the real minimum for a small group."
+
+All-male groups. Handling: "Keep a males-only group for a colorful, breeding-free display." Enrichment adds the caveat handling omits: "male mollies squabble among themselves more than male guppies do, so it needs space and numbers rather than a trio."
+
+**5. One link per page**
+
+- 00 hub: "Weekly 20-25% water changes" should link to the tank setup guide, since that is the only place the water is described.
+- 01 encyclopedia: none needed.
+- 02 cost: "the filter needs real turnover capacity" should link to the filtration guide, which has the turnover math.
+- 03 handling: "Not cycling the tank before adding fish, which leads to ammonia stress right from the start" should link to the cycling guide.
+- 04 health: "Isolating the affected fish in a hospital tank while you sort out the cause is standard practice" should link to the quarantine and hospital tank guide.
+- 05 tank setup: "If your tap water runs soft, a mineral supplement, crushed coral or a commercial buffering product, can bring it into range" should link to the pH, GH and KH guide.
+- 06 feeding: "uneaten food breaking down in the tank is a common, avoidable driver of the water-quality decline behind most other molly health issues" should link to the molly health guide.
+- 07 enrichment: "A water test kit is worth having here" should link to the pH, GH and KH guide.
+
+Structural note: nearly every in-body link goes to a guppy page. The molly pages barely point at each other.
+
+**6. Trust**
+
+Doubts: the hub's 78F ceiling and its standing salt dose; the enrichment FAQ retreating to a ten gallon; a $20 to $22 salt row on the hub against a flat $20 in the cost guide and $21.72 in its body; and a sulcata tortoise cost link dropped into a molly budget for no reason. Dr. Joanne Norton is named as the counterweight on salt with no link, while every $6.99 fish price gets one.
+
+The sentence that convinced me a keeper wrote this, from the enrichment guide: "Spread food instead of dropping it in one corner, so females that are being chased still eat."
+
+**7. Set grade: B.** The deep dives are specific, sourced and unusually honest about what is disputed; the hub they hang off is a lossy summary that contradicts them.
+
+First two changes: pin one temperature and one pH range across all eight pages and rewrite the hub to those numbers; add stocking and tankmate guidance, then put the cycling, hospital tank, and pH/GH/KH links into the article bodies where the question is actually asked.
+
+**Not covered anywhere**
+
+- Tankmates and stocking density: how many mollies in a 20 gallon, and what else can share it.
+- Acclimating a fancy molly out of hard overseas water into soft tap water, the exact mismatch the health guide blames for shimmy.
+- A molly-specific hardness target in dGH, rather than "medium-hard to hard."
+- Fry after birth: at what size or age they are safe with adults, how to grow them out, and where they go.
+- Juvenile feeding amounts, which the feeding guide itself flags as thin and no other page fills.
+- Plants, substrate, lid and test kit as setup line items, absent from both cost tables and from the hub checklist except the test kit.
