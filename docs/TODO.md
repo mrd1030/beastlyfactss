@@ -394,14 +394,12 @@ Checked 2026-09-15 against `src/lib/data/guides/*.js`: a hub is a router hub
 when its entry carries `firstWeek` rows (RULES, Hubs). 56 of 108 done, 52
 still rendering the legacy care sheet. Batches of five, one branch each,
 per the READMEFIRST process. Dogs and cats last.
-Batch I (African fat-tail gecko, corydoras catfish, red-footed tortoise,
-degu, savannah monitor) is built, checked and pushed on
-claude/hub-pacman-frog-80291s, not merged. The Fable closing check ran
-2026-09-15 and fixed every finding on the branch; pass grade B-.
+Batches I and J both merged to main 2026-09-15 as 05a6fa6b. Batch I
+(African fat-tail gecko, corydoras catfish, red-footed tortoise, degu,
+savannah monitor) passed its Fable check at grade B-.
 Batch J (mourning gecko, ackie monitor, garter snake, oscar, amano
-shrimp) is built, checked and pushed on the same branch, not merged. The
-Fable closing check ran 2026-09-15 and fixed every finding; pass grade
-C+. Worker Opus 5 high effort, one Fable closing check per batch (the
+shrimp) passed its check at grade C+. Next is batch K: pick five, one per
+class, where a set from a recent batch points at them. Worker Opus 5 high effort, one Fable closing check per batch (the
 batch prompt in READMEFIRST has the reasoning).
 
 Done (56):
@@ -422,9 +420,9 @@ Done (56):
 - [x] cardinal tetra, milk snake, gargoyle gecko, gerbil, sulcata tortoise
       (batch H, merged to main 2026-09-15)
 - [x] African fat-tail gecko, corydoras catfish, red-footed tortoise, degu,
-      savannah monitor (batch I, checked 2026-09-15, not merged)
+      savannah monitor (batch I, merged to main 2026-09-15)
 - [x] mourning gecko, ackie monitor, garter snake, oscar, amano shrimp
-      (batch J, checked 2026-09-15, not merged)
+      (batch J, merged to main 2026-09-15)
 
 To do (52):
 

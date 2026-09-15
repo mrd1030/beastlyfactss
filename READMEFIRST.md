@@ -539,8 +539,8 @@ for the first time, which is how that surfaced, so expect one real
 deep-dive contradiction per batch rather than treating the hub as the
 only thing being fixed.
 
-Batch G merged to main 2026-09-14. That makes 51 router hubs after
-batch I; the 57 still on the legacy care sheet are listed by class in
+Batch G merged to main 2026-09-14. That makes 56 router hubs after
+batch J; the 52 still on the legacy care sheet are listed by class in
 docs/TODO.md, section 7, dogs and cats last.
 
 Batch H (cardinal tetra, milk snake, gargoyle gecko, gerbil, sulcata
@@ -582,9 +582,9 @@ catch exactly that and did not.
 
 Batch I (African fat-tail gecko, corydoras catfish, red-footed tortoise,
 degu, savannah monitor), spanning gecko, fish, turtle, small mammal and
-lizard, done and checked 2026-09-15 on branch
-claude/hub-pacman-frog-80291s; not yet merged. Five router hubs, one
-reader pass per species, one Fable check. Pass grade B-.
+lizard, done and checked 2026-09-15 and merged to main 2026-09-15.
+Five router hubs, one reader pass per species, one Fable check. Pass
+grade B-.
 
 Three findings worth carrying into the next batch:
 
@@ -620,9 +620,9 @@ one short session.
 
 Batch J (mourning gecko, ackie monitor, garter snake, oscar, amano
 shrimp), spanning gecko, lizard, snake, fish and invertebrate, done and
-checked 2026-09-15 on branch claude/hub-pacman-frog-80291s; not merged.
-Five router hubs, one reader pass per species, one Fable check. Pass
-grade C+, the lowest yet, for a reason worth reading below.
+checked 2026-09-15 and merged to main the same day as 05a6fa6b, together
+with batch I. Five router hubs, one reader pass per species, one Fable
+check. Pass grade C+, the lowest yet, for a reason worth reading below.
 
 The check found four of five hubs shipping FAQs that were written rather
 than copied verbatim from deep-dive frontmatter. That is the easiest
