@@ -13068,3 +13068,83 @@ The toad water depth stays at Amphibian Care's "about 3 inches" against PetMD's
 "1- to 2-inch-deep," because PetMD's figure would contradict the page's standing
 "deep enough to genuinely swim" instruction, which is a claim this batch could
 not change on its own. Both want a decision rather than a quiet edit.
+
+## Platy (2026-09-15, batch M, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 82k tokens. Raw output in
+docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C+ | Its numbers fight the deep dives. |
+| Encyclopedia | B | The Gordon-Kosswig history is the best-written paragraph on the site. |
+| Cost | B | $2-6 a fish, $60-120 setup, $15-20 a month, and a real warning about fry costs. |
+| Handling | B+ | Sexing by gonopodium, 2-3 females per male, four concrete population strategies. |
+| Health issues | A- | Five conditions with what to actually do. The melanoma section is the best thing here. |
+| Tank setup | A- | Nearly all of it: sizes, temperature, pH, hardness, sponge filter, lid. |
+| Feeding | B+ | Schedule by life stage, portion rule, why-they-stopped-eating list. |
+| Enrichment | A | The priority order list, sex ratio, what not to do. |
+
+Set grade: B+, the strongest a batch reader has given. "Strong deep dives,
+weakened by a hub that restates them with different numbers."
+
+Temperature, and this is batch L's fire-bellied toad mistake repeating one batch
+later. The setup guide said "roughly 68 to 82°F," which is not a source's range:
+Seriously Fish gives "20 to 26°C" (68 to 79) and Aquarium Co-Op gives "70-82°F,"
+and 68 to 82 is the two bands merged rather than ranked. Seriously Fish is the
+species reference and the page's first-listed source, so 68 to 79 with the
+mid-70s as the target. The variatus cool-tolerance note stays, which is Aquarium
+Co-Op's and does not depend on the ceiling.
+
+pH, a real deep-dive conflict. Health: "check and correct pH toward 7.0 to 8.0."
+Setup: "roughly 7.0 to 8.2." Seriously Fish states "7.0-8.2," so both pages carry
+that now, with 6.8 to 8.5 as the tolerance the setup guide already had, which is
+Aquarium Co-Op's stated range.
+
+Tank size, where the page argued with itself. The setup guide headlines "A Real
+10 Gallons" and then cites a minimum base footprint of 24x12 inches, which is
+about 15 gallons. The reader caught the tension; the page never resolved it. It
+now says the thing a buyer needs: the footprint figure is 24 by 12, a standard 10
+gallon is 20 by 10 and does not meet it, and a 20 gallon long is 30 by 12 and
+does. That also settles the enrichment guide's "a 10 gallon is a reasonable
+starting point and is not a long-term plan if you keep both sexes," which had
+read as a contradiction of the cost guide's "10 gallons is a realistic starting
+point."
+
+The sexing figure the reader doubted, and was right to. "Typically visible by
+around 5 to 6 months of age" for the gonopodium reads late for a fish that
+breeds this fast. Kallman and Borkoski's sex-linked maturation work in *Genetics*
+puts male maturation anywhere from eight weeks at around 21mm to twenty-five
+weeks at around 37mm depending on genotype, with temperature moving it too. The
+page now gives two and a half to five months and says what drives the spread,
+which is more useful than either single figure. The paper is added to that
+guide's Sources.
+
+Retired with the hub: a tank line of $40 to $80 against the cost guide's $20 to
+$40, with the filter and food rows drifting the same way; "typically 20 to 80 fry
+per birth," which quotes the documented extreme as the norm where the cost and
+handling guides both say 20 to 50 with 80 as the ceiling; a diet claim that
+platies "genuinely benefit from a real vegetable or algae component ... rather
+than a purely protein-heavy diet" on a set whose feeding guide says the opposite,
+that platies "aren't as strictly dependent on a big vegetable ratio"; and
+"weekly 20 to 25 percent water changes," a schedule no platy deep dive carries.
+
+Source narration came out of four prose passages: That Fish Place and Fishkeeping
+World on the fish price, Aquarium Co-Op and Splashy Fish Store on tank size, and
+Aquarium Co-Op on lifespan. All remain in the Sources blocks, which is where they
+belong.
+
+Links: 5 added. Setup to the cycling guide on the 2-to-4-week sentence, which the
+reader called the biggest miss in the set. Health to the hospital tank guide on
+quarantine. Handling to setup on the planting that gives fry cover. Feeding to
+health on constipation and swim bladder. Cost to setup on the 10-gallon sentence,
+on a page that never linked the setup guide at all.
+
+Dates: cost, handling, health issues and tank setup bumped to 2026-09-15. Feeding
+changed one link only. Enrichment was not touched.
+
+Gaps, checked against the Health and More list, which covers cycling, filtration,
+water chemistry, the hospital tank, power outages and spotting a sick fish:
+tankmates, stocking limits past "six or more" in a 20 gallon, what to do with fry
+and whether shops take them, which plant species give the dense cover four pages
+require, and day-one acclimation. All filed in docs/READER_LOG.md.
