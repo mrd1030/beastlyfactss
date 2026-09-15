@@ -158,7 +158,7 @@ export const fishGuides = [
     faqs: [
       { q: "What size tank does a betta fish need?", a: "Five gallons is the current standard minimum, a genuine improvement over older bowl-based advice. Bettas can technically survive in smaller volumes, but bigger tanks are easier to keep stable since temperature and water chemistry swing less in more water. Always use a lid, bettas are surprisingly good jumpers." },
       { q: "Why won't my betta eat?", a: "Most commonly it's stress from a recent move or tank change, pickiness about a new food, or water that's too cold or of poor quality. Bettas need water in the roughly 76 to 82°F range, cooler water slows their metabolism and appetite noticeably. Check water quality and temperature before assuming anything more serious." },
-      { q: "What should I do before reaching for medication?", a: "Test and correct water quality and temperature first. A heated, filtered tank on a consistent water-change schedule is what makes a huge share of betta illness resolve or never start. Aquatic vets exist for serious or unclear cases, but they're the exception rather than the norm." },
+      { q: "What should I do before reaching for medication?", a: "Test and correct water quality and temperature first. A heated, filtered tank on a consistent water-change schedule is what makes a huge share of betta illness resolve or never start. Most cases never need an aquatic vet, though one is worth finding for a serious or unclear illness." },
     ],
   },
   {

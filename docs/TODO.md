@@ -481,6 +481,15 @@ is why they kept getting deferred. Do them once section 7 is finished.
       hubs are already reconciled, so this does not follow the batch order at
       all and wants one pass of its own. Batch I cleared savannah monitor and
       degu, batch J clears mourning gecko, ackie monitor and amano shrimp.
+- [x] DONE 2026-09-15. The FAQ verbatim check across all 56 router hubs.
+      scripts/check-hub-faqs.mjs is the check, and it compares answers as well
+      as questions, which is the whole point: batch J shipped three questions
+      lifted correctly with all three answers reworded, and a question-only
+      comparison calls that hub clean. Twelve non-verbatim FAQs across eight
+      hubs, all from batches A to D, all now fixed. Eleven were the hub
+      correctly stripping a source name the deep-dive FAQ still carried, so
+      the fix went upstream into the article. One was a real number defect,
+      below.
 - [ ] The amano shrimp encyclopedia overview still opens "the largest shrimp
       commonly kept in freshwater aquariums", the same claim the adultSize
       field was corrected for in batch J. Bamboo shrimp reach 2 to 3 inches

@@ -496,7 +496,7 @@ export const snakeGuides = [
     faqs: [
       { q: "How humid should a hognose snake enclosure be?", a: "30 to 50% ambient, dry compared with most pet snakes. Rather than misting the whole enclosure, run one dedicated humid hide for shedding and add moisture only there." },
       { q: "Why are hognose snakes prone to impaction?", a: "Hognoses are enthusiastic, somewhat messy eaters, and they're prone to swallowing substrate along with their food. Feeding in a separate container away from the loose substrate is the single most effective prevention. Watch for a failure to pass waste, bloating, and lethargy, and see a vet if it doesn't resolve within a reasonable window." },
-      { q: "Are Western hognose snakes dangerous to handle?", a: "The rear-fanged venom isn't considered medically significant to a healthy person, and the researchers behind the one documented bite case in the literature concluded the species isn't dangerous, only worth handling thoughtfully. That case is still worth knowing about: swelling, bruising, and mild cellulitis at the bite site, no systemic effects, and a recovery that ran about five months." },
+      { q: "Are Western hognose snakes dangerous to handle?", a: "The rear-fanged venom isn't considered medically significant to a healthy person, and the one documented bite case in the literature came down the same way: not a dangerous species, just one to handle thoughtfully. That case is still worth knowing about: swelling, bruising, and mild cellulitis at the bite site, no systemic effects, and a recovery that ran about five months." },
     ],
   },
   {
