@@ -527,10 +527,12 @@ is why they kept getting deferred. Do them once section 7 is finished.
       plainly") and one on the garter feeding guide ("Sources land in a
       similar range"). Likely more of the same corpus-wide, since four
       batches running have found this shape in text the batch did touch.
-- [ ] Cherry shrimp and ghost shrimp have the same three-guide
-      RELATED_ARTICLES entry amano shrimp had before batch J, so their
-      sidebars are missing cycling, quarantine and the sick-tank check that
-      every fish species carries. One line each.
+- [ ] Cherry shrimp has the same three-guide RELATED_ARTICLES entry amano
+      shrimp had before batch J, so its sidebar is missing cycling, quarantine
+      and the sick-tank check that every fish species carries. One line.
+      Ghost shrimp gained cycling in batch N and still has neither the
+      quarantine guide nor the sick-tank check, which its own health guide's
+      four prevention habits lean on.
 - [ ] Bristlenose pleco lifespan ceiling, hub against encyclopedia. The cost
       guide says well-kept individuals are "reasonably often reported living 12
       to 14 years"; the encyclopedia's wildLifespan field says "up to 12-15 years
@@ -538,7 +540,7 @@ is why they kept getting deferred. Do them once section 7 is finished.
       not settle the ceiling, so it needs research rather than a pick. Found by
       the numbers checker during batch N. (batch N)
 
-- [ ] Four shared-guide gaps batch N's readers found on multiple species at once,
+- [ ] Five shared-guide gaps batch N's readers found on multiple species at once,
       which is what makes them shared-guide work rather than five hub lines.
 
       - Water changes have no home anywhere on the site. Bristlenose pleco,
