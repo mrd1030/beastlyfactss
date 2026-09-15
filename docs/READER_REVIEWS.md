@@ -11852,3 +11852,183 @@ Left open: the seven content gaps above, filed in docs/READER_LOG.md. The winter
 shutdown schedule is the one worth writing first, since the set has every piece
 of it and assembles them nowhere, and a koi keeper needs it once a year on a
 deadline set by the weather.
+
+## Emperor Scorpion (2026-09-15, batch K, single pass, before the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health issues,
+tank setup, feeding, enrichment, legal). One Opus agent, about 94k tokens. The
+review below reads the old legacy hub (housing, diet, enrichment and health
+prose, two cost tables, a checklist); the router hub was built from its findings
+the same day. Raw output in docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C+ | The fastest complete picture in the set, and several of its numbers are quietly wrong against the deep dives. |
+| Encyclopedia | B+ | The CITES ranching history is real information found nowhere else. |
+| Cost | B | A real budget and a useful debunk, with one feeding figure wrong. |
+| Handling | B+ | Low, over something soft, forceps, never the tail. |
+| Health issues | A- | Symptoms plus causes, and it says which are emergencies. |
+| Tank setup | A | Every number needed to buy and build. |
+| Feeding | A- | Portion sizes, the abdomen rule, the firefly warning. |
+| Enrichment | B+ | The best-written page, honest that its evidence is borrowed. |
+| Legal | A | Exactly what to check before buying. |
+
+Set grade: B. "Strong deep dives sitting under a hub that contradicts them on
+the numbers a first-time keeper will actually copy."
+
+Hub versus the set, both sides quoted. Every one of these is the old legacy hub
+against a deep dive, and all eight are resolved by the router rebuild, since the
+hub now copies rather than restates:
+
+- Substrate. Old hub: "need 4 to 6 inches of a moist substrate." Setup:
+  "Provide a minimum of 5 to 6 inches of substrate."
+- Humidity. Old hub: "high humidity (75 to 85%) are required." Setup: "Target
+  70 to 90%, with many keepers aiming around 75 to 80%."
+- Temperature. Old hub: "Temperatures of 76 to 86 degrees F." Setup: "An ambient
+  range of 75 to 85F is the commonly cited target."
+- Adult feeding. Old hub: "Adults eat every 7 to 14 days." Feeding: "Adults:
+  once a week is standard, sometimes 2 to 3 insects offered weekly."
+- Juvenile feeding. Old hub: "Juveniles need food more frequently, every 4 to 7
+  days." Feeding: "every 2 to 4 days."
+- Fasting. Old hub: "A scorpion that refuses food for 2 to 4 weeks is not ill."
+  Feeding: "can safely fast for a month or two."
+- Prey size. Old hub: "Prey size should not exceed the scorpion's body length
+  (excluding tail)." Feeding: "nothing larger than the abdomen." The reader's
+  line on this was the sharpest in the report: "Those are wildly different
+  animals' worth of cricket."
+- Enclosure. Old hub: "A 10 to 20 gallon terrarium... is suitable for 1 to 2
+  emperor scorpions", with its own FAQ then wanting "3 to 5 females in a
+  20-gallon or larger". Setup: 10 gallons for one adult, 20 to 30 or more for a
+  group.
+
+Numbers checker. `node scripts/check-species-numbers.mjs emperor-scorpion
+--strict` before the pass reported 10 conflicting topic groups. All but two were
+the old hub against a deep dive and are resolved by construction. The two real
+ones:
+
+- Adult feeding rate, cost guide against feeding guide. Cost: "An adult eating 3
+  to 6 appropriately sized prey items a week keeps monthly feeding costs
+  modest." Feeding: "Adults: once a week is standard, sometimes 2 to 3 insects."
+  The feeding guide is the page whose subject is feeding and the cost guide was
+  budgeting for roughly double the food. Cost moved to "2 to 3 appropriately
+  sized prey items once a week."
+- Lifespan, two university sources narrated on the cost guide. Animal Diversity
+  Web (University of Michigan Museum of Zoology) gives 5 to 8 years in
+  captivity; the University of Kentucky's Department of Entomology gives 4 to 9.
+  Both are species-specific university sources at the same tier, and the wider
+  range contains the narrower one, so the page now states "5 to 8 years in
+  captivity is the usual figure, and the full reported range runs 4 to 9",
+  without either name. The encyclopedia's "5 to 8 years in captivity" agrees and
+  was not touched.
+
+After the rebuild, every value on a line marked `hub` appears in the deep dive
+its row names. Three values flagged as hub-only by the checker are all in the
+cost guide's route line ($25 to $100, $80 to $250, and the $800 claim the cost
+guide debunks), each verbatim from the cost guide under a different topic label.
+
+Deep dives against each other:
+
+- Tongs versus release-and-hunt. The old hub said "Always offer prey with
+  feeding tongs rather than by hand"; the enrichment guide says "Release live
+  prey in the evening rather than presenting it with tongs, and let the animal
+  hunt." The feeding guide itself takes no position on delivery, so this was
+  hub-against-enrichment rather than a deep-dive conflict, and the hub's row now
+  copies the enrichment guide. The enrichment guide keeps the recommendation
+  because delivery is its subject and its cited tarantula housing study is about
+  exactly that.
+- Fluorescence colour, the reader's third conflict: "blue-green" on the hub,
+  encyclopedia and setup guide, "bright green" on enrichment, "a bright cyan" on
+  legal. Left as written on all three. These are three descriptions of one
+  colour rather than three claims, no source states a wavelength, and changing
+  two of them would be asserting a precision nobody has. Recorded here so the
+  next reader who notices it finds the decision rather than the silence.
+
+Source narration was the heaviest of the batch on this species, and it was on
+three deep dives before the router step ran:
+
+- Tank setup: the cohabitation paragraph quoted the University of Kentucky's
+  Department of Entomology twice ("very unique", "most predatory arthropods will
+  kill each other when housed together"), the humidity section quoted Animal
+  Diversity Web on "hot and humid forests" and named UK Entomology again, and
+  both the temperature and substrate figures were hedged behind "some sources"
+  and "some keepers".
+- Health issues: the same ADW habitat quote, the same UK Entomology cohabitation
+  quote, a University of Illinois College of Veterinary Medicine quote about
+  feeder insects biting a molting animal, and a Merck attribution on sting
+  toxicity.
+- Handling: a three-source paragraph running ADW, UK Entomology and Merck in
+  sequence on the venom.
+- Cost: two university names on the lifespan, a Merck attribution on toxicity,
+  and "our Emperor Scorpion health issues guide covers in detail".
+
+Every one of these was a direct quote, so de-attributing alone would have left
+an unmarked lift (RULES: "De-attributing is not de-quoting"). Each claim was
+rewritten in the site's own words and the name dropped, and every Sources block
+is unchanged, so a reader can still check any of it. Two attributions were kept
+deliberately, because the name is the fact: the 2024 Insects study (Guo et al.)
+on the soft post-molt exoskeleton, which the setup and health guides both quote
+and credit, and the CITES and state-code citations throughout the legal guide.
+
+Gaps, checked against the Health and More list first. The invertebrate sidebar
+carries the rehousing, pesticide hazards, molting, and emergency travel and
+shipping guides, so the reader's own note that pesticides, rehousing and
+outages are covered is correct and they are not counted. These are real and are
+filed in docs/READER_LOG.md: how to sex one, which the set needs because it
+repeatedly recommends female groups; quarantining a new arrival before it joins
+a group; spot-cleaning frequency and when a full substrate change is due, where
+the cost guide budgets one a year and the setup guide says "refresh it
+periodically"; molt frequency and how many molts to adulthood, so a keeper can
+tell a normal gap from a stalled one; mite treatment for an animal already
+infested; what to do about an escapee, which appears only inside a legal-page
+fun fact; and first aid after a sting or a deep pinch.
+
+Stranded questions, now linked: the health guide named low humidity as the cause
+of dehydration and never gave the number; the setup guide raised cohabitation
+and never pointed at the page that is the manual for it; the feeding guide named
+obesity and never pointed at the health guide; the handling guide listed
+cage-mate aggression among first-timer mistakes with no route to the hide-count
+answer; the cost guide priced the animal without mentioning it is banned in
+three jurisdictions; the enrichment guide named dry conditions as the cause of
+failed molts without the humidity range. All six fixed.
+
+One link per page, from the reader:
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "A scorpion that refuses food for 2 to 4 weeks is not ill" | feeding guide | The sentence is gone; the hub's Fasting row copies the feeding guide's own "a month or two" |
+| Encyclopedia | "Ranching... has been the main legal supply route out of West Africa" | legal guide | No, the encyclopedia is structured data with no link slot |
+| Cost | "The typical range for captive-bred specimens is $25 to $100." | legal guide | Yes |
+| Handling | "Housing multiple scorpions without enough space and hides" | enrichment guide | Yes |
+| Health | "Humidity that's too low, inadequate misting, or overly dry substrate are the usual causes." | setup guide | Yes |
+| Setup | "Cohabitation is possible but not always successful." | enrichment guide | Yes |
+| Feeding | "Overfeeding is the risk here, obesity is a documented, common problem" | health issues guide | Yes |
+| Enrichment | "Dry conditions cause failed molts" | setup guide | Yes |
+| Legal | "wild-caught imports arrive with parasites and dehydration" | health issues guide | Yes |
+
+Seven added. One was answered by a hub row instead, and the encyclopedia has no
+link slot. One link had to come back out: adding the legal link to the cost
+guide put that article at two sibling links, which the checker errors on
+(sibling-link), so the health issues link I had added while cutting a
+self-reference was removed and that sentence now makes its point without a link.
+
+Encyclopedia. Nothing changed. Its "5 to 8 years in captivity" and "7-8 inches"
+both agree with the deep dives, and the CITES and ranching history the reader
+praised is exactly the kind of material the batch rule says not to touch.
+
+Dates. lastUpdated and lastReviewed bumped to 2026-09-15 on the cost guide
+alone, the only emperor scorpion file whose own figure changed (the adult
+feeding rate). Tank setup, health issues and handling changed wording only, and
+feeding, legal and enrichment changed links and a shop fragment only, so none of
+those was bumped.
+
+Fixed the same day: the cost guide's adult feeding rate and its narrated
+lifespan; source narration and direct-quote lifts on the tank setup, health
+issues, handling and cost guides, body and FAQs; the site talking about itself
+on the cost guide; the enrichment guide's affiliate template fragment ("Other
+sizes and volumes are available and a communal enclosure needs several"), which
+the reader singled out as "an advert with the product cut out"; and seven
+in-body links.
+
+Left open: the seven content gaps above, filed in docs/READER_LOG.md. Sexing is
+the one to write first, because the set recommends female groups on three pages
+and never says how a keeper would know.

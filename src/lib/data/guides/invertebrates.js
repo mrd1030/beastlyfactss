@@ -151,60 +151,84 @@ export const invertebrateGuides = [
     petType: "Invertebrates",
     image: "/assets/guides/emperor-scorpion.jpg",
     tagline: "One of the largest scorpions in the world, and one of the least venomous pet scorpions!",
-    funFact: "Scorpions fluoresce a brilliant blue-green color under ultraviolet (UV/black) light. Scientists are not entirely sure why, but the chemical responsible is in the hyaline layer of their exoskeleton. Scorpions do this under natural UV from moonlight too.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "10-20 gallon enclosure with secure lid", low: 40, high: 80 },
-        { item: "Moist substrate (coconut fiber + topsoil)", low: 20, high: 35 },
-        { item: "Cork bark slabs and flat stones", low: 15, high: 30 },
-        { item: "Heat mat with thermostat", low: 30, high: 50 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "UV/black light (optional)", low: 15, high: 25 },
-      ],
-      annual: [
-        { item: "Live feeder insects", low: 50, high: 100 },
-        { item: "Substrate replacement", low: 20, high: 35 },
-      ],
-    },
-    sections: {
-      housing: "A 10 to 20 gallon terrarium with a secure lid is suitable for 1 to 2 emperor scorpions. They are fossorial (burrowing) animals that need 4 to 6 inches of a moist substrate: a coconut fiber and organic topsoil mix holds burrows well. Provide cork bark slabs or flat stones as alternative hide/basking structures. Temperatures of 76 to 86 degrees F and high humidity (75 to 85%) are required. A small shallow water dish must always be present. These are tropical forest scorpions from West Africa and need warmth and moisture.",
-      diet: `Emperor scorpions eat live insects. Crickets and dubia roaches form the most practical staple prey. Mealworms, superworms, and the occasional waxworm are acceptable supplements. Prey size should not exceed the scorpion's body length (excluding tail). Always offer prey with feeding tongs rather than by hand - a startled scorpion may sting a hand it encounters unexpectedly.
-
-Adults eat every 7 to 14 days, reflecting their naturally slow metabolism. Juveniles need food more frequently, every 4 to 7 days. Remove any uneaten prey within 24 hours: crickets left in the enclosure overnight will stress or even bite the scorpion during molting.
-
-Scorpions naturally fast for extended periods, especially in the weeks before molting. A scorpion that refuses food for 2 to 4 weeks is not ill - it is likely entering premolt. Do not attempt to force-feed or disturb a scorpion that is fasting and becoming increasingly sluggish. This is completely normal behavior.`,
-      enrichment: `Emperor scorpions are primarily nocturnal hunters. During the day they will remain inside their burrow or beneath cork bark. At night they emerge to hunt, burrow, and rearrange their environment. Watching this activity under dim red or UV light (which doesn't disrupt their cycle) is the primary enrichment the keeper enjoys.
-
-A UV/black light is an extraordinary tool for observing emperor scorpions. They fluoresce a vivid blue-green color under UV light - the same chemical responsible for the fluorescence is present in moonlight wavelengths in the wild, and scorpions are believed to use this fluorescence to calibrate their light-sensing. Shining a UV light on the enclosure at night (from above) allows you to see exactly where the scorpion is without disturbing it.
-
-Experienced keepers can handle emperor scorpions. They are one of the most mild-mannered scorpion species, but their large chelae (claws) can deliver a painful pinch and they will sting if cornered or dropped. The venom is described as similar to a bee sting - painful but not medically serious for most healthy adults. Avoid handling if allergic to insect stings. Never handle over hard floors.`,
-      health: `Dehydration is the most common cause of health decline in emperor scorpions. Maintain the substrate moisture diligently: the lower layers should feel damp, not wet, while the upper layers can be slightly drier. Always keep a shallow water dish filled with dechlorinated water. Scorpions do drink.
-
-Failed molts are the second major risk. The scorpion will burrow deeply before molting, emerge pale and soft (the old exoskeleton split and separated), and spend several days hardening. If humidity is insufficient, the molt can fail - the scorpion becomes trapped in its old exoskeleton and dies. Never disturb a scorpion during this process.
-
-If housing multiple individuals, watch carefully for cannibalism. Emperor scorpions can cohabitate in groups, but males may be killed by females after mating. If breeding is not intended, house them individually or in proven female groups. Mite infestations (tiny white mites visible in the substrate) are addressed with a full substrate replacement.`,
-      checklist: [
-        "10 to 20 gallon enclosure with secure lid",
-        "4 to 6 inch moist substrate (coconut fiber and topsoil mix)",
-        "Cork bark slabs and flat stones for hides",
-        "Small shallow water dish (always filled)",
-        "Digital thermometer and hygrometer",
-        "Heat mat or low-wattage heat lamp with thermostat",
-        "Live feeder insects (crickets, dubia roaches)",
-        "Feeding tongs",
-        "UV/black light for night viewing (optional but fun)",
-        "Wash hands after any handling",
+    funFact: "Emperor scorpions fluoresce a brilliant blue-green under UV/black light. Scientists aren't entirely sure why, but the compound responsible sits in the hyaline layer of their exoskeleton, and scorpions do this under natural UV from moonlight too, not just an artificial black light.",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size and lifespan come from the
+    // encyclopedia entry. Rehousing, pesticides and the emergency plan cite the
+    // shared invertebrate guides in the sidebar's Health and More list. Built
+    // 2026-09-15 for the emperor scorpion set test (docs/READER_REVIEWS.md),
+    // which found the old hub wrong against its own deep dives on substrate
+    // depth, humidity, temperature, adult and juvenile feeding frequency, the
+    // fasting window, prey size, and enclosure size, and telling readers to feed
+    // with tongs while the enrichment guide says to release prey and let the
+    // animal hunt.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Legal check", value: "Banned in New York City, Hawaii, and the District of Columbia, permit-only in Maine and Rhode Island, unclear in Idaho and Arkansas, and named as legal in Montana. Check before buying.", source: "emperor-scorpion-legal-guide" },
+        { label: "Enclosure size", value: "A 10-gallon, roughly 20x10x12 inches, is the accepted minimum for one adult. Groups or extra enrichment want 20 to 30 gallons or more, with more hides than animals if you cohabitate. The lid has to be secure and tight-fitting: these are capable climbers and genuine escape artists.", source: "emperor-scorpion-tank-setup-guide" },
+        { label: "Humidity", value: "Target 70 to 90%, and 75 to 80% is the practical sweet spot. Keep the substrate damp, not soggy, and mist as needed, often daily or every other day. Condensation on the walls or visible mold means it's too wet, dry, cracked substrate means it's too dry.", source: "emperor-scorpion-tank-setup-guide" },
+        { label: "Temperature", value: "An ambient range of 75 to 85°F is the target, and 70 to 90°F is safe as long as a gradient exists. A side-mounted heat mat on a thermostat creates a mild warm side, around 85 to 90°F at its warmest point, while leaving a cooler area available.", source: "emperor-scorpion-tank-setup-guide" },
+        { label: "Substrate depth", value: "5 to 6 inches minimum, and deeper is better, because the species uses that depth to burrow rather than decorate. Coco fiber, peat, soil-based mixes, or commercial products all work, kept damp but well-aerated.", source: "emperor-scorpion-tank-setup-guide" },
+        { label: "Lighting", value: "No UVB is required. Emperor scorpions are nocturnal and don't rely on UV exposure for vitamin D synthesis the way many reptiles do. A normal 12-hour light, 12-hour dark photoperiod works well.", source: "emperor-scorpion-tank-setup-guide" },
+        { label: "Hides", value: "In a communal setup this is not decoration, it is the mechanism that makes grouping work. Every animal needs somewhere to be that is not somewhere another animal already is, and the standard failure is one good hide and three scorpions.", source: "emperor-scorpion-enrichment-guide" },
+        { label: "Diet", value: "The whole diet is gut-loaded feeder insects. Crickets and dubia roaches are the reliable staples, with locusts and the occasional mealworm or superworm for variety. An adult tears prey apart with its pincers rather than the stinger.", source: "emperor-scorpion-feeding-guide" },
+        { label: "Feeding frequency", value: "Juveniles and nymphs every 2 to 4 days, since they're growing and more voracious. Adults once a week is standard, sometimes 2 to 3 insects. Keep prey no larger than the abdomen.", source: "emperor-scorpion-feeding-guide" },
+        { label: "How to offer it", value: "Nocturnal sit-and-wait predators. Release live prey in the evening rather than presenting it with tongs, and let the animal hunt.", source: "emperor-scorpion-enrichment-guide" },
+        { label: "Fasting", value: "This species can safely fast for a month or two, particularly before a molt, and refusing food in that window is normal. Always remove any uneaten prey within 24 hours.", source: "emperor-scorpion-feeding-guide" },
+        { label: "Supplements", value: "Not directly. Supplement the food, not the scorpion: gut-load feeders for at least 24 hours on fresh produce or a commercial gut-load before offering them.", source: "emperor-scorpion-feeding-guide" },
+        { label: "Never feed", value: "Never feed wild-caught insects, pesticide and parasite risk are both real concerns. Fireflies are genuinely toxic to scorpions and must never be offered.", source: "emperor-scorpion-feeding-guide" },
+        { label: "Handling", value: "Handling stresses the animal and carries real risk on both sides. Falls are the leading concern for the scorpion, a drop can cause serious injury. If handling is genuinely necessary, use long forceps with soft padding, or let the scorpion walk onto a tool or your hand over a soft, low surface. Never grab by the tail or body roughly.", source: "emperor-scorpion-handling-guide" },
+        { label: "Pinch versus sting", value: "Emperor scorpions are far more likely to pinch with their pedipalps than to sting. The venom is mild and mainly defensive, and a sting is not particularly dangerous: expect localized pain, redness, and swelling instead of systemic illness. The exception is a person already sensitive to bites and stings.", source: "emperor-scorpion-handling-guide" },
+        { label: "Molting", value: "Remove live prey and avoid handling entirely for days to weeks around a molt. A freshly molted scorpion's new exoskeleton is too soft to protect it against predators or other scorpions, which makes this the single most vulnerable period in the animal's life.", source: "emperor-scorpion-tank-setup-guide" },
+        { label: "Budget", value: "$25 to $100 for a captive-bred specimen, with juveniles toward the lower end and larger adults or proven breeders toward the higher end. Roughly $80 to $250 for the setup before the scorpion.", source: "emperor-scorpion-cost-guide" },
+        { label: "Vet costs", value: "Exotic vets experienced with invertebrates are uncommon, and most routine issues are managed by keepers directly through husbandry correction. When professional care is genuinely needed, expect exotic vet exam fees in the $80 to $200-plus range, with limited treatment options available for many invertebrate conditions.", source: "emperor-scorpion-cost-guide" },
+        { label: "Lifespan", value: "5 to 8 years in captivity is the usual figure, and the full reported range runs 4 to 9.", source: "emperor-scorpion-cost-guide" },
+        { label: "Adult size", value: "7 to 8 inches (18 to 20 cm)." },
+        { label: "Rehousing", value: "A move is the single most likely moment for an escape or an injury, and it is worth planning as a procedure rather than improvising it at the sink.", source: "invertebrate-rehousing-guide" },
+        { label: "Pesticides", value: "An invertebrate has no defense against household insecticide, and the routes into an enclosure are more numerous than most keepers expect.", source: "invertebrate-pesticide-hazards-guide" },
+        { label: "Power outage and travel", value: "Temperature and humidity are what fail first in an outage, and shipping an invertebrate has its own rules.", source: "invertebrate-emergency-travel-shipping-guide" },
       ],
     },
+    emergencyCard: {
+      source: "emperor-scorpion-health-issues-guide",
+      callNow: [
+        "A stuck molt: difficulty shedding the old exoskeleton, stuck pieces of shed, and lethargy around molt time. Incomplete molts often need experienced intervention and are frequently fatal without it",
+        "Severe dehydration: lethargy, a shriveled appearance, sunken features, and reduced activity. Advanced cases can be fatal",
+        "Open wounds showing signs of infection",
+        "A complete refusal to eat for an extended period after a molt",
+      ],
+      vetLine: "Veterinary options for invertebrates remain genuinely limited, which is exactly why prevention through correct humidity and substrate depth is the primary strategy here, not a backup plan. Mild dehydration, minor mites, and early humidity-related lethargy are generally manageable once husbandry is corrected.",
+    },
+    routes: [
+      { slug: "emperor-scorpion-cost-guide", line: "$25 to $100 for the animal, roughly $80 to $250 for the setup, what invertebrate vet care costs, and the $800 price claim debunked." },
+      { slug: "emperor-scorpion-tank-setup-guide", line: "Enclosure size, the humidity that matters most, substrate deep enough to burrow in, and why no UVB is needed." },
+      { slug: "emperor-scorpion-feeding-guide", line: "Gut-loaded feeders, frequency by life stage, the abdomen rule for prey size, and the fast before a molt." },
+      { slug: "emperor-scorpion-handling-guide", line: "Why handling stays occasional, the pinch that is more likely than the sting, and the falls that do the real damage." },
+      { slug: "emperor-scorpion-health-issues-guide", line: "Dehydration, failed molts, mites, cage-mate injuries, and which of them are emergencies." },
+      { slug: "emperor-scorpion-enrichment-guide", line: "Hide count as the thing that makes a group work, releasing prey instead of tong-feeding, and what the tarantula housing study does and does not transfer." },
+      { slug: "emperor-scorpion-legal-guide", line: "Three jurisdictions that ban it, two that want a permit, two that are unclear, and the CITES Appendix II listing that touches imports rather than ownership." },
+    ],
+    buyList: [
+      "10-gallon enclosure minimum for one adult, 20 to 30 gallons or more for a group",
+      "A secure, tight-fitting lid",
+      "Coco fiber, peat, or a soil-based mix, enough for 5 to 6 inches and deeper if you can",
+      "Sphagnum moss, to hold moisture between mistings",
+      "More hides than animals: cork bark, half-logs, broken clay pots",
+      "Shallow water dish, deep enough to drink from and not to drown in",
+      "Under-tank heat mat with a thermostat",
+      "Digital thermometer and hygrometer",
+      "Mister or spray bottle",
+      "Long forceps with soft padding",
+      "Gut-loaded crickets or dubia roaches, and a commercial gut-load",
+      "UV torch, optional, for viewing",
+    ],
     faqs: [
-      { q: "Is the emperor scorpion's sting dangerous?", a: "Emperor scorpions are among the least venomous of all scorpion species commonly kept as pets. Their sting is generally described as comparable to a bee sting - painful and producing localized swelling, but not medically serious for most healthy adults without insect sting allergies. They also have large, powerful chelae (claws) that can deliver a painful pinch independent of the sting. Despite their imposing size, their defensive response is slow and predictable. Never handle over hard floors, and treat any sting as you would a bee sting." },
-      { q: "Why do scorpions glow under UV light?", a: "All scorpions, including emperor scorpions, fluoresce a brilliant blue-green color under ultraviolet (black) light. The fluorescence comes from a chemical compound in the hyaline layer of their exoskeleton. Scientists believe the fluorescence may help scorpions detect UV light from the moon and stars to calibrate their nocturnal activity cycles, or may play a role in predator detection. Practically, it means that a UV/black light is the easiest way to locate scorpions at night without disturbing their behavior. A single UV flashlight is one of the most worthwhile scorpion-keeping accessories." },
-      { q: "What do emperor scorpions eat?", a: "Live insects. Crickets and dubia roaches are the most practical staple prey. Mealworms, superworms, and occasional waxworms round out the diet. Adults eat every 7 to 14 days, reflecting their slow tropical metabolism. Juveniles eat more frequently, every 4 to 7 days. Always offer prey with feeding tongs and remove uneaten prey within 24 hours - crickets left overnight near a molting or freshly molted scorpion will attack it. A scorpion refusing food for 2 to 4 weeks is not ill; it is likely entering premolt and should not be disturbed." },
-      { q: "Can emperor scorpions be housed together?", a: "Emperor scorpions are one of the few scorpion species that can cohabitate in same-sex groups with adequate space, hides, and food. A group of 3 to 5 females in a 20-gallon or larger enclosure is the most stable arrangement. Males are riskier: mixed-sex groups frequently result in the male being killed by females after mating. If you house a group, watch carefully for any scorpion that consistently fails to access food or appears stressed and withdrawn - subordinate individuals in small enclosures can starve." },
-      { q: "How do I know if my scorpion is about to molt?", a: "Watch for: extended food refusal (several weeks to over a month), increasingly sluggish movement, and the scorpion spending significantly more time buried in the substrate or wedged under a hide. The abdomen may appear lighter or the old exoskeleton slightly dull. When you notice these signs, remove all prey insects from the enclosure immediately. Never disturb a buried or hiding scorpion during this period. After the molt, the new exoskeleton takes several days to fully harden - do not feed until the scorpion is active and its chelae appear dark and hardened." },
-      { q: "Are emperor scorpions good pets for beginners?", a: "Yes, with the understanding that this is a look-don't-touch pet. They're one of the least venomous, most docile scorpion species and genuinely low-maintenance once set up, but they're not a handling animal the way a bearded dragon or a rat is, the relationship is built through observation, not physical interaction." },
-      { q: "Is an emperor scorpion as dangerous as a deathstalker scorpion?", a: "Not remotely. An emperor scorpion's sting is comparable to a bee sting - uncomfortable but not medically serious for a healthy adult. The deathstalker (Leiurus quinquestriatus), a completely different, much smaller desert species, has venom potent enough to be genuinely dangerous, especially to children or anyone with an allergic reaction, and isn't a species kept casually as a pet. The two get confused because both look intimidating, but their sting risk isn't in the same category." },
+      { q: "How often should I feed my emperor scorpion?", a: "Juveniles and nymphs every 2 to 4 days, since they're growing and more voracious. Adults once a week is standard, sometimes 2 to 3 insects. Keep prey no larger than the abdomen." },
+      { q: "What humidity and temperature does an emperor scorpion need?", a: "Humidity first: 70 to 90%, with 75 to 80% the practical target. Temperature is more forgiving, 75 to 85°F ambient, and 70 to 90°F is safe provided there is a gradient." },
+      { q: "How deep should the substrate be?", a: "5 to 6 inches minimum, and deeper is better, because the species uses that depth to burrow rather than decorate. Coco fiber, peat, soil-based mixes, or commercial products all work, kept damp but well-aerated." },
     ],
   },
   {

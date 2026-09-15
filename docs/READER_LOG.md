@@ -5329,3 +5329,92 @@ Genuinely usable, well-sourced where it matters, and undermined by numbers that 
 - Spawning: what to do when it happens, and whether to keep or remove eggs and fry.
 - KHV after diagnosis: whether testing is available, who a "notifiable" disease gets reported to, and what happens to the pond and survivors.
 - A single winter shutdown schedule with temperatures and dates. The pieces are spread across setup and enrichment, assembled nowhere.
+
+## Emperor Scorpion (2026-09-15, batch K)
+
+Raw reader output, one Opus agent, 9-page extract (hub, encyclopedia, cost,
+handling, health issues, tank setup, feeding, enrichment, legal).
+
+**1. Page by page**
+
+- 00 Hub. Finished it; it is the fastest complete picture in the set and I could shop off the checklist, but several numbers are quietly wrong against the deep dives. C+
+- 01 Encyclopedia. Finished it in a minute. Actionable only as background, but the CITES ranching history is real information I found nowhere else. B+
+- 02 Cost guide. Finished it. I can budget from it ($80 to $250 setup, under $20/month), and the $800 debunk is useful. One feeding figure in it is wrong. B
+- 03 Handling guide. Finished it. Clear rule: low, over something soft, forceps, never the tail. B+
+- 04 Health issues. Finished it. Symptom lists plus causes, and it tells me which things are emergencies. A-
+- 05 Tank setup. Finished it. Every number I need to buy and build is here. A
+- 06 Feeding. Finished it. Portion sizes, the abdomen-versus-carapace rule, the firefly warning. A-
+- 07 Enrichment. Finished it. Best-written page here, and honest that the evidence is borrowed. One sentence looks like a product blurb with the product deleted. B+
+- 08 Legal. Finished it and reread the Montana section. I know exactly what to check before buying. A
+
+**2. Hub and encyclopedia**
+
+The encyclopedia earns its place: origin, CITES, the export quota numbers, none of it repeated elsewhere. The hub does not. It is a compressed restatement of setup, feeding, health and handling, and where it differs from the deep dive it is the deep dive that looks researched.
+
+Disagreements with the deep dives:
+
+- Substrate. Hub: "need 4 to 6 inches of a moist substrate". Setup: "Provide a minimum of 5 to 6 inches of substrate".
+- Humidity. Hub: "high humidity (75 to 85%) are required". Setup: "Target 70 to 90%, with many keepers aiming around 75 to 80%".
+- Temperature. Hub: "Temperatures of 76 to 86 degrees F". Setup: "An ambient range of 75 to 85°F is the commonly cited target".
+- Adult feeding. Hub: "Adults eat every 7 to 14 days". Feeding: "Adults: once a week is standard, sometimes 2 to 3 insects offered weekly."
+- Juvenile feeding. Hub: "Juveniles need food more frequently, every 4 to 7 days." Feeding: "Juveniles and nymphs: every 2 to 4 days".
+- Fasting. Hub: "A scorpion that refuses food for 2 to 4 weeks is not ill". Feeding: "can safely fast for a month or two".
+- Prey size. Hub: "Prey size should not exceed the scorpion's body length (excluding tail)." Feeding: "nothing larger than the abdomen." Those are wildly different animals' worth of cricket.
+- Enclosure. Hub: "A 10 to 20 gallon terrarium ... is suitable for 1 to 2 emperor scorpions", and its own FAQ then wants "3 to 5 females in a 20-gallon or larger". Setup: 10 gallons for one adult, "step up to 20 to 30 gallons or more" for groups.
+
+**3. The set as a whole**
+
+Yes. I could legally check my state, buy captive bred, build the tank, feed it, and recognise dehydration, a bad molt, mites and cannibalism risk. That is more than most care sites manage.
+
+Questions raised on one page and answered on another without being told:
+
+- Health says dehydration comes from "Humidity that's too low" but never gives a number. The number is on the setup page.
+- Feeding warns "obesity is a documented, common problem"; the health page's closing line is the only other mention, and neither points at the other.
+- Setup says "Cohabitation is possible but not always successful"; the enrichment page is the actual manual for it.
+- Cost prices the animal without ever saying it is banned in three jurisdictions. The legal guide is right there in the sidebar.
+
+**4. Overlap and conflict across the deep dives**
+
+Read three or four times: the UV fluorescence explanation (hub, encyclopedia, setup, enrichment, legal), the "remove live prey before a molt" warning, the tarantula comparison, and the soft-exoskeleton Insects study quote, verbatim in both health and setup.
+
+Conflicts:
+
+- Cost: "An adult eating 3 to 6 appropriately sized prey items a week". Feeding: "Adults: once a week is standard, sometimes 2 to 3 insects offered weekly." Cost is budgeting for roughly double the food.
+- Feeding method. Hub: "Always offer prey with feeding tongs rather than by hand". Enrichment: "Release live prey in the evening rather than presenting it with tongs, and let the animal hunt." The same set tells me to use tongs and not to.
+- Fluorescence colour: "blue-green" (hub, encyclopedia, setup), "bright green" (enrichment), "a bright cyan" (legal).
+
+**5. One link per page**
+
+- Hub. "A scorpion that refuses food for 2 to 4 weeks is not ill" should link to the feeding guide, which says a month or two.
+- Encyclopedia. "Ranching, in which gravid females are collected and their young reared for export, has been the main legal supply route out of West Africa ever since." should link to the legal guide.
+- Cost. "The typical range for captive-bred specimens is $25 to $100." should link to the legal guide, before I spend anything.
+- Handling. "Housing multiple scorpions without enough space and hides, which can lead to aggression or cannibalism, particularly around molting time" should link to the enrichment guide.
+- Health. "Humidity that's too low, inadequate misting, or overly dry substrate are the usual causes." should link to the setup guide for the actual range.
+- Setup. "Cohabitation is possible but not always successful." should link to the enrichment guide.
+- Feeding. "Overfeeding is the risk here, obesity is a documented, common problem in captive scorpions" should link to the health issues guide.
+- Enrichment. "Dry conditions cause failed molts" should link to the setup guide's humidity section.
+- Legal. "wild-caught imports arrive with parasites and dehydration often enough that it is the first thing experienced keepers check for" should link to the health issues guide.
+
+**6. Trust**
+
+Doubts: the hub's feeding and humidity numbers do not match the pages beneath it, which makes me wonder whether anyone reconciled them. The cost guide's "3 to 6 prey items a week" is the worst of it. And this enrichment sentence is about nothing at all: "Other sizes and volumes are available and a communal enclosure needs several." That reads like an advert with the product cut out.
+
+The sentence that convinced me a keeper wrote this: "Every animal needs somewhere to be that is not somewhere another animal already is, and the standard failure is one good hide and three scorpions."
+
+**7. Set grade: B**
+
+Strong deep dives sitting under a hub that contradicts them on the numbers a first-time keeper will actually copy.
+
+First two changes: (1) make the hub inherit its numbers from the deep dives instead of restating them, starting with feeding frequency, prey size, humidity and substrate depth; (2) settle the tongs-versus-release-and-hunt question in one place and say the same thing everywhere.
+
+**Not covered anywhere**
+
+- How to sex one, despite repeated warnings about mixed-sex groups and advice to keep "proven female groups".
+- Quarantine: nothing on holding a new arrival separately before adding it to a group.
+- Routine maintenance: spot cleaning frequency, and when a full substrate change is due. Cost budgets one a year, setup says "refresh it periodically".
+- Molt frequency and how many molts to adulthood, so a keeper cannot tell a normal gap from a stalled one.
+- Mite treatment beyond a full substrate swap for an animal already infested.
+- What to do if one escapes the enclosure. A UV torch is mentioned for finding an escapee only inside a legal-page fun fact.
+- First aid after a sting or a deep pinch, past "treat any sting as you would a bee sting".
+
+(The shared class guides do cover pesticides, rehousing, and power outages, travel and shipping, so those are not counted as gaps.)
