@@ -607,48 +607,89 @@ export const fishGuides = [
     petType: "Fish",
     image: "/assets/guides/koi.jpg",
     tagline: "The living jewels of the pond world that can genuinely outlive their keepers!",
-    funFact: "Koi are famously long-lived, with some individuals in Japan documented living well past 70 years and one famous fish, Hanako, claimed to have reached 226 years old (a figure that remains disputed among scientists but reflects just how extraordinarily long-lived the species genuinely can be). Koi also recognize individual people and will learn to approach a familiar keeper at the pond's edge for food.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // This is a full outdoor pond build, not a tank - costs vary enormously
-    // by region, excavation needs, and whether you DIY or hire a contractor.
-    costs: {
-      setup: [
-        { item: "1,000+ gallon pond excavation and liner", low: 2000, high: 8000 },
-        { item: "Pond filtration system + UV clarifier", low: 300, high: 800 },
-        { item: "Aeration or waterfall pump", low: 100, high: 250 },
-        { item: "Predator netting", low: 50, high: 150 },
-      ],
-      annual: [
-        { item: "Seasonal koi pellets", low: 150, high: 300 },
-        { item: "Beneficial bacteria (spring startup)", low: 20, high: 40 },
-        { item: "Water test kit supplies", low: 30, high: 50 },
+    funFact: "Koi recognize individual people and will learn to approach a familiar keeper at the pond's edge for food. Long-term keepers describe fish that surface for one household member and ignore another, which is a considerable amount of animal for something sold as pond decoration.",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry. Quarantine, cycling and the power-outage row cite the shared
+    // aquarium guides in the sidebar's Health and More list. Built 2026-09-15 for
+    // the koi set test (docs/READER_REVIEWS.md), which found the old hub giving a
+    // 2 to 4 week quarantine against the health guide's 4 to 6 weeks or longer, a
+    // 25 to 35 year lifespan against the cost guide's 25 to 50, peas as an
+    // untroubled treat against the feeding guide's choking warning, and a setup
+    // table summing to $2,450-$9,200 under a cost guide that says $5,100-$15,875.
+    // Its headline funFact also ran the Hanako 226-year claim the cost guide
+    // debunks in the same set, and that is gone.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Pond volume", value: "Roughly 250 gallons per adult koi, or about 10 gallons per inch of body length. In practice, 1,000 gallons is the frequently cited minimum practical pond volume, and it only comfortably supports a few fish, larger is strongly preferred for water stability and healthy growth.", source: "koi-tank-setup-guide" },
+        { label: "Depth", value: "Minimum 3 feet, ideally 3 to 5 feet or more. Depth buys temperature stability, protection from predators, and survival through a freezing winter; a shallow pond can freeze solid or overheat, both dangerous.", source: "koi-tank-setup-guide" },
+        { label: "Indoors is temporary", value: "Indoor aquariums can technically house koi, but matching the volume and industrial-grade filtration an adult needs indoors is expensive and impractical for most keepers. Outdoor ponds are the standard setup for adult koi for good reason.", source: "koi-tank-setup-guide" },
+        { label: "Temperature", value: "Koi are hardy coldwater fish, comfortable in a 64 to 75°F range, with 59 to 77°F as the outer limits. They tolerate wider extremes than that range suggests, but rapid swings, more than about 2°F a day, are the real risk, not the absolute temperature.", source: "koi-tank-setup-guide" },
+        { label: "Filtration", value: "Koi are heavy waste producers, and this is where most beginner setups fall short. An oversized filtration system paired with a UV clarifier is the right call here, not overkill, with strong aeration and oxygenation alongside it.", source: "koi-tank-setup-guide" },
+        { label: "Lighting", value: "No UVB lighting is required, koi don't rely on it for vitamin D the way many reptiles do. A UV clarifier or sterilizer is common and genuinely useful, but it's a water-treatment device for controlling algae and pathogens, not lighting for the fish themselves.", source: "koi-tank-setup-guide" },
+        { label: "Predators", value: "Herons, raccoons, and similar predators are real threats. An appropriately sized netting kit and adequate depth both matter here.", source: "koi-tank-setup-guide" },
+        { label: "Feeding by temperature", value: "Stop below about 48 to 50°F. Feed sparingly once or twice a day between 50 and 68°F, and 2 to 4 times a day in the 68 to 86°F growth range. Above about 86 to 90°F, cut back again, heat stress impairs digestion too.", source: "koi-feeding-guide" },
+        { label: "Why cold feeding is dangerous", value: "Koi have no true stomach, food passes straight into the intestine. If a koi enters cold-water torpor with food still in its gut, undigested material can let harmful bacteria cross the intestinal wall into the bloodstream.", source: "koi-feeding-guide" },
+        { label: "Portion", value: "The traditional 5-minute rule, only offer what's cleaned up in 3 to 5 minutes, is the most repeated guidance, and it is also the easiest one to overfeed on. A body-weight-based approach, roughly 1 to 4% of body weight a day depending on temperature and size, is the more precise alternative.", source: "koi-feeding-guide" },
+        { label: "Seasonal food", value: "A lower-protein wheat-germ formula, roughly 25 to 32% crude protein, is easier to digest at low metabolic rates and is the right choice in the 50 to 64°F range. The higher-protein warm-season growth and color formula, 32 to 40%+, is for consistently warmer water above roughly 60 to 64°F.", source: "koi-feeding-guide" },
+        { label: "Treats", value: "Supplement 2 to 3 times a week rather than daily. Peas go in small, thoroughly cooked, shelled amounts if you feed them at all, since hard or dried peas are a real choking and blockage risk. Always remove fruit seeds, pits, and citrus rind before feeding.", source: "koi-feeding-guide" },
+        { label: "Handling", value: "Handle as little as possible, ideally only for necessary treatment, transport, or showing, never for casual interaction. Guide the fish into a floating bowl or soft container using a net, rather than lifting it directly, and keep your hands or any towel wet before contact, dry surfaces strip the slime coat.", source: "koi-handling-guide" },
+        { label: "Quarantine", value: "Strict quarantine of 4 to 6 weeks or longer, sometimes at specific temperatures, is the critical prevention step for koi herpesvirus. Even fish who survive an outbreak can remain lifelong carriers.", source: "koi-health-issues-guide" },
+        { label: "KHV", value: "Koi Herpesvirus is the most serious concern. It causes gill necrosis, excess mucus, lethargy, and skin lesions, outbreaks can carry mortality rates of 80 to 100%, it's temperature dependent, and there's no reliable cure.", source: "koi-health-issues-guide" },
+        { label: "Spring restart", value: "A healthy dose of beneficial bacteria at spring startup, paired with the oversized filtration and UV clarification a koi pond is built around, prevents far more of the health list than any treatment ever will.", source: "koi-health-issues-guide" },
+        { label: "Stock for the adults", value: "Adult koi need thousands of gallons rather than hundreds, and a pond built to the fish you bought is a pond you will be rebuilding. Size the filtration for the fish the koi will become, not the ones swimming now.", source: "koi-enrichment-guide" },
+        { label: "Budget, the fish", value: "$10 to $100 for a juvenile pond-quality domestic koi, often $10 to $50 for a small 4 to 6 inch fish. Medium or better colored specimens run $45 to $200 or more, imported Japanese koi average roughly $100 to $1,500, and show quality runs $1,200 to $15,000.", source: "koi-cost-guide" },
+        { label: "Budget, the pond", value: "A residential pond in the 6x8 to 11x16 foot range, roughly 1,000 gallons to several thousand, commonly runs $5,100 to $15,875 installed, averaging around $10,000 in recent cost analyses. Small prefab basic setups can start around $500.", source: "koi-cost-guide" },
+        { label: "Running costs", value: "Commonly $1,000 to $2,000 or more a year all in. Food runs $30 to $75 or more a month in active season, dropping sharply once water falls below about 48 to 50°F.", source: "koi-cost-guide" },
+        { label: "Vet costs", value: "Specialized aquatic vets aren't common, and many keepers manage minor issues themselves through water quality correction and over the counter treatments. When a vet is available, a routine exam tends to run in the low to mid hundreds of dollars.", source: "koi-cost-guide" },
+        { label: "Lifespan", value: "25 to 50 years with good care is the commonly cited range, and Japanese bloodlines are often noted as hardier and longer lived than some domestic lines, which may average closer to 15 years.", source: "koi-cost-guide" },
+        { label: "Adult size", value: "12 to 36 inches (30 to 90 cm) depending on pond size and variety." },
+        { label: "New fish", value: "Thirty days is the minimum, not a target to hit and stop, and a full two months is reasonable for a fish you especially don't want to lose or don't want introducing something to an established tank.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Power outage", value: "An aquarium's biggest threat in a power outage is oxygen loss, not darkness, and the same three problems, oxygen, temperature, and a dead filter, drive safe transport and moving day too.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
-    sections: {
-      housing: "Koi belong in an outdoor pond, not an aquarium - plan for at least 1,000 gallons for even a small group, with a depth of 3 feet or more to protect them from predators and temperature extremes and to give them a stable refuge in winter. Strong pond filtration paired with a UV clarifier keeps water clear and biologically healthy at this scale. Adequate surface agitation from a waterfall, fountain, or dedicated aerator is essential for oxygen exchange, especially in summer heat. Predator netting protects koi from herons and raccoons, which are a real and common threat to outdoor ponds.",
-      diet: "Koi are omnivores and do well on a high-quality floating koi pellet, with protein content that should be adjusted seasonally - lower protein in cooler spring and fall water, higher protein in summer. Feeding should stop entirely once water temperature drops below about 50 degrees F, since their metabolism slows dramatically and undigested food can cause serious internal problems. Occasional treats like shelled peas, watermelon, and orange slices are enjoyed in moderation. Feed only what is consumed within about five minutes to avoid foulling the water.",
-      enrichment: "Koi are remarkably interactive for fish, learning to associate their keeper with food and often gathering at the pond's edge or even eating directly from an open hand. They benefit from a mix of varied depths, plantings, and rock formations to explore alongside open swimming areas, and they display genuine social schooling behavior in groups. Their activity follows the seasons closely - expect a marked slowdown in feeding and movement once the water cools in autumn, followed by a return to activity in spring, which is entirely normal rather than a cause for concern.",
-      health: "Parasites such as anchor worms and fish lice are common in outdoor pond systems and should be checked for regularly. Bacterial infections and ulcers typically follow periods of poor water quality or physical injury. Koi herpesvirus (KHV) is a serious, highly contagious disease and a real biosecurity risk - always quarantine any new koi for 2 to 4 weeks in a separate system before introducing them to an established pond. Ammonia and nitrite spikes are especially likely right after winter dormancy, when beneficial bacteria colonies have died back, so test water regularly through the spring restart.",
-      checklist: [
-        "1,000+ gallon outdoor pond, 3+ feet deep",
-        "Pond filtration system with UV clarifier",
-        "Aeration or waterfall for oxygen exchange",
-        "Predator netting",
-        "Seasonal koi pellets (protein adjusted by temperature)",
-        "Separate quarantine tank for new koi",
-        "Water test kit",
-        "Pond net for handling",
-        "Beneficial bacteria supplement for spring startup",
-        "Skimmer for surface debris",
+    emergencyCard: {
+      source: "koi-health-issues-guide",
+      callNow: [
+        "Gasping combined with high ammonia",
+        "Rapid widespread mortality",
+        "Severe open ulcers",
+        "Suspected KHV: gill necrosis, excess mucus, lethargy, and skin lesions. This is emergency and culling level serious",
       ],
+      vetLine: "Get water quality corrected immediately and involve a vet if one is available. For valuable fish or any unclear diagnosis, always lean toward professional guidance, though many keepers rely on experienced koi specific resources for routine issues since aquatic vets are genuinely limited in availability.",
     },
+    routes: [
+      { slug: "koi-cost-guide", line: "The fish from $10 to $50,000, what a pond actually costs to build, the yearly run rate, and a lifespan that outlasts most mortgages." },
+      { slug: "koi-tank-setup-guide", line: "Volume, depth, temperature, substrate, and the filtration sizing that decides whether the pond works." },
+      { slug: "koi-feeding-guide", line: "The temperature-banded feeding schedule, seasonal protein, portion rules, and why koi stop eating." },
+      { slug: "koi-handling-guide", line: "Why handling stays minimal, the net-into-a-floating-bowl method, and the one variety that acts like a dog." },
+      { slug: "koi-health-issues-guide", line: "Parasites, bacterial ulcers, water quality crises, and koi herpesvirus, split into what is an emergency and what is not." },
+      { slug: "koi-enrichment-guide", line: "Volume then depth, stocking for the adults rather than the juveniles, and what the fish literature does and does not support." },
+    ],
+    buyList: [
+      "Outdoor pond of at least 1,000 gallons, larger strongly preferred",
+      "EPDM rubber liner and underlayment",
+      "A deep zone of 3 feet minimum, 3 to 5 feet or more preferred",
+      "Oversized mechanical and biological filtration",
+      "UV clarifier or sterilizer",
+      "Pump sized to circulate the full volume every 1 to 2 hours",
+      "Aeration kit or waterfall pump",
+      "Predator netting",
+      "De-icer, in climates that freeze",
+      "Seasonal koi pellets, wheat-germ and warm-season growth formulas",
+      "Water test kit",
+      "Beneficial bacteria, for spring startup",
+      "Water conditioner",
+      "Pond net and a floating bowl or soft container",
+      "A separate quarantine system for new arrivals",
+    ],
     faqs: [
-      { q: "How big do koi get?", a: "12 to 36 inches depending on variety, genetics, and available space, with some individuals in very large ponds reaching close to 3 feet. Pond size has a direct effect on how large a koi will ultimately grow." },
-      { q: "How long do koi live?", a: "25 to 35 years is typical for well-kept koi, and documented cases exist of individuals living far longer - some claimed well past a century, though the most extreme ages remain scientifically disputed. Even at the conservative end, koi are among the longest-lived animals commonly kept as pets." },
-      { q: "Can koi live in an aquarium?", a: "Only temporarily as juveniles. Adult koi need thousands of gallons of space and are not suitable for long-term life in a standard aquarium - they belong in an outdoor pond built to accommodate their eventual size." },
-      { q: "Do koi recognize their owners?", a: "Yes. Koi learn to associate specific people with feeding time and will often approach a familiar keeper at the pond's edge, sometimes even accepting food from an open hand." },
-      { q: "What do koi eat in winter?", a: "Feeding should stop once water temperature drops below roughly 50°F, since their metabolism slows to the point where they can no longer properly digest food. Resume feeding gradually with easily digestible, lower-protein food as the water warms back up in spring." },
-      { q: "Are koi good pets for apartment living?", a: "No, not even close. Koi need a genuine outdoor pond of 1,000+ gallons and 3+ feet deep, they are not an aquarium fish at any life stage past being a juvenile. If you don't have yard space for a real pond, this isn't a fish you can keep long-term." },
+      { q: "How big should a koi pond be?", a: "Plan on roughly 250 gallons per adult, or 10 gallons per inch of body length. The commonly cited practical minimum is 1,000 gallons, which supports only a few fish, so go larger for water stability and healthy growth." },
+      { q: "Why do I need to stop feeding koi in cold water?", a: "Koi have no true stomach, food passes straight into the intestine. If a koi enters cold-water torpor with food still in its gut, undigested material can let harmful bacteria cross the intestinal wall into the bloodstream. Stopping feeding before it gets that cold isn't just a rule of thumb, it's the actual reason koi ponds get into trouble in winter." },
+      { q: "What is koi herpesvirus (KHV) and how serious is it?", a: "The most serious koi disease, causing gill necrosis, excess mucus, lethargy, and skin lesions. Outbreaks can carry mortality rates of 80 to 100%, it's temperature dependent, and there's no reliable cure. Survivors can remain carriers, which is exactly why strict quarantine of 4 to 6 weeks or longer is the critical prevention step." },
     ],
   },
   {

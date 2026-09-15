@@ -523,70 +523,86 @@ export const birdGuides = [
     image: "/assets/guides/parrotlet.jpg",
     tagline: "The smallest parrot you can keep, with a personality far too big for its tiny body!",
     funFact: "Despite being smaller than a budgie, the Pacific parrotlet has a noticeably stronger bite and a personality so bold that keepers often describe it as a big parrot's attitude packed into a tiny bird. It genuinely does not seem to know how small it is.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "18x18x24 in cage (larger preferred)", low: 100, high: 280 },
-        { item: "Perches of varied diameters", low: 15, high: 25 },
-        { item: "Foraging and shreddable toys", low: 20, high: 40 },
-        { item: "Food and water dishes", low: 10, high: 20 },
-        { item: "Cuttlebone or mineral block", low: 5, high: 12 },
-        { item: "Nail clippers", low: 8, high: 12 },
-      ],
-      annual: [
-        { item: "Small parrot pellets", low: 70, high: 110 },
-        { item: "Fresh vegetables", low: 80, high: 130 },
-        { item: "Toys (rotating)", low: 40, high: 70 },
-        { item: "Annual avian vet check", low: 60, high: 100 },
-      ],
-    },
-    sections: {
-      housing: `A minimum cage of 18x18x24 inches suits a single parrotlet, though wider and more horizontal space is always appreciated since, despite their tiny size, parrotlets are active and energetic. Bar spacing of 3/8 to 1/2 inch keeps a parrotlet from squeezing through or getting a head or foot caught, since these birds are proportionally stronger and more determined than their size suggests.
-
-Position the cage at eye level against a wall, away from the kitchen, drafts, and direct sunlight. Cooking fumes, especially from overheated non-stick cookware, are instantly lethal to a bird this small. Parrotlets are alert, watchful birds that feel most secure with a stable wall behind them and a clear view of the room.
-
-Provide several perches of varying diameters (natural wood is preferred over uniform dowels) along with a swing and a ladder or two. Parrotlets are surprisingly strong chewers for their size, so cage bars and accessories should be sturdy rather than the flimsiest budget option.
-
-A consistent 10 to 12 hours of covered darkness each night supports healthy sleep. If you plan to keep a bonded pair rather than a single bird, budget for a noticeably larger cage, since two parrotlets need meaningfully more space than the minimum for one.`,
-      diet: `A high-quality small parrot pellet should form the base of a parrotlet's diet, supplemented daily with finely chopped fresh vegetables and a small amount of fruit. Pellet-based nutrition heads off the fatty liver disease and vitamin deficiencies that come from a seed-heavy diet, a problem parrotlets are just as prone to as any larger parrot despite their size.
-
-Offer fresh vegetables daily: leafy greens, bell pepper, broccoli, carrot, and peas are all good choices. Introduce new foods gradually and expect some initial refusal, since parrotlets can be surprisingly stubborn about trying unfamiliar food.
-
-Seed mix can be offered in small amounts, ideally through a foraging toy rather than an open dish, and a few pieces of millet work well as a training reward. A cuttlebone or mineral block should be available at all times for calcium.
-
-Strictly avoid avocado, chocolate, caffeine, onion, garlic, alcohol, and xylitol, all of which are toxic to birds. Fresh water changed daily is essential.`,
-      enrichment: `Parrotlets have a genuinely outsized personality: bold, curious, and seemingly unaware that they are one of the smallest parrots kept as pets. That confidence needs an outlet, or it curdles into nippiness and territorial behavior.
-
-Daily out-of-cage time of at least an hour in a bird-safe, supervised space is important. Parrotlets are strong, fast fliers that enjoy exploring, so bird-proof the room thoroughly before letting one out: cover windows, secure other pets, and close off small gaps they could squeeze into.
-
-Consistent, gentle daily handling from a young age is what determines whether a parrotlet grows into an affectionate, easygoing bird or a defensive, bitey one. Unlike a zebra finch, a parrotlet actively bonds to a person and can learn to say a handful of words, but that bond has to be built and maintained through regular interaction, not assumed.
-
-If you keep a bonded pair, expect them to bond tightly to each other rather than to you, which is a perfectly good outcome if companionship rather than a hands-on pet is what you want. A single, well-socialized parrotlet is the better choice if a close human bond is the goal.`,
-      health: `Feather plucking and other feather-destructive behavior can develop from boredom, stress, or an under-stimulated environment, the same as in larger parrots. Rule out medical causes with an avian vet before assuming it is purely behavioral.
-
-Obesity from a seed-heavy, low-exercise diet is a common and preventable problem. A pelleted diet and daily out-of-cage activity are the two most effective safeguards. Respiratory infections show up as tail-bobbing with each breath, nasal discharge, and fluffed, lethargic posture, and need prompt veterinary attention since birds mask illness until it is fairly advanced.
-
-Parrotlets are otherwise considered a fairly hardy small parrot with no major breed-specific disease, but their small size and fearless personality make them vulnerable to household accidents: being stepped on, caught in a door or gap, or grabbed by a curious cat or dog. Supervision during out-of-cage time matters as much for physical safety as for behavior.
-
-Annual avian veterinary checkups are recommended. With good care, parrotlets are notably long-lived for such a small bird, commonly reaching 15 to 20 years and occasionally into their 20s or 30s, so budget for a companion animal that may be around for two decades.`,
-      checklist: [
-        "18x18x24 in cage minimum (larger preferred)",
-        "High-quality small parrot pellets",
-        "Fresh vegetables daily, seed as a treat/training reward",
-        "Cuttlebone or mineral block",
-        "Multiple perches, a swing, and chew-safe toys",
-        "Daily out-of-cage time in a bird-proofed space",
-        "Consistent gentle handling from a young age",
-        "Avian veterinarian contact",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry, which no deep dive repeats. Quarantine, household hazards, sleep,
+    // chronic egg laying, sexing and weight, and the emergency plan cite the
+    // shared bird guides in the sidebar's Health and More list. Built 2026-09-15
+    // for the parrotlet set test (docs/READER_REVIEWS.md), which found the old
+    // hub recommending 3/8 to 1/2 inch bar spacing, the range the setup guide
+    // calls a lovebird range, and stating a 15 to 20 year lifespan the cost
+    // guide treats as the contested upper end. The old hub's "at least an hour"
+    // of out-of-cage time was retired rather than carried forward, since no deep
+    // dive or opened source states it; filed as a gap in docs/READER_LOG.md.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Cage size", value: "Minimum 18x18x24 inches for a single bird, but wider is a genuine upgrade rather than a nice-to-have. If you're housing a pair, budget for meaningfully more space than the single-bird minimum, not just a modest bump.", source: "parrotlet-tank-setup-guide" },
+        { label: "Bar spacing", value: "1/4 inch, and 1/2 inch is the widest worth considering at all. A parrotlet's head is smaller than a lovebird's, so spacing that's safe for its bigger relatives can let a parrotlet get a head or foot caught, which is a real, sometimes fatal risk.", source: "parrotlet-tank-setup-guide" },
+        { label: "Cage material", value: "Powder-coated or stainless steel only. Avoid painted finishes, galvanized wire, or anything using lead or zinc in its construction, all carry a real risk of toxic exposure if chewed. Skip round cages entirely, and make sure every opening section locks securely.", source: "parrotlet-tank-setup-guide" },
+        { label: "Temperature", value: "Normal household range, roughly 65 to 80°F, works well. No special heating or cooling is needed, though drafts and direct sun on the cage should be avoided the same as with any pet bird.", source: "parrotlet-tank-setup-guide" },
+        { label: "Lighting and sleep", value: "Roughly 10 to 12 hours of genuine, covered darkness supports both healthy sleep and a more stable hormonal cycle in females. Indoor birds also benefit from supplemental UV exposure to properly synthesize vitamin D3 for calcium absorption, since window glass filters out the UV wavelengths that matter.", source: "parrotlet-tank-setup-guide" },
+        { label: "Diet", value: "A formulated small parrot pellet as the foundation, supplemented daily with fresh vegetables and fruit, finely chopped since this is a genuinely small bird. Seeds and nuts stay limited to about once a day rather than the base of the diet.", source: "parrotlet-feeding-guide" },
+        { label: "Feeding pattern", value: "Parrotlets are free-choice eaters, not scheduled ones. Refresh the base pellet bowl in the morning when they're hungriest and top it up if it empties before evening. Pull uneaten fresh food within a couple hours to prevent spoilage.", source: "parrotlet-feeding-guide" },
+        { label: "No grit", value: "Parrotlets don't need grit. Like other true parrots, they hull seeds with their beak before swallowing, so there's nothing left for grit to grind. Free access to grit can cause a genuinely dangerous crop or intestinal impaction.", source: "parrotlet-feeding-guide" },
+        { label: "Calcium", value: "A cuttlebone or mineral block should be available at all times for calcium, and it matters even more for a hen, since a calcium deficiency is the factor most consistently linked to egg binding.", source: "parrotlet-feeding-guide" },
+        { label: "Toxic foods", value: "Avocado is the single most consistently flagged toxic food. Chocolate, caffeine, alcohol, onion and garlic, and xylitol are all genuine dangers, and the seeds or pits from rose-family fruits (apple, cherry, peach) affect heart function, which is why apple gets its seeds removed first.", source: "parrotlet-feeding-guide" },
+        { label: "Handling sessions", value: "Short sessions, 5 to 10 minutes, two or three times a day, work better than one long forced session. Offering a bit of millet for calm behavior teaches a parrotlet that hands mean good news.", source: "parrotlet-handling-guide" },
+        { label: "The bite", value: "A parrotlet's bite is much stronger than a budgie's despite its smaller size, and the bird doesn't seem to know it's small. A parrotlet usually gives a gentle warning nip before an actual bite, and backing off rather than pushing through it prevents far more bites than any amount of correction after the fact.", source: "parrotlet-handling-guide" },
+        { label: "One bird or a pair", value: "A pair is a workable option for an owner with less free time to give, and singly is the safer default: this is a territorial bird even with its own kind. Pairing can work, but only with a slow, supervised introduction, never two strangers dropped straight into one cage.", source: "parrotlet-handling-guide" },
+        { label: "Out-of-cage time", value: "Daily out-of-cage time in a bird-proofed, supervised space matters as much as anything in the cage itself, and the socialization that comes with it is what keeps a parrotlet friendly rather than nippy.", source: "parrotlet-tank-setup-guide" },
+        { label: "Foraging", value: "Wild parrots spend up to six hours a day working for food, and a full dish removes all of it. Hanging forage toys sized for a small beak, plus food wrapped in paper, tucked into cardboard, and split across several sites so the bird searches instead of landing.", source: "parrotlet-enrichment-guide" },
+        { label: "Budget", value: "$100 to $400 from a breeder for a common green or blue Pacific, with rarer mutations commonly $350 to $900 and adoption $50 to $300. Roughly $160 to $300 for the setup, and roughly $250 to $400 a year, about $21 to $33 a month, after that.", source: "parrotlet-cost-guide" },
+        { label: "Vet costs", value: "A routine annual checkup with an avian vet runs about $60 to $90. Parasite treatment, if it comes up, adds $0 to $80. The real budgeting risk is emergency care, which can run $300 or more once diagnostics, fluids, or a procedure are involved.", source: "parrotlet-cost-guide" },
+        { label: "Lifespan", value: "8 to 12 years is the average, and individual birds are reported into their 20s and occasionally their 30s. Avian-specialist guidance for this species puts the upper end of a well-kept bird's life at around 20 years.", source: "parrotlet-cost-guide" },
+        { label: "Adult size", value: "4.3 to 5.5 inches (11 to 14 cm), 1 to 1.4 oz." },
+        { label: "Quarantine", value: "Thirty days is the floor, not a suggestion with room to shave off a week if the bird seems fine, and 30 to 45 days in a separate, isolated room is the wider window, while the new arrival is screened for chlamydia, salmonella, polyomavirus, and PBFD.", source: "bird-quarantine-guide" },
+        { label: "Kitchen and air", value: "A bird's respiratory system turns ordinary household fumes, from an overheated nonstick pan to a scented candle, into something that can kill it in minutes with no warning.", source: "bird-household-hazards-guide" },
+        { label: "Chronic egg laying", value: "Chronic egg laying may lead to malnutrition through the chronic depletion of calcium used to build eggshells, and the downstream effects of that calcium loss are weakness, lethargy, brittle bones that can fracture during normal handling, egg binding, seizures, and death.", source: "bird-chronic-egg-laying-guide" },
+        { label: "Sexing and weight", value: "For most parrot species you can't tell a hen from a cock by looking, and DNA testing is the only reliable answer. A gram scale and a keel check catch illness before it's visible.", source: "bird-sexing-weight-body-condition-guide" },
       ],
     },
+    emergencyCard: {
+      source: "parrotlet-health-issues-guide",
+      callNow: [
+        "Tail-bobbing with each breath, open-mouth breathing, coughing, or general lethargy and a fluffed appearance. Avian vets treat respiratory signs as a same-day emergency until proven otherwise",
+        "Discharge from the nostrils or around the eyes, or frequent sneezing",
+        "In a hen: sitting on the bottom of the cage, straining, a bobbing tail with breathing difficulty, and a visibly distended abdomen. Egg binding is an emergency, not a wait-and-see situation, and can turn fatal within hours",
+        "Feather plucking. See a vet before assuming it's purely behavioral, since infections, mites, liver disease, or a nutritional deficiency need to be ruled out first",
+        "Any sudden change: lethargy, appetite loss, fluffed feathers held constantly, or a shift in normal behavior",
+      ],
+      vetLine: "Because parrotlets mask symptoms so effectively, any sudden change is worth a prompt vet visit rather than a wait-and-see approach. Subtle is often all the warning you get. Routine and emergency avian vet visits are worth budgeting for ahead of time rather than after an emergency.",
+    },
+    routes: [
+      { slug: "parrotlet-cost-guide", line: "The bird at $100 to $900, the setup, the monthly run rate, avian vet pricing, and how one bird versus two changes the budget." },
+      { slug: "parrotlet-tank-setup-guide", line: "Cage size, the 1/4 inch bar spacing this species needs, safe materials, lighting, and setting up for a pair rather than a single bird." },
+      { slug: "parrotlet-feeding-guide", line: "Free-choice pellets, seed once a day, why this species needs no grit, the safe list, and the toxic list." },
+      { slug: "parrotlet-handling-guide", line: "A bite stronger than a budgie's, the warning nip most owners miss, the socialization routine, and what an under-socialized parrotlet becomes." },
+      { slug: "parrotlet-health-issues-guide", line: "Respiratory signs, feather plucking, obesity and fatty liver, egg binding in a hen, and the accidents a fearless bird this small runs into." },
+      { slug: "parrotlet-enrichment-guide", line: "Foraging instead of a bowl, constant chewing material, perches at varied diameter, and the priority order to work through." },
+    ],
+    buyList: [
+      "Cage of at least 18x18x24 inches, wider preferred, with 1/4 inch bar spacing",
+      "Powder-coated or stainless steel construction, no round cages",
+      "Perches of varied diameter and natural wood, no uniform dowels or sandpaper covers",
+      "Hanging forage toys sized for a small beak",
+      "Shreddable chew toys, plain paper and cardboard, replaced as destroyed",
+      "Food and water dishes",
+      "Cuttlebone or mineral block",
+      "Formulated small parrot pellets",
+      "Fresh vegetables and a little fruit",
+      "Millet, for training rewards",
+      "Paper cage liner",
+      "A cage cover, for 10 to 12 hours of dark",
+      "Gram scale",
+      "Avian vet contact, located before you need one",
+    ],
     faqs: [
-      { q: "Is a parrotlet a good first parrot?", a: "It can be, but it is a different kind of beginner bird than a budgie or cockatiel. Parrotlets are small and relatively low-maintenance in terms of space and noise, but they are bold and strong-willed, and an under-socialized bird can become genuinely nippy. Someone willing to commit to consistent, gentle daily handling from early on will likely find a parrotlet rewarding. Someone wanting a more forgiving, hands-off-friendly first bird may be happier starting with a budgie or cockatiel." },
-      { q: "Can parrotlets talk?", a: "Some can, though they are not among the most talkative parrots. A parrotlet may learn to say a handful of words or phrases, especially a hand-raised bird bonded closely to one person, but they are not in the same league as a budgie or an African grey. This is still a real point of contrast with a zebra finch, which cannot be taught to talk at all." },
-      { q: "Should I get one parrotlet or a bonded pair?", a: "It depends on what you want from the relationship. A single, well-socialized parrotlet bonds intensely to its person and can become a genuinely affectionate companion. A bonded pair will bond mainly to each other rather than to you, which is a fine outcome if you want to watch and enjoy two birds together rather than form a close hands-on bond with one. Mixing the two goals rarely works well." },
-      { q: "How long do parrotlets live?", a: "Commonly 15 to 20 years in captivity with good care, and some individuals live into their 20s or even 30s. That is notably long for a bird this small; a zebra finch of similar size typically lives only 5 to 10 years. A parrotlet is a two-decade commitment, not a short-lived starter pet." },
-      { q: "Are parrotlets aggressive?", a: "Not inherently, but they are feisty and can become nippy or territorial without regular, gentle socialization. Their bite is noticeably stronger than a budgie's for their size, which is part of why they are usually recommended for adults or older children rather than young kids. Consistent, calm daily handling from early on is the main thing that keeps a parrotlet's boldness from turning into aggression." },
-      { q: "Parrotlet or budgie: which is the better first bird?", a: "A budgie is generally the more forgiving choice: gentler by temperament, more likely to learn an extensive vocabulary, cheaper to buy, and just as content solo with plenty of attention or paired up with another budgie. A parrotlet is smaller and quieter but has a noticeably stronger bite for its size and a bolder, more assertive personality that needs consistent handling to stay friendly rather than nippy. If you want the lower-drama, kid-friendlier option, get the budgie. If you want a bird with outsized personality and don't mind putting in the socialization work, a parrotlet is a great alternative." },
+      { q: "Can a female parrotlet get egg-bound without a male present?", a: "Yes. A hen can be triggered into laying without a mate, and egg binding, a life-threatening emergency, follows the same calcium-deficiency mechanism documented across small parrot species generally. Watch for straining, a swollen abdomen, and a bird sitting on the cage floor, this needs same-day veterinary attention." },
+      { q: "Do parrotlets need grit to digest their food?", a: "No. Parrotlets, like other true parrots, hull seeds with their beak before swallowing them, so grit serves no digestive purpose. It's more than just unnecessary, free access to grit can cause a dangerous crop or intestinal impaction, so it shouldn't be offered unless a vet specifically recommends it." },
+      { q: "How much does a parrotlet cost to buy?", a: "$100 to $400 from a breeder for a common green or blue Pacific. Rarer mutations (American yellow, lutino, dilute turquoise, pied) commonly run $350 to $900, and exceptional individuals pass $1,000. Adoption or rehoming typically runs $50 to $300." },
     ],
   },
   {

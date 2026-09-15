@@ -5073,3 +5073,427 @@ Checked against the Health and More list. Filtration plausibly covers cycling an
 - The cost of the quarantine tank two pages require; the cost guide's $60 to $150 does not include it.
 - How many shrimp to buy for a given tank size, left at 5 or 20 in a 10-gallon.
 - What a female carrying eggs actually looks like, so a keeper can tell it from the molt and illness signs the health page describes.
+
+## Tiger Salamander (2026-09-15, batch K)
+
+Raw reader output, one Opus agent, 9-page extract (hub, encyclopedia, cost,
+handling, health issues, tank setup, enrichment, legal, vs axolotl).
+
+**1. Page by page**
+
+- 00 hub. Finished it. Actionable: tank size, temp band, feeding schedule, calcium cadence, checklist, sexing. Grade B-.
+- 01 encyclopedia. Finished it. Actionable: nothing for husbandry, but it told me what animal I'm buying and why bait-shop stock is risky. Grade A-.
+- 02 cost. Finished it. Actionable: price to pay, upfront total, vet ranges. Grade C+ (numbers fight the hub; opens with a 2025 federal rule and never returns to it).
+- 03 handling. Finished it, it's short. Actionable: don't handle, use wet nitrile gloves if you must. Grade C.
+- 04 health. Finished it. Actionable: the four failure modes and what causes each. Grade B- (not one number anywhere).
+- 05 tank setup. Finished it, twice. Actionable: dimensions, substrate list with a real avoid-list, lighting, humidity. Grade B+.
+- 06 enrichment. Finished it. Actionable: the priority order list is the best thing in the set. Grade A-.
+- 07 legal. Finished it, read the table twice. Actionable: whether I can legally own one where I live. Grade A.
+- 08 vs axolotl. Finished it. Actionable: confirmed I want the terrestrial animal. Grade B.
+
+**2. Hub and encyclopedia**
+
+The encyclopedia earns its place cleanly. Nothing else tells me about the bait trade, the California hybridization emergency, or neoteny in wild populations, and it's the only page that reads like it isn't selling me a setup.
+
+The hub half-earns it. It is the only place with a feeding schedule, a supplement cadence, adult size, gut loading, and sexing. But it is the outlier in most conflicts:
+
+- Substrate. Hub: "deep substrate - 4 to 6 inches minimum". Setup: "at least 3 to 4 inches".
+- Temperature. Hub: "60 to 72 degrees F is the ideal range. They struggle noticeably above 75". Setup: "60 to 75°F, and genuinely never above about 78°F".
+- Humidity. Hub: "the humidity maintained at 70 to 80%". Setup: "70 to 75%".
+- Water, the one that matters. Hub: "never distilled or reverse-osmosis water, which carries none of the electrolytes an amphibian needs". Setup: "Treat all water with a conditioner before use, or use spring or distilled water instead." One of these is wrong and I can't tell which.
+- Tank price. Hub: "20-gallon long aquarium | $80 | $160". Cost: "Tank, 20-gallon long | $35 - $60". Substrate likewise $20-40 against $10-16.
+- Food budget. Hub annual: "$70 | $130". Cost: "Roughly $15 to $30 a Month", so $180 to $360. More than double.
+- Lifespan. Hub: "10 to 20 years in captivity". Cost: "12 to 15 years is typical".
+
+**3. The set as a whole**
+
+I could buy one, build the adult enclosure, feed it, and recognize the things that kill it. Legality is settled better than anywhere I've read. Still missing: how to actually keep a larva and run the metamorphosis transition (three pages tell me it "looks essentially identical to an axolotl's" and hand me off to an axolotl page, but nobody tells me when to lower the water, how much land to give, or when to stop); whether a captive animal needs a winter cooling period, when the encyclopedia says they overwinter in frozen soil; any cleaning or substrate-replacement cadence; how to source captive-bred when health says wild-caught stock is common; what to do the day the room hits 84.
+
+Unsignposted answers: handling asks why my salamander is never visible and the enrichment guide is the page that answers it, with no link. Health says prevention is "entirely about substrate choice" and never points at the setup page that has the avoid-list. Cost names the endangered California tiger salamander with no link to the legal guide, which is where I learn California bans the whole genus.
+
+**4. Overlap and conflict across deep dives**
+
+Read twice or more: the axolotl larval resemblance (four pages), obesity and no self-regulation (three), cool temperatures and no heat lamp (four), the four-species comparison sentence pasted almost verbatim into four pages.
+
+Conflicts:
+
+- Handling. Handling: "Direct handling should genuinely be avoided... Wear wet, powder-free nitrile gloves." Hub: "Handle with clean, slightly damp, chemical-free hands only... Keep sessions short (under 10 minutes)." vs-axolotl: "Brief handling okay with damp hands."
+- Cohabitation. Setup: "some very large enclosures can occasionally support a small group." Enrichment: "Do not house two together."
+- Feeding placement. Enrichment: "Release worms and insects into the leaf litter so finding them is the activity," then four lines later, "Keep prey off loose substrate where you can." Health wants feeding "away from any substrate that could be ingested"; the hub wants tongs.
+- Pinky mice. Hub: "Large adults can be offered occasional pinky mice as a nutritional supplement." Health lists them under "limit fatty feeders."
+
+**5. One link per page**
+
+- Hub: "Quarantine any new salamander for 30 to 60 days in a separate enclosure" to the amphibian quarantine, acclimation and water hardness guide.
+- Encyclopedia: "Larvae are sold across the United States as fishing bait under the name waterdogs" to the legal guide.
+- Cost: "the California tiger salamander is a protected, endangered species and isn't legally available as a pet" to the legal guide.
+- Handling: "it's exactly why deep, burrowable substrate matters so much" to the enrichment guide.
+- Health: "Prevention is entirely about substrate choice and feeding away from any substrate that could be ingested accidentally." to the setup guide.
+- Setup: "Provide at least 3 to 4 inches of moisture-retentive, burrow-supporting material" to the enrichment guide.
+- Enrichment: "Obesity is the standard captive problem in long-kept tiger salamanders." to the health guide.
+- Legal: "If you're buying a captive-bred tiger salamander and keeping it as a pet within the continental US" to the cost guide.
+- vs-axolotl: "needing a terrestrial setup with soil, cork bark, and a shallow soaking dish rather than standing water" to the setup guide.
+
+Pattern worth naming: almost every in-body link leaves for an axolotl page or the four-species overview. Not one deep dive links to another tiger salamander keeping page.
+
+**6. Trust**
+
+Doubts: the distilled-water contradiction, because both sides sound confident. The handling split, because a hub that says ten minutes of bare-hand contact and an article that says gloves-only cannot both be house policy. The tank price gap. The health page having no numbers at all when the hub has plenty. And the cost page promising a 2025 federal rule in line two and never delivering it.
+
+The sentence that convinced me a keeper wrote this: "Shallow substrate does not make the animal more visible in any meaningful sense, it removes the behavior and leaves a salamander sitting on a floor with nowhere to go." Runner-up, the appetite-loss fun fact in the health guide. Also, the legal table's 52 jurisdictions add up exactly, which nobody fakes.
+
+**7. Set grade: B-**
+
+Strong at the edges, legality and enrichment especially, but the core husbandry numbers disagree across pages and the reader is left arbitrating.
+
+First two changes:
+
+1. One source of truth for temperature, humidity, substrate depth, water treatment, handling policy, and the cost tables, then propagate it. Fix the distilled-water contradiction first.
+2. Write the larval-to-adult transition page, and cross-link the deep dives to each other and back to the hub instead of sending every link to axolotl content.
+
+**Not covered anywhere**
+
+- Larval husbandry and the metamorphosis transition for this species, with its own numbers rather than an axolotl handoff.
+- Whether a captive tiger salamander needs a winter cooling or brumation period.
+- Enclosure cleaning cadence and how often deep substrate gets replaced.
+- How to source a captive-bred animal and spot wild-caught stock.
+- What to do in a terrestrial heat emergency; the shared aquarium cooling guide is written for water, not soil.
+- What a normal shed looks like, so a keeper can tell it from the "abnormal shedding" the health page calls a red flag.
+- What kind of vet to call. No page in the set names an exotic or amphibian vet as the one to find, though the cost guide prices an "exotic exam".
+- A prey-size rule. The old hub's "no larger than the space between the salamander's eyes" was retired rather than carried into a deep dive, since no opened source states it.
+
+## Parrotlet (2026-09-15, batch K)
+
+Raw reader output, one Opus agent, 8-page extract (hub, encyclopedia, cost,
+handling, health issues, tank setup, feeding, enrichment).
+
+**1. Page by page**
+
+- 00 Hub. Finished it; can act on cage size, the shopping checklist, and the toxic-food list, but the numbers are the softest on the site. B-
+- 01 Encyclopedia. Finished it, read in 90 seconds, nothing to act on except the 4.3-5.5 in size and the 1992 import law context. B
+- 02 Cost. Finished it; can budget a real number ($100-900 bird, $160-300 setup, $20-40/month) and it tells me sources disagree on lifespan. A-
+- 03 Handling. Finished it; 5-10 minute sessions, millet reward, warning nip, no punishment: all actionable. A
+- 04 Health. Finished it; I know my four emergency signs and the egg-binding prevention stack. A-
+- 05 Setup. Finished it; bar spacing, powder-coat/stainless, 65-80F, UV, paper liner, pair introduction protocol. Most actionable page in the set. A-
+- 06 Feeding. Finished it; free-choice pellets, seed once a day, no grit, the safe/toxic lists. A
+- 07 Enrichment. Finished it fastest; the priority order is a to-do list. A
+
+**2. Hub and encyclopedia**
+
+The encyclopedia earns its place: range, wild flock size, the 1930 breeding population and the Wild Bird Conservation Act appear nowhere else. The hub does not. Every hub section is a compressed version of a deep dive, and it compresses badly.
+
+Conflicts, hub versus deep dive:
+
+- Bar spacing. Hub: "Bar spacing of 3/8 to 1/2 inch keeps a parrotlet from squeezing through." Setup: "Lafeber... recommends going tighter still, around 1/4 inch. That's meaningfully narrower than the 3/8 to 5/8 inch range that's fine for a lovebird." The hub is recommending the range the setup guide calls a lovebird range.
+- Cage cost. Hub: "$100 | $280." Cost: "$120 - $220."
+- Vet. Hub annual table: "$60 | $100." Cost table: "$60 - $150."
+- Toys upfront. Hub: "$20 | $40." Cost: "$10 - $22."
+- Lifespan. Hub FAQ: "Commonly 15 to 20 years in captivity with good care." Cost: "PetMD's own figure is comparatively conservative, 8 to 12 years on average." The hub states as settled what another page calls contested.
+
+**3. The set as a whole**
+
+Yes, I could do this. I could buy the bird, size and furnish the cage, feed it, run a socialization and training routine, and recognize an emergency. Still missing: what a parrotlet sounds like at volume, how to tell a hen from a cock, and a cleaning routine with a frequency on it.
+
+Questions raised on one page and answered on another, unsignposted:
+
+- Cost: "egg-binding in a female" is priced but never explained. The mechanism is in the health guide.
+- Health: "a proper pelleted diet" as egg-binding prevention. The how is the feeding guide.
+- Health: "A genuinely roomy flight cage and a rotating supply of chew and forage toys." The enrichment guide is the actual answer.
+- Setup: "the socialization that comes with it is what keeps a parrotlet friendly rather than nippy." The routine is in the handling guide.
+- Handling: molting-season nipping. The feeding guide explains molt protein demand.
+
+**4. Overlap and conflict across the deep dives**
+
+Read four and five times: one bird versus two (cost, handling, setup, enrichment), pellets over seed, boredom to feather plucking, the big-personality-small-body line, and the wild 40-50 flock. The pair discussion is genuinely four pages long.
+
+Real disagreements:
+
+- Bowls. Feeding: "refresh the base pellet bowl in the morning... clamp-on dishes that stay put on the cage bars make this easier." Enrichment: "Do not use a food bowl as the default," priority 1 being "All food delivered through foraging." Nobody reconciles these.
+- Seed. Feeding: Lafeber "limiting seeds and nuts to about once a day." Hub: "Seed mix can be offered in small amounts, ideally through a foraging toy." Not contradictory, but the hub gives no frequency.
+- Sessions. Handling: "5 to 10 minutes, two or three times a day." Enrichment: "Ten minutes twice a day."
+- Pairing safety. Handling: "Lafeber is more cautious, recommending parrotlets be kept singly rather than paired, citing safety." Enrichment: "A bonded pair covers the social requirement... which is a trade and not a downside." The caution vanishes.
+- Out-of-cage time has a number on the hub only ("at least an hour"); the enrichment priority list omits it entirely.
+
+**5. The one link each page needs**
+
+- Hub: "Bar spacing of 3/8 to 1/2 inch keeps a parrotlet from squeezing through or getting a head or foot caught" to the cage setup guide.
+- Encyclopedia: "an under-socialized bird can turn sharp and nippy well out of proportion to its size" to the handling guide.
+- Cost: "egg-binding in a female or an injury from this bird's fearless, accident-prone streak" to the health issues guide.
+- Handling: "pairing can work, but only with a slow, supervised introduction, never two strangers dropped straight into one cage" to the cage setup guide, which has the actual steps.
+- Health: "A genuinely roomy flight cage and a rotating supply of chew and forage toys address the boredom side directly" to the enrichment guide.
+- Setup: "Indoor birds benefit from supplemental UV exposure to properly synthesize vitamin D3 for calcium absorption" to the health issues guide.
+- Feeding: "A cuttlebone or mineral block should be available at all times for calcium, this matters even more for females given the egg-laying risks" to the health issues guide.
+- Enrichment: "Under-slept small parrots get nippier, which is the behavior owners then attribute to temperament" to the handling guide.
+
+**6. Trust**
+
+Doubts: the hub disagreeing with three deep dives on numbers; the feeding guide's grit fun-fact box saying the same thing as the paragraph directly under it; and a link that misdescribes itself, "our Budgie cage setup guide covers the same pellet-over-seed shift," which is a cage page sold as a diet page. The health guide carries one bare "budgie" link and no route to anything else parrotlet.
+
+What convinced me a keeper wrote this: "A parrotlet usually gives a gentle warning nip before an actual bite, a small piece of communication most new owners miss entirely." Nobody compiling from sources notices that. The enrichment guide's flat "Nothing on parrotlets" is the runner-up.
+
+**7. Set grade: B+**
+
+Six strong deep dives dragged down by a hub that contradicts them and by pages that never point at each other.
+
+First two changes: make the hub derive its numbers from the deep dives (bar spacing, cage price, vet cost, lifespan range) instead of carrying its own; and settle the bowl-versus-foraging question in one place, with the hub's "at least an hour" out-of-cage figure added to the enrichment priority list.
+
+**Not covered anywhere**
+
+- Sexing a parrotlet, which the shared guide explicitly punts on ("Most parrots can't be sexed by looking at them"), yet the health and feeding pages both hinge on knowing you have a hen.
+- What a parrotlet actually sounds like and whether it works in an apartment. The hub says "smaller and quieter" and stops.
+- A cage cleaning schedule. "Changed regularly" is the only instruction in the set.
+- The first week home. Handling says start "the day the bird comes home"; nothing says whether that is right for a bird that just moved.
+- The cost and choice of the UV fixture the setup guide recommends. It is in no budget table, and the shared photoperiod guide covers schedule, not hardware.
+- A daily out-of-cage duration. The old hub's "at least an hour" was retired rather than carried into a deep dive, since no deep dive or opened source states it.
+
+## Koi (2026-09-15, batch K)
+
+Raw reader output, one Opus agent, 9-page extract (hub, encyclopedia, cost,
+handling, health issues, tank setup, feeding, enrichment, vs goldfish).
+
+**1. Page by page**
+
+- 00 Care guide hub. Finished it; I can act on the checklist and the pond spec, but it disagrees with three deep dives and leads with the Hanako myth as its headline fun fact. C
+- 01 Encyclopedia. Finished it; nothing to act on, but the Niigata-to-1914-exposition history is the only page I'd read twice for pleasure. B
+- 02 Cost guide. Finished it; I can build a budget from it, except the stated setup range doesn't match its own table. B+
+- 03 Handling. Finished it; wet hands, net into a floating bowl, don't lift. Short and usable. B
+- 04 Health issues. Finished it; the emergency vs manageable-at-home split is the most decision-ready thing in the set. A-
+- 05 Pond setup. Finished it; 250 gal per adult, 3 to 5 ft, oversized filtration. These are the numbers I'd hand a contractor. A-
+- 06 Feeding. Finished it; a temperature-banded schedule I can tape to the pond shed, and it flags its own weak sources. A
+- 07 Enrichment. Finished it; really a pond-design page, and the best-written one. "Stock for the adults" is the line that changed my plan. A-
+- 08 Koi vs goldfish. Finished it; useful decision frame, but its size and species figures fight the rest of the set. C
+
+**2. Hub and encyclopedia**
+
+The encyclopedia earns its place: the history is on no other page. The hub mostly restates the deep dives in shorter form, which is fine as a landing page, but it contradicts them:
+
+- Quarantine. Hub: "always quarantine any new koi for 2 to 4 weeks". Health guide: "strict quarantine, often 4 to 6 weeks or longer".
+- Lifespan. Hub FAQ: "25 to 35 years is typical". Cost guide and vs-goldfish: "25 to 50 years with good care".
+- Peas. Hub: "Occasional treats like shelled peas, watermelon, and orange slices are enjoyed in moderation." Feeding guide: "Peas are a genuine point of disagreement ... hard or dried peas are a real choking and blockage risk".
+- Volume. Hub: "at least 1,000 gallons for even a small group". Enrichment: "Adult koi need thousands of gallons rather than hundreds".
+- Hanako. Hub fun fact runs the 226-year claim up front; the cost guide says "Treat it as folklore rather than fact."
+
+The hub's setup table also totals $2,450 to $9,200 while the cost guide's prose says "commonly runs $5,100 to $15,875". Same table, incompatible headline.
+
+**3. The set as a whole**
+
+I could dig, plumb, stock, feed and winterize a pond from this. What's missing: how to pick a healthy fish at purchase, how to acclimate one on arrival, and any pond water-change or sludge-removal routine. The word "quarantine" appears on five pages and no koi page tells me how big the quarantine system is or how to run it.
+
+Questions raised on one page and answered on another, unsignposted:
+
+- Setup lists "A quarantine system: essential for any new arrival" with no spec; the health guide's KHV section is why, and the shared Hospital Tank guide is how.
+- Health guide ends on "beneficial bacteria at spring startup, paired with solid filtration"; the setup guide's filtration section and the shared cycling guide both answer that, neither is named.
+- Feeding says to test water immediately when multiple fish go off food; the health guide's water-quality-crisis protocol is the answer.
+- Enrichment says "Do not feed in cold water" with no pointer to the feeding guide that gives the actual temperature bands.
+- Handling lists skipping quarantine as a top mistake and never links the health guide.
+
+**4. Overlap and conflict across the deep dives**
+
+Read twice: predator netting, oversized filtration, aeration, quarantine, and the 250 gal per fish figure appear in three or four pages each. That repetition is mostly tolerable.
+
+Real conflicts:
+
+- Adult size. Vs-goldfish: "A typical adult koi reaches 14 to 18 inches". Handling: "koi grow substantially larger, commonly 24 to 36 inches or more as adults". Enrichment: "around two feet". Hub and encyclopedia: "12-36 inches". Four numbers, and the 250 gal per fish figure depends on which is true.
+- Species. Encyclopedia: "Scientific: Cyprinus rubrofuscus ... ornamental varieties of the Amur carp". Vs-goldfish: "Koi | Cyprinus carpio (common carp)" and "koi descend from the common carp". Same site, two ancestries.
+- KHV mortality. Health: "outbreaks can carry mortality rates of 80 to 100%". Feeding: "mortality is commonly cited at 70 to 100%".
+- Stop-feeding threshold. Feeding: "Below about 48 to 50°F". Cost: "dropping sharply once water falls below about 50 to 55°F".
+- Depth. Setup: "Minimum 3 feet, ideally 3 to 5 feet or more." Enrichment: "at least three to four feet in part of the pond", which is a weaker rule stated as the floor.
+
+**5. One link per page**
+
+- Hub and encyclopedia: none needed, they already link everything.
+- Cost: "Itemized, that breaks down into flexible EPDM liner (preferred for durability and fish safety) plus underlayment, excavation and grading, a pump sized to circulate the full volume every 1 to 2 hours" goes to Koi Pond Setup.
+- Handling: "Introducing new fish without a proper quarantine period" goes to Common Koi Health Issues.
+- Health: "A healthy dose of beneficial bacteria at spring startup, paired with solid filtration and UV clarification, prevents far more of this list than any treatment ever will" goes to Koi Pond Setup.
+- Setup: "A quarantine system: essential for any new arrival before it joins the main pond" goes to Fish Quarantine and Treatment: The Hospital Tank Guide.
+- Feeding: "If multiple fish stop eating at once, that's a signal to test water immediately rather than assume a benign cause" goes to Common Koi Health Issues.
+- Enrichment: "In cold water, feeding drops away entirely, and pushing food into fish that cannot digest it is a common winter mistake" goes to Koi Feeding.
+- Vs goldfish: "That size gap is the reason koi essentially require an outdoor pond setup, roughly 250 gallons per fish" goes to Koi Pond Setup.
+
+**6. Trust**
+
+Doubts: the species and adult-size conflicts, the hub's cost table not matching the cost guide's own range, and the hub repeating Hanako as a fun fact while the cost guide debunks it.
+
+What convinced me a keeper wrote this: "Do not break ice by hitting it, which sends a shockwave through the water." Nobody summarizing sources invents that. The feeding FAQ's "Koi have no true stomach, food passes straight into the intestine" is a close second.
+
+**7. Set grade: B**
+
+Genuinely usable, well-sourced where it matters, and undermined by numbers that don't agree across pages. First two fixes: pick one adult size and one scientific name and propagate them everywhere; then rewrite the hub so it matches the deep dives on quarantine length, lifespan, peas and cost, and drop Hanako from the headline fun fact.
+
+**Not covered anywhere**
+
+- How to choose a healthy koi at purchase, and where to buy from.
+- Acclimating a new fish on arrival: bag float, drip, how long before it goes into quarantine.
+- Pond water-change schedule, percentage, and sludge or bottom-drain maintenance. The shared filtration guide covers aquarium filter media, not pond muck.
+- Pond-specific summer heat management. The shared cooling guide is aquarium-only, with no answer for a 1,000 gallon outdoor pond.
+- Spawning: what to do when it happens, and whether to keep or remove eggs and fry.
+- KHV after diagnosis: whether testing is available, who a "notifiable" disease gets reported to, and what happens to the pond and survivors.
+- A single winter shutdown schedule with temperatures and dates. The pieces are spread across setup and enrichment, assembled nowhere.
+
+## Emperor Scorpion (2026-09-15, batch K)
+
+Raw reader output, one Opus agent, 9-page extract (hub, encyclopedia, cost,
+handling, health issues, tank setup, feeding, enrichment, legal).
+
+**1. Page by page**
+
+- 00 Hub. Finished it; it is the fastest complete picture in the set and I could shop off the checklist, but several numbers are quietly wrong against the deep dives. C+
+- 01 Encyclopedia. Finished it in a minute. Actionable only as background, but the CITES ranching history is real information I found nowhere else. B+
+- 02 Cost guide. Finished it. I can budget from it ($80 to $250 setup, under $20/month), and the $800 debunk is useful. One feeding figure in it is wrong. B
+- 03 Handling guide. Finished it. Clear rule: low, over something soft, forceps, never the tail. B+
+- 04 Health issues. Finished it. Symptom lists plus causes, and it tells me which things are emergencies. A-
+- 05 Tank setup. Finished it. Every number I need to buy and build is here. A
+- 06 Feeding. Finished it. Portion sizes, the abdomen-versus-carapace rule, the firefly warning. A-
+- 07 Enrichment. Finished it. Best-written page here, and honest that the evidence is borrowed. One sentence looks like a product blurb with the product deleted. B+
+- 08 Legal. Finished it and reread the Montana section. I know exactly what to check before buying. A
+
+**2. Hub and encyclopedia**
+
+The encyclopedia earns its place: origin, CITES, the export quota numbers, none of it repeated elsewhere. The hub does not. It is a compressed restatement of setup, feeding, health and handling, and where it differs from the deep dive it is the deep dive that looks researched.
+
+Disagreements with the deep dives:
+
+- Substrate. Hub: "need 4 to 6 inches of a moist substrate". Setup: "Provide a minimum of 5 to 6 inches of substrate".
+- Humidity. Hub: "high humidity (75 to 85%) are required". Setup: "Target 70 to 90%, with many keepers aiming around 75 to 80%".
+- Temperature. Hub: "Temperatures of 76 to 86 degrees F". Setup: "An ambient range of 75 to 85°F is the commonly cited target".
+- Adult feeding. Hub: "Adults eat every 7 to 14 days". Feeding: "Adults: once a week is standard, sometimes 2 to 3 insects offered weekly."
+- Juvenile feeding. Hub: "Juveniles need food more frequently, every 4 to 7 days." Feeding: "Juveniles and nymphs: every 2 to 4 days".
+- Fasting. Hub: "A scorpion that refuses food for 2 to 4 weeks is not ill". Feeding: "can safely fast for a month or two".
+- Prey size. Hub: "Prey size should not exceed the scorpion's body length (excluding tail)." Feeding: "nothing larger than the abdomen." Those are wildly different animals' worth of cricket.
+- Enclosure. Hub: "A 10 to 20 gallon terrarium ... is suitable for 1 to 2 emperor scorpions", and its own FAQ then wants "3 to 5 females in a 20-gallon or larger". Setup: 10 gallons for one adult, "step up to 20 to 30 gallons or more" for groups.
+
+**3. The set as a whole**
+
+Yes. I could legally check my state, buy captive bred, build the tank, feed it, and recognise dehydration, a bad molt, mites and cannibalism risk. That is more than most care sites manage.
+
+Questions raised on one page and answered on another without being told:
+
+- Health says dehydration comes from "Humidity that's too low" but never gives a number. The number is on the setup page.
+- Feeding warns "obesity is a documented, common problem"; the health page's closing line is the only other mention, and neither points at the other.
+- Setup says "Cohabitation is possible but not always successful"; the enrichment page is the actual manual for it.
+- Cost prices the animal without ever saying it is banned in three jurisdictions. The legal guide is right there in the sidebar.
+
+**4. Overlap and conflict across the deep dives**
+
+Read three or four times: the UV fluorescence explanation (hub, encyclopedia, setup, enrichment, legal), the "remove live prey before a molt" warning, the tarantula comparison, and the soft-exoskeleton Insects study quote, verbatim in both health and setup.
+
+Conflicts:
+
+- Cost: "An adult eating 3 to 6 appropriately sized prey items a week". Feeding: "Adults: once a week is standard, sometimes 2 to 3 insects offered weekly." Cost is budgeting for roughly double the food.
+- Feeding method. Hub: "Always offer prey with feeding tongs rather than by hand". Enrichment: "Release live prey in the evening rather than presenting it with tongs, and let the animal hunt." The same set tells me to use tongs and not to.
+- Fluorescence colour: "blue-green" (hub, encyclopedia, setup), "bright green" (enrichment), "a bright cyan" (legal).
+
+**5. One link per page**
+
+- Hub. "A scorpion that refuses food for 2 to 4 weeks is not ill" should link to the feeding guide, which says a month or two.
+- Encyclopedia. "Ranching, in which gravid females are collected and their young reared for export, has been the main legal supply route out of West Africa ever since." should link to the legal guide.
+- Cost. "The typical range for captive-bred specimens is $25 to $100." should link to the legal guide, before I spend anything.
+- Handling. "Housing multiple scorpions without enough space and hides, which can lead to aggression or cannibalism, particularly around molting time" should link to the enrichment guide.
+- Health. "Humidity that's too low, inadequate misting, or overly dry substrate are the usual causes." should link to the setup guide for the actual range.
+- Setup. "Cohabitation is possible but not always successful." should link to the enrichment guide.
+- Feeding. "Overfeeding is the risk here, obesity is a documented, common problem in captive scorpions" should link to the health issues guide.
+- Enrichment. "Dry conditions cause failed molts" should link to the setup guide's humidity section.
+- Legal. "wild-caught imports arrive with parasites and dehydration often enough that it is the first thing experienced keepers check for" should link to the health issues guide.
+
+**6. Trust**
+
+Doubts: the hub's feeding and humidity numbers do not match the pages beneath it, which makes me wonder whether anyone reconciled them. The cost guide's "3 to 6 prey items a week" is the worst of it. And this enrichment sentence is about nothing at all: "Other sizes and volumes are available and a communal enclosure needs several." That reads like an advert with the product cut out.
+
+The sentence that convinced me a keeper wrote this: "Every animal needs somewhere to be that is not somewhere another animal already is, and the standard failure is one good hide and three scorpions."
+
+**7. Set grade: B**
+
+Strong deep dives sitting under a hub that contradicts them on the numbers a first-time keeper will actually copy.
+
+First two changes: (1) make the hub inherit its numbers from the deep dives instead of restating them, starting with feeding frequency, prey size, humidity and substrate depth; (2) settle the tongs-versus-release-and-hunt question in one place and say the same thing everywhere.
+
+**Not covered anywhere**
+
+- How to sex one, despite repeated warnings about mixed-sex groups and advice to keep "proven female groups".
+- Quarantine: nothing on holding a new arrival separately before adding it to a group.
+- Routine maintenance: spot cleaning frequency, and when a full substrate change is due. Cost budgets one a year, setup says "refresh it periodically".
+- Molt frequency and how many molts to adulthood, so a keeper cannot tell a normal gap from a stalled one.
+- Mite treatment beyond a full substrate swap for an animal already infested.
+- What to do if one escapes the enclosure. A UV torch is mentioned for finding an escapee only inside a legal-page fun fact.
+- First aid after a sting or a deep pinch, past "treat any sting as you would a bee sting".
+
+(The shared class guides do cover pesticides, rehousing, and power outages, travel and shipping, so those are not counted as gaps.)
+
+## Rosy Boa (2026-09-15, batch K)
+
+Raw reader output, one Opus agent, 9-page extract (hub, encyclopedia, cost,
+handling, health issues, tank setup, feeding, enrichment, legal).
+
+**1. Page by page**
+
+- 00 Hub. Finished it; it is the fastest complete picture in the set, and I can act on the checklist and the setup table, but several of its numbers are contradicted downstream. C
+- 01 Encyclopedia. Finished it in a minute; nothing actionable beyond size, range, and lifespan, though the history paragraph earns its keep. B-
+- 02 Cost. Finished it; fully actionable, real dated prices with the arithmetic shown. A-
+- 03 Handling. Finished it; actionable on post-feeding wait and the balling response, but a third of it is boa constrictor comparison and it never says how often to handle. B
+- 04 Health. Finished it; the "when to see a vet" list and the inactivity caveat are directly usable. A-
+- 05 Tank setup. Finished it; I could build the enclosure from this page alone except substrate depth and lighting. B+
+- 06 Feeding. Finished it; schedule and prey size are clear, thawing is not covered. A-
+- 07 Enrichment. Finished it fastest of all; the priority list is immediately actionable and it is the only page that argues with the standard advice. A-
+- 08 Legal. Finished it; genuinely checkable, state by state. A
+
+**2. Hub and encyclopedia**
+
+The encyclopedia earns its place: range, habitat, wild diet, and the captive-line history appear nowhere else. The hub largely restates the deep dives in compressed form, which is fine as a landing page, except that it restates them wrong in four places.
+
+- Feeding interval. Hub: "do well on a mouse every 2 to 4 weeks." Feeding guide: "every 10 to 14 days as a commonly recommended baseline." Those are different schedules, not a range.
+- Juveniles. Hub: "Feed juveniles every 7 to 10 days." Feeding guide: "every 5 to 7 days."
+- Shed humidity. Hub: "around 40% ambient, rising to 60 to 65% during shed." Tank setup: "raise humidity to roughly 40 to 50 percent." The hub's shed figure also breaks the health guide's own ceiling, "generally well under 60 percent."
+- Annual costs. Every line of the hub's annual table disagrees with the cost guide: mice $50 to $100 vs "$2 a month"; electricity $35 to $60 vs "$1 to $2"; vet $50 to $90 vs "$100 to $200 a year."
+
+Also internally inconsistent on the hub itself: the fun fact says a boa constrictor is "5 to 13 foot," the comparison FAQ says "8 to 10+ feet."
+
+**3. The set as a whole**
+
+Yes, mostly. I could buy one, build the enclosure, set temperatures and humidity, feed it, and know what a vet visit is for. Still missing: how to thaw and warm a frozen mouse; whether the enclosure needs any lighting or day/night cycle at all (never mentioned on any page); how often to handle; substrate depth in inches; a spot-cleaning cadence; what to look for in a healthy animal at purchase; and an actual brumation protocol, which four pages call optional and none describe.
+
+Questions raised on one page and answered on another, unsignposted: the health guide blames rostral abrasion on "a coarse screen lid" and the lid fix is in tank setup; the hub says "a brief soak resolves most cases" of retained shed while the real protocol is in health and the numbers in tank setup; the cost guide's feeding interval is argued for in the feeding guide; the health guide says "quarantine any new snake" with the quarantine guide sitting in the sidebar.
+
+**4. Overlap and conflict across the deep dives**
+
+Read twice or more: the boa constrictor size contrast (five pages), "overfeeding is the bigger risk" (cost, health, feeding, hub), the humidity reversal (health, tank setup, enrichment, hub), escape artists and the smooth lid (cost, health, tank setup).
+
+Conflicts:
+
+- Enclosure size. Tank setup: "A 20 gallon long tank covers a standard adult setup comfortably." Enrichment: "The standard recommendation for an adult rosy boa is a 20 gallon long, and that number gets repeated because the animal is undemanding rather than because it was ever tested." Enrichment is arguing against its own site's setup page without saying so.
+- Water. Hub: "Fresh water should always be available." Feeding: "some keepers remove the water dish for a day afterward."
+- Adult size. Encyclopedia: "rarely over 4 feet (122 cm)." Legal: "tops out around 2 to 3 feet."
+- Lifespan. Everywhere: "20 to 30 years." Cost FAQ: "Animal Diversity Web puts the captive average at 18 to 22 years."
+
+**5. One link per page**
+
+- Hub: "typically once every 2 to 4 weeks" to the feeding guide.
+- Encyclopedia: none needed; it is a facts page and the sidebar carries the rest.
+- Cost: "An adult rosy boa eats every 10 to 14 days, so two or three mice a month" to the feeding guide.
+- Handling: "skip handling during the shed cycle, when cloudy eyes mean temporarily impaired vision" to How Snakes Actually Shed.
+- Health: "caused by a snake repeatedly rubbing against rough enclosure surfaces, most often a coarse screen lid" to the tank setup guide.
+- Tank setup: "chronically high humidity is the leading cause of respiratory infection and scale rot" to the health issues guide.
+- Feeding: "obesity is a real, commonly reported problem in this species" to the health issues guide.
+- Enrichment: "The standard recommendation for an adult rosy boa is a 20 gallon long" to the tank setup guide, since that is where the site makes that recommendation.
+- Legal: "kept mostly because it's calm and easy to handle" to the handling guide.
+
+**6. Trust**
+
+Doubts: the hub's 60 to 65% shed humidity directly undercuts the health guide's central argument, and a beginner who reads only the hub gets the dangerous version. The feeding interval split is the same problem. The enrichment page's "Other sizes and volumes are available" reads like a product line with the product removed. And the cost guide buries a contradicting lifespan figure in an FAQ instead of reconciling it.
+
+Most convincing sentence in the set, from the enrichment page: "Anchor stacked rock properly. A snake that burrows underneath a stack is under it when it shifts."
+
+**7. Set grade: B+**
+
+Strong, specific, unusually well sourced deep dives, undermined by a hub whose numbers fight them.
+
+First two changes: reconcile the hub to the deep dives, or generate it from them, starting with feeding interval, shed humidity, and the annual cost table. Then add the four missing basics (thawing, lighting or photoperiod, handling frequency, substrate depth in inches) and the nine in-body links above.
+
+**Not covered anywhere**
+
+- How to thaw and warm a frozen mouse safely, and what temperature to offer it at.
+- Whether a rosy boa needs any lighting, UVB, or a day/night photoperiod.
+- How often to handle a settled adult.
+- Substrate depth in inches, which the enrichment page makes a top-two priority without a number.
+- Spot-cleaning and water-dish cleaning cadence between full substrate changes.
+- An actual brumation protocol: temperature, duration, and whether to do it at all.
+- What to check on the animal at purchase, before the shared quarantine guide picks up.

@@ -3647,6 +3647,41 @@ in one review section.
 
 ## What the tests changed so far
 
+- 2026-09-15, batch K (branch
+  claude/tiger-salamander-parrotlet-koi-emperor-scorpion-rosy-boa, not merged):
+  five router hubs, 119 first-week rows, one reader pass per species and one
+  Fable check covering all five. Pass grade B. Tiger salamander: the tank setup
+  guide told readers distilled water was a fine substitute while the shared
+  amphibian water guide calls it potentially fatal on the AZA's authority, and
+  the deep dive had no Sources block at all; fixed, and the species gained a
+  sourced Diet Basics section (the fifth species with no feeding guide, after
+  Russian tortoise, tokay gecko, California kingsnake and savannah monitor). Its
+  wild lifespan was misattributing ADW's captive 16 to the wild; MDC (.gov)
+  gives 10 or more with no upper bound, and the encyclopedia moved with it.
+  Parrotlet: the hub recommended 3/8 to 1/2 inch bar spacing, which is the range
+  its own setup guide calls a lovebird range, while both Lafeber and PetMD's
+  board-certified avian vet give 1/4 inch; the cost guide contradicted itself on
+  the vet fee and the annual total re-summed. Koi: the vs guide had the wrong
+  scientific name and ancestry (ITIS lists Cyprinus rubrofuscus valid) and an
+  adult size of 14 to 18 inches that undercut its own argument, and the KHV
+  mortality figure went to the peer-reviewed 80 percent. Emperor scorpion: the
+  cost guide budgeted double the feeding guide's food, and four deep dives
+  carried direct quotes behind source names, rewritten in our own words rather
+  than de-attributed. Rosy boa: the hub put shed humidity at 60 to 65 percent,
+  above the ceiling the health guide's whole argument rests on, which is the
+  version a beginner reading only the hub would have acted on.
+- 2026-09-15, batch K process: two findings worth carrying. A reconciled
+  species' figures can go stale on another species' unreconciled hub, and
+  nothing catches it until the second species comes up (the rosy boa hub still
+  had the boa constrictor at 6x3x3 ft and 8 to 10+ feet, both retired in batch
+  C). And de-narration has a second failure mode beyond the source-name leak the
+  last four batches found: stripping a name off a hedged range can quietly
+  upgrade it, which happened twice here when "some sources extend this to X"
+  became "X is safe". The check caught both instances. The cheap defect the
+  batch still shipped is the one READMEFIRST has named since batch D, retired
+  figures surviving in frontmatter description, excerpt and seoDescription
+  fields that the numbers checker never reads.
+
 - The article page: excerpt block removed, Deep Dive prerendered and given a
   care-guide row, sidebar order on phones, contents highlight.
 - RULES: no sibling links or care-guide sentence in prose, one sibling link
@@ -11213,3 +11248,1125 @@ Source narration in pre-existing text the batch did not touch and no hub
 row copies: two amano feeding FAQs ("Seriously Fish is direct about
 this", "Shrimp Science notes plainly") and one garter feeding FAQ
 ("Sources land in a similar range").
+
+## Tiger Salamander (2026-09-15, batch K, single pass, before the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health issues,
+tank setup, enrichment, legal, vs axolotl). One Opus agent, about 97k tokens.
+The review below reads the old legacy hub (housing, diet, enrichment and health
+prose, a cost table, a checklist); the router hub was built from its findings
+the same day. Raw output in docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B- | The only page with a feeding schedule, and the outlier in most of the conflicts. |
+| Encyclopedia | A- | The bait trade, the California hybridization emergency, and neoteny, none of it repeated anywhere else. |
+| Cost | C+ | Price, upfront total and vet ranges, but its numbers fight the hub and it opens on a federal rule it never returns to. |
+| Handling | C | Don't handle, and wet nitrile gloves when you must. |
+| Health issues | B- | The four failure modes and what causes each, with not one number anywhere. |
+| Tank setup | B+ | Dimensions, a real substrate avoid-list, lighting, humidity. |
+| Enrichment | A- | The priority order list is the best thing in the set. |
+| Legal | A | Whether you can legally own one where you live, settled. |
+| vs axolotl | B | Enough to confirm which of the two you actually want. |
+
+Set grade: B-. "Strong at the edges, legality and enrichment especially, but the
+core husbandry numbers disagree across pages and the reader is left
+arbitrating."
+
+Hub versus the set, both sides quoted (all against the old legacy hub, resolved
+by the router rebuild unless noted):
+
+- Water, the one that mattered. The old hub: "never distilled or
+  reverse-osmosis water, which carries none of the electrolytes an amphibian
+  needs." Tank setup: "Treat all water with a conditioner before use, or use
+  spring or distilled water instead." The hub was right and the deep dive was
+  wrong, so this one did not resolve by construction; see Numbers checker and
+  Fixes below.
+- Substrate depth. Old hub: "deep substrate - 4 to 6 inches minimum." Tank
+  setup: "at least 3 to 4 inches." Tank setup's figure is the one PetMD's
+  vet-reviewed care sheet states ("at least 3-4 inches"), and the hub's row now
+  copies it.
+- Temperature. Old hub: "60 to 72 degrees F is the ideal range. They struggle
+  noticeably above 75." Tank setup: "60 to 75°F, and genuinely never above about
+  78°F." Tank setup matches PetMD exactly (60 F to 75 F, maximum 78 F).
+- Humidity. Old hub: "the humidity maintained at 70 to 80%." Tank setup: "70 to
+  75%." PetMD gives 70%, which tank setup's range contains and the hub's does
+  not sit on.
+- Handling policy. Old hub: "Handle with clean, slightly damp, chemical-free
+  hands only... Keep sessions short (under 10 minutes)." Handling guide: "Wear
+  wet, powder-free nitrile gloves and keep any handling brief." PetMD says
+  "powder-free latex gloves moistened with dechlorinated water," so the deep
+  dive is the sourced side and the hub's bare-hands instruction is gone.
+- Pinky mice. Old hub: "Large adults can be offered occasional pinky mice as a
+  nutritional supplement." Health guide lists them under "limit fatty feeders."
+  Both opened sources hedge downward (PetMD "an occasional treat", Amphibian
+  Care "only be fed rarely, if ever"), and the hub's Mice row now copies the
+  tank setup guide's new Diet Basics wording, which does too.
+- Tank and substrate price. Old hub setup table: "20-gallon long aquarium |
+  $80 | $160" and substrate "$20 | $40." Cost guide table: "$35 - $60" and
+  "$10 - $16." The hub keeps no cost table at all now; its Budget row quotes
+  the cost guide's own totals.
+- Food budget. Old hub annual: "$70 | $130." Cost guide: "Roughly $15 to $30 a
+  Month," which is $180 to $360. Retired with the hub's annual table.
+- Lifespan. Old hub: "10 to 20 years in captivity." Cost guide: "12 to 15 years
+  is typical." See Numbers checker.
+
+Numbers checker. `node scripts/check-species-numbers.mjs tiger-salamander
+--strict` before the pass reported 10 conflicting topic groups. Every one was
+decided:
+
+- humidity %: hub 70 to 80 against tank setup 70 to 75. Tank setup wins, PetMD
+  gives 70%. Hub prose retired.
+- temperature °F: hub 60 to 72 with stress above 75 and death above 80, against
+  tank setup 60 to 75 and never above 78. Tank setup wins, PetMD gives 60 to 75
+  with a 78 maximum. Hub prose retired.
+- substrate depth in: hub 4 to 6 against tank setup 3 to 4. Tank setup wins,
+  PetMD gives "at least 3-4 inches." Hub prose retired.
+- lifespan years: hub 10 to 20 captive, cost guide 12 to 15 typical plus a 25
+  year captive record plus "10 to 16 years in the wild", encyclopedia 12 to 16
+  as its Wild Lifespan. Researched for real. Missouri Department of
+  Conservation (.gov) states "The lifespan can be 10 years or more; in
+  captivity, the lifespan has exceeded 20 years." Animal Diversity Web
+  (University of Michigan Museum of Zoology) states "Aquatic adult tiger
+  salamanders live up to 25 years in captivity. Normal adults have reached ages
+  of 16 years." No source found gives 16 as a wild figure, so the cost guide's
+  "10 to 16 years in the wild" was misattributing ADW's captive 16 to the wild.
+  Fixed to the documented 10 or more with no firm upper bound, and the
+  encyclopedia's Wild Lifespan moved off its unsourced "12-16 years" to match.
+  The 12 to 15 typical and 25 record figures both held and are unchanged.
+- adult size in: encyclopedia 8-13 inches, old hub "up to 13 inches" and "most
+  pet trade individuals reach 8 to 11 inches". ADW gives "Adult Length 17-33 cm"
+  (6.7 to 13 inches) and MDC gives "7-8¼ inches, but occasionally to 13
+  inches." No deep dive states a size, so under RULES the hub's Adult size row
+  takes the encyclopedia's 8 to 13 inches unsourced, and the unsourced 8 to 11
+  pet-trade figure was retired with the hub's prose rather than carried into a
+  deep dive.
+- budget $, vet $, water $: every remaining group was the old hub's setup and
+  annual tables against the cost guide's. The hub carries no table now.
+
+After the rebuild the checker reports nine groups, and no line marked `hub`
+disagrees with the deep dive its row names: every one is either the identical
+sentence in both places, or the checker grouping tank dimensions and cost-table
+line items under one topic label, which RULES calls advisory.
+
+Deep dives against each other:
+
+- The distilled-water contradiction is the real one, and it is a deep dive
+  against a shared class guide rather than against a sibling. Tank setup:
+  "Treat all water with a conditioner before use, or use spring or distilled
+  water instead." The shared amphibian quarantine and water guide, citing the
+  AZA Amphibian Husbandry Resource Guide: "distilled water and reverse-osmosis
+  (RO) water are usually not electrolyte-balanced, and using either without
+  rebalancing through added buffers, electrolytes, and pH adjustment can be
+  fatal to amphibians." PetMD's care sheet independently says to use
+  dechlorinated water and avoid distilled. The tank setup guide had no Sources
+  block at all, so it loses outright. Fixed: bottled spring water stays as the
+  alternative, distilled and RO are named as the two to leave on the shelf, and
+  the sentence links the shared guide for the documented version. This is the
+  sulcata pattern from batch H, a deep dive contradicting a shared class guide
+  with nothing checking it automatically.
+- Cohabitation. Tank setup: "Cohabitation generally isn't recommended,
+  competition and even cannibalism are real risks, though some very large
+  enclosures can occasionally support a small group, worth researching
+  carefully before attempting." Enrichment, in its What Not to Do list: "Do not
+  house two together." Left as written on both pages, and the hub's
+  Cohabitation row copies tank setup's whole sentence with its hedge. Reason:
+  the two pages agree on the default, and the opened sources split on the
+  exception rather than on the default. PetMD permits it ("Several tiger
+  salamanders can be housed together in the same habitat if the enclosure is
+  large enough and the animals are not territorial," with monitoring and
+  separation if they fight), Amphibian Care does not ("Tiger salamanders are
+  best kept individually"). Neither page's hedge was changed, which is the rule.
+- Feeding placement. Enrichment: "Release worms and insects into the leaf litter
+  so finding them is the activity," and four lines later "Keep prey off loose
+  substrate where you can." Read in full those are one instruction, not two:
+  leaf litter is the surface layer, loose substrate is the burrowing medium
+  underneath. Left alone, no number or recommendation to settle.
+- Read twice with no disagreement: the axolotl larval resemblance across four
+  pages, obesity and the absent self-regulation across three, cool
+  temperatures and no heat lamp across four.
+
+Gaps, checked against the Health and More list before calling them real. The
+sidebar carries Salmonella and reptile hygiene, the axolotl tubbing and salt
+bath guide, cooling an aquarium without a chiller, amphibian quarantine and
+water hardness, the four-pets overview, vs axolotl, and the federal laws guide.
+Against that list these are real and are filed in docs/READER_LOG.md: larval
+husbandry and the metamorphosis changeover with its own numbers rather than an
+axolotl handoff; whether a captive animal needs a winter cooling period, when
+the encyclopedia says they overwinter in frozen soil; enclosure cleaning and
+substrate replacement cadence; how to spot wild-caught stock when the health
+guide says it is common in this trade; a terrestrial heat emergency, since the
+shared cooling guide is written for water; what a normal shed looks like against
+the "abnormal shedding" the health guide calls a red flag; and what kind of vet
+to call, which no page in the set names.
+
+Stranded questions, now linked: handling asked why the animal is never visible
+and never pointed at the enrichment guide, which is the page whose whole
+argument is what depth buys; the health guide said prevention is "entirely about
+substrate choice" and never pointed at the setup guide that carries the avoid
+list; the cost guide named the protected California tiger salamander and never
+pointed at the legal guide that has the state table. All three fixed.
+
+One link per page, from the reader:
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "Quarantine any new salamander for 30 to 60 days" | amphibian quarantine guide | Yes, as a hub Quarantine row |
+| Encyclopedia | "Larvae are sold... under the name waterdogs" | legal guide | No, the encyclopedia is structured data with no link slot |
+| Cost | "the California tiger salamander is a protected, endangered species" | legal guide | Yes |
+| Handling | "it's exactly why deep, burrowable substrate matters so much" | enrichment guide | Yes, body only, the same sentence in the FAQ cannot carry a link (faq-link) |
+| Health | "Prevention is entirely about substrate choice and feeding away from any substrate" | setup guide | Yes |
+| Setup | "Provide at least 3 to 4 inches of moisture-retentive, burrow-supporting material" | enrichment guide | Yes |
+| Enrichment | "Obesity is the standard captive problem in long-kept tiger salamanders." | health guide | Yes |
+| Legal | "If you're buying a captive-bred tiger salamander and keeping it as a pet" | cost guide | No, it sits in a closing paragraph that already carries three links, and adding a fourth makes it the link library RULES forbids |
+| vs axolotl | "needing a terrestrial setup with soil, cork bark, and a shallow soaking dish" | setup guide | No, a vs piece is not a deep dive and was left out of this pass |
+
+Six of nine added, each one sibling link per article with a reason, none before
+the first H2, none in a ComparisonTable cell. The reader's own note that "not
+one deep dive links to another tiger salamander keeping page" is now false on
+five of them.
+
+Trust findings the reader raised, and what happened to each: the distilled-water
+contradiction, fixed. The handling split, resolved when the hub's bare-hands
+instruction went. The tank price gap, gone with the hub's cost table. The health
+guide having no numbers, left as written since the page is a symptom-and-cause
+page and nothing in it contradicts a figure elsewhere; its lack of a Sources
+block is noted below. The cost guide opening on "A 2025 federal rule also
+touches this species, though not in the way headlines suggested" and never
+returning to it, cut.
+
+Encyclopedia. One field changed, the one that conflicted with a deep dive's
+figure, researched first. `wildLifespan` was "12-16 years" with nothing sourcing
+it, against the cost guide's "10 to 16 years in the wild". MDC (.gov) gives "10
+years or more" in the wild with no upper bound, and no source found gives a real
+upper bound, so the field now reads "10+ years in the wild (documented as 10
+years or more, with no established upper bound; the often-quoted teens figure is
+a captive range)", the same shape the crested gecko entry already uses for its
+own undocumented wild lifespan. Nothing else in the entry was touched, history
+section included.
+
+Unsourced, needs a fact-check: four of the seven tiger salamander guides carry
+no `<Sources>` block at all (handling, health issues, and before this pass cost
+and tank setup). Cost and tank setup gained one because the pass changed facts
+on them. Handling and health issues were not touched on any figure, so they were
+left unsourced rather than sourced retroactively without a read of every claim
+on them. That is a corpus-shaped question rather than a tiger salamander one and
+is worth a session of its own.
+
+This species has no feeding guide, so the standing move applied: a sourced Diet
+Basics section added to the tank setup guide, the fifth species this has come up
+on after Russian tortoise, tokay gecko, California kingsnake and savannah
+monitor. It carries the schedule (a growing juvenile every one to two days, an
+adult two to three times a week, at night), the supplement cadence (every
+feeding while growing, every second to fourth feeding once adult), and pinkie
+mice as a rare treat at most, never a staple and never live. Sources: PetMD's
+care sheet reviewed by Maria Zayas, DVM, and Amphibian Care's tiger salamander
+sheet. The old hub's prey-size rule, "no larger than the space between the
+salamander's eyes", was retired rather than carried forward, since neither
+opened source states it; filed as a gap.
+
+Fixed the same day: the tank setup guide's distilled-water instruction; a
+sourced Diet Basics section and a Sources block on the tank setup guide; the
+cost guide's wild-lifespan clause, its FunFact and FAQ copies of the same
+figures, its undelivered federal-rule opener, its "one of the more affordable
+pets on this entire site" self-reference, its takeaway's third lifespan figure
+("15 to 25" reading off neither of the page's own numbers), and a Sources block;
+the encyclopedia's Wild Lifespan field; the four link-only "part of our four
+species comparison" closing sentences on cost, tank setup, handling and health
+issues; the source narration ("a recognized longevity database") in three places
+on the cost guide and two on the four-species overview, figures unchanged; the
+affiliate template fragment in the enrichment guide ("Other sizes and volumes
+are available"); and six in-body links.
+
+Left open: the six content gaps above, filed in docs/READER_LOG.md. The larval
+husbandry gap is the one the reader named first and it is real: three pages hand
+a reader to an axolotl page for it.
+
+## Parrotlet (2026-09-15, batch K, single pass, before the router hub)
+
+Extractor set of eight pages (hub, encyclopedia, cost, handling, health issues,
+tank setup, feeding, enrichment). One Opus agent, about 96k tokens. The review
+below reads the old legacy hub (housing, diet, enrichment and health prose, two
+cost tables, a checklist); the router hub was built from its findings the same
+day. Raw output in docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B- | Cage size, a shopping checklist and the toxic-food list, with the softest numbers on the site. |
+| Encyclopedia | B | Ninety seconds, and only the adult size and the 1992 import law are new. |
+| Cost | A- | A real budget, and it admits the lifespan figures disagree. |
+| Handling | A | Five to ten minute sessions, millet, the warning nip, no punishment. |
+| Health issues | A- | Four emergency signs and the egg-binding prevention stack. |
+| Tank setup | A- | The most actionable page in the set. |
+| Feeding | A | Free-choice pellets, seed once a day, no grit, the safe and toxic lists. |
+| Enrichment | A | The priority order reads as a to-do list. |
+
+Set grade: B+. "Six strong deep dives dragged down by a hub that contradicts
+them and by pages that never point at each other."
+
+Hub versus the set, both sides quoted (resolved by the router rebuild unless
+noted):
+
+- Bar spacing, the one that mattered. Old hub: "Bar spacing of 3/8 to 1/2 inch
+  keeps a parrotlet from squeezing through or getting a head or foot caught."
+  Tank setup: "That's meaningfully narrower than the 3/8 to 5/8 inch range
+  that's fine for a lovebird." The hub was recommending, for a parrotlet, the
+  exact range its own setup guide identifies as a lovebird range. Neither figure
+  survived; see Numbers checker.
+- Cage cost. Old hub: "$100 | $280." Cost guide table: "$120 - $220." Retired
+  with the hub's cost tables.
+- Vet. Old hub annual table: "$60 | $100." Cost guide table: "$60 - $150." Cost
+  guide body: "about $60 to $90." Three figures for one idea, and the cost guide
+  contradicted itself; see Numbers checker.
+- Toys upfront. Old hub: "$20 | $40." Cost guide: "$10 - $22." Retired.
+- Lifespan. Old hub FAQ: "Commonly 15 to 20 years in captivity with good care."
+  Cost guide: "PetMD's own figure is comparatively conservative, 8 to 12 years
+  on average." The hub stated as settled what another page called contested; see
+  Numbers checker.
+
+Numbers checker. `node scripts/check-species-numbers.mjs parrotlet --strict`
+before the pass reported nine conflicting topic groups. Decisions:
+
+- Bar spacing in. Old hub 3/8 to 1/2, tank setup "no wider than 1/2 inch, with
+  some general bird-safety sources putting the outer limit at 5/8 inch" and, in
+  the next sentence, Lafeber's 1/4 inch. Both opened avian sources give the same
+  number and it is the tightest one: Lafeber's parrotlet page says "A spacious
+  wide cage with 1/4 inch bar spacing is ideal," and PetMD's parrotlet article,
+  written by Dr. Laurie Hess, DVM, Diplomate ABVP (Avian Practice), says "bar
+  spacing narrow enough (1/4") to prevent escapes." The 1/2 and 5/8 figures were
+  general small-bird guidance, and under RULES a species-specific source at the
+  higher tier wins. The page now leads with 1/4 inch and names 1/2 inch as the
+  widest worth considering, in the body and in its own FAQ. The lovebird
+  comparison, which is a real comparison rather than a source, stays.
+- Lifespan years. Old hub 15 to 20 captive, encyclopedia "often 15-20 years in
+  captivity", cost guide "PetMD's own figure is comparatively conservative, 8 to
+  12 years on average. Other sources, Lafeber among them, put typical captive
+  lifespan at 15 to 20 years." PetMD's own words: "they live, on average, 8-12
+  years but are reported to live into their 20s in captivity." Lafeber gives "Up
+  to 20 years," which is an upper bound and not a typical figure, so the two are
+  not in conflict once the narration is removed. The section now leads with 8 to
+  12 as the average, keeps the reports into the 20s and 30s, keeps Lafeber's
+  20-year upper end unattributed, and keeps the wild estimate of around 10 years.
+  The encyclopedia's captive parenthetical moved to match.
+- Vet $. Cost guide table "$60 - $150" against its own body "about $60 to $90".
+  A same-page contradiction. The Vet Desk, the page's own first source, states
+  "$60-$90 per year" for a routine vet checkup, so the table row moved to
+  $60 - $90. That changed the annual sum, which was computed off the $150: the
+  four annual rows now total $250 to $400, so the section heading and the
+  sentence under the table both moved from "Roughly $20 to $40 a Month" to
+  "Roughly $21 to $33 a Month" and "$250 to $400 a year". The arithmetic checks:
+  70+80+40+60 = 250 and 110+130+70+90 = 400.
+- Every other group was the old hub's two cost tables against the cost guide's.
+  The hub carries no table now.
+
+After the rebuild the checker reports eight groups, and every value on a line
+marked `hub` appears, unchanged, in the deep dive its row names. What is left is
+the checker filing cage dimensions under "other | in" and bird prices under
+"greens | $", which RULES calls advisory.
+
+Deep dives against each other:
+
+- Bowls versus foraging. Feeding: "refresh the base pellet bowl in the morning
+  when they're hungriest and top it up if it empties before evening." Enrichment,
+  in its What Not to Do list: "Do not use a food bowl as the default," with
+  priority 1 being all food delivered through foraging. Enrichment is the page
+  whose subject is delivery, and its cited evidence (Meehan, Millam and Mench on
+  foraging opportunity preventing feather picking) is about exactly that, so it
+  keeps the recommendation. What was missing was the reconciliation, and it is
+  now on the enrichment page: the pellet base is the same either way, and a bowl
+  of it stays available as the fallback, since a small bird that fails to solve a
+  toy still has to eat that day. Neither page's figure changed.
+- Session length. Handling: "5 to 10 minutes, two or three times a day."
+  Enrichment: "Ten minutes twice a day." Ten minutes twice a day sits inside 5 to
+  10 minutes two or three times a day, so this is one instruction stated loosely,
+  not two. Left alone.
+- Pairing. Handling narrated a disagreement between two sources; enrichment
+  treats a bonded pair as a trade rather than a downside. De-narrated on the
+  handling page to state the trade directly: a pair suits an owner with less
+  time, singly is the safer default, and pairing needs a slow supervised
+  introduction. The caution is now on both pages rather than one.
+- Read four and five times across the set: one bird versus two, pellets over
+  seed, boredom leading to feather plucking, the big-personality-small-body line,
+  and the wild 40 to 50 flock.
+
+Source narration, the defect the last four batches kept finding, was on three
+deep dives here before the router step ever ran, which is the point step 4 makes:
+settle the figure in the article, then copy. Fixed on all three.
+
+- Tank setup: "Lafeber, an avian-specialist source writing specifically about
+  this species, recommends going tighter still, around 1/4 inch" and "some
+  general bird-safety sources putting the outer limit at 5/8 inch."
+- Feeding: "Lafeber, an avian-specialist source, recommends limiting seeds and
+  nuts to about once a day", in the body and in its FAQ.
+- Handling: "Lafeber, an avian-specialist source, describes a parrotlet's bite
+  as much stronger than a budgie's... PetMD backs this up from the other
+  direction", and a whole paragraph opening "Sources don't fully agree on
+  pairing. PetMD frames... Lafeber is more cautious", both repeated in FAQs.
+- Cost: the section heading "Lifespan: A Wider Range Than Most Sources Agree On"
+  and its opening line "Lifespan estimates vary more for this species than for
+  most birds we cover", which is both source narration and the site talking about
+  itself. Heading now reads "Lifespan: One to Two Decades".
+
+Gaps, checked against the Health and More list before calling them real. The
+parrotlet sidebar is unusually well stocked: household hazards, avian gastric
+yeast, quarantine, droppings, photoperiod and sleep, pellet conversion, wing
+clipping, the emergency plan, sexing and weight, chronic egg laying, feather
+loss, choosing a pet bird, and polyomavirus. Against that list, sexing is
+covered (the shared guide's answer is that DNA testing is the only reliable one
+for most parrots, which is an answer rather than a punt, and it is now a hub
+row). These are real and filed in docs/READER_LOG.md: what a parrotlet sounds
+like and whether it suits an apartment; a cage cleaning schedule with a
+frequency on it; what the first week home should look like for a bird that has
+just moved; the cost and choice of the UV fixture the setup guide recommends;
+and a daily out-of-cage duration.
+
+The old hub's "at least an hour" of daily out-of-cage time was the one figure
+worth trying to keep, and it was retired rather than carried forward: no deep
+dive states it and neither opened source gives a duration. The hub's
+Out-of-cage row now copies the tank setup guide's sentence, which says the time
+matters without putting a number on it, and the hour is filed as a gap. This is
+the batch F move on the angelfish water change and the sugar glider wheel.
+
+Stranded questions, now linked: the cost guide priced egg binding and never
+explained it; the feeding guide raised calcium for a hen and never said what the
+deficiency leads to; the health guide prescribed a roomy cage and rotating toys
+and never pointed at the page that ranks them; the tank setup guide raised UV
+and calcium and stopped; the handling guide described a supervised pair
+introduction whose actual steps are in the setup guide. All five fixed.
+
+One link per page, from the reader:
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "Bar spacing of 3/8 to 1/2 inch keeps a parrotlet from squeezing through" | setup guide | Yes, as a hub Bar spacing row sourced to it |
+| Encyclopedia | "an under-socialized bird can turn sharp and nippy" | handling guide | No, the encyclopedia is structured data with no link slot |
+| Cost | "egg-binding in a female or an injury from this bird's fearless, accident-prone streak" | health issues guide | Yes |
+| Handling | "pairing can work, but only with a slow, supervised introduction" | setup guide | Yes |
+| Health | "A genuinely roomy flight cage and a rotating supply of chew and forage toys address the boredom side directly" | enrichment guide | Yes |
+| Setup | "Indoor birds benefit from supplemental UV exposure to properly synthesize vitamin D3 for calcium absorption" | health issues guide | Yes |
+| Feeding | "A cuttlebone or mineral block should be available at all times for calcium" | health issues guide | Yes |
+| Enrichment | "Under-slept small parrots get nippier" | handling guide | No, the enrichment guide already carries its one sibling link, to feeding, where the bowl-versus-foraging reconciliation now sits |
+
+Seven of eight added or answered, one sibling link per article, each with a
+reason, none before the first H2, none in a ComparisonTable cell.
+
+Also fixed on the reader's trust list: the tank setup guide's closing "our
+Budgie cage setup guide covers a similarly sized bird with a more forgiving
+temperament worth comparing", which was both the site talking about itself and a
+sentence existing to carry a link, and which the reader separately caught
+misdescribing itself elsewhere in the set as covering a diet shift. It now says
+what the budgie actually settles, that a bird of roughly the same body length
+takes wider bar spacing, which is the point the section is making. The
+enrichment guide's affiliate template fragment ("and other sizes are available")
+is gone, one of the 23 in docs/TODO.md section 8.
+
+Dates. Every parrotlet guide is future-dated: the cost, feeding, handling,
+health issues and tank setup guides all carry `date: "2026-09-20"` and the
+enrichment guide `2026-10-31`, each with lastUpdated and lastReviewed equal to
+its own publish date. None was bumped. An article that has not published yet
+cannot have been updated after publication, and setting lastUpdated to
+2026-09-15 would put it before the date. Worth a decision from Mike if a future
+batch hits the same thing.
+
+Encyclopedia. One field changed, the one conflicting with a deep dive's figure.
+`wildLifespan` read "Not well documented in the wild; one estimate averages
+around 10 years (often 15-20 years in captivity, some individuals reaching their
+20s or 30s)". The wild half is unchanged and still correct. The captive
+parenthetical moved to "8-12 years is the usual captive average, with
+individuals reported into their 20s and occasionally their 30s", matching PetMD
+and the cost guide. Nothing else in the entry was touched.
+
+Unsourced, needs a fact-check: "occasionally their 30s" appears on the cost
+guide, the encyclopedia and now the hub, and neither opened source states it.
+PetMD gives "into their 20s" and Lafeber "up to 20 years". It was left in place
+rather than deleted, since removing a figure is not what this pass is for, but
+it wants one look.
+
+Fixed the same day: the bar-spacing recommendation in the tank setup body and
+FAQ; source narration on four deep dives, body and FAQs both; the cost guide's
+vet table row, its annual total, its ongoing-costs heading, its lifespan heading
+and section, and its description field; the enrichment guide's affiliate
+template fragment; the bowl-versus-foraging reconciliation; the tank setup
+guide's self-referential budgie sentence; the encyclopedia's captive lifespan
+parenthetical; and seven in-body links.
+
+Left open: the five content gaps above, filed in docs/READER_LOG.md, plus the
+unsourced "30s" figure.
+
+## Koi (2026-09-15, batch K, single pass, before the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health issues,
+tank setup, feeding, enrichment, vs goldfish). One Opus agent, about 95k tokens.
+The review below reads the old legacy hub (housing, diet, enrichment and health
+prose, two cost tables, a checklist); the router hub was built from its findings
+the same day. Raw output in docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C | A usable checklist and pond spec, disagreeing with three deep dives and leading on a myth another page debunks. |
+| Encyclopedia | B | The Niigata-to-1914 history is the only thing in the set worth reading twice for pleasure. |
+| Cost | B+ | A budget you can build from, except the stated setup range doesn't match its own table. |
+| Handling | B | Wet hands, net into a floating bowl, don't lift. |
+| Health issues | A- | The emergency versus manageable-at-home split is the most decision-ready thing in the set. |
+| Tank setup | A- | The numbers you would hand a contractor. |
+| Feeding | A | A temperature-banded schedule you could tape to the pond shed. |
+| Enrichment | A- | Really a pond-design page, and the best written one. |
+| vs goldfish | C | A useful decision frame whose size and species figures fight the rest of the set. |
+
+Set grade: B. "Genuinely usable, well-sourced where it matters, and undermined
+by numbers that don't agree across pages."
+
+Hub versus the set, both sides quoted (all against the old legacy hub, resolved
+by the router rebuild):
+
+- Quarantine. Old hub: "always quarantine any new koi for 2 to 4 weeks." Health
+  guide: "strict quarantine, often 4 to 6 weeks or longer, sometimes at specific
+  temperatures." The hub was telling a reader to do half of what the deep dive
+  calls the critical prevention step for a disease with no cure.
+- Lifespan. Old hub FAQ: "25 to 35 years is typical." Cost guide: "25 to 50
+  years with good care is the commonly cited range." See Numbers checker.
+- Peas. Old hub: "Occasional treats like shelled peas, watermelon, and orange
+  slices are enjoyed in moderation." Feeding guide: "hard or dried peas are a
+  real choking and blockage risk." The hub's row now copies the feeding guide's
+  settled wording.
+- Volume. Old hub: "at least 1,000 gallons for even a small group." Enrichment:
+  "Adult koi need thousands of gallons rather than hundreds." Not strictly a
+  contradiction, but the hub gave the floor as the plan. Both sentences are now
+  rows, from the setup guide and the enrichment guide respectively.
+- Hanako. The old hub's headline funFact led with the 226-year claim; the cost
+  guide's own FunFact says "Treat it as folklore rather than fact." The hub's
+  funFact now carries the fish-recognizes-people fact from the enrichment guide
+  instead, and the Hanako claim stays where it is debunked.
+- Cost. The old hub's setup table summed to $2,450 to $9,200 while the cost
+  guide's prose says "$5,100 to $15,875." The hub carries no table now, and see
+  Numbers checker for what turned out to be behind that gap.
+
+Numbers checker. `node scripts/check-species-numbers.mjs koi --strict` before
+the pass reported 13 conflicting topic groups. Decisions:
+
+- Scientific name, the one the reader put first. The encyclopedia says "Cyprinus
+  rubrofuscus" and describes koi as "ornamental varieties of the Amur carp"; the
+  vs goldfish guide's comparison table said "Cyprinus carpio (common carp)" and
+  its body and FAQ both said "koi descend from the common carp." ITIS, the US
+  federal taxonomic authority, lists Cyprinus rubrofuscus Lacepede, 1803 as a
+  valid species (TSN 688966, credibility "verified, standards met"). The Amur
+  carp was formerly treated as a common carp subspecies, C. c. haematopterus,
+  and current authorities separate it. The encyclopedia is right and the vs
+  guide moved, in its comparison table's Species row, its body and its FAQ. The
+  species check found two copies this pass missed, that same table's Origin row
+  and its adult-size cell, and fixed both.
+- Adult size, four figures across the set. vs goldfish "14 to 18 inches",
+  handling "commonly 24 to 36 inches or more", enrichment "around two feet", hub
+  and encyclopedia "12 to 36 inches". PetMD's koi care sheet, written by Dr.
+  Melissa Witherell, DVM (September 2024), gives "Up to 3 feet long" and, for
+  stocking, "adults that grow to be 24-25 inches in length need approximately
+  250 gallons per individual," which is the figure the whole set's 250-gallon
+  rule rests on. So 24 to 25 inches is the adult figure and 3 feet the top. The
+  vs guide's 14 to 18 was the outlier and undercut its own argument; corrected in
+  body and FAQ. The handling guide's "24 to 36 inches or more" lost the "or
+  more", which put it past PetMD's stated maximum. Enrichment's "around two
+  feet" already agreed. The encyclopedia's "12-36 inches depending on pond size
+  and variety" is a full range with a real hedge and was left.
+- KHV mortality. Feeding guide "mortality is commonly cited at 70 to 100%"
+  against the health guide's "80 to 100%". Neither page's own sources are
+  high-tier here, so this went to the literature: Quijano Carde et al. (2020),
+  Frontiers in Veterinary Science, on CyHV-3 states infection leads "in some
+  cases to death in <21 days in over 80% of the infections", and gives clinical
+  signs "over the range of 15-28C". Over 80% is the health guide's range, not
+  the feeding guide's, so the feeding guide moved to 80 to 100%. The feeding
+  guide's "outbreaks are worst in the 61 to 77F range" sits inside the paper's
+  15 to 28C and was left.
+- Stop-feeding threshold. Feeding guide "Below about 48 to 50F: Stop feeding
+  entirely" against the cost guide's "below about 50 to 55F, when koi stop
+  eating almost entirely." The feeding guide is the page whose subject is
+  feeding and its figure is the more specific one; the cost guide moved, in the
+  body and in its FAQ.
+- Lifespan. Encyclopedia "25-35 years typical" against the cost guide's "25 to
+  50 years with good care." PetMD's vet-authored care sheet gives "Up to 50+
+  years with proper care", so the cost guide has the higher-tier figure and the
+  encyclopedia moved.
+- Depth. Setup guide "Minimum 3 feet, ideally 3 to 5 feet or more" against
+  enrichment's "at least three to four feet in part of the pond". Left as
+  written on both. Enrichment scopes its figure to the deep zone, which is a
+  real distinction on a pond with shelves, and its range sits inside the setup
+  guide's. PetMD gives "at least 3 to 6 feet deep", which contains both. No
+  number moved and no hedge changed.
+- The cost guide's setup table versus its own heading. The table sums to $2,450
+  to $9,200 and the heading says $5,100 to $15,875. Both figures are real and
+  they measure different things: the heading is an installed-pond cost from a
+  contractor pricing analysis, the table is an itemized parts list. That was
+  never said, so the section now says it, in one sentence, and neither figure
+  changed.
+- Every other group was the old hub's two cost tables against the cost guide's.
+  The hub carries no table now.
+
+After the rebuild, every value on a line marked `hub` appears, unchanged, in the
+deep dive its row names. Two values were checked by hand because the checker
+files them under a different topic label on the hub than on the deep dive: the
+buy list's "1,000 gallons" (tank setup, line 62 and its FAQ) and the seasonal
+food row's "25 to 32%" (feeding guide, line 70). Both are verbatim.
+
+Source narration, again before the router step ran, on three deep dives:
+
+- Tank setup: "some sources extend this to 59 to 77F", "acceptable per some care
+  guides, but many experienced keepers prefer bare-bottom ponds".
+- Feeding: "Some sources narrow this further", "per one manufacturer", "though at
+  least one koi-specific source argues keepers who rely on it tend to overfeed by
+  a wide margin, that specific figure wasn't corroborated elsewhere", and "Peas
+  are a genuine point of disagreement, some sources call them a top treat, others
+  say only in small, thoroughly cooked amounts", the last of which left a reader
+  with a warning and no instruction.
+- Cost: nothing narrated, but three sentences of the site talking about itself
+  ("our Koi vs. Goldfish guide breaks down", "our Red Eared Slider cost guide
+  walks through", and a closing roundup sentence that existed only to carry a
+  link), plus a body sentence restating the FunFact directly above it word for
+  word ("one of the longest financial commitments in the entire pet world").
+
+Gaps, checked against the Health and More list before calling them real. The koi
+sidebar carries the aquarium filtration, cycling, water parameters, quarantine
+and hospital tank, power outage and transport, and cooling-without-a-chiller
+guides. Against that list these are real and are filed in docs/READER_LOG.md:
+choosing a healthy koi at purchase and where to buy; acclimating a new fish on
+arrival; a pond water-change and sludge or bottom-drain routine, since the shared
+filtration guide is about aquarium media rather than pond muck; pond-specific
+summer heat management, since the shared cooling guide is aquarium-only and has
+no answer for 1,000 gallons outdoors; spawning; what happens after a KHV
+diagnosis, including who a notifiable disease is reported to; and a single winter
+shutdown schedule, whose pieces are spread across setup and enrichment and
+assembled nowhere.
+
+Stranded questions, now linked: the setup guide listed a quarantine system as
+essential with no spec; the health guide prescribed beneficial bacteria and
+filtration and never named the page that sizes it; the feeding guide told a
+reader to test water and never said what to do with a bad reading; the handling
+guide named skipping quarantine as a top mistake with no route to the disease it
+prevents; the cost guide itemized a build and never pointed at the guide that
+sizes it. All five fixed.
+
+One link per page, from the reader:
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub, encyclopedia | none needed | | n/a |
+| Cost | "Itemized, that breaks down into flexible EPDM liner... a pump sized to circulate the full volume every 1 to 2 hours" | pond setup | Yes |
+| Handling | "Introducing new fish without a proper quarantine period" | health issues | Yes |
+| Health | "beneficial bacteria at spring startup, paired with solid filtration and UV clarification" | pond setup | Yes |
+| Setup | "A quarantine system: essential for any new arrival" | shared hospital tank guide | Yes |
+| Feeding | "If multiple fish stop eating at once, that's a signal to test water immediately" | health issues | Yes |
+| Enrichment | "In cold water, feeding drops away entirely" | feeding guide | No link, but the missing figure was added instead: the sentence now carries the feeding guide's own "below roughly 48 to 50F", so the reader gets the number rather than a trip |
+| vs goldfish | "That size gap is the reason koi essentially require an outdoor pond setup, roughly 250 gallons per fish" | pond setup | Yes |
+
+Six links added, one sibling link per article, each with a reason, none before
+the first H2, none in a ComparisonTable cell.
+
+Encyclopedia. One field changed, the one conflicting with a deep dive's sourced
+figure. `wildLifespan` read "25-35 years typical; some documented individuals far
+longer" and now reads "25-50 years with good care; koi are fully domesticated, so
+there is no separate wild figure, and some documented individuals run far
+longer". The scientific name and the history section were not touched: the
+encyclopedia was the page that had the name right, and the vs guide moved to it.
+
+Dates. lastUpdated and lastReviewed bumped to 2026-09-15 on the four koi guides
+whose own figures changed: cost (the stop-feeding threshold), feeding (the KHV
+mortality range), handling (the adult size), and vs goldfish (the scientific
+name and the adult size). Not bumped on tank setup, health issues or enrichment,
+which changed wording and links only. The enrichment guide is future-dated
+(2026-11-05) and gained the feeding guide's existing figure rather than a new
+one, so it was left alone either way.
+
+Fixed the same day: the scientific name and ancestry in three places on the vs
+goldfish guide; the adult size on the vs goldfish guide (body and FAQ) and the
+handling guide; the KHV mortality figure on the feeding guide; the stop-feeding
+threshold on the cost guide (body and FAQ); source narration on the tank setup
+and feeding guides, body and FAQs; three site-self-reference sentences and one
+link-library closing sentence on the cost guide, plus one on the tank setup guide
+and one on the handling guide; the cost guide's table-versus-heading gap; a body
+sentence restating its own FunFact; the enrichment guide's affiliate template
+fragment ("and other sizes are available"); the encyclopedia's lifespan field;
+and six in-body links.
+
+Left open: the seven content gaps above, filed in docs/READER_LOG.md. The winter
+shutdown schedule is the one worth writing first, since the set has every piece
+of it and assembles them nowhere, and a koi keeper needs it once a year on a
+deadline set by the weather.
+
+## Emperor Scorpion (2026-09-15, batch K, single pass, before the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health issues,
+tank setup, feeding, enrichment, legal). One Opus agent, about 94k tokens. The
+review below reads the old legacy hub (housing, diet, enrichment and health
+prose, two cost tables, a checklist); the router hub was built from its findings
+the same day. Raw output in docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C+ | The fastest complete picture in the set, and several of its numbers are quietly wrong against the deep dives. |
+| Encyclopedia | B+ | The CITES ranching history is real information found nowhere else. |
+| Cost | B | A real budget and a useful debunk, with one feeding figure wrong. |
+| Handling | B+ | Low, over something soft, forceps, never the tail. |
+| Health issues | A- | Symptoms plus causes, and it says which are emergencies. |
+| Tank setup | A | Every number needed to buy and build. |
+| Feeding | A- | Portion sizes, the abdomen rule, the firefly warning. |
+| Enrichment | B+ | The best-written page, honest that its evidence is borrowed. |
+| Legal | A | Exactly what to check before buying. |
+
+Set grade: B. "Strong deep dives sitting under a hub that contradicts them on
+the numbers a first-time keeper will actually copy."
+
+Hub versus the set, both sides quoted. Every one of these is the old legacy hub
+against a deep dive, and all eight are resolved by the router rebuild, since the
+hub now copies rather than restates:
+
+- Substrate. Old hub: "need 4 to 6 inches of a moist substrate." Setup:
+  "Provide a minimum of 5 to 6 inches of substrate."
+- Humidity. Old hub: "high humidity (75 to 85%) are required." Setup: "Target
+  70 to 90%, with many keepers aiming around 75 to 80%."
+- Temperature. Old hub: "Temperatures of 76 to 86 degrees F." Setup: "An ambient
+  range of 75 to 85F is the commonly cited target."
+- Adult feeding. Old hub: "Adults eat every 7 to 14 days." Feeding: "Adults:
+  once a week is standard, sometimes 2 to 3 insects offered weekly."
+- Juvenile feeding. Old hub: "Juveniles need food more frequently, every 4 to 7
+  days." Feeding: "every 2 to 4 days."
+- Fasting. Old hub: "A scorpion that refuses food for 2 to 4 weeks is not ill."
+  Feeding: "can safely fast for a month or two."
+- Prey size. Old hub: "Prey size should not exceed the scorpion's body length
+  (excluding tail)." Feeding: "nothing larger than the abdomen." The reader's
+  line on this was the sharpest in the report: "Those are wildly different
+  animals' worth of cricket."
+- Enclosure. Old hub: "A 10 to 20 gallon terrarium... is suitable for 1 to 2
+  emperor scorpions", with its own FAQ then wanting "3 to 5 females in a
+  20-gallon or larger". Setup: 10 gallons for one adult, 20 to 30 or more for a
+  group.
+
+Numbers checker. `node scripts/check-species-numbers.mjs emperor-scorpion
+--strict` before the pass reported 10 conflicting topic groups. All but two were
+the old hub against a deep dive and are resolved by construction. The two real
+ones:
+
+- Adult feeding rate, cost guide against feeding guide. Cost: "An adult eating 3
+  to 6 appropriately sized prey items a week keeps monthly feeding costs
+  modest." Feeding: "Adults: once a week is standard, sometimes 2 to 3 insects."
+  The feeding guide is the page whose subject is feeding and the cost guide was
+  budgeting for roughly double the food. Cost moved to "2 to 3 appropriately
+  sized prey items once a week."
+- Lifespan, two university sources narrated on the cost guide. Animal Diversity
+  Web (University of Michigan Museum of Zoology) gives 5 to 8 years in
+  captivity; the University of Kentucky's Department of Entomology gives 4 to 9.
+  Both are species-specific university sources at the same tier, and the wider
+  range contains the narrower one, so the page now states "5 to 8 years in
+  captivity is the usual figure, and the full reported range runs 4 to 9",
+  without either name. The encyclopedia's "5 to 8 years in captivity" agrees and
+  was not touched.
+
+After the rebuild, every value on a line marked `hub` appears in the deep dive
+its row names. Three values flagged as hub-only by the checker are all in the
+cost guide's route line ($25 to $100, $80 to $250, and the $800 claim the cost
+guide debunks), each verbatim from the cost guide under a different topic label.
+
+Deep dives against each other:
+
+- Tongs versus release-and-hunt. The old hub said "Always offer prey with
+  feeding tongs rather than by hand"; the enrichment guide says "Release live
+  prey in the evening rather than presenting it with tongs, and let the animal
+  hunt." The feeding guide itself takes no position on delivery, so this was
+  hub-against-enrichment rather than a deep-dive conflict, and the hub's row now
+  copies the enrichment guide. The enrichment guide keeps the recommendation
+  because delivery is its subject and its cited tarantula housing study is about
+  exactly that.
+- Fluorescence colour, the reader's third conflict: "blue-green" on the hub,
+  encyclopedia and setup guide, "bright green" on enrichment, "a bright cyan" on
+  legal. Left as written on all three. These are three descriptions of one
+  colour rather than three claims, no source states a wavelength, and changing
+  two of them would be asserting a precision nobody has. Recorded here so the
+  next reader who notices it finds the decision rather than the silence.
+
+Source narration was the heaviest of the batch on this species, and it was on
+three deep dives before the router step ran:
+
+- Tank setup: the cohabitation paragraph quoted the University of Kentucky's
+  Department of Entomology twice ("very unique", "most predatory arthropods will
+  kill each other when housed together"), the humidity section quoted Animal
+  Diversity Web on "hot and humid forests" and named UK Entomology again, and
+  both the temperature and substrate figures were hedged behind "some sources"
+  and "some keepers".
+- Health issues: the same ADW habitat quote, the same UK Entomology cohabitation
+  quote, a University of Illinois College of Veterinary Medicine quote about
+  feeder insects biting a molting animal, and a Merck attribution on sting
+  toxicity.
+- Handling: a three-source paragraph running ADW, UK Entomology and Merck in
+  sequence on the venom.
+- Cost: two university names on the lifespan, a Merck attribution on toxicity,
+  and "our Emperor Scorpion health issues guide covers in detail".
+
+Every one of these was a direct quote, so de-attributing alone would have left
+an unmarked lift (RULES: "De-attributing is not de-quoting"). Each claim was
+rewritten in the site's own words and the name dropped, and every Sources block
+is unchanged, so a reader can still check any of it. Two attributions were kept
+deliberately, because the name is the fact: the 2024 Insects study (Guo et al.)
+on the soft post-molt exoskeleton, which the setup and health guides both quote
+and credit, and the CITES and state-code citations throughout the legal guide.
+
+Gaps, checked against the Health and More list first. The invertebrate sidebar
+carries the rehousing, pesticide hazards, molting, and emergency travel and
+shipping guides, so the reader's own note that pesticides, rehousing and
+outages are covered is correct and they are not counted. These are real and are
+filed in docs/READER_LOG.md: how to sex one, which the set needs because it
+repeatedly recommends female groups; quarantining a new arrival before it joins
+a group; spot-cleaning frequency and when a full substrate change is due, where
+the cost guide budgets one a year and the setup guide says "refresh it
+periodically"; molt frequency and how many molts to adulthood, so a keeper can
+tell a normal gap from a stalled one; mite treatment for an animal already
+infested; what to do about an escapee, which appears only inside a legal-page
+fun fact; and first aid after a sting or a deep pinch.
+
+Stranded questions, now linked: the health guide named low humidity as the cause
+of dehydration and never gave the number; the setup guide raised cohabitation
+and never pointed at the page that is the manual for it; the feeding guide named
+obesity and never pointed at the health guide; the handling guide listed
+cage-mate aggression among first-timer mistakes with no route to the hide-count
+answer; the cost guide priced the animal without mentioning it is banned in
+three jurisdictions; the enrichment guide named dry conditions as the cause of
+failed molts without the humidity range. All six fixed.
+
+One link per page, from the reader:
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "A scorpion that refuses food for 2 to 4 weeks is not ill" | feeding guide | The sentence is gone; the hub's Fasting row copies the feeding guide's own "a month or two" |
+| Encyclopedia | "Ranching... has been the main legal supply route out of West Africa" | legal guide | No, the encyclopedia is structured data with no link slot |
+| Cost | "The typical range for captive-bred specimens is $25 to $100." | legal guide | Yes |
+| Handling | "Housing multiple scorpions without enough space and hides" | enrichment guide | Yes |
+| Health | "Humidity that's too low, inadequate misting, or overly dry substrate are the usual causes." | setup guide | Yes |
+| Setup | "Cohabitation is possible but not always successful." | enrichment guide | Yes |
+| Feeding | "Overfeeding is the risk here, obesity is a documented, common problem" | health issues guide | Yes |
+| Enrichment | "Dry conditions cause failed molts" | setup guide | Yes |
+| Legal | "wild-caught imports arrive with parasites and dehydration" | health issues guide | Yes |
+
+Seven added. One was answered by a hub row instead, and the encyclopedia has no
+link slot. One link had to come back out: adding the legal link to the cost
+guide put that article at two sibling links, which the checker errors on
+(sibling-link), so the health issues link I had added while cutting a
+self-reference was removed and that sentence now makes its point without a link.
+
+Encyclopedia. Nothing changed. Its "5 to 8 years in captivity" and "7-8 inches"
+both agree with the deep dives, and the CITES and ranching history the reader
+praised is exactly the kind of material the batch rule says not to touch.
+
+Dates. lastUpdated and lastReviewed bumped to 2026-09-15 on the cost guide
+alone, the only emperor scorpion file whose own figure changed (the adult
+feeding rate). Tank setup, health issues and handling changed wording only, and
+feeding, legal and enrichment changed links and a shop fragment only, so none of
+those was bumped.
+
+Fixed the same day: the cost guide's adult feeding rate and its narrated
+lifespan; source narration and direct-quote lifts on the tank setup, health
+issues, handling and cost guides, body and FAQs; the site talking about itself
+on the cost guide; the enrichment guide's affiliate template fragment ("Other
+sizes and volumes are available and a communal enclosure needs several"), which
+the reader singled out as "an advert with the product cut out"; and seven
+in-body links.
+
+Left open: the seven content gaps above, filed in docs/READER_LOG.md. Sexing is
+the one to write first, because the set recommends female groups on three pages
+and never says how a keeper would know.
+
+## Rosy Boa (2026-09-15, batch K, single pass, before the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health issues,
+tank setup, feeding, enrichment, legal). One Opus agent, about 98k tokens. The
+review below reads the old legacy hub (housing, diet, enrichment and health
+prose, two cost tables, a checklist); the router hub was built from its findings
+the same day. Raw output in docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C | The fastest complete picture in the set, and several of its numbers are contradicted downstream. |
+| Encyclopedia | B- | A minute's read, and the history paragraph earns its keep. |
+| Cost | A- | Real dated prices with the arithmetic shown. |
+| Handling | B | Good on the post-feeding wait and the balling response, and it never says how often to handle. |
+| Health issues | A- | The when-to-see-a-vet list and the inactivity caveat are directly usable. |
+| Tank setup | B+ | Enough to build the enclosure from, minus substrate depth and lighting. |
+| Feeding | A- | Schedule and prey size clear, thawing absent. |
+| Enrichment | A- | The only page in the set that argues with the standard advice. |
+| Legal | A | Genuinely checkable, state by state. |
+
+Set grade: B+. "Strong, specific, unusually well sourced deep dives, undermined
+by a hub whose numbers fight them."
+
+Hub versus the set, both sides quoted. All resolved by the router rebuild:
+
+- Shed humidity, the dangerous one. Old hub: "around 40% ambient, rising to 60
+  to 65% during shed." Tank setup: "raise humidity to roughly 40 to 50 percent."
+  The hub's figure also broke the ceiling the health guide's entire argument
+  rests on, "well under 60 percent", and a beginner reading only the hub would
+  have acted on the version that causes the respiratory infection the rest of
+  the set is trying to prevent. The reader named this first under Trust and it
+  is the single most consequential defect this batch found.
+- Adult feeding interval. Old hub: "do well on a mouse every 2 to 4 weeks."
+  Feeding guide: "every 10 to 14 days as a commonly recommended baseline." The
+  reader's line: "Those are different schedules, not a range." The feeding guide
+  does give 3 to 4 weeks as a stretch for a mature, well-established adult, so
+  the hub had promoted the exception to the rule.
+- Juvenile feeding. Old hub: "every 7 to 10 days." Feeding: "every 5 to 7 days."
+- Annual costs. Every line of the old hub's annual table disagreed with the cost
+  guide: mice $50 to $100 against about $2 a month, electricity $35 to $60
+  against $1 to $2, vet $50 to $90 against $100 to $200 a year. The cost guide
+  shows its arithmetic and dates its prices; the hub's table showed neither.
+- The hub contradicted itself, too: its funFact called a boa constrictor "5 to
+  13 foot" and its comparison FAQ said "8 to 10+ feet". Both are gone, and the
+  new funFact carries the cost guide's lifespan point instead.
+
+Numbers checker. `node scripts/check-species-numbers.mjs rosy-boa --strict`
+before the pass reported 13 conflicting topic groups. The decisions that were
+not resolved by the rebuild:
+
+- Consumables, a same-page arithmetic contradiction on the cost guide. The
+  section heading and the FAQ both say "$6 to $11 a month" and the paragraph's
+  own line items sum to exactly that (food about $2, aspen $3 to $7, electricity
+  $1 to $2), but the paragraph's closing sentence said "Consumables land at $5
+  to $8 a month." Fixed to $6 to $11, which is what the page's own numbers add up
+  to.
+- Adult size, three figures across the set. The encyclopedia gives "24-36 inches
+  (60-90 cm); rarely over 4 feet (122 cm)" and the tank setup guide agrees
+  ("typically 24 to 36 inches and only rarely approaching 4 feet"). The cost
+  guide's enclosure table cell said "Sized for an adult that tops out around 3
+  feet" and the legal guide said "tops out around 2 to 3 feet", twice. Both
+  moved to the figure the encyclopedia and the subject-matter page already
+  shared. Nothing here needed new research: two pages in the set already agreed
+  and two had drifted. The species check then found four more copies this pass
+  missed, in the legal guide's excerpt, its description field, one of its FAQs
+  and its NYC paragraph, plus "topping out around 3 feet and often less" on the
+  handling guide, and fixed all five. Two of those sit in the frontmatter fields
+  batches D through J have warned about, which is the defect this pass was told
+  to grep for by hand and did not.
+- Lifespan, narrated on the cost guide. Its FAQ read "Animal Diversity Web puts
+  the captive average at 18 to 22 years", which the reader correctly called a
+  contradicting figure buried in an FAQ. The body's 20 to 30 typical and past 30
+  documented are unchanged, and the FAQ now carries all three figures with no
+  name: "20 to 30 years is typical in captivity, documented individuals have
+  lived past 30, and the captive average sits nearer 18 to 22." The
+  encyclopedia's "20-30+ years in captivity" agrees and was not touched.
+- The boa constrictor cross-reference. The old hub gave the boa's enclosure as
+  "6x3x3 ft or larger" and its length as "8 to 10+ feet", both stale against the
+  boa constrictor set reconciled in batch C, which gives "6 to 8 feet long, 2 to
+  3 feet wide, and 3 to 4 feet tall" and an encyclopedia adult size of 5 to 13
+  feet. The rosy boa tank setup guide already used the boa's own current figure
+  ("the 6 to 8 foot enclosure a boa constrictor needs as an adult"), so the hub
+  was the only page carrying the old numbers and they went with it. Worth noting
+  as a shape: a reconciled species' figures can go stale on another species'
+  unreconciled hub, and nothing checks that until the second species comes up.
+
+After the rebuild, every value on a line marked `hub` appears, unchanged, in the
+deep dive its row names. Two flagged as hub-only are in the cost guide's route
+line ($150 to $400 and $150 to $250), both verbatim from the cost guide under a
+different topic label.
+
+Deep dives against each other:
+
+- Enclosure size, the reader's sharpest catch. Tank setup: "A 20 gallon long
+  tank covers a standard adult setup comfortably." Enrichment: "The standard
+  recommendation for an adult rosy boa is a 20 gallon long, and that number gets
+  repeated because the animal is undemanding rather than because it was ever
+  tested." The reader's note was that "enrichment is arguing against its own
+  site's setup page without saying so." Both keep their positions: the
+  enrichment guide's Sources carry the Hoehfurtner corn snake enclosure-size
+  study and the Hutchings 2025 review on captive snake spatial needs, which is
+  exactly the evidence for that argument, and the tank setup guide is reporting
+  the standard recommendation accurately. What was missing was the
+  acknowledgement, so the enrichment sentence now links the setup guide at "20
+  gallon long", which is where the site makes the recommendation it is arguing
+  with. No figure changed.
+- Water after a meal. Old hub: "Fresh water should always be available."
+  Feeding: "some keepers remove the water dish for a day afterward." The hub's
+  sentence is gone and the feeding guide's hedge is intact; the hub has no
+  water row, because no deep dive states a single rule to copy. This is the
+  axolotl cohousing precedent.
+- Read twice or more across the set: the boa constrictor size contrast on five
+  pages, "overfeeding is the bigger risk" on four, the humidity reversal on
+  four, escape artists and the smooth lid on three.
+
+Source narration, on three deep dives before the router step ran:
+
+- Health issues: "PetMD's overview of respiratory infections in reptiles
+  lists..." followed by "Veterinary literature on snake husbandry specifically
+  ties...", and separately "Reptiles Magazine's care sheet lists rostral
+  abrasion... as a common issue."
+- Cost: "ReptiFiles calls for a full change every three to six months" on a
+  substrate volume spec, and the Animal Diversity Web lifespan attribution in
+  the FAQ.
+- Handling: a paragraph built entirely out of two quotes, Wikipedia's "extremely
+  docile when encountered by humans" and "not prone to bite in defense" and
+  Reptiles Magazine's "usually very docile" and "tolerate handling well". Since
+  these were direct quotes, de-attributing alone would have left an unmarked
+  lift, so the claim was rewritten in the site's own words with both Sources
+  entries left in place.
+
+Sources note, not fixed: the handling and tank setup guides both cite Wikipedia,
+which is not on the RULES source ranking at all. Nothing in either page's claims
+turned out to depend on it alone (Reptiles Magazine and Animal Diversity Web
+carry the same claims), and deleting a Sources entry is on the Never list, so
+both stay. Worth one look in a session that can replace rather than remove.
+
+Gaps, checked against the Health and More list first. The snake sidebar carries
+the reptile quarantine, shedding, heating and thermostats, salmonella hygiene,
+emergency plan, brumation, stool and hydration, and outdoor housing guides. The
+shed protocol is covered there and on the health guide, so it is not a gap.
+These are real and are filed in docs/READER_LOG.md: how to thaw and warm a
+frozen mouse and what temperature to offer it at; whether the species needs any
+lighting, UVB, or a photoperiod, which no page in the set mentions at all; how
+often to handle a settled adult, which the handling guide never says; substrate
+depth in inches, which the enrichment guide makes a top-two priority without a
+number; a spot-cleaning and water-dish cadence between full substrate changes;
+an actual brumation protocol, which four pages call optional and none describe,
+even though a shared snake brumation guide exists and does not cover this
+species; and what to check on the animal at purchase.
+
+The brumation one is worth a second look: the tank setup guide says "A brief
+winter cooldown toward the mid-50s is fine too, and actually mirrors this
+species' natural seasonal slowdown", which is closer to a protocol than anything
+else in the set, but it gives no duration and the shared snake brumation guide
+does not name the rosy boa. That is the sulcata pattern from batch H in a milder
+form: a species-specific claim standing next to a shared class guide that has
+not been asked about it.
+
+Stranded questions, now linked: the health guide blamed rostral abrasion on a
+coarse screen lid and never pointed at the page that specifies the lid; the tank
+setup guide named respiratory infection and scale rot and never pointed at the
+page about them; the feeding guide named obesity and never pointed at the health
+guide; the cost guide's feeding interval is argued for on the feeding guide; the
+enrichment guide argued against a recommendation the setup guide makes. All five
+fixed.
+
+One link per page, from the reader:
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "typically once every 2 to 4 weeks" | feeding guide | The sentence is gone; the hub's Feeding frequency row copies the feeding guide's own schedule |
+| Encyclopedia | none needed | | n/a |
+| Cost | "An adult rosy boa eats every 10 to 14 days, so two or three mice a month" | feeding guide | Yes |
+| Handling | "skip handling during the shed cycle, when cloudy eyes mean temporarily impaired vision" | shared shedding guide | No, that article already carries its one sibling link, to the boa constrictor handling guide, and the shed protocol reaches it through the sidebar |
+| Health | "most often a coarse screen lid" | tank setup guide | Yes |
+| Tank setup | "chronically high humidity is the leading cause of respiratory infection and scale rot" | health issues guide | Yes |
+| Feeding | "obesity is a real, commonly reported problem in this species" | health issues guide | Yes |
+| Enrichment | "The standard recommendation for an adult rosy boa is a 20 gallon long" | tank setup guide | Yes |
+| Legal | "kept mostly because it's calm and easy to handle" | handling guide | Added, then reverted: that sentence sits in the first paragraph, and the checker errors on a link in the opener (opener-link) |
+
+Five added, one answered by a hub row, one reverted on a checker rule, one
+skipped at the sibling cap, one not needed.
+
+Encyclopedia. Nothing changed. Its adult size and lifespan are the figures the
+other pages moved toward, which is the gerbil and degu pattern from batches H
+and I in a third form: the page that already had it right was not the deep dive.
+
+Dates. Not bumped anywhere. Every rosy boa guide is future-dated (five at
+2026-09-25, legal at 2026-09-26, enrichment at 2026-10-25) with lastUpdated and
+lastReviewed equal to its own publish date, the same situation as parrotlet in
+this batch. An article that has not published cannot have been updated after
+publication.
+
+Fixed the same day: the cost guide's consumables arithmetic, its adult-size
+table cell, its narrated substrate spec and its narrated lifespan FAQ; the legal
+guide's adult size in two places; source narration on the health issues guide in
+three places; the handling guide's two-quote paragraph; the enrichment guide's
+affiliate template fragment ("Other sizes and volumes are available"); and five
+in-body links.
+
+Left open: the seven content gaps above, filed in docs/READER_LOG.md, and the
+two Wikipedia citations. Thawing is the one to write first: the feeding guide
+tells a reader to use frozen-thawed prey on every page that mentions food and
+never says how.
+
+## Tiger salamander, parrotlet, koi, emperor scorpion, rosy boa (2026-09-15, batch K species check)
+
+One Fable agent over the whole batch on branch
+claude/tiger-salamander-parrotlet-koi-emperor-scorpion-rosy-boa from base
+3131aaaf, run after all five species were done and pushed. Fixes committed as
+58e1f23. Pass grade B.
+
+Scope: clean. Five hub entries, the species' MDX, the four-species overview's
+tiger salamander row and FAQ, koi-vs-goldfish, the two review files, and three
+encyclopedia fields. Nothing in src outside the guide data files.
+relatedArticles.js and SHORT_LABELS were not edited and did not need to be. The
+check re-opened every source the review file names and found nothing faked:
+MDC, ADW, PetMD's parrotlet sheet (Laurie Hess, DVM), Lafeber, PetMD's koi sheet
+(Melissa Witherell, DVM), ITIS, and the Frontiers in Veterinary Science paper.
+
+**Tiger salamander, fixed on the branch.** One hub row, Life stage change, was a
+paraphrase of the tank setup guide rather than its words; fixed to the article's
+sentence. Everything else verbatim, the emergency card's four bullets match the
+health guide's four vet-directed items, and no retired figure survived anywhere
+including frontmatter.
+
+**Parrotlet, clean.** All 23 rows verbatim, both bar-spacing sources
+re-confirmed, the re-summed annual arithmetic checks, and the future-date
+decision was judged right for a reason the pass had not articulated: a
+dateModified before datePublished is invalid schema, and the article publishes
+with the corrected fact already in it. The check also confirmed Lafeber's
+Pacific parrotlet page states "never more often than one serving per day", so
+the de-attributed seed frequency is sourced.
+
+**Koi, fixed on the branch.** Two same-page copies of the corrected figures were
+left in the koi-vs-goldfish comparison table, the Origin row ("bred from common
+carp") and the adult-size cell ("14-18 in, some 3+ ft"); both fixed. The
+Frontiers paper behind the KHV mortality figure was cited in the review file but
+on no page's Sources block, so it was added to the feeding and health guides,
+and the review file's URL for it was wrong (the paper is fvets.2020.587952).
+
+**Emperor scorpion, fixed on the branch.** All 23 rows verbatim and the legal
+row confirmed row by row against the legal guide's table. One hedge shift, below.
+
+**Rosy boa, fixed on the branch.** Four hub findings, the worst of them the
+emergency card: this pass built three bullets from the health guide's section
+headings while that guide carries an explicit five-bullet "When to See a Vet"
+list, ready to copy. Replaced with the list verbatim. Two rows carried source
+narration copied out of the tank setup FAQ ("with most sources recommending",
+"with current guidance increasingly favoring"), fixed upstream in the article
+then in the row and the hub FAQ. The Thermostat probe row quoted the shared
+guide's excerpt, which is its table of contents rather than a fact; replaced
+with the probe-placement sentence the other snake hubs use. And four more copies
+of the old "2 to 3 feet" adult size survived in the legal guide's excerpt,
+description, a FAQ and its NYC paragraph, plus one on the handling guide.
+
+**The hedge finding, on two species.** De-narrating "some sources extend this to
+59 to 77°F" (koi) and "some sources extending that to 70 to 90°F" (emperor
+scorpion) produced "safe across a wider 59 to 77°F" and "70 to 90°F is safe as
+long as a gradient exists". Both assert safety no source was quoted for, which
+is a hedge change and on the Never list. Fixed to "with 59 to 77°F as the outer
+limits" and "with 70 to 90°F as the outer limits", in the body, the FAQ, the hub
+row and the hub FAQ where each appeared. Worth carrying forward: stripping a
+source name off a hedged range is the moment to check that the replacement
+wording claims exactly what the original did and no more. This is a new shape of
+the de-narration defect, distinct from the source-name leak the last four batches
+found.
+
+Left open, not fixable under the Never list: the rosy boa cost guide's lifespan
+FAQ carries "20 to 30 typical" beside "the captive average sits nearer 18 to 22".
+ADW confirms both 18 to 22 and past 30, so neither is wrong, but settling the
+tension means establishing what the body's 20 to 30 rests on, which the page's
+Sources do not show, and it ripples into the encyclopedia and the overview. Needs
+new research rather than a decision. Also left: the rosy boa encyclopedia's
+description prose says "Rarely exceeding 3 feet as adults" next to its own
+adultSize field of "rarely over 4 feet"; both are defensible against ADW's 17 to
+44 inches, and the prose is not the field that conflicted with a deep dive, so
+the one-field rule keeps it out of scope.
+
+Gates on 58e1f23: check-internal-links (796/796), check-related-articles,
+check-affiliate-mdx, check-cost-coverage, check-seo-tags, check-voice --strict
+(0 errors, 356 warnings, unchanged from base), check-hub-faqs (61/61 verbatim),
+check-encyclopedia (0/0), eslint --quiet, all green. check-species-numbers
+--strict for all five: every hub value appears in its named deep dive. One
+correction to how the batch reported that script: --strict exits 1 on any
+advisory group and did so at 3131aaaf too, so "strict: green" was loose wording.
+The substantive condition, no hub line disagreeing with its deep dive, holds and
+was verified value by value. Voice findings per rule are identical to 3131aaaf on
+all 33 changed MDX files.
+
+Pass grade B, in the check's words: the batch "did the expensive things right,
+real research with quotable sources behind every moved number, rewrote quotes
+instead of de-attributing them, kept every hedge but the two 'safe' assertions,
+caught its own koi date mistake, and filed review sections whose counts match the
+diff. What it kept missing is the cheap, named, repeated defect: retired figures
+left in frontmatter and table cells, six on rosy boa and koi, the exact pattern
+READMEFIRST warns about from batches D to J; source narration reaching a hub row
+and hub FAQ again; and a rosy boa emergency card written from headings when the
+health guide had the list ready to copy."
