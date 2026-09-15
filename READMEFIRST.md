@@ -684,7 +684,55 @@ health guide's section headings while that guide carried an explicit five-bullet
 "When to See a Vet" list, ready to copy, which is the batch F sugar glider
 defect again.
 
-Next up is batch L. Pick five, one per class, where a set from a recent
+Batch L (fire-bellied toad, quaker parakeet, molly, praying mantis, argentine
+tegu), spanning amphibian, bird, fish, invertebrate and lizard, done and checked
+on branch claude/firebelliedtoad-quaker-molly-mantis-tegu 2026-09-15, not
+merged. Five router hubs, 133 first-week rows, one reader pass per species and
+one Fable check. Pass grade B. That makes 66 router hubs; the 42 still on the
+legacy care sheet are listed by class in docs/TODO.md, section 7, dogs and cats
+last.
+
+Four findings worth carrying into the next batch.
+
+Both checkers had a blind spot and it was a reader that found it, not a check.
+A species whose guide id does not prefix its own articles was invisible to
+scripts/reader-extract.mjs and scripts/check-species-numbers.mjs: the tegu hub's
+id is `tegu` and every deep dive is `argentine-tegu-*`, so both matched a hub
+and an encyclopedia entry and nothing else. The numbers checker had been
+reporting tegu clean on four advisory groups while the hub disagreed with five
+deep dives, and it reported clean because it could not see them. Both scripts
+now also accept an article whose slug ends in a standard suffix and whose base
+name and the guide id contain one another; page counts verified unchanged on
+seven other species. This is the second silent blind spot the extractor has had
+after the goldfish myth page, and both were found by a reader. Worth asking, for
+any species: does its guide id actually prefix its articles?
+
+An emergency card built from anything but the health guide's own words keeps
+failing the check. Batch K built the rosy boa card from section headings; batch L
+wrote five bullets across four species that the health guide does not say, among
+them a quaker "respiratory signs alongside flu-like illness in the household"
+that appears nowhere, a tegu retained-shed bullet invented while the guide's
+parasites item was left out, and a mantis bullet that hardened the guide's
+"difficult" into "impossible". The rule to apply mechanically: every bullet is a
+sentence that already exists on the health guide, found by grep, and the vetLine
+keeps that guide's hedges.
+
+Citing a source and then writing a claim it contradicts is a worse failure than
+citing nothing. The toad handling guide said bombesin "was first isolated from
+this very animal and named after it", in a paragraph whose newly added Sources
+entry (Xiang et al. 2017) says it was isolated from *Bombina variegata* and named
+after the genus. Research the sentence, then read the source back against the
+sentence you wrote, not just the number you took from it.
+
+The cheap defect shipped again, on the species where the review file said it had
+not. The check found the mantis cost guide's seoTitle, seoDescription and
+description still carrying a retired $150 after the body moved to $145, plus the
+handling guide's FAQ and FunFact still carrying a jump figure the review claimed
+was gone, and a setup FunFact still stating the clearance rule the same pass had
+redefined. FunFacts and FAQs are frontmatter's blind spot twin: grep the figure,
+do not trust the memory of having changed it.
+
+Next up is batch M. Pick five, one per class, where a set from a recent
 batch points at them. What is left, by class, is in docs/TODO.md
 section 7.
 

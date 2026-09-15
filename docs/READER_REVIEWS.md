@@ -12973,3 +12973,98 @@ housing and shedding: how to choose a breeder and assess a healthy juvenile,
 lifting and supporting an adult beyond "two people," tegu-proofing a room for the
 free roam every page assumes, the brumation ramp-down protocol, what an 8x4x4 DIY
 build actually costs, and sexing. All filed in docs/READER_LOG.md.
+
+## Fire-bellied toad, quaker parakeet, molly, praying mantis, argentine tegu (2026-09-15, batch L species check)
+
+One Fable agent over the whole branch after all five were pushed, base ab92382.
+Fixes committed on the branch as dd7fdbe. Pass grade B. Nothing merged.
+
+### The finding that set the grade
+
+The batch cited a paper and then wrote a claim that paper contradicts. The toad
+handling guide, its FAQ and the hub's toxin row all said bombesin "was first
+isolated from this very animal and named after it." Xiang et al. 2017, which
+this batch added to that guide's Sources on this very pass, says it was isolated
+from *Bombina variegata* and named after the genus. Now "first isolated from the
+skin of a related European fire-bellied toad and named after the genus."
+
+That is worse than citing nothing, because the citation is what makes the wrong
+sentence look checked. Read the source back against the sentence you wrote, not
+just against the number you took from it.
+
+### Two ranking calls the batch got wrong, and one it got right
+
+Toad temperature, wrong. The batch settled 72 to 78F. PetMD, the DVM-authored
+source, says "from 75 F to 78 F" with "should not exceed 82 F or fall below
+65 F"; Amphibian Care says 72 to 78. 72 to 78 was a merge of the two bands
+rather than a ranking of them. Fixed to 75 to 78F in the setup body, FAQ,
+seoDescription and the hub row.
+
+Toad feeding schedule, a false claim in the review file rather than in the
+content. The review said the new Diet Basics section "carries the schedule both
+sources agree on." They do not agree: PetMD gives juveniles every other day and
+adults "once or twice a week," and the page's every two to three days is
+Amphibian Care's. The check left the page as written, because Smithsonian, which
+outranks both, feeds its adults three times a week, which sits with Amphibian
+Care. Recorded here because a vet-tier source is the outlier and that is worth
+Mike's decision rather than a quiet one.
+
+Molly temperature and pH, right, and specifically not the batch K shape. PetMD
+states "72-82 F" and "7.5-8.5," it sits in both pages' Sources, and it outranks
+Aquarium Co-Op. The hedge came off a range and the claim did not widen.
+
+### The defects that repeat
+
+Emergency cards written rather than copied, five bullets across four species.
+A quaker bullet about "respiratory signs in the bird alongside flu-like illness
+in the household" that the health guide never says. A tegu retained-shed bullet
+that appears nowhere, while the guide's own parasites item was left out. A mantis
+bullet hardening the guide's "difficult" into "impossible," and another stating
+a regurgitation threshold the guide does not give. Batch K built the rosy boa
+card from section headings; batch F did the same on sugar glider. Every bullet
+is a sentence that already exists on the health guide, found by grep.
+
+Retired figures surviving in frontmatter and FunFacts, on the species where the
+review file said they were gone. The mantis cost guide's seoTitle, seoDescription
+and description still said $150 after the body moved to $145. The handling guide's
+FAQ and FunFact still carried the jump figure the review claimed was removed. The
+setup guide's FunFact still stated the clearance rule that same pass had
+redefined. FunFacts are frontmatter's blind spot twin.
+
+A number left behind on a page the batch did not open: the quaker health guide
+still said pellets are "roughly 60 to 70% of intake" after the batch settled
+VCA's minimum 70 percent everywhere else. Fixed and the date bumped with it.
+
+Source names in hub rows, five of them, two tegu and three molly. The tegu adult
+size row quoted LafeberVet against ReptiFiles by name, copied from a handling
+guide sentence that legitimately narrates the gap; the row now takes the
+encyclopedia figure and the handling rule moved to its own row in the article's
+words.
+
+### Counts the review file had wrong
+
+Links added: molly 6 not 5 (cost to filtration was unlisted), quaker 2 not 3,
+tegu 5 not 6. All corrected in those sections.
+
+### Gates on dd7fdbe
+
+check-internal-links, check-related-articles, check-affiliate-mdx,
+check-cost-coverage (234/269 reachable), check-seo-tags, check-hub-faqs,
+check-encyclopedia, check-voice --strict (0 errors) and `npx eslint . --quiet`
+all pass. Voice warning counts per changed slug are identical to ab92382 across
+all 27 changed files.
+
+check-species-numbers --strict exits 1 for all five, as it does for bearded
+dragon, koi and rosy boa on main, because any multi-value topic group counts as
+a conflict including the benign topic-label groupings. The substantive condition
+is what holds: every hub sentence was checked against its source article by a
+verbatim-sentence script plus grep, and no hub line disagrees with a deep dive.
+
+### Left open
+
+The tegu handling guide's pre-existing sentence naming LafeberVet against
+ReptiFiles on adult size still stands in the article, outside this batch's diff.
+The toad water depth stays at Amphibian Care's "about 3 inches" against PetMD's
+"1- to 2-inch-deep," because PetMD's figure would contradict the page's standing
+"deep enough to genuinely swim" instruction, which is a claim this batch could
+not change on its own. Both want a decision rather than a quiet edit.
