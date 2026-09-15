@@ -3647,6 +3647,41 @@ in one review section.
 
 ## What the tests changed so far
 
+- 2026-09-15, batch K (branch
+  claude/tiger-salamander-parrotlet-koi-emperor-scorpion-rosy-boa, not merged):
+  five router hubs, 119 first-week rows, one reader pass per species and one
+  Fable check covering all five. Pass grade B. Tiger salamander: the tank setup
+  guide told readers distilled water was a fine substitute while the shared
+  amphibian water guide calls it potentially fatal on the AZA's authority, and
+  the deep dive had no Sources block at all; fixed, and the species gained a
+  sourced Diet Basics section (the fifth species with no feeding guide, after
+  Russian tortoise, tokay gecko, California kingsnake and savannah monitor). Its
+  wild lifespan was misattributing ADW's captive 16 to the wild; MDC (.gov)
+  gives 10 or more with no upper bound, and the encyclopedia moved with it.
+  Parrotlet: the hub recommended 3/8 to 1/2 inch bar spacing, which is the range
+  its own setup guide calls a lovebird range, while both Lafeber and PetMD's
+  board-certified avian vet give 1/4 inch; the cost guide contradicted itself on
+  the vet fee and the annual total re-summed. Koi: the vs guide had the wrong
+  scientific name and ancestry (ITIS lists Cyprinus rubrofuscus valid) and an
+  adult size of 14 to 18 inches that undercut its own argument, and the KHV
+  mortality figure went to the peer-reviewed 80 percent. Emperor scorpion: the
+  cost guide budgeted double the feeding guide's food, and four deep dives
+  carried direct quotes behind source names, rewritten in our own words rather
+  than de-attributed. Rosy boa: the hub put shed humidity at 60 to 65 percent,
+  above the ceiling the health guide's whole argument rests on, which is the
+  version a beginner reading only the hub would have acted on.
+- 2026-09-15, batch K process: two findings worth carrying. A reconciled
+  species' figures can go stale on another species' unreconciled hub, and
+  nothing catches it until the second species comes up (the rosy boa hub still
+  had the boa constrictor at 6x3x3 ft and 8 to 10+ feet, both retired in batch
+  C). And de-narration has a second failure mode beyond the source-name leak the
+  last four batches found: stripping a name off a hedged range can quietly
+  upgrade it, which happened twice here when "some sources extend this to X"
+  became "X is safe". The check caught both instances. The cheap defect the
+  batch still shipped is the one READMEFIRST has named since batch D, retired
+  figures surviving in frontmatter description, excerpt and seoDescription
+  fields that the numbers checker never reads.
+
 - The article page: excerpt block removed, Deep Dive prerendered and given a
   care-guide row, sidebar order on phones, contents highlight.
 - RULES: no sibling links or care-guide sentence in prose, one sibling link
@@ -11717,7 +11752,9 @@ the pass reported 13 conflicting topic groups. Decisions:
   valid species (TSN 688966, credibility "verified, standards met"). The Amur
   carp was formerly treated as a common carp subspecies, C. c. haematopterus,
   and current authorities separate it. The encyclopedia is right and the vs
-  guide moved, in the table, the body, and the FAQ.
+  guide moved, in its comparison table's Species row, its body and its FAQ. The
+  species check found two copies this pass missed, that same table's Origin row
+  and its adult-size cell, and fixed both.
 - Adult size, four figures across the set. vs goldfish "14 to 18 inches",
   handling "commonly 24 to 36 inches or more", enrichment "around two feet", hub
   and encyclopedia "12 to 36 inches". PetMD's koi care sheet, written by Dr.
@@ -12096,7 +12133,12 @@ not resolved by the rebuild:
   feet" and the legal guide said "tops out around 2 to 3 feet", twice. Both
   moved to the figure the encyclopedia and the subject-matter page already
   shared. Nothing here needed new research: two pages in the set already agreed
-  and two had drifted.
+  and two had drifted. The species check then found four more copies this pass
+  missed, in the legal guide's excerpt, its description field, one of its FAQs
+  and its NYC paragraph, plus "topping out around 3 feet and often less" on the
+  handling guide, and fixed all five. Two of those sit in the frontmatter fields
+  batches D through J have warned about, which is the defect this pass was told
+  to grep for by hand and did not.
 - Lifespan, narrated on the cost guide. Its FAQ read "Animal Diversity Web puts
   the captive average at 18 to 22 years", which the reader correctly called a
   contradicting figure buried in an FAQ. The body's 20 to 30 typical and past 30
@@ -12233,3 +12275,98 @@ Left open: the seven content gaps above, filed in docs/READER_LOG.md, and the
 two Wikipedia citations. Thawing is the one to write first: the feeding guide
 tells a reader to use frozen-thawed prey on every page that mentions food and
 never says how.
+
+## Tiger salamander, parrotlet, koi, emperor scorpion, rosy boa (2026-09-15, batch K species check)
+
+One Fable agent over the whole batch on branch
+claude/tiger-salamander-parrotlet-koi-emperor-scorpion-rosy-boa from base
+3131aaaf, run after all five species were done and pushed. Fixes committed as
+58e1f23. Pass grade B.
+
+Scope: clean. Five hub entries, the species' MDX, the four-species overview's
+tiger salamander row and FAQ, koi-vs-goldfish, the two review files, and three
+encyclopedia fields. Nothing in src outside the guide data files.
+relatedArticles.js and SHORT_LABELS were not edited and did not need to be. The
+check re-opened every source the review file names and found nothing faked:
+MDC, ADW, PetMD's parrotlet sheet (Laurie Hess, DVM), Lafeber, PetMD's koi sheet
+(Melissa Witherell, DVM), ITIS, and the Frontiers in Veterinary Science paper.
+
+**Tiger salamander, fixed on the branch.** One hub row, Life stage change, was a
+paraphrase of the tank setup guide rather than its words; fixed to the article's
+sentence. Everything else verbatim, the emergency card's four bullets match the
+health guide's four vet-directed items, and no retired figure survived anywhere
+including frontmatter.
+
+**Parrotlet, clean.** All 23 rows verbatim, both bar-spacing sources
+re-confirmed, the re-summed annual arithmetic checks, and the future-date
+decision was judged right for a reason the pass had not articulated: a
+dateModified before datePublished is invalid schema, and the article publishes
+with the corrected fact already in it. The check also confirmed Lafeber's
+Pacific parrotlet page states "never more often than one serving per day", so
+the de-attributed seed frequency is sourced.
+
+**Koi, fixed on the branch.** Two same-page copies of the corrected figures were
+left in the koi-vs-goldfish comparison table, the Origin row ("bred from common
+carp") and the adult-size cell ("14-18 in, some 3+ ft"); both fixed. The
+Frontiers paper behind the KHV mortality figure was cited in the review file but
+on no page's Sources block, so it was added to the feeding and health guides,
+and the review file's URL for it was wrong (the paper is fvets.2020.587952).
+
+**Emperor scorpion, fixed on the branch.** All 23 rows verbatim and the legal
+row confirmed row by row against the legal guide's table. One hedge shift, below.
+
+**Rosy boa, fixed on the branch.** Four hub findings, the worst of them the
+emergency card: this pass built three bullets from the health guide's section
+headings while that guide carries an explicit five-bullet "When to See a Vet"
+list, ready to copy. Replaced with the list verbatim. Two rows carried source
+narration copied out of the tank setup FAQ ("with most sources recommending",
+"with current guidance increasingly favoring"), fixed upstream in the article
+then in the row and the hub FAQ. The Thermostat probe row quoted the shared
+guide's excerpt, which is its table of contents rather than a fact; replaced
+with the probe-placement sentence the other snake hubs use. And four more copies
+of the old "2 to 3 feet" adult size survived in the legal guide's excerpt,
+description, a FAQ and its NYC paragraph, plus one on the handling guide.
+
+**The hedge finding, on two species.** De-narrating "some sources extend this to
+59 to 77°F" (koi) and "some sources extending that to 70 to 90°F" (emperor
+scorpion) produced "safe across a wider 59 to 77°F" and "70 to 90°F is safe as
+long as a gradient exists". Both assert safety no source was quoted for, which
+is a hedge change and on the Never list. Fixed to "with 59 to 77°F as the outer
+limits" and "with 70 to 90°F as the outer limits", in the body, the FAQ, the hub
+row and the hub FAQ where each appeared. Worth carrying forward: stripping a
+source name off a hedged range is the moment to check that the replacement
+wording claims exactly what the original did and no more. This is a new shape of
+the de-narration defect, distinct from the source-name leak the last four batches
+found.
+
+Left open, not fixable under the Never list: the rosy boa cost guide's lifespan
+FAQ carries "20 to 30 typical" beside "the captive average sits nearer 18 to 22".
+ADW confirms both 18 to 22 and past 30, so neither is wrong, but settling the
+tension means establishing what the body's 20 to 30 rests on, which the page's
+Sources do not show, and it ripples into the encyclopedia and the overview. Needs
+new research rather than a decision. Also left: the rosy boa encyclopedia's
+description prose says "Rarely exceeding 3 feet as adults" next to its own
+adultSize field of "rarely over 4 feet"; both are defensible against ADW's 17 to
+44 inches, and the prose is not the field that conflicted with a deep dive, so
+the one-field rule keeps it out of scope.
+
+Gates on 58e1f23: check-internal-links (796/796), check-related-articles,
+check-affiliate-mdx, check-cost-coverage, check-seo-tags, check-voice --strict
+(0 errors, 356 warnings, unchanged from base), check-hub-faqs (61/61 verbatim),
+check-encyclopedia (0/0), eslint --quiet, all green. check-species-numbers
+--strict for all five: every hub value appears in its named deep dive. One
+correction to how the batch reported that script: --strict exits 1 on any
+advisory group and did so at 3131aaaf too, so "strict: green" was loose wording.
+The substantive condition, no hub line disagreeing with its deep dive, holds and
+was verified value by value. Voice findings per rule are identical to 3131aaaf on
+all 33 changed MDX files.
+
+Pass grade B, in the check's words: the batch "did the expensive things right,
+real research with quotable sources behind every moved number, rewrote quotes
+instead of de-attributing them, kept every hedge but the two 'safe' assertions,
+caught its own koi date mistake, and filed review sections whose counts match the
+diff. What it kept missing is the cheap, named, repeated defect: retired figures
+left in frontmatter and table cells, six on rosy boa and koi, the exact pattern
+READMEFIRST warns about from batches D to J; source narration reaching a hub row
+and hub FAQ again; and a rosy boa emergency card written from headings when the
+health guide had the list ready to copy."
