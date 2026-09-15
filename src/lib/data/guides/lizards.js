@@ -954,65 +954,107 @@ export const lizardGuides = [
     image: "/assets/guides/uromastyx.jpg",
     tagline: "The colorful, seed-eating desert dragon that thrives on extreme heat!",
     funFact: "Uromastyx (also called spiny-tailed lizards) are almost entirely herbivorous. They get nearly all their water from their food and rarely need a standing water dish! They're one of the few reptiles that thrive on seeds.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "4x2x2 ft+ enclosure", low: 150, high: 300 },
-        { item: "High-wattage basking bulb + fixture", low: 25, high: 45 },
-        { item: "Quality thermostat", low: 40, high: 70 },
-        { item: "Strong desert UVB (T5 HO Arcadia Dragon 12%)", low: 70, high: 110 },
-        { item: "Sandy desert substrate", low: 20, high: 35 },
-        { item: "Infrared thermometer gun", low: 25, high: 40 },
-      ],
-      annual: [
-        { item: "Dark leafy greens daily", low: 100, high: 180 },
-        { item: "Seeds and legumes", low: 30, high: 60 },
-        { item: "Calcium and multivitamin supplements", low: 20, high: 30 },
-        { item: "UVB bulb replacement", low: 70, high: 110 },
-        { item: "Electricity (high-wattage basking)", low: 70, high: 120 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Quarantine, thermostats, stool, hygiene, shedding
+    // and the emergency plan cite the shared reptile guides in the sidebar's
+    // Health and More list. Reconciled 2026-09-15 after the uromastyx set test
+    // (docs/READER_REVIEWS.md).
+    //
+    // The reader's summary of the old hub: it "contradicts four numbers a new
+    // keeper will act on". Retired rather than moved:
+    // basking 120 to 140F against the setup guide's 120 to 130F, with at least
+    // 130F for giant Egyptians; a 12% UVB bulb against the setup guide's 14%
+    // and its UVI 4.5 to 6.0 target; substrate "3 to 4 inches deep" and an
+    // 80/20 sand-to-soil mix against at least 4 inches of 50/30/20 sand,
+    // topsoil and excavator clay; an enclosure at $150 to $300 against the cost
+    // guide's $280 to $400; adult size 10 to 18 inches against the
+    // encyclopedia's 10 to 30; "seeds form a nutritionally important part of
+    // the diet" against the feeding guide's "treat seeds as limited, not a
+    // daily component"; "remove any water dish" against the health guide's
+    // veterinary guidance to keep one available even if it goes untouched;
+    // "supervised handling sessions build trust quickly" against the enrichment
+    // guide's "do not treat handling as enrichment for a species that mostly
+    // wants to be left on its rock"; and "no insects in the diet" against the
+    // enrichment guide's "occasional insects are not a disaster".
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "The lizard", value: "$150 to $400 for a common captive-bred Mali or ornate uromastyx, with hatchlings toward the lower end and adults higher. Rarer or imported species can reach $300 to $800. More vividly colored animals command higher prices than the common drab brown or gray ones.", source: "uromastyx-cost-guide" },
+        { label: "Setup budget", value: "Roughly $500 to $900. The enclosure is the biggest single expense at $280 to $400, and it needs to be 4x2x2 feet at minimum from day one rather than a smaller size you'll upgrade later. A halogen basking fixture and bulb is $19 to $26, and the rest is a T5 HO UVB kit, a daylight LED bar, thermometers and an infrared temperature gun, deep sand substrate, hides and basking stack materials.", source: "uromastyx-cost-guide" },
+        { label: "Starter kits", value: "Be cautious with pre-made \"complete\" starter kits, some are sized for a 20-gallon tank, which is genuinely too small for this species as an adult.", source: "uromastyx-cost-guide" },
+        { label: "Monthly", value: "Roughly $25 to $45 a month for fresh greens and produce, seeds, supplements, and the cost of running high-wattage bulbs.", source: "uromastyx-cost-guide" },
+        { label: "Vet costs", value: "A routine exotic exam runs $50 to $100, with a fecal test adding $20 to $50. Emergencies involving metabolic bone disease, impaction, or egg-binding can run several hundred dollars.", source: "uromastyx-cost-guide" },
+        { label: "Lifespan", value: "15 to 20 years is the number most commonly cited for this species, and truly high-quality care can push it past 25 years, with some individuals reportedly reaching as old as 60. Plan for the longer figure rather than the common one.", source: "uromastyx-cost-guide" },
+        { label: "Adult size", value: "10 to 30 inches (25 to 75 cm) depending on species." },
+        { label: "Enclosure size", value: "4 feet long by 2 feet wide by 2 feet tall is the minimum for species up to about 18 inches. Larger species, the Egyptian uromastyx especially, need up to 8x4x4 feet for a full-grown adult. House one uromastyx per enclosure.", source: "uromastyx-tank-setup-guide" },
+        { label: "Basking, the defining requirement", value: "Basking surface temperature needs to reach 120 to 130°F, with the giant Egyptian species needing at least 130°F. Cool zone should sit around 85°F, with nighttime dropping to around 65°F, usually without needing supplemental night heat.", source: "uromastyx-tank-setup-guide" },
+        { label: "The basking stack", value: "Halogen flood bulbs positioned over a stacked stone or slate basking stack let your uromastyx choose its exact preferred spot along the gradient.", source: "uromastyx-tank-setup-guide" },
+        { label: "Humidity, the other one", value: "Uromastyx need humidity low enough to make a bearded dragon look tropical by comparison, just 20 to 30% ambient, measured on the cool side. High humidity makes this species genuinely sick. A humid microclimate within a burrow is beneficial, the key is keeping the surface layer of substrate dry while allowing moisture to persist deeper down. A few coastal species, like the Yemen uromastyx, want closer to 50%.", source: "uromastyx-tank-setup-guide" },
+        { label: "Substrate", value: "Fine sand or a sandy soil mix, or a DIY blend of roughly 50% play sand, 30% topsoil, and 20% excavator clay, packed at least 4 inches deep to support burrowing. Avoid moisture-retaining substrates like coco fiber, mulch, or moss, and skip loose calcium sand or walnut shell products entirely, both carry real impaction risk.", source: "uromastyx-tank-setup-guide" },
+        { label: "UVB", value: "Strong UVB is required, not optional, for this diurnal species. A high-output T5 HO bulb in the 14% range, targeting a basking-area UVI of 4.5 to 6.0, paired with a bright daylight LED bar. Replace UVB bulbs on the manufacturer's schedule, typically every 6 to 12 months.", source: "uromastyx-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Babies and juveniles get fresh vegetables and greens daily, as much as they'll clean up in one sitting. Published figures for adults run from 2 to 4 times a week up to 5 to 7 days a week; lean toward the less-frequent end, since overfeeding is a real and common mistake in this species.", source: "uromastyx-feeding-guide" },
+        { label: "When to put food down", value: "Put food down about 1 to 2 hours after the basking light comes on, so the animal is already warm enough to digest what it eats, and leave it available for daytime grazing.", source: "uromastyx-feeding-guide" },
+        { label: "What they eat", value: "The bulk of the diet is dark leafy greens and edible flowers, chopped or shredded, not whole leaves, which are a choking and impaction risk especially for young animals: collard greens, dandelion greens and flowers, mustard and turnip greens, endive, escarole, arugula, watercress, and hibiscus leaves and flowers.", source: "uromastyx-feeding-guide" },
+        { label: "Seeds, limited", value: "Seeds and legumes, soaked or sprouted lentils, white millet, small amounts of sesame, are a real point of disagreement in published guidance, from no more than once a week to small amounts several times weekly. Treat seeds as limited, not a daily component either way.", source: "uromastyx-feeding-guide" },
+        { label: "Insects", value: "Some traditional care sheets allow small amounts of mealworms occasionally, but wild-diet studies put insects at only about 1 to 6% of stomach contents, likely eaten by accident, so treat insects as optional at best and never a required part of the diet.", source: "uromastyx-feeding-guide" },
+        { label: "A uromastyx that stops eating", value: "Acclimation fasting of about 1 to 2 weeks in a newly acquired animal, brief shedding dips, and a seasonal brumation slowdown of roughly 1 to 2 months are all normal, provided the animal still looks alert and hydrated. Appetite loss past about a week outside one of those contexts is a vet visit, and a fasting uromastyx losing more than roughly 5 to 10% of body weight is not simply brumating.", source: "uromastyx-feeding-guide" },
+        { label: "Where the water comes from", value: "A uromastyx almost never drinks from a bowl, and that confuses new keepers into thinking it is not drinking at all. These lizards get almost all of their water from food, so feed greens before they wilt. A water bowl stays available too, even if it goes untouched, in an enclosure that otherwise has to stay dry.", source: "uromastyx-health-issues-guide" },
+        { label: "Metabolic bone disease", value: "The most common issue in captivity. Watch for a soft or hanging jaw, swollen limbs, tremors, deformed bones, and lethargy, though the early signs are behavioral: poor appetite, weakness, and an inability to walk normally. Always see a vet, severe cases can be fatal.", source: "uromastyx-health-issues-guide" },
+        { label: "Impaction", value: "Bloating, no bowel movements, appetite loss, and lethargy point here. Caused by ingesting loose substrate, particularly calcium sand or walnut shell products, or eating food that's too large. Bloating, or stool that has stopped, is a vet visit rather than a wait.", source: "uromastyx-health-issues-guide" },
+        { label: "Respiratory infection", value: "Wheezing, open-mouth breathing, and mucus at the nostrils, caused by humidity running too high or temperatures too low. The early version is a lizard that sits with its mouth slightly open, or a bubble at a nostril.", source: "uromastyx-health-issues-guide" },
+        { label: "Weigh it monthly", value: "An annual wellness exam that includes fecal testing for parasites is the right cadence even for a uromastyx that looks fine, since the signs start with appetite loss and weight loss rather than anything visible. Weighing monthly on a gram scale catches that earlier than your eye will.", source: "uromastyx-health-issues-guide" },
+        { label: "Handling", value: "Scoop from below rather than reaching down from above, which reads as a predatory approach and triggers defensive hissing and tail-whipping. Support the entire body, hold loosely, and keep sessions relatively short, 10 to 15 minutes is plenty for a new or young animal.", source: "uromastyx-handling-guide" },
+        { label: "The first two weeks", value: "Give a newly acquired uromastyx about two weeks alone to settle in before attempting regular handling.", source: "uromastyx-handling-guide" },
+        { label: "The tail", value: "Because uromastyx don't drop their tails as an escape defense the way many lizards do, that tail stays a permanent, muscular weapon rather than a one-time sacrifice, which is exactly why grabbing or restraining a uromastyx by the tail is never the right move.", source: "uromastyx-handling-guide" },
+        { label: "What actually counts as enrichment", value: "In priority order: a hot basking surface with a genuinely cool end, strong UVB across the basking zone, substrate deep enough to excavate or a large dig box, scattered and varied plant foraging, anchored rock and height, cover at both ends of the gradient, and novelty last, since visual enrichment ranked bottom in the closest study.", source: "uromastyx-enrichment-guide" },
+        { label: "Against the bearded dragon", value: "Both are popular desert lizards that tolerate handling reasonably well. The difference isn't temperament, it's diet and environment: uromastyx are strict herbivores needing even hotter basking surfaces and considerably drier air than a bearded dragon.", source: "uromastyx-handling-guide" },
+        { label: "Quarantine", value: "A new snake or lizard can look completely healthy while it is still shedding mites or a fatal virus. General reptile-keeping advice sometimes puts a workable quarantine floor at 60 to 90 days, while the Merck Veterinary Manual recommends 3 to 6 months.", source: "reptile-quarantine-guide" },
+        { label: "Thermostats and burns", value: "What a thermostat actually does, the three controller types, where the probe goes, and why wattage is a starting guess you verify, not a number you trust blindly.", source: "reptile-heating-thermostats-guide" },
+        { label: "The daily check", value: "Reptile stool and urates are a free, five-second daily health check that works across lizards, geckos, snakes, and turtles and tortoises alike, with what is normal varying by diet type and a clear line between dehydrated and an actual red flag.", source: "reptile-stool-urates-hydration-guide" },
+        { label: "Hygiene", value: "Healthy reptiles and amphibians carry Salmonella as normal gut flora, no illness required. The transmission route, the FDA four-inch rule and the hygiene habits that actually cut risk are all about handling and cleaning rather than about whether the animal looks sick.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Shedding", value: "Shedding is one of the most misunderstood aspects of reptile care. What is actually happening, what is normal, and when you need to step in.", source: "reptile-shedding-complete-guide" },
+        { label: "A power cut, and a trip", value: "What to actually do when the power goes out, you're leaving town, or you're handing your reptile off to a sitter, with species-specific cold floors in one table.", source: "reptile-emergency-plan-guide" },
       ],
     },
-    sections: {
-      housing: `Adults need a minimum 4x2x2 ft enclosure. Uromastyx are desert lizards from North Africa and the Middle East requiring extremely hot basking spots. A surface temperature of 120 to 140 degrees F at the basking site is not optional - it is biologically critical for digestion, immune function, and thermoregulation. Without adequate basking heat, uromastyx cannot function properly.
-
-The cool side should remain at 80 to 90 degrees F ambient. Strong T5 HO desert UVB (Arcadia Dragon 12% or equivalent) is mandatory and should run on a 10 to 12 hour cycle. Use a sandy desert substrate - fine play sand or an 80/20 sand-to-soil mix - 3 to 4 inches deep for natural digging behavior. Humidity should be kept very low (20 to 30%), mimicking their arid native habitat. A water dish is typically unnecessary and can raise humidity to unhealthy levels.
-
-Enclosure temperatures must be measured with an infrared temperature gun for accuracy. A high-wattage halogen or flood bulb on a quality thermostat achieves the required basking surface temperature.`,
-      diet: `Uromastyx are primarily herbivores and enthusiastic seed-eaters - this is relatively unusual among reptiles and makes them interesting to feed. Staple greens include collard greens, mustard greens, dandelion greens, endive, and escarole. Dark leafy greens should form the bulk of plant matter offered.
-
-Seeds form a nutritionally important part of the diet: millet, lentils, split peas, various legume seeds, and quinoa are all appropriate. Offer seeds mixed into the greens or provided separately. Uromastyx eat them with obvious enthusiasm. Seeds provide protein, fat, and trace minerals that complement the leafy green base.
-
-Do not provide a water dish as part of the regular setup - uromastyx get adequate hydration from their food, and a water dish raises humidity significantly, which is inappropriate for this arid-adapted species. Dust greens with calcium 2 to 3 times per week and a reptile multivitamin once weekly. Avoid high-oxalate foods like spinach as primary staples.`,
-      enrichment: `Uromastyx are active, curious lizards that explore their enclosure during the warm hours of the day and engage with their environment in ways that many reptiles do not. They can become remarkably personable - many develop what keepers describe as dog-like personalities, seeking interaction and responding to their keeper's presence.
-
-Provide rock stacks (securely stacked to prevent toppling), cork bark hides, and burrowing substrate deep enough for natural digging behavior. Uromastyx enjoy rearranging their environment and will push cork bark and rocks around to suit their preferences. This is entirely normal and engaging to watch.
-
-Foraging enrichment is highly effective: hide seeds in the substrate, under rocks, or in puzzle feeders to encourage natural searching behavior. Supervised handling sessions build trust quickly with this species. Most uromastyx become calm and manageable adults with consistent, gentle interaction.`,
-      health: `Inadequate basking temperature is the most common and most serious husbandry failure in uromastyx. A basking surface temperature below 120 degrees F means the uromastyx cannot properly thermoregulate its core body temperature, digest food, or activate immune responses. This leads to chronic digestive problems, immune suppression, and a dramatically shortened lifespan. Monitor basking temperatures regularly.
-
-Metabolic Bone Disease from inadequate UVB or calcium supplementation causes softened bones and skeletal deformities. Strong UVB and consistent calcium supplementation prevent it. Respiratory infections can occur if humidity rises too high - keep the enclosure dry and well-ventilated.
-
-Impaction from moist substrate is possible if the sandy substrate is kept too wet. Keep it dry throughout. Annual wellness checks with a reptile veterinarian experienced in lizards are strongly recommended.`,
-      checklist: [
-        "4x2x2 ft+ enclosure",
-        "High-wattage basking bulb (120 to 140 degrees F surface)",
-        "Quality thermostat",
-        "Strong desert UVB (T5 HO Arcadia Dragon 12%)",
-        "Sandy desert substrate (fine sand/soil mix, 3 to 4 inch deep)",
-        "Digital thermometer (IR gun essential)",
-        "Calcium + multivitamin supplements",
-        "Staple dark leafy greens daily",
-        "Seeds and legumes (millet, lentils, split peas)",
-        "Reptile vet experienced with uromastyx",
+    emergencyCard: {
+      source: "uromastyx-health-issues-guide",
+      callNow: [
+        "Lumps or swelling in the joints or under the skin",
+        "Runny or foul-smelling stools",
+        "Dull or darkened coloration",
+        "Sunken eyes or lethargy",
+        "Open-mouth breathing or discharge from the nose",
+        "Any tissue protruding from the vent",
       ],
+      vetLine: "Uromastyx are hardy desert specialists, and most health problems trace directly back to getting this species' unusually specific heat, humidity, or dietary needs wrong. Dehydration looks like loose skin, sunken eyes, dull color, and lethargy. A lizard showing those needs a vet, not a bigger water bowl.",
     },
+    routes: [
+      { slug: "uromastyx-cost-guide", line: "$150 to $400 for the lizard, $500 to $900 of setup, and the starter kits that are sized wrong." },
+      { slug: "uromastyx-tank-setup-guide", line: "4x2x2 as a floor, a 120 to 130F basking surface, 20 to 30% humidity, and the substrate recipe." },
+      { slug: "uromastyx-feeding-guide", line: "A herbivore's schedule by age, the greens list, where seeds actually belong, and how to read a fast." },
+      { slug: "uromastyx-handling-guide", line: "Two weeks hands-off, scoop from below, and why the tail is a permanent weapon rather than a sacrifice." },
+      { slug: "uromastyx-health-issues-guide", line: "MBD, impaction, respiratory infection, where the water comes from, and the six signs that mean call now." },
+      { slug: "uromastyx-enrichment-guide", line: "Heat and a burrow beat every object you can buy, with the priority order to build in." },
+    ],
+    buyList: [
+      "A 4x2x2 ft enclosure as a floor, up to 8x4x4 for a full-grown Egyptian",
+      "Halogen flood bulbs and a fixture for the basking stack",
+      "A T5 HO UVB kit around 14%, plus a bright daylight LED bar",
+      "Stacked stone or slate for the basking stack",
+      "Fine sand, topsoil and excavator clay for a 4 inch mix",
+      "A digital thermometer and hygrometer, plus an infrared temperature gun",
+      "Hides at both ends of the gradient",
+      "A shallow water bowl, even though it will mostly go untouched",
+      "Calcium and multivitamin supplements",
+      "A gram scale for monthly weights",
+    ],
     faqs: [
-      { q: "Do uromastyx need a water dish?", a: "No - and providing one is actively discouraged for most setups. Uromastyx are adapted to extremely arid environments and get all necessary hydration from their food. A water dish raises enclosure humidity significantly, which is inappropriate for this desert-adapted species. Remove any water dish from a standard uromastyx setup and rely on fresh vegetables for hydration." },
-      { q: "How hot does the basking spot need to be for uromastyx?", a: "120 to 140 degrees F at the surface, measured with an infrared temperature gun. This is biologically critical - uromastyx cannot digest food, activate immune function, or properly thermoregulate without access to these extreme surface temperatures. High-wattage halogen or flood bulbs on a quality thermostat are the standard approach." },
-      { q: "What do uromastyx eat?", a: "Dark leafy greens (collard greens, mustard greens, dandelion greens, endive, escarole) form the plant base. Uniquely, they are enthusiastic seed-eaters - millet, lentils, split peas, and various legume seeds are a nutritionally important supplement. They are nearly entirely herbivorous with no insects in the diet. Keep humidity very low (20 to 30%) and do not provide a water dish." },
-      { q: "How big do uromastyx get?", a: "10 to 18 inches total length, depending on the species. Ornate uromastyx and Egyptian uromastyx are among the larger commonly kept species. All are stocky, heavyset lizards with thick, spiny tails used for defense. They reach adult size by 3 to 5 years of age." },
-      { q: "How long do uromastyx live?", a: "15 to 20+ years in captivity with appropriate care - primarily the correct extreme basking temperatures (120 to 140 degrees F surface), dry conditions (20 to 30% humidity), a primarily herbivorous diet with seeds, and strong desert UVB. They are hardy animals once their specific needs are met." },
+      { q: "What size enclosure does a uromastyx need?", a: "Plan on 4x2x2 feet for species that top out around 18 inches, and up to 8x4x4 for a full-grown Egyptian. Keep it to one animal per enclosure." },
+      { q: "How hot does a uromastyx basking spot need to be?", a: "The basking surface has to hit 120 to 130F, and giant Egyptians want at least 130F. Cool side around 85F, night around 65F, usually with no supplemental heat needed." },
+      { q: "What's the most common health issue in captive uromastyx?", a: "Metabolic bone disease. The signs are a soft or hanging jaw, swollen limbs, tremors, deformed bones, and lethargy. Behind it: too little calcium or vitamin D3, weak UVB, or a diet too high in phosphorus or oxalates. Severe cases can be fatal, so always see a vet." },
     ],
   },
   {
