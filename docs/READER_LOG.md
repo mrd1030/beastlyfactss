@@ -5073,3 +5073,91 @@ Checked against the Health and More list. Filtration plausibly covers cycling an
 - The cost of the quarantine tank two pages require; the cost guide's $60 to $150 does not include it.
 - How many shrimp to buy for a given tank size, left at 5 or 20 in a 10-gallon.
 - What a female carrying eggs actually looks like, so a keeper can tell it from the molt and illness signs the health page describes.
+
+## Tiger Salamander (2026-09-15, batch K)
+
+Raw reader output, one Opus agent, 9-page extract (hub, encyclopedia, cost,
+handling, health issues, tank setup, enrichment, legal, vs axolotl).
+
+**1. Page by page**
+
+- 00 hub. Finished it. Actionable: tank size, temp band, feeding schedule, calcium cadence, checklist, sexing. Grade B-.
+- 01 encyclopedia. Finished it. Actionable: nothing for husbandry, but it told me what animal I'm buying and why bait-shop stock is risky. Grade A-.
+- 02 cost. Finished it. Actionable: price to pay, upfront total, vet ranges. Grade C+ (numbers fight the hub; opens with a 2025 federal rule and never returns to it).
+- 03 handling. Finished it, it's short. Actionable: don't handle, use wet nitrile gloves if you must. Grade C.
+- 04 health. Finished it. Actionable: the four failure modes and what causes each. Grade B- (not one number anywhere).
+- 05 tank setup. Finished it, twice. Actionable: dimensions, substrate list with a real avoid-list, lighting, humidity. Grade B+.
+- 06 enrichment. Finished it. Actionable: the priority order list is the best thing in the set. Grade A-.
+- 07 legal. Finished it, read the table twice. Actionable: whether I can legally own one where I live. Grade A.
+- 08 vs axolotl. Finished it. Actionable: confirmed I want the terrestrial animal. Grade B.
+
+**2. Hub and encyclopedia**
+
+The encyclopedia earns its place cleanly. Nothing else tells me about the bait trade, the California hybridization emergency, or neoteny in wild populations, and it's the only page that reads like it isn't selling me a setup.
+
+The hub half-earns it. It is the only place with a feeding schedule, a supplement cadence, adult size, gut loading, and sexing. But it is the outlier in most conflicts:
+
+- Substrate. Hub: "deep substrate - 4 to 6 inches minimum". Setup: "at least 3 to 4 inches".
+- Temperature. Hub: "60 to 72 degrees F is the ideal range. They struggle noticeably above 75". Setup: "60 to 75°F, and genuinely never above about 78°F".
+- Humidity. Hub: "the humidity maintained at 70 to 80%". Setup: "70 to 75%".
+- Water, the one that matters. Hub: "never distilled or reverse-osmosis water, which carries none of the electrolytes an amphibian needs". Setup: "Treat all water with a conditioner before use, or use spring or distilled water instead." One of these is wrong and I can't tell which.
+- Tank price. Hub: "20-gallon long aquarium | $80 | $160". Cost: "Tank, 20-gallon long | $35 - $60". Substrate likewise $20-40 against $10-16.
+- Food budget. Hub annual: "$70 | $130". Cost: "Roughly $15 to $30 a Month", so $180 to $360. More than double.
+- Lifespan. Hub: "10 to 20 years in captivity". Cost: "12 to 15 years is typical".
+
+**3. The set as a whole**
+
+I could buy one, build the adult enclosure, feed it, and recognize the things that kill it. Legality is settled better than anywhere I've read. Still missing: how to actually keep a larva and run the metamorphosis transition (three pages tell me it "looks essentially identical to an axolotl's" and hand me off to an axolotl page, but nobody tells me when to lower the water, how much land to give, or when to stop); whether a captive animal needs a winter cooling period, when the encyclopedia says they overwinter in frozen soil; any cleaning or substrate-replacement cadence; how to source captive-bred when health says wild-caught stock is common; what to do the day the room hits 84.
+
+Unsignposted answers: handling asks why my salamander is never visible and the enrichment guide is the page that answers it, with no link. Health says prevention is "entirely about substrate choice" and never points at the setup page that has the avoid-list. Cost names the endangered California tiger salamander with no link to the legal guide, which is where I learn California bans the whole genus.
+
+**4. Overlap and conflict across deep dives**
+
+Read twice or more: the axolotl larval resemblance (four pages), obesity and no self-regulation (three), cool temperatures and no heat lamp (four), the four-species comparison sentence pasted almost verbatim into four pages.
+
+Conflicts:
+
+- Handling. Handling: "Direct handling should genuinely be avoided... Wear wet, powder-free nitrile gloves." Hub: "Handle with clean, slightly damp, chemical-free hands only... Keep sessions short (under 10 minutes)." vs-axolotl: "Brief handling okay with damp hands."
+- Cohabitation. Setup: "some very large enclosures can occasionally support a small group." Enrichment: "Do not house two together."
+- Feeding placement. Enrichment: "Release worms and insects into the leaf litter so finding them is the activity," then four lines later, "Keep prey off loose substrate where you can." Health wants feeding "away from any substrate that could be ingested"; the hub wants tongs.
+- Pinky mice. Hub: "Large adults can be offered occasional pinky mice as a nutritional supplement." Health lists them under "limit fatty feeders."
+
+**5. One link per page**
+
+- Hub: "Quarantine any new salamander for 30 to 60 days in a separate enclosure" to the amphibian quarantine, acclimation and water hardness guide.
+- Encyclopedia: "Larvae are sold across the United States as fishing bait under the name waterdogs" to the legal guide.
+- Cost: "the California tiger salamander is a protected, endangered species and isn't legally available as a pet" to the legal guide.
+- Handling: "it's exactly why deep, burrowable substrate matters so much" to the enrichment guide.
+- Health: "Prevention is entirely about substrate choice and feeding away from any substrate that could be ingested accidentally." to the setup guide.
+- Setup: "Provide at least 3 to 4 inches of moisture-retentive, burrow-supporting material" to the enrichment guide.
+- Enrichment: "Obesity is the standard captive problem in long-kept tiger salamanders." to the health guide.
+- Legal: "If you're buying a captive-bred tiger salamander and keeping it as a pet within the continental US" to the cost guide.
+- vs-axolotl: "needing a terrestrial setup with soil, cork bark, and a shallow soaking dish rather than standing water" to the setup guide.
+
+Pattern worth naming: almost every in-body link leaves for an axolotl page or the four-species overview. Not one deep dive links to another tiger salamander keeping page.
+
+**6. Trust**
+
+Doubts: the distilled-water contradiction, because both sides sound confident. The handling split, because a hub that says ten minutes of bare-hand contact and an article that says gloves-only cannot both be house policy. The tank price gap. The health page having no numbers at all when the hub has plenty. And the cost page promising a 2025 federal rule in line two and never delivering it.
+
+The sentence that convinced me a keeper wrote this: "Shallow substrate does not make the animal more visible in any meaningful sense, it removes the behavior and leaves a salamander sitting on a floor with nowhere to go." Runner-up, the appetite-loss fun fact in the health guide. Also, the legal table's 52 jurisdictions add up exactly, which nobody fakes.
+
+**7. Set grade: B-**
+
+Strong at the edges, legality and enrichment especially, but the core husbandry numbers disagree across pages and the reader is left arbitrating.
+
+First two changes:
+
+1. One source of truth for temperature, humidity, substrate depth, water treatment, handling policy, and the cost tables, then propagate it. Fix the distilled-water contradiction first.
+2. Write the larval-to-adult transition page, and cross-link the deep dives to each other and back to the hub instead of sending every link to axolotl content.
+
+**Not covered anywhere**
+
+- Larval husbandry and the metamorphosis transition for this species, with its own numbers rather than an axolotl handoff.
+- Whether a captive tiger salamander needs a winter cooling or brumation period.
+- Enclosure cleaning cadence and how often deep substrate gets replaced.
+- How to source a captive-bred animal and spot wild-caught stock.
+- What to do in a terrestrial heat emergency; the shared aquarium cooling guide is written for water, not soil.
+- What a normal shed looks like, so a keeper can tell it from the "abnormal shedding" the health page calls a red flag.
+- What kind of vet to call. No page in the set names an exotic or amphibian vet as the one to find, though the cost guide prices an "exotic exam".
+- A prey-size rule. The old hub's "no larger than the space between the salamander's eyes" was retired rather than carried into a deep dive, since no opened source states it.

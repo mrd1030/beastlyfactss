@@ -11213,3 +11213,236 @@ Source narration in pre-existing text the batch did not touch and no hub
 row copies: two amano feeding FAQs ("Seriously Fish is direct about
 this", "Shrimp Science notes plainly") and one garter feeding FAQ
 ("Sources land in a similar range").
+
+## Tiger Salamander (2026-09-15, batch K, single pass, before the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health issues,
+tank setup, enrichment, legal, vs axolotl). One Opus agent, about 97k tokens.
+The review below reads the old legacy hub (housing, diet, enrichment and health
+prose, a cost table, a checklist); the router hub was built from its findings
+the same day. Raw output in docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B- | The only page with a feeding schedule, and the outlier in most of the conflicts. |
+| Encyclopedia | A- | The bait trade, the California hybridization emergency, and neoteny, none of it repeated anywhere else. |
+| Cost | C+ | Price, upfront total and vet ranges, but its numbers fight the hub and it opens on a federal rule it never returns to. |
+| Handling | C | Don't handle, and wet nitrile gloves when you must. |
+| Health issues | B- | The four failure modes and what causes each, with not one number anywhere. |
+| Tank setup | B+ | Dimensions, a real substrate avoid-list, lighting, humidity. |
+| Enrichment | A- | The priority order list is the best thing in the set. |
+| Legal | A | Whether you can legally own one where you live, settled. |
+| vs axolotl | B | Enough to confirm which of the two you actually want. |
+
+Set grade: B-. "Strong at the edges, legality and enrichment especially, but the
+core husbandry numbers disagree across pages and the reader is left
+arbitrating."
+
+Hub versus the set, both sides quoted (all against the old legacy hub, resolved
+by the router rebuild unless noted):
+
+- Water, the one that mattered. The old hub: "never distilled or
+  reverse-osmosis water, which carries none of the electrolytes an amphibian
+  needs." Tank setup: "Treat all water with a conditioner before use, or use
+  spring or distilled water instead." The hub was right and the deep dive was
+  wrong, so this one did not resolve by construction; see Numbers checker and
+  Fixes below.
+- Substrate depth. Old hub: "deep substrate - 4 to 6 inches minimum." Tank
+  setup: "at least 3 to 4 inches." Tank setup's figure is the one PetMD's
+  vet-reviewed care sheet states ("at least 3-4 inches"), and the hub's row now
+  copies it.
+- Temperature. Old hub: "60 to 72 degrees F is the ideal range. They struggle
+  noticeably above 75." Tank setup: "60 to 75°F, and genuinely never above about
+  78°F." Tank setup matches PetMD exactly (60 F to 75 F, maximum 78 F).
+- Humidity. Old hub: "the humidity maintained at 70 to 80%." Tank setup: "70 to
+  75%." PetMD gives 70%, which tank setup's range contains and the hub's does
+  not sit on.
+- Handling policy. Old hub: "Handle with clean, slightly damp, chemical-free
+  hands only... Keep sessions short (under 10 minutes)." Handling guide: "Wear
+  wet, powder-free nitrile gloves and keep any handling brief." PetMD says
+  "powder-free latex gloves moistened with dechlorinated water," so the deep
+  dive is the sourced side and the hub's bare-hands instruction is gone.
+- Pinky mice. Old hub: "Large adults can be offered occasional pinky mice as a
+  nutritional supplement." Health guide lists them under "limit fatty feeders."
+  Both opened sources hedge downward (PetMD "an occasional treat", Amphibian
+  Care "only be fed rarely, if ever"), and the hub's Mice row now copies the
+  tank setup guide's new Diet Basics wording, which does too.
+- Tank and substrate price. Old hub setup table: "20-gallon long aquarium |
+  $80 | $160" and substrate "$20 | $40." Cost guide table: "$35 - $60" and
+  "$10 - $16." The hub keeps no cost table at all now; its Budget row quotes
+  the cost guide's own totals.
+- Food budget. Old hub annual: "$70 | $130." Cost guide: "Roughly $15 to $30 a
+  Month," which is $180 to $360. Retired with the hub's annual table.
+- Lifespan. Old hub: "10 to 20 years in captivity." Cost guide: "12 to 15 years
+  is typical." See Numbers checker.
+
+Numbers checker. `node scripts/check-species-numbers.mjs tiger-salamander
+--strict` before the pass reported 10 conflicting topic groups. Every one was
+decided:
+
+- humidity %: hub 70 to 80 against tank setup 70 to 75. Tank setup wins, PetMD
+  gives 70%. Hub prose retired.
+- temperature °F: hub 60 to 72 with stress above 75 and death above 80, against
+  tank setup 60 to 75 and never above 78. Tank setup wins, PetMD gives 60 to 75
+  with a 78 maximum. Hub prose retired.
+- substrate depth in: hub 4 to 6 against tank setup 3 to 4. Tank setup wins,
+  PetMD gives "at least 3-4 inches." Hub prose retired.
+- lifespan years: hub 10 to 20 captive, cost guide 12 to 15 typical plus a 25
+  year captive record plus "10 to 16 years in the wild", encyclopedia 12 to 16
+  as its Wild Lifespan. Researched for real. Missouri Department of
+  Conservation (.gov) states "The lifespan can be 10 years or more; in
+  captivity, the lifespan has exceeded 20 years." Animal Diversity Web
+  (University of Michigan Museum of Zoology) states "Aquatic adult tiger
+  salamanders live up to 25 years in captivity. Normal adults have reached ages
+  of 16 years." No source found gives 16 as a wild figure, so the cost guide's
+  "10 to 16 years in the wild" was misattributing ADW's captive 16 to the wild.
+  Fixed to the documented 10 or more with no firm upper bound, and the
+  encyclopedia's Wild Lifespan moved off its unsourced "12-16 years" to match.
+  The 12 to 15 typical and 25 record figures both held and are unchanged.
+- adult size in: encyclopedia 8-13 inches, old hub "up to 13 inches" and "most
+  pet trade individuals reach 8 to 11 inches". ADW gives "Adult Length 17-33 cm"
+  (6.7 to 13 inches) and MDC gives "7-8¼ inches, but occasionally to 13
+  inches." No deep dive states a size, so under RULES the hub's Adult size row
+  takes the encyclopedia's 8 to 13 inches unsourced, and the unsourced 8 to 11
+  pet-trade figure was retired with the hub's prose rather than carried into a
+  deep dive.
+- budget $, vet $, water $: every remaining group was the old hub's setup and
+  annual tables against the cost guide's. The hub carries no table now.
+
+After the rebuild the checker reports nine groups, and no line marked `hub`
+disagrees with the deep dive its row names: every one is either the identical
+sentence in both places, or the checker grouping tank dimensions and cost-table
+line items under one topic label, which RULES calls advisory.
+
+Deep dives against each other:
+
+- The distilled-water contradiction is the real one, and it is a deep dive
+  against a shared class guide rather than against a sibling. Tank setup:
+  "Treat all water with a conditioner before use, or use spring or distilled
+  water instead." The shared amphibian quarantine and water guide, citing the
+  AZA Amphibian Husbandry Resource Guide: "distilled water and reverse-osmosis
+  (RO) water are usually not electrolyte-balanced, and using either without
+  rebalancing through added buffers, electrolytes, and pH adjustment can be
+  fatal to amphibians." PetMD's care sheet independently says to use
+  dechlorinated water and avoid distilled. The tank setup guide had no Sources
+  block at all, so it loses outright. Fixed: bottled spring water stays as the
+  alternative, distilled and RO are named as the two to leave on the shelf, and
+  the sentence links the shared guide for the documented version. This is the
+  sulcata pattern from batch H, a deep dive contradicting a shared class guide
+  with nothing checking it automatically.
+- Cohabitation. Tank setup: "Cohabitation generally isn't recommended,
+  competition and even cannibalism are real risks, though some very large
+  enclosures can occasionally support a small group, worth researching
+  carefully before attempting." Enrichment, in its What Not to Do list: "Do not
+  house two together." Left as written on both pages, and the hub's
+  Cohabitation row copies tank setup's whole sentence with its hedge. Reason:
+  the two pages agree on the default, and the opened sources split on the
+  exception rather than on the default. PetMD permits it ("Several tiger
+  salamanders can be housed together in the same habitat if the enclosure is
+  large enough and the animals are not territorial," with monitoring and
+  separation if they fight), Amphibian Care does not ("Tiger salamanders are
+  best kept individually"). Neither page's hedge was changed, which is the rule.
+- Feeding placement. Enrichment: "Release worms and insects into the leaf litter
+  so finding them is the activity," and four lines later "Keep prey off loose
+  substrate where you can." Read in full those are one instruction, not two:
+  leaf litter is the surface layer, loose substrate is the burrowing medium
+  underneath. Left alone, no number or recommendation to settle.
+- Read twice with no disagreement: the axolotl larval resemblance across four
+  pages, obesity and the absent self-regulation across three, cool
+  temperatures and no heat lamp across four.
+
+Gaps, checked against the Health and More list before calling them real. The
+sidebar carries Salmonella and reptile hygiene, the axolotl tubbing and salt
+bath guide, cooling an aquarium without a chiller, amphibian quarantine and
+water hardness, the four-pets overview, vs axolotl, and the federal laws guide.
+Against that list these are real and are filed in docs/READER_LOG.md: larval
+husbandry and the metamorphosis changeover with its own numbers rather than an
+axolotl handoff; whether a captive animal needs a winter cooling period, when
+the encyclopedia says they overwinter in frozen soil; enclosure cleaning and
+substrate replacement cadence; how to spot wild-caught stock when the health
+guide says it is common in this trade; a terrestrial heat emergency, since the
+shared cooling guide is written for water; what a normal shed looks like against
+the "abnormal shedding" the health guide calls a red flag; and what kind of vet
+to call, which no page in the set names.
+
+Stranded questions, now linked: handling asked why the animal is never visible
+and never pointed at the enrichment guide, which is the page whose whole
+argument is what depth buys; the health guide said prevention is "entirely about
+substrate choice" and never pointed at the setup guide that carries the avoid
+list; the cost guide named the protected California tiger salamander and never
+pointed at the legal guide that has the state table. All three fixed.
+
+One link per page, from the reader:
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "Quarantine any new salamander for 30 to 60 days" | amphibian quarantine guide | Yes, as a hub Quarantine row |
+| Encyclopedia | "Larvae are sold... under the name waterdogs" | legal guide | No, the encyclopedia is structured data with no link slot |
+| Cost | "the California tiger salamander is a protected, endangered species" | legal guide | Yes |
+| Handling | "it's exactly why deep, burrowable substrate matters so much" | enrichment guide | Yes, body only, the same sentence in the FAQ cannot carry a link (faq-link) |
+| Health | "Prevention is entirely about substrate choice and feeding away from any substrate" | setup guide | Yes |
+| Setup | "Provide at least 3 to 4 inches of moisture-retentive, burrow-supporting material" | enrichment guide | Yes |
+| Enrichment | "Obesity is the standard captive problem in long-kept tiger salamanders." | health guide | Yes |
+| Legal | "If you're buying a captive-bred tiger salamander and keeping it as a pet" | cost guide | No, it sits in a closing paragraph that already carries three links, and adding a fourth makes it the link library RULES forbids |
+| vs axolotl | "needing a terrestrial setup with soil, cork bark, and a shallow soaking dish" | setup guide | No, a vs piece is not a deep dive and was left out of this pass |
+
+Six of nine added, each one sibling link per article with a reason, none before
+the first H2, none in a ComparisonTable cell. The reader's own note that "not
+one deep dive links to another tiger salamander keeping page" is now false on
+five of them.
+
+Trust findings the reader raised, and what happened to each: the distilled-water
+contradiction, fixed. The handling split, resolved when the hub's bare-hands
+instruction went. The tank price gap, gone with the hub's cost table. The health
+guide having no numbers, left as written since the page is a symptom-and-cause
+page and nothing in it contradicts a figure elsewhere; its lack of a Sources
+block is noted below. The cost guide opening on "A 2025 federal rule also
+touches this species, though not in the way headlines suggested" and never
+returning to it, cut.
+
+Encyclopedia. One field changed, the one that conflicted with a deep dive's
+figure, researched first. `wildLifespan` was "12-16 years" with nothing sourcing
+it, against the cost guide's "10 to 16 years in the wild". MDC (.gov) gives "10
+years or more" in the wild with no upper bound, and no source found gives a real
+upper bound, so the field now reads "10+ years in the wild (documented as 10
+years or more, with no established upper bound; the often-quoted teens figure is
+a captive range)", the same shape the crested gecko entry already uses for its
+own undocumented wild lifespan. Nothing else in the entry was touched, history
+section included.
+
+Unsourced, needs a fact-check: four of the seven tiger salamander guides carry
+no `<Sources>` block at all (handling, health issues, and before this pass cost
+and tank setup). Cost and tank setup gained one because the pass changed facts
+on them. Handling and health issues were not touched on any figure, so they were
+left unsourced rather than sourced retroactively without a read of every claim
+on them. That is a corpus-shaped question rather than a tiger salamander one and
+is worth a session of its own.
+
+This species has no feeding guide, so the standing move applied: a sourced Diet
+Basics section added to the tank setup guide, the fifth species this has come up
+on after Russian tortoise, tokay gecko, California kingsnake and savannah
+monitor. It carries the schedule (a growing juvenile every one to two days, an
+adult two to three times a week, at night), the supplement cadence (every
+feeding while growing, every second to fourth feeding once adult), and pinkie
+mice as a rare treat at most, never a staple and never live. Sources: PetMD's
+care sheet reviewed by Maria Zayas, DVM, and Amphibian Care's tiger salamander
+sheet. The old hub's prey-size rule, "no larger than the space between the
+salamander's eyes", was retired rather than carried forward, since neither
+opened source states it; filed as a gap.
+
+Fixed the same day: the tank setup guide's distilled-water instruction; a
+sourced Diet Basics section and a Sources block on the tank setup guide; the
+cost guide's wild-lifespan clause, its FunFact and FAQ copies of the same
+figures, its undelivered federal-rule opener, its "one of the more affordable
+pets on this entire site" self-reference, its takeaway's third lifespan figure
+("15 to 25" reading off neither of the page's own numbers), and a Sources block;
+the encyclopedia's Wild Lifespan field; the four link-only "part of our four
+species comparison" closing sentences on cost, tank setup, handling and health
+issues; the source narration ("a recognized longevity database") in three places
+on the cost guide and two on the four-species overview, figures unchanged; the
+affiliate template fragment in the enrichment guide ("Other sizes and volumes
+are available"); and six in-body links.
+
+Left open: the six content gaps above, filed in docs/READER_LOG.md. The larval
+husbandry gap is the one the reader named first and it is real: three pages hand
+a reader to an axolotl page for it.

@@ -50,7 +50,7 @@ export const amphibianEncyclopedia = [
       habitat: "Grassland, forest, and marshland; adjacent to breeding ponds",
       adultSize: "8-13 inches (20-33 cm)",
       wildDiet: "Worms, insects, slugs, frogs, small mice, and other salamanders",
-      wildLifespan: "12-16 years",
+      wildLifespan: "10+ years in the wild (documented as 10 years or more, with no established upper bound; the often-quoted teens figure is a captive range)",
       conservation: "Least Concern (IUCN)",
       history: "Jacob Green described the species in 1825, but its most consequential history has been commercial. Larvae are sold across the United States as fishing bait under the name waterdogs, and West Coast populations exist because bait animals were released there rather than because the species spread on its own. In California that trade produced a genetic emergency: barred tiger salamanders introduced into central California ponds in the middle of the twentieth century interbred with the federally endangered California tiger salamander, and work by Benjamin Fitzpatrick and Bradley Shaffer published in the Proceedings of the National Academy of Sciences in September 2007 found the hybrids unexpectedly vigorous. The same trade moves Ambystoma tigrinum virus, a ranavirus common in bait shop stock.",
     },

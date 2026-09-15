@@ -230,63 +230,81 @@ Chytrid fungus (Bd) quarantine protocols apply to all new animals: quarantine an
     image: "/assets/guides/tiger-salamander.jpg",
     tagline: "North America's largest land-dwelling salamander and a remarkably personable pet!",
     funFact: "Tiger salamanders are one of North America's largest terrestrial salamanders, reaching 13 inches. They are also among the most cold-tolerant amphibians on the continent, naturally overwintering underground in frozen soil across much of the US and Canada.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "20-gallon long aquarium (terrestrial setup)", low: 80, high: 160 },
-        { item: "Deep moist substrate (coconut fiber, soil, moss)", low: 20, high: 40 },
-        { item: "Flat cork bark and rock hides", low: 15, high: 30 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Shallow soaking water dish", low: 8, high: 15 },
-      ],
-      annual: [
-        { item: "Nightcrawlers, crickets, and dubia roaches", low: 70, high: 130 },
-        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
-        { item: "Dechlorinated water treatment", low: 15, high: 30 },
-        { item: "Annual vet check (exotic/amphibian)", low: 50, high: 90 },
-      ],
-    },
-    sections: {
-      housing: `A 20-gallon long aquarium is the recommended minimum for one adult tiger salamander, though 40 gallons is significantly better and allows more natural behavior. Longer, lower enclosures suit this ground-dwelling species better than tall enclosures. Provide deep substrate - 4 to 6 inches minimum - of a mix of coconut fiber, organic potting soil (no perlite, no fertilizer, no bark dyes), and sphagnum moss. Tiger salamanders are semi-fossorial: they will burrow into this substrate and spend significant time underground.
-
-Temperature is critical and often overlooked. Tiger salamanders are cool-adapted temperate amphibians: 60 to 72 degrees F is the ideal range. They struggle noticeably above 75 degrees F and can die from prolonged exposure above 80 degrees F. In warm climates, an air-conditioned room or basement location is mandatory. Do not use under-tank heaters or heat lamps - these are cooling-requirement animals.
-
-Provide flat cork bark slabs, flat stones, and low hides to supplement the burrowing substrate. A shallow, wide water dish (not heated) should be available at all times for soaking. The substrate should feel consistently moist - like a wrung-out sponge - with the humidity maintained at 70 to 80%.`,
-      diet: `Tiger salamanders are opportunistic carnivores with a hearty appetite. Nightcrawlers (large earthworms from a bait shop or pesticide-free garden) are the best single food item: nutritionally complete, naturally scented, eagerly accepted, and available year-round from bait shops. Cut to appropriate size for juveniles.
-
-Live crickets and dubia roaches are excellent staples. Superworms (Zophobas morio) are acceptable as supplemental feeders. Large adults can be offered occasional pinky mice as a nutritional supplement - but not regularly, as mice are very high in fat and can cause obesity and fatty liver disease in captive salamanders over time.
-
-Feed juveniles every other day, adults 2 to 3 times per week. Prey should be no larger than the space between the salamander's eyes. Dust all feeders with calcium w/D3 powder at every other feeding and with a reptile multivitamin once weekly. Tiger salamanders can be trained to eat from feeding tongs, which is more hygienic and efficient than live prey in the enclosure.`,
-      enrichment: `Tiger salamanders are among the most personable salamander species in the hobby. Unlike many amphibians that remain reclusive and stressed by keeper interaction, tiger salamanders regularly recognize their keeper, approach the front of the enclosure at feeding time, and develop observable feeding routines. This personability makes them highly rewarding to keep.
-
-Provide burrowing substrate deep enough to disappear completely. Varied hides at the surface (cork bark, flat stones, commercial reptile hides) supplement the burrowing option and allow the salamander to choose its comfort level. A shallow soaking dish large enough for the whole body is important - tiger salamanders soak regularly, especially before and after shedding.
-
-Handle with clean, slightly damp, chemical-free hands only. They tolerate brief, calm handling better than most salamander species. Keep sessions short (under 10 minutes) and allow the salamander to move voluntarily rather than restraining it. Observe for stress signs: rapid or labored breathing, excessive squirming, or mucus secretion indicate the salamander should be returned to its enclosure.`,
-      health: `The most pervasive health risk for tiger salamanders - and all amphibians - is chemical exposure through their highly permeable skin. Never handle after applying lotion, sunscreen, insect repellent, or hand sanitizer. Even trace amounts of these substances are toxic. Always rinse and dampen hands with dechlorinated tap water immediately before handling. Use only dechlorinated tap water for the soaking dish and substrate misting, never distilled or reverse-osmosis water, which carries none of the electrolytes an amphibian needs. Tap water chlorine is absorbed directly through the skin, which is what dechlorinating removes.
-
-Chytrid fungus (Bd) is the most serious amphibian disease globally and is present in wild populations. Quarantine any new salamander for 30 to 60 days in a separate enclosure before introducing it near other amphibians. Watch for lethargy, reddening of the skin (especially the underside and limbs), excessive skin shedding, loss of righting response, and refusal to eat as symptoms of Bd or other illness.
-
-Annual health checks with an exotic or amphibian veterinarian are strongly recommended. Tiger salamanders can live 10 to 20 years in captivity - this is a long-term commitment, and preventive veterinary care pays dividends over the animal's lifespan.`,
-      checklist: [
-        "20-gallon long aquarium",
-        "4 to 6 inch moist substrate (coconut fiber, organic soil, sphagnum)",
-        "Flat cork bark and rock hides",
-        "Shallow soaking water dish (dechlorinated water, always available)",
-        "Digital thermometer and hygrometer (keep cool, 60 to 72 degrees F)",
-        "Calcium w/D3 + reptile multivitamin",
-        "Gut-loaded live insects and nightcrawlers",
-        "Feeding tongs",
-        "Dechlorinated tap water only",
-        "Exotic/amphibian vet contact",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry, which no deep dive repeats. Quarantine, moving a new arrival, and
+    // hygiene cite the shared amphibian and reptile guides in the sidebar's
+    // Health and More list. Built 2026-09-15 for the tiger salamander set test
+    // (docs/READER_REVIEWS.md), which found the old hub telling readers distilled
+    // water was a fine substitute while the shared amphibian water guide calls it
+    // potentially fatal, and carrying the set's only feeding schedule with
+    // nothing sourcing it. This species has no feeding guide, so the diet rows
+    // below come from the tank setup guide's Diet Basics section.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Legal check", value: "Eleven jurisdictions ban this animal, and two of them get there by pointing at the federal list rather than writing their own. The January 2025 injurious-wildlife listing restricts importing and a narrow set of shipments, and does not affect ownership, breeding, sale, purchase, or possession. New Jersey is the exception that reaches a pet: the state endangered listing applies whatever the animal's origin, and the larval form is separately barred by appearance.", source: "tiger-salamander-legal-guide" },
+        { label: "Enclosure size", value: "A 20-gallon long tank, 24 inches long by 18 inches wide by 12 inches tall, works as a minimum for a single adult. Favor horizontal floor space over height, this is a ground-dwelling, burrowing species, not a climber.", source: "tiger-salamander-tank-setup-guide" },
+        { label: "Cohabitation", value: "Cohabitation generally isn't recommended, competition and even cannibalism are real risks, though some very large enclosures can occasionally support a small group, worth researching carefully before attempting.", source: "tiger-salamander-tank-setup-guide" },
+        { label: "Temperature", value: "60 to 75°F, and genuinely never above about 78°F, heat stress is a real concern for this species. Most rooms need no supplemental heat at all if they stay above roughly 60°F.", source: "tiger-salamander-tank-setup-guide" },
+        { label: "Humidity", value: "70 to 75%, maintained through consistently moist, never soggy, substrate and a shallow water dish. A moisture gradient, one end of the enclosure slightly damper than the other, gives your salamander some choice in where to settle.", source: "tiger-salamander-tank-setup-guide" },
+        { label: "Substrate", value: "At least 3 to 4 inches of moisture-retentive, burrow-supporting material, coconut fiber, a commercial reptile soil product, organic fertilizer-free topsoil, or cypress mulch all work, and deeper is better. Avoid peat moss specifically, its acidity can cause real harm over time, and skip gravel, sand, small bark chips, and anything containing vermiculite or perlite.", source: "tiger-salamander-tank-setup-guide" },
+        { label: "Water", value: "A shallow dish of dechlorinated water should always be available. Treat all water with a conditioner before use, or use bottled spring water instead. Distilled and reverse-osmosis water are the two to leave on the shelf.", source: "tiger-salamander-tank-setup-guide" },
+        { label: "Lighting", value: "This species is largely nocturnal and fossorial, and doesn't require UVB, though a low level is considered optional and potentially beneficial by some sources. A low-wattage light on a normal 10 to 12 hour day and night cycle supports a healthy rhythm without adding unnecessary heat.", source: "tiger-salamander-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Feed a growing juvenile every one to two days and an adult two to three times a week, at night, in small measured quantities. This species does not stop when it has had enough, which is why obesity is the problem it runs into most often.", source: "tiger-salamander-tank-setup-guide" },
+        { label: "Supplements", value: "Dust feeders with a calcium and vitamin D3 supplement plus a multivitamin, at every feeding while the animal is growing and every second to fourth feeding once it is adult.", source: "tiger-salamander-tank-setup-guide" },
+        { label: "Mice", value: "A frozen and thawed pinkie or fuzzy mouse is a rare treat at most for a large adult, never a staple and never fed live.", source: "tiger-salamander-tank-setup-guide" },
+        { label: "Handling", value: "Direct handling should genuinely be avoided with this species. If it is necessary, wear wet, powder-free nitrile gloves and keep any handling brief.", source: "tiger-salamander-handling-guide" },
+        { label: "Out of sight is normal", value: "This species is fossorial, spending most of its time burrowed underground rather than visible on the surface the way a more aquatic amphibian might be. Don't mistake a salamander that's rarely visible for one that's unhealthy or hiding from stress.", source: "tiger-salamander-handling-guide" },
+        { label: "Appetite loss", value: "This species is normally such a voracious eater that appetite loss is treated as a specific red flag rather than routine pickiness. A tiger salamander that suddenly turns down food is usually telling you something, not just being fussy.", source: "tiger-salamander-health-issues-guide" },
+        { label: "Life stage change", value: "A larval salamander starts in what is essentially an axolotl's setup, fully aquatic. As it metamorphoses into its terrestrial adult form, the whole enclosure has to change over to the deep, burrowable one. This is a normal part of the species' development, not something gone wrong.", source: "tiger-salamander-tank-setup-guide" },
+        { label: "Budget", value: "$30 to $50 for a juvenile barred or eastern tiger salamander, the most common types in the trade, with rarer morphs and larger animals reaching $125 or more. Roughly $150 to $400 for the setup, and roughly $15 to $30 a month after that.", source: "tiger-salamander-cost-guide" },
+        { label: "Vet costs", value: "A routine exotic exam runs $50 to $135, sometimes cited higher, $150 to $300, for a thorough workup. Emergency visits start around $150 to $300 before diagnostics.", source: "tiger-salamander-cost-guide" },
+        { label: "Lifespan", value: "12 to 15 years is typical, with well-documented cases reaching considerably longer. The captive maximum on record is 25 years, and ordinary captive adults have reached 16.", source: "tiger-salamander-cost-guide" },
+        { label: "Adult size", value: "8 to 13 inches (20 to 33 cm)." },
+        { label: "Quarantine", value: "Six to eight weeks is typically adequate for a new amphibian, and a single pet keeper can reasonably land in the middle of that range rather than at the minimum. Zoo and aquarium practice runs a 30-day minimum with 60 days preferred before release. Bd and, for salamanders specifically, Bsal are real pathogens with a documented pet-trade pathway behind them.", source: "amphibian-quarantine-and-water-guide" },
+        { label: "Moving a new arrival", value: "A container, never a net, especially for any amphibian's skin. Match temperature before chemistry, and give the water itself time to blend rather than swapping it all at once. Run a fecal screen somewhere in that window.", source: "amphibian-quarantine-and-water-guide" },
+        { label: "Hygiene", value: "A completely healthy-looking reptile or amphibian can carry and shed Salmonella with no outward sign of illness at all, and the route is hands and surfaces to mouth rather than bites. Children younger than 5 should not handle or touch reptiles or amphibians or their environments at all.", source: "reptile-salmonella-hygiene-guide" },
       ],
     },
+    emergencyCard: {
+      source: "tiger-salamander-health-issues-guide",
+      callNow: [
+        "Suspected substrate impaction. Always see a vet, this can become genuinely fatal if left untreated",
+        "Metabolic bone disease, from calcium or vitamin D3 deficiency",
+        "Red or discolored skin, abnormal shedding, a real change in behavior, or appetite loss, any of which can mean a skin or bacterial infection including chytrid fungus. Always see a vet",
+        "Suspected parasites, often carried by wild-caught feeders or wild-origin animals",
+      ],
+      vetLine: "A vet fecal exam is worth doing for peace of mind, especially given how commonly wild-caught stock shows up in this species' trade. Appetite loss is the signal to act on: this species is normally such a voracious eater that any drop in appetite is a genuine red flag.",
+    },
+    routes: [
+      { slug: "tiger-salamander-cost-guide", line: "The animal at $30 to $125, the upfront setup, the monthly feeder bill, and the lifespan that is the real commitment." },
+      { slug: "tiger-salamander-tank-setup-guide", line: "Enclosure size, 60 to 75°F, humidity, the substrate avoid-list, water, lighting, diet basics, and the larval-to-adult changeover." },
+      { slug: "tiger-salamander-handling-guide", line: "Why handling stays minimal, what to do when it is unavoidable, and why an animal you rarely see is behaving normally." },
+      { slug: "tiger-salamander-health-issues-guide", line: "Obesity, substrate impaction, metabolic bone disease, skin and bacterial infection including chytrid, and parasites." },
+      { slug: "tiger-salamander-enrichment-guide", line: "Substrate depth as the whole guide, what the amphibian enrichment research does and does not say, and the priority order." },
+      { slug: "tiger-salamander-legal-guide", line: "The January 2025 federal rule, the bait-trade regulations it gets confused with, and where all 52 jurisdictions land." },
+    ],
+    buyList: [
+      "20-gallon long tank, 24 by 18 by 12 inches",
+      "Coconut fiber, commercial reptile soil, fertilizer-free topsoil, or cypress mulch, enough for 3 to 4 inches and deeper if the enclosure allows",
+      "Leaf litter for surface cover",
+      "Flat cork bark and low hides",
+      "Shallow water dish large enough to sit in",
+      "Water conditioner, or bottled spring water",
+      "Digital thermometer and hygrometer combo",
+      "Low-wattage light on a 10 to 12 hour cycle",
+      "Calcium with vitamin D3 and a multivitamin",
+      "Nightcrawlers, crickets, and roaches",
+      "Feeding tongs",
+      "Secure lid",
+    ],
     faqs: [
-      { q: "Are tiger salamanders good pets?", a: "Yes - they are unusually personable for salamanders. Unlike most amphibians that remain permanently reclusive and stressed by any keeper interaction, tiger salamanders regularly learn to recognize their keeper, approach the front of the enclosure at feeding time, and develop predictable feeding routines. Many keepers describe them as having 'personality' in a way that surprises people who have only kept more typical reclusive amphibians. Their size (up to 13 inches), bold coloration, and interactive feeding behavior make them one of the most rewarding salamander species in the hobby." },
-      { q: "What temperature do tiger salamanders need?", a: "60 to 72 degrees F is the ideal range - they are cool-adapted temperate amphibians that naturally overwinter in frozen soil across much of North America. They begin showing visible stress above 75 degrees F: reduced activity, attempting to escape, and immune suppression. Prolonged temperatures above 80 degrees F can be fatal. Never use under-tank heaters or heat lamps. In warm climates, an air-conditioned room or basement location is mandatory. This temperature requirement is the most common reason new keepers struggle with this species." },
-      { q: "What should tiger salamanders eat?", a: "Nightcrawlers (large earthworms from a bait shop or pesticide-free garden) are the best single staple: nutritionally complete, eagerly accepted, and available year-round. Live crickets and dubia roaches are excellent variety. Superworms are acceptable supplemental feeders. Large adults can have occasional pinky mice but not regularly - mice are high in fat and cause obesity and fatty liver disease over time. Feed juveniles every other day, adults 2 to 3 times per week. Dust all feeders with calcium w/D3 powder at every other feeding and with a reptile multivitamin once weekly." },
-      { q: "How big do tiger salamanders get?", a: "Up to 13 inches in length, making them one of the largest terrestrial salamanders in North America. Adults are robust, stocky animals with proportionally large heads. The eastern tiger salamander complex (Ambystoma tigrinum and related species) varies somewhat in adult size by subspecies and geographic origin, but most pet trade individuals reach 8 to 11 inches as adults. Their size, combined with their sturdy build and bold feeding response, makes them significantly more physically impressive than most other terrestrial salamander species available in the hobby." },
-      { q: "How long do tiger salamanders live?", a: "10 to 20 years in captivity with proper care - a genuinely long-lived amphibian. The longevity range is wide because it depends heavily on care quality: animals kept at proper cool temperatures, on appropriate chemical-free substrate, with dechlorinated water, varied gut-loaded prey, and regular veterinary attention commonly reach 15 years. The most common life-shortening factors are temperature too warm, chemical exposure through permeable skin (soap, lotion, tap water chlorine), and metabolic bone disease from insufficient calcium supplementation." },
-      { q: "How can I tell if my tiger salamander is male or female?", a: "Outside of breeding season it's genuinely difficult, tiger salamanders don't show strong everyday external differences. During breeding condition, mature males develop a visibly swollen cloaca (vent) and often a taller, more compressed tail fin than females. Most keepers of a single, non-breeding salamander simply can't sex it with confidence, and that's normal." },
+      { q: "What temperature and humidity does a tiger salamander need?", a: "60 to 75°F, and never above about 78°F, since heat stress is a real concern. Humidity should stay around 70 to 75%, maintained through consistently moist, never soggy, substrate and a shallow water dish." },
+      { q: "Why does my tiger salamander stay hidden underground so much?", a: "This species is fossorial and spends most of its time burrowed rather than visible on the surface. A salamander that's rarely visible isn't unhealthy or stressed, that's normal behavior, and it's exactly why deep, burrowable substrate matters so much." },
+      { q: "What is the most common health issue in pet tiger salamanders?", a: "Obesity. Tiger salamanders don't reliably self-regulate intake, they're opportunistic feeders that keep eating whatever is offered." },
     ],
   },
   {
