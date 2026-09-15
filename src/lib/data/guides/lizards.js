@@ -724,63 +724,113 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/chameleon.jpg",
     tagline: "The horned, color-shifting dinosaur of the reptile world!",
-    funFact: "Jackson's chameleons are one of the few chameleon species that give live birth rather than laying eggs. Females can birth 8 to 30 live young!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "24x24x48 in all-screen enclosure", low: 150, high: 300 },
-        { item: "Strong UVB (T5 HO Arcadia 6-12%)", low: 70, high: 110 },
-        { item: "Basking bulb", low: 20, high: 40 },
-        { item: "Dripper system and automatic mister", low: 50, high: 100 },
-        { item: "Live plants (pothos, ficus)", low: 40, high: 80 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-      ],
-      annual: [
-        { item: "Gut-loaded feeder insects (variety)", low: 150, high: 300 },
-        { item: "Calcium w/ and w/o D3 + multivitamin", low: 25, high: 35 },
-        { item: "UVB bulb replacement", low: 70, high: 110 },
-        { item: "Electricity (heat, lighting, mister)", low: 50, high: 90 },
-        { item: "Annual vet wellness check (chameleon-experienced)", low: 70, high: 120 },
+    funFact: "Jackson's chameleons are one of the few chameleon species that give live birth rather than laying eggs. A single birth can produce anywhere from 5 to 30 live offspring after a gestation of roughly 5 to 6 months!",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Hydration, quarantine, thermostats, stool, hygiene,
+    // shedding and the emergency plan cite the shared guides in the sidebar's
+    // Health and More list. Reconciled 2026-09-15 after the Jackson's
+    // chameleon set test (docs/READER_REVIEWS.md).
+    //
+    // The old hub carried veiled chameleon content on a Jackson's page, which
+    // is the defect the reader led with: two of its FAQs were about the veiled
+    // chameleon, including one giving male veiled size at 18 to 24 inches and
+    // 140 to 200 grams on a species the encyclopedia puts at 9 to 13 inches.
+    // All three FAQs are now verbatim copies of this species' own deep dives.
+    //
+    // Also retired rather than moved: daytime ambient 72 to 80F against the
+    // setup guide's 68 to 75F, on the one variable both pages call the
+    // defining risk; a night floor of 55 to 65F against 50 to 65F; a basking
+    // spot given as 85 to 88F in one section and 80 to 85F in the checklist of
+    // the same page; "screen construction is non-negotiable" against the setup
+    // guide's two or three solid sides; a 12% UVB option nothing in the set
+    // defends, against the setup guide's ReptiSun 5.0 or Arcadia Forest 6%; an
+    // annual total near $655 against the cost guide's roughly $1,200; a vet
+    // range of $70 to $120 against $50 to $100 or more; a setup table with no
+    // dimming thermostat line, which the setup guide requires and the cost
+    // guide prices at $73 to $93; "Jackson's chameleons live 5 to 10 years"
+    // against males 8 to 10 and females 3 to 5; and a litter of 8 to 30
+    // against the handling guide's 5 to 30, which the FunFact above now
+    // carries correctly. The hub's diet section, the only feeding content in
+    // the set, moved into the tank setup guide as a sourced Diet Basics
+    // section rather than being dropped.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "The chameleon", value: "$50 to $250. Common animals typically run $90 to $150, with prized, highly colored specimens of the primary subspecies reaching $250. Wild-caught Hawaiian animals sometimes show up cheaper, but they're frequently parasitized, captive-bred is strongly worth the higher price for this species.", source: "jacksons-chameleon-cost-guide" },
+        { label: "Setup budget", value: "Roughly $400 to $525: a 24x24x48 inch tall screen or hybrid enclosure at $155 to $195, a UVB fixture and bulb at $95 to $115, a halogen basking bulb at $18 to $25, a dimmer or thermostat for it at $73 to $93, a misting system at $35 to $60, and live plants with moisture-retentive substrate at $18 to $35.", source: "jacksons-chameleon-cost-guide" },
+        { label: "Monthly, and yearly", value: "Roughly $50 to $100 a month for feeder insects, supplements, live plants and the electricity for misting and lighting, which brings annual costs to somewhere around $1,200 including occasional larger expenses.", source: "jacksons-chameleon-cost-guide" },
+        { label: "Vet costs", value: "A routine exam commonly runs $50 to $100 or more. Emergencies, gout, metabolic bone disease, or birth complications among them, can run into the hundreds.", source: "jacksons-chameleon-cost-guide" },
+        { label: "Lifespan, by sex", value: "Males commonly live 8 to 10 years. Females live considerably shorter, typically 3 to 5 years, tied to the physical toll of giving birth to live young repeatedly.", source: "jacksons-chameleon-cost-guide" },
+        { label: "Adult size", value: "9 to 13 inches (23 to 33 cm)." },
+        { label: "Enclosure size", value: "24 inches long by 24 inches wide by 48 inches tall for a single adult, larger is better. Juveniles under about 10 months can do well temporarily in something smaller, around 16x16x30 inches. House one chameleon per enclosure, males will fight.", source: "jacksons-chameleon-tank-setup-guide" },
+        { label: "Temperature, the defining difference", value: "Basking spot around 85°F, similar to the veiled chameleon, but ambient air should stay considerably cooler, 68 to 75°F, with a genuine night drop to 50 to 65°F. Supplemental night heat usually isn't needed and can work against this species.", source: "jacksons-chameleon-tank-setup-guide" },
+        { label: "Humidity", value: "Daytime humidity around 30 to 50%, rising to 75 to 100% overnight, achieved through morning and evening misting, an automated mister for consistency, and a cool-mist humidifier on a humidistat for the overnight spike. Live plants help maintain this naturally.", source: "jacksons-chameleon-tank-setup-guide" },
+        { label: "The walls", value: "Favor an enclosure with two or three solid sides rather than full mesh, this helps hold humidity and genuinely reduces stress compared to an all-screen setup.", source: "jacksons-chameleon-tank-setup-guide" },
+        { label: "UVB", value: "UVB is required, a Zoo Med ReptiSun 5.0 T5 HO or Arcadia Forest 6% bulb, replaced every 6 to 12 months.", source: "jacksons-chameleon-tank-setup-guide" },
+        { label: "Substrate", value: "Bare bottom with paper towel is the simplest, most manageable choice, though a bioactive substrate setup works too if you prefer. Avoid loose, particulate substrate that could be accidentally ingested and cause impaction.", source: "jacksons-chameleon-tank-setup-guide" },
+        { label: "Water and equipment", value: "Use distilled water in misters and foggers to avoid mineral buildup and equipment damage, and disinfect misting equipment regularly. Never run a fogger while the heat lamp is on, the combination can create dangerous conditions inside the enclosure.", source: "jacksons-chameleon-tank-setup-guide" },
+        { label: "Feeding", value: "Adults eat every other day, five to seven insects at a feeding, with nothing wider than the chameleon's own head. Juveniles eat daily. Overfeeding is its own risk here, since gout in this species traces back to too much protein as readily as to too little water.", source: "jacksons-chameleon-tank-setup-guide" },
+        { label: "What to feed", value: "Crickets, dubia roaches, hornworms, silkworms, black soldier fly larvae and blue bottle flies all work, along with pesticide-free snails and flies of a suitable size, and rotation matters more than any single feeder since each one has a different nutritional profile.", source: "jacksons-chameleon-tank-setup-guide" },
+        { label: "Gut-loading", value: "Gut-load the insects for 24 hours before they go in, on high-calcium greens like collard or mustard and vitamin A rich vegetables like carrot and squash. What the cricket ate is what the chameleon gets.", source: "jacksons-chameleon-tank-setup-guide" },
+        { label: "Supplements, lightly", value: "A calcium supplement once weekly and a general vitamin and mineral supplement once weekly is the veterinary schedule, and this is a species where more is a real risk: avoid products high in vitamin D, and treat synthetic vitamin A with the same caution.", source: "jacksons-chameleon-tank-setup-guide" },
+        { label: "Dehydration", value: "Genuinely the most common problem in this species, as with most chameleons, which won't reliably drink from a standing water dish. Watch for sunken eyes and lethargy. Manageable at home early, increase misting and dripper output immediately.", source: "jacksons-chameleon-health-issues-guide" },
+        { label: "Edema", value: "Jackson's chameleons are particularly prone to this specific issue, fluid-filled sacs developing under the throat, neck, or chest. Often linked to over-supplementing vitamin A or D. See a vet, and review your supplement routine, more isn't always better with this species.", source: "jacksons-chameleon-health-issues-guide" },
+        { label: "Gout", value: "From chronic dehydration, overfeeding, or a diet too high in protein, leading to uric acid buildup. Watch for swollen joints. Always see a vet, and know that full resolution can be genuinely difficult once this develops.", source: "jacksons-chameleon-health-issues-guide" },
+        { label: "Metabolic bone disease", value: "Lethargy, rubbery or bent bones, swollen limbs, and tremors, from inadequate calcium, vitamin D3, or UVB exposure. How much UVB a chameleon actually receives depends on the bulb, the fixture, and the distance from the basking branch, which is where most UVB setups go wrong.", source: "jacksons-chameleon-health-issues-guide" },
+        { label: "Vitamin A", value: "Chameleons don't convert plant-based beta-carotene into usable vitamin A very effectively and need a source of preformed vitamin A in their diet. Watch for eye problems, poor coordination, a weakening grip, and respiratory issues.", source: "jacksons-chameleon-health-issues-guide" },
+        { label: "Handling", value: "Jackson's chameleons are among the more docile chameleons kept as pets, and more laid-back than the veiled chameleon, but more docile for a chameleon still means minimal handling, not a hands-on relationship. Stress in this species isn't just uncomfortable, it can become genuinely dangerous for the animal.", source: "jacksons-chameleon-handling-guide" },
+        { label: "Reading a stressed one", value: "Threat and stress signals include gaping the mouth, sunken eyes, jerking the head, rocking or swaying the body, curling the tail, and raising the front legs defensively. Young Jackson's chameleons tend to be more defensive than adults and don't always outgrow it fully.", source: "jacksons-chameleon-handling-guide" },
+        { label: "Sexing, at a glance", value: "Male Jackson's chameleons grow three distinctive forward-facing horns. Females typically have reduced horns or none at all, which makes sexing this species easier than many reptiles, a visual difference you can usually spot at a glance.", source: "jacksons-chameleon-handling-guide" },
+        { label: "Live birth", value: "Unlike the egg-laying veiled chameleon, Jackson's chameleons are ovoviviparous, meaning the female carries and gives birth to live young rather than laying eggs. A single birth can produce anywhere from 5 to 30 live offspring after a gestation of roughly 5 to 6 months, depending on the specific subspecies.", source: "jacksons-chameleon-handling-guide" },
+        { label: "The enrichment problem is a thermometer", value: "Jackson's chameleons come from cool, humid montane forest, and most captive ones are kept too warm. Chronic overheating in this species presents as a chameleon that has simply stopped doing things, which is easy to file as personality. Check the numbers with an actual thermometer rather than the room's feel.", source: "jacksons-chameleon-enrichment-guide" },
+        { label: "Planting density", value: "Dense live planting in a 24x24x48 screen enclosure, layered so the animal can cross the cage at several heights without being visible from the room. The test is the same as for veiled chameleons: if you can always spot your chameleon immediately, it is too sparse.", source: "jacksons-chameleon-enrichment-guide" },
+        { label: "Legal, before you buy", value: "Jackson's chameleon is barred from private ownership in Hawaii, which is also the place in the United States where you are most likely to see one, because the islands have carried established feral populations since a 1972 release on Oahu. Four other jurisdictions restrict it, each for a structural reason rather than a species-specific one.", source: "jacksons-chameleon-legal-guide" },
+        { label: "Water that moves", value: "Drippers, misters, and foggers compared for chameleon hydration: how each works, which fits your setup, and how to spot dehydration before it's serious.", source: "chameleon-hydration-drippers-misters-fogging" },
+        { label: "Quarantine", value: "A new snake or lizard can look completely healthy while it is still shedding mites or a fatal virus. General reptile-keeping advice sometimes puts a workable quarantine floor at 60 to 90 days, while the Merck Veterinary Manual recommends 3 to 6 months.", source: "reptile-quarantine-guide" },
+        { label: "Thermostats and burns", value: "What a thermostat actually does, the three controller types, where the probe goes, and why wattage is a starting guess you verify, not a number you trust blindly.", source: "reptile-heating-thermostats-guide" },
+        { label: "The daily check", value: "Reptile stool and urates are a free, five-second daily health check that works across lizards, geckos, snakes, and turtles and tortoises alike, with what is normal varying by diet type and a clear line between dehydrated and an actual red flag.", source: "reptile-stool-urates-hydration-guide" },
+        { label: "Hygiene", value: "Healthy reptiles and amphibians carry Salmonella as normal gut flora, no illness required. The transmission route, the FDA four-inch rule and the hygiene habits that actually cut risk are all about handling and cleaning rather than about whether the animal looks sick.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "A power cut, and a trip", value: "What to actually do when the power goes out, you're leaving town, or you're handing your reptile off to a sitter, with species-specific cold floors in one table.", source: "reptile-emergency-plan-guide" },
       ],
     },
-    sections: {
-      housing: `A 24x24x48" all-screen enclosure is the minimum for a single adult Jackson's chameleon. Screen construction is non-negotiable - stagnant air in glass or plastic enclosures causes rapid onset respiratory infections in chameleons. Airflow must be constant and significant. Many experienced keepers use screen cages outdoors in appropriate climates, which is close to ideal.
-
-Live plants are essential, not decorative. Pothos, ficus, hibiscus, and dracaena provide natural humidity regulation, visual barriers for security, resting surfaces, and environmental complexity. Bare enclosures produce chronically stressed, sick chameleons. Aim for at least 60 to 70% plant coverage of the enclosure interior.
-
-Temperature requirements: daytime ambient of 72 to 80 degrees F with a basking spot of 85 to 88 degrees F. Jackson's chameleons prefer cooler temperatures than most other chameleon species - they originate from the cool highlands of East Africa and Hawaii's Maui island. Nighttime temperatures can drop to 55 to 65 degrees F, which is actually beneficial. Never allow temperatures to exceed 90 degrees F. Strong UVB (T5 HO Arcadia 6% or 12%) is mandatory.
-
-A dripper system and/or automatic misting system is required for hydration. Chameleons almost never drink from standing water - they drink water droplets from leaves and their environment after rainfall. A dripper creating slow drips onto leaves for 30 to 60 minutes morning and afternoon, combined with a fine misting system that runs for 3 to 5 minutes several times daily, meets hydration and humidity needs.`,
-      diet: `Jackson's chameleons eat live insects exclusively. The variety of feeder insects is one of the most important factors in long-term health. Offer crickets, dubia roaches, hornworms, silkworms, black soldier fly larvae, and blue bottle flies. Each insect species has a different nutritional profile, and rotation provides comprehensive nutrition. Avoid relying on a single feeder type.
-
-Gut-loading feeder insects 24 to 48 hours before feeding is critical. Feed insects a high-quality commercial gut-load or fresh vegetables (collard greens, mustard greens, sweet potato, carrot, apple). The chameleon's nutrition is entirely dependent on what its prey ate. An unloaded cricket offers minimal nutritional value.
-
-Feed juveniles daily (as many as they will eat in 15 minutes). Feed adults every other day, offering 5 to 10 appropriately sized insects. Prey should be no larger than the width of the chameleon's head. Overfeeding causes obesity, which stresses the liver and reproductive system.
-
-Supplementation schedule: calcium without D3 at every or every-other feeding, calcium with D3 twice weekly, and a reptile multivitamin once per week. Jackson's chameleons are sensitive to over-supplementation as much as under-supplementation. Follow this schedule precisely.`,
-      enrichment: `Dense, multi-level branching is the most important structural enrichment. Chameleons are almost entirely arboreal and spend their lives navigating through a three-dimensional network of branches and leaves. Horizontal branches at multiple heights, thin perching vines at the top (where they feel safest), and thick branches lower for basking create the complexity they need.
-
-The dripper and misting system doubles as enrichment - chameleons investigate and drink droplets naturally and actively. Watching a chameleon track and hunt live prey is a major appeal of keeping them; the prey variety itself provides mental engagement.
-
-Handle minimally. Chameleons are not handling animals. Stress is a primary health concern - a chronically stressed chameleon will stop eating, develop immune suppression, and die. Many chameleons spend their entire lives in their enclosure without needing to be handled. When handling is necessary (for veterinary visits, enclosure cleaning), move slowly, allow the chameleon to walk onto your hand voluntarily, and keep sessions as brief as possible.
-
-Jackson's chameleons are live-bearing (viviparous), unlike most chameleon species that lay eggs. A gravid female needs adequate nutrition and a suitable warm, humid hiding area. Breeding is not recommended without extensive experience.`,
-      health: `Chameleons are masters of concealing illness. By the time a chameleon shows obvious signs of sickness - color changes, sunken eyes, closed eyes during the day, gaping mouth, lethargy - it has usually been ill for some time and is severely compromised. Attentive daily observation of baseline behavior is essential. Know what your chameleon's normal colors, activity level, and feeding response look like.
-
-Dehydration is the single most common cause of early death in pet chameleons. Sunken eyes (the most visible sign), dark coloration, and lethargy indicate dehydration. A chameleon that is not drinking needs immediate intervention: long misting sessions, paper towel soaks, and veterinary care if the animal does not rehydrate quickly. Maintain the dripper and misting schedule without gaps.
-
-Metabolic Bone Disease (MBD) from inadequate UVB or supplementation causes swollen limbs, deformities, and difficulty moving. Maintain proper UVB schedules, replace UVB bulbs on schedule, and follow supplementation protocols exactly.
-
-Respiratory infections result from stagnant air and temperature fluctuations. The all-screen enclosure mandate is specifically to prevent this. Female Jackson's chameleons can develop reproductive problems (dystocia, retained offspring) that require veterinary intervention. Find a reptile vet with chameleon experience before you need one - do not wait for an emergency to identify your veterinary resource.`,
-      checklist: ["24x24x48\" all-screen enclosure", "Strong UVB lighting (T5 HO Arcadia 6% or 12%)", "Basking bulb (80 to 85 degrees F hot spot)", "Dripper system and automatic mister", "Live plants (pothos, ficus)", "Gut-loaded feeder insects", "Calcium w/D3 and without D3 supplements", "Multivitamin supplement", "Digital thermometer and hygrometer", "Reptile vet with chameleon experience"],
+    emergencyCard: {
+      source: "jacksons-chameleon-health-issues-guide",
+      callNow: [
+        "Lethargy, rubbery or bent bones, swollen limbs, and tremors, which is metabolic bone disease: always see a vet, early cases respond considerably better to treatment than advanced ones",
+        "Sunken eyes and lethargy that don't respond to increased misting and dripper output",
+        "Swollen joints, which is gout or kidney disease: always see a vet",
+        "Fluid-filled sacs developing under the throat, neck, or chest",
+        "Eye problems, poor coordination, a weakening grip, and respiratory issues, which point to vitamin A deficiency: always see a vet",
+      ],
+      vetLine: "Insufficient misting causes the dehydration that's the single most common issue in this species. Weak UVB and calcium cause MBD. Overfeeding and dehydration together drive gout. And oversupplementing, specifically vitamin A or D, can cause edema, a genuinely species-specific risk worth watching for. Getting hydration and supplementation calibrated correctly, not just present, prevents most of what's on this list.",
     },
+    routes: [
+      { slug: "jacksons-chameleon-cost-guide", line: "$90 to $150 for most animals, $400 to $525 of setup, and why males and females live such different lengths of time." },
+      { slug: "jacksons-chameleon-tank-setup-guide", line: "24x24x48, 85F basking over 68 to 75F air, the real night drop, the UVB bulbs, and what to feed." },
+      { slug: "jacksons-chameleon-handling-guide", line: "The three horns, the stress signals, and the live birth that sets this species apart." },
+      { slug: "jacksons-chameleon-health-issues-guide", line: "Dehydration first, then the edema and gout that come from oversupplementing a species already sensitive to it." },
+      { slug: "jacksons-chameleon-enrichment-guide", line: "Why the enrichment problem here is a thermometer, and the planting density test." },
+      { slug: "jacksons-chameleon-legal-guide", line: "Barred in the one state where you are most likely to see one, and the four other jurisdictions that reach it." },
+    ],
+    buyList: [
+      "A 24x24x48 inch tall enclosure with two or three solid sides",
+      "A T5 HO UVB fixture with a ReptiSun 5.0 or Arcadia Forest 6% bulb",
+      "A halogen basking bulb and a dimming thermostat for it",
+      "A misting system, manual or automated, plus a dripper",
+      "A cool-mist humidifier on a humidistat for the overnight spike",
+      "Distilled water for anything that mists or fogs",
+      "Live plants, densely, plus climbing branches at several heights",
+      "Paper towel for the floor, or a bioactive base if you prefer",
+      "A digital thermometer and hygrometer",
+      "A calcium supplement and a general vitamin and mineral supplement",
+    ],
     faqs: [
-      { q: "Are chameleons hard to keep?", a: "Chameleons are widely considered one of the most demanding reptiles in the hobby and are not recommended for first-time reptile keepers. They require very specific conditions: all-screen enclosures for ventilation, precise temperature gradients, high humidity with a wet-dry cycle, strong UVB lighting, live gut-loaded insects at every feeding, and a dripper or automatic misting system for hydration. They are also highly stress-sensitive - improper conditions or a high-traffic cage location cause rapid health decline. Experienced keepers find them deeply rewarding; beginners often experience significant losses." },
-      { q: "Why do chameleons change color?", a: "Chameleons change color primarily to communicate mood, social status, and reproductive readiness - not primarily for camouflage as commonly believed. Bright, vivid colors often signal excitement, territorial aggression, or a male displaying to a female. Dark, muted colors typically indicate stress, illness, or cold. The color change is achieved by manipulating nanocrystals within specialized skin cells called iridophores, which reflect different wavelengths of light depending on their arrangement." },
-      { q: "How do I get my chameleon to drink water?", a: "Chameleons rarely drink from standing water bowls - in the wild, they drink droplets from leaves after rain. Provide water by misting the enclosure 2 to 3 times daily so the chameleon can drink from leaves and cage walls. A dripper system that slowly keeps leaves wet is highly effective. Always use dechlorinated or filtered water. Signs of dehydration include sunken eyes, lethargy, and yellow-orange urates - the urate portion of droppings should be white, not yellow." },
-      { q: "How big do veiled chameleons get?", a: "Male veiled chameleons typically reach 18 to 24 inches total length and 140 to 200 grams - they are among the larger chameleon species kept in captivity. Females are noticeably smaller at 10 to 13 inches, but require more advanced care because they are prone to reproductive issues. Females produce infertile eggs even without a male and must have a deep laying box available at all times to prevent fatal egg-binding." },
-      { q: "How long do chameleons live?", a: "Captive-bred veiled chameleons live 5 to 8 years with optimal care, with males often outliving females (females that lay frequent clutches have significantly shortened lifespans). Jackson's chameleons live 5 to 10 years. Panther chameleons live 3 to 7 years. Wild-caught chameleons rarely survive long in captivity due to extreme capture stress. Regular access to a vet experienced with chameleons dramatically improves outcomes at any age." },
-      { q: "How can I tell if my Jackson's chameleon is male or female?", a: "By the horns. Male Jackson's chameleons grow three distinct horns on the front of the face, giving them a small Triceratops-like look, while females typically have no horns or only tiny, rudimentary nubs. It's one of the clearest, easiest sexing calls of any commonly kept reptile." },
+      { q: "What size enclosure does an adult Jackson's chameleon need?", a: "24 by 24 by 48 inches for one adult, and bigger is better. A juvenile under about 10 months can sit temporarily in something like 16x16x30. One chameleon per enclosure: males fight." },
+      { q: "What temperature does a Jackson's chameleon need, and how does it differ from a veiled chameleon?", a: "Basking near 85°F, much like a veiled chameleon, but the ambient air stays cooler at 68 to 75°F, with a real night drop to 50 to 65°F. Night heat is usually unnecessary and can work against a species adapted to cool mountain nights." },
+      { q: "What is the most common health problem in Jackson's chameleons?", a: "Dehydration. Like most chameleons, Jackson's won't reliably drink from a standing water dish. Sunken eyes and lethargy are the signs. Caught early it's manageable at home by increasing misting and dripper output. See a vet if your chameleon doesn't respond, or shows real lethargy." },
     ],
   },
   {
