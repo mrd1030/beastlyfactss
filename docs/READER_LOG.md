@@ -5730,3 +5730,88 @@ First two changes: pin one temperature and one pH range across all eight pages a
 - Fry after birth: at what size or age they are safe with adults, how to grow them out, and where they go.
 - Juvenile feeding amounts, which the feeding guide itself flags as thin and no other page fills.
 - Plants, substrate, lid and test kit as setup line items, absent from both cost tables and from the hub checklist except the test kit.
+
+## Praying Mantis (2026-09-15, batch L)
+
+Raw reader output, one Opus agent, 8-page extract (hub, encyclopedia, cost,
+handling, health issues, tank setup, enrichment, ootheca).
+
+**1. Page by page**
+
+- 00 hub: finished it. Acted on: 3x height rule, one per enclosure, feed every 2 to 3 days, prey no wider than the gap between the eyes. Grade B minus, because its numbers are the ones the deep dives contradict.
+- 01 encyclopedia: finished it. Acted on: the Chinese mantis is the cheap, legal, easy first species, and that is why it is everywhere. A minus.
+- 02 cost guide: finished it, then stopped trusting the totals. Acted on: buy an adult or subadult, budget feeders monthly. C plus.
+- 03 handling: finished it. Acted on: closed room only, hands off in pre-molt, never two in a box. B plus.
+- 04 health: finished it. Acted on: mesh not solid, a hunger strike is usually pre-molt, a honey drop for a flagging animal. A minus.
+- 05 tank setup: finished it. Acted on: 8x8x12 floor, 60 to 80%, mesh lid, room temperature, no UVB, 12 hour light cycle. A.
+- 06 enrichment: finished it. Acted on: the 1 to 7 priority list, keep the space under the ceiling empty, release prey rather than present it. B plus.
+- 07 ootheca: finished it. Acted on: individual cups and fruit flies staged before the hatch, freeze it if I do not want a brood. A minus.
+
+**2. Hub and encyclopedia**
+
+The encyclopedia earns its place. The History paragraph on the 1896 Mount Airy introduction and the garden centre ootheca trade is the only place on the site that explains why the Chinese mantis is the default first animal, and no deep dive touches it.
+
+The hub does not. It is a compression of the deep dives, and where it differs it differs wrongly:
+
+- Lifespan. Hub: "Most pet mantis species have lifespans of 12 to 18 months." Cost guide: "Most commonly kept mantis species live just 6 to 12 months total." Encyclopedia adds a third, "6-18 months."
+- Enclosure price. Hub table: "Tall vertical mesh or acrylic enclosure | $15 | $35." Cost guide table: "Tall mesh or acrylic enclosure | $60 - $70." The ranges do not even touch.
+- Feeder cost. Hub annual: "Fruit flies and live feeder insects | $30 | $60." Cost guide: "Roughly $10 to $40 a Month," which is $120 to $480 a year.
+- Enclosure size. Hub: "a 12x12x18 inch mesh or acrylic enclosure (for adults)." Tank setup: "around 8 inches long, 8 inches wide, and 12 inches tall as a minimum."
+- Temperature. Hub: "Most common pet species do well at 75 to 85 degrees F." Tank setup: "Most commonly kept species, Carolina and Chinese mantises among them, do fine at normal room temperature." My room is 70.
+- Nymph or adult. Hub FAQ: "The typical keeper experience is acquiring a nymph, raising it through 6 to 9 molts." Cost guide: "Buy an adult or subadult, not a nymph."
+- The molting stick. Hub prices and checklists it separately ("Vertical branch or stick for molting | $5 | $10"); cost guide says "this is one line item, not two."
+- Misting. Hub: "misting one side of the enclosure once daily." Tank setup: "light misting once or twice daily."
+
+**3. Could I actually keep one**
+
+Mostly yes. Between the tank and enrichment pages I can buy and build the enclosure, and the health page tells me what kills them. Still missing: how to sex a mantis, which matters given females live longer and lay the oothecae the set devotes a whole page to; how often to clean the enclosure and what spot cleaning means with live prey and shed skins; how to keep and culture feeders, when the hub casually says bottle fly pupae are ones "you hatch at home"; how to hand-feed the crooked-limbed survivor the health page says will need it; what to do when the mantis I was warned I would lose in the room actually gets loose.
+
+Questions raised on one page and answered on another without saying so:
+- Handling: "If your mantis has stopped eating and seems unusually still, treat that as a signal to leave it alone entirely." The health page's appetite section explains that, unlinked.
+- Tank setup warns about "the mold and infection risk that comes with excess humidity" and never points at the health page that covers it.
+- Cost guide says nymphs are "genuinely difficult to keep alive through their many molts" and the ootheca page is the one that shows what raising them looks like.
+- Hub says females "continue living and laying eggs for months" with no route to the ootheca page except the sidebar.
+
+**4. Overlap and conflict across the deep dives**
+
+Read three times: the solo housing and cannibalism rule (handling, enrichment, hub, ootheca), and the mismolt story (health, tank, enrichment). The molting material is the worst of it: enrichment's key takeaway, health's mismolt section, and tank setup's mesh lid section are three drafts of the same paragraph.
+
+Numbers that disagree:
+- Clear space under the perch. Enrichment: "clear vertical space beneath it of at least three times its body length." Tank setup: "Leave genuine clearance below the highest perch, roughly twice the mantis's body height."
+- Cost guide against itself. Its own table runs $117 to $221 at the low and high ends, then the text says "most first-time setups land around $50 to $150."
+
+**5. One link per page**
+
+- Hub: "Failed molts are the primary cause of mantis death in captivity." Should point to the health issues guide.
+- Encyclopedia: "Female mantises occasionally engage in sexual cannibalism." Should point to the ootheca guide, which explains why captivity makes it worse.
+- Cost: "Nymphs are genuinely difficult to keep alive through their many molts." Should point to the health issues guide.
+- Handling: "If your mantis has stopped eating and seems unusually still, treat that as a signal to leave it alone entirely." Should point to the health issues guide.
+- Health: "not enough vertical space for the mantis to hang freely while shedding." Should point to the enclosure setup guide, which is where the actual inches are.
+- Tank: "too wet invites mold and internal infection." Should point to the health issues guide.
+- Enrichment: "Remove uneaten live prey before a molt. Crickets chew on soft mantids." Should point to the health issues guide.
+- Ootheca: "mantis nymphs are highly cannibalistic toward their siblings." Should point to the handling guide, which already has the rearing-in-separate-containers rule.
+
+**6. Trust**
+
+What hurt: the hub and cost guide disagreeing on lifespan and enclosure price, the two numbers a buyer checks first. The cost guide's total not matching its own table. "roughly twice their own body length" as a mantis's jump and flight distance, offered as the reason to close the door, when an adult female flying across a room is the actual failure mode. "the only insect that can turn its head 180 degrees" is an overreach. Enrichment has a plain typo, "An tall nano terrarium."
+
+What convinced me a keeper wrote it, from enrichment: "Keep the center of the upper enclosure clear. Structure that fills the space directly under the ceiling is structure the mantis can hit on the way down during a molt." Nobody arrives at that from a care sheet.
+
+**7. Set grade: B**
+
+The deep dives are genuinely good and the hub undercuts them with contradictory numbers on the exact figures a buyer checks first.
+
+First two changes:
+1. Make the hub agree with the deep dives on lifespan, enclosure price, feeder cost, enclosure dimensions, temperature, and nymph versus adult, then pick one clearance rule, 3x or 2x below the perch, and use it everywhere.
+2. Give feeding its own page. The only feeding schedule in the set, "Feed every 2 to 3 days," and the only prey sizing rule, "never exceed the space between the mantis's eyes," live on the hub alone, with no deep dive behind them.
+
+**Not covered anywhere**
+
+Checked against the Health and More list, which covers pesticides, rehousing, emergencies and shipping, and stocking numbers. The invertebrate molting guide is not in that list but is body-linked from enrichment and ootheca, so pre-molt appearance is covered.
+
+- Sexing a mantis. Nothing in the set tells me how to tell a female from a male.
+- Enclosure cleaning and maintenance schedule. No page says how often or how.
+- Keeping and culturing feeder insects, including the bottle fly pupae the hub says you hatch at home.
+- Hand-feeding technique for a mismolted mantis, which the health page requires and nobody explains.
+- Recapturing an escaped mantis. Rehousing covers the catch cup for a tarantula in a box, not a mantis loose in a room.
+- Water beyond misting. Whether a mantis drinks droplets, and whether a dish is ever appropriate.

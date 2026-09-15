@@ -12695,3 +12695,129 @@ sick fish: tankmates and stocking density, acclimating a fancy molly out of
 hard shipping water, a hardness target in actual dGH, what happens to fry after
 birth, and juvenile feeding amounts, which the feeding guide itself flags as
 thin. All filed in docs/READER_LOG.md.
+
+## Praying Mantis (2026-09-15, batch L, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 87k tokens. Raw output in
+docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B- | Its numbers are the ones the deep dives contradict. |
+| Encyclopedia | A- | The Chinese mantis is the cheap, legal, easy first species, and that is why it is everywhere. |
+| Cost | C+ | Finished it, then stopped trusting the totals. |
+| Handling | B+ | Closed room only, hands off in pre-molt, never two in a box. |
+| Health issues | A- | Mesh not solid, a hunger strike is usually pre-molt, a honey drop for a flagging animal. |
+| Tank setup | A | 8x8x12 floor, mesh lid, room temperature, no UVB, 12 hour light cycle. |
+| Enrichment | B+ | The priority list, keep the space under the ceiling empty, release prey rather than present it. |
+| Ootheca | A- | Individual cups and fruit flies staged before the hatch, freeze it if I do not want a brood. |
+
+Set grade: B. "The deep dives are genuinely good and the hub undercuts them with
+contradictory numbers on the exact figures a buyer checks first."
+
+This is the thinnest-sourced set a batch reader has been handed. Three of the six
+deep dives, health issues, ootheca and tank setup, carried no Sources block at
+all, and the three that did leaned on ThePricer, Lobo Mantis and 903Pets. Every
+husbandry number below was researched properly before it was pinned, and all
+three pages now carry a Sources block.
+
+The hub was legacy and said so in its own comment, "Rough starting ranges, not
+verified current pricing." Every figure on it lost:
+
+- Lifespan. Hub: "Most pet mantis species have lifespans of 12 to 18 months."
+  Cost guide: "just 6 to 12 months total, Chinese mantises toward 8 to 12
+  months, African mantises closer to 6 to 9." Animal Diversity Web gives
+  *Tenodera aridifolia* "6 to 9 months in the wild" and says the same applies
+  in captivity; Reptile Supply's Chinese mantis sheet says "Total lifespan is
+  8-12 months, depending on sex." Both land on the cost guide's numbers, not
+  the hub's. The Amateur Entomologists' Society does say "Mantids will live for
+  12 to 18 months," which is where the hub's figure came from, and it is the
+  outlier of the three. The cost guide already carries 18 months as the
+  excellent-care ceiling, which is where that claim belongs.
+- Enclosure price. Hub "$15 to $35" against the cost guide table's "$60 to
+  $70". The ranges do not touch, as the reader put it.
+- Feeders. Hub "$30 to $60" a year against "$10 to $40 a Month," which is $120
+  to $480. An eightfold gap.
+- Enclosure size. Hub "a 12x12x18 inch mesh or acrylic enclosure (for adults)"
+  against the setup guide's 8 by 8 by 12. Two independent sources back the
+  setup guide: Keeping Insects gives "at least 3x longer than the body length
+  praying mantis and 2x wider," and Reptile Supply gives the same rule plus the
+  same dimensions, "at least 8"L x 8"W x 12"H."
+- Temperature. Hub "75 to 85 degrees F" and separately "72 to 95," against a
+  setup guide that said only "normal room temperature" and gave no number. The
+  reader's line was the useful one: "My room is 70." Reptile Supply puts the
+  Chinese mantis at "70-80°F" with "avoid temperatures above 88°F," and AES
+  gives 20 to 25°C, which is 68 to 77. The setup guide now carries 70 to 80
+  with 88 as the ceiling, and the hub copies it.
+- The molting stick, priced and checklisted separately on the hub where the
+  cost guide says "this is one line item, not two."
+- Nymph or adult, a direct instruction contradiction. Hub FAQ: "The typical
+  keeper experience is acquiring a nymph, raising it through 6 to 9 molts."
+  Cost guide: "Buy an adult or subadult, not a nymph."
+
+The clearance rule, where the two deep dives disagreed with each other.
+Enrichment: "clear vertical space beneath it of at least three times its body
+length." Tank setup: "roughly twice the mantis's body height." Neither was
+sourced, and the sources say the 3x figure is the enclosure's total height, not
+the drop below the perch. So both pages now carry the same two numbers: three
+times the body length in enclosure height, from Keeping Insects and Reptile
+Supply, and four times it in the drop from the top of the perch to the floor,
+from AES, which is stricter and is the measurement a molt actually depends on.
+The setup guide works that through against the 8 by 8 by 12 enclosure it
+recommends, which covers a mantis up to about three inches and no more. That is
+a thing the page could not say before and a reader shopping from it should know.
+
+Humidity, which nobody had pinned. The setup guide gave "60 to 80% depending on
+the species" and then said temperate species need less without saying how much
+less. Reptile Supply puts the Chinese mantis at "50-65%," below the old floor.
+The page now gives the split concretely, temperate around 50 to 65 and tropical
+Ghost and Orchid at 70 to 80, and adds what AES and Keeping Insects both say
+about droplets: that is how a mantis drinks, and standing water drowns nymphs.
+
+The cost guide against its own table, which the reader caught and the checker
+could not. The table runs $117 to $221 including the mantis; the text said "most
+first-time setups land around $50 to $150." The page now states the required
+lines at $85 to $115, the full setup with the optional spray bottle and tongs at
+$100 to $145, and $115 to $220 with the animal. The seoTitle, seoDescription,
+description and FAQ all carried the retired $50 figure and all four are fixed,
+which is the frontmatter failure mode batch K filed and this batch keeps hitting.
+
+This species has no feeding guide, so the sourced Diet Basics section went into
+the tank setup guide as usual. It carries the prey-size rule from Reptile Supply,
+"no larger than 1/3 of the mantis' length," which replaces the hub-only rule
+about the space between the mantis's eyes that no source or deep dive carried.
+Feeding frequency is Reptile Supply's "every other day, as much as your mantis
+will take," with Keeping Insects' honest "every one to four days" as the spread.
+
+Checked and left alone: the reader called "the only insect that can turn its head
+180 degrees" an overreach. It is not. Multiple natural history sources state it
+directly, and the fun fact stands.
+
+Also fixed: the handling guide's unsourced "mantises can jump or fly a surprising
+distance, roughly twice their own body length," which understates the actual
+failure mode the reader named. The number is gone rather than replaced with
+another invented one, and the sentence now says what is true, that the winged
+adults of commonly kept species fly and can cross a room. The enrichment guide's
+"An tall nano terrarium" typo is fixed.
+
+Links: 5 added. Tank setup to health issues on the mold and infection warning.
+Health issues to tank setup on vertical space. Handling to health issues on the
+mantis that stops eating. Cost to health issues on why a nymph is harder. Ootheca
+to handling on the one-per-container rule. That is the reader's own list, minus
+its hub and encyclopedia entries, which the router hub's routes cover.
+
+Dates: cost, handling, health issues and tank setup bumped to 2026-09-15.
+Enrichment is future-dated and was not bumped. Ootheca changed links and gained
+a Sources block, no figure.
+
+Not fixed, recorded: the ootheca guide carries two pre-existing voice errors,
+an intensifier in the heading "What an Ootheca Actually Is" and one in an FAQ
+answer. Both predate this pass and neither is a figure, so they stay flagged
+rather than swept into a reader-driven commit.
+
+Gaps, checked against the Health and More list, which covers pesticides,
+rehousing, emergencies, shipping and stocking, plus the invertebrate molting
+guide that is body-linked from two pages: sexing a mantis, an enclosure cleaning
+schedule, culturing feeder insects including the bottle fly pupae the old hub
+said you hatch at home, hand-feeding a mismolted mantis, and recapturing an
+escaped one. All filed in docs/READER_LOG.md.
