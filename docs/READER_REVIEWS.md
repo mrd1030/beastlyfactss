@@ -4326,6 +4326,37 @@ in one review section.
   monitor additions; one more "other sizes are available" template fragment in
   the degu enrichment guide; and two review-file link counts that did not
   match the diff. Pass grade B-.
+- 2026-09-15, batch J (mourning gecko, ackie monitor, garter snake, oscar,
+  amano shrimp, branch claude/hub-pacman-frog-80291s). Mourning gecko: the
+  hub FAQ written to clear up the house gecko confusion named the wrong
+  genus, Lygodactylus, in a set where every other page has Lepidodactylus;
+  the cost guide's "typically 10 to 15 years" came to the shape its own
+  source supports; the feeding schedule settled on a 48-hour diet with
+  weekly dusted insects. Ackie monitor: three difficulty verdicts across
+  the set, settled at Intermediate by moving the encyclopedia rather than
+  the hub, since ReptiFiles and the handling guide already said so, and the
+  ambient humidity figure only the hub carried, unsourced, replaced with a
+  sourced 20 to 50% ambient against 80% in the burrow. Garter snake: the
+  hub had dropped the legal guide entirely on a native species most states
+  regulate as wildlife, and the cost guide repeated the hub's aspen
+  substrate against a setup guide that never lists it. Oscar: the hub told
+  buyers a juvenile needs 55 gallons, which the cost guide names as the
+  biggest mistake new owners make, and hole-in-the-head disease was told
+  two ways across the health and feeding guides. Amano shrimp: a stocking
+  density of two shrimp per gallon attributed to a source that publishes no
+  density at all, settled at the one-per-2-gallons figure that is actually
+  published, and an encyclopedia claiming the largest freshwater shrimp
+  commonly kept, which bamboo and vampire shrimp beat. Across the batch,
+  wildLifespan held a captive figure twice more, the tenth and eleventh.
+- 2026-09-15, batch J species check (one Fable agent covering all five):
+  four of five hubs shipped written FAQs instead of verbatim copies, the
+  easiest item in the router shape to get right and the first time this
+  check has found it; source names or narration in a row, a route line or
+  an emergency card on all five species, the fourth batch running; a
+  narrated disagreement copied into a garter snake row instead of settled
+  first; one hedge changed without cause; one hub row left stale against
+  the batch's own deep-dive fix; one voice regression; and two review-file
+  errors, a count and a claim. Pass grade C+.
 
 ## Green Iguana (2026-09-09, first pass)
 
@@ -11095,3 +11126,90 @@ bumps were made.
   of the quarantine tank two pages require and the cost guide omits; and
   what a berried female looks like, so a keeper can tell her from the molt
   and illness signs on the health page.
+
+## Mourning gecko, ackie monitor, garter snake, oscar, amano shrimp (2026-09-15, batch J species check)
+
+One Fable agent covering all five, run after every species was built and
+pushed, base 246a511c. Every finding fixed on the branch in b30d6312.
+Pass grade C+.
+
+### The finding that set the grade
+
+Four of five hubs shipped FAQs that were written rather than copied
+verbatim from deep-dive frontmatter, which RULES requires and which is
+the easiest item in the whole router shape to get right. Garter snake,
+oscar and amano shrimp had all three written outright. Ackie monitor is
+the instructive one: its three questions were lifted correctly from the
+setup, feeding and health guides, and all three answers were reworded
+anyway. Only mourning gecko was a true copy on both halves.
+
+Worth recording because it nearly escaped: checking only the questions
+against deep-dive frontmatter returns three of five, and the check's
+count would have looked wrong. Checking the answers too returns four. A
+question that matches is not evidence the FAQ was copied.
+
+### Source names and narration, the fourth batch running
+
+All five species carried one somewhere, and the shapes are worth naming
+since the defect keeps changing costume rather than disappearing:
+
+- In a row, straightforwardly: "ReptiFiles recommends 5 feet long by 2.5
+  feet wide by 4 feet tall" (ackie), "commonly cited at 35 to 45%"
+  (oscar), "is the commonly cited range" (amano).
+- In a route line: "two stocking densities that serve different jobs"
+  (amano), after the batch had settled on one. The row was fixed and the
+  route line left advertising the old shape.
+- In an emergency card bullet: "ReptiFiles describes this plainly as a
+  highly preventable disease of neglect" (ackie).
+- As a narrated disagreement the batch copied instead of settling:
+  "with some sources going up to 95°F" (garter snake temperature). Step 4
+  exists to settle that before the row copies it, and it was skipped.
+- As the sentence carried by a deep-dive fix the batch itself wrote: the
+  amano stocking paragraph, which named Fishkeeping World and Aquarium
+  Co-Op to make a point about which of them published a figure. The check
+  ruled a reader does not need either name to use the number, and it is
+  right: the provenance belonged in the review file, which is where it
+  now lives alone.
+
+### Other findings
+
+- A hedge changed without cause. The ackie legal guide's "one of the most
+  commonly recommended monitor lizards for a first-time keeper" became
+  "the monitor lizard most often recommended", turning a soft claim into
+  a superlative while fixing something else in the same sentence.
+  Restored.
+- A hub row left stale against the batch's own fix. The garter snake "Why
+  a basin, really" row still read "Many garter snake populations are
+  semi-aquatic" after the enrichment guide it copies had been corrected
+  to "Garter snakes are semi-aquatic, proficient swimmers".
+- An oscar health FunFact rewrite that produced "a quality staple cichlid
+  pellet ... alongside a pellet that carries the vitamins". Restored to
+  the base wording with the link moved.
+- A voice regression on the garter feeding guide, contrast-cadence 0 to 1,
+  from a link sentence reading "weighing rather than eyeballing".
+- Two review-file errors: a claim that the mourning gecko enrichment study
+  was newly cited in Sources when that entry predated the batch, and a
+  garter snake link count of six against five in the diff. Both corrected
+  in place.
+
+### Encyclopedia
+
+Four fields changed across the batch, three verified against sources the
+check reopened itself: mourning gecko adultSize and wildLifespan, ackie
+difficulty, adultSize and wildLifespan, oscar wildLifespan. The fourth,
+amano adultSize, was changed on the reader's say-so with no source
+recorded, which is the one place this batch asserted rather than
+researched. The check researched it after the fact and it holds: bamboo
+shrimp reach 2 to 3 inches and are common in the trade, and Atya gabonensis
+reaches 15 cm, so "the largest freshwater shrimp commonly kept" was wrong.
+
+Left open in the same entry: the overview field still opens with the same
+claim in different words. One clause, same entry, outside the one-field
+rule the check works under.
+
+### Also left open, for a later pass
+
+Source narration in pre-existing text the batch did not touch and no hub
+row copies: two amano feeding FAQs ("Seriously Fish is direct about
+this", "Shrimp Science notes plainly") and one garter feeding FAQ
+("Sources land in a similar range").

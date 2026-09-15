@@ -391,25 +391,20 @@ share a silhouette. That is roughly 25 species, about 175 images.
 ## 7. Router hubs, species by species
 
 Checked 2026-09-15 against `src/lib/data/guides/*.js`: a hub is a router hub
-when its entry carries `firstWeek` rows (RULES, Hubs). 51 of 108 done, 57
+when its entry carries `firstWeek` rows (RULES, Hubs). 56 of 108 done, 52
 still rendering the legacy care sheet. Batches of five, one branch each,
 per the READMEFIRST process. Dogs and cats last.
 Batch I (African fat-tail gecko, corydoras catfish, red-footed tortoise,
 degu, savannah monitor) is built, checked and pushed on
 claude/hub-pacman-frog-80291s, not merged. The Fable closing check ran
 2026-09-15 and fixed every finding on the branch; pass grade B-.
-Next: batch J, mourning gecko, ackie monitor, garter snake, oscar, amano
-shrimp, one per class and three classes new since batch I. Mourning
-gecko has nine inbound articles including batch H's and batch I's gecko
-work; the ackie enrichment guide is the page savannah monitor borrows
-its evidence from; garter snake sits in the red-footed tortoise
-overview; oscar sits in the box turtle and kingsnake overview; amano
-shrimp shares a tank with corydoras. Ackie and amano each carry the
-affiliate template fragment. Worker Opus 5 high effort, one Fable
-closing check per batch (the batch prompt in READMEFIRST has the
-reasoning).
+Batch J (mourning gecko, ackie monitor, garter snake, oscar, amano
+shrimp) is built, checked and pushed on the same branch, not merged. The
+Fable closing check ran 2026-09-15 and fixed every finding; pass grade
+C+. Worker Opus 5 high effort, one Fable closing check per batch (the
+batch prompt in READMEFIRST has the reasoning).
 
-Done (51):
+Done (56):
 
 - [x] axolotl, White's tree frog
 - [x] African grey, budgie, cockatiel, cockatoo, conure, lovebird
@@ -428,21 +423,23 @@ Done (51):
       (batch H, merged to main 2026-09-15)
 - [x] African fat-tail gecko, corydoras catfish, red-footed tortoise, degu,
       savannah monitor (batch I, checked 2026-09-15, not merged)
+- [x] mourning gecko, ackie monitor, garter snake, oscar, amano shrimp
+      (batch J, checked 2026-09-15, not merged)
 
-To do (57):
+To do (52):
 
 - [ ] Amphibians (2): fire-bellied toad, tiger salamander
 - [ ] Birds (2): parrotlet, quaker parakeet
-- [ ] Fish (8): bristlenose pleco, discus, koi, molly, oscar, platy,
-      swordtail, zebra danio
-- [ ] Geckos (2): leaf-tailed gecko, mourning gecko
-- [ ] Invertebrates (9): amano shrimp, cherry shrimp, ghost shrimp, emperor
-      scorpion, giant millipede, jumping spider, hissing cockroach, praying
-      mantis, stick insect
-- [ ] Lizards (6): ackie monitor, Argentine tegu, fire skink, green anole,
-      Jackson's chameleon, uromastyx
+- [ ] Fish (7): bristlenose pleco, discus, koi, molly, platy, swordtail,
+      zebra danio
+- [ ] Geckos (1): leaf-tailed gecko
+- [ ] Invertebrates (8): cherry shrimp, ghost shrimp, emperor scorpion,
+      giant millipede, jumping spider, hissing cockroach, praying mantis,
+      stick insect
+- [ ] Lizards (5): Argentine tegu, fire skink, green anole, Jackson's
+      chameleon, uromastyx
 - [ ] Small mammals (2): mouse, flying squirrel
-- [ ] Snakes (2): garter snake, rosy boa
+- [ ] Snakes (1): rosy boa
 - [ ] Cats (10): universal, American shorthair, Bengal, domestic shorthair,
       Maine Coon, Persian, Ragdoll, Scottish Fold, Siamese, Sphynx
 - [ ] Dogs (14): universal, small breed, medium breed, large breed, beagle,
@@ -485,7 +482,23 @@ is why they kept getting deferred. Do them once section 7 is finished.
       link, "Other flavors and sizes are available". Most are species whose
       hubs are already reconciled, so this does not follow the batch order at
       all and wants one pass of its own. Batch I cleared savannah monitor and
-      degu, batch J clears mourning gecko.
+      degu, batch J clears mourning gecko, ackie monitor and amano shrimp.
+- [ ] The amano shrimp encyclopedia overview still opens "the largest shrimp
+      commonly kept in freshwater aquariums", the same claim the adultSize
+      field was corrected for in batch J. Bamboo shrimp reach 2 to 3 inches
+      and are common in the trade, and Atya gabonensis reaches 15 cm. One
+      clause, same entry, left alone because the species check works under a
+      one-field rule.
+- [ ] Source narration in pre-existing FAQs no hub row copies, found by the
+      batch J check while looking at something else: two on the amano feeding
+      guide ("Seriously Fish is direct about this", "Shrimp Science notes
+      plainly") and one on the garter feeding guide ("Sources land in a
+      similar range"). Likely more of the same corpus-wide, since four
+      batches running have found this shape in text the batch did touch.
+- [ ] Cherry shrimp and ghost shrimp have the same three-guide
+      RELATED_ARTICLES entry amano shrimp had before batch J, so their
+      sidebars are missing cycling, quarantine and the sick-tank check that
+      every fish species carries. One line each.
 - [ ] Legal guides missing from RELATED_ARTICLES, corpus-wide sweep. Three of
       batch I's five species had one (red-footed tortoise, degu, savannah
       monitor), so the legal guide was reachable from the hub and from

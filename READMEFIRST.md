@@ -618,7 +618,46 @@ RELATED_ARTICLES, so it was reachable from the hub and from nowhere in
 the sidebar. A sweep across every species with a legal guide is worth
 one short session.
 
-Next up is batch J: mourning gecko, ackie monitor, garter snake, oscar,
+Batch J (mourning gecko, ackie monitor, garter snake, oscar, amano
+shrimp), spanning gecko, lizard, snake, fish and invertebrate, done and
+checked 2026-09-15 on branch claude/hub-pacman-frog-80291s; not merged.
+Five router hubs, one reader pass per species, one Fable check. Pass
+grade C+, the lowest yet, for a reason worth reading below.
+
+The check found four of five hubs shipping FAQs that were written rather
+than copied verbatim from deep-dive frontmatter. That is the easiest
+item in the whole router shape to get right, it is stated plainly in
+step 2 of the batch prompt, and no previous check had caught it, which
+means earlier batches may carry the same defect unnoticed. Worth a grep
+across the reconciled hubs at some point: a hub FAQ whose question
+matches a deep dive's is not evidence it was copied, because the answers
+are where this went wrong. Ackie monitor lifted all three questions
+correctly and reworded all three answers.
+
+Source narration reached a hub row, a route line or an emergency card on
+all five species, the fourth batch running. The shapes keep changing
+rather than the defect going away: a bare attribution in a row, a route
+line still advertising a disagreement the batch had just settled, a
+narrated disagreement copied instead of settled first, and, new this
+time, a sentence the batch itself wrote while fixing something else. The
+amano stocking paragraph named two sources to make a point about which
+of them had actually published a figure, which belonged in the review
+file and not on the page.
+
+The batch's own next-batch note, kept because it still holds: the
+cross-link reasoning keeps paying. Mourning gecko had nine inbound
+articles including batch H's and batch I's gecko work; the ackie
+enrichment guide is the page savannah monitor borrows its evidence from;
+garter snake sits in the red-footed tortoise overview; oscar sits in the
+box turtle and kingsnake overview; amano shrimp shares a tank with
+corydoras.
+
+Next up is batch K. Pick five, one per class, where a set from a recent
+batch points at them. What is left, by class, is in docs/TODO.md
+section 7.
+
+The old batch J note follows for the reasoning, since it is the pattern
+to repeat: mourning gecko, ackie monitor, garter snake, oscar,
 amano shrimp (gecko, lizard, snake, fish, invertebrate). Three of those
 classes are new relative to batch I, and invertebrates have not had a
 batch at all. The cross-link reasoning again, since it keeps paying:
