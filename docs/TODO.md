@@ -395,8 +395,9 @@ when its entry carries `firstWeek` rows (RULES, Hubs). 51 of 108 done, 57
 still rendering the legacy care sheet. Batches of five, one branch each,
 per the READMEFIRST process. Dogs and cats last.
 Batch I (African fat-tail gecko, corydoras catfish, red-footed tortoise,
-degu, savannah monitor) is built and pushed on
-claude/hub-pacman-frog-80291s, Fable closing check still to run. Worker
+degu, savannah monitor) is built, checked and pushed on
+claude/hub-pacman-frog-80291s, not merged. The Fable closing check ran
+2026-09-15 and fixed every finding on the branch; pass grade B-. Worker
 Opus 5 high effort, one Fable closing check per batch (the batch prompt
 in READMEFIRST has the reasoning).
 
@@ -418,7 +419,7 @@ Done (51):
 - [x] cardinal tetra, milk snake, gargoyle gecko, gerbil, sulcata tortoise
       (batch H, merged to main 2026-09-15)
 - [x] African fat-tail gecko, corydoras catfish, red-footed tortoise, degu,
-      savannah monitor (batch I, built 2026-09-15, Fable check pending)
+      savannah monitor (batch I, checked 2026-09-15, not merged)
 
 To do (57):
 

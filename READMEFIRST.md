@@ -580,32 +580,59 @@ rather than copied bullets, and the review file described two fixes that
 the diff did not actually contain. Step 4 of the batch prompt exists to
 catch exactly that and did not.
 
-Next up is batch I: African fat-tail gecko, corydoras catfish,
-red-footed tortoise, degu, savannah monitor (gecko, fish, turtle, small
-mammal, lizard). The cross-link reasoning again, since it keeps paying:
-the gargoyle gecko set merged in batch H points at African fat-tail from
-four of its pages, the gerbil set points at degu six times through the
-shared overview, and the sulcata set points at red-footed tortoise.
-Corydoras catfish has six inbound articles and is the standard tankmate
-for the two tetra sets reconciled in batches G and H, so any tankmate or
-temperature claim in those gets checked against fresh work.
+Batch I (African fat-tail gecko, corydoras catfish, red-footed tortoise,
+degu, savannah monitor), spanning gecko, fish, turtle, small mammal and
+lizard, done and checked 2026-09-15 on branch
+claude/hub-pacman-frog-80291s; not yet merged. Five router hubs, one
+reader pass per species, one Fable check. Pass grade B-.
 
-African fat-tail goes first for a second reason. The gargoyle gecko
-defect in batch H was a setup guide whose whole thesis its own three
-sources reject, and African fat-tail is a sibling gecko guide from the
-same writing pass, so it is the likeliest place for that failure to
-repeat. Savannah monitor is in for a third: it is one of six enrichment
-guides still carrying the "Other quantities are available" template
-fragment, and it is the only one of the six inside a batch, so this
-fixes one of them in scope.
+Three findings worth carrying into the next batch:
 
-The other five are amano shrimp, chinchilla, hermit crab, hissing
-cockroach, ackie monitor and Argentine tegu. That fragment is shop copy
-with the product missing ("Other quantities are available and a proper
-depth needs several") and it is worth one short session of its own
-rather than waiting for each species' batch.
+Source narration is the defect that keeps coming back, and batch I is
+the third batch in a row to hit it. The check found source names or
+"sources disagree" phrasing in hub rows on all five species and in the
+deep dives on three. The mechanism is always the same: a deep dive
+narrates a disagreement instead of stating a figure, the router step
+copies that sentence into a row word for word, and the name rides
+across. The fix is upstream of the hub, in step 4 of the batch prompt:
+settle the figure in the article first, then copy. Reading the row for
+names after the fact is too late, because by then the article still says
+it too.
 
-The 62 species still on the legacy care sheet are listed by class in
+Degu was the second hub to hold the better source, after gerbil in
+batch H. Two instances make it a pattern rather than an exception, so
+check which page cites what before assuming the deep dive wins. The
+move both times was the same: the hub's sourced content goes into the
+deep dive first, verified against the source's own page rather than the
+hub's paraphrase, and then the row copies it from the article.
+
+Savannah monitor had no feeding guide at all and the only schedule
+anywhere in the set was one hub line no article repeated or sourced, and
+it was wrong. That is the fourth species this has come up on, after
+tokay, kingsnake, milk snake and canary, and the standing move held: a
+sourced Diet Basics section in the tank setup guide. Worth checking for
+a missing feeding guide at step 1 rather than discovering it at the hub.
+
+Also: three of the five species were missing their legal guide from
+RELATED_ARTICLES, so it was reachable from the hub and from nowhere in
+the sidebar. A sweep across every species with a legal guide is worth
+one short session.
+
+Next up is batch J. The cross-link reasoning again, since it keeps
+paying: pick five species one per class where a set merged in a recent
+batch points at them.
+
+Savannah monitor was picked for batch I partly to clear one of the
+enrichment guides carrying the "Other quantities are available" template
+fragment, and that one is fixed. The check found a second instance in
+the degu enrichment guide ("and other sizes are available"), also fixed.
+The ones still carrying it are amano shrimp, chinchilla, hermit crab,
+hissing cockroach, ackie monitor and Argentine tegu. That fragment is
+shop copy with the product missing ("Other quantities are available and
+a proper depth needs several") and it is worth one short session of its
+own rather than waiting for each species' batch.
+
+The 57 species still on the legacy care sheet are listed by class in
 docs/TODO.md, section 7, dogs and cats last. Paste this with the next
 five species filled in when picking up the batch after that.
 

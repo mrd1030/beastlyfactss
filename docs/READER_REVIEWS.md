@@ -4283,6 +4283,49 @@ in one review section.
   110 where the review said otherwise; a gerbil FunFact still at three to
   four years; and ten files with a number changed and no date bump. Pass
   grade B-.
+- 2026-09-15, batch I (African fat-tail gecko, corydoras catfish, red-footed
+  tortoise, degu, savannah monitor, branch claude/hub-pacman-frog-80291s).
+  African fat-tail: the feeding guide's flat sand ban came back to the hedge
+  Cadillac Vet actually states, an unsourced "nearly half its body mass" tail
+  fraction went from excerpt, FAQ and body, and the setup guide's sand hedge
+  gained the dehydration and shedding reasons. Corydoras catfish: the feeding
+  guide's "Why Corydoras Catfish Stop Eating" shipped as a numbered list
+  holding only item 1 and was restored to its cited source's seven causes, the
+  health guide's confident barbel-erosion mechanism became the hedge its own
+  sources support, and the encyclopedia's scientific name caught up with its
+  own history paragraph as Osteogaster aenea. Red-footed tortoise: the health
+  guide's "2021 study" cited as Mendoza et al., 2022 became "a controlled
+  study", the handling guide's growth FAQ and the cost guide's copy of it came
+  to the Hepper chart the handling body already cites, the feeding guide's 10
+  to 15 years to adult size came to that chart's 5 to 10, and the enrichment
+  guide's unattributed 2025 study now names the Animal Cognition paper.
+  Degu: the second hub after gerbil to hold the better source, so the RSPCA's
+  solid roof, deep dig layer, safe-wood branches, air-circulation case against
+  a glass tank and coprophagy requirement moved into the deep dives, while the
+  hub still lost eight figures, the cost guide's "$100 to $300" setup heading
+  came to the $375 to $520 its own table sums to in four places, lifespan
+  across three pages came to the Frontiers colony paper's 5 to 8 captive
+  years, and the unnamed toxin in rabbit food was named as a coccidiostat.
+  Savannah monitor: the set had no feeding guide and one unsourced hub line
+  that was wrong, so a Diet Basics section built from LafeberVet and Tree of
+  Life Exotics went into the tank setup guide, the legal guide's "six" came to
+  the eleven its own table lists, two stranded template sentences in the
+  enrichment guide were rewritten, and the encyclopedia's wildLifespan stopped
+  holding a captive figure, the seventh instance. Across the batch, three
+  species were missing their legal guide from RELATED_ARTICLES.
+- 2026-09-15, batch I species check (one Fable agent covering all five):
+  source names and source narration in hub rows on all five species and in the
+  deep dives on three, the defect this check was reinstated to catch, so the
+  underlying feeding, cost, tank setup and health sentences were settled to
+  state their figures and the rows recopied; two emergency-card bullets
+  written rather than copied, and two more missing from the African fat-tail
+  card; an African fat-tail seoDescription still carrying the retired tail
+  fraction; three route lines merging two source ranges into one; a red-footed
+  tortoise vetLine hardening a hedge; a degu vs-chinchilla FAQ flourish and a
+  hardened "typically"; a site self-reference in each of the degu and savannah
+  monitor additions; one more "other sizes are available" template fragment in
+  the degu enrichment guide; and two review-file link counts that did not
+  match the diff. Pass grade B-.
 
 ## Green Iguana (2026-09-09, first pass)
 

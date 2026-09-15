@@ -4333,6 +4333,93 @@ First two changes: make the hub inherit its numbers from the deep dives instead 
 - Cohabitation: whether two can share an enclosure, and whether males fight.
 - Sexing: the hub says females are smaller, and nothing tells you how to sex one.
 
+
+---
+
+# Corydoras Catfish: Set Review
+
+Opus reader agent, first pass, 2026-09-15, batch I. Raw and unedited.
+
+**1. One line per page**
+
+- 00 Hub: Finished it, and it is the only page that gives me a water change schedule, but its cost table and tank size fight the cost and setup guides. B-minus.
+- 01 Encyclopedia: Finished it fast; the 2024 genus revision is the one thing here I could not get elsewhere, though nothing on the page is actionable. B.
+- 02 Cost: Finished it, and I can build a shopping list and a monthly number from it. B-plus.
+- 03 Handling: Finished it, though it is mostly "do not handle, buy six, they are not algae eaters," which two other pages also say. C-plus.
+- 04 Health: Finished it, and it is the most usable page in the set: named conditions, nitrate under 20 ppm, 82F for ich, half or quarter medication doses. A-minus.
+- 05 Tank setup: Finished it, and I could buy and assemble the tank from this page alone. A-minus.
+- 06 Feeding: Finished it, portions and timing are concrete, but the "Why They Stop Eating" list is a numbered list with only item 1 in it, which reads like a page that shipped broken. B-minus.
+- 07 Enrichment: Finished it twice; the only page that sources its claims and the only one that tells me the pectoral spines lock in a net. A.
+
+**2. Hub and encyclopedia versus the deep dives**
+
+The encyclopedia earns its place on history and taxonomy alone, nothing else carries it. The hub mostly restates the deep dives, but it uniquely carries "20 to 25 percent weekly water changes," which appears nowhere else, and that is the single most important routine number in fishkeeping.
+
+It also disagrees with them:
+
+- Tank size. Hub: "A 10 to 20 gallon tank suits a proper school." Setup guide: "A 20-gallon long tank is the practical minimum for a proper school of six standard-sized cories." The hub's checklist says "10-20+ gallon tank." Ten gallons is only correct for pygmies, and the hub never says so.
+- Tank price. Hub table: "10-20+ gallon tank | $60 | $120." Cost guide: "20 gallon long tank | $35 - $60." Same tank, double the money.
+- Filter price. Hub: "Gentle filter | $20 | $35." Cost guide: "Gentle-flow filter | $8 - $15."
+- Food cost. Hub annual: "Sinking wafers + frozen bloodworms | $40 | $70." Cost guide: "Roughly $10 to $20 a Month," which is $120 to $240 a year.
+- The hub's setup table omits a heater and a test kit entirely, both of which the cost guide calls required.
+- The hub calls them "scaleless catfish"; the health guide and encyclopedia call them "armored catfish with sensitive, naked bellies." Same conclusion about copper, contradictory anatomy.
+
+**3. The set as a whole**
+
+I could set up, buy, feed, and keep them. Setup, substrate, portions, group size, and the main diseases are all here. Missing: cycling the tank before fish go in (the shared guide covers it, but no species page says "do this first"), acclimation on arrival for a species the health guide says shipping stress triggers red blotch in, a tankmate list beyond "not aggressive," breeding, and how to tell dwarf and pygmy species apart when the setup guide says they need a different tank.
+
+Questions raised on one page and answered on another without saying so:
+- Cost guide: "Soft sand substrate is genuinely important for this species, and it matters more than it looks like it should." Why is on the setup and enrichment pages; the cost guide never points there.
+- Health guide: "keep nitrates under 20 ppm going forward." How is the hub's weekly 20 to 25 percent water change, which the health guide does not mention.
+- Handling guide: "Choosing sharp substrate, which damages this species' sensitive barbels." The enrichment guide argues that is probably not the mechanism, and handling never says so.
+- Hub FAQ: "Can corydoras live with a bristlenose pleco?" is the only tankmate answer anywhere, and no deep dive links to it.
+
+**4. Overlap and conflict across the deep dives**
+
+Read three or four times: cories are not algae eaters, buy six of one species, surface gulping is normal, sand not sharp gravel. Handling and feeding overlap almost completely on the first two; handling is the page I would cut.
+
+Real conflicts:
+- Barbel erosion cause. Health: "It's caused by a combination of sharp substrate causing physical damage and elevated nitrates allowing bacterial infection to take hold in the wound." Enrichment: "No controlled study establishes what causes barbel erosion" and "Do not let the substrate get dirty, which is the actual barbel risk." One page is confident about a mechanism the other says is unproven.
+- Substrate depth and cleaning. Setup: "About 2 inches of depth works well" plus "Avoid over-cleaning or disturbing the substrate too aggressively during maintenance." Enrichment: "Vacuum the surface layer regularly." Hub: "making regular gravel vacuuming and 20 to 25 percent weekly water changes especially important." Three shades of the same instruction, and setup's caution cuts against the other two.
+- Feeding time. Feeding: "Feeding in the evening, when this species is naturally most active." Setup: "Cories are most active around dawn and dusk." Enrichment: "feed after lights out." Close enough to be confusing, not close enough to be one instruction.
+- Encyclopedia internal: header says "Scientific: Corydoras aeneus," body says "the bronze cory moved to Osteogaster." The header was not updated.
+
+**5. One link per page**
+
+- Hub: "Barbel damage or erosion from sharp or rough substrate is a very common and entirely preventable problem." Should point to the enrichment guide, which is where that claim gets tested.
+- Encyclopedia: "They are obligate shoaling fish, meaning they need the company of their own species to feel secure." Should point to the enrichment guide's group size section.
+- Cost: "A 20-gallon long tank is the practical starting size for a proper school." Should point to the tank setup guide. This is the biggest missing link in the set.
+- Handling: "Choosing sharp substrate, which damages this species' sensitive barbels." Should point to the enrichment guide.
+- Health: "switch to soft sand if you haven't already, do a significant water change, and keep nitrates under 20 ppm going forward." Should point to the tank setup guide. This page has no link to any sibling.
+- Tank setup: "A reliable water test kit is worth keeping on hand so you catch a rising nitrate reading before it becomes a barbel problem." Should point to the health issues guide.
+- Feeding: "Test water parameters immediately if appetite loss shows up alongside lethargy, hiding, labored breathing, or any visible sign of illness." Should point to How to Tell If Your Fish Is Sick.
+- Enrichment: needs none. It is the only page that links where it should already.
+
+**6. Trust**
+
+Doubts: the hub's cost table and tank range contradicting the cost and setup guides is the kind of thing that makes me re-check everything else. The feeding guide's one-item numbered list is a visible defect. The encyclopedia's scientific name contradicting its own history paragraph. Four pages carrying the same Jackson's Chameleon and canary comparison link reads like padding, not navigation.
+
+The sentence that convinced me a keeper wrote this: "And take real care netting one, since the pectoral spines lock and tangle in mesh." Nobody writes that who has not spent ten minutes trying to free a cory from a net.
+
+**7. Set grade: B**
+
+Strong on the two things that kill cories, substrate and dedicated food, but the hub contradicts its own deep dives on money and tank size, which is exactly where a buyer starts.
+
+First two changes:
+1. Rebuild the hub's cost table and tank size from the cost and setup guides so all three agree, and add the heater and test kit.
+2. Reconcile the barbel erosion story. Either the health guide adopts the enrichment guide's "dirty substrate, not grain shape" framing, or the enrichment guide is not the sourced outlier it currently is.
+
+**Not covered anywhere**
+
+Checked against the Health and More list as well as the species pages.
+
+- Breeding and spawning: no page, shared or species, touches it.
+- A named tankmate list: only the hub FAQ's bristlenose pleco answer and "no fin nippers, nothing big enough to eat one." No shared guide covers stocking.
+- Drip or float acclimation on arrival: the hospital tank guide covers quarantine, not the acclimation procedure itself, and the health guide names shipping stress as a red blotch trigger without saying what to do about it.
+- Which species need cooler or warmer water: the setup guide says "preferences vary" and never resolves it, and no shared guide would.
+- Sexing, and how to tell a dwarf or pygmy species from a standard one at the store, when the two need different tanks.
+- Everything else I flagged is covered: cycling by How to Cycle a Fish Tank, the nitrate and water change routine by the hub and the filtration guide, symptom reading by How to Tell If Your Fish Is Sick, heat by Cooling an Aquarium Without a Chiller, moving and outages by the transport guide.
+
 ---
 
 # Red-Footed Tortoise: Set Review
