@@ -94,53 +94,103 @@ export const invertebrateGuides = [
   {
     id: "cherry-shrimp",
     name: "Cherry Shrimp",
-    emoji: "🦐",
+    emoji: "\u{1F990}",
     difficulty: "Beginner",
     petType: "Invertebrates",
     image: "/assets/guides/cherry-shrimp.jpg",
     tagline: "The tiny, self-multiplying cleanup crew that turns one bag of shrimp into a colony!",
     funFact: "Every color of cherry shrimp in the hobby, from clear to fire-engine red to jet black, is the exact same species. Neocaridina davidi's natural wild coloring is actually a dull, camouflaged greenish-brown; decades of selective breeding by hobbyists produced the entire modern color palette, right down to the graded 'Fire Red' and 'Painted Fire Red' tiers sold today.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "5-10 gallon tank", low: 25, high: 50 },
-        { item: "Sponge filter", low: 10, high: 20 },
-        { item: "Aquarium heater (if room runs cool)", low: 15, high: 25 },
-        { item: "Live plants or moss", low: 15, high: 25 },
-        { item: "Mineral/GH supplement", low: 8, high: 15 },
-      ],
-      annual: [
-        { item: "Shrimp-specific sinking pellets", low: 12, high: 25 },
-        { item: "Blanched vegetables and Indian almond leaves", low: 10, high: 20 },
-        { item: "Water conditioner", low: 8, high: 12 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Filter maintenance, water chemistry
+    // and summer cooling cite the shared aquarium guides in the sidebar's
+    // Health and More list. Reconciled 2026-09-15 after the cherry shrimp set
+    // test (docs/READER_REVIEWS.md).
+    //
+    // The old hub said in its own comment that its pricing was unverified, and
+    // the reader graded it C+ as "where I got most of my wrong ideas." Retired
+    // rather than moved: GH of "roughly 7 to 14 dGH" against the setup guide's
+    // 6 to 8, which barely overlaps; pH "between 6.5 and 8.0" against 6.5 to
+    // 7.5; a temperature range of "about 65 to 85 degrees F, with the high 60s
+    // to high 70s being the most comfortable zone" against 60 to 82 with 72 to
+    // 76 optimal; a heater trigger of "below 65F" against the setup guide's
+    // high 50s; a shrimp price of "$2 to $4 for a common red shrimp" against
+    // the cost guide's $4 to $5 for standard grades; every cost row, with the
+    // tank at $25 to $50 against $18 to $30 and food at $12 to $25 against $8
+    // to $12; a claim that "a shrimp-specific sinking pellet should still form
+    // the base of a deliberate diet" on a set whose feeding guide says cherry
+    // shrimp mostly feed themselves; and a checklist demanding a
+    // "Calcium/mineral supplement for molting" where the feeding guide says
+    // diet and stable hardness "cover most of that need without a dedicated
+    // supplement."
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Tank size", value: "5 gallons is a commonly cited practical minimum. Shrimp can technically survive in a 2-gallon nano tank, but 10 gallons or larger suits a healthy, self-sustaining breeding colony, since more water volume buffers the small, constant parameter shifts a growing colony naturally causes.", source: "cherry-shrimp-tank-setup-guide" },
+        { label: "Mature, not just cycled", value: "A tank needs to be fully mature, not just cycled, before shrimp go in: the biofilm a shrimp grazes takes longer to arrive than the bacteria that clear ammonia. Ammonia and nitrite should both read zero at all times.", source: "cherry-shrimp-health-issues-guide" },
+        { label: "Water hardness", value: "The single most shrimp-specific requirement. The floor is a GH of 6 degrees (about 110 ppm) and a KH of 2 degrees (about 40 ppm). The tighter target, and the one that most reliably supports a full, hard molt, is roughly 6 to 8 dGH and 2 to 4 dKH alongside a pH of 6.5 to 7.5. Mineral hardness is what a shrimp pulls calcium from to build a new shell after every molt, so a tank that's too soft leads directly to failed and soft molts.", source: "cherry-shrimp-tank-setup-guide" },
+        { label: "Temperature", value: "A comfortable range of 60 to 82\u00B0F, with 72 to 76\u00B0F optimal, and an outer tolerated range as wide as 57 to 86\u00B0F. Most home rooms sit comfortably inside this species' range without any supplemental heat at all. A heater is still worth having if your room regularly runs cooler than the high 50s, or if you want a stable, warmer setpoint for more consistent growth and breeding.", source: "cherry-shrimp-tank-setup-guide" },
+        { label: "Filtration", value: "A sponge filter, or a standard filter with its intake covered by a pre-filter sponge. An uncovered filter intake can pull baby shrimp in, and adult shrimp aren't entirely safe from a strong intake either. Gentle water movement also better matches the calmer water this species is used to.", source: "cherry-shrimp-tank-setup-guide" },
+        { label: "Water changes", value: "Limit them to roughly 10% a week, or 20% every two weeks. Larger or more frequent changes shock shrimp even when the new water itself is clean and dechlorinated.", source: "cherry-shrimp-health-issues-guide" },
+        { label: "Grazing surface", value: "Dense live plants or moss, driftwood and leaf litter. This is the whole thing for a grazing animal: surface area is what a cherry shrimp spends its day on, and a bare tank with a food dish is the impoverished version.", source: "cherry-shrimp-enrichment-guide" },
+        { label: "A colony, not a few", value: "More than a handful. Cherry shrimp are more active, more visible and more confident in a colony, and ten or more is a sensible starting point in a tank of reasonable size. A pair or trio spends most of its time hidden.", source: "cherry-shrimp-enrichment-guide" },
+        { label: "Diet", value: "Mostly grazing. In an established, well-planted tank a colony finds a meaningful amount of its own food picking biofilm, algae and detritus off every surface, with a sinking wafer a couple of times a week on top of that rather than as the base of the diet.", source: "cherry-shrimp-feeding-guide" },
+        { label: "Portion", value: "A piece of food no larger than a pea, or a quarter of a small wafer, is enough for a colony of 10 to 20 shrimp. Feed only what the colony clears within 2 to 3 hours, and if food from the last feeding is still sitting there, skip the next one rather than adding more on top of it.", source: "cherry-shrimp-feeding-guide" },
+        { label: "Calcium for the molt", value: "A quality sinking food, occasional blanched vegetables, and stable water hardness cover most of that need without a dedicated supplement.", source: "cherry-shrimp-feeding-guide" },
+        { label: "Leave the shed shell", value: "It's safe, and generally a good idea, to leave a molted exoskeleton in the tank for a day or two rather than removing it. The shrimp that just molted, and its tankmates, will pick it apart to reclaim the calcium and minerals already locked inside it. The only real exception is a tank already dealing with a parasite or bacterial problem.", source: "cherry-shrimp-feeding-guide" },
+        { label: "Molt frequency", value: "An adult sheds roughly every 3 to 4 weeks, with younger shrimp molting even more often as they grow. A shrimp that hides and stays still for a few days right after a normal molt is not showing signs of a problem, that's just the vulnerable window while a fresh shell hardens.", source: "cherry-shrimp-health-issues-guide" },
+        { label: "Copper, the one to take seriously", value: "Shrimp tolerate almost no copper at all, at concentrations that wouldn't register as a concern for most fish. A 2014 toxicity study on a related freshwater shrimp found a 96-hour lethal concentration of just 0.0313 mg/L, by far the most toxic of five metals tested, with a proposed biologically safe target closer to 0.003 mg/L.", source: "cherry-shrimp-health-issues-guide" },
+        { label: "Where copper hides", value: "Many common fish medications, some plant fertilizers, and pesticide treatments used on store-bought aquarium plants before sale. Quarantine new plants in clean water for at least five days, with daily water changes, before they go anywhere near a shrimp tank. Never treat a shared shrimp-and-fish tank with a copper-based medication.", source: "cherry-shrimp-health-issues-guide" },
+        { label: "Acclimation", value: "A slow drip rather than a quick float-and-dump, roughly one drop per one to two seconds until the water volume in the acclimation container has doubled, which takes 60 to 90 minutes for most home setups. Shrimp regulate their internal water balance far less efficiently than fish do, so a sudden shift in pH, hardness or temperature can trigger osmotic shock.", source: "cherry-shrimp-handling-guide" },
+        { label: "Quarantine", value: "At least two weeks in a separate, established tank before adding new shrimp to an existing colony, longer if you want extra confidence. Some specialty retailers quarantine for a full 30 days before shrimp are even offered for sale.", source: "cherry-shrimp-handling-guide" },
+        { label: "Handling", value: "Netting is the only real contact this species gets, and take your time doing it: transfer shock kills more shrimp than the destination tank does.", source: "cherry-shrimp-enrichment-guide" },
+        { label: "Budget, the shrimp", value: "Standard grades cluster closer to $4 to $5 a shrimp, and the deepest-colored grades run $6 to $8. Buying in a small group rather than one or two lowers the per-shrimp price, and it gives a young colony a healthier starting gene pool.", source: "cherry-shrimp-cost-guide" },
+        { label: "Budget, the setup", value: "Roughly $45 to $110. The one recurring cost the table leaves out is a mineral or GH-boosting supplement, typically a few dollars every few months. The test kit is a purchase you'll rely on repeatedly rather than a one-off, since cherry shrimp tolerate very little ammonia or nitrite.", source: "cherry-shrimp-cost-guide" },
+        { label: "Vet costs", value: "Not applicable in the traditional sense. There's essentially no practical veterinary care available for aquarium invertebrates this small, so husbandry and prevention do all the work here, not treatment after the fact.", source: "cherry-shrimp-cost-guide" },
+        { label: "Lifespan", value: "Up to 2 years under ideal, stable conditions, though shrimp in a typical home aquarium often average closer to just the first year.", source: "cherry-shrimp-cost-guide" },
+        { label: "Never release them", value: "The U.S. Fish and Wildlife Service's 2025 ecological risk screening rates *Neocaridina davidi* a High overall invasion risk for the contiguous United States, with a strong climate match in the Great Lakes region, peninsular Florida, the southern Great Plains, and parts of the Rocky Mountains. Find a local fish store or online forum to rehome extras.", source: "cherry-shrimp-cost-guide" },
+        { label: "Adult size", value: "Up to about 1.5 inches (4 cm)." },
+        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
+        { label: "Water chemistry, the wider picture", value: "KH is the buffer holding pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you rather than chasing a number.", source: "freshwater-ph-gh-kh-guide" },
       ],
     },
-    sections: {
-      housing: "A 5-gallon tank is enough to start a small colony, but 10 gallons or more gives you a much more stable, forgiving system, especially since cherry shrimp should only go into a fully established, already-cycled aquarium rather than a brand-new one. They tolerate a wide temperature range of about 65 to 85 degrees F, with the high 60s to high 70s being the most comfortable zone, so a heater is often optional in a warm room but worth having for consistency. Keep pH between 6.5 and 8.0 and moderately hard water, roughly 7 to 14 dGH, since adequate mineral content is what lets a shrimp's new shell harden properly after each molt. Use a sponge filter rather than a standard intake, since cherry shrimp and especially their young are small enough to be pulled into a canister or hang-on-back filter. Dense live plants or moss (Java moss is a favorite) give shrimp grazing surface, shelter for molting, and cover for babies, and they do no damage to real aquarium plants the way some fish do. Avoid any trace of copper in decor, fertilizer, or medication, since copper is toxic to shrimp at concentrations far below what fish tolerate.",
-      diet: "Cherry shrimp are constant grazers, spending most of the day picking biofilm, algae, and leftover detritus off every surface in the tank. In an established, well-planted aquarium they can find a meaningful amount of food this way, but a shrimp-specific sinking pellet should still form the base of a deliberate diet, supplemented with blanched zucchini, spinach, or carrot a couple of times a week. Indian almond (catappa) leaves are a popular addition: as they slowly break down they release tannins and become a grazing surface that shrimp will pick at for days. A cuttlebone chip or a commercial mineral supplement helps keep calcium available for molting, especially in softer water. Feed only what a colony clears in a couple of hours, since cherry shrimp are too small to make a visible dent in overfeeding, and excess food fouls water quickly in a small tank.",
-      enrichment: "Cherry shrimp are an observation pet through and through: the appeal is watching a colony forage, molt, and breed rather than any interaction with the keeper. Because they breed so readily in plain freshwater, with no special triggers required, a healthy colony gives you an ongoing show of its own. A female develops a yellow 'saddle' of developing eggs behind her head, mates, and then carries 20 to 30 fertilized eggs under her tail (a state called being 'berried') for roughly three to four weeks until they hatch as fully formed miniature shrimp, since unlike Amano shrimp, cherry shrimp have no separate larval stage. Dense moss or plant cover gives newly hatched shrimp somewhere to hide from adults and any fish tankmates. Cherry shrimp are not a handling pet, but many keepers find their constant, unhurried foraging genuinely relaxing to watch.",
-      health: "Cherry shrimp are hardy once established, but they're unusually sensitive to sudden shifts in water chemistry, which is why they should always go into a mature, fully cycled tank rather than a new one, and why any water changes should be gradual rather than dramatic. Newly purchased shrimp benefit from drip acclimation over a couple of hours instead of a quick dump-and-go, since even a moderate mismatch in parameters between the bag and your tank can be lethal. Copper is a silent killer: many common fish medications and even some tap water sources contain enough copper to kill an entire colony, so treat any medication as shrimp-unsafe until you've confirmed otherwise. Molting is a routine, frequent event (much more often than in most other invertebrates on this site), and a shrimp that looks like it has doubled overnight or is temporarily hiding after shedding is normal, not sick, though a soft shell that doesn't harden within a day or two usually points to insufficient GH or calcium.",
-      checklist: [
-        "5-10+ gallon established, fully cycled tank",
-        "Sponge filter (standard intakes can pull shrimp in)",
-        "Heater if room temperature runs below 65°F",
-        "pH 6.5-8.0, moderately hard water (7-14 dGH)",
-        "Dense live plants or moss (Java moss is ideal)",
-        "Shrimp-specific sinking pellets",
-        "Blanched vegetables and Indian almond leaves",
-        "Calcium/mineral supplement for molting",
-        "Drip acclimation for new arrivals",
-        "Copper-free medications and fertilizers only",
+    emergencyCard: {
+      source: "cherry-shrimp-health-issues-guide",
+      callNow: [
+        "A complete white band around the middle of the shrimp's body instead of a clean split at the head, the \"white ring of death\"",
+        "A shrimp whose body has visibly separated from its shell",
+        "Stillness and hiding that lasts well beyond a few days after a molt",
+        "Sudden losses across the colony with no obvious cause",
+        "A shrimp that looks pale or ashy",
       ],
+      vetLine: "There's essentially no practical veterinary care available for an animal this small, so this list is entirely about prevention. Nearly everything on it traces back to water stability and mineral content, exactly what a mature, properly cycled tank with gradual water changes prevents. A failed molt is usually fatal once it happens, which makes stable GH, gradual water changes and a properly fed colony the real point of leverage. A water test kit is the tool that actually tells you which of these causes you're dealing with rather than guessing.",
     },
+    routes: [
+      { slug: "cherry-shrimp-cost-guide", line: "$4 to $8 a shrimp by grade, $45 to $110 for the tank around them, and why you never release the extras." },
+      { slug: "cherry-shrimp-tank-setup-guide", line: "5 gallons as a floor and 10 for a colony, the GH and KH that decide whether a molt works, and a filter intake that won't eat the babies." },
+      { slug: "cherry-shrimp-feeding-guide", line: "Why a colony mostly feeds itself, a portion the size of a pea, and the shed shell you leave in the tank." },
+      { slug: "cherry-shrimp-handling-guide", line: "Netting only, and why drip acclimation matters more for a shrimp than for any fish you have kept." },
+      { slug: "cherry-shrimp-health-issues-guide", line: "The white ring of death, the copper number, and the short list behind every unexplained colony die-off." },
+      { slug: "cherry-shrimp-enrichment-guide", line: "What the decapod sentience review actually concluded, and why surface area is the whole enrichment question here." },
+    ],
+    buyList: [
+      "10-gallon tank for a colony, or 5 gallons to start small",
+      "Sponge filter, or a pre-filter sponge over an existing intake",
+      "Heater, only if the room runs cooler than the high 50s",
+      "Java moss, dense live plants and driftwood",
+      "Indian almond leaves and other leaf litter",
+      "GH and KH test kit, plus an ammonia and nitrite test",
+      "Remineralizing product, if your source water comes up short",
+      "Water conditioner",
+      "Sinking wafers",
+      "Zucchini, spinach or carrot to blanch",
+      "Ten or more shrimp, rather than a pair or trio",
+    ],
     faqs: [
-      { q: "Do cherry shrimp really breed without any effort?", a: "Yes, this is their defining trait. In a stable, established freshwater tank with no special triggers, no separate breeding tank, and no intervention at all, a small starting group of cherry shrimp will become a self-sustaining colony within a few months. A female develops a yellow saddle of eggs, mates, and carries 20 to 30 fertilized eggs for roughly three to four weeks before they hatch as fully formed miniature shrimp. If you don't want a growing colony, keep a smaller group and expect it to grow anyway, since there's no reliable way to keep cherry shrimp without eventual breeding." },
-      { q: "Why are some cherry shrimp more red than others?", a: "Grading. Every cherry shrimp is the same species, Neocaridina davidi, whose wild coloring is actually a dull, translucent greenish-brown. Decades of selective breeding produced a hierarchy of red intensity that the hobby broadly recognizes, from a lightly spotted 'regular' grade up through Sakura and Fire Red to Painted Fire Red and the deepest 'Bloody Mary' shrimp with essentially no clear patches left. Price climbs with grade too, often $2 to $4 for a common red shrimp up to $7 to $10 or more for Painted Fire Red or Bloody Mary, but a lower-grade shrimp is exactly as healthy and easy to keep." },
-      { q: "Are cherry shrimp only available in red?", a: "No, red is just the most popular line. The same species has been selectively bred into entirely separate color lines including blue (Blue Velvet, Blue Dream), yellow, orange, chocolate brown, black, and green, plus a 'Rili' pattern that leaves clear bands across an otherwise solid color. All of them have identical care requirements; the differences are purely cosmetic." },
-      { q: "What size tank do cherry shrimp need?", a: "5 gallons is a workable minimum for a small starting group, but 10 gallons or more is more forgiving and better suited to the colony a healthy group will eventually become. What matters more than raw size is maturity: a cherry shrimp tank needs to be fully cycled before shrimp go in, since they're notably sensitive to the ammonia and nitrite spikes of a brand-new aquarium." },
-      { q: "Can cherry shrimp live with ghost shrimp or betta fish?", a: "It depends on the individual. [Ghost shrimp](/guides/ghost-shrimp/) are generally peaceful but will opportunistically prey on smaller or freshly molted cherry shrimp, especially in an underfed or overcrowded tank, so keep both well fed and give cherry shrimp plenty of dense cover if you mix them. [Betta fish](/guides/betta-fish/) are more of a gamble: a betta's temperament varies a lot between individuals, and while adult cherry shrimp are often too fast and too large to be worth the effort, small or newly molted shrimp are genuinely at risk. Dense planting and a well-fed betta improve the odds either way, but neither pairing is a guarantee." },
-      { q: "What's the difference between cherry shrimp and Amano shrimp?", a: "Mainly size and breeding. [Amano shrimp](/guides/amano-shrimp/) grow noticeably larger, up to about 2 inches versus a cherry shrimp's 1.5, and are the better algae eater of the two, especially on tougher hair and beard algae. The bigger practical difference is reproduction: cherry shrimp breed prolifically in plain freshwater with zero effort from the keeper, while Amano shrimp cannot complete their life cycle in freshwater at all, so a home colony essentially never happens by accident." },
-      { q: "Are cherry shrimp good pets for beginners?", a: "Yes, arguably the single best invertebrate starter on this entire site. They tolerate a wide range of water conditions once established, do real cleanup work grazing algae and biofilm, and multiply into a full colony without any breeding effort from the keeper. The only real beginner trap is adding them to a brand-new, uncycled tank. Wait for your tank to fully cycle first, and a cherry shrimp colony is about as low-maintenance as the aquarium hobby gets." },
+      { q: "What size tank do cherry shrimp need?", a: "5 gallons is the commonly cited practical minimum. Shrimp can technically survive in a 2-gallon nano tank, but 10 gallons or more suits a stable breeding colony, since more water absorbs the small parameter shifts a growing colony causes." },
+      { q: "Should I remove a shrimp's shed shell after it molts?", a: "No, leave it in the tank for a day or two. Shrimp (including the one that just molted) eat the discarded shell to reclaim the calcium and minerals in it, which directly supports hardening the new shell underneath. The only exception is a tank dealing with a parasite or bacterial outbreak, where old shells should be removed instead." },
+      { q: "How many should I keep?", a: "More than a handful. Cherry shrimp are more active, more visible and more confident in a colony, and ten or more is a sensible starting point in a tank of reasonable size. A pair or trio spends most of its time hidden." },
     ],
   },
   {

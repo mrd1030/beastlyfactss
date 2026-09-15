@@ -509,71 +509,103 @@ Mouth rot and respiratory infections follow from enclosures that are wet rather 
   {
     id: "green-anole",
     name: "Green Anole",
-    emoji: "🦎",
+    emoji: "\u{1F98E}",
     difficulty: "Beginner/Intermediate",
     petType: "Lizards",
     image: "/assets/guides/green-anole.jpg",
-    tagline: "America's tiny chameleon: the little green lizard that turns brown with its mood!",
-    funFact: "Green anoles can change color from bright green to brown depending on temperature, stress, or mood, earning them the nickname 'American chameleon,' though they're not true chameleons at all!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "18x18x24 in tall planted enclosure", low: 80, high: 150 },
-        { item: "UVB (T5 HO 5-6%)", low: 50, high: 90 },
-        { item: "Basking bulb", low: 15, high: 30 },
-        { item: "Dense live plants", low: 25, high: 45 },
-        { item: "Thin branches and cork bark", low: 15, high: 25 },
-        { item: "Automatic mister or manual misting bottle", low: 10, high: 40 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-      ],
-      annual: [
-        { item: "Small feeder insects (crickets, fruit flies)", low: 60, high: 120 },
-        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
-        { item: "UVB bulb replacement", low: 50, high: 90 },
-        { item: "Electricity (heat and lighting)", low: 30, high: 50 },
-        { item: "Annual vet wellness check", low: 40, high: 80 },
+    tagline: "The color-changing little acrobat with a signal flag under its chin!",
+    funFact: "Green anoles change color between green and brown based on temperature, mood, and stress rather than to match their surroundings, which is why the 'American chameleon' nickname is a misnomer. A stressed or cold anole goes brown; a relaxed, warm one goes green.",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Salmonella, thermostats, shedding, quarantine and
+    // the emergency plan cite the shared reptile guides in the sidebar's
+    // Health and More list. Reconciled 2026-09-15 after the green anole set
+    // test (docs/READER_REVIEWS.md).
+    //
+    // The reader graded the old hub C-, and it lost on every number a buyer
+    // acts on. Retired rather than moved: "A well-planted 18x18x24 vertical
+    // enclosure works for 1 to 2 green anoles" against a setup guide and a
+    // cost guide that both say 24x24x24 for one adult; "A male-female pair or
+    // a group of females can be housed together", which is the least safe
+    // claim in the set and is settled below; an enclosure line of $80 to $150
+    // against the cost guide's $250 to $270 and a UVB line of $50 to $90
+    // against $95 to $115, with the hub's tables summing to roughly $210 to
+    // $405 against a stated total of $390 to $470; "daytime temperatures of
+    // 80 to 85 degrees F" against a cool side of 70 to 77; humidity "60 to
+    // 80%" against 60 to 70; and "a consistent 12-hour cycle" against a 10 to
+    // 14 hour photoperiod. The hub's diet section was the only feeding content
+    // in the set, so it is not simply dropped: a sourced Diet Basics section
+    // went into the tank setup guide, which is the standing move for a species
+    // with no feeding guide, and it carries the portion figure the hub never
+    // had.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Enclosure size", value: "24 inches long by 24 inches wide by 24 inches tall as a minimum for one adult, larger is better. This species is semi-arboreal, so a tall, front-opening enclosure with good ventilation suits it well.", source: "green-anole-tank-setup-guide" },
+        { label: "Housed alone", value: "Don't house multiple anoles together, they don't coexist peacefully.", source: "green-anole-tank-setup-guide" },
+        { label: "Why they can't share", value: "Two males is the version that fails fastest: the dewlap is a territorial signaling structure and males use it constantly, so two in one enclosure means an argument that never resolves, and the loser stops feeding. In a group, an anole that cannot get out of another anole's sight has no way to end an encounter, and continuous low-level display is how subordinate anoles get run down.", source: "green-anole-enrichment-guide" },
+        { label: "Temperature", value: "Basking spot around 90F, cool side 70 to 77F, nighttime 65 to 75F. A 60-watt incandescent basking bulb in a ceramic-socket dome works well.", source: "green-anole-tank-setup-guide" },
+        { label: "The mesh burn", value: "Mount the heat lamp above or outside the enclosure's mesh top, not resting directly on it. Green anoles climb and rest inverted on mesh, and a bulb positioned where they can reach it risks real burns.", source: "green-anole-tank-setup-guide" },
+        { label: "Humidity", value: "60 to 70% during the day, higher overnight. Achieve this through morning and evening misting, and a cool-mist humidifier or fogger overnight in dry climates, using distilled water.", source: "green-anole-tank-setup-guide" },
+        { label: "UVB", value: "Genuinely necessary for this diurnal species. Target a UV index of 3.0 to 4.0 at the basking branch, using an Arcadia ShadeDweller kit or a T5 HO bulb in the 5 to 6% range, paired with a separate 6500K LED. Run a 10 to 14 hour photoperiod.", source: "green-anole-tank-setup-guide" },
+        { label: "Substrate", value: "Coconut fiber or a tropical soil blend, roughly 60% organic topsoil to 40% coconut fiber, layered about 2 inches deep with leaf litter on top. Avoid gravel, sand, and anything containing vermiculite or pesticide residue.", source: "green-anole-tank-setup-guide" },
+        { label: "Climbing at every level", value: "Branches and foliage spanning the enclosure's full height, not concentrated near the bottom. The warmest area sits at the top near the basking lamp, so the anole needs a genuine path to thermoregulate by moving vertically. Thin branches and stems at varied angles, because a lizard this size wants perches it can grip around, never a wide flat log.", source: "green-anole-enrichment-guide" },
+        { label: "Feeding", value: "A juvenile eats daily, as much as it will take; an adult gets two to three feeders every other day. Crickets, dubia and discoid nymphs, red runner and red head roaches, flightless fruit flies, black soldier fly larvae and the occasional mealworm all work.", source: "green-anole-tank-setup-guide" },
+        { label: "Prey size", value: "Slightly smaller than the anole's head. This is a small lizard with a small mouth, and an oversized insect is a real choking and stress risk rather than a theoretical one.", source: "green-anole-tank-setup-guide" },
+        { label: "Supplements", value: "Gut-load and hydrate feeders for 24 to 48 hours before they go in, then dust them: a light dusting of a 50/50 calcium and multivitamin mix at every feeding, or a single all-in-one calcium-plus-vitamin powder used the same way. A small animal develops a nutritional deficiency fast.", source: "green-anole-tank-setup-guide" },
+        { label: "Live prey to chase", value: "Small insects released into the planting rather than dropped in a dish. Anoles are visual hunters that track and stalk, and the chase is the part a bowl removes.", source: "green-anole-enrichment-guide" },
+        { label: "Water", value: "Anoles drink droplets, not standing water. A fine mist spray bottle once or twice a day, aimed at foliage and glass, is how hydration actually happens for this species. Keep a shallow dish as well, and do not count on it.", source: "green-anole-enrichment-guide" },
+        { label: "Handling", value: "Green anoles generally make better display animals than a pet you take out and handle regularly. If you want a lizard you can hold often, this isn't the right species.", source: "green-anole-handling-guide" },
+        { label: "Adult size", value: "5 to 8 inches (13 to 20 cm), including the tail." },
+        { label: "Budget, the animal", value: "Most sell for under $15, some as low as $5, with $5 to $30 covering the range you'll typically see. There's no real morph market for this species, it's a wild-type animal throughout.", source: "green-anole-cost-guide" },
+        { label: "Budget, the setup", value: "Roughly $390 to $470. The 24x24x24 inch front-opening terrarium is the largest single expense by far relative to the animal's price, followed by a basking heat lamp and dome, a T5 HO UVB fixture and bulb, a 6500K LED, substrate and climbing material, and a thermometer/hygrometer combo plus a misting bottle.", source: "green-anole-cost-guide" },
+        { label: "Ongoing costs", value: "Roughly $20 to $35 a month, modest. That covers feeder insects and periodic replacement of substrate and supplements.", source: "green-anole-cost-guide" },
+        { label: "Vet costs", value: "$50 to $100 for a routine exotic exam. An emergency visit starts around $150 and can reach $300 or more before diagnostics, which is several times the price of the animal itself.", source: "green-anole-cost-guide" },
+        { label: "Lifespan", value: "Casually kept green anoles are often reported living just 3 to 4 years, while with appropriate care one can live up to 10 years and possibly longer. The gap between those two numbers is almost entirely a setup problem, not a species limitation.", source: "green-anole-cost-guide" },
+        { label: "The law", value: "Unregulated in 38 jurisdictions and restricted in the southeastern states where it is native, because *Anolis carolinensis* is the only anole native to the United States and native wildlife rules routinely reach captive-bred animals bought in a shop. Georgia lists it among native species that may not be held as pets, with the restrictions applying \"regardless of the origin or morphology\", so an out-of-state captive-bred animal is in the same position as one caught in a Georgia yard.", source: "green-anole-legal-guide" },
+        { label: "Salmonella", value: "A completely healthy-looking reptile can carry and shed Salmonella with no outward sign, and the route is hands and surfaces to mouth rather than bites. Never clean the enclosure, water dish or any equipment in a kitchen sink or a bathtub people also use. Children younger than 5 should not handle or touch reptiles or their environments at all.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Thermostat", value: "The probe goes at the animal's level, never taped to the back of a heat mat and never left up near the fixture reading room air. A basking bulb benefits from a pulse proportional or dimming controller, which holds a steadier output instead of swinging fully on and off.", source: "reptile-heating-thermostats-guide" },
+        { label: "Quarantine", value: "Longer than the two to four weeks that gets repeated informally: the Merck Veterinary Manual recommends 3 to 6 months for a new reptile. A bare enclosure on plain paper towel, so mites and abnormal stool show against a blank background, with dedicated tools and the quarantined animal serviced last.", source: "reptile-quarantine-guide" },
+        { label: "Power outage", value: "A healthy adult in most commonly kept species tolerates a few hours to one cool night without real harm. The risk climbs with time, not with a single cold hour: a day or two below the species' normal nighttime low is when cold stress and secondary respiratory infection become a real concern.", source: "reptile-emergency-plan-guide" },
       ],
     },
-    sections: {
-      housing: `A well-planted 18x18x24" vertical enclosure works for 1 to 2 green anoles. Never house two males together - they fight aggressively and will injure or kill each other. A male-female pair or a group of females can be housed together in a sufficiently large and well-planted enclosure.
-
-These are arboreal lizards requiring height and dense vegetation. Live plants - pothos, bromeliads, ficus pumila - are strongly recommended. Anoles drink water droplets from leaves after misting and rarely drink from standing water dishes. Dense plantings are therefore both enrichment and a critical hydration mechanism.
-
-Maintain daytime temperatures of 80 to 85 degrees F with a basking spot of 90 degrees F, dropping to 65 to 75 degrees F at night. Humidity should be 60 to 80%. UVB (T5 HO 5 to 6%) is essential for health and calcium metabolism. An automatic misting system set for morning and evening replicates natural rainfall cycles and ensures adequate hydration.`,
-      diet: `Green anoles are insectivores. Feed small live insects: appropriately sized crickets, small dubia roaches, fruit flies (for hatchlings and small juveniles), and waxworms as occasional treats. Prey should be no wider than the space between the anole's eyes - this small lizard has a small mouth and appropriately sized prey prevents choking.
-
-Feed daily for juveniles, every other day for adults. Gut-load all feeder insects 24 to 48 hours before offering. Dust with calcium w/D3 every 2 to 3 feedings and a reptile multivitamin once weekly.
-
-Green anoles are delicate animals and their small size means nutritional deficiencies develop quickly. Consistent, appropriate supplementation is critical. Never offer oversized prey - stress from struggling to swallow inappropriate prey is real and harmful.`,
-      enrichment: `Dense vertical plantings at multiple levels, thin branches for perching, cork bark, and live plant cover create the ideal environment. Green anoles are best enjoyed as a display species - their natural behaviors (dewlap displays, color changes from green to brown, territorial posturing, hunting behavior) are fascinating to observe through the glass.
-
-Frequent handling causes significant and cumulative stress. Green anoles are not handling animals - keep interaction minimal. The dewlap display (a bright red throat fan extended for territorial communication) and color-shifting in response to temperature, mood, and stress are the primary visual appeal.
-
-A dripper system or automatic misting system running twice daily (morning and late afternoon) replicates natural rain cycles, triggers activity and feeding responses, provides drinking water on leaves, and maintains appropriate humidity. This is one of the most important environmental features for anole health.`,
-      health: `Dehydration is the most common cause of declining health in green anoles. They rarely drink from standing water and must have water droplets available on leaves after misting. A green anole with sunken eyes is severely dehydrated and requires immediate intervention: increase misting frequency and provide a shallow water dish with a small sponge or pebbles to prevent drowning.
-
-Poor UVB causes calcium deficiency and MBD, which presents as muscle trembling, inability to climb, and soft jaw in these small lizards. Quality UVB on a consistent 12-hour cycle prevents this entirely.
-
-Stress from over-handling, male-male aggression, or overly sparse housing causes immune suppression, anorexia, and shortened lifespan. Green anoles are sensitive animals that require precise husbandry and a low-stress environment. Retained shed on toes can cause constriction and digit loss - consistent humidity prevents it. Annual veterinary checks with an exotic animal vet are recommended.`,
-      checklist: [
-        "18x18x24\"+ tall planted enclosure",
-        "UVB T5 HO (5 to 6%)",
-        "Basking bulb (90 degrees F hot spot)",
-        "Dense live plants (pothos, bromeliads)",
-        "Thin branches and cork bark",
-        "Automatic mister or daily hand misting (x2)",
-        "Digital thermometer and hygrometer",
-        "Small live feeder insects (crickets, fruit flies)",
-        "Calcium w/D3 + multivitamin supplements",
-        "Reptile-savvy exotic veterinarian",
+    emergencyCard: {
+      source: "green-anole-health-issues-guide",
+      callNow: [
+        "Weakness, trembling, a soft or swollen jaw, and difficulty moving normally",
+        "Open-mouth breathing, discharge from the eyes or nostrils, and lethargy",
+        "Sunken eyes, wrinkled-looking skin, and lethargy",
+        "Any new anole, whether or not you see obvious symptoms, for a fecal exam",
       ],
+      vetLine: "Weak UVB and calcium cause MBD, arguably the most dangerous issue on this list given how quickly it can progress in such a small animal. A cold or overly wet enclosure causes respiratory infection. Low humidity causes stuck shed. And insufficient misting causes dehydration. Nearly everything here connects directly back to the setup, and a lizard this small has little margin before a developing problem becomes serious.",
     },
+    routes: [
+      { slug: "green-anole-legal-guide", line: "Why a native species raises a wildlife question rather than an exotic-pet one, and what to check in your own state." },
+      { slug: "green-anole-cost-guide", line: "$5 to $30 for the lizard, $390 to $470 for the enclosure around it, and why the cheap price tag is what drives bad setups." },
+      { slug: "green-anole-tank-setup-guide", line: "24x24x24 as a floor, 90F basking with the mesh-burn rule, 60 to 70% humidity, real UVB, and what to feed." },
+      { slug: "green-anole-handling-guide", line: "A display animal rather than a held one, what the handling study actually measured, and never taking the tail." },
+      { slug: "green-anole-health-issues-guide", line: "MBD, respiratory infection, stuck shed, dehydration and parasites, and which are vet-now against fix-the-setup." },
+      { slug: "green-anole-enrichment-guide", line: "Two null-result studies handled honestly, why the enclosure still gets built out, and the cohabitation answer." },
+    ],
+    buyList: [
+      "24x24x24in front-opening terrarium, minimum, for one anole",
+      "Basking bulb and ceramic-socket dome, mounted off the mesh",
+      "T5 HO UVB in the 5 to 6% range, or an Arcadia ShadeDweller kit",
+      "6500K LED for general brightness and live plants",
+      "Coconut fiber and organic topsoil, plus leaf litter",
+      "Thin branches and stems at varied angles, running the full height",
+      "Live or artificial foliage, densely planted",
+      "Digital thermometer and hygrometer combo",
+      "Fine mist spray bottle, and a shallow dish you don't count on",
+      "Calcium and multivitamin powder, or an all-in-one",
+      "Crickets, dubia nymphs or flightless fruit flies, sized to the eye gap",
+    ],
     faqs: [
-      { q: "Are green anoles good pets to handle?", a: "Green anoles are better appreciated as display animals than handling pets. They are sensitive to stress, and frequent handling causes immune suppression and shortened lifespan. Their natural behaviors - dewlap displays, color shifts from green to brown, territorial posturing, and active hunting - are the primary appeal and are best observed through the glass." },
-      { q: "Why does my green anole turn brown?", a: "Color change in green anoles is triggered by temperature, stress, mood, and ambient conditions - not just camouflage. A cold or stressed anole turns brown; a warm, relaxed anole is bright green. This color-shifting ability is why they are sometimes called 'American chameleons,' though they are not true chameleons. Brown color alone is not a sign of illness." },
-      { q: "What do green anoles eat?", a: "Green anoles are strict insectivores. Feed small live insects - appropriately sized crickets, small dubia roaches, and fruit flies for juveniles and smaller adults. Prey should be no wider than the space between the anole's eyes. Feed daily for juveniles, every other day for adults. Gut-load all insects 24 to 48 hours before offering." },
-      { q: "How big do green anoles get?", a: "Adults reach 5 to 8 inches total length - most of which is the slender, whip-like tail. They are lightweight, delicate animals. Males develop a distinctive red dewlap (throat fan) used in territorial and courtship displays. Two males should never be housed together as they fight aggressively." },
-      { q: "Do green anoles need UVB?", a: "Yes, UVB is essential. A T5 HO 5 to 6% UVB bulb on a 12-hour cycle supports calcium metabolism and vitamin D3 synthesis. Without adequate UVB, green anoles develop calcium deficiency and metabolic bone disease. A proper automatic misting system is equally critical - they drink from water droplets on leaves and rarely from standing water dishes." },
+      { q: "What size enclosure does a green anole need?", a: "24 by 24 by 24 inches minimum for one adult, and bigger is better. Semi-arboreal, so go tall and front-opening with good ventilation. House anoles one to an enclosure: they don't coexist peacefully." },
+      { q: "Can green anoles live together?", a: "The default is one anole per enclosure, since the standard advice is not to house green anoles together at all. Two males is the version that fails fastest: males are display animals with a dewlap built for territorial signaling, and putting two in a shared space produces continuous confrontation until the loser stops feeding." },
+      { q: "Do anoles drink from a bowl?", a: "Mostly not. They take droplets off leaves and glass, so misting once or twice a day is how they hydrate. A standing dish is worth having and should not be your hydration plan." },
     ],
   },
   {

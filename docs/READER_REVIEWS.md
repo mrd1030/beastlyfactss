@@ -4392,6 +4392,17 @@ in one review section.
   first; one hedge changed without cause; one hub row left stale against
   the batch's own deep-dive fix; one voice regression; and two review-file
   errors, a count and a claim. Pass grade C+.
+- 2026-09-15, batch M species check (one Fable agent covering all five):
+  a platy maturation range written past its cited paper and a temperature
+  driver the paper does not carry; a cost figure moved away from its source
+  to match a wrong FAQ; a green anole portion and prey-size rule contradicting
+  the ReptiFiles sheet the section cites; "can live up to" dropped in four
+  places; a mouse figure changed on a misreading; source names in hub FAQs on
+  three species via the deep-dive FAQs they copied; two rows mixing sources;
+  three emergency-card bullets written or misplaced; one date bumped for a
+  de-narration; raw reader output unfiled for four of five species. Every
+  shared-guide row copied correctly, the first batch to manage that. Pass
+  grade B-.
 
 ## Green Iguana (2026-09-09, first pass)
 
@@ -13068,3 +13079,544 @@ The toad water depth stays at Amphibian Care's "about 3 inches" against PetMD's
 "1- to 2-inch-deep," because PetMD's figure would contradict the page's standing
 "deep enough to genuinely swim" instruction, which is a claim this batch could
 not change on its own. Both want a decision rather than a quiet edit.
+
+## Platy (2026-09-15, batch M, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 82k tokens. Raw output in
+docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C+ | Its numbers fight the deep dives. |
+| Encyclopedia | B | The Gordon-Kosswig history is the best-written paragraph on the site. |
+| Cost | B | $2-6 a fish, $60-120 setup, $15-20 a month, and a real warning about fry costs. |
+| Handling | B+ | Sexing by gonopodium, 2-3 females per male, four concrete population strategies. |
+| Health issues | A- | Five conditions with what to actually do. The melanoma section is the best thing here. |
+| Tank setup | A- | Nearly all of it: sizes, temperature, pH, hardness, sponge filter, lid. |
+| Feeding | B+ | Schedule by life stage, portion rule, why-they-stopped-eating list. |
+| Enrichment | A | The priority order list, sex ratio, what not to do. |
+
+Set grade: B+, the strongest a batch reader has given. "Strong deep dives,
+weakened by a hub that restates them with different numbers."
+
+Temperature, and this is batch L's fire-bellied toad mistake repeating one batch
+later. The setup guide said "roughly 68 to 82°F," which is not a source's range:
+Seriously Fish gives "20 to 26°C" (68 to 79) and Aquarium Co-Op gives "70-82°F,"
+and 68 to 82 is the two bands merged rather than ranked. Seriously Fish is the
+species reference and the page's first-listed source, so 68 to 79 with the
+mid-70s as the target. The variatus cool-tolerance note stays, which is Aquarium
+Co-Op's and does not depend on the ceiling.
+
+pH, a real deep-dive conflict. Health: "check and correct pH toward 7.0 to 8.0."
+Setup: "roughly 7.0 to 8.2." Seriously Fish states "7.0-8.2," so both pages carry
+that now, with 6.8 to 8.5 as the tolerance the setup guide already had, which is
+Aquarium Co-Op's stated range.
+
+Tank size, where the page argued with itself. The setup guide headlines "A Real
+10 Gallons" and then cites a minimum base footprint of 24x12 inches, which is
+about 15 gallons. The reader caught the tension; the page never resolved it. It
+now says the thing a buyer needs: the footprint figure is 24 by 12, a standard 10
+gallon is 20 by 10 and does not meet it, and a 20 gallon long is 30 by 12 and
+does. That also settles the enrichment guide's "a 10 gallon is a reasonable
+starting point and is not a long-term plan if you keep both sexes," which had
+read as a contradiction of the cost guide's "10 gallons is a realistic starting
+point."
+
+The sexing figure the reader doubted, and was right to. "Typically visible by
+around 5 to 6 months of age" for the gonopodium reads late for a fish that
+breeds this fast. Kallman and Borkoski's sex-linked maturation work in *Genetics*
+puts male maturation anywhere from eight weeks at around 21mm to twenty-five
+weeks at around 37mm depending on genotype, with temperature moving it too. The
+page now gives two and a half to five months and says what drives the spread,
+which is more useful than either single figure. The paper is added to that
+guide's Sources.
+
+Retired with the hub: a tank line of $40 to $80 against the cost guide's $20 to
+$40, with the filter and food rows drifting the same way; "typically 20 to 80 fry
+per birth," which quotes the documented extreme as the norm where the cost and
+handling guides both say 20 to 50 with 80 as the ceiling; a diet claim that
+platies "genuinely benefit from a real vegetable or algae component ... rather
+than a purely protein-heavy diet" on a set whose feeding guide says the opposite,
+that platies "aren't as strictly dependent on a big vegetable ratio"; and
+"weekly 20 to 25 percent water changes," a schedule no platy deep dive carries.
+
+Source narration came out of four prose passages: That Fish Place and Fishkeeping
+World on the fish price, Aquarium Co-Op and Splashy Fish Store on tank size, and
+Aquarium Co-Op on lifespan. All remain in the Sources blocks, which is where they
+belong.
+
+Links: 5 added. Setup to the cycling guide on the 2-to-4-week sentence, which the
+reader called the biggest miss in the set. Health to the hospital tank guide on
+quarantine. Handling to setup on the planting that gives fry cover. Feeding to
+health on constipation and swim bladder. Cost to setup on the 10-gallon sentence,
+on a page that never linked the setup guide at all.
+
+Dates: cost, handling, health issues and tank setup bumped to 2026-09-15. Feeding
+changed one link only. Enrichment was not touched.
+
+Gaps, checked against the Health and More list, which covers cycling, filtration,
+water chemistry, the hospital tank, power outages and spotting a sick fish:
+tankmates, stocking limits past "six or more" in a 20 gallon, what to do with fry
+and whether shops take them, which plant species give the dense cover four pages
+require, and day-one acclimation. All filed in docs/READER_LOG.md.
+
+## Cherry Shrimp (2026-09-15, batch M, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 84k tokens. Raw output in
+docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C+ | Where I got most of my wrong ideas. |
+| Encyclopedia | B | The taxonomy history is genuinely good reading. |
+| Cost | A- | Real per-shrimp prices with pack math, and the 2025 USFWS risk rating. |
+| Handling | A | Drip rate, 60 to 90 minutes, two-week quarantine, never bare fingers. |
+| Health issues | A | Copper LC50, quarantine new plants five days, cap water changes at 10% weekly. |
+| Tank setup | A | GH/KH targets, temperature, pre-filter sponge. The page I would buy from. |
+| Feeding | A- | Pea-sized portion for 10 to 20 shrimp, 2 to 3 hour rule, leave the shed shell in. |
+| Enrichment | B- | The priority list and "ten or more", but the sentience review is a strange front door. |
+
+Set grade: B+. "The five deep dives are sourced, specific, and honest about where
+sources disagree; the hub that fronts them undercuts them with different numbers."
+
+This is the cleanest species in either batch on the thing that usually takes the
+work: the deep dives agree with each other. The reader found the numeric
+conflicts among them "minor," and every real disagreement was hub-versus-article,
+so the router conversion retired all of them at once rather than needing a
+ranking call on each.
+
+Retired with the hub: GH of "roughly 7 to 14 dGH" against the setup guide's 6 to
+8, which the reader correctly called "barely overlapping"; pH "between 6.5 and
+8.0" against 6.5 to 7.5; a temperature range of "about 65 to 85 degrees F, with
+the high 60s to high 70s being the most comfortable zone" against 60 to 82 with
+72 to 76 optimal; a heater trigger of "below 65°F" against the setup guide's high
+50s, which is a fifteen-degree gap on a purchase decision; a shrimp price of "$2
+to $4 for a common red shrimp" against the cost guide's $4 to $5 for standard
+grades; and every cost row, with the tank at $25 to $50 against $18 to $30.
+
+Two soft contradictions the reader caught that the numbers checker could not.
+The hub said "a shrimp-specific sinking pellet should still form the base of a
+deliberate diet" on a set whose feeding guide's own heading is "The Staple Diet:
+Mostly Grazing, Lightly Supplemented." And the hub checklist demanded a
+"Calcium/mineral supplement for molting" where the feeding guide says diet and
+stable hardness "cover most of that need without a dedicated supplement." Both
+are gone with the hub, and the router rows carry the feeding guide's framing.
+
+De-narration, done carefully because this set's sentences carry two claims each.
+The GH passage named Aquarium Co-Op for the floor and Tropical Treasures Wyo for
+the tighter target; the temperature passage named Aquarium Co-Op for the
+comfortable band and Aquariadise for the outer tolerated one. Taking a name off a
+sentence that holds two figures is exactly where batch K upgraded a hedge, so
+both claims are kept whole in both cases: the floor and the target, the
+comfortable range and the outer one. Every source stays in its block.
+
+Links: 6 added, one of which was already half-written. The feeding guide said
+"stable water hardness (more on GH in our tank setup guide)" in plain text, which
+is both a dead reference and the site talking about itself, and RULES rules out
+the second even when the link works. Also health to setup on the
+mature-not-just-cycled rule, setup to health on soft molts, cost to setup on the
+GH supplement the cost table leaves out, handling to health on a shrimp that
+never resumes grazing, and enrichment to handling on transfer shock.
+
+Dates: none bumped. The setup and health guides are future-dated to 2026-09-16
+and the other four changed links only.
+
+Gaps, checked against the Health and More list, which covers filtration, water
+chemistry, summer cooling and the three-shrimp comparison: that mixing color
+lines breeds offspring back to wild brown, sexing and berried females, how to
+test tap water for the copper three pages warn about, lighting and photoperiod,
+fish tankmate compatibility, and what to do when a colony outgrows its tank. All
+filed in docs/READER_LOG.md.
+
+## Green Anole (2026-09-15, batch M, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 82k tokens. Raw output in
+docs/READER_LOG.md. Set grade: B. "Strong deep dives sitting under a hub whose
+numbers are the outliers."
+
+The cohabitation split is the sharpest finding in either batch, because getting
+it wrong hurts an animal rather than a budget. Three pages gave three answers.
+Hub: "A male-female pair or a group of females can be housed together." Setup:
+"Don't house multiple anoles together, they don't coexist peacefully."
+Enrichment: "A single male with females in a large planted enclosure is the
+workable version." The reader said the useful thing, that one of them is wrong
+and a buyer cannot tell which.
+
+ReptiFiles settles it without a carve-out: "Due to conflict concerns, it's best
+practice not to house multiple green anoles together." The setup guide was right,
+and its other figures match that source exactly, 24x24x24, ambient 70 to 77,
+humidity 60 to 70, which is good evidence it came from there, so it now carries
+a Sources block naming it. The enrichment guide's section is rewritten around
+solo housing, keeping its two-males argument as the fastest failure mode and its
+best sentence, the one the reader picked out: an anole that cannot get out of
+another anole's sight has no way to end an encounter.
+
+The hub's diet section was the only feeding content in eight pages, which is why
+it could not simply retire. A sourced Diet Basics section went into the tank
+setup guide, the standing move for a species with no feeding guide, and it
+carries the portion figure the reader listed as missing everywhere: two to three
+food items per feeding, once a day for a hatchling or young anole and every other
+day for an adult, gut-loaded 24 to 48 hours and dusted at every feeding.
+
+Retired with the hub: an 18x18x24 enclosure against 24x24x24 on two other pages,
+an enclosure line of $80 to $150 against the cost guide's $250 to $270, UVB at
+$50 to $90 against $95 to $115, daytime temperatures of 80 to 85F against a cool
+side of 70 to 77, humidity 60 to 80 against 60 to 70, and a 12-hour photoperiod
+against 10 to 14. The reader also noticed the hub's own tables summed to roughly
+$210 to $405 against a stated total of $390 to $470.
+
+Source narration out of four passages naming ReptiFiles, including the cost
+guide's "a genuinely new addition to the gear we recommend for this species,"
+which the reader correctly read as an internal note that escaped.
+
+Links: 5 added. Health to setup on the sentence that says everything connects
+back to the setup and never pointed there, which the reader called the biggest
+miss in the set. Cost to setup on the terminarium. Handling to enrichment.
+Setup to enrichment on the cohabitation rule, and enrichment back to setup on
+the same rule.
+
+Dates: cost, handling and tank setup bumped. Enrichment is future-dated to
+2026-10-24 and was not bumped, though its recommendation did change.
+
+Gaps: what to do when a female lays eggs, how to catch or restrain one safely,
+whether a temperate native needs a winter cooling period, and a spot-cleaning
+and substrate-replacement schedule. Filed in docs/READER_LOG.md.
+
+## Leaf-Tailed Gecko (2026-09-15, batch M, single pass, before the router hub)
+
+Extractor set of seven pages. One Opus agent, about 77k tokens. Raw output in
+docs/READER_LOG.md. Set grade: B-. "Four strong deep dives undercut by a hub that
+disagrees with them on every number a buyer acts on first."
+
+Four of five deep dives carried no Sources block, the same shape batch L found on
+praying mantis. Reptile Supply's Uroplatus care sheet confirms the enclosure
+sizes by species, 60 to 80% humidity with *U. phantasticus* at 90 to 100%
+overnight, the 5 to 15 year lifespan, and juveniles daily against adults every
+other day, so those pages now cite it alongside ReptiFiles' satanic leaf-tailed
+gecko sheet.
+
+The reader gave the clearest statement yet of what a mismatched hub costs: "If
+the landing page tells me 24x24x36 and 80 to 100% while the setup article says
+18x18x24 and 60 to 80%, I stop trusting whichever one I read second." All of it
+is retired with the hub, along with a lifespan of 5 to 10 years against 5 to 15,
+a setup table running about $335 to $815 against a stated $300 to $600, and an
+FAQ calling for "strong UVB" on a page whose own checklist said low-output, which
+is one page disagreeing with itself.
+
+No feeding guide, so Diet Basics went into the tank setup guide: juveniles daily
+and adults every other day in the evening, as much as the gecko takes in one
+night, prey no larger than the eye gap, and an all-in-one supplement on every
+feeder.
+
+Corrected after the species check, and this is the batch L bombesin shape
+repeating: the Diet Basics section was written by moving the old hub's unsourced
+diet paragraph into the article and then putting a Sources block under it. Two
+sources confirm the feeder list, juveniles daily against adults every other day,
+as much as the gecko takes in one night, and a light all-in-one dusting on every
+feeder. Neither states the eye-gap prey rule, a 24 to 48 hour gut-load, or
+isopods and fruit flies for this genus, so all three are gone rather than left
+sitting under a citation that does not support them. Dubia.com's leaf-tailed
+gecko sheet is added as the second source.
+
+Left open and recorded rather than resolved. Reptile Supply gives a basking area
+of 80 to 84F for the genus, where our setup guide says a basking source is
+generally unnecessary and can be actively dangerous. That is a genus-level figure
+against a species-specific warning about a montane animal, and overwriting a
+conservative husbandry claim on the strength of one source is not a call to make
+quietly. Worth Mike's decision.
+
+Also checked and left: the reader said the enrichment guide "names Gaskill but
+gives no link to check." It does link both Gaskill papers, in the Sources block,
+which is where RULES puts them. That is the rule working, not a defect.
+
+Links: 5 added, all from the reader's own list. Dates: tank setup bumped for the
+new section. Cost, health and handling gained a Sources block and one link each,
+which is not a fact change, so they were not bumped.
+
+## Mouse (2026-09-15, batch M, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 81k tokens. Raw output in
+docs/READER_LOG.md. Set grade: B. "Six strong, specific deep dives undercut by a
+hub that contradicts them on the one number that decides whether the animal stays
+in the cage."
+
+The bar spacing is the most consequential single defect a batch reader has found.
+Hub, twice: "wire mesh spacing needs to be under half an inch" and "Bar spacing
+under 1/2 in." Setup: "the maximum safe spacing at around a quarter inch (6mm),
+with some pushing that down to 5mm," and it specifically warns that
+three-eighths of an inch is still wide enough. The hub's number was double the
+safe one. Every other defect in this batch costs money or trust; this one costs
+the animal, and the reader said so plainly: "I would have bought the wrong cage
+from it."
+
+Both the setup and cost guides already agreed at a quarter inch and both cite
+sources, so this needed no ranking call, only the hub's retirement.
+
+Two deep dives genuinely disagreed, and this is the one that took judgment.
+Feeding: "lean toward scattering some of that ration around the cage" and, four
+sentences later, "Use a shallow, chew-resistant dish." Enrichment: "Scatter
+feeding, never a bowl," and again in its priority list. Both are half right. The
+dry ration is what scatters, and the dish is for the fresh vegetable portion,
+which does not scatter and has to come out before it spoils. Both pages say that
+now, and the enrichment guide's priority item reads "Scatter feeding for the dry
+ration."
+
+The cost guide contradicted its own arithmetic twice, both caught by the reader
+rather than by any check. A stated "Roughly $15 to $30 a Month" against an annual
+table totalling $125 to $240, which is $10 to $20. And "another $5 to $40 for the
+second or third mouse" when its own row prices a mouse at $5 to $20, so two more
+is $10 to $40. Both fixed, though the species check reverted the second one
+(one or two extra mice at $5 to $20 each is $5 to $40, so the original wording
+was right; see the check section below), and the monthly figure was also stale in the
+description field, which is the frontmatter failure mode this process keeps
+finding.
+
+Also retired with the hub: a solo-housing rule that contradicted the enrichment
+guide and itself inside one section; a coprophagy rate of "roughly six times a
+day" against the feeding guide's sourced 9.6 falling to 4.7 on a B12-fortified
+diet; bedding at $12 to $20 against $18 to $30 and vet at $40 to $80 against $35
+to $75; and a checklist listing only a thermometer where two pages need a
+hygrometer. The hub never mentioned that a glass tank is the wrong enclosure for
+this species, which is the set's most surprising instruction.
+
+The adult size row first went in at 3 to 4 inches and was corrected to the
+encyclopedia's 2 to 3 inches body plus a 3 to 4 inch tail before commit. Worth
+recording because it is the same shape as the errors the check keeps finding:
+a hub row written from memory rather than copied.
+
+Links: 6 added. Dates: none bumped, since cost, feeding and enrichment are all
+future-dated and setup, handling and health changed links only.
+
+Gaps, and this species has the thinnest shared-guide backstop in either batch,
+with only the rat/mouse/flying squirrel comparison piece on its Health and More
+list: a spot-clean and full-clean schedule in days, a weighing routine and scale
+against the 20% weight-loss warning, how to pick and sex a healthy mouse, how to
+introduce unfamiliar females, accidental litters and desexing, zoonotic risk and
+hand hygiene, out-of-cage time and escape recovery, a travel carrier, and
+end-of-life costs. All filed in docs/READER_LOG.md.
+
+## Platy, cherry shrimp, green anole, leaf-tailed gecko, mouse (2026-09-15, batch M species check)
+
+One Fable agent over the whole branch after all five were pushed, base 837d5cd,
+branch claude/platy-cherryshrimp-greenanole-leaftailedgecko-mouse. Fixes
+committed on the branch in the species check commit. Pass grade B-. Nothing
+merged.
+
+### Scope
+
+Nothing outside scope. No encyclopedia edits, no src edits beyond the five guide
+data files, RELATED_ARTICLES and SHORT_LABELS untouched. All ten shared-guide
+rows (cycling, hospital tank, pH/GH/KH, filtration, power outage, sick-fish
+check on the two fish-class hubs; Salmonella, thermostat, quarantine, emergency
+plan on the two reptile hubs) were checked against the guide each cites and
+every one is that guide's own words with its numbers and hedges intact. That is
+the first batch where the shared rows came back clean.
+
+### Platy
+
+The gonopodium figure was written past its source. The batch replaced the
+unsourced "5 to 6 months" with "two and a half and five months, driven by
+temperature and by the fish's own genotype" and cited Kallman and Borkoski 1978.
+That paper's abstract, opened here, puts male maturation at eight weeks and
+21mm for P1P1, 25 weeks and 37mm for P4P4, and 28 weeks and 38mm for P2P5, and
+says nothing about temperature. Eight to 28 weeks is about two to six and a
+half months, not two and a half to five. Now, in the handling body, its FAQ and
+the hub's Sexing row: "anywhere from about two to six and a half months, driven
+largely by the fish's own genotype: a sex-linked gene sets male maturation
+anywhere from eight weeks at around 21mm to 28 weeks at around 38mm." The
+temperature clause is gone, since the cited paper does not carry it.
+
+One number moved away from its source. The cost body said tiger ruby platies
+"can reach $8 to $9", which is Fishkeeping World's "up to $9"; the batch changed
+it to "$8 to $10" to match a FAQ that had been wrong all along. Both, and the
+hub's Budget row, now read "can reach $8 to $9".
+
+Source narration reached a hub row and a hub FAQ through the feeding guide's
+FAQ: "some sources stretch that to three times". Now "sometimes stretched to
+three times" in the feeding FAQ, its body ("Once or twice a day, sometimes
+stretched to three small feedings. The portion rule holds regardless of
+frequency"), the hub's Feeding schedule row and the hub FAQ. Hedge kept.
+
+Left as written and worth knowing: the setup guide's new "a standard 10 gallon
+is 20 by 10" and "a 20 gallon long ... 30 by 12" are stock tank dimensions no
+cited source states. They are product specs rather than husbandry figures, so
+they stay, but they were written rather than sourced. The temperature (68 to 79
+on Seriously Fish against Aquarium Co-Op's 70 to 82) and pH (7.0 to 8.2) calls
+check out against both sources' pages; the two are the same tier and the choice
+of the species reference is defensible either way, and it stopped the merged
+band.
+
+Dates right: cost, handling, health and setup all changed a figure and were
+bumped; feeding changed a link and a hedge-preserving de-narration only.
+
+Verdict: fixed on the branch.
+
+### Cherry shrimp
+
+The hub's first FAQ, copied verbatim as the rule requires, carried "Aquariadise
+cites 5 gallons" and "per Aquarium Co-Op" because the setup guide's FAQ did. The
+fix is upstream, the way step 4 says: the setup FAQ now reads "5 gallons is the
+commonly cited practical minimum. Shrimp can technically survive in a 2-gallon
+nano tank, but 10 gallons or more suits a stable breeding colony", and the hub
+FAQ is the new verbatim copy.
+
+The emergency card's fifth bullet, "Any copper-containing medication, fertilizer,
+or newly bought plant that has reached the tank", is a cause the batch wrote,
+not a sign the health guide lists. That guide's own concern list is "stays
+hidden well past that window, looks pale or ashy, or is found with a body that's
+separated from its shell"; the card had the first and third and not the second.
+Now "A shrimp that looks pale or ashy". The vetLine's opening sentence came from
+the cost guide with its hedge dropped: "There is no practical veterinary care"
+against the cost guide's "essentially no practical veterinary care available".
+Hedge restored, and "which cause" is now the guide's "which of these causes".
+
+Everything else checked clean: every row is the named article's words, the
+de-narration of the GH and temperature passages kept both claims in each, six
+links as claimed, no dates bumped on a set dated 2026-09-16 and later.
+
+Verdict: fixed on the branch.
+
+### Green anole
+
+A cited source contradicted. The new Diet Basics section, whose only Sources
+entry is ReptiFiles, said "two to three food items per feeding. A hatchling or
+young anole gets that once a day, an adult every other day" and "no wider than
+the space between the anole's eyes". ReptiFiles, opened here, says "Juveniles
+should be fed daily, while adults can be fed every other day. Juveniles should be
+allowed to eat as much as they will [eat], while adults only need 2-3 feeders
+slightly smaller than the anole's head per feeding." The portion applied to
+juveniles and the eye-gap rule are both the batch's own. Now: "A juvenile eats
+daily, as much as it will take; an adult gets two to three feeders every other
+day, each slightly smaller than the anole's head", in the setup body and the
+hub's Feeding and Prey size rows. The cohabitation call ("best practice not to
+house multiple green anoles together") is exactly what ReptiFiles says, and the
+rest of the section (feeder list, 24 to 48 hour gut-load, 50/50 dust or an
+all-in-one) matches it.
+
+A hedge dropped in four places. ReptiFiles: "this pet can live up to 10 years
+and possibly longer." The batch's de-narration turned that into "one lives up to
+10 years" in the cost FAQ and body, "takes one to 10 years" in the FunFact, and
+"appropriate care takes one to 10 years" in the hub's Lifespan row. "Can live up
+to" is back in all four.
+
+One row mixed two sources. "Housed alone", sourced to the setup guide, carried
+the enrichment guide's two-males sentence. The setup sentence stays in that row
+and the two-males sentence joined "Why they can't share", which is sourced to
+the enrichment guide.
+
+The emergency card listed "Retained shed around the toes or tail" as a
+call-the-vet item; the health guide says stuck shed is "manageable at home".
+Bullet removed; the four that remain are the guide's MBD, respiratory,
+dehydration and fecal-exam items in its words.
+
+The handling guide was bumped to 2026-09-15 for a de-narrated FAQ and one link,
+no fact or number changed. Reverted to 2026-07-28. Cost and setup keep their
+bumps: the setup gained a sourced section and the cost guide's lifespan was
+reviewed against and now links its source.
+
+Review-file count: five links were added, not four (the enrichment guide also
+links the setup guide on the cohabitation rule). Corrected in place.
+
+Verdict: fixed on the branch.
+
+### Leaf-tailed gecko
+
+One row mixed two sources. "Buy captive-bred", sourced to the cost guide,
+carried the health guide's "internal parasites are genuinely common in
+wild-caught imports specifically". The row now ends the way the cost guide's
+sentence does: "one more reason captive-bred is strongly worth the higher price
+for this species specifically."
+
+Checked and left. The Reptile Supply care sheet, opened here, confirms the
+enclosure sizes by species, 60 to 80% humidity with U. phantasticus at 90 to
+100% at night, 5 to 15 years in captivity, juveniles daily against adults every
+other day, and "as much as they will eat in one night". It does not carry the
+eye-gap prey rule, the 24 to 48 hour gut-load, isopods or fruit flies as
+feeders, or removing uneaten insects before morning; the batch attributed those
+to the ReptiFiles satanic leaf-tailed gecko sheet, which is a PDF this check
+could not read (the text streams use glyph IDs). Those claims stand on a source
+this check did not verify. Also still open, as the batch recorded: Reptile
+Supply gives an 80 to 84F basking area for the genus, a 68 to 76F cool zone and
+a 62F night minimum, and the setup guide that now cites it says a basking source
+"can be actively dangerous" and gives 68 to 75 by day and 64 to 68 at night.
+Citing a source under a claim it contradicts is the batch L bombesin shape, and
+it wants Mike's call rather than a quiet edit, so it is flagged and not changed.
+
+The emergency card is five "Watch for" sentences from the health guide plus the
+tail-drop vet line, and the vetLine keeps "usually", "can worsen rapidly" and
+"generally". Five links as claimed, one date bumped as claimed.
+
+Verdict: fixed on the branch (one row), with the basking contradiction left for
+Mike as the batch itself recorded.
+
+### Mouse
+
+A correct figure "fixed" on a false premise. The cost guide said "another $5 to
+$40 for the second or third mouse", which is one or two extra mice at $5 to $20
+each. The reader read it as two mice and the batch changed it to "$10 to $40 for
+the second and third", which silently makes a pair the wrong group size.
+Reverted in the body and the hub's Budget row; the review paragraph now says so.
+The monthly figure ($125 to $240 a year is $10 to $20, not $15 to $30) was a
+real error and the fix, including the frontmatter description, is right.
+
+Source narration in a row and three hub FAQs. "Some welfare-focused sources
+recommend going even tighter, to 5mm" sat in the setup FAQ, the hub's first row
+and the hub's first FAQ; the setup body said "Multiple welfare-focused sources
+put the maximum safe spacing at around a quarter inch". The Merck name sat in
+the glass-tank FAQ and AFRMA in the protein FAQ, both copied into the hub. All
+de-narrated upstream with hedges kept: "tighter still, down to 5mm, is sometimes
+recommended"; "The maximum safe spacing is around a quarter inch (6mm), with 5mm
+sometimes recommended"; "A glass tank can't move enough air, so ammonia builds
+up inside it" (rewritten rather than de-attributed, since the old FAQ was
+Merck's wording); "General maintenance crude protein for a mouse runs 20 to
+25%". The hub FAQs are the new verbatim copies. Merck and AFRMA stay in the
+bodies where they are linked citations.
+
+The emergency card had five bullets against a four-item call-the-vet sentence;
+the fifth, "A hunched posture, ruffled coat, and reduced activity", is from the
+respiratory "Watch for" line, not the list. Removed.
+
+Review-file count: six links were added, not five (the setup guide also links
+the enrichment guide on nesting material). Corrected in place. The enrichment
+guide also lost the "Other sizes and volumes are available" template fragment,
+which the review does not mention; that is the docs/TODO.md section 8 item for
+this species and it is done.
+
+Verdict: fixed on the branch.
+
+### The review file
+
+The raw reader output was filed in docs/READER_LOG.md for platy only. The
+cherry shrimp, green anole and mouse sections each say their gaps were "filed in
+docs/READER_LOG.md" and nothing was. Reconstructed there from the review
+sections, marked as reconstructed: set grade, the reader's quoted lines, and the
+gaps list for cherry shrimp, green anole and mouse. The leaf-tailed gecko
+section carries no gaps list, so its log entry records that the output is lost.
+None of the five sections carries the "Numbers checker" baseline list or an
+"Encyclopedia" note that the batch prompt asks for; the baseline conflicts were
+all hub-versus-article and are covered by each section's "retired with the hub"
+paragraph, and no encyclopedia field conflicted with a deep dive on the same
+field (the wild lifespans differ from the captive ones on platy, green anole and
+leaf-tailed gecko, which is two fields, not a conflict). Green anole, leaf-tailed
+gecko and mouse have no per-page grade table; the grades are not recoverable
+without the raw output.
+
+### Gates on the branch head
+
+check-internal-links, check-related-articles, check-affiliate-mdx,
+check-cost-coverage, check-seo-tags, check-hub-faqs (71 hubs, all verbatim),
+check-encyclopedia, check-voice --strict (0 errors) and eslint all pass.
+check-species-numbers --strict for all five: every line marked hub matches a
+deep dive line; the non-zero exit is the advisory groups, the same as goldfish
+and neon tetra. Voice per rule against 837d5cd: no changed article gained a
+warning; mouse cost lost a comma-splice and platy setup lost a faq-long.
+
+### Pass grade: B-
+
+The router shape was followed exactly where it is mechanical: routes, buy lists,
+verbatim FAQs, difficulty, and for the first time every shared-guide row. What
+pulled it down is the batch L lesson repeating one batch later: a paper was
+cited under a range it does not give, a care sheet was cited under a portion
+rule and a prey rule it does not state, a hedge was dropped in four places by a
+de-narration pass, a correct figure was changed on a misreading, and the review
+file says four raw outputs were filed when one was.

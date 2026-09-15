@@ -263,60 +263,101 @@ export const geckoGuides = [
   {
     id: "leaf-tailed-gecko",
     name: "Leaf-Tailed Gecko",
-    emoji: "🦎",
+    emoji: "\u{1F98E}",
     difficulty: "Advanced",
     petType: "Geckos",
     image: "/assets/guides/leaf-tailed-gecko.jpg",
     tagline: "Nature's ultimate camouflage artist, hiding in plain sight!",
     funFact: "Satanic leaf-tailed geckos (Uroplatus phantasticus) look exactly like dead, decaying leaves, right down to the 'bite marks' and brown patches on their edges!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "24x24x36 in+ tall planted enclosure", low: 150, high: 300 },
-        { item: "Live plants (pothos, ficus, bromeliads)", low: 40, high: 80 },
-        { item: "Automatic misting system", low: 60, high: 130 },
-        { item: "Digital hygrometer", low: 15, high: 25 },
-        { item: "Cooling solution (fan or AC assist, varies)", low: 0, high: 150 },
-        { item: "Low-output UVB (T5 HO)", low: 45, high: 80 },
-        { item: "Cork bark for hiding structures", low: 25, high: 50 },
-      ],
-      annual: [
-        { item: "Gut-loaded insect feeders", low: 100, high: 180 },
-        { item: "Calcium w/D3 supplement", low: 15, high: 25 },
-        { item: "UVB bulb replacement", low: 45, high: 80 },
-        { item: "Electricity (misting system, lighting)", low: 40, high: 80 },
-        { item: "Annual vet wellness check", low: 60, high: 100 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Salmonella, thermostats, shedding, quarantine and
+    // the emergency plan cite the shared reptile guides in the sidebar's
+    // Health and More list. Reconciled 2026-09-15 after the leaf-tailed gecko
+    // set test (docs/READER_REVIEWS.md).
+    //
+    // The reader graded the old hub C+ and said the plainest version of what
+    // a mismatched hub costs: "If the landing page tells me 24x24x36 and 80 to
+    // 100% while the setup article says 18x18x24 and 60 to 80%, I stop
+    // trusting whichever one I read second." Retired rather than moved: "A
+    // minimum of 24x24x36 for smaller species" against a setup guide and a
+    // cost guide that both say 18x18x24 for the satanic leaf-tailed gecko;
+    // "Humidity must stay at 80 to 100%" against 60 to 80% for most species,
+    // with the hub's own checklist giving a third figure of 70 to 90%; "65 to
+    // 75 degrees F during the day, dropping to 60 to 68 at night" against 68
+    // to 75 with a drop to 64 to 68; an FAQ calling for "strong UVB" where the
+    // setup guide says to avoid high-output basking-style UVB entirely and the
+    // hub's own checklist said low-output, so it contradicted itself inside one
+    // page; a lifespan of 5 to 10 years against the cost guide's 5 to 15; and
+    // a setup table running about $335 to $815 against a stated $300 to $600.
+    // The hub's diet section was the only feeding content in the set, so a
+    // sourced Diet Basics section went into the tank setup guide instead, the
+    // standing move for a species with no feeding guide.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Buy captive-bred", value: "Wild-caught individuals consistently live shorter lives than captive-bred ones, one more reason captive-bred is strongly worth the higher price for this species specifically.", source: "leaf-tailed-gecko-cost-guide" },
+        { label: "Enclosure size", value: "Smaller species do fine in 12x12x18 inches, with 18x18x18 better. The satanic leaf-tailed gecko, the smallest commonly kept species, does well in an 18x18x24 inch enclosure as an adult. Larger species like Henkel's need considerably more room. This is a vertical, arboreal species, so height matters more than floor space.", source: "leaf-tailed-gecko-tank-setup-guide" },
+        { label: "Temperature", value: "Ambient around 68 to 75F, with a night drop to around 64 to 68F. This species has thin skin, dehydrates easily, and genuinely does not handle heat stress well. A basking heat source is generally not needed and can be actively dangerous for this species, the opposite setup priority from most reptiles.", source: "leaf-tailed-gecko-tank-setup-guide" },
+        { label: "Humidity", value: "60 to 80% for most species, though the satanic leaf-tailed gecko specifically needs 90 to 100% overnight and dehydrates extremely easily if that's not met. Achieve this through morning and evening misting, live plants, and moisture-retentive substrate.", source: "leaf-tailed-gecko-tank-setup-guide" },
+        { label: "The drying cycle", value: "Uroplatus need high humidity and drying periods between mistings, and hand spraying several times a day is hard to sustain reliably. Constant saturation is as bad as constant dryness, so the cycle matters as much as the number. A misting system is one of the few pieces of equipment that genuinely changes outcomes for this genus.", source: "leaf-tailed-gecko-enrichment-guide" },
+        { label: "The shed check", value: "A gecko kept at correct humidity sheds in one clean piece with no sunken eyes or a drooping tail afterward, a simple visual check that's one of the fastest ways to catch early dehydration before it turns dangerous.", source: "leaf-tailed-gecko-health-issues-guide" },
+        { label: "Lighting", value: "Low-output UVB, in the 2.0 to 5.0 range, is increasingly recommended for long-term health, though not definitively required. Avoid high-output basking-style UVB entirely, this species doesn't use or tolerate intense light the way a desert lizard would. Run a standard 12-hour photoperiod on a timer.", source: "leaf-tailed-gecko-tank-setup-guide" },
+        { label: "Tap water, not distilled", value: "Use ordinary tap water for misting and drinking rather than distilled, softened, or heavily filtered water, tap water contains minerals important to this gecko's health.", source: "leaf-tailed-gecko-tank-setup-guide" },
+        { label: "Cover, and the test for it", value: "Vertical cork slabs, branches of varied diameter, and dense live planting arranged in layers and not a single plane. The test: can you always find the gecko instantly? If so, the layout is too sparse. An animal that can position itself against a matching surface and become difficult to see is doing the thing it evolved to do.", source: "leaf-tailed-gecko-enrichment-guide" },
+        { label: "Feeding", value: "Juveniles eat daily and adults every other day, and the portion is as much as the gecko will take in one night. Dubia, discoid and red runner roaches, crickets, grasshoppers, hornworms, silkworms, mealworm and superworm beetles, and captive-bred snails all work, with the smaller species needing correspondingly smaller prey.", source: "leaf-tailed-gecko-tank-setup-guide" },
+        { label: "Uneaten prey", value: "These are nocturnal hunters, so food goes in when the animal is becoming active rather than in the morning, and anything still loose in the enclosure by the next day comes out: live insects wandering a cage disturb a resting gecko, and on a freshly shed or unwell one they can do worse than disturb it.", source: "leaf-tailed-gecko-tank-setup-guide" },
+        { label: "Supplements", value: "Dust every feeder lightly with a single all-in-one calcium-plus-vitamin powder. Occasionally skipping a dusting is fine; skipping it as a habit is not.", source: "leaf-tailed-gecko-tank-setup-guide" },
+        { label: "Feed at height", value: "Arboreal geckos that do not want to descend to a floor dish, so a magnetic feeding ledge mounted high puts food where the animal already is. Release live prey at night rather than presenting it: these are nocturnal ambush hunters, and prey that has to be located and taken is the behavior a dish removes.", source: "leaf-tailed-gecko-enrichment-guide" },
+        { label: "Leave them alone", value: "Uroplatus are highly strung, easily stressed, and frequently wild-caught with the health problems that brings. Low traffic, low disturbance and minimal handling do more for this animal than anything you can add to the enclosure.", source: "leaf-tailed-gecko-enrichment-guide" },
+        { label: "Tail drop", value: "The satanic leaf-tailed gecko does not regenerate its tail at all, while several other species regrow theirs imperfectly. This is one more reason to treat handling as something to minimize, never a routine.", source: "leaf-tailed-gecko-handling-guide" },
+        { label: "Adult size", value: "2.5 to 12 inches (6 to 30 cm) depending on species." },
+        { label: "Budget, the gecko", value: "$250 to $800 or more. Price tracks species and locality rather than color morphs, which this genus does not have in the way a crested or leopard gecko does.", source: "leaf-tailed-gecko-cost-guide" },
+        { label: "Budget, the setup", value: "Roughly $300 to $600, covering a tall vertical bioactive terrarium, a misting system, low-output UVB and fixture, live plants and moisture-retentive substrate, a digital hygrometer and thermometer, and a magnetic feeding ledge.", source: "leaf-tailed-gecko-cost-guide" },
+        { label: "Ongoing costs", value: "Roughly $20 to $40 a month.", source: "leaf-tailed-gecko-cost-guide" },
+        { label: "Lifespan", value: "5 to 15 years in captivity, though wild-caught animals consistently live shorter lives than captive-bred ones.", source: "leaf-tailed-gecko-cost-guide" },
+        { label: "Parasite treatment timing", value: "If you've just acquired a wild-caught or freshly imported gecko, waiting 1 to 2 months to let it acclimate before starting parasite treatment is often the safer approach, since treating an already-stressed animal too soon can do more harm than the parasites themselves in the short term. Discuss timing with your vet.", source: "leaf-tailed-gecko-health-issues-guide" },
+        { label: "Salmonella", value: "A completely healthy-looking reptile can carry and shed Salmonella with no outward sign, and the route is hands and surfaces to mouth rather than bites. Never clean the enclosure, water dish or any equipment in a kitchen sink or a bathtub people also use. Children younger than 5 should not handle or touch reptiles or their environments at all.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Quarantine", value: "Longer than the two to four weeks that gets repeated informally: the Merck Veterinary Manual recommends 3 to 6 months for a new reptile. A bare enclosure on plain paper towel, so mites and abnormal stool show against a blank background, with dedicated tools and the quarantined animal serviced last.", source: "reptile-quarantine-guide" },
+        { label: "Power outage", value: "A healthy adult in most commonly kept species tolerates a few hours to one cool night without real harm. The risk climbs with time, not with a single cold hour: a day or two below the species' normal nighttime low is when cold stress and secondary respiratory infection become a real concern.", source: "reptile-emergency-plan-guide" },
       ],
     },
-    sections: {
-      housing: `Tall, well-planted enclosures are absolutely essential for leaf-tailed geckos. A minimum of 24x24x36" for smaller species (Uroplatus ebenaui, U. phantasticus) and significantly larger for bigger species like U. fimbriatus. Use live plants extensively throughout the enclosure - they are not decorative but critical for humidity regulation, camouflage opportunities, and the gecko's psychological wellbeing.
-
-Temperature must remain cool: 65 to 75 degrees F during the day, dropping to 60 to 68 degrees F at night. Never allow temperatures to exceed 80 degrees F. This is one of the most common husbandry failures - leaf-tailed geckos are highland species from Madagascar and require cool temperatures that most other reptiles would find uncomfortably cold. An air conditioner or cooling system may be necessary in summer.
-
-Humidity must stay at 80 to 100%, achieved through extensive live planting, a fine misting system running multiple times daily, and natural substrate that holds moisture. An automatic misting system is highly recommended over manual misting for consistency.`,
-      diet: `Leaf-tailed geckos are strictly insectivorous. Appropriate feeders include crickets, dubia roaches, and isopods. Gut-load all prey 24 to 48 hours before feeding. Dust with calcium w/D3 at every feeding for juveniles and every other feeding for adults, plus a reptile multivitamin once weekly.
-
-Feed every 2 to 3 days in the evening, when these nocturnal geckos are naturally active. Prey should be no larger than the space between the gecko's eyes. Remove uneaten prey promptly - live insects in the enclosure at night can disturb and stress the gecko.
-
-Larger species (U. fimbriatus) can be offered larger roaches, hornworms, and silkworms. Smaller pygmy species require appropriately tiny prey - fruit flies, pinhead crickets, and very small roaches.`,
-      enrichment: `Leaf-tailed geckos are quintessential display animals - they are not for handling. Their incredible camouflage, alien appearance, and natural behavior in a well-planted vivarium are the entire appeal. Setting up a beautiful planted enclosure and watching these extraordinary geckos disappear into it is the experience.
-
-Provide cork bark pieces, driftwood, dried leaf litter, and branching at multiple heights among the live plants. The complexity of the environment directly supports natural camouflage behavior - a leaf-tailed gecko in a sparse enclosure is a stressed gecko with nowhere to hide.
-
-Minimize handling to absolute necessity (vet visits, enclosure cleaning). Even brief handling causes significant stress that suppresses immune function and appetite. These are advanced, specialist display animals for experienced keepers.`,
-      health: `Leaf-tailed geckos are among the most husbandry-sensitive reptiles in the hobby. They decline rapidly when any parameter is off - temperature too high, humidity too low, enclosure too sparse, or handling too frequent. Attentive daily monitoring of temperature, humidity, and feeding response is essential.
-
-Dehydration is a primary and rapidly lethal concern. Signs include sunken eyes, wrinkled skin, and refusal to eat. Consistent high humidity (80 to 100%) and a misting system that creates regular droplets on leaves prevents dehydration in a species that rarely drinks from dishes.
-
-Temperature spikes above 80 degrees F cause acute heat stress. In summer, this requires active cooling measures. Stress-related anorexia is common after handling, shipping, or any significant husbandry disturbance. A gecko that has not eaten for more than 2 weeks needs veterinary assessment. Annual wellness checks with a reptile vet experienced in geckos are strongly recommended.`,
-      checklist: ["24x24x36\"+ tall planted enclosure", "Live plants (pothos, ficus, bromeliads)", "Automatic misting system", "Digital hygrometer (target 70 to 90%)", "Cool-temperature environment (65 to 75 degrees F)", "Low-output UVB (T5 HO)", "Gut-loaded insect feeders", "Calcium w/D3 supplement", "Cork bark for hiding structures", "Emergency reptile vet contact"],
+    emergencyCard: {
+      source: "leaf-tailed-gecko-health-issues-guide",
+      callNow: [
+        "Sunken or dull eyes, wrinkled or loose-looking skin, lethargy, difficulty shedding properly, and appetite loss",
+        "Limb weakness or tremors, a soft \"rubber jaw,\" bone deformities, and fractures that can occur from even gentle handling",
+        "Wheezing or clicking sounds, open-mouth breathing, mucus, and lethargy",
+        "Weight loss, diarrhea, regurgitation, and lethargy",
+        "Swelling, redness, discharge, or a foul odor at the site where a tail dropped",
+      ],
+      vetLine: "Dehydration is the fastest-moving danger here and specialist breeders describe it as a genuine fast killer of this species, manageable at home if caught early by raising humidity immediately. MBD can worsen rapidly once it starts and respiratory infection needs prescription antibiotics, so both are vet-now rather than wait-and-see. A dropped tail is usually managed at home by minimizing handling, with a vet only if the site looks infected.",
     },
+    routes: [
+      { slug: "leaf-tailed-gecko-cost-guide", line: "$250 to $800 by species and locality, $300 to $600 for the enclosure, and why wild-caught is the expensive option." },
+      { slug: "leaf-tailed-gecko-tank-setup-guide", line: "18x18x24 for the smallest species, a cool enclosure with no basking spot, the humidity that defines this genus, and tap water over distilled." },
+      { slug: "leaf-tailed-gecko-handling-guide", line: "Stress signals worth recognizing, and the species whose tail never grows back." },
+      { slug: "leaf-tailed-gecko-health-issues-guide", line: "Dehydration as the fast killer, plus MBD, respiratory infection, and why you wait before deworming an import." },
+      { slug: "leaf-tailed-gecko-enrichment-guide", line: "No Uroplatus research at all, said plainly, and one usable test for whether the enclosure is dense enough." },
+    ],
+    buyList: [
+      "18x18x24in vertical terrarium for a satanic leaf-tailed gecko, more for the larger species",
+      "Automated misting system",
+      "Low-output UVB in the 2.0 to 5.0 range, never a basking-style bulb",
+      "Vertical cork slabs and branches of varied diameter",
+      "Dense live planting, layered rather than in one plane",
+      "Moisture-retentive substrate",
+      "Digital hygrometer and thermometer combo",
+      "Magnetic feeding ledge, mounted high",
+      "All-in-one calcium and vitamin powder",
+      "Crickets, dubia roaches or isopods, sized to the eye gap",
+    ],
     faqs: [
-      { q: "Are leaf-tailed geckos good pets?", a: "Leaf-tailed geckos are advanced specialist display animals, not pets in the conventional sense. They are highly sensitive to husbandry errors, do not tolerate handling, and decline rapidly when any parameter is off. For experienced keepers who can provide the precise conditions they need, watching them in a well-planted vivarium is extraordinary. For beginners, they are not appropriate." },
-      { q: "What temperature do leaf-tailed geckos require?", a: "Cool temperatures: 65 to 75 degrees F during the day, dropping to 60 to 68 degrees F at night. This is the most common husbandry failure - leaf-tailed geckos are highland Madagascar species that require temperatures most reptiles would find uncomfortably cold. Temperatures above 80 degrees F cause acute heat stress. An air conditioner or cooling system may be necessary in summer." },
-      { q: "How difficult are leaf-tailed geckos to keep?", a: "Very. They require a highly specific combination of cool temperatures, 80 to 100% humidity, dense live planting, an automatic misting system, strong UVB, and extremely minimal handling. They mask illness effectively and decline rapidly once husbandry fails. They are considered one of the most demanding reptiles in the hobby and should only be kept by experienced keepers with significant resources dedicated to their specific needs." },
-      { q: "What do leaf-tailed geckos eat?", a: "Strictly insectivorous. Crickets, dubia roaches, and isopods are appropriate feeders. Gut-load all prey 24 to 48 hours before feeding. Dust with calcium w/D3 at every feeding for juveniles and every other feeding for adults, plus a reptile multivitamin once weekly. Feed every 2 to 3 days in the evening when they are naturally active." },
-      { q: "How long do leaf-tailed geckos live?", a: "With exceptional care - cool temperatures consistently maintained, high humidity, live-planted vivarium, and virtually no handling - leaf-tailed geckos can live 5 to 10 years in captivity. Their sensitive nature means longevity depends heavily on getting every parameter right from day one." },
+      { q: "How humid should a leaf-tailed gecko enclosure be?", a: "60 to 80% for most species. The satanic leaf-tailed gecko is the exception, needing 90 to 100% overnight, and it dehydrates fast without it." },
+      { q: "What temperature does a leaf-tailed gecko need?", a: "Ambient 68 to 75F, dropping to 64 to 68F at night. No basking spot: heat is generally unnecessary here and can be dangerous, the reverse of most reptile setups." },
+      { q: "Do they need a misting system?", a: "For most keepers it is the practical answer. Uroplatus need high humidity with proper drying cycles between mistings, and hand spraying several times a day is difficult to sustain. Automated misting is one of the few pieces of equipment that changes outcomes for this genus." },
     ],
   },
   {

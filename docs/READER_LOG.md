@@ -5906,3 +5906,192 @@ First two changes:
 - Brumation ramp-down protocol: fasting first, acceptable weight loss, how to bring one back up.
 - What an actual 8x4x4 DIY or custom build costs, the number the cost guide says I need and never prices.
 - Sexing, and whether sex should change my enclosure or budget plan.
+
+## Platy (2026-09-15, batch M)
+
+Raw reader output, one Opus agent, 8-page extract (hub, encyclopedia, cost,
+handling, health issues, tank setup, feeding, enrichment).
+
+**1. Page by page**
+
+- 00 Hub: Finished it, it's short. Actionable: the checklist and the one water-change number in the whole set. C+, because its numbers fight the deep dives.
+- 01 Encyclopedia: Finished it. Actionable: almost nothing, it's natural history, but the Gordon-Kosswig history is the best-written paragraph on the site. B.
+- 02 Cost: Finished it. Actionable: $2-6 a fish, $60-120 setup, $15-20/month, and a real warning about fry costs. B.
+- 03 Handling/breeding: Finished it. Actionable: sexing by gonopodium, 2-3 females per male, four concrete population strategies. B+.
+- 04 Health: Finished it. Actionable: five conditions with what to actually do, plus 2-3 week quarantine. The melanoma section is the best thing here. A-.
+- 05 Tank setup: Finished it. Actionable: nearly all of it, sizes, 68-82F, pH 7.0-8.2, 10-30 dGH, sponge filter, lid. A-.
+- 06 Feeding: Finished it. Actionable: schedule by life stage, portion rule, why-they-stopped-eating list. B+.
+- 07 Enrichment: Finished it fastest. Actionable: priority order list, sex ratio, what not to do. A.
+
+**2. Hub and encyclopedia**
+
+The encyclopedia earns its place, it's the only page with wild range, habitat, wild diet and the research history. The hub does not: every section is a shorter, vaguer version of the deep dive it sits next to, and its only unique fact, "Weekly 20 to 25 percent water changes," appears nowhere else.
+
+Conflicts, hub first:
+
+- Temperature: "Keep water between 72 and 78 degrees F" vs setup: "Roughly 68 to 82F works well." Its own FAQ then says "down toward the low 70s or even high 60s F," so the hub disagrees with itself too.
+- Tank cost: hub table "10+ gallon tank | $40 | $80" vs cost guide "10-gallon tank | $20 - $40." Same item, no overlap at all. Filter ($15-25 vs $10-20) and food ($25-45 vs $20-35) drift the same way.
+- Brood: "typically 20 to 80 fry per birth" vs cost and handling: "A typical brood runs 20 to 50 fry, with a documented range up to 80." The hub quotes the extreme as the norm.
+- Vegetables: hub says platies "genuinely benefit from a real vegetable or algae component in that staple rather than a purely protein-heavy diet" and blames swim bladder on "an overly protein-heavy diet that skips vegetable matter"; feeding says "platies aren't as strictly dependent on a big vegetable ratio" and names overfeeding as the cause.
+
+**3. The set as a whole**
+
+Yes, I could set up, cycle, buy, feed and keep them, and I'd know to decide about fry before buying. Missing: tankmates (nothing anywhere says what else goes in a community tank with platies, or what not to), stocking numbers past "six or more" in a 20 gallon, what to actually do with fry (at what size, will a shop take them), which plants to use for the cover four pages insist on, and day-one acclimation.
+
+Unflagged cross-page answers: handling says "dense live planting or a dedicated breeding or nursery tank gives them somewhere to hide" and never says setup covers how; feeding's swim bladder and constipation are described in full on health; health's "A properly cycled tank" is a 2-4 week job explained on setup; the encyclopedia raises platy-swordtail melanoma and never points to the page that says it isn't your fish's risk.
+
+**4. Overlap and conflict across the deep dives**
+
+Read three times: sperm storage and the 20-50 fry brood (cost, handling, enrichment); the 2-3 females per male ratio (handling, feeding, enrichment); shimmy (health, setup, feeding). Cost and handling share a near-identical paragraph.
+
+Numbers: health says correct "pH toward 7.0 to 8.0," setup says "roughly 7.0 to 8.2." Encyclopedia gives "Wild Lifespan: 3-5 years" while cost says "2 to 4 years is the range most sources land on." Cost calls 10 gallons fine for five; enrichment says "A 10 gallon tank is a reasonable starting point for a small group and is not a long-term plan if you keep both sexes." Setup cites a 15-gallon minimum footprint and still headlines "A Real 10 Gallons."
+
+**5. One link per page**
+
+- Hub: "Weekly 20 to 25 percent water changes help keep pace with a growing colony's bioload." Point to the filtration guide, since nothing else explains the bioload claim.
+- Encyclopedia: "crossing a platy with a swordtail and then backcrossing the hybrids produced offspring that developed malignant melanoma." Point to the health guide.
+- Cost: "A 10-gallon tank is a realistic starting point for a small group of platies." Point to the tank setup guide, which this page never links.
+- Handling: "dense live planting or a dedicated breeding or nursery tank gives them somewhere to hide." Point to the tank setup guide.
+- Health: "Quarantining new fish for 2 to 3 weeks before adding them to an established tank." Point to the hospital tank guide.
+- Setup: "Building the beneficial bacteria colony that processes waste takes 2 to 4 weeks with a fishless cycle." Point to the cycling guide. Biggest miss in the set.
+- Feeding: "It drives constipation and swim bladder problems directly." Point to the health guide.
+- Enrichment: none needed, it links where it matters.
+
+**6. Trust**
+
+Doubts: the hub's cost table and temperature range contradicting the articles under it; "typically visible by around 5 to 6 months of age" for the gonopodium reads late for a fish that breeds this fast; the shared pH/GH/KH guide is summarized as being about "a coldwater tank" and "goldfish keepers," which is not my fish.
+
+Most convincing: "Watch instead for a long, stringy strand of waste trailing from the fish after a meal, a visible sign the portion was too large."
+
+**7. Set grade: B+**
+
+Strong deep dives, weakened by a hub that restates them with different numbers. First two changes: make the hub's costs, temperature and brood figures inherit from the articles instead of being written separately, and add body links from setup to the cycling guide and from health to the quarantine guide.
+
+**Not covered anywhere**
+
+- Tankmates: which community fish go with platies and which don't.
+- Stocking limits: how many platies a 20 gallon actually holds.
+- Fry endgame: at what age or size to rehome, and whether shops take them.
+- Plant selection: which species give the dense cover four pages require.
+- Acclimation: float, drip, or neither on the day the fish come home.
+
+## Cherry Shrimp (2026-09-15, batch M)
+
+The batch session did not file the raw reader output for this species. What
+follows is reconstructed by the species check from the review section in
+docs/READER_REVIEWS.md, which quotes the reader; the page-by-page detail and the
+one-link-per-page list are not recoverable. One Opus agent, 8-page extract
+(hub, encyclopedia, cost, handling, health issues, tank setup, feeding,
+enrichment).
+
+**Grades, as quoted in the review**
+
+Hub C+ ("Where I got most of my wrong ideas."), encyclopedia B, cost A-,
+handling A, health issues A, tank setup A ("The page I would buy from."),
+feeding A-, enrichment B- ("the sentience review is a strange front door").
+
+**7. Set grade: B+**
+
+"The five deep dives are sourced, specific, and honest about where sources
+disagree; the hub that fronts them undercuts them with different numbers."
+
+**Not covered anywhere**
+
+- Mixing color lines breeds offspring back to wild brown.
+- Sexing and berried females.
+- How to test tap water for the copper three pages warn about.
+- Lighting and photoperiod.
+- Fish tankmate compatibility.
+- What to do when a colony outgrows its tank.
+
+## Green Anole (2026-09-15, batch M)
+
+The batch session did not file the raw reader output for this species. What
+follows is reconstructed by the species check from the review section in
+docs/READER_REVIEWS.md; the per-page grade table, the page-by-page detail and
+the one-link-per-page list are not recoverable. One Opus agent, 8-page extract
+(hub, encyclopedia, cost, handling, health issues, legal, tank setup,
+enrichment).
+
+**Hub and encyclopedia, as quoted**
+
+Hub C-. The cohabitation split across three pages was the reader's sharpest
+finding: hub "A male-female pair or a group of females can be housed together",
+setup "Don't house multiple anoles together, they don't coexist peacefully",
+enrichment "A single male with females in a large planted enclosure is the
+workable version." The reader said one of them is wrong and a buyer cannot tell
+which. The hub's own tables summed to roughly $210 to $405 against a stated
+total of $390 to $470. The cost guide's "a genuinely new addition to the gear we
+recommend for this species" read as an internal note that escaped.
+
+**7. Set grade: B**
+
+"Strong deep dives sitting under a hub whose numbers are the outliers." The
+biggest miss in the set: the health guide's sentence that everything connects
+back to the setup never pointed there.
+
+**Not covered anywhere**
+
+- What to do when a female lays eggs.
+- How to catch or restrain one safely.
+- Whether a temperate native needs a winter cooling period.
+- A spot-cleaning and substrate-replacement schedule.
+
+## Leaf-Tailed Gecko (2026-09-15, batch M)
+
+The batch session did not file the raw reader output for this species, and its
+review section carries no gaps list, so only the lines it quotes survive. One
+Opus agent, 7-page extract (hub, encyclopedia, cost, handling, health issues,
+tank setup, enrichment).
+
+**Hub, as quoted**
+
+Hub C+. "If the landing page tells me 24x24x36 and 80 to 100% while the setup
+article says 18x18x24 and 60 to 80%, I stop trusting whichever one I read
+second." Four of five deep dives carried no Sources block. The reader said the
+enrichment guide "names Gaskill but gives no link to check"; it links both
+Gaskill papers in its Sources block.
+
+**7. Set grade: B-**
+
+"Four strong deep dives undercut by a hub that disagrees with them on every
+number a buyer acts on first."
+
+**Not covered anywhere**
+
+Not recoverable; the batch filed no gaps list for this species.
+
+## Mouse (2026-09-15, batch M)
+
+The batch session did not file the raw reader output for this species. What
+follows is reconstructed by the species check from the review section in
+docs/READER_REVIEWS.md; the per-page grade table, the page-by-page detail and
+the one-link-per-page list are not recoverable. One Opus agent, 8-page extract
+(hub, encyclopedia, cost, handling, health issues, tank setup, feeding,
+enrichment).
+
+**Hub, as quoted**
+
+Hub C. "I would have bought the wrong cage from it." Hub, twice: "wire mesh
+spacing needs to be under half an inch" and "Bar spacing under 1/2 in", against
+the setup guide's quarter inch (6mm). The cost guide's stated "Roughly $15 to
+$30 a Month" against an annual table totalling $125 to $240. Feeding guide
+"lean toward scattering some of that ration around the cage" and "Use a shallow,
+chew-resistant dish" against enrichment "Scatter feeding, never a bowl."
+
+**7. Set grade: B**
+
+"Six strong, specific deep dives undercut by a hub that contradicts them on the
+one number that decides whether the animal stays in the cage."
+
+**Not covered anywhere**
+
+- A spot-clean and full-clean schedule in days.
+- A weighing routine and scale against the 20% weight-loss warning.
+- How to pick and sex a healthy mouse.
+- How to introduce unfamiliar females.
+- Accidental litters and desexing.
+- Zoonotic risk and hand hygiene.
+- Out-of-cage time and escape recovery.
+- A travel carrier.
+- End-of-life costs.
