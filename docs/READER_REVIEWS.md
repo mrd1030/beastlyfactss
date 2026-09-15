@@ -10151,3 +10151,117 @@ sidebar. Sulcata and box turtle both list theirs. Added.
   the third tortoise set to raise it: sulcata's reader asked for the
   same protocol for juveniles. Two instances make it a shared chelonian
   guide rather than a per-species gap.
+
+## Degu (2026-09-15, batch I, single pass, before the router hub)
+
+Extractor set of ten pages. One Opus 5 agent. Degu was picked for batch I
+as the small mammal, cross-linked to gerbil from batch H and to
+chinchilla by its own comparison guide.
+
+Set grade: C+, the lowest in the batch. "The individual pages are well
+aimed and the enrichment, legal and feeding guides are genuinely good,
+but a buyer following them gets three cage sizes, two temperature
+ceilings and two opposite answers on sand, which is exactly where a care
+site has to be right." Hub B+, enrichment A, feeding A-, legal A, cost
+C-, handling C.
+
+### The second hub to reverse the hub-loses default
+
+Gerbil did it first in batch H. Degu is the same shape: the old hub was
+the only page in the set citing the RSPCA, and the reader called it "the
+densest page in the set," carrying things no deep dive had. Per the
+batch H rule, that content moved into the deep dives first, with the
+RSPCA cited there, and the rows copy it from the articles.
+
+Moved into the tank setup guide, all verified against the RSPCA's own
+pages rather than the hub's paraphrase:
+
+- The solid roof, and why. "As a prey species, degus can get frightened
+  of movements above them (their main predators in the wild are birds of
+  prey)."
+- Safe-wood branches, pear, apple or beech, with platforms at different
+  levels.
+- The case against a glass tank, which the hub gave as dust and the
+  RSPCA gives as air: "degus housed in fish tanks or glass vivariums can
+  suffer from respiratory problems, as they don't allow enough air to
+  circulate in and out." This also answers the reader's complaint about
+  a page titled tank setup for a species that must not live in a tank.
+- A solid enclosure bottom under a deep layer of bedding. The hub's six
+  inches is not a figure the RSPCA gives, so it did not move.
+
+Moved into the feeding guide: coprophagy as a requirement. "They need to
+be able to eat their own droppings to get their essential nutrients and
+keep their digestive system healthy."
+
+Moved into the health guide: vitamin A deficiency and liver disease,
+which sit on the RSPCA's own list alongside diabetes, tail loss, heat
+stroke and respiratory infection.
+
+### What the hub lost anyway
+
+- Cage, three sizes across the set. Hub: 24x18x36. Setup guide:
+  24x18x24. The hub's own cost table: a 24x24x48 product. None was
+  sourced, so PetMD settles it at "about 28″ L x 18″ W x 28″ H" for two
+  degus, and the setup guide now carries that.
+- Bar spacing. The hub's half an inch was right and its article was
+  wrong: the setup guide said "an inch or less for adults." PetMD says
+  "no more than a half inch," and the setup guide now says that.
+- Temperature. Hub: 60 to 72°F, "cannot cope above about 80." The health
+  guide's emergency line is 77°F, so the hub's ceiling sat three degrees
+  past it. Setup guide's 65 to 70°F with nothing approaching 77 is the
+  row.
+- Wheel: 12 inches or more, against the setup guide's 11 to 12.
+- Bath medium: "chinchilla dust rather than sand," a flat reversal of the
+  enrichment guide's "Use sand for degus, not dust."
+- Bath length: ten to fifteen minutes, against the enrichment guide's
+  twenty.
+- Pellets: a tablespoon per degu, against the feeding guide's 1 to 2.
+- Carrot, sweet potato, beetroot and parsnip "in very small pieces as an
+  occasional treat," against the health guide's line that even small
+  amounts of carrot can trigger the disease.
+
+### Deep-dive fixes
+
+- Cost guide: "Upfront Setup: Roughly $100 to $300" sat directly above
+  its own table, which sums to about $375 to $520 of equipment before
+  the animals. The reader: "the $100 to $300 setup figure sitting above a
+  table that disproves it." Heading, seoTitle, seoDescription,
+  description and the setup FAQ all corrected to the table.
+- Lifespan, three figures across three pages. Encyclopedia: "1-4 years in
+  the wild; 6-7 years in captivity." Cost guide: "5 to 8 years, with some
+  reaching 10 to 13." Chinchilla comparison: "5 to 9 years, some reaching
+  the low teens." The colony management paper the enrichment guide
+  already cites settles it: "Being a prey species, they seldom live
+  longer than 2 years in the wild" and "in captivity they live up to 5-8
+  years." All three pages now carry that, and the unsourced 10 to 13 is
+  gone.
+- Feeding guide: "steer clear of rabbit food entirely, it can contain an
+  ingredient that's genuinely toxic to degus." The reader flagged it as
+  "a fact copied without being understood." The ingredient is a
+  coccidiostat, the anti-parasitic feed additive routinely included in
+  rabbit and poultry feed, and it is now named.
+- Tank setup guide: the sand bath had no session limit, against the
+  enrichment guide's "Do not leave sand in permanently." Now twenty
+  minutes and a link to why.
+- Six of the reader's link asks added. The reader's structural point,
+  that "every deep dive links out to gerbil or chinchilla pages and
+  almost never to its own species' siblings," was exactly right: before
+  this pass not one degu guide linked to another.
+
+### Also fixed
+
+RELATED_ARTICLES had no entry for degu-legal-guide, the second missing
+legal guide this batch after red-footed tortoise. Added. Worth a sweep
+across every species with a legal guide.
+
+### Open
+
+- The six things not covered anywhere, in docs/READER_LOG.md: how to
+  introduce or bond two degus and re-pair a survivor, how to sex them and
+  what a mis-sexed pair costs, where to source a bonded pair and how to
+  judge a healthy animal, a cage cleaning schedule for a deep dig layer,
+  out-of-cage time and degu-proofing, and what happens when one of a pair
+  dies.
+- Bonding is the sharpest. The set tells the reader to buy two eight
+  times and never tells them how, and four pages say introductions of
+  unfamiliar adults fail.

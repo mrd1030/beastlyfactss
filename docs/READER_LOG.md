@@ -4421,3 +4421,84 @@ Checked against the Health and More list as well as this species' own pages.
 - What to check on the animal before buying, and its first-month acclimation. The herpesvirus guide covers quarantine length, not selection or settling in.
 - Healthy weight for shell length and a weighing cadence. The brumation guide's weigh-ins apply only to species that brumate, which excludes this one.
 - How often to change damp substrate in a permanently humid enclosure.
+---
+
+# Degu: Set Review
+
+Opus reader agent, first pass, 2026-09-15, batch I. Raw and unedited.
+
+
+## 1. Page by page
+
+- **00 hub.** Finished it. Actionable: temperature, substrate depth, solid roof, chew replacement, orange teeth. Grade B+.
+- **01 encyclopedia.** Finished it. Actionable: almost nothing, but the 1964 Santiago-to-MIT-to-Vermont colony history is the only thing on the site I could not have guessed. Grade B.
+- **02 cost.** Finished it, then stopped trusting it. Actionable: pair pricing, annual table. Grade C-.
+- **03 handling.** Finished it in a minute. Actionable: scoop, never the tail. Nothing on how to actually pick one up. Grade C.
+- **04 health.** Finished it. Actionable: symptom lists, the vet-now vs vet-soon split. Grade B.
+- **05 tank setup.** Finished it, distrusted the numbers. Actionable: aspen or paper, no cedar, solid floor. Grade C+.
+- **06 feeding.** Finished it. Actionable: hay always, measured pellets, the six reasons for appetite loss. Grade A-.
+- **07 enrichment.** Finished it twice. Actionable: sift the sand, do not sterilize it, sessions not permanent. Grade A.
+- **08 legal.** Finished it. Actionable: check my state before buying a pair. Grade A.
+- **09 vs chinchilla.** Finished it. Actionable: the schedule decision. Grade B.
+
+## 2. Hub and encyclopedia
+
+The hub earns its place: it is the densest page in the set and carries things no deep dive has (six inches of substrate, the solid roof and birds of prey, coprophagy as a requirement, weekly tooth checks). The encyclopedia earns it too, on history alone. But the hub disagrees with its own deep dives:
+
+- Cage. Hub: "A pair needs at least 24x18x36 inches." Setup guide: "At minimum, 24 by 18 by 24 inches for a pair." The hub's own cost table then prices a "24x24x48 in multi-level cage." Three sizes.
+- Temperature. Hub: "Keep them at 60 to 72 degrees F... cannot cope above about 80." Setup: "65 to 70°F... never let ambient temperature climb toward 77°F." Health: "kept below about 77°F." The hub's ceiling is 3 degrees past the health guide's emergency line.
+- Wheel. Hub: "a solid running wheel of 12 inches or more." Setup: "A solid exercise wheel, 11 to 12 inches."
+- Sand. Hub: "using chinchilla dust rather than sand." Enrichment: "Use sand for degus, not dust." A flat reversal.
+- Bath length. Hub: "ten to fifteen minutes." Enrichment: "twenty minutes or so at a time."
+- Pellets. Hub: "roughly a tablespoon per degu per day." Feeding: "roughly 1 to 2 tablespoons per degu daily."
+- Bar spacing. Hub: "half an inch or less." Setup: "an inch or less for adults."
+- Lifespan. Encyclopedia: "6-7 years in captivity." Cost: "5 to 8 years... some reaching 10 to 13." Chinchilla guide: "5 to 9 years."
+
+## 3. The set as a whole
+
+I could buy the cage, bed it, feed it and recognise the two diseases that matter. I could not get from "buy two" to actually owning two. Missing: where to buy and how to judge a healthy degu, how to sex them, how to introduce or bond them (four pages say introductions fail, none says how), what happens when one of a pair dies, any cleaning schedule, out-of-cage time and degu-proofing, and what an accidental litter costs me if the shop sexed them wrong.
+
+Unsignposted answers: the cost guide's "dental work for overgrown teeth and diabetes management" is fully explained in the health guide, unlinked. The health guide's "77°F" contradicts the setup guide's room target, unlinked. The setup guide's "this isn't optional grooming, it's a real physiological need" is the whole argument of the enrichment guide, unlinked. The handling guide's warning about sugary treats is the feeding guide, unlinked.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three times: degus are diurnal, degus cannot have sugar, never grab the tail, keep two. The feeding and health guides share a near-verbatim paragraph ("Sugar and fruit in the diet cause the diabetes that's this species' signature health risk... the single biggest lever"). Conflicts beyond the hub ones above:
+
+- Carrot. Hub: "Carrot, sweet potato, beetroot and parsnip... belong in very small pieces as an occasional treat." Health: "even small amounts of fruit, carrot, peas, corn, or sugary treats can trigger the disease."
+- Seeds. Hub FAQ: "the occasional plain oat or single sunflower seed." Chinchilla guide: "fruit, honey, seeds, and other sugary items need to be avoided almost entirely."
+- Setup total. Cost guide heading: "Upfront Setup: Roughly $100 to $300." Its own table on the same screen: cage $280-$360, wheel $55-$75, plus four more lines. The real floor is about $374 before the animals.
+- Sand permanence. Enrichment: "Do not leave sand in permanently." Setup: "A bath house filled with bathing sand covers both," with no session limit.
+
+## 5. One link per page
+
+- 00: "A pair needs at least 24x18x36 inches with multiple solid levels" to the enclosure setup guide.
+- 01: "degus lack a functional insulin response and develop diabetes and cataracts on fruit" to the feeding guide.
+- 02: "dental work for overgrown teeth and diabetes management" to the health issues guide.
+- 03: "Feeding fruit or sugary treats as an occasional 'harmless' indulgence" to the feeding guide.
+- 04: "Degus tolerate heat poorly and should be kept below about 77°F" to the enclosure setup guide.
+- 05: "this isn't optional grooming, it's a real physiological need for this species" to the enrichment guide.
+- 06: "Tooth spurs, sharp edges on molars that don't align properly, can cut a degu's mouth" to the health issues guide.
+- 07: "Solid shelves, not wire, since wire flooring causes foot problems" to the health issues guide (bumblefoot).
+- 08: "Degus are social and usually kept in pairs or groups, which means a restriction reaches more than one animal" to the handling guide.
+- 09: "fruit, honey, seeds, and other sugary items need to be avoided almost entirely" to the feeding guide.
+
+Every deep dive links out to gerbil or chinchilla pages and almost never to its own species' siblings, which is backwards for someone mid-setup.
+
+## 6. Trust
+
+Doubts: the $100 to $300 setup figure sitting above a table that disproves it; three cage sizes; the sand-versus-dust reversal between two pages; "rabbit food... can contain an ingredient that's genuinely toxic to degus" without naming the ingredient, which reads like a fact copied without being understood; and an article titled "tank setup" for a species the hub says must not live in a tank. The hub cites the RSPCA repeatedly, the deep dives cite nothing, so they feel written by different hands.
+
+Most convincing sentence: "Leave it in permanently and it becomes a toilet, and sift and top it up instead of replacing everything every session, since the research suggests the scent history is part of what makes it worth using."
+
+## 7. Set grade
+
+C+. The individual pages are well aimed and the enrichment, legal and feeding guides are genuinely good, but a buyer following them gets three cage sizes, two temperature ceilings and two opposite answers on sand, which is exactly where a care site has to be right. First two fixes: pick one number for cage, temperature, wheel, bath medium, bath duration, pellet volume and lifespan and push it everywhere including the cost tables; then write the missing page on sourcing, sexing, introducing and re-pairing a degu, because the set tells me to buy two eight times and never tells me how.
+
+## Not covered anywhere
+
+- How to introduce or bond two degus, and how to re-pair a survivor when one dies.
+- How to sex degus, and what to do about an accidental litter from a mis-sexed pair.
+- Where to source a bonded pair and how to judge a healthy degu at purchase.
+- Cage cleaning schedule and how to spot clean a six-inch dig layer.
+- Out-of-cage time and degu-proofing a room for an animal that chews structurally.
+- The shared list covers heat emergencies, antibiotic risk, vet transport and grooming, so those are answered; the six above are not, on any page in the set.

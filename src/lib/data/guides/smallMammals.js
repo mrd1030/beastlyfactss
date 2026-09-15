@@ -82,86 +82,109 @@ export const smallMammalGuides = [
     image: "/assets/guides/degu.jpg",
     tagline: "The daytime rodent that cannot eat sugar and will not live alone!",
     funFact: "Degus are one of the few mammals that cannot metabolize dietary sugar properly. They have an unusual insulin structure and develop diabetes and cataracts on a diet most other rodents handle fine, which is why a single grape can matter here in a way it never would for a hamster.",
-    // Labels match `covers` strings in affiliateProducts.js and the figures are those
-    // products' vetted prices. See scripts/check-cost-coverage.mjs. Note there is no
-    // degu-specific pellet product wired up yet, so that line stays unmatched.
-    // Priced for a pair, which is the minimum this species should be kept in.
-    costs: {
-      setup: [
-        { item: "24x24x48 in multi-level cage", low: 280, high: 360 },
-        { item: "12-14 in solid exercise wheel", low: 55, high: 75 },
-        { item: "Dust bath house + chinchilla dust", low: 15, high: 25 },
-        { item: "Hideouts and tunnels", low: 10, high: 30 },
-        { item: "Water bottle and food dishes", low: 3, high: 9 },
-        { item: "Digital thermometer and hygrometer", low: 11, high: 19 },
-      ],
-      annual: [
-        { item: "Grass hay (unlimited)", low: 18, high: 26 },
-        { item: "Sugar-free degu or chinchilla pellets", low: 40, high: 70 },
-        { item: "Chinchilla dust (ongoing)", low: 10, high: 16 },
-        { item: "Chew toys (mineral/pumice)", low: 10, high: 16 },
-        { item: "Bedding", low: 18, high: 30 },
-        { item: "Exotic vet check, including dental", low: 80, high: 160 },
-      ],
-    },
-    sections: {
-      housing: `A pair needs at least 24x18x36 inches with multiple solid levels, and vertical space matters as much as floor area. The RSPCA is specific about this: wild degus climb onto the branches of shrubs and small trees, so they want safe-wood branches (pear, apple or beech), platforms at different heights to jump between, and stable rock formations to scramble on. Use wire with bar spacing of half an inch or less, and solid shelves rather than mesh, which injures feet. Glass tanks are a poor choice: degus are active and produce a lot of dust, and a tank cannot ventilate it.
-
-Fit a solid roof. Degus are prey animals whose main wild predators are birds of prey, and they are genuinely frightened by movement above them. A solid top rather than an open mesh one makes a visible difference to how settled they are.
-
-Give them a deep substrate layer to dig in. Degus are burrowers and a cage with a shallow tray is a cage they will spend their time trying to escape. Six inches of paper-based bedding or a dig box the full width of the cage will be used constantly.
-
-Everything wooden will be destroyed. Degu incisors are open-rooted and grow for life, and they chew structurally rather than idly. Plastic shelves, plastic hides and plastic wheels last days. Use ceramic, metal and untreated hardwood, and expect to replace chew wood weekly.
-
-Keep them at 60 to 72 degrees F. Like chinchillas they overheat easily and cannot cope above about 80, and a degu breathing rapidly with a wet chin in a warm room is in trouble.`,
-      diet: `Unlimited grass hay is the base of the diet and must be there all the time. It supplies the fiber that keeps the gut moving and the abrasion that keeps continuously growing teeth worn down.
-
-Pellets must be sugar-free, and the RSPCA is clear that hay matters more than the pellets do. Use a dedicated degu pellet, or a guinea pig or chinchilla nugget provided it contains no molasses, at roughly a tablespoon per degu per day. Foods formulated for rabbits, hamsters and gerbils are not suitable, and neither are chinchilla mixes with dried fruit in them.
-
-No fruit, no honey sticks, no yoghurt drops. This is not a general caution about treats: degus have an atypical insulin and a genuine inability to handle simple sugars, and diabetes in a pet degu shows up as cataracts, weight loss and excessive drinking. Carrot, sweet potato, beetroot and parsnip are all higher-sugar vegetables, so they belong in very small pieces as an occasional treat rather than as part of the daily bowl. Commercial small-animal treats are frequently too sugary to use at all. Safe extras are leafy greens, dandelion and plantain.
-
-Let them eat their own droppings. Degus are coprophagic and the RSPCA treats this as a nutritional requirement rather than a habit to discourage: they need it to get essential nutrients and keep the gut working.
-
-Healthy adult degus have orange incisors. White or very pale teeth in an adult are a sign of poor health, not good hygiene, and teeth should be checked weekly for color, length and shape.`,
-      enrichment: `Degus are diurnal, which is the main reason people choose them: they are awake and interactive during the day rather than at two in the morning. That also means they need genuine daytime stimulation.
-
-They must be kept in at least a pair, and preferably a same-sex group from the same litter. A lone degu is a welfare problem, not a preference. Introducing unfamiliar adults is difficult and often fails, so buy littermates or an already-bonded group rather than planning to add later.
-
-Provide a solid running wheel of 12 inches or more, tunnels, ceramic hides, platforms at different heights and a permanent dig area. Rotate cardboard and chew wood weekly.
-
-They need a dust bath two or three times a week for ten to fifteen minutes, using chinchilla dust rather than sand. Their coat goes greasy and matted without it.
-
-Never pick a degu up by the tail. The skin sheds away as a predator defense, the exposed section is then lost, and it does not grow back.`,
-      health: `Diabetes and cataracts are the signature problem and are almost entirely dietary. Watch for cloudy eyes, drinking far more than usual, and weight loss on a normal appetite. Opaque whitening of the eye is on the RSPCA's daily check list for exactly this reason.
-
-Dental disease is the other common one. Open-rooted teeth that are not worn down overgrow, and the first signs are drooling, wetness around the mouth, dropping food, weight loss and a preference for softer items. Only a vet should correct overgrown or misaligned teeth. This needs a proper oral examination, usually under anesthetic, not a visual check of the front teeth alone.
-
-Vitamin A deficiency and liver disease both appear on the RSPCA's list of conditions degu keepers should learn to recognize, alongside diabetes, tail loss, heat stroke and respiratory infection. Degus are a relatively new pet species and the veterinary picture is still filling in, which is a good argument for registering with an exotics vet who actually sees them.
-
-Bumblefoot comes from wire flooring and dirty bedding. Respiratory infections come from dusty bedding and poor ventilation, and a degu with laboured breathing or a discharge from the nose needs seeing quickly.
-
-Heat stress is an emergency. Above roughly 80 degrees F expect rapid breathing, lethargy and a wet chin, and cool the animal gradually rather than with ice.
-
-Find an exotics vet before you need one. Degus are not a species every small animal practice sees regularly.`,
-      checklist: [
-        "24x18x36 in minimum multi-level cage for a pair",
-        "At least two degus, ideally littermates",
-        "Solid 12 in or larger exercise wheel",
-        "Unlimited grass hay (Timothy or orchard)",
-        "Sugar-free pellets, no fruit or molasses",
-        "Deep substrate or a dedicated dig box",
-        "Chinchilla dust and a bath house",
-        "Untreated hardwood chew, replaced weekly",
-        "Room kept between 60 and 72 degrees F",
-        "Exotic veterinarian experienced with degus"
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Heat stress signs and
+    // the vet carrier cite the shared small mammal guides in the sidebar's
+    // Health and More list. Reconciled 2026-09-15 after the degu set test
+    // (docs/READER_REVIEWS.md).
+    //
+    // This is the second hub after gerbil to reverse the hub-loses default.
+    // The old hub was the only page in the set citing the RSPCA, and the
+    // reader graded it the densest page there. The solid roof and the birds
+    // of prey behind it, the deep dig layer over a solid floor, safe-wood
+    // branches and staggered platforms, the case against a glass tank, and
+    // coprophagy as a nutritional requirement all moved into the tank setup
+    // and feeding guides first, with the RSPCA cited there; the rows below
+    // copy them from those articles.
+    //
+    // What the hub lost, because a deep dive carried the better figure: the
+    // cage (24x18x36, against PetMD's 28x18x28 for a pair, now the setup
+    // guide's), bar spacing (half an inch, which was right, but the setup
+    // guide said an inch and now says PetMD's half), temperature (60 to 72°F
+    // with a ceiling of 80, three degrees past the health guide's 77°F
+    // emergency line), the wheel (12 inches or more, against the setup
+    // guide's 11 to 12), the bath medium (chinchilla dust, a flat reversal
+    // of the enrichment guide's sand), the bath length (ten to fifteen
+    // minutes, against twenty), the pellet portion (a tablespoon, against
+    // the feeding guide's 1 to 2), six inches of substrate (a number the
+    // RSPCA does not give), and carrot, sweet potato, beetroot and parsnip
+    // as an occasional treat, against the health guide's line that even
+    // small amounts of carrot can trigger the disease.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Legal", value: "Restricted in fifteen jurisdictions and outright banned in eight, which makes it the most heavily regulated of the small rodents ordinarily sold as pets. The reason repeats almost word for word: states listed the rodents common in the pet trade when the rule was drafted, and the degu arrived later.", source: "degu-legal-guide" },
+        { label: "Never one", value: "Two minimum, same-sex or neutered, and ideally littermates or animals introduced young. Introductions of unfamiliar adults need care. Isolation is linked to aggression and self-mutilation in this species, which is a stronger statement than the equivalent for most rodents.", source: "degu-enrichment-guide" },
+        { label: "Cage", value: "About 28 by 18 by 28 inches is the minimum for a pair, per PetMD, and larger is always better. A tall, multi-level cage with ramps and platforms suits this species' active, climbing nature. Metal rather than plastic or wood, which degus chew through readily, and bar spacing no more than half an inch.", source: "degu-tank-setup-guide" },
+        { label: "Solid roof", value: "Degus are a prey species whose main wild predators are birds of prey, and they get frightened by movement above them, so the RSPCA asks for a solid roof rather than open mesh.", source: "degu-tank-setup-guide" },
+        { label: "Not a tank", value: "Skip the fish tank and the glass vivarium. The RSPCA is direct that degus housed in them can develop respiratory problems, because glass sides don't let enough air circulate in and out.", source: "degu-tank-setup-guide" },
+        { label: "Climbing", value: "Branches of safe wood, pear, apple or beech, with platforms at different levels to climb or jump between. Solid shelves, not wire, since wire flooring causes foot problems.", source: "degu-tank-setup-guide" },
+        { label: "Temperature", value: "Genuinely cool by small-pet standards, 65 to 70°F. This species tolerates heat poorly, so keep the cage away from windows, radiators, and any spot that gets direct sun, and never let ambient temperature climb toward 77°F.", source: "degu-tank-setup-guide" },
+        { label: "Heat stress signs", value: "Rapid or open-mouth breathing first, then excess drooling or salivation, then weakness and reluctance to move, with tremors, convulsions, collapse, or unconsciousness as the severe stage. Move the animal to the coolest available room, offer cool, not ice-cold, water, cool it gradually, and get to a vet immediately.", source: "small-mammal-temperature-heat-stress-guide" },
+        { label: "Substrate", value: "Dust-free aspen shavings or a paper-based bedding, plenty of hay, and a genuine deep-digging area. The RSPCA puts it as a solid enclosure bottom under a deep layer of material, hay, shredded paper and paper tissue among them, so a degu can dig and burrow rather than scratch at a tray.", source: "degu-tank-setup-guide" },
+        { label: "Wheel", value: "A solid exercise wheel, 11 to 12 inches. Wire or mesh wheels catch toes and tails and cause real injury, and a small one forces an arched spine.", source: "degu-tank-setup-guide" },
+        { label: "Sand, not dust", value: "Bathing sand two or three times a week, twenty minutes or so at a time. Use sand for degus, not chinchilla dust. Leave it in permanently and it becomes a toilet, and sift and top it up instead of replacing everything every session.", source: "degu-enrichment-guide" },
+        { label: "Why the sand bath matters", value: "Degus dust bathe at a higher rate on sand a familiar degu has already used, and dust bathing plays a role in male-to-male communication. Wild colony bathing sites are marked with urine and anal gland secretions. The tray is a shared scent board and not a shower.", source: "degu-enrichment-guide" },
+        { label: "Chewing", value: "Open-rooted teeth and a serious appetite for destruction. Mineral and lava chew blocks, untreated wood, cardboard and apple or willow branches all get worked through. Assume anything plastic in the cage will be chewed eventually.", source: "degu-enrichment-guide" },
+        { label: "Hay", value: "Unlimited grass hay, timothy, meadow, or orchard, available at all times. It is the bulk of the diet, the fiber that keeps the gut moving, and the abrasion that keeps continuously growing teeth worn down.", source: "degu-feeding-guide" },
+        { label: "Pellets", value: "Measured, not free-fed, roughly 1 to 2 tablespoons per degu daily. Degus will preferentially eat calorie-dense pellets over hay given unlimited access to both, which undercuts the fiber intake this species actually needs.", source: "degu-feeding-guide" },
+        { label: "Sugar", value: "Fruit, honey, molasses, and any sugary treat should be avoided almost entirely, not just limited. Degus have unusually low natural insulin activity among rodents, and this species is studied as a natural model for diabetes because it develops the disease so readily on even modest added sugar.", source: "degu-feeding-guide" },
+        { label: "Rabbit food", value: "Steer clear entirely. Rabbit pellets routinely carry a coccidiostat, the anti-parasitic feed additive added to control coccidiosis in rabbits and poultry, which degu keepers are consistently warned against. Hamster and gerbil mixes are the wrong fit too, too much protein and seed.", source: "degu-feeding-guide" },
+        { label: "Droppings", value: "Let them eat their own. The RSPCA treats this as a nutritional requirement rather than a habit to discourage: degus need it to get their essential nutrients and keep the digestive system working.", source: "degu-feeding-guide" },
+        { label: "Orange teeth", value: "Healthy degu teeth should look orange, not white. White or very pale teeth in an adult are the sign of a problem.", source: "degu-health-issues-guide" },
+        { label: "Dental disease", value: "The most common reason degus actually see a vet, and molar malocclusion specifically is the most frequently diagnosed dental disorder in this species. Watch for drooling or a wet chin, dropping food while eating, weight loss, and watery eyes. Treatment typically means filing under anesthesia.", source: "degu-health-issues-guide" },
+        { label: "Never the tail", value: "Degus can experience tail slip, where the skin and fur of the tail sloughs off under grasping pressure. It doesn't grow back and needs veterinary attention. Scoop by the body instead.", source: "degu-handling-guide" },
+        { label: "Vet trips", value: "A ventilated, hard-sided small-animal carrier, ready before a trip is ever needed rather than bought the morning of an appointment. For a bonded pair, the cage mate comes along when the visit or recovery allows it.", source: "small-mammal-vet-visits-and-travel-guide" },
+        { label: "Budget", value: "$10 to $50 per degu, and you need two. Equipment runs roughly $375 to $520, the cage being most of it. An exotic vet check including dental runs $80 to $160 a year.", source: "degu-cost-guide" },
+        { label: "Adult size", value: "5 to 8 inches (12 to 20 cm) body, plus a 4 to 5 inch tufted tail; 6 to 11 oz." },
+        { label: "Lifespan", value: "5 to 8 years in captivity, against an animal that seldom passes 2 years in the wild, where it is prey.", source: "degu-cost-guide" },
       ],
     },
+    emergencyCard: {
+      source: "degu-health-issues-guide",
+      callNow: [
+        "Increased drinking and urination, weight changes, cloudy eyes from cataracts, thinning coat, and lethargy (diabetes). See a vet at the first sign; once it develops it can be managed but not cured",
+        "Signs of heatstroke in a degu kept above about 77°F. This is an emergency",
+        "Drooling or a wet chin, dropping food while eating, weight loss, and watery eyes (dental disease). See a vet, treatment typically means filing under anesthesia",
+        "Red, swollen, or scabbed footpads from standing on wire flooring (bumblefoot). Manageable at home early by switching to solid flooring; an infected case needs a vet",
+        "Laboured breathing or nasal discharge from dusty bedding, ammonia buildup, or poor ventilation (respiratory infection). See a vet",
+      ],
+      vetLine: "An exotics-experienced vet, registered with before you need one, since degus are a relatively new pet species and the veterinary picture is still filling in. Vitamin A deficiency and liver disease sit on the RSPCA's list alongside diabetes, tail loss, heat stroke and respiratory infection. See a vet immediately for heatstroke or a sudden increase in drinking and urination, and book promptly for drooling or dropped food, a footpad sore that isn't improving, or persistent lethargy.",
+    },
+    routes: [
+      { slug: "degu-cost-guide", line: "$10 to $50 an animal and you need two, the roughly $375 to $520 of equipment the cage dominates, and the annual table where dental sits alongside hay." },
+      { slug: "degu-tank-setup-guide", line: "PetMD's 28x18x28 minimum for a pair, the RSPCA's solid roof and deep dig layer, why a glass tank is the wrong box, and the 77°F line that is not a comfort figure." },
+      { slug: "degu-feeding-guide", line: "Hay first and pellets measured, the sugar rule that is a metabolic limit rather than a caution, the coccidiostat in rabbit pellets, and six reasons a degu stops eating." },
+      { slug: "degu-handling-guide", line: "Never solo and never by the tail, what tail slip actually is, and the diurnal schedule that is most of why people pick this species." },
+      { slug: "degu-health-issues-guide", line: "Diabetes as the defining risk, molar malocclusion as the most diagnosed dental disorder, bumblefoot from wire, and why orange teeth are the healthy ones." },
+      { slug: "degu-enrichment-guide", line: "The research that found degus bathing more on sand a familiar degu used, what that makes the tray, and the priority order that follows." },
+      { slug: "degu-legal-guide", line: "Banned in eight jurisdictions and restricted in fifteen, and the list-drafting accident that explains almost every one of them." },
+    ],
+    buyList: [
+      "A tall multi-level cage, 28x18x28 inches at minimum for a pair",
+      "At least two degus, ideally littermates",
+      "Solid roof rather than open mesh",
+      "Solid shelves and ramps, never wire",
+      "Safe-wood branches (pear, apple or beech)",
+      "Solid exercise wheel, 11 to 12 inches",
+      "Deep paper or aspen bedding, plus a dig area",
+      "Unlimited grass hay (timothy, meadow, or orchard)",
+      "Sugar-free degu or chinchilla pellets, no molasses",
+      "Bath house and bathing sand",
+      "Mineral or lava chew blocks and untreated hardwood",
+      "Ceramic or metal hides and tunnels",
+      "Water bottle and food dishes",
+      "Digital thermometer for the room",
+      "A ventilated, hard-sided carrier",
+      "An exotics vet who sees degus",
+    ],
     faqs: [
-      { q: "Can degus eat fruit?", a: "No. Degus have an unusual insulin structure and cannot process dietary sugar the way most rodents can, so fruit, carrot, sweetcorn, honey treats and yoghurt drops all carry a real risk of diabetes and the cataracts that follow it. This is not the usual advice to go easy on treats; it is a species-level metabolic limitation. Safe extras are leafy greens, dandelion, plantain and the occasional plain oat or single sunflower seed." },
-      { q: "Can I keep a single degu?", a: "You should not. Degus live in colonies of up to a hundred animals in the wild with cooperative burrowing and sentry duty, and a lone degu shows real distress: repetitive behavior, bar chewing and lethargy. Keep at least two. The practical catch is that introducing unfamiliar adults frequently fails, so buy littermates or an established same-sex group rather than planning to add a companion later." },
-      { q: "Why are my degu's teeth orange?", a: "That is what a healthy adult degu's teeth look like. The enamel takes on an orange to deep yellow color as the animal matures. It is white or very pale teeth in an adult that signal a problem, usually a diet short on the minerals and fiber the species needs." },
-      { q: "Are degus awake during the day?", a: "Yes, and it is the main reason people pick them over hamsters. Degus are diurnal, so they are active and sociable during normal waking hours instead of starting at midnight. They do take naps through the day, and they are noisy: the species has a large vocal repertoire and a bonded pair chatters constantly." },
-      { q: "What happens if a degu's tail comes off?", a: "The skin of the tail is designed to strip away if a predator grabs it, leaving the animal free but exposing the vertebrae, which then die back and are lost. It does not regrow. Never lift or restrain a degu by the tail, and scoop from underneath with both hands instead." },
+      { q: "Can I keep just one degu?", a: "No. Degus are highly social and need to live in same-sex pairs or small groups. A solitary degu becomes stressed, which shows up as neurotic or aggressive behavior over time, the direct opposite of the solitary Syrian hamster, which must be housed alone." },
+      { q: "Why are degus so prone to diabetes?", a: "They're naturally insulin-resistant, with a genetic predisposition toward diabetes that most small mammals don't share. Even small amounts of fruit, carrot, peas, corn, or sugary treats can trigger the disease, and veterinary literature flags the species as one where that predisposition creates real, ongoing management challenges." },
+      { q: "Does a degu need sand or dust for bathing?", a: "A sand or dust bath two to three times a week supports healthy coat condition and is a real physiological need, not optional grooming. Bathing sand is generally the gentler, better-suited choice for degus specifically, finer chinchilla dust is a reasonable alternative but was formulated for chinchilla fur." },
     ],
   },
   {
