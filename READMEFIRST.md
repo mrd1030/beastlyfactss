@@ -580,9 +580,34 @@ rather than copied bullets, and the review file described two fixes that
 the diff did not actually contain. Step 4 of the batch prompt exists to
 catch exactly that and did not.
 
-Batch I is not picked yet. The 62 species still on the legacy care sheet
-are listed by class in docs/TODO.md, section 7, dogs and cats last.
-Paste the prompt below with the next five species filled in.
+Next up is batch I: African fat-tail gecko, corydoras catfish,
+red-footed tortoise, degu, savannah monitor (gecko, fish, turtle, small
+mammal, lizard). The cross-link reasoning again, since it keeps paying:
+the gargoyle gecko set merged in batch H points at African fat-tail from
+four of its pages, the gerbil set points at degu six times through the
+shared overview, and the sulcata set points at red-footed tortoise.
+Corydoras catfish has six inbound articles and is the standard tankmate
+for the two tetra sets reconciled in batches G and H, so any tankmate or
+temperature claim in those gets checked against fresh work.
+
+African fat-tail goes first for a second reason. The gargoyle gecko
+defect in batch H was a setup guide whose whole thesis its own three
+sources reject, and African fat-tail is a sibling gecko guide from the
+same writing pass, so it is the likeliest place for that failure to
+repeat. Savannah monitor is in for a third: it is one of six enrichment
+guides still carrying the "Other quantities are available" template
+fragment, and it is the only one of the six inside a batch, so this
+fixes one of them in scope.
+
+The other five are amano shrimp, chinchilla, hermit crab, hissing
+cockroach, ackie monitor and Argentine tegu. That fragment is shop copy
+with the product missing ("Other quantities are available and a proper
+depth needs several") and it is worth one short session of its own
+rather than waiting for each species' batch.
+
+The 62 species still on the legacy care sheet are listed by class in
+docs/TODO.md, section 7, dogs and cats last. Paste this with the next
+five species filled in when picking up the batch after that.
 
 ```
 Read READMEFIRST.md, CLAUDE.md, docs/RULES.md (all of it, then the Hubs

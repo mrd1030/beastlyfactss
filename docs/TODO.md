@@ -394,9 +394,13 @@ Checked 2026-09-14 against `src/lib/data/guides/*.js`: a hub is a router hub
 when its entry carries `firstWeek` rows (RULES, Hubs). 46 of 108 done, 62
 still rendering the legacy care sheet. Batches of five, one branch each,
 per the READMEFIRST process. Dogs and cats last.
-Next: batch I, not yet picked. Worker Opus 5 high effort, one Fable
-closing check per batch (the batch prompt in READMEFIRST has the
-reasoning).
+Next: batch I, African fat-tail gecko, corydoras catfish, red-footed
+tortoise, degu, savannah monitor, one per class. Three are cross-linked
+by batch H, corydoras is the standard tetra tankmate, and savannah
+monitor clears one of the six enrichment guides carrying the "Other
+quantities are available" template fragment. Worker Opus 5 high effort,
+one Fable closing check per batch (the batch prompt in READMEFIRST has
+the reasoning).
 
 Done (31):
 
