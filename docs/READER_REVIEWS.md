@@ -14528,3 +14528,64 @@ cleanup crew for permanently damp deep substrate, body condition tracking for an
 animal you rarely see, and how much topsoil and sand to buy for the 40/40/20 mix
 when only the coconut fiber is priced. The acclimation one is the same gap batch O
 found on all four invertebrates, which now makes it seven species running.
+
+## Jackson's Chameleon (2026-09-15, batch P, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 79k tokens. Raw output in
+docs/READER_LOG.md. Set grade: B. "Strong deep dives sitting under a hub whose
+numbers contradict them."
+
+Numbers checker before the pass, 32 groups: the hub against the cost guide on
+UVB, basking, annual and vet costs, and the hub against the setup guide on
+ambient and night temperature. The reader found all of those and the one the
+checker could only half see.
+
+The hub was describing a different animal in places. Two of its FAQs were about
+the veiled chameleon, including one giving male size as 18 to 24 inches and 140 to
+200 grams on a page whose own encyclopedia entry says 9 to 13 inches. The numbers
+checker did flag "adult size | in" with a veiled figure on the hub, which nobody
+had read as the wrong species. This is the second hub caught describing another
+animal, after batch N's discus emergency card, and both times it read as padding
+rather than as an error, which is what makes it hard to catch.
+
+The supplement schedule is the fix with the most riding on it. The old hub's diet
+section, the only feeding content in the set, prescribed "calcium without D3 at
+every or every-other feeding, calcium with D3 twice weekly, and a reptile
+multivitamin once per week" on a species its own health guide describes as prone
+to edema from over-supplementing vitamin A or D. LafeberVet gives calcium once
+weekly and a general vitamin and mineral supplement once weekly, says to "avoid
+products containing high levels of Vitamin D as this can lead to toxicity", and
+notes this species "may also be more sensitive to over-supplementation of vitamin
+A than some other lizards"; Reptiles Magazine says the same about vitamin A and
+names gout and edema as the result. So the hub's schedule did not just disagree
+with a deep dive, it disagreed with the veterinary source on a point the set
+already knew. Diet Basics now carries LafeberVet's version, and the hub row copies
+it.
+
+Source narration in the setup guide's humidity section, and worth noting that the
+reader liked the old sentence: "05's 'humidity guidance varies somewhat across
+sources' is the opposite, and it raised my trust." The rewrite keeps both published
+patterns and adds which one to use and why, which is what RULES asks for, so the
+honesty survives without the survey.
+
+Links: 4 added, one per article. The cost guide's supplement line and the handling
+guide's masking-illness line both go to the health guide, which is where this
+species' specific risks live.
+
+check-species-numbers jacksons-chameleon after the pass: every line marked hub
+appears in the deep dive its row names. Voice warning counts identical to baseline
+on all changed files, all gates and eslint clean.
+
+Left as written and recorded here: the cost guide says wild-caught Hawaiian animals
+turn up cheaper, and the legal guide says Hawaii bars private ownership and
+restricted inter-island transport in 1997. Both are sourced and not strictly
+contradictory, but a reader can reasonably ask how a legally sourced Hawaiian
+animal reaches the mainland trade, and no page answers that.
+
+Not covered anywhere, the reader's list: how to actually hold a room at 68 to 75F
+by day and 50 to 65F at night in a warm house, which the enrichment guide raises as
+the central problem and no page solves; gravid female husbandry, birth, dystocia,
+and what to do with 5 to 30 neonates, which the cost guide prices as an emergency
+and the health guide never mentions; how to tell captive-bred from wild-caught at
+purchase; and UVB distance from the basking branch, which the setup guide hands off
+to a UVB guide outside this set.

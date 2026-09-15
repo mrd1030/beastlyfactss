@@ -6877,3 +6877,73 @@ Strong husbandry instincts, undermined by numbers that do not reconcile across p
 - Body condition or weight monitoring for a species you rarely see.
 - Which UVI to actually target, after the setup guide names the disagreement and leaves it open.
 - How much topsoil and sand to buy for the 40/40/20 mix; only coconut fiber is priced.
+
+## Jackson's Chameleon (2026-09-15, batch P)
+
+Raw output, one Opus reader agent, extractor set of eight pages.
+
+## 1. Page by page
+
+- **00 Hub.** Finished it; it is the only page with a feeding schedule and supplement plan, so I can act on diet, gut-loading and the shopping checklist. Two FAQs are about veiled chameleons. **B-**
+- **01 Encyclopedia.** Finished it, short. Actionable: adult size 9-13 in, single subspecies *T. j. xantholophus*, Hawaii origin of trade stock. **B**
+- **02 Cost.** Finished it. I can budget $400-525 setup, $50-100/month, vet $50-100. **B**
+- **03 Handling.** Finished it. Actionable: stress signals list, no cohabitation, sex by horns. Thin on actual technique. **C+**
+- **04 Health.** Finished it. Actionable: edema from over-supplementing A/D, gout, preformed vitamin A. **B+**
+- **05 Tank setup.** Finished it, the most useful page. Numbers I can build from. **A-**
+- **06 Enrichment.** Finished it, the best written. Actionable: temperature first, planting density test, release prey. **A**
+- **07 Legal.** Finished it. Actionable: five restricted jurisdictions with citations. **A**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: the 1972 Kaneohe introduction and the subspecies point appear nowhere else in usable form. The hub half earns it. Diet, gut-loading and supplementation exist only there. Its Housing and Health sections are a weaker restatement of 05 and 04.
+
+Conflicts with the deep dives:
+- Ambient. Hub: "daytime ambient of 72 to 80 degrees F." 05: "ambient air should stay considerably cooler, 68 to 75°F." On the one variable both call the defining risk.
+- Night. Hub: "can drop to 55 to 65 degrees F." 05: "a genuine night drop to 50 to 65°F."
+- Basking, inside the hub itself. Section: "basking spot of 85 to 88 degrees F." Checklist: "Basking bulb (80 to 85 degrees F hot spot)."
+- Enclosure walls. Hub: "Screen construction is non-negotiable." 05: "Favor an enclosure with two or three solid sides rather than full mesh."
+- UVB. Hub: "T5 HO Arcadia 6% or 12%." 05: "a Zoo Med ReptiSun 5.0 T5 HO or Arcadia Forest 6%." 12% is a lot for a forest species and nothing defends it.
+- Cost. Hub's annual table tops out near $655. 02: "annual costs to somewhere around $1,200." Hub vet "$70 to $120," 02 "$50 to $100 or more." The hub setup table has no dimming thermostat line at all, though 05 requires one and 02 prices it at $73-93.
+- Lifespan. Hub FAQ: "Jackson's chameleons live 5 to 10 years." 02: "Males commonly live 8 to 10 years... Females... typically 3 to 5 years."
+- Litter. Hub: "Females can birth 8 to 30 live young." 03: "anywhere from 5 to 30 live offspring."
+
+## 3. The set as a whole
+
+I could buy legally, build the cage, wire the lighting, feed and spot most illness. Still missing: how to actually get a house down to 68-75°F in summer, which 06 raises and no page solves; what a gravid female needs beyond "a suitable warm, humid hiding area"; how to choose a breeder; UVB distance from the branch.
+
+Questions answered on another page without being told: the hub's warning that respiratory infection comes from stagnant air is resolved by 05's drying-cycle rule, unlinked. The hub's "yellow-orange urates" is explained by the shared stool guide. 02's "birth complications" is never picked up by 04.
+
+## 4. Overlap and conflict across deep dives
+
+Read three times: live birth and the cooler-than-veiled comparison, in 02, 03 and 06. Dehydration and standing water, in 04 and 06. Conflicts:
+- Litter size, 03 "5 to 30" against the hub's "8 to 30."
+- Cohabitation reasoning is consistent but 03 says "Males will fight," while 06 says "Do not house adults together," including females.
+- 04 never mentions respiratory infection or dystocia, which the hub calls out as real risks.
+
+## 5. One link per page
+
+- **Hub.** "Strong UVB (T5 HO Arcadia 6% or 12%) is mandatory." Point to the tank setup guide, which names actual bulbs.
+- **Encyclopedia.** "Adult Size: 9-13 inches." Point to the tank setup guide.
+- **02 Cost.** "A calcium supplement is part of that recurring spend, and getting the dose right matters." Point to the health guide, where over-supplementing causes edema.
+- **03 Handling.** "Chameleons mask illness well, and a handling session is a natural time to check for early signs of trouble." Point to the health guide.
+- **04 Health.** "increase misting and dripper output immediately." Point to the chameleon hydration guide.
+- **05 Tank setup.** "Never run a fogger while the heat lamp is on." Point to the hydration guide.
+- **06 Enrichment.** "the first months are quarantine and a vet." Point to the reptile quarantine guide.
+- **07 Legal.** "it is among the harder chameleons to keep well." Point to the tank setup guide.
+
+## 6. Trust
+
+Doubts: the hub carries two veiled chameleon FAQs on a Jackson's page, which reads as padding; and the hub's own basking numbers disagree with each other. 05's "humidity guidance varies somewhat across sources" is the opposite, and it raised my trust.
+
+The one sentence that convinced me: "Chronic overheating in this species presents as a chameleon that has simply stopped doing things, which is easy to file as personality."
+
+## 7. Grade: B
+
+Strong deep dives sitting under a hub whose numbers contradict them. First two changes: make the hub inherit its temperature, UVB, wall and cost figures from the deep dives instead of restating them, and add a gravid female and neonate section to the health guide.
+
+## Not covered anywhere
+
+- How to hold a room at 68-75°F day and 50-65°F night in a warm house.
+- Gravid female husbandry, birth, dystocia, and what to do with 5 to 30 neonates.
+- How to vet a breeder or tell captive-bred from wild-caught at purchase.
+- UVB distance from the basking branch, punted to a UVB guide that is not in this set.
