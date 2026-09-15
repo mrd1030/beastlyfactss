@@ -373,8 +373,7 @@ Red-footed tortoises do not need to brumate and should not be allowed to get col
         "Soft, discolored, pitted or foul-smelling patches on the shell",
         "A soft or rubbery shell, a misshapen jaw, or trouble walking",
         "Nasal discharge, wheezing, open-mouth breathing or lethargy",
-        "A tortoise found on its back, which in a hot enclosure is an emergency",
-        "Refusing food for a week",
+        "A cracked shell, which needs immediate vet care and pain management",
       ],
       vetLine: "Nearly everything on this list traces back to the enclosure: the temperature gradient, the humidity a growing tortoise gets, and whether the substrate stays dry. A reptile vet with chelonian experience is a long-term partner for this species rather than an emergency contact.",
     },
@@ -386,7 +385,6 @@ Red-footed tortoises do not need to brumate and should not be allowed to get col
       { slug: "sulcata-tortoise-health-issues-guide", line: "Pyramiding and the two studies that disagree about its cause, shell rot, metabolic bone disease, and the outdoor hazards worth clearing first." },
       { slug: "sulcata-tortoise-enrichment-guide", line: "Grazing, target training a hundred-pound animal, and the terrain that can flip a tortoise onto its back." },
       { slug: "sulcata-tortoise-legal-guide", line: "The state table, the tick certificate interstate transport needs, and the California desert tortoise mix-up." },
-      { slug: "sulcata-tortoise-vs-russian-tortoise-guide", line: "The honest do-not-buy filter: one stays on a tortoise table for life, the other needs a yard and a heated shed." },
     ],
     buyList: [
       "Outdoor enclosure with fencing buried as deep as it stands",

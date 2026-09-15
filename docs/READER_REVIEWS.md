@@ -4251,6 +4251,38 @@ in one review section.
   captive figure under "Wild Lifespan" with no label, and one review-file
   note that did not match the diff. Every number decision held when the
   sources were reopened. Pass grade B+.
+- 2026-09-14, batch H (cardinal tetra, milk snake, gargoyle gecko, gerbil,
+  sulcata tortoise, branch claude/hub-pacman-frog-80291s). Cardinal tetra: the
+  health guide's ich FAQ dropped the temperature-increase advice its cited
+  Aquarium Co-Op protocol never gives, the cost guide's lifespan gained ADW's
+  "about five, up to ten", and the hub's misspelled parasite went with the
+  legacy sections. Milk snake: the setup guide moved to ReptiFiles' 75 to 80
+  cool side and 70 to 75 night, its "4 to 5 feet" subspecies line to the cited
+  28 to 48 inches, and gained a sourced Diet Basics section; the vs corn table
+  lost its copperhead and its 24 to 36 inches. Gargoyle gecko: the tank setup
+  guide's no-heat thesis was rewritten against all three of its own sources to
+  a gradient with a low ceiling, and the encyclopedia's Vulnerable became Least
+  Concern. Gerbil: the hub was right and the deep dives wrong, so six Merck
+  figures (protein, fat, portion, humidity, lifespan, tail amputation) moved
+  into the deep dives, plus cholesteatoma, seizures and tumor incidence as new
+  health guide sections. Sulcata: the setup guide's brumation advice for a
+  Sahel species was cut against the shared brumation guide, the encyclopedia's
+  Vulnerable became Endangered and its 70 to 150 lb and 70 to 150 years became
+  the sourced 80 to 110 lb, 200 lb males, and 70-plus years.
+- 2026-09-14, batch H species check (one Fable agent covering all five):
+  confirmed both claims the batch rested on against the source pages (Merck
+  on gerbil, the three gargoyle heat sources), then found and fixed: source
+  names in nine cardinal tetra hub rows, one milk snake row, three gerbil rows
+  and the gargoyle and gerbil deep dives' new prose; two gargoyle hub rows and
+  one setup-guide range ("82 to 84°F") no source states; a stale gargoyle body
+  H1; a Merck seizure sentence read out of its dihydrostreptomycin paragraph
+  and carried into the gerbil emergency card; that card written rather than
+  copied, and the sulcata and milk snake cards each carrying a bullet their
+  health guide does not; three hubs routing vs pieces; the milk snake vs corn
+  page still saying copperhead and the sulcata vs Russian page saying 70 to
+  110 where the review said otherwise; a gerbil FunFact still at three to
+  four years; and ten files with a number changed and no date bump. Pass
+  grade B-.
 
 ## Green Iguana (2026-09-09, first pass)
 
@@ -9617,3 +9649,226 @@ reader's requested feeding link.
   hundred-pound tortoise and no page answers it, on a set where the
   enrichment guide's best line is about target training precisely so the
   animal moves itself.
+
+## Cardinal tetra, milk snake, gargoyle gecko, gerbil, sulcata tortoise (2026-09-14, batch H species check)
+
+One Fable agent covering all five species on branch
+claude/hub-pacman-frog-80291s from base b01ecd2, run once after every
+species was done and pushed, per the batch prompt. It read diffs rather
+than whole files, opened the source URLs behind the two claims the batch
+rests on (the Merck gerbil page, twice, plus the raw page text for the
+seizure paragraph; ReptiFiles, The Bio Dude and Reptiles Magazine on
+gargoyle gecko heat) and behind every other number decision (ReptiFiles
+on milk snake and sulcata, Animal Diversity Web for cardinal tetra, milk
+snake, gerbil and sulcata, Aquarium Co-Op on ich, the RSPCA on gerbil
+citrus, Wikipedia for the two IUCN fields where the Red List returns
+403), fixed every finding on the branch, and committed "Cardinal tetra,
+milk snake, gargoyle gecko, gerbil, sulcata tortoise: species check".
+Nothing merged.
+
+### Scope
+
+Clean. The diff is the five guide entries, the five species' MDX, this
+file, docs/READER_LOG.md, READMEFIRST.md and docs/TODO.md (the batch
+pick-up commit), and four encyclopedia entries, all for batch species,
+every changed field traced to a named source that was opened again here
+(gargoyle: Lozito et al. for the tail, Wikipedia and GBIF for Least
+Concern; milk snake and gerbil: Animal Diversity Web; sulcata: ADW,
+ReptiFiles, and Petrozzi et al. 2021 via Wikipedia for Endangered). The
+sulcata overview and adultSize edits are same-page copies of the moved
+weight and lifespan figures, not new research. No shared class guide
+row, no other src file. SHORT_LABELS and RELATED_ARTICLES needed no
+change and got none.
+
+### The two claims the batch rests on
+
+Both hold. Merck's gerbil page states, verbatim, 18 to 20% protein, 5 to
+8 g/day, raised cholesterol on diets over 4% fat, nasal dermatitis above
+50% humidity with prevention "below 40%", a 2 to 3 year lifespan, and
+tail amputation "as soon as possible". Reversing the usual direction was
+right. And the three gargoyle sources do reject the old no-heat thesis:
+ReptiFiles gives 77 to 84°F with a basking spot at 84 and calls
+inadequate heat the most common cause of lethargy and poor appetite, The
+Bio Dude gives basking 82 to 85 and cool 70 to 75 and calls the belief
+"a common misconception", Reptiles Magazine gives 78 to 82 by day under
+a low-wattage bulb or ceramic emitter. The rewrite was warranted.
+
+What did not hold was one sentence downstream of the Merck claim: see
+Gerbil below.
+
+### Cardinal tetra: fixed on the branch
+
+- Eight first-week rows carried a source's name ("Animal Diversity Web
+  puts", "Seriously Fish gives", "Practical Fishkeeping notes", "the
+  Merck Veterinary Manual documents", "Aquarium Co-Op notes"), copied
+  faithfully from deep dives that name sources inline. The batch prompt
+  says none of that goes in a row and this is exactly where batches D
+  and E leaked. All eight rows now carry the figure alone, numbers
+  unchanged; the three hub FAQs keep their names because the verbatim
+  rule wins for FAQs.
+- The health guide's rewritten ich FAQ said the heat advice "is not what
+  Aquarium Co-Op calls for"; the cost guide's rewritten lifespan FAQ
+  said "Animal Diversity Web notes". Both batch-added names cut, hedges
+  kept.
+- Every number decision checked out: Aquarium Co-Op never recommends
+  raising the temperature and prescribes a redose every 24 hours with a
+  third of the water changed, one extra day past the last spot; ADW says
+  "about 5 years, although individuals may live as long as 10 years"
+  and "at least 10 of this species should be kept together". Dates
+  bumped on the three files where a number moved and nowhere else. Six
+  links, all to shared fish guides, none over a limit.
+
+### Milk snake: fixed on the branch
+
+- The setup guide's new subspecies sentence ("ReptiFiles, working from
+  Markel's reference figures, gives...") and its new Diet Basics opener
+  ("ReptiFiles puts juveniles on...") narrated the source in the body,
+  and the hub's "Size by subspecies" row copied the narration. Both
+  sentences rewritten to state the figures; row updated to match. The
+  figures themselves are ReptiFiles' verbatim: cool side 75 to 80, night
+  70 to 75, Pueblan 28 to 36, Eastern 36 to 45, Honduran and Sinaloan 40
+  to 48, juveniles every 7 to 10 days, adults 10 to 14, prey 1.5x width
+  or 10% of body weight, "20 years or more".
+- The vs corn guide dropped "copperhead" from its table cell and the
+  review says "the copperhead is gone", but the same page's FAQ and its
+  mimicry paragraph still said "coral snakes or copperheads". Both now
+  say coral snakes. That page also changed three figures (length,
+  lifespan, mimic) with no date bump; bumped to 2026-09-14.
+- The hub routed the vs corn piece. The batch prompt's routes are one
+  per own deep dive, not vs pieces, and no other router hub on the site
+  routes one; removed.
+- The emergency card's "Cheesy or yellowish material around the gums"
+  does not appear in the health guide, whose mouth rot section gives no
+  sign at all. Bullet now reads "Signs of mouth rot (infectious
+  stomatitis)", which is what the guide says.
+- The enrichment sentence that lost its "other substrate quantities"
+  fragment ended up with "deep enough" twice; tidied, no fact changed.
+
+### Gargoyle gecko: fixed on the branch
+
+- The body H1 still read "A Cool-Climate Species That Doesn't Want Your
+  Heat Lamp". DemotedH1 renders it invisibly, which is exactly how a
+  stale copy survives. Now matches the new title.
+- "A basking spot around 82 to 84°F" appeared in the body, the FAQ, the
+  seoDescription, the cost guide's new link sentence and the hub
+  Temperature row. No source states that range: The Bio Dude says 82 to
+  85, ReptiFiles says 84. Under "never write a number no source states",
+  all five now read 82 to 85, The Bio Dude's figure, which the rest of
+  that paragraph's gradient (cool end 70 to 75, ambient at or below 82)
+  already came from.
+- The rewritten temperature section named ReptiFiles and The Bio Dude in
+  prose, the substrate section named Reptiles Magazine and The Bio Dude,
+  and the excerpt and opener both said "every specialist source on this
+  page says otherwise". All de-narrated; the ectothermy point and the
+  misconception label stay as claims, the block carries the sources.
+- Hub "Feeding schedule" and "Insects" rows copied the feeding guide's
+  disagreement narration ("though one detailed care sheet breaks life
+  stages out differently", "most sources say... one source says... one
+  specialist source is a real outlier"). Rows now carry the figures the
+  guide lands on. The feeding guide itself is pre-existing text and was
+  left alone.
+- Cost guide (heat sentence, bulb FAQ) and health guide (impaction
+  paragraph) both changed a fact with no date bump; both bumped.
+- Encyclopedia: three fields, all traced, all confirmed. Wikipedia's
+  infobox gives Least Concern, the handling guide's Lozito et al.
+  citation carries the tail claim.
+
+### Gerbil: fixed on the branch
+
+- The seizures section, new in the health guide, said "Merck notes that
+  frequency and severity often decrease with age, and adds that a subset
+  of adults instead get progressively worse". Merck's raw page text puts
+  that sentence in the paragraph on dihydrostreptomycin toxicosis
+  ("seizures due to toxicosis from dihydrostreptomycin often decrease
+  with age... certain subsets of adult gerbils do not improve"), not on
+  spontaneous seizures. The emergency card then carried "Seizures that
+  are becoming more frequent rather than less" as a call-the-vet
+  bullet, built on the misread. The section is rewritten from the MSD
+  page already in that guide's Sources: 20 to 40% of gerbils, uncommon
+  in many pet strains, onset at 2 to 3 months, worse to about 6 months
+  then declining, episodes of several minutes with no permanent damage,
+  handling in the first three weeks reduces them. The "progressively
+  worse" claim and the card bullet are gone; the hub Seizures row copies
+  the new section.
+- The emergency card had five bullets, three of them written (head
+  tilt, tail, seizures) and two of the health guide's four items
+  dropped (dropped food or drooling, a persistently red or bloody
+  nose). The batch added the cholesteatoma and degloving sections and
+  left the guide's When to See a Vet sentence untouched, so the card had
+  nothing to copy from. That sentence now names the degloved tail as a
+  same-day visit and the head tilt as a prompt one, and the card copies
+  it: six bullets, one per item.
+- Merck named in prose seven times across four guides (cost body and
+  FAQ, feeding body, setup body, health body three times and FAQ), all
+  batch-added, and in three hub rows and one route line. All rewritten
+  to state the figure; Merck stays in the Sources blocks it was added
+  to. The 40% humidity figure is on the page ("Prevention requires
+  lowering environmental humidity below 40%"), so the setup and health
+  guides' two-number explanation stands.
+- The cost guide's FunFact still said "on average, a three to four year
+  relationship" under a Lifespan section that now says 2 to 3. Same-page
+  copy; now two to three.
+- Both vs guides changed a fact (guinea pig: the 20-gallon cell; hamster:
+  the new protein section) with no date bump; both bumped.
+- Two vs routes removed from the hub, same rule as milk snake.
+- Encyclopedia wildLifespan: ADW does give "average lifespan in the wild
+  is 3-4 months". Confirmed.
+
+### Sulcata tortoise: fixed on the branch
+
+- The review says the vs Russian guide's three weight figures "were
+  corrected to" the handling guide's 80 to 110. They were changed to 70
+  to 110 instead, in the table, both FAQs and the body, so the vs guide
+  disagreed with the handling guide, hub, encyclopedia and cost guide
+  the batch had just aligned. All four now read 80 to 110 (ADW's 36 to
+  50 kg is 79 to 110 lb; ReptiFiles' 70 to 110 is the only source for a
+  70, and the site figure the batch chose everywhere else is 80).
+- Five files changed a number with no date bump: the tank setup guide
+  (brumation), feeding (85 to 95 became the two bands), handling (the
+  juvenile indoor figure), cost (the shelter table cell) and vs Russian
+  (weight). All bumped to 2026-09-14. The enrichment guide's pointer
+  swap was left unbumped as a navigation edit carrying a copied figure.
+- Emergency card: "A tortoise found on its back" and "Refusing food for
+  a week" are not in the health guide the card cites (the first is the
+  enrichment guide's, the second the feeding guide's). Replaced with the
+  health guide's shell fracture item, which the card had skipped.
+- The vs Russian route removed from the hub, same rule.
+- Encyclopedia: four fields. Endangered (Petrozzi et al. 2021, via
+  Wikipedia's infobox), 36 to 50 kg and 54.3 years captive (ADW), 70 to
+  110 lb and 200 lb males (ReptiFiles) all confirmed on the pages.
+- Left as is: the setup guide names the Royal Veterinary College in the
+  brumation sentence and the hub row copies it. That is a named
+  institutional list rather than provenance for a figure, and the shared
+  brumation guide names it the same way.
+
+### Gates on the branch head
+
+check-internal-links, check-related-articles, check-affiliate-mdx,
+check-cost-coverage, check-seo-tags, check-encyclopedia, check-voice
+--strict and eslint all pass. check-species-numbers for all five: no
+hub line disagrees with a deep dive (--strict exits 1 on every species,
+including merged ones like canary, whenever any advisory group exists,
+so the exit code is not the test). Voice warning counts on the 30
+changed MDX files are unchanged against b01ecd2, except the gargoyle
+tank setup guide, which lost one.
+
+### Verdicts
+
+Cardinal tetra, milk snake, gargoyle gecko, gerbil, sulcata tortoise:
+all fixed on the branch. No redo.
+
+### Pass grade: B-
+
+The research was real and the hard calls were right: both claims the
+batch leaned on hold verbatim on the source pages, the gargoyle rewrite
+was warranted, and reversing the hub-loses default on gerbil was the
+correct read of Merck. But the execution around those calls was loose in
+ways the process has named before. Ten files changed a number with no
+date bump. Three hubs routed vs pieces against the prompt's rule. Two
+emergency cards carried written bullets and one dropped half the health
+guide's list. Source names went into hub rows and body prose on four of
+five species after batches F and G had stopped that, and the review file
+says "the copperhead is gone" and "corrected to 80 to 110" about pages
+where neither happened. One Merck sentence was read out of its paragraph
+and reached the emergency card. None of it was hard to fix; all of it
+should have been caught by the batch's own step 4.
