@@ -4752,3 +4752,84 @@ First two changes: (1) cut the hub back to a router with one set of numbers take
 - Sourcing and maintaining the bioactive cleanup crew the hub calls for.
 - How to pick a healthy animal at purchase and acclimate a shipped one. Quarantine is covered by the shared guide; selection and unboxing are not.
 - What to do once a gecko is loose in the house. Every page says prevent it; none says recover it.
+
+---
+
+# Ackie Monitor: Set Review
+
+Opus reader agent, first pass, 2026-09-15, batch J. Raw and unedited.
+
+
+## 1. Page by page
+
+**00 hub.** Finished it, and it is the page I trust least: every number on it is contradicted downstream. Actionable: the checklist. Grade C-.
+**01 encyclopedia.** Finished, 60 seconds. Nothing to act on, but the History paragraph (1982 export ban, small founder pool, 18-egg clutches) is the only page that explains why this animal is in the trade at all. B-.
+**02 cost.** Finished. I can build a budget from it: $150-450 animal, $800-1,500 setup, $40-80/month, vet tiers. B.
+**03 handling.** Finished, twice. Actionable: wait 4-5 days to 2 weeks, tongs only, 30 minutes of presence per visit, stop it at the elbow. A-.
+**04 health.** Finished. Actionable: weekly kitchen-scale weigh-in, two clean fecals before it meets anything else. B.
+**05 tank setup.** Finished. This is the page I would actually build from: 5x2.5x4, 130-170F surface, 12-24 in substrate, UVI 4-6, Retes stack. A-.
+**06 feeding.** Finished. Actionable schedule, staple list, dusting rule, the six reasons for a hunger strike. A-.
+**07 enrichment.** Finished. Actionable: puzzle tube, damper dig zone, target training, priority order. One garbled paragraph. B+.
+**08 legal.** Finished. I know my state's answer and the rule text behind it. A.
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: wild range, wild diet, subspecies history, the smuggling note. None of that is in a deep dive.
+
+The hub does not. It restates the deep dives at lower resolution and with different numbers, and since it is where navigation lands, it is the version most readers will carry. Conflicts:
+
+- Enclosure. Hub: "A 6x3x3 ft enclosure is the minimum for a pair." Setup: "5 feet long by 2.5 feet wide by 4 feet tall as the minimum for a single adult." The hub's pair minimum is smaller in height than the deep dive's single-animal minimum.
+- Basking. Hub Housing: "120 to 150 degrees F at the surface." Hub Health, same page: "cannot reach 130 to 150 degrees F." Setup: "roughly 130 to 170°F." Three ranges, one of them self-contradicting.
+- Cool side. Hub: "80 to 85 degrees F ambient." Setup: "Cool side should sit around 75 to 80°F."
+- Substrate. Hub: "A minimum of 12 inches." Setup: "12 to 24 inches." The hub's own enrichment text says burrows "extend 12 to 24 inches underground," so its minimum cannot hold the burrow it describes.
+- Supplements. Hub: "Dust prey with calcium w/D3 and a reptile multivitamin on a consistent schedule." Feeding: "Use a reptile multivitamin containing true vitamin A ... occasionally rather than on a fixed weekly schedule, over-supplementing vitamins is a real risk."
+- Rodents. Hub: "Whole prey items offer nutritional completeness when used judiciously." Feeding: "a rodent-heavy diet is directly linked to the fatty liver disease that shortens more captive monitor lifespans than almost anything else."
+- Subspecies. Hub: "two recognized subspecies." Encyclopedia: Boulenger "naming all three currently recognized subspecies in the same work."
+- Cost. Hub setup table totals about $595-1,130; cost guide says "$800 to $1,500 or more."
+- Difficulty. Hub and encyclopedia: "Advanced." Handling: "ackies are classed as an intermediate reptile." Legal: "one of the most commonly recommended monitor lizards for a first-time keeper."
+- Cohab. The hub pushes pairs and trios in three places. No deep dive mentions cohabitation at all, and the setup guide sizes for one animal.
+
+## 3. The set as a whole
+
+I could buy, house, feed and enrich one. Gaps: no bulb wattage or lamp distance for a 130-170F surface, no ambient humidity number in the setup guide (only the hub's 40-60%), no target weight or growth benchmark behind "weigh weekly," no breeder-vetting or health-check-at-purchase, no substrate maintenance or replacement schedule, no interim housing for a hatchling in a 5x2.5x4, no sexing or cohab practicalities.
+
+Questions answered elsewhere without being told: the health guide's "temperatures too low to support proper digestion" is settled by the setup guide's 130-170F, which it never names; feeding's "an incorrect basking temperature" is the same; the cost guide's $800-1,500 line is itemized in the setup guide; handling's "substrate too shallow to hold a burrow" is quantified in the setup guide; feeding's "stress or boredom" is the whole enrichment guide.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice: obesity from food motivation (health, handling, feeding, enrichment); substrate depth (setup, enrichment, handling); "most keepers under-provide heat ... err toward the hotter end" appears twice inside the setup guide alone; the bearded dragon/skink contrast in cost, handling, health and setup.
+
+Numbers that disagree: the animal's size. Encyclopedia: "18-28 inches (45-70 cm) including tail." Hub FAQ: "24 to 28 inches total length." Legal: "tops out around two feet." Feeding vs hub on schedule: "Subadults and adults (6+ months): Every other day" against "Adults eat 3 to 5 times per week." The enrichment guide says "Do not bowl-feed an animal that solves puzzle tubes in ten minutes" while feeding says offer "what your ackie can finish within a 5 to 10 minute window"; those are compatible but never reconciled. Enrichment also contains a broken sentence: "Other quantities are available and a proper depth needs several."
+
+## 5. One link per page
+
+- Hub: "The basking spot temperature is the most critical parameter: 120 to 150 degrees F at the surface directly under the basking light." Point to the enclosure setup guide, and adopt its range.
+- Encyclopedia: "Ridge-tailed monitors nevertheless remain among the Australian reptiles most often found for sale on overseas websites." Point to the legal guide.
+- Cost: "A large custom or PVC enclosure, deep burrowing substrate, a UVB fixture, multiple high-wattage basking bulbs, a thermostat, a Retes stack, hides, and monitoring equipment add up fast." Point to the enclosure setup guide, not the bearded dragon one.
+- Handling: "Providing shallow substrate that can't hold a proper burrow, undermining a core part of this species' natural behavior." Point to the enclosure setup guide.
+- Health: "Linked to inappropriate substrate ingestion or temperatures too low to support proper digestion." Point to the enclosure setup guide.
+- Setup: "Building a large custom or PVC enclosure at this size is a genuine part of the investment." Point to the cost guide.
+- Feeding: "Inconsistent calcium dusting is one of the more common feeding mistakes with this species, and it opens the door to metabolic bone disease even when UVB is otherwise adequate." Point to the health issues guide.
+- Enrichment: "Do not skip the basking surface temperatures this species needs while chasing enrichment." Point to the enclosure setup guide.
+- Legal: none needed.
+
+## 6. Trust
+
+Against: three different basking ranges across two pages that both claim it is the single most important number; three difficulty verdicts including "recommended for a first-time keeper" on a page the hub calls Advanced; the hub's unsupported cohab advocacy; the "$540 - $555" enclosure row, which reads like one scraped product price standing in for a category.
+
+For: the handling guide's "Keep the arm out in front and stop the lizard at the elbow, because an ackie will jump from a high point like your head." Nobody writes that who has not had one on their arm. The feeding guide's refusal to invent a fasting number is a close second.
+
+## 7. Set grade: B-
+
+The deep dives are genuinely good and the hub in front of them is wrong on size, heat, substrate, supplements and difficulty. First two changes: make the hub derive every number from the deep dives, one source of truth each, and pick a single difficulty label; then add the missing buy-and-first-month page (choosing a breeder, health check at pickup, hatchling housing, cohab and sexing, substrate maintenance) and repoint the cost guide's setup sentence at the setup guide.
+
+## Not covered anywhere
+
+Checked against the Health and More list: thermostats and wattage are covered by the heating guide, UVB distance by the UVB guide, quarantine, shedding, stool and hydration, Salmonella and outage planning all by their own shared guides. Still unanswered:
+
+- How to choose a breeder and what to check on the animal at pickup.
+- Interim housing for a hatchling before it fills a 5x2.5x4 enclosure.
+- Sexing, and how to actually run a pair or trio if the hub's advice is kept.
+- Maintenance of 12 to 24 inches of substrate: spot cleaning, full replacement interval, bioactive cleanup crew.
+- Target adult weight or growth curve to judge the weekly weigh-in against.
+- An ambient humidity figure in the setup guide; only the hub gives one (40 to 60%).

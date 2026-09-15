@@ -3,69 +3,104 @@ export const lizardGuides = [
     id: "ackie-monitor",
     name: "Ackie Monitor",
     emoji: "🦎",
-    difficulty: "Advanced",
+    difficulty: "Intermediate",
     petType: "Lizards",
     image: "/assets/guides/ackie-monitor.jpg",
     tagline: "The miniature Komodo dragon with a huge personality!",
     funFact: "Ackie monitors 'taste' the air constantly with their forked tongues, using their Jacobson's organ to detect prey scent, just like their giant Komodo cousins!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "6x3x3 ft+ enclosure", low: 300, high: 600 },
-        { item: "Deep substrate (12 in+ sandy soil mix)", low: 80, high: 150 },
-        { item: "High-wattage basking bulb + fixture", low: 30, high: 60 },
-        { item: "Quality thermostat", low: 40, high: 70 },
-        { item: "Strong desert UVB (T5 HO Arcadia Dragon 12%)", low: 70, high: 110 },
-        { item: "Infrared thermometer gun", low: 25, high: 40 },
-        { item: "Cork bark and rock structures", low: 40, high: 80 },
-        { item: "Water dish", low: 10, high: 20 },
-      ],
-      annual: [
-        { item: "Large insect variety", low: 200, high: 350 },
-        { item: "Calcium and multivitamin supplements", low: 25, high: 35 },
-        { item: "UVB bulb replacement", low: 70, high: 110 },
-        { item: "Electricity (high-wattage basking)", low: 100, high: 180 },
-        { item: "Annual vet wellness check", low: 60, high: 100 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Quarantine, hygiene, the thermostat probe and the
+    // power-outage line cite the shared reptile guides in the sidebar's
+    // Health and More list. Reconciled 2026-09-15 after the ackie monitor
+    // set test (docs/READER_REVIEWS.md). Difficulty follows the
+    // encyclopedia entry, which the same pass moved from Advanced to
+    // Intermediate: ReptiFiles rates the species Intermediate and the
+    // handling guide already said so, leaving the encyclopedia and the
+    // old hub as the only two pages claiming Advanced.
+    //
+    // The old hub disagreed with the setup and cost guides on almost every
+    // number it carried, and all of them are gone rather than moved: the
+    // enclosure (6x3x3 ft for a pair, against ReptiFiles' 5 by 2.5 by 4 feet
+    // for one adult, which is the setup guide's figure), the basking surface
+    // (120 to 150°F in two rows and 130 to 150°F in a third, against 130 to
+    // 170), the cool side (80 to 85°F against 75 to 80), and five prices
+    // that each differed from the cost guide's table: UVB, the basking bulb,
+    // the substrate, the enclosure, and the thermometer gun.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Legal", value: "41 of the 52 jurisdictions place no restriction on it at all. The four places it is unavailable, Washington DC, Hawaii, New York City and New Mexico, are not reacting to this species so much as to lizards or monitors in general, and New Jersey, Rhode Island and Maine want a permit.", source: "ackie-monitor-legal-guide" },
+        { label: "Day one", value: "Quarantine any new ackie until it's cleared two separate clean fecal checks before introducing it to an established collection, and maintain good general hygiene.", source: "ackie-monitor-health-issues-guide" },
+        { label: "Enclosure", value: "ReptiFiles recommends 5 feet long by 2.5 feet wide by 4 feet tall as the minimum for a single adult, larger than the older 4x2x2 foot standard often quoted for this species. The reason is directly tied to how active ackies actually are: this isn't an animal that thrives in a modest footprint the way a more sedentary lizard might.", source: "ackie-monitor-tank-setup-guide" },
+        { label: "Basking surface", value: "Roughly 130 to 170°F, measured directly on the basking stone or stack with an infrared thermometer, not air temperature. A reading below about 130°F is too cool for this species to properly synthesize vitamin D. Most keepers under-provide heat rather than over-provide it, so erring toward the hotter end is usually the safer mistake.", source: "ackie-monitor-tank-setup-guide" },
+        { label: "Cool side", value: "Around 75 to 80°F, giving a real thermal gradient across the enclosure.", source: "ackie-monitor-tank-setup-guide" },
+        { label: "Thermostat probe", value: "The probe reads at the animal's level, not up in the airspace near the fixture. For an overhead source, follow your controller's own instruction and confirm the result with independent checks.", source: "reptile-heating-thermostats-guide" },
+        { label: "Retes stack", value: "Stacked shelves or tiles positioned under the basking lamp let your ackie choose its exact preferred basking spot along a genuine temperature gradient, rather than being stuck with one uniform hot zone. Combined with the substrate dam, this is what separates an adequate setup from a good one.", source: "ackie-monitor-tank-setup-guide" },
+        { label: "Substrate", value: "12 to 24 inches of a soil and sand mix that holds a proper burrow, contained with a substrate dam tall enough to hold that depth. Avoid shallow bark-only setups or dry, pure sand, both of which collapse and fail to support the burrowing this species relies on. Budget for multiple bags rather than assuming a single one will cover it.", source: "ackie-monitor-tank-setup-guide" },
+        { label: "Why depth, really", value: "Ackies are obligate burrowers that construct extensive tunnel systems, and depth is the single largest housing choice you make for them. A shallow layer is bedding, not a burrow. A separate damper dig zone lets them excavate humid tunnels without keeping the whole arid enclosure wet.", source: "ackie-monitor-enrichment-guide" },
+        { label: "Humidity", value: "Ackies need both dry and humid zones, and most of the moisture should live underground rather than in the air. That is exactly why deep, moisture-holding substrate matters so much: it is doing real thermoregulatory and hydration work, not just providing digging material.", source: "ackie-monitor-tank-setup-guide" },
+        { label: "UVB", value: "A T5 HO bulb in the 12% desert range, spanning roughly half the enclosure over the basking area, replaced every 12 months. Target a basking-area UVI of 4.0 to 6.0, meaningfully higher than most other commonly kept lizards need. Bright daylight LED alongside it supports this full-sun species.", source: "ackie-monitor-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Hatchlings and juveniles up to about 6 months are fed daily and allowed to eat as much as they want. Subadults and adults eat every other day, roughly what the animal finishes within a 5 to 10 minute window rather than food left available indefinitely. Small, frequent meals are healthier here than large, occasional ones.", source: "ackie-monitor-feeding-guide" },
+        { label: "Staple food", value: "Well-gutloaded insects: black soldier fly larvae, crickets, discoid roaches, dubia roaches, grasshoppers, and silkworms. Mealworms and superworms are occasional additions rather than the base, being higher in fat with harder exoskeletons. Size prey to roughly the width of the ackie's head, not bigger.", source: "ackie-monitor-feeding-guide" },
+        { label: "Not rodents", value: "Don't make rodents a dietary staple. Mice and rats are calorie-dense, and a rodent-heavy diet is directly linked to the fatty liver disease that shortens more captive monitor lifespans than almost anything else. Eggs, quail chicks, and young mice or rats are fine as occasional treats, genuinely sparingly.", source: "ackie-monitor-feeding-guide" },
+        { label: "Supplements", value: "Lightly dust most insect feeders with a reptile calcium powder at each feeding, skipping isopods and hornworms since they're already calcium-rich. Use a multivitamin containing true vitamin A, not just beta-carotene, occasionally rather than on a fixed weekly schedule, since over-supplementing is a real risk here.", source: "ackie-monitor-feeding-guide" },
+        { label: "Gut-load first", value: "Gutload every feeder insect at least 24 hours before offering it, since what the insect ate is most of what the ackie gets out of it.", source: "ackie-monitor-feeding-guide" },
+        { label: "Weigh it weekly", value: "Ackies are naturally so active that they burn far more energy in the wild than most captive setups allow for, and combined with their strong food motivation that creates real overfeeding risk. Reduce feeding frequency and amount, provide a genuinely large enclosure, and weigh the monitor weekly with a kitchen scale to track trends.", source: "ackie-monitor-health-issues-guide" },
+        { label: "Handling", value: "Never grab an ackie from above or chase it out of a hide, which triggers a real prey-flight response rather than building trust. Let the monitor voluntarily climb onto you instead, and use tong-feeding as the main bonding tool. Tame ackies become interactive over time, but they're fast and can scratch or nip if startled.", source: "ackie-monitor-handling-guide" },
+        { label: "Enrichment", value: "Substrate deep enough for a real burrow system first, then enclosure footprint and height since this is an active forager, then puzzle and extraction feeding, then a separate humid dig zone, then climbing structure and rock stacks.", source: "ackie-monitor-enrichment-guide" },
+        { label: "Why puzzles work here", value: "Eight juvenile black-throated monitors were presented with a transparent tube containing food. All eight worked out how to open it within ten minutes, on the first trial. Those are Varanus albigularis results and the ackie is Varanus acanthurus, so this is genus-level evidence: what transfers is that varanids solve novel food problems fast.", source: "ackie-monitor-enrichment-guide" },
+        { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the lizard out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Budget", value: "$150 to $450 for the monitor, with red ackies at the top of that. Setup runs $800 to $1,500 or more, and upkeep roughly $40 to $80 a month, most of it feeder insects and electricity for the high-wattage basking bulbs.", source: "ackie-monitor-cost-guide" },
+        { label: "Adult size", value: "Around 2 feet (0.6 m) typical, reported from 17.3 inches (44 cm) to 30 inches (76 cm)." },
+        { label: "Lifespan", value: "15 to 20 years with proper housing and care. That is a long-term commitment layered on a demanding setup, worth weighing both factors together rather than focusing on the animal's relatively modest purchase price.", source: "ackie-monitor-cost-guide" },
       ],
     },
-    sections: {
-      housing: `A 6x3x3 ft enclosure is the minimum for a pair of ackie monitors - and ackies do well and often prefer living in bonded pairs or trios when raised together. Single animals can be kept in slightly smaller spaces but will benefit from the larger footprint for activity and thermal gradient establishment.
-
-The deep substrate is the defining feature of an ackie monitor setup. A minimum of 12 inches of a sandy soil mixture (60% organic topsoil, 40% playsand is a common ratio) must be provided. Ackies are native to the arid rocky outcrops of western and central Australia and spend large portions of their time burrowing to thermoregulate. Burrowing is not optional behavior - it is essential for health and wellbeing.
-
-The basking spot temperature is the most critical parameter: 120 to 150 degrees F at the surface directly under the basking light. This sounds extreme because it is - ackie monitors require these temperatures to fully thermoregulate, activate their immune system, and digest prey efficiently. Without adequate basking temperatures, even an otherwise well-kept ackie will show chronic health problems, poor growth, and reduced lifespan. Use high-wattage halogen or flood bulbs and verify surface temperatures with an infrared temperature gun.
-
-Strong desert UVB (T5 HO Arcadia Dragon 12% or equivalent) on a 10 to 12 hour cycle is mandatory. The cool side of the enclosure should be 80 to 85 degrees F ambient. Humidity in the burrow area (achieved by allowing one section of the substrate to stay slightly more moist than the rest) should be 40 to 60%.`,
-      diet: `Ackie monitors are primarily insectivorous in the wild, and their captive diet should reflect this. Large dubia roaches, crickets, superworms, hornworms, and silkworms form the core of a balanced diet. Gut-load all insects 24 to 48 hours before feeding - the nutritional quality of a gut-loaded insect versus an empty one is dramatically different.
-
-Adult ackies can be offered occasional pinky or fuzzy mice as a protein supplement - not as a staple. Whole prey items offer nutritional completeness when used judiciously. Eggs (quail or scrambled chicken eggs) are another excellent nutritional supplement offered occasionally.
-
-Feed juveniles daily with as many insects as they will actively pursue and eat. Adults eat 3 to 5 times per week. Reduce feeding frequency if the animal is becoming visibly obese (fat deposits around the neck, limbs, and tail base). Dust prey with calcium w/D3 and a reptile multivitamin on a consistent schedule.
-
-Fresh water in a shallow dish must always be available. Many ackies will soak in their water dish, which supports hydration and shedding. Replace the water daily.`,
-      enrichment: `The deep substrate is the most important enrichment - ackies spend significant time excavating burrow systems that can extend 12 to 24 inches underground. Providing adequate substrate depth allows this natural behavior. Watching an ackie monitor engineer a complex burrow system is one of the most impressive behaviors in the reptile hobby.
-
-Add rock structures (securely stacked so they cannot topple and crush the monitor), cork bark pieces at the surface for additional hiding and temperature regulation spots, and branches for climbing. Ackies are more terrestrial than truly arboreal but will use low branches and rock edges frequently.
-
-Foraging enrichment dramatically improves quality of life for intelligent monitor lizards. Hide insects in the substrate, under rocks, and inside cork bark. Vary feeding locations. Offer live insects that require pursuit. Ackies in enriched environments with foraging opportunities show dramatically more natural, active behavior than those fed in predictable ways.
-
-Young ackies can be fast and defensive and may bite. Consistent, patient handling from a young age produces remarkably tame animals. Adults often become confident and genuinely interactive, approaching their keepers and exploring hands voluntarily.`,
-      health: `Inadequate basking temperature is the most common and most serious husbandry failure in ackie monitors. An ackie that cannot reach 130 to 150 degrees F at the basking surface cannot fully activate its immune system, cannot adequately digest food, and cannot thermoregulate its core body temperature. This leads to chronic immune suppression, poor growth, repeated infections, and a significantly shortened lifespan. Invest in high-quality, high-wattage bulbs and verify temperatures regularly.
-
-Metabolic Bone Disease (MBD) from inadequate UVB or calcium supplementation presents as weak, trembling limbs, rubber jaw, difficulty climbing, and lethargy. Strong UVB and consistent supplementation prevent it.
-
-Parasites - particularly pentastomids (tongue worms) in wild-caught animals - are a significant concern. Source captive-bred animals from reputable breeders whenever possible. Wild-caught ackies frequently carry heavy parasite loads that require veterinary treatment. Annual fecal exams are recommended for all monitors.
-
-Respiratory infections and scale rot can occur if humidity and temperatures are incorrect. Always have a reptile veterinarian with monitor experience identified before acquiring an ackie. These are rewarding but high-maintenance animals that deserve expert veterinary care.`,
-      checklist: ["6x3x3 ft+ enclosure", "Deep substrate (12 inch+ sandy soil mix)", "High-wattage basking bulb (120 to 150 degrees F surface)", "Quality thermostat", "Strong desert UVB (T5 HO Arcadia Dragon 12%)", "Digital thermometer (IR gun recommended)", "Calcium w/D3 + multivitamin", "Large insect variety", "Cork bark and rock structures", "Water dish + humid microhabitat area"],
+    emergencyCard: {
+      source: "ackie-monitor-health-issues-guide",
+      callNow: [
+        "Swollen limbs, soft or malformed bones, lethargy, and difficulty moving normally (metabolic bone disease). Always see a vet. ReptiFiles describes this plainly as a highly preventable disease of neglect, one a properly kept ackie should never develop",
+        "Decreased appetite, lethargy, weight loss, and irregular stool (internal or external parasites). See a vet for diagnosis and treatment",
+        "Impaction, which can become a genuine emergency if severe, linked to inappropriate substrate ingestion or temperatures too low to support proper digestion",
+        "Respiratory infection, linked to incorrect temperature or humidity. Always see a vet",
+        "A month of feeding adjustment that produces no weight change in an overweight monitor",
+      ],
+      vetLine: "Nearly everything here comes back to building the ambitious setup this species needs. Weak or absent UVB combined with poor calcium supplementation is the direct cause of MBD, the most serious and most preventable condition on the list. An enclosure too small to support this species' natural activity level contributes directly to obesity. And getting temperature and substrate right prevents both impaction and digestive issues.",
     },
+    routes: [
+      { slug: "ackie-monitor-cost-guide", line: "$150 to $450 for the animal, red against yellow, the $800 to $1,500 setup itemized, and why the enclosure rather than the monitor is the real commitment." },
+      { slug: "ackie-monitor-tank-setup-guide", line: "ReptiFiles' 5 by 2.5 by 4 foot minimum, a basking surface hotter than almost any other pet lizard's, two feet of diggable substrate, and what a Retes stack is for." },
+      { slug: "ackie-monitor-feeding-guide", line: "Daily for juveniles and every other day after, the insect staples worth building on, why rodents are the mistake, and six reasons an ackie stops eating." },
+      { slug: "ackie-monitor-handling-guide", line: "A lizard that does backflips after crickets, tong-feeding as the bonding tool, and the body language that says stop before it bolts." },
+      { slug: "ackie-monitor-health-issues-guide", line: "MBD as a disease of neglect, obesity as the captivity-specific risk, the weekly kitchen scale, and impaction from substrate and cold." },
+      { slug: "ackie-monitor-enrichment-guide", line: "Eight of eight monitors opening a puzzle tube in ten minutes on the first try, what that evidence does and does not cover, and the burrow depth that outranks it." },
+      { slug: "ackie-monitor-legal-guide", line: "Legal in 41 of 52 jurisdictions, the four places no lizard or no monitor qualifies, and the Colorado latitude clause the ackie's range sits right on." },
+    ],
+    buyList: [
+      "A 5 by 2.5 by 4 foot enclosure at minimum, custom or PVC",
+      "Substrate dam tall enough to hold the depth",
+      "12 to 24 inches of soil and sand mix",
+      "Multiple high-wattage basking bulbs and fixtures",
+      "Thermostat",
+      "Infrared thermometer gun",
+      "T5 HO UVB in the 12% desert range",
+      "Bright daylight LED",
+      "Retes stack, shelves or tiles",
+      "Hides and rock stacks",
+      "A separate humid dig zone",
+      "Gut-loaded feeder insects, or a roach colony",
+      "Reptile calcium powder",
+      "A multivitamin with true vitamin A",
+      "Kitchen scale for weekly weights",
+      "Extraction puzzle feeder",
+      "Clicker and target stick",
+    ],
     faqs: [
-      { q: "How hot does an ackie monitor's basking spot need to be?", a: "120 to 150 degrees F at the basking surface, measured with an infrared temperature gun. This is the most critical parameter in ackie monitor care and the most commonly failed. Without adequate basking temperatures, ackies cannot fully thermoregulate, digest food, or activate their immune systems - leading to chronic health problems. High-wattage halogen or flood bulbs achieve these temperatures effectively." },
-      { q: "Can ackie monitors be kept in pairs or groups?", a: "Yes - ackies often do well and sometimes prefer living in bonded pairs or trios when raised together from a young age. Cohab success depends on having adequate space (6x3x3 ft minimum for a pair), multiple basking sites, and deep substrate for individual burrowing. Monitor for aggression and be prepared to separate if conflict arises." },
-      { q: "What do ackie monitors eat?", a: "Primarily insects in captivity: large dubia roaches, crickets, superworms, hornworms, and silkworms are the staples. Adults can have occasional pinky or fuzzy mice as a protein supplement and quail or scrambled eggs periodically. Gut-load all insects 24 to 48 hours before feeding. Feed juveniles daily, adults 3 to 5 times per week." },
-      { q: "How big do ackie monitors get?", a: "Adults typically reach 24 to 28 inches total length - significantly smaller than most other monitor species, which is one reason ackies are popular. They are powerfully built for their size, with strong legs, sharp claws, and an active, energetic temperament. Their manageable size combined with their big personality makes them the most popular dwarf monitor in the hobby." },
-      { q: "Are ackie monitors good pets?", a: "Yes, for experienced keepers ready for their specific requirements. Ackies are intelligent, active, and become remarkably tame with patient, consistent handling from a young age - many seek out their keepers and explore hands and arms voluntarily. The key commitments are the extreme basking temperatures (verified with an IR gun), deep burrowing substrate, and a diverse insect-heavy diet." },
-      { q: "What's the difference between a red and yellow ackie monitor?", a: "They're two recognized subspecies from different parts of Australia, not just a color variant of the same animal. The Red Ackie (Varanus acanthurus acanthurus) shows deeper reddish-orange base coloring, while the Yellow Ackie (Varanus acanthurus brachyurus) runs more yellow-tan and tends to stay slightly smaller. Care requirements are identical between the two - the difference is purely cosmetic and geographic, not a husbandry consideration." },
+      { q: "What size enclosure does an ackie monitor need?", a: "ReptiFiles recommends 5 feet long by 2.5 feet wide by 4 feet tall as the minimum for a single adult, larger than the older 4x2x2 foot standard still quoted for the species. Ackies are genuinely active animals, and that footprint reflects it." },
+      { q: "Can I feed my ackie monitor mice or rats?", a: "Only as an occasional treat, genuinely sparingly. Rodents are calorie-dense, and a rodent-heavy diet is directly linked to fatty liver disease, which shortens more captive monitor lifespans than almost anything else. Build the diet on gutloaded insects instead." },
+      { q: "Why are ackie monitors prone to obesity in captivity?", a: "They're naturally so active that they burn far more energy in the wild than most captive setups allow for. Combine that with strong food motivation and free-feeding an adult the way you would a juvenile, and weight gain follows. A large enclosure and a weekly weigh-in do most of the preventive work." },
     ],
   },
   {

@@ -1,14 +1,14 @@
 export const lizardEncyclopedia = [
   {
     id: "ackie-monitor", name: "Ackie Monitor", scientific: "Varanus acanthurus",
-    category: "Lizards", emoji: "🦎", difficulty: "Advanced", guideId: "ackie-monitor", available: true, image: "/assets/guides/ackie-monitor.jpg",
+    category: "Lizards", emoji: "🦎", difficulty: "Intermediate", guideId: "ackie-monitor", available: true, image: "/assets/guides/ackie-monitor.jpg",
     bio: {
       overview: "The ackie monitor (ridge-tailed monitor) is a small, active monitor lizard native to the rocky arid regions of northwestern and central Australia. Despite being a \"dwarf\" member of the Varanus genus - which includes the massive Komodo dragon - ackies exhibit the same intelligence and prey drive as their larger relatives. They use their spiny, whip-like tails to wedge themselves into rock crevices when threatened.",
       origin: "Northwestern and central Australia",
       habitat: "Rocky desert, arid scrubland, and spinifex grassland",
-      adultSize: "18-28 inches (45-70 cm) including tail",
+      adultSize: "Around 2 feet (0.6 m) typical, reported from 17.3 inches (44 cm) to 30 inches (76 cm)",
       wildDiet: "Insects, spiders, scorpions, small lizards, and eggs",
-      wildLifespan: "15-20 years",
+      wildLifespan: "Not well documented in the wild; the widely quoted 15 to 20 years is a captive-care figure",
       conservation: "Least Concern (IUCN)",
       history: "George Albert Boulenger described the species in 1885 in the second volume of his catalogue of the lizards held by the British Museum, naming all three currently recognized subspecies in the same work. Australia banned the commercial export of live native animals in 1982, so nothing has legally left the country for the trade since, and foreign stock descends from a small pool of earlier founders. The species turned out to breed freely in captivity, with clutches of up to 18 eggs, and that output is what carried it from specialist rarity to a fixture of the reptile hobby. Ridge-tailed monitors nevertheless remain among the Australian reptiles most often found for sale on overseas websites, which keeps smuggling out of Australia a live enforcement problem.",
     },

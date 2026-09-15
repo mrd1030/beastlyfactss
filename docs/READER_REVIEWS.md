@@ -10713,3 +10713,107 @@ set already cites on three pages.
   healthy animal at purchase; and what to do once a gecko is loose in the
   house, which every page tells you to prevent and none tells you to
   solve.
+
+## Ackie Monitor (2026-09-15, batch J, single pass, before the router hub)
+
+Extractor set of nine pages. One Opus 5 agent. Ackie monitor was picked
+for batch J because savannah monitor from batch I points at it from two
+pages, and because the ackie enrichment guide is where savannah borrows
+its genus-level problem-solving evidence from, which meant batch I's
+reasoning rested on a page nobody had read yet.
+
+Set grade: B-. "The deep dives are genuinely good and the hub in front of
+them is wrong on size, heat, substrate, supplements and difficulty."
+Legal A, handling A-, tank setup A-, feeding A-, enrichment B+, cost B,
+health B, encyclopedia B-, hub C-.
+
+### Numbers checker
+
+`check-species-numbers ackie-monitor --strict` before the rebuild, 81
+sentences with numbers across 38 groups. The hub disagreed with a deep
+dive on nearly every figure it carried, and all of them are gone rather
+than moved:
+
+- Enclosure. Hub: "A 6x3x3 ft enclosure is the minimum for a pair." Tank
+  setup: "5 feet long by 2.5 feet wide by 4 feet tall as the minimum for a
+  single adult." The reader: "The hub's pair minimum is smaller in height
+  than the deep dive's single-animal minimum."
+- Basking, three ranges across two pages that both call it the single most
+  important number. Hub housing: "120 to 150 degrees F at the surface."
+  Hub health, same page: "cannot reach 130 to 150 degrees F." Tank setup:
+  "roughly 130 to 170°F."
+- Cool side. Hub: "80 to 85 degrees F ambient." Tank setup: "around 75 to
+  80°F."
+- Substrate. Hub: "A minimum of 12 inches." Tank setup: "12 to 24 inches."
+  The hub's own enrichment text said burrows run 12 to 24 inches
+  underground, so its minimum could not hold the burrow it described.
+- Supplements. Hub: "calcium w/D3 and a reptile multivitamin on a
+  consistent schedule." Feeding: a multivitamin "occasionally rather than
+  on a fixed weekly schedule, over-supplementing vitamins is a real risk."
+- Rodents. Hub: "Whole prey items offer nutritional completeness when used
+  judiciously." Feeding: "a rodent-heavy diet is directly linked to the
+  fatty liver disease that shortens more captive monitor lifespans than
+  almost anything else."
+- Five prices, each differing from the cost guide's own table.
+- Cohabitation. The hub pushed pairs and trios in three places. No deep
+  dive mentions cohabitation at all, and the setup guide sizes for one
+  animal. Gone with no replacement, and now on the not-covered list.
+
+### Difficulty, settled against the encyclopedia
+
+Three verdicts across the set: hub and encyclopedia "Advanced", handling
+guide "classed as an intermediate reptile rather than a true beginner
+one", legal guide "commonly recommended for a first-time keeper".
+
+RULES says the hub's difficulty is the encyclopedia entry's, but here the
+encyclopedia was the outlier. ReptiFiles, the source behind five of this
+set's seven deep dives, rates the species Intermediate, which is what the
+handling guide already said. So the encyclopedia field moved to
+Intermediate and the hub follows it, rather than the hub following a
+field no source supports. The legal guide's beginner phrasing is now
+"the monitor lizard most often recommended to someone keeping their first
+one", which is what it was actually describing.
+
+### Encyclopedia
+
+Two more fields, both researched against ReptiFiles' care guide.
+
+- adultSize was "18-28 inches (45-70 cm) including tail" against the hub
+  FAQ's 24 to 28 and the legal guide's "tops out around two feet."
+  ReptiFiles: "adult ackies are typically around 2'/0.6m long, but they
+  have been reported as small as 17.3"/44cm and as large as 30"/76cm."
+  The field now carries the typical and the reported extremes, and "tops
+  out around two feet" became "runs around two feet", since two feet is
+  the typical rather than the ceiling.
+- wildLifespan was "15-20 years", the ninth captive figure found in the
+  wild field across batches G through J. Searching turned up no wild
+  figure from a source worth citing, so the field now says the quoted
+  range is a captive-care one.
+
+### Deep-dive fixes
+
+- The ambient humidity figure. The reader flagged that only the hub had
+  one, 40 to 60%, and it was unsourced, so a rebuild would have lost the
+  number entirely. ReptiFiles' humidity page gives "average ambient
+  humidity levels between 20-50%" with burrow humidity "80% or higher",
+  and notes that "substrate moisture content is generally more important
+  than ambient humidity", which is the argument the setup guide was
+  already making without a number attached. Added to the body and as a
+  new FAQ, with the source.
+- The affiliate template fragment, "Other quantities are available and a
+  proper depth needs several." Cut. This was one of the two the batch was
+  picked to clear.
+- Four of the reader's eight link asks added, at the sibling-link cap of
+  one per article.
+
+### Open
+
+- The six things not covered anywhere, in docs/READER_LOG.md. Two are
+  sharper than the rest. Cohabitation: the old hub advocated pairs and
+  trios in three places with nothing under it, so removing it leaves a
+  real question unanswered rather than a claim corrected. And a target
+  adult weight, since the health guide asks for a weekly kitchen-scale
+  weigh-in and no page says what the number should be trending toward.
+- Also open: choosing a breeder and checking the animal at pickup,
+  interim housing for a hatchling that cannot fill a 5x2.5x4 yet, sexing,
+  and maintenance of 12 to 24 inches of substrate.
