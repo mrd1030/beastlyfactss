@@ -9961,11 +9961,13 @@ on the tail reserve, is sourced and stands on its own.
 
 ### Links
 
-Two of the reader's eight. One was skipped on a rule: the handling
-guide's humidity sentence sits in a closing paragraph that already
-carries two cross-species links, and a third trips `closer-dump`, the
-rule against a closing paragraph that is a link library. The feeding and
-health links reach the same page.
+Three of the reader's eight (feeding and health to the tank setup guide,
+tank setup to the health guide on impaction). One was skipped on a
+rule: the handling guide's humidity sentence sits in a closing paragraph
+that already carries two cross-species links, and a third trips
+`closer-dump`, the rule against a closing paragraph that is a link
+library. Corrected from "two" by the species check, which counted the
+diff.
 
 ### Open
 
@@ -10124,9 +10126,10 @@ with the cost tables.
   primary paper, Evidence of mood states in reptiles (Animal Cognition,
   doi 10.1007/s10071-025-01973-y), now sits above the phys.org summary
   in Sources.
-- Three of the reader's link asks added: health to tank setup on "raise
+- Four of the reader's link asks added: health to tank setup on "raise
   humidity and warmth," handling and cost to tank setup on the substrate
-  mismatch and on floor space, feeding to health on pyramiding.
+  mismatch and on floor space, feeding to health on pyramiding. (The
+  species check corrected this line from "three"; it listed four.)
 
 The reader's second requested change, in-body links from the health
 guide to both the tank setup and feeding guides, is half done on
@@ -10369,3 +10372,191 @@ blamed for killing the species on my shopping list."
   "Finished it, fast, because it is thin. It names four problems and says
   see a vet." It is the page that should carry body condition numbers for
   this species and instead links out to a general one.
+
+## African fat-tail, corydoras catfish, red-footed tortoise, degu, savannah monitor (2026-09-15, batch I species check)
+
+One Fable agent covering all five species on branch
+claude/hub-pacman-frog-80291s from base e69e513, run once after every
+species was done and pushed, per the batch prompt. It read diffs rather
+than whole files, reopened the source URL behind every number the batch
+changed (PetMD on the degu cage and bar spacing, the Frontiers colony
+management paper on degu lifespan, Degutopia on the coccidiostat,
+Aquarium Co-Op on cory barbels and tank size, Cadillac Vet on fat-tail
+substrate and calcium, LafeberVet and Tree of Life Exotics on savannah
+monitor size, schedule and supplements, Tree of Life on the fat-tail
+schedule, Wikipedia for the Osteogaster revision), fixed every finding
+on the branch, and committed "African fat-tail, corydoras catfish,
+red-footed tortoise, degu, savannah monitor: species check". Nothing
+merged.
+
+### Scope
+
+Clean apart from one stretch. The diff is the five guide entries, the
+five species' MDX plus the degu vs chinchilla piece (a same-page copy
+of the moved lifespan, allowed), this file, docs/READER_LOG.md,
+READMEFIRST.md, docs/TODO.md, three RELATED_ARTICLES lines (the three
+missing legal guides), and three encyclopedia fields, all for batch
+species and all traced to a source that was opened again here. Savannah
+monitor adultSize and wildLifespan match Tree of Life Exotics and the
+cost guide; degu wildLifespan matches the colony paper's "seldom live
+longer than 2 years in the wild" and "up to 5 to 8 years" in captivity.
+The stretch is the corydoras `scientific` field: the conflict it fixed
+was with the entry's own history paragraph, not with a deep dive, which
+is narrower than the batch prompt's grant. Kept, because the source is
+real (Dias et al. 2024, Zoological Journal of the Linnean Society, and
+Wikipedia's Osteogaster page confirms the bronze cory as Osteogaster
+aenea), the field was self-contradicting, and reverting it would put
+the contradiction back. No shared class guide row, no other src file,
+no SHORT_LABELS change needed.
+
+### Every number the batch changed, checked against its source
+
+All held. Degu cage 24x18x24 to 28x18x28 and bar spacing "an inch or
+less" to "no more than half an inch": PetMD states both verbatim. Degu
+lifespan "5 to 8, some 10 to 13" and "5 to 9, some low teens" to 5 to 8
+captive years: the peer-reviewed colony paper outranks PetMD's 5 to 9
+and states the figure. Degu setup $100 to $300 to $375 to $520: the
+table sums to $374 to $518. Fat-tail sand: Cadillac Vet gives both the
+70/30 topsoil and play sand mix and "we do not recommend keeping them on
+sand", so the feeding guide's flat ban was the wrong reading. Cory
+barbels: Aquarium Co-Op's "may be caused by other factors like poor
+water quality" is on the page, and the health guide had no Sources
+block at all, so the enrichment guide's cited reservoir claim wins.
+Savannah adult 2 to 3 feeds a week: both vet pages state it, and the
+old hub's 3 to 5 had no article behind it. Savannah size 3 to 4 feet, 8
+to 15 pounds: Tree of Life states it exactly. Red-foot growth figures
+are the handling guide's own Hepper chart, unchanged. Savannah legal
+"six" to "eleven": the table has eleven rows, five bans and six permit
+or breeder routes. The unsourced fat-tail "half the body mass" was cut,
+not replaced.
+
+### What the check found, and fixed
+
+The pattern is the one batches D, E and H were graded on and F and G
+had stopped: the router step copied source narration into hub rows,
+and this time the deep-dive fixes wrote new narration too.
+
+- Fat-tail hub: five rows carried it ("sources disagree", "most hobbyist
+  care sheets say... one veterinary clinic source", "flagged by an
+  exotics vet source", "no source gives one universal day count",
+  "care sources commonly cite... academic longevity database"), plus
+  the calcium FAQ and the feeding route line. All pre-existing in the
+  feeding and cost guides, which the batch prompt says to settle before
+  the row is written. Settled in the deep dives (both ranges kept, the
+  RULES form: state the range, say which end and why) and the rows,
+  FAQ and route now copy the settled sentences.
+- Fat-tail feeding guide: the seoDescription still said "a tail storing
+  nearly half its body mass" after the excerpt, FAQ and body lost the
+  claim, the same frontmatter-copy miss batch F named. Rewritten to 156
+  characters. The feeding guide's new sand sentence linked "the
+  topsoil-and-sand mix the setup guide builds on", a sentence about the
+  site; now "a topsoil-and-sand mix".
+- Fat-tail emergency card: the health guide's retained-shed line ("see
+  a vet if constriction or tissue death has already started") was not
+  on the card, and the impaction bullet had dropped "lethargy" from the
+  guide's list. Both added; six bullets now.
+- Corydoras health guide: the batch's hedge fix named its source in the
+  body and in a FAQ ("Aquarium Co-Op's position is that...") and quoted
+  it, then copied that into the hub row. Rewritten in the site's words
+  in both FAQs, the body and the row, and Aquarium Co-Op added as the
+  guide's first Sources entry, since the claim now rests on it. The
+  closing "Husbandry Pattern" paragraph still carried the old confident
+  mechanism ("sharp substrate combined with elevated nitrates causes")
+  as a same-page copy; brought to the hedged version.
+- Corydoras emergency card: fifth bullet ("constant dashing to the
+  surface") was written from the enrichment guide, not copied from the
+  health guide. Removed; the "Surface dashes" row still carries it.
+- Red-foot hub: the Diet row named PetMD, the UVB row narrated "most
+  detailed care sheets... some UVB researchers", the Lifespan row and
+  FAQ said "some care sheets putting", and two route lines described
+  the disagreement ("two camps disagree on", "how care sheets divide").
+  All copied from the feeding, tank setup and cost guides, so those
+  three sentences were rewritten to state the figures (the PetMD inline
+  link went; PetMD stays in Sources) and the rows, FAQ and routes copy
+  them. The feeding guide's new "which most individuals reach close to
+  within 5 to 10 years" was garbled; now "come close to within". The
+  vetLine's "Find a vet with chelonian experience" had hardened the cost
+  guide's "worth finding"; hedge restored. Cost route line "$150 to $900
+  for the tortoise" merged the hatchling and adult ranges; split.
+- Degu: the moved RSPCA content arrived with its name attached in
+  seven places across the tank setup, feeding and health guides ("per
+  PetMD", "The RSPCA asks for", "The RSPCA is direct that", "The RSPCA
+  puts it as", "The RSPCA treats this as", a heading "Two More on the
+  RSPCA's List", "sit on the RSPCA's list"), plus "despite what this
+  guide is filed under" and "which degu keepers are consistently warned
+  against", and six hub rows, the vetLine and a route line copied it.
+  All rewritten to state the fact; the RSPCA pages are in each guide's
+  Sources. The vs chinchilla FAQ had gained "A chinchilla bought for a
+  ten-year-old can still be alive when that child finishes college",
+  growth the prompt did not ask for; cut, and "Expect" softened back to
+  "typically". The enrichment guide's "and other sizes are available"
+  fragment, the same template leftover savannah monitor was picked to
+  clear, cut.
+- Savannah monitor: the new Diet Basics section opened with "There is
+  no separate feeding guide for this species yet... so the essentials
+  sit here" (the site talking about itself) and named LafeberVet and
+  Tree of Life five times, one of them a near-quote; four hub rows
+  copied it. Rewritten to state the diet, schedule and 2:1 ratio; both
+  pages are in the new Sources block. The Stop signals row and the
+  handling sentence it copies lost "LafeberVet's instruction". Cost
+  route line split into the juvenile and adult ranges. Emergency card:
+  fifth bullet (the bite, from the handling guide) was not on the
+  health guide's list; removed, the handling guide keeps it.
+- Degu cost seoDescription was 140 characters, under the 150 floor,
+  before and after the batch's edit; now 157.
+
+Left alone, and named: the savannah monitor handling guide narrates
+LafeberVet and Tree of Life in six more sentences that no hub row
+copies, all pre-existing; the red-foot Fruit row's "commonly cited at";
+the fat-tail cost guide names AnAge, where the recorded maximum is the
+database's own fact. None of these came from the batch.
+
+### Review file
+
+Each species has its first-pass section. Two counts did not match the
+diff and are corrected in place above: fat-tail said two links were
+added (three were), red-foot said three (it listed four). Corydoras'
+raw reader output is not in docs/READER_LOG.md (the other four are),
+and none of the five sections carries the "Numbers checker" subsection
+the batch prompt asks for (batch H's do), nor an "Encyclopedia"
+subsection for the three entries changed; the encyclopedia changes are
+described in prose instead. Four of the five sections give grades in
+one prose line rather than the leopard gecko grade table. Every stated
+fix was checked against the diff and every one is in it; unlike batch
+H, nothing was claimed that did not happen. The corydoras reader
+output is the one thing the batch session must file itself.
+
+### Gates on the branch head
+
+check-internal-links, check-related-articles, check-affiliate-mdx,
+check-cost-coverage, check-seo-tags, check-voice --strict (0 errors)
+and `npx eslint . --quiet` all pass. check-species-numbers for all five:
+every line marked hub matches a deep dive; the strict exit still reports
+advisory groups (a cost table's product size against a setup minimum,
+hatchling against adult price, and the encyclopedia adult-size rows the
+hub carries with no source), none of them a hub-versus-deep-dive
+disagreement. check-voice per changed slug: one warning each, same as
+at the base commit.
+
+### Verdicts
+
+African fat-tail: fixed on the branch. Corydoras catfish: fixed on the
+branch, with the raw reader output still to be pasted into
+docs/READER_LOG.md by the batch session. Red-footed tortoise: fixed on
+the branch. Degu: fixed on the branch. Savannah monitor: fixed on the
+branch. No redo.
+
+### Pass grade: B-
+
+Every number the batch changed was researched for real and went the
+right way, the three legal guides that were missing from
+RELATED_ARTICLES were caught, and the review file describes fixes that
+actually happened. Against that, the batch put source names and source
+narration into hub rows on all five species and into the deep dives on
+three of them, which is the single defect the Fable check was
+reinstated to catch and which batches F and G had already shown is
+avoidable; it wrote two emergency-card bullets instead of copying them,
+left a frontmatter copy of a retired claim behind again, folded the
+reader-review and reader-fixes commits into the hub commit with no
+before-and-after sentence list, and filed no Numbers checker subsection
+and no corydoras raw output.
