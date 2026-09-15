@@ -539,21 +539,50 @@ for the first time, which is how that surfaced, so expect one real
 deep-dive contradiction per batch rather than treating the hub as the
 only thing being fixed.
 
-Batch G merged to main 2026-09-14. That makes 41 router hubs; the 67
-still on the legacy care sheet are listed by class in docs/TODO.md,
-section 7, dogs and cats last.
+Batch G merged to main 2026-09-14. That makes 46 router hubs after
+batch H; the 62 still on the legacy care sheet are listed by class in
+docs/TODO.md, section 7, dogs and cats last.
 
-Next up is batch H: cardinal tetra, milk snake, gargoyle gecko, gerbil,
-sulcata tortoise (fish, snake, gecko, small mammal, turtle). One per
-class, and three of the five are cross-linked by work that just merged,
-the same reasoning that put canary first in batch G: the neon tetra set
-cross-links cardinal tetra, the California kingsnake set names milk
-snake repeatedly, and the hedgehog set points at sulcata tortoise four
-times. Cardinal tetra goes first for a second reason: its hub carries a
-misspelled parasite, "Pleistophora hyphessobrycetis", flagged during
-batch F and left because the species was out of scope then. Paste this
-with the next five species filled in when picking up the batch after
-that.
+Batch H (cardinal tetra, milk snake, gargoyle gecko, gerbil, sulcata
+tortoise), spanning fish, snake, gecko, small mammal and turtle, done
+and checked 2026-09-14 and merged to main 2026-09-15. Five router hubs,
+one reader pass per species, one Fable check. Pass grade B-.
+
+Three findings worth carrying into the next batch:
+
+The gargoyle gecko tank setup guide was built around a thesis all three
+of its own cited sources reject. It was titled "A Cool-Climate Species
+That Doesn't Want Your Heat Lamp" and said most homes need no heat at
+all; ReptiFiles, The Bio Dude and Reptiles Magazine all describe a
+gradient, and two of the three name the no-heat belief as a
+misconception outright. Read a guide's own Sources against its thesis,
+not just its numbers: this one had drifted at the level of the argument.
+
+Gerbil reversed the hub-loses default for the first time. The old hub
+was the only page citing Merck, a reader graded it A-, and on protein,
+fat, portion, humidity, lifespan and tail degloving it was right while
+the deep dives had drifted. The rule is still that a hub keeps no figure
+of its own, but when the hub is the page carrying the better source, the
+figure moves into the deep dive first and the row copies it from there.
+Do not assume the deep dive wins before checking which page cites what.
+
+Sulcata's setup guide gave brumation advice for a species our own shared
+tortoise brumation guide lists, on the Royal Veterinary College's
+authority, as one that must never hibernate. A deep dive can contradict
+a shared class guide, not just a sibling, and nothing checks that
+automatically.
+
+What the check caught that the process has named before: ten files
+changed a number with no date bump, three hubs routed a vs piece, source
+names went into hub rows and body prose on four of five species after
+batches F and G had stopped that, two emergency cards carried written
+rather than copied bullets, and the review file described two fixes that
+the diff did not actually contain. Step 4 of the batch prompt exists to
+catch exactly that and did not.
+
+Batch I is not picked yet. The 62 species still on the legacy care sheet
+are listed by class in docs/TODO.md, section 7, dogs and cats last.
+Paste the prompt below with the next five species filled in.
 
 ```
 Read READMEFIRST.md, CLAUDE.md, docs/RULES.md (all of it, then the Hubs

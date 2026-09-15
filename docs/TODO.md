@@ -391,15 +391,12 @@ share a silhouette. That is roughly 25 species, about 175 images.
 ## 7. Router hubs, species by species
 
 Checked 2026-09-14 against `src/lib/data/guides/*.js`: a hub is a router hub
-when its entry carries `firstWeek` rows (RULES, Hubs). 41 of 108 done, 67
+when its entry carries `firstWeek` rows (RULES, Hubs). 46 of 108 done, 62
 still rendering the legacy care sheet. Batches of five, one branch each,
 per the READMEFIRST process. Dogs and cats last.
-Next: batch H, cardinal tetra, milk snake, gargoyle gecko, gerbil,
-sulcata tortoise, one per class. Three of the five are cross-linked by
-batch G, and the cardinal tetra hub carries a misspelled parasite name
-flagged in batch F and left out of scope then. Worker Opus 5 high
-effort, one Fable closing check per batch (the batch prompt in
-READMEFIRST has the reasoning).
+Next: batch I, not yet picked. Worker Opus 5 high effort, one Fable
+closing check per batch (the batch prompt in READMEFIRST has the
+reasoning).
 
 Done (31):
 
@@ -416,23 +413,24 @@ Done (31):
       (batch F, merged to main 2026-09-14)
 - [x] canary, neon tetra, veiled chameleon, California kingsnake, hedgehog
       (batch G, merged to main 2026-09-14)
+- [x] cardinal tetra, milk snake, gargoyle gecko, gerbil, sulcata tortoise
+      (batch H, merged to main 2026-09-15)
 
-To do (67):
+To do (62):
 
 - [ ] Amphibians (2): fire-bellied toad, tiger salamander
 - [ ] Birds (2): parrotlet, quaker parakeet
-- [ ] Fish (10): bristlenose pleco, cardinal tetra, corydoras catfish,
-      discus, koi, molly, oscar, platy, swordtail, zebra danio
-- [ ] Geckos (4): African fat-tail, gargoyle gecko, leaf-tailed gecko,
-      mourning gecko
+- [ ] Fish (9): bristlenose pleco, corydoras catfish, discus, koi, molly,
+      oscar, platy, swordtail, zebra danio
+- [ ] Geckos (3): African fat-tail, leaf-tailed gecko, mourning gecko
 - [ ] Invertebrates (9): amano shrimp, cherry shrimp, ghost shrimp, emperor
       scorpion, giant millipede, jumping spider, hissing cockroach, praying
       mantis, stick insect
 - [ ] Lizards (7): ackie monitor, Argentine tegu, fire skink, green anole,
       Jackson's chameleon, savannah monitor, uromastyx
-- [ ] Small mammals (4): degu, mouse, flying squirrel, gerbil
-- [ ] Snakes (3): garter snake, milk snake, rosy boa
-- [ ] Turtles (2): red-footed tortoise, sulcata tortoise
+- [ ] Small mammals (3): degu, mouse, flying squirrel
+- [ ] Snakes (2): garter snake, rosy boa
+- [ ] Turtles (1): red-footed tortoise
 - [ ] Cats (10): universal, American shorthair, Bengal, domestic shorthair,
       Maine Coon, Persian, Ragdoll, Scottish Fold, Siamese, Sphynx
 - [ ] Dogs (14): universal, small breed, medium breed, large breed, beagle,
