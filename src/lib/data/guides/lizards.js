@@ -3,69 +3,104 @@ export const lizardGuides = [
     id: "ackie-monitor",
     name: "Ackie Monitor",
     emoji: "🦎",
-    difficulty: "Advanced",
+    difficulty: "Intermediate",
     petType: "Lizards",
     image: "/assets/guides/ackie-monitor.jpg",
     tagline: "The miniature Komodo dragon with a huge personality!",
     funFact: "Ackie monitors 'taste' the air constantly with their forked tongues, using their Jacobson's organ to detect prey scent, just like their giant Komodo cousins!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "6x3x3 ft+ enclosure", low: 300, high: 600 },
-        { item: "Deep substrate (12 in+ sandy soil mix)", low: 80, high: 150 },
-        { item: "High-wattage basking bulb + fixture", low: 30, high: 60 },
-        { item: "Quality thermostat", low: 40, high: 70 },
-        { item: "Strong desert UVB (T5 HO Arcadia Dragon 12%)", low: 70, high: 110 },
-        { item: "Infrared thermometer gun", low: 25, high: 40 },
-        { item: "Cork bark and rock structures", low: 40, high: 80 },
-        { item: "Water dish", low: 10, high: 20 },
-      ],
-      annual: [
-        { item: "Large insect variety", low: 200, high: 350 },
-        { item: "Calcium and multivitamin supplements", low: 25, high: 35 },
-        { item: "UVB bulb replacement", low: 70, high: 110 },
-        { item: "Electricity (high-wattage basking)", low: 100, high: 180 },
-        { item: "Annual vet wellness check", low: 60, high: 100 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Quarantine, hygiene, the thermostat probe and the
+    // power-outage line cite the shared reptile guides in the sidebar's
+    // Health and More list. Reconciled 2026-09-15 after the ackie monitor
+    // set test (docs/READER_REVIEWS.md). Difficulty follows the
+    // encyclopedia entry, which the same pass moved from Advanced to
+    // Intermediate: ReptiFiles rates the species Intermediate and the
+    // handling guide already said so, leaving the encyclopedia and the
+    // old hub as the only two pages claiming Advanced.
+    //
+    // The old hub disagreed with the setup and cost guides on almost every
+    // number it carried, and all of them are gone rather than moved: the
+    // enclosure (6x3x3 ft for a pair, against ReptiFiles' 5 by 2.5 by 4 feet
+    // for one adult, which is the setup guide's figure), the basking surface
+    // (120 to 150°F in two rows and 130 to 150°F in a third, against 130 to
+    // 170), the cool side (80 to 85°F against 75 to 80), and five prices
+    // that each differed from the cost guide's table: UVB, the basking bulb,
+    // the substrate, the enclosure, and the thermometer gun.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Legal", value: "41 of the 52 jurisdictions place no restriction on it at all. The four places it is unavailable, Washington DC, Hawaii, New York City and New Mexico, are not reacting to this species so much as to lizards or monitors in general, and New Jersey, Rhode Island and Maine want a permit.", source: "ackie-monitor-legal-guide" },
+        { label: "Day one", value: "Quarantine any new ackie until it's cleared two separate clean fecal checks before introducing it to an established collection, and maintain good general hygiene.", source: "ackie-monitor-health-issues-guide" },
+        { label: "Enclosure", value: "The minimum for a single adult is 5 feet long by 2.5 feet wide by 4 feet tall, larger than the older 4x2x2 foot standard often quoted for this species. The reason is directly tied to how active ackies actually are: this isn't an animal that thrives in a modest footprint the way a more sedentary lizard might.", source: "ackie-monitor-tank-setup-guide" },
+        { label: "Basking surface", value: "Roughly 130 to 170°F, measured directly on the basking stone or stack with an infrared thermometer, not air temperature. A reading below about 130°F is too cool for this species to properly synthesize vitamin D. Most keepers under-provide heat rather than over-provide it, so erring toward the hotter end is usually the safer mistake.", source: "ackie-monitor-tank-setup-guide" },
+        { label: "Cool side", value: "Around 75 to 80°F, giving a real thermal gradient across the enclosure.", source: "ackie-monitor-tank-setup-guide" },
+        { label: "Thermostat probe", value: "The probe reads at the animal's level, not up in the airspace near the fixture. For an overhead source, follow your controller's own instruction and confirm the result with independent checks.", source: "reptile-heating-thermostats-guide" },
+        { label: "Retes stack", value: "Stacked shelves or tiles positioned under the basking lamp let your ackie choose its exact preferred basking spot along a genuine temperature gradient, rather than being stuck with one uniform hot zone. Combined with the substrate dam, this is what separates an adequate setup from a good one.", source: "ackie-monitor-tank-setup-guide" },
+        { label: "Substrate", value: "12 to 24 inches of a soil and sand mix that holds a proper burrow, contained with a substrate dam tall enough to hold that depth. Avoid shallow bark-only setups or dry, pure sand, both of which collapse and fail to support the burrowing this species relies on. Budget for multiple bags rather than assuming a single one will cover it.", source: "ackie-monitor-tank-setup-guide" },
+        { label: "Why depth, really", value: "Ackies are obligate burrowers that construct extensive tunnel systems, and depth is the single largest housing choice you make for them. A shallow layer is bedding, not a burrow. A separate damper dig zone lets them excavate humid tunnels without keeping the whole arid enclosure wet.", source: "ackie-monitor-enrichment-guide" },
+        { label: "Humidity", value: "Ackies need both dry and humid zones, and most of the moisture should live underground rather than in the air. That is exactly why deep, moisture-holding substrate matters so much: it is doing real thermoregulatory and hydration work, not just providing digging material.", source: "ackie-monitor-tank-setup-guide" },
+        { label: "UVB", value: "A T5 HO bulb in the 12% desert range, spanning roughly half the enclosure over the basking area, replaced every 12 months. Target a basking-area UVI of 4.0 to 6.0, meaningfully higher than most other commonly kept lizards need. Bright daylight LED alongside it supports this full-sun species.", source: "ackie-monitor-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Hatchlings and juveniles up to about 6 months are fed daily and allowed to eat as much as they want. Subadults and adults eat every other day, roughly what the animal finishes within a 5 to 10 minute window rather than food left available indefinitely. Small, frequent meals are healthier here than large, occasional ones.", source: "ackie-monitor-feeding-guide" },
+        { label: "Staple food", value: "Well-gutloaded insects: black soldier fly larvae, crickets, discoid roaches, dubia roaches, grasshoppers, and silkworms. Mealworms and superworms are occasional additions rather than the base, being higher in fat with harder exoskeletons. Size prey to roughly the width of the ackie's head, not bigger.", source: "ackie-monitor-feeding-guide" },
+        { label: "Not rodents", value: "Don't make rodents a dietary staple. Mice and rats are calorie-dense, and a rodent-heavy diet is directly linked to the fatty liver disease that shortens more captive monitor lifespans than almost anything else. Eggs, quail chicks, and young mice or rats are fine as occasional treats, genuinely sparingly.", source: "ackie-monitor-feeding-guide" },
+        { label: "Supplements", value: "Lightly dust most insect feeders with a reptile calcium powder at each feeding, skipping isopods and hornworms since they're already calcium-rich. Use a multivitamin containing true vitamin A, not just beta-carotene, occasionally rather than on a fixed weekly schedule, since over-supplementing is a real risk here.", source: "ackie-monitor-feeding-guide" },
+        { label: "Gut-load first", value: "Gutload every feeder insect at least 24 hours before offering it, since what the insect ate is most of what the ackie gets out of it.", source: "ackie-monitor-feeding-guide" },
+        { label: "Weigh it weekly", value: "Ackies are naturally so active that they burn far more energy in the wild than most captive setups allow for, and combined with their strong food motivation that creates real overfeeding risk. Reduce feeding frequency and amount, provide a genuinely large enclosure, and weigh the monitor weekly with a kitchen scale to track trends.", source: "ackie-monitor-health-issues-guide" },
+        { label: "Handling", value: "Never grab an ackie from above or chase it out of a hide, which triggers a real prey-flight response rather than building trust. Let the monitor voluntarily climb onto you instead, and use tong-feeding as the main bonding tool. Tame ackies become interactive over time, but they're fast and can scratch or nip if startled.", source: "ackie-monitor-handling-guide" },
+        { label: "Enrichment", value: "Substrate deep enough for a real burrow system first, then enclosure footprint and height since this is an active forager, then puzzle and extraction feeding, then a separate humid dig zone, then climbing structure and rock stacks.", source: "ackie-monitor-enrichment-guide" },
+        { label: "Why puzzles work here", value: "Eight juvenile black-throated monitors were presented with a transparent tube containing food. All eight worked out how to open it within ten minutes, on the first trial. Those are Varanus albigularis results and the ackie is Varanus acanthurus, so this is genus-level evidence: what transfers is that varanids solve novel food problems fast.", source: "ackie-monitor-enrichment-guide" },
+        { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the lizard out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Budget", value: "$150 to $450 for the monitor, with red ackies at the top of that. Setup runs $800 to $1,500 or more, and upkeep roughly $40 to $80 a month, most of it feeder insects and electricity for the high-wattage basking bulbs.", source: "ackie-monitor-cost-guide" },
+        { label: "Adult size", value: "Around 2 feet (0.6 m) typical, reported from 17.3 inches (44 cm) to 30 inches (76 cm)." },
+        { label: "Lifespan", value: "15 to 20 years with proper housing and care. That is a long-term commitment layered on a demanding setup, worth weighing both factors together rather than focusing on the animal's relatively modest purchase price.", source: "ackie-monitor-cost-guide" },
       ],
     },
-    sections: {
-      housing: `A 6x3x3 ft enclosure is the minimum for a pair of ackie monitors - and ackies do well and often prefer living in bonded pairs or trios when raised together. Single animals can be kept in slightly smaller spaces but will benefit from the larger footprint for activity and thermal gradient establishment.
-
-The deep substrate is the defining feature of an ackie monitor setup. A minimum of 12 inches of a sandy soil mixture (60% organic topsoil, 40% playsand is a common ratio) must be provided. Ackies are native to the arid rocky outcrops of western and central Australia and spend large portions of their time burrowing to thermoregulate. Burrowing is not optional behavior - it is essential for health and wellbeing.
-
-The basking spot temperature is the most critical parameter: 120 to 150 degrees F at the surface directly under the basking light. This sounds extreme because it is - ackie monitors require these temperatures to fully thermoregulate, activate their immune system, and digest prey efficiently. Without adequate basking temperatures, even an otherwise well-kept ackie will show chronic health problems, poor growth, and reduced lifespan. Use high-wattage halogen or flood bulbs and verify surface temperatures with an infrared temperature gun.
-
-Strong desert UVB (T5 HO Arcadia Dragon 12% or equivalent) on a 10 to 12 hour cycle is mandatory. The cool side of the enclosure should be 80 to 85 degrees F ambient. Humidity in the burrow area (achieved by allowing one section of the substrate to stay slightly more moist than the rest) should be 40 to 60%.`,
-      diet: `Ackie monitors are primarily insectivorous in the wild, and their captive diet should reflect this. Large dubia roaches, crickets, superworms, hornworms, and silkworms form the core of a balanced diet. Gut-load all insects 24 to 48 hours before feeding - the nutritional quality of a gut-loaded insect versus an empty one is dramatically different.
-
-Adult ackies can be offered occasional pinky or fuzzy mice as a protein supplement - not as a staple. Whole prey items offer nutritional completeness when used judiciously. Eggs (quail or scrambled chicken eggs) are another excellent nutritional supplement offered occasionally.
-
-Feed juveniles daily with as many insects as they will actively pursue and eat. Adults eat 3 to 5 times per week. Reduce feeding frequency if the animal is becoming visibly obese (fat deposits around the neck, limbs, and tail base). Dust prey with calcium w/D3 and a reptile multivitamin on a consistent schedule.
-
-Fresh water in a shallow dish must always be available. Many ackies will soak in their water dish, which supports hydration and shedding. Replace the water daily.`,
-      enrichment: `The deep substrate is the most important enrichment - ackies spend significant time excavating burrow systems that can extend 12 to 24 inches underground. Providing adequate substrate depth allows this natural behavior. Watching an ackie monitor engineer a complex burrow system is one of the most impressive behaviors in the reptile hobby.
-
-Add rock structures (securely stacked so they cannot topple and crush the monitor), cork bark pieces at the surface for additional hiding and temperature regulation spots, and branches for climbing. Ackies are more terrestrial than truly arboreal but will use low branches and rock edges frequently.
-
-Foraging enrichment dramatically improves quality of life for intelligent monitor lizards. Hide insects in the substrate, under rocks, and inside cork bark. Vary feeding locations. Offer live insects that require pursuit. Ackies in enriched environments with foraging opportunities show dramatically more natural, active behavior than those fed in predictable ways.
-
-Young ackies can be fast and defensive and may bite. Consistent, patient handling from a young age produces remarkably tame animals. Adults often become confident and genuinely interactive, approaching their keepers and exploring hands voluntarily.`,
-      health: `Inadequate basking temperature is the most common and most serious husbandry failure in ackie monitors. An ackie that cannot reach 130 to 150 degrees F at the basking surface cannot fully activate its immune system, cannot adequately digest food, and cannot thermoregulate its core body temperature. This leads to chronic immune suppression, poor growth, repeated infections, and a significantly shortened lifespan. Invest in high-quality, high-wattage bulbs and verify temperatures regularly.
-
-Metabolic Bone Disease (MBD) from inadequate UVB or calcium supplementation presents as weak, trembling limbs, rubber jaw, difficulty climbing, and lethargy. Strong UVB and consistent supplementation prevent it.
-
-Parasites - particularly pentastomids (tongue worms) in wild-caught animals - are a significant concern. Source captive-bred animals from reputable breeders whenever possible. Wild-caught ackies frequently carry heavy parasite loads that require veterinary treatment. Annual fecal exams are recommended for all monitors.
-
-Respiratory infections and scale rot can occur if humidity and temperatures are incorrect. Always have a reptile veterinarian with monitor experience identified before acquiring an ackie. These are rewarding but high-maintenance animals that deserve expert veterinary care.`,
-      checklist: ["6x3x3 ft+ enclosure", "Deep substrate (12 inch+ sandy soil mix)", "High-wattage basking bulb (120 to 150 degrees F surface)", "Quality thermostat", "Strong desert UVB (T5 HO Arcadia Dragon 12%)", "Digital thermometer (IR gun recommended)", "Calcium w/D3 + multivitamin", "Large insect variety", "Cork bark and rock structures", "Water dish + humid microhabitat area"],
+    emergencyCard: {
+      source: "ackie-monitor-health-issues-guide",
+      callNow: [
+        "Swollen limbs, soft or malformed bones, lethargy, and difficulty moving normally (metabolic bone disease). Always see a vet. A disease of neglect, and one a properly kept ackie should never develop",
+        "Decreased appetite, lethargy, weight loss, and irregular stool (internal or external parasites). See a vet for diagnosis and treatment",
+        "Impaction, which can become a genuine emergency if severe, linked to inappropriate substrate ingestion or temperatures too low to support proper digestion",
+        "Respiratory infection, linked to incorrect temperature or humidity. Always see a vet",
+        "A month of feeding adjustment that produces no weight change in an overweight monitor",
+      ],
+      vetLine: "Nearly everything here comes back to building the ambitious setup this species needs. Weak or absent UVB combined with poor calcium supplementation is the direct cause of MBD, the most serious and most preventable condition on the list. An enclosure too small to support this species' natural activity level contributes directly to obesity. And getting temperature and substrate right prevents both impaction and digestive issues.",
     },
+    routes: [
+      { slug: "ackie-monitor-cost-guide", line: "$150 to $450 for the animal, red against yellow, the $800 to $1,500 setup itemized, and why the enclosure rather than the monitor is the real commitment." },
+      { slug: "ackie-monitor-tank-setup-guide", line: "The 5 by 2.5 by 4 foot minimum, a basking surface hotter than almost any other pet lizard's, two feet of diggable substrate, and what a Retes stack is for." },
+      { slug: "ackie-monitor-feeding-guide", line: "Daily for juveniles and every other day after, the insect staples worth building on, why rodents are the mistake, and six reasons an ackie stops eating." },
+      { slug: "ackie-monitor-handling-guide", line: "A lizard that does backflips after crickets, tong-feeding as the bonding tool, and the body language that says stop before it bolts." },
+      { slug: "ackie-monitor-health-issues-guide", line: "MBD as a disease of neglect, obesity as the captivity-specific risk, the weekly kitchen scale, and impaction from substrate and cold." },
+      { slug: "ackie-monitor-enrichment-guide", line: "Eight of eight monitors opening a puzzle tube in ten minutes on the first try, what that evidence does and does not cover, and the burrow depth that outranks it." },
+      { slug: "ackie-monitor-legal-guide", line: "Legal in 41 of 52 jurisdictions, the four places no lizard or no monitor qualifies, and the Colorado latitude clause the ackie's range sits right on." },
+    ],
+    buyList: [
+      "A 5 by 2.5 by 4 foot enclosure at minimum, custom or PVC",
+      "Substrate dam tall enough to hold the depth",
+      "12 to 24 inches of soil and sand mix",
+      "Multiple high-wattage basking bulbs and fixtures",
+      "Thermostat",
+      "Infrared thermometer gun",
+      "T5 HO UVB in the 12% desert range",
+      "Bright daylight LED",
+      "Retes stack, shelves or tiles",
+      "Hides and rock stacks",
+      "A separate humid dig zone",
+      "Gut-loaded feeder insects, or a roach colony",
+      "Reptile calcium powder",
+      "A multivitamin with true vitamin A",
+      "Kitchen scale for weekly weights",
+      "Extraction puzzle feeder",
+      "Clicker and target stick",
+    ],
     faqs: [
-      { q: "How hot does an ackie monitor's basking spot need to be?", a: "120 to 150 degrees F at the basking surface, measured with an infrared temperature gun. This is the most critical parameter in ackie monitor care and the most commonly failed. Without adequate basking temperatures, ackies cannot fully thermoregulate, digest food, or activate their immune systems - leading to chronic health problems. High-wattage halogen or flood bulbs achieve these temperatures effectively." },
-      { q: "Can ackie monitors be kept in pairs or groups?", a: "Yes - ackies often do well and sometimes prefer living in bonded pairs or trios when raised together from a young age. Cohab success depends on having adequate space (6x3x3 ft minimum for a pair), multiple basking sites, and deep substrate for individual burrowing. Monitor for aggression and be prepared to separate if conflict arises." },
-      { q: "What do ackie monitors eat?", a: "Primarily insects in captivity: large dubia roaches, crickets, superworms, hornworms, and silkworms are the staples. Adults can have occasional pinky or fuzzy mice as a protein supplement and quail or scrambled eggs periodically. Gut-load all insects 24 to 48 hours before feeding. Feed juveniles daily, adults 3 to 5 times per week." },
-      { q: "How big do ackie monitors get?", a: "Adults typically reach 24 to 28 inches total length - significantly smaller than most other monitor species, which is one reason ackies are popular. They are powerfully built for their size, with strong legs, sharp claws, and an active, energetic temperament. Their manageable size combined with their big personality makes them the most popular dwarf monitor in the hobby." },
-      { q: "Are ackie monitors good pets?", a: "Yes, for experienced keepers ready for their specific requirements. Ackies are intelligent, active, and become remarkably tame with patient, consistent handling from a young age - many seek out their keepers and explore hands and arms voluntarily. The key commitments are the extreme basking temperatures (verified with an IR gun), deep burrowing substrate, and a diverse insect-heavy diet." },
-      { q: "What's the difference between a red and yellow ackie monitor?", a: "They're two recognized subspecies from different parts of Australia, not just a color variant of the same animal. The Red Ackie (Varanus acanthurus acanthurus) shows deeper reddish-orange base coloring, while the Yellow Ackie (Varanus acanthurus brachyurus) runs more yellow-tan and tends to stay slightly smaller. Care requirements are identical between the two - the difference is purely cosmetic and geographic, not a husbandry consideration." },
+      { q: "What size enclosure does an ackie monitor need?", a: "The minimum for a single adult is 5 feet long, 2.5 feet wide, and 4 feet tall. That is bigger than the older 4x2x2 foot standard still quoted for the species, and the reason is activity level: ackies do not thrive in a modest footprint the way a more sedentary lizard might." },
+      { q: "Can I feed my ackie monitor mice or rats?", a: "Only as an occasional treat, never a staple or a weekly habit. Mice and rats are calorie-dense, and a rodent-heavy diet is linked to fatty liver disease in captive monitors." },
+      { q: "Why are ackie monitors prone to obesity in captivity?", a: "Their wild activity level burns far more energy than most captive setups allow for, and they are strongly food motivated. The fix is to cut feeding frequency and amount, give a large enclosure that encourages movement, and weigh weekly on a kitchen scale." },
     ],
   },
   {
@@ -661,62 +696,107 @@ Respiratory infections result from stagnant air and temperature fluctuations. Th
     image: "/assets/guides/savannah-monitor.jpg",
     tagline: "The powerful, intelligent monitor that needs serious space and a serious keeper!",
     funFact: "Savannah monitors are built for digging. In the wild they may create burrows several feet deep to escape the African heat. A deep substrate is one of the most important enrichment features you can give them!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // Adult housing is often custom-built; setup range reflects that.
-    costs: {
-      setup: [
-        { item: "8x4x4 ft+ custom enclosure or room", low: 500, high: 1200 },
-        { item: "12 in+ deep substrate (topsoil/sand mix)", low: 100, high: 200 },
-        { item: "High-wattage basking bulb + fixture", low: 30, high: 60 },
-        { item: "Strong desert UVB (T5 HO Arcadia Dragon 12%)", low: 70, high: 110 },
-        { item: "Quality thermostat", low: 40, high: 70 },
-        { item: "Infrared thermometer gun", low: 25, high: 40 },
-        { item: "Large water tub for soaking", low: 30, high: 60 },
-      ],
-      annual: [
-        { item: "Varied diet (roaches, eggs, occasional mice/rats)", low: 250, high: 450 },
-        { item: "Calcium and multivitamin supplements", low: 25, high: 35 },
-        { item: "UVB bulb replacement", low: 70, high: 110 },
-        { item: "Electricity (high-wattage basking)", low: 120, high: 220 },
-        { item: "Annual vet wellness check", low: 70, high: 120 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Quarantine, hygiene, the thermostat
+    // probe and the power-outage line cite the shared reptile guides in the
+    // sidebar's Health and More list. Reconciled 2026-09-15 after the
+    // savannah monitor set test (docs/READER_REVIEWS.md).
+    //
+    // This species has no feeding guide, so the diet rows copy the Diet
+    // Basics section added to the tank setup guide from LafeberVet and Tree
+    // of Life Exotics, the two veterinary sources the set already cites.
+    // That section exists because the reader could build the enclosure and
+    // not feed the animal: the only schedule anywhere in the set was one
+    // hub line no article repeated or sourced.
+    //
+    // The old hub fought its articles on eight figures, all gone rather than
+    // moved: size (3 to 5 ft and 6 to 15+ lbs, against the handling guide's
+    // 3 to 4 ft and 8 to 15 lbs, which LafeberVet's own clinic source
+    // matches), basking (a 130°F floor against the setup guide's 140 to
+    // 150), cool side (78 to 82°F against 75 to 85 with a night drop the hub
+    // never mentioned), humidity (60 to 70% in the burrow area against about
+    // 50% ambient plus a genuinely humid burrow), substrate (12 inches
+    // against 12 to 24 or more, with the shopping checklist carrying the
+    // failing figure), the vet exam ($70 to $120 against the cost guide's
+    // $50 to $100), the enclosure line ($500 to $1200 for a right-sized
+    // build, under the cost guide's $650 to $730 for a wrong-sized one),
+    // and lifespan (5 to 8 years against the cost guide's early teens).
+    // The old checklist also read "Varied whole prey diet (roaches, eggs,
+    // mice, rats)" directly under an argument that rodents are what kill
+    // this species.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Legal", value: "Eleven jurisdictions restrict it, five as outright bans and six as paperwork, and the other 41 place no restriction at all. Louisiana is the one state that decided about this species in particular, naming Varanus exanthematicus on its prohibited nonnative list.", source: "savannah-monitor-legal-guide" },
+        { label: "Day one", value: "A new lizard is quarantined 3 to 6 months away from any reptile you already keep, in a separate room on plain paper towel, with its own tools, and a vet check within two weeks of acquiring it with a fresh fecal sample.", source: "reptile-quarantine-guide" },
+        { label: "Where it came from", value: "Many are wild-caught or farmed in bulk for the pet trade, which keeps supply high and price low, and also means a real share arrive stressed, parasitized, and with a shorter life expectancy than a captive-bred animal would have.", source: "savannah-monitor-cost-guide" },
+        { label: "Parasites", value: "Genuinely common in this species, particularly wild-caught or farmed animals. A fecal exam is worth doing proactively for any newly acquired savannah monitor rather than waiting for symptoms.", source: "savannah-monitor-health-issues-guide" },
+        { label: "Adult size", value: "3 to 4 feet long and 8 to 15 pounds, genuinely large and strong enough that adult handling calls for real caution. Sharp teeth, strong claws, and a whip-capable tail are all real defensive tools on an animal this size.", source: "savannah-monitor-handling-guide" },
+        { label: "Enclosure", value: "A hatchling can start around 36x24x20 inches, but a single adult needs an 8-foot by 4-foot by 4-foot enclosure at minimum. This is the current welfare standard and reflects genuine need, not excess. Floor space matters more than height, and it is one monitor per enclosure.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Nothing fits", value: "A ready-made 8ft PVC modular enclosure is actually 8x2x2ft, a partial match on length only, well short of the 8x4x4ft footprint an adult needs. True adult-sized housing for this species is typically a DIY build or ordered direct from a manufacturer.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Basking", value: "Basking surface temperature should reach 140 to 150F, measured directly with an infrared thermometer rather than an air temperature reading. Use a cluster of halogen flood bulbs on a thermostat: this species needs multiple bulbs working together to create adequate heat across a large enclosure.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Cool side and night", value: "Cool side should run 75 to 85F, with nighttime dropping to around 70 to 75F. Avoid ceramic heat emitters, red or blue bulbs, or heat mats as the primary basking heat source, they don't provide the intensity this species needs.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Thermostat probe", value: "The probe reads at the animal's level, not up in the airspace near the fixture. For an overhead source, follow your controller's own instruction and confirm the result with independent checks.", source: "reptile-heating-thermostats-guide" },
+        { label: "Humidity", value: "Around 50% ambient, with access to a genuinely humid burrow where conditions run considerably wetter. Achieve this by pouring water directly into the deep substrate in one area and providing a humid hide, rather than trying to raise ambient humidity across the whole enclosure.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Substrate", value: "Deep is the operative word, 12 to 24 inches or more of a diggable soil, sand, and clay mix that genuinely holds a burrow shape. A topsoil and play sand blend, or a product like Zoo Med Excavator Clay, both work. Avoid shallow substrate or loose, particulate-only setups that collapse rather than holding tunnels.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "UVB", value: "A T5 HO bulb in the 10 to 12% range, spanning roughly half the enclosure, positioned 14 to 16 inches from the basking area. Pair with a bright 6500K daylight bulb. Adjust photoperiod seasonally, around 11 hours in winter, 13 in summer.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Water basin", value: "Large enough for the monitor to fully submerge its entire body, not just a shallow dish. Combined with the humid burrow, this genuinely matters for hydration and shedding, and a big, dry enclosure with just a small water bowl isn't adequate regardless of how large the dry footprint is.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Diet", value: "The staple is gut-loaded insects: dubia roaches, crickets, locusts, superworms, silkworms, grasshoppers, crayfish and other low-fat foods. Lean mice, chicks or freshwater fish belong in the occasional column and stay there, because rodents and fatty foods fed too often lead to severe obesity and organ disease. Skip processed meats and dog or cat food entirely.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "How often", value: "Juveniles eat daily or every other day. Adults eat two to three times a week.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Supplements", value: "Dust insects with calcium, without D3 where UVB is running and with D3 where it is not, and add a multivitamin weekly. The calcium supplement should be low in or free of phosphorus, at a minimum calcium to phosphorus ratio of 2:1.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Portion", value: "No published figure puts a number on the portion, so frequency and food choice do most of the work. An animal putting on a rounded, heavy body shape is being fed too richly whatever the portion size says.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "The thing that kills them", value: "In the wild, savannah monitors eat a lean, largely insect-based diet on a seasonal cycle. In captivity that rhythm disappears and animals get fed rich food year-round with a fraction of the activity level, which is why obesity and hepatic lipidosis are the signature problem here.", source: "savannah-monitor-health-issues-guide" },
+        { label: "Handling", value: "Pick up from underneath rather than from above, since reaching down from above mimics a predator attack and triggers defensive reactions. Support the full body and tail. As adults grow, routine tasks like nail trims may genuinely require two or three people experienced with reptile restraint.", source: "savannah-monitor-handling-guide" },
+        { label: "Stop signals", value: "Hissing, open-mouthed snapping, puffing out the throat, standing up on the hind limbs, and flicking the tail. Do not attempt handling while any of those is on display unless you are an experienced reptile handler.", source: "savannah-monitor-handling-guide" },
+        { label: "Feed with tongs", value: "Put food in and take leftovers out with tongs, because a hungry monitor may mistake moving fingers for prey, and wash your hands after handling its food. Keep the nails trimmed, since they can become very sharp and painful.", source: "savannah-monitor-handling-guide" },
+        { label: "Enrichment", value: "Substrate deep enough for a real burrow with a damp lower layer first, then enclosure floor area, then puzzle and extraction feeding delivering the existing ration, then a humid retreat, then target and station training, then scent novelty, and rearrangement last.", source: "savannah-monitor-enrichment-guide" },
+        { label: "Hygiene", value: "Wash hands with soap right after any contact, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Budget", value: "Juveniles run $150 to $300 and adults $300 to $800. Setup commonly runs well past $500 and sometimes exceeds $1,000, and upkeep is roughly $30 to $50 a month. A routine annual exam runs $50 to $100.", source: "savannah-monitor-cost-guide" },
+        { label: "Lifespan", value: "Commonly cited at 10 to 15 years, with 15 to 20 achievable under excellent husbandry. Many pet savannah monitors die well before that, in their early teens or younger, from fatty liver disease, kidney failure, or gout, nearly all tied directly to overfeeding.", source: "savannah-monitor-cost-guide" },
       ],
     },
-    sections: {
-      housing: "Adult savannah monitors can reach 3 to 5 ft and require enormous enclosures. A minimum 8x4x4 ft is recommended, and many keepers build custom rooms. Deep substrate (12 inches or more of a 50/50 topsoil/sand mix) is essential for burrowing and thermoregulation. A very hot basking spot (130 to 150 degrees F surface) is critical. Ambient warm side: 90 to 95 degrees F. Cool side: 78 to 82 degrees F. Strong desert UVB (Arcadia Dragon 12%) is mandatory. High humidity (60 to 70%) in the cool/burrow area, low humidity under the basking spot.",
-      diet: `Savannah monitors are carnivores that benefit from a varied diet reflecting their natural feeding habits. In the wild, savannah monitors eat a wide variety of invertebrates, small vertebrates, and eggs - not primarily rodents. Research consistently shows that monitors fed primarily on mice and rats develop severe obesity, fatty liver disease, and cardiac problems. An invertebrate-heavy diet is significantly healthier.
-
-Appropriate feeders include large dubia roaches, superworms, crickets, hornworms, silkworm pupae, and large insects. Whole prey items - appropriate-sized mice, rats (infrequently), raw quail, feeder fish, and whole raw eggs - provide variety and nutritional completeness. Eggs (raw chicken or quail) are an excellent regular food item.
-
-Feed juveniles daily. Feed adults 3 to 5 times per week. Watch body condition carefully - a healthy savannah monitor has visible muscle tone but no pronounced fat deposits on the neck or limbs. Obesity is one of the most common and serious welfare problems in pet savannah monitors.`,
-      enrichment: `Deep burrowing substrate is the most important enrichment. Savannah monitors in the wild create burrows many feet deep. A minimum of 12 inches of substrate (topsoil/sand mix) allows natural burrowing behavior that is fundamental to their physical and psychological wellbeing.
-
-Provide large rock structures (securely stacked), cork bark hides, climbing logs and branches, and a large water tub for soaking. Savannah monitors can become remarkably tame and interactive with consistent, confident handling from a young age. Mental stimulation through foraging enrichment (hiding prey in substrate or under rocks), novel objects, and varied prey items prevents the boredom that leads to stereotypic pacing behavior.
-
-Free-roam time in a safe, supervised area provides exercise and exploration opportunities beyond the enclosure. Savannah monitors that are handled regularly and given enrichment opportunities are genuinely engaging, interactive animals.`,
-      health: `Obesity from an all-rodent diet is the most common and serious welfare problem in savannah monitors. Whole-mammal diets (exclusively mice and rats) cause progressive fatty liver disease, cardiovascular problems, and lifespan reduction to 5 to 8 years instead of the 15 to 20 years possible with appropriate care. An invertebrate-diverse diet with only occasional whole prey mammals dramatically improves long-term health outcomes.
-
-Metabolic Bone Disease from inadequate UVB causes soft bones and skeletal deformities. Strong desert UVB (Arcadia Dragon 12%) is mandatory and should run on a consistent schedule. Replace bulbs on schedule - UV output degrades before visible light does.
-
-These are powerful animals. Adult savannah monitors can inflict significant injuries with their tail (whipping), claws, and jaws. Approach with confidence and calm, never fear or aggression. Annual veterinary wellness checks with a reptile vet experienced in monitor lizards are essential.`,
-      checklist: [
-        "8x4x4 ft+ custom enclosure or room",
-        "12 inch+ deep substrate (topsoil/sand mix)",
-        "High-wattage basking bulb (130 to 150 degrees F surface)",
-        "Strong desert UVB (T5 HO Arcadia Dragon 12%)",
-        "Quality thermostat",
-        "Digital thermometer (IR gun essential)",
-        "Large water tub for soaking",
-        "Varied whole prey diet (roaches, eggs, mice, rats)",
-        "Calcium + multivitamin supplements",
-        "Reptile vet with monitor lizard experience",
+    emergencyCard: {
+      source: "savannah-monitor-health-issues-guide",
+      callNow: [
+        "A rounded, heavy body shape, reduced activity, and general lethargy (obesity and hepatic lipidosis). Manageable at home through diet correction and a properly large enclosure, but advanced liver or organ disease needs a vet and may not be fully reversible by then",
+        "Soft or deformed bones and fractures (metabolic bone disease). Always see a vet",
+        "Laboured breathing from temperatures running too low or humidity mismanaged (respiratory infection). Always see a vet, this needs antibiotics",
+        "Any newly acquired monitor, symptoms or not: a fecal exam, since parasites are genuinely common in wild-caught and farmed animals",
       ],
+      vetLine: "Exotic vet workups for obesity, parasites, or metabolic bone disease can run into the hundreds, and given how common these issues are in this species, it's worth budgeting for rather than hoping to avoid. Body condition scoring is a more honest read on weight than eyeballing an animal you see every day.",
     },
+    routes: [
+      { slug: "savannah-monitor-cost-guide", line: "$150 to $300 for a juvenile and $300 to $800 for an adult, why that price is part of the problem, a setup that runs past $1,000, and the gap between what this species can live and what it usually does." },
+      { slug: "savannah-monitor-tank-setup-guide", line: "The 8x4x4 foot standard and why nothing off the shelf meets it, a 140 to 150F basking surface, two feet of diggable substrate, the full-submersion basin, and what to feed." },
+      { slug: "savannah-monitor-handling-guide", line: "Why this is not the ackie, the five warning signals that end a session, the grip for when an animal has to be controlled, and the nail trim that takes three people." },
+      { slug: "savannah-monitor-health-issues-guide", line: "Obesity and fatty liver disease as the defining problem, the wild feeding rhythm that explains it, MBD, and the parasite screen every new animal needs." },
+      { slug: "savannah-monitor-enrichment-guide", line: "Eight of eight monitors opening a puzzle tube in ten minutes, why that evidence is genus-level rather than species-level, and puzzle feeding that adds work instead of calories." },
+      { slug: "savannah-monitor-legal-guide", line: "Legal in 41 of 52 jurisdictions, the one state that names this species, and the Arkansas list that clears ten monitors and stops one name short." },
+    ],
+    buyList: [
+      "8x4x4 ft enclosure, realistically a DIY build or a direct order",
+      "Cluster of halogen flood bulbs",
+      "Thermostat for the basking cluster",
+      "Infrared thermometer for surface readings",
+      "T5 HO UVB in the 10 to 12% range",
+      "6500K daylight bulb",
+      "12 to 24+ inches of diggable soil, sand and clay mix",
+      "A humid hide and a way to wet one area of substrate",
+      "Water basin big enough for full submersion",
+      "Rock stacks, logs and varied terrain",
+      "Gut-loaded feeder insects",
+      "Calcium without D3, and a multivitamin",
+      "Feeding tongs",
+      "Extraction puzzle feeder",
+      "Clicker and target stick",
+      "An exotics vet who sees monitors",
+    ],
     faqs: [
-      { q: "What is the biggest mistake in savannah monitor care?", a: "Feeding primarily or exclusively rodents. A diet of mice and rats causes severe obesity, fatty liver disease, and cardiovascular problems that dramatically shorten lifespan to 5 to 8 years instead of the 15 to 20 years achievable with appropriate care. Wild savannah monitors eat primarily invertebrates. An invertebrate-heavy diet - dubia roaches, superworms, eggs, large insects - is the correct dietary model, with whole prey mammals offered only occasionally." },
-      { q: "How big do savannah monitors get?", a: "Adults typically reach 3 to 5 feet in total length and weigh 6 to 15+ lbs. This is a large, powerful animal requiring enormous housing - 8x4x4 ft at minimum, and many dedicated keepers build custom rooms. Prospective owners should research adult size requirements thoroughly before acquiring a hatchling." },
-      { q: "Do savannah monitors become tame?", a: "Yes, with consistent confident handling from a young age, many savannah monitors become remarkably calm and tolerant. Adult tame monitors can be handled confidently and even enjoy interaction. The key is consistent calm handling that builds trust - never fear or forced interaction. Adults that were handled regularly as juveniles are dramatically different animals from those that were not." },
-      { q: "How hot does a savannah monitor's basking spot need to be?", a: "130 to 150 degrees F at the surface, measured with an infrared temperature gun. Without adequate basking temperatures, savannah monitors cannot properly thermoregulate, digest food, or activate their immune systems. High-wattage halogen or flood bulbs in a quality fixture achieve these temperatures." },
-      { q: "How long do savannah monitors live?", a: "With an invertebrate-based diet, appropriate housing (8x4x4 ft+), correct basking temperatures, and regular veterinary care, savannah monitors can live 15 to 20 years. The species has a reputation for short captive lifespans because most are fed primarily rodents - this is an entirely preventable outcome." },
+      { q: "What size enclosure does a savannah monitor need?", a: "A hatchling can start near 36x24x20 inches, but one adult needs 8 by 4 by 4 feet at minimum, which is the current welfare standard rather than excess. Floor space beats height for a ground-dweller, and it's one monitor to an enclosure." },
+      { q: "How hot does a savannah monitor's basking spot need to be?", a: "140 to 150F on the basking surface, read directly with an infrared thermometer rather than off an air temperature. Cool side 75 to 85F, nights 70 to 75F." },
+      { q: "What and how often does a savannah monitor eat?", a: "Gut-loaded insects as the staple, with lean mice, chicks or freshwater fish in the occasional column. Juveniles eat daily or every other day, adults two to three times a week. Dust with calcium and add a multivitamin weekly." },
     ],
   },
   {

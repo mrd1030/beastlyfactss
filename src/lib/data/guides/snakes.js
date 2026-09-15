@@ -327,65 +327,90 @@ export const snakeGuides = [
     image: "/assets/guides/garter-snake.jpg",
     tagline: "The backyard classic that eats fish and worms instead of mice!",
     funFact: "Garter snakes give birth to live young instead of laying eggs, and a single litter can range from a handful of babies to as many as 80!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "36x18x18 in or 40-gallon breeder enclosure", low: 120, high: 220 },
-        { item: "Under-tank heater + thermostat", low: 35, high: 60 },
-        { item: "Warm, cool, and humid hides", low: 15, high: 30 },
-        { item: "Large swimmable water dish", low: 15, high: 25 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Aspen or cypress mulch substrate", low: 15, high: 25 },
-      ],
-      annual: [
-        { item: "Frozen/thawed fish, earthworms, and mice", low: 70, high: 140 },
-        { item: "Thiamine (B1) and calcium supplements", low: 10, high: 20 },
-        { item: "Substrate replacement", low: 25, high: 40 },
-        { item: "Electricity (heat)", low: 40, high: 70 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
-      ],
-    },
-    sections: {
-      housing: `A 36x18x18 in enclosure or 40-gallon breeder tank suits a single adult garter snake; a mated pair does well in a 55-gallon equivalent. Garter snakes are active and inquisitive, and unlike most colubrids on this site, they're semi-aquatic - a water dish large enough to fully submerge in isn't optional decor, it's a core part of their natural behavior.
-
-Provide a warm end with a surface temperature of 85 to 88 degrees F (basking air up to 90 degrees F) via an under-tank heater on a thermostat, and a cool end at 70 to 75 degrees F. Ambient humidity of 30 to 60% is appropriate, with a humid hide (damp sphagnum moss) available for shedding support. UVB isn't strictly required but is increasingly recommended by keepers and vets for overall health - a low-output 5% T8 or 2 to 5% T5 tube is sufficient.
-
-A secure, front-opening or lockable-lid enclosure matters; garter snakes are capable escape artists. Provide warm, cool, and humid hides at minimum, plus branches and cover - garter snakes are surprisingly active and will use all the enrichment you give them.`,
-      diet: `This is the single most important thing to get right before bringing home a garter snake, and it's genuinely different from every other snake on this site: garter snakes are semi-aquatic hunters that specialize in fish, earthworms, amphibians, slugs, and snails in the wild, not rodents. Many individual garter snakes will refuse plain mice entirely, their whole lives, no matter how they're offered.
-
-A varied captive diet of frozen/thawed earthworms, appropriately sized frozen/thawed fish (tilapia, salmon, or silversides - avoid feeding exclusively on goldfish or minnows), and frozen/thawed pinky mice covers their nutritional needs well. Feed juveniles every other day and adults roughly once a week if eating mice, or twice a week if eating mostly earthworms.
-
-Watch the fish-heavy diet carefully: many common feeder fish contain thiaminase, an enzyme that breaks down vitamin B1, and a diet that leans too heavily on fish long-term can cause a serious thiamine deficiency. Supplement with vitamin B1 and calcium a couple of times a month if fish or earthworms make up a significant part of the diet, and never feed live prey - it isn't necessary and can injure the snake.`,
-      enrichment: `Garter snakes are diurnal, alert, and among the most consistently active snakes commonly kept as pets - they explore, forage, and swim far more than a typical sedentary colubrid. A water feature big enough to actually swim in, not just soak in, is genuinely enriching for this species and reflects their wild semi-aquatic habits.
-
-Provide varied hides, branches for climbing, and a naturalistic substrate they can push through. Hiding earthworms in leaf litter or substrate for the snake to hunt out taps into natural foraging behavior. Many garter snakes become confident, food-motivated, and easy to observe once settled.
-
-Handle regularly once acclimated. New or stressed garter snakes may musk (release a foul-smelling secretion) or strike defensively, but this diminishes quickly with calm, consistent handling. Most become quite tolerant of gentle handling within weeks.`,
-      health: `A thiamine (vitamin B1) deficiency from an unsupplemented, fish-heavy diet is a genuine and somewhat unique health risk for garter snakes compared to other pet snakes. Signs include lethargy, loss of appetite, and neurological symptoms in advanced cases. Regular B1 supplementation when feeding fish or earthworms prevents this entirely.
-
-Retained shed from low humidity and respiratory infections from cold, damp conditions are the same general risks seen across small colubrids - a moist hide and correct temperatures prevent most cases. Mouth rot (infectious stomatitis) can also occur, usually linked to enclosure hygiene or minor injuries, and requires veterinary treatment if it develops.
-
-Mites and general parasite loads are worth checking for in any new garter snake, particularly one of unknown or wild-caught origin. Annual wellness checks with a reptile-experienced vet, including a fecal exam, are a reasonable baseline even for animals that appear healthy.`,
-      checklist: [
-        "36x18x18 in or 40-gallon breeder enclosure",
-        "Under-tank heater + thermostat (85 to 88 degrees F warm end)",
-        "Warm, cool, and humid hides",
-        "Large swimmable water dish",
-        "Digital thermometer and hygrometer",
-        "Aspen or cypress mulch substrate",
-        "Frozen/thawed earthworms, fish, and mice",
-        "Thiamine (B1) and calcium supplements",
-        "Feeding tongs",
-        "Reptile-savvy vet contact",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Quarantine, hygiene, weight checks and the
+    // shedding line cite the shared reptile and snake guides in the
+    // sidebar's Health and More list. Reconciled 2026-09-15 after the garter
+    // snake set test (docs/READER_REVIEWS.md).
+    //
+    // The old hub's basking figure was its own: "85 to 88 degrees F surface,
+    // basking air up to 90", against the setup guide's table of 85 to 90°F
+    // with some sources to 95 and its steer to treat the lower end as a
+    // floor rather than a ceiling. Its under-tank heater price was $35 to
+    // $60 against the cost guide's $35 to $70, and its UVB line was the only
+    // place on the site giving a strength for this species.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Legal", value: "Because it's native almost everywhere, most states don't regulate the garter snake as an ordinary pet-trade reptile at all. They regulate it as wildlife, which often means more paperwork than an imported ball python or corn snake ever needs. New York is the extreme case: the state's own guidance says its native-species law does not differentiate between wild-caught and captive-bred animals, so even one bought at a pet store needs a permit.", source: "garter-snake-legal-guide" },
+        { label: "Quarantine", value: "A new snake is quarantined for 3 to 6 months, in a bare enclosure on plain paper towel. Mites usually show themselves within weeks.", source: "reptile-quarantine-guide" },
+        { label: "Enclosure", value: "A single adult does well in a 36x18x18 inch enclosure or an equivalent 40-gallon breeder tank as the minimum. A mated pair does better with more room, with a 55-gallon equivalent a common recommendation. Garter snakes are active and inquisitive, so floor space beyond the bare minimum genuinely gets used.", source: "garter-snake-tank-setup-guide" },
+        { label: "Escape-proofing", value: "Garter snakes are small, slender, and capable escape artists for their size, able to work through gaps that look far too small to matter. A tight-fitting, locking lid is not optional, and any ventilation gaps or cord holes should be sealed with mesh or silicone. A snake pushing against an unsecured screen top is a matter of when, not if.", source: "garter-snake-tank-setup-guide" },
+        { label: "Temperature", value: "Basking or warm side 85 to 90°F, up to 95°F for reliable digestion, so treat the lower end as a floor rather than a ceiling. Cool side 70 to 75°F, and nights as low as 64°F are tolerated. Whatever heat source you choose runs through a thermostat, the part with zero exceptions.", source: "garter-snake-tank-setup-guide" },
+        { label: "Humidity", value: "30 to 60% ambient works well for most setups, raised slightly during shedding. This isn't a species with the extreme low-humidity needs of a desert snake, and the swimmable water feature does a lot of the humidity work on its own.", source: "garter-snake-tank-setup-guide" },
+        { label: "The water feature", value: "Size the container so the snake can fully submerge, not just dip its head in. A clear plastic storage bin or a small glass aquarium, roughly up to 20 by 12 by 8 inches, on the cool side, is a common and effective option. Change it weekly at minimum, or immediately if soiled, since this species fouls its water faster than a typical snake.", source: "garter-snake-tank-setup-guide" },
+        { label: "Why a basin, really", value: "Garter snakes are semi-aquatic, proficient swimmers that hunt fish and amphibians in and around water, so a container large enough to swim in rather than merely soak is a genuine enrichment item here in a way it is not for most snakes.", source: "garter-snake-enrichment-guide" },
+        { label: "Substrate", value: "1 to 2 inches of a moisture-retentive substrate: coconut fiber, cypress mulch, or dry leaf litter all work, and a bioactive soil-and-sand mix is a more elaborate option. Avoid cedar and pine, both of which contain oils toxic to reptiles, and skip sand as a sole substrate.", source: "garter-snake-tank-setup-guide" },
+        { label: "Many won't eat mice", value: "Keepers and researchers describe individuals falling into rough groups: fish and amphibian specialists, worm and slug specialists, and true generalists. If you end up with a fish or amphibian specialist, and there's no reliable way to know in advance which kind you have, it may refuse mice entirely for its entire life, even scented ones. Budget for fish and earthworms as the default plan.", source: "garter-snake-feeding-guide" },
+        { label: "Feeding frequency", value: "Earthworm-heavy diets twice a week, fish-heavy every 5 to 7 days, mouse-eating adults about once a week, and juveniles on any diet every other day to every 3 to 5 days. Worms are less calorie-dense per bite than fish, which are less calorie-dense than a whole rodent.", source: "garter-snake-feeding-guide" },
+        { label: "Prey size", value: "No more than about 1.5 times the width of the snake at its widest point, or roughly up to 10% of body weight per meal. Two smaller prey items can stand in for one larger one.", source: "garter-snake-feeding-guide" },
+        { label: "The thiaminase problem", value: "Thiaminase is an enzyme, concentrated mainly in the guts and viscera of certain fish, that breaks thiamine apart into components the body can't use. Goldfish and rosy red minnows, two of the most commonly available feeder fish, are notably high in it. Switch to thiaminase-free fish like tilapia, salmon, and silversides, and add a B1 supplement if fish make up more than roughly a quarter of the diet.", source: "garter-snake-feeding-guide" },
+        { label: "Frozen, not live", value: "Bait shop and pet store goldfish and minnows commonly carry internal parasites that transfer directly to a snake that eats them, and symptoms can take months to show up. Frozen and thawed fish sidesteps that entirely, since freezing kills most parasites, and it lets you control exactly which species you're feeding.", source: "garter-snake-feeding-guide" },
+        { label: "Expect musk", value: "When a garter snake feels threatened, its first move is almost always to release musk from glands near the base of the tail rather than striking. It's unpleasant and hard to wash off, and completely harmless. Expect it from a healthy new snake, don't read it as illness, and know it reliably fades with calm, repeated handling.", source: "garter-snake-handling-guide" },
+        { label: "Settling in", value: "Give a newly acquired garter snake one to two weeks to settle into its enclosure and start eating reliably before attempting to handle it.", source: "garter-snake-handling-guide" },
+        { label: "Bites", value: "A distant second choice after musking and fleeing, and genuine aggression is uncommon. The teeth are small, so a bite usually feels like a light pinch or a scratch, and any swelling, redness, or itching typically resolves within a few hours. Wash the area with soap and water as you would after any small animal bite.", source: "garter-snake-handling-guide" },
+        { label: "Enrichment", value: "A ball python needs somewhere to wait. A garter snake needs somewhere to search. Dense low planting, leaf litter, and varied ground texture give an active forager a landscape to work through, and prey gets scattered rather than presented, in a different place each time.", source: "garter-snake-enrichment-guide" },
+        { label: "Weight checks", value: "Weigh rather than measure. Monthly is a reasonable default for a growing juvenile, less often once an adult has leveled off. A well-conditioned snake reads as a rounded loaf in cross-section, and a triangular cross-section with a visible ridge down the spine points to underweight.", source: "snake-sexing-growth-body-condition-guide" },
+        { label: "Hygiene", value: "Wash hands with soap and running water immediately after any contact with the animal, its enclosure, its water, or anything that's touched either. Never clean an enclosure, water dish, or equipment in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Budget", value: "$20 to $50 for a normal, wild-type animal, with albino and checkered albino commonly $150 to $350. Setup runs roughly $200 to $400. A routine reptile wellness exam runs $50 to $100, with a fecal test around $25 to $50.", source: "garter-snake-cost-guide" },
+        { label: "Adult size", value: "18 to 26 inches (46 to 66 cm) typical; large females occasionally exceed 3.5 feet (107+ cm)." },
+        { label: "Lifespan", value: "Wild garter snakes rarely live long, and most don't survive their first year or two, with 2 to 4 years commonly cited for the ones that do. Captivity changes that substantially: 6 to 10 years is typical with good care, and individuals have been documented living past 20.", source: "garter-snake-cost-guide" },
       ],
     },
+    emergencyCard: {
+      source: "garter-snake-health-issues-guide",
+      callNow: [
+        "Muscle tremors, loss of coordination, a twisted or tilted neck (torticollis), an arched rigid posture (opisthotonos, sometimes called stargazing), and apparent blindness in advanced cases (thiamine deficiency). Left uncorrected it progresses to death. Initial treatment is injectable thiamine from a vet; the actual fix is dietary",
+        "Open-mouth breathing, wheezing or a gurgling sound, mucus or discharge around the nose or mouth, and lethargy (respiratory infection). This needs a reptile vet and prescription antibiotics, not a wait-and-see approach",
+        "Excess drooling, redness or small hemorrhage spots on the gums, visible swelling, discharge, and reduced appetite (mouth rot). This needs veterinary treatment, antibiotics plus cleaning of affected tissue, rather than home care",
+        "Tiny black or red specks on the scales or in the water dish (mites), or the signs of internal parasites this species carries more risk of than most pet snakes because of what it eats",
+        "Patches of skin, or retained eye caps, that didn't come off cleanly (retained shed). Usually a humidity problem, and a humid hide plus the soaking water this species already needs prevents most of it",
+      ],
+      vetLine: "A veterinary fecal exam is genuinely worth prioritizing for this species, for any newly acquired garter snake and periodically after that, rather than treating it as optional. Earthworms, fish, and any wild-caught prey are more likely to introduce internal parasites than a diet of commercially bred frozen rodents, and that is especially true for a wild-caught snake, which may already be carrying a parasite load picked up before it was ever your pet.",
+    },
+    routes: [
+      { slug: "garter-snake-cost-guide", line: "$20 to $50 for a normal and up past $350 for a morph, the $200 to $400 setup, and why a free wild-caught snake still costs the same to keep." },
+      { slug: "garter-snake-tank-setup-guide", line: "The 36x18x18 minimum, a water feature sized to swim in rather than sip from, the thermostat with zero exceptions, and the lid that has to latch." },
+      { slug: "garter-snake-feeding-guide", line: "Why a real share of garter snakes never take a mouse, the frequency table by diet type, and the thiaminase problem behind the cheapest feeder fish." },
+      { slug: "garter-snake-handling-guide", line: "Musk before bite and what a 2014 field study found about which snakes do it, the rear-fanged question answered honestly, and a settling-in timeline." },
+      { slug: "garter-snake-health-issues-guide", line: "Thiamine deficiency as the one that makes this species different on a vet's table, respiratory infection, mouth rot, and a heavier parasite load than most pet snakes." },
+      { slug: "garter-snake-enrichment-guide", line: "The enrichment study everyone credits to garter snakes that was actually done on ratsnakes, and what the corn snake work supports instead." },
+      { slug: "garter-snake-legal-guide", line: "Why a native species is often harder to keep legally than an imported one, and the state that permits a pet-store animal the same as a wild-caught one." },
+    ],
+    buyList: [
+      "36x18x18 inch enclosure, or a 40-gallon breeder",
+      "A lid that latches or locks",
+      "Mesh or silicone for every gap",
+      "Under-tank heater, or an overhead halogen basking bulb",
+      "Thermostat",
+      "Digital thermometer and hygrometer",
+      "Coconut fiber, cypress mulch, or leaf litter",
+      "A basin big enough to swim in",
+      "Water conditioner",
+      "Cork tubes and flats, plus low planting",
+      "Frozen and thawed thiaminase-free fish",
+      "Earthworms",
+      "Vitamin B1 supplement, for a fish-heavy diet",
+      "Feeding tongs",
+      "A kitchen scale",
+    ],
     faqs: [
-      { q: "What do garter snakes eat?", a: "Fish, earthworms, amphibians, slugs, and snails in the wild - not primarily rodents like most pet snakes. Many garter snakes refuse plain mice entirely. A varied captive diet of frozen/thawed earthworms, fish (tilapia, salmon, or silversides), and pinky mice works well. If fish make up a large part of the diet, supplement with vitamin B1, since many feeder fish contain thiaminase, which can cause a serious deficiency over time." },
-      { q: "Are garter snakes venomous?", a: "Technically yes, in the same limited sense as the hognose snake: they have a mild rear-fanged venom from a Duvernoy's gland that helps subdue small prey like fish and amphibians. It's harmless to humans in essentially all cases - garter snake bites cause minimal irritation at most and are not medically significant." },
-      { q: "How big do garter snakes get?", a: "Most adults reach 18 to 26 inches, though large females occasionally exceed 3.5 feet. They're one of the smaller, more manageable snakes commonly kept as pets, comparable in size to a milk snake or California kingsnake." },
-      { q: "Do garter snakes lay eggs?", a: "No - garter snakes are live-bearing (ovoviviparous), giving birth to fully formed young rather than laying eggs. This is different from every other snake on this site, all of which are egg-layers. A single litter can range from just a few babies to as many as 80." },
-      { q: "Are garter snakes good pets for beginners?", a: "Yes, with one real catch: diet. They're small, inexpensive, hardy, and among the most common snakes found in backyards across the US, which makes them approachable. But new keepers who assume every snake eats frozen mice are often caught off guard when their garter snake refuses them - budget for sourcing earthworms and appropriate feeder fish instead." },
-      { q: "How does a garter snake compare to a hognose snake?", a: "They share more than you'd expect for two very different-looking snakes: both are rear-fanged with a mild Duvernoy's-gland venom that's harmless to people, and both eat prey that trips up new keepers expecting a standard mouse-eater. The [hognose snake](/guides/hognose-snake/) specializes in toads and can be a stubborn feeder as a hatchling; the garter snake is semi-aquatic and often refuses mice outright in favor of fish, worms, and amphibians for life. Neither is a reliable mouse-only snake, so plan a different feeding routine than you would for a corn snake or ball python." },
+      { q: "Why do some garter snakes refuse to eat mice?", a: "Garter snake populations split into rough dietary groups, fish and amphibian specialists, worm and slug specialists, and generalists, and that specialization is real enough that some individuals will refuse even a mouse scented with fish to disguise it, for their entire lives. New keepers who assume every snake eventually 'converts' to convenient frozen mice are often caught off guard. Plan for fish and earthworms as the default expectation, not a fallback." },
+      { q: "What is thiaminase, and why does it matter for a garter snake's diet?", a: "Thiaminase is an enzyme, concentrated in the viscera of certain fish, that breaks down thiamine (vitamin B1) into inactive components. A diet leaning heavily on thiaminase-rich fish, goldfish and rosy red minnows are the worst offenders, can cause a real thiamine deficiency over time, with neurological symptoms including head tremors, loss of coordination, and in advanced cases, apparent blindness and death. Feeding thiaminase-free fish (tilapia, salmon, silversides) and supplementing vitamin B1 when fish make up more than about a quarter of the diet prevents it." },
+      { q: "Does a garter snake need a swimmable water feature?", a: "Yes, not just a nice extra. Garter snakes are semi-aquatic and proficient swimmers in the wild, and captive individuals use a water feature sized for full submersion for soaking, drinking, and even defecating. A shallow dish that only lets the snake dip its head misses a real, natural behavior this species needs access to." },
     ],
   },
   {

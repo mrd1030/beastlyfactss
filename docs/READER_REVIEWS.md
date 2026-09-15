@@ -4283,6 +4283,80 @@ in one review section.
   110 where the review said otherwise; a gerbil FunFact still at three to
   four years; and ten files with a number changed and no date bump. Pass
   grade B-.
+- 2026-09-15, batch I (African fat-tail gecko, corydoras catfish, red-footed
+  tortoise, degu, savannah monitor, branch claude/hub-pacman-frog-80291s).
+  African fat-tail: the feeding guide's flat sand ban came back to the hedge
+  Cadillac Vet actually states, an unsourced "nearly half its body mass" tail
+  fraction went from excerpt, FAQ and body, and the setup guide's sand hedge
+  gained the dehydration and shedding reasons. Corydoras catfish: the feeding
+  guide's "Why Corydoras Catfish Stop Eating" shipped as a numbered list
+  holding only item 1 and was restored to its cited source's seven causes, the
+  health guide's confident barbel-erosion mechanism became the hedge its own
+  sources support, and the encyclopedia's scientific name caught up with its
+  own history paragraph as Osteogaster aenea. Red-footed tortoise: the health
+  guide's "2021 study" cited as Mendoza et al., 2022 became "a controlled
+  study", the handling guide's growth FAQ and the cost guide's copy of it came
+  to the Hepper chart the handling body already cites, the feeding guide's 10
+  to 15 years to adult size came to that chart's 5 to 10, and the enrichment
+  guide's unattributed 2025 study now names the Animal Cognition paper.
+  Degu: the second hub after gerbil to hold the better source, so the RSPCA's
+  solid roof, deep dig layer, safe-wood branches, air-circulation case against
+  a glass tank and coprophagy requirement moved into the deep dives, while the
+  hub still lost eight figures, the cost guide's "$100 to $300" setup heading
+  came to the $375 to $520 its own table sums to in four places, lifespan
+  across three pages came to the Frontiers colony paper's 5 to 8 captive
+  years, and the unnamed toxin in rabbit food was named as a coccidiostat.
+  Savannah monitor: the set had no feeding guide and one unsourced hub line
+  that was wrong, so a Diet Basics section built from LafeberVet and Tree of
+  Life Exotics went into the tank setup guide, the legal guide's "six" came to
+  the eleven its own table lists, two stranded template sentences in the
+  enrichment guide were rewritten, and the encyclopedia's wildLifespan stopped
+  holding a captive figure, the seventh instance. Across the batch, three
+  species were missing their legal guide from RELATED_ARTICLES.
+- 2026-09-15, batch I species check (one Fable agent covering all five):
+  source names and source narration in hub rows on all five species and in the
+  deep dives on three, the defect this check was reinstated to catch, so the
+  underlying feeding, cost, tank setup and health sentences were settled to
+  state their figures and the rows recopied; two emergency-card bullets
+  written rather than copied, and two more missing from the African fat-tail
+  card; an African fat-tail seoDescription still carrying the retired tail
+  fraction; three route lines merging two source ranges into one; a red-footed
+  tortoise vetLine hardening a hedge; a degu vs-chinchilla FAQ flourish and a
+  hardened "typically"; a site self-reference in each of the degu and savannah
+  monitor additions; one more "other sizes are available" template fragment in
+  the degu enrichment guide; and two review-file link counts that did not
+  match the diff. Pass grade B-.
+- 2026-09-15, batch J (mourning gecko, ackie monitor, garter snake, oscar,
+  amano shrimp, branch claude/hub-pacman-frog-80291s). Mourning gecko: the
+  hub FAQ written to clear up the house gecko confusion named the wrong
+  genus, Lygodactylus, in a set where every other page has Lepidodactylus;
+  the cost guide's "typically 10 to 15 years" came to the shape its own
+  source supports; the feeding schedule settled on a 48-hour diet with
+  weekly dusted insects. Ackie monitor: three difficulty verdicts across
+  the set, settled at Intermediate by moving the encyclopedia rather than
+  the hub, since ReptiFiles and the handling guide already said so, and the
+  ambient humidity figure only the hub carried, unsourced, replaced with a
+  sourced 20 to 50% ambient against 80% in the burrow. Garter snake: the
+  hub had dropped the legal guide entirely on a native species most states
+  regulate as wildlife, and the cost guide repeated the hub's aspen
+  substrate against a setup guide that never lists it. Oscar: the hub told
+  buyers a juvenile needs 55 gallons, which the cost guide names as the
+  biggest mistake new owners make, and hole-in-the-head disease was told
+  two ways across the health and feeding guides. Amano shrimp: a stocking
+  density of two shrimp per gallon attributed to a source that publishes no
+  density at all, settled at the one-per-2-gallons figure that is actually
+  published, and an encyclopedia claiming the largest freshwater shrimp
+  commonly kept, which bamboo and vampire shrimp beat. Across the batch,
+  wildLifespan held a captive figure twice more, the tenth and eleventh.
+- 2026-09-15, batch J species check (one Fable agent covering all five):
+  four of five hubs shipped written FAQs instead of verbatim copies, the
+  easiest item in the router shape to get right and the first time this
+  check has found it; source names or narration in a row, a route line or
+  an emergency card on all five species, the fourth batch running; a
+  narrated disagreement copied into a garter snake row instead of settled
+  first; one hedge changed without cause; one hub row left stale against
+  the batch's own deep-dive fix; one voice regression; and two review-file
+  errors, a count and a claim. Pass grade C+.
 
 ## Green Iguana (2026-09-09, first pass)
 
@@ -9872,3 +9946,1270 @@ says "the copperhead is gone" and "corrected to 80 to 110" about pages
 where neither happened. One Merck sentence was read out of its paragraph
 and reached the emergency card. None of it was hard to fix; all of it
 should have been caught by the batch's own step 4.
+
+## African Fat-Tailed Gecko (2026-09-15, batch I, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus 5 agent. African fat-tail went
+first in batch I on a specific hypothesis: the gargoyle gecko defect in
+batch H was a setup guide whose whole thesis its own three sources
+reject, and this is a sibling gecko guide from the same writing pass, so
+it was the likeliest place for that failure to repeat.
+
+It did not repeat. Tree of Life Exotic Pet Medical Center, the vet
+clinic this set cites, backs the setup guide line for line: "A 20-gallon
+long tank (or similar) is suitable for one adult", "Warm side: 88-92°F
+(measured on the substrate). Cool side: 75-80°F", "Maintain around
+50-70%", "Juveniles: Feed daily. Adults: Feed 3-4 times per week",
+"7-9 inches total length as adults". The guide's terrestrial thesis is
+simply correct. Worth recording as a negative result, since the point of
+ordering the batch that way was to find out.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | B- | It states numbers that its own deep dives contradict. |
+| Encyclopedia | B | The wild-caught import history changes how I shop. |
+| Cost | B+ | I can budget the animal, the setup, and a vet emergency. |
+| Handling | B | Two-week wait, no tail grabbing, chirp means stop. |
+| Health issues | B+ | Symptom lists, and a clear "this one needs a vet" split. |
+| Tank setup | A- | Every number I need to build the enclosure. |
+| Feeding | A- | Best page in the set. |
+| Enrichment | B+ | A priority order I can build to, and permission to skip mirrors. |
+
+Set grade: B. "The deep dives are specific, honest about disagreement,
+and clearly written, but the hub undercuts them with softer competing
+numbers."
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, every one resolved by the router rebuild.
+
+- Humidity. Hub: "Aim for 50 to 60% ambient humidity." Setup: "around 50
+  to 70%... maintained with a permanent humid hide running 70 to 80%."
+  The hub never gave the humid hide figure at all, on a species where
+  that hide is the headline requirement.
+- Supplements, the one that could do harm. Hub: "Dust with calcium w/D3
+  at every juvenile feeding and 2 to 3 times per week for adults."
+  Feeding: "plain, phosphorus-free calcium at most feedings... with a
+  calcium and D3 combo used once or twice a week on top." Different
+  regimens, and the hub never mentioned phosphorus at all.
+- Schedule. The hub had no hatchling line, and hatchlings eat daily.
+- Cool side. Hub: "75 to 78 degrees F", with no night temperature.
+  Setup: "75 to 80°F, with a nighttime drop to around 70 to 75°F."
+- Lifespan, substrate and soak duration all drifted the same way.
+
+### The sand contradiction, and both pages being half right
+
+Setup: "a common blend is roughly 70% topsoil to 30% play sand." Feeding:
+"Never use sand as substrate, ingested sand causes real digestive
+impaction." The reader: "One page sells me the sand, the next page bans
+it."
+
+Cadillac Vet, which the feeding guide already cited, settles it and
+splits the difference: "70% untreated topsoil and 30% play sand" for a
+natural substrate, and separately "We do not recommend keeping them on
+sand, as it can lead to dehydration and prevent them from properly
+shedding. It can also lead to impaction if accidentally ingested."
+
+So the mix is recommended and keeping a gecko on sand is not. The
+feeding guide had over-generalised from "do not keep them on sand" to
+"no sand at all". It now says what the source says and points at the
+mix. The setup guide's hedge gained the dehydration and shedding
+reasons, which are the real argument against pure sand and stronger than
+the impaction one it was resting on, and Cadillac Vet joins its Sources.
+
+The same page also confirms the feeding guide's supplement regimen
+against the hub's: "Calcium only be used for most of their meals, and
+1-2 times a week use the Calcium/D3 combo powder", and "Do not use
+calcium with phosphorus added, as this can damage the kidneys and cause
+gout."
+
+### An unsourced figure, removed
+
+"The tail can hold close to half the gecko's total body mass" appeared in
+the feeding guide's excerpt, a FAQ and the body, and the reader called it
+"a big claim carried without a source". A search turns up nothing
+stating that fraction; the physiological measurement does not appear to
+exist in the literature the care sources draw on. Cut from all three.
+What it existed to justify, that healthy adults fast for weeks to months
+on the tail reserve, is sourced and stands on its own.
+
+### Links
+
+Three of the reader's eight (feeding and health to the tank setup guide,
+tank setup to the health guide on impaction). One was skipped on a
+rule: the handling guide's humidity sentence sits in a closing paragraph
+that already carries two cross-species links, and a third trips
+`closer-dump`, the rule against a closing paragraph that is a link
+library. Corrected from "two" by the species check, which counted the
+diff.
+
+### Open
+
+- The six things not covered anywhere, in docs/READER_LOG.md. Two are
+  sharper than the rest.
+- No page says how to actually raise and hold 50 to 70% ambient
+  humidity. The set names it as the requirement separating this species
+  from a leopard gecko and never gives a misting, ventilation or
+  water-surface method.
+- A hygrometer is named in one cost FAQ answer and appears in neither
+  the cost table nor the old hub checklist, so a reader buying from the
+  list could not measure the headline requirement. It is on the router
+  hub's buy list now, which is a partial fix.
+
+## Corydoras Catfish (2026-09-15, batch I, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus 5 agent. Corydoras was picked for
+batch I as the standard tankmate for the two tetra sets reconciled in
+batches G and H, so any tankmate or temperature claim in those gets
+checked against fresh work.
+
+Set grade: B. "Strong on the two things that kill cories, substrate and
+dedicated food, but the hub contradicts its own deep dives on money and
+tank size, which is exactly where a buyer starts." Hub B-, feeding B-,
+handling C+, enrichment A.
+
+### Two shipped defects
+
+Both are the kind a checker cannot see and a reader finds in one pass.
+
+- The feeding guide's "Why Corydoras Catfish Stop Eating" section was a
+  numbered list containing only item 1. The reader: "which reads like a
+  page that shipped broken." The article's own title promises the
+  section, its FAQ names four causes, and its cited source is titled "Why
+  Is My Cory Catfish Not Eating? (7 Common Causes)". Restored from that
+  source: settling in, group size, bullying and being outcompeted, water
+  quality, overcrowding, illness, and boredom with the food.
+- The encyclopedia's header read `scientific: "Corydoras aeneus"` while
+  its own history paragraph said "the bronze cory moved to Osteogaster".
+  The 2024 phylogenomic revision (Dias et al., Zoological Journal of the
+  Linnean Society) resurrected seven genera and transferred the bronze
+  cory as Osteogaster aenea. The field now reads "Osteogaster aenea
+  (formerly Corydoras aeneus)", which keeps the name a shopper will
+  actually search.
+
+### The barbel erosion conflict, settled against the health guide
+
+Health guide: barbel erosion "is caused by a combination of sharp
+substrate causing physical damage and elevated nitrates allowing
+bacterial infection to take hold in the wound." Enrichment guide: "No
+controlled study establishes what causes barbel erosion" and "Do not let
+the substrate get dirty, which is the actual barbel risk."
+
+Aquarium Co-Op, which the feeding guide already cites, backs the
+enrichment guide: "smooth sand or gravel is preferred" and, on eroding
+barbels, "it may be caused by other factors like poor water quality"
+rather than substrate type alone. The health guide's confident mechanism
+is now the hedged one, in the body and in both FAQs that repeated it.
+The enrichment guide's behavioral argument for sand, that cories root
+through substrate with their barbels to find food, is the stronger case
+and survives untouched.
+
+### Hub versus the set, both sides quoted
+
+All against the old legacy hub, resolved by the router rebuild.
+
+- Tank price. Hub: "10-20+ gallon tank | $60 | $120." Cost guide: "20
+  gallon long tank | $35 - $60." The reader: "Same tank, double the
+  money."
+- Filter price. Hub: "$20 | $35." Cost guide: "$8 - $15."
+- Food cost. Hub annual: "$40 | $70." Cost guide: "$10 to $20 a Month",
+  which is $120 to $240 a year.
+- Tank size. Hub: "A 10 to 20 gallon tank suits a proper school." Setup:
+  "A 20-gallon long tank is the practical minimum for a proper school of
+  six standard-sized cories." Ten gallons is pygmy-only and the hub never
+  said so. Aquarium Co-Op agrees: "For dwarf species, a 10-gallon
+  aquarium may be suitable, but we recommend 20 gallons or more."
+- The hub's setup table omitted a heater and a test kit, both of which
+  the cost guide calls required. Both are on the router hub's buy list.
+- Anatomy. Hub: "scaleless catfish." Health guide and encyclopedia:
+  "armored catfish with sensitive, naked bellies."
+
+### Gaps closed rather than carried
+
+The legacy hub's weekly 20 to 25% water change had no deep dive behind
+it, the fourth fish hub in three batches to lose one after angelfish,
+neon tetra and cardinal tetra. Four instances is no longer a per-species
+gap: it belongs in a shared freshwater maintenance guide, written once.
+
+### Open
+
+- The five things not covered anywhere, in docs/READER_LOG.md: breeding,
+  a named tankmate list, drip or float acclimation on arrival, which
+  species want cooler or warmer water, and telling a dwarf or pygmy
+  species from a standard one at the store when the two need different
+  tanks.
+- The acclimation gap is the sharpest, because the health guide names
+  shipping stress as a red blotch trigger and then says nothing about
+  what to do on arrival.
+
+## Red-Footed Tortoise (2026-09-15, batch I, single pass, before the router hub)
+
+Extractor set of nine pages. One Opus 5 agent. Red-foot was picked for
+batch I as the third tortoise set, after sulcata in batch H and box
+turtle earlier, so the shared chelonian guides get a third read.
+
+Set grade: B. "The deep dives are specific, sourced, and unusually good
+at saying why this species is not the other two; the hub sits on top
+contradicting them." Hub C, health A-, tank setup A-, feeding A-, legal
+A.
+
+### The hub was the whole problem
+
+The reader: "It is a compressed rewrite of the deep dives, and where it
+differs it is wrong." Six figures, all resolved by the router rebuild
+and none carried over.
+
+- Floor space. Hub: "at least 32 to 72 sq ft." Tank setup: "an indoor
+  minimum around 18 to 24 square feet of floor space for one adult."
+  The reader: "That is not rounding, it is double."
+- Annual cost. The hub's annual table summed to roughly $375 to $645.
+  Cost guide: "Roughly $650 to $850 a Year." The hub's ceiling sat below
+  the article's floor.
+- Calcium. Hub: "without D3 most feedings, with D3 twice weekly."
+  Feeding: "a calcium and D3 supplement several times a week."
+- Diet split. Hub: "about 55% fruit, flowers, and leafy greens; 35%
+  grasses and vegetables." Feeding: "about 70% leafy greens, 20% other
+  vegetables, and 10% fruit," with fruit capped at 10 to 15%. The hub's
+  lump let fruit run far past that.
+- Night floor. Hub: "no cooler than 65 to 70 degrees F." Tank setup:
+  "from dropping much below 70°F."
+- UVB. The hub prescribed Arcadia 12% flat. Tank setup carries the
+  Ferguson-zone caveat that puts this forest-edge species lower, with
+  Arcadia Forest 6% as the alternative and real shade as the thing that
+  matters most. The router row carries both camps.
+
+The fogger price conflict (hub $40 to $90, cost guide $35 to $60) went
+with the cost tables.
+
+### Deep-dive fixes
+
+- Health guide: "A 2021 study" cited as "(Mendoza et al., 2022)" in the
+  body and again in the pyramiding FAQ. Now "a controlled study,"
+  matching the Sources block, which carries the full 2022 citation.
+- Handling guide: the growth FAQ said "roughly an inch of shell length a
+  year through the first decade," against its own body, which cites the
+  Hepper chart: 1.5 to 2 inches at hatching, 3 to 4 by the first
+  birthday, 7 to 9 by age 2, 9 to 11 by age 5. The FAQ now reads the
+  chart. The cost guide repeated the same inch-a-year figure and is
+  corrected the same way.
+- Feeding guide: adult size reached "roughly 10 to 15 years by most
+  estimates," while the same guide drops feeding frequency at 5 and the
+  handling guide's sourced chart says most reach close to full adult
+  size within 5 to 10 years. Now the chart's figure.
+- Enrichment guide: "A 2025 study" with no author or journal. The
+  primary paper, Evidence of mood states in reptiles (Animal Cognition,
+  doi 10.1007/s10071-025-01973-y), now sits above the phys.org summary
+  in Sources.
+- Four of the reader's link asks added: health to tank setup on "raise
+  humidity and warmth," handling and cost to tank setup on the substrate
+  mismatch and on floor space, feeding to health on pyramiding. (The
+  species check corrected this line from "three"; it listed four.)
+
+The reader's second requested change, in-body links from the health
+guide to both the tank setup and feeding guides, is half done on
+purpose: the linking rule caps sibling-suffix links at one per article,
+so the health guide links to tank setup only.
+
+### Also fixed
+
+RELATED_ARTICLES had no entry for red-footed-tortoise-legal-guide, so
+the legal guide was reachable from the hub and from nowhere in the
+sidebar. Sulcata and box turtle both list theirs. Added.
+
+### Open
+
+- The five things not covered anywhere, in docs/READER_LOG.md: a soaking
+  protocol (how often, how deep, how warm, how long), cohabitation and
+  male aggression, what to inspect on an animal before paying and its
+  first month, healthy weight for shell length and a weighing cadence,
+  and how often to change permanently damp substrate.
+- The soaking gap is the sharpest. Every page in the set says this
+  species soaks often and none of them says what that looks like. It is
+  the third tortoise set to raise it: sulcata's reader asked for the
+  same protocol for juveniles. Two instances make it a shared chelonian
+  guide rather than a per-species gap.
+
+## Degu (2026-09-15, batch I, single pass, before the router hub)
+
+Extractor set of ten pages. One Opus 5 agent. Degu was picked for batch I
+as the small mammal, cross-linked to gerbil from batch H and to
+chinchilla by its own comparison guide.
+
+Set grade: C+, the lowest in the batch. "The individual pages are well
+aimed and the enrichment, legal and feeding guides are genuinely good,
+but a buyer following them gets three cage sizes, two temperature
+ceilings and two opposite answers on sand, which is exactly where a care
+site has to be right." Hub B+, enrichment A, feeding A-, legal A, cost
+C-, handling C.
+
+### The second hub to reverse the hub-loses default
+
+Gerbil did it first in batch H. Degu is the same shape: the old hub was
+the only page in the set citing the RSPCA, and the reader called it "the
+densest page in the set," carrying things no deep dive had. Per the
+batch H rule, that content moved into the deep dives first, with the
+RSPCA cited there, and the rows copy it from the articles.
+
+Moved into the tank setup guide, all verified against the RSPCA's own
+pages rather than the hub's paraphrase:
+
+- The solid roof, and why. "As a prey species, degus can get frightened
+  of movements above them (their main predators in the wild are birds of
+  prey)."
+- Safe-wood branches, pear, apple or beech, with platforms at different
+  levels.
+- The case against a glass tank, which the hub gave as dust and the
+  RSPCA gives as air: "degus housed in fish tanks or glass vivariums can
+  suffer from respiratory problems, as they don't allow enough air to
+  circulate in and out." This also answers the reader's complaint about
+  a page titled tank setup for a species that must not live in a tank.
+- A solid enclosure bottom under a deep layer of bedding. The hub's six
+  inches is not a figure the RSPCA gives, so it did not move.
+
+Moved into the feeding guide: coprophagy as a requirement. "They need to
+be able to eat their own droppings to get their essential nutrients and
+keep their digestive system healthy."
+
+Moved into the health guide: vitamin A deficiency and liver disease,
+which sit on the RSPCA's own list alongside diabetes, tail loss, heat
+stroke and respiratory infection.
+
+### What the hub lost anyway
+
+- Cage, three sizes across the set. Hub: 24x18x36. Setup guide:
+  24x18x24. The hub's own cost table: a 24x24x48 product. None was
+  sourced, so PetMD settles it at "about 28″ L x 18″ W x 28″ H" for two
+  degus, and the setup guide now carries that.
+- Bar spacing. The hub's half an inch was right and its article was
+  wrong: the setup guide said "an inch or less for adults." PetMD says
+  "no more than a half inch," and the setup guide now says that.
+- Temperature. Hub: 60 to 72°F, "cannot cope above about 80." The health
+  guide's emergency line is 77°F, so the hub's ceiling sat three degrees
+  past it. Setup guide's 65 to 70°F with nothing approaching 77 is the
+  row.
+- Wheel: 12 inches or more, against the setup guide's 11 to 12.
+- Bath medium: "chinchilla dust rather than sand," a flat reversal of the
+  enrichment guide's "Use sand for degus, not dust."
+- Bath length: ten to fifteen minutes, against the enrichment guide's
+  twenty.
+- Pellets: a tablespoon per degu, against the feeding guide's 1 to 2.
+- Carrot, sweet potato, beetroot and parsnip "in very small pieces as an
+  occasional treat," against the health guide's line that even small
+  amounts of carrot can trigger the disease.
+
+### Deep-dive fixes
+
+- Cost guide: "Upfront Setup: Roughly $100 to $300" sat directly above
+  its own table, which sums to about $375 to $520 of equipment before
+  the animals. The reader: "the $100 to $300 setup figure sitting above a
+  table that disproves it." Heading, seoTitle, seoDescription,
+  description and the setup FAQ all corrected to the table.
+- Lifespan, three figures across three pages. Encyclopedia: "1-4 years in
+  the wild; 6-7 years in captivity." Cost guide: "5 to 8 years, with some
+  reaching 10 to 13." Chinchilla comparison: "5 to 9 years, some reaching
+  the low teens." The colony management paper the enrichment guide
+  already cites settles it: "Being a prey species, they seldom live
+  longer than 2 years in the wild" and "in captivity they live up to 5-8
+  years." All three pages now carry that, and the unsourced 10 to 13 is
+  gone.
+- Feeding guide: "steer clear of rabbit food entirely, it can contain an
+  ingredient that's genuinely toxic to degus." The reader flagged it as
+  "a fact copied without being understood." The ingredient is a
+  coccidiostat, the anti-parasitic feed additive routinely included in
+  rabbit and poultry feed, and it is now named.
+- Tank setup guide: the sand bath had no session limit, against the
+  enrichment guide's "Do not leave sand in permanently." Now twenty
+  minutes and a link to why.
+- Six of the reader's link asks added. The reader's structural point,
+  that "every deep dive links out to gerbil or chinchilla pages and
+  almost never to its own species' siblings," was exactly right: before
+  this pass not one degu guide linked to another.
+
+### Also fixed
+
+RELATED_ARTICLES had no entry for degu-legal-guide, the second missing
+legal guide this batch after red-footed tortoise. Added. Worth a sweep
+across every species with a legal guide.
+
+### Open
+
+- The six things not covered anywhere, in docs/READER_LOG.md: how to
+  introduce or bond two degus and re-pair a survivor, how to sex them and
+  what a mis-sexed pair costs, where to source a bonded pair and how to
+  judge a healthy animal, a cage cleaning schedule for a deep dig layer,
+  out-of-cage time and degu-proofing, and what happens when one of a pair
+  dies.
+- Bonding is the sharpest. The set tells the reader to buy two eight
+  times and never tells them how, and four pages say introductions of
+  unfamiliar adults fail.
+
+## Savannah Monitor (2026-09-15, batch I, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus 5 agent. Savannah monitor was
+picked for batch I as the lizard and to clear one of the six enrichment
+guides carrying the "Other quantities are available" template fragment.
+
+Set grade: B-. "The build and legal pages are genuinely good, and the set
+is undone by a hub whose numbers fight the pages underneath it and by a
+feeding question nobody answers." Tank setup A, handling A-, legal A-,
+encyclopedia B+, enrichment B, cost B-, hub C+, health C+.
+
+### The missing feeding guide
+
+This species has no feeding guide, and the reader's summary of what that
+cost them is the sharpest sentence in the batch: "I could build the
+enclosure, wire the heat and light, buy legally, and handle the animal. I
+could not feed it with confidence."
+
+The only feeding schedule anywhere in the set was one hub line, "Feed
+juveniles daily. Feed adults 3 to 5 times per week," which no article
+repeated or sourced. It is also wrong: LafeberVet and Tree of Life Exotic
+Pet Medical Center, the two veterinary sources the set already cites, both
+independently say adults eat two to three times a week.
+
+Per the standing move for a species with no feeding guide, a sourced Diet
+Basics section now sits in the tank setup guide: gut-loaded insects as the
+staple, lean mice, chicks or freshwater fish as occasional items, juveniles
+daily or every other day and adults two to three times a week, calcium
+dusting with D3 only where UVB is absent, a weekly multivitamin, and
+LafeberVet's minimum 2:1 calcium to phosphorus ratio. On portion the
+honest answer is that the veterinary literature does not give one, and the
+section says so.
+
+### The hub fought its articles on eight figures
+
+All gone rather than moved.
+
+- Size, three figures across three pages. Hub: 3 to 5 ft, 6 to 15+ lbs.
+  Handling: 3 to 4 feet, 8 to 15 pounds. Encyclopedia: 2.5-4 feet. The
+  reader: "Three different animals." Tree of Life Exotics settles it at
+  "3-4 ft (90-120 cm) average adult length; 8-15 lbs (3.6-6.8 kg)," which
+  is the handling guide's figure exactly, so the handling guide is the
+  source and the encyclopedia now matches.
+- Basking. Hub: 130 to 150F surface. Tank setup: 140 to 150F. "A 130F
+  floor is ten degrees of daylight between two pages."
+- Cool side. Hub: 78 to 82F, and no night drop at all. Tank setup: 75 to
+  85F with nights at 70 to 75F.
+- Humidity. Hub: 60 to 70% in the burrow area. Tank setup: around 50%
+  ambient plus a genuinely humid burrow.
+- Substrate. Hub: 12 inches or more, and its shopping checklist said
+  "12 inch+". Tank setup: 12 to 24 inches or more. The reader noticed
+  that the checklist, the part they would actually shop from, carried the
+  failing figure.
+- Vet exam. Hub: $70 to $120. Cost guide: $50 to $100.
+- Enclosure cost. Hub: $500 to $1200 for an 8x4x4 build. Cost guide: $650
+  to $730 for an 8x2x2 that does not fit the animal. The hub priced the
+  right-sized box below the wrong-sized one.
+- Lifespan. Hub: 5 to 8 years. Cost guide: 10 to 15 commonly cited, 15 to
+  20 achievable, with many dying in their early teens.
+
+And the defect that is not a number: the hub argued for an
+invertebrate-heavy diet and then listed "Varied whole prey diet (roaches,
+eggs, mice, rats)" on the checklist, "putting the two items it just
+blamed for killing the species on my shopping list."
+
+### Deep-dive fixes
+
+- Legal guide, wrong about itself in three places. It says "the six
+  places that do restrict it," "Three of the six restrictions," and
+  "Rhode Island is the only one of the six," above its own eleven-row
+  table and its own closing "Forty-one of the 52." The article was
+  written when the matrix held six jurisdictions and five were added
+  later. Corrected to eleven, and the Rhode Island paragraph now names
+  the other permit routes: five outright bans, six paperwork.
+- Enrichment guide, two stranded sentences. "Other quantities are
+  available and an enclosure for this species will need many" and "The
+  board is sized for a lizard and not a dog, which is the gap that used
+  to sit here." The reader: "reads like a product was pulled and the
+  prose was not." Both rewritten as real sentences. This clears one of
+  the six enrichment guides carrying the fragment; the other five,
+  Madagascar hissing cockroach, chinchilla, ackie monitor, Argentine
+  tegu and hermit crab, are still open.
+- Encyclopedia wildLifespan held a captive figure again, "10-20 years."
+  Seventh instance across batches G, H and I. Now says the wild figure is
+  not well documented.
+- Six of the reader's seven link asks added. The encyclopedia one was
+  skipped because encyclopedia overviews render as plain text and no
+  other entry carries a link.
+
+### Open
+
+- The eight things not covered anywhere, in docs/READER_LOG.md. Three of
+  them, feeding schedule, portion, and supplement frequency, are now
+  answered in the tank setup guide. What remains: what a healthy adult
+  weight or body condition score actually is with monitor numbers, how to
+  buy one and what to check before paying, building the 8x4x4 (materials,
+  ventilation, floor loading, containing damp soil), maintenance of a deep
+  soil bed, how to find a vet with monitor experience, and free-roam
+  safety.
+- The health guide is the weak page and the reader was blunt about it:
+  "Finished it, fast, because it is thin. It names four problems and says
+  see a vet." It is the page that should carry body condition numbers for
+  this species and instead links out to a general one.
+
+## African fat-tail, corydoras catfish, red-footed tortoise, degu, savannah monitor (2026-09-15, batch I species check)
+
+One Fable agent covering all five species on branch
+claude/hub-pacman-frog-80291s from base e69e513, run once after every
+species was done and pushed, per the batch prompt. It read diffs rather
+than whole files, reopened the source URL behind every number the batch
+changed (PetMD on the degu cage and bar spacing, the Frontiers colony
+management paper on degu lifespan, Degutopia on the coccidiostat,
+Aquarium Co-Op on cory barbels and tank size, Cadillac Vet on fat-tail
+substrate and calcium, LafeberVet and Tree of Life Exotics on savannah
+monitor size, schedule and supplements, Tree of Life on the fat-tail
+schedule, Wikipedia for the Osteogaster revision), fixed every finding
+on the branch, and committed "African fat-tail, corydoras catfish,
+red-footed tortoise, degu, savannah monitor: species check". Nothing
+merged.
+
+### Scope
+
+Clean apart from one stretch. The diff is the five guide entries, the
+five species' MDX plus the degu vs chinchilla piece (a same-page copy
+of the moved lifespan, allowed), this file, docs/READER_LOG.md,
+READMEFIRST.md, docs/TODO.md, three RELATED_ARTICLES lines (the three
+missing legal guides), and three encyclopedia fields, all for batch
+species and all traced to a source that was opened again here. Savannah
+monitor adultSize and wildLifespan match Tree of Life Exotics and the
+cost guide; degu wildLifespan matches the colony paper's "seldom live
+longer than 2 years in the wild" and "up to 5 to 8 years" in captivity.
+The stretch is the corydoras `scientific` field: the conflict it fixed
+was with the entry's own history paragraph, not with a deep dive, which
+is narrower than the batch prompt's grant. Kept, because the source is
+real (Dias et al. 2024, Zoological Journal of the Linnean Society, and
+Wikipedia's Osteogaster page confirms the bronze cory as Osteogaster
+aenea), the field was self-contradicting, and reverting it would put
+the contradiction back. No shared class guide row, no other src file,
+no SHORT_LABELS change needed.
+
+### Every number the batch changed, checked against its source
+
+All held. Degu cage 24x18x24 to 28x18x28 and bar spacing "an inch or
+less" to "no more than half an inch": PetMD states both verbatim. Degu
+lifespan "5 to 8, some 10 to 13" and "5 to 9, some low teens" to 5 to 8
+captive years: the peer-reviewed colony paper outranks PetMD's 5 to 9
+and states the figure. Degu setup $100 to $300 to $375 to $520: the
+table sums to $374 to $518. Fat-tail sand: Cadillac Vet gives both the
+70/30 topsoil and play sand mix and "we do not recommend keeping them on
+sand", so the feeding guide's flat ban was the wrong reading. Cory
+barbels: Aquarium Co-Op's "may be caused by other factors like poor
+water quality" is on the page, and the health guide had no Sources
+block at all, so the enrichment guide's cited reservoir claim wins.
+Savannah adult 2 to 3 feeds a week: both vet pages state it, and the
+old hub's 3 to 5 had no article behind it. Savannah size 3 to 4 feet, 8
+to 15 pounds: Tree of Life states it exactly. Red-foot growth figures
+are the handling guide's own Hepper chart, unchanged. Savannah legal
+"six" to "eleven": the table has eleven rows, five bans and six permit
+or breeder routes. The unsourced fat-tail "half the body mass" was cut,
+not replaced.
+
+### What the check found, and fixed
+
+The pattern is the one batches D, E and H were graded on and F and G
+had stopped: the router step copied source narration into hub rows,
+and this time the deep-dive fixes wrote new narration too.
+
+- Fat-tail hub: five rows carried it ("sources disagree", "most hobbyist
+  care sheets say... one veterinary clinic source", "flagged by an
+  exotics vet source", "no source gives one universal day count",
+  "care sources commonly cite... academic longevity database"), plus
+  the calcium FAQ and the feeding route line. All pre-existing in the
+  feeding and cost guides, which the batch prompt says to settle before
+  the row is written. Settled in the deep dives (both ranges kept, the
+  RULES form: state the range, say which end and why) and the rows,
+  FAQ and route now copy the settled sentences.
+- Fat-tail feeding guide: the seoDescription still said "a tail storing
+  nearly half its body mass" after the excerpt, FAQ and body lost the
+  claim, the same frontmatter-copy miss batch F named. Rewritten to 156
+  characters. The feeding guide's new sand sentence linked "the
+  topsoil-and-sand mix the setup guide builds on", a sentence about the
+  site; now "a topsoil-and-sand mix".
+- Fat-tail emergency card: the health guide's retained-shed line ("see
+  a vet if constriction or tissue death has already started") was not
+  on the card, and the impaction bullet had dropped "lethargy" from the
+  guide's list. Both added; six bullets now.
+- Corydoras health guide: the batch's hedge fix named its source in the
+  body and in a FAQ ("Aquarium Co-Op's position is that...") and quoted
+  it, then copied that into the hub row. Rewritten in the site's words
+  in both FAQs, the body and the row, and Aquarium Co-Op added as the
+  guide's first Sources entry, since the claim now rests on it. The
+  closing "Husbandry Pattern" paragraph still carried the old confident
+  mechanism ("sharp substrate combined with elevated nitrates causes")
+  as a same-page copy; brought to the hedged version.
+- Corydoras emergency card: fifth bullet ("constant dashing to the
+  surface") was written from the enrichment guide, not copied from the
+  health guide. Removed; the "Surface dashes" row still carries it.
+- Red-foot hub: the Diet row named PetMD, the UVB row narrated "most
+  detailed care sheets... some UVB researchers", the Lifespan row and
+  FAQ said "some care sheets putting", and two route lines described
+  the disagreement ("two camps disagree on", "how care sheets divide").
+  All copied from the feeding, tank setup and cost guides, so those
+  three sentences were rewritten to state the figures (the PetMD inline
+  link went; PetMD stays in Sources) and the rows, FAQ and routes copy
+  them. The feeding guide's new "which most individuals reach close to
+  within 5 to 10 years" was garbled; now "come close to within". The
+  vetLine's "Find a vet with chelonian experience" had hardened the cost
+  guide's "worth finding"; hedge restored. Cost route line "$150 to $900
+  for the tortoise" merged the hatchling and adult ranges; split.
+- Degu: the moved RSPCA content arrived with its name attached in
+  seven places across the tank setup, feeding and health guides ("per
+  PetMD", "The RSPCA asks for", "The RSPCA is direct that", "The RSPCA
+  puts it as", "The RSPCA treats this as", a heading "Two More on the
+  RSPCA's List", "sit on the RSPCA's list"), plus "despite what this
+  guide is filed under" and "which degu keepers are consistently warned
+  against", and six hub rows, the vetLine and a route line copied it.
+  All rewritten to state the fact; the RSPCA pages are in each guide's
+  Sources. The vs chinchilla FAQ had gained "A chinchilla bought for a
+  ten-year-old can still be alive when that child finishes college",
+  growth the prompt did not ask for; cut, and "Expect" softened back to
+  "typically". The enrichment guide's "and other sizes are available"
+  fragment, the same template leftover savannah monitor was picked to
+  clear, cut.
+- Savannah monitor: the new Diet Basics section opened with "There is
+  no separate feeding guide for this species yet... so the essentials
+  sit here" (the site talking about itself) and named LafeberVet and
+  Tree of Life five times, one of them a near-quote; four hub rows
+  copied it. Rewritten to state the diet, schedule and 2:1 ratio; both
+  pages are in the new Sources block. The Stop signals row and the
+  handling sentence it copies lost "LafeberVet's instruction". Cost
+  route line split into the juvenile and adult ranges. Emergency card:
+  fifth bullet (the bite, from the handling guide) was not on the
+  health guide's list; removed, the handling guide keeps it.
+- Degu cost seoDescription was 140 characters, under the 150 floor,
+  before and after the batch's edit; now 157.
+
+Left alone, and named: the savannah monitor handling guide narrates
+LafeberVet and Tree of Life in six more sentences that no hub row
+copies, all pre-existing; the red-foot Fruit row's "commonly cited at";
+the fat-tail cost guide names AnAge, where the recorded maximum is the
+database's own fact. None of these came from the batch.
+
+### Review file
+
+Each species has its first-pass section. Two counts did not match the
+diff and are corrected in place above: fat-tail said two links were
+added (three were), red-foot said three (it listed four). Corydoras'
+raw reader output is not in docs/READER_LOG.md (the other four are),
+and none of the five sections carries the "Numbers checker" subsection
+the batch prompt asks for (batch H's do), nor an "Encyclopedia"
+subsection for the three entries changed; the encyclopedia changes are
+described in prose instead. Four of the five sections give grades in
+one prose line rather than the leopard gecko grade table. Every stated
+fix was checked against the diff and every one is in it; unlike batch
+H, nothing was claimed that did not happen. The corydoras reader
+output is the one thing the batch session must file itself.
+
+### Gates on the branch head
+
+check-internal-links, check-related-articles, check-affiliate-mdx,
+check-cost-coverage, check-seo-tags, check-voice --strict (0 errors)
+and `npx eslint . --quiet` all pass. check-species-numbers for all five:
+every line marked hub matches a deep dive; the strict exit still reports
+advisory groups (a cost table's product size against a setup minimum,
+hatchling against adult price, and the encyclopedia adult-size rows the
+hub carries with no source), none of them a hub-versus-deep-dive
+disagreement. check-voice per changed slug: one warning each, same as
+at the base commit.
+
+### Verdicts
+
+African fat-tail: fixed on the branch. Corydoras catfish: fixed on the
+branch, with the raw reader output still to be pasted into
+docs/READER_LOG.md by the batch session. Red-footed tortoise: fixed on
+the branch. Degu: fixed on the branch. Savannah monitor: fixed on the
+branch. No redo.
+
+### Pass grade: B-
+
+Every number the batch changed was researched for real and went the
+right way, the three legal guides that were missing from
+RELATED_ARTICLES were caught, and the review file describes fixes that
+actually happened. Against that, the batch put source names and source
+narration into hub rows on all five species and into the deep dives on
+three of them, which is the single defect the Fable check was
+reinstated to catch and which batches F and G had already shown is
+avoidable; it wrote two emergency-card bullets instead of copying them,
+left a frontmatter copy of a retired claim behind again, folded the
+reader-review and reader-fixes commits into the hub commit with no
+before-and-after sentence list, and filed no Numbers checker subsection
+and no corydoras raw output.
+
+## Mourning Gecko (2026-09-15, batch J, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus 5 agent. Mourning gecko opened
+batch J as the strongest inbound target left on the list, nine articles
+pointing at it: African fat-tail from batch I on three pages, gargoyle
+gecko from batch H on four, the shared three-gecko overview, and tokay.
+Both of the last two batches' gecko work gets checked against fresh eyes
+here.
+
+Set grade: B. "The deep dives are honest, specific and unusually willing
+to say the sources disagree; the hub sitting on top of them is a
+lower-quality duplicate that contradicts them on five numbers." Feeding
+A, cost A-, health A-, handling B+, tank setup B+, enrichment B+,
+encyclopedia B, hub C+.
+
+### Numbers checker
+
+`check-species-numbers mourning-gecko --strict` before the rebuild, 78
+sentences with numbers across 31 groups. Three real hub-versus-deep-dive
+conflicts, the rest agreeing:
+
+- Enclosure. Hub: "An 18x18x24\" enclosure is suitable for a small colony
+  of 3 to 5 mourning geckos." Tank setup: "A 12x18x18 inch, tall,
+  front-opening enclosure works for a pair or small group of up to about
+  three to five," with 18x18x24 as the step up for a bigger group. The
+  reader: "Same group, two tanks, and only the bigger one is priced."
+- Food replacement. Hub: "Remove and replace after 48 hours." Feeding:
+  "Discard and replace food every 24 to 48 hours." The hub picked one end
+  of a range without saying so.
+- Adult size. Hub and encyclopedia: 3 to 4 inches. Handling guide: "just
+  3.5 to 4 inches total."
+
+### The wrong genus
+
+The hub's FAQ written to clear up the house gecko confusion said
+"Lygodactylus lugubris, the mourning gecko." The species is
+Lepidodactylus lugubris, which every other page in the set has, the
+encyclopedia included. It is the one defect here a reader would catch and
+a checker would not, and it sat in the sentence whose entire job was
+naming the animal correctly. Gone with the old FAQs.
+
+Two more the reader caught, also gone with the old sections: hatchling
+geckos called "nymphs", an insect word, and a sentence that never
+recovered from its own opening, "Monitor colony reproductive rate in
+optimal conditions, mourning gecko populations can grow quickly."
+
+### Encyclopedia
+
+Two fields, both researched against ReptiFiles' care guide, which the
+set already cites on three pages.
+
+- adultSize was "3-4 inches (7-10 cm)" against the handling guide's 3.5
+  to 4. ReptiFiles: "just 3.5\" to 4\" (8.5-10 cm) long." The handling
+  guide was right and the encyclopedia now matches it.
+- wildLifespan was "5-10 years", the eighth instance of a captive figure
+  sitting in the wild field across batches G, H, I and J. ReptiFiles
+  gives "as long as 10 years, and there have been some claims of 15" in a
+  care context, and no source found gives a wild figure at all. Now says
+  so.
+
+### Deep-dive fixes
+
+- Cost guide lifespan. It said "typically 10 to 15 years" in four places,
+  which is firmer than its own source supports. ReptiFiles' shape is "as
+  long as 10 years, and there have been some claims of 15", and the
+  heading, body, FAQ and description now carry that.
+- Feeding guide schedule, settled. The reader graded this page A
+  specifically because "it tells me the sources disagree instead of
+  inventing a number", and that honesty is worth keeping, but a hub row
+  cannot copy a narrated disagreement, and a reader still has to decide
+  what to do on Tuesday. ReptiFiles' feeding page settles it: fresh CGD
+  every 48 hours and dusted insects once or twice a week. The page now
+  leads with that and keeps the spread it found as the range a keeper
+  will meet, rather than as the answer.
+- Feeding guide calcium. Added the standing dish of calcium powder, which
+  the cost guide has been pricing as a line item ("Calcium
+  always-available dish") with no page explaining it, plus the detail
+  that fruit flies can be dusted by shaking them in a container with the
+  powder.
+- Solo versus colony, settled between two deep dives. Handling: "keeping
+  a group is more a keeper preference than a hard requirement."
+  Enrichment: "A colony over a single animal" and "You can, and it is an
+  odd choice for a colonial parthenogenetic species." The enrichment
+  guide has the better case, so the handling guide now says a lone gecko
+  survives and lays fine, and a group is still the default for a species
+  that lives in colonies.
+- Enrichment guide citation that was not one. The anchor "study on tokay
+  geckos" pointed at our own tokay enrichment post. The reader: "which
+  reads like a citation and is not one." The study is now named by
+  journal and year in the sentence, its Sources entry was already there,
+  and the internal link says what it actually goes to.
+- The affiliate template fragment, one more shape: "Other flavors and
+  sizes are available." Cut.
+- Six of the reader's eight link asks added.
+
+### Open
+
+- The six things not covered anywhere, in docs/READER_LOG.md. The first
+  two are the same gap and the sharpest in the set: what to do with the
+  eggs and the surplus animals. Three pages say the colony grows on its
+  own, the old hub said "population management may eventually be
+  necessary," and no page says what that means or where a female puts her
+  eggs. A parthenogenetic species is the one case where breeding
+  management is not an optional advanced topic.
+- Also open: culturing fruit flies, which the gut-loading guide does not
+  cover; sourcing and maintaining a bioactive cleanup crew; picking a
+  healthy animal at purchase; and what to do once a gecko is loose in the
+  house, which every page tells you to prevent and none tells you to
+  solve.
+
+## Ackie Monitor (2026-09-15, batch J, single pass, before the router hub)
+
+Extractor set of nine pages. One Opus 5 agent. Ackie monitor was picked
+for batch J because savannah monitor from batch I points at it from two
+pages, and because the ackie enrichment guide is where savannah borrows
+its genus-level problem-solving evidence from, which meant batch I's
+reasoning rested on a page nobody had read yet.
+
+Set grade: B-. "The deep dives are genuinely good and the hub in front of
+them is wrong on size, heat, substrate, supplements and difficulty."
+Legal A, handling A-, tank setup A-, feeding A-, enrichment B+, cost B,
+health B, encyclopedia B-, hub C-.
+
+### Numbers checker
+
+`check-species-numbers ackie-monitor --strict` before the rebuild, 81
+sentences with numbers across 38 groups. The hub disagreed with a deep
+dive on nearly every figure it carried, and all of them are gone rather
+than moved:
+
+- Enclosure. Hub: "A 6x3x3 ft enclosure is the minimum for a pair." Tank
+  setup: "5 feet long by 2.5 feet wide by 4 feet tall as the minimum for a
+  single adult." The reader: "The hub's pair minimum is smaller in height
+  than the deep dive's single-animal minimum."
+- Basking, three ranges across two pages that both call it the single most
+  important number. Hub housing: "120 to 150 degrees F at the surface."
+  Hub health, same page: "cannot reach 130 to 150 degrees F." Tank setup:
+  "roughly 130 to 170°F."
+- Cool side. Hub: "80 to 85 degrees F ambient." Tank setup: "around 75 to
+  80°F."
+- Substrate. Hub: "A minimum of 12 inches." Tank setup: "12 to 24 inches."
+  The hub's own enrichment text said burrows run 12 to 24 inches
+  underground, so its minimum could not hold the burrow it described.
+- Supplements. Hub: "calcium w/D3 and a reptile multivitamin on a
+  consistent schedule." Feeding: a multivitamin "occasionally rather than
+  on a fixed weekly schedule, over-supplementing vitamins is a real risk."
+- Rodents. Hub: "Whole prey items offer nutritional completeness when used
+  judiciously." Feeding: "a rodent-heavy diet is directly linked to the
+  fatty liver disease that shortens more captive monitor lifespans than
+  almost anything else."
+- Five prices, each differing from the cost guide's own table.
+- Cohabitation. The hub pushed pairs and trios in three places. No deep
+  dive mentions cohabitation at all, and the setup guide sizes for one
+  animal. Gone with no replacement, and now on the not-covered list.
+
+### Difficulty, settled against the encyclopedia
+
+Three verdicts across the set: hub and encyclopedia "Advanced", handling
+guide "classed as an intermediate reptile rather than a true beginner
+one", legal guide "commonly recommended for a first-time keeper".
+
+RULES says the hub's difficulty is the encyclopedia entry's, but here the
+encyclopedia was the outlier. ReptiFiles, the source behind five of this
+set's seven deep dives, rates the species Intermediate, which is what the
+handling guide already said. So the encyclopedia field moved to
+Intermediate and the hub follows it, rather than the hub following a
+field no source supports. The legal guide's beginner phrasing is now
+"the monitor lizard most often recommended to someone keeping their first
+one", which is what it was actually describing.
+
+### Encyclopedia
+
+Two more fields, both researched against ReptiFiles' care guide.
+
+- adultSize was "18-28 inches (45-70 cm) including tail" against the hub
+  FAQ's 24 to 28 and the legal guide's "tops out around two feet."
+  ReptiFiles: "adult ackies are typically around 2'/0.6m long, but they
+  have been reported as small as 17.3"/44cm and as large as 30"/76cm."
+  The field now carries the typical and the reported extremes, and "tops
+  out around two feet" became "runs around two feet", since two feet is
+  the typical rather than the ceiling.
+- wildLifespan was "15-20 years", the ninth captive figure found in the
+  wild field across batches G through J. Searching turned up no wild
+  figure from a source worth citing, so the field now says the quoted
+  range is a captive-care one.
+
+### Deep-dive fixes
+
+- The ambient humidity figure. The reader flagged that only the hub had
+  one, 40 to 60%, and it was unsourced, so a rebuild would have lost the
+  number entirely. ReptiFiles' humidity page gives "average ambient
+  humidity levels between 20-50%" with burrow humidity "80% or higher",
+  and notes that "substrate moisture content is generally more important
+  than ambient humidity", which is the argument the setup guide was
+  already making without a number attached. Added to the body and as a
+  new FAQ, with the source.
+- The affiliate template fragment, "Other quantities are available and a
+  proper depth needs several." Cut. This was one of the two the batch was
+  picked to clear.
+- Four of the reader's eight link asks added, at the sibling-link cap of
+  one per article.
+
+### Open
+
+- The six things not covered anywhere, in docs/READER_LOG.md. Two are
+  sharper than the rest. Cohabitation: the old hub advocated pairs and
+  trios in three places with nothing under it, so removing it leaves a
+  real question unanswered rather than a claim corrected. And a target
+  adult weight, since the health guide asks for a weekly kitchen-scale
+  weigh-in and no page says what the number should be trending toward.
+- Also open: choosing a breeder and checking the animal at pickup,
+  interim housing for a hatchling that cannot fill a 5x2.5x4 yet, sexing,
+  and maintenance of 12 to 24 inches of substrate.
+
+## Garter Snake (2026-09-15, batch J, single pass, before the router hub)
+
+Extractor set of nine pages. One Opus 5 agent. Garter snake was picked
+for batch J because the red-footed tortoise overview from batch I points
+at it, and because it is one of only two snakes left on the list.
+
+Set grade: A-, the highest in two batches. "The deep dives are specific,
+sourced to statute and study, and unusually willing to say what is not
+known; the hub drags it down by contradicting them." Health A, tank setup
+A, feeding A, legal A, cost A-, handling A-, enrichment B, encyclopedia
+B, hub C+.
+
+### Numbers checker
+
+`check-species-numbers garter-snake --strict` before the rebuild, 68
+sentences with numbers across 30 groups. The deep dives agreed with each
+other almost everywhere. Every conflict was the hub against one of them,
+and all are gone rather than moved:
+
+- Warm end. Hub: "a surface temperature of 85 to 88 degrees F (basking air
+  up to 90 degrees F)." Tank setup: "85 - 90°F (up to 95°F on some
+  sources)", with the steer to "treat the lower end as a floor rather than
+  a ceiling."
+- Supplements. Hub: "vitamin B1 and calcium a couple of times a month if
+  fish or earthworms make up a significant part of the diet." Feeding and
+  health both: "add a vitamin B1 supplement if fish still make up more
+  than roughly a quarter of what your snake eats." A different trigger and
+  a different schedule, and the deep dives never tie B1 to earthworms at
+  all.
+- Feeding schedule. The hub gave two cases, mice weekly and earthworms
+  twice weekly, and omitted the third: fish-heavy at every 5 to 7 days,
+  which for a fish specialist is the likeliest one of the three.
+- Under-tank heater. Hub: $35 to $60. Cost guide: $35 to $70.
+- UVB. The hub's "low-output 5% T8 or 2 to 5% T5" was the only place on
+  the site giving a strength for this species. The setup guide's lighting
+  section describes the shift toward low-output UVB without naming a
+  number, so the row says that and no more.
+
+### The hub dropped the legal guide
+
+The reader's sharpest structural point, and it is not a number: "it drops
+the legal article entirely, which is the one thing a buyer needs before
+anything else." Garter snakes are native almost everywhere, so most
+states regulate them as wildlife rather than as pet-trade reptiles, and
+New York's own guidance says its native-species law "does not
+differentiate between wild-caught and captive-bred animals." A New York
+buyer reached five pages of husbandry before anything mentioned it. Legal
+is now the first first-week row and the last route.
+
+### Deep-dive fixes
+
+- The aspen substrate. The hub's checklist said "Aspen or cypress mulch
+  substrate" and the cost guide's table repeated it, against the setup
+  guide's "coconut fiber, cypress mulch, or dry leaf litter." The reader:
+  "Aspen is not moisture-retentive and the tank guide never lists it."
+  The cost table row now matches the setup guide, and so does the buy
+  list.
+- Semi-aquatic, hedged two ways. Enrichment: "Many garter snake
+  populations are semi-aquatic and hunt in water." Tank setup: "Garter
+  snakes are semi-aquatic, proficient swimmers in the wild." The setup
+  guide's is the claim the rest of the set is built on, including a water
+  feature sized to swim in, so the enrichment guide now matches it.
+- Five of the reader's eight link asks added, including two to shared
+  guides the set was leaning on without pointing at: the quarantine guide,
+  since the handling guide's one-to-two-week settling-in window is not a
+  quarantine and the reader noticed, and the sexing and body condition
+  guide, since the feeding guide sizes prey by body weight without saying
+  a scale is involved.
+
+### Dates
+
+Every garter snake guide carries a future publish date, 2026-09-24 or
+later, so no bumps were made. A bump would have dated the update before
+the article exists.
+
+### Open
+
+- The five things not covered anywhere, in docs/READER_LOG.md. Two are
+  the set's own loose ends rather than gaps: cohabitation is raised in the
+  tank setup and enrichment guides and settled in neither, and the live
+  litter the hub advertised, up to 80 young, has no neonate care behind it
+  anywhere.
+- Also open: brumation or a winter cooling cycle, thawing and prep for
+  frozen fish and worms, and how long to wait after a meal before
+  handling.
+
+## Oscar (2026-09-15, batch J, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus 5 agent. Oscar was picked for
+batch J because it sits in the overview with box turtle and California
+kingsnake, both already reconciled.
+
+Set grade: B+. "The deep dives are specific, honest about disputed
+causes, and would get me to a healthy fish; the hub is the weak link and
+the pages do not point at each other where they obviously should." Tank
+setup A, feeding A, health A-, enrichment A-, encyclopedia B, cost B-,
+handling B-, hub C.
+
+### Numbers checker
+
+`check-species-numbers oscar --strict` before the rebuild, 64 sentences
+with numbers across 24 groups. The hub understated the build in every
+line that had a price on it, and all of it is gone rather than moved:
+
+- Tank size, and this is the one that decides the purchase. Hub: "A
+  juvenile oscar needs at least 55 gallons, growing to 75 gallons or more
+  as an adult." Tank setup: "75 gallons is the widely recommended minimum
+  for a single adult... starting small and upgrading later is both more
+  expensive overall and more disruptive for the fish." The reader put it
+  best: "The hub's checklist tells me to make the exact mistake the cost
+  guide calls the biggest one."
+- Canister filter. Hub: $100 to $200. Cost guide: $325 to $340.
+- Heater. Hub: $25 to $45. Cost guide: $18 to $30.
+- Monthly running cost. The hub's annual table worked out to roughly $9 to
+  $15 a month against the cost guide's "roughly $35 to $40 a Month."
+- Feeding frequency. Hub: "Feed once or twice daily," flat. Feeding guide:
+  three times daily under 3 to 4 inches, twice at 3 to 8 inches, once or
+  twice over 8 inches.
+- Adult size, given twice on the hub itself: "12 to 14 inches or longer"
+  in one place and "10 to 14 inches, up to 16" in another.
+- Lifespan. Hub FAQ: "can live 10 to 20 years." Cost guide: "10 to 15
+  years typically, with well-kept individuals occasionally reaching close
+  to 20."
+
+### Encyclopedia
+
+wildLifespan was "10-20 years", the tenth captive figure found in the
+wild field across batches G through J. Searching turned up wild estimates
+only from aggregator sites that disagree with each other, nothing worth
+citing, so the field now carries the cost guide's captive range and says
+the wild is not well documented.
+
+### Deep-dive fixes
+
+- Hole-in-the-head told two ways. Health guide: "Poor water quality,
+  elevated nitrates especially, is the common thread running through
+  nearly every condition on this list." Feeding guide: "Overfeeding and
+  uneaten food fouling the water are the primary driver behind
+  Hole-in-the-Head disease in most sources." Both pages then hedge in
+  opposite directions. Neither side is settled in the literature, so both
+  now say so in the same words and give the same two-part answer: weekly
+  25 to 30% water changes with nitrate under about 40 ppm, and real
+  variety in the diet. The 40 ppm figure had been sitting in a FunFact box
+  on the feeding page and nowhere else; it is now on the health page too,
+  which is where a reader looking for it would go.
+- Six link asks added. The reader's structural complaint was that the
+  three pages that most obviously answer each other, setup, health and
+  feeding, never point at each other, and that the enrichment guide
+  "links three other species and none of its own siblings." All three
+  crossings are now made, one per article.
+
+### Dates
+
+The health and feeding guides changed a claim and are bumped. The rest
+were link-only, and the enrichment guide is future-dated.
+
+### Open
+
+- The six things not covered anywhere, in docs/READER_LOG.md. The one
+  worth acting on first is a single target water parameter set for an
+  established oscar tank: ammonia, nitrite and nitrate in one place. The
+  shared cycling guide covers dosing during a cycle and stops, so a
+  reader with a running tank has nowhere to look.
+- Also open: tank stand and floor loading for a 75 to 125 gallon build,
+  which nothing in the shared list touches; sexing and what to do if a
+  pair spawns, on a set whose cost guide prices a breeding pair;
+  metronidazole dosing, named as the treatment with no dose behind it;
+  plants and lighting for a tank whose occupant uproots everything; and
+  managing aggression once tankmates are in and fighting.
+
+## Amano Shrimp (2026-09-15, batch J, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus 5 agent. Amano shrimp closed batch
+J as the first invertebrate to get one, and because it shares a tank and
+a sinking-wafer line with corydoras from batch I.
+
+Set grade: B+. "The deep dives are genuinely good and honestly sourced;
+the hub that new readers land on first undercuts them on price, tank
+cost, and pH." Health A, tank setup A, cost A-, handling A-, feeding A-,
+encyclopedia B, enrichment B-, hub C+.
+
+### Numbers checker
+
+`check-species-numbers amano-shrimp --strict` before the rebuild, 42
+sentences with numbers across 14 groups. Every hub price sat above the
+cost guide's table and none of it is moved: the tank at $45 to $90
+against $18 to $30, the heater at $15 to $25 against $18 to $30, the
+sponge filter at $10 to $20 against $8 to $15, algae wafers at $10 to $20
+against $8 to $12. The shrimp themselves went the other way, "$3 to $6"
+against a cost guide that quotes a real listing at $6.39 to $7.99 and
+lands on $5 to $12, so the hub was under its own sourced floor. pH was 6
+to 8 against the setup guide's 6.0 to 7.5, and temperature appeared twice
+on the hub and differently, 65 to 82°F in prose and 68 to 76°F on the
+checklist, against a setup guide that says 64 to 82 tolerated with the
+cooler two-thirds better.
+
+### The stocking spread, and a figure attributed to a source that never said it
+
+The reader found the one real deep-dive conflict inside a single
+paragraph: "Fishkeeping World suggests roughly one shrimp per 2 gallons"
+against "Aquarium Co-Op's upper guidance runs closer to two shrimp per
+gallon". As the reader put it, that is 5 shrimp or 20 in a 10-gallon, and
+"often sits toward that denser end" is not a decision.
+
+Opening both sources made it worse than a disagreement. Fishkeeping World
+does say it: "As a good rule of thumb, you can add 1 Amano Shrimp per 2
+Gallons," alongside a 10-gallon minimum. Aquarium Co-Op says nothing of
+the kind. Their page gives no density at all: "They have a low bioload
+and do not need to be kept in groups, so they can live in most nano tanks
+(or larger), as long as there is a tight-fitting lid." The two shrimp per
+gallon figure was attributed to a source that does not carry it.
+
+Settled: one per 2 gallons, five in a 10-gallon, named as the only
+density figure any source states. Aquarium Co-Op's low-bioload point
+survives as what it actually is, an argument that a tank fighting an
+algae outbreak can carry more without a water quality problem, with the
+caveat that more shrimp in the same algae only means the supply runs out
+sooner.
+
+### Encyclopedia
+
+adultSize claimed this is "the largest freshwater shrimp species commonly
+kept in aquariums." The reader: "which bamboo and vampire shrimp beat
+outright." They do, and both are common enough in the trade for the claim
+to be wrong rather than arguable. Now "large for a dwarf shrimp, though
+bamboo and vampire shrimp are bigger still." Checked at the species check,
+since the pass had recorded no source for it: Fishkeeping World's bamboo
+shrimp page gives "up to 2-3 inches" and calls them "a common sight in
+freshwater aquariums", and Wikipedia's Atya gabonensis entry gives "15
+centimetres (6 inches)" for the vampire shrimp, against this species' 2
+inches. The overview field on the same entry still opens "the largest
+shrimp commonly kept in freshwater aquariums", left alone under the
+one-field rule and flagged for Mike.
+
+The wildLifespan field was already right, and worth noting as the shape
+the other nine should have taken: "No biological study of wild lifespan
+exists for dwarf shrimp; 2 to 3 years in an aquarium."
+
+### Deep-dive fixes
+
+- The feeding guide's algae FAQ claimed diatoms as a strength and
+  attributed the list to Aquarium Co-Op. The body never mentions diatoms
+  and the cited page does not make that claim. Cut to what the body and
+  the sources support.
+- The affiliate template fragment, "and other sizes are available." Cut.
+  This was the second of the two the batch was picked to clear.
+- Six of the reader's seven link asks added. The pattern here was that
+  every page names another page's topic without pointing at it: the cost
+  guide says general hardness matters and gives no number, the health
+  guide blames a calcium-short diet and never says where calcium comes
+  from, the handling guide names failed molts as the reason acclimation
+  matters and does not explain them.
+
+### Also fixed
+
+RELATED_ARTICLES gave amano shrimp only three shared guides, so its
+sidebar Health and More list was missing cycling, quarantine and the
+sick-tank check that every fish species carries. Added. Cherry shrimp and
+ghost shrimp have the same three-guide entry and the same gap, and both
+are outside this batch, so that is one line each for whoever takes them.
+
+### Dates
+
+Every amano shrimp guide is future-dated, 2026-09-17 or later, so no
+bumps were made.
+
+### Open
+
+- The five things not covered anywhere, in docs/READER_LOG.md. The one
+  that matters most is tankmates: which fish will eat or harass them, on
+  a species almost always bought as an addition to an existing community
+  tank. The three-shrimp overview compares shrimp to shrimp only.
+- Also open: how to find out whether your tap water carries copper, which
+  three pages tell a reader to verify and none tells them how; the cost
+  of the quarantine tank two pages require and the cost guide omits; and
+  what a berried female looks like, so a keeper can tell her from the molt
+  and illness signs on the health page.
+
+## Mourning gecko, ackie monitor, garter snake, oscar, amano shrimp (2026-09-15, batch J species check)
+
+One Fable agent covering all five, run after every species was built and
+pushed, base 246a511c. Every finding fixed on the branch in b30d6312.
+Pass grade C+.
+
+### The finding that set the grade
+
+Four of five hubs shipped FAQs that were written rather than copied
+verbatim from deep-dive frontmatter, which RULES requires and which is
+the easiest item in the whole router shape to get right. Garter snake,
+oscar and amano shrimp had all three written outright. Ackie monitor is
+the instructive one: its three questions were lifted correctly from the
+setup, feeding and health guides, and all three answers were reworded
+anyway. Only mourning gecko was a true copy on both halves.
+
+Worth recording because it nearly escaped: checking only the questions
+against deep-dive frontmatter returns three of five, and the check's
+count would have looked wrong. Checking the answers too returns four. A
+question that matches is not evidence the FAQ was copied.
+
+### Source names and narration, the fourth batch running
+
+All five species carried one somewhere, and the shapes are worth naming
+since the defect keeps changing costume rather than disappearing:
+
+- In a row, straightforwardly: "ReptiFiles recommends 5 feet long by 2.5
+  feet wide by 4 feet tall" (ackie), "commonly cited at 35 to 45%"
+  (oscar), "is the commonly cited range" (amano).
+- In a route line: "two stocking densities that serve different jobs"
+  (amano), after the batch had settled on one. The row was fixed and the
+  route line left advertising the old shape.
+- In an emergency card bullet: "ReptiFiles describes this plainly as a
+  highly preventable disease of neglect" (ackie).
+- As a narrated disagreement the batch copied instead of settling:
+  "with some sources going up to 95°F" (garter snake temperature). Step 4
+  exists to settle that before the row copies it, and it was skipped.
+- As the sentence carried by a deep-dive fix the batch itself wrote: the
+  amano stocking paragraph, which named Fishkeeping World and Aquarium
+  Co-Op to make a point about which of them published a figure. The check
+  ruled a reader does not need either name to use the number, and it is
+  right: the provenance belonged in the review file, which is where it
+  now lives alone.
+
+### Other findings
+
+- A hedge changed without cause. The ackie legal guide's "one of the most
+  commonly recommended monitor lizards for a first-time keeper" became
+  "the monitor lizard most often recommended", turning a soft claim into
+  a superlative while fixing something else in the same sentence.
+  Restored.
+- A hub row left stale against the batch's own fix. The garter snake "Why
+  a basin, really" row still read "Many garter snake populations are
+  semi-aquatic" after the enrichment guide it copies had been corrected
+  to "Garter snakes are semi-aquatic, proficient swimmers".
+- An oscar health FunFact rewrite that produced "a quality staple cichlid
+  pellet ... alongside a pellet that carries the vitamins". Restored to
+  the base wording with the link moved.
+- A voice regression on the garter feeding guide, contrast-cadence 0 to 1,
+  from a link sentence reading "weighing rather than eyeballing".
+- Two review-file errors: a claim that the mourning gecko enrichment study
+  was newly cited in Sources when that entry predated the batch, and a
+  garter snake link count of six against five in the diff. Both corrected
+  in place.
+
+### Encyclopedia
+
+Four fields changed across the batch, three verified against sources the
+check reopened itself: mourning gecko adultSize and wildLifespan, ackie
+difficulty, adultSize and wildLifespan, oscar wildLifespan. The fourth,
+amano adultSize, was changed on the reader's say-so with no source
+recorded, which is the one place this batch asserted rather than
+researched. The check researched it after the fact and it holds: bamboo
+shrimp reach 2 to 3 inches and are common in the trade, and Atya gabonensis
+reaches 15 cm, so "the largest freshwater shrimp commonly kept" was wrong.
+
+Left open in the same entry: the overview field still opens with the same
+claim in different words. One clause, same entry, outside the one-field
+rule the check works under.
+
+### Also left open, for a later pass
+
+Source narration in pre-existing text the batch did not touch and no hub
+row copies: two amano feeding FAQs ("Seriously Fish is direct about
+this", "Shrimp Science notes plainly") and one garter feeding FAQ
+("Sources land in a similar range").

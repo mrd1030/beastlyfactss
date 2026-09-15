@@ -8,67 +8,88 @@ export const geckoGuides = [
     image: "/assets/guides/african-fat-tail.jpg",
     tagline: "The calm, velvety cousin of the leopard gecko: gentle as can be!",
     funFact: "African fat-tailed geckos store fat in their wide, sausage-shaped tails as an energy reserve, just like leopard geckos. A plump tail is a sign of a healthy, well-fed gecko!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "30x12x12 in or larger enclosure", low: 90, high: 170 },
-        { item: "Under-tank heater with quality thermostat", low: 40, high: 70 },
-        { item: "3 hides (warm, cool, moist)", low: 20, high: 35 },
-        { item: "Damp sphagnum moss for moist hide", low: 5, high: 10 },
-        { item: "Cypress mulch or coconut fiber substrate", low: 15, high: 40 },
-        { item: "Digital thermometer (IR gun ideal)", low: 15, high: 30 },
-        { item: "Shallow water dish", low: 8, high: 15 },
-        { item: "Low-output UVB (optional but beneficial)", low: 45, high: 80 },
-      ],
-      annual: [
-        { item: "Dubia roaches, crickets, mealworms", low: 90, high: 160 },
-        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
-        { item: "UVB bulb replacement (if used)", low: 45, high: 80 },
-        { item: "Electricity (heat)", low: 30, high: 50 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
-      ],
-    },
-    sections: {
-      housing: `A 30x12x12" (20-gallon long) enclosure is the minimum for one adult African fat-tailed gecko, though a 36x18" or larger provides a better thermal gradient and more enrichment space. Like leopard geckos, AFTs are terrestrial - floor space is more important than height.
-
-Provide three hides: a warm hide (floor temperature 88 to 92 degrees F under the UTH), a cool hide (75 to 78 degrees F), and a moist hide filled with damp sphagnum moss on the warm side. The moist hide is critical - AFTs require higher humidity than leopard geckos and chronic dryness causes persistent shedding problems.
-
-Aim for 50 to 60% ambient humidity, which is higher than the 30 to 40% appropriate for leopard geckos. Cypress mulch or coconut fiber substrate help maintain this humidity level while remaining easy to clean. Use an under-tank heater on a quality thermostat as the primary heat source, verified with an infrared temperature gun. Low-output UVB is now recommended by reptile veterinarians.`,
-      diet: `African fat-tailed geckos are strict insectivores. Offer crickets, dubia roaches, and black soldier fly larvae as primary feeders. Mealworms can be offered occasionally. Feed juveniles every other day, adults 2 to 3 times per week. Prey should be no wider than the space between the gecko's eyes.
-
-Gut-load all feeder insects 24 to 48 hours before offering. Dust with calcium w/D3 at every juvenile feeding and 2 to 3 times per week for adults. A reptile multivitamin once weekly. A small dish of pure calcium powder placed in the enclosure allows the gecko to self-supplement as needed - this is particularly important for reproductive females.
-
-Fresh, dechlorinated water in a shallow dish must always be available. Unlike many reptiles, AFTs are relatively good about drinking from dishes and should be offered access continuously.`,
-      enrichment: `African fat-tailed geckos are among the calmest and most handleable gecko species available. Their slow, deliberate movements and natural docility make them ideal for keepers seeking a handleable gecko companion. With regular, gentle interaction, most become very relaxed and comfortable with human contact.
-
-Provide multiple hides at both ends of the thermal gradient, flat cork bark pieces and rock slates as basking and resting surfaces, and textured substrate for natural exploration. They are crepuscular, most active at dusk and dawn. Handle during these activity windows for the most relaxed interactions.
-
-Avoid handling during shed (identifiable by a dull, slightly grayish skin tone and clouding of the eyes). Always wash hands before handling to avoid introducing any chemical residues to the gecko's skin.`,
-      health: `Stuck shed (dysecdysis) is the most common health issue and is almost always prevented by a properly maintained moist hide. Stuck shed on the toes is the most dangerous - it constricts blood flow and leads to digit loss if not addressed. Soak the gecko briefly in shallow lukewarm water and gently remove retained shed with a damp cotton swab.
-
-Metabolic Bone Disease from inadequate calcium or vitamin D3 causes trembling, weakness, and skeletal deformities. Consistent supplementation and UVB exposure prevent it. MBD is entirely preventable with correct husbandry.
-
-Parasites are less common in AFTs than in many other gecko species but annual fecal exams are recommended, especially for wild-caught animals. AFTs are sensitive to humidity - chronically low humidity causes not just shedding problems but respiratory stress and immune suppression. Annual vet checks with a reptile-experienced veterinarian are recommended.`,
-      checklist: [
-        "30x12x12\" or larger terrestrial enclosure",
-        "Under-tank heater with quality thermostat",
-        "3 hides (warm, cool, moist)",
-        "Damp sphagnum moss for moist hide",
-        "Cypress mulch or coconut fiber substrate",
-        "Digital thermometer (IR gun ideal)",
-        "Calcium w/D3 + multivitamin supplements",
-        "Calcium dish (always in enclosure)",
-        "Shallow water dish",
-        "Dubia roaches, crickets, mealworms",
-        "Low-output UVB light (optional but beneficial)",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Quarantine, hygiene and
+    // thermostats cite the shared reptile guides in the sidebar's Health and
+    // More list. The old hub narrowed ambient humidity to 50-60% against the
+    // setup guide's 50-70%, never gave the humid hide figure at all, had the
+    // D3 supplement schedule backwards against the feeding guide, and gave a
+    // cool side and a lifespan that disagreed with the deep dives.
+    // Reconciled 2026-09-15 for batch I (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "A new gecko is quarantined away from any reptile you already keep, on paper towel, with its own tools and a fecal exam inside that window.", source: "reptile-quarantine-guide" },
+        { label: "Enclosure", value: "A 20-gallon long is the minimum for one adult, and a 36x18x16 inch (40-gallon breeder) is meaningfully better. Height buys little here: this is a terrestrial species, on the ground and under it.", source: "african-fat-tail-tank-setup-guide" },
+        { label: "Heat", value: "A heat mat on a thermostat. Aim for 88 to 92°F on the warm side, 75 to 80°F on the cool side, and a night drop to 70 to 75°F. Heat rocks and strong overhead basking bulbs both carry real burn risk.", source: "african-fat-tail-tank-setup-guide" },
+        { label: "Humidity", value: "Higher than a leopard gecko needs, though the enclosure stays mostly dry. Ambient around 50 to 70% works, and a permanent humid hide at 70 to 80% is the piece that prevents shedding problems.", source: "african-fat-tail-tank-setup-guide" },
+        { label: "Substrate", value: "For healthy adults, a naturalistic sandy-soil mix: roughly 70% topsoil to 30% play sand, or coconut fiber with reptile sand, at least 4 inches deep so the gecko can burrow. Quarantine animals and juveniles go on paper towel.", source: "african-fat-tail-tank-setup-guide" },
+        { label: "Not pure sand", value: "Keeping one on pure sand dries the gecko out and interferes with shedding, and it can cause impaction if swallowed with prey. That is a different thing from the topsoil-and-sand mix, which is what a burrowing species wants underfoot.", source: "african-fat-tail-feeding-guide" },
+        { label: "UVB", value: "They are nocturnal, and a high-D3 calcium supplement can carry them without it, but low-output UVB in the 2 to 5% band is increasingly recommended. Either way, run a 10 to 12 hour photoperiod.", source: "african-fat-tail-tank-setup-guide" },
+        { label: "Three hides", value: "A warm hide, a cool hide and a humid hide are what let a gecko choose its temperature and humidity while staying concealed, which is behavioral choice rather than a checklist item. Thermal choice is what the leopard gecko study ranked first.", source: "african-fat-tail-enrichment-guide" },
+        { label: "A humid hide that works", value: "Permanent rather than occasional, since fat-tails come from more humid West African habitats than leopard geckos and need noticeably more moisture.", source: "african-fat-tail-enrichment-guide" },
+        { label: "Feeding schedule", value: "Hatchlings eat daily. Juveniles run from daily feeding down to about 3 times a week, depending on how old a juvenile is taken to be, so feed a still-growing animal daily and move it toward the adult schedule as the tail fills out. Adults run from 3 times a week to a condition-based schedule where a gecko with a visibly fat tail eats only every 5 days.", source: "african-fat-tail-feeding-guide" },
+        { label: "Portion", value: "Roughly 2 appropriately sized bugs per inch of the gecko's body length, or simply as much as it eats in about 15 minutes. Prey should be no wider than the space between the gecko's eyes.", source: "african-fat-tail-feeding-guide" },
+        { label: "Calcium", value: "Plain, phosphorus-free calcium at most feedings: every feeding at the strict end, at least 3 times a week at the other. A calcium and D3 combo is generally used just once or twice a week on top of that.", source: "african-fat-tail-feeding-guide" },
+        { label: "Never feed", value: "Ladybugs, fireflies, monarch butterflies, box elder bugs, centipedes, bees, and wasps, generally because they're wild-caught or contain toxins. Only feed captive-bred, farmed insects.", source: "african-fat-tail-feeding-guide" },
+        { label: "Not eating", value: "A seasonal appetite drop in fall and winter is common in adults, and juveniles typically keep eating normally through it. An enclosure that isn't warm enough can trigger a false brumation response even outside the normal season.", source: "african-fat-tail-feeding-guide" },
+        { label: "The tail is the gauge", value: "There is no universal day count: the tail fat reserve genuinely lets healthy adults fast for weeks to several months without harm. A tail thinner than the neck, not just less plump, is the warning sign.", source: "african-fat-tail-feeding-guide" },
+        { label: "Handling, week one", value: "Two weeks after it comes home, and not before it is eating regularly. Once you start, support the whole body and let the gecko walk across your hands instead of gripping it. Skip handling right after a meal or during a shed.", source: "african-fat-tail-handling-guide" },
+        { label: "Temperament", value: "Among the calmest pet geckos available, often described as even more docile than the closely related leopard gecko. Adults tolerate handling well and usually stay calm through a session. Juveniles tend to be shyer and take longer to settle.", source: "african-fat-tail-handling-guide" },
+        { label: "Chirps and squeaks", value: "Discomfort, usually with being handled. A chirp or a squeak is the cue to ease off and put the gecko back down. An arched back with a slow tail-swish is the same message, stated more clearly.", source: "african-fat-tail-handling-guide" },
+        { label: "Tail drop", value: "Yes, if it is grabbed roughly or badly frightened, which is why the tail is never a handhold. The tail does grow back, and the replacement is smoother and more bulbous than the one it lost.", source: "african-fat-tail-handling-guide" },
+        { label: "Stuck shed", value: "Retained shed on the toes and tail tip, the single most common fat-tail-specific problem. It shows up when humidity is too low or no moist hide is available, and a proper moist hide plus correct humidity prevents almost all of it.", source: "african-fat-tail-health-issues-guide" },
+        { label: "The serious one", value: "Metabolic bone disease, from calcium or vitamin D3 deficiency, often alongside missing UVB. It's widely described as the most common serious issue in this species and can be fatal if it progresses.", source: "african-fat-tail-health-issues-guide" },
+        { label: "Feeding enrichment", value: "Tong feeding, short supervised insect hunts in the enclosure, and varying when and where prey appears. Fat-tails are crepuscular and nocturnal, so evening feeding matches their activity window and gets a better response than daytime offering.", source: "african-fat-tail-enrichment-guide" },
+        { label: "Skip the mirror", value: "Bashaw and colleagues tested five types of environmental enrichment on leopard geckos. Thermal and feeding enrichment produced the strongest responses and increased behavioral diversity. Mirror-based visual enrichment was the weakest, with geckos largely not engaging with it.", source: "african-fat-tail-enrichment-guide" },
+        { label: "Budget", value: "Normals commonly around $100, inside a typical range of $75 to $600, with mid-range morphs $200 to $400 and stacked multi-gene animals $600 to $1,000 or more. Roughly $200 to $450 for the setup, and $10 to $25 a month after that.", source: "african-fat-tail-cost-guide" },
+        { label: "Lifespan", value: "15 to 20 years is the commonly cited range, and the best-documented figure is a maximum recorded captive lifespan of just over 16 years.", source: "african-fat-tail-cost-guide" },
+        { label: "Adult size", value: "7 to 9 inches (18 to 23 cm)." },
+        { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the gecko out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Thermostat", value: "Any heat source runs through a thermostat, and where the probe sits decides what the controller is actually holding.", source: "reptile-heating-thermostats-guide" },
       ],
     },
+    emergencyCard: {
+      source: "african-fat-tail-health-issues-guide",
+      callNow: [
+        "Lethargy, difficulty standing or walking, swollen joints, muscle twitches, or spinal curvature",
+        "Retained shed that constricts a toe or the tail tip, once constriction or tissue death has already started",
+        "Bloating, lethargy, appetite loss, and straining, which point at impaction",
+        "Wheezing, mucus, or open-mouth breathing",
+        "A female straining to lay, which is a genuine emergency",
+        "Cloudiness, swelling, or discharge in the eyes outside a normal shed cycle",
+      ],
+      vetLine: "Respiratory infection needs a vet and antibiotic treatment and won't clear on its own. Egg-binding is a genuine emergency requiring immediate vet care, and eye problems are reported relatively commonly in this species, so anything outside a normal shed cycle is worth a visit.",
+    },
+    routes: [
+      { slug: "african-fat-tail-cost-guide", line: "$75 to $600 for a normal and past $1,000 for stacked morphs, the $200 to $450 setup, and what a documented 16-year maximum means for budgeting." },
+      { slug: "african-fat-tail-tank-setup-guide", line: "The 20-gallon-long floor, the heat mat gradient, the humidity that separates this species from a leopard gecko, and 4 inches of substrate to burrow in." },
+      { slug: "african-fat-tail-feeding-guide", line: "Portion by body length, the schedule by age, the phosphorus-free calcium rule, and why the tail is a better gauge than a day count." },
+      { slug: "african-fat-tail-handling-guide", line: "Two weeks before the first session, what a chirp means, and why the tail is never a handhold." },
+      { slug: "african-fat-tail-health-issues-guide", line: "Retained shed, metabolic bone disease, impaction, respiratory infection, and egg-binding." },
+      { slug: "african-fat-tail-enrichment-guide", line: "The leopard gecko study that ranked thermal and feeding enrichment first and mirrors last, and the one thing that does not transfer." },
+    ],
+    buyList: [
+      "20-gallon long enclosure, 40-gallon breeder preferred",
+      "Under-tank heat mat",
+      "Thermostat",
+      "Digital thermometer and hygrometer",
+      "Optional low-output 2 to 5% UVB",
+      "Topsoil and play sand, enough for 4 inches",
+      "Warm hide, cool hide, and a permanent humid hide",
+      "Sphagnum moss for the humid hide",
+      "Shallow water dish",
+      "Gut-loaded crickets and dubia roaches",
+      "Plain phosphorus-free calcium, plus a calcium and D3 combo",
+      "Feeding tongs",
+    ],
     faqs: [
-      { q: "How are African fat-tailed geckos different from leopard geckos?", a: "They are closely related and share similar husbandry, but African fat-tailed geckos (AFTs) require notably higher ambient humidity - 50 to 60% versus the leopard gecko's 30 to 40%. AFTs are also generally calmer and more docile, and they have a velvety skin texture quite different from the leopard gecko's pebbly appearance. Both species use an under-tank heater for belly heat and are strict insectivores." },
-      { q: "Do African fat-tailed geckos need a humid hide?", a: "Yes - the moist hide is critical, and AFTs need it more consistently than leopard geckos. Fill a hide box with damp sphagnum moss and keep it on the warm side. They require higher ambient humidity (50 to 60%) than most other ground-dwelling geckos, and the moist hide provides the microhabitat that prevents persistent stuck shed, particularly on the toes." },
-      { q: "What do African fat-tailed geckos eat?", a: "Strict insectivores. Crickets, dubia roaches, and black soldier fly larvae are the best staples. Mealworms can be offered occasionally. Feed juveniles every other day, adults 2 to 3 times per week. All feeders must be gut-loaded 24 to 48 hours before offering and dusted with calcium w/D3 at every juvenile feeding and 2 to 3 times per week for adults." },
-      { q: "How big do African fat-tailed geckos get?", a: "Adults typically reach 7 to 9 inches in total length and 35 to 80 grams. Females are usually smaller than males. The tail, which stores fat reserves just like the leopard gecko's, should be plump and rounded in a healthy, well-fed gecko." },
-      { q: "How long do African fat-tailed geckos live?", a: "With correct humidity, appropriate thermal gradient (88 to 92 degrees F warm-side floor temperature via UTH on thermostat), and consistent supplementation, African fat-tailed geckos commonly live 10 to 20 years in captivity. They are robust animals when their humidity requirement is met." },
+      { q: "How humid should the enclosure be?", a: "Higher than a leopard gecko needs, though the enclosure stays mostly dry. Ambient around 50 to 70% works, and a permanent humid hide at 70 to 80% is the piece that prevents shedding problems." },
+      { q: "How often should I dust with calcium?", a: "Plain, phosphorus-free calcium at most feedings: every feeding at the strict end, at least 3 times a week at the other. A calcium and D3 combo is generally used just once or twice a week on top of that." },
+      { q: "Will an African fat-tailed gecko drop its tail like a leopard gecko?", a: "Yes, if it is grabbed roughly or badly frightened, which is why the tail is never a handhold. The tail does grow back. The replacement is smoother and more bulbous than the one it lost." },
     ],
   },
   {
@@ -389,64 +410,98 @@ Temperature spikes above 80 degrees F cause acute heat stress. In summer, this r
     image: "/assets/guides/mourning-gecko.jpg",
     tagline: "Tiny, all-female, and endlessly fascinating: a colony in a planted vivarium!",
     funFact: "Mourning geckos are parthenogenetic. Every individual is female, and they can reproduce without males by cloning themselves!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "18x18x24 in planted vivarium", low: 100, high: 200 },
-        { item: "Low-output UVB (T5 HO)", low: 45, high: 80 },
-        { item: "Tight-fitting escape-proof lid", low: 20, high: 50 },
-        { item: "Bioactive or coconut fiber substrate", low: 20, high: 40 },
-        { item: "Cork bark and dense planting", low: 30, high: 60 },
-        { item: "Hygrometer and thermometer", low: 15, high: 25 },
-        { item: "Fine mist system or manual misting bottle", low: 10, high: 40 },
-      ],
-      annual: [
-        { item: "Commercial crested gecko diet", low: 30, high: 60 },
-        { item: "Fruit flies and tiny feeder insects", low: 50, high: 100 },
-        { item: "Calcium (always-available dish)", low: 10, high: 20 },
-        { item: "UVB bulb replacement", low: 45, high: 80 },
-        { item: "Electricity (lighting)", low: 25, high: 45 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Quarantine, hygiene and shedding cite the shared
+    // reptile guides in the sidebar's Health and More list. Reconciled
+    // 2026-09-15 after the mourning gecko set test (docs/READER_REVIEWS.md).
+    //
+    // The old hub was a full care sheet at lower resolution than the pages
+    // under it, and the reader found six things wrong with it. Five were
+    // numbers, all gone rather than moved: the enclosure (18x18x24 for a
+    // colony of 3 to 5, against the setup guide's 12x18x18 for that group
+    // and 18x18x24 for a bigger one), prey size (the space between the
+    // eyes, against the feeding guide's width of the head), calcium dusting
+    // (with D3 2 to 3 times a week, against dusting at most feedings),
+    // adult size (3 to 4 inches, against the handling guide's and
+    // ReptiFiles' 3.5 to 4), and a CGD schedule of every 2 to 3 days that
+    // no article carried. The sixth was not a number: the FAQ written to
+    // clear up the house gecko confusion named the wrong genus,
+    // "Lygodactylus lugubris", in a set where every other page has
+    // Lepidodactylus. Two more the reader caught went with the old
+    // sections: hatchling geckos called "nymphs", which is an insect word,
+    // and a garbled sentence beginning "Monitor colony reproductive rate in
+    // optimal conditions".
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Day one", value: "A new gecko is quarantined away from any reptile you already keep, on paper towel, with its own tools and a fecal exam inside that window.", source: "reptile-quarantine-guide" },
+        { label: "Buy more than one", value: "Mourning geckos are parthenogenetic. There are no males, reproduction happens without them, and they live in colonies. That makes the social question, which is contested for almost every other reptile, already settled here, and it makes group size an enrichment decision rather than a risk.", source: "mourning-gecko-enrichment-guide" },
+        { label: "Or don't, strictly", value: "A lone mourning gecko survives fine and will still lay viable eggs on its own, and some breeders keep them solo. A group is still the default for a species that lives in colonies in the wild, and it is where most of the behavior worth watching comes from.", source: "mourning-gecko-handling-guide" },
+        { label: "Enclosure", value: "A 12x18x18 inch, tall, front-opening enclosure works for a pair or small group of up to about three to five. Since mourning geckos self-multiply, plan on eventually stepping up to something larger, an 18x18x24 inch enclosure comfortably houses a bigger group as your colony grows. Height matters more than floor space for this arboreal species.", source: "mourning-gecko-tank-setup-guide" },
+        { label: "Escape-proofing", value: "Hatchlings measure under an inch, small enough to slip through ventilation gaps and around door frames that would easily contain nearly any other gecko species. Seal every gap you can find with aquarium-safe putty or a similar barrier before adding any geckos to a new enclosure. Once loose in a house, they are extremely difficult to recover.", source: "mourning-gecko-tank-setup-guide" },
+        { label: "Temperature", value: "A daytime ambient temperature of 70 to 80°F with a warm basking spot up to 85°F, dropping to 65 to 72°F at night. At normal room temperature, most homes need no dedicated heat source at all. Only add gentle supplemental heat if your room consistently runs cold.", source: "mourning-gecko-tank-setup-guide" },
+        { label: "Humidity", value: "Between 60 and 80%, with brief peaks up to 90% via daily mistings. Let the enclosure dry slightly afterward to prevent mold and respiratory issues, and use a moisture-retentive substrate to help hold humidity between mistings.", source: "mourning-gecko-tank-setup-guide" },
+        { label: "Substrate", value: "Coconut coir, or a coir and sphagnum moss blend, which supports a bioactive-style setup nicely. Keep it appropriately moist without becoming waterlogged.", source: "mourning-gecko-tank-setup-guide" },
+        { label: "UVB", value: "Low-output UVB in the 5 to 6% range is strongly recommended given how frequently females lay eggs and the resulting calcium demand. Run a standard 12-hour light cycle.", source: "mourning-gecko-tank-setup-guide" },
+        { label: "Fill the height", value: "Small arboreal geckos that live on leaves and vertical surfaces, so a tall enclosure gives them far more usable area than a wide one. Live planting does three jobs at once: usable surface, visual cover so animals can avoid each other, and humidity. Empty height is wasted height.", source: "mourning-gecko-enrichment-guide" },
+        { label: "Staple food", value: "A powdered, commercially formulated crested gecko diet mixed with water to a smoothie-like paste, roughly 2 to 3 parts water to 1 part powder. Mount the feeding cup on a wall or vertical surface rather than the enclosure floor, since mourning geckos are arboreal.", source: "mourning-gecko-feeding-guide" },
+        { label: "How often", value: "Fresh powdered diet every 48 hours, and dusted insects once or twice a week.", source: "mourning-gecko-feeding-guide" },
+        { label: "Insects", value: "Pinhead crickets scaling up as the gecko grows, fruit flies for hatchlings and small geckos, newborn dubia or discoid roach nymphs, and small mealworms in moderation. Prey should be no larger than the width of the gecko's head to avoid impaction.", source: "mourning-gecko-feeding-guide" },
+        { label: "Calcium", value: "Gut-load insects before offering, then dust with calcium at most feedings, rotating in a multivitamin for roughly one weekly insect feeding instead. Even fruit flies can and should be dusted. Leave a separate open dish of calcium powder in the enclosure alongside that.", source: "mourning-gecko-feeding-guide" },
+        { label: "Why calcium never lets up", value: "Mature females lay a clutch of two eggs roughly every 4 to 6 weeks, with or without a male present. That relentless egg-laying schedule is exactly why calcium demand runs so high in this species compared to most other beginner geckos. It is not an occasional breeding event, it is a constant baseline drain.", source: "mourning-gecko-health-issues-guide" },
+        { label: "Feed in more than one place", value: "Shallow dishes at several heights, so feeding is distributed instead of a scrum at one point. A dominant female may guard a single food dish and prevent others from eating.", source: "mourning-gecko-enrichment-guide" },
+        { label: "Don't handle", value: "Adults measure just 3.5 to 4 inches total and hatchlings are under an inch. A small drop, the kind that wouldn't concern you with almost any other pet, can genuinely be fatal at this scale. This isn't a matter of technique, it's a matter of scale. Let one walk onto your hand rather than reaching for it, and keep your hands low and slow.", source: "mourning-gecko-handling-guide" },
+        { label: "Shedding", value: "A gecko in shed goes dull and spends more time hidden, and the shed itself comes off in pieces rather than one sock. What matters is what is left behind: a band around a toe or the tail tip needs humidity raised and a moist hide offered.", source: "reptile-shedding-complete-guide" },
+        { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the gecko out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Budget", value: "$15 to $50 for most hatchlings and juveniles, and breeders often sell pairs or trios cheaper per animal, a trio around $60 total. Setup runs roughly $200 to $450, upkeep roughly $10 to $25 a month. A routine exotic exam commonly runs $35 to $105.", source: "mourning-gecko-cost-guide" },
+        { label: "Adult size", value: "3.5 to 4 inches (8.5 to 10 cm)." },
+        { label: "Lifespan", value: "Up to 10 years, with some reports of 15, on consistent humidity, calcium supplementation, and a varied diet.", source: "mourning-gecko-cost-guide" },
       ],
     },
-    sections: {
-      housing: `An 18x18x24" enclosure is suitable for a small colony of 3 to 5 mourning geckos. These tiny animals (typically 3 to 4 inches as adults) are perfectly suited to lush, fully planted vivariums. Bioactive setups are ideal for this species - live plants regulate humidity naturally, isopods and springtails serve as a biological clean-up crew, and the rich environment provides the complex, stimulating habitat mourning geckos thrive in.
-
-Mourning geckos are extraordinary escape artists. Their tiny size and sticky toe pads allow them to escape through gaps that seem impossibly small - any gap wider than a few millimeters is a potential exit. Inspect every seal, seam, and ventilation gap before introducing the geckos. Stainless steel mesh lids with secure magnets or latches are preferable to screen lids that can warp over time.
-
-Maintain a daytime ambient temperature of 70 to 80 degrees F with a warm basking spot up to 85 degrees F, dropping to 65 to 72 degrees F at night. Keep relative humidity between 60 and 80%, with brief peaks up to 90% via daily mistings, then let the enclosure dry slightly afterward to prevent mold and respiratory issues. They originate from Pacific island environments and are adapted to warm, humid conditions.
-
-Low-output UVB lighting (T5 HO 5 to 6%) on a 12-hour cycle benefits the colony by supporting calcium metabolism and natural circadian rhythm. Live plants also require adequate lighting - a grow light or full-spectrum LED works well for the plants alongside the UVB.`,
-      diet: `Commercial crested gecko diet (CGD) is the primary dietary staple, offered every 2 to 3 days in a small raised dish. Remove and replace after 48 hours to prevent fermentation. Pangea and Repashy both make small-gecko-appropriate formulas that mourning geckos eat readily.
-
-Supplement with tiny live feeder insects 1 to 2 times per week: melanogaster fruit flies (the small species), pinhead crickets, and bean beetles are all appropriate for adults. Prey should be no larger than the space between the gecko's eyes - for such small geckos, this means very small insects. Gut-load all insects before offering and dust with calcium w/D3 2 to 3 times per week and a multivitamin once weekly.
-
-A small dish of pure calcium powder should always be available in the enclosure. Mourning geckos are egg-laying animals that produce eggs regularly, and calcium demands for egg production are significant. Self-supplementation from a calcium dish is an important safety net.
-
-Dechlorinated or reverse-osmosis water in a very shallow dish should always be available, and misting provides droplets on leaves and glass that the geckos also drink from.`,
-      enrichment: `Dense vertical plantings are the most important enrichment for mourning gecko colonies. Live plants including pothos, bromeliads, ficus pumila, and Peperomia species create the layered, complex habitat these geckos need to feel secure and display natural behavior. They use the leaves as sleeping spots, the stems as climbing routes, and the dense canopy as cover from perceived threats.
-
-Cork bark rounds, artificial vines, and driftwood pieces add additional climbing and hiding structures. The more three-dimensional and complex the enclosure, the more natural behavior the geckos display.
-
-Mourning geckos are a display animal. Their appeal is watching them interact with each other and their environment - foraging, vocalizing (a series of small chirps and squeaks), defending territories, and reproducing. They are not well-suited to regular hands-on handling. They are fast, tiny, and fragile, and frequent handling causes stress. Enjoy them through the glass.
-
-Because they are parthenogenetic (all-female, self-reproducing), colonies will naturally grow if conditions are good. Keep this in mind when selecting colony size. Eggs laid in the enclosure will hatch, and nymphs will establish themselves in the colony. Population management may eventually be necessary.`,
-      health: `Calcium deficiency is the most common nutritional concern, particularly for egg-laying females. Ensure calcium supplementation is consistent and a calcium dish is always available. An under-supplemented female mourning gecko laying regular clutches will show signs of MBD relatively quickly: weakness, difficulty climbing, and eventually skeletal deformities.
-
-Stuck shed, particularly on the toes and around the eye caps, occurs when humidity is insufficient. Consistent humidity (60 to 80%, with daily misting peaks up to 90%) prevents most shedding problems. If stuck shed is observed, gently introduce the gecko to a small, shallow pool of lukewarm water for a few minutes to soften it.
-
-Monitor colony reproductive rate in optimal conditions, mourning gecko populations can grow quickly. Overcrowding causes stress, increased aggression, and resource competition. Maintain an appropriate colony size for the enclosure space.
-
-Escape prevention is critical not only for the geckos' welfare but also for your household. A mourning gecko loose in a home is nearly impossible to recover. Inspect enclosure seals regularly, especially after cleaning or rearranging the enclosure.`,
-      checklist: ["18x18x24\" planted vivarium", "Bioactive or coconut fiber substrate", "UVB T5 HO (low output)", "Tight-fitting lid (escape-proof!)", "Commercial CGD", "Fruit flies and tiny feeder insects", "Calcium dish (always available)", "Cork bark and dense planting", "Hygrometer and thermometer", "Fine mist system or manual misting"],
+    emergencyCard: {
+      source: "mourning-gecko-health-issues-guide",
+      callNow: [
+        "A kinked or wavy tail, depleted calcium sacs (the two white ovals under the throat), curved limbs, appetite loss, loss of coordination, and in severe cases seizures (metabolic bone disease). Early cases are often manageable with corrected UVB and calcium; advanced deformities are permanent and warrant a vet",
+        "A female that cannot pass her eggs (egg-binding, or dystocia). A genuine emergency, not something to wait out at home, and untreated dystocia is fatal",
+        "Shed that doesn't come off cleanly and constricts around the toes or tail tip. Generally manageable at home by raising humidity and providing a moist hide, but see a vet if tissue looks like it's dying or the constriction won't release",
+        "Redness, swelling, or a cottage-cheese-like discharge around the mouth (mouth rot). Needs a vet",
+        "Weight loss and poor appetite despite normal feeding (parasites), diagnosed through a fecal exam. Needs a vet",
+        "A visibly thin tail combined with weight loss, which usually points to an underlying issue, whether that's parasites, disease, or simply insufficient feeding for a colony that's grown larger than you originally planned for",
+      ],
+      vetLine: "Skipping UVB or calcium and D3 supplementation doesn't just risk MBD in the abstract, it directly raises egg-binding risk in a species that's laying eggs constantly regardless of whether you're trying to breed it. Given how small a mourning gecko is, a thermometer and hygrometer that's actually accurate matters more than usual for catching drift before it becomes a health problem.",
     },
+    routes: [
+      { slug: "mourning-gecko-cost-guide", line: "$15 to $50 a gecko and cheaper by the trio, the $200 to $450 planted setup, and why the Type A to D labels on listings are not morphs." },
+      { slug: "mourning-gecko-tank-setup-guide", line: "The 12x18x18 that holds a small group, the escape-proofing step that matters more than anything else here, humidity that peaks and dries back, and low-output UVB." },
+      { slug: "mourning-gecko-feeding-guide", line: "Powdered diet every 48 hours and dusted insects weekly, the calcium demand that never pauses, and seven reasons a mourning gecko stops eating." },
+      { slug: "mourning-gecko-handling-guide", line: "Why an animal this size is a display pet, what tail loss actually is, and why easy care and handleable are not the same claim." },
+      { slug: "mourning-gecko-health-issues-guide", line: "Metabolic bone disease and the egg-binding it leads to, the two-egg clutch every 4 to 6 weeks behind both, retained shed, and what a thin tail means." },
+      { slug: "mourning-gecko-enrichment-guide", line: "The one gecko where group housing is the starting point, the tokay study that supports it at a distance, and why empty height is wasted height." },
+    ],
+    buyList: [
+      "12x18x18 inch tall, front-opening enclosure for a small group",
+      "An 18x18x24 for the colony it becomes",
+      "Aquarium-safe putty for every gap",
+      "Tight-fitting escape-proof lid",
+      "Low-output UVB in the 5 to 6% range",
+      "Coconut coir, or coir and sphagnum moss",
+      "Live plants, cork bark and branches",
+      "Fine mist spray bottle or a misting system",
+      "Hygrometer and thermometer",
+      "Powdered crested gecko diet",
+      "Shallow feeding dishes for several heights",
+      "Fruit fly culture or pinhead crickets",
+      "Calcium powder, for dusting and for an open dish",
+      "A multivitamin for the weekly rotation",
+      "Two or more geckos",
+    ],
     faqs: [
-      { q: "Do mourning geckos need to live in groups?", a: "They thrive in small colonies of 3 to 5 females. Mourning geckos are social, and the colony dynamic - vocalizing, interacting, and reproducing - is a major part of their appeal. Because they are all-female and parthenogenetic, you will never have an unmanageable sex ratio." },
-      { q: "Are mourning geckos parthenogenetic?", a: "Yes - every individual is female, and they reproduce by producing fertile, unfertilized eggs that are genetic clones of the mother. No males exist in the wild. A colony in optimal conditions will grow over time as eggs hatch inside the vivarium, so plan for population management eventually." },
-      { q: "How big do mourning geckos get?", a: "Adults reach just 3 to 4 inches total length and weigh 4 to 8 grams. This small size means appropriately tiny prey - melanogaster fruit flies, bean beetles, pinhead crickets - and a tight, escape-proof enclosure with no gaps wider than a couple of millimeters." },
-      { q: "What do mourning geckos eat?", a: "Commercial crested gecko diet (CGD) is the nutritional foundation, offered every 2 to 3 days. Supplement with tiny live insects 1 to 2 times per week: melanogaster fruit flies, pinhead crickets, and bean beetles are appropriate for adults. A calcium dish available at all times is critical for egg-laying females." },
-      { q: "How long do mourning geckos live?", a: "With appropriate humidity, calcium supplementation, and live insects in the diet, mourning geckos typically live 10 to 15 years in captivity. Egg-laying females have higher calcium demands; consistent supplementation is important for their long-term health." },
-      { q: "Is a mourning gecko the same as a house gecko?", a: "No, though they're often confused. \"House gecko\" usually refers to Hemidactylus species, like the common Asian house gecko, a different genus entirely from Lygodactylus lugubris, the mourning gecko. House geckos are typically larger, come in both sexes, and reproduce sexually. Mourning geckos are smaller, all-female, and reproduce by cloning themselves. Care needs differ too - house geckos tend to want more floor space and a drier setup than a mourning gecko's humid planted vivarium." },
+      { q: "Can you handle a mourning gecko?", a: "Not realistically. Adults measure just 3.5 to 4 inches total, hatchlings are under an inch, and a small drop that wouldn't concern you with almost any other pet can be fatal at this scale. It's best kept as a display and observation pet." },
+      { q: "Why does a single pet mourning gecko still need consistent calcium?", a: "Because every mourning gecko is female and reproduces by parthenogenesis, a lone pet with no companion at all still lays a pair of eggs roughly every 4 to 6 weeks, year-round. Egg production never pauses, so calcium demand is constant rather than seasonal, even for an unbred gecko." },
+      { q: "What's the single most important setup detail for a mourning gecko?", a: "Escape-proofing. Hatchling mourning geckos are small enough to slip through ventilation gaps and door frames that would contain nearly any other gecko species. Seal every gap you can find with aquarium-safe putty or a similar barrier before adding any mourning geckos to a new enclosure." },
     ],
   },
   {

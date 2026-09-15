@@ -8,45 +8,87 @@ export const invertebrateGuides = [
     image: "/assets/guides/amano-shrimp.jpg",
     tagline: "The champion algae eater that can't reproduce in your freshwater tank, no matter how long you keep it!",
     funFact: "Amano shrimp can't reproduce in a home freshwater aquarium at all. Females carry eggs and release free-swimming larvae just fine, but those larvae need brackish to full-strength salt water to survive past their first few hours of life, then must be raised through several weeks of saltwater development before metamorphosing into juveniles that can return to fresh water. Because of this, almost every Amano shrimp sold in stores today is wild-caught, not captive-bred.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "10+ gallon tank with secure lid", low: 45, high: 90 },
-        { item: "Aquarium heater", low: 15, high: 25 },
-        { item: "Sponge filter", low: 10, high: 20 },
-        { item: "Live plants and driftwood", low: 15, high: 30 },
-      ],
-      annual: [
-        { item: "Sinking algae wafers", low: 10, high: 20 },
-        { item: "Blanched vegetables", low: 10, high: 15 },
-        { item: "Water conditioner", low: 8, high: 12 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Cycling, quarantine and the sick-tank check cite
+    // the shared aquarium guides in the sidebar's Health and More list.
+    // Reconciled 2026-09-15 after the amano shrimp set test
+    // (docs/READER_REVIEWS.md).
+    //
+    // The old hub's prices were all above the cost guide's table and none
+    // of them are moved: the tank at $45 to $90 against $18 to $30, the
+    // heater at $15 to $25 against $18 to $30, the sponge filter at $10 to
+    // $20 against $8 to $15, and algae wafers at $10 to $20 against $8 to
+    // $12. It also gave temperature twice and differently, 65 to 82°F in
+    // prose and 68 to 76°F on the checklist, where the setup guide says 64
+    // to 82 tolerated with the cooler two-thirds better.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Cycling", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
+        { label: "Quarantine", value: "Two to four weeks in a separate, already-cycled tank before a new amano shrimp joins an established display. Virtually every amano shrimp sold in the trade is wild-caught rather than farm-raised, so quarantine gives any hitchhiking parasites, pests, or simply a stressed animal time to show itself.", source: "amano-shrimp-handling-guide" },
+        { label: "Drip acclimation", value: "Roughly one to two hours, at one to two drops per second, running a slow siphon from the destination tank into the transport container. A bigger gap between your water and theirs calls for three or four hours. A shrimp thrown straight into different water can go into osmotic shock, which is a known trigger for failed, often fatal molts.", source: "amano-shrimp-handling-guide" },
+        { label: "Tank size", value: "A 10-gallon tank is a practical minimum. Their bioload is low enough that they can live in most nano tanks or larger as long as the lid is secure, but a small group technically surviving in 5 gallons isn't the same as thriving with room to actually forage.", source: "amano-shrimp-tank-setup-guide" },
+        { label: "How many", value: "One shrimp per 2 gallons, so five in a 10-gallon. Their bioload is low enough that a tank already fighting an algae outbreak can carry more than five without a water quality problem, but more shrimp in the same algae only means the supply runs out sooner.", source: "amano-shrimp-tank-setup-guide" },
+        { label: "Temperature", value: "64 to 82°F covers the tolerated range, but shrimp kept toward the cooler two-thirds of that band, roughly the upper 60s to mid-70s, tend to live longer, since warmer water speeds up metabolism and shortens lifespan. Set a heater conservatively rather than pushing it toward the top of the range.", source: "amano-shrimp-tank-setup-guide" },
+        { label: "Water chemistry", value: "pH 6.0 to 7.5, with carbonate hardness in the 2 to 8 dKH range as a reasonable target alongside it.", source: "amano-shrimp-tank-setup-guide" },
+        { label: "General hardness", value: "A working range of roughly 4 to 15 dGH, with many keepers targeting 6 to 8 dGH specifically, because that is what supplies the calcium and other minerals this species needs to build a new shell every molt. Too little and a shrimp can't harden its new exoskeleton; too much and the old one can become too rigid to break out of cleanly.", source: "amano-shrimp-tank-setup-guide" },
+        { label: "The lid", value: "Not optional. Amano shrimp are well known escape artists, especially in their first few days in a new tank, and a gap of even a fraction of an inch around a cord or filter intake is enough for one to climb out and turn up dried out the next morning. A tight-fitting glass or acrylic lid, with any gaps sealed.", source: "amano-shrimp-tank-setup-guide" },
+        { label: "Filter intake, not flow", value: "A sponge filter matters because it blocks a standard intake from pulling in or injuring a shrimp, particularly one that has just molted and is a weak swimmer for a short while. It is an intake-safety choice rather than a statement about how much flow the species can handle: this is a fast-stream animal that does not want still water.", source: "amano-shrimp-tank-setup-guide" },
+        { label: "Copper", value: "Shrimp carry copper-based hemocyanin in their blood rather than iron-based hemoglobin, which is exactly why free copper is so disproportionately dangerous to them. A 2025 study put the acute lethal threshold at 1.15 mg/L, and shrimp pre-exposed below that lost their normal ability to detect food odors. Common copper-based fish medications and some plant fertilizers run 0.15 to 0.20 mg/L, squarely inside the range where shrimp show measurable harm.", source: "amano-shrimp-health-issues-guide" },
+        { label: "Water conditioner", value: "Always run tap water through a water conditioner before it goes anywhere near the tank, dechlorinating it and neutralizing chloramine and heavy metals that are otherwise harmful to invertebrates.", source: "amano-shrimp-tank-setup-guide" },
+        { label: "What they eat", value: "They take on hair algae and thread algae readily, and unlike most fish and snails they'll also pick at black beard algae. The gap is flat, tightly adhered algae: they won't get at the tougher types like green spot algae, and cyanobacteria isn't a true algae at all and gets left alone.", source: "amano-shrimp-feeding-guide" },
+        { label: "Algae runs out", value: "Algae is a starting food supply, not a renewable one, and a hungry group works through it faster than most people expect. If the tank is clean, supplement. A hungry amano gives an honest signal first: it climbs the glass and decor actively searching rather than sitting still and waiting.", source: "amano-shrimp-feeding-guide" },
+        { label: "How often to feed", value: "Lightly, and only every couple of days rather than heavily every day. Shrimp getting plenty of easy wafers and pellets stop bothering with algae, which defeats the point of keeping them. Offer a small amount, remove anything left after a few hours, and let them stay motivated to work the tank.", source: "amano-shrimp-feeding-guide" },
+        { label: "Feed in more than one spot", value: "Amanos are assertive, and a single wafer becomes one shrimp's wafer.", source: "amano-shrimp-enrichment-guide" },
+        { label: "Molting", value: "A failed molt, sometimes called the White Ring of Death, is what happens when the old shell splits all the way around the body instead of opening cleanly at the head. Most molting failures trace back to unstable water parameters, particularly swings in GH and KH around a water change, and a diet short on calcium. There is no treatment once one starts failing.", source: "amano-shrimp-health-issues-guide" },
+        { label: "Handling", value: "A soft, fine-mesh net, guiding the shrimp in gently instead of chasing it around the tank. Keep it in water as much as possible during any transfer, and be extra careful around one that has molted recently, since it is soft and swimming weakly at exactly the wrong moment for a rough net chase.", source: "amano-shrimp-handling-guide" },
+        { label: "Eggs that never hatch", value: "Normal, not a health problem. A female carries fertilized eggs and they hatch into free-swimming larvae on schedule, but those larvae need brackish or marine water within their earliest stages, which a freshwater display can't provide. It is the direct result of this species' amphidromous life cycle and the reason almost every amano in the trade is a wild-caught adult.", source: "amano-shrimp-health-issues-guide" },
+        { label: "Sick tank check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
+        { label: "Budget", value: "Roughly $5 to $12 each, cheaper per animal in a group. The core equipment runs roughly $60 to $150: a 10-gallon tank at $18 to $30, a heater at $18 to $30, a sponge filter at $8 to $15, and driftwood or plants for grazing at $15 to $30.", source: "amano-shrimp-cost-guide" },
+        { label: "Adult size", value: "Up to about 2 inches (5 cm); large for a dwarf shrimp, though bamboo and vampire shrimp are bigger still." },
+        { label: "Lifespan", value: "2 to 3 years in captivity, with shrimp kept toward the cooler end of their comfortable temperature range sometimes living longer still.", source: "amano-shrimp-cost-guide" },
       ],
     },
-    sections: {
-      housing: "Amano shrimp can survive in a 5-gallon tank, but 10 gallons or more is a much better fit, since they're larger and more active than most dwarf shrimp and naturally shoal in groups that need real swimming room. They tolerate a fairly wide range of 65 to 82 degrees F, but they hold up better and live longer at the cooler end of that range, since warmer water speeds their metabolism and shortens their lifespan. Keep pH between 6 and 8 with moderately hard water. The single most important piece of equipment is the lid: Amano shrimp are notorious escape artists, especially in the first few days after being introduced to a new tank, and a gap of even a fraction of an inch is enough for one to climb out and turn up dried out on the floor the next morning. Give them driftwood, rocks, and plant surfaces to graze across, since that grazing behavior is most of what makes them worth keeping in the first place.",
-      diet: "Amano shrimp have the best algae-eating reputation of any shrimp in the hobby, and it's earned: they'll take on hair algae, thread algae, and even tough black beard algae that most fish and snails leave completely alone, though a well-established beard algae patch is more than any one animal can fully clear. Algae and biofilm alone usually aren't enough food in a tank that's clean or heavily stocked with other grazers, so supplement with sinking algae wafers, blanched zucchini or spinach, and occasional protein like shrimp pellets. A hungry Amano shrimp will actively climb and search the tank rather than wait, which is a useful cue that it's time to feed. Feed enough that a piece of food is gone within a few hours, and remove anything that lingers.",
-      enrichment: "Amano shrimp are active and visible for a shrimp, spending much of the day patrolling the tank in search of algae rather than hiding, which makes them a genuinely engaging animal to watch work. They naturally form loose shoals in the wild, and a group of five or more in the aquarium shows more of this natural foraging behavior than one or two shrimp kept alone. Unlike [cherry shrimp](/guides/cherry-shrimp/), Amano shrimp will not turn an aquarium into a breeding colony. Females do carry eggs and release larvae in freshwater, but those larvae need brackish to full-strength salt water to develop and die within hours in a standard freshwater tank, so what you're watching is the natural end of that reproductive attempt rather than the start of new shrimp. This makes Amano shrimp a stable, fixed-size population: buy the number you want to keep, since your tank will not grow the colony for you.",
-      health: "Amano shrimp are hardy once settled, but the first week after purchase is the highest-risk period, both for jumping out of an insecure lid and for reacting badly to a mismatch between bag water and tank water. Drip acclimate new arrivals over an hour or two rather than releasing them straight from the bag. As with all shrimp, copper is highly toxic even in trace amounts too small to bother fish, so check that any medication, fertilizer, or tap water source is copper-free before it goes anywhere near the tank. Molting is routine, and a shrimp that looks pale, still, or temporarily hidden for a day is very likely fine, not sick. Because virtually all Amano shrimp sold in stores are wild-caught rather than farm-raised (part of why they typically cost more per shrimp than cherry or ghost shrimp, often $3 to $6 versus a dollar or two), buying from a supplier with a good acclimation and quarantine process measurably improves survival odds in the first few weeks.",
-      checklist: [
-        "10+ gallon tank",
-        "Secure, tight-fitting lid (prolific jumpers)",
-        "Heater set toward the cooler end, 68-76°F",
-        "pH 6-8, moderately hard water",
-        "Driftwood, rocks, and plants for grazing surface",
-        "Sinking algae wafers and blanched vegetables",
-        "Group of 5-6+ shrimp to see natural shoaling behavior",
-        "Drip acclimation for new arrivals",
-        "Copper-free medications, fertilizers, and water source",
-        "Buy the number you want. They will not breed in your tank",
+    emergencyCard: {
+      source: "amano-shrimp-health-issues-guide",
+      callNow: [
+        "A shell split all the way around the body instead of opening cleanly at the head (a failed molt, the White Ring of Death). There is no direct medical treatment once a molt starts failing; the fix is prevention, stable mineral content and a calcium-inclusive diet",
+        "Any copper-based fish medication or plant fertilizer about to go near the tank. Check the label first: the formulations around 0.15 to 0.20 mg/L free copper that are considered safe for treating fish sit squarely inside the range where shrimp show measurable harm",
+        "A whole group dying suddenly with no obvious warning signs. The honest first question isn't what disease this is, it's what changed in the water: a copper exposure, an ammonia or pH swing, a rushed water change",
+        "Shrimp that have lost their normal ability to detect food odors, the sublethal copper harm that shows up well before outright death",
       ],
+      vetLine: "Invertebrates lack the adaptive immune system vertebrates rely on and depend instead on more basic, innate defenses, so a healthy shrimp doesn't usually just catch an illness out of nowhere the way a fish might. Infections and parasites do happen, but stress from poor water quality is usually what opens the door rather than a stable shrimp getting unlucky. Test your water first when something goes wrong.",
     },
+    routes: [
+      { slug: "amano-shrimp-cost-guide", line: "$5 to $12 a shrimp with real listings behind it, the $60 to $150 setup, and why a cooler tank is the cheaper one across a shrimp's life." },
+      { slug: "amano-shrimp-tank-setup-guide", line: "The 10-gallon minimum and one shrimp per 2 gallons, general hardness as a molting input, a sponge filter for intake safety rather than calm water, and the lid." },
+      { slug: "amano-shrimp-feeding-guide", line: "What the best algae eater in the hobby actually eats, the flat adhered algae it can't, and why a clean tank means supplementing before they starve." },
+      { slug: "amano-shrimp-handling-guide", line: "Netting instead of hands, drip acclimation over one to two hours, and the quarantine a wild-caught animal earns." },
+      { slug: "amano-shrimp-health-issues-guide", line: "Failed molts and what causes them, the 2025 copper study and the doses that harm before they kill, and why eggs that never hatch are normal." },
+      { slug: "amano-shrimp-enrichment-guide", line: "Grazing surface as the whole enrichment question, biofilm over bare glass, and somewhere soft to hide out a molt." },
+    ],
+    buyList: [
+      "10-gallon or larger tank",
+      "A tight-fitting lid with every gap sealed",
+      "Sponge filter, or a sponge pre-filter over a stronger intake",
+      "Submersible heater set toward the cooler end",
+      "Water test kit, including GH and KH",
+      "Water conditioner",
+      "Mineral supplement if the tap water runs soft",
+      "Driftwood, rocks and live plants for grazing",
+      "Sinking algae wafers",
+      "Blanched zucchini, spinach or cucumber",
+      "Soft, fine-mesh net",
+      "Airline tubing for drip acclimation",
+      "A separate cycled tank for quarantine",
+    ],
     faqs: [
-      { q: "Can Amano shrimp breed in a home aquarium?", a: "No, not in freshwater, and this is the single most important thing to know before buying them. Females do carry eggs and release free-swimming larvae, but those larvae need brackish to full-strength salt water within hours of hatching or they die, then require several weeks of brackish development before metamorphosing into juveniles that can return to fresh water. A standard freshwater aquarium can't support any part of that process. Breeding them requires a dedicated saltwater rearing setup and live phytoplankton, which is why the overwhelming majority of Amano shrimp sold in the hobby are wild-caught rather than captive-bred." },
-      { q: "Why are Amano shrimp better at algae than other shrimp?", a: "Appetite and size, mostly. Amano shrimp are the largest commonly kept dwarf shrimp species and eat a wider range of algae than cherry shrimp or most algae-eating fish, including hair algae, thread algae, and even tough black beard algae that most tankmates won't touch. They're not a complete solution for an established beard algae outbreak, but for ongoing prevention and general hair and thread algae control, they're considered close to the top of the algae-eating hierarchy in the hobby." },
-      { q: "Why is my Amano shrimp missing from the tank?", a: "Check the floor before assuming the worst. Amano shrimp are notorious escape artists, especially in their first few days in a new tank, and can climb out through gaps that look far too small to matter. A dried-out shrimp on the carpet near the tank is a common, if sad, discovery. A genuinely tight-fitting lid with no gaps around cords or filter intakes is the only real prevention." },
-      { q: "How big do Amano shrimp get?", a: "Up to about 2 inches (5 cm), making them the largest widely kept dwarf shrimp species, noticeably larger than a cherry shrimp's 1.5 inches or a ghost shrimp's 1 to 2 inches. Females run larger than males." },
-      { q: "Do Amano shrimp need a heater?", a: "Usually, since they do best between about 65 and 82°F and most homes run cooler than that, especially in winter. Keeping them toward the lower half of that range if possible actually works in their favor, since Amano shrimp kept warmer tend to have shorter lifespans than those kept cooler and more stable." },
-      { q: "Are Amano shrimp good pets for beginners?", a: "Mostly yes, with two catches worth knowing up front. Day to day care is genuinely easy and they're extremely effective algae control, but they're serious escape artists that need a truly secure lid, and unlike cherry shrimp they will never build you a self-sustaining colony, since their larvae can't survive in freshwater. Buy them as a fixed-size cleanup crew rather than an investment in future shrimp, and they're a low-maintenance, highly effective addition to a planted tank." },
+      { q: "Why is my amano shrimp carrying eggs that never hatch?", a: "Because this species cannot complete its life cycle in freshwater. A female mates and carries fertilized eggs normally, and they even hatch into free-swimming larvae, but those larvae need brackish to marine water within their earliest stages to survive and develop. In a standard freshwater tank they die within days, and the whole cycle repeats with the next batch of eggs. It's completely normal, not a sign anything is wrong with your shrimp." },
+      { q: "How sensitive are amano shrimp to copper?", a: "Very sensitive, and it's backed by real research, not just hobby folklore. A 2025 study in the Journal of Crustacean Biology put the acute lethal copper threshold for this species at 1.15 mg/L, but found measurable sublethal harm, including a reduced ability to detect food odors, at concentrations well below that. Common copper-based fish medications and some plant fertilizers are formulated around roughly 0.15 to 0.20 mg/L, a level considered safe for treating fish parasites but squarely inside the range where shrimp show real harm." },
+      { q: "What algae are amano shrimp good at eating?", a: "Hair algae and thread algae are where they excel, and they'll take on black beard algae too, which most fish and snails leave completely alone. A well-established beard algae mat is still more than one animal can fully clear on its own." },
     ],
   },
   {

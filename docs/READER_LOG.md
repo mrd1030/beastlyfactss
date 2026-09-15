@@ -4249,3 +4249,827 @@ First two changes: (1) fix the brumation contradiction and pin one set of canoni
 - How to evaluate a hatchling or a breeder at purchase.
 - What an emergency vet event actually costs in dollars.
 - How to physically move or transport an adult, which the cost guide raises and no page answers.
+
+---
+
+# African Fat-Tailed Gecko: Set Review
+
+Opus reader agent, first pass, 2026-09-15, batch I. Raw and unedited.
+
+## 1. Page by page
+
+**00 Hub.** Finished it. Actionable: full shopping list, warm/cool hide temps, three-hide rule. Grade B-, it states numbers that its own deep dives contradict.
+
+**01 Encyclopedia.** Finished it, it is short. Actionable: almost nothing husbandry-wise, but the wild-caught import history changes how I shop. Grade B.
+
+**02 Cost.** Finished it. Actionable: I can budget the animal, the setup, and a vet emergency. Grade B+.
+
+**03 Handling.** Finished it. Actionable: two-week wait, no tail grabbing, chirp means stop. Grade B.
+
+**04 Health.** Finished it. Actionable: symptom lists I can check against, and a clear "this one needs a vet" split. Grade B+.
+
+**05 Tank setup.** Finished it. Actionable: every number I need to build the enclosure, including night drop and substrate depth. Grade A-.
+
+**06 Feeding.** Finished it, best page in the set. Actionable: portion rule, tail-thinner-than-neck red flag, nine reasons for a hunger strike. Grade A-.
+
+**07 Enrichment.** Finished it. Actionable: a priority order I can build to, and permission to skip mirrors. Grade B+.
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: range, habitat, and the import history are nowhere else. The hub mostly repeats the deep dives at lower resolution, and it disagrees with them.
+
+- Humidity. Hub: "Aim for 50 to 60% ambient humidity." Tank setup: "Ambient humidity around 50 to 70% works well, maintained with a permanent humid hide running 70 to 80%." The hub never gives the humid-hide number at all.
+- Cool side. Hub: "a cool hide (75 to 78 degrees F)." Tank setup: "cool side 75 to 80°F, with a nighttime drop to around 70 to 75°F." The hub has no night temperature.
+- Supplements. Hub: "Dust with calcium w/D3 at every juvenile feeding and 2 to 3 times per week for adults." Feeding: "Dust with plain, phosphorus-free calcium at most feedings... with a calcium and D3 combo used once or twice a week on top." Those are different regimens, and the hub never mentions the phosphorus warning.
+- Schedule. Hub: "Feed juveniles every other day, adults 2 to 3 times per week." Feeding: adults are "3 times a week, 3 to 4 times a week, or a condition-based tiered schedule." The hub has no hatchling line at all, and hatchlings eat daily.
+- Lifespan. Hub: "commonly live 10 to 20 years in captivity." Cost: "Care sources commonly cite 15 to 20 years, and... a maximum recorded captive lifespan of just over 16 years."
+- Substrate. Hub: "Cypress mulch or coconut fiber substrate." Tank setup: "roughly 70% topsoil to 30% play sand... at least 4 inches" for burrowing. The hub's version reads like bedding, not a dig box.
+- Soak. Hub: "Soak the gecko briefly in shallow lukewarm water." Feeding: "a 15 to 30 minute soak in warm water."
+- The hub says annual fecal exams are recommended, then budgets "Annual vet wellness check $50-$90" with no fecal line, while the cost guide prices a fecal at $65 to $110.
+
+## 3. The set as a whole
+
+Yes, I could buy, build, feed, and keep one. Still missing: how to actually raise ambient humidity to 50-70% (nobody gives a misting or ventilation method), a hygrometer (the cost FAQ mentions one, the cost table and hub checklist do not list it), a scale, and an enclosure cleaning schedule.
+
+Unsignposted handoffs: the health guide's "manageable at home with a proper moist hide... and correct humidity" never says the numbers live in tank setup. The feeding guide's retained-eye-cap paragraph raises humidity and points nowhere. The handling guide says "fat-tails need meaningfully higher humidity" and links to leopard gecko pages instead of its own tank setup. The encyclopedia's wild-caught paragraph raises quarantine without saying so.
+
+## 4. Overlap and conflict across deep dives
+
+Read four times: the tail-is-a-fat-reserve fun fact (hub, cost, handling, health). Read three times: the leopard gecko comparison, the three-hide list, the humid hide. The vocalization material appears in handling and again as the tank setup fun fact.
+
+Real conflict, sand. Tank setup: "a common blend is roughly 70% topsoil to 30% play sand... pure loose sand is sometimes flagged as an impaction risk, but the more accurate picture is that impaction tends to happen in geckos that are already unhealthy." Feeding: "Never use sand as substrate, ingested sand causes real digestive impaction." One page sells me the sand, the next page bans it.
+
+Also, hub calls stuck shed "the most common health issue" while the health guide calls MBD "the most common serious issue in this species" and stuck shed the most common "fat-tail-specific" one. Activity window wobbles: hub "crepuscular," tank setup "nocturnal," enrichment "crepuscular and nocturnal."
+
+## 5. One link per page
+
+- Hub: "Cypress mulch or coconut fiber substrate help maintain this humidity level while remaining easy to clean." to tank setup guide.
+- Encyclopedia: "for years most animals offered for sale were wild caught adults." to Reptile Quarantine.
+- Cost: "The thermostat isn't optional, it's what keeps the heat mat from overheating the enclosure." to Reptile Heating and Thermostats.
+- Handling: "fat-tails need meaningfully higher humidity than leopard geckos, and are more sensitive to conditions that run too dry." to tank setup guide.
+- Health: "It's manageable at home with a proper moist hide lined with damp sphagnum moss and correct humidity." to tank setup guide.
+- Tank setup: "pure loose sand is sometimes flagged as an impaction risk." to health issues guide, impaction section.
+- Feeding: "If humidity is too low, the shed can get stuck, including retained eye caps." to tank setup guide.
+- Enrichment: "A gecko cave packed with damp sphagnum moss stays humid inside while the rest of the enclosure runs drier." to tank setup guide.
+
+## 6. Trust
+
+Doubts: the sand contradiction between two adjacent pages, the hub's supplement schedule disagreeing with the feeding guide, and three lifespan figures across three pages. "The tail... can hold close to half the gecko's total body mass" is a big claim carried without a source.
+
+Most convincing sentence, from enrichment: "A humid hide that has dried out is a hide, not a humid hide."
+
+## 7. Set grade: B
+
+The deep dives are specific, honest about disagreement, and clearly written, but the hub undercuts them with softer competing numbers.
+
+First two changes: make the hub inherit its numbers from the deep dives instead of restating them, and settle the sand question once, in the tank setup guide, with the feeding guide pointing at it.
+
+## Not covered anywhere
+
+- How to actually raise and hold 50-70% ambient humidity: no misting, ventilation, or water-surface method on any page, and the shared Shedding and Emergency guides do not address it.
+- Hygrometer: named in one cost FAQ answer, absent from the cost table and the hub checklist, so a reader buying from the list ends up unable to measure the species' headline requirement.
+- A scale, despite the feeding guide calling for "routine weight checks."
+- Enclosure cleaning and substrate replacement schedule.
+- Cohabitation: whether two can share an enclosure, and whether males fight.
+- Sexing: the hub says females are smaller, and nothing tells you how to sex one.
+
+
+---
+
+# Corydoras Catfish: Set Review
+
+Opus reader agent, first pass, 2026-09-15, batch I. Raw and unedited.
+
+**1. One line per page**
+
+- 00 Hub: Finished it, and it is the only page that gives me a water change schedule, but its cost table and tank size fight the cost and setup guides. B-minus.
+- 01 Encyclopedia: Finished it fast; the 2024 genus revision is the one thing here I could not get elsewhere, though nothing on the page is actionable. B.
+- 02 Cost: Finished it, and I can build a shopping list and a monthly number from it. B-plus.
+- 03 Handling: Finished it, though it is mostly "do not handle, buy six, they are not algae eaters," which two other pages also say. C-plus.
+- 04 Health: Finished it, and it is the most usable page in the set: named conditions, nitrate under 20 ppm, 82F for ich, half or quarter medication doses. A-minus.
+- 05 Tank setup: Finished it, and I could buy and assemble the tank from this page alone. A-minus.
+- 06 Feeding: Finished it, portions and timing are concrete, but the "Why They Stop Eating" list is a numbered list with only item 1 in it, which reads like a page that shipped broken. B-minus.
+- 07 Enrichment: Finished it twice; the only page that sources its claims and the only one that tells me the pectoral spines lock in a net. A.
+
+**2. Hub and encyclopedia versus the deep dives**
+
+The encyclopedia earns its place on history and taxonomy alone, nothing else carries it. The hub mostly restates the deep dives, but it uniquely carries "20 to 25 percent weekly water changes," which appears nowhere else, and that is the single most important routine number in fishkeeping.
+
+It also disagrees with them:
+
+- Tank size. Hub: "A 10 to 20 gallon tank suits a proper school." Setup guide: "A 20-gallon long tank is the practical minimum for a proper school of six standard-sized cories." The hub's checklist says "10-20+ gallon tank." Ten gallons is only correct for pygmies, and the hub never says so.
+- Tank price. Hub table: "10-20+ gallon tank | $60 | $120." Cost guide: "20 gallon long tank | $35 - $60." Same tank, double the money.
+- Filter price. Hub: "Gentle filter | $20 | $35." Cost guide: "Gentle-flow filter | $8 - $15."
+- Food cost. Hub annual: "Sinking wafers + frozen bloodworms | $40 | $70." Cost guide: "Roughly $10 to $20 a Month," which is $120 to $240 a year.
+- The hub's setup table omits a heater and a test kit entirely, both of which the cost guide calls required.
+- The hub calls them "scaleless catfish"; the health guide and encyclopedia call them "armored catfish with sensitive, naked bellies." Same conclusion about copper, contradictory anatomy.
+
+**3. The set as a whole**
+
+I could set up, buy, feed, and keep them. Setup, substrate, portions, group size, and the main diseases are all here. Missing: cycling the tank before fish go in (the shared guide covers it, but no species page says "do this first"), acclimation on arrival for a species the health guide says shipping stress triggers red blotch in, a tankmate list beyond "not aggressive," breeding, and how to tell dwarf and pygmy species apart when the setup guide says they need a different tank.
+
+Questions raised on one page and answered on another without saying so:
+- Cost guide: "Soft sand substrate is genuinely important for this species, and it matters more than it looks like it should." Why is on the setup and enrichment pages; the cost guide never points there.
+- Health guide: "keep nitrates under 20 ppm going forward." How is the hub's weekly 20 to 25 percent water change, which the health guide does not mention.
+- Handling guide: "Choosing sharp substrate, which damages this species' sensitive barbels." The enrichment guide argues that is probably not the mechanism, and handling never says so.
+- Hub FAQ: "Can corydoras live with a bristlenose pleco?" is the only tankmate answer anywhere, and no deep dive links to it.
+
+**4. Overlap and conflict across the deep dives**
+
+Read three or four times: cories are not algae eaters, buy six of one species, surface gulping is normal, sand not sharp gravel. Handling and feeding overlap almost completely on the first two; handling is the page I would cut.
+
+Real conflicts:
+- Barbel erosion cause. Health: "It's caused by a combination of sharp substrate causing physical damage and elevated nitrates allowing bacterial infection to take hold in the wound." Enrichment: "No controlled study establishes what causes barbel erosion" and "Do not let the substrate get dirty, which is the actual barbel risk." One page is confident about a mechanism the other says is unproven.
+- Substrate depth and cleaning. Setup: "About 2 inches of depth works well" plus "Avoid over-cleaning or disturbing the substrate too aggressively during maintenance." Enrichment: "Vacuum the surface layer regularly." Hub: "making regular gravel vacuuming and 20 to 25 percent weekly water changes especially important." Three shades of the same instruction, and setup's caution cuts against the other two.
+- Feeding time. Feeding: "Feeding in the evening, when this species is naturally most active." Setup: "Cories are most active around dawn and dusk." Enrichment: "feed after lights out." Close enough to be confusing, not close enough to be one instruction.
+- Encyclopedia internal: header says "Scientific: Corydoras aeneus," body says "the bronze cory moved to Osteogaster." The header was not updated.
+
+**5. One link per page**
+
+- Hub: "Barbel damage or erosion from sharp or rough substrate is a very common and entirely preventable problem." Should point to the enrichment guide, which is where that claim gets tested.
+- Encyclopedia: "They are obligate shoaling fish, meaning they need the company of their own species to feel secure." Should point to the enrichment guide's group size section.
+- Cost: "A 20-gallon long tank is the practical starting size for a proper school." Should point to the tank setup guide. This is the biggest missing link in the set.
+- Handling: "Choosing sharp substrate, which damages this species' sensitive barbels." Should point to the enrichment guide.
+- Health: "switch to soft sand if you haven't already, do a significant water change, and keep nitrates under 20 ppm going forward." Should point to the tank setup guide. This page has no link to any sibling.
+- Tank setup: "A reliable water test kit is worth keeping on hand so you catch a rising nitrate reading before it becomes a barbel problem." Should point to the health issues guide.
+- Feeding: "Test water parameters immediately if appetite loss shows up alongside lethargy, hiding, labored breathing, or any visible sign of illness." Should point to How to Tell If Your Fish Is Sick.
+- Enrichment: needs none. It is the only page that links where it should already.
+
+**6. Trust**
+
+Doubts: the hub's cost table and tank range contradicting the cost and setup guides is the kind of thing that makes me re-check everything else. The feeding guide's one-item numbered list is a visible defect. The encyclopedia's scientific name contradicting its own history paragraph. Four pages carrying the same Jackson's Chameleon and canary comparison link reads like padding, not navigation.
+
+The sentence that convinced me a keeper wrote this: "And take real care netting one, since the pectoral spines lock and tangle in mesh." Nobody writes that who has not spent ten minutes trying to free a cory from a net.
+
+**7. Set grade: B**
+
+Strong on the two things that kill cories, substrate and dedicated food, but the hub contradicts its own deep dives on money and tank size, which is exactly where a buyer starts.
+
+First two changes:
+1. Rebuild the hub's cost table and tank size from the cost and setup guides so all three agree, and add the heater and test kit.
+2. Reconcile the barbel erosion story. Either the health guide adopts the enrichment guide's "dirty substrate, not grain shape" framing, or the enrichment guide is not the sourced outlier it currently is.
+
+**Not covered anywhere**
+
+Checked against the Health and More list as well as the species pages.
+
+- Breeding and spawning: no page, shared or species, touches it.
+- A named tankmate list: only the hub FAQ's bristlenose pleco answer and "no fin nippers, nothing big enough to eat one." No shared guide covers stocking.
+- Drip or float acclimation on arrival: the hospital tank guide covers quarantine, not the acclimation procedure itself, and the health guide names shipping stress as a red blotch trigger without saying what to do about it.
+- Which species need cooler or warmer water: the setup guide says "preferences vary" and never resolves it, and no shared guide would.
+- Sexing, and how to tell a dwarf or pygmy species from a standard one at the store, when the two need different tanks.
+- Everything else I flagged is covered: cycling by How to Cycle a Fish Tank, the nitrate and water change routine by the hub and the filtration guide, symptom reading by How to Tell If Your Fish Is Sick, heat by Cooling an Aquarium Without a Chiller, moving and outages by the transport guide.
+
+---
+
+# Red-Footed Tortoise: Set Review
+
+Opus reader agent, first pass, 2026-09-15, batch I. Raw and unedited.
+
+## 1. Page by page
+
+- **00 hub.** Finished it. Act on: the checklist and the two cost tables. But its numbers fight the deep dives. **C**
+- **01 encyclopedia.** Finished it, short. Act on: almost nothing, it is natural history. The Lenten-dish and CITES-export history is the only thing here I could not get elsewhere. **B**
+- **02 cost.** Finished it. Act on: a real budget, a named breeder with listed prices. **B+**
+- **03 handling.** Finished it. Act on: two-handed low support, and the year-by-year growth chart that sizes the adult enclosure. **B**
+- **04 health.** Finished it fast. Act on: the symptom-to-cause table in my head, especially dry-and-cool causing RI. **A-**
+- **05 tank setup.** Finished it. Act on: everything, this is the build document. **A-**
+- **06 feeding.** Finished it. Act on: the 90/10 split, the protein list, the avoid list. **A-**
+- **07 enrichment.** Finished it, and it was the only page that surprised me. Act on: scatter feeding, target training, the priority order. **B+**
+- **08 legal.** Finished it. Act on: check my state, and do not buy a hatchling in NYC. **A**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place. It is the only page with range, taxonomy history, IUCN and CITES status, and it does not repeat husbandry.
+
+The hub does not. It is a compressed rewrite of the deep dives, and where it differs it is wrong.
+
+- Floor space. Hub: "Adult red-footed tortoises need at least 32 to 72 sq ft of floor space." Tank setup: "Plan for an indoor minimum around 18 to 24 square feet of floor space for one adult." That is not rounding, it is double.
+- Annual cost. Hub's annual table sums to about $375 to $645. Cost guide: "Roughly $650 to $850 a Year." The hub's ceiling is below the article's floor.
+- Calcium. Hub: "calcium (without D3 most feedings, with D3 twice weekly for indoor animals without natural sunlight)." Feeding: "Dust food with a calcium and D3 supplement several times a week."
+- Diet split. Hub: "about 55% fruit, flowers, and leafy greens; 35% grasses and vegetables." Feeding: "about 70% leafy greens, 20% other vegetables, and 10% fruit," with fruit "commonly cited at 10 to 15%." The hub's lump lets fruit run far past that.
+- Night floor. Hub: "nighttime lows no cooler than 65 to 70 degrees F." Tank setup: "Keep the nighttime floor from dropping much below 70°F."
+- UVB. The hub prescribes Arcadia 12% flat; tank setup says researchers put this forest species in a lower Ferguson zone and suggests Arcadia Forest 6%.
+
+## 3. Could I keep one
+
+Yes, nearly. I could buy, build, heat, humidify, feed, and recognize the five things that go wrong. Still missing, not in any of the nine pages:
+
+- A soaking protocol. Every page says they soak often. None says how often, how deep, how warm, how long.
+- Whether two can live together, and what male-on-male aggression looks like.
+- What to inspect on the animal before paying, and what to do in its first month.
+- Healthy weight for a given shell length, and how often to weigh.
+- How often to change damp substrate. Cost guide says "more often" and stops.
+
+Questions raised on one page, answered on another, with no link: cost guide's "A full adult needs meaningfully more floor space than that" (number is in tank setup); health guide's "raise humidity and warmth in the meantime" (numbers in tank setup); legal guide's "A red-footed tortoise hatchling is inside the prohibition" (handling's growth chart says when it clears four inches); enrichment's humid-substrate priority (tank setup).
+
+## 4. Overlap and conflict across the deep dives
+
+Read three or four times: no-brumation, the protein-deficiency hind-leg paralysis, the 50 to 70 year lifespan, humidity as the defining difference. The protein point appears in the hub, health, feeding and encyclopedia in nearly the same words.
+
+Conflicts:
+- Growth rate, inside one page. Handling body: "roughly 3 to 4 inches by the first birthday, 7 to 9 inches and several pounds by age 2." Its own FAQ: "roughly an inch of shell length a year through the first decade." Cost guide repeats the second.
+- Time to adult. Handling: "Most individuals reach close to full adult size... within 5 to 10 years." Feeding: "juveniles are still building the growth that gets them to adult size, roughly 10 to 15 years by most estimates," yet it drops feeding frequency at 5.
+- Fogger price. Hub table: $40 to $90. Cost guide: "$35 to $60."
+- Pyramiding study date. Health guide: "A 2021 study... (Mendoza et al., 2022)."
+
+## 5. One link per page
+
+- 00 hub: "Adult red-footed tortoises need at least 32 to 72 sq ft of floor space" to the tank setup guide.
+- 01 encyclopedia: "Officially declared CITES exports between 2000 and 2005 came to roughly 35,565 tortoises" to the legal guide.
+- 02 cost: "A full adult needs meaningfully more floor space than that" to the tank setup guide.
+- 03 handling: "a dry, sandy, arid-style substrate is a genuine mismatch for it" to the tank setup guide.
+- 04 health: "while you raise humidity and warmth in the meantime" to the tank setup guide.
+- 05 tank setup: "a basic automatic fogger or misting system ($35 to $60)" to the cost guide.
+- 06 feeding: "many keepers shift to every other day for adults, which helps prevent the overly fast growth that drives shell pyramiding" to the health issues guide.
+- 07 enrichment: "a humid substrate with damp retreats is a welfare input rather than a refinement" to the tank setup guide.
+- 08 legal: "A red-footed tortoise hatchling is inside the prohibition" to the handling guide's growth chart.
+
+## 6. Trust
+
+Doubts: the hub's floor-space and annual-cost numbers contradicting its own articles is the worst of it, because I cannot tell which page to believe on anything else. Handling contradicting itself on growth rate. The health guide's unnamed authorities, "several reptile-vet sources" and "one detailed care resource." The enrichment guide's "A 2025 study" with no author or journal, next to a mislabeled study date on the health page.
+
+Most convincing sentence in the set: "good ventilation still matters, but 'open on top' and 'well-ventilated' aren't the same thing for a species that needs to hold 70 to 80% humidity." That distinction only comes from having fought to hold a number.
+
+## 7. Set grade: B
+
+The deep dives are specific, sourced, and unusually good at saying why this species is not the other two; the hub sits on top contradicting them.
+
+First two changes:
+1. Make the hub agree with the articles or strip its numbers and let it route.
+2. Give the health guide in-body links to the tank setup and feeding guides, since it names the problems and holds none of the fixes.
+
+## Not covered anywhere
+
+Checked against the Health and More list as well as this species' own pages.
+
+- Soaking protocol: frequency, water depth, temperature, duration. Nothing in the set, and the stool and hydration guide assesses hydration rather than prescribing soaks.
+- Keeping two or more together, and male aggression. The sexing and eggs guide identifies sex but not cohabitation.
+- What to check on the animal before buying, and its first-month acclimation. The herpesvirus guide covers quarantine length, not selection or settling in.
+- Healthy weight for shell length and a weighing cadence. The brumation guide's weigh-ins apply only to species that brumate, which excludes this one.
+- How often to change damp substrate in a permanently humid enclosure.
+---
+
+# Degu: Set Review
+
+Opus reader agent, first pass, 2026-09-15, batch I. Raw and unedited.
+
+
+## 1. Page by page
+
+- **00 hub.** Finished it. Actionable: temperature, substrate depth, solid roof, chew replacement, orange teeth. Grade B+.
+- **01 encyclopedia.** Finished it. Actionable: almost nothing, but the 1964 Santiago-to-MIT-to-Vermont colony history is the only thing on the site I could not have guessed. Grade B.
+- **02 cost.** Finished it, then stopped trusting it. Actionable: pair pricing, annual table. Grade C-.
+- **03 handling.** Finished it in a minute. Actionable: scoop, never the tail. Nothing on how to actually pick one up. Grade C.
+- **04 health.** Finished it. Actionable: symptom lists, the vet-now vs vet-soon split. Grade B.
+- **05 tank setup.** Finished it, distrusted the numbers. Actionable: aspen or paper, no cedar, solid floor. Grade C+.
+- **06 feeding.** Finished it. Actionable: hay always, measured pellets, the six reasons for appetite loss. Grade A-.
+- **07 enrichment.** Finished it twice. Actionable: sift the sand, do not sterilize it, sessions not permanent. Grade A.
+- **08 legal.** Finished it. Actionable: check my state before buying a pair. Grade A.
+- **09 vs chinchilla.** Finished it. Actionable: the schedule decision. Grade B.
+
+## 2. Hub and encyclopedia
+
+The hub earns its place: it is the densest page in the set and carries things no deep dive has (six inches of substrate, the solid roof and birds of prey, coprophagy as a requirement, weekly tooth checks). The encyclopedia earns it too, on history alone. But the hub disagrees with its own deep dives:
+
+- Cage. Hub: "A pair needs at least 24x18x36 inches." Setup guide: "At minimum, 24 by 18 by 24 inches for a pair." The hub's own cost table then prices a "24x24x48 in multi-level cage." Three sizes.
+- Temperature. Hub: "Keep them at 60 to 72 degrees F... cannot cope above about 80." Setup: "65 to 70°F... never let ambient temperature climb toward 77°F." Health: "kept below about 77°F." The hub's ceiling is 3 degrees past the health guide's emergency line.
+- Wheel. Hub: "a solid running wheel of 12 inches or more." Setup: "A solid exercise wheel, 11 to 12 inches."
+- Sand. Hub: "using chinchilla dust rather than sand." Enrichment: "Use sand for degus, not dust." A flat reversal.
+- Bath length. Hub: "ten to fifteen minutes." Enrichment: "twenty minutes or so at a time."
+- Pellets. Hub: "roughly a tablespoon per degu per day." Feeding: "roughly 1 to 2 tablespoons per degu daily."
+- Bar spacing. Hub: "half an inch or less." Setup: "an inch or less for adults."
+- Lifespan. Encyclopedia: "6-7 years in captivity." Cost: "5 to 8 years... some reaching 10 to 13." Chinchilla guide: "5 to 9 years."
+
+## 3. The set as a whole
+
+I could buy the cage, bed it, feed it and recognise the two diseases that matter. I could not get from "buy two" to actually owning two. Missing: where to buy and how to judge a healthy degu, how to sex them, how to introduce or bond them (four pages say introductions fail, none says how), what happens when one of a pair dies, any cleaning schedule, out-of-cage time and degu-proofing, and what an accidental litter costs me if the shop sexed them wrong.
+
+Unsignposted answers: the cost guide's "dental work for overgrown teeth and diabetes management" is fully explained in the health guide, unlinked. The health guide's "77°F" contradicts the setup guide's room target, unlinked. The setup guide's "this isn't optional grooming, it's a real physiological need" is the whole argument of the enrichment guide, unlinked. The handling guide's warning about sugary treats is the feeding guide, unlinked.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three times: degus are diurnal, degus cannot have sugar, never grab the tail, keep two. The feeding and health guides share a near-verbatim paragraph ("Sugar and fruit in the diet cause the diabetes that's this species' signature health risk... the single biggest lever"). Conflicts beyond the hub ones above:
+
+- Carrot. Hub: "Carrot, sweet potato, beetroot and parsnip... belong in very small pieces as an occasional treat." Health: "even small amounts of fruit, carrot, peas, corn, or sugary treats can trigger the disease."
+- Seeds. Hub FAQ: "the occasional plain oat or single sunflower seed." Chinchilla guide: "fruit, honey, seeds, and other sugary items need to be avoided almost entirely."
+- Setup total. Cost guide heading: "Upfront Setup: Roughly $100 to $300." Its own table on the same screen: cage $280-$360, wheel $55-$75, plus four more lines. The real floor is about $374 before the animals.
+- Sand permanence. Enrichment: "Do not leave sand in permanently." Setup: "A bath house filled with bathing sand covers both," with no session limit.
+
+## 5. One link per page
+
+- 00: "A pair needs at least 24x18x36 inches with multiple solid levels" to the enclosure setup guide.
+- 01: "degus lack a functional insulin response and develop diabetes and cataracts on fruit" to the feeding guide.
+- 02: "dental work for overgrown teeth and diabetes management" to the health issues guide.
+- 03: "Feeding fruit or sugary treats as an occasional 'harmless' indulgence" to the feeding guide.
+- 04: "Degus tolerate heat poorly and should be kept below about 77°F" to the enclosure setup guide.
+- 05: "this isn't optional grooming, it's a real physiological need for this species" to the enrichment guide.
+- 06: "Tooth spurs, sharp edges on molars that don't align properly, can cut a degu's mouth" to the health issues guide.
+- 07: "Solid shelves, not wire, since wire flooring causes foot problems" to the health issues guide (bumblefoot).
+- 08: "Degus are social and usually kept in pairs or groups, which means a restriction reaches more than one animal" to the handling guide.
+- 09: "fruit, honey, seeds, and other sugary items need to be avoided almost entirely" to the feeding guide.
+
+Every deep dive links out to gerbil or chinchilla pages and almost never to its own species' siblings, which is backwards for someone mid-setup.
+
+## 6. Trust
+
+Doubts: the $100 to $300 setup figure sitting above a table that disproves it; three cage sizes; the sand-versus-dust reversal between two pages; "rabbit food... can contain an ingredient that's genuinely toxic to degus" without naming the ingredient, which reads like a fact copied without being understood; and an article titled "tank setup" for a species the hub says must not live in a tank. The hub cites the RSPCA repeatedly, the deep dives cite nothing, so they feel written by different hands.
+
+Most convincing sentence: "Leave it in permanently and it becomes a toilet, and sift and top it up instead of replacing everything every session, since the research suggests the scent history is part of what makes it worth using."
+
+## 7. Set grade
+
+C+. The individual pages are well aimed and the enrichment, legal and feeding guides are genuinely good, but a buyer following them gets three cage sizes, two temperature ceilings and two opposite answers on sand, which is exactly where a care site has to be right. First two fixes: pick one number for cage, temperature, wheel, bath medium, bath duration, pellet volume and lifespan and push it everywhere including the cost tables; then write the missing page on sourcing, sexing, introducing and re-pairing a degu, because the set tells me to buy two eight times and never tells me how.
+
+## Not covered anywhere
+
+- How to introduce or bond two degus, and how to re-pair a survivor when one dies.
+- How to sex degus, and what to do about an accidental litter from a mis-sexed pair.
+- Where to source a bonded pair and how to judge a healthy degu at purchase.
+- Cage cleaning schedule and how to spot clean a six-inch dig layer.
+- Out-of-cage time and degu-proofing a room for an animal that chews structurally.
+- The shared list covers heat emergencies, antibiotic risk, vet transport and grooming, so those are answered; the six above are not, on any page in the set.
+
+---
+
+# Savannah Monitor: Set Review
+
+Opus reader agent, first pass, 2026-09-15, batch I. Raw and unedited.
+
+
+**1. Page by page**
+
+- 00 hub: Finished it. Actionable: full parts list, cost ranges, a checklist I could shop from. But its numbers are the loosest in the set. C+
+- 01 encyclopedia: Finished it. Actionable: nothing husbandry-wise, but the CITES export figures told me why the animal in front of me is probably wild-caught. B+
+- 02 cost: Finished it. Actionable: a real budget, and the admission that no 8x4x4 exists ready-made. B-
+- 03 handling: Finished it. Actionable: the warning-sign list, pick up from underneath, tongs for feeding, nail trims are a two or three person job. A-
+- 04 health: Finished it, fast, because it is thin. Actionable: almost nothing numeric. It names four problems and says see a vet. C+
+- 05 tank setup: Finished it. Actionable: the whole build. Best page here. A
+- 06 enrichment: Finished it. Actionable: the priority order, puzzle feeding at existing ration, target training. Two sentences are visibly broken. B
+- 07 legal: Finished it. Actionable: I know exactly whether I can own one. A-
+
+**2. Hub and encyclopedia**
+
+The encyclopedia earns its place: the 1792 naming and the export volumes appear nowhere else. The hub mostly restates the deep dives, and where it differs it is wrong.
+
+Conflicts, hub versus deep dive:
+- Size. Hub: "Adult savannah monitors can reach 3 to 5 ft" and "weigh 6 to 15+ lbs". Handling: "reaches 3 to 4 feet long and weighs 8 to 15 pounds". Encyclopedia: "2.5-4 feet (75-120 cm)". Three different animals.
+- Basking. Hub: "A very hot basking spot (130 to 150 degrees F surface) is critical." Tank setup: "Basking surface temperature should reach 140 to 150F". A 130F floor is ten degrees of daylight between two pages.
+- Cool side. Hub: "Cool side: 78 to 82 degrees F." Tank setup: "Cool side should run 75 to 85F, with nighttime dropping to around 70 to 75F." The hub never mentions a night drop at all.
+- Humidity. Hub: "High humidity (60 to 70%) in the cool/burrow area." Tank setup: "Around 50% ambient, with access to a genuinely humid burrow."
+- Substrate. Hub: "12 inches or more". Tank setup: "12 to 24 inches or more". The hub checklist, the thing I would actually shop from, says "12 inch+", which is the tank guide's failing grade.
+- Vet. Hub: "Annual vet wellness check | $70 | $120". Cost: "A routine annual exam runs $50 to $100."
+- Diet. The hub argues for an invertebrate-heavy diet, then its checklist reads "Varied whole prey diet (roaches, eggs, mice, rats)", putting the two items it just blamed for killing the species on my shopping list.
+
+**3. The set as a whole**
+
+I could build the enclosure, wire the heat and light, buy legally, and handle the animal. I could not feed it with confidence. The only feeding schedule in the whole set is one hub line, "Feed juveniles daily. Feed adults 3 to 5 times per week", and no deep dive repeats, sources, or refines it. No portion size, no supplement dusting frequency despite calcium being on every list, no guidance on what a healthy adult weighs.
+
+Questions raised on one page and answered on another without being told:
+- Cost says many arrive "stressed, parasitized"; health says get a fecal exam proactively. Neither points at the other, and neither points at the shared quarantine guide.
+- Health blames respiratory infection on low temperatures; tank setup has the actual numbers.
+- Health says correct obesity by "encouraging exercise via a properly large enclosure"; the 8x4x4 page is what that means.
+- Handling says undersizing the enclosure causes behavioral problems; enrichment is the page about that.
+
+**4. Overlap and conflict across the deep dives**
+
+Read twice or more: the obesity and fatty liver story appears in full on cost, health, enrichment, and legal. The 8x4x4 admission appears near-verbatim on cost and tank setup. "Overfeeding is the single biggest issue" is on four pages.
+
+Conflicts:
+- Lifespan. Hub: "5 to 8 years instead of the 15 to 20 years". Cost: "Commonly cited at 10 to 15 years, with 15 to 20 achievable" and elsewhere "dying in their early teens or younger". Early teens and 5 to 8 years are not the same claim.
+- Enclosure cost. Hub: "8x4x4 ft+ custom enclosure or room | $500 | $1200". Cost: "Enclosure (8x2x2ft, partial match only) | $650 - $730", which is the wrong-size box priced above the hub's floor for a right-sized one.
+- Legal, internally. "the six places that do restrict it are worth reading individually", then a table of eleven jurisdictions, then "Three of the six restrictions" and "Rhode Island is the only one of the six", then "Forty-one of the 52". The table and the final count agree; the word "six" is stale in three places.
+
+**5. One link per page**
+
+- 00 hub: none needed, the sidebar carries every one.
+- 01 encyclopedia: "Despite a reputation for being tameable, savannah monitors in captivity frequently suffer from obesity and shortened lifespans due to improper high-fat diets." To the health issues guide.
+- 02 cost: "An adult needs an 8x4x4 foot custom build, and it's worth being upfront here: the enclosure above is an honest partial-match substitute". To the enclosure setup guide.
+- 03 handling: "Overfeeding, the single biggest issue with this species." To the health issues guide.
+- 04 health: "Manageable at home through genuine diet correction and encouraging exercise via a properly large enclosure". To the enclosure setup guide.
+- 05 tank setup: "Worth being upfront here: a ready-made 8ft PVC modular enclosure is actually 8x2x2ft". To the cost guide.
+- 06 enrichment: "Do not add calories in the name of enrichment, because obesity is the defining welfare problem in captive savannah monitors." To the health issues guide.
+- 07 legal: "Fatty liver disease kills more pet savannah monitors young than anything else, and it is entirely a husbandry outcome." To the health issues guide.
+
+**6. Trust**
+
+Doubts: two sentences in the enrichment guide are stranded with their subject missing, "Other quantities are available and an enclosure for this species will need many" and "The board is sized for a lizard and not a dog, which is the gap that used to sit here", which reads like a product was pulled and the prose was not. The legal guide's "six" against its own eleven-row table. The size spread across three pages. And the hub telling me rodents kill this species, then listing mice and rats on the checklist.
+
+Most convincing sentence: "Achieve this by pouring water directly into the deep substrate in one area and providing a humid hide, rather than trying to raise ambient humidity across the whole enclosure." That is somebody who has tried to fog an eight-foot box and given up.
+
+**7. Set grade: B-**
+
+The build and legal pages are genuinely good, and the set is undone by a hub whose numbers fight the pages underneath it and by a feeding question nobody answers.
+
+First two changes:
+1. Make the hub a summary of the deep dives instead of a fourth opinion: one size, one basking range, one cool side, one humidity target, one vet price, and drop mice and rats from the checklist.
+2. Write the feeding page. Schedule by age, portion, supplement dusting frequency, what a healthy body looks like with numbers, and link it from health and enrichment.
+
+**Not covered anywhere**
+
+Checked against the Health and More shared guides first. Quarantine, shedding, power outages and sitters, Salmonella, stool and hydration checks, and thermostat and probe placement are all covered there, so they are off this list.
+
+- Feeding schedule, portion size, and how to adjust either as the animal grows. Only one unsupported hub line.
+- Calcium and D3 dusting frequency. Named as a purchase on three pages, never given a schedule.
+- What a healthy adult weight or body condition score actually is. Health links out to a general body condition page but gives no monitor numbers.
+- How to buy one: captive-bred versus wild-caught sourcing, and what to check on the animal before money changes hands. Flagged as the core risk on cost and health, never answered.
+- Building the 8x4x4: materials, ventilation, floor loading, and how to contain 12 to 24 inches of damp soil.
+- Maintenance of a deep soil bed: spot cleaning, full changes, how often.
+- How to find a vet with monitor experience, called essential on the hub.
+- Free-roam safety, raised on the hub and dropped everywhere else.
+
+---
+
+# Mourning Gecko: Set Review
+
+Opus reader agent, first pass, 2026-09-15, batch J. Raw and unedited.
+
+## 1. Page by page
+
+- **00 Hub.** Finished it, and it is the most complete single page here. I can act on all of it: tank size, temps, humidity, food, checklist. Grade C+ (see the conflicts below).
+- **01 Encyclopedia.** Finished it. Nothing to act on, but the History paragraph is the only place I learned why this animal exists as it does. Grade B.
+- **02 Cost.** Finished it. I can budget: about $200 to $450 up front, $10 to $25 a month, $60 for a trio. Grade A-.
+- **03 Handling.** Finished it. Actionable: don't. Rest a hand in the enclosure, let one walk on, putty every gap. Grade B+.
+- **04 Health.** Finished it. Actionable: the MBD sign list, the 4 to 6 week clutch cycle, when to call a vet. Grade A-.
+- **05 Tank setup.** Finished it. Buildable as written. Grade B+.
+- **06 Feeding.** Finished it, twice. Best page in the set: it tells me the sources disagree instead of inventing a number. Grade A.
+- **07 Enrichment.** Finished it. Actionable priority list. Grade B+.
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: the parthenogenesis history, the 44 and 66 chromosome lineages, the cargo-ship spread are nowhere else. The hub does not. It is a full care sheet that restates every deep dive at lower resolution, and where it restates it, it disagrees.
+
+- Genus. Hub: "a different genus entirely from Lygodactylus lugubris, the mourning gecko." Encyclopedia: "Scientific: Lepidodactylus lugubris." The hub names the wrong genus in the FAQ meant to clear up a naming confusion.
+- Enclosure. Hub: "An 18x18x24" enclosure is suitable for a small colony of 3 to 5 mourning geckos." Tank setup: "A 12x18x18 inch, tall, front-opening enclosure works for a pair or small group of up to about three to five." Same group, two tanks, and only the bigger one is priced.
+- Prey size. Hub: "Prey should be no larger than the space between the gecko's eyes." Feeding: "Prey should be no larger than the width of the gecko's head." Those are very different insects.
+- Calcium dusting. Hub: "dust with calcium w/D3 2 to 3 times per week." Feeding: "dust with calcium at most feedings."
+- Schedule certainty. Hub: "offered every 2 to 3 days in a small raised dish." Feeding: "This is one of the more genuinely inconsistent schedules across care sources." The hub launders a real range into one number.
+
+## 3. The set as a whole
+
+Yes, I could buy, build, feed and keep one. What is missing: what to do with the eggs and the surplus animals. Three pages tell me the colony grows on its own, the hub says "Population management may eventually be necessary," and no page says what management means. Also missing: how to culture fruit flies when they are $50 to $100 a year and weekly; how to source and maintain the isopod and springtail crew the hub recommends; what a healthy animal looks like at purchase; what to actually do when one gets loose.
+
+Questions answered elsewhere without being told:
+- Cost: "Heat is usually the one line item you can skip entirely" is justified only by the tank setup temperatures.
+- Feeding: "a swollen abdomen paired with straining, which points to egg-binding" is fully explained on the Health page.
+- Health: the calcium and D3 warning has its actual dosing schedule on the Feeding page.
+- Tank setup: the dominant-female-guarding-the-dish problem is the same one Feeding lists as overcrowding and Enrichment solves with distributed stations.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice or more: parthenogenesis (all six pages), the 4 to 6 week clutch (health, feeding), escape-proofing with aquarium-safe putty (handling, tank setup, near word for word), 18x18x24 (cost, tank setup, enrichment), don't handle (handling, enrichment, hub).
+
+The real conflict is whether a colony is required. Handling: "a lone mourning gecko survives fine and will still lay viable eggs on its own, some breeders keep them solo without issue, so keeping a group is more a keeper preference than a hard requirement." Enrichment: "A colony over a single animal" and "You can, and it is an odd choice for a colonial parthenogenetic species." Smaller: handling says "Adult mourning geckos measure just 3.5 to 4 inches" against the hub and encyclopedia's 3 to 4.
+
+## 5. One link per page
+
+- Hub: "A mourning gecko loose in a home is nearly impossible to recover." → Tank setup, escape-proofing.
+- Encyclopedia: "They are tiny, fast, and thrive in communal setups, making them fascinating display animals." → Enrichment.
+- Cost: "Heat is usually the one line item you can skip entirely, most homes run warm enough already." → Tank setup, temperature.
+- Handling: "Before introducing any mourning geckos, especially hatchlings, seal every gap in the enclosure with aquarium-safe putty or a similar barrier." → Tank setup.
+- Health: "Skipping UVB or calcium and D3 supplementation doesn't just risk MBD in the abstract, it directly raises egg-binding risk." → Feeding, for the dusting schedule.
+- Tank setup: "Provide multiple feeding stations, a dominant female may guard a single food dish and prevent others from eating." → Enrichment.
+- Feeding: "a swollen abdomen paired with straining, which points to egg-binding and needs urgent vet care" → Health.
+- Enrichment: "And do not be surprised by eggs, because parthenogenesis means a colony grows on its own." → Health.
+
+## 6. Trust
+
+Doubts: the wrong genus on the hub. The hub calling hatchling geckos "nymphs," which is an insect word. A garbled hub sentence, "Monitor colony reproductive rate in optimal conditions, mourning gecko populations can grow quickly." And on Enrichment, the anchor "study on tokay geckos" points at the site's own tokay enrichment post, not the study, which reads like a citation and is not one.
+
+The sentence that convinced me a keeper wrote this: "Pinhead-sized insects can stop triggering a hunting response once a gecko is around a year old, the fix is simply upsizing the feeder, not a health concern." Nobody guesses that. The dominant female guarding the dish is the runner-up.
+
+## 7. Set grade: B
+
+The deep dives are honest, specific and unusually willing to say the sources disagree; the hub sitting on top of them is a lower-quality duplicate that contradicts them on five numbers.
+
+First two changes: (1) cut the hub back to a router with one set of numbers taken from the deep dives, and fix Lygodactylus. (2) Write the page on eggs and population management, then link it from the hub, health and enrichment.
+
+## Not covered anywhere
+
+- What to do with eggs and surplus geckos once the colony grows. The Health and More list has no breeding or rehoming guide.
+- Where females deposit eggs, and whether to leave, move, or incubate them.
+- Culturing fruit flies. The gut-loading guide covers feeding the flies, not producing them.
+- Sourcing and maintaining the bioactive cleanup crew the hub calls for.
+- How to pick a healthy animal at purchase and acclimate a shipped one. Quarantine is covered by the shared guide; selection and unboxing are not.
+- What to do once a gecko is loose in the house. Every page says prevent it; none says recover it.
+
+---
+
+# Ackie Monitor: Set Review
+
+Opus reader agent, first pass, 2026-09-15, batch J. Raw and unedited.
+
+
+## 1. Page by page
+
+**00 hub.** Finished it, and it is the page I trust least: every number on it is contradicted downstream. Actionable: the checklist. Grade C-.
+**01 encyclopedia.** Finished, 60 seconds. Nothing to act on, but the History paragraph (1982 export ban, small founder pool, 18-egg clutches) is the only page that explains why this animal is in the trade at all. B-.
+**02 cost.** Finished. I can build a budget from it: $150-450 animal, $800-1,500 setup, $40-80/month, vet tiers. B.
+**03 handling.** Finished, twice. Actionable: wait 4-5 days to 2 weeks, tongs only, 30 minutes of presence per visit, stop it at the elbow. A-.
+**04 health.** Finished. Actionable: weekly kitchen-scale weigh-in, two clean fecals before it meets anything else. B.
+**05 tank setup.** Finished. This is the page I would actually build from: 5x2.5x4, 130-170F surface, 12-24 in substrate, UVI 4-6, Retes stack. A-.
+**06 feeding.** Finished. Actionable schedule, staple list, dusting rule, the six reasons for a hunger strike. A-.
+**07 enrichment.** Finished. Actionable: puzzle tube, damper dig zone, target training, priority order. One garbled paragraph. B+.
+**08 legal.** Finished. I know my state's answer and the rule text behind it. A.
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: wild range, wild diet, subspecies history, the smuggling note. None of that is in a deep dive.
+
+The hub does not. It restates the deep dives at lower resolution and with different numbers, and since it is where navigation lands, it is the version most readers will carry. Conflicts:
+
+- Enclosure. Hub: "A 6x3x3 ft enclosure is the minimum for a pair." Setup: "5 feet long by 2.5 feet wide by 4 feet tall as the minimum for a single adult." The hub's pair minimum is smaller in height than the deep dive's single-animal minimum.
+- Basking. Hub Housing: "120 to 150 degrees F at the surface." Hub Health, same page: "cannot reach 130 to 150 degrees F." Setup: "roughly 130 to 170°F." Three ranges, one of them self-contradicting.
+- Cool side. Hub: "80 to 85 degrees F ambient." Setup: "Cool side should sit around 75 to 80°F."
+- Substrate. Hub: "A minimum of 12 inches." Setup: "12 to 24 inches." The hub's own enrichment text says burrows "extend 12 to 24 inches underground," so its minimum cannot hold the burrow it describes.
+- Supplements. Hub: "Dust prey with calcium w/D3 and a reptile multivitamin on a consistent schedule." Feeding: "Use a reptile multivitamin containing true vitamin A ... occasionally rather than on a fixed weekly schedule, over-supplementing vitamins is a real risk."
+- Rodents. Hub: "Whole prey items offer nutritional completeness when used judiciously." Feeding: "a rodent-heavy diet is directly linked to the fatty liver disease that shortens more captive monitor lifespans than almost anything else."
+- Subspecies. Hub: "two recognized subspecies." Encyclopedia: Boulenger "naming all three currently recognized subspecies in the same work."
+- Cost. Hub setup table totals about $595-1,130; cost guide says "$800 to $1,500 or more."
+- Difficulty. Hub and encyclopedia: "Advanced." Handling: "ackies are classed as an intermediate reptile." Legal: "one of the most commonly recommended monitor lizards for a first-time keeper."
+- Cohab. The hub pushes pairs and trios in three places. No deep dive mentions cohabitation at all, and the setup guide sizes for one animal.
+
+## 3. The set as a whole
+
+I could buy, house, feed and enrich one. Gaps: no bulb wattage or lamp distance for a 130-170F surface, no ambient humidity number in the setup guide (only the hub's 40-60%), no target weight or growth benchmark behind "weigh weekly," no breeder-vetting or health-check-at-purchase, no substrate maintenance or replacement schedule, no interim housing for a hatchling in a 5x2.5x4, no sexing or cohab practicalities.
+
+Questions answered elsewhere without being told: the health guide's "temperatures too low to support proper digestion" is settled by the setup guide's 130-170F, which it never names; feeding's "an incorrect basking temperature" is the same; the cost guide's $800-1,500 line is itemized in the setup guide; handling's "substrate too shallow to hold a burrow" is quantified in the setup guide; feeding's "stress or boredom" is the whole enrichment guide.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice: obesity from food motivation (health, handling, feeding, enrichment); substrate depth (setup, enrichment, handling); "most keepers under-provide heat ... err toward the hotter end" appears twice inside the setup guide alone; the bearded dragon/skink contrast in cost, handling, health and setup.
+
+Numbers that disagree: the animal's size. Encyclopedia: "18-28 inches (45-70 cm) including tail." Hub FAQ: "24 to 28 inches total length." Legal: "tops out around two feet." Feeding vs hub on schedule: "Subadults and adults (6+ months): Every other day" against "Adults eat 3 to 5 times per week." The enrichment guide says "Do not bowl-feed an animal that solves puzzle tubes in ten minutes" while feeding says offer "what your ackie can finish within a 5 to 10 minute window"; those are compatible but never reconciled. Enrichment also contains a broken sentence: "Other quantities are available and a proper depth needs several."
+
+## 5. One link per page
+
+- Hub: "The basking spot temperature is the most critical parameter: 120 to 150 degrees F at the surface directly under the basking light." Point to the enclosure setup guide, and adopt its range.
+- Encyclopedia: "Ridge-tailed monitors nevertheless remain among the Australian reptiles most often found for sale on overseas websites." Point to the legal guide.
+- Cost: "A large custom or PVC enclosure, deep burrowing substrate, a UVB fixture, multiple high-wattage basking bulbs, a thermostat, a Retes stack, hides, and monitoring equipment add up fast." Point to the enclosure setup guide, not the bearded dragon one.
+- Handling: "Providing shallow substrate that can't hold a proper burrow, undermining a core part of this species' natural behavior." Point to the enclosure setup guide.
+- Health: "Linked to inappropriate substrate ingestion or temperatures too low to support proper digestion." Point to the enclosure setup guide.
+- Setup: "Building a large custom or PVC enclosure at this size is a genuine part of the investment." Point to the cost guide.
+- Feeding: "Inconsistent calcium dusting is one of the more common feeding mistakes with this species, and it opens the door to metabolic bone disease even when UVB is otherwise adequate." Point to the health issues guide.
+- Enrichment: "Do not skip the basking surface temperatures this species needs while chasing enrichment." Point to the enclosure setup guide.
+- Legal: none needed.
+
+## 6. Trust
+
+Against: three different basking ranges across two pages that both claim it is the single most important number; three difficulty verdicts including "recommended for a first-time keeper" on a page the hub calls Advanced; the hub's unsupported cohab advocacy; the "$540 - $555" enclosure row, which reads like one scraped product price standing in for a category.
+
+For: the handling guide's "Keep the arm out in front and stop the lizard at the elbow, because an ackie will jump from a high point like your head." Nobody writes that who has not had one on their arm. The feeding guide's refusal to invent a fasting number is a close second.
+
+## 7. Set grade: B-
+
+The deep dives are genuinely good and the hub in front of them is wrong on size, heat, substrate, supplements and difficulty. First two changes: make the hub derive every number from the deep dives, one source of truth each, and pick a single difficulty label; then add the missing buy-and-first-month page (choosing a breeder, health check at pickup, hatchling housing, cohab and sexing, substrate maintenance) and repoint the cost guide's setup sentence at the setup guide.
+
+## Not covered anywhere
+
+Checked against the Health and More list: thermostats and wattage are covered by the heating guide, UVB distance by the UVB guide, quarantine, shedding, stool and hydration, Salmonella and outage planning all by their own shared guides. Still unanswered:
+
+- How to choose a breeder and what to check on the animal at pickup.
+- Interim housing for a hatchling before it fills a 5x2.5x4 enclosure.
+- Sexing, and how to actually run a pair or trio if the hub's advice is kept.
+- Maintenance of 12 to 24 inches of substrate: spot cleaning, full replacement interval, bioactive cleanup crew.
+- Target adult weight or growth curve to judge the weekly weigh-in against.
+- An ambient humidity figure in the setup guide; only the hub gives one (40 to 60%).
+---
+
+# Garter Snake: Set Review
+
+Opus reader agent, first pass, 2026-09-15, batch J. Raw and unedited.
+
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Actionable: shopping list, temps, cost tables. Weakened by a substrate and supplement line the deep dives contradict, and zero mention that this snake is banned in several states. **C+**
+- **01 Encyclopedia.** Finished it. Actionable: almost nothing, but the lab-model and tetrodotoxin history is the only page that made me want to keep the animal. **B**
+- **02 Cost.** Finished it. Actionable: real $49.99 listing, $200-400 setup, the honest "free snake still costs $200" math. **A-**
+- **03 Handling.** Finished it. Actionable: wait 1-2 weeks, short sessions twice weekly, approach from the side. **A-**
+- **04 Health.** Finished it. Actionable: symptom lists per condition and a clear go-to-the-vet-now list. **A**
+- **05 Tank setup.** Finished it. Actionable: sizes, gradient, bin dimensions, sealed gaps. **A**
+- **06 Feeding.** Finished it. Actionable: frequency table by diet type, prey sizing, red wiggler warning. **A**
+- **07 Enrichment.** Finished it, fastest read. Actionable: priority order and scatter-feeding. Thin, and the correction is most of the page. **B**
+- **08 Legal.** Finished it. Actionable: I now know to check my state before buying. **A**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: nothing else carries the range, conservation status, or the research history. The hub does not. It is a compressed rewrite of the tank, feeding, and health guides with no numbers the deep dives lack, and it drops the legal article entirely, which is the one thing a buyer needs before anything else.
+
+Disagreements with the deep dives:
+- Substrate. Hub checklist: "Aspen or cypress mulch substrate." Tank setup: "1 to 2 inches of a moisture-retentive substrate works well for most setups, coconut fiber, cypress mulch, or dry leaf litter." Aspen is not moisture-retentive and the tank guide never lists it. The cost guide repeats the hub's version.
+- Warm end. Hub: "a surface temperature of 85 to 88 degrees F (basking air up to 90 degrees F)." Tank setup: "85 - 90°F (up to 95°F on some sources)... treat the lower end as a floor rather than a ceiling."
+- Supplements. Hub: "Supplement with vitamin B1 and calcium a couple of times a month if fish or earthworms make up a significant part of the diet." Feeding and health both say: "add a vitamin B1 supplement if fish still make up more than roughly a quarter of what your snake eats." Different trigger, different schedule, and the deep dives never tie B1 to earthworms.
+- Feeding schedule. Hub: "adults roughly once a week if eating mice, or twice a week if eating mostly earthworms." The feeding table adds the case the hub omits, fish-heavy at "every 5 - 7 days," which for a fish-eating specialist is the likeliest one.
+- Heater price. Hub: "$35 | $60." Cost guide: "$35 - $70."
+
+## 3. The set as a whole
+
+Yes. I could legally check, buy, build, feed, handle, and spot illness. Gaps: no brumation or winter cooling anywhere; nothing on the live litter the hub advertises (up to 80 babies, no word on what you do with them); no thawing or prep procedure for frozen fish and worms; no wait-after-feeding rule before handling; cohabitation is raised three times and never actually decided.
+
+Questions answered elsewhere without being pointed there:
+- Health says "for any newly acquired garter snake" without sending me to the shared quarantine guide.
+- Cost says "a wild-caught animal skips the purchase price" while the legal guide is where I learn that in New York it is not lawful to keep at all.
+- Tank setup says the thermostat "is the part with zero exceptions" and never links the shared thermostat guide that says where the probe goes.
+- Feeding's prey-sizing rule uses body weight; the shared body-condition guide is what tells me to own a scale.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three times: thiaminase, tilapia/salmon/silversides, and the same neurological symptom list, nearly verbatim in cost, health, and feeding. Read twice: the swimmable water container and the weekly water change (tank setup and health, tank setup and enrichment).
+
+One soft conflict. Enrichment: "Many garter snake populations are semi-aquatic and hunt in water." Tank setup: "Garter snakes are semi-aquatic, proficient swimmers in the wild." One says many populations, the other says the species. Otherwise the deep-dive numbers agree.
+
+## 5. One link per page
+
+- **Hub.** "never feed live prey - it isn't necessary and can injure the snake." Point to the feeding guide, which is where the red wigglers and live-fish parasite warnings live.
+- **Encyclopedia.** "many individuals never accept a plain mouse." Point to the feeding guide.
+- **Cost.** "a fecal exam for parasites is a genuinely good idea for any wild-caught snake." Point to the health guide.
+- **Handling.** "Give a newly acquired garter snake one to two weeks to settle into its enclosure and start eating reliably before attempting to handle it." Point to the shared quarantine guide, since two weeks is not a quarantine.
+- **Health.** "A digital thermometer and hygrometer is the single best tool for catching this early." Point to the tank setup guide.
+- **Tank setup.** "a water conditioner to remove chlorine and chloramine is worth using given how much time this species spends in the water." Point to the health guide, where the same water fouling causes mouth rot.
+- **Feeding.** "Size prey at no more than about 1.5 times the width of the snake at its widest point, or roughly up to 10% of body weight per meal." Point to the shared sexing, growth and body condition guide.
+- **Enrichment.** "Do not feed a group in the same space." Point to the tank setup guide, the only page that sizes an enclosure for more than one snake.
+- **Legal.** Needs none. It links the hub and the map, and legality does not depend on husbandry.
+
+## 6. Trust
+
+Doubts: the hub disagreeing with its own deep dives on substrate and supplements suggests the card data and the articles were written apart and never reconciled, and the hub is the page I landed on first. The enrichment guide says "we made it ourselves before checking" under a title that says "I," and no author is named anywhere.
+
+The sentence that convinced me a keeper wrote this: "Do not feed a group in the same space, since one snake taking another's prey is how garter snakes injure each other." Nobody summarizing care sheets knows that the injury comes from the grab, not the fight.
+
+## 7. Set grade: A-
+
+The deep dives are specific, sourced to statute and study, and unusually willing to say what is not known; the hub drags it down by contradicting them.
+
+First two changes: rebuild the hub from the deep-dive numbers, starting with substrate, the B1 trigger, and the warm-end range, and add the legal article to the hub, since a New York buyer currently reaches five pages of husbandry before anything mentions it.
+
+## Not covered anywhere
+
+- Brumation or a winter cooling cycle, whether to do it and how.
+- What to do with a live litter, and any neonate care at all, despite the hub advertising up to 80 babies.
+- Thawing and prep for frozen fish and worms, and whether to feed in or out of the water.
+- How long to wait after a meal before handling.
+- Cohabitation as a real decision, raised in tank setup and enrichment, settled in neither.
+
+---
+
+# Oscar: Set Review
+
+Opus reader agent, first pass, 2026-09-15, batch J. Raw and unedited.
+
+
+**1. Page by page**
+
+- 00 hub: skimmed it, would not read twice. Act on: the checklist, temp 74-81F, weekly 25-30% changes. Grade C, because its headline tank number contradicts every deep dive behind it.
+- 01 encyclopedia: finished it, nothing to act on, but the Agassiz misfiling and the Dade County stocking are real content, not padding. Grade B.
+- 02 cost: finished it. Act on: buy the 75g from day one, budget $35-40/month. Grade B minus, numbers wobble.
+- 03 handling: finished it, thin. Act on: tankmate rule, no small fish. Repeats itself across three sections. Grade B minus.
+- 04 health: finished it. Act on: the HITH symptom list, nitrate control, metronidazole as the named drug. Grade A minus.
+- 05 tank setup: finished it, the most useful page here. Act on: 75g, 4-5x turnover, sand, secure lid. Grade A.
+- 06 feeding: finished it. Act on: 80/20 split, 35-45% protein, per-size feeding schedule, the thiaminase reason. Grade A.
+- 07 enrichment: finished it and enjoyed it. Act on: the numbered priority list. Grade A minus.
+
+**2. Hub and encyclopedia**
+
+The encyclopedia earns its place: origin, wild diet, invasive history, none of it in the deep dives. The hub mostly restates them in shorter form, and where it differs it is wrong.
+
+Real conflict, tank size. Hub: "A juvenile oscar needs at least 55 gallons, growing to 75 gallons or more as an adult." Setup: "75 gallons is the widely recommended minimum for a single adult... starting small and upgrading later is both more expensive overall and more disruptive for the fish." Cost, on the same question: "What's the biggest cost mistake new oscar owners make? Starting with a small tank instead of the adult-size setup." The hub's checklist tells me to make the exact mistake the cost guide calls the biggest one.
+
+Filter price. Hub: "Heavy-duty canister filter | $100 | $200." Cost: "Canister filter | $325 - $340."
+
+Running cost. Hub annual: food $80-$140 plus conditioner and test kit $25-$40, roughly $9-$15 a month. Cost: "Ongoing Costs: Roughly $35 to $40 a Month."
+
+Feeding schedule. Hub: "Feed once or twice daily." Feeding: "Babies under 3 to 4 inches eat 3 times daily. Juveniles around 3 to 8 inches eat twice daily."
+
+Routine. Hub: "Many oscars respond well to consistent feeding routines." Enrichment: "A varied feeding schedule, never a fixed one."
+
+Lifespan. Hub FAQ: "can live 10 to 20 years." Cost: "10 to 15 years typically, with well-kept individuals occasionally reaching close to 20."
+
+**3. The set as a whole**
+
+Yes, I could buy, set up, feed and keep one, provided I ignore the hub and follow the setup, feeding and health pages. Tank, filter turnover, temp, substrate, diet by size class, water change cadence and the disease to watch are all here.
+
+Still missing: tank stand and floor loading for a 75-125 gallon build, sexing and what to do if a pair forms, a single place listing target ammonia/nitrite/nitrate (nitrate under 40 ppm appears once, inside a fun fact box on the feeding page), metronidazole dosing or where to buy it, plants and lighting given that oscars uproot everything, and what to do when tankmates start fighting.
+
+Questions raised on one page and answered on another with no signpost: the setup page says weekly changes prevent hole-in-the-head but never points at the health page that describes it. The health page says nutritional gaps cause it and never points at the feeding page. The handling page's "play dead" quirk is exactly what the health page's symptom list would otherwise have me panicking over, neither links the other. The enrichment page says "they do bite" and "take real care moving a large cichlid," and the transport plan sits unlinked in the shared sidebar.
+
+**4. Overlap and conflict across the deep dives**
+
+Read twice or more: the 2-inch-to-12-inch line (cost and setup, near verbatim), no feeder goldfish (setup, feeding, enrichment), 75 gallons (cost, setup, enrichment), 25-30% weekly changes (setup, health, feeding), "anything that fits in an oscar's mouth" (handling and enrichment).
+
+Conflicts. Cause of HITH, health: "Poor water quality, elevated nitrates especially, is the common thread running through nearly every condition on this list." Feeding: "Overfeeding and uneaten food fouling the water are the primary driver behind Hole-in-the-Head disease (HITH/HLLE) in most sources." The feeding page also names "vitamin C, D, and essential fatty acids"; the health page never mentions vitamins at all.
+
+Feeding window, hub: "only what's consumed within a couple of minutes." Feeding: "Feed only what's eaten in 2 to 3 minutes."
+
+**5. One link per page**
+
+- Hub: "A juvenile oscar needs at least 55 gallons, growing to 75 gallons or more as an adult" should link to the Tank Setup guide, and be rewritten to agree with it.
+- Encyclopedia: "Oscars are naturally curious and active diggers, regularly rearranging substrate and decor in their environment" should link to the Enrichment guide.
+- Cost: "total costs easily exceed $1,000 once you factor in premium filtration and the 75-gallon-plus tank this species will eventually require" should link to Tank Setup.
+- Handling: "And since so much of the appeal here is behavioral, watching for the health issues that can dampen that personality matters too" should link to Health Issues. It gestures at it and stops.
+- Health: "Nutritional gaps are part of the cause, which is why a quality staple cichlid pellet as a diet foundation is treated as genuine prevention, not just feeding" should link to the Feeding guide.
+- Tank setup: "Weekly water changes of 25 to 30% are mandatory, not optional, this connects directly to preventing hole-in-the-head disease" should link to Health Issues.
+- Feeding: "some keepers soak food in vitamin supplements when actively addressing Hole-in-the-Head disease" should link to Health Issues.
+- Enrichment: "Do not let water quality drift, given the link to hole-in-the-head" should link to Health Issues. This page links three other species and none of its own siblings.
+
+**6. Trust**
+
+Doubts: the hub disagreeing with its own deep dives on the one number that decides the whole purchase. The cost page leaning twice on "an aquarium retailer" for lifespan, a seller quoted as an authority. Precise-sounding single figures with no range, "$560 as a low-end build" and a "$235" vet exam. The enrichment page arguing from a neon tetra study that found nothing for the one cichlid in it. And the shared pH/GH/KH guide is pitched at "a coldwater tank" and goldfish keepers, which is the wrong animal for anyone arriving from an oscar page.
+
+The sentence that convinced me a keeper wrote this: "Water quality is where oscar tanks fail, and it fails slowly enough that the fish looks fine until it does not."
+
+**7. Set grade: B plus.** The deep dives are specific, honest about disputed causes, and would get me to a healthy fish; the hub is the weak link and the pages do not point at each other where they obviously should.
+
+First two changes:
+1. Rewrite the hub to match the deep dives: 75 gallons from day one, not 55 for a juvenile, and fix the filter price and monthly cost so the hub and cost page agree.
+2. Add the in-body links between setup, health and feeding where each already names the other's topic, and reconcile the HITH cause sentence to one story across both pages.
+
+**Not covered anywhere**
+- Tank stand and floor loading for a 75-125 gallon build. Nothing in the shared list touches weight or stands.
+- Sexing oscars, pair formation, and what to do if a pair spawns. The cost page prices a breeding pair and no page goes further.
+- A single target water parameter set, ammonia, nitrite, nitrate. The cycling guide covers dosing during a cycle; no page gives the steady-state numbers for an established oscar tank, and the 40 ppm nitrate figure appears only inside a feeding fun fact box.
+- Metronidazole dosing, duration, and where to obtain it. The quarantine guide covers salt, carbon and aeration, not this drug.
+- Plants and lighting for a tank whose occupant uproots everything.
+- Managing aggression once tankmates are already in and fighting, and the rehoming option for an adult.
+
+---
+
+# Amano Shrimp: Set Review
+
+Opus reader agent, first pass, 2026-09-15, batch J. Raw and unedited.
+
+
+## 1. Page by page
+
+**00 hub.** Finished it, and it is the page I trust least: I can act on the lid, the drip acclimation, the copper warning, the checklist. Grade C+.
+**01 encyclopedia.** Finished it for the Stimpson/De Man history, which is the most interesting writing in the set. Nothing to act on. Grade B.
+**02 cost.** Finished it. Actionable: $5 to $12 a shrimp, cheaper in a 10-pack, budget a test kit. Grade A-.
+**03 handling.** Finished it. Actionable: soft net, one to two hour drip at one to two drops per second, three to four hours if the gap is wide, two to four weeks quarantine. Grade A-.
+**04 health.** Finished it, best page here. Actionable: test water first, keep GH and KH from swinging at water changes, check every label against 0.15 to 0.20 mg/L copper. Grade A.
+**05 tank setup.** Finished it. Actionable: 4 to 15 dGH targeting 6 to 8, 2 to 8 dKH, sponge as intake guard rather than flow reducer. Grade A.
+**06 feeding.** Finished it. Actionable: light feeding every couple of days, remove leftovers after a few hours, leave molts in. Grade A-.
+**07 enrichment.** Finished it, mostly repeat. Actionable: drop food in several spots. Grade B-.
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: taxonomy history and origin appear nowhere else. The hub does not. It compresses the six deep dives into worse versions of themselves and contradicts three of them.
+
+Price. Hub: "often $3 to $6 versus a dollar or two". Cost guide: "$6.39 to $7.99 each individually" and "Roughly $5 to $12 each". The hub is under the sourced floor.
+
+Tank price. Hub table: "10+ gallon tank with secure lid | $45 | $90". Cost guide table: "10 gallon tank | $18 - $30".
+
+pH. Hub: "Keep pH between 6 and 8 with moderately hard water". Tank setup: "Aim for pH 6.0 to 7.5."
+
+Temperature. Hub: "65 to 82 degrees F". Tank setup: "64 to 82°F covers the tolerated range".
+
+## 3. The set as a whole
+
+Yes, I could set this up, buy, feed, and keep them, except for stocking number and tankmates. Still missing: how many shrimp for my tank (see 4), what fish will eat them, how to find out whether my tap water carries copper, a water change volume and interval, and the cost of the quarantine tank the handling and health guides both tell me to own.
+
+Questions answered on another page without being told:
+- Cost: "tracking general hardness matters here specifically" gives no number. The dGH range is in tank setup.
+- Health: "a diet that hasn't supplied enough calcium" never says where calcium comes from. Feeding's shed-shell section answers it.
+- Health: "stable mineral content" and copper warnings never point to a filter or GH page.
+- Tank setup: "it's time to add sinking wafers or blanched vegetables" with no frequency. Feeding has it.
+- Handling: "a known trigger for failed, often fatal molts" with no explanation. Health has it.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three or four times: the amphidromous larvae explanation (cost, handling, health, enrichment, plus hub and encyclopedia), the copper warning, the lid, the sponge filter, and "algae is a starting supply, not renewable" (tank setup and feeding, nearly verbatim).
+
+The one real conflict is stocking, inside a single paragraph: "Fishkeeping World suggests roughly one shrimp per 2 gallons" against "Aquarium Co-Op's upper guidance runs closer to two shrimp per gallon". That is 5 shrimp or 20 in a 10-gallon, and "often sits toward that denser end" is not a decision. The hub's "Group of 5-6+ shrimp" picks the low end without saying so.
+
+Softer: enrichment says "Change small amounts of water often" while no page gives a percentage, and health blames "a rushed water change" for die-offs.
+
+## 5. One link per page
+
+- **Hub:** "Drip acclimate new arrivals over an hour or two rather than releasing them straight from the bag." To the handling guide.
+- **Encyclopedia:** none needed.
+- **Cost:** "tracking general hardness matters here specifically, since this species needs real dissolved minerals to molt successfully, not just clean water." To tank setup.
+- **Handling:** "that kind of sudden internal stress is a known trigger for failed, often fatal molts." To health.
+- **Health:** "a diet that hasn't supplied enough calcium to build the new shell properly." To feeding.
+- **Tank setup:** "when that reserve runs low it's time to add sinking wafers or blanched vegetables." To feeding.
+- **Feeding:** "Avoid any food, medication, or fertilizer that contains copper in any form." To health.
+- **Enrichment:** "Copper is lethal to shrimp and arrives in fish medications, some fertilizers and some tap water." To health.
+
+## 6. Trust
+
+Doubts: the hub's $3 to $6 and $45 to $90 tank contradict sourced numbers two clicks away, which reads like someone wrote the hub from memory. The encyclopedia calls it "the largest freshwater shrimp species commonly kept in aquariums", which bamboo and vampire shrimp beat outright. Enrichment cites Birch with no link and outsources it to another species' page. Feeding's FAQ claims diatoms as a strength the body never mentions. "Sinking wafers are the practical answer, and other sizes are available" is a sentence with a product removed from it.
+
+The sentence that convinced me a keeper wrote this: "An amano that grabs food and runs off with it is a hungry amano, and that behavior is so characteristic that it gets treated as charming rather than as information."
+
+## 7. Set grade: B+
+
+The deep dives are genuinely good and honestly sourced; the hub that new readers land on first undercuts them on price, tank cost, and pH.
+
+First two changes: rebuild the hub's numbers from the deep dives so nothing on it contradicts them, and resolve the stocking spread into one recommendation with a number.
+
+## Not covered anywhere
+
+Checked against the Health and More list. Filtration plausibly covers cycling and water change maintenance; the pH, GH, KH guide covers raising soft tap water. These remain:
+
+- Which fish and tankmates will eat or harass amano shrimp. Three Shrimp compares shrimp to shrimp only.
+- How to find out whether your tap water carries copper, which three pages tell you to verify.
+- The cost of the quarantine tank two pages require; the cost guide's $60 to $150 does not include it.
+- How many shrimp to buy for a given tank size, left at 5 or 20 in a 10-gallon.
+- What a female carrying eggs actually looks like, so a keeper can tell it from the molt and illness signs the health page describes.

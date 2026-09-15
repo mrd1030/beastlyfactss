@@ -313,46 +313,84 @@ export const fishGuides = [
     image: "/assets/guides/corydoras-catfish.jpg",
     tagline: "The armored little bottom-cleaner that schools, snoozes, and shimmies to the surface for air!",
     funFact: "Corydoras catfish can breathe atmospheric air by gulping it at the surface and absorbing oxygen through their intestine - a backup adaptation for the low-oxygen waters they evolved in. This means an occasional dash to the surface for a quick gulp of air is completely normal behavior, not a sign of a sick or distressed fish.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // Priced for a proper school of 6+, since they're obligate shoaling fish.
-    costs: {
-      setup: [
-        { item: "10-20+ gallon tank", low: 60, high: 120 },
-        { item: "Gentle filter", low: 20, high: 35 },
-        { item: "Soft sand or smooth fine gravel", low: 15, high: 25 },
-        { item: "Driftwood and plant cover", low: 20, high: 35 },
-      ],
-      annual: [
-        { item: "Sinking wafers + frozen bloodworms", low: 40, high: 70 },
-        { item: "Water conditioner", low: 10, high: 15 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Cycling, the hospital
+    // tank and sick-fish signs cite the shared fish guides in the sidebar's
+    // Health and More list. The old hub priced a tank at double the cost
+    // guide's figure and a filter at more than double, gave "10 to 20 gallon"
+    // without saying 10 is pygmy-only, and omitted the heater and test kit
+    // the cost guide calls required. Reconciled 2026-09-15 for batch I
+    // (docs/READER_REVIEWS.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Before any fish", value: "A tank that has finished cycling reads zero ammonia and zero nitrite while still processing a dose, which is a different question from how long it has been running.", source: "aquarium-cycling-guide" },
+        { label: "Tank size", value: "A 20-gallon long is the practical minimum for a school of six standard-sized cories; dwarf and pygmy species manage in about 10 gallons. Going to 29 or 30 gallons is better, especially for a group of 8 to 15.", source: "corydoras-catfish-tank-setup-guide" },
+        { label: "Group size", value: "Six of the same species, minimum. A lone or paired cory hides, darts erratically, and goes off its food, which is what an inadequate group looks like. Treat the number as a welfare requirement.", source: "corydoras-catfish-handling-guide" },
+        { label: "More is better", value: "Six at absolute minimum and more is better. They are social bottom-dwellers that shoal, forage and rest together, and a group of two or three is a visibly less active, more nervous set of fish.", source: "corydoras-catfish-enrichment-guide" },
+        { label: "Temperature", value: "72 to 78°F covers most species in the hobby, though preferences vary: some take warmer water, others want it cooler. Unless the room stays warm year-round, run a reliable heater, and hold the number steady rather than chasing a precise one.", source: "corydoras-catfish-tank-setup-guide" },
+        { label: "Water chemistry", value: "pH 7.0 to 7.8 for captive-bred cories, which is most of what the trade sells. Keep ammonia and nitrite at zero and nitrate low with regular water changes.", source: "corydoras-catfish-tank-setup-guide" },
+        { label: "Substrate", value: "Soft sand, or smooth, fine, rounded gravel, about 2 inches deep. Sharp or coarse gravel is out, and so are certain specialty planted-tank sands: manufacturers flag some sharp-grained options as unsuitable for bottom-dwellers like cories.", source: "corydoras-catfish-tank-setup-guide" },
+        { label: "Why sand, really", value: "Corydoras are social foragers that root through the substrate with their barbels to find food, and fine sand is what lets them do it without hurting themselves. The behavioral argument for sand is stronger than the barbel argument ever was.", source: "corydoras-catfish-enrichment-guide" },
+        { label: "Flow", value: "Gentle water movement with calm areas to rest in, rather than one strong current everywhere. They also need clear access to the surface, since they gulp air periodically as part of normal breathing.", source: "corydoras-catfish-tank-setup-guide" },
+        { label: "Lighting", value: "Standard community lighting. Cories are most active at dawn and dusk, so give them shaded cover and hides to retreat into when the tank is bright.", source: "corydoras-catfish-tank-setup-guide" },
+        { label: "Not algae eaters", value: "The cleanup crew reputation is wrong. Cories pick leftover food off the bottom, which helps but isn't the same job, and they need sinking food of their own. Algae and scraps won't keep them alive.", source: "corydoras-catfish-handling-guide" },
+        { label: "Staple food", value: "A sinking pellet or wafer made for bottom feeders or catfish, around 30 to 40% protein, does the staple work. Worms belong in the rotation regularly: live blackworms, frozen bloodworms, or Hikari Vibra Bites, plus occasional sinking gel foods.", source: "corydoras-catfish-feeding-guide" },
+        { label: "Portion", value: "Once or twice daily, and only what the group clears in 2 to 3 minutes. Start at about one sinking wafer per 3 to 4 fish, or 2 to 3 small pellets each, then adjust to what gets eaten. Food still sitting there after 20 to 30 minutes means cut back next time.", source: "corydoras-catfish-feeding-guide" },
+        { label: "Why flakes fail", value: "Because they feed on the bottom. Flakes get eaten by mid and upper-tank fish long before they sink far enough to matter, so a tank fed exclusively with flakes can leave cories functionally unfed even though food goes in daily.", source: "corydoras-catfish-feeding-guide" },
+        { label: "Feeding after dark", value: "Sinking food fed for them, after lights out if faster tankmates are taking it.", source: "corydoras-catfish-enrichment-guide" },
+        { label: "Surface dashes", value: "Corydoras can gulp air and absorb oxygen through the gut, which is normal behavior rather than a symptom. It becomes a warning sign when it happens constantly, which usually means the water is low in oxygen or fouled.", source: "corydoras-catfish-enrichment-guide" },
+        { label: "Barbel erosion", value: "The barbels wear down: shortened, red, or gone entirely. It's the signature cory health issue. Sharp substrate is the usual explanation, and eroding barbels may owe as much to poor water quality as to grain shape, so a dirty substrate is what to manage first.", source: "corydoras-catfish-health-issues-guide" },
+        { label: "Keeping the bottom clean", value: "Regular substrate vacuuming, low nitrate, no uneaten food left to rot. Sharp substrate is not ideal and is a secondary factor next to what is living in a dirty one.", source: "corydoras-catfish-enrichment-guide" },
+        { label: "If barbels go", value: "Caught reasonably early, move to soft sand, do a significant water change, and hold nitrates under 20 ppm from there on. Barbels can regrow over 4 to 8 weeks once conditions improve. Untreated, it can progress to red blotch disease.", source: "corydoras-catfish-health-issues-guide" },
+        { label: "Medication sensitivity", value: "They're armored catfish with sensitive, naked bellies, and notably more medication sensitive than many community fish. That means reduced doses, sometimes a half or a quarter of the standard amount, and no full-strength copper, malachite green, or formalin.", source: "corydoras-catfish-health-issues-guide" },
+        { label: "Ich", value: "Raise the temperature gradually toward 82°F with strong aeration, and reduce the medication dose. This species doesn't tolerate a full-strength treatment the way many hardier fish do.", source: "corydoras-catfish-health-issues-guide" },
+        { label: "Netting one", value: "Take real care, since the pectoral spines lock and tangle in mesh.", source: "corydoras-catfish-enrichment-guide" },
+        { label: "Quarantine", value: "A new or sick fish belongs in a bare hospital tank first, and how long it stays there is settled by the rules rather than by how the fish looks.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Budget", value: "$3 to $8 each for the common ones, and groups of six or more are the requirement, so price the school rather than the fish. Roughly $150 to $215 upfront, and $10 to $20 a month after that.", source: "corydoras-catfish-cost-guide" },
+        { label: "Vet costs", value: "Aquatic vets are uncommon. Most cory health problems get handled by the keeper instead, through correcting water quality and using appropriate medication.", source: "corydoras-catfish-cost-guide" },
+        { label: "Lifespan", value: "5 to 10 years is typical, and some individuals live well past that, with occasional reports of up to 15 years in ideal conditions. Plan the tank around it: that's longer than many people expect from a small bottom dweller.", source: "corydoras-catfish-cost-guide" },
+        { label: "Adult size", value: "1 to 3 inches (2.5 to 7.5 cm) depending on species." },
       ],
     },
-    sections: {
-      housing: "A 10 to 20 gallon tank suits a proper school, since corydoras are obligate shoaling fish that need at least six of the same species to feel secure. Soft sand substrate is essential - sharp or rough gravel damages their sensitive barbels, the whisker-like feelers they use to find food. Gentle filtration, driftwood, and plants for cover round out a good setup, kept at 72 to 78 degrees F with well-oxygenated water.",
-      diet: "Corydoras are omnivorous bottom feeders that do best on sinking wafers or pellets formulated specifically for catfish. Supplement with blanched vegetables and frozen bloodworms or brine shrimp for variety. Feed in the evening, or make sure food reaches the bottom before faster mid-water fish eat it all - relying only on leftover flake food from other tankmates does not provide adequate nutrition for corydoras.",
-      enrichment: "Corydoras must be kept in groups of six or more of the same species; solitary or small-group individuals show visible stress and reduced activity compared to a properly sized school. They spend much of the day actively foraging, sifting through soft substrate with their barbels, and displaying playful, synchronized schooling behavior. Periodic surface dashes for air are a natural and healthy part of their routine. They also appreciate caves and plant cover to retreat to when resting.",
-      health: "Barbel damage or erosion from sharp or rough substrate is a very common and entirely preventable problem - always use sand or smooth, fine gravel. Ich and bacterial infections both follow poor water quality. Corydoras are also sensitive to some medications, since many contain copper, which is toxic to scaleless catfish, so always check a treatment's corydoras-safety before dosing the tank. Because they spend their time along the bottom, they're often the first fish affected by settling waste, making regular gravel vacuuming and 20 to 25 percent weekly water changes especially important.",
-      checklist: [
-        "10-20+ gallon tank",
-        "Group of 6+ corydoras of the same species",
-        "Soft sand or smooth fine gravel (no sharp gravel)",
-        "Gentle filter",
-        "Driftwood and plant cover",
-        "Sinking catfish wafers or pellets",
-        "Frozen bloodworms for variety",
-        "Water test kit",
-        "Gravel vacuum for substrate cleaning",
-        "Check medications for copper before treating",
+    emergencyCard: {
+      source: "corydoras-catfish-health-issues-guide",
+      callNow: [
+        "Barbels shortened, red, or gone entirely",
+        "Red or bloody-looking sores on the belly and flanks",
+        "Small white spots resembling grains of salt",
+        "Frayed or receding fins",
       ],
+      vetLine: "Aquatic vets are uncommon, so most of this is handled by correcting water quality and using appropriate medication at a reduced dose. This species is notably more medication sensitive than many community fish: sometimes a half or a quarter of the standard amount, and no full-strength copper, malachite green, or formalin.",
     },
+    routes: [
+      { slug: "corydoras-catfish-cost-guide", line: "$3 to $8 a fish and you need six, the $150 to $215 setup, and why the substrate line matters more here than for most community fish." },
+      { slug: "corydoras-catfish-tank-setup-guide", line: "The 20-gallon-long minimum, the substrate that decides everything, gentle flow with calm resting spots, and clear access to the surface." },
+      { slug: "corydoras-catfish-feeding-guide", line: "Why the cleanup-crew reputation starves them, the sinking staple, portion by the group, and seven reasons a cory stops eating." },
+      { slug: "corydoras-catfish-handling-guide", line: "An observation fish, the six-fish welfare floor, and why the dash to the surface is not distress." },
+      { slug: "corydoras-catfish-health-issues-guide", line: "Barbel erosion, red blotch, ich at a reduced dose, and why this species tolerates medication worse than its tankmates." },
+      { slug: "corydoras-catfish-enrichment-guide", line: "What the barbel story actually rests on, the behavioral case for sand, and feeding after lights out." },
+    ],
+    buyList: [
+      "20-gallon long tank, 29 or 30 gallons preferred",
+      "Heater",
+      "Gentle-flow filter",
+      "Water test kit",
+      "Water conditioner",
+      "Soft sand, about 2 inches deep",
+      "Plants and hides for shaded cover",
+      "Sinking pellets or wafers for bottom feeders",
+      "Frozen or live worms for the rotation",
+      "Gravel vacuum",
+      "A group of six or more of one species",
+    ],
     faqs: [
-      { q: "Why does my corydoras keep dashing to the surface?", a: "This is normal air-gulping behavior. Corydoras can breathe atmospheric oxygen through their intestine as a backup to their gills, so an occasional dart to the surface for a gulp of air is healthy, not a sign of a problem." },
-      { q: "How many corydoras should I keep together?", a: "At least 6 of the same species. They are obligate shoaling fish and show visible stress, reduced activity, and duller color in groups smaller than that." },
-      { q: "What substrate is safe for corydoras?", a: "Soft sand or smooth, fine gravel only. Sharp or rough gravel damages their sensitive barbels, the whisker-like feelers around their mouth that they rely on to locate food." },
-      { q: "Are corydoras aggressive?", a: "No - they're among the most peaceful community fish available and make excellent tankmates for nearly any non-aggressive fish species." },
-      { q: "How long do corydoras live?", a: "5 to 10 years is typical with good care, and some especially well-kept individuals have reached 15 years, which is unusually long for a small aquarium fish." },
-      { q: "Are corydoras catfish good pets for beginners?", a: "Yes, genuinely. They're peaceful, hardy, and among the most beginner-friendly community fish available, as long as you commit to a proper school of six or more and soft substrate for their barbels. The main mistake beginners make is buying just one or two, which leaves them visibly stressed." },
-      { q: "Can corydoras live with a bristlenose pleco?", a: "Yes, genuinely well. Both are peaceful, bottom-dwelling, scaleless catfish that need similar water quality, and they're not really in competition since corydoras sift the substrate for food while a [bristlenose pleco](/guides/bristlenose-pleco/) grazes algae off glass, decor, and driftwood. Just remember both are sensitive to copper-based medications, so double-check any treatment before dosing a shared tank." },
+      { q: "Do corydoras catfish eat algae?", a: "Not effectively. Left to live off leftovers and algae film as a self-sufficient cleanup crew, a cory can slowly starve, especially alongside faster, more aggressive eaters. They need dedicated sinking food, offered on purpose every time." },
+      { q: "Does gravel wear down corydoras barbels?", a: "That is the standard explanation, and no controlled study establishes it, or any competing mechanism. What is documented is that substrate of any kind harbors pathogenic bacteria, so a clean substrate matters more than its grain shape, and plenty of keepers have raised healthy corydoras on smooth gravel for decades." },
+      { q: "Why are corydoras catfish more medication sensitive than other fish?", a: "They're armored catfish with sensitive, naked bellies, and notably more medication sensitive than many community fish. That means reduced doses, sometimes a half or a quarter of the standard amount, and no full-strength copper, malachite green, or formalin, which this species tolerates poorly." },
     ],
   },
   {
@@ -764,44 +802,90 @@ export const fishGuides = [
     image: "/assets/guides/oscar.jpg",
     tagline: "The big-personality cichlid that recognizes its keeper and rearranges the tank on a whim!",
     funFact: "Oscars are sometimes nicknamed 'water dogs' because of how strongly they bond with and recognize individual keepers - learning to beg at the glass, follow a finger around the tank, and in some cases tolerate supervised hand-feeding, behavior that sets them apart from most other fish.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "55+ gallon tank (75+ for an adult)", low: 150, high: 350 },
-        { item: "Heavy-duty canister filter", low: 100, high: 200 },
-        { item: "Aquarium heater", low: 25, high: 45 },
-        { item: "Heavy driftwood and rock (digging-proof)", low: 40, high: 80 },
-      ],
-      annual: [
-        { item: "Cichlid pellets + occasional meaty treats", low: 80, high: 140 },
-        { item: "Water conditioner and test kit", low: 25, high: 40 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Cycling, quarantine, filter maintenance and the
+    // sick-fish check cite the shared aquarium guides in the sidebar's
+    // Health and More list. Reconciled 2026-09-15 after the oscar set test
+    // (docs/READER_REVIEWS.md).
+    //
+    // The old hub understated this build in every line that had a price on
+    // it, all gone rather than moved: the canister filter at $100 to $200
+    // against the cost guide's $325 to $340, the heater at $25 to $45
+    // against $18 to $30, and a tank line of $150 to $350 on a page whose
+    // own cost guide says the total "easily exceeds $1,000". It also opened
+    // with "a minimum of 55 gallons for one juvenile", a figure no deep dive
+    // carries, where the setup guide says to build the 75-gallon adult tank
+    // immediately rather than upgrade into it. And it gave adult size twice,
+    // as "12 to 14 inches or longer" in one place and "10 to 14, up to 16"
+    // in another.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Cycling", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
+        { label: "Quarantine", value: "At least 30 days for a new or sick fish, and 30 to 60 days for one you especially don't want to lose or don't want introducing something to an established tank. Thirty days is the floor, not the target. Use separate nets and siphon hoses for the quarantine tank.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Tank size", value: "75 gallons is the widely recommended minimum for a single adult, with 100 to 125-plus gallons for a pair or small group. A 2-inch juvenile oscar reaches 12 inches or more within its first year, so starting small and upgrading later is both more expensive overall and more disruptive for the fish than getting the adult tank from the start.", source: "oscar-fish-tank-setup-guide" },
+        { label: "Space first", value: "Everything else is downstream. Oscars reach a foot or more and get sold at two inches to people buying a tank for the two inch version. There is no enrichment that compensates for an adult oscar in a 40 gallon.", source: "oscar-fish-enrichment-guide" },
+        { label: "Filtration", value: "Canister filters are the standard choice, sized to handle roughly 4 to 5 times the tank's total volume per hour. Many keepers run a large canister alongside a secondary hang-on-back unit for redundancy, which in oscar keeping is close to the baseline expectation rather than overkill.", source: "oscar-fish-tank-setup-guide" },
+        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
+        { label: "Temperature", value: "74 to 81°F, kept stable. A reliable submersible heater is required, ideally one with a built-in thermometer for easy monitoring, since this is a genuinely tropical species with no cold tolerance.", source: "oscar-fish-tank-setup-guide" },
+        { label: "Water chemistry", value: "A pH range of 6 to 8 and soft to moderately hard water both suit this species well. Oscars are fairly adaptable on this front compared to some pickier fish.", source: "oscar-fish-tank-setup-guide" },
+        { label: "Water changes", value: "Weekly changes of 25 to 30% are mandatory, not optional, and this connects directly to preventing hole-in-the-head disease.", source: "oscar-fish-tank-setup-guide" },
+        { label: "Substrate", value: "Sand, which oscars genuinely enjoy sifting through, or smooth, pea-sized or larger gravel. Avoid sharp or coarse substrate, which can injure this fish's mouth given how much it interacts with the tank floor.", source: "oscar-fish-tank-setup-guide" },
+        { label: "Anchor everything", value: "Oscars rearrange their environment with their mouths and will topple anything not properly anchored, and thicker aquarium glass is worth considering given how much this fish bumps and interacts with its tank walls. A tight, secure lid is essential, since oscars are capable jumpers.", source: "oscar-fish-tank-setup-guide" },
+        { label: "Let them move things", value: "Oscars dig substrate, shift decor and uproot plants deliberately, and an aquascape they cannot alter takes that away. Give them movable furniture: smooth stones, sizeable driftwood, and a deep sand or fine gravel bed to push around. The layout will not stay where you put it, because the rearranging is the point.", source: "oscar-fish-enrichment-guide" },
+        { label: "Staple food", value: "A high-quality cichlid pellet at 35 to 45% protein, making up roughly 80% of the diet, sized appropriately for the fish. The remaining 20% is frozen or fresh: shrimp, krill, earthworms, mysis, and occasional plant matter like peas or zucchini.", source: "oscar-fish-feeding-guide" },
+        { label: "Feeding frequency", value: "Babies under 3 to 4 inches eat 3 times daily. Juveniles around 3 to 8 inches eat twice daily. Adults over about 8 inches, or a year old, eat once or at most twice daily. Feed only what's eaten in 2 to 3 minutes and remove anything uneaten.", source: "oscar-fish-feeding-guide" },
+        { label: "Portion check", value: "A healthy oscar has a slightly rounded, not bulging, belly. They beg constantly and are genuinely easy to overfeed, and many keepers fast adults one day a week to keep portions honest.", source: "oscar-fish-feeding-guide" },
+        { label: "Not feeder goldfish", value: "Live feeder goldfish and rosy-red minnows shouldn't be a staple. Feeder fish commonly carry thiaminase, an enzyme that breaks down vitamin B1, and without adequate B1 the symptoms run to lethargy, weight loss, nerve control problems, and eventually heart failure and death. They also carry a real risk of parasites, disease, and excess fat.", source: "oscar-fish-feeding-guide" },
+        { label: "Tank mates", value: "Oscars are genuinely predatory, not just assertive. A useful rule of thumb from experienced keepers: if something fits in an oscar's mouth, it will eventually end up there. Best paired with large, tough fish, severums or big plecos among them, in a large tank, or kept alone entirely.", source: "oscar-fish-handling-guide" },
+        { label: "Not a hands-on pet", value: "Oscars recognize their keeper, swim to the front of the tank in greeting, and can be trained to eat from a hand, but the relationship lives entirely at the glass and through feeding, not through touch.", source: "oscar-fish-handling-guide" },
+        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
+        { label: "Budget", value: "$7 to $35 for a common juvenile, over $100 for a specialty variety, and $99 and up for an already-grown fish. A 55-gallon starter setup has been estimated at around $560 as a low-end build, and the total easily exceeds $1,000 with premium filtration and the 75-gallon-plus tank this species eventually requires. Upkeep runs roughly $35 to $40 a month.", source: "oscar-fish-cost-guide" },
+        { label: "Adult size", value: "10 to 14 inches (25 to 36 cm); up to 16 inches in optimal conditions." },
+        { label: "Lifespan", value: "10 to 15 years typically, with well-kept individuals occasionally reaching close to 20.", source: "oscar-fish-cost-guide" },
       ],
     },
-    sections: {
-      housing: "A juvenile oscar needs at least 55 gallons, growing to 75 gallons or more as an adult, since they can reach 12 to 14 inches or longer. Heavy-duty filtration, ideally a large canister filter, is essential given how much waste they produce. Keep water heated between 74 and 81 degrees F, and use a secure lid, since oscars are powerful swimmers capable of knocking loose decor around. Choose only heavy, sturdy decor - driftwood and large rock - since oscars naturally dig and rearrange their tank, and lighter items get toppled or buried.",
-      diet: "Oscars are carnivorous, predatory cichlids that do best on a high-quality cichlid pellet as their dietary staple. Avoid feeding an all-feeder-fish diet, which has been linked to nutritional deficiencies and disease transmission. Occasional treats like earthworms and prawns or shrimp add welcome variety. Feed once or twice daily, offering only what's consumed within a couple of minutes, since oscars are prone to obesity if overfed.",
-      enrichment: "Oscars are unusually intelligent and interactive for fish, regularly recognizing and responding differently to their individual keeper compared to strangers. They enjoy digging and rearranging substrate and decor, so providing heavy river rock and driftwood that can't easily be displaced gives them an outlet for this natural behavior. Many oscars respond well to consistent feeding routines and some informal training. Avoid any tankmates small enough to be eaten or too slow to avoid being bullied.",
-      health: "Hole-in-the-head disease, which causes pitting lesions on the head and lateral line, is strongly associated with poor water quality, nutritional deficiency, and old-tank syndrome, and is unfortunately common in this species - often linked to keepers underestimating the maintenance a large, heavy-bioload tank requires. Ich and aggression-related injuries from incompatible tankmates are also concerns. Insufficient tank size is one of the most common and preventable welfare issues for oscars, since they're frequently sold small into tanks that can't accommodate their adult size. Strong filtration and weekly 25 to 30 percent water changes are non-negotiable given their heavy bioload.",
-      checklist: [
-        "55+ gallon tank for a juvenile (75+ gallons for an adult)",
-        "Heavy-duty canister filter",
-        "Heater set to 74-81°F",
-        "Secure lid",
-        "Sand or smooth large gravel substrate",
-        "Heavy driftwood and rock (digging-proof decor)",
-        "High-quality cichlid pellets as dietary staple",
-        "Occasional meaty treats (earthworms, shrimp)",
-        "Water test kit",
-        "Weekly 25-30% water changes",
+    emergencyCard: {
+      source: "oscar-fish-health-issues-guide",
+      callNow: [
+        "Small pitted lesions or holes developing on the head and along the lateral line, appetite and weight loss, lethargy, and stringy white feces (hole-in-the-head disease). Caught early this is genuinely treatable at home with a near-zero fatality rate: correct water quality, address nitrate specifically, adjust diet, and treat with metronidazole if a parasite is involved",
+        "Small white spots across the body and fins (ich), triggered by temperature swings or general stress. Manageable at home with a standard commercial ich treatment and correcting whatever stressor triggered it",
+        "Frayed, discolored fin edges (fin and tail rot), bacterial and tied to poor water quality. Treatment without fixing the underlying water rarely holds",
+        "One or both eyes swollen or bulging (popeye), usually bacterial or linked to water quality. See a vet if available, or treat with water correction and antibacterial medication if not",
+        "Swelling, a distended abdomen, and scales that raise into a pinecone-like pattern (dropsy). This typically signals serious internal illness and often carries a poor outlook by the time it's visibly obvious",
       ],
+      vetLine: "Poor water quality, elevated nitrates especially, is the common thread running through nearly every condition on this list, hole-in-the-head disease most directly of all. Weekly water changes and heavy-duty filtration aren't optional extras for this species, they're genuinely the primary defense against the health issue oscars are most known for.",
     },
+    routes: [
+      { slug: "oscar-fish-cost-guide", line: "$7 to $35 for the fish and past $1,000 for the tank it needs, the itemized build, and why the animal is the smallest number in the equation." },
+      { slug: "oscar-fish-tank-setup-guide", line: "The 75-gallon adult minimum to build immediately rather than grow into, filtration sized to 4 or 5 times the volume, and the decor an oscar will move anyway." },
+      { slug: "oscar-fish-feeding-guide", line: "The 80/20 pellet-and-frozen split, feeding frequency by size, and why feeder goldfish are the one mistake that matters most." },
+      { slug: "oscar-fish-handling-guide", line: "The aquatic dog reputation and what is actually behind it, the sulking after a water change, and the rule that anything fitting in an oscar's mouth ends up there." },
+      { slug: "oscar-fish-health-issues-guide", line: "Hole-in-the-head disease, treatable at home when caught early, plus ich, fin rot, popeye and dropsy, and the nitrate line running under all of them." },
+      { slug: "oscar-fish-enrichment-guide", line: "Why the enrichment case here is argued from behavior rather than studies, the decor an oscar is allowed to rearrange, and target training a fish." },
+    ],
+    buyList: [
+      "75-gallon or larger glass or acrylic aquarium",
+      "Canister filter rated for 4 to 5 times the tank volume",
+      "A secondary hang-on-back filter for redundancy",
+      "Submersible heater with a built-in thermometer",
+      "Water test kit",
+      "Water conditioner",
+      "Sand, or smooth pea-sized or larger gravel",
+      "Heavy driftwood and smooth stones, anchored",
+      "A tight, secure lid",
+      "Gravel vacuum and buckets for weekly changes",
+      "High-quality cichlid pellets, 35 to 45% protein",
+      "Frozen shrimp, krill, mysis or earthworms",
+      "A quarantine tank with its own net and hose",
+    ],
     faqs: [
-      { q: "How big do oscars get?", a: "10 to 14 inches is typical for a well-kept adult, with some individuals reaching up to 16 inches in very large tanks - far bigger than most new keepers expect from a fish that's usually sold small in pet stores." },
-      { q: "Do oscars recognize their owners?", a: "Yes, oscars are genuinely known for recognizing individual keepers, which is why they're sometimes called 'water dogs.' They will approach the glass, beg for food, and behave noticeably differently toward their regular keeper than toward strangers." },
-      { q: "What size tank does an oscar need?", a: "A minimum of 55 gallons for one juvenile, growing to 75 gallons or more as an adult. Oscars are frequently sold small into undersized tanks, which is one of the most common welfare problems in the species." },
-      { q: "Can oscars live with other fish?", a: "Only with similarly sized, robust tankmates such as larger catfish, silver dollars, or other comparably sized Central and South American cichlids. Small or slow fish will be eaten or bullied." },
-      { q: "What is hole-in-the-head disease?", a: "A condition causing pitting lesions on the head and lateral line, strongly associated with poor water quality, old-tank syndrome, and nutritional gaps, especially an all-feeder-fish diet. Prevention centers on strong filtration, regular water changes, and a varied high-quality diet." },
-      { q: "Are oscars good pets for beginners?", a: "Not really, despite how small they look in the pet store. An oscar needs 55 to 75+ gallons as an adult, produces a heavy bioload, and can live 10 to 20 years. They're better suited to someone who's already run a smaller tank successfully and is ready to commit to the space and filtration a big, intelligent cichlid needs." },
+      { q: "What size tank does an oscar need?", a: "75 gallons is the usual minimum for one adult, and 100 to 125-plus for a pair or small group. A 2-inch juvenile hits 12 inches or more inside a year, so build for the adult rather than upgrading later." },
+      { q: "Can I feed my oscar live feeder goldfish?", a: "Don't make it a staple. Feeder goldfish and rosy-red minnows commonly carry thiaminase, an enzyme that destroys vitamin B1, along with real parasite and disease risk and excess fat. A thiamine deficiency shows up as lethargy, weight loss, and nerve problems, and it can eventually be fatal." },
+      { q: "What is hole-in-the-head disease in oscars?", a: "The signature oscar problem, common enough here to have earned its own hobby name. Look for small pitted lesions or holes on the head and down the lateral line, along with appetite and weight loss, lethargy, and stringy white feces." },
     ],
   },
   {

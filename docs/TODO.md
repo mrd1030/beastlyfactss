@@ -390,15 +390,21 @@ share a silhouette. That is roughly 25 species, about 175 images.
 
 ## 7. Router hubs, species by species
 
-Checked 2026-09-14 against `src/lib/data/guides/*.js`: a hub is a router hub
-when its entry carries `firstWeek` rows (RULES, Hubs). 46 of 108 done, 62
+Checked 2026-09-15 against `src/lib/data/guides/*.js`: a hub is a router hub
+when its entry carries `firstWeek` rows (RULES, Hubs). 56 of 108 done, 52
 still rendering the legacy care sheet. Batches of five, one branch each,
 per the READMEFIRST process. Dogs and cats last.
-Next: batch I, not yet picked. Worker Opus 5 high effort, one Fable
-closing check per batch (the batch prompt in READMEFIRST has the
-reasoning).
+Batch I (African fat-tail gecko, corydoras catfish, red-footed tortoise,
+degu, savannah monitor) is built, checked and pushed on
+claude/hub-pacman-frog-80291s, not merged. The Fable closing check ran
+2026-09-15 and fixed every finding on the branch; pass grade B-.
+Batch J (mourning gecko, ackie monitor, garter snake, oscar, amano
+shrimp) is built, checked and pushed on the same branch, not merged. The
+Fable closing check ran 2026-09-15 and fixed every finding; pass grade
+C+. Worker Opus 5 high effort, one Fable closing check per batch (the
+batch prompt in READMEFIRST has the reasoning).
 
-Done (31):
+Done (56):
 
 - [x] axolotl, White's tree frog
 - [x] African grey, budgie, cockatiel, cockatoo, conure, lovebird
@@ -415,24 +421,87 @@ Done (31):
       (batch G, merged to main 2026-09-14)
 - [x] cardinal tetra, milk snake, gargoyle gecko, gerbil, sulcata tortoise
       (batch H, merged to main 2026-09-15)
+- [x] African fat-tail gecko, corydoras catfish, red-footed tortoise, degu,
+      savannah monitor (batch I, checked 2026-09-15, not merged)
+- [x] mourning gecko, ackie monitor, garter snake, oscar, amano shrimp
+      (batch J, checked 2026-09-15, not merged)
 
-To do (62):
+To do (52):
 
 - [ ] Amphibians (2): fire-bellied toad, tiger salamander
 - [ ] Birds (2): parrotlet, quaker parakeet
-- [ ] Fish (9): bristlenose pleco, corydoras catfish, discus, koi, molly,
-      oscar, platy, swordtail, zebra danio
-- [ ] Geckos (3): African fat-tail, leaf-tailed gecko, mourning gecko
-- [ ] Invertebrates (9): amano shrimp, cherry shrimp, ghost shrimp, emperor
-      scorpion, giant millipede, jumping spider, hissing cockroach, praying
-      mantis, stick insect
-- [ ] Lizards (7): ackie monitor, Argentine tegu, fire skink, green anole,
-      Jackson's chameleon, savannah monitor, uromastyx
-- [ ] Small mammals (3): degu, mouse, flying squirrel
-- [ ] Snakes (2): garter snake, rosy boa
-- [ ] Turtles (1): red-footed tortoise
+- [ ] Fish (7): bristlenose pleco, discus, koi, molly, platy, swordtail,
+      zebra danio
+- [ ] Geckos (1): leaf-tailed gecko
+- [ ] Invertebrates (8): cherry shrimp, ghost shrimp, emperor scorpion,
+      giant millipede, jumping spider, hissing cockroach, praying mantis,
+      stick insect
+- [ ] Lizards (5): Argentine tegu, fire skink, green anole, Jackson's
+      chameleon, uromastyx
+- [ ] Small mammals (2): mouse, flying squirrel
+- [ ] Snakes (1): rosy boa
 - [ ] Cats (10): universal, American shorthair, Bengal, domestic shorthair,
       Maine Coon, Persian, Ragdoll, Scottish Fold, Siamese, Sphynx
 - [ ] Dogs (14): universal, small breed, medium breed, large breed, beagle,
       border collie, bulldog, dachshund, French bulldog, German shepherd,
       golden retriever, Labrador, Rottweiler, Siberian husky
+
+## 8. After the router hubs: the queue the batches kept filling
+
+None of these blocks a batch, and none of them is a per-species job, which
+is why they kept getting deferred. Do them once section 7 is finished.
+
+- [ ] Corydoras adult size, hub against encyclopedia. The corydoras hub's
+      sourceless Adult size row says "1 to 3 inches (2.5 to 7.5 cm)" and the
+      encyclopedia entry it is supposed to copy says "2-3 inches (5-7.5 cm)".
+      No deep dive states a size, so under RULES the row takes the
+      encyclopedia's figure and currently does not. Research which is right
+      before making them agree: the set turns on the dwarf-versus-standard
+      distinction (the setup guide sizes the tank at 10 gallons for pygmy
+      species and 20 for standard), and 2 inches as a floor excludes the
+      pygmy species the same set tells a reader they can keep. Found by the
+      numbers checker after batch I's species check, which missed it.
+- [ ] A shared chelonian soaking guide. How often, how deep, how warm, how
+      long. Two tortoise readers have now asked for it, sulcata in batch H
+      for juveniles and red-footed tortoise in batch I for the species
+      generally, and every page in both sets says the animal soaks often
+      without saying what that looks like. Two instances make it shared-guide
+      work rather than a per-species gap.
+- [ ] The affiliate template fragment, 23 left, not the six READMEFIRST has
+      been saying. It has more shapes than anyone had counted, so the grep
+      that finds all of them is
+      `grep -rloE '(Other |other )(quantities|flavors|sizes|flavours)[^.]*are available' content/guides/*.mdx`.
+      As of 2026-09-15 that returns: ackie monitor, amano shrimp, Argentine
+      tegu, bristlenose pleco, corydoras catfish, emperor scorpion, fire
+      skink, gargoyle gecko, gerbil, giant millipede, koi, Madagascar hissing
+      cockroach, mouse, neon tetra, pacman frog, parrotlet, red-eared slider,
+      rosy boa, stick insect, sugar glider, tarantula, tiger salamander,
+      uromastyx, all in enrichment guides. Shop copy with the product
+      missing: "Other quantities are available and a proper depth needs
+      several", "and other sizes are available" tacked onto an affiliate
+      link, "Other flavors and sizes are available". Most are species whose
+      hubs are already reconciled, so this does not follow the batch order at
+      all and wants one pass of its own. Batch I cleared savannah monitor and
+      degu, batch J clears mourning gecko, ackie monitor and amano shrimp.
+- [ ] The amano shrimp encyclopedia overview still opens "the largest shrimp
+      commonly kept in freshwater aquariums", the same claim the adultSize
+      field was corrected for in batch J. Bamboo shrimp reach 2 to 3 inches
+      and are common in the trade, and Atya gabonensis reaches 15 cm. One
+      clause, same entry, left alone because the species check works under a
+      one-field rule.
+- [ ] Source narration in pre-existing FAQs no hub row copies, found by the
+      batch J check while looking at something else: two on the amano feeding
+      guide ("Seriously Fish is direct about this", "Shrimp Science notes
+      plainly") and one on the garter feeding guide ("Sources land in a
+      similar range"). Likely more of the same corpus-wide, since four
+      batches running have found this shape in text the batch did touch.
+- [ ] Cherry shrimp and ghost shrimp have the same three-guide
+      RELATED_ARTICLES entry amano shrimp had before batch J, so their
+      sidebars are missing cycling, quarantine and the sick-tank check that
+      every fish species carries. One line each.
+- [ ] Legal guides missing from RELATED_ARTICLES, corpus-wide sweep. Three of
+      batch I's five species had one (red-footed tortoise, degu, savannah
+      monitor), so the legal guide was reachable from the hub and from
+      nowhere in the sidebar. Legal is not a standard suffix, so nothing
+      auto-detects it and check-related-articles does not catch it. One pass
+      over every species with a legal guide.

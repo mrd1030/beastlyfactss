@@ -539,8 +539,8 @@ for the first time, which is how that surfaced, so expect one real
 deep-dive contradiction per batch rather than treating the hub as the
 only thing being fixed.
 
-Batch G merged to main 2026-09-14. That makes 46 router hubs after
-batch H; the 62 still on the legacy care sheet are listed by class in
+Batch G merged to main 2026-09-14. That makes 51 router hubs after
+batch I; the 57 still on the legacy care sheet are listed by class in
 docs/TODO.md, section 7, dogs and cats last.
 
 Batch H (cardinal tetra, milk snake, gargoyle gecko, gerbil, sulcata
@@ -580,9 +580,121 @@ rather than copied bullets, and the review file described two fixes that
 the diff did not actually contain. Step 4 of the batch prompt exists to
 catch exactly that and did not.
 
-Batch I is not picked yet. The 62 species still on the legacy care sheet
-are listed by class in docs/TODO.md, section 7, dogs and cats last.
-Paste the prompt below with the next five species filled in.
+Batch I (African fat-tail gecko, corydoras catfish, red-footed tortoise,
+degu, savannah monitor), spanning gecko, fish, turtle, small mammal and
+lizard, done and checked 2026-09-15 on branch
+claude/hub-pacman-frog-80291s; not yet merged. Five router hubs, one
+reader pass per species, one Fable check. Pass grade B-.
+
+Three findings worth carrying into the next batch:
+
+Source narration is the defect that keeps coming back, and batch I is
+the third batch in a row to hit it. The check found source names or
+"sources disagree" phrasing in hub rows on all five species and in the
+deep dives on three. The mechanism is always the same: a deep dive
+narrates a disagreement instead of stating a figure, the router step
+copies that sentence into a row word for word, and the name rides
+across. The fix is upstream of the hub, in step 4 of the batch prompt:
+settle the figure in the article first, then copy. Reading the row for
+names after the fact is too late, because by then the article still says
+it too.
+
+Degu was the second hub to hold the better source, after gerbil in
+batch H. Two instances make it a pattern rather than an exception, so
+check which page cites what before assuming the deep dive wins. The
+move both times was the same: the hub's sourced content goes into the
+deep dive first, verified against the source's own page rather than the
+hub's paraphrase, and then the row copies it from the article.
+
+Savannah monitor had no feeding guide at all and the only schedule
+anywhere in the set was one hub line no article repeated or sourced, and
+it was wrong. That is the fourth species this has come up on, after
+tokay, kingsnake, milk snake and canary, and the standing move held: a
+sourced Diet Basics section in the tank setup guide. Worth checking for
+a missing feeding guide at step 1 rather than discovering it at the hub.
+
+Also: three of the five species were missing their legal guide from
+RELATED_ARTICLES, so it was reachable from the hub and from nowhere in
+the sidebar. A sweep across every species with a legal guide is worth
+one short session.
+
+Batch J (mourning gecko, ackie monitor, garter snake, oscar, amano
+shrimp), spanning gecko, lizard, snake, fish and invertebrate, done and
+checked 2026-09-15 on branch claude/hub-pacman-frog-80291s; not merged.
+Five router hubs, one reader pass per species, one Fable check. Pass
+grade C+, the lowest yet, for a reason worth reading below.
+
+The check found four of five hubs shipping FAQs that were written rather
+than copied verbatim from deep-dive frontmatter. That is the easiest
+item in the whole router shape to get right, it is stated plainly in
+step 2 of the batch prompt, and no previous check had caught it, which
+means earlier batches may carry the same defect unnoticed. Worth a grep
+across the reconciled hubs at some point: a hub FAQ whose question
+matches a deep dive's is not evidence it was copied, because the answers
+are where this went wrong. Ackie monitor lifted all three questions
+correctly and reworded all three answers.
+
+Source narration reached a hub row, a route line or an emergency card on
+all five species, the fourth batch running. The shapes keep changing
+rather than the defect going away: a bare attribution in a row, a route
+line still advertising a disagreement the batch had just settled, a
+narrated disagreement copied instead of settled first, and, new this
+time, a sentence the batch itself wrote while fixing something else. The
+amano stocking paragraph named two sources to make a point about which
+of them had actually published a figure, which belonged in the review
+file and not on the page.
+
+The batch's own next-batch note, kept because it still holds: the
+cross-link reasoning keeps paying. Mourning gecko had nine inbound
+articles including batch H's and batch I's gecko work; the ackie
+enrichment guide is the page savannah monitor borrows its evidence from;
+garter snake sits in the red-footed tortoise overview; oscar sits in the
+box turtle and kingsnake overview; amano shrimp shares a tank with
+corydoras.
+
+Next up is batch K. Pick five, one per class, where a set from a recent
+batch points at them. What is left, by class, is in docs/TODO.md
+section 7.
+
+The old batch J note follows for the reasoning, since it is the pattern
+to repeat: mourning gecko, ackie monitor, garter snake, oscar,
+amano shrimp (gecko, lizard, snake, fish, invertebrate). Three of those
+classes are new relative to batch I, and invertebrates have not had a
+batch at all. The cross-link reasoning again, since it keeps paying:
+mourning gecko is the strongest inbound target left on the list with
+nine articles pointing at it, including African fat-tail from batch I on
+three pages and gargoyle gecko from batch H on four, plus the shared
+three-gecko overview, so both of the last two batches' gecko work gets
+checked against fresh eyes. Savannah monitor from batch I points at
+ackie monitor from two pages, and the ackie enrichment guide is the page
+savannah borrows its genus-level problem-solving evidence from, which
+means batch I's reasoning rests on a page nobody has read yet. The
+red-footed tortoise overview from batch I points at garter snake. Oscar
+sits in the overview with box turtle and California kingsnake, both
+already reconciled. Amano shrimp shares its tank and its sinking-wafer
+line with corydoras from batch I.
+
+Ackie monitor and amano shrimp also each carry the affiliate template
+fragment, so two of the eleven get cleared in scope.
+
+Savannah monitor was picked for batch I partly to clear one of the
+enrichment guides carrying the "Other quantities are available" template
+fragment, and that one is fixed. The check found a second shape of the
+same leftover in the degu enrichment guide ("and other sizes are
+available"), also fixed. Grepping both phrasings afterwards shows the
+real count was never six: eleven are left, and five of them are species
+whose hubs are already reconciled, so it does not follow the batch order
+at all. The list is in docs/TODO.md, section 8. It is worth one short
+session of its own rather than waiting for each species' batch.
+
+The 57 species still on the legacy care sheet are listed by class in
+docs/TODO.md, section 7, dogs and cats last. Section 8 of the same file
+is the queue the batches kept filling and deferring: the corydoras adult
+size mismatch, a shared chelonian soaking guide, the six enrichment
+guides still carrying the template fragment, and a corpus-wide sweep for
+legal guides missing from RELATED_ARTICLES. None of them blocks a batch
+and none is per-species work, so they wait until section 7 is done. Paste this with the next
+five species filled in when picking up the batch after that.
 
 ```
 Read READMEFIRST.md, CLAUDE.md, docs/RULES.md (all of it, then the Hubs

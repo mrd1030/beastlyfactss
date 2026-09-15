@@ -22,7 +22,7 @@ export const smallMammalEncyclopedia = [
       habitat: "Semi-arid scrubland and rocky matorral, in communal burrow systems",
       adultSize: "5-8 inches (12-20 cm) body, plus a 4-5 inch tufted tail; 6-11 oz",
       wildDiet: "Grasses, seeds, bark, leaves, and tubers",
-      wildLifespan: "1-4 years in the wild; 6-7 years in captivity",
+      wildLifespan: "Seldom longer than 2 years in the wild, where it is prey; 5 to 8 years in captivity",
       conservation: "Least Concern (IUCN)",
       history: "Juan Ignacio Molina described the animal in 1782 and filed it as a squirrel, Sciurus degus; Waterhouse moved it into Octodon in 1848. Laboratory and pet degus in North America trace to one collection in 1964, when a farmer trapped 20 of them about 20 miles outside Santiago for a scientist at MIT. That colony reached 87 animals before MIT handed it to David Boraker at the University of Vermont in 1970, where it grew to some 900 head, funded partly by the National Eye Institute for cataract work, and by 1978 Vermont had supplied more than 30 US research institutions. In 2022 Patricia Cogram and colleagues showed how far separate colonies had drifted through inbreeding, which explained years of contradictory findings.",
     },

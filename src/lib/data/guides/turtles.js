@@ -184,65 +184,94 @@ export const turtleGuides = [
     image: "/assets/guides/red-footed-tortoise.jpg",
     tagline: "The tropical omnivore tortoise that splits the difference between Russian and sulcata!",
     funFact: "Unlike the strictly plant-eating Russian and sulcata tortoises, red-footed tortoises are true omnivores that eat carrion, insects, and land snails in the wild - a real taste for animal protein most pet tortoises never develop!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "Large indoor enclosure (adult) or humid outdoor pen", low: 250, high: 600 },
-        { item: "Strong UVB (T5 HO Arcadia 12%)", low: 60, high: 100 },
-        { item: "Basking bulb(s)", low: 25, high: 45 },
-        { item: "Humidity-retaining substrate (cypress mulch/coco coir)", low: 30, high: 60 },
-        { item: "Large soak dish", low: 15, high: 25 },
-        { item: "Fogger or humidifier", low: 40, high: 90 },
-      ],
-      annual: [
-        { item: "Fruit, leafy greens, and protein sources (snails, insects)", low: 150, high: 260 },
-        { item: "Calcium and multivitamin supplements", low: 15, high: 25 },
-        { item: "UVB bulb replacement", low: 60, high: 100 },
-        { item: "Electricity (heat, lighting, humidifier)", low: 90, high: 160 },
-        { item: "Annual vet wellness check", low: 60, high: 100 },
-      ],
-    },
-    sections: {
-      housing: `Adult red-footed tortoises need at least 32 to 72 sq ft of floor space - smaller than a sulcata's eventual yard, but still a genuinely large indoor enclosure or outdoor pen, not a tabletop setup. In warm, humid climates, a secure outdoor pen with a heated, insulated shelter works well. Everyone else needs a large indoor tortoise enclosure with strong UVB (T5 HO Arcadia 12%) and a basking spot of 90 to 95 degrees F, with an ambient gradient of 75 to 85 degrees F and nighttime lows no cooler than 65 to 70 degrees F.
-
-Humidity is the single biggest difference from the site's other tortoises: red-foots need ambient humidity of 70 to 80%, with a damp hide pushing even higher. Cypress mulch, coconut fiber, or a moisture-retaining topsoil mix holds humidity far better than the dry sand mixes used for sulcatas or Russian tortoises. Good ventilation still matters - the goal is a humid rainforest floor, not a stagnant box - so balance moisture with airflow to avoid respiratory problems.
-
-A large, shallow soak dish should always be available; red-foots drink and soak often. Daily misting or a reptile fogger helps maintain humidity between waterings, especially in drier climates or centrally heated homes.`,
-      diet: `Red-footed tortoises are genuine omnivores, and this is the most important way they differ from the sulcata and Russian tortoises on this site. A balanced diet runs roughly 90% plant matter and 10% animal matter: about 55% fruit, flowers, and leafy greens; 35% grasses and vegetables; and a real 10% slice of protein and mushrooms. Appropriate fruit includes papaya, mango, banana, and berries; leafy greens should be varied (collard, mustard, dandelion, endive); protein sources include earthworms, land snails, and occasional cooked lean meat or a small amount of low-iron commercial carnivore diet.
-
-This is a meaningfully different feeding plan than a sulcata or Russian tortoise, both of which should almost never get animal protein or much fruit. Skipping animal protein entirely is a real health risk for this species specifically - tortoises raised on a plant-only diet frequently develop hind-leg weakness or paralysis, along with poor fertility and weak hatchlings, so don't default to a hay-and-weeds-only routine out of habit if you're used to keeping an arid-species tortoise.
-
-Feed juveniles daily; shift adults to every other day to prevent obesity. Dust food with calcium (without D3 most feedings, with D3 twice weekly for indoor animals without natural sunlight). Fresh water should always be available in a soakable dish.`,
-      enrichment: `Red-footed tortoises are active, curious foragers that do best in a densely planted, naturalistic enclosure - leaf litter, logs, cork bark, and low plants to push through and investigate. Their omnivorous diet also makes foraging enrichment easy: scattering food items, hiding snails or worms in leaf litter, and offering a rotating variety of fruit and greens keeps them engaged.
-
-Many keepers find red-foots more food-motivated and personable than drier-climate tortoise species, readily approaching for feeding and recognizing their keeper over time. A humid, planted vivarium with climbing opportunities over logs and rocks also lets them express natural rainforest-floor behavior far more than a bare tortoise table would.
-
-Outdoor time in warm, humid weather on pesticide-free grass is excellent enrichment where climate allows, though unlike a Russian tortoise, a red-foot cannot handle cold snaps and should be brought inside well before temperatures drop.`,
-      health: `Low humidity, not excess humidity, is the main husbandry risk for red-footed tortoises - the opposite failure mode from the site's arid-species tortoises. Insufficient humidity causes shell pyramiding, dehydration, and irregular shell growth just as surely as an incorrect diet does. Check ambient humidity with a reliable hygrometer rather than guessing.
-
-Diet-related problems are the other major risk, and they cut both ways: too much protein or fruit causes the same kind of shell and organ problems seen in overfed sulcatas, while too little animal protein causes hind-leg weakness or paralysis, poor fertility, and weak hatchlings in this species specifically. Getting the roughly 90/10 plant-to-protein balance right matters more here than in a strictly herbivorous tortoise.
-
-Red-footed tortoises do not need to brumate and should not be allowed to get cold enough to attempt it - unlike a Russian tortoise, they have no natural cold-hardiness, and a botched brumation attempt can be fatal. Annual wellness checks with a chelonian-experienced reptile vet are recommended for this long-lived species.`,
-      checklist: [
-        "Large indoor enclosure (32-72 sq ft) or humid outdoor pen",
-        "Strong UVB (T5 HO Arcadia 12%)",
-        "Basking spot (90 to 95 degrees F)",
-        "Ambient gradient (75 to 85 degrees F, 65 to 70 degrees F at night)",
-        "Humidity-retaining substrate (cypress mulch/coco coir)",
-        "Fogger or humidifier (70 to 80% ambient humidity)",
-        "Large soak dish (always available)",
-        "Fruit, leafy greens, and occasional animal protein",
-        "Calcium + multivitamin supplements",
-        "Reptile vet with chelonian experience",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Quarantine, the thermostat probe,
+    // and hygiene cite the shared reptile and chelonian guides in the
+    // sidebar's Health and More list. Reconciled 2026-09-15 after the
+    // red-footed tortoise set test (docs/READER_REVIEWS.md). The old hub
+    // fought its own articles on six figures and each one is gone rather
+    // than moved: floor space (32 to 72 sq ft against the setup guide's 18
+    // to 24), the annual cost table (roughly $375 to $645 against the cost
+    // guide's $650 to $850), calcium without D3 against the feeding guide's
+    // calcium with D3 several times a week, a diet split of 55% fruit,
+    // flowers and leafy greens against the feeding guide's leafy-green base,
+    // a 65 to 70°F night floor against a floor that shouldn't drop much
+    // below 70°F, and a flat Arcadia 12% UVB call that dropped the setup
+    // guide's Ferguson-zone caveat.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Legal", value: "Nothing on the exotic pet law map bans this species, which puts it in a small group among reptiles. New Jersey, New Mexico and Delaware require a permit, and Massachusetts, Hawaii, Vermont, Minnesota and New York City attach conditions. New York City's runs by size rather than species: a hatchling under four inches of carapace is barred and the same animal grown out is not.", source: "red-footed-tortoise-legal-guide" },
+        { label: "Quarantine", value: "A minimum of six months, kept completely separate from any other chelonian in the house, with lab testing during it. A two or three week quarantine, common advice for other reptiles, is not long enough for this specific disease.", source: "chelonian-herpesvirus-quarantine-guide" },
+        { label: "Enclosure", value: "An indoor minimum around 18 to 24 square feet of floor space for one adult. A 4x2x2 ft enclosed enclosure works well from hatchling through juvenile; full adults typically outgrow what's available off the shelf, and most keepers end up building a custom enclosure or converting a large stock tank at that point.", source: "red-footed-tortoise-tank-setup-guide" },
+        { label: "Enclosed, not open-top", value: "An open-topped tortoise table, the standard setup for a Russian or sulcata, makes it essentially impossible to hold real humidity, since it just escapes upward. An enclosed, front-opening design with a solid or mostly solid top is the actual requirement, and good ventilation still matters.", source: "red-footed-tortoise-tank-setup-guide" },
+        { label: "Temperature", value: "A basking spot around 90 to 95°F, a cool side in the mid-70s to 80°F, and a nighttime floor that doesn't drop much below 70°F. Unlike a Russian tortoise, this species typically needs supplemental heat both day and night, since it has no real cold tolerance.", source: "red-footed-tortoise-tank-setup-guide" },
+        { label: "Thermostat probe", value: "The probe reads at the animal's level, not up in the airspace near the fixture. For an overhead source, follow your controller's own instruction and confirm the result with independent checks.", source: "reptile-heating-thermostats-guide" },
+        { label: "Humidity", value: "70 to 80% ambient humidity, with brief spikes higher being fine. Moisture-retentive substrate, a humid hide, a large soak dish, and either regular manual misting or an automatic fogger or misting system are how keepers hold that number, rather than a one-time spray.", source: "red-footed-tortoise-tank-setup-guide" },
+        { label: "Substrate", value: "Coconut fiber, cypress mulch, or a peat-based mix, kept evenly damp rather than either bone dry or waterlogged, at least 4 to 6 inches deep. Avoid dry, sandy, arid-style substrate entirely, it's built for a completely different species.", source: "red-footed-tortoise-tank-setup-guide" },
+        { label: "UVB", value: "Daily UVB, run about 12 hours a day. The usual recommendation is a T5 HO fixture in the Arcadia 12% or Zoo Med ReptiSun 10.0 range; the forest-edge origin puts this species in a lower Ferguson zone, which is the case for a more moderate Arcadia Forest 6% instead. Either can work, and what matters most is real shade the tortoise can retreat into to regulate its own exposure.", source: "red-footed-tortoise-tank-setup-guide" },
+        { label: "Never brumates", value: "Red-footed tortoises come from warm, humid, equatorial South America and have no comparable cold-hardiness. They don't hibernate through a cold snap, they get sick from one. Expect a mild slowdown in cooler weather even indoors, but keep a warm range year-round.", source: "red-footed-tortoise-tank-setup-guide" },
+        { label: "Diet", value: "Roughly 90% plant matter and 10% animal matter. On the plant side, about 70% leafy greens, 20% other vegetables, and 10% fruit is a sound split, with fresh fruit running closer to 15% and a bit less protein at the other end of the published range. Leafy greens and vegetables are the everyday base.", source: "red-footed-tortoise-feeding-guide" },
+        { label: "Fruit", value: "Commonly cited at 10 to 15% of the captive diet by weight, where a sulcata or Russian tortoise should get fruit only as a rare, tiny treat. More tolerant is not unlimited: a diet that leans too far into fruit day after day still causes loose stools and an imbalanced diet overall.", source: "red-footed-tortoise-feeding-guide" },
+        { label: "Protein isn't optional", value: "Red-footed tortoises raised on a plant-only diet commonly develop hind-leg weakness or paralysis, along with poor fertility and weak hatchlings. Earthworms, land snails, dubia roaches, and other appropriately sized feeder insects are better choices than dog or cat food.", source: "red-footed-tortoise-feeding-guide" },
+        { label: "Feeding schedule", value: "Offer food daily for tortoises under about 5 years old. Past that age, many keepers shift to every other day for adults, which helps prevent the overly fast growth that drives shell pyramiding. Fresh water in a soakable dish should always be available regardless of feeding day.", source: "red-footed-tortoise-feeding-guide" },
+        { label: "Calcium", value: "Dust food with a calcium and D3 supplement several times a week, more often for fast-growing juveniles, since indoor tortoises without regular unfiltered sunlight need dietary D3 to actually use that calcium. A cuttlebone left in the enclosure adds a free-choice source.", source: "red-footed-tortoise-feeding-guide" },
+        { label: "Handling", value: "Keep it low to the ground, support the shell fully from underneath with both hands, and never flip it onto its back. Adults can weigh up to 20 pounds, heavy enough that a drop is a real, not theoretical, risk. Treat physical interaction as occasional and purposeful, never routine.", source: "red-footed-tortoise-handling-guide" },
+        { label: "Growth", value: "Hatchlings emerge at just 1.5 to 2 inches and 35 to 50 grams, then roughly 3 to 4 inches by the first birthday, 7 to 9 inches and several pounds by age 2, and 9 to 11 inches by age 5. Size the enclosure for the adult this tortoise will become, not the hatchling in front of you today.", source: "red-footed-tortoise-handling-guide" },
+        { label: "Feed it scattered", value: "A tortoise fed one chopped salad in one dish gets no foraging behavior at all, which is most of what these animals do with their day in the wild. Scatter food across the enclosure, vary what appears and where, and grow edible planting inside so grazing is continuous rather than an event.", source: "red-footed-tortoise-enrichment-guide" },
+        { label: "Enrichment priority", value: "Correct humidity and a soaking dish first, which outrank everything else, then floor space and varied terrain, then scattered browse and growable planting, then target and station training, then outdoor time where climate and security allow, then food puzzles, and novel objects last.", source: "red-footed-tortoise-enrichment-guide" },
+        { label: "Target training", value: "A clicker and target stick and a few minutes a day teaches a tortoise to move to a station, which makes weighing, health checks and moving the animal dramatically less stressful for both of you. It is enrichment and cooperative-care husbandry at the same time.", source: "red-footed-tortoise-enrichment-guide" },
+        { label: "Budget", value: "Captive-bred hatchlings commonly run $150 to $300, well-started juveniles $350 to $600, and full adults from a reputable breeder $550 to $900. The setup runs roughly $500 to $950, and upkeep roughly $650 to $850 a year.", source: "red-footed-tortoise-cost-guide" },
+        { label: "Vet", value: "A routine exotic-vet checkup runs around $75 to $100, and it's worth specifically finding a vet with chelonian experience rather than a general exotics practice. Illness requiring bloodwork, imaging, or medication commonly runs $150 to $400 or more.", source: "red-footed-tortoise-cost-guide" },
+        { label: "Adult size", value: "11 to 16 inches, occasionally up to 20. Most individuals reach close to full adult size within 5 to 10 years, continuing to fill out gradually for a while after that.", source: "red-footed-tortoise-handling-guide" },
+        { label: "Lifespan", value: "50 to 70 years or more is the commonly cited range, and exceptionally well-kept individuals are reported close to 90. That is a multi-decade, potentially generational commitment.", source: "red-footed-tortoise-cost-guide" },
+        { label: "Hygiene", value: "Wash hands with soap and running water immediately after any contact, and never clean an enclosure, water dish, or equipment in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
       ],
     },
+    emergencyCard: {
+      source: "red-footed-tortoise-health-issues-guide",
+      callNow: [
+        "Wheezing, nasal discharge, lethargy, and open-mouth breathing (respiratory infection). Always see a vet immediately, this does not resolve on its own and needs antibiotics",
+        "A soft or deformed shell and weak limbs (metabolic bone disease). Always see a vet",
+        "Soft, discolored, or foul-smelling patches on the shell, sometimes with lifting or flaking scutes (shell rot). See a vet promptly, this can progress to a genuine life-threatening infection if left untreated",
+        "Hind-leg weakness or outright paralysis, which a plant-only diet causes in this species specifically",
+        "Abnormal, raised, cone-shaped growth of the shell scutes instead of a smooth, flat carapace (pyramiding). Permanent once it happens, so prevention is the only real strategy",
+      ],
+      vetLine: "Chronically dry, cool conditions are what put this species at risk, the exact opposite husbandry mistake from the one that threatens a Russian or sulcata tortoise, so raise humidity and warmth while you arrange the appointment. It's worth finding a vet with chelonian experience specifically rather than a general exotics practice.",
+    },
+    routes: [
+      { slug: "red-footed-tortoise-cost-guide", line: "$150 to $300 for a hatchling and up to $900 for an adult, the $500 to $950 setup, roughly $650 to $850 a year, and the humidity equipment a Russian tortoise owner never buys." },
+      { slug: "red-footed-tortoise-tank-setup-guide", line: "The 18 to 24 square foot floor, why an open-topped table fails here, 70 to 80% humidity and how to actually hold it, damp substrate, and the two UVB strengths that both work." },
+      { slug: "red-footed-tortoise-feeding-guide", line: "The 90/10 split and the plant-side split under it, why fruit gets more room here than with any other pet tortoise, and why skipping animal protein cripples this species." },
+      { slug: "red-footed-tortoise-handling-guide", line: "An observation pet that comes when called, the two-handed lift a 20 pound adult demands, and the growth chart that tells you what to build." },
+      { slug: "red-footed-tortoise-health-issues-guide", line: "Respiratory infection from dry and cool, the difference between humid and soggy that decides shell rot, and the controlled study on what drives pyramiding." },
+      { slug: "red-footed-tortoise-enrichment-guide", line: "The cognitive bias study that found enriched tortoises judging ambiguity optimistically, the touchscreen work, and the priority order that follows from both." },
+      { slug: "red-footed-tortoise-legal-guide", line: "No outright ban anywhere, the three permit states, and the five jurisdictions that attach conditions, including one that measures the shell rather than naming the species." },
+    ],
+    buyList: [
+      "Enclosed, front-opening enclosure (4x2x2 ft from hatchling through juvenile)",
+      "A custom build or converted stock tank for the adult",
+      "T5 HO UVB fixture and bulb",
+      "Halogen basking bulb and fixture",
+      "Ceramic heat emitter for overnight heat",
+      "Thermostat",
+      "Digital thermometer and hygrometer",
+      "Coconut fiber, cypress mulch, or a peat-based substrate",
+      "Humid hide packed with damp sphagnum moss",
+      "Automatic fogger or misting system, or a spray bottle",
+      "Large soak-able water dish",
+      "Calcium and D3 supplement",
+      "Cuttlebone",
+      "Tortoise forage seed mix for growable browse",
+      "Clicker and target stick",
+      "A vet with chelonian experience, found before you need one",
+    ],
     faqs: [
-      { q: "How big do red-footed tortoises get?", a: "Adults typically reach 11 to 16 inches in shell length, with exceptional individuals up to 20 inches. That puts them squarely between the [Russian tortoise](/guides/russian-tortoise/) (5 to 10 inches) and the [sulcata tortoise](/guides/sulcata-tortoise/) (24 to 36 inches and 70+ lbs) - a big part of why red-foots are popular with keepers who want more tortoise than a Russian but nowhere near a sulcata's eventual size." },
-      { q: "What do red-footed tortoises eat?", a: "Genuine omnivores - roughly 90% plant matter (fruit, flowers, and leafy greens) and 10% animal matter (earthworms, land snails, occasional cooked lean meat). This is a real, important difference from strictly plant-eating tortoises like the sulcata and Russian tortoise. Skipping the protein isn't just a diet preference either - red-foots raised without any animal protein commonly develop hind-leg weakness and fertility problems. Feed juveniles daily and adults every other day." },
-      { q: "Do red-footed tortoises need to hibernate?", a: "No. Unlike the Russian tortoise, which brumates through cold Central Asian winters, red-footed tortoises come from warm, humid, equatorial South America and have no natural cold-hardiness. Never let a red-foot get cold enough to attempt brumation - it should stay warm and active year-round." },
-      { q: "How much humidity do red-footed tortoises need?", a: "A lot - 70 to 80% ambient humidity, well above what a sulcata or Russian tortoise wants. This is the biggest husbandry difference between a red-foot and the site's other tortoises. Moisture-retaining substrate, a large soak dish, and a fogger or regular misting are typically needed to hit that range indoors, especially in dry climates." },
-      { q: "How long do red-footed tortoises live?", a: "50 to 70 years or more with good care, and some captive individuals are reported near 90. Like any pet tortoise, this is a multi-decade commitment that outlasts many keepers' living situations, so plan for long-term care the same way you would with a Russian or sulcata tortoise." },
-      { q: "Are red-footed tortoises good pets for beginners?", a: "A reasonable step up from a Russian tortoise rather than a true first tortoise - the omnivorous diet and high humidity requirement take more attention to get right than a simple hay-and-weeds herbivore setup. They're a popular choice for keepers who've kept a Russian tortoise before and want more size without sulcata-level commitment." },
+      { q: "How much humidity does a red-footed tortoise need, and how do I hit that number?", a: "70 to 80% ambient humidity, with brief spikes higher being fine. Moisture-retentive substrate, a humid hide, a large soak dish, and either regular manual misting or an automatic fogger or misting system are how keepers hold that number, rather than a one-time spray." },
+      { q: "Why is animal protein not optional for red-footed tortoises?", a: "On a plant-only diet, this species commonly develops hind-leg weakness or paralysis, poor fertility, and weak hatchlings. A sulcata is the opposite case, where a meaningful amount of animal protein causes kidney and liver damage, so don't carry a hay-and-weeds routine over from an arid species." },
+      { q: "How long do red-footed tortoises live, and why does that matter for budgeting?", a: "50 to 70 years or more is the commonly cited range, and exceptionally well-kept individuals are reported near 90. Like any pet tortoise, that's a commitment that can outlast the owner who bought it, worth planning for as seriously as the upfront cost." },
     ],
   },
   {
