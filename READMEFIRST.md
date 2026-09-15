@@ -539,8 +539,8 @@ for the first time, which is how that surfaced, so expect one real
 deep-dive contradiction per batch rather than treating the hub as the
 only thing being fixed.
 
-Batch G merged to main 2026-09-14. That makes 46 router hubs after
-batch H; the 62 still on the legacy care sheet are listed by class in
+Batch G merged to main 2026-09-14. That makes 51 router hubs after
+batch I; the 57 still on the legacy care sheet are listed by class in
 docs/TODO.md, section 7, dogs and cats last.
 
 Batch H (cardinal tetra, milk snake, gargoyle gecko, gerbil, sulcata

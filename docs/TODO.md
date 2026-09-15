@@ -390,19 +390,17 @@ share a silhouette. That is roughly 25 species, about 175 images.
 
 ## 7. Router hubs, species by species
 
-Checked 2026-09-14 against `src/lib/data/guides/*.js`: a hub is a router hub
-when its entry carries `firstWeek` rows (RULES, Hubs). 46 of 108 done, 62
+Checked 2026-09-15 against `src/lib/data/guides/*.js`: a hub is a router hub
+when its entry carries `firstWeek` rows (RULES, Hubs). 51 of 108 done, 57
 still rendering the legacy care sheet. Batches of five, one branch each,
 per the READMEFIRST process. Dogs and cats last.
-Next: batch I, African fat-tail gecko, corydoras catfish, red-footed
-tortoise, degu, savannah monitor, one per class. Three are cross-linked
-by batch H, corydoras is the standard tetra tankmate, and savannah
-monitor clears one of the six enrichment guides carrying the "Other
-quantities are available" template fragment. Worker Opus 5 high effort,
-one Fable closing check per batch (the batch prompt in READMEFIRST has
-the reasoning).
+Batch I (African fat-tail gecko, corydoras catfish, red-footed tortoise,
+degu, savannah monitor) is built and pushed on
+claude/hub-pacman-frog-80291s, Fable closing check still to run. Worker
+Opus 5 high effort, one Fable closing check per batch (the batch prompt
+in READMEFIRST has the reasoning).
 
-Done (31):
+Done (51):
 
 - [x] axolotl, White's tree frog
 - [x] African grey, budgie, cockatiel, cockatoo, conure, lovebird
@@ -419,22 +417,23 @@ Done (31):
       (batch G, merged to main 2026-09-14)
 - [x] cardinal tetra, milk snake, gargoyle gecko, gerbil, sulcata tortoise
       (batch H, merged to main 2026-09-15)
+- [x] African fat-tail gecko, corydoras catfish, red-footed tortoise, degu,
+      savannah monitor (batch I, built 2026-09-15, Fable check pending)
 
-To do (62):
+To do (57):
 
 - [ ] Amphibians (2): fire-bellied toad, tiger salamander
 - [ ] Birds (2): parrotlet, quaker parakeet
-- [ ] Fish (9): bristlenose pleco, corydoras catfish, discus, koi, molly,
-      oscar, platy, swordtail, zebra danio
-- [ ] Geckos (3): African fat-tail, leaf-tailed gecko, mourning gecko
+- [ ] Fish (8): bristlenose pleco, discus, koi, molly, oscar, platy,
+      swordtail, zebra danio
+- [ ] Geckos (2): leaf-tailed gecko, mourning gecko
 - [ ] Invertebrates (9): amano shrimp, cherry shrimp, ghost shrimp, emperor
       scorpion, giant millipede, jumping spider, hissing cockroach, praying
       mantis, stick insect
-- [ ] Lizards (7): ackie monitor, Argentine tegu, fire skink, green anole,
-      Jackson's chameleon, savannah monitor, uromastyx
-- [ ] Small mammals (3): degu, mouse, flying squirrel
+- [ ] Lizards (6): ackie monitor, Argentine tegu, fire skink, green anole,
+      Jackson's chameleon, uromastyx
+- [ ] Small mammals (2): mouse, flying squirrel
 - [ ] Snakes (2): garter snake, rosy boa
-- [ ] Turtles (1): red-footed tortoise
 - [ ] Cats (10): universal, American shorthair, Bengal, domestic shorthair,
       Maine Coon, Persian, Ragdoll, Scottish Fold, Siamese, Sphynx
 - [ ] Dogs (14): universal, small breed, medium breed, large breed, beagle,
