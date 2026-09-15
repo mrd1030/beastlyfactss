@@ -289,7 +289,7 @@ export const invertebrateGuides = [
     petType: "Invertebrates",
     image: "/assets/guides/ghost-shrimp.jpg",
     tagline: "The nearly transparent, famously cheap cleanup crew that's sold as fish food as often as it's kept as a pet!",
-    funFact: "Despite looking like a smaller, cheaper cousin of the cherry and Amano shrimp sold right next to them in the store, ghost shrimp aren't closely related to either. They belong to the genus Palaemonetes in the family Palaemonidae, while cherry and Amano shrimp both belong to the unrelated family Atyidae, and each lineage independently evolved from marine ancestors into fresh water at a different point in history. Their famous hardiness is exactly why they're sold cheaply in bulk as feeder shrimp for larger fish, even though plenty of keepers keep them purely as pets.",
+    funFact: "Despite looking like a smaller, cheaper cousin of the cherry and Amano shrimp sold right next to them in the store, ghost shrimp aren't closely related to either. They belong to the family Palaemonidae, while cherry and Amano shrimp both belong to the unrelated family Atyidae, and each lineage independently evolved from marine ancestors into fresh water at a different point in history. Their famous hardiness is exactly why they're sold cheaply in bulk as feeder shrimp for larger fish, even though plenty of keepers keep them purely as pets.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [

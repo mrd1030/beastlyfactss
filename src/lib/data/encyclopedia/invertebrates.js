@@ -42,7 +42,7 @@ export const invertebrateEncyclopedia = [
     },
   },
   {
-    id: "ghost-shrimp", name: "Ghost Shrimp", scientific: "Palaemonetes spp.",
+    id: "ghost-shrimp", name: "Ghost Shrimp", scientific: "Palaemon paludosus (formerly Palaemonetes)",
     category: "Invertebrates", emoji: "🦐", difficulty: "Beginner", guideId: "ghost-shrimp", available: true, image: "/assets/guides/ghost-shrimp.jpg",
     bio: {
       overview: "Ghost shrimp are small, nearly transparent freshwater shrimp from the genus Palaemonetes, sold under names like ghost shrimp and glass shrimp and often mixed across several similar-looking species in the same shipment. Unlike the cherry shrimp and Amano shrimp they're commonly sold beside, ghost shrimp belong to an entirely different, unrelated shrimp family (Palaemonidae rather than Atyidae) that took its own separate evolutionary path from salt water into fresh water. Prized mainly for being cheap, hardy, and tolerant of imperfect water, they're sold in bulk as feeder stock for larger fish as often as they're kept as pets in their own right, though a translucent, active little scavenger is a genuinely appealing tank resident for keepers who look past the feeder-aisle reputation.",
