@@ -525,6 +525,33 @@ is why they kept getting deferred. Do them once section 7 is finished.
       RELATED_ARTICLES entry amano shrimp had before batch J, so their
       sidebars are missing cycling, quarantine and the sick-tank check that
       every fish species carries. One line each.
+- [ ] Four shared-guide gaps batch N's readers found on multiple species at once,
+      which is what makes them shared-guide work rather than five hub lines.
+
+      - Water changes have no home anywhere on the site. Bristlenose pleco,
+        swordtail, zebra danio and ghost shrimp all carry a schedule that exists
+        only on the hub, and no deep dive and no shared aquarium guide states a
+        frequency or a percentage. Four of five species in one batch, and the
+        router conversion retires a hub-only figure, so this is actively losing
+        information unless a shared guide picks it up. Probably its own guide, or
+        a section in the filtration guide.
+      - Ich heat treatment contradicts the stated temperature ceiling, on two
+        species independently. The bristlenose health guide says to raise the
+        temperature with strong aeration and never says to what, against a setup
+        guide ceiling of 80F. The zebra danio health guide says the same on a
+        tank its own setup guide says needs no heater at all. Both readers caught
+        it separately, which makes it the shared fish-health material rather than
+        either species.
+      - The shared pH, GH and KH guide reads as coldwater goldfish material.
+        Flagged by platy's reader in batch M and by discus and bristlenose pleco
+        in batch N. Three species now, and the sidebar excerpt is what a reader
+        sees before deciding whether to click, so a discus keeper reading about
+        goldfish concludes the guide is not for them.
+      - Stocking numbers past a floor. Swordtail ("how many in a 29 beyond a
+        trio"), zebra danio, ghost shrimp ("how many for a 5 or 10 gallon") and,
+        from batch M, platy and cherry shrimp all stop at a minimum tank size and
+        never say how many animals go in it. Five species across two batches.
+
 - [ ] The opens from batches K, L and M, which the reader passes recorded in
       docs/READER_REVIEWS.md and nothing promoted here until 2026-09-15. Each one
       is a real decision the batch could not make under its Never list, and they
