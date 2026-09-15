@@ -14242,3 +14242,79 @@ residence, escape recovery, how to dechlorinate water, what a "damp cotton ball
 setup" physically is, and what to do with an egg sac including an infertile one.
 Sexing is the one worth writing first, since the price and the lifespan both hang
 on it.
+
+## Madagascar Hissing Cockroach (2026-09-15, batch O, single pass, before the router hub)
+
+Extractor set of nine pages, the most complete set in this batch. One Opus agent,
+about 81k tokens. Raw output in docs/READER_LOG.md. Set grade: B+, the highest in
+batch O. "The deep dives are unusually honest about disagreement and unusually
+specific; the hub drags the average down by contradicting them."
+
+Numbers checker before the pass, six groups: the hub's cost rows against the cost
+guide, humidity 50 to 70 against 60 to 70, temperature 75 to 90 against 75 to 85,
+the 24-hour against the 24-to-48-hour food removal window, and two "other" groups
+that were substrate depth against adult size. The reader found all of those plus
+four the checker cannot see: the single-animal question, the hub's "completely
+harmless to humans", the protein supplement, and a permanent cuttlebone that the
+feeding guide never mentions.
+
+The safety one is the one worth naming first. The old hub said "They are
+completely harmless to humans" on a page that recommends the species for children,
+while the handling guide says their leg spines "can scratch or draw a small amount
+of blood if the roach is held down" and that they can carry Salmonella. A hub
+being softer than its own deep dive on a safety point is a different class of
+defect from a number drifting, and it is now a row rather than a reassurance.
+
+Arizona. The setup guide carried an unsourced "can't be legally shipped to Arizona
+or Florida" on a set whose legal guide researched all 50 states, cites the rules,
+and never names Arizona; a search for an Arizona restriction turns up the opposite.
+The clause now says what the legal guide says and links to it.
+
+One animal or a group, the genuine deep-dive contradiction of this species. Setup
+guide: "A 5-gallon tank works as a minimum for a single animal or a small group."
+Enrichment guide: "Do not keep a single animal, since the species is gregarious
+and the research is on groups." The enrichment guide cites the 2023 Animals
+welfare paper on group-housed Gromphadorhina; the setup guide cites nothing. The
+setup guide changed, its FAQ changed with it, and the 5 gallon figure did not
+move.
+
+Sexing, a gap four pages depended on and the reader caught. The set repeatedly
+tells a keeper to run a same-sex or males-only group and never says how to tell
+one from the other. Added to the setup guide from Animal Diversity Web, already
+cited on the handling guide: males carry the pronotal horns, much smaller in
+females, and grow larger.
+
+Time to adulthood. Feeding guide: "about six molts over roughly five months".
+Animal Diversity Web: six molts, "usually takes 6-7 months". Same molt count, and
+the university museum database outranks the care sheets, so the duration moved and
+ADW joined that guide's Sources.
+
+Source narration in the feeding guide, three passages, including a whole feeding
+schedule written as a disagreement between "pet-industry care sheets" and "an
+academic extension fact sheet". Both regimens survive the rewrite, stated as a
+range with a rule for which end to use, which is what RULES asks for. This is the
+third species in this batch whose feeding page narrated its research, and the
+second where a hub row would have copied the narration verbatim if the article had
+not been settled first.
+
+Unsourced, needs a fact-check: the food removal window. The health guide said 24
+hours, the feeding guide says 24 to 48 twice. Neither of the sources I could open
+states a window at all (the OSU Extension fact sheet returns 403 to a fetch and
+Fluker Farms only says to clean out leftovers regularly), so the feeding guide
+kept its figure as the page that owns the topic and the health guide moved to
+match. Worth a real check, since the health guide's version was the stricter one.
+
+Links: 6 added, one per article, all from the reader's table. The health guide's
+humidity line said "covered in more detail in the tank setup guide" without
+linking, which was a site self-reference and a dead end at the same time.
+
+check-species-numbers hissing-cockroach after the pass: six conflict groups down to
+three, all advisory, and every line marked hub appears in the deep dive its row
+names with the numbers unchanged. Voice warning counts identical to baseline on all
+six changed files, all gates and eslint clean.
+
+Not covered anywhere, the reader's list: cleaning and full substrate-change
+frequency (no page and no shared guide gives an interval), quarantine or
+acclimation of new arrivals, what to do with surplus nymphs once a colony booms,
+recapturing an escapee, and a real ventilation spec behind "adequate airflow".
+Sexing was on that list and is now answered.

@@ -6638,3 +6638,83 @@ First two changes: make the deep dives the single source of truth and regenerate
 - What to do with an egg sac, including an infertile one from an unmated female.
 
 Covered by the shared class guides, so not listed above: molting normal versus failed, pesticide exposure prevention, rehousing method, and travel or power outage planning.
+
+## Madagascar Hissing Cockroach (2026-09-15, batch O)
+
+Raw output, one Opus reader agent, extractor set of nine pages.
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Act on: the checklist and the cost tables. But it is the loosest page here on numbers. **C+**
+- **01 Encyclopedia.** Finished it. Act on: adult size, lifespan, and the warning that dealers mix in two lookalike species. **B+**
+- **02 Cost.** Finished it. Act on: $3 nymph, $24 pair, $65 colony of 25, and skip the heat mat unless breeding. **B**
+- **03 Handling.** Finished it twice. Act on: lift around the thorax, never pull against the grip, wash hands, read the graded hiss. **A**
+- **04 Health.** Finished it. Act on: 60 to 70% humidity, never handle a fresh molt, thermostat any heat mat. **B+**
+- **05 Tank setup.** Finished it. Act on: the whole page. Sizes, temps, substrate depth, petroleum jelly band. **A-**
+- **06 Feeding.** Finished it. Act on: dry dog food staple, produce a few times a week, sponge water, the sick-roach symptom list. **A**
+- **07 Enrichment.** Finished it. Act on: colony not single, leaf litter and rotting wood, vertical clearance for molting. **A-**
+- **08 Legal.** Finished it. Act on: check my state, call if I am in NM, NJ or ID. **A**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns it. Nothing else gives me the horns, the lookalike-species warning, or the naming history. The hub mostly repeats the deep dives while disagreeing with them:
+
+- Humidity. Hub: "Moderate humidity of 50 to 70% is appropriate." Setup and health: "60 to 70%."
+- Temperature. Hub: "Temperatures of 75 to 90 degrees F are ideal." Setup: "75 to 85°F for general pet-keeping... Breeding specifically gets triggered around 85 to 95°F." The hub's ideal range runs into the breeding trigger it never mentions.
+- Climbing. Hub: "exceptional climbers on rough surfaces... Smooth glass or smooth plastic sides at least 10 to 12 inches tall will prevent escape," with jelly as "a secondary escape-proofing method some keepers use." Setup: "capable of scaling smooth glass with ease... A secure lid alone isn't enough." The hub's own FAQ then admits "they can scale glass, most plastics, and any rough surface," contradicting its own Housing section.
+- Cost. Hub's setup table totals $70 to $130 before buying an animal. Cost guide: "Estimated setup total | $40 - $100," animal included.
+- Safety. Hub: "They are completely harmless to humans." Handling: "Their sharp leg spines... can scratch or draw a small amount of blood," plus "they can carry Salmonella." For a page recommending them to children, the hub should not be the softer of the two.
+- Maturity. Hub: "nymphs reaching sexual maturity in 5 to 7 months." Feeding: "about six molts over roughly five months to reach adulthood."
+
+## 3. Could I keep one?
+
+Yes. Between them I can buy, house, heat, humidify, feed, escape-proof and check the law. Gaps: no cleaning or substrate-change schedule beyond "deeper clean periodically"; no ventilation spec; nothing on quarantining new arrivals; nothing on what to do with hundreds of surplus nymphs; nothing on recapturing an escapee.
+
+Unsignposted answers already in the set:
+- Four pages tell me to keep same-sex or males-only groups. None says how to sex one. The encyclopedia does: "Males display prominent pronotal horns."
+- Feeding's "elevated humidity during this window" to molt is answered numerically only in setup and health.
+- The tank setup's Arizona and Florida shipping note is properly answered only in the legal guide.
+- Handling's escape-barrier bullet never says how to build one. Setup does.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice: the pet-versus-feeder paragraph, nearly verbatim in cost and handling; petroleum jelly in setup, handling and enrichment; the pale post-molt window in health, feeding and enrichment.
+
+Conflicts:
+- Minimum group. Setup: "A 5-gallon tank works as a minimum for a single animal or a small group." Enrichment: "Do not keep a single animal, since the species is gregarious."
+- Food removal. Health: "remove any uneaten fresh food within 24 hours." Feeding: "remove anything uneaten within a day or two."
+- Misting. Setup: "daily misting." Hub: "allow the substrate to dry slightly between mistings."
+- Protein. Hub: "Supplement with a protein source: dry dog or cat kibble... provides the amino acids needed." Feeding: "Skip diets that are too protein-heavy, hissers are naturally protein-sparing."
+- Calcium. Hub: "Provide cuttlebone or crushed eggshell pieces constantly." The feeding guide, which is the page on food, never mentions calcium at all.
+- Shipping. Setup: "this species can't be legally shipped to Arizona or Florida." The legal guide lists Florida as permit-required and never names Arizona.
+
+## 5. One link per page
+
+- **Hub:** "Petroleum jelly applied near the top edge... is a secondary escape-proofing method some keepers use." Link to the tank setup guide, which calls it primary.
+- **Encyclopedia:** "dealers routinely mix it with two Madagascan lookalikes." Link to the cost guide, where I choose a seller.
+- **Cost:** "The optional heat mat and thermostat only earns its keep if you're breeding." Link to the health guide's overheating section.
+- **Handling:** "Not applying an escape barrier around the enclosure." Link to tank setup.
+- **Health:** "maintain 60 to 70% humidity through regular misting" (it says "the tank setup guide" without linking). Link to tank setup.
+- **Tank setup:** "this species can't be legally shipped to Arizona or Florida." Link to the legal guide.
+- **Feeding:** "They need elevated humidity during this window to shed successfully." Link to tank setup for the number.
+- **Enrichment:** "Do not keep a single animal." Link to tank setup, which permits one.
+- **Legal:** none needed.
+
+## 6. Trust
+
+Doubts: the hub reads like it was generated from a different source set than the guides it links to, and the calcium and Salmonella mismatches are the kind that make me check everything. The Arizona claim appears once, sourced nowhere.
+
+Most convincing sentence, from the handling guide: "A roach that hisses once when you lift the lid is noting you. One that hisses in a run and bolts for the substrate is telling you the approach was too fast or too much."
+
+## 7. Set grade: B+
+
+The deep dives are unusually honest about disagreement and unusually specific; the hub drags the average down by contradicting them. First two changes: rewrite the hub from the deep dives so humidity, temperature, enclosure size, setup cost and safety match, and add sexing plus a cleaning schedule to the setup guide.
+
+## Not covered anywhere
+
+- Cleaning and full substrate-change frequency: no page or shared guide gives an interval.
+- Quarantine or acclimation of newly bought roaches.
+- What to do with surplus nymphs once the colony booms.
+- How to recapture an escaped roach in a room.
+- Ventilation spec: everything says "adequate airflow," nothing says what that is.
+- Sexing method: only inferable from the encyclopedia's horns line, never stated as a how-to.
