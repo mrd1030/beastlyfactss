@@ -14318,3 +14318,82 @@ frequency (no page and no shared guide gives an interval), quarantine or
 acclimation of new arrivals, what to do with surplus nymphs once a colony booms,
 recapturing an escapee, and a real ventilation spec behind "adequate airflow".
 Sexing was on that list and is now answered.
+
+## Stick Insect (2026-09-15, batch O, single pass, before the router hub)
+
+Extractor set of seven pages. One Opus agent, about 76k tokens. Raw output in
+docs/READER_LOG.md. Set grade: C+, the lowest in batch O. "The individual articles
+are honest and specific, but the hub contradicts them on legality, size,
+temperature, humidity and cost, and the health page is written without a single
+number."
+
+Numbers checker before the pass, nine groups: the hub's cost rows against the cost
+guide, the hub disagreeing with itself on humidity and on molt duration, and the
+lifespan spread across hub, cost guide and encyclopedia. The reader added the ones
+the checker cannot see, and the first of them is the reason this species was worth
+doing.
+
+Legality. The hub said "They are legal, widely available, cheap, hardy" on a site
+whose own cost guide opens with a USDA APHIS permit requirement that hobbyists
+cannot meet, for exactly the species the hobby sells. The reader called it "the
+one contradiction that changes whether I buy", which is the right weight for it: a
+hub that reassures a buyer past its own legal warning is worse than a hub that
+drifts on a number. The permit is now the first row of the hub and the first FAQ,
+in the cost guide's own words.
+
+The cost table was the jumping spider's defect again, in the same batch: a $60 to
+$70 enclosure inside a "$30 - $100" total with the other rows reading "Included in
+setup total". Same fix, the placeholder cells filled from the site's product
+records and the total summed, $77 to $98, with the optional light marked as extra.
+Two of four species in this batch had a cost table whose floor was below the price
+of the single item it priced, which suggests a corpus-wide grep for "Included in
+setup total" is worth a session of its own.
+
+Diet Basics added to the tank setup guide, the fourth species to need it after
+tokay gecko, California kingsnake and savannah monitor, and the second in this
+batch. The whole diet for this animal was one sentence inside a section about
+mesh lids. Sourced to the Phasmid Study Group's Basic Phasmid Care, which is the
+society's own care page: washed bramble as the near-universal food plant, cut stems
+kept in water lasting several days, and the instruction that matters most, block
+the container so nothing falls in and drowns. The section it came out of is now
+titled for the mesh top alone, since that is what is left in it.
+
+The health guide leaned on "correct enclosure height" four times and never gave the
+number, which the reader caught and which is a real failure of a page rather than a
+drift between two. It now names the three-times-body-length rule and links to the
+page that owns it.
+
+The cost guide had no Sources block at all, on a page whose central claim is a
+federal permit requirement. Added USDA APHIS's own permits page, which states the
+PPQ 526 requirement and the containment facility expectation in its own words.
+
+Unsourced, needs a fact-check: the encyclopedia's "6 months-2 years depending on
+species" against the cost guide's "a small number of larger species can reach 2 to
+3 years". Neither page cites anything for a lifespan, and the sources available on
+the longest-lived commonly kept phasmid, the jungle nymph, say up to 2 years. Left
+as written rather than picked, since picking would mean asserting a number no
+source I opened states.
+
+Retired with the hub: a molt duration. The old hub gave two, 20 to 60 minutes in
+one section and 30 minutes to over an hour in another, and no deep dive states one
+at all, so it is gone rather than carried up, and it is a gap in the log.
+
+Links: 5 added, one per article, all from the reader's table. The best of them is
+the enrichment guide's parthenogenesis paragraph, which now runs into the cost
+guide's rule against releasing eggs, because the reader's sharpest structural point
+was that this set tells you you will get eggs and never tells you what to do with
+them.
+
+check-species-numbers stick-insect after the pass: nine conflict groups down to six,
+all advisory, and every line marked hub appears in the deep dive its row names.
+Voice warning counts identical to baseline on all five changed files, all gates and
+eslint clean.
+
+Not covered anywhere, the reader's list: what to do with unwanted eggs when
+releasing them is prohibited, where to legally obtain one in the US after that
+permit section, whether nymphs walk through standard mesh and what aperture to buy,
+whether to intervene in a visibly failing molt, keeping a host plant supply through
+winter, quarantine for a new arrival, cleaning beyond substrate replacement, and
+species identification and sexing, which every host plant and humidity answer
+depends on. The eggs one is the most serious, since this set now says plainly that
+a single female will produce them and that letting them go outside is illegal.

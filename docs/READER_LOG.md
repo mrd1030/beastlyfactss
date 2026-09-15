@@ -6718,3 +6718,87 @@ The deep dives are unusually honest about disagreement and unusually specific; t
 - How to recapture an escaped roach in a room.
 - Ventilation spec: everything says "adequate airflow," nothing says what that is.
 - Sexing method: only inferable from the encyclopedia's horns line, never stated as a how-to.
+
+## Stick Insect (2026-09-15, batch O)
+
+Raw output, one Opus reader agent, extractor set of seven pages.
+
+## 1. Page by page
+
+- **00 Care guide hub.** Finished it, it is the densest page here. Act on: enclosure ratio, host plant list, replace cuttings every 2 to 3 days, daily misting, egg incubation timing. Grade B-, because most of it is the deep dives rewritten, and several numbers do not match them.
+- **01 Encyclopedia.** Finished it, it is short and it is the only page with real natural history. Nothing to act on, which is fine. Grade B.
+- **02 Cost guide.** Finished it. Act on: the APHIS permit problem, a few dollars per nymph, no vet costs. The setup table is broken. Grade C+.
+- **03 Handling guide.** Finished it twice. Act on: body grip not leg, the three stress signals, which species pinch, group housing. Named sources. Grade A-.
+- **04 Health issues.** Finished it, it is 900 words of prevention with no numbers in it. Act on: cover standing water, weekly substrate change, airflow. Grade C+.
+- **05 Enclosure setup.** Finished it, this is the page I would build from. Act on: 8x8x12 inches, 63 to 77F, 60 to 80% for tropicals, coir or paper towel, no UVB, 12 hour light cycle. Grade B+.
+- **06 Enrichment.** Finished it. Act on: the priority list, block the vase opening with cotton wool or foil, thin the group if limbs go missing. Grade A-.
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: Carausius morosus history, the Lord Howe Island recovery, 3,000 species. None of it repeats the guides. The hub does not. It restates all five deep dives at lower resolution, and then disagrees with them.
+
+- Legality. Hub: "They are legal, widely available, cheap, hardy." Cost guide: "keeping non-native stick insect species, which includes the common Indian and Vietnamese stick insects widely sold in the hobby, technically requires a USDA APHIS permit." That is the one contradiction that changes whether I buy.
+- Enclosure. Hub: "A 30x30x45 cm or larger mesh enclosure suits most adult species." Setup: "a roughly 8 by 8 by 12 inch tall, mesh-topped enclosure," which is 20x20x30 cm.
+- Temperature. Hub: "68 to 80 degrees F." Setup: "roughly 63 to 77F."
+- Humidity. Hub: "around 50 to 70% for most temperate species, higher (70 to 80%) for tropical species." Setup: "tropical types want 60 to 80%."
+- Enclosure cost. Hub: mesh enclosure "$25" to "$50." Cost guide: "Tall, mesh-topped enclosure | $60 - $70."
+- Group housing. Hub checklist: "House species separately (most are docile but competitive for food)." Handling guide: "Indian stick insects specifically can be housed in groups without issue."
+- The hub disagrees with itself on molt length: "over 20 to 60 minutes" in Enrichment, "30 minutes to over an hour" in Health.
+
+## 3. The set as a whole
+
+I could buy one, build the enclosure, feed it and keep it alive. What is missing: what to do with the eggs I will definitely get, when the cost guide says releasing them is prohibited; where to legally buy one given that same section; whether nymphs walk through standard mesh; whether to intervene in a molt that is going wrong; how to keep bramble coming in winter; and any cleaning routine beyond substrate.
+
+Questions answered on another page without being told:
+- Health guide leans on "correct enclosure height" four times and never gives the number. It is 3x body length, on Setup and Enrichment.
+- Cost guide lists "Substrate" as a line item and never says what kind. Coir, peat or paper towel, on Setup.
+- Handling lists "an enclosure too short for a proper molt" as a first-timer mistake with no dimension attached.
+- Hub calls them legal. The permit section is on the cost guide.
+- Cost guide specifies a mesh top and never says why. Because they molt hanging from it, on Setup and Enrichment.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three times: autotomy and adult legs not regrowing (Handling, Health, Enrichment), the 3x height molting rule (Setup, Enrichment, Health by implication), drowning in the cutting vase (Handling, Health, Enrichment), bramble and species-specific host plants (all four).
+
+Conflicts:
+- Handling: "Gently grasp the body or thorax if you need to move a stick insect." Hub: "Always let the insect walk voluntarily onto an open palm." Those are different instructions.
+- Misting. Setup: "daily light misting." Enrichment: "once or twice a day." Hub: "once daily."
+- Leg regrowth. Hub: "juvenile limbs regrow at the next molt." Handling: "only partially across molts in younger animals."
+- Lifespan. Hub: "typically 6 to 18 months." Cost: "A small number of larger species can reach 2 to 3 years."
+
+## 5. One link per page
+
+- **Hub.** "They are legal, widely available, cheap, hardy" should point to the cost guide's legal section.
+- **Encyclopedia.** None needed.
+- **Cost.** "Tall, mesh-topped enclosure" should point to the enclosure setup guide.
+- **Handling.** "Providing an enclosure too short for a proper molt" should point to the enclosure setup guide.
+- **Health.** "prevention through correct enclosure height and misting" should point to the enclosure setup guide.
+- **Setup.** "A single Indian stick insect does fine in a roughly 8 by 8 by 12 inch tall, mesh-topped enclosure" should point to the enrichment guide, which says the same rule scales with the species.
+- **Enrichment.** "Many stick insects reproduce parthenogenetically, so a single female bought as a pet will quietly produce fertile eggs" should point to the cost guide, where releasing eggs turns out to be illegal.
+
+## 6. Trust
+
+Doubts: the cost table, where a $60 to $70 enclosure sits inside a $30 to $100 total and every other row says "Included in setup total." The hub calling the animal legal on the same site that says the permit is unobtainable. Two molt durations on one page. A hub checklist that says house them separately next to an article titled "Why You Can Keep More Than One." The enrichment page citing a tarantula study for a leaf-eater, though it says so itself, which helps.
+
+The sentence that convinced me a keeper wrote this: "Overcrowding shows as damaged legs and antennae, and stick insects knock pieces off each other during molts in a crowded enclosure."
+
+## 7. Set grade
+
+**C+.** The individual articles are honest and specific, but the hub contradicts them on legality, size, temperature, humidity and cost, and the health page is written without a single number.
+
+First two changes:
+1. Fix the legality contradiction, and say plainly on the hub what the cost guide says.
+2. Put the height, temperature, humidity and cost numbers in one place and make every other page quote that, starting with the health guide.
+
+## Not covered anywhere
+
+- What to do with unwanted eggs, when releasing them is prohibited.
+- Where to legally obtain a stick insect in the US after the permit section.
+- Whether nymphs escape through standard mesh, and what aperture to buy.
+- Whether to intervene in a molt that is visibly failing.
+- Keeping a host plant supply through winter.
+- Quarantine or acclimation for a newly arrived insect.
+- Enclosure cleaning beyond substrate replacement, including frass and disinfection.
+- Species identification and sexing, which every host plant and humidity answer depends on.
+
+Batch O note, not the reader's: the old hub's molt duration (20 to 60 minutes in one section, 30 minutes to over an hour in another) was retired rather than moved, since no deep dive states one. How long a molt takes, and whether to intervene in one going wrong, are both gaps on this species.
