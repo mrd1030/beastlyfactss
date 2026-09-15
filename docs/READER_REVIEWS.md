@@ -12032,3 +12032,204 @@ in-body links.
 Left open: the seven content gaps above, filed in docs/READER_LOG.md. Sexing is
 the one to write first, because the set recommends female groups on three pages
 and never says how a keeper would know.
+
+## Rosy Boa (2026-09-15, batch K, single pass, before the router hub)
+
+Extractor set of nine pages (hub, encyclopedia, cost, handling, health issues,
+tank setup, feeding, enrichment, legal). One Opus agent, about 98k tokens. The
+review below reads the old legacy hub (housing, diet, enrichment and health
+prose, two cost tables, a checklist); the router hub was built from its findings
+the same day. Raw output in docs/READER_LOG.md.
+
+| Page | Grade | Reader's one line |
+|---|---|---|
+| Care guide hub | C | The fastest complete picture in the set, and several of its numbers are contradicted downstream. |
+| Encyclopedia | B- | A minute's read, and the history paragraph earns its keep. |
+| Cost | A- | Real dated prices with the arithmetic shown. |
+| Handling | B | Good on the post-feeding wait and the balling response, and it never says how often to handle. |
+| Health issues | A- | The when-to-see-a-vet list and the inactivity caveat are directly usable. |
+| Tank setup | B+ | Enough to build the enclosure from, minus substrate depth and lighting. |
+| Feeding | A- | Schedule and prey size clear, thawing absent. |
+| Enrichment | A- | The only page in the set that argues with the standard advice. |
+| Legal | A | Genuinely checkable, state by state. |
+
+Set grade: B+. "Strong, specific, unusually well sourced deep dives, undermined
+by a hub whose numbers fight them."
+
+Hub versus the set, both sides quoted. All resolved by the router rebuild:
+
+- Shed humidity, the dangerous one. Old hub: "around 40% ambient, rising to 60
+  to 65% during shed." Tank setup: "raise humidity to roughly 40 to 50 percent."
+  The hub's figure also broke the ceiling the health guide's entire argument
+  rests on, "well under 60 percent", and a beginner reading only the hub would
+  have acted on the version that causes the respiratory infection the rest of
+  the set is trying to prevent. The reader named this first under Trust and it
+  is the single most consequential defect this batch found.
+- Adult feeding interval. Old hub: "do well on a mouse every 2 to 4 weeks."
+  Feeding guide: "every 10 to 14 days as a commonly recommended baseline." The
+  reader's line: "Those are different schedules, not a range." The feeding guide
+  does give 3 to 4 weeks as a stretch for a mature, well-established adult, so
+  the hub had promoted the exception to the rule.
+- Juvenile feeding. Old hub: "every 7 to 10 days." Feeding: "every 5 to 7 days."
+- Annual costs. Every line of the old hub's annual table disagreed with the cost
+  guide: mice $50 to $100 against about $2 a month, electricity $35 to $60
+  against $1 to $2, vet $50 to $90 against $100 to $200 a year. The cost guide
+  shows its arithmetic and dates its prices; the hub's table showed neither.
+- The hub contradicted itself, too: its funFact called a boa constrictor "5 to
+  13 foot" and its comparison FAQ said "8 to 10+ feet". Both are gone, and the
+  new funFact carries the cost guide's lifespan point instead.
+
+Numbers checker. `node scripts/check-species-numbers.mjs rosy-boa --strict`
+before the pass reported 13 conflicting topic groups. The decisions that were
+not resolved by the rebuild:
+
+- Consumables, a same-page arithmetic contradiction on the cost guide. The
+  section heading and the FAQ both say "$6 to $11 a month" and the paragraph's
+  own line items sum to exactly that (food about $2, aspen $3 to $7, electricity
+  $1 to $2), but the paragraph's closing sentence said "Consumables land at $5
+  to $8 a month." Fixed to $6 to $11, which is what the page's own numbers add up
+  to.
+- Adult size, three figures across the set. The encyclopedia gives "24-36 inches
+  (60-90 cm); rarely over 4 feet (122 cm)" and the tank setup guide agrees
+  ("typically 24 to 36 inches and only rarely approaching 4 feet"). The cost
+  guide's enclosure table cell said "Sized for an adult that tops out around 3
+  feet" and the legal guide said "tops out around 2 to 3 feet", twice. Both
+  moved to the figure the encyclopedia and the subject-matter page already
+  shared. Nothing here needed new research: two pages in the set already agreed
+  and two had drifted.
+- Lifespan, narrated on the cost guide. Its FAQ read "Animal Diversity Web puts
+  the captive average at 18 to 22 years", which the reader correctly called a
+  contradicting figure buried in an FAQ. The body's 20 to 30 typical and past 30
+  documented are unchanged, and the FAQ now carries all three figures with no
+  name: "20 to 30 years is typical in captivity, documented individuals have
+  lived past 30, and the captive average sits nearer 18 to 22." The
+  encyclopedia's "20-30+ years in captivity" agrees and was not touched.
+- The boa constrictor cross-reference. The old hub gave the boa's enclosure as
+  "6x3x3 ft or larger" and its length as "8 to 10+ feet", both stale against the
+  boa constrictor set reconciled in batch C, which gives "6 to 8 feet long, 2 to
+  3 feet wide, and 3 to 4 feet tall" and an encyclopedia adult size of 5 to 13
+  feet. The rosy boa tank setup guide already used the boa's own current figure
+  ("the 6 to 8 foot enclosure a boa constrictor needs as an adult"), so the hub
+  was the only page carrying the old numbers and they went with it. Worth noting
+  as a shape: a reconciled species' figures can go stale on another species'
+  unreconciled hub, and nothing checks that until the second species comes up.
+
+After the rebuild, every value on a line marked `hub` appears, unchanged, in the
+deep dive its row names. Two flagged as hub-only are in the cost guide's route
+line ($150 to $400 and $150 to $250), both verbatim from the cost guide under a
+different topic label.
+
+Deep dives against each other:
+
+- Enclosure size, the reader's sharpest catch. Tank setup: "A 20 gallon long
+  tank covers a standard adult setup comfortably." Enrichment: "The standard
+  recommendation for an adult rosy boa is a 20 gallon long, and that number gets
+  repeated because the animal is undemanding rather than because it was ever
+  tested." The reader's note was that "enrichment is arguing against its own
+  site's setup page without saying so." Both keep their positions: the
+  enrichment guide's Sources carry the Hoehfurtner corn snake enclosure-size
+  study and the Hutchings 2025 review on captive snake spatial needs, which is
+  exactly the evidence for that argument, and the tank setup guide is reporting
+  the standard recommendation accurately. What was missing was the
+  acknowledgement, so the enrichment sentence now links the setup guide at "20
+  gallon long", which is where the site makes the recommendation it is arguing
+  with. No figure changed.
+- Water after a meal. Old hub: "Fresh water should always be available."
+  Feeding: "some keepers remove the water dish for a day afterward." The hub's
+  sentence is gone and the feeding guide's hedge is intact; the hub has no
+  water row, because no deep dive states a single rule to copy. This is the
+  axolotl cohousing precedent.
+- Read twice or more across the set: the boa constrictor size contrast on five
+  pages, "overfeeding is the bigger risk" on four, the humidity reversal on
+  four, escape artists and the smooth lid on three.
+
+Source narration, on three deep dives before the router step ran:
+
+- Health issues: "PetMD's overview of respiratory infections in reptiles
+  lists..." followed by "Veterinary literature on snake husbandry specifically
+  ties...", and separately "Reptiles Magazine's care sheet lists rostral
+  abrasion... as a common issue."
+- Cost: "ReptiFiles calls for a full change every three to six months" on a
+  substrate volume spec, and the Animal Diversity Web lifespan attribution in
+  the FAQ.
+- Handling: a paragraph built entirely out of two quotes, Wikipedia's "extremely
+  docile when encountered by humans" and "not prone to bite in defense" and
+  Reptiles Magazine's "usually very docile" and "tolerate handling well". Since
+  these were direct quotes, de-attributing alone would have left an unmarked
+  lift, so the claim was rewritten in the site's own words with both Sources
+  entries left in place.
+
+Sources note, not fixed: the handling and tank setup guides both cite Wikipedia,
+which is not on the RULES source ranking at all. Nothing in either page's claims
+turned out to depend on it alone (Reptiles Magazine and Animal Diversity Web
+carry the same claims), and deleting a Sources entry is on the Never list, so
+both stay. Worth one look in a session that can replace rather than remove.
+
+Gaps, checked against the Health and More list first. The snake sidebar carries
+the reptile quarantine, shedding, heating and thermostats, salmonella hygiene,
+emergency plan, brumation, stool and hydration, and outdoor housing guides. The
+shed protocol is covered there and on the health guide, so it is not a gap.
+These are real and are filed in docs/READER_LOG.md: how to thaw and warm a
+frozen mouse and what temperature to offer it at; whether the species needs any
+lighting, UVB, or a photoperiod, which no page in the set mentions at all; how
+often to handle a settled adult, which the handling guide never says; substrate
+depth in inches, which the enrichment guide makes a top-two priority without a
+number; a spot-cleaning and water-dish cadence between full substrate changes;
+an actual brumation protocol, which four pages call optional and none describe,
+even though a shared snake brumation guide exists and does not cover this
+species; and what to check on the animal at purchase.
+
+The brumation one is worth a second look: the tank setup guide says "A brief
+winter cooldown toward the mid-50s is fine too, and actually mirrors this
+species' natural seasonal slowdown", which is closer to a protocol than anything
+else in the set, but it gives no duration and the shared snake brumation guide
+does not name the rosy boa. That is the sulcata pattern from batch H in a milder
+form: a species-specific claim standing next to a shared class guide that has
+not been asked about it.
+
+Stranded questions, now linked: the health guide blamed rostral abrasion on a
+coarse screen lid and never pointed at the page that specifies the lid; the tank
+setup guide named respiratory infection and scale rot and never pointed at the
+page about them; the feeding guide named obesity and never pointed at the health
+guide; the cost guide's feeding interval is argued for on the feeding guide; the
+enrichment guide argued against a recommendation the setup guide makes. All five
+fixed.
+
+One link per page, from the reader:
+
+| Page | Sentence | Link to | Done |
+|---|---|---|---|
+| Hub | "typically once every 2 to 4 weeks" | feeding guide | The sentence is gone; the hub's Feeding frequency row copies the feeding guide's own schedule |
+| Encyclopedia | none needed | | n/a |
+| Cost | "An adult rosy boa eats every 10 to 14 days, so two or three mice a month" | feeding guide | Yes |
+| Handling | "skip handling during the shed cycle, when cloudy eyes mean temporarily impaired vision" | shared shedding guide | No, that article already carries its one sibling link, to the boa constrictor handling guide, and the shed protocol reaches it through the sidebar |
+| Health | "most often a coarse screen lid" | tank setup guide | Yes |
+| Tank setup | "chronically high humidity is the leading cause of respiratory infection and scale rot" | health issues guide | Yes |
+| Feeding | "obesity is a real, commonly reported problem in this species" | health issues guide | Yes |
+| Enrichment | "The standard recommendation for an adult rosy boa is a 20 gallon long" | tank setup guide | Yes |
+| Legal | "kept mostly because it's calm and easy to handle" | handling guide | Added, then reverted: that sentence sits in the first paragraph, and the checker errors on a link in the opener (opener-link) |
+
+Five added, one answered by a hub row, one reverted on a checker rule, one
+skipped at the sibling cap, one not needed.
+
+Encyclopedia. Nothing changed. Its adult size and lifespan are the figures the
+other pages moved toward, which is the gerbil and degu pattern from batches H
+and I in a third form: the page that already had it right was not the deep dive.
+
+Dates. Not bumped anywhere. Every rosy boa guide is future-dated (five at
+2026-09-25, legal at 2026-09-26, enrichment at 2026-10-25) with lastUpdated and
+lastReviewed equal to its own publish date, the same situation as parrotlet in
+this batch. An article that has not published cannot have been updated after
+publication.
+
+Fixed the same day: the cost guide's consumables arithmetic, its adult-size
+table cell, its narrated substrate spec and its narrated lifespan FAQ; the legal
+guide's adult size in two places; source narration on the health issues guide in
+three places; the handling guide's two-quote paragraph; the enrichment guide's
+affiliate template fragment ("Other sizes and volumes are available"); and five
+in-body links.
+
+Left open: the seven content gaps above, filed in docs/READER_LOG.md, and the
+two Wikipedia citations. Thawing is the one to write first: the feeding guide
+tells a reader to use frozen-thawed prey on every page that mentions food and
+never says how.

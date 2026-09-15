@@ -599,65 +599,86 @@ export const snakeGuides = [
     petType: "Snakes",
     image: "/assets/guides/rosy-boa.jpg",
     tagline: "The pint-sized desert boa that's calmer than snakes twice its size!",
-    funFact: "Rosy boas rarely top 3 feet - a fraction of a Boa constrictor's 5 to 13 foot adult length - yet they can live just as long: some captive rosy boas have been documented living past 30 years!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "20-30 gallon or 36x18x18 in enclosure", low: 100, high: 200 },
-        { item: "Under-tank heater + thermostat", low: 35, high: 60 },
-        { item: "Two snug hides", low: 15, high: 25 },
-        { item: "Small water dish", low: 8, high: 15 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Aspen or sand/soil blend substrate", low: 15, high: 25 },
-      ],
-      annual: [
-        { item: "Frozen/thawed mice", low: 50, high: 100 },
-        { item: "Substrate replacement", low: 20, high: 35 },
-        { item: "Electricity (heat)", low: 35, high: 60 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
-      ],
-    },
-    sections: {
-      housing: `Adult rosy boas are content in a 20 to 30 gallon or 36x18x18 in enclosure - noticeably smaller than the 6x3x3 ft or larger space a Boa constrictor needs as an adult. They're a ground-dwelling, secretive species that spends much of its time tucked into rock crevices, so a snug hide matters more than floor space or height.
-
-Provide a warm end with a basking surface temperature around 88 to 90 degrees F via an under-tank heater on a thermostat, and a cool end of 65 to 75 degrees F. Rosy boas tolerate cooler nighttime temperatures than most tropical boas and pythons, reflecting their desert origin.
-
-Humidity is the other major difference from the site's other boa: rosy boas want only moderate humidity, around 40% ambient, rising to 60 to 65% during shed - well below the 60 to 80% a Boa constrictor needs. They're genuinely sensitive to overly damp conditions, so a dry, sandy-soil or aspen substrate blend suits them far better than the moisture-retentive substrates used for tropical species. Keep decor simple: a couple of secure hides and some flat rock or cork bark is typically all a rosy boa uses.`,
-      diet: `Rosy boas eat appropriately sized frozen/thawed mice - fuzzies for juveniles, progressing to small or medium adult mice for full-grown snakes. Prey should be roughly as wide as the snake's thickest point.
-
-Feed juveniles every 7 to 10 days. Adults have slow metabolisms and low activity levels even by boa standards, and do well on a mouse every 2 to 4 weeks - overfeeding a rosy boa is a more realistic risk than underfeeding, given how little they move. Always use feeding tongs and feed frozen/thawed only.
-
-Many keepers reduce or stop feeding for a few weeks during winter, mirroring the natural seasonal slowdown rosy boas experience in the wild, though this isn't required for a snake kept at stable indoor temperatures year-round. Fresh water should always be available, even though rosy boas drink and soak less than more tropical species.`,
-      enrichment: `Rosy boas are famously docile and slow-moving, often described as one of the calmest snakes commonly kept as pets - even compared to other boas. They rarely bite and tend to move deliberately rather than darting or thrashing, which makes them an easy, low-stress snake to handle regularly.
-
-Provide secure hides at both temperature ends and some rock or cork bark cover; rosy boas are fond of tight spaces and will spend much of the day hidden. Activity increases in the evening and at night during hot months, shifting toward dawn and dusk in cooler seasons - offering a hide near the warm side lets them thermoregulate on their own schedule.
-
-Handle confidently and gently; most rosy boas settle into handling with very little acclimation needed compared to flightier species. Support the body rather than gripping, since a startled rosy boa's main defense is simply trying to move away and hide, not bite.`,
-      health: `Excess humidity and damp substrate, not dryness, are the main environmental risk for rosy boas - the reverse of the concern with tropical boas and pythons. Chronically damp conditions can cause scale rot and respiratory infections in a species adapted to arid desert air. Keep substrate on the dry side and only raise humidity briefly around shedding.
-
-Obesity from overfeeding is a real and common issue given how sedentary rosy boas are; resist feeding on the same schedule used for a more active snake. Retained shed, especially on the tail tip, can occur if humidity isn't bumped slightly during the shed cycle - a brief soak resolves most cases.
-
-As with other boas, Inclusion Body Disease (IBD) is a rare but serious viral risk within the boid family. Source only captive-bred animals from reputable breeders and quarantine any new snake before introducing it to an existing collection. Annual wellness checks with a reptile vet are recommended, especially given how long-lived this species is.`,
-      checklist: [
-        "20-30 gallon or 36x18x18 in enclosure",
-        "Under-tank heater + thermostat (88 to 90 degrees F warm end)",
-        "Two snug hides (warm and cool ends)",
-        "Small water dish",
-        "Digital thermometer and hygrometer",
-        "Aspen or sand/soil blend substrate (kept dry)",
-        "Frozen/thawed mice, appropriately sized",
-        "Feeding tongs",
-        "Rock or cork bark cover",
-        "Reptile-savvy vet contact",
+    funFact: "A rosy boa runs 24 to 36 inches and rarely tops 4 feet, a fraction of a boa constrictor's adult length, yet it can live just as long: documented individuals have reached past 30 years. The lifespan commitment doesn't shrink with the snake, only the space and setup cost do.",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry. Quarantine, the thermostat probe, shedding and hygiene cite the
+    // shared reptile guides in the sidebar's Health and More list. Built
+    // 2026-09-15 for the rosy boa set test (docs/READER_REVIEWS.md). The old hub
+    // put shed humidity at 60 to 65%, above the ceiling the health guide's whole
+    // argument rests on, which is the one a beginner reading only the hub would
+    // have acted on; it also had the adult feeding interval at every 2 to 4
+    // weeks against the feeding guide's 10 to 14 days, juveniles at 7 to 10 days
+    // against 5 to 7, and an annual cost table every line of which disagreed
+    // with the cost guide.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Legal check", value: "Broadly legal across the US, and in most states the family-wide Boidae exemptions that clear the boa constrictor clear the rosy boa too. New York City's blanket Boidae ban catches it regardless of size, Colorado's 2026 rewrite limited its Boidae exemption to tropical species and dropped the rosy boa out of it, New Jersey's exemption is written for a different genus, and Hawaii bans every snake outright.", source: "rosy-boa-legal-guide" },
+        { label: "Enclosure size", value: "Young rosy boas do well in a 10 to 15 gallon terrarium. Adults, which typically reach 24 to 36 inches, are commonly kept in a 20 to 30 gallon enclosure, with current guidance increasingly favoring a roomier 36x18x18 inch setup as the higher-end recommendation.", source: "rosy-boa-tank-setup-guide" },
+        { label: "Temperature", value: "A basking surface temperature of 90°F, with a cool side around 65 to 75°F. Heating should generally be turned off at night, temperatures can safely fall into the 60s, and a brief winter cooldown toward the mid-50s is fine and mirrors this species' natural seasonal slowdown.", source: "rosy-boa-tank-setup-guide" },
+        { label: "Humidity", value: "Well under 60 percent, with most sources recommending a baseline closer to 30 to 40 percent for most of the year. Bump that to roughly 40 to 50 percent only during the shed cycle, using a humid hide, then let it drop back down.", source: "rosy-boa-tank-setup-guide" },
+        { label: "Substrate", value: "Dry aspen shavings are the standard choice, and they hold up well at the low humidity this species needs. Avoid moisture-retentive substrates like cypress mulch or coconut fiber, the materials that work well for tropical boas and pythons are the wrong choice here.", source: "rosy-boa-tank-setup-guide" },
+        { label: "Hides", value: "This is a ground-dwelling, secretive species that spends much of its time tucked into rock crevices, so a snug hide matters more here than raw floor space. House rosy boas individually, never together.", source: "rosy-boa-tank-setup-guide" },
+        { label: "Floor space", value: "A snake that can stretch out fully will, and one that cannot has nowhere to do it. Floor space beyond the usual minimum is the first item on this species' enrichment priority list, ahead of everything else in the enclosure.", source: "rosy-boa-enrichment-guide" },
+        { label: "Anchored rock", value: "Anchor stacked rock properly. A snake that burrows underneath a stack is under it when it shifts.", source: "rosy-boa-enrichment-guide" },
+        { label: "Diet", value: "Whole, frozen-thawed mice, pinkies or fuzzies for young snakes, progressing to small or medium adult mice as they grow. Most rosy boas stay on mice for life and never need to move up to rats the way a boa constrictor does. Always use frozen-thawed prey rather than live, and offer it with feeding tongs rather than your hand.", source: "rosy-boa-feeding-guide" },
+        { label: "Feeding frequency", value: "Young rosy boas do well eating every 5 to 7 days. Adults need far less, every 10 to 14 days is a commonly recommended baseline, and many keepers stretch mature, well-established adults to every 3 to 4 weeks, particularly outside the warmer months. When in doubt, less frequent is safer than more for this species.", source: "rosy-boa-feeding-guide" },
+        { label: "Prey size", value: "Roughly 1 to 1.5 times the width of your snake's body at its thickest point. Prey noticeably wider than that raises the risk of regurgitation, while prey that's too small repeatedly leaves a snake undernourished over time.", source: "rosy-boa-feeding-guide" },
+        { label: "Overfeeding", value: "This species has a naturally slow metabolism and spends the large majority of its time completely motionless, which makes overfeeding easy, and obesity is a real, commonly reported problem in this species.", source: "rosy-boa-feeding-guide" },
+        { label: "Handling", value: "Support the body at multiple points along its length using both hands, never gripping near the head or tail alone. Approach from the side, never straight down from above, which can read as predatory to any snake.", source: "rosy-boa-handling-guide" },
+        { label: "When not to handle", value: "Wait at least 48 hours after feeding before handling, disturbing digestion risks regurgitation, and skip handling during the shed cycle, when cloudy eyes mean temporarily impaired vision.", source: "rosy-boa-handling-guide" },
+        { label: "Temperament", value: "This is an extremely docile snake that does not bite in defense even when picked up by a stranger, and it tolerates handling well. When a bite does happen, it's typically a feeding response, the snake mistaking a hand for food.", source: "rosy-boa-handling-guide" },
+        { label: "The humidity reversal", value: "Care advice for tropical boas and pythons usually warns about humidity running too low. For a rosy boa, it's the opposite. This species evolved in dry Southwestern desert and chaparral, and excess ambient moisture is the primary trigger for respiratory infection here.", source: "rosy-boa-health-issues-guide" },
+        { label: "Retained shed", value: "Caused by humidity that's too low specifically during the shed cycle, not the baseline low humidity this species needs the rest of the time. The fix is a brief, deliberate humidity bump and a humid hide only while your snake is actively shedding, not a permanently damper enclosure.", source: "rosy-boa-health-issues-guide" },
+        { label: "Budget, the snake", value: "A normal, standard-colored rosy boa typically runs $150 to $200. Specific localities and color mutations, albino and Yorba Linda among them, commonly push $200 to $400, and rare combinations can go higher still.", source: "rosy-boa-cost-guide" },
+        { label: "Budget, the setup", value: "Roughly $150 to $250.", source: "rosy-boa-cost-guide" },
+        { label: "Running costs", value: "Roughly $6 to $11 a month for consumables: two or three frozen mice at under $1 each, aspen changed every three to six months, and $1 to $2 of electricity for a small heat mat.", source: "rosy-boa-cost-guide" },
+        { label: "Vet set-aside", value: "Vet care is the bigger line. A published exotic price list puts an established-client wellness exam at $78 and a new-client exam at $128, and $100 to $200 a year is a reasonable set-aside.", source: "rosy-boa-cost-guide" },
+        { label: "Lifespan", value: "20 to 30 years is typical in captivity, documented individuals have lived past 30, and the captive average sits nearer 18 to 22.", source: "rosy-boa-cost-guide" },
+        { label: "Adult size", value: "24 to 36 inches (60 to 90 cm), rarely over 4 feet (122 cm)." },
+        { label: "Quarantine", value: "Quarantine periods of 3 to 6 months are recommended for a new reptile, and a different room is the reptile-room version of a different building. A second tank in the same room as your established reptile is not quarantine, it's proximity with a lid on it.", source: "reptile-quarantine-guide" },
+        { label: "Thermostat probe", value: "What a thermostat actually does, the three controller types, where the probe goes, and why wattage is a starting guess you verify, not a number you trust blindly.", source: "reptile-heating-thermostats-guide" },
+        { label: "Hygiene", value: "Children younger than 5 should not handle or touch reptiles or amphibians or their environments at all.", source: "reptile-salmonella-hygiene-guide" },
       ],
     },
+    emergencyCard: {
+      source: "rosy-boa-health-issues-guide",
+      callNow: [
+        "Respiratory infection: nasal discharge, an increased respiratory rate and effort, wheezing, open-mouth breathing, and lethargy. This always needs a vet, don't wait to see if it clears on its own, and obvious breathing distress often isn't visible until fairly late in the course of the illness",
+        "Scale rot: discolored, brown or otherwise damaged belly scales, sometimes with a noticeable odor",
+        "Rostral abrasion: irritation and injury to the snout from rubbing against rough enclosure surfaces",
+      ],
+      vetLine: "Correcting the humidity alone isn't enough once a respiratory infection has set in, though it's essential to prevent a recurrence. For scale rot, see a vet and correct the substrate and humidity alongside treatment, not instead of it.",
+    },
+    routes: [
+      { slug: "rosy-boa-cost-guide", line: "$150 to $400 for the snake, roughly $150 to $250 for the setup, $6 to $11 a month, and the vet set-aside that outweighs all of it." },
+      { slug: "rosy-boa-tank-setup-guide", line: "A modest enclosure, a 90°F basking surface, and the low humidity that runs opposite to every other pet boa." },
+      { slug: "rosy-boa-feeding-guide", line: "Frozen-thawed mice, prey sized to body width, an adult interval longer than most keepers expect, and why overfeeding is the real risk." },
+      { slug: "rosy-boa-handling-guide", line: "One of the calmest snakes you can own, the 48-hour post-feeding wait, and the balling response it rarely bothers to use." },
+      { slug: "rosy-boa-health-issues-guide", line: "Respiratory infection, scale rot, retained shed, rostral abrasion, and obesity, with humidity behind most of the list." },
+      { slug: "rosy-boa-enrichment-guide", line: "Floor space first, deep dry substrate second, and why the standard 20 gallon long was never actually tested." },
+      { slug: "rosy-boa-legal-guide", line: "Where the family-wide Boidae exemptions catch this snake and where they drop it, state by state." },
+    ],
+    buyList: [
+      "20 to 30 gallon enclosure for an adult, or 36x18x18 inches for a roomier setup",
+      "10 to 15 gallon terrarium for a juvenile",
+      "A smooth, well-fitted lid, not a coarse screen",
+      "Under-tank heater with a thermostat",
+      "Digital thermometer and hygrometer",
+      "Dry aspen shavings, deep enough to hold a tunnel",
+      "Two snug crevice hides, one at each end of the gradient",
+      "Damp sphagnum moss hide, for the shed cycle only",
+      "Water dish",
+      "Feeding tongs",
+      "Frozen small mice",
+    ],
     faqs: [
-      { q: "How big do rosy boas get?", a: "Most adults reach 24 to 36 inches, occasionally a bit over 3 feet - a fraction of a [Boa constrictor's](/guides/boa-constrictor/) 5 to 13 foot adult length. This dramatic size difference is one of the main reasons rosy boas appeal to keepers who want a true boa without the eventual space and handling demands of a much larger species." },
-      { q: "Are rosy boas good pets for beginners?", a: "Yes - widely considered one of the best beginner boas available. They stay small, tolerate handling exceptionally well, rarely bite, and have simple desert-style care requirements with lower humidity than most other boas and pythons. Their slow, deliberate movement and calm temperament make them easy to work with even for a first-time snake owner." },
-      { q: "How long do rosy boas live?", a: "20 to 30 years in captivity is typical with good care, and some individuals have been documented living past 30. This is a genuinely long-lived pet for its small size - comparable to or longer than many much larger snakes." },
-      { q: "What do rosy boas eat?", a: "Appropriately sized frozen/thawed mice - fuzzies for juveniles, small to medium adult mice for grown snakes. Adults eat far less often than most pet snakes, typically once every 2 to 4 weeks, since rosy boas have slow metabolisms and low activity levels even by boa standards. Overfeeding is a more realistic risk than underfeeding this species." },
-      { q: "Do rosy boas need high humidity like other boas?", a: "No - this is one of the biggest differences between a rosy boa and the site's other boa, the Boa constrictor. Rosy boas come from arid Southwestern desert and chaparral and do best around 40% ambient humidity, only rising during shed. Housing one in the humid, moisture-retentive setup used for a tropical boa risks scale rot and respiratory infections." },
-      { q: "How does a rosy boa compare to a Boa constrictor?", a: "Wildly different despite belonging to the same family. A rosy boa tops out around 3 feet and comes from dry Southwestern desert; a [Boa constrictor](/guides/boa-constrictor/) can reach 8 to 10+ feet and needs a 6x3x3 ft or larger enclosure with tropical humidity. If a Boa constrictor's eventual size is the dealbreaker, a rosy boa offers the same docile, easy-to-handle boa temperament in a snake that never outgrows a modest enclosure." },
+      { q: "How humid should a rosy boa enclosure be?", a: "Well under 60 percent, with most sources recommending a baseline closer to 30 to 40 percent for most of the year. Bump that to roughly 40 to 50 percent only during the shed cycle, using a humid hide, then let it drop back down. This species tolerates brief humidity spikes, like a splash from the water dish, as long as the enclosure is allowed to dry back out, the goal is a dry baseline, not zero humidity at all times." },
+      { q: "How often should I feed my rosy boa?", a: "Young rosy boas do well eating every 5 to 7 days. Adults need far less, every 10 to 14 days is a commonly recommended baseline, and many keepers stretch mature, well-established adults to every 3 to 4 weeks, particularly outside the warmer months. When in doubt, less frequent is safer than more for this species." },
+      { q: "What causes respiratory infection in rosy boas?", a: "Almost always humidity running too high, the reverse of the usual snake-care warning. Watch for audible or open-mouth breathing, mucus around the nostrils, wheezing or popping sounds, and lethargy. This needs veterinary care and antibiotics, correcting the humidity alone isn't enough once an infection has set in, though it's essential to prevent a recurrence." },
     ],
   },
 ];

@@ -5418,3 +5418,82 @@ First two changes: (1) make the hub inherit its numbers from the deep dives inst
 - First aid after a sting or a deep pinch, past "treat any sting as you would a bee sting".
 
 (The shared class guides do cover pesticides, rehousing, and power outages, travel and shipping, so those are not counted as gaps.)
+
+## Rosy Boa (2026-09-15, batch K)
+
+Raw reader output, one Opus agent, 9-page extract (hub, encyclopedia, cost,
+handling, health issues, tank setup, feeding, enrichment, legal).
+
+**1. Page by page**
+
+- 00 Hub. Finished it; it is the fastest complete picture in the set, and I can act on the checklist and the setup table, but several of its numbers are contradicted downstream. C
+- 01 Encyclopedia. Finished it in a minute; nothing actionable beyond size, range, and lifespan, though the history paragraph earns its keep. B-
+- 02 Cost. Finished it; fully actionable, real dated prices with the arithmetic shown. A-
+- 03 Handling. Finished it; actionable on post-feeding wait and the balling response, but a third of it is boa constrictor comparison and it never says how often to handle. B
+- 04 Health. Finished it; the "when to see a vet" list and the inactivity caveat are directly usable. A-
+- 05 Tank setup. Finished it; I could build the enclosure from this page alone except substrate depth and lighting. B+
+- 06 Feeding. Finished it; schedule and prey size are clear, thawing is not covered. A-
+- 07 Enrichment. Finished it fastest of all; the priority list is immediately actionable and it is the only page that argues with the standard advice. A-
+- 08 Legal. Finished it; genuinely checkable, state by state. A
+
+**2. Hub and encyclopedia**
+
+The encyclopedia earns its place: range, habitat, wild diet, and the captive-line history appear nowhere else. The hub largely restates the deep dives in compressed form, which is fine as a landing page, except that it restates them wrong in four places.
+
+- Feeding interval. Hub: "do well on a mouse every 2 to 4 weeks." Feeding guide: "every 10 to 14 days as a commonly recommended baseline." Those are different schedules, not a range.
+- Juveniles. Hub: "Feed juveniles every 7 to 10 days." Feeding guide: "every 5 to 7 days."
+- Shed humidity. Hub: "around 40% ambient, rising to 60 to 65% during shed." Tank setup: "raise humidity to roughly 40 to 50 percent." The hub's shed figure also breaks the health guide's own ceiling, "generally well under 60 percent."
+- Annual costs. Every line of the hub's annual table disagrees with the cost guide: mice $50 to $100 vs "$2 a month"; electricity $35 to $60 vs "$1 to $2"; vet $50 to $90 vs "$100 to $200 a year."
+
+Also internally inconsistent on the hub itself: the fun fact says a boa constrictor is "5 to 13 foot," the comparison FAQ says "8 to 10+ feet."
+
+**3. The set as a whole**
+
+Yes, mostly. I could buy one, build the enclosure, set temperatures and humidity, feed it, and know what a vet visit is for. Still missing: how to thaw and warm a frozen mouse; whether the enclosure needs any lighting or day/night cycle at all (never mentioned on any page); how often to handle; substrate depth in inches; a spot-cleaning cadence; what to look for in a healthy animal at purchase; and an actual brumation protocol, which four pages call optional and none describe.
+
+Questions raised on one page and answered on another, unsignposted: the health guide blames rostral abrasion on "a coarse screen lid" and the lid fix is in tank setup; the hub says "a brief soak resolves most cases" of retained shed while the real protocol is in health and the numbers in tank setup; the cost guide's feeding interval is argued for in the feeding guide; the health guide says "quarantine any new snake" with the quarantine guide sitting in the sidebar.
+
+**4. Overlap and conflict across the deep dives**
+
+Read twice or more: the boa constrictor size contrast (five pages), "overfeeding is the bigger risk" (cost, health, feeding, hub), the humidity reversal (health, tank setup, enrichment, hub), escape artists and the smooth lid (cost, health, tank setup).
+
+Conflicts:
+
+- Enclosure size. Tank setup: "A 20 gallon long tank covers a standard adult setup comfortably." Enrichment: "The standard recommendation for an adult rosy boa is a 20 gallon long, and that number gets repeated because the animal is undemanding rather than because it was ever tested." Enrichment is arguing against its own site's setup page without saying so.
+- Water. Hub: "Fresh water should always be available." Feeding: "some keepers remove the water dish for a day afterward."
+- Adult size. Encyclopedia: "rarely over 4 feet (122 cm)." Legal: "tops out around 2 to 3 feet."
+- Lifespan. Everywhere: "20 to 30 years." Cost FAQ: "Animal Diversity Web puts the captive average at 18 to 22 years."
+
+**5. One link per page**
+
+- Hub: "typically once every 2 to 4 weeks" to the feeding guide.
+- Encyclopedia: none needed; it is a facts page and the sidebar carries the rest.
+- Cost: "An adult rosy boa eats every 10 to 14 days, so two or three mice a month" to the feeding guide.
+- Handling: "skip handling during the shed cycle, when cloudy eyes mean temporarily impaired vision" to How Snakes Actually Shed.
+- Health: "caused by a snake repeatedly rubbing against rough enclosure surfaces, most often a coarse screen lid" to the tank setup guide.
+- Tank setup: "chronically high humidity is the leading cause of respiratory infection and scale rot" to the health issues guide.
+- Feeding: "obesity is a real, commonly reported problem in this species" to the health issues guide.
+- Enrichment: "The standard recommendation for an adult rosy boa is a 20 gallon long" to the tank setup guide, since that is where the site makes that recommendation.
+- Legal: "kept mostly because it's calm and easy to handle" to the handling guide.
+
+**6. Trust**
+
+Doubts: the hub's 60 to 65% shed humidity directly undercuts the health guide's central argument, and a beginner who reads only the hub gets the dangerous version. The feeding interval split is the same problem. The enrichment page's "Other sizes and volumes are available" reads like a product line with the product removed. And the cost guide buries a contradicting lifespan figure in an FAQ instead of reconciling it.
+
+Most convincing sentence in the set, from the enrichment page: "Anchor stacked rock properly. A snake that burrows underneath a stack is under it when it shifts."
+
+**7. Set grade: B+**
+
+Strong, specific, unusually well sourced deep dives, undermined by a hub whose numbers fight them.
+
+First two changes: reconcile the hub to the deep dives, or generate it from them, starting with feeding interval, shed humidity, and the annual cost table. Then add the four missing basics (thawing, lighting or photoperiod, handling frequency, substrate depth in inches) and the nine in-body links above.
+
+**Not covered anywhere**
+
+- How to thaw and warm a frozen mouse safely, and what temperature to offer it at.
+- Whether a rosy boa needs any lighting, UVB, or a day/night photoperiod.
+- How often to handle a settled adult.
+- Substrate depth in inches, which the enrichment page makes a top-two priority without a number.
+- Spot-cleaning and water-dish cleaning cadence between full substrate changes.
+- An actual brumation protocol: temperature, duration, and whether to do it at all.
+- What to check on the animal at purchase, before the shared quarantine guide picks up.
