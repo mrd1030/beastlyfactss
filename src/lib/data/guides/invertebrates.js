@@ -394,49 +394,97 @@ export const invertebrateGuides = [
     image: "/assets/guides/millipede.jpg",
     tagline: "The gentle detritivore that works as a living composting machine!",
     funFact: "Despite their name, millipedes do not have 1,000 legs. Most species have 40 to 400 legs. However, a species discovered in 2021 (Eumillipes persephone) was found 60 meters underground in Australia and has a record 1,306 legs, making it the only true millipede.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "20-gallon+ enclosure", low: 40, high: 80 },
-        { item: "Deep substrate (coconut fiber, topsoil, hardwood)", low: 20, high: 40 },
-        { item: "Cork bark hides", low: 10, high: 20 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-      ],
-      annual: [
-        { item: "Fresh vegetables", low: 30, high: 60 },
-        { item: "Substrate replacement", low: 20, high: 40 },
-        { item: "Cuttlebone or crushed eggshell", low: 5, high: 10 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Pesticides, rehousing first aid and the travel and
+    // outage plan cite the shared invertebrate guides in the sidebar's Health
+    // and More list. Reconciled 2026-09-15 after the giant millipede set test
+    // (docs/READER_REVIEWS.md).
+    //
+    // The old hub's cost table was above the cost guide on every line it
+    // shared: the tank at $40 to $80 against $35 to $60, substrate at $20 to
+    // $40 against $17 to $21+, and the hygrometer at $15 to $25 against $11 to
+    // $19. It also had no purchase price and no mention of the federal permit,
+    // which the reader named as the two things a landing page most needed.
+    //
+    // Three claims retired rather than moved. The old hub housed "2 to 3 adult
+    // North American giant millipedes (Narceus americanus) or African giant
+    // millipedes (Archispirostreptus gigas)" on a page whose species is
+    // Archispirostreptus gigas, so the second species is gone. Its mite advice,
+    // "treat with substrate replacement and drying one section of the
+    // enclosure", is not what the health guide says to do. And its "5 to 10
+    // years with appropriate care" collapsed a wild figure and a captive one
+    // into a single number.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "The animal", value: "The millipede itself typically runs $75 to $150 or more, a real step up in price for an invertebrate, driven entirely by the supply situation rather than anything about the animal's care difficulty.", source: "giant-millipede-cost-guide" },
+        { label: "Why it costs that", value: "The USDA maintains an import embargo on giant African millipedes, tied to concerns about a potentially damaging mite species found on imported animals, and a plant pest permit is required to keep this species. Most giant millipedes available in the US today are captive-bred or from older stock rather than freshly imported, which keeps supply genuinely limited.", source: "giant-millipede-cost-guide" },
+        { label: "Setup budget", value: "Roughly $75 to $150 for the tank, substrate, leaf litter, a hygrometer, and a spray bottle.", source: "giant-millipede-cost-guide" },
+        { label: "Ongoing costs", value: "Minimal. Fresh produce and periodic substrate or leaf litter replenishment make up nearly the entire monthly cost, just a few dollars.", source: "giant-millipede-cost-guide" },
+        { label: "Vet costs", value: "Essentially none. Invertebrate-experienced exotic vets exist but are rarely needed, most issues are managed through husbandry alone.", source: "giant-millipede-cost-guide" },
+        { label: "Legal, before you buy", value: "A USDA PPQ 526 permit applies federally, since millipedes fall under the federal plant pest definition. States then diverge more than people expect: Florida requires a permit from its Department of Agriculture, Hawaii excludes the species by omission from its approved lists, Oregon names it as approved with no permit, and the District of Columbia and Montana both leave it outside their permitted categories.", source: "giant-millipede-legal-guide" },
+        { label: "Enclosure size", value: "A minimum of 10 to 15 gallons for one adult, with many keepers recommending something closer to a 36x18x18 inch enclosure, roughly a 40-gallon equivalent, or a 20 gallon long tank. Floor space matters more than height for this ground-dwelling species.", source: "giant-millipede-tank-setup-guide" },
+        { label: "The lid", value: "A secure, tightly fitting lid is essential, millipedes are capable climbers and genuine escape artists.", source: "giant-millipede-tank-setup-guide" },
+        { label: "More than one", value: "Fine and normal. This is a communal species that will cluster together even in a large enclosure, as long as space, hides and food are all abundant. What limits a group is crowding: every extra animal wants more floor and more substrate of its own.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Temperature", value: "72 to 80°F suits this species well, and normal room temperature is often sufficient without any additional heat source. A low-wattage heat mat is only worth adding if your space runs consistently cold.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Humidity", value: "70 to 80%, achieved by keeping roughly a third of the substrate genuinely moist, misting once or twice daily, and ensuring good cross-ventilation to prevent mold and mite problems. Monitor with a digital hygrometer rather than guessing.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Substrate, the whole job", value: "4 to 6 inches of pesticide-free organic topsoil mixed with coconut fiber, along with decaying hardwood and hardwood leaf litter, oak and beech both work well. Avoid softwoods like pine and cedar entirely, their resins are toxic to this species, and never use any substrate material that's been treated with pesticides.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Food", value: "The substrate is most of the diet. Decaying hardwood and pesticide-free hardwood leaf litter, oak, beech and maple, is the staple food itself. Fresh produce is a supplement on top of that: cucumber, carrot, sweet potato and leafy greens, plus small amounts of fruit such as apple, banana, melon or mango, offered every two to three days and taken back out before it molds.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Calcium", value: "Stays in permanently instead of going in on a schedule, a cuttlebone or powdered calcium carbonate left on the substrate for the animal to gnaw when it needs it. Skip it and the exoskeleton goes soft and the molts start failing.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Water", value: "A small shallow dish with a few pebbles dropped in so nothing drowns in it.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Lighting", value: "None required. This species actively avoids bright light. If you're running live plants in a bioactive setup, a low-output 6500K plant light is the only lighting worth adding.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Isopods", value: "Resist the common instinct to add isopods as a cleanup crew alongside your millipede. Isopods can actually harass or weaken millipedes in a shared enclosure, an unexpected conflict that's worth knowing about before you set up a combined bioactive tank.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Handling, the real risk", value: "A giant millipede has a heavy body and a genuinely brittle exoskeleton, and a fall from even a modest height, higher than the animal's own body length, onto a hard surface can crack the shell and prove fatal. Handle over a soft surface close to the ground, support the full body, and never grab from above, let the millipede walk onto your hand instead.", source: "giant-millipede-handling-guide" },
+        { label: "The secretion", value: "A millipede that has decided you might be a threat curls into a tight spiral first, and if that does not settle things it releases a brown or yellow fluid. The fluid carries benzoquinones, mild irritants that can sting skin and eyes in someone sensitive and leave a temporary stain. Keep it away from your eyes and mouth, and wash your hands thoroughly after a session.", source: "giant-millipede-handling-guide" },
+        { label: "A millipede that will not come up", value: "Millipedes molt underground, a buried one must not be disturbed, and a molt may take several weeks. A buried millipede is not stressed by you yet. Digging it up is how it becomes so.", source: "giant-millipede-handling-guide" },
+        { label: "Dehydration", value: "The number one cause of death in this species. Watch for a shriveled, sluggish appearance and dry, cracking segments along the body. Manageable early, raise humidity, moisten the substrate more deeply, and provide a shallow water dish.", source: "giant-millipede-health-issues-guide" },
+        { label: "A failed molt", value: "Often fatal, and caused by low humidity, poor nutrition, or disturbance during the vulnerable molting process. Never assist a molt or attempt to remove shed skin yourself, this can cause real harm.", source: "giant-millipede-health-issues-guide" },
+        { label: "Mites", value: "Not every mite is a problem, and many species living alongside a captive millipede are harmless. A heavy infestation shows up as unusually frequent cleaning behavior, thrashing, or visible mite clusters concentrated near the head or legs. Never use pesticides or mite sprays, these are toxic to millipedes and can kill the animal you're trying to help.", source: "giant-millipede-health-issues-guide" },
+        { label: "Lifespan", value: "5 to 7 years in the wild, and up to 10 years in captivity. This is remarkable longevity for an invertebrate, considerably longer than the praying mantis, jumping spider, or hissing cockroach, and worth factoring into your decision as a real, multi-year commitment.", source: "giant-millipede-cost-guide" },
+        { label: "Adult size", value: "10 to 15 inches (25 to 38 cm)." },
+        { label: "Bug spray", value: "A millipede is an arthropod and every insecticide sold for use inside a home is designed to kill arthropods. A healthy animal can be found dead the morning after an ordinary household task, a can of ant spray used in the kitchen, a plug-in device switched on in the hallway, a dog treated for fleas on the living room rug.", source: "invertebrate-pesticide-hazards-guide" },
+        { label: "First aid for the secretion", value: "Wash the affected skin thoroughly with soap and water, and for the eyes, irrigate with saline or water and then get them examined. That is the opposite of what a tarantula's urticating hairs call for, which is why one invertebrate first-aid routine does not cover them all.", source: "invertebrate-rehousing-guide" },
+        { label: "A power cut, and a trip", value: "A millipede is kept at whatever temperature the room already sits at, so a power cut is rarely the emergency it would be for a reptile or a fish tank. A full, shallow water dish refilled the morning you go, stable humidity, and a checked lid do more for a short absence than any attempt to pre-feed.", source: "invertebrate-emergency-travel-shipping-guide" },
       ],
     },
-    sections: {
-      housing: "A 20-gallon long terrarium (or equivalent) comfortably houses 2 to 3 adult North American giant millipedes (Narceus americanus) or African giant millipedes (Archispirostreptus gigas). Deep substrate (4 to 6 inches minimum) is essential as millipedes spend most of their time burrowing through and consuming it. Use a mixture of coconut fiber, organic topsoil (no fertilizers or pesticides), rotting hardwood (never pine or cedar), and leaf litter. This substrate IS their diet as well as their habitat. Temperatures of 72 to 80 degrees F are suitable for most pet species. Humidity should be high (70 to 80%) with adequate ventilation to prevent mold issues.",
-      diet: "Millipedes are detritivores: they eat decaying organic matter. Their primary diet is the substrate itself (rotting wood and leaf litter). Supplement with fresh vegetables: sweet potato, cucumber, zucchini, carrots, apple slices, and leafy greens. Rotate offerings and remove uneaten fresh food within 24 to 48 hours to prevent mold. Calcium is critical for their exoskeleton: offer cuttlebone pieces or crushed eggshell in the enclosure at all times. Avoid acidic fruits and vegetables (citrus, tomatoes).",
-      enrichment: `Millipedes are nocturnal detritivores - they spend most of their time buried in the substrate, emerging at night to graze on decaying organic matter. Cork bark slabs, flat pieces of rotting hardwood, and varied substrate layers (different textures at different depths) provide natural enrichment for burrowing. Watch them emerge in the evening and methodically traverse the enclosure.
-
-They are one of the most docile invertebrate pets and among the safest for beginners. They will walk slowly and steadily across hands and forearms, rarely making sudden moves. When threatened, they curl into a tight spiral - this is their primary defense mechanism. They may also secrete mild defensive chemicals (benzoquinones) that can temporarily stain skin a yellow-brown color. Wash hands thoroughly after handling. The stain fades within a few days.
-
-Their enrichment needs are simple: fresh substrate, fresh food, and the right conditions. They are fascinating display animals that interact with their environment in a subtle, unhurried way that is genuinely relaxing to observe.`,
-      health: "Substrate quality is the defining factor in millipede health. Poor substrate (wrong moisture level, wrong composition, lack of calcium) leads to failed molts and skeletal deformities. They molt periodically (burrowing deep to do so) and are vulnerable during this time. Never disturb a molting millipede. Common concerns include dehydration, mite infestations (treat with substrate replacement and drying one section of the enclosure), and calcium deficiency. Millipedes can live 5 to 10 years with appropriate care.",
-      checklist: [
-        "20-gallon+ enclosure with ventilation",
-        "4 to 6 inch deep substrate (coconut fiber, organic topsoil, rotting hardwood, leaf litter)",
-        "Cuttlebone or crushed eggshell (always in enclosure)",
-        "Cork bark hides",
-        "Digital thermometer and hygrometer",
-        "Fresh vegetables (sweet potato, cucumber, carrot, leafy greens)",
-        "Rotting hardwood pieces and leaf litter (replenish regularly)",
-        "Spray bottle for humidity management",
-        "Secure ventilated lid",
-        "Wash hands after handling (defensive secretions)",
+    emergencyCard: {
+      source: "giant-millipede-health-issues-guide",
+      callNow: [
+        "A shriveled, sluggish appearance and dry, cracking segments along the body",
+        "A molt that has been disturbed, or shed skin still attached, which is never to be assisted or pulled off by hand",
+        "Unusually frequent cleaning behavior, thrashing, or visible mite clusters concentrated near the head or legs",
+        "A major crack in the exoskeleton, which calls for isolating the animal in a clean, simplified hospital enclosure while it recovers",
+        "Dark lesions, which point to substrate that's swampy and poorly ventilated, worth correcting immediately",
+        "A soft, weak-feeling exoskeleton, which points to calcium deficiency",
       ],
+      vetLine: "Low humidity causes both the dehydration and failed molts that account for most serious health problems in this species. Excess wetness combined with poor airflow invites both mite overgrowth and necrotic lesions instead. And falls, entirely preventable through careful handling, cause most physical injuries. Balanced humidity, more than anything else, is the real key to this species' health.",
     },
+    routes: [
+      { slug: "giant-millipede-cost-guide", line: "$75 to $150 or more for the animal, the same again for setup, and the import rule behind the price." },
+      { slug: "giant-millipede-tank-setup-guide", line: "10 to 15 gallons as a floor, 72 to 80F, 70 to 80%, the 4 to 6 inch substrate that is also the food, and why isopods stay out." },
+      { slug: "giant-millipede-handling-guide", line: "Falls rather than bites, what the curl and the secretion mean, and when to leave a buried animal alone." },
+      { slug: "giant-millipede-health-issues-guide", line: "Dehydration, failed molts, mites, and the humidity pattern sitting underneath all three." },
+      { slug: "giant-millipede-enrichment-guide", line: "Why the substrate is the enrichment, what the tarantula housing study does and does not transfer, and the priority order." },
+      { slug: "giant-millipede-legal-guide", line: "The 2006 import ban that never happened, the permit that is real, and the states that differ." },
+    ],
+    buyList: [
+      "A 20 gallon long tank, or a 40-gallon breeder tank or tub",
+      "Pesticide-free organic topsoil and coconut fiber for a 4 to 6 inch substrate",
+      "Decaying hardwood and hardwood leaf litter, oak or beech",
+      "Cuttlebone or crushed oyster shell, left in permanently",
+      "A digital thermometer and hygrometer",
+      "A fine mist spray bottle",
+      "Cork bark and hides",
+      "A small shallow water dish with a few pebbles in it",
+      "A secure, tightly fitting lid",
+    ],
     faqs: [
-      { q: "Do millipedes actually have a thousand legs?", a: "No - despite the name (milli = thousand, pede = foot), no millipede species has exactly 1,000 legs. Most common pet species have between 40 and 400 legs. Until 2021 no species with over 750 legs had been documented. Then Eumillipes persephone, discovered 60 meters underground in Australia, was confirmed with 1,306 legs - the first true 'millipede' by the literal definition. Your Giant African Millipede almost certainly has somewhere between 200 and 400 legs." },
-      { q: "Are giant millipedes safe to handle?", a: "Yes - they are one of the most handleable invertebrate pets. They walk slowly and steadily across hands and forearms, rarely make sudden moves, and have no venom or biting mechanism. When threatened, they curl into a tight defensive spiral. Their primary defense is secreting mild benzoquinone compounds from pores along their body segments, which can temporarily stain skin a yellow-brown color and cause mild irritation. Wash hands thoroughly after handling and avoid touching your eyes. The stain fades within a few days." },
-      { q: "What do giant millipedes eat?", a: "They are detritivores - in nature they eat decaying organic matter, and in captivity their primary food is the substrate itself (rotting wood and leaf litter). Supplement with fresh soft vegetables: sweet potato, cucumber, zucchini, carrot, apple slices, and leafy greens. Calcium is essential for their exoskeleton - keep cuttlebone or crushed eggshell in the enclosure at all times. Remove fresh food within 24 to 48 hours to prevent mold. Avoid acidic fruits (citrus, tomatoes) and anything that has been treated with pesticides." },
-      { q: "How long do giant millipedes live?", a: "5 to 10 years with appropriate care, making them one of the longer-lived invertebrate pets. The key to longevity is substrate quality - millipedes continuously burrow through and ingest their substrate, so maintaining proper moisture levels, rotting hardwood content, and consistent calcium supplementation directly determines their health and lifespan. They molt periodically by burrowing deep into the substrate; never disturb a burrowed millipede that hasn't surfaced for several days, as it may be mid-molt." },
-      { q: "How important is calcium for millipedes?", a: "Critical. Millipedes are continuously rebuilding their exoskeleton and require constant dietary calcium. Without adequate calcium, their segments become soft, they fail to molt cleanly, and skeletal deformities develop over successive molts. The simplest solution is to leave a piece of cuttlebone in the enclosure at all times - millipedes will gnaw on it as needed. Crushed eggshell works as well. This single addition prevents the most common long-term health problem in captive millipedes." },
-      { q: "Are giant millipedes good pets for kids?", a: "Yes, genuinely one of the safest invertebrates to introduce a child to. They have no venom, no bite, move slowly, and tolerate gentle handling well. The only real caution is washing hands afterward, since their defensive secretions can temporarily stain skin." },
+      { q: "Why does a giant millipede cost more than other invertebrates?", a: "Imports are under a USDA embargo, prompted by concerns about a potentially damaging mite species found on imported animals, and keeping one requires a plant pest permit. So the animals for sale in the US are captive-bred or older stock instead of fresh imports. Limited supply, not care difficulty, is what pushes the price up." },
+      { q: "What size enclosure does a giant millipede need?", a: "10 to 15 gallons is the floor for one adult, though many keepers go closer to 36x18x18 inches, about a 40-gallon, or a 20-gallon long. Floor space beats height for a ground-dweller, and the lid has to fit tightly." },
+      { q: "What's the most common cause of death in giant millipedes?", a: "Dehydration. Looks shriveled and sluggish, with dry, cracking segments along the body. Insufficient humidity or substrate that isn't holding moisture is behind it, and early on it's manageable: raise humidity, moisten the substrate more deeply, and add a shallow water dish." },
     ],
   },
   {
