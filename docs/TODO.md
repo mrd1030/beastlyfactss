@@ -391,7 +391,7 @@ share a silhouette. That is roughly 25 species, about 175 images.
 ## 7. Router hubs, species by species
 
 Checked 2026-09-15 against `src/lib/data/guides/*.js`: a hub is a router hub
-when its entry carries `firstWeek` rows (RULES, Hubs). 76 of 108 done, 32
+when its entry carries `firstWeek` rows (RULES, Hubs). 80 of 108 done, 28
 still rendering the legacy care sheet. Batches of five, one branch each,
 per the READMEFIRST process. Dogs and cats last.
 Batches I and J both merged to main 2026-09-15 as 05a6fa6b. Batch I
@@ -409,15 +409,20 @@ Batch N (bristlenose pleco, discus, swordtail, zebra danio, ghost shrimp) done
 and checked on branch
 claude/bristlenosepleco-discus-swordtail-zebradanio-ghostshrimp 2026-09-15, not
 merged. Pass grade: pass, after fixes. Fish are finished: this batch took the
-last four. Next is batch O, and the classes left are invertebrates (4), lizards
-(3) and small mammals (1), so a one-per-class batch is no longer possible
-without dogs or cats.
+last four.
+Batch O (giant millipede, jumping spider, hissing cockroach, stick insect) done
+and checked on branch claude/invertebrates-readmefirst-batch-ayolwx 2026-09-15,
+not merged. Four species rather than five, because that is what invertebrates
+had left. Pass grade B. Invertebrates are finished. That makes 80 router hubs;
+the 28 left are lizards (3), small mammals (1), cats (10) and dogs (14), so
+every remaining batch after fire skink, Jackson's chameleon, uromastyx and
+flying squirrel is a dog or cat batch.
 Batch J (mourning gecko, ackie monitor, garter snake, oscar, amano
 shrimp) passed its check at grade C+. Next is batch K: pick five, one per
 class, where a set from a recent batch points at them. Worker Opus 5 high effort, one Fable closing check per batch (the
 batch prompt in READMEFIRST has the reasoning).
 
-Done (61):
+Done (65):
 
 - [x] axolotl, White's tree frog
 - [x] African grey, budgie, cockatiel, cockatoo, conure, lovebird
@@ -446,15 +451,16 @@ Done (61):
       (batch M, merged to main 2026-09-15)
 - [x] bristlenose pleco, discus, swordtail, zebra danio, ghost shrimp
       (batch N, on branch 2026-09-15, not merged)
+- [x] giant millipede, jumping spider, hissing cockroach, stick insect
+      (batch O, on branch 2026-09-15, not merged)
 
-To do (32):
+To do (28):
 
 - [ ] Amphibians (0): none left, fire-bellied toad was the last one
 - [ ] Birds (0): none left, quaker parakeet was the last one
 - [ ] Fish (0): none left, batch N took the last four
 - [ ] Geckos (0): none left, leaf-tailed gecko was the last one
-- [ ] Invertebrates (4): giant millipede, jumping spider, hissing cockroach,
-      stick insect
+- [ ] Invertebrates (0): none left, batch O took the last four
 - [ ] Lizards (3): fire skink, Jackson's chameleon, uromastyx
 - [ ] Small mammals (1): flying squirrel
 - [ ] Snakes (0): none left, rosy boa was the last one
