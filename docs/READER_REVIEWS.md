@@ -13216,3 +13216,157 @@ lines breeds offspring back to wild brown, sexing and berried females, how to
 test tap water for the copper three pages warn about, lighting and photoperiod,
 fish tankmate compatibility, and what to do when a colony outgrows its tank. All
 filed in docs/READER_LOG.md.
+
+## Green Anole (2026-09-15, batch M, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 82k tokens. Raw output in
+docs/READER_LOG.md. Set grade: B. "Strong deep dives sitting under a hub whose
+numbers are the outliers."
+
+The cohabitation split is the sharpest finding in either batch, because getting
+it wrong hurts an animal rather than a budget. Three pages gave three answers.
+Hub: "A male-female pair or a group of females can be housed together." Setup:
+"Don't house multiple anoles together, they don't coexist peacefully."
+Enrichment: "A single male with females in a large planted enclosure is the
+workable version." The reader said the useful thing, that one of them is wrong
+and a buyer cannot tell which.
+
+ReptiFiles settles it without a carve-out: "Due to conflict concerns, it's best
+practice not to house multiple green anoles together." The setup guide was right,
+and its other figures match that source exactly, 24x24x24, ambient 70 to 77,
+humidity 60 to 70, which is good evidence it came from there, so it now carries
+a Sources block naming it. The enrichment guide's section is rewritten around
+solo housing, keeping its two-males argument as the fastest failure mode and its
+best sentence, the one the reader picked out: an anole that cannot get out of
+another anole's sight has no way to end an encounter.
+
+The hub's diet section was the only feeding content in eight pages, which is why
+it could not simply retire. A sourced Diet Basics section went into the tank
+setup guide, the standing move for a species with no feeding guide, and it
+carries the portion figure the reader listed as missing everywhere: two to three
+food items per feeding, once a day for a hatchling or young anole and every other
+day for an adult, gut-loaded 24 to 48 hours and dusted at every feeding.
+
+Retired with the hub: an 18x18x24 enclosure against 24x24x24 on two other pages,
+an enclosure line of $80 to $150 against the cost guide's $250 to $270, UVB at
+$50 to $90 against $95 to $115, daytime temperatures of 80 to 85F against a cool
+side of 70 to 77, humidity 60 to 80 against 60 to 70, and a 12-hour photoperiod
+against 10 to 14. The reader also noticed the hub's own tables summed to roughly
+$210 to $405 against a stated total of $390 to $470.
+
+Source narration out of four passages naming ReptiFiles, including the cost
+guide's "a genuinely new addition to the gear we recommend for this species,"
+which the reader correctly read as an internal note that escaped.
+
+Links: 4 added. Health to setup on the sentence that says everything connects
+back to the setup and never pointed there, which the reader called the biggest
+miss in the set. Cost to setup on the terminarium. Handling to enrichment.
+Setup to enrichment on the cohabitation rule.
+
+Dates: cost, handling and tank setup bumped. Enrichment is future-dated to
+2026-10-24 and was not bumped, though its recommendation did change.
+
+Gaps: what to do when a female lays eggs, how to catch or restrain one safely,
+whether a temperate native needs a winter cooling period, and a spot-cleaning
+and substrate-replacement schedule. Filed in docs/READER_LOG.md.
+
+## Leaf-Tailed Gecko (2026-09-15, batch M, single pass, before the router hub)
+
+Extractor set of seven pages. One Opus agent, about 77k tokens. Raw output in
+docs/READER_LOG.md. Set grade: B-. "Four strong deep dives undercut by a hub that
+disagrees with them on every number a buyer acts on first."
+
+Four of five deep dives carried no Sources block, the same shape batch L found on
+praying mantis. Reptile Supply's Uroplatus care sheet confirms the enclosure
+sizes by species, 60 to 80% humidity with *U. phantasticus* at 90 to 100%
+overnight, the 5 to 15 year lifespan, and juveniles daily against adults every
+other day, so those pages now cite it alongside ReptiFiles' satanic leaf-tailed
+gecko sheet.
+
+The reader gave the clearest statement yet of what a mismatched hub costs: "If
+the landing page tells me 24x24x36 and 80 to 100% while the setup article says
+18x18x24 and 60 to 80%, I stop trusting whichever one I read second." All of it
+is retired with the hub, along with a lifespan of 5 to 10 years against 5 to 15,
+a setup table running about $335 to $815 against a stated $300 to $600, and an
+FAQ calling for "strong UVB" on a page whose own checklist said low-output, which
+is one page disagreeing with itself.
+
+No feeding guide, so Diet Basics went into the tank setup guide: juveniles daily
+and adults every other day in the evening, as much as the gecko takes in one
+night, prey no larger than the eye gap, and an all-in-one supplement on every
+feeder.
+
+Left open and recorded rather than resolved. Reptile Supply gives a basking area
+of 80 to 84F for the genus, where our setup guide says a basking source is
+generally unnecessary and can be actively dangerous. That is a genus-level figure
+against a species-specific warning about a montane animal, and overwriting a
+conservative husbandry claim on the strength of one source is not a call to make
+quietly. Worth Mike's decision.
+
+Also checked and left: the reader said the enrichment guide "names Gaskill but
+gives no link to check." It does link both Gaskill papers, in the Sources block,
+which is where RULES puts them. That is the rule working, not a defect.
+
+Links: 5 added, all from the reader's own list. Dates: tank setup bumped for the
+new section. Cost, health and handling gained a Sources block and one link each,
+which is not a fact change, so they were not bumped.
+
+## Mouse (2026-09-15, batch M, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 81k tokens. Raw output in
+docs/READER_LOG.md. Set grade: B. "Six strong, specific deep dives undercut by a
+hub that contradicts them on the one number that decides whether the animal stays
+in the cage."
+
+The bar spacing is the most consequential single defect a batch reader has found.
+Hub, twice: "wire mesh spacing needs to be under half an inch" and "Bar spacing
+under 1/2 in." Setup: "the maximum safe spacing at around a quarter inch (6mm),
+with some pushing that down to 5mm," and it specifically warns that
+three-eighths of an inch is still wide enough. The hub's number was double the
+safe one. Every other defect in this batch costs money or trust; this one costs
+the animal, and the reader said so plainly: "I would have bought the wrong cage
+from it."
+
+Both the setup and cost guides already agreed at a quarter inch and both cite
+sources, so this needed no ranking call, only the hub's retirement.
+
+Two deep dives genuinely disagreed, and this is the one that took judgment.
+Feeding: "lean toward scattering some of that ration around the cage" and, four
+sentences later, "Use a shallow, chew-resistant dish." Enrichment: "Scatter
+feeding, never a bowl," and again in its priority list. Both are half right. The
+dry ration is what scatters, and the dish is for the fresh vegetable portion,
+which does not scatter and has to come out before it spoils. Both pages say that
+now, and the enrichment guide's priority item reads "Scatter feeding for the dry
+ration."
+
+The cost guide contradicted its own arithmetic twice, both caught by the reader
+rather than by any check. A stated "Roughly $15 to $30 a Month" against an annual
+table totalling $125 to $240, which is $10 to $20. And "another $5 to $40 for the
+second or third mouse" when its own row prices a mouse at $5 to $20, so two more
+is $10 to $40. Both fixed, and the monthly figure was also stale in the
+description field, which is the frontmatter failure mode this process keeps
+finding.
+
+Also retired with the hub: a solo-housing rule that contradicted the enrichment
+guide and itself inside one section; a coprophagy rate of "roughly six times a
+day" against the feeding guide's sourced 9.6 falling to 4.7 on a B12-fortified
+diet; bedding at $12 to $20 against $18 to $30 and vet at $40 to $80 against $35
+to $75; and a checklist listing only a thermometer where two pages need a
+hygrometer. The hub never mentioned that a glass tank is the wrong enclosure for
+this species, which is the set's most surprising instruction.
+
+The adult size row first went in at 3 to 4 inches and was corrected to the
+encyclopedia's 2 to 3 inches body plus a 3 to 4 inch tail before commit. Worth
+recording because it is the same shape as the errors the check keeps finding:
+a hub row written from memory rather than copied.
+
+Links: 5 added. Dates: none bumped, since cost, feeding and enrichment are all
+future-dated and setup, handling and health changed links only.
+
+Gaps, and this species has the thinnest shared-guide backstop in either batch,
+with only the rat/mouse/flying squirrel comparison piece on its Health and More
+list: a spot-clean and full-clean schedule in days, a weighing routine and scale
+against the 20% weight-loss warning, how to pick and sex a healthy mouse, how to
+introduce unfamiliar females, accidental litters and desexing, zoonotic risk and
+hand hygiene, out-of-cage time and escape recovery, a travel carrier, and
+end-of-life costs. All filed in docs/READER_LOG.md.
