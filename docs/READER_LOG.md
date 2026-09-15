@@ -6473,3 +6473,332 @@ Genuinely useful and unusually honest about the feeder trade, undercut by a hub 
 - How to sex them or spot a berried female, after the hub sells watching eggs develop as the appeal.
 - What to actually do when you see the white ring of death. Called "frequently fatal" with no next step.
 - A named calcium source for molting, given the health and feeding pages disagree on whether one is needed.
+
+## Giant Millipede (2026-09-15, batch O)
+
+Raw output, one Opus reader agent, extractor set of seven pages.
+
+## 1. Page by page
+
+**00 Hub.** Finished it, it is short and scannable; I can act on the 4 to 6 inch substrate depth, 72 to 80F, 70 to 80% humidity, and the checklist. No purchase price, no permit, and it contradicts two deep dives. **C**
+
+**01 Encyclopedia.** Finished it for one paragraph: the USDA plant pest permit and the 2014 SFO seizure. Actionable only as "check the law before you buy." **B**
+
+**02 Cost guide.** Finished it. I can budget $75 to $150 for the animal and roughly the same for setup, and I now know why. Does not say where to buy or how a permit is obtained. **B+**
+
+**03 Handling.** Finished it. Act on: handle low over something soft, never grab from above, stop at the curl, leave a buried animal alone for weeks. Named sources. **A-**
+
+**04 Health.** Finished it. Symptom to cause to fix, and the "never use mite spray" line is the kind of thing that saves an animal. **A-**
+
+**05 Tank setup.** Finished it. Act on: 4 to 6 inches of topsoil and coco fibre, oak or beech litter, no pine or cedar, tight lid, no isopods. **B**
+
+**06 Enrichment.** Finished it, and it is the best written of the set, but it is largely the setup guide again. Honest that there is no research. **B**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: the import permit history is nowhere else except a compressed version in the cost guide. The hub does not. It is the setup and health guides shortened, minus the two things I most needed on the landing page (what the animal costs, and that it is federally regulated).
+
+Direct conflicts:
+
+- Group housing. Hub: "A 20-gallon long terrarium (or equivalent) comfortably houses 2 to 3 adult... millipedes." Setup: "Keep one per enclosure unless you're intentionally planning to breed." Enrichment: "They are not predatory or territorial and are commonly kept in groups."
+- Enclosure size. Hub: "20-gallon+ enclosure". Setup: "A minimum of 10 to 15 gallons for one adult."
+- Tank cost. Hub table: "20-gallon+ enclosure | $40 | $80". Cost guide: "A 20 gallon long tank, or a 40-gallon breeder tank or tub | $35 - $60".
+- Substrate cost. Hub: "$20 | $40". Cost guide: "$17 - $21+".
+- Mite treatment. Hub: "mite infestations (treat with substrate replacement and drying one section of the enclosure)". Health: "Gently wipe affected areas with a damp cotton swab if needed."
+- The hub is about a species named Giant African Millipede but silently folds in "North American giant millipedes (Narceus americanus)".
+
+## 3. The set as a whole
+
+I could build the enclosure, feed it, handle it and recognise the four things likeliest to kill it. I could not confidently buy one. Still missing: how to obtain the plant pest permit and what it costs, where to buy, how to judge a healthy animal, and whether a new arrival needs quarantine. Also missing: how often to replace or top up substrate (the hub budgets for it annually, nobody says when), how often to offer produce, and whether a standing water dish is permanent kit.
+
+Questions answered on another page without being told:
+- Hub: "millipedes can live 5 to 10 years" and no price. The cost guide explains both the price and why.
+- Health: "provide a shallow water dish" with no humidity numbers. Setup has them.
+- Setup: "Add a calcium source" with no consequence stated. Health explains the soft exoskeleton.
+- Enrichment: "a mite bloom... is a genuine nuisance to clear." Health tells you how.
+- Handling: "a molt may take several weeks." Health explains what a failed one looks like.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three times: deep substrate is food and habitat, never pine or cedar, cuttlebone, do not dig up a buried millipede. Setup and enrichment are near duplicates on substrate and humidity.
+
+Conflicts:
+- Calcium source. Health: "add a genuine calcium source like cuttlebone or crushed oyster shell... not chalk." Enrichment and hub: "Crushed eggshell works as well." One of those is not vetted.
+- Wild lifespan. Encyclopedia: "Wild Lifespan: 5-10 years." Cost: "5 to 7 years in the wild, and up to 10 years in captivity."
+- Moisture. Setup: "misting once or twice daily." Enrichment: "Consistently damp and never wet, with the substrate itself doing most of the buffering."
+
+## 5. One link per page
+
+- **Hub:** "A 20-gallon long terrarium (or equivalent) comfortably houses 2 to 3 adult..." should point to the enclosure setup guide, which disagrees.
+- **Encyclopedia:** "requires a federal permit to import them" should point to the cost guide.
+- **Cost:** "Deep organic substrate, genuinely the biggest recurring cost for this species" should point to the enclosure setup guide.
+- **Handling:** "resist the urge to dig it up to check on it" should point to the health issues guide.
+- **Health:** "raise humidity, moisten the substrate more deeply, and provide a shallow water dish" should point to the enclosure setup guide.
+- **Setup:** "Add a calcium source, cuttlebone or crushed oyster shell, directly into the enclosure" should point to the health issues guide.
+- **Enrichment:** "a mite bloom in a millipede enclosure is a genuine nuisance to clear" should point to the health issues guide.
+
+## 6. Trust
+
+Doubts: the hub quietly swapping in a North American species; two different wild lifespans; eggshell approved on two pages and implicitly excluded on a third; the enrichment guide quoting tarantula percentages at a millipede and admitting they do not transfer; a passed-along claim that the secretions "contain cyanide" sitting next to benzoquinones everywhere else.
+
+Most convincing sentence, from the enrichment guide: "a millipede fed mostly on fruit rather than decaying wood is being fed the interesting part instead of the nutritious part."
+
+## 7. Set grade: B-
+
+Strong deep dives undercut by a hub that contradicts them and a buying story that never lands.
+
+First two changes: settle group housing and minimum enclosure size to one number across hub, setup and enrichment; put the purchase price, the permit, and a how-to-buy and quarantine section on the hub.
+
+## Not covered anywhere
+
+- How to obtain the USDA plant pest permit, what it costs, how long it takes.
+- Where to buy, and how to tell a healthy animal from a dehydrated one at purchase.
+- Whether a new arrival needs quarantine, and for how long.
+- How often to replace or top up substrate and leaf litter.
+- How often to offer fresh produce, and how much.
+- Whether a shallow water dish is permanent kit or only a dehydration fix.
+- Adult size, never stated outside the encyclopedia and absent from the hub.
+- Sexing, and what happens if a group breeds.
+
+## Jumping Spider (2026-09-15, batch O)
+
+Raw output, one Opus reader agent, extractor set of eight pages.
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Actionable: enclosure shape, room temperature, prey types, checklist. But the numbers are the loosest in the set. **C**
+- **01 Encyclopedia.** Finished it, fast. Nothing to act on, but the history (Koch 1846, the post 2017 Lucas the Spider surge, now in chain stores) is the only place the set tells me why this animal is suddenly everywhere. **B**
+- **02 Cost.** Finished it, suspiciously. Actionable: spider price by age and sex, "vet care: effectively none." The setup table contradicts itself. **C-**
+- **03 Handling.** Finished it. Actionable: let it walk on, never grab, work low over something soft. Half the page re-explains visual hunting I had already read twice. **C+**
+- **04 Health.** Finished it. Actionable: curled legs and lethargy mean dehydration, thermostat or no heat, no antidote for pesticide exposure. Gives no humidity number on the page where humidity is the whole thesis. **B**
+- **05 Tank setup.** Finished it. The only page I could actually build from: size, 72 to 82F, 50 to 60%, substrate depth, lighting, opening placement. **A-**
+- **06 Feeding.** Finished it and reread it. Stage schedule, prey list, never-feed list, abdomen as the gauge, and it says outright where sources disagree and that the fasting numbers are hobbyist reported. **A**
+- **07 Enrichment.** Finished it. Actionable priority order, and it names a real captivity effect instead of flattering me. **B+**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: origin, wild diet, wild lifespan, and the trade history appear nowhere else. The hub mostly restates the deep dives at lower resolution, and where it restates them it disagrees:
+
+- Enclosure: hub "around 5x5x8 inches works well for one adult" vs setup "A minimum of about 4 by 4 by 7 inches... closer to 8 to 10 inches tall gives more genuine climbing room."
+- Enclosure price: hub "Small tall enclosure (5x5x8 in or similar) | $15 | $30" vs cost "Small vertical, arboreal enclosure | $60 - $70."
+- Food budget: hub "Live feeder insects... | $20 | $40" per year vs cost "Roughly $5 to $15 a Month," which is $60 to $180.
+- Lifespan: hub "1 to 2 years is typical" vs cost "A realistic overall range to expect is 1 to 3 years."
+- Temperature: hub "Room temperature of 70 to 80 degrees F" vs setup "72 to 82F."
+- Misting: hub "Light misting every day or two" vs setup "Mist one corner of the enclosure every 2 to 3 days."
+- Feeding: hub "Offer prey 2 to 3 times a week and remove anything uneaten after a day" vs feeding "pull uneaten live prey within a few hours to overnight."
+
+## 3. The set as a whole
+
+Yes, I could set one up, feed it, and keep it alive, and I would use the setup and feeding pages to do it and ignore the hub's numbers. Still missing: where to buy and how to judge a healthy spider, how to sex one (the cost page makes sex financially load bearing and never says how to tell), what to do on arrival day, routine enclosure cleaning with a live spider in it, what to do if it escapes into the room, how to make water dechlorinated, what a "damp cotton ball setup" physically is, and what to do if a female lays an egg sac.
+
+Questions answered elsewhere without being told: health says "mist the enclosure regularly" and the actual target sits on setup; handling warns about "an unmonitored heat mat" and the thermostat rule sits on setup and health; the hub's checklist lists "a small water source" that only the feeding page ever describes as a shallow dish; the cost page's fruit fly culture is explained only on feeding.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice or more: jumping spiders hunt by sight rather than webbing (hub, encyclopedia, handling, enrichment, feeding), fragility and the fatal fall (handling, enrichment), height over floor space (setup, enrichment), never oversized prey (feeding, enrichment).
+
+Conflicts:
+- Misting cadence: setup "every 2 to 3 days" vs feeding "light daily misting of the enclosure walls."
+- Prey size: hub "sized no larger than the spider's body" vs feeding "roughly no bigger than the abdomen."
+- Cost internal math: "Small vertical, arboreal enclosure | $60 - $70" inside "Total upfront setup | $50 - $120," with four more items supposedly included.
+- Handling body lists two first-timer mistakes, its own FAQ says "Using an unmonitored heat mat and letting the enclosure run too dry are the other two."
+
+## 5. One link per page
+
+- Hub: none needed, the sidebar carries them. Fix the numbers instead.
+- Encyclopedia: "It is now stocked by chain pet stores across the United States and Canada" to the cost guide.
+- Cost: "the large majority of health issues in this species trace back to the enclosure environment rather than anything requiring professional treatment" to the health issues guide.
+- Handling: "Using an unmonitored heat mat, a genuine and common preventable cause of death." to the health issues guide.
+- Health: "It's manageable at home, mist the enclosure regularly" to the enclosure setup guide, which has the 50 to 60% target.
+- Setup: "aim to leave drinkable droplets rather than soaking everything" to the health issues guide, since dehydration is the leading killer.
+- Feeding: "Refusal paired with a shrunken, raisin-like abdomen, lethargy, poor jumping ability, or curled-inward legs points to a real problem" to the health issues guide.
+- Enrichment: "And do not offer prey larger than the spider's body." to the feeding guide.
+
+## 6. Trust
+
+Doubts: the cost table that cannot add up, the hub's enclosure price at a third of the cost page's, the handling FAQ promising three mistakes after a body that listed two, and the "female kept at the Bronx Zoo, lived just under 5 years" fun fact, which is exactly the kind of claim I would want a source for.
+
+The sentence that convinced me a keeper wrote this: "Jumping spiders build their silk retreat near the top of the enclosure, so it's worth positioning your access opening lower or to the side." Runner up, from feeding: "never mist the spider's abdomen directly, water can seep between the book-lung plates and cause suffocation."
+
+## 7. Set grade: B-
+
+Two or three genuinely good pages sitting behind a hub that contradicts them on almost every number a buyer would write down.
+
+First two changes: make the deep dives the single source of truth and regenerate the hub's cost, size, temperature, misting, feeding, and lifespan figures from them. Then add a "bringing one home" page covering sourcing, sexing, arrival, and escape recovery, and put the 50 to 60% humidity figure on the health page.
+
+## Not covered anywhere
+
+- Where to buy a jumping spider and how to judge a healthy one.
+- How to tell a male from a female, despite price and lifespan hanging on it.
+- Arrival and acclimation day.
+- Routine enclosure cleaning and old web removal with the spider in residence.
+- What to do if the spider escapes into the room.
+- How to dechlorinate water.
+- What a "damp cotton ball setup" actually is.
+- What to do with an egg sac, including an infertile one from an unmated female.
+
+Covered by the shared class guides, so not listed above: molting normal versus failed, pesticide exposure prevention, rehousing method, and travel or power outage planning.
+
+## Madagascar Hissing Cockroach (2026-09-15, batch O)
+
+Raw output, one Opus reader agent, extractor set of nine pages.
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Act on: the checklist and the cost tables. But it is the loosest page here on numbers. **C+**
+- **01 Encyclopedia.** Finished it. Act on: adult size, lifespan, and the warning that dealers mix in two lookalike species. **B+**
+- **02 Cost.** Finished it. Act on: $3 nymph, $24 pair, $65 colony of 25, and skip the heat mat unless breeding. **B**
+- **03 Handling.** Finished it twice. Act on: lift around the thorax, never pull against the grip, wash hands, read the graded hiss. **A**
+- **04 Health.** Finished it. Act on: 60 to 70% humidity, never handle a fresh molt, thermostat any heat mat. **B+**
+- **05 Tank setup.** Finished it. Act on: the whole page. Sizes, temps, substrate depth, petroleum jelly band. **A-**
+- **06 Feeding.** Finished it. Act on: dry dog food staple, produce a few times a week, sponge water, the sick-roach symptom list. **A**
+- **07 Enrichment.** Finished it. Act on: colony not single, leaf litter and rotting wood, vertical clearance for molting. **A-**
+- **08 Legal.** Finished it. Act on: check my state, call if I am in NM, NJ or ID. **A**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns it. Nothing else gives me the horns, the lookalike-species warning, or the naming history. The hub mostly repeats the deep dives while disagreeing with them:
+
+- Humidity. Hub: "Moderate humidity of 50 to 70% is appropriate." Setup and health: "60 to 70%."
+- Temperature. Hub: "Temperatures of 75 to 90 degrees F are ideal." Setup: "75 to 85°F for general pet-keeping... Breeding specifically gets triggered around 85 to 95°F." The hub's ideal range runs into the breeding trigger it never mentions.
+- Climbing. Hub: "exceptional climbers on rough surfaces... Smooth glass or smooth plastic sides at least 10 to 12 inches tall will prevent escape," with jelly as "a secondary escape-proofing method some keepers use." Setup: "capable of scaling smooth glass with ease... A secure lid alone isn't enough." The hub's own FAQ then admits "they can scale glass, most plastics, and any rough surface," contradicting its own Housing section.
+- Cost. Hub's setup table totals $70 to $130 before buying an animal. Cost guide: "Estimated setup total | $40 - $100," animal included.
+- Safety. Hub: "They are completely harmless to humans." Handling: "Their sharp leg spines... can scratch or draw a small amount of blood," plus "they can carry Salmonella." For a page recommending them to children, the hub should not be the softer of the two.
+- Maturity. Hub: "nymphs reaching sexual maturity in 5 to 7 months." Feeding: "about six molts over roughly five months to reach adulthood."
+
+## 3. Could I keep one?
+
+Yes. Between them I can buy, house, heat, humidify, feed, escape-proof and check the law. Gaps: no cleaning or substrate-change schedule beyond "deeper clean periodically"; no ventilation spec; nothing on quarantining new arrivals; nothing on what to do with hundreds of surplus nymphs; nothing on recapturing an escapee.
+
+Unsignposted answers already in the set:
+- Four pages tell me to keep same-sex or males-only groups. None says how to sex one. The encyclopedia does: "Males display prominent pronotal horns."
+- Feeding's "elevated humidity during this window" to molt is answered numerically only in setup and health.
+- The tank setup's Arizona and Florida shipping note is properly answered only in the legal guide.
+- Handling's escape-barrier bullet never says how to build one. Setup does.
+
+## 4. Overlap and conflict across the deep dives
+
+Read twice: the pet-versus-feeder paragraph, nearly verbatim in cost and handling; petroleum jelly in setup, handling and enrichment; the pale post-molt window in health, feeding and enrichment.
+
+Conflicts:
+- Minimum group. Setup: "A 5-gallon tank works as a minimum for a single animal or a small group." Enrichment: "Do not keep a single animal, since the species is gregarious."
+- Food removal. Health: "remove any uneaten fresh food within 24 hours." Feeding: "remove anything uneaten within a day or two."
+- Misting. Setup: "daily misting." Hub: "allow the substrate to dry slightly between mistings."
+- Protein. Hub: "Supplement with a protein source: dry dog or cat kibble... provides the amino acids needed." Feeding: "Skip diets that are too protein-heavy, hissers are naturally protein-sparing."
+- Calcium. Hub: "Provide cuttlebone or crushed eggshell pieces constantly." The feeding guide, which is the page on food, never mentions calcium at all.
+- Shipping. Setup: "this species can't be legally shipped to Arizona or Florida." The legal guide lists Florida as permit-required and never names Arizona.
+
+## 5. One link per page
+
+- **Hub:** "Petroleum jelly applied near the top edge... is a secondary escape-proofing method some keepers use." Link to the tank setup guide, which calls it primary.
+- **Encyclopedia:** "dealers routinely mix it with two Madagascan lookalikes." Link to the cost guide, where I choose a seller.
+- **Cost:** "The optional heat mat and thermostat only earns its keep if you're breeding." Link to the health guide's overheating section.
+- **Handling:** "Not applying an escape barrier around the enclosure." Link to tank setup.
+- **Health:** "maintain 60 to 70% humidity through regular misting" (it says "the tank setup guide" without linking). Link to tank setup.
+- **Tank setup:** "this species can't be legally shipped to Arizona or Florida." Link to the legal guide.
+- **Feeding:** "They need elevated humidity during this window to shed successfully." Link to tank setup for the number.
+- **Enrichment:** "Do not keep a single animal." Link to tank setup, which permits one.
+- **Legal:** none needed.
+
+## 6. Trust
+
+Doubts: the hub reads like it was generated from a different source set than the guides it links to, and the calcium and Salmonella mismatches are the kind that make me check everything. The Arizona claim appears once, sourced nowhere.
+
+Most convincing sentence, from the handling guide: "A roach that hisses once when you lift the lid is noting you. One that hisses in a run and bolts for the substrate is telling you the approach was too fast or too much."
+
+## 7. Set grade: B+
+
+The deep dives are unusually honest about disagreement and unusually specific; the hub drags the average down by contradicting them. First two changes: rewrite the hub from the deep dives so humidity, temperature, enclosure size, setup cost and safety match, and add sexing plus a cleaning schedule to the setup guide.
+
+## Not covered anywhere
+
+- Cleaning and full substrate-change frequency: no page or shared guide gives an interval.
+- Quarantine or acclimation of newly bought roaches.
+- What to do with surplus nymphs once the colony booms.
+- How to recapture an escaped roach in a room.
+- Ventilation spec: everything says "adequate airflow," nothing says what that is.
+- Sexing method: only inferable from the encyclopedia's horns line, never stated as a how-to.
+
+## Stick Insect (2026-09-15, batch O)
+
+Raw output, one Opus reader agent, extractor set of seven pages.
+
+## 1. Page by page
+
+- **00 Care guide hub.** Finished it, it is the densest page here. Act on: enclosure ratio, host plant list, replace cuttings every 2 to 3 days, daily misting, egg incubation timing. Grade B-, because most of it is the deep dives rewritten, and several numbers do not match them.
+- **01 Encyclopedia.** Finished it, it is short and it is the only page with real natural history. Nothing to act on, which is fine. Grade B.
+- **02 Cost guide.** Finished it. Act on: the APHIS permit problem, a few dollars per nymph, no vet costs. The setup table is broken. Grade C+.
+- **03 Handling guide.** Finished it twice. Act on: body grip not leg, the three stress signals, which species pinch, group housing. Named sources. Grade A-.
+- **04 Health issues.** Finished it, it is 900 words of prevention with no numbers in it. Act on: cover standing water, weekly substrate change, airflow. Grade C+.
+- **05 Enclosure setup.** Finished it, this is the page I would build from. Act on: 8x8x12 inches, 63 to 77F, 60 to 80% for tropicals, coir or paper towel, no UVB, 12 hour light cycle. Grade B+.
+- **06 Enrichment.** Finished it. Act on: the priority list, block the vase opening with cotton wool or foil, thin the group if limbs go missing. Grade A-.
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: Carausius morosus history, the Lord Howe Island recovery, 3,000 species. None of it repeats the guides. The hub does not. It restates all five deep dives at lower resolution, and then disagrees with them.
+
+- Legality. Hub: "They are legal, widely available, cheap, hardy." Cost guide: "keeping non-native stick insect species, which includes the common Indian and Vietnamese stick insects widely sold in the hobby, technically requires a USDA APHIS permit." That is the one contradiction that changes whether I buy.
+- Enclosure. Hub: "A 30x30x45 cm or larger mesh enclosure suits most adult species." Setup: "a roughly 8 by 8 by 12 inch tall, mesh-topped enclosure," which is 20x20x30 cm.
+- Temperature. Hub: "68 to 80 degrees F." Setup: "roughly 63 to 77F."
+- Humidity. Hub: "around 50 to 70% for most temperate species, higher (70 to 80%) for tropical species." Setup: "tropical types want 60 to 80%."
+- Enclosure cost. Hub: mesh enclosure "$25" to "$50." Cost guide: "Tall, mesh-topped enclosure | $60 - $70."
+- Group housing. Hub checklist: "House species separately (most are docile but competitive for food)." Handling guide: "Indian stick insects specifically can be housed in groups without issue."
+- The hub disagrees with itself on molt length: "over 20 to 60 minutes" in Enrichment, "30 minutes to over an hour" in Health.
+
+## 3. The set as a whole
+
+I could buy one, build the enclosure, feed it and keep it alive. What is missing: what to do with the eggs I will definitely get, when the cost guide says releasing them is prohibited; where to legally buy one given that same section; whether nymphs walk through standard mesh; whether to intervene in a molt that is going wrong; how to keep bramble coming in winter; and any cleaning routine beyond substrate.
+
+Questions answered on another page without being told:
+- Health guide leans on "correct enclosure height" four times and never gives the number. It is 3x body length, on Setup and Enrichment.
+- Cost guide lists "Substrate" as a line item and never says what kind. Coir, peat or paper towel, on Setup.
+- Handling lists "an enclosure too short for a proper molt" as a first-timer mistake with no dimension attached.
+- Hub calls them legal. The permit section is on the cost guide.
+- Cost guide specifies a mesh top and never says why. Because they molt hanging from it, on Setup and Enrichment.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three times: autotomy and adult legs not regrowing (Handling, Health, Enrichment), the 3x height molting rule (Setup, Enrichment, Health by implication), drowning in the cutting vase (Handling, Health, Enrichment), bramble and species-specific host plants (all four).
+
+Conflicts:
+- Handling: "Gently grasp the body or thorax if you need to move a stick insect." Hub: "Always let the insect walk voluntarily onto an open palm." Those are different instructions.
+- Misting. Setup: "daily light misting." Enrichment: "once or twice a day." Hub: "once daily."
+- Leg regrowth. Hub: "juvenile limbs regrow at the next molt." Handling: "only partially across molts in younger animals."
+- Lifespan. Hub: "typically 6 to 18 months." Cost: "A small number of larger species can reach 2 to 3 years."
+
+## 5. One link per page
+
+- **Hub.** "They are legal, widely available, cheap, hardy" should point to the cost guide's legal section.
+- **Encyclopedia.** None needed.
+- **Cost.** "Tall, mesh-topped enclosure" should point to the enclosure setup guide.
+- **Handling.** "Providing an enclosure too short for a proper molt" should point to the enclosure setup guide.
+- **Health.** "prevention through correct enclosure height and misting" should point to the enclosure setup guide.
+- **Setup.** "A single Indian stick insect does fine in a roughly 8 by 8 by 12 inch tall, mesh-topped enclosure" should point to the enrichment guide, which says the same rule scales with the species.
+- **Enrichment.** "Many stick insects reproduce parthenogenetically, so a single female bought as a pet will quietly produce fertile eggs" should point to the cost guide, where releasing eggs turns out to be illegal.
+
+## 6. Trust
+
+Doubts: the cost table, where a $60 to $70 enclosure sits inside a $30 to $100 total and every other row says "Included in setup total." The hub calling the animal legal on the same site that says the permit is unobtainable. Two molt durations on one page. A hub checklist that says house them separately next to an article titled "Why You Can Keep More Than One." The enrichment page citing a tarantula study for a leaf-eater, though it says so itself, which helps.
+
+The sentence that convinced me a keeper wrote this: "Overcrowding shows as damaged legs and antennae, and stick insects knock pieces off each other during molts in a crowded enclosure."
+
+## 7. Set grade
+
+**C+.** The individual articles are honest and specific, but the hub contradicts them on legality, size, temperature, humidity and cost, and the health page is written without a single number.
+
+First two changes:
+1. Fix the legality contradiction, and say plainly on the hub what the cost guide says.
+2. Put the height, temperature, humidity and cost numbers in one place and make every other page quote that, starting with the health guide.
+
+## Not covered anywhere
+
+- What to do with unwanted eggs, when releasing them is prohibited.
+- Where to legally obtain a stick insect in the US after the permit section.
+- Whether nymphs escape through standard mesh, and what aperture to buy.
+- Whether to intervene in a molt that is visibly failing.
+- Keeping a host plant supply through winter.
+- Quarantine or acclimation for a newly arrived insect.
+- Enclosure cleaning beyond substrate replacement, including frass and disinfection.
+- Species identification and sexing, which every host plant and humidity answer depends on.
+
+Batch O note, not the reader's: the old hub's molt duration (20 to 60 minutes in one section, 30 minutes to over an hour in another) was retired rather than moved, since no deep dive states one. How long a molt takes, and whether to intervene in one going wrong, are both gaps on this species.

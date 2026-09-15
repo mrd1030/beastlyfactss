@@ -394,49 +394,97 @@ export const invertebrateGuides = [
     image: "/assets/guides/millipede.jpg",
     tagline: "The gentle detritivore that works as a living composting machine!",
     funFact: "Despite their name, millipedes do not have 1,000 legs. Most species have 40 to 400 legs. However, a species discovered in 2021 (Eumillipes persephone) was found 60 meters underground in Australia and has a record 1,306 legs, making it the only true millipede.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "20-gallon+ enclosure", low: 40, high: 80 },
-        { item: "Deep substrate (coconut fiber, topsoil, hardwood)", low: 20, high: 40 },
-        { item: "Cork bark hides", low: 10, high: 20 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-      ],
-      annual: [
-        { item: "Fresh vegetables", low: 30, high: 60 },
-        { item: "Substrate replacement", low: 20, high: 40 },
-        { item: "Cuttlebone or crushed eggshell", low: 5, high: 10 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Pesticides, rehousing first aid and the travel and
+    // outage plan cite the shared invertebrate guides in the sidebar's Health
+    // and More list. Reconciled 2026-09-15 after the giant millipede set test
+    // (docs/READER_REVIEWS.md).
+    //
+    // The old hub's cost table was above the cost guide on every line it
+    // shared: the tank at $40 to $80 against $35 to $60, substrate at $20 to
+    // $40 against $17 to $21+, and the hygrometer at $15 to $25 against $11 to
+    // $19. It also had no purchase price and no mention of the federal permit,
+    // which the reader named as the two things a landing page most needed.
+    //
+    // Three claims retired rather than moved. The old hub housed "2 to 3 adult
+    // North American giant millipedes (Narceus americanus) or African giant
+    // millipedes (Archispirostreptus gigas)" on a page whose species is
+    // Archispirostreptus gigas, so the second species is gone. Its mite advice,
+    // "treat with substrate replacement and drying one section of the
+    // enclosure", is not what the health guide says to do. And its "5 to 10
+    // years with appropriate care" collapsed a wild figure and a captive one
+    // into a single number.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "The animal", value: "The millipede itself typically runs $75 to $150 or more, a real step up in price for an invertebrate, driven entirely by the supply situation rather than anything about the animal's care difficulty.", source: "giant-millipede-cost-guide" },
+        { label: "Why it costs that", value: "The USDA maintains an import embargo on giant African millipedes, tied to concerns about a potentially damaging mite species found on imported animals, and a plant pest permit is required to keep this species. Most giant millipedes available in the US today are captive-bred or from older stock rather than freshly imported, which keeps supply genuinely limited.", source: "giant-millipede-cost-guide" },
+        { label: "Setup budget", value: "Roughly $75 to $150 for the tank, substrate, leaf litter, a hygrometer, and a spray bottle.", source: "giant-millipede-cost-guide" },
+        { label: "Ongoing costs", value: "Minimal. Fresh produce and periodic substrate or leaf litter replenishment make up nearly the entire monthly cost, just a few dollars.", source: "giant-millipede-cost-guide" },
+        { label: "Vet costs", value: "Essentially none. Invertebrate-experienced exotic vets exist but are rarely needed, most issues are managed through husbandry alone.", source: "giant-millipede-cost-guide" },
+        { label: "Legal, before you buy", value: "A USDA PPQ 526 permit applies federally, since millipedes fall under the federal plant pest definition. States then diverge more than people expect: Florida requires a permit from its Department of Agriculture, Hawaii excludes the species by omission from its approved lists, Oregon names it as approved with no permit, and the District of Columbia and Montana both leave it outside their permitted categories.", source: "giant-millipede-legal-guide" },
+        { label: "Enclosure size", value: "A minimum of 10 to 15 gallons for one adult, with many keepers recommending something closer to a 36x18x18 inch enclosure, roughly a 40-gallon equivalent, or a 20 gallon long tank. Floor space matters more than height for this ground-dwelling species.", source: "giant-millipede-tank-setup-guide" },
+        { label: "The lid", value: "A secure, tightly fitting lid is essential, millipedes are capable climbers and genuine escape artists.", source: "giant-millipede-tank-setup-guide" },
+        { label: "More than one", value: "Fine and normal. This is a communal species that will cluster together even in a large enclosure, as long as space, hides and food are all abundant. What limits a group is crowding, which brings stress and competition for resources.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Temperature", value: "72 to 80°F suits this species well, and normal room temperature is often sufficient without any additional heat source. A low-wattage heat mat is only worth adding if your space runs consistently cold.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Humidity", value: "70 to 80%, achieved by keeping roughly a third of the substrate genuinely moist, misting once or twice daily, and ensuring good cross-ventilation to prevent mold and mite problems. Monitor with a digital hygrometer rather than guessing.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Substrate, the whole job", value: "4 to 6 inches of pesticide-free organic topsoil mixed with coconut fiber, along with decaying hardwood and hardwood leaf litter, oak and beech both work well. Avoid softwoods like pine and cedar entirely, their resins are toxic to this species, and never use any substrate material that's been treated with pesticides.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Food", value: "The substrate is most of the diet. Decaying hardwood and pesticide-free hardwood leaf litter, oak, beech and maple, is the staple food itself. Fresh produce is a supplement on top of that: cucumber, carrot, sweet potato and leafy greens, plus small amounts of fruit such as apple, banana, melon or mango, offered every two to three days and taken back out before it molds.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Calcium", value: "Stays in permanently instead of going in on a schedule, a cuttlebone or powdered calcium carbonate left on the substrate for the animal to gnaw when it needs it. Skip it and the exoskeleton goes soft and the molts start failing.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Water", value: "A small shallow dish with a few pebbles dropped in so nothing drowns in it.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Lighting", value: "None required. This species actively avoids bright light. If you're running live plants in a bioactive setup, a low-output 6500K plant light is the only lighting worth adding.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Isopods", value: "Resist the common instinct to add isopods as a cleanup crew alongside your millipede. Isopods can actually harass or weaken millipedes in a shared enclosure, an unexpected conflict that's worth knowing about before you set up a combined bioactive tank.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Handling, the real risk", value: "A giant millipede has a heavy body and a genuinely brittle exoskeleton, and a fall from even a modest height, higher than the animal's own body length, onto a hard surface can crack the shell and prove fatal. Handle over a soft surface close to the ground, support the full body, and never grab from above, let the millipede walk onto your hand instead.", source: "giant-millipede-handling-guide" },
+        { label: "The secretion", value: "A millipede that has decided you might be a threat curls into a tight spiral first, and if that does not settle things it releases a brown or yellow fluid. The fluid carries benzoquinones, mild irritants that can sting skin and eyes in someone sensitive and leave a stain. Keep it away from your eyes and mouth, and wash your hands thoroughly after a session.", source: "giant-millipede-handling-guide" },
+        { label: "A millipede that will not come up", value: "Millipedes molt underground, a buried one must not be disturbed, and a molt may take several weeks. A buried millipede is not stressed by you yet. Digging it up is how it becomes so.", source: "giant-millipede-handling-guide" },
+        { label: "Dehydration", value: "The number one cause of death in this species. Watch for a shriveled, sluggish appearance and dry, cracking segments along the body. Manageable early, raise humidity, moisten the substrate more deeply, and provide a shallow water dish.", source: "giant-millipede-health-issues-guide" },
+        { label: "A failed molt", value: "Often fatal, and caused by low humidity, poor nutrition, or disturbance during the vulnerable molting process. Never assist a molt or attempt to remove shed skin yourself, this can cause real harm.", source: "giant-millipede-health-issues-guide" },
+        { label: "Mites", value: "Not every mite is a problem, and many species living alongside a captive millipede are harmless. A heavy infestation shows up as unusually frequent cleaning behavior, thrashing, or visible mite clusters concentrated near the head or legs. Never use pesticides or mite sprays, these are toxic to millipedes and can kill the animal you're trying to help.", source: "giant-millipede-health-issues-guide" },
+        { label: "Lifespan", value: "5 to 7 years in the wild, and up to 10 years in captivity. This is remarkable longevity for an invertebrate, considerably longer than the praying mantis, jumping spider, or hissing cockroach, and worth factoring into your decision as a real, multi-year commitment.", source: "giant-millipede-cost-guide" },
+        { label: "Adult size", value: "10 to 15 inches (25 to 38 cm)." },
+        { label: "Bug spray", value: "A millipede is an arthropod and every insecticide sold for use inside a home is designed to kill arthropods. A healthy animal can be found dead the morning after an ordinary household task, a can of ant spray used in the kitchen, a plug-in device switched on in the hallway, a dog treated for fleas on the living room rug.", source: "invertebrate-pesticide-hazards-guide" },
+        { label: "First aid for the secretion", value: "Wash the affected skin thoroughly with soap and water, and for the eyes, irrigate with saline or water and then get them examined. That is the opposite of what a tarantula's urticating hairs call for, which is why one invertebrate first-aid routine does not cover them all.", source: "invertebrate-rehousing-guide" },
+        { label: "A power cut, and a trip", value: "A millipede is kept at whatever temperature the room already sits at, so a power cut is rarely the emergency it would be for a reptile or a fish tank. A full, shallow water dish refilled the morning you go, stable humidity, and a checked lid do more for a short absence than any attempt to pre-feed.", source: "invertebrate-emergency-travel-shipping-guide" },
       ],
     },
-    sections: {
-      housing: "A 20-gallon long terrarium (or equivalent) comfortably houses 2 to 3 adult North American giant millipedes (Narceus americanus) or African giant millipedes (Archispirostreptus gigas). Deep substrate (4 to 6 inches minimum) is essential as millipedes spend most of their time burrowing through and consuming it. Use a mixture of coconut fiber, organic topsoil (no fertilizers or pesticides), rotting hardwood (never pine or cedar), and leaf litter. This substrate IS their diet as well as their habitat. Temperatures of 72 to 80 degrees F are suitable for most pet species. Humidity should be high (70 to 80%) with adequate ventilation to prevent mold issues.",
-      diet: "Millipedes are detritivores: they eat decaying organic matter. Their primary diet is the substrate itself (rotting wood and leaf litter). Supplement with fresh vegetables: sweet potato, cucumber, zucchini, carrots, apple slices, and leafy greens. Rotate offerings and remove uneaten fresh food within 24 to 48 hours to prevent mold. Calcium is critical for their exoskeleton: offer cuttlebone pieces or crushed eggshell in the enclosure at all times. Avoid acidic fruits and vegetables (citrus, tomatoes).",
-      enrichment: `Millipedes are nocturnal detritivores - they spend most of their time buried in the substrate, emerging at night to graze on decaying organic matter. Cork bark slabs, flat pieces of rotting hardwood, and varied substrate layers (different textures at different depths) provide natural enrichment for burrowing. Watch them emerge in the evening and methodically traverse the enclosure.
-
-They are one of the most docile invertebrate pets and among the safest for beginners. They will walk slowly and steadily across hands and forearms, rarely making sudden moves. When threatened, they curl into a tight spiral - this is their primary defense mechanism. They may also secrete mild defensive chemicals (benzoquinones) that can temporarily stain skin a yellow-brown color. Wash hands thoroughly after handling. The stain fades within a few days.
-
-Their enrichment needs are simple: fresh substrate, fresh food, and the right conditions. They are fascinating display animals that interact with their environment in a subtle, unhurried way that is genuinely relaxing to observe.`,
-      health: "Substrate quality is the defining factor in millipede health. Poor substrate (wrong moisture level, wrong composition, lack of calcium) leads to failed molts and skeletal deformities. They molt periodically (burrowing deep to do so) and are vulnerable during this time. Never disturb a molting millipede. Common concerns include dehydration, mite infestations (treat with substrate replacement and drying one section of the enclosure), and calcium deficiency. Millipedes can live 5 to 10 years with appropriate care.",
-      checklist: [
-        "20-gallon+ enclosure with ventilation",
-        "4 to 6 inch deep substrate (coconut fiber, organic topsoil, rotting hardwood, leaf litter)",
-        "Cuttlebone or crushed eggshell (always in enclosure)",
-        "Cork bark hides",
-        "Digital thermometer and hygrometer",
-        "Fresh vegetables (sweet potato, cucumber, carrot, leafy greens)",
-        "Rotting hardwood pieces and leaf litter (replenish regularly)",
-        "Spray bottle for humidity management",
-        "Secure ventilated lid",
-        "Wash hands after handling (defensive secretions)",
+    emergencyCard: {
+      source: "giant-millipede-health-issues-guide",
+      callNow: [
+        "A shriveled, sluggish appearance and dry, cracking segments along the body",
+        "A failed or incomplete molt, often fatal: never assist a molt or attempt to remove shed skin yourself, this can cause real harm",
+        "Unusually frequent cleaning behavior, thrashing, or visible mite clusters concentrated near the head or legs",
+        "A major crack in the exoskeleton, which calls for isolating the animal in a clean, simplified hospital enclosure while it recovers",
+        "Dark lesions, which point to substrate that's swampy and poorly ventilated, worth correcting immediately",
+        "A soft, weak-feeling exoskeleton, which points to calcium deficiency",
       ],
+      vetLine: "Low humidity causes both the dehydration and failed molts that account for most serious health problems in this species. Excess wetness combined with poor airflow invites both mite overgrowth and necrotic lesions instead. And falls, entirely preventable through careful handling, cause most physical injuries. Balanced humidity, more than anything else, is the real key to this species' health.",
     },
+    routes: [
+      { slug: "giant-millipede-cost-guide", line: "$75 to $150 or more for the animal, the same again for setup, and the import rule behind the price." },
+      { slug: "giant-millipede-tank-setup-guide", line: "10 to 15 gallons as a floor, 72 to 80F, 70 to 80%, the 4 to 6 inch substrate that is also the food, and why isopods stay out." },
+      { slug: "giant-millipede-handling-guide", line: "Falls rather than bites, what the curl and the secretion mean, and when to leave a buried animal alone." },
+      { slug: "giant-millipede-health-issues-guide", line: "Dehydration, failed molts, mites, and the humidity pattern sitting underneath all three." },
+      { slug: "giant-millipede-enrichment-guide", line: "Why the substrate is the enrichment, what the tarantula housing study does and does not transfer, and the priority order." },
+      { slug: "giant-millipede-legal-guide", line: "The 2006 import ban that never happened, the permit that is real, and the states that differ." },
+    ],
+    buyList: [
+      "A 20 gallon long tank, or a 40-gallon breeder tank or tub",
+      "Pesticide-free organic topsoil and coconut fiber for a 4 to 6 inch substrate",
+      "Decaying hardwood and hardwood leaf litter, oak or beech",
+      "Cuttlebone or crushed oyster shell, left in permanently",
+      "A digital thermometer and hygrometer",
+      "A fine mist spray bottle",
+      "Cork bark and hides",
+      "A small shallow water dish with a few pebbles in it",
+      "A secure, tightly fitting lid",
+    ],
     faqs: [
-      { q: "Do millipedes actually have a thousand legs?", a: "No - despite the name (milli = thousand, pede = foot), no millipede species has exactly 1,000 legs. Most common pet species have between 40 and 400 legs. Until 2021 no species with over 750 legs had been documented. Then Eumillipes persephone, discovered 60 meters underground in Australia, was confirmed with 1,306 legs - the first true 'millipede' by the literal definition. Your Giant African Millipede almost certainly has somewhere between 200 and 400 legs." },
-      { q: "Are giant millipedes safe to handle?", a: "Yes - they are one of the most handleable invertebrate pets. They walk slowly and steadily across hands and forearms, rarely make sudden moves, and have no venom or biting mechanism. When threatened, they curl into a tight defensive spiral. Their primary defense is secreting mild benzoquinone compounds from pores along their body segments, which can temporarily stain skin a yellow-brown color and cause mild irritation. Wash hands thoroughly after handling and avoid touching your eyes. The stain fades within a few days." },
-      { q: "What do giant millipedes eat?", a: "They are detritivores - in nature they eat decaying organic matter, and in captivity their primary food is the substrate itself (rotting wood and leaf litter). Supplement with fresh soft vegetables: sweet potato, cucumber, zucchini, carrot, apple slices, and leafy greens. Calcium is essential for their exoskeleton - keep cuttlebone or crushed eggshell in the enclosure at all times. Remove fresh food within 24 to 48 hours to prevent mold. Avoid acidic fruits (citrus, tomatoes) and anything that has been treated with pesticides." },
-      { q: "How long do giant millipedes live?", a: "5 to 10 years with appropriate care, making them one of the longer-lived invertebrate pets. The key to longevity is substrate quality - millipedes continuously burrow through and ingest their substrate, so maintaining proper moisture levels, rotting hardwood content, and consistent calcium supplementation directly determines their health and lifespan. They molt periodically by burrowing deep into the substrate; never disturb a burrowed millipede that hasn't surfaced for several days, as it may be mid-molt." },
-      { q: "How important is calcium for millipedes?", a: "Critical. Millipedes are continuously rebuilding their exoskeleton and require constant dietary calcium. Without adequate calcium, their segments become soft, they fail to molt cleanly, and skeletal deformities develop over successive molts. The simplest solution is to leave a piece of cuttlebone in the enclosure at all times - millipedes will gnaw on it as needed. Crushed eggshell works as well. This single addition prevents the most common long-term health problem in captive millipedes." },
-      { q: "Are giant millipedes good pets for kids?", a: "Yes, genuinely one of the safest invertebrates to introduce a child to. They have no venom, no bite, move slowly, and tolerate gentle handling well. The only real caution is washing hands afterward, since their defensive secretions can temporarily stain skin." },
+      { q: "Why does a giant millipede cost more than other invertebrates?", a: "Imports are under a USDA embargo, prompted by concerns about a potentially damaging mite species found on imported animals, and keeping one requires a plant pest permit. So the animals for sale in the US are captive-bred or older stock instead of fresh imports. Limited supply, not care difficulty, is what pushes the price up." },
+      { q: "What size enclosure does a giant millipede need?", a: "10 to 15 gallons is the floor for one adult, though many keepers go closer to 36x18x18 inches, about a 40-gallon, or a 20-gallon long. Floor space beats height for a ground-dweller, and the lid has to fit tightly." },
+      { q: "What's the most common cause of death in giant millipedes?", a: "Dehydration. Looks shriveled and sluggish, with dry, cracking segments along the body. Insufficient humidity or substrate that isn't holding moisture is behind it, and early on it's manageable: raise humidity, moisten the substrate more deeply, and add a shallow water dish." },
     ],
   },
   {
@@ -527,40 +575,95 @@ Their enrichment needs are simple: fresh substrate, fresh food, and the right co
     image: "/assets/guides/jumping-spider.jpg",
     tagline: "The tiny, curious-eyed hunter that watches you back and needs barely any space at all!",
     funFact: "Jumping spiders have some of the best vision of any arthropod, with four pairs of eyes giving them nearly 360-degree awareness and sharp enough focus to visually track and judge the distance of prey before pouncing - hence the name. Many keepers report their jumping spider appearing to watch and turn to follow movement outside the enclosure, genuinely interactive behavior that's unusual for an invertebrate.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "Small tall enclosure (5x5x8 in or similar)", low: 15, high: 30 },
-        { item: "Climbing branches and cork bark (miniature)", low: 10, high: 20 },
-        { item: "Feeding tongs (fine-tip precision)", low: 8, high: 15 },
-      ],
-      annual: [
-        { item: "Live feeder insects (crickets, fruit flies)", low: 20, high: 40 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Molting, pesticides, rehousing and the travel and
+    // outage plan cite the shared invertebrate guides in the sidebar's Health
+    // and More list. Reconciled 2026-09-15 after the jumping spider set test
+    // (docs/READER_REVIEWS.md).
+    //
+    // The old hub disagreed with a deep dive on almost every number a buyer
+    // would write down, which is how the reader put it: enclosure 5x5x8 inches
+    // against the setup guide's 4x4x7 minimum and 8 to 10 inches tall;
+    // enclosure price $15 to $30 against the cost guide's $60 to $70;
+    // feeder insects $20 to $40 a year against $5 to $15 a month; lifespan 1
+    // to 2 years against 1 to 3; temperature 70 to 80F against 72 to 82F;
+    // misting "every day or two" against every 2 to 3 days; and "remove
+    // anything uneaten after a day" against pulling live prey within a few
+    // hours to overnight. None of those figures moved up here; each row now
+    // copies the article that owns it.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "The spider", value: "$15 to $60. Captive-bred spiderlings run $15 to $25. Juvenile or sub-adult females, generally more prized than males since they live considerably longer, run $25 to $60. Named regional color forms cost more than standard animals.", source: "jumping-spider-cost-guide" },
+        { label: "Setup budget", value: "Roughly $112 to $150, and the enclosure is most of it at $60 to $70. Coconut fiber substrate, mini cork bark or artificial plants, a fine mist spray bottle and a digital hygrometer make up the rest.", source: "jumping-spider-cost-guide" },
+        { label: "Ongoing costs", value: "Roughly $5 to $15 a month. Feeder insects make up nearly the entire monthly cost.", source: "jumping-spider-cost-guide" },
+        { label: "Vet costs", value: "Effectively none. Exotic vets rarely treat spiders, and the large majority of health issues in this species trace back to the enclosure environment rather than anything requiring professional treatment.", source: "jumping-spider-cost-guide" },
+        { label: "Lifespan", value: "Males typically live 8 to 12 months after reaching maturity, while females live longer, 1.5 to 3 years. A realistic overall range to expect is 1 to 3 years.", source: "jumping-spider-cost-guide" },
+        { label: "Adult size", value: "0.5 to 0.75 inches (1.3 to 1.9 cm), females larger than males." },
+        { label: "Enclosure size", value: "A minimum of about 4 by 4 by 7 inches, vertically oriented, works for an adult, and something closer to 8 to 10 inches tall gives more genuine climbing room. This is an arboreal species, up and down space matters more than floor area.", source: "jumping-spider-tank-setup-guide" },
+        { label: "One per enclosure", value: "Use a front-opening design with cross-ventilation, and house one spider per enclosure, they're cannibalistic toward each other.", source: "jumping-spider-tank-setup-guide" },
+        { label: "Temperature", value: "72 to 82°F suits this species well, and normal room temperature is usually fine without any supplemental heat at all. If your space runs consistently below about 70°F, a thermostat-controlled heat mat on the side wall works, but never place heat under the substrate, and never run one without a thermostat.", source: "jumping-spider-tank-setup-guide" },
+        { label: "Humidity", value: "Target 50 to 60% for Phidippus species like the regal jumping spider, tropical genera need more. Mist one corner of the enclosure every 2 to 3 days with dechlorinated water, and aim to leave drinkable droplets rather than soaking everything. Good ventilation matters here too, humidity without airflow invites mold.", source: "jumping-spider-tank-setup-guide" },
+        { label: "Substrate", value: "Coconut fiber, or a coconut fiber and sphagnum moss blend, about an inch or two deep, helps buffer humidity swings between mistings. Avoid sand or vermiculite, and skip using bare paper towel as a long-term substrate, it doesn't hold moisture well enough.", source: "jumping-spider-tank-setup-guide" },
+        { label: "Lighting", value: "This species is diurnal and genuinely relies on vision to hunt, so provide bright ambient light on a normal 12-hour day and night cycle. UVB is not required for this species.", source: "jumping-spider-tank-setup-guide" },
+        { label: "Where the door goes", value: "Jumping spiders build their silk retreat near the top of the enclosure, so it's worth positioning your access opening lower or to the side.", source: "jumping-spider-tank-setup-guide" },
+        { label: "Feeding, by life stage", value: "Spiderlings every 1 to 2 days on 1 to 2 flightless fruit flies. Small to mid juveniles every 2 to 3 days. Sub-adults every 2 to 4 days. Adults every 2 to 5 days, with the abdomen deciding where in that window a given spider sits.", source: "jumping-spider-feeding-guide" },
+        { label: "The abdomen is the gauge", value: "A shrunken or wrinkled abdomen means it's hungry and can be fed early. A plump, rounded abdomen noticeably wider than the cephalothorax means skip the next feeding. Feed in the morning, jumping spiders are visual daytime hunters, and pull uneaten live prey within a few hours to overnight so it doesn't harass or injure the spider, especially near a molt.", source: "jumping-spider-feeding-guide" },
+        { label: "What they eat", value: "An obligate carnivore, no plant matter and no commercial spider food. Flightless fruit flies are the staple for slings and small juveniles. Pinhead-to-small crickets, houseflies, and bluebottle or greenbottle flies work for juveniles through adults, flies in particular are a preferred, low-injury-risk staple since they can't bite back or burrow.", source: "jumping-spider-feeding-guide" },
+        { label: "Prey size", value: "Keep prey noticeably smaller than the spider, roughly no bigger than the abdomen, matched to the size of the chelicerae. Oversized prey is the most repeated safety warning here, a cricket that's too big can injure or kill a jumping spider, especially near a molt.", source: "jumping-spider-feeding-guide" },
+        { label: "Never feed", value: "Ants, repeatedly named as the single most important thing to avoid, they can bite or spray formic acid, and jumping spiders show an instinctive fear response to them. Hard-shelled beetles and pill bugs, too tough to bite through effectively. Fireflies. Other spiders, a real cannibalism and injury risk. Wild-caught or unknown insects, especially anything from an area treated with pesticides.", source: "jumping-spider-feeding-guide" },
+        { label: "Supplements", value: "Spiders can't be dusted with supplement powder, which makes what the feeders ate the only nutrition that reaches them, so gut-loading the feeders is the whole supplement routine.", source: "jumping-spider-feeding-guide" },
+        { label: "Water", value: "A shallow water dish, plus the drinking droplets the misting leaves on the walls. Never mist the spider's abdomen directly, water can seep between the book-lung plates and cause suffocation.", source: "jumping-spider-feeding-guide" },
+        { label: "A spider that stops eating", value: "Usually premolt fasting, which commonly starts days to weeks before shedding. After a molt, new fangs are soft and can't safely bite or digest prey, so wait about 2 to 3 days before offering food again. A healthy adult can safely go roughly 2 to 3 weeks without eating. Spiderlings have much smaller reserves and shouldn't be left that long.", source: "jumping-spider-feeding-guide" },
+        { label: "Dehydration", value: "The single most common problem, and honestly the leading cause of death in captive jumping spiders. Watch for curled legs and general lethargy. It's caused by humidity running too low or an absence of drinkable water droplets.", source: "jumping-spider-health-issues-guide" },
+        { label: "Retained molt", value: "A spider that gets stuck in its old exoskeleton during a molt can lose limbs or die. This is caused by insufficient humidity in the lead-up to molting. Once a molt has genuinely failed, there's little that can be done. Never feed or disturb a spider that's in or approaching a molt.", source: "jumping-spider-health-issues-guide" },
+        { label: "Heat", value: "Heat stress comes from direct sunlight or an unregulated heat mat, and it's manageable by correcting placement and always running supplemental heat through a thermostat if you use it at all.", source: "jumping-spider-health-issues-guide" },
+        { label: "Handling", value: "Minimal handling is the right approach. If you do handle one, let it walk freely onto and off your hand instead of grabbing or restraining it, they're genuinely fragile, and a fall, even a short one, can rupture the abdomen and prove fatal. Always handle low, over a soft surface.", source: "jumping-spider-handling-guide" },
+        { label: "What enrichment means here", value: "A jumping spider navigates by sight in a way almost no other invertebrate does, and a bare acrylic cube gives those eyes nothing. Vary the surfaces, depths and textures inside the enclosure: cork bark mini flats, small branches, and artificial or live foliage create the layered, three-dimensional space a salticid actually reads.", source: "jumping-spider-enrichment-guide" },
+        { label: "They know who you are", value: "A 2024 paper in eLife documents individual recognition in Phidippus regius. Interaction with human caretakers during handling and maintenance is mentioned in the salticid literature as a form of behavioral enrichment, so keep it brief, low to a soft surface, and never over a hard floor.", source: "jumping-spider-enrichment-guide" },
+        { label: "Molting", value: "Reduced activity, retreating to a silk hammock retreat, and refusing food are the pre-molt signs, and the molt itself takes under an hour, often overnight. Never disturb a molting invertebrate, which means no handling a jumping spider tucked into its silk retreat: the new exoskeleton is soft and vulnerable for hours to days after emerging.", source: "invertebrate-molting-guide" },
+        { label: "Bug spray", value: "A spider is an arthropod and every insecticide sold for use inside a home is designed to kill arthropods. A healthy, well-fed pet spider can be found dead in its enclosure the morning after an ordinary household task, a can of ant spray used in the kitchen, a plug-in device switched on in the hallway, a dog treated for fleas on the living room rug.", source: "invertebrate-pesticide-hazards-guide" },
+        { label: "Rehousing", value: "The catch cup and card method, worked low over a larger tub so a bolt or a fall goes nowhere, and never during a molt.", source: "invertebrate-rehousing-guide" },
+        { label: "A power cut, and a trip", value: "A jumping spider lives at whatever temperature the room already sits at, so a power cut is rarely the emergency it would be for a reptile or a fish tank. A full, shallow water dish refilled the morning you go, stable humidity, and a checked lid do more for a short absence than any attempt to pre-feed.", source: "invertebrate-emergency-travel-shipping-guide" },
       ],
     },
-    sections: {
-      housing: "A small enclosure is not just acceptable but preferred - something around 5x5x8 inches works well for one adult regal jumping spider (Phidippus regius), the most common pet species. Taller than wide is ideal since jumping spiders climb constantly. Ventilation is essential, via a mesh top or side vents, since stagnant air causes health problems. Furnish with climbing branches, cork bark, and artificial plants, which jumping spiders use both for exploring and for building silk hammock retreats where they sleep and molt. Light misting every day or two maintains humidity and gives them water droplets to drink. Room temperature of 70 to 80 degrees F is fine without any supplemental heating in most homes.",
-      diet: "Jumping spiders eat live prey exclusively. Appropriately sized crickets, flightless fruit flies (ideal for juveniles), and small roaches work well, sized no larger than the spider's body. Offer prey 2 to 3 times a week and remove anything uneaten after a day. Unlike web-building spiders, jumping spiders are active visual hunters that stalk and pounce on prey rather than waiting passively - watching this hunting behavior is one of the most rewarding parts of keeping the species.",
-      enrichment: "Jumping spiders are unusually curious and visually engaged with their surroundings for an invertebrate, often turning to track movement and appearing to observe their keeper. Climbing branches and varied décor support their naturally exploratory behavior. Some keepers offer brief, supervised free-roam time in a small, secure, escape-proof space. Handling should stay minimal - they're delicate and can jump or fall - though many individuals are calm enough to gently walk onto an open hand for a short supervised moment.",
-      health: "Molting is the most vulnerable period in a jumping spider's life, just as it is for tarantulas - never disturb a molting spider, and avoid offering live prey right before or after a molt. Dehydration is preventable with regular light misting and a small water source. A short natural lifespan of only 1 to 2 years is completely normal for this species and not a sign of poor care. Mite issues are uncommon but possible in an unclean enclosure, so remove uneaten prey and old webbing periodically.",
-      checklist: [
-        "Small, tall enclosure (5x5x8 inches or similar)",
-        "Ventilated, secure lid",
-        "Climbing branches and cork bark",
-        "Light misting for humidity and drinking water",
-        "Small live prey (crickets, flightless fruit flies)",
-        "Room temperature 70-80°F (no heating needed)",
-        "Feeding tongs",
-        "Patience - they're an observation pet, not a handling pet",
+    emergencyCard: {
+      source: "jumping-spider-feeding-guide",
+      callNow: [
+        "Food refusal running well past two weeks with no molt ever occurring",
+        "No interest in food for a week or more after a molt has already completed",
+        "A visibly shrunken or wrinkled abdomen, especially paired with lethargy",
+        "Legs curling inward, or an inability to right itself if flipped",
+        "Visible injury or fluid leakage",
+        "A failed or stuck molt, a spider partially out of its old exoskeleton with no progress for several hours",
       ],
+      vetLine: "None of this is veterinary-established, it is hobbyist-reported. A healthy adult can safely go roughly 2 to 3 weeks without eating, and older adults are anecdotally reported tolerating a month or more, particularly around a molt or egg-guarding, none of that alone is cause for alarm. The last few of these are treated as urgent, warranting an exotic-animal vet rather than a wait-and-see approach.",
     },
+    routes: [
+      { slug: "jumping-spider-cost-guide", line: "$15 to $60 for the spider, $112 to $150 for setup, and why the short lifespan is the real cost." },
+      { slug: "jumping-spider-tank-setup-guide", line: "4x4x7 inches as a floor, 72 to 82F, 50 to 60%, and why the door belongs low." },
+      { slug: "jumping-spider-feeding-guide", line: "A schedule by life stage, the never-feed list with ants at the top, and how to read a spider that has stopped eating." },
+      { slug: "jumping-spider-handling-guide", line: "Why a visual hunter behaves differently in your hand, and why the fall is the risk." },
+      { slug: "jumping-spider-health-issues-guide", line: "Dehydration, retained molts, silk impaction, and the humidity underneath all three." },
+      { slug: "jumping-spider-enrichment-guide", line: "The cognition literature on this species, and what it actually asks you to put in the enclosure." },
+    ],
+    buyList: [
+      "A small vertical, front-opening enclosure, 4x4x7 inches at the least and taller if you can",
+      "Coconut fiber, or a coconut fiber and sphagnum moss blend",
+      "Mini cork bark flats, small branches, and artificial or live foliage",
+      "A fine mist spray bottle and dechlorinated water",
+      "A digital hygrometer",
+      "A shallow water dish",
+      "A flightless fruit fly culture for a sling, small crickets or flies for an adult",
+      "A thermostat, if and only if the room needs supplemental heat",
+    ],
     faqs: [
-      { q: "Are jumping spiders dangerous?", a: "No. Jumping spiders have very mild venom meant for tiny insect prey, are extremely reluctant to bite, and are essentially harmless to humans. A bite, in the rare event one happens, is typically compared to a mosquito bite at most." },
-      { q: "How long do jumping spiders live?", a: "1 to 2 years is typical for most pet species, sometimes slightly longer for well-cared-for females. This short natural lifespan is completely normal for the species and isn't a sign that something went wrong." },
-      { q: "Can you handle a jumping spider?", a: "Gently and briefly. They aren't a cuddly pet and can jump or fall unexpectedly, but many individuals are calm enough to walk onto an open hand for a short, supervised moment. Regular or prolonged handling isn't recommended." },
-      { q: "What do jumping spiders eat?", a: "Live prey only - appropriately sized crickets, flightless fruit flies, and small roaches, offered 2 to 3 times a week and sized no larger than the spider's body." },
-      { q: "Do jumping spiders need a big enclosure?", a: "No - quite the opposite. Jumping spiders generally do better in smaller enclosures, where locating prey is easier and the space feels less overwhelming. Height matters more than footprint, since they spend most of their time climbing." },
-      { q: "Are jumping spiders good pets for beginners?", a: "Yes, one of the more approachable invertebrates to start with. They need very little space, are essentially harmless to humans, and their curious, visually engaged behavior makes them genuinely interesting to observe, this isn't a handling pet, but it's a low-cost, low-commitment way to get into invertebrate keeping." },
+      { q: "What size enclosure does a jumping spider need?", a: "About 4 by 4 by 7 inches, oriented vertically, is the minimum for an adult, and 8 to 10 inches tall gives real climbing room. Arboreal species: height counts for more than floor." },
+      { q: "How often should I feed my jumping spider?", a: "It depends on life stage and varies a fair amount even among adults: spiderlings eat every 1 to 2 days, tapering to roughly every 2 to 5 days by adulthood. The guide is the abdomen, shrunken or wrinkled means feed, plump and noticeably wider than the cephalothorax means skip the next meal." },
+      { q: "What should I never feed a jumping spider?", a: "Ants, above all: jumping spiders show an instinctive fear response to them, and an ant can bite or spray formic acid. Also unsafe are hard-shelled beetles, pill bugs, fireflies, and any prey larger than the spider's own body." },
     ],
   },
   {
@@ -572,61 +675,102 @@ Their enrichment needs are simple: fresh substrate, fresh food, and the right co
     image: "/assets/guides/hissing-cockroach.jpg",
     tagline: "Calm, armored, surprisingly clean - and yes, it hisses!",
     funFact: "Madagascar hissing cockroaches are one of the few insect species where the father plays an active role in rearing offspring. Males guard and protect the female and young after birth, and juveniles stay with the family group for weeks.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "10-gallon terrarium with secure lid", low: 30, high: 60 },
-        { item: "Coconut fiber or bark chip substrate", low: 15, high: 25 },
-        { item: "Cork bark tubes or egg cartons", low: 10, high: 20 },
-        { item: "Shallow water dish with sponge insert", low: 5, high: 10 },
-        { item: "Digital thermometer", low: 10, high: 15 },
-      ],
-      annual: [
-        { item: "Fresh fruits, vegetables, and dry kibble", low: 30, high: 60 },
-        { item: "Substrate replacement", low: 15, high: 25 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Pesticides, rehousing and the travel and outage plan
+    // cite the shared invertebrate guides in the sidebar's Health and More
+    // list. Reconciled 2026-09-15 after the hissing cockroach set test
+    // (docs/READER_REVIEWS.md).
+    //
+    // What the old hub had wrong, in the reader's order: humidity 50 to 70%
+    // against the setup and health guides' 60 to 70%; "temperatures of 75 to
+    // 90 degrees F are ideal" running into the 85 to 95F breeding trigger it
+    // never mentioned; a Housing section calling smooth sides 10 to 12 inches
+    // tall enough to prevent escape and the jelly barrier "a secondary
+    // escape-proofing method some keepers use", where the setup guide says a
+    // secure lid alone isn't enough and its own FAQ said they scale glass; a
+    // setup table totalling $70 to $130 before the animal against the cost
+    // guide's $40 to $100 including it; "completely harmless to humans"
+    // against the handling guide's leg spines and Salmonella; maturity at 5 to
+    // 7 months against the feeding guide's molt count; a protein supplement
+    // line against the feeding guide's "hissers are naturally
+    // protein-sparing"; and a permanent cuttlebone the feeding guide never
+    // mentions at all. None of those figures moved up here.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "The animal", value: "$3 to $65. Individual nymphs run around $3 each. A breeding pair runs about $24, and a starter colony of 25 runs around $65. Because this same species is also sold widely as a feeder insect for reptiles, availability and pricing stay consistently low across most sources.", source: "madagascar-hissing-cockroach-cost-guide" },
+        { label: "Setup budget", value: "Roughly $40 to $100, animal included. A tank or plastic tub in the 5 to 20 gallon range with a secure, screened lid is the enclosure baseline, paired with coconut fiber substrate, a hide or two, and a water dish.", source: "madagascar-hissing-cockroach-cost-guide" },
+        { label: "Ongoing costs", value: "A few dollars a month. Fresh vegetables and fruit, occasional commercial roach or dog food, and modest substrate replacement make up the entire monthly cost.", source: "madagascar-hissing-cockroach-cost-guide" },
+        { label: "Vet costs", value: "Effectively none. Invertebrates are rarely taken to a vet, and very few vets treat them at all. Care here is entirely husbandry-based, correct humidity and substrate do all the real work.", source: "madagascar-hissing-cockroach-cost-guide" },
+        { label: "Lifespan", value: "2 to 5 years is the typical range, most commonly 2 to 3, with 4 to 5 achievable under excellent care.", source: "madagascar-hissing-cockroach-cost-guide" },
+        { label: "Adult size", value: "2 to 4 inches (5 to 10 cm)." },
+        { label: "Enclosure size", value: "A 5-gallon tank works as a minimum for a small group. A 10-20+ gallon tank or plastic tub suits a larger colony better, floor space matters more here than height for this ground-dwelling species.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
+        { label: "Not one on its own", value: "They are gregarious, they cluster, and the welfare research that exists is on groups. A single hissing cockroach is neither how the species lives nor how it has been studied.", source: "madagascar-hissing-cockroach-enrichment-guide" },
+        { label: "Temperature", value: "75 to 85°F for general pet-keeping, room temperature above about 70°F is genuinely fine if you're not actively trying to breed them. Breeding specifically gets triggered around 85 to 95°F, worth knowing if you want to avoid an accidental population boom.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
+        { label: "Humidity", value: "60 to 70%, maintained through daily misting and a substrate that holds moisture well. A simple humidity chamber, a small container with a damp sponge inside the main enclosure, works well too, a technique used by professional insect-keeping programs.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
+        { label: "Substrate", value: "Coconut fiber, peat moss, or orchid bark, 2 to 3 inches deep, supports this species' semi-burrowing habits well. Provide egg-crate stacks or cork bark as hides, they'll use these constantly.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
+        { label: "The escape barrier", value: "This is the detail that matters most for a successful setup. Madagascar hissing cockroaches are excellent climbers, capable of scaling smooth glass with ease. Smear a band of plain petroleum jelly around the top 2 to 3 inches of the enclosure interior, combined with a secure, tight-fitting lid, and escapes become a non-issue. Skip this step, and you'll likely find roaches outside the enclosure sooner or later.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
+        { label: "Lighting", value: "None needed. This species is nocturnal and photophobic, genuinely prefers darkness, and doesn't require any special lighting setup at all.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
+        { label: "Male or female", value: "Males carry a pair of large bumps, the pronotal horns, behind the head, and those structures are much smaller in females. Males also grow larger. Worth knowing before you buy, since a mixed-sex group breeds and a same-sex group does not.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
+        { label: "Feeding", value: "Keep a dry protein source available, high-quality dry dog food, cat food, or a commercial roach chow, and top it up with fresh produce 2 to 3 times a week in a quantity the colony finishes within 24 to 48 hours so leftovers don't mold. A small pet colony can be kept at the lighter end of that, dry food about once a week with fruit every couple of weeks.", source: "madagascar-hissing-cockroach-feeding-guide" },
+        { label: "What they eat", value: "High-quality dry dog food is the most consistently recommended staple. Offer fresh produce a few times a week: romaine lettuce and other dark leafy greens, dandelion greens, carrots, squash, sweet potato, apples, bananas, oranges, and grapes. Their wild diet is decaying plant matter and fallen, overripe fruit, so captive feeding is built to approximate that rather than something meat-heavy.", source: "madagascar-hissing-cockroach-feeding-guide" },
+        { label: "Not a protein-heavy diet", value: "Skip diets that are too protein-heavy, hissers are naturally protein-sparing and don't need a meat- or pellet-heavy feed the way some other insects do. Use caution with iceberg lettuce, nutritionally much weaker than romaine, and with any produce treated with pesticides.", source: "madagascar-hissing-cockroach-feeding-guide" },
+        { label: "Water", value: "A water source that can't drown a roach: a cotton ball or sponge saturated with water in a shallow dish, or a commercial water gel, changed regularly, since an open dish poses a real drowning risk to small nymphs.", source: "madagascar-hissing-cockroach-feeding-guide" },
+        { label: "Why it looks like nothing is eating", value: "Hissers are light-averse and most active after dark, so feeding is often genuinely happening overnight even when it looks like nothing's being eaten.", source: "madagascar-hissing-cockroach-feeding-guide" },
+        { label: "Growing up", value: "Nymphs go through about six molts over roughly six to seven months to reach adulthood, and commonly go quiet and eat less beforehand. They need elevated humidity during this window to shed successfully.", source: "madagascar-hissing-cockroach-feeding-guide" },
+        { label: "Handling", value: "Docile for an insect, more so than most people expect, but this is fundamentally a display and observation pet, not a handling-focused one. Pick one up gently around the thorax, or let it walk from hand to hand instead of gripping it. Never jerk or pull, their sticky foot pads and leg hooks grip surfaces tightly, and pulling against that grip can genuinely injure the insect.", source: "madagascar-hissing-cockroach-handling-guide" },
+        { label: "They are not entirely harmless", value: "Their sharp leg spines are a real defensive feature, and can scratch or draw a small amount of blood if the roach is held down or restrained against its will. Wash your hands before and after handling: they can carry Salmonella like most reptiles and invertebrates.", source: "madagascar-hissing-cockroach-handling-guide" },
+        { label: "Reading the hiss", value: "A weak stimulus may produce a single hiss, while a strong one may cause a long series of hisses as the animal flees. A roach that hisses once when you lift the lid is noting you. One that hisses in a run and bolts for the substrate is telling you the approach was too fast or too much. A roach that freezes flat when touched is at least as stressed as one that hisses.", source: "madagascar-hissing-cockroach-handling-guide" },
+        { label: "Desiccation", value: "Low humidity causes real problems with molting and can lead to death if left uncorrected. The fix is straightforward, maintain 60 to 70% humidity through regular misting and a moisture-holding coconut fiber substrate.", source: "madagascar-hissing-cockroach-health-issues-guide" },
+        { label: "A fresh molt", value: "A freshly molted cockroach is soft and pale white for several hours after shedding its exoskeleton, and genuinely vulnerable during that window. Never handle a roach during or immediately after a molt. Overcrowding and low humidity both make molting problems more likely.", source: "madagascar-hissing-cockroach-health-issues-guide" },
+        { label: "Mold and mites", value: "From uneaten wet food combined with poor ventilation, this can genuinely devastate a colony if it takes hold. Remove any uneaten fresh food within 24 to 48 hours, ensure the enclosure has adequate airflow, and do a deeper clean periodically rather than only when a problem appears.", source: "madagascar-hissing-cockroach-health-issues-guide" },
+        { label: "Heat mats", value: "A heat mat used without a thermostat is a real risk, capable of overheating the roaches or even melting a plastic tub enclosure. If you're using supplemental heat, mainly relevant for breeding rather than casual pet-keeping, always run it through a thermostat.", source: "madagascar-hissing-cockroach-health-issues-guide" },
+        { label: "Legal, before you buy", value: "Four jurisdictions bar them: New Hampshire, Montana, Hawaii and the District of Columbia. Florida requires an agriculture permit rather than a wildlife one. Oregon attaches conditions. Three more, New Mexico, New Jersey and Idaho, have rules that could reach insects but never say whether they do.", source: "madagascar-hissing-cockroach-legal-guide" },
+        { label: "Bug spray", value: "A hissing cockroach is an arthropod and every insecticide sold for use inside a home is designed to kill arthropods. A healthy animal can be found dead the morning after an ordinary household task, a can of ant spray used in the kitchen, a plug-in device switched on in the hallway, a dog treated for fleas on the living room rug.", source: "invertebrate-pesticide-hazards-guide" },
+        { label: "A power cut, and a trip", value: "Hissers live at whatever temperature the room already sits at, so a power cut is rarely the emergency it would be for a reptile or a fish tank. A full, shallow water dish refilled the morning you go, stable humidity, and a checked lid do more for a short absence than any attempt to pre-feed.", source: "invertebrate-emergency-travel-shipping-guide" },
       ],
     },
-    sections: {
-      housing: `A 10-gallon terrarium with a tight, secure lid is a reasonable starting point for a small colony of 10 to 20 individuals. For larger colonies (which they become quickly), upgrade to a 20-gallon or larger rubbermaid-style container with a ventilated lid. Madagascar hissing cockroaches are exceptional climbers on rough surfaces - any textured wall, wood, or mesh can be scaled. Smooth glass or smooth plastic sides at least 10 to 12 inches tall will prevent escape. Petroleum jelly applied near the top edge (a "barrier" band) is a secondary escape-proofing method some keepers use.
-
-Use coconut fiber or bark chip substrate 2 to 3 inches deep. Add cork bark tubes, egg carton sections stacked vertically, or cardboard tubes - these create the dense, structured hides this social species prefers. They pile together in these structures during the day and emerge at night.
-
-Temperatures of 75 to 90 degrees F are ideal. Ambient room temperature above 70 degrees F usually suffices without supplemental heating. Moderate humidity of 50 to 70% is appropriate. Avoid overly wet conditions, which encourage mold.`,
-      diet: `Madagascar hissing cockroaches are detritivores that are not picky. The core of their diet is fresh fruits and vegetables: apple slices, banana, carrot, sweet potato, leafy greens (collard greens, romaine), and cucumber are all accepted eagerly. Rotate offerings to provide variety.
-
-Supplement with a protein source: dry dog or cat kibble (grain-free or basic formulation) provides the amino acids needed for healthy molting and breeding. Oatmeal, dry whole-grain cereal, and bran are also accepted as carbohydrate supplementation.
-
-Remove all fresh food within 24 to 48 hours before mold develops. Provide cuttlebone or crushed eggshell pieces constantly - calcium is critical for successful molting in cockroaches as in all invertebrates. Fresh water must be available at all times, but use a shallow dish with a sponge, cotton ball, or pebbles inside to prevent smaller individuals from drowning.`,
-      enrichment: `Madagascar hissing cockroaches are social, colony-living animals - their primary enrichment comes from appropriate group dynamics. They maintain a social hierarchy, with males competing for dominance through physical pushing contests and the remarkable hissing displays. Watching these contests is genuinely fascinating. Males hiss aggressively during territorial and mating encounters; both sexes produce a startle hiss when suddenly disturbed.
-
-They are completely harmless to humans: they do not bite, they have no venom, and they do not sting. They are one of the best invertebrate species for children and beginners due to their large size, slow movement, predictable behavior, and tolerance of handling. Allow them to walk across open palms - they are unhurried and easy to manage.
-
-Cork bark tubes, stacked egg carton sections, and cardboard tubes give the colony the dense social spaces they seek naturally. This is especially important for juveniles and molting adults, who need secure, enclosed spaces to complete their molts safely. A well-furnished enclosure with adequate hiding space dramatically reduces molting failures.`,
-      health: `Madagascar hissing cockroaches are exceptionally hardy with few health problems when kept in appropriate conditions. The most common issues are all avoidable: overcrowding (which causes stress, increased male aggression, and premature deaths), failed molts from insufficient humidity or inadequate hides, and mite infestations from a too-wet substrate.
-
-Mites show as tiny white or brown specks visible on the cockroaches or moving through the substrate. Treat by removing all cockroaches, discarding the old substrate completely, cleaning and drying the enclosure, and starting fresh. Increase ventilation and allow the substrate to dry slightly between mistings.
-
-Escaped cockroaches are the most serious concern for many keepers: check the lid and escape barrier routinely. Males fight - in overcrowded conditions with too few hides, subordinate males can be killed. Provide enough structure that all individuals can find secure shelter simultaneously. This species can live 2 to 5 years, and colonies grow rapidly once established.`,
-      checklist: [
-        "10-gallon terrarium with secure, tight lid",
-        "Coconut fiber or bark chip substrate",
-        "Cork bark tubes or egg carton for hiding",
-        "Fresh fruits, vegetables, and dry kibble",
-        "Cuttlebone or crushed eggshell for calcium",
-        "Shallow water dish with sponge insert",
-        "Digital thermometer",
-        "Moderate humidity (50 to 70%)",
-        "Spray bottle for misting",
-        "Secure lid (excellent climbers)",
+    emergencyCard: {
+      source: "madagascar-hissing-cockroach-feeding-guide",
+      callNow: [
+        "Inactivity, or lying in one place",
+        "Failure to hiss when handled",
+        "Lethargy beyond normal pre-molt sluggishness",
+        "A dull-looking exoskeleton",
+        "Visible weight loss",
+        "Discharge from the mouth or eyes",
+        "Visible sores",
+        "Abnormal feces",
       ],
+      vetLine: "A visibly sick hisser is reported to commonly survive only about 2 to 3 days once symptoms are obvious, which argues for acting quickly, checking temperature and humidity and consulting an exotics-experienced vet, rather than waiting once multiple symptoms stack up.",
     },
+    routes: [
+      { slug: "madagascar-hissing-cockroach-cost-guide", line: "$3 a nymph, $24 a pair, $65 a colony of 25, and a setup total under $100 with the animal in it." },
+      { slug: "madagascar-hissing-cockroach-tank-setup-guide", line: "5 gallons as a floor, 75 to 85F, 60 to 70%, and the petroleum jelly band that does the real escape prevention." },
+      { slug: "madagascar-hissing-cockroach-feeding-guide", line: "Dry dog food as the staple, produce two or three times a week, and why it looks like nothing is eating." },
+      { slug: "madagascar-hissing-cockroach-handling-guide", line: "How the hiss is actually produced, what a graded hiss is telling you, and why pulling against the grip injures them." },
+      { slug: "madagascar-hissing-cockroach-health-issues-guide", line: "Desiccation, molting complications, mold and mites, and why prevention does almost all the work." },
+      { slug: "madagascar-hissing-cockroach-enrichment-guide", line: "The 2023 welfare framework built for group-housed Gromphadorhina, and what it asks of a colony enclosure." },
+      { slug: "madagascar-hissing-cockroach-legal-guide", line: "Four jurisdictions that bar them, the Florida permit filed under agriculture, and three states that never say." },
+    ],
+    buyList: [
+      "A 5 gallon tank as a floor, 10 to 20+ gallons for a colony, with a secure screened lid",
+      "Plain petroleum jelly for the escape barrier",
+      "Coconut fiber, peat moss or orchid bark substrate",
+      "Egg-crate stacks or cork bark hides",
+      "Leaf litter and pieces of rotting wood",
+      "A shallow dish with a cotton ball or sponge, or a commercial water gel",
+      "High-quality dry dog food or commercial roach chow",
+      "A spray bottle for misting",
+      "A thermostat, only if you are running supplemental heat to breed",
+    ],
     faqs: [
-      { q: "Why do Madagascar hissing cockroaches hiss?", a: "By forcing air through modified abdominal spiracles (breathing openings). Unlike most insect sounds produced by wing-rubbing or leg-rubbing, the hiss is produced by expelling air - a unique mechanism in the insect world. Males use a distinctive multi-hiss pattern during dominance contests with other males, and a different pattern during mating. Both males and females produce a single sharp startle hiss when suddenly disturbed by a predator (or a surprised keeper). The sound is much louder than you would expect from an insect." },
-      { q: "Are Madagascar hissing cockroaches safe to handle?", a: "Yes - they are one of the best invertebrate options for beginners, particularly children, because they have no bite, no sting, no venom, and no urticating hairs. They move slowly and predictably, are large enough to observe and handle comfortably, and are very tolerant of gentle handling. They may hiss when first picked up (startle hiss) and may grip with strong tarsal claws, but they cannot harm you. Wash hands before and after handling. Their size - up to 3 inches - makes them significantly easier to handle than smaller invertebrates." },
-      { q: "What do hissing cockroaches eat?", a: "Fresh fruits and vegetables form the core of their diet: apple, banana, carrot, sweet potato, leafy greens, and cucumber are all eagerly accepted. Supplement with protein: dry dog or cat kibble, dried cat food, or mealworm powder provides the amino acids needed for healthy molting and breeding. Calcium from cuttlebone or crushed eggshell must be available at all times for successful molting. Fresh water must always be accessible in a shallow dish with pebbles or a sponge insert to prevent drowning. Remove fresh food within 24 to 48 hours to prevent mold." },
-      { q: "How do I stop hissing cockroaches from escaping?", a: "Their climbing ability on textured surfaces is remarkable - they can scale glass, most plastics, and any rough surface. Smooth glass or smooth plastic walls at least 10 to 12 inches tall are the primary barrier for most housing. A secondary layer is a 2 to 3 inch band of petroleum jelly applied near the top interior edge of the enclosure - cockroaches will not cross this. The most critical point is the lid: a lid that doesn't seal completely against the sides is the number-one escape vector. Inspect the seal regularly, especially if the population is growing." },
-      { q: "How fast do hissing cockroach colonies grow?", a: "Very fast. Females are ovoviviparous - they carry the egg case internally and give birth to 20 to 60 live nymphs per clutch, with nymphs reaching sexual maturity in 5 to 7 months. A small starting group of mixed males and females can produce hundreds of individuals within a year. If you don't want a colony, keep only same-sex groups. Many keepers intentionally maintain large colonies because hissers make excellent feeder insects for reptiles and amphibians, making them doubly useful in a multi-pet household." },
-      { q: "Are Madagascar hissing cockroaches good pets for kids?", a: "Yes, they're one of the better invertebrate choices for children specifically. No bite, no sting, no venom, slow and predictable movement, and a size that's easy to see and handle without being intimidating. The hiss startles people the first time, but it's harmless, and kids tend to find it more fascinating than scary." },
+      { q: "How much does a Madagascar hissing cockroach cost?", a: "Around $3 for an individual nymph, about $24 for a breeding pair, and around $65 for a starter colony of 25. This species doubles as a feeder insect for reptiles, which keeps pricing low and consistent across most sources." },
+      { q: "What temperature and humidity does this species need?", a: "75 to 85°F for general pet-keeping, room temperature above about 70°F is fine if you're not actively breeding. Breeding gets triggered around 85 to 95°F. Humidity should stay at 60 to 70%, maintained through daily misting and moisture-holding substrate." },
+      { q: "What's the most common health problem in pet Madagascar hissing cockroaches?", a: "Desiccation. Low humidity causes real problems with molting and can lead to death if left uncorrected. Maintaining 60 to 70% humidity through regular misting and moisture-holding substrate fixes it." },
     ],
   },
   {
@@ -738,55 +882,95 @@ Escaped cockroaches are the most serious concern for many keepers: check the lid
     image: "/assets/guides/stick-insect.jpg",
     tagline: "The master of disguise that is literally a twig with legs!",
     funFact: "Stick insects are parthenogenetic: females can reproduce without males and lay fertile eggs throughout their lives. The eggs of some species can remain viable in soil for years, hatching after the mother is long dead, mimicking plant seeds so perfectly that ants carry them underground.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // Host plant leaves are often free (garden/hedge cuttings), so annual
-    // food cost is low compared to most other pets on this list.
-    costs: {
-      setup: [
-        { item: "Tall mesh enclosure", low: 25, high: 50 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Fine misting bottle", low: 5, high: 10 },
-      ],
-      annual: [
-        { item: "Host plant cuttings (often free if garden-sourced)", low: 0, high: 40 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Pesticides, molting and the travel and outage plan
+    // cite the shared invertebrate guides in the sidebar's Health
+    // and More list. Reconciled 2026-09-15 after the stick insect set test
+    // (docs/READER_REVIEWS.md).
+    //
+    // The legality line is why this hub graded C+. It said "They are legal,
+    // widely available, cheap, hardy" while the cost guide on the same site
+    // says keeping a non-native species technically needs a USDA APHIS permit
+    // that hobbyists cannot obtain. The reader called it the one contradiction
+    // that changes whether a person buys, and the permit is now the first row.
+    //
+    // Also retired rather than moved: a 30x30x45 cm enclosure against the
+    // setup guide's 8x8x12 inches; 68 to 80F against 63 to 77F; 50 to 70%
+    // humidity, rising to 70 to 80% for tropicals, against the setup guide's
+    // 60 to 80% for tropicals; a mesh enclosure at $25 to $50 against the cost
+    // guide's $60 to $70; a checklist line reading "House species separately"
+    // next to an article subtitled "And Why You Can Keep More Than One"; and
+    // two molt durations on one page, 20 to 60 minutes in one section and 30
+    // minutes to over an hour in another. No deep dive states a molt duration,
+    // so that figure is retired rather than moved, and it is filed as a gap in
+    // docs/READER_LOG.md.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "The permit, first", value: "In the United States, keeping non-native stick insect species, which includes the common Indian and Vietnamese stick insects widely sold in the hobby, technically requires a USDA APHIS permit under the Plant Protection Act. That permit process requires import into an inspected containment facility, a bar that hobbyist keepers genuinely cannot meet, which means these permits are essentially never issued to individual pet owners. Generally, only species native to and collected within your own state are clearly legal to keep without a permit, and releasing any stick insect or its eggs into the environment is prohibited.", source: "stick-insect-cost-guide" },
+        { label: "The insect", value: "Often just a few dollars per nymph for common species, Indian stick insects especially, and sometimes given away free by keepers since many species reproduce prolifically. Rare giant species are a different story entirely, some command prices exceeding $1,000 for a single adult.", source: "stick-insect-cost-guide" },
+        { label: "Setup budget", value: "Roughly $77 to $98 for a tall, mesh-topped enclosure, substrate and a spray bottle, with the enclosure most of it. An optional small heat or grow light adds more and is not required for most commonly kept species.", source: "stick-insect-cost-guide" },
+        { label: "Ongoing costs", value: "Minimal. Fresh host-plant cuttings, often foraged for free depending on the species' specific dietary needs, plus water for misting make up nearly the entire ongoing cost.", source: "stick-insect-cost-guide" },
+        { label: "Vet costs", value: "Essentially none. Invertebrate veterinary care isn't really a thing for this species, care is entirely husbandry-based.", source: "stick-insect-cost-guide" },
+        { label: "Lifespan", value: "Around one year is typical, roughly 4 to 10 months as a nymph followed by 5 to 12 months as an adult. Females generally live longer than males, often close to 18 months. A small number of larger species can reach 2 to 3 years.", source: "stick-insect-cost-guide" },
+        { label: "Adult size", value: "1 to 22 inches (2 to 55 cm) depending on species." },
+        { label: "Enclosure size", value: "Length and width should each be at least twice the adult's body length, and height should be at least three times body length. Height is the detail that actually matters most, since it's what allows a proper molt. A single Indian stick insect does fine in a roughly 8 by 8 by 12 inch tall, mesh-topped enclosure; a small group or larger species needs correspondingly more room.", source: "stick-insect-tank-setup-guide" },
+        { label: "The mesh top", value: "A mesh or netting lid is essential, not just for ventilation, but because stick insects hang from the top of the enclosure to molt, and shedding from mesh succeeds far more reliably than from a branch alone.", source: "stick-insect-tank-setup-guide" },
+        { label: "Temperature", value: "Many commonly kept species, Indian stick insects especially, do perfectly well at normal room temperature, roughly 63 to 77°F. Tropical species like the giant prickly stick insect prefer it warmer. Supplemental heat is only needed if your space runs consistently cold, and a small basking bulb goes away from the mesh top, where the insect hangs, and off at night.", source: "stick-insect-tank-setup-guide" },
+        { label: "Humidity", value: "Varies by species, tropical types want 60 to 80%, while Indian stick insects are considerably more forgiving. Achieve this through daily light misting with dechlorinated or distilled water, combined with an inch or two of moisture-holding substrate, and track it with a digital hygrometer rather than guessing.", source: "stick-insect-tank-setup-guide" },
+        { label: "Substrate", value: "Coconut coir, peat moss, or plain paper towel all work, holding humidity and absorbing waste. Replace it regularly rather than letting it build up.", source: "stick-insect-tank-setup-guide" },
+        { label: "Lighting", value: "No UVB is needed for this species. Normal ambient room light on a roughly 12-hour cycle is sufficient.", source: "stick-insect-tank-setup-guide" },
+        { label: "Food", value: "Leaves, and that is the entire diet. Almost every commonly kept stick insect eats washed bramble, the blackberry stems that grow in any hedgerow, and it goes species by species from there: Indian stick insects also take privet and ivy, while rose, hawthorn, oak and eucalyptus each suit different species. Match the plant to the species you actually have.", source: "stick-insect-tank-setup-guide" },
+        { label: "Keeping the leaves alive", value: "Cut stems standing in water beat a pile of picked leaves, since foliage kept that way stays good for several days instead of crisping overnight. Block the opening of the water container so nothing can fall in, because a nymph drowned in a jar of stems is the routine avoidable loss in this hobby. Wash foliage before it goes in, and replace it before the leaves dry.", source: "stick-insect-tank-setup-guide" },
+        { label: "Water", value: "Stick insects drink water droplets rather than from a dish, so a reliable spray bottle and a consistent schedule is the hydration plan. An open water reservoir is a drowning risk for small nymphs.", source: "stick-insect-health-issues-guide" },
+        { label: "Failed molts", value: "The single biggest risk for a pet stick insect: a shed that doesn't complete properly, resulting in deformity or death. It's caused by insufficient vertical space or humidity that's too low leading up to the molt. This isn't something to treat after the fact, prevention through correct enclosure height and misting is really the only effective approach.", source: "stick-insect-health-issues-guide" },
+        { label: "Mold", value: "From an enclosure kept too damp combined with poor ventilation or infrequent cleaning. Prevented with good airflow and a regular substrate change, roughly weekly is a reasonable habit.", source: "stick-insect-health-issues-guide" },
+        { label: "Leg loss", value: "A genuine and common outcome of rough handling. A stick insect that loses a leg through autotomy may partially regrow it across subsequent molts if it's a nymph, but an adult's lost leg is permanent. Gentle, body-only handling is what prevents it.", source: "stick-insect-health-issues-guide" },
+        { label: "Handling", value: "Gently grasp the body or thorax if you need to move a stick insect, and never grab a leg. Most species practice autotomy, deliberately dropping a leg to escape a threat. Some species also have mildly irritating leg spines or can release a faint defensive scent, minor compared to most invertebrate defenses, but worth a gentle approach regardless.", source: "stick-insect-handling-guide" },
+        { label: "Reading a stressed one", value: "A dropped leg means the session was too rough. A stick insect that goes rigid and drops, or stays stiff in your hand, is not calm: it is in thanatosis, playing dead, and has classed the hand as a predator. A whiff of defensive scent is the same message. Stillness on its own means nothing, since stick insects spend most of the day motionless by design.", source: "stick-insect-handling-guide" },
+        { label: "More than one", value: "Unlike the praying mantis, which is solitary and cannibalistic, stick insects are herbivorous and non-aggressive toward each other, and Indian stick insects specifically can be housed in groups without issue.", source: "stick-insect-handling-guide" },
+        { label: "You will get eggs", value: "Several commonly kept species, Indian and Vietnamese stick insects among them, reproduce parthenogenetically, meaning females produce viable eggs without a male present at all. A single female can establish an ongoing colony on her own, worth knowing if you are not looking to breed but might end up with more stick insects than you started with.", source: "stick-insect-handling-guide" },
+        { label: "Crowding", value: "Overcrowding shows as damaged legs and antennae, and stick insects knock pieces off each other during molts in a crowded enclosure. If limbs are going missing, thin the group or enlarge the enclosure.", source: "stick-insect-enrichment-guide" },
+        { label: "What enrichment means here", value: "A stick insect's behavioral repertoire is standing on a plant, eating it, swaying, and periodically molting. Two of those four have hard requirements: fresh live host plant, and clear vertical space of at least three times body length to molt in. Get those right and there is very little left to add.", source: "stick-insect-enrichment-guide" },
+        { label: "Molting", value: "The ceiling has to be grippable. Mesh or screen, not smooth glass. A stick insect that loses its grip mid-molt is usually finished, and the fix costs nothing.", source: "stick-insect-enrichment-guide" },
+        { label: "Bug spray", value: "A stick insect is an arthropod and every insecticide sold for use inside a home is designed to kill arthropods. A healthy animal can be found dead the morning after an ordinary household task, a can of ant spray used in the kitchen, a plug-in device switched on in the hallway, a dog treated for fleas on the living room rug. Foraged foliage carries the same risk from outside.", source: "invertebrate-pesticide-hazards-guide" },
+        { label: "A power cut, and a trip", value: "A stick insect lives at whatever temperature the room already sits at, so a power cut is rarely the emergency it would be for a reptile or a fish tank.", source: "invertebrate-emergency-travel-shipping-guide" },
       ],
     },
-    sections: {
-      housing: "A tall, well-ventilated mesh enclosure is essential. The rule is at least 3 times the insect's body length in height and 2 times in width, to allow molting (they hang and pull free of their old exoskeleton). A 30x30x45 cm or larger mesh enclosure suits most adult species. Ventilation is critical: still air causes respiratory problems. Keep fresh host plant cuttings in a vase of water (covered so insects cannot drown) inside the enclosure. Temperatures of 68 to 80 degrees F suit most temperate and tropical species.",
-      diet: `Stick insects eat leaves of specific host plants, and the species must match the plant. Indian stick insects (Carausius morosus, the most common and beginner-friendly species) readily accept bramble (blackberry), rose, hawthorn, privet, ivy, and oak - providing multiple options ensures the insect always has fresh food when one plant is out of season.
-
-Always have fresh cuttings available. Replace them every 2 to 3 days or when leaves begin wilting significantly. Stand the cuttings in a small container of water (sealed around the stems so insects cannot drown) inside the enclosure - this keeps leaves fresh much longer than dry cuttings.
-
-Rinse all leaves thoroughly before offering to remove pesticide residue. Stick insects will refuse and eventually starve rather than eat a plant species they don't accept. Do not offer unfamiliar plants without confirming they are a valid host for your species. Thoroughly research the specific host plant requirements before acquiring any stick insect species.`,
-      enrichment: `Stick insects are observation animals - their enrichment comes from their environment and their behavior, not from interaction. Provide an abundance of twigs, branches, and the host plant itself as climbing surfaces, camouflage backdrop, and molting sites. The more the enclosure resembles a hedge or woodland interior, the more natural behavior you will observe.
-
-Watch for three primary behaviors: feeding (the slow, methodical leaf-eating), molting (a rare and dramatic event where the insect hangs and pulls free of its old exoskeleton over 20 to 60 minutes), and the classic "swaying" behavior - the insect rocks slowly side to side to mimic a twig moving in a breeze. This convincing predator-avoidance behavior is one of nature's finest performances.
-
-Most stick insect species can be handled but are fragile. Never grab a limb - they detach limbs under stress as a survival mechanism (autotomy), and while juvenile limbs regrow at the next molt, adult limbs do not. Always let the insect walk voluntarily onto an open palm. Their lightweight, delicate bodies make them one of the most fragile invertebrate pets.`,
-      health: `Molting is the primary health risk in captive stick insects. The insect hangs from a branch or the enclosure top, splits its old exoskeleton along the back, and slowly pulls free - this process takes 30 minutes to over an hour for large species. Any disturbance during this process can cause a fatal, trapped molt. Any enclosure insufficiency (too short, too dry, too crowded) dramatically increases molt failure rate.
-
-Maintain humidity around 50 to 70% for most temperate species, higher (70 to 80%) for tropical species. Mist the leaves once daily with a fine spray - stick insects drink by licking water droplets from leaf surfaces. They rarely or never drink from standing water. Desiccation during molt is the most common cause of death.
-
-After each molt, inspect the insect carefully. Missing limbs or deformed antennae indicate poor molting conditions. Monitor for droppings (small, hard pellets scattered on the floor) - absence of droppings for several days combined with an inactive insect suggests illness or premolt. Lifespan is typically 6 to 18 months depending on species and sex.`,
-      checklist: [
-        "Tall mesh enclosure (3x body height minimum)",
-        "Fresh host plant cuttings (bramble, rose, privet)",
-        "Covered water vase for plant cuttings",
-        "Twigs and branches for perching",
-        "Digital thermometer and hygrometer",
-        "Fine misting bottle (daily leaf misting for drinking water)",
-        "Mesh lid (never glass or solid plastic)",
-        "House species separately (most are docile but competitive for food)",
-        "Rinse all leaves before offering",
-        "Know your species' specific host plant",
+    emergencyCard: {
+      source: "stick-insect-health-issues-guide",
+      callNow: [
+        "A shed that doesn't complete properly, which results in deformity or death",
+        "Too little vertical space for the insect to hang freely while shedding, or humidity too low in the days before the molt",
+        "Small nymphs can drown in an open water reservoir used to keep cut host-plant foliage fresh",
+        "Mold, from an enclosure kept too damp combined with poor ventilation or infrequent cleaning",
+        "A lost leg, a genuine and common outcome of rough handling, and an adult's lost leg is permanent",
       ],
+      vetLine: "This isn't something to treat after the fact. Prevention through correct enclosure height and misting, tracked with a digital hygrometer rather than guesswork, is really the only effective approach.",
     },
+    routes: [
+      { slug: "stick-insect-cost-guide", line: "The APHIS permit a hobbyist cannot get, a few dollars a nymph, and $1,000 for a rare giant." },
+      { slug: "stick-insect-tank-setup-guide", line: "Three times body length in height, 63 to 77F, bramble and the other host plants, and why the lid is mesh." },
+      { slug: "stick-insect-handling-guide", line: "Body not leg, the three stress signals including playing dead, and why a colony is fine here." },
+      { slug: "stick-insect-health-issues-guide", line: "Molting failure, the drowning risk in the cutting jar, mold, and the leg that never grows back." },
+      { slug: "stick-insect-enrichment-guide", line: "A short guide, honestly: height, fresh leaves, humidity, and what the tarantula study does not transfer." },
+    ],
+    buyList: [
+      "A tall mesh-topped enclosure, at least three times body length in height",
+      "Coconut coir, peat moss or plain paper towel for substrate",
+      "A fine mist spray bottle and dechlorinated or distilled water",
+      "A digital hygrometer",
+      "A water container for cut stems, with the opening blocked",
+      "A host plant you can actually get year round, bramble for most species",
+      "A small heat or grow light, only if the room runs cold or dark",
+    ],
     faqs: [
-      { q: "Are stick insects good beginner invertebrates?", a: "Indian stick insects (Carausius morosus) are widely considered one of the most beginner-friendly invertebrate pets. They are legal, widely available, cheap, hardy, and their care is minimal once you establish a supply of host plant cuttings. The single most important requirement is identifying the right host plant before you acquire the animal - bramble (blackberry), rose, hawthorn, privet, and ivy are all accepted by Indian stick insects and are accessible in most regions. Many other stick insect species have narrower host plant requirements and are better suited to experienced keepers." },
-      { q: "Can stick insects reproduce without a male?", a: "Yes - most common pet stick insect species are parthenogenetic, meaning females reproduce without males and lay fertile eggs throughout their lives. Indian stick insects and several other popular species are entirely or predominantly female in captivity. The eggs of some species are so well-adapted for dispersal that ants carry them underground, where they can remain viable for years before hatching - mimicking plant seeds in both size, shape, and chemical signals. A single female stick insect can produce dozens to hundreds of eggs over her lifetime." },
-      { q: "What do stick insects eat?", a: "Only the leaves of specific host plants - the exact species required depends on the stick insect species. Indian stick insects accept bramble (blackberry), rose, hawthorn, privet, and ivy. Always rinse leaves thoroughly to remove pesticide residue. Keep fresh cuttings standing in a water container inside the enclosure (seal around the stems so insects cannot drown) and replace every 2 to 3 days as leaves wilt. Stick insects will starve rather than eat a plant they don't recognize - confirming host plant compatibility before acquiring any species is not optional." },
-      { q: "What causes failed molts in stick insects?", a: "The same three factors that cause failed molts in mantises: enclosure too short (stick insects need 3x their body length in height to hang and pull free of the old exoskeleton), humidity too low (causing the old skin to harden before the insect fully exits), and disturbance during the process. Daily misting of the enclosure's leaves is how stick insects drink and how humidity is maintained. A properly sized, well-ventilated, regularly misted enclosure eliminates the majority of molt failures. Never pick up a stick insect that is hanging still and seems rigid - it is almost certainly mid-molt." },
-      { q: "How long do stick insects live?", a: "6 to 18 months depending on species and sex - females living longer than males in most species. Indian stick insects typically live 12 to 18 months for females and 6 to 8 months for males. Because of this relatively short lifespan and their prolific egg production, many keepers maintain a continuous cycle: collecting eggs (dropped on the enclosure floor) and incubating them in a separate container on moist substrate. New nymphs hatch in 2 to 4 months for Indian stick insects, allowing the keeper to maintain a continuous population." },
+      { q: "Do you need a permit to keep a stick insect in the US?", a: "Technically, yes, for non-native species. The common Indian and Vietnamese stick insects sold in the hobby fall under the Plant Protection Act, and the USDA APHIS permit requires import into an inspected containment facility. Hobbyists cannot meet that bar, so those permits are essentially never issued to individual pet owners. What is clearly legal without one is generally a species native to your own state and collected there. Releasing any stick insect or its eggs is prohibited either way. Check current USDA rules for your own situation before buying." },
+      { q: "What size enclosure does a stick insect need?", a: "Length and width at least twice the adult's body length, height at least three times it. Height is what matters most, since that is what allows a proper molt. One Indian stick insect is fine at roughly 8 by 8 by 12 inches; a group or a larger species needs more." },
+      { q: "Can you keep more than one stick insect together?", a: "Yes, generally. Unlike the praying mantis, which is solitary and cannibalistic, stick insects are herbivorous and non-aggressive toward each other. Indian stick insects specifically can be housed in groups without issue." },
     ],
   },
   {

@@ -3647,6 +3647,36 @@ in one review section.
 
 ## What the tests changed so far
 
+- 2026-09-15, batch O (branch claude/invertebrates-readmefirst-batch-ayolwx, not
+  merged): four router hubs rather than five, because invertebrates had exactly
+  four species left on the legacy care sheet and the class is now finished. 118
+  first-week rows, one reader pass per species and one Fable check covering all
+  four. Pass grade B. Giant millipede: the handling guide's secretion "contains
+  cyanide", attributed to a vet clinic care sheet, lost to the legal guide's
+  Wood (1974), which analysed this species and found benzoquinones; the setup
+  guide's unsourced "keep one per enclosure" lost to two opened sources on
+  communal housing; wildLifespan moved from 5-10 to CuriOdyssey's 5-7 wild and
+  7-10 captive; a sourced Diet Basics section added, the species having no
+  feeding guide. Jumping spider: a cost table whose $50 floor sat below the $60
+  enclosure it priced, re-priced from the site's own product records to $112-150
+  across five places; the feeding guide's adult interval settled from a narrated
+  disagreement into "every 2 to 5 days" with the male 10-day figure and the
+  gravid-female hedge intact; the misting cadence settled to the setup guide by
+  the subject rule. Hissing cockroach: the hub's "completely harmless to humans"
+  retired against the handling guide's leg spines and Salmonella; an unsourced
+  Arizona shipping ban retired against the legal guide, which researched all 50
+  states and never names it; time to adulthood moved to Animal Diversity Web's
+  6-7 months; sexing added to the setup guide, a gap four pages depended on.
+  Stick insect: the hub called the animal legal while the cost guide says the
+  APHIS permit is unobtainable, and the permit is now the first row; a second
+  broken cost table re-priced to $77-98; a sourced Diet Basics section added
+  from the Phasmid Study Group; the cost guide gained its first Sources block,
+  USDA APHIS's own permits page. Four of the eleven affiliate template fragments
+  in docs/TODO.md section 8 cleared in passing. The check's standing list: three
+  hedges upgraded during de-narration, four hub rows and four emergency bullets
+  written rather than pasted, two of them sourced to shared guides that do not
+  cover the species at all.
+
 - 2026-09-15, batch K (branch
   claude/tiger-salamander-parrotlet-koi-emperor-scorpion-rosy-boa, not merged):
   five router hubs, 119 first-week rows, one reader pass per species and one
@@ -14069,3 +14099,376 @@ producing: rows written in the hub's voice instead of pasted, including two
 emergency bullets from the wrong article, and one study cited for a compound it
 never measured. The amino acid line was inherited rather than invented this
 batch, which is the difference between this pass and batch M's.
+
+## Giant Millipede (2026-09-15, batch O, single pass, before the router hub)
+
+Extractor set of seven pages, the legal guide not among them. One Opus agent,
+about 75k tokens. Raw output in docs/READER_LOG.md. Set grade: B-. "Strong deep
+dives undercut by a hub that contradicts them and a buying story that never
+lands."
+
+Numbers checker before the pass, eight groups: budget (hub cost table against the
+cost guide on every shared line), enclosure size in dollars and in gallons,
+humidity in dollars, lifespan in years twice, and two "other" groups that were
+the same lifespan disagreement seen from a different angle. Every one of them was
+either the old hub's cost table or the wild-versus-captive lifespan split. None
+survived the rewrite.
+
+The hub was the whole problem and the reader said so plainly: it was "the setup
+and health guides shortened, minus the two things I most needed on the landing
+page (what the animal costs, and that it is federally regulated)". Both are now
+rows, and the permit row is the legal guide's, not the cost guide's compressed
+version of it.
+
+Group housing, the conflict the reader put first. Hub: "comfortably houses 2 to 3
+adult... millipedes." Setup guide: "Keep one per enclosure unless you're
+intentionally planning to breed." Enrichment guide: "They are not predatory or
+territorial and are commonly kept in groups." Neither page cited anything for its
+version. Settled by opening two sources: Tree of Life Exotic Pet Medical Center,
+a vet clinic already cited on the handling guide, says a millipede "can be kept in
+groups if space, hides, and food are abundant" and warns against overcrowding;
+Bugs in Cyberspace says they are "very communal and will often cluster together
+even if they are offered a large cage". The setup guide changed, both sources
+went into its Sources block, and the hub row copies the settled sentence.
+
+The cyanide claim, which the reader caught as a trust problem rather than a
+numbers one: "a passed-along claim that the secretions 'contain cyanide' sitting
+next to benzoquinones everywhere else." The handling guide attributed it to
+Chicago Exotics. The legal guide already cites Wood (1974), which analysed this
+species specifically and found toluquinone and a related benzoquinone. A
+peer-reviewed species-specific paper beats a clinic care sheet written about
+millipedes generally, so the clause is gone and the irritation hedge is kept. The
+same edit took two source names out of the prose, and a third and fourth came out
+of the two paragraphs below it.
+
+Wild lifespan. Encyclopedia: "5-10 years". Cost guide: "5 to 7 years in the wild,
+and up to 10 years in captivity." CuriOdyssey, a science museum exhibiting the
+species, gives wild 5-7 and captivity 7-10, so the cost guide wins and the
+encyclopedia field now reads "5-7 years in the wild; 7-10 years in captivity".
+One field, nothing else in the entry touched.
+
+Diet Basics added to the tank setup guide. This species has no feeding guide, and
+the old hub's diet paragraph was the only feeding content anywhere in the set, so
+it is the tokay gecko and California kingsnake move again: staple (decaying
+hardwood and pesticide-free leaf litter, oak, beech, maple), produce list and the
+every-two-to-three-days frequency, permanent calcium, and the shallow water dish
+with pebbles in it, which answers the reader's "whether a standing water dish is
+permanent kit" directly.
+
+Calcium, which the reader read as a conflict, is not one. The health guide rules
+out chalk; the enrichment guide allows crushed eggshell. Eggshell is calcium
+carbonate and chalk is not, so both pages stay as written.
+
+Links: 5 added, one per article, all from the reader's table. The encyclopedia
+entry takes none, since its structured fields are not editable that way.
+
+Also fixed, not from the reader: the enrichment guide's two affiliate template
+fragments ("and other sizes and volumes are available", "and other sizes are
+available"), two of the eleven in docs/TODO.md section 8, and the "Our moulting
+guide covers" self-reference in the same paragraph.
+
+RELATED_ARTICLES gained three entries this species was missing: its own legal
+guide (reachable from the hub and from nowhere in the sidebar, the batch I
+finding again), the invertebrate molting guide its enrichment guide links to, and
+the four-species overview every article links to.
+
+Dates: bumped on the setup and handling guides, where facts changed. Not bumped
+on the cost, health or enrichment guides, where only links and template fragments
+moved. Noted and not touched: the enrichment guide is future-dated to 2026-11-02.
+
+check-species-numbers millipede after the pass: no line marked hub disagrees with
+its deep dive. The groups that remain are advisory, a minimum against a purchase
+size, and a wild figure against a captive one in the same sentence. Voice warning
+set identical to baseline on every changed file, all gates and eslint clean.
+
+Left open. The USDA permit process itself, what it costs and how long it takes,
+which the legal guide names but does not walk through. Where to buy and how to
+tell a healthy animal from a dehydrated one at the point of sale. Whether a new
+arrival needs quarantine, which no invertebrate page on the site answers. How
+often to replace or top up substrate, which the cost guide budgets for annually
+and no page schedules. Sexing, and what happens when a group breeds, which
+matters more now that the set says a group is fine.
+
+Gaps, checked against the Health and More list: the isopod warning on the setup
+guide is unsourced, and one of the two sources opened for the group-housing fix
+says the opposite, that millipedes coexist with isopods. Left as written, since
+the claim is Mike's and settling it needs its own research pass rather than a
+hub row.
+
+## Jumping Spider (2026-09-15, batch O, single pass, before the router hub)
+
+Extractor set of eight pages. One Opus agent, about 78k tokens. Raw output in
+docs/READER_LOG.md. Set grade: B-. "Two or three genuinely good pages sitting
+behind a hub that contradicts them on almost every number a buyer would write
+down."
+
+Numbers checker before the pass, nine groups. Six were the old hub against a deep
+dive (budget, enclosure price, feeder insects, lifespan, temperature) and the rest
+were the feeding guide's own narrated ranges showing up as spread. The reader
+found the same list independently and added two the checker cannot see: the
+misting cadence and the handling guide's FAQ promising three mistakes after a body
+that listed two.
+
+The cost table could not add up, and this is the sharpest finding of the species.
+"Small vertical, arboreal enclosure | $60 - $70" sat inside "Total upfront setup |
+$50 - $120" with four more items marked "Included in setup total", so the stated
+floor was below the price of the single item the table priced. Fixed by filling
+the four placeholder cells from the site's own product records, exactly as the
+millipede cost table already does, and summing: $112 to $150. That figure then had
+to move in five places, the H2, the seoTitle, the seoDescription, the description
+field and the upfront FAQ, which is the frontmatter-blind-spot pattern this file
+has warned about since batch D, and the reason for grepping the number rather than
+trusting the memory of having changed it.
+
+Source narration in the feeding guide, four instances in one article, and this is
+the defect the last five batches kept finding in hub rows rather than upstream in
+the article. The adult feeding row was the worst of it: "This is where sources
+diverge most, reported intervals range from every 2 to 3 days up to every 3 to 5
+days, with males in particular sometimes fed as infrequently as every 10 days by
+one source." A row copying that verbatim would have carried the disagreement onto
+the hub, which is exactly the batch I mechanism. Settled in the article first:
+"Every 2 to 5 days, with the abdomen deciding where in that window a given spider
+sits." The span is unchanged, the 10-day male figure is kept in the passive that
+marks it as a practice rather than a recommendation, and the hedge on gravid
+females is untouched. Checked against The Tarantula Collective's Phidippus regius
+sheet, which gives adults "once or twice a week (or as needed)", so the settled
+range covers the published guidance rather than narrowing it.
+
+Misting cadence, the one genuine deep-dive contradiction. Setup guide: "Mist one
+corner of the enclosure every 2 to 3 days." Feeding guide: "light daily misting of
+the enclosure walls." Both pages' sources do state a cadence and they disagree at
+the same tier, ExoPetGuides on the setup guide giving "every two to three days"
+and Bugs in Cyberspace on the feeding guide giving "daily or frequent mistings",
+so the subject rule decides: humidity is the setup guide's topic and the feeding
+guide changed to match. [Corrected by the batch O species check, which opened both
+sources; this section originally said neither page's sources settled it.]
+
+The Bronx Zoo fun fact the reader doubted checks out: the record is a female named
+Ms. Regal at 4 years 9 months, corroborated across hobby sources but not by
+anything in the cost guide's own Sources block. Left as written and listed here
+rather than dressed in a citation the page does not have.
+
+Links: 6 added, one per article, all from the reader's table. The hub needed none,
+which the reader said outright.
+
+Left as written: the cost guide's Sources block carries "Bugs in Cyberspace:
+Phidippus regius listings", a for-sale listing page, which RULES bars from a
+Sources block. Deleting a Sources entry is on the batch prompt's Never list, so it
+stays and is recorded here instead.
+
+Prices: no "Prices last checked" line added. The table's figures come from the
+site's own product records rather than a retail pass, so the line would assert a
+check nobody performed. Same decision as batches E and N, and the corpus-wide gap
+stands.
+
+check-species-numbers jumping-spider after the pass: every line marked hub appears,
+numbers unchanged, in the deep dive its row names. The encyclopedia's 1 to 2 years
+is a wild figure against the cost guide's 1 to 3 captive, which is not a conflict.
+Voice warning counts identical to baseline on all six changed files, all gates and
+eslint clean.
+
+Not covered anywhere, the reader's list, none of it answered by the shared class
+guides: where to buy and how to judge a healthy spider at the point of sale, how to
+sex one (the cost guide makes sex financially load-bearing and never says how to
+tell), arrival day, routine cleaning and old web removal with the spider in
+residence, escape recovery, how to dechlorinate water, what a "damp cotton ball
+setup" physically is, and what to do with an egg sac including an infertile one.
+Sexing is the one worth writing first, since the price and the lifespan both hang
+on it.
+
+## Madagascar Hissing Cockroach (2026-09-15, batch O, single pass, before the router hub)
+
+Extractor set of nine pages, the most complete set in this batch. One Opus agent,
+about 81k tokens. Raw output in docs/READER_LOG.md. Set grade: B+, the highest in
+batch O. "The deep dives are unusually honest about disagreement and unusually
+specific; the hub drags the average down by contradicting them."
+
+Numbers checker before the pass, six groups: the hub's cost rows against the cost
+guide, humidity 50 to 70 against 60 to 70, temperature 75 to 90 against 75 to 85,
+the 24-hour against the 24-to-48-hour food removal window, and two "other" groups
+that were substrate depth against adult size. The reader found all of those plus
+four the checker cannot see: the single-animal question, the hub's "completely
+harmless to humans", the protein supplement, and a permanent cuttlebone that the
+feeding guide never mentions.
+
+The safety one is the one worth naming first. The old hub said "They are
+completely harmless to humans" on a page that recommends the species for children,
+while the handling guide says their leg spines "can scratch or draw a small amount
+of blood if the roach is held down" and that they can carry Salmonella. A hub
+being softer than its own deep dive on a safety point is a different class of
+defect from a number drifting, and it is now a row rather than a reassurance.
+
+Arizona. The setup guide carried an unsourced "can't be legally shipped to Arizona
+or Florida" on a set whose legal guide researched all 50 states, cites the rules,
+and never names Arizona; a search for an Arizona restriction turns up the opposite.
+The clause now says what the legal guide says and links to it.
+
+One animal or a group, the genuine deep-dive contradiction of this species. Setup
+guide: "A 5-gallon tank works as a minimum for a single animal or a small group."
+Enrichment guide: "Do not keep a single animal, since the species is gregarious
+and the research is on groups." The enrichment guide cites the 2023 Animals
+welfare paper on group-housed Gromphadorhina; the setup guide cites nothing. The
+setup guide changed, its FAQ changed with it, and the 5 gallon figure did not
+move.
+
+Sexing, a gap four pages depended on and the reader caught. The set repeatedly
+tells a keeper to run a same-sex or males-only group and never says how to tell
+one from the other. Added to the setup guide from Animal Diversity Web, already
+cited on the handling guide: males carry the pronotal horns, much smaller in
+females, and grow larger.
+
+Time to adulthood. Feeding guide: "about six molts over roughly five months".
+Animal Diversity Web: six molts, "usually takes 6-7 months". Same molt count, and
+the university museum database outranks the care sheets, so the duration moved and
+ADW joined that guide's Sources.
+
+Source narration in the feeding guide, three passages, including a whole feeding
+schedule written as a disagreement between "pet-industry care sheets" and "an
+academic extension fact sheet". Both regimens survive the rewrite, stated as a
+range with a rule for which end to use, which is what RULES asks for. This is the
+third species in this batch whose feeding page narrated its research, and the
+second where a hub row would have copied the narration verbatim if the article had
+not been settled first.
+
+Unsourced, needs a fact-check: the food removal window. The health guide said 24
+hours, the feeding guide says 24 to 48 twice. Neither of the sources I could open
+states a window at all (the OSU Extension fact sheet returns 403 to a fetch and
+Fluker Farms only says to clean out leftovers regularly), so the feeding guide
+kept its figure as the page that owns the topic and the health guide moved to
+match. Worth a real check, since the health guide's version was the stricter one.
+
+Links: 6 added, one per article, all from the reader's table. The health guide's
+humidity line said "covered in more detail in the tank setup guide" without
+linking, which was a site self-reference and a dead end at the same time.
+
+check-species-numbers hissing-cockroach after the pass: six conflict groups down to
+three, all advisory, and every line marked hub appears in the deep dive its row
+names with the numbers unchanged. Voice warning counts identical to baseline on all
+six changed files, all gates and eslint clean.
+
+Not covered anywhere, the reader's list: cleaning and full substrate-change
+frequency (no page and no shared guide gives an interval), quarantine or
+acclimation of new arrivals, what to do with surplus nymphs once a colony booms,
+recapturing an escapee, and a real ventilation spec behind "adequate airflow".
+Sexing was on that list and is now answered.
+
+## Stick Insect (2026-09-15, batch O, single pass, before the router hub)
+
+Extractor set of seven pages. One Opus agent, about 76k tokens. Raw output in
+docs/READER_LOG.md. Set grade: C+, the lowest in batch O. "The individual articles
+are honest and specific, but the hub contradicts them on legality, size,
+temperature, humidity and cost, and the health page is written without a single
+number."
+
+Numbers checker before the pass, nine groups: the hub's cost rows against the cost
+guide, the hub disagreeing with itself on humidity and on molt duration, and the
+lifespan spread across hub, cost guide and encyclopedia. The reader added the ones
+the checker cannot see, and the first of them is the reason this species was worth
+doing.
+
+Legality. The hub said "They are legal, widely available, cheap, hardy" on a site
+whose own cost guide opens with a USDA APHIS permit requirement that hobbyists
+cannot meet, for exactly the species the hobby sells. The reader called it "the
+one contradiction that changes whether I buy", which is the right weight for it: a
+hub that reassures a buyer past its own legal warning is worse than a hub that
+drifts on a number. The permit is now the first row of the hub and the first FAQ,
+in the cost guide's own words.
+
+The cost table was the jumping spider's defect again, in the same batch: a $60 to
+$70 enclosure inside a "$30 - $100" total with the other rows reading "Included in
+setup total". Same fix, the placeholder cells filled from the site's product
+records and the total summed, $77 to $98, with the optional light marked as extra.
+Two of four species in this batch had a cost table whose floor was below the price
+of the single item it priced, which suggests a corpus-wide grep for "Included in
+setup total" is worth a session of its own.
+
+Diet Basics added to the tank setup guide, the fourth species to need it after
+tokay gecko, California kingsnake and savannah monitor, and the second in this
+batch. The whole diet for this animal was one sentence inside a section about
+mesh lids. Sourced to the Phasmid Study Group's Basic Phasmid Care, which is the
+society's own care page: washed bramble as the near-universal food plant, cut stems
+kept in water lasting several days, and the instruction that matters most, block
+the container so nothing falls in and drowns. The section it came out of is now
+titled for the mesh top alone, since that is what is left in it.
+
+The health guide leaned on "correct enclosure height" four times and never gave the
+number, which the reader caught and which is a real failure of a page rather than a
+drift between two. It now names the three-times-body-length rule and links to the
+page that owns it.
+
+The cost guide had no Sources block at all, on a page whose central claim is a
+federal permit requirement. Added USDA APHIS's own permits page, which states the
+PPQ 526 requirement and the containment facility expectation in its own words.
+
+Unsourced, needs a fact-check: the encyclopedia's "6 months-2 years depending on
+species" against the cost guide's "a small number of larger species can reach 2 to
+3 years". Neither page cites anything for a lifespan, and the sources available on
+the longest-lived commonly kept phasmid, the jungle nymph, say up to 2 years. Left
+as written rather than picked, since picking would mean asserting a number no
+source I opened states.
+
+Retired with the hub: a molt duration. The old hub gave two, 20 to 60 minutes in
+one section and 30 minutes to over an hour in another, and no deep dive states one
+at all, so it is gone rather than carried up, and it is a gap in the log.
+
+Links: 4 added, one per article, all from the reader's table (the setup guide
+gained none, since its one sibling slot was already the pesticide guide carried
+into Diet Basics). The best of them is the enrichment guide's parthenogenesis
+paragraph, which now runs into the cost
+guide's rule against releasing eggs, because the reader's sharpest structural point
+was that this set tells you you will get eggs and never tells you what to do with
+them.
+
+check-species-numbers stick-insect after the pass: nine conflict groups down to six,
+all advisory, and every line marked hub appears in the deep dive its row names.
+Voice warning counts identical to baseline on all five changed files, all gates and
+eslint clean.
+
+Not covered anywhere, the reader's list: what to do with unwanted eggs when
+releasing them is prohibited, where to legally obtain one in the US after that
+permit section, whether nymphs walk through standard mesh and what aperture to buy,
+whether to intervene in a visibly failing molt, keeping a host plant supply through
+winter, quarantine for a new arrival, cleaning beyond substrate replacement, and
+species identification and sexing, which every host plant and humidity answer
+depends on. The eggs one is the most serious, since this set now says plainly that
+a single female will produce them and that letting them go outside is illegal.
+
+## Giant millipede, jumping spider, hissing cockroach, stick insect (2026-09-15, batch O species check)
+
+One Fable agent over the whole branch (claude/invertebrates-readmefirst-batch-ayolwx from bd9bf3d), reading diffs. Four species, not five, because invertebrates had exactly four left. Nothing merged.
+
+Scope: clean on all four. The only src edits are the four hub entries, one SHORT_LABELS line (invertebrate-rehousing-guide), three RELATED_ARTICLES lines, and one encyclopedia field. The millipede wildLifespan edit was checked against CuriOdyssey's own page (curiodyssey.org/animals/our-animals/invertebrates/giant-african-millipede/), which reads "In the Wild: 5-7 years. In Captivity: 7-10 years", so the field stands.
+
+Hub rows, all four: every FAQ is a verbatim frontmatter copy (12 of 12, the batch J defect did not recur), every route covers an own deep dive and nothing shared, no buy list carries a price, difficulty matches the encyclopedia on all four, no row carries a source name or a disagreement, and no hub line disagrees with its deep dive on the numbers checker. What did fail was rows sourced to a shared guide that does not say what the row says:
+
+- Jumping spider "Molting", sourced to the invertebrate molting guide, was the enrichment guide's "sealed itself into a retreat" sentence plus a written second sentence. Now the molting guide's own words: pre-molt signs from its species table, and its "never disturb a molting invertebrate" rule.
+- Stick insect "Molting", sourced to the molting guide, which does not cover stick insects at all; the sentence was the enrichment guide's. Re-sourced to the enrichment guide with that guide's three sentences.
+- Hissing cockroach "Moving them", sourced to the rehousing guide, which has no cockroach content; the row borrowed the millipede's soft-brush sentence. Removed, since no page states it.
+- Stick insect "A power cut, and a trip": the second sentence ("Fresh cuttings in water and stable humidity do more for a short absence than anything else") appears nowhere in the emergency guide. Cut.
+
+Emergency cards: jumping spider (6 of 6) and hissing cockroach (8 of 8) are exact copies of the feeding guides' concern lists, which is where those sets keep them. Millipede had one written bullet of six ("A molt that has been disturbed, or shed skin still attached, which is never to be assisted or pulled off by hand"), now the health guide's "A failed or incomplete molt, often fatal: never assist a molt or attempt to remove shed skin yourself, this can cause real harm". Stick insect had three written bullets of five, now the health guide's own FAQ sentences (vertical space and pre-molt humidity, small nymphs drowning in the foliage reservoir, and the lost leg an adult keeps), and its vetLine carried "invertebrate veterinary care isn't really a thing for this species", which the health guide does not say; cut. The jumping spider vetLine dropped the feeding guide's lead hedge ("None of this is veterinary-established, it is hobbyist-reported") and opened with a written clause instead; the hedge is back and the clause is gone.
+
+Numbers: every decision went the way the ranking picks. Hissing cockroach time to adulthood, five months to six-to-seven, is Animal Diversity Web's "usually takes 6-7 months" (university museum over care sheets), confirmed on the page. The food removal window went to the feeding guide as owner of the topic. The jumping spider misting cadence went to the setup guide by the subject rule; the review said neither page's sources settle it, which is not quite right, since ExoPetGuides (a setup guide source) states "every two to three days" outright while Bugs in Cyberspace (a feeding guide source) says "daily or frequent mistings", same tier, so the subject rule still decides and the outcome holds. Both re-priced cost tables add up against affiliateProducts.js ($60-70 + $25-37 + $9-12 + $7-12 + $11-19 = $112-150; $60-70 + $10-16 + $7-12 = $77-98) and every frontmatter copy moved; no stale copy survives anywhere on the site. Dates are right on every file, links are within one sibling per article on all 22 files, and the voice warning set is identical to base on all 22.
+
+De-narration, the batch K and M failure mode, happened three times and none of them changed a figure:
+
+- Millipede handling: "Refusing to move is not on either source's list of stress signs" became "is not a stress sign at all". Now "is not a listed stress sign".
+- Jumping spider feeding: "One breeder source recommends even more frequent daily small feedings" became "daily small feedings at this stage are common too". Now "one breeder recommendation goes further, to daily small feedings at this stage".
+- Hissing cockroach feeding: "An academic extension fact sheet instead describes a sparser regimen for a small pet colony" became "A small pet colony does fine at the lighter end of that". Now "can be kept at the lighter end of that", in the article and the hub row.
+
+Research read back against the sentence, the batch L and M rule, caught four more:
+
+- Millipede handling: the secretion "leave[s] a temporary stain". Tree of Life says nothing about staining, the legal guide says "staining" with no duration. "temporary" cut, article and hub row.
+- Millipede setup: "every extra animal wants more floor and more substrate of its own" is not in either opened source. Now Tree of Life's own reason, "crowding, which brings stress and competition for resources", article and hub row.
+- Stick insect setup Diet Basics: "A stick insect will not eat crisped foliage" is in neither the Phasmid Study Group page nor the AES caresheet (which serves a verification wall to a fetch; its search snippet covers fresh food and washing only). Cut; "replace it before the leaves dry" stays.
+- Hissing cockroach setup: the new sexing section was written from Animal Diversity Web, which the page did not cite. ADW confirms the pronotal horns, much smaller in females, and males growing larger, and now sits in a Sources block on that guide. Same page: "a solitary roach is neither how they live nor how they have been studied" leaned on the enrichment guide's 2023 Animals paper, which is on Gromphadorhina oblongonota, not portentosa. Trimmed to what ADW says of portentosa ("social", "huddle together"): "they are social, they huddle together, and a solitary roach is not how they live". The oblongonota citation on the enrichment guide predates this batch and is left for a research pass.
+
+Review file: the stick insect section says five links were added, one per article; the diff has four (the setup guide gained none). The jumping spider misting note is corrected above. Everything else claimed in the four sections matches the diff, including the raw reader output filed in docs/READER_LOG.md for all four.
+
+Not changed, noted: the jumping spider handling guide gained a third first-timer bullet to match a FAQ that already promised three; no date bump, since the fact was already on the page.
+
+Verdicts: giant millipede fixed on the branch; jumping spider fixed on the branch; hissing cockroach fixed on the branch; stick insect fixed on the branch.
+
+Gates on the branch head: check-internal-links, check-related-articles, check-affiliate-mdx, check-cost-coverage, check-seo-tags, check-voice --strict, eslint all clean. check-species-numbers: no hub line disagrees with a deep dive on any of the four; the strict exit is on advisory groups only, the same as every merged reconciled species.
+
+Pass grade: B. Everything the last six batches were told about and kept getting wrong came back right: FAQs verbatim, frontmatter copies moved with the figure, no source name in any row, no stale figure anywhere, real sources opened for every number and the encyclopedia field. What it still got wrong is the other half of the same list: three hedges upgraded during de-narration, four hub rows and four emergency bullets written rather than pasted on three of four species, two sentences written past what the opened source says, and one review count off by one.

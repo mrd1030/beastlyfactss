@@ -853,11 +853,50 @@ pass. Writing up a fix for a defect you introduced yourself as though it were
 found in the old hub is a new failure mode. Diff the claim against the base
 commit before writing it up, not against memory of having changed it.
 
-Next up is batch O, and the one-per-class rule is now impossible without dogs or
-cats: invertebrates has four left, lizards three, small mammals one, and
-everything else is finished. Either take a class to zero the way this batch took
-fish, or start dogs and cats. What is left, by class, is in docs/TODO.md
-section 7.
+Batch O (giant millipede, jumping spider, hissing cockroach, stick insect), four
+species rather than five because that is exactly what invertebrates had left,
+done and checked on branch claude/invertebrates-readmefirst-batch-ayolwx
+2026-09-15, not merged. Four router hubs, 118 first-week rows, one reader pass
+per species and one Fable check. Pass grade B, up from batch N. That makes 80
+router hubs; the 28 left are lizards (3), small mammals (1), cats (10) and dogs
+(14). Invertebrates are finished.
+
+The grade went up because the half of the standing list that kept shipping
+stopped: 12 of 12 hub FAQs verbatim, every frontmatter copy moved with its
+figure, no source name in any row, no stale figure anywhere on the site, and a
+real source opened for every number changed and for the one encyclopedia field.
+Three findings worth carrying into batch P.
+
+Two of four cost tables were arithmetically broken in the same way, and neither
+reader nor checker had caught it before. A priced enclosure line sat inside a
+setup total whose floor was below that one item, with every other row reading
+"Included in setup total": jumping spider $60-70 inside $50-120, stick insect
+$60-70 inside $30-100. Both were fixed by filling the placeholder cells from the
+prices already recorded against those exact products in
+src/lib/data/affiliateProducts.js and summing, which invents nothing, and both
+then had to move through the H2, the seoTitle, the seoDescription, the
+description and a FAQ. A corpus-wide grep for "Included in setup total" is worth
+one short session: it is a placeholder that makes a cost table look priced while
+hiding an arithmetic error.
+
+The shared class guides are not a free source for a hub row. Three rows across
+two species cited a shared invertebrate guide that does not cover the species at
+all: a rehousing row for the hissing cockroach, on a guide covering tarantulas,
+scorpions, mantises and millipedes, and molting rows for the jumping spider and
+stick insect that were really the enrichment guide's sentences wearing the
+molting guide's name. Before sourcing a row to a shared guide, grep that guide
+for the species.
+
+And the emergency card, for the fifth batch running. Eight bullets across three
+of four species were written rather than grepped, even though this batch found
+two sets whose call-a-vet list lives on the feeding guide rather than the health
+guide and correctly re-sourced the card to it. Finding the right page is the
+part that needs judgment; pasting from it is the part that keeps going wrong.
+
+Next up is batch P. The one-per-class rule is gone for good: lizards (fire skink,
+Jackson's chameleon, uromastyx) and the flying squirrel are all that is left
+before dogs and cats, so batch P is those four, and every batch after it is a dog
+or cat batch. What is left, by class, is in docs/TODO.md section 7.
 
 The old batch J note follows for the reasoning, since it is the pattern
 to repeat: mourning gecko, ackie monitor, garter snake, oscar,

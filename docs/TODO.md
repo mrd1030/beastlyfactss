@@ -391,7 +391,7 @@ share a silhouette. That is roughly 25 species, about 175 images.
 ## 7. Router hubs, species by species
 
 Checked 2026-09-15 against `src/lib/data/guides/*.js`: a hub is a router hub
-when its entry carries `firstWeek` rows (RULES, Hubs). 76 of 108 done, 32
+when its entry carries `firstWeek` rows (RULES, Hubs). 80 of 108 done, 28
 still rendering the legacy care sheet. Batches of five, one branch each,
 per the READMEFIRST process. Dogs and cats last.
 Batches I and J both merged to main 2026-09-15 as 05a6fa6b. Batch I
@@ -409,15 +409,20 @@ Batch N (bristlenose pleco, discus, swordtail, zebra danio, ghost shrimp) done
 and checked on branch
 claude/bristlenosepleco-discus-swordtail-zebradanio-ghostshrimp 2026-09-15, not
 merged. Pass grade: pass, after fixes. Fish are finished: this batch took the
-last four. Next is batch O, and the classes left are invertebrates (4), lizards
-(3) and small mammals (1), so a one-per-class batch is no longer possible
-without dogs or cats.
+last four.
+Batch O (giant millipede, jumping spider, hissing cockroach, stick insect) done
+and checked on branch claude/invertebrates-readmefirst-batch-ayolwx 2026-09-15,
+not merged. Four species rather than five, because that is what invertebrates
+had left. Pass grade B. Invertebrates are finished. That makes 80 router hubs;
+the 28 left are lizards (3), small mammals (1), cats (10) and dogs (14), so
+every remaining batch after fire skink, Jackson's chameleon, uromastyx and
+flying squirrel is a dog or cat batch.
 Batch J (mourning gecko, ackie monitor, garter snake, oscar, amano
 shrimp) passed its check at grade C+. Next is batch K: pick five, one per
 class, where a set from a recent batch points at them. Worker Opus 5 high effort, one Fable closing check per batch (the
 batch prompt in READMEFIRST has the reasoning).
 
-Done (61):
+Done (65):
 
 - [x] axolotl, White's tree frog
 - [x] African grey, budgie, cockatiel, cockatoo, conure, lovebird
@@ -446,15 +451,16 @@ Done (61):
       (batch M, merged to main 2026-09-15)
 - [x] bristlenose pleco, discus, swordtail, zebra danio, ghost shrimp
       (batch N, on branch 2026-09-15, not merged)
+- [x] giant millipede, jumping spider, hissing cockroach, stick insect
+      (batch O, on branch 2026-09-15, not merged)
 
-To do (32):
+To do (28):
 
 - [ ] Amphibians (0): none left, fire-bellied toad was the last one
 - [ ] Birds (0): none left, quaker parakeet was the last one
 - [ ] Fish (0): none left, batch N took the last four
 - [ ] Geckos (0): none left, leaf-tailed gecko was the last one
-- [ ] Invertebrates (4): giant millipede, jumping spider, hissing cockroach,
-      stick insect
+- [ ] Invertebrates (0): none left, batch O took the last four
 - [ ] Lizards (3): fire skink, Jackson's chameleon, uromastyx
 - [ ] Small mammals (1): flying squirrel
 - [ ] Snakes (0): none left, rosy boa was the last one
@@ -496,10 +502,14 @@ is why they kept getting deferred. Do them once section 7 is finished.
       rosy boa, stick insect, sugar glider, tarantula, tiger salamander,
       uromastyx, all in enrichment guides. Batch K cleared four of those
       (tiger salamander, parrotlet, emperor scorpion, rosy boa) and batch L
-      cleared the Argentine tegu. The grep returns 15 as of 2026-09-15 (batch M cleared the mouse enrichment guide): koi is
-      still on it, so batch K did not actually clear the five it claimed, and
-      the earlier count of 18 was wrong in both directions. Re-run the grep
-      rather than trusting this number. Shop copy with the product
+      cleared the Argentine tegu, batch M the mouse, and batch O the giant
+      millipede, hissing cockroach and stick insect. The grep returns 11 as of
+      2026-09-15, run after batch O: corydoras catfish, fire skink, gargoyle
+      gecko, gerbil, koi, neon tetra, pacman frog, red-eared slider, sugar
+      glider, tarantula and uromastyx. Koi is still on it, so batch K did not
+      actually clear the five it claimed, and the earlier count of 18 was wrong
+      in both directions. Re-run the grep rather than trusting this number. Fire
+      skink and uromastyx are in batch P, so two more clear themselves there. Shop copy with the product
       missing: "Other quantities are available and a proper depth needs
       several", "and other sizes are available" tacked onto an affiliate
       link, "Other flavors and sizes are available". Most are species whose
@@ -649,6 +659,71 @@ is why they kept getting deferred. Do them once section 7 is finished.
       against ADW's wider "3.5 to 8 cm". Smithsonian's "a maximum length of 2
       inches" supports the encyclopedia, no deep dive states a size, so nothing
       conflicts. (batch K)
+
+- [ ] Batch O's open items (giant millipede, jumping spider, hissing cockroach,
+      stick insect, 2026-09-15). Grouped by what each one needs.
+
+      Needs research:
+      - The hissing cockroach food removal window. The feeding guide says 24 to
+        48 hours and the health guide said 24; the health guide cites nothing,
+        so it moved to match the page that owns the topic. Neither source that
+        opens (the OSU Extension fact sheet serves a 403, Fluker Farms only says
+        to clean out leftovers regularly) states a window at all, and the figure
+        that moved was the stricter one. (batch O)
+      - The stick insect lifespan ceiling. The encyclopedia says "6 months-2
+        years depending on species" and the cost guide says "a small number of
+        larger species can reach 2 to 3 years". Neither page cites a lifespan
+        source, and what is published on the longest-lived commonly kept
+        phasmid, the jungle nymph, says up to 2 years. Left as written rather
+        than picked. (batch O)
+      - The hissing cockroach enrichment guide's welfare framework is a 2023
+        Animals paper on *Gromphadorhina oblongonota*, and the pet species is
+        *G. portentosa*. The guide says group-housed congener, which is honest,
+        but every claim the site makes about colony welfare rests on it. Worth
+        checking whether anything exists on portentosa itself. (batch O)
+      - Millipedes and isopods. The giant millipede setup guide says isopods
+        harass or weaken a millipede in a shared enclosure, unsourced, and one
+        of the two sources opened for the group-housing fix (Bugs in Cyberspace)
+        says they coexist. One of them is wrong and the guide is the one with no
+        citation. (batch O)
+
+      Needs a style decision:
+      - The jumping spider cost guide's Sources block carries "Bugs in
+        Cyberspace: Phidippus regius listings", a for-sale listing page, which
+        RULES bars from a Sources block. Deleting a Sources entry is on the
+        batch prompt's Never list, so it needs replacing rather than removing,
+        the same shape as the molly cost guide's Splashy Fish entry above.
+        (batch O)
+      - Three future-dated articles found in passing, all pre-existing:
+        giant-millipede-enrichment-guide and stick-insect-enrichment-guide at
+        2026-11-02 and 2026-11-01, and madagascar-hissing-cockroach-enrichment-
+        guide at 2026-10-19. Not bumped, since nothing about them changed, but
+        a date in the future is its own defect. (batch O)
+
+      Needs a mechanical pass:
+      - "Included in setup total" as a cost table cell. Two of batch O's four
+        species had a cost table whose stated floor was below the price of the
+        single item it priced, hidden behind that placeholder in every other
+        row: jumping spider $60-70 inside $50-120, stick insect $60-70 inside
+        $30-100. Both were fixed by filling the cells from the prices already
+        recorded in src/lib/data/affiliateProducts.js and summing. Grep the
+        corpus for the placeholder and check the arithmetic on every table it
+        appears in. (batch O)
+      - Gaps no page in the set answers, and no shared invertebrate guide
+        covers: quarantine or acclimation for a newly bought invertebrate, which
+        three of batch O's four readers asked for independently; enclosure
+        cleaning and substrate replacement intervals, asked for by all four; and
+        recapturing an escapee, asked for by two. These are shared-guide work,
+        not per-species work. (batch O)
+      - Stick insect eggs. The set now says plainly that a single female
+        produces fertile eggs without a male and that releasing them is
+        prohibited, and nowhere says what to do with them instead. The one gap
+        in this batch that a reader would hit within weeks of buying. (batch O)
+      - The invertebrate molting guide covers tarantulas, hermit crabs and
+        jumping spiders, and nothing else. Millipedes and stick insects both
+        link to it from their own guides, and the species check had to re-source
+        two hub rows away from it because it does not mention either animal.
+        Either widen it or stop pointing myriapods and phasmids at it. (batch O)
 
 - [ ] Legal guides missing from RELATED_ARTICLES, corpus-wide sweep. Three of
       batch I's five species had one (red-footed tortoise, degu, savannah

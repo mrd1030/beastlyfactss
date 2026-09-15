@@ -64,6 +64,7 @@ export const SHORT_LABELS = {
   'invertebrate-emergency-travel-shipping-guide': 'Emergency plan',
   'invertebrate-molting-guide': 'Molting guide',
   'invertebrate-pesticide-hazards-guide': 'Pesticide guide',
+  'invertebrate-rehousing-guide': 'Rehousing guide',
   'outdoor-reptile-housing-guide': 'Outdoor housing guide',
   'reptile-heating-thermostats-guide': 'Heating guide',
   'reptile-stool-urates-hydration-guide': 'Hydration guide',
