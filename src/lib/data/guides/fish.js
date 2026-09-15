@@ -988,48 +988,102 @@ export const fishGuides = [
   {
     id: "platy",
     name: "Platy",
-    emoji: "🐠",
+    emoji: "\u{1F420}",
     difficulty: "Beginner",
     petType: "Fish",
     image: "/assets/guides/platy.jpg",
     tagline: "The endlessly colorful beginner livebearer that's about as close to foolproof as fish get!",
     funFact: "Nearly every color and pattern of platy in the hobby, from Mickey Mouse to tuxedo to bumblebee, comes from generations of selective breeding and repeated hybridization between two closely related species, Xiphophorus maculatus and X. variatus, and even the swordtail. Wild platies are actually a fairly drab olive-brown; the huge color range sold today simply doesn't exist in nature.",
-    costs: {
-      setup: [
-        { item: "10+ gallon tank", low: 40, high: 80 },
-        { item: "Aquarium heater", low: 15, high: 25 },
-        { item: "Gentle filter", low: 15, high: 25 },
-        { item: "Live or silk plants", low: 15, high: 25 },
-      ],
-      annual: [
-        { item: "Flake/pellet food with vegetable content", low: 25, high: 45 },
-        { item: "Water conditioner and test kit", low: 20, high: 30 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Cycling, the hospital tank, water chemistry, filter
+    // maintenance, the power outage rule and the sick-fish check cite the
+    // shared aquarium guides in the sidebar's Health and More list.
+    // Reconciled 2026-09-15 after the platy set test (docs/READER_REVIEWS.md).
+    //
+    // Retired rather than moved: "Keep water between 72 and 78 degrees F",
+    // which the hub's own FAQ then contradicted with "down toward the low 70s
+    // or even high 60s"; a tank line of $40 to $80 against the cost guide's
+    // $20 to $40, with the filter and food rows drifting the same way; "20 to
+    // 80 fry per birth", which quotes the documented extreme as the norm where
+    // the cost and handling guides both say 20 to 50 with 80 as the ceiling;
+    // a diet claim that platies "genuinely benefit from a real vegetable or
+    // algae component ... rather than a purely protein-heavy diet" against a
+    // feeding guide that says the opposite, that platies "aren't as strictly
+    // dependent on a big vegetable ratio"; and "weekly 20 to 25 percent water
+    // changes", a schedule no platy deep dive carries, filed as a gap in
+    // docs/READER_LOG.md.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Tank size", value: "10 gallons is where most care sheets start, and it holds a small group of about five platies. The stricter figure is a minimum base footprint of 24 by 12 inches, and a standard 10 gallon is 20 by 10, so it does not meet that. A 20 gallon long does, at 30 by 12. Step up to a full 20 gallons for a group of six or more, or if you're letting the group breed.", source: "platy-tank-setup-guide" },
+        { label: "Temperature", value: "68 to 79\u00B0F, with the mid-70s the usual target. Stability matters more than hitting an exact number, avoid swings larger than about 2\u00B0F in a 24-hour period, since temperature instability is one of the more commonly cited triggers behind the livebearer \"shimmy.\" Variatus-line platies tolerate the cooler end better than most tropical fish, but a heater is still the safer default.", source: "platy-tank-setup-guide" },
+        { label: "Water chemistry", value: "Platies do best with a pH of 7.0 to 8.2, and tolerate 6.8 to 8.5. They prefer medium-hard to hard water, roughly 10 to 30 dGH, and genuinely won't thrive in very soft, acidic conditions the way some other tropical fish will.", source: "platy-tank-setup-guide" },
+        { label: "Cycle first", value: "Building the beneficial bacteria colony that processes waste takes 2 to 4 weeks with a fishless cycle, or somewhat less with a bottled bacteria product.", source: "platy-tank-setup-guide" },
+        { label: "Why the cycle gets skipped", value: "The one that gets skipped because the fish survives it. A platy will live through an uncycled tank. It will do so while being exposed to ammonia.", source: "platy-enrichment-guide" },
+        { label: "A group", value: "Peaceful, social fish that do better in numbers. Five or more spreads any chasing instead of focusing it on one individual, and produces more of the ordinary behavior that makes the fish worth watching.", source: "platy-enrichment-guide" },
+        { label: "Sex ratio", value: "Two to three females per male minimum, more females better. Or keep a single-sex group, which sidesteps both the harassment and the population question. The trap is the usual one: buying on color and finish produces a male-heavy tank without anyone deciding to make one.", source: "platy-enrichment-guide" },
+        { label: "Cover that breaks sight lines", value: "Dense live planting along the sides and back, plus floating plants. In a livebearer tank cover does specific work: it lets a pursued female stop being pursued, and it gives fry a survival rate you can manage rather than none or all. Leave open swimming space through the middle, since platies are active mid-water fish.", source: "platy-enrichment-guide" },
+        { label: "Feeding schedule", value: "Adults do well fed once or twice a day, some sources stretch that to three times for very small portions, feeding only what's fully cleared within a minute or two. Juveniles need two to three smaller meals a day to keep pace with faster growth.", source: "platy-feeding-guide" },
+        { label: "Diet", value: "True omnivores and unfussy eaters. A high-quality flake or small pellet works as the staple. Unlike mollies, whose wild diet leans heavily toward algae, platies aren't as strictly dependent on a big vegetable ratio, so the diet has more room to be flake or pellet forward. Rotating in blanched spinach, cucumber, zucchini and peas a couple of times a week still supports better color and digestion.", source: "platy-feeding-guide" },
+        { label: "Feed across the tank", value: "Spread food out and do not drop it in one place, so females being chased still eat.", source: "platy-enrichment-guide" },
+        { label: "The portion sign", value: "Watch for a long, stringy trail of waste hanging from the fish after a meal, a well-documented sign the portion was too large. Overfeeding drives constipation and swim bladder problems directly, and it is a far more common real problem than underfeeding.", source: "platy-feeding-guide" },
+        { label: "Sexing", value: "Males develop a modified anal fin called a gonopodium, a slender, rod-like structure used to fertilize females internally. It appears as the fish matures, somewhere between about two and a half and five months, driven by temperature and by the fish's own genotype. Females keep a fuller, fan-shaped anal fin and often develop a dark \"gravid spot\" near the vent.", source: "platy-handling-guide" },
+        { label: "Breeding rate", value: "A typical brood runs 20 to 50 fry, with a documented range up to 80 in ideal conditions, roughly every 4 to 6 weeks. A single female can store sperm from one mating for months and go on to produce repeat broods without a male present again.", source: "platy-cost-guide" },
+        { label: "Fry", value: "Platy parents provide no care after birth, and adults will readily eat their own fry given the chance. If you want fry to survive, dense live planting or a dedicated breeding or nursery tank gives them somewhere to hide until they're large enough to hold their own.", source: "platy-handling-guide" },
+        { label: "Handling", value: "An observation fish, not a hands-on one. If you need to move one, guide it with a net rather than touching it directly.", source: "platy-handling-guide" },
+        { label: "Quarantine", value: "Quarantining new fish for 2 to 3 weeks before adding them to an established tank catches most problems, shimmy included, before they spread.", source: "platy-health-issues-guide" },
+        { label: "Melanoma, the honest version", value: "Certain platy lines carry a pigment-cell gene that promotes melanoma, kept in check by a separate tumor-suppressor gene, and the cancer only breaks through in deliberate lab crosses with swordtails that separate the two. A 2024 review is explicit that this does not happen in the fish sold in pet shops. A dark lump on your platy is far more likely to be an injury, a cyst, or an unrelated growth.", source: "platy-health-issues-guide" },
+        { label: "Budget", value: "Standard varieties, reds, blues, tuxedos, wags, and most of the common patterns, run $2 to $6 each, with a six-pack landing around $30. Less common varieties like tiger ruby platies reach $8 to $10. A basic setup, tank, filter, heater, and a bit of planting, commonly runs $60 to $120, and full monthly upkeep for a 10-gallon tank lands around $15 to $20.", source: "platy-cost-guide" },
+        { label: "Vet costs", value: "Not applicable in the traditional sense. Platy health management is water quality and, when needed, over-the-counter treatments, not veterinary visits.", source: "platy-cost-guide" },
+        { label: "Lifespan", value: "2 to 4 years, with 3 to 4 achievable under stable conditions and excellent, consistent water quality pushing a fish toward 5.", source: "platy-cost-guide" },
+        { label: "Adult size", value: "2 to 3 inches (5 to 7.5 cm), females larger than males." },
+        { label: "Cycling, the finish line", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
+        { label: "Hospital tank", value: "A bare hospital tank with its own net and siphon hose, never shared with the display tank, and disinfected and stored dry between uses. A sponge filter gives gentle biological filtration without the flow of a hang-on-back or canister unit.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Water chemistry, the wider picture", value: "KH is the buffer holding pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you rather than chasing a number.", source: "freshwater-ph-gh-kh-guide" },
+        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
+        { label: "Power outage", value: "The threat is oxygen, not darkness. Once the filter and any air pump stop, the water surface stops moving, gas exchange slows, and dissolved oxygen starts dropping. Unplug the filter deliberately rather than letting it sit dead in the water.", source: "aquarium-power-outage-and-transport-guide" },
+        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
       ],
     },
-    sections: {
-      housing: "A 10-gallon tank is a reasonable minimum for a small group of platies, with 20 gallons or more suiting a full mixed community as a colony grows. Keep water between 72 and 78 degrees F; platies, especially variatus-line platies, tolerate cooler water than most tropical community fish, but a heater still keeps the temperature stable rather than tracking room-temperature swings. Gentle filtration and moderately hard, neutral-to-alkaline water suit them well, and live or silk plants give both adults and fry places to hide. Platies are peaceful and do best in groups, with a few extra females helping spread out male mating attention the same way it does with guppies.",
-      diet: "Platies are unfussy omnivores that do well on a high-quality flake or micro-pellet food as a dietary staple, and genuinely benefit from a real vegetable or algae component in that staple rather than a purely protein-heavy diet. Frozen or live brine shrimp and daphnia add welcome variety and encourage natural foraging behavior. Feed small amounts once or twice a day, only what's eaten within a couple of minutes.",
-      enrichment: "Platies are strongly social and do best in groups of five or six or more, with extra females reducing the mating pressure that a male-heavy ratio puts on individual females. They're active, easygoing swimmers that appreciate a mix of open water and planted cover, and their prolific breeding is itself a source of ongoing activity to watch, courtship displays, visibly pregnant females, and regular new broods of fry. As with guppies and mollies, adults, including the mother, will eat fry on sight, so dense planting or a breeding box is needed if you want any fry to reach adulthood.",
-      health: "Platies are among the hardiest common aquarium fish, but they're not immune to the standard livebearer issues: ich and fin rot both follow poor water quality, and swim bladder or digestive problems can follow an overly protein-heavy diet that skips vegetable matter. Because platies breed so readily, unmanaged population growth is a genuine and common problem, plan ahead with a single-sex group, a rehoming plan, or acceptance of natural fry predation. Weekly 20 to 25 percent water changes help keep pace with a growing colony's bioload.",
-      checklist: [
-        "10+ gallon tank (20+ for a full community)",
-        "Heater set to 72-78°F",
-        "Gentle filter",
-        "Live or silk plants",
-        "Moderately hard, neutral to alkaline water",
-        "High-quality flake or micro-pellet food with vegetable content",
-        "Frozen brine shrimp or daphnia for variety",
-        "Water conditioner and test kit",
-        "Plan for managing fry population growth",
+    emergencyCard: {
+      source: "platy-health-issues-guide",
+      callNow: [
+        "Small white spots resembling grains of salt across the body and fins",
+        "Fin edges that turn white, ragged, or frayed, working inward from the tips toward the base",
+        "Fluid buildup in the abdomen that makes the scales stand out in a raised, pinecone-like pattern",
+        "Buoyancy problems: floating, sinking, or swimming at an odd angle",
+        "A distinctive side-to-side, almost snake-like rocking motion as the fish swims",
       ],
+      vetLine: "Stress, poor or unstable water quality, overcrowding, and skipping quarantine are the common thread behind nearly every condition on this list, shimmy and the bacterial issues especially. A properly cycled tank, a stable temperature, and regular partial water changes with a conditioner prevent far more than any medication does after the fact. Dropsy is the hardest condition here to treat successfully and often carries a poor outlook by the time it's obvious.",
     },
+    routes: [
+      { slug: "platy-cost-guide", line: "$2 to $6 a fish, $60 to $120 for the tank around them, and the fry cost nobody budgets for." },
+      { slug: "platy-tank-setup-guide", line: "A real 10 gallons and why a 20 long meets the stricter footprint, hard alkaline water, and a filter that won't shred fry." },
+      { slug: "platy-feeding-guide", line: "Once or twice a day, why the vegetable side matters less here than for a molly, and the stringy-waste sign you overfed." },
+      { slug: "platy-handling-guide", line: "Gonopodium versus gravid spot, when a platy is old enough to sex, and four concrete ways to manage the population." },
+      { slug: "platy-health-issues-guide", line: "Ich, fin rot, dropsy, swim bladder and shimmy, plus the melanoma story told honestly in both directions." },
+      { slug: "platy-enrichment-guide", line: "The livebearer harassment research, the sex ratio it implies, and what cover actually does in a tank full of fry." },
+    ],
+    buyList: [
+      "10-gallon tank for a small group, or a 20-gallon long to meet the stricter footprint",
+      "Tight-fitting lid",
+      "Submersible aquarium heater",
+      "Gentle filter, or a sponge filter if fry survival matters",
+      "Dense live plants along the sides and back, plus floating plants",
+      "Crushed coral or a commercial buffering product, if your tap water runs soft",
+      "Liquid water test kit",
+      "Water conditioner",
+      "High-quality flake or small pellet",
+      "Spinach, cucumber, zucchini or peas to blanch",
+      "Frozen brine shrimp, bloodworms or daphnia",
+    ],
     faqs: [
-      { q: "How big do platies get?", a: "About 2 to 3 inches (5-7.5 cm), with females growing noticeably larger than males. That makes them a close size match for guppies, just a touch bigger, and comfortably smaller than a swordtail." },
-      { q: "Do platies need a heater?", a: "It's still a good idea, even though platies, especially variatus-line platies, tolerate cooler water better than most tropical fish, down toward the low 70s or even high 60s °F. A heater keeps temperature stable rather than swinging with room temperature, which matters more for long-term health than the exact number." },
-      { q: "How often do platies have babies?", a: "Roughly once a month. Females can store sperm from a single mating and go on to produce several broods afterward, typically 20 to 80 fry per birth depending on the female's age and size." },
-      { q: "Can platies interbreed with swordtails?", a: "Yes, readily. Platies and [swordtails](/guides/swordtail/) are both in the genus Xiphophorus and close enough to produce fertile hybrids. This isn't rare: deliberate crossbreeding between the two has been part of the aquarium hobby for close to a century, so many platies and swordtails sold today already carry some hybrid ancestry." },
-      { q: "What's the difference between a platy and a guppy?", a: "Fins and body shape, mainly. [Guppies](/guides/guppy/) are prized for long, flowing tails in countless finnage varieties, while platies have a stockier, more torpedo-shaped body and lean more on solid color and pattern variety than fin shape. Platies also run a bit larger, 2 to 3 inches versus a guppy's 1 to 2.4 inches, but both are easy, similarly-kept Poeciliidae livebearers otherwise." },
-      { q: "Are platies good pets for beginners?", a: "Yes, genuinely one of the easiest and hardiest community fish available. They tolerate a wide range of water conditions, eat almost anything, and the main beginner mistake is being unprepared for how quickly a small group turns into a much bigger one." },
+      { q: "What temperature do platies need?", a: "68 to 79\u00B0F, with the mid-70s the usual target. Hold it steady rather than chasing a number: swings over about 2\u00B0F in a day are the problem. Variatus-line platies handle the cool end better than most tropical fish, though a heater is still the safer default unless the room stays warm all year." },
+      { q: "How often should I feed my platy?", a: "Adults do well fed once or twice a day, some sources stretch that to three times for very small portions, feeding only what's fully cleared within a minute or two. Juveniles need two to three smaller meals a day to keep pace with faster growth." },
+      { q: "Is it true that platies can get tumors?", a: "Yes, and it's one of the most studied facts in the species, but keep it in perspective. Certain platy and swordtail genetic lines develop melanoma through a well-understood mechanism, and Xiphophorus fish have been used as a cancer research model for over 70 years. Importantly, this does not happen spontaneously in an ordinary pet-store platy under normal conditions, it requires deliberate cross-breeding between platies and swordtails in a lab setting to unmask the trait. If you find a lump or dark growth on your own platy, it's far more likely to be an injury, a cyst, or an unrelated growth than that specific research-famous condition, a vet or fish-health specialist can help rule out the more common, more treatable causes." },
     ],
   },
   {
