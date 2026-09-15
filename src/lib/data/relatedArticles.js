@@ -119,7 +119,7 @@ export const RELATED_ARTICLES = {
   'platy': ['aquarium-power-outage-and-transport-guide', 'aquarium-cycling-guide', 'aquarium-filtration-guide', 'freshwater-ph-gh-kh-guide', 'fish-quarantine-and-treatment-guide', 'spotting-a-sick-fish-guide', 'platy-swordtail-molly-overview'],
   'swordtail': ['aquarium-power-outage-and-transport-guide', 'aquarium-cycling-guide', 'aquarium-filtration-guide', 'freshwater-ph-gh-kh-guide', 'fish-quarantine-and-treatment-guide', 'spotting-a-sick-fish-guide', 'platy-swordtail-molly-overview'],
   'zebra-danio': ['aquarium-power-outage-and-transport-guide', 'aquarium-cycling-guide', 'aquarium-filtration-guide', 'freshwater-ph-gh-kh-guide', 'fish-quarantine-and-treatment-guide', 'spotting-a-sick-fish-guide', 'cooling-an-aquarium-without-a-chiller-guide', 'zebra-danio-bristlenose-pleco-discus-cardinal-tetra-overview'],
-  'flying-squirrel': ['rat-mouse-flying-squirrel-overview'],
+  'flying-squirrel': ['flying-squirrel-legal-guide', 'small-mammal-vet-visits-and-travel-guide', 'rat-mouse-flying-squirrel-overview'],
   'mouse': ['rat-mouse-flying-squirrel-overview'],
 };
 

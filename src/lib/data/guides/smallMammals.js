@@ -450,49 +450,90 @@ export const smallMammalGuides = [
     image: "/assets/guides/flying-squirrel.jpg",
     tagline: "The tiny gliding rodent that evolved the same trick as a sugar glider, completely independently!",
     funFact: "Flying squirrels are true rodents, not marsupials, so despite gliding the same way on the same kind of wrist-to-ankle membrane, they aren't closely related to sugar gliders at all. It's convergent evolution: two unrelated animals independently landing on the same solution.",
-    // Verified against real research in the flying squirrel deep-dive articles
-    // (content/guides/flying-squirrel-cost-guide.mdx and siblings).
-    // Legal status varies significantly by US state since this is a native wildlife
-    // species in much of its range, unlike the non-native sugar glider - a
-    // dedicated legal-guide research pass still has not been done. Do not state
-    // specific state legality here.
-    costs: {
-      setup: [
-        { item: "24x24x36 in aviary-style cage", low: 150, high: 300 },
-        { item: "Solid exercise wheel (glider/squirrel-safe)", low: 40, high: 70 },
-        { item: "Multiple sleeping pouches", low: 30, high: 50 },
-        { item: "Branches, ropes, and climbing structure", low: 25, high: 50 },
-      ],
-      annual: [
-        { item: "Varied nuts, seeds, fruit, vegetables, and protein", low: 360, high: 720 },
-        { item: "Calcium and multivitamin supplements", low: 20, high: 30 },
-        { item: "Annual exotic vet wellness check", low: 75, high: 150 },
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Reconciled 2026-09-15 after the flying squirrel set
+    // test (docs/READER_REVIEWS.md).
+    //
+    // No shared small-mammal guide names this species, so unlike the other
+    // three species in batch P this hub carries no shared-guide rows. The
+    // sidebar gained the vet visits and travel guide, which is the closest
+    // shared page and the one the sugar glider already carries, and the legal
+    // guide, which is this species' own article and was reachable from
+    // nowhere in the sidebar because "legal" is not a standard suffix.
+    //
+    // Retired rather than moved: a cage at $150 to $300 against the cost
+    // guide's $120 to $300; sleeping pouches at $30 to $50 against $25 to $50;
+    // climbing structure at $25 to $50 against $20 to $50.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "Check the law first", value: "Flying squirrels are native wildlife across most of the eastern United States, which puts them in a different legal category than an imported exotic like the sugar glider. Some states regulate native species like this one under wildlife and game law rather than standard exotic-pet rules, so check your state wildlife agency before you commit to buying one, not after.", source: "flying-squirrel-cost-guide" },
+        { label: "Where that lands", value: "Kansas bans them outright and Georgia effectively does. West Virginia issues a $2 permit, Mississippi requires a hunting license and caps possession at two, North Carolina's licence expressly excludes an application filed merely as a pet, and Texas allows 25 per person but bars selling or trading them. Massachusetts, New Jersey, Tennessee, Minnesota, Idaho, Washington, the Dakotas and Florida each reach legal by a different route.", source: "flying-squirrel-legal-guide" },
+        { label: "The squirrel, and realistically two", value: "Roughly $200 to $450 for a hand-raised baby, with some going higher depending on age, breeder reputation, and demand. Flying squirrels are intensely social, denning together in groups through the winter in the wild, and a solitary pet is a genuinely stressed one, so budget for a same-sex pair or small group from the start.", source: "flying-squirrel-cost-guide" },
+        { label: "Buy young", value: "Buying young, ideally around 6 to 8 weeks old, matters more here than with most small pets, since a flying squirrel's window for bonding closely with a keeper narrows the older it gets.", source: "flying-squirrel-cost-guide" },
+        { label: "Setup budget", value: "Roughly $200 to $500 for a pair: a tall aviary-style cage at $120 to $300, a solid axle-free wheel at $30 to $60, multiple sleeping pouches or a nest box at $25 to $50, and branches, ropes and climbing structure at $20 to $50. Add bedding, dishes and a few toys on top.", source: "flying-squirrel-cost-guide" },
+        { label: "First-year total", value: "Most first-year totals, squirrels plus setup, land somewhere in the $500 to $1,000-plus range.", source: "flying-squirrel-cost-guide" },
+        { label: "Cage size", value: "The floor is roughly 24x24x36 inches, or 30 wide by 18 deep by 36 tall, which is the same volume in a different shape. Both put height first, and that is the dimension that matters for a climbing, gliding animal. Go bigger than the minimum wherever you can, especially for a pair or small group.", source: "flying-squirrel-tank-setup-guide" },
+        { label: "Bar spacing", value: "No more than half an inch, matching the standard used for sugar gliders. A young or small-bodied flying squirrel is small enough to squeeze through wider gaps, so escape-proofing matters here as much as the cage's overall size does.", source: "flying-squirrel-tank-setup-guide" },
+        { label: "Temperature", value: "Flying squirrels are native to temperate North American forests, where they deal with real seasonal cold every winter, so they're comfortable in a noticeably cooler 65 to 75°F range indoors. They tolerate a cool room reasonably well but struggle with heat, so avoid letting the room climb much past 80°F, and still keep the cage away from cold drafts and direct sun.", source: "flying-squirrel-tank-setup-guide" },
+        { label: "Light", value: "No special humidity control is needed. Flying squirrels can synthesize some vitamin D through skin exposure to light, unlike a sugar glider, so regular access to natural daylight or full-spectrum lighting, at least 20 minutes a day, alongside dietary calcium and D3, is generally recommended here rather than optional.", source: "flying-squirrel-tank-setup-guide" },
+        { label: "The wheel", value: "A standard hamster or rat wheel is genuinely dangerous for a flying squirrel, not just the wrong size. Many of those wheels have a center axle bar running through the middle, and it can seriously injure a small, bouncy animal's spine or tail mid-run. Look specifically for a solid, axle-free wheel at least 12 inches across.", source: "flying-squirrel-tank-setup-guide" },
+        { label: "Where they sleep", value: "Position sleeping pouches or a nest box high in the cage, matching this species' natural preference for denning up off the ground. A few hanging fleece hammocks or sleep sacks at varied heights work well, and flying squirrels den communally, so plan for more than one resting spot even with a bonded pair.", source: "flying-squirrel-tank-setup-guide" },
+        { label: "The floor", value: "A solid cage bottom with a washable liner underneath the main living area works better than loose bedding, which accumulates waste and gets harder to keep clean over time. Water goes in a bottle or a shallow dish, changed daily. Inside the nest box or sleeping pouch itself, a soft lining, shredded paper or a scrap of fleece, gives them something to burrow into.", source: "flying-squirrel-tank-setup-guide" },
+        { label: "The diet, in one line", value: "A high-quality pelleted rodent-block staple works as the nutritional foundation. Build the rest around it: fresh produce daily, and a protein source, mealworms, crickets, a little cooked chicken, or hard-boiled egg, every day or two. Nuts, seeds, and dried fruit are best treated as occasional treats layered on top, not the base of the diet the way a wild squirrel's diet might suggest.", source: "flying-squirrel-feeding-guide" },
+        { label: "When to feed", value: "Offer fresh food in the evening. Flying squirrels are strictly nocturnal, most active from dusk through the night, so a morning feeding routine misses their actual appetite window.", source: "flying-squirrel-feeding-guide" },
+        { label: "The ratio that matters", value: "The target calcium-to-phosphorus ratio is roughly 2:1. Keep nuts and seeds to a genuinely small portion, they're calorie-dense and phosphorus-heavy, and a captive squirrel eating them at anything close to wild-forager frequency will run into weight and calcium problems fast.", source: "flying-squirrel-feeding-guide" },
+        { label: "Water", value: "Fresh water goes in a bottle or a shallow dish, changed daily, and a bottle stays cleaner in a cage this active.", source: "flying-squirrel-feeding-guide" },
+        { label: "Never feed", value: "Skip chocolate, dairy, candy, and anything processed or heavily salted entirely, none of it appears anywhere in a wild diet, and none of it does a captive squirrel any favors either.", source: "flying-squirrel-feeding-guide" },
+        { label: "Metabolic bone disease", value: "The most common serious health issue in captive flying squirrels, and almost entirely diet-driven, from a calcium-poor, phosphorus-heavy diet built too heavily around nuts, seeds, and acorns. Watch for lethargy, reduced appetite, and reluctance to climb or move normally early on, progressing toward hind-limb weakness, tremors, and in advanced cases, fractures, paralysis, and seizures.", source: "flying-squirrel-health-issues-guide" },
+        { label: "Teeth", value: "Flying squirrels are true rodents, and like all rodents, their incisors are rootless and grow continuously throughout life. Inadequate wear can lead to overgrown or misaligned incisors, so appropriate gnawing opportunities and a watchful eye on tooth length and alignment are worth building into routine care.", source: "flying-squirrel-health-issues-guide" },
+        { label: "Obesity", value: "From a diet too heavy in nuts, seeds, and sugary fruit relative to how much a caged animal actually moves compared to a wild forager covering real distance every night. Manageable at home with diet correction, though it's worth a vet visit to confirm you're making the right adjustment rather than guessing.", source: "flying-squirrel-health-issues-guide" },
+        { label: "They hide illness", value: "Like most small pet rodents, flying squirrels are prey animals by instinct, and they tend not to show obvious signs of pain or distress until a condition is fairly advanced. A squirrel that's simply a little quieter or eating a little less can already be dealing with something real.", source: "flying-squirrel-health-issues-guide" },
+        { label: "Bonding starts in a pouch", value: "A young flying squirrel doesn't bond through direct handling on day one. It bonds by being carried against your body in a pouch for several hours a day, getting used to your scent, warmth, and movement before real hands-on interaction starts. Most sources describe the full bonding process taking somewhere between 2 and 8 weeks, depending on how consistently you put in the time.", source: "flying-squirrel-handling-guide" },
+        { label: "A startled one", value: "An unbonded or frightened flying squirrel's first move is to get away, and it's genuinely good at that. Even indoors, a startled squirrel can jump and glide farther than most people expect, which makes a still-bonding animal a real flight risk in an open room. It may also nip if it feels cornered or restrained, a defensive reaction and not aggression.", source: "flying-squirrel-handling-guide" },
+        { label: "Handle at night", value: "Handling during the day, when a nocturnal animal wants to be sleeping, is on the first-timer mistake list, along with handling in a cold room: this species does best in the mid-60s to mid-70s Fahrenheit.", source: "flying-squirrel-handling-guide" },
+        { label: "What the enclosure has to answer", value: "The sugar glider's picture transfers almost exactly: colonial animals where solitary housing is treated as a major welfare risk, height and glide routes over floor space, a pouch or cavity to sleep in through the day, foraging presented at height, and a solid-track wheel. Where it breaks down is the teeth, since gnawing is a requirement for a rodent in a way it is not for a glider.", source: "flying-squirrel-enrichment-guide" },
       ],
     },
-    sections: {
-      housing: "A tall, multi-level aviary-style cage, 24x24x36 inches at an absolute minimum and larger where possible, suits this genuinely active, vertically-oriented species. Provide multiple sleeping pouches at different heights along with branches, ropes, and ladders for climbing and gliding practice. Keep the room around 65 to 75 degrees F; this species is native to temperate North American forests, tolerates a cool room well, but struggles with heat, so avoid letting it climb much past 80 degrees F, and keep the cage away from cold drafts too. Unlike a sugar glider, flying squirrels can synthesize some vitamin D through skin exposure to light, so regular access to natural daylight or full-spectrum lighting alongside dietary calcium is generally recommended. Flying squirrels are nocturnal and most active at dusk and through the night, so plan feeding and interaction around their schedule, not a daytime one.",
-      diet: "A varied omnivorous diet of nuts, seeds, fruit, vegetables, and a protein or insect component, with calcium and multivitamin supplementation to prevent the same calcium-phosphorus imbalance risk seen in sugar gliders. Avoid an all-seed or nut-heavy diet, both for calcium balance and because the fat content drives obesity in a captive animal that's naturally far more active than its cage allows.",
-      enrichment: "Deeply social, a solitary flying squirrel is a stressed one, and they should be kept in same-sex or bonded pairs and small groups, closely paralleling the sugar glider's social requirement. Hand-raised, captive-bred joeys imprint readily and often bond very closely with a consistent handler, commonly carried in a bonding pouch during the day so they acclimate to a keeper's scent ahead of active evening handling sessions. Wild-caught or late-socialized animals are considerably more skittish and not a realistic pet.",
-      health: "Metabolic bone disease from inadequate calcium relative to phosphorus is the same underlying risk seen in sugar gliders, driven by an unbalanced, seed-heavy diet without supplementation. Unlike sugar gliders, which are marsupials, flying squirrels are true rodents with continuously growing incisors, so dental disease from inadequate wear is a real, if secondary, risk worth watching for alongside the diet-driven issues. Obesity from excess nuts or sugary fruit relative to a captive animal's activity level is also common. As with most small exotic mammals, illness is often hidden until it's advanced; a flying squirrel that's lethargic or off its food needs prompt exotic veterinary attention, not a wait-and-see approach.",
-      checklist: [
-        "24x24x36 in+ aviary-style cage",
-        "Multiple sleeping pouches at varied heights",
-        "Branches, ropes, and climbing structure",
-        "Solid exercise wheel (glider/squirrel-safe)",
-        "Varied nuts, seeds, fruit, vegetables, and protein",
-        "Calcium and multivitamin supplements",
-        "Same-sex or bonded pair/small group housing",
-        "Bonding pouch for daytime carrying",
-        "Nocturnal-schedule handling and feeding",
-        "Exotic veterinarian experienced with flying squirrels",
+    emergencyCard: {
+      source: "flying-squirrel-health-issues-guide",
+      callNow: [
+        "Reduced appetite, lethargy, or coordination changes, which are the early signs of metabolic bone disease",
+        "Hind-limb weakness, tremors, fractures, paralysis, or seizures, which are the advanced ones",
+        "Overgrown or misaligned incisors, or a squirrel that has stopped gnawing",
+        "Any change in appetite, activity level, or coordination, since this species hides illness until it is advanced",
       ],
+      vetLine: "Always see an exotic vet at the first sign of reduced appetite, lethargy, or coordination changes, don't wait to see if it resolves on its own. Caught early, this is treatable with corrected calcium, vitamin D3, appropriate light exposure, and an overall diet fix under veterinary guidance. The real fix, though, is prevention: a properly balanced diet with a rodent-block staple and consistent calcium and vitamin D3 supplementation from the start.",
     },
+    routes: [
+      { slug: "flying-squirrel-cost-guide", line: "$200 to $450 a squirrel and you need two, $200 to $500 of cage, and the legal check that comes first." },
+      { slug: "flying-squirrel-tank-setup-guide", line: "Tall not wide, half-inch bar spacing, 65 to 75F, and the axle-free wheel that is not optional." },
+      { slug: "flying-squirrel-feeding-guide", line: "Rodent block as the base, the 2:1 calcium ratio, and why a nut-and-seed diet is the trap." },
+      { slug: "flying-squirrel-handling-guide", line: "Bonding starts in the pouch at 6 to 8 weeks, and what a startled glider does in an open room." },
+      { slug: "flying-squirrel-health-issues-guide", line: "Metabolic bone disease first, then the teeth, and why a quieter squirrel is already a sick one." },
+      { slug: "flying-squirrel-enrichment-guide", line: "What transfers from the sugar glider, what does not, and why the gnawing is the difference." },
+      { slug: "flying-squirrel-legal-guide", line: "Native wildlife rather than exotic pet, state by state, from a $2 permit to an outright ban." },
+    ],
+    buyList: [
+      "A tall aviary-style cage, 24x24x36 inches at the floor and bigger for a pair",
+      "Half-inch bar spacing, or narrower",
+      "A solid, axle-free wheel at least 12 inches across",
+      "Several sleeping pouches or a nest box, hung high",
+      "Fleece hammocks and sleep sacks at varied heights",
+      "Branches, ropes and climbing structure at varying angles",
+      "A washable cage liner rather than loose bedding",
+      "A bonding pouch you can carry against your body",
+      "Rodent-block staple food",
+      "A calcium and vitamin D3 supplement",
+      "Gnawing material, since the incisors never stop growing",
+    ],
     faqs: [
-      { q: "Is it legal to own a pet flying squirrel?", a: "It depends heavily on your state, more so than for most pets on this site. Because the Southern flying squirrel is native wildlife across much of the eastern US, several states regulate it under wildlife and game laws rather than exotic-pet rules, a meaningfully different category than how most states treat the non-native sugar glider. Some states permit documented captive-bred animals while restricting wild-caught ones; others restrict native flying squirrels more broadly. Check your specific state's wildlife agency before acquiring one." },
-      { q: "What's the difference between a flying squirrel and a sugar glider?", a: "They're not related at all, despite looking and gliding almost identically. Flying squirrels are true rodents; [sugar gliders](/guides/sugar-glider/) are marsupials, an unrelated lineage that independently evolved the same wrist-to-ankle gliding membrane. Flying squirrels are smaller and lighter, and their legal status is more complicated in the US since they're native wildlife rather than an exotic species everywhere." },
-      { q: "Can a flying squirrel live alone?", a: "Not well. Flying squirrels are deeply social and a solitary animal is a genuinely stressed one, closely mirroring the same requirement in sugar gliders. Plan for a same-sex or bonded pair, or a small group, rather than a single animal." },
-      { q: "How long do flying squirrels live?", a: "3 to 6 years is typical in the wild, sources vary within that range; captive individuals with good care commonly average around 10 years, and well-documented pets have lived past 19, meaningfully longer than most people expect from an animal this small." },
-      { q: "Are flying squirrels good pets for beginners?", a: "No. Between the specialized calcium-balanced diet, mandatory social housing, a nocturnal schedule that demands evening commitment, and legal status that genuinely varies by state, this is an advanced exotic pet in the same tier as the sugar glider, not a casual first exotic." },
+      { q: "What size cage does a flying squirrel need?", a: "A minimum of roughly 24x24x36 inches, or 30x18x36 for the same volume in a different shape. Either way, prioritize height over floor space, this is a climbing, gliding animal, and bigger than the stated minimum is always better, especially for a pair or small group." },
+      { q: "What do pet flying squirrels eat?", a: "A base of high-quality rodent-block pellets, supplemented daily with fresh produce and a protein source (mealworms, crickets, or a little hard-boiled egg or chicken) every day or two, plus a calcium and vitamin D3 supplement. Nuts and seeds are best treated as occasional treats rather than a staple, even though that's what people picture first." },
+      { q: "What is the most common serious health issue in pet flying squirrels?", a: "Metabolic bone disease. It's almost entirely diet-driven, caused by a calcium-poor, phosphorus-heavy diet, typically one built too heavily around nuts and seeds without calcium and vitamin D3 correction, and it's the same underlying risk that makes sugar glider nutrition so unforgiving." },
     ],
   },
   {
