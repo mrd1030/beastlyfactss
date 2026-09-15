@@ -14397,3 +14397,43 @@ winter, quarantine for a new arrival, cleaning beyond substrate replacement, and
 species identification and sexing, which every host plant and humidity answer
 depends on. The eggs one is the most serious, since this set now says plainly that
 a single female will produce them and that letting them go outside is illegal.
+
+## Giant millipede, jumping spider, hissing cockroach, stick insect (2026-09-15, batch O species check)
+
+One Fable agent over the whole branch (claude/invertebrates-readmefirst-batch-ayolwx from bd9bf3d), reading diffs. Four species, not five, because invertebrates had exactly four left. Nothing merged.
+
+Scope: clean on all four. The only src edits are the four hub entries, one SHORT_LABELS line (invertebrate-rehousing-guide), three RELATED_ARTICLES lines, and one encyclopedia field. The millipede wildLifespan edit was checked against CuriOdyssey's own page (curiodyssey.org/animals/our-animals/invertebrates/giant-african-millipede/), which reads "In the Wild: 5-7 years. In Captivity: 7-10 years", so the field stands.
+
+Hub rows, all four: every FAQ is a verbatim frontmatter copy (12 of 12, the batch J defect did not recur), every route covers an own deep dive and nothing shared, no buy list carries a price, difficulty matches the encyclopedia on all four, no row carries a source name or a disagreement, and no hub line disagrees with its deep dive on the numbers checker. What did fail was rows sourced to a shared guide that does not say what the row says:
+
+- Jumping spider "Molting", sourced to the invertebrate molting guide, was the enrichment guide's "sealed itself into a retreat" sentence plus a written second sentence. Now the molting guide's own words: pre-molt signs from its species table, and its "never disturb a molting invertebrate" rule.
+- Stick insect "Molting", sourced to the molting guide, which does not cover stick insects at all; the sentence was the enrichment guide's. Re-sourced to the enrichment guide with that guide's three sentences.
+- Hissing cockroach "Moving them", sourced to the rehousing guide, which has no cockroach content; the row borrowed the millipede's soft-brush sentence. Removed, since no page states it.
+- Stick insect "A power cut, and a trip": the second sentence ("Fresh cuttings in water and stable humidity do more for a short absence than anything else") appears nowhere in the emergency guide. Cut.
+
+Emergency cards: jumping spider (6 of 6) and hissing cockroach (8 of 8) are exact copies of the feeding guides' concern lists, which is where those sets keep them. Millipede had one written bullet of six ("A molt that has been disturbed, or shed skin still attached, which is never to be assisted or pulled off by hand"), now the health guide's "A failed or incomplete molt, often fatal: never assist a molt or attempt to remove shed skin yourself, this can cause real harm". Stick insect had three written bullets of five, now the health guide's own FAQ sentences (vertical space and pre-molt humidity, small nymphs drowning in the foliage reservoir, and the lost leg an adult keeps), and its vetLine carried "invertebrate veterinary care isn't really a thing for this species", which the health guide does not say; cut. The jumping spider vetLine dropped the feeding guide's lead hedge ("None of this is veterinary-established, it is hobbyist-reported") and opened with a written clause instead; the hedge is back and the clause is gone.
+
+Numbers: every decision went the way the ranking picks. Hissing cockroach time to adulthood, five months to six-to-seven, is Animal Diversity Web's "usually takes 6-7 months" (university museum over care sheets), confirmed on the page. The food removal window went to the feeding guide as owner of the topic. The jumping spider misting cadence went to the setup guide by the subject rule; the review said neither page's sources settle it, which is not quite right, since ExoPetGuides (a setup guide source) states "every two to three days" outright while Bugs in Cyberspace (a feeding guide source) says "daily or frequent mistings", same tier, so the subject rule still decides and the outcome holds. Both re-priced cost tables add up against affiliateProducts.js ($60-70 + $25-37 + $9-12 + $7-12 + $11-19 = $112-150; $60-70 + $10-16 + $7-12 = $77-98) and every frontmatter copy moved; no stale copy survives anywhere on the site. Dates are right on every file, links are within one sibling per article on all 22 files, and the voice warning set is identical to base on all 22.
+
+De-narration, the batch K and M failure mode, happened three times and none of them changed a figure:
+
+- Millipede handling: "Refusing to move is not on either source's list of stress signs" became "is not a stress sign at all". Now "is not a listed stress sign".
+- Jumping spider feeding: "One breeder source recommends even more frequent daily small feedings" became "daily small feedings at this stage are common too". Now "one breeder recommendation goes further, to daily small feedings at this stage".
+- Hissing cockroach feeding: "An academic extension fact sheet instead describes a sparser regimen for a small pet colony" became "A small pet colony does fine at the lighter end of that". Now "can be kept at the lighter end of that", in the article and the hub row.
+
+Research read back against the sentence, the batch L and M rule, caught four more:
+
+- Millipede handling: the secretion "leave[s] a temporary stain". Tree of Life says nothing about staining, the legal guide says "staining" with no duration. "temporary" cut, article and hub row.
+- Millipede setup: "every extra animal wants more floor and more substrate of its own" is not in either opened source. Now Tree of Life's own reason, "crowding, which brings stress and competition for resources", article and hub row.
+- Stick insect setup Diet Basics: "A stick insect will not eat crisped foliage" is in neither the Phasmid Study Group page nor the AES caresheet (which serves a verification wall to a fetch; its search snippet covers fresh food and washing only). Cut; "replace it before the leaves dry" stays.
+- Hissing cockroach setup: the new sexing section was written from Animal Diversity Web, which the page did not cite. ADW confirms the pronotal horns, much smaller in females, and males growing larger, and now sits in a Sources block on that guide. Same page: "a solitary roach is neither how they live nor how they have been studied" leaned on the enrichment guide's 2023 Animals paper, which is on Gromphadorhina oblongonota, not portentosa. Trimmed to what ADW says of portentosa ("social", "huddle together"): "they are social, they huddle together, and a solitary roach is not how they live". The oblongonota citation on the enrichment guide predates this batch and is left for a research pass.
+
+Review file: the stick insect section says five links were added, one per article; the diff has four (the setup guide gained none). The jumping spider misting note is corrected above. Everything else claimed in the four sections matches the diff, including the raw reader output filed in docs/READER_LOG.md for all four.
+
+Not changed, noted: the jumping spider handling guide gained a third first-timer bullet to match a FAQ that already promised three; no date bump, since the fact was already on the page.
+
+Verdicts: giant millipede fixed on the branch; jumping spider fixed on the branch; hissing cockroach fixed on the branch; stick insect fixed on the branch.
+
+Gates on the branch head: check-internal-links, check-related-articles, check-affiliate-mdx, check-cost-coverage, check-seo-tags, check-voice --strict, eslint all clean. check-species-numbers: no hub line disagrees with a deep dive on any of the four; the strict exit is on advisory groups only, the same as every merged reconciled species.
+
+Pass grade: B. Everything the last six batches were told about and kept getting wrong came back right: FAQs verbatim, frontmatter copies moved with the figure, no source name in any row, no stale figure anywhere, real sources opened for every number and the encyclopedia field. What it still got wrong is the other half of the same list: three hedges upgraded during de-narration, four hub rows and four emergency bullets written rather than pasted on three of four species, two sentences written past what the opened source says, and one review count off by one.
