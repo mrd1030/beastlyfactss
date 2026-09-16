@@ -373,7 +373,7 @@ export const fishGuides = [
         { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
         { label: "Budget", value: "$3 to $8 each, and six or more is the requirement, so price the school. Roughly $150 to $215 for the equipment, then $10 to $20 a month. Aquatic vets are uncommon; keepers handle most problems through water quality.", source: "corydoras-catfish-cost-guide" },
         { label: "Lifespan", value: "5 to 10 years typical, with reports of up to 15.", source: "corydoras-catfish-cost-guide" },
-        { label: "Adult size", value: "1 to 3 inches (2.5 to 7.5 cm) depending on species." },
+        { label: "Adult size", value: "1 to 3 inches (2.5 to 7.5 cm), pygmy species at the low end." },
       ],
     },
     emergencyCard: {

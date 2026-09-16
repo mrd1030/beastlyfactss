@@ -480,7 +480,7 @@ To do (24):
 None of these blocks a batch, and none of them is a per-species job, which
 is why they kept getting deferred. Do them once section 7 is finished.
 
-- [ ] Corydoras adult size, hub against encyclopedia. The corydoras hub's
+- [x] Corydoras adult size, hub against encyclopedia. The corydoras hub's
       sourceless Adult size row says "1 to 3 inches (2.5 to 7.5 cm)" and the
       encyclopedia entry it is supposed to copy says "2-3 inches (5-7.5 cm)".
       No deep dive states a size, so under RULES the row takes the
@@ -490,7 +490,8 @@ is why they kept getting deferred. Do them once section 7 is finished.
       species and 20 for standard), and 2 inches as a floor excludes the
       pygmy species the same set tells a reader they can keep. Found by the
       numbers checker after batch I's species check, which missed it.
-- [ ] A shared chelonian soaking guide. How often, how deep, how warm, how
+      - DONE 2026-09-16: the encyclopedia now reads 1-3 inches (2.5-7.5 cm), pygmy species at the low end, which is the range the set itself sizes tanks for, and the hub row copies it.
+- [x] A shared chelonian soaking guide. How often, how deep, how warm, how
       long. Two tortoise readers have now asked for it, sulcata in batch H
       for juveniles and red-footed tortoise in batch I for the species
       generally, and every page in both sets says the animal soaks often
@@ -533,32 +534,35 @@ is why they kept getting deferred. Do them once section 7 is finished.
       correctly stripping a source name the deep-dive FAQ still carried, so
       the fix went upstream into the article. One was a real number defect,
       below.
-- [ ] The amano shrimp encyclopedia overview still opens "the largest shrimp
+- [x] The amano shrimp encyclopedia overview still opens "the largest shrimp
       commonly kept in freshwater aquariums", the same claim the adultSize
       field was corrected for in batch J. Bamboo shrimp reach 2 to 3 inches
       and are common in the trade, and Atya gabonensis reaches 15 cm. One
       clause, same entry, left alone because the species check works under a
       one-field rule.
-- [ ] Source narration in pre-existing FAQs no hub row copies, found by the
+      - DONE 2026-09-16: "the largest of the dwarf shrimp commonly kept".
+- [x] Source narration in pre-existing FAQs no hub row copies, found by the
       batch J check while looking at something else: two on the amano feeding
       guide ("Seriously Fish is direct about this", "Shrimp Science notes
       plainly") and one on the garter feeding guide ("Sources land in a
       similar range"). Likely more of the same corpus-wide, since four
       batches running have found this shape in text the batch did touch.
+      - DONE 2026-09-16 for the three named; no corpus-wide pass yet.
 - [x] DONE 2026-09-16, both. Cherry shrimp has the same three-guide RELATED_ARTICLES entry amano
       shrimp had before batch J, so its sidebar is missing cycling, quarantine
       and the sick-tank check that every fish species carries. One line.
       Ghost shrimp gained cycling in batch N and still has neither the
       quarantine guide nor the sick-tank check, which its own health guide's
       four prevention habits lean on.
-- [ ] Bristlenose pleco lifespan ceiling, hub against encyclopedia. The cost
+- [x] Bristlenose pleco lifespan ceiling, hub against encyclopedia. The cost
       guide says well-kept individuals are "reasonably often reported living 12
       to 14 years"; the encyclopedia's wildLifespan field says "up to 12-15 years
       with excellent care". Neither is obviously wrong and that page's Sources do
       not settle the ceiling, so it needs research rather than a pick. Found by
       the numbers checker during batch N. (batch N)
+      - DONE 2026-09-16: the encyclopedia field now matches the sourced cost guide at 12-14 years, and the hub row already did.
 
-- [ ] Five shared-guide gaps batch N's readers found on multiple species at once,
+- [x] Five shared-guide gaps batch N's readers found on multiple species at once,
       which is what makes them shared-guide work rather than five hub lines.
 
       - DONE 2026-09-16, content/guides/aquarium-water-changes-guide.mdx, wired into every fish and shrimp sidebar and onto twelve hub cards as a Water changes row; the hero image is the one thing still owed. Water changes have no home anywhere on the site. Bristlenose pleco,
@@ -597,7 +601,7 @@ is why they kept getting deferred. Do them once section 7 is finished.
         never say how many animals go in it. Five species across two batches.
       - DONE 2026-09-16, content/guides/aquarium-stocking-and-tankmates-guide.mdx, wired into every fish and shrimp sidebar and onto the betta, goldfish and guppy cards as a Tankmates row; the other fifteen hubs are at eighteen rows and most already carry a species-sourced tankmate or group-size row. The species table gives each animal's floor and known bad pairing.
 
-- [ ] The opens from batches K, L and M, which the reader passes recorded in
+- [x] The opens from batches K, L and M, which the reader passes recorded in
       docs/READER_REVIEWS.md and nothing promoted here until 2026-09-15. Each one
       is a real decision the batch could not make under its Never list, and they
       are listed by what they need rather than by species.
@@ -683,7 +687,7 @@ is why they kept getting deferred. Do them once section 7 is finished.
       inches" supports the encyclopedia, no deep dive states a size, so nothing
       conflicts. (batch K)
 
-- [ ] Batch O's open items (giant millipede, jumping spider, hissing cockroach,
+- [x] Batch O's open items (giant millipede, jumping spider, hissing cockroach,
       stick insect, 2026-09-15). Grouped by what each one needs.
 
       Needs research:
@@ -757,7 +761,7 @@ is why they kept getting deferred. Do them once section 7 is finished.
         Either widen it or stop pointing myriapods and phasmids at it. (batch O)
       - DONE 2026-09-16: widened. Millipede and stick insect rows in the signs table, a Millipedes and Stick Insects section, the one rule extended, and a Sources block added (the guide had none) with the Tree of Life and Keeping Insects pages.
 
-- [ ] Batch P opens, promoted by the species check (2026-09-16):
+- [x] Batch P opens, promoted by the species check (2026-09-16):
       - Jackson's chameleon humidity needs research. The setup guide says 30
         to 50% by day rising to 75 to 100% at night, with a flatter 60 to 80%
         as the alternative; the two sources the batch added to that page for
