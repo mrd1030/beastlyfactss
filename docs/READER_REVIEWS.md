@@ -3647,6 +3647,39 @@ in one review section.
 
 ## What the tests changed so far
 
+- 2026-09-15, batch P (branch claude/invertebrates-readmefirst-batch-ayolwx, not
+  merged): four router hubs rather than five, because lizards had three species
+  left on the legacy care sheet and small mammals one. 127 first-week rows, one
+  reader pass per species and one Fable check covering all four. Pass grade C+,
+  the lowest since batch J, and the reason is worth reading before batch Q. Fire
+  skink: a cost guide that contradicted itself on wild-caught pricing two
+  paragraphs apart, a substrate depth given as 4 to 6 inches in the body and 8 to
+  10 in a FunFact against both cited care sheets, and a sourced Diet Basics
+  section, the sixth species to need one. Jackson's chameleon: the hub carried
+  veiled chameleon FAQs including a size figure for the wrong animal, and its diet
+  section prescribed calcium with D3 twice weekly on a species its own health
+  guide calls prone to edema from over-supplementing D, replaced with LafeberVet's
+  weekly schedule and its vitamin A and D cautions. Uromastyx: three basking
+  ranges across three pages, eight source narrations, and a feeding schedule
+  written as a survey. Flying squirrel: nine pages with no drinking water anywhere
+  in them, protein frequency given three ways inside one guide, and a
+  RELATED_ARTICLES entry holding one item, so its own legal guide was reachable
+  from nowhere in the sidebar.
+  What the check caught, and what makes the grade: the mechanical half held (12 of
+  12 hub FAQs verbatim, links within limits, voice flat against base, frontmatter
+  copies moved, scope clean), and the research half repeated batch M's defect
+  exactly. A Diet Basics section cited two sources and stated four things neither
+  said. De-narration inverted a feeding condition ("lean toward the less-frequent
+  end if your uromastyx is holding weight easily" became "go higher only if"),
+  upgraded two hedges, and invented a false "the same volume in a different shape"
+  about two cage footprints that differ by 1,296 cubic inches, on three pages and
+  a hub. Three emergency cards were written rather than grepped, the sixth batch
+  running. And one number went against the source ranking: the uromastyx basking
+  range was settled on ReptiFiles' 120 to 130F without opening the vs guide's
+  citation, Long Island Bird & Exotics, a veterinary hospital, which gives 110 to
+  120F and outranks it. The check reversed it across seven places and filed the
+  question in docs/TODO.md section 8.
+
 - 2026-09-15, batch O (branch claude/invertebrates-readmefirst-batch-ayolwx, not
   merged): four router hubs rather than five, because invertebrates had exactly
   four species left on the legacy care sheet and the class is now finished. 118
