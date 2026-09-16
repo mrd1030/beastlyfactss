@@ -2977,6 +2977,65 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/argentine-tegu-feeding-guide.mdx",
+    "slug": "argentine-tegu-feeding-guide",
+    "title": "Argentine Tegu Feeding: Schedule by Age, the Protein-to-Plant Split, and the Obesity Trap",
+    "seoTitle": "What Do Argentine Tegus Eat? Diet and Feeding Schedule",
+    "excerpt": "A tegu eats five times a week as a hatchling and twice a week as an adult, and the plate shifts from nine parts protein to six as it grows. Here is the schedule, the portion rule, the foods that are off the list, and why an adult on a juvenile's schedule ends up with a fatty liver.",
+    "date": "2026-12-03",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Argentine Tegu",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Feeding Schedule",
+      "Brumation",
+      "Obesity"
+    ],
+    "readTime": 8,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/argentine-tegu-feeding.jpg",
+    "imageAlt": "An adult Argentine black and white tegu eating chopped squash and greens from a wide bowl on the floor of its enclosure",
+    "emoji": "🦎",
+    "lastReviewed": "2026-12-03",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed an Argentine tegu?",
+        "a": "By age. Hatchlings under six months eat five times a week, juveniles to a year four times, subadults of one to two years three times, and adults past two years twice a week. Each meal is about the size of the tegu's skull. An adult kept on a juvenile's schedule is the obesity case every tegu vet sees."
+      },
+      {
+        "q": "What is the right mix of protein, vegetables and fruit?",
+        "a": "In the first year, about 90 percent protein and 10 percent vegetables with the occasional fruit. An adult Argentine flips toward 60 percent protein, 30 percent vegetables and 10 percent fruit. The Colombian tegu stays near 90 percent protein for life, so know which species you have before you build the plate."
+      },
+      {
+        "q": "Can a tegu eat raw eggs?",
+        "a": "Cooked, yes. Raw egg white carries avidin, an enzyme that blocks biotin absorption and shows up as shedding problems over time. Scramble or boil them, shell and all for the calcium."
+      },
+      {
+        "q": "Why has my tegu stopped eating?",
+        "a": "In autumn, almost always brumation. Wild tegus retreat into burrows for the winter and emerge in late winter, and a captive animal that slows down, sleeps more and refuses food as the days shorten is following that clock. A tegu that stops eating in summer, in a warm enclosure, with weight loss or a swollen belly, is the one that needs a vet."
+      }
+    ],
+    "relatedProducts": [
+      "calcium-repashy-plus-6oz",
+      "feeding-tongs-lasnten-long-rubber-tip"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/argentine-tegu-handling-guide.mdx",
     "slug": "argentine-tegu-handling-guide",
     "title": "How to Handle an Argentine Tegu (The Reptile That Acts Like a Dog)",
@@ -9578,6 +9637,63 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/california-kingsnake-feeding-guide.mdx",
+    "slug": "california-kingsnake-feeding-guide",
+    "title": "California Kingsnake Feeding: Prey Size, the Adult Interval, and Why One Snake Per Tank",
+    "seoTitle": "What Do California Kingsnakes Eat? Feeding Schedule",
+    "excerpt": "A kingsnake that eats rattlesnakes in the wild eats thawed mice in a tank, every five to seven days as a hatchling and every ten to fourteen as an adult, sized to the widest part of its body. Here is the schedule, the sizing rule, why the prey is never alive, and why two kingsnakes never share a feeding.",
+    "date": "2026-12-04",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "California Kingsnake",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Snake Diet",
+      "Feeding Schedule",
+      "Frozen Thawed"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/california-kingsnake-feeding.jpg",
+    "imageAlt": "A banded California kingsnake taking a thawed mouse from long feeding tongs inside its enclosure",
+    "emoji": "🐍",
+    "lastReviewed": "2026-12-04",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed a California kingsnake?",
+        "a": "Hatchlings and juveniles every 5 to 7 days, adults every 10 to 14 days, on a frozen-thawed mouse about as wide as the snake at its thickest point. A weekly meal maintains an adult; feeding more often grows a young snake faster and makes an adult fat."
+      },
+      {
+        "q": "What size prey should a kingsnake get?",
+        "a": "As wide as, or slightly wider than, the widest part of the snake's body. The meal should leave a visible lump a little larger than the snake's normal diameter, and nothing bigger. Hatchlings start on a single pinky mouse and move up a size as they grow."
+      },
+      {
+        "q": "Can I feed live mice?",
+        "a": "No. A live adult mouse bites and can wound a snake that does not strike cleanly, and a kingsnake gains nothing from the hunt. Frozen-thawed prey, fully defrosted and brought to room temperature, offered on tongs, is the whole method."
+      },
+      {
+        "q": "My kingsnake will not eat. What now?",
+        "a": "Check the enclosure temperature first, then whether the snake is in shed, then how recently it was handled. A refusal that runs past three to four weeks, or any refusal with weight loss, is the point to call a reptile vet. Weigh the snake monthly so you know which it is."
+      }
+    ],
+    "relatedProducts": [
+      "feeding-tongs-lasnten-long-rubber-tip"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/california-kingsnake-handling-guide.mdx",
     "slug": "california-kingsnake-handling-guide",
     "title": "How to Handle a California Kingsnake (And Why It Must Live Alone)",
@@ -9914,6 +10030,62 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/canary-feeding-guide.mdx",
+    "slug": "canary-feeding-guide",
+    "title": "Canary Feeding: A Teaspoon or Two a Day, Mostly Pellets, and the Seed Diet That Runs Short",
+    "seoTitle": "What Do Canaries Eat? Diet and Feeding Schedule",
+    "excerpt": "A canary eats one to two teaspoons a day, and the argument is over what is in the spoon. Here is the pellet share the vets give, the produce that makes up the rest, the egg food that carries a molt, the cuttlebone that covers calcium, why grit is wrong for this bird, and how to read a canary that stops eating.",
+    "date": "2026-12-11",
+    "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
+    "tags": [
+      "Canary",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Bird Diet",
+      "Pellets",
+      "Seed",
+      "Molt"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/canary-feeding.jpg",
+    "imageAlt": "A yellow canary at a small dish of pellets with a sprig of leafy greens clipped to the cage bars beside it",
+    "emoji": "🐦",
+    "lastReviewed": "2026-12-11",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much should a canary eat a day?",
+        "a": "About one to two teaspoons per bird per day of a pelleted diet with a small amount of seed, plus a little fresh produce. For a bird that weighs 12 to 30 grams, that is a measured amount put out each morning, not a permanently heaped dish."
+      },
+      {
+        "q": "Should a canary eat seed or pellets?",
+        "a": "Mostly pellets. The veterinary figures run from at least 60 to 70 percent pellets up to 75 to 80, with seed a small part and never the whole diet. An all-seed diet is short on vitamins, minerals, protein and calcium, and vitamin A deficiency is the disease that follows it. Move a seed bird over gradually, never by pulling the seed."
+      },
+      {
+        "q": "Does a canary need grit?",
+        "a": "No. Canaries hull their seeds before eating them, so they do not need grit to grind them, and grit should not be offered. A cuttlebone is the mineral a canary does need, for calcium and trace minerals."
+      },
+      {
+        "q": "Why has my canary stopped eating?",
+        "a": "A canary that stops eating is an emergency within a day, because a bird this small has no reserve. The molt costs appetite and needs extra protein rather than less food, a new pellet may not be recognized as food, and a fluffed, quiet bird sitting low is sick. Any canary off food for a day sees an avian vet."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false
   },
   {
     "path": "/content/guides/canary-handling-guide.mdx",
@@ -17679,6 +17851,65 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/fire-bellied-toad-feeding-guide.mdx",
+    "slug": "fire-bellied-toad-feeding-guide",
+    "title": "Fire-Bellied Toad Feeding: Live Prey It Has to Leap For, Two to Six Items Every Few Days, and Nothing Hard-Shelled",
+    "seoTitle": "What Do Fire-Bellied Toads Eat? Feeding Schedule",
+    "excerpt": "A fire-bellied toad cannot flick its tongue, so it leaps at what moves and ignores what does not. Here is the live-only rule, the two-to-six-item portion every two to three days, the head-width prey size, the calcium on every feeding, the hard-shelled feeders that impact like gravel, and why a toad that stops eating is usually cold or in bad water.",
+    "date": "2026-12-15",
+    "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
+    "tags": [
+      "Fire-Bellied Toad",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Amphibian Diet",
+      "Feeding Schedule",
+      "Gut Loading",
+      "Calcium"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/fire-bellied-toad-feeding.jpg",
+    "imageAlt": "A green and black fire-bellied toad mid-leap toward a cricket on a mossy bank beside shallow water",
+    "emoji": "🐸",
+    "lastReviewed": "2026-12-15",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much and how often should I feed a fire-bellied toad?",
+        "a": "An adult gets two to six food items every two to three days, and a juvenile is fed daily in small amounts. The practical ceiling is what the toad clears in about 15 minutes, and each item is no wider than the toad's head. A vet sheet puts adults at once or twice a week, which is the lean end of the same range."
+      },
+      {
+        "q": "Will a fire-bellied toad eat dead insects?",
+        "a": "Almost never. This family cannot extend its tongue the way other frogs do, so a fire-bellied toad has to leap forward and catch prey in its mouth, and it keys on movement to do it. Everything offered is alive, and anything not eaten comes out."
+      },
+      {
+        "q": "Do I need to dust the crickets?",
+        "a": "Yes. Gut-load the feeders for at least 24 hours, then dust with a calcium supplement that carries vitamin D before each feeding, with a multivitamin once or twice a week. A juvenile gets supplement at every feeding; an adult can drop to every two to four feedings on the multivitamin, but the calcium stays."
+      },
+      {
+        "q": "Why has my toad stopped eating?",
+        "a": "Cold water or a cold room first, since a toad below about 65°F stops feeding. Then the water quality, because a toad in fouled water stops eating before the red leg shows. Then a shed, a new tank, or winter. A toad that refuses for a week in warm, clean water sees an exotic vet."
+      }
+    ],
+    "relatedProducts": [
+      "calcium-repashy-plus-lod-3oz",
+      "gutload-flukers-orange-cube-cricket-diet-12oz"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/fire-bellied-toad-handling-guide.mdx",
     "slug": "fire-bellied-toad-handling-guide",
     "title": "Fire-Bellied Toads Have Genuinely Toxic Skin, Here's What That Means",
@@ -21098,6 +21329,61 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/giant-millipede-feeding-guide.mdx",
+    "slug": "giant-millipede-feeding-guide",
+    "title": "Giant Millipede Feeding: The Floor Is the Diet, Produce Is the Treat, and Calcium Stays In",
+    "seoTitle": "What Do Giant Millipedes Eat? Diet and Feeding",
+    "excerpt": "A giant millipede eats its own substrate, and the produce a keeper puts in every few days is a supplement to that, not the meal. Here is the leaf litter and rotting wood that make up the diet, the fruit and vegetable rotation and its two-to-three-day clock, the cuttlebone that never comes out, and why a millipede that has stopped eating is usually molting underground.",
+    "date": "2026-12-12",
+    "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
+    "tags": [
+      "Giant Millipede",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Invertebrate Diet",
+      "Substrate",
+      "Calcium"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/giant-millipede-feeding.jpg",
+    "imageAlt": "A giant African millipede eating a slice of cucumber on dark leaf litter, with a piece of cuttlebone beside it",
+    "emoji": "🐛",
+    "lastReviewed": "2026-12-12",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What do giant millipedes eat?",
+        "a": "The enclosure floor, mainly. Rotting hardwood and clean fallen leaves from oak, beech or maple are both the bedding and the bulk of what gets eaten, with vegetables and a little fruit added on top a couple of times a week as extras."
+      },
+      {
+        "q": "How often do I feed a millipede?",
+        "a": "Put a slice or two of vegetable in twice a week or so and clear it before it goes furry, roughly the same interval in a damp tank. Since the bedding is edible, an animal that leaves the vegetables alone for a week has still been eating."
+      },
+      {
+        "q": "Do millipedes need calcium?",
+        "a": "Yes. Leave a piece of cuttlebone or a pinch of calcium carbonate powder on the floor at all times and let the animal help itself; demand peaks as a new shell is being built."
+      },
+      {
+        "q": "My millipede has not eaten in weeks. Is it sick?",
+        "a": "Probably molting. A burrowed millipede can stay down for weeks while it sheds and hardens, and a keeper who digs to check ruptures the new shell. Moist floor, fresh produce on top, patience."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/giant-millipede-handling-guide.mdx",
     "slug": "giant-millipede-handling-guide",
     "title": "How to Handle a Giant Millipede (Gentle Giant, Brittle Shell)",
@@ -22096,6 +22382,65 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/green-anole-feeding-guide.mdx",
+    "slug": "green-anole-feeding-guide",
+    "title": "Green Anole Feeding: Two or Three Insects Smaller Than Its Head, and Water It Can Lap",
+    "seoTitle": "What Do Green Anoles Eat? Diet and Feeding Schedule",
+    "excerpt": "A green anole is a five-inch lizard with a small mouth and a fast metabolism, and its diet is two or three gut-loaded insects every other day, each smaller than its head, lightly dusted every time. Here is the feeder list, the portion, the supplement that keeps a tiny lizard's bones straight, and the water rule most new keepers get wrong.",
+    "date": "2026-12-05",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Green Anole",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Feeding Schedule",
+      "Gut Loading",
+      "Calcium"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/green-anole-feeding.jpg",
+    "imageAlt": "A bright green anole on a broad leaf lapping a water droplet, with a small cricket on the leaf beside it",
+    "emoji": "🦎",
+    "lastReviewed": "2026-12-05",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often and how much should I feed a green anole?",
+        "a": "A juvenile eats daily, as much as it will take in a sitting. An adult gets two or three insects every other day, each slightly smaller than the anole's head. The head rule is the portion: an oversized cricket is a choking risk for a lizard this small, not a bigger meal."
+      },
+      {
+        "q": "What insects can a green anole eat?",
+        "a": "Crickets, dubia and discoid nymphs, red runner and red head roaches, flightless fruit flies, black soldier fly larvae, small grasshoppers and the occasional mealworm, gut-loaded for 24 to 48 hours first. Skip superworms and kingworms, whose jaws can injure an anole, and never offer a wild insect that may carry pesticide."
+      },
+      {
+        "q": "Does an anole need supplements?",
+        "a": "Yes, and consistently. A light dusting of a 50/50 calcium and multivitamin mix, or an all-in-one calcium-plus-vitamin powder, on the insects at every feeding. A small lizard runs into a calcium deficiency fast, and metabolic bone disease in an anole progresses in weeks."
+      },
+      {
+        "q": "Why will my anole not drink from its bowl?",
+        "a": "Because anoles lap water from leaves, the way they take dew and rain in the wild, and many never recognize standing water at all. Mist the foliage and glass once or twice a day and the anole drinks the droplets. If you keep a dish, make it shallow and put it up on a ledge, since an anole cannot climb out of deep or steep-sided water."
+      }
+    ],
+    "relatedProducts": [
+      "calcium-repashy-plus-lod-3oz",
+      "gutload-flukers-orange-cube-cricket-diet-12oz"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false
   },
   {
     "path": "/content/guides/green-anole-handling-guide.mdx",
@@ -26648,6 +26993,65 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/jacksons-chameleon-feeding-guide.mdx",
+    "slug": "jacksons-chameleon-feeding-guide",
+    "title": "Jackson's Chameleon Feeding: Three Insects Every Other Day, and the Supplement That Causes Edema",
+    "seoTitle": "What Do Jackson's Chameleons Eat? Feeding Schedule",
+    "excerpt": "A Jackson's chameleon is the one lizard where more supplement is the common mistake. Here is the feeding schedule by age, the five-to-seven insect ceiling, the eye-width prey rule, the calcium and vitamin rhythm that keeps a montane chameleon out of edema and gout, and why it drinks before it eats.",
+    "date": "2026-12-06",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Jackson's Chameleon",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Feeding Schedule",
+      "Supplements",
+      "Hydration"
+    ],
+    "readTime": 8,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/jacksons-chameleon-feeding.jpg",
+    "imageAlt": "A three-horned Jackson's chameleon on a branch with its tongue extended toward a cricket, water droplets on the leaves around it",
+    "emoji": "🦎",
+    "lastReviewed": "2026-12-06",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much should a Jackson's chameleon eat?",
+        "a": "A baby eats as much as it will take. From six months to a year, about ten insects every other day. An adult, three well gut-loaded insects every other day, with five to seven per feeding as the ceiling. A pregnant female goes to five every other day, and more if she is still hunting. Every insect is no wider than the space between the chameleon's eyes."
+      },
+      {
+        "q": "How often do I dust with calcium and vitamins?",
+        "a": "Lightly. The veterinary sheet dusts an adult's diet with plain calcium once a week and a multivitamin once a week. A growing juvenile under a year gets plain calcium more often, since that is when bones are being built. Either way the powder is D3-free, the vitamin product is low in vitamin A, and nothing goes on daily."
+      },
+      {
+        "q": "Why is oversupplementing dangerous for this species?",
+        "a": "Jackson's chameleons are unusually sensitive to excess vitamin A and D. Too much shows as edema, fluid swelling at the throat and neck, and as gout. High-vitamin-D products can reach toxicity, and synthetic vitamin A is the ingredient most often behind the swelling. More powder is the common mistake here, not less."
+      },
+      {
+        "q": "Why does my chameleon need water before it eats?",
+        "a": "A chameleon's tongue works when it is hydrated, so water is offered before food to lubricate it. Jackson's chameleons only drink droplets from leaves and surfaces, never from a dish, which is why misting or a dripper comes first and the insects second."
+      }
+    ],
+    "relatedProducts": [
+      "calcium-miner-all-indoor-2pack",
+      "reptile-multivitamin-repcal-herptivite"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/jacksons-chameleon-handling-guide.mdx",
     "slug": "jacksons-chameleon-handling-guide",
     "title": "How to Handle a Jackson's Chameleon",
@@ -28114,6 +28518,65 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/leaf-tailed-gecko-feeding-guide.mdx",
+    "slug": "leaf-tailed-gecko-feeding-guide",
+    "title": "Leaf-Tailed Gecko Feeding: As Much as It Eats in a Night, and the Insects Come Out by Morning",
+    "seoTitle": "What Do Leaf-Tailed Geckos Eat? Feeding Schedule",
+    "excerpt": "A leaf-tailed gecko hunts after dark and eats as much as it takes in one night, daily as a juvenile and every other day as an adult, every feeder lightly dusted. Here is the feeder list by species size, why the food goes in at lights-out and the leftovers come out at dawn, and the water that arrives as mist.",
+    "date": "2026-12-07",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Leaf-Tailed Gecko",
+      "Uroplatus",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Feeding Schedule",
+      "Gut Loading"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/leaf-tailed-gecko-feeding.jpg",
+    "imageAlt": "A mossy leaf-tailed gecko pressed against bark at night with a cricket on the branch beside its head",
+    "emoji": "🦎",
+    "lastReviewed": "2026-12-07",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed a leaf-tailed gecko?",
+        "a": "Juveniles daily and adults every other day, offering as much as the gecko will eat in one night. The portion is the night, not a count: put the insects in as the lights go off, and whatever is still loose at dawn comes out."
+      },
+      {
+        "q": "What insects can a leaf-tailed gecko eat?",
+        "a": "Dubia, discoid and red runner roaches, crickets, grasshoppers, hornworms, silkworms, mealworm and superworm beetles, and captive-bred snails. Size the prey to the species: a giant leaf-tail takes an adult roach, a satanic leaf-tail needs feeders a fraction of that size."
+      },
+      {
+        "q": "Do I need to dust the insects?",
+        "a": "Yes, lightly, with a single all-in-one calcium and vitamin powder on every feeder. Skipping a dusting now and then is fine; skipping it as a habit is how a fast-growing gecko ends up with metabolic bone disease."
+      },
+      {
+        "q": "Why will my gecko not drink from its dish?",
+        "a": "Because it drinks the mist. Most of a leaf-tailed gecko's water comes from the daily misting, licked off leaves, bark and its own face. Keep a wall-mounted dish changed daily as a backup, and treat the misting, once or twice a day, as the water supply."
+      }
+    ],
+    "relatedProducts": [
+      "calcium-repashy-plus-lod-3oz",
+      "dubia-roaches-bag"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false
   },
   {
     "path": "/content/guides/leaf-tailed-gecko-handling-guide.mdx",
@@ -30125,6 +30588,63 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/milk-snake-feeding-guide.mdx",
+    "slug": "milk-snake-feeding-guide",
+    "title": "Milk Snake Feeding: Prey at 1.5 Times the Body Width, and Why Hatchlings Eat Snakes",
+    "seoTitle": "What Do Milk Snakes Eat? Feeding Schedule",
+    "excerpt": "A milk snake eats a thawed rodent no more than one and a half times its own width, every five to seven days as a hatchling and every ten to fourteen as an adult. Here is the schedule, the two sizing rules, the wild diet that explains why two milk snakes never share a tank, and how to read a refusal.",
+    "date": "2026-12-08",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Milk Snake",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Snake Diet",
+      "Feeding Schedule",
+      "Frozen Thawed"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/milk-snake-feeding.jpg",
+    "imageAlt": "A red, black and white banded milk snake constricting a thawed mouse on aspen substrate",
+    "emoji": "🐍",
+    "lastReviewed": "2026-12-08",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed a milk snake?",
+        "a": "Hatchlings every 5 to 7 days, juveniles every 7 to 10, adults every 10 to 14, on a single frozen-thawed rodent. If the snake is getting fat, stretch the interval or drop a prey size rather than skipping meals at random."
+      },
+      {
+        "q": "How big should the prey be?",
+        "a": "No more than one and a half times the snake's width at its widest point, or roughly ten percent of its body weight. Both rules land in the same place on a healthy snake, and the second one is why a gram scale is worth owning."
+      },
+      {
+        "q": "Can two milk snakes live together?",
+        "a": "No. Milk snakes eat other snakes in the wild, hatchlings feed mainly on other young snakes, and a pet will eat a cagemate. One snake per enclosure, and never two fed in the same space."
+      },
+      {
+        "q": "Why is my milk snake refusing food?",
+        "a": "Shed, a cold enclosure, a new home, or too much handling cover almost every case, and a prey item that is too cold in the middle covers most of the rest. A refusal past a month, or any refusal with weight loss, is a reptile vet visit."
+      }
+    ],
+    "relatedProducts": [
+      "feeding-tongs-lasnten-long-rubber-tip"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false
   },
   {
     "path": "/content/guides/milk-snake-handling-guide.mdx",
@@ -34445,6 +34965,63 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/praying-mantis-feeding-guide.mdx",
+    "slug": "praying-mantis-feeding-guide",
+    "title": "Praying Mantis Feeding: Live Prey a Third of Its Length, Every Other Day, and Nothing Left in the Cage",
+    "seoTitle": "What Do Praying Mantises Eat? Feeding Schedule",
+    "excerpt": "A mantis eats only what moves, stops when it is full, and refuses everything for days before a molt. Here is the prey by life stage, the one-third rule, the every-other-day rhythm and the range around it, why a cricket left in the cage is a danger, and why the water is a droplet.",
+    "date": "2026-12-13",
+    "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
+    "tags": [
+      "Praying Mantis",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Invertebrate Diet",
+      "Live Prey",
+      "Molting"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/praying-mantis-feeding.jpg",
+    "imageAlt": "A green praying mantis gripping a bottle fly in its front legs on a twig inside a mesh enclosure",
+    "emoji": "🦗",
+    "lastReviewed": "2026-12-13",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed a praying mantis?",
+        "a": "Every other day, as much as it will take in one sitting, since a mantis stops when it is full. The range across species, sizes and condition runs from every day to every four days, and an adult female eats more than an adult male. A mantis that looks thin eats sooner; one with a swollen abdomen waits."
+      },
+      {
+        "q": "What size prey can a mantis take?",
+        "a": "Nothing longer than about a third of the mantis's own length. Some species will tackle prey as large as themselves, and it is the fight that costs them: a big cricket or grasshopper that is not eaten chews on the mantis instead. Fruit flies for the smallest nymphs, then bottle flies, small crickets and roach nymphs, then larger flies, roaches, moths and waxworms for an adult."
+      },
+      {
+        "q": "Will a mantis eat dead insects?",
+        "a": "Almost never. A mantis is a visual ambush hunter that responds to movement, and a dead insect on the floor is ignored. Live prey, offered on fine forceps so you can see it taken, or released and watched, is the whole method."
+      },
+      {
+        "q": "My mantis has stopped eating. Is it dying?",
+        "a": "It is probably about to molt. Refusing food for a few days before a shed is normal, and the response is to pull any live prey out and wait. A mantis that refuses for a week after a molt, cannot hold the mesh, or has a shrunken abdomen is the one to worry about."
+      }
+    ],
+    "relatedProducts": [
+      "feeding-tongs-entomology-forceps-fine-tip"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/praying-mantis-handling-guide.mdx",
     "slug": "praying-mantis-handling-guide",
     "title": "Should You Handle a Praying Mantis? Gently, and Rarely",
@@ -38449,6 +39026,65 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/savannah-monitor-feeding-guide.mdx",
+    "slug": "savannah-monitor-feeding-guide",
+    "title": "Savannah Monitor Feeding: Insects as the Staple, Rodents as the Exception, and the Liver That Pays for the Difference",
+    "seoTitle": "What Do Savannah Monitors Eat? Feeding Schedule",
+    "excerpt": "A savannah monitor is sold as a lizard that eats mice, and that is the diet that kills it in its early teens. Here is the insect-based staple, the rodents that stay occasional, the schedule from daily to two or three times a week, the calcium that follows the lighting, and why the vet's list of this species' diseases starts with a fat liver.",
+    "date": "2026-12-09",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Savannah Monitor",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Feeding Schedule",
+      "Obesity",
+      "Insects"
+    ],
+    "readTime": 8,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/savannah-monitor-feeding.jpg",
+    "imageAlt": "A savannah monitor on packed soil eating a large gut-loaded dubia roach, with a shallow water basin behind it",
+    "emoji": "🦎",
+    "lastReviewed": "2026-12-09",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed a savannah monitor?",
+        "a": "Juveniles daily or every other day, adults two to three times a week. Gut-loaded insects and crayfish are the staple at every age. There is no published portion figure, so the animal's body condition is the portion: a monitor developing a rounded, heavy shape is being fed too much or too richly, whatever the count says."
+      },
+      {
+        "q": "Can savannah monitors eat mice?",
+        "a": "Occasionally, and lean. Mice, chicks and freshwater fish belong in the occasional column and stay there. A rodent-based diet is the cause the veterinary sheet lists beside obesity and fatty liver disease, and it is why so many pet savannah monitors die young."
+      },
+      {
+        "q": "What supplements does a savannah monitor need?",
+        "a": "Calcium dusted on the insects, once a week on an adult, with a calcium-to-phosphorus ratio of at least 2:1 and low or no phosphorus. Plain calcium under a working UVB bulb, calcium with D3 without one, and never a product high in vitamin D, which reaches toxicity. A general vitamin and mineral supplement once a week alongside it."
+      },
+      {
+        "q": "Why has my savannah monitor stopped eating?",
+        "a": "A cold enclosure is the first check, since a monitor that cannot bask cannot digest. A new or wild-caught animal is usually parasites or stress. An adult that slows down in the cool months is following its dry-season rhythm. A refusal with weight loss, a swollen belly or lethargy in a warm enclosure is the vet visit."
+      }
+    ],
+    "relatedProducts": [
+      "dubia-roach-colony-starter-kit",
+      "calcium-miner-all-indoor-2pack"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/savannah-monitor-handling-guide.mdx",
     "slug": "savannah-monitor-handling-guide",
     "title": "How to Handle a Savannah Monitor (This Isn't the Ackie Monitor)",
@@ -39856,6 +40492,61 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/stick-insect-feeding-guide.mdx",
+    "slug": "stick-insect-feeding-guide",
+    "title": "Stick Insect Feeding: Bramble in a Jar, the Right Plant for the Species, and Water That Cannot Drown a Nymph",
+    "seoTitle": "What Do Stick Insects Eat? Food Plants and Feeding",
+    "excerpt": "A stick insect eats leaves and nothing else, and the whole craft is keeping the right leaves fresh. Here is the plant list by species, why bramble suits nearly all of them, how to keep cuttings alive in water without drowning a nymph, the washing that removes pesticide, the evening mist they drink from, and the one reason a stick insect stops eating.",
+    "date": "2026-12-14",
+    "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
+    "tags": [
+      "Stick Insect",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Invertebrate Diet",
+      "Bramble",
+      "Food Plants"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/stick-insect-feeding.jpg",
+    "imageAlt": "An Indian stick insect feeding on a bramble leaf, the cut stems standing in a covered jar of water inside a mesh enclosure",
+    "emoji": "🌿",
+    "lastReviewed": "2026-12-14",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What do stick insects eat?",
+        "a": "Leaves, and only the leaves of plants their species eats. Almost every kept species takes bramble, the blackberry and its relatives, and many also take oak and hawthorn. Indian stick insects take privet and ivy as well, some species take rose or eucalyptus, and the Peruvian fern stick insect eats bracken. Match the plant to the species you have."
+      },
+      {
+        "q": "How do I keep the leaves fresh?",
+        "a": "Stand the cut stems in a jar of water like cut flowers, weighted with sand or stones so it cannot tip, with the opening blocked by tissue or netting so a nymph cannot fall in and drown. Replace the branches when the leaves dry or are stripped, and never let the enclosure run out."
+      },
+      {
+        "q": "Do I need to wash the leaves?",
+        "a": "Yes. Foliage from a garden, a park or a roadside carries pesticide, herbicide and traffic residue, and a stick insect eating a sprayed leaf dies of it. Wash and shake dry, and collect from hedgerows away from roads and treated ground."
+      },
+      {
+        "q": "Why has my stick insect stopped eating?",
+        "a": "Usually a molt within a day or two, which is normal. Otherwise the leaves are dry, the plant is one the species does not eat, or the enclosure is too cold. A stick insect that has stopped eating and is losing its grip on the mesh is the one to look at."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false
   },
   {
     "path": "/content/guides/stick-insect-handling-guide.mdx",
@@ -42323,6 +43014,65 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/tiger-salamander-feeding-guide.mdx",
+    "slug": "tiger-salamander-feeding-guide",
+    "title": "Tiger Salamander Feeding: Worms and Crickets at Night, Twice a Week, and an Animal That Never Says No",
+    "seoTitle": "What Do Tiger Salamanders Eat? Feeding Schedule",
+    "excerpt": "A tiger salamander eats anything it can swallow and never stops on its own, which makes the keeper's portion the whole diet. Here is the worm-and-cricket staple, the small measured meals twice a week, the night feeding, the supplement schedule by age, the mouse that is a rare treat at most, and why a salamander that stops eating is usually about to burrow.",
+    "date": "2026-12-16",
+    "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
+    "tags": [
+      "Tiger Salamander",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Amphibian Diet",
+      "Feeding Schedule",
+      "Obesity",
+      "Earthworms"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/tiger-salamander-feeding.jpg",
+    "imageAlt": "A yellow-blotched tiger salamander at night taking an earthworm from soft-tipped feeding tongs above damp soil",
+    "emoji": "🦎",
+    "lastReviewed": "2026-12-16",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed a tiger salamander?",
+        "a": "A growing juvenile every one to two days, in small amounts. An adult two to three times a week, in small measured quantities, at night. The animal does not stop when it has had enough, so the portion is the keeper's decision, and obesity is the problem this species runs into most."
+      },
+      {
+        "q": "What do tiger salamanders eat?",
+        "a": "Earthworms and nightcrawlers with crickets make up the bulk of it, with waxworms, superworms, silkworms and roaches rotated in. In the wild they take worms, snails, slugs, insects and spiders, and anything small enough to swallow, including other salamanders. A thawed pinky mouse is a rare treat at most for a large adult, and never a live one."
+      },
+      {
+        "q": "Do I need to dust the food?",
+        "a": "Yes. A calcium and vitamin D3 supplement plus a multivitamin on the feeders at every feeding while the animal is growing, and every second to fourth feeding once it is adult. Offer food from tongs or off the substrate, since a salamander that strikes at a worm takes a mouthful of whatever the worm was lying on."
+      },
+      {
+        "q": "Why has my salamander stopped eating?",
+        "a": "This is such a voracious species that a refusal is a signal rather than fussiness. In autumn it is usually the animal slowing toward a burrowed winter rest, and a cold room does the same. A refusal in a warm enclosure, with weight loss, a bloated belly or skin changes, is the vet visit."
+      }
+    ],
+    "relatedProducts": [
+      "feeding-tongs-short-soft-tip-4pack",
+      "calcium-repashy-plus-6oz"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/tiger-salamander-handling-guide.mdx",
     "slug": "tiger-salamander-handling-guide",
     "title": "How to Handle a Tiger Salamander (And Why You Mostly Won't See One)",
@@ -42787,6 +43537,65 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/tokay-gecko-feeding-guide.mdx",
+    "slug": "tokay-gecko-feeding-guide",
+    "title": "Tokay Gecko Feeding: Five Minutes of Insects, Nothing Wider Than the Head, and Mice as a Rare Treat",
+    "seoTitle": "What Do Tokay Geckos Eat? Diet and Feeding Schedule",
+    "excerpt": "A tokay eats what it can catch in about five minutes, daily as a juvenile and every other day as an adult, with nothing wider than its head and a pinky mouse no more than twice a month. Here is the feeder list, the gut-loading that does the nutrition, the calcium schedule under and without UVB, and why a tokay that ignores its bowl is not dehydrated.",
+    "date": "2026-12-10",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Tokay Gecko",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Feeding Schedule",
+      "Gut Loading",
+      "Calcium"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/tokay-gecko-feeding.jpg",
+    "imageAlt": "A blue and orange spotted tokay gecko on a cork bark wall at night, mid-lunge at a cricket",
+    "emoji": "🦎",
+    "lastReviewed": "2026-12-10",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much should a tokay gecko eat?",
+        "a": "As many insects as it can catch in about five minutes, none wider than its head. Juveniles get that daily and full-grown adults every other day. Food is not left standing in the enclosure; loose insects chew on a resting gecko."
+      },
+      {
+        "q": "Can a tokay eat mice?",
+        "a": "As a treat, not a diet. A thawed pinky or fuzzy from tongs no more than twice a month bulks up a thin animal, and a tokay in the wild does take small rodents and lizards. Fed often, rodents make a fat gecko with a bad liver."
+      },
+      {
+        "q": "How often do I dust with calcium?",
+        "a": "Published schedules run from at least once a week to every feeding. Dust every feeding lightly on a growing juvenile, since that is when bone is built, and at least twice a week on an adult. Under UVB the powder is plain calcium; without UVB it carries vitamin D3."
+      },
+      {
+        "q": "My tokay never drinks from its bowl. Is it dehydrated?",
+        "a": "Probably not. Tokays often ignore a bowl and drink droplets from a spray instead. Keep the bowl on a ledge, scrubbed weekly, and spray the enclosure in the evening so the gecko can lap water off the walls and leaves."
+      }
+    ],
+    "relatedProducts": [
+      "calcium-repashy-plus-lod-3oz",
+      "gutload-flukers-high-calcium-dubia-roach-diet-7oz"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false
   },
   {
     "path": "/content/guides/tokay-gecko-handling-guide.mdx",

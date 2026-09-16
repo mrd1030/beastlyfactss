@@ -3,7 +3,7 @@
 Species that have the full 4-guide care set (cost / handling / health-issues / tank-setup)
 but no feeding guide yet. Generated 2026-08-03.
 
-**Status: 61 species with a full 4-set, 27 had a feeding guide when this was generated; refreshed 2026-09-16, 20 of the 34 have since been published and 14 are still missing (unticked below).**
+**Status: 61 species with a full 4-set; every one now has a feeding guide. The last 14 were written 2026-09-16 and dated 2026-12-03 to 2026-12-16, one a day.**
 
 The publish queue at `queue.json` is currently empty. Move filenames into its `pending`
 array to schedule them for the daily auto-publish routine.
@@ -11,23 +11,23 @@ array to schedule them for the daily auto-publish routine.
 ## Reptiles (12)
 
 - [x] ackie-monitor (published)
-- [ ] argentine-tegu
+- [x] argentine-tegu (published 2026-09-16, dated December 2026)
 - [x] boa-constrictor (published)
-- [ ] california-kingsnake
-- [ ] green-anole
+- [x] california-kingsnake (published 2026-09-16, dated December 2026)
+- [x] green-anole (published 2026-09-16, dated December 2026)
 - [x] hognose-snake (published)
-- [ ] jacksons-chameleon
-- [ ] leaf-tailed-gecko
-- [ ] milk-snake
-- [ ] savannah-monitor
-- [ ] tokay-gecko
+- [x] jacksons-chameleon (published 2026-09-16, dated December 2026)
+- [x] leaf-tailed-gecko (published 2026-09-16, dated December 2026)
+- [x] milk-snake (published 2026-09-16, dated December 2026)
+- [x] savannah-monitor (published 2026-09-16, dated December 2026)
+- [x] tokay-gecko (published 2026-09-16, dated December 2026)
 - [x] veiled-chameleon (published)
 
 ## Birds (6)
 
 - [x] african-grey-parrot (published)
 - [x] budgie (published)
-- [ ] canary
+- [x] canary (published 2026-09-16, dated December 2026)
 - [x] cockatoo (published)
 - [x] conure (published)
 - [x] lovebird (published)
@@ -35,16 +35,16 @@ array to schedule them for the daily auto-publish routine.
 ## Invertebrates (5)
 
 - [x] emperor-scorpion (published)
-- [ ] giant-millipede
+- [x] giant-millipede (published 2026-09-16, dated December 2026)
 - [x] hermit-crab (published)
-- [ ] praying-mantis
-- [ ] stick-insect
+- [x] praying-mantis (published 2026-09-16, dated December 2026)
+- [x] stick-insect (published 2026-09-16, dated December 2026)
 
 ## Amphibians (4)
 
 - [x] axolotl (published)
-- [ ] fire-bellied-toad
-- [ ] tiger-salamander
+- [x] fire-bellied-toad (published 2026-09-16, dated December 2026)
+- [x] tiger-salamander (published 2026-09-16, dated December 2026)
 - [x] whites-tree-frog (published)
 
 ## Fish (3)

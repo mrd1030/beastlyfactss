@@ -212,7 +212,7 @@ export const amphibianGuides = [
     routes: [
       { slug: "pacman-frog-cost-guide", line: "The frog $15 to $100, the modest setup this species actually needs, and the vet bill that impaction brings." },
       { slug: "pacman-frog-tank-setup-guide", line: "Enclosure size, 75 to 85°F days, 60 to 80% humidity, and why the heat mat never goes underneath." },
-      { slug: "pacman-frog-feeding-guide", line: "Schedule by age, the staple rotation, gut-loading, and the eight reasons a Pacman frog stops eating." },
+      { slug: "fire-bellied-toad-feeding-guide", line: "Live prey it leaps for, two to six items every two to three days, no wider than the head, calcium every feeding, and no hard-shelled feeders." },
       { slug: "pacman-frog-handling-guide", line: "Why this is a display animal, how to pick one up on the rare occasion you must, and sexing a mature frog." },
       { slug: "pacman-frog-health-issues-guide", line: "Obesity, impaction, metabolic bone disease, red-leg, and the signs that mean a vet now." },
       { slug: "pacman-frog-enrichment-guide", line: "What the amphibian research actually supports, the priority order, and reading body condition without touching the frog." },
@@ -378,7 +378,7 @@ export const amphibianGuides = [
       { slug: "whites-tree-frog-tank-setup-guide", line: "The 18x18x24 minimum, the temperature gradient, the humidity that dips instead of sitting high, substrate, UVB, and the water that is safe to mist with." },
       { slug: "whites-tree-frog-handling-guide", line: "Why plain water beats soap, when gloves are the safer option, how long a session runs, and why the risk points at the frog rather than at you." },
       { slug: "whites-tree-frog-health-issues-guide", line: "Obesity as the signature risk, chytridiomycosis, red-leg syndrome, bacterial and skin infections, metabolic bone disease, and the husbandry pattern behind all of them." },
-      { slug: "whites-tree-frog-feeding-guide", line: "The insects worth offering, how often by size and age, gut loading and dusting, and the ridge test that says whether the frog is too heavy." },
+      { slug: "tiger-salamander-feeding-guide", line: "Worms and crickets at night in measured meals, two to three times a week as an adult, the supplement schedule by age, and the mouse that is a rare treat." },
       { slug: "whites-tree-frog-enrichment-guide", line: "The red-eyed tree frog plant study and what it actually measured, dense layered planting, broad perches near the top, prey released into cover, and the one rule for group housing." },
     ],
     buyList: [
