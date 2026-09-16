@@ -747,19 +747,23 @@ is why they kept getting deferred. Do them once section 7 is finished.
         Diet Basics say 60 to 100% (LafeberVet) and 50 to 80% year-round
         (Reptiles Magazine). Settle it against a source that actually states
         the day-night pattern, or move the page to the veterinary figure.
+        - DONE 2026-09-16: moved to the veterinary figure. Setup guide body, FAQ and hub row now carry LafeberVet's 60 to 100% with misting every 4 to 8 hours; the day-low, night-high pattern is described as what a misting schedule produces inside that band, unsourced as a target.
       - Jackson's chameleon sourcing: the cost guide says wild-caught Hawaiian
         animals turn up cheaper, the legal guide says Hawaii bars private
         ownership and restricted inter-island transport in 1997. Both
         sourced; no page says how a legally sourced Hawaiian animal reaches
         the mainland trade. Left open by the batch, filed here.
+        - DONE 2026-09-16: it does not. The HISC profile says commercial export to the mainland is illegal, and LafeberVet says the feral animals are often caught for the trade anyway. The cost guide now says a mainland Hawaiian wild-caught animal was exported before the rule or in breach of it, links the legal guide, and gained a Sources block with both pages.
       - Fire skink dish or scatter: the health guide suggests "considering
         feeding from a dish to reduce accidental ingestion", the enrichment
         and setup guides say release feeders into the leaf litter. A
         recommendation conflict between two hedged sentences; decide it.
+        - DONE 2026-09-16: scatter feeding stays. The health guide now says a dish is only for an animal with a past impaction or on a dry, fine substrate that should be replaced anyway.
       - Uromastyx basking: the set now carries the veterinary 110 to 120F
         (Long Island Birds & Exotics; Chicago Exotics gives 105 to 110F) over
         ReptiFiles' 120 to 130F, by the source ranking. If Mike wants the
         hobby figure back, it needs a source that outranks a vet clinic.
+        - Left as is 2026-09-16: the veterinary figure stands unless Mike asks for the hobby one.
 
 - [x] DONE 2026-09-16, eighteen added, every species with a hub and a legal guide now carries it. Legal guides missing from RELATED_ARTICLES, corpus-wide sweep. Three of
       batch I's five species had one (red-footed tortoise, degu, savannah

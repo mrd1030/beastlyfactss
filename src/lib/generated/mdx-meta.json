@@ -2599,7 +2599,7 @@
     "path": "/content/guides/aquarium-ich-treatment-guide.mdx",
     "slug": "aquarium-ich-treatment-guide",
     "title": "Treating Ich: Heat, Salt or Medication, and the Temperature Ceiling That Decides",
-    "seoTitle": "Treating Ich in Aquarium Fish: Heat, Salt or Meds",
+    "seoTitle": "Treating Ich: Heat, Salt or Medication",
     "excerpt": "Every fish health guide here says to treat ich by raising the temperature, and half of them say it about a species whose ceiling is below the number that works. This is the page that settles which fish can take the heat, which get salt, which get medication, and how long.",
     "date": "2026-11-30",
     "category": "Fish",
@@ -2650,7 +2650,9 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 9,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/aquarium-power-outage-and-transport-guide.mdx",
@@ -18102,7 +18104,7 @@
       },
       {
         "q": "What causes substrate impaction in fire skinks?",
-        "a": "Dry, loose substrate swallowed by accident during feeding. See a vet if suspected. Moist substrate prevents it, and consider feeding from a dish to reduce accidental ingestion."
+        "a": "Dry, loose substrate swallowed by accident during feeding. See a vet if suspected. Moist substrate prevents it. Scatter feeding into the leaf litter, which the setup and enrichment guides call for, is safe on a properly moist substrate, and a dish is only for an animal that has already had an impaction or is on a dry, fine substrate that should be replaced anyway."
       },
       {
         "q": "Do fire skinks get metabolic bone disease?",
@@ -26374,7 +26376,9 @@
     "truth": null,
     "sourceCount": 4,
     "headingCount": 7,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/invertebrate-rehousing-guide.mdx",
@@ -26534,7 +26538,7 @@
     "faqs": [
       {
         "q": "How much does a Jackson's chameleon cost to buy?",
-        "a": "$90 to $150 typically, and prized, highly colored specimens of the primary subspecies reach $250. Wild-caught Hawaiian animals sometimes turn up cheaper, but they're frequently parasitized, so captive-bred is worth the higher price here."
+        "a": "$90 to $150 typically, and prized, highly colored specimens of the primary subspecies reach $250. Wild-caught Hawaiian animals sometimes turn up cheaper, but Hawaii bars commercial export to the mainland, so a cheap Hawaiian animal was either exported before the rule or illegally, and it is frequently parasitized besides. Captive-bred is worth the higher price here."
       },
       {
         "q": "What does the upfront enclosure setup cost?",
@@ -26569,8 +26573,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 2,
+    "headingCount": 8,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -26864,7 +26868,7 @@
       },
       {
         "q": "What humidity does this species need?",
-        "a": "Around 30 to 50% by day, climbing to 75 to 100% overnight. Mist morning and evening, use an automated mister for consistency, and put a cool-mist humidifier on a humidistat for the overnight spike. Live plants hold it up naturally."
+        "a": "60 to 100% relative humidity, the veterinary figure, from misting every 4 to 8 hours or an automated mister, with a cool-mist humidifier where the room cannot hold it. The misting is also how the chameleon drinks. Live plants hold it up naturally."
       },
       {
         "q": "What substrate and lighting does a Jackson's chameleon need?",
@@ -38960,7 +38964,9 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 8,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/siberian-husky-enrichment-guide.mdx",
@@ -43218,7 +43224,9 @@
     "truth": null,
     "sourceCount": 6,
     "headingCount": 9,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/ultimate-birdwatching-guide-best-places-times-tips-2026.mdx",
