@@ -5,7 +5,7 @@ guide. Model each one on `content/guides/bearded-dragon-feeding-guide.mdx`.
 
 ## Missing feeding guides
 
-Status 2026-09-16: the 14 species below that have a full four-guide set now have feeding guides, dated 2026-12-03 to 2026-12-16, each with three opened sources, its hub route repointed from the stand-in species, and a body link from its health guide. Fire skink and quaker parakeet are the two still without one.
+Status 2026-09-16: the 14 species below that have a full four-guide set now have feeding guides, dated 2026-12-03 to 2026-12-16, each with three opened sources, its hub route repointed from the stand-in species, and a body link from its health guide. Fire skink and quaker parakeet followed the same day, dated 2026-12-17 and 2026-12-18, so every species with a full set now has a feeding guide.
 
 - argentine-tegu
 - california-kingsnake
@@ -47,4 +47,4 @@ Status 2026-09-16: the 14 species below that have a full four-guide set now have
 The 2026-09-09 readers of the nine new feeding guides (conure, budgie, hermit
 crab, hognose, White's tree frog, Russian tortoise, lovebird, box turtle,
 green iguana) all flagged missing portion sizes. Commit 776bcb98 left it for a
-separate pass, and that pass has not happened.
+separate pass. Done 2026-09-16 for the five that lacked a figure: conure (a tablespoon is a dinner plate), budgie and lovebird (a thumbnail is a dinner plate, and a quarter-full dish once a day for the lovebird), hermit crab (nightly, out by morning, amount per the food label, since no source gives a pinch figure). Hognose, White's tree frog, green iguana and box turtle already carried portions or splits, and the Russian tortoise guide says honestly that no published portion exists.

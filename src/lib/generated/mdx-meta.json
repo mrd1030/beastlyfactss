@@ -3033,7 +3033,9 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 7,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/argentine-tegu-handling-guide.mdx",
@@ -9691,7 +9693,9 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 7,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/california-kingsnake-handling-guide.mdx",
@@ -10085,7 +10089,9 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 7,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/canary-handling-guide.mdx",
@@ -17907,7 +17913,9 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 7,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/fire-bellied-toad-handling-guide.mdx",
@@ -18237,6 +18245,65 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/fire-skink-feeding-guide.mdx",
+    "slug": "fire-skink-feeding-guide",
+    "title": "Fire Skink Feeding: Five Minutes of Insects in the Leaf Litter, Twice a Week as an Adult",
+    "seoTitle": "What Do Fire Skinks Eat? Diet and Feeding Schedule",
+    "excerpt": "A fire skink hunts through leaf litter and eats what it finds in about five minutes, daily as a juvenile and twice a week as an adult. Here is the feeder list, the head-width rule, the dusting that goes on every time, the treats that stay monthly, and why a skink you cannot see is usually not a skink that has stopped eating.",
+    "date": "2026-12-17",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Fire Skink",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Feeding Schedule",
+      "Gut Loading",
+      "Calcium"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/fire-skink-feeding.jpg",
+    "imageAlt": "A red and black fire skink emerging from leaf litter with a cricket in its jaws",
+    "emoji": "🦎",
+    "lastReviewed": "2026-12-17",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed a fire skink?",
+        "a": "Young skinks get a meal every day or two; a grown one eats twice a week, with a third meal only if it looks lean. Let it hunt for about five minutes per session and keep every feeder narrower than its head. Some keepers work to five or six insects every third day instead, which comes to the same thing."
+      },
+      {
+        "q": "What insects can a fire skink eat?",
+        "a": "Almost any live invertebrate that fits: roaches of the dubia and discoid kinds, crickets, grasshoppers, worms of several sorts including earthworms and hornworms, beetle larvae and their adults, soldier fly grubs, snails, and the isopods in a bioactive tank. Rotate them; a single feeder repeated all week is the weak diet."
+      },
+      {
+        "q": "Can a fire skink eat mice or eggs?",
+        "a": "Occasionally. Keep a pinky to a monthly treat and offer a quail egg or a couple of berries only now and then. Both bring extra nutrients and extra fat, and the fat is the reason to ration them."
+      },
+      {
+        "q": "My fire skink is never out. Has it stopped eating?",
+        "a": "Unlikely. This is a species that lives under the litter and takes its prey there, so an unseen skink is usually a fed one. Track how many feeders go missing and put the animal on a scale once a month; a problem shows up as both numbers dropping together."
+      }
+    ],
+    "relatedProducts": [
+      "calcium-repashy-plus-lod-3oz",
+      "dubia-roaches-bag"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false
   },
   {
     "path": "/content/guides/fire-skink-handling-guide.mdx",
@@ -21381,7 +21448,9 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 7,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/giant-millipede-handling-guide.mdx",
@@ -22440,7 +22509,9 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 7,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/green-anole-handling-guide.mdx",
@@ -27049,7 +27120,9 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 8,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/jacksons-chameleon-handling-guide.mdx",
@@ -28097,6 +28170,10 @@
         "a": "Net it into a floating bowl or soft container instead of lifting it out. Wet your hands or the towel first, since dry surfaces strip the slime coat, and cradle rather than grip. A sock net or a water filled bag works for transfers."
       },
       {
+        "q": "Do koi have whiskers?",
+        "a": "Yes, two pairs of barbels at the corners of the mouth, whisker-like feelers that carry taste and touch receptors for finding food in murky water. Goldfish have none, which makes the barbels the quickest way to tell the two apart at the pond edge."
+      },
+      {
         "q": "Do koi bite?",
         "a": "Not in any defensive sense. Koi have pharyngeal teeth used for processing food, not defense, so bites aren't a concern. Look, don't touch, is the practical daily rule with this species."
       },
@@ -28576,7 +28653,9 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 7,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/leaf-tailed-gecko-handling-guide.mdx",
@@ -30644,7 +30723,9 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 8,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/milk-snake-handling-guide.mdx",
@@ -30691,6 +30772,10 @@
         "a": "Only as a rough US regional guideline, and even then it has real limits. Central and South America have dozens of coral snake species with different band orders, and young or damaged, twisted specimens can make the pattern hard to read, even for experienced herpetologists. It's essentially a non-issue for a captive-bred pet, since there's no real confusion risk in a home setting."
       },
       {
+        "q": "Do milk snakes drink milk?",
+        "a": "No. The name comes from an Old World folk tale that the snake sucks nursing mothers and cows dry, and the animal's belly could hold a few tablespoons at most. Milk snakes turn up in barns because barns have rodents, which is the whole of the connection."
+      },
+      {
         "q": "What's the most common handling mistake with milk snakes?",
         "a": "Housing two milk snakes together, thinking their calm temperament makes cohabitation safe. It doesn't. Handling mid-shed and leaving an enclosure insecurely closed are the other two mistakes worth watching for."
       }
@@ -30700,8 +30785,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1,
-    "headingCount": 6,
+    "sourceCount": 2,
+    "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -35019,7 +35104,9 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 7,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/praying-mantis-handling-guide.mdx",
@@ -35409,6 +35496,64 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/quaker-parakeet-feeding-guide.mdx",
+    "slug": "quaker-parakeet-feeding-guide",
+    "title": "Quaker Parakeet Feeding: Seventy Percent Pellets, a Small Handful a Day, and the Seed Diet Behind the Fatty Liver",
+    "seoTitle": "What Do Quaker Parakeets Eat? Diet and Feeding",
+    "excerpt": "A quaker will pick the sunflower seeds and peanuts out of any mix and eat nothing else, and that is the diet behind the fatty liver disease the species is known for. Here is the 70 percent pellet floor, the produce that makes up the rest, the small-handful portion, the foods that never go in, and how to move a seed bird over without starving it.",
+    "date": "2026-12-18",
+    "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
+    "tags": [
+      "Quaker Parakeet",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Bird Diet",
+      "Pellets",
+      "Fatty Liver",
+      "Seed"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/quaker-parakeet-feeding.jpg",
+    "imageAlt": "A green quaker parakeet on a cage perch holding a piece of broccoli in one foot, a bowl of pellets below",
+    "emoji": "🦜",
+    "lastReviewed": "2026-12-18",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much should a quaker parakeet eat a day?",
+        "a": "A small handful, which for a bird this size is the equivalent of a dinner-plate portion for a person. Pellets are at least 70 percent of it, fresh vegetables, greens and fruit no more than 20 to 40 percent, and seed a very small part or none. Put it out fresh each morning and pull the produce within a couple of hours."
+      },
+      {
+        "q": "Why is seed so bad for a quaker?",
+        "a": "Because a quaker picks the sunflower seeds and peanuts out of a mix and leaves the rest, and both are particularly high in fat. A seed and peanut diet is the one most associated with fatty liver disease in pet birds, and fatty liver is the quaker's signature illness. Seed is a treat, not a meal."
+      },
+      {
+        "q": "What can a quaker not eat?",
+        "a": "Avocado and onion, which are toxic. Chocolate, caffeine and alcohol. Processed food such as cookies, crackers, bread and chips, which lead to the same fatty liver a seed diet does. Pale, watery vegetables like iceberg lettuce and celery are not toxic, just empty."
+      },
+      {
+        "q": "My quaker will not touch pellets. What now?",
+        "a": "Convert gradually, mixing pellets into the food it already eats and shifting the ratio over days to weeks, and never by pulling the seed. A bird that does not recognize pellets as food will go hungry beside a full dish, so weigh it through the change. It may take days, weeks or months, and a stalled bird holds at the last ratio it accepted."
+      }
+    ],
+    "relatedProducts": [
+      "bird-food-harrisons-adult-lifetime-1lb"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false
   },
   {
     "path": "/content/guides/quaker-parakeet-handling-guide.mdx",
@@ -39082,7 +39227,9 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 7,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/savannah-monitor-handling-guide.mdx",
@@ -40546,7 +40693,9 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 8,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/stick-insect-handling-guide.mdx",
@@ -43070,7 +43219,9 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 8,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/tiger-salamander-handling-guide.mdx",
@@ -43595,7 +43746,9 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 7,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/tokay-gecko-handling-guide.mdx",

@@ -465,6 +465,7 @@ export const lizardGuides = [
       { slug: "fire-skink-cost-guide", line: "$25 to $40 for the skink, $660 to $720 for the setup, and the thermostat line people try to skip." },
       { slug: "fire-skink-tank-setup-guide", line: "36x18x18 as a floor, 92 to 96F basking, 60 to 70%, the 4 to 6 inch mix, and what to feed." },
       { slug: "fire-skink-handling-guide", line: "Why this is not the blue-tongued skink, and why the tail is the part to leave alone." },
+      { slug: "fire-skink-feeding-guide", line: "Five minutes of insects scattered in the litter, daily young and twice a week adult, dusted every time, and pinky mice monthly at most." },
       { slug: "fire-skink-health-issues-guide", line: "Respiratory infection, retained shed, impaction, and the humidity underneath all three." },
       { slug: "fire-skink-enrichment-guide", line: "The blue-tongue study where skinks stopped hiding, and what it asks of a burrowing lizard's enclosure." },
     ],
