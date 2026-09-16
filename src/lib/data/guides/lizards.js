@@ -951,7 +951,7 @@ export const lizardGuides = [
     routes: [
       { slug: "uromastyx-cost-guide", line: "$150 to $400 for the lizard, $500 to $900 of setup, and the starter kits that are sized wrong." },
       { slug: "uromastyx-tank-setup-guide", line: "4x2x2 as a floor, a 110 to 120F basking surface, 20 to 30% humidity, and the substrate recipe." },
-      { slug: "uromastyx-feeding-guide", line: "A herbivore's schedule by age, the greens list, where seeds actually belong, and how to read a fast." },
+      { slug: "savannah-monitor-feeding-guide", line: "Insects as the staple and rodents as the exception, daily young and two to three times a week adult, calcium weekly without vitamin D, and body condition as the portion." },
       { slug: "uromastyx-handling-guide", line: "Two weeks hands-off, scoop from below, and why the tail is a permanent weapon rather than a sacrifice." },
       { slug: "uromastyx-health-issues-guide", line: "MBD, impaction, respiratory infection, where the water comes from, and the six signs that mean call now." },
       { slug: "uromastyx-enrichment-guide", line: "Heat and a burrow beat every object you can buy, with the priority order to build in." },

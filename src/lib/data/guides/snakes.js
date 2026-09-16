@@ -628,7 +628,7 @@ export const snakeGuides = [
     routes: [
       { slug: "rosy-boa-cost-guide", line: "$150 to $400 for the snake, roughly $150 to $250 for the setup, $6 to $11 a month, and the vet set-aside that outweighs all of it." },
       { slug: "rosy-boa-tank-setup-guide", line: "A modest enclosure, a 90°F basking surface, and the low humidity that runs opposite to every other pet boa." },
-      { slug: "rosy-boa-feeding-guide", line: "Frozen-thawed mice, prey sized to body width, an adult interval longer than most keepers expect, and why overfeeding is the real risk." },
+      { slug: "milk-snake-feeding-guide", line: "Prey at 1.5 times the body width or 10% of its weight, every 5 to 7 days as a hatchling and 10 to 14 as an adult, and why hatchlings eat snakes." },
       { slug: "rosy-boa-handling-guide", line: "One of the calmest snakes you can own, the 48-hour post-feeding wait, and the balling response it rarely bothers to use." },
       { slug: "rosy-boa-health-issues-guide", line: "Respiratory infection, scale rot, retained shed, rostral abrasion, and obesity, with humidity behind most of the list." },
       { slug: "rosy-boa-enrichment-guide", line: "Floor space first, deep dry substrate second, and why the standard 20 gallon long was never actually tested." },

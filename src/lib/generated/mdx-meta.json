@@ -28350,6 +28350,65 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/leaf-tailed-gecko-feeding-guide.mdx",
+    "slug": "leaf-tailed-gecko-feeding-guide",
+    "title": "Leaf-Tailed Gecko Feeding: As Much as It Eats in a Night, and the Insects Come Out by Morning",
+    "seoTitle": "What Do Leaf-Tailed Geckos Eat? Feeding Schedule",
+    "excerpt": "A leaf-tailed gecko hunts after dark and eats as much as it takes in one night, daily as a juvenile and every other day as an adult, every feeder lightly dusted. Here is the feeder list by species size, why the food goes in at lights-out and the leftovers come out at dawn, and the water that arrives as mist.",
+    "date": "2026-12-07",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Leaf-Tailed Gecko",
+      "Uroplatus",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Feeding Schedule",
+      "Gut Loading"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/leaf-tailed-gecko-feeding.jpg",
+    "imageAlt": "A mossy leaf-tailed gecko pressed against bark at night with a cricket on the branch beside its head",
+    "emoji": "🦎",
+    "lastReviewed": "2026-12-07",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed a leaf-tailed gecko?",
+        "a": "Juveniles daily and adults every other day, offering as much as the gecko will eat in one night. The portion is the night, not a count: put the insects in as the lights go off, and whatever is still loose at dawn comes out."
+      },
+      {
+        "q": "What insects can a leaf-tailed gecko eat?",
+        "a": "Dubia, discoid and red runner roaches, crickets, grasshoppers, hornworms, silkworms, mealworm and superworm beetles, and captive-bred snails. Size the prey to the species: a giant leaf-tail takes an adult roach, a satanic leaf-tail needs feeders a fraction of that size."
+      },
+      {
+        "q": "Do I need to dust the insects?",
+        "a": "Yes, lightly, with a single all-in-one calcium and vitamin powder on every feeder. Skipping a dusting now and then is fine; skipping it as a habit is how a fast-growing gecko ends up with metabolic bone disease."
+      },
+      {
+        "q": "Why will my gecko not drink from its dish?",
+        "a": "Because it drinks the mist. Most of a leaf-tailed gecko's water comes from the daily misting, licked off leaves, bark and its own face. Keep a wall-mounted dish changed daily as a backup, and treat the misting, once or twice a day, as the water supply."
+      }
+    ],
+    "relatedProducts": [
+      "calcium-repashy-plus-lod-3oz",
+      "dubia-roaches-bag"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/leaf-tailed-gecko-handling-guide.mdx",
     "slug": "leaf-tailed-gecko-handling-guide",
     "title": "Should You Handle a Leaf-Tailed Gecko? Almost Never",
@@ -30359,6 +30418,63 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/milk-snake-feeding-guide.mdx",
+    "slug": "milk-snake-feeding-guide",
+    "title": "Milk Snake Feeding: Prey at 1.5 Times the Body Width, and Why Hatchlings Eat Snakes",
+    "seoTitle": "What Do Milk Snakes Eat? Feeding Schedule",
+    "excerpt": "A milk snake eats a thawed rodent no more than one and a half times its own width, every five to seven days as a hatchling and every ten to fourteen as an adult. Here is the schedule, the two sizing rules, the wild diet that explains why two milk snakes never share a tank, and how to read a refusal.",
+    "date": "2026-12-08",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Milk Snake",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Snake Diet",
+      "Feeding Schedule",
+      "Frozen Thawed"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/milk-snake-feeding.jpg",
+    "imageAlt": "A red, black and white banded milk snake constricting a thawed mouse on aspen substrate",
+    "emoji": "🐍",
+    "lastReviewed": "2026-12-08",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed a milk snake?",
+        "a": "Hatchlings every 5 to 7 days, juveniles every 7 to 10, adults every 10 to 14, on a single frozen-thawed rodent. If the snake is getting fat, stretch the interval or drop a prey size rather than skipping meals at random."
+      },
+      {
+        "q": "How big should the prey be?",
+        "a": "No more than one and a half times the snake's width at its widest point, or roughly ten percent of its body weight. Both rules land in the same place on a healthy snake, and the second one is why a gram scale is worth owning."
+      },
+      {
+        "q": "Can two milk snakes live together?",
+        "a": "No. Milk snakes eat other snakes in the wild, hatchlings feed mainly on other young snakes, and a pet will eat a cagemate. One snake per enclosure, and never two fed in the same space."
+      },
+      {
+        "q": "Why is my milk snake refusing food?",
+        "a": "Shed, a cold enclosure, a new home, or too much handling cover almost every case, and a prey item that is too cold in the middle covers most of the rest. A refusal past a month, or any refusal with weight loss, is a reptile vet visit."
+      }
+    ],
+    "relatedProducts": [
+      "feeding-tongs-lasnten-long-rubber-tip"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false
   },
   {
     "path": "/content/guides/milk-snake-handling-guide.mdx",
@@ -38683,6 +38799,65 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/savannah-monitor-feeding-guide.mdx",
+    "slug": "savannah-monitor-feeding-guide",
+    "title": "Savannah Monitor Feeding: Insects as the Staple, Rodents as the Exception, and the Liver That Pays for the Difference",
+    "seoTitle": "What Do Savannah Monitors Eat? Feeding Schedule",
+    "excerpt": "A savannah monitor is sold as a lizard that eats mice, and that is the diet that kills it in its early teens. Here is the insect-based staple, the rodents that stay occasional, the schedule from daily to two or three times a week, the calcium that follows the lighting, and why the vet's list of this species' diseases starts with a fat liver.",
+    "date": "2026-12-09",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Savannah Monitor",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Feeding Schedule",
+      "Obesity",
+      "Insects"
+    ],
+    "readTime": 8,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/savannah-monitor-feeding.jpg",
+    "imageAlt": "A savannah monitor on packed soil eating a large gut-loaded dubia roach, with a shallow water basin behind it",
+    "emoji": "🦎",
+    "lastReviewed": "2026-12-09",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed a savannah monitor?",
+        "a": "Juveniles daily or every other day, adults two to three times a week. Gut-loaded insects and crayfish are the staple at every age. There is no published portion figure, so the animal's body condition is the portion: a monitor developing a rounded, heavy shape is being fed too much or too richly, whatever the count says."
+      },
+      {
+        "q": "Can savannah monitors eat mice?",
+        "a": "Occasionally, and lean. Mice, chicks and freshwater fish belong in the occasional column and stay there. A rodent-based diet is the cause the veterinary sheet lists beside obesity and fatty liver disease, and it is why so many pet savannah monitors die young."
+      },
+      {
+        "q": "What supplements does a savannah monitor need?",
+        "a": "Calcium dusted on the insects, once a week on an adult, with a calcium-to-phosphorus ratio of at least 2:1 and low or no phosphorus. Plain calcium under a working UVB bulb, calcium with D3 without one, and never a product high in vitamin D, which reaches toxicity. A general vitamin and mineral supplement once a week alongside it."
+      },
+      {
+        "q": "Why has my savannah monitor stopped eating?",
+        "a": "A cold enclosure is the first check, since a monitor that cannot bask cannot digest. A new or wild-caught animal is usually parasites or stress. An adult that slows down in the cool months is following its dry-season rhythm. A refusal with weight loss, a swollen belly or lethargy in a warm enclosure is the vet visit."
+      }
+    ],
+    "relatedProducts": [
+      "dubia-roach-colony-starter-kit",
+      "calcium-miner-all-indoor-2pack"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/savannah-monitor-handling-guide.mdx",
     "slug": "savannah-monitor-handling-guide",
     "title": "How to Handle a Savannah Monitor (This Isn't the Ackie Monitor)",
@@ -43021,6 +43196,65 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/tokay-gecko-feeding-guide.mdx",
+    "slug": "tokay-gecko-feeding-guide",
+    "title": "Tokay Gecko Feeding: Five Minutes of Insects, Nothing Wider Than the Head, and Mice as a Rare Treat",
+    "seoTitle": "What Do Tokay Geckos Eat? Diet and Feeding Schedule",
+    "excerpt": "A tokay eats what it can catch in about five minutes, daily as a juvenile and every other day as an adult, with nothing wider than its head and a pinky mouse no more than twice a month. Here is the feeder list, the gut-loading that does the nutrition, the calcium schedule under and without UVB, and why a tokay that ignores its bowl is not dehydrated.",
+    "date": "2026-12-10",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Tokay Gecko",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Feeding Schedule",
+      "Gut Loading",
+      "Calcium"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/tokay-gecko-feeding.jpg",
+    "imageAlt": "A blue and orange spotted tokay gecko on a cork bark wall at night, mid-lunge at a cricket",
+    "emoji": "🦎",
+    "lastReviewed": "2026-12-10",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much should a tokay gecko eat?",
+        "a": "As many insects as it can catch in about five minutes, none wider than its head. Juveniles get that daily and full-grown adults every other day. Food is not left standing in the enclosure; loose insects chew on a resting gecko."
+      },
+      {
+        "q": "Can a tokay eat mice?",
+        "a": "As a treat, not a diet. A thawed pinky or fuzzy from tongs no more than twice a month bulks up a thin animal, and a tokay in the wild does take small rodents and lizards. Fed often, rodents make a fat gecko with a bad liver."
+      },
+      {
+        "q": "How often do I dust with calcium?",
+        "a": "Published schedules run from at least once a week to every feeding. Dust every feeding lightly on a growing juvenile, since that is when bone is built, and at least twice a week on an adult. Under UVB the powder is plain calcium; without UVB it carries vitamin D3."
+      },
+      {
+        "q": "My tokay never drinks from its bowl. Is it dehydrated?",
+        "a": "Probably not. Tokays often ignore a bowl and drink droplets from a spray instead. Keep the bowl on a ledge, scrubbed weekly, and spray the enclosure in the evening so the gecko can lap water off the walls and leaves."
+      }
+    ],
+    "relatedProducts": [
+      "calcium-repashy-plus-lod-3oz",
+      "gutload-flukers-high-calcium-dubia-roach-diet-7oz"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false
   },
   {
     "path": "/content/guides/tokay-gecko-handling-guide.mdx",
