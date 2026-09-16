@@ -12,8 +12,8 @@ export const turtleGuides = [
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
     // encyclopedia entry, which no deep dive repeats. Quarantine, outdoor
-    // fencing, brumation, hygiene, and the cold-stress line cite the shared
-    // reptile and chelonian guides in the sidebar's Health and More list.
+    // fencing and hygiene cite the shared reptile and chelonian guides in
+    // the sidebar's Health and More list.
     // Reconciled 2026-09-09 after the box turtle set test
     // (docs/READER_REVIEWS.md). The old hub's basking spot (85 to 88°F),
     // UVB strength (6 to 12%), 6 inch substrate, juvenile protein share
@@ -88,15 +88,15 @@ export const turtleGuides = [
     funFact: "Red-eared sliders are one of the world's most invasive species. Released or escaped pets have established populations on every continent except Antarctica!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
-    // the hub keeps no number of its own. The cold-water line, the daily
-    // health check, and hygiene cite the shared reptile guides in the
-    // sidebar's Health and More list. Reconciled 2026-09-09 after the
+    // the hub keeps no number of its own. The cold-water line and hygiene
+    // cite the shared reptile guides in the sidebar's Health and More list.
+    // Reconciled 2026-09-09 after the
     // red-eared slider set test (docs/READER_REVIEWS.md). The old hub's
     // 100-gallon adult minimum, 72 to 78°F water (which disagreed with its
     // own checklist's 75 to 80°F), every-other-day adult feeding, 50% pellet
-    // share, 20 to 40 year captive lifespan, the glass-approach claim the
-    // enrichment guide argues against, and the cost tables all contradicted
-    // the deep dives; they are gone rather than moved. The old hub's nitrate
+    // share, 20 to 40 year captive lifespan, and the cost tables all
+    // contradicted the deep dives; they are gone rather than moved. The old
+    // hub's nitrate
     // ceiling (under 40 ppm) is dropped too: no deep dive and no source on
     // the site states it.
     layout: "router",
@@ -335,8 +335,8 @@ export const turtleGuides = [
     //
     // The old hub asserted a 70-to-150-year lifespan no deep dive supported,
     // stated pyramiding causation as settled where the health guide calls it
-    // debated, and gave a sexing threshold, an outdoor-space figure and a
-    // shelter temperature that all disagreed with the deep dives.
+    // debated, and gave an outdoor-space figure and a shelter temperature
+    // that both disagreed with the deep dives.
     // Reconciled 2026-09-14 for batch H (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
