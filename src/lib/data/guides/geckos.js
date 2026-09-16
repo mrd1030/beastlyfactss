@@ -13,7 +13,7 @@ export const geckoGuides = [
     // the hub keeps no number of its own. Adult size comes from the
     // encyclopedia entry, which no deep dive repeats. Quarantine and hygiene
     // cite the shared reptile guides in the sidebar's Health and More list.
-    // Rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md):
+    // Rewritten to the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md):
     // the substrate row scopes paper towel to juveniles and quarantine, the
     // heat row says warm-side floor. The old hub narrowed ambient humidity to 50-60% against the
     // setup guide's 50-70%, never gave the humid hide figure at all, had the
@@ -174,7 +174,7 @@ export const geckoGuides = [
     // the hub keeps no number of its own. Adult size comes from the
     // encyclopedia entry, which no deep dive repeats. Quarantine and hygiene
     // cite the shared reptile guides in the sidebar's Health and More list.
-    // Rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // Rewritten to the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     // The old hub disagreed with the deep dives on temperature,
     // insect frequency, supplement schedule, handling session length, time of
     // day, temperament and tail regrowth, and its own diet section and FAQ
@@ -255,7 +255,7 @@ export const geckoGuides = [
     // the hub keeps no number of its own. Adult size comes from the
     // encyclopedia entry. Salmonella, quarantine and the emergency plan cite
     // the shared reptile guides in the sidebar's Health and More list.
-    // Rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // Rewritten to the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     // Reconciled 2026-09-15 after the leaf-tailed gecko
     // set test (docs/READER_REVIEWS.md).
     //
@@ -433,7 +433,7 @@ export const geckoGuides = [
     // encyclopedia entry. Quarantine and shedding cite the shared reptile
     // guides in the sidebar's Health and More list. Reconciled 2026-09-15
     // after the mourning gecko set test (docs/READER_REVIEWS.md), rewritten to
-    // the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     //
     // The old hub was a full care sheet at lower resolution than the pages
     // under it, and the reader found six things wrong with it. Five were
@@ -533,7 +533,7 @@ export const geckoGuides = [
     // entry, which no deep dive repeats. Gut-loading, hygiene and the stool
     // check cite the shared reptile guides in the sidebar's Health and More
     // list. Rewritten to the template shape 2026-09-16
-    // (docs/HUB_ROUTER_REVIEWS.md): the enclosure row says one per enclosure
+    // (archive/docs-completed/HUB_ROUTER_REVIEWS.md): the enclosure row says one per enclosure
     // unless deliberately pairing, and the night floor is the setup guide's
     // 75 to 80F with the "not below 70" dropped. This species has no feeding
     // guide, so the diet rows point at the tank setup guide's Diet Basics

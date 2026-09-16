@@ -1636,7 +1636,7 @@ and no trailing filaments, and it has its own hero.
 # Fact photos awaiting art, `public/assets/facts/`, 1600x1067
 
 The ten facts drafted but held out of `facts.js` because no photo exists, listed
-in NEEDS_IMAGE.md under the 2026-08-31 and 2026-09-07 runs. Every fact needs its
+in archive/docs-completed/NEEDS_IMAGE.md under the 2026-08-31 and 2026-09-07 runs. Every fact needs its
 own photo, no reuse from a guide hero, a Beastfile hero or another fact: the
 photo is the whole interaction on a Beastfile page, where clicking a fact opens
 it in a lightbox.

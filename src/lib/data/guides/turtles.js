@@ -14,7 +14,7 @@ export const turtleGuides = [
     // encyclopedia entry, which no deep dive repeats. Quarantine, outdoor
     // fencing, brumation, hygiene, and the cold-stress line cite the shared
     // reptile and chelonian guides in the sidebar's Health and More list.
-    // Rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // Rewritten to the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     // Reconciled 2026-09-09 after the box turtle set test
     // (docs/READER_REVIEWS.md). The old hub's basking spot (85 to 88°F),
     // UVB strength (6 to 12%), 6 inch substrate, juvenile protein share
@@ -94,7 +94,7 @@ export const turtleGuides = [
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Hygiene cites the shared reptile
     // guides in the sidebar's Health and More list. Rewritten to the template
-    // shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md): the tank row says the
+    // shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md): the tank row says the
     // hatchling tank is temporary, the refusal window is the feeding guide's
     // 2 to 3 weeks outside brumation, and brumation is on the card. Reconciled
     // 2026-09-09 after the
@@ -182,7 +182,7 @@ export const turtleGuides = [
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Quarantine cites the shared
     // chelonian guide in the sidebar's Health and More list. Rewritten to the
-    // template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md). Reconciled
+    // template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md). Reconciled
     // 2026-09-15 after the
     // red-footed tortoise set test (docs/READER_REVIEWS.md). The old hub
     // fought its own articles on six figures and each one is gone rather
@@ -347,7 +347,7 @@ export const turtleGuides = [
     // encyclopedia entry, which no deep dive repeats. Quarantine and
     // brumation cite the shared chelonian and tortoise guides in the sidebar's
     // Health and More list. Rewritten to the template shape 2026-09-16
-    // (docs/HUB_ROUTER_REVIEWS.md): a UVB row, a quarantine row, a legal row
+    // (archive/docs-completed/HUB_ROUTER_REVIEWS.md): a UVB row, a quarantine row, a legal row
     // that matches the legal guide's "no state prohibits", and a diet row
     // scoped to every age.
     //

@@ -31,7 +31,7 @@ guide. Model each one on `content/guides/bearded-dragon-feeding-guide.mdx`.
   do not add to the open portions issue below.
 - Dates: one a day starting 2026-10-07, the day after the last scheduled
   feeding guide (lovebird, 2026-10-06).
-- Never fetch photos. Log the 16 hero images in NEEDS_IMAGE.md at
+- Never fetch photos. Log the 16 hero images in archive/docs-completed/NEEDS_IMAGE.md at
   `/assets/images/<species>-feeding.jpg`.
 - Run `scripts/sync-articles.js` after writing, or the guides render as raw
   slugs and never appear in Deep Dive.

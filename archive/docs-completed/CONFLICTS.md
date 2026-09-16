@@ -43,6 +43,8 @@ the three care sheets' 68°F even though it matches the vet hospital's hard
 floor exactly. Someone may want to reword it as a floor rather than a normal
 resting point, but no number there is wrong.
 
+Resolved 2026-09-16: the setup guide no longer carries the "around 65°F" resting-point wording.
+
 **Basking is NOT a conflict.** The apparent 120-130°F vs 98-115°F gap is a
 surface-vs-air measurement difference, not a disagreement. ReptiFiles, Dubia,
 and Reptile Supply all state their 120-130°F explicitly as a *surface* reading
@@ -63,5 +65,4 @@ brumation runs 1 to 3 months," with a vet check past about 3.5 months, more
 than 10 percent weight loss, or appetite not returning within 2 to 3 weeks of
 waking. `content/guides/bearded-dragon-brumation-guide.mdx` used the care
 package's "1 to 3 months typical" framing since it doesn't contradict its own
-3.5-month checkpoint. Someone should tighten the "1 to 4 months is expected"
-line in the feeding guide to match.
+3.5-month checkpoint. Resolved 2026-09-16: the feeding guide now says 1 to 3 months is typical, matching the brumation guide and the care package.

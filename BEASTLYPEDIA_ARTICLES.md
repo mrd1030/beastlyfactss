@@ -88,6 +88,8 @@ up on the card, the profile and the fact feed.
 
 ## Route B: articles for the 13 bare Beastfiles
 
+Status 2026-09-16: ten still have an empty `relatedFiles`: Blue Poison Dart Frog, Shoebill, Victoria Crowned Pigeon, Fennec Fox, Capybara, Aye-Aye, Serval, Giant Manta Ray, Leafy Sea Dragon, Thorny Devil. The other three in the table below are done.
+
 I checked all 396 published articles: none of these animals is covered anywhere,
 so these have to be written. Each is a standalone piece leading with something
 the reader probably believes and the research contradicts, which is the angle

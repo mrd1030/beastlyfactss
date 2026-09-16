@@ -88,7 +88,7 @@ export const smallMammalGuides = [
     // encyclopedia entry, which no deep dive repeats. Heat stress signs cite
     // the shared small mammal guides in the sidebar's Health and More list.
     // Reconciled 2026-09-15 after the degu set test (docs/READER_REVIEWS.md),
-    // rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md):
+    // rewritten to the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md):
     // the pellet cap is its own row again, apart from the unlimited hay.
     //
     // This is the second hub after gerbil to reverse the hub-loses default.
@@ -197,7 +197,7 @@ export const smallMammalGuides = [
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
     // encyclopedia entry. Rewritten to the template shape 2026-09-16
-    // (docs/HUB_ROUTER_REVIEWS.md). Reconciled 2026-09-15 after the mouse set test
+    // (archive/docs-completed/HUB_ROUTER_REVIEWS.md). Reconciled 2026-09-15 after the mouse set test
     // (docs/READER_REVIEWS.md).
     //
     // The reader graded the hub C and named the reason precisely: "I would
@@ -297,7 +297,7 @@ export const smallMammalGuides = [
     // entry, which no deep dive repeats. Vet trips cite the shared
     // small-mammal guides in the sidebar's Health and More list. Reconciled
     // 2026-09-09 for batch D (docs/READER_REVIEWS.md), rewritten to the template
-    // shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md). The bar spacing row drops
+    // shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md). The bar spacing row drops
     // the "1 to 1.5 cm" parenthetical the setup guide carries, since 1.5 cm is
     // 0.59 inch and contradicts the half inch it sits beside.
     layout: "router",
@@ -449,7 +449,7 @@ export const smallMammalGuides = [
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
     // encyclopedia entry. Rewritten to the template shape 2026-09-16
-    // (docs/HUB_ROUTER_REVIEWS.md). Reconciled 2026-09-15 after the flying squirrel set
+    // (archive/docs-completed/HUB_ROUTER_REVIEWS.md). Reconciled 2026-09-15 after the flying squirrel set
     // test (docs/READER_REVIEWS.md).
     //
     // No shared small-mammal guide names this species, so unlike the other
@@ -547,7 +547,7 @@ export const smallMammalGuides = [
     // rows below copy them from there. Aural cholesteatoma and seizures were
     // hub-only too and are now sections of the health guide.
     // Reconciled 2026-09-14 for batch H (docs/READER_REVIEWS.md), rewritten to
-    // the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
@@ -770,7 +770,7 @@ export const smallMammalGuides = [
     // the hub keeps no number of its own. Adult size comes from the
     // encyclopedia entry, which no deep dive repeats. No row cites the shared
     // small mammal guides; they sit in the sidebar's Health and More list.
-    // Rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // Rewritten to the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     // The old hub put Wobbly Hedgehog Syndrome at 1 in 3, ten times the
     // figure in the health guide written to correct it, and its cold floor at
     // 65°F against the deep dives' 72. Reconciled 2026-09-14 for batch G
@@ -941,7 +941,7 @@ export const smallMammalGuides = [
     // encyclopedia entry, which no deep dive repeats. No row cites the shared
     // small mammal guides; they sit in the sidebar's Health and More list.
     // Built 2026-09-14 for the sugar glider set test (docs/READER_REVIEWS.md),
-    // rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // rewritten to the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",

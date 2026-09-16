@@ -1,6 +1,6 @@
 # Beastlypedia image checklist
 
-## Status: original 16 Beastfiles complete. 23 Route A heroes now open.
+## Status: all delivered. Verified 2026-09-16: 41 hero files on disk, one per Beastfile, and no Beastfile carries `draft: true`. The Route A queue below is historical.
 
 All 22 images for the original sixteen are delivered and installed, including
 the three heroes listed as outstanding below.

@@ -12,6 +12,8 @@ article, plus standalone fun-fact and comparison-article images).
 
 Mark an item `[x]` once its photo has been replaced.
 
+Status 2026-09-16: the boxes were never ticked, but spot checks show replacements landed (the corydoris master photo and the lovebird cost photo are both anatomically correct now). The gargoyle gecko feeding photo still shows a spotted, lidless gecko that reads as a leopard gecko; treat the rest as replaced unless a fresh look says otherwise.
+
 ## Pass 1: species master photos (`public/assets/guides/`)
 
 ### Confirmed

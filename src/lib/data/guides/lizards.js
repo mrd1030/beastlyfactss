@@ -13,7 +13,7 @@ export const lizardGuides = [
     // the hub keeps no number of its own. Adult size comes from the
     // encyclopedia entry. Hygiene cites the shared reptile guides in the
     // sidebar's Health and More list. Rewritten to the template shape
-    // 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md). Reconciled 2026-09-15 after the ackie monitor
+    // 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md). Reconciled 2026-09-15 after the ackie monitor
     // set test (docs/READER_REVIEWS.md). Difficulty follows the
     // encyclopedia entry, which the same pass moved from Advanced to
     // Intermediate: ReptiFiles rates the species Intermediate and the
@@ -112,7 +112,7 @@ export const lizardGuides = [
     // guide, which is the only page that names its sources and the spread
     // between them. Salmonella, quarantine and the emergency plan cite the
     // shared reptile guides in the sidebar's Health and More list. Rewritten
-    // to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md): the diet
+    // to the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md): the diet
     // row names plants, the handling row no longer keeps "the nearest rule"
     // after the sentence defining it. Reconciled 2026-09-15 after the tegu set test
     // (docs/READER_REVIEWS.md).
@@ -325,7 +325,7 @@ export const lizardGuides = [
     // cite the shared reptile guides in the sidebar's Health and More list,
     // which the set tests keep reporting as gaps because the reader never
     // opens them. Rewritten to the template shape 2026-09-16
-    // (docs/HUB_ROUTER_REVIEWS.md), with a legal row and the wild-caught
+    // (archive/docs-completed/HUB_ROUTER_REVIEWS.md), with a legal row and the wild-caught
     // settling window. Reconciled 2026-09-09 after the blue tongue
     // skink set test (docs/READER_REVIEWS.md).
     layout: "router",
@@ -407,7 +407,7 @@ export const lizardGuides = [
     // the hub keeps no number of its own. Adult size comes from the
     // encyclopedia entry. Quarantine and hygiene cite the shared reptile
     // guides in the sidebar's Health and More list. Rewritten to the template
-    // shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md). Reconciled 2026-09-15 after the
+    // shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md). Reconciled 2026-09-15 after the
     // fire skink set test (docs/READER_REVIEWS.md).
     //
     // The old hub's cost table was roughly $200 short of the cost guide's own
@@ -500,7 +500,7 @@ export const lizardGuides = [
     // the hub keeps no number of its own. Adult size comes from the
     // encyclopedia entry. Salmonella, quarantine and the emergency plan cite
     // the shared reptile guides in the sidebar's Health and More list.
-    // Rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // Rewritten to the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     // Reconciled 2026-09-15 after the green anole set
     // test (docs/READER_REVIEWS.md).
     //
@@ -598,7 +598,7 @@ export const lizardGuides = [
     // them. This species has no feeding guide, so the diet rows cite the
     // health issues and enrichment guides, which is where the diet material
     // actually lives. Rewritten to the template shape 2026-09-16
-    // (docs/HUB_ROUTER_REVIEWS.md). Reconciled 2026-09-09 after the green iguana set test
+    // (archive/docs-completed/HUB_ROUTER_REVIEWS.md). Reconciled 2026-09-09 after the green iguana set test
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
@@ -683,7 +683,7 @@ export const lizardGuides = [
     // the hub keeps no number of its own. Adult size comes from the
     // encyclopedia entry. Quarantine and hygiene cite the shared guides in
     // the sidebar's Health and More list. Rewritten to the template shape
-    // 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md). Reconciled 2026-09-15 after the Jackson's
+    // 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md). Reconciled 2026-09-15 after the Jackson's
     // chameleon set test (docs/READER_REVIEWS.md).
     //
     // The old hub carried veiled chameleon content on a Jackson's page, which
@@ -782,7 +782,7 @@ export const lizardGuides = [
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Quarantine and hygiene cite the
     // shared reptile guides in the sidebar's Health and More list. Rewritten
-    // to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md): the
+    // to the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md): the
     // lifespan row keeps the cost guide's overfeeding sentence. Reconciled 2026-09-15 after the
     // savannah monitor set test (docs/READER_REVIEWS.md).
     //
@@ -890,7 +890,7 @@ export const lizardGuides = [
     // the hub keeps no number of its own. Adult size comes from the
     // encyclopedia entry. Quarantine and hygiene cite the shared reptile
     // guides in the sidebar's Health and More list. Rewritten to the template
-    // shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md): the substrate row keeps
+    // shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md): the substrate row keeps
     // the calcium sand warning, feeding keeps "lean toward the less-frequent
     // end". Reconciled 2026-09-15 after the uromastyx set test
     // (docs/READER_REVIEWS.md).
@@ -987,7 +987,7 @@ export const lizardGuides = [
     // hub keeps no number of its own. Adult size comes from the encyclopedia
     // entry, which no deep dive repeats. Quarantine and hygiene cite the
     // shared reptile guides in the sidebar's Health and More list. Rewritten
-    // to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md). Built
+    // to the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md). Built
     // 2026-09-14 for the veiled chameleon
     // set test (docs/READER_REVIEWS.md). The old hub's supplement schedule was
     // roughly four times the feeding guide's, on the two supplements that guide

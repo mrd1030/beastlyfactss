@@ -1,5 +1,7 @@
 # Enrichment products to add to affiliateProducts.js
 
+**Status 2026-09-16: done.** All eight are in `src/lib/data/affiliateProducts.js` (small-pet-foraging-puzzle, small-pet-snuffle-mat, small-animal-tunnel, tortoise-forage-seed-mix, reptile-rolling-treat-dispenser, target-stick-clicker, burrow-tunnel-composable, reptile-extraction-puzzle-board). Kept for the sourcing notes.
+
 Eight categories the enrichment guides need that the 261-item catalogue does not
 cover at all. These are not size variants of anything already listed: each is a
 mechanism with no existing entry.

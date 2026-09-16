@@ -141,6 +141,16 @@ catches the defects the commands produce. Per batch:
 
 ## Next jobs, in order
 
+Status check 2026-09-16, against the repo rather than this list: items 2, 4,
+5 and 6 are finished. The 22 FunFact boxes were rewritten or cut the same day
+(12 rewritten, milk snake handling and Russian tortoise setup cut). The linking
+pass is done: self-reference and section-link are errors in check-voice now,
+with vs guides, overviews, fun-facts posts and the welcome post exempt from
+section-link by design. All 84 hubs are routers and reconciled, so the "legacy
+hubs" and print-button questions are moot. Item 3 is still open: none of the
+batch 6 handling guides carry a pick-up section. The "Prices last checked" line
+sits on 9 of 84 cost guides.
+
 1. Merge claude/more-on-block once Mike says merge.
 2. FunFact repeats: 22 FunFact boxes restate a body sentence nearly
    verbatim. Prompt at the end of this file.
