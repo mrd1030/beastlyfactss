@@ -17,7 +17,7 @@ export const amphibianGuides = [
     // set test (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Legal check", value: "Banned outright in California, Wyoming, and Alabama, effectively banned in New Jersey, permit-only and not issued for pets in Maine, and reported banned in Washington, D.C.; several other states restrict them in some way. Legal in Virginia since August 2021, despite widely repeated claims otherwise. Check your state before buying.", source: "axolotl-legal-guide" },
         { label: "Tank size", value: "A 20-gallon long tank is the minimum for one axolotl, with a 40-gallon breeder better if keeping two.", source: "axolotl-tank-setup-guide" },
@@ -98,7 +98,7 @@ export const amphibianGuides = [
     // guide's Diet Basics section.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Enclosure", value: "10 gallons for one to three toads, a social species, with a tight screen lid for a strong jumper. Half land, half water, or an all-water base with floating cork and flat rock.", source: "fire-bellied-toad-tank-setup-guide" },
         { label: "Water", value: "Deep enough to swim, sloping to about 3 inches, with easy exits. Water quality is the defining requirement: dechlorinated tap water, and a small filter or partial changes of up to half the water weekly.", source: "fire-bellied-toad-tank-setup-guide" },
@@ -175,7 +175,7 @@ export const amphibianGuides = [
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Enclosure", value: "A 10 to 20 gallon terrarium for an adult, 24x18x18 inches ideal, floor space over height. One frog per enclosure: cannibalistic at any size.", source: "pacman-frog-tank-setup-guide" },
         { label: "Temperature", value: "75 to 85°F by day with a basking area near 83°F, 65 to 75°F at night, from a side-mounted heat mat on a thermostat or a low-wattage bulb. Never a mat under the tank: it burrows to the floor and burns.", source: "pacman-frog-tank-setup-guide" },
@@ -257,7 +257,7 @@ export const amphibianGuides = [
     // below come from the tank setup guide's Diet Basics section.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Legal check", value: "Eleven jurisdictions ban it. The January 2025 federal injurious-wildlife listing restricts import and shipment, not ownership. New Jersey's endangered listing reaches a pet whatever its origin.", source: "tiger-salamander-legal-guide" },
         { label: "Enclosure", value: "A 20-gallon long, 24 by 18 by 12 inches, minimum for one adult, floor over height for a burrower. Cohabitation is not recommended: competition and cannibalism.", source: "tiger-salamander-tank-setup-guide" },
@@ -285,8 +285,6 @@ export const amphibianGuides = [
         "Bloating, straining, or no stool after a meal on loose substrate: impaction, fatal if left",
         "Red or discolored skin, abnormal shedding, or a real change in behavior: a skin or bacterial infection, chytrid included",
         "Appetite loss, in an animal this voracious",
-      ],
-      soon: [
         "Weak or bowed limbs or tremors: calcium or D3 deficiency",
         "Weight loss or loose stool in a wild-origin animal or one fed wild-caught feeders: a fecal exam for parasites",
       ],
@@ -342,7 +340,7 @@ export const amphibianGuides = [
     // instruction is gone.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Enclosure", value: "18 by 18 by 24 inches tall minimum for one adult, or 24x18x24 for a group of two to four of similar size. A frog swallows anything that fits, smaller frogs included.", source: "whites-tree-frog-tank-setup-guide" },
         { label: "Temperature", value: "Cool side 70 to 75°F, basking 80 to 85°F, mid-70s at night. A gentle gradient, not intense heat.", source: "whites-tree-frog-tank-setup-guide" },
@@ -368,8 +366,6 @@ export const amphibianGuides = [
         "Lethargy and weight loss in a new or suspect animal: chytridiomycosis, quarantine it and get to a vet",
         "Redness on the belly and legs with lethargy and appetite loss: red-leg syndrome",
         "Skin lesions or a bacterial infection, which a wet, poorly ventilated enclosure invites",
-      ],
-      soon: [
         "Weak limbs, a droopy jaw, or twitching: calcium or UVB catching up with the frog",
         "Fat bulging over the tympanum and armpits: obesity, a diet fix at home, and a vet once the liver is involved",
       ],

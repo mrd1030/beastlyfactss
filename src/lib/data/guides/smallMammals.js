@@ -17,7 +17,7 @@ export const smallMammalGuides = [
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Cage", value: "A reasonable minimum is around 24 by 24 by 36 inches, tall and multi-level with solid, non-wire floors and shelves. Bigger is better for a species this active. Metal beats plastic, since chinchillas chew constantly and ingested plastic can cause a fatal blockage.", source: "chinchilla-tank-setup-guide" },
         { label: "Wheel", value: "A solid metal wheel, 15 inches or larger. Never an exercise ball, a genuine overheating and injury risk for this species specifically.", source: "chinchilla-tank-setup-guide" },
@@ -115,7 +115,7 @@ export const smallMammalGuides = [
     // small amounts of carrot can trigger the disease.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Legal", value: "Restricted in fifteen jurisdictions and banned outright in eight, the most regulated of the small rodents sold as pets.", source: "degu-legal-guide" },
         { label: "Never one", value: "Two minimum, same-sex or neutered, ideally littermates. Isolation is linked to aggression and self-mutilation, a stronger statement than for most rodents.", source: "degu-enrichment-guide" },
@@ -123,16 +123,16 @@ export const smallMammalGuides = [
         { label: "Solid roof", value: "Their wild predators are birds of prey, so movement overhead frightens them. A solid roof rather than open mesh.", source: "degu-tank-setup-guide" },
         { label: "Temperature", value: "Cool, 65 to 70°F, and never toward 77°F. Away from windows, radiators, and direct sun.", source: "degu-tank-setup-guide" },
         { label: "Substrate and wheel", value: "Dust-free aspen or paper bedding with a deep digging area. A solid wheel of 11 to 12 inches; wire wheels catch toes and a small one arches the spine.", source: "degu-tank-setup-guide" },
-        { label: "Sand, not dust", value: "Bathing sand two or three times a week, twenty minutes at a time. Sift and top it up; left in permanently it becomes a toilet.", source: "degu-enrichment-guide" },
+        { label: "Sand, not dust", value: "Bathing sand two or three times a week, twenty minutes at a time, sifted and topped up rather than left in. The enrichment guide says sand, not chinchilla dust; the cost guide prices dust, and this card follows the enrichment guide.", source: "degu-enrichment-guide" },
         { label: "Chewing", value: "Mineral and lava blocks, untreated wood, cardboard, apple or willow branches. Anything plastic in the cage will be chewed eventually.", source: "degu-enrichment-guide" },
         { label: "Hay", value: "Unlimited grass hay, timothy, meadow, or orchard, at all times. It is the bulk of the diet and what keeps the teeth worn down.", source: "degu-feeding-guide" },
         { label: "Pellets", value: "Measured, not free-fed: roughly 1 to 2 tablespoons per degu daily. Given the choice they eat pellets over hay and lose the fiber they need.", source: "degu-feeding-guide" },
         { label: "Sugar", value: "Fruit, honey, and any sugary treat avoided almost entirely. Degus develop diabetes so readily they are studied as a model for it.", source: "degu-feeding-guide" },
         { label: "Rabbit food", value: "Never. Rabbit pellets carry a coccidiostat that harms degus, and hamster and gerbil mixes are too high in protein and seed.", source: "degu-feeding-guide" },
-        { label: "Orange teeth", value: "Healthy teeth look orange. White or pale teeth in an adult are the sign of a problem, and dental disease is the top reason degus see a vet: drooling, dropped food, weight loss, watery eyes.", source: "degu-health-issues-guide" },
+        { label: "Orange teeth", value: "Healthy teeth look orange. White or pale teeth in an adult are the sign of a problem.", source: "degu-health-issues-guide" },
         { label: "Never the tail", value: "The skin sloughs off under grasping pressure and does not grow back. Scoop by the body.", source: "degu-handling-guide" },
         { label: "Heat stress signs", value: "Rapid or open-mouth breathing, then drooling, then weakness, with tremors or collapse as the severe stage. Move it to the coolest room, cool it gradually, and get to a vet.", source: "small-mammal-temperature-heat-stress-guide" },
-        { label: "Budget", value: "$10 to $50 per degu and you need two. Equipment roughly $375 to $520, the cage most of it, and an exotic vet check with dental at $80 to $160 a year.", source: "degu-cost-guide" },
+        { label: "Budget", value: "$10 to $50 per degu and you need two. Equipment roughly $375 to $520, most of it a 24x24x48 inch multi-level cage at $280 to $360, and an exotic vet check with dental at $80 to $160 a year.", source: "degu-cost-guide" },
         { label: "Lifespan", value: "5 to 8 years in captivity.", source: "degu-cost-guide" },
         { label: "Adult size", value: "5 to 8 inches (12 to 20 cm) body, plus a 4 to 5 inch tufted tail; 6 to 11 oz." },
       ],
@@ -221,7 +221,7 @@ export const smallMammalGuides = [
     // wrong enclosure for this species.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Bar spacing", value: "No more than about a quarter inch (6mm), and 5mm is sometimes recommended. Cages sold for small animals at three-eighths of an inch still let a determined mouse out.", source: "mouse-tank-setup-guide" },
         { label: "A wire cage, not a tank", value: "An aquarium cannot move air, so ammonia builds. Wire sides and top, a solid floor, and top mesh no larger than about 1cm square.", source: "mouse-tank-setup-guide" },
@@ -302,7 +302,7 @@ export const smallMammalGuides = [
     // 0.59 inch and contradicts the half inch it sits beside.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Cage type", value: "A wire cage with a solid sealed base, never a glass tank. A tank traps the ammonia that drives the respiratory disease rats are prone to.", source: "rat-tank-setup-guide" },
         { label: "Cage size", value: "24x24x24 inches is the minimum for a single rat, and you are keeping at least two, so it is a starting point. Cages built for ferrets or chinchillas are usually the right size.", source: "rat-tank-setup-guide" },
@@ -383,7 +383,7 @@ export const smallMammalGuides = [
     // 2026-09-09 for batch C (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Cage", value: "For a pair, at least 30 by 24 by 48 inches, adding roughly 4 additional square feet of floor space for each ferret beyond that. A double-unit multi-level cage with solid levels and a covered ramp is the most consistently recommended setup. Bar spacing one inch or less.", source: "ferret-tank-setup-guide" },
         { label: "Temperature", value: "Keep the room in the 50 to 75°F range, and treat anything above about 80 to 85°F as a real heatstroke risk. No supplemental heat source is needed indoors.", source: "ferret-tank-setup-guide" },
@@ -464,7 +464,7 @@ export const smallMammalGuides = [
     // climbing structure at $25 to $50 against $20 to $50.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Check the law first", value: "A clean legal yes in nine jurisdictions, yes with a string in four (Texas caps you at 25 and forbids selling), and a permit in nineteen, several of which exist for rehabilitators rather than pet owners. Native wildlife, so the state wildlife agency is the one to ask.", source: "flying-squirrel-legal-guide" },
         { label: "The squirrel, and realistically two", value: "$200 to $450 for a hand-raised baby, bought young at 6 to 8 weeks while the bonding window is open. Intensely social: budget for a same-sex pair from the start.", source: "flying-squirrel-cost-guide" },
@@ -550,7 +550,7 @@ export const smallMammalGuides = [
     // the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Never just one", value: "A same-sex pair or sibling group. Introductions between unfamiliar adults frequently fail, which is the hardest part of keeping them.", source: "gerbil-handling-guide" },
         { label: "Enclosure", value: "A glass aquarium with a mesh lid, not a wire cage, since wire cannot hold deep bedding. A 20-gallon long is the minimum for a pair; a 40-gallon breeder, about 36 by 18 by 16 inches, is the better target.", source: "gerbil-tank-setup-guide" },
@@ -632,7 +632,7 @@ export const smallMammalGuides = [
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Enclosure", value: "7.5 square feet minimum for one, 10.5 for a pair (and a pair is the recommended minimum), more for a larger group. Solid floor, never wire.", source: "guinea-pig-tank-setup-guide" },
         { label: "Temperature", value: "65 to 79°F. Heatstroke becomes a real risk above 80°F, so the gap between the comfortable ceiling and the danger line is a single degree.", source: "guinea-pig-tank-setup-guide" },
@@ -704,7 +704,7 @@ export const smallMammalGuides = [
     // after the hamster set test (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Legal", value: "Legal in every US state except Hawaii, which bans hamsters outright with no permit route.", source: "hamster-legal-guide" },
         { label: "Enclosure", value: "Roughly 700 to 775 square inches of unbroken floor for a Syrian, around 600 for dwarf species, more always better. Bar spacing no more than 1/2 inch for Syrians, 1/4 inch for smaller species.", source: "hamster-tank-setup-guide" },
@@ -777,7 +777,7 @@ export const smallMammalGuides = [
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Legal check", value: "California, Georgia, Hawaii, Pennsylvania, Washington DC, and New York City will not let you keep one, with no permit to apply for. New Jersey has a permit and you need it. Maine and Wisconsin are not permit states, whatever the internet says.", source: "hedgehog-legal-guide" },
         { label: "Enclosure", value: "At least 2 by 3 feet of solid floor, never wire, with roughly three-quarters of it filled with hides and enrichment. Long and wide rather than tall: hedgehogs are poor climbers and get hurt falling.", source: "hedgehog-tank-setup-guide" },
@@ -866,7 +866,7 @@ export const smallMammalGuides = [
     // dives on the vet clock, greens, hay share, lifespan, and vet schedule.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Space", value: "8 square feet of enclosure plus 24 square feet of exercise space. In practice a foldable metal exercise pen, 4 feet by 4 feet or bigger.", source: "rabbit-tank-setup-guide" },
         { label: "Time out", value: "At least 5 hours a day to run, and permanent access to a run or a rabbit-proofed room is what the welfare research points at.", source: "rabbit-tank-setup-guide" },
@@ -944,7 +944,7 @@ export const smallMammalGuides = [
     // rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Legal check", value: "Illegal in California, Alaska, Hawaii, the District of Columbia, and New York City, effectively illegal in Pennsylvania, permit-required in New Jersey, import-permit in New Mexico. Georgia, Massachusetts, and Wyoming do not ban them, whatever the internet says.", source: "sugar-glider-legal-guide" },
         { label: "Never one glider", value: "Colonial, so two minimum, and solitary housing is a major welfare risk by veterinary consensus. Neutering males avoids breeding and most of the scent marking.", source: "sugar-glider-enrichment-guide" },

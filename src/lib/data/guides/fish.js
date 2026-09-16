@@ -20,7 +20,7 @@ export const fishGuides = [
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Tank size", value: "29 gallons, tall, for a single adult. A 55-gallon is the better choice for a group of four to six adults, and at a standard 20 inches tall it clears the height requirement on its own.", source: "angelfish-tank-setup-guide" },
         { label: "Height over length", value: "At least 18 to 20 inches tall. A 20-gallon long is often only about 12 inches tall, too shallow for this body shape.", source: "angelfish-tank-setup-guide" },
@@ -99,7 +99,7 @@ export const fishGuides = [
     // 2026-09-08 after the betta fish set test (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Tank size", value: "5 gallons, heated and filtered, is the real minimum. Not the bowls or unheated cups bettas are often sold in.", source: "betta-fish-tank-setup-guide" },
         { label: "Heater and filter", value: "A 15 to 25 watt adjustable heater holding a stable 76 to 82°F, 78 to 80°F the sweet spot. A gentle, low-flow filter such as a sponge filter, since a betta's long fins can't handle strong current.", source: "betta-fish-tank-setup-guide" },
@@ -190,7 +190,7 @@ export const fishGuides = [
     // below takes the health guide's wording.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Confirm the species first", value: "A juvenile labeled only \"pleco\" may be a common pleco, which grows to 12 to 24 inches and needs 75 gallons or more. A bristlenose stays 4 to 6 inches for life. Ask for the species name.", source: "bristlenose-pleco-cost-guide" },
         { label: "Why the bristles do not settle it", value: "They usually do not show until around 3 inches, and then reliably only on males.", source: "bristlenose-pleco-tank-setup-guide" },
@@ -271,7 +271,7 @@ export const fishGuides = [
     // batch H (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Before any fish", value: "A 2008 study on this species found it tolerates ammonia better than assumed but is sensitive to nitrite, so a finished cycle before stocking is the single most useful habit.", source: "cardinal-tetra-health-issues-guide" },
         { label: "School size", value: "Ten or more. Smaller groups develop stress sickness, and cardinals shoal tighter and color up better in bigger groups. Six is a floor, not a target.", source: "cardinal-tetra-handling-guide" },
@@ -352,7 +352,7 @@ export const fishGuides = [
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Before any fish", value: "A finished cycle reads zero ammonia and zero nitrite while still processing a dose, which is a different question from how long the tank has been running.", source: "aquarium-cycling-guide" },
         { label: "Tank size", value: "A 20-gallon long for a school of six standard cories; dwarf and pygmy species manage in about 10 gallons. 29 or 30 gallons is better, especially for 8 to 15.", source: "corydoras-catfish-tank-setup-guide" },
@@ -448,7 +448,7 @@ export const fishGuides = [
     // reader preferred the article in both cases, and so does the router.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Tank size", value: "55 gallons is the entry point and a floor, not a target; experienced keepers recommend 75 or larger, since a 55 forces far more frequent water changes for a proper group. Taller and deeper over long and shallow.", source: "discus-tank-setup-guide" },
         { label: "How many", value: "5 to 6 or more. Three gives the bottom fish nothing but the bottom; six spreads the pecking order thin. The dark fish hanging at the surface in a corner is the one to act on, and the answer is more fish or more tank.", source: "discus-tank-setup-guide" },
@@ -525,7 +525,7 @@ export const fishGuides = [
     // More list. Built 2026-09-08 for the goldfish set test (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Tank size", value: "20+ gallons for one fancy goldfish (29+ gallons is the better setup), plus 10 more gallons per additional fish. 55 gallons minimum for one common or comet, more per additional fish, better in an outdoor pond. 40 gallons minimum for a shubunkin, 55+ gallons or a pond better.", source: "goldfish-tank-size-bowl-myth" },
         { label: "Filtration", value: "Process the tank's total volume at least 4 times an hour, ideally 5 to 10 times. Running two filters on one goldfish tank is common practice among experienced keepers, not overkill.", source: "goldfish-tank-setup-guide" },
@@ -600,7 +600,7 @@ export const fishGuides = [
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Tank size", value: "5 gallons is a bare minimum for a trio; 10 gallons is the practical start for 5 or 6, and 20 the better long-term choice if males and females share a tank.", source: "guppy-tank-setup-guide" },
         { label: "Temperature", value: "76 to 78°F as the target inside 72 to 82°F. A heater unless the room stays warm year-round, at 3 to 5 watts per gallon, so 25 to 50 watts on a 10-gallon.", source: "guppy-tank-setup-guide" },
@@ -682,7 +682,7 @@ export const fishGuides = [
     // debunks in the same set, and that is gone.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Pond volume", value: "Roughly 250 gallons per adult, or 10 gallons per inch of fish. 1,000 gallons is the cited practical minimum and supports only a few fish; size for the adults they become, not the juveniles you bought.", source: "koi-tank-setup-guide" },
         { label: "Depth", value: "3 feet minimum, 3 to 5 feet or more preferred. Depth buys temperature stability, predator protection and survival through a frozen winter.", source: "koi-tank-setup-guide" },
@@ -773,7 +773,7 @@ export const fishGuides = [
     // filed as a gap in docs/READER_LOG.md.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Tank size", value: "20 gallons for a small group, 30 or more for sailfins or any group that has started breeding. Long rather than tall, with a lid, since mollies jump.", source: "molly-tank-setup-guide" },
         { label: "Temperature", value: "72 to 82°F, held steady: a swing of more than about 2°F in 24 hours is one of the commonly cited shimmy triggers. A heater unless the room stays warm year-round.", source: "molly-tank-setup-guide" },
@@ -860,7 +860,7 @@ export const fishGuides = [
     // for the neon tetra set test (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "How many", value: "Ten. Groups of ten showed less aggression and darting and fed sooner than smaller groups. Six is the floor, and one species of ten beats two species of five.", source: "neon-tetra-enrichment-guide" },
         { label: "Tank size", value: "10 gallons for a school of 6, a 20-gallon long for the better 10 to 15. Schooling plays out horizontally, so long beats tall.", source: "neon-tetra-tank-setup-guide" },
@@ -871,14 +871,14 @@ export const fishGuides = [
         { label: "Feeding schedule", value: "Twice daily, what the school finishes in about 2 to 3 minutes. Fry and juveniles 3 to 4 small feeds a day, adults from about 6 months on twice.", source: "neon-tetra-feeding-guide" },
         { label: "Diet", value: "A quality tropical flake crushed fine, or a micro-pellet, for a mouth only 1 to 2mm across. Baby brine shrimp, daphnia or chopped bloodworms 2 to 3 feeds a week. Food too large is spat out, which starves the fish while the tank looks fed.", source: "neon-tetra-feeding-guide" },
         { label: "A dead fish", value: "Never leave one in the tank or let the others scavenge it. Neon tetra disease has no cure, and fish that eat an infected body contract it.", source: "neon-tetra-feeding-guide" },
-        { label: "Quarantine", value: "At least 30 days in a bare tank with its own net and siphon before a new fish joins the school. Thirty is the floor, not the target.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Quarantine", value: "2 to 4 weeks in a separate tank before a new fish joins the school, given the disease risk this species carries.", source: "neon-tetra-tank-setup-guide" },
         { label: "Tankmates", value: "Peaceful, similarly sized community fish. Nothing with a mouth big enough for a neon, and no fin nippers.", source: "neon-tetra-handling-guide" },
         { label: "Handling", value: "Netting is the only contact. They are small and easily damaged, so take real care.", source: "neon-tetra-handling-guide" },
-        { label: "Budget", value: "$1 to $3 a fish, a school of 6 to 12 for $10 to $40. Setup roughly $100 to $300. Vet care does not apply; water quality and over-the-counter treatment are the whole of it.", source: "neon-tetra-cost-guide" },
+        { label: "Budget", value: "$1 to $3 a fish, occasionally $5, a school of 6 to 12 for $10 to $40. Setup roughly $100 to $300. Vet care does not apply; water quality and over-the-counter treatment are the whole of it.", source: "neon-tetra-cost-guide" },
         { label: "Lifespan", value: "Around 5 years with stable care; average conditions see closer to 2 to 3.", source: "neon-tetra-cost-guide" },
         { label: "Adult size", value: "1 to 1.5 inches (2.5 to 4 cm)." },
         { label: "Water chemistry, the wider picture", value: "KH holds pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Work with what the source water gives you.", source: "freshwater-ph-gh-kh-guide" },
-        { label: "Sick fish check", value: "Clear water is not safe water. Ammonia, nitrite and low oxygen are invisible, and gasping at the surface is the visible sign. Test before assuming illness.", source: "spotting-a-sick-fish-guide" },
+        { label: "Cycle first", value: "Cycle the tank fully before any neon goes in. A fish this small has no margin for an ammonia spike, and the treatable conditions on the health list all trace to water.", source: "neon-tetra-enrichment-guide" },
         { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
@@ -888,7 +888,6 @@ export const fishGuides = [
       callNow: [
         "Small white spots like grains of salt, flashing against decor, rapid breathing: ich, treatable",
         "Ragged or bloody-edged fins: fin rot, treatable",
-        "Difficulty swimming normally",
         "Restless swimming at night, fading color along the back, lumps under the skin, a curved spine: neon tetra disease, no cure, and the fish is separated so the others cannot eat it",
       ],
       vetLine: "Everything treatable here traces back to water quality and stability. Neon tetra disease is likely over-diagnosed; true cases are uncommon in a well-established tank.",
@@ -950,7 +949,7 @@ export const fishGuides = [
     // in another.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Tank size", value: "75 gallons for a single adult, 100 to 125-plus for a pair. A 2-inch juvenile reaches 12 inches or more inside its first year, so buy the adult tank now.", source: "oscar-fish-tank-setup-guide" },
         { label: "Space first", value: "Everything else is downstream. No enrichment compensates for an adult oscar in a 40 gallon.", source: "oscar-fish-enrichment-guide" },
@@ -1043,7 +1042,7 @@ export const fishGuides = [
     // docs/READER_LOG.md.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Tank size", value: "10 gallons holds a small group of about five, though its 20 by 10 inch base misses the stricter 24 by 12 footprint. A 20 gallon long meets it, and is the size for six or more or a breeding group.", source: "platy-tank-setup-guide" },
         { label: "Temperature", value: "68 to 79°F, the mid-70s the usual target, held steady: swings over about 2°F in 24 hours are a cited shimmy trigger. A heater is the safer default even for cool-tolerant variatus lines.", source: "platy-tank-setup-guide" },
@@ -1141,25 +1140,24 @@ export const fishGuides = [
     // behavioral row below.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Not two males", value: "The single most useful stocking rule. With two, every contest is the same pair and the loser has nowhere to be. One male with a group of females, or several males in a large planted tank where the aggression spreads.", source: "swordtail-enrichment-guide" },
-        { label: "Sex ratio", value: "Two to three females per male minimum, more is better. One male and four or more females is a clean setup, and it will produce fry.", source: "swordtail-enrichment-guide" },
-        { label: "Tank size", value: "20 gallons is the floor for a small trio; 29 to 30 gallons is the realistic starting point for an active, open-water fish. Long rather than tall.", source: "swordtail-tank-setup-guide" },
+        { label: "Tank size", value: "20 gallons is the floor for a small trio; 29 to 30 gallons is the realistic starting point for an active, open-water fish. Long rather than tall, over fine gravel or sand, nothing sharp near a lyretail's fins.", source: "swordtail-tank-setup-guide" },
+        { label: "Water chemistry", value: "pH 7.0 to 8.4 in moderately hard to hard water, 12 to 30 dGH. Soft tap water gets crushed coral or a buffering product.", source: "swordtail-tank-setup-guide" },
         { label: "Temperature", value: "72 to 79°F is the steady target inside a workable 64 to 82°F, with swings under about 2°F in 24 hours.", source: "swordtail-tank-setup-guide" },
         { label: "The lid", value: "They escape through gaps well under an inch. A full mesh or glass lid, a feeding hatch no larger than necessary, and a check after any rearranging.", source: "swordtail-tank-setup-guide" },
         { label: "Filtration", value: "Flow of 4 to 5 times the tank volume an hour, from a hang-on-back or canister. A sponge filter only if fry survival is the priority.", source: "swordtail-tank-setup-guide" },
         { label: "Cover", value: "Dense live plants along the sides and back, open water through the middle. Cover for pursued females, and broken sight lines that stop a dominant male tracking a subordinate across the tank.", source: "swordtail-enrichment-guide" },
         { label: "Feeding", value: "Once or twice a day, cleared within about 2 minutes; overfeeding is the common mistake. Vegetable content a few times a week, and bloodworms, brine shrimp or daphnia in regular rotation.", source: "swordtail-feeding-guide" },
-        { label: "Off food", value: "A new tank, an unbalanced ratio, unstable water, cold water, a female near birth, or illness, which usually brings other visible signs.", source: "swordtail-feeding-guide" },
         { label: "Acclimation", value: "Float the sealed bag 15 to 20 minutes, then drip over 45 to 60 minutes. Net the fish in; bag water carries transport ammonia.", source: "swordtail-handling-guide" },
         { label: "Quarantine", value: "2 to 4 weeks in a separate tank before a new fish joins the display.", source: "swordtail-handling-guide" },
         { label: "Sexing", value: "Males carry the sword and a rod-like anal fin. Females have neither and are the larger sex.", source: "swordtail-handling-guide" },
-        { label: "Harassment as a health item", value: "Chewed fins or a clamped, listless fish in a male-heavy tank: move it to a recovery tank and fix the ratio, one male to three or four females, at the same time.", source: "swordtail-health-issues-guide" },
+        { label: "Sex ratio", value: "One male to three or four females. Chewed fins or a clamped, listless fish in a male-heavy tank means move it to a recovery tank and fix the ratio at the same time.", source: "swordtail-health-issues-guide" },
         { label: "Budget", value: "$3 to $25 a fish, more for lyretails. Setup $115 to $190, more at 29 or 30 gallons, then $20 to $35 a month. Swordtails rarely see a vet.", source: "swordtail-cost-guide" },
         { label: "Lifespan", value: "3 to 5 years with stable water.", source: "swordtail-cost-guide" },
         { label: "Adult size", value: "Males up to 5.5 inches (14 cm) including the sword; females up to 6.2 inches (16 cm)." },
-        { label: "Cycling, the finish line", value: "Done when a full dose of ammonia reads zero within 24 hours, nitrite reads zero, and nitrate has started building. All three. Most fishless cycles run four to six weeks.", source: "aquarium-cycling-guide" },
+        { label: "Fry are coming", value: "A single female produces 20 to 100 or more fry roughly every 4 weeks without a fresh mating. Swordtails and platies interbreed readily, so a mixed livebearer tank breeds hybrids.", source: "swordtail-cost-guide" },
         { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
@@ -1235,7 +1233,7 @@ export const fishGuides = [
     // had with its sex ratio.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "How many", value: "At least 6, and 8 to 10 is the better start. In a small group the nipping lands on the same fish over and over; a larger one spreads it out.", source: "zebra-danio-handling-guide" },
         { label: "Tank size", value: "A 10-gallon works for the bare minimum school of 6. A 20-gallon long is the better minimum for 8 to 10, and long beats tall: danios in a short tank run laps.", source: "zebra-danio-tank-setup-guide" },

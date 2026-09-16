@@ -30,7 +30,7 @@ export const lizardGuides = [
     // the substrate, the enclosure, and the thermometer gun.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Legal", value: "41 of 52 jurisdictions place no restriction. Washington DC, Hawaii, New York City, and New Mexico rule it out as a lizard or a monitor generally; New Jersey, Rhode Island, and Maine want a permit.", source: "ackie-monitor-legal-guide" },
         { label: "Day one", value: "Quarantine a new ackie until it has cleared two separate clean fecal checks before it joins an established collection.", source: "ackie-monitor-health-issues-guide" },
@@ -141,7 +141,7 @@ export const lizardGuides = [
     // deep dive or gone.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Check the law first", value: "Florida banned new pet tegus outright on April 29, 2021. Georgia, Alabama, Louisiana, Hawaii, DC, and New York City ban one; New Mexico and New Jersey want permits; Minnesota allows one from a permitted breeder only.", source: "argentine-tegu-legal-guide" },
         { label: "Day one", value: "Quarantine 3 to 6 months on plain paper towel with dedicated tools, the quarantined animal serviced last.", source: "reptile-quarantine-guide" },
@@ -229,7 +229,7 @@ export const lizardGuides = [
     // 2026-09-08 after the bearded dragon set test (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "A new dragon is quarantined 3 to 6 months away from any reptile you already keep, on paper towel, with its own tools and a vet workup inside that window.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "4x2x2 ft, about 120 gallons, and that is the adult minimum, not an upgrade for later.", source: "bearded-dragon-tank-setup-guide" },
@@ -330,7 +330,7 @@ export const lizardGuides = [
     // skink set test (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "Quarantine 3 to 6 months on plain paper towel away from other reptiles, with a vet check and fresh fecal sample within two weeks. The display enclosure gets its deep substrate; quarantine does not.", source: "reptile-quarantine-guide" },
         { label: "Which skink is it", value: "Northerns are almost all captive-bred. Indonesians are mostly wild-caught and commonly carry parasites, which changes almost everything below.", source: "blue-tongue-skink-health-issues-guide" },
@@ -429,7 +429,7 @@ export const lizardGuides = [
     // the setup guide's figure.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "Quarantine 3 to 6 months away from any reptile you already keep, with parasite screening, since most fire skinks in the trade are wild-caught.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "36 by 18 by 18 inches minimum for a single adult, floor space over height. One per enclosure: two males fight.", source: "fire-skink-tank-setup-guide" },
@@ -457,8 +457,6 @@ export const lizardGuides = [
         "Bloating or no stool: substrate impaction",
         "Retained eye caps, or a severe retained shed after home correction has failed",
         "An open or infected wound where the tail dropped",
-      ],
-      soon: [
         "Soft or swollen limbs or a soft jaw: bone disease, less common here but possible with weak UVB and calcium",
       ],
       vetLine: "Low humidity is behind the respiratory infection and poor shedding that make up most of this species' real risk, and dry substrate behind the impaction.",
@@ -524,7 +522,7 @@ export const lizardGuides = [
     // had.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Enclosure", value: "24 by 24 by 24 inches minimum for one adult, tall and front-opening with good ventilation, and housed alone: two males is an argument that never resolves, and the loser stops feeding.", source: "green-anole-tank-setup-guide" },
         { label: "Temperature", value: "Basking around 90F, cool side 70 to 77F, nights 65 to 75F, from a 60-watt incandescent in a ceramic dome mounted above the mesh, never resting on it: anoles hang inverted on mesh and burn.", source: "green-anole-tank-setup-guide" },
@@ -604,7 +602,7 @@ export const lizardGuides = [
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "Quarantine 3 to 6 months on plain paper towel away from other reptiles, with a vet check and fresh fecal sample within two weeks. In one facility assessment all eight iguanas carried parasites.", source: "reptile-quarantine-guide" },
         { label: "Adult enclosure", value: "10 feet long by 5 wide by 6 tall minimum, some sources 12 by 6 by 6. No commercial enclosure is large enough; it is a custom walk-in build.", source: "green-iguana-tank-setup-guide" },
@@ -712,7 +710,7 @@ export const lizardGuides = [
     // section rather than being dropped.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "Quarantine 3 to 6 months away from any reptile you already keep. A new lizard can look healthy while still shedding mites or a fatal virus.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "24 by 24 by 48 inches tall for an adult, with two or three solid sides rather than full mesh to hold humidity and cut stress. One chameleon per enclosure. A juvenile under about 10 months can start in 16x16x30.", source: "jacksons-chameleon-tank-setup-guide" },
@@ -812,7 +810,7 @@ export const lizardGuides = [
     // this species.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Legal", value: "Eleven jurisdictions restrict it, five as bans and six as paperwork; the other 41 place no restriction. Louisiana names this species on its prohibited list.", source: "savannah-monitor-legal-guide" },
         { label: "Day one", value: "Quarantine 3 to 6 months on plain paper towel away from other reptiles, with a vet check and fresh fecal sample within two weeks.", source: "reptile-quarantine-guide" },
@@ -916,25 +914,25 @@ export const lizardGuides = [
     // enrichment guide's "occasional insects are not a disaster".
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "Quarantine 3 to 6 months away from any reptile you already keep, and two weeks alone to settle before regular handling.", source: "reptile-quarantine-guide" },
-        { label: "Enclosure", value: "4 by 2 by 2 feet minimum from day one for species up to about 18 inches; an Egyptian needs up to 8x4x4. One per enclosure. Starter kits sized for a 20-gallon tank are too small for an adult.", source: "uromastyx-tank-setup-guide" },
+        { label: "Enclosure", value: "4 by 2 by 2 feet minimum from day one for species up to about 18 inches; an Egyptian needs up to 8x4x4. One per enclosure. A 20-gallon starter kit is too small.", source: "uromastyx-tank-setup-guide" },
         { label: "Basking, the defining requirement", value: "A basking surface of 110 to 120°F, at least 130°F for the Egyptian, from halogen floods over a stone stack. Cool zone around 85°F, nights around 65°F with no supplemental heat.", source: "uromastyx-tank-setup-guide" },
         { label: "Humidity", value: "20 to 30% ambient on the cool side, dry enough to make a bearded dragon look tropical, with moisture allowed deeper in a burrow. Coastal species like the Yemen want closer to 50%.", source: "uromastyx-tank-setup-guide" },
         { label: "Substrate", value: "Fine sand or a sandy soil mix, at least 4 inches deep for burrowing. Skip loose calcium sand and walnut shell entirely: both carry real impaction risk. No moisture-holding coco fiber, mulch, or moss.", source: "uromastyx-tank-setup-guide" },
         { label: "UVB", value: "A T5 HO bulb around 14%, targeting a basking UVI of 4.5 to 6.0, with a bright daylight LED bar, replaced every 6 to 12 months.", source: "uromastyx-tank-setup-guide" },
         { label: "Feeding schedule", value: "Juveniles daily. Adults anywhere from 2 to 4 times a week up to daily, and lean toward the less frequent end, since overfeeding is a common mistake. Food down 1 to 2 hours after the basking light comes on.", source: "uromastyx-feeding-guide" },
-        { label: "What they eat", value: "Chopped dark leafy greens and edible flowers: collard, dandelion, mustard, turnip, endive, escarole, arugula, hibiscus. Seeds and sprouted lentils limited, and insects optional at best.", source: "uromastyx-feeding-guide" },
-        { label: "A uromastyx that stops eating", value: "1 to 2 weeks of acclimation fasting and a 1 to 2 month brumation slowdown are normal if it stays alert and hydrated. Past a week outside those, or losing more than 5 to 10% of body weight, it is a vet visit.", source: "uromastyx-feeding-guide" },
+        { label: "What they eat", value: "Chopped dark leafy greens and edible flowers: collard, dandelion, mustard, turnip, endive, escarole, arugula, hibiscus. Seeds and sprouted lentils in small amounts several times weekly, inside both the feeding guide's limited and the setup guide's regular. Insects optional.", source: "uromastyx-feeding-guide" },
+        { label: "A uromastyx that stops eating", value: "1 to 2 weeks of acclimation fasting and a 1 to 2 month brumation slowdown are normal if it stays alert and hydrated. Past a week outside those, or losing more than 5 to 10% of body weight on a weekly weigh-in, it is a vet visit.", source: "uromastyx-feeding-guide" },
         { label: "Where the water comes from", value: "Almost all of it from food, so feed greens before they wilt. A bowl stays available even if it goes untouched.", source: "uromastyx-health-issues-guide" },
         { label: "Impaction and respiratory infection", value: "Bloating or stool that has stopped is a vet visit, not a wait. A lizard sitting with its mouth slightly open, or a bubble at a nostril, is the early sign of humidity too high or heat too low.", source: "uromastyx-health-issues-guide" },
-        { label: "Weigh it monthly", value: "Illness starts as appetite and weight loss rather than anything visible. A gram scale monthly, and an annual exam with a fecal test.", source: "uromastyx-health-issues-guide" },
-        { label: "Handling", value: "Scoop from below, never from above, supporting the whole body, for 10 to 15 minutes at most. Never by the tail: it does not drop, so it stays a permanent weapon.", source: "uromastyx-handling-guide" },
+        { label: "Metabolic bone disease", value: "The most common issue in captivity: poor appetite and weakness early, then a soft or hanging jaw, swollen limbs, tremors. Too little calcium or D3, or weak UVB. Always a vet.", source: "uromastyx-health-issues-guide" },
+        { label: "Handling", value: "Scoop from below, never from above, whole body supported, 10 to 15 minutes at most. Never by the tail, which does not drop.", source: "uromastyx-handling-guide" },
         { label: "Budget", value: "$150 to $400 for a captive-bred Mali or ornate, $300 to $800 for rarer species. Setup roughly $500 to $900, the enclosure $280 to $400 of it, then $25 to $45 a month. A routine exam runs $50 to $100.", source: "uromastyx-cost-guide" },
         { label: "Lifespan", value: "15 to 20 years, past 25 with excellent care.", source: "uromastyx-cost-guide" },
         { label: "Adult size", value: "10 to 30 inches (25 to 75 cm) depending on species." },
-        { label: "Hygiene", value: "Wash hands with soap after any contact, keep the lizard out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Supplements", value: "Phosphorus-free calcium on the greens, more often for juveniles, tapering with age, and a multivitamin roughly weekly to every couple of weeks. UVB, not oral D3.", source: "uromastyx-feeding-guide" },
       ],
     },
     emergencyCard: {
@@ -944,12 +942,10 @@ export const lizardGuides = [
         "Open-mouth breathing or discharge from the nose",
         "Any tissue protruding from the vent",
         "Lumps or swelling in the joints or under the skin",
-      ],
-      soon: [
         "Sunken eyes, dull or darkened color, or lethargy: dehydration, which needs a vet rather than a bigger water bowl",
         "Runny or foul-smelling stools",
       ],
-      vetLine: "Most problems trace back to getting this species' unusually specific heat, humidity, or diet wrong.",
+      vetLine: "Each of these is on its own a reason to call. Most problems trace back to getting this species' unusually specific heat, humidity, or diet wrong.",
     },
     routes: [
       { slug: "uromastyx-cost-guide", line: "$150 to $400 for the lizard, $500 to $900 of setup, and the starter kits that are sized wrong." },
@@ -999,7 +995,7 @@ export const lizardGuides = [
     // hub ever drifts again.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Legal check", value: "Hawaii and Washington DC bar one. New Jersey wants a permit, Minnesota allows one from a permitted breeder. Check the city ordinance too.", source: "veiled-chameleon-legal-guide" },
         { label: "Day one", value: "Quarantine for months, not weeks, in a separate room, with a fecal exam before it meets an established pet.", source: "reptile-quarantine-guide" },

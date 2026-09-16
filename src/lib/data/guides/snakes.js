@@ -19,7 +19,7 @@ export const snakeGuides = [
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Legal check", value: "Broadly legal; the invasive-constrictor rules were written to exclude it. Illegal in Hawaii and New York City, a permit in New Jersey and Delaware, a permitted breeder in Minnesota, and city ordinances vary.", source: "ball-python-legal-guide" },
         { label: "Enclosure", value: "4x2x2 feet for an adult, at least as long as the snake, in PVC, which holds humidity far better than glass. A hatchling up to about 300 grams does well in a 10-gallon, a juvenile under 3 feet in 36x18x18. One snake per enclosure.", source: "ball-python-tank-setup-guide" },
@@ -99,7 +99,7 @@ export const snakeGuides = [
     // list. Reconciled 2026-09-09 for batch C (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "A new snake is quarantined 3 to 6 months away from any reptile you already keep, on paper towel, with its own tools and a vet workup inside that window. Boas specifically can carry inclusion body disease for months to years with no visible signs, which is exactly why the window runs this long.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "Adults typically need somewhere around 6 to 8 feet long, 2 to 3 feet wide, and 3 to 4 feet tall, roughly 10 square feet of floor space at minimum. A 6ft+ adult PVC enclosure is a solid way to build for that final size from the start. House boas individually, never together.", source: "boa-constrictor-tank-setup-guide" },
@@ -174,7 +174,7 @@ export const snakeGuides = [
     // batch G (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "Quarantined 3 to 6 months away from any reptile you already keep, on paper towel, with its own tools and a vet workup inside that window.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "A 20-gallon for a hatchling; 48 by 24 by 24 inches, front-opening, for an adult, and at least as long as the snake. A tightly clamped lid for an accomplished escape artist.", source: "california-kingsnake-tank-setup-guide" },
@@ -251,7 +251,7 @@ export const snakeGuides = [
     // list. Reconciled 2026-09-09 for batch C (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "A new snake is quarantined 3 to 6 months away from any reptile you already keep, on paper towel, with its own tools and a vet workup inside that window.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "A 40-gallon breeder (36x18x18 inches) is the adult minimum, with 4x2x2 feet (48x24x24 inches) as the preferred size for a fully grown adult. Front-opening PVC enclosures are generally preferred over glass. House corn snakes singly.", source: "corn-snake-tank-setup-guide" },
@@ -336,7 +336,7 @@ export const snakeGuides = [
     // place on the site giving a strength for this species.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Legal", value: "Native almost everywhere, so most states regulate it as wildlife rather than as a pet-trade reptile, which can mean more paperwork than a ball python. New York needs a permit even for one bought at a pet store.", source: "garter-snake-legal-guide" },
         { label: "Quarantine", value: "3 to 6 months in a bare enclosure on plain paper towel. Mites usually show within weeks.", source: "reptile-quarantine-guide" },
@@ -423,7 +423,7 @@ export const snakeGuides = [
     // Reconciled 2026-09-09 for batch E (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "Quarantined 3 to 6 months away from any reptile you already keep, on paper towel, with its own tools and a vet workup inside that window.", source: "reptile-quarantine-guide" },
         { label: "Legal check", value: "Georgia and West Virginia rule it out. Colorado allows captive-bred Western and Plains hognose with documentation from May 1, 2026, but not Eastern. California is the open question to confirm with the state agency.", source: "hognose-snake-legal-guide" },
@@ -508,7 +508,7 @@ export const snakeGuides = [
     // Reconciled 2026-09-14 for batch H (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "Quarantined 3 to 6 months away from any reptile you already keep, on paper towel, with its own tools and a vet workup inside that window.", source: "reptile-quarantine-guide" },
         { label: "Legal check", value: "A handful of states restrict this species, and the rules turn on whether the subspecies is native rather than on it being a milk snake.", source: "milk-snake-legal-guide" },
@@ -593,7 +593,7 @@ export const snakeGuides = [
     // with the cost guide.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Legal check", value: "Broadly legal, and the Boidae exemptions that clear the boa constrictor mostly clear it too. New York City bans the family, Colorado's 2026 rewrite dropped it from the exemption, New Jersey's exemption names a different genus, and Hawaii bans every snake.", source: "rosy-boa-legal-guide" },
         { label: "Quarantine", value: "3 to 6 months in a different room. A second tank in the same room as your established reptile is proximity with a lid on it.", source: "reptile-quarantine-guide" },
