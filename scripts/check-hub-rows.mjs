@@ -8,15 +8,25 @@
 // and 18 rows and between 321 and 456 words, so the cap is the top of that
 // range, not an average of it: 18 rows, 500 words.
 //
-// Rows are combined, not added. Two rows from the same deep dive that answer
-// the same first-week question are one row with a broader label; a row that is
-// not a decision a keeper makes in week one belongs in the deep dive the route
-// line already points at.
+// Rows are rewritten, not added and not glued together. Two rows from the same
+// deep dive that answer the same first-week question are one row with a
+// broader label, written fresh; a row that is not a decision a keeper makes in
+// week one belongs in the deep dive the route line already points at.
+//
+// The per-row cap exists because the first pass at the 18-row cap reached it
+// by concatenating neighboring rows: 25 degu rows became 14 by stapling
+// sentences together, which left 254 rows over 40 words, 49 over 60, and a
+// dozen rows whose kept sentence had lost its subject to a dropped one (the
+// degu pellet cap now attached to unlimited hay). The row count and the word
+// total both passed. The longest template row is 62 words (goldfish, Power
+// outage), so that is the cap; a row longer than that is two rows or a
+// paragraph, and neither belongs on a card.
 import fs from 'fs';
 import path from 'path';
 
 const MAX_ROWS = 18;
 const MAX_WORDS = 500;
+const MAX_ROW_WORDS = 62;
 
 const files = fs.readdirSync('src/lib/data/guides').filter((f) => f.endsWith('.js') && f !== 'index.js');
 const hubs = [];
@@ -29,18 +39,30 @@ for (const f of files) {
 }
 
 const over = [];
+const longRows = [];
 for (const g of hubs) {
   const rows = g.firstWeek.rows.length;
   const words = g.firstWeek.rows.reduce((a, r) => a + String(r.value).trim().split(/\s+/).length, 0);
   if (rows > MAX_ROWS || words > MAX_WORDS) over.push({ id: g.id, file: g.file, rows, words });
+  for (const r of g.firstWeek.rows) {
+    const w = String(r.value).trim().split(/\s+/).length;
+    if (w > MAX_ROW_WORDS) longRows.push({ id: g.id, file: g.file, label: r.label, words: w });
+  }
 }
 
 const totalRows = hubs.reduce((a, g) => a + g.firstWeek.rows.length, 0);
 const totalWords = hubs.reduce((a, g) => a + g.firstWeek.rows.reduce((b, r) => b + String(r.value).trim().split(/\s+/).length, 0), 0);
 console.log(
   `Hub first-week cards: ${hubs.length} router hubs, ${totalRows} rows (${(totalRows / hubs.length).toFixed(1)} per hub), ` +
-    `${totalWords} words (${Math.round(totalWords / hubs.length)} per hub). Cap: ${MAX_ROWS} rows, ${MAX_WORDS} words.`
+    `${totalWords} words (${Math.round(totalWords / hubs.length)} per hub). Cap: ${MAX_ROWS} rows, ${MAX_WORDS} words, ${MAX_ROW_WORDS} words per row.`
 );
+
+if (longRows.length) {
+  console.log(`\n${longRows.length} row(s) over ${MAX_ROW_WORDS} words:`);
+  for (const r of longRows.sort((a, b) => b.words - a.words)) {
+    console.log(`  ${r.id.padEnd(26)} ${String(r.words).padStart(3)} words  ${r.label}  (${r.file})`);
+  }
+}
 
 if (over.length) {
   console.log(`\n${over.length} over the cap:`);
@@ -53,4 +75,11 @@ if (over.length) {
   );
   process.exit(1);
 }
-console.log('Every router hub is within the rabbit and bearded dragon sizes.');
+if (longRows.length) {
+  console.error(
+    `\nHub row check FAILED: ${longRows.length} row(s) over ${MAX_ROW_WORDS} words. ` +
+      `A row that long is two rows or a paragraph. Rewrite it to the decision the keeper makes, do not merge neighbors into it.`
+  );
+  process.exit(1);
+}
+console.log('Every router hub is within the rabbit and bearded dragon sizes, and no row runs past the longest template row.');
