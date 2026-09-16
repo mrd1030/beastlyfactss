@@ -1574,6 +1574,16 @@
       "title": "K.A.R. 115-18-10, Importation and possession of certain wildlife; prohibition, permit requirement, and restrictions",
       "url": "https://www.law.cornell.edu/regulations/kansas/K-A-R-115-18-10",
       "note": "Kansas's prohibited species list, and it is almost entirely aquatic invasives: carps, a snakehead, a goby, mussels, a mudsnail, crayfish. Two land animals are on it, the Asian raccoon dog and the monk parakeet, which is the quaker parakeet of the pet trade. The permit in subsection (c) is for experimental, scientific, display or other purposes and is not a pet route."
+    },
+    "ks-115-7-5": {
+      "title": "K.A.R. 115-7-5, Bullfrogs and turtles; legal equipment, methods of take and license requirements, and K.A.R. 115-9-7, license exemptions",
+      "url": "https://www.law.cornell.edu/regulations/kansas/K-A-R-115-7-5",
+      "note": "The rule that 115-20-2(b)(13) carves the common snapping turtle and the soft-shelled turtles out for. Kansas handles those two as fishing species rather than as takeable reptiles: subsection (b) sets the legal methods and subsection (d) requires a valid Kansas fishing license to take them. 115-9-7 is the other half of the licensing picture, because its subsection (i) exempts the possession of wildlife that was legally acquired by the individual from needing a license at all, which is why none of the Kansas caps carry a license condition for a bought animal."
+    },
+    "va-sgcn": {
+      "title": "Virginia DWR, Species of Greatest Conservation Need, tiered lists for reptiles and amphibians",
+      "url": "https://dwr.virginia.gov/wildlife/wildlife-action-plan/species-of-greatest-conservation-need/",
+      "note": "The list 4VAC15-360-10(A)(6) turns on. The regulation names Virginia’s 2015 Wildlife Action Plan, and the department now publishes the list as revised for the 2025 Action Plan, saying the 2025 rankings were built from the 2015 ones. The reptile list carries the woodland box turtle, Terrapene carolina carolina, and the eastern hog-nosed snake, Heterodon platirhinos; the amphibian list carries the eastern tiger salamander, Ambystoma tigrinum. It does not carry the common gartersnake, the red cornsnake, the eastern milksnake, the snapping turtle or the green anole. Several entries name the conservation action as continuing to maintain \"no possession\" regulations, which is the department describing this rule from the other side."
     }
   },
   "animals": {
@@ -1899,8 +1909,8 @@
           "sourceId": "wv-19-34",
           "cite": "§ 19-34-2(2)",
           "quote": "\"Dangerous wild animal\" means a mammal, bird, reptile, amphibian or aquatic animal, including a hybrid, that is dangerous to humans, other animals or the environment due to its inherent nature and capability to do significant harm.",
-          "note": "The categories the board is pointed at are bears, big cats, canids, primates, large constrictors, venomous snakes and crocodilians. Nothing in the Act reaches a hedgehog.",
-          "verifiedOn": "2026-08-04"
+          "note": "The categories the board is pointed at are bears, big cats, canids, primates, large constrictors, venomous snakes and crocodilians. Nothing in the Act reaches a hedgehog. § 20-2-13 was checked against this cell on the pass that applied it to the whole column, and it does not reach this animal. It bars transporting in or possessing live wildlife from without the state without an importation permit from the director, and § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. \"Wild animals\" is defined in the same section as all mammals native to the State of West Virginia, so a species that lives nowhere in West Virginia is not a wild animal and is nothing else on the list either.",
+          "verifiedOn": "2026-09-16"
         },
         "AK": {
           "status": "legal",
@@ -2274,8 +2284,8 @@
           "sourceId": "wv-19-34",
           "cite": "§ 19-34-2(2)",
           "quote": "\"Wildlife\"... \"livestock\"... and \"domestic animals\", as defined in this section, are excluded.",
-          "note": "The definition of domestic animal at § 19-34-2(3) expressly reaches an animal bred as a companion animal.",
-          "verifiedOn": "2026-08-04"
+          "note": "The definition of domestic animal at § 19-34-2(3) expressly reaches an animal bred as a companion animal. § 20-2-13 was checked against this cell on the pass that applied it to the whole column, and it does not reach this animal. It bars transporting in or possessing live wildlife from without the state without an importation permit from the director, and § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. \"Wild animals\" is defined in the same section as all mammals native to the State of West Virginia, so a species that lives nowhere in West Virginia is not a wild animal and is nothing else on the list either.",
+          "verifiedOn": "2026-09-16"
         },
         "AK": {
           "status": "legal",
@@ -2714,7 +2724,8 @@
           "sourceId": "wv-19-34",
           "cite": "§ 19-34-2(2)",
           "quote": "that is dangerous to humans, other animals or the environment due to its inherent nature and capability to do significant harm",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-09-16",
+          "note": "§ 20-2-13 was checked against this cell on the pass that applied it to the whole column, and it does not reach this animal. It bars transporting in or possessing live wildlife from without the state without an importation permit from the director, and § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. \"Wild animals\" is defined in the same section as all mammals native to the State of West Virginia, so a species that lives nowhere in West Virginia is not a wild animal and is nothing else on the list either."
         },
         "AK": {
           "status": "banned",
@@ -2933,7 +2944,8 @@
           "sourceId": "wv-19-34",
           "cite": "§ 19-34-2(2)",
           "quote": "that is dangerous to humans, other animals or the environment due to its inherent nature and capability to do significant harm",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-09-16",
+          "note": "§ 20-2-13 was checked against this cell on the pass that applied it to the whole column, and it does not reach this animal. It bars transporting in or possessing live wildlife from without the state without an importation permit from the director, and § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. \"Wild animals\" is defined in the same section as all mammals native to the State of West Virginia, so a species that lives nowhere in West Virginia is not a wild animal and is nothing else on the list either."
         },
         "AK": {
           "status": "legal",
@@ -3341,7 +3353,8 @@
           "sourceId": "wv-19-34",
           "cite": "§ 19-34-2(2)",
           "quote": "that is dangerous to humans, other animals or the environment due to its inherent nature and capability to do significant harm",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-09-16",
+          "note": "§ 20-2-13 was checked against this cell on the pass that applied it to the whole column, and it does not reach this animal. It bars transporting in or possessing live wildlife from without the state without an importation permit from the director, and § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. \"Wild animals\" is defined in the same section as all mammals native to the State of West Virginia, so a species that lives nowhere in West Virginia is not a wild animal and is nothing else on the list either."
         },
         "AK": {
           "status": "legal",
@@ -3796,8 +3809,8 @@
           "sourceId": "wv-19-34",
           "cite": "§ 19-34-5(c)(2)",
           "quote": "The list may include, but not be limited to: (A) Bears; (B) Big cats; (C) Canids; (D) Primates; (E) Constrictor snakes greater than six feet, and venomous snakes; and (F) Alligators and caimans;",
-          "note": "No bird category appears in the guidance at all.",
-          "verifiedOn": "2026-08-04"
+          "note": "No bird category appears in the guidance at all. § 20-2-13 was checked against this cell on the pass that applied it to the whole column, and it does not reach this animal. It bars transporting in or possessing live wildlife from without the state without an importation permit from the director, and § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. \"Wild birds\" expressly excludes psittacidae, commonly called parrots and parakeets, and other foreign cage birds, so no pet parrot is wildlife in West Virginia at all.",
+          "verifiedOn": "2026-09-16"
         },
         "AK": {
           "status": "legal",
@@ -4225,8 +4238,8 @@
           "sourceId": "wv-19-34",
           "cite": "§ 19-34-2(3)",
           "quote": "\"Domestic animal\" means an animal which, through extremely long association with humans, has been bred to a degree which has resulted in genetic changes affecting the temperament, color, conformation or other attributes of the species to an extent that makes it unique and distinguishable from a wild individual of its species, and includes an animal that has been bred as a companion animal.",
-          "note": "Domestic animals are excluded from the definition of a dangerous wild animal. A registered Bengal is bred as a companion animal.",
-          "verifiedOn": "2026-08-04"
+          "note": "Domestic animals are excluded from the definition of a dangerous wild animal. A registered Bengal is bred as a companion animal. § 20-2-13 was checked against this cell on the pass that applied it to the whole column, and it does not reach this animal. It bars transporting in or possessing live wildlife from without the state without an importation permit from the director, and § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. \"Wild animals\" is defined in the same section as all mammals native to the State of West Virginia, so a species that lives nowhere in West Virginia is not a wild animal and is nothing else on the list either.",
+          "verifiedOn": "2026-09-16"
         },
         "AK": {
           "status": "banned",
@@ -4723,12 +4736,13 @@
           "localOverride": true
         },
         "WV": {
-          "status": "legal",
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)",
-          "quote": "The list may include, but not be limited to: (A) Bears; (B) Big cats; (C) Canids; (D) Primates; (E) Constrictor snakes greater than six feet, and venomous snakes; and (F) Alligators and caimans;",
-          "note": "The only reptiles in the guidance are large constrictors, venomous snakes and crocodilians.",
-          "verifiedOn": "2026-08-04"
+          "status": "permit",
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-2-13; § 20-1-2; § 20-2-4(a), (b)",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "note": "West Virginia’s importation section is the rule the rest of this column was written without, and it changes the answer for every exotic reptile and amphibian in it. W. Va. Code § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. The reptile and amphibian clause carries no nativity qualifier and no captive-bred carve-out, so a pet reptile or amphibian bought from an out-of-state breeder is live wildlife from without the state. A veiled chameleon is a reptile and a Yemeni and Saudi species, so it is wildlife from without the state on any route into West Virginia. § 20-2-13 then bars both bringing that animal in and having it in possession within the state except under an importation permit from the director, and the permit is discretionary: the director may issue it, fix its terms and revoke it at his pleasure. How firm this is, both ways. § 20-2-4(a) independently makes it unlawful to take, obtain, purchase, possess or maintain in captivity any live wildlife except as the chapter or a rule provides, and § 20-2-4(b) says wildlife lawfully taken outside of this state is subject to the same laws and rules as wildlife taken within it, which closes the argument that an out-of-state origin puts the animal outside the chapter before it is made. Against that, the section is headed importation and certification and the body of it is disease control, fish pathologist certificates and inspection of imported shipments, with the only penalty clause written for coyotes. Nothing in Title 58 implements § 20-2-13 for anything but aquaculture, and WVDNR publishes no application for an importation permit. So this is a statutory permit requirement that is real on paper with its machinery not visibly in place, which is the same shape as the Minnesota breeder condition and is recorded the same way. Neither of West Virginia’s two species lists bars this animal. W. Va. C.S.R. § 74-1-3, the dangerous wild animal list adopted 5 April 2022, is a mammal list plus the Komodo dragon. W. Va. C.S.R. § 58-73 reaches native West Virginia reptiles and amphibians only.",
+          "verifiedOn": "2026-09-16",
+          "permitFor": "personal"
         },
         "AK": {
           "status": "legal",
@@ -5064,11 +5078,13 @@
           "localOverride": true
         },
         "WV": {
-          "status": "legal",
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)",
-          "quote": "The list may include, but not be limited to: (A) Bears; (B) Big cats; (C) Canids; (D) Primates; (E) Constrictor snakes greater than six feet, and venomous snakes; and (F) Alligators and caimans;",
-          "verifiedOn": "2026-08-04"
+          "status": "permit",
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-2-13; § 20-1-2; § 20-2-4(a), (b)",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "verifiedOn": "2026-09-16",
+          "permitFor": "personal",
+          "note": "West Virginia’s importation section is the rule the rest of this column was written without, and it changes the answer for every exotic reptile and amphibian in it. W. Va. Code § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. The reptile and amphibian clause carries no nativity qualifier and no captive-bred carve-out, so a pet reptile or amphibian bought from an out-of-state breeder is live wildlife from without the state. A Russian tortoise is a reptile and a Central Asian species, so it is wildlife from without the state on any route into West Virginia. § 20-2-13 then bars both bringing that animal in and having it in possession within the state except under an importation permit from the director, and the permit is discretionary: the director may issue it, fix its terms and revoke it at his pleasure. How firm this is, both ways. § 20-2-4(a) independently makes it unlawful to take, obtain, purchase, possess or maintain in captivity any live wildlife except as the chapter or a rule provides, and § 20-2-4(b) says wildlife lawfully taken outside of this state is subject to the same laws and rules as wildlife taken within it, which closes the argument that an out-of-state origin puts the animal outside the chapter before it is made. Against that, the section is headed importation and certification and the body of it is disease control, fish pathologist certificates and inspection of imported shipments, with the only penalty clause written for coyotes. Nothing in Title 58 implements § 20-2-13 for anything but aquaculture, and WVDNR publishes no application for an importation permit. So this is a statutory permit requirement that is real on paper with its machinery not visibly in place, which is the same shape as the Minnesota breeder condition and is recorded the same way. Neither of West Virginia’s two species lists bars this animal. W. Va. C.S.R. § 74-1-3, the dangerous wild animal list adopted 5 April 2022, is a mammal list plus the Komodo dragon. W. Va. C.S.R. § 58-73 reaches native West Virginia reptiles and amphibians only."
         },
         "AK": {
           "status": "legal",
@@ -5556,12 +5572,13 @@
           "localOverride": true
         },
         "WV": {
-          "status": "legal",
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)(E)",
-          "quote": "(E) Constrictor snakes greater than six feet, and venomous snakes;",
-          "note": "Python regius does not reach six feet, which is the one place the statute gives a number rather than a category.",
-          "verifiedOn": "2026-08-04"
+          "status": "permit",
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-2-13; § 20-1-2; § 20-2-4(a), (b)",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "note": "West Virginia’s importation section is the rule the rest of this column was written without, and it changes the answer for every exotic reptile and amphibian in it. W. Va. Code § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. The reptile and amphibian clause carries no nativity qualifier and no captive-bred carve-out, so a pet reptile or amphibian bought from an out-of-state breeder is live wildlife from without the state. A ball python is a reptile and a West African species, so it is wildlife from without the state on any route into West Virginia. § 20-2-13 then bars both bringing that animal in and having it in possession within the state except under an importation permit from the director, and the permit is discretionary: the director may issue it, fix its terms and revoke it at his pleasure. How firm this is, both ways. § 20-2-4(a) independently makes it unlawful to take, obtain, purchase, possess or maintain in captivity any live wildlife except as the chapter or a rule provides, and § 20-2-4(b) says wildlife lawfully taken outside of this state is subject to the same laws and rules as wildlife taken within it, which closes the argument that an out-of-state origin puts the animal outside the chapter before it is made. Against that, the section is headed importation and certification and the body of it is disease control, fish pathologist certificates and inspection of imported shipments, with the only penalty clause written for coyotes. Nothing in Title 58 implements § 20-2-13 for anything but aquaculture, and WVDNR publishes no application for an importation permit. So this is a statutory permit requirement that is real on paper with its machinery not visibly in place, which is the same shape as the Minnesota breeder condition and is recorded the same way. Neither of West Virginia’s two species lists bars this animal. W. Va. C.S.R. § 74-1-3, the dangerous wild animal list adopted 5 April 2022, is a mammal list plus the Komodo dragon. W. Va. C.S.R. § 58-73 reaches native West Virginia reptiles and amphibians only.",
+          "verifiedOn": "2026-09-16",
+          "permitFor": "personal"
         },
         "AK": {
           "status": "legal",
@@ -5970,12 +5987,13 @@
           "localOverride": true
         },
         "WV": {
-          "status": "legal",
-          "sourceId": "wv-74-1",
-          "cite": "W. Va. C.S.R. § 74-1-3.1",
-          "quote": "The Dangerous Wild Animal List adopted by the Board is as follows: 3.1.a. Hyenas; 3.1.b. Gray wolves, excluding hybrids; 3.1.c. Lions; 3.1.d. Tigers; 3.1.e. Jaguars; 3.1.f. Leopards, including clouded leopards, Sunda clouded leopards, and snow leopards; and 3.1.g. All of the following, including hybrids with domestic cats unless otherwise specified: 3.1.g.1. Cheetahs; 3.1.g.2. Lynxes ...; 3.1.g.3. Cougars ...; and 3.1.g.4. Caracals. 3.1.h. Bears; (excluding black bears native to this state); 3.1.i. Elephants; 3.1.j. Rhinoceroses; 3.1.k. Hippopotamuses; 3.1.l. Cape buffalo; 3.1.m. African wild dogs; 3.1.n. Komodo dragons; 3.1.o. Nonhuman primates ...",
-          "note": "The list the Dangerous Wild Animal Act directed a three member board to write was adopted on 5 April 2022 and runs until 2032, so the entries here no longer turn on what § 19-34-5 told the board to consider. No snake appears on the adopted list. The six-foot constrictor threshold was guidance to the board, and the board did not carry it across: the only reptile it listed is the Komodo dragon.",
-          "verifiedOn": "2026-09-05"
+          "status": "permit",
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-2-13; § 20-1-2; § 20-2-4(a), (b)",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "note": "West Virginia’s importation section is the rule the rest of this column was written without, and it changes the answer for every exotic reptile and amphibian in it. W. Va. Code § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. The reptile and amphibian clause carries no nativity qualifier and no captive-bred carve-out, so a pet reptile or amphibian bought from an out-of-state breeder is live wildlife from without the state. A boa constrictor is a reptile and a Latin American species, so it is wildlife from without the state on any route into West Virginia. § 20-2-13 then bars both bringing that animal in and having it in possession within the state except under an importation permit from the director, and the permit is discretionary: the director may issue it, fix its terms and revoke it at his pleasure. How firm this is, both ways. § 20-2-4(a) independently makes it unlawful to take, obtain, purchase, possess or maintain in captivity any live wildlife except as the chapter or a rule provides, and § 20-2-4(b) says wildlife lawfully taken outside of this state is subject to the same laws and rules as wildlife taken within it, which closes the argument that an out-of-state origin puts the animal outside the chapter before it is made. Against that, the section is headed importation and certification and the body of it is disease control, fish pathologist certificates and inspection of imported shipments, with the only penalty clause written for coyotes. Nothing in Title 58 implements § 20-2-13 for anything but aquaculture, and WVDNR publishes no application for an importation permit. So this is a statutory permit requirement that is real on paper with its machinery not visibly in place, which is the same shape as the Minnesota breeder condition and is recorded the same way. Neither of West Virginia’s two species lists bars this animal. W. Va. C.S.R. § 74-1-3, the dangerous wild animal list adopted 5 April 2022, is a mammal list plus the Komodo dragon. W. Va. C.S.R. § 58-73 reaches native West Virginia reptiles and amphibians only.",
+          "verifiedOn": "2026-09-16",
+          "permitFor": "personal"
         },
         "AK": {
           "status": "legal",
@@ -6296,8 +6314,8 @@
           "cite": "§ 19-34-5(c)(2)",
           "status": "legal",
           "quote": "Create a comprehensive list of dangerous wild animals, excluding wildlife, livestock and domestic animals as defined herein. The list may include, but not be limited to: (A) Bears; (B) Big cats; (C) Canids; (D) Primates; (E) Constrictor snakes greater than six feet, and venomous snakes; and (F) Alligators and caimans;",
-          "note": "No invertebrate appears in the categories the board is directed to consider.",
-          "verifiedOn": "2026-08-05"
+          "note": "No invertebrate appears in the categories the board is directed to consider. § 20-2-13 was checked against this cell on the pass that applied it to the whole column, and it does not reach this animal. It bars transporting in or possessing live wildlife from without the state without an importation permit from the director, and § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. No terrestrial arthropod appears anywhere in it: the invertebrates it reaches are mollusks, crustaceans and aquatic bait life.",
+          "verifiedOn": "2026-09-16"
         },
         "VA": {
           "sourceId": "va-4vac15-30-40",
@@ -6732,8 +6750,8 @@
           "cite": "§ 19-34-5(c)(2)",
           "status": "legal",
           "quote": "Create a comprehensive list of dangerous wild animals, excluding wildlife, livestock and domestic animals as defined herein. The list may include, but not be limited to: (A) Bears; (B) Big cats; (C) Canids; (D) Primates; (E) Constrictor snakes greater than six feet, and venomous snakes; and (F) Alligators and caimans;",
-          "note": "No invertebrate appears in the categories the board is directed to consider.",
-          "verifiedOn": "2026-08-05"
+          "note": "No invertebrate appears in the categories the board is directed to consider. § 20-2-13 was checked against this cell on the pass that applied it to the whole column, and it does not reach this animal. It bars transporting in or possessing live wildlife from without the state without an importation permit from the director, and § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. No terrestrial arthropod appears anywhere in it: the invertebrates it reaches are mollusks, crustaceans and aquatic bait life.",
+          "verifiedOn": "2026-09-16"
         },
         "VA": {
           "sourceId": "va-4vac15-30-40",
@@ -7179,11 +7197,13 @@
           "localOverride": true
         },
         "WV": {
-          "status": "legal",
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)",
-          "quote": "The list may include, but not be limited to: (A) Bears; (B) Big cats; (C) Canids; (D) Primates; (E) Constrictor snakes greater than six feet, and venomous snakes; and (F) Alligators and caimans;",
-          "verifiedOn": "2026-08-04"
+          "status": "permit",
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-2-13; § 20-1-2; § 20-2-4(a), (b)",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "verifiedOn": "2026-09-16",
+          "permitFor": "personal",
+          "note": "West Virginia’s importation section is the rule the rest of this column was written without, and it changes the answer for every exotic reptile and amphibian in it. W. Va. Code § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. The reptile and amphibian clause carries no nativity qualifier and no captive-bred carve-out, so a pet reptile or amphibian bought from an out-of-state breeder is live wildlife from without the state. An Argentine black and white tegu is a reptile and a South American species, so it is wildlife from without the state on any route into West Virginia. § 20-2-13 then bars both bringing that animal in and having it in possession within the state except under an importation permit from the director, and the permit is discretionary: the director may issue it, fix its terms and revoke it at his pleasure. How firm this is, both ways. § 20-2-4(a) independently makes it unlawful to take, obtain, purchase, possess or maintain in captivity any live wildlife except as the chapter or a rule provides, and § 20-2-4(b) says wildlife lawfully taken outside of this state is subject to the same laws and rules as wildlife taken within it, which closes the argument that an out-of-state origin puts the animal outside the chapter before it is made. Against that, the section is headed importation and certification and the body of it is disease control, fish pathologist certificates and inspection of imported shipments, with the only penalty clause written for coyotes. Nothing in Title 58 implements § 20-2-13 for anything but aquaculture, and WVDNR publishes no application for an importation permit. So this is a statutory permit requirement that is real on paper with its machinery not visibly in place, which is the same shape as the Minnesota breeder condition and is recorded the same way. Neither of West Virginia’s two species lists bars this animal. W. Va. C.S.R. § 74-1-3, the dangerous wild animal list adopted 5 April 2022, is a mammal list plus the Komodo dragon. W. Va. C.S.R. § 58-73 reaches native West Virginia reptiles and amphibians only."
         },
         "AK": {
           "status": "legal",
@@ -7588,11 +7608,13 @@
           "localOverride": true
         },
         "WV": {
-          "status": "legal",
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)",
-          "quote": "The list may include, but not be limited to: (A) Bears; (B) Big cats; (C) Canids; (D) Primates; (E) Constrictor snakes greater than six feet, and venomous snakes; and (F) Alligators and caimans;",
-          "verifiedOn": "2026-08-04"
+          "status": "permit",
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-2-13; § 20-1-2; § 20-2-4(a), (b)",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "verifiedOn": "2026-09-16",
+          "permitFor": "personal",
+          "note": "West Virginia’s importation section is the rule the rest of this column was written without, and it changes the answer for every exotic reptile and amphibian in it. W. Va. Code § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. The reptile and amphibian clause carries no nativity qualifier and no captive-bred carve-out, so a pet reptile or amphibian bought from an out-of-state breeder is live wildlife from without the state. A savannah monitor is a reptile and an African species, so it is wildlife from without the state on any route into West Virginia. § 20-2-13 then bars both bringing that animal in and having it in possession within the state except under an importation permit from the director, and the permit is discretionary: the director may issue it, fix its terms and revoke it at his pleasure. How firm this is, both ways. § 20-2-4(a) independently makes it unlawful to take, obtain, purchase, possess or maintain in captivity any live wildlife except as the chapter or a rule provides, and § 20-2-4(b) says wildlife lawfully taken outside of this state is subject to the same laws and rules as wildlife taken within it, which closes the argument that an out-of-state origin puts the animal outside the chapter before it is made. Against that, the section is headed importation and certification and the body of it is disease control, fish pathologist certificates and inspection of imported shipments, with the only penalty clause written for coyotes. Nothing in Title 58 implements § 20-2-13 for anything but aquaculture, and WVDNR publishes no application for an importation permit. So this is a statutory permit requirement that is real on paper with its machinery not visibly in place, which is the same shape as the Minnesota breeder condition and is recorded the same way. Neither of West Virginia’s two species lists bars this animal. W. Va. C.S.R. § 74-1-3, the dangerous wild animal list adopted 5 April 2022, is a mammal list plus the Komodo dragon. W. Va. C.S.R. § 58-73 reaches native West Virginia reptiles and amphibians only."
         },
         "AK": {
           "status": "legal",
@@ -8260,8 +8282,8 @@
           "cite": "§ 19-34-5(c)(2)",
           "status": "legal",
           "quote": "Create a comprehensive list of dangerous wild animals, excluding wildlife, livestock and domestic animals as defined herein. The list may include, but not be limited to: (A) Bears; (B) Big cats; (C) Canids; (D) Primates; (E) Constrictor snakes greater than six feet, and venomous snakes; and (F) Alligators and caimans;",
-          "note": "Not a bear, big cat, canid or primate, which with large snakes and crocodilians is the whole of the guidance.",
-          "verifiedOn": "2026-08-05"
+          "note": "Not a bear, big cat, canid or primate, which with large snakes and crocodilians is the whole of the guidance. § 20-2-13 was checked against this cell on the pass that applied it to the whole column, and it does not reach this animal. It bars transporting in or possessing live wildlife from without the state without an importation permit from the director, and § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. \"Wild animals\" is defined in the same section as all mammals native to the State of West Virginia, so a species that lives nowhere in West Virginia is not a wild animal and is nothing else on the list either.",
+          "verifiedOn": "2026-09-16"
         },
         "SD": {
           "sourceId": "sd-12-68-18",
@@ -8710,8 +8732,8 @@
           "cite": "§ 19-34-5(c)(2)",
           "status": "legal",
           "quote": "Create a comprehensive list of dangerous wild animals, excluding wildlife, livestock and domestic animals as defined herein. The list may include, but not be limited to: (A) Bears; (B) Big cats; (C) Canids; (D) Primates; (E) Constrictor snakes greater than six feet, and venomous snakes; and (F) Alligators and caimans;",
-          "note": "Not a bear, big cat, canid or primate, which with large snakes and crocodilians is the whole of the guidance.",
-          "verifiedOn": "2026-08-05"
+          "note": "Not a bear, big cat, canid or primate, which with large snakes and crocodilians is the whole of the guidance. § 20-2-13 was checked against this cell on the pass that applied it to the whole column, and it does not reach this animal. It bars transporting in or possessing live wildlife from without the state without an importation permit from the director, and § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. \"Wild animals\" is defined in the same section as all mammals native to the State of West Virginia, so a species that lives nowhere in West Virginia is not a wild animal and is nothing else on the list either.",
+          "verifiedOn": "2026-09-16"
         },
         "IA": {
           "sourceId": "ia-717F",
@@ -9027,8 +9049,8 @@
           "sourceId": "wv-74-1",
           "cite": "W. Va. C.S.R. § 74-1-3.1",
           "quote": "The Dangerous Wild Animal List adopted by the Board is as follows: 3.1.a. Hyenas; 3.1.b. Gray wolves, excluding hybrids; 3.1.c. Lions; 3.1.d. Tigers; 3.1.e. Jaguars; 3.1.f. Leopards, including clouded leopards, Sunda clouded leopards, and snow leopards; and 3.1.g. All of the following, including hybrids with domestic cats unless otherwise specified: 3.1.g.1. Cheetahs; 3.1.g.2. Lynxes ...; 3.1.g.3. Cougars ...; and 3.1.g.4. Caracals. 3.1.h. Bears; (excluding black bears native to this state); 3.1.i. Elephants; 3.1.j. Rhinoceroses; 3.1.k. Hippopotamuses; 3.1.l. Cape buffalo; 3.1.m. African wild dogs; 3.1.n. Komodo dragons; 3.1.o. Nonhuman primates ...",
-          "note": "The list the Dangerous Wild Animal Act directed a three member board to write was adopted on 5 April 2022 and runs until 2032, so the entries here no longer turn on what § 19-34-5 told the board to consider. The only canids the board listed are gray wolves, excluding hybrids, and African wild dogs. Vulpes zerda is neither.",
-          "verifiedOn": "2026-09-05"
+          "note": "The list the Dangerous Wild Animal Act directed a three member board to write was adopted on 5 April 2022 and runs until 2032, so the entries here no longer turn on what § 19-34-5 told the board to consider. The only canids the board listed are gray wolves, excluding hybrids, and African wild dogs. Vulpes zerda is neither. § 20-2-13 was checked against this cell on the pass that applied it to the whole column, and it does not reach this animal. It bars transporting in or possessing live wildlife from without the state without an importation permit from the director, and § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. \"Wild animals\" is defined in the same section as all mammals native to the State of West Virginia, so a species that lives nowhere in West Virginia is not a wild animal and is nothing else on the list either.",
+          "verifiedOn": "2026-09-16"
         },
         "AK": {
           "status": "banned",
@@ -9503,8 +9525,8 @@
           "sourceId": "wv-74-1",
           "cite": "W. Va. C.S.R. § 74-1-3.1",
           "quote": "The Dangerous Wild Animal List adopted by the Board is as follows: 3.1.a. Hyenas; 3.1.b. Gray wolves, excluding hybrids; 3.1.c. Lions; 3.1.d. Tigers; 3.1.e. Jaguars; 3.1.f. Leopards, including clouded leopards, Sunda clouded leopards, and snow leopards; and 3.1.g. All of the following, including hybrids with domestic cats unless otherwise specified: 3.1.g.1. Cheetahs; 3.1.g.2. Lynxes ...; 3.1.g.3. Cougars ...; and 3.1.g.4. Caracals. 3.1.h. Bears; (excluding black bears native to this state); 3.1.i. Elephants; 3.1.j. Rhinoceroses; 3.1.k. Hippopotamuses; 3.1.l. Cape buffalo; 3.1.m. African wild dogs; 3.1.n. Komodo dragons; 3.1.o. Nonhuman primates ...",
-          "note": "The list the Dangerous Wild Animal Act directed a three member board to write was adopted on 5 April 2022 and runs until 2032, so the entries here no longer turn on what § 19-34-5 told the board to consider. The cats the board listed are lions, tigers, jaguars, leopards, cheetahs, lynxes, cougars and caracals, each named. The serval is absent, and the hybrid clause in 3.1.g attaches to the four species under it rather than to cats generally.",
-          "verifiedOn": "2026-09-05"
+          "note": "The list the Dangerous Wild Animal Act directed a three member board to write was adopted on 5 April 2022 and runs until 2032, so the entries here no longer turn on what § 19-34-5 told the board to consider. The cats the board listed are lions, tigers, jaguars, leopards, cheetahs, lynxes, cougars and caracals, each named. The serval is absent, and the hybrid clause in 3.1.g attaches to the four species under it rather than to cats generally. § 20-2-13 was checked against this cell on the pass that applied it to the whole column, and it does not reach this animal. It bars transporting in or possessing live wildlife from without the state without an importation permit from the director, and § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. \"Wild animals\" is defined in the same section as all mammals native to the State of West Virginia, so a species that lives nowhere in West Virginia is not a wild animal and is nothing else on the list either.",
+          "verifiedOn": "2026-09-16"
         },
         "AK": {
           "status": "banned",
@@ -9945,7 +9967,8 @@
           "sourceId": "wv-19-34",
           "cite": "§ 19-34-2(2)",
           "quote": "that is dangerous to humans, other animals or the environment due to its inherent nature and capability to do significant harm",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-09-16",
+          "note": "§ 20-2-13 was checked against this cell on the pass that applied it to the whole column, and it does not reach this animal. It bars transporting in or possessing live wildlife from without the state without an importation permit from the director, and § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. \"Wild animals\" is defined in the same section as all mammals native to the State of West Virginia, so a species that lives nowhere in West Virginia is not a wild animal and is nothing else on the list either."
         },
         "AK": {
           "status": "legal",
@@ -10229,7 +10252,8 @@
           "sourceId": "wv-19-34",
           "cite": "§ 19-34-2(2)",
           "quote": "that is dangerous to humans, other animals or the environment due to its inherent nature and capability to do significant harm",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-09-16",
+          "note": "§ 20-2-13 was checked against this cell on the pass that applied it to the whole column, and it does not reach this animal. It bars transporting in or possessing live wildlife from without the state without an importation permit from the director, and § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. \"Wild animals\" is defined in the same section as all mammals native to the State of West Virginia, so a species that lives nowhere in West Virginia is not a wild animal and is nothing else on the list either."
         },
         "AK": {
           "status": "legal",
@@ -10635,11 +10659,13 @@
           "localOverride": true
         },
         "WV": {
-          "status": "legal",
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)",
-          "quote": "The list may include, but not be limited to: (A) Bears; (B) Big cats; (C) Canids; (D) Primates; (E) Constrictor snakes greater than six feet, and venomous snakes; and (F) Alligators and caimans;",
-          "verifiedOn": "2026-08-04"
+          "status": "permit",
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-2-13; § 20-1-2; § 20-2-4(a), (b)",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "verifiedOn": "2026-09-16",
+          "permitFor": "personal",
+          "note": "West Virginia’s importation section is the rule the rest of this column was written without, and it changes the answer for every exotic reptile and amphibian in it. W. Va. Code § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. The reptile and amphibian clause carries no nativity qualifier and no captive-bred carve-out, so a pet reptile or amphibian bought from an out-of-state breeder is live wildlife from without the state. A green iguana is a reptile and a Latin American species, so it is wildlife from without the state on any route into West Virginia. § 20-2-13 then bars both bringing that animal in and having it in possession within the state except under an importation permit from the director, and the permit is discretionary: the director may issue it, fix its terms and revoke it at his pleasure. How firm this is, both ways. § 20-2-4(a) independently makes it unlawful to take, obtain, purchase, possess or maintain in captivity any live wildlife except as the chapter or a rule provides, and § 20-2-4(b) says wildlife lawfully taken outside of this state is subject to the same laws and rules as wildlife taken within it, which closes the argument that an out-of-state origin puts the animal outside the chapter before it is made. Against that, the section is headed importation and certification and the body of it is disease control, fish pathologist certificates and inspection of imported shipments, with the only penalty clause written for coyotes. Nothing in Title 58 implements § 20-2-13 for anything but aquaculture, and WVDNR publishes no application for an importation permit. So this is a statutory permit requirement that is real on paper with its machinery not visibly in place, which is the same shape as the Minnesota breeder condition and is recorded the same way. Neither of West Virginia’s two species lists bars this animal. W. Va. C.S.R. § 74-1-3, the dangerous wild animal list adopted 5 April 2022, is a mammal list plus the Komodo dragon. W. Va. C.S.R. § 58-73 reaches native West Virginia reptiles and amphibians only."
         },
         "AK": {
           "status": "legal",
@@ -11083,12 +11109,13 @@
           "verifiedOn": "2026-08-05"
         },
         "KS": {
-          "sourceId": "ks-32-1301",
-          "cite": "§ 32-1301(d)",
-          "status": "legal",
-          "quote": "\"Dangerous regulated animal\" means a live or slaughtered parts of: (1) Lions, tigers, leopards, jaguars, cheetahs and mountain lions, or any hybrid thereof; (2) bears or any hybrid thereof; and (3) all non-native, venomous snakes.",
-          "note": "The only reptiles Kansas regulates are non-native venomous snakes. Constrictors, lizards and turtles are untouched at any size.",
-          "verifiedOn": "2026-08-05"
+          "sourceId": "ks-115-7-5",
+          "cite": "K.A.R. 115-7-5(b), (d); 115-20-2(b)(13); K.S.A. 32-1002(a)(2)",
+          "status": "permit",
+          "quote": "A valid Kansas fishing license shall be required to take common snapping turtles and soft-shelled turtles.",
+          "note": "The Kansas column was written against K.S.A. 32-1301, the dangerous regulated animal statute, which names six cats, bears and non-native venomous snakes and answers nothing here. The pair that decides a Kansas cell is K.S.A. 32-1002(a)(2), which makes it unlawful to possess any wildlife at all \"unless and except as permitted by law or rules and regulations adopted by the secretary\", and the two regulations that do the permitting. K.A.R. 115-20-3 permits exotic wildlife, and 115-20-3(d) reads exotic as a species not native or indigenous to Kansas and not present here as an established wild population. Chelydra serpentina is one of only five herps the Kansas Herpetofaunal Atlas records in every county, so it is a Kansas native and 115-20-3 cannot reach it. Nor does the native permission: 115-20-2(b)(13) puts reptiles on the takeable list \"except common snapping turtles and soft-shelled turtles\", which takes this animal straight back out, and the cap in 115-20-2(e) never applies to it. The reason for the carve-out is that Kansas handles these two as fishing species. K.A.R. 115-7-5(b) sets the legal methods, hand, hook and fishing line, set line, hand dip net, seine, turtle trap and gig, and (d) requires a valid Kansas fishing license to take one. The bag and possession limits come from the fishing regulations rather than from Article 20. So the license-first answer is the real one: Kansas gives no no-permit route to a snapping turtle and no dealer route either, because the only permission in the rules is a licensed take. K.A.R. 115-9-7(i) then exempts the possession of wildlife that was legally acquired by the individual, so the license attaches to getting the animal rather than to keeping it.",
+          "verifiedOn": "2026-09-16",
+          "permitFor": "personal"
         },
         "NC": {
           "sourceId": "nc-14-417",
@@ -11117,12 +11144,12 @@
           "verifiedOn": "2026-09-05"
         },
         "VA": {
-          "sourceId": "va-4vac15-30-40",
-          "cite": "§ 15-30-40(A)",
-          "status": "legal",
-          "quote": "A special permit is required and may be issued by the department... to import, possess, or sell those nonnative (exotic) animals listed in the following table",
-          "note": "The permit table works family by family and contains no reptile relevant here. Virginia permits by table, so absence from it means no special permit applies.",
-          "verifiedOn": "2026-08-05"
+          "sourceId": "va-4vac15-360-10",
+          "cite": "4VAC15-360-10(A)(5); 4VAC15-20-50",
+          "status": "conditional",
+          "quote": "The daily limit for bullfrogs shall be 15 and for snapping turtles shall be five. Snapping turtles shall only be taken from June 1 to September 30 and must have a minimum curved-line carapace length of 13 inches.",
+          "note": "Virginia runs two schemes and 4VAC15-20-50 decides which one an animal is in, so the exotic permit table is the wrong rule for anything Virginia already has. A nonnative (exotic) animal is one \"not naturally occurring in Virginia, excluding domestic and naturalized species\", which puts every native and every naturalized species outside 4VAC15-30-40 and inside 4VAC15-360-10. Native and naturalized status is not a judgment call here: it is fixed by a document incorporated by reference, the department’s 2024 List of Native and Naturalized Fauna of Virginia, where an asterisk marks a naturalized species and two asterisks one native in some areas and naturalized in others. The snapping turtle, Chelydra serpentina, is on the native list with no asterisk, so the exotic permit table never reached it. It is also the one animal in the chapter that the one-per-address cap does not bind, because 4VAC15-360-10(A) applies that cap \"unless specifically listed in this subsection\" and subdivision 5 lists the snapping turtle with numbers of its own: a daily limit of five, a season running 1 June to 30 September, and a minimum curved-line carapace length of 13 inches, with no taking from the banks or waters of designated stocked trout waters. The size minimum is the condition that bites a keeper, because it rules out the hatchling that is how almost anyone acquires one. The snapping turtle is on neither the red-eared slider bar nor the Species of Greatest Conservation Need list in 4VAC15-360-10(A)(6).",
+          "verifiedOn": "2026-09-16"
         },
         "SD": {
           "sourceId": "sd-12-68-18",
@@ -11476,11 +11503,13 @@
           "localOverride": true
         },
         "WV": {
-          "status": "legal",
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)",
-          "quote": "The list may include, but not be limited to: (A) Bears; (B) Big cats; (C) Canids; (D) Primates; (E) Constrictor snakes greater than six feet, and venomous snakes; and (F) Alligators and caimans;",
-          "verifiedOn": "2026-08-04"
+          "status": "permit",
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-2-13; § 20-1-2; § 20-2-4(a), (b)",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "verifiedOn": "2026-09-16",
+          "permitFor": "personal",
+          "note": "West Virginia’s importation section is the rule the rest of this column was written without, and it changes the answer for every exotic reptile and amphibian in it. W. Va. Code § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. The reptile and amphibian clause carries no nativity qualifier and no captive-bred carve-out, so a pet reptile or amphibian bought from an out-of-state breeder is live wildlife from without the state. A tokay gecko is a reptile and a Southeast Asian species, so it is wildlife from without the state on any route into West Virginia. § 20-2-13 then bars both bringing that animal in and having it in possession within the state except under an importation permit from the director, and the permit is discretionary: the director may issue it, fix its terms and revoke it at his pleasure. How firm this is, both ways. § 20-2-4(a) independently makes it unlawful to take, obtain, purchase, possess or maintain in captivity any live wildlife except as the chapter or a rule provides, and § 20-2-4(b) says wildlife lawfully taken outside of this state is subject to the same laws and rules as wildlife taken within it, which closes the argument that an out-of-state origin puts the animal outside the chapter before it is made. Against that, the section is headed importation and certification and the body of it is disease control, fish pathologist certificates and inspection of imported shipments, with the only penalty clause written for coyotes. Nothing in Title 58 implements § 20-2-13 for anything but aquaculture, and WVDNR publishes no application for an importation permit. So this is a statutory permit requirement that is real on paper with its machinery not visibly in place, which is the same shape as the Minnesota breeder condition and is recorded the same way. Neither of West Virginia’s two species lists bars this animal. W. Va. C.S.R. § 74-1-3, the dangerous wild animal list adopted 5 April 2022, is a mammal list plus the Komodo dragon. W. Va. C.S.R. § 58-73 reaches native West Virginia reptiles and amphibians only."
         },
         "AK": {
           "status": "legal",
@@ -11901,12 +11930,12 @@
           "verifiedOn": "2026-08-05"
         },
         "KS": {
-          "sourceId": "ks-32-1301",
-          "cite": "§ 32-1301(d)",
-          "status": "legal",
-          "quote": "\"Dangerous regulated animal\" means a live or slaughtered parts of: (1) Lions, tigers, leopards, jaguars, cheetahs and mountain lions, or any hybrid thereof; (2) bears or any hybrid thereof; and (3) all non-native, venomous snakes.",
-          "note": "The definition names six cats, bears and non-native venomous snakes. No amphibian is in it.",
-          "verifiedOn": "2026-08-05"
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-2(b)(1), (e), (f); K.S.A. 32-1002(a)(2)",
+          "status": "conditional",
+          "quote": "no more than five total of any combination of amphibian may be possessed per person or domicile, whichever is reached first",
+          "note": "The Kansas column was written against K.S.A. 32-1301, the dangerous regulated animal statute, which names six cats, bears and non-native venomous snakes and answers nothing here. The pair that decides a Kansas cell is K.S.A. 32-1002(a)(2), which makes it unlawful to possess any wildlife at all \"unless and except as permitted by law or rules and regulations adopted by the secretary\", and the two regulations that do the permitting. K.A.R. 115-20-3 permits exotic wildlife, and 115-20-3(d) reads exotic as a species not native or indigenous to Kansas and not present here as an established wild population. The eastern tiger salamander, Ambystoma tigrinum, is an established Kansas taxon under this exact binomial on the Kansas Herpetofaunal Atlas, with the western tiger salamander Ambystoma mavortium beside it, so this is a Kansas animal rather than an exotic one. That sends it to K.A.R. 115-20-2, whose subsection (b)(1) lists amphibians other than bullfrogs among the wildlife that may be taken for personal use on a noncommercial basis, year-round under (d). The cap is the part the earlier entry missed, and for an amphibian it is a single number rather than the reptile pair: five in total of any combination of amphibian per person or domicile, whichever is reached first. 115-20-2(f) defines domicile as the address you declare in legal documents to pay taxes, receive social security, vote, bank, and register vehicles and animals. Kansas lists eleven amphibians in K.A.R. 115-15-1 and 115-15-2 and this is not one of them, so the exclusion in 115-20-2(b) does not bite. Taking one from the wild needs a hunting license under 115-20-2(i), but K.A.R. 115-9-7(i) exempts the possession of wildlife that was legally acquired by the individual, so a bought animal needs no license to keep.",
+          "verifiedOn": "2026-09-16"
         },
         "NC": {
           "sourceId": "nc-14-417",
@@ -11926,13 +11955,12 @@
           "verifiedOn": "2026-08-05"
         },
         "VA": {
-          "sourceId": "va-4vac15-30-40",
-          "cite": "§ 15-30-40(A)",
-          "status": "permit",
-          "quote": "Ambystomatidae   All species, except Ambystoma mexicanum   All mole salamanders, except Mexican axolotl",
-          "permitFor": "personal",
-          "note": "The mole salamander family is on the permit table with a single exception for the axolotl, so the tiger salamander needs the special permit.",
-          "verifiedOn": "2026-08-05"
+          "sourceId": "va-sgcn",
+          "cite": "4VAC15-360-10(A)(6); 4VAC15-20-50",
+          "status": "banned",
+          "quote": "The following species may not be taken or possessed in any number for private use: red-eared slider and all reptile and amphibian Species of Greatest Conservation Need designated in Virginia’s 2015 Wildlife Action Plan.",
+          "note": "Virginia runs two schemes and 4VAC15-20-50 decides which one an animal is in, so the exotic permit table is the wrong rule for anything Virginia already has. A nonnative (exotic) animal is one \"not naturally occurring in Virginia, excluding domestic and naturalized species\", which puts every native and every naturalized species outside 4VAC15-30-40 and inside 4VAC15-360-10. Native and naturalized status is not a judgment call here: it is fixed by a document incorporated by reference, the department’s 2024 List of Native and Naturalized Fauna of Virginia, where an asterisk marks a naturalized species and two asterisks one native in some areas and naturalized in others. This cell read permit on 4VAC15-30-40’s Ambystomatidae row, \"All species, except Ambystoma mexicanum\", which is a correct reading of a table that cannot reach this animal. The eastern tiger salamander, Ambystoma tigrinum, is on the department’s native list with no asterisk, and the permit table operates only on nonnative (exotic) animals, which by definition exclude species naturally occurring in Virginia. So the Ambystomatidae row reaches the mole salamanders Virginia does not have and stops short of the three it does. What reaches this one is 4VAC15-360-10(A)(6): the eastern tiger salamander is on the department’s amphibian Species of Greatest Conservation Need list at tier I, the highest, and the subdivision says such species may not be taken or possessed in any number for private use. In any number, so there is no one-per-address version of this and no permit behind it; the tiger salamander is also a state endangered species in Virginia. The regulation names the 2015 Wildlife Action Plan and the department now publishes the list as revised for 2025, and the eastern tiger salamander is on both.",
+          "verifiedOn": "2026-09-16"
         },
         "IA": {
           "sourceId": "ia-717F",
@@ -11960,12 +11988,13 @@
           "localOverride": true
         },
         "WV": {
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-2(2)",
-          "status": "legal",
-          "quote": "\"Dangerous wild animal\" means a mammal, bird, reptile, amphibian or aquatic animal, including a hybrid, that is dangerous to humans, other animals or the environment due to its inherent nature and capability to do significant harm.",
-          "note": "The definition can reach an amphibian in principle, but the categories the board is pointed at are bears, big cats, canids, primates, large constrictors, venomous snakes and crocodilians. A salamander is not plausibly any of them.",
-          "verifiedOn": "2026-08-05"
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-2-13; § 20-1-2; § 20-2-4(a), (b)",
+          "status": "permit",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "note": "West Virginia’s importation section is the rule the rest of this column was written without, and it changes the answer for every exotic reptile and amphibian in it. W. Va. Code § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. The reptile and amphibian clause carries no nativity qualifier and no captive-bred carve-out, so a pet reptile or amphibian bought from an out-of-state breeder is live wildlife from without the state. A tiger salamander is an amphibian, and the WVDNR checklist of the state’s 34 salamanders carries Ambystoma barbouri, jeffersonianum, maculatum, opacum and texanum and not Ambystoma tigrinum, so this is an out-of-state animal rather than a West Virginia native and § 58-73 has nothing to say about it. § 20-2-13 then bars both bringing that animal in and having it in possession within the state except under an importation permit from the director, and the permit is discretionary: the director may issue it, fix its terms and revoke it at his pleasure. How firm this is, both ways. § 20-2-4(a) independently makes it unlawful to take, obtain, purchase, possess or maintain in captivity any live wildlife except as the chapter or a rule provides, and § 20-2-4(b) says wildlife lawfully taken outside of this state is subject to the same laws and rules as wildlife taken within it, which closes the argument that an out-of-state origin puts the animal outside the chapter before it is made. Against that, the section is headed importation and certification and the body of it is disease control, fish pathologist certificates and inspection of imported shipments, with the only penalty clause written for coyotes. Nothing in Title 58 implements § 20-2-13 for anything but aquaculture, and WVDNR publishes no application for an importation permit. So this is a statutory permit requirement that is real on paper with its machinery not visibly in place, which is the same shape as the Minnesota breeder condition and is recorded the same way. Neither of West Virginia’s two species lists bars this animal. W. Va. C.S.R. § 74-1-3, the dangerous wild animal list adopted 5 April 2022, is a mammal list plus the Komodo dragon. W. Va. C.S.R. § 58-73 reaches native West Virginia reptiles and amphibians only.",
+          "verifiedOn": "2026-09-16",
+          "permitFor": "personal"
         },
         "DC": {
           "sourceId": "dc-8-1808",
@@ -12417,12 +12446,13 @@
           "localOverride": true
         },
         "WV": {
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)",
-          "status": "legal",
-          "quote": "Create a comprehensive list of dangerous wild animals, excluding wildlife, livestock and domestic animals as defined herein. The list may include, but not be limited to: (A) Bears; (B) Big cats; (C) Canids; (D) Primates; (E) Constrictor snakes greater than six feet, and venomous snakes; and (F) Alligators and caimans;",
-          "note": "The only reptiles the statute points the board at are constrictors over six feet, venomous snakes and crocodilians. Nothing here falls in those categories.",
-          "verifiedOn": "2026-08-05"
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-2-13; § 20-1-2; § 20-2-4(a), (b)",
+          "status": "permit",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "note": "West Virginia’s importation section is the rule the rest of this column was written without, and it changes the answer for every exotic reptile and amphibian in it. W. Va. Code § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. The reptile and amphibian clause carries no nativity qualifier and no captive-bred carve-out, so a pet reptile or amphibian bought from an out-of-state breeder is live wildlife from without the state. A Nile monitor is a reptile and an African species, so it is wildlife from without the state on any route into West Virginia. § 20-2-13 then bars both bringing that animal in and having it in possession within the state except under an importation permit from the director, and the permit is discretionary: the director may issue it, fix its terms and revoke it at his pleasure. How firm this is, both ways. § 20-2-4(a) independently makes it unlawful to take, obtain, purchase, possess or maintain in captivity any live wildlife except as the chapter or a rule provides, and § 20-2-4(b) says wildlife lawfully taken outside of this state is subject to the same laws and rules as wildlife taken within it, which closes the argument that an out-of-state origin puts the animal outside the chapter before it is made. Against that, the section is headed importation and certification and the body of it is disease control, fish pathologist certificates and inspection of imported shipments, with the only penalty clause written for coyotes. Nothing in Title 58 implements § 20-2-13 for anything but aquaculture, and WVDNR publishes no application for an importation permit. So this is a statutory permit requirement that is real on paper with its machinery not visibly in place, which is the same shape as the Minnesota breeder condition and is recorded the same way. Neither of West Virginia’s two species lists bars this animal. W. Va. C.S.R. § 74-1-3, the dangerous wild animal list adopted 5 April 2022, is a mammal list plus the Komodo dragon. W. Va. C.S.R. § 58-73 reaches native West Virginia reptiles and amphibians only.",
+          "verifiedOn": "2026-09-16",
+          "permitFor": "personal"
         },
         "VA": {
           "sourceId": "va-4vac15-30-40",
@@ -12813,12 +12843,13 @@
           "localOverride": true
         },
         "WV": {
-          "status": "legal",
-          "sourceId": "wv-74-1",
-          "cite": "W. Va. C.S.R. § 74-1-3.1",
-          "quote": "The Dangerous Wild Animal List adopted by the Board is as follows: 3.1.a. Hyenas; 3.1.b. Gray wolves, excluding hybrids; 3.1.c. Lions; 3.1.d. Tigers; 3.1.e. Jaguars; 3.1.f. Leopards, including clouded leopards, Sunda clouded leopards, and snow leopards; and 3.1.g. All of the following, including hybrids with domestic cats unless otherwise specified: 3.1.g.1. Cheetahs; 3.1.g.2. Lynxes ...; 3.1.g.3. Cougars ...; and 3.1.g.4. Caracals. 3.1.h. Bears; (excluding black bears native to this state); 3.1.i. Elephants; 3.1.j. Rhinoceroses; 3.1.k. Hippopotamuses; 3.1.l. Cape buffalo; 3.1.m. African wild dogs; 3.1.n. Komodo dragons; 3.1.o. Nonhuman primates ...",
-          "note": "The list the Dangerous Wild Animal Act directed a three member board to write was adopted on 5 April 2022 and runs until 2032, so the entries here no longer turn on what § 19-34-5 told the board to consider. No snake appears on the adopted list, the Komodo dragon being its only reptile, so the length question the statute raised never became law here.",
-          "verifiedOn": "2026-09-05"
+          "status": "permit",
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-2-13; § 20-1-2; § 20-2-4(a), (b)",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "note": "West Virginia’s importation section is the rule the rest of this column was written without, and it changes the answer for every exotic reptile and amphibian in it. W. Va. Code § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. The reptile and amphibian clause carries no nativity qualifier and no captive-bred carve-out, so a pet reptile or amphibian bought from an out-of-state breeder is live wildlife from without the state. A Burmese python is a reptile and a Southeast Asian species, so it is wildlife from without the state on any route into West Virginia. § 20-2-13 then bars both bringing that animal in and having it in possession within the state except under an importation permit from the director, and the permit is discretionary: the director may issue it, fix its terms and revoke it at his pleasure. How firm this is, both ways. § 20-2-4(a) independently makes it unlawful to take, obtain, purchase, possess or maintain in captivity any live wildlife except as the chapter or a rule provides, and § 20-2-4(b) says wildlife lawfully taken outside of this state is subject to the same laws and rules as wildlife taken within it, which closes the argument that an out-of-state origin puts the animal outside the chapter before it is made. Against that, the section is headed importation and certification and the body of it is disease control, fish pathologist certificates and inspection of imported shipments, with the only penalty clause written for coyotes. Nothing in Title 58 implements § 20-2-13 for anything but aquaculture, and WVDNR publishes no application for an importation permit. So this is a statutory permit requirement that is real on paper with its machinery not visibly in place, which is the same shape as the Minnesota breeder condition and is recorded the same way. Neither of West Virginia’s two species lists bars this animal. W. Va. C.S.R. § 74-1-3, the dangerous wild animal list adopted 5 April 2022, is a mammal list plus the Komodo dragon. W. Va. C.S.R. § 58-73 reaches native West Virginia reptiles and amphibians only.",
+          "verifiedOn": "2026-09-16",
+          "permitFor": "personal"
         },
         "AK": {
           "status": "legal",
@@ -13248,7 +13279,8 @@
           "sourceId": "wv-19-34",
           "cite": "§ 19-34-2(2)",
           "quote": "that is dangerous to humans, other animals or the environment due to its inherent nature and capability to do significant harm",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-09-16",
+          "note": "§ 20-2-13 was checked against this cell on the pass that applied it to the whole column, and it does not reach this animal. It bars transporting in or possessing live wildlife from without the state without an importation permit from the director, and § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. \"Wild animals\" is defined in the same section as all mammals native to the State of West Virginia, so a species that lives nowhere in West Virginia is not a wild animal and is nothing else on the list either."
         },
         "AK": {
           "status": "banned",
@@ -13686,12 +13718,13 @@
           "localOverride": true
         },
         "WV": {
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)",
-          "status": "legal",
-          "quote": "Create a comprehensive list of dangerous wild animals, excluding wildlife, livestock and domestic animals as defined herein. The list may include, but not be limited to: (A) Bears; (B) Big cats; (C) Canids; (D) Primates; (E) Constrictor snakes greater than six feet, and venomous snakes; and (F) Alligators and caimans;",
-          "note": "No amphibian appears in the categories the board is directed to consider.",
-          "verifiedOn": "2026-08-05"
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-2-13; § 20-1-2; § 20-2-4(a), (b)",
+          "status": "permit",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "note": "West Virginia’s importation section is the rule the rest of this column was written without, and it changes the answer for every exotic reptile and amphibian in it. W. Va. Code § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. The reptile and amphibian clause carries no nativity qualifier and no captive-bred carve-out, so a pet reptile or amphibian bought from an out-of-state breeder is live wildlife from without the state. An axolotl is an amphibian and a Mexican species with no West Virginia population, so it is wildlife from without the state on any route into West Virginia. § 20-2-13 then bars both bringing that animal in and having it in possession within the state except under an importation permit from the director, and the permit is discretionary: the director may issue it, fix its terms and revoke it at his pleasure. How firm this is, both ways. § 20-2-4(a) independently makes it unlawful to take, obtain, purchase, possess or maintain in captivity any live wildlife except as the chapter or a rule provides, and § 20-2-4(b) says wildlife lawfully taken outside of this state is subject to the same laws and rules as wildlife taken within it, which closes the argument that an out-of-state origin puts the animal outside the chapter before it is made. Against that, the section is headed importation and certification and the body of it is disease control, fish pathologist certificates and inspection of imported shipments, with the only penalty clause written for coyotes. Nothing in Title 58 implements § 20-2-13 for anything but aquaculture, and WVDNR publishes no application for an importation permit. So this is a statutory permit requirement that is real on paper with its machinery not visibly in place, which is the same shape as the Minnesota breeder condition and is recorded the same way. Neither of West Virginia’s two species lists bars this animal. W. Va. C.S.R. § 74-1-3, the dangerous wild animal list adopted 5 April 2022, is a mammal list plus the Komodo dragon. W. Va. C.S.R. § 58-73 reaches native West Virginia reptiles and amphibians only.",
+          "verifiedOn": "2026-09-16",
+          "permitFor": "personal"
         },
         "IA": {
           "sourceId": "ia-717F",
@@ -14087,12 +14120,12 @@
           "verifiedOn": "2026-08-05"
         },
         "KS": {
-          "sourceId": "ks-32-1301",
-          "cite": "§ 32-1301(d)",
-          "status": "legal",
-          "quote": "\"Dangerous regulated animal\" means a live or slaughtered parts of: (1) Lions, tigers, leopards, jaguars, cheetahs and mountain lions, or any hybrid thereof; (2) bears or any hybrid thereof; and (3) all non-native, venomous snakes.",
-          "note": "The only reptiles Kansas regulates are non-native venomous snakes. Constrictors, lizards and turtles are untouched at any size.",
-          "verifiedOn": "2026-08-05"
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-2(b)(13), (e), (f); K.S.A. 32-1002(a)(2)",
+          "status": "conditional",
+          "quote": "no more than five reptiles and no more than two individuals of any reptile species per person and/or domicile, whichever is reached first",
+          "note": "The Kansas column was written against K.S.A. 32-1301, the dangerous regulated animal statute, which names six cats, bears and non-native venomous snakes and answers nothing here. The pair that decides a Kansas cell is K.S.A. 32-1002(a)(2), which makes it unlawful to possess any wildlife at all \"unless and except as permitted by law or rules and regulations adopted by the secretary\", and the two regulations that do the permitting. K.A.R. 115-20-3 permits exotic wildlife, and 115-20-3(d) reads exotic as a species not native or indigenous to Kansas and not present here as an established wild population. The ornate box turtle, Terrapene ornata, and the three-toed box turtle, Terrapene triunguis, are both established Kansas taxa on the Kansas Herpetofaunal Atlas, and neither is on K.A.R. 115-15-1 or 115-15-2. A Kansas native is therefore outside 115-20-3 and falls to K.A.R. 115-20-2, which permits taking certain Kansas wildlife for personal use on a noncommercial basis. 115-20-2(b)(13) puts reptiles on that list, with common snapping turtles and soft-shelled turtles taken back out, and the open season under (d) is year-round. What the earlier entry missed is the cap in (e): five reptiles and two individuals of any one reptile species, per person and per domicile, whichever is reached first. 115-20-2(f) defines domicile as the address you declare in legal documents to pay taxes, receive social security, vote, bank, and register vehicles and animals, so two people at one address do not get four. Taking one from the wild needs a hunting license, since 115-20-2(i) exempts only invertebrates from that, but K.A.R. 115-9-7(i) exempts the possession of wildlife that was legally acquired by the individual, so a bought animal needs no license to keep. One gap Kansas has never closed: 32-1002(a)(3) bars purchasing or selling any wildlife in this state unless a regulation permits it, 115-20-2 permits taking only on a noncommercial basis, and 32-1002(b) lifts the possession and sale bars for animals legally taken outside this state without saying what that means for one bred in captivity out of state.",
+          "verifiedOn": "2026-09-16"
         },
         "NC": {
           "sourceId": "nc-14-417",
@@ -14121,12 +14154,12 @@
           "verifiedOn": "2026-09-05"
         },
         "VA": {
-          "sourceId": "va-4vac15-30-40",
-          "cite": "§ 15-30-40(A)",
-          "status": "legal",
-          "quote": "A special permit is required and may be issued by the department... to import, possess, or sell those nonnative (exotic) animals listed in the following table",
-          "note": "The permit table works family by family and contains no reptile relevant here. Virginia permits by table, so absence from it means no special permit applies.",
-          "verifiedOn": "2026-08-05"
+          "sourceId": "va-sgcn",
+          "cite": "4VAC15-360-10(A)(6); 4VAC15-20-50",
+          "status": "banned",
+          "quote": "The following species may not be taken or possessed in any number for private use: red-eared slider and all reptile and amphibian Species of Greatest Conservation Need designated in Virginia’s 2015 Wildlife Action Plan.",
+          "note": "Virginia runs two schemes and 4VAC15-20-50 decides which one an animal is in, so the exotic permit table is the wrong rule for anything Virginia already has. A nonnative (exotic) animal is one \"not naturally occurring in Virginia, excluding domestic and naturalized species\", which puts every native and every naturalized species outside 4VAC15-30-40 and inside 4VAC15-360-10. Native and naturalized status is not a judgment call here: it is fixed by a document incorporated by reference, the department’s 2024 List of Native and Naturalized Fauna of Virginia, where an asterisk marks a naturalized species and two asterisks one native in some areas and naturalized in others. The old entry read the exotic permit table, found no turtle in it and recorded legal, which is the mistake Virginia invites. The woodland box turtle, Terrapene carolina carolina, is on the department’s native list with no asterisk, so the table never applied, and it is on the department’s reptile Species of Greatest Conservation Need list at tier III. 4VAC15-360-10(A)(6) says the red-eared slider and every reptile and amphibian Species of Greatest Conservation Need designated in Virginia’s Wildlife Action Plan may not be taken or possessed in any number for private use. In any number is the operative phrase: this is not the one-per-address cap with a smaller number, it is the allowance withheld, and once it is withheld nothing in Virginia law permits possession of a wild animal, which 4VAC15-20-50 defines as any member of the animal kingdom except domestic animals. The only permits in the chapter are the one at (A)(8) for taking from state or federal land and the scientific and exhibition permits elsewhere, none of them a pet route. Two things to hold: the regulation names the 2015 Wildlife Action Plan and the department now publishes the list as revised for 2025, and the box turtle is on both; and the department’s own conservation action for several listed turtles reads \"continue maintaining no possession regulations\", which is this rule described from the other side.",
+          "verifiedOn": "2026-09-16"
         },
         "IA": {
           "sourceId": "ia-717F",
@@ -14533,12 +14566,12 @@
           "verifiedOn": "2026-08-05"
         },
         "KS": {
-          "sourceId": "ks-32-1301",
-          "cite": "§ 32-1301(d)",
-          "status": "legal",
-          "quote": "\"Dangerous regulated animal\" means a live or slaughtered parts of: (1) Lions, tigers, leopards, jaguars, cheetahs and mountain lions, or any hybrid thereof; (2) bears or any hybrid thereof; and (3) all non-native, venomous snakes.",
-          "note": "The only reptiles Kansas regulates are non-native venomous snakes. Constrictors, lizards and turtles are untouched at any size.",
-          "verifiedOn": "2026-08-05"
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-2(b)(13), (e), (f); K.S.A. 32-1002(a)(2)",
+          "status": "conditional",
+          "quote": "no more than five reptiles and no more than two individuals of any reptile species per person and/or domicile, whichever is reached first",
+          "note": "The Kansas column was written against K.S.A. 32-1301, the dangerous regulated animal statute, which names six cats, bears and non-native venomous snakes and answers nothing here. The pair that decides a Kansas cell is K.S.A. 32-1002(a)(2), which makes it unlawful to possess any wildlife at all \"unless and except as permitted by law or rules and regulations adopted by the secretary\", and the two regulations that do the permitting. K.A.R. 115-20-3 permits exotic wildlife, and 115-20-3(d) reads exotic as a species not native or indigenous to Kansas and not present here as an established wild population. The pond slider, Trachemys scripta, is an established Kansas taxon on the Kansas Herpetofaunal Atlas, and Kansas is inside the natural range of the red-eared subspecies. It is on neither K.A.R. 115-15-1 nor 115-15-2. A Kansas native is therefore outside 115-20-3 and falls to K.A.R. 115-20-2, which permits taking certain Kansas wildlife for personal use on a noncommercial basis. 115-20-2(b)(13) puts reptiles on that list, with common snapping turtles and soft-shelled turtles taken back out, and the open season under (d) is year-round. What the earlier entry missed is the cap in (e): five reptiles and two individuals of any one reptile species, per person and per domicile, whichever is reached first. 115-20-2(f) defines domicile as the address you declare in legal documents to pay taxes, receive social security, vote, bank, and register vehicles and animals, so two people at one address do not get four. Taking one from the wild needs a hunting license, since 115-20-2(i) exempts only invertebrates from that, but K.A.R. 115-9-7(i) exempts the possession of wildlife that was legally acquired by the individual, so a bought animal needs no license to keep. One gap Kansas has never closed: 32-1002(a)(3) bars purchasing or selling any wildlife in this state unless a regulation permits it, 115-20-2 permits taking only on a noncommercial basis, and 32-1002(b) lifts the possession and sale bars for animals legally taken outside this state without saying what that means for one bred in captivity out of state.",
+          "verifiedOn": "2026-09-16"
         },
         "NC": {
           "sourceId": "nc-14-417",
@@ -14559,20 +14592,21 @@
           "localOverride": true
         },
         "WV": {
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)",
-          "status": "legal",
-          "quote": "Create a comprehensive list of dangerous wild animals, excluding wildlife, livestock and domestic animals as defined herein. The list may include, but not be limited to: (A) Bears; (B) Big cats; (C) Canids; (D) Primates; (E) Constrictor snakes greater than six feet, and venomous snakes; and (F) Alligators and caimans;",
-          "note": "The only reptiles the statute points the board at are constrictors over six feet, venomous snakes and crocodilians. Nothing here falls in those categories.",
-          "verifiedOn": "2026-08-05"
+          "sourceId": "wv-dnr-herps",
+          "cite": "W. Va. C.S.R. § 58-73-1.1; W. Va. Code § 20-2-13; WVDNR turtle checklist",
+          "status": "unclear",
+          "quote": "The take or possession of any native West Virginia reptile or amphibian species not listed hereafter is prohibited pursuant to W. Va. Code 20-2-4.",
+          "note": "The red-eared slider is the one West Virginia cell where nativity is itself the question, and both answers to it are restrictive, which is why this is grey rather than green. WVDNR publishes its turtle checklist under a heading of native species and the red-eared slider, Trachemys scripta elegans, is the last name on it, beside the woodland box turtle and the snapping turtle. If the department reads its own checklist as settling nativity, and that is how the corn snake, gartersnake, milksnake, kingsnake, hognose and box turtle cells here were decided, then § 58-73-1.1 prohibits this animal: the rule’s section 4 list of what may be taken or possessed runs to ten bait salamanders, two frogs and two turtles, the eastern spiny softshell and the snapping turtle, and the slider is not on it. If instead the department treats the slider as introduced rather than native, because its natural range stops well west of West Virginia, then it is an exotic reptile and § 20-2-13 applies to it like every other exotic reptile in this column: no possession within the state of live wildlife from without the state except under an importation permit from the director. Banned on one reading and permit on the other, and no West Virginia text distinguishes native from established.",
+          "verifiedOn": "2026-09-16",
+          "permitFor": "personal"
         },
         "VA": {
-          "sourceId": "va-4vac15-30-40",
-          "cite": "§ 15-30-40(A)",
-          "status": "legal",
-          "quote": "A special permit is required and may be issued by the department... to import, possess, or sell those nonnative (exotic) animals listed in the following table",
-          "note": "The permit table works family by family and contains no reptile relevant here. Virginia permits by table, so absence from it means no special permit applies.",
-          "verifiedOn": "2026-08-05"
+          "sourceId": "va-4vac15-360-10",
+          "cite": "4VAC15-360-10(A)(6); 4VAC15-20-50",
+          "status": "banned",
+          "quote": "The following species may not be taken or possessed in any number for private use: red-eared slider and all reptile and amphibian Species of Greatest Conservation Need designated in Virginia’s 2015 Wildlife Action Plan.",
+          "note": "Virginia runs two schemes and 4VAC15-20-50 decides which one an animal is in, so the exotic permit table is the wrong rule for anything Virginia already has. A nonnative (exotic) animal is one \"not naturally occurring in Virginia, excluding domestic and naturalized species\", which puts every native and every naturalized species outside 4VAC15-30-40 and inside 4VAC15-360-10. Native and naturalized status is not a judgment call here: it is fixed by a document incorporated by reference, the department’s 2024 List of Native and Naturalized Fauna of Virginia, where an asterisk marks a naturalized species and two asterisks one native in some areas and naturalized in others. The department’s list carries \"Red-eared Slider * Trachemys scripta elegans *\", the asterisk denoting a naturalized species, and a naturalized animal is expressly excluded from the definition of a nonnative (exotic) animal, so the permit table the old entry read never applied to this turtle. What applies is 4VAC15-360-10, and the slider is the only animal the section names by common name in its bar: subdivision (A)(6) says the red-eared slider and every reptile and amphibian Species of Greatest Conservation Need may not be taken or possessed in any number for private use. In any number, so this is not the one-per-address cap at a smaller figure, it is the private-use allowance withheld outright, and with it withheld nothing permits possession of what 4VAC15-20-50 makes a wild animal. Virginia writing the most common pet turtle in the country into the same sentence as its conservation-priority natives is deliberate: the slider is naturalized here because released pets established it. Note also that the two sliders Virginia does treat as its own, the Cumberland slider and the yellow-bellied slider, are on the Species of Greatest Conservation Need list and are barred by the same subdivision.",
+          "verifiedOn": "2026-09-16"
         },
         "IA": {
           "sourceId": "ia-717F",
@@ -14997,12 +15031,13 @@
           "localOverride": true
         },
         "WV": {
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)",
-          "status": "legal",
-          "quote": "Create a comprehensive list of dangerous wild animals, excluding wildlife, livestock and domestic animals as defined herein. The list may include, but not be limited to: (A) Bears; (B) Big cats; (C) Canids; (D) Primates; (E) Constrictor snakes greater than six feet, and venomous snakes; and (F) Alligators and caimans;",
-          "note": "The only reptiles the statute points the board at are constrictors over six feet, venomous snakes and crocodilians. Nothing here falls in those categories.",
-          "verifiedOn": "2026-08-05"
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-2-13; § 20-1-2; § 20-2-4(a), (b)",
+          "status": "permit",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "note": "West Virginia’s importation section is the rule the rest of this column was written without, and it changes the answer for every exotic reptile and amphibian in it. W. Va. Code § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. The reptile and amphibian clause carries no nativity qualifier and no captive-bred carve-out, so a pet reptile or amphibian bought from an out-of-state breeder is live wildlife from without the state. An African spurred tortoise is a reptile and a Sahelian species, so it is wildlife from without the state on any route into West Virginia. § 20-2-13 then bars both bringing that animal in and having it in possession within the state except under an importation permit from the director, and the permit is discretionary: the director may issue it, fix its terms and revoke it at his pleasure. How firm this is, both ways. § 20-2-4(a) independently makes it unlawful to take, obtain, purchase, possess or maintain in captivity any live wildlife except as the chapter or a rule provides, and § 20-2-4(b) says wildlife lawfully taken outside of this state is subject to the same laws and rules as wildlife taken within it, which closes the argument that an out-of-state origin puts the animal outside the chapter before it is made. Against that, the section is headed importation and certification and the body of it is disease control, fish pathologist certificates and inspection of imported shipments, with the only penalty clause written for coyotes. Nothing in Title 58 implements § 20-2-13 for anything but aquaculture, and WVDNR publishes no application for an importation permit. So this is a statutory permit requirement that is real on paper with its machinery not visibly in place, which is the same shape as the Minnesota breeder condition and is recorded the same way. Neither of West Virginia’s two species lists bars this animal. W. Va. C.S.R. § 74-1-3, the dangerous wild animal list adopted 5 April 2022, is a mammal list plus the Komodo dragon. W. Va. C.S.R. § 58-73 reaches native West Virginia reptiles and amphibians only.",
+          "verifiedOn": "2026-09-16",
+          "permitFor": "personal"
         },
         "VA": {
           "sourceId": "va-4vac15-30-40",
@@ -15425,12 +15460,16 @@
           "verifiedOn": "2026-08-05"
         },
         "KS": {
-          "sourceId": "ks-32-1301",
-          "cite": "§ 32-1301(d)",
-          "status": "legal",
-          "quote": "\"Dangerous regulated animal\" means a live or slaughtered parts of: (1) Lions, tigers, leopards, jaguars, cheetahs and mountain lions, or any hybrid thereof; (2) bears or any hybrid thereof; and (3) all non-native, venomous snakes.",
-          "note": "The only reptiles Kansas regulates are non-native venomous snakes. Constrictors, lizards and turtles are untouched at any size.",
-          "verifiedOn": "2026-08-05"
+          "sourceId": "ks-115-15-2",
+          "cite": "K.A.R. 115-15-2(a)(4); 115-20-2(b); K.S.A. 32-1002(a)(2)",
+          "status": "banned",
+          "quote": "The following species shall be designated nongame species in need of conservation within the boundaries of the state of Kansas. ... (4) Reptiles ... Plains hog-nosed snake, Heterodon nasicus (Baird and Girard, 1852) ... Eastern hog-nosed snake, Heterodon platirhinos (Latreille, 1801)",
+          "note": "This is the flying squirrel pattern, and it is the sharpest case on the map of three regulations closing in sequence. Kansas has both hognose snakes, the western and the eastern, and both are established taxa on the Kansas Herpetofaunal Atlas. K.S.A. 32-1002(a)(2) makes it unlawful to possess any wildlife except as permitted by law or regulation. K.A.R. 115-20-3 permits exotic wildlife, but (d) defines exotic as a species not native or indigenous to Kansas, and a Kansas native is not that. K.A.R. 115-20-2 permits taking certain Kansas wildlife, and its reptile clause at (b)(13) would cover a hognose, but the opening words of (b) exclude any species listed in K.A.R. 115-15-1 or 115-15-2, and this regulation is that list with both Heterodon species on it by binomial. Nothing is left to permit possession. The special permit at 115-15-3 covers threatened and endangered wildlife rather than nongame species in need of conservation, so there is no permit route either. Worth knowing for the pet trade specifically: the western hognose, Heterodon nasicus, is the animal almost every captive-bred hognose in the trade is, and it is the one Kansas names first.",
+          "verifiedOn": "2026-09-16",
+          "grandfathered": {
+            "before": "1990-01-01",
+            "detail": "K.A.R. 115-15-2(c) lets an animal possessed before the regulation took effect be retained if an application of affidavit was filed with and approved by the secretary before 1 January 1990, or possession had already been approved by the department."
+          }
         },
         "NC": {
           "sourceId": "nc-14-417",
@@ -15450,12 +15489,12 @@
           "verifiedOn": "2026-09-05"
         },
         "VA": {
-          "sourceId": "va-4vac15-30-40",
-          "cite": "§ 15-30-40(A)",
-          "status": "legal",
-          "quote": "A special permit is required and may be issued by the department... to import, possess, or sell those nonnative (exotic) animals listed in the following table",
-          "note": "The permit table works family by family and contains no reptile relevant here. Virginia permits by table, so absence from it means no special permit applies.",
-          "verifiedOn": "2026-08-05"
+          "sourceId": "va-sgcn",
+          "cite": "4VAC15-360-10(A)(6); 4VAC15-20-50",
+          "status": "conditional",
+          "quote": "The following species may not be taken or possessed in any number for private use: red-eared slider and all reptile and amphibian Species of Greatest Conservation Need designated in Virginia’s 2015 Wildlife Action Plan.",
+          "note": "Virginia runs two schemes and 4VAC15-20-50 decides which one an animal is in, so the exotic permit table is the wrong rule for anything Virginia already has. A nonnative (exotic) animal is one \"not naturally occurring in Virginia, excluding domestic and naturalized species\", which puts every native and every naturalized species outside 4VAC15-30-40 and inside 4VAC15-360-10. Native and naturalized status is not a judgment call here: it is fixed by a document incorporated by reference, the department’s 2024 List of Native and Naturalized Fauna of Virginia, where an asterisk marks a naturalized species and two asterisks one native in some areas and naturalized in others. The two hognose snakes part company here and the answer depends on which one is in the tank. The eastern hog-nosed snake, Heterodon platirhinos, is on the department’s native list with no asterisk and is also a reptile Species of Greatest Conservation Need, which 4VAC15-360-10(A)(6) says may not be taken or possessed in any number for private use. Not capped at one, barred. The western hognose, Heterodon nasicus, is the animal nearly every captive-bred hognose in the pet trade is, and it appears nowhere on the Virginia native and naturalized list, which makes it a nonnative (exotic) animal; 4VAC15-30-40’s permit table names one snake in the whole of it, the brown tree snake, so a western hognose needs no permit and is not capped. The condition is the species: legal for the western, prohibited for the Virginia native.",
+          "verifiedOn": "2026-09-16"
         },
         "IA": {
           "sourceId": "ia-717F",
@@ -15859,8 +15898,8 @@
           "cite": "§ 19-34-5(c)(2)",
           "status": "legal",
           "quote": "Create a comprehensive list of dangerous wild animals, excluding wildlife, livestock and domestic animals as defined herein. The list may include, but not be limited to: (A) Bears; (B) Big cats; (C) Canids; (D) Primates; (E) Constrictor snakes greater than six feet, and venomous snakes; and (F) Alligators and caimans;",
-          "note": "No bird category appears in the guidance at all.",
-          "verifiedOn": "2026-08-05"
+          "note": "No bird category appears in the guidance at all. § 20-2-13 was checked against this cell on the pass that applied it to the whole column, and it does not reach this animal. It bars transporting in or possessing live wildlife from without the state without an importation permit from the director, and § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. \"Wild birds\" expressly excludes psittacidae, commonly called parrots and parakeets, and other foreign cage birds, so no pet parrot is wildlife in West Virginia at all.",
+          "verifiedOn": "2026-09-16"
         },
         "IA": {
           "sourceId": "ia-717F",
@@ -16288,8 +16327,8 @@
           "cite": "§ 19-34-5(c)(2)",
           "status": "legal",
           "quote": "Create a comprehensive list of dangerous wild animals, excluding wildlife, livestock and domestic animals as defined herein. The list may include, but not be limited to: (A) Bears; (B) Big cats; (C) Canids; (D) Primates; (E) Constrictor snakes greater than six feet, and venomous snakes; and (F) Alligators and caimans;",
-          "note": "No invertebrate appears in the categories the board is directed to consider.",
-          "verifiedOn": "2026-08-05"
+          "note": "No invertebrate appears in the categories the board is directed to consider. § 20-2-13 was checked against this cell on the pass that applied it to the whole column, and it does not reach this animal. It bars transporting in or possessing live wildlife from without the state without an importation permit from the director, and § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. No terrestrial arthropod appears anywhere in it: the invertebrates it reaches are mollusks, crustaceans and aquatic bait life.",
+          "verifiedOn": "2026-09-16"
         },
         "VA": {
           "sourceId": "va-4vac15-30-40",
@@ -16759,10 +16798,11 @@
         },
         "KS": {
           "status": "legal",
-          "sourceId": "ks-32-1301",
-          "cite": "§ 32-1301(d)(3)",
-          "quote": "all non-native, venomous snakes.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-3(a), (b), (d); K.S.A. 32-1002(a)(2)",
+          "quote": "Exotic wildlife may be possessed without limit in time and number.",
+          "verifiedOn": "2026-09-16",
+          "note": "The Kansas column was written against K.S.A. 32-1301, the dangerous regulated animal statute, which names six cats, bears and non-native venomous snakes and answers nothing here. The pair that decides a Kansas cell is K.S.A. 32-1002(a)(2), which makes it unlawful to possess any wildlife at all \"unless and except as permitted by law or rules and regulations adopted by the secretary\", and the two regulations that do the permitting. K.A.R. 115-20-3 permits exotic wildlife, and 115-20-3(d) reads exotic as a species not native or indigenous to Kansas and not present here as an established wild population. The corn snake reaches the right answer by the wrong route in the old entry, because whether Kansas restricts it turns on nativity rather than on the dangerous regulated animal statute. Kansas has two Pantherophis species, the Great Plains ratsnake Pantherophis emoryi and the western ratsnake Pantherophis obsoletus, and the Kansas Herpetofaunal Atlas carries Pantherophis guttatus in neither its established list nor its not-yet-established list. So the corn snake is not native or indigenous to Kansas and has no established wild population here, which makes it exotic wildlife on both halves of the 115-20-3(d) test, and 115-20-3(b) lets exotic wildlife be possessed without limit in time and number. The proviso in (a) is the only condition, that the animal was lawfully raised or acquired where it came from, which a captive-bred snake from a breeder satisfies. The two-per-species cap that binds Kansas native reptiles does not reach it."
         },
         "KY": {
           "status": "legal",
@@ -16929,11 +16969,12 @@
           "verifiedOn": "2026-09-05"
         },
         "VA": {
-          "status": "legal",
-          "sourceId": "va-4vac15-30-40",
-          "cite": "§ 15-30-40(A)",
-          "note": "No snake appears on Virginia's special permit table at all.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "va-4vac15-360-10",
+          "cite": "4VAC15-360-10(A); 4VAC15-20-50",
+          "note": "Virginia runs two schemes and 4VAC15-20-50 decides which one an animal is in, so the exotic permit table is the wrong rule for anything Virginia already has. A nonnative (exotic) animal is one \"not naturally occurring in Virginia, excluding domestic and naturalized species\", which puts every native and every naturalized species outside 4VAC15-30-40 and inside 4VAC15-360-10. Native and naturalized status is not a judgment call here: it is fixed by a document incorporated by reference, the department’s 2024 List of Native and Naturalized Fauna of Virginia, where an asterisk marks a naturalized species and two asterisks one native in some areas and naturalized in others. That list carries the red cornsnake, Pantherophis guttatus, with no asterisk, so it is a Virginia native and the exotic permit table never reached it. What makes this the most useful cell in the state is that the corn snake is the one reptile Virginia writes into its closed domestic animal list, and it does it by appearance: domesticated morphs of red cornsnake visibly distinguishable from native red cornsnakes based on their unique colors and patterns are domestic animals, and a domestic animal is not a wild animal under 4VAC15-20-50 at all. So the condition here is about which snake you own. A snow, amel, lavender or any other morph a warden could tell from a wild Virginia cornsnake at sight is outside the whole scheme, with no cap and no limit. A normal-phase or wild-type cornsnake is a native reptile and 4VAC15-360-10(A) caps it at one individual per physical address, live, for private use and not for sale or export. The cornsnake is on neither the red-eared slider bar nor the Species of Greatest Conservation Need list that 4VAC15-360-10(A)(6) closes possession on.",
+          "verifiedOn": "2026-09-16",
+          "quote": "Domesticated morphs of red cornsnake (Pantherophis guttatus) visibly distinguishable from native red cornsnakes based on their unique colors and patterns."
         },
         "WA": {
           "status": "legal",
@@ -17172,11 +17213,12 @@
           "verifiedOn": "2026-09-05"
         },
         "KS": {
-          "status": "legal",
-          "sourceId": "ks-32-1301",
-          "cite": "§ 32-1301(d)(3)",
-          "quote": "all non-native, venomous snakes.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-2(b)(13), (e), (f); K.S.A. 32-1002(a)(2)",
+          "quote": "no more than five reptiles and no more than two individuals of any reptile species per person and/or domicile, whichever is reached first",
+          "verifiedOn": "2026-09-16",
+          "note": "The Kansas column was written against K.S.A. 32-1301, the dangerous regulated animal statute, which names six cats, bears and non-native venomous snakes and answers nothing here. The pair that decides a Kansas cell is K.S.A. 32-1002(a)(2), which makes it unlawful to possess any wildlife at all \"unless and except as permitted by law or rules and regulations adopted by the secretary\", and the two regulations that do the permitting. K.A.R. 115-20-3 permits exotic wildlife, and 115-20-3(d) reads exotic as a species not native or indigenous to Kansas and not present here as an established wild population. Kansas has two milksnakes, and the atlas carries the eastern milksnake under this exact binomial, Lampropeltis triangulum, alongside the western milksnake Lampropeltis gentilis. So the pet-trade name and the Kansas native are the same species here, and neither milksnake is on K.A.R. 115-15-1 or 115-15-2. A Kansas native is therefore outside 115-20-3 and falls to K.A.R. 115-20-2, which permits taking certain Kansas wildlife for personal use on a noncommercial basis. 115-20-2(b)(13) puts reptiles on that list, with common snapping turtles and soft-shelled turtles taken back out, and the open season under (d) is year-round. What the earlier entry missed is the cap in (e): five reptiles and two individuals of any one reptile species, per person and per domicile, whichever is reached first. 115-20-2(f) defines domicile as the address you declare in legal documents to pay taxes, receive social security, vote, bank, and register vehicles and animals, so two people at one address do not get four. Taking one from the wild needs a hunting license, since 115-20-2(i) exempts only invertebrates from that, but K.A.R. 115-9-7(i) exempts the possession of wildlife that was legally acquired by the individual, so a bought animal needs no license to keep. One gap Kansas has never closed: 32-1002(a)(3) bars purchasing or selling any wildlife in this state unless a regulation permits it, 115-20-2 permits taking only on a noncommercial basis, and 32-1002(b) lifts the possession and sale bars for animals legally taken outside this state without saying what that means for one bred in captivity out of state."
         },
         "KY": {
           "status": "legal",
@@ -17318,11 +17360,12 @@
           "verifiedOn": "2026-09-05"
         },
         "VA": {
-          "status": "legal",
-          "sourceId": "va-4vac15-30-40",
-          "cite": "§ 15-30-40(A)",
-          "note": "No snake appears on Virginia's special permit table at all.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "va-4vac15-360-10",
+          "cite": "4VAC15-360-10(A); 4VAC15-20-50",
+          "note": "Virginia runs two schemes and 4VAC15-20-50 decides which one an animal is in, so the exotic permit table is the wrong rule for anything Virginia already has. A nonnative (exotic) animal is one \"not naturally occurring in Virginia, excluding domestic and naturalized species\", which puts every native and every naturalized species outside 4VAC15-30-40 and inside 4VAC15-360-10. Native and naturalized status is not a judgment call here: it is fixed by a document incorporated by reference, the department’s 2024 List of Native and Naturalized Fauna of Virginia, where an asterisk marks a naturalized species and two asterisks one native in some areas and naturalized in others. That list carries the eastern milksnake, Lampropeltis triangulum, with no asterisk, so it is a Virginia native and the exotic permit table never reached it. 4VAC15-360-10(A) then caps possession at one individual of any native or naturalized species of amphibian or reptile per physical address, live, for private use and not for sale or export. Per physical address, not per person, so two keepers under one roof share the one. That the cap binds a keeper rather than only a collector is confirmed from the other direction by the domestic animal list in 4VAC15-20-50, which writes an express carve-out for domesticated morphs of red cornsnake visibly distinguishable from native red cornsnakes; that exception would have nothing to do if keeping a native herp were free. 4VAC15-360-10(A)(6) bars possessing in any number the red-eared slider and every reptile and amphibian Species of Greatest Conservation Need in Virginia’s Wildlife Action Plan, and the milksnake is not on that list, although the scarlet kingsnake, Lampropeltis elapsoides, is. So the cap is the whole of it: one snake, one address.",
+          "verifiedOn": "2026-09-16",
+          "quote": "it shall be lawful to capture and possess live for private use and not for sale or export no more than one individual of any native or naturalized, as defined in 4VAC15-20-50, species of amphibian or reptile per physical address"
         },
         "WA": {
           "status": "legal",
@@ -17802,12 +17845,13 @@
           "verifiedOn": "2026-08-27"
         },
         "WV": {
-          "status": "legal",
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)(E)",
-          "quote": "Constrictor snakes greater than six feet, and venomous snakes;",
-          "note": "Rosy boa, at 2-3 feet, is well short of West Virginia's six-foot constrictor threshold, the same clause that leaves a full-size boa constrictor unclear here because six feet is a close call for that species. There's no such ambiguity for a rosy boa.",
-          "verifiedOn": "2026-08-27"
+          "status": "permit",
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-2-13; § 20-1-2; § 20-2-4(a), (b)",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "note": "West Virginia’s importation section is the rule the rest of this column was written without, and it changes the answer for every exotic reptile and amphibian in it. W. Va. Code § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. The reptile and amphibian clause carries no nativity qualifier and no captive-bred carve-out, so a pet reptile or amphibian bought from an out-of-state breeder is live wildlife from without the state. A rosy boa is a reptile and a species of the American southwest and Baja California, so it is wildlife from without the state on any route into West Virginia. § 20-2-13 then bars both bringing that animal in and having it in possession within the state except under an importation permit from the director, and the permit is discretionary: the director may issue it, fix its terms and revoke it at his pleasure. How firm this is, both ways. § 20-2-4(a) independently makes it unlawful to take, obtain, purchase, possess or maintain in captivity any live wildlife except as the chapter or a rule provides, and § 20-2-4(b) says wildlife lawfully taken outside of this state is subject to the same laws and rules as wildlife taken within it, which closes the argument that an out-of-state origin puts the animal outside the chapter before it is made. Against that, the section is headed importation and certification and the body of it is disease control, fish pathologist certificates and inspection of imported shipments, with the only penalty clause written for coyotes. Nothing in Title 58 implements § 20-2-13 for anything but aquaculture, and WVDNR publishes no application for an importation permit. So this is a statutory permit requirement that is real on paper with its machinery not visibly in place, which is the same shape as the Minnesota breeder condition and is recorded the same way. Neither of West Virginia’s two species lists bars this animal. W. Va. C.S.R. § 74-1-3, the dangerous wild animal list adopted 5 April 2022, is a mammal list plus the Komodo dragon. W. Va. C.S.R. § 58-73 reaches native West Virginia reptiles and amphibians only.",
+          "verifiedOn": "2026-09-16",
+          "permitFor": "personal"
         },
         "WY": {
           "status": "legal",
@@ -18442,11 +18486,13 @@
           "localOverride": true
         },
         "WV": {
-          "status": "legal",
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)",
-          "note": "The only reptiles the statute points the board at are constrictors over six feet, venomous snakes and crocodilians.",
-          "verifiedOn": "2026-08-27"
+          "status": "permit",
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-2-13; § 20-1-2; § 20-2-4(a), (b)",
+          "note": "West Virginia’s importation section is the rule the rest of this column was written without, and it changes the answer for every exotic reptile and amphibian in it. W. Va. Code § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. The reptile and amphibian clause carries no nativity qualifier and no captive-bred carve-out, so a pet reptile or amphibian bought from an out-of-state breeder is live wildlife from without the state. An ackie monitor is a reptile and an Australian species, so it is wildlife from without the state on any route into West Virginia. § 20-2-13 then bars both bringing that animal in and having it in possession within the state except under an importation permit from the director, and the permit is discretionary: the director may issue it, fix its terms and revoke it at his pleasure. How firm this is, both ways. § 20-2-4(a) independently makes it unlawful to take, obtain, purchase, possess or maintain in captivity any live wildlife except as the chapter or a rule provides, and § 20-2-4(b) says wildlife lawfully taken outside of this state is subject to the same laws and rules as wildlife taken within it, which closes the argument that an out-of-state origin puts the animal outside the chapter before it is made. Against that, the section is headed importation and certification and the body of it is disease control, fish pathologist certificates and inspection of imported shipments, with the only penalty clause written for coyotes. Nothing in Title 58 implements § 20-2-13 for anything but aquaculture, and WVDNR publishes no application for an importation permit. So this is a statutory permit requirement that is real on paper with its machinery not visibly in place, which is the same shape as the Minnesota breeder condition and is recorded the same way. Neither of West Virginia’s two species lists bars this animal. W. Va. C.S.R. § 74-1-3, the dangerous wild animal list adopted 5 April 2022, is a mammal list plus the Komodo dragon. W. Va. C.S.R. § 58-73 reaches native West Virginia reptiles and amphibians only.",
+          "verifiedOn": "2026-09-16",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "permitFor": "personal"
         },
         "NH": {
           "status": "legal",
@@ -18880,12 +18926,12 @@
           "verifiedOn": "2026-09-05"
         },
         "KS": {
-          "status": "legal",
-          "sourceId": "ks-32-1301",
-          "cite": "§ 32-1301(d)",
-          "quote": "\"Dangerous regulated animal\" means a live or slaughtered parts of: (1) Lions, tigers, leopards, jaguars, cheetahs and mountain lions, or any hybrid thereof; (2) bears or any hybrid thereof; and (3) all non-native, venomous snakes.",
-          "note": "The only reptiles Kansas regulates are non-native venomous snakes.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-2(b)(13), (e), (f); K.S.A. 32-1002(a)(2)",
+          "quote": "no more than five reptiles and no more than two individuals of any reptile species per person and/or domicile, whichever is reached first",
+          "note": "The Kansas column was written against K.S.A. 32-1301, the dangerous regulated animal statute, which names six cats, bears and non-native venomous snakes and answers nothing here. The pair that decides a Kansas cell is K.S.A. 32-1002(a)(2), which makes it unlawful to possess any wildlife at all \"unless and except as permitted by law or rules and regulations adopted by the secretary\", and the two regulations that do the permitting. K.A.R. 115-20-3 permits exotic wildlife, and 115-20-3(d) reads exotic as a species not native or indigenous to Kansas and not present here as an established wild population. Thamnophis sirtalis is an established Kansas taxon on the Kansas Herpetofaunal Atlas, and the only gartersnake Kansas lists in regulation is the checkered gartersnake, Thamnophis marcianus, which 115-15-1(b)(4) makes threatened and which is not this animal. A Kansas native is therefore outside 115-20-3 and falls to K.A.R. 115-20-2, which permits taking certain Kansas wildlife for personal use on a noncommercial basis. 115-20-2(b)(13) puts reptiles on that list, with common snapping turtles and soft-shelled turtles taken back out, and the open season under (d) is year-round. What the earlier entry missed is the cap in (e): five reptiles and two individuals of any one reptile species, per person and per domicile, whichever is reached first. 115-20-2(f) defines domicile as the address you declare in legal documents to pay taxes, receive social security, vote, bank, and register vehicles and animals, so two people at one address do not get four. Taking one from the wild needs a hunting license, since 115-20-2(i) exempts only invertebrates from that, but K.A.R. 115-9-7(i) exempts the possession of wildlife that was legally acquired by the individual, so a bought animal needs no license to keep. One gap Kansas has never closed: 32-1002(a)(3) bars purchasing or selling any wildlife in this state unless a regulation permits it, 115-20-2 permits taking only on a noncommercial basis, and 32-1002(b) lifts the possession and sale bars for animals legally taken outside this state without saying what that means for one bred in captivity out of state.",
+          "verifiedOn": "2026-09-16"
         },
         "KY": {
           "status": "legal",
@@ -19101,11 +19147,12 @@
           "verifiedOn": "2026-09-05"
         },
         "VA": {
-          "status": "legal",
-          "sourceId": "va-4vac15-30-40",
-          "cite": "§ 15-30-40(A)",
-          "note": "Virginia's special-permit table works species by species and contains no reptile relevant to a garter snake.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "va-4vac15-360-10",
+          "cite": "4VAC15-360-10(A); 4VAC15-20-50",
+          "note": "Virginia runs two schemes and 4VAC15-20-50 decides which one an animal is in, so the exotic permit table is the wrong rule for anything Virginia already has. A nonnative (exotic) animal is one \"not naturally occurring in Virginia, excluding domestic and naturalized species\", which puts every native and every naturalized species outside 4VAC15-30-40 and inside 4VAC15-360-10. Native and naturalized status is not a judgment call here: it is fixed by a document incorporated by reference, the department’s 2024 List of Native and Naturalized Fauna of Virginia, where an asterisk marks a naturalized species and two asterisks one native in some areas and naturalized in others. That list carries the eastern gartersnake, Thamnophis sirtalis sirtalis, with no asterisk, so it is a Virginia native and the special permit table never applied to it; the old entry’s reading that the table contains no relevant reptile was accurate and was answering the wrong question. 4VAC15-360-10(A) then caps possession at one individual of any native or naturalized species of amphibian or reptile per physical address, live, for private use and not for sale or export. Per physical address, not per person, so two keepers under one roof share the one. That the cap binds a keeper rather than only a collector is confirmed from the other direction by the domestic animal list in 4VAC15-20-50, which writes an express carve-out for domesticated morphs of red cornsnake visibly distinguishable from native red cornsnakes; that exception would have nothing to do if keeping a native herp were free. The other clause to check is 4VAC15-360-10(A)(6), which bars possessing in any number the red-eared slider and every reptile and amphibian Species of Greatest Conservation Need in Virginia’s Wildlife Action Plan. The common gartersnake is on neither list, so the cap is the whole of it: one snake, one address.",
+          "verifiedOn": "2026-09-16",
+          "quote": "it shall be lawful to capture and possess live for private use and not for sale or export no more than one individual of any native or naturalized, as defined in 4VAC15-20-50, species of amphibian or reptile per physical address"
         },
         "VT": {
           "status": "permit",
@@ -19302,10 +19349,11 @@
         },
         "KS": {
           "status": "legal",
-          "sourceId": "ks-32-1301",
-          "cite": "§ 32-1301(d)",
-          "note": "The only reptiles Kansas regulates are non-native venomous snakes.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-3(a), (b), (d); K.S.A. 32-1002(a)(2)",
+          "note": "The Kansas column was written against K.S.A. 32-1301, the dangerous regulated animal statute, which names six cats, bears and non-native venomous snakes and answers nothing here. The pair that decides a Kansas cell is K.S.A. 32-1002(a)(2), which makes it unlawful to possess any wildlife at all \"unless and except as permitted by law or rules and regulations adopted by the secretary\", and the two regulations that do the permitting. K.A.R. 115-20-3 permits exotic wildlife, and 115-20-3(d) reads exotic as a species not native or indigenous to Kansas and not present here as an established wild population. Kansas has two kingsnakes, the prairie kingsnake Lampropeltis calligaster and the speckled kingsnake Lampropeltis holbrooki, and the Kansas Herpetofaunal Atlas carries neither Lampropeltis californiae nor any other name for the California kingsnake. So the pet-trade animal is not native or indigenous to Kansas and has no established wild population here, which makes it exotic wildlife under 115-20-3(d), possessable without limit in time and number under (b). The two-per-species cap in 115-20-2(e) binds the two Kansas kingsnakes and not this one, which is the distinction the old entry could not draw because it was reading the dangerous regulated animal statute instead.",
+          "verifiedOn": "2026-09-16",
+          "quote": "Exotic wildlife may be possessed without limit in time and number."
         },
         "KY": {
           "status": "legal",
@@ -19518,9 +19566,10 @@
         "VA": {
           "status": "legal",
           "sourceId": "va-4vac15-30-40",
-          "cite": "§ 15-30-40(A)",
-          "note": "Virginia's special-permit table works species by species and contains no reptile relevant to a kingsnake.",
-          "verifiedOn": "2026-08-27"
+          "cite": "4VAC15-30-40(A); 4VAC15-20-50",
+          "note": "Virginia runs two schemes and 4VAC15-20-50 decides which one an animal is in, so the exotic permit table is the wrong rule for anything Virginia already has. A nonnative (exotic) animal is one \"not naturally occurring in Virginia, excluding domestic and naturalized species\", which puts every native and every naturalized species outside 4VAC15-30-40 and inside 4VAC15-360-10. Native and naturalized status is not a judgment call here: it is fixed by a document incorporated by reference, the department’s 2024 List of Native and Naturalized Fauna of Virginia, where an asterisk marks a naturalized species and two asterisks one native in some areas and naturalized in others. Virginia’s own kingsnakes are the eastern kingsnake, Lampropeltis getula, and the eastern black kingsnake, Lampropeltis nigra, and both are on the native list, which means the one-per-address cap in 4VAC15-360-10(A) binds them and the second is on the reptile Species of Greatest Conservation Need list that 4VAC15-360-10(A)(6) closes possession on entirely. The California kingsnake, Lampropeltis californiae, is on neither the native list nor the naturalized one, so it is a nonnative (exotic) animal and the permit table is the right rule for it after all. That table names one snake in the whole of it, the brown tree snake, Boiga irregularis, so no permit is required and no cap applies.",
+          "verifiedOn": "2026-09-16",
+          "quote": "A special permit is required and may be issued by the department, if consistent with the department’s fish and wildlife management program, to import, possess, or sell those nonnative (exotic) animals listed in the following table"
         },
         "VT": {
           "status": "legal",
@@ -19956,8 +20005,8 @@
           "status": "legal",
           "sourceId": "wv-19-34",
           "cite": "§ 19-34-5(c)(2)",
-          "note": "No bird category appears in West Virginia's dangerous-wild-animal guidance at all.",
-          "verifiedOn": "2026-08-27"
+          "note": "No bird category appears in West Virginia's dangerous-wild-animal guidance at all. § 20-2-13 was checked against this cell on the pass that applied it to the whole column, and it does not reach this animal. It bars transporting in or possessing live wildlife from without the state without an importation permit from the director, and § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. \"Wild birds\" expressly excludes psittacidae, commonly called parrots and parakeets, and other foreign cage birds, so no pet parrot is wildlife in West Virginia at all.",
+          "verifiedOn": "2026-09-16"
         },
         "WY": {
           "status": "legal",
@@ -20143,11 +20192,13 @@
           "localOverride": true
         },
         "WV": {
-          "status": "legal",
-          "sourceId": "wv-19-34",
-          "cite": "§ 19-34-5(c)(2)",
-          "note": "The only reptiles the statute points the board at are constrictors over six feet, venomous snakes and crocodilians.",
-          "verifiedOn": "2026-08-27"
+          "status": "permit",
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-2-13; § 20-1-2; § 20-2-4(a), (b)",
+          "note": "West Virginia’s importation section is the rule the rest of this column was written without, and it changes the answer for every exotic reptile and amphibian in it. W. Va. Code § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. The reptile and amphibian clause carries no nativity qualifier and no captive-bred carve-out, so a pet reptile or amphibian bought from an out-of-state breeder is live wildlife from without the state. A red-footed tortoise is a reptile and a South American species, so it is wildlife from without the state on any route into West Virginia. § 20-2-13 then bars both bringing that animal in and having it in possession within the state except under an importation permit from the director, and the permit is discretionary: the director may issue it, fix its terms and revoke it at his pleasure. How firm this is, both ways. § 20-2-4(a) independently makes it unlawful to take, obtain, purchase, possess or maintain in captivity any live wildlife except as the chapter or a rule provides, and § 20-2-4(b) says wildlife lawfully taken outside of this state is subject to the same laws and rules as wildlife taken within it, which closes the argument that an out-of-state origin puts the animal outside the chapter before it is made. Against that, the section is headed importation and certification and the body of it is disease control, fish pathologist certificates and inspection of imported shipments, with the only penalty clause written for coyotes. Nothing in Title 58 implements § 20-2-13 for anything but aquaculture, and WVDNR publishes no application for an importation permit. So this is a statutory permit requirement that is real on paper with its machinery not visibly in place, which is the same shape as the Minnesota breeder condition and is recorded the same way. Neither of West Virginia’s two species lists bars this animal. W. Va. C.S.R. § 74-1-3, the dangerous wild animal list adopted 5 April 2022, is a mammal list plus the Komodo dragon. W. Va. C.S.R. § 58-73 reaches native West Virginia reptiles and amphibians only.",
+          "verifiedOn": "2026-09-16",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "permitFor": "personal"
         },
         "IA": {
           "status": "legal",
@@ -20840,12 +20891,13 @@
           "verifiedOn": "2026-09-05"
         },
         "WV": {
-          "status": "legal",
-          "sourceId": "wv-58-73",
-          "cite": "W. Va. C.S.R. § 58-73-1.1, 58-73-2; W. Va. Code § 20-2-13",
-          "quote": "The take or possession of any native West Virginia reptile or amphibian species not listed hereafter is prohibited pursuant to W. Va. Code 20-2-4.",
-          "note": "West Virginia writes its reptile rule around its own species, and 58-73-2 defines possession for the rule as reptiles or amphibians taken alive or dead from the wild. Neither limb reaches a captive-bred exotic. The dangerous wild animal list adopted in 2022 at W. Va. C.S.R. § 74-1-3 contains one reptile, the Komodo dragon. Worth knowing before shipping one in: § 20-2-13 says no person shall transport into or have in his possession within this state any live wildlife from without the state except as authorized by an importation permit issued by the director, and the definition of wildlife at § 20-1-2 includes reptiles without a nativity qualifier. Pogona vitticeps is Australian and appears on no West Virginia list.",
-          "verifiedOn": "2026-09-05"
+          "status": "permit",
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-2-13; § 20-1-2; § 20-2-4(a), (b)",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "note": "West Virginia’s importation section is the rule the rest of this column was written without, and it changes the answer for every exotic reptile and amphibian in it. W. Va. Code § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. The reptile and amphibian clause carries no nativity qualifier and no captive-bred carve-out, so a pet reptile or amphibian bought from an out-of-state breeder is live wildlife from without the state. A bearded dragon is a reptile and an Australian species, so it is wildlife from without the state on any route into West Virginia. § 20-2-13 then bars both bringing that animal in and having it in possession within the state except under an importation permit from the director, and the permit is discretionary: the director may issue it, fix its terms and revoke it at his pleasure. How firm this is, both ways. § 20-2-4(a) independently makes it unlawful to take, obtain, purchase, possess or maintain in captivity any live wildlife except as the chapter or a rule provides, and § 20-2-4(b) says wildlife lawfully taken outside of this state is subject to the same laws and rules as wildlife taken within it, which closes the argument that an out-of-state origin puts the animal outside the chapter before it is made. Against that, the section is headed importation and certification and the body of it is disease control, fish pathologist certificates and inspection of imported shipments, with the only penalty clause written for coyotes. Nothing in Title 58 implements § 20-2-13 for anything but aquaculture, and WVDNR publishes no application for an importation permit. So this is a statutory permit requirement that is real on paper with its machinery not visibly in place, which is the same shape as the Minnesota breeder condition and is recorded the same way. Neither of West Virginia’s two species lists bars this animal. W. Va. C.S.R. § 74-1-3, the dangerous wild animal list adopted 5 April 2022, is a mammal list plus the Komodo dragon. W. Va. C.S.R. § 58-73 reaches native West Virginia reptiles and amphibians only.",
+          "verifiedOn": "2026-09-16",
+          "permitFor": "personal"
         }
       }
     },
@@ -21269,12 +21321,13 @@
           "verifiedOn": "2026-09-05"
         },
         "WV": {
-          "status": "legal",
-          "sourceId": "wv-58-73",
-          "cite": "W. Va. C.S.R. § 58-73-1.1, 58-73-2; W. Va. Code § 20-2-13",
-          "quote": "The take or possession of any native West Virginia reptile or amphibian species not listed hereafter is prohibited pursuant to W. Va. Code 20-2-4.",
-          "note": "West Virginia writes its reptile rule around its own species, and 58-73-2 defines possession for the rule as reptiles or amphibians taken alive or dead from the wild. Neither limb reaches a captive-bred exotic. The dangerous wild animal list adopted in 2022 at W. Va. C.S.R. § 74-1-3 contains one reptile, the Komodo dragon. Worth knowing before shipping one in: § 20-2-13 says no person shall transport into or have in his possession within this state any live wildlife from without the state except as authorized by an importation permit issued by the director, and the definition of wildlife at § 20-1-2 includes reptiles without a nativity qualifier. Eublepharis macularius is south Asian and appears on no West Virginia list.",
-          "verifiedOn": "2026-09-05"
+          "status": "permit",
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-2-13; § 20-1-2; § 20-2-4(a), (b)",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "note": "West Virginia’s importation section is the rule the rest of this column was written without, and it changes the answer for every exotic reptile and amphibian in it. W. Va. Code § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. The reptile and amphibian clause carries no nativity qualifier and no captive-bred carve-out, so a pet reptile or amphibian bought from an out-of-state breeder is live wildlife from without the state. A leopard gecko is a reptile and a species of Afghanistan, Pakistan, India and Iran, so it is wildlife from without the state on any route into West Virginia. § 20-2-13 then bars both bringing that animal in and having it in possession within the state except under an importation permit from the director, and the permit is discretionary: the director may issue it, fix its terms and revoke it at his pleasure. How firm this is, both ways. § 20-2-4(a) independently makes it unlawful to take, obtain, purchase, possess or maintain in captivity any live wildlife except as the chapter or a rule provides, and § 20-2-4(b) says wildlife lawfully taken outside of this state is subject to the same laws and rules as wildlife taken within it, which closes the argument that an out-of-state origin puts the animal outside the chapter before it is made. Against that, the section is headed importation and certification and the body of it is disease control, fish pathologist certificates and inspection of imported shipments, with the only penalty clause written for coyotes. Nothing in Title 58 implements § 20-2-13 for anything but aquaculture, and WVDNR publishes no application for an importation permit. So this is a statutory permit requirement that is real on paper with its machinery not visibly in place, which is the same shape as the Minnesota breeder condition and is recorded the same way. Neither of West Virginia’s two species lists bars this animal. W. Va. C.S.R. § 74-1-3, the dangerous wild animal list adopted 5 April 2022, is a mammal list plus the Komodo dragon. W. Va. C.S.R. § 58-73 reaches native West Virginia reptiles and amphibians only.",
+          "verifiedOn": "2026-09-16",
+          "permitFor": "personal"
         }
       }
     },
@@ -21698,12 +21751,13 @@
           "verifiedOn": "2026-09-05"
         },
         "WV": {
-          "status": "legal",
-          "sourceId": "wv-58-73",
-          "cite": "W. Va. C.S.R. § 58-73-1.1, 58-73-2; W. Va. Code § 20-2-13",
-          "quote": "The take or possession of any native West Virginia reptile or amphibian species not listed hereafter is prohibited pursuant to W. Va. Code 20-2-4.",
-          "note": "West Virginia writes its reptile rule around its own species, and 58-73-2 defines possession for the rule as reptiles or amphibians taken alive or dead from the wild. Neither limb reaches a captive-bred exotic. The dangerous wild animal list adopted in 2022 at W. Va. C.S.R. § 74-1-3 contains one reptile, the Komodo dragon. Worth knowing before shipping one in: § 20-2-13 says no person shall transport into or have in his possession within this state any live wildlife from without the state except as authorized by an importation permit issued by the director, and the definition of wildlife at § 20-1-2 includes reptiles without a nativity qualifier. Correlophus ciliatus is New Caledonian and appears on no West Virginia list.",
-          "verifiedOn": "2026-09-05"
+          "status": "permit",
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-2-13; § 20-1-2; § 20-2-4(a), (b)",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "note": "West Virginia’s importation section is the rule the rest of this column was written without, and it changes the answer for every exotic reptile and amphibian in it. W. Va. Code § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. The reptile and amphibian clause carries no nativity qualifier and no captive-bred carve-out, so a pet reptile or amphibian bought from an out-of-state breeder is live wildlife from without the state. A crested gecko is a reptile and a New Caledonian species, so it is wildlife from without the state on any route into West Virginia. § 20-2-13 then bars both bringing that animal in and having it in possession within the state except under an importation permit from the director, and the permit is discretionary: the director may issue it, fix its terms and revoke it at his pleasure. How firm this is, both ways. § 20-2-4(a) independently makes it unlawful to take, obtain, purchase, possess or maintain in captivity any live wildlife except as the chapter or a rule provides, and § 20-2-4(b) says wildlife lawfully taken outside of this state is subject to the same laws and rules as wildlife taken within it, which closes the argument that an out-of-state origin puts the animal outside the chapter before it is made. Against that, the section is headed importation and certification and the body of it is disease control, fish pathologist certificates and inspection of imported shipments, with the only penalty clause written for coyotes. Nothing in Title 58 implements § 20-2-13 for anything but aquaculture, and WVDNR publishes no application for an importation permit. So this is a statutory permit requirement that is real on paper with its machinery not visibly in place, which is the same shape as the Minnesota breeder condition and is recorded the same way. Neither of West Virginia’s two species lists bars this animal. W. Va. C.S.R. § 74-1-3, the dangerous wild animal list adopted 5 April 2022, is a mammal list plus the Komodo dragon. W. Va. C.S.R. § 58-73 reaches native West Virginia reptiles and amphibians only.",
+          "verifiedOn": "2026-09-16",
+          "permitFor": "personal"
         }
       }
     },
@@ -22127,12 +22181,13 @@
           "verifiedOn": "2026-09-05"
         },
         "WV": {
-          "status": "legal",
-          "sourceId": "wv-58-73",
-          "cite": "W. Va. C.S.R. § 58-73-1.1, 58-73-2; W. Va. Code § 20-2-13",
-          "quote": "The take or possession of any native West Virginia reptile or amphibian species not listed hereafter is prohibited pursuant to W. Va. Code 20-2-4.",
-          "note": "West Virginia writes its reptile rule around its own species, and 58-73-2 defines possession for the rule as reptiles or amphibians taken alive or dead from the wild. Neither limb reaches a captive-bred exotic. The dangerous wild animal list adopted in 2022 at W. Va. C.S.R. § 74-1-3 contains one reptile, the Komodo dragon. Worth knowing before shipping one in: § 20-2-13 says no person shall transport into or have in his possession within this state any live wildlife from without the state except as authorized by an importation permit issued by the director, and the definition of wildlife at § 20-1-2 includes reptiles without a nativity qualifier. West Virginia has three native skinks, the northern coal, common five-lined and broad-headed, and Tiliqua scincoides is not one of them.",
-          "verifiedOn": "2026-09-05"
+          "status": "permit",
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-2-13; § 20-1-2; § 20-2-4(a), (b)",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "note": "West Virginia’s importation section is the rule the rest of this column was written without, and it changes the answer for every exotic reptile and amphibian in it. W. Va. Code § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. The reptile and amphibian clause carries no nativity qualifier and no captive-bred carve-out, so a pet reptile or amphibian bought from an out-of-state breeder is live wildlife from without the state. A blue-tongue skink is a reptile and an Australian and Indonesian species, so it is wildlife from without the state on any route into West Virginia. § 20-2-13 then bars both bringing that animal in and having it in possession within the state except under an importation permit from the director, and the permit is discretionary: the director may issue it, fix its terms and revoke it at his pleasure. How firm this is, both ways. § 20-2-4(a) independently makes it unlawful to take, obtain, purchase, possess or maintain in captivity any live wildlife except as the chapter or a rule provides, and § 20-2-4(b) says wildlife lawfully taken outside of this state is subject to the same laws and rules as wildlife taken within it, which closes the argument that an out-of-state origin puts the animal outside the chapter before it is made. Against that, the section is headed importation and certification and the body of it is disease control, fish pathologist certificates and inspection of imported shipments, with the only penalty clause written for coyotes. Nothing in Title 58 implements § 20-2-13 for anything but aquaculture, and WVDNR publishes no application for an importation permit. So this is a statutory permit requirement that is real on paper with its machinery not visibly in place, which is the same shape as the Minnesota breeder condition and is recorded the same way. Neither of West Virginia’s two species lists bars this animal. W. Va. C.S.R. § 74-1-3, the dangerous wild animal list adopted 5 April 2022, is a mammal list plus the Komodo dragon. W. Va. C.S.R. § 58-73 reaches native West Virginia reptiles and amphibians only.",
+          "verifiedOn": "2026-09-16",
+          "permitFor": "personal"
         }
       }
     },
@@ -22556,12 +22611,13 @@
           "verifiedOn": "2026-09-05"
         },
         "WV": {
-          "status": "legal",
-          "sourceId": "wv-58-73",
-          "cite": "W. Va. C.S.R. § 58-73-1.1, 58-73-2; W. Va. Code § 20-2-13",
-          "quote": "The take or possession of any native West Virginia reptile or amphibian species not listed hereafter is prohibited pursuant to W. Va. Code 20-2-4.",
-          "note": "West Virginia writes its reptile rule around its own species, and 58-73-2 defines possession for the rule as reptiles or amphibians taken alive or dead from the wild. Neither limb reaches a captive-bred exotic. The dangerous wild animal list adopted in 2022 at W. Va. C.S.R. § 74-1-3 contains one reptile, the Komodo dragon. Worth knowing before shipping one in: § 20-2-13 says no person shall transport into or have in his possession within this state any live wildlife from without the state except as authorized by an importation permit issued by the director, and the definition of wildlife at § 20-1-2 includes reptiles without a nativity qualifier. West Virginia has no native chameleon.",
-          "verifiedOn": "2026-09-05"
+          "status": "permit",
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-2-13; § 20-1-2; § 20-2-4(a), (b)",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "note": "West Virginia’s importation section is the rule the rest of this column was written without, and it changes the answer for every exotic reptile and amphibian in it. W. Va. Code § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. The reptile and amphibian clause carries no nativity qualifier and no captive-bred carve-out, so a pet reptile or amphibian bought from an out-of-state breeder is live wildlife from without the state. A Jackson’s chameleon is a reptile and an East African species, so it is wildlife from without the state on any route into West Virginia. § 20-2-13 then bars both bringing that animal in and having it in possession within the state except under an importation permit from the director, and the permit is discretionary: the director may issue it, fix its terms and revoke it at his pleasure. How firm this is, both ways. § 20-2-4(a) independently makes it unlawful to take, obtain, purchase, possess or maintain in captivity any live wildlife except as the chapter or a rule provides, and § 20-2-4(b) says wildlife lawfully taken outside of this state is subject to the same laws and rules as wildlife taken within it, which closes the argument that an out-of-state origin puts the animal outside the chapter before it is made. Against that, the section is headed importation and certification and the body of it is disease control, fish pathologist certificates and inspection of imported shipments, with the only penalty clause written for coyotes. Nothing in Title 58 implements § 20-2-13 for anything but aquaculture, and WVDNR publishes no application for an importation permit. So this is a statutory permit requirement that is real on paper with its machinery not visibly in place, which is the same shape as the Minnesota breeder condition and is recorded the same way. Neither of West Virginia’s two species lists bars this animal. W. Va. C.S.R. § 74-1-3, the dangerous wild animal list adopted 5 April 2022, is a mammal list plus the Komodo dragon. W. Va. C.S.R. § 58-73 reaches native West Virginia reptiles and amphibians only.",
+          "verifiedOn": "2026-09-16",
+          "permitFor": "personal"
         }
       }
     },
@@ -22932,8 +22988,8 @@
           "sourceId": "va-4vac15-360-10",
           "cite": "§ 15-360-10(A)",
           "quote": "it shall be lawful to capture and possess live for private use and not for sale or export no more than one individual of any native or naturalized, as defined in 4VAC15-20-50, species of amphibian or reptile per physical address",
-          "note": "The exotic permit table is the wrong rule for this animal. Virginia fixes native and naturalized status by an incorporated document, the department's List of Native and Naturalized Fauna of Virginia, and that list carries \"Green Anole * Anolis carolinesis *\", the asterisk denoting a naturalized species. A naturalized animal is expressly excluded from the definition of a nonnative (exotic) animal at 4VAC15-20-50, so 4VAC15-30-40 does not reach it and 4VAC15-360-10 does: one individual per physical address, live, for private use, and not for sale or export. That the cap binds a keeper rather than only a collector is confirmed from the other direction by the domestic animal list, which writes an express carve-out for \"Domesticated morphs of red cornsnake ... visibly distinguishable from native red cornsnakes\"; that exception would have nothing to do if ordinary keeping of a native herp were free.",
-          "verifiedOn": "2026-09-05"
+          "note": "The exotic permit table is the wrong rule for this animal. Virginia fixes native and naturalized status by an incorporated document, the department's List of Native and Naturalized Fauna of Virginia, and that list carries \"Green Anole * Anolis carolinesis *\", the asterisk denoting a naturalized species. A naturalized animal is expressly excluded from the definition of a nonnative (exotic) animal at 4VAC15-20-50, so 4VAC15-30-40 does not reach it and 4VAC15-360-10 does: one individual per physical address, live, for private use, and not for sale or export. That the cap binds a keeper rather than only a collector is confirmed from the other direction by the domestic animal list, which writes an express carve-out for \"Domesticated morphs of red cornsnake ... visibly distinguishable from native red cornsnakes\"; that exception would have nothing to do if ordinary keeping of a native herp were free. Checked against 4VAC15-360-10(A)(6) on this pass as well: that subdivision withholds the private-use allowance from the red-eared slider and from every reptile and amphibian Species of Greatest Conservation Need, and the green anole is on neither, so the one-per-address cap is the whole answer for it.",
+          "verifiedOn": "2026-09-16"
         },
         "IA": {
           "status": "legal",
@@ -22985,12 +23041,13 @@
           "verifiedOn": "2026-09-05"
         },
         "WV": {
-          "status": "legal",
-          "sourceId": "wv-dnr-herps",
-          "cite": "W. Va. C.S.R. § 58-73-1.1; WVDNR lizard checklist",
-          "quote": "Eastern Six-lined Racerunner (Aspidoscelis s. sexlineata) Northern Coal Skink (Plestiodon a. anthracinus) Common Five-lined Skink (Plestiodon fasciatus) Broad-headed Skink (Plestiodon laticeps) Eastern Fence Lizard (Sceloporus undulatus) Little Brown Skink (Scincella lateralis)",
-          "note": "The nativity question decides this one, because 58-73-1.1 prohibits possessing native species that are not on the takeable list and no lizard at all is on that list. The department own checklist says West Virginia is home to 6 species of lizards and names them, and Anolis carolinensis is not among the six. So the rule does not reach it and the 2022 dangerous wild animal list does not either. The § 20-2-13 importation permit for live wildlife brought in from out of state applies here as it does to any reptile.",
-          "verifiedOn": "2026-09-05"
+          "status": "permit",
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. Code § 20-2-13; § 20-1-2; § 20-2-4(a), (b)",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "note": "West Virginia’s importation section is the rule the rest of this column was written without, and it changes the answer for every exotic reptile and amphibian in it. W. Va. Code § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. The reptile and amphibian clause carries no nativity qualifier and no captive-bred carve-out, so a pet reptile or amphibian bought from an out-of-state breeder is live wildlife from without the state. A green anole is a reptile, and the WVDNR checklist of the state’s six lizards names the eastern six-lined racerunner, the northern coal skink, the common five-lined skink, the broad-headed skink, the eastern fence lizard and the little brown skink, with no anole among them, so § 58-73’s native bar does not reach it and the importation permit does. § 20-2-13 then bars both bringing that animal in and having it in possession within the state except under an importation permit from the director, and the permit is discretionary: the director may issue it, fix its terms and revoke it at his pleasure. How firm this is, both ways. § 20-2-4(a) independently makes it unlawful to take, obtain, purchase, possess or maintain in captivity any live wildlife except as the chapter or a rule provides, and § 20-2-4(b) says wildlife lawfully taken outside of this state is subject to the same laws and rules as wildlife taken within it, which closes the argument that an out-of-state origin puts the animal outside the chapter before it is made. Against that, the section is headed importation and certification and the body of it is disease control, fish pathologist certificates and inspection of imported shipments, with the only penalty clause written for coyotes. Nothing in Title 58 implements § 20-2-13 for anything but aquaculture, and WVDNR publishes no application for an importation permit. So this is a statutory permit requirement that is real on paper with its machinery not visibly in place, which is the same shape as the Minnesota breeder condition and is recorded the same way. Neither of West Virginia’s two species lists bars this animal. W. Va. C.S.R. § 74-1-3, the dangerous wild animal list adopted 5 April 2022, is a mammal list plus the Komodo dragon. W. Va. C.S.R. § 58-73 reaches native West Virginia reptiles and amphibians only.",
+          "verifiedOn": "2026-09-16",
+          "permitFor": "personal"
         }
       }
     },
@@ -23419,8 +23476,8 @@
           "sourceId": "wv-20-1-2",
           "cite": "W. Va. Code § 20-1-2",
           "quote": "\"Wild animals\" means all mammals native to the State of West Virginia occurring either in a natural state or in captivity, except house mice or rats, and includes coyotes and porcupines and all species of cervids.",
-          "note": "Native to the State of West Virginia is the whole test for a mammal here, and the European rabbit is not. The state own rabbits are in the game animal definition in the same section, which reads the cottontail rabbits and hares, and Oryctolagus cuniculus is neither. Nothing on the 2022 dangerous wild animal list is a lagomorph.",
-          "verifiedOn": "2026-09-05"
+          "note": "Native to the State of West Virginia is the whole test for a mammal here, and the European rabbit is not. The state own rabbits are in the game animal definition in the same section, which reads the cottontail rabbits and hares, and Oryctolagus cuniculus is neither. Nothing on the 2022 dangerous wild animal list is a lagomorph. § 20-2-13 was checked against this cell on the pass that applied it to the whole column, and it does not reach this animal. It bars transporting in or possessing live wildlife from without the state without an importation permit from the director, and § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. \"Wild animals\" is defined in the same section as all mammals native to the State of West Virginia, so a species that lives nowhere in West Virginia is not a wild animal and is nothing else on the list either.",
+          "verifiedOn": "2026-09-16"
         }
       }
     },
@@ -23848,8 +23905,8 @@
           "sourceId": "wv-20-1-2",
           "cite": "W. Va. Code § 20-1-2",
           "quote": "\"Wildlife\" means wild birds, wild animals, game and fur-bearing animals, fish (including minnows), reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait, whether dead or alive.",
-          "note": "The definition stops short of a terrestrial arthropod. It picks up mollusks and crustaceans and then anything else only if it is aquatic life used as fish bait, so a cockroach is outside wildlife and outside the § 20-2-4 possession bar. It is not on the dangerous wild animal list at W. Va. C.S.R. § 74-1-3, which contains no invertebrate.",
-          "verifiedOn": "2026-09-05"
+          "note": "The definition stops short of a terrestrial arthropod. It picks up mollusks and crustaceans and then anything else only if it is aquatic life used as fish bait, so a cockroach is outside wildlife and outside the § 20-2-4 possession bar. It is not on the dangerous wild animal list at W. Va. C.S.R. § 74-1-3, which contains no invertebrate. § 20-2-13 was checked against this cell on the pass that applied it to the whole column, and it does not reach this animal. It bars transporting in or possessing live wildlife from without the state without an importation permit from the director, and § 20-1-2 builds wildlife out of wild birds, wild animals, game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and all forms of aquatic life used as fish bait. No terrestrial arthropod appears anywhere in it: the invertebrates it reaches are mollusks, crustaceans and aquatic bait life.",
+          "verifiedOn": "2026-09-16"
         }
       }
     }

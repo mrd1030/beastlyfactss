@@ -257,20 +257,74 @@ state that codifies by version. And confirm the citation itself still resolves.
 
 ## Next up
 
-Status 2026-09-16: priority 4 is moot for now, every `verifiedOn` on the map is August or September 2026. Priorities 1 to 3 are still open.
+Status 2026-09-16, second sitting: priorities 1, 2 and 3 are DONE and are recorded in Loose ends below. Priority 4 is moot for now, every `verifiedOn` on the map is August or September 2026. The table below is what is left.
 
-No unread cells. What is left is auditing, and the three items worth doing first all come out of
-the last sitting, where reading past the first rule changed answers in three states at once.
+No unread cells. What is left is auditing. The three items that headed this table on 16 September
+are finished and written up below; these four are what the Kansas, West Virginia and Virginia pass
+turned up on its way through.
 
 | Priority | Where | What to do |
 |---|---|---|
-| 1 | Kansas, every native reptile and amphibian cell | The Kansas column was written against K.S.A. 32-1301 alone. The operative pair is K.S.A. 32-1002(a)(2), which bars possessing any wildlife unless a regulation permits it, and K.A.R. 115-20-2 and 115-20-3, which are the permissions. 115-20-2(b)(13) allows taking "reptiles, except common snapping turtles and soft-shelled turtles", so the Kansas snapping turtle is NOT on the takeable list, and 115-20-2(e) caps native reptiles at two of any one species per person or domicile. The existing Kansas entries for the snapping turtle, box turtle, garter snake, kingsnake, hognose snake, corn snake, milk snake and tiger salamander mention none of this. Cached in `KS-ks-exotic-and-native.txt` |
-| 2 | West Virginia, every exotic cell | § 20-2-13 says no person shall transport into or have in his possession within this state any live wildlife from without the state except under an importation permit from the director, and § 20-1-2 defines wildlife to include reptiles with no nativity qualifier. On its face that reaches a bearded dragon shipped from a breeder. The nine cells written in the last sitting treat it as an importation requirement and say so in the note; the other 43 West Virginia cells do not mention it at all. Decide once whether it changes a status, then apply that decision to the whole column |
-| 3 | Virginia, the native herp cells | Carried over from the Washington and Virginia sitting and still open. 4VAC15-360-10(A) caps native and naturalized reptiles and amphibians at one per physical address, and the existing garter snake, corn snake, milk snake and box turtle entries rest on the exotic permit table alone. The Virginia DWR list incorporated by reference stars naturalized species, and the green anole is starred |
-| 4 | Anything with a `verifiedOn` older than a year | The oldest entries on the map now predate several of the rewrites found during this work: Arkansas's codebook, Louisiana's January 2025 reptile rule, New Hampshire's April 2026 readoption, West Virginia's April 2022 board list, North Dakota's April 2026 category amendments. A pass sorted by `verifiedOn` is the cheapest way to find the next stale one |
+| 1 | Every exotic reptile and amphibian cell in a state whose wildlife definition has no nativity limit | West Virginia's § 20-2-13 turned 22 cells from `legal` to `permit` in one pass, because "wildlife" there names reptiles and amphibians with no nativity qualifier and the importation section bars possessing as well as transporting. That shape is not unique to West Virginia. Any state whose importation or possession statute reaches "wildlife" as a defined term, rather than reaching a species list, wants the same read. Start by grepping the cached sources for "from without the state" and for importation permits attached to a class-wide definition |
+| 2 | The `unclear` cells that turn on whether an introduced species counts as native | The West Virginia red-eared slider was left `unclear` because WVDNR publishes the turtle under a native-species heading and the animal's natural range stops well west of the state, and no West Virginia text separates native from established. Virginia has the same fact and answers it in terms, with an asterisk on its incorporated list. Worth a pass to find which other states settle nativity in a document and which leave it to the reader |
+| 3 | Anything with a `verifiedOn` older than a year | The oldest entries on the map now predate several of the rewrites found during this work: Arkansas's codebook, Louisiana's January 2025 reptile rule, New Hampshire's April 2026 readoption, West Virginia's April 2022 board list, North Dakota's April 2026 category amendments. A pass sorted by `verifiedOn` is the cheapest way to find the next stale one |
+| 4 | One wrong sentence left in a note | The rosy boa's Virginia note says "No snake appears on Virginia's special permit table at all", which is wrong: 4VAC15-30-40 names one, the brown tree snake. The status is right either way, so nothing turns on it. The same sentence was in the corn snake and milk snake cells and was rewritten there on 16 September 2026; the rosy boa cell was out of scope that sitting and still carries it |
 
 ## Loose ends
 
+- **Kansas answers a native herp in three regulations and the famous one is none of them. Priority 1
+  is done and it moved nine cells.** K.S.A. 32-1301, the dangerous regulated animal statute the whole
+  Kansas column had been written against, names six cats, bears and non-native venomous snakes.
+  K.S.A. 32-1002(a)(2) bars possessing any wildlife unless a regulation permits it, K.A.R. 115-20-3
+  permits exotics and defines exotic at (d) as not native to Kansas, and K.A.R. 115-20-2 permits the
+  state's own. Three things fall out of 115-20-2 and each one moved cells. Its subsection (b)
+  excludes anything listed in K.A.R. 115-15-1 or 115-15-2, and 115-15-2(a)(4) names BOTH hognose
+  snakes, so the pet hognose is `banned` on the flying squirrel chain with the same 1 January 1990
+  grandfather. Its (b)(13) excludes the common snapping turtle and the softshells, which are not
+  prohibited but handed to K.A.R. 115-7-5, where subsection (d) requires a Kansas fishing license to
+  take one, so that cell is `permit`. And its (e) caps a native reptile at two of any one species
+  and five reptiles per person or domicile, and the amphibians at five in total, which made the box
+  turtle, gartersnake, milksnake, red-eared slider and tiger salamander `conditional`. The corn snake
+  and the California kingsnake turned out not to be Kansas animals at all, so they stay `legal` and
+  moved from 32-1301 to 115-20-3. Nativity was settled from the Kansas Herpetofaunal Atlas, whose
+  SINC marks match 115-15-2 name for name. The one thing Kansas has never closed: 32-1002(a)(3) bars
+  purchasing any wildlife in the state unless a regulation permits it, 115-20-2 permits taking only
+  on a noncommercial basis, and 32-1002(b) lifts the bar for animals "legally taken outside this
+  state" without saying what that means for one bred in captivity out of state.
+- **West Virginia's importation section is a possession bar, and it decided 44 cells at once.**
+  Priority 2 is done. § 20-2-13 bars transporting in OR having in possession within the state any
+  live wildlife from without the state except under an importation permit from the director, and
+  § 20-1-2 names reptiles and amphibians as wildlife with no nativity qualifier, no captive-bred
+  carve-out and no pet exception. § 20-2-4(b) closes the out-of-state argument in advance. So every
+  exotic reptile and amphibian cell is `permit` now with permitFor "personal", 22 of them. What does
+  NOT move is anything the definition misses, and the definition misses plenty: "wild animals" is
+  limited to mammals native to West Virginia, "wild birds" expressly excludes psittacidae and other
+  foreign cage birds, and no terrestrial arthropod is in the section at all. Those 21 cells keep
+  `legal` and carry a note saying the section was checked and why it misses them. Against the call:
+  the section is headed importation and certification, its body is disease control, its only penalty
+  clause is about coyotes, no rule in Title 58 implements it outside aquaculture, and WVDNR publishes
+  no application. It is a permit requirement real on paper with its machinery not visibly in place,
+  which is the Minnesota shape, and every note says so. Also settled: the tiger salamander is not a
+  West Virginia animal, its Ambystoma list is barbouri, jeffersonianum, maculatum, opacum and
+  texanum. The red-eared slider is the one cell left `unclear`, and it is priority 2 above.
+- **Virginia's one-per-address cap is not the harshest thing in 4VAC15-360-10, and the subdivision
+  under it bars three animals outright.** Priority 3 is done. The cap in (A) applies "unless
+  specifically listed in this subsection", and two subdivisions list herps. (A)(5) gives the snapping
+  turtle a season of 1 June to 30 September, a daily five and a 13-inch minimum curved-line carapace,
+  so that cell is `conditional` on numbers of its own rather than on the cap. (A)(6) says the
+  red-eared slider and every reptile and amphibian Species of Greatest Conservation Need "may not be
+  taken or possessed in any number for private use", which is the allowance withheld rather than
+  lowered: the woodland box turtle, the eastern tiger salamander and the red-eared slider are all
+  `banned` now, the last of the three named in the rule by common name. The gartersnake, corn snake
+  and milksnake are `conditional` on the one-per-address cap. Two things worth carrying forward.
+  The corn snake splits on appearance rather than on origin, because 4VAC15-20-50's closed domestic
+  animal list clears "Domesticated morphs of red cornsnake visibly distinguishable from native red
+  cornsnakes", which puts a morph outside the scheme entirely and leaves a normal-phase animal
+  capped at one. And the permit table at 4VAC15-30-40 operates only on nonnative animals, so a
+  family-wide row on it never reaches a Virginia native; reading the tiger salamander off the
+  Ambystomatidae row is how it sat here as a permit animal when it is barred. The regulation names
+  the 2015 Wildlife Action Plan and DWR now publishes the list as revised for 2025, so the note says
+  which was read.
 - **West Virginia bans its own snakes and lizards, and the map said the opposite for six of them
   until the last sitting.** W. Va. C.S.R. § 58-73-1.1: "The take or possession of any native West
   Virginia reptile or amphibian species not listed hereafter is prohibited pursuant to W. Va. Code

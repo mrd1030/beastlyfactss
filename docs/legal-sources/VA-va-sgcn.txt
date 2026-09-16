@@ -1,0 +1,115 @@
+SOURCE: Virginia: 4VAC15-360-10 in full, and the DWR Species of Greatest Conservation Need lists for reptiles and amphibians
+URL: https://law.lis.virginia.gov/admincode/title4/agency15/chapter360/section10/ and https://dwr.virginia.gov/wildlife/wildlife-action-plan/species-of-greatest-conservation-need/
+FETCHED: 2026-09-16 (law.lis.virginia.gov serves one section per page to plain curl. The SGCN lists are per-group PDFs linked off the page above, e.g. 2025-SGCN-Reptiles.pdf and 2025-SGCN-Amphibians.pdf under /wp-content/uploads/media/.)
+
+READ THIS WITH VA-va-two-schemes.txt. That file explains the split: 4VAC15-20-50 puts native and
+naturalized animals outside the exotic permit table and inside chapter 360. What it stops short of
+is the rest of 4VAC15-360-10(A), and the subdivisions are where three cells are actually decided.
+
+FIRST. The one-per-physical-address cap in the opening sentence applies "unless specifically
+listed in this subsection". Two subdivisions list herps, and they go opposite ways.
+
+  (A)(5) gives the SNAPPING TURTLE its own numbers instead of the cap: a daily limit of five, a
+  season of 1 June to 30 September, a minimum curved-line carapace length of 13 inches, and no
+  taking from the banks or waters of designated stocked trout waters. The size floor is the part
+  that reaches a keeper, because it rules out a hatchling.
+
+  (A)(6) withholds the private-use allowance entirely: "The following species may not be taken or
+  possessed in any number for private use: red-eared slider and all reptile and amphibian Species
+  of Greatest Conservation Need designated in Virginia's 2015 Wildlife Action Plan." IN ANY NUMBER.
+  This is not the cap set lower, it is the permission removed, and with it removed nothing permits
+  possession of what 4VAC15-20-50 defines as a wild animal.
+
+SECOND. The red-eared slider is named by common name, and it is naturalized rather than native:
+the incorporated list prints "Red-eared Slider * Trachemys scripta elegans *". Naturalized is
+expressly excluded from "nonnative (exotic) animal", so the permit table never reached it and
+(A)(6) does. Virginia's own two sliders, the Cumberland and the yellow-bellied, are on the SGCN
+list and are barred by the same subdivision.
+
+THIRD. The SGCN list is a moving document cited by a fixed date. The regulation names the 2015
+Wildlife Action Plan; DWR now publishes the list as revised for the 2025 Action Plan and says on
+its own page that the 2025 rankings were built from the 2015 ones. The three species this settles
+are on both.
+
+  Reptile SGCN, from 2025-SGCN-Reptiles.pdf, the whole list: Clemmys muhlenbergii (bog turtle, Ia),
+  Crotalus horridus Coastal Plain pop (canebrake rattlesnake, Ia), Farancia erytrogramma
+  erytrogramma (IIIa), Thamnophis saurita saurita (common ribbonsnake, IVa), Trachemys scripta
+  troostii (Cumberland slider, IIIc), Lampropeltis nigra (eastern black kingsnake, IIIc),
+  TERRAPENE CAROLINA CAROLINA (woodland box turtle, IIIa), Deirochelys reticularia reticularia
+  (Ia), Ophisaurus ventralis (IIa), HETERODON PLATIRHINOS (eastern hog-nosed snake, IIIc),
+  Ophisaurus attenuatus longicaudus (IIIa), Regina rigida rigida (Ic), Chelonia mydas (Ia),
+  Lepidochelys kempii (Ia), Dermochelys coriacea (Ib), Caretta caretta (Ia), Virginia valeriae
+  pulchra (IIc), Malaclemys terrapin terrapin (IIa), Graptemys geographica (IVa), Pituophis
+  melanoleucus melanoleucus (Ia), Lampropeltis elapsoides (scarlet kingsnake, IIIc), Cemophora
+  coccinea copei (IVa), Opheodrys vernalis (IIIa), Tantilla coronata (IVa), Apalone spinifera
+  spinifera (IVa), Clemmys guttata (IIIa), Glyptemys insculpta (Ia), Trachemys scripta scripta
+  (yellow-bellied slider, IVb).
+
+  Amphibian SGCN relevant here: AMBYSTOMA TIGRINUM (eastern tiger salamander, Ia, the top tier),
+  with Ambystoma mabeei and Ambystoma talpoideum also listed.
+
+  NOT on either list, so capped at one per address rather than barred: Thamnophis sirtalis,
+  Pantherophis guttatus, Lampropeltis triangulum, Chelydra serpentina (which has its own numbers
+  under (A)(5)), Anolis carolinensis. No Anolis, Sceloporus, Plestiodon or Scincella appears on
+  the reptile list at all.
+
+Several SGCN entries name the conservation action as "Continue maintaining 'no possession'
+regulations (5.1.4)", which is the department describing 4VAC15-360-10(A)(6) from the other side.
+That is the best confirmation available that the subdivision is read as a possession bar rather
+than as a collecting rule.
+
+FOURTH, and this is the one that is easy to miss. The permit table at 4VAC15-30-40 operates only
+on nonnative (exotic) animals, so a family-wide row on it stops at the Virginia border of the
+family. "Ambystomatidae All species, except Ambystoma mexicanum" reaches the mole salamanders
+Virginia does not have and does NOT reach A. tigrinum, A. maculatum or A. opacum, which are on the
+native list. Reading a Virginia native off that table is how the tiger salamander sat here as a
+permit animal when it is barred outright.
+
+
+==== 4VAC15-360-10(A), the operative subsection ====
+
+A. Possession limits. Except as otherwise provided for in § 29.1-418 of the Code of Virginia,
+4VAC15-20-130, 4VAC15-320-40, and this chapter, it shall be lawful to capture and possess live for
+private use and not for sale or export no more than one individual of any native or naturalized, as
+defined in 4VAC15-20-50, species of amphibian or reptile per physical address, and 20 individuals
+of any single native or naturalized, as defined in 4VAC15-20-50, species of aquatic invertebrate
+and nongame fish unless specifically listed in this subsection:
+
+  ... 5. The daily limit for bullfrogs shall be 15 and for snapping turtles shall be five. Snapping
+  turtles shall only be taken from June 1 to September 30 and must have a minimum curved-line
+  carapace length of 13 inches. Bullfrogs and snapping turtles may not be taken from the banks or
+  waters of designated stocked trout waters.
+
+  6. The following species may not be taken or possessed in any number for private use: red-eared
+  slider and all reptile and amphibian Species of Greatest Conservation Need designated in
+  Virginia's 2015 Wildlife Action Plan.
+
+  7. Native amphibians and reptiles, as defined in 4VAC15-20-50, that are captured within the
+  Commonwealth and possessed live for private use and not for sale may be liberated under the
+  following conditions: a. Period of captivity does not exceed 30 days; b. Animals must be
+  liberated at the site of capture; c. Animals must have been housed separately from other
+  wild-caught and domestic animals; and d. Animals that demonstrate symptoms of disease or illness
+  or that have sustained injury during their captivity may not be released.
+
+  8. Native or naturalized amphibians and reptiles, as defined in 4VAC15-20-50, may not be taken or
+  possessed in any number from state or federal land without an appropriate permit or license.
+
+
+==== The entries from the incorporated list that decide the cells here ====
+
+Eastern Gartersnake   Thamnophis sirtalis sirtalis        (native, no asterisk)
+Red Cornsnake         Pantherophis guttatus               (native, no asterisk)
+Eastern Milksnake     Lampropeltis triangulum             (native, no asterisk)
+Eastern Kingsnake     Lampropeltis getula                 (native, no asterisk)
+Eastern Black Kingsnake Lampropeltis nigra                (native, no asterisk; also SGCN)
+Eastern Hog-nosed Snake Heterodon platirhinos             (native, no asterisk; also SGCN)
+Woodland Box Turtle   Terrapene carolina carolina         (native, no asterisk; also SGCN)
+Snapping Turtle       Chelydra serpentina                 (native, no asterisk)
+Eastern Tiger Salamander Ambystoma tigrinum               (native, no asterisk; also SGCN)
+Green Anole *         Anolis carolinesis *                (naturalized; the PDF misspells it)
+Red-eared Slider *    Trachemys scripta elegans *         (naturalized; named in (A)(6))
+Yellow-bellied Slider** Trachemys scripta scripta**       (native in some areas, naturalized in others)
+
+Absent from the list entirely, so nonnative (exotic) and answered by the permit table instead:
+Heterodon nasicus, Lampropeltis californiae. The permit table's whole Squamata entry is one snake,
+Boiga irregularis, the brown tree snake.

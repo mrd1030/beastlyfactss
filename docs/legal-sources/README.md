@@ -91,9 +91,11 @@ about this species", not to claim a new verification date.
 | `MT-mt-exotic-wildlife.txt` | Montana's white list: the three definitions, the statutory herp clearance, and the three rule lists, one of which prohibits the southern flying squirrel by binomial |
 | `WA-wa-wildlife-definitions.txt` | Washington's geographic qualifier, "exist in Washington in a wild state", the designated deleterious exotic list, and the live wildlife rule the qualifier keeps an exotic out of |
 | `VA-va-two-schemes.txt` | Virginia's two schemes and the definition that decides which one applies, the whole exotic permit table for mammals and reptiles, and the one-per-address cap on native and naturalized herps |
+| `VA-va-sgcn.txt` | The rest of 4VAC15-360-10(A), which the two-schemes file stops short of: the snapping turtle's own season and size, the subdivision that withholds possession outright, and the Species of Greatest Conservation Need lists it turns on |
 | `IA-ia-wildlife-and-dangerous.txt` | Iowa's two anchors to the state itself, "found in this state" and a definition of game drawn by family, plus the whole 717F dangerous wild animal list that answers none of the tail |
 | `DC-dc-8-1808.txt` | The District's seven permitted categories in full, the one place in the country where the whole of a jurisdiction's pet law fits on a page |
 | `KS-ks-exotic-and-native.txt` | Kansas closed system: a definition of wildlife that says arthropod, a bar on possessing any of it, and the two regulations that permit it back, one for exotics and one for natives with caps |
+| `KS-ks-115-7-5.txt` | The three pieces that decide which Kansas native lands where: the fishing rule the snapping turtle was carved out into, the license exemption for a lawfully acquired animal, and the two species lists 115-20-2 excludes |
 | `MS-ms-nongame-in-need.txt` | Mississippi's nongame wildlife in need of management rule, the one that answers natives, with the green anole and the southern flying squirrel named on it and the licence and caps that follow |
 | `ND-nd-nontraditional-livestock.txt` | The North Dakota category system, which is alive at article 48.1-09 and not repealed, plus the importation rule and the catch-all board review for anything in no category |
 | `SD-sd-nondomestic-mammals.txt` | South Dakota's one-word answer: the statute bars nondomestic MAMMALS, so reptiles and invertebrates are outside the scheme entirely, and the entry permit is free and by telephone |
@@ -261,6 +263,29 @@ Several of these are PDFs whose text extracts badly. The tricks that work:
   Regulation 123-151.4(I) says that section "does not privilege" a native reptile, and the 2021 rules
   take over. 123-151.3(A) then bars selling, buying, trading, exporting and re-homing any native
   reptile, with twelve exceptions that are mostly named snakes under a length limit.
+- **`KS-ks-115-7-5.txt`** is the file to read before recording anything for a Kansas native herp,
+  because Kansas answers that question in three regulations and the famous one is not any of them.
+  K.S.A. 32-1301 is a dangerous-animal statute naming six cats, bears and non-native venomous
+  snakes; the chain that decides a pet is K.S.A. 32-1002(a)(2) plus K.A.R. 115-20-3 for exotics and
+  115-20-2 for natives. Three traps in order: 115-20-2(b) excludes anything on K.A.R. 115-15-1 or
+  115-15-2, which is what bans the hognose; 115-20-2(b)(13) excludes the snapping turtle and the
+  softshells, which are handed to K.A.R. 115-7-5 and a fishing license rather than prohibited; and
+  115-20-2(e) caps a native reptile at two of the species and five reptiles per person or domicile,
+  which is the part every earlier Kansas entry missed. Nativity comes from the Kansas Herpetofaunal
+  Atlas at `webapps.fhsu.edu/ksherp/`, whose group index pages (`account.aspx?o=<order>&t=0`)
+  separate established from not-yet-established taxa and whose SINC marks match 115-15-2 name for
+  name. The landing page lists only part of each group, so fetch the index page, not the default.
+- **`VA-va-sgcn.txt`** exists because 4VAC15-360-10(A) does not stop at its first sentence. The
+  one-per-physical-address cap applies "unless specifically listed in this subsection", and
+  subdivision 5 gives the snapping turtle a season, a daily five and a 13-inch minimum instead,
+  while subdivision 6 withholds private possession "in any number" from the red-eared slider by
+  name and from every reptile and amphibian Species of Greatest Conservation Need. Check a Virginia
+  native against the SGCN lists before recording a cap: the woodland box turtle, the eastern
+  hog-nosed snake and the eastern tiger salamander are all barred rather than capped. The
+  regulation names the 2015 Wildlife Action Plan and DWR publishes the list as revised for 2025,
+  so say which one you read. And remember the permit table at 4VAC15-30-40 operates only on
+  nonnative animals, so a family row on it never reaches a Virginia native, which is how the tiger
+  salamander sat here on an Ambystomatidae row that cannot touch it.
 - **`CO-co-cpw-species-list.txt`** is parsed into two-line records, the species then its
   determination, so grep with `-A1`:
   `grep -A1 -i 'testudo horsfieldii' docs/legal-sources/CO-co-cpw-species-list.txt`

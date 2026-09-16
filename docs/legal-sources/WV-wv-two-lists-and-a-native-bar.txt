@@ -202,3 +202,58 @@ Eastern Painted Turtle (Chrysemys p. picta) Spotted Turtle (Clemmys guttata) Woo
 (Grapetemys ouachitensis) Eastern River Cooter (Pseudemys c. concinna) Northern Red-bellied
 Cooter (Pseudemys rubriventris) Eastern Musk Turtle (Sternotherus odoratus) Woodland Box Turtle
 (Terrapene c. carolina) Red-eared Slider (Trachemys scripta elegans)
+
+
+==== ADDED 2026-09-16: the § 20-2-13 loose end above is now decided ====
+
+The THIRD item at the top of this file is closed. The whole West Virginia column was audited
+against § 20-2-13 on 16 September 2026 and the decision is that it DOES change the bucket, so
+every exotic reptile and amphibian cell reads `permit` rather than `legal`, with permitFor
+"personal".
+
+What decided it. The section is a possession bar and not only a transport formality: "have in his
+possession within this state" is continuing language, and "wildlife" at § 20-1-2 names reptiles and
+amphibians with no nativity qualifier, no captive-bred carve-out and no pet exception. § 20-2-4(a)
+independently bars taking, obtaining, purchasing, possessing or maintaining in captivity any live
+wildlife except as the chapter or a rule provides, and § 20-2-4(b) closes the out-of-state argument
+in advance: "Wildlife lawfully taken outside of this state is subject to the same laws and rules as
+wildlife taken within this state." Chapter 20 writes species-level exclusions where it means them,
+and it wrote two, both in the definitions: "wild birds" expressly excludes psittacidae and other
+foreign cage birds, and "wild animals" is limited to mammals native to West Virginia. Reptiles and
+amphibians got neither.
+
+What cuts the other way, and belongs in every note. The section is headed importation and
+certification and its body is disease control, with the only penalty clause written for coyotes.
+Nothing in Title 58 implements it outside aquaculture: a search of the Code of State Rules title
+list turns up Aquaculture Importation and no wildlife importation rule. WVDNR publishes no
+application for an importation permit, and a site search for "importation" returns the fishing
+regulations and a job posting. So this is a statutory permit requirement that is real on paper with
+its machinery not visibly in place, which is the Minnesota shape, and the notes say so.
+
+WHAT IT REACHES. Work from § 20-1-2, not from the animal. Wildlife is wild birds, wild animals,
+game and fur-bearing animals, fish, reptiles, amphibians, mollusks, crustaceans and aquatic bait
+life. So:
+  IN:  every reptile and every amphibian, native or not.
+  OUT: every mammal that is not native to West Virginia, because "wild animals" is defined as all
+       mammals native to the State. The hedgehog, ferret, sugar glider, hamster, gerbil, Bengal
+       cat, prairie dog, capybara, fennec fox, serval, chinchilla, guinea pig, degu and European
+       rabbit are all outside the chapter on that clause.
+  OUT: every pet parrot, because "wild birds" excludes "psittacidae, commonly called parrots and
+       parakeets" and "other foreign cage birds such as the common canary, exotic finches and ring
+       dove".
+  OUT: every terrestrial arthropod. The invertebrates in the definition are mollusks, crustaceans
+       and aquatic bait life.
+Those cells keep `legal` and carry a note saying § 20-2-13 was checked and why it misses them.
+
+THE ONE CELL THAT STAYED GREY. The red-eared slider is `unclear`, because nativity is itself the
+question there and both answers are restrictive. WVDNR publishes its turtle checklist under a
+native-species heading and Trachemys scripta elegans is the last name on it, which on the reading
+the six banned native snakes and the box turtle rest on would put it inside § 58-73-1.1. Read as
+introduced instead, which its natural range supports, it is an exotic reptile and § 20-2-13
+applies. Banned on one branch and permit on the other, and no West Virginia text separates native
+from established.
+
+Also settled on the same pass: the tiger salamander is NOT a West Virginia animal. The department's
+own salamander list runs to 34 species and its Ambystoma entries are barbouri, jeffersonianum,
+maculatum, opacum and texanum. Ambystoma tigrinum is not among them, so § 58-73 does not reach it
+and § 20-2-13 does.

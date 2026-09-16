@@ -1,0 +1,98 @@
+SOURCE: Kansas: K.A.R. 115-7-5 (bullfrogs and turtles), K.A.R. 115-9-7 (license exemptions), K.A.R. 115-15-1 and 115-15-2 (the two species lists 115-20-2 excludes)
+URL: https://www.law.cornell.edu/regulations/kansas/K-A-R-115-7-5 and https://www.law.cornell.edu/regulations/kansas/K-A-R-115-9-7
+FETCHED: 2026-09-16 (Cornell LII, plain curl. www.ksrevisor.gov still serves a bot-check loader under a 200 and ksoutdoors.gov is still Akamai-blocked to this container. The live K.S.A. 32-701, 32-1002 and K.A.R. 115-20-2 and 115-20-3 text was refetched the same day and is word for word identical to KS-ks-exotic-and-native.txt.)
+
+READ THIS WITH KS-ks-exotic-and-native.txt. That file explains the closed system: K.S.A.
+32-1002(a)(2) bars possessing any wildlife unless a regulation permits it, 115-20-3 permits
+exotics, 115-20-2 permits natives. This file carries the three pieces that decide which Kansas
+native lands where.
+
+FIRST. The snapping turtle carve-out in 115-20-2(b)(13) is not a prohibition, it is a handoff.
+Kansas files the common snapping turtle and the two soft-shelled turtles under FISHING, which is
+why they are struck from the reptile clause. K.A.R. 115-7-5(d): "A valid Kansas fishing license
+shall be required to take common snapping turtles and soft-shelled turtles." The bag and
+possession limits for them live in the fishing regulations rather than in Article 20, so the
+two-per-species reptile cap in 115-20-2(e) never applies to a snapping turtle. If a Kansas entry
+says a native reptile is outside 115-20-2, check Article 7 before concluding nothing permits it.
+
+SECOND. Possession and taking are licensed separately. K.A.R. 115-9-7 lists fifteen activities
+that need no hunting or fishing license, and subsection (i) is "possession of wildlife that was
+legally acquired by the individual", with (h) covering donated wildlife. So the hunting license
+that 115-20-2 implies for taking a native reptile, by exempting only invertebrates at (i), does
+not attach to keeping a bought one. The caps do.
+
+THIRD. The exclusion in 115-20-2(b) is the trap, and the two lists it points at are short enough
+to check. 115-15-1 names three reptiles (broad-headed skink, checkered gartersnake, New Mexico
+threadsnake) and one turtle (northern map turtle) as threatened, and two salamanders as
+endangered. 115-15-2 names nine reptiles as nongame species in need of conservation, BOTH hognose
+snakes among them, plus one turtle (alligator snapping turtle) and three amphibians. A Kansas
+native on either list is outside 115-20-2 and outside 115-20-3, and 115-15-3 is written for
+threatened and endangered wildlife rather than for the nongame tier, so there is no permit route.
+That chain bans the pet hognose in Kansas exactly as it bans the flying squirrel.
+
+Nativity is settled from the Kansas Herpetofaunal Atlas, maintained by Travis W. Taggart with the
+Sternberg Museum of Natural History at Fort Hays State University and the Kansas Herpetological
+Society: https://webapps.fhsu.edu/ksherp/. Its group index pages (account.aspx?o=<order>&t=0)
+list established taxa, not-yet-established taxa and extinct taxa separately, and its SINC marks
+match K.A.R. 115-15-2 name for name, which is what makes it usable for a legal question.
+Established and relevant: Chelydra serpentina, Terrapene ornata, Terrapene triunguis, Trachemys
+scripta, Thamnophis sirtalis, Lampropeltis triangulum (the Eastern Milksnake, alongside
+Lampropeltis gentilis), Heterodon nasicus, Heterodon platirhinos, Ambystoma tigrinum. Absent from
+the checklist entirely, in both the established and the not-yet-established sections: Pantherophis
+guttatus (Kansas has P. emoryi and P. obsoletus), Lampropeltis californiae (Kansas has
+L. calligaster and L. holbrooki), Anolis carolinensis.
+
+
+==== K.A.R. 115-7-5, bullfrogs and turtles, in full ====
+
+(a) Legal equipment and methods for taking bullfrogs shall be the following: (1) Hand; (2) hand
+dip net; (3) hook and fishing line; (4) gig; (5) bow and arrow with barbed head and a line
+attached from arrow to bow; and (6) crossbow and arrow with barbed head and a line attached from
+arrow to crossbow. (b) Legal equipment and methods for taking common snapping turtles and
+soft-shelled turtles shall be the following: (1) Hand; (2) hook and fishing line; (3) set line;
+(4) hand dip net; (5) seine; (6) turtle trap; and (7) gig. (c) Artificial light and boats may be
+used while taking bullfrogs and turtles. (d) A valid Kansas fishing license shall be required to
+take common snapping turtles and soft-shelled turtles.
+
+
+==== K.A.R. 115-9-7, the license exemptions, in full ====
+
+(a) carrying or assist with carrying wildlife for another while in the company of that individual;
+(b) possession of wildlife for the purpose of dressing, cleaning, processing for human consumption
+or preparing for human consumption; (c) assisting with the dressing, cleaning, processing for human
+consumption or preparing for human consumption; (d) performance of taxidermy work; (e) possession
+of finished taxidermy work; (f) possession of finished wildlife products; (g) accompanying one or
+more hunters in the field who are engaged in hunting, except the accompanying individual shall not
+be in possession of hunting equipment for the shooting, capturing or harvesting of wildlife; (h)
+possession of donated wildlife that was acquired, possessed and given by another; (i) possession of
+wildlife that was legally acquired by the individual; (j) wildlife observations; (k) nature
+observations and studies; (l) feeding of wildlife; (m) watering of wildlife; (n) accidental killing
+or injuring of wildlife such as vehicle collision with wildlife; or (o) assisting with the tracking
+of wounded wildlife.
+
+
+==== K.A.R. 115-15-1, the reptiles, turtles and amphibians on it ====
+
+(a) endangered ... (3) Amphibians Cave salamander, Eurycea lucifuga (Rafinesque, 1822) Grotto
+salamander, Eurycea spelaea (Stejneger, 1892)
+(b) threatened ... (3) Amphibians Eastern newt, Notophthalmus viridescens (Rafinesque, 1820)
+Longtail salamander, Eurycea longicauda (Green, 1818) Eastern narrow-mouthed toad, Gastrophryne
+carolinensis (Holbrook, 1836) Green frog, Lithobates clamitans (Latreille, 1801) Strecker's chorus
+frog, Pseudacris streckeri (Wright and Wright, 1933) Green toad, Anaxyrus debilis (Girard, 1854)
+(4) Reptiles Broad-headed skink, Plestidon laticeps (Schneider, 1801) Checkered gartersnake,
+Thamnophis marcianus (Baird and Girard, 1853) New Mexico Threadsnake, Rena dissectus (Cope, 1896)
+(7) Turtles Northern map turtle, Graptemys geographica (Le Sueur, 1817)
+
+
+==== K.A.R. 115-15-2(a)(3), (4) and (7), the herps on the nongame list ====
+
+(3) Amphibians Red-spotted toad, Anaxyrus punctatus (Baird and Girard, 1852) Crawfish frog,
+Lithobates areolatus (Baird and Girard, 1852) Spring peeper, Pseudacris crucifer (Wied-Neuwied,
+1838)
+(4) Reptiles Rough earthsnake, Haldea striatula (Linnaeus, 1766) Plains hog-nosed snake, Heterodon
+nasicus (Baird and Girard, 1852) Timber rattlesnake, Crotalus horridus (Linnaeus, 1758) Eastern
+hog-nosed snake, Heterodon platirhinos (Latreille, 1801) Glossy snake, Arizona elegans (Kennicott,
+1859) Chihuahuan nightsnake, Hypsiglena jani (Duges, 1865) Red-bellied snake, Storeria
+occipitomaculata (Storer, 1839) Long-nosed snake, Rhinocheilus lecontei (Baird and Girard, 1853)
+Smooth earthsnake, Virginia valeriae (Baird and Girard, 1853)
+(7) Turtles Alligator snapping turtle, Macrochelys temminckii (Troost, in Harlan, 1835)
