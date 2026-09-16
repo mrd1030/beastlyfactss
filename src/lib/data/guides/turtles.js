@@ -294,6 +294,7 @@ export const turtleGuides = [
         { label: "Adult size", value: "5 to 10 inches." },
         { label: "Lifespan", value: "40 years or more typical, some individuals reaching 50-plus.", source: "russian-tortoise-cost-guide" },
         { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the tortoise out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Soaking", value: "Juveniles 10 to 15 minutes twice a week, adults about once a week, in lukewarm water no deeper than the elbows, and never unattended. Watch for urates: white and soft is hydrated, dry and gritty is not.", source: "tortoise-soaking-guide" },
       ],
     },
     emergencyCard: {

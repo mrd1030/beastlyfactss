@@ -496,6 +496,7 @@ is why they kept getting deferred. Do them once section 7 is finished.
       generally, and every page in both sets says the animal soaks often
       without saying what that looks like. Two instances make it shared-guide
       work rather than a per-species gap.
+      - DONE 2026-09-16, content/guides/tortoise-soaking-guide.mdx, dated 2026-11-29: schedule by age and species, elbow-deep, warm, 10 to 30 minutes, never unattended, urates as the check. Wired into the sulcata, Russian, red-footed and box turtle sidebars and onto the Russian hub as a Soaking row; the other three chelonian hubs are at eighteen rows. Hero image still to come.
 - [x] DONE 2026-09-16, the grep returns zero. The affiliate template fragment, 23 left, not the six READMEFIRST has
       been saying. It has more shapes than anyone had counted, so the grep
       that finds all of them is

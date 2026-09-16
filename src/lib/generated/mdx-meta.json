@@ -34747,7 +34747,7 @@
       },
       {
         "q": "Which states commonly ban Quaker parakeets outright?",
-        "a": "Thirteen, on the statute-by-statute count in our quaker legal guide: California, Colorado, Connecticut, Georgia, Hawaii, Kansas, Kentucky, Nebraska, New Jersey, Pennsylvania, Vermont, Wisconsin and Wyoming. Maine, Rhode Island and Arkansas require a permit, Virginia allows the bird on a condition, and Tennessee is unresolved. Nothing reaches the species in the remaining 34 jurisdictions, New York and Ohio among them."
+        "a": "Thirteen, on the statute-by-statute count in the quaker legal guide: California, Colorado, Connecticut, Georgia, Hawaii, Kansas, Kentucky, Nebraska, New Jersey, Pennsylvania, Vermont, Wisconsin and Wyoming. Maine, Rhode Island and Arkansas require a permit, Virginia allows the bird on a condition, and Tennessee is unresolved. Nothing reaches the species in the remaining 34 jurisdictions, New York and Ohio among them."
       },
       {
         "q": "Are Quaker parakeets good talkers?",
@@ -42988,6 +42988,63 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/tortoise-soaking-guide.mdx",
+    "slug": "tortoise-soaking-guide",
+    "title": "Tortoise Soaking: How Often, How Deep, How Warm, and How Long",
+    "seoTitle": "Tortoise Soaking: How Often, How Deep, How Long",
+    "excerpt": "Every tortoise page says the animal soaks often and none says what that looks like. Here is the schedule by age and species, the depth that keeps the head up, the water temperature, the minutes, and the two things a soak is quietly checking.",
+    "date": "2026-11-29",
+    "category": "Turtles & Tortoises",
+    "categories": [
+      "Turtles & Tortoises",
+      "Reptiles"
+    ],
+    "tags": [
+      "Tortoise",
+      "Box Turtle",
+      "Soaking",
+      "Hydration",
+      "Tortoise Care",
+      "Care Tips"
+    ],
+    "readTime": 8,
+    "difficulty": "Beginner",
+    "image": "/assets/images/tortoise-soaking-guide.jpg",
+    "imageAlt": "A small tortoise standing in a shallow tub of warm water that reaches its elbows, with its head raised and its shell dry above the waterline",
+    "emoji": "🐢",
+    "lastReviewed": "2026-11-29",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I soak my tortoise?",
+        "a": "By age first, then by species. Hatchlings daily. Juveniles two or three times a week. Adults of a dry-country species like a Russian or sulcata about once a week, and adults of a tropical species like a red-footed tortoise two to three times a week. A box turtle with a walk-in dish it uses every day does not need a schedule at all."
+      },
+      {
+        "q": "How deep and how warm should the water be?",
+        "a": "No deeper than the elbows, so the head stays up without effort and the tortoise can climb out. Warm to the hand, not hot: lukewarm for a Russian or a red-foot, and 85 to 95°F for a sulcata hatchling. Ten to thirty minutes, and never unattended, because a tortoise can tip onto its back and drown in an inch of water."
+      },
+      {
+        "q": "My tortoise has a water dish. Why does it need soaking?",
+        "a": "Because a dish is an offer and a soak is a guarantee. Many tortoises never drink from standing water, and soaking triggers drinking through the mouth and cloaca, along with urination and defecation. The urates that come out in the soak are the free hydration check every tortoise page sends you to."
+      },
+      {
+        "q": "Can I soak a tortoise too much?",
+        "a": "Adults of desert species get soft, waterlogged skin and a wet-shell environment they did not evolve for if soaked daily for months, which is why their schedule is weekly. Hatchlings and tropical species are built for damp and are the ones that get too little, not too much. The failure that matters is the unattended soak, not the extra one."
+      }
+    ],
+    "relatedProducts": [
+      "large-soakable-water-dish"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false
   },
   {
     "path": "/content/guides/ultimate-birdwatching-guide-best-places-times-tips-2026.mdx",
