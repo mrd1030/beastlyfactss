@@ -2715,7 +2715,9 @@
     "truth": null,
     "sourceCount": 6,
     "headingCount": 10,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/aquarium-water-changes-guide.mdx",
@@ -20929,7 +20931,7 @@
     "faqs": [
       {
         "q": "Why does a giant millipede cost more than other invertebrates?",
-        "a": "Imports are under a USDA embargo, prompted by concerns about a potentially damaging mite species found on imported animals, and keeping one requires a plant pest permit. So the animals for sale in the US are captive-bred or older stock instead of fresh imports. Limited supply, not care difficulty, is what pushes the price up."
+        "a": "Imports are under a USDA embargo, prompted by concerns about a potentially damaging mite species found on imported animals, and bringing one into the country or across state lines requires a USDA plant pest permit. So the animals for sale in the US are captive-bred or older stock instead of fresh imports. Limited supply, not care difficulty, is what pushes the price up."
       },
       {
         "q": "How much does a giant millipede cost upfront?",
@@ -20949,7 +20951,7 @@
       },
       {
         "q": "Are there legal restrictions that affect price or availability?",
-        "a": "Yes. On top of the federal USDA permit, some states add their own sales restrictions or permit requirements, so check yours before buying."
+        "a": "Yes. On top of the federal import permit, some states add their own sales restrictions or permit requirements, so check yours before buying."
       }
     ],
     "relatedProducts": [
@@ -34745,7 +34747,7 @@
       },
       {
         "q": "Which states commonly ban Quaker parakeets outright?",
-        "a": "California, Georgia, Hawaii, Kansas, Kentucky, Maine, Pennsylvania, Rhode Island, Tennessee, and Wyoming are the most consistently cited outright bans, and New Jersey belongs with them rather than with the permit states. Colorado, Connecticut, and Wisconsin impose bans with exceptions, and Virginia, New York, and Ohio allow ownership under specific conditions like banding or feather clipping."
+        "a": "Thirteen, on the statute-by-statute count in our quaker legal guide: California, Colorado, Connecticut, Georgia, Hawaii, Kansas, Kentucky, Nebraska, New Jersey, Pennsylvania, Vermont, Wisconsin and Wyoming. Maine, Rhode Island and Arkansas require a permit, Virginia allows the bird on a condition, and Tennessee is unresolved. Nothing reaches the species in the remaining 34 jurisdictions, New York and Ohio among them."
       },
       {
         "q": "Are Quaker parakeets good talkers?",
@@ -45502,9 +45504,9 @@
   {
     "path": "/content/guides/zebra-finch-enrichment-guide.mdx",
     "slug": "zebra-finch-enrichment-guide",
-    "title": "Zebra Finch Enrichment: Wild Ones Travel in Twos, Not Flocks",
+    "title": "Zebra Finch Enrichment: The Wild Flock Is Built from Pairs",
     "seoTitle": "Zebra Finch Enrichment Guide",
-    "excerpt": "Wild zebra finches forage and travel mostly in pairs, and 94 percent of those pairs are mixed-sex. Bigger is not automatically better for a social bird.",
+    "excerpt": "Wild zebra finches live in flocks of dozens, but inside the flock they forage and travel in pairs, 94 percent of them mixed-sex, or groups of three to ten. Bigger is not automatically better for a social bird.",
     "date": "2026-10-30",
     "category": "Enrichment",
     "categories": [
