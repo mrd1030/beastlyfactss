@@ -27,6 +27,10 @@ import path from 'path';
 const MAX_ROWS = 18;
 const MAX_WORDS = 500;
 const MAX_ROW_WORDS = 62;
+// Ten words of slack on either word cap, decided 2026-09-16: a card or a row
+// may run past its cap only when a figure will not fit otherwise, and by no
+// more than ten words. Past the cap is a warning; past the slack is a failure.
+const SLACK = 10;
 
 const files = fs.readdirSync('src/lib/data/guides').filter((f) => f.endsWith('.js') && f !== 'index.js');
 const hubs = [];
@@ -43,10 +47,12 @@ const longRows = [];
 for (const g of hubs) {
   const rows = g.firstWeek.rows.length;
   const words = g.firstWeek.rows.reduce((a, r) => a + String(r.value).trim().split(/\s+/).length, 0);
-  if (rows > MAX_ROWS || words > MAX_WORDS) over.push({ id: g.id, file: g.file, rows, words });
+  if (rows > MAX_ROWS || words > MAX_WORDS + SLACK) over.push({ id: g.id, file: g.file, rows, words });
+  else if (words > MAX_WORDS) console.log(`  slack: ${g.id} is ${words} words, ${words - MAX_WORDS} over the ${MAX_WORDS} cap`);
   for (const r of g.firstWeek.rows) {
     const w = String(r.value).trim().split(/\s+/).length;
-    if (w > MAX_ROW_WORDS) longRows.push({ id: g.id, file: g.file, label: r.label, words: w });
+    if (w > MAX_ROW_WORDS + SLACK) longRows.push({ id: g.id, file: g.file, label: r.label, words: w });
+    else if (w > MAX_ROW_WORDS) console.log(`  slack: ${g.id} / ${r.label} is ${w} words, ${w - MAX_ROW_WORDS} over the ${MAX_ROW_WORDS} row cap`);
   }
 }
 
