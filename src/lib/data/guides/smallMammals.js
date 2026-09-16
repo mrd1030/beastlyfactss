@@ -85,10 +85,11 @@ export const smallMammalGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry, which no deep dive repeats. Heat stress signs and
-    // the vet carrier cite the shared small mammal guides in the sidebar's
-    // Health and More list. Reconciled 2026-09-15 after the degu set test
-    // (docs/READER_REVIEWS.md).
+    // encyclopedia entry, which no deep dive repeats. Heat stress signs cite
+    // the shared small mammal guides in the sidebar's Health and More list.
+    // Reconciled 2026-09-15 after the degu set test (docs/READER_REVIEWS.md),
+    // rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md):
+    // the pellet cap is its own row again, apart from the unlimited hay.
     //
     // This is the second hub after gerbil to reverse the hub-loses default.
     // The old hub was the only page in the set citing the RSPCA, and the
@@ -116,43 +117,39 @@ export const smallMammalGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Legal", value: "Restricted in fifteen jurisdictions and outright banned in eight, which makes it the most heavily regulated of the small rodents ordinarily sold as pets. The reason repeats almost word for word: states listed the rodents common in the pet trade when the rule was drafted, and the degu arrived later.", source: "degu-legal-guide" },
-        { label: "Never one", value: "Two minimum, same-sex or neutered, and ideally littermates or animals introduced young. Introductions of unfamiliar adults need care. Isolation is linked to aggression and self-mutilation in this species, which is a stronger statement than the equivalent for most rodents.", source: "degu-enrichment-guide" },
-        { label: "Cage", value: "About 28 by 18 by 28 inches is the minimum for a pair, and larger is always better. A tall, multi-level cage with ramps and platforms suits this species' active, climbing nature. Metal rather than plastic or wood, which degus chew through readily, and bar spacing no more than half an inch.", source: "degu-tank-setup-guide" },
-        { label: "Solid roof", value: "Degus are a prey species whose main wild predators are birds of prey, and movement above them frightens them, so fit a solid roof rather than open mesh.", source: "degu-tank-setup-guide" },
-        { label: "Not a tank", value: "Skip the fish tank and the glass vivarium. Degus housed in them can develop respiratory problems, because glass sides don't let enough air circulate in and out.", source: "degu-tank-setup-guide" },
-        { label: "Climbing", value: "Branches of safe wood, pear, apple or beech, with platforms at different levels to climb or jump between. Solid shelves, not wire, since wire flooring causes foot problems.", source: "degu-tank-setup-guide" },
-        { label: "Temperature", value: "Genuinely cool by small-pet standards, 65 to 70°F. This species tolerates heat poorly, so keep the cage away from windows, radiators, and any spot that gets direct sun, and never let ambient temperature climb toward 77°F.", source: "degu-tank-setup-guide" },
-        { label: "Heat stress signs", value: "Rapid or open-mouth breathing first, then excess drooling or salivation, then weakness and reluctance to move, with tremors, convulsions, collapse, or unconsciousness as the severe stage. Move the animal to the coolest available room, offer cool, not ice-cold, water, cool it gradually, and get to a vet immediately.", source: "small-mammal-temperature-heat-stress-guide" },
-        { label: "Substrate", value: "Dust-free aspen shavings or a paper-based bedding, plenty of hay, and a genuine deep-digging area. That means a solid enclosure bottom under a deep layer of material, hay, shredded paper and paper tissue among them, so a degu can dig and burrow rather than scratch at a tray.", source: "degu-tank-setup-guide" },
-        { label: "Wheel", value: "A solid exercise wheel, 11 to 12 inches. Wire or mesh wheels catch toes and tails and cause real injury, and a small one forces an arched spine.", source: "degu-tank-setup-guide" },
-        { label: "Sand, not dust", value: "Bathing sand two or three times a week, twenty minutes or so at a time. Use sand for degus, not chinchilla dust. Leave it in permanently and it becomes a toilet, and sift and top it up instead of replacing everything every session.", source: "degu-enrichment-guide" },
-        { label: "Why the sand bath matters", value: "Degus dust bathe at a higher rate on sand a familiar degu has already used, and dust bathing plays a role in male-to-male communication. Wild colony bathing sites are marked with urine and anal gland secretions. The tray is a shared scent board and not a shower.", source: "degu-enrichment-guide" },
-        { label: "Chewing", value: "Open-rooted teeth and a serious appetite for destruction. Mineral and lava chew blocks, untreated wood, cardboard and apple or willow branches all get worked through. Assume anything plastic in the cage will be chewed eventually.", source: "degu-enrichment-guide" },
-        { label: "Hay", value: "Unlimited grass hay, timothy, meadow, or orchard, available at all times. It is the bulk of the diet, the fiber that keeps the gut moving, and the abrasion that keeps continuously growing teeth worn down.", source: "degu-feeding-guide" },
-        { label: "Pellets", value: "Measured, not free-fed, roughly 1 to 2 tablespoons per degu daily. Degus will preferentially eat calorie-dense pellets over hay given unlimited access to both, which undercuts the fiber intake this species actually needs.", source: "degu-feeding-guide" },
-        { label: "Sugar", value: "Fruit, honey, molasses, and any sugary treat should be avoided almost entirely, not just limited. Degus have unusually low natural insulin activity among rodents, and this species is studied as a natural model for diabetes because it develops the disease so readily on even modest added sugar.", source: "degu-feeding-guide" },
-        { label: "Rabbit food", value: "Steer clear entirely. Rabbit pellets routinely carry a coccidiostat, the anti-parasitic feed additive added to control coccidiosis in rabbits and poultry, and those compounds are harmful to degus. Hamster and gerbil mixes are the wrong fit too, too much protein and seed.", source: "degu-feeding-guide" },
-        { label: "Droppings", value: "Let them eat their own. It is a nutritional requirement rather than a habit to discourage: degus need that second pass to get their essential nutrients and to keep the digestive system healthy.", source: "degu-feeding-guide" },
-        { label: "Orange teeth", value: "Healthy degu teeth should look orange, not white. White or very pale teeth in an adult are the sign of a problem.", source: "degu-health-issues-guide" },
-        { label: "Dental disease", value: "The most common reason degus actually see a vet, and molar malocclusion specifically is the most frequently diagnosed dental disorder in this species. Watch for drooling or a wet chin, dropping food while eating, weight loss, and watery eyes. Treatment typically means filing under anesthesia.", source: "degu-health-issues-guide" },
-        { label: "Never the tail", value: "Degus can experience tail slip, where the skin and fur of the tail sloughs off under grasping pressure. It doesn't grow back and needs veterinary attention. Scoop by the body instead.", source: "degu-handling-guide" },
-        { label: "Vet trips", value: "A ventilated, hard-sided small-animal carrier, ready before a trip is ever needed rather than bought the morning of an appointment. For a bonded pair, the cage mate comes along when the visit or recovery allows it.", source: "small-mammal-vet-visits-and-travel-guide" },
-        { label: "Budget", value: "$10 to $50 per degu, and you need two. Equipment runs roughly $375 to $520, the cage being most of it. An exotic vet check including dental runs $80 to $160 a year.", source: "degu-cost-guide" },
+        { label: "Legal", value: "Restricted in fifteen jurisdictions and banned outright in eight, the most regulated of the small rodents sold as pets.", source: "degu-legal-guide" },
+        { label: "Never one", value: "Two minimum, same-sex or neutered, ideally littermates. Isolation is linked to aggression and self-mutilation, a stronger statement than for most rodents.", source: "degu-enrichment-guide" },
+        { label: "The cage", value: "About 28 by 18 by 28 inches minimum for a pair, tall and multi-level, in metal with bar spacing no more than half an inch. Solid shelves, not wire. Not a fish tank or glass vivarium: they cannot breathe in one.", source: "degu-tank-setup-guide" },
+        { label: "Solid roof", value: "Their wild predators are birds of prey, so movement overhead frightens them. A solid roof rather than open mesh.", source: "degu-tank-setup-guide" },
+        { label: "Temperature", value: "Cool, 65 to 70°F, and never toward 77°F. Away from windows, radiators, and direct sun.", source: "degu-tank-setup-guide" },
+        { label: "Substrate and wheel", value: "Dust-free aspen or paper bedding with a deep digging area. A solid wheel of 11 to 12 inches; wire wheels catch toes and a small one arches the spine.", source: "degu-tank-setup-guide" },
+        { label: "Sand, not dust", value: "Bathing sand two or three times a week, twenty minutes at a time. Sift and top it up; left in permanently it becomes a toilet.", source: "degu-enrichment-guide" },
+        { label: "Chewing", value: "Mineral and lava blocks, untreated wood, cardboard, apple or willow branches. Anything plastic in the cage will be chewed eventually.", source: "degu-enrichment-guide" },
+        { label: "Hay", value: "Unlimited grass hay, timothy, meadow, or orchard, at all times. It is the bulk of the diet and what keeps the teeth worn down.", source: "degu-feeding-guide" },
+        { label: "Pellets", value: "Measured, not free-fed: roughly 1 to 2 tablespoons per degu daily. Given the choice they eat pellets over hay and lose the fiber they need.", source: "degu-feeding-guide" },
+        { label: "Sugar", value: "Fruit, honey, and any sugary treat avoided almost entirely. Degus develop diabetes so readily they are studied as a model for it.", source: "degu-feeding-guide" },
+        { label: "Rabbit food", value: "Never. Rabbit pellets carry a coccidiostat that harms degus, and hamster and gerbil mixes are too high in protein and seed.", source: "degu-feeding-guide" },
+        { label: "Orange teeth", value: "Healthy teeth look orange. White or pale teeth in an adult are the sign of a problem, and dental disease is the top reason degus see a vet: drooling, dropped food, weight loss, watery eyes.", source: "degu-health-issues-guide" },
+        { label: "Never the tail", value: "The skin sloughs off under grasping pressure and does not grow back. Scoop by the body.", source: "degu-handling-guide" },
+        { label: "Heat stress signs", value: "Rapid or open-mouth breathing, then drooling, then weakness, with tremors or collapse as the severe stage. Move it to the coolest room, cool it gradually, and get to a vet.", source: "small-mammal-temperature-heat-stress-guide" },
+        { label: "Budget", value: "$10 to $50 per degu and you need two. Equipment roughly $375 to $520, the cage most of it, and an exotic vet check with dental at $80 to $160 a year.", source: "degu-cost-guide" },
+        { label: "Lifespan", value: "5 to 8 years in captivity.", source: "degu-cost-guide" },
         { label: "Adult size", value: "5 to 8 inches (12 to 20 cm) body, plus a 4 to 5 inch tufted tail; 6 to 11 oz." },
-        { label: "Lifespan", value: "5 to 8 years in captivity, against an animal that seldom passes 2 years in the wild, where it is prey.", source: "degu-cost-guide" },
       ],
     },
     emergencyCard: {
       source: "degu-health-issues-guide",
       callNow: [
-        "Increased drinking and urination, weight changes, cloudy eyes from cataracts, thinning coat, and lethargy (diabetes). See a vet at the first sign; once it develops it can be managed but not cured",
-        "Signs of heatstroke in a degu kept above about 77°F. This is an emergency",
-        "Drooling or a wet chin, dropping food while eating, weight loss, and watery eyes (dental disease). See a vet, treatment typically means filing under anesthesia",
-        "Red, swollen, or scabbed footpads from standing on wire flooring (bumblefoot). Manageable at home early by switching to solid flooring; an infected case needs a vet",
-        "Laboured breathing or nasal discharge from dusty bedding, ammonia buildup, or poor ventilation (respiratory infection). See a vet",
+        "Rapid or open-mouth breathing, drooling, weakness, or collapse in a warm room: heatstroke, an emergency above about 77°F",
+        "A sudden increase in drinking and urination, with weight change or cloudy eyes: diabetes, manageable if caught but never cured",
+        "Labored breathing or nasal discharge",
       ],
-      vetLine: "An exotics-experienced vet, registered with before you need one, since degus are a relatively new pet species and the veterinary picture is still filling in. Vitamin A deficiency and liver disease are two more conditions to learn to recognize, alongside diabetes, tail loss, heat stroke and respiratory infection. See a vet immediately for heatstroke or a sudden increase in drinking and urination, and book promptly for drooling or dropped food, a footpad sore that isn't improving, or persistent lethargy.",
+      soon: [
+        "Drooling or a wet chin, dropping food, weight loss, watery eyes: dental disease, usually filed under anesthesia",
+        "Red, swollen, or scabbed footpads: switch to solid flooring now, and a vet if it is infected or not improving",
+        "Persistent lethargy",
+      ],
+      vetLine: "An exotics-experienced vet, registered with before you need one, since degus are a newer pet species and the veterinary picture is still filling in.",
     },
     routes: [
       { slug: "degu-cost-guide", line: "$10 to $50 an animal and you need two, the roughly $375 to $520 of equipment the cage dominates, and the annual table where dental sits alongside hay." },
@@ -199,7 +196,8 @@ export const smallMammalGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Reconciled 2026-09-15 after the mouse set test
+    // encyclopedia entry. Rewritten to the template shape 2026-09-16
+    // (docs/HUB_ROUTER_REVIEWS.md). Reconciled 2026-09-15 after the mouse set test
     // (docs/READER_REVIEWS.md).
     //
     // The reader graded the hub C and named the reason precisely: "I would
@@ -225,39 +223,35 @@ export const smallMammalGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Bar spacing, the number that matters most", value: "No more than about a quarter inch (6mm), and tighter still, down to 5mm, is sometimes recommended. That's tighter than most small pet cages, and mice can squeeze through gaps that would safely contain a hamster. Plenty of cages marketed for \"small animals\", including ones with spacing around three-eighths of an inch, look tight but are still wide enough for a determined mouse.", source: "mouse-tank-setup-guide" },
-        { label: "A wire cage, not a glass tank", value: "This runs against the instinct a lot of small-pet owners bring from other species. Aquariums are not suitable cages for rats and mice, because air circulation is inadequate and therefore ammonia builds up. A solid-sided enclosure, even one topped with a mesh lid, can't move air the way an all-wire cage can.", source: "mouse-tank-setup-guide" },
-        { label: "Enclosure size", value: "A concrete minimum of 18 inches long by 18 inches wide by 10 inches high for a small group of 2 to 3 mice. There's no single evidence-based ideal size beyond that floor, so more floor space and genuine vertical climbing room, using shelves, ramps, and multiple levels, is always the safer default rather than treating the minimum as a target.", source: "mouse-tank-setup-guide" },
-        { label: "Cage construction", value: "A solid floor, since wire mesh flooring risks injury to small feet, with wire sides and top for ventilation. Top mesh no larger than about 1cm square, strong enough to resist an adult mouse's chewing.", source: "mouse-tank-setup-guide" },
-        { label: "Bedding", value: "Dust-free, paper-based, at least about 2 to 4cm deep, enough to support nesting and light digging. That's considerably shallower than the many-inches-deep bedding a hamster or gerbil needs. Avoid cedar and aromatic pine entirely, and skip fluffy, cotton-wool-style nesting products, which pose a real entanglement and blockage risk.", source: "mouse-tank-setup-guide" },
-        { label: "Nesting material, the tested number", value: "A mouse in a room you find comfortable is below its own comfort range. Given enough nesting material it builds its way out of the problem, and the research puts the useful amount at six to ten grams, which is considerably more than most pet cages ever contain.", source: "mouse-enrichment-guide" },
-        { label: "Wheel", value: "Solid-surfaced, axle-free, and mouse-sized, roughly 6 to 8 inches rather than the 10 to 12 inch hamster wheels. A wheel shouldn't be the only enrichment on offer.", source: "mouse-tank-setup-guide" },
-        { label: "Temperature and humidity", value: "The comfort range for mice is 64 to 79\u00B0F and 30 to 70% relative humidity. Damp conditions, drafts, dust, and poor ventilation all raise respiratory risk, which is why cage humidity is worth actually tracking rather than guessing at.", source: "mouse-health-issues-guide" },
-        { label: "Diet", value: "A pelleted ration formulated for mice or rats. Protein is where mice diverge from hamsters and gerbils: general maintenance crude protein for mice is 20 to 25%, with growing or breeding animals needing more. That's meaningfully higher than the 14 to 16% adequate for a gerbil or hamster, which is exactly why a hamster-and-gerbil pellet is the wrong tub to reach for.", source: "mouse-feeding-guide" },
-        { label: "How to feed it", value: "Feed a measured pelleted ration once daily, and lean toward scattering some of that ration around the cage rather than dumping it all in one dish, which encourages natural foraging. The dish is for the fresh vegetables, which do not scatter well and need pulling out before they spoil.", source: "mouse-feeding-guide" },
-        { label: "Fresh food portions", value: "Leafy greens, carrot, bell pepper and broccoli daily in genuinely small amounts, cut small. \"Small\" means something different for a 1 to 1.6 ounce animal than it does for a hamster, closer to a pea-sized piece than a chunk of carrot.", source: "mouse-feeding-guide" },
-        { label: "Foods to avoid", value: "Grapes and raisins, rhubarb, citrus fruit, chocolate, caffeine, and alcohol are toxic. Garlic, onion, raw beans, and raw potato should also be avoided, and while lettuce isn't toxic, it reliably causes diarrhea in mice, so it's best left out entirely.", source: "mouse-feeding-guide" },
-        { label: "Eating droppings is normal", value: "Mice fed a standard diet ate their own droppings about 9.6 times a day on average, but once the feed was fortified with vitamin B12 that dropped to roughly 4.7 times a day, direct evidence the behavior tracks real nutritional demand rather than instinct alone. Mouse feces run 124 to 197 times higher in vitamin B12 than the diet that produced them.", source: "mouse-feeding-guide" },
-        { label: "Females in groups, males usually alone", value: "Female mice are social and should be kept in same-sex groups. They do noticeably better with company and it is not a close call. Adult males are a different problem: they frequently fight seriously, and solitary housing is the common answer. That is a genuine welfare compromise rather than a preference, and it is a reason to think carefully before choosing males.", source: "mouse-enrichment-guide" },
-        { label: "Picking one up", value: "Cup both hands and let the mouse walk onto them rather than grabbing from above. Guide it gently with a second hand if needed, and never scruff or lift by the tip of the tail. If you need to support the tail at all, hold it only at the very base and transfer to a cupped hand immediately rather than letting the mouse dangle.", source: "mouse-handling-guide" },
-        { label: "Handle low", value: "Mice can jump roughly 13 inches straight up from a standing start, and with a running start can cover more than 2 feet horizontally in a single leap, easily enough to go from a table to a countertop in one motion. Handling sessions are worth having somewhere low, enclosed, or over a soft surface.", source: "mouse-handling-guide" },
-        { label: "Cleaning, and why not to strip it", value: "Stripping a cage completely just prompts a male to re-mark it more intensely, so frequent spot-cleaning of soiled corners, combined with less frequent full cleans that leave some familiar-smelling bedding behind, tends to work better than either extreme.", source: "mouse-health-issues-guide" },
+        { label: "Bar spacing", value: "No more than about a quarter inch (6mm), and 5mm is sometimes recommended. Cages sold for small animals at three-eighths of an inch still let a determined mouse out.", source: "mouse-tank-setup-guide" },
+        { label: "A wire cage, not a tank", value: "An aquarium cannot move air, so ammonia builds. Wire sides and top, a solid floor, and top mesh no larger than about 1cm square.", source: "mouse-tank-setup-guide" },
+        { label: "Enclosure size", value: "At least 18 by 18 by 10 inches for 2 to 3 mice, with more floor and real climbing room on shelves and levels always the safer default.", source: "mouse-tank-setup-guide" },
+        { label: "Bedding", value: "Dust-free paper, about 2 to 4cm deep, far shallower than a hamster's. No cedar, no aromatic pine, no cotton-wool nesting products.", source: "mouse-tank-setup-guide" },
+        { label: "Nesting material", value: "A mouse in a room you find comfortable is below its own comfort range. The research puts the useful amount at six to ten grams, more than most pet cages hold.", source: "mouse-enrichment-guide" },
+        { label: "Wheel", value: "Solid, axle-free, 6 to 8 inches rather than a hamster's 10 to 12, and not the only enrichment.", source: "mouse-tank-setup-guide" },
+        { label: "Temperature and humidity", value: "64 to 79°F and 30 to 70% humidity. Damp, drafts, dust, and poor ventilation all raise respiratory risk.", source: "mouse-health-issues-guide" },
+        { label: "Diet", value: "A pellet formulated for mice or rats at 20 to 25% protein, higher than the 14 to 16% a hamster or gerbil needs, which is why the hamster-and-gerbil tub is wrong.", source: "mouse-feeding-guide" },
+        { label: "How to feed it", value: "A measured ration once daily, some of it scattered for foraging. Pea-sized pieces of greens, carrot, pepper, or broccoli daily, pulled before they spoil.", source: "mouse-feeding-guide" },
+        { label: "Foods to avoid", value: "Grapes and raisins, rhubarb, citrus, chocolate, caffeine, and alcohol are toxic. Garlic, onion, raw beans, and raw potato out, and lettuce reliably causes diarrhea.", source: "mouse-feeding-guide" },
+        { label: "Females in groups, males usually alone", value: "Females need same-sex company, and it is not a close call. Adult males frequently fight seriously, so solitary housing is the common answer, which is a reason to think before choosing males.", source: "mouse-enrichment-guide" },
+        { label: "Picking one up", value: "Cup both hands and let it walk on; never scruff or lift by the tail tip. They jump roughly 13 inches straight up and 2 feet along, so handle low over something soft.", source: "mouse-handling-guide" },
+        { label: "Cleaning", value: "Spot-clean soiled corners often and leave some familiar bedding at a full clean. Stripping the cage makes a male re-mark it harder.", source: "mouse-health-issues-guide" },
         { label: "Adult size", value: "2 to 3 inches (5 to 8 cm) body, plus a 3 to 4 inch tail, at 1 to 1.6 oz." },
-        { label: "Budget, the animals", value: "$5 to $20 each, and you are buying two or three rather than one. A proper first setup runs roughly $100 to $210 including one mouse, plus another $5 to $40 for the second or third mouse the group actually needs.", source: "mouse-cost-guide" },
-        { label: "Ongoing costs", value: "Roughly $10 to $20 a month: pellets, small amounts of fresh produce, bedding replaced often enough to keep ammonia from building up, chews, and a yearly vet check. Bedding is the line item that moves the most, and it's tied directly to odor.", source: "mouse-cost-guide" },
-        { label: "Vet costs", value: "A routine exam at an exotics-experienced practice typically runs $35 to $75, though it's worth confirming ahead of time that a given vet actually sees mice, not every general practice does.", source: "mouse-cost-guide" },
-        { label: "Lifespan", value: "Pet fancy mice typically live 1.5 to 2 years, with the average pet mouse lifespan put at 18 to 24 months. That's less time to spread a setup cost across, and a shorter total commitment than almost any other small mammal.", source: "mouse-cost-guide" },
+        { label: "Budget", value: "$5 to $20 each, and you are buying two or three. A first setup runs roughly $100 to $210, then $10 to $20 a month. A routine exam at an exotics practice is $35 to $75, and not every vet sees mice.", source: "mouse-cost-guide" },
+        { label: "Lifespan", value: "1.5 to 2 years, the shortest commitment of almost any small mammal.", source: "mouse-cost-guide" },
       ],
     },
     emergencyCard: {
       source: "mouse-health-issues-guide",
       callNow: [
-        "Any breathing changes: sneezing, nasal or eye discharge, labored or noisy breathing, sometimes an audible chattering sound",
-        "A new lump anywhere on the body",
+        "Any breathing change: sneezing, nasal or eye discharge, labored or noisy breathing, an audible chattering",
         "Sudden weight loss",
+      ],
+      soon: [
+        "A new lump anywhere on the body",
         "Dropped food and drooling",
       ],
-      vetLine: "See a vet promptly for any breathing changes, a new lump anywhere on the body, sudden weight loss, or dropped food and drooling. Mice decline quickly once a respiratory infection takes hold, and the organism behind most serious mouse respiratory disease can sit largely asymptomatic for a long stretch before flaring into visible illness. Confirm ahead of time that a given practice actually sees mice.",
+      vetLine: "Mice decline quickly once a respiratory infection takes hold, and the organism behind most of it sits asymptomatic for a long stretch before flaring. Confirm ahead of time that a practice sees mice.",
     },
     routes: [
       { slug: "mouse-cost-guide", line: "$5 to $20 a mouse and you are buying two or three, $100 to $210 for the cage around them, and $10 to $20 a month after." },
@@ -300,48 +294,49 @@ export const smallMammalGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry, which no deep dive repeats. Grooming, heat stress signs, and vet
-    // trips cite the shared small-mammal guides in the sidebar's Health and
-    // More list. Reconciled 2026-09-09 for batch D (docs/READER_REVIEWS.md).
+    // entry, which no deep dive repeats. Vet trips cite the shared
+    // small-mammal guides in the sidebar's Health and More list. Reconciled
+    // 2026-09-09 for batch D (docs/READER_REVIEWS.md), rewritten to the template
+    // shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md). The bar spacing row drops
+    // the "1 to 1.5 cm" parenthetical the setup guide carries, since 1.5 cm is
+    // 0.59 inch and contradicts the half inch it sits beside.
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Cage type", value: "A wire cage, never a glass tank. A tank, even a large one, traps ammonia far more effectively than an open wire cage does, and rats are unusually prone to exactly the chronic respiratory disease that kind of buildup drives. A well-built wire cage with a solid, sealed base solves this the way a tank simply cannot.", source: "rat-tank-setup-guide" },
-        { label: "Cage size", value: "24x24x24 inches is the minimum for a single rat, and bigger is better beyond that. Because rats must be kept in pairs or small groups, not alone, that minimum is a starting point rather than a target. The practical shorthand: cages built for ferrets or chinchillas are usually the right size for rats too.", source: "rat-tank-setup-guide" },
-        { label: "Bar spacing", value: "About half an inch (1 to 1.5 cm) or less. Spacing around 3/4 inch is wide enough that even an adult rat can get its head stuck trying to push through, a real injury risk rather than just an escape risk.", source: "rat-tank-setup-guide" },
-        { label: "Temperature", value: "The ideal range is 19 to 23°C, roughly 66 to 73°F, and rats generally do fine across a somewhat broader 64 to 79°F band. Rats cannot sweat or pant, and they regulate body heat largely through their tails, which makes them more heat-sensitive than that broader range might suggest, heat stress becomes a real risk above about 86°F.", source: "rat-tank-setup-guide" },
-        { label: "Bedding", value: "Paper-based or cellulose bedding, changed at least twice a week so ammonia does not accumulate between cleanings. Avoid dusty bedding, sawdust specifically, along with cedar and pine, whose aromatic oils irritate a rat's already respiratory-sensitive system.", source: "rat-tank-setup-guide" },
-        { label: "Wheel", value: "A solid-surface exercise wheel with no wire rungs, at least 12 inches in diameter and ideally 14 to 16 inches for adult rats, especially males, since a wheel that is too small forces a hunched, arched running posture that is not good for the spine over time.", source: "rat-tank-setup-guide" },
-        { label: "Company", value: "Never one. Rats are intensely social and single housing is a welfare problem no amount of enrichment fixes. Two is a minimum and a small same-sex group is better.", source: "rat-enrichment-guide" },
-        { label: "Enrichment", value: "A greater total number of enrichment types, listed as nesting material, digging substrate, foraging device, climbing structure, tube, hideaway and suspended area, was associated with more frequent digging, nesting and climbing. Work through the seven categories rather than buying more of what you already have.", source: "rat-enrichment-guide" },
-        { label: "Staple diet", value: "A nutritionally complete, rat-specific pelleted diet or lab block as the base of every meal. Always feed food designed specifically for rats, never pellets made for rabbits, guinea pigs, hamsters, or other herbivores.", source: "rat-feeding-guide" },
-        { label: "Portions", value: "Feed twice daily, morning and evening, adjusting the amount so a rat finishes what is offered and holds a healthy weight rather than free-feeding an unlimited bowl. Keep vegetables, fruit, grains, and seeds combined under about 10% of the total diet.", source: "rat-feeding-guide" },
-        { label: "Foods to avoid", value: "Avoid onion, citrus fruit, walnuts, rhubarb, grapes, raisins, and chocolate entirely. Also skip caffeine, alcohol, raw beans, unripe tomato, green or raw potato, and anything salty, sugary, or heavily processed.", source: "rat-feeding-guide" },
-        { label: "Water", value: "Fresh water should always be available in a bottle rather than an open bowl, and more than one bottle per cage, so a blockage or a spot of competition between cage mates never leaves a rat without access.", source: "rat-feeding-guide" },
-        { label: "Handling", value: "Pick a rat up using both hands in a scooping motion, one hand under the chest, the other supporting the hindquarters, and hold it close to your body for security, never out at arm's length. Never pick a rat up by the tail: the tail skin can shear away from the tissue underneath under pulling or grasping pressure, an injury called degloving or tail slip.", source: "rat-handling-guide" },
-        { label: "Settling in", value: "Give a newly acquired rat a few days to settle into its surroundings before handling begins in earnest, and approach calmly instead of reaching in fast.", source: "rat-handling-guide" },
-        { label: "Budget", value: "Roughly $250 to $550 for a properly housed pair. The cage is by far the biggest line item, running anywhere from about $130 for a basic model to $360 for a premium unit. About $20 to $40 a month ongoing, and $60 to $110 for a routine exotic-vet wellness exam.", source: "rat-cost-guide" },
+        { label: "Cage type", value: "A wire cage with a solid sealed base, never a glass tank. A tank traps the ammonia that drives the respiratory disease rats are prone to.", source: "rat-tank-setup-guide" },
+        { label: "Cage size", value: "24x24x24 inches is the minimum for a single rat, and you are keeping at least two, so it is a starting point. Cages built for ferrets or chinchillas are usually the right size.", source: "rat-tank-setup-guide" },
+        { label: "Bar spacing", value: "About half an inch or less. At three-quarters of an inch an adult can get its head stuck.", source: "rat-tank-setup-guide" },
+        { label: "Temperature", value: "66 to 73°F ideal, fine across 64 to 79°F. They cannot sweat or pant, and heat stress becomes a real risk above about 86°F.", source: "rat-tank-setup-guide" },
+        { label: "Bedding", value: "Paper or cellulose, changed at least twice a week so ammonia does not build. No sawdust, cedar, or pine.", source: "rat-tank-setup-guide" },
+        { label: "Wheel", value: "Solid-surface, at least 12 inches and ideally 14 to 16 for adults, especially males. A small wheel forces an arched spine.", source: "rat-tank-setup-guide" },
+        { label: "Company", value: "Never one. Two is a minimum and a small same-sex group is better; single housing is a welfare problem no enrichment fixes.", source: "rat-enrichment-guide" },
+        { label: "Enrichment", value: "Seven categories, nesting material, digging substrate, foraging device, climbing structure, tube, hideaway and suspended area, and more categories beat more of one.", source: "rat-enrichment-guide" },
+        { label: "Staple diet", value: "A rat-specific pellet or lab block, never pellets made for rabbits, guinea pigs, or hamsters. Vegetables, fruit, grains, and seeds combined under about 10% of the diet.", source: "rat-feeding-guide" },
+        { label: "Portions and water", value: "Twice daily, morning and evening, adjusted so a rat finishes what is offered. Water from bottles, more than one per cage.", source: "rat-feeding-guide" },
+        { label: "Foods to avoid", value: "Onion, citrus, walnuts, rhubarb, grapes, raisins, chocolate, caffeine, alcohol, raw beans, unripe tomato, green or raw potato, and anything salty or sugary.", source: "rat-feeding-guide" },
+        { label: "Handling", value: "Both hands scooping, one under the chest and one under the hindquarters, held close to the body. Never by the tail: the skin shears away. Give a new rat a few days to settle first.", source: "rat-handling-guide" },
+        { label: "Respiratory disease", value: "The condition every owner needs to recognize. A survey found 95% of pet ratteries carry the bacterium, there is no cure, and the chronic form rarely allows more than 2 years.", source: "rat-health-issues-guide" },
+        { label: "Lumps", value: "Mammary tumors are the commonest, in both sexes, because the tissue runs from chin to tail. Any new lump is a vet visit; spaying a female before 7 months lowers her risk.", source: "rat-health-issues-guide" },
+        { label: "Budget", value: "Roughly $250 to $550 for a properly housed pair, the cage $130 to $360 of it. About $20 to $40 a month, and $60 to $110 for a routine exotic-vet exam, per rat.", source: "rat-cost-guide" },
         { label: "Adult size", value: "7 to 10 inches body, plus a 6 to 8 inch scaled tail; 0.8 to 1 lb females, 1 to 1.4 lb males." },
-        { label: "Lifespan", value: "The average pet rat lives 18 to 36 months, usually described more simply as 2 to 3 years, with some individuals reaching 4.", source: "rat-cost-guide" },
-        { label: "Respiratory disease", value: "The one condition every rat owner needs to recognize. A survey of pet ratteries in the northwestern US found virtually all of them, 95%, positive for the bacterium behind it. There is no cure, and a rat with the chronic form rarely lives longer than 2 years.", source: "rat-health-issues-guide" },
-        { label: "Lumps", value: "Mammary tumors are the most common tumor type in rats, affecting both males and females, not just unspayed females, because rat mammary tissue extends widely under the skin from chin to tail. Any new lump warrants a vet visit. Spaying a female rat before 7 months of age meaningfully lowers her lifetime risk.", source: "rat-health-issues-guide" },
-        { label: "Grooming", value: "Rats wear their nails down naturally through digging and running far more than rabbits or guinea pigs do, and generally only need a check for overgrowth in older or less active animals rather than a fixed trim schedule.", source: "small-mammal-grooming-nails-molting-guide" },
-        { label: "Heat stress signs", value: "Rapid or open-mouth breathing first, then excess drooling or salivation, then weakness and reluctance to move, with tremors, convulsions, collapse, or unconsciousness as the severe stage. Move the animal to the coolest available room, offer cool, not ice-cold, water, cool it gradually, and get to a vet immediately.", source: "small-mammal-temperature-heat-stress-guide" },
-        { label: "Vet trips", value: "A ventilated, hard-sided small-animal carrier, ready before a trip is ever needed rather than bought the morning of an appointment. For a bonded pair, the cage mate comes along when the visit or recovery allows it.", source: "small-mammal-vet-visits-and-travel-guide" },
+        { label: "Lifespan", value: "2 to 3 years, some to 4.", source: "rat-cost-guide" },
+        { label: "Vet trips", value: "A hard-sided carrier ready before it is needed, and the cage mate along when the clinic allows it.", source: "small-mammal-vet-visits-and-travel-guide" },
       ],
     },
     emergencyCard: {
       source: "rat-health-issues-guide",
       callNow: [
         "Labored or noisy breathing",
-        "Sneezing that doesn't resolve",
-        "Any new lump",
+        "Sneezing that does not resolve",
         "Head tilt",
-        "Sudden behavior change",
+        "Any new lump",
+      ],
+      soon: [
+        "A sudden behavior change",
         "General lethargy",
       ],
-      vetLine: "An exotic vet experienced with rats, found before you need one. See a vet promptly for the first three, don't wait to see if it clears up on its own given how quickly a small animal can decline. The last three are a reason to book a routine visit.",
+      vetLine: "An exotic vet experienced with rats, found before you need one. A small animal declines fast, so the first list is not a wait-and-see.",
     },
     routes: [
       { slug: "rat-cost-guide", line: "Why the budget starts at two rats, what a properly sized cage actually costs, and the monthly total most first-timers underestimate." },
@@ -453,7 +448,8 @@ export const smallMammalGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Reconciled 2026-09-15 after the flying squirrel set
+    // encyclopedia entry. Rewritten to the template shape 2026-09-16
+    // (docs/HUB_ROUTER_REVIEWS.md). Reconciled 2026-09-15 after the flying squirrel set
     // test (docs/READER_REVIEWS.md).
     //
     // No shared small-mammal guide names this species, so unlike the other
@@ -470,43 +466,36 @@ export const smallMammalGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Check the law first", value: "Flying squirrels are native wildlife across most of the eastern United States, which puts them in a different legal category than an imported exotic like the sugar glider. Some states regulate native species like this one under wildlife and game law rather than standard exotic-pet rules, so check your state wildlife agency before you commit to buying one, not after.", source: "flying-squirrel-cost-guide" },
-        { label: "Where that lands", value: "Across all 52 jurisdictions, a pet flying squirrel is a clean legal yes in nine: Massachusetts, New Jersey, Tennessee, Florida, Minnesota, Idaho, Washington, North Dakota and South Dakota. Four more are yes with a string attached rather than a permit: Texas caps you at 25 and forbids selling them, South Carolina and Arkansas turn on where the individual animal came from, and Missouri routes it through Class I wildlife. Nineteen require a permit, and in several of them, North Carolina especially, the permit exists for rehabilitators and exhibitors rather than pet owners.", source: "flying-squirrel-legal-guide" },
-        { label: "The squirrel, and realistically two", value: "Roughly $200 to $450 for a hand-raised baby, with some going higher depending on age, breeder reputation, and demand. Flying squirrels are intensely social, denning together in groups through the winter in the wild, and a solitary pet is a genuinely stressed one, so budget for a same-sex pair or small group from the start.", source: "flying-squirrel-cost-guide" },
-        { label: "Buy young", value: "Buying young, ideally around 6 to 8 weeks old, matters more here than with most small pets, since a flying squirrel's window for bonding closely with a keeper narrows the older it gets.", source: "flying-squirrel-cost-guide" },
-        { label: "Setup budget", value: "Roughly $200 to $500 for a pair: a tall aviary-style cage at $120 to $300, a solid axle-free wheel at $30 to $60, multiple sleeping pouches or a nest box at $25 to $50, and branches, ropes and climbing structure at $20 to $50. Add bedding, dishes and a few toys on top.", source: "flying-squirrel-cost-guide" },
-        { label: "First-year total", value: "Most first-year totals, squirrels plus setup, land somewhere in the $500 to $1,000-plus range.", source: "flying-squirrel-cost-guide" },
-        { label: "Cage size", value: "The floor is roughly 24x24x36 inches, or 30 wide by 18 deep by 36 tall, and both put height first, which is the dimension that matters for a climbing, gliding animal. Go bigger than the minimum wherever you can, especially for a pair or small group.", source: "flying-squirrel-tank-setup-guide" },
-        { label: "Bar spacing", value: "No more than half an inch, matching the standard used for sugar gliders. A young or small-bodied flying squirrel is small enough to squeeze through wider gaps, so escape-proofing matters here as much as the cage's overall size does.", source: "flying-squirrel-tank-setup-guide" },
-        { label: "Temperature", value: "Flying squirrels are native to temperate North American forests, where they deal with real seasonal cold every winter, so they're comfortable in a noticeably cooler 65 to 75°F range indoors. They tolerate a cool room reasonably well but struggle with heat, so avoid letting the room climb much past 80°F, and still keep the cage away from cold drafts and direct sun.", source: "flying-squirrel-tank-setup-guide" },
-        { label: "Light", value: "No special humidity control is needed. Flying squirrels can synthesize some vitamin D through skin exposure to light, unlike a sugar glider, so regular access to natural daylight or full-spectrum lighting, at least 20 minutes a day, alongside dietary calcium and D3, is generally recommended here rather than optional.", source: "flying-squirrel-tank-setup-guide" },
-        { label: "The wheel", value: "A standard hamster or rat wheel is genuinely dangerous for a flying squirrel, not just the wrong size. Many of those wheels have a center axle bar running through the middle, and it can seriously injure a small, bouncy animal's spine or tail mid-run. Look specifically for a solid, axle-free wheel at least 12 inches across.", source: "flying-squirrel-tank-setup-guide" },
-        { label: "Where they sleep", value: "Position sleeping pouches or a nest box high in the cage, matching this species' natural preference for denning up off the ground. A few hanging fleece hammocks or sleep sacks at varied heights work well, and flying squirrels den communally, so plan for more than one resting spot even with a bonded pair.", source: "flying-squirrel-tank-setup-guide" },
-        { label: "The floor", value: "A solid cage bottom with a washable liner underneath the main living area works better than loose bedding, which accumulates waste and gets harder to keep clean over time. Fresh water stays available at all times from a bottle mounted to the cage, with the sipper tube checked daily. Inside the nest box or sleeping pouch itself, a soft lining, shredded paper or a scrap of fleece, gives them something to burrow into.", source: "flying-squirrel-tank-setup-guide" },
-        { label: "The diet, in one line", value: "A high-quality pelleted rodent-block staple works as the nutritional foundation. Build the rest around it: fresh produce daily, and a protein source, mealworms, crickets, a little cooked chicken, or hard-boiled egg, several times a week. Nuts, seeds, and dried fruit are best treated as occasional treats layered on top, not the base of the diet the way a wild squirrel's diet might suggest.", source: "flying-squirrel-feeding-guide" },
-        { label: "When to feed", value: "Offer fresh food in the evening. Flying squirrels are strictly nocturnal, most active from dusk through the night, so a morning feeding routine misses their actual appetite window.", source: "flying-squirrel-feeding-guide" },
-        { label: "The ratio that matters", value: "The target calcium-to-phosphorus ratio is roughly 2:1. Keep nuts and seeds to a genuinely small portion, they're calorie-dense and phosphorus-heavy, and a captive squirrel eating them at anything close to wild-forager frequency will run into weight and calcium problems fast.", source: "flying-squirrel-feeding-guide" },
-        { label: "Water", value: "Fresh water stays available at all times from a bottle mounted to the cage, with the sipper tube checked daily.", source: "flying-squirrel-feeding-guide" },
-        { label: "Never feed", value: "Skip chocolate, dairy, candy, and anything processed or heavily salted entirely, none of it appears anywhere in a wild diet, and none of it does a captive squirrel any favors either.", source: "flying-squirrel-feeding-guide" },
-        { label: "Metabolic bone disease", value: "The most common serious health issue in captive flying squirrels, and almost entirely diet-driven, from a calcium-poor, phosphorus-heavy diet built too heavily around nuts, seeds, and acorns. Watch for lethargy, reduced appetite, and reluctance to climb or move normally early on, progressing toward hind-limb weakness, tremors, and in advanced cases, fractures, paralysis, and seizures.", source: "flying-squirrel-health-issues-guide" },
-        { label: "Teeth", value: "Flying squirrels are true rodents, and like all rodents, their incisors are rootless and grow continuously throughout life. Inadequate wear can lead to overgrown or misaligned incisors, so appropriate gnawing opportunities and a watchful eye on tooth length and alignment are worth building into routine care.", source: "flying-squirrel-health-issues-guide" },
-        { label: "Obesity", value: "From a diet too heavy in nuts, seeds, and sugary fruit relative to how much a caged animal actually moves compared to a wild forager covering real distance every night. Manageable at home with diet correction, though it's worth a vet visit to confirm you're making the right adjustment rather than guessing.", source: "flying-squirrel-health-issues-guide" },
-        { label: "They hide illness", value: "Like most small pet rodents, flying squirrels are prey animals by instinct, and they tend not to show obvious signs of pain or distress until a condition is fairly advanced. A squirrel that's simply a little quieter or eating a little less can already be dealing with something real.", source: "flying-squirrel-health-issues-guide" },
-        { label: "Bonding starts in a pouch", value: "A young flying squirrel doesn't bond through direct handling on day one. It bonds by being carried against your body in a pouch for several hours a day, getting used to your scent, warmth, and movement before real hands-on interaction starts. The full bonding process takes somewhere between 2 and 8 weeks, depending on how consistently you put in the time.", source: "flying-squirrel-handling-guide" },
-        { label: "A startled one", value: "An unbonded or frightened flying squirrel's first move is to get away, and it's genuinely good at that. Even indoors, a startled squirrel can jump and glide farther than most people expect, which makes a still-bonding animal a real flight risk in an open room. It may also nip if it feels cornered or restrained, a defensive reaction and not aggression.", source: "flying-squirrel-handling-guide" },
-        { label: "Handle at night", value: "Handling during the day, when a nocturnal animal wants to be sleeping, is on the first-timer mistake list, along with handling in a cold room: this species does best in the mid-60s to mid-70s Fahrenheit.", source: "flying-squirrel-handling-guide" },
-        { label: "What the enclosure has to answer", value: "The sugar glider's picture transfers almost exactly: colonial animals where solitary housing is treated as a major welfare risk, height and glide routes over floor space, a pouch or cavity to sleep in through the day, foraging presented at height, and a solid-track wheel. Where it breaks down is the teeth, since gnawing is a requirement for a rodent in a way it is not for a glider.", source: "flying-squirrel-enrichment-guide" },
+        { label: "Check the law first", value: "A clean legal yes in nine jurisdictions, yes with a string in four (Texas caps you at 25 and forbids selling), and a permit in nineteen, several of which exist for rehabilitators rather than pet owners. Native wildlife, so the state wildlife agency is the one to ask.", source: "flying-squirrel-legal-guide" },
+        { label: "The squirrel, and realistically two", value: "$200 to $450 for a hand-raised baby, bought young at 6 to 8 weeks while the bonding window is open. Intensely social: budget for a same-sex pair from the start.", source: "flying-squirrel-cost-guide" },
+        { label: "Setup budget", value: "Roughly $200 to $500 for a pair, and most first-year totals land at $500 to $1,000-plus.", source: "flying-squirrel-cost-guide" },
+        { label: "Cage size", value: "Roughly 24x24x36 inches, or 30 by 18 by 36, height first, and bigger wherever you can for a pair. Bar spacing no more than half an inch.", source: "flying-squirrel-tank-setup-guide" },
+        { label: "Temperature", value: "65 to 75°F, cooler than a glider, and they struggle with heat, so never much past 80°F. Away from drafts and direct sun.", source: "flying-squirrel-tank-setup-guide" },
+        { label: "Light", value: "At least 20 minutes a day of natural daylight or full-spectrum light, since they make some vitamin D through the skin. This sits beside dietary calcium and D3 as the prevention for bone disease.", source: "flying-squirrel-tank-setup-guide" },
+        { label: "The wheel", value: "A hamster or rat wheel is dangerous: the center axle bar can injure the spine or tail mid-run. Solid, axle-free, at least 12 inches across.", source: "flying-squirrel-tank-setup-guide" },
+        { label: "Where they sleep", value: "Pouches or a nest box hung high, lined with shredded paper or fleece, and more than one resting spot even for a pair, since they den communally. A solid floor with a washable liner under it all.", source: "flying-squirrel-tank-setup-guide" },
+        { label: "The diet, in one line", value: "A pelleted rodent-block staple, fresh produce daily, and a protein source several times a week: mealworms, crickets, a little cooked chicken or egg. Nuts, seeds, and dried fruit are occasional treats, not the base.", source: "flying-squirrel-feeding-guide" },
+        { label: "When to feed", value: "In the evening. Strictly nocturnal, so a morning feeding misses the appetite window entirely.", source: "flying-squirrel-feeding-guide" },
+        { label: "The ratio that matters", value: "Calcium to phosphorus roughly 2:1. Nuts and seeds at wild-forager frequency produce weight and calcium problems fast. No chocolate, dairy, candy, or anything processed or salted.", source: "flying-squirrel-feeding-guide" },
+        { label: "Water", value: "A bottle mounted to the cage, sipper tube checked daily.", source: "flying-squirrel-feeding-guide" },
+        { label: "Metabolic bone disease", value: "The most common serious problem, almost entirely from a calcium-poor, nut-heavy diet. Early signs are lethargy, reduced appetite, and reluctance to climb; then hind-limb weakness, tremors, fractures, seizures.", source: "flying-squirrel-health-issues-guide" },
+        { label: "Teeth", value: "Rootless incisors that grow for life. Gnawing material is a requirement, with an eye on tooth length and alignment.", source: "flying-squirrel-health-issues-guide" },
+        { label: "Bonding starts in a pouch", value: "Carried against your body several hours a day before hands-on interaction, over 2 to 8 weeks. Handle at night, in a warm room: a startled, unbonded squirrel glides farther than you expect and may nip.", source: "flying-squirrel-handling-guide" },
+        { label: "They hide illness", value: "A prey animal that shows nothing until a condition is advanced. Slightly quieter or eating slightly less can already be real.", source: "flying-squirrel-health-issues-guide" },
+        { label: "Sourcing", value: "Some states turn on where the individual animal came from, and the permit picture varies by state; the legal guide's map settles it before you buy.", source: "flying-squirrel-legal-guide" },
       ],
     },
     emergencyCard: {
       source: "flying-squirrel-health-issues-guide",
       callNow: [
-        "Reduced appetite, lethargy, or coordination changes: always see an exotic vet at the first sign, don't wait to see if it resolves on its own",
-        "Hind-limb weakness, tremors, and in advanced cases, fractures, paralysis, and seizures",
-        "Obesity from a diet too heavy in nuts, seeds, and sugary fruit: manageable at home with diet correction, but it's worth a vet visit to confirm you're making the right adjustment rather than guessing",
-        "Any change in appetite, activity level, or coordination deserves prompt exotic veterinary attention rather than a wait-and-see approach",
+        "Reduced appetite, lethargy, or any change in coordination, at the first sign",
+        "Hind-limb weakness or tremors, the middle stage of metabolic bone disease",
+        "Fractures, paralysis, or seizures, the advanced stage",
       ],
-      vetLine: "Always see an exotic vet at the first sign of reduced appetite, lethargy, or coordination changes, don't wait to see if it resolves on its own. Caught early, this is treatable with corrected calcium, vitamin D3, appropriate light exposure, and an overall diet fix under veterinary guidance. The real fix, though, is prevention: a properly balanced diet with a rodent-block staple and consistent calcium and vitamin D3 supplementation from the start.",
+      soon: [
+        "Obesity from a nut-and-seed-heavy diet: correct the diet at home, and confirm the adjustment with a vet",
+      ],
+      vetLine: "Caught early, bone disease is treatable with corrected calcium, vitamin D3, and light exposure under veterinary guidance. Prevention is a rodent-block staple with calcium and D3 from the start.",
     },
     routes: [
       { slug: "flying-squirrel-cost-guide", line: "$200 to $450 a squirrel and you need two, $200 to $500 of cage, and the legal check that comes first." },
@@ -528,6 +517,7 @@ export const smallMammalGuides = [
       "A bonding pouch you can carry against your body",
       "Rodent-block staple food",
       "A calcium and vitamin D3 supplement",
+      "A full-spectrum light, or a spot with 20 minutes of daylight a day",
       "Gnawing material, since the incisors never stop growing",
     ],
     faqs: [
@@ -556,50 +546,45 @@ export const smallMammalGuides = [
     // were moved into the deep dives first, verified against Merck, and the
     // rows below copy them from there. Aural cholesteatoma and seizures were
     // hub-only too and are now sections of the health guide.
-    // Reconciled 2026-09-14 for batch H (docs/READER_REVIEWS.md).
+    // Reconciled 2026-09-14 for batch H (docs/READER_REVIEWS.md), rewritten to
+    // the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Never just one", value: "Gerbils are social and should not be kept alone, so you are buying a same-sex pair or sibling group rather than an animal. Introductions between unfamiliar adults frequently fail, which is the hardest part of keeping them.", source: "gerbil-handling-guide" },
-        { label: "Enclosure", value: "A glass aquarium with a secure wire-mesh lid, not a wire cage, since wire construction can't hold the depth of bedding this species needs. A 20-gallon long works as a minimum for a pair, and a 40-gallon breeder, roughly 36 by 18 by 16 inches, is genuinely the better target.", source: "gerbil-tank-setup-guide" },
-        { label: "Digging depth", value: "6 to 10 inches at minimum, and some welfare-focused sources recommend even more, so a pair can build real tunnel systems instead of surface burrows. It is the most commonly under-delivered part of gerbil care.", source: "gerbil-tank-setup-guide" },
-        { label: "Substrate mix", value: "Aspen shavings and paper-based bedding with some hay worked in holds tunnel shape well. Avoid cedar entirely, skip aromatic non-kiln-dried pine, and avoid scented bedding and fluffy cotton-style nesting material.", source: "gerbil-tank-setup-guide" },
-        { label: "Humidity", value: "Below 40%, with good ventilation. Above 50% is where gerbils start developing nasal dermatitis, the sore-nose condition, and below 40% is the level that prevents it.", source: "gerbil-tank-setup-guide" },
-        { label: "Temperature", value: "Normal room temperature, 65 to 75°F, suits this species well without any special heating or cooling.", source: "gerbil-tank-setup-guide" },
-        { label: "Wheel", value: "A solid-surface exercise wheel, 8 inches minimum, 10 to 12 inches is better. Wire-rung wheels are a real injury risk.", source: "gerbil-tank-setup-guide" },
-        { label: "Cleaning", value: "Keep some old, familiar-smelling nesting material aside during cleanouts and put it back afterward. Gerbils are strongly scent-driven, and a completely fresh-smelling environment after a full clean can cause temporary stress or even conflict between cage mates.", source: "gerbil-tank-setup-guide" },
-        { label: "Staple diet", value: "A uniform pelleted diet or lab block, since a gerbil can't pick favorites out of it. Aim for 18 to 20% protein and keep fat at or under about 4%: past that, gerbils develop raised blood cholesterol, more pronounced in males.", source: "gerbil-feeding-guide" },
-        { label: "Reading the bag", value: "The American Gerbil Society's 14% protein is a floor, not a target, and many products labeled simply \"Hamster and Gerbil Food\" miss even that, since they're really formulated for hamsters. Check the guaranteed analysis panel.", source: "gerbil-feeding-guide" },
-        { label: "Portion", value: "Roughly 5 to 8 grams, about a tablespoon, of pellets per adult gerbil per day, fed once daily. Fresh vegetables every other day or a few times weekly, and fruit as an occasional weekly indulgence.", source: "gerbil-feeding-guide" },
-        { label: "Seed mixes", value: "Gerbils selectively eat the fatty seeds, sunflower especially, and leave the balanced components behind, so a bag that looks nutritionally complete on the label doesn't get eaten that way.", source: "gerbil-feeding-guide" },
-        { label: "Foods to avoid", value: "Grapes and raisins, rhubarb, chocolate, onion and garlic, avocado, raw potato, raw kidney beans, and apple seeds, plus salty, sugary, or processed human food and dairy. Watery lettuce can cause diarrhea.", source: "gerbil-feeding-guide" },
-        { label: "Sand bath", value: "Chinchilla sand rather than the finer dust, offered a couple of times a week rather than left in permanently. It is what keeps the coat in order.", source: "gerbil-enrichment-guide" },
-        { label: "Things to destroy", value: "Cardboard tubes, plain toilet rolls, seagrass, untreated hardwood, hay. Gerbils gnaw constantly, and a bare tank leads to bar chewing and repetitive digging in one corner.", source: "gerbil-enrichment-guide" },
-        { label: "Never by the tail", value: "Grasping pressure causes tail slip, where the skin and fur come away and the whole tail can be lost. Scoop by the body instead, low over a surface.", source: "gerbil-handling-guide" },
-        { label: "If it happens", value: "The skin slips away and the tissue underneath, now exposed, dies, and the bare portion has to be amputated as soon as possible to prevent infection setting in, so this is a vet visit rather than something to watch.", source: "gerbil-health-issues-guide" },
-        { label: "Diarrhea", value: "Tyzzer's disease is the most common infectious disease in this species and can progress to death quickly. Ruffled fur, lethargy, a hunched posture, poor appetite and diarrhea: see a vet immediately.", source: "gerbil-health-issues-guide" },
-        { label: "Head tilt", value: "Aural cholesteatoma, which occurs in half of gerbils over two years old: a growth in the ear canal that pushes the eardrum inward, eventually causing bone damage and inner ear destruction. Head tilt is the visible sign.", source: "gerbil-health-issues-guide" },
-        { label: "Lumps on the belly", value: "Tumors run at a 25 to 40% incidence past two or three years, and scent gland carcinomas in males plus ovarian tumors in females account for roughly 80% of them. The gland sits as a bare orange-tan oval on the midline.", source: "gerbil-health-issues-guide" },
-        { label: "Seizures", value: "They occur in some lines and are uncommon in many pet strains. They commonly start at 2 to 3 months old, get more frequent and severe up to about 6 months, then decline. An episode lasts several minutes and leaves no permanent damage, and medication is not usually needed.", source: "gerbil-health-issues-guide" },
-        { label: "Legal check", value: "Worth settling before you buy: at least one state bans this species outright, and the rules are written in a way that catches it by absence rather than by name.", source: "gerbil-legal-guide" },
-        { label: "Budget", value: "$5 to $50 each and you need at least two, roughly $150 to $350 to set up a pair, and about $10 to $20 a month once the annual supply costs are spread out.", source: "gerbil-cost-guide" },
-        { label: "Lifespan", value: "2 to 3 years is the normal lifespan for this species.", source: "gerbil-cost-guide" },
+        { label: "Never just one", value: "A same-sex pair or sibling group. Introductions between unfamiliar adults frequently fail, which is the hardest part of keeping them.", source: "gerbil-handling-guide" },
+        { label: "Enclosure", value: "A glass aquarium with a mesh lid, not a wire cage, since wire cannot hold deep bedding. A 20-gallon long is the minimum for a pair; a 40-gallon breeder, about 36 by 18 by 16 inches, is the better target.", source: "gerbil-tank-setup-guide" },
+        { label: "Digging depth", value: "6 to 10 inches at minimum, so a pair builds real tunnels. The most commonly under-delivered part of gerbil care.", source: "gerbil-tank-setup-guide" },
+        { label: "Substrate", value: "Aspen and paper bedding with some hay worked in holds tunnel shape. No cedar, no aromatic pine, no scented bedding, no fluffy cotton nesting material.", source: "gerbil-tank-setup-guide" },
+        { label: "Humidity and temperature", value: "Humidity below 40% with good ventilation: above 50% is where the sore red nose starts. Room temperature, 65 to 75°F.", source: "gerbil-tank-setup-guide" },
+        { label: "Wheel", value: "Solid-surface, 8 inches minimum and 10 to 12 better. Wire rungs injure.", source: "gerbil-tank-setup-guide" },
+        { label: "Cleaning", value: "Keep some old nesting material aside during a cleanout and put it back. A fully fresh-smelling tank can set cage mates fighting.", source: "gerbil-tank-setup-guide" },
+        { label: "Staple diet", value: "A uniform pellet or lab block at 18 to 20% protein and fat at or under about 4%. Seed mixes fail because gerbils eat the sunflower seeds and leave the rest.", source: "gerbil-feeding-guide" },
+        { label: "Portion", value: "Roughly 5 to 8 grams, about a tablespoon, per adult per day, once daily. Vegetables every other day, fruit as an occasional treat. Gerbils under 6 months and nursing females need more.", source: "gerbil-feeding-guide" },
+        { label: "Foods to avoid", value: "Grapes and raisins, rhubarb, chocolate, onion and garlic, avocado, raw potato, raw kidney beans, and apple seeds, plus processed human food and dairy.", source: "gerbil-feeding-guide" },
+        { label: "Sand bath", value: "Chinchilla sand, not the finer dust, a couple of times a week rather than left in. Plus cardboard, seagrass, and untreated hardwood to gnaw.", source: "gerbil-enrichment-guide" },
+        { label: "Never by the tail", value: "Grasping pressure strips the skin, and the bare portion has to be amputated. Scoop by the body, low over a surface.", source: "gerbil-handling-guide" },
+        { label: "Diarrhea", value: "Tyzzer's disease is the most common infectious disease here and kills quickly. Ruffled fur, hunched posture, poor appetite and diarrhea: a vet immediately.", source: "gerbil-health-issues-guide" },
+        { label: "Past two years", value: "Head tilt from a growth in the ear canal occurs in half of gerbils over two, and tumors run at 25 to 40%, most of them the belly scent gland in males and ovaries in females.", source: "gerbil-health-issues-guide" },
+        { label: "Legal check", value: "Banned in California, which restricts the whole rodent order, and in Hawaii. Legal in the other 50 of 52 jurisdictions.", source: "gerbil-legal-guide" },
+        { label: "Budget", value: "$5 to $50 each and you need at least two, roughly $150 to $350 to set up a pair, about $10 to $20 a month.", source: "gerbil-cost-guide" },
+        { label: "Lifespan", value: "2 to 3 years.", source: "gerbil-cost-guide" },
         { label: "Adult size", value: "4 to 5 inches (10 to 13 cm) body, plus a furred tail of similar length; 2 to 4 oz." },
-        { label: "Getting one to the vet", value: "A hard-sided carrier with familiar bedding inside, the cage mate travelling along wherever the clinic allows it, and no long pre-surgery fast: the overnight fast a dog gets before anesthesia is wrong for a small mammal this size.", source: "small-mammal-vet-visits-and-travel-guide" },
       ],
     },
     emergencyCard: {
       source: "gerbil-health-issues-guide",
       callNow: [
-        "Diarrhea, don't wait on this one",
-        "A tail stripped of its skin, since the bare portion needs amputating before infection sets in",
+        "Diarrhea, with ruffled fur, a hunched posture, or poor appetite: Tyzzer's disease kills quickly",
+        "A tail stripped of its skin, which needs amputating before infection sets in",
+      ],
+      soon: [
         "A lump along the belly midline",
         "A head tilt",
         "Dropped food or drooling",
-        "A nose that looks persistently red or bloody",
+        "A nose that stays red or bloody after the humidity has been brought under 40%",
       ],
-      vetLine: "Diarrhea in a gerbil is an emergency, see a vet immediately, since Tyzzer's disease can progress to death quickly if untreated.",
+      vetLine: "Diarrhea in a gerbil is an emergency. The second list is a prompt visit, not a wait, and a red nose is a humidity fix first.",
     },
     routes: [
       { slug: "gerbil-cost-guide", line: "$5 to $50 a gerbil and you need two, the $150 to $350 pair setup, and why the monthly figure is smaller than it looks." },
@@ -783,9 +768,10 @@ export const smallMammalGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry, which no deep dive repeats. Vet trips and grooming
-    // cite the shared small mammal guides in the sidebar's Health and More
-    // list. The old hub put Wobbly Hedgehog Syndrome at 1 in 3, ten times the
+    // encyclopedia entry, which no deep dive repeats. No row cites the shared
+    // small mammal guides; they sit in the sidebar's Health and More list.
+    // Rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // The old hub put Wobbly Hedgehog Syndrome at 1 in 3, ten times the
     // figure in the health guide written to correct it, and its cold floor at
     // 65°F against the deep dives' 72. Reconciled 2026-09-14 for batch G
     // (docs/READER_REVIEWS.md).
@@ -793,38 +779,24 @@ export const smallMammalGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Legal check", value: "California, Georgia, Hawaii, Pennsylvania, Washington DC, and New York City will not let you keep one, and none of them has a pet permit to apply for. New Jersey has one and you need it. Maine and Wisconsin get listed as permit states online and neither one is.", source: "hedgehog-legal-guide" },
-        { label: "Enclosure", value: "A minimum of 2 by 3 feet of solid floor space, six square feet, and bigger is fine as long as you fill roughly three-quarters of it with hides and enrichment items. The floor must be solid, never wire, which catches limbs and causes real injuries.", source: "hedgehog-tank-setup-guide" },
-        { label: "Temperature", value: "75 to 85°F ideally, inside a workable 72 to 90°F. Below about 72°F, hedgehogs can attempt to hibernate, a dangerous, potentially fatal response in a species not built to survive it safely in captivity.", source: "hedgehog-tank-setup-guide" },
-        { label: "Heat source", value: "A ceramic heat emitter on a thermostat, necessary for nearly every keeper, since very few homes stay consistently warm enough without one. Avoid light-emitting heat bulbs specifically, which disrupt the day and night cycle and can contribute to triggering hibernation attempts.", source: "hedgehog-tank-setup-guide" },
-        { label: "Humidity", value: "Low, under 40%. A home that runs very dry can leave a hedgehog with itchy, flaky skin, and a humidifier nudging the room up toward that ceiling handles it.", source: "hedgehog-tank-setup-guide" },
-        { label: "Substrate", value: "Recycled paper bedding, aspen shavings, or fleece liners, 3 to 4 inches deep wherever the hedgehog burrows. Nothing rough, dusty, or scented, and nothing with loose fibers or frayed fabric, which can trap toes and limbs.", source: "hedgehog-tank-setup-guide" },
-        { label: "Lighting", value: "Dim, on a consistent 12-hour light and dark cycle. This is a nocturnal species, and bright, constant lighting is genuinely disruptive rather than a minor annoyance.", source: "hedgehog-tank-setup-guide" },
-        { label: "Wheel", value: "A large, solid-surface exercise wheel, 10.5 to 12 inches in diameter, is essential, not optional. Avoid wire or mesh wheels entirely, they cause serious foot and leg injuries.", source: "hedgehog-tank-setup-guide" },
-        { label: "Wheel cleaning", value: "Daily. They run and defecate at the same time, and the mess is not optional. In the owner survey, the keepers who consulted a vet were the ones likelier to do it.", source: "hedgehog-enrichment-guide" },
-        { label: "A hide", value: "The most commonly missing item and one of the cheapest to fix: 84 percent of animals in a 2024 owner survey had none. A hideout plus fleece liners or a snuggle sack gives a nocturnal animal somewhere dark to sleep through the day.", source: "hedgehog-enrichment-guide" },
-        { label: "Floor space", value: "Well past half a square meter, which 68 percent of surveyed animals were housed below. Long and wide rather than tall, with a solid floor: hedgehogs are poor climbers and can be injured falling.", source: "hedgehog-enrichment-guide" },
-        { label: "Living alone", value: "African pygmy hedgehogs are solitary and adults housed together fight. Solo housing is the correct answer for this species, never a compromise.", source: "hedgehog-enrichment-guide" },
-        { label: "Foraging", value: "Scatter feeding, insects released into a dig box of safe substrate, and food hidden inside cardboard or under objects all turn a bowl into a search. Live insects are the strongest version.", source: "hedgehog-enrichment-guide" },
-        { label: "Feeding schedule", value: "Once daily, in the evening, which matches a nocturnal animal's activity. Water stays available around the clock via bottle or bowl, checked daily.", source: "hedgehog-feeding-guide" },
-        { label: "Portion", value: "Roughly 2 to 3 teaspoons of a protein base plus 1 to 2 teaspoons of chopped produce, adjusted by body condition rather than a flat number. Portions generally shrink a bit with age and activity level.", source: "hedgehog-feeding-guide" },
-        { label: "Base diet", value: "A high-quality hedgehog-specific kibble, or a high-quality, low-fat cat food used as a base, moderate to high protein (roughly 30 to 50% dry matter) and moderate fat (10 to 20% dry matter).", source: "hedgehog-feeding-guide" },
-        { label: "Insects", value: "A supplement, not the daily centerpiece: 5 to 6 mealworms or 1 to 2 crickets, 2 to 3 times a week and up to 3 to 4 times weekly. Gut-load them for a day or two first. Waxworms are treat-only, too fatty for a staple.", source: "hedgehog-feeding-guide" },
-        { label: "Foods to avoid", value: "Avocado is toxic. Raw meat, raw eggs, and dairy all cause real problems. Nuts, seeds, and hard raw vegetables like uncooked carrot are choking hazards, so cook vegetables before offering them.", source: "hedgehog-feeding-guide" },
-        { label: "Not eating", value: "Roughly 24 hours is the outer limit before a vet visit is warranted. For a newly acquired hedgehog still adjusting, breeders treat it more loosely, around 2 nights, since some stress-related refusal is expected. Check fecal output, not bowl level.", source: "hedgehog-feeding-guide" },
-        { label: "Picking one up", value: "Scoop from underneath and the sides using flat or cupped hands, like a shovel rather than a grip, and let the ball unroll on its own timeline. Never force a ball open: it teaches the hedgehog that handling means being restrained.", source: "hedgehog-handling-guide" },
-        { label: "Huffing and balling", value: "Defensive reflexes, not aggression, and not a sign you're doing anything wrong. A hedgehog carries around 5,000 to 7,000 quills, smooth and unbarbed so they don't embed in skin, but a balled-up one can still genuinely poke.", source: "hedgehog-handling-guide" },
-        { label: "Quilling", value: "Baby quills out, adult ones in, in episodes: the nest spines go at about a month old and a heavier round lands around 4 months. Expect more grumpiness and more balling up, and expect each episode to pass within a month or so.", source: "hedgehog-handling-guide" },
-        { label: "Self-anointing", value: "A new or interesting smell sets it off, and the hedgehog foams and spreads saliva across its own quills. It looks alarming and is completely normal, not a seizure or a sign of poisoning. Wash your hands afterward before touching your eyes or mouth.", source: "hedgehog-handling-guide" },
-        { label: "Quarantine", value: "Mites are most commonly brought in by a new hedgehog that wasn't properly quarantined, so quarantining any new arrival for at least two weeks is the real prevention.", source: "hedgehog-health-issues-guide" },
-        { label: "Wobbly Hedgehog Syndrome", value: "Older figures put it at roughly 10% of captive hedgehogs. A more recent 20-year study across multiple US veterinary institutions found a lower confirmed rate, closer to 3%, with average onset around 3.3 years. Progression to full paralysis usually runs 9 to 15 months.", source: "hedgehog-health-issues-guide" },
-        { label: "Weight", value: "Watch for a hedgehog that can't fully curl into a ball anymore or struggles to walk or use its wheel. Take weight off gradually: rapid loss can trigger the fatty liver problem it's meant to prevent.", source: "hedgehog-health-issues-guide" },
-        { label: "Budget", value: "$100 to $300 for the hedgehog, roughly $200 to $400 for the setup, and about $20 to $40 a month. Heating electricity adds more in colder months, and this species needs consistent warmth year round.", source: "hedgehog-cost-guide" },
-        { label: "Vet costs", value: "$80 to $200 for an exotic vet visit, which is the kind of vet this species needs. Respiratory infection treatment with medication commonly reaches $200 to $400, and an emergency fund of $500 or more is a reasonable planning number.", source: "hedgehog-cost-guide" },
-        { label: "Lifespan", value: "3 to 6 years typically, with some individuals reaching 8 to 10 years under excellent care. Age 5 is generally considered senior for a hedgehog.", source: "hedgehog-cost-guide" },
+        { label: "Legal check", value: "California, Georgia, Hawaii, Pennsylvania, Washington DC, and New York City will not let you keep one, with no permit to apply for. New Jersey has a permit and you need it. Maine and Wisconsin are not permit states, whatever the internet says.", source: "hedgehog-legal-guide" },
+        { label: "Enclosure", value: "At least 2 by 3 feet of solid floor, never wire, with roughly three-quarters of it filled with hides and enrichment. Long and wide rather than tall: hedgehogs are poor climbers and get hurt falling.", source: "hedgehog-tank-setup-guide" },
+        { label: "Temperature", value: "75 to 85°F, inside a workable 72 to 90°F, from a ceramic heat emitter on a thermostat. Below about 72°F a hedgehog can attempt to hibernate, which can kill it. No light-emitting heat bulbs.", source: "hedgehog-tank-setup-guide" },
+        { label: "Humidity and light", value: "Under 40%. Dim light on a consistent 12-hour cycle for a nocturnal animal.", source: "hedgehog-tank-setup-guide" },
+        { label: "Substrate", value: "Recycled paper bedding, aspen, or fleece liners, 3 to 4 inches deep where it burrows. Nothing dusty, scented, or with loose fibers that trap toes.", source: "hedgehog-tank-setup-guide" },
+        { label: "Wheel", value: "A solid-surface wheel of 10.5 to 12 inches, essential not optional, and cleaned daily: they run and defecate at the same time. Never wire or mesh.", source: "hedgehog-tank-setup-guide" },
+        { label: "A hide", value: "The most commonly missing item: 84 percent of animals in a 2024 owner survey had none. A hideout plus a snuggle sack gives it somewhere dark to sleep through the day.", source: "hedgehog-enrichment-guide" },
+        { label: "Living alone", value: "Solitary. Adults housed together fight, so solo housing is the correct answer, never a compromise.", source: "hedgehog-enrichment-guide" },
+        { label: "Feeding schedule", value: "Once daily in the evening, water available around the clock. Roughly 2 to 3 teaspoons of a protein base plus 1 to 2 teaspoons of chopped produce, adjusted by body condition.", source: "hedgehog-feeding-guide" },
+        { label: "Base diet", value: "A hedgehog-specific kibble or a low-fat cat food, roughly 30 to 50% protein and 10 to 20% fat. Insects are a supplement: 5 to 6 mealworms or 1 to 2 crickets, 2 to 3 times a week.", source: "hedgehog-feeding-guide" },
+        { label: "Foods to avoid", value: "Avocado is toxic. Raw meat, raw eggs, and dairy cause real problems, and nuts, seeds, and hard raw vegetables are choking hazards.", source: "hedgehog-feeding-guide" },
+        { label: "Not eating", value: "Roughly 24 hours is the limit before a vet visit. A newly acquired hedgehog gets closer to 2 nights, since some stress refusal is expected. Check fecal output, not bowl level.", source: "hedgehog-feeding-guide" },
+        { label: "Picking one up", value: "Scoop from underneath with flat or cupped hands and let the ball unroll on its own time. Never force a ball open. Huffing and balling are reflexes, not aggression.", source: "hedgehog-handling-guide" },
+        { label: "Quilling and self-anointing", value: "Baby quills go at about a month and a heavier round lands around 4 months, with grumpiness that passes within a month. Foaming saliva over its own quills after a new smell is normal, not poisoning.", source: "hedgehog-handling-guide" },
+        { label: "Quarantine", value: "At least two weeks for any new arrival, which is how mites are kept out.", source: "hedgehog-health-issues-guide" },
+        { label: "Budget", value: "$100 to $300 for the hedgehog, roughly $200 to $400 for the setup, about $20 to $40 a month plus heating. An exotic vet visit is $80 to $200, and an emergency fund of $500 or more is reasonable.", source: "hedgehog-cost-guide" },
+        { label: "Lifespan", value: "3 to 6 years typically, some to 8 to 10.", source: "hedgehog-cost-guide" },
         { label: "Adult size", value: "5 to 9 inches (13 to 23 cm); 8 to 24 oz." },
-        { label: "Getting one to the vet", value: "A hard-sided carrier with a towel or familiar bedding inside, and no long pre-surgery fast: the overnight fast a dog gets before anesthesia is wrong for a small mammal this size.", source: "small-mammal-vet-visits-and-travel-guide" },
-        { label: "Grooming", value: "Nail trims and coat checks look like tidiness chores and are actually health checks. Work them into the handling routine rather than treating them as a separate event.", source: "small-mammal-grooming-nails-molting-guide" },
       ],
     },
     emergencyCard: {
@@ -833,11 +805,13 @@ export const smallMammalGuides = [
         "Any wobbling or change in coordination",
         "Difficulty fully curling into a ball",
         "Wheezing, nasal discharge, and lethargy",
-        "A body that feels cold, which may be a hibernation attempt",
-        "Crusting or flaking skin and quill loss",
-        "Scaly patches near the base of the quills, which is zoonotic",
+        "A body that feels cold, which may be a hibernation attempt: warm it gradually on the way",
       ],
-      vetLine: "Always see a vet for any wobbling or coordination changes, since several other conditions, cold-related sluggishness, minor strokes, and tumors, can look similar and are far more treatable.",
+      soon: [
+        "Crusting or flaking skin and quill loss",
+        "Scaly patches near the base of the quills, which can spread to people",
+      ],
+      vetLine: "Always see a vet for wobbling or coordination changes, since cold-related sluggishness, minor strokes, and tumors look similar and are far more treatable.",
     },
     routes: [
       { slug: "hedgehog-cost-guide", line: "$100 to $300 for the animal, $200 to $400 to set up, $20 to $40 a month, and why the legal question comes before any of it." },
@@ -964,54 +938,46 @@ export const smallMammalGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult body length comes from the
-    // encyclopedia entry, which no deep dive repeats. Vet trips and grooming
-    // cite the shared small mammal guides in the sidebar's Health and More
-    // list. Built 2026-09-14 for the sugar glider set test
-    // (docs/READER_REVIEWS.md).
+    // encyclopedia entry, which no deep dive repeats. No row cites the shared
+    // small mammal guides; they sit in the sidebar's Health and More list.
+    // Built 2026-09-14 for the sugar glider set test (docs/READER_REVIEWS.md),
+    // rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Legal check", value: "Illegal statewide in California, Alaska, and Hawaii, effectively illegal in Pennsylvania where possession permits exist on paper but are almost never granted, banned in the District of Columbia and in New York City, permit-required in New Jersey, and import-permit-required in New Mexico. Generally legal everywhere else: Georgia, Massachusetts, and Wyoming are frequently misreported online as banning them and do not.", source: "sugar-glider-legal-guide" },
-        { label: "Never one glider", value: "Sugar gliders are colonial and should be kept in pairs or small groups. That is the natural history and the veterinary consensus, and solitary housing is treated as a major welfare risk. Two minimum, more if you have the space, and neutering males avoids both breeding and a good deal of the scent marking.", source: "sugar-glider-enrichment-guide" },
-        { label: "Cage size", value: "A minimum of roughly 30 by 18 by 36 inches for a pair, though many current keepers recommend going larger still, 24 by 24 by 48 inches or more. Whatever footprint you choose, prioritize vertical space, this is a climbing, gliding animal.", source: "sugar-glider-tank-setup-guide" },
-        { label: "Bar spacing", value: "No more than half an inch. Young gliders are small enough to squeeze through wider gaps, and escape-proofing matters more with this species than the cage's overall size might suggest.", source: "sugar-glider-tank-setup-guide" },
-        { label: "Temperature", value: "75 to 88°F is the comfortable range. Keep the cage away from drafts and direct sun, and place it in a consistently warm part of the house rather than somewhere temperature fluctuates a lot through the day.", source: "sugar-glider-tank-setup-guide" },
-        { label: "Humidity and lighting", value: "No special humidity control is needed for this species, and ordinary household lighting is sufficient. There is no UVB requirement the way many reptiles have.", source: "sugar-glider-tank-setup-guide" },
-        { label: "Cage floor", value: "A solid cage bottom with washable liners or trays underneath the main living area, rather than loose bedding that accumulates waste and becomes harder to keep clean.", source: "sugar-glider-tank-setup-guide" },
-        { label: "Wheel", value: "A standard hamster or rat wheel is genuinely dangerous for a sugar glider, not just the wrong size. Many of those wheels have a center axle bar running through the middle, and that bar can seriously injure a glider's spine or tail during use. Look specifically for an axle-free design built for this species.", source: "sugar-glider-tank-setup-guide" },
-        { label: "Sleeping pouch", value: "Position the sleeping pouch high in the cage, matching this species' natural preference for elevated, secure resting spots. A bonding pouch doubles as this resting spot and is also the starting point for taming.", source: "sugar-glider-tank-setup-guide" },
-        { label: "Cage cover", value: "Cover part of the cage with fleece, over the top, back, and sides. It helps a new or still-bonding glider feel more secure, and supports the taming process.", source: "sugar-glider-tank-setup-guide" },
-        { label: "Climbing routes", value: "Branches at varied heights and angles, ropes, and gaps small enough to cross with a short glide give them routes instead of a ladder. The test is whether a glider can get from the bottom to the top and across the cage without touching the bars.", source: "sugar-glider-enrichment-guide" },
-        { label: "Diet split", value: "Roughly one-third nutritionally balanced pelleted kibble, one-third a nectar or sap-based mixture, and one-third a small number of insects offered every other day, a calcium-based multivitamin, and a variety of fresh vegetables and fruits.", source: "sugar-glider-feeding-guide" },
-        { label: "Formulated diets", value: "Established, vet-endorsed formulated diets include Leadbeater's mixture, Bourbon's Modified Leadbeater's (BML), High Protein Wombaroo (HPW), Critter Love Complete, and Exotic Nutrition diets.", source: "sugar-glider-feeding-guide" },
-        { label: "Portion and timing", value: "Roughly 15 to 20% of body weight daily, offered in the evening since gliders are nocturnal. Kibble can stay available at all times, while the fresh, nectar, insect, and produce components are given daily, with insects every other day. Keep fruit to a small portion.", source: "sugar-glider-feeding-guide" },
-        { label: "Calcium to phosphorus", value: "The target dietary calcium-to-phosphorus ratio is roughly 2:1, with 1.5:1 to 2:1 also given.", source: "sugar-glider-feeding-guide" },
-        { label: "Supplements", value: "A calcium and vitamin D3 multivitamin made specifically for sugar gliders, not a reptile vitamin, is essential because the typical fruit-and-insect diet runs phosphorus-rich and calcium-poor. Dust or gut-load insects with calcium before feeding, and sprinkle the multivitamin on food.", source: "sugar-glider-feeding-guide" },
-        { label: "Foods to avoid", value: "Chocolate and dairy, canned fruit for its excess sodium and preservatives, and any pesticide-treated produce. Foods high in oxalates that impair calcium absorption, including raspberries, strawberries, blackberries, spinach, carrots, beets, pears, lettuce, figs, and collard greens. Skip yogurt drops, peanut butter, pasta, rice, and human candy entirely.", source: "sugar-glider-feeding-guide" },
-        { label: "Adult weight", value: "Adult males typically weigh 100 to 160 grams and adult females 80 to 130 grams.", source: "sugar-glider-feeding-guide" },
-        { label: "Bonding", value: "Direct handling isn't where this starts. Gliders bond by being carried against your body in a dedicated bonding pouch, absorbing your scent over time until they recognize you as safe. Plan for one to two hours of daily interaction once bonding is underway, and a settling-in period of several days before starting interactive handling at all.", source: "sugar-glider-handling-guide" },
-        { label: "Handling room", value: "Gliders chill easily, keep the space above roughly 68°F during sessions.", source: "sugar-glider-handling-guide" },
-        { label: "Crabbing", value: "A loud buzzing or chattering sound, the signature defensive response when a glider feels frightened. Gliders aren't easily handled by strangers and will often bite, vocalize, or urinate if forcibly restrained, and a frightened glider's bite can be surprisingly deep.", source: "sugar-glider-handling-guide" },
-        { label: "Budget", value: "$200 to $500 each, and you need two, with standard greys toward the lower end and rescue gliders $50 to $200. Roughly $500 to $1,200 upfront for a pair, and $30 to $60 a month. Most keepers report a full first-year cost, gliders plus setup, in the $800 to $1,500-plus range.", source: "sugar-glider-cost-guide" },
-        { label: "Vet costs", value: "An exotic vet visit runs $75 to $200. Neutering a male, commonly recommended, runs $100 to $200. No vaccines are needed for this species. Budget at least $200 for unexpected care, sugar gliders can decline quickly when something goes wrong nutritionally.", source: "sugar-glider-cost-guide" },
-        { label: "Lifespan", value: "10 to 15 years in captivity, commonly cited around 12 to 15.", source: "sugar-glider-cost-guide" },
+        { label: "Legal check", value: "Illegal in California, Alaska, Hawaii, the District of Columbia, and New York City, effectively illegal in Pennsylvania, permit-required in New Jersey, import-permit in New Mexico. Georgia, Massachusetts, and Wyoming do not ban them, whatever the internet says.", source: "sugar-glider-legal-guide" },
+        { label: "Never one glider", value: "Colonial, so two minimum, and solitary housing is a major welfare risk by veterinary consensus. Neutering males avoids breeding and most of the scent marking.", source: "sugar-glider-enrichment-guide" },
+        { label: "Cage size", value: "At least 30 by 18 by 36 inches for a pair, and 24 by 24 by 48 or more is the current advice. Height first: this is a climbing, gliding animal.", source: "sugar-glider-tank-setup-guide" },
+        { label: "Bar spacing", value: "No more than half an inch. Young gliders squeeze through wider gaps.", source: "sugar-glider-tank-setup-guide" },
+        { label: "Temperature", value: "75 to 88°F, in a consistently warm room away from drafts and direct sun. No humidity control, no UVB, ordinary lighting.", source: "sugar-glider-tank-setup-guide" },
+        { label: "Cage floor and cover", value: "A solid bottom with washable liners rather than loose bedding. Fleece over the top, back, and sides helps a new glider feel secure.", source: "sugar-glider-tank-setup-guide" },
+        { label: "Wheel", value: "A hamster or rat wheel is dangerous, not just the wrong size: the center axle bar can injure a glider's spine or tail. An axle-free design built for gliders.", source: "sugar-glider-tank-setup-guide" },
+        { label: "Sleeping pouch", value: "High in the cage, matching the preference for elevated resting spots. A bonding pouch doubles as it and starts the taming.", source: "sugar-glider-tank-setup-guide" },
+        { label: "Climbing routes", value: "Branches at varied heights and angles, ropes, and gaps short enough to glide. The test is getting bottom to top and across the cage without touching the bars.", source: "sugar-glider-enrichment-guide" },
+        { label: "Diet split", value: "Roughly one-third pelleted kibble, one-third a nectar or sap mix, one-third insects every other day, plus a calcium multivitamin and fresh produce. Leadbeater's, BML, HPW, and Critter Love are the vet-endorsed formulas.", source: "sugar-glider-feeding-guide" },
+        { label: "Portion and timing", value: "Roughly 15 to 20% of body weight daily, in the evening, since gliders are nocturnal. Adult males weigh 100 to 160 grams, females 80 to 130. Fruit stays a small portion.", source: "sugar-glider-feeding-guide" },
+        { label: "Calcium", value: "A 2:1 calcium-to-phosphorus target and a glider-specific calcium and D3 multivitamin, not a reptile vitamin, because fruit and insects run calcium-poor. Dust the insects.", source: "sugar-glider-feeding-guide" },
+        { label: "Foods to avoid", value: "Chocolate, dairy, canned fruit, yogurt drops, peanut butter, and candy. High-oxalate foods that block calcium absorption: raspberries, strawberries, blackberries, spinach, carrots, beets, pears, lettuce, figs, collard greens.", source: "sugar-glider-feeding-guide" },
+        { label: "Bonding", value: "Not direct handling. A glider bonds by being carried against your body in a pouch until it learns your scent, after several days of settling in, then one to two hours a day. Keep the room above roughly 68°F: they chill easily.", source: "sugar-glider-handling-guide" },
+        { label: "Crabbing", value: "A loud buzzing chatter means frightened. A restrained glider bites, and the bite can be deep.", source: "sugar-glider-handling-guide" },
+        { label: "Budget", value: "$200 to $500 each and you need two, so $500 to $1,200 for a pair with setup and $30 to $60 a month. An exotic vet visit is $75 to $200, neutering $100 to $200, and at least $200 in reserve.", source: "sugar-glider-cost-guide" },
+        { label: "Lifespan", value: "10 to 15 years in captivity.", source: "sugar-glider-cost-guide" },
         { label: "Adult size", value: "5 to 6 inches (13 to 15 cm) body." },
-        { label: "Getting one to the vet", value: "A hard-sided carrier with a towel or a familiar pouch inside, the cage mate travelling along wherever the clinic allows it, and no long pre-surgery fast: the overnight fast a dog gets before anesthesia is wrong for a small mammal this size.", source: "small-mammal-vet-visits-and-travel-guide" },
-        { label: "Grooming", value: "Nail trims, coat checks, and scent glands look like tidiness chores and are actually health checks. Work them into the handling routine rather than treating them as a separate event.", source: "small-mammal-grooming-nails-molting-guide" },
       ],
     },
     emergencyCard: {
       source: "sugar-glider-health-issues-guide",
       callNow: [
-        "Hind-limb weakness progressing toward paralysis",
-        "Trembling",
+        "Hind-limb weakness, or trembling, at the first sign",
         "Difficulty climbing",
-        "Fractures or seizures, which are the advanced signs",
-        "Chewing at their own skin or tail",
-        "A diet imbalanced the other way, too much fat or sugar: manageable at home, but worth a vet visit to confirm the adjustments rather than guessing",
+        "Fractures or seizures, the advanced signs",
+        "Chewing at its own skin or tail",
       ],
-      vetLine: "Always see a vet at the first sign of hind-limb weakness or trembling. Caught early, this is treatable with corrected calcium, vitamin D3, and an overall diet fix. The real fix, though, is prevention, feeding a properly balanced diet from the start, not waiting for symptoms to appear.",
+      soon: [
+        "Weight gain on a diet heavy in fat or sugar: correct it at home, and confirm the adjustment with a vet",
+      ],
+      vetLine: "Caught early, hind-limb weakness is treatable with corrected calcium, vitamin D3, and a diet fix. The real fix is a balanced diet from the start.",
     },
     routes: [
       { slug: "sugar-glider-cost-guide", line: "$200 to $500 each and you need two, a $500 to $1,200 setup, and the first-year number most keepers report." },
