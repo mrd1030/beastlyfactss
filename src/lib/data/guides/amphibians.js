@@ -89,7 +89,7 @@ export const amphibianGuides = [
     // encyclopedia entry and the cost guide. Quarantine, the water rule and
     // hygiene cite the shared amphibian and reptile guides in the sidebar's
     // Health and More list. Rewritten to the template shape 2026-09-16
-    // (docs/HUB_ROUTER_REVIEWS.md). Built 2026-09-15 for the fire-bellied toad set test
+    // (archive/docs-completed/HUB_ROUTER_REVIEWS.md). Built 2026-09-15 for the fire-bellied toad set test
     // (docs/READER_REVIEWS.md). The old hub named the skin toxin as
     // "pumiliotoxins", which is a dendrobatid alkaloid this species does not
     // produce; it also contradicted its own deep dives on tank size, layout,
@@ -171,7 +171,7 @@ export const amphibianGuides = [
     // hub keeps no number of its own. Quarantine, water, and hygiene rows cite
     // the shared amphibian and reptile guides in the sidebar's Health and More
     // list. Rewritten to the template shape 2026-09-16
-    // (docs/HUB_ROUTER_REVIEWS.md). They sit in the same sidebar Health and More
+    // (archive/docs-completed/HUB_ROUTER_REVIEWS.md). They sit in the same sidebar Health and More
     // list. Built 2026-09-14 for the pacman frog set test
     // (docs/READER_REVIEWS.md).
     layout: "router",
@@ -251,7 +251,7 @@ export const amphibianGuides = [
     // entry, which no deep dive repeats. Quarantine and hygiene cite the
     // shared amphibian and reptile guides in the sidebar's Health and More
     // list. Rewritten to the template shape 2026-09-16
-    // (docs/HUB_ROUTER_REVIEWS.md). Built 2026-09-15 for the tiger salamander set test
+    // (archive/docs-completed/HUB_ROUTER_REVIEWS.md). Built 2026-09-15 for the tiger salamander set test
     // (docs/READER_REVIEWS.md), which found the old hub telling readers distilled
     // water was a fine substitute while the shared amphibian water guide calls it
     // potentially fatal, and carrying the set's only feeding schedule with
@@ -335,7 +335,7 @@ export const amphibianGuides = [
     // entry, which no deep dive repeats. Quarantine, moving a new arrival,
     // and hygiene cite the shared amphibian and reptile guides in the
     // sidebar's Health and More list. Rewritten to the template shape
-    // 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md). Built 2026-09-09 for
+    // 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md). Built 2026-09-09 for
     // the White's tree frog set test (docs/READER_REVIEWS.md), which found the
     // old hub telling readers to mist with reverse-osmosis water while the tank
     // setup guide told them never to; the deep dive was right and the hub's

@@ -14,7 +14,7 @@ export const snakeGuides = [
     // encyclopedia entry, which no deep dive repeats in full. Quarantine, the
     // thermostat probe, the power-outage floor, and weight checks cite the
     // shared reptile and snake guides in the sidebar's Health and More list.
-    // Rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // Rewritten to the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     // Built 2026-09-08 for the ball python set test
     // (docs/READER_REVIEWS.md).
     layout: "router",
@@ -168,7 +168,7 @@ export const snakeGuides = [
     // hub keeps no number of its own. Adult size comes from the encyclopedia
     // entry, which no deep dive repeats. Quarantine and power outage cite the
     // shared reptile guides in the sidebar's Health and More list. Rewritten
-    // to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md). This
+    // to the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md). This
     // species has no feeding guide, so the feeding row is sourced
     // to the Diet Basics section of the setup guide. Reconciled 2026-09-14 for
     // batch G (docs/READER_REVIEWS.md).
@@ -324,7 +324,7 @@ export const snakeGuides = [
     // the hub keeps no number of its own. Adult size comes from the
     // encyclopedia entry. Quarantine, hygiene and weight checks cite the
     // shared reptile and snake guides in the sidebar's Health and More list.
-    // Rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // Rewritten to the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     // Reconciled 2026-09-15 after the garter
     // snake set test (docs/READER_REVIEWS.md).
     //
@@ -416,7 +416,7 @@ export const snakeGuides = [
     // entry, which no deep dive repeats. Quarantine, the thermostat probe,
     // weight checks, and the power-outage floor cite the shared reptile and
     // snake guides in the sidebar's Health and More list. Rewritten to the
-    // template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md). The old hub's
+    // template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md). The old hub's
     // 40 to 60% humidity and its crepuscular
     // activity line are both retired here: the tank setup guide's 30 to 50%
     // and its diurnal reading are the sourced ones (ReptiFiles, The Bio Dude).
@@ -499,7 +499,7 @@ export const snakeGuides = [
     // encyclopedia entry, which no deep dive repeats. Quarantine, hygiene and
     // power outage cite the shared reptile guides in the sidebar's Health and
     // More list. Rewritten to the template shape 2026-09-16
-    // (docs/HUB_ROUTER_REVIEWS.md). This species has no feeding guide, so the
+    // (archive/docs-completed/HUB_ROUTER_REVIEWS.md). This species has no feeding guide, so the
     // feeding rows are
     // sourced to the Diet Basics section of the setup guide. The old hub sold
     // an under-tank heater as the primary heat source where the setup guide
@@ -583,7 +583,7 @@ export const snakeGuides = [
     // hub keeps no number of its own. Adult size comes from the encyclopedia
     // entry. Quarantine, the thermostat probe and hygiene cite the shared
     // reptile guides in the sidebar's Health and More list. Rewritten to the
-    // template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md). Built
+    // template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md). Built
     // 2026-09-15 for the rosy boa set test (docs/READER_REVIEWS.md). The old hub
     // put shed humidity at 60 to 65%, above the ceiling the health guide's whole
     // argument rests on, which is the one a beginner reading only the hub would

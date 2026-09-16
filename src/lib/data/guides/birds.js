@@ -136,6 +136,7 @@ export const birdGuides = [
     ],
     faqs: [
       { q: "How much does a budgie itself cost?", a: "$20 to $80. It's the cheapest part of ownership, the cage and long-term avian vet care are where the budget goes." },
+      { q: "Is a budgie the same thing as a parakeet?", a: "Yes, in the way most people in the US use the word. 'Parakeet' is a broad, non-scientific term for a large group of small to medium parrots with long tail feathers, and the budgerigar (Melopsittacus undulatus), the bird this guide covers, is just one species within that group, though it's by far the most commonly kept one. So every budgie is a parakeet, but not every parakeet is a budgie, ring-necked and monk parakeets are different species entirely. When a US pet store sells a bird simply labeled 'parakeet' with no other name attached, it's almost always a budgie." },
       { q: "What size cage does a budgie need?", a: "18x18x18 inches is the figure usually cited as an absolute minimum for one bird, but a wide flight-style cage serves them far better, nearer 30x18x18 for a pair. Width beats height, since budgies fly side to side rather than climbing." },
       { q: "What are the signs a budgie needs to see a vet the same day?", a: "Fluffed feathers plus daytime sleeping, tail-bobbing with each breath, open-mouth breathing, or sitting on the cage floor instead of perching. Budgies mask illness well, so any of those means a vet within 24 hours, not a few days of watching." },
     ],
@@ -155,7 +156,7 @@ export const birdGuides = [
     // entry, which no deep dive repeats. Quarantine, household hazards, pellet
     // conversion, and sleep and droppings cite the shared bird guides in the
     // sidebar's Health and More list. Rewritten to the template shape
-    // 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md). This species has no feeding
+    // 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md). This species has no feeding
     // guide, so the diet rows point at the tank setup guide's Diet Basics
     // section, added in the same pass. Built 2026-09-14 for the canary set test
     // (docs/READER_REVIEWS.md).
@@ -376,7 +377,7 @@ export const birdGuides = [
     // encyclopedia entry, which no deep dive repeats. Day one, pellet
     // conversion, and power outage cite the shared bird guides in the
     // sidebar's Health and More list. Rewritten to the template shape
-    // 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md). This species has no feeding guide of
+    // 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md). This species has no feeding guide of
     // its own, so the pellet conversion row is where a new owner finds the
     // seed-to-pellet schedule. Reconciled 2026-09-09 for batch D
     // (docs/READER_REVIEWS.md).
@@ -522,7 +523,7 @@ export const birdGuides = [
     // entry, which no deep dive repeats. Quarantine, household hazards,
     // chronic egg laying, and sexing and weight cite the shared bird guides in
     // the sidebar's Health and More list. Rewritten to the template shape
-    // 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md). Built 2026-09-15
+    // 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md). Built 2026-09-15
     // for the parrotlet set test (docs/READER_REVIEWS.md), which found the old
     // hub recommending 3/8 to 1/2 inch bar spacing, the range the setup guide
     // calls a lovebird range, and stating a 15 to 20 year lifespan the cost
@@ -608,7 +609,7 @@ export const birdGuides = [
     // hub keeps no number of its own. Adult size comes from the encyclopedia
     // entry. Quarantine, household hazards and droppings cite the shared bird
     // guides in the sidebar's Health and More list. Rewritten to the template
-    // shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md): the diet row no longer
+    // shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md): the diet row no longer
     // sums past 100 percent, and the vet row says the exam price is for an
     // established client. Built 2026-09-15 for the
     // quaker parakeet set test (docs/READER_REVIEWS.md). The old hub had a
@@ -695,7 +696,7 @@ export const birdGuides = [
     // entry, which no deep dive repeats. Quarantine, household hazards, pellet
     // conversion, and sleep and droppings cite the shared bird guides in the
     // sidebar's Health and More list. Rewritten to the template shape
-    // 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md): the pellet ratio is a target
+    // 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md): the pellet ratio is a target
     // reached gradually, and quarantine says what it is from. Built 2026-09-14 for the zebra finch set
     // test (docs/READER_REVIEWS.md).
     layout: "router",

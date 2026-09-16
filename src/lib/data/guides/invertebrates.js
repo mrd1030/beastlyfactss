@@ -14,7 +14,7 @@ export const invertebrateGuides = [
     // encyclopedia entry. No row cites the shared aquarium guides; they sit in
     // the sidebar's Health and More list. Reconciled 2026-09-15 after the amano
     // shrimp set test (docs/READER_REVIEWS.md), rewritten to the template shape
-    // 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     //
     // The old hub's prices were all above the cost guide's table and none
     // of them are moved: the tank at $45 to $90 against $18 to $30, the
@@ -100,7 +100,7 @@ export const invertebrateGuides = [
     // the hub keeps no number of its own. No row cites the shared aquarium
     // guides; they sit in the sidebar's Health and More list. Reconciled
     // 2026-09-15 after the cherry shrimp set test (docs/READER_REVIEWS.md),
-    // rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // rewritten to the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     //
     // The old hub said in its own comment that its pricing was unverified, and
     // the reader graded it C+ as "where I got most of my wrong ideas." Retired
@@ -195,7 +195,7 @@ export const invertebrateGuides = [
     // hub keeps no number of its own. Adult size and lifespan come from the
     // encyclopedia entry. Rehousing and pesticides share one row citing the
     // shared invertebrate guides in the sidebar's Health and More list.
-    // Rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // Rewritten to the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     // Built 2026-09-15 for the emperor scorpion set test (docs/READER_REVIEWS.md),
     // which found the old hub wrong against its own deep dives on substrate
     // depth, humidity, temperature, adult and juvenile feeding frequency, the
@@ -280,7 +280,7 @@ export const invertebrateGuides = [
     // the hub keeps no number of its own. Summer cooling cites the shared
     // guides in the sidebar's Health and More list. Reconciled 2026-09-15 after
     // the ghost shrimp set test (docs/READER_REVIEWS.md), rewritten to the
-    // template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     //
     // Retired rather than moved: "Heater if room runs below 65F" against the
     // setup guide's 72 to 82F comfortable range, seven degrees apart on whether
@@ -376,7 +376,7 @@ export const invertebrateGuides = [
     // shared invertebrate guides in the sidebar's Health and More list.
     // Reconciled 2026-09-15 after the giant millipede set test
     // (docs/READER_REVIEWS.md), rewritten to the template shape 2026-09-16
-    // (docs/HUB_ROUTER_REVIEWS.md).
+    // (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     //
     // The old hub's cost table was above the cost guide on every line it
     // shared: the tank at $40 to $80 against $35 to $60, substrate at $20 to
@@ -470,7 +470,7 @@ export const invertebrateGuides = [
     // outage row cite the shared invertebrate guides in the sidebar's Health
     // and More list. Reconciled 2026-09-09 after the hermit crab set test
     // (docs/READER_REVIEWS.md), rewritten to the template shape 2026-09-16
-    // (docs/HUB_ROUTER_REVIEWS.md).
+    // (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
@@ -551,7 +551,7 @@ export const invertebrateGuides = [
     // cite the shared invertebrate guides in the sidebar's Health and More
     // list. Reconciled 2026-09-15 after the jumping spider set test
     // (docs/READER_REVIEWS.md), rewritten to the template shape 2026-09-16
-    // (docs/HUB_ROUTER_REVIEWS.md).
+    // (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     //
     // The old hub disagreed with a deep dive on almost every number a buyer
     // would write down, which is how the reader put it: enclosure 5x5x8 inches
@@ -639,7 +639,7 @@ export const invertebrateGuides = [
     // encyclopedia entry. Pesticides cites the shared invertebrate guides in
     // the sidebar's Health and More list. Reconciled 2026-09-15 after the
     // hissing cockroach set test (docs/READER_REVIEWS.md), rewritten to the
-    // template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     //
     // What the old hub had wrong, in the reader's order: humidity 50 to 70%
     // against the setup and health guides' 60 to 70%; "temperatures of 75 to
@@ -732,7 +732,7 @@ export const invertebrateGuides = [
     // encyclopedia entry. Pre-molt signs cite the shared invertebrate molting
     // guide in the sidebar's Health and More list. Reconciled 2026-09-15 after
     // the praying mantis set test (docs/READER_REVIEWS.md), rewritten to the
-    // template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     //
     // The old hub carried unverified pricing by its own admission and every
     // one of its figures lost to a deep dive. Retired rather than moved:
@@ -825,7 +825,7 @@ export const invertebrateGuides = [
     // encyclopedia entry. Pesticides and the outage plan cite the shared
     // invertebrate guides in the sidebar's Health and More list. Reconciled
     // 2026-09-15 after the stick insect set test (docs/READER_REVIEWS.md),
-    // rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // rewritten to the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     //
     // The legality line is why this hub graded C+. It said "They are legal,
     // widely available, cheap, hardy" while the cost guide on the same site

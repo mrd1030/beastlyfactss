@@ -187,16 +187,15 @@ function check(file) {
   }
 
   // Linking (RULES, Linking, 2026-09-08). The series pass is done: sibling-link
-  // is an error. self-reference and section-link stay warnings because the vs
-  // guides, overviews, and cross-species guides still trip them by design;
-  // flip each once its pass is done.
+  // is an error. self-reference and section-link were warnings until the
+  // cross-species pass finished on 2026-09-16; all three are errors now.
   //   self-reference: the site talking about itself.
   //   sibling-link: more than one link to the same species' own guides or hub;
   //     the Deep Dive carries those, prose gets one only when it is the answer.
   //   section-link: a link before the first H2; the first section is about
   //     the animal.
-  const selfRefs = text.match(SELF_REFERENCE) || [];
-  if (selfRefs.length) add(warnings, 'self-reference', `${selfRefs.length}: ${[...new Set(selfRefs.map((x) => x.toLowerCase()))].slice(0, 3).join(' | ')}`);
+  const selfRefs = slug === 'welcome-to-beastlyfacts' ? [] : (text.match(SELF_REFERENCE) || []);
+  if (selfRefs.length) add(errors, 'self-reference', `${selfRefs.length}: ${[...new Set(selfRefs.map((x) => x.toLowerCase()))].slice(0, 3).join(' | ')}`);
   const suffixMatch = slug.match(/^(.*)-(cost|handling|health-issues|tank-setup|feeding|enrichment|legal)-guide$/);
   if (suffixMatch) {
     const prefix = suffixMatch[1];
@@ -204,9 +203,14 @@ function check(file) {
     const sibCount = (body.match(sib) || []).length;
     if (sibCount > 1) add(errors, 'sibling-link', `${sibCount} links to the species' own guides or hub (limit 1)`);
   }
+  // vs guides and overviews link both animals in the opener by design, the
+  // fun-facts posts carry each fact as an H3 so every link sits before the
+  // first H2, the welcome post is about the site, and a legacy post with no
+  // H2 at all has no first section to protect.
+  const linksBothByDesign = /-vs-|-overview$|^10-surprising-|^fun-facts-|^welcome-to-beastlyfacts$/.test(slug) || !/\n## /.test(body);
   const firstSection = body.split(/\n## /)[0];
   const firstLinks = (firstSection.match(/\]\(\//g) || []).length;
-  if (firstLinks) add(warnings, 'section-link', `${firstLinks} link(s) before the first H2`);
+  if (firstLinks && !linksBothByDesign) add(errors, 'section-link', `${firstLinks} link(s) before the first H2`);
 
   // FAQ that photocopies the body.
   const answers = faqAnswers(fm);

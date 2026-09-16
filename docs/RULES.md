@@ -198,7 +198,7 @@ third care sheet.
   words, the longest template row. Ten words of slack on either word cap, only
   when a figure will not fit otherwise. The first hub of any batch is compared
   against bearded dragon before the rest are built. Decided 2026-09-16, after
-  the router review (docs/HUB_ROUTER_REVIEWS.md); all 84 hubs were rebuilt
+  the router review (archive/docs-completed/HUB_ROUTER_REVIEWS.md); all 84 hubs were rebuilt
   from the pre-trim rows that day.
 - Figures are copied exactly, prose may be compressed. Every number, unit and
   hedge in a hub row reads as the deep dive states it: 110 to 120F stays 110 to

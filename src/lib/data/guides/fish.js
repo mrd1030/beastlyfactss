@@ -13,7 +13,7 @@ export const fishGuides = [
     // hub keeps no number of its own. Adult size comes from the encyclopedia
     // entry, which no deep dive repeats. Quarantine and power outage cite the
     // shared aquarium guides in the sidebar's Health and More list. Rewritten to
-    // the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md). The old hub's
+    // the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md). The old hub's
     // weekly 25% water change was
     // a figure no deep dive carries, so it is retired here and filed as a gap in
     // docs/READER_LOG.md. Built 2026-09-14 for the angelfish set test
@@ -171,7 +171,7 @@ export const fishGuides = [
     // encyclopedia entry. The power outage rule cites the shared aquarium
     // guides in the sidebar's Health and More list. Reconciled 2026-09-15 after
     // the bristlenose pleco set test (docs/READER_REVIEWS.md), rewritten to the
-    // template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     //
     // The reader graded the old hub B- and said the tank price alone "is the
     // kind of thing that makes me re-check everything else." Retired rather
@@ -266,7 +266,7 @@ export const fishGuides = [
     // encyclopedia entry, which no deep dive repeats. Water chemistry and the
     // power outage rule cite the shared fish guides in the sidebar's Health and
     // More list. Rewritten to the template shape 2026-09-16
-    // (docs/HUB_ROUTER_REVIEWS.md). The old hub narrowed the temperature band to 73-81 against
+    // (archive/docs-completed/HUB_ROUTER_REVIEWS.md). The old hub narrowed the temperature band to 73-81 against
     // the setup guide's 73-84, put the school floor at 6 against the
     // handling and enrichment guides' 10, and misspelled the neon tetra
     // disease parasite as "hyphessobrycetis". Reconciled 2026-09-14 for
@@ -347,7 +347,7 @@ export const fishGuides = [
     // the hub keeps no number of its own. Adult size comes from the
     // encyclopedia entry, which no deep dive repeats. The cycling row cites the
     // shared fish guides in the sidebar's Health and More list. Rewritten to the
-    // template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md). The old hub priced a tank at double the cost
+    // template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md). The old hub priced a tank at double the cost
     // guide's figure and a filter at more than double, gave "10 to 20 gallon"
     // without saying 10 is pygmy-only, and omitted the heater and test kit
     // the cost guide calls required. Reconciled 2026-09-15 for batch I
@@ -429,7 +429,7 @@ export const fishGuides = [
     // encyclopedia entry. The hospital tank and the power outage rule cite the
     // shared aquarium guides in the sidebar's Health and More list. Reconciled
     // 2026-09-15 after the discus set test (docs/READER_REVIEWS.md), rewritten
-    // to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // to the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     //
     // Retired rather than moved: a tank line of "$290 | $450" against the cost
     // guide's "$290 - $310", a $140 gap at the top; a checklist reading
@@ -678,7 +678,7 @@ export const fishGuides = [
     // hub keeps no number of its own. Adult size comes from the encyclopedia
     // entry. The power-outage row cites the shared aquarium guides in the
     // sidebar's Health and More list. Rewritten to the template shape 2026-09-16
-    // (docs/HUB_ROUTER_REVIEWS.md). Built 2026-09-15 for
+    // (archive/docs-completed/HUB_ROUTER_REVIEWS.md). Built 2026-09-15 for
     // the koi set test (docs/READER_REVIEWS.md), which found the old hub giving a
     // 2 to 4 week quarantine against the health guide's 4 to 6 weeks or longer, a
     // 25 to 35 year lifespan against the cost guide's 25 to 50, peas as an
@@ -767,7 +767,7 @@ export const fishGuides = [
     // guide. The power outage rule cites the shared aquarium guides in the
     // sidebar's Health and More list. Reconciled 2026-09-15 after the molly set
     // test (docs/READER_REVIEWS.md), rewritten to the template shape 2026-09-16
-    // (docs/HUB_ROUTER_REVIEWS.md).
+    // (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     //
     // Three hub-only figures are retired rather than moved. "Keep water
     // between 72 and 78 degrees F" sat below the health guide's own shimmy
@@ -861,7 +861,7 @@ export const fishGuides = [
     // entry, which no deep dive repeats. Quarantine, water chemistry, the power
     // outage rule and the sick-fish check cite the shared aquarium guides in the
     // sidebar's Health and More list. Rewritten to the template shape 2026-09-16
-    // (docs/HUB_ROUTER_REVIEWS.md). The old hub's
+    // (archive/docs-completed/HUB_ROUTER_REVIEWS.md). The old hub's
     // weekly 20 to 25% water change was a figure no deep dive carries, so it is
     // retired here and filed as a gap in docs/READER_LOG.md. Built 2026-09-14
     // for the neon tetra set test (docs/READER_REVIEWS.md).
@@ -942,7 +942,7 @@ export const fishGuides = [
     // encyclopedia entry. Quarantine and the sick-fish check cite the shared
     // aquarium guides in the sidebar's Health and More list. Reconciled
     // 2026-09-15 after the oscar set test (docs/READER_REVIEWS.md), rewritten to
-    // the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     //
     // The old hub understated this build in every line that had a price on
     // it, all gone rather than moved: the canister filter at $100 to $200
@@ -1033,7 +1033,7 @@ export const fishGuides = [
     // encyclopedia entry. The power outage rule cites the shared aquarium
     // guides in the sidebar's Health and More list. Reconciled 2026-09-15 after
     // the platy set test (docs/READER_REVIEWS.md), rewritten to the template
-    // shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     //
     // Retired rather than moved: "Keep water between 72 and 78 degrees F",
     // which the hub's own FAQ then contradicted with "down toward the low 70s
@@ -1125,7 +1125,7 @@ export const fishGuides = [
     // encyclopedia entry. Cycling and the power outage rule cite the shared
     // aquarium guides in the sidebar's Health and More list. Reconciled
     // 2026-09-15 after the swordtail set test (docs/READER_REVIEWS.md),
-    // rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // rewritten to the template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     //
     // Retired rather than moved: "A 20-gallon tank is a reasonable minimum",
     // which takes the floor as the recommendation where the setup guide's own
@@ -1224,7 +1224,7 @@ export const fishGuides = [
     // rule cite the shared aquarium guides in the sidebar's Health and More
     // list. Reconciled 2026-09-15 after the zebra danio set test
     // (docs/READER_REVIEWS.md), rewritten to the template shape 2026-09-16
-    // (docs/HUB_ROUTER_REVIEWS.md).
+    // (archive/docs-completed/HUB_ROUTER_REVIEWS.md).
     //
     // Retired rather than moved: a whole cost table written independently of
     // the cost guide, with the tank at $50 to $100 against $18 to $60, the
