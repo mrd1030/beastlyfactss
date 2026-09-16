@@ -17,7 +17,7 @@ export default [
     ignores: [
       "ds-bundle/**",
       "dist/**",
-      "src/lib/**",
+      "src/lib/generated/**",
       "src/components/ui/**",
     ],
   },

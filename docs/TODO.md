@@ -496,7 +496,7 @@ is why they kept getting deferred. Do them once section 7 is finished.
       generally, and every page in both sets says the animal soaks often
       without saying what that looks like. Two instances make it shared-guide
       work rather than a per-species gap.
-- [ ] The affiliate template fragment, 23 left, not the six READMEFIRST has
+- [x] DONE 2026-09-16, the grep returns zero. The affiliate template fragment, 23 left, not the six READMEFIRST has
       been saying. It has more shapes than anyone had counted, so the grep
       that finds all of them is
       `grep -rloE '(Other |other )(quantities|flavors|sizes|flavours)[^.]*are available' content/guides/*.mdx`.
@@ -544,7 +544,7 @@ is why they kept getting deferred. Do them once section 7 is finished.
       plainly") and one on the garter feeding guide ("Sources land in a
       similar range"). Likely more of the same corpus-wide, since four
       batches running have found this shape in text the batch did touch.
-- [ ] Cherry shrimp has the same three-guide RELATED_ARTICLES entry amano
+- [x] DONE 2026-09-16, both. Cherry shrimp has the same three-guide RELATED_ARTICLES entry amano
       shrimp had before batch J, so its sidebar is missing cycling, quarantine
       and the sick-tank check that every fish species carries. One line.
       Ghost shrimp gained cycling in batch N and still has neither the
@@ -655,9 +655,9 @@ is why they kept getting deferred. Do them once section 7 is finished.
       - `praying-mantis-ootheca-guide.mdx` carries two pre-existing voice errors,
         an intensifier in the heading "What an Ootheca Actually Is" and one in an
         FAQ answer. (batch L)
-      - `argentine-tegus-are-not-venomous.mdx` carries two pre-existing voice
-        errors. (batch L)
-      - The rosy boa encyclopedia's description prose says "Rarely exceeding 3
+      - DONE 2026-09-16. `argentine-tegus-are-not-venomous.mdx` carried two pre-existing voice
+        errors. The ootheca guide no longer trips the checker. (batch L)
+      - DONE 2026-09-16, the prose now says typically 2 to 3 feet and rarely over 4. The rosy boa encyclopedia's description prose says "Rarely exceeding 3
         feet as adults" next to its own adultSize field of "rarely over 4 feet".
         Both are defensible, they just disagree inside one entry. (batch K)
 
@@ -701,14 +701,14 @@ is why they kept getting deferred. Do them once section 7 is finished.
         batch prompt's Never list, so it needs replacing rather than removing,
         the same shape as the molly cost guide's Splashy Fish entry above.
         (batch O)
-      - Three future-dated articles found in passing, all pre-existing:
+      - Checked 2026-09-16 and left: 229 guides carry a future date, spread through November, so a future date is the publishing schedule rather than a defect. Three future-dated articles found in passing, all pre-existing:
         giant-millipede-enrichment-guide and stick-insect-enrichment-guide at
         2026-11-02 and 2026-11-01, and madagascar-hissing-cockroach-enrichment-
         guide at 2026-10-19. Not bumped, since nothing about them changed, but
         a date in the future is its own defect. (batch O)
 
       Needs a mechanical pass:
-      - "Included in setup total" as a cost table cell. Two of batch O's four
+      - Checked 2026-09-16: the phrase is "Included in setup budget" and the only table carrying it is the African grey cost guide, whose two cells are now priced from affiliateProducts.js ($10 to $25 perches, $69 to $91 the rest). Its floor was above the itemized sum, not below it, so the $500 to $1,500 heading stands. "Included in setup total" as a cost table cell. Two of batch O's four
         species had a cost table whose stated floor was below the price of the
         single item it priced, hidden behind that placeholder in every other
         row: jumping spider $60-70 inside $50-120, stick insect $60-70 inside
@@ -753,14 +753,14 @@ is why they kept getting deferred. Do them once section 7 is finished.
         ReptiFiles' 120 to 130F, by the source ranking. If Mike wants the
         hobby figure back, it needs a source that outranks a vet clinic.
 
-- [ ] Legal guides missing from RELATED_ARTICLES, corpus-wide sweep. Three of
+- [x] DONE 2026-09-16, eighteen added, every species with a hub and a legal guide now carries it. Legal guides missing from RELATED_ARTICLES, corpus-wide sweep. Three of
       batch I's five species had one (red-footed tortoise, degu, savannah
       monitor), so the legal guide was reachable from the hub and from
       nowhere in the sidebar. Legal is not a standard suffix, so nothing
       auto-detects it and check-related-articles does not catch it. One pass
       over every species with a legal guide.
 
-- [ ] eslint does not see the data files at all. `eslint.config.js` has a
+- [x] DONE 2026-09-16: the ignore is now src/lib/generated/** only, the one disable comment naming an unregistered rule is gone, and eslint . is clean. Cloud sessions also had no node_modules at all until npm ci was run by hand, so eslint had never run there. eslint does not see the data files at all. `eslint.config.js` has a
       top-level ignores block listing `src/lib/**` alongside `ds-bundle/**`,
       `dist/**` and `src/components/ui/**`, so every `npx eslint
       src/lib/data/guides/<file>.js` run exits 0 with no rules applied, and
