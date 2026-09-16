@@ -141,6 +141,14 @@ catches the defects the commands produce. Per batch:
 
 ## Next jobs, in order
 
+Status check 2026-09-16, against the repo rather than this list: item 5 and
+item 6 are finished, all 84 hubs are routers and reconciled, so the "legacy
+hubs" and print-button questions are moot. Item 2 is still open: 14 of the 22
+FunFact boxes still restate a body sentence. Item 3 is still open: none of the
+batch 6 handling guides carry a pick-up section. Item 4 is open and needs the
+vs and overview rule decided first. The "Prices last checked" line sits on 9 of
+84 cost guides.
+
 1. Merge claude/more-on-block once Mike says merge.
 2. FunFact repeats: 22 FunFact boxes restate a body sentence nearly
    verbatim. Prompt at the end of this file.

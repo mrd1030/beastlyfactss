@@ -43,6 +43,8 @@ the three care sheets' 68°F even though it matches the vet hospital's hard
 floor exactly. Someone may want to reword it as a floor rather than a normal
 resting point, but no number there is wrong.
 
+Resolved 2026-09-16: the setup guide no longer carries the "around 65°F" resting-point wording.
+
 **Basking is NOT a conflict.** The apparent 120-130°F vs 98-115°F gap is a
 surface-vs-air measurement difference, not a disagreement. ReptiFiles, Dubia,
 and Reptile Supply all state their 120-130°F explicitly as a *surface* reading

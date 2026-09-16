@@ -571,8 +571,9 @@ Three things failed, all fixed since:
 
 ### Still not run
 
-Library sign-in and download, which needs step 4 done first. The idempotency
-resend and the signed URL expiry check.
+Nothing. Mike confirmed the storefront run-through complete on 2026-09-16. The
+library sign-in, idempotency resend and signed URL expiry items below were the
+last three.
 
 ### The steps to run, in order
 

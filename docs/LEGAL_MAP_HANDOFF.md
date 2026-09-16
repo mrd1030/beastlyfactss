@@ -257,6 +257,8 @@ state that codifies by version. And confirm the citation itself still resolves.
 
 ## Next up
 
+Status 2026-09-16: priority 4 is moot for now, every `verifiedOn` on the map is August or September 2026. Priorities 1 to 3 are still open.
+
 No unread cells. What is left is auditing, and the three items worth doing first all come out of
 the last sitting, where reading past the first rule changed answers in three states at once.
 
