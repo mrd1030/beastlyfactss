@@ -658,6 +658,7 @@ export const birdGuides = [
       { slug: "quaker-parakeet-cost-guide", line: "$250 to $500 for the bird, dated retail prices for the setup, real clinic pricing, and the toy line that never stops." },
       { slug: "quaker-parakeet-tank-setup-guide", line: "Cage size and bar spacing, why a nest box is the one thing never to add, diet basics, and lighting that is optional rather than required." },
       { slug: "quaker-parakeet-handling-guide", line: "Temperament, the nest-building instinct behind the cage aggression, and the legal trap that catches buyers before they ever handle one." },
+      { slug: "quaker-parakeet-feeding-guide", line: "Pellets at 70 percent, produce as the rest, seed as a treat, a small handful a day, and the fatty liver a seed diet builds." },
       { slug: "quaker-parakeet-health-issues-guide", line: "Fatty liver disease from a seed diet, feather-destructive behavior, PBFD, and the psittacosis that can reach people." },
       { slug: "quaker-parakeet-enrichment-guide", line: "Weaving material first, food through foraging, and the priority order that keeps a clever bird from turning on itself." },
     ],

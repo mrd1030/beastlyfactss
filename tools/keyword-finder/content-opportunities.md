@@ -27,7 +27,7 @@ These are the items that showed up across the most lenses and/or carry the singl
    - ~~Buying intent: `ferret cost` / `ferret for sale` (2 hits each) — no cost guide exists.~~ **DONE** — ferret-cost-guide.mdx.
    - ~~Action: one "Is a Ferret a Weasel? Ferret vs. Weasel, Mink, Stoat & Other Mustelids" deep-dive (kills the naming cluster), one "Is It Legal to Own a Ferret?" state/country article, and a cost-guide addition.~~ Done as an FAQ addition instead of a standalone deep-dive (see Section 3 guidance), plus the legal guide and cost guide.
 
-4. **Budgie vs Parakeet — the single largest naming-confusion gap, and the cheapest to fix.**
+4. **Budgie vs Parakeet — the single largest naming-confusion gap, and the cheapest to fix.** **DONE 2026-09-16, FAQ on the budgie cost guide and hub.**
    - `difference between budgie and parakeet` = 7 hits, rank 1, plus `budgie vs parakeet` (2), `budgie or parakeet` (2), `budgie parakeet difference` (2), `budgie vs parakeet the difference` (2), `budgie vs parakeet size` (2), and a dozen+ 1-hit variants — 20+ combined hits, the largest single-topic gap found across all lenses.
    - The site's data model already merges Budgie/Parakeet into one guide entry, so this needs only a single FAQ line ("Is a budgie the same thing as a parakeet?") — no new article required. Highest ROI item on this whole list. **STILL OPEN** — checked budgie-cost-guide.mdx's FAQ directly, this exact question isn't there yet.
 
@@ -96,17 +96,17 @@ The site already has 6 comparison guides (budgie-vs-cockatiel, ball-python-vs-co
 
 Ranked by hit count, checked against existing facts.js for duplication:
 
-1. **Madagascar Hissing Cockroach — "what does it sound like"** = 11 hits, the single highest-hit curiosity row in the whole CSV. Explain the spiracle-hissing mechanism (air forced through modified abdominal spiracles, not the mouth).
+1. **Madagascar Hissing Cockroach — "what does it sound like"** = 11 hits, the single highest-hit curiosity row in the whole CSV. Explain the spiracle-hissing mechanism (air forced through modified abdominal spiracles, not the mouth). **DONE, the handling guide FAQ "Why does a Madagascar hissing cockroach hiss?" carries the spiracle mechanism.**
 2. ~~**Argentine Tegu — poisonous mythbust** = 11 hits (ties into Priority #1).~~ **DONE** via Priority #1 (argentine-tegus-are-not-venomous.mdx).
 3. ~~**Giant African Millipede — poisonous nuance** = 9 hits (ties into Priority #2).~~ **DONE** via Priority #2 (giant-millipede-legal-guide.mdx / handling-guide.mdx).
 4. **Budgie/Parakeet naming trivia** = 7 hits (ties into Priority #4). **STILL OPEN**, Priority #4 itself is still open.
-5. **Fire-Bellied Toad — poisonous** (6) + **poisonous to humans** (4) — real nuance: aposematic coloring, mildly toxic skin secretions, safe with normal handling.
-6. **Emperor Scorpion — "can it kill you"** = 5 hits — sting is roughly bee-sting-level despite the intimidating look.
+5. **Fire-Bellied Toad — poisonous** (6) + **poisonous to humans** (4) — real nuance: aposematic coloring, mildly toxic skin secretions, safe with normal handling. **DONE, the handling guide FAQs "Is it safe to handle a fire-bellied toad?" and "What toxin does a fire-bellied toad have?" carry it.**
+6. **Emperor Scorpion — "can it kill you"** = 5 hits — sting is roughly bee-sting-level despite the intimidating look. **DONE, covered in the emperor scorpion handling guide.**
 7. **Jackson's Chameleon — color meaning** = 5 hits — best placed as a guide-specific funfact (facts.js already has two generic chameleon color-change entries; avoid duplication).
-8. **Hedgehog — self-anointing behavior** = 1 hit but **zero existing coverage** in facts.js (current hedgehog entries only cover spine count/running speed) — one of the most iconic bizarre small-pet behaviors on the market, worth adding regardless of low query volume.
-9. **Milk Snake — "do they really drink milk"** = 1 hit, but the only row in the entire CSV using the word "really" (explicit myth-signal); busts real barn folklore.
+8. **Hedgehog — self-anointing behavior** = 1 hit but **zero existing coverage** in facts.js (current hedgehog entries only cover spine count/running speed) — one of the most iconic bizarre small-pet behaviors on the market, worth adding regardless of low query volume. **DONE, covered in the hedgehog handling guide.**
+9. **Milk Snake — "do they really drink milk"** = 1 hit, but the only row in the entire CSV using the word "really" (explicit myth-signal); busts real barn folklore. **DONE 2026-09-16, FAQ and section on the milk snake handling guide, sourced to Animal Diversity Web.**
 10. **Tiger Salamander vs Axolotl taxonomy** = 1 hit — genuinely surprising (axolotls are neotenic tiger salamander relatives), pairs well with the Axolotl-vs-Tiger-Salamander comparison guide in Section 3.
-11. **Koi whiskers (barbels)** = 1 hit — broad appeal beyond koi-keepers.
+11. **Koi whiskers (barbels)** = 1 hit — broad appeal beyond koi-keepers. **DONE 2026-09-16, FAQ "Do koi have whiskers?" on the koi handling guide.**
 12. **Maine Coon polydactyly** ("why so many toes") = 1 hit — no existing breed-specific facts.js coverage.
 13. Guide-specific funfacts (pair with existing guide content rather than standalone facts): **Chinchilla dust baths**, **Siamese darkening with age**, **Golden Retriever "snow nose."**
 
