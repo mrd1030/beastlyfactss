@@ -10,8 +10,8 @@ export const birdGuides = [
     funFact: "African Greys have the cognitive ability of a 5-year-old child and can learn over 1,000 words. The famous parrot Alex could identify colors, shapes, and even understand the concept of 'same' and 'different'!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
-    // the hub keeps no number of its own. Adult size and lifespan come from
-    // the encyclopedia entry, which no deep dive repeats. Day one and power
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry, which no deep dive repeats. Day one and power
     // outage cite the shared bird guides in the sidebar's Health and More
     // list. Reconciled 2026-09-09 for batch C (docs/READER_REVIEWS.md).
     layout: "router",
@@ -152,9 +152,9 @@ export const birdGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry, which no deep dive repeats. Quarantine, household hazards,
-    // droppings, photoperiod, pellet conversion and sexing cite the shared bird
-    // guides in the sidebar's Health and More list. This species has no feeding
+    // entry, which no deep dive repeats. Quarantine, household hazards and
+    // photoperiod cite the shared bird guides in the sidebar's Health and
+    // More list. This species has no feeding
     // guide, so the diet rows point at the tank setup guide's Diet Basics
     // section, added in the same pass. Built 2026-09-14 for the canary set test
     // (docs/READER_REVIEWS.md).
@@ -511,9 +511,9 @@ export const birdGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry, which no deep dive repeats. Quarantine, household hazards, sleep,
-    // chronic egg laying, sexing and weight, and the emergency plan cite the
-    // shared bird guides in the sidebar's Health and More list. Built 2026-09-15
+    // entry, which no deep dive repeats. Quarantine and household hazards
+    // cite the shared bird guides in the sidebar's Health and More list.
+    // Built 2026-09-15
     // for the parrotlet set test (docs/READER_REVIEWS.md), which found the old
     // hub recommending 3/8 to 1/2 inch bar spacing, the range the setup guide
     // calls a lovebird range, and stating a 15 to 20 year lifespan the cost
@@ -594,8 +594,8 @@ export const birdGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry. Quarantine, sleep, droppings and the emergency plan cite the shared
-    // bird guides in the sidebar's Health and More list. Built 2026-09-15 for the
+    // entry. Quarantine and household hazards cite the shared bird guides in
+    // the sidebar's Health and More list. Built 2026-09-15 for the
     // quaker parakeet set test (docs/READER_REVIEWS.md). The old hub had a
     // 24x24x30 cage minimum against the setup guide's and VCA's 24x24x36, pellets
     // at 60 to 70 percent against VCA's stated minimum of 70, an annual table
@@ -675,9 +675,9 @@ export const birdGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry, which no deep dive repeats. Quarantine, household hazards, pellet
-    // conversion, droppings, and photoperiod cite the shared bird guides in the
-    // sidebar's Health and More list. Built 2026-09-14 for the zebra finch set
+    // entry, which no deep dive repeats. Quarantine and household hazards
+    // cite the shared bird guides in the sidebar's Health and More list.
+    // Built 2026-09-14 for the zebra finch set
     // test (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {

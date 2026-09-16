@@ -11,8 +11,8 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry, which no deep dive repeats. Cycling, quarantine, power outage,
-    // filtration and the sick-fish check cite the shared aquarium guides in the
+    // entry, which no deep dive repeats. Cycling, quarantine, power outage
+    // and the sick-fish check cite the shared aquarium guides in the
     // sidebar's Health and More list. The old hub's weekly 25% water change was
     // a figure no deep dive carries, so it is retired here and filed as a gap in
     // docs/READER_LOG.md. Built 2026-09-14 for the angelfish set test
@@ -159,9 +159,9 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Cycling, filtration, the hospital tank, water
-    // chemistry, the power outage rule and the sick-fish check cite the shared
-    // aquarium guides in the sidebar's Health and More list. Reconciled
+    // encyclopedia entry. Cycling, the hospital tank and the power outage
+    // rule cite the shared aquarium guides in the sidebar's Health and More
+    // list. Reconciled
     // 2026-09-15 after the bristlenose pleco set test (docs/READER_REVIEWS.md).
     //
     // The reader graded the old hub B- and said the tank price alone "is the
@@ -249,9 +249,8 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry, which no deep dive repeats. Cycling and the
-    // hospital tank cite the shared fish guides in the sidebar's Health and
-    // More list. The old hub narrowed the temperature band to 73-81 against
+    // encyclopedia entry, which no deep dive repeats. The old hub narrowed
+    // the temperature band to 73-81 against
     // the setup guide's 73-84, put the school floor at 6 against the
     // handling and enrichment guides' 10, and misspelled the neon tetra
     // disease parasite as "hyphessobrycetis". Reconciled 2026-09-14 for
@@ -325,9 +324,9 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry, which no deep dive repeats. Cycling, the hospital
-    // tank and sick-fish signs cite the shared fish guides in the sidebar's
-    // Health and More list. The old hub priced a tank at double the cost
+    // encyclopedia entry, which no deep dive repeats. Cycling and the hospital
+    // tank cite the shared fish guides in the sidebar's Health and More list.
+    // The old hub priced a tank at double the cost
     // guide's figure and a filter at more than double, gave "10 to 20 gallon"
     // without saying 10 is pygmy-only, and omitted the heater and test kit
     // the cost guide calls required. Reconciled 2026-09-15 for batch I
@@ -401,8 +400,7 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Cycling, filtration, the hospital tank, water
-    // chemistry, the power outage rule and the sick-fish check cite the shared
+    // encyclopedia entry. Cycling and the hospital tank cite the shared
     // aquarium guides in the sidebar's Health and More list. Reconciled
     // 2026-09-15 after the discus set test (docs/READER_REVIEWS.md).
     //
@@ -640,8 +638,8 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry. Quarantine, cycling and the power-outage row cite the shared
-    // aquarium guides in the sidebar's Health and More list. Built 2026-09-15 for
+    // entry. The power-outage row cites the shared aquarium guide in the
+    // sidebar's Health and More list. Built 2026-09-15 for
     // the koi set test (docs/READER_REVIEWS.md), which found the old hub giving a
     // 2 to 4 week quarantine against the health guide's 4 to 6 weeks or longer, a
     // 25 to 35 year lifespan against the cost guide's 25 to 50, peas as an
@@ -721,9 +719,7 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the handling
-    // guide. Cycling, the hospital tank, water chemistry, filter maintenance,
-    // the power outage rule and the sick-fish check cite the shared aquarium
-    // guides in the sidebar's Health and More list. Reconciled 2026-09-15
+    // guide. Reconciled 2026-09-15
     // after the molly set test (docs/READER_REVIEWS.md).
     //
     // Three hub-only figures are retired rather than moved. "Keep water
@@ -809,9 +805,9 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry, which no deep dive repeats. Cycling, quarantine, filtration, water
-    // chemistry, the power outage rule and the sick-fish check cite the shared
-    // aquarium guides in the sidebar's Health and More list. The old hub's
+    // entry, which no deep dive repeats. Cycling, the power outage rule and
+    // the sick-fish check cite the shared aquarium guides in the sidebar's
+    // Health and More list. The old hub's
     // weekly 20 to 25% water change was a figure no deep dive carries, so it is
     // retired here and filed as a gap in docs/READER_LOG.md. Built 2026-09-14
     // for the neon tetra set test (docs/READER_REVIEWS.md).
@@ -888,8 +884,8 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Cycling, quarantine, filter maintenance and the
-    // sick-fish check cite the shared aquarium guides in the sidebar's
+    // encyclopedia entry. Cycling, quarantine and the sick-fish check cite
+    // the shared aquarium guides in the sidebar's
     // Health and More list. Reconciled 2026-09-15 after the oscar set test
     // (docs/READER_REVIEWS.md).
     //
@@ -975,9 +971,8 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Cycling, the hospital tank, water chemistry, filter
-    // maintenance, the power outage rule and the sick-fish check cite the
-    // shared aquarium guides in the sidebar's Health and More list.
+    // encyclopedia entry. The power outage rule and the sick-fish check cite
+    // the shared aquarium guides in the sidebar's Health and More list.
     // Reconciled 2026-09-15 after the platy set test (docs/READER_REVIEWS.md).
     //
     // Retired rather than moved: "Keep water between 72 and 78 degrees F",
@@ -1061,10 +1056,10 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Cycling, filtration, the hospital tank, water
-    // chemistry, the power outage rule and the sick-fish check cite the shared
-    // aquarium guides in the sidebar's Health and More list. Reconciled
-    // 2026-09-15 after the swordtail set test (docs/READER_REVIEWS.md).
+    // encyclopedia entry. Cycling, the power outage rule and the sick-fish
+    // check cite the shared aquarium guides in the sidebar's Health and More
+    // list. Reconciled 2026-09-15 after the swordtail set test
+    // (docs/READER_REVIEWS.md).
     //
     // Retired rather than moved: "A 20-gallon tank is a reasonable minimum",
     // which takes the floor as the recommendation where the setup guide's own
@@ -1152,9 +1147,8 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Cycling, filtration, the hospital tank, water
-    // chemistry, the power outage rule, summer cooling and the sick-fish check
-    // cite the shared aquarium guides in the sidebar's Health and More list.
+    // encyclopedia entry. Cycling cites the shared aquarium guide in the
+    // sidebar's Health and More list.
     // Reconciled 2026-09-15 after the zebra danio set test
     // (docs/READER_REVIEWS.md).
     //

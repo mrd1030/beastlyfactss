@@ -11,9 +11,9 @@ export const lizardGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Quarantine, hygiene, the thermostat probe and the
-    // power-outage line cite the shared reptile guides in the sidebar's
-    // Health and More list. Reconciled 2026-09-15 after the ackie monitor
+    // encyclopedia entry. Hygiene and the thermostat probe cite the shared
+    // reptile guides in the sidebar's Health and More list. Reconciled
+    // 2026-09-15 after the ackie monitor
     // set test (docs/READER_REVIEWS.md). Difficulty follows the
     // encyclopedia entry, which the same pass moved from Advanced to
     // Intermediate: ReptiFiles rates the species Intermediate and the
@@ -110,9 +110,9 @@ export const lizardGuides = [
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the handling
     // guide, which is the only page that names its sources and the spread
-    // between them. Salmonella, thermostats, stool and hydration, quarantine
-    // and the emergency plan cite the shared reptile guides in the sidebar's
-    // Health and More list. Reconciled 2026-09-15 after the tegu set test
+    // between them. Salmonella and quarantine cite the shared reptile guides
+    // in the sidebar's Health and More list. Reconciled 2026-09-15 after the
+    // tegu set test
     // (docs/READER_REVIEWS.md).
     //
     // The old hub said in its own comment that its pricing was unverified,
@@ -316,10 +316,10 @@ export const lizardGuides = [
     // from the encyclopedia entry, which no deep dive repeats. Northern and
     // Indonesian animals are two different husbandry problems under one name,
     // so every row the tank setup guide splits by subspecies stays split here
-    // rather than being flattened into one range. Day one, shedding, hygiene,
-    // and power outage cite the shared reptile guides in the sidebar's Health
-    // and More list, which the set tests keep reporting as gaps because the
-    // reader never opens them. Reconciled 2026-09-09 after the blue tongue
+    // rather than being flattened into one range. Day one cites the shared
+    // reptile guide in the sidebar's Health and More list, which the set
+    // tests keep reporting as a gap because the reader never opens it.
+    // Reconciled 2026-09-09 after the blue tongue
     // skink set test (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
@@ -401,8 +401,7 @@ export const lizardGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Quarantine, thermostats, stool and hydration,
-    // hygiene, shedding and the emergency plan cite the shared reptile guides
+    // encyclopedia entry. Quarantine cites the shared reptile guide
     // in the sidebar's Health and More list. Reconciled 2026-09-15 after the
     // fire skink set test (docs/READER_REVIEWS.md).
     //
@@ -492,9 +491,9 @@ export const lizardGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Salmonella, thermostats, shedding, quarantine and
-    // the emergency plan cite the shared reptile guides in the sidebar's
-    // Health and More list. Reconciled 2026-09-15 after the green anole set
+    // encyclopedia entry. Salmonella and quarantine cite the shared reptile
+    // guides in the sidebar's Health and More list. Reconciled 2026-09-15
+    // after the green anole set
     // test (docs/READER_REVIEWS.md).
     //
     // The reader graded the old hub C-, and it lost on every number a buyer
@@ -585,12 +584,12 @@ export const lizardGuides = [
     funFact: "Green iguanas have a pale scale on the top of the head called the parietal eye. It is a genuine third eye with a lens and a retina, wired to the pineal gland rather than to vision, and it detects shadow moving overhead. It is an early warning system for birds of prey.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
-    // hub keeps no number of its own. Day one, hygiene, and power outage cite
-    // the shared reptile guides in the sidebar's Health and More list, which
-    // the set tests keep reporting as gaps because the reader never opens
-    // them. This species has no feeding guide, so the diet rows cite the
-    // health issues and enrichment guides, which is where the diet material
-    // actually lives. Reconciled 2026-09-09 after the green iguana set test
+    // hub keeps no number of its own. Day one and hygiene cite the shared
+    // reptile guides in the sidebar's Health and More list, which the set
+    // tests keep reporting as gaps because the reader never opens them. This
+    // species has no feeding guide, so the diet row cites the health issues
+    // guide, which is where the diet material actually lives. Reconciled
+    // 2026-09-09 after the green iguana set test
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
@@ -671,8 +670,7 @@ export const lizardGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Hydration, quarantine, thermostats, stool, hygiene,
-    // shedding and the emergency plan cite the shared guides in the sidebar's
+    // encyclopedia entry. Quarantine cites the shared guide in the sidebar's
     // Health and More list. Reconciled 2026-09-15 after the Jackson's
     // chameleon set test (docs/READER_REVIEWS.md).
     //
@@ -769,9 +767,9 @@ export const lizardGuides = [
     funFact: "Savannah monitors are built for digging. In the wild they may create burrows several feet deep to escape the African heat. A deep substrate is one of the most important enrichment features you can give them!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
-    // the hub keeps no number of its own. Quarantine, hygiene, the thermostat
-    // probe and the power-outage line cite the shared reptile guides in the
-    // sidebar's Health and More list. Reconciled 2026-09-15 after the
+    // the hub keeps no number of its own. Quarantine and hygiene cite the
+    // shared reptile guides in the sidebar's Health and More list.
+    // Reconciled 2026-09-15 after the
     // savannah monitor set test (docs/READER_REVIEWS.md).
     //
     // This species has no feeding guide, so the diet rows copy the Diet
@@ -873,9 +871,9 @@ export const lizardGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Quarantine, thermostats, stool, hygiene, shedding
-    // and the emergency plan cite the shared reptile guides in the sidebar's
-    // Health and More list. Reconciled 2026-09-15 after the uromastyx set test
+    // encyclopedia entry. Quarantine cites the shared reptile guide in the
+    // sidebar's Health and More list. Reconciled 2026-09-15 after the
+    // uromastyx set test
     // (docs/READER_REVIEWS.md).
     //
     // The reader's summary of the old hub: it "contradicts four numbers a new
@@ -967,10 +965,8 @@ export const lizardGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry, which no deep dive repeats. Quarantine, hygiene, the thermostat
-    // probe and the emergency plan cite the shared reptile guides in the
-    // sidebar's Health and More list. Built 2026-09-14 for the veiled chameleon
-    // set test (docs/READER_REVIEWS.md). The old hub's supplement schedule was
+    // entry, which no deep dive repeats. Built 2026-09-14 for the veiled
+    // chameleon set test (docs/READER_REVIEWS.md). The old hub's supplement schedule was
     // roughly four times the feeding guide's, on the two supplements that guide
     // says cause gular edema in excess; that is the row to check first if this
     // hub ever drifts again.

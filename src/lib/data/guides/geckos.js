@@ -249,9 +249,9 @@ export const geckoGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Salmonella, thermostats, shedding, quarantine and
-    // the emergency plan cite the shared reptile guides in the sidebar's
-    // Health and More list. Reconciled 2026-09-15 after the leaf-tailed gecko
+    // encyclopedia entry. Salmonella, quarantine and the emergency plan cite
+    // the shared reptile guides in the sidebar's Health and More list.
+    // Reconciled 2026-09-15 after the leaf-tailed gecko
     // set test (docs/READER_REVIEWS.md).
     //
     // The reader graded the old hub C+ and said the plainest version of what
@@ -524,9 +524,9 @@ export const geckoGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry, which no deep dive repeats. Gut-loading, hygiene, the thermostat
-    // probe, the stool check and the emergency plan cite the shared reptile
-    // guides in the sidebar's Health and More list. This species has no feeding
+    // entry, which no deep dive repeats. Hygiene and the thermostat probe
+    // cite the shared reptile guides in the sidebar's Health and More list.
+    // This species has no feeding
     // guide, so the diet rows point at the tank setup guide's Diet Basics
     // section, added in the same pass. Built 2026-09-14 for the tokay gecko set
     // test (docs/READER_REVIEWS.md).

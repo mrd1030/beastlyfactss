@@ -319,9 +319,9 @@ export const snakeGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Quarantine, hygiene, weight checks and the
-    // shedding line cite the shared reptile and snake guides in the
-    // sidebar's Health and More list. Reconciled 2026-09-15 after the garter
+    // encyclopedia entry. Quarantine, hygiene and weight checks cite the
+    // shared reptile and snake guides in the sidebar's Health and More list.
+    // Reconciled 2026-09-15 after the garter
     // snake set test (docs/READER_REVIEWS.md).
     //
     // The old hub's basking figure was its own: "85 to 88 degrees F surface,
@@ -491,7 +491,7 @@ export const snakeGuides = [
     // the hub keeps no number of its own. Adult size comes from the
     // encyclopedia entry, which no deep dive repeats. Quarantine, hygiene and
     // power outage cite the shared reptile guides in the sidebar's Health and
-    // More list. This species has no feeding guide, so the feeding rows are
+    // More list. This species has no feeding guide, so the feeding row is
     // sourced to the Diet Basics section of the setup guide. The old hub sold
     // an under-tank heater as the primary heat source where the setup guide
     // calls it a supplement, put the enclosure floor below the setup guide's
@@ -570,8 +570,8 @@ export const snakeGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry. Quarantine, the thermostat probe, shedding and hygiene cite the
-    // shared reptile guides in the sidebar's Health and More list. Built
+    // entry. Quarantine, the thermostat probe and hygiene cite the shared
+    // reptile guides in the sidebar's Health and More list. Built
     // 2026-09-15 for the rosy boa set test (docs/READER_REVIEWS.md). The old hub
     // put shed humidity at 60 to 65%, above the ceiling the health guide's whole
     // argument rests on, which is the one a beginner reading only the hub would

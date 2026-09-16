@@ -86,9 +86,9 @@ export const amphibianGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size and lifespan come from the
-    // encyclopedia entry and the cost guide. Quarantine, the water rule and
-    // hygiene cite the shared amphibian and reptile guides in the sidebar's
-    // Health and More list. Built 2026-09-15 for the fire-bellied toad set test
+    // encyclopedia entry and the cost guide. Quarantine and hygiene cite the
+    // shared amphibian and reptile guides in the sidebar's Health and More
+    // list. Built 2026-09-15 for the fire-bellied toad set test
     // (docs/READER_REVIEWS.md). The old hub named the skin toxin as
     // "pumiliotoxins", which is a dendrobatid alkaloid this species does not
     // produce; it also contradicted its own deep dives on tank size, layout,
@@ -243,8 +243,8 @@ export const amphibianGuides = [
     // (docs/READER_REVIEWS.md), which found the old hub telling readers distilled
     // water was a fine substitute while the shared amphibian water guide calls it
     // potentially fatal, and carrying the set's only feeding schedule with
-    // nothing sourcing it. This species has no feeding guide, so the diet rows
-    // below come from the tank setup guide's Diet Basics section.
+    // nothing sourcing it. This species has no feeding guide, so the diet row
+    // below comes from the tank setup guide's Diet Basics section.
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
@@ -316,9 +316,9 @@ export const amphibianGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry, which no deep dive repeats. Quarantine, the water rule, the
-    // container-not-a-net move, and hygiene cite the shared amphibian and
-    // reptile guides in the sidebar's Health and More list. Built 2026-09-09 for
+    // entry, which no deep dive repeats. Quarantine, moving a new arrival,
+    // and hygiene cite the shared amphibian and reptile guides in the
+    // sidebar's Health and More list. Built 2026-09-09 for
     // the White's tree frog set test (docs/READER_REVIEWS.md), which found the
     // old hub telling readers to mist with reverse-osmosis water while the tank
     // setup guide told them never to; the deep dive was right and the hub's

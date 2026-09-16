@@ -85,9 +85,8 @@ export const smallMammalGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry, which no deep dive repeats. Heat stress signs and
-    // the vet carrier cite the shared small mammal guides in the sidebar's
-    // Health and More list. Reconciled 2026-09-15 after the degu set test
+    // encyclopedia entry, which no deep dive repeats. Reconciled 2026-09-15
+    // after the degu set test
     // (docs/READER_REVIEWS.md).
     //
     // This is the second hub after gerbil to reverse the hub-loses default.
@@ -281,9 +280,8 @@ export const smallMammalGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry, which no deep dive repeats. Grooming, heat stress signs, and vet
-    // trips cite the shared small-mammal guides in the sidebar's Health and
-    // More list. Reconciled 2026-09-09 for batch D (docs/READER_REVIEWS.md).
+    // entry, which no deep dive repeats. Reconciled 2026-09-09 for batch D
+    // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
@@ -424,9 +422,8 @@ export const smallMammalGuides = [
     funFact: "Flying squirrels are true rodents, not marsupials, so despite gliding the same way on the same kind of wrist-to-ankle membrane, they aren't closely related to sugar gliders at all. It's convergent evolution: two unrelated animals independently landing on the same solution.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
-    // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Reconciled 2026-09-15 after the flying squirrel set
-    // test (docs/READER_REVIEWS.md).
+    // the hub keeps no number of its own. Reconciled 2026-09-15 after the
+    // flying squirrel set test (docs/READER_REVIEWS.md).
     //
     // No shared small-mammal guide names this species, so unlike the other
     // three species in batch P this hub carries no shared-guide rows. The
@@ -730,9 +727,8 @@ export const smallMammalGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry, which no deep dive repeats. Vet trips and grooming
-    // cite the shared small mammal guides in the sidebar's Health and More
-    // list. The old hub put Wobbly Hedgehog Syndrome at 1 in 3, ten times the
+    // encyclopedia entry, which no deep dive repeats. The old hub put Wobbly
+    // Hedgehog Syndrome at 1 in 3, ten times the
     // figure in the health guide written to correct it, and its cold floor at
     // 65°F against the deep dives' 72. Reconciled 2026-09-14 for batch G
     // (docs/READER_REVIEWS.md).
@@ -896,9 +892,8 @@ export const smallMammalGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult body length comes from the
-    // encyclopedia entry, which no deep dive repeats. Vet trips and grooming
-    // cite the shared small mammal guides in the sidebar's Health and More
-    // list. Built 2026-09-14 for the sugar glider set test
+    // encyclopedia entry, which no deep dive repeats. Built 2026-09-14 for
+    // the sugar glider set test
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {

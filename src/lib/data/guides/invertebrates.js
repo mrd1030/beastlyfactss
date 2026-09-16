@@ -11,8 +11,8 @@ export const invertebrateGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Cycling, quarantine and the sick-tank check cite
-    // the shared aquarium guides in the sidebar's Health and More list.
+    // encyclopedia entry. Cycling cites the shared aquarium guide in the
+    // sidebar's Health and More list.
     // Reconciled 2026-09-15 after the amano shrimp set test
     // (docs/READER_REVIEWS.md).
     //
@@ -91,10 +91,8 @@ export const invertebrateGuides = [
     funFact: "Every color of cherry shrimp in the hobby, from clear to fire-engine red to jet black, is the exact same species. Neocaridina davidi's natural wild coloring is actually a dull, camouflaged greenish-brown; decades of selective breeding by hobbyists produced the entire modern color palette, right down to the graded 'Fire Red' and 'Painted Fire Red' tiers sold today.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
-    // the hub keeps no number of its own. Filter maintenance, water chemistry
-    // and summer cooling cite the shared aquarium guides in the sidebar's
-    // Health and More list. Reconciled 2026-09-15 after the cherry shrimp set
-    // test (docs/READER_REVIEWS.md).
+    // the hub keeps no number of its own. Reconciled 2026-09-15 after the
+    // cherry shrimp set test (docs/READER_REVIEWS.md).
     //
     // The old hub said in its own comment that its pricing was unverified, and
     // the reader graded it C+ as "where I got most of my wrong ideas." Retired
@@ -180,9 +178,8 @@ export const invertebrateGuides = [
     funFact: "Emperor scorpions fluoresce a brilliant blue-green under UV/black light. Scientists aren't entirely sure why, but the compound responsible sits in the hyaline layer of their exoskeleton, and scorpions do this under natural UV from moonlight too, not just an artificial black light.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
-    // hub keeps no number of its own. Adult size and lifespan come from the
-    // encyclopedia entry. Rehousing, pesticides and the emergency plan cite the
-    // shared invertebrate guides in the sidebar's Health and More list. Built
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry. Built
     // 2026-09-15 for the emperor scorpion set test (docs/READER_REVIEWS.md),
     // which found the old hub wrong against its own deep dives on substrate
     // depth, humidity, temperature, adult and juvenile feeding frequency, the
@@ -256,9 +253,9 @@ export const invertebrateGuides = [
     funFact: "Despite looking like a smaller, cheaper cousin of the cherry and Amano shrimp sold right next to them in the store, ghost shrimp aren't closely related to either. They belong to the family Palaemonidae, while cherry and Amano shrimp both belong to the unrelated family Atyidae, and each lineage independently evolved from marine ancestors into fresh water at a different point in history. Their famous hardiness is exactly why they're sold cheaply in bulk as feeder shrimp for larger fish, even though plenty of keepers keep them purely as pets.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
-    // the hub keeps no number of its own. Cycling, filtration, water chemistry,
-    // summer cooling and the molting guide cite the shared guides in the
-    // sidebar's Health and More list. Reconciled 2026-09-15 after the ghost
+    // the hub keeps no number of its own. Cycling cites the shared aquarium
+    // guide in the sidebar's Health and More list. Reconciled 2026-09-15
+    // after the ghost
     // shrimp set test (docs/READER_REVIEWS.md).
     //
     // Retired rather than moved: "Heater if room runs below 65F" against the
@@ -345,9 +342,8 @@ export const invertebrateGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Pesticides, rehousing first aid and the travel and
-    // outage plan cite the shared invertebrate guides in the sidebar's Health
-    // and More list. Reconciled 2026-09-15 after the giant millipede set test
+    // encyclopedia entry. Reconciled 2026-09-15 after the giant millipede
+    // set test
     // (docs/READER_REVIEWS.md).
     //
     // The old hub's cost table was above the cost guide on every line it
@@ -432,9 +428,9 @@ export const invertebrateGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry, which no deep dive repeats. Molting, pesticides, and
-    // the power outage row cite the shared invertebrate guides in the sidebar's
-    // Health and More list. Reconciled 2026-09-09 after the hermit crab set
+    // encyclopedia entry, which no deep dive repeats. The power outage row
+    // cites the shared invertebrate guide in the sidebar's Health and More
+    // list. Reconciled 2026-09-09 after the hermit crab set
     // test (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
@@ -503,9 +499,8 @@ export const invertebrateGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Molting, pesticides, rehousing and the travel and
-    // outage plan cite the shared invertebrate guides in the sidebar's Health
-    // and More list. Reconciled 2026-09-15 after the jumping spider set test
+    // encyclopedia entry. Reconciled 2026-09-15 after the jumping spider
+    // set test
     // (docs/READER_REVIEWS.md).
     //
     // The old hub disagreed with a deep dive on almost every number a buyer
@@ -583,9 +578,8 @@ export const invertebrateGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Pesticides, rehousing and the travel and outage plan
-    // cite the shared invertebrate guides in the sidebar's Health and More
-    // list. Reconciled 2026-09-15 after the hissing cockroach set test
+    // encyclopedia entry. Reconciled 2026-09-15 after the hissing cockroach
+    // set test
     // (docs/READER_REVIEWS.md).
     //
     // What the old hub had wrong, in the reader's order: humidity 50 to 70%
@@ -670,9 +664,7 @@ export const invertebrateGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Pre-molt appearance, rehousing, pesticides and the
-    // emergency plan cite the shared invertebrate guides in the sidebar's
-    // Health and More list. Reconciled 2026-09-15 after the praying mantis
+    // encyclopedia entry. Reconciled 2026-09-15 after the praying mantis
     // set test (docs/READER_REVIEWS.md).
     //
     // The old hub carried unverified pricing by its own admission and every
@@ -756,9 +748,7 @@ export const invertebrateGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Pesticides, molting and the travel and outage plan
-    // cite the shared invertebrate guides in the sidebar's Health
-    // and More list. Reconciled 2026-09-15 after the stick insect set test
+    // encyclopedia entry. Reconciled 2026-09-15 after the stick insect set test
     // (docs/READER_REVIEWS.md).
     //
     // The legality line is why this hub graded C+. It said "They are legal,
