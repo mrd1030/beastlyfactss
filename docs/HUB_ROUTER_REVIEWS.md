@@ -472,6 +472,14 @@ first few days after arrival.
 
 ## What to do about it, in order
 
+Status, 2026-09-16: items 1 through 4 are done. All 84 first-week cards were
+rebuilt from the pre-trim rows to the template shape (one commit per class on
+the working branch), the per-row cap is in scripts/check-hub-rows.mjs, and
+every emergency card on a fish or invertebrate hub opens with what to check
+first, with the reviewed mammal, reptile and bird cards split into two tiers.
+Items 5 through 7 are still open: the route lines, the set-level
+contradictions, and the two missing fish articles.
+
 1. **Rewrite every emergency card header by class.** Fish and invertebrate hubs
    need a "check this first" or "act on these today" card with the first action
    next to each sign, not a vet instruction. This is 24 hubs and it is the

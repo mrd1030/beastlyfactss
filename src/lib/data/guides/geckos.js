@@ -11,9 +11,11 @@ export const geckoGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry, which no deep dive repeats. Quarantine, hygiene and
-    // thermostats cite the shared reptile guides in the sidebar's Health and
-    // More list. The old hub narrowed ambient humidity to 50-60% against the
+    // encyclopedia entry, which no deep dive repeats. Quarantine and hygiene
+    // cite the shared reptile guides in the sidebar's Health and More list.
+    // Rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md):
+    // the substrate row scopes paper towel to juveniles and quarantine, the
+    // heat row says warm-side floor. The old hub narrowed ambient humidity to 50-60% against the
     // setup guide's 50-70%, never gave the humid hide figure at all, had the
     // D3 supplement schedule backwards against the feeding guide, and gave a
     // cool side and a lifespan that disagreed with the deep dives.
@@ -22,47 +24,39 @@ export const geckoGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Day one", value: "A new gecko is quarantined away from any reptile you already keep, on paper towel, with its own tools and a fecal exam inside that window.", source: "reptile-quarantine-guide" },
-        { label: "Enclosure", value: "A 20-gallon long is the minimum for one adult, and a 36x18x16 inch (40-gallon breeder) is meaningfully better. Height buys little here: this is a terrestrial species, on the ground and under it.", source: "african-fat-tail-tank-setup-guide" },
-        { label: "Heat", value: "A heat mat on a thermostat. Aim for 88 to 92°F on the warm side, 75 to 80°F on the cool side, and a night drop to 70 to 75°F. Heat rocks and strong overhead basking bulbs both carry real burn risk.", source: "african-fat-tail-tank-setup-guide" },
-        { label: "Humidity", value: "Higher than a leopard gecko needs, though the enclosure stays mostly dry. Ambient around 50 to 70% works, and a permanent humid hide at 70 to 80% is the piece that prevents shedding problems.", source: "african-fat-tail-tank-setup-guide" },
-        { label: "Substrate", value: "For healthy adults, a naturalistic sandy-soil mix: roughly 70% topsoil to 30% play sand, or coconut fiber with reptile sand, at least 4 inches deep so the gecko can burrow. Quarantine animals and juveniles go on paper towel.", source: "african-fat-tail-tank-setup-guide" },
-        { label: "Not pure sand", value: "Keeping one on pure sand dries the gecko out and interferes with shedding, and it can cause impaction if swallowed with prey. That is a different thing from the topsoil-and-sand mix, which is what a burrowing species wants underfoot.", source: "african-fat-tail-feeding-guide" },
-        { label: "UVB", value: "They are nocturnal, and a high-D3 calcium supplement can carry them without it, but low-output UVB in the 2 to 5% band is increasingly recommended. Either way, run a 10 to 12 hour photoperiod.", source: "african-fat-tail-tank-setup-guide" },
-        { label: "Three hides", value: "A warm hide, a cool hide and a humid hide are what let a gecko choose its temperature and humidity while staying concealed, which is behavioral choice rather than a checklist item. Thermal choice is what the leopard gecko study ranked first.", source: "african-fat-tail-enrichment-guide" },
-        { label: "A humid hide that works", value: "Permanent rather than occasional, since fat-tails come from more humid West African habitats than leopard geckos and need noticeably more moisture.", source: "african-fat-tail-enrichment-guide" },
-        { label: "Feeding schedule", value: "Hatchlings eat daily. Juveniles run from daily feeding down to about 3 times a week, depending on how old a juvenile is taken to be, so feed a still-growing animal daily and move it toward the adult schedule as the tail fills out. Adults run from 3 times a week to a condition-based schedule where a gecko with a visibly fat tail eats only every 5 days.", source: "african-fat-tail-feeding-guide" },
-        { label: "Portion", value: "Roughly 2 appropriately sized bugs per inch of the gecko's body length, or simply as much as it eats in about 15 minutes. Prey should be no wider than the space between the gecko's eyes.", source: "african-fat-tail-feeding-guide" },
-        { label: "Calcium", value: "Plain, phosphorus-free calcium at most feedings: every feeding at the strict end, at least 3 times a week at the other. A calcium and D3 combo is generally used just once or twice a week on top of that.", source: "african-fat-tail-feeding-guide" },
-        { label: "Never feed", value: "Ladybugs, fireflies, monarch butterflies, box elder bugs, centipedes, bees, and wasps, generally because they're wild-caught or contain toxins. Only feed captive-bred, farmed insects.", source: "african-fat-tail-feeding-guide" },
-        { label: "Not eating", value: "A seasonal appetite drop in fall and winter is common in adults, and juveniles typically keep eating normally through it. An enclosure that isn't warm enough can trigger a false brumation response even outside the normal season.", source: "african-fat-tail-feeding-guide" },
-        { label: "The tail is the gauge", value: "There is no universal day count: the tail fat reserve genuinely lets healthy adults fast for weeks to several months without harm. A tail thinner than the neck, not just less plump, is the warning sign.", source: "african-fat-tail-feeding-guide" },
-        { label: "Handling, week one", value: "Two weeks after it comes home, and not before it is eating regularly. Once you start, support the whole body and let the gecko walk across your hands instead of gripping it. Skip handling right after a meal or during a shed.", source: "african-fat-tail-handling-guide" },
-        { label: "Temperament", value: "Among the calmest pet geckos available, often described as even more docile than the closely related leopard gecko. Adults tolerate handling well and usually stay calm through a session. Juveniles tend to be shyer and take longer to settle.", source: "african-fat-tail-handling-guide" },
-        { label: "Chirps and squeaks", value: "Discomfort, usually with being handled. A chirp or a squeak is the cue to ease off and put the gecko back down. An arched back with a slow tail-swish is the same message, stated more clearly.", source: "african-fat-tail-handling-guide" },
-        { label: "Tail drop", value: "Yes, if it is grabbed roughly or badly frightened, which is why the tail is never a handhold. The tail does grow back, and the replacement is smoother and more bulbous than the one it lost.", source: "african-fat-tail-handling-guide" },
-        { label: "Stuck shed", value: "Retained shed on the toes and tail tip, the single most common fat-tail-specific problem. It shows up when humidity is too low or no moist hide is available, and a proper moist hide plus correct humidity prevents almost all of it.", source: "african-fat-tail-health-issues-guide" },
-        { label: "The serious one", value: "Metabolic bone disease, from calcium or vitamin D3 deficiency, often alongside missing UVB. It's widely described as the most common serious issue in this species and can be fatal if it progresses.", source: "african-fat-tail-health-issues-guide" },
-        { label: "Feeding enrichment", value: "Tong feeding, short supervised insect hunts in the enclosure, and varying when and where prey appears. Fat-tails are crepuscular and nocturnal, so evening feeding matches their activity window and gets a better response than daytime offering.", source: "african-fat-tail-enrichment-guide" },
-        { label: "Skip the mirror", value: "Bashaw and colleagues tested five types of environmental enrichment on leopard geckos. Thermal and feeding enrichment produced the strongest responses and increased behavioral diversity. Mirror-based visual enrichment was the weakest, with geckos largely not engaging with it.", source: "african-fat-tail-enrichment-guide" },
-        { label: "Budget", value: "Normals commonly around $100, inside a typical range of $75 to $600, with mid-range morphs $200 to $400 and stacked multi-gene animals $600 to $1,000 or more. Roughly $200 to $450 for the setup, and $10 to $25 a month after that.", source: "african-fat-tail-cost-guide" },
-        { label: "Lifespan", value: "15 to 20 years is the commonly cited range, and the best-documented figure is a maximum recorded captive lifespan of just over 16 years.", source: "african-fat-tail-cost-guide" },
+        { label: "Day one", value: "Quarantined away from any reptile you already keep, on paper towel, with its own tools and a fecal exam inside that window.", source: "reptile-quarantine-guide" },
+        { label: "Enclosure", value: "A 20-gallon long minimum for one adult, a 36x18x16 inch 40-gallon breeder better. Height buys little for a terrestrial burrower.", source: "african-fat-tail-tank-setup-guide" },
+        { label: "Heat", value: "A heat mat on a thermostat for a warm-side floor of 88 to 92°F, a cool side of 75 to 80°F, and nights of 70 to 75°F. No heat rocks or strong overhead bulbs, which burn.", source: "african-fat-tail-tank-setup-guide" },
+        { label: "Humidity", value: "Ambient 50 to 70%, higher than a leopard gecko, with a permanent humid hide at 70 to 80%, which is what prevents shedding trouble.", source: "african-fat-tail-tank-setup-guide" },
+        { label: "Substrate", value: "For healthy adults, roughly 70% topsoil to 30% play sand at least 4 inches deep. Juveniles and animals in quarantine go on paper towel. Never pure sand, which dries the gecko and impacts.", source: "african-fat-tail-tank-setup-guide" },
+        { label: "UVB and light", value: "A high-D3 calcium can carry a nocturnal gecko without it, but a 2 to 5% low-output UVB is increasingly recommended. A 10 to 12 hour photoperiod either way.", source: "african-fat-tail-tank-setup-guide" },
+        { label: "Three hides", value: "Warm, cool, and humid, so it chooses temperature and moisture while concealed. Thermal choice ranked first in the leopard gecko enrichment study.", source: "african-fat-tail-enrichment-guide" },
+        { label: "Feeding schedule", value: "Hatchlings daily. Juveniles daily, easing toward 3 times a week as the tail fills out. Adults 3 times a week down to every 5 days for a gecko with a visibly fat tail.", source: "african-fat-tail-feeding-guide" },
+        { label: "Portion", value: "About 2 bugs per inch of body, or what it eats in about 15 minutes, none wider than the space between the eyes. Fed in the evening, when a crepuscular gecko is hunting.", source: "african-fat-tail-feeding-guide" },
+        { label: "Calcium", value: "Plain, phosphorus-free calcium at most feedings, at least 3 times a week, and a calcium-with-D3 combo once or twice a week.", source: "african-fat-tail-feeding-guide" },
+        { label: "Never feed", value: "Ladybugs, fireflies, monarchs, box elder bugs, centipedes, bees, or wasps. Only captive-bred, farmed insects.", source: "african-fat-tail-feeding-guide" },
+        { label: "The tail is the gauge", value: "A fall and winter appetite drop is normal in adults, and the tail fat lets a healthy adult fast for weeks. A tail thinner than the neck is the warning sign.", source: "african-fat-tail-feeding-guide" },
+        { label: "Handling, week one", value: "Two weeks after it comes home and once it is eating. Support the whole body and let it walk across your hands; a chirp or squeak means put it down. Never the tail, which drops.", source: "african-fat-tail-handling-guide" },
+        { label: "Stuck shed", value: "Retained shed on the toes and tail tip is the commonest fat-tail problem, from low humidity or no moist hide, and the hide prevents almost all of it.", source: "african-fat-tail-health-issues-guide" },
+        { label: "Budget", value: "Normals around $100 inside a $75 to $600 range, morphs to $600 to $1,000. Roughly $200 to $450 for the setup, then $10 to $25 a month.", source: "african-fat-tail-cost-guide" },
+        { label: "Lifespan", value: "15 to 20 years cited; the best-documented captive maximum is just over 16.", source: "african-fat-tail-cost-guide" },
         { label: "Adult size", value: "7 to 9 inches (18 to 23 cm)." },
-        { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the gecko out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
-        { label: "Thermostat", value: "Any heat source runs through a thermostat, and where the probe sits decides what the controller is actually holding.", source: "reptile-heating-thermostats-guide" },
+        { label: "Hygiene", value: "Wash hands with soap after any contact, keep the gecko out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
       ],
     },
     emergencyCard: {
       source: "african-fat-tail-health-issues-guide",
       callNow: [
-        "Lethargy, difficulty standing or walking, swollen joints, muscle twitches, or spinal curvature",
-        "Retained shed that constricts a toe or the tail tip, once constriction or tissue death has already started",
-        "Bloating, lethargy, appetite loss, and straining, which point at impaction",
-        "Wheezing, mucus, or open-mouth breathing",
-        "A female straining to lay, which is a genuine emergency",
-        "Cloudiness, swelling, or discharge in the eyes outside a normal shed cycle",
+        "A female straining to lay",
+        "Wheezing, mucus, or open-mouth breathing, which needs antibiotics and will not clear alone",
+        "Bloating, lethargy, appetite loss, and straining: impaction",
+        "Lethargy, difficulty standing or walking, swollen joints, muscle twitches, or spinal curvature: bone disease",
       ],
-      vetLine: "Respiratory infection needs a vet and antibiotic treatment and won't clear on its own. Egg-binding is a genuine emergency requiring immediate vet care, and eye problems are reported relatively commonly in this species, so anything outside a normal shed cycle is worth a visit.",
+      soon: [
+        "Retained shed constricting a toe or the tail tip once home correction has failed",
+        "Cloudiness, swelling, or discharge in the eyes outside a normal shed",
+      ],
+      vetLine: "Eye problems are reported relatively often in this species, so anything outside a shed cycle is worth a visit.",
     },
     routes: [
       { slug: "african-fat-tail-cost-guide", line: "$75 to $600 for a normal and past $1,000 for stacked morphs, the $200 to $450 setup, and what a documented 16-year maximum means for budgeting." },
@@ -178,9 +172,10 @@ export const geckoGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry, which no deep dive repeats. Quarantine, hygiene and
-    // thermostats cite the shared reptile guides in the sidebar's Health and
-    // More list. The old hub disagreed with the deep dives on temperature,
+    // encyclopedia entry, which no deep dive repeats. Quarantine and hygiene
+    // cite the shared reptile guides in the sidebar's Health and More list.
+    // Rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // The old hub disagreed with the deep dives on temperature,
     // insect frequency, supplement schedule, handling session length, time of
     // day, temperament and tail regrowth, and its own diet section and FAQ
     // disagreed with each other on insects. Reconciled 2026-09-14 for batch H
@@ -189,37 +184,23 @@ export const geckoGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Day one", value: "A new gecko is quarantined away from any reptile you already keep, on paper towel, with its own tools and a fecal exam inside that window.", source: "reptile-quarantine-guide" },
-        { label: "Enclosure", value: "18x18x24 inches is the minimum for a single adult, with 24x24x24 inches as the ideal. Vertical space matters more than floor space. Hatchlings and juveniles under about 12 grams do better in a smaller grow-out enclosure temporarily.", source: "gargoyle-gecko-tank-setup-guide" },
-        { label: "Living alone", value: "House one gecko per enclosure. They're territorial, hatchlings can be cannibalized, and mating alone gets rough enough to cost a tail.", source: "gargoyle-gecko-handling-guide" },
-        { label: "Temperature", value: "A gradient: a cool end around 70 to 75°F and a basking spot around 82 to 85°F, with ambient temperature sitting at or below about 82°F. Nights can drop into the low 70s or even the mid-60s without issue, and 65°F is the floor.", source: "gargoyle-gecko-tank-setup-guide" },
-        { label: "The ceiling", value: "Air above 86°F is dangerous, which is a lower limit than almost any other lizard in the hobby. Keep the enclosure away from sunny windows, since ambient room heat is the thing most likely to push a gargoyle past it.", source: "gargoyle-gecko-tank-setup-guide" },
-        { label: "Heat source", value: "A low-wattage bulb or ceramic heat emitter on a thermostat, over one side of a screen top so the basking branches reach range. The belief that this species needs no heat at all is the most repeated mistake about it.", source: "gargoyle-gecko-tank-setup-guide" },
-        { label: "Humidity", value: "Target 50 to 70%. Mist heavily in the evening, and let it dry back down toward 50% before misting again. Constant, unbroken moisture causes respiratory infection, one of the most common preventable problems in this species.", source: "gargoyle-gecko-tank-setup-guide" },
-        { label: "Water", value: "Gargoyle geckos mostly drink water droplets off leaves and walls rather than from a dish, though a shallow dish is still worth providing.", source: "gargoyle-gecko-tank-setup-guide" },
-        { label: "Substrate", value: "Coconut fiber works well for humidity retention, and paper towel is a solid budget option, especially for hatchlings or a sick gecko. A bioactive soil mix with a drainage layer and a cleanup crew is another good option. Avoid sand, wood chips, and gravel.", source: "gargoyle-gecko-tank-setup-guide" },
-        { label: "UVB", value: "Gargoyle geckos can survive without it since a complete powdered diet supplies vitamin D3, but low-level UVB offers real digestive and immune benefits: a 12-inch low-output T5 positioned for a basking-area UVI of roughly 1.0 to 2.0, on a 12-hour cycle, mounted over open mesh.", source: "gargoyle-gecko-tank-setup-guide" },
-        { label: "Clutter", value: "Heavy clutter, not sparse decor, is the right instinct here. Branches, vines, and cork bark genuinely help prevent floppy tail syndrome by giving your gecko somewhere other than bare glass to rest. Gargoyle geckos climb glass poorly compared to crested geckos.", source: "gargoyle-gecko-tank-setup-guide" },
-        { label: "Height over floor", value: "They are arboreal New Caledonian geckos that live on vertical surfaces, so a tall enclosure with real structure in it gives them far more usable space than a wide flat one. Height without branches and planting is wasted.", source: "gargoyle-gecko-enrichment-guide" },
-        { label: "Staple diet", value: "A commercial powdered crested gecko diet, mixed with water to a ketchup-like consistency, roughly 2 to 3 parts water to 1 part powder. Offer it in a small cup or on a feeding ledge. Rotate 3 or more brands or flavors for variety and to avoid pickiness.", source: "gargoyle-gecko-feeding-guide" },
-        { label: "Feeding schedule", value: "Hatchlings and juveniles get fresh commercial gecko diet daily, adults every 2 to 3 days.", source: "gargoyle-gecko-feeding-guide" },
-        { label: "Insects", value: "1 to 2 times a week for juveniles, once a week for adults.", source: "gargoyle-gecko-feeding-guide" },
-        { label: "Insects are required", value: "Unlike crested geckos, live insects here are a required supplement rather than optional enrichment. Gargoyle geckos are unusually carnivorous for New Caledonian geckos.", source: "gargoyle-gecko-feeding-guide" },
-        { label: "Supplements", value: "Gut-load insects 24 to 48 hours before feeding and dust with a calcium supplement without D3 for most feedings, with a D3-inclusive product periodically.", source: "gargoyle-gecko-feeding-guide" },
-        { label: "Foods to avoid", value: "Citrus fruits are too acidic and can cause diarrhea, starfruit and rhubarb are high in oxalates, rhubarb specifically called potentially lethal. Skip garlic, onion, eggplant, and dairy entirely, geckos are lactose intolerant. Avocado is avoided as a precaution.", source: "gargoyle-gecko-feeding-guide" },
-        { label: "Not eating", value: "A healthy, well-hydrated adult can reportedly go up to 2 to 3 weeks without food. Juveniles shouldn't go past about 4 to 5 days given their growth needs. Water is more time-critical: no gecko should go more than 2 to 3 days without water access.", source: "gargoyle-gecko-feeding-guide" },
-        { label: "Handling, week one", value: "Wait two weeks after it comes home. Begin with 5-minute sessions every other day, work up toward 15, and keep the daily total near 20 minutes even once it's tame.", source: "gargoyle-gecko-handling-guide" },
-        { label: "Temperament", value: "Adults are generally docile and slow-moving, one of the calmer arboreal geckos to handle. Juveniles are a different story, they're skittish and jumpy, so don't judge the species by a nervous young gecko.", source: "gargoyle-gecko-handling-guide" },
-        { label: "Biting", value: "Rare, and almost always because it was provoked. Gargoyle teeth are noticeably bigger than a crested gecko's, so an adult bite can break skin where a crestie's can't. It's still a minor wound: soap and water.", source: "gargoyle-gecko-handling-guide" },
-        { label: "Tail drop", value: "Never grab or hold the tail. Unlike crested geckos, gargoyle geckos do regrow their tail. The regrown tail comes back slightly different, prehensile and cartilage-based rather than bone, with somewhat asymmetrical scales, but fully functional.", source: "gargoyle-gecko-handling-guide" },
-        { label: "Weighing", value: "Regular weighing is the most objective way to catch a real problem early, and a small amount of natural fluctuation isn't itself alarming. Rapid weight loss shows most easily as thinning at the tail, which this species uses as a fat-storage organ.", source: "gargoyle-gecko-feeding-guide" },
-        { label: "Budget", value: "$50 to $300 for a common reticulated or striped animal, climbing to $500 to $1,000 or more for a premium morph. Roughly $230 to $445 in gear, so a typical first setup with a common animal lands around $280 to $745.", source: "gargoyle-gecko-cost-guide" },
-        { label: "Ongoing costs", value: "Most keepers land in the $10 to $25 a month range for food and supplements. One 8-ounce bag of powdered gecko diet lasts a single adult about two months and runs around $20.", source: "gargoyle-gecko-cost-guide" },
-        { label: "Vet costs", value: "$50 to $150 for a routine exotic exam. A common-illness visit with diagnostics is more like $150 to $600, and imaging or surgery can reach $800 to $2,500 or more. No gargoyle-specific fee data exists, so these are general exotic reptile benchmarks.", source: "gargoyle-gecko-cost-guide" },
-        { label: "Lifespan", value: "15 to 20 years is typical, with some keepers reporting animals still breeding well past 20.", source: "gargoyle-gecko-cost-guide" },
+        { label: "Day one", value: "Quarantined away from any reptile you already keep, on paper towel, with its own tools and a fecal exam inside that window.", source: "reptile-quarantine-guide" },
+        { label: "Enclosure", value: "18x18x24 inches minimum for an adult, 24x24x24 ideal, vertical over floor, one gecko per enclosure. Hatchlings under about 12 grams do better in a smaller grow-out.", source: "gargoyle-gecko-tank-setup-guide" },
+        { label: "Temperature", value: "A cool end of 70 to 75°F and a basking spot of 82 to 85°F, from a low-wattage bulb or ceramic emitter on a thermostat. Nights to the mid-60s are fine and 65°F is the floor. The belief that it needs no heat is the most repeated mistake.", source: "gargoyle-gecko-tank-setup-guide" },
+        { label: "The ceiling", value: "Air above 86°F is dangerous, lower than almost any lizard in the hobby. Away from sunny windows: room heat is what pushes a gargoyle past it.", source: "gargoyle-gecko-tank-setup-guide" },
+        { label: "Humidity", value: "50 to 70%: mist heavily in the evening and let it dry back toward 50% before misting again. Constant wet causes respiratory infection.", source: "gargoyle-gecko-tank-setup-guide" },
+        { label: "Substrate and clutter", value: "Coconut fiber, or paper towel for hatchlings and sick geckos; no sand, wood chips, or gravel. Heavy clutter of branches, vines, and cork, since resting on bare glass is how floppy tail starts.", source: "gargoyle-gecko-tank-setup-guide" },
+        { label: "UVB", value: "Survivable without, since a complete powdered diet supplies D3, but a 12-inch low-output T5 at a basking UVI of 1.0 to 2.0 over open mesh, 12 hours a day, has real benefits.", source: "gargoyle-gecko-tank-setup-guide" },
+        { label: "Staple diet", value: "A powdered crested gecko diet at 2 to 3 parts water to 1 part powder in a cup or on a ledge, rotating 3 or more brands. Hatchlings and juveniles daily, adults every 2 to 3 days.", source: "gargoyle-gecko-feeding-guide" },
+        { label: "Insects are required", value: "Unlike a crested gecko: 1 to 2 times a week for juveniles, once a week for adults, gut-loaded 24 to 48 hours and dusted with calcium without D3 most times, with D3 periodically.", source: "gargoyle-gecko-feeding-guide" },
+        { label: "Foods to avoid", value: "Citrus, starfruit, rhubarb, garlic, onion, eggplant, dairy, and avocado.", source: "gargoyle-gecko-feeding-guide" },
+        { label: "Not eating", value: "A healthy adult goes up to 2 to 3 weeks; a juvenile not past 4 to 5 days. Water is the time-critical one: no more than 2 to 3 days without access. Weigh regularly; a thinning tail is the early sign.", source: "gargoyle-gecko-feeding-guide" },
+        { label: "Handling, week one", value: "Wait two weeks after it comes home, then 5-minute sessions every other day, working toward 15 and a daily total near 20. Adults are calm; juveniles are jumpy.", source: "gargoyle-gecko-handling-guide" },
+        { label: "Tail and teeth", value: "Never hold the tail. It regrows, unlike a crested gecko's. A bite is rare and provoked, and can break skin: soap and water.", source: "gargoyle-gecko-handling-guide" },
+        { label: "Budget", value: "$50 to $300 for a common animal, $500 to $1,000 or more for a premium morph, and $230 to $445 in gear. $10 to $25 a month, and $50 to $150 for a routine exam.", source: "gargoyle-gecko-cost-guide" },
+        { label: "Lifespan", value: "15 to 20 years, some breeding well past 20.", source: "gargoyle-gecko-cost-guide" },
         { label: "Adult size", value: "7 to 9 inches (18 to 23 cm) including tail." },
-        { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the gecko out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
-        { label: "Thermostat", value: "Any heat source runs through a thermostat, and where the probe sits decides what the controller is actually holding.", source: "reptile-heating-thermostats-guide" },
+        { label: "Hygiene", value: "Wash hands with soap after any contact, keep the gecko out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
       ],
     },
     emergencyCard: {
@@ -272,9 +253,10 @@ export const geckoGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Salmonella, thermostats, shedding, quarantine and
-    // the emergency plan cite the shared reptile guides in the sidebar's
-    // Health and More list. Reconciled 2026-09-15 after the leaf-tailed gecko
+    // encyclopedia entry. Salmonella, quarantine and the emergency plan cite
+    // the shared reptile guides in the sidebar's Health and More list.
+    // Rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // Reconciled 2026-09-15 after the leaf-tailed gecko
     // set test (docs/READER_REVIEWS.md).
     //
     // The reader graded the old hub C+ and said the plainest version of what
@@ -298,30 +280,24 @@ export const geckoGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Buy captive-bred", value: "Wild-caught individuals consistently live shorter lives than captive-bred ones, one more reason captive-bred is strongly worth the higher price for this species specifically.", source: "leaf-tailed-gecko-cost-guide" },
-        { label: "Enclosure size", value: "Smaller species do fine in 12x12x18 inches, with 18x18x18 better. The satanic leaf-tailed gecko, the smallest commonly kept species, does well in an 18x18x24 inch enclosure as an adult. Larger species like Henkel's need considerably more room. This is a vertical, arboreal species, so height matters more than floor space.", source: "leaf-tailed-gecko-tank-setup-guide" },
-        { label: "Temperature", value: "Ambient around 68 to 75F, with a night drop to around 64 to 68F. This species has thin skin, dehydrates easily, and genuinely does not handle heat stress well. A basking heat source is generally not needed and can be actively dangerous for this species, the opposite setup priority from most reptiles.", source: "leaf-tailed-gecko-tank-setup-guide" },
-        { label: "Humidity", value: "60 to 80% for most species, though the satanic leaf-tailed gecko specifically needs 90 to 100% overnight and dehydrates extremely easily if that's not met. Achieve this through morning and evening misting, live plants, and moisture-retentive substrate.", source: "leaf-tailed-gecko-tank-setup-guide" },
-        { label: "The drying cycle", value: "Uroplatus need high humidity and drying periods between mistings, and hand spraying several times a day is hard to sustain reliably. Constant saturation is as bad as constant dryness, so the cycle matters as much as the number. A misting system is one of the few pieces of equipment that genuinely changes outcomes for this genus.", source: "leaf-tailed-gecko-enrichment-guide" },
-        { label: "The shed check", value: "A gecko kept at correct humidity sheds in one clean piece with no sunken eyes or a drooping tail afterward, a simple visual check that's one of the fastest ways to catch early dehydration before it turns dangerous.", source: "leaf-tailed-gecko-health-issues-guide" },
-        { label: "Lighting", value: "Low-output UVB, in the 2.0 to 5.0 range, is increasingly recommended for long-term health, though not definitively required. Avoid high-output basking-style UVB entirely, this species doesn't use or tolerate intense light the way a desert lizard would. Run a standard 12-hour photoperiod on a timer.", source: "leaf-tailed-gecko-tank-setup-guide" },
-        { label: "Tap water, not distilled", value: "Use ordinary tap water for misting and drinking rather than distilled, softened, or heavily filtered water, tap water contains minerals important to this gecko's health.", source: "leaf-tailed-gecko-tank-setup-guide" },
-        { label: "Cover, and the test for it", value: "Vertical cork slabs, branches of varied diameter, and dense live planting arranged in layers and not a single plane. The test: can you always find the gecko instantly? If so, the layout is too sparse. An animal that can position itself against a matching surface and become difficult to see is doing the thing it evolved to do.", source: "leaf-tailed-gecko-enrichment-guide" },
-        { label: "Feeding", value: "Juveniles eat daily and adults every other day, and the portion is as much as the gecko will take in one night. Dubia, discoid and red runner roaches, crickets, grasshoppers, hornworms, silkworms, mealworm and superworm beetles, and captive-bred snails all work, with the smaller species needing correspondingly smaller prey.", source: "leaf-tailed-gecko-tank-setup-guide" },
-        { label: "Uneaten prey", value: "These are nocturnal hunters, so food goes in when the animal is becoming active rather than in the morning, and anything still loose in the enclosure by the next day comes out: live insects wandering a cage disturb a resting gecko, and on a freshly shed or unwell one they can do worse than disturb it.", source: "leaf-tailed-gecko-tank-setup-guide" },
-        { label: "Supplements", value: "Dust every feeder lightly with a single all-in-one calcium-plus-vitamin powder. Occasionally skipping a dusting is fine; skipping it as a habit is not.", source: "leaf-tailed-gecko-tank-setup-guide" },
-        { label: "Feed at height", value: "Arboreal geckos that do not want to descend to a floor dish, so a magnetic feeding ledge mounted high puts food where the animal already is. Release live prey at night rather than presenting it: these are nocturnal ambush hunters, and prey that has to be located and taken is the behavior a dish removes.", source: "leaf-tailed-gecko-enrichment-guide" },
-        { label: "Leave them alone", value: "Uroplatus are highly strung, easily stressed, and frequently wild-caught with the health problems that brings. Low traffic, low disturbance and minimal handling do more for this animal than anything you can add to the enclosure.", source: "leaf-tailed-gecko-enrichment-guide" },
-        { label: "Tail drop", value: "The satanic leaf-tailed gecko does not regenerate its tail at all, while several other species regrow theirs imperfectly. This is one more reason to treat handling as something to minimize, never a routine.", source: "leaf-tailed-gecko-handling-guide" },
+        { label: "Buy captive-bred", value: "Wild-caught animals consistently live shorter lives, and the genus is often wild-caught with the health problems that brings.", source: "leaf-tailed-gecko-cost-guide" },
+        { label: "Quarantine", value: "3 to 6 months for a new reptile, on plain paper towel with dedicated tools, serviced last. For a wild-caught gecko, wait 1 to 2 months before parasite treatment so a stressed animal is not treated too soon.", source: "reptile-quarantine-guide" },
+        { label: "Enclosure", value: "12x12x18 inches for the smaller species, 18x18x18 better; the satanic leaf-tail does well in 18x18x24 as an adult, and Henkel's needs much more. Height over floor.", source: "leaf-tailed-gecko-tank-setup-guide" },
+        { label: "Temperature", value: "Ambient 68 to 75F, nights 64 to 68F. No basking heat: thin-skinned, easily dehydrated, and heat stress is the danger, the opposite priority from most reptiles.", source: "leaf-tailed-gecko-tank-setup-guide" },
+        { label: "Humidity", value: "60 to 80% for most species, and 90 to 100% overnight for the satanic leaf-tail, from morning and evening misting, live plants, and moisture-holding substrate.", source: "leaf-tailed-gecko-tank-setup-guide" },
+        { label: "The drying cycle", value: "High humidity with drying periods between mistings. Constant saturation is as bad as constant dryness, and a misting system is one of the few pieces of gear that changes outcomes for this genus.", source: "leaf-tailed-gecko-enrichment-guide" },
+        { label: "The shed check", value: "At correct humidity the shed comes off in one piece with no sunken eyes or drooping tail afterward. It is the fastest early dehydration check there is.", source: "leaf-tailed-gecko-health-issues-guide" },
+        { label: "Lighting and water", value: "Low-output UVB in the 2.0 to 5.0 range on a 12-hour timer, never basking-strength. Tap water, not distilled, for misting and drinking, for the minerals.", source: "leaf-tailed-gecko-tank-setup-guide" },
+        { label: "Cover, and the test for it", value: "Vertical cork, branches of varied diameter, and dense planting in layers. If you can always find the gecko instantly, it is too sparse.", source: "leaf-tailed-gecko-enrichment-guide" },
+        { label: "Feeding", value: "Juveniles daily, adults every other day, as much as it takes in one night: dubia, discoid and red runner roaches, crickets, hornworms, silkworms, snails, sized to the species. Every feeder lightly dusted with an all-in-one calcium-plus-vitamin powder.", source: "leaf-tailed-gecko-tank-setup-guide" },
+        { label: "Uneaten prey", value: "Food goes in as the gecko becomes active at night, and anything still loose next day comes out. Insects wandering the cage disturb a resting gecko and can injure a freshly shed one.", source: "leaf-tailed-gecko-tank-setup-guide" },
+        { label: "Feed at height", value: "A magnetic ledge mounted high, or live prey released at night, since an arboreal ambush hunter will not descend to a floor dish.", source: "leaf-tailed-gecko-enrichment-guide" },
+        { label: "Leave them alone", value: "Highly strung and easily stressed. Low traffic, low disturbance, and minimal handling do more than anything you can add. The satanic leaf-tail never regrows a dropped tail.", source: "leaf-tailed-gecko-handling-guide" },
         { label: "Adult size", value: "2.5 to 12 inches (6 to 30 cm) depending on species." },
-        { label: "Budget, the gecko", value: "$250 to $800 or more. Price tracks species and locality rather than color morphs, which this genus does not have in the way a crested or leopard gecko does.", source: "leaf-tailed-gecko-cost-guide" },
-        { label: "Budget, the setup", value: "Roughly $300 to $600, covering a tall vertical bioactive terrarium, a misting system, low-output UVB and fixture, live plants and moisture-retentive substrate, a digital hygrometer and thermometer, and a magnetic feeding ledge.", source: "leaf-tailed-gecko-cost-guide" },
-        { label: "Ongoing costs", value: "Roughly $20 to $40 a month.", source: "leaf-tailed-gecko-cost-guide" },
-        { label: "Lifespan", value: "5 to 15 years in captivity, though wild-caught animals consistently live shorter lives than captive-bred ones.", source: "leaf-tailed-gecko-cost-guide" },
-        { label: "Parasite treatment timing", value: "If you've just acquired a wild-caught or freshly imported gecko, waiting 1 to 2 months to let it acclimate before starting parasite treatment is often the safer approach, since treating an already-stressed animal too soon can do more harm than the parasites themselves in the short term. Discuss timing with your vet.", source: "leaf-tailed-gecko-health-issues-guide" },
-        { label: "Salmonella", value: "A completely healthy-looking reptile can carry and shed Salmonella with no outward sign, and the route is hands and surfaces to mouth rather than bites. Never clean the enclosure, water dish or any equipment in a kitchen sink or a bathtub people also use. Children younger than 5 should not handle or touch reptiles or their environments at all.", source: "reptile-salmonella-hygiene-guide" },
-        { label: "Quarantine", value: "Longer than the two to four weeks that gets repeated informally: the Merck Veterinary Manual recommends 3 to 6 months for a new reptile. A bare enclosure on plain paper towel, so mites and abnormal stool show against a blank background, with dedicated tools and the quarantined animal serviced last.", source: "reptile-quarantine-guide" },
-        { label: "Power outage", value: "A healthy adult in most commonly kept species tolerates a few hours to one cool night without real harm. The risk climbs with time, not with a single cold hour: a day or two below the species' normal nighttime low is when cold stress and secondary respiratory infection become a real concern.", source: "reptile-emergency-plan-guide" },
+        { label: "Budget", value: "$250 to $800 or more for the gecko, priced by species and locality. Roughly $300 to $600 for the setup, then $20 to $40 a month.", source: "leaf-tailed-gecko-cost-guide" },
+        { label: "Lifespan", value: "5 to 15 years in captivity.", source: "leaf-tailed-gecko-cost-guide" },
+        { label: "Salmonella", value: "Never clean the enclosure or its equipment in a kitchen sink or a shared bathtub, and children under 5 do not touch reptiles or their environments.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Power outage", value: "A healthy adult tolerates a few hours to one cool night. A day or two below the normal night low is when cold stress and respiratory infection become real.", source: "reptile-emergency-plan-guide" },
       ],
     },
     emergencyCard: {
@@ -454,9 +430,10 @@ export const geckoGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Quarantine, hygiene and shedding cite the shared
-    // reptile guides in the sidebar's Health and More list. Reconciled
-    // 2026-09-15 after the mourning gecko set test (docs/READER_REVIEWS.md).
+    // encyclopedia entry. Quarantine and shedding cite the shared reptile
+    // guides in the sidebar's Health and More list. Reconciled 2026-09-15
+    // after the mourning gecko set test (docs/READER_REVIEWS.md), rewritten to
+    // the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
     //
     // The old hub was a full care sheet at lower resolution than the pages
     // under it, and the reader found six things wrong with it. Five were
@@ -478,28 +455,24 @@ export const geckoGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Day one", value: "A new gecko is quarantined away from any reptile you already keep, on paper towel, with its own tools and a fecal exam inside that window.", source: "reptile-quarantine-guide" },
-        { label: "Buy more than one", value: "Mourning geckos are parthenogenetic. There are no males, reproduction happens without them, and they live in colonies. That makes the social question, which is contested for almost every other reptile, already settled here, and it makes group size an enrichment decision rather than a risk.", source: "mourning-gecko-enrichment-guide" },
-        { label: "Or don't, strictly", value: "A lone mourning gecko survives fine and will still lay viable eggs on its own, and some breeders keep them solo. A group is still the default for a species that lives in colonies in the wild, and it is where most of the behavior worth watching comes from.", source: "mourning-gecko-handling-guide" },
-        { label: "Enclosure", value: "A 12x18x18 inch, tall, front-opening enclosure works for a pair or small group of up to about three to five. Since mourning geckos self-multiply, plan on eventually stepping up to something larger, an 18x18x24 inch enclosure comfortably houses a bigger group as your colony grows. Height matters more than floor space for this arboreal species.", source: "mourning-gecko-tank-setup-guide" },
-        { label: "Escape-proofing", value: "Hatchlings measure under an inch, small enough to slip through ventilation gaps and around door frames that would easily contain nearly any other gecko species. Seal every gap you can find with aquarium-safe putty or a similar barrier before adding any geckos to a new enclosure. Once loose in a house, they are extremely difficult to recover.", source: "mourning-gecko-tank-setup-guide" },
-        { label: "Temperature", value: "A daytime ambient temperature of 70 to 80°F with a warm basking spot up to 85°F, dropping to 65 to 72°F at night. At normal room temperature, most homes need no dedicated heat source at all. Only add gentle supplemental heat if your room consistently runs cold.", source: "mourning-gecko-tank-setup-guide" },
-        { label: "Humidity", value: "Between 60 and 80%, with brief peaks up to 90% via daily mistings. Let the enclosure dry slightly afterward to prevent mold and respiratory issues, and use a moisture-retentive substrate to help hold humidity between mistings.", source: "mourning-gecko-tank-setup-guide" },
-        { label: "Substrate", value: "Coconut coir, or a coir and sphagnum moss blend, which supports a bioactive-style setup nicely. Keep it appropriately moist without becoming waterlogged.", source: "mourning-gecko-tank-setup-guide" },
-        { label: "UVB", value: "Low-output UVB in the 5 to 6% range is strongly recommended given how frequently females lay eggs and the resulting calcium demand. Run a standard 12-hour light cycle.", source: "mourning-gecko-tank-setup-guide" },
-        { label: "Fill the height", value: "Small arboreal geckos that live on leaves and vertical surfaces, so a tall enclosure gives them far more usable area than a wide one. Live planting does three jobs at once: usable surface, visual cover so animals can avoid each other, and humidity. Empty height is wasted height.", source: "mourning-gecko-enrichment-guide" },
-        { label: "Staple food", value: "A powdered, commercially formulated crested gecko diet mixed with water to a smoothie-like paste, roughly 2 to 3 parts water to 1 part powder. Mount the feeding cup on a wall or vertical surface rather than the enclosure floor, since mourning geckos are arboreal.", source: "mourning-gecko-feeding-guide" },
-        { label: "How often", value: "Fresh powdered diet every 48 hours, and dusted insects once or twice a week.", source: "mourning-gecko-feeding-guide" },
-        { label: "Insects", value: "Pinhead crickets scaling up as the gecko grows, fruit flies for hatchlings and small geckos, newborn dubia or discoid roach nymphs, and small mealworms in moderation. Prey should be no larger than the width of the gecko's head to avoid impaction.", source: "mourning-gecko-feeding-guide" },
-        { label: "Calcium", value: "Gut-load insects before offering, then dust with calcium at most feedings, rotating in a multivitamin for roughly one weekly insect feeding instead. Even fruit flies can and should be dusted. Leave a separate open dish of calcium powder in the enclosure alongside that.", source: "mourning-gecko-feeding-guide" },
-        { label: "Why calcium never lets up", value: "Mature females lay a clutch of two eggs roughly every 4 to 6 weeks, with or without a male present. That relentless egg-laying schedule is exactly why calcium demand runs so high in this species compared to most other beginner geckos. It is not an occasional breeding event, it is a constant baseline drain.", source: "mourning-gecko-health-issues-guide" },
-        { label: "Feed in more than one place", value: "Shallow dishes at several heights, so feeding is distributed instead of a scrum at one point. A dominant female may guard a single food dish and prevent others from eating.", source: "mourning-gecko-enrichment-guide" },
-        { label: "Don't handle", value: "Adults measure just 3.5 to 4 inches total and hatchlings are under an inch. A small drop, the kind that wouldn't concern you with almost any other pet, can genuinely be fatal at this scale. This isn't a matter of technique, it's a matter of scale. Let one walk onto your hand rather than reaching for it, and keep your hands low and slow.", source: "mourning-gecko-handling-guide" },
-        { label: "Shedding", value: "A gecko in shed goes dull and spends more time hidden, and the shed itself comes off in pieces rather than one sock. What matters is what is left behind: a band around a toe or the tail tip needs humidity raised and a moist hide offered.", source: "reptile-shedding-complete-guide" },
-        { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the gecko out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
-        { label: "Budget", value: "$15 to $50 for most hatchlings and juveniles, and breeders often sell pairs or trios cheaper per animal, a trio around $60 total. Setup runs roughly $200 to $450, upkeep roughly $10 to $25 a month. A routine exotic exam commonly runs $35 to $105.", source: "mourning-gecko-cost-guide" },
+        { label: "Day one", value: "Quarantined away from any reptile you already keep, on paper towel, with its own tools and a fecal exam inside that window.", source: "reptile-quarantine-guide" },
+        { label: "Buy more than one", value: "Parthenogenetic, all female, and colonial, so the social question is settled and group size is an enrichment decision. A lone gecko survives fine and still lays viable eggs.", source: "mourning-gecko-enrichment-guide" },
+        { label: "Enclosure", value: "A 12x18x18 inch tall, front-opening enclosure for a group of three to five; an 18x18x24 houses the bigger group the colony will become. Height over floor.", source: "mourning-gecko-tank-setup-guide" },
+        { label: "Escape-proofing", value: "Hatchlings are under an inch and slip through ventilation gaps and door frames that hold any other gecko. Seal every gap with aquarium-safe putty before the geckos go in.", source: "mourning-gecko-tank-setup-guide" },
+        { label: "Temperature", value: "70 to 80°F by day with a basking spot up to 85°F, 65 to 72°F at night. Most homes need no heat source at all.", source: "mourning-gecko-tank-setup-guide" },
+        { label: "Humidity and substrate", value: "60 to 80% with brief peaks to 90% from daily misting, then a slight dry-down against mold. Coconut coir or a coir and sphagnum blend, moist but never waterlogged.", source: "mourning-gecko-tank-setup-guide" },
+        { label: "UVB", value: "A 5 to 6% low-output tube is strongly recommended, given how often females lay and the calcium that costs. A 12-hour cycle.", source: "mourning-gecko-tank-setup-guide" },
+        { label: "Fill the height", value: "Live planting gives usable surface, cover so animals can avoid each other, and humidity at once. Empty height is wasted height.", source: "mourning-gecko-enrichment-guide" },
+        { label: "Staple food", value: "A powdered crested gecko diet at 2 to 3 parts water to 1 part powder, fresh every 48 hours, in a cup mounted on a wall rather than the floor.", source: "mourning-gecko-feeding-guide" },
+        { label: "Insects", value: "Once or twice a week: pinhead crickets, fruit flies for hatchlings, newborn dubia or discoid nymphs, small mealworms in moderation, nothing wider than the head.", source: "mourning-gecko-feeding-guide" },
+        { label: "Calcium", value: "Dusted at most insect feedings, even on fruit flies, with a multivitamin swapped in about weekly, plus an open dish of calcium in the enclosure.", source: "mourning-gecko-feeding-guide" },
+        { label: "Why calcium never lets up", value: "A clutch of two eggs roughly every 4 to 6 weeks, with no male needed. Not a breeding event but a constant drain.", source: "mourning-gecko-health-issues-guide" },
+        { label: "Feed in more than one place", value: "Shallow dishes at several heights, since a dominant female may guard a single dish.", source: "mourning-gecko-enrichment-guide" },
+        { label: "Do not handle", value: "Adults are 3.5 to 4 inches and hatchlings under an inch, and a small drop can be fatal at that scale. Let one walk onto your hand, low and slow.", source: "mourning-gecko-handling-guide" },
+        { label: "Shedding", value: "It comes off in pieces rather than one sock. A band left around a toe or tail tip needs humidity raised and a moist hide.", source: "reptile-shedding-complete-guide" },
+        { label: "Budget", value: "$15 to $50 each, a trio around $60. Setup roughly $200 to $450, upkeep $10 to $25 a month, and a routine exam $35 to $105.", source: "mourning-gecko-cost-guide" },
         { label: "Adult size", value: "3.5 to 4 inches (8.5 to 10 cm)." },
-        { label: "Lifespan", value: "Up to 10 years, with some reports of 15, on consistent humidity, calcium supplementation, and a varied diet.", source: "mourning-gecko-cost-guide" },
+        { label: "Lifespan", value: "Up to 10 years, some reports of 15.", source: "mourning-gecko-cost-guide" },
       ],
     },
     emergencyCard: {
@@ -557,9 +530,12 @@ export const geckoGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry, which no deep dive repeats. Gut-loading, hygiene, the thermostat
-    // probe, the stool check and the emergency plan cite the shared reptile
-    // guides in the sidebar's Health and More list. This species has no feeding
+    // entry, which no deep dive repeats. Gut-loading, hygiene and the stool
+    // check cite the shared reptile guides in the sidebar's Health and More
+    // list. Rewritten to the template shape 2026-09-16
+    // (docs/HUB_ROUTER_REVIEWS.md): the enclosure row says one per enclosure
+    // unless deliberately pairing, and the night floor is the setup guide's
+    // 75 to 80F with the "not below 70" dropped. This species has no feeding
     // guide, so the diet rows point at the tank setup guide's Diet Basics
     // section, added in the same pass. Built 2026-09-14 for the tokay gecko set
     // test (docs/READER_REVIEWS.md).
@@ -567,53 +543,41 @@ export const geckoGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Legal check", value: "Legal with no permit in 49 of 52 jurisdictions. Hawaii allows it for research and exhibition only, the District of Columbia bars it by omission, Minnesota treats lizards as protected wild animals as a whole category, and New Jersey's permit rule names the tokay as the one gecko it exempts.", source: "tokay-gecko-legal-guide" },
-        { label: "Enclosure", value: "18 inches long by 18 inches wide by 36 inches tall as a minimum, larger is better. This is an arboreal species, so vertical space genuinely matters more than floor space. A front-opening enclosure makes maintenance easier given how defensive this species can be.", source: "tokay-gecko-tank-setup-guide" },
-        { label: "Temperature", value: "Basking area 90 to 105F, cooler zone 80 to 85F, and nighttime should stay warmer than many homes naturally run, 75 to 80F, not dropping below about 70F.", source: "tokay-gecko-tank-setup-guide" },
-        { label: "Heating", value: "A halogen basking bulb during the day, paired with a lightless ceramic heat emitter or deep heat projector on a thermostat for overnight warmth. This species genuinely needs supplemental night heat more than most.", source: "tokay-gecko-tank-setup-guide" },
-        { label: "Humidity", value: "60 to 80% is the target range, considerably more humid than what suits a desert species. Daily or twice-daily misting, moisture-retentive substrate, sphagnum moss, and leaf litter. Good ventilation matters here too, high humidity without airflow invites mold.", source: "tokay-gecko-tank-setup-guide" },
-        { label: "Substrate", value: "Coconut fiber or a bioactive-style mix, at least 2 to 3 inches deep, with moss and leaf litter layered on top. Avoid pine and cedar entirely, both release fumes that are toxic to reptiles.", source: "tokay-gecko-tank-setup-guide" },
-        { label: "Lighting", value: "As a nocturnal species, tokays can technically survive without UVB if their diet supplies enough vitamin D3, but low-level UVB, a 5% or forest-strength T5 bulb, offers real benefit. Replace the bulb every 6 to 12 months. Keep nights genuinely dark.", source: "tokay-gecko-tank-setup-guide" },
-        { label: "Climbing structure", value: "Branches, cork bark, and foliage spanning the full height of the enclosure, not just near the top or bottom, so the gecko can move along the vertical temperature gradient to thermoregulate properly.", source: "tokay-gecko-tank-setup-guide" },
-        { label: "Diet", value: "Insectivores. Gut-loaded crickets, dubia roaches, and similar feeder insects, with nothing offered wider than the gecko's own head. Juveniles eat daily and full-grown adults every other day. A tokay will not take the powdered fruit diet a crested gecko lives on.", source: "tokay-gecko-tank-setup-guide" },
-        { label: "Supplements and water", value: "Dust feeders with calcium and vitamin D3, and keep fresh, dechlorinated water in a shallow dish at all times.", source: "tokay-gecko-tank-setup-guide" },
-        { label: "Gut-loading", value: "Twenty four to seventy two hours before feeding, with 48 hours the most commonly cited figure. Insects begin voiding their gut contents once removed from the food source, so feed them out within a few hours of taking them off the gut-load diet.", source: "gut-loading-feeder-insects-guide" },
-        { label: "Handling", value: "A tokay that barks, gapes, or bites at the hand gets no sessions at all: this is a hands-off terrarium subject, and the occasional tokay that tames down is the exception. One that tolerates a flat hand in the enclosure gets short sessions of a few minutes on a flat hand kept under the gecko, so it sits there without being restrained.", source: "tokay-gecko-handling-guide" },
-        { label: "If it bites", value: "Do not pull. Tugging makes the animal tighten its grip. Set the gecko down with all four feet on an even surface near a retreat and wait for it to let go, since once it feels it can get away it is more likely to release.", source: "tokay-gecko-handling-guide" },
-        { label: "Tail", value: "Tokays can detach the tail when restrained, and the regrown tail takes about 30 days and never looks like the original. Never pick one up by the tail.", source: "tokay-gecko-handling-guide" },
-        { label: "Two males", value: "Housing two males together is a first-timer mistake: they fight, often with serious or fatal results.", source: "tokay-gecko-handling-guide" },
-        { label: "Pair housing", value: "A 2024 study measured enclosure use, basking and hiding as captive-bred tokays went from single to pair housing, found that socially deprived lizards were more likely to move and hide before feeding, and concluded that pair housing improves welfare in this species. That is one study on captive-bred animals under observation, and pairing needs quarantine, careful introduction, enough space and cover for both, and a genuine plan for separating them.", source: "tokay-gecko-enrichment-guide" },
-        { label: "Quarantine", value: "3 to 6 months for a new reptile, and the longer window is the safer one for a wild-caught animal. Its own enclosure in a separate room from any other reptile, a fecal exam from a reptile vet early and a repeat before quarantine ends, and a weekly weight on a gram scale.", source: "tokay-gecko-health-issues-guide" },
-        { label: "Parasites", value: "A 2025 study screened 21 commercially farmed tokay geckos in China and found intestinal parasites in 42.9% of them, with Strongyloides in 19.1%, Spauligodon pinworms in 14.3%, and Spironucleus in 9.5%. A gecko can carry a load for months before appetite loss, weight loss, vomiting or diarrhea show, which is why an annual exam with fecal testing matters even in a gecko that looks fine.", source: "tokay-gecko-health-issues-guide" },
-        { label: "Budget", value: "Wild-caught or unspecified \"normal\" tokays run as low as $15 to $50, captive-bred normals $100 to $150, and captive-bred color morphs $150 to $400 or more. Roughly $300 to $500 for the setup before the gecko itself, then roughly $15 to $30 a month.", source: "tokay-gecko-cost-guide" },
-        { label: "Captive-bred or wild-caught", value: "A cheaper wild-caught tokay isn't the budget option once you factor in likely parasite treatment and a considerably more defensive, harder-to-work-with animal. Paying more for a captive-bred gecko is the better value for nearly every keeper.", source: "tokay-gecko-cost-guide" },
-        { label: "Vet costs", value: "A routine exam runs $50 to $100. Wild-caught animals frequently need a fecal test plus antiparasitic treatment on top of that. Emergencies, prolapse or respiratory infection among them, can reach $200 or more.", source: "tokay-gecko-cost-guide" },
-        { label: "Lifespan", value: "10 to 15 years is typical in captivity, with well-documented cases reaching 20 years or more under excellent care.", source: "tokay-gecko-cost-guide" },
+        { label: "Legal check", value: "No permit needed in 49 of 52 US jurisdictions. Hawaii allows it for research and exhibition only, the District of Columbia bars it by omission, Minnesota treats lizards as protected wild animals.", source: "tokay-gecko-legal-guide" },
+        { label: "Quarantine", value: "3 to 6 months for a new reptile, the longer window for a wild-caught animal, in its own room, with a fecal exam early and a repeat before it ends, and a weekly weight.", source: "tokay-gecko-health-issues-guide" },
+        { label: "Enclosure", value: "18 by 18 by 36 inches tall minimum, front-opening for a defensive species, with branches, cork, and foliage spanning the full height. One per enclosure unless deliberately pairing.", source: "tokay-gecko-tank-setup-guide" },
+        { label: "Temperature", value: "Basking 90 to 105F, cooler zone 80 to 85F, and nights at 75 to 80F, warmer than many homes run, from a ceramic emitter or deep heat projector on a thermostat. This species needs night heat more than most.", source: "tokay-gecko-tank-setup-guide" },
+        { label: "Humidity", value: "60 to 80%, from daily misting, 2 to 3 inches of coconut fiber under moss and leaf litter, and airflow so it does not mold. No pine or cedar.", source: "tokay-gecko-tank-setup-guide" },
+        { label: "Lighting", value: "Survivable without UVB on a D3-supplemented diet, but a 5% forest-strength T5 has real benefit, replaced every 6 to 12 months. Nights genuinely dark.", source: "tokay-gecko-tank-setup-guide" },
+        { label: "Diet", value: "Gut-loaded crickets, dubia, and similar, nothing wider than the head, dusted with calcium and D3. Juveniles daily, adults every other day, with dechlorinated water in a shallow dish. A tokay will not take powdered fruit diet.", source: "tokay-gecko-tank-setup-guide" },
+        { label: "Gut-loading", value: "24 to 72 hours, 48 the most cited, and fed out within a few hours of coming off the gut-load, since insects void their gut once removed from food.", source: "gut-loading-feeder-insects-guide" },
+        { label: "Handling", value: "A tokay that barks, gapes, or bites gets no sessions: this is a hands-off terrarium subject. One that tolerates a flat hand gets a few minutes sitting unrestrained on it.", source: "tokay-gecko-handling-guide" },
+        { label: "If it bites", value: "Do not pull; tugging tightens the grip. Set it down with all four feet on a surface near a retreat and wait. Never lift by the tail, which detaches and regrows in about 30 days.", source: "tokay-gecko-handling-guide" },
+        { label: "Two males", value: "Never. They fight, often with serious or fatal results.", source: "tokay-gecko-handling-guide" },
+        { label: "Pair housing", value: "A 2024 study found pair housing improved welfare in captive-bred tokays. One study, and pairing needs quarantine, careful introduction, space and cover for both, and a plan for separating them. Do not pair casually.", source: "tokay-gecko-enrichment-guide" },
+        { label: "Parasites", value: "A 2025 study found intestinal parasites in 42.9% of farmed tokays. A gecko carries a load for months before it shows, so an annual exam with fecal testing.", source: "tokay-gecko-health-issues-guide" },
+        { label: "Budget", value: "$15 to $50 for a wild-caught tokay, which is not the budget option once parasite treatment and a harder animal are counted. Captive-bred normals $100 to $150, morphs $150 to $400. Setup $300 to $500, then $15 to $30 a month, and $50 to $100 for a routine exam.", source: "tokay-gecko-cost-guide" },
+        { label: "Lifespan", value: "10 to 15 years, documented past 20.", source: "tokay-gecko-cost-guide" },
         { label: "Adult size", value: "10 to 15 inches (25 to 38 cm)." },
-        { label: "CITES", value: "Added to CITES Appendix II at CoP18 in Geneva in August 2019, on a proposal brought jointly by the European Union, India, the Philippines and the United States. That listing governs international movement rather than domestic keeping.", source: "tokay-gecko-legal-guide" },
-        { label: "Thermostat probe", value: "The probe reads at the animal's level, not up in the airspace near the fixture. For an under-tank mat it goes on the floor of the warm hide, held down with foil tape so it can't drift; for an overhead source, follow your controller's own instruction and confirm with independent checks.", source: "reptile-heating-thermostats-guide" },
-        { label: "Daily stool check", value: "Yellow, orange, or gritty and crystalline urates instead of smooth white to cream point to dehydration, and in a more serious case a urate or kidney problem. It is a free, five-second daily check.", source: "reptile-stool-urates-hydration-guide" },
-        { label: "Hygiene", value: "Wash hands with soap and running water immediately after any contact with the gecko, its enclosure, or anything that has touched either. Never clean the enclosure or its water dish in a kitchen sink or a shared bathtub. Children younger than 5 should not handle or touch reptiles or their environments.", source: "reptile-salmonella-hygiene-guide" },
-        { label: "Power outage or a sitter", value: "The tokay is not in the emergency plan guide's species table. Its rule for a species that isn't listed is to check that species' tank setup guide for the documented nighttime low and use that as the floor, the same way the table itself was built.", source: "reptile-emergency-plan-guide" },
+        { label: "Daily stool check", value: "Yellow, orange, or gritty urates instead of smooth white point to dehydration. A free, five-second check.", source: "reptile-stool-urates-hydration-guide" },
+        { label: "Hygiene", value: "Wash hands with soap after any contact, never clean the enclosure in a kitchen sink or shared bathtub, and children under 5 do not touch reptiles or their environments.", source: "reptile-salmonella-hygiene-guide" },
       ],
     },
     emergencyCard: {
       source: "tokay-gecko-health-issues-guide",
       callNow: [
-        "Loss of appetite, or no interest in food at all",
-        "Lethargy or unusual inactivity",
+        "Tissue protruding from the vent: always an emergency, and never pushed back yourself",
         "Nasal discharge or any change in breathing",
-        "Swelling, damage, or changes in skin color",
-        "Weight loss",
-        "Limping or difficulty moving",
-        "Loose or abnormal droppings",
-        "Eye discharge or swelling",
-        "Retained shed",
-        "Any injury or trauma",
+        "Any injury or trauma, or swelling and color change in the skin",
         "Ulcers or excessive discharge in the mouth",
-        "Tissue protruding from the vent",
+        "Limping or difficulty moving",
       ],
-      vetLine: "Any of these means a call, not a wait. Tissue protruding from the vent is always an emergency, get to a vet immediately and do not try to replace it yourself.",
+      soon: [
+        "Loss of appetite or unusual inactivity that outlasts a settling-in period",
+        "Weight loss on the weekly scale",
+        "Loose or abnormal droppings, eye discharge or swelling, or retained shed",
+      ],
+      vetLine: "Any of these means a call, not a wait.",
     },
     routes: [
       { slug: "tokay-gecko-cost-guide", line: "$15 to $400 for the gecko depending on where it came from, a $300 to $500 setup, and why the cheap one is not the budget option." },

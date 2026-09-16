@@ -175,8 +175,9 @@ export default function GuideDetail() {
         <body>
           <div class="card">
             <h1>${esc(guide.emoji)} ${esc(guide.name)} emergency card</h1>
-            <p class="sub">Call the vet now if you see any of these.</p>
+            <p class="sub">${esc(card.heading || 'Call the vet now if you see any of these.')}</p>
             <ul>${card.callNow.map(item => `<li>${esc(item)}</li>`).join('')}</ul>
+            ${card.soon?.length ? `<p class="sub">${esc(card.soonHeading || 'Book a vet visit promptly for these.')}</p><ul>${card.soon.map(item => `<li>${esc(item)}</li>`).join('')}</ul>` : ''}
             ${card.vetLine ? `<p class="vet">${esc(card.vetLine)}</p>` : ''}
             <div class="fill">Vet:<span></span><br>Phone:<span></span><br>Emergency clinic:<span></span></div>
             ${card.source ? `<p class="from">From ${esc(titleOf(card.source))}, beastlyfacts.com/blog/${esc(card.source)}/</p>` : ''}
@@ -435,7 +436,11 @@ export default function GuideDetail() {
                 <h2 className="font-display font-bold text-base text-foreground mb-2 flex items-center gap-2">
                   🚨 Emergency card
                 </h2>
-                <p className="text-sm text-muted-foreground font-body mb-3">Call the vet now if you see any of these.</p>
+                {/* The heading is per hub (docs/RULES.md, Hubs): "call the vet" is
+                    right for a rabbit and wrong for a shrimp, whose cost guide says
+                    no vet will see it. A second, lower-urgency list carries the
+                    signs the health guide files under "book a visit promptly". */}
+                <p className="text-sm text-muted-foreground font-body mb-3">{guide.emergencyCard.heading || 'Call the vet now if you see any of these.'}</p>
                 <ul className="space-y-1.5 mb-4">
                   {guide.emergencyCard.callNow.map((item) => (
                     <li key={item} className="flex items-start gap-2 text-sm text-foreground font-body">
@@ -444,6 +449,19 @@ export default function GuideDetail() {
                     </li>
                   ))}
                 </ul>
+                {guide.emergencyCard.soon?.length > 0 && (
+                  <>
+                    <p className="text-sm text-muted-foreground font-body mb-3">{guide.emergencyCard.soonHeading || 'Book a vet visit promptly for these.'}</p>
+                    <ul className="space-y-1.5 mb-4">
+                      {guide.emergencyCard.soon.map((item) => (
+                        <li key={item} className="flex items-start gap-2 text-sm text-foreground font-body">
+                          <span aria-hidden="true" className="mt-2 w-1.5 h-1.5 rounded-full bg-muted-foreground flex-shrink-0" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                )}
                 {guide.emergencyCard.vetLine && (
                   <p className="text-sm text-foreground font-body font-semibold mb-3">{guide.emergencyCard.vetLine}</p>
                 )}

@@ -152,9 +152,10 @@ export const birdGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry, which no deep dive repeats. Quarantine, household hazards,
-    // droppings, photoperiod, pellet conversion and sexing cite the shared bird
-    // guides in the sidebar's Health and More list. This species has no feeding
+    // entry, which no deep dive repeats. Quarantine, household hazards, pellet
+    // conversion, and sleep and droppings cite the shared bird guides in the
+    // sidebar's Health and More list. Rewritten to the template shape
+    // 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md). This species has no feeding
     // guide, so the diet rows point at the tank setup guide's Diet Basics
     // section, added in the same pass. Built 2026-09-14 for the canary set test
     // (docs/READER_REVIEWS.md).
@@ -162,33 +163,24 @@ export const birdGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Cage size and shape", value: "24 inches long by 18 inches wide by 18 inches tall is a reasonable minimum, but the shape matters more than the raw dimensions. Canaries fly horizontally rather than climbing the way parrots do, so prioritize width over height.", source: "canary-tank-setup-guide" },
-        { label: "Bar spacing", value: "Half an inch or less, this prevents both head entrapment and escape.", source: "canary-tank-setup-guide" },
-        { label: "Flight distance", value: "A long flight cage beats a tall decorative one by a wide margin. Leave the middle open so there is a flight path, and resist the urge to fill the center with toys. A study measuring stress hormone in canary droppings found a significant change in corticosterone excretion when group-bred birds were restrained in smaller cages.", source: "canary-enrichment-guide" },
-        { label: "Perches", value: "Perches of varied diameter and natural branch with irregular surfaces let the foot change position. Uniform dowel of one thickness holds the foot in a single position all day, which is how pressure sores start. Site them at the ends of the cage so the flight path stays clear, and avoid sandpaper covers entirely.", source: "canary-enrichment-guide" },
-        { label: "Temperature", value: "Normal household temperature, 65 to 80°F, works well, with 65 to 75°F frequently cited as ideal. Keep the cage away from drafts, air conditioning vents, and radiators. No supplemental heat is needed indoors.", source: "canary-tank-setup-guide" },
-        { label: "Lighting", value: "Bright, indirect natural or artificial light with a clear day and night cycle supports normal behavior and, in males, healthy singing. Let the day length follow the season instead of holding it fixed year round, and avoid placing the cage in direct sun where it could overheat.", source: "canary-tank-setup-guide" },
-        { label: "Cage lining", value: "A paper liner on the cage floor, spot-cleaned daily and fully changed weekly. Avoid galvanized metal or lead-painted cage components entirely, powder-coated steel is the safe standard.", source: "canary-tank-setup-guide" },
-        { label: "Air quality", value: "Canaries are extremely sensitive to airborne toxins. Non-stick cookware fumes, aerosols, and smoke can all be genuinely dangerous, so keep the cage well away from the kitchen and any source of fumes or sprays.", source: "canary-tank-setup-guide" },
-        { label: "Bathing", value: "A shallow bird bath. Canaries genuinely enjoy bathing and it supports healthy feather condition.", source: "canary-tank-setup-guide" },
-        { label: "Diet", value: "A granivore that cannot live on seed alone: an all-seed diet is deficient in vitamins, minerals, and protein, including calcium and vitamin A. Build on a quality canary seed mix or pellet and supplement daily with fresh fruits and vegetables, plus egg food as a protein source during molt and breeding.", source: "canary-tank-setup-guide" },
-        { label: "How much", value: "Up to 30% of body weight a day, which for a 12 to 30 gram bird is a small measured amount rather than a permanently heaped dish.", source: "canary-tank-setup-guide" },
-        { label: "Grit and cuttlebone", value: "Canaries do not require grit, but they should be offered a cuttlebone, which supplies the calcium a seed-based diet runs short on.", source: "canary-tank-setup-guide" },
-        { label: "Why he sings", value: "The absence of a potential mate increases song production, and the presence of a mate greatly reduces it. A male singing constantly is doing what an unpaired male does. Song volume is not a welfare readout.", source: "canary-enrichment-guide" },
-        { label: "Two males", value: "Males should not be housed together, since they are territorial and will fight. A male and female pair, or a group of females, can work in a large enough flight cage, and a single canary in a good flight cage is a perfectly reasonable setup.", source: "canary-enrichment-guide" },
-        { label: "Handling", value: "Most canaries aren't kept as hands-on pets at all. They're prized for their song and appearance, best enjoyed by watching and listening. Go in expecting a look and listen relationship, not a bird you'll be training to step up.", source: "canary-handling-guide" },
-        { label: "Sexing before you buy", value: "Only mature males, generally from around 6 months old, develop full, elaborate song. Females mostly produce simple chirps instead. If you specifically want a singing bird, confirm the sex with the seller before paying.", source: "canary-handling-guide" },
-        { label: "A male gone quiet", value: "Canaries normally sing in fall, winter, and spring, and most stop while they molt in summer. So a male that falls silent in July is molting. One that falls silent the week his cage moved next to the television is telling you about the television. Silence outside the molt runs the list: new environment, stress, health.", source: "canary-handling-guide" },
-        { label: "Catching one", value: "The only handling a canary needs is a vet's, and even the catch is done in the dark: lights out, perches out, taking the bird quickly before its eyes adjust. Never restrain a bird for a prolonged period.", source: "canary-handling-guide" },
-        { label: "Budget", value: "$25 to $60 for a common yellow canary, $80 to $150 for a Red Factor, and $100 to $250 or more for a specialized song breed, with prize singers and exhibition birds reaching $200 to $500. Males typically cost 20 to 50% more than females. Setup runs roughly $150 to $275, then $10 to $30 a month.", source: "canary-cost-guide" },
-        { label: "Vet costs", value: "An annual avian wellness exam, worth budgeting for even though it's easy to skip, runs $50 to $100 or more. Mite treatment or a respiratory illness can add meaningfully to that if it comes up.", source: "canary-cost-guide" },
-        { label: "Lifespan", value: "6 to 12 years is the typical span, with up to 15 reported.", source: "canary-cost-guide" },
+        { label: "Cage size and shape", value: "24 by 18 by 18 inches is a reasonable minimum, but width matters more than height: canaries fly horizontally. Leave the middle open as a flight path. Bar spacing half an inch or less.", source: "canary-tank-setup-guide" },
+        { label: "Perches", value: "Varied diameter and natural branch, sited at the ends so the flight path stays clear. Uniform dowel holds the foot in one position all day, which is how pressure sores start. No sandpaper covers.", source: "canary-enrichment-guide" },
+        { label: "Temperature and light", value: "65 to 80°F, 65 to 75°F ideal, away from drafts, vents, and radiators. Bright indirect light with the day length following the season, and no direct sun on the cage.", source: "canary-tank-setup-guide" },
+        { label: "Air quality", value: "Non-stick cookware fumes, aerosols, and smoke can kill a canary. The cage stays well away from the kitchen.", source: "canary-tank-setup-guide" },
+        { label: "Cage lining and bath", value: "A paper liner spot-cleaned daily and changed weekly, on powder-coated steel, never galvanized or lead-painted parts. A shallow bath, which they use.", source: "canary-tank-setup-guide" },
+        { label: "Diet", value: "Seed alone is deficient in vitamins, minerals, protein, and calcium. A quality seed mix or pellet plus fresh fruit and vegetables daily, egg food through molt and breeding, and a cuttlebone. No grit needed.", source: "canary-tank-setup-guide" },
+        { label: "How much", value: "Up to 30% of body weight a day, which for a 12 to 30 gram bird is a small measured amount, not a heaped dish.", source: "canary-tank-setup-guide" },
+        { label: "Why he sings", value: "An unpaired male sings constantly; a mate greatly reduces it. Song volume is not a welfare readout. Two males fight; a pair, a group of females, or a single bird in a good flight cage all work.", source: "canary-enrichment-guide" },
+        { label: "Handling", value: "A look-and-listen bird, not one to train to step up. The only handling it needs is a vet's, and the catch is done in the dark with the perches out.", source: "canary-handling-guide" },
+        { label: "Sexing before you buy", value: "Only mature males from around 6 months develop full song; females chirp. Confirm the sex with the seller if you want a singer.", source: "canary-handling-guide" },
+        { label: "A male gone quiet", value: "Most stop singing during the summer molt. Silence outside the molt runs the list: new environment, stress, health.", source: "canary-handling-guide" },
+        { label: "Budget", value: "$25 to $60 for a common yellow, $80 to $150 for a Red Factor, $100 to $250 or more for a song breed, males 20 to 50% more. Setup roughly $150 to $275, then $10 to $30 a month, and $50 to $100 for an annual avian exam.", source: "canary-cost-guide" },
+        { label: "Lifespan", value: "6 to 12 years, up to 15 reported.", source: "canary-cost-guide" },
         { label: "Adult size", value: "4.5 to 5 inches (11 to 13 cm), 12 to 30 grams." },
-        { label: "Quarantine", value: "At least 30 days is the floor, not a suggestion with room to shave off a week if the bird seems fine, and 30 to 45 days in a separate, isolated room is the wider window. Care for your established birds first every single day and handle the quarantined bird last.", source: "bird-quarantine-guide" },
-        { label: "Household fumes", value: "PTFE coatings start releasing toxic gas once they're heated above 280°C (536°F). A pan left empty on a hot burner, or one preheating longer than needed, can reach that point in a few minutes, well before it looks or smells like anything is wrong.", source: "bird-household-hazards-guide" },
-        { label: "Daily droppings check", value: "Line the cage tray with plain white paper instead of a patterned liner, so color changes are actually visible, and swap it daily so you're comparing today's droppings against a clean baseline rather than a smear of several days at once.", source: "bird-droppings-guide" },
-        { label: "Sleep and hormones", value: "10 to 12 hours of uninterrupted sleep a night, a range that holds across the species kept as pets. A bird's brain reads day length as a season, and an ordinary lit-up evening reads as an endless summer, which is what drives chronic egg laying more than owners realize.", source: "bird-photoperiod-sleep-guide" },
-        { label: "Seed to pellets", value: "Gradual substitution, never an abrupt swap: 75% seed and 25% pellets for 3 days, then a 50/50 mix for 3 days, then 25% seed and 75% pellets until the bird is fully converted. Weigh the bird daily on a gram scale, and a drop of more than 10% from its starting weight means stop and call an avian vet.", source: "bird-pellet-conversion-guide" },
+        { label: "Quarantine", value: "At least 30 days, 30 to 45 in a separate isolated room, with the established birds cared for first every day and the new bird last.", source: "bird-quarantine-guide" },
+        { label: "Household fumes", value: "PTFE coatings release toxic gas above 280°C (536°F), which an empty pan on a hot burner reaches in minutes, before anything looks or smells wrong.", source: "bird-household-hazards-guide" },
+        { label: "Seed to pellets", value: "Gradual: 75% seed and 25% pellets for 3 days, 50/50 for 3 days, then 25% seed until converted. Weigh daily; a drop past 10% means stop and call an avian vet.", source: "bird-pellet-conversion-guide" },
+        { label: "Sleep and droppings", value: "10 to 12 hours of dark, uninterrupted sleep, since a lit-up evening reads as endless summer and drives egg laying. Plain white paper in the tray, swapped daily, so dropping changes show.", source: "bird-photoperiod-sleep-guide" },
       ],
     },
     emergencyCard: {
@@ -383,7 +375,8 @@ export const birdGuides = [
     // the hub keeps no number of its own. Adult size comes from the
     // encyclopedia entry, which no deep dive repeats. Day one, pellet
     // conversion, and power outage cite the shared bird guides in the
-    // sidebar's Health and More list; this species has no feeding guide of
+    // sidebar's Health and More list. Rewritten to the template shape
+    // 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md). This species has no feeding guide of
     // its own, so the pellet conversion row is where a new owner finds the
     // seed-to-pellet schedule. Reconciled 2026-09-09 for batch D
     // (docs/READER_REVIEWS.md).
@@ -391,24 +384,23 @@ export const birdGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Day one", value: "At least 30 days quarantined in a separate room with its own airspace, away from any bird you already own. Thirty days is the floor, published guidance runs 30 to 45, and a multi-bird household is safer nearer the 90 days recommended for an aviary.", source: "bird-quarantine-guide" },
-        { label: "Cage size", value: "24x24x30 inches is the common minimum for a single adult, but treat that as a floor, not a target. Bigger is always better, aim for 30 to 36 inches or more in multiple dimensions, or a genuine flight cage if you can manage it. Your bird should be able to fully stretch and flap its wings without touching the sides.", source: "conure-tank-setup-guide" },
-        { label: "Bar spacing", value: "Bar spacing should be 1/2 to 5/8 inch maximum to prevent head entrapment or escape.", source: "conure-tank-setup-guide" },
-        { label: "Temperature", value: "Normal household temperatures of 65 to 80°F work well. Avoid drafts, direct air-conditioning vents, and sudden temperature swings. No supplemental heating is needed in a typical indoor environment.", source: "conure-tank-setup-guide" },
-        { label: "Lighting and sleep", value: "Full-spectrum UV lighting made for birds (UVB 5.0 or a similar avian-specific bulb) is recommended by multiple care sources for 10 to 12 hours daily, supporting vitamin D synthesis, especially important for indoor birds with limited natural sunlight. Maintain a consistent day and night photoperiod, covering the cage at night gives 10 to 12 hours of real darkness.", source: "conure-tank-setup-guide" },
-        { label: "Cage bottom", value: "Most keepers use a grate with paper, newspaper, or a cage liner underneath for easy daily cleaning. Avoid loose substrates like corn cob or wood chips, both can be ingested or harbor mold.", source: "conure-tank-setup-guide" },
-        { label: "Placement", value: "Never use non-stick or Teflon cookware near the bird, the fumes are highly toxic. For placement, a family living area helps the bird feel like part of the flock, but keep one side of the cage against a wall for security, and stay well away from the kitchen, both the fumes and the heat are risks there.", source: "conure-tank-setup-guide" },
-        { label: "Out-of-cage time", value: "Out-of-cage time, several hours of supervised free time daily, isn't optional, it's essential for both physical and mental health.", source: "conure-tank-setup-guide" },
-        { label: "Diet", value: "Fatty liver disease and vitamin A deficiency both stem from the same root cause: an all-seed or high-fat diet with too little vegetable variety and not enough exercise. Caught early, this is manageable with diet correction, feeding a quality pelleted diet alongside fresh vegetables instead of a seed-only bowl. Seed-only diets are one of the most common, and most preventable, causes of chronic illness in this species.", source: "conure-health-issues-guide" },
-        { label: "Pellet conversion", value: "Two workable methods, both built around gradual substitution rather than an abrupt swap: 75% seed and 25% pellets for 3 days, then a 50/50 mix for 3 days, then 25% seed and 75% pellets until the bird is fully converted; or a daily taper from 90% seed down to 0% on day 10. Either one can take days, weeks or months.", source: "bird-pellet-conversion-guide" },
-        { label: "Feeding style", value: "Wild parrots spend up to six hours a day searching for, selecting and manipulating food. A conure with a full bowl is finished in minutes, and everything that goes wrong behaviorally with parrots tends to grow in that empty stretch. Stop using a bowl as the primary delivery method.", source: "conure-enrichment-guide" },
-        { label: "Handling", value: "Genuine nippiness shows up more in young birds, especially under one to two years old, and in hormonal adults. Watch for warning signs before a bite happens: pinned eyes, flared tail feathers, or lunging.", source: "conure-handling-guide" },
-        { label: "Sexing", value: "Green cheek conures are sexually monomorphic, males and females look the same, so there's no reliable visual test, despite claims floating around about head shape or foot color. If you actually need to know, DNA testing is the standard.", source: "conure-handling-guide" },
-        { label: "Budget", value: "$250 to $700+ for the bird itself, more at pet stores. Roughly $400 to $900 or more to set up before the bird. Roughly $250 to $500 a year after that, and a routine wellness exam commonly runs $80 to $160.", source: "conure-cost-guide" },
+        { label: "Day one", value: "At least 30 days quarantined in a separate room with its own airspace. Thirty is the floor, 30 to 45 the published range, and nearer 90 in a multi-bird household.", source: "bird-quarantine-guide" },
+        { label: "Cage size", value: "24x24x30 inches is the common minimum for a single adult, a floor: aim for 30 to 36 inches or more, or a flight cage. The bird should stretch and flap without touching the sides. Bar spacing 1/2 to 5/8 inch.", source: "conure-tank-setup-guide" },
+        { label: "Temperature", value: "65 to 80°F, off drafts and vents, no sudden swings, no supplemental heat.", source: "conure-tank-setup-guide" },
+        { label: "Lighting and sleep", value: "An avian full-spectrum bulb 10 to 12 hours daily for vitamin D, and the cage covered at night for 10 to 12 hours of real darkness on a consistent photoperiod.", source: "conure-tank-setup-guide" },
+        { label: "Cage bottom", value: "A grate over paper or a liner, cleaned daily. No corn cob or wood chips, which are eaten or mold.", source: "conure-tank-setup-guide" },
+        { label: "Placement", value: "A family living area with one side against a wall, and well away from the kitchen, where non-stick fumes and heat both kill.", source: "conure-tank-setup-guide" },
+        { label: "Out-of-cage time", value: "Several hours of supervised free time daily, essential rather than optional.", source: "conure-tank-setup-guide" },
+        { label: "Diet", value: "A quality pellet alongside fresh vegetables, not a seed bowl. An all-seed, high-fat diet is the root of both fatty liver disease and vitamin A deficiency, the most preventable chronic illness in this species.", source: "conure-health-issues-guide" },
+        { label: "Pellet conversion", value: "Gradual, never abrupt: 75% seed and 25% pellets for 3 days, 50/50 for 3 days, then 25% seed until converted, or a daily taper from 90% seed to 0% on day 10. It can take days or months.", source: "bird-pellet-conversion-guide" },
+        { label: "Feeding style", value: "Wild parrots spend up to six hours a day working for food; a full bowl is done in minutes, and most behavior problems grow in that empty stretch. Stop using a bowl as the primary delivery.", source: "conure-enrichment-guide" },
+        { label: "Handling", value: "Nippiness runs highest in birds under one to two years and in hormonal adults. Pinned eyes, a flared tail, or lunging come before the bite.", source: "conure-handling-guide" },
+        { label: "Sexing", value: "Green cheeks are monomorphic, so no visual test works. DNA testing if you need to know.", source: "conure-handling-guide" },
+        { label: "Budget", value: "$250 to $700 or more for the bird, roughly $400 to $900 to set up, $250 to $500 a year after, and $80 to $160 for a wellness exam.", source: "conure-cost-guide" },
         { label: "Adult size", value: "10 inches (25 cm) including tail; 2-2.5 oz." },
-        { label: "Lifespan", value: "20 to 25 years or more is the commonly cited range, with some individuals reaching 30 years under excellent care.", source: "conure-cost-guide" },
-        { label: "Disease risk", value: "Psittacine Beak and Feather Disease (PBFD), Proventricular Dilatation Disease (PDD), and polyomavirus are the ones to know. These are contagious, spreading through new birds, contaminated equipment, or breeding facilities, and there's no reliable cure for most of these.", source: "conure-health-issues-guide" },
-        { label: "Power outage", value: "Keep feeding and watering through an outage rather than pulling food the way you would for a reptile; a small bird carries almost no fat reserve. The real danger is combustion, not cold: no candles, propane heater, or gas stove used for heat in any room the bird is in, and never an indoor generator.", source: "bird-emergency-travel-guide" },
+        { label: "Lifespan", value: "20 to 25 years or more, some reaching 30.", source: "conure-cost-guide" },
+        { label: "Disease risk", value: "PBFD, PDD, and polyomavirus are contagious through new birds and shared equipment, and most have no reliable cure. Quarantine is the defense.", source: "conure-health-issues-guide" },
+        { label: "Power outage", value: "Keep feeding and watering through it; a small bird carries almost no fat reserve. The danger is combustion, not cold: no candles, propane, or gas stove for heat in the bird's room, and never an indoor generator.", source: "bird-emergency-travel-guide" },
       ],
     },
     emergencyCard: {
@@ -526,9 +518,10 @@ export const birdGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry, which no deep dive repeats. Quarantine, household hazards, sleep,
-    // chronic egg laying, sexing and weight, and the emergency plan cite the
-    // shared bird guides in the sidebar's Health and More list. Built 2026-09-15
+    // entry, which no deep dive repeats. Quarantine, household hazards,
+    // chronic egg laying, and sexing and weight cite the shared bird guides in
+    // the sidebar's Health and More list. Rewritten to the template shape
+    // 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md). Built 2026-09-15
     // for the parrotlet set test (docs/READER_REVIEWS.md), which found the old
     // hub recommending 3/8 to 1/2 inch bar spacing, the range the setup guide
     // calls a lovebird range, and stating a 15 to 20 year lifespan the cost
@@ -539,29 +532,24 @@ export const birdGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Cage size", value: "Minimum 18x18x24 inches for a single bird, but wider is a genuine upgrade rather than a nice-to-have. If you're housing a pair, budget for meaningfully more space than the single-bird minimum, not just a modest bump.", source: "parrotlet-tank-setup-guide" },
-        { label: "Bar spacing", value: "1/4 inch, and 1/2 inch is the widest worth considering at all. A parrotlet's head is smaller than a lovebird's, so spacing that's safe for its bigger relatives can let a parrotlet get a head or foot caught, which is a real, sometimes fatal risk.", source: "parrotlet-tank-setup-guide" },
-        { label: "Cage material", value: "Powder-coated or stainless steel only. Avoid painted finishes, galvanized wire, or anything using lead or zinc in its construction, all carry a real risk of toxic exposure if chewed. Skip round cages entirely, and make sure every opening section locks securely.", source: "parrotlet-tank-setup-guide" },
-        { label: "Temperature", value: "Normal household range, roughly 65 to 80°F, works well. No special heating or cooling is needed, though drafts and direct sun on the cage should be avoided the same as with any pet bird.", source: "parrotlet-tank-setup-guide" },
-        { label: "Lighting and sleep", value: "Roughly 10 to 12 hours of genuine, covered darkness supports both healthy sleep and a more stable hormonal cycle in females. Indoor birds also benefit from supplemental UV exposure to properly synthesize vitamin D3 for calcium absorption, since window glass filters out the UV wavelengths that matter.", source: "parrotlet-tank-setup-guide" },
-        { label: "Diet", value: "A formulated small parrot pellet as the foundation, supplemented daily with fresh vegetables and fruit, finely chopped since this is a genuinely small bird. Seeds and nuts stay limited to about once a day rather than the base of the diet.", source: "parrotlet-feeding-guide" },
-        { label: "Feeding pattern", value: "Parrotlets are free-choice eaters, not scheduled ones. Refresh the base pellet bowl in the morning when they're hungriest and top it up if it empties before evening. Pull uneaten fresh food within a couple hours to prevent spoilage.", source: "parrotlet-feeding-guide" },
-        { label: "No grit", value: "Parrotlets don't need grit. Like other true parrots, they hull seeds with their beak before swallowing, so there's nothing left for grit to grind. Free access to grit can cause a genuinely dangerous crop or intestinal impaction.", source: "parrotlet-feeding-guide" },
-        { label: "Calcium", value: "A cuttlebone or mineral block should be available at all times for calcium, and it matters even more for a hen, since a calcium deficiency is the factor most consistently linked to egg binding.", source: "parrotlet-feeding-guide" },
-        { label: "Toxic foods", value: "Avocado is the single most consistently flagged toxic food. Chocolate, caffeine, alcohol, onion and garlic, and xylitol are all genuine dangers, and the seeds or pits from rose-family fruits (apple, cherry, peach) affect heart function, which is why apple gets its seeds removed first.", source: "parrotlet-feeding-guide" },
-        { label: "Handling sessions", value: "Short sessions, 5 to 10 minutes, two or three times a day, work better than one long forced session. Offering a bit of millet for calm behavior teaches a parrotlet that hands mean good news.", source: "parrotlet-handling-guide" },
-        { label: "The bite", value: "A parrotlet's bite is much stronger than a budgie's despite its smaller size, and the bird doesn't seem to know it's small. A parrotlet usually gives a gentle warning nip before an actual bite, and backing off rather than pushing through it prevents far more bites than any amount of correction after the fact.", source: "parrotlet-handling-guide" },
-        { label: "One bird or a pair", value: "A pair is a workable option for an owner with less free time to give, and singly is the safer default: this is a territorial bird even with its own kind. Pairing can work, but only with a slow, supervised introduction, never two strangers dropped straight into one cage.", source: "parrotlet-handling-guide" },
-        { label: "Out-of-cage time", value: "Daily out-of-cage time in a bird-proofed, supervised space matters as much as anything in the cage itself, and the socialization that comes with it is what keeps a parrotlet friendly rather than nippy.", source: "parrotlet-tank-setup-guide" },
-        { label: "Foraging", value: "Wild parrots spend up to six hours a day working for food, and a full dish removes all of it. Hanging forage toys sized for a small beak, plus food wrapped in paper, tucked into cardboard, and split across several sites so the bird searches instead of landing.", source: "parrotlet-enrichment-guide" },
-        { label: "Budget", value: "$100 to $400 from a breeder for a common green or blue Pacific, with rarer mutations commonly $350 to $900 and adoption $50 to $300. Roughly $160 to $300 for the setup, and roughly $250 to $400 a year, about $21 to $33 a month, after that.", source: "parrotlet-cost-guide" },
-        { label: "Vet costs", value: "A routine annual checkup with an avian vet runs about $60 to $90. Parasite treatment, if it comes up, adds $0 to $80. The real budgeting risk is emergency care, which can run $300 or more once diagnostics, fluids, or a procedure are involved.", source: "parrotlet-cost-guide" },
-        { label: "Lifespan", value: "8 to 12 years is the average, and individual birds are reported into their 20s and occasionally their 30s. Avian-specialist guidance for this species puts the upper end of a well-kept bird's life at around 20 years.", source: "parrotlet-cost-guide" },
+        { label: "Cage", value: "18x18x24 inches minimum for one bird, wider a genuine upgrade, and meaningfully more for a pair. Bar spacing 1/4 inch, 1/2 the widest worth considering: a parrotlet's head is smaller than a lovebird's.", source: "parrotlet-tank-setup-guide" },
+        { label: "Cage material", value: "Powder-coated or stainless steel only. No painted, galvanized, lead, or zinc parts, no round cages, and every opening locks.", source: "parrotlet-tank-setup-guide" },
+        { label: "Temperature", value: "65 to 80°F, off drafts and direct sun.", source: "parrotlet-tank-setup-guide" },
+        { label: "Lighting and sleep", value: "10 to 12 hours of covered darkness, for sleep and a steadier hormonal cycle in hens. Supplemental UV for indoor birds, since window glass filters what they need for vitamin D3.", source: "parrotlet-tank-setup-guide" },
+        { label: "Diet", value: "A small-parrot pellet as the foundation, fresh vegetables and fruit finely chopped daily, seeds and nuts limited to about once a day. Free-choice eaters: refresh the pellet bowl in the morning, pull fresh food within a couple of hours.", source: "parrotlet-feeding-guide" },
+        { label: "No grit, always calcium", value: "Grit causes crop or intestinal impaction in a bird that hulls its seed. A cuttlebone or mineral block at all times, most of all for a hen, since calcium deficiency is the factor most linked to egg binding.", source: "parrotlet-feeding-guide" },
+        { label: "Toxic foods", value: "Avocado above all, then chocolate, caffeine, alcohol, onion, garlic, xylitol, and the seeds or pits of apple, cherry, and peach.", source: "parrotlet-feeding-guide" },
+        { label: "Handling sessions", value: "5 to 10 minutes, two or three times a day, with millet for calm behavior. A warning nip comes before a real bite, which is far stronger than a budgie's; back off rather than push through.", source: "parrotlet-handling-guide" },
+        { label: "One bird or a pair", value: "Singly is the safer default for a bird territorial even with its own kind. A pair only through a slow, supervised introduction, never two strangers in one cage.", source: "parrotlet-handling-guide" },
+        { label: "Out-of-cage time", value: "Daily, in a bird-proofed supervised space. The socialization is what keeps a parrotlet friendly rather than nippy.", source: "parrotlet-tank-setup-guide" },
+        { label: "Foraging", value: "Wild parrots work up to six hours a day for food. Hanging forage toys for a small beak, food wrapped in paper, tucked in cardboard, and split across several sites.", source: "parrotlet-enrichment-guide" },
+        { label: "Budget", value: "$100 to $400 for a common green or blue Pacific, $350 to $900 for rare mutations, $50 to $300 adoption. Setup roughly $160 to $300, then about $21 to $33 a month. An annual avian checkup is $60 to $90, and an emergency can run $300 or more.", source: "parrotlet-cost-guide" },
+        { label: "Lifespan", value: "8 to 12 years average, with well-kept birds to around 20 and some reported into their 30s.", source: "parrotlet-cost-guide" },
         { label: "Adult size", value: "4.3 to 5.5 inches (11 to 14 cm), 1 to 1.4 oz." },
-        { label: "Quarantine", value: "Thirty days is the floor, not a suggestion with room to shave off a week if the bird seems fine, and 30 to 45 days in a separate, isolated room is the wider window, while the new arrival is screened for chlamydia, salmonella, polyomavirus, and PBFD.", source: "bird-quarantine-guide" },
-        { label: "Kitchen and air", value: "A bird's respiratory system turns ordinary household fumes, from an overheated nonstick pan to a scented candle, into something that can kill it in minutes with no warning.", source: "bird-household-hazards-guide" },
-        { label: "Chronic egg laying", value: "Chronic egg laying may lead to malnutrition through the chronic depletion of calcium used to build eggshells, and the downstream effects of that calcium loss are weakness, lethargy, brittle bones that can fracture during normal handling, egg binding, seizures, and death.", source: "bird-chronic-egg-laying-guide" },
-        { label: "Sexing and weight", value: "For most parrot species you can't tell a hen from a cock by looking, and DNA testing is the only reliable answer. A gram scale and a keel check catch illness before it's visible.", source: "bird-sexing-weight-body-condition-guide" },
+        { label: "Quarantine", value: "Thirty days is the floor, 30 to 45 in a separate isolated room, while the new bird is screened for chlamydia, salmonella, polyomavirus, and PBFD.", source: "bird-quarantine-guide" },
+        { label: "Kitchen and air", value: "An overheated nonstick pan or a scented candle can kill a bird in minutes with no warning.", source: "bird-household-hazards-guide" },
+        { label: "Chronic egg laying", value: "Depletes calcium for shell after shell, and the downstream effects are weakness, brittle bones that fracture in normal handling, egg binding, seizures, and death.", source: "bird-chronic-egg-laying-guide" },
+        { label: "Sexing and weight", value: "You cannot tell a hen from a cock by looking; DNA testing is the only reliable answer. A gram scale and a keel check catch illness before it is visible.", source: "bird-sexing-weight-body-condition-guide" },
       ],
     },
     emergencyCard: {
@@ -617,8 +605,11 @@ export const birdGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry. Quarantine, sleep, droppings and the emergency plan cite the shared
-    // bird guides in the sidebar's Health and More list. Built 2026-09-15 for the
+    // entry. Quarantine, household hazards and droppings cite the shared bird
+    // guides in the sidebar's Health and More list. Rewritten to the template
+    // shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md): the diet row no longer
+    // sums past 100 percent, and the vet row says the exam price is for an
+    // established client. Built 2026-09-15 for the
     // quaker parakeet set test (docs/READER_REVIEWS.md). The old hub had a
     // 24x24x30 cage minimum against the setup guide's and VCA's 24x24x36, pellets
     // at 60 to 70 percent against VCA's stated minimum of 70, an annual table
@@ -629,44 +620,38 @@ export const birdGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Legal check first", value: "Thirteen states ban it: California, Colorado, Connecticut, Georgia, Hawaii, Kansas, Kentucky, Nebraska, New Jersey, Pennsylvania, Vermont, Wisconsin and Wyoming. Maine, Rhode Island and Arkansas require a permit, Virginia allows them on a condition, and Tennessee is unresolved.", source: "quaker-parakeet-legal-guide" },
-        { label: "Why the bans exist", value: "The quaker is the only parrot that does not nest in a cavity. It weaves a bulky stick nest, often on electrical infrastructure, and the nest material arcs the current. In the first five months of 2001 alone, Florida Power and Light logged 498 outages attributed to the birds, affecting more than 21,000 customers.", source: "quaker-parakeet-legal-guide" },
-        { label: "Cage size", value: "24 by 24 by 36 inches is a reasonable minimum, though a wider flight-style cage at 30 to 36 inches is the better real-world target for an active bird.", source: "quaker-parakeet-tank-setup-guide" },
-        { label: "Bar spacing", value: "1/2 to 5/8 inch, never past 3/4, on heavy-gauge bars, since this species chews hard.", source: "quaker-parakeet-tank-setup-guide" },
-        { label: "No nest box", value: "Never for a pet bird. Doing so reliably triggers unwanted breeding-style hormonal aggression. Provide plenty of shreddable wood and foraging toys instead.", source: "quaker-parakeet-tank-setup-guide" },
-        { label: "Temperature", value: "Ordinary room temperature. Keep the cage off drafts and away from extremes, and never leave a Quaker outdoors as temperatures climb toward 90°F.", source: "quaker-parakeet-tank-setup-guide" },
-        { label: "Lighting", value: "Optional. Most pet birds do fine without any full-spectrum lighting, and if you run a standard bulb, up to about 4 hours a day is the conservative figure. There is no controlled study behind bird lighting recommendations.", source: "quaker-parakeet-tank-setup-guide" },
-        { label: "Diet", value: "Pellets are the base, and the figure to hold to is a minimum of 70 percent of the diet. Fruits, vegetables and greens make up the rest, no more than 20 to 40 percent of daily intake, with fruit kept to the smaller end of that because of its water and sugar content.", source: "quaker-parakeet-tank-setup-guide" },
-        { label: "Seed", value: "Seed belongs in the diet only as a very small part of it, never as the whole thing: a seed-based diet is what drives the fatty liver disease this species is prone to.", source: "quaker-parakeet-tank-setup-guide" },
-        { label: "Fresh food", value: "Dark leafy greens, broccoli, carrot, squash, peppers and sweet potato all work. Pull fresh food after a couple of hours, sooner in a warm room, before it spoils.", source: "quaker-parakeet-tank-setup-guide" },
-        { label: "Never feed", value: "Avocado and onion are potentially toxic and never go in, and neither do chocolate, caffeine in any form, or alcohol.", source: "quaker-parakeet-tank-setup-guide" },
-        { label: "Out-of-cage time", value: "Several hours of supervised time daily. This is too intelligent and social a bird to thrive on cage time alone, and out-of-cage time paired with varied perch diameters supports both foot health and mental wellbeing.", source: "quaker-parakeet-tank-setup-guide" },
-        { label: "Weaving material", value: "Safe untreated twigs, willow and palm strips, seagrass and plain paper strips. They will push material into cage bars and toys and work at it for hours. Avoid anything stringy or fibrous that can wrap around a toe or a neck.", source: "quaker-parakeet-enrichment-guide" },
-        { label: "Cage aggression", value: "Nest building sometimes brings cage aggression, particularly in spring, in which case scale the material back rather than cutting it off entirely.", source: "quaker-parakeet-enrichment-guide" },
-        { label: "Company", value: "A quaker in a cage in a busy room is not getting social contact, it is watching some. Daily social interaction or a companion sits fourth on this species' enrichment priority list, above training and novelty.", source: "quaker-parakeet-enrichment-guide" },
-        { label: "Sleep", value: "Ten to twelve hours of dark, quiet sleep.", source: "quaker-parakeet-enrichment-guide" },
-        { label: "Fatty liver disease", value: "One of the most common problems in this species, and almost always tied to a seed-heavy, high-fat diet. Watch for anorexia, lethargy, an overgrown beak and nails, and green-tinted droppings, plus labored breathing and a swollen abdomen.", source: "quaker-parakeet-health-issues-guide" },
-        { label: "Feather plucking", value: "In Quakers specifically, this can go past ordinary plucking into self-inflicted skin damage, usually on the chest and shoulders. Always see a vet first to rule out a medical cause before assuming it's purely behavioral.", source: "quaker-parakeet-health-issues-guide" },
-        { label: "Budget, the bird", value: "$250 to $500 from a reputable breeder for a well-socialized bird.", source: "quaker-parakeet-cost-guide" },
-        { label: "Budget, the setup", value: "Roughly $300 to $800.", source: "quaker-parakeet-cost-guide" },
-        { label: "Running costs", value: "Roughly $40 to $110 a month. Toys are the row that never stops: whatever you buy on day one gets shredded.", source: "quaker-parakeet-cost-guide" },
-        { label: "Vet costs", value: "A wellness exam runs $78 to $115 for an established client, basic bloodwork is $158, and grooming is $35 a service if you do not learn to do it yourself.", source: "quaker-parakeet-cost-guide" },
+        { label: "Legal check first", value: "Thirteen states ban it: California, Colorado, Connecticut, Georgia, Hawaii, Kansas, Kentucky, Nebraska, New Jersey, Pennsylvania, Vermont, Wisconsin, and Wyoming. Maine, Rhode Island, and Arkansas require a permit, Virginia attaches a condition, Tennessee is unresolved.", source: "quaker-parakeet-legal-guide" },
+        { label: "Why the bans exist", value: "The only parrot that builds a stick nest rather than using a cavity, often on electrical infrastructure. Florida Power and Light logged 498 outages from the birds in the first five months of 2001.", source: "quaker-parakeet-legal-guide" },
+        { label: "Cage", value: "24 by 24 by 36 inches minimum, a 30 to 36 inch flight-style cage the better target, on heavy-gauge bars spaced 1/2 to 5/8 inch and never past 3/4. Never a nest box: it triggers hormonal aggression.", source: "quaker-parakeet-tank-setup-guide" },
+        { label: "Temperature and light", value: "Room temperature, off drafts, and never outdoors as it climbs toward 90°F. Full-spectrum lighting is optional, up to about 4 hours a day if you run one.", source: "quaker-parakeet-tank-setup-guide" },
+        { label: "Diet", value: "Pellets at a minimum of 70 percent of the diet, with fruits, vegetables, and greens making up the rest and fruit the smallest share. Seed only as a very small part: a seed diet drives the fatty liver this species is prone to.", source: "quaker-parakeet-tank-setup-guide" },
+        { label: "Fresh food", value: "Dark greens, broccoli, carrot, squash, peppers, sweet potato, pulled after a couple of hours. Never avocado, onion, chocolate, caffeine, or alcohol.", source: "quaker-parakeet-tank-setup-guide" },
+        { label: "Out-of-cage time", value: "Several hours of supervised time daily. Too intelligent and social a bird for cage time alone.", source: "quaker-parakeet-tank-setup-guide" },
+        { label: "Weaving material", value: "Untreated twigs, willow and palm strips, seagrass, plain paper strips, which they work into the bars for hours. Nothing stringy that wraps a toe or neck. If nest building brings spring aggression, scale the material back rather than removing it.", source: "quaker-parakeet-enrichment-guide" },
+        { label: "Company and sleep", value: "A quaker in a busy room is watching social contact, not getting it. Daily interaction or a companion sits fourth on its enrichment list, and it needs ten to twelve hours of dark, quiet sleep.", source: "quaker-parakeet-enrichment-guide" },
+        { label: "Fatty liver disease", value: "One of the commonest problems here, almost always from a seed-heavy diet: anorexia, lethargy, overgrown beak and nails, green-tinted droppings, labored breathing, a swollen abdomen.", source: "quaker-parakeet-health-issues-guide" },
+        { label: "Feather plucking", value: "In quakers it can go past plucking into self-inflicted skin damage on the chest and shoulders. A vet first, to rule out a medical cause.", source: "quaker-parakeet-health-issues-guide" },
+        { label: "Budget", value: "$250 to $500 for a well-socialized bird from a breeder, roughly $300 to $800 for the setup, and $40 to $110 a month, toys the row that never stops.", source: "quaker-parakeet-cost-guide" },
+        { label: "Vet costs", value: "A wellness exam runs $78 to $115 for an established client, so a new patient pays more; bloodwork $158, grooming $35 a service.", source: "quaker-parakeet-cost-guide" },
         { label: "Lifespan", value: "20 to 30 years, sometimes longer.", source: "quaker-parakeet-cost-guide" },
         { label: "Adult size", value: "11 to 12 inches (28 to 30 cm), 3 to 5 oz." },
-        { label: "Quarantine", value: "Thirty days is the floor, not a suggestion with room to shave off a week if the bird seems fine, and 30 to 45 days in a separate, isolated room is the wider window, while the new arrival is screened for chlamydia, salmonella, polyomavirus, and PBFD.", source: "bird-quarantine-guide" },
-        { label: "Kitchen and air", value: "A bird's respiratory system turns ordinary household fumes, from an overheated nonstick pan to a scented candle, into something that can kill it in minutes with no warning.", source: "bird-household-hazards-guide" },
-        { label: "Droppings", value: "A pet bird's droppings change every day, and reading them correctly is the cheapest, earliest health check any owner has.", source: "bird-droppings-guide" },
+        { label: "Quarantine", value: "Thirty days is the floor, 30 to 45 in a separate isolated room, while the new bird is screened for chlamydia, salmonella, polyomavirus, and PBFD.", source: "bird-quarantine-guide" },
+        { label: "Kitchen and air", value: "An overheated nonstick pan or a scented candle can kill a bird in minutes with no warning.", source: "bird-household-hazards-guide" },
+        { label: "Droppings", value: "They change every day, and reading them is the cheapest, earliest health check an owner has.", source: "bird-droppings-guide" },
       ],
     },
     emergencyCard: {
       source: "quaker-parakeet-health-issues-guide",
       callNow: [
-        "Anorexia, lethargy, an overgrown beak and nails, green-tinted droppings, labored breathing or a swollen abdomen (fatty liver disease)",
-        "Feather plucking, especially self-inflicted skin damage on the chest and shoulders. Always see a vet first to rule out a medical cause",
-        "Feather, beak or immune-system abnormalities (PBFD). There's no cure, which makes early diagnosis and preventing spread to other birds genuinely important",
-        "A bacterial infection spread through droppings and respiratory secretions that can pass to people in the household (psittacosis). See a vet, this needs proper diagnosis and treatment for everyone's sake, not just the bird's",
+        "Labored breathing or a swollen abdomen, with anorexia, lethargy, or green-tinted droppings: fatty liver disease",
+        "A bird in the household with respiratory signs and diarrhea when people are also unwell: psittacosis passes to humans",
       ],
-      vetLine: "Fix the diet first: an all-seed diet drives both the fatty liver disease and the vitamin deficiencies here. Then cover social interaction and enrichment, which is what keeps feather plucking down. Hygiene and quarantine handle PBFD and psittacosis.",
+      soon: [
+        "An overgrown beak and nails, the slow sign of the same liver disease",
+        "Feather plucking, or self-inflicted skin damage on the chest and shoulders: a vet before assuming it is behavioral",
+        "Feather, beak, or immune abnormalities: PBFD has no cure, and early diagnosis stops it spreading",
+      ],
+      vetLine: "Fix the diet first, since an all-seed diet drives the liver disease and the deficiencies. Hygiene and quarantine handle PBFD and psittacosis.",
     },
     routes: [
       { slug: "quaker-parakeet-legal-guide", line: "All 52 jurisdictions read against the state codes themselves, thirteen outright bans, and why every one of them is an invasive species rule." },
@@ -709,54 +694,47 @@ export const birdGuides = [
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
     // entry, which no deep dive repeats. Quarantine, household hazards, pellet
-    // conversion, droppings, and photoperiod cite the shared bird guides in the
-    // sidebar's Health and More list. Built 2026-09-14 for the zebra finch set
+    // conversion, and sleep and droppings cite the shared bird guides in the
+    // sidebar's Health and More list. Rewritten to the template shape
+    // 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md): the pellet ratio is a target
+    // reached gradually, and quarantine says what it is from. Built 2026-09-14 for the zebra finch set
     // test (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Never one bird", value: "This comes before cage dimensions, because it changes what the cage is for. Long-term solo housing isn't a design choice here the way it can be for a solo canary, it's a welfare problem. Plan the cage size, perch layout, and even the number of feeding stations around at least two birds from the very start.", source: "zebra-finch-tank-setup-guide" },
-        { label: "Group size", value: "Wild zebra finches most often forage, drink and travel in groups of two, 94 percent of them mixed-sex and probably pair bonds, or in groups of three to ten. Larger groups were rarely seen. Two, or a handful. Not one, and not a crowd.", source: "zebra-finch-enrichment-guide" },
-        { label: "Cage size", value: "At least 24 inches long by 14 inches wide by 18 inches tall as a minimum for a pair. Treat that as a floor, not a target, since more horizontal space is genuinely better.", source: "zebra-finch-tank-setup-guide" },
-        { label: "Cage shape", value: "Zebra finches fly rather than climb, so a wide flight cage that lets the birds cross the length of it in real flight suits this species far better than a tall, narrow cage built with a climbing bird in mind.", source: "zebra-finch-tank-setup-guide" },
-        { label: "Bar spacing", value: "No wider than 3/8 inch. That's tighter than the roughly 1/2 inch that works for a canary, since zebra finches are a genuinely smaller bird, and wider spacing carries a real risk of a head getting caught or a bird squeezing through entirely.", source: "zebra-finch-tank-setup-guide" },
-        { label: "Temperature", value: "Normal household temperature, 65 to 80°F. Keep the cage away from drafts, air conditioning vents, and direct sun. No supplemental heat is needed indoors.", source: "zebra-finch-tank-setup-guide" },
-        { label: "Light cycle", value: "Approximately 12 hours of light and 12 hours of darkness each day, with natural daylight or full-spectrum artificial lighting during the day. A consistent daily schedule matters more than hitting an exact hour count.", source: "zebra-finch-tank-setup-guide" },
-        { label: "Perches and bathing", value: "Several perches of varied diameter, positioned with enough distance between them that the birds fly rather than just hop across. A shallow bird bath is genuinely worth adding too, zebra finches bathe readily and it supports healthy feather condition.", source: "zebra-finch-tank-setup-guide" },
-        { label: "Cage lining", value: "A paper liner on the cage floor, spot-cleaned daily and fully changed weekly, which also makes it easy to monitor droppings for early signs of illness.", source: "zebra-finch-tank-setup-guide" },
-        { label: "Nesting material", value: "Zebra finches carry, shred and arrange material constantly. A nest site plus material readily triggers breeding, so if you do not want chicks, provide the material and no nest. Never use loose fibrous nesting fluff, which wraps around legs and toes.", source: "zebra-finch-enrichment-guide" },
-        { label: "Diet split", value: "Pellets roughly 70% of the diet, and 60% at an absolute minimum, with fresh fruit and vegetables another 20% and seed limited to about one level teaspoon per bird per day.", source: "zebra-finch-feeding-guide" },
-        { label: "How food is offered", value: "The pelleted diet stays constantly available in a separate dish, while the seed portion is measured out separately and kept small rather than left freely available around the clock. Fresh water continuously, with dishes cleaned daily. Pull fresh greens or produce within a couple of hours of offering them.", source: "zebra-finch-feeding-guide" },
-        { label: "Cuttlebone", value: "A cuttlebone or mineral block should be a permanent fixture in the cage, giving the birds a way to peck out calcium as they need it, and it matters most for laying hens.", source: "zebra-finch-feeding-guide" },
-        { label: "Egg food", value: "A small amount of boiled egg mixed with bread, or a commercial egg food supplement, for a protein boost that matters most during molting and breeding. Offer it fresh and remove any uneaten portion within a couple hours, moist egg mixes spoil quickly.", source: "zebra-finch-feeding-guide" },
-        { label: "Grit", value: "Not needed. Zebra finches hull their seeds, so they don't need grit to mechanically break down whole seeds, and overconsumption can cause gastrointestinal tract obstruction.", source: "zebra-finch-feeding-guide" },
-        { label: "Handling", value: "These are hands-off birds, not really trainable the way a parrot type bird is, and they do not enjoy being held. Forcing contact will likely terrify and stress the bird and tends to produce a more fearful, harder-to-approach one instead of a tamer one.", source: "zebra-finch-handling-guide" },
-        { label: "Catching one", value: "A small, fine-mesh finch net is the gentlest option: let the bird land on a perch, wall, or the cage floor, then carefully slide the net over it rather than chasing it around the cage. Never grab or restrain a finch by the tail, it causes real, painful feather loss.", source: "zebra-finch-handling-guide" },
-        { label: "Vet schedule", value: "The first veterinary visit within 1 to 2 weeks of bringing a bird home, with at least annual checkups after that, twice yearly preferred.", source: "zebra-finch-cost-guide" },
-        { label: "Budget", value: "Commonly $15 to $60 per bird, and at least two birds, so roughly $30 to $120 for a starting pair. Upfront setup runs roughly $180 to $400 for a pair including the birds, with the cage the single biggest line item at $120 to $220, then roughly $10 to $25 a month.", source: "zebra-finch-cost-guide" },
-        { label: "Lifespan", value: "Typically 5 to 7 years in captivity against 2 to 3 years in the wild, with some birds only reaching 3 to 5.", source: "zebra-finch-cost-guide" },
+        { label: "Never one bird", value: "Solo housing is a welfare problem here, not a design choice. Plan the cage, perches, and feeding stations around at least two from the start.", source: "zebra-finch-tank-setup-guide" },
+        { label: "Group size", value: "Wild zebra finches most often move in twos, 94 percent of them mixed-sex, or in groups of three to ten. Two, or a handful. Not one, and not a crowd.", source: "zebra-finch-enrichment-guide" },
+        { label: "Cage", value: "At least 24 by 14 by 18 inches for a pair, a floor not a target, and wide rather than tall: they fly the length of it. Bar spacing no wider than 3/8 inch, tighter than a canary's.", source: "zebra-finch-tank-setup-guide" },
+        { label: "Temperature and light", value: "65 to 80°F, away from drafts, vents, and direct sun. About 12 hours of light and 12 of dark on a consistent schedule.", source: "zebra-finch-tank-setup-guide" },
+        { label: "Perches and bathing", value: "Varied diameters spaced far enough apart that the birds fly rather than hop, and a shallow bath, which they use readily.", source: "zebra-finch-tank-setup-guide" },
+        { label: "Cage lining", value: "A paper liner spot-cleaned daily and changed weekly, which makes droppings easy to read.", source: "zebra-finch-tank-setup-guide" },
+        { label: "Nesting material", value: "They carry and shred material constantly, and material plus a nest site triggers breeding. No chicks wanted: material and no nest. Never loose fibrous fluff, which wraps legs and toes.", source: "zebra-finch-enrichment-guide" },
+        { label: "Diet split", value: "The target once converted is pellets at roughly 70% of the diet, 60% at minimum, fresh fruit and vegetables 20%, and seed at about one level teaspoon per bird per day. Pellets stay available; seed is measured.", source: "zebra-finch-feeding-guide" },
+        { label: "Seed to pellets", value: "Birds arrive seed-fed and the switch is gradual, never abrupt: 75% seed and 25% pellets for 3 days, 50/50 for 3 days, then 25% seed until converted. Weigh daily; a drop past 10% means stop and call an avian vet.", source: "bird-pellet-conversion-guide" },
+        { label: "Cuttlebone and egg food", value: "A cuttlebone or mineral block permanently in the cage, most important for a laying hen. Egg food for protein during molt and breeding, pulled within a couple of hours. No grit: they hull their seed.", source: "zebra-finch-feeding-guide" },
+        { label: "Handling", value: "Hands-off birds that do not enjoy being held; forcing contact makes a more fearful bird. To catch one, slide a fine-mesh net over it on a perch or the floor, and never by the tail.", source: "zebra-finch-handling-guide" },
+        { label: "Vet schedule", value: "A first visit within 1 to 2 weeks of bringing a bird home, then at least annually.", source: "zebra-finch-cost-guide" },
+        { label: "Budget", value: "$15 to $60 a bird, at least two, so $30 to $120 for a pair. Setup roughly $180 to $400 including the birds, the cage $120 to $220 of it, then $10 to $25 a month.", source: "zebra-finch-cost-guide" },
+        { label: "Lifespan", value: "5 to 7 years in captivity, some only 3 to 5, against 2 to 3 in the wild.", source: "zebra-finch-cost-guide" },
         { label: "Adult size", value: "3.9 to 4.3 inches (10 to 11 cm), 0.3 to 0.5 oz." },
-        { label: "Quarantine", value: "At least 30 days is the floor, not a suggestion with room to shave off a week if the bird seems fine, and 30 to 45 days in a separate, isolated room is the wider window. Where birds come from multiple sources, 90 days of quarantine and testing before introduction. Care for your established birds first every single day and handle the quarantined bird last.", source: "bird-quarantine-guide" },
-        { label: "Household fumes", value: "PTFE coatings start releasing toxic gas once they're heated above 280°C (536°F). A pan left empty on a hot burner, or one preheating longer than needed, can reach that point in a few minutes, well before it looks or smells like anything is wrong.", source: "bird-household-hazards-guide" },
-        { label: "Seed to pellets", value: "Gradual substitution, never an abrupt swap: 75% seed and 25% pellets for 3 days, then a 50/50 mix for 3 days, then 25% seed and 75% pellets until the bird is fully converted. Weigh the bird daily on a gram scale, and a drop of more than 10% from its starting weight means stop and call an avian vet rather than waiting it out.", source: "bird-pellet-conversion-guide" },
-        { label: "Daily droppings check", value: "Line the cage tray with plain white paper instead of a patterned liner, so color changes are actually visible, and swap it daily so you're comparing today's droppings against a clean baseline rather than a smear of several days at once.", source: "bird-droppings-guide" },
-        { label: "Sleep and hormones", value: "10 to 12 hours of uninterrupted sleep a night, a range that holds across the species kept as pets, small finches and large parrots alike. A bird's brain reads day length as a season, and an ordinary lit-up evening reads as an endless summer.", source: "bird-photoperiod-sleep-guide" },
+        { label: "Quarantine", value: "New birds stay 30 days, 30 to 45 in a separate room, away from the birds you already have. A pair bought together stays together; quarantine is from your established birds, not from each other.", source: "bird-quarantine-guide" },
+        { label: "Household fumes", value: "PTFE coatings release toxic gas above 280°C (536°F), which an empty pan on a hot burner reaches in minutes.", source: "bird-household-hazards-guide" },
+        { label: "Sleep and droppings", value: "10 to 12 hours of uninterrupted dark, since a lit-up evening reads as endless summer. Plain white paper in the tray, swapped daily, so dropping changes show.", source: "bird-photoperiod-sleep-guide" },
       ],
     },
     emergencyCard: {
       source: "zebra-finch-health-issues-guide",
       callNow: [
-        "Ruffled or unkempt feathers",
-        "Reduced eating or drinking",
-        "Sleeping more than usual",
-        "Labored or open-mouth breathing",
-        "Tail bobbing with each breath",
-        "Diarrhea or abnormal droppings",
-        "Balance problems",
-        "Head tilt",
+        "A laying hen on the cage floor, straining, with a swollen abdomen: egg binding, same-day",
+        "Labored or open-mouth breathing, or a tail bobbing with each breath",
+        "Balance problems or a head tilt",
       ],
-      vetLine: "Any of these, especially in combination, is worth a same-day call to an avian vet rather than a wait-and-see approach, given how much of an illness head start this species already has by the time it shows. A laying hen sitting on the cage floor, straining, with a swollen abdomen is the one that cannot wait at all: egg binding is treated as same-day urgent.",
+      soon: [
+        "Ruffled or unkempt feathers, sleeping more, eating or drinking less, especially in combination",
+        "Diarrhea or abnormal droppings",
+      ],
+      vetLine: "A same-day call to an avian vet for the first list, and a prompt one for the second: a finch has a long illness head start by the time it shows anything.",
     },
     routes: [
       { slug: "zebra-finch-cost-guide", line: "$15 to $60 a bird, why the minimum order is two, and the flight cage that is the real line item." },

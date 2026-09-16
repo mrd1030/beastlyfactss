@@ -186,6 +186,16 @@ third care sheet.
   reason to add a row; it is a reason to fix the deep dive. Decided 2026-09-15,
   after hubs drifted from 13 rows and 340 words in batch A to 32 rows and 1,300
   words in batch P with nothing in the process pushing back.
+- Rows are rewritten, never glued together. The first pass at the cap reached
+  it by concatenating neighboring rows, which left a dozen rows whose kept
+  sentence had lost its subject to a dropped one (the degu pellet cap attached
+  to unlimited hay) and passed every check. So each row is written fresh as a
+  standalone sentence or two, and check-hub-rows also fails any row over 62
+  words, the longest template row. Ten words of slack on either word cap, only
+  when a figure will not fit otherwise. The first hub of any batch is compared
+  against bearded dragon before the rest are built. Decided 2026-09-16, after
+  the router review (docs/HUB_ROUTER_REVIEWS.md); all 84 hubs were rebuilt
+  from the pre-trim rows that day.
 - Figures are copied exactly, prose may be compressed. Every number, unit and
   hedge in a hub row reads as the deep dive states it: 110 to 120F stays 110 to
   120F, "most rooms" does not become "any room", and a range does not become its
@@ -198,8 +208,12 @@ third care sheet.
   grew until they had to be capped.
 - A reconciled hub (`layout: "router"` in src/lib/data/guides/*.js) carries:
   a first-week card of numbers, each taken from the deep dive named in its
-  `source` and linked to it; an emergency card copied
-  from the health guide's call-the-vet list; one routing sentence per deep
+  `source` and linked to it; an emergency card carrying the health guide's
+  signs, with a `heading` set per hub (fish and invertebrate cards open with
+  what to check first, since their cost guides say no vet will see them; the
+  page falls back to "Call the vet now" when no heading is set) and an optional
+  `soon` list for the signs the health guide files under "book a visit
+  promptly", so one list never mixes urgency tiers; one routing sentence per deep
   dive; a buy list with no prices; three FAQs copied from the deep dives.
   No housing, diet, enrichment, or health prose, no cost tables. The hub
   keeps no figure of its own; a number changes in the deep dive and the
