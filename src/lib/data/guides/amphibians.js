@@ -88,7 +88,8 @@ export const amphibianGuides = [
     // hub keeps no number of its own. Adult size and lifespan come from the
     // encyclopedia entry and the cost guide. Quarantine, the water rule and
     // hygiene cite the shared amphibian and reptile guides in the sidebar's
-    // Health and More list. Built 2026-09-15 for the fire-bellied toad set test
+    // Health and More list. Rewritten to the template shape 2026-09-16
+    // (docs/HUB_ROUTER_REVIEWS.md). Built 2026-09-15 for the fire-bellied toad set test
     // (docs/READER_REVIEWS.md). The old hub named the skin toxin as
     // "pumiliotoxins", which is a dendrobatid alkaloid this species does not
     // produce; it also contradicted its own deep dives on tank size, layout,
@@ -99,30 +100,23 @@ export const amphibianGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Enclosure size", value: "10 gallons covers one to three toads, since this is a social species that does fine in a small group of its own kind. Scale up for more. The screen lid has to fit tightly: they are strong jumpers and genuine escape artists.", source: "fire-bellied-toad-tank-setup-guide" },
-        { label: "Layout", value: "Roughly half land, half water, a true paludarium setup, or alternatively an all-water base with floating cork bark or flat rocks providing land access points.", source: "fire-bellied-toad-tank-setup-guide" },
-        { label: "Water depth", value: "Deep enough for your toads to genuinely swim, sloping gradually to about 3 inches, deeper if you want, with easy access in and out.", source: "fire-bellied-toad-tank-setup-guide" },
-        { label: "Water quality", value: "The defining requirement for this species, more important than temperature, substrate, or lighting combined. Always dechlorinate tap water before it goes in. Run a small filter in the water section, or commit to frequent partial water changes, up to half the water weekly if you're not filtering.", source: "fire-bellied-toad-tank-setup-guide" },
-        { label: "Temperature", value: "75 to 78°F through the day, dropping at night. Treat 65°F as the floor and 82°F as the hard ceiling. Most rooms at normal temperature need no supplemental heat at all.", source: "fire-bellied-toad-tank-setup-guide" },
-        { label: "Heating, if you need it", value: "If you do need a heat source because your space runs cold, a low-wattage bulb or a thermostat-controlled under-tank heater works, avoid overheating this species entirely.", source: "fire-bellied-toad-tank-setup-guide" },
-        { label: "Substrate", value: "Coconut fiber or a naturalistic soil blend for the land portion. For the water section, use no substrate at all, or large smooth river rock or slate, never small gravel, which can be swallowed and cause impaction.", source: "fire-bellied-toad-tank-setup-guide" },
-        { label: "Lighting", value: "Low-level UVB offers some benefit though isn't strictly required for this species. If used, a low-output bulb in the 5 to 7% range positioned 8 to 13 inches above the substrate works well.", source: "fire-bellied-toad-tank-setup-guide" },
-        { label: "Diet", value: "Live crickets make up the majority of the diet, with waxworms, earthworms, blackworms, small silkworms, dubia roach nymphs and black soldier fly larvae substituted in every few feedings for variety. Skip mealworms and the other hard-shelled feeders, which carry the same impaction risk as gravel.", source: "fire-bellied-toad-tank-setup-guide" },
-        { label: "Feeding schedule", value: "Two to six food items per toad every two to three days works well for an adult, and juveniles are fed daily in smaller quantities. A practical ceiling either way is what the toad clears in about 15 minutes.", source: "fire-bellied-toad-tank-setup-guide" },
-        { label: "Supplements", value: "Gut-load feeders for at least 24 hours before they go in, then dust them with a calcium and vitamin D supplement at every feeding session, adding a multivitamin once or twice a week.", source: "fire-bellied-toad-tank-setup-guide" },
-        { label: "Handling", value: "Unless ingested, a fire-bellied toad's skin toxins aren't dangerous to people under normal handling. Even so, minimal handling is the right default for this species, not an overcautious rule.", source: "fire-bellied-toad-handling-guide" },
-        { label: "The toxin", value: "Bombinins, a family of defensive peptides secreted from glands in the skin, alongside bombesin, which was first isolated from the skin of a related European fire-bellied toad and named after the genus. Never let a toad's skin secretions come into contact with your eyes, mouth, or any open wound.", source: "fire-bellied-toad-handling-guide" },
-        { label: "Reading the display", value: "The arched back means the toad has classed the hand as a predator, and every stage after it is the toad spending toxin on you. Close the lid.", source: "fire-bellied-toad-handling-guide" },
-        { label: "Tankmates", value: "Their skin toxins can harm tankmates that aren't the same species, so they should only ever be housed with their own kind.", source: "fire-bellied-toad-handling-guide" },
-        { label: "Red leg syndrome", value: "A bacterial infection, often Aeromonas, that takes hold in dirty or poorly maintained water. Reddening on the underside and legs, lethargy, and visible sores. Frequently fatal without prompt antibiotic treatment, and it progresses fast.", source: "fire-bellied-toad-health-issues-guide" },
-        { label: "Wild-caught stock", value: "Most fire-bellied toads in the pet trade are wild-caught rather than captive-bred, since breeding isn't especially profitable at this species' low price point. That's exactly why a vet fecal exam is genuinely worth doing for any newly acquired toad.", source: "fire-bellied-toad-health-issues-guide" },
-        { label: "Budget", value: "$10 to $25 for a standard oriental fire-bellied toad, sometimes as little as $5 to $10, with albino and other color variants reaching $100 or more. Roughly $150 to $300 for the setup, and $15 to $30 a month after that.", source: "fire-bellied-toad-cost-guide" },
-        { label: "Vet costs", value: "A routine exotic or amphibian exam runs $50 to $135, with emergency visits starting around $150 to $300.", source: "fire-bellied-toad-cost-guide" },
-        { label: "Lifespan", value: "10 to 15 years is the figure to plan around, and the documented ceiling runs well past it: 20 years in human care is recorded, and the maximum on record is 30.", source: "fire-bellied-toad-cost-guide" },
+        { label: "Enclosure", value: "10 gallons for one to three toads, a social species, with a tight screen lid for a strong jumper. Half land, half water, or an all-water base with floating cork and flat rock.", source: "fire-bellied-toad-tank-setup-guide" },
+        { label: "Water", value: "Deep enough to swim, sloping to about 3 inches, with easy exits. Water quality is the defining requirement: dechlorinated tap water, and a small filter or partial changes of up to half the water weekly.", source: "fire-bellied-toad-tank-setup-guide" },
+        { label: "Why not RO or distilled", value: "Not electrolyte-balanced, and fatal to an amphibian without rebalancing. Dechlorinated tap water, checked with a test kit, is the practical start.", source: "amphibian-quarantine-and-water-guide" },
+        { label: "Temperature", value: "75 to 78°F by day, cooler at night, with 65°F the floor and 82°F the hard ceiling. Most rooms need no heat; if yours does, a low-wattage bulb or a thermostat-controlled under-tank heater.", source: "fire-bellied-toad-tank-setup-guide" },
+        { label: "Substrate", value: "Coconut fiber or soil on the land side. Bare, or large smooth river rock, in the water, never small gravel, which is swallowed.", source: "fire-bellied-toad-tank-setup-guide" },
+        { label: "Lighting", value: "Low-level UVB is a benefit, not a requirement: a 5 to 7% bulb 8 to 13 inches above the substrate.", source: "fire-bellied-toad-tank-setup-guide" },
+        { label: "Diet", value: "Mostly live crickets, with waxworms, earthworms, blackworms, silkworms, dubia nymphs, and soldier fly larvae rotated in. No mealworms or hard-shelled feeders, which impact like gravel.", source: "fire-bellied-toad-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Two to six items per adult every two to three days, juveniles daily, cleared within about 15 minutes. Feeders gut-loaded 24 hours, dusted with calcium and D every feeding, a multivitamin once or twice a week.", source: "fire-bellied-toad-tank-setup-guide" },
+        { label: "Handling", value: "Minimal by default. The skin toxins are not dangerous under normal handling, but never near eyes, mouth, or an open wound. An arched back means the toad has classed the hand as a predator: close the lid.", source: "fire-bellied-toad-handling-guide" },
+        { label: "Tankmates", value: "Its own kind only; the skin toxins harm anything else.", source: "fire-bellied-toad-handling-guide" },
+        { label: "Red leg syndrome", value: "Reddening on the underside and legs, lethargy, and sores, from dirty water. Fast and frequently fatal without antibiotics.", source: "fire-bellied-toad-health-issues-guide" },
+        { label: "Wild-caught stock", value: "Most in the trade are wild-caught, which is why a fecal exam for any new toad is worth doing.", source: "fire-bellied-toad-health-issues-guide" },
+        { label: "Budget", value: "$10 to $25 for a standard toad, $100 or more for an albino. Setup roughly $150 to $300, then $15 to $30 a month. An exam runs $50 to $135, an emergency from $150 to $300.", source: "fire-bellied-toad-cost-guide" },
+        { label: "Lifespan", value: "10 to 15 years to plan around, with 20 recorded and a maximum of 30.", source: "fire-bellied-toad-cost-guide" },
         { label: "Adult size", value: "1.5 to 2 inches (4 to 5 cm)." },
-        { label: "Quarantine", value: "Six to eight weeks is typically adequate for a new amphibian, and a single pet keeper can reasonably land in the middle of that range rather than at the minimum. Zoo and aquarium practice runs a 30-day minimum with 60 days preferred before release.", source: "amphibian-quarantine-and-water-guide" },
-        { label: "Why not RO or distilled", value: "Distilled and RO water are usually not electrolyte-balanced and can be fatal to an amphibian without rebalancing with buffers, electrolytes, and pH adjustment. Dechlorinated tap water, checked with a test kit, is the more practical starting point for most home keepers.", source: "amphibian-quarantine-and-water-guide" },
-        { label: "Hygiene", value: "A completely healthy-looking reptile or amphibian can carry and shed Salmonella with no outward sign of illness at all, and the route is hands and surfaces to mouth rather than bites. Children younger than 5 should not handle or touch reptiles or amphibians or their environments at all.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Quarantine", value: "Six to eight weeks for a new amphibian; zoos run a 30-day minimum with 60 preferred.", source: "amphibian-quarantine-and-water-guide" },
+        { label: "Hygiene", value: "A healthy-looking amphibian sheds Salmonella, by hands and surfaces to mouth. Children younger than 5 do not touch amphibians or their environments.", source: "reptile-salmonella-hygiene-guide" },
       ],
     },
     emergencyCard: {
@@ -175,34 +169,31 @@ export const amphibianGuides = [
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Quarantine, water, and hygiene rows cite
     // the shared amphibian and reptile guides in the sidebar's Health and More
+    // list. Rewritten to the template shape 2026-09-16
+    // (docs/HUB_ROUTER_REVIEWS.md). They sit in the same sidebar Health and More
     // list. Built 2026-09-14 for the pacman frog set test
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Enclosure", value: "A 10 to 20 gallon terrarium works well for an adult, with 24x18x18 inches as an ideal. Floor space matters far more than height here, this isn't a climbing species.", source: "pacman-frog-tank-setup-guide" },
-        { label: "One per enclosure", value: "Always house one frog per enclosure. Pacman frogs are cannibalistic, and cohabitation isn't a workable option regardless of enclosure size.", source: "pacman-frog-tank-setup-guide" },
-        { label: "Temperature", value: "Daytime around 75 to 85°F, with a slightly warmer basking area near 83°F, dropping to 65 to 75°F at night.", source: "pacman-frog-tank-setup-guide" },
-        { label: "Heat source", value: "A side-mounted under-tank heat mat on a thermostat, or a low-wattage overhead bulb. Never place a heat mat under the tank: Pacman frogs burrow to the substrate floor, and a mat positioned underneath risks burning a frog that's buried directly on top of it.", source: "pacman-frog-tank-setup-guide" },
-        { label: "Humidity", value: "60 to 80% is the target range, maintained through moisture-retentive substrate and daily misting. Let it drop back toward the lower end of that range between mistings rather than keeping the enclosure constantly waterlogged.", source: "pacman-frog-tank-setup-guide" },
-        { label: "Substrate", value: "3 to 4 inches of coco fiber or coco husk, kept moist enough for burrowing, with a light layer of sphagnum moss or leaf litter on top if you like. Avoid gravel, rocks, bark chips, and charcoal entirely.", source: "pacman-frog-tank-setup-guide" },
-        { label: "Substrate changes", value: "Change the substrate every 2 to 3 months as waste builds up acidity, unless you're running a bioactive setup with a cleanup crew.", source: "pacman-frog-tank-setup-guide" },
-        { label: "Lighting", value: "No special lighting is required. A standard 12-hour light, 12-hour dark cycle using a basic LED works fine. Low-level UVB is optional and can support vitamin D synthesis, but isn't necessary if the diet is properly supplemented.", source: "pacman-frog-tank-setup-guide" },
-        { label: "Feeding schedule", value: "Juveniles eat daily or every 1 to 2 days. Adults eat roughly 1 to 3 times a week.", source: "pacman-frog-feeding-guide" },
-        { label: "Portion", value: "There is no fixed prey count per feeding. Size prey no wider than the frog's own head, and judge portion by body condition, round but not visibly bloated.", source: "pacman-frog-feeding-guide" },
-        { label: "Diet", value: "The staple rotation is gut-loaded crickets, dubia roaches, and earthworms or nightcrawlers. Mealworms and waxworms work as occasional treats only. Rodents are for adults only, thawed, never live, never microwaved, roughly every other week and used sparingly.", source: "pacman-frog-feeding-guide" },
-        { label: "Gut-loading and supplements", value: "Gut-load feeder insects on a nutrient-dense diet for roughly 24 to 72 hours before offering them. Dust with calcium and vitamin D3 daily for juveniles and a few times a week for adults, plus a general reptile multivitamin about once a week.", source: "pacman-frog-feeding-guide" },
-        { label: "Feeding tool", value: "Feed with forceps, tongs, or by dropping food into a dish, never with your fingers. A Pacman frog genuinely cannot always distinguish a finger from prey.", source: "pacman-frog-handling-guide" },
-        { label: "Handling", value: "Keep sessions brief and infrequent. Support the frog gently from underneath, or grasp it gently but firmly around the base of the rear legs, and be ready for a sudden jump. Wash your hands thoroughly before and after.", source: "pacman-frog-handling-guide" },
-        { label: "Off food", value: "A frog that stays active, alert, and hydrated with normal-looking feces and stable weight is generally fine even while skipping meals. Weigh weekly and treat roughly 10% weight loss over a couple of weeks as a signal to act.", source: "pacman-frog-feeding-guide" },
-        { label: "Budget", value: "$15 to $100 for the frog itself, roughly $100 to $225 for the upfront setup, and a complete first setup, frog included, commonly totals around $225.", source: "pacman-frog-cost-guide" },
-        { label: "Vet costs", value: "An exotic or amphibian-experienced vet exam commonly runs $50 to $150, with a dedicated exotic emergency fee often starting around $250 at specialty hospitals.", source: "pacman-frog-cost-guide" },
-        { label: "Adult size", value: "Typically 4 to 7 inches, with females substantially larger than males, sometimes close to double the body mass.", source: "pacman-frog-handling-guide" },
-        { label: "Lifespan", value: "6 to 10 years is the most commonly cited range, and 10 to 15 years is achievable with excellent care.", source: "pacman-frog-cost-guide" },
-        { label: "Quarantine", value: "6 to 8 weeks per general veterinary guidance, landing closer to that range than to the shortest end. The clock resets, not just pauses, if the animal shows any illness partway through. Move a new amphibian in a container, never a net.", source: "amphibian-quarantine-and-water-guide" },
-        { label: "Water", value: "Dechlorinated tap water is the practical default, using a conditioner that neutralizes both chlorine and chloramine. Distilled and reverse-osmosis water are usually not electrolyte-balanced, and using either without rebalancing can be fatal to amphibians.", source: "amphibian-quarantine-and-water-guide" },
-        { label: "Hygiene", value: "Wash hands with soap and running water immediately after any contact with the frog, its enclosure, or its water. Never clean the enclosure or water dish in a kitchen sink or a shared bathtub. Children younger than 5 should not handle or touch amphibians or their environments.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Enclosure", value: "A 10 to 20 gallon terrarium for an adult, 24x18x18 inches ideal, floor space over height. One frog per enclosure: cannibalistic at any size.", source: "pacman-frog-tank-setup-guide" },
+        { label: "Temperature", value: "75 to 85°F by day with a basking area near 83°F, 65 to 75°F at night, from a side-mounted heat mat on a thermostat or a low-wattage bulb. Never a mat under the tank: it burrows to the floor and burns.", source: "pacman-frog-tank-setup-guide" },
+        { label: "Humidity", value: "60 to 80% from moist substrate and daily misting, allowed to fall toward the low end between mistings rather than kept waterlogged.", source: "pacman-frog-tank-setup-guide" },
+        { label: "Substrate", value: "3 to 4 inches of coco fiber or husk, moist enough to burrow, changed every 2 to 3 months as waste turns it acidic. No gravel, rock, bark chips, or charcoal.", source: "pacman-frog-tank-setup-guide" },
+        { label: "Lighting", value: "A 12-hour cycle from a basic LED. Low-level UVB is optional with a supplemented diet.", source: "pacman-frog-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Juveniles daily or every 1 to 2 days, adults 1 to 3 times a week, on prey no wider than the head, judged by a body that is round but not bloated.", source: "pacman-frog-feeding-guide" },
+        { label: "Diet", value: "Gut-loaded crickets, dubia, and earthworms as the rotation, mealworms and waxworms as treats. Thawed rodents for adults only, every other week at most, never live or microwaved.", source: "pacman-frog-feeding-guide" },
+        { label: "Supplements", value: "Feeders gut-loaded 24 to 72 hours, dusted with calcium and D3 daily for juveniles and a few times a week for adults, plus a multivitamin about weekly.", source: "pacman-frog-feeding-guide" },
+        { label: "Feeding tool", value: "Forceps, tongs, or a dish, never fingers. It cannot always tell a finger from prey.", source: "pacman-frog-handling-guide" },
+        { label: "Handling", value: "Brief and infrequent, supported from underneath or held around the base of the rear legs, ready for a jump, with hands washed before and after.", source: "pacman-frog-handling-guide" },
+        { label: "Off food", value: "Fine while active, alert, hydrated, with normal feces and stable weight. Weigh weekly; about 10% loss over a couple of weeks is the signal to act.", source: "pacman-frog-feeding-guide" },
+        { label: "Budget", value: "$15 to $100 for the frog, $100 to $225 for the setup, about $225 all in. An exam is $50 to $150, an exotic emergency fee from around $250.", source: "pacman-frog-cost-guide" },
+        { label: "Adult size", value: "4 to 7 inches, females close to double a male's mass.", source: "pacman-frog-handling-guide" },
+        { label: "Lifespan", value: "6 to 10 years, 10 to 15 achievable.", source: "pacman-frog-cost-guide" },
+        { label: "Quarantine", value: "6 to 8 weeks, and the clock resets if illness shows partway. A new amphibian moves in a container, never a net.", source: "amphibian-quarantine-and-water-guide" },
+        { label: "Water", value: "Dechlorinated tap water with a conditioner for chlorine and chloramine. Distilled and reverse-osmosis water are not electrolyte-balanced and can kill an amphibian.", source: "amphibian-quarantine-and-water-guide" },
+        { label: "Hygiene", value: "Wash hands with soap after any contact, never clean the enclosure in a kitchen sink or shared bathtub, and children under 5 do not touch amphibians or their environments.", source: "reptile-salmonella-hygiene-guide" },
       ],
     },
     emergencyCard: {
@@ -255,9 +246,10 @@ export const amphibianGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry, which no deep dive repeats. Quarantine, moving a new arrival, and
-    // hygiene cite the shared amphibian and reptile guides in the sidebar's
-    // Health and More list. Built 2026-09-15 for the tiger salamander set test
+    // entry, which no deep dive repeats. Quarantine and hygiene cite the
+    // shared amphibian and reptile guides in the sidebar's Health and More
+    // list. Rewritten to the template shape 2026-09-16
+    // (docs/HUB_ROUTER_REVIEWS.md). Built 2026-09-15 for the tiger salamander set test
     // (docs/READER_REVIEWS.md), which found the old hub telling readers distilled
     // water was a fine substitute while the shared amphibian water guide calls it
     // potentially fatal, and carrying the set's only feeding schedule with
@@ -267,39 +259,38 @@ export const amphibianGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Legal check", value: "Eleven jurisdictions ban this animal, and two of them get there by pointing at the federal list rather than writing their own. The January 2025 injurious-wildlife listing restricts importing and a narrow set of shipments, and does not affect ownership, breeding, sale, purchase, or possession. New Jersey is the exception that reaches a pet: the state endangered listing applies whatever the animal's origin, and the larval form is separately barred by appearance.", source: "tiger-salamander-legal-guide" },
-        { label: "Enclosure size", value: "A 20-gallon long tank, 24 inches long by 18 inches wide by 12 inches tall, works as a minimum for a single adult. Favor horizontal floor space over height, this is a ground-dwelling, burrowing species, not a climber.", source: "tiger-salamander-tank-setup-guide" },
-        { label: "Cohabitation", value: "Cohabitation generally isn't recommended, competition and even cannibalism are real risks, though some very large enclosures can occasionally support a small group, worth researching carefully before attempting.", source: "tiger-salamander-tank-setup-guide" },
-        { label: "Temperature", value: "60 to 75°F, and genuinely never above about 78°F, heat stress is a real concern for this species. Most rooms need no supplemental heat at all if they stay above roughly 60°F.", source: "tiger-salamander-tank-setup-guide" },
-        { label: "Humidity", value: "70 to 75%, maintained through consistently moist, never soggy, substrate and a shallow water dish. A moisture gradient, one end of the enclosure slightly damper than the other, gives your salamander some choice in where to settle.", source: "tiger-salamander-tank-setup-guide" },
-        { label: "Substrate", value: "At least 3 to 4 inches of moisture-retentive, burrow-supporting material, coconut fiber, a commercial reptile soil product, organic fertilizer-free topsoil, or cypress mulch all work, and deeper is better. Avoid peat moss specifically, its acidity can cause real harm over time, and skip gravel, sand, small bark chips, and anything containing vermiculite or perlite.", source: "tiger-salamander-tank-setup-guide" },
-        { label: "Water", value: "A shallow dish of dechlorinated water should always be available. Treat all water with a conditioner before use, or use bottled spring water instead. Distilled and reverse-osmosis water are the two to leave on the shelf.", source: "tiger-salamander-tank-setup-guide" },
-        { label: "Lighting", value: "This species is largely nocturnal and fossorial, and doesn't require UVB, though a low level is considered optional and potentially beneficial by some sources. A low-wattage light on a normal 10 to 12 hour day and night cycle supports a healthy rhythm without adding unnecessary heat.", source: "tiger-salamander-tank-setup-guide" },
-        { label: "Feeding schedule", value: "Feed a growing juvenile every one to two days and an adult two to three times a week, at night, in small measured quantities. This species does not stop when it has had enough, which is why obesity is the problem it runs into most often.", source: "tiger-salamander-tank-setup-guide" },
-        { label: "Supplements", value: "Dust feeders with a calcium and vitamin D3 supplement plus a multivitamin, at every feeding while the animal is growing and every second to fourth feeding once it is adult.", source: "tiger-salamander-tank-setup-guide" },
-        { label: "Mice", value: "A frozen and thawed pinkie or fuzzy mouse is a rare treat at most for a large adult, never a staple and never fed live.", source: "tiger-salamander-tank-setup-guide" },
-        { label: "Handling", value: "Direct handling should genuinely be avoided with this species. If it is necessary, wear wet, powder-free nitrile gloves and keep any handling brief.", source: "tiger-salamander-handling-guide" },
-        { label: "Out of sight is normal", value: "This species is fossorial, spending most of its time burrowed underground rather than visible on the surface the way a more aquatic amphibian might be. Don't mistake a salamander that's rarely visible for one that's unhealthy or hiding from stress.", source: "tiger-salamander-handling-guide" },
-        { label: "Appetite loss", value: "This species is normally such a voracious eater that appetite loss is treated as a specific red flag rather than routine pickiness. A tiger salamander that suddenly turns down food is usually telling you something, not just being fussy.", source: "tiger-salamander-health-issues-guide" },
-        { label: "Life stage change", value: "If you're starting with a young larval salamander, its early setup looks essentially identical to an axolotl's, fully aquatic. As it metamorphoses into its terrestrial adult form, you'll need to transition the enclosure entirely, from a water-based setup to the deep, burrowable terrestrial one. This is a normal part of the species' development, not something gone wrong.", source: "tiger-salamander-tank-setup-guide" },
-        { label: "Budget", value: "$30 to $50 for a juvenile barred or eastern tiger salamander, the most common types in the trade, with rarer morphs and larger animals reaching $125 or more. Roughly $150 to $400 for the setup, and roughly $15 to $30 a month after that.", source: "tiger-salamander-cost-guide" },
-        { label: "Vet costs", value: "A routine exotic exam runs $50 to $135, sometimes cited higher, $150 to $300, for a thorough workup. Emergency visits start around $150 to $300 before diagnostics.", source: "tiger-salamander-cost-guide" },
-        { label: "Lifespan", value: "12 to 15 years is typical, with well-documented cases reaching considerably longer. The captive maximum on record is 25 years, and ordinary captive adults have reached 16.", source: "tiger-salamander-cost-guide" },
+        { label: "Legal check", value: "Eleven jurisdictions ban it. The January 2025 federal injurious-wildlife listing restricts import and shipment, not ownership. New Jersey's endangered listing reaches a pet whatever its origin.", source: "tiger-salamander-legal-guide" },
+        { label: "Enclosure", value: "A 20-gallon long, 24 by 18 by 12 inches, minimum for one adult, floor over height for a burrower. Cohabitation is not recommended: competition and cannibalism.", source: "tiger-salamander-tank-setup-guide" },
+        { label: "Temperature", value: "60 to 75°F and never above about 78°F. No heat in a room that stays above 60°F.", source: "tiger-salamander-tank-setup-guide" },
+        { label: "Humidity", value: "70 to 75%, from moist, never soggy, substrate and a shallow dish, with one end slightly damper than the other so it can choose.", source: "tiger-salamander-tank-setup-guide" },
+        { label: "Substrate", value: "3 to 4 inches or more of coconut fiber, reptile soil, fertilizer-free topsoil, or cypress mulch. No peat, gravel, sand, small bark, vermiculite, or perlite.", source: "tiger-salamander-tank-setup-guide" },
+        { label: "Water", value: "A shallow dish of conditioned tap water or bottled spring water, always. Distilled and reverse-osmosis stay on the shelf.", source: "tiger-salamander-tank-setup-guide" },
+        { label: "Lighting", value: "No UVB needed for a nocturnal burrower, though a low level is optional. A low-wattage light on a 10 to 12 hour cycle.", source: "tiger-salamander-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Juveniles every one to two days, adults two to three times a week, at night, in measured amounts: it does not stop when full, and obesity is its commonest problem.", source: "tiger-salamander-tank-setup-guide" },
+        { label: "Supplements", value: "Calcium with D3 plus a multivitamin on the feeders, every feeding while growing and every second to fourth as an adult. A thawed pinkie is a rare treat, never live.", source: "tiger-salamander-tank-setup-guide" },
+        { label: "Handling", value: "Avoided. If necessary, wet powder-free nitrile gloves and a brief session.", source: "tiger-salamander-handling-guide" },
+        { label: "Out of sight is normal", value: "Fossorial, so it spends most of its time underground. Rarely visible does not mean unhealthy.", source: "tiger-salamander-handling-guide" },
+        { label: "Appetite loss", value: "A specific red flag in an animal this voracious, not routine pickiness.", source: "tiger-salamander-health-issues-guide" },
+        { label: "Life stage change", value: "A larval salamander starts fully aquatic, like an axolotl, and the enclosure changes entirely to deep burrowable land as it metamorphoses. Normal, not something gone wrong.", source: "tiger-salamander-tank-setup-guide" },
+        { label: "Budget", value: "$30 to $50 for a juvenile barred or eastern, $125 or more for rarer morphs. Setup $150 to $400, then $15 to $30 a month. An exam runs $50 to $135, an emergency from $150 to $300.", source: "tiger-salamander-cost-guide" },
+        { label: "Lifespan", value: "12 to 15 years typical, 25 the captive record.", source: "tiger-salamander-cost-guide" },
         { label: "Adult size", value: "8 to 13 inches (20 to 33 cm)." },
-        { label: "Quarantine", value: "Six to eight weeks is typically adequate for a new amphibian, and a single pet keeper can reasonably land in the middle of that range rather than at the minimum. Zoo and aquarium practice runs a 30-day minimum with 60 days preferred before release. Bd and, for salamanders specifically, Bsal are real pathogens with a documented pet-trade pathway behind them.", source: "amphibian-quarantine-and-water-guide" },
-        { label: "Moving a new arrival", value: "A container, never a net, especially for any amphibian's skin. Match temperature before chemistry, and give the water itself time to blend rather than swapping it all at once. Run a fecal screen somewhere in that window.", source: "amphibian-quarantine-and-water-guide" },
-        { label: "Hygiene", value: "A completely healthy-looking reptile or amphibian can carry and shed Salmonella with no outward sign of illness at all, and the route is hands and surfaces to mouth rather than bites. Children younger than 5 should not handle or touch reptiles or amphibians or their environments at all.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Quarantine", value: "Six to eight weeks, with a fecal screen in that window. Bd, and Bsal for salamanders specifically, have a documented pet-trade pathway. Moved in a container, never a net.", source: "amphibian-quarantine-and-water-guide" },
+        { label: "Hygiene", value: "A healthy-looking amphibian sheds Salmonella, by hands and surfaces to mouth. Children younger than 5 do not touch amphibians or their environments.", source: "reptile-salmonella-hygiene-guide" },
       ],
     },
     emergencyCard: {
       source: "tiger-salamander-health-issues-guide",
       callNow: [
-        "Suspected substrate impaction. Always see a vet, this can become genuinely fatal if left untreated",
-        "Metabolic bone disease, from calcium or vitamin D3 deficiency",
-        "Red or discolored skin, abnormal shedding, a real change in behavior, or appetite loss, any of which can mean a skin or bacterial infection including chytrid fungus. Always see a vet",
-        "Suspected parasites, often carried by wild-caught feeders or wild-origin animals",
+        "Bloating, straining, or no stool after a meal on loose substrate: impaction, fatal if left",
+        "Red or discolored skin, abnormal shedding, or a real change in behavior: a skin or bacterial infection, chytrid included",
+        "Appetite loss, in an animal this voracious",
       ],
-      vetLine: "A vet fecal exam is worth doing for peace of mind, especially given how commonly wild-caught stock shows up in this species' trade. Appetite loss is the signal to act on: this species is normally such a voracious eater that any drop in appetite is a genuine red flag.",
+      soon: [
+        "Weak or bowed limbs or tremors: calcium or D3 deficiency",
+        "Weight loss or loose stool in a wild-origin animal or one fed wild-caught feeders: a fecal exam for parasites",
+      ],
+      vetLine: "A fecal exam is worth doing for any new salamander, given how much wild-caught stock is in this trade.",
     },
     routes: [
       { slug: "tiger-salamander-cost-guide", line: "The animal at $30 to $125, the upfront setup, the monthly feeder bill, and the lifespan that is the real commitment." },
@@ -341,9 +332,10 @@ export const amphibianGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry, which no deep dive repeats. Quarantine, the water rule, the
-    // container-not-a-net move, and hygiene cite the shared amphibian and
-    // reptile guides in the sidebar's Health and More list. Built 2026-09-09 for
+    // entry, which no deep dive repeats. Quarantine, moving a new arrival,
+    // and hygiene cite the shared amphibian and reptile guides in the
+    // sidebar's Health and More list. Rewritten to the template shape
+    // 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md). Built 2026-09-09 for
     // the White's tree frog set test (docs/READER_REVIEWS.md), which found the
     // old hub telling readers to mist with reverse-osmosis water while the tank
     // setup guide told them never to; the deep dive was right and the hub's
@@ -352,37 +344,36 @@ export const amphibianGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Enclosure size", value: "18 inches long by 18 inches wide by 24 inches tall is the standard minimum for one adult, sized for a vertical, arboreal species. A 20-gallon-equivalent enclosure is comfortable for a single frog, and 24x18x24 inches works well for a small group of two to four.", source: "whites-tree-frog-tank-setup-guide" },
-        { label: "Temperature", value: "Keep a gradient: cool side around 70 to 75°F, a basking area around 80 to 85°F, dropping into the mid-70s at night. This species doesn't need intense heat, just a gentle, reliable gradient.", source: "whites-tree-frog-tank-setup-guide" },
-        { label: "Humidity", value: "A baseline around 50 to 60% with misting spikes up to 70 to 80% once or twice daily, then letting it drop back down between mistings. Constant, unbroken high humidity is directly linked to bacterial and red-leg issues.", source: "whites-tree-frog-tank-setup-guide" },
-        { label: "Water", value: "Use only dechlorinated tap water or spring water for misting and drinking, never distilled or reverse-osmosis water.", source: "whites-tree-frog-tank-setup-guide" },
-        { label: "Why not RO or distilled", value: "Distilled and RO water are usually not electrolyte-balanced and can be fatal to an amphibian without rebalancing with buffers, electrolytes, and pH adjustment. Dechlorinated tap water, checked with a test kit, is the more practical starting point for most home keepers.", source: "amphibian-quarantine-and-water-guide" },
-        { label: "Substrate", value: "Coarse orchid bark, coco fiber or coco husk, or a bioactive soil mix, kept lightly moist rather than soggy. Avoid fine, loose substrate that's easy to accidentally ingest during feeding.", source: "whites-tree-frog-tank-setup-guide" },
-        { label: "UVB", value: "Low-level UVB is recommended, this species survives without it but genuinely does better with it. A low-output T5 bulb in the 5 to 7% range works well, positioned so the basking branch sits at least 6 inches below the fixture, and the bulb gets replaced every 9 to 12 months on a schedule, regardless of whether it still looks like it's working.", source: "whites-tree-frog-tank-setup-guide" },
-        { label: "Feeding", value: "Keep adult feeding to roughly 3 to 4 appropriately sized insects, 2 to 3 times a week, rather than free-feeding, and limit high-fat feeders like waxworms and superworms to once a week at most.", source: "whites-tree-frog-health-issues-guide" },
-        { label: "Obesity check", value: "Fat deposits build up visibly over the tympanum (the external eardrum) and in the armpit area. The line between the breed's natural \"dumpy\" look and genuine obesity comes down to fat visibly bulging over the tympanum and armpits, not the frog's general roundness.", source: "whites-tree-frog-health-issues-guide" },
-        { label: "Handling", value: "Keep sessions short, roughly 5 to 15 minutes, and don't handle more than about twice a week. Wash your hands thoroughly with plain water only, no soap, immediately before handling, or wear powder-free nitrile gloves lightly wetted with dechlorinated water.", source: "whites-tree-frog-handling-guide" },
-        { label: "Cover", value: "Live planting with broad leaves at several heights, so a frog can sit supported and out of sight at any level. If the frog is always immediately visible, there is not enough in there.", source: "whites-tree-frog-enrichment-guide" },
-        { label: "Group housing", value: "They tolerate company well and can be kept in groups, provided every animal is a similar size. A White's tree frog will swallow anything that fits, including a smaller frog, and a mixed-size group is a feeding accident waiting to happen.", source: "whites-tree-frog-enrichment-guide" },
-        { label: "Budget", value: "$20 to $60 for a standard animal, most complete setups landing in the $200 to $400 range, and roughly $13 to $24 a month in consumables after that, before substrate and power.", source: "whites-tree-frog-cost-guide" },
-        { label: "Vet costs", value: "An exotic or amphibian-experienced vet exam commonly runs $50 to $150. A dedicated exotic emergency visit fee alone often starts around $250 at specialty hospitals, before any treatment.", source: "whites-tree-frog-cost-guide" },
-        { label: "Lifespan", value: "The average lifespan is about 16 years, with one individual recorded living 21 years in human care. More conservative figures put it at 10 to 15-plus years with excellent care.", source: "whites-tree-frog-cost-guide" },
+        { label: "Enclosure", value: "18 by 18 by 24 inches tall minimum for one adult, or 24x18x24 for a group of two to four of similar size. A frog swallows anything that fits, smaller frogs included.", source: "whites-tree-frog-tank-setup-guide" },
+        { label: "Temperature", value: "Cool side 70 to 75°F, basking 80 to 85°F, mid-70s at night. A gentle gradient, not intense heat.", source: "whites-tree-frog-tank-setup-guide" },
+        { label: "Humidity", value: "50 to 60% baseline with misting spikes to 70 to 80% once or twice daily, then a dry-down. Constant high humidity is what brings bacterial and red-leg problems.", source: "whites-tree-frog-tank-setup-guide" },
+        { label: "Water", value: "Dechlorinated tap or spring water only, never distilled or reverse-osmosis, which are not electrolyte-balanced and can kill an amphibian.", source: "whites-tree-frog-tank-setup-guide" },
+        { label: "Substrate", value: "Coarse orchid bark, coco fiber or husk, or a bioactive mix, lightly moist. Nothing fine enough to swallow while feeding.", source: "whites-tree-frog-tank-setup-guide" },
+        { label: "UVB", value: "Recommended: a 5 to 7% T5 with the basking branch at least 6 inches below it, replaced every 9 to 12 months on schedule.", source: "whites-tree-frog-tank-setup-guide" },
+        { label: "Feeding", value: "3 to 4 insects, 2 to 3 times a week for an adult, never free-fed, with waxworms and superworms once a week at most.", source: "whites-tree-frog-health-issues-guide" },
+        { label: "Obesity check", value: "Fat bulging over the tympanum and in the armpits, not general roundness, is the line between the natural dumpy look and a problem.", source: "whites-tree-frog-health-issues-guide" },
+        { label: "Handling", value: "5 to 15 minutes, no more than about twice a week, with hands washed in plain water only, no soap, or in wet powder-free nitrile gloves.", source: "whites-tree-frog-handling-guide" },
+        { label: "Cover", value: "Broad-leaved live plants at several heights so it can sit supported and unseen. Always immediately visible means not enough in there.", source: "whites-tree-frog-enrichment-guide" },
+        { label: "Budget", value: "$20 to $60 for the frog, $200 to $400 for most complete setups, then $13 to $24 a month. An exam runs $50 to $150, an exotic emergency fee from around $250.", source: "whites-tree-frog-cost-guide" },
+        { label: "Lifespan", value: "About 16 years on average, one recorded at 21; conservative figures say 10 to 15-plus.", source: "whites-tree-frog-cost-guide" },
         { label: "Adult size", value: "3 to 4.5 inches (7 to 11 cm)." },
-        { label: "Quarantine", value: "Six to eight weeks is typically adequate for a new amphibian. Zoo and aquarium practice runs a 30-day minimum with 60 days preferred before release from quarantine. The clock should reset, not just pause, if the animal shows any illness partway through.", source: "amphibian-quarantine-and-water-guide" },
-        { label: "Moving a new arrival", value: "A container, not a net. Move the animal with some of its own tank water into a small, clear, water-tight container, which lets you view it from any angle without ever needing to touch it directly or force it through mesh.", source: "amphibian-quarantine-and-water-guide" },
-        { label: "Hygiene", value: "A completely healthy-looking reptile or amphibian can carry and shed Salmonella with no outward sign of illness at all, and the route is hands and surfaces to mouth rather than bites. Children younger than 5 years old should not handle or touch reptiles or amphibians or their environments.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Quarantine", value: "Six to eight weeks, resetting if illness shows partway. Zoos run a 30-day minimum with 60 preferred.", source: "amphibian-quarantine-and-water-guide" },
+        { label: "Moving a new arrival", value: "In a small clear container with some of its own water, never a net, so it is never touched or forced through mesh.", source: "amphibian-quarantine-and-water-guide" },
+        { label: "Hygiene", value: "A healthy-looking amphibian sheds Salmonella, by hands and surfaces to mouth. Children younger than 5 do not touch amphibians or their environments.", source: "reptile-salmonella-hygiene-guide" },
       ],
     },
     emergencyCard: {
       source: "whites-tree-frog-health-issues-guide",
       callNow: [
-        "Lethargy and weight loss, especially in a new or suspect animal (chytridiomycosis). This is a genuine emergency, quarantine any new or suspect animal immediately and get to a vet right away",
-        "Redness on the belly and legs, lethargy, and loss of appetite (red-leg syndrome). This needs a vet",
-        "Signs of a bacterial or skin infection, which enclosures kept too humid without adequate ventilation invite. Always see a vet if signs appear",
-        "Inadequate calcium supplementation or missing UVB catching up with the frog (metabolic bone disease). This needs a vet",
-        "Advanced obesity with liver involvement. Advanced cases with liver involvement need a vet",
+        "Lethargy and weight loss in a new or suspect animal: chytridiomycosis, quarantine it and get to a vet",
+        "Redness on the belly and legs with lethargy and appetite loss: red-leg syndrome",
+        "Skin lesions or a bacterial infection, which a wet, poorly ventilated enclosure invites",
       ],
-      vetLine: "An exotic or amphibian-experienced vet, found before you need one. Amphibian veterinary care has real limitations, and prevention through correct husbandry does more work here than treatment ever will.",
+      soon: [
+        "Weak limbs, a droopy jaw, or twitching: calcium or UVB catching up with the frog",
+        "Fat bulging over the tympanum and armpits: obesity, a diet fix at home, and a vet once the liver is involved",
+      ],
+      vetLine: "An amphibian-experienced vet, found before you need one. Amphibian medicine has real limits, and husbandry does more than treatment ever will.",
     },
     routes: [
       { slug: "whites-tree-frog-cost-guide", line: "The frog at $20 to $60, a $200 to $400 setup, the recurring lines that add up to $13 to $24 a month, and what a 16-year average lifespan does to the budget." },
