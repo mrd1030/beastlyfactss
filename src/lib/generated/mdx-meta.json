@@ -424,11 +424,11 @@
     "faqs": [
       {
         "q": "What causes metabolic bone disease in ackie monitors?",
-        "a": "Inadequate UVB, insufficient calcium, or both together. ReptiFiles calls MBD a highly preventable disease of neglect. The signs are swollen limbs, soft or malformed bones, lethargy, and difficulty moving normally. Always see a vet."
+        "a": "Inadequate UVB, insufficient calcium, or both together. It is a disease of neglect, one a properly kept ackie should never develop. The signs are swollen limbs, soft or malformed bones, lethargy, and difficulty moving normally. Always see a vet."
       },
       {
         "q": "Why are ackie monitors prone to obesity in captivity?",
-        "a": "Their wild activity level burns far more energy than most captive setups allow for, and they are strongly food motivated. The ReptiFiles fix is to cut feeding frequency and amount, give a large enclosure that encourages movement, and weigh weekly on a kitchen scale."
+        "a": "Their wild activity level burns far more energy than most captive setups allow for, and they are strongly food motivated. The fix is to cut feeding frequency and amount, give a large enclosure that encourages movement, and weigh weekly on a kitchen scale."
       },
       {
         "q": "What are the signs of parasites in an ackie monitor?",
@@ -533,13 +533,13 @@
     "image": "/assets/images/ackie-monitor-tank-setup.jpg",
     "imageAlt": "Ackie monitor enclosure with deep burrowing substrate, Retes stack, and basking lighting",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-16",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "What size enclosure does an ackie monitor need?",
-        "a": "ReptiFiles puts the minimum for a single adult at 5 feet long, 2.5 feet wide, and 4 feet tall. That is bigger than the older 4x2x2 foot standard still quoted for the species, and the reason is activity level: ackies do not thrive in a modest footprint the way a more sedentary lizard might."
+        "a": "The minimum for a single adult is 5 feet long, 2.5 feet wide, and 4 feet tall. That is bigger than the older 4x2x2 foot standard still quoted for the species, and the reason is activity level: ackies do not thrive in a modest footprint the way a more sedentary lizard might."
       },
       {
         "q": "How hot does an ackie monitor's basking spot need to be?",
@@ -548,6 +548,10 @@
       {
         "q": "How deep does ackie monitor substrate need to be?",
         "a": "12 to 24 inches, deep enough to hold a proper burrow. A bioactive-style mix works, so does DIY topsoil with play sand, and either one needs a substrate dam tall enough to keep that depth in place. Shallow bark-only setups and dry, pure sand both collapse."
+      },
+      {
+        "q": "What humidity does an ackie monitor need?",
+        "a": "Ambient between 20 and 50%, drier than most reptile keepers expect, with the burrow itself at 80% or higher. A semi-arid burrower goes underground for moisture rather than getting it from the room, which is why substrate depth does the work here."
       },
       {
         "q": "Does an ackie monitor need UVB?",
@@ -569,7 +573,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 8,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -617,7 +621,7 @@
       },
       {
         "q": "How long do African fat-tailed geckos live, and how does that affect budgeting?",
-        "a": "Care sources commonly cite 15 to 20 years. The best-documented figure comes from an academic longevity database, a maximum recorded captive lifespan just over 16 years. Either way it is a long-term commitment, well beyond many other beginner reptiles."
+        "a": "15 to 20 years is the commonly cited range, and the best-documented figure is a maximum recorded captive lifespan of just over 16 years. Either way it is a long-term commitment, well beyond many other beginner reptiles."
       }
     ],
     "relatedProducts": [
@@ -709,7 +713,7 @@
     "slug": "african-fat-tail-feeding-guide",
     "title": "African Fat-Tailed Gecko Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do African Fat-Tailed Geckos Eat? Diet and Schedule",
-    "excerpt": "That fat tail can hold close to half the gecko's body mass, which is why healthy adults can go months without eating and be completely fine. Here's how to tell that from real trouble.",
+    "excerpt": "The tail is a fat reserve, which is why healthy adults can go months without eating and be completely fine. Here's how to tell that from real trouble.",
     "date": "2026-07-31",
     "category": "Reptiles",
     "categories": [
@@ -729,13 +733,13 @@
     "image": "/assets/images/african-fat-tail-feeding.jpg",
     "imageAlt": "African fat-tailed gecko eating a gut-loaded cricket",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-31",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "How often should I feed my African fat-tailed gecko?",
-        "a": "Hatchlings eat daily. Beyond that, sources disagree, some treat juveniles as needing daily feeding distinct from adults, others lump juveniles and adults together at about 3 times a week. Adult frequency itself ranges from 3 times a week to a condition-based schedule where a gecko with a visibly fat tail eats only every 5 days. Let tail thickness guide you more than any single number."
+        "a": "Hatchlings eat daily. Juveniles run from daily feeding down to about 3 times a week, depending on how old a juvenile is taken to be, so feed a still-growing animal daily and move it toward the adult schedule as the tail fills out. Adults run from 3 times a week to a condition-based schedule where a gecko with a visibly fat tail eats only every 5 days. Let tail thickness guide you more than any single number."
       },
       {
         "q": "How much should I feed at each meal?",
@@ -743,7 +747,7 @@
       },
       {
         "q": "How often should I dust with calcium?",
-        "a": "Most hobbyist care sheets say every feeding with plain, phosphorus-free calcium. One veterinary clinic source is slightly less strict, at least 3 times a week. A calcium and D3 combo is generally used just once or twice a week on top of that."
+        "a": "Plain, phosphorus-free calcium at most feedings: every feeding at the strict end, at least 3 times a week at the other. A calcium and D3 combo is generally used just once or twice a week on top of that."
       },
       {
         "q": "Why has my African fat-tailed gecko stopped eating?",
@@ -751,11 +755,11 @@
       },
       {
         "q": "How long can this species safely go without eating?",
-        "a": "No source gives one universal number, and that's honest, the tail's fat reserve, which can hold close to half the gecko's body mass, lets healthy adults fast for weeks to even several months without harm. What matters is tail thickness and behavior, not a day count, a tail that's thinner than the neck, not just less plump, is the warning sign."
+        "a": "There is no universal number: the tail's fat reserve lets healthy adults fast for weeks to even several months without harm. What matters is tail thickness and behavior, not a day count, and a tail that's thinner than the neck, not just less plump, is the warning sign."
       },
       {
         "q": "What insects should never be fed to this species?",
-        "a": "Ladybugs, fireflies, monarch butterflies, box elder bugs, centipedes, bees, and wasps are all specifically flagged by an exotics vet source, generally because they're wild-caught or contain toxins. Only feed captive-bred, farmed insects, never wild-caught ones."
+        "a": "Ladybugs, fireflies, monarch butterflies, box elder bugs, centipedes, bees, and wasps, generally because they're wild-caught or contain toxins. Only feed captive-bred, farmed insects, never wild-caught ones."
       }
     ],
     "relatedProducts": [
@@ -918,7 +922,7 @@
     "image": "/assets/images/african-fat-tail-tank-setup.jpg",
     "imageAlt": "African fat-tailed gecko enclosure with warm hide, cool hide, and humid hide setup",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-26",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -957,7 +961,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -1709,7 +1713,7 @@
       },
       {
         "q": "What algae are amano shrimp good at eating?",
-        "a": "Hair algae, thread algae, and diatoms are where they excel, and they'll take on black beard algae too, which most fish and snails leave completely alone. Aquarium Co-Op lists these as their strongest targets, and a well-established beard algae mat is still more than one animal can fully clear on its own."
+        "a": "Hair algae and thread algae are where they excel, and they'll take on black beard algae too, which most fish and snails leave completely alone. A well-established beard algae mat is still more than one animal can fully clear on its own."
       },
       {
         "q": "What algae do amano shrimp struggle with?",
@@ -1892,7 +1896,7 @@
     "faqs": [
       {
         "q": "What size tank do amano shrimp need?",
-        "a": "10 gallons is a practical minimum, even though a small group can technically survive in something as small as 5. Aquarium Co-Op notes their bioload is low enough for a nano tank with a secure lid, but 10 gallons gives a group real room to forage. Fishkeeping World suggests roughly one shrimp per 2 gallons as a comfortable baseline."
+        "a": "10 gallons is a practical minimum, even though a small group can technically survive in something as small as 5. Their bioload is low enough for a nano tank with a secure lid, but 10 gallons gives a group real room to forage, stocked at one shrimp per 2 gallons."
       },
       {
         "q": "What water parameters do amano shrimp need?",
@@ -2246,7 +2250,7 @@
       },
       {
         "q": "How long can an angelfish go without eating?",
-        "a": "Sources blur two different numbers here, survival capability versus a responsible recommended maximum. One guide says they can survive up to two weeks but recommends one week as the maximum, others put the generally-fine window around 7 to 10 days. Refusal beyond about 4 to 5 days, or any refusal paired with a sunken belly, is worth acting on."
+        "a": "Up to two weeks is survivable, but one week is the sensible ceiling to plan around, and anywhere in the 7 to 10 day range is generally fine. Refusal beyond about 4 to 5 days, or any refusal paired with a sunken belly, is worth acting on."
       },
       {
         "q": "Why is a sunken belly a warning sign even if my angelfish is still eating?",
@@ -2418,11 +2422,11 @@
     "faqs": [
       {
         "q": "What size tank does an angelfish need?",
-        "a": "29 gallons, in a tall configuration, is the practical minimum for a single adult, with 55 gallons better suited to a small group of four to six. A \"20-gallon long\" tank is often only about 12 inches tall despite the larger-sounding volume, too shallow for this species. Prioritize height, at least 18 to 20 inches, over length."
+        "a": "29 gallons in a tall configuration is the practical minimum for one adult, and 55 gallons suits a small group of four to six adults. Watch out for the \"20-gallon long\": bigger volume, but often only about 12 inches of height, which is too shallow here. Buy height, at least 18 to 20 inches, before length."
       },
       {
         "q": "What temperature do angelfish need?",
-        "a": "A tropical species, comfortable in the 78 to 82°F range, with some sources extending slightly lower to 75°F. A heater is essential, budget roughly 3 to 5 watts per gallon, meaning 200 to 250 watts for a 55-gallon tank, and keep fluctuation within about 2 degrees."
+        "a": "Between 78 and 82°F, with about 75°F the low end they tolerate. Size the heater at roughly 3 to 5 watts per gallon, so 200 to 250 watts on a 55-gallon, and hold the swing inside about 2 degrees either way."
       },
       {
         "q": "What water chemistry do angelfish need?",
@@ -2679,7 +2683,7 @@
     "image": "/assets/images/argentine-tegu-cost.jpg",
     "imageAlt": "Large black and white Argentine tegu in a spacious custom enclosure, illustrating the true cost of housing this species",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-24",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -2713,7 +2717,8 @@
       "argentine-tegu-uvb-46in",
       "argentine-tegu-thermostat-heavy-duty",
       "automatic-misting-system-fogger",
-      "substrate-tarantula-coconut-fiber-peat"
+      "substrate-tarantula-coconut-fiber-peat",
+      "high-wattage-basking-fixture"
     ],
     "factFile": false,
     "animal": null,
@@ -2816,7 +2821,7 @@
     "image": "/assets/images/argentine-tegu-handling.jpg",
     "imageAlt": "Large black and white Argentine tegu being handled calmly by its owner outside its spacious custom enclosure",
     "emoji": "🦎",
-    "lastReviewed": "2026-09-07",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -2880,7 +2885,7 @@
     "image": "/assets/images/argentine-tegu-health-issues.jpg",
     "imageAlt": "Large black and white Argentine tegu being examined by a reptile veterinarian outside its custom enclosure",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-24",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -2906,7 +2911,7 @@
       },
       {
         "q": "What's the underlying pattern behind most Argentine tegu health issues?",
-        "a": "Weak UVB and calcium cause MBD, poor temperature or humidity control causes respiratory infection, and keeping a juvenile feeding schedule into adulthood causes obesity. Getting a large scale setup right and adjusting diet as the tegu matures matter more here than with almost any smaller lizard."
+        "a": "Weak UVB and calcium cause MBD, poor temperature or humidity control causes respiratory infection, and keeping a juvenile feeding schedule into adulthood causes obesity. The adult schedule is every third day past three years of age, against daily for a young tegu. Getting a large scale setup right and adjusting diet as the tegu matures matter more here than with almost any smaller lizard."
       }
     ],
     "relatedProducts": [],
@@ -2914,8 +2919,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 2,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -2943,7 +2948,7 @@
     "image": "/assets/guides/argentine-tegu-legal.jpg",
     "imageAlt": "Argentine black and white tegu in Florida habitat",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-14",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -2961,7 +2966,7 @@
       },
       {
         "q": "Are tegus restricted anywhere else in the US?",
-        "a": "Tegus aren't listed as federally injurious wildlife, so there's no nationwide ban. This guide focuses on Florida's documented, verified restriction specifically; always check your own state's wildlife or natural resources agency directly, since state exotic-pet rules change and a handful of states restrict nonnative reptiles generally."
+        "a": "Yes. Georgia, Alabama, Louisiana, Hawaii, DC and New York City ban a pet tegu. New Mexico wants an import permit, New Jersey a permit under a closed-list code, and Minnesota allows one only from a permitted breeder. Alabama bans at genus level, so a Colombian tegu is caught too."
       },
       {
         "q": "Can breeders still produce tegus for sale in Florida?",
@@ -3007,7 +3012,7 @@
     "image": "/assets/images/argentine-tegu-tank-setup.jpg",
     "imageAlt": "Large black and white Argentine tegu in a spacious custom enclosure with deep substrate, basking lights, and UVB lighting",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-24",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -3047,8 +3052,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 2,
+    "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -5485,12 +5490,12 @@
       "Care Tips",
       "Aquarium Care"
     ],
-    "readTime": 5,
+    "readTime": 7,
     "difficulty": "Beginner",
     "image": "/assets/images/betta-fish-health-issues.jpg",
     "imageAlt": "Betta fish with frayed fins in a hospital tank during treatment",
     "emoji": "🐠",
-    "lastReviewed": "2026-07-14",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -5508,7 +5513,7 @@
       },
       {
         "q": "What should I do before reaching for medication?",
-        "a": "Test and correct water quality and temperature first. A heated, filtered tank on a consistent water-change schedule is what makes a huge share of betta illness resolve or never start. Aquatic vets exist for serious or unclear cases, but they're the exception rather than the norm."
+        "a": "Test and correct water quality and temperature first. A heated, filtered tank on a consistent water-change schedule is what makes a huge share of betta illness resolve or never start. Most cases never need an aquatic vet, though one is worth finding for a serious or unclear illness."
       }
     ],
     "relatedProducts": [
@@ -5520,8 +5525,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
-    "headingCount": 10,
+    "sourceCount": 8,
+    "headingCount": 13,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -8418,7 +8423,7 @@
     "image": "/assets/images/bristlenose-pleco-feeding.jpg",
     "imageAlt": "A bristlenose pleco grazing on a sinking algae wafer near a piece of driftwood",
     "emoji": "🐟",
-    "lastReviewed": "2026-09-14",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -8605,7 +8610,7 @@
     "image": "/assets/images/bristlenose-pleco-tank-setup.jpg",
     "imageAlt": "A bristlenose pleco tank with driftwood, caves, and smooth substrate",
     "emoji": "🐟",
-    "lastReviewed": "2026-09-14",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -9280,7 +9285,7 @@
     "image": "/assets/images/california-kingsnake-cost.jpg",
     "imageAlt": "California kingsnake with banded pattern coiled on aspen substrate",
     "emoji": "🐍",
-    "lastReviewed": "2026-07-25",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -9294,7 +9299,7 @@
       },
       {
         "q": "What are the ongoing monthly costs?",
-        "a": "Roughly $15 to $30 a month. That is one appropriately sized rodent a week, substrate, and modest electricity. Few reptiles are cheaper to feed."
+        "a": "Roughly $15 to $30 a month. Feeding an adult runs to one rodent every 10 to 14 days, so the food line stays tiny; substrate and electricity account for most of the rest."
       },
       {
         "q": "How much does vet care cost for a California kingsnake?",
@@ -9355,7 +9360,7 @@
     "faqs": [
       {
         "q": "Is there research on kingsnake enrichment?",
-        "a": "No. Nothing has been published on Lampropeltis californiae. The closest evidence is the corn snake work, which is the same family, and the ratsnake enrichment study, which is closer still in the older taxonomy."
+        "a": "No. Nothing has been published on Lampropeltis californiae. The closest evidence is the corn snake work, which is the same family, plus an enrichment study on ratsnakes, the genus corn snakes themselves sat in under the older taxonomy."
       },
       {
         "q": "What does the corn snake research show?",
@@ -9545,21 +9550,25 @@
     "image": "/assets/images/california-kingsnake-tank-setup.jpg",
     "imageAlt": "California kingsnake with banded pattern coiled on aspen substrate",
     "emoji": "🐍",
-    "lastReviewed": "2026-07-25",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "What size enclosure does an adult California kingsnake need?",
-        "a": "Hatchlings and young snakes do fine in a 20-gallon; the ideal adult enclosure is 48 by 24 by 24 inches. As a rule, length should run at least two-thirds of the snake's body length, since these are active snakes that use the space."
+        "a": "Hatchlings and young snakes do fine in a 20-gallon; the ideal adult enclosure is 48 by 24 by 24 inches. Give an adult an enclosure at least as long as the snake itself, since these are active snakes that use the space."
       },
       {
         "q": "What temperature does a California kingsnake enclosure need?",
-        "a": "Warm side 85 to 90°F, cool side 70 to 80°F. Get there with an under-tank heat pad, an overhead source, or both, always on a thermostat."
+        "a": "Warm side 85 to 88°F, cool side 72 to 78°F. Get there with an under-tank heat pad, an overhead source, or both, always on a thermostat."
       },
       {
         "q": "What humidity does a California kingsnake need?",
         "a": "Low, 40 to 60%. Good ventilation and a water bowl that isn't overfilled hold that range on their own."
+      },
+      {
+        "q": "How often does a California kingsnake eat?",
+        "a": "Hatchlings and juveniles every 5 to 7 days, adults every 10 to 14 days, on frozen/thawed rodents. Size the prey to roughly the width of the snake at its thickest point."
       },
       {
         "q": "What substrate is best for a California kingsnake?",
@@ -9584,8 +9593,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 3,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -9594,7 +9603,7 @@
     "path": "/content/guides/canary-cost-guide.mdx",
     "slug": "canary-cost-guide",
     "title": "How Much Does a Canary Really Cost?",
-    "seoTitle": "Canary Price: $25 to $500, Plus $200 to $400 Setup",
+    "seoTitle": "Canary Price: $25 to $500, Plus $150 to $275 Setup",
     "excerpt": "Canaries are one of the more affordable pet birds to buy, but the cost scales up meaningfully once you get into specialized song and show breeds, and the cost decision here isn't about money at all.",
     "date": "2026-07-26",
     "category": "Birds",
@@ -9624,7 +9633,7 @@
       },
       {
         "q": "What does a full canary setup cost upfront?",
-        "a": "Roughly $200 to $400, covering a wide flight cage, natural wood perches of varied diameter, a cuttlebone and basic supplements, and a shallow bird bath. A quality flight cage alone runs $120 to $220."
+        "a": "Roughly $150 to $275, covering a wide flight cage, natural wood perches of varied diameter, a cuttlebone and basic supplements, and a shallow bird bath. A quality flight cage alone runs $120 to $220."
       },
       {
         "q": "What are the ongoing monthly costs for a canary?",
@@ -9636,7 +9645,7 @@
       },
       {
         "q": "How long do canaries live?",
-        "a": "10 to 15 years with good care, sometimes cited at 8 to 12 instead. Long-term either way, for a bird often bought on impulse for its song."
+        "a": "Typically 6 to 12 years, and up to 15 has been reported. Long-term either way, for a bird often bought on impulse for its song."
       },
       {
         "q": "Should I buy a male or female canary?",
@@ -9653,8 +9662,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 1,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -9917,8 +9926,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 7,
+    "sourceCount": 2,
+    "headingCount": 10,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -10002,7 +10011,7 @@
     "image": "/assets/images/cardinal-tetra-cost.jpg",
     "imageAlt": "A school of cardinal tetras swimming together in a planted freshwater aquarium",
     "emoji": "🐠",
-    "lastReviewed": "2026-09-05",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -10024,7 +10033,7 @@
       },
       {
         "q": "How long do cardinal tetras live, and how does that affect budgeting?",
-        "a": "Up to five years in captivity under good, stable conditions, according to Practical Fishkeeping. Budget for the equipment that keeps water stable over that whole span, not just the initial setup."
+        "a": "About five years in captivity under good, stable conditions, and individuals may reach ten. Budget for the equipment that keeps water stable over that whole span, not just the initial setup."
       }
     ],
     "relatedProducts": [
@@ -10041,7 +10050,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
+    "sourceCount": 6,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -10262,7 +10271,7 @@
     "image": "/assets/images/cardinal-tetra-health-issues.jpg",
     "imageAlt": "Close-up of a healthy, brightly colored cardinal tetra in a well-maintained planted aquarium",
     "emoji": "🐠",
-    "lastReviewed": "2026-09-08",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -10276,7 +10285,7 @@
       },
       {
         "q": "What is ich and how do you treat it in cardinal tetras?",
-        "a": "Small white spots resembling salt grains, caused by the parasite Ichthyophthirius multifiliis, along with flashing against decor, rapid breathing, and lethargy, according to VCA Animal Hospitals. It's treatable: a gradual temperature increase plus a commercial ich medication, with daily partial water changes during treatment."
+        "a": "Small white spots resembling salt grains, caused by the parasite Ichthyophthirius multifiliis, along with flashing against decor, rapid breathing, and lethargy, according to VCA Animal Hospitals. It's treatable, and the protocol runs on medication and daily partial water changes, not on heat: raising the temperature is widely repeated advice the protocol does not call for, and this species hits 50% mortality near 33.7°C."
       },
       {
         "q": "What is fin rot and how serious is it?",
@@ -10327,7 +10336,7 @@
     "image": "/assets/images/cardinal-tetra-tank-setup.jpg",
     "imageAlt": "A planted cardinal tetra aquarium with dim lighting, driftwood, and tannin-stained blackwater",
     "emoji": "🐠",
-    "lastReviewed": "2026-09-09",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -10337,7 +10346,7 @@
       },
       {
         "q": "What temperature do cardinal tetras need?",
-        "a": "73 to 84°F is the range Seriously Fish gives for this species, warmer than neon tetra's comfort ceiling of roughly 77 to 81°F, so cardinal tetra is the better fit if you're stocking a warmer community tank."
+        "a": "73 to 84°F is the range Seriously Fish gives for this species, and Practical Fishkeeping puts general care closer to 77 to 82°F. It notes cardinal tetra tolerates water reaching 86°F, against roughly 77°F for neon tetra, so cardinal is the better fit for a warmer community tank."
       },
       {
         "q": "What water chemistry do cardinal tetras need?",
@@ -11218,15 +11227,15 @@
     "faqs": [
       {
         "q": "What size tank do cherry shrimp need?",
-        "a": "Aquariadise cites 5 gallons as the practical minimum. Shrimp can technically survive in a 2-gallon nano tank, per Aquarium Co-Op, which recommends 10 gallons or more for a stable breeding colony, since more water absorbs the small parameter shifts a growing colony causes."
+        "a": "5 gallons is the commonly cited practical minimum. Shrimp can technically survive in a 2-gallon nano tank, but 10 gallons or more suits a stable breeding colony, since more water absorbs the small parameter shifts a growing colony causes."
       },
       {
         "q": "What GH and KH do cherry shrimp need?",
-        "a": "Aquarium Co-Op puts the floor at GH 6 degrees (about 110 ppm) and KH 2 degrees (about 40 ppm). Shrimp-focused sources tighten it to roughly 6 to 8 dGH and 2 to 4 dKH, the range that most reliably supports a full, hard molt rather than a soft or failed one."
+        "a": "The floor is GH 6 degrees (about 110 ppm) and KH 2 degrees (about 40 ppm). The tighter target is roughly 6 to 8 dGH and 2 to 4 dKH, the range that most reliably supports a full, hard molt rather than a soft or failed one."
       },
       {
         "q": "What temperature do cherry shrimp need, and do they need a heater?",
-        "a": "Aquarium Co-Op lists a comfortable range of 60 to 82°F, with 72 to 76°F as optimal, and Aquariadise puts the outer tolerated range at 57 to 86°F. That covers most home room temperatures without a heater, though a heater is worth adding if your room regularly dips below the high 50s or you want a stable, warmer setpoint."
+        "a": "A comfortable range of 60 to 82°F, with 72 to 76°F optimal, and an outer tolerated range of 57 to 86°F. That covers most home room temperatures without a heater, though a heater is worth adding if your room regularly dips below the high 50s or you want a stable, warmer setpoint."
       },
       {
         "q": "What kind of filter is safe for a cherry shrimp tank?",
@@ -13308,7 +13317,7 @@
     "faqs": [
       {
         "q": "What size cage does a green cheek conure need?",
-        "a": "24x24x30 inches is the minimum most sources list for one adult, and it is a floor rather than a target: go to 30 to 36 inches or more in multiple dimensions where you can. Bar spacing tops out at 1/2 to 5/8 inch, to prevent head entrapment or escape."
+        "a": "24x24x30 inches is the common minimum for one adult, and it is a floor rather than a target: go to 30 to 36 inches or more in multiple dimensions where you can. Bar spacing tops out at 1/2 to 5/8 inch, to prevent head entrapment or escape."
       },
       {
         "q": "Does a green cheek conure need UV lighting?",
@@ -14069,7 +14078,7 @@
     "image": "/assets/images/corydoras-catfish-feeding.jpg",
     "imageAlt": "A school of corydoras catfish feeding on sinking wafers at the bottom of the tank",
     "emoji": "🐠",
-    "lastReviewed": "2026-08-10",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -14199,13 +14208,13 @@
     "image": "/assets/images/corydoras-catfish-health-issues.jpg",
     "imageAlt": "Close-up of a corydoras catfish foraging over sand substrate, showing its barbels",
     "emoji": "🐠",
-    "lastReviewed": "2026-07-27",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "What is barbel erosion in corydoras catfish?",
-        "a": "The barbels, those whisker-like feelers around the mouth, wear down: shortened, red, or gone entirely. It takes two things together, sharp substrate doing the physical damage and elevated nitrates letting bacterial infection settle into the wound. It's the signature cory health issue."
+        "a": "The barbels, those whisker-like feelers around the mouth, wear down: shortened, red, or gone entirely. It's the signature cory health issue. Sharp substrate is the usual explanation, and eroding barbels may owe as much to poor water quality as to grain shape, so a dirty substrate is what to manage first."
       },
       {
         "q": "Can barbel erosion be treated at home?",
@@ -14225,7 +14234,7 @@
       },
       {
         "q": "How can I prevent most corydoras catfish health issues?",
-        "a": "Substrate and water quality. Sharp substrate plus elevated nitrates is what drives barbel erosion, the most defining health risk, and poor water quality plus general stress is what drives red blotch disease and fin rot. Get both right and nearly everything here is prevented."
+        "a": "Substrate and water quality. A clean, soft bottom and low nitrates are what keep barbel erosion away, the most defining health risk, and poor water quality plus general stress is what drives red blotch disease and fin rot. Get both right and nearly everything here is prevented."
       }
     ],
     "relatedProducts": [
@@ -14235,8 +14244,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 1,
+    "headingCount": 8,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -14944,7 +14953,7 @@
     "path": "/content/guides/degu-cost-guide.mdx",
     "slug": "degu-cost-guide",
     "title": "How Much Does Degu Ownership Really Cost?",
-    "seoTitle": "Degu Price: $10 to $50, Plus $100 to $300 Setup",
+    "seoTitle": "Degu Price: $10 to $50, Plus $375 to $520 Setup",
     "excerpt": "Degus are affordable individually, and the budgeting point with this species is that 'individually' isn't how you should be thinking about the purchase at all.",
     "date": "2026-08-08",
     "category": "Small & Exotic Pets",
@@ -14964,7 +14973,7 @@
     "image": "/assets/images/degu-cost.jpg",
     "imageAlt": "Two degus sitting together beside a small stack of coins",
     "emoji": "🐿️",
-    "lastReviewed": "2026-08-08",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -14974,7 +14983,7 @@
       },
       {
         "q": "What does a full degu setup cost upfront?",
-        "a": "Roughly $100 to $300 to house a pair properly. Most of that is the large multi-level cage, with a solid exercise wheel, bedding, hides, and a sand or dust bath setup behind it."
+        "a": "Roughly $375 to $520 of equipment to house a pair properly, before the animals. Most of that is the large multi-level cage, with a solid exercise wheel, bedding, hides, and a sand bath setup behind it."
       },
       {
         "q": "What are the ongoing monthly costs for a pair of degus?",
@@ -14986,7 +14995,7 @@
       },
       {
         "q": "How long do degus live, and how does that affect the cost math?",
-        "a": "5 to 8 years is typical, and some degus reach 10 to 13. That's longer than many small rodents, the hamster included, so treat a pair as a multi-year and possibly decade-long commitment."
+        "a": "5 to 8 years in captivity, against a wild animal that seldom passes 2 years. That's longer than many small rodents, the hamster included, so treat a pair as a multi-year commitment."
       }
     ],
     "relatedProducts": [
@@ -15003,7 +15012,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 3,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -15103,7 +15112,7 @@
     "image": "/assets/images/degu-feeding.jpg",
     "imageAlt": "Degu eating timothy hay next to a small dish of sugar-free pellets",
     "emoji": "🐿️",
-    "lastReviewed": "2026-08-10",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -15140,7 +15149,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 5,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 512,
@@ -15277,7 +15286,7 @@
     "image": "/assets/images/degu-health-issues.jpg",
     "imageAlt": "Degu being examined by an exotic veterinarian",
     "emoji": "🐿️",
-    "lastReviewed": "2026-08-08",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -15312,8 +15321,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
-    "headingCount": 9,
+    "sourceCount": 4,
+    "headingCount": 10,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -15397,7 +15406,7 @@
     "image": "/assets/images/degu-tank-setup.jpg",
     "imageAlt": "Tall multi-level degu enclosure with ramps, a solid wheel, and a wooden nest box",
     "emoji": "🐿️",
-    "lastReviewed": "2026-08-08",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -15435,7 +15444,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 3,
     "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -15466,7 +15475,7 @@
     "image": "/assets/images/degu-vs-chinchilla.jpg",
     "imageAlt": "A degu and a chinchilla side by side for comparison",
     "emoji": "🐹",
-    "lastReviewed": "2026-09-02",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -15484,7 +15493,7 @@
       },
       {
         "q": "Which lives longer, a degu or a chinchilla?",
-        "a": "Chinchillas, by a wide margin. A degu typically lives 5 to 9 years, though some reach the low teens under ideal care. A chinchilla commonly lives 10 to 20 years, roughly double, and is one of the longest-lived rodents in the pet trade."
+        "a": "Chinchillas, by a wide margin. A degu typically gets 5 to 8 years in captivity and a chinchilla 10 to 20, roughly double, which makes the chinchilla one of the longest-lived rodents in the pet trade."
       },
       {
         "q": "Which is more social, a degu or a chinchilla?",
@@ -15668,7 +15677,7 @@
     "image": "/assets/images/discus-feeding.jpg",
     "imageAlt": "Discus fish feeding on frozen bloodworms near the middle of the water column",
     "emoji": "🐠",
-    "lastReviewed": "2026-09-06",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -16178,7 +16187,7 @@
     "image": "/assets/images/emperor-scorpion-cost.jpg",
     "imageAlt": "Emperor scorpion beside its enclosure setup and feeder insects",
     "emoji": "🦂",
-    "lastReviewed": "2026-07-31",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -16200,7 +16209,7 @@
       },
       {
         "q": "How long do emperor scorpions live, and how does that affect budgeting?",
-        "a": "Animal Diversity Web, run by the University of Michigan Museum of Zoology, gives 5 to 8 years in captivity, and the University of Kentucky's Department of Entomology lists a wider 4 to 9. That's a multi-year commitment, well short of the decades many reptiles, birds, or even koi ask for."
+        "a": "5 to 8 years in captivity is the usual figure, with the full reported range running 4 to 9. That's a multi-year commitment, well short of the decades many reptiles, birds, or even koi ask for."
       }
     ],
     "relatedProducts": [
@@ -16555,11 +16564,11 @@
       },
       {
         "q": "What humidity and temperature does an emperor scorpion need?",
-        "a": "Humidity first: 70 to 90%, with many keepers settling near 75 to 80%. Temperature is more forgiving, 75 to 85°F ambient, and some sources stretch that to 70 to 90°F provided there is a gradient."
+        "a": "Humidity first: 70 to 90%, with 75 to 80% the practical target. Temperature is more forgiving, 75 to 85°F ambient, with 70 to 90°F as the outer limits provided there is a gradient."
       },
       {
         "q": "How deep should the substrate be?",
-        "a": "5 to 6 inches minimum, and some keepers go deeper, because the species uses that depth to burrow rather than decorate. Coco fiber, peat, soil-based mixes, or commercial products all work, kept damp but well-aerated."
+        "a": "5 to 6 inches minimum, and deeper is better, because the species uses that depth to burrow rather than decorate. Coco fiber, peat, soil-based mixes, or commercial products all work, kept damp but well-aerated."
       },
       {
         "q": "Does an emperor scorpion need UVB lighting?",
@@ -17377,7 +17386,7 @@
     "image": "/assets/images/fire-bellied-toad-cost.jpg",
     "imageAlt": "Oriental fire-bellied toad floating at the water surface of a paludarium",
     "emoji": "🐸",
-    "lastReviewed": "2026-07-27",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -17399,7 +17408,7 @@
       },
       {
         "q": "How long do fire-bellied toads live?",
-        "a": "The commonly cited figure is 10 to 15 years. Some sources widen that to 10 to 20, and dedicated keepers occasionally report animals reaching 20 or more with excellent care. For a species often bought on impulse at a low price, that is a long-term amphibian commitment."
+        "a": "Plan around 10 to 15 years. The documented ceiling is higher, with 20 years in human care recorded and a maximum on record of 30. For a species often bought on impulse at a low price, that is a long-term amphibian commitment."
       },
       {
         "q": "Are fire-bellied toads dangerous to handle, and does that affect the buying decision?",
@@ -17416,8 +17425,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 7,
+    "sourceCount": 3,
+    "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -17514,7 +17523,7 @@
     "image": "/assets/images/fire-bellied-toad-handling.jpg",
     "imageAlt": "Oriental fire-bellied toad displaying its red-orange warning belly at the water's edge of a paludarium",
     "emoji": "🐸",
-    "lastReviewed": "2026-09-08",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -17524,7 +17533,7 @@
       },
       {
         "q": "What toxin does a fire-bellied toad have?",
-        "a": "Defensive peptides, secreted from glands in the skin and characterized in published research. It's a confirmed feature of the animal's biology, not folklore."
+        "a": "Bombinins, a family of defensive peptides secreted from glands in the skin, plus bombesin, a peptide first found in a European relative and named after the genus. A confirmed feature of the animal's biology, not folklore."
       },
       {
         "q": "What precautions matter when handling one?",
@@ -17548,7 +17557,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 3,
     "headingCount": 8,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -17642,7 +17651,7 @@
     "image": "/assets/images/fire-bellied-toad-tank-setup.jpg",
     "imageAlt": "Fire-bellied toad paludarium enclosure with a land section and a filtered water section",
     "emoji": "🐸",
-    "lastReviewed": "2026-07-27",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -17652,11 +17661,11 @@
       },
       {
         "q": "What does the semi-aquatic layout look like?",
-        "a": "Roughly half land, half water, a true paludarium, or an all-water base with floating cork bark or flat rocks as land access points. The water needs to be several inches deep so the toads can swim, with easy access in and out."
+        "a": "Roughly half land, half water, a true paludarium, or an all-water base with floating cork bark or flat rocks as land access points. The water needs to be deep enough for the toads to swim, sloping to about 3 inches, with easy access in and out."
       },
       {
         "q": "What temperature and humidity does a fire-bellied toad need?",
-        "a": "65 to 75°F, some sources allow up to about 78°F, and most rooms at normal temperature need no supplemental heat at all. Humidity stays high and is largely self-maintaining given the water section already built into the enclosure."
+        "a": "75 to 78°F through the day, dropping at night, with 65°F the floor and 82°F the hard ceiling, and most rooms at normal temperature need no supplemental heat at all. Humidity stays high and is largely self-maintaining given the water section already built into the enclosure."
       },
       {
         "q": "What substrate is safe for a fire-bellied toad tank?",
@@ -17681,8 +17690,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 8,
+    "sourceCount": 3,
+    "headingCount": 11,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -17711,7 +17720,7 @@
     "image": "/assets/images/fire-skink-cost.jpg",
     "imageAlt": "Fire skink showing its red, black, and gold banding beside enclosure setup materials",
     "emoji": "🦎",
-    "lastReviewed": "2026-09-07",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -17729,7 +17738,7 @@
       },
       {
         "q": "Should I pay more for a captive-bred fire skink instead of wild-caught?",
-        "a": "Yes. The two cost about the same, but a wild-caught animal tends to arrive more stressed, more parasite-prone, and slower to settle. Verified captive-bred stock is the better value once vet costs and taming time are counted."
+        "a": "Yes. A wild-caught animal is the cheaper of the two, but it tends to arrive more stressed, more parasite-prone, and slower to settle. Verified captive-bred stock is the better value once vet costs and taming time are counted."
       },
       {
         "q": "How long do fire skinks live?",
@@ -17842,7 +17851,7 @@
     "image": "/assets/images/fire-skink-handling.jpg",
     "imageAlt": "Fire skink held low over a soft surface during a gentle handling session",
     "emoji": "🦎",
-    "lastReviewed": "2026-08-11",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -17962,7 +17971,7 @@
     "image": "/assets/images/fire-skink-tank-setup.jpg",
     "imageAlt": "Fire skink enclosure with deep moist substrate, leaf litter, and a humid hide",
     "emoji": "🦎",
-    "lastReviewed": "2026-08-11",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -17997,8 +18006,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
-    "headingCount": 8,
+    "sourceCount": 3,
+    "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1200,
     "imageHeight": 896
@@ -18148,7 +18157,7 @@
     "image": "/assets/images/flying-squirrel-cost.jpg",
     "imageAlt": "Flying squirrel sitting next to its cage and everyday supplies",
     "emoji": "🐿️",
-    "lastReviewed": "2026-09-05",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -18284,7 +18293,7 @@
     "image": "/assets/images/flying-squirrel-feeding.jpg",
     "imageAlt": "A flying squirrel eating a calcium-dusted mealworm while gripping a branch",
     "emoji": "🐿️",
-    "lastReviewed": "2026-09-06",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -18294,7 +18303,7 @@
       },
       {
         "q": "How often should you feed a flying squirrel, and how much?",
-        "a": "Offer fresh food in the evening, since flying squirrels are nocturnal and most active from dusk through the night. Keep the rodent-block staple available, add produce and protein daily to every-other-day, and treat nuts, seeds, and dried fruit as a small, occasional add-on rather than a daily default."
+        "a": "Offer fresh food in the evening, since flying squirrels are nocturnal and most active from dusk through the night. Keep the rodent-block staple available, add produce daily and protein several times a week, and treat nuts, seeds, and dried fruit as a small, occasional add-on rather than a daily default."
       },
       {
         "q": "Why is calcium supplementation so important for flying squirrels?",
@@ -18317,7 +18326,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
+    "sourceCount": 6,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
@@ -18353,7 +18362,7 @@
     "faqs": [
       {
         "q": "How do you bond with a pet flying squirrel?",
-        "a": "Through a dedicated bonding pouch, carried against your body for several hours a day, giving the squirrel time to get used to your scent and movement before any real hands-on handling starts. Most sources describe a bonding process taking roughly 2 to 8 weeks depending on how consistently you spend time with it."
+        "a": "Through a dedicated bonding pouch, carried against your body for several hours a day, giving the squirrel time to get used to your scent and movement before any real hands-on handling starts. The bonding process takes roughly 2 to 8 weeks depending on how consistently you spend time with it."
       },
       {
         "q": "Why does the age you get a flying squirrel matter so much?",
@@ -18521,13 +18530,13 @@
     "image": "/assets/images/flying-squirrel-tank-setup.jpg",
     "imageAlt": "Flying squirrel cage with tall vertical climbing space, sleeping pouches, and an exercise wheel",
     "emoji": "🐿️",
-    "lastReviewed": "2026-09-09",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "What size cage does a flying squirrel need?",
-        "a": "A minimum of roughly 24x24x36 inches, though some sources put the minimum footprint closer to 30x18x36 inches. Either way, prioritize height over floor space, this is a climbing, gliding animal, and bigger than the stated minimum is always better, especially for a pair or small group."
+        "a": "A minimum of roughly 24x24x36 inches, or 30x18x36. Either way, prioritize height over floor space, this is a climbing, gliding animal, and bigger than the stated minimum is always better, especially for a pair or small group."
       },
       {
         "q": "How much bar spacing is safe for a flying squirrel cage?",
@@ -18878,7 +18887,7 @@
     "image": "/assets/images/gargoyle-gecko-cost.jpg",
     "imageAlt": "Gargoyle gecko perched on cork bark next to its price breakdown",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-24",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -18900,7 +18909,7 @@
       },
       {
         "q": "How long do gargoyle geckos live, and how does that affect budgeting?",
-        "a": "15 to 20 years is typical, with some keepers reporting animals still breeding well past 20. Add a UVB bulb replacement every 6 to 12 months for the life of the animal. This isn't a short-term pet, budget for decades, not just the first year."
+        "a": "15 to 20 years is typical, with some keepers reporting animals still breeding well past 20. Budget a UVB bulb replacement annually, which is the conservative end of the 6-to-12-month window bulbs are rated for. This isn't a short-term pet, budget for decades, not just the first year."
       }
     ],
     "relatedProducts": [
@@ -19140,7 +19149,7 @@
     "image": "/assets/images/gargoyle-gecko-health-issues.jpg",
     "imageAlt": "Gargoyle gecko being examined for signs of stuck shed near its toes",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-24",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -19184,9 +19193,9 @@
   {
     "path": "/content/guides/gargoyle-gecko-tank-setup-guide.mdx",
     "slug": "gargoyle-gecko-tank-setup-guide",
-    "title": "Gargoyle Gecko Tank Setup: A Cool-Climate Species That Doesn't Want Your Heat Lamp",
+    "title": "Gargoyle Gecko Tank Setup: A Low Ceiling, Not No Heat at All",
     "seoTitle": "Gargoyle Gecko Tank Setup Guide",
-    "excerpt": "Most reptile care is about adding warmth. Gargoyle gecko care is mostly about not overdoing it, this is a cool-climate species that does fine at room temperature.",
+    "excerpt": "Gargoyle geckos run cooler than most kept reptiles, which gets repeated as a claim that they need no heat at all. That is a misconception: the ceiling is low, and there is still a gradient.",
     "date": "2026-07-24",
     "category": "Reptiles",
     "categories": [
@@ -19205,7 +19214,7 @@
     "image": "/assets/images/gargoyle-gecko-tank-setup.jpg",
     "imageAlt": "Gargoyle gecko enclosure with heavy branch and cork bark clutter",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-24",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -19215,7 +19224,7 @@
       },
       {
         "q": "Does a gargoyle gecko need a heat lamp?",
-        "a": "Usually not. Comfortable daytime temperatures are 72 to 78°F, dropping into the low 70s or even mid-60s at night without issue. Most homes need no dedicated heat source at all, sustained temperatures above about 82°F cause stress. Only add a low-wattage bulb or ceramic heat emitter on a thermostat if your home consistently runs below about 68°F."
+        "a": "Usually yes, and the belief that it doesn't is the most repeated mistake about this species. A low-wattage bulb on a thermostat gives a cool end around 70 to 75°F and a basking spot around 82 to 85°F. The ceiling is what's unusual: air above 86°F is dangerous."
       },
       {
         "q": "How should I manage humidity for a gargoyle gecko?",
@@ -19710,7 +19719,7 @@
       },
       {
         "q": "What temperature and humidity does a garter snake enclosure need?",
-        "a": "A basking area around 85 to 90°F (some sources go up to 95°F for digestion), a cool side around 70 to 75°F, and ambient humidity of 30 to 60%, raised slightly during shedding. Whatever heat source you use, an under-tank heater or an overhead basking bulb, it needs to run through a thermostat."
+        "a": "A basking area around 85 to 90°F, up to 95°F for digestion, a cool side around 70 to 75°F, and ambient humidity of 30 to 60%, raised slightly during shedding. Whatever heat source you use, an under-tank heater or an overhead basking bulb, it needs to run through a thermostat."
       },
       {
         "q": "Does a garter snake need a swimmable water feature?",
@@ -19767,7 +19776,7 @@
     "image": "/assets/images/gerbil-cost.jpg",
     "imageAlt": "Two gerbils sitting together beside a small stack of coins",
     "emoji": "🐹",
-    "lastReviewed": "2026-08-09",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -19781,7 +19790,7 @@
       },
       {
         "q": "What are the ongoing monthly costs for gerbils?",
-        "a": "Roughly $25 to $40 a month, almost all of it food and bedding. Spot-cleaning instead of full bedding changes stretches that further, which makes this a cheap species to run."
+        "a": "Roughly $10 to $20 a month once the annual supply costs are spread out, almost all of it food and bedding. Spot-cleaning instead of full bedding changes stretches that further, which makes this a cheap species to run."
       },
       {
         "q": "How much does gerbil vet care cost?",
@@ -19789,7 +19798,7 @@
       },
       {
         "q": "How long do gerbils live?",
-        "a": "2 to 5 years, most often 3 to 4. Shorter than a degu, but a gerbil bought as a starter pet is still a multi-year commitment."
+        "a": "2 to 3 years. Shorter than a degu, but a gerbil bought as a starter pet is still a multi-year commitment."
       }
     ],
     "relatedProducts": [
@@ -19905,17 +19914,17 @@
     "image": "/assets/images/gerbil-feeding.jpg",
     "imageAlt": "A gerbil eating a pelleted food nugget while holding it in its front paws",
     "emoji": "🐹",
-    "lastReviewed": "2026-08-15",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "What is the best staple food for a gerbil?",
-        "a": "The best base is a uniform pelleted diet or lab block made for gerbils, or a low-fat rodent formula, since a gerbil can't pick favorites out of it. The American Gerbil Society sets a minimum of 14% protein, and many bags labeled 'Hamster and Gerbil Food' fall short of that."
+        "a": "The best base is a uniform pelleted diet or lab block made for gerbils, since a gerbil can't pick favorites out of it. Aim for 18 to 20% protein and keep fat at or under about 4%. The American Gerbil Society's 14% is a floor rather than a target, and many bags labeled 'Hamster and Gerbil Food' miss even that."
       },
       {
         "q": "How much should I feed a gerbil each day?",
-        "a": "Roughly 5 to 10 grams, about a tablespoon, of pellets per adult gerbil per day, fed once daily. Offer fresh vegetables every other day or a few times a week, and treat fruit as an occasional weekly indulgence given the sugar content."
+        "a": "Roughly 5 to 8 grams, about a tablespoon, of pellets per adult gerbil per day, fed once daily. Offer fresh vegetables every other day or a few times a week, and treat fruit as an occasional weekly indulgence given the sugar content."
       },
       {
         "q": "Why are seed mixes bad for gerbils?",
@@ -19941,7 +19950,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1376,
@@ -20027,7 +20036,7 @@
     "image": "/assets/images/gerbil-health-issues.jpg",
     "imageAlt": "Gerbil being examined by an exotic veterinarian",
     "emoji": "🐹",
-    "lastReviewed": "2026-08-09",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -20041,11 +20050,11 @@
       },
       {
         "q": "What happens if a gerbil loses part of its tail?",
-        "a": "Tail slip. From improper handling, or occasionally a fight between cage mates. The stump usually heals on its own, though a full tail loss is worth a vet check for any ongoing complication."
+        "a": "Tail slip, or degloving. From improper handling, or occasionally a fight between cage mates. The exposed tissue dies, so the bare portion needs amputating as soon as possible to head off infection. This is a vet visit, not a wait-and-see."
       },
       {
         "q": "What causes a gerbil's nose to look red or bloody?",
-        "a": "Likely 'red nose,' a nasal porphyrin discharge sometimes mistaken for blood, caused by humidity running too high, poor ventilation, overcrowding, or general stress. Correct the environment first, and see a vet for any infected sore or suspected mites."
+        "a": "Likely 'red nose,' a nasal porphyrin discharge sometimes mistaken for blood, caused by humidity running too high, poor ventilation, overcrowding, or general stress. Correct the environment first, getting humidity below 40%, and see a vet for any infected sore or suspected mites."
       }
     ],
     "relatedProducts": [
@@ -20056,8 +20065,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
-    "headingCount": 9,
+    "sourceCount": 5,
+    "headingCount": 11,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -20138,7 +20147,7 @@
     "image": "/assets/images/gerbil-tank-setup.jpg",
     "imageAlt": "Glass gerbil tank with deep bedding showing tunnel systems, a solid wheel, and a mesh lid",
     "emoji": "🐹",
-    "lastReviewed": "2026-08-09",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -20156,7 +20165,7 @@
       },
       {
         "q": "What humidity level do gerbils need?",
-        "a": "Under about 50%, with good ventilation. This is a species adapted to naturally arid conditions, and excess humidity causes coat matting and skin issues."
+        "a": "Below 40%, with good ventilation. This is a species adapted to naturally arid conditions. Above 50% they develop nasal dermatitis, the sore-nose condition, and 40% is the figure that prevents it rather than the one that triggers it."
       },
       {
         "q": "Should you fully clean out a gerbil tank at every bedding change?",
@@ -20174,7 +20183,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 3,
     "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -20206,7 +20215,7 @@
     "image": "/assets/images/gerbil-vs-guinea-pig.jpg",
     "imageAlt": "A gerbil and a guinea pig side by side for size comparison",
     "emoji": "🐹",
-    "lastReviewed": "2026-09-01",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -20271,7 +20280,7 @@
     "image": "/assets/images/gerbil-vs-hamster.jpg",
     "imageAlt": "A gerbil and a hamster side by side for comparison",
     "emoji": "🐹",
-    "lastReviewed": "2026-09-01",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -20305,7 +20314,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 4,
-    "headingCount": 8,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
     "imageHeight": 675
@@ -20484,7 +20493,7 @@
       },
       {
         "q": "Are ghost shrimp one species?",
-        "a": "No. The name covers several translucent Palaemonetes and similar species sold interchangeably, and a single bag can contain more than one. That is why care advice for them varies so much and why some individuals behave differently from others."
+        "a": "No. The name covers several translucent Palaemon and similar species sold interchangeably, and a single bag can contain more than one. That is why care advice for them varies so much and why some individuals behave differently from others."
       },
       {
         "q": "Are they safe with small fish?",
@@ -20933,7 +20942,7 @@
     "image": "/assets/images/giant-millipede-handling.jpg",
     "imageAlt": "Giant African millipede curled defensively on a keeper's palm above soft substrate",
     "emoji": "🪱",
-    "lastReviewed": "2026-09-08",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -21112,7 +21121,7 @@
     "image": "/assets/images/giant-millipede-tank-setup.jpg",
     "imageAlt": "Giant African millipede burrowing through deep organic leaf litter substrate in its enclosure",
     "emoji": "🪱",
-    "lastReviewed": "2026-07-28",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -21152,8 +21161,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 2,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -21794,7 +21803,7 @@
     "image": "/assets/images/green-anole-cost.jpg",
     "imageAlt": "Green anole perched on a leafy branch inside a tall terrarium",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-28",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -21816,7 +21825,7 @@
       },
       {
         "q": "How long do green anoles live?",
-        "a": "The 3 to 4 years often reported for casually kept anoles reflects common under-care, not the species' potential. ReptiFiles states plainly that with appropriate care this pet can live up to 10 years and possibly longer."
+        "a": "The 3 to 4 years often reported for casually kept anoles reflects common under-care, not the species' potential. With appropriate care one can live up to 10 years and possibly longer."
       },
       {
         "q": "Does the anole's cheap price mean it's cheap to keep well?",
@@ -21887,7 +21896,7 @@
       },
       {
         "q": "Can green anoles live together?",
-        "a": "One male with females can work in a large, heavily planted enclosure. Two males cannot. Males are display animals with a dewlap built for territorial signaling, and putting two in a shared space produces continuous confrontation."
+        "a": "The default is one anole per enclosure, since the standard advice is not to house green anoles together at all. Two males is the version that fails fastest: males are display animals with a dewlap built for territorial signaling, and putting two in a shared space produces continuous confrontation until the loser stops feeding."
       },
       {
         "q": "Do anoles drink from a bowl?",
@@ -21939,7 +21948,7 @@
     "faqs": [
       {
         "q": "How big does a green anole get, and does that affect handling?",
-        "a": "6 to 8 inches, among the smallest reptiles in the pet trade, and considerably more fragile than larger relatives like the bearded dragon or blue-tongued skink. ReptiFiles is direct about it, green anoles generally make better display animals than a pet you take out and handle regularly."
+        "a": "6 to 8 inches, among the smallest reptiles in the pet trade, and considerably more fragile than larger relatives like the bearded dragon or blue-tongued skink. That size is why the standard advice treats one as a display animal rather than a lizard you take out regularly."
       },
       {
         "q": "Is a green anole a chameleon?",
@@ -22116,7 +22125,7 @@
     "image": "/assets/images/green-anole-tank-setup.jpg",
     "imageAlt": "Green anole perched on a leafy branch inside a tall terrarium",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-28",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -22157,8 +22166,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 1,
+    "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -22442,7 +22451,7 @@
     "faqs": [
       {
         "q": "What is the most common health issue in green iguanas?",
-        "a": "Metabolic bone disease. VCA Animal Hospitals describes it as probably the most common medical problem of pet iguanas, and LafeberVet lists lizards among the animal groups where the disease is most commonly seen. Watch for a swollen or rubbery lower jaw, swollen or bowed hind limbs, soft bones, and tremors."
+        "a": "Metabolic bone disease, probably the most common medical problem in pet iguanas and the disease most commonly seen in lizards generally. Watch for a swollen or rubbery lower jaw, swollen or bowed hind limbs, soft bones, and tremors."
       },
       {
         "q": "What causes metabolic bone disease in green iguanas?",
@@ -22557,7 +22566,7 @@
     "faqs": [
       {
         "q": "What size enclosure does an adult green iguana need?",
-        "a": "An adult needs at least 10 feet long, 5 wide, and 6 tall; some vet and husbandry sources say 12 by 6 by 6. Nothing commercial comes that big, so it is a custom walk-in build. A juvenile can start in a 4x2x4 or a 40 to 55 gallon tank, but will outgrow it inside a year."
+        "a": "An adult needs at least 10 feet long, 5 wide, and 6 tall, with 12 by 6 by 6 also recommended. Nothing commercial comes that big, so it is a custom walk-in build. A juvenile can start in a 4x2x4 or a 40 to 55 gallon tank, but will outgrow it inside a year."
       },
       {
         "q": "What temperature does a green iguana enclosure need?",
@@ -22634,7 +22643,7 @@
       },
       {
         "q": "How long do tiger salamanders live?",
-        "a": "12 to 15 years is typical, and a recognized longevity database records a captive maximum of 25 years, rivaling many pet reptiles despite how rarely this species is even seen above ground."
+        "a": "12 to 15 years is typical, and the captive maximum on record is 25 years, rivaling many pet reptiles despite how rarely this species is even seen above ground."
       },
       {
         "q": "Do tiger salamanders look like axolotls?",
@@ -23362,7 +23371,7 @@
     "faqs": [
       {
         "q": "How often should I feed my guppy?",
-        "a": "Adults land somewhere between once and three times a day depending on the source, there's no single agreed number. What every source agrees on is the portion rule, only offer what's fully cleared in about 1 to 2 minutes. Overfeeding, not underfeeding, is the more common real mistake, guppies beg regardless of actual hunger."
+        "a": "Adults land somewhere between once and three times a day. The portion rule is the part that does not vary: only offer what's fully cleared in about 1 to 2 minutes. Overfeeding, not underfeeding, is the more common real mistake, guppies beg regardless of actual hunger."
       },
       {
         "q": "What should guppy fry eat?",
@@ -24249,7 +24258,7 @@
     "image": "/assets/images/hedgehog-cost.jpg",
     "imageAlt": "Hedgehog sitting next to its cage and everyday supplies",
     "emoji": "🦔",
-    "lastReviewed": "2026-07-19",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -24259,7 +24268,7 @@
       },
       {
         "q": "Are hedgehogs legal everywhere?",
-        "a": "No, and this matters more than almost any other factor on this page. They're banned outright in California, Georgia, Hawaii, and Washington D.C. Pennsylvania and Maine restrict ownership under specific conditions, and New Jersey and Wisconsin require a permit. Legality also varies by city within otherwise-legal states, New York City bans them even though the rest of New York State allows ownership."
+        "a": "No, and this matters more than almost any other factor on this page. California, Georgia, Hawaii, Pennsylvania, Washington DC, and New York City are all closed to you, with no permit to apply for. New Jersey has one and you need it. Maine and Wisconsin get listed as permit states online and neither one is."
       },
       {
         "q": "What does a hedgehog setup cost upfront?",
@@ -24387,7 +24396,7 @@
     "image": "/assets/images/hedgehog-feeding.jpg",
     "imageAlt": "Hedgehog eating kibble and a mealworm from a small dish at night",
     "emoji": "🦔",
-    "lastReviewed": "2026-08-02",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -24451,7 +24460,7 @@
     "image": "/assets/images/hedgehog-handling.jpg",
     "imageAlt": "Person gently cupping a hedgehog in two hands during a handling session",
     "emoji": "🦔",
-    "lastReviewed": "2026-07-19",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -24469,7 +24478,7 @@
       },
       {
         "q": "What is quilling, and does it change how my hedgehog behaves?",
-        "a": "Baby quills come out and adult ones come in, somewhere between 2 and 6 months old. Expect more grumpiness and more balling up while it happens. It usually passes within a month."
+        "a": "Baby quills come out and adult ones come in. The nest spines go at about a month old, and a second, heavier episode lands around 4 months. Expect more grumpiness and more balling up while it happens, and expect each episode to pass within a month or so."
       },
       {
         "q": "Are hedgehogs as cuddly as hamsters or guinea pigs?",
@@ -24481,7 +24490,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1,
+    "sourceCount": 2,
     "headingCount": 8,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -24511,7 +24520,7 @@
     "image": "/assets/images/hedgehog-health-issues.jpg",
     "imageAlt": "Hedgehog undergoing a wellness check with an exotic veterinarian",
     "emoji": "🦔",
-    "lastReviewed": "2026-07-19",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -24614,21 +24623,21 @@
     "image": "/assets/images/hedgehog-tank-setup.jpg",
     "imageAlt": "Hedgehog enclosure with solid flooring, a heat emitter, hideout, and exercise wheel",
     "emoji": "🦔",
-    "lastReviewed": "2026-07-19",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "What size enclosure does a hedgehog need?",
-        "a": "At least 4 square feet of solid floor, and more is fine as long as roughly three-quarters of it holds hides and enrichment. The floor has to be solid: wire catches limbs and causes real injuries."
+        "a": "At least 2 by 3 feet of solid floor, six square feet, and more is fine as long as roughly three-quarters of it holds hides and enrichment. The floor has to be solid: wire catches limbs and causes real injuries."
       },
       {
         "q": "What temperature does a hedgehog enclosure need to stay at?",
-        "a": "75 to 80°F ideally, inside a workable 72 to 90°F. Under about 72°F a hedgehog can attempt to hibernate, which is dangerous and potentially fatal for a species that can't safely do it in captivity. Skip light-emitting heat bulbs: they break the day and night cycle and can contribute to a hibernation attempt."
+        "a": "75 to 85°F ideally, inside a workable 72 to 90°F. Under about 72°F a hedgehog can attempt to hibernate, which is dangerous and potentially fatal for a species that can't safely do it in captivity. Skip light-emitting heat bulbs: they break the day and night cycle and can contribute to a hibernation attempt."
       },
       {
         "q": "What humidity level is right for a hedgehog?",
-        "a": "Low, under 40%. If the house runs below about 30%, run a humidifier to bring the room into 40 to 60%, which prevents itchy, flaky skin."
+        "a": "Low, under 40%. The problem to watch for is the opposite direction: a very dry house leaves a hedgehog with itchy, flaky skin, which a humidifier fixes as long as it stops short of that ceiling."
       },
       {
         "q": "Does a hedgehog need an exercise wheel?",
@@ -26605,7 +26614,7 @@
     "image": "/assets/images/jacksons-chameleon-tank-setup.jpg",
     "imageAlt": "Male Jackson's chameleon with three forward-facing horns in a planted, partially screened enclosure",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-29",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -26642,8 +26651,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 2,
+    "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -26716,7 +26725,7 @@
     "path": "/content/guides/jumping-spider-cost-guide.mdx",
     "slug": "jumping-spider-cost-guide",
     "title": "How Much Does a Jumping Spider Really Cost?",
-    "seoTitle": "Jumping Spider Price: $15 to $60, Plus $50 to $120 Setup",
+    "seoTitle": "Jumping Spider Price: $15 to $60, Plus $112 to $150 Setup",
     "excerpt": "Jumping spiders, the regal jumping spider especially, are one of the most affordable and low space pets on this entire site, accessible even on a tight budget.",
     "date": "2026-07-19",
     "category": "Invertebrates",
@@ -26736,7 +26745,7 @@
     "image": "/assets/images/jumping-spider-cost.jpg",
     "imageAlt": "Regal jumping spider perched near its small vertical enclosure and basic supplies",
     "emoji": "🕷️",
-    "lastReviewed": "2026-07-19",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -26746,7 +26755,7 @@
       },
       {
         "q": "What does a complete jumping spider setup cost upfront?",
-        "a": "Roughly $50 to $120, covering a small vertical arboreal enclosure, coconut fiber substrate, artificial plants or cork bark for climbing, a fine mister, and a digital hygrometer."
+        "a": "Roughly $112 to $150, covering a small vertical arboreal enclosure, coconut fiber substrate, artificial plants or cork bark for climbing, a fine mister, and a digital hygrometer. The enclosure is most of it."
       },
       {
         "q": "What are the ongoing monthly costs of keeping a jumping spider?",
@@ -26870,13 +26879,13 @@
     "image": "/assets/images/jumping-spider-feeding.jpg",
     "imageAlt": "Jumping spider eating a fruit fly on a leaf inside its enclosure",
     "emoji": "🕷️",
-    "lastReviewed": "2026-07-28",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "How often should I feed my jumping spider?",
-        "a": "It depends on life stage and varies a fair amount even among adults, spiderlings eat every 1 to 2 days, tapering to roughly every 2 to 5 days by adulthood, sources differ here. The guide is the abdomen, shrunken or wrinkled means feed, plump and noticeably wider than the cephalothorax means skip the next meal."
+        "a": "It depends on life stage and varies a fair amount even among adults: spiderlings eat every 1 to 2 days, tapering to roughly every 2 to 5 days by adulthood. The guide is the abdomen, shrunken or wrinkled means feed, plump and noticeably wider than the cephalothorax means skip the next meal."
       },
       {
         "q": "What should I feed a jumping spider?",
@@ -27229,7 +27238,7 @@
     "image": "/assets/images/koi-cost.jpg",
     "imageAlt": "Colorful koi swimming in a well-filtered outdoor pond",
     "emoji": "🎏",
-    "lastReviewed": "2026-07-28",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -27243,7 +27252,7 @@
       },
       {
         "q": "What are the ongoing costs of keeping koi?",
-        "a": "Commonly $1,000 to $2,000 or more a year. In active season food is $30 to $75 or more a month, and it drops sharply once the water falls below about 50 to 55°F and koi stop eating. Pumps, UV, and aeration run continuously, often another $30 to $80 a month."
+        "a": "Commonly $1,000 to $2,000 or more a year. In active season food is $30 to $75 or more a month, and it drops sharply once the water falls below about 48 to 50°F and koi stop eating. Pumps, UV, and aeration run continuously, often another $30 to $80 a month."
       },
       {
         "q": "Do koi need regular vet visits?",
@@ -27365,7 +27374,7 @@
     "image": "/assets/images/koi-feeding.jpg",
     "imageAlt": "Koi rising to the pond surface to feed on floating pellets",
     "emoji": "🎏",
-    "lastReviewed": "2026-07-28",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -27379,7 +27388,7 @@
       },
       {
         "q": "How much should I feed at each meal?",
-        "a": "The traditional 5-minute rule, only offer what's cleaned up in 3 to 5 minutes, is the most repeated guidance, though at least one koi-specific source argues keepers who rely on it tend to overfeed. A body-weight-based approach, roughly 1 to 4% of body weight a day depending on temperature and size, is the more precise alternative if you want it."
+        "a": "The traditional 5-minute rule, only offer what's cleaned up in 3 to 5 minutes, is the most repeated guidance, and it is also the easiest one to overfeed on, since a koi keeps taking food past the point of needing it. A body-weight-based approach, roughly 1 to 4% of body weight a day depending on temperature and size, is the more precise alternative if you want it."
       },
       {
         "q": "Should I feed a different food in spring and fall?",
@@ -27401,7 +27410,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -27431,7 +27440,7 @@
     "image": "/assets/images/koi-handling.jpg",
     "imageAlt": "Koi being guided into a floating bowl with a net instead of being lifted by hand",
     "emoji": "🎏",
-    "lastReviewed": "2026-07-28",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -27525,7 +27534,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 3,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -27621,13 +27630,13 @@
     "image": "/assets/images/koi-vs-goldfish.jpg",
     "imageAlt": "A koi and a goldfish side by side for size comparison",
     "emoji": "🐠",
-    "lastReviewed": "2026-09-03",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "Are koi and goldfish the same species?",
-        "a": "No, and this surprises a lot of people. Koi (Cyprinus carpio) and goldfish (Carassius auratus) are different species in different genera entirely, both members of the minnow family, but not close enough to interbreed and produce viable offspring. Koi descend from the common carp, goldfish from the Prussian carp, two separate domestication stories that happen to have produced similarly colorful ornamental fish."
+        "a": "No, and this surprises a lot of people. Koi (Cyprinus rubrofuscus) and goldfish (Carassius auratus) are different species in different genera entirely, both members of the minnow family, but not close enough to interbreed and produce viable offspring. Koi descend from the Amur carp, goldfish from the Prussian carp, two separate domestication stories that happen to have produced similarly colorful ornamental fish."
       },
       {
         "q": "Do I need a pond for koi, or can I keep them in an aquarium?",
@@ -27635,7 +27644,7 @@
       },
       {
         "q": "Which gets bigger, a koi or a goldfish?",
-        "a": "Koi, by a wide margin. A typical adult koi reaches 14 to 18 inches, with some exceeding 3 feet in ideal conditions. Most goldfish stay in the 4 to 8 inch range, though pond-raised common and comet goldfish can grow larger than the fancy varieties bred for aquariums."
+        "a": "Koi, by a wide margin. A typical adult koi reaches 24 to 25 inches, with some approaching 3 feet in ideal conditions. Most goldfish stay in the 4 to 8 inch range, though pond-raised common and comet goldfish can grow larger than the fancy varieties bred for aquariums."
       },
       {
         "q": "Which lives longer, a koi or a goldfish?",
@@ -27792,8 +27801,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 7,
+    "sourceCount": 2,
+    "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -27924,8 +27933,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 2,
+    "headingCount": 8,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -27988,8 +27997,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 2,
+    "headingCount": 8,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -28018,7 +28027,7 @@
     "image": "/assets/images/leaf-tailed-gecko-tank-setup.jpg",
     "imageAlt": "Satanic leaf-tailed gecko camouflaged against bark inside a tall, densely planted, misted terrarium",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-29",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -28057,8 +28066,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 3,
+    "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -29383,7 +29392,7 @@
     "image": "/assets/images/madagascar-hissing-cockroach-feeding.jpg",
     "imageAlt": "Madagascar hissing cockroach feeding on dry dog food and apple slices",
     "emoji": "🪲",
-    "lastReviewed": "2026-07-27",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -29417,7 +29426,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -29507,7 +29516,7 @@
     "image": "/assets/images/madagascar-hissing-cockroach-health-issues.jpg",
     "imageAlt": "Madagascar hissing cockroach resting on substrate near its humid hide",
     "emoji": "🪳",
-    "lastReviewed": "2026-07-20",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -29521,7 +29530,7 @@
       },
       {
         "q": "What causes mold and mite outbreaks in a hisser colony?",
-        "a": "Uneaten wet food combined with poor ventilation, which can devastate a colony if it takes hold. Remove uneaten fresh food within 24 hours, ensure adequate airflow, and do a deeper clean periodically rather than only when a problem appears."
+        "a": "Uneaten wet food combined with poor ventilation, which can devastate a colony if it takes hold. Remove uneaten fresh food within 24 to 48 hours, ensure adequate airflow, and do a deeper clean periodically rather than only when a problem appears."
       },
       {
         "q": "Is overheating a real risk for this species?",
@@ -29625,13 +29634,13 @@
     "image": "/assets/images/madagascar-hissing-cockroach-tank-setup.jpg",
     "imageAlt": "Madagascar hissing cockroach enclosure with substrate, cork bark hides, and a screened lid",
     "emoji": "🪳",
-    "lastReviewed": "2026-07-20",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "What size enclosure does a Madagascar hissing cockroach need?",
-        "a": "5 gallons is the minimum for one animal or a small group; a 10 to 20-gallon tank or plastic tub suits a colony better. Floor space beats height for a ground-dweller."
+        "a": "5 gallons is the minimum for a small group, which is how this gregarious species is kept; a 10 to 20-gallon tank or plastic tub suits a colony better. Floor space beats height for a ground-dweller."
       },
       {
         "q": "What temperature and humidity does this species need?",
@@ -29661,8 +29670,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 1,
+    "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -30075,21 +30084,25 @@
     "image": "/assets/images/milk-snake-tank-setup.jpg",
     "imageAlt": "Milk snake enclosure with hides, a basking bulb, and a humid hide",
     "emoji": "🐍",
-    "lastReviewed": "2026-07-21",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "What size enclosure does a milk snake need?",
-        "a": "Most milk snakes top out at 48 inches, which sets the adult minimum at 48 by 24 by 24 inches. Honduran and other larger subspecies can reach 4 to 5 feet and need a bigger setup to match."
+        "a": "Most milk snakes top out at 48 inches, which sets the adult minimum at 48 by 24 by 24 inches. Subspecies vary within that: Pueblans run 28 to 36 inches, Easterns 36 to 45, and Hondurans and Sinaloans 40 to 48."
       },
       {
         "q": "What temperature does a milk snake enclosure need?",
-        "a": "Basking surface 85 to 90°F, cool side 70 to 80°F, nights no lower than about 66°F. The usual heat source here is a halogen flood bulb over a basking stone."
+        "a": "Basking surface 85 to 90°F, cool side 75 to 80°F, nights 70 to 75°F. The usual heat source here is a halogen flood bulb over a basking stone, with a thermostat-controlled mat as a supplement rather than the main heater."
       },
       {
         "q": "What humidity does a milk snake need?",
         "a": "40 to 60%, monitored with a digital probe hygrometer. A dedicated humid hide with moist sphagnum moss is what prevents retained shed, mist as needed to stay in range."
+      },
+      {
+        "q": "How often does a milk snake eat?",
+        "a": "Juveniles every 7 to 10 days, adults every 10 to 14. Two ways to size the rodent, either of which works: no wider than 1.5 times the snake at its thickest, or about a tenth of what the snake weighs."
       },
       {
         "q": "What substrate is safe for a milk snake?",
@@ -30112,7 +30125,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 1,
-    "headingCount": 8,
+    "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -30142,7 +30155,7 @@
     "image": "/assets/images/milk-snake-vs-corn-snake.jpg",
     "imageAlt": "A milk snake and a corn snake side by side for comparison",
     "emoji": "🐍",
-    "lastReviewed": "2026-09-04",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -30152,7 +30165,7 @@
       },
       {
         "q": "Why do milk snakes get mistaken for venomous snakes?",
-        "a": "Because many milk snake subspecies practice genuine Batesian mimicry, evolving color patterns similar to venomous coral snakes or copperheads to deter predators. It's effective enough at fooling people that rhymes like 'red touch yellow, kill a fellow' exist specifically to help people tell a harmless milk snake apart from a venomous coral snake in the wild. Corn snakes don't mimic a venomous species and don't carry that same identification risk."
+        "a": "Because many milk snake subspecies practice genuine Batesian mimicry, evolving color patterns similar to venomous coral snakes to deter predators. It's effective enough at fooling people that rhymes like 'red touch yellow, kill a fellow' exist specifically to help people tell a harmless milk snake apart from a venomous coral snake in the wild. Corn snakes don't mimic a venomous species and don't carry that same identification risk."
       },
       {
         "q": "How did the corn snake get its name?",
@@ -30205,13 +30218,13 @@
     "image": "/assets/images/molly-cost.jpg",
     "imageAlt": "A small group of mollies swimming in a well-planted 20-gallon aquarium",
     "emoji": "🐠",
-    "lastReviewed": "2026-09-05",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "How much does a molly fish cost?",
-        "a": "Common short-fin varieties, black, silver, and dalmatian mollies, run about $2 to $8 each depending on retailer. Balloon and lyretail varieties run closer to $6 to $8, and rarer specialty color strains can reach $15 to $20 or more."
+        "a": "Common short-fin varieties, black, silver, and dalmatian mollies, run about $2 to $8 each, nearer $4 a fish in a six-pack. Balloon and lyretail varieties run closer to $6 to $7, and rarer specialty color strains can reach $15 to $20 or more."
       },
       {
         "q": "What does a basic molly tank setup cost?",
@@ -30297,7 +30310,7 @@
       },
       {
         "q": "How big a tank do they need?",
-        "a": "Bigger than most livebearer advice suggests. Mollies are the largest of the common livebearers and some varieties reach a size that makes a ten gallon inadequate, before you count the fry."
+        "a": "Bigger than most livebearer advice suggests. Mollies are the largest of the common livebearers, and a 20 gallon long is the floor rather than a generous starting point, before you count the fry."
       },
       {
         "q": "Why do my mollies keep getting sick?",
@@ -30408,7 +30421,7 @@
     "image": "/assets/images/molly-handling.jpg",
     "imageAlt": "A net gently guiding a molly during a tank transfer instead of using bare hands",
     "emoji": "🐠",
-    "lastReviewed": "2026-09-07",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -30426,7 +30439,7 @@
       },
       {
         "q": "How do I manage molly population if I don't want constant breeding?",
-        "a": "Keep males and females in separate tanks to avoid breeding entirely, or keep a males-only group for a colorful, breeding-free tank. If you do want controlled breeding, a ratio of roughly one male to two or three females cuts down on females getting chased and stressed by mating attempts."
+        "a": "Keep males and females in separate tanks to avoid breeding entirely, or keep a males-only group for a colorful, breeding-free tank, which needs space and numbers rather than a trio because males squabble among themselves. If you do want controlled breeding, a ratio of roughly one male to two or three females cuts down on females getting chased and stressed by mating attempts."
       },
       {
         "q": "What's the most common molly-keeping mistake?",
@@ -30473,7 +30486,7 @@
     "image": "/assets/images/molly-health-issues.jpg",
     "imageAlt": "Close-up of a healthy molly in a well-maintained aquarium showing steady coloring and undamaged fins",
     "emoji": "🐠",
-    "lastReviewed": "2026-09-08",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -30544,7 +30557,7 @@
     "image": "/assets/images/molly-tank-setup.jpg",
     "imageAlt": "A planted 20-gallon molly tank with sturdy filtration and warm lighting",
     "emoji": "🐠",
-    "lastReviewed": "2026-09-09",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -30554,11 +30567,11 @@
       },
       {
         "q": "What temperature do mollies need?",
-        "a": "Tropical, roughly 72 to 80°F, with some sources allowing 82°F at the top. Steadiness beats precision here: keep swings under about 2°F in a day. A submersible heater is necessary unless the room stays warm year-round."
+        "a": "Tropical, 72 to 82°F. Steadiness beats precision here: keep swings under about 2°F in a day. A submersible heater is necessary unless the room stays warm year-round."
       },
       {
         "q": "What water chemistry do mollies need?",
-        "a": "pH 7.5 to 8.5, tolerating down to about 7.0, in medium-hard to hard water. Soft tap water can be brought up with crushed coral or a commercial buffering product, without necessarily reaching for salt."
+        "a": "pH 7.5 to 8.5 in medium-hard to hard water. Soft tap water can be brought up with crushed coral or a commercial buffering product, without necessarily reaching for salt."
       },
       {
         "q": "Do mollies need aquarium salt in their tank setup?",
@@ -30617,7 +30630,7 @@
     "image": "/assets/images/mourning-gecko-cost.jpg",
     "imageAlt": "Small colony of mourning geckos in a planted display vivarium",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-25",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -30639,7 +30652,7 @@
       },
       {
         "q": "How long do mourning geckos live?",
-        "a": "Typically 10 to 15 years with consistent humidity, calcium supplementation, and a varied diet. Egg-laying females have higher calcium demands, so staying on top of supplementation matters for hitting the long end of that range."
+        "a": "Up to 10 years, with some reports of 15, on consistent humidity, calcium supplementation, and a varied diet. Egg-laying females have higher calcium demands, so staying on top of supplementation matters for reaching the long end."
       }
     ],
     "relatedProducts": [
@@ -30752,13 +30765,13 @@
     "image": "/assets/images/mourning-gecko-feeding.jpg",
     "imageAlt": "Mourning gecko licking powdered gecko diet from a wall-mounted feeding cup",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-31",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "How often should I feed my mourning gecko?",
-        "a": "This is inconsistent across care sheets, some recommend keeping powdered gecko diet essentially always available, others say 2 to 4 times a week on a set rotation, and one retailer's own care sheet even builds in 2 fasting days a week. Insects land anywhere from once to three times weekly depending on the source. Treat it as a real range, not one settled number."
+        "a": "Fresh powdered gecko diet every 48 hours, and dusted insects once or twice a week. Published schedules run wider than that, from always-available diet to a set rotation of 2 to 4 times a week, and from one insect feeding a week to three, and the 48-hour routine sits inside all of it."
       },
       {
         "q": "Why does a single pet mourning gecko still need consistent calcium?",
@@ -30789,7 +30802,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -30819,7 +30832,7 @@
     "image": "/assets/images/mourning-gecko-handling.jpg",
     "imageAlt": "Tiny mourning gecko resting on a leaf inside a planted vivarium",
     "emoji": "🦎",
-    "lastReviewed": "2026-09-08",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -30837,7 +30850,7 @@
       },
       {
         "q": "Do I need more than one mourning gecko?",
-        "a": "Not strictly. Mourning geckos are parthenogenetic, every individual is female and reproduces without needing a male, which makes them naturally social, self-multiplying colony animals. Most keepers start with two or more, but a lone mourning gecko survives fine and will still lay viable eggs on its own. Some breeders keep them solo without issue, so it comes down to keeper preference."
+        "a": "Not strictly, though a group is the default. Mourning geckos are parthenogenetic, every individual is female and reproduces without needing a male, which makes them naturally social, self-multiplying colony animals. A lone mourning gecko survives fine and will still lay viable eggs on its own, and some breeders keep them solo, but a colony is how the species lives and where its visible behavior comes from."
       },
       {
         "q": "Why do mourning geckos get marketed as an easy beginner gecko if you can't handle them?",
@@ -31028,7 +31041,7 @@
       },
       {
         "q": "What are the ongoing monthly costs for mice?",
-        "a": "Roughly $15 to $30 a month by our estimate, covering pellets, small amounts of fresh produce, and bedding, which needs replacing often enough to keep ammonia from building up, especially in a cage with males. Other published estimates run as high as $45 a month depending on group size."
+        "a": "Roughly $10 to $20 a month, which is what the annual table above adds up to: pellets, small amounts of fresh produce, bedding replaced often enough to keep ammonia from building up, chews, and a yearly vet check. Other published estimates run as high as $45 a month depending on group size and how much fresh produce you offer."
       },
       {
         "q": "How much does mouse vet care cost?",
@@ -31161,7 +31174,7 @@
       },
       {
         "q": "How much protein do mice need?",
-        "a": "More than a hamster or gerbil. The American Fancy Rat and Mouse Association puts general maintenance crude protein at 20 to 25%, with breeding or growing mice needing even more depending on strain, well above the 14 to 16% that's adequate for a gerbil."
+        "a": "More than a hamster or gerbil. General maintenance crude protein for a mouse runs 20 to 25%, with breeding or growing mice needing even more depending on strain, well above the 14 to 16% that's adequate for a gerbil."
       },
       {
         "q": "How much should I feed a mouse each day?",
@@ -31347,11 +31360,11 @@
       },
       {
         "q": "Is a glass tank a good enclosure for a pet mouse?",
-        "a": "No, and this is a real difference from gerbil housing. The Merck Veterinary Manual states plainly that aquariums are not suitable for mice because air circulation is inadequate, which lets ammonia build up. A well-ventilated wire cage is the better choice for mice specifically."
+        "a": "No, and this is a real difference from gerbil housing. A glass tank can't move enough air, so ammonia builds up inside it. A well-ventilated wire cage is the better choice for mice specifically."
       },
       {
         "q": "How tight does the bar spacing need to be for a mouse cage?",
-        "a": "No more than about a quarter inch (6mm), and some welfare-focused sources recommend going even tighter, to 5mm. That's tighter than most small pet cages, and mice can squeeze through gaps that would safely contain a hamster."
+        "a": "No more than about a quarter inch (6mm), and tighter still, down to 5mm, is sometimes recommended. That's tighter than most small pet cages, and mice can squeeze through gaps that would safely contain a hamster."
       },
       {
         "q": "How deep should mouse bedding be?",
@@ -32066,7 +32079,7 @@
     "image": "/assets/images/oscar-fish-feeding.jpg",
     "imageAlt": "An oscar fish eating a floating cichlid pellet at the surface of its aquarium",
     "emoji": "🐠",
-    "lastReviewed": "2026-08-14",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -32192,7 +32205,7 @@
     "image": "/assets/images/oscar-fish-health-issues.jpg",
     "imageAlt": "Tiger oscar fish swimming in a heavily filtered, well-maintained aquarium",
     "emoji": "🐠",
-    "lastReviewed": "2026-07-30",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -32402,7 +32415,7 @@
       },
       {
         "q": "How much does a full Pacman frog setup cost to start?",
-        "a": "Roughly $100 to $225 for the frog and everything it needs, a modest terrarium, heat mat and thermostat, thermometer and hygrometer, low-level lighting, and a hide. This is one of the more affordable full setups among exotic pets, since the species is sedentary and doesn't need much floor space."
+        "a": "Roughly $100 to $225 for the enclosure and everything that goes in it, before the frog itself: a modest terrarium, heat mat and thermostat, thermometer and hygrometer, low-level lighting, and a hide. This is one of the more affordable full setups among exotic pets, since the species is sedentary and doesn't need much floor space."
       },
       {
         "q": "What are the ongoing monthly costs for a Pacman frog?",
@@ -32410,11 +32423,11 @@
       },
       {
         "q": "What does a Pacman frog vet visit cost?",
-        "a": "An exotic or amphibian-experienced vet exam commonly runs $50 to $150, with a dedicated exotic emergency fee often starting around $250 at specialty hospitals. Impaction is the condition most likely to require a costly emergency visit for this species."
+        "a": "A routine exam with a vet who sees exotics or amphibians commonly runs $50 to $150. At a specialty hospital, the exotic emergency fee alone often starts around $250. Impaction is the condition most likely to put this species in front of that second number."
       },
       {
         "q": "How long do Pacman frogs live, and how does that affect budgeting?",
-        "a": "The range most commonly cited is 6 to 10 years, and some sources suggest 10 to 15 with excellent care. Either way it's a multi-year commitment to an animal that spends most of its life buried and waiting."
+        "a": "Plan on 6 to 10 years, with 10 to 15 possible where care is excellent. That means budgeting for a decade of feeder insects, supplements, and substrate, not a season of them."
       }
     ],
     "relatedProducts": [
@@ -32537,7 +32550,7 @@
     "faqs": [
       {
         "q": "How often should I feed my Pacman frog?",
-        "a": "Juveniles eat daily or every 1 to 2 days. Adults are less settled across sources, roughly 1 to 3 times a week depending on where you look. Body condition matters more than hitting an exact number, these frogs are highly food-motivated and will keep eating well past full if you let them."
+        "a": "Juveniles eat daily or every 1 to 2 days. Adults eat roughly 1 to 3 times a week. Body condition matters more than hitting an exact number, these frogs are highly food-motivated and will keep eating well past full if you let them."
       },
       {
         "q": "How do I know if I'm overfeeding my Pacman frog?",
@@ -32553,7 +32566,7 @@
       },
       {
         "q": "How long can a Pacman frog go without eating?",
-        "a": "Longer than most pets, thanks to large fat reserves. Hobbyist sources commonly cite 2 to 4 weeks as typical for a healthy adult, up to about 6 weeks in some cases, though this isn't backed by a veterinary source, treat it as rough consensus. Juveniles have far less reserve, about a week is the point to start paying closer attention."
+        "a": "Longer than most pets, thanks to large fat reserves. 2 to 4 weeks is typical for a healthy adult, up to about 6 weeks in some cases, though the week counts are rough consensus rather than clinical fact. Juveniles have far less reserve, about a week is the point to start paying closer attention."
       },
       {
         "q": "What's the actual danger sign if my frog isn't eating?",
@@ -32665,7 +32678,7 @@
     "faqs": [
       {
         "q": "What is the most common health issue in Pacman frogs?",
-        "a": "Obesity. These frogs eat whenever food appears and don't self-regulate the way some pets do. Adults should eat roughly once a week, not on the juvenile schedule, and overfeeding on fatty prey like pinky mice as a staple is the direct cause."
+        "a": "Obesity. These frogs eat whenever food appears and don't self-regulate the way some pets do. Adults should eat roughly 1 to 3 times a week, not on the juvenile schedule, and overfeeding on fatty prey like pinky mice as a staple is the direct cause."
       },
       {
         "q": "What causes impaction in Pacman frogs, and is it serious?",
@@ -32677,7 +32690,7 @@
       },
       {
         "q": "What does metabolic bone disease look like in a Pacman frog?",
-        "a": "A droopy jaw, bowed legs, and twitching, caused by missing calcium supplementation or UVB. This needs a vet, and it's fully preventable with proper supplementation from the start."
+        "a": "A droopy jaw, bowed legs, and twitching. Too little calcium and vitamin D3 in the diet is the cause, since a properly supplemented diet is what stands in for UVB here. Get a vet involved, and supplement correctly from the start to avoid it entirely."
       },
       {
         "q": "What are the signs of red-leg or a bacterial infection in a Pacman frog?",
@@ -32730,7 +32743,7 @@
     "faqs": [
       {
         "q": "What size enclosure does a Pacman frog need?",
-        "a": "A 10 to 20 gallon terrarium suits an adult, since this frog spends nearly all its time buried and motionless. Some specialist sources call 24x18x18 inches ideal, but floor space beats height for a non-climber. One frog per enclosure, always: they are cannibalistic."
+        "a": "A 10 to 20 gallon terrarium suits an adult, since this frog spends nearly all its time buried and motionless. 24x18x18 inches is an ideal, but floor space beats height for a non-climber. One frog per enclosure, always: they are cannibalistic."
       },
       {
         "q": "What temperature and humidity does a Pacman frog need?",
@@ -33040,7 +33053,7 @@
       },
       {
         "q": "Should a parrotlet's diet be mostly seeds or pellets?",
-        "a": "Pellets should form the base of the diet, supplemented daily with fresh vegetables and a little fruit. Lafeber, an avian-specialist source, recommends limiting seed to about once a day rather than treating it as the foundation, a small amount is fine, an all-seed diet is not."
+        "a": "Pellets should form the base of the diet, supplemented daily with fresh vegetables and a little fruit. Seed is limited to about once a day rather than treated as the foundation, a small amount is fine, an all-seed diet is not."
       },
       {
         "q": "What foods are toxic to a parrotlet?",
@@ -33101,11 +33114,11 @@
     "faqs": [
       {
         "q": "Is a parrotlet's bite stronger than a budgie's?",
-        "a": "Yes. Lafeber, an avian-specialist source, describes the bite as much stronger than a budgie's despite the parrotlet's smaller size, and notes the bird doesn't seem to know it's small, it will readily challenge other animals, other birds, and people. Consistent handling from early on is what keeps that bite from becoming a habit."
+        "a": "Yes. The bite is much stronger than a budgie's despite the parrotlet's smaller size, and the bird doesn't seem to know it's small, it will readily challenge other animals, other birds, and people. Consistent handling from early on is what keeps that bite from becoming a habit."
       },
       {
         "q": "Should I get one parrotlet or a bonded pair?",
-        "a": "It depends on what you want from the relationship. A single, well-socialized parrotlet bonds intensely to its person and can become an affectionate, hands-on companion. A bonded pair bonds mainly to each other instead, entertaining to watch but rarely as tame. Sources don't fully agree here, PetMD treats a pair as a reasonable option for owners with less daily time, while Lafeber recommends keeping the species singly for safety, since even a bonded pair can turn possessive with one bird dominating the other."
+        "a": "It depends on what you want from the relationship. A single, well-socialized parrotlet bonds intensely to its person and can become an affectionate, hands-on companion. A bonded pair bonds mainly to each other instead, entertaining to watch but rarely as tame. Singly is the safer default, since even a bonded pair can turn possessive with one bird dominating the other, and a pair suits an owner with less daily time to give."
       },
       {
         "q": "How do I socialize a parrotlet to prevent nippiness?",
@@ -33232,7 +33245,7 @@
       },
       {
         "q": "How tight does bar spacing need to be on a parrotlet cage?",
-        "a": "No wider than 1/2 inch, and some sources put the safe maximum at 5/8 inch. Lafeber, writing specifically about this species, recommends going tighter still, around 1/4 inch, since a parrotlet's head is smaller than a lovebird's or budgie's and spacing that's safe for those species can be riskier here."
+        "a": "1/4 inch, with 1/2 inch the widest worth considering at all. A parrotlet's head is smaller than a lovebird's or budgie's, and spacing that's safe for those species can let this one get a head or a foot caught."
       },
       {
         "q": "What cage material is safe for a parrotlet?",
@@ -33586,13 +33599,13 @@
     "image": "/assets/images/platy-cost.jpg",
     "imageAlt": "A small group of colorful platies swimming in a planted 10-gallon aquarium",
     "emoji": "🐠",
-    "lastReviewed": "2026-09-10",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "How much does a platy fish cost?",
-        "a": "Most standard varieties run $2 to $6 each. That Fish Place lists individual platies from $1.99 up to $5.99, and Fishkeeping World cites a similar $3 to $6 range with a six-pack running around $30. Premium or less common strains like tiger ruby platies can reach $8 to $10."
+        "a": "Most standard varieties run $2 to $6 each, with a six-pack around $30. Premium or less common strains like tiger ruby platies can reach $8 to $9."
       },
       {
         "q": "What does a basic platy tank setup cost?",
@@ -33604,7 +33617,7 @@
       },
       {
         "q": "How long do platies live?",
-        "a": "Most sources land on 2 to 4 years. Aquarium Co-Op puts a healthy, well-kept platy at 3 to 4, others cite 2 to 3 as more typical, and stable, excellent conditions can push one toward 5."
+        "a": "2 to 4 years. Stable conditions get most of the way there, and excellent, consistent water quality can push a fish toward 5. That is close to a guppy and noticeably shorter than a molly."
       },
       {
         "q": "What's the cost new platy owners usually forget to plan for?",
@@ -33732,7 +33745,7 @@
       },
       {
         "q": "How often should I feed my platy?",
-        "a": "Adults do well fed once or twice a day, some sources stretch that to three times for very small portions, feeding only what's fully cleared within a minute or two. Juveniles need two to three smaller meals a day to keep pace with faster growth."
+        "a": "Adults do well fed once or twice a day, sometimes stretched to three times for very small portions, feeding only what's fully cleared within a minute or two. Juveniles need two to three smaller meals a day to keep pace with faster growth."
       },
       {
         "q": "What should platy fry eat?",
@@ -33782,7 +33795,7 @@
     "image": "/assets/images/platy-handling.jpg",
     "imageAlt": "A fine-mesh net gently guiding a platy during a tank transfer instead of using bare hands",
     "emoji": "🐠",
-    "lastReviewed": "2026-09-10",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -33792,7 +33805,7 @@
       },
       {
         "q": "How can I tell if my platy is male or female?",
-        "a": "Males develop a modified, rod-like anal fin called a gonopodium, used to fertilize females internally, usually visible by around 5 to 6 months of age. Females keep a fuller, rounded anal fin and often show a dark \"gravid spot\" near the vent, especially prominent when pregnant. It's a fairly reliable sexing method once the gonopodium has developed."
+        "a": "Males develop a modified, rod-like anal fin called a gonopodium, used to fertilize females internally, appearing as the fish matures anywhere from about two to six and a half months depending on genotype. Females keep a fuller, rounded anal fin and often show a dark \"gravid spot\" near the vent, especially prominent when pregnant. It's a fairly reliable sexing method once the gonopodium has developed."
       },
       {
         "q": "How do platies breed?",
@@ -33812,7 +33825,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -33842,7 +33855,7 @@
     "image": "/assets/images/platy-health-issues.jpg",
     "imageAlt": "Close-up of a healthy platy in a well-maintained aquarium showing bright coloring and undamaged fins",
     "emoji": "🐠",
-    "lastReviewed": "2026-09-10",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -33957,21 +33970,21 @@
     "image": "/assets/images/platy-tank-setup.jpg",
     "imageAlt": "A planted 10-gallon platy tank with gentle filtration and warm lighting",
     "emoji": "🐠",
-    "lastReviewed": "2026-09-11",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "What size tank does a platy need?",
-        "a": "10 gallons is a realistic starting point for a small group of about five. Seriously Fish's absolute minimum footprint of 24x12x12 inches works out to roughly 15 gallons, and Aquarium Co-Op recommends 10 to 20 gallons depending on group size. Step up to 20 gallons for a fuller group of six or more, or if you're letting them breed."
+        "a": "10 gallons is where most care sheets start, and it holds about five. The stricter figure is a minimum base footprint of 24 by 12 inches, which a standard 10 gallon (20 by 10) does not meet and a 20 gallon long (30 by 12) does. Step up to 20 gallons for a fuller group of six or more, or if you're letting them breed."
       },
       {
         "q": "What temperature do platies need?",
-        "a": "Roughly 68 to 82°F, with the mid-to-upper 70s the usual target. Hold it steady rather than chasing a number: swings over about 2°F in a day are the problem. Variatus-line platies handle the cool end better than most tropical fish, though a heater is still the safer default unless the room stays warm all year."
+        "a": "68 to 79°F, with the mid-70s the usual target. Hold it steady rather than chasing a number: swings over about 2°F in a day are the problem. Variatus-line platies handle the cool end better than most tropical fish, though a heater is still the safer default unless the room stays warm all year."
       },
       {
         "q": "What water chemistry do platies need?",
-        "a": "A pH of roughly 7.0 to 8.2 is the ideal band, though platies tolerate a wider range reported as low as 6.8 and as high as 8.5. They prefer medium-hard to hard water, roughly 10 to 30 dGH, and won't do as well in very soft, acidic water. A mineral supplement like crushed coral or a commercial buffering product helps if your tap water runs soft."
+        "a": "7.0 to 8.2 is the ideal band, and platies tolerate 6.8 to 8.5. They prefer medium-hard to hard water, roughly 10 to 30 dGH, and won't do as well in very soft, acidic water. A mineral supplement like crushed coral or a commercial buffering product helps if your tap water runs soft."
       },
       {
         "q": "What kind of filtration is best for a platy tank?",
@@ -34061,7 +34074,7 @@
     "path": "/content/guides/praying-mantis-cost-guide.mdx",
     "slug": "praying-mantis-cost-guide",
     "title": "How Much Does a Praying Mantis Really Cost?",
-    "seoTitle": "Praying Mantis Price: $15 to $75, Plus $50 to $150 Setup",
+    "seoTitle": "Praying Mantis Price: $15 to $75, Plus $85 to $145 Setup",
     "excerpt": "Praying mantises are one of the most affordable exotic pets available, cheap to buy and cheap to keep, with one important caveat about how long you'll have one.",
     "date": "2026-07-22",
     "category": "Invertebrates",
@@ -34081,7 +34094,7 @@
     "image": "/assets/images/praying-mantis-cost.jpg",
     "imageAlt": "Praying mantis beside its enclosure setup and feeder insects",
     "emoji": "🦗",
-    "lastReviewed": "2026-07-22",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -34091,7 +34104,7 @@
       },
       {
         "q": "What does the upfront setup cost for a praying mantis?",
-        "a": "Roughly $50 to $150, covering a properly sized enclosure that's taller than it is wide, substrate, branches or mesh for climbing and molting, and optional heating or misting equipment depending on the species."
+        "a": "The three required lines, a properly sized enclosure that's taller than it is wide, substrate, and branches or mesh for climbing and molting, come to about $85 to $115. Adding the optional spray bottle and feeding tongs takes it to roughly $100 to $145, before the mantis itself."
       },
       {
         "q": "What are the ongoing monthly costs of keeping a praying mantis?",
@@ -34117,7 +34130,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 4,
     "headingCount": 7,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -34157,7 +34170,7 @@
       },
       {
         "q": "How tall does the enclosure need to be?",
-        "a": "The common rule is at least three times the mantis's body length in clear vertical space, because a mantis molts hanging upside down and has to have room to pull itself completely free. This is the single most important number in mantis keeping."
+        "a": "At least three times the mantis's body length in enclosure height, and at least four times its length in the drop from the top of the perch to the floor, because a mantis molts hanging upside down and has to have room to pull itself completely free. For a typical adult that is an enclosure around 8 by 8 by 12 inches at the floor of the range."
       },
       {
         "q": "What happens if it is too short?",
@@ -34215,7 +34228,7 @@
     "image": "/assets/images/praying-mantis-handling.jpg",
     "imageAlt": "Praying mantis walking calmly across a keeper's open hand",
     "emoji": "🦗",
-    "lastReviewed": "2026-07-22",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -34225,7 +34238,7 @@
       },
       {
         "q": "What's the correct way to handle a praying mantis?",
-        "a": "Let it walk onto your hand or a tool, and never squeeze or restrain it. Do it in a closed room: a mantis covers roughly twice its own body length in a single jump, and one loose in an open space is hard to recover."
+        "a": "Let it walk onto your hand or a tool, and never squeeze or restrain it. Do it in a closed room: a mantis jumps, a winged adult flies, and one loose in an open space is hard to recover."
       },
       {
         "q": "When should you never handle a praying mantis?",
@@ -34245,7 +34258,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1,
+    "sourceCount": 2,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -34275,7 +34288,7 @@
     "image": "/assets/images/praying-mantis-health-issues.jpg",
     "imageAlt": "Praying mantis mid-molt hanging from a branch inside its enclosure",
     "emoji": "🦗",
-    "lastReviewed": "2026-07-22",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -34310,8 +34323,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 3,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -34375,8 +34388,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 2,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1620,
     "imageHeight": 1080
@@ -34405,21 +34418,21 @@
     "image": "/assets/images/praying-mantis-tank-setup.jpg",
     "imageAlt": "Praying mantis enclosure with mesh lid, climbing branch, and misted substrate",
     "emoji": "🦗",
-    "lastReviewed": "2026-07-22",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "What size enclosure does a praying mantis need?",
-        "a": "Length and width at least twice the mantis's body length, height at least three times it. For an adult that lands near 8 by 8 by 12 inches as a floor. Nymphs are fine in something far smaller, like a vented 32-ounce deli cup."
+        "a": "Length and width at least twice the mantis's body length, height at least three times it, which lands an adult near 8 by 8 by 12 inches. Aim for four times its length in the drop from perch top to floor, the measurement a molt depends on. Nymphs do fine in a vented 32-ounce deli cup."
       },
       {
         "q": "What temperature does a praying mantis need?",
-        "a": "The commonly kept species, Carolina and Chinese among them, do fine at room temperature. A small heat mat only matters if the house runs cool. Never set the enclosure in direct sun: a confined space heats fast enough to kill."
+        "a": "The commonly kept species, Carolina and Chinese among them, do fine at room temperature, roughly 70 to 80°F. Stay under 88°F. A small heat mat only matters if the house runs cool. Never set the enclosure in direct sun: a confined space heats fast enough to kill."
       },
       {
         "q": "What humidity does a praying mantis enclosure need?",
-        "a": "60 to 80%, depending on species: tropical Ghost and Orchid mantises want the top of that band, temperate species less. Mist lightly once or twice a day, and read your own mantis's behavior rather than chasing an exact number blindly."
+        "a": "Species-dependent, and the spread is wide: a temperate Chinese mantis sits around 50 to 65%, while tropical Ghost and Orchid mantises want 70 to 80%. Mist lightly at least once a day, and read your own mantis's behavior rather than chasing an exact number blindly."
       },
       {
         "q": "What substrate is best for a praying mantis enclosure?",
@@ -34441,8 +34454,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 3,
+    "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -34472,7 +34485,7 @@
     "image": "/assets/images/quaker-parakeet-cost.jpg",
     "imageAlt": "Quaker parakeet perched beside its cage and accessories, representing the total cost of ownership",
     "emoji": "🦜",
-    "lastReviewed": "2026-09-07",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -34604,7 +34617,7 @@
     "image": "/assets/images/quaker-parakeet-handling.jpg",
     "imageAlt": "Quaker parakeet perched on an owner's hand, showing its bold, social temperament",
     "emoji": "🦜",
-    "lastReviewed": "2026-08-11",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -34664,7 +34677,7 @@
     "image": "/assets/images/quaker-parakeet-health-issues.jpg",
     "imageAlt": "Quaker parakeet undergoing an avian vet exam",
     "emoji": "🦜",
-    "lastReviewed": "2026-08-11",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -34779,7 +34792,7 @@
     "image": "/assets/images/quaker-parakeet-tank-setup.jpg",
     "imageAlt": "Quaker parakeet cage with varied perches and shreddable foraging toys",
     "emoji": "🦜",
-    "lastReviewed": "2026-08-11",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -34793,7 +34806,7 @@
       },
       {
         "q": "Does a Quaker parakeet need special lighting?",
-        "a": "About 3 to 4 hours of UVB a day supports vitamin D and calcium metabolism. Add a cuttlebone for extra calcium."
+        "a": "No, it is optional, and plenty of pet birds live their whole lives without it. Four hours a day is the cautious ceiling on a standard bulb. Keep a cuttlebone available for calcium regardless."
       },
       {
         "q": "Should a Quaker parakeet's cage have a nest box?",
@@ -34813,8 +34826,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1,
-    "headingCount": 8,
+    "sourceCount": 2,
+    "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 512,
     "imageHeight": 382
@@ -35218,7 +35231,7 @@
     "faqs": [
       {
         "q": "What is the most common rabbit emergency?",
-        "a": "GI stasis, where a rabbit's gut slows down or stops entirely, allowing gas to build up. A rabbit that hasn't eaten or passed stool in 8 to 12 hours is an emergency, not a wait-and-see situation, with eight hours the point to call a vet and twelve the point it is already urgent. See our dedicated GI stasis guide for the full picture."
+        "a": "GI stasis, where a rabbit's gut slows down or stops entirely, allowing gas to build up. A rabbit that hasn't eaten or passed stool in 8 to 12 hours is an emergency, not a wait-and-see situation, with eight hours the point to call a vet and twelve the point it is already urgent."
       },
       {
         "q": "Why do rabbits need dental checkups?",
@@ -35331,7 +35344,7 @@
     "faqs": [
       {
         "q": "How much space does a rabbit need?",
-        "a": "The House Rabbit Society puts it at 8 square feet of enclosure plus 24 square feet of exercise space for one or two rabbits, with at least 5 hours a day to run in it. In practice that means a foldable metal pen, 4x4 feet or bigger."
+        "a": "8 square feet of enclosure plus 24 square feet of exercise space for one or two rabbits, with at least 5 hours a day to run in it. In practice that means a foldable metal pen, 4x4 feet or bigger."
       },
       {
         "q": "Should a rabbit live indoors or outdoors?",
@@ -35646,7 +35659,7 @@
     "faqs": [
       {
         "q": "What is the single biggest health risk for pet rats?",
-        "a": "Chronic respiratory disease caused by the bacterium Mycoplasma pulmonis. Merck Veterinary Manual calls it the most common health problem in rats, and a survey of pet ratteries in the northwestern US found 95% of them positive for it. Once a rat develops the chronic form, Merck notes it rarely lives longer than 2 years, which makes clean, well-ventilated housing a genuine lifespan issue, not just a comfort one."
+        "a": "Chronic respiratory disease caused by the bacterium Mycoplasma pulmonis, the most common health problem in rats. A survey of pet ratteries in the northwestern US found 95% of them positive for it. Once a rat develops the chronic form it rarely lives longer than 2 years, which makes clean, well-ventilated housing a genuine lifespan issue, not just a comfort one."
       },
       {
         "q": "What are the signs of chronic respiratory disease in a rat?",
@@ -35762,7 +35775,7 @@
       },
       {
         "q": "What size cage does a rat need?",
-        "a": "PetMD lists 24x24x24 inches as the minimum for a single rat, recommending the largest habitat possible, and since rats must be kept in pairs or small groups, that minimum applies before adding a second or third rat, not after. PDSA guidance suggests cages built for ferrets or chinchillas are usually a good size."
+        "a": "24x24x24 inches is the minimum for a single rat, with the largest habitat possible better still, and since rats must be kept in pairs or small groups that minimum applies before adding a second or third rat, not after. Cages built for ferrets or chinchillas are usually a good size."
       },
       {
         "q": "How wide can the bar spacing be on a rat cage?",
@@ -36285,7 +36298,7 @@
       },
       {
         "q": "How long do red-footed tortoises live, and why does that matter for budgeting?",
-        "a": "50 to 70 years or more is commonly cited, with some care sheets putting well-kept individuals near 90. Like any pet tortoise, that's a commitment that can outlast the owner who bought it, worth planning for as seriously as the upfront cost."
+        "a": "50 to 70 years or more is the commonly cited range, and exceptionally well-kept individuals are reported near 90. Like any pet tortoise, that's a commitment that can outlast the owner who bought it, worth planning for as seriously as the upfront cost."
       }
     ],
     "relatedProducts": [
@@ -36367,7 +36380,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -36522,7 +36535,7 @@
       },
       {
         "q": "How does a 50-plus year lifespan affect housing planning?",
-        "a": "Growth is steady, roughly an inch of shell length a year through the first decade, and most of that growth happens in the first 5 to 10 years. Plan the enclosure around adult size from the start rather than upgrading repeatedly as a hatchling grows."
+        "a": "Fastest early, then tapering. Hatchlings emerge at 1.5 to 2 inches and reach roughly 3 to 4 inches by the first birthday, 7 to 9 inches by age 2, and 9 to 11 inches by age 5. Plan the enclosure around adult size from the start rather than upgrading repeatedly as a hatchling grows."
       },
       {
         "q": "Why does substrate matter so much for a red-footed tortoise?",
@@ -36586,7 +36599,7 @@
       },
       {
         "q": "What causes pyramiding in red-footed tortoises?",
-        "a": "Low humidity during the growing years and a diet too heavy in starch relative to fiber, according to a 2021 study on red-footed tortoise hatchlings specifically. It's permanent once it happens, so prevention through correct humidity and diet is the only real fix."
+        "a": "Low humidity during the growing years and a diet too heavy in starch relative to fiber, according to a controlled study on red-footed tortoise hatchlings specifically. It's permanent once it happens, so prevention through correct humidity and diet is the only real fix."
       },
       {
         "q": "What happens if a red-footed tortoise doesn't get enough animal protein?",
@@ -37237,7 +37250,7 @@
       },
       {
         "q": "How long do rosy boas live?",
-        "a": "20 to 30 years is typical in captivity, and documented individuals have lived past 30. Animal Diversity Web puts the captive average at 18 to 22 years with some animals well past that, which makes this small snake comparable in longevity to the much larger boa constrictor, a real commitment packed into a snake that never needs a bigger enclosure."
+        "a": "20 to 30 years is typical in captivity, documented individuals have lived past 30, and the captive average sits nearer 18 to 22. That makes this small snake comparable in longevity to the much larger boa constrictor, a real commitment packed into a snake that never needs a bigger enclosure."
       },
       {
         "q": "How does a rosy boa's cost compare to a boa constrictor's?",
@@ -37522,7 +37535,7 @@
     "slug": "rosy-boa-legal-guide",
     "title": "Is It Legal to Own a Rosy Boa? State-by-State Guide",
     "seoTitle": "Is a Rosy Boa Legal in Your State? Full Guide",
-    "excerpt": "New York City's health code bans 'any member of the family Boidae' by name, and a rosy boa, a docile 2 to 3 foot species, is technically a boid. It reads as banned in NYC on the exact same clause that catches the green anaconda. Everywhere else, it's one of the most broadly legal pet snakes around, with narrow exceptions in New Jersey and Hawaii.",
+    "excerpt": "New York City's health code bans 'any member of the family Boidae' by name, and a rosy boa, a docile species of 24 to 36 inches, is technically a boid. It reads as banned in NYC on the exact same clause that catches the green anaconda. Everywhere else, it's one of the most broadly legal pet snakes around, with narrow exceptions in New Jersey and Hawaii.",
     "date": "2026-09-26",
     "category": "Legal",
     "categories": [
@@ -37546,7 +37559,7 @@
     "faqs": [
       {
         "q": "Is a rosy boa illegal in New York City?",
-        "a": "Yes, on paper. NYC's health code bans 'any member, or hybrid offspring of the family Boidae,' naming the green and yellow anaconda only as examples, not an exhaustive list. A rosy boa is a boid, so it falls under the same clause even though the ordinance never mentions the species by name and the snake tops out around 2 to 3 feet."
+        "a": "Yes, on paper. NYC's health code bans 'any member, or hybrid offspring of the family Boidae,' naming the green and yellow anaconda only as examples, not an exhaustive list. A rosy boa is a boid, so it falls under the same clause even though the ordinance never mentions the species by name and the snake runs 24 to 36 inches, rarely over 4 feet."
       },
       {
         "q": "Does California restrict owning a pet rosy boa?",
@@ -37554,7 +37567,7 @@
       },
       {
         "q": "Is a rosy boa considered a 'large constrictor' anywhere?",
-        "a": "No. Every length-based constrictor rule we checked, Missouri's eight-foot dangerous-reptile registration, West Virginia's six-foot constrictor threshold, Ohio's twelve-foot-and-up python and anaconda list, sets its bar well above a rosy boa's 2 to 3 foot maximum size. Where rosy boas run into trouble, it's through a family-wide ban like NYC's Boidae clause, never a size test."
+        "a": "No. Every length-based constrictor rule we checked, Missouri's eight-foot dangerous-reptile registration, West Virginia's six-foot constrictor threshold, Ohio's twelve-foot-and-up python and anaconda list, sets its bar well above a rosy boa, which runs 24 to 36 inches and rarely tops 4 feet. Where rosy boas run into trouble, it's through a family-wide ban like NYC's Boidae clause, never a size test."
       }
     ],
     "relatedProducts": [],
@@ -37598,7 +37611,7 @@
     "faqs": [
       {
         "q": "What size enclosure does a rosy boa need?",
-        "a": "Young rosy boas do well in a 10 to 15 gallon terrarium. Adults, which typically reach 24 to 36 inches, are commonly kept in a 20 to 30 gallon enclosure, with current guidance increasingly favoring a roomier 36x18x18 inch setup as the higher-end recommendation. Either way, this is a dramatically smaller footprint than the 6 to 8 foot enclosure a boa constrictor needs as an adult."
+        "a": "Young rosy boas do well in a 10 to 15 gallon terrarium. Adults, which typically reach 24 to 36 inches, are commonly kept in a 20 to 30 gallon enclosure, and a roomier 36x18x18 inch setup is the higher-end recommendation. Either way, this is a dramatically smaller footprint than the 6 to 8 foot enclosure a boa constrictor needs as an adult."
       },
       {
         "q": "What temperature does a rosy boa enclosure need?",
@@ -37606,7 +37619,7 @@
       },
       {
         "q": "How humid should a rosy boa enclosure be?",
-        "a": "Well under 60 percent, with most sources recommending a baseline closer to 30 to 40 percent for most of the year. Bump that to roughly 40 to 50 percent only during the shed cycle, using a humid hide, then let it drop back down. This species tolerates brief humidity spikes, like a splash from the water dish, as long as the enclosure is allowed to dry back out, the goal is a dry baseline, not zero humidity at all times."
+        "a": "Well under 60 percent, with a baseline closer to 30 to 40 percent for most of the year. Bump that to roughly 40 to 50 percent only during the shed cycle, using a humid hide, then let it drop back down. This species tolerates brief humidity spikes, like a splash from the water dish, as long as the enclosure is allowed to dry back out, the goal is a dry baseline, not zero humidity at all times."
       },
       {
         "q": "What substrate works best for a rosy boa?",
@@ -38348,7 +38361,7 @@
     "image": "/assets/guides/savannah-monitor-legal.jpg",
     "imageAlt": "Savannah monitor on sand in close profile, its blunt snout, heavy neck and yellow-speckled grey scales clearly visible",
     "emoji": "🦎",
-    "lastReviewed": "2026-08-19",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [],
@@ -38387,7 +38400,7 @@
     "image": "/assets/images/savannah-monitor-tank-setup.jpg",
     "imageAlt": "Savannah monitor enclosure with deep diggable substrate, basking area, and a large water basin for full submersion",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-31",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -38412,6 +38425,10 @@
         "a": "Yes, and strongly: a T5 HO in the 10 to 12% range spanning about half the enclosure, mounted 14 to 16 inches above the basking area, plus a bright 6500K daylight bulb. Shift the photoperiod with the season, near 11 hours in winter and 13 in summer."
       },
       {
+        "q": "What and how often does a savannah monitor eat?",
+        "a": "Gut-loaded insects as the staple, with lean mice, chicks or freshwater fish in the occasional column. Juveniles eat daily or every other day, adults two to three times a week. Dust with calcium and add a multivitamin weekly."
+      },
+      {
         "q": "Why does a savannah monitor need a large water basin?",
         "a": "A basin big enough for the monitor to submerge its whole body, not a shallow dish. With the humid burrow, that is what keeps hydration and shedding on track; a big dry enclosure with a small water bowl isn't adequate no matter how large the footprint."
       }
@@ -38427,8 +38444,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 2,
+    "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -39408,7 +39425,7 @@
     "path": "/content/guides/stick-insect-cost-guide.mdx",
     "slug": "stick-insect-cost-guide",
     "title": "How Much Does a Stick Insect Really Cost? (And a Legal Note to Read First)",
-    "seoTitle": "Stick Insect Price: A Few Dollars, Plus $30 to $100 Setup",
+    "seoTitle": "Stick Insect Price: A Few Dollars, Plus $77 to $98 Setup",
     "excerpt": "Stick insects are cheap to buy and cheap to keep, but before any cost discussion, there's a legal detail worth understanding clearly, since it affects whether you can responsibly keep one at all.",
     "date": "2026-07-31",
     "category": "Invertebrates",
@@ -39428,7 +39445,7 @@
     "image": "/assets/images/stick-insect-cost.jpg",
     "imageAlt": "Camouflaged stick insect resting on a branch beside a small mesh-topped enclosure",
     "emoji": "🦋",
-    "lastReviewed": "2026-07-31",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -39442,7 +39459,7 @@
       },
       {
         "q": "What does the upfront setup cost for a stick insect?",
-        "a": "Roughly $30 to $100, covering a tall, mesh-topped enclosure, substrate, a spray bottle for misting, and an optional small heat or grow light that isn't required for most commonly kept species."
+        "a": "Roughly $77 to $98, covering a tall, mesh-topped enclosure, substrate, and a spray bottle for misting. The enclosure is most of it. An optional small heat or grow light adds more, and isn't required for most commonly kept species."
       },
       {
         "q": "What are the ongoing costs of keeping a stick insect?",
@@ -39466,8 +39483,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 1,
+    "headingCount": 8,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -39624,7 +39641,7 @@
     "image": "/assets/images/stick-insect-health-issues.jpg",
     "imageAlt": "Stick insect mid-molt hanging from the mesh top of its enclosure",
     "emoji": "🦋",
-    "lastReviewed": "2026-07-31",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -39687,7 +39704,7 @@
     "image": "/assets/images/stick-insect-tank-setup.jpg",
     "imageAlt": "Stick insect enclosure with mesh top, host plant cuttings, and misted substrate",
     "emoji": "🦋",
-    "lastReviewed": "2026-07-31",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -39726,8 +39743,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 2,
+    "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -39898,7 +39915,7 @@
     "faqs": [
       {
         "q": "What do sugar gliders eat in captivity?",
-        "a": "VCA splits it in thirds: pelleted kibble, a nectar or sap-based mixture, and a small number of insects every other day, alongside a calcium-based multivitamin and fresh vegetables and fruits. Leadbeater's mixture, BML, Wombaroo, Critter Love Complete, and Exotic Nutrition diets are the established formulated options."
+        "a": "It splits in thirds: pelleted kibble, a nectar or sap-based mixture, and a small number of insects every other day, alongside a calcium-based multivitamin and fresh vegetables and fruits. Leadbeater's mixture, BML, Wombaroo, Critter Love Complete, and Exotic Nutrition diets are the established formulated options."
       },
       {
         "q": "How much should I feed a sugar glider daily?",
@@ -39910,7 +39927,7 @@
       },
       {
         "q": "What's the correct calcium-to-phosphorus ratio for sugar gliders?",
-        "a": "Roughly 2:1, with some sources citing 1.5:1 to 2:1. In practice this means dusting or gut-loading insects with calcium before feeding and sprinkling a glider-specific multivitamin with calcium on food, some breeder guidance calls for daily dusting, with a vitamin A/D3 supplement dusted on insects and produce twice weekly."
+        "a": "Roughly 2:1, or a band of 1.5:1 to 2:1. In practice this means dusting or gut-loading insects with calcium before feeding and sprinkling a glider-specific multivitamin with calcium on food, either dusting daily or giving a vitamin A/D3 supplement on insects and produce twice weekly."
       },
       {
         "q": "What foods should sugar gliders avoid?",
@@ -39929,7 +39946,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1376,
@@ -40254,7 +40271,7 @@
     "image": "/assets/images/sulcata-tortoise-cost.jpg",
     "imageAlt": "Sulcata tortoise hatchling beside an outdoor enclosure under construction",
     "emoji": "🐢",
-    "lastReviewed": "2026-09-07",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -40390,7 +40407,7 @@
     "image": "/assets/images/sulcata-tortoise-feeding.jpg",
     "imageAlt": "Sulcata tortoise grazing on grass and hay",
     "emoji": "🐢",
-    "lastReviewed": "2026-08-10",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -40456,7 +40473,7 @@
     "image": "/assets/images/sulcata-tortoise-handling.jpg",
     "imageAlt": "Person hand-feeding a juvenile sulcata tortoise low to the ground",
     "emoji": "🐢",
-    "lastReviewed": "2026-07-23",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -40636,7 +40653,7 @@
     "image": "/assets/images/sulcata-tortoise-tank-setup.jpg",
     "imageAlt": "Outdoor sulcata tortoise enclosure with heated shelter and buried fencing",
     "emoji": "🐢",
-    "lastReviewed": "2026-07-23",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -40646,7 +40663,7 @@
       },
       {
         "q": "What temperature does a sulcata tortoise enclosure need?",
-        "a": "Basking 95 to 105°F, ambient 80 to 90°F, cool side 75 to 85°F, never sustained under 70°F. An outdoor shelter needs lightless heat once nights fall below 50°F, held at 70 to 75°F; where winters are cold, that shelter has to stay at 55 to 60°F for safe brumation, or the tortoise winters indoors."
+        "a": "Basking 95 to 105°F, ambient 80 to 90°F, cool side 75 to 85°F, never sustained under 70°F. An outdoor shelter needs lightless heat once nights fall below 50°F, held at 70 to 75°F. Where winters are cold, the tortoise winters indoors: a Sahel species has no cold-season adaptation, so dormancy is not an option here the way it is for a Testudo."
       },
       {
         "q": "Does humidity matter for a sulcata tortoise?",
@@ -40704,17 +40721,17 @@
     "image": "/assets/images/sulcata-tortoise-vs-russian-tortoise.jpg",
     "imageAlt": "A sulcata tortoise and a Russian tortoise side by side for size comparison",
     "emoji": "🐢",
-    "lastReviewed": "2026-08-25",
+    "lastReviewed": "2026-09-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "Can a sulcata tortoise be kept indoors permanently?",
-        "a": "Not realistically, once it's grown. A hatchling can start on an indoor tortoise table, but sulcatas are the third-largest tortoise species on earth, reaching 70 to 150+ pounds with a shell 24 to 30 inches long, and a full-grown adult needs outdoor space measured in dozens to hundreds of square feet. A Russian tortoise, by contrast, can live comfortably on an indoor tortoise table for its entire life."
+        "a": "Not realistically, once it's grown. A hatchling can start on an indoor tortoise table, but sulcatas are the third-largest tortoise species on earth, reaching 80 to 110 pounds with a shell 24 to 30 inches long, and an adult needs outdoor space measured in dozens to hundreds of square feet. A Russian tortoise can live comfortably on an indoor table for its entire life."
       },
       {
         "q": "How big does a sulcata tortoise get compared to a Russian tortoise?",
-        "a": "There's no real comparison. An adult sulcata can weigh 70 to 150+ pounds, on par with a large dog. An adult Russian tortoise weighs just 2 to 3 pounds and stays around 6 to 10 inches long, small enough to hold in two hands for its whole life."
+        "a": "There's no real comparison. An adult sulcata weighs 80 to 110 pounds, and a large male can pass 200, on par with a large dog. An adult Russian tortoise weighs just 2 to 3 pounds and stays around 6 to 10 inches long, small enough to hold in two hands for its whole life."
       },
       {
         "q": "Which tortoise is better for a beginner, sulcata or Russian?",
@@ -40907,7 +40924,7 @@
     "image": "/assets/images/swordtail-feeding.jpg",
     "imageAlt": "A swordtail feeding on flakes near the surface of a planted aquarium",
     "emoji": "🐠",
-    "lastReviewed": "2026-09-11",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -40967,7 +40984,7 @@
     "image": "/assets/images/swordtail-handling.jpg",
     "imageAlt": "A net gently guiding a swordtail during a tank transfer instead of using bare hands",
     "emoji": "🐠",
-    "lastReviewed": "2026-09-11",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -41027,7 +41044,7 @@
     "image": "/assets/images/swordtail-health-issues.jpg",
     "imageAlt": "Close-up of a healthy swordtail in a well-maintained aquarium showing intact fins and steady coloring",
     "emoji": "🐠",
-    "lastReviewed": "2026-09-12",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -41891,7 +41908,7 @@
     "image": "/assets/images/tiger-salamander-cost.jpg",
     "imageAlt": "Tiger salamander partially burrowed in deep moist substrate in a simple tank setup",
     "emoji": "🦎",
-    "lastReviewed": "2026-08-01",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -41913,7 +41930,7 @@
       },
       {
         "q": "How long do tiger salamanders live, and why does that matter for budgeting?",
-        "a": "12 to 15 years is typical, and a recognized longevity database records a captive maximum of 25 years. Wildlife agencies corroborate 10 to 16 years in the wild, up to 25 in captivity. That long lifespan, not the modest purchase price or monthly cost, is the commitment to weigh before buying."
+        "a": "Budget for 12 to 15 years as the normal case, knowing ordinary captive adults have reached 16 and the record stands at 25. Wild animals are documented at 10 years or more, with no firm upper bound. The purchase price and the monthly cost are both small, so the years are the part to weigh before buying."
       },
       {
         "q": "What do vet visits cost for a tiger salamander?",
@@ -41931,8 +41948,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 3,
+    "headingCount": 8,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -42220,7 +42237,7 @@
     "image": "/assets/images/tiger-salamander-tank-setup.jpg",
     "imageAlt": "Tiger salamander partially burrowed in deep moist substrate, showing its burrow entrance",
     "emoji": "🦎",
-    "lastReviewed": "2026-08-01",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -42259,8 +42276,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 7,
+    "sourceCount": 3,
+    "headingCount": 10,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -42678,7 +42695,7 @@
     "faqs": [
       {
         "q": "What size enclosure does a tokay gecko need?",
-        "a": "18 by 18 by 36 inches as a minimum, and bigger is always better. Vertical space matters more than floor space for an arboreal species, and each gecko gets its own enclosure, since tokays are highly territorial."
+        "a": "18 by 18 by 36 inches as a minimum, and bigger is always better. Vertical space matters more than floor space for an arboreal species. One gecko per enclosure is the default, since tokays are highly territorial and two males will fight."
       },
       {
         "q": "What temperatures does a tokay gecko need?",
@@ -42691,6 +42708,10 @@
       {
         "q": "Does a tokay gecko need UVB?",
         "a": "Not strictly, since a nocturnal gecko can get its vitamin D3 from diet, but low-level UVB at 5% or forest strength brings real benefit. Swap the bulb every 6 to 12 months."
+      },
+      {
+        "q": "What do tokay geckos eat, and how often?",
+        "a": "Gut-loaded feeder insects, crickets and dubia roaches among them, with nothing wider than the gecko's own head. Juveniles eat daily and full-grown adults every other day, in a feeding window of about five minutes. Dust with calcium and vitamin D3, and keep a shallow dish of dechlorinated water available."
       },
       {
         "q": "What substrate is safe for a tokay gecko?",
@@ -42710,8 +42731,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1,
-    "headingCount": 8,
+    "sourceCount": 2,
+    "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -42930,7 +42951,7 @@
       },
       {
         "q": "How long do uromastyx live?",
-        "a": "15 to 20 years is commonly cited. ReptiFiles notes that with high-quality care, uromastyx can live over 25 years, possibly reaching 60."
+        "a": "15 to 20 years is commonly cited. With high-quality care, uromastyx can live over 25 years, possibly reaching 60."
       },
       {
         "q": "Are cheap all-in-one starter kits a good way to save money?",
@@ -43048,17 +43069,17 @@
     "image": "/assets/images/uromastyx-feeding.jpg",
     "imageAlt": "Uromastyx eating chopped dark leafy greens and squash under a basking light",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-30",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "How often should I feed my Uromastyx?",
-        "a": "Babies and juveniles get fresh greens daily. Adults are fed less often, but sources disagree meaningfully, anywhere from 4 to 5 times a week down to 2 to 4 times a week, with overfeeding described as a real, common risk in this species, not just a hypothetical one."
+        "a": "Babies and juveniles get fresh greens daily. Adults are fed less often, anywhere from 2 to 4 times a week up to 5 to 7 days a week, and lean toward the less-frequent end, since overfeeding is described as a real, common risk in this species, not just a hypothetical one."
       },
       {
         "q": "Are Uromastyx strictly herbivores?",
-        "a": "Mostly, and this is debated. Some traditional care sheets allow small amounts of mealworms occasionally, but the experienced-keeper community argues for treating them as strict herbivores, citing wild-diet studies where insects made up only about 1 to 6% of stomach contents, likely eaten by accident. Treat insects as optional at best, not a required part of the diet."
+        "a": "Mostly. Some traditional care sheets allow small amounts of mealworms occasionally, but wild-diet studies put insects at only about 1 to 6% of stomach contents, likely eaten by accident, so treat insects as optional at best, not a required part of the diet."
       },
       {
         "q": "When should I put food in the enclosure?",
@@ -43236,7 +43257,7 @@
     "image": "/assets/images/uromastyx-tank-setup.jpg",
     "imageAlt": "Uromastyx enclosure with deep burrowing substrate, basking stack, and halogen lighting",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-24",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -43246,7 +43267,7 @@
       },
       {
         "q": "How hot does a uromastyx basking spot need to be?",
-        "a": "The basking surface has to hit 120 to 130F, and giant Egyptians want at least 130F. Cool side around 85F, night around 65F, usually with no supplemental heat needed."
+        "a": "The basking surface has to hit 110 to 120F, and giant Egyptians want at least 130F. Cool side around 85F, night around 65F, usually with no supplemental heat needed."
       },
       {
         "q": "How humid should a uromastyx enclosure be?",
@@ -43276,7 +43297,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1,
+    "sourceCount": 2,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -43959,7 +43980,7 @@
       },
       {
         "q": "What temperature and humidity does a veiled chameleon need?",
-        "a": "A basking spot around 85°F for females and juveniles, up to 90 to 95°F for adult males, with ambient temperature 72 to 80°F and a beneficial night drop to 55 to 65°F. Humidity is moderate, raised through morning and evening misting plus a dripper or overnight cool-mist humidifier using distilled water."
+        "a": "A basking spot around 85°F for females and juveniles, up to 90 to 95°F for adult males, with ambient temperature 72 to 80°F and a beneficial night drop to 55 to 65°F. Humidity runs 40 to 50% by day and 80 to 100% at night, raised through morning and evening misting plus a dripper or overnight cool-mist humidifier using distilled water."
       },
       {
         "q": "What UVB setup does this species need?",
@@ -43981,7 +44002,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 3,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -44144,7 +44165,7 @@
       },
       {
         "q": "How long do White's tree frogs live, and how does that affect budgeting?",
-        "a": "The Smithsonian's National Zoo puts the average at about 16 years, and one individual reached 21 in human care. Other sources are slightly more conservative at 10 to 15-plus years. Either way, plan on well over a decade of ongoing care."
+        "a": "The average is about 16 years, and one individual reached 21 in human care. More conservative figures run 10 to 15-plus years. Either way, plan on well over a decade of ongoing care."
       }
     ],
     "relatedProducts": [
@@ -45063,7 +45084,7 @@
     "image": "/assets/images/zebra-danio-feeding.jpg",
     "imageAlt": "A school of zebra danios feeding near the surface of a planted aquarium",
     "emoji": "🐠",
-    "lastReviewed": "2026-09-13",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -45185,7 +45206,7 @@
     "image": "/assets/images/zebra-danio-health-issues.jpg",
     "imageAlt": "Close-up of a healthy zebra danio swimming in a well-maintained planted aquarium",
     "emoji": "🐠",
-    "lastReviewed": "2026-09-13",
+    "lastReviewed": "2026-09-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -45341,7 +45362,7 @@
       },
       {
         "q": "How much does vet care cost for a zebra finch, and how long is this commitment?",
-        "a": "Avian vets are a smaller, pricier specialty than general small-animal vets, and an exam typically costs more than a routine cat or dog visit. VCA Hospitals recommends the first checkup within 1 to 2 weeks of bringing a bird home, then at least annually after that, over a lifespan commonly cited as 5 to 10 years in captivity, occasionally longer."
+        "a": "Avian vets are a smaller, pricier specialty than general small-animal vets, and an exam typically costs more than a routine cat or dog visit. VCA Hospitals recommends the first checkup within 1 to 2 weeks of bringing a bird home, then at least annually after that, over a lifespan of typically 5 to 7 years in captivity."
       }
     ],
     "relatedProducts": [
@@ -45458,7 +45479,7 @@
     "faqs": [
       {
         "q": "Should a zebra finch's diet be mostly seeds or pellets?",
-        "a": "Veterinary sources increasingly favor pellets. VCA Animal Hospitals recommends pellets make up around 70% of a finch's diet, with roughly 20% fresh produce and seed limited to about a teaspoon per bird per day. PetMD similarly puts pellets at 60 to 70%+ of the diet, since all-seed diets are deficient in vitamins, minerals, and protein."
+        "a": "Mostly pellets. Around 70% of the diet, and 60% at an absolute minimum, with roughly 20% fresh produce and seed limited to about a teaspoon per bird per day. All-seed diets are deficient in vitamins, minerals, and protein."
       },
       {
         "q": "Is an all-seed diet harmful to zebra finches?",
