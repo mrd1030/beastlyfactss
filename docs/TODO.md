@@ -391,8 +391,8 @@ share a silhouette. That is roughly 25 species, about 175 images.
 ## 7. Router hubs, species by species
 
 Checked 2026-09-15 against `src/lib/data/guides/*.js`: a hub is a router hub
-when its entry carries `firstWeek` rows (RULES, Hubs). 80 of 108 done, 28
-still rendering the legacy care sheet. Batches of five, one branch each,
+when its entry carries `firstWeek` rows (RULES, Hubs). 84 of 108 done, 24
+still rendering the legacy care sheet, and all of them are dogs or cats. Batches of five, one branch each,
 per the READMEFIRST process. Dogs and cats last.
 Batches I and J both merged to main 2026-09-15 as 05a6fa6b. Batch I
 (African fat-tail gecko, corydoras catfish, red-footed tortoise, degu,
@@ -410,19 +410,22 @@ and checked on branch
 claude/bristlenosepleco-discus-swordtail-zebradanio-ghostshrimp 2026-09-15, not
 merged. Pass grade: pass, after fixes. Fish are finished: this batch took the
 last four.
-Batch O (giant millipede, jumping spider, hissing cockroach, stick insect) done
-and checked on branch claude/invertebrates-readmefirst-batch-ayolwx 2026-09-15,
-not merged. Four species rather than five, because that is what invertebrates
-had left. Pass grade B. Invertebrates are finished. That makes 80 router hubs;
-the 28 left are lizards (3), small mammals (1), cats (10) and dogs (14), so
-every remaining batch after fire skink, Jackson's chameleon, uromastyx and
-flying squirrel is a dog or cat batch.
+Batch O (giant millipede, jumping spider, hissing cockroach, stick insect) done,
+checked and merged to main 2026-09-15 as 84c4b559. Four species rather than
+five, because that is what invertebrates had left. Pass grade B. Invertebrates
+are finished.
+Batch P (fire skink, Jackson's chameleon, uromastyx, flying squirrel) done and
+checked on branch claude/invertebrates-readmefirst-batch-ayolwx 2026-09-15, not
+merged. Four species again, because that is what lizards and small mammals had
+left between them. Pass grade C+. Lizards and small mammals are finished. That
+makes 84 router hubs; the 24 left are cats (10) and dogs (14), so every batch
+from here is a dog or cat batch.
 Batch J (mourning gecko, ackie monitor, garter snake, oscar, amano
 shrimp) passed its check at grade C+. Next is batch K: pick five, one per
 class, where a set from a recent batch points at them. Worker Opus 5 high effort, one Fable closing check per batch (the
 batch prompt in READMEFIRST has the reasoning).
 
-Done (65):
+Done (69):
 
 - [x] axolotl, White's tree frog
 - [x] African grey, budgie, cockatiel, cockatoo, conure, lovebird
@@ -452,17 +455,19 @@ Done (65):
 - [x] bristlenose pleco, discus, swordtail, zebra danio, ghost shrimp
       (batch N, on branch 2026-09-15, not merged)
 - [x] giant millipede, jumping spider, hissing cockroach, stick insect
-      (batch O, on branch 2026-09-15, not merged)
+      (batch O, merged to main 2026-09-15)
+- [x] fire skink, Jackson's chameleon, uromastyx, flying squirrel
+      (batch P, on branch 2026-09-15, not merged)
 
-To do (28):
+To do (24):
 
 - [ ] Amphibians (0): none left, fire-bellied toad was the last one
 - [ ] Birds (0): none left, quaker parakeet was the last one
 - [ ] Fish (0): none left, batch N took the last four
 - [ ] Geckos (0): none left, leaf-tailed gecko was the last one
 - [ ] Invertebrates (0): none left, batch O took the last four
-- [ ] Lizards (3): fire skink, Jackson's chameleon, uromastyx
-- [ ] Small mammals (1): flying squirrel
+- [ ] Lizards (0): none left, batch P took the last three
+- [ ] Small mammals (0): none left, flying squirrel was the last one
 - [ ] Snakes (0): none left, rosy boa was the last one
 - [ ] Cats (10): universal, American shorthair, Bengal, domestic shorthair,
       Maine Coon, Persian, Ragdoll, Scottish Fold, Siamese, Sphynx
@@ -509,7 +514,9 @@ is why they kept getting deferred. Do them once section 7 is finished.
       glider, tarantula and uromastyx. Koi is still on it, so batch K did not
       actually clear the five it claimed, and the earlier count of 18 was wrong
       in both directions. Re-run the grep rather than trusting this number. Fire
-      skink and uromastyx are in batch P, so two more clear themselves there. Shop copy with the product
+      skink and uromastyx were in batch P, which cleared both. The grep returns 9
+      as of 2026-09-15: corydoras catfish, gargoyle gecko, gerbil, koi, neon tetra,
+      pacman frog, red-eared slider, sugar glider and tarantula. Shop copy with the product
       missing: "Other quantities are available and a proper depth needs
       several", "and other sizes are available" tacked onto an affiliate
       link, "Other flavors and sizes are available". Most are species whose

@@ -893,10 +893,56 @@ two sets whose call-a-vet list lives on the feeding guide rather than the health
 guide and correctly re-sourced the card to it. Finding the right page is the
 part that needs judgment; pasting from it is the part that keeps going wrong.
 
-Next up is batch P. The one-per-class rule is gone for good: lizards (fire skink,
-Jackson's chameleon, uromastyx) and the flying squirrel are all that is left
-before dogs and cats, so batch P is those four, and every batch after it is a dog
-or cat batch. What is left, by class, is in docs/TODO.md section 7.
+Batch O merged to main 2026-09-15 as 84c4b559.
+
+Batch P (fire skink, Jackson's chameleon, uromastyx, flying squirrel), four
+species again because that is what lizards and small mammals had left between
+them, done and checked on branch claude/invertebrates-readmefirst-batch-ayolwx
+2026-09-15, not merged. Four router hubs, 127 first-week rows, one reader pass
+per species and one Fable check. Pass grade C+, the lowest since batch J, and
+the split in it is the thing to read before batch Q: every mechanical item came
+back clean (12 of 12 hub FAQs verbatim, links within limits, voice flat against
+base, every frontmatter copy moved, scope clean) and every research item failed
+the same way batch M failed.
+
+Four findings, and the first three are one finding wearing different clothes.
+
+A Diet Basics section cited two sources and stated four things neither of them
+says: a feeder list with three insects that appear in neither, a feeding
+frequency neither gives at all, "nothing wider than the head" where the source
+says the space between the chameleon's eyes, and a 24-hour gut-load on named
+vegetables that is nobody's. This is the third batch running where a sourced
+section was written from what the writer already believed and then had sources
+attached. The rule that catches it is the same one batch M wrote down: after
+writing a sentence, read the source back against the sentence.
+
+De-narration is now the single most dangerous edit in this process, because it
+rewrites a claim while looking like a formatting change. This batch inverted a
+condition ("lean toward the less-frequent end if your uromastyx is holding
+weight easily" became "go higher only if"), turned two attributed hedges into
+flat assertions, and invented a false "the same volume in a different shape"
+about 24x24x36 and 30x18x36, which differ by 1,296 cubic inches, then copied it
+onto three pages and a hub. Diff a de-narrated sentence against the original
+claim word by word, and if the rewrite adds a mechanism, a reason or an
+equivalence the original did not have, it is a new claim and needs a source.
+
+Emergency cards written rather than grepped, on three of four species, which is
+the sixth batch running. There is nothing left to say about this one that
+READMEFIRST has not already said four times.
+
+And a number decided against the source ranking, which is new. The uromastyx
+basking range was settled at ReptiFiles' 120 to 130F without opening the figure
+the vs-bearded-dragon guide cited: Long Island Bird & Exotics, a veterinary
+hospital, gives 110 to 120F, and a vet hospital outranks a husbandry reference.
+The check reversed it across seven places and filed the question in TODO section
+8, since it moves a husbandry number a keeper acts on. Open the source on both
+sides before deciding which page wins, not just the side you expect to win.
+
+That makes 84 router hubs. The 24 left are cats (10) and dogs (14), so batch Q
+is the first dog or cat batch and there is no more class spread to pick from.
+docs/TODO.md section 7 has them; section 8 has the queue, which now runs to
+four batches' worth of deferred work and is the thing to clear once the hubs
+are done. What is left, by class, is in docs/TODO.md section 7.
 
 The old batch J note follows for the reasoning, since it is the pattern
 to repeat: mourning gecko, ackie monitor, garter snake, oscar,
