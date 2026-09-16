@@ -146,7 +146,7 @@ export const lizardGuides = [
         { label: "Check the law first", value: "Florida banned new pet tegus on April 29, 2021. Georgia, Alabama, Louisiana, Hawaii, DC, and New York City ban one; New Mexico and New Jersey want permits; Minnesota allows a permitted breeder's only.", source: "argentine-tegu-legal-guide" },
         { label: "Day one", value: "Quarantine 3 to 6 months on plain paper towel with dedicated tools, the quarantined animal serviced last.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "8 by 4 by 4 feet minimum for an adult male, many keepers go to 10 by 5 by 5 or a room. A hatchling starts around 40 gallons and outgrows it inside a year. The ready-made 8-foot PVC unit is 8x2x2, so adult housing is a DIY build.", source: "argentine-tegu-tank-setup-guide" },
-        { label: "Temperature", value: "Basking 100 to 115F, warm ambient in the 90s, cool side around 80F, nights to 65F. A cluster of basking bulbs or a radiant heat panel on a heavy-duty thermostat rated for the wattage.", source: "argentine-tegu-tank-setup-guide" },
+        { label: "Temperature", value: "Basking 100 to 110F, warm ambient in the 90s, cool side around 80F, nights to 65F. A cluster of basking bulbs or a radiant heat panel on a heavy-duty thermostat rated for the wattage.", source: "argentine-tegu-tank-setup-guide" },
         { label: "Humidity and substrate", value: "70 to 80%, from 12 to 18 inches or more of cypress mulch, coconut fiber, or topsoil that holds a burrow, a large water tub, and usually an automatic mister. Tegus dig and brumate in that burrow.", source: "argentine-tegu-tank-setup-guide" },
         { label: "UVB", value: "A 46-inch T5 HO at 12 to 14%, over a quarter to half the length on the warm side, targeting a UVI of 3.0 to 4.0, with a 6500K LED, on a 12 to 14 hour day.", source: "argentine-tegu-tank-setup-guide" },
         { label: "Feeding frequency", value: "By age: daily when young, every other day from one to three years, every third day past three. Adults run to obesity, so weigh yours.", source: "argentine-tegu-tank-setup-guide" },
@@ -180,7 +180,7 @@ export const lizardGuides = [
     routes: [
       { slug: "argentine-tegu-legal-guide", line: "Florida's prohibited list with the dates, the closed grandfather window, and the eight other jurisdictions that ban or gate one." },
       { slug: "argentine-tegu-cost-guide", line: "$200 to $500 for the animal, a build that often exceeds $1,000 to $3,000, and why the enclosure you can buy is not the one you need." },
-      { slug: "argentine-tegu-tank-setup-guide", line: "8x4x4 as a floor, 100 to 115F basking, 70 to 80% humidity, 12 to 18 inches of substrate, and the feeding schedule by age." },
+      { slug: "argentine-tegu-tank-setup-guide", line: "8x4x4 as a floor, 100 to 110F basking, 70 to 80% humidity, 12 to 18 inches of substrate, and the feeding schedule by age." },
       { slug: "argentine-tegu-handling-guide", line: "Why the dog comparison is earned rather than marketing, reading a tegu by its size, the bite protocol, and the season handling stops." },
       { slug: "argentine-tegu-health-issues-guide", line: "MBD, respiratory infection, parasites and the obesity this species is genuinely prone to, with what each one looks like." },
       { slug: "argentine-tegu-enrichment-guide", line: "Borrowed monitor problem-solving evidence handled honestly, substrate depth as the biggest decision, and puzzle feeding a lizard that will actually work one." },

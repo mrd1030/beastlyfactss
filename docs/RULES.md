@@ -107,7 +107,11 @@ exists to state it.
   they push the actual instruction further down the page.
 - Name a source in the body only when the name is the fact: a legal citation, a
   named study whose authors carry the claim, or a manufacturer's spec for its
-  own product.
+  own product. One more exception: when two or three veterinary manuals each
+  contribute a different part of one symptom list, or when the spread between
+  sources is itself the instruction (adult size, lifespan), naming them inline
+  is allowed. The quaker parakeet health guide and the Argentine tegu handling
+  guide are the reference. Everywhere else the rule above stands.
 - De-attributing is not de-quoting. Stripping a source name from around wording
   that is still the source's wording leaves an unmarked lift. Rewrite the claim
   in your own words instead.

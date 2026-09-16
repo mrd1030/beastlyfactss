@@ -610,37 +610,44 @@ is why they kept getting deferred. Do them once section 7 is finished.
         one. If the honest answer is that there is no intervention and
         prevention is the whole of it, the guide should say that rather than
         trailing off. (batch N)
+        - DONE 2026-09-16: it says that now, with the tweezers last resort named and a link to shrimp-molting-guide for the prevention.
       - Zebra danio jump height. Both the tank setup and handling guides put it
         at 20 to 30cm on housedpet.com alone, which is the weakest source in
         either set and loses to almost anything under the ranking in
         docs/RULES.md. The figure is plausible and consistent across the two
         pages and nothing better turned up in the batch N pass, so it stays until
         someone finds a real source or a reason to drop the number. (batch N)
+        - Left as is 2026-09-16.
       - Rosy boa lifespan. The cost guide's FAQ carries "20 to 30 typical" beside
         "the captive average sits nearer 18 to 22". ADW confirms both 18 to 22
         and past 30, so neither is wrong, but nothing in that page's Sources
         shows what the 20 to 30 rests on, and settling it ripples into the
         encyclopedia and the overview. (batch K)
+        - DONE 2026-09-16: settled on ADW's 18 to 22 captive average with past 30 documented, across the cost guide, its excerpt and seoDescription, the encyclopedia entry and the three-species overview.
       - Fire-bellied toad feeding schedule. PetMD, the vet-tier source, gives
         adults "once or twice a week"; Amphibian Care and Smithsonian both sit at
         every two to three days, which is what the page carries. The vet-tier
         source is the outlier of three, which is the one shape the ranking rule
         does not resolve on its own. (batch L)
+        - DONE 2026-09-16: every two to three days stays, with PetMD's once or twice a week named as the lean end of the same range.
       - Fire-bellied toad water depth. Amphibian Care's "about 3 inches" against
         PetMD's "1- to 2-inch-deep". PetMD's figure would contradict the page's
         standing "deep enough to genuinely swim" instruction, so one of the two
         claims has to give and that is a husbandry call, not a ranking call.
         (batch L)
+        - DONE 2026-09-16: 3 inches stays, the toad swims; PetMD's 1 to 2 inches is named as the floor for a land-heavy layout.
       - Argentine tegu enclosure and basking. LafeberVet gives 6ft x 3ft x 3ft
         and a 95 to 100F basking range against the setup guide's 8x4x4 and 100 to
         115F. Both tegu deep dives agree with each other and the reader graded
         that page A-, so a vet-tier source sitting below the site's own numbers
         on both figures wants a deliberate decision. (batch L)
+        - DONE 2026-09-16: enclosure stays 8x4x4 with LafeberVet's 6x3x3 named as the floor and the reason for the larger figure given; basking moved to 100 to 110F, inside both published ranges, on the setup guide, FAQ, seoDescription, hub row and route line.
       - Leaf-tailed gecko basking. Reptile Supply gives an 80 to 84F basking
         area, 68 to 76F cool zone and a 62F night minimum for the genus; the
         setup guide that now cites it says a basking source "can be actively
         dangerous" and gives 68 to 75 by day. That is a genus-level figure
         against a species-specific warning about a montane animal. (batch M)
+        - DONE 2026-09-16: the setup guide now names the 80 to 84F genus figure and says it is for the lowland species, not this montane one.
 
       Needs a style decision, then one pass to apply it everywhere:
       - Source narration in a symptom list. The quaker parakeet health guide
@@ -649,17 +656,21 @@ is why they kept getting deferred. Do them once section 7 is finished.
         list, the attribution is arguably doing real work, and no reader has
         flagged it. Either it is an exception worth writing into RULES or it is
         the same defect the batches keep de-narrating. (batch L)
+        - DONE 2026-09-16: written into RULES.md as the one exception, with the quaker health and tegu handling guides as the reference.
       - The Argentine tegu handling guide's pre-existing sentence naming
         LafeberVet against ReptiFiles on adult size, which is the same question
         on a page where the spread genuinely is the point. (batch L)
+        - DONE 2026-09-16: covered by the same RULES exception.
 
       Small, mechanical, just not in any batch's scope:
       - The molly cost guide's Sources block lists Splashy Fish Store, a retailer
         page RULES does not want as a source. Deleting a Sources entry is on the
         Never list, so it needs replacing rather than removing. (batch L)
+        - DONE 2026-09-16: replaced with Aquarium Co-Op's molly care guide, opened, which carries the 20-gallon floor and the sex ratio; the price-check line no longer names the store.
       - `praying-mantis-ootheca-guide.mdx` carries two pre-existing voice errors,
         an intensifier in the heading "What an Ootheca Actually Is" and one in an
         FAQ answer. (batch L)
+        - Checked 2026-09-16: the ootheca guide no longer trips check-voice.
       - DONE 2026-09-16. `argentine-tegus-are-not-venomous.mdx` carried two pre-existing voice
         errors. The ootheca guide no longer trips the checker. (batch L)
       - DONE 2026-09-16, the prose now says typically 2 to 3 feet and rarely over 4. The rosy boa encyclopedia's description prose says "Rarely exceeding 3
