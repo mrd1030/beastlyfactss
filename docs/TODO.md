@@ -759,3 +759,14 @@ is why they kept getting deferred. Do them once section 7 is finished.
       nowhere in the sidebar. Legal is not a standard suffix, so nothing
       auto-detects it and check-related-articles does not catch it. One pass
       over every species with a legal guide.
+
+- [ ] eslint does not see the data files at all. `eslint.config.js` has a
+      top-level ignores block listing `src/lib/**` alongside `ds-bundle/**`,
+      `dist/**` and `src/components/ui/**`, so every `npx eslint
+      src/lib/data/guides/<file>.js` run exits 0 with no rules applied, and
+      running it on the directory prints "all of the files matching the glob
+      pattern are ignored" and also exits 0. That means the guides data, which
+      is where the hubs live, has had no lint coverage during any batch. Decide
+      whether the ignore is deliberate (it may predate the data files moving
+      under src/lib) and either narrow it or stop listing eslint as a gate for
+      these files. Found 2026-09-16 during the hub row cap pass.
