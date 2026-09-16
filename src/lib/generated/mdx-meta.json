@@ -10032,6 +10032,62 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/canary-feeding-guide.mdx",
+    "slug": "canary-feeding-guide",
+    "title": "Canary Feeding: A Teaspoon or Two a Day, Mostly Pellets, and the Seed Diet That Runs Short",
+    "seoTitle": "What Do Canaries Eat? Diet and Feeding Schedule",
+    "excerpt": "A canary eats one to two teaspoons a day, and the argument is over what is in the spoon. Here is the pellet share the vets give, the produce that makes up the rest, the egg food that carries a molt, the cuttlebone that covers calcium, why grit is wrong for this bird, and how to read a canary that stops eating.",
+    "date": "2026-12-11",
+    "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
+    "tags": [
+      "Canary",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Bird Diet",
+      "Pellets",
+      "Seed",
+      "Molt"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/canary-feeding.jpg",
+    "imageAlt": "A yellow canary at a small dish of pellets with a sprig of leafy greens clipped to the cage bars beside it",
+    "emoji": "🐦",
+    "lastReviewed": "2026-12-11",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much should a canary eat a day?",
+        "a": "About one to two teaspoons per bird per day of a pelleted diet with a small amount of seed, plus a little fresh produce. For a bird that weighs 12 to 30 grams, that is a measured amount put out each morning, not a permanently heaped dish."
+      },
+      {
+        "q": "Should a canary eat seed or pellets?",
+        "a": "Mostly pellets. The veterinary figures run from at least 60 to 70 percent pellets up to 75 to 80, with seed a small part and never the whole diet. An all-seed diet is short on vitamins, minerals, protein and calcium, and vitamin A deficiency is the disease that follows it. Move a seed bird over gradually, never by pulling the seed."
+      },
+      {
+        "q": "Does a canary need grit?",
+        "a": "No. Canaries hull their seeds before eating them, so they do not need grit to grind them, and grit should not be offered. A cuttlebone is the mineral a canary does need, for calcium and trace minerals."
+      },
+      {
+        "q": "Why has my canary stopped eating?",
+        "a": "A canary that stops eating is an emergency within a day, because a bird this small has no reserve. The molt costs appetite and needs extra protein rather than less food, a new pellet may not be recognized as food, and a fluffed, quiet bird sitting low is sick. Any canary off food for a day sees an avian vet."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/canary-handling-guide.mdx",
     "slug": "canary-handling-guide",
     "title": "Canaries Aren't Really Handled, and That's the Point",
@@ -17795,6 +17851,65 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/fire-bellied-toad-feeding-guide.mdx",
+    "slug": "fire-bellied-toad-feeding-guide",
+    "title": "Fire-Bellied Toad Feeding: Live Prey It Has to Leap For, Two to Six Items Every Few Days, and Nothing Hard-Shelled",
+    "seoTitle": "What Do Fire-Bellied Toads Eat? Feeding Schedule",
+    "excerpt": "A fire-bellied toad cannot flick its tongue, so it leaps at what moves and ignores what does not. Here is the live-only rule, the two-to-six-item portion every two to three days, the head-width prey size, the calcium on every feeding, the hard-shelled feeders that impact like gravel, and why a toad that stops eating is usually cold or in bad water.",
+    "date": "2026-12-15",
+    "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
+    "tags": [
+      "Fire-Bellied Toad",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Amphibian Diet",
+      "Feeding Schedule",
+      "Gut Loading",
+      "Calcium"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/fire-bellied-toad-feeding.jpg",
+    "imageAlt": "A green and black fire-bellied toad mid-leap toward a cricket on a mossy bank beside shallow water",
+    "emoji": "🐸",
+    "lastReviewed": "2026-12-15",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much and how often should I feed a fire-bellied toad?",
+        "a": "An adult gets two to six food items every two to three days, and a juvenile is fed daily in small amounts. The practical ceiling is what the toad clears in about 15 minutes, and each item is no wider than the toad's head. A vet sheet puts adults at once or twice a week, which is the lean end of the same range."
+      },
+      {
+        "q": "Will a fire-bellied toad eat dead insects?",
+        "a": "Almost never. This family cannot extend its tongue the way other frogs do, so a fire-bellied toad has to leap forward and catch prey in its mouth, and it keys on movement to do it. Everything offered is alive, and anything not eaten comes out."
+      },
+      {
+        "q": "Do I need to dust the crickets?",
+        "a": "Yes. Gut-load the feeders for at least 24 hours, then dust with a calcium supplement that carries vitamin D before each feeding, with a multivitamin once or twice a week. A juvenile gets supplement at every feeding; an adult can drop to every two to four feedings on the multivitamin, but the calcium stays."
+      },
+      {
+        "q": "Why has my toad stopped eating?",
+        "a": "Cold water or a cold room first, since a toad below about 65°F stops feeding. Then the water quality, because a toad in fouled water stops eating before the red leg shows. Then a shed, a new tank, or winter. A toad that refuses for a week in warm, clean water sees an exotic vet."
+      }
+    ],
+    "relatedProducts": [
+      "calcium-repashy-plus-lod-3oz",
+      "gutload-flukers-orange-cube-cricket-diet-12oz"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/fire-bellied-toad-handling-guide.mdx",
     "slug": "fire-bellied-toad-handling-guide",
     "title": "Fire-Bellied Toads Have Genuinely Toxic Skin, Here's What That Means",
@@ -21212,6 +21327,61 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/giant-millipede-feeding-guide.mdx",
+    "slug": "giant-millipede-feeding-guide",
+    "title": "Giant Millipede Feeding: The Floor Is the Diet, Produce Is the Treat, and Calcium Stays In",
+    "seoTitle": "What Do Giant Millipedes Eat? Diet and Feeding",
+    "excerpt": "A giant millipede eats its own substrate, and the produce a keeper puts in every few days is a supplement to that, not the meal. Here is the leaf litter and rotting wood that make up the diet, the fruit and vegetable rotation and its two-to-three-day clock, the cuttlebone that never comes out, and why a millipede that has stopped eating is usually molting underground.",
+    "date": "2026-12-12",
+    "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
+    "tags": [
+      "Giant Millipede",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Invertebrate Diet",
+      "Substrate",
+      "Calcium"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/giant-millipede-feeding.jpg",
+    "imageAlt": "A giant African millipede eating a slice of cucumber on dark leaf litter, with a piece of cuttlebone beside it",
+    "emoji": "🐛",
+    "lastReviewed": "2026-12-12",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What do giant millipedes eat?",
+        "a": "The enclosure floor, mainly. Rotting hardwood and clean fallen leaves from oak, beech or maple are both the bedding and the bulk of what gets eaten, with vegetables and a little fruit added on top a couple of times a week as extras."
+      },
+      {
+        "q": "How often do I feed a millipede?",
+        "a": "Put a slice or two of vegetable in twice a week or so and clear it before it goes furry, roughly the same interval in a damp tank. Since the bedding is edible, an animal that leaves the vegetables alone for a week has still been eating."
+      },
+      {
+        "q": "Do millipedes need calcium?",
+        "a": "Yes, and it stays in permanently. A cuttlebone or powdered calcium carbonate left on the substrate supports the exoskeleton, and the animal takes it when it needs it, which is most in the weeks before a molt."
+      },
+      {
+        "q": "My millipede has not eaten in weeks. Is it sick?",
+        "a": "Probably molting. A burrowed millipede can stay down for weeks while it sheds and hardens, and a keeper who digs to check ruptures the new shell. Moist floor, fresh produce on top, patience."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false
   },
   {
     "path": "/content/guides/giant-millipede-handling-guide.mdx",
@@ -34795,6 +34965,63 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/praying-mantis-feeding-guide.mdx",
+    "slug": "praying-mantis-feeding-guide",
+    "title": "Praying Mantis Feeding: Live Prey a Third of Its Length, Every Other Day, and Nothing Left in the Cage",
+    "seoTitle": "What Do Praying Mantises Eat? Feeding Schedule",
+    "excerpt": "A mantis eats only what moves, stops when it is full, and refuses everything for days before a molt. Here is the prey by life stage, the one-third rule, the every-other-day rhythm and the range around it, why a cricket left in the cage is a danger, and why the water is a droplet.",
+    "date": "2026-12-13",
+    "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
+    "tags": [
+      "Praying Mantis",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Invertebrate Diet",
+      "Live Prey",
+      "Molting"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/praying-mantis-feeding.jpg",
+    "imageAlt": "A green praying mantis gripping a bottle fly in its front legs on a twig inside a mesh enclosure",
+    "emoji": "🦗",
+    "lastReviewed": "2026-12-13",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed a praying mantis?",
+        "a": "Every other day, as much as it will take in one sitting, since a mantis stops when it is full. The range across species, sizes and condition runs from every day to every four days, and an adult female eats more than an adult male. A mantis that looks thin eats sooner; one with a swollen abdomen waits."
+      },
+      {
+        "q": "What size prey can a mantis take?",
+        "a": "Nothing longer than about a third of the mantis's own length. Some species will tackle prey as large as themselves, and it is the fight that costs them: a big cricket or grasshopper that is not eaten chews on the mantis instead. Fruit flies for the smallest nymphs, then bottle flies, small crickets and roach nymphs, then larger flies, roaches, moths and waxworms for an adult."
+      },
+      {
+        "q": "Will a mantis eat dead insects?",
+        "a": "Almost never. A mantis is a visual ambush hunter that responds to movement, and a dead insect on the floor is ignored. Live prey, offered on fine forceps so you can see it taken, or released and watched, is the whole method."
+      },
+      {
+        "q": "My mantis has stopped eating. Is it dying?",
+        "a": "It is probably about to molt. Refusing food for a few days before a shed is normal, and the response is to pull any live prey out and wait. A mantis that refuses for a week after a molt, cannot hold the mesh, or has a shrunken abdomen is the one to worry about."
+      }
+    ],
+    "relatedProducts": [
+      "feeding-tongs-entomology-forceps-fine-tip"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/praying-mantis-handling-guide.mdx",
     "slug": "praying-mantis-handling-guide",
     "title": "Should You Handle a Praying Mantis? Gently, and Rarely",
@@ -40267,6 +40494,61 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/stick-insect-feeding-guide.mdx",
+    "slug": "stick-insect-feeding-guide",
+    "title": "Stick Insect Feeding: Bramble in a Jar, the Right Plant for the Species, and Water That Cannot Drown a Nymph",
+    "seoTitle": "What Do Stick Insects Eat? Food Plants and Feeding",
+    "excerpt": "A stick insect eats leaves and nothing else, and the whole craft is keeping the right leaves fresh. Here is the plant list by species, why bramble suits nearly all of them, how to keep cuttings alive in water without drowning a nymph, the washing that removes pesticide, the evening mist they drink from, and the one reason a stick insect stops eating.",
+    "date": "2026-12-14",
+    "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
+    "tags": [
+      "Stick Insect",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Invertebrate Diet",
+      "Bramble",
+      "Food Plants"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/stick-insect-feeding.jpg",
+    "imageAlt": "An Indian stick insect feeding on a bramble leaf, the cut stems standing in a covered jar of water inside a mesh enclosure",
+    "emoji": "🌿",
+    "lastReviewed": "2026-12-14",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What do stick insects eat?",
+        "a": "Leaves, and only the leaves of plants their species eats. Almost every kept species takes bramble, the blackberry and its relatives, and many also take oak and hawthorn. Indian stick insects take privet and ivy as well, some species take rose or eucalyptus, and the Peruvian fern stick insect eats bracken. Match the plant to the species you have."
+      },
+      {
+        "q": "How do I keep the leaves fresh?",
+        "a": "Stand the cut stems in a jar of water like cut flowers, weighted with sand or stones so it cannot tip, with the opening blocked by tissue or netting so a nymph cannot fall in and drown. Replace the branches when the leaves dry or are stripped, and never let the enclosure run out."
+      },
+      {
+        "q": "Do I need to wash the leaves?",
+        "a": "Yes. Foliage from a garden, a park or a roadside carries pesticide, herbicide and traffic residue, and a stick insect eating a sprayed leaf dies of it. Wash and shake dry, and collect from hedgerows away from roads and treated ground."
+      },
+      {
+        "q": "Why has my stick insect stopped eating?",
+        "a": "Usually a molt within a day or two, which is normal. Otherwise the leaves are dry, the plant is one the species does not eat, or the enclosure is too cold. A stick insect that has stopped eating and is losing its grip on the mesh is the one to look at."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/stick-insect-handling-guide.mdx",
     "slug": "stick-insect-handling-guide",
     "title": "How to Handle a Stick Insect (And Why You Can Keep More Than One)",
@@ -42730,6 +43012,65 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/tiger-salamander-feeding-guide.mdx",
+    "slug": "tiger-salamander-feeding-guide",
+    "title": "Tiger Salamander Feeding: Worms and Crickets at Night, Twice a Week, and an Animal That Never Says No",
+    "seoTitle": "What Do Tiger Salamanders Eat? Feeding Schedule",
+    "excerpt": "A tiger salamander eats anything it can swallow and never stops on its own, which makes the keeper's portion the whole diet. Here is the worm-and-cricket staple, the small measured meals twice a week, the night feeding, the supplement schedule by age, the mouse that is a rare treat at most, and why a salamander that stops eating is usually about to burrow.",
+    "date": "2026-12-16",
+    "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
+    "tags": [
+      "Tiger Salamander",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Amphibian Diet",
+      "Feeding Schedule",
+      "Obesity",
+      "Earthworms"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/tiger-salamander-feeding.jpg",
+    "imageAlt": "A yellow-blotched tiger salamander at night taking an earthworm from soft-tipped feeding tongs above damp soil",
+    "emoji": "🦎",
+    "lastReviewed": "2026-12-16",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed a tiger salamander?",
+        "a": "A growing juvenile every one to two days, in small amounts. An adult two to three times a week, in small measured quantities, at night. The animal does not stop when it has had enough, so the portion is the keeper's decision, and obesity is the problem this species runs into most."
+      },
+      {
+        "q": "What do tiger salamanders eat?",
+        "a": "Earthworms and nightcrawlers with crickets make up the bulk of it, with waxworms, superworms, silkworms and roaches rotated in. In the wild they take worms, snails, slugs, insects and spiders, and anything small enough to swallow, including other salamanders. A thawed pinky mouse is a rare treat at most for a large adult, and never a live one."
+      },
+      {
+        "q": "Do I need to dust the food?",
+        "a": "Yes. A calcium and vitamin D3 supplement plus a multivitamin on the feeders at every feeding while the animal is growing, and every second to fourth feeding once it is adult. Offer food from tongs or off the substrate, since a salamander that strikes at a worm takes a mouthful of whatever the worm was lying on."
+      },
+      {
+        "q": "Why has my salamander stopped eating?",
+        "a": "This is such a voracious species that a refusal is a signal rather than fussiness. In autumn it is usually the animal slowing toward a burrowed winter rest, and a cold room does the same. A refusal in a warm enclosure, with weight loss, a bloated belly or skin changes, is the vet visit."
+      }
+    ],
+    "relatedProducts": [
+      "feeding-tongs-short-soft-tip-4pack",
+      "calcium-repashy-plus-6oz"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false
   },
   {
     "path": "/content/guides/tiger-salamander-handling-guide.mdx",

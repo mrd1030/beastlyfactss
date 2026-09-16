@@ -5,6 +5,8 @@ guide. Model each one on `content/guides/bearded-dragon-feeding-guide.mdx`.
 
 ## Missing feeding guides
 
+Status 2026-09-16: the 14 species below that have a full four-guide set now have feeding guides, dated 2026-12-03 to 2026-12-16, each with three opened sources, its hub route repointed from the stand-in species, and a body link from its health guide. Fire skink and quaker parakeet are the two still without one.
+
 - argentine-tegu
 - california-kingsnake
 - canary
