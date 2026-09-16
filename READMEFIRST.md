@@ -116,7 +116,8 @@ The commands do the editing. Verification is separate, and it is what
 catches the defects the commands produce. Per batch:
 
 1. `node scripts/check-voice.mjs --slug <slug>` on every file, then
-   `--strict`, `check-internal-links.mjs`, `check-related-articles.mjs`.
+   `--strict`, `check-internal-links.mjs`, `check-related-articles.mjs`,
+   `check-hub-rows.mjs`.
 2. Diff against the pre-edit copy (`git show main:<file>`): link targets,
    `<AffiliateLink>` hrefs, component names, and the Sources block must be
    identical unless the task adds sources. Body length within reason.
@@ -1050,6 +1051,13 @@ Per species:
    structure exactly (layout, firstWeek, emergencyCard, routes, buyList,
    faqs) and drop costs, sections, and the old faqs. Rules, none
    optional:
+   - The card is capped at 18 rows and 500 words (RULES, Hubs), enforced
+     by `node scripts/check-hub-rows.mjs`. Combine, never accumulate: two
+     rows from the same deep dive answering the same first-week question
+     are one row with a broader label, and anything that is not a week-one
+     decision belongs in the deep dive its route line points at. If a
+     reader says the hub is missing something, that is a reason to fix the
+     deep dive, not to add a row.
    - Every first-week row's value is copied from the deep dive named in
      its `source`, in that article's words, numbers unchanged. A source
      sentence with two ranges keeps both ranges in the row; never merge

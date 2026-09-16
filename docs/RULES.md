@@ -175,6 +175,17 @@ contradicting its own deep dives on the vet clock, greens, hay share,
 lifespan, and vet schedule. The hub is a router and a storefront, not a
 third care sheet.
 
+- The first-week card is capped at 18 rows and 500 words, enforced by
+  scripts/check-hub-rows.mjs. That is the top of the range the five template
+  hubs sit in (rabbit 15 rows/321 words, goldfish 14/456, axolotl 16/423,
+  leopard gecko 17/424, bearded dragon 18/388), and the templates have never
+  moved. Rows are combined, never accumulated: two rows from the same deep dive
+  answering the same first-week question are one row with a broader label, and
+  anything that is not a decision a keeper makes in week one belongs in the deep
+  dive the route line already points at. A reader gap or a check finding is not a
+  reason to add a row; it is a reason to fix the deep dive. Decided 2026-09-15,
+  after hubs drifted from 13 rows and 340 words in batch A to 32 rows and 1,300
+  words in batch P with nothing in the process pushing back.
 - A reconciled hub (`layout: "router"` in src/lib/data/guides/*.js) carries:
   a first-week card of numbers, each copied word for word from the deep
   dive named in its `source` and linked to it; an emergency card copied
