@@ -11,9 +11,10 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry, which no deep dive repeats. Cycling, quarantine, power outage,
-    // filtration and the sick-fish check cite the shared aquarium guides in the
-    // sidebar's Health and More list. The old hub's weekly 25% water change was
+    // entry, which no deep dive repeats. Quarantine and power outage cite the
+    // shared aquarium guides in the sidebar's Health and More list. Rewritten to
+    // the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md). The old hub's
+    // weekly 25% water change was
     // a figure no deep dive carries, so it is retired here and filed as a gap in
     // docs/READER_LOG.md. Built 2026-09-14 for the angelfish set test
     // (docs/READER_REVIEWS.md).
@@ -21,45 +22,36 @@ export const fishGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Tank size", value: "29 gallons, and specifically a tall configuration, is the practical minimum for a single adult. A 55-gallon tank is the better choice for a small group of four to six adults, and at a standard 20 inches tall it already clears this species' height requirement without needing a specialty configuration.", source: "angelfish-tank-setup-guide" },
-        { label: "Height over length", value: "Prioritize height, aim for at least 18 to 20 inches, over length. A \"20-gallon long\" tank, despite the larger-sounding volume, is often only about 12 inches tall, genuinely too shallow for this species.", source: "angelfish-tank-setup-guide" },
-        { label: "Temperature", value: "A genuinely tropical species, comfortable in the 78 to 82°F range and tolerant down to about 75°F. Keep fluctuation within about 2 degrees in either direction.", source: "angelfish-tank-setup-guide" },
-        { label: "Heater", value: "Essential. Budget roughly 3 to 5 watts per gallon, meaning a 200 to 250 watt heater for a 55-gallon tank.", source: "angelfish-tank-setup-guide" },
-        { label: "Water chemistry", value: "Slightly acidic to neutral, pH 6.5 to 7.0, with soft water genuinely preferred, especially if you're hoping for breeding pairs to form. Stable, fully cycled water with zero ammonia and zero nitrite matters more for this species than for some hardier community fish.", source: "angelfish-tank-setup-guide" },
-        { label: "Filtration", value: "Gentle to moderate flow works best, angelfish are relatively weak swimmers and don't do well fighting strong current. A sponge filter is the choice if you're breeding, since it protects fry from being pulled into stronger filtration.", source: "angelfish-tank-setup-guide" },
-        { label: "Substrate", value: "Fine sand or small, smooth gravel. Avoid sharp or coarse gravel entirely, angelfish have genuinely delicate fins that tear easily against rough substrate.", source: "angelfish-tank-setup-guide" },
-        { label: "Decor", value: "Build vertically. Tall driftwood and broadleaf plants, Amazon sword, Java fern, and anubias, give this tall-bodied fish natural cover, help break sightlines to reduce territorial aggression, and double as spawning surfaces if a pair bonds.", source: "angelfish-tank-setup-guide" },
-        { label: "Lighting", value: "A standard LED on an 8 to 10 hour daily cycle is sufficient, no special requirements beyond what supports any live plants you're keeping.", source: "angelfish-tank-setup-guide" },
-        { label: "Lid", value: "Angelfish can jump, and a tank left uncovered, or covered with meaningful gaps, is a real risk.", source: "angelfish-tank-setup-guide" },
-        { label: "Group size", value: "No evidence of a group size effect on welfare was found for angelfish, which are cichlids rather than shoaling fish, so the shoal-size rules that govern a tetra tank do not describe them. Either keep a bonded pair, or keep enough fish in a large enough tank that aggression spreads across the group. Two or three adults in a modest tank is the setup that produces a bullied fish.", source: "angelfish-enrichment-guide" },
-        { label: "Stocking order", value: "Add angelfish to a tank last, after the other community fish are already established.", source: "angelfish-handling-guide" },
-        { label: "Prey threshold", value: "An adult angelfish will eat small fish, neon tetras and guppies among them, once it reaches roughly 3 inches. This happens even to small fish the angelfish was raised alongside as a juvenile.", source: "angelfish-handling-guide" },
-        { label: "Tankmates", value: "Adult angelfish eat what fits in their mouths, which is why the classic angelfish and neon tetra community so often ends with fewer neons. Cardinal tetras are slightly larger and the usual substitute. Avoid fin nippers in the other direction.", source: "angelfish-enrichment-guide" },
-        { label: "Pairing", value: "Angelfish form genuinely monogamous breeding pairs, though sexing them by appearance alone is very difficult. Most keepers raise a group of six or more juveniles and let pairs form naturally over time. A bonded pair becomes noticeably more territorial once established.", source: "angelfish-handling-guide" },
-        { label: "Feeding schedule", value: "Adults once or twice a day, a pinch of food at a time, letting them clear it within about 2 to 5 minutes before removing anything left over. Juveniles 2 to 3 times a day to support faster growth.", source: "angelfish-feeding-guide" },
-        { label: "Diet", value: "Omnivores with a protein-leaning diet. The staple is a high-quality flake, generally preferred over pellets for this species, supplemented with live or frozen protein at least twice a week: bloodworms, brine shrimp, daphnia, mysis shrimp, and tubifex worms, the last only from a reputable cultured or commercial source, never wild-collected.", source: "angelfish-feeding-guide" },
-        { label: "Off food", value: "Newly introduced angelfish commonly refuse food for the first 2 to 4 days in a new tank. Refusal beyond about 4 to 5 days, or any refusal paired with a sunken belly, clamped fins, lethargy, color loss, or stringy white feces, warrants water testing, quarantine, and a consult with an aquatic vet or experienced aquarist if it doesn't resolve.", source: "angelfish-feeding-guide" },
-        { label: "Budget", value: "Common freshwater angelfish run $3 to $20 for standard varieties, $3 to $50 across most varieties, with fancy morphs higher and rare or extra-large specimens pushing past $100. Roughly $300 to $600 upfront for a proper tank, then roughly $15 to $40 a month.", source: "angelfish-cost-guide" },
-        { label: "Which angelfish", value: "Marine angelfish are a different, far pricier group entirely, commonly $150 to $1,500, and need a saltwater reef setup rather than a freshwater community tank. Worth double-checking which one is actually in the listing before you buy.", source: "angelfish-cost-guide" },
-        { label: "Vet costs", value: "Aquatic vet care is uncommon and specialized. Most keepers manage illness themselves with water quality correction and over-the-counter medications rather than professional visits, so budget for medication on hand rather than office visits.", source: "angelfish-cost-guide" },
-        { label: "Lifespan", value: "8 to 12 years is typical with good care, up to around 15 years under genuinely ideal conditions.", source: "angelfish-cost-guide" },
+        { label: "Tank size", value: "29 gallons, tall, for a single adult. A 55-gallon is the better choice for a group of four to six adults, and at a standard 20 inches tall it clears the height requirement on its own.", source: "angelfish-tank-setup-guide" },
+        { label: "Height over length", value: "At least 18 to 20 inches tall. A 20-gallon long is often only about 12 inches tall, too shallow for this body shape.", source: "angelfish-tank-setup-guide" },
+        { label: "Temperature", value: "78 to 82°F, tolerating down to about 75°F, with swings held within about 2 degrees. A heater is essential: 3 to 5 watts per gallon, 200 to 250 watts on a 55.", source: "angelfish-tank-setup-guide" },
+        { label: "Water chemistry", value: "pH 6.5 to 7.0 and soft water preferred, especially if you want pairs to form. Zero ammonia and zero nitrite matters more here than for hardier community fish.", source: "angelfish-tank-setup-guide" },
+        { label: "Filtration", value: "Gentle to moderate flow; angelfish are weak swimmers. A sponge filter if you are breeding, so fry are not pulled into it.", source: "angelfish-tank-setup-guide" },
+        { label: "Substrate and decor", value: "Fine sand or small smooth gravel, nothing sharp against those fins. Build vertically: tall driftwood and broadleaf plants break sightlines and double as spawning surfaces.", source: "angelfish-tank-setup-guide" },
+        { label: "Lid and light", value: "A cover without gaps, since angelfish jump. A standard LED on an 8 to 10 hour cycle.", source: "angelfish-tank-setup-guide" },
+        { label: "How many", value: "Cichlids, not shoaling fish, so no group-size rule protects them. Either a bonded pair, or enough fish in a big enough tank that aggression spreads. Two or three adults in a modest tank produces a bullied fish.", source: "angelfish-enrichment-guide" },
+        { label: "Pairing", value: "Sexing by eye is very difficult. Most keepers raise six or more juveniles and let pairs form; a bonded pair turns noticeably more territorial.", source: "angelfish-handling-guide" },
+        { label: "Tankmates", value: "Add angelfish last. Once past roughly 3 inches an adult eats neon tetras and guppies, even ones it was raised with; cardinal tetras are the usual substitute. No fin nippers.", source: "angelfish-handling-guide" },
+        { label: "Feeding schedule", value: "Adults once or twice a day, cleared within 2 to 5 minutes. Juveniles 2 to 3 times a day.", source: "angelfish-feeding-guide" },
+        { label: "Diet", value: "A quality flake as the staple, with live or frozen protein at least twice a week: bloodworms, brine shrimp, daphnia, mysis. Tubifex only from a cultured source, never wild-collected.", source: "angelfish-feeding-guide" },
+        { label: "Off food", value: "Normal for the first 2 to 4 days in a new tank. Past 4 to 5 days, or paired with a sunken belly, clamped fins or stringy white feces, test the water and quarantine.", source: "angelfish-feeding-guide" },
+        { label: "Budget", value: "$3 to $50 for a freshwater angelfish, most under $20. Roughly $300 to $600 for a proper tank, then $15 to $40 a month. Marine angelfish are a different group at $150 to $1,500 and need a reef tank.", source: "angelfish-cost-guide" },
+        { label: "Lifespan", value: "8 to 12 years typical, up to around 15.", source: "angelfish-cost-guide" },
         { label: "Adult size", value: "6 inches (15 cm) body, 8 to 10 inches (20 to 25 cm) including fins." },
-        { label: "Cycling", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
-        { label: "Quarantine", value: "At least 30 days for a new or sick fish, and 30 to 60 days for one you especially don't want to lose or don't want introducing something to an established tank. Thirty days is the floor, not the target. Use separate nets and siphon hoses for the quarantine tank.", source: "fish-quarantine-and-treatment-guide" },
-        { label: "Power outage", value: "The threat is oxygen, not darkness. Once the filter and any air pump stop, the water surface stops moving, gas exchange slows, and dissolved oxygen starts dropping. Unplug the filter deliberately rather than letting it sit dead in the water.", source: "aquarium-power-outage-and-transport-guide" },
-        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
-        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
+        { label: "Quarantine", value: "At least 30 days in a separate tank with its own nets and siphon, 30 to 60 for a fish you especially do not want to lose. Thirty is the floor, not the target.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
     emergencyCard: {
       source: "angelfish-health-issues-guide",
+      heading: "Test the water first, then act on these today. Aquatic vets are rare, so nearly all of this is handled at home.",
       callNow: [
-        "Small white spots resembling grains of salt, flashing against decor, clamped fins, and rapid gill movement",
-        "Pitting lesions on the head and along the lateral line, white stringy feces, appetite loss, and fading color",
+        "Small white spots like grains of salt, flashing against decor, clamped fins, rapid gill movement",
+        "Pitting lesions on the head and along the lateral line, white stringy feces, appetite loss, fading color",
         "Ragged, receding fins with discolored edges",
-        "Fluffy white growths, typically secondary to an injury or a period of stress",
+        "Fluffy white growths, usually after an injury or a period of stress",
       ],
-      vetLine: "Most keepers manage the conditions above at home rather than through a clinic visit. Test and correct the water first, since treatment alone without fixing the environment tends not to hold.",
+      vetLine: "Treatment without fixing the water does not hold. Correct the environment, then treat.",
     },
     routes: [
       { slug: "angelfish-cost-guide", line: "$3 to $50 for the fish, $300 to $600 for the tank that makes it work, and the marine-versus-freshwater price trap." },
@@ -125,14 +117,15 @@ export const fishGuides = [
     },
     emergencyCard: {
       source: "betta-fish-health-issues-guide",
+      heading: "Test the water and temperature first, then act on these the same day.",
       callNow: [
-        "Raised, pinecone-like scales (dropsy), usually a poor prognosis but worth same-day vet contact",
-        "Pale or greyish saddle-shaped patches, ragged fin edges, or a cottony fuzz (columnaris), one to act on the same day you see it",
-        "A fine gold or rust-colored dusty sheen (velvet), which moves fast and can be fatal quickly",
-        "Buoyancy problems (floating, sinking, or swimming at odd angles) that don't clear after a 2 to 3 day fast",
-        "Any illness that doesn't improve once water quality and temperature are corrected",
+        "Raised, pinecone-like scales (dropsy), a poor prognosis but worth same-day contact with an aquatic vet",
+        "Pale or greyish saddle-shaped patches, ragged fin edges, or a cottony fuzz (columnaris)",
+        "A fine gold or rust-colored dusty sheen (velvet), which moves fast and can kill quickly",
+        "Buoyancy problems that do not clear after a 2 to 3 day fast",
+        "Any illness that does not improve once water quality and temperature are corrected",
       ],
-      vetLine: "An aquatic vet, found before you need one. Most of what's on this list is prevented, not treated, through consistent water quality, temperature, and a proper heated, filtered, cycled tank; aquatic vets are the exception, reserved for genuinely serious or unclear cases.",
+      vetLine: "An aquatic vet, found before you need one, for the serious or unclear cases. Most of this list is prevented by a heated, filtered, cycled tank.",
     },
     routes: [
       { slug: "betta-fish-cost-guide", line: "$5 to $30 for the fish, a $100 to $300 setup, and $10 to $25 a month after that." },
@@ -173,10 +166,10 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Cycling, filtration, the hospital tank, water
-    // chemistry, the power outage rule and the sick-fish check cite the shared
-    // aquarium guides in the sidebar's Health and More list. Reconciled
-    // 2026-09-15 after the bristlenose pleco set test (docs/READER_REVIEWS.md).
+    // encyclopedia entry. The power outage rule cites the shared aquarium
+    // guides in the sidebar's Health and More list. Reconciled 2026-09-15 after
+    // the bristlenose pleco set test (docs/READER_REVIEWS.md), rewritten to the
+    // template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
     //
     // The reader graded the old hub B- and said the tank price alone "is the
     // kind of thing that makes me re-check everything else." Retired rather
@@ -199,43 +192,36 @@ export const fishGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Confirm the species first", value: "The single most expensive mistake in this hobby isn't a bristlenose pleco, it's buying a fish labeled simply \"pleco\" that turns out to be a common pleco (*Hypostomus plecostomus*) instead. At the size stores sell juveniles, an inch or two long, the two can look genuinely similar. A common pleco grows into a 12 to 24-inch adult that needs a 75-gallon-plus tank, while a bristlenose stays 4 to 6 inches for life.", source: "bristlenose-pleco-cost-guide" },
-        { label: "Why the bristles don't settle it", value: "A true bristlenose typically doesn't show its namesake bristles until around 3 inches, and even then only reliably on males, so don't count on the bristles alone to tell them apart early. Ask the store directly for the species name rather than settling for \"pleco.\"", source: "bristlenose-pleco-tank-setup-guide" },
-        { label: "Tank size", value: "20 gallons is the practical minimum for a single adult bristlenose, and 29 to 30 gallons is genuinely the better long-term choice given how much waste one fish produces relative to its size. Add roughly 10 gallons for each additional bristlenose, and favor extra floor space and driftwood surface over height.", source: "bristlenose-pleco-tank-setup-guide" },
-        { label: "Temperature and water", value: "74 to 80\u00B0F suits most captive-bred bristlenose, with some sources citing a somewhat wider tolerance either side of that range. Aim for a pH around 6.5 to 7.8, and keep ammonia and nitrite at zero through regular water changes.", source: "bristlenose-pleco-tank-setup-guide" },
-        { label: "Driftwood is required, not decorative", value: "This species rasps wood constantly and instinctively, and most care guides tie that grazing behavior to healthy digestion, fiber and the biofilm colonizing the wood's surface both appear to matter. Skipping it entirely is genuinely associated with digestive problems even in a fish that's otherwise being fed correctly.", source: "bristlenose-pleco-tank-setup-guide" },
-        { label: "How much wood", value: "Size matters more than variety. One small ornament piece in a tank with two plecos is not a wood provision, it is a decoration they will strip in a couple of weeks. Give a substantial piece, or several. It will tint the water with tannins, which is normal and harmless.", source: "bristlenose-pleco-enrichment-guide" },
-        { label: "Caves and shade", value: "Nocturnal fish that spend the day wedged into something. A cave gives that, and males use caves as spawning sites, which is why a cave per fish is sensible when you keep more than one. Add general shade: wood overhangs, broad-leaved plants, and a light that is not blasting the whole floor. A pleco visible in the open all day is often a pleco with nowhere better to be.", source: "bristlenose-pleco-enrichment-guide" },
-        { label: "Grazing surface", value: "Beyond the wood, anything that grows biofilm. Rock, plant leaves, the back glass left unscrubbed. Scrubbing every surface in the tank every week removes a genuine food source. Leave the back and sides, clean the front.", source: "bristlenose-pleco-enrichment-guide" },
-        { label: "Filtration and oxygen", value: "Plecos produce a lot of waste and need real filtration and current. Good flow and surface agitation matter, since a heavily stocked warm tank with a large catfish in it runs low on oxygen faster than people expect.", source: "bristlenose-pleco-enrichment-guide" },
-        { label: "Feeding schedule", value: "Feed once a day, ideally after lights-out since this is a nocturnal species that does most of its grazing overnight. Offer a wafer or vegetable portion the fish clears within a few hours, and remove anything still sitting untouched the next day. Dropping food near a favorite cave or driftwood perch helps a shy individual find it without competing in open water.", source: "bristlenose-pleco-feeding-guide" },
-        { label: "The algae myth", value: "The single most common and most damaging feeding mistake with this species. Tank algae rarely grows fast enough to keep pace with a full-grown adult, and a bristlenose left to fend for itself on algae and other fish's leftovers gradually loses condition rather than failing suddenly, which makes the problem easy to miss until it's fairly advanced.", source: "bristlenose-pleco-feeding-guide" },
-        { label: "Never handled, and hard to net", value: "A bristlenose pleco has stiff, lockable spines on its pectoral and dorsal fins, a defense mechanism it can raise when startled. Those spines catch easily in ordinary net mesh, and a fish that struggles while tangled risks real injury to itself in the process. Many experienced keepers avoid netting a pleco directly and instead herd it into a cup or wide plastic container, then lift the container out with the fish inside.", source: "bristlenose-pleco-handling-guide" },
-        { label: "Invisible all day is normal", value: "A bristlenose that's invisible all day and active only after the lights go off isn't hiding from a problem, it's just being a bristlenose. A cave, a gap behind the filter, or the underside of a piece of driftwood is exactly where it's supposed to spend the day.", source: "bristlenose-pleco-handling-guide" },
-        { label: "Territorial males", value: "Peaceful toward other species, but males are territorial toward each other and toward similarly shaped bottom dwellers, competing over caves rather than open water. Planning for enough hiding spots that more than one male isn't forced to share heads off most of the friction before it starts.", source: "bristlenose-pleco-handling-guide" },
-        { label: "The copper warning", value: "Bristlenose plecos are armored catfish with an unprotected belly and a mucous coating that copper damages badly, and this species is more medication sensitive than many community fish. Copper-based treatments belong on the avoid list entirely, use an alternative medication for any copper-susceptible parasite instead.", source: "bristlenose-pleco-health-issues-guide" },
-        { label: "Budget, the fish", value: "Common color morphs like albino and brown typically run $7 to $10, with green dragon and lemon varieties close behind and red bristlenose running a bit more, around $12. Larger or specialty specimens can reach $20 to $25.", source: "bristlenose-pleco-cost-guide" },
-        { label: "Budget, the setup", value: "Roughly $155 to $265, and ongoing costs run about $45 to $85 a year. Driftwood doesn't need frequent replacing, but budget for an occasional new piece, $15 to $30, every year or two once an older piece is fully grazed down.", source: "bristlenose-pleco-cost-guide" },
-        { label: "Vet costs", value: "Aquatic vets are genuinely uncommon, and most bristlenose health issues, water-quality problems and nutritional deficiency chief among them, are managed directly by the keeper rather than through professional visits.", source: "bristlenose-pleco-cost-guide" },
-        { label: "Lifespan", value: "5 to 10 years is typical with decent care, and well-kept individuals are reasonably often reported living 12 to 14 years. That's a genuinely long commitment for a fish this inexpensive and this unassuming.", source: "bristlenose-pleco-cost-guide" },
+        { label: "Confirm the species first", value: "A juvenile labeled only \"pleco\" may be a common pleco, which grows to 12 to 24 inches and needs 75 gallons or more. A bristlenose stays 4 to 6 inches for life. Ask for the species name.", source: "bristlenose-pleco-cost-guide" },
+        { label: "Why the bristles do not settle it", value: "They usually do not show until around 3 inches, and then reliably only on males.", source: "bristlenose-pleco-tank-setup-guide" },
+        { label: "Tank size", value: "20 gallons for a single adult, and 29 to 30 is the better long-term choice given how much waste one fish makes. Add roughly 10 gallons per extra pleco, and favor floor space and wood surface over height.", source: "bristlenose-pleco-tank-setup-guide" },
+        { label: "Temperature and water", value: "74 to 80°F and pH around 6.5 to 7.8, with ammonia and nitrite at zero through regular water changes.", source: "bristlenose-pleco-tank-setup-guide" },
+        { label: "Driftwood is required", value: "They rasp wood constantly, and skipping it is tied to digestive problems even in a fish fed correctly. One small ornament piece is a decoration they strip in a couple of weeks; give a substantial piece or several.", source: "bristlenose-pleco-tank-setup-guide" },
+        { label: "Caves and shade", value: "A cave per fish, since males spawn in them and fight over them, plus wood overhangs and broad-leaved plants. A pleco in the open all day has nowhere better to be.", source: "bristlenose-pleco-enrichment-guide" },
+        { label: "Grazing surface", value: "Leave the back and sides of the glass unscrubbed and clean only the front. Biofilm on rock, leaves and glass is a real food source.", source: "bristlenose-pleco-enrichment-guide" },
+        { label: "Filtration and oxygen", value: "Real filtration and current, with surface agitation. A warm, well-stocked tank with a large catfish runs low on oxygen faster than people expect.", source: "bristlenose-pleco-enrichment-guide" },
+        { label: "Feeding schedule", value: "Once a day, after lights-out, a wafer or vegetable portion cleared within a few hours, near a favorite cave so a shy fish finds it. Remove anything still there next morning.", source: "bristlenose-pleco-feeding-guide" },
+        { label: "The algae myth", value: "Tank algae rarely keeps pace with an adult. A bristlenose left to leftovers loses condition slowly, which is why the problem is missed until it is advanced.", source: "bristlenose-pleco-feeding-guide" },
+        { label: "Tankmates", value: "Peaceful toward other species. Males are territorial toward each other and toward similar bottom dwellers, competing over caves, so give enough hides that no two males share.", source: "bristlenose-pleco-handling-guide" },
+        { label: "Moving one", value: "Lockable fin spines catch in net mesh. Herd it into a cup or wide container and lift that out instead.", source: "bristlenose-pleco-handling-guide" },
+        { label: "Invisible all day", value: "Normal. A cave, a gap behind the filter or the underside of the wood is where it is supposed to spend the day.", source: "bristlenose-pleco-handling-guide" },
+        { label: "Copper", value: "An unprotected belly and a mucous coat that copper damages badly. Copper-based treatments stay off the list entirely; use an alternative for any copper-susceptible parasite.", source: "bristlenose-pleco-health-issues-guide" },
+        { label: "Budget", value: "$7 to $10 for common albino and brown morphs, up to $20 to $25 for specialty fish. A 20-gallon setup runs about $155 to $265, then $45 to $85 a year. Aquatic vets are uncommon; the keeper manages most problems.", source: "bristlenose-pleco-cost-guide" },
+        { label: "Lifespan", value: "5 to 10 years typical, with well-kept fish reported at 12 to 14.", source: "bristlenose-pleco-cost-guide" },
         { label: "Adult size", value: "4 to 6 inches (10 to 15 cm)." },
-        { label: "Cycling, the finish line", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
-        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
-        { label: "Hospital tank", value: "A bare hospital tank with its own net and siphon hose, never shared with the display tank, and disinfected and stored dry between uses. A sponge filter gives gentle biological filtration without the flow of a hang-on-back or canister unit.", source: "fish-quarantine-and-treatment-guide" },
-        { label: "Water chemistry, the wider picture", value: "KH is the buffer holding pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you rather than chasing a number.", source: "freshwater-ph-gh-kh-guide" },
-        { label: "Power outage", value: "The threat is oxygen, not darkness. Once the filter and any air pump stop, the water surface stops moving, gas exchange slows, and dissolved oxygen starts dropping. Unplug the filter deliberately rather than letting it sit dead in the water.", source: "aquarium-power-outage-and-transport-guide" },
-        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
+        { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
     emergencyCard: {
       source: "bristlenose-pleco-health-issues-guide",
+      heading: "Test the water first, then act on these today. Aquatic vets are rare, so nearly all of this is handled at home.",
       callNow: [
-        "A sunken, concave belly, sometimes alongside faded color or fins that start to look ragged even without an infection driving it",
+        "A sunken, concave belly, with or without faded color and ragged fins: slow starvation, the biggest real risk",
         "Small, pinhead-sized white spots across the body and fins",
         "Frayed or discolored fin edges",
-        "Barbel and fin damage from rough decor: sharp gravel or rough decor can injure the soft underbelly and barbels as a bristlenose forages and grazes along the bottom, and an open wound like that is a real entry point for bacterial infection",
+        "An open wound on the belly or barbels from sharp gravel or rough decor, an entry point for infection",
       ],
-      vetLine: "Diet drives the single biggest risk, decor and substrate drive physical injury, and water quality sits underneath nearly everything else on this list. A consistent, dedicated bottom-feeder food, rather than leftover algae and scraps, keeps a bristlenose in the kind of steady condition that makes it more resilient generally. Malnutrition: the biggest real risk. Slow malnutrition from relying on tank algae instead of a real diet. It's not dramatic, there's no single obvious symptom on day one, which is exactly why it does more long-term damage than a faster-moving illness that gets noticed and treated right away.",
+      vetLine: "A dedicated bottom-feeder food fixes the first, smooth substrate the last, and water quality sits under everything else. No copper-based treatment, ever.",
     },
     routes: [
       { slug: "bristlenose-pleco-cost-guide", line: "$7 to $25 for the fish, $155 to $265 for the tank around it, and the labeling mistake that costs the most of all." },
@@ -275,9 +261,10 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry, which no deep dive repeats. Cycling and the
-    // hospital tank cite the shared fish guides in the sidebar's Health and
-    // More list. The old hub narrowed the temperature band to 73-81 against
+    // encyclopedia entry, which no deep dive repeats. Water chemistry and the
+    // power outage rule cite the shared fish guides in the sidebar's Health and
+    // More list. Rewritten to the template shape 2026-09-16
+    // (docs/HUB_ROUTER_REVIEWS.md). The old hub narrowed the temperature band to 73-81 against
     // the setup guide's 73-84, put the school floor at 6 against the
     // handling and enrichment guides' 10, and misspelled the neon tetra
     // disease parasite as "hyphessobrycetis". Reconciled 2026-09-14 for
@@ -286,48 +273,36 @@ export const fishGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Before any fish", value: "A 2008 study on this exact species found cardinal tetra tolerates ammonia better than many keepers assume, but is sensitive to nitrite, which makes confirming a completed nitrogen cycle before stocking the single most useful habit for keeping this species healthy long-term.", source: "cardinal-tetra-health-issues-guide" },
-        { label: "Tank size", value: "A 10-gallon tank is workable for the bare minimum school of 6. The recommended footprint, roughly 24x12 inches of base, lines up closely with a 20-gallon long tank, a better practical minimum for the fuller 8 to 10 fish school most sources recommend for this species.", source: "cardinal-tetra-tank-setup-guide" },
-        { label: "School size", value: "The workable minimum is 10, since fewer fish kept together tend to develop sickness from stress; start with 8 to 10 or more for natural schooling behavior, a notably higher bar than the six-fish floor commonly cited for neon tetra.", source: "cardinal-tetra-handling-guide" },
-        { label: "Ten, not six", value: "Ten or more, following the neon tetra finding, and cardinals shoal more tightly and color up better in bigger groups. Six is a floor rather than a target.", source: "cardinal-tetra-enrichment-guide" },
-        { label: "Temperature", value: "73 to 84°F is the tolerated range for this species, with general care closer to 77 to 82°F. Cardinal tetra tolerates water reaching 86°F, against roughly 77°F for neon tetra, so cardinal is the better fit for a warmer community tank.", source: "cardinal-tetra-tank-setup-guide" },
-        { label: "Water chemistry", value: "Soft and acidic: roughly pH 5.0 to 7.0, and toward the lower end where possible. Test your source water first rather than assuming it suits the species. Ammonia and nitrite both need to read zero before stocking.", source: "cardinal-tetra-tank-setup-guide" },
-        { label: "Filtration", value: "Keep the flow gentle. This species comes from slow-moving forest streams full of fallen branches and leaf litter rather than open current. A sponge filter is a common, effective choice.", source: "cardinal-tetra-tank-setup-guide" },
-        { label: "Substrate", value: "Fine gravel or sand, and a darker color makes cardinal tetra's red and blue stripe stand out more against the background.", source: "cardinal-tetra-tank-setup-guide" },
-        { label: "Lighting", value: "Dim to moderate. This species comes from shaded, densely vegetated streams, and bright, intense lighting stresses fish built for filtered, dappled light rather than open water.", source: "cardinal-tetra-tank-setup-guide" },
-        { label: "Blackwater", value: "Driftwood and Indian almond leaves release natural tannins that stain the water and lower pH, mimicking the shaded, leaf-litter-covered streams this species evolved in. Pair that with dense planting and dim lighting, and color and confidence both improve noticeably.", source: "cardinal-tetra-tank-setup-guide" },
-        { label: "Shade", value: "Blackwater fish under a bright aquarium light spend their time near the bottom and stay pale. Floating plants, tannin staining, or a less powerful light all fix it, and color is the immediate readout.", source: "cardinal-tetra-enrichment-guide" },
-        { label: "Mostly wild caught", value: "A large proportion still are, from the Rio Negro in Brazil, unlike almost everything else in a modern fish shop. A wild fish arriving from a long supply chain needs settling time and stable conditions more than a tank-bred one does.", source: "cardinal-tetra-enrichment-guide" },
-        { label: "Settling them in", value: "Cardinals often arrive after a long chain of transfers, already stressed, and losses in the first fortnight are common. Acclimate slowly, have the tank cycled and stable before they arrive, dim the lights, and leave them alone. Buy from a shop that has held them a while, not one that got them yesterday.", source: "cardinal-tetra-enrichment-guide" },
-        { label: "Staple diet", value: "A high-quality micro-pellet or crushed flake as the staple, supplemented with live or frozen bloodworms, mosquito larvae, and daphnia. Moina is another good live option.", source: "cardinal-tetra-feeding-guide" },
-        { label: "Mouth size", value: "Cardinal tetras are small-mouthed fish, so food needs to be sized down: whole flakes and standard pellets are usually too large. Food that's too large gets taken and spat back out repeatedly, which functionally starves the fish even while food is visibly going into the tank.", source: "cardinal-tetra-feeding-guide" },
-        { label: "Feeding schedule", value: "Twice a day is the practical standard, offering only what the school finishes in a couple of minutes. This species feeds almost constantly in the wild, so some keepers split that into three or four smaller feedings a day instead.", source: "cardinal-tetra-feeding-guide" },
-        { label: "Feeding a shoal", value: "Small mouths that lose out to faster fish. Spread food across the surface, never into one spot. Frozen and live foods get a much stronger response than flake.", source: "cardinal-tetra-enrichment-guide" },
-        { label: "Overfeeding", value: "If food is still visible in the tank after a couple of minutes, cut back. Uneaten food decays and spikes ammonia and nitrite, and nitrite is the parameter cardinal tetra tolerates the worst.", source: "cardinal-tetra-feeding-guide" },
-        { label: "Foods to avoid", value: "Oversized flakes or pellets, excessive protein-rich live or frozen food, and any overfeeding. Avoid low-quality live foods from questionable sources, which can introduce parasites, and don't overdo vegetables or fruit, which cause bloating in a fish this small.", source: "cardinal-tetra-feeding-guide" },
-        { label: "The rule that protects the school", value: "Never leave a dead fish in the tank or let tankmates scavenge a visibly sick fish's body. There is no cure for neon tetra disease, and if a fish dies of it and its body is eaten by others, those fish contract it as well.", source: "cardinal-tetra-feeding-guide" },
-        { label: "Neon tetra disease", value: "Named after neon tetra specifically, but the parasite affects tetras broadly, along with angelfish, rasboras, barbs, and zebrafish, so cardinal tetra falls within that group. Caused by a microsporidian parasite, Pleistophora hyphessobryconis, that invades muscle tissue.", source: "cardinal-tetra-health-issues-guide" },
-        { label: "Quarantine", value: "Quarantining any new fish for a full 30 days before introduction is the most effective way to keep ich out of an established tank in the first place.", source: "cardinal-tetra-health-issues-guide" },
-        { label: "Budget", value: "$1 to $3 a fish, so roughly $8 to $30 for a starting school of 8 to 10, and $65 to $230 for the core equipment. Add substrate and basic decor and most first-time setups land around $100 to $250.", source: "cardinal-tetra-cost-guide" },
-        { label: "Ongoing costs", value: "Low. A micro-pellet food runs roughly $15 to $30 a year, water conditioner $10 to $15 a year, and a water test kit is a $25 to $40 purchase you'll rely on more than once given how sensitive this species is to an incomplete nitrogen cycle.", source: "cardinal-tetra-cost-guide" },
-        { label: "Vet costs", value: "Not applicable in the traditional sense. Fish health management here is entirely about water quality and, when needed, over-the-counter treatments, not veterinary visits.", source: "cardinal-tetra-cost-guide" },
-        { label: "Lifespan", value: "About five years in captivity under good, stable conditions, and individuals may reach ten. In the wild it is close to an annual fish: the shallow dry-season pools shrink and strand huge numbers, and most don't see a second year.", source: "cardinal-tetra-cost-guide" },
+        { label: "Before any fish", value: "A 2008 study on this species found it tolerates ammonia better than assumed but is sensitive to nitrite, so a finished cycle before stocking is the single most useful habit.", source: "cardinal-tetra-health-issues-guide" },
+        { label: "School size", value: "Ten or more. Smaller groups develop stress sickness, and cardinals shoal tighter and color up better in bigger groups. Six is a floor, not a target.", source: "cardinal-tetra-handling-guide" },
+        { label: "Tank size", value: "A 20-gallon long, roughly 24x12 inches of base, for the 8 to 10 fish school. A 10-gallon holds only the bare minimum of 6.", source: "cardinal-tetra-tank-setup-guide" },
+        { label: "Temperature", value: "77 to 82°F for general care, inside a tolerated 73 to 84°F. Cardinals take water up to 86°F, against roughly 77°F for neons, so they suit a warmer community tank.", source: "cardinal-tetra-tank-setup-guide" },
+        { label: "Water chemistry", value: "Soft and acidic, pH 5.0 to 7.0 and toward the low end. Test your source water first rather than assuming it fits, and ammonia and nitrite read zero before stocking.", source: "cardinal-tetra-tank-setup-guide" },
+        { label: "Filtration and substrate", value: "Gentle flow, a sponge filter is the common choice, over fine gravel or sand. A darker substrate makes the red and blue stripe stand out.", source: "cardinal-tetra-tank-setup-guide" },
+        { label: "Light and blackwater", value: "Dim to moderate light, driftwood and Indian almond leaves for tannins, dense planting. Bright light over bare glass leaves them pale and near the bottom.", source: "cardinal-tetra-tank-setup-guide" },
+        { label: "Mostly wild caught", value: "Still largely collected from the Rio Negro, and losses in the first fortnight are common. Buy from a shop that has held them a while, acclimate slowly, dim the lights and leave them alone.", source: "cardinal-tetra-enrichment-guide" },
+        { label: "Diet", value: "A micro-pellet or crushed flake as the staple, with live or frozen bloodworms, mosquito larvae or daphnia. Whole flakes and standard pellets are too big for the mouth and get spat out, which starves the fish.", source: "cardinal-tetra-feeding-guide" },
+        { label: "Feeding schedule", value: "Twice a day, what the school finishes in a couple of minutes, or split into three or four smaller feeds. Food still visible after that means cut back: nitrite is the parameter they tolerate worst.", source: "cardinal-tetra-feeding-guide" },
+        { label: "Feeding a shoal", value: "Spread food across the surface, never into one spot, so small mouths do not lose out to faster fish.", source: "cardinal-tetra-enrichment-guide" },
+        { label: "A dead fish", value: "Never leave one in the tank or let the others scavenge it. There is no cure for neon tetra disease, and fish that eat an infected body contract it.", source: "cardinal-tetra-feeding-guide" },
+        { label: "Quarantine", value: "A full 30 days for any new fish, the most effective way to keep ich out of an established tank.", source: "cardinal-tetra-health-issues-guide" },
+        { label: "Budget", value: "$1 to $3 a fish, roughly $8 to $30 for the school, and most first setups land around $100 to $250. Vet care does not apply; water quality and over-the-counter treatment are the whole of it.", source: "cardinal-tetra-cost-guide" },
+        { label: "Lifespan", value: "About five years, some to ten. In the wild it is close to an annual fish.", source: "cardinal-tetra-cost-guide" },
         { label: "Adult size", value: "2 inches (5 cm)." },
-        { label: "Telling it from a neon", value: "The red stripe. It runs gills to tail on a cardinal, and covers only the back half on a neon, whose front half shows blue alone. Cardinals also run slightly larger and take warmer water.", source: "cardinal-tetra-handling-guide" },
+        { label: "Water chemistry, the wider picture", value: "KH holds pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Work with what the source water gives you.", source: "freshwater-ph-gh-kh-guide" },
+        { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
     emergencyCard: {
       source: "cardinal-tetra-health-issues-guide",
+      heading: "Test the water first, then act on these today. Aquatic vets are rare, so nearly all of this is handled at home.",
       callNow: [
-        "Restless or erratic swimming, often more noticeable at night",
-        "Fading or patchy color",
-        "Visible lumps under the skin",
-        "A curved or deformed spine in advanced cases",
-        "Small white spots resembling grains of salt, with flashing against decor and rapid breathing",
-        "Discoloration on the fin edges, then fraying",
-        "Floating at the surface unable to swim down, or struggling to rise from the bottom",
+        "Small white spots like grains of salt, flashing against decor, rapid breathing: ich, treatable",
+        "Discoloration on the fin edges, then fraying: fin rot, treatable",
+        "Floating at the surface unable to swim down, or struggling to rise",
+        "Restless or erratic swimming at night, fading or patchy color, lumps under the skin, a curved spine: neon tetra disease, no cure, and the fish is separated so the others cannot eat it",
       ],
-      vetLine: "Nearly everything treatable on this list traces back to water quality and stability, exactly what a properly cycled tank with consistent temperature and regular water changes prevents. The one condition that isn't treatable, neon tetra disease, is prevented primarily through quarantine, the single habit that matters most for keeping this species healthy long-term.",
+      vetLine: "Everything treatable here traces back to water quality and stability. The untreatable one is prevented by quarantine.",
     },
     routes: [
       { slug: "cardinal-tetra-cost-guide", line: "$1 to $3 a fish, the $65 to $230 setup, and the Rio Negro fishery behind why this one prices above a neon." },
@@ -368,9 +343,9 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry, which no deep dive repeats. Cycling, the hospital
-    // tank and sick-fish signs cite the shared fish guides in the sidebar's
-    // Health and More list. The old hub priced a tank at double the cost
+    // encyclopedia entry, which no deep dive repeats. The cycling row cites the
+    // shared fish guides in the sidebar's Health and More list. Rewritten to the
+    // template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md). The old hub priced a tank at double the cost
     // guide's figure and a filter at more than double, gave "10 to 20 gallon"
     // without saying 10 is pygmy-only, and omitted the heater and test kit
     // the cost guide calls required. Reconciled 2026-09-15 for batch I
@@ -379,44 +354,36 @@ export const fishGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Before any fish", value: "A tank that has finished cycling reads zero ammonia and zero nitrite while still processing a dose, which is a different question from how long it has been running.", source: "aquarium-cycling-guide" },
-        { label: "Tank size", value: "A 20-gallon long is the practical minimum for a school of six standard-sized cories; dwarf and pygmy species manage in about 10 gallons. Going to 29 or 30 gallons is better, especially for a group of 8 to 15.", source: "corydoras-catfish-tank-setup-guide" },
-        { label: "Group size", value: "Six of the same species, minimum. A lone or paired cory hides, darts erratically, and goes off its food, which is what an inadequate group looks like. Treat the number as a welfare requirement.", source: "corydoras-catfish-handling-guide" },
-        { label: "More is better", value: "Six at absolute minimum and more is better. They are social bottom-dwellers that shoal, forage and rest together, and a group of two or three is a visibly less active, more nervous set of fish.", source: "corydoras-catfish-enrichment-guide" },
-        { label: "Temperature", value: "72 to 78°F covers most species in the hobby, though preferences vary: some take warmer water, others want it cooler. Unless the room stays warm year-round, run a reliable heater, and hold the number steady rather than chasing a precise one.", source: "corydoras-catfish-tank-setup-guide" },
-        { label: "Water chemistry", value: "pH 7.0 to 7.8 for captive-bred cories, which is most of what the trade sells. Keep ammonia and nitrite at zero and nitrate low with regular water changes.", source: "corydoras-catfish-tank-setup-guide" },
-        { label: "Substrate", value: "Soft sand, or smooth, fine, rounded gravel, about 2 inches deep. Sharp or coarse gravel is out, and so are certain specialty planted-tank sands: manufacturers flag some sharp-grained options as unsuitable for bottom-dwellers like cories.", source: "corydoras-catfish-tank-setup-guide" },
-        { label: "Why sand, really", value: "Corydoras are social foragers that root through the substrate with their barbels to find food, and fine sand is what lets them do it without hurting themselves. The behavioral argument for sand is stronger than the barbel argument ever was.", source: "corydoras-catfish-enrichment-guide" },
-        { label: "Flow", value: "Gentle water movement with calm areas to rest in, rather than one strong current everywhere. They also need clear access to the surface, since they gulp air periodically as part of normal breathing.", source: "corydoras-catfish-tank-setup-guide" },
-        { label: "Lighting", value: "Standard community lighting. Cories are most active at dawn and dusk, so give them shaded cover and hides to retreat into when the tank is bright.", source: "corydoras-catfish-tank-setup-guide" },
-        { label: "Not algae eaters", value: "The cleanup crew reputation is wrong. Cories pick leftover food off the bottom, which helps but isn't the same job, and they need sinking food of their own. Algae and scraps won't keep them alive.", source: "corydoras-catfish-handling-guide" },
-        { label: "Staple food", value: "A sinking pellet or wafer made for bottom feeders or catfish, around 30 to 40% protein, does the staple work. Worms belong in the rotation regularly: live blackworms, frozen bloodworms, or Hikari Vibra Bites, plus occasional sinking gel foods.", source: "corydoras-catfish-feeding-guide" },
-        { label: "Portion", value: "Once or twice daily, and only what the group clears in 2 to 3 minutes. Start at about one sinking wafer per 3 to 4 fish, or 2 to 3 small pellets each, then adjust to what gets eaten. Food still sitting there after 20 to 30 minutes means cut back next time.", source: "corydoras-catfish-feeding-guide" },
-        { label: "Why flakes fail", value: "Because they feed on the bottom. Flakes get eaten by mid and upper-tank fish long before they sink far enough to matter, so a tank fed exclusively with flakes can leave cories functionally unfed even though food goes in daily.", source: "corydoras-catfish-feeding-guide" },
-        { label: "Feeding after dark", value: "Sinking food fed for them, after lights out if faster tankmates are taking it.", source: "corydoras-catfish-enrichment-guide" },
-        { label: "Surface dashes", value: "Corydoras can gulp air and absorb oxygen through the gut, which is normal behavior rather than a symptom. It becomes a warning sign when it happens constantly, which usually means the water is low in oxygen or fouled.", source: "corydoras-catfish-enrichment-guide" },
-        { label: "Barbel erosion", value: "The barbels wear down: shortened, red, or gone entirely. It's the signature cory health issue. Sharp substrate is the usual explanation, and eroding barbels may owe as much to poor water quality as to grain shape, so a dirty substrate is what to manage first.", source: "corydoras-catfish-health-issues-guide" },
-        { label: "Keeping the bottom clean", value: "Regular substrate vacuuming, low nitrate, no uneaten food left to rot. Sharp substrate is not ideal and is a secondary factor next to what is living in a dirty one.", source: "corydoras-catfish-enrichment-guide" },
-        { label: "If barbels go", value: "Caught reasonably early, move to soft sand, do a significant water change, and hold nitrates under 20 ppm from there on. Barbels can regrow over 4 to 8 weeks once conditions improve. Untreated, it can progress to red blotch disease.", source: "corydoras-catfish-health-issues-guide" },
-        { label: "Medication sensitivity", value: "They're armored catfish with sensitive, naked bellies, and notably more medication sensitive than many community fish. That means reduced doses, sometimes a half or a quarter of the standard amount, and no full-strength copper, malachite green, or formalin.", source: "corydoras-catfish-health-issues-guide" },
-        { label: "Ich", value: "Raise the temperature gradually toward 82°F with strong aeration, and reduce the medication dose. This species doesn't tolerate a full-strength treatment the way many hardier fish do.", source: "corydoras-catfish-health-issues-guide" },
-        { label: "Netting one", value: "Take real care, since the pectoral spines lock and tangle in mesh.", source: "corydoras-catfish-enrichment-guide" },
-        { label: "Quarantine", value: "A new or sick fish belongs in a bare hospital tank first, and how long it stays there is settled by the rules rather than by how the fish looks.", source: "fish-quarantine-and-treatment-guide" },
-        { label: "Budget", value: "$3 to $8 each for the common ones, and groups of six or more are the requirement, so price the school rather than the fish. Roughly $150 to $215 upfront, and $10 to $20 a month after that.", source: "corydoras-catfish-cost-guide" },
-        { label: "Vet costs", value: "Aquatic vets are uncommon. Most cory health problems get handled by the keeper instead, through correcting water quality and using appropriate medication.", source: "corydoras-catfish-cost-guide" },
-        { label: "Lifespan", value: "5 to 10 years is typical, and some individuals live well past that, with occasional reports of up to 15 years in ideal conditions. Plan the tank around it: that's longer than many people expect from a small bottom dweller.", source: "corydoras-catfish-cost-guide" },
+        { label: "Before any fish", value: "A finished cycle reads zero ammonia and zero nitrite while still processing a dose, which is a different question from how long the tank has been running.", source: "aquarium-cycling-guide" },
+        { label: "Tank size", value: "A 20-gallon long for a school of six standard cories; dwarf and pygmy species manage in about 10 gallons. 29 or 30 gallons is better, especially for 8 to 15.", source: "corydoras-catfish-tank-setup-guide" },
+        { label: "Group size", value: "Six of the same species, minimum, and more is better. A lone or paired cory hides, darts and goes off its food.", source: "corydoras-catfish-handling-guide" },
+        { label: "Temperature", value: "72 to 78°F covers most species in the hobby. Run a heater unless the room stays warm year-round, and hold the number steady rather than chasing a precise one.", source: "corydoras-catfish-tank-setup-guide" },
+        { label: "Water chemistry", value: "pH 7.0 to 7.8 for captive-bred cories, which is most of the trade. Ammonia and nitrite at zero, nitrate low through regular water changes.", source: "corydoras-catfish-tank-setup-guide" },
+        { label: "Substrate", value: "Soft sand, or smooth rounded gravel, about 2 inches deep. No sharp or coarse gravel, and some sharp-grained planted-tank sands are flagged unsuitable for bottom-dwellers.", source: "corydoras-catfish-tank-setup-guide" },
+        { label: "Flow and surface", value: "Gentle movement with calm places to rest, and clear access to the surface, since they gulp air as part of normal breathing.", source: "corydoras-catfish-tank-setup-guide" },
+        { label: "Surface dashes", value: "An occasional dash up for air is normal. Constant ones mean the water is short of oxygen or fouled.", source: "corydoras-catfish-enrichment-guide" },
+        { label: "Not algae eaters", value: "The cleanup-crew reputation is wrong. Cories pick leftovers off the bottom and need sinking food of their own; algae and scraps will not keep them alive.", source: "corydoras-catfish-handling-guide" },
+        { label: "Staple food", value: "A sinking pellet or wafer for bottom feeders, around 30 to 40% protein, with worms in the rotation: live blackworms, frozen bloodworms, Vibra Bites. Flakes get eaten higher up before they ever reach the floor.", source: "corydoras-catfish-feeding-guide" },
+        { label: "Portion", value: "Once or twice daily, cleared in 2 to 3 minutes. Start at one wafer per 3 to 4 fish or 2 to 3 small pellets each. Food still sitting after 20 to 30 minutes means cut back.", source: "corydoras-catfish-feeding-guide" },
+        { label: "Feeding after dark", value: "Sinking food fed for them after lights out, if faster tankmates are taking it.", source: "corydoras-catfish-enrichment-guide" },
+        { label: "Barbel erosion", value: "Shortened, red or missing barbels, the signature cory problem, owing as much to a dirty substrate as to grain shape. Move to soft sand, do a big water change and hold nitrate under 20 ppm; barbels can regrow over 4 to 8 weeks.", source: "corydoras-catfish-health-issues-guide" },
+        { label: "Medication", value: "Naked bellies make them more sensitive than most community fish: reduced doses, sometimes a half or a quarter, and no full-strength copper, malachite green or formalin. For ich, raise the temperature gradually toward 82°F with strong aeration.", source: "corydoras-catfish-health-issues-guide" },
+        { label: "Netting one", value: "The pectoral spines lock and tangle in mesh, so take real care.", source: "corydoras-catfish-enrichment-guide" },
+        { label: "Budget", value: "$3 to $8 each, and six or more is the requirement, so price the school. Roughly $150 to $215 for the equipment, then $10 to $20 a month. Aquatic vets are uncommon; keepers handle most problems through water quality.", source: "corydoras-catfish-cost-guide" },
+        { label: "Lifespan", value: "5 to 10 years typical, with reports of up to 15.", source: "corydoras-catfish-cost-guide" },
         { label: "Adult size", value: "1 to 3 inches (2.5 to 7.5 cm) depending on species." },
       ],
     },
     emergencyCard: {
       source: "corydoras-catfish-health-issues-guide",
+      heading: "Test the water first, then act on these today. Aquatic vets are rare, so nearly all of this is handled at home.",
       callNow: [
-        "Barbels shortened, red, or gone entirely",
+        "Barbels shortened, red, or gone",
         "Red or bloody-looking sores on the belly and flanks",
-        "Small white spots resembling grains of salt",
+        "Small white spots like grains of salt",
         "Frayed or receding fins",
       ],
-      vetLine: "Aquatic vets are uncommon, so most of this is handled by correcting water quality and using appropriate medication at a reduced dose. This species is notably more medication sensitive than many community fish: sometimes a half or a quarter of the standard amount, and no full-strength copper, malachite green, or formalin.",
+      vetLine: "Correct the water and treat at a reduced dose, sometimes a half or a quarter of the label amount. No full-strength copper, malachite green, or formalin.",
     },
     routes: [
       { slug: "corydoras-catfish-cost-guide", line: "$3 to $8 a fish and you need six, the $150 to $215 setup, and why the substrate line matters more here than for most community fish." },
@@ -457,10 +424,10 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Cycling, filtration, the hospital tank, water
-    // chemistry, the power outage rule and the sick-fish check cite the shared
-    // aquarium guides in the sidebar's Health and More list. Reconciled
-    // 2026-09-15 after the discus set test (docs/READER_REVIEWS.md).
+    // encyclopedia entry. The hospital tank and the power outage rule cite the
+    // shared aquarium guides in the sidebar's Health and More list. Reconciled
+    // 2026-09-15 after the discus set test (docs/READER_REVIEWS.md), rewritten
+    // to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
     //
     // Retired rather than moved: a tank line of "$290 | $450" against the cost
     // guide's "$290 - $310", a $140 gap at the top; a checklist reading
@@ -483,41 +450,36 @@ export const fishGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Tank size", value: "55 gallons is commonly cited as the practical entry point for a small group. Several experienced discus-keeping sources push back on treating 55 gallons as anything more than a floor, recommending 75 gallons or larger instead, since a 55-gallon tank forces meaningfully more frequent water changes to keep pace with a proper group's waste output. Taller and deeper tanks are generally preferred over long, shallow ones.", source: "discus-tank-setup-guide" },
-        { label: "How many", value: "Plan for a real group, 5 to 6 fish or more, since this is a genuinely social species that does poorly alone or in a pair outside of breeding.", source: "discus-tank-setup-guide" },
-        { label: "Why the number is six", value: "The reason is the pecking order. A group of three gives the bottom fish nothing but the bottom. Six or more spreads the aggression thinly enough that no individual is permanently targeted. Watch for the singled-out fish. A discus that hangs dark-colored at the surface in a corner is the one to act on, and the answer is usually more fish or more tank rather than removing the aggressor.", source: "discus-enrichment-guide" },
-        { label: "Temperature", value: "82 to 86\u00B0F, warmer than nearly every other common community fish and warm enough that it genuinely limits realistic tankmate options. Wild Heckel discus tolerate water closer to 90\u00B0F, but 82 to 86\u00B0F is the standard range cited for keeping captive-bred discus long term. Many keepers budget toward the higher end of standard heater wattage, or run two heaters, since a heater failure is a bigger problem at this temperature.", source: "discus-tank-setup-guide" },
-        { label: "Water changes", value: "The detail that actually defines a working discus tank more than any single equipment choice. Weekly changes in the 25 to 50% range are commonly recommended, and some serious keepers change water every 2 to 3 days rather than weekly. Budget the electricity and water use behind this routine into your ongoing costs.", source: "discus-tank-setup-guide" },
-        { label: "Filtration, which is genuinely debated", value: "Canister filters, sized well above the tank's actual volume, are the most common modern choice and handle this species' heavy bioload well. At least one discus-specialty source pushes back on canister filters specifically, arguing they're sealed systems that compete with the fish for dissolved oxygen and can fail dangerously during a power outage, recommending a hang-on-back filter instead, or a canister paired with extra surface agitation. Avoid under-gravel filters.", source: "discus-tank-setup-guide" },
-        { label: "Put the tank somewhere quiet", value: "An enrichment decision that costs nothing and is almost never mentioned. Discus are nervous fish, and a tank in a busy corridor with people passing and looming over it produces animals that live at the back. A low-traffic wall, approached from the side rather than above, and a background on the rear glass. Feed at the same times so the routine becomes predictable.", source: "discus-enrichment-guide" },
-        { label: "Structure and open water", value: "Tall plant stems and upright driftwood give them structure to orient to and break sight lines between individuals, which matters given the hierarchy. Leave open water. Discus cruise instead of darting, and they need somewhere to do it.", source: "discus-enrichment-guide" },
-        { label: "Feeding schedule", value: "Adults 2 to 3 times a day, small amounts cleared within a few minutes. Discus have a short gut relative to their body size, and smaller, more frequent meals suit that better than one large feeding.", source: "discus-feeding-guide" },
-        { label: "Diet", value: "A quality discus-formulated pellet or granule, sized appropriately for this species' small mouth, supplemented regularly with frozen or live bloodworms and brine shrimp. Many experienced keepers also feed a beef-heart mix as part of the rotation, though it works better as a supplement than as the sole staple.", source: "discus-feeding-guide" },
-        { label: "How fry feed", value: "Once free-swimming, fry feed directly on mucus secreted from both parents' skin, most intensively for roughly the first two weeks, with parents gradually weaning them off it over the following two weeks as they start swimming away more often and the fry begin investigating other food sources.", source: "discus-feeding-guide" },
-        { label: "Acclimation, where sources disagree", value: "General fishkeeping guidance commonly recommends a slow drip acclimation, sometimes 60 to 90 minutes. At least one discus-specialty breeder argues the opposite for this species, that drip acclimation keeps the fish confined in shipping water longer while oxygen depletes, and recommends a faster, controlled temperature and pH match instead. What does line up: keep the lights off during acclimation and for several hours after, and don't feed a newly introduced discus right away.", source: "discus-handling-guide" },
-        { label: "Tankmates", value: "Narrower than it looks from a typical peaceful-community list, because sustained 82 to 86\u00B0F rules a lot of standard tropical fish out. Cardinal tetras are named most consistently across dedicated discus sources, alongside rummynose tetras, Sterbai cory catfish, and bristlenose plecos. Neon tetras are a genuine point of disagreement, so cardinals are the safer default if you want a warm-water tetra.", source: "discus-handling-guide" },
-        { label: "Sexing", value: "Genuinely difficult outside of breeding. A more pointed dorsal fin and a somewhat larger body are rough cues, and sources are clear they aren't reliable alone. Most keepers raise a group and let pairs form and reveal themselves through spawning behavior instead of sexing young fish by eye.", source: "discus-handling-guide" },
-        { label: "Budget, the fish", value: "$20 to $450 or more, and price is heavily strain-dependent. Young, common-strain discus run $20 to $40, nicer adult specimens $50 to $150, and premium or rare strains regularly climb to $200 to $450 or more per fish. With a group of 5 to 6, the starting cost is closer to $150 to $250 even at the budget end.", source: "discus-cost-guide" },
-        { label: "Budget, the setup", value: "Roughly $600 to $800, with ongoing costs of $20 to $50 a month. The fish itself is rarely the biggest line item unless you're chasing a premium strain: what drives the budget is filtration sized well above the tank's volume and a water-change routine more demanding than most freshwater fish need.", source: "discus-cost-guide" },
-        { label: "Lifespan", value: "10 to 15 years with excellent, stable care is the commonly cited range, though some sources put the typical captive lifespan closer to 8 to 10 years. Consistency is the deciding factor here more than for most community fish.", source: "discus-cost-guide" },
+        { label: "Tank size", value: "55 gallons is the entry point and a floor, not a target; experienced keepers recommend 75 or larger, since a 55 forces far more frequent water changes for a proper group. Taller and deeper over long and shallow.", source: "discus-tank-setup-guide" },
+        { label: "How many", value: "5 to 6 or more. Three gives the bottom fish nothing but the bottom; six spreads the pecking order thin. The dark fish hanging at the surface in a corner is the one to act on, and the answer is more fish or more tank.", source: "discus-tank-setup-guide" },
+        { label: "Temperature", value: "82 to 86°F, warmer than nearly every community fish, which is what limits tankmates. Many keepers run two heaters, since a heater failure at this temperature is a bigger problem.", source: "discus-tank-setup-guide" },
+        { label: "Water chemistry", value: "Soft and slightly acidic, roughly pH 6.0 to 7.0. Hard tap water usually needs an RO or RO/DI unit to get there, and that unit belongs in the budget.", source: "discus-tank-setup-guide" },
+        { label: "Water changes", value: "The routine that defines a working discus tank: weekly changes of 25 to 50%, and some serious keepers change every 2 to 3 days.", source: "discus-tank-setup-guide" },
+        { label: "Filtration", value: "A canister sized well above the tank volume is the common choice. A canister competes with the fish for oxygen and fails badly in an outage, so pair it with surface agitation or use a hang-on-back. No under-gravel filters.", source: "discus-tank-setup-guide" },
+        { label: "Put the tank somewhere quiet", value: "Nervous fish. A low-traffic wall, approached from the side rather than above, a background on the rear glass, and feeding at the same times each day.", source: "discus-enrichment-guide" },
+        { label: "Structure and open water", value: "Tall stems and upright driftwood to orient to and break sight lines, with open water left to cruise in.", source: "discus-enrichment-guide" },
+        { label: "Feeding schedule", value: "Adults 2 to 3 times a day, small amounts cleared within a few minutes. A short gut suits frequent small meals over one large one.", source: "discus-feeding-guide" },
+        { label: "Diet", value: "A discus-formulated pellet or granule sized for a small mouth, with frozen or live bloodworms and brine shrimp regularly. Beef-heart mix as a supplement, not the staple.", source: "discus-feeding-guide" },
+        { label: "Acclimation", value: "The default is a slow drip of 60 to 90 minutes. One discus breeder argues for a fast temperature and pH match instead, since oxygen depletes in the shipping water. Either way: lights off, and no food on day one.", source: "discus-handling-guide" },
+        { label: "Tankmates", value: "Cardinal tetras, rummynose tetras, Sterbai cories and bristlenose plecos are the ones named consistently. Neons are disputed at 82 to 86°F, so cardinals are the safer warm-water tetra.", source: "discus-handling-guide" },
+        { label: "Sexing", value: "Difficult outside of breeding. Raise a group and let pairs reveal themselves.", source: "discus-handling-guide" },
+        { label: "Budget", value: "$20 to $40 for young common-strain fish, so a group of 5 to 6 starts at $150 to $250 even at the budget end; premium strains reach $200 to $450 a fish. Setup roughly $600 to $800, then $20 to $50 a month.", source: "discus-cost-guide" },
+        { label: "Lifespan", value: "10 to 15 years with stable care; some sources put typical closer to 8 to 10.", source: "discus-cost-guide" },
         { label: "Adult size", value: "6 to 8 inches (15 to 20 cm) in diameter." },
-        { label: "Cycling, the finish line", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
-        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
-        { label: "Hospital tank", value: "A bare hospital tank with its own net and siphon hose, never shared with the display tank, and disinfected and stored dry between uses. A sponge filter gives gentle biological filtration without the flow of a hang-on-back or canister unit.", source: "fish-quarantine-and-treatment-guide" },
-        { label: "Water chemistry, the wider picture", value: "KH is the buffer holding pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you rather than chasing a number.", source: "freshwater-ph-gh-kh-guide" },
-        { label: "Power outage", value: "The threat is oxygen, not darkness. Once the filter and any air pump stop, the water surface stops moving, gas exchange slows, and dissolved oxygen starts dropping. Unplug the filter deliberately rather than letting it sit dead in the water.", source: "aquarium-power-outage-and-transport-guide" },
-        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
+        { label: "Quarantine", value: "A bare hospital tank with its own net and siphon, never shared with the display. A sponge filter gives gentle biological filtration.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
     emergencyCard: {
       source: "discus-health-issues-guide",
+      heading: "Test the water first, then act on these today. Aquatic vets are rare, so nearly all of this is handled at home.",
       callNow: [
-        "Small white spots on the skin and gills, usually preceded by flashing against decor, weakness, and appetite loss",
+        "Small white spots on skin and gills after flashing against decor, weakness, appetite loss",
         "Pitting, small holes, and erosion around the head and along the lateral line",
-        "Labored or rapid breathing, flashing against decor, excess mucus production, and sometimes visible spots on the body",
-        "Ragged, receding fins with discolored edges, along with cloudy eyes or abdominal swelling in more advanced bacterial cases",
+        "Labored or rapid breathing, flashing, excess mucus, sometimes spots on the body",
+        "Ragged, receding fins with discolored edges, cloudy eyes, or abdominal swelling",
       ],
-      vetLine: "Ich treatment for this species goes noticeably higher than the standard advice given for other fish, toward roughly 90\u00B0F rather than the 82 to 86\u00B0F this species already lives at, since discus have less headroom left before hitting ich's own upper survival limit. The common hobbyist explanation for hole-in-the-head disease is a calcium-to-phosphorus imbalance in the diet, beef heart in particular gets blamed. A 2019 controlled study in the Journal of Fish Diseases tested this directly: researchers fed discus a diet with a severely unfavorable calcium-to-phosphorus ratio for 16 weeks and found it did not produce hole-in-the-head lesions or measurable bone resorption in that window. Water quality and stress remain the better-supported explanations. Catching it early matters, advanced lesions can be genuinely disfiguring and are less likely to fully resolve.",
+      vetLine: "Ich treatment for discus runs hotter than the standard advice, toward roughly 90°F rather than the 82 to 86°F they already live at.",
     },
     routes: [
       { slug: "discus-cost-guide", line: "$20 to $450 a fish by strain, $600 to $800 for the tank around them, and why the fish is rarely the biggest line." },
@@ -583,14 +545,15 @@ export const fishGuides = [
     },
     emergencyCard: {
       source: "goldfish-health-issues-guide",
+      heading: "Test the water first, then act on these today.",
       callNow: [
         "Persistent loss of buoyancy",
         "Severe fin damage",
         "Visible ulcers",
         "Ongoing lethargy or appetite refusal",
-        "An over-the-counter treatment that isn't working",
+        "An over-the-counter treatment that is not working",
       ],
-      vetLine: "An aquatic vet, found before you need one. Most of what's on the health issues list is prevented, not treated, through consistent water quality, quarantining new fish, and appropriate feeding.",
+      vetLine: "An aquatic vet, found before you need one. Most of the health list is prevented, not treated, through water quality, quarantine, and appropriate feeding.",
     },
     routes: [
       { slug: "goldfish-cost-guide", line: "The fish itself under $10, a $150 to $400 setup where filtration is the real cost, and $10 to $30 a month after that." },
@@ -639,41 +602,35 @@ export const fishGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Tank size", value: "5 gallons works as a bare minimum for a small trio, but 10 gallons is the more practical beginner starting point for a group of 5 or 6. Given how readily guppies breed, a 20-gallon tank is a better long-term choice if you're not actively separating males and females.", source: "guppy-tank-setup-guide" },
-        { label: "Water temperature", value: "A genuinely tropical species, comfortable in the 72 to 82°F range, with 76 to 78°F as a solid target. A heater is necessary unless your room stays consistently warm year-round, budget roughly 3 to 5 watts per gallon, so a 25 to 50 watt heater for a 10-gallon tank.", source: "guppy-tank-setup-guide" },
-        { label: "Water chemistry", value: "Guppies do best with a pH of 7.0 or above and moderately hard water, good calcium and magnesium content. If your tap water runs soft, a mineral supplement can help buffer it into a more suitable range.", source: "guppy-tank-setup-guide" },
-        { label: "Filtration", value: "Keep the flow gentle. A sponge filter works well and is the safer choice if you're allowing breeding, since it won't pull fry into strong current. A hang-on-back filter with adjustable flow also works well for a non-breeding setup.", source: "guppy-tank-setup-guide" },
-        { label: "Substrate", value: "Fine gravel or sand both work well, and darker substrate colors tend to make guppy coloring stand out more. Avoid sharp or coarse gravel, which can damage delicate fins.", source: "guppy-tank-setup-guide" },
-        { label: "Lighting", value: "A basic LED light on an 8 to 10 hour daily cycle is sufficient.", source: "guppy-tank-setup-guide" },
-        { label: "Sex ratio", value: "Two to three females per male minimum, and more females is better still. Six or more females per male is a common recommendation and there is nothing wrong with it. Or keep males only, which avoids the harassment question entirely, avoids the endless fry, and keeps the color.", source: "guppy-enrichment-guide" },
-        { label: "Feeding schedule", value: "Adults: once to three times a day. The portion rule matters more than the count, whichever frequency you settle on: feed only what's fully cleared within about 1 to 2 minutes.", source: "guppy-feeding-guide" },
-        { label: "Feeding fry and juveniles", value: "Fry, newborn to roughly 2 to 4 weeks, take the highest feeding frequency of any stage: 3 to 5 times a day, up to every 2 to 3 hours in the earliest days. Juveniles, roughly 1 to 3 to 4 months, get around 3 to 4 meals a day.", source: "guppy-feeding-guide" },
-        { label: "Diet", value: "The base diet should be a high-quality tropical fish flake or small pellet formulated for community fish, not goldfish food, which has a different, lower-protein profile. Rotate in protein-rich live, frozen, or freeze-dried foods, and add vegetable matter too, blanched and cut small.", source: "guppy-feeding-guide" },
-        { label: "Population plan", value: "Keep males and females in separate tanks if you want to avoid breeding entirely. Keep males only for a colorful, breeding-free tank. Let it happen and plan for it, rehoming or selling fry as they mature, or allowing natural predation to control numbers if you're not removing fry deliberately.", source: "guppy-handling-guide" },
-        { label: "Handling", value: "Guppies are an observation and enjoyment pet, not a hands-on one. If you need to move one, guide it with a net rather than touching it directly.", source: "guppy-handling-guide" },
-        { label: "Adult size", value: "Males are the smaller, more colorful sex, around an inch and a half, while females run larger and comparatively plain, up to about 2.4 inches.", source: "guppy-handling-guide" },
-        { label: "Budget", value: "Standard, wild-type guppies run $2 to $5 each, and fancy varieties $10 to $20 per pair. A basic 10-gallon starter kit, tank, filter, heater, water conditioner, and substrate, commonly runs $30 to $100 depending on the brand and size you choose.", source: "guppy-cost-guide" },
-        { label: "Lifespan", value: "2 to 3 years on average, up to 4 or 5 with excellent care. Female fertility drops off after around age 2.", source: "guppy-cost-guide" },
-        { label: "Cycling", value: "Most fishless cycles run four to six weeks at a warm, stable temperature, though real tanks have taken anywhere from about three weeks to two months. Treat any reading above zero as a signal to test again soon, and act with a water change once ammonia or nitrite climbs past roughly 0.1 to 0.25 ppm.", source: "aquarium-cycling-guide" },
-        { label: "Quarantine", value: "At least 30 days in a bare hospital tank before joining others, and 30 to 60 days for a fish you want to be genuinely sure about. Thirty days is the floor, not the target, since some parasites and infections take that long to show themselves.", source: "fish-quarantine-and-treatment-guide" },
-        { label: "Power outage", value: "Aerate right away. A battery-powered air pump with an airstone is the cleanest fix. With no battery pump on hand, agitate the surface by hand roughly every 10 to 15 minutes in a small tank and every 20 to 30 minutes in a larger one.", source: "aquarium-power-outage-and-transport-guide" },
+        { label: "Tank size", value: "5 gallons is a bare minimum for a trio; 10 gallons is the practical start for 5 or 6, and 20 the better long-term choice if males and females share a tank.", source: "guppy-tank-setup-guide" },
+        { label: "Temperature", value: "76 to 78°F as the target inside 72 to 82°F. A heater unless the room stays warm year-round, at 3 to 5 watts per gallon, so 25 to 50 watts on a 10-gallon.", source: "guppy-tank-setup-guide" },
+        { label: "Water chemistry", value: "pH 7.0 or above and moderately hard water. Soft tap water gets a mineral supplement.", source: "guppy-tank-setup-guide" },
+        { label: "Filtration and substrate", value: "Gentle flow, a sponge filter if fry are wanted, an adjustable hang-on-back if not. Fine gravel or sand, darker for color, nothing sharp near those fins.", source: "guppy-tank-setup-guide" },
+        { label: "Lighting", value: "A basic LED on an 8 to 10 hour cycle.", source: "guppy-tank-setup-guide" },
+        { label: "Sex ratio", value: "Two to three females per male minimum, six or more is common and fine. Or males only, which ends the harassment question and the endless fry, and keeps the color.", source: "guppy-enrichment-guide" },
+        { label: "Feeding schedule", value: "Adults once to three times a day, only what clears in about 1 to 2 minutes. Fry 3 to 5 times a day, juveniles around 3 to 4.", source: "guppy-feeding-guide" },
+        { label: "Diet", value: "A tropical flake or small pellet for community fish, not goldfish food, with live or frozen protein and small blanched vegetable matter in rotation.", source: "guppy-feeding-guide" },
+        { label: "Population plan", value: "Separate the sexes, keep males only, or let it happen and plan to rehome fry or let predation control numbers. Decide before the first brood.", source: "guppy-handling-guide" },
+        { label: "Handling", value: "An observation pet. Guide with a net rather than touching.", source: "guppy-handling-guide" },
+        { label: "Adult size", value: "Males around an inch and a half; females larger and plainer, up to about 2.4 inches.", source: "guppy-handling-guide" },
+        { label: "Budget", value: "$2 to $5 for a wild-type guppy, $10 to $20 a pair for fancy varieties. A basic 10-gallon kit runs $30 to $100.", source: "guppy-cost-guide" },
+        { label: "Lifespan", value: "2 to 3 years, up to 4 or 5 with excellent care.", source: "guppy-cost-guide" },
+        { label: "Cycling", value: "Four to six weeks fishless, sometimes three weeks to two months. A water change once ammonia or nitrite passes roughly 0.1 to 0.25 ppm.", source: "aquarium-cycling-guide" },
+        { label: "Quarantine", value: "At least 30 days in a bare hospital tank, 30 to 60 for a fish you want to be sure about. Thirty is the floor.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Power outage", value: "Aerate right away with a battery air pump, or agitate the surface by hand every 10 to 15 minutes in a small tank and every 20 to 30 in a larger one.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
     emergencyCard: {
-      // The health issues guide carries no call-the-vet list of its own; the
-      // feeding guide's "When to Worry" section is the only one in the set, so
-      // the card copies that list bullet for bullet.
       source: "guppy-feeding-guide",
+      heading: "Test the water first, then act on these today. Aquatic vets are rare, so nearly all of this is handled at home.",
       callNow: [
-        "Appetite loss combined with lethargy, hiding, or erratic swimming",
+        "Appetite loss with lethargy, hiding, or erratic swimming",
         "Gasping at the surface",
-        "Clamped or discolored fins",
-        "Cloudy eyes",
-        "Visible injuries",
-        "White spots",
-        "A swollen pinecone-like body",
+        "Clamped or discolored fins, or cloudy eyes",
+        "White spots, or visible injuries",
+        "A swollen, pinecone-like body",
       ],
-      vetLine: "Any of these, especially if spreading to other fish, is a signal to test water parameters immediately and consider a fish-health specialist rather than waiting. There's no single, universally agreed number for how long a guppy can safely go without food: a vet-affiliated source recommends contacting a vet if decreased appetite lasts more than one day, notably stricter than hobbyist consensus.",
+      vetLine: "Any of these spreading to other fish means test the water immediately and consider a fish-health specialist rather than waiting.",
     },
     routes: [
       { slug: "guppy-cost-guide", line: "$2 to $5 for a standard fish, $10 to $20 a pair for fancy strains, a modest setup, and the cost nobody budgets for: more guppies than you started with." },
@@ -713,8 +670,9 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry. Quarantine, cycling and the power-outage row cite the shared
-    // aquarium guides in the sidebar's Health and More list. Built 2026-09-15 for
+    // entry. The power-outage row cites the shared aquarium guides in the
+    // sidebar's Health and More list. Rewritten to the template shape 2026-09-16
+    // (docs/HUB_ROUTER_REVIEWS.md). Built 2026-09-15 for
     // the koi set test (docs/READER_REVIEWS.md), which found the old hub giving a
     // 2 to 4 week quarantine against the health guide's 4 to 6 weeks or longer, a
     // 25 to 35 year lifespan against the cost guide's 25 to 50, peas as an
@@ -726,42 +684,35 @@ export const fishGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Pond volume", value: "Roughly 250 gallons per adult koi, or about 10 gallons per inch of body length. In practice, 1,000 gallons is the frequently cited minimum practical pond volume, and it only comfortably supports a few fish, larger is strongly preferred for water stability and healthy growth.", source: "koi-tank-setup-guide" },
-        { label: "Depth", value: "Minimum 3 feet, ideally 3 to 5 feet or more. Depth buys temperature stability, protection from predators, and survival through a freezing winter; a shallow pond can freeze solid or overheat, both dangerous.", source: "koi-tank-setup-guide" },
-        { label: "Indoors is temporary", value: "Indoor aquariums can technically house koi, but matching the volume and industrial-grade filtration an adult needs indoors is expensive and impractical for most keepers. Outdoor ponds are the standard setup for adult koi for good reason.", source: "koi-tank-setup-guide" },
-        { label: "Temperature", value: "Koi are hardy coldwater fish, comfortable in a 64 to 75°F range, with 59 to 77°F as the outer limits. They tolerate wider extremes than that range suggests, but rapid swings, more than about 2°F a day, are the real risk, not the absolute temperature.", source: "koi-tank-setup-guide" },
-        { label: "Filtration", value: "Koi are heavy waste producers, and this is where most beginner setups fall short. An oversized filtration system paired with a UV clarifier is the right call here, not overkill, with strong aeration and oxygenation alongside it.", source: "koi-tank-setup-guide" },
-        { label: "Lighting", value: "No UVB lighting is required, koi don't rely on it for vitamin D the way many reptiles do. A UV clarifier or sterilizer is common and genuinely useful, but it's a water-treatment device for controlling algae and pathogens, not lighting for the fish themselves.", source: "koi-tank-setup-guide" },
-        { label: "Predators", value: "Herons, raccoons, and similar predators are real threats. An appropriately sized netting kit and adequate depth both matter here.", source: "koi-tank-setup-guide" },
-        { label: "Feeding by temperature", value: "Stop below about 48 to 50°F. Feed sparingly once or twice a day between 50 and 68°F, and 2 to 4 times a day in the 68 to 86°F growth range. Above about 86 to 90°F, cut back again, heat stress impairs digestion too.", source: "koi-feeding-guide" },
-        { label: "Why cold feeding is dangerous", value: "Koi have no true stomach, food passes straight into the intestine. If a koi enters cold-water torpor with food still in its gut, undigested material can let harmful bacteria cross the intestinal wall into the bloodstream.", source: "koi-feeding-guide" },
-        { label: "Portion", value: "The traditional 5-minute rule, only offer what's cleaned up in 3 to 5 minutes, is the most repeated guidance, and it is also the easiest one to overfeed on. A body-weight-based approach, roughly 1 to 4% of body weight a day depending on temperature and size, is the more precise alternative.", source: "koi-feeding-guide" },
-        { label: "Seasonal food", value: "A lower-protein wheat-germ formula, roughly 25 to 32% crude protein, is easier to digest at low metabolic rates and is the right choice in the 50 to 64°F range. The higher-protein warm-season growth and color formula, 32 to 40%+, is for consistently warmer water above roughly 60 to 64°F.", source: "koi-feeding-guide" },
-        { label: "Treats", value: "Supplement 2 to 3 times a week rather than daily. Peas go in small, thoroughly cooked, shelled amounts if you feed them at all, since hard or dried peas are a real choking and blockage risk. Always remove fruit seeds, pits, and citrus rind before feeding.", source: "koi-feeding-guide" },
-        { label: "Handling", value: "Handle as little as possible, ideally only for necessary treatment, transport, or showing, never for casual interaction. Guide the fish into a floating bowl or soft container using a net, rather than lifting it directly, and keep your hands or any towel wet before contact, dry surfaces strip the slime coat.", source: "koi-handling-guide" },
-        { label: "Quarantine", value: "Strict quarantine of 4 to 6 weeks or longer, sometimes at specific temperatures, is the critical prevention step for koi herpesvirus. Even fish who survive an outbreak can remain lifelong carriers.", source: "koi-health-issues-guide" },
-        { label: "KHV", value: "Koi Herpesvirus is the most serious concern. It causes gill necrosis, excess mucus, lethargy, and skin lesions, outbreaks can carry mortality rates of 80 to 100%, it's temperature dependent, and there's no reliable cure.", source: "koi-health-issues-guide" },
-        { label: "Spring restart", value: "A healthy dose of beneficial bacteria at spring startup, paired with the oversized filtration and UV clarification a koi pond is built around, prevents far more of the health list than any treatment ever will.", source: "koi-health-issues-guide" },
-        { label: "Stock for the adults", value: "Adult koi need thousands of gallons rather than hundreds, and a pond built to the fish you bought is a pond you will be rebuilding. Size the filtration for the fish the koi will become, not the ones swimming now.", source: "koi-enrichment-guide" },
-        { label: "Budget, the fish", value: "$10 to $100 for a juvenile pond-quality domestic koi, often $10 to $50 for a small 4 to 6 inch fish. Medium or better colored specimens run $45 to $200 or more, imported Japanese koi average roughly $100 to $1,500, and show quality runs $1,200 to $15,000.", source: "koi-cost-guide" },
-        { label: "Budget, the pond", value: "A residential pond in the 6x8 to 11x16 foot range, roughly 1,000 gallons to several thousand, commonly runs $5,100 to $15,875 installed, averaging around $10,000 in recent cost analyses. Small prefab basic setups can start around $500.", source: "koi-cost-guide" },
-        { label: "Running costs", value: "Commonly $1,000 to $2,000 or more a year all in. Food runs $30 to $75 or more a month in active season, dropping sharply once water falls below about 48 to 50°F.", source: "koi-cost-guide" },
-        { label: "Vet costs", value: "Specialized aquatic vets aren't common, and many keepers manage minor issues themselves through water quality correction and over the counter treatments. When a vet is available, a routine exam tends to run in the low to mid hundreds of dollars.", source: "koi-cost-guide" },
-        { label: "Lifespan", value: "25 to 50 years with good care is the commonly cited range, and Japanese bloodlines are often noted as hardier and longer lived than some domestic lines, which may average closer to 15 years.", source: "koi-cost-guide" },
+        { label: "Pond volume", value: "Roughly 250 gallons per adult, or 10 gallons per inch of fish. 1,000 gallons is the cited practical minimum and supports only a few fish; size for the adults they become, not the juveniles you bought.", source: "koi-tank-setup-guide" },
+        { label: "Depth", value: "3 feet minimum, 3 to 5 feet or more preferred. Depth buys temperature stability, predator protection and survival through a frozen winter.", source: "koi-tank-setup-guide" },
+        { label: "Indoors is temporary", value: "An aquarium can hold a juvenile. Matching an adult's volume and filtration indoors is impractical for most keepers, which is why the outdoor pond is the standard.", source: "koi-tank-setup-guide" },
+        { label: "Temperature", value: "Comfortable at 64 to 75°F, with 59 to 77°F the outer limits. The real risk is a rapid swing of more than about 2°F a day, not the absolute number.", source: "koi-tank-setup-guide" },
+        { label: "Filtration", value: "Oversized filtration with a UV clarifier and strong aeration, which is where most beginner ponds fall short. No UVB: the UV unit treats the water, not the fish.", source: "koi-tank-setup-guide" },
+        { label: "Predators", value: "Herons and raccoons are real threats. Netting sized to the pond, and depth.", source: "koi-tank-setup-guide" },
+        { label: "Feeding by temperature", value: "Stop below about 48 to 50°F. Sparingly once or twice a day from 50 to 68°F, 2 to 4 times a day from 68 to 86°F, and cut back again above 86 to 90°F.", source: "koi-feeding-guide" },
+        { label: "Why cold feeding is dangerous", value: "Koi have no true stomach. Food left in the gut as the fish enters cold torpor lets bacteria cross the intestinal wall into the blood.", source: "koi-feeding-guide" },
+        { label: "Portion and food", value: "What is cleaned up in 3 to 5 minutes, the easiest rule to overfeed on; 1 to 4% of body weight a day is the precise alternative. Wheat-germ formula in the 50 to 64°F range, growth formula above about 60 to 64°F.", source: "koi-feeding-guide" },
+        { label: "Handling", value: "As little as possible. Guide the fish into a floating bowl with a net rather than lifting it, with wet hands: dry surfaces strip the slime coat.", source: "koi-handling-guide" },
+        { label: "Quarantine", value: "A strict 4 to 6 weeks or longer for every new fish. It is the prevention for koi herpesvirus, which kills 80 to 100% in an outbreak, has no cure, and leaves survivors as lifelong carriers.", source: "koi-health-issues-guide" },
+        { label: "Spring restart", value: "A dose of beneficial bacteria at startup, with the oversized filtration and UV, prevents more of the health list than any treatment.", source: "koi-health-issues-guide" },
+        { label: "Budget, the fish", value: "$10 to $100 for a pond-quality juvenile, often $10 to $50 for a 4 to 6 inch fish. Imported Japanese koi average $100 to $1,500, show quality $1,200 to $15,000.", source: "koi-cost-guide" },
+        { label: "Budget, the pond", value: "An installed residential pond commonly runs $5,100 to $15,875, small prefab setups from around $500, and $1,000 to $2,000 or more a year to run. Aquatic vets are uncommon; a routine exam, where one exists, runs in the low to mid hundreds.", source: "koi-cost-guide" },
+        { label: "Lifespan", value: "25 to 50 years with good care; some domestic lines average closer to 15.", source: "koi-cost-guide" },
         { label: "Adult size", value: "12 to 36 inches (30 to 90 cm) depending on pond size and variety." },
-        { label: "New fish", value: "Thirty days is the minimum, not a target to hit and stop, and a full two months is reasonable for a fish you especially don't want to lose or don't want introducing something to an established tank.", source: "fish-quarantine-and-treatment-guide" },
-        { label: "Power outage", value: "An aquarium's biggest threat in a power outage is oxygen loss, not darkness, and the same three problems, oxygen, temperature, and a dead filter, drive safe transport and moving day too.", source: "aquarium-power-outage-and-transport-guide" },
+        { label: "Power outage", value: "Oxygen loss is the threat, not darkness, and the same three problems, oxygen, temperature and a dead filter, govern moving a fish too.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
     emergencyCard: {
       source: "koi-health-issues-guide",
+      heading: "Test the water first, then act on these today. Involve a vet if one is available.",
       callNow: [
         "Gasping combined with high ammonia",
-        "Rapid widespread mortality",
+        "Rapid, widespread mortality",
         "Severe open ulcers",
-        "Suspected KHV: gill necrosis, excess mucus, lethargy, and skin lesions. This is emergency and culling level serious",
+        "Suspected KHV: gill necrosis, excess mucus, lethargy, skin lesions. Emergency and culling-level serious",
       ],
-      vetLine: "Get water quality corrected immediately and involve a vet if one is available. For valuable fish or any unclear diagnosis, always lean toward professional guidance, though many keepers rely on experienced koi specific resources for routine issues since aquatic vets are genuinely limited in availability.",
+      vetLine: "Correct water quality immediately. For valuable fish or any unclear diagnosis lean toward professional guidance, though aquatic vets are limited and many keepers rely on koi-specific resources.",
     },
     routes: [
       { slug: "koi-cost-guide", line: "The fish from $10 to $50,000, what a pond actually costs to build, the yearly run rate, and a lifespan that outlasts most mortgages." },
@@ -806,10 +757,10 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the handling
-    // guide. Cycling, the hospital tank, water chemistry, filter maintenance,
-    // the power outage rule and the sick-fish check cite the shared aquarium
-    // guides in the sidebar's Health and More list. Reconciled 2026-09-15
-    // after the molly set test (docs/READER_REVIEWS.md).
+    // guide. The power outage rule cites the shared aquarium guides in the
+    // sidebar's Health and More list. Reconciled 2026-09-15 after the molly set
+    // test (docs/READER_REVIEWS.md), rewritten to the template shape 2026-09-16
+    // (docs/HUB_ROUTER_REVIEWS.md).
     //
     // Three hub-only figures are retired rather than moved. "Keep water
     // between 72 and 78 degrees F" sat below the health guide's own shimmy
@@ -824,52 +775,38 @@ export const fishGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Tank size", value: "20 gallons is the real minimum for a small group, a step up from the 10-gallon tank that works fine for guppies. Mollies simply run bigger as adults, and a colony that starts breeding adds to the bioload fast. Sailfin varieties, or any growing group, do better in 30 gallons or more. Go long and rectangular rather than tall, and use a lid, mollies are capable jumpers.", source: "molly-tank-setup-guide" },
-        { label: "Temperature", value: "A tropical range of 72 to 82\u00B0F works well. Stability matters more than hitting an exact number, avoid swings larger than about 2\u00B0F in a 24-hour period, since temperature instability is one of the more commonly cited triggers behind the molly \"shimmy.\" A heater is necessary unless your room stays consistently warm year-round.", source: "molly-tank-setup-guide" },
-        { label: "Water chemistry", value: "Mollies do best with a pH of 7.5 to 8.5 and medium-hard to hard water. If your tap water runs soft, a mineral supplement, crushed coral or a commercial buffering product, can bring it into range.", source: "molly-tank-setup-guide" },
-        { label: "Hard water, not salt", value: "The advice to add salt to a molly tank is a crude proxy for what they actually want: hard, alkaline, mineral-rich water. Get the hardness right and the salt question mostly disappears. Most of this species' reputation for being delicate traces to being kept in water suited to a soft-water fish.", source: "molly-enrichment-guide" },
-        { label: "The salt question", value: "Mollies are a brackish-tolerant, euryhaline species, and peer-reviewed research on sailfin mollies shows they regulate their internal salt balance up to roughly 65 parts per thousand without major physiological stress. Whether a healthy freshwater display tank needs salt added as standing practice is genuinely contested. Salt shows up specifically in shimmy treatment, where a commonly cited dose is 1 tablespoon of aquarium salt per 5 gallons in a hospital tank, but that is a targeted treatment context rather than a standing requirement.", source: "molly-tank-setup-guide" },
-        { label: "If you do use salt", value: "Plain aquarium salt, additive-free sodium chloride. Never a marine or reef salt mix, which carries buffers formulated for full saltwater tanks, and never table salt, which contains iodine and anti-caking agents that aren't meant for fish.", source: "molly-tank-setup-guide" },
-        { label: "Filtration", value: "Mollies need more real filtration capacity than guppies, and a breeding colony compounds that quickly. For a standard or growing group, a hang-on-back or canister filter handles the bioload comfortably; the general guidance is a filter that can turn over the full tank volume at least four times an hour. A gentle sponge filter is the better call specifically for a breeding or nursery tank, since it won't pull small fry into strong current.", source: "molly-tank-setup-guide" },
-        { label: "Substrate", value: "Fine gravel or sand both work well. Avoid sharp or coarse gravel, which can damage fins, especially on longer-finned sailfin and lyretail varieties.", source: "molly-tank-setup-guide" },
-        { label: "Lighting", value: "A basic LED light on an 8 to 10 hour daily cycle is sufficient. It isn't strictly necessary for the fish's health, but it supports live plants and makes for better viewing.", source: "molly-tank-setup-guide" },
-        { label: "Cycle first", value: "Building the beneficial bacteria colony that processes waste takes 2 to 4 weeks with a fishless cycle, or somewhat less with a bottled bacteria product. Skipping this step is a fast route to the ammonia-driven stress that shows up as shimmy.", source: "molly-tank-setup-guide" },
-        { label: "Water conditioner", value: "Always use one on tap water before it goes in the tank, dechlorinating and neutralizing chloramine and heavy metals. Chlorine exposure specifically is one of the recognized shimmy triggers.", source: "molly-tank-setup-guide" },
-        { label: "Plants as a population lever", value: "Molly parents don't look after their fry, and adults will eat them given the chance. Dense live plants give fry somewhere to hide, meaningfully improving survival. Skipping dense cover lets normal predation keep numbers in check instead.", source: "molly-tank-setup-guide" },
-        { label: "Grazing surface", value: "They are the most herbivorous of the common livebearers and work surfaces all day. Dense live planting, driftwood, rock and any surface that grows biofilm all give them something to graze. A tank scrubbed spotless every week and fed a pinch of flake is the impoverished version.", source: "molly-enrichment-guide" },
-        { label: "Feeding schedule", value: "Adults: once or twice a day is the most commonly cited range, feeding only what's fully cleared within a minute or two. Fry need small amounts at least 3 to 5 times a day. Juveniles sit between the two.", source: "molly-feeding-guide" },
-        { label: "Diet", value: "A high-quality flake or pellet formulated for tropical community fish as the base, with real vegetable content layered on top rather than treated as optional. Rotate in blanched zucchini, spinach, cucumber, lettuce and peas two to three times a week. Bloodworms and brine shrimp stay a supplement.", source: "molly-feeding-guide" },
-        { label: "The feeding mistake", value: "An all-protein diet with no vegetable or algae component at all is the single most repeated molly-specific mistake, and it's tied directly to digestive and bloating problems over time.", source: "molly-feeding-guide" },
-        { label: "Feed across the tank", value: "Spread food instead of dropping it in one corner, so females that are being chased still eat. It is the direct practical answer to the vigilance finding in the harassment research.", source: "molly-enrichment-guide" },
-        { label: "Sex ratio", value: "At least two to three females per male, and more females is better. An all-male group is the other clean answer and avoids the fry entirely, with the caveat that male mollies squabble among themselves more than male guppies do, so it needs space and numbers rather than a trio.", source: "molly-enrichment-guide" },
-        { label: "Sexing", value: "Males carry a modified anal fin called a gonopodium, a slender, rod-like structure used to fertilize females internally, in place of the fuller fan-shaped anal fin females have. Females also tend to develop a dark \"gravid spot\" near the vent as they near giving birth, though not every individual female shows one clearly enough to rely on.", source: "molly-handling-guide" },
-        { label: "Breeding rate", value: "Gestation runs roughly 4 to 6 weeks, and a typical brood lands somewhere between 20 and 60 fry, though the documented range runs as wide as 10 to over 100 depending on the female's age and condition. Females store sperm internally, so a single mating keeps producing broods without a male present again.", source: "molly-handling-guide" },
-        { label: "Handling", value: "Mollies are an observation and enjoyment pet, not a hands-on one. If you need to move one, guide it with a net rather than touching it directly. Physical contact isn't part of normal molly care.", source: "molly-handling-guide" },
-        { label: "Quarantine", value: "Quarantining new fish for 2 to 3 weeks before adding them to an established tank catches most problems, shimmy included, before they spread.", source: "molly-health-issues-guide" },
-        { label: "Shimmy, the species condition", value: "A distinctive side-to-side, almost snake-like rocking motion as the fish swims. It isn't a disease in itself so much as a sign the fish has lost some nerve and muscle control. Treatment starts with correcting the environment, not medicating the fish: raise the temperature toward the 76 to 80\u00B0F range, check and correct pH toward 7.5 to 8.5, and address mineral hardness if your water runs very soft.", source: "molly-health-issues-guide" },
-        { label: "Budget", value: "Common short-fin varieties, black, silver, and dalmatian mollies, run about $2 to $8 each, nearer $4 a fish in a six-pack. Balloon and lyretail varieties run closer to $6 to $7, and rarer specialty color strains can reach $15 to $20 or more. A 20-gallon setup, tank, filter, heater, and basic supplies, commonly runs $130 to $260, and full monthly upkeep lands around $20 to $30.", source: "molly-cost-guide" },
-        { label: "Vet costs", value: "Mollies rarely see a vet in any traditional sense. Most molly health issues, things like ich, fin rot, and the species' well-known \"shimmy,\" get managed at home with water quality correction and over-the-counter medication rather than a clinic visit.", source: "molly-cost-guide" },
-        { label: "Lifespan", value: "3 to 5 years on average, up to 5 to 7 years with excellent, stable water quality.", source: "molly-cost-guide" },
-        { label: "Adult size", value: "Most common short-fin varieties run roughly 3 to 4.5 inches as adults, with sailfin varieties, distinguished by their males' tall, sail-like dorsal fin, reaching 4 to 6 inches.", source: "molly-handling-guide" },
-        { label: "Cycling, the finish line", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
-        { label: "Hospital tank", value: "A bare hospital tank with its own net and siphon hose, never shared with the display tank, and disinfected and stored dry between uses. A sponge filter gives gentle biological filtration without the flow of a hang-on-back or canister unit.", source: "fish-quarantine-and-treatment-guide" },
-        { label: "Water chemistry, the wider picture", value: "KH is the buffer holding pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you rather than chasing a number.", source: "freshwater-ph-gh-kh-guide" },
-        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
-        { label: "Power outage", value: "The threat is oxygen, not darkness. Once the filter and any air pump stop, the water surface stops moving, gas exchange slows, and dissolved oxygen starts dropping. Unplug the filter deliberately rather than letting it sit dead in the water.", source: "aquarium-power-outage-and-transport-guide" },
-        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
+        { label: "Tank size", value: "20 gallons for a small group, 30 or more for sailfins or any group that has started breeding. Long rather than tall, with a lid, since mollies jump.", source: "molly-tank-setup-guide" },
+        { label: "Temperature", value: "72 to 82°F, held steady: a swing of more than about 2°F in 24 hours is one of the commonly cited shimmy triggers. A heater unless the room stays warm year-round.", source: "molly-tank-setup-guide" },
+        { label: "Water chemistry", value: "pH 7.5 to 8.5 and medium-hard to hard water. Soft tap water gets crushed coral or a buffering product to bring it into range.", source: "molly-tank-setup-guide" },
+        { label: "Salt", value: "Not a standing requirement. Its place is shimmy treatment, 1 tablespoon of aquarium salt per 5 gallons in a hospital tank, and only plain aquarium salt, never marine mix or table salt.", source: "molly-tank-setup-guide" },
+        { label: "Filtration", value: "A hang-on-back or canister turning over the full volume at least four times an hour. A sponge filter for a breeding or nursery tank, so fry are not pulled into the current.", source: "molly-tank-setup-guide" },
+        { label: "Cycle first", value: "2 to 4 weeks fishless, less with bottled bacteria, and a conditioner on every bucket of tap water. Ammonia and chlorine are both recognized shimmy triggers.", source: "molly-tank-setup-guide" },
+        { label: "Substrate and light", value: "Fine gravel or sand, nothing sharp around sailfin and lyretail fins. A basic LED on an 8 to 10 hour cycle.", source: "molly-tank-setup-guide" },
+        { label: "Plants, a population lever", value: "Parents eat their fry. Dense live plants hide them and survival climbs; skip the cover and predation keeps the numbers down instead.", source: "molly-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Adults once or twice a day, only what clears in a minute or two. Fry need small amounts at least 3 to 5 times a day.", source: "molly-feeding-guide" },
+        { label: "Diet", value: "Tropical flake or pellet as the base with real vegetable content on top: blanched zucchini, spinach, cucumber, lettuce or peas two to three times a week. An all-protein diet is the most repeated molly mistake.", source: "molly-feeding-guide" },
+        { label: "Sex ratio", value: "Two to three females per male, and more is better. An all-male group avoids fry entirely but needs space and numbers, since male mollies squabble more than male guppies.", source: "molly-enrichment-guide" },
+        { label: "Fry are coming", value: "Gestation 4 to 6 weeks and broods of 20 to 60. Females store sperm, so store-bought females keep producing without a male present.", source: "molly-handling-guide" },
+        { label: "Quarantine", value: "2 to 3 weeks in a separate tank before new fish join the display. It catches most problems, shimmy included, before they spread.", source: "molly-health-issues-guide" },
+        { label: "Shimmy", value: "A side-to-side rocking as the fish swims, a sign of lost nerve and muscle control rather than a disease. Correct the water first: temperature toward 76 to 80°F, pH toward 7.5 to 8.5, hardness up if the water runs soft.", source: "molly-health-issues-guide" },
+        { label: "Budget", value: "$2 to $8 a fish for common short-fins, $15 to $20 for specialty strains. A 20-gallon setup runs $130 to $260 and upkeep $20 to $30 a month. Mollies rarely see a vet.", source: "molly-cost-guide" },
+        { label: "Lifespan", value: "3 to 5 years, up to 5 to 7 with stable water.", source: "molly-cost-guide" },
+        { label: "Adult size", value: "3 to 4.5 inches for short-fin varieties, 4 to 6 inches for sailfins.", source: "molly-handling-guide" },
+        { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
     emergencyCard: {
       source: "molly-health-issues-guide",
+      heading: "Test the water first, then act on these today. Mollies rarely see a vet; nearly all of this is handled at home.",
       callNow: [
-        "A distinctive side-to-side, almost snake-like rocking motion as the fish swims",
-        "Small white spots resembling grains of salt across the body and fins, with flashing against decor",
-        "A fine, gold or rust-colored dusty coating on the body, with appetite loss, lethargy and scratching against decor",
+        "A side-to-side, snake-like rocking as the fish swims: shimmy, fixed by correcting temperature, pH, and hardness",
+        "Small white spots like grains of salt, with flashing against decor",
+        "A fine gold or rust-colored dusty coating, with appetite loss, lethargy, and scratching",
         "Ragged, frayed, or discolored fin edges",
-        "Fluid buildup in the abdomen that makes the scales stand out in a raised, pinecone-like pattern",
         "Buoyancy problems: floating, sinking, or swimming at odd angles",
+        "Scales standing out in a raised, pinecone pattern: dropsy, the hardest condition here to treat",
       ],
-      vetLine: "Stress, poor or unstable water quality, overcrowding, and skipping quarantine are the common thread behind nearly every condition on this list, not just shimmy. Test the water first: a properly cycled tank, a stable temperature, and regular partial water changes with a conditioner prevent far more than any medication does after the fact. Dropsy is the hardest condition here to treat successfully and often carries a poor outlook by the time it's obvious.",
+      vetLine: "Stress, unstable water, overcrowding, and skipped quarantine sit behind nearly every condition on this list.",
     },
     routes: [
       { slug: "molly-cost-guide", line: "$2 to $8 a common molly, the $130 to $260 the tank costs around it, and the $20 to $30 a month after that." },
@@ -914,9 +851,10 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry, which no deep dive repeats. Cycling, quarantine, filtration, water
-    // chemistry, the power outage rule and the sick-fish check cite the shared
-    // aquarium guides in the sidebar's Health and More list. The old hub's
+    // entry, which no deep dive repeats. Quarantine, water chemistry, the power
+    // outage rule and the sick-fish check cite the shared aquarium guides in the
+    // sidebar's Health and More list. Rewritten to the template shape 2026-09-16
+    // (docs/HUB_ROUTER_REVIEWS.md). The old hub's
     // weekly 20 to 25% water change was a figure no deep dive carries, so it is
     // retired here and filed as a gap in docs/READER_LOG.md. Built 2026-09-14
     // for the neon tetra set test (docs/READER_REVIEWS.md).
@@ -924,45 +862,36 @@ export const fishGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "How many", value: "Groups of ten neon tetras showed improved welfare compared with smaller groups: aggression and darting were lowest in the larger groups, and latency to feed decreased as group size increased. Six is the floor, not the target. If the tank supports it, buy ten rather than six, and prefer one species of ten to two species of five.", source: "neon-tetra-enrichment-guide" },
-        { label: "Tank size", value: "10 gallons is the practical minimum for a proper school of 6. If you're aiming for the better group size of 10 to 15 fish, step up to a 20-gallon long tank. Schooling behavior plays out horizontally, so favor a longer tank over a taller one.", source: "neon-tetra-tank-setup-guide" },
-        { label: "Temperature", value: "70 to 81°F works, with 72 to 78°F being a solid, commonly recommended target. A heater is necessary for any tank of 10 gallons or more, and keeping the temperature stable matters as much as hitting the right number, swings are more stressful than a slightly imperfect but steady setting.", source: "neon-tetra-tank-setup-guide" },
-        { label: "Water chemistry", value: "Soft, slightly acidic water, a pH of 6.0 to 7.0 and low hardness. Genuinely different from the harder, more alkaline water species like guppies tolerate, so test your source water before assuming your setup is suitable. Ammonia and nitrite both need to read zero.", source: "neon-tetra-tank-setup-guide" },
-        { label: "Filtration", value: "Keep the flow gentle, neon tetras dislike strong current. A sponge filter is a common, effective choice, and a hang-on-back filter works too if you can baffle or reduce its output.", source: "neon-tetra-tank-setup-guide" },
-        { label: "Substrate", value: "Fine gravel or sand, and a darker color genuinely makes neon coloring pop more against the background.", source: "neon-tetra-tank-setup-guide" },
-        { label: "Lighting", value: "Dim to moderate, roughly 8 to 10 hours a day. Bright, intense lighting stresses this species, they come from shaded, plant-covered streams, not open water.", source: "neon-tetra-tank-setup-guide" },
-        { label: "Blackwater feel", value: "Driftwood and Indian almond leaves release natural tannins that stain the water slightly and lower pH, mimicking the blackwater habitat this species evolved in. Pair that with dense midground live plants and some floating plants to dim the light further.", source: "neon-tetra-tank-setup-guide" },
-        { label: "Feeding schedule", value: "Small amounts twice daily, morning and evening, only as much as the fish finish in about 2 to 3 minutes. Fry and juveniles need 3 to 4 small feedings a day, and adults from about 6 months do well on twice daily.", source: "neon-tetra-feeding-guide" },
-        { label: "Food size", value: "Their mouths are only about 1 to 2mm across. Crush flakes into fine pieces, and stick to micro or nano sized pellets, food that's too large gets taken and spat back out repeatedly, which functionally starves the fish even while food is visibly going into the tank.", source: "neon-tetra-feeding-guide" },
-        { label: "Diet", value: "Omnivores. A high-quality tropical flake or micro-pellet designed for small, nano fish, supplemented several times a week with small frozen or live foods: baby brine shrimp, daphnia, cyclops, and finely chopped bloodworms, plus some plant or algae content. Keep protein-rich frozen or live foods to 2 to 3 feedings a week.", source: "neon-tetra-feeding-guide" },
-        { label: "The rule that protects the school", value: "Never leave a dead fish in the tank or let tankmates scavenge a visibly sick fish's body. Neon tetra disease is caused by the microsporidian parasite Pleistophora hyphessobryconis, and if a fish dies of it and its body is eaten by others, those fish contract it too.", source: "neon-tetra-feeding-guide" },
-        { label: "Quarantine", value: "Quarantine new fish for 2 to 4 weeks before adding them to an established tank, given the disease risk this species carries.", source: "neon-tetra-tank-setup-guide" },
-        { label: "Tankmates", value: "Peaceful, similarly sized community fish. Avoid anything large enough to eat a neon tetra and anything inclined to nip fins.", source: "neon-tetra-handling-guide" },
-        { label: "Handling", value: "This is a look-but-don't-touch fish, and netting is the only contact it should get. Take real care netting them, they are small and easily damaged.", source: "neon-tetra-handling-guide" },
-        { label: "Budget", value: "Most neon tetras run $1 to $3, occasionally reaching $5 depending on the source, and a school of 6 to 12 runs $10 to $40 total. Upfront setup is roughly $100 to $300, with complete starter kits at this size commonly $50 to $200 and the tank alone $20 to $150.", source: "neon-tetra-cost-guide" },
-        { label: "Vet costs", value: "Not applicable in the traditional sense. Fish health management is entirely about water quality and, when needed, over-the-counter treatments, not veterinary visits.", source: "neon-tetra-cost-guide" },
-        { label: "Lifespan", value: "Around 5 years is achievable with good, stable care, though average conditions often see neon tetras live closer to 2 to 3 years.", source: "neon-tetra-cost-guide" },
+        { label: "How many", value: "Ten. Groups of ten showed less aggression and darting and fed sooner than smaller groups. Six is the floor, and one species of ten beats two species of five.", source: "neon-tetra-enrichment-guide" },
+        { label: "Tank size", value: "10 gallons for a school of 6, a 20-gallon long for the better 10 to 15. Schooling plays out horizontally, so long beats tall.", source: "neon-tetra-tank-setup-guide" },
+        { label: "Temperature", value: "72 to 78°F as the target inside a workable 70 to 81°F, held steady: swings stress them more than a slightly imperfect setting. A heater on any tank of 10 gallons or more.", source: "neon-tetra-tank-setup-guide" },
+        { label: "Water chemistry", value: "Soft and slightly acidic, pH 6.0 to 7.0 with low hardness, which is a different water from what a guppy tolerates. Test your source water first. Ammonia and nitrite read zero.", source: "neon-tetra-tank-setup-guide" },
+        { label: "Filtration and substrate", value: "Gentle flow, a sponge filter or a baffled hang-on-back, over fine gravel or sand. A darker substrate makes the neon stripe pop.", source: "neon-tetra-tank-setup-guide" },
+        { label: "Light and blackwater", value: "Dim to moderate for 8 to 10 hours a day. Driftwood and Indian almond leaves for tannins, dense plants and floating cover; bright light stresses a fish from shaded streams.", source: "neon-tetra-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Twice daily, what the school finishes in about 2 to 3 minutes. Fry and juveniles 3 to 4 small feeds a day, adults from about 6 months on twice.", source: "neon-tetra-feeding-guide" },
+        { label: "Diet", value: "A quality tropical flake crushed fine, or a micro-pellet, for a mouth only 1 to 2mm across. Baby brine shrimp, daphnia or chopped bloodworms 2 to 3 feeds a week. Food too large is spat out, which starves the fish while the tank looks fed.", source: "neon-tetra-feeding-guide" },
+        { label: "A dead fish", value: "Never leave one in the tank or let the others scavenge it. Neon tetra disease has no cure, and fish that eat an infected body contract it.", source: "neon-tetra-feeding-guide" },
+        { label: "Quarantine", value: "At least 30 days in a bare tank with its own net and siphon before a new fish joins the school. Thirty is the floor, not the target.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Tankmates", value: "Peaceful, similarly sized community fish. Nothing with a mouth big enough for a neon, and no fin nippers.", source: "neon-tetra-handling-guide" },
+        { label: "Handling", value: "Netting is the only contact. They are small and easily damaged, so take real care.", source: "neon-tetra-handling-guide" },
+        { label: "Budget", value: "$1 to $3 a fish, a school of 6 to 12 for $10 to $40. Setup roughly $100 to $300. Vet care does not apply; water quality and over-the-counter treatment are the whole of it.", source: "neon-tetra-cost-guide" },
+        { label: "Lifespan", value: "Around 5 years with stable care; average conditions see closer to 2 to 3.", source: "neon-tetra-cost-guide" },
         { label: "Adult size", value: "1 to 1.5 inches (2.5 to 4 cm)." },
-        { label: "Cycling", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
-        { label: "Quarantine tank", value: "A bare hospital tank with its own net and siphon hose, never shared with the display tank, and disinfected and stored dry between uses. A sponge filter gives gentle biological filtration without the flow of a hang-on-back or canister unit.", source: "fish-quarantine-and-treatment-guide" },
-        { label: "Water chemistry, the wider picture", value: "KH is the buffer holding pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you rather than chasing a number.", source: "freshwater-ph-gh-kh-guide" },
-        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
-        { label: "Power outage", value: "The threat is oxygen, not darkness. Once the filter and any air pump stop, the water surface stops moving, gas exchange slows, and dissolved oxygen starts dropping. Unplug the filter deliberately rather than letting it sit dead in the water.", source: "aquarium-power-outage-and-transport-guide" },
-        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
+        { label: "Water chemistry, the wider picture", value: "KH holds pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Work with what the source water gives you.", source: "freshwater-ph-gh-kh-guide" },
+        { label: "Sick fish check", value: "Clear water is not safe water. Ammonia, nitrite and low oxygen are invisible, and gasping at the surface is the visible sign. Test before assuming illness.", source: "spotting-a-sick-fish-guide" },
+        { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
     emergencyCard: {
       source: "neon-tetra-health-issues-guide",
+      heading: "Test the water first, then act on these today. Aquatic vets are rare, so nearly all of this is handled at home.",
       callNow: [
-        "Restless or erratic swimming, often more noticeable at night",
-        "Fading or patchy color, particularly along the back",
-        "Visible lumps under the skin",
-        "A curved or deformed spine in advanced cases",
+        "Small white spots like grains of salt, flashing against decor, rapid breathing: ich, treatable",
+        "Ragged or bloody-edged fins: fin rot, treatable",
         "Difficulty swimming normally",
-        "Small white spots resembling grains of salt, with flashing against decor and rapid breathing",
-        "Ragged or bloody-edged fins",
+        "Restless swimming at night, fading color along the back, lumps under the skin, a curved spine: neon tetra disease, no cure, and the fish is separated so the others cannot eat it",
       ],
-      vetLine: "Nearly everything treatable on this list traces back to water quality and stability, exactly what a properly cycled tank with consistent temperature and regular water changes prevents. Neon tetra disease is the exception and has no cure, though it is likely over-diagnosed: true cases are relatively uncommon in a well-established, well-filtered tank, and the symptoms genuinely overlap with more treatable bacterial infections.",
+      vetLine: "Everything treatable here traces back to water quality and stability. Neon tetra disease is likely over-diagnosed; true cases are uncommon in a well-established tank.",
     },
     routes: [
       { slug: "neon-tetra-cost-guide", line: "$1 to $3 a fish, why the purchase is a group, and the $100 to $300 that goes into the tank around them." },
@@ -1004,10 +933,10 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Cycling, quarantine, filter maintenance and the
-    // sick-fish check cite the shared aquarium guides in the sidebar's
-    // Health and More list. Reconciled 2026-09-15 after the oscar set test
-    // (docs/READER_REVIEWS.md).
+    // encyclopedia entry. Quarantine and the sick-fish check cite the shared
+    // aquarium guides in the sidebar's Health and More list. Reconciled
+    // 2026-09-15 after the oscar set test (docs/READER_REVIEWS.md), rewritten to
+    // the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
     //
     // The old hub understated this build in every line that had a price on
     // it, all gone rather than moved: the canister filter at $100 to $200
@@ -1023,40 +952,36 @@ export const fishGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Cycling", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
-        { label: "Quarantine", value: "At least 30 days for a new or sick fish, and 30 to 60 days for one you especially don't want to lose or don't want introducing something to an established tank. Thirty days is the floor, not the target. Use separate nets and siphon hoses for the quarantine tank.", source: "fish-quarantine-and-treatment-guide" },
-        { label: "Tank size", value: "75 gallons is the widely recommended minimum for a single adult, with 100 to 125-plus gallons for a pair or small group. A 2-inch juvenile oscar reaches 12 inches or more within its first year, so starting small and upgrading later is both more expensive overall and more disruptive for the fish than getting the adult tank from the start.", source: "oscar-fish-tank-setup-guide" },
-        { label: "Space first", value: "Everything else is downstream. Oscars reach a foot or more and get sold at two inches to people buying a tank for the two inch version. There is no enrichment that compensates for an adult oscar in a 40 gallon.", source: "oscar-fish-enrichment-guide" },
-        { label: "Filtration", value: "Canister filters are the standard choice, sized to handle roughly 4 to 5 times the tank's total volume per hour. Many keepers run a large canister alongside a secondary hang-on-back unit for redundancy, which in oscar keeping is close to the baseline expectation rather than overkill.", source: "oscar-fish-tank-setup-guide" },
-        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
-        { label: "Temperature", value: "74 to 81°F, kept stable. A reliable submersible heater is required, ideally one with a built-in thermometer for easy monitoring, since this is a genuinely tropical species with no cold tolerance.", source: "oscar-fish-tank-setup-guide" },
-        { label: "Water chemistry", value: "A pH range of 6 to 8 and soft to moderately hard water both suit this species well. Oscars are fairly adaptable on this front compared to some pickier fish.", source: "oscar-fish-tank-setup-guide" },
-        { label: "Water changes", value: "Weekly changes of 25 to 30% are mandatory, not optional, and this connects directly to preventing hole-in-the-head disease.", source: "oscar-fish-tank-setup-guide" },
-        { label: "Substrate", value: "Sand, which oscars genuinely enjoy sifting through, or smooth, pea-sized or larger gravel. Avoid sharp or coarse substrate, which can injure this fish's mouth given how much it interacts with the tank floor.", source: "oscar-fish-tank-setup-guide" },
-        { label: "Anchor everything", value: "Oscars rearrange their environment with their mouths and will topple anything not properly anchored, and thicker aquarium glass is worth considering given how much this fish bumps and interacts with its tank walls. A tight, secure lid is essential, since oscars are capable jumpers.", source: "oscar-fish-tank-setup-guide" },
-        { label: "Let them move things", value: "Oscars dig substrate, shift decor and uproot plants deliberately, and an aquascape they cannot alter takes that away. Give them movable furniture: smooth stones, sizeable driftwood, and a deep sand or fine gravel bed to push around. The layout will not stay where you put it, because the rearranging is the point.", source: "oscar-fish-enrichment-guide" },
-        { label: "Staple food", value: "A high-quality cichlid pellet at 35 to 45% protein, making up roughly 80% of the diet, sized appropriately for the fish. The remaining 20% is frozen or fresh: shrimp, krill, earthworms, mysis, and occasional plant matter like peas or zucchini.", source: "oscar-fish-feeding-guide" },
-        { label: "Feeding frequency", value: "Babies under 3 to 4 inches eat 3 times daily. Juveniles around 3 to 8 inches eat twice daily. Adults over about 8 inches, or a year old, eat once or at most twice daily. Feed only what's eaten in 2 to 3 minutes and remove anything uneaten.", source: "oscar-fish-feeding-guide" },
-        { label: "Portion check", value: "A healthy oscar has a slightly rounded, not bulging, belly. They beg constantly and are genuinely easy to overfeed, and many keepers fast adults one day a week to keep portions honest.", source: "oscar-fish-feeding-guide" },
-        { label: "Not feeder goldfish", value: "Live feeder goldfish and rosy-red minnows shouldn't be a staple. Feeder fish commonly carry thiaminase, an enzyme that breaks down vitamin B1, and without adequate B1 the symptoms run to lethargy, weight loss, nerve control problems, and eventually heart failure and death. They also carry a real risk of parasites, disease, and excess fat.", source: "oscar-fish-feeding-guide" },
-        { label: "Tank mates", value: "Oscars are genuinely predatory, not just assertive. A useful rule of thumb from experienced keepers: if something fits in an oscar's mouth, it will eventually end up there. Best paired with large, tough fish, severums or big plecos among them, in a large tank, or kept alone entirely.", source: "oscar-fish-handling-guide" },
-        { label: "Not a hands-on pet", value: "Oscars recognize their keeper, swim to the front of the tank in greeting, and can be trained to eat from a hand, but the relationship lives entirely at the glass and through feeding, not through touch.", source: "oscar-fish-handling-guide" },
-        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
-        { label: "Budget", value: "$7 to $35 for a common juvenile, over $100 for a specialty variety, and $99 and up for an already-grown fish. A 55-gallon starter setup has been estimated at around $560 as a low-end build, and the total easily exceeds $1,000 with premium filtration and the 75-gallon-plus tank this species eventually requires. Upkeep runs roughly $35 to $40 a month.", source: "oscar-fish-cost-guide" },
+        { label: "Tank size", value: "75 gallons for a single adult, 100 to 125-plus for a pair. A 2-inch juvenile reaches 12 inches or more inside its first year, so buy the adult tank now.", source: "oscar-fish-tank-setup-guide" },
+        { label: "Space first", value: "Everything else is downstream. No enrichment compensates for an adult oscar in a 40 gallon.", source: "oscar-fish-enrichment-guide" },
+        { label: "Filtration", value: "A canister sized to 4 to 5 times the tank volume an hour, often with a second hang-on-back for redundancy, which in oscar keeping is the baseline rather than overkill.", source: "oscar-fish-tank-setup-guide" },
+        { label: "Temperature", value: "74 to 81°F, kept stable, from a reliable submersible heater. No cold tolerance at all.", source: "oscar-fish-tank-setup-guide" },
+        { label: "Water chemistry and changes", value: "pH 6 to 8 and soft to moderately hard water both suit them. Weekly changes of 25 to 30% are mandatory, and tie directly to preventing hole-in-the-head.", source: "oscar-fish-tank-setup-guide" },
+        { label: "Substrate and decor", value: "Sand to sift, or smooth pea-sized gravel; nothing sharp near a mouth that works the floor. Anchor everything, consider thicker glass, and fit a tight lid, since they jump.", source: "oscar-fish-tank-setup-guide" },
+        { label: "Let them move things", value: "They dig, shift decor and uproot plants on purpose. Give movable furniture: smooth stones, big driftwood, a deep sand bed. The layout will not stay put, and that is the point.", source: "oscar-fish-enrichment-guide" },
+        { label: "Staple food", value: "A cichlid pellet at 35 to 45% protein for roughly 80% of the diet, the rest frozen or fresh: shrimp, krill, earthworms, mysis, occasional peas or zucchini.", source: "oscar-fish-feeding-guide" },
+        { label: "Feeding frequency", value: "Under 3 to 4 inches, 3 times daily. 3 to 8 inches, twice. Adults over about 8 inches once, at most twice, cleared in 2 to 3 minutes. Many keepers fast adults one day a week.", source: "oscar-fish-feeding-guide" },
+        { label: "Not feeder goldfish", value: "Feeders carry thiaminase, which breaks down vitamin B1, along with parasites and fat. Never a staple.", source: "oscar-fish-feeding-guide" },
+        { label: "Tank mates", value: "Predatory, not just assertive: what fits in the mouth ends up there. Large tough fish, severums or big plecos, in a large tank, or alone.", source: "oscar-fish-handling-guide" },
+        { label: "Not a hands-on pet", value: "They recognize their keeper and can be hand-fed, but the relationship lives at the glass, not through touch.", source: "oscar-fish-handling-guide" },
+        { label: "Quarantine", value: "At least 30 days in a separate tank with its own nets and siphon, 30 to 60 for a fish you especially do not want to lose.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Budget", value: "$7 to $35 for a common juvenile, over $100 for a specialty variety. A low-end 55-gallon build is around $560, and the total easily passes $1,000 with the 75-gallon tank they need. Upkeep $35 to $40 a month.", source: "oscar-fish-cost-guide" },
+        { label: "Lifespan", value: "10 to 15 years, occasionally close to 20.", source: "oscar-fish-cost-guide" },
         { label: "Adult size", value: "10 to 14 inches (25 to 36 cm); up to 16 inches in optimal conditions." },
-        { label: "Lifespan", value: "10 to 15 years typically, with well-kept individuals occasionally reaching close to 20.", source: "oscar-fish-cost-guide" },
+        { label: "Sick fish check", value: "Clear water is not safe water. Ammonia, nitrite and low oxygen are invisible, and gasping at the surface is the visible sign. Test before assuming illness.", source: "spotting-a-sick-fish-guide" },
       ],
     },
     emergencyCard: {
       source: "oscar-fish-health-issues-guide",
+      heading: "Test the water first, then act on these today. Aquatic vets are rare, so nearly all of this is handled at home.",
       callNow: [
-        "Small pitted lesions or holes developing on the head and along the lateral line, appetite and weight loss, lethargy, and stringy white feces (hole-in-the-head disease). Caught early this is genuinely treatable at home with a near-zero fatality rate: correct water quality, address nitrate specifically, adjust diet, and treat with metronidazole if a parasite is involved",
-        "Small white spots across the body and fins (ich), triggered by temperature swings or general stress. Manageable at home with a standard commercial ich treatment and correcting whatever stressor triggered it",
-        "Frayed, discolored fin edges (fin and tail rot), bacterial and tied to poor water quality. Treatment without fixing the underlying water rarely holds",
-        "One or both eyes swollen or bulging (popeye), usually bacterial or linked to water quality. See a vet if available, or treat with water correction and antibacterial medication if not",
-        "Swelling, a distended abdomen, and scales that raise into a pinecone-like pattern (dropsy). This typically signals serious internal illness and often carries a poor outlook by the time it's visibly obvious",
+        "Small pitted holes on the head and along the lateral line, weight loss, stringy white feces: hole-in-the-head, treatable at home if caught early",
+        "Small white spots across the body and fins: ich, treatable with a standard remedy plus fixing the stressor",
+        "Frayed, discolored fin edges: fin rot, which does not clear until the water does",
+        "One or both eyes swollen or bulging: popeye, water correction and antibacterial medication",
+        "A distended abdomen and scales raised into a pinecone pattern: dropsy, often a poor outlook by the time it shows",
       ],
-      vetLine: "Poor water quality, elevated nitrates especially, is the common thread running through nearly every condition on this list, hole-in-the-head disease most directly of all. Weekly water changes and heavy-duty filtration aren't optional extras for this species, they're genuinely the primary defense against the health issue oscars are most known for.",
+      vetLine: "Elevated nitrate is the common thread, hole-in-the-head most of all. Weekly water changes and heavy filtration are the primary defense.",
     },
     routes: [
       { slug: "oscar-fish-cost-guide", line: "$7 to $35 for the fish and past $1,000 for the tank it needs, the itemized build, and why the animal is the smallest number in the equation." },
@@ -1099,10 +1024,10 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Cycling, the hospital tank, water chemistry, filter
-    // maintenance, the power outage rule and the sick-fish check cite the
-    // shared aquarium guides in the sidebar's Health and More list.
-    // Reconciled 2026-09-15 after the platy set test (docs/READER_REVIEWS.md).
+    // encyclopedia entry. The power outage rule cites the shared aquarium
+    // guides in the sidebar's Health and More list. Reconciled 2026-09-15 after
+    // the platy set test (docs/READER_REVIEWS.md), rewritten to the template
+    // shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
     //
     // Retired rather than moved: "Keep water between 72 and 78 degrees F",
     // which the hub's own FAQ then contradicted with "down toward the low 70s
@@ -1120,46 +1045,37 @@ export const fishGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Tank size", value: "10 gallons is where most care sheets start, and it holds a small group of about five platies. The stricter figure is a minimum base footprint of 24 by 12 inches, and a standard 10 gallon is 20 by 10, so it does not meet that. A 20 gallon long does, at 30 by 12. Step up to a full 20 gallons for a group of six or more, or if you're letting the group breed.", source: "platy-tank-setup-guide" },
-        { label: "Temperature", value: "68 to 79\u00B0F, with the mid-70s the usual target. Stability matters more than hitting an exact number, avoid swings larger than about 2\u00B0F in a 24-hour period, since temperature instability is one of the more commonly cited triggers behind the livebearer \"shimmy.\" Variatus-line platies tolerate the cooler end better than most tropical fish, but a heater is still the safer default.", source: "platy-tank-setup-guide" },
-        { label: "Water chemistry", value: "Platies do best with a pH of 7.0 to 8.2, and tolerate 6.8 to 8.5. They prefer medium-hard to hard water, roughly 10 to 30 dGH, and genuinely won't thrive in very soft, acidic conditions the way some other tropical fish will.", source: "platy-tank-setup-guide" },
-        { label: "Cycle first", value: "Building the beneficial bacteria colony that processes waste takes 2 to 4 weeks with a fishless cycle, or somewhat less with a bottled bacteria product.", source: "platy-tank-setup-guide" },
-        { label: "Why the cycle gets skipped", value: "The one that gets skipped because the fish survives it. A platy will live through an uncycled tank. It will do so while being exposed to ammonia.", source: "platy-enrichment-guide" },
-        { label: "A group", value: "Peaceful, social fish that do better in numbers. Five or more spreads any chasing instead of focusing it on one individual, and produces more of the ordinary behavior that makes the fish worth watching.", source: "platy-enrichment-guide" },
-        { label: "Sex ratio", value: "Two to three females per male minimum, more females better. Or keep a single-sex group, which sidesteps both the harassment and the population question. The trap is the usual one: buying on color and finish produces a male-heavy tank without anyone deciding to make one.", source: "platy-enrichment-guide" },
-        { label: "Cover that breaks sight lines", value: "Dense live planting along the sides and back, plus floating plants. In a livebearer tank cover does specific work: it lets a pursued female stop being pursued, and it gives fry a survival rate you can manage rather than none or all. Leave open swimming space through the middle, since platies are active mid-water fish.", source: "platy-enrichment-guide" },
-        { label: "Feeding schedule", value: "Adults do well fed once or twice a day, sometimes stretched to three times for very small portions, feeding only what's fully cleared within a minute or two. Juveniles need two to three smaller meals a day to keep pace with faster growth.", source: "platy-feeding-guide" },
-        { label: "Diet", value: "True omnivores and unfussy eaters. A high-quality flake or small pellet works as the staple. Unlike mollies, whose wild diet leans heavily toward algae, platies aren't as strictly dependent on a big vegetable ratio, so the diet has more room to be flake or pellet forward. Rotating in blanched spinach, cucumber, zucchini and peas a couple of times a week still supports better color and digestion.", source: "platy-feeding-guide" },
-        { label: "Feed across the tank", value: "Spread food out and do not drop it in one place, so females being chased still eat.", source: "platy-enrichment-guide" },
-        { label: "The portion sign", value: "Watch for a long, stringy trail of waste hanging from the fish after a meal, a well-documented sign the portion was too large. Overfeeding drives constipation and swim bladder problems directly, and it is a far more common real problem than underfeeding.", source: "platy-feeding-guide" },
-        { label: "Sexing", value: "Males develop a modified anal fin called a gonopodium, a slender, rod-like structure used to fertilize females internally. It appears as the fish matures, anywhere from about two to six and a half months, driven largely by the fish's own genotype. Females keep a fuller, fan-shaped anal fin and often develop a dark \"gravid spot\" near the vent.", source: "platy-handling-guide" },
-        { label: "Breeding rate", value: "A typical brood runs 20 to 50 fry, with a documented range up to 80 in ideal conditions, roughly every 4 to 6 weeks. A single female can store sperm from one mating for months and go on to produce repeat broods without a male present again.", source: "platy-cost-guide" },
-        { label: "Fry", value: "Platy parents provide no care after birth, and adults will readily eat their own fry given the chance. If you want fry to survive, dense live planting or a dedicated breeding or nursery tank gives them somewhere to hide until they're large enough to hold their own.", source: "platy-handling-guide" },
-        { label: "Handling", value: "An observation fish, not a hands-on one. If you need to move one, guide it with a net rather than touching it directly.", source: "platy-handling-guide" },
-        { label: "Quarantine", value: "Quarantining new fish for 2 to 3 weeks before adding them to an established tank catches most problems, shimmy included, before they spread.", source: "platy-health-issues-guide" },
-        { label: "Melanoma, the honest version", value: "Certain platy lines carry a pigment-cell gene that promotes melanoma, kept in check by a separate tumor-suppressor gene, and the cancer only breaks through in deliberate lab crosses with swordtails that separate the two. A 2024 review is explicit that this does not happen in the fish sold in pet shops. A dark lump on your platy is far more likely to be an injury, a cyst, or an unrelated growth.", source: "platy-health-issues-guide" },
-        { label: "Budget", value: "Standard varieties, reds, blues, tuxedos, wags, and most of the common patterns, run $2 to $6 each, with a six-pack landing around $30. Less common varieties like tiger ruby platies can reach $8 to $9. A basic setup, tank, filter, heater, and a bit of planting, commonly runs $60 to $120, and full monthly upkeep for a 10-gallon tank lands around $15 to $20.", source: "platy-cost-guide" },
-        { label: "Vet costs", value: "Not applicable in the traditional sense. Platy health management is water quality and, when needed, over-the-counter treatments, not veterinary visits.", source: "platy-cost-guide" },
-        { label: "Lifespan", value: "2 to 4 years, with 3 to 4 achievable under stable conditions and excellent, consistent water quality pushing a fish toward 5.", source: "platy-cost-guide" },
+        { label: "Tank size", value: "10 gallons holds a small group of about five, though its 20 by 10 inch base misses the stricter 24 by 12 footprint. A 20 gallon long meets it, and is the size for six or more or a breeding group.", source: "platy-tank-setup-guide" },
+        { label: "Temperature", value: "68 to 79°F, the mid-70s the usual target, held steady: swings over about 2°F in 24 hours are a cited shimmy trigger. A heater is the safer default even for cool-tolerant variatus lines.", source: "platy-tank-setup-guide" },
+        { label: "Water chemistry", value: "pH 7.0 to 8.2, tolerating 6.8 to 8.5, in medium-hard to hard water of roughly 10 to 30 dGH. They will not thrive in very soft, acidic water.", source: "platy-tank-setup-guide" },
+        { label: "Cycle first", value: "2 to 4 weeks fishless, less with bottled bacteria. A platy survives an uncycled tank, which is exactly why this step gets skipped, and it does so while breathing ammonia.", source: "platy-tank-setup-guide" },
+        { label: "A group", value: "Five or more. Numbers spread any chasing instead of focusing it on one fish.", source: "platy-enrichment-guide" },
+        { label: "Sex ratio", value: "Two to three females per male at minimum, or an all-male group. Buying on color alone produces a male-heavy tank without anyone deciding to make one.", source: "platy-enrichment-guide" },
+        { label: "Cover", value: "Dense live plants along the sides and back plus floating plants, with open water through the middle. Cover lets a chased female stop being chased and gives fry a survival rate you can manage.", source: "platy-enrichment-guide" },
+        { label: "Feeding schedule", value: "Adults once or twice a day, cleared within a minute or two. Juveniles two to three smaller meals a day. Spread the food out so chased females still eat.", source: "platy-feeding-guide" },
+        { label: "Diet", value: "A quality flake or small pellet as the staple, with blanched spinach, cucumber, zucchini or peas a couple of times a week. Platies need less vegetable than mollies.", source: "platy-feeding-guide" },
+        { label: "The portion sign", value: "A long stringy trail of waste after a meal means the portion was too large. Overfeeding drives constipation and swim bladder trouble, and is far more common than underfeeding.", source: "platy-feeding-guide" },
+        { label: "Fry are coming", value: "Broods of 20 to 50 roughly every 4 to 6 weeks, and a female stores sperm for months, so an all-female group bought from a mixed tank still produces fry.", source: "platy-cost-guide" },
+        { label: "Sexing", value: "Males grow a rod-like anal fin, the gonopodium, at anywhere from about two to six and a half months. Females keep the fan-shaped fin and often show a dark gravid spot near the vent.", source: "platy-handling-guide" },
+        { label: "Quarantine", value: "2 to 3 weeks in a separate tank before new fish join the display, which catches most problems, shimmy included, before they spread.", source: "platy-health-issues-guide" },
+        { label: "A dark lump", value: "Pet-shop platies do not get the melanoma of the lab crosses; a 2024 review is explicit. A lump is far more likely an injury, a cyst or an unrelated growth.", source: "platy-health-issues-guide" },
+        { label: "Budget", value: "$2 to $6 a fish, a six-pack around $30. A basic setup runs $60 to $120, and a 10-gallon costs about $15 to $20 a month to run. Vet care does not apply.", source: "platy-cost-guide" },
+        { label: "Lifespan", value: "2 to 4 years, with excellent water pushing a fish toward 5.", source: "platy-cost-guide" },
         { label: "Adult size", value: "2 to 3 inches (5 to 7.5 cm), females larger than males." },
-        { label: "Cycling, the finish line", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
-        { label: "Hospital tank", value: "A bare hospital tank with its own net and siphon hose, never shared with the display tank, and disinfected and stored dry between uses. A sponge filter gives gentle biological filtration without the flow of a hang-on-back or canister unit.", source: "fish-quarantine-and-treatment-guide" },
-        { label: "Water chemistry, the wider picture", value: "KH is the buffer holding pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you rather than chasing a number.", source: "freshwater-ph-gh-kh-guide" },
-        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
-        { label: "Power outage", value: "The threat is oxygen, not darkness. Once the filter and any air pump stop, the water surface stops moving, gas exchange slows, and dissolved oxygen starts dropping. Unplug the filter deliberately rather than letting it sit dead in the water.", source: "aquarium-power-outage-and-transport-guide" },
-        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
+        { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
     emergencyCard: {
       source: "platy-health-issues-guide",
+      heading: "Test the water first, then act on these today. Platies rarely see a vet; nearly all of this is handled at home.",
       callNow: [
-        "Small white spots resembling grains of salt across the body and fins",
-        "Fin edges that turn white, ragged, or frayed, working inward from the tips toward the base",
-        "Fluid buildup in the abdomen that makes the scales stand out in a raised, pinecone-like pattern",
+        "Small white spots like grains of salt across the body and fins",
+        "Fin edges turning white, ragged, or frayed from the tips inward",
         "Buoyancy problems: floating, sinking, or swimming at an odd angle",
-        "A distinctive side-to-side, almost snake-like rocking motion as the fish swims",
+        "A side-to-side, snake-like rocking as the fish swims: shimmy, fixed by correcting the water",
+        "Scales standing out in a raised, pinecone pattern: dropsy, the hardest condition here to treat",
       ],
-      vetLine: "Stress, poor or unstable water quality, overcrowding, and skipping quarantine are the common thread behind nearly every condition on this list, shimmy and the bacterial issues especially. A properly cycled tank, a stable temperature, and regular partial water changes with a conditioner prevent far more than any medication does after the fact. Dropsy is the hardest condition here to treat successfully and often carries a poor outlook by the time it's obvious.",
+      vetLine: "Stress, unstable water, overcrowding, and skipped quarantine sit behind nearly every condition on this list.",
     },
     routes: [
       { slug: "platy-cost-guide", line: "$2 to $6 a fish, $60 to $120 for the tank around them, and the fry cost nobody budgets for." },
@@ -1200,10 +1116,10 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Cycling, filtration, the hospital tank, water
-    // chemistry, the power outage rule and the sick-fish check cite the shared
+    // encyclopedia entry. Cycling and the power outage rule cite the shared
     // aquarium guides in the sidebar's Health and More list. Reconciled
-    // 2026-09-15 after the swordtail set test (docs/READER_REVIEWS.md).
+    // 2026-09-15 after the swordtail set test (docs/READER_REVIEWS.md),
+    // rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
     //
     // Retired rather than moved: "A 20-gallon tank is a reasonable minimum",
     // which takes the floor as the recommendation where the setup guide's own
@@ -1227,41 +1143,37 @@ export const fishGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Not two males", value: "The single most useful stocking rule for this species. With two, every contest is between the same pair and the loser has nowhere to be. One male with a group of females is the simplest answer. Several males in a large, well-planted tank works because the aggression distributes, and it needs the space to be real rather than nominal.", source: "swordtail-enrichment-guide" },
-        { label: "Sex ratio", value: "Two to three females per male minimum, more better, for the same reasons as any livebearer. A pursued female feeds less and rests less. Combined with the rule above: one male and four or more females is a clean, easy setup.", source: "swordtail-enrichment-guide" },
-        { label: "Why the ratio is a health item", value: "A ratio of one male to three or four females spreads mating attempts out enough to meaningfully reduce chasing, and a tank with real planted cover gives a harassed fish somewhere to break line of sight. If you already have a fish showing chewed fins or clamped, listless behavior in a male-heavy tank, separating that individual into a recovery tank alongside correcting the ratio addresses both the injury and its underlying cause at once.", source: "swordtail-health-issues-guide" },
-        { label: "Tank size", value: "20 gallons is the genuine floor for a small trio, a step up from the 10-gallon tank that gets a small guppy or platy group by. 29 to 30 gallons is the more realistic starting point that most direct retailers and care sheets recommend, since swordtails are more active, open-water swimmers than a molly or platy. Go long and rectangular rather than tall, and use a lid. A 20-gallon long tank is a workable starting point for a small trio, with a step up to 29 or 30 gallons the better real-world target for most keepers.", source: "swordtail-tank-setup-guide" },
-        { label: "Temperature", value: "A tropical range of roughly 64 to 82\u00B0F works, with 72 to 79\u00B0F cited most often as the steadier, more comfortable target. Stability matters more than hitting an exact number, avoid swings larger than about 2\u00B0F in a 24-hour period.", source: "swordtail-tank-setup-guide" },
-        { label: "The jumping risk", value: "Real, not hobbyist exaggeration. Reports from experienced keepers describe fish escaping through gaps of well under an inch between a glass lid and the tank rim. A full mesh or glass lid with no meaningful gaps is the fix, not an optional upgrade. Leave a feeding hatch or filter cutout no larger than necessary, and check it after any tank rearranging.", source: "swordtail-tank-setup-guide" },
-        { label: "Filtration", value: "Swordtails need more real filtration capacity than a guppy or molly. SeriouslyFish specifically recommends filter flow at 4 to 5 times the tank's volume per hour for this species, and a bigger, more active fish in a bigger tank produces a bigger bioload to match. For a standard or growing group, a hang-on-back filter or a stronger canister filter handles the load comfortably. A gentle sponge filter is the better call specifically if you're prioritizing fry survival.", source: "swordtail-tank-setup-guide" },
-        { label: "Cover and broken sight lines", value: "Dense live planting along the sides and back, with open water through the middle. Planting does double duty: cover for pursued females, and broken sight lines that stop a dominant male tracking a subordinate across the whole tank. If you are keeping several males, this is what makes it work.", source: "swordtail-enrichment-guide" },
-        { label: "Feeding", value: "Once or twice a day is the most commonly cited range for adults, though some sources recommend two to three smaller meals. Either way, feed only what's fully cleared within about 2 minutes, swordtails are active enough that overfeeding is the more common real mistake. Layer in real vegetable content, algae wafers, spirulina-based flakes, or blanched zucchini, spinach, and peas, a few times a week, and rotate in protein-rich foods regularly rather than sparingly: bloodworms, brine shrimp, and daphnia, offered live, frozen, or freeze-dried, all work well and swordtails take to them readily.", source: "swordtail-feeding-guide" },
-        { label: "Why a swordtail stops eating", value: "Stress from a new tank, aggressive tankmates or an unbalanced ratio; poor or unstable water quality; cold water, which slows metabolism directly; a female close to giving birth; and illness, which usually comes with other visible signs rather than appetite loss alone.", source: "swordtail-feeding-guide" },
-        { label: "Acclimation", value: "Float the sealed bag in your tank for 15 to 20 minutes to equalize temperature, then drip acclimate over 45 to 60 minutes so the fish adjusts gradually to your water chemistry. Net the fish into the tank rather than pouring in any bag water, since it can carry ammonia the fish produced during transport.", source: "swordtail-handling-guide" },
-        { label: "Quarantine", value: "A separate tank for 2 to 4 weeks before adding a new fish to your established tank catches most problems before they spread, the same practice that applies across nearly every aquarium fish.", source: "swordtail-handling-guide" },
-        { label: "Sexing", value: "Males carry the namesake sword, a colorful extension of the lower tail fin, along with a modified anal fin called a gonopodium used to fertilize females internally. Females lack the sword entirely, have a fuller fan-shaped anal fin, and are the larger sex, an unusual reversal for a fish where the male carries the flashier ornament.", source: "swordtail-handling-guide" },
-        { label: "Budget", value: "$3 to $25 a fish, more for lyretail and specialty patterns. Upfront setup is $115 to $190, more if you size up to the 29 or 30 gallons the setup guide recommends, and ongoing costs run $20 to $35 a month.", source: "swordtail-cost-guide" },
-        { label: "Vet costs", value: "As with most aquarium fish, swordtails rarely see a vet in any formal sense. Most swordtail health issues, ich, fin rot, and dropsy among them, get managed at home with water quality correction and over-the-counter medication rather than a clinic visit.", source: "swordtail-cost-guide" },
-        { label: "Lifespan", value: "3 to 5 years on average with stable water quality, the same range as a molly or platy despite the size difference.", source: "swordtail-cost-guide" },
-        { label: "Adult size", value: "Males up to 5.5 inches (14 cm) including the sword; females up to 6.2 inches (16 cm) and typically the larger sex overall." },
-        { label: "Cycling, the finish line", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
-        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
-        { label: "Hospital tank", value: "A bare hospital tank with its own net and siphon hose, never shared with the display tank, and disinfected and stored dry between uses. A sponge filter gives gentle biological filtration without the flow of a hang-on-back or canister unit.", source: "fish-quarantine-and-treatment-guide" },
-        { label: "Water chemistry, the wider picture", value: "KH is the buffer holding pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you rather than chasing a number.", source: "freshwater-ph-gh-kh-guide" },
-        { label: "Power outage", value: "The threat is oxygen, not darkness. Once the filter and any air pump stop, the water surface stops moving, gas exchange slows, and dissolved oxygen starts dropping. Unplug the filter deliberately rather than letting it sit dead in the water.", source: "aquarium-power-outage-and-transport-guide" },
-        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
+        { label: "Not two males", value: "The single most useful stocking rule. With two, every contest is the same pair and the loser has nowhere to be. One male with a group of females, or several males in a large planted tank where the aggression spreads.", source: "swordtail-enrichment-guide" },
+        { label: "Sex ratio", value: "Two to three females per male minimum, more is better. One male and four or more females is a clean setup, and it will produce fry.", source: "swordtail-enrichment-guide" },
+        { label: "Tank size", value: "20 gallons is the floor for a small trio; 29 to 30 gallons is the realistic starting point for an active, open-water fish. Long rather than tall.", source: "swordtail-tank-setup-guide" },
+        { label: "Temperature", value: "72 to 79°F is the steady target inside a workable 64 to 82°F, with swings under about 2°F in 24 hours.", source: "swordtail-tank-setup-guide" },
+        { label: "The lid", value: "They escape through gaps well under an inch. A full mesh or glass lid, a feeding hatch no larger than necessary, and a check after any rearranging.", source: "swordtail-tank-setup-guide" },
+        { label: "Filtration", value: "Flow of 4 to 5 times the tank volume an hour, from a hang-on-back or canister. A sponge filter only if fry survival is the priority.", source: "swordtail-tank-setup-guide" },
+        { label: "Cover", value: "Dense live plants along the sides and back, open water through the middle. Cover for pursued females, and broken sight lines that stop a dominant male tracking a subordinate across the tank.", source: "swordtail-enrichment-guide" },
+        { label: "Feeding", value: "Once or twice a day, cleared within about 2 minutes; overfeeding is the common mistake. Vegetable content a few times a week, and bloodworms, brine shrimp or daphnia in regular rotation.", source: "swordtail-feeding-guide" },
+        { label: "Off food", value: "A new tank, an unbalanced ratio, unstable water, cold water, a female near birth, or illness, which usually brings other visible signs.", source: "swordtail-feeding-guide" },
+        { label: "Acclimation", value: "Float the sealed bag 15 to 20 minutes, then drip over 45 to 60 minutes. Net the fish in; bag water carries transport ammonia.", source: "swordtail-handling-guide" },
+        { label: "Quarantine", value: "2 to 4 weeks in a separate tank before a new fish joins the display.", source: "swordtail-handling-guide" },
+        { label: "Sexing", value: "Males carry the sword and a rod-like anal fin. Females have neither and are the larger sex.", source: "swordtail-handling-guide" },
+        { label: "Harassment as a health item", value: "Chewed fins or a clamped, listless fish in a male-heavy tank: move it to a recovery tank and fix the ratio, one male to three or four females, at the same time.", source: "swordtail-health-issues-guide" },
+        { label: "Budget", value: "$3 to $25 a fish, more for lyretails. Setup $115 to $190, more at 29 or 30 gallons, then $20 to $35 a month. Swordtails rarely see a vet.", source: "swordtail-cost-guide" },
+        { label: "Lifespan", value: "3 to 5 years with stable water.", source: "swordtail-cost-guide" },
+        { label: "Adult size", value: "Males up to 5.5 inches (14 cm) including the sword; females up to 6.2 inches (16 cm)." },
+        { label: "Cycling, the finish line", value: "Done when a full dose of ammonia reads zero within 24 hours, nitrite reads zero, and nitrate has started building. All three. Most fishless cycles run four to six weeks.", source: "aquarium-cycling-guide" },
+        { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
     emergencyCard: {
       source: "swordtail-health-issues-guide",
+      heading: "Test the water first, then act on these today. Swordtails rarely see a vet; nearly all of this is handled at home.",
       callNow: [
-        "Small white spots resembling grains of salt across the body and fins",
+        "Small white spots like grains of salt across the body and fins",
         "Ragged, frayed, or discolored fin edges",
-        "Fluid buildup in the abdomen that makes the scales stand out in a raised, pinecone-like pattern",
-        "Buoyancy problems, floating, sinking, or swimming at odd angles, usually from overfeeding or constipation",
-        "Chewed fins or clamped, listless behavior in a male-heavy tank",
+        "Buoyancy problems, usually from overfeeding or constipation",
+        "Chewed fins or a clamped, listless fish in a male-heavy tank: move it and fix the ratio",
+        "Scales standing out in a raised, pinecone pattern: dropsy, the hardest condition here to treat",
       ],
-      vetLine: "Poor or unstable water quality, overcrowding, and skipping quarantine are the common thread behind nearly every pathogen-driven condition on this list. Put plainly, an unbalanced male-to-female ratio doesn't just look unpleasant to watch, it measurably raises the odds of the pathogen-driven conditions above actually taking hold. Dropsy is the hardest condition on this list to treat successfully, often carrying a poor outlook by the time it's obvious.",
+      vetLine: "An unbalanced male-to-female ratio measurably raises the odds of the pathogen-driven conditions above taking hold.",
     },
     routes: [
       { slug: "swordtail-cost-guide", line: "$3 to $25 a fish, $115 to $190 for the tank, and why sizing up costs more than the table says." },
@@ -1302,11 +1214,11 @@ export const fishGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Cycling, filtration, the hospital tank, water
-    // chemistry, the power outage rule, summer cooling and the sick-fish check
-    // cite the shared aquarium guides in the sidebar's Health and More list.
-    // Reconciled 2026-09-15 after the zebra danio set test
-    // (docs/READER_REVIEWS.md).
+    // encyclopedia entry. Water chemistry, summer cooling and the power outage
+    // rule cite the shared aquarium guides in the sidebar's Health and More
+    // list. Reconciled 2026-09-15 after the zebra danio set test
+    // (docs/READER_REVIEWS.md), rewritten to the template shape 2026-09-16
+    // (docs/HUB_ROUTER_REVIEWS.md).
     //
     // Retired rather than moved: a whole cost table written independently of
     // the cost guide, with the tank at $50 to $100 against $18 to $60, the
@@ -1316,57 +1228,45 @@ export const fishGuides = [
     // against the feeding guide's twice a day minimum, and a heater listed as
     // optional equipment without the range that makes it optional.
     //
-    // Group size is stated twice on purpose and is not a disagreement. The
-    // handling guide gives the floor and the target together, 5 to 6 workable
-    // against 8 to 10 or more for natural schooling; the enrichment guide
-    // gives the behavioral reason for the higher number. The old hub said
-    // "at least five or six" and stopped at the floor, which is the same
-    // failure the swordtail hub had with its sex ratio.
+    // Group size gives the floor and the target together, 6 workable against 8
+    // to 10 for natural schooling, with the enrichment guide's behavioral reason
+    // for the higher number in the same row. The old hub said "at least five or
+    // six" and stopped at the floor, which is the same failure the swordtail hub
+    // had with its sex ratio.
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "How many", value: "At least 6. Aquarium Co-Op names 5 to 6 as the workable minimum, but Seriously Fish recommends starting with 8 to 10 or more for natural schooling behavior. A group that's too small is more likely to direct fin-nipping energy at tankmates instead of schooling normally.", source: "zebra-danio-handling-guide" },
-        { label: "Why the higher number", value: "In small groups the chasing and nipping that danios do among themselves lands repeatedly on the same individual, and a bigger group spreads it out. Eight or more, and more where the tank supports it.", source: "zebra-danio-enrichment-guide" },
-        { label: "Tank size", value: "A 10-gallon tank is workable for the bare minimum school of 6. Seriously Fish's recommended footprint, roughly 90x30cm even for a small group, lines up closely with a 20-gallon long tank, a better practical minimum for the fuller 8 to 10 fish school most sources recommend.", source: "zebra-danio-tank-setup-guide" },
-        { label: "Length over height", value: "The commonest mistake with this species is a small cube. Danios in a short tank do laps, and the behavior that gets described as energetic is a fish running out of tank. A long tank is worth far more to them than a tall one of the same volume.", source: "zebra-danio-enrichment-guide" },
-        { label: "Temperature, and the heater", value: "Not strictly needed. Multiple care sources put their comfortable range at 64 to 77\u00B0F, close enough to room temperature in most homes that a heater is optional. It's still worth adding if your home runs cool or if danios share a tank with tropical fish that need warmer, more stable water.", source: "zebra-danio-tank-setup-guide" },
-        { label: "Water chemistry", value: "Zebra danios are genuinely flexible here. Seriously Fish lists a comfortable pH range of 6.0 to 8.0 and hardness anywhere from about 90 to 357 ppm, soft to fairly hard water both work. That's a much wider window than a soft-water specialist like cardinal tetra needs. Ammonia and nitrite should still read zero before stocking regardless.", source: "zebra-danio-tank-setup-guide" },
-        { label: "Filtration", value: "Moderate water movement is fine, and this species actually does well with more current than a delicate soft-water fish would tolerate. Seriously Fish recommends filtration that turns over roughly 4 to 5 times the tank volume per hour. A sponge filter or hang-on-back filter both work well.", source: "zebra-danio-tank-setup-guide" },
-        { label: "The lid", value: "Because they're capable jumpers. Multiple sources put their jump height at 20 to 30cm, and even a small gap in a hood or lid is often enough for an active, easily startled danio to find its way out. A tight-fitting lid isn't optional the way it might be for a calmer fish.", source: "zebra-danio-tank-setup-guide" },
-        { label: "Planting", value: "Substrate and live planting instead of bare glass, plus driftwood for structure and surface. Plant the sides and back, leave the middle open. Danios need cover and they need somewhere to sprint, and a tank that is all one or all the other misses half of it.", source: "zebra-danio-enrichment-guide" },
-        { label: "Flow", value: "Stream fish. A filter outlet aimed to produce some flow along the length of the tank gets used rather than avoided. Not a torrent: enough that there is a fast end and a slow end, and the fish get to choose.", source: "zebra-danio-enrichment-guide" },
-        { label: "Feeding", value: "Twice a day is the practical standard, offering only what the school finishes in two to three minutes. That matches general zebrafish feeding guidance used in research settings too: the standard husbandry reference at ZFIN recommends adult zebrafish get fed at least twice daily.", source: "zebra-danio-feeding-guide" },
-        { label: "The accidental spawn", value: "Conditioning danios on live or frozen food is a classic way to trigger spawning, since it mimics the food abundance that kicks off breeding activity in the wild. If you don't want fry, skip the daily live-food routine and don't add fine-leaved plants or marbles the eggs can fall into and survive in.", source: "zebra-danio-feeding-guide" },
-        { label: "Catching one", value: "Chasing rarely works. Set a net flush against a front corner of the tank, then use your other hand, fingers spread, to guide the fish toward it rather than pursuing them directly. Lowering the water level a few inches and staying calm both help.", source: "zebra-danio-handling-guide" },
-        { label: "Acclimation", value: "Float the sealed bag for 15 to 20 minutes to match temperature, then add a quarter cup of tank water to the bag every 5 minutes for another 15 to 20 minutes before netting the fish into the tank. Discard the bag water rather than pouring it in.", source: "zebra-danio-handling-guide" },
-        { label: "Quarantine", value: "Two to four weeks before new fish join an established tank. A simple 10 to 20-gallon bare-bottom tank with its own sponge filter and heater works well for this and doubles as an isolation tank later if a fish gets sick.", source: "zebra-danio-handling-guide" },
-        { label: "Budget", value: "Roughly $2 to $3 a fish, so about $12 to $30 for a starting school of 6 to 10. Core equipment runs roughly $60 to $150, and most first setups land around $100 to $180 once substrate and a test kit go in. Ongoing costs are very low, even by cheap-fish standards.", source: "zebra-danio-cost-guide" },
-        { label: "The GloFish premium", value: "The same species, genetically engineered to carry a fluorescent protein gene. They run about $8 each regardless of pack size, roughly four times the price of a plain wild-type danio. That premium reflects licensing and patent costs tied to the fluorescent gene, not a harder-to-keep fish.", source: "zebra-danio-cost-guide" },
-        { label: "Vet costs", value: "Not applicable in the traditional sense. Fish health management here is almost entirely about water quality and, when needed, over-the-counter treatments, not veterinary visits.", source: "zebra-danio-cost-guide" },
-        { label: "Lifespan", value: "Outbred zebra danios average around 3.5 years in captivity and can live up to 5.5 years with excellent care, according to the AnAge longevity database. Most wild zebrafish live to be about one year old.", source: "zebra-danio-cost-guide" },
+        { label: "How many", value: "At least 6, and 8 to 10 is the better start. In a small group the nipping lands on the same fish over and over; a larger one spreads it out.", source: "zebra-danio-handling-guide" },
+        { label: "Tank size", value: "A 10-gallon works for the bare minimum school of 6. A 20-gallon long is the better minimum for 8 to 10, and long beats tall: danios in a short tank run laps.", source: "zebra-danio-tank-setup-guide" },
+        { label: "Heater", value: "Optional at 64 to 77°F, which is room temperature in most homes. Add one if the room runs cool or tropical tankmates need warmer, steadier water.", source: "zebra-danio-tank-setup-guide" },
+        { label: "Water chemistry", value: "pH 6.0 to 8.0 and hardness anywhere from about 90 to 357 ppm. Ammonia and nitrite still read zero before stocking.", source: "zebra-danio-tank-setup-guide" },
+        { label: "Filtration and flow", value: "Turnover 4 to 5 times the volume an hour, sponge or hang-on-back, with the outlet aimed along the tank so there is a fast end and a slow end.", source: "zebra-danio-tank-setup-guide" },
+        { label: "The lid", value: "They jump 20 to 30 cm, and a small gap in the hood is enough. A tight lid is not optional.", source: "zebra-danio-tank-setup-guide" },
+        { label: "Planting", value: "Substrate and live plants, not bare glass. Plant the sides and back and leave the middle open, so there is cover and somewhere to sprint.", source: "zebra-danio-enrichment-guide" },
+        { label: "Feeding", value: "Twice a day, what the school finishes in two to three minutes.", source: "zebra-danio-feeding-guide" },
+        { label: "Fry you did not plan", value: "Daily live or frozen food is what triggers spawning. Keep it an occasional treat if you do not want fry.", source: "zebra-danio-feeding-guide" },
+        { label: "Acclimation", value: "Float the sealed bag 15 to 20 minutes, then a quarter cup of tank water every 5 minutes for another 15 to 20. The bag water goes down the drain, not in the tank.", source: "zebra-danio-handling-guide" },
+        { label: "Quarantine", value: "Two to four weeks in a 10 to 20-gallon bare tank with its own sponge filter and heater. It doubles as the hospital tank later.", source: "zebra-danio-handling-guide" },
+        { label: "Budget", value: "$2 to $3 a fish, about $12 to $30 for the school; GloFish are the same species at about $8 each. Most first setups land around $100 to $180.", source: "zebra-danio-cost-guide" },
+        { label: "Lifespan", value: "Around 3.5 years, up to 5.5 with excellent care.", source: "zebra-danio-cost-guide" },
         { label: "Adult size", value: "1.5 to 2.5 inches (4 to 6 cm); occasionally to 3 inches (7.5 cm) in captivity." },
-        { label: "The condition to know about", value: "Mycobacteriosis, sometimes called fish tuberculosis. Lethargy, loss of appetite and emaciation, along with skin ulcers, pale patches, and in advanced cases visible white nodules or a swollen abdomen. There's no reliable cure once a fish is visibly symptomatic.", source: "zebra-danio-health-issues-guide" },
-        { label: "Gloves, if you have a cut", value: "Mycobacterium marinum can also infect people, usually through a small cut or scrape exposed to contaminated tank water. It's uncommon and treatable, but it's a genuine reason to wear gloves for tank maintenance if you have any open cuts, and to mention aquarium exposure to a doctor if a slow-healing bump shows up.", source: "zebra-danio-health-issues-guide" },
-        { label: "Cycling, the finish line", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
-        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
-        { label: "Hospital tank", value: "A bare hospital tank with its own net and siphon hose, never shared with the display tank, and disinfected and stored dry between uses. A sponge filter gives gentle biological filtration without the flow of a hang-on-back or canister unit.", source: "fish-quarantine-and-treatment-guide" },
-        { label: "Water chemistry, the wider picture", value: "KH is the buffer holding pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you rather than chasing a number.", source: "freshwater-ph-gh-kh-guide" },
-        { label: "A hot week", value: "Reach for room air conditioning and a fan first, treat frozen bottles as a genuine last resort rather than a daily habit, and keep the aeration running no matter what else you're doing. Warmer water holds less dissolved oxygen at the same moment the fish need more of it.", source: "cooling-an-aquarium-without-a-chiller-guide" },
-        { label: "Power outage", value: "The threat is oxygen, not darkness. Once the filter and any air pump stop, the water surface stops moving, gas exchange slows, and dissolved oxygen starts dropping. Unplug the filter deliberately rather than letting it sit dead in the water.", source: "aquarium-power-outage-and-transport-guide" },
-        { label: "Sick fish check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible, and fish become distressed once dissolved oxygen falls to roughly 2 to 4 mg/L, with surface gasping as the visible warning sign. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
+        { label: "Mycobacteriosis", value: "Lethargy, emaciation, ulcers and pale patches, with no reliable cure once visible. It can infect people through a cut, so gloves for tank maintenance if you have one.", source: "zebra-danio-health-issues-guide" },
+        { label: "Water chemistry, the wider picture", value: "KH holds pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you.", source: "freshwater-ph-gh-kh-guide" },
+        { label: "A hot week", value: "Room air conditioning and a fan first, frozen bottles as a last resort, and the aeration running throughout: warm water holds less oxygen just as the fish need more.", source: "cooling-an-aquarium-without-a-chiller-guide" },
+        { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
     emergencyCard: {
       source: "zebra-danio-health-issues-guide",
+      heading: "Test the water first, then act on these today. Aquatic vets are rare, so nearly all of this is handled at home.",
       callNow: [
-        "Small white spots resembling grains of salt, alongside increased mucus production, flashing against decor, rapid breathing, and lethargy",
-        "Discoloration on the fin edges first, then fraying as infected tissue dies off",
-        "Lethargy, loss of appetite, and emaciation, along with skin ulcers, pale patches, and in advanced cases visible white nodules or a swollen abdomen",
-        "Buoyancy problems, floating at the surface unable to swim down, or struggling to rise from the bottom",
-        "A slow-growing, sometimes painful bump or nodule on your own skin at the site of exposure after working in a tank",
+        "Small white spots like grains of salt, extra mucus, flashing against decor, rapid breathing: ich, treatable",
+        "Fin edges discoloring, then fraying: fin rot, treatable",
+        "Floating at the surface unable to swim down, or struggling to rise",
+        "Lethargy, appetite loss, and emaciation, with ulcers, pale patches, or white nodules: mycobacteriosis, no reliable cure once visible",
       ],
-      vetLine: "Nearly everything treatable on this list traces back to water quality and stability, exactly what a properly cycled tank with consistent temperature and regular water changes prevents. Mycobacteriosis is the exception: there's no reliable cure once a fish is visibly symptomatic, and prevention through quarantine, clean equipment, and stable water is the real defense for home keepers. The bump on your own skin is uncommon and treatable, but it's a real reason to wear gloves or avoid putting broken skin in tank water, and to see a doctor if a slow-healing bump shows up after aquarium work.",
+      vetLine: "A slow-growing, sometimes painful bump on your own skin after tank work is a doctor's visit; the same bacterium infects people through cuts.",
     },
     routes: [
       { slug: "zebra-danio-cost-guide", line: "$2 a fish, $100 to $180 for a first setup, and why GloFish cost four times as much for identical care." },
