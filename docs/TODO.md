@@ -591,6 +591,7 @@ is why they kept getting deferred. Do them once section 7 is finished.
         trio"), zebra danio, ghost shrimp ("how many for a 5 or 10 gallon") and,
         from batch M, platy and cherry shrimp all stop at a minimum tank size and
         never say how many animals go in it. Five species across two batches.
+      - DONE 2026-09-16, content/guides/aquarium-stocking-and-tankmates-guide.mdx, wired into every fish and shrimp sidebar and onto the betta, goldfish and guppy cards as a Tankmates row; the other fifteen hubs are at eighteen rows and most already carry a species-sourced tankmate or group-size row. The species table gives each animal's floor and known bad pairing.
 
 - [ ] The opens from batches K, L and M, which the reader passes recorded in
       docs/READER_REVIEWS.md and nothing promoted here until 2026-09-15. Each one
@@ -760,7 +761,7 @@ is why they kept getting deferred. Do them once section 7 is finished.
       auto-detects it and check-related-articles does not catch it. One pass
       over every species with a legal guide.
 
-- [x] DONE 2026-09-16: the ignore is now src/lib/generated/** only, the one disable comment naming an unregistered rule is gone, and eslint . is clean. Cloud sessions also had no node_modules at all until npm ci was run by hand, so eslint had never run there. eslint does not see the data files at all. `eslint.config.js` has a
+- [x] DONE 2026-09-16: the ignore is now src/lib/generated/** only, the one disable comment naming an unregistered rule is gone, and eslint . is clean. Cloud sessions also had no node_modules at all until npm ci was run by hand, so eslint had never run there; .claude/hooks/install-deps.sh now runs npm install at every cloud session start, skipping when node_modules matches the lockfile. eslint does not see the data files at all. `eslint.config.js` has a
       top-level ignores block listing `src/lib/**` alongside `ds-bundle/**`,
       `dist/**` and `src/components/ui/**`, so every `npx eslint
       src/lib/data/guides/<file>.js` run exits 0 with no rules applied, and

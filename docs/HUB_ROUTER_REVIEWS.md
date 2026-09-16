@@ -477,8 +477,17 @@ rebuilt from the pre-trim rows to the template shape (one commit per class on
 the working branch), the per-row cap is in scripts/check-hub-rows.mjs, and
 every emergency card on a fish or invertebrate hub opens with what to check
 first, with the reviewed mammal, reptile and bird cards split into two tiers.
-Items 5 through 7 are still open: the route lines, the set-level
-contradictions, and the two missing fish articles.
+Items 5 through 7 are done as well. The route-line drift traced to stale
+generated metadata, since the cloud container had no node_modules and
+sync-articles had never run there; a session-start hook now installs them. The
+five contradictions in item 6 were fixed at their source: the quaker handling
+FAQ defers to the legal guide's count, the zebra finch enrichment title now
+reads "The Wild Flock Is Built from Pairs" and the opener grants the flock of
+dozens, the rat setup guide's bar spacing reads half an inch (1.3 cm), the
+millipede cost guide frames the PPQ 526 permit as import and interstate
+movement to match the legal guide, and the tokay night floor was corrected in
+the rebuild. Both fish articles are written and on every fish and shrimp hub:
+aquarium-water-changes-guide and aquarium-stocking-and-tankmates-guide.
 
 1. **Rewrite every emergency card header by class.** Fish and invertebrate hubs
    need a "check this first" or "act on these today" card with the first action
