@@ -2596,6 +2596,63 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/aquarium-ich-treatment-guide.mdx",
+    "slug": "aquarium-ich-treatment-guide",
+    "title": "Treating Ich: Heat, Salt or Medication, and the Temperature Ceiling That Decides",
+    "seoTitle": "Treating Ich in Aquarium Fish: Heat, Salt or Meds",
+    "excerpt": "Every fish health guide here says to treat ich by raising the temperature, and half of them say it about a species whose ceiling is below the number that works. This is the page that settles which fish can take the heat, which get salt, which get medication, and how long.",
+    "date": "2026-11-30",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Fish Care",
+      "Ich",
+      "White Spot",
+      "Fish Health",
+      "Fish Medication",
+      "Beginner Fishkeeping"
+    ],
+    "readTime": 9,
+    "difficulty": "Beginner",
+    "image": "/assets/images/aquarium-ich-treatment-guide.jpg",
+    "imageAlt": "A close-up of a small aquarium fish with fine white spots across its fins and body, with an aquarium heater and thermometer visible behind it",
+    "emoji": "🩹",
+    "lastReviewed": "2026-11-30",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can I treat ich with heat alone?",
+        "a": "Only if your fish can live at 86°F for two weeks, because that is the temperature most ich strains cannot survive, and it must be held with extra aeration since warm water carries less oxygen. Discus and cardinal tetras can. Goldfish, koi, zebra danios, neon tetras and bristlenose plecos cannot, and for them heat goes only as high as the species ceiling, to speed the cycle, while salt or medication does the killing."
+      },
+      {
+        "q": "How long does ich treatment take?",
+        "a": "Until every spot has been gone for days and no fish has died from it. The parasite is only killable during its free-swimming stage, which at 75 to 79°F comes round every 3 to 6 days, and the cycle stretches to weeks in cold water. Stopping when the spots vanish leaves the encysted stage in the gravel to hatch a fresh wave."
+      },
+      {
+        "q": "Is aquarium salt safe for all fish?",
+        "a": "No. The tablespoon per 5 gallons is for scaled fish. Corydoras, plecos and loaches take salt badly, and it is not for a shrimp tank at all. For those, malachite green or formalin in a hospital tank is the route."
+      },
+      {
+        "q": "Should I treat in the display tank or a hospital tank?",
+        "a": "The parasite lives in the whole tank, encysted in the gravel, so a display with spots on any fish is an infected tank whatever you move out. Treat the tank the fish are in, remove shrimp and snails first, and run the 30-day quarantine on any new fish afterward so it never comes back in."
+      }
+    ],
+    "relatedProducts": [
+      "water-test-kit",
+      "submersible-aquarium-heater"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/aquarium-power-outage-and-transport-guide.mdx",
     "slug": "aquarium-power-outage-and-transport-guide",
     "title": "Aquarium Power Outages, Transport, and Moving Your Fish: The Complete Plan",
@@ -18878,8 +18935,8 @@
     "path": "/content/guides/freshwater-ph-gh-kh-guide.mdx",
     "slug": "freshwater-ph-gh-kh-guide",
     "title": "Freshwater pH, GH, and KH: Why Chasing a Number Backfires",
-    "seoTitle": "Freshwater pH, GH and KH Guide for Coldwater Tanks",
-    "excerpt": "What pH, GH, and KH actually measure in a coldwater tank, why KH is the buffer holding pH in place, and why dosing pH-up or pH-down against it is how goldfish keepers crash a tank.",
+    "seoTitle": "Freshwater pH, GH and KH: Why Chasing a Number Backfires",
+    "excerpt": "What pH, GH, and KH measure in any freshwater tank, from a discus tank to a goldfish tub, why KH is the buffer holding pH in place, and why dosing pH-up or pH-down against it is how keepers crash a tank.",
     "date": "2026-11-18",
     "category": "Fish",
     "categories": [
@@ -26133,9 +26190,9 @@
   {
     "path": "/content/guides/invertebrate-molting-guide.mdx",
     "slug": "invertebrate-molting-guide",
-    "title": "Invertebrate Molting 101: What's Normal Across Tarantulas, Hermit Crabs, and Jumping Spiders",
+    "title": "Invertebrate Molting 101: What's Normal, Species by Species",
     "seoTitle": "Invertebrate Molting 101: What's Normal",
-    "excerpt": "How molting works in tarantulas, hermit crabs, and jumping spiders - normal signs versus a failed molt, and why you should never disturb a molting pet.",
+    "excerpt": "How molting works in tarantulas, hermit crabs, jumping spiders, millipedes and stick insects - normal signs versus a failed molt, and why you should never disturb a molting pet.",
     "date": "2026-06-28",
     "category": "Invertebrates",
     "categories": [
@@ -26147,6 +26204,8 @@
       "Tarantula",
       "Hermit Crab",
       "Jumping Spider",
+      "Millipede",
+      "Stick Insect",
       "Care Tips",
       "Exoskeleton"
     ],
@@ -26188,8 +26247,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 7,
+    "sourceCount": 2,
+    "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1620,
     "imageHeight": 1080
@@ -26259,6 +26318,63 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/invertebrate-quarantine-cleaning-and-escapes-guide.mdx",
+    "slug": "invertebrate-quarantine-cleaning-and-escapes-guide",
+    "title": "Invertebrate Housekeeping: Quarantining a New Arrival, Cleaning the Enclosure, and Finding an Escapee",
+    "seoTitle": "Invertebrate Quarantine, Cleaning and Escapes",
+    "excerpt": "Three questions every new invertebrate keeper asks and no species page here answered: how long to isolate a new animal, how often to clean an enclosure that never looks dirty, and where a tarantula goes when the lid was left open.",
+    "date": "2026-12-02",
+    "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
+    "tags": [
+      "Invertebrates",
+      "Tarantula",
+      "Quarantine",
+      "Enclosure Cleaning",
+      "Escapes",
+      "Mites",
+      "Care Tips"
+    ],
+    "readTime": 9,
+    "difficulty": "Beginner",
+    "image": "/assets/images/invertebrate-quarantine-cleaning-and-escapes-guide.jpg",
+    "imageAlt": "A tarantula in a small clear quarantine enclosure with a water dish and paper towel substrate, set apart on a shelf from a row of larger planted enclosures",
+    "emoji": "🕷️",
+    "lastReviewed": "2026-12-02",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How long should I quarantine a new invertebrate?",
+        "a": "At least three months, in a different room from the rest of the collection if you have one, with its own tools. That is the tarantula hobby's figure and it covers the slow problems, mites and mold that build over weeks and the nematode infections that only show once the animal is established. A single first pet skips the room but not the watching."
+      },
+      {
+        "q": "How often do I clean an invertebrate enclosure?",
+        "a": "Spot clean weekly: uneaten prey out within 24 hours, prey remains and droppings out as you see them, water dish rinsed and refilled. Replace the substrate every 6 to 12 months, or sooner if mold appears. A full strip-down is otherwise a disturbance the animal does not need, and a tarantula can sit on the same substrate for years."
+      },
+      {
+        "q": "My tarantula escaped. Where do I look?",
+        "a": "Low, dark and warm, in the room it escaped from if it has been under two hours: under furniture, in dark corners, under the bed, in piles of clothes or shoes. Tree-dwellers climb instead, so check walls and bookshelves. Search at night with a flashlight, and put out a water dish or damp paper towel as bait, since an escapee goes looking for water first."
+      },
+      {
+        "q": "What do mites in the enclosure mean?",
+        "a": "Usually that prey remains have been sitting too long in a damp, poorly ventilated enclosure. Most are harmless scavengers, and the fix is removing the remains and restoring ventilation. If they are on the animal itself, or on a fresh molt, a vet with invertebrate experience is the call rather than a chemical, since nearly every pesticide kills the pet along with the mites."
+      }
+    ],
+    "relatedProducts": [
+      "digital-thermometer-hygrometer-combo"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false
   },
   {
     "path": "/content/guides/invertebrate-rehousing-guide.mdx",
@@ -38789,6 +38905,64 @@
     "imageHeight": 600
   },
   {
+    "path": "/content/guides/shrimp-molting-guide.mdx",
+    "slug": "shrimp-molting-guide",
+    "title": "Shrimp Molting: What a Normal Molt Looks Like, and the White Ring That Means It Failed",
+    "seoTitle": "Shrimp Molting: Normal Molts and the White Ring",
+    "excerpt": "The invertebrate molting guide is about tarantulas and hermit crabs. This is the aquatic one: how often a shrimp molts, the hour of stillness before and the days of hiding after, why the empty shell stays in the tank, the GH numbers that make or break a molt, and the white ring that means it has already gone wrong.",
+    "date": "2026-12-01",
+    "category": "Invertebrates",
+    "categories": [
+      "Invertebrates",
+      "Fish"
+    ],
+    "tags": [
+      "Shrimp Care",
+      "Molting",
+      "Cherry Shrimp",
+      "Amano Shrimp",
+      "Ghost Shrimp",
+      "Water Hardness",
+      "Invertebrates"
+    ],
+    "readTime": 8,
+    "difficulty": "Beginner",
+    "image": "/assets/images/shrimp-molting-guide.jpg",
+    "imageAlt": "A red cherry shrimp beside its translucent shed exoskeleton on a mossy stone in a planted aquarium",
+    "emoji": "🦐",
+    "lastReviewed": "2026-12-01",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often do shrimp molt?",
+        "a": "An adult in good conditions every 3 to 4 weeks, and a young, fast-growing shrimp every 1 or 2 weeks. A ghost shrimp colony full of juveniles will show molts constantly and that is growth, not trouble."
+      },
+      {
+        "q": "Should I remove the empty shell?",
+        "a": "No. The shrimp eat the old shell as a calcium source, and it is usually gone in a day or two. An empty, hollow shell in the tank is the sign of a successful molt, not a dead shrimp."
+      },
+      {
+        "q": "What is the white ring of death?",
+        "a": "A molt where the shell splits all the way round the body behind the head instead of only along the top, leaving the shrimp with two disconnected halves it cannot back out of. It is nearly always fatal, and its cause is the water, most often a sudden jump in general hardness after a large water change, or a GH too low for the new shell to form."
+      },
+      {
+        "q": "What GH do shrimp need to molt?",
+        "a": "Neocaridina, the cherry shrimp, GH 6 to 12 with 7 to 8 the sweet spot. Caridina species GH 4 to 6. Whatever the number, the rule that matters is stability: never raise GH by more than 2 points in a day, and never swing it with a big water change."
+      }
+    ],
+    "relatedProducts": [
+      "water-test-kit"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/siberian-husky-enrichment-guide.mdx",
     "slug": "siberian-husky-enrichment-guide",
     "title": "Siberian Husky Enrichment: Bred to Run All Day and Not Come Back",
@@ -39731,8 +39905,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
-    "headingCount": 7,
+    "sourceCount": 5,
+    "headingCount": 8,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784

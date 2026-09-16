@@ -456,6 +456,17 @@
       ]
     },
     {
+      "slug": "aquarium-ich-treatment-guide",
+      "title": "Treating Ich in Aquarium Fish: Heat, Salt or Meds",
+      "excerpt": "Every fish health guide here says to treat ich by raising the temperature, and half of them say it about a species",
+      "date": "2026-11-30",
+      "image": "/assets/images/aquarium-ich-treatment-guide.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish"
+      ]
+    },
+    {
       "slug": "aquarium-power-outage-and-transport-guide",
       "title": "Aquarium Power Outage and Fish Transport Guide",
       "excerpt": "An aquarium's biggest threat in a power outage is oxygen loss, not darkness, and the same three problems, oxygen,",
@@ -3353,8 +3364,8 @@
     },
     {
       "slug": "freshwater-ph-gh-kh-guide",
-      "title": "Freshwater pH, GH and KH Guide for Coldwater Tanks",
-      "excerpt": "What pH, GH, and KH actually measure in a coldwater tank, why KH is the buffer holding pH in place, and why dosing",
+      "title": "Freshwater pH, GH and KH: Why Chasing a Number Backfires",
+      "excerpt": "What pH, GH, and KH measure in any freshwater tank, from a discus tank to a goldfish tub, why KH is the buffer holding",
       "date": "2026-11-18",
       "image": "/assets/images/freshwater-ph-gh-kh-guide.jpg",
       "category": "Fish",
@@ -4674,7 +4685,7 @@
     {
       "slug": "invertebrate-molting-guide",
       "title": "Invertebrate Molting 101: What's Normal",
-      "excerpt": "How molting works in tarantulas, hermit crabs, and jumping spiders - normal signs versus a failed molt, and why you",
+      "excerpt": "How molting works in tarantulas, hermit crabs, jumping spiders, millipedes and stick insects - normal signs versus a",
       "date": "2026-06-28",
       "image": "/assets/images/invertebrate-molting.jpg",
       "category": "Invertebrates",
@@ -4692,6 +4703,17 @@
       "categories": [
         "Invertebrates",
         "Pet Care"
+      ]
+    },
+    {
+      "slug": "invertebrate-quarantine-cleaning-and-escapes-guide",
+      "title": "Invertebrate Quarantine, Cleaning and Escapes",
+      "excerpt": "Three questions every new invertebrate keeper asks and no species page here answered: how long to isolate a new animal,",
+      "date": "2026-12-02",
+      "image": "/assets/images/invertebrate-quarantine-cleaning-and-escapes-guide.jpg",
+      "category": "Invertebrates",
+      "categories": [
+        "Invertebrates"
       ]
     },
     {
@@ -6926,6 +6948,18 @@
       "category": "Wild Animals",
       "categories": [
         "Wild Animals"
+      ]
+    },
+    {
+      "slug": "shrimp-molting-guide",
+      "title": "Shrimp Molting: Normal Molts and the White Ring",
+      "excerpt": "The invertebrate molting guide is about tarantulas and hermit crabs. This is the aquatic one: how often a shrimp molts,",
+      "date": "2026-12-01",
+      "image": "/assets/images/shrimp-molting-guide.jpg",
+      "category": "Invertebrates",
+      "categories": [
+        "Invertebrates",
+        "Fish"
       ]
     },
     {

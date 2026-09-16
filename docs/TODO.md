@@ -575,11 +575,13 @@ is why they kept getting deferred. Do them once section 7 is finished.
         tank its own setup guide says needs no heater at all. Both readers caught
         it separately, which makes it the shared fish-health material rather than
         either species.
+      - DONE 2026-09-16, content/guides/aquarium-ich-treatment-guide.mdx, dated 2026-11-30: life cycle, the 86°F heat method with a species table of setup-guide ceilings, salt for scaled fish, malachite green and formalin, duration and the 30-day quarantine. Wired into all fifteen fish sidebars and onto the betta and goldfish cards as an Ich row. Hero image still to come.
       - The shared pH, GH and KH guide reads as coldwater goldfish material.
         Flagged by platy's reader in batch M and by discus and bristlenose pleco
         in batch N. Three species now, and the sidebar excerpt is what a reader
         sees before deciding whether to click, so a discus keeper reading about
         goldfish concludes the guide is not for them.
+      - DONE 2026-09-16: excerpt, seoTitle, seoDescription, description and opener reframed so the mechanism is for every freshwater tank and goldfish is the worked example; the body's goldfish ranges section is unchanged.
       - The shared invertebrate molting guide is terrestrial. It covers
         tarantulas, hermit crabs and jumping spiders by name and its timelines
         and signs are written for those three, while molting is the single most
@@ -588,6 +590,7 @@ is why they kept getting deferred. Do them once section 7 is finished.
         or an aquatic counterpart. Ghost shrimp's reader in batch N wanted the
         feeding guide to point there and the page it would have pointed at is
         not about shrimp.
+      - DONE 2026-09-16, content/guides/shrimp-molting-guide.mdx, dated 2026-12-01: cycle by age, pre- and post-molt signs, GH 6 to 12 and 4 to 6 ranges, the 2-a-day rule, the water change trigger, the white ring. Wired into the three shrimp sidebars, and the cherry and ghost enrichment and ghost feeding links now point at it instead of the terrestrial guide. Hero image still to come.
       - Stocking numbers past a floor. Swordtail ("how many in a 29 beyond a
         trio"), zebra danio, ghost shrimp ("how many for a 5 or 10 gallon") and,
         from batch M, platy and cherry shrimp all stop at a minimum tank size and
@@ -724,15 +727,18 @@ is why they kept getting deferred. Do them once section 7 is finished.
         cleaning and substrate replacement intervals, asked for by all four; and
         recapturing an escapee, asked for by two. These are shared-guide work,
         not per-species work. (batch O)
+      - DONE 2026-09-16, content/guides/invertebrate-quarantine-cleaning-and-escapes-guide.mdx, dated 2026-12-02: three-month quarantine with separate tools, weekly spot cleans and 6 to 12 month substrate, mites and mold, escape search and cup recapture. Wired into the eight terrestrial invertebrate sidebars and onto the tarantula card as two rows. Hero image still to come.
       - Stick insect eggs. The set now says plainly that a single female
         produces fertile eggs without a male and that releasing them is
         prohibited, and nowhere says what to do with them instead. The one gap
         in this batch that a reader would hit within weeks of buying. (batch O)
+      - DONE 2026-09-16: a "What to Do With the Eggs" section in stick-insect-handling-guide.mdx, hatch or freeze, with the APHIS permit scope and Bugs In Cyberspace incubation figures added to its sources.
       - The invertebrate molting guide covers tarantulas, hermit crabs and
         jumping spiders, and nothing else. Millipedes and stick insects both
         link to it from their own guides, and the species check had to re-source
         two hub rows away from it because it does not mention either animal.
         Either widen it or stop pointing myriapods and phasmids at it. (batch O)
+      - DONE 2026-09-16: widened. Millipede and stick insect rows in the signs table, a Millipedes and Stick Insects section, the one rule extended, and a Sources block added (the guide had none) with the Tree of Life and Keeping Insects pages.
 
 - [ ] Batch P opens, promoted by the species check (2026-09-16):
       - Jackson's chameleon humidity needs research. The setup guide says 30
