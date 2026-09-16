@@ -11,10 +11,10 @@ export const invertebrateGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Cycling, quarantine and the sick-tank check cite
-    // the shared aquarium guides in the sidebar's Health and More list.
-    // Reconciled 2026-09-15 after the amano shrimp set test
-    // (docs/READER_REVIEWS.md).
+    // encyclopedia entry. No row cites the shared aquarium guides; they sit in
+    // the sidebar's Health and More list. Reconciled 2026-09-15 after the amano
+    // shrimp set test (docs/READER_REVIEWS.md), rewritten to the template shape
+    // 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
     //
     // The old hub's prices were all above the cost guide's table and none
     // of them are moved: the tank at $45 to $90 against $18 to $30, the
@@ -27,40 +27,35 @@ export const invertebrateGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Cycling", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
-        { label: "Quarantine", value: "Two to four weeks in a separate, already-cycled tank before a new amano shrimp joins an established display. Virtually every amano shrimp sold in the trade is wild-caught rather than farm-raised, so quarantine gives any hitchhiking parasites, pests, or simply a stressed animal time to show itself.", source: "amano-shrimp-handling-guide" },
-        { label: "Drip acclimation", value: "Roughly one to two hours, at one to two drops per second, running a slow siphon from the destination tank into the transport container. A bigger gap between your water and theirs calls for three or four hours. A shrimp thrown straight into different water can go into osmotic shock, which is a known trigger for failed, often fatal molts.", source: "amano-shrimp-handling-guide" },
-        { label: "Tank size", value: "A 10-gallon tank is a practical minimum. Their bioload is low enough that they can live in most nano tanks or larger as long as the lid is secure, but a small group technically surviving in 5 gallons isn't the same as thriving with room to actually forage.", source: "amano-shrimp-tank-setup-guide" },
-        { label: "How many", value: "One shrimp per 2 gallons, so five in a 10-gallon. Their bioload is low enough that a tank already fighting an algae outbreak can carry more than five without a water quality problem, but more shrimp in the same algae only means the supply runs out sooner.", source: "amano-shrimp-tank-setup-guide" },
-        { label: "Temperature", value: "64 to 82°F covers the tolerated range, but shrimp kept toward the cooler two-thirds of that band, roughly the upper 60s to mid-70s, tend to live longer, since warmer water speeds up metabolism and shortens lifespan. Set a heater conservatively rather than pushing it toward the top of the range.", source: "amano-shrimp-tank-setup-guide" },
-        { label: "Water chemistry", value: "pH 6.0 to 7.5, with carbonate hardness in the 2 to 8 dKH range as a reasonable target alongside it.", source: "amano-shrimp-tank-setup-guide" },
-        { label: "General hardness", value: "A working range of roughly 4 to 15 dGH, with many keepers targeting 6 to 8 dGH specifically, because that is what supplies the calcium and other minerals this species needs to build a new shell every molt. Too little and a shrimp can't harden its new exoskeleton; too much and the old one can become too rigid to break out of cleanly.", source: "amano-shrimp-tank-setup-guide" },
-        { label: "The lid", value: "Not optional. Amano shrimp are well known escape artists, especially in their first few days in a new tank, and a gap of even a fraction of an inch around a cord or filter intake is enough for one to climb out and turn up dried out the next morning. A tight-fitting glass or acrylic lid, with any gaps sealed.", source: "amano-shrimp-tank-setup-guide" },
-        { label: "Filter intake, not flow", value: "A sponge filter matters because it blocks a standard intake from pulling in or injuring a shrimp, particularly one that has just molted and is a weak swimmer for a short while. It is an intake-safety choice rather than a statement about how much flow the species can handle: this is a fast-stream animal that does not want still water.", source: "amano-shrimp-tank-setup-guide" },
-        { label: "Copper", value: "Shrimp carry copper-based hemocyanin in their blood rather than iron-based hemoglobin, which is exactly why free copper is so disproportionately dangerous to them. A 2025 study put the acute lethal threshold at 1.15 mg/L, and shrimp pre-exposed below that lost their normal ability to detect food odors. Common copper-based fish medications and some plant fertilizers run 0.15 to 0.20 mg/L, squarely inside the range where shrimp show measurable harm.", source: "amano-shrimp-health-issues-guide" },
-        { label: "Water conditioner", value: "Always run tap water through a water conditioner before it goes anywhere near the tank, dechlorinating it and neutralizing chloramine and heavy metals that are otherwise harmful to invertebrates.", source: "amano-shrimp-tank-setup-guide" },
-        { label: "What they eat", value: "They take on hair algae and thread algae readily, and unlike most fish and snails they'll also pick at black beard algae. The gap is flat, tightly adhered algae: they won't get at the tougher types like green spot algae, and cyanobacteria isn't a true algae at all and gets left alone.", source: "amano-shrimp-feeding-guide" },
-        { label: "Algae runs out", value: "Algae is a starting food supply, not a renewable one, and a hungry group works through it faster than most people expect. If the tank is clean, supplement. A hungry amano gives an honest signal first: it climbs the glass and decor actively searching rather than sitting still and waiting.", source: "amano-shrimp-feeding-guide" },
-        { label: "How often to feed", value: "Lightly, and only every couple of days rather than heavily every day. Shrimp getting plenty of easy wafers and pellets stop bothering with algae, which defeats the point of keeping them. Offer a small amount, remove anything left after a few hours, and let them stay motivated to work the tank.", source: "amano-shrimp-feeding-guide" },
-        { label: "Feed in more than one spot", value: "Amanos are assertive, and a single wafer becomes one shrimp's wafer.", source: "amano-shrimp-enrichment-guide" },
-        { label: "Molting", value: "A failed molt, sometimes called the White Ring of Death, is what happens when the old shell splits all the way around the body instead of opening cleanly at the head. Most molting failures trace back to unstable water parameters, particularly swings in GH and KH around a water change, and a diet short on calcium. There is no treatment once one starts failing.", source: "amano-shrimp-health-issues-guide" },
-        { label: "Handling", value: "A soft, fine-mesh net, guiding the shrimp in gently instead of chasing it around the tank. Keep it in water as much as possible during any transfer, and be extra careful around one that has molted recently, since it is soft and swimming weakly at exactly the wrong moment for a rough net chase.", source: "amano-shrimp-handling-guide" },
-        { label: "Eggs that never hatch", value: "Normal, not a health problem. A female carries fertilized eggs and they hatch into free-swimming larvae on schedule, but those larvae need brackish or marine water within their earliest stages, which a freshwater display can't provide. It is the direct result of this species' amphidromous life cycle and the reason almost every amano in the trade is a wild-caught adult.", source: "amano-shrimp-health-issues-guide" },
-        { label: "Sick tank check", value: "Clear water doesn't mean safe water. Ammonia, nitrite, and low dissolved oxygen are all invisible. Test the water before assuming illness.", source: "spotting-a-sick-fish-guide" },
-        { label: "Budget", value: "Roughly $5 to $12 each, cheaper per animal in a group. The core equipment runs roughly $60 to $150: a 10-gallon tank at $18 to $30, a heater at $18 to $30, a sponge filter at $8 to $15, and driftwood or plants for grazing at $15 to $30.", source: "amano-shrimp-cost-guide" },
-        { label: "Adult size", value: "Up to about 2 inches (5 cm); large for a dwarf shrimp, though bamboo and vampire shrimp are bigger still." },
-        { label: "Lifespan", value: "2 to 3 years in captivity, with shrimp kept toward the cooler end of their comfortable temperature range sometimes living longer still.", source: "amano-shrimp-cost-guide" },
+        { label: "Tank size", value: "A 10-gallon is the practical minimum. Surviving in 5 gallons is not the same as having room to forage.", source: "amano-shrimp-tank-setup-guide" },
+        { label: "How many", value: "One per 2 gallons to start, five in a 10-gallon. A tank fighting an algae outbreak carries more, but more shrimp on the same algae only means it runs out sooner.", source: "amano-shrimp-tank-setup-guide" },
+        { label: "Temperature", value: "64 to 82°F tolerated, and shrimp kept in the upper 60s to mid-70s live longer, since warm water speeds metabolism. Set the heater conservatively.", source: "amano-shrimp-tank-setup-guide" },
+        { label: "Water chemistry", value: "pH 6.0 to 7.5, KH 2 to 8, and GH 4 to 15 with 6 to 8 dGH the usual target. Too little hardness and a new shell cannot harden; too much and the old one is too rigid to break out of.", source: "amano-shrimp-tank-setup-guide" },
+        { label: "The lid", value: "Not optional. They climb out through a gap the width of a cord, especially in the first days, and turn up dried out in the morning.", source: "amano-shrimp-tank-setup-guide" },
+        { label: "Filter intake, not flow", value: "A sponge filter because a standard intake pulls in a freshly molted shrimp. It is an intake-safety choice, not a flow limit: this is a fast-stream animal.", source: "amano-shrimp-tank-setup-guide" },
+        { label: "Water conditioner", value: "On every drop of tap water, for the chloramine and heavy metals that harm invertebrates.", source: "amano-shrimp-tank-setup-guide" },
+        { label: "Copper", value: "Shrimp blood runs on copper, which is why free copper is so disproportionately dangerous. Common copper fish medications and some fertilizers run 0.15 to 0.20 mg/L, inside the range where a 2025 study found shrimp harmed.", source: "amano-shrimp-health-issues-guide" },
+        { label: "What they eat", value: "Hair algae, thread algae, and black beard algae, which most fish and snails leave. Not flat green spot algae, and not cyanobacteria.", source: "amano-shrimp-feeding-guide" },
+        { label: "Algae runs out", value: "It is a starting supply, not a renewable one, and a group clears it faster than expected. Supplementing is part of the diet, not a fallback; a shrimp climbing the glass and decor searching is hungry.", source: "amano-shrimp-feeding-guide" },
+        { label: "How often to feed", value: "A small amount every couple of days, leftovers out after a few hours, so they stay motivated to work the tank. In more than one spot: a single wafer becomes one shrimp's wafer.", source: "amano-shrimp-feeding-guide" },
+        { label: "Drip acclimation", value: "One to two hours at one to two drops per second, three or four hours if the water gap is large. Osmotic shock is a known trigger for failed molts.", source: "amano-shrimp-handling-guide" },
+        { label: "Quarantine", value: "Two to four weeks in a separate cycled tank. Virtually every amano sold is wild-caught, so hitchhikers and stress get time to show.", source: "amano-shrimp-handling-guide" },
+        { label: "Molting", value: "A failed molt is the shell splitting all the way around the body instead of at the head, usually from GH and KH swinging around a water change or a diet short on calcium. There is no treatment once it starts.", source: "amano-shrimp-health-issues-guide" },
+        { label: "Eggs that never hatch", value: "Normal. The larvae need brackish or marine water, which is why almost every amano in the trade is a wild-caught adult.", source: "amano-shrimp-health-issues-guide" },
+        { label: "Budget", value: "$5 to $12 each, cheaper in a group. Core equipment roughly $60 to $150.", source: "amano-shrimp-cost-guide" },
+        { label: "Lifespan", value: "2 to 3 years, longer at the cool end of the range.", source: "amano-shrimp-cost-guide" },
+        { label: "Adult size", value: "Up to about 2 inches (5 cm); large for a dwarf shrimp." },
       ],
     },
     emergencyCard: {
       source: "amano-shrimp-health-issues-guide",
+      heading: "Test the water first, then act on these today. No vet treats a shrimp; prevention is the whole plan.",
       callNow: [
-        "A shell split all the way around the body instead of opening cleanly at the head (a failed molt, the White Ring of Death). There is no direct medical treatment once a molt starts failing; the fix is prevention, stable mineral content and a calcium-inclusive diet",
-        "Any copper-based fish medication or plant fertilizer about to go near the tank. Check the label first: the formulations around 0.15 to 0.20 mg/L free copper that are considered safe for treating fish sit squarely inside the range where shrimp show measurable harm",
-        "A whole group dying suddenly with no obvious warning signs. The honest first question isn't what disease this is, it's what changed in the water: a copper exposure, an ammonia or pH swing, a rushed water change",
-        "Shrimp that have lost their normal ability to detect food odors, the sublethal copper harm that shows up well before outright death",
+        "A shell split all the way around the body instead of opening at the head: a failed molt, with no treatment once it starts",
+        "A whole group dying suddenly with no warning: ask what changed in the water, a copper exposure, an ammonia or pH swing, a rushed water change",
+        "Shrimp climbing the glass and decor in constant search: hunger, and the algae has run out",
       ],
-      vetLine: "Invertebrates lack the adaptive immune system vertebrates rely on and depend instead on more basic, innate defenses, so a healthy shrimp doesn't usually just catch an illness out of nowhere the way a fish might. Infections and parasites do happen, but stress from poor water quality is usually what opens the door rather than a stable shrimp getting unlucky. Test your water first when something goes wrong.",
+      vetLine: "Check the label of any fish medication or fertilizer before it goes near the tank: the copper doses considered safe for fish sit inside the range that harms shrimp.",
     },
     routes: [
       { slug: "amano-shrimp-cost-guide", line: "$5 to $12 a shrimp with real listings behind it, the $60 to $150 setup, and why a cooler tank is the cheaper one across a shrimp's life." },
@@ -102,10 +97,10 @@ export const invertebrateGuides = [
     funFact: "Every color of cherry shrimp in the hobby, from clear to fire-engine red to jet black, is the exact same species. Neocaridina davidi's natural wild coloring is actually a dull, camouflaged greenish-brown; decades of selective breeding by hobbyists produced the entire modern color palette, right down to the graded 'Fire Red' and 'Painted Fire Red' tiers sold today.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
-    // the hub keeps no number of its own. Filter maintenance, water chemistry
-    // and summer cooling cite the shared aquarium guides in the sidebar's
-    // Health and More list. Reconciled 2026-09-15 after the cherry shrimp set
-    // test (docs/READER_REVIEWS.md).
+    // the hub keeps no number of its own. No row cites the shared aquarium
+    // guides; they sit in the sidebar's Health and More list. Reconciled
+    // 2026-09-15 after the cherry shrimp set test (docs/READER_REVIEWS.md),
+    // rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
     //
     // The old hub said in its own comment that its pricing was unverified, and
     // the reader graded it C+ as "where I got most of my wrong ideas." Retired
@@ -127,44 +122,37 @@ export const invertebrateGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Tank size", value: "5 gallons is a commonly cited practical minimum. Shrimp can technically survive in a 2-gallon nano tank, but 10 gallons or larger suits a healthy, self-sustaining breeding colony, since more water volume buffers the small, constant parameter shifts a growing colony naturally causes.", source: "cherry-shrimp-tank-setup-guide" },
-        { label: "Mature, not just cycled", value: "A tank needs to be fully mature, not just cycled, before shrimp go in: the biofilm a shrimp grazes takes longer to arrive than the bacteria that clear ammonia. Ammonia and nitrite should both read zero at all times.", source: "cherry-shrimp-health-issues-guide" },
-        { label: "Water hardness", value: "The single most shrimp-specific requirement. The floor is a GH of 6 degrees (about 110 ppm) and a KH of 2 degrees (about 40 ppm). The tighter target, and the one that most reliably supports a full, hard molt, is roughly 6 to 8 dGH and 2 to 4 dKH alongside a pH of 6.5 to 7.5. Mineral hardness is what a shrimp pulls calcium from to build a new shell after every molt, so a tank that's too soft leads directly to failed and soft molts.", source: "cherry-shrimp-tank-setup-guide" },
-        { label: "Temperature", value: "A comfortable range of 60 to 82\u00B0F, with 72 to 76\u00B0F optimal, and an outer tolerated range as wide as 57 to 86\u00B0F. Most home rooms sit comfortably inside this species' range without any supplemental heat at all. A heater is still worth having if your room regularly runs cooler than the high 50s, or if you want a stable, warmer setpoint for more consistent growth and breeding.", source: "cherry-shrimp-tank-setup-guide" },
-        { label: "Filtration", value: "A sponge filter, or a standard filter with its intake covered by a pre-filter sponge. An uncovered filter intake can pull baby shrimp in, and adult shrimp aren't entirely safe from a strong intake either. Gentle water movement also better matches the calmer water this species is used to.", source: "cherry-shrimp-tank-setup-guide" },
-        { label: "Water changes", value: "Limit them to roughly 10% a week, or 20% every two weeks. Larger or more frequent changes shock shrimp even when the new water itself is clean and dechlorinated.", source: "cherry-shrimp-health-issues-guide" },
-        { label: "Grazing surface", value: "Dense live plants or moss, driftwood and leaf litter. This is the whole thing for a grazing animal: surface area is what a cherry shrimp spends its day on, and a bare tank with a food dish is the impoverished version.", source: "cherry-shrimp-enrichment-guide" },
-        { label: "A colony, not a few", value: "More than a handful. Cherry shrimp are more active, more visible and more confident in a colony, and ten or more is a sensible starting point in a tank of reasonable size. A pair or trio spends most of its time hidden.", source: "cherry-shrimp-enrichment-guide" },
-        { label: "Diet", value: "Mostly grazing. In an established, well-planted tank a colony finds a meaningful amount of its own food picking biofilm, algae and detritus off every surface, with a sinking wafer a couple of times a week on top of that rather than as the base of the diet.", source: "cherry-shrimp-feeding-guide" },
-        { label: "Portion", value: "A piece of food no larger than a pea, or a quarter of a small wafer, is enough for a colony of 10 to 20 shrimp. Feed only what the colony clears within 2 to 3 hours, and if food from the last feeding is still sitting there, skip the next one rather than adding more on top of it.", source: "cherry-shrimp-feeding-guide" },
-        { label: "Calcium for the molt", value: "A quality sinking food, occasional blanched vegetables, and stable water hardness cover most of that need without a dedicated supplement.", source: "cherry-shrimp-feeding-guide" },
-        { label: "Leave the shed shell", value: "It's safe, and generally a good idea, to leave a molted exoskeleton in the tank for a day or two rather than removing it. The shrimp that just molted, and its tankmates, will pick it apart to reclaim the calcium and minerals already locked inside it. The only real exception is a tank already dealing with a parasite or bacterial problem.", source: "cherry-shrimp-feeding-guide" },
-        { label: "Molt frequency", value: "An adult sheds roughly every 3 to 4 weeks, with younger shrimp molting even more often as they grow. A shrimp that hides and stays still for a few days right after a normal molt is not showing signs of a problem, that's just the vulnerable window while a fresh shell hardens.", source: "cherry-shrimp-health-issues-guide" },
-        { label: "Copper, the one to take seriously", value: "Shrimp tolerate almost no copper at all, at concentrations that wouldn't register as a concern for most fish. A 2014 toxicity study on a related freshwater shrimp found a 96-hour lethal concentration of just 0.0313 mg/L, by far the most toxic of five metals tested, with a proposed biologically safe target closer to 0.003 mg/L.", source: "cherry-shrimp-health-issues-guide" },
-        { label: "Where copper hides", value: "Many common fish medications, some plant fertilizers, and pesticide treatments used on store-bought aquarium plants before sale. Quarantine new plants in clean water for at least five days, with daily water changes, before they go anywhere near a shrimp tank. Never treat a shared shrimp-and-fish tank with a copper-based medication.", source: "cherry-shrimp-health-issues-guide" },
-        { label: "Acclimation", value: "A slow drip rather than a quick float-and-dump, roughly one drop per one to two seconds until the water volume in the acclimation container has doubled, which takes 60 to 90 minutes for most home setups. Shrimp regulate their internal water balance far less efficiently than fish do, so a sudden shift in pH, hardness or temperature can trigger osmotic shock.", source: "cherry-shrimp-handling-guide" },
-        { label: "Quarantine", value: "At least two weeks in a separate, established tank before adding new shrimp to an existing colony, longer if you want extra confidence. Some specialty retailers quarantine for a full 30 days before shrimp are even offered for sale.", source: "cherry-shrimp-handling-guide" },
-        { label: "Handling", value: "Netting is the only real contact this species gets, and take your time doing it: transfer shock kills more shrimp than the destination tank does.", source: "cherry-shrimp-enrichment-guide" },
-        { label: "Budget, the shrimp", value: "Standard grades cluster closer to $4 to $5 a shrimp, and the deepest-colored grades run $6 to $8. Buying in a small group rather than one or two lowers the per-shrimp price, and it gives a young colony a healthier starting gene pool.", source: "cherry-shrimp-cost-guide" },
-        { label: "Budget, the setup", value: "Roughly $45 to $110. The one recurring cost the table leaves out is a mineral or GH-boosting supplement, typically a few dollars every few months. The test kit is a purchase you'll rely on repeatedly rather than a one-off, since cherry shrimp tolerate very little ammonia or nitrite.", source: "cherry-shrimp-cost-guide" },
-        { label: "Vet costs", value: "Not applicable in the traditional sense. There's essentially no practical veterinary care available for aquarium invertebrates this small, so husbandry and prevention do all the work here, not treatment after the fact.", source: "cherry-shrimp-cost-guide" },
-        { label: "Lifespan", value: "Up to 2 years under ideal, stable conditions, though shrimp in a typical home aquarium often average closer to just the first year.", source: "cherry-shrimp-cost-guide" },
-        { label: "Never release them", value: "The U.S. Fish and Wildlife Service's 2025 ecological risk screening rates *Neocaridina davidi* a High overall invasion risk for the contiguous United States, with a strong climate match in the Great Lakes region, peninsular Florida, the southern Great Plains, and parts of the Rocky Mountains. Find a local fish store or online forum to rehome extras.", source: "cherry-shrimp-cost-guide" },
+        { label: "Tank size", value: "5 gallons is the practical minimum, 10 or larger for a self-sustaining colony, since volume buffers the small constant shifts a growing colony causes.", source: "cherry-shrimp-tank-setup-guide" },
+        { label: "Mature, not just cycled", value: "The biofilm a shrimp grazes arrives later than the bacteria that clear ammonia, so the tank has to be mature before shrimp go in. Ammonia and nitrite read zero at all times.", source: "cherry-shrimp-health-issues-guide" },
+        { label: "Water hardness", value: "The most shrimp-specific requirement: GH at least 6 degrees (about 110 ppm) and KH at least 2 (about 40 ppm), with 6 to 8 dGH, 2 to 4 dKH and pH 6.5 to 7.5 the target. Too soft and molts fail.", source: "cherry-shrimp-tank-setup-guide" },
+        { label: "Temperature", value: "60 to 82°F, 72 to 76°F optimal, so most rooms need no heater. Add one if the room runs cooler than the high 50s or you want a stable setpoint for breeding.", source: "cherry-shrimp-tank-setup-guide" },
+        { label: "Filtration", value: "A sponge filter, or a pre-filter sponge over a standard intake, which otherwise pulls in baby shrimp. Gentle flow.", source: "cherry-shrimp-tank-setup-guide" },
+        { label: "Water changes", value: "About 10% a week or 20% every two weeks. Larger or more frequent changes shock shrimp even with clean, dechlorinated water.", source: "cherry-shrimp-health-issues-guide" },
+        { label: "A colony, not a few", value: "Ten or more to start. A pair or trio stays hidden; a colony is active, visible and confident, grazing dense plants, moss, driftwood and leaf litter all day.", source: "cherry-shrimp-enrichment-guide" },
+        { label: "Feeding", value: "Mostly grazing on biofilm, with a sinking wafer a couple of times a week on top. A pea-sized piece, or a quarter wafer, feeds 10 to 20 shrimp; if the last feeding is still there, skip the next.", source: "cherry-shrimp-feeding-guide" },
+        { label: "Leave the shed shell", value: "For a day or two: the colony picks it apart for the calcium. Remove it only in a tank already fighting a parasite or bacterial problem.", source: "cherry-shrimp-feeding-guide" },
+        { label: "Molt frequency", value: "Adults roughly every 3 to 4 weeks, younger shrimp more often. Hiding and stillness for a few days after a molt is the shell hardening, not illness.", source: "cherry-shrimp-health-issues-guide" },
+        { label: "Copper", value: "Shrimp tolerate almost none. A 2014 study on a related shrimp found a lethal concentration of just 0.0313 mg/L, with a safe target nearer 0.003 mg/L, and it hides in fish medications, some fertilizers, and the pesticide on store-bought plants.", source: "cherry-shrimp-health-issues-guide" },
+        { label: "New plants", value: "Quarantine them in clean water for at least five days with daily water changes before they go near the shrimp tank.", source: "cherry-shrimp-health-issues-guide" },
+        { label: "Acclimation", value: "A slow drip, one drop every one to two seconds until the water volume doubles, 60 to 90 minutes. A sudden shift in pH, hardness or temperature triggers osmotic shock.", source: "cherry-shrimp-handling-guide" },
+        { label: "Quarantine", value: "At least two weeks in a separate established tank before new shrimp join a colony. Some retailers hold shrimp a full 30 days before sale.", source: "cherry-shrimp-handling-guide" },
+        { label: "Budget", value: "$4 to $5 a shrimp for standard grades, $6 to $8 for the deepest color. Core equipment roughly $45 to $110, and a complete first setup lands around $80 to $150. No practical vet care exists for a shrimp.", source: "cherry-shrimp-cost-guide" },
+        { label: "Lifespan", value: "Up to 2 years under stable conditions, often closer to one in a typical home tank.", source: "cherry-shrimp-cost-guide" },
+        { label: "Never release them", value: "A 2025 federal screening rates this species a high invasion risk across much of the US. Rehome extras through a local fish store or forum.", source: "cherry-shrimp-cost-guide" },
         { label: "Adult size", value: "Up to about 1.5 inches (4 cm)." },
-        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
-        { label: "Water chemistry, the wider picture", value: "KH is the buffer holding pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you rather than chasing a number.", source: "freshwater-ph-gh-kh-guide" },
       ],
     },
     emergencyCard: {
       source: "cherry-shrimp-health-issues-guide",
+      heading: "Test the water first, then act on these today. No vet treats a shrimp; prevention is the whole plan.",
       callNow: [
-        "A complete white band around the middle of the shrimp's body instead of a clean split at the head, the \"white ring of death\"",
+        "A complete white band around the middle of the body instead of a clean split at the head, the white ring of death",
         "A shrimp whose body has visibly separated from its shell",
         "Stillness and hiding that lasts well beyond a few days after a molt",
         "Sudden losses across the colony with no obvious cause",
         "A shrimp that looks pale or ashy",
       ],
-      vetLine: "There's essentially no practical veterinary care available for an animal this small, so this list is entirely about prevention. Nearly everything on it traces back to water stability and mineral content, exactly what a mature, properly cycled tank with gradual water changes prevents. A failed molt is usually fatal once it happens, which makes stable GH, gradual water changes and a properly fed colony the real point of leverage. A water test kit is the tool that actually tells you which of these causes you're dealing with rather than guessing.",
+      vetLine: "Nearly all of it traces to water stability and mineral content. A failed molt is usually fatal once it happens, so stable GH, gradual water changes, and a test kit are the leverage.",
     },
     routes: [
       { slug: "cherry-shrimp-cost-guide", line: "$4 to $8 a shrimp by grade, $45 to $110 for the tank around them, and why you never release the extras." },
@@ -205,9 +193,10 @@ export const invertebrateGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size and lifespan come from the
-    // encyclopedia entry. Rehousing, pesticides and the emergency plan cite the
-    // shared invertebrate guides in the sidebar's Health and More list. Built
-    // 2026-09-15 for the emperor scorpion set test (docs/READER_REVIEWS.md),
+    // encyclopedia entry. Rehousing and pesticides share one row citing the
+    // shared invertebrate guides in the sidebar's Health and More list.
+    // Rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
+    // Built 2026-09-15 for the emperor scorpion set test (docs/READER_REVIEWS.md),
     // which found the old hub wrong against its own deep dives on substrate
     // depth, humidity, temperature, adult and juvenile feeding frequency, the
     // fasting window, prey size, and enclosure size, and telling readers to feed
@@ -217,40 +206,36 @@ export const invertebrateGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Legal check", value: "Banned in New York City, Hawaii, and the District of Columbia, permit-only in Maine and Rhode Island, unclear in Idaho and Arkansas, and named as legal in Montana. Check before buying.", source: "emperor-scorpion-legal-guide" },
-        { label: "Enclosure size", value: "A 10-gallon, roughly 20x10x12 inches, is the accepted minimum for one adult. Groups or extra enrichment want 20 to 30 gallons or more, with more hides than animals if you cohabitate. The lid has to be secure and tight-fitting: these are capable climbers and genuine escape artists.", source: "emperor-scorpion-tank-setup-guide" },
-        { label: "Humidity", value: "Target 70 to 90%, and 75 to 80% is the practical sweet spot. Keep the substrate damp, not soggy, and mist as needed, often daily or every other day. Condensation on the walls or visible mold means it's too wet, dry, cracked substrate means it's too dry.", source: "emperor-scorpion-tank-setup-guide" },
-        { label: "Temperature", value: "An ambient range of 75 to 85°F is the target, with 70 to 90°F as the outer limits as long as a gradient exists. A side-mounted heat mat on a thermostat creates a mild warm side, around 85 to 90°F at its warmest point, while leaving a cooler area available.", source: "emperor-scorpion-tank-setup-guide" },
-        { label: "Substrate depth", value: "5 to 6 inches minimum, and deeper is better, because the species uses that depth to burrow rather than decorate. Coco fiber, peat, soil-based mixes, or commercial products all work, kept damp but well-aerated.", source: "emperor-scorpion-tank-setup-guide" },
-        { label: "Lighting", value: "No UVB is required. Emperor scorpions are nocturnal and don't rely on UV exposure for vitamin D synthesis the way many reptiles do. A normal 12-hour light, 12-hour dark photoperiod works well.", source: "emperor-scorpion-tank-setup-guide" },
-        { label: "Hides", value: "In a communal setup this is not decoration, it is the mechanism that makes grouping work. Every animal needs somewhere to be that is not somewhere another animal already is, and the standard failure is one good hide and three scorpions.", source: "emperor-scorpion-enrichment-guide" },
-        { label: "Diet", value: "The whole diet is gut-loaded feeder insects. Crickets and dubia roaches are the reliable staples, with locusts and the occasional mealworm or superworm for variety. An adult tears prey apart with its pincers rather than the stinger.", source: "emperor-scorpion-feeding-guide" },
-        { label: "Feeding frequency", value: "Juveniles and nymphs every 2 to 4 days, since they're growing and more voracious. Adults once a week is standard, sometimes 2 to 3 insects. Keep prey no larger than the abdomen.", source: "emperor-scorpion-feeding-guide" },
-        { label: "How to offer it", value: "Nocturnal sit-and-wait predators. Release live prey in the evening rather than presenting it with tongs, and let the animal hunt.", source: "emperor-scorpion-enrichment-guide" },
-        { label: "Fasting", value: "This species can safely fast for a month or two, particularly before a molt, and refusing food in that window is normal. Always remove any uneaten prey within 24 hours.", source: "emperor-scorpion-feeding-guide" },
-        { label: "Supplements", value: "Not directly. Supplement the food, not the scorpion: gut-load feeders for at least 24 hours on fresh produce or a commercial gut-load before offering them.", source: "emperor-scorpion-feeding-guide" },
-        { label: "Never feed", value: "Never feed wild-caught insects, pesticide and parasite risk are both real concerns. Fireflies are genuinely toxic to scorpions and must never be offered.", source: "emperor-scorpion-feeding-guide" },
-        { label: "Handling", value: "Handling stresses the animal and carries real risk on both sides. Falls are the leading concern for the scorpion, a drop can cause serious injury. If handling is genuinely necessary, use long forceps with soft padding, or let the scorpion walk onto a tool or your hand over a soft, low surface. Never grab by the tail or body roughly.", source: "emperor-scorpion-handling-guide" },
-        { label: "Pinch versus sting", value: "Emperor scorpions are far more likely to pinch with their pedipalps than to sting. The venom is mild and mainly defensive, and a sting is not particularly dangerous: expect localized pain, redness, and swelling instead of systemic illness. The exception is a person already sensitive to bites and stings.", source: "emperor-scorpion-handling-guide" },
-        { label: "Molting", value: "Remove live prey and avoid handling entirely for days to weeks around a molt. A freshly molted scorpion's new exoskeleton is too soft to protect it against predators or other scorpions, which makes this the single most vulnerable period in the animal's life.", source: "emperor-scorpion-tank-setup-guide" },
-        { label: "Budget", value: "$25 to $100 for a captive-bred specimen, with juveniles toward the lower end and larger adults or proven breeders toward the higher end. Roughly $80 to $250 for the setup before the scorpion.", source: "emperor-scorpion-cost-guide" },
-        { label: "Vet costs", value: "Exotic vets experienced with invertebrates are uncommon, and most routine issues are managed by keepers directly through husbandry correction. When professional care is genuinely needed, expect exotic vet exam fees in the $80 to $200-plus range, with limited treatment options available for many invertebrate conditions.", source: "emperor-scorpion-cost-guide" },
-        { label: "Lifespan", value: "5 to 8 years in captivity is the usual figure, and the full reported range runs 4 to 9.", source: "emperor-scorpion-cost-guide" },
+        { label: "Legal check", value: "Banned in New York City, Hawaii, and the District of Columbia, permit-only in Maine and Rhode Island, conditional in Oregon, unclear in Idaho, Arkansas, New Mexico, and New Jersey. Nothing restricts one in the other forty-two jurisdictions.", source: "emperor-scorpion-legal-guide" },
+        { label: "Enclosure", value: "A 10-gallon, roughly 20x10x12 inches, for one adult, with a tight lid: they climb and escape. A group wants 20 to 30 gallons and more hides than animals.", source: "emperor-scorpion-tank-setup-guide" },
+        { label: "Humidity", value: "70 to 90%, with 75 to 80% the sweet spot. Substrate damp not soggy, misting daily or every other day. Condensation or mold means too wet; dry cracked substrate means too dry.", source: "emperor-scorpion-tank-setup-guide" },
+        { label: "Temperature", value: "75 to 85°F ambient, 70 to 90°F the outer limits with a gradient. A side-mounted heat mat on a thermostat, never under the tank, makes a warm side of 85 to 90°F at its hottest.", source: "emperor-scorpion-tank-setup-guide" },
+        { label: "Substrate depth", value: "5 to 6 inches minimum and deeper is better, since they burrow. Coco fiber, peat or soil mixes, damp and well aerated. No UVB; a 12-hour light cycle.", source: "emperor-scorpion-tank-setup-guide" },
+        { label: "Hides", value: "One for a single animal. In a group, one per scorpion at least: the standard failure is one good hide and three scorpions.", source: "emperor-scorpion-enrichment-guide" },
+        { label: "Diet", value: "Gut-loaded feeders only: crickets and dubia as staples, locusts and the occasional mealworm or superworm for variety. Gut-load for at least 24 hours; supplement the food, never the scorpion.", source: "emperor-scorpion-feeding-guide" },
+        { label: "Feeding frequency", value: "Juveniles every 2 to 4 days. Adults once a week, sometimes 2 to 3 insects, no prey larger than the abdomen, and uneaten prey out within 24 hours.", source: "emperor-scorpion-feeding-guide" },
+        { label: "How to offer it", value: "Release live prey in the evening and let a nocturnal ambush hunter hunt, rather than presenting it with tongs.", source: "emperor-scorpion-enrichment-guide" },
+        { label: "Fasting", value: "A month or two is safe, especially before a molt, and refusing food then is normal.", source: "emperor-scorpion-feeding-guide" },
+        { label: "Never feed", value: "Wild-caught insects, for pesticide and parasite risk, and fireflies, which are toxic to scorpions.", source: "emperor-scorpion-feeding-guide" },
+        { label: "Handling", value: "Stressful and risky on both sides, and a fall can seriously injure the scorpion. If necessary, padded long forceps, or let it walk onto a tool or hand over a soft low surface. Never grab the tail.", source: "emperor-scorpion-handling-guide" },
+        { label: "Pinch versus sting", value: "Far more likely to pinch than sting. The venom is mild: local pain, redness and swelling, unless you are already sensitive to bites and stings.", source: "emperor-scorpion-handling-guide" },
+        { label: "Molting", value: "Live prey out and no handling for days to weeks around a molt. The new exoskeleton is too soft to protect it, from prey or from other scorpions.", source: "emperor-scorpion-tank-setup-guide" },
+        { label: "Budget", value: "$25 to $100 for a captive-bred scorpion, roughly $80 to $250 for the setup. Exotic vets who see invertebrates are uncommon; an exam, where one exists, runs $80 to $200-plus with limited treatment options.", source: "emperor-scorpion-cost-guide" },
+        { label: "Lifespan", value: "5 to 8 years in captivity, a full range of 4 to 9.", source: "emperor-scorpion-cost-guide" },
         { label: "Adult size", value: "7 to 8 inches (18 to 20 cm)." },
-        { label: "Rehousing", value: "A move is the single most likely moment for an escape or an injury, and it is worth planning as a procedure rather than improvising it at the sink.", source: "invertebrate-rehousing-guide" },
-        { label: "Pesticides", value: "An invertebrate has no defense against household insecticide, and the routes into an enclosure are more numerous than most keepers expect.", source: "invertebrate-pesticide-hazards-guide" },
-        { label: "Power outage and travel", value: "Temperature and humidity are what fail first in an outage, and shipping an invertebrate has its own rules.", source: "invertebrate-emergency-travel-shipping-guide" },
+        { label: "Rehousing and pesticides", value: "A move is the likeliest moment for an escape or an injury, so plan it as a procedure. Household insecticide reaches an enclosure by more routes than keepers expect.", source: "invertebrate-rehousing-guide" },
       ],
     },
     emergencyCard: {
       source: "emperor-scorpion-health-issues-guide",
+      heading: "Check humidity, heat and substrate depth first, then act on these today. Vets rarely treat invertebrates.",
       callNow: [
-        "A stuck molt: difficulty shedding the old exoskeleton, stuck pieces of shed, and lethargy around molt time. Incomplete molts often need experienced intervention and are frequently fatal without it",
-        "Severe dehydration: lethargy, a shriveled appearance, sunken features, and reduced activity. Advanced cases can be fatal",
-        "Open wounds showing signs of infection",
-        "A complete refusal to eat for an extended period after a molt",
+        "A stuck molt: pieces of old exoskeleton that will not come off, with lethargy around molt time. Often fatal without experienced help",
+        "Severe dehydration: a shriveled, sunken look with lethargy",
+        "An open wound showing signs of infection",
+        "A complete refusal to eat long after a molt has finished",
       ],
-      vetLine: "Veterinary options for invertebrates remain genuinely limited, which is exactly why prevention through correct humidity and substrate depth is the primary strategy here, not a backup plan. Mild dehydration, minor mites, and early humidity-related lethargy are generally manageable once husbandry is corrected.",
+      vetLine: "Mild dehydration, minor mites, and early humidity-related lethargy generally resolve once the husbandry is corrected.",
     },
     routes: [
       { slug: "emperor-scorpion-cost-guide", line: "$25 to $100 for the animal, roughly $80 to $250 for the setup, what invertebrate vet care costs, and the $800 price claim debunked." },
@@ -268,7 +253,7 @@ export const invertebrateGuides = [
       "Sphagnum moss, to hold moisture between mistings",
       "More hides than animals: cork bark, half-logs, broken clay pots",
       "Shallow water dish, deep enough to drink from and not to drown in",
-      "Under-tank heat mat with a thermostat",
+      "Side-mounted heat mat with a thermostat",
       "Digital thermometer and hygrometer",
       "Mister or spray bottle",
       "Long forceps with soft padding",
@@ -292,10 +277,10 @@ export const invertebrateGuides = [
     funFact: "Despite looking like a smaller, cheaper cousin of the cherry and Amano shrimp sold right next to them in the store, ghost shrimp aren't closely related to either. They belong to the family Palaemonidae, while cherry and Amano shrimp both belong to the unrelated family Atyidae, and each lineage independently evolved from marine ancestors into fresh water at a different point in history. Their famous hardiness is exactly why they're sold cheaply in bulk as feeder shrimp for larger fish, even though plenty of keepers keep them purely as pets.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
-    // the hub keeps no number of its own. Cycling, filtration, water chemistry,
-    // summer cooling and the molting guide cite the shared guides in the
-    // sidebar's Health and More list. Reconciled 2026-09-15 after the ghost
-    // shrimp set test (docs/READER_REVIEWS.md).
+    // the hub keeps no number of its own. Summer cooling cites the shared
+    // guides in the sidebar's Health and More list. Reconciled 2026-09-15 after
+    // the ghost shrimp set test (docs/READER_REVIEWS.md), rewritten to the
+    // template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
     //
     // Retired rather than moved: "Heater if room runs below 65F" against the
     // setup guide's 72 to 82F comfortable range, seven degrees apart on whether
@@ -319,45 +304,35 @@ export const invertebrateGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Where yours came from", value: "Feeder-tank stress, the leading cause of early losses. Quality Marine is upfront that most ghost shrimp in the trade move through as live feed, not as a display animal raised with pet-quality standards. Writing about feeder animals in general, AquariumStoreDepot describes exactly what that means in practice: \"These fish are not pets. They receive no disease screening, no quarantine period, and minimal care.\" Watch for lethargy, staying hidden far more than the first day or two of normal settling-in, refusing food, and rapid, unexplained losses within a small group shortly after purchase.", source: "ghost-shrimp-health-issues-guide" },
-        { label: "Recovery first", value: "The item that matters most and the one no care sheet lists. Acclimate slowly, then give them a quiet, stable, planted tank and low expectations for the first two weeks. Losses in that window are common and are usually not something you did.", source: "ghost-shrimp-enrichment-guide" },
-        { label: "Tank size", value: "5 gallons is the workable minimum according to The Shrimp Farm, and 10 gallons gives a small colony more stability and room to forage. Bigger is always more forgiving with water quality, but ghost shrimp don't demand the larger footprint some other species do.", source: "ghost-shrimp-tank-setup-guide" },
-        { label: "Temperature and water chemistry", value: "72 to 82\u00B0F is the commonly cited comfortable range, with tolerance stretching noticeably wider on both ends. Aim for pH 7 to 8 and general hardness of 3 to 15 dGH. Wide tolerance doesn't mean water quality stops mattering: ammonia and nitrite still need to read zero before stocking.", source: "ghost-shrimp-tank-setup-guide" },
-        { label: "Filtration", value: "A gentle sponge filter is the standard, sensible choice. It keeps water clean without a current strong enough to stress a small shrimp, and critically, it has no exposed intake tube capable of pulling in a shrimp or a freshly molted individual the way a standard hang-on-back filter's intake can.", source: "ghost-shrimp-tank-setup-guide" },
-        { label: "Copper", value: "The one rule that's non-negotiable. Commonly cited safety thresholds put copper at roughly 0.03 mg/L or lower as the ceiling for invertebrates, and copper-based fish medications, some plant fertilizers, and old copper plumbing are all realistic exposure routes. Confirm any medication or fertilizer is explicitly invertebrate-safe before using it.", source: "ghost-shrimp-health-issues-guide" },
-        { label: "Cover, and why", value: "Dense live plants and a piece of driftwood give a molting shrimp somewhere to disappear during the hours it's soft and defenseless after shedding its shell, real cover against both predatory fish and other ghost shrimp, which will opportunistically target a freshly molted tankmate.", source: "ghost-shrimp-tank-setup-guide" },
-        { label: "Molting, what normal looks like", value: "A shrimp about to molt typically goes still and stops eating for an hour or more beforehand, normal behavior worth recognizing rather than mistaking for illness. Younger shrimp molt roughly weekly, older shrimp roughly monthly.", source: "ghost-shrimp-health-issues-guide" },
-        { label: "Molting, what failure looks like", value: "Most failures trace back to water parameters and diet, specifically inadequate calcium and general hardness leaving a new shell unable to harden. The most serious version is the white ring of death, a solid band where the shell should split cleanly at the head, trapping the animal between old and new exoskeleton. It's frequently fatal.", source: "ghost-shrimp-health-issues-guide" },
-        { label: "The shells they leave", value: "Leave discarded shells in the tank, since the shrimp eat them and recover the minerals.", source: "ghost-shrimp-enrichment-guide" },
-        { label: "Feeding", value: "A small amount every day or two is plenty for a modestly stocked tank, since ghost shrimp scavenge a meaningful share of their food on their own. Offer only what a sinking wafer or a few pellets provide, and remove anything still sitting on the substrate after a few hours.", source: "ghost-shrimp-feeding-guide" },
-        { label: "Not an algae crew", value: "Some, but they're better described as an all-purpose detritivore than a dedicated algae specialist. Quality Marine specifically notes they're \"not known for eating algae\" but do \"an excellent job cleaning up the detritus around the tank,\" while other sources report them grazing on soft brush algae too. Either way, don't count on them to control a serious algae problem the way an Amano shrimp would.", source: "ghost-shrimp-feeding-guide" },
-        { label: "Why you don't see them", value: "This species is largely nocturnal, staying hidden among vegetation by day and emerging at night to feed. It's one of the more interesting things to watch with a flashlight after dark, a translucent shrimp working its way across the substrate, picking through diatoms and detritus that a daytime glance at the tank would never reveal was even there.", source: "ghost-shrimp-feeding-guide" },
-        { label: "Supplements", value: "No dedicated supplement is required. A varied diet, mostly self-sourced scavenging plus an occasional sinking wafer with some protein and plant content built in, covers their nutritional needs, including the calcium that supports healthy molting.", source: "ghost-shrimp-feeding-guide" },
-        { label: "Tankmates", value: "Prey or predator depending on size. Ghost shrimp large enough to have reached roughly 1.5 inches are usually too big for most bettas to bother with, while smaller or juvenile shrimp are at risk. The short version for stocking purposes: think about size in both directions before adding any tankmate, not just whether the pairing has a reputation for being \"peaceful.\"", source: "ghost-shrimp-tank-setup-guide" },
-        { label: "They eat each other", value: "A real and documented risk, not a rare exception. Freshly molted individuals of any species, including their own, are especially vulnerable since a new shell takes hours to days to harden. Dense hiding cover and generous, consistent feeding both measurably reduce how often it happens.", source: "ghost-shrimp-feeding-guide" },
-        { label: "Getting them into the tank", value: "Use a soft aquarium net rather than your hands, keep the shrimp in water as much as possible, and never scoop them out and drop them into different water without acclimating first. Their thin, permeable exoskeleton makes them far more sensitive to sudden change than most fish.", source: "ghost-shrimp-handling-guide" },
-        { label: "Drip acclimation", value: "A slow drip, commonly run for 1 to 2 hours, lets a shrimp adjust gradually instead of being shocked by an abrupt change, and it meaningfully reduces the risk of a failed molt or death shortly after introduction. Shrimp can't quickly regulate their internal water balance the way fish can.", source: "ghost-shrimp-handling-guide" },
-        { label: "Quarantine", value: "A 2 to 4 week quarantine in a separate tank before adding new shrimp to an established one is the standard precaution, long enough for anything the shrimp was carrying to show itself before it can spread.", source: "ghost-shrimp-handling-guide" },
-        { label: "Budget", value: "Often well under $1 each in bulk as feeder stock, and roughly $1 to $3 each bought individually as pets. Core equipment runs roughly $40 to $130, and ongoing costs are minimal, since ghost shrimp scavenge a meaningful share of their own food.", source: "ghost-shrimp-cost-guide" },
-        { label: "Vet costs", value: "There's essentially no practical veterinary care available for a freshwater invertebrate this small, so husbandry and prevention do all the work here.", source: "ghost-shrimp-cost-guide" },
-        { label: "Lifespan", value: "Roughly one year on average in a home aquarium is what most sources converge on, with some individuals reaching closer to two years under good, stable conditions. Shorter than an Amano shrimp's typical 2 to 3 years.", source: "ghost-shrimp-cost-guide" },
-        { label: "Not one species", value: "The name covers several translucent Palaemon and similar species sold interchangeably, and a single bag can contain more than one. That is why care advice for them varies so much and why some individuals behave differently from others.", source: "ghost-shrimp-enrichment-guide" },
-        { label: "Breeding", value: "A 1990 laboratory study tested Palaemonetes paludosus across salinities from 0 to 35 ppt and found egg hatching and successful metamorphosis reliably limited to a 0 to 5 ppt band, so true freshwater is inside the viable window rather than excluded from it. The larvae can survive there, but the odds improve with a trace of salinity, which is why home breeding is hit-or-miss rather than reliable.", source: "ghost-shrimp-tank-setup-guide" },
-        { label: "Whether they feel it", value: "Nothing on the species, partly because \"ghost shrimp\" is not one species. Birch and colleagues applied an eight criterion framework to over 300 scientific publications and concluded decapod crustaceans are probably sentient. The UK then extended animal welfare law to cover them, shrimp included.", source: "ghost-shrimp-enrichment-guide" },
-        { label: "Cycling, the finish line", value: "The cycle is done when a full dose of ammonia reads zero within 24 hours, nitrite also reads zero, and nitrate has started building up. All three, not just one. Most fishless cycles run four to six weeks at a warm, stable temperature.", source: "aquarium-cycling-guide" },
-        { label: "Filter maintenance", value: "Rinse media in tank water only. Mechanical media goes first in the flow so large particles don't clog the biological stage and create the low-oxygen dead zones that stop those bacteria working.", source: "aquarium-filtration-guide" },
-        { label: "Water chemistry, the wider picture", value: "KH is the buffer holding pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Test the source water and work with what it gives you rather than chasing a number.", source: "freshwater-ph-gh-kh-guide" },
-        { label: "A hot week", value: "Reach for room air conditioning and a fan first, treat frozen bottles as a genuine last resort rather than a daily habit, and keep the aeration running no matter what else you're doing. Warmer water holds less dissolved oxygen at the same moment the animals need more of it.", source: "cooling-an-aquarium-without-a-chiller-guide" },
+        { label: "Where yours came from", value: "Most ghost shrimp move through the trade as live feed with no screening or quarantine. Lethargy, hiding, refusing food, and losses inside a small group shortly after purchase are feeder-tank stress.", source: "ghost-shrimp-health-issues-guide" },
+        { label: "Recovery first", value: "A quiet, stable, planted tank and low expectations for two weeks. Losses in that window are common and usually not something you did.", source: "ghost-shrimp-enrichment-guide" },
+        { label: "Tank size", value: "5 gallons is the workable minimum, 10 gallons gives a small colony stability and room to forage.", source: "ghost-shrimp-tank-setup-guide" },
+        { label: "Temperature and water chemistry", value: "72 to 82°F, pH 7 to 8, hardness 3 to 15 dGH. Wide tolerance does not mean ammonia and nitrite can read anything but zero before stocking.", source: "ghost-shrimp-tank-setup-guide" },
+        { label: "Filtration", value: "A sponge filter. It has no intake tube to pull in a shrimp, freshly molted ones especially, the way a hang-on-back does.", source: "ghost-shrimp-tank-setup-guide" },
+        { label: "Copper", value: "The non-negotiable rule: roughly 0.03 mg/L is the ceiling for invertebrates. Copper fish medications, some plant fertilizers, and old copper plumbing are all realistic routes, so confirm anything is invertebrate-safe before it goes in.", source: "ghost-shrimp-health-issues-guide" },
+        { label: "Cover", value: "Dense plants and driftwood, so a freshly molted shrimp can vanish for the hours it is soft. Fish and other ghost shrimp both target one.", source: "ghost-shrimp-tank-setup-guide" },
+        { label: "Molting, what normal looks like", value: "Going still and off food for an hour or more beforehand, then an empty shell in the tank. Young shrimp molt roughly weekly, older ones roughly monthly. Leave the shells in: they eat them for the minerals.", source: "ghost-shrimp-health-issues-guide" },
+        { label: "Molting, what failure looks like", value: "A solid white band where the shell should split cleanly at the head, trapping the shrimp between old and new shell, usually fatal. It traces to low calcium and hardness.", source: "ghost-shrimp-health-issues-guide" },
+        { label: "Feeding", value: "A small amount every day or two, a sinking wafer or a few pellets, with leftovers out after a few hours. They scavenge most of their own food, and they are a detritus crew more than an algae crew.", source: "ghost-shrimp-feeding-guide" },
+        { label: "They eat each other", value: "Documented, not rare, and freshly molted shrimp are the target. Dense cover and consistent feeding both cut it.", source: "ghost-shrimp-feeding-guide" },
+        { label: "Tankmates", value: "Prey or predator by size. A shrimp past roughly 1.5 inches is too big for most bettas to bother with; juveniles are at risk. Think about size in both directions, not the word \"peaceful\".", source: "ghost-shrimp-tank-setup-guide" },
+        { label: "Getting them into the tank", value: "A soft net, never hands, and a slow drip of 1 to 2 hours before they touch new water. A thin permeable shell makes sudden change far harder on a shrimp than a fish.", source: "ghost-shrimp-handling-guide" },
+        { label: "Quarantine", value: "2 to 4 weeks in a separate tank before new shrimp join an established one.", source: "ghost-shrimp-handling-guide" },
+        { label: "Budget", value: "Well under $1 each in bulk, $1 to $3 individually as pets. Equipment roughly $40 to $130, and ongoing costs minimal. There is no practical vet care for a shrimp this size.", source: "ghost-shrimp-cost-guide" },
+        { label: "Lifespan", value: "Roughly one year, some closer to two, shorter than an Amano's 2 to 3.", source: "ghost-shrimp-cost-guide" },
+        { label: "Not one species", value: "Several translucent Palaemon species sold interchangeably, sometimes in one bag, which is why care advice varies and individuals behave differently.", source: "ghost-shrimp-enrichment-guide" },
+        { label: "A hot week", value: "Room air conditioning and a fan first, frozen bottles as a last resort, and the aeration running throughout: warm water holds less oxygen.", source: "cooling-an-aquarium-without-a-chiller-guide" },
       ],
     },
     emergencyCard: {
       source: "ghost-shrimp-health-issues-guide",
+      heading: "Test the water first, then act on these today. No vet treats a shrimp; prevention is the whole plan.",
       callNow: [
-        "Lethargy, staying hidden far more than the first day or two of normal settling-in, refusing food, and rapid, unexplained losses within a small group shortly after purchase",
-        "A solid band that forms around the shrimp's body where the shell should split cleanly at the head, trapping the animal between old and new exoskeleton",
-        "A copper-based medication, or a fertilizer or algae treatment not explicitly labeled invertebrate-safe, about to go near the tank",
+        "Lethargy, hiding well past the first day or two, refusing food, and rapid losses inside a small group soon after purchase: feeder-tank stress",
+        "A solid band around the body where the shell should split at the head, trapping the shrimp between old and new shell",
+        "A whole group dying suddenly: ask what changed in the water, copper above all",
       ],
-      vetLine: "Nearly everything on this list traces back to four habits: quarantine new arrivals, confirm the tank is cycled before stocking, keep copper at zero, and maintain stable water chemistry for reliable molting. A water conditioner on every water change and a water test kit to confirm ammonia and nitrite read zero before stocking prevent far more than anything applied after symptoms show up.",
+      vetLine: "Four habits prevent nearly all of this: quarantine new arrivals, confirm the cycle before stocking, keep copper at zero, and hold water chemistry steady for reliable molts.",
     },
     routes: [
       { slug: "ghost-shrimp-cost-guide", line: "Under $1 as feeder stock against $1 to $3 as a pet, and why the cheapest source is rarely the healthiest." },
@@ -397,10 +372,11 @@ export const invertebrateGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Pesticides, rehousing first aid and the travel and
-    // outage plan cite the shared invertebrate guides in the sidebar's Health
-    // and More list. Reconciled 2026-09-15 after the giant millipede set test
-    // (docs/READER_REVIEWS.md).
+    // encyclopedia entry. Pesticides and the travel and outage plan cite the
+    // shared invertebrate guides in the sidebar's Health and More list.
+    // Reconciled 2026-09-15 after the giant millipede set test
+    // (docs/READER_REVIEWS.md), rewritten to the template shape 2026-09-16
+    // (docs/HUB_ROUTER_REVIEWS.md).
     //
     // The old hub's cost table was above the cost guide on every line it
     // shared: the tank at $40 to $80 against $35 to $60, substrate at $20 to
@@ -420,47 +396,38 @@ export const invertebrateGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "The animal", value: "The millipede itself typically runs $75 to $150 or more, a real step up in price for an invertebrate, driven entirely by the supply situation rather than anything about the animal's care difficulty.", source: "giant-millipede-cost-guide" },
-        { label: "Why it costs that", value: "The USDA maintains an import embargo on giant African millipedes, tied to concerns about a potentially damaging mite species found on imported animals, and a plant pest permit is required to keep this species. Most giant millipedes available in the US today are captive-bred or from older stock rather than freshly imported, which keeps supply genuinely limited.", source: "giant-millipede-cost-guide" },
-        { label: "Setup budget", value: "Roughly $75 to $150 for the tank, substrate, leaf litter, a hygrometer, and a spray bottle.", source: "giant-millipede-cost-guide" },
-        { label: "Ongoing costs", value: "Minimal. Fresh produce and periodic substrate or leaf litter replenishment make up nearly the entire monthly cost, just a few dollars.", source: "giant-millipede-cost-guide" },
-        { label: "Vet costs", value: "Essentially none. Invertebrate-experienced exotic vets exist but are rarely needed, most issues are managed through husbandry alone.", source: "giant-millipede-cost-guide" },
-        { label: "Legal, before you buy", value: "A USDA PPQ 526 permit applies federally, since millipedes fall under the federal plant pest definition. States then diverge more than people expect: Florida requires a permit from its Department of Agriculture, Hawaii excludes the species by omission from its approved lists, Oregon names it as approved with no permit, and the District of Columbia and Montana both leave it outside their permitted categories.", source: "giant-millipede-legal-guide" },
-        { label: "Enclosure size", value: "A minimum of 10 to 15 gallons for one adult, with many keepers recommending something closer to a 36x18x18 inch enclosure, roughly a 40-gallon equivalent, or a 20 gallon long tank. Floor space matters more than height for this ground-dwelling species.", source: "giant-millipede-tank-setup-guide" },
-        { label: "The lid", value: "A secure, tightly fitting lid is essential, millipedes are capable climbers and genuine escape artists.", source: "giant-millipede-tank-setup-guide" },
-        { label: "More than one", value: "Fine and normal. This is a communal species that will cluster together even in a large enclosure, as long as space, hides and food are all abundant. What limits a group is crowding, which brings stress and competition for resources.", source: "giant-millipede-tank-setup-guide" },
-        { label: "Temperature", value: "72 to 80°F suits this species well, and normal room temperature is often sufficient without any additional heat source. A low-wattage heat mat is only worth adding if your space runs consistently cold.", source: "giant-millipede-tank-setup-guide" },
-        { label: "Humidity", value: "70 to 80%, achieved by keeping roughly a third of the substrate genuinely moist, misting once or twice daily, and ensuring good cross-ventilation to prevent mold and mite problems. Monitor with a digital hygrometer rather than guessing.", source: "giant-millipede-tank-setup-guide" },
-        { label: "Substrate, the whole job", value: "4 to 6 inches of pesticide-free organic topsoil mixed with coconut fiber, along with decaying hardwood and hardwood leaf litter, oak and beech both work well. Avoid softwoods like pine and cedar entirely, their resins are toxic to this species, and never use any substrate material that's been treated with pesticides.", source: "giant-millipede-tank-setup-guide" },
-        { label: "Food", value: "The substrate is most of the diet. Decaying hardwood and pesticide-free hardwood leaf litter, oak, beech and maple, is the staple food itself. Fresh produce is a supplement on top of that: cucumber, carrot, sweet potato and leafy greens, plus small amounts of fruit such as apple, banana, melon or mango, offered every two to three days and taken back out before it molds.", source: "giant-millipede-tank-setup-guide" },
-        { label: "Calcium", value: "Stays in permanently instead of going in on a schedule, a cuttlebone or powdered calcium carbonate left on the substrate for the animal to gnaw when it needs it. Skip it and the exoskeleton goes soft and the molts start failing.", source: "giant-millipede-tank-setup-guide" },
-        { label: "Water", value: "A small shallow dish with a few pebbles dropped in so nothing drowns in it.", source: "giant-millipede-tank-setup-guide" },
-        { label: "Lighting", value: "None required. This species actively avoids bright light. If you're running live plants in a bioactive setup, a low-output 6500K plant light is the only lighting worth adding.", source: "giant-millipede-tank-setup-guide" },
-        { label: "Isopods", value: "Resist the common instinct to add isopods as a cleanup crew alongside your millipede. Isopods can actually harass or weaken millipedes in a shared enclosure, an unexpected conflict that's worth knowing about before you set up a combined bioactive tank.", source: "giant-millipede-tank-setup-guide" },
-        { label: "Handling, the real risk", value: "A giant millipede has a heavy body and a genuinely brittle exoskeleton, and a fall from even a modest height, higher than the animal's own body length, onto a hard surface can crack the shell and prove fatal. Handle over a soft surface close to the ground, support the full body, and never grab from above, let the millipede walk onto your hand instead.", source: "giant-millipede-handling-guide" },
-        { label: "The secretion", value: "A millipede that has decided you might be a threat curls into a tight spiral first, and if that does not settle things it releases a brown or yellow fluid. The fluid carries benzoquinones, mild irritants that can sting skin and eyes in someone sensitive and leave a stain. Keep it away from your eyes and mouth, and wash your hands thoroughly after a session.", source: "giant-millipede-handling-guide" },
-        { label: "A millipede that will not come up", value: "Millipedes molt underground, a buried one must not be disturbed, and a molt may take several weeks. A buried millipede is not stressed by you yet. Digging it up is how it becomes so.", source: "giant-millipede-handling-guide" },
-        { label: "Dehydration", value: "The number one cause of death in this species. Watch for a shriveled, sluggish appearance and dry, cracking segments along the body. Manageable early, raise humidity, moisten the substrate more deeply, and provide a shallow water dish.", source: "giant-millipede-health-issues-guide" },
-        { label: "A failed molt", value: "Often fatal, and caused by low humidity, poor nutrition, or disturbance during the vulnerable molting process. Never assist a molt or attempt to remove shed skin yourself, this can cause real harm.", source: "giant-millipede-health-issues-guide" },
-        { label: "Mites", value: "Not every mite is a problem, and many species living alongside a captive millipede are harmless. A heavy infestation shows up as unusually frequent cleaning behavior, thrashing, or visible mite clusters concentrated near the head or legs. Never use pesticides or mite sprays, these are toxic to millipedes and can kill the animal you're trying to help.", source: "giant-millipede-health-issues-guide" },
-        { label: "Lifespan", value: "5 to 7 years in the wild, and up to 10 years in captivity. This is remarkable longevity for an invertebrate, considerably longer than the praying mantis, jumping spider, or hissing cockroach, and worth factoring into your decision as a real, multi-year commitment.", source: "giant-millipede-cost-guide" },
+        { label: "Budget", value: "$75 to $150 or more for the millipede, priced by scarcity rather than difficulty: a USDA import embargo means most stock is captive-bred. Setup another $75 to $150, then a few dollars a month. Vets are rarely needed.", source: "giant-millipede-cost-guide" },
+        { label: "Lifespan", value: "5 to 7 years in the wild, up to 10 in captivity, a real multi-year commitment.", source: "giant-millipede-cost-guide" },
         { label: "Adult size", value: "10 to 15 inches (25 to 38 cm)." },
-        { label: "Bug spray", value: "A millipede is an arthropod and every insecticide sold for use inside a home is designed to kill arthropods. A healthy animal can be found dead the morning after an ordinary household task, a can of ant spray used in the kitchen, a plug-in device switched on in the hallway, a dog treated for fleas on the living room rug.", source: "invertebrate-pesticide-hazards-guide" },
-        { label: "First aid for the secretion", value: "Wash the affected skin thoroughly with soap and water, and for the eyes, irrigate with saline or water and then get them examined. That is the opposite of what a tarantula's urticating hairs call for, which is why one invertebrate first-aid routine does not cover them all.", source: "invertebrate-rehousing-guide" },
-        { label: "A power cut, and a trip", value: "A millipede is kept at whatever temperature the room already sits at, so a power cut is rarely the emergency it would be for a reptile or a fish tank. A full, shallow water dish refilled the morning you go, stable humidity, and a checked lid do more for a short absence than any attempt to pre-feed.", source: "invertebrate-emergency-travel-shipping-guide" },
+        { label: "Legal, before you buy", value: "Federally the species sits under the plant pest rules and the USDA PPQ 526 permit. Florida requires a state permit, Hawaii omits it from its approved lists, Oregon approves it with no permit, and DC and Montana leave it outside their permitted categories.", source: "giant-millipede-legal-guide" },
+        { label: "Enclosure", value: "10 to 15 gallons minimum for one adult, with 36x18x18 inches or a 20 gallon long the common recommendation. Floor space over height, and a tight lid: they climb.", source: "giant-millipede-tank-setup-guide" },
+        { label: "More than one", value: "Communal and normal. They cluster even in a big enclosure; what limits a group is crowding. No isopods as cleanup crew, they harass millipedes.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Temperature", value: "72 to 80°F, usually room temperature. A low-wattage heat mat only if the room runs consistently cold.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Humidity", value: "70 to 80%: a third of the substrate kept genuinely moist, misting once or twice daily, cross-ventilation against mold and mites, and a digital hygrometer.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Substrate is the diet", value: "4 to 6 inches of pesticide-free topsoil and coconut fiber under decaying hardwood and oak, beech, or maple leaf litter, which is the staple food itself. No pine or cedar: the resins are toxic.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Produce and calcium", value: "Cucumber, carrot, sweet potato, greens, and a little fruit every two to three days, out before it molds. A cuttlebone or calcium carbonate left in permanently; without it the shell softens and molts fail.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Water and light", value: "A shallow dish with pebbles in it so nothing drowns. No lighting; they avoid bright light.", source: "giant-millipede-tank-setup-guide" },
+        { label: "Handling, the real risk", value: "A brittle shell on a heavy body: a fall from higher than its own body length onto a hard floor can crack it fatally. Over a soft surface near the ground, full body supported, and let it walk onto your hand.", source: "giant-millipede-handling-guide" },
+        { label: "The secretion", value: "A curl into a spiral, then a brown or yellow fluid that stings skin and eyes and stains. Wash hands after every session; for eyes, irrigate with saline and get them examined.", source: "giant-millipede-handling-guide" },
+        { label: "A millipede that will not come up", value: "It is molting underground, which can take several weeks. A buried millipede is not stressed by you yet; digging it up is how it becomes so.", source: "giant-millipede-handling-guide" },
+        { label: "Dehydration", value: "The number one cause of death: shriveled, sluggish, with dry cracking segments. Manageable early by raising humidity, deep-moistening the substrate, and a water dish.", source: "giant-millipede-health-issues-guide" },
+        { label: "A failed molt", value: "Often fatal, from low humidity, poor nutrition, or disturbance. Never assist a molt or pull shed skin.", source: "giant-millipede-health-issues-guide" },
+        { label: "Bug spray", value: "Every household insecticide is designed to kill arthropods. Ant spray in the kitchen, a plug-in in the hallway, or a dog's flea treatment can kill a healthy animal overnight.", source: "invertebrate-pesticide-hazards-guide" },
+        { label: "A power cut, and a trip", value: "It lives at room temperature, so an outage is rarely an emergency. A full water dish, stable humidity, and a checked lid cover a short absence.", source: "invertebrate-emergency-travel-shipping-guide" },
       ],
     },
     emergencyCard: {
       source: "giant-millipede-health-issues-guide",
+      heading: "Check humidity and the substrate first, then act on these today. Vets are rarely involved.",
       callNow: [
-        "A shriveled, sluggish appearance and dry, cracking segments along the body",
-        "A failed or incomplete molt, often fatal: never assist a molt or attempt to remove shed skin yourself, this can cause real harm",
-        "Unusually frequent cleaning behavior, thrashing, or visible mite clusters concentrated near the head or legs",
-        "A major crack in the exoskeleton, which calls for isolating the animal in a clean, simplified hospital enclosure while it recovers",
-        "Dark lesions, which point to substrate that's swampy and poorly ventilated, worth correcting immediately",
-        "A soft, weak-feeling exoskeleton, which points to calcium deficiency",
+        "A shriveled, sluggish animal with dry, cracking segments: dehydration, the number one killer",
+        "A failed or incomplete molt, often fatal. Never assist a molt or pull shed skin",
+        "Frequent cleaning behavior, thrashing, or visible mite clusters near the head or legs",
+        "A major crack in the exoskeleton: isolate it in a clean, simple hospital enclosure",
+        "Dark lesions, which point to swampy, poorly ventilated substrate",
+        "A soft, weak-feeling exoskeleton outside a molt, which points to calcium deficiency",
       ],
-      vetLine: "Low humidity causes both the dehydration and failed molts that account for most serious health problems in this species. Excess wetness combined with poor airflow invites both mite overgrowth and necrotic lesions instead. And falls, entirely preventable through careful handling, cause most physical injuries. Balanced humidity, more than anything else, is the real key to this species' health.",
+      vetLine: "Low humidity drives the dehydration and failed molts; excess wetness with poor airflow drives the mites and lesions; falls cause the injuries. Balanced humidity is the key.",
     },
     routes: [
       { slug: "giant-millipede-cost-guide", line: "$75 to $150 or more for the animal, the same again for setup, and the import rule behind the price." },
@@ -499,44 +466,44 @@ export const invertebrateGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry, which no deep dive repeats. Molting, pesticides, and
-    // the power outage row cite the shared invertebrate guides in the sidebar's
-    // Health and More list. Reconciled 2026-09-09 after the hermit crab set
-    // test (docs/READER_REVIEWS.md).
+    // encyclopedia entry, which no deep dive repeats. Pesticides and the power
+    // outage row cite the shared invertebrate guides in the sidebar's Health
+    // and More list. Reconciled 2026-09-09 after the hermit crab set test
+    // (docs/READER_REVIEWS.md), rewritten to the template shape 2026-09-16
+    // (docs/HUB_ROUTER_REVIEWS.md).
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Tank", value: "Use a glass terrarium, roughly a 10-gallon tank for 2 to 3 small crabs, more for larger crabs or bigger groups. The lid needs to seal in humidity, glass or acrylic works best; if you're using a screen lid, cover part of it with plastic wrap or tape to help retain moisture.", source: "hermit-crab-tank-setup-guide" },
-        { label: "Group size", value: "Keep at least two crabs together, they're a genuinely social species.", source: "hermit-crab-tank-setup-guide" },
-        { label: "Temperature", value: "Aim for 75 to 85°F, with the warm side around 80°F. Use a side- or back-mounted heat mat. Never place a heat mat under the tank, heat rising up through deep substrate can be dangerous, even fatal, to a crab that's buried or molting underneath.", source: "hermit-crab-tank-setup-guide" },
-        { label: "Humidity", value: "Maintain 75 to 85% relative humidity. Monitor with a hygrometer, and maintain the range through a combination of moist substrate, a well-sealed lid, and a dedicated moss pit.", source: "hermit-crab-tank-setup-guide" },
-        { label: "Substrate", value: "Mix play sand and coconut fiber at roughly a 5:1 ratio, aiming for a 'sandcastle consistency' that holds a tunnel shape when packed. Depth is at least 6 inches, or about 3 times the height of your largest crab, since hermit crabs burrow to molt and need genuine room to do it.", source: "hermit-crab-tank-setup-guide" },
-        { label: "Water", value: "Two separate soakable water dishes, one with dechlorinated fresh water, one with marine saltwater made from an aquarium salt mix, never table salt. Both should be deep enough for a crab to fully submerge but include an easy way to climb back out, hermit crabs can and do drown if they can't exit.", source: "hermit-crab-tank-setup-guide" },
-        { label: "Shells", value: "Offer multiple natural, unpainted shells per crab, ideally 3 to 5 or more, spanning a range of sizes so your crab has room to size up as it grows. Painted shells are toxic and should never go in the enclosure.", source: "hermit-crab-tank-setup-guide" },
-        { label: "Diet", value: "Offer a varied diet with calcium sources like cuttlebone, fresh fruit and vegetables, protein like dried shrimp or insects, and leaf litter. Feed in the evening, since they're most active at night, and remove leftovers the next morning.", source: "hermit-crab-tank-setup-guide" },
-        { label: "Lighting", value: "A standard 12-hour light, 12-hour dark cycle works well. Hermit crabs are nocturnal, and there's no established UVB requirement for this species.", source: "hermit-crab-tank-setup-guide" },
-        { label: "Handling", value: "Let the crab sit on a flat, open palm instead of closing your hand around it. If you need to move it, lift from the back of the shell, not by grabbing at the legs or claws directly. Keep sessions brief.", source: "hermit-crab-handling-guide" },
-        { label: "Buried and out of sight", value: "A newly disturbed crab, or one that's just arrived in a new home, commonly digs down and stays out of sight for days, sometimes over a week, while it settles in. A molting crab can stay buried considerably longer, anywhere from several weeks up to around three months, and should not be dug up or disturbed during that time no matter how long it's been.", source: "hermit-crab-handling-guide" },
-        { label: "The first molt", value: "Every pet hermit crab is wild-caught, not captive-bred, and this adjustment period is where most hermit crab deaths actually happen. Quarantine and isolate new crabs, and improve humidity and temperature gradually rather than making sudden changes. A hermit crab generally isn't considered past the PPS risk period until it has successfully molted once in your care.", source: "hermit-crab-health-issues-guide" },
-        { label: "Budget", value: "$3 to $40 per crab, roughly $130 to $450 for a complete setup, and around $10 to $30 a month after that.", source: "hermit-crab-cost-guide" },
-        { label: "Lifespan", value: "Hermit crabs can live 10 to 20 years or more when kept well.", source: "hermit-crab-cost-guide" },
+        { label: "Tank", value: "A glass terrarium, roughly 10 gallons for 2 to 3 small crabs, more for bigger crabs or groups, with a glass or acrylic lid that seals in humidity. Cover part of a screen lid with plastic wrap.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Group size", value: "At least two. They are social.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Temperature", value: "75 to 85°F, the warm side around 80°F, from a side- or back-mounted heat mat. Never under the tank: heat rising through deep substrate can kill a buried, molting crab.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Humidity", value: "75 to 85%, on a hygrometer, held with moist substrate, a sealed lid, and a moss pit.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Substrate", value: "Play sand and coconut fiber at about 5:1, packed to sandcastle consistency, at least 6 inches deep or 3 times the height of the largest crab. They burrow to molt.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Water", value: "Two soakable dishes, one dechlorinated fresh, one marine saltwater from an aquarium salt mix, never table salt. Deep enough to submerge, with an easy way out, since crabs drown.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Shells", value: "3 to 5 or more natural, unpainted shells per crab across a range of sizes. Painted shells are toxic.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Diet", value: "Varied: cuttlebone for calcium, fresh fruit and vegetables, dried shrimp or insects for protein, leaf litter. Fed in the evening, leftovers out in the morning. No UVB requirement, a 12-hour light cycle.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Handling", value: "On a flat open palm, never a closed hand. Lift by the back of the shell, not the legs, and keep it brief.", source: "hermit-crab-handling-guide" },
+        { label: "Buried and out of sight", value: "A new arrival digs down for days, sometimes over a week. A molting crab stays buried for weeks to around three months and is never dug up, however long it has been.", source: "hermit-crab-handling-guide" },
+        { label: "The first molt", value: "Every pet hermit crab is wild-caught, and the adjustment period is where most deaths happen. Isolate new crabs, change humidity and temperature gradually, and count a crab past the risk only after its first molt in your care.", source: "hermit-crab-health-issues-guide" },
+        { label: "Budget", value: "$3 to $40 per crab, roughly $130 to $450 for a complete setup, then $10 to $30 a month.", source: "hermit-crab-cost-guide" },
+        { label: "Lifespan", value: "10 to 20 years or more when kept well.", source: "hermit-crab-cost-guide" },
         { label: "Adult size", value: "Up to 4 inches (10 cm) across, including legs." },
-        { label: "Molting", value: "Burrowing completely underground and disappearing from view is the sign, and several weeks buried, depending on size, is the normal duration. Never disturb a molting invertebrate, which here means no digging up a buried hermit crab to check on it.", source: "invertebrate-molting-guide" },
-        { label: "Household pesticides", value: "Every insecticide sold for use inside a home is designed to kill arthropods, and an invertebrate pet has none of the safety margin a dog or cat gets. A can of ant spray used in the kitchen, a plug-in device switched on in the hallway, or a dog treated for fleas on the living room rug are all routes into an enclosure.", source: "invertebrate-pesticide-hazards-guide" },
-        { label: "Power outage", value: "Hermit crabs are the real exception in this group. They're actively heated and humidified rather than kept at a comfortable room temperature, which puts their outage risk much closer to a reptile's or a fish's than to a tarantula's. A battery-powered backup for the heat source and a plan for holding humidity, a sealed lid and damp substrate, belongs in your outage kit.", source: "invertebrate-emergency-travel-shipping-guide" },
+        { label: "Household pesticides", value: "Every insecticide sold for a home kills arthropods, and ant spray in the kitchen, a plug-in in the hallway, or a dog's flea treatment all reach an enclosure.", source: "invertebrate-pesticide-hazards-guide" },
+        { label: "Power outage", value: "The exception among invertebrates: actively heated and humidified, so the risk is a reptile's. A battery backup for the heat and a sealed lid over damp substrate belong in the outage kit.", source: "invertebrate-emergency-travel-shipping-guide" },
       ],
     },
     emergencyCard: {
       source: "hermit-crab-health-issues-guide",
+      heading: "Check heat, humidity and substrate depth first, then act on these today. No practical vet care exists for this animal.",
       callNow: [
-        "Lethargy, burrowing and staying hidden, refusing food, and rapid loss of multiple limbs, which is a particularly strong indicator of advanced post-purchase stress",
-        "An ashy appearance, lethargy, and an inability to fully retract into the shell, the signs of dehydration and gill suffocation",
-        "A molt that was interrupted, or one happening in substrate that's too shallow or dry, which is frequently fatal",
-        "Limb loss from stress, fights with cage-mates, mites, or generally wrong conditions",
-        "Mites and mold, generally traceable to poor hygiene or inadequate ventilation in the enclosure",
+        "Lethargy, hiding, refusing food, and rapid loss of several limbs: advanced post-purchase stress",
+        "An ashy look, lethargy, and an inability to retract fully into the shell: dehydration and gill suffocation",
+        "A molt interrupted, or happening in substrate too shallow or dry, which is frequently fatal",
+        "Limb loss from stress, fights, mites, or wrong conditions",
+        "Mites and mold, from poor hygiene or inadequate ventilation",
       ],
-      vetLine: "There's essentially no practical veterinary care available for this species, so the real response to a sick or stressed hermit crab is correcting the husbandry issue behind it, and isolating any crab that's aggressive, injured, or showing PPS signs from the rest of the group while it recovers.",
+      vetLine: "Correct the husbandry behind it, and isolate any crab that is aggressive, injured, or showing post-purchase stress while it recovers.",
     },
     routes: [
       { slug: "hermit-crab-cost-guide", line: "$3 to $40 for the crab itself, why the setup is the part that actually costs money, and the monthly budget after that." },
@@ -578,10 +545,11 @@ export const invertebrateGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Molting, pesticides, rehousing and the travel and
-    // outage plan cite the shared invertebrate guides in the sidebar's Health
-    // and More list. Reconciled 2026-09-15 after the jumping spider set test
-    // (docs/READER_REVIEWS.md).
+    // encyclopedia entry. Molting, pesticides and the travel and outage plan
+    // cite the shared invertebrate guides in the sidebar's Health and More
+    // list. Reconciled 2026-09-15 after the jumping spider set test
+    // (docs/READER_REVIEWS.md), rewritten to the template shape 2026-09-16
+    // (docs/HUB_ROUTER_REVIEWS.md).
     //
     // The old hub disagreed with a deep dive on almost every number a buyer
     // would write down, which is how the reader put it: enclosure 5x5x8 inches
@@ -597,50 +565,38 @@ export const invertebrateGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "The spider", value: "$15 to $60. Captive-bred spiderlings run $15 to $25. Juvenile or sub-adult females, generally more prized than males since they live considerably longer, run $25 to $60. Named regional color forms cost more than standard animals.", source: "jumping-spider-cost-guide" },
-        { label: "Setup budget", value: "Roughly $112 to $150, and the enclosure is most of it at $60 to $70. Coconut fiber substrate, mini cork bark or artificial plants, a fine mist spray bottle and a digital hygrometer make up the rest.", source: "jumping-spider-cost-guide" },
-        { label: "Ongoing costs", value: "Roughly $5 to $15 a month. Feeder insects make up nearly the entire monthly cost.", source: "jumping-spider-cost-guide" },
-        { label: "Vet costs", value: "Effectively none. Exotic vets rarely treat spiders, and the large majority of health issues in this species trace back to the enclosure environment rather than anything requiring professional treatment.", source: "jumping-spider-cost-guide" },
-        { label: "Lifespan", value: "Males typically live 8 to 12 months after reaching maturity, while females live longer, 1.5 to 3 years. A realistic overall range to expect is 1 to 3 years.", source: "jumping-spider-cost-guide" },
+        { label: "Budget", value: "$15 to $25 for a captive-bred spiderling, $25 to $60 for a juvenile or sub-adult female, which lives longer. Setup roughly $112 to $150, then $5 to $15 a month in feeders. Exotic vets rarely treat spiders.", source: "jumping-spider-cost-guide" },
+        { label: "Lifespan", value: "Males 8 to 12 months after maturity, females 1.5 to 3 years. Expect 1 to 3 years overall.", source: "jumping-spider-cost-guide" },
         { label: "Adult size", value: "0.5 to 0.75 inches (1.3 to 1.9 cm), females larger than males." },
-        { label: "Enclosure size", value: "A minimum of about 4 by 4 by 7 inches, vertically oriented, works for an adult, and something closer to 8 to 10 inches tall gives more genuine climbing room. This is an arboreal species, up and down space matters more than floor area.", source: "jumping-spider-tank-setup-guide" },
-        { label: "One per enclosure", value: "Use a front-opening design with cross-ventilation, and house one spider per enclosure, they're cannibalistic toward each other.", source: "jumping-spider-tank-setup-guide" },
-        { label: "Temperature", value: "72 to 82°F suits this species well, and normal room temperature is usually fine without any supplemental heat at all. If your space runs consistently below about 70°F, a thermostat-controlled heat mat on the side wall works, but never place heat under the substrate, and never run one without a thermostat.", source: "jumping-spider-tank-setup-guide" },
-        { label: "Humidity", value: "Target 50 to 60% for Phidippus species like the regal jumping spider, tropical genera need more. Mist one corner of the enclosure every 2 to 3 days with dechlorinated water, and aim to leave drinkable droplets rather than soaking everything. Good ventilation matters here too, humidity without airflow invites mold.", source: "jumping-spider-tank-setup-guide" },
-        { label: "Substrate", value: "Coconut fiber, or a coconut fiber and sphagnum moss blend, about an inch or two deep, helps buffer humidity swings between mistings. Avoid sand or vermiculite, and skip using bare paper towel as a long-term substrate, it doesn't hold moisture well enough.", source: "jumping-spider-tank-setup-guide" },
-        { label: "Lighting", value: "This species is diurnal and genuinely relies on vision to hunt, so provide bright ambient light on a normal 12-hour day and night cycle. UVB is not required for this species.", source: "jumping-spider-tank-setup-guide" },
-        { label: "Where the door goes", value: "Jumping spiders build their silk retreat near the top of the enclosure, so it's worth positioning your access opening lower or to the side.", source: "jumping-spider-tank-setup-guide" },
-        { label: "Feeding, by life stage", value: "Spiderlings every 1 to 2 days on 1 to 2 flightless fruit flies. Small to mid juveniles every 2 to 3 days. Sub-adults every 2 to 4 days. Adults every 2 to 5 days, with the abdomen deciding where in that window a given spider sits.", source: "jumping-spider-feeding-guide" },
-        { label: "The abdomen is the gauge", value: "A shrunken or wrinkled abdomen means it's hungry and can be fed early. A plump, rounded abdomen noticeably wider than the cephalothorax means skip the next feeding. Feed in the morning, jumping spiders are visual daytime hunters, and pull uneaten live prey within a few hours to overnight so it doesn't harass or injure the spider, especially near a molt.", source: "jumping-spider-feeding-guide" },
-        { label: "What they eat", value: "An obligate carnivore, no plant matter and no commercial spider food. Flightless fruit flies are the staple for slings and small juveniles. Pinhead-to-small crickets, houseflies, and bluebottle or greenbottle flies work for juveniles through adults, flies in particular are a preferred, low-injury-risk staple since they can't bite back or burrow.", source: "jumping-spider-feeding-guide" },
-        { label: "Prey size", value: "Keep prey noticeably smaller than the spider, roughly no bigger than the abdomen, matched to the size of the chelicerae. Oversized prey is the most repeated safety warning here, a cricket that's too big can injure or kill a jumping spider, especially near a molt.", source: "jumping-spider-feeding-guide" },
-        { label: "Never feed", value: "Ants, repeatedly named as the single most important thing to avoid, they can bite or spray formic acid, and jumping spiders show an instinctive fear response to them. Hard-shelled beetles and pill bugs, too tough to bite through effectively. Fireflies. Other spiders, a real cannibalism and injury risk. Wild-caught or unknown insects, especially anything from an area treated with pesticides.", source: "jumping-spider-feeding-guide" },
-        { label: "Supplements", value: "Spiders can't be dusted with supplement powder, which makes what the feeders ate the only nutrition that reaches them, so gut-loading the feeders is the whole supplement routine.", source: "jumping-spider-feeding-guide" },
-        { label: "Water", value: "A shallow water dish, plus the drinking droplets the misting leaves on the walls. Never mist the spider's abdomen directly, water can seep between the book-lung plates and cause suffocation.", source: "jumping-spider-feeding-guide" },
-        { label: "A spider that stops eating", value: "Usually premolt fasting, which commonly starts days to weeks before shedding. After a molt, new fangs are soft and can't safely bite or digest prey, so wait about 2 to 3 days before offering food again. A healthy adult can safely go roughly 2 to 3 weeks without eating. Spiderlings have much smaller reserves and shouldn't be left that long.", source: "jumping-spider-feeding-guide" },
-        { label: "Dehydration", value: "The single most common problem, and honestly the leading cause of death in captive jumping spiders. Watch for curled legs and general lethargy. It's caused by humidity running too low or an absence of drinkable water droplets.", source: "jumping-spider-health-issues-guide" },
-        { label: "Retained molt", value: "A spider that gets stuck in its old exoskeleton during a molt can lose limbs or die. This is caused by insufficient humidity in the lead-up to molting. Once a molt has genuinely failed, there's little that can be done. Never feed or disturb a spider that's in or approaching a molt.", source: "jumping-spider-health-issues-guide" },
-        { label: "Heat", value: "Heat stress comes from direct sunlight or an unregulated heat mat, and it's manageable by correcting placement and always running supplemental heat through a thermostat if you use it at all.", source: "jumping-spider-health-issues-guide" },
-        { label: "Handling", value: "Minimal handling is the right approach. If you do handle one, let it walk freely onto and off your hand instead of grabbing or restraining it, they're genuinely fragile, and a fall, even a short one, can rupture the abdomen and prove fatal. Always handle low, over a soft surface.", source: "jumping-spider-handling-guide" },
-        { label: "What enrichment means here", value: "A jumping spider navigates by sight in a way almost no other invertebrate does, and a bare acrylic cube gives those eyes nothing. Vary the surfaces, depths and textures inside the enclosure: cork bark mini flats, small branches, and artificial or live foliage create the layered, three-dimensional space a salticid actually reads.", source: "jumping-spider-enrichment-guide" },
-        { label: "They know who you are", value: "A 2024 paper in eLife documents individual recognition in Phidippus regius. Interaction with human caretakers during handling and maintenance is mentioned in the salticid literature as a form of behavioral enrichment, so keep it brief, low to a soft surface, and never over a hard floor.", source: "jumping-spider-enrichment-guide" },
-        { label: "Molting", value: "Reduced activity, retreating to a silk hammock retreat, and refusing food are the pre-molt signs, and the molt itself takes under an hour, often overnight. Never disturb a molting invertebrate, which means no handling a jumping spider tucked into its silk retreat: the new exoskeleton is soft and vulnerable for hours to days after emerging.", source: "invertebrate-molting-guide" },
-        { label: "Bug spray", value: "A spider is an arthropod and every insecticide sold for use inside a home is designed to kill arthropods. A healthy, well-fed pet spider can be found dead in its enclosure the morning after an ordinary household task, a can of ant spray used in the kitchen, a plug-in device switched on in the hallway, a dog treated for fleas on the living room rug.", source: "invertebrate-pesticide-hazards-guide" },
-        { label: "Rehousing", value: "The catch cup and card method, worked low over a larger tub so a bolt or a fall goes nowhere, and never during a molt.", source: "invertebrate-rehousing-guide" },
-        { label: "A power cut, and a trip", value: "A jumping spider lives at whatever temperature the room already sits at, so a power cut is rarely the emergency it would be for a reptile or a fish tank. A full, shallow water dish refilled the morning you go, stable humidity, and a checked lid do more for a short absence than any attempt to pre-feed.", source: "invertebrate-emergency-travel-shipping-guide" },
+        { label: "Enclosure", value: "At least 4 by 4 by 7 inches, vertical, and 8 to 10 inches tall gives real climbing room. Front-opening, cross-ventilated, the door low since the silk retreat goes at the top. One spider per enclosure: they eat each other.", source: "jumping-spider-tank-setup-guide" },
+        { label: "Temperature", value: "72 to 82°F, which is room temperature for most homes. Below about 70°F, a heat mat on the side wall through a thermostat, never under the substrate.", source: "jumping-spider-tank-setup-guide" },
+        { label: "Humidity", value: "50 to 60% for Phidippus species. Mist one corner every 2 to 3 days with dechlorinated water, leaving drinkable droplets rather than soaking, with airflow so humidity does not turn to mold.", source: "jumping-spider-tank-setup-guide" },
+        { label: "Substrate and light", value: "An inch or two of coconut fiber, or fiber and sphagnum, to buffer humidity; not sand, vermiculite, or bare paper towel. Bright ambient light on a 12-hour cycle for a hunter that works by sight. No UVB.", source: "jumping-spider-tank-setup-guide" },
+        { label: "Feeding, by life stage", value: "Spiderlings every 1 to 2 days on 1 to 2 flightless fruit flies. Juveniles every 2 to 3 days, sub-adults every 2 to 4, adults every 2 to 5, with the abdomen deciding where in that window.", source: "jumping-spider-feeding-guide" },
+        { label: "The abdomen is the gauge", value: "Shrunken or wrinkled means hungry, feed early. Plump and wider than the cephalothorax means skip the next one. Feed in the morning, and pull uneaten prey within hours.", source: "jumping-spider-feeding-guide" },
+        { label: "What they eat", value: "Live prey only, no plant matter and no commercial spider food. Fruit flies for slings, then small crickets and flies, with flies the low-risk staple. Prey no bigger than the abdomen: an oversized cricket can kill a spider near a molt.", source: "jumping-spider-feeding-guide" },
+        { label: "Never feed", value: "Ants, above everything. Hard-shelled beetles, pill bugs, fireflies, other spiders, and any wild-caught insect.", source: "jumping-spider-feeding-guide" },
+        { label: "Water", value: "A shallow dish plus the droplets misting leaves on the walls. Never mist the abdomen directly: water between the book-lung plates can suffocate the spider.", source: "jumping-spider-feeding-guide" },
+        { label: "A spider that stops eating", value: "Usually premolt fasting, days to weeks before a shed. A healthy adult goes 2 to 3 weeks without food safely; a spiderling has far smaller reserves. Wait 2 to 3 days after a molt before feeding.", source: "jumping-spider-feeding-guide" },
+        { label: "Dehydration", value: "The leading cause of death in captivity: curled legs and lethargy, from low humidity or no drinkable droplets.", source: "jumping-spider-health-issues-guide" },
+        { label: "Molting", value: "Reduced activity, retreating into the silk hammock, and refusing food are the pre-molt signs. Never disturb a spider in its retreat: the new exoskeleton stays soft for hours to days.", source: "invertebrate-molting-guide" },
+        { label: "Handling", value: "Minimal. Let it walk onto and off your hand, low over a soft surface: a short fall can rupture the abdomen.", source: "jumping-spider-handling-guide" },
+        { label: "Bug spray", value: "Every household insecticide is designed to kill arthropods. Ant spray, a plug-in, or a dog's flea treatment can kill a healthy spider overnight.", source: "invertebrate-pesticide-hazards-guide" },
+        { label: "A power cut, and a trip", value: "The spider lives at room temperature, so an outage is rarely an emergency. A full water dish, stable humidity, and a checked lid cover a short absence.", source: "invertebrate-emergency-travel-shipping-guide" },
       ],
     },
     emergencyCard: {
       source: "jumping-spider-feeding-guide",
+      heading: "Check humidity and the water dish first, then act on these today. Exotic vets rarely treat spiders.",
       callNow: [
-        "Food refusal running well past two weeks with no molt ever occurring",
-        "No interest in food for a week or more after a molt has already completed",
-        "A visibly shrunken or wrinkled abdomen, especially paired with lethargy",
+        "Food refusal running well past two weeks with no molt",
+        "No interest in food for a week or more after a molt has completed",
+        "A visibly shrunken or wrinkled abdomen, especially with lethargy",
         "Legs curling inward, or an inability to right itself if flipped",
         "Visible injury or fluid leakage",
-        "A failed or stuck molt, a spider partially out of its old exoskeleton with no progress for several hours",
+        "A failed or stuck molt, partially out of the old exoskeleton with no progress for hours",
       ],
-      vetLine: "None of this is veterinary-established, it is hobbyist-reported. A healthy adult can safely go roughly 2 to 3 weeks without eating, and older adults are anecdotally reported tolerating a month or more, particularly around a molt or egg-guarding, none of that alone is cause for alarm. The last few of these are treated as urgent, warranting an exotic-animal vet rather than a wait-and-see approach.",
+      vetLine: "Hobbyist-reported, not veterinary-established. A healthy adult goes 2 to 3 weeks without food safely, so refusal alone is not the alarm; the last three mean act now, and little can be done once a molt has failed.",
     },
     routes: [
       { slug: "jumping-spider-cost-guide", line: "$15 to $60 for the spider, $112 to $150 for setup, and why the short lifespan is the real cost." },
@@ -678,10 +634,10 @@ export const invertebrateGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Pesticides, rehousing and the travel and outage plan
-    // cite the shared invertebrate guides in the sidebar's Health and More
-    // list. Reconciled 2026-09-15 after the hissing cockroach set test
-    // (docs/READER_REVIEWS.md).
+    // encyclopedia entry. Pesticides cites the shared invertebrate guides in
+    // the sidebar's Health and More list. Reconciled 2026-09-15 after the
+    // hissing cockroach set test (docs/READER_REVIEWS.md), rewritten to the
+    // template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
     //
     // What the old hub had wrong, in the reader's order: humidity 50 to 70%
     // against the setup and health guides' 60 to 70%; "temperatures of 75 to
@@ -701,51 +657,37 @@ export const invertebrateGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "The animal", value: "$3 to $65. Individual nymphs run around $3 each. A breeding pair runs about $24, and a starter colony of 25 runs around $65. Because this same species is also sold widely as a feeder insect for reptiles, availability and pricing stay consistently low across most sources.", source: "madagascar-hissing-cockroach-cost-guide" },
-        { label: "Setup budget", value: "Roughly $40 to $100, animal included. A tank or plastic tub in the 5 to 20 gallon range with a secure, screened lid is the enclosure baseline, paired with coconut fiber substrate, a hide or two, and a water dish.", source: "madagascar-hissing-cockroach-cost-guide" },
-        { label: "Ongoing costs", value: "A few dollars a month. Fresh vegetables and fruit, occasional commercial roach or dog food, and modest substrate replacement make up the entire monthly cost.", source: "madagascar-hissing-cockroach-cost-guide" },
-        { label: "Vet costs", value: "Effectively none. Invertebrates are rarely taken to a vet, and very few vets treat them at all. Care here is entirely husbandry-based, correct humidity and substrate do all the real work.", source: "madagascar-hissing-cockroach-cost-guide" },
-        { label: "Lifespan", value: "2 to 5 years is the typical range, most commonly 2 to 3, with 4 to 5 achievable under excellent care.", source: "madagascar-hissing-cockroach-cost-guide" },
+        { label: "Budget", value: "Around $3 a nymph, about $24 for a pair, around $65 for a starter colony of 25. Setup roughly $40 to $100 with the animals, then a few dollars a month. Very few vets treat invertebrates.", source: "madagascar-hissing-cockroach-cost-guide" },
+        { label: "Lifespan", value: "2 to 5 years, most commonly 2 to 3.", source: "madagascar-hissing-cockroach-cost-guide" },
         { label: "Adult size", value: "2 to 4 inches (5 to 10 cm)." },
-        { label: "Enclosure size", value: "A 5-gallon tank works as a minimum for a small group. A 10-20+ gallon tank or plastic tub suits a larger colony better, floor space matters more here than height for this ground-dwelling species.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
-        { label: "Not one on its own", value: "They are gregarious, they cluster, and the welfare research that exists is on groups. A single hissing cockroach is neither how the species lives nor how it has been studied.", source: "madagascar-hissing-cockroach-enrichment-guide" },
-        { label: "Temperature", value: "75 to 85°F for general pet-keeping, room temperature above about 70°F is genuinely fine if you're not actively trying to breed them. Breeding specifically gets triggered around 85 to 95°F, worth knowing if you want to avoid an accidental population boom.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
-        { label: "Humidity", value: "60 to 70%, maintained through daily misting and a substrate that holds moisture well. A simple humidity chamber, a small container with a damp sponge inside the main enclosure, works well too, a technique used by professional insect-keeping programs.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
-        { label: "Substrate", value: "Coconut fiber, peat moss, or orchid bark, 2 to 3 inches deep, supports this species' semi-burrowing habits well. Provide egg-crate stacks or cork bark as hides, they'll use these constantly.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
-        { label: "The escape barrier", value: "This is the detail that matters most for a successful setup. Madagascar hissing cockroaches are excellent climbers, capable of scaling smooth glass with ease. Smear a band of plain petroleum jelly around the top 2 to 3 inches of the enclosure interior, combined with a secure, tight-fitting lid, and escapes become a non-issue. Skip this step, and you'll likely find roaches outside the enclosure sooner or later.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
-        { label: "Lighting", value: "None needed. This species is nocturnal and photophobic, genuinely prefers darkness, and doesn't require any special lighting setup at all.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
-        { label: "Male or female", value: "Males carry a pair of large bumps, the pronotal horns, behind the head, and those structures are much smaller in females. Males also grow larger. Worth knowing before you buy, since a mixed-sex group breeds and a same-sex group does not.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
-        { label: "Feeding", value: "Keep a dry protein source available, high-quality dry dog food, cat food, or a commercial roach chow, and top it up with fresh produce 2 to 3 times a week in a quantity the colony finishes within 24 to 48 hours so leftovers don't mold. A small pet colony can be kept at the lighter end of that, dry food about once a week with fruit every couple of weeks.", source: "madagascar-hissing-cockroach-feeding-guide" },
-        { label: "What they eat", value: "High-quality dry dog food is the most consistently recommended staple. Offer fresh produce a few times a week: romaine lettuce and other dark leafy greens, dandelion greens, carrots, squash, sweet potato, apples, bananas, oranges, and grapes. Their wild diet is decaying plant matter and fallen, overripe fruit, so captive feeding is built to approximate that rather than something meat-heavy.", source: "madagascar-hissing-cockroach-feeding-guide" },
-        { label: "Not a protein-heavy diet", value: "Skip diets that are too protein-heavy, hissers are naturally protein-sparing and don't need a meat- or pellet-heavy feed the way some other insects do. Use caution with iceberg lettuce, nutritionally much weaker than romaine, and with any produce treated with pesticides.", source: "madagascar-hissing-cockroach-feeding-guide" },
-        { label: "Water", value: "A water source that can't drown a roach: a cotton ball or sponge saturated with water in a shallow dish, or a commercial water gel, changed regularly, since an open dish poses a real drowning risk to small nymphs.", source: "madagascar-hissing-cockroach-feeding-guide" },
-        { label: "Why it looks like nothing is eating", value: "Hissers are light-averse and most active after dark, so feeding is often genuinely happening overnight even when it looks like nothing's being eaten.", source: "madagascar-hissing-cockroach-feeding-guide" },
-        { label: "Growing up", value: "Nymphs go through about six molts over roughly six to seven months to reach adulthood, and commonly go quiet and eat less beforehand. They need elevated humidity during this window to shed successfully.", source: "madagascar-hissing-cockroach-feeding-guide" },
-        { label: "Handling", value: "Docile for an insect, more so than most people expect, but this is fundamentally a display and observation pet, not a handling-focused one. Pick one up gently around the thorax, or let it walk from hand to hand instead of gripping it. Never jerk or pull, their sticky foot pads and leg hooks grip surfaces tightly, and pulling against that grip can genuinely injure the insect.", source: "madagascar-hissing-cockroach-handling-guide" },
-        { label: "They are not entirely harmless", value: "Their sharp leg spines are a real defensive feature, and can scratch or draw a small amount of blood if the roach is held down or restrained against its will. Wash your hands before and after handling: they can carry Salmonella like most reptiles and invertebrates.", source: "madagascar-hissing-cockroach-handling-guide" },
-        { label: "Reading the hiss", value: "A weak stimulus may produce a single hiss, while a strong one may cause a long series of hisses as the animal flees. A roach that hisses once when you lift the lid is noting you. One that hisses in a run and bolts for the substrate is telling you the approach was too fast or too much. A roach that freezes flat when touched is at least as stressed as one that hisses.", source: "madagascar-hissing-cockroach-handling-guide" },
-        { label: "Desiccation", value: "Low humidity causes real problems with molting and can lead to death if left uncorrected. The fix is straightforward, maintain 60 to 70% humidity through regular misting and a moisture-holding coconut fiber substrate.", source: "madagascar-hissing-cockroach-health-issues-guide" },
-        { label: "A fresh molt", value: "A freshly molted cockroach is soft and pale white for several hours after shedding its exoskeleton, and genuinely vulnerable during that window. Never handle a roach during or immediately after a molt. Overcrowding and low humidity both make molting problems more likely.", source: "madagascar-hissing-cockroach-health-issues-guide" },
-        { label: "Mold and mites", value: "From uneaten wet food combined with poor ventilation, this can genuinely devastate a colony if it takes hold. Remove any uneaten fresh food within 24 to 48 hours, ensure the enclosure has adequate airflow, and do a deeper clean periodically rather than only when a problem appears.", source: "madagascar-hissing-cockroach-health-issues-guide" },
-        { label: "Heat mats", value: "A heat mat used without a thermostat is a real risk, capable of overheating the roaches or even melting a plastic tub enclosure. If you're using supplemental heat, mainly relevant for breeding rather than casual pet-keeping, always run it through a thermostat.", source: "madagascar-hissing-cockroach-health-issues-guide" },
-        { label: "Legal, before you buy", value: "Four jurisdictions bar them: New Hampshire, Montana, Hawaii and the District of Columbia. Florida requires an agriculture permit rather than a wildlife one. Oregon attaches conditions. Three more, New Mexico, New Jersey and Idaho, have rules that could reach insects but never say whether they do.", source: "madagascar-hissing-cockroach-legal-guide" },
-        { label: "Bug spray", value: "A hissing cockroach is an arthropod and every insecticide sold for use inside a home is designed to kill arthropods. A healthy animal can be found dead the morning after an ordinary household task, a can of ant spray used in the kitchen, a plug-in device switched on in the hallway, a dog treated for fleas on the living room rug.", source: "invertebrate-pesticide-hazards-guide" },
-        { label: "A power cut, and a trip", value: "Hissers live at whatever temperature the room already sits at, so a power cut is rarely the emergency it would be for a reptile or a fish tank. A full, shallow water dish refilled the morning you go, stable humidity, and a checked lid do more for a short absence than any attempt to pre-feed.", source: "invertebrate-emergency-travel-shipping-guide" },
+        { label: "Enclosure", value: "A 5-gallon tank for a small group, a 10 to 20-plus gallon tank or tub for a colony. Floor space matters more than height.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
+        { label: "Not one on its own", value: "They are gregarious, they cluster, and the welfare research that exists is on groups.", source: "madagascar-hissing-cockroach-enrichment-guide" },
+        { label: "The escape barrier", value: "They climb smooth glass. A band of petroleum jelly around the top 2 to 3 inches of the interior plus a tight lid makes escapes a non-issue; skip it and you will find roaches loose.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
+        { label: "Temperature", value: "75 to 85°F, and room temperature above about 70°F is fine if you are not breeding. Breeding triggers around 85 to 95°F, which is how an accidental population boom starts.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
+        { label: "Humidity and substrate", value: "60 to 70%, from daily misting over 2 to 3 inches of coconut fiber, peat, or orchid bark. Egg-crate stacks or cork bark as hides. No lighting: they are nocturnal and prefer the dark.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
+        { label: "Male or female", value: "Males carry two large horns behind the head and grow larger. A mixed-sex group breeds; a same-sex group does not.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
+        { label: "Feeding", value: "Dry dog food, cat food, or roach chow always available, plus fresh produce 2 to 3 times a week in an amount finished within 24 to 48 hours. A small pet colony does fine at the lighter end.", source: "madagascar-hissing-cockroach-feeding-guide" },
+        { label: "What they eat", value: "Romaine and dark greens, carrot, squash, sweet potato, apple, banana, orange, grape. Not a protein-heavy diet, and nothing treated with pesticide.", source: "madagascar-hissing-cockroach-feeding-guide" },
+        { label: "Water", value: "A soaked cotton ball or sponge in a shallow dish, or water gel. An open dish drowns small nymphs.", source: "madagascar-hissing-cockroach-feeding-guide" },
+        { label: "Why it looks like nothing is eating", value: "They feed after dark. Nymphs also go quiet and eat less before each of their roughly six molts over six to seven months.", source: "madagascar-hissing-cockroach-feeding-guide" },
+        { label: "Handling", value: "Docile, but a display animal. Lift gently around the thorax or let it walk hand to hand; never pull against the grip of the feet. The leg spines can scratch. Wash hands before and after: Salmonella.", source: "madagascar-hissing-cockroach-handling-guide" },
+        { label: "Desiccation and molt", value: "Low humidity causes failed molts and death. A freshly molted roach is soft and white for hours; never handle one then.", source: "madagascar-hissing-cockroach-health-issues-guide" },
+        { label: "Mold and mites", value: "From wet food left in and poor airflow. Remove uneaten produce within 24 to 48 hours, ventilate, and deep-clean on a schedule rather than after a problem.", source: "madagascar-hissing-cockroach-health-issues-guide" },
+        { label: "Legal, before you buy", value: "Barred in New Hampshire, Montana, Hawaii, and the District of Columbia. Florida requires an agriculture permit, Oregon attaches conditions.", source: "madagascar-hissing-cockroach-legal-guide" },
+        { label: "Bug spray", value: "Every household insecticide is designed to kill arthropods. Ant spray in the kitchen, a plug-in in the hallway, or a dog's flea treatment can kill a healthy colony overnight.", source: "invertebrate-pesticide-hazards-guide" },
       ],
     },
     emergencyCard: {
       source: "madagascar-hissing-cockroach-feeding-guide",
+      heading: "Check temperature and humidity first, then act on these today. Very few vets treat invertebrates.",
       callNow: [
-        "Inactivity, or lying in one place",
-        "Failure to hiss when handled",
-        "Lethargy beyond normal pre-molt sluggishness",
-        "A dull-looking exoskeleton",
-        "Visible weight loss",
         "Discharge from the mouth or eyes",
         "Visible sores",
+        "Visible weight loss, or a dull-looking exoskeleton",
         "Abnormal feces",
+        "Lethargy beyond normal pre-molt sluggishness",
       ],
-      vetLine: "A visibly sick hisser is reported to commonly survive only about 2 to 3 days once symptoms are obvious, which argues for acting quickly, checking temperature and humidity and consulting an exotics-experienced vet, rather than waiting once multiple symptoms stack up.",
+      vetLine: "Not eating is usually benign: they feed after dark, nymphs go quiet before a molt, and a cool room slows them. Once several of these signs stack up, a visibly sick hisser commonly survives only 2 to 3 days, so act quickly.",
     },
     routes: [
       { slug: "madagascar-hissing-cockroach-cost-guide", line: "$3 a nymph, $24 a pair, $65 a colony of 25, and a setup total under $100 with the animal in it." },
@@ -785,10 +727,10 @@ export const invertebrateGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Pre-molt appearance, rehousing, pesticides and the
-    // emergency plan cite the shared invertebrate guides in the sidebar's
-    // Health and More list. Reconciled 2026-09-15 after the praying mantis
-    // set test (docs/READER_REVIEWS.md).
+    // encyclopedia entry. Pre-molt signs cite the shared invertebrate molting
+    // guide in the sidebar's Health and More list. Reconciled 2026-09-15 after
+    // the praying mantis set test (docs/READER_REVIEWS.md), rewritten to the
+    // template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
     //
     // The old hub carried unverified pricing by its own admission and every
     // one of its figures lost to a deep dive. Retired rather than moved:
@@ -809,44 +751,37 @@ export const invertebrateGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Buy an adult", value: "Buy an adult or subadult, not a nymph. Nymphs are genuinely difficult to keep alive through their many molts, and a beginner is much better served starting with an animal that's already past that fragile early stage.", source: "praying-mantis-cost-guide" },
-        { label: "Enclosure size", value: "Length and width should each be at least twice the mantis's body length, and height at least three times its length. A reasonable adult enclosure runs around 8 inches long, 8 inches wide, and 12 inches tall as a minimum. Nymphs do well in something much smaller, a vented 32-ounce deli cup works fine at that stage.", source: "praying-mantis-tank-setup-guide" },
-        { label: "The measurement that decides a molt", value: "The drop from the top of the perch to the floor, which wants to be at least four times the mantis's length. On an 8 by 8 by 12 enclosure with the perch reaching the lid, that drop is 12 inches, enough for a mantis up to about three inches. A larger adult wants a taller box than the stated minimum.", source: "praying-mantis-tank-setup-guide" },
-        { label: "What the ceiling has to be", value: "Something the mantis can grip securely upside down for hours: mesh, screen or a rough surface. Smooth glass or plastic at the top is a hazard, and adding mesh or a piece of rough material to hang from is a two minute fix that prevents the most common cause of death in the species.", source: "praying-mantis-enrichment-guide" },
-        { label: "Keep the top clear", value: "Keep the center of the upper enclosure clear. Structure that fills the space directly under the ceiling is structure the mantis can hit on the way down during a molt.", source: "praying-mantis-enrichment-guide" },
-        { label: "Temperature", value: "Most commonly kept species, Carolina and Chinese mantises among them, do fine at normal room temperature, which in practice means roughly 70 to 80\u00B0F. Stay below 88\u00B0F. A small heat mat is only necessary if your home runs genuinely cool. Never place the enclosure in direct sunlight, the confined space heats up fast enough to be fatal.", source: "praying-mantis-tank-setup-guide" },
-        { label: "Humidity", value: "Species-dependent, and the spread is wide: a temperate Chinese mantis sits around 50 to 65%, while tropical species like Ghost and Orchid mantises want 70 to 80%. Mist lightly at least once daily, more often in a mesh enclosure. Those droplets are also how a mantis drinks, though heavy standing water is a drowning risk for small nymphs.", source: "praying-mantis-tank-setup-guide" },
-        { label: "Ventilation", value: "A mesh or ventilated lid, never solid glass or plastic. Airflow is what keeps the mold and internal infection that excess humidity brings out of the enclosure, and that failure mode kills quietly, with no visible symptom until it is too late.", source: "praying-mantis-tank-setup-guide" },
-        { label: "Substrate", value: "Coconut fiber, plain soil, bark, or even paper towel all work well. Substrate here serves two purposes: giving the mantis stable footing and helping hold humidity at the level you're aiming for.", source: "praying-mantis-tank-setup-guide" },
-        { label: "Lighting", value: "No special lighting or UVB is needed. A normal household light cycle, roughly 12 hours of light a day, is sufficient.", source: "praying-mantis-tank-setup-guide" },
-        { label: "Feeding", value: "Live prey only. Offer food every other day, as much as the mantis will take in one sitting. The honest range across species runs from every day to every four days, set by the species, the prey, the mantis's size and whether it is already well fed or looking thin.", source: "praying-mantis-tank-setup-guide" },
-        { label: "Prey size", value: "Nothing longer than about a third of the mantis's own length. Fruit flies carry the smallest nymphs, then bottle flies, small crickets and appropriately sized dubia roaches as it grows, with larger crickets, waxworms and bottle flies available to a full adult.", source: "praying-mantis-tank-setup-guide" },
-        { label: "Live prey, not dead", value: "Mantises are visual ambush hunters that respond to movement, and most will ignore a dead insect entirely. Live flying prey is also the closest thing to enrichment this animal has, since hunting is most of its behavioral repertoire.", source: "praying-mantis-enrichment-guide" },
-        { label: "Feeding around a molt", value: "A mantis going off food is usually about to molt, so stop offering and pull anything live back out: a cricket left in with a soft, newly molted mantis will chew on it. After a molt, wait until the legs and mouthparts have hardened, several hours to a day, before offering anything.", source: "praying-mantis-tank-setup-guide" },
-        { label: "Handling", value: "Let the mantis walk onto your hand or a tool rather than grabbing it. Handle only in a closed room. Mantises jump, and the winged adults of most commonly kept species fly, so an animal that startles off your hand can cross the room. Never restrain or squeeze a mantis, their bodies are delicate in ways that aren't always obvious.", source: "praying-mantis-handling-guide" },
-        { label: "Hands off before a molt", value: "Avoid handling in the days leading up to a molt. A pre-molt mantis is at its most physically vulnerable, and handling during this window raises real risk of a failed or fatal molt. If your mantis has stopped eating and seems unusually still, treat that as a signal to leave it alone entirely.", source: "praying-mantis-handling-guide" },
-        { label: "One per enclosure", value: "They are cannibalistic and will eat each other at any size difference and often at none. Solo housing is the only sensible default outside of deliberate, supervised breeding.", source: "praying-mantis-enrichment-guide" },
-        { label: "Budget, the animal", value: "Common species like Carolina and Chinese mantises run $15 to $35. Ghost mantises run $15 to $75 depending on age and quality. Orchid mantises, prized for their striking appearance, can reach $150. Most species stay well under $75 even as full adults.", source: "praying-mantis-cost-guide" },
-        { label: "Budget, the setup", value: "The three required lines, enclosure, substrate, and branches or mesh, come to about $85 to $115. The spray bottle and tongs take a full first-time setup to roughly $100 to $145. Add the mantis and most buyers are between $115 and $220.", source: "praying-mantis-cost-guide" },
-        { label: "Ongoing costs", value: "Roughly $10 to $40 a month, almost all of it live feeder insects. Fruit fly cultures run $5 to $10 each, and crickets cost roughly 10 to 50 cents apiece depending on size.", source: "praying-mantis-cost-guide" },
-        { label: "Vet costs", value: "Essentially none. Exotic vets rarely treat invertebrates, and mantis care is entirely husbandry-based. Correct humidity, proper feeding, and careful handling around molting time do far more for a mantis's health than any veterinary intervention could.", source: "praying-mantis-cost-guide" },
-        { label: "Lifespan", value: "Most commonly kept mantis species live just 6 to 12 months total, Chinese mantises toward 8 to 12 months, African mantises closer to 6 to 9 months, with females typically outliving males. A small number of species can reach around 18 months under excellent care.", source: "praying-mantis-cost-guide" },
+        { label: "Buy an adult", value: "An adult or subadult, not a nymph. Nymphs are hard to keep alive through their many molts.", source: "praying-mantis-cost-guide" },
+        { label: "Enclosure", value: "Length and width at least twice the mantis's body length, height at least three times. 8 by 8 by 12 inches is the adult minimum; a nymph does well in a vented 32-ounce deli cup.", source: "praying-mantis-tank-setup-guide" },
+        { label: "The measurement that decides a molt", value: "The drop from perch to floor, at least four times the mantis's length. In the 8 by 8 by 12 box that drop is 12 inches, enough for a mantis up to about three inches; a larger adult needs a taller box.", source: "praying-mantis-tank-setup-guide" },
+        { label: "The ceiling", value: "Mesh, screen or something rough the mantis can grip upside down for hours, with the space under it kept clear. Smooth glass at the top causes the most common death in the species.", source: "praying-mantis-enrichment-guide" },
+        { label: "Temperature", value: "Room temperature, roughly 70 to 80°F, for Carolina and Chinese mantises, and below 88°F always. Never in direct sun: the enclosure heats fatally fast.", source: "praying-mantis-tank-setup-guide" },
+        { label: "Humidity", value: "Species-dependent: a Chinese mantis around 50 to 65%, Ghost and Orchid mantises 70 to 80%. Mist lightly at least once daily; the droplets are how it drinks, and standing water drowns small nymphs.", source: "praying-mantis-tank-setup-guide" },
+        { label: "Ventilation", value: "A mesh lid, never solid. Excess humidity without airflow brings mold and internal infection, which kill with no visible sign until too late.", source: "praying-mantis-tank-setup-guide" },
+        { label: "Substrate and light", value: "Coconut fiber, soil, bark or paper towel for footing and humidity. No UVB, a normal 12-hour light cycle.", source: "praying-mantis-tank-setup-guide" },
+        { label: "Feeding", value: "Live prey only, every other day, as much as it takes in one sitting; the honest range runs every day to every four days by species and condition. Nothing longer than a third of its body.", source: "praying-mantis-tank-setup-guide" },
+        { label: "Prey by size", value: "Fruit flies for the smallest nymphs, then bottle flies, small crickets and dubia, with larger crickets and waxworms for a full adult. Dead insects get ignored; hunting live prey is the whole enrichment.", source: "praying-mantis-tank-setup-guide" },
+        { label: "Feeding around a molt", value: "Off food usually means a molt is coming: stop offering and pull live prey out, since a cricket chews on a soft mantis. After the molt, wait several hours to a day for the legs and mouthparts to harden.", source: "praying-mantis-tank-setup-guide" },
+        { label: "Handling", value: "Let it walk onto a hand or tool, in a closed room: adults of most kept species fly. Never restrain or squeeze, and nothing at all in the days before a molt.", source: "praying-mantis-handling-guide" },
+        { label: "One per enclosure", value: "Cannibalistic at any size difference and often at none. Solo housing outside supervised breeding.", source: "praying-mantis-enrichment-guide" },
+        { label: "Budget", value: "$15 to $35 for a Carolina or Chinese mantis, up to $150 for an Orchid. A full setup runs $100 to $145, then $10 to $40 a month in feeders. Exotic vets rarely treat invertebrates.", source: "praying-mantis-cost-guide" },
+        { label: "Lifespan", value: "6 to 12 months for most kept species, females outliving males; a few reach around 18 months.", source: "praying-mantis-cost-guide" },
         { label: "Adult size", value: "0.5 to 6 inches (1 to 15 cm) depending on species." },
-        { label: "If you get an ootheca", value: "An ootheca can release dozens to hundreds of tiny nymphs within a short window, often within an hour or two of each other. Mantis nymphs are highly cannibalistic toward their siblings, so individual containers and a fruit fly culture need to be ready before the hatch, not after.", source: "praying-mantis-ootheca-guide" },
-        { label: "Pre-molt signs", value: "An invertebrate about to molt goes off food, dulls in color and becomes still. That is not illness and it is not the moment to intervene: leave it alone, and leave the old shed skin where it falls until the animal has hardened.", source: "invertebrate-molting-guide" },
+        { label: "If you get an ootheca", value: "Dozens to hundreds of nymphs hatch within an hour or two of each other, and they eat their siblings. Individual containers and a fruit fly culture are ready before the hatch, not after.", source: "praying-mantis-ootheca-guide" },
+        { label: "Pre-molt signs", value: "Off food, dulled color, stillness. Not illness, and not the moment to intervene; leave the shed skin where it falls until the animal has hardened.", source: "invertebrate-molting-guide" },
       ],
     },
     emergencyCard: {
       source: "praying-mantis-health-issues-guide",
+      heading: "Check humidity and the ceiling first, then act on these today. Exotic vets rarely treat invertebrates.",
       callNow: [
         "An incomplete shed, or limbs that come out twisted or stuck",
-        "A mantis struggling and not progressing during what should be a molt",
+        "A mantis struggling and not progressing during a molt",
         "A mantis that has fallen mid-molt, or lost its grip on the perch",
-        "A crooked or deformed limb after a molt, which can make normal hunting difficult",
-        "Regurgitation, which can come from overfeeding rather than illness",
-        "Mold visible in the enclosure, or a mantis declining in a tank that is being over-misted",
+        "A crooked or deformed limb after a molt, which can make hunting difficult",
+        "Mold in the enclosure, or a mantis declining in a tank that is being over-misted",
       ],
-      vetLine: "Exotic vets rarely treat invertebrates, so this list leans almost entirely on prevention rather than treatment. Humidity that's too low is the single biggest driver of the mismolt risk that accounts for most mantis deaths, and humidity that's too high invites mold and internal infection instead. A mantis that survives a mismolt with a crooked limb may need hand-feeding with fine-tip tongs going forward. There is little to be done once a molt has genuinely failed.",
+      vetLine: "Low humidity drives the mismolts that cause most mantis deaths; high humidity invites mold and infection instead. Regurgitation is usually overfeeding, not illness. A mantis with a crooked limb may need hand-feeding with fine tongs. Little can be done once a molt has failed.",
     },
     routes: [
       { slug: "praying-mantis-cost-guide", line: "$15 to $35 for a common species, $85 to $145 for the setup around it, and the lifespan that changes what you are buying." },
@@ -885,10 +820,10 @@ export const invertebrateGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Pesticides, molting and the travel and outage plan
-    // cite the shared invertebrate guides in the sidebar's Health
-    // and More list. Reconciled 2026-09-15 after the stick insect set test
-    // (docs/READER_REVIEWS.md).
+    // encyclopedia entry. Pesticides and the outage plan cite the shared
+    // invertebrate guides in the sidebar's Health and More list. Reconciled
+    // 2026-09-15 after the stick insect set test (docs/READER_REVIEWS.md),
+    // rewritten to the template shape 2026-09-16 (docs/HUB_ROUTER_REVIEWS.md).
     //
     // The legality line is why this hub graded C+. It said "They are legal,
     // widely available, cheap, hardy" while the cost guide on the same site
@@ -910,46 +845,36 @@ export const invertebrateGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "The permit, first", value: "In the United States, keeping non-native stick insect species, which includes the common Indian and Vietnamese stick insects widely sold in the hobby, technically requires a USDA APHIS permit under the Plant Protection Act. That permit process requires import into an inspected containment facility, a bar that hobbyist keepers genuinely cannot meet, which means these permits are essentially never issued to individual pet owners. Generally, only species native to and collected within your own state are clearly legal to keep without a permit, and releasing any stick insect or its eggs into the environment is prohibited.", source: "stick-insect-cost-guide" },
-        { label: "The insect", value: "Often just a few dollars per nymph for common species, Indian stick insects especially, and sometimes given away free by keepers since many species reproduce prolifically. Rare giant species are a different story entirely, some command prices exceeding $1,000 for a single adult.", source: "stick-insect-cost-guide" },
-        { label: "Setup budget", value: "Roughly $77 to $98 for a tall, mesh-topped enclosure, substrate and a spray bottle, with the enclosure most of it. An optional small heat or grow light adds more and is not required for most commonly kept species.", source: "stick-insect-cost-guide" },
-        { label: "Ongoing costs", value: "Minimal. Fresh host-plant cuttings, often foraged for free depending on the species' specific dietary needs, plus water for misting make up nearly the entire ongoing cost.", source: "stick-insect-cost-guide" },
-        { label: "Vet costs", value: "Essentially none. Invertebrate veterinary care isn't really a thing for this species, care is entirely husbandry-based.", source: "stick-insect-cost-guide" },
-        { label: "Lifespan", value: "Around one year is typical, roughly 4 to 10 months as a nymph followed by 5 to 12 months as an adult. Females generally live longer than males, often close to 18 months. A small number of larger species can reach 2 to 3 years.", source: "stick-insect-cost-guide" },
+        { label: "The permit, first", value: "Non-native species, the common Indian and Vietnamese ones included, technically require a USDA APHIS permit that hobbyists cannot get. Only species native to and collected in your own state are clearly legal without one, and releasing any stick insect or its eggs is prohibited.", source: "stick-insect-cost-guide" },
+        { label: "Budget", value: "A few dollars a nymph for common species, often free from keepers, while rare giants can pass $1,000. Setup roughly $77 to $98, then almost nothing: foraged cuttings and water for misting.", source: "stick-insect-cost-guide" },
+        { label: "Lifespan", value: "Around a year: 4 to 10 months as a nymph, then 5 to 12 as an adult. Females, which is what hobby stock mostly is, often reach 18 months.", source: "stick-insect-cost-guide" },
         { label: "Adult size", value: "1 to 22 inches (2 to 55 cm) depending on species." },
-        { label: "Enclosure size", value: "Length and width should each be at least twice the adult's body length, and height should be at least three times body length. Height is the detail that actually matters most, since it's what allows a proper molt. A single Indian stick insect does fine in a roughly 8 by 8 by 12 inch tall, mesh-topped enclosure; a small group or larger species needs correspondingly more room.", source: "stick-insect-tank-setup-guide" },
-        { label: "The mesh top", value: "A mesh or netting lid is essential, not just for ventilation, but because stick insects hang from the top of the enclosure to molt, and shedding from mesh succeeds far more reliably than from a branch alone.", source: "stick-insect-tank-setup-guide" },
-        { label: "Temperature", value: "Many commonly kept species, Indian stick insects especially, do perfectly well at normal room temperature, roughly 63 to 77°F. Tropical species like the giant prickly stick insect prefer it warmer. Supplemental heat is only needed if your space runs consistently cold, and a small basking bulb goes away from the mesh top, where the insect hangs, and off at night.", source: "stick-insect-tank-setup-guide" },
-        { label: "Humidity", value: "Varies by species, tropical types want 60 to 80%, while Indian stick insects are considerably more forgiving. Achieve this through daily light misting with dechlorinated or distilled water, combined with an inch or two of moisture-holding substrate, and track it with a digital hygrometer rather than guessing.", source: "stick-insect-tank-setup-guide" },
-        { label: "Substrate", value: "Coconut coir, peat moss, or plain paper towel all work, holding humidity and absorbing waste. Replace it regularly rather than letting it build up.", source: "stick-insect-tank-setup-guide" },
-        { label: "Lighting", value: "No UVB is needed for this species. Normal ambient room light on a roughly 12-hour cycle is sufficient.", source: "stick-insect-tank-setup-guide" },
-        { label: "Food", value: "Leaves, and that is the entire diet. Almost every commonly kept stick insect eats washed bramble, the blackberry stems that grow in any hedgerow, and it goes species by species from there: Indian stick insects also take privet and ivy, while rose, hawthorn, oak and eucalyptus each suit different species. Match the plant to the species you actually have.", source: "stick-insect-tank-setup-guide" },
-        { label: "Keeping the leaves alive", value: "Cut stems standing in water beat a pile of picked leaves, since foliage kept that way stays good for several days instead of crisping overnight. Block the opening of the water container so nothing can fall in, because a nymph drowned in a jar of stems is the routine avoidable loss in this hobby. Wash foliage before it goes in, and replace it before the leaves dry.", source: "stick-insect-tank-setup-guide" },
-        { label: "Water", value: "Stick insects drink water droplets rather than from a dish, so a reliable spray bottle and a consistent schedule is the hydration plan. An open water reservoir is a drowning risk for small nymphs.", source: "stick-insect-health-issues-guide" },
-        { label: "Failed molts", value: "The single biggest risk for a pet stick insect: a shed that doesn't complete properly, resulting in deformity or death. It's caused by insufficient vertical space or humidity that's too low leading up to the molt. This isn't something to treat after the fact, prevention through correct enclosure height and misting is really the only effective approach.", source: "stick-insect-health-issues-guide" },
-        { label: "Mold", value: "From an enclosure kept too damp combined with poor ventilation or infrequent cleaning. Prevented with good airflow and a regular substrate change, roughly weekly is a reasonable habit.", source: "stick-insect-health-issues-guide" },
-        { label: "Leg loss", value: "A genuine and common outcome of rough handling. A stick insect that loses a leg through autotomy may partially regrow it across subsequent molts if it's a nymph, but an adult's lost leg is permanent. Gentle, body-only handling is what prevents it.", source: "stick-insect-health-issues-guide" },
-        { label: "Handling", value: "Gently grasp the body or thorax if you need to move a stick insect, and never grab a leg. Most species practice autotomy, deliberately dropping a leg to escape a threat. Some species also have mildly irritating leg spines or can release a faint defensive scent, minor compared to most invertebrate defenses, but worth a gentle approach regardless.", source: "stick-insect-handling-guide" },
-        { label: "Reading a stressed one", value: "A dropped leg means the session was too rough. A stick insect that goes rigid and drops, or stays stiff in your hand, is not calm: it is in thanatosis, playing dead, and has classed the hand as a predator. A whiff of defensive scent is the same message. Stillness on its own means nothing, since stick insects spend most of the day motionless by design.", source: "stick-insect-handling-guide" },
-        { label: "More than one", value: "Unlike the praying mantis, which is solitary and cannibalistic, stick insects are herbivorous and non-aggressive toward each other, and Indian stick insects specifically can be housed in groups without issue.", source: "stick-insect-handling-guide" },
-        { label: "You will get eggs", value: "Several commonly kept species, Indian and Vietnamese stick insects among them, reproduce parthenogenetically, meaning females produce viable eggs without a male present at all. A single female can establish an ongoing colony on her own, worth knowing if you are not looking to breed but might end up with more stick insects than you started with.", source: "stick-insect-handling-guide" },
-        { label: "Crowding", value: "Overcrowding shows as damaged legs and antennae, and stick insects knock pieces off each other during molts in a crowded enclosure. If limbs are going missing, thin the group or enlarge the enclosure.", source: "stick-insect-enrichment-guide" },
-        { label: "What enrichment means here", value: "A stick insect's behavioral repertoire is standing on a plant, eating it, swaying, and periodically molting. Two of those four have hard requirements: fresh live host plant, and clear vertical space of at least three times body length to molt in. Get those right and there is very little left to add.", source: "stick-insect-enrichment-guide" },
-        { label: "Molting", value: "The ceiling has to be grippable. Mesh or screen, not smooth glass. A stick insect that loses its grip mid-molt is usually finished, and the fix costs nothing.", source: "stick-insect-enrichment-guide" },
-        { label: "Bug spray", value: "A stick insect is an arthropod and every insecticide sold for use inside a home is designed to kill arthropods. A healthy animal can be found dead the morning after an ordinary household task, a can of ant spray used in the kitchen, a plug-in device switched on in the hallway, a dog treated for fleas on the living room rug. Foraged foliage carries the same risk from outside.", source: "invertebrate-pesticide-hazards-guide" },
-        { label: "A power cut, and a trip", value: "A stick insect lives at whatever temperature the room already sits at, so a power cut is rarely the emergency it would be for a reptile or a fish tank.", source: "invertebrate-emergency-travel-shipping-guide" },
+        { label: "Enclosure", value: "Length and width at least twice the adult's body length, height at least three times, since height is what allows a molt. A single Indian stick insect does fine in about 8 by 8 by 12 inches; a group or a larger species needs more.", source: "stick-insect-tank-setup-guide" },
+        { label: "The mesh top", value: "Essential. They hang from the ceiling to molt, and shedding from mesh succeeds far more reliably than from a branch or smooth glass.", source: "stick-insect-tank-setup-guide" },
+        { label: "Temperature", value: "Room temperature, roughly 63 to 77°F, for Indian stick insects; tropical species run warmer. Any bulb goes away from the mesh where the insect hangs, and off at night.", source: "stick-insect-tank-setup-guide" },
+        { label: "Humidity", value: "60 to 80% for tropical species, far less fussy for Indian ones. Daily light misting with dechlorinated or distilled water over an inch or two of coir, peat, or paper towel, and a hygrometer.", source: "stick-insect-tank-setup-guide" },
+        { label: "Food", value: "Leaves, and nothing else. Washed bramble suits almost every kept species; Indian stick insects also take privet and ivy, and rose, hawthorn, oak, and eucalyptus each suit others. Match the plant to the species you have.", source: "stick-insect-tank-setup-guide" },
+        { label: "Keeping the leaves alive", value: "Cut stems standing in a jar of water stay good for days. Block the jar's opening so a nymph cannot fall in and drown.", source: "stick-insect-tank-setup-guide" },
+        { label: "Water", value: "They drink droplets from misting, not from a dish, and an open reservoir drowns small nymphs.", source: "stick-insect-health-issues-guide" },
+        { label: "Failed molts", value: "The single biggest risk, from too little vertical space or low humidity in the days before. It cannot be treated after the fact; the enclosure height and the misting are the whole prevention.", source: "stick-insect-health-issues-guide" },
+        { label: "Mold", value: "From an enclosure too damp with poor airflow. Ventilate and change the substrate about weekly.", source: "stick-insect-health-issues-guide" },
+        { label: "Handling", value: "Grasp the body or thorax, never a leg: they drop legs to escape, and an adult's lost leg is permanent. A dropped leg, a rigid drop, or a defensive scent all mean the session was too rough.", source: "stick-insect-handling-guide" },
+        { label: "You will get eggs", value: "Indian and Vietnamese stick insects reproduce without a male. One female founds a colony on her own, and none of it can be released.", source: "stick-insect-handling-guide" },
+        { label: "More than one", value: "Herbivorous and non-aggressive, so groups work. Overcrowding shows as missing legs and antennae knocked off during molts: thin the group or enlarge the enclosure.", source: "stick-insect-enrichment-guide" },
+        { label: "Bug spray", value: "Every household insecticide is designed to kill arthropods, and foraged foliage carries the same risk from outside.", source: "invertebrate-pesticide-hazards-guide" },
+        { label: "A power cut", value: "It lives at room temperature, so an outage is rarely the emergency it is for a reptile or a fish tank.", source: "invertebrate-emergency-travel-shipping-guide" },
       ],
     },
     emergencyCard: {
       source: "stick-insect-health-issues-guide",
+      heading: "Check the enclosure height and humidity first, then act on these today. No vet care exists for this animal.",
       callNow: [
-        "A shed that doesn't complete properly, which results in deformity or death",
-        "Too little vertical space for the insect to hang freely while shedding, or humidity too low in the days before the molt",
-        "Small nymphs can drown in an open water reservoir used to keep cut host-plant foliage fresh",
-        "Mold, from an enclosure kept too damp combined with poor ventilation or infrequent cleaning",
-        "A lost leg, a genuine and common outcome of rough handling, and an adult's lost leg is permanent",
+        "A shed that does not complete, leaving deformity, which cannot be treated after the fact",
+        "A nymph in the water jar that keeps the cut foliage fresh: block the opening",
+        "Mold, from an enclosure kept too damp with poor ventilation or infrequent cleaning",
+        "A lost leg, which is rough handling; an adult's lost leg is permanent",
       ],
-      vetLine: "This isn't something to treat after the fact. Prevention through correct enclosure height and misting, tracked with a digital hygrometer rather than guesswork, is really the only effective approach.",
+      vetLine: "Prevention through correct enclosure height and misting, tracked with a digital hygrometer rather than guesswork, is the only effective approach.",
     },
     routes: [
       { slug: "stick-insect-cost-guide", line: "The APHIS permit a hobbyist cannot get, a few dollars a nymph, and $1,000 for a rare giant." },
@@ -1009,13 +934,14 @@ export const invertebrateGuides = [
     },
     emergencyCard: {
       source: "tarantula-health-issues-guide",
+      heading: "Check the water dish and humidity first, then act on these today. Vet care for tarantulas is limited.",
       callNow: [
         "A shriveled, wrinkled abdomen with lethargy or legs curling tightly under the body (dehydration)",
         "A molt that looks stuck or incomplete",
         "A ruptured abdomen or hemolymph visibly leaking from an injury",
         "Refusing food for more than a month, especially alongside dehydration signs",
       ],
-      vetLine: "Vet care for tarantulas is limited and prevention matters more than treatment. A shallow water dish and correct humidity prevent most dehydration cases; never disturb, handle, or feed a molting tarantula.",
+      vetLine: "Prevention matters more than treatment. A shallow water dish and correct humidity prevent most dehydration; never disturb, handle, or feed a molting tarantula.",
     },
     routes: [
       { slug: "tarantula-cost-guide", line: "$25 to $100 for the spider, $70 to $300 for setup, and why the ongoing budget stays small for decades." },
