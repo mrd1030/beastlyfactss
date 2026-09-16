@@ -560,7 +560,7 @@ is why they kept getting deferred. Do them once section 7 is finished.
 - [ ] Five shared-guide gaps batch N's readers found on multiple species at once,
       which is what makes them shared-guide work rather than five hub lines.
 
-      - Water changes have no home anywhere on the site. Bristlenose pleco,
+      - DONE 2026-09-16, content/guides/aquarium-water-changes-guide.mdx, wired into every fish and shrimp sidebar and onto twelve hub cards as a Water changes row; the hero image is the one thing still owed. Water changes have no home anywhere on the site. Bristlenose pleco,
         swordtail, zebra danio and ghost shrimp all carry a schedule that exists
         only on the hub, and no deep dive and no shared aquarium guide states a
         frequency or a percentage. Four of five species in one batch, and the
