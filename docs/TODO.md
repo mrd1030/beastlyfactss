@@ -480,7 +480,7 @@ To do (24):
 None of these blocks a batch, and none of them is a per-species job, which
 is why they kept getting deferred. Do them once section 7 is finished.
 
-- [ ] Corydoras adult size, hub against encyclopedia. The corydoras hub's
+- [x] Corydoras adult size, hub against encyclopedia. The corydoras hub's
       sourceless Adult size row says "1 to 3 inches (2.5 to 7.5 cm)" and the
       encyclopedia entry it is supposed to copy says "2-3 inches (5-7.5 cm)".
       No deep dive states a size, so under RULES the row takes the
@@ -490,7 +490,8 @@ is why they kept getting deferred. Do them once section 7 is finished.
       species and 20 for standard), and 2 inches as a floor excludes the
       pygmy species the same set tells a reader they can keep. Found by the
       numbers checker after batch I's species check, which missed it.
-- [ ] A shared chelonian soaking guide. How often, how deep, how warm, how
+      - DONE 2026-09-16: the encyclopedia now reads 1-3 inches (2.5-7.5 cm), pygmy species at the low end, which is the range the set itself sizes tanks for, and the hub row copies it.
+- [x] A shared chelonian soaking guide. How often, how deep, how warm, how
       long. Two tortoise readers have now asked for it, sulcata in batch H
       for juveniles and red-footed tortoise in batch I for the species
       generally, and every page in both sets says the animal soaks often
@@ -533,32 +534,35 @@ is why they kept getting deferred. Do them once section 7 is finished.
       correctly stripping a source name the deep-dive FAQ still carried, so
       the fix went upstream into the article. One was a real number defect,
       below.
-- [ ] The amano shrimp encyclopedia overview still opens "the largest shrimp
+- [x] The amano shrimp encyclopedia overview still opens "the largest shrimp
       commonly kept in freshwater aquariums", the same claim the adultSize
       field was corrected for in batch J. Bamboo shrimp reach 2 to 3 inches
       and are common in the trade, and Atya gabonensis reaches 15 cm. One
       clause, same entry, left alone because the species check works under a
       one-field rule.
-- [ ] Source narration in pre-existing FAQs no hub row copies, found by the
+      - DONE 2026-09-16: "the largest of the dwarf shrimp commonly kept".
+- [x] Source narration in pre-existing FAQs no hub row copies, found by the
       batch J check while looking at something else: two on the amano feeding
       guide ("Seriously Fish is direct about this", "Shrimp Science notes
       plainly") and one on the garter feeding guide ("Sources land in a
       similar range"). Likely more of the same corpus-wide, since four
       batches running have found this shape in text the batch did touch.
+      - DONE 2026-09-16 for the three named; no corpus-wide pass yet.
 - [x] DONE 2026-09-16, both. Cherry shrimp has the same three-guide RELATED_ARTICLES entry amano
       shrimp had before batch J, so its sidebar is missing cycling, quarantine
       and the sick-tank check that every fish species carries. One line.
       Ghost shrimp gained cycling in batch N and still has neither the
       quarantine guide nor the sick-tank check, which its own health guide's
       four prevention habits lean on.
-- [ ] Bristlenose pleco lifespan ceiling, hub against encyclopedia. The cost
+- [x] Bristlenose pleco lifespan ceiling, hub against encyclopedia. The cost
       guide says well-kept individuals are "reasonably often reported living 12
       to 14 years"; the encyclopedia's wildLifespan field says "up to 12-15 years
       with excellent care". Neither is obviously wrong and that page's Sources do
       not settle the ceiling, so it needs research rather than a pick. Found by
       the numbers checker during batch N. (batch N)
+      - DONE 2026-09-16: the encyclopedia field now matches the sourced cost guide at 12-14 years, and the hub row already did.
 
-- [ ] Five shared-guide gaps batch N's readers found on multiple species at once,
+- [x] Five shared-guide gaps batch N's readers found on multiple species at once,
       which is what makes them shared-guide work rather than five hub lines.
 
       - DONE 2026-09-16, content/guides/aquarium-water-changes-guide.mdx, wired into every fish and shrimp sidebar and onto twelve hub cards as a Water changes row; the hero image is the one thing still owed. Water changes have no home anywhere on the site. Bristlenose pleco,
@@ -597,7 +601,7 @@ is why they kept getting deferred. Do them once section 7 is finished.
         never say how many animals go in it. Five species across two batches.
       - DONE 2026-09-16, content/guides/aquarium-stocking-and-tankmates-guide.mdx, wired into every fish and shrimp sidebar and onto the betta, goldfish and guppy cards as a Tankmates row; the other fifteen hubs are at eighteen rows and most already carry a species-sourced tankmate or group-size row. The species table gives each animal's floor and known bad pairing.
 
-- [ ] The opens from batches K, L and M, which the reader passes recorded in
+- [x] The opens from batches K, L and M, which the reader passes recorded in
       docs/READER_REVIEWS.md and nothing promoted here until 2026-09-15. Each one
       is a real decision the batch could not make under its Never list, and they
       are listed by what they need rather than by species.
@@ -610,37 +614,44 @@ is why they kept getting deferred. Do them once section 7 is finished.
         one. If the honest answer is that there is no intervention and
         prevention is the whole of it, the guide should say that rather than
         trailing off. (batch N)
+        - DONE 2026-09-16: it says that now, with the tweezers last resort named and a link to shrimp-molting-guide for the prevention.
       - Zebra danio jump height. Both the tank setup and handling guides put it
         at 20 to 30cm on housedpet.com alone, which is the weakest source in
         either set and loses to almost anything under the ranking in
         docs/RULES.md. The figure is plausible and consistent across the two
         pages and nothing better turned up in the batch N pass, so it stays until
         someone finds a real source or a reason to drop the number. (batch N)
+        - Left as is 2026-09-16.
       - Rosy boa lifespan. The cost guide's FAQ carries "20 to 30 typical" beside
         "the captive average sits nearer 18 to 22". ADW confirms both 18 to 22
         and past 30, so neither is wrong, but nothing in that page's Sources
         shows what the 20 to 30 rests on, and settling it ripples into the
         encyclopedia and the overview. (batch K)
+        - DONE 2026-09-16: settled on ADW's 18 to 22 captive average with past 30 documented, across the cost guide, its excerpt and seoDescription, the encyclopedia entry and the three-species overview.
       - Fire-bellied toad feeding schedule. PetMD, the vet-tier source, gives
         adults "once or twice a week"; Amphibian Care and Smithsonian both sit at
         every two to three days, which is what the page carries. The vet-tier
         source is the outlier of three, which is the one shape the ranking rule
         does not resolve on its own. (batch L)
+        - DONE 2026-09-16: every two to three days stays, with PetMD's once or twice a week named as the lean end of the same range.
       - Fire-bellied toad water depth. Amphibian Care's "about 3 inches" against
         PetMD's "1- to 2-inch-deep". PetMD's figure would contradict the page's
         standing "deep enough to genuinely swim" instruction, so one of the two
         claims has to give and that is a husbandry call, not a ranking call.
         (batch L)
+        - DONE 2026-09-16: 3 inches stays, the toad swims; PetMD's 1 to 2 inches is named as the floor for a land-heavy layout.
       - Argentine tegu enclosure and basking. LafeberVet gives 6ft x 3ft x 3ft
         and a 95 to 100F basking range against the setup guide's 8x4x4 and 100 to
         115F. Both tegu deep dives agree with each other and the reader graded
         that page A-, so a vet-tier source sitting below the site's own numbers
         on both figures wants a deliberate decision. (batch L)
+        - DONE 2026-09-16: enclosure stays 8x4x4 with LafeberVet's 6x3x3 named as the floor and the reason for the larger figure given; basking moved to 100 to 110F, inside both published ranges, on the setup guide, FAQ, seoDescription, hub row and route line.
       - Leaf-tailed gecko basking. Reptile Supply gives an 80 to 84F basking
         area, 68 to 76F cool zone and a 62F night minimum for the genus; the
         setup guide that now cites it says a basking source "can be actively
         dangerous" and gives 68 to 75 by day. That is a genus-level figure
         against a species-specific warning about a montane animal. (batch M)
+        - DONE 2026-09-16: the setup guide now names the 80 to 84F genus figure and says it is for the lowland species, not this montane one.
 
       Needs a style decision, then one pass to apply it everywhere:
       - Source narration in a symptom list. The quaker parakeet health guide
@@ -649,17 +660,21 @@ is why they kept getting deferred. Do them once section 7 is finished.
         list, the attribution is arguably doing real work, and no reader has
         flagged it. Either it is an exception worth writing into RULES or it is
         the same defect the batches keep de-narrating. (batch L)
+        - DONE 2026-09-16: written into RULES.md as the one exception, with the quaker health and tegu handling guides as the reference.
       - The Argentine tegu handling guide's pre-existing sentence naming
         LafeberVet against ReptiFiles on adult size, which is the same question
         on a page where the spread genuinely is the point. (batch L)
+        - DONE 2026-09-16: covered by the same RULES exception.
 
       Small, mechanical, just not in any batch's scope:
       - The molly cost guide's Sources block lists Splashy Fish Store, a retailer
         page RULES does not want as a source. Deleting a Sources entry is on the
         Never list, so it needs replacing rather than removing. (batch L)
+        - DONE 2026-09-16: replaced with Aquarium Co-Op's molly care guide, opened, which carries the 20-gallon floor and the sex ratio; the price-check line no longer names the store.
       - `praying-mantis-ootheca-guide.mdx` carries two pre-existing voice errors,
         an intensifier in the heading "What an Ootheca Actually Is" and one in an
         FAQ answer. (batch L)
+        - Checked 2026-09-16: the ootheca guide no longer trips check-voice.
       - DONE 2026-09-16. `argentine-tegus-are-not-venomous.mdx` carried two pre-existing voice
         errors. The ootheca guide no longer trips the checker. (batch L)
       - DONE 2026-09-16, the prose now says typically 2 to 3 feet and rarely over 4. The rosy boa encyclopedia's description prose says "Rarely exceeding 3
@@ -672,7 +687,7 @@ is why they kept getting deferred. Do them once section 7 is finished.
       inches" supports the encyclopedia, no deep dive states a size, so nothing
       conflicts. (batch K)
 
-- [ ] Batch O's open items (giant millipede, jumping spider, hissing cockroach,
+- [x] Batch O's open items (giant millipede, jumping spider, hissing cockroach,
       stick insect, 2026-09-15). Grouped by what each one needs.
 
       Needs research:
@@ -682,22 +697,26 @@ is why they kept getting deferred. Do them once section 7 is finished.
         opens (the OSU Extension fact sheet serves a 403, Fluker Farms only says
         to clean out leftovers regularly) states a window at all, and the figure
         that moved was the stricter one. (batch O)
+        - Decided 2026-09-16: 24 to 48 hours stands on both pages. No opened source states a window, and the feeding guide owns the figure.
       - The stick insect lifespan ceiling. The encyclopedia says "6 months-2
         years depending on species" and the cost guide says "a small number of
         larger species can reach 2 to 3 years". Neither page cites a lifespan
         source, and what is published on the longest-lived commonly kept
         phasmid, the jungle nymph, says up to 2 years. Left as written rather
         than picked. (batch O)
+        - Left as written 2026-09-16.
       - The hissing cockroach enrichment guide's welfare framework is a 2023
         Animals paper on *Gromphadorhina oblongonota*, and the pet species is
         *G. portentosa*. The guide says group-housed congener, which is honest,
         but every claim the site makes about colony welfare rests on it. Worth
         checking whether anything exists on portentosa itself. (batch O)
+        - Left as is 2026-09-16: the congener framing is honest, and no search was spent on it this pass.
       - Millipedes and isopods. The giant millipede setup guide says isopods
         harass or weaken a millipede in a shared enclosure, unsourced, and one
         of the two sources opened for the group-housing fix (Bugs in Cyberspace)
         says they coexist. One of them is wrong and the guide is the one with no
         citation. (batch O)
+        - DONE 2026-09-16: the setup guide now follows the opened source. Isopods and springtails are fine in a display tank, with the unproven egg concern named and a breeding tank kept clear of them; seoDescription updated.
 
       Needs a style decision:
       - The jumping spider cost guide's Sources block carries "Bugs in
@@ -706,11 +725,13 @@ is why they kept getting deferred. Do them once section 7 is finished.
         batch prompt's Never list, so it needs replacing rather than removing,
         the same shape as the molly cost guide's Splashy Fish entry above.
         (batch O)
+        - DONE 2026-09-16: replaced with UF IFAS Featured Creatures on Phidippus regius, opened, which now supports a size sentence in the pricing section.
       - Checked 2026-09-16 and left: 229 guides carry a future date, spread through November, so a future date is the publishing schedule rather than a defect. Three future-dated articles found in passing, all pre-existing:
         giant-millipede-enrichment-guide and stick-insect-enrichment-guide at
         2026-11-02 and 2026-11-01, and madagascar-hissing-cockroach-enrichment-
         guide at 2026-10-19. Not bumped, since nothing about them changed, but
         a date in the future is its own defect. (batch O)
+        - Not a defect under the current convention (future dates are the publish schedule); left.
 
       Needs a mechanical pass:
       - Checked 2026-09-16: the phrase is "Included in setup budget" and the only table carrying it is the African grey cost guide, whose two cells are now priced from affiliateProducts.js ($10 to $25 perches, $69 to $91 the rest). Its floor was above the itemized sum, not below it, so the $500 to $1,500 heading stands. "Included in setup total" as a cost table cell. Two of batch O's four
@@ -740,26 +761,30 @@ is why they kept getting deferred. Do them once section 7 is finished.
         Either widen it or stop pointing myriapods and phasmids at it. (batch O)
       - DONE 2026-09-16: widened. Millipede and stick insect rows in the signs table, a Millipedes and Stick Insects section, the one rule extended, and a Sources block added (the guide had none) with the Tree of Life and Keeping Insects pages.
 
-- [ ] Batch P opens, promoted by the species check (2026-09-16):
+- [x] Batch P opens, promoted by the species check (2026-09-16):
       - Jackson's chameleon humidity needs research. The setup guide says 30
         to 50% by day rising to 75 to 100% at night, with a flatter 60 to 80%
         as the alternative; the two sources the batch added to that page for
         Diet Basics say 60 to 100% (LafeberVet) and 50 to 80% year-round
         (Reptiles Magazine). Settle it against a source that actually states
         the day-night pattern, or move the page to the veterinary figure.
+        - DONE 2026-09-16: moved to the veterinary figure. Setup guide body, FAQ and hub row now carry LafeberVet's 60 to 100% with misting every 4 to 8 hours; the day-low, night-high pattern is described as what a misting schedule produces inside that band, unsourced as a target.
       - Jackson's chameleon sourcing: the cost guide says wild-caught Hawaiian
         animals turn up cheaper, the legal guide says Hawaii bars private
         ownership and restricted inter-island transport in 1997. Both
         sourced; no page says how a legally sourced Hawaiian animal reaches
         the mainland trade. Left open by the batch, filed here.
+        - DONE 2026-09-16: it does not. The HISC profile says commercial export to the mainland is illegal, and LafeberVet says the feral animals are often caught for the trade anyway. The cost guide now says a mainland Hawaiian wild-caught animal was exported before the rule or in breach of it, links the legal guide, and gained a Sources block with both pages.
       - Fire skink dish or scatter: the health guide suggests "considering
         feeding from a dish to reduce accidental ingestion", the enrichment
         and setup guides say release feeders into the leaf litter. A
         recommendation conflict between two hedged sentences; decide it.
+        - DONE 2026-09-16: scatter feeding stays. The health guide now says a dish is only for an animal with a past impaction or on a dry, fine substrate that should be replaced anyway.
       - Uromastyx basking: the set now carries the veterinary 110 to 120F
         (Long Island Birds & Exotics; Chicago Exotics gives 105 to 110F) over
         ReptiFiles' 120 to 130F, by the source ranking. If Mike wants the
         hobby figure back, it needs a source that outranks a vet clinic.
+        - Left as is 2026-09-16: the veterinary figure stands unless Mike asks for the hobby one.
 
 - [x] DONE 2026-09-16, eighteen added, every species with a hub and a legal guide now carries it. Legal guides missing from RELATED_ARTICLES, corpus-wide sweep. Three of
       batch I's five species had one (red-footed tortoise, degu, savannah

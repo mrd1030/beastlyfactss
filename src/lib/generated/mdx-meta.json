@@ -1709,7 +1709,7 @@
     "faqs": [
       {
         "q": "What do amano shrimp eat?",
-        "a": "Algae and biofilm as the foundation, supplemented with sinking wafers, shrimp pellets, and blanched vegetables like zucchini, spinach, or cucumber. Seriously Fish is direct about this: amano shrimp are unable to survive on a diet of algae alone, despite the reputation, so supplemental food is a real requirement, not an extra."
+        "a": "Algae and biofilm as the foundation, supplemented with sinking wafers, shrimp pellets, and blanched vegetables like zucchini, spinach, or cucumber. Amano shrimp cannot survive on algae alone, despite the reputation, so supplemental food is a requirement, not an extra."
       },
       {
         "q": "What algae are amano shrimp good at eating?",
@@ -1717,7 +1717,7 @@
       },
       {
         "q": "What algae do amano shrimp struggle with?",
-        "a": "Flat, tightly adhered types like green spot algae. Shrimp Science notes plainly that amano shrimp will happily eat soft algae like beard algae but won't be able to get at the tougher, surface-bonded types. Cyanobacteria (blue-green algae) isn't a true algae at all and amano shrimp generally leave it alone too, it needs to be treated as a bacterial bloom instead."
+        "a": "Flat, tightly adhered types like green spot algae. Amano shrimp eat soft algae like beard algae readily and cannot get at the tougher, surface-bonded types. Cyanobacteria (blue-green algae) isn't a true algae at all and amano shrimp generally leave it alone too, it needs to be treated as a bacterial bloom instead."
       },
       {
         "q": "How do I know when to start supplemental feeding?",
@@ -2599,7 +2599,7 @@
     "path": "/content/guides/aquarium-ich-treatment-guide.mdx",
     "slug": "aquarium-ich-treatment-guide",
     "title": "Treating Ich: Heat, Salt or Medication, and the Temperature Ceiling That Decides",
-    "seoTitle": "Treating Ich in Aquarium Fish: Heat, Salt or Meds",
+    "seoTitle": "Treating Ich: Heat, Salt or Medication",
     "excerpt": "Every fish health guide here says to treat ich by raising the temperature, and half of them say it about a species whose ceiling is below the number that works. This is the page that settles which fish can take the heat, which get salt, which get medication, and how long.",
     "date": "2026-11-30",
     "category": "Fish",
@@ -2650,7 +2650,9 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 9,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/aquarium-power-outage-and-transport-guide.mdx",
@@ -3199,7 +3201,7 @@
       },
       {
         "q": "What temperatures does an Argentine tegu enclosure need?",
-        "a": "Basking 100 to 115F, warm ambient in the 90s, cool side near 80F, and nights may drop to 65F without triggering brumation. Reaching those numbers takes a powerful heat source, basking bulbs or a radiant heat panel, on a real thermostat."
+        "a": "Basking 100 to 110F, warm ambient in the 90s, cool side near 80F, and nights may drop to 65F without triggering brumation. Reaching those numbers takes a powerful heat source, basking bulbs or a radiant heat panel, on a real thermostat."
       },
       {
         "q": "How much humidity does an Argentine tegu need?",
@@ -18102,7 +18104,7 @@
       },
       {
         "q": "What causes substrate impaction in fire skinks?",
-        "a": "Dry, loose substrate swallowed by accident during feeding. See a vet if suspected. Moist substrate prevents it, and consider feeding from a dish to reduce accidental ingestion."
+        "a": "Dry, loose substrate swallowed by accident during feeding. See a vet if suspected. Moist substrate prevents it. Scatter feeding into the leaf litter, which the setup and enrichment guides call for, is safe on a properly moist substrate, and a dish is only for an animal that has already had an impaction or is on a dry, fine substrate that should be replaced anyway."
       },
       {
         "q": "Do fire skinks get metabolic bone disease?",
@@ -19667,7 +19669,7 @@
       },
       {
         "q": "How often should I feed a garter snake?",
-        "a": "Frequency depends on what the snake eats. Sources land in a similar range: earthworm-heavy diets need feeding roughly twice a week, fish-heavy diets about every 5 to 7 days, and mouse-eaters about once a week as adults, with juveniles fed more often, every other day to every few days. Two smaller items can substitute for one larger one."
+        "a": "Frequency depends on what the snake eats. Earthworm-heavy diets need feeding roughly twice a week, fish-heavy diets about every 5 to 7 days, and mouse-eaters about once a week as adults, with juveniles fed more often, every other day to every few days. Two smaller items can substitute for one larger one."
       },
       {
         "q": "Is it safe to feed live feeder fish or earthworms?",
@@ -26374,7 +26376,9 @@
     "truth": null,
     "sourceCount": 4,
     "headingCount": 7,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/invertebrate-rehousing-guide.mdx",
@@ -26534,7 +26538,7 @@
     "faqs": [
       {
         "q": "How much does a Jackson's chameleon cost to buy?",
-        "a": "$90 to $150 typically, and prized, highly colored specimens of the primary subspecies reach $250. Wild-caught Hawaiian animals sometimes turn up cheaper, but they're frequently parasitized, so captive-bred is worth the higher price here."
+        "a": "$90 to $150 typically, and prized, highly colored specimens of the primary subspecies reach $250. Wild-caught Hawaiian animals sometimes turn up cheaper, but Hawaii bars commercial export to the mainland, so a cheap Hawaiian animal was either exported before the rule or illegally, and it is frequently parasitized besides. Captive-bred is worth the higher price here."
       },
       {
         "q": "What does the upfront enclosure setup cost?",
@@ -26569,8 +26573,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 2,
+    "headingCount": 8,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -26864,7 +26868,7 @@
       },
       {
         "q": "What humidity does this species need?",
-        "a": "Around 30 to 50% by day, climbing to 75 to 100% overnight. Mist morning and evening, use an automated mister for consistency, and put a cool-mist humidifier on a humidistat for the overnight spike. Live plants hold it up naturally."
+        "a": "60 to 100% relative humidity, the veterinary figure, from misting every 4 to 8 hours or an automated mister, with a cool-mist humidifier where the room cannot hold it. The misting is also how the chameleon drinks. Live plants hold it up naturally."
       },
       {
         "q": "What substrate and lighting does a Jackson's chameleon need?",
@@ -26987,7 +26991,7 @@
     "faqs": [
       {
         "q": "How much does a jumping spider cost?",
-        "a": "$15 to $60. Captive-bred spiderlings run $15 to $25, while juvenile or sub-adult females, generally more prized since they live considerably longer than males, run $25 to $60. Named regional color forms cost more than standard animals."
+        "a": "$15 to $60. Captive-bred spiderlings run $15 to $25, while juvenile or sub-adult females, generally more prized since they live considerably longer than males, run $25 to $60. The size gap is small, an adult female averaging 15 mm to a male's 12 mm on the University of Florida's species page; what you are paying for is the lifespan. Named regional color forms cost more than standard animals."
       },
       {
         "q": "What does a complete jumping spider setup cost upfront?",
@@ -36719,7 +36723,7 @@
       },
       {
         "q": "Which of these three reptiles lives the longest?",
-        "a": "The red-footed tortoise, by a wide margin. Wild and captive individuals commonly live 50 to 70 years, with some documented past 90. The rosy boa is also long-lived for a snake, regularly reaching 20 to 30 years in captivity, while the garter snake typically lives 6 to 10 years in captivity, occasionally past 20."
+        "a": "The red-footed tortoise, by a wide margin. Wild and captive individuals commonly live 50 to 70 years, with some documented past 90. The rosy boa is also long-lived for a snake, averaging 18 to 22 years in captivity with individuals documented past 30, while the garter snake typically lives 6 to 10 years in captivity, occasionally past 20."
       }
     ],
     "relatedProducts": [],
@@ -37450,7 +37454,7 @@
     "slug": "rosy-boa-cost-guide",
     "title": "How Much Does a Rosy Boa Really Cost?",
     "seoTitle": "Rosy Boa Price: $150 to $400, Plus $150 to $250 Setup",
-    "excerpt": "A rosy boa costs a fraction of what a boa constrictor does to buy and set up, a modest enclosure covers a snake that never gets past 3 or 4 feet, while the 20 to 30+ year lifespan stays just as serious a commitment.",
+    "excerpt": "A rosy boa costs a fraction of what a boa constrictor does to buy and set up, a modest enclosure covers a snake that never gets past 3 or 4 feet, while the 18 to 22 year average lifespan, past 30 for some, stays just as serious a commitment.",
     "date": "2026-09-25",
     "category": "Reptiles",
     "categories": [
@@ -37486,7 +37490,7 @@
       },
       {
         "q": "How long do rosy boas live?",
-        "a": "20 to 30 years is typical in captivity, documented individuals have lived past 30, and the captive average sits nearer 18 to 22. That makes this small snake comparable in longevity to the much larger boa constrictor, a real commitment packed into a snake that never needs a bigger enclosure."
+        "a": "18 to 22 years is the captive average on Animal Diversity Web, and documented individuals have lived past 30. That makes this small snake comparable in longevity to the much larger boa constrictor, a real commitment packed into a snake that never needs a bigger enclosure."
       },
       {
         "q": "How does a rosy boa's cost compare to a boa constrictor's?",
@@ -38960,7 +38964,9 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 8,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/siberian-husky-enrichment-guide.mdx",
@@ -43218,7 +43224,9 @@
     "truth": null,
     "sourceCount": 6,
     "headingCount": 9,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/ultimate-birdwatching-guide-best-places-times-tips-2026.mdx",
