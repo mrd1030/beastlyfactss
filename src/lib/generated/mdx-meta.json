@@ -2660,6 +2660,124 @@
     "imageHeight": 1067
   },
   {
+    "path": "/content/guides/aquarium-stocking-and-tankmates-guide.mdx",
+    "slug": "aquarium-stocking-and-tankmates-guide",
+    "title": "Aquarium Stocking and Tankmates: How Many Fish, and Which Ones Go Together",
+    "seoTitle": "Aquarium Stocking and Tankmates: How Many Fish Fit",
+    "excerpt": "Every species page gives a minimum tank size and stops. This is the page after the minimum: what the inch-per-gallon rule gets wrong, the three things that set how many fish a tank holds, the four checks that decide whether two species can share it, and the group sizes the research supports.",
+    "date": "2026-11-28",
+    "category": "Fish",
+    "categories": [
+      "Fish",
+      "Invertebrates"
+    ],
+    "tags": [
+      "Fish Care",
+      "Stocking",
+      "Tankmates",
+      "Community Tank",
+      "Beginner Fishkeeping",
+      "Shrimp Care"
+    ],
+    "readTime": 10,
+    "difficulty": "Beginner",
+    "image": "/assets/images/aquarium-stocking-and-tankmates-guide.jpg",
+    "imageAlt": "A planted freshwater community aquarium with a school of small tetras in the open water, corydoras catfish on the sand, and a single angelfish among tall plants",
+    "emoji": "🐟",
+    "lastReviewed": "2026-11-28",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is the inch-per-gallon rule wrong?",
+        "a": "It works for small community fish of 1 to 3 inches and fails for anything bigger. A 10-inch fish needs far more space than ten 1-inch fish, and it produces far more waste. Past small schooling fish, stock by adult size, waste and temperament, and let a nitrate test tell you whether the tank is keeping up."
+      },
+      {
+        "q": "How do I know if two species can share a tank?",
+        "a": "Run four checks: their temperature ranges overlap, their water chemistry overlaps, neither adult fits in the other's mouth, and neither is a known nipper or bully toward the other's body shape. A pairing has to pass all four. Passing three is how a betta ends up with tiger barbs."
+      },
+      {
+        "q": "How many of a schooling fish do I need?",
+        "a": "Six is the floor most species pages give, and the research points higher. In the group-size study behind that advice, neon tetras and white cloud mountain minnows showed the least aggression and darting in the larger groups, and groups of 10 shoaled the most. Ten of one species beats five each of two."
+      },
+      {
+        "q": "My tank is at the minimum for its species. Can I add more fish?",
+        "a": "Only if the nitrate test says the filter and the water changes are keeping up: under 20 ppm before the weekly change, with room in the tank for every fish at adult size. Add a few at a time, retest for two weeks, and stop at the first reading that creeps. Understocked and growing into it is the version that works."
+      }
+    ],
+    "relatedProducts": [
+      "tank-20-gallon-long",
+      "water-test-kit"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
+    "headingCount": 10,
+    "ledeMatchesExcerpt": false
+  },
+  {
+    "path": "/content/guides/aquarium-water-changes-guide.mdx",
+    "slug": "aquarium-water-changes-guide",
+    "title": "Aquarium Water Changes: How Much, How Often, and What the Number Is For",
+    "seoTitle": "Aquarium Water Changes: How Much and How Often",
+    "excerpt": "A filter never removes nitrate. Only taking water out does. Here is the 25 to 30 percent weekly baseline, the nitrate reading that moves it, the species that break the rule, and why a huge change can kill the fish it was meant to save.",
+    "date": "2026-11-27",
+    "category": "Fish",
+    "categories": [
+      "Fish",
+      "Invertebrates"
+    ],
+    "tags": [
+      "Fish Care",
+      "Water Changes",
+      "Nitrate",
+      "Water Quality",
+      "Beginner Fishkeeping",
+      "Shrimp Care"
+    ],
+    "readTime": 9,
+    "difficulty": "Beginner",
+    "image": "/assets/images/aquarium-water-changes-guide.jpg",
+    "imageAlt": "A gravel vacuum siphoning water from a planted freshwater aquarium into a bucket, with a test kit and a bottle of water conditioner on the stand beside it",
+    "emoji": "🪣",
+    "lastReviewed": "2026-11-27",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much water should I change and how often?",
+        "a": "For a filtered, moderately stocked freshwater tank, 25 to 30 percent once a week. Test nitrate before the change: past 40 ppm between changes means take out more or change more often, under 20 ppm means the schedule is working. Shrimp tanks and a few fish carry their own figure, and their articles override this one."
+      },
+      {
+        "q": "Why does the water still need changing if my filter is working?",
+        "a": "The filter's bacteria turn ammonia into nitrite and nitrite into nitrate, and then stop. Nothing in an ordinary freshwater filter removes nitrate, so it accumulates until water carrying it leaves the tank. A clear tank with a healthy filter can still sit at a nitrate level that is slowly damaging the fish in it."
+      },
+      {
+        "q": "Is it safe to do a 50 percent or larger water change?",
+        "a": "On a tank that gets regular changes, a one-off 50 percent change with matched, dechlorinated water is the standard response to nitrate past the safe line. On a tank that has gone months without one, a large change is the dangerous move: the tank has drifted far from the tap, and swapping most of the water at once shocks fish that were coping. That tank gets small daily changes."
+      },
+      {
+        "q": "Do I have to match the temperature of the new water?",
+        "a": "Yes, close enough that the tank does not swing. Fill from a mix of hot and cold, check it against the tank with a thermometer, and dose the conditioner as the water goes in rather than after. Chlorine damages gills within minutes and there is no treatment once it has, so the conditioner is not the step to skip on a quick refill."
+      }
+    ],
+    "relatedProducts": [
+      "water-test-kit",
+      "water-conditioner"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
+    "headingCount": 10,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
+  },
+  {
     "path": "/content/guides/argentine-tegu-cost-guide.mdx",
     "slug": "argentine-tegu-cost-guide",
     "title": "How Much Does an Argentine Black and White Tegu Really Cost?",
