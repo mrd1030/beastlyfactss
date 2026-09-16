@@ -63,5 +63,4 @@ brumation runs 1 to 3 months," with a vet check past about 3.5 months, more
 than 10 percent weight loss, or appetite not returning within 2 to 3 weeks of
 waking. `content/guides/bearded-dragon-brumation-guide.mdx` used the care
 package's "1 to 3 months typical" framing since it doesn't contradict its own
-3.5-month checkpoint. Someone should tighten the "1 to 4 months is expected"
-line in the feeding guide to match.
+3.5-month checkpoint. Resolved 2026-09-16: the feeding guide now says 1 to 3 months is typical, matching the brumation guide and the care package.

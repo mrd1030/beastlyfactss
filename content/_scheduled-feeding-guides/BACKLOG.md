@@ -3,65 +3,65 @@
 Species that have the full 4-guide care set (cost / handling / health-issues / tank-setup)
 but no feeding guide yet. Generated 2026-08-03.
 
-**Status: 61 species with a full 4-set, 27 have a feeding guide, 34 missing.**
+**Status: 61 species with a full 4-set, 27 had a feeding guide when this was generated; refreshed 2026-09-16, 20 of the 34 have since been published and 14 are still missing (unticked below).**
 
 The publish queue at `queue.json` is currently empty. Move filenames into its `pending`
 array to schedule them for the daily auto-publish routine.
 
 ## Reptiles (12)
 
-- [ ] ackie-monitor
+- [x] ackie-monitor (published)
 - [ ] argentine-tegu
-- [ ] boa-constrictor
+- [x] boa-constrictor (published)
 - [ ] california-kingsnake
 - [ ] green-anole
-- [ ] hognose-snake
+- [x] hognose-snake (published)
 - [ ] jacksons-chameleon
 - [ ] leaf-tailed-gecko
 - [ ] milk-snake
 - [ ] savannah-monitor
 - [ ] tokay-gecko
-- [ ] veiled-chameleon
+- [x] veiled-chameleon (published)
 
 ## Birds (6)
 
-- [ ] african-grey-parrot
-- [ ] budgie
+- [x] african-grey-parrot (published)
+- [x] budgie (published)
 - [ ] canary
-- [ ] cockatoo
-- [ ] conure
-- [ ] lovebird
+- [x] cockatoo (published)
+- [x] conure (published)
+- [x] lovebird (published)
 
 ## Invertebrates (5)
 
-- [ ] emperor-scorpion
+- [x] emperor-scorpion (published)
 - [ ] giant-millipede
-- [ ] hermit-crab
+- [x] hermit-crab (published)
 - [ ] praying-mantis
 - [ ] stick-insect
 
 ## Amphibians (4)
 
-- [ ] axolotl
+- [x] axolotl (published)
 - [ ] fire-bellied-toad
 - [ ] tiger-salamander
-- [ ] whites-tree-frog
+- [x] whites-tree-frog (published)
 
 ## Fish (3)
 
-- [ ] corydoras-catfish
-- [ ] neon-tetra
-- [ ] oscar-fish
+- [x] corydoras-catfish (published)
+- [x] neon-tetra (published)
+- [x] oscar-fish (published)
 
 ## Turtles & Tortoises (3)
 
-- [ ] box-turtle
-- [ ] russian-tortoise
-- [ ] sulcata-tortoise
+- [x] box-turtle (published)
+- [x] russian-tortoise (published)
+- [x] sulcata-tortoise (published)
 
 ## Small & Exotic Pets (1)
 
-- [ ] sugar-glider
+- [x] sugar-glider (published)
 
 ## Cross-linking checklist for each new feeding guide
 
