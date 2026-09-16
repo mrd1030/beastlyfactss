@@ -11,9 +11,9 @@ export const lizardGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Quarantine, hygiene, the thermostat probe and the
-    // power-outage line cite the shared reptile guides in the sidebar's
-    // Health and More list. Reconciled 2026-09-15 after the ackie monitor
+    // encyclopedia entry. Hygiene and the thermostat probe cite the shared
+    // reptile guides in the sidebar's Health and More list. Reconciled
+    // 2026-09-15 after the ackie monitor
     // set test (docs/READER_REVIEWS.md). Difficulty follows the
     // encyclopedia entry, which the same pass moved from Advanced to
     // Intermediate: ReptiFiles rates the species Intermediate and the
@@ -32,30 +32,24 @@ export const lizardGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Legal", value: "41 of the 52 jurisdictions place no restriction on it at all. The four places it is unavailable, Washington DC, Hawaii, New York City and New Mexico, are not reacting to this species so much as to lizards or monitors in general, and New Jersey, Rhode Island and Maine want a permit.", source: "ackie-monitor-legal-guide" },
+        { label: "Legal", value: "41 of the 52 jurisdictions place no restriction on it at all.", source: "ackie-monitor-legal-guide" },
         { label: "Day one", value: "Quarantine any new ackie until it's cleared two separate clean fecal checks before introducing it to an established collection, and maintain good general hygiene.", source: "ackie-monitor-health-issues-guide" },
-        { label: "Enclosure", value: "The minimum for a single adult is 5 feet long by 2.5 feet wide by 4 feet tall, larger than the older 4x2x2 foot standard often quoted for this species. The reason is directly tied to how active ackies actually are: this isn't an animal that thrives in a modest footprint the way a more sedentary lizard might.", source: "ackie-monitor-tank-setup-guide" },
-        { label: "Basking surface", value: "Roughly 130 to 170°F, measured directly on the basking stone or stack with an infrared thermometer, not air temperature. A reading below about 130°F is too cool for this species to properly synthesize vitamin D. Most keepers under-provide heat rather than over-provide it, so erring toward the hotter end is usually the safer mistake.", source: "ackie-monitor-tank-setup-guide" },
+        { label: "Enclosure", value: "The minimum for a single adult is 5 feet long by 2.5 feet wide by 4 feet tall, larger than the older 4x2x2 foot standard often quoted for this species.", source: "ackie-monitor-tank-setup-guide" },
+        { label: "Basking surface", value: "Roughly 130 to 170°F, measured directly on the basking stone or stack with an infrared thermometer, not air temperature.", source: "ackie-monitor-tank-setup-guide" },
         { label: "Cool side", value: "Around 75 to 80°F, giving a real thermal gradient across the enclosure.", source: "ackie-monitor-tank-setup-guide" },
-        { label: "Thermostat probe", value: "The probe reads at the animal's level, not up in the airspace near the fixture. For an overhead source, follow your controller's own instruction and confirm the result with independent checks.", source: "reptile-heating-thermostats-guide" },
-        { label: "Retes stack", value: "Stacked shelves or tiles positioned under the basking lamp let your ackie choose its exact preferred basking spot along a genuine temperature gradient, rather than being stuck with one uniform hot zone. Combined with the substrate dam, this is what separates an adequate setup from a good one.", source: "ackie-monitor-tank-setup-guide" },
-        { label: "Substrate", value: "12 to 24 inches of a soil and sand mix that holds a proper burrow, contained with a substrate dam tall enough to hold that depth. Avoid shallow bark-only setups or dry, pure sand, both of which collapse and fail to support the burrowing this species relies on. Budget for multiple bags rather than assuming a single one will cover it.", source: "ackie-monitor-tank-setup-guide" },
-        { label: "Why depth, really", value: "Ackies are obligate burrowers that construct extensive tunnel systems, and depth is the single largest housing choice you make for them. A shallow layer is bedding, not a burrow. A separate damper dig zone lets them excavate humid tunnels without keeping the whole arid enclosure wet.", source: "ackie-monitor-enrichment-guide" },
-        { label: "Humidity", value: "Ackies need both dry and humid zones, and most of the moisture should live underground rather than in the air. That is exactly why deep, moisture-holding substrate matters so much: it is doing real thermoregulatory and hydration work, not just providing digging material.", source: "ackie-monitor-tank-setup-guide" },
-        { label: "UVB", value: "A T5 HO bulb in the 12% desert range, spanning roughly half the enclosure over the basking area, replaced every 12 months. Target a basking-area UVI of 4.0 to 6.0, meaningfully higher than most other commonly kept lizards need. Bright daylight LED alongside it supports this full-sun species.", source: "ackie-monitor-tank-setup-guide" },
-        { label: "Feeding schedule", value: "Hatchlings and juveniles up to about 6 months are fed daily and allowed to eat as much as they want. Subadults and adults eat every other day, roughly what the animal finishes within a 5 to 10 minute window rather than food left available indefinitely. Small, frequent meals are healthier here than large, occasional ones.", source: "ackie-monitor-feeding-guide" },
-        { label: "Staple food", value: "Well-gutloaded insects: black soldier fly larvae, crickets, discoid roaches, dubia roaches, grasshoppers, and silkworms. Mealworms and superworms are occasional additions rather than the base, being higher in fat with harder exoskeletons. Size prey to roughly the width of the ackie's head, not bigger.", source: "ackie-monitor-feeding-guide" },
-        { label: "Not rodents", value: "Don't make rodents a dietary staple. Mice and rats are calorie-dense, and a rodent-heavy diet is directly linked to the fatty liver disease that shortens more captive monitor lifespans than almost anything else. Eggs, quail chicks, and young mice or rats are fine as occasional treats, genuinely sparingly.", source: "ackie-monitor-feeding-guide" },
-        { label: "Supplements", value: "Lightly dust most insect feeders with a reptile calcium powder at each feeding, skipping isopods and hornworms since they're already calcium-rich. Use a multivitamin containing true vitamin A, not just beta-carotene, occasionally rather than on a fixed weekly schedule, since over-supplementing is a real risk here.", source: "ackie-monitor-feeding-guide" },
-        { label: "Gut-load first", value: "Gutload every feeder insect at least 24 hours before offering it, since what the insect ate is most of what the ackie gets out of it.", source: "ackie-monitor-feeding-guide" },
-        { label: "Weigh it weekly", value: "Ackies are naturally so active that they burn far more energy in the wild than most captive setups allow for, and combined with their strong food motivation that creates real overfeeding risk. Reduce feeding frequency and amount, provide a genuinely large enclosure, and weigh the monitor weekly with a kitchen scale to track trends.", source: "ackie-monitor-health-issues-guide" },
-        { label: "Handling", value: "Never grab an ackie from above or chase it out of a hide, which triggers a real prey-flight response rather than building trust. Let the monitor voluntarily climb onto you instead, and use tong-feeding as the main bonding tool. Tame ackies become interactive over time, but they're fast and can scratch or nip if startled.", source: "ackie-monitor-handling-guide" },
-        { label: "Enrichment", value: "Substrate deep enough for a real burrow system first, then enclosure footprint and height since this is an active forager, then puzzle and extraction feeding, then a separate humid dig zone, then climbing structure and rock stacks.", source: "ackie-monitor-enrichment-guide" },
-        { label: "Why puzzles work here", value: "Eight juvenile black-throated monitors were presented with a transparent tube containing food. All eight worked out how to open it within ten minutes, on the first trial. Those are Varanus albigularis results and the ackie is Varanus acanthurus, so this is genus-level evidence: what transfers is that varanids solve novel food problems fast.", source: "ackie-monitor-enrichment-guide" },
+        { label: "Humidity", value: "Ackies need both dry and humid zones, and most of the moisture should live underground rather than in the air.", source: "ackie-monitor-tank-setup-guide" },
+        { label: "Substrate", value: "12 to 24 inches of a soil and sand mix that holds a proper burrow, contained with a substrate dam tall enough to hold that depth.", source: "ackie-monitor-tank-setup-guide" },
+        { label: "UVB", value: "A T5 HO bulb in the 12% desert range, spanning roughly half the enclosure over the basking area, replaced every 12 months. Target a basking-area UVI of 4.0 to 6.0, meaningfully higher than most other commonly kept lizards need.", source: "ackie-monitor-tank-setup-guide" },
+        { label: "Thermostat probe", value: "The probe reads at the animal's level, not up in the airspace near the fixture.", source: "reptile-heating-thermostats-guide" },
+        { label: "Feeding schedule", value: "Hatchlings and juveniles up to about 6 months are fed daily and allowed to eat as much as they want. Subadults and adults eat every other day, roughly what the animal finishes within a 5 to 10 minute window rather than food left available indefinitely.", source: "ackie-monitor-feeding-guide" },
+        { label: "Food and supplements", value: "Well-gutloaded insects: black soldier fly larvae, crickets, discoid roaches, dubia roaches, grasshoppers, and silkworms. Size prey to roughly the width of the ackie's head, not bigger. Lightly dust most insect feeders with a reptile calcium powder at each feeding, skipping isopods and hornworms since they're already calcium-rich.", source: "ackie-monitor-feeding-guide" },
+        { label: "Not rodents", value: "Don't make rodents a dietary staple. Mice and rats are calorie-dense, and a rodent-heavy diet is directly linked to the fatty liver disease that shortens more captive monitor lifespans than almost anything else.", source: "ackie-monitor-feeding-guide" },
+        { label: "Weigh it weekly", value: "Reduce feeding frequency and amount, provide a genuinely large enclosure, and weigh the monitor weekly with a kitchen scale to track trends.", source: "ackie-monitor-health-issues-guide" },
+        { label: "Handling", value: "Never grab an ackie from above or chase it out of a hide, which triggers a real prey-flight response rather than building trust.", source: "ackie-monitor-handling-guide" },
         { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the lizard out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
         { label: "Budget", value: "$150 to $450 for the monitor, with red ackies at the top of that. Setup runs $800 to $1,500 or more, and upkeep roughly $40 to $80 a month, most of it feeder insects and electricity for the high-wattage basking bulbs.", source: "ackie-monitor-cost-guide" },
         { label: "Adult size", value: "Around 2 feet (0.6 m) typical, reported from 17.3 inches (44 cm) to 30 inches (76 cm)." },
-        { label: "Lifespan", value: "15 to 20 years with proper housing and care. That is a long-term commitment layered on a demanding setup, worth weighing both factors together rather than focusing on the animal's relatively modest purchase price.", source: "ackie-monitor-cost-guide" },
+        { label: "Lifespan", value: "15 to 20 years with proper housing and care.", source: "ackie-monitor-cost-guide" },
       ],
     },
     emergencyCard: {
@@ -116,9 +110,9 @@ export const lizardGuides = [
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the handling
     // guide, which is the only page that names its sources and the spread
-    // between them. Salmonella, thermostats, stool and hydration, quarantine
-    // and the emergency plan cite the shared reptile guides in the sidebar's
-    // Health and More list. Reconciled 2026-09-15 after the tegu set test
+    // between them. Salmonella and quarantine cite the shared reptile guides
+    // in the sidebar's Health and More list. Reconciled 2026-09-15 after the
+    // tegu set test
     // (docs/READER_REVIEWS.md).
     //
     // The old hub said in its own comment that its pricing was unverified,
@@ -147,35 +141,24 @@ export const lizardGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Check the law first", value: "Since April 29, 2021, new acquisition of a pet tegu has been banned outright in Florida under the state's Prohibited species list, and the grandfather window closed on July 28, 2021. Georgia, Alabama, Louisiana, Hawaii, the District of Columbia and New York City ban one as a pet, New Mexico requires an import permit, New Jersey a permit under a closed-list code, and Minnesota allows one only from a permitted breeder. Alabama bans at genus level, so a Colombian tegu is caught too.", source: "argentine-tegu-legal-guide" },
-        { label: "Enclosure size", value: "8 feet by 4 feet by 4 feet is the minimum for an adult male, with females needing somewhat less but still substantial space. Many experienced keepers aim for 10 feet by 5 feet by 5 feet or, where possible, a dedicated reptile room. Hatchlings can start in something smaller, around 40 gallons, but grow fast enough that rehousing within the first year is standard.", source: "argentine-tegu-tank-setup-guide" },
-        { label: "The enclosure you can actually buy", value: "A ready made 8ft PVC modular enclosure is actually 8x2x2ft, a partial match on length only, well short of the full 8x4x4ft footprint an adult tegu needs. True adult sized housing for this species is typically a DIY build or ordered direct from a manufacturer.", source: "argentine-tegu-tank-setup-guide" },
-        { label: "Temperature", value: "Basking area 100 to 115F, warm ambient in the 90s, cool side around 80F, with nighttime allowed to drop to 65F without triggering brumation. This species needs a powerful heat source, a cluster of basking bulbs, a radiant heat panel, or both, run through a real heavy duty thermostat rated for the wattage a setup this size actually draws.", source: "argentine-tegu-tank-setup-guide" },
-        { label: "Humidity", value: "70 to 80%, maintained through deep, moisture retentive substrate, live plants in a bioactive style setup, a large water tub, and often an automatic misting system. Manually misting an 8 foot enclosure consistently isn't realistic for most keepers.", source: "argentine-tegu-tank-setup-guide" },
-        { label: "Substrate depth", value: "Deep, 12 to 18 inches or more, of an absorbent, burrow supporting mix: cypress mulch, coconut fiber, organic topsoil, or a bioactive blend. Reaching that depth across an 8 by 4 foot floor takes considerably more than a pack or two. Avoid dry, dusty substrate that doesn't hold a burrow shape.", source: "argentine-tegu-tank-setup-guide" },
-        { label: "Why the depth", value: "Tegus dig, extensively, and will build a burrow they sleep in and brumate in. Depth is the largest single enclosure choice for the species, and a shallow layer is just bedding.", source: "argentine-tegu-enrichment-guide" },
-        { label: "UVB", value: "Strong UVB is required. For an enclosure this large, a 46 inch T5 HO bulb in the 12 to 14% range, spanning a quarter to half the enclosure's length on the warm side, targeting a basking area UVI of 3.0 to 4.0. Add a 6500K LED for brightness and to support live plants. Run a 12 to 14 hour photoperiod.", source: "argentine-tegu-tank-setup-guide" },
-        { label: "Feeding frequency", value: "Set by age rather than by size. Feed a young tegu every day. From one to three years old, every other day. Past three years, every third day. Adult tegus are prone to obesity, so weigh yours regularly and give it the room and the time to move.", source: "argentine-tegu-tank-setup-guide" },
-        { label: "Diet", value: "Young tegus are primarily insectivorous, then the protein moves to appropriately sized pre-killed or frozen-thawed rodents. Live rodents are not worth the injury risk. Lean ground meat, fish and raw eggs are occasional treats. Offer a variety of vegetables alongside smaller amounts of fruit, and expect fruit to matter more as the animal ages.", source: "argentine-tegu-tank-setup-guide" },
-        { label: "Supplements", value: "A calcium supplement without D3 goes on or in every meal, and a multivitamin once a week. That does not change with age.", source: "argentine-tegu-tank-setup-guide" },
-        { label: "Never from your hand", value: "A hungry tegu is a voracious feeder and will not distinguish a finger from the food, so use a bowl, tongs, a puzzle feeder, or a separate paper-lined feeding container, which has the added effect of teaching the animal that its usual enclosure is not where food appears.", source: "argentine-tegu-tank-setup-guide" },
-        { label: "Puzzle feeding", value: "A container with visible food that has to be opened, food under a moveable object, food buried in a new spot. A tegu will work sliders and lift-out plugs, which is exactly what a bearded dragon will not do.", source: "argentine-tegu-enrichment-guide" },
-        { label: "A soak big enough to get into", value: "Tegus soak readily, and a container large enough to fully enter supports hydration and shedding. It is genuinely passive: you provide it, the animal decides. Larger tubs are worth it for an adult.", source: "argentine-tegu-enrichment-guide" },
+        { label: "Check the law first", value: "Since April 29, 2021, new acquisition of a pet tegu has been banned outright in Florida under the state's Prohibited species list, and the grandfather window closed on July 28, 2021.", source: "argentine-tegu-legal-guide" },
+        { label: "Enclosure size", value: "8 feet by 4 feet by 4 feet is the minimum for an adult male, with females needing somewhat less but still substantial space.", source: "argentine-tegu-tank-setup-guide" },
+        { label: "The enclosure you can actually buy", value: "A ready made 8ft PVC modular enclosure is actually 8x2x2ft, a partial match on length only, well short of the full 8x4x4ft footprint an adult tegu needs.", source: "argentine-tegu-tank-setup-guide" },
+        { label: "Temperature", value: "Basking area 100 to 115F, warm ambient in the 90s, cool side around 80F, with nighttime allowed to drop to 65F without triggering brumation.", source: "argentine-tegu-tank-setup-guide" },
+        { label: "Humidity", value: "70 to 80%, maintained through deep, moisture retentive substrate, live plants in a bioactive style setup, a large water tub, and often an automatic misting system.", source: "argentine-tegu-tank-setup-guide" },
+        { label: "Substrate depth", value: "Deep, 12 to 18 inches or more, of an absorbent, burrow supporting mix: cypress mulch, coconut fiber, organic topsoil, or a bioactive blend.", source: "argentine-tegu-tank-setup-guide" },
+        { label: "UVB", value: "Strong UVB is required. For an enclosure this large, a 46 inch T5 HO bulb in the 12 to 14% range, spanning a quarter to half the enclosure's length on the warm side, targeting a basking area UVI of 3.0 to 4.0.", source: "argentine-tegu-tank-setup-guide" },
+        { label: "Feeding frequency", value: "Set by age rather than by size. Feed a young tegu every day. From one to three years old, every other day. Past three years, every third day.", source: "argentine-tegu-tank-setup-guide" },
+        { label: "Diet", value: "Young tegus are primarily insectivorous, then the protein moves to appropriately sized pre-killed or frozen-thawed rodents.", source: "argentine-tegu-tank-setup-guide" },
+        { label: "Supplements", value: "A calcium supplement without D3 goes on or in every meal, and a multivitamin once a week.", source: "argentine-tegu-tank-setup-guide" },
         { label: "Adult size", value: "3 to 5 feet (90 to 150 cm)." },
-        { label: "Two handlers", value: "The nearest rule is one handler per 3 to 4 feet, and a full-grown Argentine is past it: two people for any job that needs it held still.", source: "argentine-tegu-handling-guide" },
-        { label: "Handling, the honest version", value: "The dog-like temperament is real and it is earned, not automatic. Tegus need regular, supervised handling and free roam time to develop and keep it. Skip that socialization and you get a considerably more defensive animal instead, and a bite from an animal this size is powerful.", source: "argentine-tegu-handling-guide" },
-        { label: "Approach", value: "From the side, never from above, and never disturb one in its hide. Hatchlings at 7 to 10 inches read anything swooping down as a predator and are more likely to run than bite.", source: "argentine-tegu-handling-guide" },
-        { label: "Tail autotomy", value: "Unlike monitors, tegus can drop their tails as a defense mechanism, which surprises keepers coming from a savannah monitor. It matters most with flighty subadults or a newly acquired animal that hasn't settled.", source: "argentine-tegu-handling-guide" },
-        { label: "Brumation", value: "Argentine tegus slow down, eat less, and burrow for roughly 2 to 4 months during cooler periods, even when kept as pets indoors, triggered by shortening day length and changes in humidity and pressure rather than temperature alone. It isn't required for a non-breeding pet tegu and skipping it isn't harmful, though many keepers find allowing it improves feeding response afterward. For handling, that season is closed: a burrow counts as a hide, so leave it.", source: "argentine-tegu-handling-guide" },
-        { label: "Budget, the animal", value: "Standard black and white tegus, along with blue and Chacoan morphs, typically run $200 to $500. Rare designer morphs, albino, high white, and various patterned lines, push considerably higher, $700 to $1,200 or more for the rarest combinations.", source: "argentine-tegu-cost-guide" },
-        { label: "Budget, the setup", value: "Often exceeding $1,000 to $3,000. The adult enclosure alone is custom built at 8 by 4 by 4 feet minimum and routinely runs into the thousands, then add powerful basking and radiant heat, a 46 inch high output UVB fixture, and enough substrate for 12 to 18 inches of depth.", source: "argentine-tegu-cost-guide" },
-        { label: "Ongoing costs", value: "Roughly $40 to $100 or more a month. A varied omnivore diet, rodents, insects, eggs, ground meats, fruit, and vegetables, plus meaningful electricity for heating and lighting a large enclosure.", source: "argentine-tegu-cost-guide" },
-        { label: "Vet costs", value: "A routine exotic exam runs $50 to $135, with emergency visits starting around $150 to $300 before diagnostics. An adult tegu's size makes transport to a vet logistically difficult, so establish a relationship with a reptile vet early, before you need one urgently.", source: "argentine-tegu-cost-guide" },
-        { label: "Lifespan", value: "15 to 20 years is typical, with some individuals documented living past 30 under excellent care. Combined with the setup cost, this is a genuinely serious, multi-decade financial and space commitment.", source: "argentine-tegu-cost-guide" },
-        { label: "Salmonella", value: "A completely healthy-looking reptile can carry and shed Salmonella with no outward sign, and the route is hands and surfaces to mouth rather than bites. Never clean the enclosure, water dish or any equipment in a kitchen sink or a bathtub people also use. Children younger than 5 should not handle or touch reptiles or their environments at all.", source: "reptile-salmonella-hygiene-guide" },
-        { label: "Thermostat", value: "The probe goes at the animal's level, never taped to the back of a heat mat and never left up near the fixture reading room air. A basic on/off unit suits a mat; a basking bulb or radiant heat panel benefits from a pulse proportional or dimming controller, which holds a steadier output instead of swinging fully on and off.", source: "reptile-heating-thermostats-guide" },
-        { label: "Quarantine", value: "Longer than the two to four weeks that gets repeated informally: the Merck Veterinary Manual recommends 3 to 6 months for a new reptile. A bare enclosure on plain paper towel, so mites and abnormal stool show against a blank background, with dedicated tools and the quarantined animal serviced last, after every other animal.", source: "reptile-quarantine-guide" },
-        { label: "Power outage", value: "A healthy adult in most commonly kept species tolerates a few hours to one cool night without real harm. The risk climbs with time, not with a single cold hour: a day or two below the species' normal nighttime low is when cold stress and secondary respiratory infection become a real concern.", source: "reptile-emergency-plan-guide" },
+        { label: "Handling", value: "The nearest rule is one handler per 3 to 4 feet, and a full-grown Argentine is past it: two people for any job that needs it held still. Tegus need regular, supervised handling and free roam time to develop and keep it. From the side, never from above, and never disturb one in its hide.", source: "argentine-tegu-handling-guide" },
+        { label: "Budget, the animal", value: "Standard black and white tegus, along with blue and Chacoan morphs, typically run $200 to $500.", source: "argentine-tegu-cost-guide" },
+        { label: "Budget, the setup", value: "Often exceeding $1,000 to $3,000.", source: "argentine-tegu-cost-guide" },
+        { label: "Ongoing and vet", value: "Roughly $40 to $100 or more a month. A routine exotic exam runs $50 to $135, with emergency visits starting around $150 to $300 before diagnostics.", source: "argentine-tegu-cost-guide" },
+        { label: "Lifespan", value: "15 to 20 years is typical, with some individuals documented living past 30 under excellent care.", source: "argentine-tegu-cost-guide" },
+        { label: "Salmonella", value: "Never clean the enclosure, water dish or any equipment in a kitchen sink or a bathtub people also use. Children younger than 5 should not handle or touch reptiles or their environments at all.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Quarantine", value: "Longer than the two to four weeks that gets repeated informally: the Merck Veterinary Manual recommends 3 to 6 months for a new reptile.", source: "reptile-quarantine-guide" },
       ],
     },
     emergencyCard: {
@@ -333,42 +316,31 @@ export const lizardGuides = [
     // from the encyclopedia entry, which no deep dive repeats. Northern and
     // Indonesian animals are two different husbandry problems under one name,
     // so every row the tank setup guide splits by subspecies stays split here
-    // rather than being flattened into one range. Day one, shedding, hygiene,
-    // and power outage cite the shared reptile guides in the sidebar's Health
-    // and More list, which the set tests keep reporting as gaps because the
-    // reader never opens them. Reconciled 2026-09-09 after the blue tongue
+    // rather than being flattened into one range. Day one cites the shared
+    // reptile guide in the sidebar's Health and More list, which the set
+    // tests keep reporting as a gap because the reader never opens it.
+    // Reconciled 2026-09-09 after the blue tongue
     // skink set test (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
         { label: "Day one", value: "A new lizard is quarantined 3 to 6 months away from any reptile you already keep, in a separate room on plain paper towel, with its own tools, and a vet check within two weeks of acquiring it with a fresh fecal sample.", source: "reptile-quarantine-guide" },
-        { label: "Which skink is it", value: "Most Indonesian skinks sold in the US pet trade are wild-caught, and wild-caught animals commonly carry parasite loads picked up before import. Northern skinks are almost universally captive-bred. Knowing which one you have changes almost everything below.", source: "blue-tongue-skink-health-issues-guide" },
-        { label: "Enclosure", value: "Adult minimum is 4x2x2 feet, roughly 8 square feet of floor space, for either type. Bigger is always better. Front-opening PVC enclosures are preferred over glass since they hold humidity more effectively, which matters more for Indonesian skinks specifically.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "Which skink is it", value: "Most Indonesian skinks sold in the US pet trade are wild-caught, and wild-caught animals commonly carry parasite loads picked up before import. Northern skinks are almost universally captive-bred.", source: "blue-tongue-skink-health-issues-guide" },
+        { label: "Enclosure", value: "Adult minimum is 4x2x2 feet, roughly 8 square feet of floor space, for either type.", source: "blue-tongue-skink-tank-setup-guide" },
         { label: "Basking surface", value: "Northern basking surface: 105 to 115°F. Indonesian basking surface: slightly cooler, 100 to 105°F.", source: "blue-tongue-skink-tank-setup-guide" },
-        { label: "Rest of the gradient", value: "Cool side (both): 70 to 80°F. Nighttime: stays above roughly 70°F for both types. A heat source (halogen or a deep heat projector) is required, mounted with a basking dome fixture and run on a thermostat, which is what holds the surface inside those ranges instead of letting an unregulated bulb climb past them and burn the animal.", source: "blue-tongue-skink-tank-setup-guide" },
-        { label: "Humidity", value: "Northerns need relatively low humidity, around 40%. Indonesians need considerably more, 60 to 80%. Achieve the higher Indonesian range through moisture-retentive substrate, regular misting, and a larger water bowl.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "Rest of the gradient", value: "Cool side (both): 70 to 80°F. Nighttime: stays above roughly 70°F for both types.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "Humidity", value: "Northerns need relatively low humidity, around 40%. Indonesians need considerably more, 60 to 80%.", source: "blue-tongue-skink-tank-setup-guide" },
         { label: "Floor", value: "A naturalistic soil mix works for both, roughly 60% topsoil to 40% play sand for Northerns, with Indonesian setups benefiting from added moisture-retentive elements, leaf litter, sphagnum moss, or a coco-fiber-based product. Keep it 4 to 6 inches deep.", source: "blue-tongue-skink-tank-setup-guide" },
-        { label: "UVB", value: "A T5 HO bulb anywhere from 5 to 12% output, picked against how high above the basking area it will hang, spanning at least half the enclosure on the warm side, replaced every 12 months regardless of whether it still visibly lights up. Keep the skink no closer than about 10 inches from the bulb.", source: "blue-tongue-skink-tank-setup-guide" },
-        { label: "Photoperiod", value: "Run a photoperiod of roughly 11 to 13 hours depending on season for either type.", source: "blue-tongue-skink-tank-setup-guide" },
+        { label: "UVB", value: "A T5 HO bulb anywhere from 5 to 12% output, picked against how high above the basking area it will hang, spanning at least half the enclosure on the warm side, replaced every 12 months regardless of whether it still visibly lights up.", source: "blue-tongue-skink-tank-setup-guide" },
         { label: "Diet ratio", value: "Young skinks, under about 12 months and by some guidance up to 24, need a protein-heavy diet, roughly 70 to 80% animal matter. Mature adults shift toward plant-heavy, roughly 40 to 60% animal protein and 45 to 60% leafy greens and vegetables, with about 5 to 10% fruit as treats.", source: "blue-tongue-skink-feeding-guide" },
         { label: "Feeding schedule", value: "Babies, hatching to 3 to 5 months, are fed daily, sometimes 2 to 3 times a day, plus one designated fasting day a week. Juveniles, roughly 3 to 10 months, 3 to 4 times a week. Subadults and adults eat every 1 to 3 days on veterinary guidance; leaner schedules of once or twice a week circulate widely, and the veterinary interval is the one to follow.", source: "blue-tongue-skink-feeding-guide" },
-        { label: "Portion", value: "One meal roughly the size of the skink's own skull, or about 1 to 2 tablespoons for an adult, is the commonly cited portion.", source: "blue-tongue-skink-feeding-guide" },
-        { label: "Supplements", value: "Dust feeder insects with calcium, low or no phosphorus, frequency ranges from every feeding to a few times a week depending on the product and source. A separate multivitamin is used more sparingly, once or twice a week to once or twice a month.", source: "blue-tongue-skink-feeding-guide" },
-        { label: "Weight checks", value: "Sources converge in the 7 to 10% body-weight-loss range as an urgent threshold, weighing weekly on a gram-accurate scale and keeping a log is the standard way to catch a slow decline before it becomes obvious.", source: "blue-tongue-skink-feeding-guide" },
-        { label: "Handling", value: "Leave a new skink alone for 2 to 3 weeks before attempting to handle it, giving it time to settle into its enclosure and start eating normally. Build trust gradually through food-based interaction, and let handling follow from there.", source: "blue-tongue-skink-handling-guide" },
-        { label: "Session length", value: "Start at 5 minutes a day, adding a minute each time the skink sits still, until it holds still for at least 15 minutes. Start a juvenile or a new wild-caught Indonesian at the 5-minute end. A settled captive-bred Northern can run to the full 15 minutes.", source: "blue-tongue-skink-handling-guide" },
-        { label: "Picking one up", value: "Come in from the side, where it can see you. Slide a hand under the body and support the whole animal along your forearm, tail included. Never lift or hold one by the tail. Wash your hands first, so they do not smell like a food item.", source: "blue-tongue-skink-handling-guide" },
-        { label: "Reading the animal", value: "Short snorts or huffs mean annoyance, tail flicking or wagging means irritation, and long huffs or hisses with the body tilted and puffed up mean the skink has moved on to aggression. What to do is the same at every step: stop, take your hands out, and end the session there.", source: "blue-tongue-skink-handling-guide" },
-        { label: "Enrichment", value: "Scatter food across the substrate. Hide portions under cork and leaf litter. Vary where the food appears from day to day, so the search stays a search. Blue tongues are terrestrial and cover ground, so footprint beats height every time.", source: "blue-tongue-skink-enrichment-guide" },
-        { label: "The skink", value: "Northern (Australian) blue-tongued skinks typically run $150 for babies up to $250 for adults, with high-color or rare morphs reaching $400 to $700. Indonesian skinks are noticeably cheaper, generally $100 to $250.", source: "blue-tongue-skink-cost-guide" },
+        { label: "Supplements", value: "Dust feeder insects with calcium, low or no phosphorus, frequency ranges from every feeding to a few times a week depending on the product and source.", source: "blue-tongue-skink-feeding-guide" },
+        { label: "Handling", value: "Leave a new skink alone for 2 to 3 weeks before attempting to handle it, giving it time to settle into its enclosure and start eating normally. Never lift or hold one by the tail.", source: "blue-tongue-skink-handling-guide" },
+        { label: "The skink", value: "Northern (Australian) blue-tongued skinks typically run $150 for babies up to $250 for adults, with high-color or rare morphs reaching $400 to $700.", source: "blue-tongue-skink-cost-guide" },
         { label: "Budget", value: "Roughly $330 to $635 to set up, and total initial investment with the animal commonly lands between $430 and $1,335. Ongoing, roughly $490 to $830 a year, or about $41 to $69 a month once averaged out.", source: "blue-tongue-skink-cost-guide" },
-        { label: "Vet", value: "A routine exam runs roughly $100 to $150, with annual checkups recommended for any skink. Wild-caught Indonesian skinks frequently need a fecal exam and deworming treatment right after purchase, an added cost that Northern buyers usually skip entirely.", source: "blue-tongue-skink-cost-guide" },
         { label: "Lifespan", value: "15 to 20 years is the commonly cited average, with well-documented cases living past 30.", source: "blue-tongue-skink-cost-guide" },
         { label: "Adult size", value: "17-24 inches (43-60 cm)." },
-        { label: "Shedding", value: "Raise humidity toward the high end during the shed, give rough surfaces to rub on, and never pull loose skin. A 30-minute chin-deep soak at cage temperature loosens retained shed.", source: "reptile-shedding-complete-guide" },
-        { label: "Hygiene", value: "Wash hands with soap and running water immediately after any contact, keep reptiles out of the kitchen entirely, and never clean an enclosure, water dish, or equipment in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
-        { label: "Power outage", value: "The normal night low stays above about 70°F. Act below 70°F: add heat, move the animal, or call ahead to a sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },
     emergencyCard: {
@@ -425,85 +397,86 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/fire-skink.jpg",
     tagline: "Spectacular red and gold, and it will spend most of its life underground!",
-    funFact: "Fire skinks are one of the most brightly colored lizards in the hobby and one of the most rarely seen in their own enclosure. Give one four inches of substrate and it will vanish; give it eight to ten and it will build a burrow system, come out to bask, and behave like a completely different animal.",
-    // Labels match `covers` strings in affiliateProducts.js and the figures are those
-    // products' vetted prices. See scripts/check-cost-coverage.mjs.
-    costs: {
-      setup: [
-        { item: "36x18x18 in enclosure", low: 202, high: 258 },
-        { item: "Moist substrate (coconut fiber + topsoil)", low: 10, high: 16 },
-        { item: "Halogen basking bulb + fixture", low: 18, high: 25 },
-        { item: "Moderate UVB (T5 HO Arcadia 6%)", low: 95, high: 115 },
-        { item: "Cork bark slabs and flat stones", low: 28, high: 40 },
-        { item: "Sphagnum moss for moist hide", low: 8, high: 14 },
-        { item: "Shallow water dish", low: 8, high: 14 },
-        { item: "Digital thermometer and hygrometer", low: 11, high: 19 },
-      ],
-      annual: [
-        { item: "Live insects (crickets, dubia, worms)", low: 200, high: 380 },
-        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
-        { item: "UVB bulb replacement (every 6-12 months)", low: 111, high: 141 },
-        { item: "Feeding tongs", low: 8, high: 14 },
-        { item: "Electricity for heat and lighting", low: 70, high: 140 },
-        { item: "Exotic vet check", low: 70, high: 150 },
-      ],
-    },
-    sections: {
-      housing: `A single adult wants 36x18x18 inches as a floor-space-first enclosure. Height is close to irrelevant here; fire skinks are terrestrial and fossorial, and the useful dimension is length and depth.
-
-Substrate is the whole game with this species. Use four to six inches of a mix that holds a tunnel. ReptiFiles gives 40 percent organic topsoil, 40 percent coconut fiber and 20 percent fine sand, kept slightly damp, with leaf litter on top. A fire skink in shallow bedding hides in one corner under a hide and looks permanently nervous. The same animal in deep substrate builds a burrow, uses the whole enclosure and comes out to bask.
-
-Provide a basking surface of 92 to 96 degrees F, a cool end of 75 to 85, and a night drop to 70 to 75. Use a halogen flood on a dimmer rather than a ceramic emitter, since these animals do respond to visible basking light.
-
-Fit UVB. A linear T5 at 5 to 6 percent across part of the enclosure is right; a small coil bulb is not. Humidity should sit at 60 to 70 percent, which deep damp substrate largely does on its own, topped up by misting morning and evening. Ventilate enough that it dries a little between mistings.
-
-Include a humid hide, a shallow water dish big enough to sit in, and plenty of cork bark and leaf cover. A skink that feels exposed will not come out.`,
-      diet: `Fire skinks are insectivores with an appetite. Feed a rotation of appropriately sized live insects: dubia roaches, crickets, black soldier fly larvae, silkworms and the occasional superworm. Adults eat twice a week, juveniles daily to every other day. Offer as much as the animal clears in about five minutes, with no feeder bigger than its head.
-
-Gut load the insects for at least 24 hours before offering them, on greens, squash and a commercial gut-load. An insect that has eaten nothing is close to an empty shell nutritionally.
-
-Dust with a plain calcium at most feedings and a calcium with D3 plus a multivitamin once or twice a week, adjusted down if your UVB is strong and well positioned. Metabolic bone disease is the main nutritional failure in this species and it comes from the calcium and UVB side rather than from protein.
-
-Some individuals take small amounts of soft fruit or the occasional pinky as adults. Neither is necessary and neither should be routine.
-
-Keep fresh water available at all times in a dish heavy enough not to be tipped or buried.`,
-      enrichment: `The enrichment for a fire skink is mostly the substrate, and it is not a nice-to-have. Depth, moisture and leaf litter turn a hiding animal into an active one.
-
-Add cork bark tunnels, flat stones near the basking area, sphagnum-stuffed hides and a dense litter layer. Live plants such as pothos survive in a fire skink enclosure better than they do with larger lizards, though the digging will disturb roots.
-
-Feed with tongs or scatter feed into the litter. Scatter feeding gets them foraging through the leaves, which is what they do in the wild and is the easiest natural behavior to encourage.
-
-Handling is possible but should be earned slowly. Fire skinks are fast and initially flighty, and a stressed one will drop its tail. Start with tong feeding, then short sessions low over a soft surface. Many settle into being reliably handleable; some never do.
-
-Keep one per enclosure unless you have real experience. Males will fight, and mixed pairs need enough space and hides for the female to get away.`,
-      health: `Metabolic bone disease is the main preventable problem, from insufficient UVB, insufficient calcium, or both. Watch for tremors, a soft or bowed jaw, difficulty lifting the body off the floor and a reluctance to climb.
-
-Retained shed on the toes and tail tip is the most common minor complaint and is nearly always a humidity problem. A humid hide and a slightly damp substrate layer usually resolve it. Rings of retained skin left in place can cut off circulation.
-
-Impaction is the reason to avoid sand, gravel and any loose particulate that does not hold moisture. A soil and coco fiber mix is both better for burrowing and safer to swallow incidentally.
-
-Wild-caught animals are still common in this trade and often arrive with parasite loads, dehydration and injuries. Ask about origin. A captive-bred fire skink costs more and starts far healthier, and a fresh import should have a fecal check early.
-
-Mouth rot and respiratory infections follow from enclosures that are wet rather than humid, with no ventilation or no thermal gradient.`,
-      checklist: [
-        "36x18x18 in front-opening terrarium",
-        "4 to 6 inches of topsoil, coco fiber and sand",
-        "Leaf litter layer and cork bark cover",
-        "Halogen basking bulb on a dimmer, 92 to 96 F",
-        "Linear T5 UVB, 5 to 6 percent",
-        "Humid hide and shallow water dish",
-        "Digital thermometer and hygrometer",
-        "Varied live insects, gut loaded",
-        "Calcium and D3 plus multivitamin",
-        "Exotic veterinarian experienced with skinks"
+    funFact: "Fire skinks are one of the most brightly colored lizards in the hobby and one of the most rarely seen in their own enclosure. Give one a shallow scattering of substrate and it will vanish; give it the 4 to 6 inches it can actually tunnel through and it will build a burrow system, come out to bask, and behave like a completely different animal.",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Quarantine cites the shared reptile guide
+    // in the sidebar's Health and More list. Reconciled 2026-09-15 after the
+    // fire skink set test (docs/READER_REVIEWS.md).
+    //
+    // The old hub's cost table was roughly $200 short of the cost guide's own
+    // total, $380 to $500 against $660 to $720, and it disagreed line by line:
+    // the enclosure at $202 to $258 against $280, substrate at $10 to $16
+    // against $88 to $99 for the eight or nine bags a 6 inch bed actually
+    // takes, and no thermostat line at all on a page whose cost guide calls the
+    // thermostat the line people try to skip.
+    //
+    // Also retired rather than moved: a night drop to 70 to 75F against the
+    // setup guide's 70F with 65F acceptable; a flat "yes" on whether UVB is
+    // needed against the setup guide's "real benefit though technically
+    // optional if diet is properly supplemented"; a UVB replacement interval
+    // given as both 12 months and 6 to 12 months on the same page; "metabolic
+    // bone disease is the main preventable problem" against the health guide's
+    // "less common in this species than in some other lizards"; and a substrate
+    // depth the page gave three different ways, 4 to 6 inches in the body, 8 to
+    // 10 in its FunFact and 6 to 10 in its FAQ. The FunFact above now carries
+    // the setup guide's figure.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "The skink", value: "$25 to $40 for the common wild-caught or imported animals.", source: "fire-skink-cost-guide" },
+        { label: "Setup budget", value: "Roughly $660 to $720, line by line: a 36x18x18 inch glass terrarium at $280, a 36 inch T5 HO UVB kit with a 6% bulb at $99, a basking bulb two-pack and dome at $43, a thermostat at $130, eight to nine bags of coconut fiber at $88 to $99, two hides at $8 to $60, and a digital thermometer and hygrometer at $11.", source: "fire-skink-cost-guide" },
+        { label: "Monthly", value: "Roughly $40 to $65: feeder insects at $10 to $25 across two to three feedings a week, a $6 tub of calcium with D3 that lasts a few months, and substrate at $22 to $33 a month once a full replacement every three to four months is spread out.", source: "fire-skink-cost-guide" },
+        { label: "Lifespan", value: "15 to 20 years, a long commitment for a lizard this small and this affordable to acquire.", source: "fire-skink-cost-guide" },
+        { label: "Adult size", value: "12 to 15 inches (30 to 38 cm) including tail." },
+        { label: "Enclosure size", value: "36 inches long by 18 inches wide by 18 inches tall as a minimum for a single adult, larger is genuinely worth it since this is an active species. Don't house multiple fire skinks together, especially two males, real fighting risk.", source: "fire-skink-tank-setup-guide" },
+        { label: "Temperature", value: "Ambient 80 to 86°F, with a basking spot around 92 to 96°F, and a night drop to about 70°F, 65°F is acceptable.", source: "fire-skink-tank-setup-guide" },
+        { label: "Humidity", value: "60 to 70% ambient, higher overnight. Achieved through misting once or twice daily, keeping the substrate itself consistently moist, and providing a humid hide lined with sphagnum moss.", source: "fire-skink-tank-setup-guide" },
+        { label: "Substrate, the whole job", value: "4 to 6 inches of a loose, moisture-retentive tropical mix, a DIY blend of roughly 40% topsoil, 40% coconut fiber, and 20% fine sand works well, topped with leaf litter or sphagnum moss.", source: "fire-skink-tank-setup-guide" },
+        { label: "UVB", value: "UVB offers real benefit though is technically optional if diet is properly supplemented. A lower-output UVB tube in the 5 to 6% range, positioned so the basking area sits 7 to 10 inches below the lamp, replaced every 12 months, is a reasonable, well-supported choice.", source: "fire-skink-tank-setup-guide" },
+        { label: "Feeding", value: "An insectivore, fed live. Full-grown adults eat two to three times a week depending on body condition, juveniles daily to every other day.", source: "fire-skink-tank-setup-guide" },
+        { label: "What to feed", value: "Dust with a calcium powder at nearly every feeding, and add a reptile multivitamin to the rotation.", source: "fire-skink-tank-setup-guide" },
+        { label: "Respiratory infection", value: "Open-mouth breathing, mucus, and wheezing. Caused by substrate or overall enclosure conditions running too dry, or occasionally too cold.", source: "fire-skink-health-issues-guide" },
+        { label: "Handling, honestly", value: "Fire skinks aren't defensive or bitey in any meaningful sense, but they are notably skittish, fast-moving, and prone to burrowing out of sight the moment they feel exposed. Never grab or restrain by the tail.", source: "fire-skink-handling-guide" },
+        { label: "Quarantine", value: "Quarantine periods of 3 to 6 months for new reptiles are recommended.", source: "reptile-quarantine-guide" },
       ],
     },
+    emergencyCard: {
+      source: "fire-skink-health-issues-guide",
+      callNow: [
+        "Open-mouth breathing, mucus, and wheezing: see a vet, this needs professional treatment",
+        "Substrate impaction: see a vet if suspected",
+        "Metabolic bone disease, less common in this species than in some other lizards but still possible if UVB and calcium supplementation are inadequate: see a vet",
+        "Retained eye caps or a severe case of retained shed should prompt a vet visit rather than repeated home attempts",
+        "A dropped tail: minor cases are manageable on their own, an open or infected wound needs a vet",
+      ],
+      vetLine: "Low humidity is directly responsible for the respiratory infection and poor shedding that make up most of this species' real health risk. Dry substrate causes impaction. And rough handling causes preventable tail loss. This is a species where getting the moisture and substrate depth right, more than any other single factor, determines how healthy and how visible your fire skink actually is.",
+    },
+    routes: [
+      { slug: "fire-skink-cost-guide", line: "$25 to $40 for the skink, $660 to $720 for the setup, and the thermostat line people try to skip." },
+      { slug: "fire-skink-tank-setup-guide", line: "36x18x18 as a floor, 92 to 96F basking, 60 to 70%, the 4 to 6 inch mix, and what to feed." },
+      { slug: "fire-skink-handling-guide", line: "Why this is not the blue-tongued skink, and why the tail is the part to leave alone." },
+      { slug: "fire-skink-health-issues-guide", line: "Respiratory infection, retained shed, impaction, and the humidity underneath all three." },
+      { slug: "fire-skink-enrichment-guide", line: "The blue-tongue study where skinks stopped hiding, and what it asks of a burrowing lizard's enclosure." },
+    ],
+    buyList: [
+      "A 36x18x18 inch enclosure as a floor, larger for an active species",
+      "Organic topsoil, coconut fiber and fine sand for a 4 to 6 inch mix",
+      "Leaf litter or sphagnum moss for the surface, and a humid hide",
+      "A T5 HO UVB kit, 5 to 6%",
+      "A halogen basking bulb and dome fixture",
+      "A dimming thermostat for the basking bulb",
+      "A digital probe thermometer and hygrometer",
+      "Two hides, one at each end of the gradient, plus cork flats",
+      "Calcium with D3 and a reptile multivitamin",
+      "Feeder insects, varied, and tongs",
+    ],
     faqs: [
-      { q: "Why does my fire skink hide all the time?", a: "Almost always because the substrate is too shallow. Fire skinks are burrowers, and in four inches of bedding the only option is to wedge under a hide and stay there. At six to ten inches of a soil and coco fiber mix that holds a tunnel, they build a burrow system and start using the whole enclosure, basking in the open and foraging through the leaf litter. Depth of substrate changes this species more than any other single factor." },
-      { q: "Do fire skinks need UVB?", a: "Yes. They are diurnal and bask, and while some keepers raise them without UVB using heavy D3 supplementation, the results are far more consistent with it. Use a linear T5 at 5 to 6 percent over part of the enclosure rather than a compact coil, mount it at the distance the manufacturer specifies, and replace it every twelve months even though it still emits visible light." },
-      { q: "Can you handle a fire skink?", a: "Some, with patience. They are fast and start out flighty, and a stressed one can drop its tail, which regrows but never matches. Build up through tong feeding first, then short sessions held low over a soft surface so a jump does not end badly. Plenty of fire skinks become reliably handleable adults, and some simply stay display animals. Buying captive bred makes a calm outcome much more likely." },
-      { q: "Is my fire skink wild caught?", a: "Quite possibly, and it is worth asking directly. A large share of fire skinks in the trade are still imported, and wild-caught animals typically arrive dehydrated, carrying parasites, and sometimes with injuries or missing toes. They can settle in well, but they need a fecal test and a quiet acclimation period. Captive-bred animals cost more and start much healthier." },
-      { q: "How big do fire skinks get?", a: "About 12 to 15 inches including the tail, with the body itself a good deal shorter than that suggests. They are heavy-bodied for their length rather than lanky. That size makes a 36x18x18 inch enclosure a comfortable adult home for one animal, prioritizing floor area over height since they spend their time on and under the ground." },
+      { q: "What size enclosure does a fire skink need?", a: "36 by 18 by 18 inches minimum for one adult, and bigger is worth it for an active species. Floor space beats height. Don't house two fire skinks together, especially two males: real fighting risk." },
+      { q: "What does a fire skink enclosure setup cost?", a: "Roughly $660 to $720: a 36x18x18 inch enclosure, T5 UVB kit, basking bulb and dome, dimming thermostat, eight or nine bags of coconut fiber, two hides, and a hygrometer. The enclosure and thermostat dominate." },
+      { q: "What causes respiratory infection in fire skinks?", a: "Substrate or overall enclosure conditions running too dry, or occasionally too cold. Watch for open-mouth breathing, mucus, and wheezing. See a vet, this needs professional treatment, and prevention is straightforward, maintain 60 to 70% substrate humidity consistently." },
     ],
   },
   {
@@ -518,9 +491,9 @@ Mouth rot and respiratory infections follow from enclosures that are wet rather 
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry. Salmonella, thermostats, shedding, quarantine and
-    // the emergency plan cite the shared reptile guides in the sidebar's
-    // Health and More list. Reconciled 2026-09-15 after the green anole set
+    // encyclopedia entry. Salmonella and quarantine cite the shared reptile
+    // guides in the sidebar's Health and More list. Reconciled 2026-09-15
+    // after the green anole set
     // test (docs/READER_REVIEWS.md).
     //
     // The reader graded the old hub C-, and it lost on every number a buyer
@@ -543,32 +516,24 @@ Mouth rot and respiratory infections follow from enclosures that are wet rather 
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Enclosure size", value: "24 inches long by 24 inches wide by 24 inches tall as a minimum for one adult, larger is better. This species is semi-arboreal, so a tall, front-opening enclosure with good ventilation suits it well.", source: "green-anole-tank-setup-guide" },
-        { label: "Housed alone", value: "Don't house multiple anoles together, they don't coexist peacefully.", source: "green-anole-tank-setup-guide" },
-        { label: "Why they can't share", value: "Two males is the version that fails fastest: the dewlap is a territorial signaling structure and males use it constantly, so two in one enclosure means an argument that never resolves, and the loser stops feeding. In a group, an anole that cannot get out of another anole's sight has no way to end an encounter, and continuous low-level display is how subordinate anoles get run down.", source: "green-anole-enrichment-guide" },
-        { label: "Temperature", value: "Basking spot around 90F, cool side 70 to 77F, nighttime 65 to 75F. A 60-watt incandescent basking bulb in a ceramic-socket dome works well.", source: "green-anole-tank-setup-guide" },
-        { label: "The mesh burn", value: "Mount the heat lamp above or outside the enclosure's mesh top, not resting directly on it. Green anoles climb and rest inverted on mesh, and a bulb positioned where they can reach it risks real burns.", source: "green-anole-tank-setup-guide" },
+        { label: "Enclosure size", value: "24 inches long by 24 inches wide by 24 inches tall as a minimum for one adult, larger is better. Don't house multiple anoles together, they don't coexist peacefully.", source: "green-anole-tank-setup-guide" },
+        { label: "Temperature", value: "Basking spot around 90F, cool side 70 to 77F, nighttime 65 to 75F. A 60-watt incandescent basking bulb in a ceramic-socket dome works well. Mount the heat lamp above or outside the enclosure's mesh top, not resting directly on it.", source: "green-anole-tank-setup-guide" },
         { label: "Humidity", value: "60 to 70% during the day, higher overnight. Achieve this through morning and evening misting, and a cool-mist humidifier or fogger overnight in dry climates, using distilled water.", source: "green-anole-tank-setup-guide" },
         { label: "UVB", value: "Genuinely necessary for this diurnal species. Target a UV index of 3.0 to 4.0 at the basking branch, using an Arcadia ShadeDweller kit or a T5 HO bulb in the 5 to 6% range, paired with a separate 6500K LED. Run a 10 to 14 hour photoperiod.", source: "green-anole-tank-setup-guide" },
-        { label: "Substrate", value: "Coconut fiber or a tropical soil blend, roughly 60% organic topsoil to 40% coconut fiber, layered about 2 inches deep with leaf litter on top. Avoid gravel, sand, and anything containing vermiculite or pesticide residue.", source: "green-anole-tank-setup-guide" },
-        { label: "Climbing at every level", value: "Branches and foliage spanning the enclosure's full height, not concentrated near the bottom. The warmest area sits at the top near the basking lamp, so the anole needs a genuine path to thermoregulate by moving vertically. Thin branches and stems at varied angles, because a lizard this size wants perches it can grip around, never a wide flat log.", source: "green-anole-enrichment-guide" },
-        { label: "Feeding", value: "A juvenile eats daily, as much as it will take; an adult gets two to three feeders every other day. Crickets, dubia and discoid nymphs, red runner and red head roaches, flightless fruit flies, black soldier fly larvae and the occasional mealworm all work.", source: "green-anole-tank-setup-guide" },
-        { label: "Prey size", value: "Slightly smaller than the anole's head. This is a small lizard with a small mouth, and an oversized insect is a real choking and stress risk rather than a theoretical one.", source: "green-anole-tank-setup-guide" },
-        { label: "Supplements", value: "Gut-load and hydrate feeders for 24 to 48 hours before they go in, then dust them: a light dusting of a 50/50 calcium and multivitamin mix at every feeding, or a single all-in-one calcium-plus-vitamin powder used the same way. A small animal develops a nutritional deficiency fast.", source: "green-anole-tank-setup-guide" },
-        { label: "Live prey to chase", value: "Small insects released into the planting rather than dropped in a dish. Anoles are visual hunters that track and stalk, and the chase is the part a bowl removes.", source: "green-anole-enrichment-guide" },
-        { label: "Water", value: "Anoles drink droplets, not standing water. A fine mist spray bottle once or twice a day, aimed at foliage and glass, is how hydration actually happens for this species. Keep a shallow dish as well, and do not count on it.", source: "green-anole-enrichment-guide" },
-        { label: "Handling", value: "Green anoles generally make better display animals than a pet you take out and handle regularly. If you want a lizard you can hold often, this isn't the right species.", source: "green-anole-handling-guide" },
+        { label: "Substrate", value: "Coconut fiber or a tropical soil blend, roughly 60% organic topsoil to 40% coconut fiber, layered about 2 inches deep with leaf litter on top.", source: "green-anole-tank-setup-guide" },
+        { label: "Feeding", value: "A juvenile eats daily, as much as it will take; an adult gets two to three feeders every other day.", source: "green-anole-tank-setup-guide" },
+        { label: "Prey size", value: "Slightly smaller than the anole's head.", source: "green-anole-tank-setup-guide" },
+        { label: "Supplements", value: "Gut-load and hydrate feeders for 24 to 48 hours before they go in, then dust them: a light dusting of a 50/50 calcium and multivitamin mix at every feeding, or a single all-in-one calcium-plus-vitamin powder used the same way.", source: "green-anole-tank-setup-guide" },
+        { label: "Water", value: "Anoles drink droplets, not standing water. A fine mist spray bottle once or twice a day, aimed at foliage and glass, is how hydration actually happens for this species.", source: "green-anole-enrichment-guide" },
+        { label: "Handling", value: "Green anoles generally make better display animals than a pet you take out and handle regularly.", source: "green-anole-handling-guide" },
         { label: "Adult size", value: "5 to 8 inches (13 to 20 cm), including the tail." },
-        { label: "Budget, the animal", value: "Most sell for under $15, some as low as $5, with $5 to $30 covering the range you'll typically see. There's no real morph market for this species, it's a wild-type animal throughout.", source: "green-anole-cost-guide" },
-        { label: "Budget, the setup", value: "Roughly $390 to $470. The 24x24x24 inch front-opening terrarium is the largest single expense by far relative to the animal's price, followed by a basking heat lamp and dome, a T5 HO UVB fixture and bulb, a 6500K LED, substrate and climbing material, and a thermometer/hygrometer combo plus a misting bottle.", source: "green-anole-cost-guide" },
-        { label: "Ongoing costs", value: "Roughly $20 to $35 a month, modest. That covers feeder insects and periodic replacement of substrate and supplements.", source: "green-anole-cost-guide" },
-        { label: "Vet costs", value: "$50 to $100 for a routine exotic exam. An emergency visit starts around $150 and can reach $300 or more before diagnostics, which is several times the price of the animal itself.", source: "green-anole-cost-guide" },
-        { label: "Lifespan", value: "Casually kept green anoles are often reported living just 3 to 4 years, while with appropriate care one can live up to 10 years and possibly longer. The gap between those two numbers is almost entirely a setup problem, not a species limitation.", source: "green-anole-cost-guide" },
-        { label: "The law", value: "Unregulated in 38 jurisdictions and restricted in the southeastern states where it is native, because *Anolis carolinensis* is the only anole native to the United States and native wildlife rules routinely reach captive-bred animals bought in a shop. Georgia lists it among native species that may not be held as pets, with the restrictions applying \"regardless of the origin or morphology\", so an out-of-state captive-bred animal is in the same position as one caught in a Georgia yard.", source: "green-anole-legal-guide" },
-        { label: "Salmonella", value: "A completely healthy-looking reptile can carry and shed Salmonella with no outward sign, and the route is hands and surfaces to mouth rather than bites. Never clean the enclosure, water dish or any equipment in a kitchen sink or a bathtub people also use. Children younger than 5 should not handle or touch reptiles or their environments at all.", source: "reptile-salmonella-hygiene-guide" },
-        { label: "Thermostat", value: "The probe goes at the animal's level, never taped to the back of a heat mat and never left up near the fixture reading room air. A basking bulb benefits from a pulse proportional or dimming controller, which holds a steadier output instead of swinging fully on and off.", source: "reptile-heating-thermostats-guide" },
-        { label: "Quarantine", value: "Longer than the two to four weeks that gets repeated informally: the Merck Veterinary Manual recommends 3 to 6 months for a new reptile. A bare enclosure on plain paper towel, so mites and abnormal stool show against a blank background, with dedicated tools and the quarantined animal serviced last.", source: "reptile-quarantine-guide" },
-        { label: "Power outage", value: "A healthy adult in most commonly kept species tolerates a few hours to one cool night without real harm. The risk climbs with time, not with a single cold hour: a day or two below the species' normal nighttime low is when cold stress and secondary respiratory infection become a real concern.", source: "reptile-emergency-plan-guide" },
+        { label: "Budget, the animal", value: "Most sell for under $15, some as low as $5, with $5 to $30 covering the range you'll typically see.", source: "green-anole-cost-guide" },
+        { label: "Budget, the setup", value: "Roughly $390 to $470.", source: "green-anole-cost-guide" },
+        { label: "Ongoing costs", value: "Roughly $20 to $35 a month, modest.", source: "green-anole-cost-guide" },
+        { label: "Lifespan", value: "Casually kept green anoles are often reported living just 3 to 4 years, while with appropriate care one can live up to 10 years and possibly longer.", source: "green-anole-cost-guide" },
+        { label: "The law", value: "Unregulated in 38 jurisdictions and restricted in the southeastern states where it is native, because *Anolis carolinensis* is the only anole native to the United States and native wildlife rules routinely reach captive-bred animals bought in a shop.", source: "green-anole-legal-guide" },
+        { label: "Salmonella", value: "Never clean the enclosure, water dish or any equipment in a kitchen sink or a bathtub people also use.", source: "reptile-salmonella-hygiene-guide" },
+        { label: "Quarantine", value: "Longer than the two to four weeks that gets repeated informally: the Merck Veterinary Manual recommends 3 to 6 months for a new reptile.", source: "reptile-quarantine-guide" },
       ],
     },
     emergencyCard: {
@@ -619,12 +584,12 @@ Mouth rot and respiratory infections follow from enclosures that are wet rather 
     funFact: "Green iguanas have a pale scale on the top of the head called the parietal eye. It is a genuine third eye with a lens and a retina, wired to the pineal gland rather than to vision, and it detects shadow moving overhead. It is an early warning system for birds of prey.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
-    // hub keeps no number of its own. Day one, hygiene, and power outage cite
-    // the shared reptile guides in the sidebar's Health and More list, which
-    // the set tests keep reporting as gaps because the reader never opens
-    // them. This species has no feeding guide, so the diet rows cite the
-    // health issues and enrichment guides, which is where the diet material
-    // actually lives. Reconciled 2026-09-09 after the green iguana set test
+    // hub keeps no number of its own. Day one and hygiene cite the shared
+    // reptile guides in the sidebar's Health and More list, which the set
+    // tests keep reporting as gaps because the reader never opens them. This
+    // species has no feeding guide, so the diet row cites the health issues
+    // guide, which is where the diet material actually lives. Reconciled
+    // 2026-09-09 after the green iguana set test
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
@@ -633,24 +598,19 @@ Mouth rot and respiratory infections follow from enclosures that are wet rather 
         { label: "Day one", value: "A new lizard is quarantined 3 to 6 months away from any reptile you already keep, in a separate room on plain paper towel, with its own tools, and a vet check within two weeks of acquiring it with a fresh fecal sample.", source: "reptile-quarantine-guide" },
         { label: "Adult enclosure", value: "A single adult needs a minimum of 10 feet long by 5 feet wide by 6 feet tall, some vet and husbandry sources recommend 12 by 6 by 6. No commercial enclosure is large enough, this has to be a custom, walk-in build.", source: "green-iguana-tank-setup-guide" },
         { label: "First enclosure", value: "A juvenile can start temporarily in something like a 4x2x4 foot enclosure or a 40 to 55 gallon tank, but outgrows it within the first year, plan for the move into adult housing rather than being surprised by it.", source: "green-iguana-tank-setup-guide" },
-        { label: "Temperature", value: "Basking area 100 to 120°F, cool end around 80°F, nighttime not dropping below the low 70s°F. Heat via a cluster of halogen bulbs, roughly six bulbs to adequately cover an adult's basking branch, positioned over a sturdy climbing perch.", source: "green-iguana-tank-setup-guide" },
-        { label: "UVB", value: "High-output T5 HO UVB is required for survival in this species, not a nice-to-have, replaced every 12 months regardless of whether the bulb still produces visible light. Glass blocks UVB entirely, so a sunny window is never an adequate substitute.", source: "green-iguana-tank-setup-guide" },
-        { label: "Humidity", value: "60 to 80%, through misting twice daily with a pressure sprayer or an automated misting system, plus a large soaking tub the iguana can fully access. Chronically low humidity is directly linked to dehydration and kidney disease.", source: "green-iguana-tank-setup-guide" },
-        { label: "Floor", value: "2 to 4 inches of coconut husk or large-particle cypress mulch, sized specifically to reduce impaction risk. Avoid sand, gravel, corncob bedding, kitty litter, and wood shavings entirely.", source: "green-iguana-tank-setup-guide" },
-        { label: "Climbing", value: "Roughly two-thirds of an iguana's total length is tail, and this is fundamentally a climbing animal that needs genuine vertical space and sturdy branches positioned near the basking zone, not just floor area.", source: "green-iguana-tank-setup-guide" },
-        { label: "Diet", value: "Strictly plant-based: no insects, no dog or cat food, no eggs, ever. Too much animal protein in that diet is one of the husbandry failures behind kidney disease, along with chronic dehydration and over-supplementing vitamin D.", source: "green-iguana-health-issues-guide" },
-        { label: "Feeding routine", value: "Clip whole leaves at height so feeding happens where the animal already is. Put food in more than one place, rotate greens across the week so the salad is not identical every day, and dust with a plant-eater supplement.", source: "green-iguana-enrichment-guide" },
-        { label: "Handling", value: "Approaching from directly above triggers a strong defensive response, it reads as an aerial predator attack to the iguana, approach from the side instead. The tail can drop under grasping pressure, even fairly light pressure, so never grab or restrain by the tail.", source: "green-iguana-handling-guide" },
-        { label: "Breeding season", value: "Testosterone-driven aggression in mature males is real and can transform a previously calm, handleable iguana into an unpredictable one for a period each year, head-bobbing, color intensifying toward orange or red, and territorial chasing or biting.", source: "green-iguana-handling-guide" },
+        { label: "Temperature", value: "Basking area 100 to 120°F, cool end around 80°F, nighttime not dropping below the low 70s°F.", source: "green-iguana-tank-setup-guide" },
+        { label: "UVB", value: "High-output T5 HO UVB is required for survival in this species, not a nice-to-have, replaced every 12 months regardless of whether the bulb still produces visible light.", source: "green-iguana-tank-setup-guide" },
+        { label: "Humidity", value: "60 to 80%, through misting twice daily with a pressure sprayer or an automated misting system, plus a large soaking tub the iguana can fully access.", source: "green-iguana-tank-setup-guide" },
+        { label: "Floor", value: "2 to 4 inches of coconut husk or large-particle cypress mulch, sized specifically to reduce impaction risk.", source: "green-iguana-tank-setup-guide" },
+        { label: "Diet", value: "Strictly plant-based: no insects, no dog or cat food, no eggs, ever.", source: "green-iguana-health-issues-guide" },
+        { label: "Handling", value: "Approaching from directly above triggers a strong defensive response, it reads as an aerial predator attack to the iguana, approach from the side instead.", source: "green-iguana-handling-guide" },
         { label: "Housing together", value: "Adults are territorial. Adult males will fight each other, and a breeding-season male can be genuinely dangerous to the person keeping him.", source: "green-iguana-enrichment-guide" },
-        { label: "Parasite screening", value: "Do not skip parasite screening, given what the captive welfare assessment found: eight iguanas observed over 22 days in an exotic animal facility, and all eight carried endoparasites.", source: "green-iguana-enrichment-guide" },
         { label: "Adult size", value: "An adult male green iguana reaches 6 to 7 feet including tail and up to 20 pounds, a completely different animal from the small, manageable baby most people bring home.", source: "green-iguana-handling-guide" },
-        { label: "Lifespan", value: "With excellent care, green iguanas live 15 to 20 years, sometimes 25.", source: "green-iguana-cost-guide" },
         { label: "First year", value: "An estimated 70% of captive green iguanas die within their first year of life, and inadequate diet, lighting, and housing are named as the leading cause.", source: "green-iguana-health-issues-guide" },
-        { label: "The iguana", value: "Farm-raised babies are cheap, commonly $20 to $100. Morph lines cost considerably more: albino, hypomelanistic, axanthic, and purple translucent animals commonly run $300 to $1,000 or more.", source: "green-iguana-cost-guide" },
-        { label: "Budget", value: "$700 to $2,500 or more upfront, and it is two purchases. Ongoing, roughly $60 to $150 a month, covering fresh produce, calcium and multivitamin supplements, substrate, and meaningful electricity to heat and light a large enclosure.", source: "green-iguana-cost-guide" },
+        { label: "The iguana", value: "Farm-raised babies are cheap, commonly $20 to $100.", source: "green-iguana-cost-guide" },
+        { label: "Budget", value: "Baby green iguanas are farm-raised and inexpensive, commonly $20 to $100. The first-year kit runs about $985 to $1,100. The hatchling setup and the adult enclosure are two different purchases a year or two apart. Ongoing, roughly $60 to $150 a month, covering fresh produce, calcium and multivitamin supplements, substrate, and meaningful electricity to heat and light a large enclosure.", source: "green-iguana-cost-guide" },
+        { label: "Lifespan", value: "With excellent care, green iguanas live 15 to 20 years, sometimes 25.", source: "green-iguana-cost-guide" },
         { label: "Hygiene", value: "Wash hands with soap and running water immediately after any contact, keep reptiles out of the kitchen entirely, and never clean an enclosure, water dish, or equipment in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
-        { label: "Power outage", value: "This species is not in the guide's cold-floor table. Its rule for a species that is not listed: check its tank setup guide for the documented nighttime low and use that as your floor.", source: "reptile-emergency-plan-guide" },
       ],
     },
     emergencyCard: {
@@ -706,63 +666,94 @@ Mouth rot and respiratory infections follow from enclosures that are wet rather 
     petType: "Lizards",
     image: "/assets/guides/chameleon.jpg",
     tagline: "The horned, color-shifting dinosaur of the reptile world!",
-    funFact: "Jackson's chameleons are one of the few chameleon species that give live birth rather than laying eggs. Females can birth 8 to 30 live young!",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "24x24x48 in all-screen enclosure", low: 150, high: 300 },
-        { item: "Strong UVB (T5 HO Arcadia 6-12%)", low: 70, high: 110 },
-        { item: "Basking bulb", low: 20, high: 40 },
-        { item: "Dripper system and automatic mister", low: 50, high: 100 },
-        { item: "Live plants (pothos, ficus)", low: 40, high: 80 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-      ],
-      annual: [
-        { item: "Gut-loaded feeder insects (variety)", low: 150, high: 300 },
-        { item: "Calcium w/ and w/o D3 + multivitamin", low: 25, high: 35 },
-        { item: "UVB bulb replacement", low: 70, high: 110 },
-        { item: "Electricity (heat, lighting, mister)", low: 50, high: 90 },
-        { item: "Annual vet wellness check (chameleon-experienced)", low: 70, high: 120 },
+    funFact: "Jackson's chameleons are one of the few chameleon species that give live birth rather than laying eggs. A single birth can produce anywhere from 5 to 30 live offspring after a gestation of roughly 5 to 6 months!",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Quarantine cites the shared guide in the sidebar's
+    // Health and More list. Reconciled 2026-09-15 after the Jackson's
+    // chameleon set test (docs/READER_REVIEWS.md).
+    //
+    // The old hub carried veiled chameleon content on a Jackson's page, which
+    // is the defect the reader led with: two of its FAQs were about the veiled
+    // chameleon, including one giving male veiled size at 18 to 24 inches and
+    // 140 to 200 grams on a species the encyclopedia puts at 9 to 13 inches.
+    // All three FAQs are now verbatim copies of this species' own deep dives.
+    //
+    // Also retired rather than moved: daytime ambient 72 to 80F against the
+    // setup guide's 68 to 75F, on the one variable both pages call the
+    // defining risk; a night floor of 55 to 65F against 50 to 65F; a basking
+    // spot given as 85 to 88F in one section and 80 to 85F in the checklist of
+    // the same page; "screen construction is non-negotiable" against the setup
+    // guide's two or three solid sides; a 12% UVB option nothing in the set
+    // defends, against the setup guide's ReptiSun 5.0 or Arcadia Forest 6%; an
+    // annual total near $655 against the cost guide's roughly $1,200; a vet
+    // range of $70 to $120 against $50 to $100 or more; a setup table with no
+    // dimming thermostat line, which the setup guide requires and the cost
+    // guide prices at $73 to $93; "Jackson's chameleons live 5 to 10 years"
+    // against males 8 to 10 and females 3 to 5; and a litter of 8 to 30
+    // against the handling guide's 5 to 30, which the FunFact above now
+    // carries correctly. The hub's diet section, the only feeding content in
+    // the set, moved into the tank setup guide as a sourced Diet Basics
+    // section rather than being dropped.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "The chameleon", value: "$50 to $250. Common animals typically run $90 to $150, with prized, highly colored specimens of the primary subspecies reaching $250.", source: "jacksons-chameleon-cost-guide" },
+        { label: "Setup budget", value: "Roughly $400 to $525: a 24x24x48 inch tall screen or hybrid enclosure at $155 to $195, a UVB fixture and bulb at $95 to $115, a halogen basking bulb at $18 to $25, a dimmer or thermostat for it at $73 to $93, a misting system at $35 to $60, and live plants with moisture-retentive substrate at $18 to $35.", source: "jacksons-chameleon-cost-guide" },
+        { label: "Lifespan, by sex", value: "Males commonly live 8 to 10 years. Females live considerably shorter, typically 3 to 5 years, tied to the physical toll of giving birth to live young repeatedly.", source: "jacksons-chameleon-cost-guide" },
+        { label: "Adult size", value: "9 to 13 inches (23 to 33 cm)." },
+        { label: "Enclosure size", value: "24 inches long by 24 inches wide by 48 inches tall for a single adult, larger is better. House one chameleon per enclosure, males will fight.", source: "jacksons-chameleon-tank-setup-guide" },
+        { label: "The walls", value: "Favor an enclosure with two or three solid sides rather than full mesh, this helps hold humidity and genuinely reduces stress compared to an all-screen setup.", source: "jacksons-chameleon-tank-setup-guide" },
+        { label: "Temperature, the defining difference", value: "Basking spot around 85°F, similar to the veiled chameleon, but ambient air should stay considerably cooler, 68 to 75°F, with a genuine night drop to 50 to 65°F.", source: "jacksons-chameleon-tank-setup-guide" },
+        { label: "Humidity", value: "Daytime humidity around 30 to 50%, rising to 75 to 100% overnight, achieved through morning and evening misting, an automated mister for consistency, and a cool-mist humidifier on a humidistat for the overnight spike.", source: "jacksons-chameleon-tank-setup-guide" },
+        { label: "UVB", value: "UVB is required, a Zoo Med ReptiSun 5.0 T5 HO or Arcadia Forest 6% bulb, replaced every 6 to 12 months.", source: "jacksons-chameleon-tank-setup-guide" },
+        { label: "Substrate", value: "Bare bottom with paper towel is the simplest, most manageable choice, though a bioactive substrate setup works too if you prefer.", source: "jacksons-chameleon-tank-setup-guide" },
+        { label: "Water and equipment", value: "Never run a fogger while the heat lamp is on, the combination can create dangerous conditions inside the enclosure.", source: "jacksons-chameleon-tank-setup-guide" },
+        { label: "Feeding", value: "Offer no more than five to seven insects at a feeding, none larger than the space between the chameleon's eyes. Gut-load the insects before they go in.", source: "jacksons-chameleon-tank-setup-guide" },
+        { label: "Supplements, lightly", value: "Supplement lightly, on a weekly rhythm: calcium dusted onto an adult's non-breeding diet once weekly, and a general vitamin and mineral supplement that may go on once weekly too.", source: "jacksons-chameleon-tank-setup-guide" },
+        { label: "Dehydration", value: "Genuinely the most common problem in this species, as with most chameleons, which won't reliably drink from a standing water dish. Watch for sunken eyes and lethargy.", source: "jacksons-chameleon-health-issues-guide" },
+        { label: "Handling", value: "Jackson's chameleons are among the more docile chameleons kept as pets, and more laid-back than the veiled chameleon, but more docile for a chameleon still means minimal handling, not a hands-on relationship.", source: "jacksons-chameleon-handling-guide" },
+        { label: "Legal, before you buy", value: "Hawaii and the District of Columbia bar private ownership. New Jersey requires a possession permit, and Minnesota and Maine attach conditions.", source: "jacksons-chameleon-legal-guide" },
+        { label: "Quarantine", value: "Quarantine periods of 3 to 6 months for new reptiles are recommended.", source: "reptile-quarantine-guide" },
       ],
     },
-    sections: {
-      housing: `A 24x24x48" all-screen enclosure is the minimum for a single adult Jackson's chameleon. Screen construction is non-negotiable - stagnant air in glass or plastic enclosures causes rapid onset respiratory infections in chameleons. Airflow must be constant and significant. Many experienced keepers use screen cages outdoors in appropriate climates, which is close to ideal.
-
-Live plants are essential, not decorative. Pothos, ficus, hibiscus, and dracaena provide natural humidity regulation, visual barriers for security, resting surfaces, and environmental complexity. Bare enclosures produce chronically stressed, sick chameleons. Aim for at least 60 to 70% plant coverage of the enclosure interior.
-
-Temperature requirements: daytime ambient of 72 to 80 degrees F with a basking spot of 85 to 88 degrees F. Jackson's chameleons prefer cooler temperatures than most other chameleon species - they originate from the cool highlands of East Africa and Hawaii's Maui island. Nighttime temperatures can drop to 55 to 65 degrees F, which is actually beneficial. Never allow temperatures to exceed 90 degrees F. Strong UVB (T5 HO Arcadia 6% or 12%) is mandatory.
-
-A dripper system and/or automatic misting system is required for hydration. Chameleons almost never drink from standing water - they drink water droplets from leaves and their environment after rainfall. A dripper creating slow drips onto leaves for 30 to 60 minutes morning and afternoon, combined with a fine misting system that runs for 3 to 5 minutes several times daily, meets hydration and humidity needs.`,
-      diet: `Jackson's chameleons eat live insects exclusively. The variety of feeder insects is one of the most important factors in long-term health. Offer crickets, dubia roaches, hornworms, silkworms, black soldier fly larvae, and blue bottle flies. Each insect species has a different nutritional profile, and rotation provides comprehensive nutrition. Avoid relying on a single feeder type.
-
-Gut-loading feeder insects 24 to 48 hours before feeding is critical. Feed insects a high-quality commercial gut-load or fresh vegetables (collard greens, mustard greens, sweet potato, carrot, apple). The chameleon's nutrition is entirely dependent on what its prey ate. An unloaded cricket offers minimal nutritional value.
-
-Feed juveniles daily (as many as they will eat in 15 minutes). Feed adults every other day, offering 5 to 10 appropriately sized insects. Prey should be no larger than the width of the chameleon's head. Overfeeding causes obesity, which stresses the liver and reproductive system.
-
-Supplementation schedule: calcium without D3 at every or every-other feeding, calcium with D3 twice weekly, and a reptile multivitamin once per week. Jackson's chameleons are sensitive to over-supplementation as much as under-supplementation. Follow this schedule precisely.`,
-      enrichment: `Dense, multi-level branching is the most important structural enrichment. Chameleons are almost entirely arboreal and spend their lives navigating through a three-dimensional network of branches and leaves. Horizontal branches at multiple heights, thin perching vines at the top (where they feel safest), and thick branches lower for basking create the complexity they need.
-
-The dripper and misting system doubles as enrichment - chameleons investigate and drink droplets naturally and actively. Watching a chameleon track and hunt live prey is a major appeal of keeping them; the prey variety itself provides mental engagement.
-
-Handle minimally. Chameleons are not handling animals. Stress is a primary health concern - a chronically stressed chameleon will stop eating, develop immune suppression, and die. Many chameleons spend their entire lives in their enclosure without needing to be handled. When handling is necessary (for veterinary visits, enclosure cleaning), move slowly, allow the chameleon to walk onto your hand voluntarily, and keep sessions as brief as possible.
-
-Jackson's chameleons are live-bearing (viviparous), unlike most chameleon species that lay eggs. A gravid female needs adequate nutrition and a suitable warm, humid hiding area. Breeding is not recommended without extensive experience.`,
-      health: `Chameleons are masters of concealing illness. By the time a chameleon shows obvious signs of sickness - color changes, sunken eyes, closed eyes during the day, gaping mouth, lethargy - it has usually been ill for some time and is severely compromised. Attentive daily observation of baseline behavior is essential. Know what your chameleon's normal colors, activity level, and feeding response look like.
-
-Dehydration is the single most common cause of early death in pet chameleons. Sunken eyes (the most visible sign), dark coloration, and lethargy indicate dehydration. A chameleon that is not drinking needs immediate intervention: long misting sessions, paper towel soaks, and veterinary care if the animal does not rehydrate quickly. Maintain the dripper and misting schedule without gaps.
-
-Metabolic Bone Disease (MBD) from inadequate UVB or supplementation causes swollen limbs, deformities, and difficulty moving. Maintain proper UVB schedules, replace UVB bulbs on schedule, and follow supplementation protocols exactly.
-
-Respiratory infections result from stagnant air and temperature fluctuations. The all-screen enclosure mandate is specifically to prevent this. Female Jackson's chameleons can develop reproductive problems (dystocia, retained offspring) that require veterinary intervention. Find a reptile vet with chameleon experience before you need one - do not wait for an emergency to identify your veterinary resource.`,
-      checklist: ["24x24x48\" all-screen enclosure", "Strong UVB lighting (T5 HO Arcadia 6% or 12%)", "Basking bulb (80 to 85 degrees F hot spot)", "Dripper system and automatic mister", "Live plants (pothos, ficus)", "Gut-loaded feeder insects", "Calcium w/D3 and without D3 supplements", "Multivitamin supplement", "Digital thermometer and hygrometer", "Reptile vet with chameleon experience"],
+    emergencyCard: {
+      source: "jacksons-chameleon-health-issues-guide",
+      callNow: [
+        "Lethargy, rubbery or bent bones, swollen limbs, and tremors: always see a vet, early cases respond considerably better to treatment than advanced ones",
+        "Sunken eyes and lethargy: see a vet if your chameleon doesn't respond to increased misting and dripper output, or shows real lethargy",
+        "Swollen joints: always see a vet, and know that full resolution can be genuinely difficult once this develops",
+        "Fluid-filled sacs developing under the throat, neck, or chest: see a vet, and review your supplement routine",
+        "Eye problems, poor coordination, a weakening grip, and respiratory issues: always see a vet",
+      ],
+      vetLine: "Insufficient misting causes the dehydration that's the single most common issue in this species. Weak UVB and calcium cause MBD. Overfeeding and dehydration together drive gout. And oversupplementing, specifically vitamin A or D, can cause edema, a genuinely species-specific risk worth watching for. Getting hydration and supplementation calibrated correctly, not just present, prevents most of what's on this list.",
     },
+    routes: [
+      { slug: "jacksons-chameleon-cost-guide", line: "$90 to $150 for most animals, $400 to $525 of setup, and why males and females live such different lengths of time." },
+      { slug: "jacksons-chameleon-tank-setup-guide", line: "24x24x48, 85F basking over 68 to 75F air, the real night drop, the UVB bulbs, and what to feed." },
+      { slug: "jacksons-chameleon-handling-guide", line: "The three horns, the stress signals, and the live birth that sets this species apart." },
+      { slug: "jacksons-chameleon-health-issues-guide", line: "Dehydration first, then the edema and gout that come from oversupplementing a species already sensitive to it." },
+      { slug: "jacksons-chameleon-enrichment-guide", line: "Why the enrichment problem here is a thermometer, and the planting density test." },
+      { slug: "jacksons-chameleon-legal-guide", line: "Barred in the one state where you are most likely to see one, and the four other jurisdictions that reach it." },
+    ],
+    buyList: [
+      "A 24x24x48 inch tall enclosure with two or three solid sides",
+      "A T5 HO UVB fixture with a ReptiSun 5.0 or Arcadia Forest 6% bulb",
+      "A halogen basking bulb and a dimming thermostat for it",
+      "A misting system, manual or automated, plus a dripper",
+      "A cool-mist humidifier on a humidistat for the overnight spike",
+      "Distilled water for anything that mists or fogs",
+      "Live plants, densely, plus climbing branches at several heights",
+      "Paper towel for the floor, or a bioactive base if you prefer",
+      "A digital thermometer and hygrometer",
+      "A calcium supplement and a general vitamin and mineral supplement",
+    ],
     faqs: [
-      { q: "Are chameleons hard to keep?", a: "Chameleons are widely considered one of the most demanding reptiles in the hobby and are not recommended for first-time reptile keepers. They require very specific conditions: all-screen enclosures for ventilation, precise temperature gradients, high humidity with a wet-dry cycle, strong UVB lighting, live gut-loaded insects at every feeding, and a dripper or automatic misting system for hydration. They are also highly stress-sensitive - improper conditions or a high-traffic cage location cause rapid health decline. Experienced keepers find them deeply rewarding; beginners often experience significant losses." },
-      { q: "Why do chameleons change color?", a: "Chameleons change color primarily to communicate mood, social status, and reproductive readiness - not primarily for camouflage as commonly believed. Bright, vivid colors often signal excitement, territorial aggression, or a male displaying to a female. Dark, muted colors typically indicate stress, illness, or cold. The color change is achieved by manipulating nanocrystals within specialized skin cells called iridophores, which reflect different wavelengths of light depending on their arrangement." },
-      { q: "How do I get my chameleon to drink water?", a: "Chameleons rarely drink from standing water bowls - in the wild, they drink droplets from leaves after rain. Provide water by misting the enclosure 2 to 3 times daily so the chameleon can drink from leaves and cage walls. A dripper system that slowly keeps leaves wet is highly effective. Always use dechlorinated or filtered water. Signs of dehydration include sunken eyes, lethargy, and yellow-orange urates - the urate portion of droppings should be white, not yellow." },
-      { q: "How big do veiled chameleons get?", a: "Male veiled chameleons typically reach 18 to 24 inches total length and 140 to 200 grams - they are among the larger chameleon species kept in captivity. Females are noticeably smaller at 10 to 13 inches, but require more advanced care because they are prone to reproductive issues. Females produce infertile eggs even without a male and must have a deep laying box available at all times to prevent fatal egg-binding." },
-      { q: "How long do chameleons live?", a: "Captive-bred veiled chameleons live 5 to 8 years with optimal care, with males often outliving females (females that lay frequent clutches have significantly shortened lifespans). Jackson's chameleons live 5 to 10 years. Panther chameleons live 3 to 7 years. Wild-caught chameleons rarely survive long in captivity due to extreme capture stress. Regular access to a vet experienced with chameleons dramatically improves outcomes at any age." },
-      { q: "How can I tell if my Jackson's chameleon is male or female?", a: "By the horns. Male Jackson's chameleons grow three distinct horns on the front of the face, giving them a small Triceratops-like look, while females typically have no horns or only tiny, rudimentary nubs. It's one of the clearest, easiest sexing calls of any commonly kept reptile." },
+      { q: "What size enclosure does an adult Jackson's chameleon need?", a: "24 by 24 by 48 inches for one adult, and bigger is better. A juvenile under about 10 months can sit temporarily in something like 16x16x30. One chameleon per enclosure: males fight." },
+      { q: "What temperature does a Jackson's chameleon need, and how does it differ from a veiled chameleon?", a: "Basking near 85°F, much like a veiled chameleon, but the ambient air stays cooler at 68 to 75°F, with a real night drop to 50 to 65°F. Night heat is usually unnecessary and can work against a species adapted to cool mountain nights." },
+      { q: "What is the most common health problem in Jackson's chameleons?", a: "Dehydration. Like most chameleons, Jackson's won't reliably drink from a standing water dish. Sunken eyes and lethargy are the signs. Caught early it's manageable at home by increasing misting and dripper output. See a vet if your chameleon doesn't respond, or shows real lethargy." },
     ],
   },
   {
@@ -776,9 +767,9 @@ Respiratory infections result from stagnant air and temperature fluctuations. Th
     funFact: "Savannah monitors are built for digging. In the wild they may create burrows several feet deep to escape the African heat. A deep substrate is one of the most important enrichment features you can give them!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
-    // the hub keeps no number of its own. Quarantine, hygiene, the thermostat
-    // probe and the power-outage line cite the shared reptile guides in the
-    // sidebar's Health and More list. Reconciled 2026-09-15 after the
+    // the hub keeps no number of its own. Quarantine and hygiene cite the
+    // shared reptile guides in the sidebar's Health and More list.
+    // Reconciled 2026-09-15 after the
     // savannah monitor set test (docs/READER_REVIEWS.md).
     //
     // This species has no feeding guide, so the diet rows copy the Diet
@@ -807,32 +798,23 @@ Respiratory infections result from stagnant air and temperature fluctuations. Th
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Legal", value: "Eleven jurisdictions restrict it, five as outright bans and six as paperwork, and the other 41 place no restriction at all. Louisiana is the one state that decided about this species in particular, naming Varanus exanthematicus on its prohibited nonnative list.", source: "savannah-monitor-legal-guide" },
+        { label: "Legal", value: "Eleven jurisdictions restrict it, five as outright bans and six as paperwork, and the other 41 place no restriction at all.", source: "savannah-monitor-legal-guide" },
         { label: "Day one", value: "A new lizard is quarantined 3 to 6 months away from any reptile you already keep, in a separate room on plain paper towel, with its own tools, and a vet check within two weeks of acquiring it with a fresh fecal sample.", source: "reptile-quarantine-guide" },
-        { label: "Where it came from", value: "Many are wild-caught or farmed in bulk for the pet trade, which keeps supply high and price low, and also means a real share arrive stressed, parasitized, and with a shorter life expectancy than a captive-bred animal would have.", source: "savannah-monitor-cost-guide" },
-        { label: "Parasites", value: "Genuinely common in this species, particularly wild-caught or farmed animals. A fecal exam is worth doing proactively for any newly acquired savannah monitor rather than waiting for symptoms.", source: "savannah-monitor-health-issues-guide" },
-        { label: "Adult size", value: "3 to 4 feet long and 8 to 15 pounds, genuinely large and strong enough that adult handling calls for real caution. Sharp teeth, strong claws, and a whip-capable tail are all real defensive tools on an animal this size.", source: "savannah-monitor-handling-guide" },
-        { label: "Enclosure", value: "A hatchling can start around 36x24x20 inches, but a single adult needs an 8-foot by 4-foot by 4-foot enclosure at minimum. This is the current welfare standard and reflects genuine need, not excess. Floor space matters more than height, and it is one monitor per enclosure.", source: "savannah-monitor-tank-setup-guide" },
-        { label: "Nothing fits", value: "A ready-made 8ft PVC modular enclosure is actually 8x2x2ft, a partial match on length only, well short of the 8x4x4ft footprint an adult needs. True adult-sized housing for this species is typically a DIY build or ordered direct from a manufacturer.", source: "savannah-monitor-tank-setup-guide" },
-        { label: "Basking", value: "Basking surface temperature should reach 140 to 150F, measured directly with an infrared thermometer rather than an air temperature reading. Use a cluster of halogen flood bulbs on a thermostat: this species needs multiple bulbs working together to create adequate heat across a large enclosure.", source: "savannah-monitor-tank-setup-guide" },
-        { label: "Cool side and night", value: "Cool side should run 75 to 85F, with nighttime dropping to around 70 to 75F. Avoid ceramic heat emitters, red or blue bulbs, or heat mats as the primary basking heat source, they don't provide the intensity this species needs.", source: "savannah-monitor-tank-setup-guide" },
-        { label: "Thermostat probe", value: "The probe reads at the animal's level, not up in the airspace near the fixture. For an overhead source, follow your controller's own instruction and confirm the result with independent checks.", source: "reptile-heating-thermostats-guide" },
-        { label: "Humidity", value: "Around 50% ambient, with access to a genuinely humid burrow where conditions run considerably wetter. Achieve this by pouring water directly into the deep substrate in one area and providing a humid hide, rather than trying to raise ambient humidity across the whole enclosure.", source: "savannah-monitor-tank-setup-guide" },
-        { label: "Substrate", value: "Deep is the operative word, 12 to 24 inches or more of a diggable soil, sand, and clay mix that genuinely holds a burrow shape. A topsoil and play sand blend, or a product like Zoo Med Excavator Clay, both work. Avoid shallow substrate or loose, particulate-only setups that collapse rather than holding tunnels.", source: "savannah-monitor-tank-setup-guide" },
-        { label: "UVB", value: "A T5 HO bulb in the 10 to 12% range, spanning roughly half the enclosure, positioned 14 to 16 inches from the basking area. Pair with a bright 6500K daylight bulb. Adjust photoperiod seasonally, around 11 hours in winter, 13 in summer.", source: "savannah-monitor-tank-setup-guide" },
-        { label: "Water basin", value: "Large enough for the monitor to fully submerge its entire body, not just a shallow dish. Combined with the humid burrow, this genuinely matters for hydration and shedding, and a big, dry enclosure with just a small water bowl isn't adequate regardless of how large the dry footprint is.", source: "savannah-monitor-tank-setup-guide" },
-        { label: "Diet", value: "The staple is gut-loaded insects: dubia roaches, crickets, locusts, superworms, silkworms, grasshoppers, crayfish and other low-fat foods. Lean mice, chicks or freshwater fish belong in the occasional column and stay there, because rodents and fatty foods fed too often lead to severe obesity and organ disease. Skip processed meats and dog or cat food entirely.", source: "savannah-monitor-tank-setup-guide" },
-        { label: "How often", value: "Juveniles eat daily or every other day. Adults eat two to three times a week.", source: "savannah-monitor-tank-setup-guide" },
-        { label: "Supplements", value: "Dust insects with calcium, without D3 where UVB is running and with D3 where it is not, and add a multivitamin weekly. The calcium supplement should be low in or free of phosphorus, at a minimum calcium to phosphorus ratio of 2:1.", source: "savannah-monitor-tank-setup-guide" },
-        { label: "Portion", value: "No published figure puts a number on the portion, so frequency and food choice do most of the work. An animal putting on a rounded, heavy body shape is being fed too richly whatever the portion size says.", source: "savannah-monitor-tank-setup-guide" },
-        { label: "The thing that kills them", value: "In the wild, savannah monitors eat a lean, largely insect-based diet on a seasonal cycle. In captivity that rhythm disappears and animals get fed rich food year-round with a fraction of the activity level, which is why obesity and hepatic lipidosis are the signature problem here.", source: "savannah-monitor-health-issues-guide" },
-        { label: "Handling", value: "Pick up from underneath rather than from above, since reaching down from above mimics a predator attack and triggers defensive reactions. Support the full body and tail. As adults grow, routine tasks like nail trims may genuinely require two or three people experienced with reptile restraint.", source: "savannah-monitor-handling-guide" },
-        { label: "Stop signals", value: "Hissing, open-mouthed snapping, puffing out the throat, standing up on the hind limbs, and flicking the tail. Do not attempt handling while any of those is on display unless you are an experienced reptile handler.", source: "savannah-monitor-handling-guide" },
-        { label: "Feed with tongs", value: "Put food in and take leftovers out with tongs, because a hungry monitor may mistake moving fingers for prey, and wash your hands after handling its food. Keep the nails trimmed, since they can become very sharp and painful.", source: "savannah-monitor-handling-guide" },
-        { label: "Enrichment", value: "Substrate deep enough for a real burrow with a damp lower layer first, then enclosure floor area, then puzzle and extraction feeding delivering the existing ration, then a humid retreat, then target and station training, then scent novelty, and rearrangement last.", source: "savannah-monitor-enrichment-guide" },
+        { label: "Parasites", value: "A fecal exam is worth doing proactively for any newly acquired savannah monitor rather than waiting for symptoms.", source: "savannah-monitor-health-issues-guide" },
+        { label: "Adult size", value: "3 to 4 feet long and 8 to 15 pounds, genuinely large and strong enough that adult handling calls for real caution.", source: "savannah-monitor-handling-guide" },
+        { label: "Enclosure", value: "A hatchling can start around 36x24x20 inches, but a single adult needs an 8-foot by 4-foot by 4-foot enclosure at minimum. Floor space matters more than height, and it is one monitor per enclosure. A ready-made 8ft PVC modular enclosure is actually 8x2x2ft, a partial match on length only, well short of the 8x4x4ft footprint an adult needs.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Basking", value: "Basking surface temperature should reach 140 to 150F, measured directly with an infrared thermometer rather than an air temperature reading. Cool side should run 75 to 85F, with nighttime dropping to around 70 to 75F.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Humidity", value: "Around 50% ambient, with access to a genuinely humid burrow where conditions run considerably wetter.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Substrate", value: "Deep is the operative word, 12 to 24 inches or more of a diggable soil, sand, and clay mix that genuinely holds a burrow shape.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "UVB", value: "A T5 HO bulb in the 10 to 12% range, spanning roughly half the enclosure, positioned 14 to 16 inches from the basking area.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Water basin", value: "Large enough for the monitor to fully submerge its entire body, not just a shallow dish.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Diet", value: "The staple is gut-loaded insects: dubia roaches, crickets, locusts, superworms, silkworms, grasshoppers, crayfish and other low-fat foods. Lean mice, chicks or freshwater fish belong in the occasional column and stay there, because rodents and fatty foods fed too often lead to severe obesity and organ disease. Juveniles eat daily or every other day. Adults eat two to three times a week.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "Supplements", value: "Dust insects with calcium, without D3 where UVB is running and with D3 where it is not, and add a multivitamin weekly.", source: "savannah-monitor-tank-setup-guide" },
+        { label: "The thing that kills them", value: "In captivity that rhythm disappears and animals get fed rich food year-round with a fraction of the activity level, which is why obesity and hepatic lipidosis are the signature problem here.", source: "savannah-monitor-health-issues-guide" },
+        { label: "Handling", value: "Pick up from underneath rather than from above, since reaching down from above mimics a predator attack and triggers defensive reactions.", source: "savannah-monitor-handling-guide" },
         { label: "Hygiene", value: "Wash hands with soap right after any contact, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
-        { label: "Budget", value: "Juveniles run $150 to $300 and adults $300 to $800. Setup commonly runs well past $500 and sometimes exceeds $1,000, and upkeep is roughly $30 to $50 a month. A routine annual exam runs $50 to $100.", source: "savannah-monitor-cost-guide" },
-        { label: "Lifespan", value: "Commonly cited at 10 to 15 years, with 15 to 20 achievable under excellent husbandry. Many pet savannah monitors die well before that, in their early teens or younger, from fatty liver disease, kidney failure, or gout, nearly all tied directly to overfeeding.", source: "savannah-monitor-cost-guide" },
+        { label: "Budget", value: "Juveniles run $150 to $300 and adults $300 to $800. Setup commonly runs well past $500 and sometimes exceeds $1,000, and upkeep is roughly $30 to $50 a month.", source: "savannah-monitor-cost-guide" },
+        { label: "Lifespan", value: "Commonly cited at 10 to 15 years, with 15 to 20 achievable under excellent husbandry.", source: "savannah-monitor-cost-guide" },
       ],
     },
     emergencyCard: {
@@ -886,65 +868,89 @@ Respiratory infections result from stagnant air and temperature fluctuations. Th
     image: "/assets/guides/uromastyx.jpg",
     tagline: "The colorful, seed-eating desert dragon that thrives on extreme heat!",
     funFact: "Uromastyx (also called spiny-tailed lizards) are almost entirely herbivorous. They get nearly all their water from their food and rarely need a standing water dish! They're one of the few reptiles that thrive on seeds.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    costs: {
-      setup: [
-        { item: "4x2x2 ft+ enclosure", low: 150, high: 300 },
-        { item: "High-wattage basking bulb + fixture", low: 25, high: 45 },
-        { item: "Quality thermostat", low: 40, high: 70 },
-        { item: "Strong desert UVB (T5 HO Arcadia Dragon 12%)", low: 70, high: 110 },
-        { item: "Sandy desert substrate", low: 20, high: 35 },
-        { item: "Infrared thermometer gun", low: 25, high: 40 },
-      ],
-      annual: [
-        { item: "Dark leafy greens daily", low: 100, high: 180 },
-        { item: "Seeds and legumes", low: 30, high: 60 },
-        { item: "Calcium and multivitamin supplements", low: 20, high: 30 },
-        { item: "UVB bulb replacement", low: 70, high: 110 },
-        { item: "Electricity (high-wattage basking)", low: 70, high: 120 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
-      ],
-    },
-    sections: {
-      housing: `Adults need a minimum 4x2x2 ft enclosure. Uromastyx are desert lizards from North Africa and the Middle East requiring extremely hot basking spots. A surface temperature of 120 to 140 degrees F at the basking site is not optional - it is biologically critical for digestion, immune function, and thermoregulation. Without adequate basking heat, uromastyx cannot function properly.
-
-The cool side should remain at 80 to 90 degrees F ambient. Strong T5 HO desert UVB (Arcadia Dragon 12% or equivalent) is mandatory and should run on a 10 to 12 hour cycle. Use a sandy desert substrate - fine play sand or an 80/20 sand-to-soil mix - 3 to 4 inches deep for natural digging behavior. Humidity should be kept very low (20 to 30%), mimicking their arid native habitat. A water dish is typically unnecessary and can raise humidity to unhealthy levels.
-
-Enclosure temperatures must be measured with an infrared temperature gun for accuracy. A high-wattage halogen or flood bulb on a quality thermostat achieves the required basking surface temperature.`,
-      diet: `Uromastyx are primarily herbivores and enthusiastic seed-eaters - this is relatively unusual among reptiles and makes them interesting to feed. Staple greens include collard greens, mustard greens, dandelion greens, endive, and escarole. Dark leafy greens should form the bulk of plant matter offered.
-
-Seeds form a nutritionally important part of the diet: millet, lentils, split peas, various legume seeds, and quinoa are all appropriate. Offer seeds mixed into the greens or provided separately. Uromastyx eat them with obvious enthusiasm. Seeds provide protein, fat, and trace minerals that complement the leafy green base.
-
-Do not provide a water dish as part of the regular setup - uromastyx get adequate hydration from their food, and a water dish raises humidity significantly, which is inappropriate for this arid-adapted species. Dust greens with calcium 2 to 3 times per week and a reptile multivitamin once weekly. Avoid high-oxalate foods like spinach as primary staples.`,
-      enrichment: `Uromastyx are active, curious lizards that explore their enclosure during the warm hours of the day and engage with their environment in ways that many reptiles do not. They can become remarkably personable - many develop what keepers describe as dog-like personalities, seeking interaction and responding to their keeper's presence.
-
-Provide rock stacks (securely stacked to prevent toppling), cork bark hides, and burrowing substrate deep enough for natural digging behavior. Uromastyx enjoy rearranging their environment and will push cork bark and rocks around to suit their preferences. This is entirely normal and engaging to watch.
-
-Foraging enrichment is highly effective: hide seeds in the substrate, under rocks, or in puzzle feeders to encourage natural searching behavior. Supervised handling sessions build trust quickly with this species. Most uromastyx become calm and manageable adults with consistent, gentle interaction.`,
-      health: `Inadequate basking temperature is the most common and most serious husbandry failure in uromastyx. A basking surface temperature below 120 degrees F means the uromastyx cannot properly thermoregulate its core body temperature, digest food, or activate immune responses. This leads to chronic digestive problems, immune suppression, and a dramatically shortened lifespan. Monitor basking temperatures regularly.
-
-Metabolic Bone Disease from inadequate UVB or calcium supplementation causes softened bones and skeletal deformities. Strong UVB and consistent calcium supplementation prevent it. Respiratory infections can occur if humidity rises too high - keep the enclosure dry and well-ventilated.
-
-Impaction from moist substrate is possible if the sandy substrate is kept too wet. Keep it dry throughout. Annual wellness checks with a reptile veterinarian experienced in lizards are strongly recommended.`,
-      checklist: [
-        "4x2x2 ft+ enclosure",
-        "High-wattage basking bulb (120 to 140 degrees F surface)",
-        "Quality thermostat",
-        "Strong desert UVB (T5 HO Arcadia Dragon 12%)",
-        "Sandy desert substrate (fine sand/soil mix, 3 to 4 inch deep)",
-        "Digital thermometer (IR gun essential)",
-        "Calcium + multivitamin supplements",
-        "Staple dark leafy greens daily",
-        "Seeds and legumes (millet, lentils, split peas)",
-        "Reptile vet experienced with uromastyx",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes;
+    // the hub keeps no number of its own. Adult size comes from the
+    // encyclopedia entry. Quarantine cites the shared reptile guide in the
+    // sidebar's Health and More list. Reconciled 2026-09-15 after the
+    // uromastyx set test
+    // (docs/READER_REVIEWS.md).
+    //
+    // The reader's summary of the old hub: it "contradicts four numbers a new
+    // keeper will act on". Retired rather than moved:
+    // basking 120 to 140F against the setup guide's 110 to 120F (the species
+    // check moved the set to the vs guide's veterinary figure), with at least
+    // 130F for giant Egyptians; a 12% UVB bulb against the setup guide's 14%
+    // and its UVI 4.5 to 6.0 target; substrate "3 to 4 inches deep" and an
+    // 80/20 sand-to-soil mix against at least 4 inches of 50/30/20 sand,
+    // topsoil and excavator clay; an enclosure at $150 to $300 against the cost
+    // guide's $280 to $400; adult size 10 to 18 inches against the
+    // encyclopedia's 10 to 30; "seeds form a nutritionally important part of
+    // the diet" against the feeding guide's "treat seeds as limited, not a
+    // daily component"; "remove any water dish" against the health guide's
+    // veterinary guidance to keep one available even if it goes untouched;
+    // "supervised handling sessions build trust quickly" against the enrichment
+    // guide's "do not treat handling as enrichment for a species that mostly
+    // wants to be left on its rock"; and "no insects in the diet" against the
+    // enrichment guide's "occasional insects are not a disaster".
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      rows: [
+        { label: "The lizard", value: "$150 to $400 for a common captive-bred Mali or ornate uromastyx, with hatchlings toward the lower end and adults higher.", source: "uromastyx-cost-guide" },
+        { label: "Setup budget", value: "Roughly $500 to $900. The enclosure is the biggest single expense at $280 to $400, and it needs to be 4x2x2 feet at minimum from day one rather than a smaller size you'll upgrade later.", source: "uromastyx-cost-guide" },
+        { label: "Monthly", value: "Roughly $25 to $45 a month for fresh greens and produce, seeds, supplements, and the cost of running high-wattage bulbs.", source: "uromastyx-cost-guide" },
+        { label: "Lifespan", value: "15 to 20 years is the number most commonly cited for this species.", source: "uromastyx-cost-guide" },
+        { label: "Adult size", value: "10 to 30 inches (25 to 75 cm) depending on species." },
+        { label: "Enclosure size", value: "4 feet long by 2 feet wide by 2 feet tall is the minimum for species up to about 18 inches. Larger species, the Egyptian uromastyx especially, need up to 8x4x4 feet for a full-grown adult. House one uromastyx per enclosure.", source: "uromastyx-tank-setup-guide" },
+        { label: "Basking, the defining requirement", value: "Basking surface temperature needs to reach 110 to 120°F, with the giant Egyptian species needing at least 130°F. Cool zone should sit around 85°F, with nighttime dropping to around 65°F, usually without needing supplemental night heat.", source: "uromastyx-tank-setup-guide" },
+        { label: "Humidity, the other one", value: "Uromastyx need humidity low enough to make a bearded dragon look tropical by comparison, just 20 to 30% ambient, measured on the cool side. High humidity makes this species genuinely sick.", source: "uromastyx-tank-setup-guide" },
+        { label: "Substrate", value: "Fine sand or a sandy soil mix, or a DIY blend of roughly 50% play sand, 30% topsoil, and 20% excavator clay, packed at least 4 inches deep to support burrowing.", source: "uromastyx-tank-setup-guide" },
+        { label: "UVB", value: "Strong UVB is required, not optional, for this diurnal species. A high-output T5 HO bulb in the 14% range, targeting a basking-area UVI of 4.5 to 6.0, paired with a bright daylight LED bar.", source: "uromastyx-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Babies and juveniles get fresh vegetables and greens daily, as much as they'll clean up in one sitting. Adults: anywhere from 2 to 4 times a week up to 5 to 7 days a week.", source: "uromastyx-feeding-guide" },
+        { label: "What they eat", value: "The bulk of the diet is dark leafy greens and edible flowers, chopped or shredded, not whole leaves, which are a choking and impaction risk especially for young animals: collard greens, dandelion greens and flowers, mustard and turnip greens, endive, escarole, arugula, watercress, and hibiscus leaves and flowers.", source: "uromastyx-feeding-guide" },
+        { label: "Where the water comes from", value: "These lizards get almost all of their water from food, so feed greens before they wilt.", source: "uromastyx-health-issues-guide" },
+        { label: "Metabolic bone disease", value: "The most common issue in captivity. Watch for a soft or hanging jaw, swollen limbs, tremors, deformed bones, and lethargy, though the early signs are behavioral: poor appetite, weakness, and an inability to walk normally.", source: "uromastyx-health-issues-guide" },
+        { label: "Handling", value: "Scoop from below rather than reaching down from above, which reads as a predatory approach and triggers defensive hissing and tail-whipping. Give a newly acquired uromastyx about two weeks alone to settle in before attempting regular handling.", source: "uromastyx-handling-guide" },
+        { label: "Quarantine", value: "Quarantine periods of 3 to 6 months for new reptiles are recommended.", source: "reptile-quarantine-guide" },
       ],
     },
+    emergencyCard: {
+      source: "uromastyx-health-issues-guide",
+      callNow: [
+        "Lumps or swelling in the joints or under the skin",
+        "Runny or foul-smelling stools",
+        "Dull or darkened coloration",
+        "Sunken eyes or lethargy",
+        "Open-mouth breathing or discharge from the nose",
+        "Any tissue protruding from the vent",
+      ],
+      vetLine: "Uromastyx are hardy desert specialists, and most health problems trace directly back to getting this species' unusually specific heat, humidity, or dietary needs wrong. Dehydration looks like loose skin, sunken eyes, dull color, and lethargy. A lizard showing those needs a vet, not a bigger water bowl.",
+    },
+    routes: [
+      { slug: "uromastyx-cost-guide", line: "$150 to $400 for the lizard, $500 to $900 of setup, and the starter kits that are sized wrong." },
+      { slug: "uromastyx-tank-setup-guide", line: "4x2x2 as a floor, a 110 to 120F basking surface, 20 to 30% humidity, and the substrate recipe." },
+      { slug: "uromastyx-feeding-guide", line: "A herbivore's schedule by age, the greens list, where seeds actually belong, and how to read a fast." },
+      { slug: "uromastyx-handling-guide", line: "Two weeks hands-off, scoop from below, and why the tail is a permanent weapon rather than a sacrifice." },
+      { slug: "uromastyx-health-issues-guide", line: "MBD, impaction, respiratory infection, where the water comes from, and the six signs that mean call now." },
+      { slug: "uromastyx-enrichment-guide", line: "Heat and a burrow beat every object you can buy, with the priority order to build in." },
+    ],
+    buyList: [
+      "A 4x2x2 ft enclosure as a floor, up to 8x4x4 for a full-grown Egyptian",
+      "Halogen flood bulbs and a fixture for the basking stack",
+      "A T5 HO UVB kit around 14%, plus a bright daylight LED bar",
+      "Stacked stone or slate for the basking stack",
+      "Fine sand, topsoil and excavator clay for a 4 inch mix",
+      "A digital thermometer and hygrometer, plus an infrared temperature gun",
+      "Hides at both ends of the gradient",
+      "A shallow water bowl, even though it will mostly go untouched",
+      "Calcium and multivitamin supplements",
+      "A gram scale for monthly weights",
+    ],
     faqs: [
-      { q: "Do uromastyx need a water dish?", a: "No - and providing one is actively discouraged for most setups. Uromastyx are adapted to extremely arid environments and get all necessary hydration from their food. A water dish raises enclosure humidity significantly, which is inappropriate for this desert-adapted species. Remove any water dish from a standard uromastyx setup and rely on fresh vegetables for hydration." },
-      { q: "How hot does the basking spot need to be for uromastyx?", a: "120 to 140 degrees F at the surface, measured with an infrared temperature gun. This is biologically critical - uromastyx cannot digest food, activate immune function, or properly thermoregulate without access to these extreme surface temperatures. High-wattage halogen or flood bulbs on a quality thermostat are the standard approach." },
-      { q: "What do uromastyx eat?", a: "Dark leafy greens (collard greens, mustard greens, dandelion greens, endive, escarole) form the plant base. Uniquely, they are enthusiastic seed-eaters - millet, lentils, split peas, and various legume seeds are a nutritionally important supplement. They are nearly entirely herbivorous with no insects in the diet. Keep humidity very low (20 to 30%) and do not provide a water dish." },
-      { q: "How big do uromastyx get?", a: "10 to 18 inches total length, depending on the species. Ornate uromastyx and Egyptian uromastyx are among the larger commonly kept species. All are stocky, heavyset lizards with thick, spiny tails used for defense. They reach adult size by 3 to 5 years of age." },
-      { q: "How long do uromastyx live?", a: "15 to 20+ years in captivity with appropriate care - primarily the correct extreme basking temperatures (120 to 140 degrees F surface), dry conditions (20 to 30% humidity), a primarily herbivorous diet with seeds, and strong desert UVB. They are hardy animals once their specific needs are met." },
+      { q: "What size enclosure does a uromastyx need?", a: "Plan on 4x2x2 feet for species that top out around 18 inches, and up to 8x4x4 for a full-grown Egyptian. Keep it to one animal per enclosure." },
+      { q: "How hot does a uromastyx basking spot need to be?", a: "The basking surface has to hit 110 to 120F, and giant Egyptians want at least 130F. Cool side around 85F, night around 65F, usually with no supplemental heat needed." },
+      { q: "What's the most common health issue in captive uromastyx?", a: "Metabolic bone disease. The signs are a soft or hanging jaw, swollen limbs, tremors, deformed bones, and lethargy. Behind it: too little calcium or vitamin D3, weak UVB, or a diet too high in phosphorus or oxalates. Severe cases can be fatal, so always see a vet." },
     ],
   },
   {
@@ -959,10 +965,8 @@ Impaction from moist substrate is possible if the sandy substrate is kept too we
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
-    // entry, which no deep dive repeats. Quarantine, hygiene, the thermostat
-    // probe and the emergency plan cite the shared reptile guides in the
-    // sidebar's Health and More list. Built 2026-09-14 for the veiled chameleon
-    // set test (docs/READER_REVIEWS.md). The old hub's supplement schedule was
+    // entry, which no deep dive repeats. Built 2026-09-14 for the veiled
+    // chameleon set test (docs/READER_REVIEWS.md). The old hub's supplement schedule was
     // roughly four times the feeding guide's, on the two supplements that guide
     // says cause gular edema in excess; that is the row to check first if this
     // hub ever drifts again.
@@ -970,32 +974,23 @@ Impaction from moist substrate is possible if the sandy substrate is kept too we
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
       rows: [
-        { label: "Legal check", value: "Hawaii and Washington DC are the two places you cannot keep one, and neither ban is written about chameleons: DC permits only non-venomous snakes, fish and turtles, so every lizard is out, and Hawaii bars anything not on an approved list. New Jersey wants a permit, and Minnesota allows one obtained from a permitted breeder. Check your city ordinance too.", source: "veiled-chameleon-legal-guide" },
-        { label: "Enclosure", value: "2 feet by 2 feet by 4 feet (24x24x48 inches) is the practical minimum for an adult, bigger, 4x2x4 feet, is better if you have the space. Juveniles can start smaller, around 18x18x36 inches, but veiled chameleons reach adult size in just 6 to 8 months, so plan and budget for the adult enclosure from the start.", source: "veiled-chameleon-tank-setup-guide" },
-        { label: "Enclosure type", value: "A screen enclosure is the traditional choice and provides excellent airflow. Hybrid enclosures, with partially solid sides, hold humidity better and are increasingly preferred. Glass terrariums can work but need serious attention to ventilation, and most aren't large enough for an adult anyway.", source: "veiled-chameleon-tank-setup-guide" },
+        { label: "Legal check", value: "Hawaii and Washington DC are the two places you cannot keep one, and neither ban is written about chameleons: DC permits only non-venomous snakes, fish and turtles, so every lizard is out, and Hawaii bars anything not on an approved list.", source: "veiled-chameleon-legal-guide" },
+        { label: "Enclosure", value: "2 feet by 2 feet by 4 feet (24x24x48 inches) is the practical minimum for an adult, bigger, 4x2x4 feet, is better if you have the space.", source: "veiled-chameleon-tank-setup-guide" },
+        { label: "Enclosure type", value: "Hybrid enclosures, with partially solid sides, hold humidity better and are increasingly preferred.", source: "veiled-chameleon-tank-setup-guide" },
         { label: "Temperature", value: "Basking spot around 85°F for females and juveniles, up to 90 to 95°F for adult males. Ambient temperature 72 to 80°F, with a beneficial night drop to 55 to 65°F.", source: "veiled-chameleon-tank-setup-guide" },
         { label: "Humidity", value: "40 to 50% during the day and 80 to 100% at night, raised through misting sessions morning and evening plus a dripper or an overnight cool-mist humidifier using distilled water.", source: "veiled-chameleon-tank-setup-guide" },
-        { label: "Lighting", value: "A linear T5 HO UVB tube (ReptiSun 5.0 or Arcadia 6% are the commonly recommended options) spanning the enclosure, with the basking branch positioned roughly 6 to 9 inches below it. UVB and daylight lighting both run 12 hours a day. Replace the bulb every 6 to 12 months regardless of whether it still visibly lights up. Skip compact or coil-style UVB bulbs.", source: "veiled-chameleon-tank-setup-guide" },
-        { label: "Water", value: "Veiled chameleons do not recognize standing water as something to drink. They only respond to moving droplets on leaves and branches. A water dish alone will not keep your chameleon hydrated, no matter how often you refill it. A dripper or misting system is a genuine essential, not an accessory.", source: "veiled-chameleon-tank-setup-guide" },
-        { label: "Drainage", value: "Daily misting produces real runoff, and the enclosure needs somewhere for that water to go.", source: "veiled-chameleon-tank-setup-guide" },
-        { label: "Substrate", value: "Bare bottom or paper towel is the safest, easiest option. Coco fiber or a soil-based mix works for planted, bioactive setups. Avoid sand, gravel, and wood chips, all carry a real impaction risk if ingested during a feeding strike.", source: "veiled-chameleon-tank-setup-guide" },
-        { label: "Laying bin, females", value: "Even a female with no male present will produce eggs, and without somewhere appropriate to lay them, she's at real risk of egg-binding. Keep a moist sand or soil bin, roughly 5 to 10 inches deep, permanently available, not something you set up only once she shows signs of needing it.", source: "veiled-chameleon-tank-setup-guide" },
+        { label: "Lighting", value: "A linear T5 HO UVB tube (ReptiSun 5.0 or Arcadia 6% are the commonly recommended options) spanning the enclosure, with the basking branch positioned roughly 6 to 9 inches below it. Replace the bulb every 6 to 12 months regardless of whether it still visibly lights up.", source: "veiled-chameleon-tank-setup-guide" },
+        { label: "Water", value: "Veiled chameleons do not recognize standing water as something to drink. They only respond to moving droplets on leaves and branches. A dripper or misting system is a genuine essential, not an accessory.", source: "veiled-chameleon-tank-setup-guide" },
+        { label: "Substrate", value: "Bare bottom or paper towel is the safest, easiest option.", source: "veiled-chameleon-tank-setup-guide" },
+        { label: "Laying bin, females", value: "Keep a moist sand or soil bin, roughly 5 to 10 inches deep, permanently available, not something you set up only once she shows signs of needing it.", source: "veiled-chameleon-tank-setup-guide" },
         { label: "Feeding schedule", value: "Babies at 1 to 3 months eat as much as they'll eat, roughly twice daily. Juveniles at 3 to 6 months take around 10 to 12 small crickets daily. Sub-adults at 6 to 12 months take 8 to 10 medium crickets daily or every other day. Adults from 12 months take roughly 4 to 6 feeders every other day, and adult females specifically should be fed a somewhat restricted amount.", source: "veiled-chameleon-feeding-guide" },
         { label: "Prey size", value: "Size prey to the space between your chameleon's eyes, nothing bigger.", source: "veiled-chameleon-feeding-guide" },
-        { label: "Diet", value: "Primarily insectivorous, built on genuine variety: crickets, dubia roaches, black soldier fly larvae, superworms, silkworms, and locusts as rotating staples. Hornworms, waxworms, and butterworms are higher in fat or water and belong in treat territory, no more than about twice a week.", source: "veiled-chameleon-feeding-guide" },
-        { label: "Supplements", value: "Dust feeders with plain calcium, no D3, no phosphorus, at nearly every feeding. Separately, use a calcium with D3 supplement about every other week, and a multivitamin with a real vitamin A source on roughly the same twice-monthly schedule. D3 specifically can become toxic in excess, which is exactly why it's dosed less often than plain calcium.", source: "veiled-chameleon-feeding-guide" },
-        { label: "Gut-loading", value: "Gut-load feeder insects on collard greens, mustard greens, dandelion, and squash for 24 to 48 hours before offering them.", source: "veiled-chameleon-feeding-guide" },
-        { label: "Handling", value: "Solitary, territorial display animals that generally don't tolerate handling well. Approach slowly from below with your palm open and let the chameleon choose to climb onto your hand rather than grabbing from above, which reads as a predator attack. Keep sessions infrequent.", source: "veiled-chameleon-handling-guide" },
-        { label: "Reading a defensive display", value: "Hissing, gaping, inflating or flattening the body, and darkening color are all stress and defense signals. A darkened, gaping chameleon isn't aggressive in the way that word implies, it's frightened, and treating the display as a warning to back off gets better results.", source: "veiled-chameleon-handling-guide" },
-        { label: "Rearing and company", value: "Hatchlings reared in isolation for their first two months grew into animals that were more submissive, darker and duller in color, and worse at finding food. That is not a license to house adults together, because adults are territorial and cohabiting them goes badly.", source: "veiled-chameleon-enrichment-guide" },
-        { label: "Budget", value: "$20 to $100 for a captive-bred juvenile, and roughly $400 to $800 for the upfront setup. Experienced keepers commonly report around $500 for a complete single-animal setup, with elaborate builds reaching $1,200 or more.", source: "veiled-chameleon-cost-guide" },
+        { label: "Supplements", value: "Dust feeders with plain calcium, no D3, no phosphorus, at nearly every feeding.", source: "veiled-chameleon-feeding-guide" },
+        { label: "Handling", value: "Solitary, territorial display animals that generally don't tolerate handling well. Approach slowly from below with your palm open and let the chameleon choose to climb onto your hand rather than grabbing from above, which reads as a predator attack.", source: "veiled-chameleon-handling-guide" },
+        { label: "Budget", value: "$20 to $100 for a captive-bred juvenile, and roughly $400 to $800 for the upfront setup.", source: "veiled-chameleon-cost-guide" },
         { label: "The emergency that costs most", value: "Egg-binding in females is the emergency risk: medical management runs $200 to $400, and surgery can run $800 to $1,500 or more.", source: "veiled-chameleon-cost-guide" },
         { label: "Lifespan", value: "Males commonly live 6 to 8 years. Females typically live considerably shorter, often just 2 to 6 years, and many don't make it past 2 to 3, driven by the physical toll of producing egg clutches.", source: "veiled-chameleon-cost-guide" },
         { label: "Adult size", value: "Males 18 to 24 inches (46 to 61 cm), females 10 to 14 inches (25 to 36 cm)." },
-        { label: "Quarantine", value: "A new lizard can look completely healthy while it is still shedding mites or a fatal virus, so a real quarantine runs months rather than weeks, in its own enclosure in a separate room, with a fecal exam and a vet workup before it meets an established pet.", source: "reptile-quarantine-guide" },
-        { label: "Thermostat probe", value: "The probe reads at the animal's level, not up in the airspace near the fixture. For an overhead source, follow your controller's own instruction and confirm the result with independent checks.", source: "reptile-heating-thermostats-guide" },
-        { label: "Hygiene", value: "Wash hands with soap and running water immediately after any contact with the chameleon, its enclosure, or anything that has touched either. Never clean the enclosure or its water bowl in a kitchen sink or a shared bathtub. Children younger than 5 should not handle or touch reptiles or their environments.", source: "reptile-salmonella-hygiene-guide" },
-        { label: "Power outage or a sitter", value: "Check this species' tank setup guide for the documented nighttime low and use that as the floor, which for a veiled chameleon is the 55 to 65°F night drop it already wants.", source: "reptile-emergency-plan-guide" },
       ],
     },
     emergencyCard: {

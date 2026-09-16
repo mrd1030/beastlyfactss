@@ -6802,3 +6802,306 @@ First two changes:
 - Species identification and sexing, which every host plant and humidity answer depends on.
 
 Batch O note, not the reader's: the old hub's molt duration (20 to 60 minutes in one section, 30 minutes to over an hour in another) was retired rather than moved, since no deep dive states one. How long a molt takes, and whether to intervene in one going wrong, are both gaps on this species.
+
+## Fire Skink (2026-09-15, batch P)
+
+Raw output, one Opus reader agent, extractor set of seven pages.
+
+## 1. Page by page
+
+- **00 Hub.** Finished it. Actionable: full shopping checklist, temps, mix ratio, feeding schedule. Grade B-.
+- **01 Encyclopedia.** Finished it. Actionable: adult size, 15 to 20 year lifespan, the Ghana/Togo export note that tells me most stock is wild caught. Grade B.
+- **02 Cost.** Finished it, grudgingly. Actionable: line-item setup, monthly feeder math. Undermined by numbers that fight the hub and itself. Grade C+.
+- **03 Handling.** Finished it in a minute. Actionable: no tail grabs, work low over soft surface, expect a display animal. Mostly a blue-tongue comparison with little fire skink method. Grade C.
+- **04 Health.** Finished it. Actionable: symptom list per problem, clear home-vs-vet split. Thin on numbers and no first aid for a dropped tail. Grade C+.
+- **05 Tank setup.** Finished it. Actionable: sizes, temps, mix, lamp distance, and it flags its own UVI source conflict. Grade B+.
+- **06 Enrichment.** Best of the set. Actionable: priority order 1 to 7, scatter feed into litter, cover at both ends of the gradient. Grade A-.
+
+## 2. Hub and encyclopedia against the deep dives
+
+The encyclopedia earns its place: taxonomy, range and the import route are nowhere else. The hub mostly restates the deep dives in shorter form, and its only unique content is the diet section and the cost tables, both of which conflict with the cost guide.
+
+Disagreements:
+
+- Substrate depth, hub against itself and against setup. Hub body: "Use four to six inches of a mix that holds a tunnel." Hub fun fact: "Give one four inches of substrate and it will vanish; give it eight to ten and it will build a burrow system." Hub FAQ: "At six to ten inches." Setup guide: "Provide 4 to 6 inches." The page tells me four inches ruins the animal, then puts "4 to 6 inches" on the checklist I am meant to shop from.
+- Setup cost. Hub table sums to roughly $380 to $500. Cost guide: "roughly $660 to $720." Hub enclosure "$202 | $258" versus cost guide "$280". Hub substrate "$10 | $16" versus cost guide "$88 - $99".
+- Thermostat. Cost guide: "the thermostat is the one people try to skip," at $130. The hub table and checklist have no thermostat line at all.
+- Night temperature. Hub: "a night drop to 70 to 75." Setup: "a night drop to about 70°F, 65°F is acceptable."
+- UVB necessity. Hub FAQ: "Do fire skinks need UVB? Yes." Setup: "UVB offers real benefit though is technically optional if diet is properly supplemented."
+- UVB replacement. Hub: "replace it every twelve months." Hub cost table: "UVB bulb replacement (every 6-12 months)."
+- MBD weight. Hub: "Metabolic bone disease is the main preventable problem." Health guide: "Less common in this species than in some other lizards."
+
+## 3. The set as a whole
+
+I could buy and build it. I could feed an adult. What I could not do confidently: bring a new import home. Nothing tells me what day one looks like, how long acclimation takes, or what a fecal test costs. Also missing: sexing, juvenile feeding amounts beyond "daily to every other day," body weight tracking, cleaning schedule or cleanup crew for permanently damp soil, and how to find a captive-bred animal when every page tells me to buy one.
+
+Questions answered on another page without being told: the hub asks why the skink hides and answers in three lines, while the enrichment guide has the real answer. The health guide's "maintain 60 to 70% substrate humidity consistently" never says the setup guide holds the fogger and probe hygrometer detail. The cost guide's parasite screening line never points at quarantine.
+
+## 4. Overlap and conflict across the deep dives
+
+Read three times: substrate depth, humidity, wild-caught versus captive-bred, and the blue-tongue comparison, which opens or closes four pages.
+
+- Feeding location. Health: "considering feeding from a dish to reduce accidental ingestion." Enrichment: "Release live insects into the leaf litter rather than dropping them in a dish."
+- Sand. Hub health: "Impaction is the reason to avoid sand, gravel and any loose particulate." Both the hub and the setup guide then recommend "20% fine sand."
+- Cohab. Setup: "Don't house multiple fire skinks together." Enrichment FAQ: "Cautiously, and not by default."
+- Cost guide against itself. "Captive-bred individuals cost more" then "A wild-caught animal costs about the same as a captive-bred one."
+- Feeding frequency. Hub: "Adults eat twice a week." Cost: "An adult fire skink eats two or three times a week."
+
+## 5. One link per page
+
+- Hub: "Almost always because the substrate is too shallow." Point to the enrichment guide.
+- Encyclopedia: "Most animals in the trade are still wild collected and shipped out through Ghana and Togo." Point to Reptile Quarantine.
+- Cost: "the thermostat is the one people try to skip." Point to Reptile Heating and Thermostats.
+- Handling: "tail autotomy under grasping pressure." Point to the health guide.
+- Health: "maintain 60 to 70% substrate humidity consistently." Point to the setup guide.
+- Setup: "this connects directly to the respiratory infection and shedding problems dry air causes." Point to the health guide.
+- Enrichment: none needed.
+
+## 6. Trust
+
+Doubts: a hub setup table that is $200 short of its own cost guide, a checklist with no thermostat, and a cost page with September 2026 prices that contradicts itself on wild-caught pricing in two paragraphs. The health guide calling MBD uncommon while the hub calls it the main problem made me stop trusting either.
+
+Most convincing sentence: "Fire skinks get called expensive substrate by keepers who bought one and then never saw it again."
+
+## 7. Set grade: B-
+
+Strong husbandry instincts, undermined by numbers that do not reconcile across pages. First two changes: pick one substrate depth and one setup total and enforce them everywhere, and add an acquisition and first-30-days page covering sourcing, acclimation and the fecal test.
+
+## Not covered anywhere
+
+- Where to actually find a captive-bred fire skink, after five pages telling me to buy one.
+- Acclimation protocol for a fresh import, beyond "a quiet acclimation period."
+- Sexing, and whether it matters for a single animal.
+- Juvenile feeding quantities and growth expectations.
+- Cleaning, spot-cleaning or bioactive cleanup crew for permanently damp deep substrate.
+- Body condition or weight monitoring for a species you rarely see.
+- Which UVI to actually target, after the setup guide names the disagreement and leaves it open.
+- How much topsoil and sand to buy for the 40/40/20 mix; only coconut fiber is priced.
+
+## Jackson's Chameleon (2026-09-15, batch P)
+
+Raw output, one Opus reader agent, extractor set of eight pages.
+
+## 1. Page by page
+
+- **00 Hub.** Finished it; it is the only page with a feeding schedule and supplement plan, so I can act on diet, gut-loading and the shopping checklist. Two FAQs are about veiled chameleons. **B-**
+- **01 Encyclopedia.** Finished it, short. Actionable: adult size 9-13 in, single subspecies *T. j. xantholophus*, Hawaii origin of trade stock. **B**
+- **02 Cost.** Finished it. I can budget $400-525 setup, $50-100/month, vet $50-100. **B**
+- **03 Handling.** Finished it. Actionable: stress signals list, no cohabitation, sex by horns. Thin on actual technique. **C+**
+- **04 Health.** Finished it. Actionable: edema from over-supplementing A/D, gout, preformed vitamin A. **B+**
+- **05 Tank setup.** Finished it, the most useful page. Numbers I can build from. **A-**
+- **06 Enrichment.** Finished it, the best written. Actionable: temperature first, planting density test, release prey. **A**
+- **07 Legal.** Finished it. Actionable: five restricted jurisdictions with citations. **A**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: the 1972 Kaneohe introduction and the subspecies point appear nowhere else in usable form. The hub half earns it. Diet, gut-loading and supplementation exist only there. Its Housing and Health sections are a weaker restatement of 05 and 04.
+
+Conflicts with the deep dives:
+- Ambient. Hub: "daytime ambient of 72 to 80 degrees F." 05: "ambient air should stay considerably cooler, 68 to 75°F." On the one variable both call the defining risk.
+- Night. Hub: "can drop to 55 to 65 degrees F." 05: "a genuine night drop to 50 to 65°F."
+- Basking, inside the hub itself. Section: "basking spot of 85 to 88 degrees F." Checklist: "Basking bulb (80 to 85 degrees F hot spot)."
+- Enclosure walls. Hub: "Screen construction is non-negotiable." 05: "Favor an enclosure with two or three solid sides rather than full mesh."
+- UVB. Hub: "T5 HO Arcadia 6% or 12%." 05: "a Zoo Med ReptiSun 5.0 T5 HO or Arcadia Forest 6%." 12% is a lot for a forest species and nothing defends it.
+- Cost. Hub's annual table tops out near $655. 02: "annual costs to somewhere around $1,200." Hub vet "$70 to $120," 02 "$50 to $100 or more." The hub setup table has no dimming thermostat line at all, though 05 requires one and 02 prices it at $73-93.
+- Lifespan. Hub FAQ: "Jackson's chameleons live 5 to 10 years." 02: "Males commonly live 8 to 10 years... Females... typically 3 to 5 years."
+- Litter. Hub: "Females can birth 8 to 30 live young." 03: "anywhere from 5 to 30 live offspring."
+
+## 3. The set as a whole
+
+I could buy legally, build the cage, wire the lighting, feed and spot most illness. Still missing: how to actually get a house down to 68-75°F in summer, which 06 raises and no page solves; what a gravid female needs beyond "a suitable warm, humid hiding area"; how to choose a breeder; UVB distance from the branch.
+
+Questions answered on another page without being told: the hub's warning that respiratory infection comes from stagnant air is resolved by 05's drying-cycle rule, unlinked. The hub's "yellow-orange urates" is explained by the shared stool guide. 02's "birth complications" is never picked up by 04.
+
+## 4. Overlap and conflict across deep dives
+
+Read three times: live birth and the cooler-than-veiled comparison, in 02, 03 and 06. Dehydration and standing water, in 04 and 06. Conflicts:
+- Litter size, 03 "5 to 30" against the hub's "8 to 30."
+- Cohabitation reasoning is consistent but 03 says "Males will fight," while 06 says "Do not house adults together," including females.
+- 04 never mentions respiratory infection or dystocia, which the hub calls out as real risks.
+
+## 5. One link per page
+
+- **Hub.** "Strong UVB (T5 HO Arcadia 6% or 12%) is mandatory." Point to the tank setup guide, which names actual bulbs.
+- **Encyclopedia.** "Adult Size: 9-13 inches." Point to the tank setup guide.
+- **02 Cost.** "A calcium supplement is part of that recurring spend, and getting the dose right matters." Point to the health guide, where over-supplementing causes edema.
+- **03 Handling.** "Chameleons mask illness well, and a handling session is a natural time to check for early signs of trouble." Point to the health guide.
+- **04 Health.** "increase misting and dripper output immediately." Point to the chameleon hydration guide.
+- **05 Tank setup.** "Never run a fogger while the heat lamp is on." Point to the hydration guide.
+- **06 Enrichment.** "the first months are quarantine and a vet." Point to the reptile quarantine guide.
+- **07 Legal.** "it is among the harder chameleons to keep well." Point to the tank setup guide.
+
+## 6. Trust
+
+Doubts: the hub carries two veiled chameleon FAQs on a Jackson's page, which reads as padding; and the hub's own basking numbers disagree with each other. 05's "humidity guidance varies somewhat across sources" is the opposite, and it raised my trust.
+
+The one sentence that convinced me: "Chronic overheating in this species presents as a chameleon that has simply stopped doing things, which is easy to file as personality."
+
+## 7. Grade: B
+
+Strong deep dives sitting under a hub whose numbers contradict them. First two changes: make the hub inherit its temperature, UVB, wall and cost figures from the deep dives instead of restating them, and add a gravid female and neonate section to the health guide.
+
+## Not covered anywhere
+
+- How to hold a room at 68-75°F day and 50-65°F night in a warm house.
+- Gravid female husbandry, birth, dystocia, and what to do with 5 to 30 neonates.
+- How to vet a breeder or tell captive-bred from wild-caught at purchase.
+- UVB distance from the basking branch, punted to a UVB guide that is not in this set.
+
+## Uromastyx (2026-09-15, batch P)
+
+Raw output, one Opus reader agent, extractor set of nine pages.
+
+## 1. Page by page
+
+- **00 Care guide hub.** Finished it; it is the most actionable single page (checklist, cost tables, numbers) and also the one most often contradicted by the pages under it. **C**
+- **01 Encyclopedia.** Finished it in a minute. Actionable: almost nothing, but the CITES Appendix II and Morocco collection paragraph told me to buy captive-bred. **B-**
+- **02 Cost guide.** Finished it. I can budget $500 to $900 up front and $25 to $45 a month. The table has two rows and then hands the rest to prose. **B**
+- **03 Handling.** Finished it. Two weeks hands-off, scoop from below, 10 to 15 minute sessions, never the tail. Short and complete. **B+**
+- **04 Health issues.** Finished it. Named signs, named sources, monthly gram-scale weighing, a four-item call-the-vet list. **A-**
+- **05 Tank setup.** Finished it. Sizes, temps, UVI target, a substrate recipe I can mix. **A-**
+- **06 Feeding.** Finished it. Best page in the set: it tells me where sources disagree instead of inventing a number. **A**
+- **07 Enrichment.** Finished it. Priority list I can build from, and it admits there is no uromastyx research. **A-**
+- **08 vs Bearded dragon.** Finished it. Good for the buying decision, but its temperature column is wrong against the rest of the set. **C+**
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: the genus history, CITES listing, and Moroccan wild-collection note appear nowhere else. The hub mostly restates the deep dives at lower resolution, and then disagrees with them:
+
+- Basking. Hub: "A surface temperature of 120 to 140 degrees F at the basking site is not optional." Tank setup: "Basking surface temperature needs to reach 120 to 130F, with the giant Egyptian species needing at least 130F."
+- UVB bulb. Hub checklist: "Strong desert UVB (T5 HO Arcadia Dragon 12%)." Tank setup: "A high-output T5 HO bulb in the 14% range, targeting a basking-area UVI of 4.5 to 6.0."
+- Substrate. Hub: "3 to 4 inches deep" and "fine play sand or an 80/20 sand-to-soil mix." Tank setup: "packed at least 4 inches deep," "roughly 50% play sand, 30% topsoil, and 20% excavator clay."
+- Water. Hub FAQ: "Remove any water dish from a standard uromastyx setup." Health: "Long Island still wants a water bowl available, so keep one, even if it goes untouched."
+- Seeds. Hub: "Seeds form a nutritionally important part of the diet." Feeding: "Treat seeds as limited, not a daily component either way."
+- Enclosure cost. Hub: "$150 to $300." Cost guide: "$280 - $400."
+- Size. Hub FAQ: "10 to 18 inches total length." Encyclopedia: "10-30 inches (25-75 cm)."
+
+## 3. The set as a whole
+
+Yes, I could buy, build, feed, and run one. Still missing: brumation management (feeding names it, nobody says what to do), any cleaning or substrate-replacement cadence, sexing and egg-laying (cost bills "egg-binding" and no page prevents it), what to inspect when buying and how to pick a breeder, and whether a hatchling goes straight into a 4x2x2.
+
+Unstated hand-offs:
+- Tank setup ends on "The Non-Obvious Requirement: Seeds in the Diet" and never points at the feeding guide.
+- Feeding's 120 to 140F basking claim never points at tank setup, which is where the number is built.
+- Handling warns against a damp enclosure without pointing at the humidity section that defines damp.
+- Cost names MBD, impaction, and egg-binding without pointing at the health guide.
+
+## 4. Overlap and conflict across deep dives
+
+I read the tail-whip warning, the herbivore/seed point, and "water comes from food" three times each. Real conflicts:
+
+- Basking. vs Bearded dragon: "generally 110 to 120 degrees F." Tank setup: "120 to 130F." Feeding: "roughly 120 to 140°F." Three ranges, and the comparison page's ceiling is below the others' floor.
+- Temperament. Hub: "many develop what keepers describe as dog-like personalities, seeking interaction." vs Bearded dragon: "they start from a more naturally skittish baseline, bolting for a burrow at the first sign of a threat."
+- Handling as enrichment. Hub: "Supervised handling sessions build trust quickly with this species." Enrichment: "do not treat handling as enrichment for a species that mostly wants to be left on its rock."
+- Insects. Hub FAQ: "no insects in the diet." Enrichment FAQ: "Occasional insects are not a disaster in most keepers' experience."
+- Humidity practice. Hub: "A water dish ... raises humidity significantly, which is inappropriate." Health: "Tree of Life adds a light fog of the enclosure once or twice a week at night."
+
+## 5. One link per page
+
+- **Hub:** "A water dish is typically unnecessary and can raise humidity to unhealthy levels." Link to the health issues guide, which keeps one.
+- **Encyclopedia:** "Highly adapted to extreme heat and drought, they obtain most of their water from plant matter and seeds." Link to the feeding guide.
+- **Cost:** "Emergencies involving metabolic bone disease, impaction, or egg-binding can run several hundred dollars." Link to the health issues guide.
+- **Handling:** "Keeping the enclosure damp, which stresses this genuinely arid-adapted species." Link to the tank setup guide.
+- **Health:** "Choosing an appropriate sand substrate and avoiding calcium sand or walnut shell products entirely." Link to the tank setup guide.
+- **Tank setup:** "this species needs seeds like lentils and millet as a regular dietary component." Link to the feeding guide.
+- **Feeding:** "roughly 120 to 140°F on the basking surface depending on the source." Link to the tank setup guide.
+- **Enrichment:** "Do not build a diet on insects for a herbivore." Link to the feeding guide.
+- **vs Bearded dragon:** needs none; it already links both hubs and both profiles.
+
+## 6. Trust
+
+Doubts: three different basking ranges, two different UVB percentages, and a hub that tells me to remove the water bowl while the health page tells me to keep one and soak the animal weekly. The "possibly as long as 60" lifespan is one source repeated twice on the same page, once in a fun-fact box, which reads like padding.
+
+Most convincing sentence, from the enrichment FAQ: "a subordinate animal in a shared enclosure loses access to the basking spot, which for this species means losing access to digestion."
+
+## 7. Set grade: B-
+
+The deep dives are genuinely good and honest about uncertainty; the hub sits on top of them contradicting four numbers a new keeper will act on.
+
+First two changes: (1) pick one basking range, one UVB spec, and one hydration policy, and make every page use them; (2) rewrite the hub to summarize and link down to the deep dives instead of issuing its own fifth set of numbers.
+
+## Not covered anywhere
+
+- How to run brumation: temperatures, photoperiod, whether to cool deliberately, when to end it.
+- Cleaning cadence: spot-cleaning frequency and when to replace sand substrate.
+- Sexing, breeding, and egg-laying setup, including the lay box that prevents the egg-binding the cost guide bills for.
+- What to check on the animal at purchase and how to pick a captive-bred source, distinct from quarantining it afterward.
+- Housing a hatchling or juvenile: whether a baby goes straight into the 4x2x2 adult enclosure.
+- Species-level differences beyond size and price among Mali, ornate, and Egyptian.
+
+## Flying Squirrel (2026-09-15, batch P)
+
+Raw output, one Opus reader agent, extractor set of nine pages.
+
+## 1. Page by page
+
+- **00 Hub.** Finished it, but it is the weakest thing here: I can act on the cage size, temperature range, and checklist, and almost nothing else is specific enough to buy from. Grade C.
+- **01 Encyclopedia.** Finished it fast. Actionable: adult size and weight (8-10 in, 2-3 oz), which is what makes the half-inch bar spacing make sense. Grade B.
+- **02 Cost.** Finished it. I can budget $200-450 per animal, double it, $200-500 setup, $20-50/month. Grade B+.
+- **03 Handling.** Finished it. Buy at 6-8 weeks, pouch several hours a day, 2-8 weeks to bond, cup the hand, no daytime handling. Grade A-.
+- **04 Health.** Finished it. Symptom ladder for MBD is the usable part: appetite, climbing reluctance, hind-limb weakness. Grade B+.
+- **05 Tank setup.** Finished it. Most buildable page in the set: size, half-inch bars, 65-75F, solid bottom with liner, axle-free 12 in wheel, high pouches. Grade A-.
+- **06 Feeding.** Finished it. Rodent block base, produce daily, protein, small nut portion, Ca:P 2:1, dust with Ca/D3, evening feeding. Grade A-.
+- **07 Enrichment.** Finished it, best-written page. Gnawing list and the priority order are directly actionable. Grade A.
+- **08 Legal.** Finished it, and it is the reason I would trust this site. Grade A-.
+
+## 2. Hub and encyclopedia
+
+The encyclopedia earns its place: size, weight, range, and the 2019 Marion County trapping case are nowhere else. The hub does not. It is a compressed restatement of the six deep dives with worse numbers, and it disagrees with them:
+
+- Food cost. Hub: "Varied nuts, seeds, fruit, vegetables, and protein | $360 | $720" annual. Cost guide: "Rodent-block staple food | $40 - $80" plus "Fresh produce and an insect or protein source | $60 - $120". The hub is roughly triple, and it prices a diet the feeding guide tells me not to feed.
+- Diet framing. Hub: "A varied omnivorous diet of nuts, seeds, fruit, vegetables, and a protein or insect component." Feeding guide: "Nuts, seeds, and dried fruit are best treated as occasional treats layered on top, not the base of the diet." The hub checklist never mentions rodent block at all.
+- Cage and gear. Hub: "24x24x36 in aviary-style cage | $150 | $300" and wheel "$40 | $70". Cost guide: "$120 - $300" and "$30 - $60".
+- Cage minimum. Hub: "24x24x36 inches at an absolute minimum." Setup guide: "some cite roughly 24x24x36 inches, others closer to 30 inches wide by 18 deep by 36 tall."
+
+## 3. The set as a whole
+
+Yes, I could legally check, buy, build, feed, and bond a pair. Still missing: **water** (no page mentions a bottle or bowl anywhere), **cage cleaning cadence**, **how to introduce two squirrels** ("Introductions take time" is the whole instruction), **portion sizes in any real unit**, **how to find and vet an exotic vet or breeder**, **zoonoses and quarantine**, **nail or tooth trimming**, and **what happens if they escape** after the handling guide warns me they will try.
+
+Unlinked handoffs: the health guide's dental section raises gnawing and the answer is the enrichment guide's gnawing list, unlinked. The setup guide says "the other big piece of the puzzle is diet" and does not link the feeding guide. The hub's legal FAQ and the cost guide's legal section both tell me to call my state agency while a 52-jurisdiction guide sits in the sidebar, unlinked from either body.
+
+## 4. Overlap and conflict across deep dives
+
+Read twice or more: convergent evolution with sugar gliders (all seven pages), the MBD symptom ladder (health and feeding, near-verbatim), the 2:1 ratio, the pair requirement, the axle-free wheel, the cage-minimum hedge.
+
+Conflicts:
+- Legal summarizability. Cost guide: "the specifics genuinely vary by state, in a way that isn't settled or consistent enough to summarize here." Legal guide: "This guide now reflects all 52 jurisdictions on our map."
+- Protein frequency, inside the feeding guide itself. Body: "a protein source ... several times a week." Two paragraphs later: "rotate in a protein source every day or two." FAQ: "add produce and protein daily to every-other-day."
+- Light duration. Feeding: "at least 20 minutes a day of natural or full-spectrum light." Setup guide, which is where I would look: "Regular access to natural daylight or full-spectrum lighting," no number.
+- Legal guide internal tidiness: the section headed "The Four Clean States" opens "Nine states are a clean yes," then spends its last third on Texas, which is not one of the four. The section titled "Permit States Where 'Permit' Doesn't Mean What You Think" opens with Florida and immediately concludes Florida is not a permit state.
+
+## 5. One link per page
+
+- Hub: "Check your specific state's wildlife agency before acquiring one." Link the legal guide.
+- Encyclopedia: "a licensed dealer in Bushnell who logged them as captive-bred." Link the legal guide.
+- Cost: "check your state wildlife agency before you commit to buying one, not after." Link the legal guide.
+- Handling: "Handling in a cold room ... they still do best in the mid-60s to mid-70s Fahrenheit range." Link the cage setup guide.
+- Health: "appropriate gnawing opportunities and a watchful eye on tooth length and alignment are worth building into routine care." Link the enrichment guide.
+- Setup: "Once the cage is dialed in, the other big piece of the puzzle is diet." Link the feeding guide.
+- Feeding: "provide at least 20 minutes a day of natural or full-spectrum light." Link the cage setup guide.
+- Enrichment: "Live insects are worth including. The calcium balance is the part most improvised diets get wrong." Link the feeding guide.
+- Legal: "the animal has to come from a lawful captive-bred source." Link the cost guide.
+
+## 6. Trust
+
+Doubts: the hub calls them "captive-bred joeys," a marsupial word on the one page that spends four paragraphs insisting these are not marsupials. The hub's food budget does not survive contact with the cost guide. The enrichment guide admits "Nothing on pet flying squirrel enrichment" has been published, which is honest but means a whole page is borrowed.
+
+Most convincing sentence, from the enrichment guide: "Check fabric for loose threads, since toes and gliding membranes catch easily." Nobody writes that from a search result. The legal guide's refusal to fake New York ("Until someone reads it, treat New York as a no in practice and an open question on paper") runs a close second.
+
+## 7. Set grade: B
+
+The deep dives are genuinely good and the legal guide is exceptional; the hub actively degrades them and the everyday basics have holes. First two changes: rebuild the hub from the deep dives instead of alongside them, matching the cost tables and putting rodent block in the diet and checklist; then add water, cleaning cadence, and an introductions procedure, and link the legal guide from the hub and cost guide where both already tell me to go check the law.
+
+## Not covered anywhere
+
+Checked against the sidebar's shared class guide, "Three Small Mammals That Get Dismissed as Just Rodents," which is a comparison overview and covers none of these:
+
+- Water: bottle or bowl, placement, changing frequency. Not mentioned on any page.
+- Cage cleaning schedule: how often the liner, pouches, and branches get changed.
+- Introducing or pairing two squirrels: the actual method, quarantine period, and failure signs.
+- Portion sizes in a usable unit: how much block, how much produce, how many nuts per animal per day.
+- Sourcing: how to find and vet a breeder, and what paperwork proves captive-bred, which the legal guide makes load-bearing in Florida and Illinois.
+- Zoonotic risk, parasites, and new-animal vet quarantine.
+- Routine tooth and nail checks: the health guide says watch tooth length, no page says how or what to do about overgrowth.
+- Escape recovery: recapturing a squirrel that glides off in a room, which the handling guide warns about and never resolves.
+- Vacation and travel care for a nocturnal, pair-housed animal.
