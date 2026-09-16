@@ -725,6 +725,27 @@ is why they kept getting deferred. Do them once section 7 is finished.
         two hub rows away from it because it does not mention either animal.
         Either widen it or stop pointing myriapods and phasmids at it. (batch O)
 
+- [ ] Batch P opens, promoted by the species check (2026-09-16):
+      - Jackson's chameleon humidity needs research. The setup guide says 30
+        to 50% by day rising to 75 to 100% at night, with a flatter 60 to 80%
+        as the alternative; the two sources the batch added to that page for
+        Diet Basics say 60 to 100% (LafeberVet) and 50 to 80% year-round
+        (Reptiles Magazine). Settle it against a source that actually states
+        the day-night pattern, or move the page to the veterinary figure.
+      - Jackson's chameleon sourcing: the cost guide says wild-caught Hawaiian
+        animals turn up cheaper, the legal guide says Hawaii bars private
+        ownership and restricted inter-island transport in 1997. Both
+        sourced; no page says how a legally sourced Hawaiian animal reaches
+        the mainland trade. Left open by the batch, filed here.
+      - Fire skink dish or scatter: the health guide suggests "considering
+        feeding from a dish to reduce accidental ingestion", the enrichment
+        and setup guides say release feeders into the leaf litter. A
+        recommendation conflict between two hedged sentences; decide it.
+      - Uromastyx basking: the set now carries the veterinary 110 to 120F
+        (Long Island Birds & Exotics; Chicago Exotics gives 105 to 110F) over
+        ReptiFiles' 120 to 130F, by the source ranking. If Mike wants the
+        hobby figure back, it needs a source that outranks a vet clinic.
+
 - [ ] Legal guides missing from RELATED_ARTICLES, corpus-wide sweep. Three of
       batch I's five species had one (red-footed tortoise, degu, savannah
       monitor), so the legal guide was reachable from the hub and from

@@ -14490,7 +14490,9 @@ The self-contradiction is the finding worth carrying. The cost guide says
 paragraph and "A wild-caught animal costs about the same as a captive-bred one" in
 its last, and the reader stopped trusting the page over it. No checker compares a
 page against itself in prose. Fixed to the version the FAQ and the rest of the set
-already carried.
+already carried. [Species check: the page's other FAQ, "Should I pay more for a
+captive-bred fire skink", still said "The two cost about the same" and was fixed
+there.]
 
 Substrate depth: the setup guide says 4 to 6 inches, the handling guide's FunFact
 said four inches makes the animal vanish and eight to ten makes it thrive, and the
@@ -14560,7 +14562,11 @@ A than some other lizards"; Reptiles Magazine says the same about vitamin A and
 names gout and edema as the result. So the hub's schedule did not just disagree
 with a deep dive, it disagreed with the veterinary source on a point the set
 already knew. Diet Basics now carries LafeberVet's version, and the hub row copies
-it.
+it. [Species check: the schedule and both warnings are LafeberVet's, verified,
+but the section also carried "adults every other day, juveniles daily", a 24-hour
+gut-load on named greens, and hornworms, black soldier fly larvae and blue bottle
+flies, none of which either cited source states. Those were cut; see the check
+section below.]
 
 Source narration in the setup guide's humidity section, and worth noting that the
 reader liked the old sentence: "05's 'humidity guidance varies somewhat across
@@ -14612,7 +14618,9 @@ when a number changes, and this is the first time a batch has caught one.
 Source narration, eight instances across four pages, which is the most any species
 in either batch has carried. Two on the setup guide including one inside a FunFact,
 two on the cost guide (the reader called the repeated ReptiFiles lifespan citation
-padding, and it was the same claim twice on one page), and four on the health
+padding, and it was the same claim twice on one page) [Species check: the cost
+guide diff contained only a link; the three ReptiFiles lifespan attributions were
+still there and were removed by the check], and four on the health
 guide, where Merck, Long Island Bird & Exotics and Tree of Life were named in
 prose. Every claim, figure and hedge survives; the names stay in the Sources
 blocks. This matters more here than usual because the health guide is the page the
@@ -14661,7 +14669,11 @@ feeding guide and to the setup guide's substrate section, and it is a row.
 
 Protein frequency contradicted itself inside a single guide: "several times a
 week" in the feeding guide's body, "every day or two" two paragraphs later, and
-"daily to every-other-day" in its FAQ. All three now say every day or two. A page
+"daily to every-other-day" in its FAQ. All three now say every day or two. [Species check: no page in the set cites a
+source for "every day or two"; Furry Critter Network, already cited on the setup
+and handling guides, says "several times per week at minimum", so all three, the
+hub row and the hub FAQ now say several times a week, and the feeding guide cites
+that page.] A page
 disagreeing with itself in three places is a different failure from two pages
 disagreeing, and it is the second time in batch P after the fire skink cost guide.
 
@@ -14672,7 +14684,10 @@ it.
 
 The cage minimum was narrated as a source disagreement on two pages, and both now
 state the two footprints as the same volume in different shapes, with height named
-as the dimension that matters. The cost guide also said state law "isn't settled or
+as the dimension that matters. [Species check: 24x24x36 is 20,736 cubic inches and
+30x18x36 is 19,440, so "the same volume" was a false claim written during
+de-narration; both pages, the setup FAQ and the hub now state the two footprints
+with no volume claim.] The cost guide also said state law "isn't settled or
 consistent enough to summarize here" while this species' own legal guide covers all
 52 jurisdictions and the reader called that guide the reason they would trust the
 site; that clause is now the two ends of the real range with a link.
@@ -14703,3 +14718,56 @@ breeder or an exotic vet, zoonoses and new-animal quarantine, tooth and nail che
 beyond "watch tooth length", escape recovery after the handling guide warns that a
 startled squirrel will glide across a room, and vacation care for a nocturnal,
 pair-housed animal. Water was on that list and is now answered.
+
+## Fire skink, Jackson's chameleon, uromastyx, flying squirrel (2026-09-16, batch P species check)
+
+One Fable agent over the whole branch (claude/invertebrates-readmefirst-batch-ayolwx from 84c4b559, batch O already in the base), reading diffs. Four species, not five, because that is what lizards and small mammals had left. Nothing merged.
+
+Scope: clean on all four. The only src edits are the four hub entries and the flying squirrel RELATED_ARTICLES line. No encyclopedia edit, no SHORT_LABELS change, no edit to a shared class guide. The uromastyx vs bearded dragon comparison is in the diff as the uromastyx set's own vs piece.
+
+Hub rows, all four: 12 of 12 FAQs verbatim (check-hub-faqs clean), every route covers an own deep dive and nothing shared, no buy list carries a price, difficulty equals the encyclopedia entry's on all four. What did not match:
+
+- Quarantine row, all three lizard hubs: "General reptile-keeping advice sometimes puts a workable quarantine floor at 60 to 90 days, while the Merck Veterinary Manual recommends 3 to 6 months" carried a source name into a row, and the fire skink copy added a sentence the quarantine guide does not say ("That matters more here than for most species, since so much of this trade is still wild-caught"). Now the guide's own "Quarantine periods of 3 to 6 months for new reptiles are recommended."
+- Fire skink "Handling, honestly": the second sentence ("Even settled fire skinks tend to stay squirmy and quick rather than becoming the sit-still handling experience a blue-tongued skink can offer") is on no page. Replaced with the handling guide's own comparison sentence.
+- Fire skink "Why you never see it": a paraphrase of two enrichment sentences merged into one. Now the three sentences as written.
+- Jackson's "Legal, before you buy": "Four other jurisdictions restrict it, each for a structural reason rather than a species-specific one" is not in the legal guide, and the Hawaii sentence was rewritten to add the 1972 date. Now the legal guide's FAQ sentences (Hawaii and DC bar it, New Jersey permit, Minnesota and Maine conditions, 47 with no restriction) plus its own feral-population clause.
+- Uromastyx "Lifespan": "Plan for the longer figure rather than the common one" is on no page. Cut. "Feeding schedule" and "Seeds, limited" copied "Published figures run" and "a real point of disagreement in published guidance" into rows; settled in the feeding guide first (below), then copied.
+- Flying squirrel "Where that lands": a summary written from the legal guide's table cells. Now the guide's own closing paragraph, sentence for sentence. "Bonding starts in a pouch" carried "Most sources describe" from the handling guide; settled there first (Janda Exotics states 2 weeks to 7 to 8), then copied.
+- Shared-guide rows: the fire skink and Jackson's hubs cite the reptile emergency plan guide, whose species table has no row for either (it has uromastyx). Left, because five already-merged lizard and gecko hubs (green anole, tokay, leaf-tailed, tegu, green iguana) do the same and the row is that guide's own description; noted here rather than treated as the batch O defect, since the guide's outage and sitter advice is not species-specific.
+
+Emergency cards: uromastyx is a 6 of 6 copy of the health guide's list. Fire skink (5), Jackson's (5) and flying squirrel (4) were written rather than grepped, the sixth batch running: every bullet was a paraphrase, the flying squirrel card had "a squirrel that has stopped gnawing" (on no page) and left out the obesity vet visit the guide does state. All three cards now use the guides' own sentences. Every vetLine keeps its guide's hedges.
+
+Numbers, against the ranking:
+
+- Uromastyx basking went the wrong way. The vs guide's 110-120F cites Long Island Birds & Exotic Veterinary Clinic, whose page states "The basking area should be even hotter at 110-120°F"; the setup guide's 120-130F cites ReptiFiles. A veterinary hospital outranks a husbandry reference, so the vs guide should have won and did not. Reversed: setup guide body, FAQ, seoDescription and description, the feeding guide's item 6, the hub row, route line and FAQ copy all say 110 to 120F; the ReptiFiles-sourced "at least 130F for the giant Egyptian species" stays; Long Island added to the setup guide's Sources; the vs guide's cell and date reverted since its number did not change. Chicago Exotics, cited by the shared emergency plan guide, gives 105-110F, which sits with the clinics rather than ReptiFiles.
+- Jackson's supplement schedule went the right way and was verified: LafeberVet says "Dust the adult non-breeding diet with a calcium carbonate or calcium gluconate supplement once weekly", "A general vitamin/mineral supplement may be offered once weekly", "Avoid products containing high levels of Vitamin D as this can lead to toxicity", and that the species "may also be more sensitive to over-supplementation of vitamin A than some other lizards". The article's "is the veterinary schedule" was narration and dropped LafeberVet's "adult non-breeding" and "may"; now both are in.
+- Fire skink substrate 8-10 to 4-6: ReptiFiles states "4-6″ / 10-15cm", Dubia.com "around 6″". Right way. The rewrite's "an inch or two" as the contrasting depth was a number no source states; now "a shallow scattering".
+- Jackson's litter 5-30 in the hub funFact matches the handling guide. Fine.
+- Flying squirrel protein frequency: see the pass section's correction; several times a week, Furry Critter Network.
+
+Diet Basics, read back against the sources:
+
+- Jackson's: the feeder list had hornworms, black soldier fly larvae and blue bottle flies (neither LafeberVet nor Reptiles Magazine lists them); "adults every other day, five to seven insects, juveniles daily" (Reptiles Magazine says "no more than five to seven insects per feeding" and gives no frequency for either age; LafeberVet gives none); "nothing wider than the chameleon's own head" (Reptiles Magazine: "not larger than the space between the chameleon's eyes"); a 24-hour gut-load on collard, mustard, carrot and squash (neither source). Now the two sources' own feeder list, the five-to-seven and eye-gap rule as stated, gut-loading with no duration or menu, and the supplement paragraph as above. Same on the four hub rows.
+- Fire skink: adults 2 to 3 times a week depending on body condition (Dubia.com), juveniles daily to every other day (ReptiFiles), the five-minute rule and head-size rule (ReptiFiles), the feeder list (ReptiFiles), calcium at nearly every feeding (ReptiFiles every feeding, Dubia "okay to occasionally skip") all check out. "A reptile multivitamin on the schedule its label sets" was not in either; now "add a reptile multivitamin to the rotation". The scatter-feeding paragraph claimed a controlled study behind it and called hunting "the closest thing this species gets to exercise"; the enrichment guide it borrows from says nothing has been published on this species and the study is on another skink. Now says that.
+
+De-narration, the batch K and M failure mode:
+
+- Uromastyx health, impaction: "the clinic's own recommendation is tile, reptile carpet, or paper" became "the safest floors are tile, reptile carpet, or paper", which asserts what one clinic recommends. Now "the recommendation there is".
+- Uromastyx feeding, adults: "one source explicitly warning that overfeeding is a real, common mistake" became a flat "overfeeding is a real and common mistake", in the body, the FAQ and the hub row; and "lean toward the less-frequent end if your Uromastyx is holding weight easily" became "go higher only if your Uromastyx is holding weight easily", which inverts the condition. Now "described as a real and common mistake" and "especially if your Uromastyx is holding weight easily". The FAQ's "not a required part of the diet" had become "never a required part"; restored.
+- Jackson's setup, humidity: "the day-low, night-high pattern is the most consistently supported approach" became "it is what a montane forest morning actually does, and it gives the enclosure the drying cycle that keeps respiratory infection away", a mechanism no source was quoted for. Now the original claim without the survey. Worth knowing: the two sources the batch added to this page for Diet Basics give humidity as 60-100% (LafeberVet) and 50-80% year-round (Reptiles Magazine), neither of which is the page's 30-50% daytime figure. That is a research item, filed in docs/TODO.md section 8.
+- Flying squirrel cage minimum: see the pass section's correction. The two footprints are not the same volume.
+- Flying squirrel water: "Fresh water goes in a bottle or a shallow dish, changed daily, and a bottle stays cleaner in a cage this active" was written to fill the gap with no source. Furry Critter Network, cited on the setup guide, says "Fresh water must be available at all times through a water bottle mounted to the cage. Check the sipper tube daily"; both pages and the hub now say that, and the feeding guide cites it.
+
+Dates: uromastyx health guide bumped with no fact or number changed (four de-narrated paragraphs and a link); reverted to 2026-09-07. Uromastyx vs guide reverted with its number. Every other bump sits on a real change and no changed number lacks one.
+
+Links: one sibling link per article across all 20 changed files, none before the first H2, none in a ComparisonTable cell. Voice: warning counts identical to base on every changed file, before and after the check's edits.
+
+Review file: the four corrections above are marked inline in the pass sections. Also: the fire skink section says the cost guide contradiction was "fixed to the version the FAQ already carried" while the page's other FAQ still carried the old version (fixed here); the Jackson's section leaves the Hawaii sourcing question "as written and recorded here" without promoting it to docs/TODO.md section 8 (now filed). The raw reader outputs for all four species are in docs/READER_LOG.md, in the same commits as the review sections.
+
+Not changed, noted: the fire skink health guide's "considering feeding from a dish to reduce accidental ingestion" sits against the enrichment guide's scatter-feeding recommendation (cited to the blue-tongue study); both are hedged and both pre-date the batch, so left as a section 8 item rather than settled here. Composite "Setup budget" rows built from cost-table cells remain on all four hubs, numbers unchanged, as on every reconciled hub.
+
+Verdicts: fire skink fixed on the branch; Jackson's chameleon fixed on the branch; uromastyx fixed on the branch; flying squirrel fixed on the branch.
+
+Gates on the branch head: check-internal-links, check-related-articles, check-affiliate-mdx, check-cost-coverage, check-seo-tags, check-hub-faqs, check-voice --strict, eslint all clean. check-species-numbers for all four: every line marked hub appears in the deep dive its row names; the remaining groups are the advisory kind (cost table cells against their totals, a minimum against a larger size).
+
+Pass grade: C+. The mechanical half held (FAQs verbatim, links within limits, voice flat, frontmatter copies moved, scope clean), but the research half repeated batch M's exact failures: a Diet Basics section citing two sources and stating four things neither says, a de-narration that inverted a feeding condition and upgraded two hedges, a false "same volume" written into three places and a hub, a water sentence with no source, three emergency cards written rather than grepped, one number decided against the ranking without opening the vs guide's veterinary source, and a review section describing a cost guide de-narration the diff does not contain.
