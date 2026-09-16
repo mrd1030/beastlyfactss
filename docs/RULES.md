@@ -186,9 +186,19 @@ third care sheet.
   reason to add a row; it is a reason to fix the deep dive. Decided 2026-09-15,
   after hubs drifted from 13 rows and 340 words in batch A to 32 rows and 1,300
   words in batch P with nothing in the process pushing back.
+- Figures are copied exactly, prose may be compressed. Every number, unit and
+  hedge in a hub row reads as the deep dive states it: 110 to 120F stays 110 to
+  120F, "most rooms" does not become "any room", and a range does not become its
+  midpoint. The sentence around the figure can be shorter than the article's,
+  because a card is not the article in a different font. Enforced by
+  scripts/check-hub-figures.mjs, which fails the build when a row states a number
+  the article it cites does not carry. Decided 2026-09-16: the five template hubs
+  have always compressed their sources, the word-for-word rule was invented by a
+  later batch and then enforced on itself, and it is a large part of why rows
+  grew until they had to be capped.
 - A reconciled hub (`layout: "router"` in src/lib/data/guides/*.js) carries:
-  a first-week card of numbers, each copied word for word from the deep
-  dive named in its `source` and linked to it; an emergency card copied
+  a first-week card of numbers, each taken from the deep dive named in its
+  `source` and linked to it; an emergency card copied
   from the health guide's call-the-vet list; one routing sentence per deep
   dive; a buy list with no prices; three FAQs copied from the deep dives.
   No housing, diet, enrichment, or health prose, no cost tables. The hub

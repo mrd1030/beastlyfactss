@@ -117,7 +117,7 @@ catches the defects the commands produce. Per batch:
 
 1. `node scripts/check-voice.mjs --slug <slug>` on every file, then
    `--strict`, `check-internal-links.mjs`, `check-related-articles.mjs`,
-   `check-hub-rows.mjs`.
+   `check-hub-rows.mjs`, `check-hub-figures.mjs`.
 2. Diff against the pre-edit copy (`git show main:<file>`): link targets,
    `<AffiliateLink>` hrefs, component names, and the Sources block must be
    identical unless the task adds sources. Body length within reason.
@@ -1058,12 +1058,15 @@ Per species:
      decision belongs in the deep dive its route line points at. If a
      reader says the hub is missing something, that is a reason to fix the
      deep dive, not to add a row.
-   - Every first-week row's value is copied from the deep dive named in
-     its `source`, in that article's words, numbers unchanged. A source
-     sentence with two ranges keeps both ranges in the row; never merge
-     them into one. No figure of your own. Rows the deep dives do not
-     cover (lifespan, adult size) may use the encyclopedia entry with
-     no source.
+   - Every first-week row's value comes from the deep dive named in its
+     `source`. The figures are copied exactly: every number, unit and hedge
+     reads as the article states it, a source sentence with two ranges keeps
+     both ranges, and a range never becomes its midpoint. The prose around
+     the figures can be shorter than the article's, which is what a card is
+     for. No figure of your own: `node scripts/check-hub-figures.mjs` fails
+     the build on a number the cited article does not carry. Rows the deep
+     dives do not cover (lifespan, adult size) may use the encyclopedia entry
+     with no source.
    - The row carries the figure, never the source's name or the fact
      that sources disagree. "Sources give a real range", "most sources
      recommend", "depending on where you look", "ReptiFiles says": none

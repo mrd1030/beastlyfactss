@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "node scripts/generate-thumbnails.js && node scripts/sync-articles.js && node scripts/generate-guides-index.js && node scripts/generate-encyclopedia-index.js && node scripts/generate-beastlypedia-index.js && node scripts/generate-legal-summary.mjs && vite",
-    "build": "node scripts/check-internal-links.mjs && node scripts/check-hub-rows.mjs && node scripts/check-voice.mjs --strict && node scripts/check-cost-coverage.mjs && node scripts/check-affiliate-mdx.mjs && node scripts/check-related-articles.mjs && node scripts/check-seo-tags.mjs && node scripts/check-state-notes.mjs && node scripts/generate-thumbnails.js && node scripts/check-images.mjs && node scripts/sync-facts.js && node scripts/sync-articles.js && node scripts/generate-guides-index.js && node scripts/generate-encyclopedia-index.js && node scripts/generate-beastlypedia-index.js && node scripts/generate-legal-summary.mjs && vite build && node scripts/watermark-fact-photos.mjs && node scripts/generate-fact-pages.mjs && node prerender.mjs && node scripts/audit-internal-links.mjs && node generate-sitemap.js && node scripts/inline-critical-css.mjs",
+    "build": "node scripts/check-internal-links.mjs && node scripts/check-hub-rows.mjs && node scripts/check-hub-figures.mjs && node scripts/check-voice.mjs --strict && node scripts/check-cost-coverage.mjs && node scripts/check-affiliate-mdx.mjs && node scripts/check-related-articles.mjs && node scripts/check-seo-tags.mjs && node scripts/check-state-notes.mjs && node scripts/generate-thumbnails.js && node scripts/check-images.mjs && node scripts/sync-facts.js && node scripts/sync-articles.js && node scripts/generate-guides-index.js && node scripts/generate-encyclopedia-index.js && node scripts/generate-beastlypedia-index.js && node scripts/generate-legal-summary.mjs && vite build && node scripts/watermark-fact-photos.mjs && node scripts/generate-fact-pages.mjs && node prerender.mjs && node scripts/audit-internal-links.mjs && node generate-sitemap.js && node scripts/inline-critical-css.mjs",
     "preview": "vite preview",
     "check:sources": "node scripts/check-source-links.mjs",
     "lint": "eslint . --quiet",
@@ -23,6 +23,7 @@
     "check:legal-sync": "node scripts/check-legal-map-sync.mjs",
     "check:images": "node scripts/check-images.mjs",
     "check:numbers": "node scripts/check-species-numbers.mjs",
+    "check:hub-figures": "node scripts/check-hub-figures.mjs",
     "check:encyclopedia": "node scripts/check-encyclopedia.mjs"
   },
   "dependencies": {
