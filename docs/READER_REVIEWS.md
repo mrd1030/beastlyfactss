@@ -14614,6 +14614,11 @@ ReptiFiles, which the setup guide cites, states "Basking surface temperature:
 120-130°F (49-55°C)", and basking is the setup guide's own subject, so both other
 pages moved to it. A comparison table is the easiest page in a set to leave behind
 when a number changes, and this is the first time a batch has caught one.
+[Reversed by the species check: the vs guide's 110-120F is sourced to Long Island
+Birds & Exotic Veterinary Clinic, a veterinary hospital, which outranks ReptiFiles
+under RULES, and the clinic's page states "110-120°F". The setup guide, its FAQ
+and frontmatter, the feeding guide and the hub now carry 110 to 120F, and the vs
+guide is back to its original cell and date.]
 
 Source narration, eight instances across four pages, which is the most any species
 in either batch has carried. Two on the setup guide including one inside a FunFact,
