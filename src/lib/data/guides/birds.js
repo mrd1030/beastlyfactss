@@ -16,7 +16,7 @@ export const birdGuides = [
     // list. Reconciled 2026-09-09 for batch C (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "At least 30 days, and up to 45, quarantined in a separate room with its own airspace, away from any bird you already own. A multi-bird household or aviary is safer nearer 90 days.", source: "bird-quarantine-guide" },
         { label: "Cage size", value: "36 wide by 24 deep by 48 inches tall is a commonly cited minimum, with some veterinary guidance recommending closer to 40 by 30 by 60. Your bird needs to be able to fully extend and flap its wings without touching the bars in any direction.", source: "african-grey-parrot-tank-setup-guide" },
@@ -87,7 +87,7 @@ export const birdGuides = [
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "At least 30 days, and up to 45, quarantined in a separate room with its own airspace, away from any bird you already own. A multi-bird household or aviary is safer nearer 90 days.", source: "bird-quarantine-guide" },
         { label: "Enclosure", value: "18x18x18 inches is the figure often cited as an absolute minimum for one bird, but a wider flight-style cage serves them far better, something closer to 30x18x18 inches for a pair. Width matters more than height, since budgies fly side to side rather than climbing.", source: "budgie-tank-setup-guide" },
@@ -161,7 +161,7 @@ export const birdGuides = [
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Cage size and shape", value: "24 by 18 by 18 inches is a reasonable minimum, but width matters more than height: canaries fly horizontally. Leave the middle open as a flight path. Bar spacing half an inch or less.", source: "canary-tank-setup-guide" },
         { label: "Perches", value: "Varied diameter and natural branch, sited at the ends so the flight path stays clear. Uniform dowel holds the foot in one position all day, which is how pressure sores start. No sandpaper covers.", source: "canary-enrichment-guide" },
@@ -240,7 +240,7 @@ export const birdGuides = [
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "At least 30 days, and up to 45, quarantined in a separate room with its own airspace, away from any bird you already own. A multi-bird household or aviary is safer nearer 90 days.", source: "bird-quarantine-guide" },
         { label: "Enclosure", value: "Reference tables put the minimum near 20 by 20 by 30 inches for one bird, and many keepers go to 24 by 24 by 30 for easier movement. Width matters more than height, since cockatiels are horizontal flyers.", source: "cockatiel-tank-setup-guide" },
@@ -309,7 +309,7 @@ export const birdGuides = [
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "At least 30 days, and up to 45, quarantined in a separate room with its own airspace, away from any bird you already own. A multi-bird household or aviary is safer nearer 90 days.", source: "bird-quarantine-guide" },
         { label: "Enclosure", value: "36 inches wide by 24 inches deep by 48 inches tall is a commonly cited minimum, with many avian vets recommending closer to 48 by 48 by 60 inches as a genuinely comfortable size. Bigger is always better with this species.", source: "cockatoo-tank-setup-guide" },
@@ -382,7 +382,7 @@ export const birdGuides = [
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "At least 30 days quarantined in a separate room with its own airspace. Thirty is the floor, 30 to 45 the published range, and nearer 90 in a multi-bird household.", source: "bird-quarantine-guide" },
         { label: "Cage size", value: "24x24x30 inches is the common minimum for a single adult, a floor: aim for 30 to 36 inches or more, or a flight cage. The bird should stretch and flap without touching the sides. Bar spacing 1/2 to 5/8 inch.", source: "conure-tank-setup-guide" },
@@ -458,7 +458,7 @@ export const birdGuides = [
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "At least 30 days, and up to 45, quarantined in a separate room with its own airspace, away from any bird you already own. A multi-bird household or aviary is safer nearer 90 days.", source: "bird-quarantine-guide" },
         { label: "Enclosure", value: "18 by 18 by 24 inches minimum for one bird, 24 by 18 by 24 for a pair, and bigger is always better. Long, horizontal cages suit lovebirds, which fly side to side rather than climbing.", source: "lovebird-tank-setup-guide" },
@@ -530,7 +530,7 @@ export const birdGuides = [
     // dive or opened source states it; filed as a gap in docs/READER_LOG.md.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Cage", value: "18x18x24 inches minimum for one bird, wider a genuine upgrade, and meaningfully more for a pair. Bar spacing 1/4 inch, 1/2 the widest worth considering: a parrotlet's head is smaller than a lovebird's.", source: "parrotlet-tank-setup-guide" },
         { label: "Cage material", value: "Powder-coated or stainless steel only. No painted, galvanized, lead, or zinc parts, no round cages, and every opening locks.", source: "parrotlet-tank-setup-guide" },
@@ -618,7 +618,7 @@ export const birdGuides = [
     // diet rows come from the tank setup guide's Diet Basics section.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Legal check first", value: "Thirteen states ban it: California, Colorado, Connecticut, Georgia, Hawaii, Kansas, Kentucky, Nebraska, New Jersey, Pennsylvania, Vermont, Wisconsin, and Wyoming. Maine, Rhode Island, and Arkansas require a permit, Virginia attaches a condition, Tennessee is unresolved.", source: "quaker-parakeet-legal-guide" },
         { label: "Why the bans exist", value: "The only parrot that builds a stick nest rather than using a cavity, often on electrical infrastructure. Florida Power and Light logged 498 outages from the birds in the first five months of 2001.", source: "quaker-parakeet-legal-guide" },
@@ -645,8 +645,6 @@ export const birdGuides = [
       callNow: [
         "Labored breathing or a swollen abdomen, with anorexia, lethargy, or green-tinted droppings: fatty liver disease",
         "A bird in the household with respiratory signs and diarrhea when people are also unwell: psittacosis passes to humans",
-      ],
-      soon: [
         "An overgrown beak and nails, the slow sign of the same liver disease",
         "Feather plucking, or self-inflicted skin damage on the chest and shoulders: a vet before assuming it is behavioral",
         "Feather, beak, or immune abnormalities: PBFD has no cure, and early diagnosis stops it spreading",
@@ -701,18 +699,18 @@ export const birdGuides = [
     // test (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Never one bird", value: "Solo housing is a welfare problem here, not a design choice. Plan the cage, perches, and feeding stations around at least two from the start.", source: "zebra-finch-tank-setup-guide" },
-        { label: "Group size", value: "Wild zebra finches most often move in twos, 94 percent of them mixed-sex, or in groups of three to ten. Two, or a handful. Not one, and not a crowd.", source: "zebra-finch-enrichment-guide" },
+        { label: "Group size", value: "Wild zebra finches most often move in twos, 94 percent of them mixed-sex, or in groups of three to ten. Two, or a handful, and a mixed-sex pair is the decision that brings eggs; two of the same sex does not.", source: "zebra-finch-enrichment-guide" },
         { label: "Cage", value: "At least 24 by 14 by 18 inches for a pair, a floor not a target, and wide rather than tall: they fly the length of it. Bar spacing no wider than 3/8 inch, tighter than a canary's.", source: "zebra-finch-tank-setup-guide" },
         { label: "Temperature and light", value: "65 to 80°F, away from drafts, vents, and direct sun. About 12 hours of light and 12 of dark on a consistent schedule.", source: "zebra-finch-tank-setup-guide" },
         { label: "Perches and bathing", value: "Varied diameters spaced far enough apart that the birds fly rather than hop, and a shallow bath, which they use readily.", source: "zebra-finch-tank-setup-guide" },
-        { label: "Cage lining", value: "A paper liner spot-cleaned daily and changed weekly, which makes droppings easy to read.", source: "zebra-finch-tank-setup-guide" },
+        { label: "Cage lining", value: "A plain paper liner, spot-cleaned daily and changed weekly, which makes droppings easy to read.", source: "zebra-finch-tank-setup-guide" },
         { label: "Nesting material", value: "They carry and shred material constantly, and material plus a nest site triggers breeding. No chicks wanted: material and no nest. Never loose fibrous fluff, which wraps legs and toes.", source: "zebra-finch-enrichment-guide" },
         { label: "Diet split", value: "The target once converted is pellets at roughly 70% of the diet, 60% at minimum, fresh fruit and vegetables 20%, and seed at about one level teaspoon per bird per day. Pellets stay available; seed is measured.", source: "zebra-finch-feeding-guide" },
         { label: "Seed to pellets", value: "Birds arrive seed-fed and the switch is gradual, never abrupt: 75% seed and 25% pellets for 3 days, 50/50 for 3 days, then 25% seed until converted. Weigh daily; a drop past 10% means stop and call an avian vet.", source: "bird-pellet-conversion-guide" },
-        { label: "Cuttlebone and egg food", value: "A cuttlebone or mineral block permanently in the cage, most important for a laying hen. Egg food for protein during molt and breeding, pulled within a couple of hours. No grit: they hull their seed.", source: "zebra-finch-feeding-guide" },
+        { label: "Cuttlebone, egg food, water", value: "A cuttlebone or mineral block permanently in the cage, most important for a laying hen. Egg food during molt and breeding, pulled within a couple of hours. Fresh water continuously, dishes cleaned daily. No grit: they hull their seed.", source: "zebra-finch-feeding-guide" },
         { label: "Handling", value: "Hands-off birds that do not enjoy being held; forcing contact makes a more fearful bird. To catch one, slide a fine-mesh net over it on a perch or the floor, and never by the tail.", source: "zebra-finch-handling-guide" },
         { label: "Vet schedule", value: "A first visit within 1 to 2 weeks of bringing a bird home, then at least annually.", source: "zebra-finch-cost-guide" },
         { label: "Budget", value: "$15 to $60 a bird, at least two, so $30 to $120 for a pair. Setup roughly $180 to $400 including the birds, the cage $120 to $220 of it, then $10 to $25 a month.", source: "zebra-finch-cost-guide" },
@@ -720,21 +718,19 @@ export const birdGuides = [
         { label: "Adult size", value: "3.9 to 4.3 inches (10 to 11 cm), 0.3 to 0.5 oz." },
         { label: "Quarantine", value: "New birds stay 30 days, 30 to 45 in a separate room, away from the birds you already have. A pair bought together stays together; quarantine is from your established birds, not from each other.", source: "bird-quarantine-guide" },
         { label: "Household fumes", value: "PTFE coatings release toxic gas above 280°C (536°F), which an empty pan on a hot burner reaches in minutes.", source: "bird-household-hazards-guide" },
-        { label: "Sleep and droppings", value: "10 to 12 hours of uninterrupted dark, since a lit-up evening reads as endless summer. Plain white paper in the tray, swapped daily, so dropping changes show.", source: "bird-photoperiod-sleep-guide" },
+        { label: "Sleep and droppings", value: "10 to 12 hours of uninterrupted dark. A lit-up evening reads as endless summer and drives chronic egg laying.", source: "bird-photoperiod-sleep-guide" },
       ],
     },
     emergencyCard: {
       source: "zebra-finch-health-issues-guide",
       callNow: [
         "A laying hen on the cage floor, straining, with a swollen abdomen: egg binding, same-day",
-        "Labored or open-mouth breathing, or a tail bobbing with each breath",
+        "Labored or open-mouth breathing, sneezing, or a tail bobbing with each breath: air sac mites in a heavy infection, or a respiratory infection",
         "Balance problems or a head tilt",
-      ],
-      soon: [
         "Ruffled or unkempt feathers, sleeping more, eating or drinking less, especially in combination",
         "Diarrhea or abnormal droppings",
       ],
-      vetLine: "A same-day call to an avian vet for the first list, and a prompt one for the second: a finch has a long illness head start by the time it shows anything.",
+      vetLine: "Any of these, especially in combination, is a same-day call to an avian vet: a finch has a long illness head start by the time it shows anything.",
     },
     routes: [
       { slug: "zebra-finch-cost-guide", line: "$15 to $60 a bird, why the minimum order is two, and the flight cage that is the real line item." },

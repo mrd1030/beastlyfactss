@@ -22,7 +22,7 @@ export const turtleGuides = [
     // they are gone rather than moved.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Legal", value: "Several states restrict or ban it outright, and a captive-bred turtle still comes with conditions: Florida, West Virginia, and others attach caps or paperwork.", source: "box-turtle-legal-guide" },
         { label: "Quarantine", value: "A minimum of six months, completely separate from any other chelonian, with lab testing. Two or three weeks is not long enough for the herpesvirus.", source: "chelonian-herpesvirus-quarantine-guide" },
@@ -108,7 +108,7 @@ export const turtleGuides = [
     // the site states it.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Legal", value: "Federal law bans the sale of turtles under 4 inches, not ownership. State invasive-species laws are what restrict sliders, so check yours before buying.", source: "red-eared-slider-legal-guide" },
         { label: "Tank size", value: "Roughly 10 gallons of water per inch of shell, so a practical adult minimum of 75 to 100 gallons for one turtle, 100 to 125 better. A hatchling's tank is temporary; size for the adult it becomes.", source: "red-eared-slider-tank-setup-guide" },
@@ -196,7 +196,7 @@ export const turtleGuides = [
     // guide's Ferguson-zone caveat.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Legal", value: "Banned nowhere. New Jersey, New Mexico, and Delaware require a permit; Massachusetts, Hawaii, Vermont, Minnesota, and New York City attach conditions, New York City's by size: a hatchling under four inches is barred.", source: "red-footed-tortoise-legal-guide" },
         { label: "Quarantine", value: "A minimum of six months, completely separate from any other chelonian, with lab testing. Two or three weeks is not long enough for the herpesvirus.", source: "chelonian-herpesvirus-quarantine-guide" },
@@ -279,7 +279,7 @@ export const turtleGuides = [
     // 2026-09-08 after the Russian tortoise set test (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Legal", value: "One state, Colorado, bans it, four require a permit, four attach a condition, and Hawaii, which bans almost everything, expressly allows it. Forty-three states place no rule on it at all.", source: "russian-tortoise-legal-guide" },
         { label: "Enclosure", value: "A 4x2x2 ft tortoise table, about 8 square feet, is the absolute indoor minimum, genuinely a minimum rather than a goal. Sources disagree on the target: at least 12 square feet, or our own functional recommendation of roughly 7x3.5 ft, about 24 square feet.", source: "russian-tortoise-tank-setup-guide" },
@@ -357,7 +357,7 @@ export const turtleGuides = [
     // Reconciled 2026-09-14 for batch H (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Before anything else", value: "Whether you have, or will have within a few years, the outdoor space, the shelter budget, and a multi-generational plan for an animal of 80 to 110 pounds that outlives you.", source: "sulcata-tortoise-cost-guide" },
         { label: "Legal check", value: "No state prohibits owning one. The real rule is the federal import ban since 2000, and California's restrictions cover its native desert tortoise, not this species.", source: "sulcata-tortoise-legal-guide" },

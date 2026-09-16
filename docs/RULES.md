@@ -212,8 +212,9 @@ third care sheet.
   signs, with a `heading` set per hub (fish and invertebrate cards open with
   what to check first, since their cost guides say no vet will see them; the
   page falls back to "Call the vet now" when no heading is set) and an optional
-  `soon` list for the signs the health guide files under "book a visit
-  promptly", so one list never mixes urgency tiers; one routing sentence per deep
+  `soon` list only where the health guide itself sorts its signs into
+  immediate and prompt, never a split the hub invents on a flat list; one
+  routing sentence per deep
   dive; a buy list with no prices; three FAQs copied from the deep dives.
   No housing, diet, enrichment, or health prose, no cost tables. The hub
   keeps no figure of its own; a number changes in the deep dive and the

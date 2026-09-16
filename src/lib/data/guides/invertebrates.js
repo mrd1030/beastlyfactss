@@ -25,7 +25,7 @@ export const invertebrateGuides = [
     // to 82 tolerated with the cooler two-thirds better.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Tank size", value: "A 10-gallon is the practical minimum. Surviving in 5 gallons is not the same as having room to forage.", source: "amano-shrimp-tank-setup-guide" },
         { label: "How many", value: "One per 2 gallons to start, five in a 10-gallon. A tank fighting an algae outbreak carries more, but more shrimp on the same algae only means it runs out sooner.", source: "amano-shrimp-tank-setup-guide" },
@@ -120,7 +120,7 @@ export const invertebrateGuides = [
     // supplement."
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Tank size", value: "5 gallons is the practical minimum, 10 or larger for a self-sustaining colony, since volume buffers the small constant shifts a growing colony causes.", source: "cherry-shrimp-tank-setup-guide" },
         { label: "Mature, not just cycled", value: "The biofilm a shrimp grazes arrives later than the bacteria that clear ammonia, so the tank has to be mature before shrimp go in. Ammonia and nitrite read zero at all times.", source: "cherry-shrimp-health-issues-guide" },
@@ -204,7 +204,7 @@ export const invertebrateGuides = [
     // animal hunt.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Legal check", value: "Banned in New York City, Hawaii, and the District of Columbia, permit-only in Maine and Rhode Island, conditional in Oregon, unclear in Idaho, Arkansas, New Mexico, and New Jersey. Nothing restricts one in the other forty-two jurisdictions.", source: "emperor-scorpion-legal-guide" },
         { label: "Enclosure", value: "A 10-gallon, roughly 20x10x12 inches, for one adult, with a tight lid: they climb and escape. A group wants 20 to 30 gallons and more hides than animals.", source: "emperor-scorpion-tank-setup-guide" },
@@ -302,7 +302,7 @@ export const invertebrateGuides = [
     // the whole of it.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Where yours came from", value: "Most ghost shrimp move through the trade as live feed with no screening or quarantine. Lethargy, hiding, refusing food, and losses inside a small group shortly after purchase are feeder-tank stress.", source: "ghost-shrimp-health-issues-guide" },
         { label: "Recovery first", value: "A quiet, stable, planted tank and low expectations for two weeks. Losses in that window are common and usually not something you did.", source: "ghost-shrimp-enrichment-guide" },
@@ -394,7 +394,7 @@ export const invertebrateGuides = [
     // into a single number.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Budget", value: "$75 to $150 or more for the millipede, priced by scarcity rather than difficulty: a USDA import embargo means most stock is captive-bred. Setup another $75 to $150, then a few dollars a month. Vets are rarely needed.", source: "giant-millipede-cost-guide" },
         { label: "Lifespan", value: "5 to 7 years in the wild, up to 10 in captivity, a real multi-year commitment.", source: "giant-millipede-cost-guide" },
@@ -473,7 +473,7 @@ export const invertebrateGuides = [
     // (docs/HUB_ROUTER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Tank", value: "A glass terrarium, roughly 10 gallons for 2 to 3 small crabs, more for bigger crabs or groups, with a glass or acrylic lid that seals in humidity. Cover part of a screen lid with plastic wrap.", source: "hermit-crab-tank-setup-guide" },
         { label: "Group size", value: "At least two. They are social.", source: "hermit-crab-tank-setup-guide" },
@@ -563,7 +563,7 @@ export const invertebrateGuides = [
     // copies the article that owns it.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Budget", value: "$15 to $25 for a captive-bred spiderling, $25 to $60 for a juvenile or sub-adult female, which lives longer. Setup roughly $112 to $150, then $5 to $15 a month in feeders. Exotic vets rarely treat spiders.", source: "jumping-spider-cost-guide" },
         { label: "Lifespan", value: "Males 8 to 12 months after maturity, females 1.5 to 3 years. Expect 1 to 3 years overall.", source: "jumping-spider-cost-guide" },
@@ -655,7 +655,7 @@ export const invertebrateGuides = [
     // mentions at all. None of those figures moved up here.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Budget", value: "Around $3 a nymph, about $24 for a pair, around $65 for a starter colony of 25. Setup roughly $40 to $100 with the animals, then a few dollars a month. Very few vets treat invertebrates.", source: "madagascar-hissing-cockroach-cost-guide" },
         { label: "Lifespan", value: "2 to 5 years, most commonly 2 to 3.", source: "madagascar-hissing-cockroach-cost-guide" },
@@ -670,7 +670,7 @@ export const invertebrateGuides = [
         { label: "What they eat", value: "Romaine and dark greens, carrot, squash, sweet potato, apple, banana, orange, grape. Not a protein-heavy diet, and nothing treated with pesticide.", source: "madagascar-hissing-cockroach-feeding-guide" },
         { label: "Water", value: "A soaked cotton ball or sponge in a shallow dish, or water gel. An open dish drowns small nymphs.", source: "madagascar-hissing-cockroach-feeding-guide" },
         { label: "Why it looks like nothing is eating", value: "They feed after dark. Nymphs also go quiet and eat less before each of their roughly six molts over six to seven months.", source: "madagascar-hissing-cockroach-feeding-guide" },
-        { label: "Handling", value: "Docile, but a display animal. Lift gently around the thorax or let it walk hand to hand; never pull against the grip of the feet. The leg spines can scratch. Wash hands before and after: Salmonella.", source: "madagascar-hissing-cockroach-handling-guide" },
+        { label: "Handling", value: "They do not bite. Docile, but a display animal: lift gently around the thorax or let it walk hand to hand; never pull against the grip of the feet. The leg spines can scratch. Wash hands before and after: Salmonella.", source: "madagascar-hissing-cockroach-handling-guide" },
         { label: "Desiccation and molt", value: "Low humidity causes failed molts and death. A freshly molted roach is soft and white for hours; never handle one then.", source: "madagascar-hissing-cockroach-health-issues-guide" },
         { label: "Mold and mites", value: "From wet food left in and poor airflow. Remove uneaten produce within 24 to 48 hours, ventilate, and deep-clean on a schedule rather than after a problem.", source: "madagascar-hissing-cockroach-health-issues-guide" },
         { label: "Legal, before you buy", value: "Barred in New Hampshire, Montana, Hawaii, and the District of Columbia. Florida requires an agriculture permit, Oregon attaches conditions.", source: "madagascar-hissing-cockroach-legal-guide" },
@@ -684,10 +684,9 @@ export const invertebrateGuides = [
         "Discharge from the mouth or eyes",
         "Visible sores",
         "Visible weight loss, or a dull-looking exoskeleton",
-        "Abnormal feces",
         "Lethargy beyond normal pre-molt sluggishness",
       ],
-      vetLine: "Not eating is usually benign: they feed after dark, nymphs go quiet before a molt, and a cool room slows them. Once several of these signs stack up, a visibly sick hisser commonly survives only 2 to 3 days, so act quickly.",
+      vetLine: "Not eating is usually benign: they feed after dark, nymphs go quiet before a molt, and a cool room slows them. Once several of these signs stack up, a visibly sick hisser commonly survives only 2 to 3 days, so act quickly. A heat mat without a thermostat overheats a tub.",
     },
     routes: [
       { slug: "madagascar-hissing-cockroach-cost-guide", line: "$3 a nymph, $24 a pair, $65 a colony of 25, and a setup total under $100 with the animal in it." },
@@ -707,6 +706,7 @@ export const invertebrateGuides = [
       "A shallow dish with a cotton ball or sponge, or a commercial water gel",
       "High-quality dry dog food or commercial roach chow",
       "A spray bottle for misting",
+      "A digital thermometer and hygrometer, since the card asks you to check both",
       "A thermostat, only if you are running supplemental heat to breed",
     ],
     faqs: [
@@ -749,7 +749,7 @@ export const invertebrateGuides = [
     // rule now in the setup guide's Diet Basics.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Buy an adult", value: "An adult or subadult, not a nymph. Nymphs are hard to keep alive through their many molts.", source: "praying-mantis-cost-guide" },
         { label: "Enclosure", value: "Length and width at least twice the mantis's body length, height at least three times. 8 by 8 by 12 inches is the adult minimum; a nymph does well in a vented 32-ounce deli cup.", source: "praying-mantis-tank-setup-guide" },
@@ -843,7 +843,7 @@ export const invertebrateGuides = [
     // docs/READER_LOG.md.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "The permit, first", value: "Non-native species, the common Indian and Vietnamese ones included, technically require a USDA APHIS permit that hobbyists cannot get. Only species native to and collected in your own state are clearly legal without one, and releasing any stick insect or its eggs is prohibited.", source: "stick-insect-cost-guide" },
         { label: "Budget", value: "A few dollars a nymph for common species, often free from keepers, while rare giants can pass $1,000. Setup roughly $77 to $98, then almost nothing: foraged cuttings and water for misting.", source: "stick-insect-cost-guide" },
@@ -916,7 +916,7 @@ export const invertebrateGuides = [
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Enclosure", value: "Horizontal, wider than tall, to limit fall risk. A reasonable adult minimum is around 20x10x10 inches, roughly a 10-gallon, sized to about three times the tarantula's leg span. Keep overall height under about 12 inches.", source: "tarantula-tank-setup-guide" },
         { label: "Substrate", value: "At least 3 inches of coconut fiber, peat, or organic pesticide-free soil, filling roughly half to two-thirds of the enclosure.", source: "tarantula-tank-setup-guide" },

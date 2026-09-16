@@ -22,7 +22,7 @@ export const geckoGuides = [
     // Reconciled 2026-09-15 for batch I (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "Quarantined away from any reptile you already keep, on paper towel, with its own tools and a fecal exam inside that window.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "A 20-gallon long minimum for one adult, a 36x18x16 inch 40-gallon breeder better. Height buys little for a terrestrial burrower.", source: "african-fat-tail-tank-setup-guide" },
@@ -104,7 +104,7 @@ export const geckoGuides = [
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "A new gecko is quarantined 3 to 6 months away from any reptile you already keep, on paper towel, with its own tools and a vet workup inside that window.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "18x18x24 inches is the minimum for one adult, and taller is genuinely better, a 2x2x2 foot enclosure is a common upgrade. Height matters more than floor space here.", source: "crested-gecko-tank-setup-guide" },
@@ -182,7 +182,7 @@ export const geckoGuides = [
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "Quarantined away from any reptile you already keep, on paper towel, with its own tools and a fecal exam inside that window.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "18x18x24 inches minimum for an adult, 24x24x24 ideal, vertical over floor, one gecko per enclosure. Hatchlings under about 12 grams do better in a smaller grow-out.", source: "gargoyle-gecko-tank-setup-guide" },
@@ -278,7 +278,7 @@ export const geckoGuides = [
     // standing move for a species with no feeding guide.
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Buy captive-bred", value: "Wild-caught animals consistently live shorter lives, and the genus is often wild-caught with the health problems that brings.", source: "leaf-tailed-gecko-cost-guide" },
         { label: "Quarantine", value: "3 to 6 months for a new reptile, on plain paper towel with dedicated tools, serviced last. For a wild-caught gecko, wait 1 to 2 months before parasite treatment so a stressed animal is not treated too soon.", source: "reptile-quarantine-guide" },
@@ -354,7 +354,7 @@ export const geckoGuides = [
     // (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "A new gecko is quarantined 3 to 6 months away from any reptile you already keep, on paper towel, with its own tools and a vet workup inside that window.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "36x18x18 inches is the adult minimum, well past the old 20-gallon-long standard. A hatchling can start in a 10-gallon. Floor space counts for more than height.", source: "leopard-gecko-tank-setup-guide" },
@@ -453,7 +453,7 @@ export const geckoGuides = [
     // optimal conditions".
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "Quarantined away from any reptile you already keep, on paper towel, with its own tools and a fecal exam inside that window.", source: "reptile-quarantine-guide" },
         { label: "Buy more than one", value: "Parthenogenetic, all female, and colonial, so the social question is settled and group size is an enrichment decision. A lone gecko survives fine and still lays viable eggs.", source: "mourning-gecko-enrichment-guide" },
@@ -541,7 +541,7 @@ export const geckoGuides = [
     // test (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
-      intro: "The numbers a new owner needs in the first week, each taken from the article that explains it.",
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Legal check", value: "No permit needed in 49 of 52 US jurisdictions. Hawaii allows it for research and exhibition only, the District of Columbia bars it by omission, Minnesota treats lizards as protected wild animals.", source: "tokay-gecko-legal-guide" },
         { label: "Quarantine", value: "3 to 6 months for a new reptile, the longer window for a wild-caught animal, in its own room, with a fecal exam early and a repeat before it ends, and a weekly weight.", source: "tokay-gecko-health-issues-guide" },
@@ -571,8 +571,6 @@ export const geckoGuides = [
         "Any injury or trauma, or swelling and color change in the skin",
         "Ulcers or excessive discharge in the mouth",
         "Limping or difficulty moving",
-      ],
-      soon: [
         "Loss of appetite or unusual inactivity that outlasts a settling-in period",
         "Weight loss on the weekly scale",
         "Loose or abnormal droppings, eye discharge or swelling, or retained shed",
