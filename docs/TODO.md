@@ -693,22 +693,26 @@ is why they kept getting deferred. Do them once section 7 is finished.
         opens (the OSU Extension fact sheet serves a 403, Fluker Farms only says
         to clean out leftovers regularly) states a window at all, and the figure
         that moved was the stricter one. (batch O)
+        - Decided 2026-09-16: 24 to 48 hours stands on both pages. No opened source states a window, and the feeding guide owns the figure.
       - The stick insect lifespan ceiling. The encyclopedia says "6 months-2
         years depending on species" and the cost guide says "a small number of
         larger species can reach 2 to 3 years". Neither page cites a lifespan
         source, and what is published on the longest-lived commonly kept
         phasmid, the jungle nymph, says up to 2 years. Left as written rather
         than picked. (batch O)
+        - Left as written 2026-09-16.
       - The hissing cockroach enrichment guide's welfare framework is a 2023
         Animals paper on *Gromphadorhina oblongonota*, and the pet species is
         *G. portentosa*. The guide says group-housed congener, which is honest,
         but every claim the site makes about colony welfare rests on it. Worth
         checking whether anything exists on portentosa itself. (batch O)
+        - Left as is 2026-09-16: the congener framing is honest, and no search was spent on it this pass.
       - Millipedes and isopods. The giant millipede setup guide says isopods
         harass or weaken a millipede in a shared enclosure, unsourced, and one
         of the two sources opened for the group-housing fix (Bugs in Cyberspace)
         says they coexist. One of them is wrong and the guide is the one with no
         citation. (batch O)
+        - DONE 2026-09-16: the setup guide now follows the opened source. Isopods and springtails are fine in a display tank, with the unproven egg concern named and a breeding tank kept clear of them; seoDescription updated.
 
       Needs a style decision:
       - The jumping spider cost guide's Sources block carries "Bugs in
@@ -717,11 +721,13 @@ is why they kept getting deferred. Do them once section 7 is finished.
         batch prompt's Never list, so it needs replacing rather than removing,
         the same shape as the molly cost guide's Splashy Fish entry above.
         (batch O)
+        - DONE 2026-09-16: replaced with UF IFAS Featured Creatures on Phidippus regius, opened, which now supports a size sentence in the pricing section.
       - Checked 2026-09-16 and left: 229 guides carry a future date, spread through November, so a future date is the publishing schedule rather than a defect. Three future-dated articles found in passing, all pre-existing:
         giant-millipede-enrichment-guide and stick-insect-enrichment-guide at
         2026-11-02 and 2026-11-01, and madagascar-hissing-cockroach-enrichment-
         guide at 2026-10-19. Not bumped, since nothing about them changed, but
         a date in the future is its own defect. (batch O)
+        - Not a defect under the current convention (future dates are the publish schedule); left.
 
       Needs a mechanical pass:
       - Checked 2026-09-16: the phrase is "Included in setup budget" and the only table carrying it is the African grey cost guide, whose two cells are now priced from affiliateProducts.js ($10 to $25 perches, $69 to $91 the rest). Its floor was above the itemized sum, not below it, so the $500 to $1,500 heading stands. "Included in setup total" as a cost table cell. Two of batch O's four
