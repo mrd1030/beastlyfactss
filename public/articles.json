@@ -892,7 +892,7 @@
     {
       "slug": "bearded-dragon-legal-guide",
       "title": "Are Bearded Dragons Legal? Two Places Say No",
-      "excerpt": "The bearded dragon is the most commonly kept pet lizard in the country and clears 47 of 52 jurisdictions without a permit. Its home country stopped exporting live native reptiles in 1982, which is why every animal in the trade is captive-bred stock.",
+      "excerpt": "The bearded dragon is the most commonly kept pet lizard in the country and clears 46 of 52 jurisdictions without a permit. Its home country stopped exporting live native reptiles in 1982, which is why every animal in the trade is captive-bred stock.",
       "date": "2026-10-05",
       "image": "/assets/guides/bearded-dragon-legal.jpg",
       "category": "Legal",
@@ -1289,7 +1289,7 @@
     {
       "slug": "blue-tongue-skink-legal-guide",
       "title": "Are Blue-Tongued Skinks Legal? Two Places Say No",
-      "excerpt": "Blue-tongued skinks are cleared in 47 of 52 jurisdictions, but every rule that does reach them reaches them as skinks rather than as this species. That single fact explains why their legal map differs from a gecko's in places keepers assume are identical.",
+      "excerpt": "Blue-tongued skinks are cleared in 46 of 52 jurisdictions, but every rule that does reach them reaches them as skinks rather than as this species. That single fact explains why their legal map differs from a gecko's in places keepers assume are identical.",
       "date": "2026-10-04",
       "image": "/assets/guides/blue-tongue-skink-legal.jpg",
       "category": "Legal",
@@ -1667,7 +1667,7 @@
     {
       "slug": "burmese-python-legal-guide",
       "title": "Are Burmese Pythons Legal? Federal Rule vs States",
-      "excerpt": "The Burmese python has been federal injurious wildlife since 2012, and most people assume that settles it. A 2017 D.C. Circuit ruling took the interstate half of that ban away, which is why thirty jurisdictions still have no rule of their own.",
+      "excerpt": "The Burmese python has been federal injurious wildlife since 2012, and most people assume that settles it. A 2017 D.C. Circuit ruling took the interstate half of that ban away, which is why twenty-nine jurisdictions still have no rule of their own.",
       "date": "2026-10-02",
       "image": "/assets/guides/burmese-python-legal.jpg",
       "category": "Legal",
@@ -2653,7 +2653,7 @@
     {
       "slug": "crested-gecko-legal-guide",
       "title": "Are Crested Geckos Legal? The Six Places They Aren't",
-      "excerpt": "Crested geckos clear 46 of 52 jurisdictions without a permit, which makes the six exceptions worth knowing precisely. The one most keepers never see coming is Massachusetts, where the permit is triggered by the species' conservation status rather than by anything it does.",
+      "excerpt": "Crested geckos clear 45 of 52 jurisdictions without a permit, which makes the seven exceptions worth knowing precisely. The one most keepers never see coming is Massachusetts, where the permit is triggered by the species' conservation status rather than by anything it does.",
       "date": "2026-09-12",
       "image": "/assets/guides/crested-gecko-legal.jpg",
       "category": "Legal",
@@ -4875,7 +4875,7 @@
     {
       "slug": "jacksons-chameleon-legal-guide",
       "title": "Are Jackson's Chameleons Legal? Hawaii Is the Twist",
-      "excerpt": "Jackson's chameleons clear 47 of 52 jurisdictions, and the one that bars them is the one where they are most abundant. Hawaii's feral population descends from a single 1972 release in Kaneohe, and no private keeper there may hold one.",
+      "excerpt": "Jackson's chameleons clear 46 of 52 jurisdictions, and the one that bars them is the one where they are most abundant. Hawaii's feral population descends from a single 1972 release in Kaneohe, and no private keeper there may hold one.",
       "date": "2026-10-07",
       "image": "/assets/guides/jacksons-chameleon-legal.jpg",
       "category": "Legal",
@@ -5217,7 +5217,7 @@
     {
       "slug": "leopard-gecko-legal-guide",
       "title": "Are Leopard Geckos Legal? Banned in Only Two Places",
-      "excerpt": "The leopard gecko is one of the least restricted reptiles in the country, cleared without a permit in 47 of 52 jurisdictions. Hawaii is the interesting exception, because it names this species individually rather than reaching it through a family.",
+      "excerpt": "The leopard gecko is one of the least restricted reptiles in the country, cleared without a permit in 46 of 52 jurisdictions. Hawaii is the interesting exception, because it names this species individually rather than reaching it through a family.",
       "date": "2026-09-15",
       "image": "/assets/guides/leopard-gecko-legal.jpg",
       "category": "Legal",
@@ -7017,7 +7017,7 @@
     {
       "slug": "savannah-monitor-legal-guide",
       "title": "Are Savannah Monitors Legal? Bans, Permits and Arkansas",
-      "excerpt": "Forty-one jurisdictions have nothing to say about savannah monitors. Louisiana bans this species by name while leaving most monitors alone, and Arkansas clears ten monitors without including it.",
+      "excerpt": "Forty jurisdictions have nothing to say about savannah monitors. Louisiana bans this species by name while leaving most monitors alone, and Arkansas clears ten monitors without including it.",
       "date": "2026-08-19",
       "image": "/assets/guides/savannah-monitor-legal.jpg",
       "category": "Legal",
@@ -7851,7 +7851,7 @@
     {
       "slug": "tokay-gecko-legal-guide",
       "title": "Are Tokay Geckos Legal? Only Two Places Say No",
-      "excerpt": "The tokay has the worst reputation of any commonly kept gecko and the cleanest legal record. It clears 49 of 52 jurisdictions, and in New Jersey it is the one gecko that does not need a permit, because the rule carves it out by name.",
+      "excerpt": "The tokay has the worst reputation of any commonly kept gecko and the cleanest legal record. It clears 48 of 52 jurisdictions, and in New Jersey it is the one gecko that does not need a permit, because the rule carves it out by name.",
       "date": "2026-10-06",
       "image": "/assets/guides/tokay-gecko-legal.jpg",
       "category": "Legal",
@@ -7909,11 +7909,12 @@
     {
       "slug": "ultimate-birdwatching-guide-best-places-times-tips-2026",
       "title": "Ultimate Birdwatching Guide for Beginners (2026)",
-      "excerpt": "Ready to start birdwatching? This complete 2026 short guide covers the best locations, peak seasons, some gear, and tips.",
+      "excerpt": "Where to go birding, when to go, how to identify what lands in front of you, and how to build a yard that birds use instead of fly over.",
       "date": "2026-06-01",
       "image": "/assets/images/ultimate-birdwatching-guide-best-places-times-tips-2026-0.jpg",
-      "category": "Birds",
+      "category": "Wild Animals",
       "categories": [
+        "Wild Animals",
         "Birds"
       ]
     },

@@ -119,6 +119,10 @@
     "id": "shima-enaga",
     "name": "Shima Enaga"
   },
+  "bald eagle": {
+    "id": "bald-eagle",
+    "name": "Bald Eagle"
+  },
   "giant manta ray": {
     "id": "manta-ray",
     "name": "Giant Manta Ray"

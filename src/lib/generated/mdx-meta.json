@@ -504,7 +504,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 4,
-    "headingCount": 7,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1600,
     "imageHeight": 1195
@@ -3188,7 +3188,7 @@
     "image": "/assets/guides/argentine-tegu-legal.jpg",
     "imageAlt": "Argentine black and white tegu in Florida habitat",
     "emoji": "🦎",
-    "lastReviewed": "2026-09-15",
+    "lastReviewed": "2026-09-16",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -3223,7 +3223,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 3,
-    "headingCount": 7,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -3799,7 +3799,7 @@
     "image": "/assets/guides/axolotl-legal.jpg",
     "imageAlt": "Pink axolotl in a planted aquarium, representing its state-by-state legal status",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-15",
+    "lastReviewed": "2026-09-16",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -3834,7 +3834,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 3,
-    "headingCount": 7,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -4238,7 +4238,7 @@
     "image": "/assets/guides/ball-python-legal.jpg",
     "imageAlt": "Ball python coiled in its enclosure",
     "emoji": "🐍",
-    "lastReviewed": "2026-07-23",
+    "lastReviewed": "2026-09-16",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -4261,7 +4261,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 3,
-    "headingCount": 6,
+    "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -5059,7 +5059,7 @@
     "slug": "bearded-dragon-legal-guide",
     "title": "Is It Legal to Own a Bearded Dragon? State-by-State Guide",
     "seoTitle": "Are Bearded Dragons Legal? Two Places Say No",
-    "excerpt": "The bearded dragon is the most commonly kept pet lizard in the country and clears 47 of 52 jurisdictions without a permit. Its home country stopped exporting live native reptiles in 1982, which is why every animal in the trade is captive-bred stock.",
+    "excerpt": "The bearded dragon is the most commonly kept pet lizard in the country and clears 46 of 52 jurisdictions without a permit. Its home country stopped exporting live native reptiles in 1982, which is why every animal in the trade is captive-bred stock.",
     "date": "2026-10-05",
     "category": "Legal",
     "categories": [
@@ -5083,7 +5083,7 @@
     "faqs": [
       {
         "q": "Are bearded dragons legal in the US?",
-        "a": "In 47 of 52 jurisdictions, with no permit. Hawaii and the District of Columbia do not allow private ownership, New Jersey requires a possession permit, and Minnesota and Maine attach conditions rather than a flat clearance."
+        "a": "In 46 of 52 jurisdictions, with no permit. Hawaii and the District of Columbia do not allow private ownership, New Jersey and West Virginia require a permit, and Minnesota and Maine attach conditions rather than a flat clearance."
       },
       {
         "q": "Why does Maine treat the bearded dragon differently from other lizards?",
@@ -5104,7 +5104,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6,
-    "headingCount": 7,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -7289,7 +7289,7 @@
     "slug": "blue-tongue-skink-legal-guide",
     "title": "Is It Legal to Own a Blue-Tongued Skink? State Guide",
     "seoTitle": "Are Blue-Tongued Skinks Legal? Two Places Say No",
-    "excerpt": "Blue-tongued skinks are cleared in 47 of 52 jurisdictions, but every rule that does reach them reaches them as skinks rather than as this species. That single fact explains why their legal map differs from a gecko's in places keepers assume are identical.",
+    "excerpt": "Blue-tongued skinks are cleared in 46 of 52 jurisdictions, but every rule that does reach them reaches them as skinks rather than as this species. That single fact explains why their legal map differs from a gecko's in places keepers assume are identical.",
     "date": "2026-10-04",
     "category": "Legal",
     "categories": [
@@ -7313,7 +7313,7 @@
     "faqs": [
       {
         "q": "Are blue-tongued skinks legal to own?",
-        "a": "In 47 of 52 US jurisdictions, with no permit. Hawaii and the District of Columbia do not allow private ownership, New Jersey requires a possession permit, and Minnesota and Maine attach conditions rather than a flat clearance."
+        "a": "In 46 of 52 US jurisdictions, with no permit. Hawaii and the District of Columbia do not allow private ownership, New Jersey and West Virginia require a permit, and Minnesota and Maine attach conditions rather than a flat clearance."
       },
       {
         "q": "Does a wild-caught blue-tongued skink have the same legal status as a captive-bred one?",
@@ -7330,7 +7330,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 5,
-    "headingCount": 7,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -7756,7 +7756,7 @@
     "image": "/assets/guides/boa-constrictor-legal.jpg",
     "imageAlt": "Boa constrictor coiled, representing its legal status across US states",
     "emoji": "🐍",
-    "lastReviewed": "2026-09-05",
+    "lastReviewed": "2026-09-16",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -7791,7 +7791,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6,
-    "headingCount": 10,
+    "headingCount": 11,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -8342,7 +8342,7 @@
     "image": "/assets/guides/box-turtle-legal.jpg",
     "imageAlt": "Eastern box turtle on a forest floor",
     "emoji": "🐢",
-    "lastReviewed": "2026-07-23",
+    "lastReviewed": "2026-09-16",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -8365,7 +8365,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 9,
-    "headingCount": 10,
+    "headingCount": 11,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -9451,7 +9451,7 @@
     "slug": "burmese-python-legal-guide",
     "title": "Are Burmese Pythons Legal? The Federal Ban a Court Narrowed",
     "seoTitle": "Are Burmese Pythons Legal? Federal Rule vs States",
-    "excerpt": "The Burmese python has been federal injurious wildlife since 2012, and most people assume that settles it. A 2017 D.C. Circuit ruling took the interstate half of that ban away, which is why thirty jurisdictions still have no rule of their own.",
+    "excerpt": "The Burmese python has been federal injurious wildlife since 2012, and most people assume that settles it. A 2017 D.C. Circuit ruling took the interstate half of that ban away, which is why twenty-nine jurisdictions still have no rule of their own.",
     "date": "2026-10-02",
     "category": "Legal",
     "categories": [
@@ -9496,7 +9496,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6,
-    "headingCount": 9,
+    "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -14135,7 +14135,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 8,
-    "headingCount": 10,
+    "headingCount": 11,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
     "imageHeight": 896
@@ -15054,7 +15054,7 @@
     "slug": "crested-gecko-legal-guide",
     "title": "Is It Legal to Own a Crested Gecko? State-by-State Guide",
     "seoTitle": "Are Crested Geckos Legal? The Six Places They Aren't",
-    "excerpt": "Crested geckos clear 46 of 52 jurisdictions without a permit, which makes the six exceptions worth knowing precisely. The one most keepers never see coming is Massachusetts, where the permit is triggered by the species' conservation status rather than by anything it does.",
+    "excerpt": "Crested geckos clear 45 of 52 jurisdictions without a permit, which makes the seven exceptions worth knowing precisely. The one most keepers never see coming is Massachusetts, where the permit is triggered by the species' conservation status rather than by anything it does.",
     "date": "2026-09-12",
     "category": "Legal",
     "categories": [
@@ -15072,13 +15072,13 @@
     "image": "/assets/guides/crested-gecko-legal.jpg",
     "imageAlt": "Crested gecko gripping a branch, showing the eyelash crests it is named for",
     "emoji": "🦎",
-    "lastReviewed": "2026-09-12",
+    "lastReviewed": "2026-09-16",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "Do I need a permit to own a crested gecko?",
-        "a": "In 46 of 52 US jurisdictions, no. Massachusetts and New Jersey both require one, Minnesota and Maine attach conditions rather than a flat clearance, and Hawaii and the District of Columbia do not allow private ownership at all. Nowhere else that was checked asks for paperwork."
+        "a": "In 45 of 52 US jurisdictions, no. Massachusetts, New Jersey and West Virginia all require one, Minnesota and Maine attach conditions rather than a flat clearance, and Hawaii and the District of Columbia do not allow private ownership at all. Nowhere else that was checked asks for paperwork."
       },
       {
         "q": "Why does Massachusetts treat crested geckos differently from leopard geckos?",
@@ -15095,7 +15095,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6,
-    "headingCount": 7,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -18303,7 +18303,9 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 7,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/fire-skink-handling-guide.mdx",
@@ -20157,7 +20159,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 5,
-    "headingCount": 8,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
     "imageHeight": 896
@@ -22670,7 +22672,7 @@
     "faqs": [
       {
         "q": "Are green anoles legal to own?",
-        "a": "In 38 of the 52 jurisdictions we have read, yes, with no rule reaching them at all. Four ban them: Hawaii, Colorado, Georgia and the District of Columbia. Mississippi requires a hunting license. Eight more allow them on conditions such as bag limits or sourcing rules, and New York City is unresolved on a taxonomy question."
+        "a": "In 37 of the 52 jurisdictions we have read, yes, with no rule reaching them at all. Four ban them: Hawaii, Colorado, Georgia and the District of Columbia. Mississippi requires a hunting license and West Virginia an importation permit. Eight more allow them on conditions such as bag limits or sourcing rules, and New York City is unresolved on a taxonomy question."
       },
       {
         "q": "Why is a green anole restricted in the South but not the North?",
@@ -22691,7 +22693,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6,
-    "headingCount": 9,
+    "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -23117,7 +23119,7 @@
       },
       {
         "q": "Is the green iguana legal in most of the country?",
-        "a": "Yes. Despite five outright bans, it is still unrestricted in 44 of 52 jurisdictions. The restrictions cluster in places where the animal can survive outdoors year-round, plus two jurisdictions that bar most wildlife regardless of climate."
+        "a": "Yes. Despite five outright bans, it is still unrestricted in 43 of 52 jurisdictions. The restrictions cluster in places where the animal can survive outdoors year-round, plus two jurisdictions that bar most wildlife regardless of climate."
       }
     ],
     "relatedProducts": [],
@@ -23126,7 +23128,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 7,
-    "headingCount": 7,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -26130,7 +26132,7 @@
     "image": "/assets/guides/hognose-snake-legal.jpg",
     "imageAlt": "Hognose snake with its distinctive upturned snout",
     "emoji": "🐍",
-    "lastReviewed": "2026-07-22",
+    "lastReviewed": "2026-09-16",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -26153,7 +26155,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6,
-    "headingCount": 9,
+    "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
     "imageHeight": 896
@@ -27257,7 +27259,7 @@
     "slug": "jacksons-chameleon-legal-guide",
     "title": "Is It Legal to Own a Jackson's Chameleon? State Guide",
     "seoTitle": "Are Jackson's Chameleons Legal? Hawaii Is the Twist",
-    "excerpt": "Jackson's chameleons clear 47 of 52 jurisdictions, and the one that bars them is the one where they are most abundant. Hawaii's feral population descends from a single 1972 release in Kaneohe, and no private keeper there may hold one.",
+    "excerpt": "Jackson's chameleons clear 46 of 52 jurisdictions, and the one that bars them is the one where they are most abundant. Hawaii's feral population descends from a single 1972 release in Kaneohe, and no private keeper there may hold one.",
     "date": "2026-10-07",
     "category": "Legal",
     "categories": [
@@ -27281,7 +27283,7 @@
     "faqs": [
       {
         "q": "Where is Jackson's chameleon illegal?",
-        "a": "Hawaii and the District of Columbia bar private ownership. New Jersey requires a possession permit, and Minnesota and Maine attach conditions. The other 47 jurisdictions place no restriction on it."
+        "a": "Hawaii and the District of Columbia bar private ownership. New Jersey and West Virginia require a permit, and Minnesota and Maine attach conditions. The other 46 jurisdictions place no restriction on it."
       },
       {
         "q": "Why is it banned in Hawaii when it lives there?",
@@ -27302,7 +27304,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6,
-    "headingCount": 7,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -29233,7 +29235,7 @@
     "slug": "leopard-gecko-legal-guide",
     "title": "Is It Legal to Own a Leopard Gecko? State-by-State Guide",
     "seoTitle": "Are Leopard Geckos Legal? Banned in Only Two Places",
-    "excerpt": "The leopard gecko is one of the least restricted reptiles in the country, cleared without a permit in 47 of 52 jurisdictions. Hawaii is the interesting exception, because it names this species individually rather than reaching it through a family.",
+    "excerpt": "The leopard gecko is one of the least restricted reptiles in the country, cleared without a permit in 46 of 52 jurisdictions. Hawaii is the interesting exception, because it names this species individually rather than reaching it through a family.",
     "date": "2026-09-15",
     "category": "Legal",
     "categories": [
@@ -29251,13 +29253,13 @@
     "image": "/assets/guides/leopard-gecko-legal.jpg",
     "imageAlt": "Leopard gecko standing on sand-colored substrate, showing its spotted pattern",
     "emoji": "🦎",
-    "lastReviewed": "2026-09-15",
+    "lastReviewed": "2026-09-16",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "Are leopard geckos legal in every US state?",
-        "a": "Close to it. They clear 47 of 52 jurisdictions with no permit. Hawaii and the District of Columbia do not allow private ownership, New Jersey requires a possession permit, and Minnesota and Maine attach conditions rather than an outright clearance."
+        "a": "Close to it. They clear 46 of 52 jurisdictions with no permit. Hawaii and the District of Columbia do not allow private ownership, New Jersey and West Virginia require a permit, and Minnesota and Maine attach conditions rather than an outright clearance."
       },
       {
         "q": "Why is the leopard gecko banned in Hawaii?",
@@ -29274,7 +29276,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6,
-    "headingCount": 7,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -30900,7 +30902,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 8,
-    "headingCount": 9,
+    "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
     "imageHeight": 896
@@ -32731,7 +32733,7 @@
     "image": "/assets/guides/nile-monitor-legal.jpg",
     "imageAlt": "Nile monitor at the water's edge with its tongue extended",
     "emoji": "🦎",
-    "lastReviewed": "2026-09-14",
+    "lastReviewed": "2026-09-16",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -32758,7 +32760,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 7,
-    "headingCount": 8,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -35553,7 +35555,9 @@
     "truth": null,
     "sourceCount": 3,
     "headingCount": 8,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1200,
+    "imageHeight": 800
   },
   {
     "path": "/content/guides/quaker-parakeet-handling-guide.mdx",
@@ -37120,7 +37124,7 @@
     "image": "/assets/guides/red-eared-slider-legal.jpg",
     "imageAlt": "Red-eared slider turtle basking on a rock",
     "emoji": "🐢",
-    "lastReviewed": "2026-09-09",
+    "lastReviewed": "2026-09-16",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -37143,7 +37147,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 4,
-    "headingCount": 9,
+    "headingCount": 11,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -37613,7 +37617,7 @@
     "faqs": [
       {
         "q": "Is the red-footed tortoise banned anywhere in the US?",
-        "a": "No. It is the rare reptile on this map with no outright ban in any of the 52 jurisdictions. New Jersey, New Mexico and Delaware require a permit, and Massachusetts, Hawaii, Vermont, Minnesota and New York City attach conditions."
+        "a": "No. It is the rare reptile on this map with no outright ban in any of the 52 jurisdictions. New Jersey, New Mexico, Delaware and West Virginia require a permit, and Massachusetts, Hawaii, Vermont, Minnesota and New York City attach conditions."
       },
       {
         "q": "Why does New York City regulate tortoises by size?",
@@ -37634,7 +37638,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 8,
-    "headingCount": 8,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -38948,7 +38952,7 @@
     "image": "/assets/guides/russian-tortoise-legal.jpg",
     "imageAlt": "Russian tortoise walking across dry ground with its head raised",
     "emoji": "🐢",
-    "lastReviewed": "2026-08-12",
+    "lastReviewed": "2026-09-16",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [],
@@ -38958,7 +38962,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6,
-    "headingCount": 10,
+    "headingCount": 11,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -39366,7 +39370,7 @@
     "slug": "savannah-monitor-legal-guide",
     "title": "Are Savannah Monitors Legal? Louisiana Is the Surprise",
     "seoTitle": "Are Savannah Monitors Legal? Bans, Permits and Arkansas",
-    "excerpt": "Forty-one jurisdictions have nothing to say about savannah monitors. Louisiana bans this species by name while leaving most monitors alone, and Arkansas clears ten monitors without including it.",
+    "excerpt": "Forty jurisdictions have nothing to say about savannah monitors. Louisiana bans this species by name while leaving most monitors alone, and Arkansas clears ten monitors without including it.",
     "date": "2026-08-19",
     "category": "Legal",
     "categories": [
@@ -39384,7 +39388,7 @@
     "image": "/assets/guides/savannah-monitor-legal.jpg",
     "imageAlt": "Savannah monitor on sand in close profile, its blunt snout, heavy neck and yellow-speckled grey scales clearly visible",
     "emoji": "🦎",
-    "lastReviewed": "2026-09-15",
+    "lastReviewed": "2026-09-16",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [],
@@ -39394,7 +39398,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 5,
-    "headingCount": 7,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -40363,7 +40367,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6,
-    "headingCount": 8,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -41741,7 +41745,7 @@
     "image": "/assets/guides/sulcata-tortoise-legal.jpg",
     "imageAlt": "Sulcata tortoise grazing outdoors",
     "emoji": "🐢",
-    "lastReviewed": "2026-07-23",
+    "lastReviewed": "2026-09-16",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -41764,7 +41768,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 4,
-    "headingCount": 7,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -43374,7 +43378,7 @@
     "image": "/assets/guides/tiger-salamander-legal.jpg",
     "imageAlt": "Tiger salamander with yellow and black blotched pattern, representing its legal status",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-18",
+    "lastReviewed": "2026-09-16",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -43409,7 +43413,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 3,
-    "headingCount": 7,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -43877,7 +43881,7 @@
     "slug": "tokay-gecko-legal-guide",
     "title": "Is It Legal to Own a Tokay Gecko? State-by-State Guide",
     "seoTitle": "Are Tokay Geckos Legal? Only Two Places Say No",
-    "excerpt": "The tokay has the worst reputation of any commonly kept gecko and the cleanest legal record. It clears 49 of 52 jurisdictions, and in New Jersey it is the one gecko that does not need a permit, because the rule carves it out by name.",
+    "excerpt": "The tokay has the worst reputation of any commonly kept gecko and the cleanest legal record. It clears 48 of 52 jurisdictions, and in New Jersey it is the one gecko that does not need a permit, because the rule carves it out by name.",
     "date": "2026-10-06",
     "category": "Legal",
     "categories": [
@@ -43901,7 +43905,7 @@
     "faqs": [
       {
         "q": "Are tokay geckos legal in the US?",
-        "a": "In 49 of 52 jurisdictions, with no permit. Only Hawaii and the District of Columbia bar them, and Minnesota attaches conditions that apply to every lizard rather than to this species specifically."
+        "a": "In 48 of 52 jurisdictions, with no permit. Only Hawaii and the District of Columbia bar them, West Virginia asks for an importation permit, and Minnesota attaches conditions that apply to every lizard rather than to this species specifically."
       },
       {
         "q": "Is it true that New Jersey exempts the tokay gecko?",
@@ -43922,7 +43926,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 5,
-    "headingCount": 7,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -44195,33 +44199,55 @@
     "slug": "ultimate-birdwatching-guide-best-places-times-tips-2026",
     "title": "The Ultimate Birdwatching Guide: Best Places, Times, and Tips for Beginners (2026)",
     "seoTitle": "Ultimate Birdwatching Guide for Beginners (2026)",
-    "excerpt": "Ready to start birdwatching? This complete 2026 short guide covers the best locations, peak seasons, some gear, and tips.",
+    "excerpt": "Where to go birding, when to go, how to identify what lands in front of you, and how to build a yard that birds use instead of fly over.",
     "date": "2026-06-01",
-    "category": "Birds",
+    "category": "Wild Animals",
     "categories": [
+      "Wild Animals",
       "Birds"
     ],
     "tags": [
       "Birds",
       "Wild Animals",
-      "Product Picks"
+      "Product Picks",
+      "Birdwatching",
+      "Bird Identification",
+      "Backyard Birds",
+      "Migration"
     ],
-    "readTime": 9,
-    "difficulty": null,
+    "readTime": 15,
+    "difficulty": "Beginner",
     "image": "/assets/images/ultimate-birdwatching-guide-best-places-times-tips-2026-0.jpg",
     "imageAlt": "A birdwatcher using binoculars in a scenic outdoor wetland setting with a bald eagle soaring in the background",
-    "emoji": "🦜",
-    "lastReviewed": null,
+    "emoji": "🦅",
+    "lastReviewed": "2026-09-17",
     "author": "Michael Ryan",
     "canonicalUrl": null,
-    "faqs": [],
+    "faqs": [
+      {
+        "q": "What is the best time of day to go birdwatching?",
+        "a": "The first two hours after sunrise, when songbirds feed hardest and sing most. Late afternoon gives a smaller second peak. Raptors are the exception and move best from late morning to mid afternoon, once thermals have built."
+      },
+      {
+        "q": "How do I identify a bird I just saw?",
+        "a": "Work through size and shape, overall color pattern, behavior, and habitat before you reach for fine details like wing bars. Those four together usually narrow a bird to a handful of options, and they still work when the bird gave you three seconds and poor light."
+      },
+      {
+        "q": "How do I attract more birds to my yard?",
+        "a": "Water pulls in more species than any feeder, because every bird drinks and bathes while only some eat seed. After that, black oil sunflower in a tube feeder, native berry and seed plants, and dense cover within a short flight of the feeding area."
+      },
+      {
+        "q": "How often should I clean my bird feeder?",
+        "a": "Regularly, before anything looks wrong, using a soak in one part household bleach to nine parts water. If you see birds with swollen or crusted eyes, or dead birds under the feeder, take everything down for at least two weeks and disinfect it before putting it back up."
+      }
+    ],
     "relatedProducts": [],
     "factFile": false,
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 8,
+    "sourceCount": 15,
+    "headingCount": 17,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1408,
     "imageHeight": 768
@@ -45248,7 +45274,7 @@
     "image": "/assets/guides/veiled-chameleon-legal.jpg",
     "imageAlt": "Veiled chameleon gripping a branch with its casque and striped flank visible",
     "emoji": "🦎",
-    "lastReviewed": "2026-08-13",
+    "lastReviewed": "2026-09-16",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [],
@@ -45258,7 +45284,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 5,
-    "headingCount": 8,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784

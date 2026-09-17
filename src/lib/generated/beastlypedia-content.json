@@ -926,7 +926,7 @@
       "thorny-devil",
       "panther-chameleon",
       "gaboon-viper",
-      "shoebill"
+      "capybara"
     ]
   },
   "glass-frog": {
@@ -1050,10 +1050,10 @@
     ],
     "related": [],
     "siblings": [
+      "victoria-crowned-pigeon",
       "emperor-penguin",
       "crow",
-      "shima-enaga",
-      "victoria-crowned-pigeon"
+      "shima-enaga"
     ]
   },
   "victoria-crowned-pigeon": {
@@ -1083,10 +1083,10 @@
     ],
     "related": [],
     "siblings": [
+      "emperor-penguin",
       "crow",
       "shima-enaga",
-      "shoebill",
-      "emperor-penguin"
+      "bald-eagle"
     ]
   },
   "emperor-penguin": {
@@ -1124,10 +1124,10 @@
       }
     ],
     "siblings": [
+      "crow",
       "shima-enaga",
-      "shoebill",
-      "victoria-crowned-pigeon",
-      "crow"
+      "bald-eagle",
+      "shoebill"
     ]
   },
   "crow": {
@@ -1165,10 +1165,10 @@
       }
     ],
     "siblings": [
+      "shima-enaga",
+      "bald-eagle",
       "shoebill",
-      "victoria-crowned-pigeon",
-      "emperor-penguin",
-      "shima-enaga"
+      "victoria-crowned-pigeon"
     ]
   },
   "shima-enaga": {
@@ -1213,10 +1213,30 @@
       }
     ],
     "siblings": [
+      "bald-eagle",
+      "shoebill",
+      "victoria-crowned-pigeon",
+      "emperor-penguin"
+    ]
+  },
+  "bald-eagle": {
+    "facts": [],
+    "related": [
+      {
+        "id": "ultimate-birdwatching-guide-best-places-times-tips-2026",
+        "slug": "ultimate-birdwatching-guide-best-places-times-tips-2026",
+        "title": "Ultimate Birdwatching Guide for Beginners (2026)",
+        "excerpt": "Where to go birding, when to go, how to identify what lands in front of you, and how to build a yard that birds use",
+        "category": "Wild Animals",
+        "publishedAt": "2026-06-01",
+        "image": "/assets/images/ultimate-birdwatching-guide-best-places-times-tips-2026-0.jpg"
+      }
+    ],
+    "siblings": [
+      "shoebill",
       "victoria-crowned-pigeon",
       "emperor-penguin",
-      "crow",
-      "shoebill"
+      "crow"
     ]
   },
   "manta-ray": {
@@ -1232,10 +1252,10 @@
     ],
     "related": [],
     "siblings": [
-      "leafy-sea-dragon",
       "dolphin",
       "clownfish",
-      "immortal-jellyfish"
+      "immortal-jellyfish",
+      "seahorse"
     ]
   },
   "leafy-sea-dragon": {
@@ -1251,10 +1271,10 @@
     ],
     "related": [],
     "siblings": [
-      "dolphin",
       "clownfish",
       "immortal-jellyfish",
-      "seahorse"
+      "seahorse",
+      "shark"
     ]
   },
   "dolphin": {
@@ -1341,10 +1361,10 @@
       }
     ],
     "siblings": [
-      "clownfish",
       "immortal-jellyfish",
       "seahorse",
-      "shark"
+      "shark",
+      "octopus"
     ]
   },
   "clownfish": {
@@ -1417,10 +1437,10 @@
       }
     ],
     "siblings": [
-      "immortal-jellyfish",
       "seahorse",
       "shark",
-      "octopus"
+      "octopus",
+      "mantis-shrimp"
     ]
   },
   "immortal-jellyfish": {
@@ -1486,10 +1506,10 @@
       }
     ],
     "siblings": [
-      "seahorse",
       "shark",
       "octopus",
-      "mantis-shrimp"
+      "mantis-shrimp",
+      "cuttlefish"
     ]
   },
   "seahorse": {
@@ -1548,10 +1568,10 @@
       }
     ],
     "siblings": [
-      "shark",
       "octopus",
       "mantis-shrimp",
-      "cuttlefish"
+      "cuttlefish",
+      "humpback-whale"
     ]
   },
   "shark": {
@@ -1596,10 +1616,10 @@
       }
     ],
     "siblings": [
-      "octopus",
       "mantis-shrimp",
       "cuttlefish",
-      "humpback-whale"
+      "humpback-whale",
+      "manta-ray"
     ]
   },
   "octopus": {
@@ -1660,10 +1680,10 @@
       }
     ],
     "siblings": [
-      "mantis-shrimp",
       "cuttlefish",
       "humpback-whale",
-      "manta-ray"
+      "manta-ray",
+      "leafy-sea-dragon"
     ]
   },
   "mantis-shrimp": {
@@ -1701,10 +1721,10 @@
       }
     ],
     "siblings": [
-      "cuttlefish",
       "humpback-whale",
       "manta-ray",
-      "leafy-sea-dragon"
+      "leafy-sea-dragon",
+      "dolphin"
     ]
   },
   "cuttlefish": {
@@ -1737,10 +1757,10 @@
       }
     ],
     "siblings": [
-      "humpback-whale",
       "manta-ray",
       "leafy-sea-dragon",
-      "dolphin"
+      "dolphin",
+      "clownfish"
     ]
   },
   "humpback-whale": {
@@ -1766,10 +1786,10 @@
       }
     ],
     "siblings": [
-      "manta-ray",
       "leafy-sea-dragon",
       "dolphin",
-      "clownfish"
+      "clownfish",
+      "immortal-jellyfish"
     ]
   }
 }

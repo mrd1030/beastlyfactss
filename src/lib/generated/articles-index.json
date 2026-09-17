@@ -892,7 +892,7 @@
     {
       "slug": "bearded-dragon-legal-guide",
       "title": "Are Bearded Dragons Legal? Two Places Say No",
-      "excerpt": "The bearded dragon is the most commonly kept pet lizard in the country and clears 47 of 52 jurisdictions without a",
+      "excerpt": "The bearded dragon is the most commonly kept pet lizard in the country and clears 46 of 52 jurisdictions without a",
       "date": "2026-10-05",
       "image": "/assets/guides/bearded-dragon-legal.jpg",
       "category": "Legal",
@@ -1289,7 +1289,7 @@
     {
       "slug": "blue-tongue-skink-legal-guide",
       "title": "Are Blue-Tongued Skinks Legal? Two Places Say No",
-      "excerpt": "Blue-tongued skinks are cleared in 47 of 52 jurisdictions, but every rule that does reach them reaches them as skinks",
+      "excerpt": "Blue-tongued skinks are cleared in 46 of 52 jurisdictions, but every rule that does reach them reaches them as skinks",
       "date": "2026-10-04",
       "image": "/assets/guides/blue-tongue-skink-legal.jpg",
       "category": "Legal",
@@ -2653,7 +2653,7 @@
     {
       "slug": "crested-gecko-legal-guide",
       "title": "Are Crested Geckos Legal? The Six Places They Aren't",
-      "excerpt": "Crested geckos clear 46 of 52 jurisdictions without a permit, which makes the six exceptions worth knowing precisely.",
+      "excerpt": "Crested geckos clear 45 of 52 jurisdictions without a permit, which makes the seven exceptions worth knowing precisely.",
       "date": "2026-09-12",
       "image": "/assets/guides/crested-gecko-legal.jpg",
       "category": "Legal",
@@ -4875,7 +4875,7 @@
     {
       "slug": "jacksons-chameleon-legal-guide",
       "title": "Are Jackson's Chameleons Legal? Hawaii Is the Twist",
-      "excerpt": "Jackson's chameleons clear 47 of 52 jurisdictions, and the one that bars them is the one where they are most abundant.",
+      "excerpt": "Jackson's chameleons clear 46 of 52 jurisdictions, and the one that bars them is the one where they are most abundant.",
       "date": "2026-10-07",
       "image": "/assets/guides/jacksons-chameleon-legal.jpg",
       "category": "Legal",
@@ -5217,7 +5217,7 @@
     {
       "slug": "leopard-gecko-legal-guide",
       "title": "Are Leopard Geckos Legal? Banned in Only Two Places",
-      "excerpt": "The leopard gecko is one of the least restricted reptiles in the country, cleared without a permit in 47 of 52",
+      "excerpt": "The leopard gecko is one of the least restricted reptiles in the country, cleared without a permit in 46 of 52",
       "date": "2026-09-15",
       "image": "/assets/guides/leopard-gecko-legal.jpg",
       "category": "Legal",
@@ -7017,7 +7017,7 @@
     {
       "slug": "savannah-monitor-legal-guide",
       "title": "Are Savannah Monitors Legal? Bans, Permits and Arkansas",
-      "excerpt": "Forty-one jurisdictions have nothing to say about savannah monitors. Louisiana bans this species by name while leaving",
+      "excerpt": "Forty jurisdictions have nothing to say about savannah monitors. Louisiana bans this species by name while leaving most",
       "date": "2026-08-19",
       "image": "/assets/guides/savannah-monitor-legal.jpg",
       "category": "Legal",
@@ -7851,7 +7851,7 @@
     {
       "slug": "tokay-gecko-legal-guide",
       "title": "Are Tokay Geckos Legal? Only Two Places Say No",
-      "excerpt": "The tokay has the worst reputation of any commonly kept gecko and the cleanest legal record. It clears 49 of 52",
+      "excerpt": "The tokay has the worst reputation of any commonly kept gecko and the cleanest legal record. It clears 48 of 52",
       "date": "2026-10-06",
       "image": "/assets/guides/tokay-gecko-legal.jpg",
       "category": "Legal",
@@ -7909,11 +7909,12 @@
     {
       "slug": "ultimate-birdwatching-guide-best-places-times-tips-2026",
       "title": "Ultimate Birdwatching Guide for Beginners (2026)",
-      "excerpt": "Ready to start birdwatching? This complete 2026 short guide covers the best locations, peak seasons, some gear, and",
+      "excerpt": "Where to go birding, when to go, how to identify what lands in front of you, and how to build a yard that birds use",
       "date": "2026-06-01",
       "image": "/assets/images/ultimate-birdwatching-guide-best-places-times-tips-2026-0.jpg",
-      "category": "Birds",
+      "category": "Wild Animals",
       "categories": [
+        "Wild Animals",
         "Birds"
       ]
     },
