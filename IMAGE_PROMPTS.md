@@ -2214,3 +2214,61 @@ This one is worth remembering as a rule: on a handling guide, check what the
 guide actually recommends before calling a hands-off frame a mismatch. Chinchilla
 on wire mesh was the same class of error in the opposite direction.
 
+
+---
+
+# Beastlypedia, `public/assets/beastlypedia/`
+
+Every Beastfile takes two files, `<slug>-hero.jpg` and `<slug>-secondary.jpg`.
+The original brief is archived at `archive/docs-completed/BEASTLYPEDIA_IMAGES.md`
+and its sizes still hold, but its rendering notes do not: `BeastfileDetail.jsx`
+now crops the hero to 3:2 on mobile and 16:9 on desktop, and crops the
+secondary to 16:10 on mobile and 3:4 on desktop. A portrait secondary therefore
+loses a wide band to the mobile crop, so the subject needs margin on all four
+sides rather than just top and bottom. Both prompts below carry that as an
+explicit line and any new Beastfile prompt should too.
+
+### bald-eagle-hero.jpg, 1168x784
+Photorealistic wildlife photograph of an adult bald eagle perched on a bare
+branch above open grey water on a winter morning, body in profile, head turned
+slightly toward the camera, whole bird in frame. Clean white head and clean
+white tail against a dark chocolate-brown body and wings, with no mottling or
+pale blotching anywhere on the back, wings or belly. Very large deep hooked bill
+in bright yellow, yellow cere, pale yellow iris, heavy bony ridge above the eye.
+Bare yellow legs and feet with black talons. Overcast winter light, muted
+palette of grey water and bare wood, out-of-focus far bank, 400mm, f/5.6, 3:2.
+Not a golden eagle: no golden hackles on the nape, and the legs are bare and
+yellow rather than feathered down to the toes. Not an African fish eagle: the
+breast is dark brown, not white. Not an immature bald eagle: any brown through
+the head or white streaking through the body is the wrong bird for this frame.
+No flag, no sunburst, no heraldry, no patriotic symbolism of any kind. Single
+bird, no text, no watermark. Keep the eagle centred vertically with headroom
+above the head and below the feet, since desktop crops to 16:9.
+
+Check: bare yellow tarsi, and no white anywhere on the body. Those two decide
+whether the file is a bald eagle or a generic eagle, and feathered legs mean the
+generator produced a golden.
+
+### bald-eagle-secondary.jpg, 1000x1500
+Photorealistic wildlife photograph looking up at an enormous bald eagle nest
+built in the crown fork of a tall dead tree, one adult bald eagle standing on
+the rim. The nest is a deep, untidy mound of interlocked sticks and branches far
+larger than the bird, several feet across and deep enough to hide its contents,
+packed with finer material at the centre. Clean white head and tail on a dark
+brown body, large yellow bill. Bare winter branches, pale overcast sky, soft
+natural light, 200mm, f/5.6, 2:3 portrait. The nest is the subject and it has to
+read as massive: the bird should look small standing on it. Not a small tidy cup
+nest, not a songbird nest scaled up. Single bird, no text, no watermark, no flag
+or heraldry. Compose the tree vertically through the centre with clear margin on
+all four sides, since desktop crops to 3:4 and mobile to 16:10 landscape.
+
+Check: the bird has to look small against the nest. A tidy or bird-sized nest
+contradicts all three of the Beastfile's fun facts, which are nest records.
+Generators are weak at large stick structures; if it will not come, the fallback
+is a vertical head and shoulders study of an adult against a plain out-of-focus
+winter background, showing the deep yellow bill, the pale yellow iris and the
+heavy bony brow ridge. That centres safely in both crops.
+
+Install: set `heroImage` and `secondaryImage` on the `bald-eagle` entry in
+`src/lib/data/beastlypedia/birds.js`; both are `null` today and the page renders
+its "Hero image pending" placeholder until they are set.

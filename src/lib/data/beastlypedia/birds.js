@@ -193,7 +193,7 @@ export const birdBeastfiles = [
     heroImage: null,
     heroAlt: 'An adult bald eagle perched over open water, white head and tail against dark brown body',
     secondaryImage: null,
-    secondaryAlt: 'A bald eagle in flight with wings spread and talons lowered toward the water',
+    secondaryAlt: 'An adult bald eagle standing on the rim of an enormous stick nest in a dead tree, dwarfed by the nest',
     relatedFiles: ['ultimate-birdwatching-guide-best-places-times-tips-2026'],
   },
 ];
