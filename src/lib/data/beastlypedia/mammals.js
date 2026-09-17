@@ -371,7 +371,7 @@ export const mammalBeastfiles = [
       'Forest, mangrove and grassland across scattered parts of Asia, from India and Nepal through southeast Asia to the Russian Far East, in a fraction of the historical range.',
     notableTraits: [
       'The largest cat species alive',
-      'Stripes are in the skin as well as the fur, and unique to each animal',
+      'Stripes are unique to each animal, and used to identify individuals in the wild',
       'Hunts alone, usually at night, by ambush',
       'Holds very large individual territories',
       'Unusually willing to swim, unlike most cats',

@@ -370,7 +370,7 @@
         "animal": "Elephant",
         "myth": "Elephants are fairly quiet animals between trumpets.",
         "truth": "They are calling constantly, below human hearing, and part of the signal travels through the ground into the feet of the herd.",
-        "sourceCount": 0
+        "sourceCount": 4
       }
     ],
     "siblings": [
@@ -418,7 +418,7 @@
         "animal": "Sloth",
         "myth": "Sloths are too lazy to leave their tree.",
         "truth": "One climbs all the way down once a week to defecate, and a large share of all sloth deaths happen during that trip.",
-        "sourceCount": 0
+        "sourceCount": 3
       }
     ],
     "siblings": [
@@ -500,7 +500,7 @@
         "animal": "Lion",
         "myth": "Lions live in prides so they can hunt together.",
         "truth": "Cooperative hunting is not what holds a pride together. Related females holding ground worth having is.",
-        "sourceCount": 0
+        "sourceCount": 4
       }
     ],
     "siblings": [
@@ -541,7 +541,7 @@
         "animal": "Tiger",
         "myth": "Tiger numbers are rising, so tigers are recovering.",
         "truth": "The entire wild population is a few thousand animals across thirteen countries. More may live in private American hands than in the wild.",
-        "sourceCount": 0
+        "sourceCount": 4
       }
     ],
     "siblings": [
@@ -592,7 +592,7 @@
         "animal": "Rhino",
         "myth": "Rhino horn is ivory, like an elephant tusk.",
         "truth": "It is compacted keratin, the same protein as fingernails, and the medicine trade built on it is selling people their own hair.",
-        "sourceCount": 0
+        "sourceCount": 3
       }
     ],
     "siblings": [
@@ -823,7 +823,7 @@
         "animal": "Chameleon",
         "myth": "Chameleons change color to blend into their surroundings.",
         "truth": "Put one on a chessboard and nothing happens. The color signals mood and temperature, not the background.",
-        "sourceCount": 1
+        "sourceCount": 3
       }
     ],
     "siblings": [
@@ -863,7 +863,7 @@
         "id": "gaboon-viper-longest-fangs-any-snake",
         "slug": "gaboon-viper-longest-fangs-any-snake",
         "title": "Gaboon Viper: Longest Fangs of Any Snake, Explained",
-        "excerpt": "The Gaboon viper carries the longest fangs and the biggest venom yield of any snake alive, but it's also one of the",
+        "excerpt": "The Gaboon viper carries the longest fangs of any snake alive and a prodigious venom yield to go with them, but it's",
         "category": "Wild Animals",
         "publishedAt": "2026-08-13",
         "image": "/assets/images/gaboon-viper-facts.jpg",
@@ -871,7 +871,7 @@
         "animal": "Gaboon Viper",
         "myth": "The Gaboon viper is an aggressive, fast-striking snake that will attack without warning.",
         "truth": "It's actually one of the most docile vipers in the world, rarely biting or hissing even when handled. Nearly every recorded bite happens because someone accidentally stepped on one hidden in leaf litter, not because it went looking for a fight.",
-        "sourceCount": 2
+        "sourceCount": 5
       }
     ],
     "siblings": [
@@ -953,7 +953,7 @@
         "animal": "Glass Frog",
         "myth": "A glass frog is see-through because there is nothing much inside it.",
         "truth": "It packs 89 percent of its red blood cells into its liver to sleep. Blood that concentrated should clot, and somehow does not.",
-        "sourceCount": 2
+        "sourceCount": 4
       }
     ],
     "siblings": [
@@ -1120,7 +1120,7 @@
         "animal": "Penguin",
         "myth": "Penguins mate for life.",
         "truth": "Divorce rates run from near zero to over 80 percent depending on the species, and what predicts loyalty is the nest.",
-        "sourceCount": 0
+        "sourceCount": 4
       }
     ],
     "siblings": [
@@ -1209,7 +1209,7 @@
         "animal": "Shima Enaga",
         "myth": "The shima enaga's round, snowball shape is just how the bird always looks.",
         "truth": "That roundness is a deliberate winter behavior. It fluffs its feathers to trap air for insulation against Hokkaido's cold, and looks noticeably slimmer the rest of the year.",
-        "sourceCount": 2
+        "sourceCount": 4
       }
     ],
     "siblings": [
