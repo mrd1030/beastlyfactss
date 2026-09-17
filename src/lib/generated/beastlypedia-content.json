@@ -1220,7 +1220,37 @@
     ]
   },
   "bald-eagle": {
-    "facts": [],
+    "animal": "Bald Eagle",
+    "facts": [
+      {
+        "id": 325,
+        "title": "The Biggest Nest in the Tree",
+        "fact": "A bald eagle pair comes back to the same nest year after year and adds to it every season, so a structure that starts around 5 to 6 feet across just keeps growing for as long as the tree holds it up. The record, in St. Petersburg, Florida, reached 10 feet across and 20 feet deep. Another in Vermilion, Ohio was used for 34 years and weighed over 2 tons by the time the tree carrying it came down. Nothing else in North America builds a bigger nest in a tree.",
+        "category": "Birds",
+        "image": null
+      },
+      {
+        "id": 326,
+        "title": "The White Head Is an Age, Not a Species",
+        "fact": "Immature bald eagles are mottled brown and white with a dark head and a dark bill, and they do not get the clean white head and tail until they are five or six years old. It makes them one of the most misidentified birds on the continent. A big dark raptor with irregular white blotching through the body is almost always a young bald eagle rather than a golden eagle or some unplaceable hawk.",
+        "category": "Birds",
+        "image": null
+      },
+      {
+        "id": 327,
+        "title": "It Dives in a Curve on Purpose",
+        "fact": "Each eye carries two foveae instead of the single one humans have. The deep fovea, which gives a raptor its sharpest vision, points about 45 degrees out to the side, and the shallow one points about 15 degrees out. So the sharpest eye a diving eagle owns is aimed sideways, and turning its head to use it would cost speed in the air. The fix is visible once you know to watch for it: a stooping bird holds its head straight and flies a curving path, keeping the prey in that sideways fovea the whole way down.",
+        "category": "Birds",
+        "image": null
+      },
+      {
+        "id": 328,
+        "title": "Not Bald, Just Old English",
+        "fact": "The bald eagle has a full head of feathers and never had anything else. The name comes from balde, an old word for white, so the bird is white-headed rather than hairless. It is the same root that survives in piebald, used of a horse or a bird marked in white patches.",
+        "category": "Birds",
+        "image": null
+      }
+    ],
     "related": [
       {
         "id": "ultimate-birdwatching-guide-best-places-times-tips-2026",

@@ -2272,3 +2272,61 @@ heavy bony brow ridge. That centres safely in both crops.
 Install: set `heroImage` and `secondaryImage` on the `bald-eagle` entry in
 `src/lib/data/beastlypedia/birds.js`; both are `null` today and the page renders
 its "Hero image pending" placeholder until they are set.
+
+### Bald eagle fact photos, `public/assets/facts/`, 1600x1067
+
+Four facts, ids 325 to 328, added 2026-09-17. One photo each, never shared
+between them and never the Beastfile hero or secondary: those two are a
+full-body bird perched over water and a close nest with a single adult on the
+rim, so every frame below is deliberately a different subject from both.
+Register each in FACT_IMAGES by id in BOTH `src/lib/data/factImages.js` and
+`public/_worker.js`. The build stamps its own watermark on these, so the frame
+itself carries no text.
+
+#### bald-eagle.jpg, id 325, the nest record
+Photorealistic wildlife photograph of an adult bald eagle standing in a huge
+stick nest with two large downy grey eaglets beside it, the nest bowl filling
+most of the frame, seen level with the rim. Deep untidy walls of interlocked
+branches, finer material lining the centre, the whole structure clearly far
+wider than the adult. Clean white head and tail on a dark brown body, large
+yellow bill, bare yellow legs. Soft overcast daylight, muted palette, 300mm,
+f/5.6, 3:2. Single adult and two chicks, no text, no watermark, no flag or
+heraldry.
+Check: the chicks are what make this frame different from the Beastfile
+secondary. If they are absent, it is the same picture twice.
+
+#### bald-eagle-2.jpg, id 326, the white head is an age
+Photorealistic wildlife photograph of an IMMATURE bald eagle perched on a bare
+branch, whole bird in frame, body in profile. Dark brown overall with heavy
+irregular white and buff mottling scattered through the underparts, wing linings
+and back, a DARK brown head with no white hood, and a dark grey-black bill with
+only a trace of yellow at the base. Pale brown iris, bare yellow legs, black
+talons. Overcast winter light, out-of-focus bare woodland, 400mm, f/5.6, 3:2.
+This is a juvenile or sub-adult and must not have a clean white head or a white
+tail. Not a golden eagle: legs bare and yellow, not feathered to the toes. No
+text, no watermark.
+Check: dark head, dark bill, blotchy body. Any clean white head makes this the
+wrong bird and breaks the fact it illustrates.
+
+#### bald-eagle-3.jpg, id 327, the curved dive
+Photorealistic wildlife photograph of an adult bald eagle in a fast banking
+descent, wings half folded and swept back, body angled into the turn, HEAD HELD
+LEVEL AND FACING FORWARD rather than turned to the side, talons still tucked.
+Clean white head and tail, dark brown body, large yellow bill. Open grey water
+and blurred far shoreline below, motion in the background, bird sharp, 400mm,
+f/5.6, 1/2000s, 3:2. Single bird, no prey in the talons yet, no text, no
+watermark, no flag or heraldry.
+Check: head straight, body banked. A head turned sideways contradicts the fact,
+which is that the bird curves its flight path precisely so it does not have to
+turn its head.
+
+#### bald-eagle-4.jpg, id 328, the name
+Photorealistic close head and shoulders portrait of an adult bald eagle filling
+the frame, sharp on the eye, showing the clean white head feathering running
+back to a crisp line where it meets the dark brown neck and body. Heavy hooked
+bright yellow bill, yellow cere, pale yellow iris, pronounced bony brow ridge.
+Plain out-of-focus pale background, soft overcast light, 400mm, f/5.6, 3:2.
+The white is feathering and must read as dense individual feathers, not bare
+skin. No text, no watermark, no flag or heraldry.
+Check: the feather-by-feather texture of the white head, and the sharp boundary
+where white meets brown. That boundary is the fact.
