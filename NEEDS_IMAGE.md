@@ -2,6 +2,13 @@
 
 Notes on animal facts that were drafted but did NOT make it into `src/lib/data/facts.js` because a verified photo couldn't be secured. These are FYI only, not added to the live data.
 
+## Status
+
+Guide heroes: none outstanding. Fact photos: none outstanding as of 2026-09-17,
+when ids 297 to 314 and 325 to 328 landed. That batch is recorded in
+archive/docs-completed/FACT_PHOTOS_COMPLETED_2026-09-17.md; this file stays in
+root and keeps cycling as new drafts need art.
+
 ## Guide heroes still needed
 
 None outstanding. The eight wrong-species replacements landed 2026-09-12

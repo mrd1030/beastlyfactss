@@ -46,6 +46,12 @@ header photo exists. The `.draft` suffix keeps `check-images.mjs` and
 
 ## Shipped from this file
 
+**2026-09-17, ids 325 to 328.** Four bald eagle facts, shipped with the new
+Beastfile and its hero and secondary photos, which moves that Beastfile off its
+authored `funFacts` fallback. Serval is now the only Beastfile still on the
+fallback. Text lives only in `facts.js`.
+
+
 **2026-08-12, ids 282 to 286.** Two more Shima Enaga facts (extending the Fun
 Facts gallery beyond id 281) and all three Gaboon viper facts, which moves
 that Beastfile off its authored `funFacts` fallback. Also shipped the Gaboon

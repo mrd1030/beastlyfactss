@@ -2277,7 +2277,7 @@ its "Hero image pending" placeholder until they are set.
 
 # Fact photos, ids 297 to 314 and 325 to 328, `public/assets/facts/`
 
-**Status 2026-09-18: all 22 delivered, checked and installed.** Ids 297 to 314
+**Status 2026-09-17: all 22 delivered, checked and installed.** Ids 297 to 314
 were the block created alongside their species' care guides and left without
 photos while the ten after them were finished; 325 to 328 are the bald eagle
 set. Every fact on the site now resolves its own photo, none shared.

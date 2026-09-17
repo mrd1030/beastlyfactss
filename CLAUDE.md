@@ -37,3 +37,17 @@ Solo developer passion project. Prefer fast, decisive work over exploration.
 - Never fetch photos or source new affiliate products yourself. Grep affiliateProducts.js for exact existing links, never from memory.
 - Infographic/content installs must stop at the image and internal-link checks. Do not run `npm run build` unless explicitly asked.
 - Content pipeline order: matrix → legal guide → encyclopedia/Beastfile → care guides.
+
+## Docs and where they live
+- Docs live in root. CLAUDE.md never moves from root under any circumstances.
+- Finishing a batch of work does not move the doc that tracks it. NEEDS_IMAGE.md
+  and the other cycling docs stay in root; write the closed batch as a NEW file
+  in archive/docs-completed/ named `<NAME>_COMPLETED_<YYYY-MM-DD>.md`, dated my
+  time, and leave the original where it is.
+- Only a one-off plan with nothing left in it leaves root, renamed the same way.
+  If in doubt it stays in root: a live doc sitting in the archive is invisible,
+  which is how NEEDS_IMAGE.md went quiet while 18 facts shipped without photos.
+- Fact photos are not cropped. Guide and Beastfile heroes are 3:2 at 1168x784;
+  a fact photo keeps whatever aspect it arrives at, because the lightbox shows
+  the whole frame with object-contain. Re-encode through mozjpeg at quality 80,
+  never enlarge.
