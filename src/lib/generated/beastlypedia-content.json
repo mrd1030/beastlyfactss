@@ -823,7 +823,7 @@
         "animal": "Chameleon",
         "myth": "Chameleons change color to blend into their surroundings.",
         "truth": "Put one on a chessboard and nothing happens. The color signals mood and temperature, not the background.",
-        "sourceCount": 1
+        "sourceCount": 3
       }
     ],
     "siblings": [
@@ -863,7 +863,7 @@
         "id": "gaboon-viper-longest-fangs-any-snake",
         "slug": "gaboon-viper-longest-fangs-any-snake",
         "title": "Gaboon Viper: Longest Fangs of Any Snake, Explained",
-        "excerpt": "The Gaboon viper carries the longest fangs and the biggest venom yield of any snake alive, but it's also one of the",
+        "excerpt": "The Gaboon viper carries the longest fangs of any snake alive and a prodigious venom yield to go with them, but it's",
         "category": "Wild Animals",
         "publishedAt": "2026-08-13",
         "image": "/assets/images/gaboon-viper-facts.jpg",
@@ -871,7 +871,7 @@
         "animal": "Gaboon Viper",
         "myth": "The Gaboon viper is an aggressive, fast-striking snake that will attack without warning.",
         "truth": "It's actually one of the most docile vipers in the world, rarely biting or hissing even when handled. Nearly every recorded bite happens because someone accidentally stepped on one hidden in leaf litter, not because it went looking for a fight.",
-        "sourceCount": 2
+        "sourceCount": 5
       }
     ],
     "siblings": [
@@ -953,7 +953,7 @@
         "animal": "Glass Frog",
         "myth": "A glass frog is see-through because there is nothing much inside it.",
         "truth": "It packs 89 percent of its red blood cells into its liver to sleep. Blood that concentrated should clot, and somehow does not.",
-        "sourceCount": 2
+        "sourceCount": 4
       }
     ],
     "siblings": [
@@ -1209,7 +1209,7 @@
         "animal": "Shima Enaga",
         "myth": "The shima enaga's round, snowball shape is just how the bird always looks.",
         "truth": "That roundness is a deliberate winter behavior. It fluffs its feathers to trap air for insulation against Hokkaido's cold, and looks noticeably slimmer the rest of the year.",
-        "sourceCount": 2
+        "sourceCount": 4
       }
     ],
     "siblings": [
