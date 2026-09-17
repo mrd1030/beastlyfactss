@@ -35,9 +35,8 @@ success every day, and the feed sat still for five days with nothing anywhere
 raising a hand. Read `queue_future` in the poster's response to see whether the
 queue is actually alive: it counts entries dated after today.
 
-There are 200 facts with their own photo (178 until the 2026-09-17 batch closed
-the 297 to 314 gap and added the bald eagle set), so at one a day the floor alone
-carries over six months before it runs out, and the response reports
+There are 178 facts with their own photo, so at one a day the floor alone
+carries roughly six months before it runs out, and the response reports
 `facts_remaining` so the number is visible.
 
 Caption rules are docs/RULES.md plus the social voice: hook first, no URLs in

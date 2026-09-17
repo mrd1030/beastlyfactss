@@ -40,10 +40,13 @@ Solo developer passion project. Prefer fast, decisive work over exploration.
 
 ## Docs and where they live
 - Docs live in root. CLAUDE.md never moves from root under any circumstances.
-- Finishing a batch of work does not move the doc that tracks it. NEEDS_IMAGE.md
-  and the other cycling docs stay in root; write the closed batch as a NEW file
-  in archive/docs-completed/ named `<NAME>_COMPLETED_<YYYY-MM-DD>.md`, dated my
-  time, and leave the original where it is.
+- Finishing a batch of work does not move the doc that tracks it. The cycling
+  docs (NEEDS_IMAGE.md, IMAGE_PROMPTS.md, BEASTLYPEDIA_FACT_GAPS.md) stay in
+  root and hold open work only. Each has ONE companion in
+  archive/docs-completed/ named `<NAME>_COMPLETED_<YYYY-MM-DD>.md`, and that
+  companion is the only place its finished work lives: append the batch there,
+  newest first, and delete it from the live file. A live doc never grows a
+  history section.
 - Only a one-off plan with nothing left in it leaves root, renamed the same way.
   If in doubt it stays in root: a live doc sitting in the archive is invisible,
   which is how NEEDS_IMAGE.md went quiet while 18 facts shipped without photos.

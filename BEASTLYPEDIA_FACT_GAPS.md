@@ -44,20 +44,11 @@ be drafted and saved as `<slug>.mdx.draft` under `content/guides/` before its
 header photo exists. The `.draft` suffix keeps `check-images.mjs` and
 `sync-articles.js` from seeing it. Rename to `.mdx` once the photo lands.
 
-## Shipped from this file
+## Open gaps
 
-**2026-09-17, ids 325 to 328.** Four bald eagle facts, shipped with the new
-Beastfile and its hero and secondary photos, which moves that Beastfile off its
-authored `funFacts` fallback. Serval is now the only Beastfile still on the
-fallback. Text lives only in `facts.js`.
+**None.** As of 2026-09-17 every fact in `facts.js` resolves its own photo, and
+the serval is the only Beastfile still rendering its authored `funFacts` instead
+of database facts. It needs three facts written and three photos, one per fact.
 
-
-**2026-08-12, ids 282 to 286.** Two more Shima Enaga facts (extending the Fun
-Facts gallery beyond id 281) and all three Gaboon viper facts, which moves
-that Beastfile off its authored `funFacts` fallback. Also shipped the Gaboon
-viper Wild Animals article once its header photo landed. Text now lives only
-in `facts.js` (and the article, in `content/guides/`).
-
-**2026-08-03, ids 257 to 268.** Fennec fox, green anaconda, blue poison dart
-frog and Victoria crowned pigeon, three facts each. Their text now lives only in
-`facts.js`.
+Shipped entries are not kept here. They live in
+`archive/docs-completed/BEASTLYPEDIA_FACT_GAPS_COMPLETED_2026-09-17.md`.
