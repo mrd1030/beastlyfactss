@@ -1,5 +1,18 @@
 # Easy-to-generate enrichment image prompts
 
+## Status: all delivered. Archived 2026-09-18.
+
+Every image this file queued now exists on disk, including the 15 "parked for
+later" snakes, geckos and lizards at the bottom, and the 22 fact photos that
+were appended to it. Verified by checking all 74 filenames it names against
+public/assets. It was a copy-paste worklist, not a record: the prompts live in
+IMAGE_PROMPTS.md, which is where to start when one needs regenerating.
+
+Its fact-photo section carried one wrong instruction, corrected in
+IMAGE_PROMPTS.md: it said fact photos are 3:2 at 1168x784. They are not. Fact
+photos keep whatever aspect they arrive at, because the lightbox shows the whole
+frame.
+
 Copy-paste ready. Every prompt below is lifted verbatim from IMAGE_PROMPTS.md,
 grouped so you can work down a category without switching subject type.
 

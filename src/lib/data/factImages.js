@@ -349,6 +349,10 @@ export const FACT_IMAGES = {
   322: '/assets/facts/aardvark.jpg',
   323: '/assets/facts/dumbo-octopus.jpg',
   324: '/assets/facts/horned-lizard.jpg',
+  325: '/assets/facts/bald-eagle.jpg',
+  326: '/assets/facts/bald-eagle-2.jpg',
+  327: '/assets/facts/bald-eagle-3.jpg',
+  328: '/assets/facts/bald-eagle-4.jpg',
 };
 
 // Site-relative path for <img src>, or null if this fact has no dedicated photo yet.
