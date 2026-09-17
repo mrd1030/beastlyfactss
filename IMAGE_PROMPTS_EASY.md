@@ -493,3 +493,233 @@ Prompts for these are still in IMAGE_PROMPTS.md, unchanged.
 - **Geckos (4)**: african-fat-tail, gargoyle-gecko, leaf-tailed-gecko, mourning-gecko
 - **Other lizards (6)**: fire-skink, green-anole, green-iguana, jacksons-chameleon, uromastyx, veiled-chameleon
 
+
+---
+
+# Fact photos, `public/assets/facts/`, 1600x1067 (22)
+
+Every fact on the site has its own photo except these. Ids 297 to 314 are a
+contiguous block that got skipped (everything either side, 1 to 296 and 315 to
+324, is done), and 325 to 328 are the new bald eagle set.
+
+**All are 3:2 at 1600x1067.** One photo per fact, never shared between two facts
+and never the same file as a Beastfile hero. The build stamps its own
+"beastlyfacts.com" pill on these, so no prompt asks for text: if a frame comes
+back with lettering on a prop, regenerate it.
+
+Filename is given above each block. After installing, register the id in
+FACT_IMAGES in BOTH `src/lib/data/factImages.js` and `public/_worker.js`.
+
+## Aquarium fish (7)
+
+### discus.jpg — id 297, fry feeding off the parents
+```
+A pair of adult discus hanging almost vertically in dim tannin-stained water with
+a cloud of tiny fry pressed against their flanks, feeding directly off the
+parents' skin. Tall, round, laterally flattened disc-shaped bodies, high
+forehead, long trailing fins. Soft dim light, dark planted blackwater background,
+shallow depth of field on the nearest parent. Not an angelfish: the body is a
+near-circle, not a diamond with long spiky fins.
+```
+
+### cardinal-tetra.jpg — id 298, the stripe is camouflage
+```
+A small shoal of cardinal tetras in dark tannin-stained blackwater, the horizontal
+neon-blue stripe catching what little light there is, deep red running below it.
+Dim shafts of light through submerged branches and leaf litter, very dark
+background, the metallic stripe the brightest thing in the frame. Not a neon
+tetra: the red runs the entire length of the body, not just the rear half.
+```
+
+### molly.jpg — id 299, at home in fresh and salt
+```
+A single sailfin molly in clear shallow water over pale sand at the edge of a
+coastal lagoon, tall fan-shaped dorsal fin raised, brackish grasses and open water
+behind. Bright natural daylight, sunlight rippling on the sand. A stocky livebearer
+with a rounded body and a large dorsal fin, not a guppy and not a swordtail.
+```
+
+### platy.jpg — id 301, 70 years in cancer labs
+```
+A single bright orange platy in a densely planted freshwater aquarium, body in
+profile, whole fish in frame. Short rounded body, plain fan tail, small upturned
+mouth. Clean bright aquarium lighting, green planted background thrown out of
+focus. A platy, not a swordtail: the tail is a plain rounded fan with no extended
+lower spike.
+```
+
+### swordtail.jpg — id 302, females choose the longer sword
+```
+A male green swordtail in profile in a planted aquarium, the long thin sword
+trailing from the bottom edge of his tail fin, as long again as his body is deep.
+A plainer female swordtail behind him with no sword. Clean aquarium light, planted
+background out of focus. The sword extends only from the lower edge of the tail,
+never the upper.
+```
+
+### zebra-danio.jpg — id 303, the fish behind GloFish
+```
+A small shoal of ordinary wild-type zebra danios in a brightly lit planted
+aquarium, slim torpedo bodies marked with continuous horizontal dark blue and gold
+stripes running nose to tail. Clear water, bright daylight, plants soft behind
+them. Natural fish, not fluorescent and not dyed, and the stripes run horizontally
+the full length of the body.
+```
+
+### bristlenose-pleco.jpg — id 304, those are odontodes
+```
+Close head-on portrait of a mature male bristlenose pleco clinging to aquarium
+glass, the branching fleshy tentacles covering his snout filling the frame.
+Flattened armoured brown body mottled with pale spots, underslung sucker mouth,
+eyes set high on the head. Soft aquarium light, shallow depth of field on the
+bristles. A bristlenose, not a common pleco: short stocky body, and the bristles
+are branching growths across the snout rather than whiskers at the mouth.
+```
+
+## Shrimp (3) — these three sit next to each other, keep them clearly different
+
+### cherry-shrimp.jpg — id 305, eating its own molt
+```
+A bright red cherry shrimp on a green aquarium plant leaf holding and eating its
+own shed exoskeleton, the empty translucent molt clearly visible in its feeding
+legs. Macro, sharp on the shrimp, densely planted green background out of focus.
+The discarded shell must read as a transparent empty shrimp shape.
+```
+
+### amano-shrimp.jpg — id 306, born in salt, killed by it
+```
+A single amano shrimp on driftwood in a planted freshwater aquarium, body almost
+transparent with a row of fine dark dashes along each side and a pale stripe down
+the back. Macro, sharp on the shrimp, green plants soft behind. Translucent
+grey-green with dashed markings, not red: this is an amano, not a cherry shrimp.
+```
+
+### ghost-shrimp.jpg — id 307, a different family entirely
+```
+A ghost shrimp on pale aquarium sand, body glass-clear enough to see the gut line
+and internal organs through it, long thin front arms extended and whiskers
+forward. Macro, sharp on the shrimp, plain pale substrate behind. Almost
+completely transparent with only faint speckling, no red and no dashed side
+markings.
+```
+
+## Birds (2)
+
+### zebra-finch.jpg — id 308, taught to sing by dad
+```
+Two zebra finches perched close together on a thin branch, an adult male singing
+with his beak open and a juvenile beside him listening. The male has bright orange
+cheek patches, a black-and-white striped throat, a red-orange beak and chestnut
+flanks spotted with white. Soft warm natural light, plain out-of-focus background.
+The orange cheek patch marks the male; the juvenile has a dark beak.
+```
+
+### parrotlet.jpg — id 309, a beak built to skip the grit
+```
+Close portrait of a Pacific parrotlet holding a sunflower seed up in one foot and
+working the hull off with its beak, husk fragments falling away. A very small
+stocky green parrot with a pale horn-coloured beak and blue flashes behind the eye
+and on the wing. Soft natural light, plain background out of focus, sharp on the
+beak and the seed. Tiny and short-tailed, not a budgie and not a lovebird.
+```
+
+## Small mammals (3)
+
+### flying-squirrel.jpg — id 300, two gliders, no relation
+```
+A flying squirrel in mid-glide between two trees at dusk, seen from below, the
+patagium membrane stretched taut from wrist to ankle into a flat rectangle, tail
+trailing flat behind. Huge dark eyes, dense grey-brown fur, pale belly. Dim blue
+twilight woodland, motion blur in the background, the animal sharp. Not a sugar
+glider: no dark stripe down the back.
+```
+
+### fancy-rat.jpg — id 310, the first rat maze
+```
+A fancy rat pausing at a junction in a simple wooden maze on a pale tabletop, up
+on its hind feet with whiskers forward, clearly working out which way to go. Clean
+warm light, plain background, shallow depth of field on the face. A well-kept pet
+rat with a glossy coat, alert rather than frightened. The maze is plain unfinished
+wood carrying no markings, numbers or lettering anywhere.
+```
+
+### fancy-mouse.jpg — id 311, eating poop for the B12
+```
+A fancy mouse sitting up on clean bedding grooming itself, front paws at its face,
+large round ears and long whiskers catching the light. Warm soft light, plain
+shallow background, sharp on the face. A healthy well-kept pet mouse with a smooth
+coat and bright eyes. Nothing unpleasant in frame: the subject is the mouse.
+```
+
+## Reptiles (3)
+
+### red-footed-tortoise.jpg — id 312, courting like a chicken
+```
+A male red-footed tortoise with his head extended and mouth slightly open mid-call,
+a second tortoise just behind him. Dark domed shell with pale yellow centres to the
+scutes, bright red and orange scales on the front legs, patches of red and yellow
+on the head. Warm natural light on leaf litter and low tropical plants. A red-foot,
+not a sulcata: dark shell and red leg scales.
+```
+
+### garter-snake.jpg — id 313, musking costs something
+```
+A garter snake held across an open palm, body raised and head turned back toward
+the hand in a clear defensive posture. A slim snake with three pale yellow stripes
+running the length of a dark olive-brown body, keeled scales, round pupils. Bright
+natural daylight, plain out-of-focus background. A healthy well-muscled snake, and
+nothing messy in frame.
+```
+
+### rosy-boa.jpg — id 314, the same defense as a ball python
+```
+A rosy boa coiled into a tight defensive ball on desert sand with its head tucked
+into the centre of the coil. A small thick-bodied snake with smooth glossy scales
+and three wide dark rosy-brown stripes running the length of a cream-grey body.
+Warm low desert light, plain sand and a little rock. Small and stocky, about the
+thickness of a thumb: a rosy boa, not a ball python.
+```
+
+## Bald eagle (4) — all four must differ from each other and from the Beastfile pair
+
+### bald-eagle.jpg — id 325, the biggest nest in the tree
+```
+An adult bald eagle standing in a huge stick nest with two large downy grey
+eaglets beside it, the nest bowl filling most of the frame, seen level with the
+rim. Deep untidy walls of interlocked branches, finer material lining the centre,
+the whole structure clearly far wider than the adult. Clean white head and tail on
+a dark brown body, large yellow bill, bare yellow legs. Soft overcast daylight,
+muted palette. The chicks are essential: without them this is the same picture as
+the Beastfile nest photo.
+```
+
+### bald-eagle-2.jpg — id 326, the white head is an age
+```
+An immature bald eagle perched on a bare branch, whole bird in frame, body in
+profile. Dark brown overall with heavy irregular white and buff mottling scattered
+through the underparts and back, a DARK brown head with no white hood, and a dark
+grey-black bill with only a trace of yellow at the base. Pale brown iris, bare
+yellow legs, black talons. Overcast winter light, out-of-focus bare woodland. This
+is a juvenile and must NOT have a clean white head or white tail. Not a golden
+eagle: the legs are bare and yellow, not feathered to the toes.
+```
+
+### bald-eagle-3.jpg — id 327, it dives in a curve on purpose
+```
+An adult bald eagle in a fast banking descent, wings half folded and swept back,
+body angled into the turn, head held level and facing forward rather than turned
+to the side, talons still tucked. Clean white head and tail, dark brown body,
+large yellow bill. Open grey water and blurred shoreline below, motion in the
+background, the bird sharp. No prey in the talons. A head turned sideways
+contradicts the point and makes the frame unusable.
+```
+
+### bald-eagle-4.jpg — id 328, not bald, just old English
+```
+Close head and shoulders portrait of an adult bald eagle filling the frame, sharp
+on the eye, showing the white head feathering running back to a crisp line where
+it meets the dark brown neck. Heavy hooked bright yellow bill, yellow cere, pale
+yellow iris, pronounced bony brow ridge. Plain out-of-focus pale background, soft
+overcast light. The white must read as dense individual feathers rather than bare
+skin, and the sharp boundary where white meets brown is the subject.
+```
