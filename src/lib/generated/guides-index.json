@@ -124,7 +124,7 @@
       "difficulty": "Intermediate",
       "petType": "Birds",
       "image": "/assets/guides/quaker-parakeet.jpg",
-      "tagline": "A bold, talkative little parrot that several states will not let you keep!"
+      "tagline": "The only parrot that builds its own stick nest, and the reason thirteen states ban it!"
     },
     {
       "id": "zebra-finch",
@@ -399,7 +399,7 @@
     {
       "id": "discus",
       "name": "Discus",
-      "emoji": "🐠",
+      "emoji": "🐟",
       "difficulty": "Intermediate-Advanced",
       "petType": "Fish",
       "image": "/assets/guides/discus.jpg",
@@ -511,7 +511,7 @@
       "difficulty": "Beginner",
       "petType": "Geckos",
       "image": "/assets/guides/gargoyle-gecko.jpg",
-      "tagline": "The stocky, grippy gecko with a face only a reptile lover could adore!"
+      "tagline": "The bumpy-headed New Caledonian climber that regrows its tail!"
     },
     {
       "id": "leaf-tailed-gecko",
@@ -652,7 +652,7 @@
       "id": "ackie-monitor",
       "name": "Ackie Monitor",
       "emoji": "🦎",
-      "difficulty": "Advanced",
+      "difficulty": "Intermediate",
       "petType": "Lizards",
       "image": "/assets/guides/ackie-monitor.jpg",
       "tagline": "The miniature Komodo dragon with a huge personality!"
@@ -700,7 +700,7 @@
       "difficulty": "Beginner/Intermediate",
       "petType": "Lizards",
       "image": "/assets/guides/green-anole.jpg",
-      "tagline": "America's tiny chameleon: the little green lizard that turns brown with its mood!"
+      "tagline": "The color-changing little acrobat with a signal flag under its chin!"
     },
     {
       "id": "green-iguana",
@@ -767,7 +767,7 @@
     },
     {
       "id": "mouse",
-      "name": "Fancy Mouse",
+      "name": "Mouse",
       "emoji": "🐭",
       "difficulty": "Beginner",
       "petType": "Small Mammals",

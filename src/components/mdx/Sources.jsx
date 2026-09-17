@@ -46,9 +46,55 @@ function formatReviewDate(iso) {
 // prerendered HTML and the hydrating client agree, then the live clock after
 // mount, so a page that crosses its date between deploys catches up without a
 // hydration mismatch.
+// How many sources show before the reader asks for the rest. A wide guide can
+// legitimately rest on a dozen pages (the birdwatching guide spans eagle
+// biology, ID method, ethics, collision and disease figures), but a foot of the
+// page carrying twelve outbound links reads as a bibliography rather than an
+// article, and the first thing a reader wants is the two or three figures they
+// might check. The rest stay one click away.
+//
+// Kept in sync by hand with the nth-child selector below: Tailwind needs the
+// class as a literal string, so `n+7` cannot be interpolated from this number.
+const SOURCES_VISIBLE = 6;
+
+// Scoped to the direct child list on purpose. Eight articles nest
+// <AlsoConsulted> inside <Sources>, and that list is already the fine-print
+// tier - a descendant selector would collapse it a second time and hide half
+// of it behind a toggle that claims to be about the linked sources. `> ul` only
+// ever matches the markdown list written directly inside <Sources>.
+const OVERFLOW_HIDDEN = '[&>ul:first-of-type>li:nth-child(n+7)]:hidden';
+
+// Hidden in CSS rather than unmounted: every link stays in the prerendered
+// HTML, so a crawler, a reader with JS off, and Ctrl+F all still see the full
+// list. Only the paint changes.
+function findFirstList(node) {
+  let found = null;
+  React.Children.forEach(node, (child) => {
+    if (found || !React.isValidElement(child)) return;
+    if (child.type === 'ul' || child.type === 'ol') {
+      found = child;
+      return;
+    }
+    if (child.props?.children) found = findFirstList(child.props.children) || found;
+  });
+  return found;
+}
+
+function countDirectItems(list) {
+  if (!list) return 0;
+  let count = 0;
+  React.Children.forEach(list.props?.children, (child) => {
+    if (React.isValidElement(child) && child.type === 'li') count += 1;
+  });
+  return count;
+}
+
 export default function Sources({ children, className = '' }) {
   const { lastReviewed, sourceCount } = useArticleMeta();
   const [today, setToday] = useState(buildStamp.generatedAt);
+  // Starts collapsed, and the prerender renders it collapsed too, so the first
+  // client paint matches the served HTML with no hydration mismatch.
+  const [expanded, setExpanded] = useState(false);
   useEffect(() => {
     if (window.__IS_PRERENDER__) return;
     setToday(siteToday());
@@ -58,6 +104,13 @@ export default function Sources({ children, className = '' }) {
   if (reviewed) parts.push(`Last reviewed ${reviewed}`);
   if (sourceCount > 0) parts.push(`${sourceCount} source${sourceCount === 1 ? '' : 's'}`);
 
+  // Counts only the linked list this toggle actually controls, so the label
+  // never promises to reveal <AlsoConsulted> entries it does not touch.
+  const listed = countDirectItems(findFirstList(children));
+  const hiddenCount = listed - SOURCES_VISIBLE;
+  const collapsible = hiddenCount > 0;
+  const collapsed = collapsible && !expanded;
+
   return (
     <div className={`mb-10 prose prose-sm max-w-none text-muted-foreground ${className}`}>
       {parts.length > 0 && (
@@ -65,7 +118,17 @@ export default function Sources({ children, className = '' }) {
           {parts.join(' · ')}
         </p>
       )}
-      {children}
+      <div className={collapsed ? OVERFLOW_HIDDEN : undefined}>{children}</div>
+      {collapsible && (
+        <button
+          type="button"
+          onClick={() => setExpanded((v) => !v)}
+          aria-expanded={expanded}
+          className="not-prose mt-2 text-xs font-body font-semibold text-primary underline decoration-primary/30 underline-offset-2 hover:decoration-primary transition-colors"
+        >
+          {expanded ? 'Show fewer sources' : `Show ${hiddenCount} more source${hiddenCount === 1 ? '' : 's'}`}
+        </button>
+      )}
     </div>
   );
 }

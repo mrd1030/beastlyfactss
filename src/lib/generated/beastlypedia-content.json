@@ -926,7 +926,7 @@
       "thorny-devil",
       "panther-chameleon",
       "gaboon-viper",
-      "shoebill"
+      "capybara"
     ]
   },
   "glass-frog": {
@@ -1050,10 +1050,10 @@
     ],
     "related": [],
     "siblings": [
+      "victoria-crowned-pigeon",
       "emperor-penguin",
       "crow",
-      "shima-enaga",
-      "victoria-crowned-pigeon"
+      "shima-enaga"
     ]
   },
   "victoria-crowned-pigeon": {
@@ -1083,10 +1083,10 @@
     ],
     "related": [],
     "siblings": [
+      "emperor-penguin",
       "crow",
       "shima-enaga",
-      "shoebill",
-      "emperor-penguin"
+      "bald-eagle"
     ]
   },
   "emperor-penguin": {
@@ -1124,10 +1124,10 @@
       }
     ],
     "siblings": [
+      "crow",
       "shima-enaga",
-      "shoebill",
-      "victoria-crowned-pigeon",
-      "crow"
+      "bald-eagle",
+      "shoebill"
     ]
   },
   "crow": {
@@ -1165,10 +1165,10 @@
       }
     ],
     "siblings": [
+      "shima-enaga",
+      "bald-eagle",
       "shoebill",
-      "victoria-crowned-pigeon",
-      "emperor-penguin",
-      "shima-enaga"
+      "victoria-crowned-pigeon"
     ]
   },
   "shima-enaga": {
@@ -1213,10 +1213,60 @@
       }
     ],
     "siblings": [
+      "bald-eagle",
+      "shoebill",
+      "victoria-crowned-pigeon",
+      "emperor-penguin"
+    ]
+  },
+  "bald-eagle": {
+    "animal": "Bald Eagle",
+    "facts": [
+      {
+        "id": 325,
+        "title": "The Biggest Nest in the Tree",
+        "fact": "A bald eagle pair comes back to the same nest year after year and adds to it every season, so a structure that starts around 5 to 6 feet across just keeps growing for as long as the tree holds it up. The record, in St. Petersburg, Florida, reached 10 feet across and 20 feet deep. Another in Vermilion, Ohio was used for 34 years and weighed over 2 tons by the time the tree carrying it came down. Nothing else in North America builds a bigger nest in a tree.",
+        "category": "Birds",
+        "image": "/assets/facts/bald-eagle.jpg"
+      },
+      {
+        "id": 326,
+        "title": "The White Head Is an Age, Not a Species",
+        "fact": "Immature bald eagles are mottled brown and white with a dark head and a dark bill, and they do not get the clean white head and tail until they are five or six years old. It makes them one of the most misidentified birds on the continent. A big dark raptor with irregular white blotching through the body is almost always a young bald eagle rather than a golden eagle or some unplaceable hawk.",
+        "category": "Birds",
+        "image": "/assets/facts/bald-eagle-2.jpg"
+      },
+      {
+        "id": 327,
+        "title": "It Dives in a Curve on Purpose",
+        "fact": "Each eye carries two foveae instead of the single one humans have. The deep fovea, which gives a raptor its sharpest vision, points about 45 degrees out to the side, and the shallow one points about 15 degrees out. So the sharpest eye a diving eagle owns is aimed sideways, and turning its head to use it would cost speed in the air. The fix is visible once you know to watch for it: a stooping bird holds its head straight and flies a curving path, keeping the prey in that sideways fovea the whole way down.",
+        "category": "Birds",
+        "image": "/assets/facts/bald-eagle-3.jpg"
+      },
+      {
+        "id": 328,
+        "title": "Not Bald, Just Old English",
+        "fact": "The bald eagle has a full head of feathers and never had anything else. The name comes from balde, an old word for white, so the bird is white-headed rather than hairless. It is the same root that survives in piebald, used of a horse or a bird marked in white patches.",
+        "category": "Birds",
+        "image": "/assets/facts/bald-eagle-4.jpg"
+      }
+    ],
+    "related": [
+      {
+        "id": "ultimate-birdwatching-guide-best-places-times-tips-2026",
+        "slug": "ultimate-birdwatching-guide-best-places-times-tips-2026",
+        "title": "Ultimate Birdwatching Guide for Beginners (2026)",
+        "excerpt": "Where to go birding, when to go, how to identify what lands in front of you, and how to build a yard that birds use",
+        "category": "Wild Animals",
+        "publishedAt": "2026-06-01",
+        "image": "/assets/images/ultimate-birdwatching-guide-best-places-times-tips-2026-0.jpg"
+      }
+    ],
+    "siblings": [
+      "shoebill",
       "victoria-crowned-pigeon",
       "emperor-penguin",
-      "crow",
-      "shoebill"
+      "crow"
     ]
   },
   "manta-ray": {
@@ -1232,10 +1282,10 @@
     ],
     "related": [],
     "siblings": [
-      "leafy-sea-dragon",
       "dolphin",
       "clownfish",
-      "immortal-jellyfish"
+      "immortal-jellyfish",
+      "seahorse"
     ]
   },
   "leafy-sea-dragon": {
@@ -1251,10 +1301,10 @@
     ],
     "related": [],
     "siblings": [
-      "dolphin",
       "clownfish",
       "immortal-jellyfish",
-      "seahorse"
+      "seahorse",
+      "shark"
     ]
   },
   "dolphin": {
@@ -1341,10 +1391,10 @@
       }
     ],
     "siblings": [
-      "clownfish",
       "immortal-jellyfish",
       "seahorse",
-      "shark"
+      "shark",
+      "octopus"
     ]
   },
   "clownfish": {
@@ -1417,10 +1467,10 @@
       }
     ],
     "siblings": [
-      "immortal-jellyfish",
       "seahorse",
       "shark",
-      "octopus"
+      "octopus",
+      "mantis-shrimp"
     ]
   },
   "immortal-jellyfish": {
@@ -1486,10 +1536,10 @@
       }
     ],
     "siblings": [
-      "seahorse",
       "shark",
       "octopus",
-      "mantis-shrimp"
+      "mantis-shrimp",
+      "cuttlefish"
     ]
   },
   "seahorse": {
@@ -1548,10 +1598,10 @@
       }
     ],
     "siblings": [
-      "shark",
       "octopus",
       "mantis-shrimp",
-      "cuttlefish"
+      "cuttlefish",
+      "humpback-whale"
     ]
   },
   "shark": {
@@ -1596,10 +1646,10 @@
       }
     ],
     "siblings": [
-      "octopus",
       "mantis-shrimp",
       "cuttlefish",
-      "humpback-whale"
+      "humpback-whale",
+      "manta-ray"
     ]
   },
   "octopus": {
@@ -1660,10 +1710,10 @@
       }
     ],
     "siblings": [
-      "mantis-shrimp",
       "cuttlefish",
       "humpback-whale",
-      "manta-ray"
+      "manta-ray",
+      "leafy-sea-dragon"
     ]
   },
   "mantis-shrimp": {
@@ -1701,10 +1751,10 @@
       }
     ],
     "siblings": [
-      "cuttlefish",
       "humpback-whale",
       "manta-ray",
-      "leafy-sea-dragon"
+      "leafy-sea-dragon",
+      "dolphin"
     ]
   },
   "cuttlefish": {
@@ -1737,10 +1787,10 @@
       }
     ],
     "siblings": [
-      "humpback-whale",
       "manta-ray",
       "leafy-sea-dragon",
-      "dolphin"
+      "dolphin",
+      "clownfish"
     ]
   },
   "humpback-whale": {
@@ -1766,10 +1816,10 @@
       }
     ],
     "siblings": [
-      "manta-ray",
       "leafy-sea-dragon",
       "dolphin",
-      "clownfish"
+      "clownfish",
+      "immortal-jellyfish"
     ]
   }
 }

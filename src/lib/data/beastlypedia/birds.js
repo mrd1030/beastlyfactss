@@ -164,4 +164,36 @@ export const birdBeastfiles = [
     secondaryAlt: 'A shima enaga perched among bare winter twigs, showing its white face and dark wing markings',
     relatedFiles: ['shima-enaga-japans-snow-fairy-bird'],
   },
+  {
+    id: 'bald-eagle',
+    name: 'Bald Eagle',
+    scientific: 'Haliaeetus leucocephalus',
+    alsoKnownAs: ['American Eagle', 'American Bald Eagle'],
+    tagline: 'A bird that went from 417 nesting pairs to a fixture on winter rivers.',
+    habitat: 'Wetlands',
+    group: 'Birds',
+    overview:
+      'The bald eagle is a large fish-eating raptor of North American coasts, lakes and rivers, and it is the continent\'s most dedicated nest builder. A pair returns to the same nest year after year and keeps adding to it, so a structure that starts at 5 to 6 feet across grows for decades. It hunts fish at the surface, scavenges freely, and steals from ospreys often enough that Benjamin Franklin held it against the bird. The white head is an age marker, not a species marker: immatures are mottled brown and white with a dark head and bill, and do not reach adult plumage until five or six years old, which makes them one of the most misidentified raptors in North America.',
+    origin:
+      'Across North America from Alaska and Canada to northern Mexico, concentrated wherever large open water holds fish. Winter gatherings form on rivers that stay ice-free, notably the Chilkat in southeast Alaska.',
+    notableTraits: [
+      'Builds the largest tree nests of any North American bird',
+      'Each eye carries two foveae, one for long-range detection and one for a wider field',
+      'Takes fish at the surface and scavenges and pirates freely',
+      'Immatures stay mottled brown until five or six years old',
+      'Pairs reuse and enlarge the same nest across many seasons',
+    ],
+    conservation:
+      'Least Concern and recovered. DDT thinned eggshells badly enough to drop the lower 48 population to a known low of 417 breeding pairs in 1963. The pesticide ban, the Bald and Golden Eagle Protection Act and Endangered Species Act listing reversed it: the bird was delisted in 2007 with 9,789 breeding pairs, and a 2020 federal update put the lower 48 population at 316,700 individuals including 71,467 occupied nests. Federal protection continues under the eagle act and the Migratory Bird Treaty Act.',
+    funFacts: [
+      'It is not bald. The name comes from "balde", an old word for white, describing the head.',
+      'The record nest, in St. Petersburg, Florida, reached 10 feet across and 20 feet deep.',
+      'A nest in Vermilion, Ohio weighed over 2 tons and was used for 34 years before its tree came down.',
+    ],
+    heroImage: '/assets/beastlypedia/bald-eagle-hero.jpg',
+    heroAlt: 'An adult bald eagle perched on a bare branch over grey winter water, white head and tail against a dark brown body',
+    secondaryImage: '/assets/beastlypedia/bald-eagle-secondary.jpg',
+    secondaryAlt: 'An adult bald eagle standing on the rim of an enormous stick nest in a dead tree, dwarfed by the nest',
+    relatedFiles: ['ultimate-birdwatching-guide-best-places-times-tips-2026'],
+  },
 ];
