@@ -496,13 +496,17 @@ Prompts for these are still in IMAGE_PROMPTS.md, unchanged.
 
 ---
 
-# Fact photos, `public/assets/facts/`, 1600x1067 (22)
+# Fact photos, `public/assets/facts/`, 1168x784 (22)
 
 Every fact on the site has its own photo except these. Ids 297 to 314 are a
 contiguous block that got skipped (everything either side, 1 to 296 and 315 to
 324, is done), and 325 to 328 are the new bald eagle set.
 
-**All are 3:2 at 1600x1067.** One photo per fact, never shared between two facts
+**All are 3:2 at 1168x784.** Never upscale: a frame that arrives at 1264x848 gets
+resized down to 1168x784 and re-encoded through mozjpeg at quality 80, and one
+that arrives smaller is installed at its native size instead of being enlarged.
+A 1600x1067 pass was generated once and thrown away for exactly that reason, so
+do not target it. One photo per fact, never shared between two facts
 and never the same file as a Beastfile hero. The build stamps its own
 "beastlyfacts.com" pill on these, so no prompt asks for text: if a frame comes
 back with lettering on a prop, regenerate it.

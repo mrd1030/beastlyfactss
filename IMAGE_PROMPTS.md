@@ -2249,14 +2249,14 @@ Check: bare yellow tarsi, and no white anywhere on the body. Those two decide
 whether the file is a bald eagle or a generic eagle, and feathered legs mean the
 generator produced a golden.
 
-### bald-eagle-secondary.jpg, 1000x1500
+### bald-eagle-secondary.jpg, 784x873
 Photorealistic wildlife photograph looking up at an enormous bald eagle nest
 built in the crown fork of a tall dead tree, one adult bald eagle standing on
 the rim. The nest is a deep, untidy mound of interlocked sticks and branches far
 larger than the bird, several feet across and deep enough to hide its contents,
 packed with finer material at the centre. Clean white head and tail on a dark
 brown body, large yellow bill. Bare winter branches, pale overcast sky, soft
-natural light, 200mm, f/5.6, 2:3 portrait. The nest is the subject and it has to
+natural light, 200mm, f/5.6, portrait. The nest is the subject and it has to
 read as massive: the bird should look small standing on it. Not a small tidy cup
 nest, not a songbird nest scaled up. Single bird, no text, no watermark, no flag
 or heraldry. Compose the tree vertically through the centre with clear margin on
@@ -2273,7 +2273,7 @@ Install: set `heroImage` and `secondaryImage` on the `bald-eagle` entry in
 `src/lib/data/beastlypedia/birds.js`; both are `null` today and the page renders
 its "Hero image pending" placeholder until they are set.
 
-### Bald eagle fact photos, `public/assets/facts/`, 1600x1067
+### Bald eagle fact photos, `public/assets/facts/`, 1168x784
 
 Four facts, ids 325 to 328, added 2026-09-17. One photo each, never shared
 between them and never the Beastfile hero or secondary: those two are a
