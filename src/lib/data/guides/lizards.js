@@ -32,7 +32,7 @@ export const lizardGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal", value: "41 of 52 jurisdictions place no restriction. Washington DC, Hawaii, New York City, and New Mexico rule it out as a lizard or a monitor generally; New Jersey, Rhode Island, and Maine want a permit.", source: "ackie-monitor-legal-guide" },
+        { label: "Legal", value: "40 of 52 jurisdictions place no restriction. Washington DC, Hawaii, New York City, and New Mexico rule it out as a lizard or a monitor generally; New Jersey, Rhode Island, Maine, and West Virginia want a permit.", source: "ackie-monitor-legal-guide" },
         { label: "Day one", value: "Quarantine a new ackie until it has cleared two separate clean fecal checks before it joins an established collection.", source: "ackie-monitor-health-issues-guide" },
         { label: "Enclosure", value: "5 feet long by 2.5 wide by 4 tall minimum for a single adult, larger than the old 4x2x2 standard, because this is one of the most active lizards kept.", source: "ackie-monitor-tank-setup-guide" },
         { label: "Basking surface", value: "130 to 170°F on the stone, measured with an infrared thermometer. Below about 130°F is too cool to synthesize vitamin D, and most keepers under-heat, so the hotter end is the safer mistake. Cool side 75 to 80°F.", source: "ackie-monitor-tank-setup-guide" },
@@ -70,7 +70,7 @@ export const lizardGuides = [
       { slug: "ackie-monitor-handling-guide", line: "A lizard that does backflips after crickets, tong-feeding as the bonding tool, and the body language that says stop before it bolts." },
       { slug: "ackie-monitor-health-issues-guide", line: "MBD as a disease of neglect, obesity as the captivity-specific risk, the weekly kitchen scale, and impaction from substrate and cold." },
       { slug: "ackie-monitor-enrichment-guide", line: "Eight of eight monitors opening a puzzle tube in ten minutes on the first try, what that evidence does and does not cover, and the burrow depth that outranks it." },
-      { slug: "ackie-monitor-legal-guide", line: "Legal in 41 of 52 jurisdictions, the four places no lizard or no monitor qualifies, and the Colorado latitude clause the ackie's range sits right on." },
+      { slug: "ackie-monitor-legal-guide", line: "Legal in 40 of 52 jurisdictions, the four places no lizard or no monitor qualifies, and the Colorado latitude clause the ackie's range sits right on." },
     ],
     buyList: [
       "A 5 by 2.5 by 4 foot enclosure at minimum, custom or PVC",
@@ -345,7 +345,7 @@ export const lizardGuides = [
         { label: "Settling in", value: "A captive-bred skink settles in about 2 weeks; a wild-caught Indonesian can take up to 2 months, hiding and refusing food. Later, brumation is the biggest normal cause of a skink that stops eating for a few months.", source: "blue-tongue-skink-feeding-guide" },
         { label: "Handling", value: "Leave a new skink 2 to 3 weeks, then 5 minutes a day, adding a minute each time it sits still, up to 15. Come in from the side, slide a hand under, support it along your forearm, never by the tail.", source: "blue-tongue-skink-handling-guide" },
         { label: "Reading the animal", value: "Short huffs mean annoyance, tail flicking irritation, long hisses with a puffed, tilted body aggression. At every step: stop and end the session.", source: "blue-tongue-skink-handling-guide" },
-        { label: "Legal check", value: "Cleared in 47 of 52 jurisdictions. Hawaii and the District of Columbia do not allow one, New Jersey requires a possession permit, and Minnesota and Maine attach conditions.", source: "blue-tongue-skink-legal-guide" },
+        { label: "Legal check", value: "Cleared in 46 of 52 jurisdictions. Hawaii and the District of Columbia do not allow one, New Jersey and West Virginia require a permit, and Minnesota and Maine attach conditions.", source: "blue-tongue-skink-legal-guide" },
         { label: "Budget", value: "Northerns $150 to $250, morphs to $400 to $700; Indonesians $100 to $250. Setup $330 to $635, then about $41 to $69 a month. A routine exam runs $100 to $150, and a wild-caught Indonesian needs a fecal exam and deworming at purchase.", source: "blue-tongue-skink-cost-guide" },
         { label: "Lifespan", value: "15 to 20 years, some past 30.", source: "blue-tongue-skink-cost-guide" },
         { label: "Adult size", value: "17-24 inches (43-60 cm)." },
@@ -539,7 +539,7 @@ export const lizardGuides = [
         { label: "Adult size", value: "5 to 8 inches (13 to 20 cm), including the tail." },
         { label: "Budget", value: "$5 to $30 for the anole, most under $15, and roughly $390 to $470 for the setup, the terrarium most of it. $20 to $35 a month, and $50 to $100 for a routine exam, with an emergency visit from $150.", source: "green-anole-cost-guide" },
         { label: "Lifespan", value: "3 to 4 years when kept casually, up to 10 with the setup right. The gap is a setup problem, not a species limit.", source: "green-anole-cost-guide" },
-        { label: "The law", value: "Unregulated in 38 jurisdictions and restricted in the southeastern states where it is native. Georgia bars it as a pet regardless of origin, so a captive-bred animal from out of state is in the same position as one from a Georgia yard.", source: "green-anole-legal-guide" },
+        { label: "The law", value: "Unregulated in 37 jurisdictions and restricted in the southeastern states where it is native. Georgia bars it as a pet regardless of origin, so a captive-bred animal from out of state is in the same position as one from a Georgia yard.", source: "green-anole-legal-guide" },
         { label: "Quarantine", value: "3 to 6 months for a new reptile, on plain paper towel with dedicated tools, serviced last.", source: "reptile-quarantine-guide" },
         { label: "Salmonella", value: "Never clean the enclosure or its equipment in a kitchen sink or a shared bathtub, and children under 5 do not touch reptiles or their environments.", source: "reptile-salmonella-hygiene-guide" },
         { label: "Power outage", value: "A healthy adult tolerates a few hours to one cool night. A day or two below the normal night low is when cold stress and respiratory infection become real.", source: "reptile-emergency-plan-guide" },
@@ -726,7 +726,7 @@ export const lizardGuides = [
         { label: "Handling", value: "Docile for a chameleon, which still means minimal handling. Gaping, sunken eyes, head jerking, swaying, tail curling, and raised front legs all mean stop.", source: "jacksons-chameleon-handling-guide" },
         { label: "Sexing and live birth", value: "Males grow three forward horns; females have little or none. Females bear 5 to 30 live young after roughly 5 to 6 months of gestation, which is the toll behind their shorter lives.", source: "jacksons-chameleon-handling-guide" },
         { label: "Planting density", value: "Layered live plants so the animal can cross the cage at several heights unseen. If you can always spot it immediately, it is too sparse.", source: "jacksons-chameleon-enrichment-guide" },
-        { label: "Legal, before you buy", value: "Hawaii and the District of Columbia bar private ownership, New Jersey requires a permit, Minnesota and Maine attach conditions. The other 47 jurisdictions place no restriction.", source: "jacksons-chameleon-legal-guide" },
+        { label: "Legal, before you buy", value: "Hawaii and the District of Columbia bar private ownership, New Jersey and West Virginia require a permit, Minnesota and Maine attach conditions. The other 46 jurisdictions place no restriction.", source: "jacksons-chameleon-legal-guide" },
         { label: "Budget", value: "$50 to $250 for the chameleon, and captive-bred is worth the price over a parasitized wild-caught Hawaiian animal. Setup roughly $400 to $525, then $50 to $100 a month. A routine exam runs $50 to $100.", source: "jacksons-chameleon-cost-guide" },
         { label: "Lifespan, by sex", value: "Males 8 to 10 years, females 3 to 5.", source: "jacksons-chameleon-cost-guide" },
         { label: "Adult size", value: "9 to 13 inches (23 to 33 cm)." },
@@ -814,7 +814,7 @@ export const lizardGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal", value: "Eleven jurisdictions restrict it, five as bans and six as paperwork; the other 41 place no restriction. Louisiana names this species on its prohibited list.", source: "savannah-monitor-legal-guide" },
+        { label: "Legal", value: "Twelve jurisdictions restrict it, five as bans and seven as paperwork; the other 40 place no restriction. Louisiana names this species on its prohibited list.", source: "savannah-monitor-legal-guide" },
         { label: "Day one", value: "Quarantine 3 to 6 months on plain paper towel away from other reptiles, with a vet check and fresh fecal sample within two weeks.", source: "reptile-quarantine-guide" },
         { label: "Where it came from", value: "Most are wild-caught or farmed in bulk, so many arrive stressed and parasitized. A fecal exam for any new monitor, symptoms or not.", source: "savannah-monitor-cost-guide" },
         { label: "Enclosure", value: "A hatchling starts around 36x24x20 inches; an adult needs 8 by 4 by 4 feet minimum, one per enclosure. The ready-made 8-foot PVC unit is 8x2x2, so adult housing is a DIY build.", source: "savannah-monitor-tank-setup-guide" },
@@ -852,7 +852,7 @@ export const lizardGuides = [
       { slug: "savannah-monitor-handling-guide", line: "Why this is not the ackie, the five warning signals that end a session, the grip for when an animal has to be controlled, and the nail trim that takes three people." },
       { slug: "savannah-monitor-health-issues-guide", line: "Obesity and fatty liver disease as the defining problem, the wild feeding rhythm that explains it, MBD, and the parasite screen every new animal needs." },
       { slug: "savannah-monitor-enrichment-guide", line: "Eight of eight monitors opening a puzzle tube in ten minutes, why that evidence is genus-level rather than species-level, and puzzle feeding that adds work instead of calories." },
-      { slug: "savannah-monitor-legal-guide", line: "Legal in 41 of 52 jurisdictions, the one state that names this species, and the Arkansas list that clears ten monitors and stops one name short." },
+      { slug: "savannah-monitor-legal-guide", line: "Legal in 40 of 52 jurisdictions, the one state that names this species, and the Arkansas list that clears ten monitors and stops one name short." },
     ],
     buyList: [
       "8x4x4 ft enclosure, realistically a DIY build or a direct order",

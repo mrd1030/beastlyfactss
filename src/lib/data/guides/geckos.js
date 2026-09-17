@@ -543,7 +543,7 @@ export const geckoGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal check", value: "No permit needed in 49 of 52 US jurisdictions. Hawaii allows it for research and exhibition only, the District of Columbia bars it by omission, Minnesota treats lizards as protected wild animals.", source: "tokay-gecko-legal-guide" },
+        { label: "Legal check", value: "No permit needed in 48 of 52 US jurisdictions. Hawaii allows it for research and exhibition only, the District of Columbia bars it by omission, West Virginia asks for an importation permit, Minnesota treats lizards as protected wild animals.", source: "tokay-gecko-legal-guide" },
         { label: "Quarantine", value: "3 to 6 months for a new reptile, the longer window for a wild-caught animal, in its own room, with a fecal exam early and a repeat before it ends, and a weekly weight.", source: "tokay-gecko-health-issues-guide" },
         { label: "Enclosure", value: "18 by 18 by 36 inches tall minimum, front-opening for a defensive species, with branches, cork, and foliage spanning the full height. One per enclosure unless deliberately pairing.", source: "tokay-gecko-tank-setup-guide" },
         { label: "Temperature", value: "Basking 90 to 105F, cooler zone 80 to 85F, and nights at 75 to 80F, warmer than many homes run, from a ceramic emitter or deep heat projector on a thermostat. This species needs night heat more than most.", source: "tokay-gecko-tank-setup-guide" },
@@ -584,7 +584,7 @@ export const geckoGuides = [
       { slug: "tokay-gecko-feeding-guide", line: "Five minutes of insects no wider than the head, daily young and every other day adult, gut-loaded two to three days, mice twice a month at most." },
       { slug: "tokay-gecko-health-issues-guide", line: "MBD, respiratory infection, retained shed, parasites, prolapse, the wild-caught quarantine, and the vet-call list." },
       { slug: "tokay-gecko-enrichment-guide", line: "The 2024 pair-housing study, usable vertical structure, retreats at every level, and the priority order." },
-      { slug: "tokay-gecko-legal-guide", line: "Legal in 49 of 52 jurisdictions, the three that are not, and why New Jersey exempts this gecko specifically." },
+      { slug: "tokay-gecko-legal-guide", line: "Legal in 48 of 52 jurisdictions, the four that are not, and why New Jersey exempts this gecko specifically." },
     ],
     buyList: [
       "Vertical arboreal enclosure, 18x18x36 inches or larger, front-opening",
@@ -606,7 +606,7 @@ export const geckoGuides = [
     faqs: [
       { q: "What temperatures does a tokay gecko need?", a: "A basking area of 90 to 105F, a cooler zone of 80 to 85F, and nighttime temperatures staying warmer than many homes naturally run, 75 to 80F, not dropping below about 70F." },
       { q: "Does buying a captive-bred tokay gecko make it easier to handle?", a: "It helps, and meaningfully. A captive-bred tokay runs calmer and more tolerant than a wild-caught one, though most keep a real baseline of defensiveness. Even a settled individual is a display animal, not a handling pet." },
-      { q: "Are tokay geckos legal in the US?", a: "In 49 of 52 jurisdictions, with no permit. Only Hawaii and the District of Columbia bar them, and Minnesota attaches conditions that apply to every lizard rather than to this species specifically." },
+      { q: "Are tokay geckos legal in the US?", a: "In 48 of 52 jurisdictions, with no permit. Only Hawaii and the District of Columbia bar them, West Virginia asks for an importation permit, and Minnesota attaches conditions that apply to every lizard rather than to this species specifically." },
     ],
   },
 ];
