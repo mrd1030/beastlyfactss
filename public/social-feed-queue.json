@@ -2,204 +2,92 @@
   "description": "Publish queue for the on-site social feed (/feed/). A pg_cron job calls the post-social-feed edge function daily at 15:00 UTC (see supabase/social_feed_automation.sql); the function fetches this file from the live site and inserts every pending entry whose post_date (America/New_York) has arrived into public.social_posts, deduped forever by queue id, so stale entries and repeat calls are harmless. A weekly routine refills pending with the coming week's posts drawn from releasing articles, facts that have photos in FACT_IMAGES, and Chronicles. Caption rules match docs/RULES.md and the social voice: hook first, no URLs in the caption (link_url carries the page), 2 to 4 #hashtags at the end, no em or en dashes, US spelling. media_url and link_url are site-relative; the function makes them absolute.",
   "pending": [
     {
-      "id": "2026-08-31-dex-part-14",
-      "post_date": "2026-08-31",
+      "id": "2026-09-18-ghost-shrimp-tank-setup",
+      "post_date": "2026-09-18",
       "media_type": "image",
-      "media_url": "/assets/images/dex/dex-chron14.jpg",
-      "caption": "Dex is back. Part 14 of the Chronicles just dropped, and this one is called The Long Drop, which should worry you exactly as much as it worries Dex. Otis has a new episode up too. #chronicles #beardeddragon #petstories",
-      "link_url": "/chronicles/dex/14/"
+      "media_url": "/assets/images/ghost-shrimp-tank-setup.jpg",
+      "caption": "Ghost shrimp get added to an existing tank on impulse more than almost any other animal in the hobby. The setup is genuinely easy. The tankmates are where it goes wrong. #ghostshrimp #aquarium #shrimpkeeping",
+      "link_url": "/blog/ghost-shrimp-tank-setup-guide/"
     },
     {
-      "id": "2026-08-31-pygmy-marmoset-fact",
-      "post_date": "2026-08-31",
+      "id": "2026-09-18-cherry-shrimp-molt-fact",
+      "post_date": "2026-09-18",
       "media_type": "image",
-      "media_url": "/assets/facts/pygmy-marmoset.jpg",
-      "caption": "The pygmy marmoset weighs about as much as a stick of butter and is still a full grown monkey. Some of its calls are pitched so high that predators, and you, cannot hear them at all. #pygmymarmoset #monkey #animalfacts",
-      "link_url": "/facts/too-high-to-hear/"
+      "media_url": "/assets/facts/cherry-shrimp.jpg",
+      "caption": "A cherry shrimp finishes molting, turns around, and eats the shell it just climbed out of. All that calcium is already paid for. Leave the molt in the tank. #cherryshrimp #aquarium #animalfacts",
+      "link_url": "/facts/recycling-its-own-shell/"
     },
     {
-      "id": "2026-08-31-uromastyx-vs-beardie",
-      "post_date": "2026-08-31",
+      "id": "2026-09-19-zebra-finch-handling",
+      "post_date": "2026-09-19",
       "media_type": "image",
-      "media_url": "/assets/images/uromastyx-vs-bearded-dragon.jpg",
-      "caption": "Uromastyx or bearded dragon? Both are chill desert lizards with big personalities, but one eats salad for life and the other needs a bug budget. Full comparison is up now. #uromastyx #beardeddragon #reptiles",
-      "link_url": "/blog/uromastyx-vs-bearded-dragon-guide/"
+      "media_url": "/assets/images/zebra-finch-handling.jpg",
+      "caption": "A zebra finch will not talk to you and will not sit on your finger, and pushing for either is how you end up with a stressed bird. What they offer instead is a quieter kind of pet entirely. #zebrafinch #birds #petbirds",
+      "link_url": "/blog/zebra-finch-handling-guide/"
     },
     {
-      "id": "2026-09-01-dachshund-fact",
-      "post_date": "2026-09-01",
+      "id": "2026-09-20-parrotlet-handling",
+      "post_date": "2026-09-20",
       "media_type": "image",
-      "media_url": "/assets/facts/dachshund.jpg",
-      "caption": "Dachshund literally means badger dog in German. The short legs come from a form of dwarfism that was bred in on purpose, ideal for following a badger into its own burrow. #dachshund #dogfacts #dogs",
-      "link_url": "/facts/built-for-the-burrow/"
+      "media_url": "/assets/images/parrotlet-handling.jpg",
+      "caption": "The parrotlet is the smallest parrot commonly kept and seems to be the last to find out. The bite is much stronger than a budgie's, and an under-socialized one is a harder bird than its size suggests. #parrotlet #parrots #petbirds",
+      "link_url": "/blog/parrotlet-handling-guide/"
     },
     {
-      "id": "2026-09-01-gerbil-vs-guinea-pig",
-      "post_date": "2026-09-01",
+      "id": "2026-09-20-bowerbird-fact",
+      "post_date": "2026-09-20",
       "media_type": "image",
-      "media_url": "/assets/images/gerbil-vs-guinea-pig.jpg",
-      "caption": "Gerbil vs guinea pig is really a question of space, noise, and how much veggie prep you want in your life. We lined them up side by side so you can pick with your eyes open. #gerbil #guineapig #smallpets",
-      "link_url": "/blog/gerbil-vs-guinea-pig-guide/"
+      "media_url": "/assets/facts/satin-bowerbird.jpg",
+      "caption": "A male satin bowerbird builds an avenue of twigs that is not a nest and never will be. It is a stage, he decorates it in blue, and he will steal blue from a rival's bower to do it. #bowerbird #birds #animalfacts",
+      "link_url": "/facts/the-blue-collector/"
     },
     {
-      "id": "2026-09-01-gerbil-vs-hamster",
-      "post_date": "2026-09-01",
+      "id": "2026-09-21-dex-part-17",
+      "post_date": "2026-09-21",
       "media_type": "image",
-      "media_url": "/assets/images/gerbil-vs-hamster.jpg",
-      "caption": "Gerbil or hamster? One is a social sprinter that should live in pairs, the other a solitary night owl that will fight a roommate. The right pick depends on your schedule more than your shelf space. Full comparison now on the site. #gerbil #hamster #smallpets",
-      "link_url": "/blog/gerbil-vs-hamster-guide/"
+      "media_url": "/assets/images/dex/dex-chron17.jpg",
+      "caption": "Part 17 of the Chronicles is up, and Dex has a case: The Case of the Missing Cricket. The suspect list is short and he is on it. Otis has a new part too. #chronicles #beardeddragon #petstories",
+      "link_url": "/chronicles/dex/17/"
     },
     {
-      "id": "2026-09-01-beardie-shopping-list",
-      "post_date": "2026-09-01",
+      "id": "2026-09-21-rat-handling",
+      "post_date": "2026-09-21",
       "media_type": "image",
-      "media_url": "/assets/images/bearded-dragon-shopping-list.jpg",
-      "caption": "The pet store starter kit is the expensive way to start a bearded dragon. We put the whole buy once setup in one cart, real prices included, plus the stuff to leave on the shelf. #beardeddragon #reptilecare #petgear",
-      "link_url": "/blog/bearded-dragon-shopping-list/"
+      "media_url": "/assets/images/rat-handling.jpg",
+      "caption": "Rats are one of the most hands-on small pets there is, and real biting is rare enough that most of what gets called a bite turns out to be something else. Knowing the difference changes how you handle them. #petrats #smallpets #rats",
+      "link_url": "/blog/rat-handling-guide/"
     },
     {
-      "id": "2026-09-02-chinchilla-vs-hamster",
-      "post_date": "2026-09-02",
+      "id": "2026-09-22-mouse-tank-setup",
+      "post_date": "2026-09-22",
       "media_type": "image",
-      "media_url": "/assets/images/chinchilla-vs-hamster.jpg",
-      "caption": "A chinchilla can live 15 years and needs a cool room and regular dust baths. A hamster asks for far less and gives you two or three years. Very different commitments hiding behind similar cages. #chinchilla #hamster #smallpets",
-      "link_url": "/blog/chinchilla-vs-hamster-guide/"
+      "media_url": "/assets/images/mouse-tank-setup.jpg",
+      "caption": "Mouse housing runs backwards from most small mammal advice. The glass tank that is the right call for a gerbil is specifically the wrong one for a mouse, and ammonia is the reason. #petmice #smallpets #miceofinstagram",
+      "link_url": "/blog/mouse-tank-setup-guide/"
     },
     {
-      "id": "2026-09-02-degu-vs-chinchilla",
-      "post_date": "2026-09-02",
+      "id": "2026-09-22-mouse-b12-fact",
+      "post_date": "2026-09-22",
       "media_type": "image",
-      "media_url": "/assets/images/degu-vs-chinchilla.jpg",
-      "caption": "Degu vs chinchilla looks like a coin flip until you read their care sheets. One is awake with you all day, the other parties after midnight, and their dust bath routines are not the same. New comparison guide is live. #degu #chinchilla #smallpets",
-      "link_url": "/blog/degu-vs-chinchilla-guide/"
+      "media_url": "/assets/facts/fancy-mouse.jpg",
+      "caption": "Mice eating their own droppings is not a fixed habit, it is a nutrient reading. Fed a standard diet they did it about 9.6 times a day, and fortifying the food with B12 cut it right back. #mice #animalfacts #smallpets",
+      "link_url": "/facts/eating-poop-for-the-b12/"
     },
     {
-      "id": "2026-09-02-kea-fact",
-      "post_date": "2026-09-02",
+      "id": "2026-09-23-red-footed-tortoise-feeding",
+      "post_date": "2026-09-23",
       "media_type": "image",
-      "media_url": "/assets/facts/kea.jpg",
-      "caption": "The kea is the world's only alpine parrot and one of the smartest birds alive. It also strips rubber off cars and steals wallets at New Zealand ski resorts. Researchers think all that tinkering is how it learns about its world. #kea #parrot #birdfacts",
-      "link_url": "/facts/the-alpine-kleptomaniac/"
+      "media_url": "/assets/images/red-footed-tortoise-feeding.jpg",
+      "caption": "Feed a red-footed tortoise like a sulcata and you are underfeeding it. This one is a real omnivore that needs real fruit and real animal protein, not a grazer having an occasional treat. #tortoise #redfootedtortoise #reptiles",
+      "link_url": "/blog/red-footed-tortoise-feeding-guide/"
     },
     {
-      "id": "2026-09-03-gila-monster-fact",
-      "post_date": "2026-09-03",
+      "id": "2026-09-24-garter-snake-handling",
+      "post_date": "2026-09-24",
       "media_type": "image",
-      "media_url": "/assets/facts/gila-monster.jpg",
-      "caption": "The Gila monster eats just a few meals a year, and a protein from its venom helped inspire the GLP-1 drugs behind Ozempic. Not bad for a lizard that spends most of its life underground. #gilamonster #reptiles #animalfacts",
-      "link_url": "/facts/from-venom-to-ozempic/"
-    },
-    {
-      "id": "2026-09-03-koi-vs-goldfish",
-      "post_date": "2026-09-03",
-      "media_type": "image",
-      "media_url": "/assets/images/koi-vs-goldfish.jpg",
-      "caption": "Koi and goldfish get mixed up constantly, but one outgrows a bathtub and can outlive your dog. Before you stock a pond or a tank, make sure you know which one you are actually buying. #koi #goldfish #fishkeeping",
-      "link_url": "/blog/koi-vs-goldfish-guide/"
-    },
-    {
-      "id": "2026-09-03-lovebird-vs-budgie",
-      "post_date": "2026-09-03",
-      "media_type": "image",
-      "media_url": "/assets/images/lovebird-vs-budgie.jpg",
-      "caption": "Lovebird or budgie? One talks better, one bonds harder, and the noise levels are not even close. The full comparison is up now. #lovebird #budgie #birds",
-      "link_url": "/blog/lovebird-vs-budgie-guide/"
-    },
-    {
-      "id": "2026-09-04-barreleye-fact",
-      "post_date": "2026-09-04",
-      "media_type": "image",
-      "media_url": "/assets/facts/barreleye-fish.jpg",
-      "caption": "The barreleye fish has a transparent dome for a head, and its glowing green eyes swivel inside it. Scientists assumed those eyes were stuck looking straight up until a 2009 study caught them rotating forward to track food. #barreleye #deepsea #oceanfacts",
-      "link_url": "/facts/eyes-that-swivel-forward/"
-    },
-    {
-      "id": "2026-09-04-milk-snake-vs-corn-snake",
-      "post_date": "2026-09-04",
-      "media_type": "image",
-      "media_url": "/assets/images/milk-snake-vs-corn-snake.jpg",
-      "caption": "Milk snake or corn snake? They get confused for each other and for venomous lookalikes, yet their care, temperament, and handling feel noticeably different once you have both in hand. Full breakdown on the site. #milksnake #cornsnake #reptiles",
-      "link_url": "/blog/milk-snake-vs-corn-snake-guide/"
-    },
-    {
-      "id": "2026-09-04-tarantula-vs-scorpion",
-      "post_date": "2026-09-04",
-      "media_type": "image",
-      "media_url": "/assets/images/tarantula-vs-emperor-scorpion.jpg",
-      "caption": "Tarantula vs emperor scorpion: both look intimidating, both are surprisingly beginner friendly, and the daily care is not what most people expect. We compared them head to head. #tarantula #scorpion #exoticpets",
-      "link_url": "/blog/tarantula-vs-emperor-scorpion-guide/"
-    },
-    {
-      "id": "2026-09-05-discus-cost",
-      "post_date": "2026-09-05",
-      "media_type": "image",
-      "media_url": "/assets/images/discus-cost.jpg",
-      "caption": "Discus are called the king of the aquarium, and the throne is not cheap. We broke down the real cost of doing discus right, from the tank to the water itself. #discus #aquarium #fishkeeping",
-      "link_url": "/blog/discus-cost-guide/"
-    },
-    {
-      "id": "2026-09-05-flying-squirrel-cost",
-      "post_date": "2026-09-05",
-      "media_type": "image",
-      "media_url": "/assets/images/flying-squirrel-cost.jpg",
-      "caption": "A flying squirrel costs less to buy than most people expect. Then the cage, the wheel, and the diet math show up. We priced out the real first year, line by line. #flyingsquirrel #exoticpets #petcosts",
-      "link_url": "/blog/flying-squirrel-cost-guide/"
-    },
-    {
-      "id": "2026-09-05-molly-cost",
-      "post_date": "2026-09-05",
-      "media_type": "image",
-      "media_url": "/assets/images/molly-cost.jpg",
-      "caption": "Mollies look like the cheapest fish in the store, and the fish is. The setup around it is where the receipt grows. Full first year price breakdown on the site. #molly #aquarium #fishkeeping",
-      "link_url": "/blog/molly-cost-guide/"
-    },
-    {
-      "id": "2026-09-06-basilisk-fact",
-      "post_date": "2026-09-06",
-      "media_type": "image",
-      "media_url": "/assets/facts/basilisk-lizard.jpg",
-      "caption": "The basilisk lizard runs on water. Up to 20 steps per second slap air pockets under its feet, enough to sprint about 20 meters across the surface before it drops back in and swims. #basilisk #lizard #reptilefacts",
-      "link_url": "/facts/sprinting-across-the-surface/"
-    },
-    {
-      "id": "2026-09-06-cardinal-tetra-feeding",
-      "post_date": "2026-09-06",
-      "media_type": "image",
-      "media_url": "/assets/images/cardinal-tetra-feeding.jpg",
-      "caption": "Cardinal tetras are tiny, but feeding them wrong is the fastest way to lose a school. Portion size, schedule, and what actually fits their mouths, all in the new feeding guide. #cardinaltetra #aquarium #fishkeeping",
-      "link_url": "/blog/cardinal-tetra-feeding-guide/"
-    },
-    {
-      "id": "2026-09-06-flying-squirrel-feeding",
-      "post_date": "2026-09-06",
-      "media_type": "image",
-      "media_url": "/assets/images/flying-squirrel-feeding.jpg",
-      "caption": "Feeding a flying squirrel is not just nuts and seeds. Calcium balance is the whole game, and getting it wrong shows up in their bones. The new feeding guide covers the full diet. #flyingsquirrel #exoticpets #petcare",
-      "link_url": "/blog/flying-squirrel-feeding-guide/"
-    },
-    {
-      "id": "2026-09-07-discus-handling",
-      "post_date": "2026-09-07",
-      "media_type": "image",
-      "media_url": "/assets/images/discus-handling.jpg",
-      "caption": "Discus do not want to be handled, they want to be managed. Social structure, stress triggers, and why a calm discus tank is really a well designed one. #discus #aquarium #fishkeeping",
-      "link_url": "/blog/discus-handling-guide/"
-    },
-    {
-      "id": "2026-09-07-flying-squirrel-handling",
-      "post_date": "2026-09-07",
-      "media_type": "image",
-      "media_url": "/assets/images/flying-squirrel-handling.jpg",
-      "caption": "You do not grab a flying squirrel. You become the tree. Bonding pouches, glide practice, and the patience curve that turns a nervous squirrel into a shoulder pet. New handling guide is up. #flyingsquirrel #exoticpets #pocketpets",
-      "link_url": "/blog/flying-squirrel-handling-guide/"
-    },
-    {
-      "id": "2026-09-07-molly-handling",
-      "post_date": "2026-09-07",
-      "media_type": "image",
-      "media_url": "/assets/images/molly-handling.jpg",
-      "caption": "Mollies breed like it is their job, because it is. How to handle them safely and manage the fry wave before your tank becomes a nursery. #molly #fishkeeping #aquarium",
-      "link_url": "/blog/molly-handling-guide/"
+      "media_url": "/assets/images/garter-snake-handling.jpg",
+      "caption": "A startled garter snake is far more likely to musk you than bite you, and new keepers rarely see it coming. It is a defensive reflex worth understanding rather than being put off by. #gartersnake #snakes #reptiles",
+      "link_url": "/blog/garter-snake-handling-guide/"
     }
   ]
 }
