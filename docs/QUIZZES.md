@@ -82,3 +82,25 @@ export default {
 5. Run `npx eslint src/lib/data/quizzes/ --quiet` and fix anything it flags.
 6. Commit ONLY the new quiz file and `index.js`, message like
    "Quiz #3: <title>". Push to main (a real deploy, no [CI Skip]).
+
+## When a run does not produce a quiz
+
+The Routine was created from inside a Claude session, so its session config
+carries no `sources` and no `allowed_tools`. It runs in permission mode `auto`
+with nothing pre-approved, which means the first git command that looks like it
+changes state stops for a human who is not there. The 2026-09-14 run died that
+way, blocked on `git config credential.helper`, and the run status reads
+ABANDONED rather than failed. Nothing was written and nothing raised a hand:
+quiz #3 was three days late and only got noticed by hand.
+
+The prompt now tells the Routine that the repo is already checked out, to stay
+away from `git clone` and `git config`, and to name the blocked command in its
+output instead of ending silently. `.claude/settings.json` also needs a
+`permissions.allow` list covering the git and npx commands the Routine runs so
+nothing reaches the prompt stage. The durable fix is to recreate the Routine
+with a session config like the chronicles and weekly-facts ones, which pass
+`allowed_tools` and attach the repo as a source, and which have never stalled.
+
+Quiz #3 is dated 2026-09-14, the Monday it was due, rather than the day it was
+written. That keeps the every-other-Monday cadence: the next one falls due
+2026-09-28.

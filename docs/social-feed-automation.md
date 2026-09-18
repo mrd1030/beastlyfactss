@@ -47,13 +47,46 @@ authored `funFacts` fallbacks and photo-less facts don't qualify.
 Manual posts through /composer/ are unaffected: they have no `queue_id` and the
 automation never touches them.
 
+## Why a run can stall before it starts
+
+Both agent-minted Routines in this project (this one and the biweekly quiz)
+were created from inside a Claude session rather than through the API, so their
+session config carries no `sources` and no `allowed_tools`. They run in
+permission mode `auto` with nothing pre-approved, which means the first git
+command that looks like it changes state stops for a human who is not there.
+This refill died that way on Sunday 2026-09-13, blocked on `git clone`, and the
+quiz Routine died the same way the next day on `git config credential.helper`.
+The run status reads ABANDONED and the queue simply stopped moving.
+
+Two things keep it from happening again:
+
+1. The prompt below tells the Routine the repo is already checked out and to
+   stay away from `git clone` and `git config` entirely, and to name the
+   blocked command in its output rather than ending silently.
+2. `.claude/settings.json` needs a `permissions.allow` list covering the git
+   and npx commands these Routines run, so nothing gets to the prompt stage.
+
+The durable fix is to recreate both Routines with a session config like the
+chronicles and weekly-facts ones, which pass `allowed_tools` and attach the
+repo as a source. Those two have never stalled.
+
 ## Weekly refill Routine prompt
 
 > You are the weekly refill for the beastlyfacts.com on-site social feed. Your
 > only job is to rewrite the `pending` array in `public/social-feed-queue.json`
 > (repo mrd1030/beastlyfactss, main branch) with the coming 7 days of posts,
-> then commit and push. Read `docs/social-feed-automation.md` and
-> `docs/RULES.md` first.
+> then commit and push.
+>
+> ENVIRONMENT, READ THIS FIRST. The repository is ALREADY checked out in your
+> working directory. Do NOT run `git clone`. Do NOT run `git config`, do not
+> inspect or change `credential.helper`, and do not try to diagnose push
+> credentials: they are already configured and `git push -u origin main` works
+> as is. If any command IS blocked by a permission prompt, your final output
+> must name the exact command that was blocked and what you had completed up to
+> that point. Never end silently, and never report success for a run that did
+> not commit.
+>
+> Read `docs/social-feed-automation.md` and `docs/RULES.md` first.
 >
 > 1. Read `public/social-feed-queue.json`. Remove entries whose `post_date` is
 >    in the past (they are already posted; the `queue_id` dedupe makes removal
@@ -62,17 +95,22 @@ automation never touches them.
 >    `public/articles.json` dated in the window, Chronicles pairs releasing
 >    Monday, and 2 to 3 facts from `src/lib/data/facts.js` that have a photo in
 >    `src/lib/data/factImages.js` and have not been used in the queue before
->    (check git history of the queue file if unsure; when in doubt pick older
->    fact ids that have never appeared).
+>    (check git history of the queue file if unsure). Prefer HIGH fact ids: the
+>    poster's fact floor works through unposted facts oldest id first, so a low
+>    id you queue may be one it already posted on its own.
 > 3. Write 1 to 2 posts per day: mostly one article promo per day, facts every
 >    second day. Captions follow the voice rules above, 1 to 3 sentences, hook
->    first, no URLs, hashtags last. `link_url` is `/blog/<slug>/` for articles
->    and `/facts/<title-slug>/` for facts (slugified fact title). `media_url`
->    is the article's `image` field, or `/assets/facts/<file>` from
->    FACT_IMAGES. `id` is `<post_date>-<short-slug>`, unique forever.
-> 4. Stage and commit ONLY `public/social-feed-queue.json`, message like
+>    first, no URLs, hashtags last. Verify each claim against the page you are
+>    promoting rather than writing from its title. `link_url` is
+>    `/blog/<slug>/` for articles and `/facts/<title-slug>/` for facts
+>    (slugified fact title). `media_url` is the article's `image` field, or
+>    `/assets/facts/<file>` from FACT_IMAGES. `id` is `<post_date>-<short-slug>`,
+>    unique forever.
+> 4. Verify every `media_url` exists under `public/` before committing. Drop any
+>    post whose image is missing rather than shipping a broken one.
+> 5. Stage and commit ONLY `public/social-feed-queue.json`, message like
 >    "Refill social feed queue: <date range>". Push to origin main. This push
 >    must NOT include [CI Skip]: the queue only reaches the poster once the
 >    site deploys.
-> 5. If there is no releasing content and no unused photographed facts, say so
+> 6. If there is no releasing content and no unused photographed facts, say so
 >    in your output and stop without committing.
