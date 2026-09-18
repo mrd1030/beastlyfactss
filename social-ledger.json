@@ -392,6 +392,230 @@
       {
         "id": 62,
         "date": "2026-09-18"
+      },
+      {
+        "id": 178,
+        "date": "2026-09-19"
+      },
+      {
+        "id": 180,
+        "date": "2026-09-19"
+      },
+      {
+        "id": 182,
+        "date": "2026-09-20"
+      },
+      {
+        "id": 188,
+        "date": "2026-09-20"
+      },
+      {
+        "id": 192,
+        "date": "2026-09-21"
+      },
+      {
+        "id": 324,
+        "date": "2026-09-21"
+      },
+      {
+        "id": 317,
+        "date": "2026-09-22"
+      },
+      {
+        "id": 273,
+        "date": "2026-09-22"
+      },
+      {
+        "id": 141,
+        "date": "2026-09-23"
+      },
+      {
+        "id": 290,
+        "date": "2026-09-23"
+      },
+      {
+        "id": 166,
+        "date": "2026-09-24"
+      },
+      {
+        "id": 162,
+        "date": "2026-09-24"
+      },
+      {
+        "id": 170,
+        "date": "2026-09-25"
+      },
+      {
+        "id": 319,
+        "date": "2026-09-25"
+      },
+      {
+        "id": 193,
+        "date": "2026-09-26"
+      },
+      {
+        "id": 189,
+        "date": "2026-09-26"
+      },
+      {
+        "id": 276,
+        "date": "2026-09-27"
+      },
+      {
+        "id": 287,
+        "date": "2026-09-27"
+      },
+      {
+        "id": 320,
+        "date": "2026-09-28"
+      },
+      {
+        "id": 323,
+        "date": "2026-09-28"
+      },
+      {
+        "id": 186,
+        "date": "2026-09-29"
+      },
+      {
+        "id": 181,
+        "date": "2026-09-29"
+      },
+      {
+        "id": 279,
+        "date": "2026-09-30"
+      },
+      {
+        "id": 167,
+        "date": "2026-09-30"
+      },
+      {
+        "id": 158,
+        "date": "2026-10-01"
+      },
+      {
+        "id": 171,
+        "date": "2026-10-01"
+      },
+      {
+        "id": 322,
+        "date": "2026-10-02"
+      },
+      {
+        "id": 260,
+        "date": "2026-10-02"
+      },
+      {
+        "id": 153,
+        "date": "2026-10-03"
+      },
+      {
+        "id": 151,
+        "date": "2026-10-03"
+      },
+      {
+        "id": 156,
+        "date": "2026-10-04"
+      },
+      {
+        "id": 165,
+        "date": "2026-10-04"
+      },
+      {
+        "id": 149,
+        "date": "2026-10-05"
+      },
+      {
+        "id": 144,
+        "date": "2026-10-05"
+      },
+      {
+        "id": 143,
+        "date": "2026-10-06"
+      },
+      {
+        "id": 174,
+        "date": "2026-10-06"
+      },
+      {
+        "id": 179,
+        "date": "2026-10-07"
+      },
+      {
+        "id": 184,
+        "date": "2026-10-07"
+      },
+      {
+        "id": 191,
+        "date": "2026-10-08"
+      },
+      {
+        "id": 200,
+        "date": "2026-10-08"
+      },
+      {
+        "id": 205,
+        "date": "2026-10-09"
+      },
+      {
+        "id": 218,
+        "date": "2026-10-09"
+      },
+      {
+        "id": 241,
+        "date": "2026-10-10"
+      },
+      {
+        "id": 249,
+        "date": "2026-10-10"
+      },
+      {
+        "id": 251,
+        "date": "2026-10-11"
+      },
+      {
+        "id": 253,
+        "date": "2026-10-11"
+      },
+      {
+        "id": 255,
+        "date": "2026-10-12"
+      },
+      {
+        "id": 257,
+        "date": "2026-10-12"
+      },
+      {
+        "id": 266,
+        "date": "2026-10-13"
+      },
+      {
+        "id": 271,
+        "date": "2026-10-13"
+      },
+      {
+        "id": 277,
+        "date": "2026-10-14"
+      },
+      {
+        "id": 281,
+        "date": "2026-10-14"
+      },
+      {
+        "id": 289,
+        "date": "2026-10-15"
+      },
+      {
+        "id": 294,
+        "date": "2026-10-15"
+      },
+      {
+        "id": 315,
+        "date": "2026-10-16"
+      },
+      {
+        "id": 318,
+        "date": "2026-10-16"
       }
     ],
     "articles": [
@@ -586,9 +810,121 @@
       {
         "file": "content/guides/savannah-monitor-cost-guide.mdx",
         "date": "2026-09-18"
+      },
+      {
+        "file": "content/guides/african-grey-parrot-health-issues-guide.mdx",
+        "date": "2026-09-19"
+      },
+      {
+        "file": "content/guides/veiled-chameleon-cost-guide.mdx",
+        "date": "2026-09-20"
+      },
+      {
+        "file": "content/guides/guinea-pig-health-issues-guide.mdx",
+        "date": "2026-09-21"
+      },
+      {
+        "file": "content/guides/koi-cost-guide.mdx",
+        "date": "2026-09-22"
+      },
+      {
+        "file": "content/guides/hognose-snake-health-issues-guide.mdx",
+        "date": "2026-09-23"
+      },
+      {
+        "file": "content/guides/degu-cost-guide.mdx",
+        "date": "2026-09-24"
+      },
+      {
+        "file": "content/guides/praying-mantis-cost-guide.mdx",
+        "date": "2026-09-25"
+      },
+      {
+        "file": "content/guides/cockatoo-cost-guide.mdx",
+        "date": "2026-09-26"
+      },
+      {
+        "file": "content/guides/corn-snake-health-issues-guide.mdx",
+        "date": "2026-09-27"
+      },
+      {
+        "file": "content/guides/bearded-dragon-health-issues-guide.mdx",
+        "date": "2026-09-28"
+      },
+      {
+        "file": "content/guides/oscar-fish-cost-guide.mdx",
+        "date": "2026-09-29"
+      },
+      {
+        "file": "content/guides/jumping-spider-cost-guide.mdx",
+        "date": "2026-09-30"
+      },
+      {
+        "file": "content/guides/rat-health-issues-guide.mdx",
+        "date": "2026-10-01"
+      },
+      {
+        "file": "content/guides/uromastyx-cost-guide.mdx",
+        "date": "2026-10-02"
+      },
+      {
+        "file": "content/guides/leopard-gecko-health-issues-guide.mdx",
+        "date": "2026-10-03"
+      },
+      {
+        "file": "content/guides/gerbil-cost-guide.mdx",
+        "date": "2026-10-04"
+      },
+      {
+        "file": "content/guides/angelfish-health-issues-guide.mdx",
+        "date": "2026-10-05"
+      },
+      {
+        "file": "content/guides/argentine-tegu-cost-guide.mdx",
+        "date": "2026-10-06"
+      },
+      {
+        "file": "content/guides/budgie-health-issues-guide.mdx",
+        "date": "2026-10-07"
+      },
+      {
+        "file": "content/guides/crested-gecko-health-issues-guide.mdx",
+        "date": "2026-10-08"
+      },
+      {
+        "file": "content/guides/hedgehog-cost-guide.mdx",
+        "date": "2026-10-09"
+      },
+      {
+        "file": "content/guides/tokay-gecko-cost-guide.mdx",
+        "date": "2026-10-10"
+      },
+      {
+        "file": "content/guides/guppy-health-issues-guide.mdx",
+        "date": "2026-10-11"
+      },
+      {
+        "file": "content/guides/conure-cost-guide.mdx",
+        "date": "2026-10-12"
+      },
+      {
+        "file": "content/guides/milk-snake-health-issues-guide.mdx",
+        "date": "2026-10-13"
+      },
+      {
+        "file": "content/guides/emperor-scorpion-cost-guide.mdx",
+        "date": "2026-10-14"
+      },
+      {
+        "file": "content/guides/pacman-frog-health-issues-guide.mdx",
+        "date": "2026-10-15"
+      },
+      {
+        "file": "content/guides/discus-cost-guide.mdx",
+        "date": "2026-10-16"
       }
     ],
-    "nextStart": "2026-09-19"
+    "nextStart": "2026-10-17"
   },
   "ig": {
     "facts": [
@@ -675,6 +1011,118 @@
       {
         "id": 136,
         "date": "2026-09-11"
+      },
+      {
+        "id": 21,
+        "date": "2026-09-19"
+      },
+      {
+        "id": 27,
+        "date": "2026-09-20"
+      },
+      {
+        "id": 34,
+        "date": "2026-09-21"
+      },
+      {
+        "id": 61,
+        "date": "2026-09-22"
+      },
+      {
+        "id": 92,
+        "date": "2026-09-23"
+      },
+      {
+        "id": 28,
+        "date": "2026-09-24"
+      },
+      {
+        "id": 30,
+        "date": "2026-09-25"
+      },
+      {
+        "id": 117,
+        "date": "2026-09-26"
+      },
+      {
+        "id": 121,
+        "date": "2026-09-27"
+      },
+      {
+        "id": 122,
+        "date": "2026-09-28"
+      },
+      {
+        "id": 132,
+        "date": "2026-09-29"
+      },
+      {
+        "id": 139,
+        "date": "2026-09-30"
+      },
+      {
+        "id": 143,
+        "date": "2026-10-01"
+      },
+      {
+        "id": 145,
+        "date": "2026-10-02"
+      },
+      {
+        "id": 155,
+        "date": "2026-10-03"
+      },
+      {
+        "id": 159,
+        "date": "2026-10-04"
+      },
+      {
+        "id": 161,
+        "date": "2026-10-05"
+      },
+      {
+        "id": 163,
+        "date": "2026-10-06"
+      },
+      {
+        "id": 164,
+        "date": "2026-10-07"
+      },
+      {
+        "id": 169,
+        "date": "2026-10-08"
+      },
+      {
+        "id": 173,
+        "date": "2026-10-09"
+      },
+      {
+        "id": 179,
+        "date": "2026-10-10"
+      },
+      {
+        "id": 180,
+        "date": "2026-10-11"
+      },
+      {
+        "id": 184,
+        "date": "2026-10-12"
+      },
+      {
+        "id": 241,
+        "date": "2026-10-13"
+      },
+      {
+        "id": 266,
+        "date": "2026-10-14"
+      },
+      {
+        "id": 281,
+        "date": "2026-10-15"
+      },
+      {
+        "id": 294,
+        "date": "2026-10-16"
       }
     ],
     "articles": [
@@ -917,9 +1365,329 @@
       {
         "file": "content/guides/african-grey-parrot-health-issues-guide.mdx",
         "date": "2026-09-11"
+      },
+      {
+        "file": "content/guides/cockatoo-cost-guide.mdx",
+        "date": "2026-09-19"
+      },
+      {
+        "file": "content/guides/cockatoo-handling-guide.mdx",
+        "date": "2026-09-19"
+      },
+      {
+        "file": "content/guides/cockatoo-tank-setup-guide.mdx",
+        "date": "2026-09-19"
+      },
+      {
+        "file": "content/guides/cockatoo-health-issues-guide.mdx",
+        "date": "2026-09-19"
+      },
+      {
+        "file": "content/guides/cockatoo-feeding-guide.mdx",
+        "date": "2026-09-19"
+      },
+      {
+        "file": "content/guides/conure-cost-guide.mdx",
+        "date": "2026-09-21"
+      },
+      {
+        "file": "content/guides/conure-handling-guide.mdx",
+        "date": "2026-09-21"
+      },
+      {
+        "file": "content/guides/conure-tank-setup-guide.mdx",
+        "date": "2026-09-21"
+      },
+      {
+        "file": "content/guides/conure-health-issues-guide.mdx",
+        "date": "2026-09-21"
+      },
+      {
+        "file": "content/guides/conure-feeding-guide.mdx",
+        "date": "2026-09-21"
+      },
+      {
+        "file": "content/guides/hedgehog-cost-guide.mdx",
+        "date": "2026-09-23"
+      },
+      {
+        "file": "content/guides/hedgehog-handling-guide.mdx",
+        "date": "2026-09-23"
+      },
+      {
+        "file": "content/guides/hedgehog-tank-setup-guide.mdx",
+        "date": "2026-09-23"
+      },
+      {
+        "file": "content/guides/hedgehog-health-issues-guide.mdx",
+        "date": "2026-09-23"
+      },
+      {
+        "file": "content/guides/hedgehog-feeding-guide.mdx",
+        "date": "2026-09-23"
+      },
+      {
+        "file": "content/guides/sugar-glider-cost-guide.mdx",
+        "date": "2026-09-25"
+      },
+      {
+        "file": "content/guides/sugar-glider-handling-guide.mdx",
+        "date": "2026-09-25"
+      },
+      {
+        "file": "content/guides/sugar-glider-tank-setup-guide.mdx",
+        "date": "2026-09-25"
+      },
+      {
+        "file": "content/guides/sugar-glider-health-issues-guide.mdx",
+        "date": "2026-09-25"
+      },
+      {
+        "file": "content/guides/sugar-glider-feeding-guide.mdx",
+        "date": "2026-09-25"
+      },
+      {
+        "file": "content/guides/degu-cost-guide.mdx",
+        "date": "2026-09-26"
+      },
+      {
+        "file": "content/guides/degu-handling-guide.mdx",
+        "date": "2026-09-26"
+      },
+      {
+        "file": "content/guides/degu-tank-setup-guide.mdx",
+        "date": "2026-09-26"
+      },
+      {
+        "file": "content/guides/degu-health-issues-guide.mdx",
+        "date": "2026-09-26"
+      },
+      {
+        "file": "content/guides/degu-feeding-guide.mdx",
+        "date": "2026-09-26"
+      },
+      {
+        "file": "content/guides/flying-squirrel-cost-guide.mdx",
+        "date": "2026-09-28"
+      },
+      {
+        "file": "content/guides/flying-squirrel-handling-guide.mdx",
+        "date": "2026-09-28"
+      },
+      {
+        "file": "content/guides/flying-squirrel-tank-setup-guide.mdx",
+        "date": "2026-09-28"
+      },
+      {
+        "file": "content/guides/flying-squirrel-health-issues-guide.mdx",
+        "date": "2026-09-28"
+      },
+      {
+        "file": "content/guides/flying-squirrel-feeding-guide.mdx",
+        "date": "2026-09-28"
+      },
+      {
+        "file": "content/guides/tokay-gecko-cost-guide.mdx",
+        "date": "2026-09-30"
+      },
+      {
+        "file": "content/guides/tokay-gecko-handling-guide.mdx",
+        "date": "2026-09-30"
+      },
+      {
+        "file": "content/guides/tokay-gecko-tank-setup-guide.mdx",
+        "date": "2026-09-30"
+      },
+      {
+        "file": "content/guides/tokay-gecko-health-issues-guide.mdx",
+        "date": "2026-09-30"
+      },
+      {
+        "file": "content/guides/tokay-gecko-feeding-guide.mdx",
+        "date": "2026-09-30"
+      },
+      {
+        "file": "content/guides/jacksons-chameleon-cost-guide.mdx",
+        "date": "2026-10-02"
+      },
+      {
+        "file": "content/guides/jacksons-chameleon-handling-guide.mdx",
+        "date": "2026-10-02"
+      },
+      {
+        "file": "content/guides/jacksons-chameleon-tank-setup-guide.mdx",
+        "date": "2026-10-02"
+      },
+      {
+        "file": "content/guides/jacksons-chameleon-health-issues-guide.mdx",
+        "date": "2026-10-02"
+      },
+      {
+        "file": "content/guides/jacksons-chameleon-feeding-guide.mdx",
+        "date": "2026-10-02"
+      },
+      {
+        "file": "content/guides/milk-snake-cost-guide.mdx",
+        "date": "2026-10-03"
+      },
+      {
+        "file": "content/guides/milk-snake-handling-guide.mdx",
+        "date": "2026-10-03"
+      },
+      {
+        "file": "content/guides/milk-snake-tank-setup-guide.mdx",
+        "date": "2026-10-03"
+      },
+      {
+        "file": "content/guides/milk-snake-health-issues-guide.mdx",
+        "date": "2026-10-03"
+      },
+      {
+        "file": "content/guides/milk-snake-feeding-guide.mdx",
+        "date": "2026-10-03"
+      },
+      {
+        "file": "content/guides/discus-cost-guide.mdx",
+        "date": "2026-10-05"
+      },
+      {
+        "file": "content/guides/discus-handling-guide.mdx",
+        "date": "2026-10-05"
+      },
+      {
+        "file": "content/guides/discus-tank-setup-guide.mdx",
+        "date": "2026-10-05"
+      },
+      {
+        "file": "content/guides/discus-health-issues-guide.mdx",
+        "date": "2026-10-05"
+      },
+      {
+        "file": "content/guides/discus-feeding-guide.mdx",
+        "date": "2026-10-05"
+      },
+      {
+        "file": "content/guides/koi-cost-guide.mdx",
+        "date": "2026-10-07"
+      },
+      {
+        "file": "content/guides/koi-handling-guide.mdx",
+        "date": "2026-10-07"
+      },
+      {
+        "file": "content/guides/koi-tank-setup-guide.mdx",
+        "date": "2026-10-07"
+      },
+      {
+        "file": "content/guides/koi-health-issues-guide.mdx",
+        "date": "2026-10-07"
+      },
+      {
+        "file": "content/guides/koi-feeding-guide.mdx",
+        "date": "2026-10-07"
+      },
+      {
+        "file": "content/guides/cherry-shrimp-cost-guide.mdx",
+        "date": "2026-10-09"
+      },
+      {
+        "file": "content/guides/cherry-shrimp-handling-guide.mdx",
+        "date": "2026-10-09"
+      },
+      {
+        "file": "content/guides/cherry-shrimp-tank-setup-guide.mdx",
+        "date": "2026-10-09"
+      },
+      {
+        "file": "content/guides/cherry-shrimp-health-issues-guide.mdx",
+        "date": "2026-10-09"
+      },
+      {
+        "file": "content/guides/cherry-shrimp-feeding-guide.mdx",
+        "date": "2026-10-09"
+      },
+      {
+        "file": "content/guides/angelfish-cost-guide.mdx",
+        "date": "2026-10-10"
+      },
+      {
+        "file": "content/guides/angelfish-handling-guide.mdx",
+        "date": "2026-10-10"
+      },
+      {
+        "file": "content/guides/angelfish-tank-setup-guide.mdx",
+        "date": "2026-10-10"
+      },
+      {
+        "file": "content/guides/angelfish-health-issues-guide.mdx",
+        "date": "2026-10-10"
+      },
+      {
+        "file": "content/guides/angelfish-feeding-guide.mdx",
+        "date": "2026-10-10"
+      },
+      {
+        "file": "content/guides/savannah-monitor-cost-guide.mdx",
+        "date": "2026-10-12"
+      },
+      {
+        "file": "content/guides/savannah-monitor-handling-guide.mdx",
+        "date": "2026-10-12"
+      },
+      {
+        "file": "content/guides/savannah-monitor-tank-setup-guide.mdx",
+        "date": "2026-10-12"
+      },
+      {
+        "file": "content/guides/savannah-monitor-health-issues-guide.mdx",
+        "date": "2026-10-12"
+      },
+      {
+        "file": "content/guides/savannah-monitor-feeding-guide.mdx",
+        "date": "2026-10-12"
+      },
+      {
+        "file": "content/guides/argentine-tegu-cost-guide.mdx",
+        "date": "2026-10-14"
+      },
+      {
+        "file": "content/guides/argentine-tegu-handling-guide.mdx",
+        "date": "2026-10-14"
+      },
+      {
+        "file": "content/guides/argentine-tegu-tank-setup-guide.mdx",
+        "date": "2026-10-14"
+      },
+      {
+        "file": "content/guides/argentine-tegu-health-issues-guide.mdx",
+        "date": "2026-10-14"
+      },
+      {
+        "file": "content/guides/argentine-tegu-feeding-guide.mdx",
+        "date": "2026-10-14"
+      },
+      {
+        "file": "content/guides/praying-mantis-cost-guide.mdx",
+        "date": "2026-10-16"
+      },
+      {
+        "file": "content/guides/praying-mantis-handling-guide.mdx",
+        "date": "2026-10-16"
+      },
+      {
+        "file": "content/guides/praying-mantis-tank-setup-guide.mdx",
+        "date": "2026-10-16"
+      },
+      {
+        "file": "content/guides/praying-mantis-health-issues-guide.mdx",
+        "date": "2026-10-16"
+      },
+      {
+        "file": "content/guides/praying-mantis-feeding-guide.mdx",
+        "date": "2026-10-16"
       }
     ],
-    "nextStart": "2026-09-19"
+    "nextStart": "2026-10-17"
   },
   "threads": {
     "facts": [
@@ -1150,6 +1918,230 @@
       {
         "id": 107,
         "date": "2026-09-18"
+      },
+      {
+        "id": 71,
+        "date": "2026-09-19"
+      },
+      {
+        "id": 33,
+        "date": "2026-09-19"
+      },
+      {
+        "id": 35,
+        "date": "2026-09-20"
+      },
+      {
+        "id": 36,
+        "date": "2026-09-20"
+      },
+      {
+        "id": 38,
+        "date": "2026-09-21"
+      },
+      {
+        "id": 29,
+        "date": "2026-09-21"
+      },
+      {
+        "id": 31,
+        "date": "2026-09-22"
+      },
+      {
+        "id": 24,
+        "date": "2026-09-22"
+      },
+      {
+        "id": 59,
+        "date": "2026-09-23"
+      },
+      {
+        "id": 75,
+        "date": "2026-09-23"
+      },
+      {
+        "id": 66,
+        "date": "2026-09-24"
+      },
+      {
+        "id": 70,
+        "date": "2026-09-24"
+      },
+      {
+        "id": 12,
+        "date": "2026-09-25"
+      },
+      {
+        "id": 13,
+        "date": "2026-09-25"
+      },
+      {
+        "id": 10,
+        "date": "2026-09-26"
+      },
+      {
+        "id": 11,
+        "date": "2026-09-26"
+      },
+      {
+        "id": 17,
+        "date": "2026-09-27"
+      },
+      {
+        "id": 25,
+        "date": "2026-09-27"
+      },
+      {
+        "id": 39,
+        "date": "2026-09-28"
+      },
+      {
+        "id": 42,
+        "date": "2026-09-28"
+      },
+      {
+        "id": 43,
+        "date": "2026-09-29"
+      },
+      {
+        "id": 56,
+        "date": "2026-09-29"
+      },
+      {
+        "id": 57,
+        "date": "2026-09-30"
+      },
+      {
+        "id": 67,
+        "date": "2026-09-30"
+      },
+      {
+        "id": 106,
+        "date": "2026-10-01"
+      },
+      {
+        "id": 109,
+        "date": "2026-10-01"
+      },
+      {
+        "id": 110,
+        "date": "2026-10-02"
+      },
+      {
+        "id": 114,
+        "date": "2026-10-02"
+      },
+      {
+        "id": 116,
+        "date": "2026-10-03"
+      },
+      {
+        "id": 120,
+        "date": "2026-10-03"
+      },
+      {
+        "id": 124,
+        "date": "2026-10-04"
+      },
+      {
+        "id": 126,
+        "date": "2026-10-04"
+      },
+      {
+        "id": 128,
+        "date": "2026-10-05"
+      },
+      {
+        "id": 130,
+        "date": "2026-10-05"
+      },
+      {
+        "id": 134,
+        "date": "2026-10-06"
+      },
+      {
+        "id": 137,
+        "date": "2026-10-06"
+      },
+      {
+        "id": 140,
+        "date": "2026-10-07"
+      },
+      {
+        "id": 142,
+        "date": "2026-10-07"
+      },
+      {
+        "id": 146,
+        "date": "2026-10-08"
+      },
+      {
+        "id": 157,
+        "date": "2026-10-08"
+      },
+      {
+        "id": 160,
+        "date": "2026-10-09"
+      },
+      {
+        "id": 172,
+        "date": "2026-10-09"
+      },
+      {
+        "id": 175,
+        "date": "2026-10-10"
+      },
+      {
+        "id": 176,
+        "date": "2026-10-10"
+      },
+      {
+        "id": 177,
+        "date": "2026-10-11"
+      },
+      {
+        "id": 183,
+        "date": "2026-10-11"
+      },
+      {
+        "id": 185,
+        "date": "2026-10-12"
+      },
+      {
+        "id": 187,
+        "date": "2026-10-12"
+      },
+      {
+        "id": 190,
+        "date": "2026-10-13"
+      },
+      {
+        "id": 194,
+        "date": "2026-10-13"
+      },
+      {
+        "id": 269,
+        "date": "2026-10-14"
+      },
+      {
+        "id": 270,
+        "date": "2026-10-14"
+      },
+      {
+        "id": 272,
+        "date": "2026-10-15"
+      },
+      {
+        "id": 278,
+        "date": "2026-10-15"
+      },
+      {
+        "id": 280,
+        "date": "2026-10-16"
+      },
+      {
+        "id": 291,
+        "date": "2026-10-16"
       }
     ],
     "articles": [
@@ -1268,9 +2260,121 @@
       {
         "file": "content/guides/tiger-salamander-cost-guide.mdx",
         "date": "2026-09-18"
+      },
+      {
+        "file": "content/guides/ferret-cost-guide.mdx",
+        "date": "2026-09-19"
+      },
+      {
+        "file": "content/guides/goldfish-health-issues-guide.mdx",
+        "date": "2026-09-20"
+      },
+      {
+        "file": "content/guides/sugar-glider-cost-guide.mdx",
+        "date": "2026-09-21"
+      },
+      {
+        "file": "content/guides/box-turtle-health-issues-guide.mdx",
+        "date": "2026-09-22"
+      },
+      {
+        "file": "content/guides/canary-cost-guide.mdx",
+        "date": "2026-09-23"
+      },
+      {
+        "file": "content/guides/tarantula-health-issues-guide.mdx",
+        "date": "2026-09-24"
+      },
+      {
+        "file": "content/guides/green-iguana-health-issues-guide.mdx",
+        "date": "2026-09-25"
+      },
+      {
+        "file": "content/guides/axolotl-health-issues-guide.mdx",
+        "date": "2026-09-26"
+      },
+      {
+        "file": "content/guides/cockatiel-cost-guide.mdx",
+        "date": "2026-09-27"
+      },
+      {
+        "file": "content/guides/hamster-health-issues-guide.mdx",
+        "date": "2026-09-28"
+      },
+      {
+        "file": "content/guides/neon-tetra-cost-guide.mdx",
+        "date": "2026-09-29"
+      },
+      {
+        "file": "content/guides/blue-tongue-skink-cost-guide.mdx",
+        "date": "2026-09-30"
+      },
+      {
+        "file": "content/guides/savannah-monitor-health-issues-guide.mdx",
+        "date": "2026-10-01"
+      },
+      {
+        "file": "content/guides/betta-fish-health-issues-guide.mdx",
+        "date": "2026-10-02"
+      },
+      {
+        "file": "content/guides/rabbit-health-issues-guide.mdx",
+        "date": "2026-10-03"
+      },
+      {
+        "file": "content/guides/hermit-crab-cost-guide.mdx",
+        "date": "2026-10-04"
+      },
+      {
+        "file": "content/guides/chinchilla-health-issues-guide.mdx",
+        "date": "2026-10-05"
+      },
+      {
+        "file": "content/guides/russian-tortoise-health-issues-guide.mdx",
+        "date": "2026-10-06"
+      },
+      {
+        "file": "content/guides/boa-constrictor-cost-guide.mdx",
+        "date": "2026-10-07"
+      },
+      {
+        "file": "content/guides/lovebird-cost-guide.mdx",
+        "date": "2026-10-08"
+      },
+      {
+        "file": "content/guides/whites-tree-frog-health-issues-guide.mdx",
+        "date": "2026-10-09"
+      },
+      {
+        "file": "content/guides/ball-python-health-issues-guide.mdx",
+        "date": "2026-10-10"
+      },
+      {
+        "file": "content/guides/mouse-cost-guide.mdx",
+        "date": "2026-10-11"
+      },
+      {
+        "file": "content/guides/california-kingsnake-health-issues-guide.mdx",
+        "date": "2026-10-12"
+      },
+      {
+        "file": "content/guides/red-eared-slider-cost-guide.mdx",
+        "date": "2026-10-13"
+      },
+      {
+        "file": "content/guides/madagascar-hissing-cockroach-cost-guide.mdx",
+        "date": "2026-10-14"
+      },
+      {
+        "file": "content/guides/ackie-monitor-cost-guide.mdx",
+        "date": "2026-10-15"
+      },
+      {
+        "file": "content/guides/cherry-shrimp-cost-guide.mdx",
+        "date": "2026-10-16"
       }
     ],
-    "nextStart": "2026-09-19"
+    "nextStart": "2026-10-17"
   },
   "pinterest": {
     "facts": [
@@ -1301,6 +2405,118 @@
       {
         "id": 135,
         "date": "2026-09-18"
+      },
+      {
+        "id": 1,
+        "date": "2026-09-19"
+      },
+      {
+        "id": 20,
+        "date": "2026-09-20"
+      },
+      {
+        "id": 26,
+        "date": "2026-09-21"
+      },
+      {
+        "id": 60,
+        "date": "2026-09-22"
+      },
+      {
+        "id": 71,
+        "date": "2026-09-23"
+      },
+      {
+        "id": 86,
+        "date": "2026-09-24"
+      },
+      {
+        "id": 101,
+        "date": "2026-09-25"
+      },
+      {
+        "id": 115,
+        "date": "2026-09-26"
+      },
+      {
+        "id": 121,
+        "date": "2026-09-27"
+      },
+      {
+        "id": 122,
+        "date": "2026-09-28"
+      },
+      {
+        "id": 132,
+        "date": "2026-09-29"
+      },
+      {
+        "id": 137,
+        "date": "2026-09-30"
+      },
+      {
+        "id": 143,
+        "date": "2026-10-01"
+      },
+      {
+        "id": 151,
+        "date": "2026-10-02"
+      },
+      {
+        "id": 156,
+        "date": "2026-10-03"
+      },
+      {
+        "id": 162,
+        "date": "2026-10-04"
+      },
+      {
+        "id": 164,
+        "date": "2026-10-05"
+      },
+      {
+        "id": 170,
+        "date": "2026-10-06"
+      },
+      {
+        "id": 171,
+        "date": "2026-10-07"
+      },
+      {
+        "id": 179,
+        "date": "2026-10-08"
+      },
+      {
+        "id": 180,
+        "date": "2026-10-09"
+      },
+      {
+        "id": 184,
+        "date": "2026-10-10"
+      },
+      {
+        "id": 188,
+        "date": "2026-10-11"
+      },
+      {
+        "id": 189,
+        "date": "2026-10-12"
+      },
+      {
+        "id": 192,
+        "date": "2026-10-13"
+      },
+      {
+        "id": 257,
+        "date": "2026-10-14"
+      },
+      {
+        "id": 276,
+        "date": "2026-10-15"
+      },
+      {
+        "id": 287,
+        "date": "2026-10-16"
       }
     ],
     "articles": [
@@ -1331,8 +2547,120 @@
       {
         "file": "content/guides/rosy-boa-tank-setup-guide.mdx",
         "date": "2026-09-18"
+      },
+      {
+        "file": "content/guides/tokay-gecko-feeding-guide.mdx",
+        "date": "2026-09-19"
+      },
+      {
+        "file": "content/guides/jacksons-chameleon-feeding-guide.mdx",
+        "date": "2026-09-20"
+      },
+      {
+        "file": "content/guides/milk-snake-feeding-guide.mdx",
+        "date": "2026-09-21"
+      },
+      {
+        "file": "content/guides/california-kingsnake-feeding-guide.mdx",
+        "date": "2026-09-22"
+      },
+      {
+        "file": "content/guides/savannah-monitor-feeding-guide.mdx",
+        "date": "2026-09-23"
+      },
+      {
+        "file": "content/guides/argentine-tegu-feeding-guide.mdx",
+        "date": "2026-09-24"
+      },
+      {
+        "file": "content/guides/green-anole-feeding-guide.mdx",
+        "date": "2026-09-25"
+      },
+      {
+        "file": "content/guides/ball-python-tank-setup-guide.mdx",
+        "date": "2026-09-26"
+      },
+      {
+        "file": "content/guides/corn-snake-tank-setup-guide.mdx",
+        "date": "2026-09-27"
+      },
+      {
+        "file": "content/guides/blue-tongue-skink-tank-setup-guide.mdx",
+        "date": "2026-09-28"
+      },
+      {
+        "file": "content/guides/crested-gecko-tank-setup-guide.mdx",
+        "date": "2026-09-29"
+      },
+      {
+        "file": "content/guides/hognose-snake-tank-setup-guide.mdx",
+        "date": "2026-09-30"
+      },
+      {
+        "file": "content/guides/bearded-dragon-feeding-guide.mdx",
+        "date": "2026-10-01"
+      },
+      {
+        "file": "content/guides/bearded-dragon-enrichment-guide.mdx",
+        "date": "2026-10-02"
+      },
+      {
+        "file": "content/guides/discus-feeding-guide.mdx",
+        "date": "2026-10-03"
+      },
+      {
+        "file": "content/guides/angelfish-tank-setup-guide.mdx",
+        "date": "2026-10-04"
+      },
+      {
+        "file": "content/guides/koi-tank-setup-guide.mdx",
+        "date": "2026-10-05"
+      },
+      {
+        "file": "content/guides/oscar-fish-tank-setup-guide.mdx",
+        "date": "2026-10-06"
+      },
+      {
+        "file": "content/guides/betta-fish-tank-setup-guide.mdx",
+        "date": "2026-10-07"
+      },
+      {
+        "file": "content/guides/guppy-tank-setup-guide.mdx",
+        "date": "2026-10-08"
+      },
+      {
+        "file": "content/guides/corydoras-catfish-tank-setup-guide.mdx",
+        "date": "2026-10-09"
+      },
+      {
+        "file": "content/guides/hedgehog-tank-setup-guide.mdx",
+        "date": "2026-10-10"
+      },
+      {
+        "file": "content/guides/sugar-glider-tank-setup-guide.mdx",
+        "date": "2026-10-11"
+      },
+      {
+        "file": "content/guides/degu-tank-setup-guide.mdx",
+        "date": "2026-10-12"
+      },
+      {
+        "file": "content/guides/flying-squirrel-tank-setup-guide.mdx",
+        "date": "2026-10-13"
+      },
+      {
+        "file": "content/guides/ferret-tank-setup-guide.mdx",
+        "date": "2026-10-14"
+      },
+      {
+        "file": "content/guides/hamster-tank-setup-guide.mdx",
+        "date": "2026-10-15"
+      },
+      {
+        "file": "content/guides/guinea-pig-tank-setup-guide.mdx",
+        "date": "2026-10-16"
       }
     ],
-    "nextStart": "2026-09-19"
+    "nextStart": "2026-10-17"
   }
 }
