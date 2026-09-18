@@ -6,7 +6,7 @@ export const birdGuides = [
     difficulty: "Advanced",
     petType: "Birds",
     image: "/assets/guides/african-grey.jpg",
-    tagline: "The genius of the parrot world, one of the most intelligent animals on Earth!",
+    tagline: "The parrot that learns your words, your routine, and your microwave beep!",
     funFact: "African Greys have the cognitive ability of a 5-year-old child and can learn over 1,000 words. The famous parrot Alex could identify colors, shapes, and even understand the concept of 'same' and 'different'!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -299,7 +299,7 @@ export const birdGuides = [
     difficulty: "Advanced",
     petType: "Birds",
     image: "/assets/guides/cockatoo.jpg",
-    tagline: "The affectionate, screaming, decades-long commitment of a parrot that bonds almost too well!",
+    tagline: "The feathered drama major that loves you loudly and forever!",
     funFact: "Cockatoos are considered the most affection-dependent parrots in aviculture. In the wild they maintain near-constant physical contact with their flock and mate, and a captive cockatoo often expects the same level of contact from its owner - which is exactly why the species has one of the highest rates of severe feather-plucking and behavioral problems of any commonly kept parrot when that need isn't met.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -515,7 +515,7 @@ export const birdGuides = [
     difficulty: "Intermediate",
     petType: "Birds",
     image: "/assets/guides/parrotlet.jpg",
-    tagline: "The smallest parrot you can keep, with a personality far too big for its tiny body!",
+    tagline: "The pocket parrot with a personality several sizes too big for it!",
     funFact: "Despite being smaller than a budgie, the Pacific parrotlet has a noticeably stronger bite and a personality so bold that keepers often describe it as a big parrot's attitude packed into a tiny bird. It genuinely does not seem to know how small it is.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -602,7 +602,7 @@ export const birdGuides = [
     difficulty: "Intermediate",
     petType: "Birds",
     image: "/assets/guides/quaker-parakeet.jpg",
-    tagline: "The only parrot that builds its own stick nest, and the reason thirteen states ban it!",
+    tagline: "The little architect that would rather build a nest than move into one!",
     funFact: "The quaker is the only parrot that does not nest in a tree cavity. It weaves a bulky stick nest instead, often on electrical infrastructure, and the nest material arcs the current. Every US state ban on this bird is an escape-and-establishment rule rather than a dangerous-animal one.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the

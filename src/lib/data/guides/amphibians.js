@@ -81,7 +81,7 @@ export const amphibianGuides = [
     difficulty: "Beginner",
     petType: "Amphibians",
     image: "/assets/guides/fire-bellied-toad.jpg",
-    tagline: "The vivid red and black toad that warns predators of its mild toxicity!",
+    tagline: "The little green toad that flips over to flash a fiery belly!",
     funFact: "The bright red-orange belly is a warning display, not decoration. Threatened, the toad arches its back and lifts its limbs to show the color off, and every stage after that arch is the animal spending toxin on whatever is holding it.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -243,7 +243,7 @@ export const amphibianGuides = [
     difficulty: "Intermediate",
     petType: "Amphibians",
     image: "/assets/guides/tiger-salamander.jpg",
-    tagline: "North America's largest land-dwelling salamander and a remarkably personable pet!",
+    tagline: "The stout, blotchy burrower that begs for food like a puppy!",
     funFact: "Tiger salamanders are one of North America's largest terrestrial salamanders, reaching 13 inches. They are also among the most cold-tolerant amphibians on the continent, naturally overwintering underground in frozen soil across much of the US and Canada.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -327,7 +327,7 @@ export const amphibianGuides = [
     difficulty: "Beginner",
     petType: "Amphibians",
     image: "/assets/guides/whites-tree-frog.jpg",
-    tagline: "The chubby, chilled-out tree frog with a permanent smile and incredible tolerability!",
+    tagline: "The chubby tree frog wearing a permanent, unbothered smile!",
     funFact: "White's tree frogs are also called 'dumpy tree frogs' because they develop adorable fat rolls (parotoid glands and lipid ridges) as adults. These rolly features are a sign of a well-fed, healthy frog, not obesity!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the

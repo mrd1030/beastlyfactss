@@ -443,7 +443,7 @@ export const smallMammalGuides = [
     difficulty: "Advanced",
     petType: "Small Mammals",
     image: "/assets/guides/flying-squirrel.jpg",
-    tagline: "The tiny gliding rodent that evolved the same trick as a sugar glider, completely independently!",
+    tagline: "The tiny nocturnal glider with enormous eyes and no fear of heights!",
     funFact: "Flying squirrels are true rodents, not marsupials, so despite gliding the same way on the same kind of wrist-to-ankle membrane, they aren't closely related to sugar gliders at all. It's convergent evolution: two unrelated animals independently landing on the same solution.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;

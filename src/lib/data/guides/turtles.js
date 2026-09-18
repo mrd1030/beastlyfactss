@@ -176,7 +176,7 @@ export const turtleGuides = [
     difficulty: "Intermediate",
     petType: "Turtles & Tortoises",
     image: "/assets/guides/red-footed-tortoise.jpg",
-    tagline: "The tropical omnivore tortoise that splits the difference between Russian and sulcata!",
+    tagline: "The tropical tortoise with painted legs and a real taste for fruit!",
     funFact: "Unlike the strictly plant-eating Russian and sulcata tortoises, red-footed tortoises are true omnivores that eat carrion, insects, and land snails in the wild - a real taste for animal protein most pet tortoises never develop!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -269,7 +269,7 @@ export const turtleGuides = [
     difficulty: "Intermediate",
     petType: "Turtles & Tortoises",
     image: "/assets/guides/russian-tortoise.jpg",
-    tagline: "The compact, hardy tortoise that can live over 50 years with proper care!",
+    tagline: "The compact, hardy tortoise that digs first and asks later!",
     funFact: "Russian tortoises are one of the world's most cold-tolerant tortoise species. They can survive sub-zero temperatures in the wild by hibernating (brumating) deep underground for months at a time!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -339,7 +339,7 @@ export const turtleGuides = [
     difficulty: "Advanced",
     petType: "Turtles & Tortoises",
     image: "/assets/guides/sulcata-tortoise.jpg",
-    tagline: "The third-largest tortoise: a lifetime commitment that may outlive you!",
+    tagline: "The tortoise that starts palm-sized and ends up the size of a coffee table!",
     funFact: "Sulcata tortoises (African spurred tortoises) are the third-largest tortoise species on Earth. A hatchling the size of a ping-pong ball can grow to over 100 lbs and 3 feet long, in the same home!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;

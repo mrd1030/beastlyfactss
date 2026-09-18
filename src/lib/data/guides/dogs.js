@@ -11,7 +11,7 @@ export const dogGuides = [
     petType: "Dog",
     image: "/assets/guides/dog-care-essentials.jpg",
     sizeCategory: "All Sizes",
-    tagline: "Everything every dog owner needs to know, regardless of breed.",
+    tagline: "The basics every dog assumes you already know!",
     funFact: "Dogs have a sense of smell that is 10,000 to 100,000 times more powerful than a human's. They can detect certain diseases, including cancer, diabetes, and epileptic seizures, through scent alone.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -68,7 +68,7 @@ export const dogGuides = [
     petType: "Dog",
     image: "/assets/guides/dog-small.jpg",
     sizeCategory: "Small",
-    tagline: "Big personalities in a tiny package. Know their specific needs!",
+    tagline: "Big personalities packed into a very small footprint!",
     funFact: "Small dogs typically live significantly longer than large breeds. Chihuahuas and Dachshunds regularly reach 15 to 18 years, while Great Danes average only 7 to 10 years. The reason is not fully understood, but metabolic rate differences are thought to play a role.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -122,7 +122,7 @@ export const dogGuides = [
     petType: "Dog",
     image: "/assets/guides/dog-medium.jpg",
     sizeCategory: "Medium",
-    tagline: "The 'just right' size with its own unique needs.",
+    tagline: "The just-right size, with a to-do list all its own!",
     funFact: "Medium-sized dogs (roughly 20 to 60 lbs) often show the most behavioral versatility. Studies show they tend to score higher on trainability assessments, possibly because they were historically bred for working roles that required responsiveness to human cues.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -176,7 +176,7 @@ export const dogGuides = [
     petType: "Dog",
     image: "/assets/guides/dog-large.jpg",
     sizeCategory: "Large",
-    tagline: "More dog to love, and more responsibility to match.",
+    tagline: "More dog to love, and more of everything else to match!",
     funFact: "Large and giant breed puppies must be fed specific large-breed puppy food that is lower in calcium and calories to prevent too-rapid bone growth, which can cause lifelong joint problems. Never feed giant breed puppies regular puppy food.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -233,7 +233,7 @@ export const dogGuides = [
     petType: "Dog",
     image: "/assets/guides/dog-beagle.jpg",
     sizeCategory: "Small",
-    tagline: "A nose with a dog attached, and a fence problem you solve before the puppy arrives.",
+    tagline: "A nose with a dog attached, and your fence is only a suggestion!",
     funFact: "A Beagle's enrichment needs are olfactory, not athletic. Dogs carry roughly 800 to 1,200 functional olfactory receptor genes, and scenthounds like the Beagle were specifically selected for olfactory performance, which is why a 20 minute scent game tires one out more thoroughly than a 20 minute jog.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -291,7 +291,7 @@ export const dogGuides = [
     petType: "Dog",
     image: "/assets/guides/dog-border-collie.jpg",
     sizeCategory: "Medium",
-    tagline: "The world's most intelligent dog breed, and the most demanding.",
+    tagline: "The dog that will outthink you before breakfast and ask for more!",
     funFact: "A Border Collie named Chaser learned and retained the proper-noun names of 1,022 individual objects over three years of training, then demonstrated in controlled experiments that she understood names as referring to objects independently of the action commanded, could learn category nouns, and could infer the name of a new object by exclusion. The authors note this is a form of referential understanding normally attributed to human children.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -344,7 +344,7 @@ export const dogGuides = [
     petType: "Dog",
     image: "/assets/guides/dog-bulldog.jpg",
     sizeCategory: "Medium",
-    tagline: "A famously gentle dog that needs active medical management, not just care.",
+    tagline: "The snorting, sweet-natured tank that needs a watchful owner!",
     funFact: "The Bulldog we know is a deliberate reconstruction. When Britain banned blood sports in 1835 the breed lost its job and nearly disappeared, and admirers spent the following decades reworking it into a companion, breeding away the aggression and reshaping the body. A survey of 102 breeding Bulldogs later found a single paternal haplotype in 93% of them, a measure of how narrow the pool doing that rebuilding was.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -402,7 +402,7 @@ export const dogGuides = [
     petType: "Dog",
     image: "/assets/guides/dog-dachshund.jpg",
     sizeCategory: "Small",
-    tagline: "The badger dog whose famous silhouette and famous spinal disease are the same mutation.",
+    tagline: "The long, low badger hound with a back you learn to protect!",
     funFact: "The Dachshund's short legs are not selective breeding for cuteness. They come from an FGF4 retrogene, a copied gene that reinserted itself on chromosome 12, and it sits at a frequency of about 0.99 in the breed. The same insertion that produces the shape also drives premature disc degeneration, with an odds ratio of 51.23 for intervertebral disc disease.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -459,7 +459,7 @@ export const dogGuides = [
     petType: "Dog",
     image: "/assets/guides/dog-french-bulldog.jpg",
     sizeCategory: "Small",
-    tagline: "Charming and adaptable, but needs informed, attentive ownership.",
+    tagline: "The bat-eared comedian that snores through its own punchlines!",
     funFact: "The French Bulldog's signature upright bat ear is an American invention, not a French one. Europe accepted both the folded rose ear and the bat ear. American fanciers founded the French Bull Dog Club of America in 1897, the first club in the world devoted to the breed, wrote the first standard, and staged a show at the Waldorf-Astoria at which only bat-eared dogs were allowed to compete. The bat ear won and became the breed's defining feature worldwide.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -514,7 +514,7 @@ export const dogGuides = [
     petType: "Dog",
     image: "/assets/guides/dog-german-shepherd.jpg",
     sizeCategory: "Large",
-    tagline: "One of the world's most versatile and intelligent working dogs.",
+    tagline: "The working dog that wants a job, and will invent one otherwise!",
     funFact: "Female German Shepherds outlive males by 1.4 years. In 12,146 UK German Shepherds under primary veterinary care, median longevity was 11.1 years for females against 9.7 years for males, and males were recorded with aggression at more than twice the female rate, 6.75 percent against 2.78 percent. Sex is one of the strongest predictors of outcome in the breed.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -567,7 +567,7 @@ export const dogGuides = [
     petType: "Dog",
     image: "/assets/guides/dog-golden-retriever.jpg",
     sizeCategory: "Large",
-    tagline: "Gentle, joyful, and endlessly loyal: the golden retriever.",
+    tagline: "The golden optimist that greets every stranger like an old friend!",
     funFact: "Golden Retrievers that die of cancer actually live longer than the ones that do not. In a UC Davis necropsy series of 655 Goldens, the median age at death was 9.83 years for dogs that died of cancer against 6.93 years for dogs that died of everything else. Cancer is in part the price the breed pays for surviving what kills other dogs younger.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -622,7 +622,7 @@ export const dogGuides = [
     petType: "Dog",
     image: "/assets/guides/dog-labrador-retriever.jpg",
     sizeCategory: "Large",
-    tagline: "Held the AKC top spot for 31 years, and still the easiest big dog to live with.",
+    tagline: "The big, cheerful retriever that never met a puddle it didn't like!",
     funFact: "The appetite gene that makes Labradors chubby is the same gene that makes them good guide dogs. The POMC deletion drives food motivation, which is exactly what trainers select for, and assistance dog breeding stock carries the variant at a 45 percent allele frequency against 12 percent in the general Labrador population. Breeders selecting for trainability accidentally selected for obesity.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -675,7 +675,7 @@ export const dogGuides = [
     petType: "Dog",
     image: "/assets/guides/dog-rottweiler.jpg",
     sizeCategory: "Large",
-    tagline: "A drover's dog that needs a job, early training, and an owner who has read the cancer numbers.",
+    tagline: "The serious-looking softie that leans its entire weight against you!",
     funFact: "Despite the guarding reputation, Rottweilers were among the first dogs used as guide dogs for the blind, and in more recent decades they worked search and rescue at the Oklahoma City bombing and the World Trade Center disaster sites.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {

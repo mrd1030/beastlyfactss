@@ -400,7 +400,7 @@ export const lizardGuides = [
     difficulty: "Beginner",
     petType: "Lizards",
     image: "/assets/guides/fire-skink.jpg",
-    tagline: "Spectacular red and gold, and it will spend most of its life underground!",
+    tagline: "Dressed in red and gold, and determined to stay underground!",
     funFact: "Fire skinks are one of the most brightly colored lizards in the hobby and one of the most rarely seen in their own enclosure. Give one a shallow scattering of substrate and it will vanish; give it the 4 to 6 inches it can actually tunnel through and it will build a burrow system, come out to bask, and behave like a completely different animal.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -982,7 +982,7 @@ export const lizardGuides = [
     difficulty: "Intermediate",
     petType: "Lizards",
     image: "/assets/guides/veiled-chameleon.jpg",
-    tagline: "The Arabian casque-crowned climber often called the most forgiving chameleon to start with!",
+    tagline: "The helmet-headed climber with independently swiveling eyes!",
     funFact: "Veiled chameleons are remarkably drought-adapted for a chameleon. Native to the mountains of Yemen and Saudi Arabia, they tolerate wider temperature and humidity swings than most other chameleon species. Females are also famous for laying large clutches of infertile eggs even without ever having contact with a male.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the

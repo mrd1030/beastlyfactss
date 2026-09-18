@@ -16,7 +16,7 @@
       "difficulty": "Beginner",
       "petType": "Amphibians",
       "image": "/assets/guides/fire-bellied-toad.jpg",
-      "tagline": "The vivid red and black toad that warns predators of its mild toxicity!"
+      "tagline": "The little green toad that flips over to flash a fiery belly!"
     },
     {
       "id": "pacman-frog",
@@ -34,7 +34,7 @@
       "difficulty": "Intermediate",
       "petType": "Amphibians",
       "image": "/assets/guides/tiger-salamander.jpg",
-      "tagline": "North America's largest land-dwelling salamander and a remarkably personable pet!"
+      "tagline": "The stout, blotchy burrower that begs for food like a puppy!"
     },
     {
       "id": "whites-tree-frog",
@@ -43,7 +43,7 @@
       "difficulty": "Beginner",
       "petType": "Amphibians",
       "image": "/assets/guides/whites-tree-frog.jpg",
-      "tagline": "The chubby, chilled-out tree frog with a permanent smile and incredible tolerability!"
+      "tagline": "The chubby tree frog wearing a permanent, unbothered smile!"
     },
     {
       "id": "african-grey",
@@ -52,7 +52,7 @@
       "difficulty": "Advanced",
       "petType": "Birds",
       "image": "/assets/guides/african-grey.jpg",
-      "tagline": "The genius of the parrot world, one of the most intelligent animals on Earth!"
+      "tagline": "The parrot that learns your words, your routine, and your microwave beep!"
     },
     {
       "id": "budgie",
@@ -88,7 +88,7 @@
       "difficulty": "Advanced",
       "petType": "Birds",
       "image": "/assets/guides/cockatoo.jpg",
-      "tagline": "The affectionate, screaming, decades-long commitment of a parrot that bonds almost too well!"
+      "tagline": "The feathered drama major that loves you loudly and forever!"
     },
     {
       "id": "conure",
@@ -115,7 +115,7 @@
       "difficulty": "Intermediate",
       "petType": "Birds",
       "image": "/assets/guides/parrotlet.jpg",
-      "tagline": "The smallest parrot you can keep, with a personality far too big for its tiny body!"
+      "tagline": "The pocket parrot with a personality several sizes too big for it!"
     },
     {
       "id": "quaker-parakeet",
@@ -124,7 +124,7 @@
       "difficulty": "Intermediate",
       "petType": "Birds",
       "image": "/assets/guides/quaker-parakeet.jpg",
-      "tagline": "The only parrot that builds its own stick nest, and the reason thirteen states ban it!"
+      "tagline": "The little architect that would rather build a nest than move into one!"
     },
     {
       "id": "zebra-finch",
@@ -142,7 +142,7 @@
       "difficulty": "Beginner",
       "petType": "Cat",
       "image": "/assets/guides/cat-essentials.jpg",
-      "tagline": "Core care principles that apply to every cat, every breed."
+      "tagline": "Everything your cat would tell you itself, if it felt like it!"
     },
     {
       "id": "cat-american-shorthair",
@@ -151,7 +151,7 @@
       "difficulty": "Beginner",
       "petType": "Cat",
       "image": "/assets/guides/cat-american-shorthair.jpg",
-      "tagline": "A working cat that became a show cat without ever becoming a fragile one."
+      "tagline": "The barn cat that cleaned up nicely and stayed tough about it!"
     },
     {
       "id": "cat-bengal",
@@ -160,7 +160,7 @@
       "difficulty": "Advanced",
       "petType": "Cat",
       "image": "/assets/guides/cat-bengal.jpg",
-      "tagline": "The wild-looking, highly athletic cat that needs an active owner."
+      "tagline": "The living room leopard that treats your shelves as a climbing route!"
     },
     {
       "id": "cat-domestic-shorthair",
@@ -169,7 +169,7 @@
       "difficulty": "Beginner",
       "petType": "Cat",
       "image": "/assets/guides/cat-domestic-shorthair.jpg",
-      "tagline": "The most common cat in the world, and genetically the best-hedged."
+      "tagline": "The everycat, with no pedigree, no pretense, and no shortage of opinions!"
     },
     {
       "id": "cat-maine-coon",
@@ -178,7 +178,7 @@
       "difficulty": "Beginner",
       "petType": "Cat",
       "image": "/assets/guides/cat-maine-coon.jpg",
-      "tagline": "The gentle giant, sold on a dog-like reputation the breed standard does not quite claim."
+      "tagline": "The shaggy giant that never got the memo about how big a lap is!"
     },
     {
       "id": "cat-persian",
@@ -187,7 +187,7 @@
       "difficulty": "Intermediate",
       "petType": "Cat",
       "image": "/assets/guides/cat-persian.jpg",
-      "tagline": "The luxurious, calm lap cat with significant grooming requirements."
+      "tagline": "The velvet cushion with a face, and a grooming habit to match!"
     },
     {
       "id": "cat-ragdoll",
@@ -196,7 +196,7 @@
       "difficulty": "Beginner",
       "petType": "Cat",
       "image": "/assets/guides/cat-ragdoll.jpg",
-      "tagline": "A genuinely gentle giant, named for a trait most of them no longer have."
+      "tagline": "The big, unbothered cat that follows you from room to room!"
     },
     {
       "id": "cat-scottish-fold",
@@ -205,7 +205,7 @@
       "difficulty": "Advanced",
       "petType": "Cat",
       "image": "/assets/guides/cat-scottish-fold.jpg",
-      "tagline": "The ears and the arthritis are the same mutation, and you cannot have one without the other."
+      "tagline": "The folded-ear charmer whose famous ears come with a serious catch!"
     },
     {
       "id": "cat-siamese",
@@ -214,7 +214,7 @@
       "difficulty": "Intermediate",
       "petType": "Cat",
       "image": "/assets/guides/cat-siamese.jpg",
-      "tagline": "The vocal, social, opinionated cat that demands to be part of everything."
+      "tagline": "The vocal, opinionated cat that insists on being part of everything!"
     },
     {
       "id": "cat-sphynx",
@@ -223,7 +223,7 @@
       "difficulty": "Advanced",
       "petType": "Cat",
       "image": "/assets/guides/cat-sphynx.jpg",
-      "tagline": "A high-maintenance skin, a high-risk heart, and a cat that genuinely cannot be left alone."
+      "tagline": "The warm, wrinkled velcro cat that needs baths and company in equal measure!"
     },
     {
       "id": "dog-universal",
@@ -232,7 +232,7 @@
       "difficulty": "Beginner",
       "petType": "Dog",
       "image": "/assets/guides/dog-care-essentials.jpg",
-      "tagline": "Everything every dog owner needs to know, regardless of breed."
+      "tagline": "The basics every dog assumes you already know!"
     },
     {
       "id": "dog-small-breed",
@@ -241,7 +241,7 @@
       "difficulty": "Beginner",
       "petType": "Dog",
       "image": "/assets/guides/dog-small.jpg",
-      "tagline": "Big personalities in a tiny package. Know their specific needs!"
+      "tagline": "Big personalities packed into a very small footprint!"
     },
     {
       "id": "dog-medium-breed",
@@ -250,7 +250,7 @@
       "difficulty": "Beginner",
       "petType": "Dog",
       "image": "/assets/guides/dog-medium.jpg",
-      "tagline": "The 'just right' size with its own unique needs."
+      "tagline": "The just-right size, with a to-do list all its own!"
     },
     {
       "id": "dog-large-breed",
@@ -259,7 +259,7 @@
       "difficulty": "Intermediate",
       "petType": "Dog",
       "image": "/assets/guides/dog-large.jpg",
-      "tagline": "More dog to love, and more responsibility to match."
+      "tagline": "More dog to love, and more of everything else to match!"
     },
     {
       "id": "dog-beagle",
@@ -268,7 +268,7 @@
       "difficulty": "Intermediate",
       "petType": "Dog",
       "image": "/assets/guides/dog-beagle.jpg",
-      "tagline": "A nose with a dog attached, and a fence problem you solve before the puppy arrives."
+      "tagline": "A nose with a dog attached, and your fence is only a suggestion!"
     },
     {
       "id": "dog-border-collie",
@@ -277,7 +277,7 @@
       "difficulty": "Advanced",
       "petType": "Dog",
       "image": "/assets/guides/dog-border-collie.jpg",
-      "tagline": "The world's most intelligent dog breed, and the most demanding."
+      "tagline": "The dog that will outthink you before breakfast and ask for more!"
     },
     {
       "id": "dog-bulldog",
@@ -286,7 +286,7 @@
       "difficulty": "Advanced",
       "petType": "Dog",
       "image": "/assets/guides/dog-bulldog.jpg",
-      "tagline": "A famously gentle dog that needs active medical management, not just care."
+      "tagline": "The snorting, sweet-natured tank that needs a watchful owner!"
     },
     {
       "id": "dog-dachshund",
@@ -295,7 +295,7 @@
       "difficulty": "Intermediate",
       "petType": "Dog",
       "image": "/assets/guides/dog-dachshund.jpg",
-      "tagline": "The badger dog whose famous silhouette and famous spinal disease are the same mutation."
+      "tagline": "The long, low badger hound with a back you learn to protect!"
     },
     {
       "id": "dog-french-bulldog",
@@ -304,7 +304,7 @@
       "difficulty": "Intermediate",
       "petType": "Dog",
       "image": "/assets/guides/dog-french-bulldog.jpg",
-      "tagline": "Charming and adaptable, but needs informed, attentive ownership."
+      "tagline": "The bat-eared comedian that snores through its own punchlines!"
     },
     {
       "id": "dog-german-shepherd",
@@ -313,7 +313,7 @@
       "difficulty": "Intermediate",
       "petType": "Dog",
       "image": "/assets/guides/dog-german-shepherd.jpg",
-      "tagline": "One of the world's most versatile and intelligent working dogs."
+      "tagline": "The working dog that wants a job, and will invent one otherwise!"
     },
     {
       "id": "dog-golden-retriever",
@@ -322,7 +322,7 @@
       "difficulty": "Beginner",
       "petType": "Dog",
       "image": "/assets/guides/dog-golden-retriever.jpg",
-      "tagline": "Gentle, joyful, and endlessly loyal: the golden retriever."
+      "tagline": "The golden optimist that greets every stranger like an old friend!"
     },
     {
       "id": "dog-labrador",
@@ -331,7 +331,7 @@
       "difficulty": "Beginner",
       "petType": "Dog",
       "image": "/assets/guides/dog-labrador-retriever.jpg",
-      "tagline": "Held the AKC top spot for 31 years, and still the easiest big dog to live with."
+      "tagline": "The big, cheerful retriever that never met a puddle it didn't like!"
     },
     {
       "id": "dog-rottweiler",
@@ -340,7 +340,7 @@
       "difficulty": "Advanced",
       "petType": "Dog",
       "image": "/assets/guides/dog-rottweiler.jpg",
-      "tagline": "A drover's dog that needs a job, early training, and an owner who has read the cancer numbers."
+      "tagline": "The serious-looking softie that leans its entire weight against you!"
     },
     {
       "id": "dog-siberian-husky",
@@ -376,7 +376,7 @@
       "difficulty": "Beginner",
       "petType": "Fish",
       "image": "/assets/guides/bristlenose-pleco.jpg",
-      "tagline": "The tentacle-snouted algae cleaner that actually stays small, unlike the 'baby pleco' at the pet store!"
+      "tagline": "The bristly-nosed algae grazer that politely stays small!"
     },
     {
       "id": "cardinal-tetra",
@@ -385,7 +385,7 @@
       "difficulty": "Beginner-Intermediate",
       "petType": "Fish",
       "image": "/assets/guides/cardinal-tetra.jpg",
-      "tagline": "The neon tetra's brighter, warmer-water-tolerant cousin, with a red stripe that runs the full body!"
+      "tagline": "The neon tetra's flashier cousin, lit up red from nose to tail!"
     },
     {
       "id": "corydoras-catfish",
@@ -403,7 +403,7 @@
       "difficulty": "Intermediate-Advanced",
       "petType": "Fish",
       "image": "/assets/guides/discus.jpg",
-      "tagline": "The self-styled king of the aquarium, a tall, social cichlid that raises its fry on its own skin!"
+      "tagline": "The king of the aquarium, and it knows exactly how good it looks!"
     },
     {
       "id": "goldfish",
@@ -412,7 +412,7 @@
       "difficulty": "Beginner",
       "petType": "Fish",
       "image": "/assets/guides/goldfish.jpg",
-      "tagline": "The pond classic that outgrows its reputation - and its bowl - in a hurry!"
+      "tagline": "The pond classic that outgrows the bowl, the myth, and your expectations!"
     },
     {
       "id": "guppy",
@@ -484,7 +484,7 @@
       "difficulty": "Beginner",
       "petType": "Fish",
       "image": "/assets/guides/zebra-danio.jpg",
-      "tagline": "The tireless, torpedo-striped schooler that's equally at home in a beginner's tank and a genetics lab!"
+      "tagline": "The tireless little striped torpedo that never stops commuting!"
     },
     {
       "id": "african-fat-tail",
@@ -538,7 +538,7 @@
       "difficulty": "Beginner/Intermediate",
       "petType": "Geckos",
       "image": "/assets/guides/mourning-gecko.jpg",
-      "tagline": "Tiny, all-female, and endlessly fascinating: a colony in a planted vivarium!"
+      "tagline": "Tiny, all-female, and happiest as a whole chattering colony!"
     },
     {
       "id": "tokay-gecko",
@@ -556,7 +556,7 @@
       "difficulty": "Beginner/Intermediate",
       "petType": "Invertebrates",
       "image": "/assets/guides/amano-shrimp.jpg",
-      "tagline": "The champion algae eater that can't reproduce in your freshwater tank, no matter how long you keep it!"
+      "tagline": "The champion algae eater that clears a tank and never overruns it!"
     },
     {
       "id": "cherry-shrimp",
@@ -583,7 +583,7 @@
       "difficulty": "Beginner",
       "petType": "Invertebrates",
       "image": "/assets/guides/ghost-shrimp.jpg",
-      "tagline": "The nearly transparent, famously cheap cleanup crew that's sold as fish food as often as it's kept as a pet!"
+      "tagline": "The see-through scavenger that costs pennies and earns its keep!"
     },
     {
       "id": "millipede",
@@ -601,7 +601,7 @@
       "difficulty": "Intermediate",
       "petType": "Invertebrates",
       "image": "/assets/guides/hermit-crab.jpg",
-      "tagline": "The shell-swapping beach scavenger whose 'easy starter pet' reputation badly undersells what it actually needs!"
+      "tagline": "The shell-swapping beach scavenger that is nobody's starter pet!"
     },
     {
       "id": "jumping-spider",
@@ -619,7 +619,7 @@
       "difficulty": "Self-Sufficient",
       "petType": "Invertebrates",
       "image": "/assets/guides/hissing-cockroach.jpg",
-      "tagline": "Calm, armored, surprisingly clean - and yes, it hisses!"
+      "tagline": "Calm, armored, surprisingly clean, and yes, it hisses!"
     },
     {
       "id": "praying-mantis",
@@ -691,7 +691,7 @@
       "difficulty": "Beginner",
       "petType": "Lizards",
       "image": "/assets/guides/fire-skink.jpg",
-      "tagline": "Spectacular red and gold, and it will spend most of its life underground!"
+      "tagline": "Dressed in red and gold, and determined to stay underground!"
     },
     {
       "id": "green-anole",
@@ -745,7 +745,7 @@
       "difficulty": "Intermediate",
       "petType": "Lizards",
       "image": "/assets/guides/veiled-chameleon.jpg",
-      "tagline": "The Arabian casque-crowned climber often called the most forgiving chameleon to start with!"
+      "tagline": "The helmet-headed climber with independently swiveling eyes!"
     },
     {
       "id": "chinchilla",
@@ -799,7 +799,7 @@
       "difficulty": "Advanced",
       "petType": "Small Mammals",
       "image": "/assets/guides/flying-squirrel.jpg",
-      "tagline": "The tiny gliding rodent that evolved the same trick as a sugar glider, completely independently!"
+      "tagline": "The tiny nocturnal glider with enormous eyes and no fear of heights!"
     },
     {
       "id": "gerbil",
@@ -952,7 +952,7 @@
       "difficulty": "Intermediate",
       "petType": "Turtles & Tortoises",
       "image": "/assets/guides/red-footed-tortoise.jpg",
-      "tagline": "The tropical omnivore tortoise that splits the difference between Russian and sulcata!"
+      "tagline": "The tropical tortoise with painted legs and a real taste for fruit!"
     },
     {
       "id": "russian-tortoise",
@@ -961,7 +961,7 @@
       "difficulty": "Intermediate",
       "petType": "Turtles & Tortoises",
       "image": "/assets/guides/russian-tortoise.jpg",
-      "tagline": "The compact, hardy tortoise that can live over 50 years with proper care!"
+      "tagline": "The compact, hardy tortoise that digs first and asks later!"
     },
     {
       "id": "sulcata-tortoise",
@@ -970,7 +970,7 @@
       "difficulty": "Advanced",
       "petType": "Turtles & Tortoises",
       "image": "/assets/guides/sulcata-tortoise.jpg",
-      "tagline": "The third-largest tortoise: a lifetime commitment that may outlive you!"
+      "tagline": "The tortoise that starts palm-sized and ends up the size of a coffee table!"
     }
   ]
 }

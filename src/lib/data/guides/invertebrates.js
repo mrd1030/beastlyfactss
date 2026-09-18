@@ -6,7 +6,7 @@ export const invertebrateGuides = [
     difficulty: "Beginner/Intermediate",
     petType: "Invertebrates",
     image: "/assets/guides/amano-shrimp.jpg",
-    tagline: "The champion algae eater that can't reproduce in your freshwater tank, no matter how long you keep it!",
+    tagline: "The champion algae eater that clears a tank and never overruns it!",
     funFact: "Amano shrimp can't reproduce in a home freshwater aquarium at all. Females carry eggs and release free-swimming larvae just fine, but those larvae need brackish to full-strength salt water to survive past their first few hours of life, then must be raised through several weeks of saltwater development before metamorphosing into juveniles that can return to fresh water. Because of this, almost every Amano shrimp sold in stores today is wild-caught, not captive-bred.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -273,7 +273,7 @@ export const invertebrateGuides = [
     difficulty: "Beginner",
     petType: "Invertebrates",
     image: "/assets/guides/ghost-shrimp.jpg",
-    tagline: "The nearly transparent, famously cheap cleanup crew that's sold as fish food as often as it's kept as a pet!",
+    tagline: "The see-through scavenger that costs pennies and earns its keep!",
     funFact: "Despite looking like a smaller, cheaper cousin of the cherry and Amano shrimp sold right next to them in the store, ghost shrimp aren't closely related to either. They belong to the family Palaemonidae, while cherry and Amano shrimp both belong to the unrelated family Atyidae, and each lineage independently evolved from marine ancestors into fresh water at a different point in history. Their famous hardiness is exactly why they're sold cheaply in bulk as feeder shrimp for larger fish, even though plenty of keepers keep them purely as pets.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -461,7 +461,7 @@ export const invertebrateGuides = [
     difficulty: "Intermediate",
     petType: "Invertebrates",
     image: "/assets/guides/hermit-crab.jpg",
-    tagline: "The shell-swapping beach scavenger whose 'easy starter pet' reputation badly undersells what it actually needs!",
+    tagline: "The shell-swapping beach scavenger that is nobody's starter pet!",
     funFact: "Hermit crabs don't grow their own shells - they spend their entire lives searching for, trying on, and trading empty snail shells as they grow, and will even form an orderly 'vacancy chain,' lining up by size to swap shells in turn when a larger one becomes available. In the wild, land hermit crabs can live 20 to 30+ years, though most pet hermit crabs sold in beach-town gift shops die within their first year from incorrect humidity and being kept alone.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -631,7 +631,7 @@ export const invertebrateGuides = [
     difficulty: "Self-Sufficient",
     petType: "Invertebrates",
     image: "/assets/guides/hissing-cockroach.jpg",
-    tagline: "Calm, armored, surprisingly clean - and yes, it hisses!",
+    tagline: "Calm, armored, surprisingly clean, and yes, it hisses!",
     funFact: "Madagascar hissing cockroaches are one of the few insect species where the father plays an active role in rearing offspring. Males guard and protect the female and young after birth, and juveniles stay with the family group for weeks.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;

@@ -425,7 +425,7 @@ export const geckoGuides = [
     difficulty: "Beginner/Intermediate",
     petType: "Geckos",
     image: "/assets/guides/mourning-gecko.jpg",
-    tagline: "Tiny, all-female, and endlessly fascinating: a colony in a planted vivarium!",
+    tagline: "Tiny, all-female, and happiest as a whole chattering colony!",
     funFact: "Mourning geckos are parthenogenetic. Every individual is female, and they can reproduce without males by cloning themselves!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;

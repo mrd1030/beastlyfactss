@@ -163,7 +163,7 @@ export const fishGuides = [
     difficulty: "Beginner",
     petType: "Fish",
     image: "/assets/guides/bristlenose-pleco.jpg",
-    tagline: "The tentacle-snouted algae cleaner that actually stays small, unlike the 'baby pleco' at the pet store!",
+    tagline: "The bristly-nosed algae grazer that politely stays small!",
     funFact: "Most of the cheap, inch-long 'plecos' sold for algae control are common plecos (Hypostomus plecostomus) or a related Pterygoplichthys species, and neither stays small: both regularly reach 12 to 24 inches and need a 75-gallon-or-larger tank as adults, a size surprise so common that escaped and released pet plecos have established breeding, invasive populations in Texas and Florida rivers. Researchers pulled more than 400 invasive armored catfish from a single stretch of Texas's San Marcos River in one 2022 removal effort. The bristlenose pleco profiled here is a different, deliberately smaller species that tops out around 4 to 6 inches for life, which is exactly why it's the pleco actually worth recommending to a beginner.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -258,7 +258,7 @@ export const fishGuides = [
     difficulty: "Beginner-Intermediate",
     petType: "Fish",
     image: "/assets/guides/cardinal-tetra.jpg",
-    tagline: "The neon tetra's brighter, warmer-water-tolerant cousin, with a red stripe that runs the full body!",
+    tagline: "The neon tetra's flashier cousin, lit up red from nose to tail!",
     funFact: "Huge numbers of cardinal tetras are still sustainably wild-harvested from Brazil's Rio Negro every year through community-based fisheries, a rare case where the aquarium trade directly funds rainforest conservation by giving local communities a real economic reason to keep the river intact.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -421,7 +421,7 @@ export const fishGuides = [
     difficulty: "Intermediate-Advanced",
     petType: "Fish",
     image: "/assets/guides/discus.jpg",
-    tagline: "The self-styled king of the aquarium, a tall, social cichlid that raises its fry on its own skin!",
+    tagline: "The king of the aquarium, and it knows exactly how good it looks!",
     funFact: "Newly hatched discus fry feed on a nutrient-rich mucus secreted from both parents' skin, most intensively for roughly the first two weeks after they become free-swimming, with a gradual weaning over the following two weeks. It is one of the only documented cases of sustained direct parental feeding in fish, and a 2010 study found the mucus carries immune antibodies and protein at levels that rise and fall across the feeding period, in a pattern the researchers compared to mammalian milk.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -517,7 +517,7 @@ export const fishGuides = [
     difficulty: "Beginner",
     petType: "Fish",
     image: "/assets/guides/goldfish.jpg",
-    tagline: "The pond classic that outgrows its reputation - and its bowl - in a hurry!",
+    tagline: "The pond classic that outgrows the bowl, the myth, and your expectations!",
     funFact: "Goldfish have real, months-long memories and can be trained to push levers, navigate mazes, and recognize shapes and colors - directly contradicting the popular '3-second memory' myth. They also grow to the size of their environment: a goldfish kept in a tiny bowl doesn't stay small because it's content, it's stunted, which is a sign of poor welfare rather than a convenient feature.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -1215,7 +1215,7 @@ export const fishGuides = [
     difficulty: "Beginner",
     petType: "Fish",
     image: "/assets/guides/zebra-danio.jpg",
-    tagline: "The tireless, torpedo-striped schooler that's equally at home in a beginner's tank and a genetics lab!",
+    tagline: "The tireless little striped torpedo that never stops commuting!",
     funFact: "Zebra danios, known to scientists as zebrafish, are the most widely used non-mammalian vertebrate model organism in developmental biology and genetics research. Their embryos develop transparently outside the mother's body within hours of fertilization, letting researchers watch organs form in real time, and roughly 70 percent of human genes have a working counterpart in the zebrafish genome, sequenced in full in 2013. That same genetic malleability is also how GloFish, the first genetically modified animal ever sold as a pet, came to exist: they're fluorescent zebra danios.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
