@@ -17,15 +17,15 @@ Updated 2026-09-18. 108 guides.
 4. Tiger Salamander: The stout, blotchy burrower that begs for food like a puppy!
 5. White's Tree Frog: The chubby tree frog wearing a permanent, unbothered smile!
 6. African Grey Parrot: The parrot that learns your words, your routine, and your microwave beep!
-7. Budgie / Parakeet: The cheerful, chatty little parakeet that's perfect for first-time bird owners!
-8. Canary: The classic singing songbird that's happiest observed, not handled!
-9. Cockatiel: The whistling, crested charmer that's the perfect first parrot!
+7. Budgie / Parakeet: The cheerful little chatterbox that picks up phrases you never taught it!
+8. Canary: The tiny opera singer that would rather be heard than held!
+9. Cockatiel: The crested whistler that will learn your ringtone and improve on it!
 10. Cockatoo: The feathered drama major that loves you loudly and forever!
 11. Green Cheek Conure: The clownish, cuddly little conure that never stops entertaining!
 12. Lovebird: The feisty, affectionate little parrot that bonds deeply with its person!
 13. Parrotlet: The pocket parrot with a personality several sizes too big for it!
 14. Quaker Parakeet: The little architect that would rather build a nest than move into one!
-15. Zebra Finch: The tiny, sociable finch that thrives in pairs and doesn't need or want to be handled!
+15. Zebra Finch: The busy little finch that wants a friend far more than a finger!
 16. Cat Care: The Essentials: Everything your cat would tell you itself, if it felt like it!
 17. American Shorthair: Breed Quirks: The barn cat that cleaned up nicely and stayed tough about it!
 18. Bengal: Breed Quirks: The living room leopard that treats your shelves as a climbing route!
@@ -59,7 +59,7 @@ Updated 2026-09-18. 108 guides.
 46. Goldfish: The pond classic that outgrows the bowl, the myth, and your expectations!
 47. Guppy: The colorful, prolific livebearer that turns a starter tank into a thriving colony fast!
 48. Koi: The living jewels of the pond world that can genuinely outlive their keepers!
-49. Molly: The hardy, prolific livebearer with a genuine tolerance for brackish water!
+49. Molly: The easygoing livebearer that shrugs at water most fish would sulk in!
 50. Neon Tetra: The tiny electric-blue schooler that turns any planted tank into a shimmering river scene!
 51. Oscar: The big-personality cichlid that recognizes its keeper and rearranges the tank on a whim!
 52. Platy: The endlessly colorful beginner livebearer that's about as close to foolproof as fish get!
@@ -67,16 +67,16 @@ Updated 2026-09-18. 108 guides.
 54. Zebra Danio: The tireless little striped torpedo that never stops commuting!
 55. African Fat-Tailed Gecko: The calm, velvety cousin of the leopard gecko: gentle as can be!
 56. Crested Gecko: The velvety, fan-fringed gecko that needs no heat lamp!
-57. Gargoyle Gecko: The bumpy-headed New Caledonian climber that regrows its tail!
+57. Gargoyle Gecko: The bumpy-headed climber that drops its tail and simply grows another!
 58. Leaf-Tailed Gecko: Nature's ultimate camouflage artist, hiding in plain sight!
 59. Leopard Gecko: The smiling gecko that's perfect for first-time reptile parents!
 60. Mourning Gecko: Tiny, all-female, and happiest as a whole chattering colony!
 61. Tokay Gecko: The jewel-toned, loud-voiced gecko that's not for the faint of heart!
 62. Amano Shrimp: The champion algae eater that clears a tank and never overruns it!
 63. Cherry Shrimp: The tiny, self-multiplying cleanup crew that turns one bag of shrimp into a colony!
-64. Emperor Scorpion: One of the largest scorpions in the world, and one of the least venomous pet scorpions!
+64. Emperor Scorpion: The glossy black heavyweight with a pinch far scarier than its sting!
 65. Ghost Shrimp: The see-through scavenger that costs pennies and earns its keep!
-66. Giant African Millipede: The gentle detritivore that works as a living composting machine!
+66. Giant African Millipede: The slow-motion recycler that turns a pile of leaves into garden soil!
 67. Hermit Crab: The shell-swapping beach scavenger that is nobody's starter pet!
 68. Jumping Spider: The tiny, curious-eyed hunter that watches you back and needs barely any space at all!
 69. Madagascar Hissing Cockroach: Calm, armored, surprisingly clean, and yes, it hisses!
@@ -122,6 +122,8 @@ Updated 2026-09-18. 108 guides.
 
 ## Rewritten 2026-09-18
 
-Traded a fact-heavy or flat line for a witty one:
+Traded a fact-heavy, flat, or catalog-copy line for a witty one. Every tagline
+not listed here is the original:
 
-2, 4-6, 10, 13-14, 16-38, 42-43, 45-46, 54, 60, 62, 65, 67, 69, 77, 83, 89, 106-108
+2, 4-10, 13-38, 42-43, 45-46, 49, 54, 57, 60, 62, 64-67, 69, 77, 83, 89,
+106-108

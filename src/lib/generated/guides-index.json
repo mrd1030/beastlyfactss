@@ -61,7 +61,7 @@
       "difficulty": "Beginner",
       "petType": "Birds",
       "image": "/assets/guides/budgie.jpg",
-      "tagline": "The cheerful, chatty little parakeet that's perfect for first-time bird owners!"
+      "tagline": "The cheerful little chatterbox that picks up phrases you never taught it!"
     },
     {
       "id": "canary",
@@ -70,7 +70,7 @@
       "difficulty": "Beginner",
       "petType": "Birds",
       "image": "/assets/guides/canary.jpg",
-      "tagline": "The classic singing songbird that's happiest observed, not handled!"
+      "tagline": "The tiny opera singer that would rather be heard than held!"
     },
     {
       "id": "cockatiel",
@@ -79,7 +79,7 @@
       "difficulty": "Beginner",
       "petType": "Birds",
       "image": "/assets/guides/cockatiel.jpg",
-      "tagline": "The whistling, crested charmer that's the perfect first parrot!"
+      "tagline": "The crested whistler that will learn your ringtone and improve on it!"
     },
     {
       "id": "cockatoo",
@@ -133,7 +133,7 @@
       "difficulty": "Beginner",
       "petType": "Birds",
       "image": "/assets/guides/zebra-finch.jpg",
-      "tagline": "The tiny, sociable finch that thrives in pairs and doesn't need or want to be handled!"
+      "tagline": "The busy little finch that wants a friend far more than a finger!"
     },
     {
       "id": "cat-universal",
@@ -439,7 +439,7 @@
       "difficulty": "Beginner",
       "petType": "Fish",
       "image": "/assets/guides/molly.jpg",
-      "tagline": "The hardy, prolific livebearer with a genuine tolerance for brackish water!"
+      "tagline": "The easygoing livebearer that shrugs at water most fish would sulk in!"
     },
     {
       "id": "neon-tetra",
@@ -511,7 +511,7 @@
       "difficulty": "Beginner",
       "petType": "Geckos",
       "image": "/assets/guides/gargoyle-gecko.jpg",
-      "tagline": "The bumpy-headed New Caledonian climber that regrows its tail!"
+      "tagline": "The bumpy-headed climber that drops its tail and simply grows another!"
     },
     {
       "id": "leaf-tailed-gecko",
@@ -574,7 +574,7 @@
       "difficulty": "Beginner/Intermediate",
       "petType": "Invertebrates",
       "image": "/assets/guides/emperor-scorpion.jpg",
-      "tagline": "One of the largest scorpions in the world, and one of the least venomous pet scorpions!"
+      "tagline": "The glossy black heavyweight with a pinch far scarier than its sting!"
     },
     {
       "id": "ghost-shrimp",
@@ -592,7 +592,7 @@
       "difficulty": "Self-Sufficient",
       "petType": "Invertebrates",
       "image": "/assets/guides/millipede.jpg",
-      "tagline": "The gentle detritivore that works as a living composting machine!"
+      "tagline": "The slow-motion recycler that turns a pile of leaves into garden soil!"
     },
     {
       "id": "hermit-crab",

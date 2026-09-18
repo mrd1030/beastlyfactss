@@ -188,7 +188,7 @@ export const invertebrateGuides = [
     difficulty: "Beginner/Intermediate",
     petType: "Invertebrates",
     image: "/assets/guides/emperor-scorpion.jpg",
-    tagline: "One of the largest scorpions in the world, and one of the least venomous pet scorpions!",
+    tagline: "The glossy black heavyweight with a pinch far scarier than its sting!",
     funFact: "Emperor scorpions fluoresce a brilliant blue-green under UV/black light. Scientists aren't entirely sure why, but the compound responsible sits in the hyaline layer of their exoskeleton, and scorpions do this under natural UV from moonlight too, not just an artificial black light.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -367,7 +367,7 @@ export const invertebrateGuides = [
     difficulty: "Self-Sufficient",
     petType: "Invertebrates",
     image: "/assets/guides/millipede.jpg",
-    tagline: "The gentle detritivore that works as a living composting machine!",
+    tagline: "The slow-motion recycler that turns a pile of leaves into garden soil!",
     funFact: "Despite their name, millipedes do not have 1,000 legs. Most species have 40 to 400 legs. However, a species discovered in 2021 (Eumillipes persephone) was found 60 meters underground in Australia and has a record 1,306 legs, making it the only true millipede.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;

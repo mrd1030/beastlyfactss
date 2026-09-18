@@ -167,7 +167,7 @@ export const geckoGuides = [
     difficulty: "Beginner",
     petType: "Geckos",
     image: "/assets/guides/gargoyle-gecko.jpg",
-    tagline: "The bumpy-headed New Caledonian climber that regrows its tail!",
+    tagline: "The bumpy-headed climber that drops its tail and simply grows another!",
     funFact: "Gargoyle geckos are named for the horn-like bumps on their heads, and unlike their crested gecko cousins they can regrow a dropped tail. A 2024 genome study confirmed the difference: same family, one very different superpower.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;

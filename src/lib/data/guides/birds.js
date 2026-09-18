@@ -76,7 +76,7 @@ export const birdGuides = [
     difficulty: "Beginner",
     petType: "Birds",
     image: "/assets/guides/budgie.jpg",
-    tagline: "The cheerful, chatty little parakeet that's perfect for first-time bird owners!",
+    tagline: "The cheerful little chatterbox that picks up phrases you never taught it!",
     funFact: "Budgies can learn to talk and have been known to learn over 1,700 words! The Guinness World Record holder was a budgie named Puck who knew 1,728 words, more than any other bird on record!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -148,7 +148,7 @@ export const birdGuides = [
     difficulty: "Beginner",
     petType: "Birds",
     image: "/assets/guides/canary.jpg",
-    tagline: "The classic singing songbird that's happiest observed, not handled!",
+    tagline: "The tiny opera singer that would rather be heard than held!",
     funFact: "Only male canaries sing (with rare exceptions), and their song is directly tied to testosterone and daylight length. Centuries of selective breeding have produced distinct song 'breeds,' like the Roller canary, bred specifically for the complexity, tone, and softness of its song rather than for appearance.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -230,7 +230,7 @@ export const birdGuides = [
     difficulty: "Beginner",
     petType: "Birds",
     image: "/assets/guides/cockatiel.jpg",
-    tagline: "The whistling, crested charmer that's the perfect first parrot!",
+    tagline: "The crested whistler that will learn your ringtone and improve on it!",
     funFact: "Cockatiels are masters of mimicry. Males especially love to learn whistled tunes and will serenade you (and any reflective surface) for hours. Many can even learn short phrases!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -689,7 +689,7 @@ export const birdGuides = [
     difficulty: "Beginner",
     petType: "Birds",
     image: "/assets/guides/zebra-finch.jpg",
-    tagline: "The tiny, sociable finch that thrives in pairs and doesn't need or want to be handled!",
+    tagline: "The busy little finch that wants a friend far more than a finger!",
     funFact: "Zebra finches are the most widely studied songbird in neuroscience. Only males sing, and they learn their song from a tutor as juveniles in a process remarkably similar to how human babies learn speech, which has made them one of science's best models for understanding vocal learning.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the

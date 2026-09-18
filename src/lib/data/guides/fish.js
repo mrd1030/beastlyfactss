@@ -759,7 +759,7 @@ export const fishGuides = [
     difficulty: "Beginner",
     petType: "Fish",
     image: "/assets/guides/molly.jpg",
-    tagline: "The hardy, prolific livebearer with a genuine tolerance for brackish water!",
+    tagline: "The easygoing livebearer that shrugs at water most fish would sulk in!",
     funFact: "Unlike most freshwater aquarium fish, mollies are naturally a brackish-water species that can tightly regulate their salt and water balance well past normal seawater concentration. Whether a healthy freshwater tank needs aquarium salt added is genuinely disputed among experienced keepers though, some use it routinely, others argue consistent water changes do the same job without salt's downsides for live plants and snails.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
