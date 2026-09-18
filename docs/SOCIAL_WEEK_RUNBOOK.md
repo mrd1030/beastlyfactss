@@ -280,6 +280,22 @@ X's shape changed again that week: 2 single-liners plus 1 article thread a
 day, 21 posts. The 9/5 week ran 4 singles plus a thread at 35, which was a
 test of volume rather than the standing rate.
 
+A full month, 9/19 to 10/16, is built for all four platforms at once:
+X 84 posts, Threads 84, Instagram 44, Pinterest 56. Batches are
+`social-batches/{x,threads,ig,pinterest}-month1.json`. Two things a month
+changes about the process: the within-a-week species rule has to be tracked
+per week rather than across the whole batch, and Pinterest needs 56 pin
+images generated and deployed in one go instead of 14. Everything else
+scales unchanged.
+
+One thing worth knowing for IG: the popular species (bearded dragon,
+ferret, rabbit, leopard gecko) no longer have enough unused guides for a
+cross-guide carousel, because earlier weeks consumed them. The 16 carousels
+here come from species with 5 guides still unused. A few species had to be
+dropped after checking, because their guides all share one photo under
+different filenames, which would have produced a carousel of five identical
+slides.
+
 Pinterest's first week is built for 9/12 to 9/18, 14 pins at 2 a day, batch in
 `social-batches/pinterest-week1.json`. Seven care pins drawn from tank setup
 guides, seven fact pins. Care guides were the obvious source, but the
