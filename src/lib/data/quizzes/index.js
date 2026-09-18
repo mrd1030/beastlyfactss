@@ -5,8 +5,9 @@
 // prerender.mjs) can import this registry directly for routes.
 import beardedDragonBoss from './bearded-dragon-boss.js';
 import aquariumSecrets from './aquarium-secrets.js';
+import isThatEvenLegal from './is-that-even-legal.js';
 
-export const themedQuizzes = [aquariumSecrets, beardedDragonBoss]
+export const themedQuizzes = [isThatEvenLegal, aquariumSecrets, beardedDragonBoss]
   .sort((a, b) => b.date.localeCompare(a.date) || b.number - a.number);
 
 // The three tab ids on /quiz/:tab that are NOT themed quizzes. A themed quiz

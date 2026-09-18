@@ -100,6 +100,22 @@ export default function QuizzesTeaser() {
             </motion.div>
           ))}
         </div>
+
+        {/* The hub is where past themed quizzes live: the cards above only
+            ever show the newest one plus the three evergreens. */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="text-center mt-8"
+        >
+          <Link
+            to="/quiz/"
+            className="group inline-flex items-center gap-2 bg-card border-2 border-secondary/40 hover:border-secondary rounded-full px-6 py-3 text-sm font-body font-bold text-secondary transition-colors"
+          >
+            View all quizzes <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </motion.div>
       </div>
     </section>
   );
