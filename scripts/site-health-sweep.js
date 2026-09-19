@@ -71,11 +71,31 @@ function readBeastlypediaRelatedFiles() {
   return slugs;
 }
 
+// The 11 category slugs that actually exist as pages. ENCYCLOPEDIA_CATEGORIES in
+// prerender.mjs is the authority: it is what generates /guides/category/<slug>
+// and /encyclopedia/category/<slug>, so a link to anything outside it is a 404.
+// Read from that file rather than duplicated here, so adding a category in one
+// place does not quietly make this check wrong.
+function readCategorySlugs() {
+  const raw = fs.readFileSync('prerender.mjs', 'utf8');
+  const m = raw.match(/const ENCYCLOPEDIA_CATEGORIES = \[([\s\S]*?)\]/);
+  const slugs = m ? [...m[1].matchAll(/'([a-z0-9-]+)'/g)].map(x => x[1]) : [];
+  // Loudly, not silently. A check that quietly stops checking is how the bad
+  // link it exists to catch survived three weeks in the first place.
+  if (slugs.length === 0) {
+    console.error('site-health-sweep: could not read ENCYCLOPEDIA_CATEGORIES from prerender.mjs.');
+    console.error('The category-link check cannot run. Fix the parser above before trusting this report.');
+    process.exit(2);
+  }
+  return new Set(slugs);
+}
+
 const articles = readAllArticles();
 const slugSet = new Set(articles.map(a => a.slug));
 const structuredGuideIds = readStructuredGuideIds();
 const relatedArticles = readRelatedArticlesKeys();
 const beastlypediaRelatedFiles = readBeastlypediaRelatedFiles();
+const categorySlugs = readCategorySlugs();
 
 // Both lists mirror STANDARD_SUFFIXES in src/lib/data/relatedArticles.js. Add a
 // suffix there and it belongs in AUTO_SUFFIXES here too, or the next series to
@@ -91,10 +111,16 @@ const SUFFIXES = ['-cost-guide', '-handling-guide', '-health-issues-guide', '-ta
 const inbound = new Map(articles.map(a => [a.slug, 0]));
 const deadBlogLinks = [];
 const deadGuidesLinks = [];
+const deadCategoryLinks = [];
 
 for (const a of articles) {
   const blogLinks = [...a.body.matchAll(/\]\(\/blog\/([a-z0-9-]+)\/?\)/g)].map(m => m[1]);
   const guidesLinks = [...a.body.matchAll(/\]\(\/guides\/(?!category\/)([a-z0-9-]+)\/?\)/g)].map(m => m[1]);
+  // Category links were previously excluded and checked by nothing. A generated
+  // slug like /guides/category/reptiles/ (never a category: reptiles are split
+  // across geckos/lizards/snakes/turtles-tortoises) shipped in Sep 2026 and was
+  // only found when Google crawled it.
+  const categoryLinks = [...a.body.matchAll(/\]\(\/(?:guides|encyclopedia)\/category\/([a-z0-9-]+)\/?\)/g)].map(m => m[1]);
 
   for (const target of blogLinks) {
     if (slugSet.has(target)) {
@@ -102,6 +128,9 @@ for (const a of articles) {
     } else {
       deadBlogLinks.push({ from: a.path, target });
     }
+  }
+  for (const target of categoryLinks) {
+    if (!categorySlugs.has(target)) deadCategoryLinks.push({ from: a.path, target });
   }
   for (const target of guidesLinks) {
     if (!structuredGuideIds.has(target)) {
@@ -190,6 +219,7 @@ const report = {
   orphanPages: orphans,
   deadBlogLinks,
   deadGuidesLinks,
+  deadCategoryLinks,
   missingFromRelatedArticles,
   staleRelatedArticles,
   missingImages,
@@ -198,5 +228,6 @@ const report = {
 console.log(JSON.stringify(report, null, 2));
 
 const totalIssues = orphans.length + deadBlogLinks.length + deadGuidesLinks.length
+  + deadCategoryLinks.length
   + missingFromRelatedArticles.length + staleRelatedArticles.length + missingImages.length;
 console.error(`\nSite health sweep: ${totalIssues} issue(s) found across ${articles.length} articles.`);
