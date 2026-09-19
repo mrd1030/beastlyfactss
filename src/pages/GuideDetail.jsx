@@ -199,6 +199,11 @@ export default function GuideDetail() {
     if (!w) return; // popup blocked
     w.document.write(printHTML);
     w.document.close();
+    // A popup opened with an empty URL is about:blank, and Chrome stamps that
+    // document URL into the print footer. The popup inherits our origin, so
+    // rewrite it to the hub the cards were printed from: a real page, and a
+    // better thing for someone holding the printout to type in.
+    try { w.history.replaceState({}, '', window.location.pathname); } catch { /* ignore */ }
     w.print();
   };
 
