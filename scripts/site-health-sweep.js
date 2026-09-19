@@ -77,6 +77,15 @@ const structuredGuideIds = readStructuredGuideIds();
 const relatedArticles = readRelatedArticlesKeys();
 const beastlypediaRelatedFiles = readBeastlypediaRelatedFiles();
 
+// Both lists mirror STANDARD_SUFFIXES in src/lib/data/relatedArticles.js. Add a
+// suffix there and it belongs in AUTO_SUFFIXES here too, or the next series to
+// ship reads as 30-odd orphans it isn't. They are deliberately two lists: the
+// quad below is only the four pieces that define a complete care set, and it
+// carries the leading dash because it is used to strip a slug down to a species.
+const AUTO_SUFFIXES = ['cost-guide', 'handling-guide', 'health-issues-guide',
+  'tank-setup-guide', 'feeding-guide', 'enrichment-guide', 'legal-guide'];
+const SUFFIXES = ['-cost-guide', '-handling-guide', '-health-issues-guide', '-tank-setup-guide'];
+
 // Inbound link tally: count /blog/<slug>/ and /guides/<slug>/ references
 // across every article body, plus credit from relatedArticles.js entries.
 const inbound = new Map(articles.map(a => [a.slug, 0]));
@@ -106,6 +115,23 @@ for (const slugs of Object.values(relatedArticles)) {
 for (const s of beastlypediaRelatedFiles) {
   inbound.set(s, (inbound.get(s) || 0) + 1);
 }
+// getRelatedArticleSlugs() in relatedArticles.js auto-detects a guide's standard
+// articles by matching `${guideId}-${suffix}` against real slugs, so the Deep Dive
+// block on GuideDetail.jsx and EncyclopediaAnimal.jsx links them with no
+// RELATED_ARTICLES entry required. Credit those the same way. Without this the
+// check contradicted itself: missingFromRelatedArticles already knows about
+// auto-detection, while the orphan tally counted only literal entries, so a
+// species whose manual entry predated its feeding guide reported an orphan that
+// is linked on the live site.
+for (const a of articles) {
+  for (const suffix of AUTO_SUFFIXES) {
+    if (a.slug.endsWith(`-${suffix}`)
+        && structuredGuideIds.has(a.slug.slice(0, -(suffix.length + 1)))) {
+      inbound.set(a.slug, (inbound.get(a.slug) || 0) + 1);
+      break;
+    }
+  }
+}
 
 // Orphan pages: zero inbound references from any article body, relatedArticles.js,
 // or a Beastfile's relatedFiles list. Skip fun-facts (those are meant to stand
@@ -118,7 +144,6 @@ const orphans = articles
 
 // relatedArticles.js completeness: group guide files into cost/handling/health/tank-setup
 // quads by stripping the known suffix, flag any quad-species missing a relatedArticles.js key.
-const SUFFIXES = ['-cost-guide', '-handling-guide', '-health-issues-guide', '-tank-setup-guide'];
 const bySpecies = new Map();
 for (const a of articles.filter(x => x.dir === 'guides')) {
   for (const suffix of SUFFIXES) {
