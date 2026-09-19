@@ -1,11 +1,24 @@
-# ORDER MATTERS. Cloudflare silently honours only the first ~189 rules in this
-# file and discards the rest: on 2026-09-19 /guides/american-shorthair (rule
-# 189) redirected while /guides/american-shorthair/ (rule 190) returned 404,
-# two adjacent lines from the same commit. Anything that must work goes near
-# the top. Do not append a rule you care about to the bottom.
+# KEEP EVERY SPLAT AND PLACEHOLDER RULE AT THE BOTTOM OF THIS FILE.
 #
-# Trailing-slash variants are NOT optional: Cloudflare does not normalise them,
-# which is how that same pair proved the cutoff. Every rule needs both forms.
+# Cloudflare parses a rule as "dynamic" if it contains a splat/placeholder OR
+# if it appears anywhere BELOW one that does. The dynamic cap is 100; static is
+# 2,000. On the 2026-09-18 build one splat sat at line 113, which made all 111
+# rules under it dynamic and produced:
+#
+#   Parsed 189 valid redirect rules.
+#   Maximum number of dynamic rules supported is 100. Skipping remaining 52
+#   lines of file.
+#
+# 35 rules were silently dead, including every dog and cat guide-id rename and
+# /blog/exotic-pet-legal-hub/, which had six weeks of index history. Nothing
+# failed the build. The only symptom was a 404 in production.
+#
+# So: splats last, everything else above them. That keeps the file at 223
+# static + 1 dynamic, against limits of 2,000 and 100.
+#
+# Trailing-slash variants are NOT optional. Cloudflare does not normalise them:
+# with only the bare form live, /guides/american-shorthair redirected while
+# /guides/american-shorthair/ returned 404. Every rule needs both forms.
 
 # Dog and cat breed guides carry a species-prefixed id (dog-/cat-) while their
 # encyclopedia entry does not. The block further up covers the ones Google
@@ -176,7 +189,6 @@
 /trivia/ /quiz/trivia/ 301
 /encyclopedia/guides /guides/ 301
 /encyclopedia/guides/ /guides/ 301
-/encyclopedia/guides/* /guides/category/:splat/ 301
 
 # No SPA-fallback 200-rewrite block here on purpose. A prior version of
 # this file had rules like "/guides/* / 200" intended to fall back to the
@@ -327,3 +339,8 @@
 /critter-digest/ /blog/ 301
 
 
+
+# Splat rules live here, at the very bottom, and nothing goes below them. The
+# two exact-match /encyclopedia/guides rules above still win, since Cloudflare
+# takes the first match.
+/encyclopedia/guides/* /guides/category/:splat/ 301
