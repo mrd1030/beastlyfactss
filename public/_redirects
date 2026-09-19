@@ -1,3 +1,69 @@
+# ORDER MATTERS. Cloudflare silently honours only the first ~189 rules in this
+# file and discards the rest: on 2026-09-19 /guides/american-shorthair (rule
+# 189) redirected while /guides/american-shorthair/ (rule 190) returned 404,
+# two adjacent lines from the same commit. Anything that must work goes near
+# the top. Do not append a rule you care about to the bottom.
+#
+# Trailing-slash variants are NOT optional: Cloudflare does not normalise them,
+# which is how that same pair proved the cutoff. Every rule needs both forms.
+
+# Dog and cat breed guides carry a species-prefixed id (dog-/cat-) while their
+# encyclopedia entry does not. The block further up covers the ones Google
+# found live; these seven are the same mismatch and had no rule.
+
+/guides/american-shorthair /guides/cat-american-shorthair/ 301
+/guides/american-shorthair/ /guides/cat-american-shorthair/ 301
+/guides/scottish-fold /guides/cat-scottish-fold/ 301
+/guides/scottish-fold/ /guides/cat-scottish-fold/ 301
+/guides/sphynx /guides/cat-sphynx/ 301
+/guides/sphynx/ /guides/cat-sphynx/ 301
+/guides/beagle /guides/dog-beagle/ 301
+/guides/beagle/ /guides/dog-beagle/ 301
+/guides/bulldog /guides/dog-bulldog/ 301
+/guides/bulldog/ /guides/dog-bulldog/ 301
+/guides/dachshund /guides/dog-dachshund/ 301
+/guides/dachshund/ /guides/dog-dachshund/ 301
+/guides/rottweiler /guides/dog-rottweiler/ 301
+/guides/rottweiler/ /guides/dog-rottweiler/ 301
+
+# The guide id is a short form, but the animal's full name is what a person
+# types and what an inbound link uses. Each left side was confirmed 404 live
+# and each target confirmed 200 before these were added.
+
+/guides/green-cheek-conure /guides/conure/ 301
+/guides/green-cheek-conure/ /guides/conure/ 301
+/guides/african-fat-tailed-gecko /guides/african-fat-tail/ 301
+/guides/african-fat-tailed-gecko/ /guides/african-fat-tail/ 301
+/guides/giant-african-millipede /guides/millipede/ 301
+/guides/giant-african-millipede/ /guides/millipede/ 301
+/guides/madagascar-hissing-cockroach /guides/hissing-cockroach/ 301
+/guides/madagascar-hissing-cockroach/ /guides/hissing-cockroach/ 301
+/guides/argentine-black-and-white-tegu /guides/tegu/ 301
+/guides/argentine-black-and-white-tegu/ /guides/tegu/ 301
+/guides/fancy-mouse /guides/mouse/ 301
+/guides/fancy-mouse/ /guides/mouse/ 301
+/guides/fancy-rat /guides/rat/ 301
+/guides/fancy-rat/ /guides/rat/ 301
+/guides/budgie-parakeet /guides/budgie/ 301
+/guides/budgie-parakeet/ /guides/budgie/ 301
+
+# Jackson's Chameleon held the bare id "chameleon" while its own articles, its
+# encyclopedia NAME_FIXES entry and the veiled chameleon guide all used the
+# full form. That left the genus name pointing at one species, which blocks a
+# second chameleon from having a sensible spot. Guide and encyclopedia ids are
+# now both jacksons-chameleon, matching veiled-chameleon and the article slugs.
+# Both old URLs were live 200s, so both 301 to the new id.
+/guides/chameleon /guides/jacksons-chameleon/ 301
+/guides/chameleon/ /guides/jacksons-chameleon/ 301
+/encyclopedia/animal/chameleon-jackson /encyclopedia/animal/jacksons-chameleon/ 301
+/encyclopedia/animal/chameleon-jackson/ /encyclopedia/animal/jacksons-chameleon/ 301
+
+# The written hub moved out of /blog/ and became the body of /exotic-pet-laws/
+# (see ExoticPetLawsHub.jsx). It carried 40 inbound internal links, all of them
+# repointed, but the URL was indexed and is what any external link still uses.
+/blog/exotic-pet-legal-hub /exotic-pet-laws/ 301
+/blog/exotic-pet-legal-hub/ /exotic-pet-laws/ 301
+
 /blog/bioactive-setups /blog/bioactive-setups-bearded-dragons/ 301
 /blog/bioactive-setups/ /blog/bioactive-setups-bearded-dragons/ 301
 /blog/uvb-lighting-guide /blog/uvb-lighting-complete-guide/ 301
@@ -261,59 +327,3 @@
 /critter-digest/ /blog/ 301
 
 
-# Dog and cat breed guides carry a species-prefixed id (dog-/cat-) while their
-# encyclopedia entry does not. The block further up covers the ones Google
-# found live; these seven are the same mismatch and had no rule.
-
-/guides/american-shorthair /guides/cat-american-shorthair/ 301
-/guides/american-shorthair/ /guides/cat-american-shorthair/ 301
-/guides/scottish-fold /guides/cat-scottish-fold/ 301
-/guides/scottish-fold/ /guides/cat-scottish-fold/ 301
-/guides/sphynx /guides/cat-sphynx/ 301
-/guides/sphynx/ /guides/cat-sphynx/ 301
-/guides/beagle /guides/dog-beagle/ 301
-/guides/beagle/ /guides/dog-beagle/ 301
-/guides/bulldog /guides/dog-bulldog/ 301
-/guides/bulldog/ /guides/dog-bulldog/ 301
-/guides/dachshund /guides/dog-dachshund/ 301
-/guides/dachshund/ /guides/dog-dachshund/ 301
-/guides/rottweiler /guides/dog-rottweiler/ 301
-/guides/rottweiler/ /guides/dog-rottweiler/ 301
-
-# The guide id is a short form, but the animal's full name is what a person
-# types and what an inbound link uses. Each left side was confirmed 404 live
-# and each target confirmed 200 before these were added.
-
-/guides/green-cheek-conure /guides/conure/ 301
-/guides/green-cheek-conure/ /guides/conure/ 301
-/guides/african-fat-tailed-gecko /guides/african-fat-tail/ 301
-/guides/african-fat-tailed-gecko/ /guides/african-fat-tail/ 301
-/guides/giant-african-millipede /guides/millipede/ 301
-/guides/giant-african-millipede/ /guides/millipede/ 301
-/guides/madagascar-hissing-cockroach /guides/hissing-cockroach/ 301
-/guides/madagascar-hissing-cockroach/ /guides/hissing-cockroach/ 301
-/guides/argentine-black-and-white-tegu /guides/tegu/ 301
-/guides/argentine-black-and-white-tegu/ /guides/tegu/ 301
-/guides/fancy-mouse /guides/mouse/ 301
-/guides/fancy-mouse/ /guides/mouse/ 301
-/guides/fancy-rat /guides/rat/ 301
-/guides/fancy-rat/ /guides/rat/ 301
-/guides/budgie-parakeet /guides/budgie/ 301
-/guides/budgie-parakeet/ /guides/budgie/ 301
-
-# Jackson's Chameleon held the bare id "chameleon" while its own articles, its
-# encyclopedia NAME_FIXES entry and the veiled chameleon guide all used the
-# full form. That left the genus name pointing at one species, which blocks a
-# second chameleon from having a sensible spot. Guide and encyclopedia ids are
-# now both jacksons-chameleon, matching veiled-chameleon and the article slugs.
-# Both old URLs were live 200s, so both 301 to the new id.
-/guides/chameleon /guides/jacksons-chameleon/ 301
-/guides/chameleon/ /guides/jacksons-chameleon/ 301
-/encyclopedia/animal/chameleon-jackson /encyclopedia/animal/jacksons-chameleon/ 301
-/encyclopedia/animal/chameleon-jackson/ /encyclopedia/animal/jacksons-chameleon/ 301
-
-# The written hub moved out of /blog/ and became the body of /exotic-pet-laws/
-# (see ExoticPetLawsHub.jsx). It carried 40 inbound internal links, all of them
-# repointed, but the URL was indexed and is what any external link still uses.
-/blog/exotic-pet-legal-hub /exotic-pet-laws/ 301
-/blog/exotic-pet-legal-hub/ /exotic-pet-laws/ 301
