@@ -18,7 +18,15 @@ alongside the federal law guide hero, the fourteen legal-guide heroes on
 
 ## Facts awaiting images
 
-None.
+## 2026-09-21 run: 5 facts drafted, awaiting images
+
+Ready for the site owner to generate photos and add to facts.js.
+
+1. **Hoatzin** (Birds) - Wing Claws at Birth. Hoatzin chicks hatch with two working claws on each wing, letting them climb back to the nest if they fall or dive into the water below to escape a predator. The claws disappear as the bird matures. Adults are nicknamed the stinkbird because they digest leaves through slow bacterial fermentation in an oversized crop, the same trick a cow's stomach uses, and it takes up to 45 hours. Visual hook: a fuzzy hoatzin chick clinging to a branch with visible claws on its wingtips, muddy river background.
+2. **Norwegian Lundehund** (Dogs & Cats) - Six Toed Cliff Climber. The Norwegian Lundehund has at least six toes on each foot, extra joints in its shoulders, and neck vertebrae flexible enough to bend its head backward until it touches its own spine. The breed evolved these features to squeeze into narrow crevices and climb steep coastal cliffs hunting puffins. Visual hook: a small Lundehund dog on a rocky sea cliff with its front paw raised showing extra toes, puffins nearby.
+3. **Numbat** (Mammals) - The Termite Marathon. A numbat eats between 15,000 and 20,000 termites a day, using a tongue that stretches about 10 centimeters to reach deep into their tunnels. Unlike most Australian marsupials, numbats are active during daylight hours, timing their hunts to when termites are moving near the surface. Visual hook: a numbat with its long tongue extended into a termite mound, striped back visible in dappled forest light.
+4. **Yeti Crab** (Ocean) - Farms On Its Own Arms. The yeti crab grows bacteria on the dense, hair like bristles covering its claws, then combs them off with its mouthparts to eat. It waves its claws to stir the water around the bacteria, keeping fresh oxygen and chemicals flowing so its food keeps growing. Species have been found near deep sea methane seeps and hydrothermal vents. Visual hook: a pale, shaggy clawed yeti crab waving its bristled arms near a deep sea vent, illuminated by submersible lights.
+5. **Marine Iguana** (Reptiles) - Sneezes Out Salt. The marine iguana is the only lizard in the world that forages in the ocean, diving to eat algae off rocks. Its diet packs in so much salt that a gland above its eyes filters it straight out of the bloodstream, and the iguana clears it with a sudden sneeze, sometimes leaving a crust of salt crystals on its snout. Visual hook: a marine iguana on black volcanic rock mid sneeze, a small spray of salt visible near its snout, ocean waves behind.
 
 ## How a blocked fact works
 
