@@ -26967,6 +26967,116 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/international-sloth-day.mdx",
+    "slug": "international-sloth-day",
+    "title": "Nearly Every Calendar Has International Sloth Day on the Wrong Date",
+    "seoTitle": "International Sloth Day: The Real Date",
+    "excerpt": "The foundation that created International Sloth Day set it as the third Saturday in October. Most published calendars print 20 October, which was the third Saturday in 2013 and has been copied forward ever since.",
+    "date": "2026-09-26",
+    "category": "Wild Animals",
+    "categories": [
+      "Wild Animals"
+    ],
+    "tags": [
+      "Sloth",
+      "International Sloth Day",
+      "Conservation",
+      "AIUNAU",
+      "Wild Animals",
+      "Rainforest"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/international-sloth-day.jpg",
+    "imageAlt": "A brown-throated three-toed sloth hanging by its foreclaws from a branch in rainforest canopy, face turned toward the camera",
+    "emoji": "🦥",
+    "lastReviewed": "2026-09-26",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "When is International Sloth Day?",
+        "a": "The third Saturday in October. That is 17 October in 2026 and 16 October in 2027. It is a floating date, so it lands on a different number every year."
+      },
+      {
+        "q": "Why do so many calendars say 20 October?",
+        "a": "20 October was the third Saturday in 2013. A calendar somewhere flattened the rule into that year's number, other calendars copied it, and the wrong figure now appears widely enough to look corroborated."
+      },
+      {
+        "q": "Who created International Sloth Day?",
+        "a": "AIUNAU, a Colombian wildlife foundation, in 2010. It marks the first international meeting on sloth welfare and conservation, held in Medellín that November."
+      },
+      {
+        "q": "Are sloths endangered?",
+        "a": "Most are not. Four of the six living species are listed as Least Concern. The maned sloth is Vulnerable, and the pygmy three-toed sloth is Critically Endangered, surviving only on one Panamanian island smaller than five square kilometers."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": "international-sloth-day",
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4,
+    "headingCount": 6,
+    "ledeMatchesExcerpt": false
+  },
+  {
+    "path": "/content/guides/international-wombat-day.mdx",
+    "slug": "international-wombat-day",
+    "title": "International Wombat Day and the Species That Nearly Ran Out",
+    "seoTitle": "International Wombat Day: 22 October",
+    "excerpt": "22 October, no named founder, and a species that was down to around 35 animals in one Queensland paddock. The cubes get the attention and the northern hairy-nosed wombat is the reason the day is worth keeping.",
+    "date": "2026-09-29",
+    "category": "Wild Animals",
+    "categories": [
+      "Wild Animals"
+    ],
+    "tags": [
+      "Wombat",
+      "International Wombat Day",
+      "Conservation",
+      "Australia",
+      "Marsupials",
+      "Wild Animals"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/international-wombat-day.jpg",
+    "imageAlt": "A bare-nosed wombat standing at the mouth of its burrow on dry grass in evening light, facing the camera",
+    "emoji": "🐨",
+    "lastReviewed": "2026-09-29",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "When is International Wombat Day?",
+        "a": "22 October, every year. The date is fixed and consistently observed, though no organization claims to have set it."
+      },
+      {
+        "q": "Why is International Wombat Day on 22 October?",
+        "a": "Nobody knows. The commonly repeated explanation, that it falls near Australian spring planting, is folklore with no source behind it. The date traces to around 2005 and no founder is documented."
+      },
+      {
+        "q": "How many northern hairy-nosed wombats are left?",
+        "a": "Around 400 as of 2024, up from roughly 35 animals in the 1980s. They survive behind a 20 kilometer predator-proof fence at Epping Forest National Park in Queensland, plus two translocated insurance populations."
+      },
+      {
+        "q": "Do all wombats get sarcoptic mange?",
+        "a": "No. Mange is a serious problem for bare-nosed and southern hairy-nosed wombats and can kill an animal slowly over months. It has not been recorded in the northern hairy-nosed wombat, which is fortunate given how few of them there are."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": "international-wombat-day",
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4,
+    "headingCount": 6,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/invertebrate-emergency-travel-shipping-guide.mdx",
     "slug": "invertebrate-emergency-travel-shipping-guide",
     "title": "Invertebrate Emergency Plan: Power Outages, Travel, and Shipping",
@@ -38383,6 +38493,61 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/reptile-awareness-day.mdx",
+    "slug": "reptile-awareness-day",
+    "title": "Reptile Awareness Day Has No Founder Anyone Can Name",
+    "seoTitle": "Reptile Awareness Day: 21 October, and Its Origins",
+    "excerpt": "21 October is the settled date and nobody can say who set it. No organization claims Reptile Awareness Day, which is a strange footing for the one observance covering a group that went uncounted until 2022.",
+    "date": "2026-09-28",
+    "category": "Wild Animals",
+    "categories": [
+      "Wild Animals"
+    ],
+    "tags": [
+      "Reptiles",
+      "Reptile Awareness Day",
+      "Conservation",
+      "IUCN",
+      "Wild Animals",
+      "Herpetology"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/reptile-awareness-day.jpg",
+    "imageAlt": "A wild lizard basking on warm rock in low sun, head raised and body angled toward the light",
+    "emoji": "🦎",
+    "lastReviewed": "2026-09-28",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "When is Reptile Awareness Day?",
+        "a": "21 October, every year. It is a fixed date and has been observed on it consistently, even though no organization has ever claimed to have set it."
+      },
+      {
+        "q": "Who founded Reptile Awareness Day?",
+        "a": "Nobody documented. No charity, agency or society claims it, and the earliest solid traces are promotion by reptile publications and conservation groups rather than any founding announcement. Accounts that name a founder or a first year do not cite anything."
+      },
+      {
+        "q": "How many reptile species are threatened with extinction?",
+        "a": "At least 21%. The first comprehensive assessment, published in Nature in 2022, covered 10,196 species and found 1,829 of them threatened. Habitat loss from agriculture, logging and urban development is the largest driver."
+      },
+      {
+        "q": "Why did reptiles get assessed so late?",
+        "a": "Money and attention. Birds, mammals and amphibians were assessed comprehensively years earlier. The reptile assessment took more than 900 scientists roughly 15 years to complete and was published in 2022."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": "reptile-awareness-day",
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4,
+    "headingCount": 6,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/reptile-emergency-plan-guide.mdx",
     "slug": "reptile-emergency-plan-guide",
     "title": "Reptile Emergency Plan: Power Outages, Travel, and Pet Sitters",
@@ -47034,6 +47199,61 @@
     "myth": null,
     "truth": null,
     "sourceCount": 4,
+    "headingCount": 6,
+    "ledeMatchesExcerpt": false
+  },
+  {
+    "path": "/content/guides/world-octopus-day.mdx",
+    "slug": "world-octopus-day",
+    "title": "World Octopus Day Was Invented on a Forum",
+    "seoTitle": "World Octopus Day: 8 October, and Who Started It",
+    "excerpt": "Eight arms, eighth day of the month. World Octopus Day has no charity and no UN resolution behind it. A group of octopus enthusiasts on a message board picked the date in 2007 and it stuck.",
+    "date": "2026-09-25",
+    "category": "Wild Animals",
+    "categories": [
+      "Wild Animals"
+    ],
+    "tags": [
+      "Octopus",
+      "Cephalopods",
+      "World Octopus Day",
+      "Conservation",
+      "Animal Welfare",
+      "Wild Animals"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/world-octopus-day.jpg",
+    "imageAlt": "A common octopus on a rocky seabed with several arms extended over the rock, pupils horizontal and skin mottled to match the stone",
+    "emoji": "🐙",
+    "lastReviewed": "2026-09-25",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "When is World Octopus Day?",
+        "a": "8 October, every year. It is a fixed date and has not moved since the first one in 2007. The eighth day of the month was chosen for the eight arms."
+      },
+      {
+        "q": "Who started World Octopus Day?",
+        "a": "Members of TONMO, The Octopus News Magazine Online, a message board for octopus enthusiasts. They created it in 2007 as the opening day of Cephalopod Awareness Days. There is no charity, government body or UN resolution behind it."
+      },
+      {
+        "q": "What are Cephalopod Awareness Days?",
+        "a": "A five-day run starting 8 October. Octopus Day opens it, 9 October covers nautiluses and the lesser known living cephalopods, 10 October is for squid and cuttlefish, and 11 October covers cephalopods in myth and fiction."
+      },
+      {
+        "q": "Is octopus farming legal?",
+        "a": "It depends where. Washington State banned it in 2024 and California followed, both citing welfare evidence. No commercial octopus farm is operating at scale anywhere yet, and the bans were written to arrive before one does."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": "world-octopus-day",
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
     "headingCount": 6,
     "ledeMatchesExcerpt": false
   },

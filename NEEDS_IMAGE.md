@@ -7,26 +7,33 @@ removed from this file, which is the only place that history lives.
 
 ## Open right now
 
-**One guide hero, and it is on a deadline.** `world-animal-day.mdx` is written,
-voice clean and committed on `claude/site-content-expansion-qnynio`. It cannot
-ship until its hero lands, because `check-images.mjs` runs at the front of
-`build` and fails the deploy on a missing source image. That is the safe
-failure, but it means nothing in the October cluster goes live without it.
+**Five guide heroes, all on the same deadline.** The full October cluster is
+written, voice clean and committed on `claude/site-content-expansion-qnynio`.
+None of it ships until the heroes land, because `check-images.mjs` runs at the
+front of `build` and fails the deploy on a missing source image. That is the
+safe failure, but it means the whole October run is blocked on art.
 
-The awareness-days calendar no longer needs a hero: it became the
-`/animal-days/` page rather than a blog article, and that route uses the
-default OG image like every other listing page.
+The `/animal-days/` page itself needs no hero: it is a route, and listing pages
+use the default OG image.
 
 Every fact on the site still resolves its own photo, 328 of 328, none shared.
 
 ## Guide heroes still needed
 
-3:2 at 1168x784, mozjpeg quality 80. Prompt is in `IMAGE_PROMPTS.md` under
-"Animal awareness days, 2026-09-22".
+All 3:2 at 1168x784, mozjpeg quality 80. Prompts are in `IMAGE_PROMPTS.md`
+under "Animal awareness days, 2026-09-22" and "October animal days,
+2026-09-22".
 
-| File | Article | Wanted by |
+| File | Article | Live date |
 |---|---|---|
-| `/assets/images/world-animal-day.jpg` | `world-animal-day.mdx` | before 2026-10-04 |
+| `/assets/images/world-animal-day.jpg` | `world-animal-day.mdx` | 4 Oct |
+| `/assets/images/world-octopus-day.jpg` | `world-octopus-day.mdx` | 8 Oct |
+| `/assets/images/international-sloth-day.jpg` | `international-sloth-day.mdx` | 17 Oct |
+| `/assets/images/reptile-awareness-day.jpg` | `reptile-awareness-day.mdx` | 21 Oct |
+| `/assets/images/international-wombat-day.jpg` | `international-wombat-day.mdx` | 22 Oct |
+
+The articles are dated 24 to 29 September so they index before their days. The
+heroes are what decides whether that happens.
 
 The eight wrong-species replacements landed 2026-09-12 alongside the federal law
 guide hero, the fourteen legal-guide heroes on 2026-09-11, and the nine

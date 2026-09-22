@@ -4748,6 +4748,28 @@
       ]
     },
     {
+      "slug": "international-sloth-day",
+      "title": "International Sloth Day: The Real Date",
+      "excerpt": "The foundation that created International Sloth Day set it as the third Saturday in October. Most published calendars print 20 October, which was the third Saturday in 2013 and has been copied forward ever since.",
+      "date": "2026-09-26",
+      "image": "/assets/images/international-sloth-day.jpg",
+      "category": "Wild Animals",
+      "categories": [
+        "Wild Animals"
+      ]
+    },
+    {
+      "slug": "international-wombat-day",
+      "title": "International Wombat Day: 22 October",
+      "excerpt": "22 October, no named founder, and a species that was down to around 35 animals in one Queensland paddock. The cubes get the attention and the northern hairy-nosed wombat is the reason the day is worth keeping.",
+      "date": "2026-09-29",
+      "image": "/assets/images/international-wombat-day.jpg",
+      "category": "Wild Animals",
+      "categories": [
+        "Wild Animals"
+      ]
+    },
+    {
       "slug": "invertebrate-emergency-travel-shipping-guide",
       "title": "Invertebrate Emergency Plan: Outages, Travel, Shipping",
       "excerpt": "Power outages are mostly a non-event for a tarantula, and that's worth writing down plainly. The real risk in this corner of pet keeping is in a car, a shipping box, or a hermit crab's uniquely humidity-dependent setup.",
@@ -6735,6 +6757,17 @@
       ]
     },
     {
+      "slug": "reptile-awareness-day",
+      "title": "Reptile Awareness Day: 21 October, and Its Origins",
+      "excerpt": "21 October is the settled date and nobody can say who set it. No organization claims Reptile Awareness Day, which is a strange footing for the one observance covering a group that went uncounted until 2022.",
+      "date": "2026-09-28",
+      "image": "/assets/images/reptile-awareness-day.jpg",
+      "category": "Wild Animals",
+      "categories": [
+        "Wild Animals"
+      ]
+    },
+    {
       "slug": "reptile-emergency-plan-guide",
       "title": "Reptile Emergency Plan: Outages, Travel, Pet Sitters",
       "excerpt": "What to actually do when the power goes out, you're leaving town, or you're handing your reptile off to a sitter, with species-specific cold floors in one table.",
@@ -8326,6 +8359,17 @@
       "excerpt": "World Animal Day is 4 October because a Berlin hall was booked. The first one, in 1925, ran on 24 March instead, and it took four years to get the date its founder wanted.",
       "date": "2026-09-24",
       "image": "/assets/images/world-animal-day.jpg",
+      "category": "Wild Animals",
+      "categories": [
+        "Wild Animals"
+      ]
+    },
+    {
+      "slug": "world-octopus-day",
+      "title": "World Octopus Day: 8 October, and Who Started It",
+      "excerpt": "Eight arms, eighth day of the month. World Octopus Day has no charity and no UN resolution behind it. A group of octopus enthusiasts on a message board picked the date in 2007 and it stuck.",
+      "date": "2026-09-25",
+      "image": "/assets/images/world-octopus-day.jpg",
       "category": "Wild Animals",
       "categories": [
         "Wild Animals"

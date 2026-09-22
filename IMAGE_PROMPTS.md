@@ -117,3 +117,60 @@ photograph. Light falls from the high windows and pools on the stage. Shot wide,
 clothing, no watermark. 3:2.
 **Check:** nobody in the frame is a recognisable individual, and no banner or
 sign carries legible lettering.
+
+## October animal days, 2026-09-22
+
+Four guide heroes, 3:2 at 1168x784. Unlike the World Animal Day frame these are
+species portraits, so the accuracy rules above apply in full: name the features
+that decide the species and rule out the animal the generator will otherwise
+produce. No lettering in any of them.
+
+**`/assets/images/world-octopus-day.jpg`**
+
+A common octopus on a rocky seabed, several arms extended and gripping stone,
+skin mottled and papillae raised to match the rock. Horizontal rectangular
+pupil clearly visible. Not a squid or cuttlefish: eight arms only, no pair of
+long feeding tentacles, a soft rounded mantle with no fin along the edge and no
+internal shell outline. Clear shallow water, dappled daylight from above, muted
+blue green and rust palette. Shot at 60mm macro, f/8, the near arms sharp and
+the background falling away. No divers, no hands, no equipment, no text, no
+watermark. 3:2.
+**Check:** eight arms, no feeding tentacles, and the pupil reads as a
+horizontal bar rather than a round dot.
+
+**`/assets/images/international-sloth-day.jpg`**
+
+A brown-throated three-toed sloth hanging below a branch by its foreclaws in
+rainforest canopy, face turned toward the camera, the pale face mask and dark
+eye stripe clear. Three curved claws on the visible forelimb. Coat slightly
+green with algae. Not a two-toed sloth: three claws on the front limb, a
+rounder flatter face, and a short tail. Humid green canopy light, soft and
+diffuse, high humidity haze. Shot at 200mm, f/4, background compressed to
+green. No people, no hands, no tourist contact, no text, no watermark. 3:2.
+**Check:** three foreclaws, the face mask and eye stripe present, and the
+animal is hanging rather than posed on a person.
+
+**`/assets/images/reptile-awareness-day.jpg`**
+
+A wild lizard basking on warm rock in low sun, body angled toward the light,
+head raised, one foreleg lifted off the hot stone. A plain, unremarkable small
+lizard of no obvious pet species: brown and grey, keeled scales, nothing
+ornamental. This is deliberate, the article's point is that the threatened
+reptiles are the ones nobody photographs. Dry scrub habitat, long golden light,
+rock texture sharp. Shot at 100mm macro, f/5.6. Not a bearded dragon, not a
+leopard gecko, not a chameleon. No terrarium, no substrate, no glass, no hands,
+no text, no watermark. 3:2.
+**Check:** it reads as a wild animal on real rock, not a pet on a basking
+platform, and it is not a recognisable pet-trade species.
+
+**`/assets/images/international-wombat-day.jpg`**
+
+A bare-nosed wombat standing at the mouth of its burrow on dry grass in evening
+light, facing the camera, stocky and low to the ground. Bare leathery nose,
+small rounded ears, coarse brown grey fur. Not a koala and not a hairy-nosed
+wombat: a naked nose with no fur on it, short rounded ears rather than large
+fluffy ones, and a heavy barrel body on very short legs. Australian dry
+grassland at dusk, warm low light, burrow entrance visible behind. Shot at
+135mm, f/4. No people, no fences in focus, no text, no watermark. 3:2.
+**Check:** the nose is bare and leathery, the ears are small and rounded, and
+the animal is clearly not a koala.
