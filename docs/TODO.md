@@ -363,3 +363,46 @@ guides is the wrong place to spend the words while that holds.
 What would reopen it: a handling guide earning clicks, or a reason to want the
 pick-up sections that is not traffic. The research in the archived plan is
 per-slug and real, so reopening costs nothing but the writing.
+
+---
+
+## 6. The monthly legal source check
+
+Added 2026-09-22. `scripts/check-legal-sources.mjs`, run by
+`.github/workflows/legal-sources.yml` at 09:00 UTC on the first of each month.
+
+**It reads no law and calls no model.** It fetches the 208 primary source URLs
+in `legalStatus.json`, normalizes away the furniture, hashes each one, and
+compares against `docs/legal-source-hashes.json`. A change means the page was
+edited, which is the cue to re-read that one source. It never means the law
+changed, and it never decides anything.
+
+Cost is a few minutes of CI a month and nothing else. There is no API key and
+no model call anywhere in it.
+
+### When it fires
+
+It opens an issue labelled `legal-matrix` listing the changed sources, the size
+of the change, and the cells that cite each one. Work those cells: re-read the
+source, fix the cell if it is wrong, bump `verifiedOn` if it is right, then run
+`node scripts/check-legal-sources.mjs --write` to refresh the baseline or the
+same sources report again next month.
+
+### What it does not do
+
+- It does not fail on unreachable sources. 30 of the 208 refuse a datacentre
+  fetch (19 return 503, 9 return 403, one 405, one 307). **None returns 404**,
+  so nothing has actually moved. A job that went red for a bot block would be
+  muted inside two months.
+- It does not report a difference that will not reproduce. Anything differing
+  from the baseline is fetched a second time, and only a change that repeats is
+  reported. That was not optional: the first pass flagged 6 of 177 sources ten
+  minutes after the baseline was written, with no law having moved, and two
+  consecutive fetches of those pages were byte-identical. Confirm-on-retry took
+  it to 2, and refreshing the baseline against the settled state took it to 0.
+
+### The judgement it cannot make
+
+A sub-1% size change is almost always furniture that slipped the filter. A
+larger one, or any change at all on a source only one or two cells cite, is
+worth opening. The report prints both numbers so that call is quick.

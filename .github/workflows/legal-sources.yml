@@ -1,0 +1,76 @@
+name: legal sources
+
+# Watches the primary sources behind legalStatus.json for change, on the first
+# of every month. It reads no law and calls no model: 208 HTTP GETs and a hash
+# each. The only thing it decides is whether a page a cell rests on has been
+# edited since the baseline, so a human re-reads that one source instead of all
+# of them.
+#
+# Deliberately does not fail on unreachable sources. State legislature sites
+# time out and block datacentre IPs routinely, and a job that goes red for that
+# gets muted within two months, which is how a checker stops working.
+
+on:
+  schedule:
+    # 09:00 UTC on the 1st, which is 04:00 or 05:00 Eastern depending on DST.
+    # GitHub queues scheduled jobs under load, so treat the time as "that
+    # morning" rather than exact.
+    - cron: '0 9 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # No npm ci. The script uses only node builtins and global fetch, so
+      # installing the site's dependencies would add several minutes to a job
+      # whose whole point is to be cheap.
+      - name: Check legal sources
+        id: check
+        run: |
+          set +e
+          node scripts/check-legal-sources.mjs > report.txt 2>&1
+          echo "exit=$?" >> "$GITHUB_OUTPUT"
+          cat report.txt
+
+      - name: Open an issue when a source has changed
+        if: steps.check.outputs.exit == '1'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('report.txt', 'utf8');
+            const month = new Date().toISOString().slice(0, 7);
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Legal sources changed: ${month}`,
+              labels: ['legal-matrix'],
+              body: [
+                'The monthly check found at least one primary source edited since the baseline.',
+                '',
+                'Nothing here means the law changed. It means the page changed, which is the',
+                'cue to re-read that source and decide. When a cell is confirmed still correct,',
+                'bump its `verifiedOn`; when it is not, fix the cell first.',
+                '',
+                'Refresh the baseline with `node scripts/check-legal-sources.mjs --write`',
+                'once the changes above have been dealt with, or the same sources report',
+                'again next month.',
+                '',
+                '```',
+                report.trim(),
+                '```',
+              ].join('\n'),
+            });
