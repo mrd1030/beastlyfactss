@@ -8,6 +8,39 @@ Newest first.
 
 ---
 
+## 2026-09-22: the October heroes and the five parked facts
+
+Five guide heroes for the October animal days cluster: world-animal-day,
+world-octopus-day, international-sloth-day, reptile-awareness-day,
+international-wombat-day. All arrived at 1168x784 exactly, so none was resized
+and none was enlarged. 1,862KB to 705KB through mozjpeg at 80.
+
+Five fact photos, promoted as ids 329 to 333, closing the 2026-09-21 draft run:
+
+| id | Fact | File | Size |
+|---|---|---|---|
+| 329 | Hoatzin, Wing Claws at Birth | `hoatzin.jpg` | 784x1168 |
+| 330 | Norwegian Lundehund, Six Toed Cliff Climber | `norwegian-lundehund.jpg` | 848x1264 |
+| 331 | Numbat, The Termite Marathon | `numbat.jpg` | 1264x848 |
+| 332 | Yeti Crab, Farms On Its Own Arms | `yeti-crab.jpg` | 1264x848 |
+| 333 | Marine Iguana, Sneezes Out Salt | `marine-iguana.jpg` | 1264x848 |
+
+Not cropped, per the rule: each kept the aspect it arrived at, two portrait and
+three landscape. Each registered in FACT_IMAGES by id in both
+`src/lib/data/factImages.js` and `public/_worker.js`, verified identical. No
+photo shared with another fact.
+
+Two frames were checked at pixel level before installing, because the fact
+depended on a detail a glance would miss. The Lundehund's raised paw shows six
+claws against four on the planted paw, so the photo carries the six-toe claim.
+The hoatzin's wing claw reads as a claw on the wing, clearly separate from the
+foot gripping the branch.
+
+One deviation accepted: the yeti crab frame gives the animal visible dark eyes.
+Real Kiwa have reduced, unpigmented eyes. The setae coat the fact is about is
+correct, and the eyes are a background detail, so it went in as delivered.
+
+
 ## 2026-09-17: the 22 fact photos, ids 297 to 314 and 325 to 328
 
 The batch record for 22 fact photos. The live queue is NEEDS_IMAGE.md in root,

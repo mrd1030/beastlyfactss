@@ -353,6 +353,11 @@ export const FACT_IMAGES = {
   326: '/assets/facts/bald-eagle-2.jpg',
   327: '/assets/facts/bald-eagle-3.jpg',
   328: '/assets/facts/bald-eagle-4.jpg',
+  329: '/assets/facts/hoatzin.jpg',
+  330: '/assets/facts/norwegian-lundehund.jpg',
+  331: '/assets/facts/numbat.jpg',
+  332: '/assets/facts/yeti-crab.jpg',
+  333: '/assets/facts/marine-iguana.jpg',
 };
 
 // Site-relative path for <img src>, or null if this fact has no dedicated photo yet.
