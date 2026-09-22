@@ -33,6 +33,11 @@
 //   node scripts/check-legal-sources.mjs              compare against the baseline
 //   node scripts/check-legal-sources.mjs --write      write/refresh the baseline
 //   node scripts/check-legal-sources.mjs --only NV    limit to one jurisdiction
+//   node scripts/check-legal-sources.mjs --browser     render what a fetch cannot read
+//
+// --browser is for running on a desktop. See the note on the flag below: what
+// it buys is not a better parser, it is a different place to make the request
+// from. Pair it with --write to record what it managed to read.
 //
 // Two signals, not one:
 //
@@ -67,6 +72,14 @@ const REPORT = path.join(ROOT, 'docs/legal-source-report.md');
 const PDF_TEXT = path.join(ROOT, 'scripts/pdf-text.py');
 
 const WRITE = process.argv.includes('--write');
+// Run the sources a plain fetch cannot read through a real browser. Meant for a
+// desktop, not for CI: it fixes three different problems at once, and all three
+// are about where the request comes from rather than how it is made. A home
+// connection is not the datacentre IP that mass.gov, dec.ny.gov, Georgia and
+// Hawaii answer with a 403. It has no egress gateway in front of it failing to
+// reach Illinois and Texas. And a browser runs the JavaScript that 26 of these
+// sites need before their statute exists on the page.
+const BROWSER = process.argv.includes('--browser');
 const ONLY = (() => {
   const i = process.argv.indexOf('--only');
   return i === -1 ? null : (process.argv[i + 1] || '').toUpperCase();
@@ -290,6 +303,66 @@ async function fetchOne(url, cells) {
   }
 }
 
+// Puppeteer is a devDependency and CI deliberately skips npm ci, so it is
+// imported here rather than at the top: a CI run must never touch this path.
+let browser = null;
+let browserDead = false;
+async function getBrowser() {
+  if (browserDead) throw new Error('browser unavailable');
+  if (browser) return browser;
+  const { default: puppeteer } = await import('puppeteer');
+  browser = await puppeteer.launch({
+    headless: true,
+    executablePath: process.env.CHROME_BIN || undefined,
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
+  });
+  return browser;
+}
+
+// What the page looks like once its scripts have run. innerText rather than
+// innerHTML, because the browser has already decided what is visible text and
+// where the line breaks go, which is exactly the question a quote match asks.
+async function renderOne(url, cells) {
+  let page;
+  try {
+    const b = await getBrowser();
+    page = await b.newPage();
+    await page.setUserAgent(UA);
+    await page.goto(url, { waitUntil: 'networkidle2', timeout: TIMEOUT_MS });
+    // Every frame, not just the top one. Alaska still serves its administrative
+    // code as a frameset, so the top document is the navigation and the statute
+    // is in a child. Joining them costs nothing on the pages that have no
+    // frames, because there the list is one entry long.
+    const parts = [];
+    for (const frame of page.frames()) {
+      try {
+        const t = await frame.evaluate(() => (document.body ? document.body.innerText : ''));
+        if (t && t.trim()) parts.push(t);
+      } catch { /* a frame that navigated away mid-read is not worth failing for */ }
+    }
+    const body = parts.join('\n');
+    if (!body || normalize(body).length < SHELL_CHARS) {
+      return { error: `rendered but empty, ${normalize(body || '').length} chars` };
+    }
+    const text = normalize(body);
+    const out = { hash: hash(text), length: text.length, kind: 'html', via: 'browser' };
+    if (cells?.length) out.quotes = checkQuotes(body, cells);
+    return out;
+  } catch (err) {
+    // A launch that fails will fail for every remaining source too. Say so
+    // once and stop paying for the attempt, rather than printing the same
+    // stack fifty times and taking ten minutes to do it.
+    if (!browser && !browserDead) {
+      browserDead = true;
+      console.log(`Could not start a browser (${String(err.message || err).split('\n')[0].slice(0, 80)}).`);
+      console.log('Falling back to plain fetches for the rest.\n');
+    }
+    return { error: `browser: ${String(err.message || err).split('\n')[0].slice(0, 50)}` };
+  } finally {
+    if (page) await page.close().catch(() => {});
+  }
+}
+
 async function pool(items, worker, limit) {
   const out = new Array(items.length);
   let next = 0;
@@ -329,6 +402,28 @@ console.log(`Checking ${sources.length} legal sources${ONLY ? ` for ${ONLY}` : '
 
 const results = await pool(sources, async (s) => ({ ...s, ...(await fetchOne(s.url, citedBy.get(s.id))) }), CONCURRENCY);
 
+// Second pass, browser only. A plain fetch has already had its go, so this runs
+// on the residue: what would not load at all, and what loaded but arrived
+// without its statute in it. Around 55 pages rather than 208, and only ever on
+// a machine that asked for it.
+if (BROWSER) {
+  const retry = results.filter((r) => r.error
+    || (r.quotes && r.quotes.missing.length / r.quotes.checked >= OPAQUE_RATIO));
+  if (retry.length) {
+    console.log(`Rendering ${retry.length} source(s) a plain fetch could not read...\n`);
+    // One at a time. These are the slow, heavy, awkward pages by definition,
+    // and a desktop running six headless tabs at a statute portal is how a
+    // residential IP earns the block this flag exists to avoid.
+    for (const r of retry) {
+      const rendered = await renderOne(r.url, citedBy.get(r.id));
+      if (rendered.error) continue;
+      Object.assign(r, { error: undefined, ...rendered });
+    }
+    const won = retry.filter((r) => !r.error).length;
+    console.log(`Rendered ${won} of ${retry.length}.\n`);
+  }
+}
+
 const changed = [];
 const unstable = [];
 const unreachable = [];
@@ -336,6 +431,7 @@ const unchanged = [];
 const fresh = [];
 const quoteGone = [];
 const opaque = [];
+const browserOnly = [];
 let knownMissing = 0;
 
 // Anything that looks wrong gets fetched a second time before it is reported.
@@ -364,11 +460,19 @@ if (suspects.length) {
   await new Promise((r) => setTimeout(r, 2000));
   const second = await pool(
     suspects,
-    async (s) => ({ id: s.id, ...(await fetchOne(s.url, citedBy.get(s.id))) }),
+    async (s) => ({
+      id: s.id,
+      ...(s.via === 'browser'
+        ? await renderOne(s.url, citedBy.get(s.id))
+        : await fetchOne(s.url, citedBy.get(s.id))),
+    }),
     CONCURRENCY,
   );
   for (let i = 0; i < suspects.length; i++) suspects[i].confirm = second[i];
 }
+
+// Everything that needed rendering has been rendered and confirmed by now.
+if (browser) await browser.close().catch(() => {});
 
 for (const r of results) {
   if (r.error) { unreachable.push(r); continue; }
@@ -381,7 +485,8 @@ for (const r of results) {
   // a checker that re-reports it every month is a checker nobody opens. Those
   // are a backlog, counted at the end and listed nowhere else. The alarm is for
   // a quote that WAS on the page and now is not.
-  if (r.quotes && r.quotes.missing.length) {
+  if (r.quotes && r.quotes.missing.length
+    && !(baseline.sources[r.id]?.via === 'browser' && r.via !== 'browser')) {
     const ratio = r.quotes.missing.length / r.quotes.checked;
     if (ratio >= OPAQUE_RATIO) {
       opaque.push({ ...r, ratio });
@@ -399,6 +504,12 @@ for (const r of results) {
 
   const prev = baseline.sources[r.id];
   if (!prev) { fresh.push(r); continue; }
+  // This entry was recorded by a browser. A plain fetch of the same URL gets
+  // the shell that made the browser necessary, so comparing the two would
+  // report a change every single month on a page nobody had touched. Without
+  // this, one --browser --write from a desktop would leave the CI job crying
+  // wolf at 26 sources forever.
+  if (prev.via === 'browser' && r.via !== 'browser') { browserOnly.push(r); continue; }
   if (prev.hash === r.hash) { unchanged.push(r); continue; }
 
   const again = r.confirm;
@@ -414,7 +525,12 @@ if (WRITE) {
   const out = { generatedAt: new Date().toISOString().slice(0, 10), sources: { ...baseline.sources } };
   for (const r of results) {
     if (r.error) continue;
+    // A fetch-only run must not overwrite what a browser recorded with the
+    // shell version of the same page. The browser entry is the better one and
+    // it stays until another browser run replaces it.
+    if (baseline.sources[r.id]?.via === 'browser' && r.via !== 'browser') continue;
     out.sources[r.id] = { hash: r.hash, length: r.length, kind: r.kind, url: r.url };
+    if (r.via === 'browser') out.sources[r.id].via = 'browser';
     // Record which quotes are currently unfindable, so next month reports the
     // ones that go missing rather than the ones that already were. An opaque
     // page records nothing: its quotes are not missing, they never arrived.
@@ -491,6 +607,12 @@ if (fresh.length) {
   console.log('');
 }
 
+if (browserOnly.length) {
+  console.log(`BROWSER ONLY (${browserOnly.length}) - recorded by a --browser run and not comparable from a plain fetch, so skipped rather than reported:`);
+  for (const b of browserOnly) console.log(`  ${b.id}  ${cellNames(b.id).length} cell(s)`);
+  console.log('');
+}
+
 if (knownMissing) {
   console.log(`Backlog: ${knownMissing} quote(s) were already unfindable when the baseline was written. Not reported here, tracked in docs/TODO.md.\n`);
 }
@@ -503,7 +625,8 @@ if (unreachable.length) {
 
 console.log(
   `Summary: ${unchanged.length} unchanged, ${quoteGone.length} quote newly gone, ${readable.length} changed, ${furniture.length} furniture, `
-  + `${unstable.length} unstable, ${opaque.length} opaque, ${fresh.length} new, ${unreachable.length} unreachable.`,
+  + `${unstable.length} unstable, ${opaque.length} opaque, ${fresh.length} new, ${unreachable.length} unreachable`
+  + `${browserOnly.length ? `, ${browserOnly.length} browser only` : ''}.`,
 );
 
 // How much of the matrix this run actually stood behind. Without it the summary
@@ -512,6 +635,10 @@ console.log(
 const quotable = [...citedBy.values()].flat().filter((c) => c.quote && probesFor(c.quote).length).length;
 const verified = results.reduce((n, r) => n + (r.quotes ? r.quotes.checked - r.quotes.missing.length : 0), 0);
 console.log(`Coverage: ${verified} of ${quotable} quotable cells had their quote found on the live page (${(verified / quotable * 100).toFixed(0)}%).`);
+if (!BROWSER) {
+  const stuck = unreachable.length + opaque.length + browserOnly.length;
+  if (stuck) console.log(`${stuck} source(s) could not be read from here. Run with --browser on a desktop to reach most of them.`);
+}
 
 // ---------------------------------------------------------------------------
 // The work order.
