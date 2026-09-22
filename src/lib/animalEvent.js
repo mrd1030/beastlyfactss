@@ -126,6 +126,23 @@ export function getEventArticle(event, articles) {
 
   const rank = (a, b) => (isRoundup(a) - isRoundup(b)) || String(b.date).localeCompare(String(a.date));
 
+  // An article written FOR this day wins outright, before any title matching.
+  // That is what the `animalDay` flag is for, and without this check the two
+  // rules below both pick the wrong thing: World Animal Day names no animals,
+  // so the category fallback handed it whichever Wild Animals post was newest
+  // (the wombat piece, four days after the world animal day piece), and
+  // Reptile Awareness Day names geckos and snakes, none of which appear in the
+  // title "Reptile Awareness Day Has No Founder Anyone Can Name", so it landed
+  // on a tokay gecko feeding guide instead.
+  const own = articles.filter((a) => a.animalDay === event.id).sort(rank);
+  if (own.length) return own[0];
+
+  // And an article written for a DIFFERENT day never stands in for this one.
+  // Without this, World Oceans Day picked up the World Octopus Day piece: it
+  // is the newest article with "Octopus" in the title, so it won the ocean
+  // match outright and 8 June would have led with another day's article.
+  const pool = articles.filter((a) => !a.animalDay || a.animalDay === event.id);
+
   if (event.animals?.length) {
     // `exclude` covers the case matchesAnimal cannot: an animal name appearing
     // as a MODIFIER rather than the head of a compound. "Tiger Salamander"
@@ -136,7 +153,7 @@ export function getEventArticle(event, articles) {
     // in the shared matcher.
     const excluded = (article) =>
       event.exclude?.some((name) => matchesAnimal(article.title, name));
-    const matches = articles
+    const matches = pool
       .filter((article) => !excluded(article)
         && event.animals.some((animal) => matchesAnimal(article.title, animal)))
       .sort(rank);
@@ -147,7 +164,7 @@ export function getEventArticle(event, articles) {
     const list = article.categories?.length ? article.categories : [article.category];
     return list.some((c) => event.categories?.includes(c));
   };
-  return articles.filter(inCategory).sort(rank)[0] ?? null;
+  return pool.filter(inCategory).sort(rank)[0] ?? null;
 }
 
 // Convenience for the component: null when there is nothing to show, which is

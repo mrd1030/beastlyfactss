@@ -221,3 +221,67 @@ back in.
   so `matchesAnimal('Tiger', 'Tiger Salamander')` is true and the Tiger
   Beastfile was excluded from International Tiger Day by its own salamander
   guard. Exclusion is now a one-way, singularised containment test.
+
+## Pre-merge verification, 2026-09-22
+
+Run against a real `npm run build` rather than source, because the orphan audit
+reads `dist/` and nothing else can answer the question.
+
+### Two bugs this caught, both introduced by this work
+
+**The homepage band pointed at the wrong article on two of the five days.**
+`getEventArticle()` picks by title match, then by date, and neither rule
+happened to work for these:
+
+- World Animal Day declares `animals: []`, so it falls through to the category
+  fallback and takes the newest `Wild Animals` post. That was the wombat
+  article, published four days after the World Animal Day one.
+- Reptile Awareness Day declares geckos, snakes, turtles, tortoises, bearded
+  dragons and chameleons. None of those words appear in the title "Reptile
+  Awareness Day Has No Founder Anyone Can Name", so 21 October resolved to
+  `tokay-gecko-feeding-guide`, a care guide.
+
+Fixed by having `getEventArticle()` prefer an article whose `animalDay` matches
+the event id, before any title or category matching. That is what the flag is
+for. `animalDay` had to be added to the `articles-index.json` bundle as well as
+`mdx-meta.json`, since the band reads the index.
+
+A second guard came out of the same test: an article written for one day must
+never stand in for another. Without it, World Oceans Day picked up the World
+Octopus Day piece, because it was the newest article with "Octopus" in the
+title. 8 June would have led with another day's article.
+
+**Four of the five articles would have failed the build.**
+`audit-internal-links.mjs` fails when the thin-page count rises above `BUDGET`,
+which is 13, and its threshold is 3 content links per page. World animal day,
+octopus, sloth and wombat each carried 2. Each gained a third link written as a
+real sentence rather than a nav line.
+
+### What the build reports now
+
+- Build exits 0.
+- Thin pages: 7 of a budget of 13. None of them is a new page. The script
+  suggests ratcheting `BUDGET` to 7; left alone deliberately, as that tightens
+  the standard for everything and is a separate decision.
+- `/animal-days/` carries 60 content links. The five articles carry 6 to 7 each.
+- All 32 days resolve an article for the homepage band, and all five October
+  days resolve their own.
+- All five fact pages generate with the right `og:image`, which confirms the
+  `factImages.js` and `_worker.js` copies agree.
+
+### One thing fixed after the first build
+
+`/animal-days/` was in the navbar but the navbar entry sits inside the mobile
+menu, which does not prerender. A crawler landing on any page except
+`world-animal-day` had no path to the section. Added to the footer beside Fact
+Files, which does prerender on every page.
+
+### Known and not a problem
+
+- The five articles are dated 24 to 29 September, so until those dates they are
+  scheduled rather than released and do not appear in `/blog/`. `/animal-days/`
+  lists them regardless, which is the same treatment the homepage preview gives
+  unreleased posts.
+- Individual fact pages are not in the sitemap and have no inbound links. That
+  is true of all 333 and is the existing design: the pages exist to carry
+  per-fact `og:image` for sharing, and `/facts/` is a client-rendered filter.

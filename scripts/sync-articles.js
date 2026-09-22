@@ -155,6 +155,14 @@ for (const dir of CONTENT_DIRS) {
       categories: Array.isArray(fm.categories) && fm.categories.length
         ? [...new Set([fm.category, ...fm.categories].filter(Boolean))]
         : (fm.category ? [fm.category] : []),
+      // The ANIMAL_EVENTS id this article is written for, when it is one of the
+      // awareness-day pieces. Carried into the homepage bundle, not just
+      // mdx-meta, because getEventArticle() runs off this index and without it
+      // the band picks by title match and date: World Animal Day resolved to
+      // whichever Wild Animals post was newest, and Reptile Awareness Day to a
+      // tokay gecko feeding guide, because neither day's own article has the
+      // event's animal in its title.
+      animalDay: fm.animalDay || null,
     });
   }
 }

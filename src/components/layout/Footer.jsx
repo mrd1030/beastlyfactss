@@ -64,6 +64,7 @@ export default function Footer() {
                 { to: '/animal-facts/', label: 'Animal facts hub' },
                 { to: '/fact-files/', label: 'Fact files' },
                 { to: '/beastlypedia/', label: 'Beastlypedia' },
+                { to: '/animal-days/', label: 'Animal days' },
                 { to: '/gallery/', label: 'Gallery' },
                 { to: '/feed/', label: 'The feed' },
                 { to: '/quiz/', label: 'Quizzes' },
