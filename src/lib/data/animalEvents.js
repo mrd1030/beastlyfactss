@@ -88,6 +88,11 @@ export const ANIMAL_EVENTS = [
     id: 'international-cat-day', name: 'International Cat Day', emoji: '🐱',
     month: 8, day: 8,
     animals: ['Cat'],
+    // matchesAnimal is head-final, so "Lions Are the Only Social Cat" reads as
+    // a cat article and lands here. A lion IS a cat and the matcher is right in
+    // general, but this day is about the one on the sofa. Same narrow fix the
+    // tiger/salamander case uses: exclude it here, not in the shared matcher.
+    exclude: ['Lion'],
     categories: ['Cats'],
     blurb: 'They invented the meow specifically for us.',
   },

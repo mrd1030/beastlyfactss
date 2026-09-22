@@ -179,3 +179,71 @@ export function resolveEventDate(event, year) {
   if (!event.month || !event.day) return null;
   return { month: event.month, day: event.day };
 }
+
+// Lowercased, singularised whole words, so the containment test below reads
+// "Lions Are the Only Cat" as carrying "lion". Mirrors the singulariser inside
+// matchAnimal.js, which does not export it.
+function normalize(text) {
+  return String(text || '')
+    .toLowerCase()
+    .split(/[^a-z]+/)
+    .filter(Boolean)
+    .map((word) => {
+      if (word.endsWith('ies') && word.length > 4) return `${word.slice(0, -3)}y`;
+      if (/(sh|ch|ss|x|z)es$/.test(word)) return word.slice(0, -2);
+      if (word.endsWith('s') && !word.endsWith('ss')) return word.slice(0, -1);
+      return word;
+    })
+    .join(' ');
+}
+
+// An article is "about the animal" if it is a Fact File or a fact roundup.
+//
+// Everything else that matches an event's animals is husbandry: the shopping
+// list, the bioactive setup, why the parrot screams, why the rabbit needs hay.
+// Those are guides in everything but the slug, and a day page listing them is
+// a care catalogue with a date on it. Filtering on the -guide suffix alone let
+// all of them through, which is why membership keys on the site's own factFile
+// flag instead of on the URL.
+const isAnimalArticle = (post) =>
+  Boolean(post?.factFile) || /^10-surprising-.+-facts$/.test(post?.slug?.current || post?.slug || '');
+
+const slugOf = (post) => post?.slug?.current || post?.slug || '';
+
+// Every Fact File, fact roundup and Beastfile about an event's animals.
+//
+// Reuses matchesAnimal, so it inherits the head-final rule ("Corn Snake" counts
+// for World Snake Day) and the event's own `exclude` list for the cases that
+// rule gets wrong. The day's own article is passed in as `ownSlug` and dropped,
+// since it is already rendered above the list.
+export function getEventAnimalContent(event, posts, beastfiles, ownSlug) {
+  const names = event?.animals || [];
+  if (!names.length) return { articles: [], files: [] };
+
+  // Deliberately NOT matchesAnimal. That matcher is bidirectional, so
+  // matchesAnimal('Tiger', 'Tiger Salamander') is true and the Tiger Beastfile,
+  // named exactly "Tiger", was being excluded from International Tiger Day by
+  // its own salamander guard. An exclude entry means "this text is about the
+  // other animal", which is a one-way containment test: the text has to carry
+  // the excluded name, not the other way round.
+  const excluded = (text) => {
+    const words = normalize(text);
+    return (event.exclude || []).some((name) => {
+      const needle = normalize(name);
+      return needle.length > 0 && new RegExp(`(^| )${needle}( |$)`).test(words);
+    });
+  };
+  const hits = (text) => Boolean(text) && !excluded(text) && names.some((n) => matchesAnimal(text, n));
+
+  const articles = (posts || [])
+    .filter(isAnimalArticle)
+    .filter((p) => slugOf(p) !== ownSlug)
+    .filter((p) => hits(p.title) || hits(p.animal))
+    .sort((a, b) => a.title.localeCompare(b.title));
+
+  const files = (beastfiles || [])
+    .filter((f) => hits(f.name))
+    .sort((a, b) => a.name.localeCompare(b.name));
+
+  return { articles, files };
+}

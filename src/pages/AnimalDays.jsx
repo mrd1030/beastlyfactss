@@ -5,7 +5,11 @@ import { motion } from '@/lib/motion-safe';
 import { ArrowRight } from 'lucide-react';
 import { mdxPosts } from '@/lib/mdxPosts';
 import { ANIMAL_EVENTS } from '@/lib/data/animalEvents';
-import { resolveEventDate } from '@/lib/animalEvent';
+import { resolveEventDate, getEventAnimalContent } from '@/lib/animalEvent';
+// The teaser file, not the beastlypedia barrel: this needs id and name only,
+// and the full content module is 94KB of overview and funFacts prose that
+// would land in this page's chunk for nothing.
+import beastfileTeasers from '@/lib/generated/beastlypedia-teaser.json';
 import CrossLinkCta from '@/components/shared/CrossLinkCta';
 
 // Membership is the `animalDay` frontmatter flag, not a category, for the same
@@ -78,6 +82,8 @@ const FLOATING_RULES = {
   'international-rabbit-day': 'Fourth Saturday in September',
 };
 
+const slugOf = (post) => post?.slug?.current || post?.slug || '';
+
 const ordinal = (n) => {
   const s = ['th', 'st', 'nd', 'rd'];
   const v = n % 100;
@@ -100,12 +106,14 @@ export default function AnimalDays() {
 
     const rows = ANIMAL_EVENTS.map((event) => {
       const date = resolveEventDate(event, year);
+      const article = articleFor.get(event.id) || null;
       return {
         event,
         date,
         rule: FLOATING_RULES[event.id] || null,
         note: EVENT_NOTES[event.id] || event.blurb || '',
-        article: articleFor.get(event.id) || null,
+        article,
+        ...getEventAnimalContent(event, mdxPosts, beastfileTeasers, article?.slug?.current),
       };
     });
 
@@ -289,6 +297,27 @@ export default function AnimalDays() {
                           {row.article.title}
                           <ArrowRight className="h-3 w-3" />
                         </Link>
+                      )}
+                      {(row.files.length > 0 || row.articles.length > 0) && (
+                        <p className="mt-1.5 font-body text-xs leading-relaxed text-muted-foreground">
+                          {[
+                            ...row.files.map((f) => (
+                              <Link key={`bf-${f.id}`} to={`/beastlypedia/${f.id}/`} className="text-secondary hover:underline">
+                                {f.name}
+                              </Link>
+                            )),
+                            ...row.articles.map((a) => (
+                              <Link key={slugOf(a)} to={`/blog/${slugOf(a)}/`} className="text-secondary hover:underline">
+                                {a.title}
+                              </Link>
+                            )),
+                          ].map((node, i) => (
+                            <React.Fragment key={node.key}>
+                              {i > 0 && <span className="mx-1.5 text-muted-foreground/40" aria-hidden="true">&middot;</span>}
+                              {node}
+                            </React.Fragment>
+                          ))}
+                        </p>
                       )}
                     </div>
                   </li>

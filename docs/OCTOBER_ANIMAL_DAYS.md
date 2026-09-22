@@ -148,3 +148,47 @@ what these are, and it keeps the five clustered.
 
 Not Fact Files, which needs the `factFile` flag, and not Beastlypedia, which
 needs a Beastfile to name the article in its `relatedFiles`.
+
+## The hub lists the animal content, added 2026-09-22
+
+Every day row now carries the site's Fact Files, fact roundups and Beastfiles
+about that day's animals. 83 links across 26 of the 32 days.
+
+Membership is `factFile: true` or a `10-surprising-<x>-facts` slug, not the
+`-guide` suffix. Filtering on the suffix alone let husbandry straight through:
+`bearded-dragon-shopping-list`, `bioactive-setups-bearded-dragons`,
+`why-bearded-dragons-need-uvb-lighting`, `cockatoo-screaming-feather-plucking`,
+`why-rabbits-need-unlimited-hay` and `why-your-dog-needs-daily-exercise` are all
+guides in everything but the URL, and a day page listing them is a care
+catalogue with a date on it.
+
+### The six empty days, and why
+
+| Day | Why |
+|---|---|
+| World Turtle Day | no Fact File on any turtle or tortoise |
+| World Sea Turtle Day | same |
+| International Dog Day | same for dogs |
+| National Honey Bee Day | the bee article matches World Bee Day's wider list, not this one's |
+| International Cat Day | see below |
+| World Animal Day | `animals: []` by design; it is every animal, so it matches none |
+
+### The cat gap, worth a decision
+
+`cats-invented-the-meow-for-humans` and
+`cats-always-land-on-their-feet-not-always-unhurt` are exactly what this list
+wants: about the animal, not husbandry. They carry neither `factFile` nor the
+`myth`/`truth` pair, so nothing on the site treats them as Fact Files and the
+hub cannot see them. Tagging them means writing a myth and a truth for each,
+which also puts them on `/fact-files/`. That is probably right, but it changes
+another page, so it is a decision rather than a fix.
+
+### Two matcher bugs found and fixed
+
+- `matchesAnimal` is head-final, so "Lions Are the Only Social Cat" read as a
+  cat article and landed on International Cat Day. Fixed with an `exclude` on
+  the event, the same narrow fix the tiger/salamander case already uses.
+- The `exclude` test itself was using `matchesAnimal`, which is bidirectional,
+  so `matchesAnimal('Tiger', 'Tiger Salamander')` is true and the Tiger
+  Beastfile was excluded from International Tiger Day by its own salamander
+  guard. Exclusion is now a one-way, singularised containment test.
