@@ -37,14 +37,20 @@ Solo developer passion project. Prefer fast, decisive work over exploration.
 - Never fetch photos or source new affiliate products yourself. Grep affiliateProducts.js for exact existing links, never from memory.
 - Infographic/content installs must stop at the image and internal-link checks. Do not run `npm run build` unless explicitly asked.
 - Content pipeline order: matrix → legal guide → encyclopedia/Beastfile → care guides.
-- Headless browsing in a cloud session: use **puppeteer**, never Playwright.
-  Puppeteer is already a devDependency and brings its own Chrome in
-  ~/.cache/puppeteer, which trusts the sandbox's TLS-interception CA and loads
-  https pages fine. The Chromium preinstalled at /opt/pw-browsers does not
-  trust it and fails every https page with ERR_CERT_AUTHORITY_INVALID. Do not
-  try to fix that by pinning the CA with --ignore-certificate-errors-spki-list:
-  the sandbox blocks it as a containment escape, correctly. Reach for
-  findChrome() and LAUNCH_ARGS in scripts/lib/carePackageSource.mjs.
+- **A cloud session cannot browse the external web.** Both engines launch fine
+  and both fail the same way: every external https page dies with
+  ERR_CERT_AUTHORITY_INVALID, because neither Chrome trusts the sandbox's
+  TLS-interception CA. Playwright's Chromium at /opt/pw-browsers and
+  puppeteer's own Chrome in ~/.cache/puppeteer are equally affected. Do not try
+  to fix it by pinning the CA with --ignore-certificate-errors-spki-list: the
+  sandbox blocks that as a containment escape, correctly. Rendering a local
+  file or a localhost dev server still works, which is all the prerender and
+  care-package scripts ever needed. Anything that must fetch a real site from a
+  browser has to run on my desktop.
+- When a headless run reports how many pages it handled, count the ones that
+  returned text. Counting "entries without an error" reported 24 successful
+  renders on a run where the browser loaded nothing, because the inputs were
+  pages that had fetched fine and arrived empty.
 
 ## Docs and where they live
 - Docs live in root. CLAUDE.md never moves from root under any circumstances.

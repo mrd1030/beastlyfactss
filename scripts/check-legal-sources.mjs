@@ -414,13 +414,19 @@ if (BROWSER) {
     // One at a time. These are the slow, heavy, awkward pages by definition,
     // and a desktop running six headless tabs at a statute portal is how a
     // residential IP earns the block this flag exists to avoid.
+    let won = 0;
     for (const r of retry) {
       const rendered = await renderOne(r.url, citedBy.get(r.id));
       if (rendered.error) continue;
       Object.assign(r, { error: undefined, ...rendered });
+      won++;
     }
-    const won = retry.filter((r) => !r.error).length;
+    // Count the renders that returned text, not the entries without an error.
+    // An opaque source never had an error: it fetched fine and arrived without
+    // its statute, which is why it is in this list. Counting those as rendered
+    // reported "24 of 61" on a run where the browser loaded nothing at all.
     console.log(`Rendered ${won} of ${retry.length}.\n`);
+    if (!won) console.log('The browser reached none of them. On a desktop this is where most of them come back.\n');
   }
 }
 
