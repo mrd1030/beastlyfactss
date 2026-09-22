@@ -272,6 +272,13 @@ for (const dir of [...CONTENT_DIRS, 'short-story']) {
       // Fact Files would be a duplicate of a page that already exists for free.
       // A flag keeps membership deliberate and unmirrored.
       factFile: isTruthyFlag(fm.factFile),
+      // Animal-days membership, same reasoning as factFile above: an explicit
+      // flag rather than a category, so /animal-days/ is never a mirror of an
+      // auto-generated /blog/category/<x>/ page. The value is an ANIMAL_EVENTS
+      // id, which is what ties the article to its date. The date itself is
+      // never duplicated here: animalEvents.js resolves it, including the
+      // floating ones, so an article can never drift from the calendar.
+      animalDay: fm.animalDay || null,
       // The beast the file is about, for the folder tab. Not the category:
       // every tab read "WILD ANIMALS" when it was fed that.
       animal: fm.animal || null,

@@ -95,25 +95,14 @@ reason.
 
 ## Animal awareness days, 2026-09-22
 
-Two guide heroes, 3:2 at 1168x784. Both are concept frames rather than species
-portraits, which is unusual for this site, so the species accuracy rules below
-matter less than keeping them free of invented lettering. Neither frame may
-carry readable text: a generator handed a calendar or a banner will fill it with
-garbled words, and the watermark goes on afterwards.
+One guide hero, 3:2 at 1168x784. It is a concept frame rather than a species
+portrait, which is unusual for this site, so the species accuracy rules above
+matter less than keeping it free of invented lettering. A generator handed a
+banner will fill it with garbled words, and the watermark goes on afterwards.
 
-**`/assets/images/animal-awareness-days-calendar.jpg`**
-
-A plain paper wall calendar hanging on a pale wall, opened to a single month,
-photographed straight on and slightly from below. Several dates are marked with
-small hand-drawn animal doodles in ink: a turtle, a bird, an octopus, a sloth.
-The grid is clearly a calendar grid but the numbers and the month name are soft
-and out of focus, illegible rather than wrong. Late morning window light from
-the left, soft shadow under the bottom edge of the page. Muted palette, warm
-white paper, one accent of red ink. Shot at 50mm, f/4, shallow enough that the
-wall behind falls away. No readable text anywhere, no month name, no day
-numbers in focus, no people, no hands, no watermark, no logos. 3:2.
-**Check:** the doodles read as animals at thumbnail size, and no lettering
-anywhere in the frame is sharp enough to read.
+The calendar hero that was queued here was dropped: the calendar became the
+`/animal-days/` route rather than an article, and listing pages use the default
+OG image.
 
 **`/assets/images/world-animal-day.jpg`**
 

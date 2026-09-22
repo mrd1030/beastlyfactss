@@ -7,22 +7,25 @@ removed from this file, which is the only place that history lives.
 
 ## Open right now
 
-**Two guide heroes, and they are on a deadline.** Both articles are written,
-voice-clean and committed on `claude/site-content-expansion-qnynio`. Neither can
+**One guide hero, and it is on a deadline.** `world-animal-day.mdx` is written,
+voice clean and committed on `claude/site-content-expansion-qnynio`. It cannot
 ship until its hero lands, because `check-images.mjs` runs at the front of
 `build` and fails the deploy on a missing source image. That is the safe
-failure, but it means the October cluster does not go live without these two.
+failure, but it means nothing in the October cluster goes live without it.
+
+The awareness-days calendar no longer needs a hero: it became the
+`/animal-days/` page rather than a blog article, and that route uses the
+default OG image like every other listing page.
 
 Every fact on the site still resolves its own photo, 328 of 328, none shared.
 
 ## Guide heroes still needed
 
-Both are 3:2 at 1168x784, mozjpeg quality 80. Prompts are in `IMAGE_PROMPTS.md`
-under "Animal awareness days, 2026-09-22".
+3:2 at 1168x784, mozjpeg quality 80. Prompt is in `IMAGE_PROMPTS.md` under
+"Animal awareness days, 2026-09-22".
 
 | File | Article | Wanted by |
 |---|---|---|
-| `/assets/images/animal-awareness-days-calendar.jpg` | `animal-awareness-days-calendar.mdx` | before 2026-10-04 |
 | `/assets/images/world-animal-day.jpg` | `world-animal-day.mdx` | before 2026-10-04 |
 
 The eight wrong-species replacements landed 2026-09-12 alongside the federal law

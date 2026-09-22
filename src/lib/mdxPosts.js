@@ -109,6 +109,9 @@ function toPost(meta) {
     // overturns and what replaced it; sourceCount is counted from the real
     // <Sources> list at sync time, so it cannot go stale.
     factFile: Boolean(meta.factFile),
+    // An ANIMAL_EVENTS id when the article is one of the awareness-day pieces.
+    // /animal-days/ resolves the date from that id rather than the article.
+    animalDay: meta.animalDay || null,
     animal: meta.animal || null,
     myth: meta.myth || null,
     truth: meta.truth || null,

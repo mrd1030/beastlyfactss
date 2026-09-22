@@ -49,6 +49,7 @@ export const ROUTE_LOADERS = {
   Guides: () => import('@/pages/Guides'),
   Gear: () => import('@/pages/Gear'),
   FactFiles: () => import('@/pages/FactFiles'),
+  AnimalDays: () => import('@/pages/AnimalDays'),
   Chronicles: () => import('@/pages/Chronicles'),
   Gallery: () => import('@/pages/Gallery'),
   CarePackages: () => import('@/pages/CarePackages'),

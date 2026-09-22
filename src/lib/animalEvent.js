@@ -159,3 +159,23 @@ export function getFeaturedEvent(articles, now = new Date()) {
   }
   return null;
 }
+
+// The date an event falls on in a given year, as { month, day }, or null when
+// the event is dormant that year (a floating observance with no `ranges` entry
+// for it). /animal-days/ renders the calendar off this, so a date lives in
+// exactly one place: an article never states its own date and cannot drift
+// from the one the homepage band fires on.
+//
+// Floating events declare start and end even when they are a single day, so a
+// run returns its opening date here. The calendar shows a run by its start.
+export function resolveEventDate(event, year) {
+  if (!event) return null;
+  if (event.ranges) {
+    const range = event.ranges[year];
+    if (!range) return null;
+    const [month, day] = range.start.split('-').map(Number);
+    return { month, day };
+  }
+  if (!event.month || !event.day) return null;
+  return { month: event.month, day: event.day };
+}

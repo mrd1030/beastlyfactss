@@ -49,6 +49,7 @@ const BeastfileDetail = hydratable('BeastfileDetail');
 const Guides = hydratable('Guides');
 const Gear = hydratable('Gear');
 const FactFiles = hydratable('FactFiles');
+const AnimalDays = hydratable('AnimalDays');
 const Chronicles = hydratable('Chronicles');
 const Gallery = hydratable('Gallery');
 const CarePackages = hydratable('CarePackages');
@@ -119,6 +120,7 @@ const AuthenticatedApp = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/animal-facts" element={<AnimalFacts />} />
           <Route path="/fact-files" element={<FactFiles />} />
+          <Route path="/animal-days" element={<AnimalDays />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/trivia" element={<Navigate to="/quiz/trivia/" replace />} />
           <Route path="/donate" element={<Donate />} />

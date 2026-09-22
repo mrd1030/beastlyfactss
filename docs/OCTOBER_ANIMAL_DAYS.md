@@ -1,8 +1,9 @@
 # October animal days: the prep
 
-Scoped 2026-09-22. Two of the five are written. The other three are researched
-to the point where a session can open the file and write, with dates verified
-against the founding organization rather than an aggregator calendar.
+Scoped 2026-09-22. The destination and one of the five articles are built. The
+other four are researched to the point where a session can open a file and
+write, with dates verified against the founding organization rather than an
+aggregator calendar.
 
 Why October first: the cluster runs 4 to 22 October and a new page needs a few
 weeks to index and settle. Anything written after about the first week of
@@ -18,12 +19,34 @@ October misses the spike it was written for and waits a year.
 | Wed 21 Oct | Reptile Awareness Day | `reptile-awareness-day` | Researched, not written |
 | Thu 22 Oct | International Wombat Day | `international-wombat-day` | Researched, not written |
 
-Plus the hub, `animal-awareness-days-calendar`, written and voice clean, hero
-needed.
+## Where these live
 
-Both written articles are blocked only on their heroes. `check-images.mjs` runs
-at the front of `build` and exits 1 on a missing source image, so a push to main
-without them fails the deploy rather than shipping a 404. Prompts are in
+`/animal-days/` is the destination, `src/pages/AnimalDays.jsx`, wired into the
+route registry, the preload table, prerender, the sitemap and the navbar. It is
+a section of the site rather than a blog post, next to Fact Files.
+
+The calendar started as an MDX article and was retired before it ever shipped.
+Two URLs answering "animal awareness days calendar" would have split the signal
+between them, and the article's dates were static text that would go stale. The
+page resolves every date from `ANIMAL_EVENTS` instead, so the calendar and the
+homepage band read the same data and can never disagree.
+
+Membership is the `animalDay` frontmatter flag, holding an `ANIMAL_EVENTS` id.
+Same reasoning as Fact Files' `factFile` flag: a category would have made the
+page a mirror of an auto-generated `/blog/category/<x>/` listing. An article
+never states its own date.
+
+So each new October article needs exactly one extra frontmatter line:
+
+```
+animalDay: "world-octopus-day"
+```
+
+Articles stay at `/blog/<slug>/`. `/animal-days/` links to them.
+
+World Animal Day is blocked only on its hero. `check-images.mjs` runs at the
+front of `build` and exits 1 on a missing source image, so a push to main
+without it fails the deploy rather than shipping a 404. Prompt is in
 `IMAGE_PROMPTS.md`.
 
 ## The date correction already made
@@ -87,7 +110,7 @@ flagged as such, not repeated as fact.
 Angle: cubic droppings, and the mechanism behind them, which is the last stretch
 of intestine rather than the anus. Existing Beastfile: `wombat`.
 
-## Rules that bit on the first two
+## Rules that bit on the first article
 
 - `check-voice.mjs` flags `intensifier-heading` on anything like "What It
   Actually Is Now", and `intensifier-excerpt` on "actually" in the excerpt.

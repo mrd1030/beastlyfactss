@@ -53,6 +53,7 @@ const ROUTE_PRELOADS = [
   [p => pathIs(p, '/contact'), 'Contact'],
   [p => p.startsWith('/animal-facts'), 'AnimalFacts'],
   [p => p.startsWith('/fact-files'), 'FactFiles'],
+  [p => p.startsWith('/animal-days'), 'AnimalDays'],
   [p => p.startsWith('/gallery'), 'Gallery'],
   [p => p.startsWith('/donate/success'), 'DonateSuccess'],
   [p => p.startsWith('/donate/cancel'), 'DonateCancel'],
