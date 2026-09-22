@@ -125,13 +125,7 @@
       "hash": "1087fcf63c2f2ec13aef0180b30924b7",
       "length": 12577,
       "kind": "html",
-      "url": "https://apps.leg.wa.gov/rcw/default.aspx?cite=16.30&full=true",
-      "quotesMissing": [
-        "hamster/WA",
-        "gerbil/WA",
-        "guinea-pig/WA",
-        "degu/WA"
-      ]
+      "url": "https://apps.leg.wa.gov/rcw/default.aspx?cite=16.30&full=true"
     },
     "oh-935-01": {
       "hash": "28d666bb3e034096a5e692a98d7a7549",
@@ -161,10 +155,7 @@
       "hash": "e8f8df8480a4bd9ec75fbbc69a2e4735",
       "length": 24991,
       "kind": "html",
-      "url": "https://www.animallaw.info/administrative/nv-exotic-animals-possession-transportation-importation-exportation-and-release",
-      "quotesMissing": [
-        "fennec-fox/NV"
-      ]
+      "url": "https://www.animallaw.info/administrative/nv-exotic-animals-possession-transportation-importation-exportation-and-release"
     },
     "va-4vac15-30-40": {
       "hash": "a2839b1e53c8f2648c7d05f7bf58de05",
@@ -172,13 +163,7 @@
       "kind": "html",
       "url": "https://law.lis.virginia.gov/admincode/title4/agency15/chapter30/section40/",
       "quotesMissing": [
-        "ferret/VA",
-        "bengal-cat/VA",
-        "prairie-dog/VA",
-        "serval/VA",
-        "axolotl/VA",
-        "african-grey-parrot/VA",
-        "cockatoo/VA"
+        "ferret/VA"
       ]
     },
     "md-10-621": {
@@ -271,31 +256,7 @@
       "hash": "6abe019ec80cf9c665e305bfbe7c7241",
       "length": 57609,
       "kind": "html",
-      "url": "https://rules.sos.ri.gov/regulations/part/250-40-05-3",
-      "quotesMissing": [
-        "hedgehog/RI",
-        "sugar-glider/RI",
-        "hamster/RI",
-        "gerbil/RI",
-        "quaker-parakeet/RI",
-        "bengal-cat/RI",
-        "ball-python/RI",
-        "boa-constrictor/RI",
-        "argentine-tegu/RI",
-        "savannah-monitor/RI",
-        "chinchilla/RI",
-        "guinea-pig/RI",
-        "green-iguana/RI",
-        "nile-monitor/RI",
-        "burmese-python/RI",
-        "african-grey-parrot/RI",
-        "rosy-boa/RI",
-        "flying-squirrel/RI",
-        "ackie-monitor/RI",
-        "cockatoo/RI",
-        "bearded-dragon/RI",
-        "green-anole/RI"
-      ]
+      "url": "https://rules.sos.ri.gov/regulations/part/250-40-05-3"
     },
     "nh-fis800": {
       "hash": "226a7f63a7266173f55ea920271dafef",
@@ -331,10 +292,7 @@
       "hash": "feabf5c1dce403e602e341d04db843b6",
       "length": 7274,
       "kind": "html",
-      "url": "https://www.scstatehouse.gov/code/t50c016.php",
-      "quotesMissing": [
-        "quaker-parakeet/SC"
-      ]
+      "url": "https://www.scstatehouse.gov/code/t50c016.php"
     },
     "mt-87-5-7": {
       "hash": "599771dcb29974187186f7cb08b4a9ae",
@@ -343,7 +301,7 @@
       "url": "https://mca.legmt.gov/bills/mca/title_0870/chapter_0050/part_0070/section_0050/0870-0050-0070-0050.html"
     },
     "wv-19-34": {
-      "hash": "ca487c60ed3119d1a0e6ac80cc6273a2",
+      "hash": "dded1b817d643ff13c652d3e92b48992",
       "length": 10698,
       "kind": "html",
       "url": "https://code.wvlegislature.gov/19-34/"
@@ -412,12 +370,7 @@
       "hash": "c67bf230fe572df655d7b3a252236452",
       "length": 5087,
       "kind": "html",
-      "url": "https://www.law.cornell.edu/regulations/oklahoma/OAC-800-25-25-3",
-      "quotesMissing": [
-        "ferret/OK",
-        "bengal-cat/OK",
-        "serval/OK"
-      ]
+      "url": "https://www.law.cornell.edu/regulations/oklahoma/OAC-800-25-25-3"
     },
     "hi-conditional": {
       "hash": "3185573fd3df72238a55d89666075bd1",
@@ -495,11 +448,7 @@
       "hash": "bc412a26566d60defff478409fb65f5f",
       "length": 15805,
       "kind": "html",
-      "url": "https://wildlife.utah.gov/reptiles-amphibians/tables",
-      "quotesMissing": [
-        "snapping-turtle/UT",
-        "red-eared-slider/UT"
-      ]
+      "url": "https://wildlife.utah.gov/reptiles-amphibians/tables"
     },
     "az-co43-reptile-regs": {
       "hash": "bf2f9468f9b2914fbd688a8dc76e839d",
@@ -553,26 +502,13 @@
       "hash": "15d78d845036f9d71362eb763c27e1cc",
       "length": 263383,
       "kind": "html",
-      "url": "https://www.leg.state.nv.us/nac/nac-503.html",
-      "quotesMissing": [
-        "rosy-boa/NV"
-      ]
+      "url": "https://www.leg.state.nv.us/nac/nac-503.html"
     },
     "or-635-056-0060": {
       "hash": "44305029abf7dc195ce67f2a4903d4fe",
       "length": 22008,
       "kind": "html",
-      "url": "https://secure.sos.state.or.us/oard/view.action?ruleNumber=635-056-0060",
-      "quotesMissing": [
-        "hedgehog/OR",
-        "sugar-glider/OR",
-        "argentine-tegu/OR",
-        "savannah-monitor/OR",
-        "nile-monitor/OR",
-        "degu/OR",
-        "ackie-monitor/OR",
-        "blue-tongue-skink/OR"
-      ]
+      "url": "https://secure.sos.state.or.us/oard/view.action?ruleNumber=635-056-0060"
     },
     "pa-58-79": {
       "hash": "528bd19a629173ea8aabe936b579989e",
@@ -686,10 +622,7 @@
       "hash": "2a1f6599133e701d5adf63fcff087761",
       "length": 24432,
       "kind": "html",
-      "url": "https://www.pacodeandbulletin.gov/Display/pacode?file=%2Fsecure%2Fpacode%2Fdata%2F058%2Fchapter137%2Fchap137toc.html&d=",
-      "quotesMissing": [
-        "ferret/PA"
-      ]
+      "url": "https://www.pacodeandbulletin.gov/Display/pacode?file=%2Fsecure%2Fpacode%2Fdata%2F058%2Fchapter137%2Fchap137toc.html&d="
     },
     "pa-pfbc-native-species": {
       "hash": "701c40d521aa737f346bf53963748402",
@@ -1197,8 +1130,8 @@
       "url": "https://apps.sos.wv.gov/adlaw/csr/ruleview.aspx?document=17393"
     },
     "wv-20-1-2": {
-      "hash": "c7cab5a1872fa96898943c972c7e6d2f",
-      "length": 19584,
+      "hash": "5bed970c6c487ef5dd31711d3a19eef6",
+      "length": 19585,
       "kind": "html",
       "url": "https://code.wvlegislature.gov/20-1-2/"
     },
