@@ -803,3 +803,25 @@ is why they kept getting deferred. Do them once section 7 is finished.
       whether the ignore is deliberate (it may predate the data files moving
       under src/lib) and either narrow it or stop listing eslint as a gate for
       these files. Found 2026-09-16 during the hub row cap pass.
+
+## 9. Beef-up batches 6 to 10: decide whether they ever happen
+
+Retired 2026-09-22 and archived to
+`archive/docs-completed/BEEF_UP_PLAN_COMPLETED_2026-09-22.md`, which keeps the
+per-slug scoping. The `/beef-up` command is deleted.
+
+What is actually true: batches 1 to 5 shipped, 20 articles. Batches 6 to 10, the
+"How to pick one up" sections for 27 hands-on handling guides, never ran. The
+section heading exists on 1 of the 27 and that one predates the plan. Checked
+three ways on 2026-09-22: the articles, every commit in history, every branch
+local and remote. A session had already found the same thing on 2026-09-16
+(commit a7d4b7a). If a session did write them, its branch was never pushed.
+
+Why it is parked rather than queued: handling guides run 0.35% clickthrough and
+cost guides 0.32%, the two worst page types on the site, against legal at 0.95%
+taking 37% of all clicks from 13.6% of the pages. Twenty-seven more handling
+guides is the wrong place to spend the words while that holds.
+
+What would reopen it: a handling guide earning clicks, or a reason to want the
+pick-up sections that is not traffic. The research in the archived plan is
+per-slug and real, so reopening costs nothing but the writing.

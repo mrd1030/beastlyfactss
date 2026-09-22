@@ -123,3 +123,28 @@ of intestine rather than the anus. Existing Beastfile: `wombat`.
 
 November onward. `national-axolotl-day` on 12 November is the next one after
 this cluster and nothing has been researched for it.
+
+## Category, settled 2026-09-22
+
+All five get `category: "Wild Animals"` and `categories: ["Wild Animals"]`.
+Nothing else, and specifically not Roundups: that pill is defined in
+`categories.js` as multi-pet care comparisons, and `world-animal-day` was
+briefly mis-filed there while it was paired with the calendar article.
+
+The temptation with the remaining four is to file them by animal, so octopus day
+under Aquatic Life and reptile awareness day under Reptiles. Do not. Those pills
+are care-guide pills, and an awareness-day piece landing among tank setups and
+feeding schedules reads as a filing error to anyone browsing them. Wild Animals
+is defined as "Wildlife, conservation, and wild animal facts", which is exactly
+what these are, and it keeps the five clustered.
+
+## Where each article shows up
+
+- `/blog/<slug>/`, its own page and its canonical URL
+- `/blog/` and `/blog/category/wild-animals/`
+- `/animal-days/`, under its date, via the `animalDay` flag
+- The homepage event band, for the three days either side of its date
+- The homepage "Latest articles" block while it is among the newest five
+
+Not Fact Files, which needs the `factFile` flag, and not Beastlypedia, which
+needs a Beastfile to name the article in its `relatedFiles`.
