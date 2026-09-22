@@ -68,6 +68,7 @@ function toPost(meta) {
     slug: { current: meta.slug },
     title: meta.title,
     seoTitle: meta.seoTitle,
+    seoDescription: meta.seoDescription,
     excerpt: meta.excerpt,
     publishedAt: meta.date || new Date().toISOString(),
 
@@ -98,6 +99,7 @@ function toPost(meta) {
     // Optional extra fields
     emoji: meta.emoji,
     lastReviewed: meta.lastReviewed,
+    lastUpdated: meta.lastUpdated,
     author: meta.author || null,
     canonicalUrl: meta.canonicalUrl,
     faqs: meta.faqs,

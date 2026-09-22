@@ -13,7 +13,7 @@ working checklist.
   flowing numbered list, no `## Fact 1` headings.
 - Complete frontmatter IS the structured data. BlogPosting, BreadcrumbList, and
   FAQPage JSON-LD are generated automatically from it, the author byline ties to
-  /about via `sameAs`, `dateModified` comes from `lastReviewed`, and
+  /about via `sameAs`, `dateModified` comes from `lastUpdated` (falling back to `lastReviewed`), and
   `datePublished` appears on the first build after the article's date arrives.
   Never hand-write schema blocks in an article.
 - `seoTitle` under 60 characters, `seoDescription` 150 to 160. The meta

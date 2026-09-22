@@ -238,6 +238,8 @@ for (const dir of [...CONTENT_DIRS, 'short-story']) {
       slug: fm.slug || file.replace('.mdx', ''),
       title: fm.title || 'Untitled',
       seoTitle: fm.seoTitle || null,
+      seoDescription: fm.seoDescription || null,
+      lastUpdated: fm.lastUpdated || null,
       excerpt: fm.excerpt || fm.description || '',
       date: fm.date || fm.lastUpdated || null,
       // `category` stays the single primary one (used for the card label and
