@@ -3270,7 +3270,7 @@
           "status": "banned",
           "sourceId": "hi-4-71-6-5",
           "cite": "Part A",
-          "quote": "Gerbillus gerbillus / Meriones unguiculatus",
+          "quote": "Gerbillus gerbillus gerbil Meriones unguiculatus gerbil",
           "verifiedOn": "2026-08-04"
         },
         "DC": {
@@ -5489,7 +5489,7 @@
           "status": "permit",
           "sourceId": "de-903",
           "cite": "3 Del. Admin. Code 903-7.5.2.10, with 903-6.2",
-          "quote": "Giant snakes over 5 feet (anacondas, pythons, boas)",
+          "quote": "All giant snakes when average adult body length of the species is larger than 5 feet: Anacondas, Pythons and Boas",
           "note": "Corrected from banned. Pythons do appear in these regulations, but only at 7.5.2.10, which lists giant snakes over five feet among the animals a Sales Permit holder may not breed. That is a breeding restriction on one permit class, not a prohibition on possession, and it carries a size qualifier the previous entry read past. The only animals the State Veterinarian may not permit at all are gila monsters, beaded lizards and komodo dragons. A ball python is a non-native reptile on no exempt list, so it needs an Individual permit. The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
           "permitFor": "personal",
           "verifiedOn": "2026-09-05"
@@ -7311,7 +7311,7 @@
           "sourceId": "me-unrestricted",
           "cite": "Unrestricted Species list",
           "status": "legal",
-          "quote": "Tupinambis spp.*   All Species in Genus Tupinambis (Tegus)",
+          "quote": "All Species in Genus Tupinambis (Tegus) Tupinambis spp.*",
           "note": "Cleared by genus, but the list dates from 2017 and the Argentine black and white tegu was moved out of Tupinambis into Salvator in 2012. The common name column reads Tegus, so the intent is plain, though anyone relying on the scientific name alone should be aware the two do not match current taxonomy.",
           "verifiedOn": "2026-08-05"
         },
@@ -10379,7 +10379,7 @@
           "sourceId": "me-unrestricted",
           "cite": "Unrestricted Species list",
           "status": "legal",
-          "quote": "Cavia porcellus   Guinea Pig",
+          "quote": "Guinea Pig Cavia porcellus",
           "note": "Named on the unrestricted rodent list.",
           "verifiedOn": "2026-08-05"
         },
@@ -11620,7 +11620,7 @@
           "sourceId": "me-unrestricted",
           "cite": "Unrestricted Species list",
           "status": "legal",
-          "quote": "Infraorder Gekkota*   all species in infraorder Gekkota",
+          "quote": "all species in infraorder Gekkota Except for: Nephrurus deleani Infraorder Gekkota*",
           "note": "Cleared at infraorder level, so every gecko is unrestricted. The asterisk footnote does not bite here: Gekko gecko went onto CITES Appendix II in 2019, and the footnote only removes Appendix I species.",
           "verifiedOn": "2026-08-05"
         },
@@ -13054,7 +13054,7 @@
           "status": "permit",
           "sourceId": "de-903",
           "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
-          "quote": "Giant snakes over 5 feet (anacondas, pythons, boas)",
+          "quote": "All giant snakes when average adult body length of the species is larger than 5 feet: Anacondas, Pythons and Boas",
           "note": "The Burmese python is a non-native reptile and no snake is exempt in Delaware, so an Individual permit is required. The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. It is not banned here: pythons appear in these rules only at 7.5.2.10, which bars Sales Permit holders from breeding giant snakes over five feet, and that is a breeding restriction on a permit class rather than a prohibition on keeping one. Federal law is the harder constraint, since the species has been listed as injurious wildlife under the Lacey Act since 2012 and cannot lawfully cross a state line.",
           "permitFor": "personal",
           "verifiedOn": "2026-09-05"

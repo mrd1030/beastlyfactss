@@ -1,162 +1,10 @@
 # Legal quote backlog
 
-63 cells across 18 sources whose quoted sentence could not be found on the live page.
+38 cells across 14 sources whose quoted sentence could not be found on the live page.
 
 The monthly check never reports these. A quote already missing when the baseline was written would otherwise alarm every month forever, so it is recorded and stays silent, which is also how a backlog becomes permanent. This is the list.
 
 Each entry shows the quote on file and the closest passage on the live page, matched on the rarest words the quote contains. That is a lead, not a verdict. Read the page before changing a cell.
-
----
-
-## `me-unrestricted` (12 cells)
-
-Maine Department of Inland Fisheries and Wildlife, Unrestricted Species List
-
-https://www.maine.gov/ifw/docs/unrestrictedspecies.pdf
-
-### hedgehog/ME is `legal`, cites no section, verified 2026-08-04
-
-Quote on file:
-
-> Atelerix albiventris Four-toed Hedgehog, African Pygmy Hedgehog
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: atelerix, albiventris, toed, hedgehog, four, pygmy.
-
-As the page words it:
-
-> ...Relatives) Scientific Name Common Name Sugar GliderPetaurus breviceps Erinaceomorpha (Hedgehogs And Gymnures) Scientific Name Common Name Four-toed Hedgehog, African Pygmy HedgehogAtelerix albiventris Lagomorpha (Hares, Pikas, And Rabbits) Scientific Name Common Name European RabbitOryctolagus cuniculus Rodentia (Rodents) Scientific Name Common Name Cairo Spiny MouseAcomys cahirinus Guinea PigCavi...
-
-### ferret/ME is `legal`, cites no section, verified 2026-08-04
-
-Quote on file:
-
-> Mustela putorius furo Domestic Ferret
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: mustela, putorius, furo, ferret, domestic.
-
-As the page words it:
-
-> ...N Red List (Endangered, Critically Endangered, or Extinct in the Wild) OR Unrestricted Species Mammalia (Mammals) Carnivora (Carnivores) Scientific Name Common Name Domestic FerretMustela putorius furo Diprotodontia (Kangaroos, Possums, Wallabies, And Relatives) Scientific Name Common Name Sugar GliderPetaurus breviceps Erinaceomorpha (Hedgehogs And Gymnures) Scientific Name Common Name Four-toed ...
-
-### sugar-glider/ME is `legal`, cites Unrestricted Species List, verified 2026-08-04
-
-Quote on file:
-
-> Petaurus breviceps Sugar Glider
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: petaurus, breviceps, sugar, glider.
-
-As the page words it:
-
-> ... (Carnivores) Scientific Name Common Name Domestic FerretMustela putorius furo Diprotodontia (Kangaroos, Possums, Wallabies, And Relatives) Scientific Name Common Name Sugar GliderPetaurus breviceps Erinaceomorpha (Hedgehogs And Gymnures) Scientific Name Common Name Four-toed Hedgehog, African Pygmy HedgehogAtelerix albiventris Lagomorpha (Hares, Pikas, And Rabbits) Scientific Name Common Name Eur...
-
-### hamster/ME is `legal`, cites Unrestricted Species list, verified 2026-08-05
-
-Quote on file:
-
-> Mesocricetus auratus Golden Hamster
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: mesocricetus, auratus, golden, hamster.
-
-As the page words it:
-
-> ...inus Guinea PigCavia porcellus ChinchillaChinchilla lanigera Striped Dwarf HamsterCricetulus barabensis Chinese HamsterCricetulus griseus GerbilMeriones unguiculatus Golden HamsterMesocricetus auratus House MouseMus musculus DeguOctodon degu Campbell’s HamsterPhodopus campbelli Roborovski’s Desert HamsterPhodopus roborovskii Dzhungarian HamsterPhodopus sungorus Brown RatRattus norvegicus Reptilia ...
-
-### bengal-cat/ME is `unclear`, cites Unrestricted Species list, verified 2026-08-05
-
-Quote on file:
-
-> Carnivora (Carnivores) Mustela putorius furo Domestic Ferret
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: carnivora, carnivores, mustela, putorius, furo, ferret.
-
-As the page words it:
-
-> ...ifeUSFWS Threatened and Endangered AnimalsOR CITES Appendix IORIUCN Red List (Endangered, Critically Endangered, or Extinct in the Wild) OR Unrestricted Species Mammalia (Mammals) Carnivora (Carnivores) Scientific Name Common Name Domestic FerretMustela putorius furo Diprotodontia (Kangaroos, Possums, Wallabies, And Relatives) Scientific Name Common Name Sugar GliderPetaurus breviceps Erinaceomorp...
-
-### argentine-tegu/ME is `legal`, cites Unrestricted Species list, verified 2026-08-05
-
-Quote on file:
-
-> Tupinambis spp.* All Species in Genus Tupinambis (Tegus)
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: tupinambis, tegus.
-
-As the page words it:
-
-> ...Rieppeleon brevicaudatus All Species in Genus Sceloporus (Spiny Lizards)Sceloporus spp.* Jackson's ChameleonTrioceros jacksonii Rudis ChameleonTrioceros rudis All Species in Genus Tupinambis (Tegus)Tupinambis spp.* All Species in Genus Uromastyx (Spiny-tailed Lizards)Uromastyx spp.* All Species in Genus Urosaurus (Tree And Bush Lizards)Urosaurus spp.* All Species in Genus Uta (Side Blotched Lizard...
-
-### fennec-fox/ME is `permit`, cites Unrestricted Species list, verified 2026-08-05
-
-Quote on file:
-
-> Carnivora (Carnivores) Mustela putorius furo Domestic Ferret
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: carnivora, carnivores, mustela, putorius, furo, ferret.
-
-As the page words it:
-
-> ...ifeUSFWS Threatened and Endangered AnimalsOR CITES Appendix IORIUCN Red List (Endangered, Critically Endangered, or Extinct in the Wild) OR Unrestricted Species Mammalia (Mammals) Carnivora (Carnivores) Scientific Name Common Name Domestic FerretMustela putorius furo Diprotodontia (Kangaroos, Possums, Wallabies, And Relatives) Scientific Name Common Name Sugar GliderPetaurus breviceps Erinaceomorp...
-
-### serval/ME is `permit`, cites Unrestricted Species list, verified 2026-08-05
-
-Quote on file:
-
-> Carnivora (Carnivores) Mustela putorius furo Domestic Ferret
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: carnivora, carnivores, mustela, putorius, furo, ferret.
-
-As the page words it:
-
-> ...ifeUSFWS Threatened and Endangered AnimalsOR CITES Appendix IORIUCN Red List (Endangered, Critically Endangered, or Extinct in the Wild) OR Unrestricted Species Mammalia (Mammals) Carnivora (Carnivores) Scientific Name Common Name Domestic FerretMustela putorius furo Diprotodontia (Kangaroos, Possums, Wallabies, And Relatives) Scientific Name Common Name Sugar GliderPetaurus breviceps Erinaceomorp...
-
-### guinea-pig/ME is `legal`, cites Unrestricted Species list, verified 2026-08-05
-
-Quote on file:
-
-> Cavia porcellus Guinea Pig
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: cavia, porcellus, guinea.
-
-As the page words it:
-
-> ...es, Pikas, And Rabbits) Scientific Name Common Name European RabbitOryctolagus cuniculus Rodentia (Rodents) Scientific Name Common Name Cairo Spiny MouseAcomys cahirinus Guinea PigCavia porcellus ChinchillaChinchilla lanigera Striped Dwarf HamsterCricetulus barabensis Chinese HamsterCricetulus griseus GerbilMeriones unguiculatus Golden HamsterMesocricetus auratus House MouseMus musculus DeguOctodo...
-
-### tokay-gecko/ME is `legal`, cites Unrestricted Species list, verified 2026-08-05
-
-Quote on file:
-
-> Infraorder Gekkota* all species in infraorder Gekkota
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: infraorder, gekkota.
-
-As the page words it:
-
-> ...ards)Gerrhonotus spp.* All Species in Genus Gerrhosaurus (Plated Lizards)Gerrhosaurus spp.* All Species in Genus Holbrookia (Lesser Earless Lizards)Holbrookia spp.* all species in infraorder Gekkota Except for: Nephrurus deleani Infraorder Gekkota* All Species in Genus Leiocephalus (Curly-tailed Lizards)Leiocephalus spp.* All Species in Genus Liolaemus (South American Swifts)Liolaemus spp.* All Sp...
-
-### hognose-snake/ME is `legal`, cites Unrestricted Species list, verified 2026-08-05
-
-Quote on file:
-
-> Heterodon nasicus Western Hognose Snake
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: nasicus, western, heterodon, hognose, snake.
-
-As the page words it:
-
-> ...x IORIUCN Red List (Endangered, Critically Endangered, or Extinct in the Wild) OR Unrestricted Species Red-tailed Green RatsnakeGonyosoma oxycephala Western Hognose SnakeHeterodon nasicus All Species in Genus Lampropeltis (Kingsnakes And Milk Snakes) Except for: Lampropeltis herrerae; Lampropeltis triangulum triangulum Lampropeltis spp.* Giant Madagascan Hognose SnakeLeioheterodon madagascariensis...
-
-### giant-millipede/ME is `legal`, cites Unrestricted Species list, verified 2026-08-05
-
-Quote on file:
-
-> Diplopoda (Millipedes) ... Spirostreptus gigas Giant African Millipede
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: diplopoda, millipedes, spirostreptus, gigas, millipede, giant.
-
-As the page words it:
-
-> ...Common Name Green WormAllolobophora chlorotica European BarkwormDendrodrilus rubidus Red WigglerEisenia fetida Squaretail WormEiseniella tetraedra Chestnut WormLumbricus castaneus Diplopoda (Millipedes) Spirostreptida Scientific Name Common Name Giant African MillipedeMardonius parilis acuticonus Giant African MillipedeSpirostreptus gigas Friday, August 11, 2017 Page 12 of 18 *Except if listed on:...
 
 ---
 
@@ -276,166 +124,6 @@ As the page words it:
 
 ---
 
-## `az-r12-4-406` (7 cells)
-
-Ariz. Admin. Code R12-4-406, Restricted Live Wildlife
-
-https://www.animallaw.info/administrative/az-exotic-wildlife-article-4-live-wildlife
-
-### hamster/AZ is `legal`, cites R12-4-406(F), verified 2026-09-05
-
-Quote on file:
-
-> Order Erinaceomorpha, all species, except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs; Order Lagomorpha, all species, except members of the genus Oryctolagus containing domestic rabbits, which are not wildlife and are not restricted; Order Rodentia, the families Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae, Sciuridae
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: erinaceomorpha, atelerix, longeared, pygmy, oryctolagus, containing.
-
-As the page words it:
-
-> ... wolves, and weasels. 4. All species of the order Chiroptera. Common name: bats. 5. All species of the genus Didelphis. Common name: American opossums. 6. All species of the order Erinaceomorpha. Common names include: European hedgehogs, gymnures, and moonrats. Except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs. 7. All species of the order La...
-
-### gerbil/AZ is `legal`, cites R12-4-406(F), verified 2026-09-05
-
-Quote on file:
-
-> Order Erinaceomorpha, all species, except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs; Order Lagomorpha, all species, except members of the genus Oryctolagus containing domestic rabbits, which are not wildlife and are not restricted; Order Rodentia, the families Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae, Sciuridae
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: erinaceomorpha, atelerix, longeared, pygmy, oryctolagus, containing.
-
-As the page words it:
-
-> ... wolves, and weasels. 4. All species of the order Chiroptera. Common name: bats. 5. All species of the genus Didelphis. Common name: American opossums. 6. All species of the order Erinaceomorpha. Common names include: European hedgehogs, gymnures, and moonrats. Except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs. 7. All species of the order La...
-
-### capybara/AZ is `legal`, cites R12-4-406(F), verified 2026-09-05
-
-Quote on file:
-
-> Order Erinaceomorpha, all species, except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs; Order Lagomorpha, all species, except members of the genus Oryctolagus containing domestic rabbits, which are not wildlife and are not restricted; Order Rodentia, the families Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae, Sciuridae
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: erinaceomorpha, atelerix, longeared, pygmy, oryctolagus, containing.
-
-As the page words it:
-
-> ... wolves, and weasels. 4. All species of the order Chiroptera. Common name: bats. 5. All species of the genus Didelphis. Common name: American opossums. 6. All species of the order Erinaceomorpha. Common names include: European hedgehogs, gymnures, and moonrats. Except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs. 7. All species of the order La...
-
-### chinchilla/AZ is `legal`, cites R12-4-406(F), verified 2026-09-05
-
-Quote on file:
-
-> Order Erinaceomorpha, all species, except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs; Order Lagomorpha, all species, except members of the genus Oryctolagus containing domestic rabbits, which are not wildlife and are not restricted; Order Rodentia, the families Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae, Sciuridae
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: erinaceomorpha, atelerix, longeared, pygmy, oryctolagus, containing.
-
-As the page words it:
-
-> ... wolves, and weasels. 4. All species of the order Chiroptera. Common name: bats. 5. All species of the genus Didelphis. Common name: American opossums. 6. All species of the order Erinaceomorpha. Common names include: European hedgehogs, gymnures, and moonrats. Except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs. 7. All species of the order La...
-
-### guinea-pig/AZ is `legal`, cites R12-4-406(F), verified 2026-09-05
-
-Quote on file:
-
-> Order Erinaceomorpha, all species, except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs; Order Lagomorpha, all species, except members of the genus Oryctolagus containing domestic rabbits, which are not wildlife and are not restricted; Order Rodentia, the families Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae, Sciuridae
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: erinaceomorpha, atelerix, longeared, pygmy, oryctolagus, containing.
-
-As the page words it:
-
-> ... wolves, and weasels. 4. All species of the order Chiroptera. Common name: bats. 5. All species of the genus Didelphis. Common name: American opossums. 6. All species of the order Erinaceomorpha. Common names include: European hedgehogs, gymnures, and moonrats. Except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs. 7. All species of the order La...
-
-### degu/AZ is `legal`, cites R12-4-406(F), verified 2026-09-05
-
-Quote on file:
-
-> Order Erinaceomorpha, all species, except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs; Order Lagomorpha, all species, except members of the genus Oryctolagus containing domestic rabbits, which are not wildlife and are not restricted; Order Rodentia, the families Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae, Sciuridae
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: erinaceomorpha, atelerix, longeared, pygmy, oryctolagus, containing.
-
-As the page words it:
-
-> ... wolves, and weasels. 4. All species of the order Chiroptera. Common name: bats. 5. All species of the genus Didelphis. Common name: American opossums. 6. All species of the order Erinaceomorpha. Common names include: European hedgehogs, gymnures, and moonrats. Except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs. 7. All species of the order La...
-
-### rabbit/AZ is `legal`, cites R12-4-406(F), verified 2026-09-05
-
-Quote on file:
-
-> Order Erinaceomorpha, all species, except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs; Order Lagomorpha, all species, except members of the genus Oryctolagus containing domestic rabbits, which are not wildlife and are not restricted; Order Rodentia, the families Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae, Sciuridae
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: erinaceomorpha, atelerix, longeared, pygmy, oryctolagus, containing.
-
-As the page words it:
-
-> ... wolves, and weasels. 4. All species of the order Chiroptera. Common name: bats. 5. All species of the genus Didelphis. Common name: American opossums. 6. All species of the order Erinaceomorpha. Common names include: European hedgehogs, gymnures, and moonrats. Except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs. 7. All species of the order La...
-
----
-
-## `ar-unrestricted` (5 cells)
-
-Arkansas Game and Fish Commission Code Book, Addendum R1.01, Unrestricted Captive Wildlife Species List
-
-https://agfc-omnibus.s3.amazonaws.com/eregs/regulation_pdfs/large/agfc_regulations_codebook_large.pdf
-
-### hedgehog/AR is `legal`, cites no section, verified 2026-08-04
-
-Quote on file:
-
-> Four-toed or African Pygmy Hedgehog (Atelerix albiventris)
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: atelerix, albiventris, toed, hedgehog, pygmy, african.
-
-As the page words it:
-
-> ...vii) Mammals Bactrian, Dromedary Camel (Camelus bactrianus, Camelus dromedaries) Buffalo (Bos bison) European Domestic Ferret (Mustela putorius) Four-toed, African Pygmy Hedgehog (Atelerix albiventris) Gerbils (Subfamily Gerbillinae) Guinea Pig (Cavia porcellus) Hamster (Mesocricetus auratus, Phodopus campbelli, Phodopus sungorus, Cricetulusgriseus, Phodopus roborovskii) House Mouse (Mus musculus)...
-
-### hamster/AR is `legal`, cites Code Addendum R1.01, Unrestricted Captive Wildlife Species List, verified 2026-08-05
-
-Quote on file:
-
-> Hamster (Mesocricetus auratus, Phodopus campbelli, P. sungorus, P. roborovskii, Cricetulus griseus)
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: hamster, mesocricetus, campbelli, sungorus, roborovskii, cricetulus.
-
-As the page words it:
-
-> ...ffalo (Bos bison) European Domestic Ferret (Mustela putorius) Four-toed, African Pygmy Hedgehog (Atelerix albiventris) Gerbils (Subfamily Gerbillinae) Guinea Pig (Cavia porcellus) Hamster (Mesocricetus auratus, Phodopus campbelli, Phodopus sungorus, Cricetulusgriseus, Phodopus roborovskii) House Mouse (Mus musculus) Llama (Lama glama) Long-tailed Chinchilla (Chinchilla lanigera) Norway Rat (Rattus...
-
-### russian-tortoise/AR is `legal`, cites Code Addendum R1.01, Unrestricted Captive Wildlife Species List, verified 2026-08-05
-
-Quote on file:
-
-> Tortoises (Genera: Agrionemys, Aldabrachelys, Chelonoidis, Centrochelys, Geochelone, Gopherus, Indotestudo, Manouria, Psuedotestudo, Stigmochelys, Testudo)
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: aldabrachelys, chelonoidis, centrochelys, geochelone, gopherus, indotestudo.
-
-As the page words it:
-
-> ...es (Genera: Pelomedusa, Pelusios) African Sideneck Turtle (Pelomedusa subrufa) Mata mata (Chelus fimbriata) Red-bellied Short-necked Turtle (Emydura subglobosa) Tortoises (Genera: Aldabrachelys, Astrochelys, Centrochelys, Chelonoidis, Chersina, Chersobius, Geochelone, Gopherus, Homopus, Indotestudo, Kinixys, Malacochersus, Manouria, Psammobates, Pyxis, Stigmochelys, Testudo) Additionally, persons ...
-
-### sulcata-tortoise/AR is `legal`, cites Code Addendum R1.01, Unrestricted Captive Wildlife Species List, verified 2026-08-05
-
-Quote on file:
-
-> Tortoises (Genera: Agrionemys, Aldabrachelys, Chelonoidis, Centrochelys, Geochelone, Gopherus, Indotestudo, Manouria, Psuedotestudo, Stigmochelys, Testudo)
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: aldabrachelys, chelonoidis, centrochelys, geochelone, gopherus, indotestudo.
-
-As the page words it:
-
-> ...es (Genera: Pelomedusa, Pelusios) African Sideneck Turtle (Pelomedusa subrufa) Mata mata (Chelus fimbriata) Red-bellied Short-necked Turtle (Emydura subglobosa) Tortoises (Genera: Aldabrachelys, Astrochelys, Centrochelys, Chelonoidis, Chersina, Chersobius, Geochelone, Gopherus, Homopus, Indotestudo, Kinixys, Malacochersus, Manouria, Psammobates, Pyxis, Stigmochelys, Testudo) Additionally, persons ...
-
-### red-footed-tortoise/AR is `legal`, cites Code Addendum R1.01, Unrestricted Captive Wildlife Species List, verified 2026-08-27
-
-Quote on file:
-
-> Tortoises (Genera: Agrionemys, Aldabrachelys, Chelonoidis, Centrochelys, Geochelone, Gopherus, Indotestudo, Manouria, Psuedotestudo, Stigmochelys, Testudo)
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: aldabrachelys, chelonoidis, centrochelys, geochelone, gopherus, indotestudo.
-
-As the page words it:
-
-> ...es (Genera: Pelomedusa, Pelusios) African Sideneck Turtle (Pelomedusa subrufa) Mata mata (Chelus fimbriata) Red-bellied Short-necked Turtle (Emydura subglobosa) Tortoises (Genera: Aldabrachelys, Astrochelys, Centrochelys, Chelonoidis, Chersina, Chersobius, Geochelone, Gopherus, Homopus, Indotestudo, Kinixys, Malacochersus, Manouria, Psammobates, Pyxis, Stigmochelys, Testudo) Additionally, persons ...
-
----
-
 ## `ks-115-20-3` (5 cells)
 
 K.A.R. 115-20-3, Exotic wildlife; possession, sale and requirements, and K.A.R. 115-20-2, Certain wildlife; legal equipment, taking methods, possession, and license requirement
@@ -501,58 +189,6 @@ Closest passage (only 1 of 2 distinctive words are present, so read the page bef
 As the page words it:
 
 > .... Admin. Regs. § 115-20-3 - Exotic wildlife; possession, sale and requirements | State Regulations | US Law | LII / Legal Information Institute Please help us improve our site! No thank you Skip to main content Cornell Law School Search Cornell Toggle navigation Please help us improve our site! Support Us! Search About LII Who We Are What We Do Who Pays For This Contact Us Get the law Constitution...
-
----
-
-## `hi-conditional` (4 cells)
-
-Hawaii Administrative Rules, List of Conditionally Approved Animals (Hawaii Department of Agriculture official PDF)
-
-https://dab.hawaii.gov/pi/files/2012/12/AR-71C.pdf
-
-### box-turtle/HI is `conditional`, cites List of Conditionally Approved Animals, verified 2026-08-05
-
-Quote on file:
-
-> Terrapene (all species in genus except T. coahuila)
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: terrapene, coahuila, except.
-
-As the page words it:
-
-> ...turtle, Japanese pond Mauremys (Clemmys) leprosa turtle, Iberian pond CONDITIONAL ANIMAL LIST §4-71-6.5 SCIENTIFIC NAME COMMON NAME 8 Mauremys (Clemmys) mutica turtle, Taipei pond Terrapene (all species in genus turtle, box except T. coahuila) FAMILY Testudinidae Asterochelys (all species in tortoise genus except A. radiata and A. yniphora) Chelonoidis (all species in tortoise, Galapagos genus exc...
-
-### red-eared-slider/HI is `permit`, cites List of Restricted Animals, Part B, verified 2026-08-05
-
-Quote on file:
-
-> Trachemys (all species in genus)
-
-Not on the page at all. None of these words appear: trachemys, genus.
-
-### cockatoo/HI is `conditional`, cites § 4-71-6.5, List of Conditionally Approved Animals, verified 2026-08-27
-
-Quote on file:
-
-> White cockatoos (Umbrella, Moluccan, Sulphur-crested, Little Corella, etc.)
-
-Closest passage (only 2 of 4 distinctive words are present, so read the page before assuming anything). Words searched: sulphur, little, crested, white.
-
-As the page words it:
-
-> ...ing, meadow (Hojiro) CONDITIONAL ANIMAL LIST §4-71-6.5 SCIENTIFIC NAME COMMON NAME 59 Emberiza elegans bunting, elegant (yellow-throated) Emberiza rustica bunting, rustic Emberiza sulphurata bunting, yellow Emberiza tristrami bunting, Tristram's Gubernatrix cristata cardinal, yellow Paroaria capitata cardinal, yellow-billed Paroaria dominicana cardinal, pope (red-cowled) Paroaria gularis cardinal,...
-
-### red-footed-tortoise/HI is `conditional`, cites List of Conditionally Approved Animals, Family Testudinidae, verified 2026-08-27
-
-Quote on file:
-
-> Chelonoidis (all species in genus except C. elephantopus)
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: chelonoidis, elephantopus, except.
-
-As the page words it:
-
-> ...tle, Taipei pond Terrapene (all species in genus turtle, box except T. coahuila) FAMILY Testudinidae Asterochelys (all species in tortoise genus except A. radiata and A. yniphora) Chelonoidis (all species in tortoise, Galapagos genus except C. elephantopus) Chersina angulata tortoise, bow-sprit Geochelone (all species in genus) tortoise Gopherus (Xerobates) (all tortoise, gopher species in genus e...
 
 ---
 
@@ -656,6 +292,94 @@ As the page words it:
 
 ---
 
+## `me-unrestricted` (3 cells)
+
+Maine Department of Inland Fisheries and Wildlife, Unrestricted Species List
+
+https://www.maine.gov/ifw/docs/unrestrictedspecies.pdf
+
+### argentine-tegu/ME is `legal`, cites Unrestricted Species list, verified 2026-08-05
+
+Quote on file:
+
+> Tupinambis spp.* All Species in Genus Tupinambis (Tegus)
+
+Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: tupinambis, tegus.
+
+As the page words it:
+
+> ...Rieppeleon brevicaudatus All Species in Genus Sceloporus (Spiny Lizards)Sceloporus spp.* Jackson's ChameleonTrioceros jacksonii Rudis ChameleonTrioceros rudis All Species in Genus Tupinambis (Tegus)Tupinambis spp.* All Species in Genus Uromastyx (Spiny-tailed Lizards)Uromastyx spp.* All Species in Genus Urosaurus (Tree And Bush Lizards)Urosaurus spp.* All Species in Genus Uta (Side Blotched Lizard...
+
+### guinea-pig/ME is `legal`, cites Unrestricted Species list, verified 2026-08-05
+
+Quote on file:
+
+> Cavia porcellus Guinea Pig
+
+Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: cavia, porcellus, guinea.
+
+As the page words it:
+
+> ...es, Pikas, And Rabbits) Scientific Name Common Name European RabbitOryctolagus cuniculus Rodentia (Rodents) Scientific Name Common Name Cairo Spiny MouseAcomys cahirinus Guinea PigCavia porcellus ChinchillaChinchilla lanigera Striped Dwarf HamsterCricetulus barabensis Chinese HamsterCricetulus griseus GerbilMeriones unguiculatus Golden HamsterMesocricetus auratus House MouseMus musculus DeguOctodo...
+
+### tokay-gecko/ME is `legal`, cites Unrestricted Species list, verified 2026-08-05
+
+Quote on file:
+
+> Infraorder Gekkota* all species in infraorder Gekkota
+
+Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: infraorder, gekkota.
+
+As the page words it:
+
+> ...ards)Gerrhonotus spp.* All Species in Genus Gerrhosaurus (Plated Lizards)Gerrhosaurus spp.* All Species in Genus Holbrookia (Lesser Earless Lizards)Holbrookia spp.* all species in infraorder Gekkota Except for: Nephrurus deleani Infraorder Gekkota* All Species in Genus Leiocephalus (Curly-tailed Lizards)Leiocephalus spp.* All Species in Genus Liolaemus (South American Swifts)Liolaemus spp.* All Sp...
+
+---
+
+## `ar-unrestricted` (3 cells)
+
+Arkansas Game and Fish Commission Code Book, Addendum R1.01, Unrestricted Captive Wildlife Species List
+
+https://agfc-omnibus.s3.amazonaws.com/eregs/regulation_pdfs/large/agfc_regulations_codebook_large.pdf
+
+### russian-tortoise/AR is `legal`, cites Code Addendum R1.01, Unrestricted Captive Wildlife Species List, verified 2026-08-05
+
+Quote on file:
+
+> Tortoises (Genera: Agrionemys, Aldabrachelys, Chelonoidis, Centrochelys, Geochelone, Gopherus, Indotestudo, Manouria, Psuedotestudo, Stigmochelys, Testudo)
+
+Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: aldabrachelys, chelonoidis, centrochelys, geochelone, gopherus, indotestudo.
+
+As the page words it:
+
+> ...es (Genera: Pelomedusa, Pelusios) African Sideneck Turtle (Pelomedusa subrufa) Mata mata (Chelus fimbriata) Red-bellied Short-necked Turtle (Emydura subglobosa) Tortoises (Genera: Aldabrachelys, Astrochelys, Centrochelys, Chelonoidis, Chersina, Chersobius, Geochelone, Gopherus, Homopus, Indotestudo, Kinixys, Malacochersus, Manouria, Psammobates, Pyxis, Stigmochelys, Testudo) Additionally, persons ...
+
+### sulcata-tortoise/AR is `legal`, cites Code Addendum R1.01, Unrestricted Captive Wildlife Species List, verified 2026-08-05
+
+Quote on file:
+
+> Tortoises (Genera: Agrionemys, Aldabrachelys, Chelonoidis, Centrochelys, Geochelone, Gopherus, Indotestudo, Manouria, Psuedotestudo, Stigmochelys, Testudo)
+
+Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: aldabrachelys, chelonoidis, centrochelys, geochelone, gopherus, indotestudo.
+
+As the page words it:
+
+> ...es (Genera: Pelomedusa, Pelusios) African Sideneck Turtle (Pelomedusa subrufa) Mata mata (Chelus fimbriata) Red-bellied Short-necked Turtle (Emydura subglobosa) Tortoises (Genera: Aldabrachelys, Astrochelys, Centrochelys, Chelonoidis, Chersina, Chersobius, Geochelone, Gopherus, Homopus, Indotestudo, Kinixys, Malacochersus, Manouria, Psammobates, Pyxis, Stigmochelys, Testudo) Additionally, persons ...
+
+### red-footed-tortoise/AR is `legal`, cites Code Addendum R1.01, Unrestricted Captive Wildlife Species List, verified 2026-08-27
+
+Quote on file:
+
+> Tortoises (Genera: Agrionemys, Aldabrachelys, Chelonoidis, Centrochelys, Geochelone, Gopherus, Indotestudo, Manouria, Psuedotestudo, Stigmochelys, Testudo)
+
+Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: aldabrachelys, chelonoidis, centrochelys, geochelone, gopherus, indotestudo.
+
+As the page words it:
+
+> ...es (Genera: Pelomedusa, Pelusios) African Sideneck Turtle (Pelomedusa subrufa) Mata mata (Chelus fimbriata) Red-bellied Short-necked Turtle (Emydura subglobosa) Tortoises (Genera: Aldabrachelys, Astrochelys, Centrochelys, Chelonoidis, Chersina, Chersobius, Geochelone, Gopherus, Homopus, Indotestudo, Kinixys, Malacochersus, Manouria, Psammobates, Pyxis, Stigmochelys, Testudo) Additionally, persons ...
+
+---
+
 ## `hi-4-71-6` (2 cells)
 
 Hawaii Administrative Rules § 4-71-6, List of Prohibited Animals
@@ -688,67 +412,31 @@ As the page words it:
 
 ---
 
-## `hi-4-71-6-5` (2 cells)
+## `hi-conditional` (2 cells)
 
-Hawaii Administrative Rules § 4-71-6.5, List of Restricted Animals, Part A (research and exhibition)
+Hawaii Administrative Rules, List of Conditionally Approved Animals (Hawaii Department of Agriculture official PDF)
 
-https://dab.hawaii.gov/pi/files/2012/12/AR-71RA.pdf
+https://dab.hawaii.gov/pi/files/2012/12/AR-71C.pdf
 
-### gerbil/HI is `banned`, cites Part A, verified 2026-08-04
-
-Quote on file:
-
-> Gerbillus gerbillus / Meriones unguiculatus
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: meriones, unguiculatus, gerbillus.
-
-As the page words it:
-
-> ...onta africana elephant, African ORDER Rodentia FAMILY Caviidae Dolichotis patagonum cavy, Patagonian FAMILY Cricetidae Cricetulus griseus mouse, Chinese Gerbillus gerbillus gerbil Meriones unguiculatus gerbil Mesocricetus auratus hamster Sigmondon hispidus rat, cotton FAMILY Dasyproctidae Agouti paca agouti Dasyprocta agouti (=D. leporina) agouti FAMILY Erethizontidae Erethizon dorsatum porcupine,...
-
-### bearded-dragon/HI is `banned`, cites § 4-71-6.5, Restricted Animal List Part A, verified 2026-09-05
+### red-eared-slider/HI is `permit`, cites List of Restricted Animals, Part B, verified 2026-08-05
 
 Quote on file:
 
-> Pogona (Amphibolurus) vittaceps dragon, inland bearded
+> Trachemys (all species in genus)
 
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: vittaceps, inland, pogona, amphibolurus, bearded, dragon.
+Not on the page at all. None of these words appear: trachemys, genus.
 
-As the page words it:
-
-> ...agon Pogona (Amphibolurus) barbatus lizard, Australian bearded dragon Pogona (Amphibolurus) lizard, Nullarbor bearded nullarbor dragon Pogona (Amphibolurus) dragon, inland bearded vittaceps FAMILY Anguidae Gerrhonotus (Elguria) lizard, southern alligator multicarinata Ophisaurus ventralis lizard, eastern glass FAMILY Chamaeleonidae Chamaeleo chamaeleon chameleon, common Furcifer oustaleti chameleo...
-
----
-
-## `ky-301-2-082` (2 cells)
-
-301 KAR 2:082, Transportation and holding of live exotic wildlife
-
-https://apps.legislature.ky.gov/law/kar/titles/301/002/082/
-
-### bengal-cat/KY is `legal`, cites § 4, verified 2026-08-04
+### cockatoo/HI is `conditional`, cites § 4-71-6.5, List of Conditionally Approved Animals, verified 2026-08-27
 
 Quote on file:
 
-> Lions, jaguars, leopards, or tigers (Genus Panthera); Lynx (Genus Lynx);
+> White cockatoos (Umbrella, Moluccan, Sulphur-crested, Little Corella, etc.)
 
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: lions, jaguars, leopards, tigers, panthera, lynx.
-
-As the page words it:
-
-> ...ney badger or ratel (Mellivora capensis); (l) Hyenas (Family Hyaenidae), including all species except aardwolves (Proteles cristatus); (m) Komodo dragon (Varanus komodoensis); (n) Lions, jaguars, leopards, or tigers (Genus Panthera); (o) Lynx (Genus Lynx); (p) Old world badger (Meles meles); (q) Primates, nonhuman (Order Primates); (r) Rhinoceroses (Family Rhinocerotidae); (s) Snow leopard (Uncia ...
-
-### serval/KY is `legal`, cites § 4(2), verified 2026-08-04
-
-Quote on file:
-
-> Lions, jaguars, leopards, or tigers (Genus Panthera); Lynx (Genus Lynx);
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: lions, jaguars, leopards, tigers, panthera, lynx.
+Closest passage (only 2 of 4 distinctive words are present, so read the page before assuming anything). Words searched: sulphur, little, crested, white.
 
 As the page words it:
 
-> ...ney badger or ratel (Mellivora capensis); (l) Hyenas (Family Hyaenidae), including all species except aardwolves (Proteles cristatus); (m) Komodo dragon (Varanus komodoensis); (n) Lions, jaguars, leopards, or tigers (Genus Panthera); (o) Lynx (Genus Lynx); (p) Old world badger (Meles meles); (q) Primates, nonhuman (Order Primates); (r) Rhinoceroses (Family Rhinocerotidae); (s) Snow leopard (Uncia ...
+> ...ing, meadow (Hojiro) CONDITIONAL ANIMAL LIST §4-71-6.5 SCIENTIFIC NAME COMMON NAME 59 Emberiza elegans bunting, elegant (yellow-throated) Emberiza rustica bunting, rustic Emberiza sulphurata bunting, yellow Emberiza tristrami bunting, Tristram's Gubernatrix cristata cardinal, yellow Paroaria capitata cardinal, yellow-billed Paroaria dominicana cardinal, pope (red-cowled) Paroaria gularis cardinal,...
 
 ---
 
@@ -784,43 +472,23 @@ As the page words it:
 
 ---
 
-## `va-4vac15-30-40` (1 cell)
+## `hi-4-71-6-5` (1 cell)
 
-4 Va. Admin. Code § 15-30-40, Importation requirements, possession, and sale of nonnative (exotic) animals
+Hawaii Administrative Rules § 4-71-6.5, List of Restricted Animals, Part A (research and exhibition)
 
-https://law.lis.virginia.gov/admincode/title4/agency15/chapter30/section40/
+https://dab.hawaii.gov/pi/files/2012/12/AR-71RA.pdf
 
-### ferret/VA is `legal`, cites § 15-30-40(A), verified 2026-08-04
-
-Quote on file:
-
-> Mustelidae All Species (except Mustela putorius furo) Weasels, Badgers, Skunks and Otters Ferret
-
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: mustelidae, mustela, putorius, furo, weasels, badgers.
-
-As the page words it:
-
-> ...ies Deer* Carnivora Canidae All Species Wild Dogs,* Wolves, Coyotes or Coyote hybrids, Jackals and Foxes Ursidae All Species Bears* Procyonidae All Species Raccoons and* Relatives Mustelidae All Species Weasels, Badgers,* Skunks and Otters (except Mustela putorius furo) Ferret Viverridae All Species Civets, Genets,* Lingsangs, Mongooses, and Fossas Herpestidae All Species Mongooses* Hyaenidae All ...
-
----
-
-## `id-020427` (1 cell)
-
-IDAPA 02.04.27, Idaho Department of Agriculture, Rules Governing Deleterious Exotic Animals
-
-https://adminrules.idaho.gov/rules/current/02/020427.pdf
-
-### bengal-cat/ID is `legal`, cites § 404, verified 2026-08-04
+### gerbil/HI is `banned`, cites Part A, verified 2026-08-04
 
 Quote on file:
 
-> Geoffroy's Cat (Felis geoffroyi). Margay (Felis wiedii). Ocelot (Felis pardalis). Serval (Felis serval).
+> Gerbillus gerbillus / Meriones unguiculatus
 
-Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: geoffroyi, margay, wiedii, ocelot, pardalis, geoffroy.
+Closest passage (every distinctive word is present, so this is almost certainly a transcription that drifted rather than a law that moved). Words searched: meriones, unguiculatus, gerbillus.
 
 As the page words it:
 
-> ...nthera leo). (3-31-22) 06. Tiger ( Panthera tigris). All tigers and tiger-hybrids. (3-31-22) 404. DELETERIOUS EXOTIC ANIMALS -- MAMMALS: SMALL FELIDAE. 01. Geoffroy’s Cat ( Fel is geoffroyi). (3-31-22) 02. Margay ( Felis wiedii). (3-31-22) 03. Ocelot (Felis pardalis) . (3-31-22) 04. Serval ( Felis serval). (3-31-22) 405. DELETERIOUS EXOTIC ANIMALS - MAMMALS: INSECTIVORES. 01. European Hedgehog ( E...
+> ...onta africana elephant, African ORDER Rodentia FAMILY Caviidae Dolichotis patagonum cavy, Patagonian FAMILY Cricetidae Cricetulus griseus mouse, Chinese Gerbillus gerbillus gerbil Meriones unguiculatus gerbil Mesocricetus auratus hamster Sigmondon hispidus rat, cotton FAMILY Dasyproctidae Agouti paca agouti Dasyprocta agouti (=D. leporina) agouti FAMILY Erethizontidae Erethizon dorsatum porcupine,...
 
 ---
 
