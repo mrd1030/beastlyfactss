@@ -37,6 +37,14 @@ Solo developer passion project. Prefer fast, decisive work over exploration.
 - Never fetch photos or source new affiliate products yourself. Grep affiliateProducts.js for exact existing links, never from memory.
 - Infographic/content installs must stop at the image and internal-link checks. Do not run `npm run build` unless explicitly asked.
 - Content pipeline order: matrix → legal guide → encyclopedia/Beastfile → care guides.
+- Headless browsing in a cloud session: use **puppeteer**, never Playwright.
+  Puppeteer is already a devDependency and brings its own Chrome in
+  ~/.cache/puppeteer, which trusts the sandbox's TLS-interception CA and loads
+  https pages fine. The Chromium preinstalled at /opt/pw-browsers does not
+  trust it and fails every https page with ERR_CERT_AUTHORITY_INVALID. Do not
+  try to fix that by pinning the CA with --ignore-certificate-errors-spki-list:
+  the sandbox blocks it as a containment escape, correctly. Reach for
+  findChrome() and LAUNCH_ARGS in scripts/lib/carePackageSource.mjs.
 
 ## Docs and where they live
 - Docs live in root. CLAUDE.md never moves from root under any circumstances.
