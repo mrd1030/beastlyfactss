@@ -46,9 +46,16 @@ jobs:
         with:
           node-version: '22'
 
-      # No npm ci. The script uses only node builtins and global fetch, so
-      # installing the site's dependencies would add several minutes to a job
-      # whose whole point is to be cheap.
+      # 52 of the sources are PDFs carrying 828 cells, and their quotes cannot
+      # be checked while they are bytes. pypdf turns them into words. fontTools
+      # is not optional in practice: without it pypdf cannot resolve subset CFF
+      # Type1 encodings and returns control characters for whole documents.
+      #
+      # This is the only install. Still no npm ci: the script uses node builtins
+      # and global fetch, so pulling the site's dependencies would add minutes
+      # to a job whose whole point is to be cheap.
+      - name: Install the PDF reader
+        run: python3 -m pip install --quiet --disable-pip-version-check pypdf fontTools
       # The baseline has to be written from the same vantage point that checks
       # it. A runner and a home connection do not reach the same set of these
       # sites: a baseline written elsewhere left nine sources permanently

@@ -9,6 +9,13 @@
 // Costs nothing to run. It is 208 HTTP GETs and a hash each, no model calls
 // and no API keys. A month of this is a few minutes of CI.
 //
+// PDFs and .docx files are read as words, not bytes. 52 sources are PDFs and
+// 828 cells rest on them, 31% of the matrix, so leaving them unreadable left
+// the strongest signal switched off across a third of the work. PDFs go
+// through pypdf (scripts/pdf-text.py); a .docx is a zip and node can inflate
+// it unaided. Either failing falls back to hashing the bytes, which is how
+// both behaved before.
+//
 // The hard part is not fetching, it is NOT crying wolf. A statute page carries
 // a lot of furniture that changes on every request: session ids, view counters,
 // "printed on" timestamps, CSRF tokens, rotating ad slots. Hashing the raw
@@ -47,14 +54,17 @@
 // or block a datacentre IP on any given day and a checker that fails for that
 // reason gets muted within two months.
 
+import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
+import zlib from 'node:zlib';
 
 const ROOT = path.join(import.meta.dirname, '..');
 const DATA = path.join(ROOT, 'src/lib/data/legalStatus.json');
 const BASELINE = path.join(ROOT, 'docs/legal-source-hashes.json');
 const REPORT = path.join(ROOT, 'docs/legal-source-report.md');
+const PDF_TEXT = path.join(ROOT, 'scripts/pdf-text.py');
 
 const WRITE = process.argv.includes('--write');
 const ONLY = (() => {
@@ -121,6 +131,11 @@ function flatten(t) {
   return t
     .replace(/[\u2018\u2019]/g, "'")
     .replace(/[\u201c\u201d]/g, '"')
+    // Text pulled out of a PDF table arrives with its columns glued together,
+    // so "Black Skirt Tetra" next to "Gymnocorymbus ternetzi" comes back as
+    // "TetraGymnocorymbus". Splitting on the case boundary puts the word break
+    // back where the layout had one.
+    .replace(/([a-z])([A-Z])/g, '$1 $2')
     .replace(/[^a-z0-9]+/gi, ' ')
     .replace(/\s+/g, ' ')
     .trim()
@@ -170,6 +185,56 @@ function checkQuotes(text, cells) {
   return { checked: checked.length, missing };
 }
 
+// A .docx is a zip holding word/document.xml. Node has no zip reader but it
+// has inflateRaw, and a zip's local file headers can be walked without one, so
+// this needs no dependency. Four sources are .docx and 51 cells rest on them.
+function docxText(buf) {
+  let i = 0;
+  while (i + 30 < buf.length && buf.readUInt32LE(i) === 0x04034b50) {
+    const method = buf.readUInt16LE(i + 8);
+    const csize = buf.readUInt32LE(i + 18);
+    const nameLen = buf.readUInt16LE(i + 26);
+    const extraLen = buf.readUInt16LE(i + 28);
+    const name = buf.subarray(i + 30, i + 30 + nameLen).toString('latin1');
+    const at = i + 30 + nameLen + extraLen;
+    // A zero compressed size means the sizes live in a trailing data
+    // descriptor, which needs the central directory to resolve. Give up rather
+    // than guess: the source falls back to hashing its bytes.
+    if (!csize) return '';
+    if (name === 'word/document.xml') {
+      try {
+        const xml = method === 0 ? buf.subarray(at, at + csize) : zlib.inflateRawSync(buf.subarray(at, at + csize));
+        return xml.toString('utf8').replace(/<[^>]+>/g, ' ');
+      } catch { return ''; }
+    }
+    i = at + csize;
+  }
+  return '';
+}
+
+// Turning a PDF into words is the one job here worth a dependency, and pypdf is
+// the dependency. When it is missing the exit code says so and the source falls
+// back to hashing its bytes, which is how every PDF behaved before this.
+let pdfWorks = true;
+function pdfText(buf) {
+  if (!pdfWorks) return '';
+  try {
+    return execFileSync('python3', [PDF_TEXT], {
+      input: buf,
+      maxBuffer: 512 * 1024 * 1024,
+      stdio: ['pipe', 'pipe', 'ignore'],
+    }).toString('utf8');
+  } catch (err) {
+    // Exit 2 is "pypdf is not installed", which will be true for every
+    // remaining PDF too, so stop paying for the subprocess.
+    if (err.status === 2) {
+      pdfWorks = false;
+      console.log('pypdf not installed: PDF sources will be hashed as bytes and their quotes left unchecked.\n');
+    }
+    return '';
+  }
+}
+
 async function fetchOne(url, cells) {
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
@@ -181,18 +246,32 @@ async function fetchOne(url, cells) {
     });
     if (!res.ok) return { error: `HTTP ${res.status}` };
     const buf = Buffer.from(await res.arrayBuffer());
-    // A PDF is bytes, not markup. Hash it whole: these are statute PDFs that
-    // are republished rather than edited, so a byte change is a real signal
-    // and normalizing extracted text would need a PDF parser in CI for no gain.
-    const isPdf = (res.headers.get('content-type') || '').includes('pdf')
-      || buf.subarray(0, 5).toString('latin1') === '%PDF-';
-    const raw = isPdf ? buf.toString('latin1') : buf.toString('utf8');
-    const text = isPdf ? raw : normalize(raw);
-    if (!isPdf && text.length < SHELL_CHARS) return { error: `shell response, ${text.length} chars` };
-    const out = { hash: hash(text), length: text.length, kind: isPdf ? 'pdf' : 'html' };
-    // A PDF is bytes here, not words, so its quotes cannot be searched without
-    // a parser. Hash change is the only signal those sources give.
-    if (!isPdf && cells?.length) out.quotes = checkQuotes(raw, cells);
+    const isPdf = buf.subarray(0, 5).toString('latin1') === '%PDF-';
+    const isDocx = !isPdf && buf.subarray(0, 2).toString('latin1') === 'PK'
+      && /\.docx?(\?|$)/i.test(url);
+
+    // Words where they can be had, bytes where they cannot. Hashing the
+    // extracted text rather than the file also stops a PDF that is republished
+    // byte-for-different but word-for-word identical from reporting as changed.
+    let body = null;
+    if (isPdf) body = pdfText(buf) || null;
+    else if (isDocx) body = docxText(buf) || null;
+    else body = buf.toString('utf8');
+
+    const kind = isPdf ? 'pdf' : isDocx ? 'docx' : 'html';
+    // An extraction that yields almost nothing is a scan, or a parser that gave
+    // up. For a document, fall back to hashing the bytes rather than calling it
+    // unreachable: the weak signal is still better than none. For a web page
+    // there is nothing to fall back to, because a near-empty response IS the
+    // finding: the server served a shell, not the statute.
+    if (body !== null && normalize(body).length < SHELL_CHARS) {
+      if (isPdf || isDocx) body = null;
+      else return { error: `shell response, ${normalize(body).length} chars` };
+    }
+    const readable = body !== null;
+    const text = readable ? normalize(body) : buf.toString('latin1');
+    const out = { hash: hash(text), length: text.length, kind };
+    if (readable && cells?.length) out.quotes = checkQuotes(body, cells);
     return out;
   } catch (err) {
     return { error: err.name === 'AbortError' ? 'timeout' : String(err.message || err).slice(0, 60) };
@@ -352,7 +431,7 @@ const fmtPct = (d) => `${(d * 100).toFixed(1)}%`;
 // be checked at all (a PDF), because there the hash is the only signal it gives.
 // A source no cell cites cannot make the matrix wrong whatever it does.
 const worthReading = (r) => cellNames(r.id).length > 0
-  && (r.drift >= MIN_DRIFT || r.kind === 'pdf' || !r.quotes);
+  && (r.drift >= MIN_DRIFT || !r.quotes);
 const furniture = changed.filter((r) => !worthReading(r));
 
 
@@ -416,6 +495,13 @@ console.log(
   `Summary: ${unchanged.length} unchanged, ${quoteGone.length} quote newly gone, ${readable.length} changed, ${furniture.length} furniture, `
   + `${unstable.length} unstable, ${opaque.length} opaque, ${fresh.length} new, ${unreachable.length} unreachable.`,
 );
+
+// How much of the matrix this run actually stood behind. Without it the summary
+// above reads the same whether the check verified two thousand quotes or two
+// hundred, and a source that quietly stops being readable looks like good news.
+const quotable = [...citedBy.values()].flat().filter((c) => c.quote && probesFor(c.quote).length).length;
+const verified = results.reduce((n, r) => n + (r.quotes ? r.quotes.checked - r.quotes.missing.length : 0), 0);
+console.log(`Coverage: ${verified} of ${quotable} quotable cells had their quote found on the live page (${(verified / quotable * 100).toFixed(0)}%).`);
 
 // ---------------------------------------------------------------------------
 // The work order.
