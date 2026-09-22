@@ -1,10 +1,13 @@
 name: legal sources
 
-# Watches the primary sources behind legalStatus.json for change, on the first
-# of every month. It reads no law and calls no model: 208 HTTP GETs and a hash
-# each. The only thing it decides is whether a page a cell rests on has been
-# edited since the baseline, so a human re-reads that one source instead of all
-# of them.
+# Watches the primary sources behind legalStatus.json, on the first of every
+# month, and hands what it finds to a Claude session to read.
+#
+# The check itself costs nothing: 208 HTTP GETs and a hash each, no model call.
+# It reads no law and decides nothing about one. What it decides is narrower and
+# cheap: has a page a cell rests on been edited, and is the sentence we quote
+# from it still there. Everything downstream only runs when the answer is yes,
+# so a quiet month costs a few minutes of CI and nothing else.
 #
 # Deliberately does not fail on unreachable sources. State legislature sites
 # time out and block datacentre IPs routinely, and a job that goes red for that
@@ -19,12 +22,16 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   issues: write
+  pull-requests: write
 
 jobs:
   check:
     runs-on: ubuntu-latest
+    outputs:
+      exit: ${{ steps.check.outputs.exit }}
+      has_key: ${{ steps.key.outputs.has_key }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -45,32 +52,141 @@ jobs:
           echo "exit=$?" >> "$GITHUB_OUTPUT"
           cat report.txt
 
-      - name: Open an issue when a source has changed
+      # Secrets cannot be read in a job-level `if`, so the presence of the key
+      # is turned into an output here and gates the read job below. Without a
+      # key the check still runs and still files its issue; only the reading
+      # half is skipped.
+      - name: Is a Claude key configured
+        id: key
+        run: echo "has_key=${{ secrets.ANTHROPIC_API_KEY != '' }}" >> "$GITHUB_OUTPUT"
+
+      - name: Keep the work order
         if: steps.check.outputs.exit == '1'
+        uses: actions/upload-artifact@v4
+        with:
+          name: legal-source-report
+          path: |
+            docs/legal-source-report.md
+            report.txt
+
+  # Reads only the sources the check flagged, decides each cell against the live
+  # page, and opens a pull request. Never runs on a quiet month, so the bill is
+  # a function of how often exotic pet law actually moves.
+  read:
+    needs: check
+    if: needs.check.outputs.exit == '1' && needs.check.outputs.has_key == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Rebuild the work order
+        run: node scripts/check-legal-sources.mjs || true
+
+      - name: Read the flagged sources
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: '--allowedTools "Read,Edit,Bash,WebFetch,WebSearch"'
+          prompt: |
+            Read docs/legal-source-report.md. It lists every primary source whose
+            page changed since the last check, and every cell in the legal matrix
+            that rests on each one, with the sentence that cell quotes.
+
+            Work only the sources that report lists. Do not re-read the rest of
+            the matrix, do not touch any other part of the site, and do not widen
+            this beyond the cells named.
+
+            For each flagged source: fetch the URL, find the section the cell
+            cites, and compare it against what the cell claims.
+
+            - The cell is still right: bump its verifiedOn in
+              src/lib/data/legalStatus.json to today and change nothing else.
+            - The cell is wrong: fix status, cite, quote and any note, then bump
+              verifiedOn.
+            - The quote was reworded or renumbered but the law is the same:
+              replace quote and cite with the current wording, bump verifiedOn.
+            - The page is gone, or now shows something unrelated: find the
+              current official page, update the source url, and say so.
+
+            Rules that matter more than finishing:
+
+            - Never write a status, cite or quote you have not read on the page.
+              If a source will not load, or the section cannot be found, leave
+              that cell exactly as it is and say so in the PR body. A cell left
+              alone is correct behavior here. A guessed cell is the one outcome
+              this whole job exists to prevent.
+            - Do not bump verifiedOn on a cell you could not verify.
+            - Quote the statute, do not paraphrase it into the quote field.
+            - No em dashes or en dashes anywhere, including the PR body.
+
+            When the edits are done, run:
+              node scripts/check-legal-sources.mjs --write
+            to refresh docs/legal-source-hashes.json, then open a pull request
+            against main from a branch named claude/legal-sources-<yyyy-mm>.
+
+            The PR body is a table: source, cell, what it said, what it says now,
+            and for anything you could not verify, the reason. Put the cells you
+            left alone at the top, not the bottom. Never push to main.
+
+  # Files the issue either way, so a month with a finding is visible even when
+  # the reading half is switched off or fails.
+  file:
+    needs: [check, read]
+    if: always() && needs.check.outputs.exit == '1'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download the work order
+        uses: actions/download-artifact@v4
+        with:
+          name: legal-source-report
+
+      - name: Open the issue
         uses: actions/github-script@v7
         with:
           script: |
             const fs = require('fs');
-            const report = fs.readFileSync('report.txt', 'utf8');
             const month = new Date().toISOString().slice(0, 7);
+            const read = ${{ toJSON(needs.read.result) }};
+            const hasKey = ${{ toJSON(needs.check.outputs.has_key) }} === 'true';
+
+            let order = '';
+            try { order = fs.readFileSync('docs/legal-source-report.md', 'utf8').trim(); } catch {}
+            const log = fs.readFileSync('report.txt', 'utf8').trim();
+
+            // GitHub caps an issue body at 65536 characters, and a list statute
+            // cited by fifty cells can approach that on its own. Drop the run
+            // log before the work order, since the work order is the part
+            // anyone acts on.
+            const LIMIT = 60000;
+            let body = [
+              read === 'success'
+                ? 'A Claude session has read the flagged sources and opened a pull request. Review that, not this. This issue is the receipt.'
+                : hasKey
+                  ? `The reading job did not complete (${read}). The work order below is intact, so this can be picked up by hand or by pointing a session at \`docs/legal-source-report.md\`.`
+                  : 'No `ANTHROPIC_API_KEY` is configured, so nothing read these automatically. The work order below is complete on its own.',
+              '',
+              'Nothing here means the law changed. It means a page the matrix rests on did, which is the cue to go and read that one page.',
+              '',
+              order,
+            ].join('\n');
+
+            if (body.length > LIMIT) {
+              body = `${body.slice(0, LIMIT)}\n\n...truncated. The full work order is the \`legal-source-report\` artifact on this run.`;
+            } else {
+              const withLog = `${body}\n\n<details><summary>Run log</summary>\n\n\`\`\`\n${log}\n\`\`\`\n\n</details>`;
+              if (withLog.length <= LIMIT) body = withLog;
+            }
+
             await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
               title: `Legal sources changed: ${month}`,
               labels: ['legal-matrix'],
-              body: [
-                'The monthly check found at least one primary source edited since the baseline.',
-                '',
-                'Nothing here means the law changed. It means the page changed, which is the',
-                'cue to re-read that source and decide. When a cell is confirmed still correct,',
-                'bump its `verifiedOn`; when it is not, fix the cell first.',
-                '',
-                'Refresh the baseline with `node scripts/check-legal-sources.mjs --write`',
-                'once the changes above have been dealt with, or the same sources report',
-                'again next month.',
-                '',
-                '```',
-                report.trim(),
-                '```',
-              ].join('\n'),
+              body,
             });

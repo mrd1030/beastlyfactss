@@ -368,41 +368,84 @@ per-slug and real, so reopening costs nothing but the writing.
 
 ## 6. The monthly legal source check
 
-Added 2026-09-22. `scripts/check-legal-sources.mjs`, run by
-`.github/workflows/legal-sources.yml` at 09:00 UTC on the first of each month.
+Added 2026-09-22, extended the same day to read what it finds.
+`scripts/check-legal-sources.mjs`, run by `.github/workflows/legal-sources.yml`
+at 09:00 UTC on the first of each month.
 
-**It reads no law and calls no model.** It fetches the 208 primary source URLs
-in `legalStatus.json`, normalizes away the furniture, hashes each one, and
-compares against `docs/legal-source-hashes.json`. A change means the page was
-edited, which is the cue to re-read that one source. It never means the law
-changed, and it never decides anything.
+### The two signals
 
-Cost is a few minutes of CI a month and nothing else. There is no API key and
-no model call anywhere in it.
+**The page changed.** All 208 primary source URLs in `legalStatus.json` are
+fetched, normalized to strip the furniture, and hashed against
+`docs/legal-source-hashes.json`. Weak on its own: a statute page can gain a
+banner without the law moving.
+
+**A quote we cite is gone.** Every cell carries the sentence it rests on. The
+check searches the fetched page for eight-word windows from that sentence, and
+reports the cell when none of them are there. This is the signal worth waking
+up for, and it costs nothing but a string search.
+
+Both are reported as transitions, never as states. A quote that was already
+unfindable when the baseline was written stays unfindable every month, and a
+checker that re-reports it every month is a checker nobody opens.
+
+Still no model call and no API key in the check itself. It is 208 HTTP GETs and
+a hash, a few minutes of CI a month.
 
 ### When it fires
 
-It opens an issue labelled `legal-matrix` listing the changed sources, the size
-of the change, and the cells that cite each one. Work those cells: re-read the
-source, fix the cell if it is wrong, bump `verifiedOn` if it is right, then run
-`node scripts/check-legal-sources.mjs --write` to refresh the baseline or the
-same sources report again next month.
+The check writes `docs/legal-source-report.md`: each flagged source paired with
+every cell resting on it and what each of those cells currently claims, so the
+page can be judged against our own words without first looking up twelve cells.
+
+That work order goes two places. It is the body of an issue labelled
+`legal-matrix`, and, when `ANTHROPIC_API_KEY` is set as a repository secret, it
+is handed to a Claude session that reads only the flagged sources, edits only
+the named cells, refreshes the baseline and opens a pull request. Without the
+secret the reading job is skipped and the issue arrives on its own, complete
+enough to hand to a session by pointing at the file.
+
+The session is instructed that leaving a cell alone is correct behavior when a
+source will not load or a section cannot be found, and that it must not bump
+`verifiedOn` on anything it could not verify. A guessed cell is the one outcome
+this whole job exists to prevent.
 
 ### What it does not do
 
-- It does not fail on unreachable sources. 30 of the 208 refuse a datacentre
-  fetch (19 return 503, 9 return 403, one 405, one 307). **None returns 404**,
+- It does not fail on unreachable sources. Around 30 of the 208 refuse a
+  datacentre fetch (mostly 503 and 403, one 405, one 307). **None returns 404**,
   so nothing has actually moved. A job that went red for a bot block would be
   muted inside two months.
 - It does not report a difference that will not reproduce. Anything differing
-  from the baseline is fetched a second time, and only a change that repeats is
-  reported. That was not optional: the first pass flagged 6 of 177 sources ten
-  minutes after the baseline was written, with no law having moved, and two
-  consecutive fetches of those pages were byte-identical. Confirm-on-retry took
-  it to 2, and refreshing the baseline against the settled state took it to 0.
+  from the baseline, by hash or by a missing quote, is fetched a second time,
+  and only a difference that repeats is reported. That was not optional: the
+  first pass flagged 6 of 177 sources ten minutes after the baseline was
+  written, with no law having moved, and two consecutive fetches of those pages
+  were byte-identical.
+- It does not report furniture. A page that moved less than 0.5% while every
+  cited quote still verifies, or a source no cell cites at all, is counted and
+  dropped rather than put in front of a reader.
+- It cannot check a PDF's quotes. 12 or so sources are PDFs or .docx, where the
+  fetched bytes are not words. Hash change is the only signal those give.
+- It cannot check an opaque page's quotes. 37 sources render their statute in
+  JavaScript, or sit behind a viewer, so the fetch returns a shell and every
+  quote goes missing at once. A source whose quotes ALL miss is classed opaque,
+  not changed, and never alarms.
 
-### The judgement it cannot make
+### Open: the 84-quote backlog
 
-A sub-1% size change is almost always furniture that slipped the filter. A
-larger one, or any change at all on a source only one or two cells cite, is
-worth opening. The report prints both numbers so that call is quick.
+The first quote-verification pass found 84 cells across 19 sources whose quoted
+sentence could not be found on the live page. They were recorded in the baseline
+so they do not alarm every month, which means they will otherwise sit there
+forever. Biggest clusters: `ri-250-40-05-3` (22 cells), `de-903` (9),
+`or-635-056-0060` (8), `az-r12-4-406` (7), `va-4vac15-30-40` (7),
+`ks-115-20-3` (5), `nv-nrs-503-597` (4), `wa-rcw-16-30` (4).
+
+Some share is the matcher rather than the matrix: a quote stitched from a table,
+or one accurate but transcribed loosely. Some share is real drift. Nobody has
+looked yet, and the two cannot be told apart without opening the pages.
+
+Worth a session of its own, source by source rather than cell by cell, since the
+19 sources are the unit of work and not the 84 cells. Not urgent: these are
+cells already published and already sourced, and a quote that has drifted is not
+the same as a status that is wrong.
+
