@@ -174,3 +174,85 @@ grassland at dusk, warm low light, burrow entrance visible behind. Shot at
 135mm, f/4. No people, no fences in focus, no text, no watermark. 3:2.
 **Check:** the nose is bare and leathery, the ears are small and rounded, and
 the animal is clearly not a koala.
+
+## Facts awaiting photos, 2026-09-21 run
+
+Five fact photos for the drafts parked in `NEEDS_IMAGE.md`. **Fact photos are
+not cropped**: the lightbox renders them with `object-contain` and shows the
+whole frame, so the ratio below is what suits the subject, not a target to crop
+to. Install at whatever size it arrives, re-encoded through mozjpeg at 80, never
+enlarged.
+
+Each of these needs its own photo. No reuse from a Beastfile, and no sharing
+between facts.
+
+**Hoatzin, "Wing Claws at Birth"**
+
+A downy hoatzin chick gripping a thin branch above water with all four limbs,
+the two clawed digits on the leading edge of each wing hooked into the bark and
+clearly visible. Scruffy dark brown natal down, oversized feet, bare bluish skin
+around the eye. Not a pheasant or turaco chick: the wing claws are the whole
+point and must read as claws on the wing, not as feet. Flooded Amazon riverside
+forest behind, muddy brown water, humid overcast light. Shot at 300mm, f/4, the
+chick sharp and the water fully soft. No nest visible in focus, no hands, no
+people, no text, no watermark. Portrait suits it.
+**Check:** the claws are on the wing and countable, and the bird reads as a
+chick rather than a small adult.
+
+**Norwegian Lundehund, "Six Toed Cliff Climber"**
+
+A Norwegian Lundehund standing on wet coastal rock with one front paw lifted and
+angled so the extra toes are visible on the pad. Small spitz build, wedge head,
+upright triangular ears, reddish fawn coat with black-tipped guard hairs and
+white on the chest and feet. Not a Shiba Inu and not a Norwegian Elkhound: the
+Lundehund is smaller and lighter than the elkhound and is fawn rather than grey,
+with a narrower muzzle than a Shiba. Steep Norwegian sea cliff and grey North
+Atlantic behind, overcast maritime light, cold desaturated palette. Shot at
+135mm, f/4. No handler, no lead, no collar, no hands, no text, no watermark.
+Portrait or 3:2, whichever the frame wants.
+**Check:** the raised paw shows more than the usual four weight-bearing toes,
+and the dog is fawn and light-framed rather than grey and heavy.
+
+**Numbat, "The Termite Marathon"**
+
+A numbat at a fallen log with its narrow tongue extended into a crack in the
+wood, body low and tail raised. Rusty red-brown forequarters shading darker to
+the rump, four to eleven white bars across the back and rump, a black stripe
+running through the eye with white above and below it, pointed snout, bushy
+tail carried up. Not a chipmunk and not an eastern striped squirrel: the stripes
+run across the back rather than down the length of the body, and the snout is
+far longer and more tapered. Western Australian eucalypt woodland, dry leaf
+litter, dappled midday sun. Shot at 300mm, f/5.6. No burrow props, no hands, no
+people, no text, no watermark. Landscape 3:2 suits the extended tongue.
+**Check:** the stripes are transverse across the rump, the eye stripe is
+present, and the tongue is out.
+
+**Yeti Crab, "Farms On Its Own Arms"**
+
+A yeti crab on dark basalt near a deep sea vent with both chelipeds raised and
+held out, the dense pale setae covering them catching the light like matted
+fur. Ghost-white to pale cream body, reduced eyes with no pigment, stocky legs
+also bristled. Not a snow crab or a hairy crab: the bristles are a thick coat
+over the claws rather than sparse hairs, and the animal has no color and no
+functional eyes. Deep sea floor in absolute darkness lit only by a submersible
+lamp from the upper left, shimmer of vent fluid behind, black background falling
+to nothing. Shot at 100mm macro, f/8, harsh directional light with deep shadow.
+No submersible visible, no manipulator arm, no instruments, no text, no
+watermark. Landscape 3:2.
+**Check:** the setae read as a dense coat on the claws, the animal is colorless,
+and the only light source is clearly artificial.
+
+**Marine Iguana, "Sneezes Out Salt"**
+
+A marine iguana on black volcanic rock in the instant of a salt sneeze, a fine
+white spray leaving the nostrils and a crust of dried salt already on the snout
+and the top of the head. Dark charcoal to black scaled body, blunt squared
+snout, a row of short dorsal spines from neck to tail, flattened tail, long
+claws gripping the rock. Not a green iguana and not a Galapagos land iguana: the
+marine iguana is black rather than green or yellow, with a much blunter face and
+a laterally flattened tail. Galapagos shoreline, wet black lava, breaking surf
+behind, hard equatorial sun. Shot at 200mm, f/5.6, fast enough to hold the
+spray. No people, no boardwalk, no hands, no text, no watermark. Landscape 3:2.
+**Check:** the spray is visible and comes from the nostrils, salt crust is on
+the snout, and the animal is black with a blunt snout rather than a green
+iguana.

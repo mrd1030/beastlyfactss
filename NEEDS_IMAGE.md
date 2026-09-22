@@ -43,7 +43,10 @@ feeding-guide heroes on 2026-09-09.
 
 ## 2026-09-21 run: 5 facts drafted, awaiting images
 
-Ready for the site owner to generate photos and add to facts.js.
+Ready for the site owner to generate photos and add to facts.js. Full prompts
+are in `IMAGE_PROMPTS.md` under "Facts awaiting photos, 2026-09-21 run"; the
+visual hooks below are the drafting notes they were written from. Promotion
+steps are in `BEASTLYPEDIA_FACT_GAPS.md`.
 
 1. **Hoatzin** (Birds) - Wing Claws at Birth. Hoatzin chicks hatch with two working claws on each wing, letting them climb back to the nest if they fall or dive into the water below to escape a predator. The claws disappear as the bird matures. Adults are nicknamed the stinkbird because they digest leaves through slow bacterial fermentation in an oversized crop, the same trick a cow's stomach uses, and it takes up to 45 hours. Visual hook: a fuzzy hoatzin chick clinging to a branch with visible claws on its wingtips, muddy river background.
 2. **Norwegian Lundehund** (Dogs & Cats) - Six Toed Cliff Climber. The Norwegian Lundehund has at least six toes on each foot, extra joints in its shoulders, and neck vertebrae flexible enough to bend its head backward until it touches its own spine. The breed evolved these features to squeeze into narrow crevices and climb steep coastal cliffs hunting puffins. Visual hook: a small Lundehund dog on a rocky sea cliff with its front paw raised showing extra toes, puffins nearby.
