@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
@@ -11,6 +11,8 @@ import { resolveEventDate, getEventAnimalContent } from '@/lib/animalEvent';
 // would land in this page's chunk for nothing.
 import beastfileTeasers from '@/lib/generated/beastlypedia-teaser.json';
 import CrossLinkCta from '@/components/shared/CrossLinkCta';
+import buildStamp from '@/lib/generated/build-stamp.json';
+import { siteToday } from '@/lib/utils/date';
 
 // Membership is the `animalDay` frontmatter flag, not a category, for the same
 // reason Fact Files uses one: a category would make this page a mirror of the
@@ -84,6 +86,51 @@ const FLOATING_RULES = {
 
 const slugOf = (post) => post?.slug?.current || post?.slug || '';
 
+// Shown inline before the rest goes behind an expander. Four, because the
+// distribution decides it: 21 of the 32 days carry one to three links and
+// would gain nothing but a click from being collapsed. Only World Oceans Day
+// (17) and World Wildlife Day (7) are ever over the line.
+const INLINE_LINKS = 4;
+
+// The Beastfiles and Fact Files for one day's animals, as a single run of
+// links. Collapsed content is still crawled and still passes link equity, so
+// the expander costs nothing in search and is purely about not handing someone
+// a wall of seventeen ocean links.
+function AnimalLinks({ files, articles }) {
+  const [open, setOpen] = useState(false);
+  const items = useMemo(
+    () => [
+      ...files.map((f) => ({ key: `bf-${f.id}`, to: `/beastlypedia/${f.id}/`, label: f.name })),
+      ...articles.map((a) => ({ key: slugOf(a), to: `/blog/${slugOf(a)}/`, label: a.title })),
+    ],
+    [files, articles],
+  );
+  if (!items.length) return null;
+
+  const shown = open ? items : items.slice(0, INLINE_LINKS);
+  const hidden = items.length - shown.length;
+
+  return (
+    <p className="mt-1.5 font-body text-xs leading-relaxed text-muted-foreground">
+      {shown.map((item, i) => (
+        <React.Fragment key={item.key}>
+          {i > 0 && <span className="mx-1.5 text-muted-foreground/40" aria-hidden="true">&middot;</span>}
+          <Link to={item.to} className="text-secondary hover:underline">{item.label}</Link>
+        </React.Fragment>
+      ))}
+      {hidden > 0 && (
+        <button
+          type="button"
+          onClick={() => setOpen(true)}
+          className="ml-1.5 font-semibold text-muted-foreground underline underline-offset-2 hover:text-foreground"
+        >
+          {`+${hidden} more`}
+        </button>
+      )}
+    </p>
+  );
+}
+
 const ordinal = (n) => {
   const s = ['th', 'st', 'nd', 'rd'];
   const v = n % 100;
@@ -91,14 +138,20 @@ const ordinal = (n) => {
 };
 
 export default function AnimalDays() {
-  // Rendered for the current year, and prerendered against the build year.
-  // A calendar that silently showed last year's resolved dates would be the
-  // exact failure this page is built to correct, so a dormant event (one with
-  // no `ranges` entry for this year) renders its rule and no number instead of
-  // guessing.
-  const year = new Date().getFullYear();
+  // Today starts as the build date so the prerendered HTML and the first client
+  // render agree, then upgrades to the real site date after mount. Reading the
+  // live clock during render is the hydration mismatch CritterDigestPreview
+  // documents, and "what is next" is exactly the kind of value that differs
+  // between a capture and a visit days later.
+  const [today, setToday] = useState(buildStamp.generatedAt);
+  useEffect(() => {
+    if (window.__IS_PRERENDER__) return;
+    setToday(siteToday());
+  }, []);
 
-  const { byMonth, dated, floating } = useMemo(() => {
+  const year = Number(today.slice(0, 4));
+
+  const { byMonth, dated, floating, upcoming } = useMemo(() => {
     const articleFor = new Map();
     for (const post of mdxPosts) {
       if (post.animalDay) articleFor.set(post.animalDay, post);
@@ -127,12 +180,30 @@ export default function AnimalDays() {
       grouped.get(key).push(row);
     }
 
+    // What is next, from today, wrapping into next year when December runs out.
+    // A day resolves for next year only if its rule does: a floating event with
+    // no `ranges` entry for the following year is left out rather than guessed
+    // at, which is the same refusal the rest of the page makes.
+    const stamp = (y, d) => `${y}-${String(d.month).padStart(2, '0')}-${String(d.day).padStart(2, '0')}`;
+    const ahead = withDate
+      .filter((r) => stamp(year, r.date) >= today)
+      .map((r) => ({ row: r, on: stamp(year, r.date), year }));
+    const nextYear = ANIMAL_EVENTS
+      .map((event) => ({ event, date: resolveEventDate(event, year + 1) }))
+      .filter((r) => r.date)
+      .map(({ event, date }) => {
+        const row = rows.find((x) => x.event.id === event.id);
+        return { row: { ...row, date }, on: stamp(year + 1, date), year: year + 1 };
+      })
+      .sort((a, b) => a.on.localeCompare(b.on));
+
     return {
       byMonth: [...grouped.entries()].sort((a, b) => a[0] - b[0]),
       dated: withDate,
       floating: rows.filter((r) => r.rule),
+      upcoming: [...ahead, ...nextYear].slice(0, 3),
     };
-  }, [year]);
+  }, [year, today]);
 
   const pageTitle = `Animal Awareness Days: The ${year} Calendar | Beastly Facts`;
   const pageDescription =
@@ -230,6 +301,33 @@ export default function AnimalDays() {
           </div>
         </motion.div>
 
+        {upcoming.length > 0 && (
+          <section className="mb-8 rounded-xl border border-secondary/30 bg-secondary/5 p-5">
+            <h2 className="mb-3 font-display text-lg font-bold text-foreground">Next up</h2>
+            <ul className="space-y-3">
+              {upcoming.map(({ row, on, year: onYear }) => (
+                <li key={on + row.event.id} className="flex flex-wrap items-baseline gap-x-2 font-body text-sm">
+                  <span aria-hidden="true">{row.event.emoji}</span>
+                  <span className="font-semibold text-foreground">{row.event.name}</span>
+                  <span className="text-muted-foreground">
+                    {`${ordinal(row.date.day)} ${MONTHS[row.date.month - 1]}`}
+                    {onYear !== year ? ` ${onYear}` : ''}
+                  </span>
+                  {row.article && (
+                    <Link
+                      to={`/blog/${row.article.slug.current}/`}
+                      className="inline-flex items-center gap-1 font-semibold text-secondary hover:underline"
+                    >
+                      {row.article.title}
+                      <ArrowRight className="h-3 w-3" />
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
         {/* The three that move, first, because it is the thing the rest of the
             internet gets wrong and the reason this page exists. */}
         <section className="mb-10 rounded-xl border border-border bg-card p-5">
@@ -298,27 +396,7 @@ export default function AnimalDays() {
                           <ArrowRight className="h-3 w-3" />
                         </Link>
                       )}
-                      {(row.files.length > 0 || row.articles.length > 0) && (
-                        <p className="mt-1.5 font-body text-xs leading-relaxed text-muted-foreground">
-                          {[
-                            ...row.files.map((f) => (
-                              <Link key={`bf-${f.id}`} to={`/beastlypedia/${f.id}/`} className="text-secondary hover:underline">
-                                {f.name}
-                              </Link>
-                            )),
-                            ...row.articles.map((a) => (
-                              <Link key={slugOf(a)} to={`/blog/${slugOf(a)}/`} className="text-secondary hover:underline">
-                                {a.title}
-                              </Link>
-                            )),
-                          ].map((node, i) => (
-                            <React.Fragment key={node.key}>
-                              {i > 0 && <span className="mx-1.5 text-muted-foreground/40" aria-hidden="true">&middot;</span>}
-                              {node}
-                            </React.Fragment>
-                          ))}
-                        </p>
-                      )}
+                      <AnimalLinks files={row.files} articles={row.articles} />
                     </div>
                   </li>
                 ))}

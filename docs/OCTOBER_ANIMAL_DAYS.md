@@ -173,15 +173,40 @@ catalogue with a date on it.
 | International Cat Day | see below |
 | World Animal Day | `animals: []` by design; it is every animal, so it matches none |
 
-### The cat gap, worth a decision
+### The cat gap, decided 2026-09-22
 
-`cats-invented-the-meow-for-humans` and
-`cats-always-land-on-their-feet-not-always-unhurt` are exactly what this list
-wants: about the animal, not husbandry. They carry neither `factFile` nor the
-`myth`/`truth` pair, so nothing on the site treats them as Fact Files and the
-hub cannot see them. Tagging them means writing a myth and a truth for each,
-which also puts them on `/fact-files/`. That is probably right, but it changes
-another page, so it is a decision rather than a fix.
+Both articles were read. They are Fact Files in substance; only one of them is
+ready to be one.
+
+**`cats-invented-the-meow-for-humans` is promoted.** It carries four real
+citations, a `<KeyTakeaway>`, and the same shape as the rhino keratin file. It
+now has `factFile`, `animal: "Cat"`, and a myth/truth pair, and its plain
+`## Sources` list became a `<Sources>` block with three verified DOIs (Nicastro
+2004, Nicastro and Owren 2003, McComb et al. 2009). The Bradshaw book reference
+was dropped rather than left as an unlinked line: the three papers carry every
+specific claim, and an unlinked line is exactly what `countSources` was written
+to stop counting. Two body paragraphs that sat below the old Sources heading
+moved above it, which is where every other Fact File puts them.
+
+The APA DOIs return 403 to a scripted request. That is a bot block, not a dead
+link, and `check-source-links.mjs` already separates the two.
+
+**`cats-always-land-on-their-feet-not-always-unhurt` is not promoted.** Its
+source block has one real citation (Whitney and Mehlhaff 1987) and two lines
+that name a body of literature rather than a source: "Feline vestibular and
+skeletal anatomy references" and "Feline developmental literature on the
+emergence of the righting reflex". Those are precisely the placeholder lines
+`countSources` refuses to count, so the article scores one source and would
+land on `/fact-files/` next to files carrying three to seven. It needs real
+sources found for the clavicle anatomy and the kitten developmental timeline
+before it can be tagged. That is an article job, not a tagging job, and it is
+the only thing standing between it and promotion.
+
+One rejected shortcut, recorded so nobody retries it: the `Fun Facts` tag looks
+like it would widen the hub's rule cheaply, but it sits on
+`why-rabbits-need-unlimited-hay`, `why-your-dog-needs-daily-exercise` and
+`why-bearded-dragons-need-uvb-lighting` as well, so it lets husbandry straight
+back in.
 
 ### Two matcher bugs found and fixed
 
