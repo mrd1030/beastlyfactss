@@ -398,11 +398,16 @@ every cell resting on it and what each of those cells currently claims, so the
 page can be judged against our own words without first looking up twelve cells.
 
 That work order goes two places. It is the body of an issue labelled
-`legal-matrix`, and, when `ANTHROPIC_API_KEY` is set as a repository secret, it
-is handed to a Claude session that reads only the flagged sources, edits only
-the named cells, refreshes the baseline and opens a pull request. Without the
-secret the reading job is skipped and the issue arrives on its own, complete
-enough to hand to a session by pointing at the file.
+`legal-matrix`, and, when `CLAUDE_CODE_OAUTH_TOKEN` is set as a repository
+secret, it is handed to a Claude session that reads only the flagged sources,
+edits only the named cells, refreshes the baseline and opens a pull request.
+Without the secret the reading job is skipped and the issue arrives on its own,
+complete enough to hand to a session by pointing at the file.
+
+**Not set yet.** The token comes from `claude setup-token` in the CLI, which
+bills against the subscription rather than opening a pay-as-you-go API balance.
+Until it is set, the check runs and files its issue exactly as before and the
+reading job skips.
 
 The session is instructed that leaving a cell alone is correct behavior when a
 source will not load or a section cannot be found, and that it must not bump

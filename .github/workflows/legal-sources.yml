@@ -52,13 +52,17 @@ jobs:
           echo "exit=$?" >> "$GITHUB_OUTPUT"
           cat report.txt
 
-      # Secrets cannot be read in a job-level `if`, so the presence of the key
-      # is turned into an output here and gates the read job below. Without a
-      # key the check still runs and still files its issue; only the reading
-      # half is skipped.
-      - name: Is a Claude key configured
+      # Secrets cannot be read in a job-level `if`, so the presence of the
+      # token is turned into an output here and gates the read job below.
+      # Without it the check still runs and still files its issue; only the
+      # reading half is skipped.
+      #
+      # This is an OAuth token from `claude setup-token`, not an API key, so it
+      # bills against the Claude subscription rather than opening a second
+      # pay-as-you-go balance.
+      - name: Is a Claude token configured
         id: key
-        run: echo "has_key=${{ secrets.ANTHROPIC_API_KEY != '' }}" >> "$GITHUB_OUTPUT"
+        run: echo "has_key=${{ secrets.CLAUDE_CODE_OAUTH_TOKEN != '' }}" >> "$GITHUB_OUTPUT"
 
       - name: Keep the work order
         if: steps.check.outputs.exit == '1'
@@ -91,7 +95,7 @@ jobs:
       - name: Read the flagged sources
         uses: anthropics/claude-code-action@v1
         with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           claude_args: '--allowedTools "Read,Edit,Bash,WebFetch,WebSearch"'
           prompt: |
             Read docs/legal-source-report.md. It lists every primary source whose
@@ -169,7 +173,7 @@ jobs:
                 ? 'A Claude session has read the flagged sources and opened a pull request. Review that, not this. This issue is the receipt.'
                 : hasKey
                   ? `The reading job did not complete (${read}). The work order below is intact, so this can be picked up by hand or by pointing a session at \`docs/legal-source-report.md\`.`
-                  : 'No `ANTHROPIC_API_KEY` is configured, so nothing read these automatically. The work order below is complete on its own.',
+                  : 'No `CLAUDE_CODE_OAUTH_TOKEN` is configured, so nothing read these automatically. The work order below is complete on its own.',
               '',
               'Nothing here means the law changed. It means a page the matrix rests on did, which is the cue to go and read that one page.',
               '',
