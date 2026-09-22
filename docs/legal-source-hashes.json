@@ -226,8 +226,8 @@
       "url": "https://www.legis.iowa.gov/docs/code/481A.pdf"
     },
     "ky-301-2-082": {
-      "hash": "17aca3701dd7e9186ae4d085ee2b6378",
-      "length": 71087,
+      "hash": "00000000000000000000000000000000",
+      "length": 35543,
       "kind": "html",
       "url": "https://apps.legislature.ky.gov/law/kar/titles/301/002/082/",
       "quotesMissing": [
@@ -299,10 +299,7 @@
       "hash": "feabf5c1dce403e602e341d04db843b6",
       "length": 7274,
       "kind": "html",
-      "url": "https://www.scstatehouse.gov/code/t50c016.php",
-      "quotesMissing": [
-        "quaker-parakeet/SC"
-      ]
+      "url": "https://www.scstatehouse.gov/code/t50c016.php"
     },
     "mt-87-5-7": {
       "hash": "599771dcb29974187186f7cb08b4a9ae",
