@@ -2,22 +2,30 @@
   "generatedAt": "2026-09-22",
   "sources": {
     "ca-671": {
-      "hash": "7b6157465e481b77841b8ba0d52a7792",
-      "length": 861454,
+      "hash": "b0b901206e951bb540735473b8c82a0b",
+      "length": 185740,
       "kind": "pdf",
       "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=28427"
     },
     "hi-4-71-6": {
-      "hash": "28e77564eb503c79e90dfbb50606e699",
-      "length": 74418,
+      "hash": "93b0f0be89a8bbbddcdb3ff1deecb148",
+      "length": 13357,
       "kind": "pdf",
-      "url": "https://dab.hawaii.gov/pi/files/2012/12/AR-71P.pdf"
+      "url": "https://dab.hawaii.gov/pi/files/2012/12/AR-71P.pdf",
+      "quotesMissing": [
+        "hedgehog/HI",
+        "veiled-chameleon/HI"
+      ]
     },
     "hi-4-71-6-5": {
-      "hash": "cef10f49eb3386082ea94e82628b87ea",
-      "length": 218050,
+      "hash": "f5ed79391b284567c729e634978b37de",
+      "length": 48598,
       "kind": "pdf",
-      "url": "https://dab.hawaii.gov/pi/files/2012/12/AR-71RA.pdf"
+      "url": "https://dab.hawaii.gov/pi/files/2012/12/AR-71RA.pdf",
+      "quotesMissing": [
+        "gerbil/HI",
+        "bearded-dragon/HI"
+      ]
     },
     "dc-8-1808": {
       "hash": "c6ca3642fac9d7bf61ba734981a4d21d",
@@ -31,22 +39,36 @@
       ]
     },
     "nyc-161-01": {
-      "hash": "12a9a89d077f01a8e47e6ad2e81749b9",
-      "length": 240480,
+      "hash": "f587c5f1288901c73519f604476f81ff",
+      "length": 58616,
       "kind": "pdf",
       "url": "https://www.nyc.gov/assets/doh/downloads/pdf/about/healthcode/health-code-article161.pdf"
     },
     "nj-7-25-4-4": {
-      "hash": "359dbb6008f57589888c87542ad1c061",
-      "length": 125581,
+      "hash": "ffc8b7d5687105bada236891c4f1ab3e",
+      "length": 2478,
       "kind": "pdf",
       "url": "https://nj.gov/dep/fgw/pdf/xotic_exemptspp.pdf"
     },
     "me-unrestricted": {
-      "hash": "a83d1b8df97674a8f04165815277a17b",
-      "length": 708418,
+      "hash": "4187ac683fbc0de44d3e8698e21789aa",
+      "length": 32073,
       "kind": "pdf",
-      "url": "https://www.maine.gov/ifw/docs/unrestrictedspecies.pdf"
+      "url": "https://www.maine.gov/ifw/docs/unrestrictedspecies.pdf",
+      "quotesMissing": [
+        "hedgehog/ME",
+        "ferret/ME",
+        "sugar-glider/ME",
+        "hamster/ME",
+        "bengal-cat/ME",
+        "argentine-tegu/ME",
+        "fennec-fox/ME",
+        "serval/ME",
+        "guinea-pig/ME",
+        "tokay-gecko/ME",
+        "hognose-snake/ME",
+        "giant-millipede/ME"
+      ]
     },
     "wi-169": {
       "hash": "b8a4b67ab36a535d3590a62985992443",
@@ -67,14 +89,14 @@
       "url": "https://www.animallaw.info/statute/ct-exotic-pets-%C2%A7-26-40a-possession-potentially-dangerous-animal-chapter-490-fisheries-and"
     },
     "ma-131-77": {
-      "hash": "4a6f11533d52a13838ec277f7bba0ee9",
+      "hash": "09f761d6de0ef2b4781db668d19a256e",
       "length": 7855,
       "kind": "html",
       "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXIX/Chapter131/Section77"
     },
     "co-w11": {
-      "hash": "bcead2639953b0246d9b105993e00911",
-      "length": 397174,
+      "hash": "6a53d458b757161a37560ca18b0a06e8",
+      "length": 65997,
       "kind": "pdf",
       "url": "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12521&fileName=2+CCR+406-11"
     },
@@ -196,32 +218,42 @@
       "url": "https://www.animallaw.info/statute/tn-exotic-pet-part-4-exotic-animals"
     },
     "ar-unrestricted": {
-      "hash": "39e5205d620e6e8b70a2a1be6aa1aa4a",
-      "length": 1074307,
+      "hash": "c80d43e24dba0fbf2e9999a75003eded",
+      "length": 958180,
       "kind": "pdf",
-      "url": "https://agfc-omnibus.s3.amazonaws.com/eregs/regulation_pdfs/large/agfc_regulations_codebook_large.pdf"
+      "url": "https://agfc-omnibus.s3.amazonaws.com/eregs/regulation_pdfs/large/agfc_regulations_codebook_large.pdf",
+      "quotesMissing": [
+        "hedgehog/AR",
+        "hamster/AR",
+        "russian-tortoise/AR",
+        "sulcata-tortoise/AR",
+        "red-footed-tortoise/AR"
+      ]
     },
     "id-020427": {
-      "hash": "f967a073eff5d8d082e1f1bcd3bd1136",
-      "length": 378926,
+      "hash": "7e8a659f8697b6e71c15b2cdef29b8fd",
+      "length": 23522,
       "kind": "pdf",
-      "url": "https://adminrules.idaho.gov/rules/current/02/020427.pdf"
+      "url": "https://adminrules.idaho.gov/rules/current/02/020427.pdf",
+      "quotesMissing": [
+        "bengal-cat/ID"
+      ]
     },
     "id-130110": {
-      "hash": "a9fd8ed558308bdc62973de33c54225e",
-      "length": 415657,
+      "hash": "3558883ca71ada858baaa683dd604b62",
+      "length": 42968,
       "kind": "pdf",
       "url": "https://adminrules.idaho.gov/rules/current/13/130110.pdf"
     },
     "ia-717F": {
-      "hash": "c932279801d5589b70c4848ec3910bd3",
-      "length": 86947,
+      "hash": "d73e441b76cee9081794abf29c06f5a2",
+      "length": 27140,
       "kind": "pdf",
       "url": "https://www.legis.iowa.gov/docs/code/717F.pdf"
     },
     "ia-481A": {
-      "hash": "5e740f5785ed045a589d8128798fb98b",
-      "length": 299899,
+      "hash": "8d0c79128092fa86b850dab56ef20a87",
+      "length": 140336,
       "kind": "pdf",
       "url": "https://www.legis.iowa.gov/docs/code/481A.pdf"
     },
@@ -278,8 +310,8 @@
       "url": "https://revisor.mo.gov/main/OneSection.aspx?section=578.023"
     },
     "mo-3csr10-9": {
-      "hash": "b4073ff678bfc25aef7cec69ccbd4eed",
-      "length": 447620,
+      "hash": "4785e5e2dd7a361240b7f562bafd5905",
+      "length": 176004,
       "kind": "pdf",
       "url": "https://www.sos.mo.gov/adrules/csr/current/3csr/3c10-9.pdf"
     },
@@ -311,8 +343,8 @@
       "url": "https://mca.legmt.gov/bills/mca/title_0870/chapter_0050/part_0070/section_0050/0870-0050-0070-0050.html"
     },
     "wv-19-34": {
-      "hash": "26f8c06184004247f6eef54b299ad8c5",
-      "length": 10697,
+      "hash": "ca487c60ed3119d1a0e6ac80cc6273a2",
+      "length": 10698,
       "kind": "html",
       "url": "https://code.wvlegislature.gov/19-34/"
     },
@@ -329,8 +361,8 @@
       "url": "https://sdlegislature.gov/Rules/Administrative/12:68:18"
     },
     "al-220-2-26": {
-      "hash": "345cea622ca41e66dd0977cfb6a70e11",
-      "length": 25066,
+      "hash": "ef185704eeb4fc6b9d78174a80e56f38",
+      "length": 5301,
       "kind": "pdf",
       "url": "https://admincode.legislature.state.al.us/api/rule/220-2-.26"
     },
@@ -341,39 +373,39 @@
       "url": "https://iar.iga.in.gov/code/current/312/9"
     },
     "nd-36-01": {
-      "hash": "bf334ea843e27439b6fd9f9b4d69bd2d",
-      "length": 118196,
+      "hash": "b9a31eeb889aa9e48cbd873c84518de1",
+      "length": 31378,
       "kind": "pdf",
       "url": "https://ndlegis.gov/cencode/t36c01.pdf"
     },
     "nd-48-1": {
-      "hash": "b73cfdd10dd0b13069b7c703d7846cb5",
-      "length": 42445,
+      "hash": "9d297ac1cde9d2f745c15c3494f6f857",
+      "length": 759,
       "kind": "pdf",
       "url": "https://ndlegis.gov/information/acdata/pdf/48.1-13-02.pdf"
     },
     "wy-ch10": {
-      "hash": "ff965b5310d31b4b9687cf302bf8f0a5",
-      "length": 278997,
+      "hash": "086fa5599daddd849ed5839dd1b4049c",
+      "length": 64864,
       "kind": "pdf",
       "url": "https://wgfd.wyo.gov/sites/default/files/content/PDF/Regulations/CH-10-FINAL-CLEAN-SIGNED-03-10-2023-3.pdf"
     },
     "wy-ch69": {
-      "hash": "0f83c5b7db50d8f9d3fde83c4553eb9d",
-      "length": 98191,
+      "hash": "ccc0dc5d66c06321c7693e0c93ae5035",
+      "length": 39224,
       "kind": "pdf",
       "url": "https://wgfd.wyo.gov/sites/default/files/content/PDF/Regulations/CH-69-06-27-2022-6-CLEAN.pdf"
     },
     "la-76-v-115": {
-      "hash": "da4102dc13c779d6b725fa46ada25b16",
-      "length": 577845,
-      "kind": "html",
+      "hash": "65b9a58c2c9ab1add70bfa358c266db3",
+      "length": 1584024,
+      "kind": "docx",
       "url": "https://www.doa.la.gov/media/ln5kb5vu/76.docx"
     },
     "la-76-xv-101": {
-      "hash": "da4102dc13c779d6b725fa46ada25b16",
-      "length": 577845,
-      "kind": "html",
+      "hash": "65b9a58c2c9ab1add70bfa358c266db3",
+      "length": 1584024,
+      "kind": "docx",
       "url": "https://www.doa.la.gov/media/ln5kb5vu/76.docx"
     },
     "ok-800-25-25-3": {
@@ -388,10 +420,16 @@
       ]
     },
     "hi-conditional": {
-      "hash": "38b42da78d0e1635f7f8b3f2235b5dee",
-      "length": 627055,
+      "hash": "3185573fd3df72238a55d89666075bd1",
+      "length": 91556,
       "kind": "pdf",
-      "url": "https://dab.hawaii.gov/pi/files/2012/12/AR-71C.pdf"
+      "url": "https://dab.hawaii.gov/pi/files/2012/12/AR-71C.pdf",
+      "quotesMissing": [
+        "box-turtle/HI",
+        "red-eared-slider/HI",
+        "cockatoo/HI",
+        "red-footed-tortoise/HI"
+      ]
     },
     "nc-153a-131": {
       "hash": "795faab98f8550a65e678bf56bd0f1ac",
@@ -442,8 +480,8 @@
       "url": "https://www.pacodeandbulletin.gov/Display/pacode?file=%2Fsecure%2Fpacode%2Fdata%2F058%2Fchapter147%2FsubchapNtoc.html&d=reduce"
     },
     "sc-act177": {
-      "hash": "776be8acafe007712809b05f78208059",
-      "length": 328267,
+      "hash": "5102da11aa41bb66e401f3162cfdab1c",
+      "length": 317732,
       "kind": "pdf",
       "url": "https://www.scstatehouse.gov/coderegs/Chapter%20123.pdf"
     },
@@ -464,32 +502,32 @@
       ]
     },
     "az-co43-reptile-regs": {
-      "hash": "73fe58f1b8d8e06cc15ef3ccfcaff19b",
-      "length": 222239,
+      "hash": "bf2f9468f9b2914fbd688a8dc76e839d",
+      "length": 41461,
       "kind": "pdf",
       "url": "https://azgfd-portal-wordpress-pantheon.s3.us-west-2.amazonaws.com/wp-content/uploads/2025/11/05144900/2026-2030-Reptile-and-Amphibian-Regulations.pdf"
     },
     "al-native-nongame": {
-      "hash": "0d92b59d2a3e14aaebc30fb3a80c6e70",
-      "length": 35361,
+      "hash": "0e98608f12c56fe2d0e577cf677f1ed9",
+      "length": 7356,
       "kind": "pdf",
       "url": "https://admincode.legislature.state.al.us/api/rule/220-2-.92"
     },
     "az-license-take": {
-      "hash": "6ef576406f19008698cac592863fa314",
-      "length": 907651,
+      "hash": "9f93a5ec421a6267d36ddc2984c49070",
+      "length": 779070,
       "kind": "pdf",
       "url": "https://s3.amazonaws.com/azgfd-portal-wordpress/PortalImages/files/Agency/12-04commissionrules.pdf"
     },
     "ca-5-60": {
-      "hash": "20edc41b0d6c8f4896e42c65ca1bdcf8",
-      "length": 17963444,
+      "hash": "ad68436cfa17ca29da5c783566f3149d",
+      "length": 280236,
       "kind": "pdf",
       "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline="
     },
     "ct-26-55-6": {
-      "hash": "35620153dae8df90c49fdb02700f52f9",
-      "length": 89767,
+      "hash": "240fdebb37d1d32059132aeb5c70d0b2",
+      "length": 28247,
       "kind": "pdf",
       "url": "https://eregulations.ct.gov/eRegsPortal/Browse/getDocument?guid=%7B6B566428-3A6A-452A-9E3A-7AF89D95D371%7D"
     },
@@ -506,8 +544,8 @@
       "url": "https://regs.maryland.gov/us/md/exec/comar/08.03.11/index.full.html"
     },
     "nj-7-25-4-8": {
-      "hash": "2145b0e58e752c756f4e3e45503fbb80",
-      "length": 149154,
+      "hash": "a9502d8cb33da9a1cd982a528469152e",
+      "length": 3249,
       "kind": "pdf",
       "url": "https://dep.nj.gov/wp-content/uploads/njfw/restricted-species-potentially-dangerous-species-and-endangered-species.pdf"
     },
@@ -579,14 +617,14 @@
       "url": "https://codes.ohio.gov/ohio-revised-code/chapter-1531"
     },
     "hi-4-71-6-prohibited": {
-      "hash": "f22420fd9dc5093279208610f762826c",
-      "length": 258556,
+      "hash": "b921a9244858fbaf0827d8a0e2f3f4b6",
+      "length": 13364,
       "kind": "pdf",
       "url": "https://dab.hawaii.gov/wp-content/uploads/2019/08/List-of-Prohibited-Animals.pdf"
     },
     "ny-dangerous-animal": {
-      "hash": "70b4ec4fdd7a5c2c1ac84b8d8a67ba11",
-      "length": 34702,
+      "hash": "5c9a14ad7dc144f23863bb1718715e7e",
+      "length": 7906,
       "kind": "pdf",
       "url": "https://extapps.dec.ny.gov/docs/wildlife_pdf/1801animaldangerhealthwelfare.pdf"
     },
@@ -639,8 +677,8 @@
       "url": "https://dnr.wisconsin.gov/topic/endangeredresources/laws"
     },
     "ut-table-3b-1": {
-      "hash": "14c887347b0433a90c6204e8feebb9b7",
-      "length": 82203,
+      "hash": "b7ec7d71f5d8eadb2e6ff88ff4e57464",
+      "length": 5541,
       "kind": "pdf",
       "url": "https://wildlife.utah.gov/pdf/cor/bird_and_mammal_classification_table_3b-1.pdf"
     },
@@ -672,20 +710,23 @@
       "url": "https://www.michigan.gov/dnr/managing-resources/wildlife/wildlife-permits/captive-game-permit"
     },
     "hi-4-71-rule": {
-      "hash": "64ace9b8f424e49c5d8b4ae77a7de2c0",
-      "length": 616293,
+      "hash": "678a615ea967d49ff9a1f7f6225562f7",
+      "length": 29960,
       "kind": "pdf",
       "url": "https://dab.hawaii.gov/wp-content/uploads/2019/02/Chap.-4-71-HAR-Non-Domestic-Animal-Import-Rules-1.pdf"
     },
     "vt-unrestricted-list": {
-      "hash": "9b12649dbdddea4b0bc2cac09e7d8ac8",
-      "length": 769021,
+      "hash": "72e1c161fc24b3b95a733dcdffabd577",
+      "length": 7396,
       "kind": "pdf",
-      "url": "https://www.vtfishandwildlife.com/sites/fishandwildlife/files/documents/Learn%20More/Living%20with%20Wildlife/Importation/Unrestricted_Wild_Animals_List.pdf"
+      "url": "https://www.vtfishandwildlife.com/sites/fishandwildlife/files/documents/Learn%20More/Living%20with%20Wildlife/Importation/Unrestricted_Wild_Animals_List.pdf",
+      "quotesMissing": [
+        "milk-snake/VT"
+      ]
     },
     "vt-restricted-list": {
-      "hash": "1044524b48d8bab92eadfcf703b4a291",
-      "length": 214975,
+      "hash": "de72f1fb3ec707f1621502d3e1427f53",
+      "length": 8038,
       "kind": "pdf",
       "url": "https://www.vtfishandwildlife.com/sites/fishandwildlife/files/documents/Learn%20More/Living%20with%20Wildlife/Importation/Restricted_Wild%20Animals_List.pdf"
     },
@@ -737,20 +778,20 @@
       ]
     },
     "co-w7": {
-      "hash": "72fc80b268d0a9ed86223738b182ced6",
-      "length": 323287,
+      "hash": "4d00e6c21c4556f7d7be16b4415d2bee",
+      "length": 18831,
       "kind": "pdf",
       "url": "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12520&fileName=2+CCR+406-7"
     },
     "co-w0-008": {
-      "hash": "1fb8ddac9c58dd57cde739ef4a1148f5",
-      "length": 1026767,
+      "hash": "0a2ff4b7dd15431075d9a2fec806de2d",
+      "length": 305507,
       "kind": "pdf",
       "url": "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12599&fileName=2+CCR+406-0"
     },
     "co-crs-33-1-102": {
-      "hash": "2e4a1a3d589291ac91fc4796d02dd7df",
-      "length": 2019692,
+      "hash": "03eb5b4bffd2ac3360849a16b696c8d9",
+      "length": 931057,
       "kind": "pdf",
       "url": "https://leg.colorado.gov/sites/default/files/images/olls/crs2024-title-33.pdf"
     },
@@ -867,13 +908,13 @@
       "url": "https://statutes.capitol.texas.gov/Docs/PW/htm/PW.43.htm"
     },
     "ma-131-23": {
-      "hash": "6b1bd9e2943dbac414d91af59cc9c50b",
+      "hash": "b2ab5ca974213297288b93b2761e2c82",
       "length": 12950,
       "kind": "html",
       "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXIX/Chapter131/Section23"
     },
     "ma-131-77a": {
-      "hash": "9e9f0e2be70cd569141ea9ddeea88aab",
+      "hash": "61b857a1bd7a68f79483e8d32dcc9253",
       "length": 5996,
       "kind": "html",
       "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXIX/Chapter131/Section77A"
@@ -897,14 +938,14 @@
       "url": "https://www.flrules.org/gateway/RuleNo.asp?id=5B-57.004"
     },
     "nj-njac-7-25": {
-      "hash": "a3c39f5cd3e0dbd27fabcf9ce86e7e35",
-      "length": 1821844,
+      "hash": "30d512ba5114724b0e72b92bbff6eb09",
+      "length": 1134852,
       "kind": "pdf",
       "url": "https://dep.nj.gov/wp-content/uploads/rules/rules/njac7-25.pdf"
     },
     "nj-7-25-4-3": {
-      "hash": "c76383e7241e8af5865ef363c4f0bff1",
-      "length": 106695,
+      "hash": "62f009af9fc1cbb9041659de8d78f1cd",
+      "length": 2414,
       "kind": "pdf",
       "url": "https://www.nj.gov/dep/fgw/pdf/xotic_permreq.pdf"
     },
@@ -927,14 +968,14 @@
       "url": "https://le.utah.gov/xcode/Title23A/Chapter1/23A-1-S101.html"
     },
     "al-220-2-98": {
-      "hash": "b1e17c756b2c0097742c602181001f3e",
-      "length": 30408,
+      "hash": "e5d3d66738e9f4042af0e75d383a207e",
+      "length": 8639,
       "kind": "pdf",
       "url": "https://admincode.legislature.state.al.us/api/rule/220-2-.98"
     },
     "al-220-2-142": {
-      "hash": "f3a5875b572d2999ad18573900f0ff6f",
-      "length": 22733,
+      "hash": "626697c410da873936ec3dcc587c8c09",
+      "length": 10477,
       "kind": "pdf",
       "url": "https://admincode.legislature.state.al.us/api/rule/220-2-.142"
     },
@@ -975,8 +1016,8 @@
       "url": "https://www.wildlifedepartment.com/fishing/regs/turtle-bullfrog-regulations"
     },
     "vt-domestic-list": {
-      "hash": "a51b1e43b7c887dd9fee5a52e4f7e292",
-      "length": 100974,
+      "hash": "d3e203e77299d73fef39c2bab60adce9",
+      "length": 7667,
       "kind": "pdf",
       "url": "https://www.vtfishandwildlife.com/sites/fishandwildlife/files/documents/Learn%20More/Living%20with%20Wildlife/Importation/Domestic_Species_List.pdf"
     },
@@ -987,8 +1028,8 @@
       "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_113/GS_113-129.html"
     },
     "sc-123-151": {
-      "hash": "776be8acafe007712809b05f78208059",
-      "length": 328267,
+      "hash": "5102da11aa41bb66e401f3162cfdab1c",
+      "length": 317732,
       "kind": "pdf",
       "url": "https://www.scstatehouse.gov/coderegs/Chapter%20123.pdf"
     },
@@ -999,15 +1040,15 @@
       "url": "https://codes.ohio.gov/ohio-revised-code/section-1531.01"
     },
     "ar-code-0900": {
-      "hash": "39e5205d620e6e8b70a2a1be6aa1aa4a",
-      "length": 1074307,
+      "hash": "c80d43e24dba0fbf2e9999a75003eded",
+      "length": 958180,
       "kind": "pdf",
       "url": "https://agfc-omnibus.s3.amazonaws.com/eregs/regulation_pdfs/large/agfc_regulations_codebook_large.pdf"
     },
     "me-09-137-c7": {
-      "hash": "8fe399e1e445190e82cc57cde49af425",
-      "length": 31120,
-      "kind": "html",
+      "hash": "7c693f2635af5e699034a013456ffe5f",
+      "length": 67187,
+      "kind": "docx",
       "url": "https://www.maine.gov/sos/sites/maine.gov.sos/files/content/assets/137c007.docx"
     },
     "me-12-12152": {
@@ -1017,8 +1058,8 @@
       "url": "https://legislature.maine.gov/statutes/12/title12sec12152.html"
     },
     "mo-3csr10-4": {
-      "hash": "4cd67a28bfc2f57773c68033b63906f7",
-      "length": 454207,
+      "hash": "b7c591bb75862145a866a9c5d75d21ad",
+      "length": 52364,
       "kind": "pdf",
       "url": "https://www.sos.mo.gov/adrules/csr/current/3csr/3c10-4.pdf"
     },
@@ -1029,8 +1070,8 @@
       "url": "https://revisor.mo.gov/main/OneSection.aspx?section=252.020"
     },
     "mo-mdc-field-guides": {
-      "hash": "e1a416395e26bcddf398a4fff82fc805",
-      "length": 4010403,
+      "hash": "aa1c6335142530ac525749c59101c196",
+      "length": 57855,
       "kind": "pdf",
       "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/page/MissouriSnakes.pdf"
     },
@@ -1041,8 +1082,8 @@
       "url": "https://legislature.idaho.gov/statutesrules/idstat/Title36/T36CH2/SECT36-202/"
     },
     "id-130106": {
-      "hash": "9e0716c465ac82403b248e92ebfc9b0e",
-      "length": 312712,
+      "hash": "28ecc8842d92c57d3cfc8c996d06c8a6",
+      "length": 13530,
       "kind": "pdf",
       "url": "https://adminrules.idaho.gov/rules/current/13/130106.pdf"
     },
@@ -1053,8 +1094,8 @@
       "url": "https://www.gencourt.state.nh.us/rsa/html/XVIII/207/207-1.htm"
     },
     "wy-23-1-101": {
-      "hash": "a34a20f5d814d14245250b18f5770174",
-      "length": 489346,
+      "hash": "2873cc7e1764c57ff24cfa7bf70a4949",
+      "length": 278870,
       "kind": "pdf",
       "url": "https://www.wyoleg.gov/statutes/compress/title23.pdf"
     },
@@ -1065,8 +1106,8 @@
       "url": "https://apps.legislature.ky.gov/law/kar/titles/301/002/081/"
     },
     "ky-krs-150-010": {
-      "hash": "8dcf3ee1529f84e8e957d2f6e6e0b7b3",
-      "length": 24891,
+      "hash": "370de6ae779dfe3a7b1f002e6e50d2b9",
+      "length": 10639,
       "kind": "pdf",
       "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=55354"
     },
@@ -1077,9 +1118,9 @@
       "url": "https://legis.la.gov/legis/Law.aspx?d=105616"
     },
     "la-76-v-107": {
-      "hash": "da4102dc13c779d6b725fa46ada25b16",
-      "length": 577845,
-      "kind": "html",
+      "hash": "65b9a58c2c9ab1add70bfa358c266db3",
+      "length": 1584024,
+      "kind": "docx",
       "url": "https://www.doa.la.gov/media/ln5kb5vu/76.docx"
     },
     "wa-rcw-77-08-010": {
@@ -1107,13 +1148,13 @@
       ]
     },
     "ia-481a-definitions": {
-      "hash": "5e740f5785ed045a589d8128798fb98b",
-      "length": 299899,
+      "hash": "8d0c79128092fa86b850dab56ef20a87",
+      "length": 140336,
       "kind": "pdf",
       "url": "https://www.legis.iowa.gov/docs/code/481A.pdf"
     },
     "ks-32-701-1002": {
-      "hash": "5334915cb5174a6d52a220cd51ea0346",
+      "hash": "5a3ad3aeabd392438da0d9e7fb2c01b4",
       "length": 7240,
       "kind": "html",
       "url": "https://www.kslegislature.gov/li/b2025_26/statute/032_000_0000_chapter/032_007_0000_article/032_007_0001_section/032_007_0001_k/"
@@ -1138,8 +1179,8 @@
       "url": "https://www.law.cornell.edu/regulations/kansas/K-A-R-115-15-2"
     },
     "nd-48-1-09": {
-      "hash": "0fd10ba2de52e4c6c02de3599ab7d2cc",
-      "length": 94289,
+      "hash": "b04517deed4d6939fc0d0c89ccc28da2",
+      "length": 22289,
       "kind": "pdf",
       "url": "https://www.ndlegis.gov/information/acdata/pdf/48.1-09-01.pdf"
     },
@@ -1156,16 +1197,19 @@
       "url": "https://apps.sos.wv.gov/adlaw/csr/ruleview.aspx?document=17393"
     },
     "wv-20-1-2": {
-      "hash": "e4a1e6ef8cb6c63abdd70bca9ab0a6ba",
+      "hash": "c7cab5a1872fa96898943c972c7e6d2f",
       "length": 19584,
       "kind": "html",
       "url": "https://code.wvlegislature.gov/20-1-2/"
     },
     "wv-58-73": {
-      "hash": "b9d8cbaa5b5eb3c379df099bc95028ae",
-      "length": 1173509,
+      "hash": "442cabaf5f51426d95202825cc6d883f",
+      "length": 5922,
       "kind": "pdf",
-      "url": "https://wvdnr.gov/wp-content/uploads/2026/01/Reptile.and_.Amphibian.Reg_.Summary.05.2023.pdf"
+      "url": "https://wvdnr.gov/wp-content/uploads/2026/01/Reptile.and_.Amphibian.Reg_.Summary.05.2023.pdf",
+      "quotesMissing": [
+        "snapping-turtle/WV"
+      ]
     },
     "wv-dnr-herps": {
       "hash": "39fa2f777403deb6f8747f1c6ec93da7",
