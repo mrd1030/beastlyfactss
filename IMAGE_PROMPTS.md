@@ -92,3 +92,39 @@ Where two facts sit next to each other on the same page, their photos have to
 read as different animals. The three shrimp are specified as solid red on a
 leaf, translucent with dashed sides on wood, and glass-clear on sand for that
 reason.
+
+## Animal awareness days, 2026-09-22
+
+Two guide heroes, 3:2 at 1168x784. Both are concept frames rather than species
+portraits, which is unusual for this site, so the species accuracy rules below
+matter less than keeping them free of invented lettering. Neither frame may
+carry readable text: a generator handed a calendar or a banner will fill it with
+garbled words, and the watermark goes on afterwards.
+
+**`/assets/images/animal-awareness-days-calendar.jpg`**
+
+A plain paper wall calendar hanging on a pale wall, opened to a single month,
+photographed straight on and slightly from below. Several dates are marked with
+small hand-drawn animal doodles in ink: a turtle, a bird, an octopus, a sloth.
+The grid is clearly a calendar grid but the numbers and the month name are soft
+and out of focus, illegible rather than wrong. Late morning window light from
+the left, soft shadow under the bottom edge of the page. Muted palette, warm
+white paper, one accent of red ink. Shot at 50mm, f/4, shallow enough that the
+wall behind falls away. No readable text anywhere, no month name, no day
+numbers in focus, no people, no hands, no watermark, no logos. 3:2.
+**Check:** the doodles read as animals at thumbnail size, and no lettering
+anywhere in the frame is sharp enough to read.
+
+**`/assets/images/world-animal-day.jpg`**
+
+The interior of a large early twentieth century public assembly hall, seen from
+the back of the room over the heads of a seated crowd filling every row toward a
+distant lit stage. Period architecture: iron roof trusses, tall arched windows
+high on the side walls, hanging globe lamps. The crowd is a mass of dark coats
+and hats rather than individual faces, nobody in the foreground identifiable.
+Monochrome or very desaturated sepia, heavy grain, the look of a 1920s press
+photograph. Light falls from the high windows and pools on the stage. Shot wide,
+28mm, deep focus. No readable banners, no signage, no text, no visible modern
+clothing, no watermark. 3:2.
+**Check:** nobody in the frame is a recognisable individual, and no banner or
+sign carries legible lettering.

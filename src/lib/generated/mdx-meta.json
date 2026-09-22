@@ -2463,6 +2463,61 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/animal-awareness-days-calendar.mdx",
+    "slug": "animal-awareness-days-calendar",
+    "title": "Animal Awareness Days: The Full Calendar, and Which Dates Move",
+    "seoTitle": "Animal Awareness Days Calendar 2026 and 2027",
+    "excerpt": "Every major animal awareness day with the date its founder set. Three of them move every year, and most published calendars still print them as fixed.",
+    "date": "2026-09-23",
+    "category": "Roundups",
+    "categories": [
+      "Roundups",
+      "Wild Animals"
+    ],
+    "tags": [
+      "Animal Awareness Days",
+      "Conservation",
+      "Calendar",
+      "World Animal Day",
+      "Wildlife",
+      "Observances"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/animal-awareness-days-calendar.jpg",
+    "imageAlt": "A wall calendar page for October with animal illustrations marked on several dates",
+    "emoji": "📅",
+    "lastReviewed": "2026-09-23",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "When is World Animal Day?",
+        "a": "4 October, every year, and it has been fixed on that date since 1929. The founder wanted 4 October from the start because it is the feast day of Saint Francis of Assisi, but the venue he booked for the first event in 1925 was not free, so the inaugural World Animal Day landed on 24 March instead."
+      },
+      {
+        "q": "Which animal awareness days change date every year?",
+        "a": "Three of the widely observed ones. World Pangolin Day is the third Saturday in February, International Sloth Day is the third Saturday in October, and International Rabbit Day is the fourth Saturday in September. Any calendar printing those as fixed numbers is wrong in most years."
+      },
+      {
+        "q": "Is International Sloth Day on 20 October?",
+        "a": "No, though a great many calendars say so. AIUNAU, the Colombian foundation that created the day in 2010, sets it as the third Saturday in October. That is 17 October in 2026 and 16 October in 2027."
+      },
+      {
+        "q": "Who decides what becomes an animal awareness day?",
+        "a": "Nobody centrally. Some are UN observances adopted by General Assembly resolution, such as World Wildlife Day. Others were started by a single conservation charity, a magazine, or in at least one case an anonymous person with a website. There is no registry, which is why the dates drift between sources."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/aquarium-cycling-guide.mdx",
     "slug": "aquarium-cycling-guide",
     "title": "How to Cycle a Fish Tank, Start to Finish: Fishless and Fish-In",
@@ -46233,6 +46288,61 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/world-animal-day.mdx",
+    "slug": "world-animal-day",
+    "title": "World Animal Day Was Almost 24 March",
+    "seoTitle": "World Animal Day: Why It Is on 4 October",
+    "excerpt": "World Animal Day is 4 October because a Berlin hall was booked. The first one, in 1925, ran on 24 March instead, and it took four years to get the date its founder wanted.",
+    "date": "2026-09-24",
+    "category": "Wild Animals",
+    "categories": [
+      "Wild Animals",
+      "Roundups"
+    ],
+    "tags": [
+      "World Animal Day",
+      "Conservation",
+      "Animal Welfare",
+      "History",
+      "Wild Animals",
+      "Heinrich Zimmermann"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/world-animal-day.jpg",
+    "imageAlt": "A crowded early twentieth century public hall with rows of seated attendees at a large assembly",
+    "emoji": "🐾",
+    "lastReviewed": "2026-09-24",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "When is World Animal Day?",
+        "a": "4 October, every year. It is a fixed date and has been since 1929, though the first World Animal Day in 1925 was held on 24 March."
+      },
+      {
+        "q": "Why is World Animal Day on 4 October?",
+        "a": "It is the feast day of Saint Francis of Assisi, the patron saint of animals. Heinrich Zimmermann wanted that date for the first event in 1925, but the hall he had booked in Berlin was not available, so the inaugural event ran on 24 March instead."
+      },
+      {
+        "q": "Who started World Animal Day?",
+        "a": "Heinrich Zimmermann, a writer and editor working in Berlin who founded the magazine Mensch und Hund, or Man and Dog. He organised the first event in 1925 and spent the next six years campaigning to have 4 October adopted internationally."
+      },
+      {
+        "q": "Who runs World Animal Day now?",
+        "a": "Naturewatch Foundation, a UK animal welfare charity, has coordinated it since 2003. It runs the official site and sets an annual campaign theme, but there is no central authority and most events are organised locally."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4,
+    "headingCount": 6,
+    "ledeMatchesExcerpt": false
   },
   {
     "path": "/content/guides/zebra-danio-bristlenose-pleco-discus-cardinal-tetra-overview.mdx",

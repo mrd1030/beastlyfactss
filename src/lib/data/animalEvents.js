@@ -144,7 +144,12 @@ export const ANIMAL_EVENTS = [
   },
   {
     id: 'international-sloth-day', name: 'International Sloth Day', emoji: '🦥',
-    month: 10, day: 20,
+    // Floating: the third Saturday in October, per AIUNAU, the Colombian
+    // foundation that created the day in 2010. It was hardcoded to 20 October
+    // here until 2026-09-22, which is the same error most published calendars
+    // carry: 20 October was the third Saturday in 2013 and got copied forward.
+    // https://aiunau.org/en/activities/sloth-international-day/
+    ranges: { 2026: { start: '10-17', end: '10-17' }, 2027: { start: '10-16', end: '10-16' } },
     animals: ['Sloth'],
     categories: ['Wild Animals'],
     blurb: 'Slow on purpose. It works.',
@@ -158,7 +163,7 @@ export const ANIMAL_EVENTS = [
   },
   {
     id: 'world-pangolin-day', name: 'World Pangolin Day', emoji: '🦔',
-    ranges: { 2026: { start: '02-21', end: '02-21' } },
+    ranges: { 2026: { start: '02-21', end: '02-21' }, 2027: { start: '02-20', end: '02-20' } },
     animals: ['Pangolin'],
     categories: ['Wild Animals'],
     blurb: 'The most trafficked wild mammal almost nobody can name.',
@@ -221,7 +226,7 @@ export const ANIMAL_EVENTS = [
   },
   {
     id: 'international-rabbit-day', name: 'International Rabbit Day', emoji: '🐰',
-    ranges: { 2026: { start: '09-26', end: '09-26' } },
+    ranges: { 2026: { start: '09-26', end: '09-26' }, 2027: { start: '09-25', end: '09-25' } },
     animals: ['Rabbit'],
     categories: ['Small & Exotic Pets'],
     blurb: 'Not a starter pet, whatever the pet shop implied.',

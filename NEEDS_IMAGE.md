@@ -7,14 +7,27 @@ removed from this file, which is the only place that history lives.
 
 ## Open right now
 
-**Nothing.** As of 2026-09-17 every guide hero is on disk and every fact on the
-site resolves its own photo, 328 of 328, none shared between two facts.
+**Two guide heroes, and they are on a deadline.** Both articles are written,
+voice-clean and committed on `claude/site-content-expansion-qnynio`. Neither can
+ship until its hero lands, because `check-images.mjs` runs at the front of
+`build` and fails the deploy on a missing source image. That is the safe
+failure, but it means the October cluster does not go live without these two.
+
+Every fact on the site still resolves its own photo, 328 of 328, none shared.
 
 ## Guide heroes still needed
 
-None outstanding. The eight wrong-species replacements landed 2026-09-12
-alongside the federal law guide hero, the fourteen legal-guide heroes on
-2026-09-11, and the nine feeding-guide heroes on 2026-09-09.
+Both are 3:2 at 1168x784, mozjpeg quality 80. Prompts are in `IMAGE_PROMPTS.md`
+under "Animal awareness days, 2026-09-22".
+
+| File | Article | Wanted by |
+|---|---|---|
+| `/assets/images/animal-awareness-days-calendar.jpg` | `animal-awareness-days-calendar.mdx` | before 2026-10-04 |
+| `/assets/images/world-animal-day.jpg` | `world-animal-day.mdx` | before 2026-10-04 |
+
+The eight wrong-species replacements landed 2026-09-12 alongside the federal law
+guide hero, the fourteen legal-guide heroes on 2026-09-11, and the nine
+feeding-guide heroes on 2026-09-09.
 
 ## Facts awaiting images
 
