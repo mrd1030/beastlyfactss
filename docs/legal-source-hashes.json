@@ -23,8 +23,7 @@
       "kind": "pdf",
       "url": "https://dab.hawaii.gov/pi/files/2012/12/AR-71RA.pdf",
       "quotesMissing": [
-        "gerbil/HI",
-        "bearded-dragon/HI"
+        "gerbil/HI"
       ]
     },
     "dc-8-1808": {
@@ -56,18 +55,9 @@
       "kind": "pdf",
       "url": "https://www.maine.gov/ifw/docs/unrestrictedspecies.pdf",
       "quotesMissing": [
-        "hedgehog/ME",
-        "ferret/ME",
-        "sugar-glider/ME",
-        "hamster/ME",
-        "bengal-cat/ME",
         "argentine-tegu/ME",
-        "fennec-fox/ME",
-        "serval/ME",
         "guinea-pig/ME",
-        "tokay-gecko/ME",
-        "hognose-snake/ME",
-        "giant-millipede/ME"
+        "tokay-gecko/ME"
       ]
     },
     "wi-169": {
@@ -104,16 +94,7 @@
       "hash": "7b161fe2ce8aadadca6126f41341d749",
       "length": 251282,
       "kind": "html",
-      "url": "https://www.animallaw.info/administrative/az-exotic-wildlife-article-4-live-wildlife",
-      "quotesMissing": [
-        "hamster/AZ",
-        "gerbil/AZ",
-        "capybara/AZ",
-        "chinchilla/AZ",
-        "guinea-pig/AZ",
-        "degu/AZ",
-        "rabbit/AZ"
-      ]
+      "url": "https://www.animallaw.info/administrative/az-exotic-wildlife-article-4-live-wildlife"
     },
     "or-609-305": {
       "hash": "b69060e0ec255221adf627817898de81",
@@ -161,10 +142,7 @@
       "hash": "a2839b1e53c8f2648c7d05f7bf58de05",
       "length": 13918,
       "kind": "html",
-      "url": "https://law.lis.virginia.gov/admincode/title4/agency15/chapter30/section40/",
-      "quotesMissing": [
-        "ferret/VA"
-      ]
+      "url": "https://law.lis.virginia.gov/admincode/title4/agency15/chapter30/section40/"
     },
     "md-10-621": {
       "hash": "4b6df594bae35867fda69fa69dfa9a0e",
@@ -208,8 +186,6 @@
       "kind": "pdf",
       "url": "https://agfc-omnibus.s3.amazonaws.com/eregs/regulation_pdfs/large/agfc_regulations_codebook_large.pdf",
       "quotesMissing": [
-        "hedgehog/AR",
-        "hamster/AR",
         "russian-tortoise/AR",
         "sulcata-tortoise/AR",
         "red-footed-tortoise/AR"
@@ -219,10 +195,7 @@
       "hash": "7e8a659f8697b6e71c15b2cdef29b8fd",
       "length": 23522,
       "kind": "pdf",
-      "url": "https://adminrules.idaho.gov/rules/current/02/020427.pdf",
-      "quotesMissing": [
-        "bengal-cat/ID"
-      ]
+      "url": "https://adminrules.idaho.gov/rules/current/02/020427.pdf"
     },
     "id-130110": {
       "hash": "3558883ca71ada858baaa683dd604b62",
@@ -246,11 +219,7 @@
       "hash": "17aca3701dd7e9186ae4d085ee2b6378",
       "length": 71087,
       "kind": "html",
-      "url": "https://apps.legislature.ky.gov/law/kar/titles/301/002/082/",
-      "quotesMissing": [
-        "bengal-cat/KY",
-        "serval/KY"
-      ]
+      "url": "https://apps.legislature.ky.gov/law/kar/titles/301/002/082/"
     },
     "ri-250-40-05-3": {
       "hash": "6abe019ec80cf9c665e305bfbe7c7241",
@@ -301,7 +270,7 @@
       "url": "https://mca.legmt.gov/bills/mca/title_0870/chapter_0050/part_0070/section_0050/0870-0050-0070-0050.html"
     },
     "wv-19-34": {
-      "hash": "dded1b817d643ff13c652d3e92b48992",
+      "hash": "b2a5dc272897454f5e31ed6a07e7efe8",
       "length": 10698,
       "kind": "html",
       "url": "https://code.wvlegislature.gov/19-34/"
@@ -378,10 +347,8 @@
       "kind": "pdf",
       "url": "https://dab.hawaii.gov/pi/files/2012/12/AR-71C.pdf",
       "quotesMissing": [
-        "box-turtle/HI",
         "red-eared-slider/HI",
-        "cockatoo/HI",
-        "red-footed-tortoise/HI"
+        "cockatoo/HI"
       ]
     },
     "nc-153a-131": {
@@ -1087,7 +1054,7 @@
       "url": "https://www.legis.iowa.gov/docs/code/481A.pdf"
     },
     "ks-32-701-1002": {
-      "hash": "5a3ad3aeabd392438da0d9e7fb2c01b4",
+      "hash": "bdd25752aaf063b1118f4e94c503b351",
       "length": 7240,
       "kind": "html",
       "url": "https://www.kslegislature.gov/li/b2025_26/statute/032_000_0000_chapter/032_007_0000_article/032_007_0001_section/032_007_0001_k/"
@@ -1130,7 +1097,7 @@
       "url": "https://apps.sos.wv.gov/adlaw/csr/ruleview.aspx?document=17393"
     },
     "wv-20-1-2": {
-      "hash": "5bed970c6c487ef5dd31711d3a19eef6",
+      "hash": "7df81be7a4a284520d5c25027ac93931",
       "length": 19585,
       "kind": "html",
       "url": "https://code.wvlegislature.gov/20-1-2/"
