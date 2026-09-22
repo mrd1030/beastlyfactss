@@ -129,6 +129,16 @@ const hash = (s) => createHash('sha256').update(s).digest('hex').slice(0, 32);
 // and none of that variation means the sentence moved.
 function flatten(t) {
   return t
+    // Markup first, and to a space rather than nothing. A quote match runs
+    // against the page as served, and in a statute table every </td> sits
+    // between two words: dropping the tag glues them, keeping it injects "td"
+    // into the middle of the sentence. Either way the window stops matching,
+    // which is how a page carrying 181,690 characters of the right text came
+    // back reading 32 of its 41 quotes missing.
+    .replace(/<script\b[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style\b[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&[a-z]+;|&#\d+;/gi, ' ')
     .replace(/[\u2018\u2019]/g, "'")
     .replace(/[\u201c\u201d]/g, '"')
     // Text pulled out of a PDF table arrives with its columns glued together,
