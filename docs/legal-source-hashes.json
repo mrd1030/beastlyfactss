@@ -67,7 +67,7 @@
       "url": "https://www.animallaw.info/statute/ct-exotic-pets-%C2%A7-26-40a-possession-potentially-dangerous-animal-chapter-490-fisheries-and"
     },
     "ma-131-77": {
-      "hash": "09f761d6de0ef2b4781db668d19a256e",
+      "hash": "4a6f11533d52a13838ec277f7bba0ee9",
       "length": 7855,
       "kind": "html",
       "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXIX/Chapter131/Section77"
@@ -311,8 +311,8 @@
       "url": "https://mca.legmt.gov/bills/mca/title_0870/chapter_0050/part_0070/section_0050/0870-0050-0070-0050.html"
     },
     "wv-19-34": {
-      "hash": "0aa4e5e534f413a7a369f993e52b64cf",
-      "length": 10698,
+      "hash": "26f8c06184004247f6eef54b299ad8c5",
+      "length": 10697,
       "kind": "html",
       "url": "https://code.wvlegislature.gov/19-34/"
     },
@@ -867,13 +867,13 @@
       "url": "https://statutes.capitol.texas.gov/Docs/PW/htm/PW.43.htm"
     },
     "ma-131-23": {
-      "hash": "b2ab5ca974213297288b93b2761e2c82",
+      "hash": "6b1bd9e2943dbac414d91af59cc9c50b",
       "length": 12950,
       "kind": "html",
       "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXIX/Chapter131/Section23"
     },
     "ma-131-77a": {
-      "hash": "61b857a1bd7a68f79483e8d32dcc9253",
+      "hash": "9e9f0e2be70cd569141ea9ddeea88aab",
       "length": 5996,
       "kind": "html",
       "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXIX/Chapter131/Section77A"
@@ -1113,7 +1113,7 @@
       "url": "https://www.legis.iowa.gov/docs/code/481A.pdf"
     },
     "ks-32-701-1002": {
-      "hash": "bdd25752aaf063b1118f4e94c503b351",
+      "hash": "5334915cb5174a6d52a220cd51ea0346",
       "length": 7240,
       "kind": "html",
       "url": "https://www.kslegislature.gov/li/b2025_26/statute/032_000_0000_chapter/032_007_0000_article/032_007_0001_section/032_007_0001_k/"
@@ -1156,8 +1156,8 @@
       "url": "https://apps.sos.wv.gov/adlaw/csr/ruleview.aspx?document=17393"
     },
     "wv-20-1-2": {
-      "hash": "c55a08b2ff721857b369e2f37e9cb759",
-      "length": 19585,
+      "hash": "e4a1e6ef8cb6c63abdd70bca9ab0a6ba",
+      "length": 19584,
       "kind": "html",
       "url": "https://code.wvlegislature.gov/20-1-2/"
     },
@@ -1190,6 +1190,60 @@
       "length": 3729,
       "kind": "html",
       "url": "https://dwr.virginia.gov/wildlife/wildlife-action-plan/species-of-greatest-conservation-need/"
+    },
+    "pa-2961": {
+      "hash": "fe721b9002fc1915c9de177edc94265c",
+      "length": 1155,
+      "kind": "html",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=34&div=0&chpt=29"
+    },
+    "wi-nr-16-12": {
+      "hash": "7084f32088222d03228350a215111f1d",
+      "length": 23584,
+      "kind": "html",
+      "url": "https://docs.legis.wisconsin.gov/code/admin_code/nr/001/16/12"
+    },
+    "wi-nr16-12": {
+      "hash": "0734eee7dbc62ec560e36e4abcc4bb27",
+      "length": 8416,
+      "kind": "html",
+      "url": "https://docs.legis.wisconsin.gov/code/admin_code/nr/001/16"
+    },
+    "wi-import-permit": {
+      "hash": "f107fdc1f32e8c5ec73b5e94eaecec1c",
+      "length": 14933,
+      "kind": "html",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/169/04"
+    },
+    "wi-nr-10-02": {
+      "hash": "b3c1699d65f38c808bb5b1731b316e64",
+      "length": 27382,
+      "kind": "html",
+      "url": "https://docs.legis.wisconsin.gov/code/admin_code/nr/001/10/I/02"
+    },
+    "wi-datcp-birds": {
+      "hash": "396f14bf6f537f8826d60489fc5d8057",
+      "length": 14300,
+      "kind": "html",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/169/01/25m"
+    },
+    "ny-6nycrr-3-3": {
+      "hash": "fea8ef88f287d5e61b7aa47c69b8f971",
+      "length": 1599,
+      "kind": "html",
+      "url": "https://govt.westlaw.com/nycrr/Document/I21bf88a2c22211ddb7c8fb397c5bd26b?viewType=FullText&originationContext=documenttoc&transitionType=CategoryPageItem&contextData=(sc.Default)"
+    },
+    "pa-34-102": {
+      "hash": "fe721b9002fc1915c9de177edc94265c",
+      "length": 1155,
+      "kind": "html",
+      "url": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=HTM&ttl=34&div=0&chpt=1&sctn=2&subsctn=0"
+    },
+    "wi-169-04": {
+      "hash": "f107fdc1f32e8c5ec73b5e94eaecec1c",
+      "length": 14933,
+      "kind": "html",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/169/04"
     }
   }
 }
