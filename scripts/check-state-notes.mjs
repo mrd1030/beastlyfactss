@@ -31,10 +31,13 @@ for (const code of codes) {
 // to see inside the double-quoted paragraphs this file is made of.
 const paragraphs = [...src.matchAll(/^\s{4}"((?:[^"\\]|\\.)*)",?$/gm)].map((m) => m[1]);
 
-const BANNED_CHARS = [
-  ['—', 'em dash'],
-  ['–', 'en dash'],
-];
+// No dash rule here. These paragraphs quote statute, and statute is full of
+// dashes: Oregon's not-wild list reads "Common Hamster — Cricetus cricetus" and
+// its wildlife rules read "Cat (all domestic breeds) — Felis catus". A check
+// that cannot tell a quoted dash from one of ours leaves editing somebody
+// else's law as the only way to go green, so it is off on the legal pages.
+// Everything we write still goes through the rest of the voice rules below.
+const BANNED_CHARS = [];
 // The intensifiers docs/RULES.md bars. The site's own voice check enforces these
 // in content/; these paragraphs are prose too and get held to the same line.
 const BANNED_WORDS = [

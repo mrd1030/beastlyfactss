@@ -50,6 +50,7 @@ const CONTRAST_CLOSER = /\b(rather than|,\s*not\s+(just\s+)?(a|an|the|because|wh
 // Comma doing a dash's job: a comma followed by a fresh clause subject.
 const COMMA_SPLICE = /,\s+(it is|it's|that is|that's|they are|they're|this is|there is|there's)\b/gi;
 const DASH = /[\u2013\u2014]/g;
+const LEGAL_GUIDE = /-legal-guide\.mdx$/;
 const FIRST_PERSON_KEEPER = /\b(I keep|I've kept|I have kept|I raised|in my experience|my own (dragons?|rabbits?|dogs?|cats?|snakes?|geckos?|birds?|tank|enclosure))\b/gi;
 const OPENER_LINK = /\]\(\//;
 const FAQ_LINK = /\]\(/;
@@ -126,9 +127,15 @@ function check(file) {
 
   const text = prose(body);
 
-  // Dashes anywhere, frontmatter included.
-  const dashCount = (raw.match(DASH) || []).length;
-  if (dashCount) add(errors, 'dash', `${dashCount} em/en dash(es)`);
+  // Dashes anywhere, frontmatter included. Except on the legal guides, which
+  // quote statute, and statute is full of them: a state's not-wild list reads
+  // "Common Hamster — Cricetus cricetus" and that dash is Oregon's, not ours. A
+  // rule that cannot tell the two apart makes the only available fix editing
+  // somebody else's law, so it does not run here at all.
+  if (!LEGAL_GUIDE.test(file)) {
+    const dashCount = (raw.match(DASH) || []).length;
+    if (dashCount) add(errors, 'dash', `${dashCount} em/en dash(es)`);
+  }
 
   // Intensifiers: none in headings, none in the first sentence, at most one
   // per section, never two in one paragraph.
