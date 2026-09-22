@@ -7,33 +7,23 @@ removed from this file, which is the only place that history lives.
 
 ## Open right now
 
-**Five guide heroes, all on the same deadline.** The full October cluster is
-written, voice clean and committed on `claude/site-content-expansion-qnynio`.
-None of it ships until the heroes land, because `check-images.mjs` runs at the
-front of `build` and fails the deploy on a missing source image. That is the
-safe failure, but it means the whole October run is blocked on art.
+**Nothing blocking a deploy.** The five October heroes landed 2026-09-22 and
+`check-images.mjs` passes: all 1,669 referenced paths on live pages exist with
+their generated tiers. The whole October cluster is unblocked.
 
-The `/animal-days/` page itself needs no hero: it is a route, and listing pages
-use the default OG image.
+Five fact photos are still outstanding, listed below. They block nothing,
+because those facts are deliberately parked out of `facts.js` until their
+photos exist.
 
-Every fact on the site still resolves its own photo, 328 of 328, none shared.
+Every fact currently on the site still resolves its own photo, 328 of 328, none
+shared.
 
 ## Guide heroes still needed
 
-All 3:2 at 1168x784, mozjpeg quality 80. Prompts are in `IMAGE_PROMPTS.md`
-under "Animal awareness days, 2026-09-22" and "October animal days,
-2026-09-22".
-
-| File | Article | Live date |
-|---|---|---|
-| `/assets/images/world-animal-day.jpg` | `world-animal-day.mdx` | 4 Oct |
-| `/assets/images/world-octopus-day.jpg` | `world-octopus-day.mdx` | 8 Oct |
-| `/assets/images/international-sloth-day.jpg` | `international-sloth-day.mdx` | 17 Oct |
-| `/assets/images/reptile-awareness-day.jpg` | `reptile-awareness-day.mdx` | 21 Oct |
-| `/assets/images/international-wombat-day.jpg` | `international-wombat-day.mdx` | 22 Oct |
-
-The articles are dated 24 to 29 September so they index before their days. The
-heroes are what decides whether that happens.
+None. The five October heroes (world animal day, octopus, sloth, reptile
+awareness, wombat) all arrived at 1168x784 exactly, so nothing was resized and
+nothing was enlarged. Re-encoded through mozjpeg at 80, which took them from
+1,862KB to 705KB across the five.
 
 The eight wrong-species replacements landed 2026-09-12 alongside the federal law
 guide hero, the fourteen legal-guide heroes on 2026-09-11, and the nine

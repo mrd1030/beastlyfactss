@@ -1,9 +1,10 @@
 # October animal days: the prep
 
-Scoped 2026-09-22, finished the same day. The destination and all five articles
-are built, voice clean at zero errors and zero warnings, with every date
-verified against the founding organization rather than an aggregator calendar.
-The only thing outstanding is art.
+Scoped 2026-09-22, finished the same day. The destination, all five articles and
+all five heroes are done. Voice clean at zero errors and zero warnings, every
+date verified against the founding organization rather than an aggregator
+calendar, and every build gate green including `check-images`. Nothing is
+outstanding; this cluster is ready to merge to main.
 
 Why October first: the cluster runs 4 to 22 October and a new page needs a few
 weeks to index and settle. Anything written after about the first week of
@@ -13,11 +14,11 @@ October misses the spike it was written for and waits a year.
 
 | Date 2026 | Day | Slug | Published | State |
 |---|---|---|---|---|
-| Sun 4 Oct | World Animal Day | `world-animal-day` | 24 Sep | Written, hero needed |
-| Thu 8 Oct | World Octopus Day | `world-octopus-day` | 25 Sep | Written, hero needed |
-| Sat 17 Oct | International Sloth Day | `international-sloth-day` | 26 Sep | Written, hero needed |
-| Wed 21 Oct | Reptile Awareness Day | `reptile-awareness-day` | 28 Sep | Written, hero needed |
-| Thu 22 Oct | International Wombat Day | `international-wombat-day` | 29 Sep | Written, hero needed |
+| Sun 4 Oct | World Animal Day | `world-animal-day` | 24 Sep | **Ready** |
+| Thu 8 Oct | World Octopus Day | `world-octopus-day` | 25 Sep | **Ready** |
+| Sat 17 Oct | International Sloth Day | `international-sloth-day` | 26 Sep | **Ready** |
+| Wed 21 Oct | Reptile Awareness Day | `reptile-awareness-day` | 28 Sep | **Ready** |
+| Thu 22 Oct | International Wombat Day | `international-wombat-day` | 29 Sep | **Ready** |
 
 Publish dates are spread one per day and all fall before the cluster, so each
 article has one to four weeks to index before the day it is written for.

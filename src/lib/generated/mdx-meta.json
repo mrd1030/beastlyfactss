@@ -27019,7 +27019,9 @@
     "truth": null,
     "sourceCount": 4,
     "headingCount": 6,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/international-wombat-day.mdx",
@@ -27043,7 +27045,7 @@
     "readTime": 6,
     "difficulty": "Beginner",
     "image": "/assets/images/international-wombat-day.jpg",
-    "imageAlt": "A bare-nosed wombat standing at the mouth of its burrow on dry grass in evening light, facing the camera",
+    "imageAlt": "A bare-nosed wombat low to the ground in dry grass at golden hour, facing the camera, with the dark opening of a burrow beside it",
     "emoji": "🐨",
     "lastReviewed": "2026-09-29",
     "author": "Michael Ryan",
@@ -27074,7 +27076,9 @@
     "truth": null,
     "sourceCount": 4,
     "headingCount": 6,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/invertebrate-emergency-travel-shipping-guide.mdx",
@@ -38545,7 +38549,9 @@
     "truth": null,
     "sourceCount": 4,
     "headingCount": 6,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/reptile-emergency-plan-guide.mdx",
@@ -47200,7 +47206,9 @@
     "truth": null,
     "sourceCount": 4,
     "headingCount": 6,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/world-octopus-day.mdx",
@@ -47224,7 +47232,7 @@
     "readTime": 6,
     "difficulty": "Beginner",
     "image": "/assets/images/world-octopus-day.jpg",
-    "imageAlt": "A common octopus on a rocky seabed with several arms extended over the rock, pupils horizontal and skin mottled to match the stone",
+    "imageAlt": "A common octopus on a rocky seabed with its arms spread across the stones, one horizontal pupil visible and its skin mottled and pimpled to match the rock",
     "emoji": "🐙",
     "lastReviewed": "2026-09-25",
     "author": "Michael Ryan",
@@ -47255,7 +47263,9 @@
     "truth": null,
     "sourceCount": 5,
     "headingCount": 6,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/zebra-danio-bristlenose-pleco-discus-cardinal-tetra-overview.mdx",
