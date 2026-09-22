@@ -3678,7 +3678,7 @@ in one review section.
   range was settled on ReptiFiles' 120 to 130F without opening the vs guide's
   citation, Long Island Bird & Exotics, a veterinary hospital, which gives 110 to
   120F and outranks it. The check reversed it across seven places and filed the
-  question in docs/TODO.md section 8.
+  question in archive/docs-completed/TODO_COMPLETED_2026-09-22.md (was docs/TODO.md section 8).
 
 - 2026-09-15, batch O (branch claude/invertebrates-readmefirst-batch-ayolwx, not
   merged): four router hubs rather than five, because invertebrates had exactly
@@ -3705,7 +3705,7 @@ in one review section.
   broken cost table re-priced to $77-98; a sourced Diet Basics section added
   from the Phasmid Study Group; the cost guide gained its first Sources block,
   USDA APHIS's own permits page. Four of the eleven affiliate template fragments
-  in docs/TODO.md section 8 cleared in passing. The check's standing list: three
+  in the archived TODO queue cleared in passing. The check's standing list: three
   hedges upgraded during de-narration, four hub rows and four emergency bullets
   written rather than pasted, two of them sourced to shared guides that do not
   cover the species at all.
@@ -11732,7 +11732,7 @@ misdescribing itself elsewhere in the set as covering a diet shift. It now says
 what the budgie actually settles, that a bird of roughly the same body length
 takes wider bar spacing, which is the point the section is making. The
 enrichment guide's affiliate template fragment ("and other sizes are available")
-is gone, one of the 23 in docs/TODO.md section 8.
+is gone, one of the 23 in the archived TODO queue.
 
 Dates. Every parrotlet guide is future-dated: the cost, feeding, handling,
 health issues and tank setup guides all carry `date: "2026-09-20"` and the
@@ -13642,7 +13642,7 @@ respiratory "Watch for" line, not the list. Removed.
 Review-file count: six links were added, not five (the setup guide also links
 the enrichment guide on nesting material). Corrected in place. The enrichment
 guide also lost the "Other sizes and volumes are available" template fragment,
-which the review does not mention; that is the docs/TODO.md section 8 item for
+which the review does not mention; that is the archived TODO queue item for
 this species and it is done.
 
 Verdict: fixed on the branch.
@@ -14197,7 +14197,7 @@ entry takes none, since its structured fields are not editable that way.
 
 Also fixed, not from the reader: the enrichment guide's two affiliate template
 fragments ("and other sizes and volumes are available", "and other sizes are
-available"), two of the eleven in docs/TODO.md section 8, and the "Our moulting
+available"), two of the eleven in the archived TODO queue, and the "Our moulting
 guide covers" self-reference in the same paragraph.
 
 RELATED_ARTICLES gained three entries this species was missing: its own legal
@@ -14792,7 +14792,7 @@ De-narration, the batch K and M failure mode:
 
 - Uromastyx health, impaction: "the clinic's own recommendation is tile, reptile carpet, or paper" became "the safest floors are tile, reptile carpet, or paper", which asserts what one clinic recommends. Now "the recommendation there is".
 - Uromastyx feeding, adults: "one source explicitly warning that overfeeding is a real, common mistake" became a flat "overfeeding is a real and common mistake", in the body, the FAQ and the hub row; and "lean toward the less-frequent end if your Uromastyx is holding weight easily" became "go higher only if your Uromastyx is holding weight easily", which inverts the condition. Now "described as a real and common mistake" and "especially if your Uromastyx is holding weight easily". The FAQ's "not a required part of the diet" had become "never a required part"; restored.
-- Jackson's setup, humidity: "the day-low, night-high pattern is the most consistently supported approach" became "it is what a montane forest morning actually does, and it gives the enclosure the drying cycle that keeps respiratory infection away", a mechanism no source was quoted for. Now the original claim without the survey. Worth knowing: the two sources the batch added to this page for Diet Basics give humidity as 60-100% (LafeberVet) and 50-80% year-round (Reptiles Magazine), neither of which is the page's 30-50% daytime figure. That is a research item, filed in docs/TODO.md section 8.
+- Jackson's setup, humidity: "the day-low, night-high pattern is the most consistently supported approach" became "it is what a montane forest morning actually does, and it gives the enclosure the drying cycle that keeps respiratory infection away", a mechanism no source was quoted for. Now the original claim without the survey. Worth knowing: the two sources the batch added to this page for Diet Basics give humidity as 60-100% (LafeberVet) and 50-80% year-round (Reptiles Magazine), neither of which is the page's 30-50% daytime figure. That is a research item, filed in the archived TODO queue.
 - Flying squirrel cage minimum: see the pass section's correction. The two footprints are not the same volume.
 - Flying squirrel water: "Fresh water goes in a bottle or a shallow dish, changed daily, and a bottle stays cleaner in a cage this active" was written to fill the gap with no source. Furry Critter Network, cited on the setup guide, says "Fresh water must be available at all times through a water bottle mounted to the cage. Check the sipper tube daily"; both pages and the hub now say that, and the feeding guide cites it.
 
@@ -14800,7 +14800,7 @@ Dates: uromastyx health guide bumped with no fact or number changed (four de-nar
 
 Links: one sibling link per article across all 20 changed files, none before the first H2, none in a ComparisonTable cell. Voice: warning counts identical to base on every changed file, before and after the check's edits.
 
-Review file: the four corrections above are marked inline in the pass sections. Also: the fire skink section says the cost guide contradiction was "fixed to the version the FAQ already carried" while the page's other FAQ still carried the old version (fixed here); the Jackson's section leaves the Hawaii sourcing question "as written and recorded here" without promoting it to docs/TODO.md section 8 (now filed). The raw reader outputs for all four species are in docs/READER_LOG.md, in the same commits as the review sections.
+Review file: the four corrections above are marked inline in the pass sections. Also: the fire skink section says the cost guide contradiction was "fixed to the version the FAQ already carried" while the page's other FAQ still carried the old version (fixed here); the Jackson's section leaves the Hawaii sourcing question "as written and recorded here" without promoting it to the archived TODO queue (now filed). The raw reader outputs for all four species are in docs/READER_LOG.md, in the same commits as the review sections.
 
 Not changed, noted: the fire skink health guide's "considering feeding from a dish to reduce accidental ingestion" sits against the enrichment guide's scatter-feeding recommendation (cited to the blue-tongue study); both are hedged and both pre-date the batch, so left as a section 8 item rather than settled here. Composite "Setup budget" rows built from cost-table cells remain on all four hubs, numbers unchanged, as on every reconciled hub.
 

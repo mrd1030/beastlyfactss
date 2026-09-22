@@ -1,7 +1,7 @@
 # Alternates
 
 Article heroes replaced on 2026-09-12 because the animal in the frame was not
-the species the article is about (docs/TODO.md item 6). Same convention as
+the species the article is about (docs/TODO.md item 2). Same convention as
 `public/assets/guides/alternates/`: kept rather than deleted, under the
 filenames they shipped with, so nothing here is relabelled as a species it is
 not.

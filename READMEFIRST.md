@@ -398,7 +398,7 @@ every species at pass grade A-, with an extra Opus check standing in for
 the Fable one. Batch E (red-eared slider, guppy, blue-tongue skink,
 hognose snake, White's tree frog) done, checked and merged to main
 2026-09-09, pass grade B. That makes 31 router hubs; the 77 still on
-the legacy care sheet are listed by class in docs/TODO.md, section 7,
+the legacy care sheet are listed by class in docs/TODO.md, section 3,
 dogs and cats last. None of them carry a sellable care package, so
 batches are picked for popularity and class spread.
 
@@ -469,7 +469,7 @@ only thing being fixed.
 
 Batch G merged to main 2026-09-14. That makes 56 router hubs after
 batch J; the 52 still on the legacy care sheet are listed by class in
-docs/TODO.md, section 7, dogs and cats last.
+docs/TODO.md, section 3, dogs and cats last.
 
 Batch H (cardinal tetra, milk snake, gargoyle gecko, gerbil, sulcata
 tortoise), spanning fish, snake, gecko, small mammal and turtle, done
@@ -617,7 +617,7 @@ tegu), spanning amphibian, bird, fish, invertebrate and lizard, done and checked
 on branch claude/firebelliedtoad-quaker-molly-mantis-tegu 2026-09-15, not
 merged. Five router hubs, 133 first-week rows, one reader pass per species and
 one Fable check. Pass grade B. That makes 66 router hubs; the 42 still on the
-legacy care sheet are listed by class in docs/TODO.md, section 7, dogs and cats
+legacy care sheet are listed by class in docs/TODO.md, section 3, dogs and cats
 last.
 
 Four findings worth carrying into the next batch.
@@ -665,7 +665,7 @@ spanning fish, invertebrate, lizard, gecko and small mammal, done and checked on
 branch claude/platy-cherryshrimp-greenanole-leaftailedgecko-mouse 2026-09-15, not
 merged. Five router hubs, 126 first-week rows, one reader pass per species and
 one Fable check. Pass grade B-, down from batch L's B. That makes 71 router hubs;
-the 37 still on the legacy care sheet are in docs/TODO.md, section 7, dogs and
+the 37 still on the legacy care sheet are in docs/TODO.md, section 3, dogs and
 cats last. Geckos are finished: leaf-tailed gecko was the last one.
 
 The grade went down, and the reason is worth reading before starting batch N.
@@ -714,7 +714,7 @@ as the review section, not later.
 
 And the one that had been quietly accumulating for three batches: an open a batch
 records in docs/READER_REVIEWS.md is invisible unless it is also promoted to
-docs/TODO.md section 8. Eleven of them had built up across batches K, L and M
+archive/docs-completed/TODO_COMPLETED_2026-09-22.md (was docs/TODO.md section 8). Eleven of them had built up across batches K, L and M
 before anyone noticed, including five that need new research. When a batch writes
 "left open" or "not fixed, recorded", it goes in section 8 in the same commit,
 grouped by what it needs: research, a style decision, or a mechanical pass.
@@ -868,9 +868,9 @@ sides before deciding which page wins, not just the side you expect to win.
 
 That makes 84 router hubs. The 24 left are cats (10) and dogs (14), so batch Q
 is the first dog or cat batch and there is no more class spread to pick from.
-docs/TODO.md section 7 has them; section 8 has the queue, which now runs to
+docs/TODO.md, section 3 has them; the queue now lives in archive/docs-completed/TODO_COMPLETED_2026-09-22.md, which now runs to
 four batches' worth of deferred work and is the thing to clear once the hubs
-are done. What is left, by class, is in docs/TODO.md section 7.
+are done. What is left, by class, is in docs/TODO.md, section 3.
 
 The old batch J note follows for the reasoning, since it is the pattern
 to repeat: mourning gecko, ackie monitor, garter snake, oscar,
@@ -900,11 +900,11 @@ same leftover in the degu enrichment guide ("and other sizes are
 available"), also fixed. Grepping both phrasings afterwards shows the
 real count was never six: eleven are left, and five of them are species
 whose hubs are already reconciled, so it does not follow the batch order
-at all. The list is in docs/TODO.md, section 8. It is worth one short
+at all. The list is in the archived TODO queue. It is worth one short
 session of its own rather than waiting for each species' batch.
 
 The 57 species still on the legacy care sheet are listed by class in
-docs/TODO.md, section 7, dogs and cats last. Section 8 of the same file
+docs/TODO.md, section 3, dogs and cats last. The queue in archive/docs-completed/TODO_COMPLETED_2026-09-22.md
 is the queue the batches kept filling and deferring: the corydoras adult
 size mismatch, a shared chelonian soaking guide, the six enrichment
 guides still carrying the template fragment, and a corpus-wide sweep for

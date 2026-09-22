@@ -1,6 +1,6 @@
 # Alternates
 
-Guide art replaced on 2026-09-12 (docs/TODO.md item 5). Most of it was replaced
+Guide art replaced on 2026-09-12 (archive/docs-completed/TODO_COMPLETED_2026-09-22.md, the guide-art pass). Most of it was replaced
 because the animal in the frame was not the species the guide is about: eight
 from the first skim pass, three from the second, four composites from the third,
 two more from the fourth.
