@@ -191,6 +191,43 @@ function probesFor(quote) {
   return out;
 }
 
+// Words worth searching on: long enough to be distinctive, and not the
+// connective tissue every statute is made of.
+const STOP = new Set('the a an of and or to in on for by is are be been shall not no any all such other with from as at that this which person species including includes'.split(' '));
+
+// A quote can be present and still fail a contiguous match, because the page
+// holds it in a different order. Maine's unrestricted species list is a
+// two-column table and pypdf emits the columns swapped, so a cell quoting
+// "Mustela putorius furo  Domestic Ferret" meets "Domestic Ferret" then
+// "Mustela putorius furo" and no window lines up.
+//
+// So: if every distinctive word in the quote sits inside one short span of the
+// page, the quote is there. That is much stronger than finding the words
+// scattered through the document, and it is order-blind, which is the whole
+// point. Held to at least four distinct words, because three common ones
+// landing near each other is a coincidence rather than a citation.
+const SPAN_CHARS = 320;
+const SPAN_MIN_WORDS = 4;
+function spanMatch(flat, quote) {
+  const words = [...new Set(flatten(quote).split(' '))].filter((w) => w.length > 3 && !STOP.has(w));
+  if (words.length < SPAN_MIN_WORDS) return false;
+  const probe = words.slice(0, 10);
+  // Anchor on the rarest word so the scan is short.
+  const anchorWord = probe
+    .map((w) => ({ w, n: flat.split(w).length - 1 }))
+    .filter((x) => x.n > 0)
+    .sort((a, b) => a.n - b.n)[0];
+  if (!anchorWord || anchorWord.n > 200) return false;
+  let from = 0;
+  for (;;) {
+    const at = flat.indexOf(anchorWord.w, from);
+    if (at === -1) return false;
+    from = at + anchorWord.w.length;
+    const win = flat.slice(Math.max(0, at - SPAN_CHARS), at + SPAN_CHARS);
+    if (probe.every((w) => win.includes(w))) return true;
+  }
+}
+
 // Returns the cells whose quote no longer appears, or null when the quote
 // check could not be run at all (a PDF, or a page with no probeable quotes).
 function checkQuotes(text, cells) {
@@ -202,7 +239,9 @@ function checkQuotes(text, cells) {
     const probes = probesFor(c.quote);
     if (!probes.length) continue;
     checked.push(c);
-    if (!probes.some((p) => flat.includes(p))) missing.push(c);
+    if (probes.some((p) => flat.includes(p))) continue;
+    if (spanMatch(flat, c.quote)) continue;
+    missing.push(c);
   }
   if (!checked.length) return null;
   return { checked: checked.length, missing };
