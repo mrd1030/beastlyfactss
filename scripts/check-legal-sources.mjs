@@ -65,6 +65,16 @@ const ONLY = (() => {
 // Above this share of a source's quotes missing, assume the page is opaque
 // (JS-rendered, paywalled, redirected to a search form) rather than edited.
 const OPAQUE_RATIO = 0.6;
+// Below this many characters of normalized text, the response carried no
+// statute. Several of these sites serve their text only to a browser and hand a
+// bot a shell, and some do it from a datacentre IP while serving a home
+// connection fine. That is not an edit, and reporting it as one cost a false
+// alarm on the very first CI run: le.utah.gov returned 2213 characters from a
+// laptop and 118 from a GitHub runner, which read as a 94.7% edit to a page no
+// one had touched. A shell has no usable hash and no findable quote, so it is
+// treated as a failed fetch rather than a change.
+const SHELL_CHARS = 500;
+
 // A page whose every cited quote still verifies, and which moved less than
 // this, changed its furniture. Reporting it costs a human a page read to learn
 // nothing, which is the failure mode this whole script is built around.
@@ -178,6 +188,7 @@ async function fetchOne(url, cells) {
       || buf.subarray(0, 5).toString('latin1') === '%PDF-';
     const raw = isPdf ? buf.toString('latin1') : buf.toString('utf8');
     const text = isPdf ? raw : normalize(raw);
+    if (!isPdf && text.length < SHELL_CHARS) return { error: `shell response, ${text.length} chars` };
     const out = { hash: hash(text), length: text.length, kind: isPdf ? 'pdf' : 'html' };
     // A PDF is bytes here, not words, so its quotes cannot be searched without
     // a parser. Hash change is the only signal those sources give.

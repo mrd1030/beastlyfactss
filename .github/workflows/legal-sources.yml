@@ -20,6 +20,11 @@ on:
     # morning" rather than exact.
     - cron: '0 9 1 * *'
   workflow_dispatch:
+    inputs:
+      refresh_baseline:
+        description: 'Rewrite the baseline from this runner and commit it, instead of checking against it'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -44,8 +49,25 @@ jobs:
       # No npm ci. The script uses only node builtins and global fetch, so
       # installing the site's dependencies would add several minutes to a job
       # whose whole point is to be cheap.
+      # The baseline has to be written from the same vantage point that checks
+      # it. A runner and a home connection do not reach the same set of these
+      # sites: a baseline written elsewhere left nine sources permanently
+      # reporting as NEW here, because CI can reach them and the machine that
+      # wrote the baseline could not.
+      - name: Refresh the baseline from this runner
+        if: inputs.refresh_baseline
+        run: |
+          node scripts/check-legal-sources.mjs --write
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add docs/legal-source-hashes.json
+          git diff --staged --quiet && echo 'Baseline unchanged.' && exit 0
+          git commit -m 'Refresh the legal source baseline from CI [CI Skip]'
+          git push
+
       - name: Check legal sources
         id: check
+        if: ${{ !inputs.refresh_baseline }}
         run: |
           set +e
           node scripts/check-legal-sources.mjs > report.txt 2>&1

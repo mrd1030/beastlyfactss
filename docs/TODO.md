@@ -409,6 +409,26 @@ bills against the subscription rather than opening a pay-as-you-go API balance.
 Until it is set, the check runs and files its issue exactly as before and the
 reading job skips.
 
+### Refreshing the baseline
+
+`workflow_dispatch` takes a `refresh_baseline` input. With it on, the job writes
+the baseline from the runner and commits it instead of checking against it.
+
+Use it rather than running `--write` locally, because the baseline has to be
+written from the same vantage point that checks it. A runner and a home
+connection do not reach the same set of these sites. The first CI run reported
+nine sources as NEW purely because CI could reach them and the machine that
+wrote the baseline could not, and Illinois, Texas, Michigan, Kentucky and
+Mississippi all refuse a runner while answering this container.
+
+### Open: `ut-23a-1-101` points at a shell
+
+Its own source note already says le.utah.gov serves the section text only from
+the versioned URL, `/xcode/Title23A/Chapter1/C23A-1-S101_<version>.html`, and
+that the plain section page is a shell. The `url` on file is the plain one, so
+the check can never verify those four cells. Worth pointing at a URL that serves
+text, though the versioned one presumably changes with each version.
+
 The session is instructed that leaving a cell alone is correct behavior when a
 source will not load or a section cannot be found, and that it must not bump
 `verifiedOn` on anything it could not verify. A guessed cell is the one outcome
@@ -431,10 +451,14 @@ this whole job exists to prevent.
   dropped rather than put in front of a reader.
 - It cannot check a PDF's quotes. 12 or so sources are PDFs or .docx, where the
   fetched bytes are not words. Hash change is the only signal those give.
-- It cannot check an opaque page's quotes. 37 sources render their statute in
-  JavaScript, or sit behind a viewer, so the fetch returns a shell and every
-  quote goes missing at once. A source whose quotes ALL miss is classed opaque,
-  not changed, and never alarms.
+- It cannot check an opaque page's quotes. Around 37 sources render their
+  statute in JavaScript, or sit behind a viewer, so the fetch returns a shell
+  and every quote goes missing at once. A source whose quotes ALL miss is
+  classed opaque, not changed, and never alarms.
+- It does not treat a shell as an edit. Under 500 characters of text, the
+  response carried no statute and is counted as a failed fetch. The first CI run
+  proved why: `le.utah.gov` served 2213 characters to this container and 118 to
+  a GitHub runner, which read as a 94.7% edit to a page nobody had touched.
 
 ### Open: the 84-quote backlog
 
