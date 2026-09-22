@@ -40,7 +40,7 @@ const FROM_HUB = { from: 'legal-hub' };
 export default function ExoticPetLawsHub() {
   const stateCount = 52;
   const title = withBrand('Exotic Pet Laws by State: What Is Actually Banned');
-  const description = `What US exotic pet law really restricts, how state law is structured, and every species we cover, ${ANIMALS_AZ.length} animals checked against the statutes across ${stateCount} jurisdictions.`;
+  const description = `What US exotic pet law really restricts and how state law works, with ${ANIMALS_AZ.length} animals checked against the statutes in ${stateCount} jurisdictions.`;
   const canonical = `${SITE}/exotic-pet-laws/`;
 
   return (

@@ -181,7 +181,7 @@ export default function Glossary() {
   const activeResults = searchResults || letterResults;
   const isFiltered = activeResults !== null;
 
-  const DESCRIPTION = `Plain-English glossary of ${TOTAL_TERMS}+ pet care and animal science terms, from husbandry, UVB, and brumation to dog and cat health, genetics, and aquarium chemistry. Every entry links to the guide where it matters.`;
+  const DESCRIPTION = `Plain-English glossary of ${TOTAL_TERMS}+ pet care and animal science terms, from UVB and brumation to genetics and water chemistry, each linked to its guide.`;
 
   return (
     <div className="min-h-screen">

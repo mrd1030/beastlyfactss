@@ -9,6 +9,21 @@ const CANONICAL = 'https://beastlyfacts.com/beastlypedia/';
 const DESCRIPTION =
   'Wild animal profiles from Beastly Facts. Short, curious guides to how remarkable animals live, where they are found, and what makes each one strange.';
 
+const GROUP_DESCRIPTIONS = {
+  'Mammals':
+    'Wild mammal profiles from Beastly Facts: how remarkable mammals live, where they are found, and the strange traits that set each one apart.',
+  'Reptiles':
+    'Wild reptile profiles from Beastly Facts: lizards, snakes, turtles, and crocodilians, where they live, and what makes each one strange.',
+  'Amphibians':
+    'Wild amphibian profiles from Beastly Facts: frogs, salamanders, and caecilians, where they live, and what makes each one strange.',
+  'Birds':
+    'Wild bird profiles from Beastly Facts: how remarkable birds live, where they are found, and the strange traits that set each one apart.',
+  'Marine Life':
+    'Marine life profiles from Beastly Facts: ocean animals from reefs to the deep sea, how they live, and what makes each one strange.',
+  'Other':
+    'Unusual animal profiles from Beastly Facts: the creatures that fit no other group, how they live, and what makes each one strange.',
+};
+
 export default function Beastlypedia() {
   const { groupSlug } = useParams();
   const activeGroup = useMemo(() => {
@@ -57,6 +72,7 @@ export default function Beastlypedia() {
     }`;
 
   const canonical = activeGroup === 'All' ? CANONICAL : `${CANONICAL}group/${groupSlug}/`;
+  const description = GROUP_DESCRIPTIONS[activeGroup] || DESCRIPTION;
   const title =
     activeGroup === 'All'
       ? 'Beastlypedia | Wild Animal Profiles | BeastlyFacts'
@@ -66,10 +82,10 @@ export default function Beastlypedia() {
     <div className="min-h-screen pt-12 px-4 sm:px-6 pb-16">
       <Helmet>
         <title>{title}</title>
-        <meta name="description" content={DESCRIPTION} />
+        <meta name="description" content={description} />
         <link rel="canonical" href={canonical} />
         <meta property="og:title" content={title} />
-        <meta property="og:description" content={DESCRIPTION} />
+        <meta property="og:description" content={description} />
         <meta property="og:url" content={canonical} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
@@ -77,7 +93,7 @@ export default function Beastlypedia() {
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={DESCRIPTION} />
+        <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
       </Helmet>
 

@@ -28,6 +28,7 @@ import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 // legalStatus.json here: the full matrix is a 400KB chunk, and importing it to
 // count restrictions dragged all of it onto every animal page. This is 2KB.
 import LEGAL_BY_ENCYCLOPEDIA_ID from '@/lib/generated/legal-summary.json';
+import { pickWithinLimit, TITLE_MAX } from '@/lib/utils/seo';
 
 function BioField({ label, value }) {
   return (
@@ -99,7 +100,11 @@ export default function EncyclopediaAnimal() {
   // has no way to "unset" a tag it doesn't declare, so leaving these fixed
   // at 1200x630 would silently misdeclare every animal photo's real dimensions.
   const ogImageDims = (guide?.image && IMAGE_DIMENSIONS[guide.image]) || { width: 1200, height: 630 };
-  const pageTitle = `${animal.name} - Encyclopedia | Beastly Facts`;
+  const pageTitle = pickWithinLimit([
+    `${animal.name} - Encyclopedia | Beastly Facts`,
+    `${animal.name} | Encyclopedia`,
+    animal.name,
+  ], TITLE_MAX);
   const pageDescription = truncateDescription(bio.overview
     || `Learn about the ${animal.name} (${animal.scientific}) - natural habitat, wild diet, lifespan, size, and conservation status.`);
   const canonicalUrl = `https://beastlyfacts.com/encyclopedia/animal/${animal.id}/`;

@@ -13,6 +13,7 @@ import PostEngagement from '@/components/blog/PostEngagement';
 import ReadingProgressBar from '@/components/blog/ReadingProgressBar';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 import LocalImage from '@/components/shared/LocalImage';
+import { pickWithinLimit, TITLE_MAX } from '@/lib/utils/seo';
 
 // Story titles all start with "Chronicles of <character>:" - the sidebar and
 // cards drop that prefix so the episode name is what stands out.
@@ -48,7 +49,11 @@ export default function Chronicles() {
   // in the suffix) - the full form pushed several titles past 100 chars,
   // flagged by the Ahrefs 2026-07-16 audit.
   const pageTitle = isReader && story
-    ? `${episodeTitle(story.seoTitle || story.title)} | Chronicles of ${series.shortName}`
+    ? pickWithinLimit([
+        `${episodeTitle(story.seoTitle || story.title)} | Chronicles of ${series.shortName}`,
+        `${episodeTitle(story.seoTitle || story.title)} | ${series.shortName}`,
+        episodeTitle(story.seoTitle || story.title),
+      ], TITLE_MAX)
     : `Chronicles of ${series.character} | Beastly Facts`;
   const pageDescription = truncateDescription(
     (isReader && (story?.seoDescription || story?.excerpt)) ||

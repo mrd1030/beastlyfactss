@@ -21,8 +21,8 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const failures = [];
 const truncated = [];
 
-// Blog.jsx caps the meta description at 155 via truncateDescription.
-const TRUNCATE_AT = 155;
+// Blog.jsx caps the excerpt fallback at 160 via truncateDescription.
+const TRUNCATE_AT = 160;
 
 /* ------------------------------------------------------------------ articles */
 

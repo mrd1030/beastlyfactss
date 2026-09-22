@@ -844,6 +844,7 @@ export const CARE_PACKAGES = [
     samplePages: 4,
     cover: '/assets/guides/ball-python.jpg',
     blurb: 'Complete 35-page printable guide with thermostat and probe placement, the humidity range that decides everything, a full prey chart, health triage, and printable owner tools.',
+    seoDescription: '35-page printable ball python guide: thermostat and probe placement, the humidity range that decides everything, a full prey chart, and health triage.',
     bullets: [
       'Housing, temperature and humidity, substrate, handling, feeding by age, and enrichment in one guide',
       'Health section with red flags, respiratory infection and scale rot, mouth rot, mites and thermal burns, and stuck shed, feeding refusal and regurgitation guidance',
@@ -925,6 +926,7 @@ export const CARE_PACKAGES = [
     samplePages: 4,
     cover: '/assets/guides/betta-fish.jpg',
     blurb: 'Complete 37-page printable guide with tank and heater targets, the water numbers that actually matter, a full fishless cycling walkthrough, health triage, and owner checklists.',
+    seoDescription: '37-page printable betta guide: tank and heater targets, the water numbers that matter, a full fishless cycling walkthrough, and health triage.',
     bullets: [
       'Tank, heater and filter, water parameters, cycling and water changes, diet, and enrichment in one guide',
       'Health section with red flags, fin rot, ich and velvet, swim bladder, dropsy and columnaris, and stress, aggression and tankmate guidance',
@@ -1097,6 +1099,7 @@ export const CARE_PACKAGES = [
     samplePages: 4,
     cover: '/assets/guides/rabbit.jpg',
     blurb: 'Complete 40-page printable guide with the real space standard, unlimited hay and why it is the whole diet, three pages on GI stasis, bonding a pair, and owner checklists.',
+    seoDescription: '40-page printable rabbit guide: the real space standard, why unlimited hay is the whole diet, three pages on GI stasis, and bonding a pair.',
     bullets: [
       'Housing and space, flooring and litter training, handling, diet by life stage, and enrichment in one guide',
       'Health section with red flags, GI stasis, dental disease and flystrike, and snuffles, uterine cancer, E. cuniculi and sore hocks guidance',
@@ -1183,6 +1186,7 @@ export const CARE_PACKAGES = [
     samplePages: 5,
     cover: '/assets/guides/tarantula.jpg',
     blurb: 'Complete 44-page printable guide with why the enclosure is low and wide, substrate depth by species type, the fasting that is normal, the dehydration that is not, molting start to finish, and a safe rehousing method.',
+    seoDescription: '44-page printable tarantula guide: low, wide enclosures, substrate depth by type, normal fasting vs. dehydration, molting, and safe rehousing.',
     bullets: [
       'Enclosure shape and substrate, humidity and ventilation, why handling is off the table, feeding by life stage, and enrichment in one guide',
       'Health section with red flags, dehydration, molting start to finish, and falls, mites, oral nematodes and DKS guidance',

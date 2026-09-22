@@ -399,7 +399,7 @@ export default function Blog() {
     : null;
   const blogTitle = catTitle
     ? `${catTitle} Articles | Beastly Facts`
-    : 'The Critter Digest | Reptile & Exotic Pet Care Blog | Beastly Facts';
+    : 'The Critter Digest | Exotic Pet Care Blog | Beastly Facts';
   const blogDescription = catTitle
     ? `Browse all ${catTitle} articles on Beastly Facts - care guides, pet tips, and animal husbandry deep-dives from The Critter Digest.`
     : 'Read the Critter Digest - in-depth reptile and exotic pet care guides, husbandry deep-dives, and pet tips from Beastly Facts. New articles every week.';
@@ -796,7 +796,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
   // are hand-written and usually already a good length, but nothing upstream
   // enforces that, so a too-long field would otherwise ship straight to
   // the meta tag uncut.
-  const postDescription = truncateDescription(post.seoDescription || post.excerpt || `Read ${post.title} on Beastly Facts - in-depth reptile and exotic pet care from the Critter Digest.`);
+  const postDescription = post.seoDescription || truncateDescription(post.excerpt || `Read ${post.title} on Beastly Facts - in-depth reptile and exotic pet care from the Critter Digest.`);
   // The hero fallback is exactly 1200x630, but a real post.image asset has
   // its own size, so og:image:width/height must be looked up per-image rather
   // than left at a fixed default (Helmet has no way to "unset" a tag, so a

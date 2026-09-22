@@ -65,7 +65,7 @@ export default function CarePackageProduct() {
   const theme = getCarePackageTheme(pkg.id);
   const url = `${BASE}/care-packages/${pkg.id}/`;
   const title = `${pkg.name} | Beastly Facts`;
-  const description = pkg.blurb;
+  const description = pkg.seoDescription || pkg.blurb;
   // Two covers. `cover` is the guide hero, landscape, and stays the OG image
   // because link previews want 1.91:1. The hero shows the package's own cover
   // page instead, rendered from the PDF by render-care-package-previews.mjs,

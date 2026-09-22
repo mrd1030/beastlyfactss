@@ -4,7 +4,7 @@ import { motion } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
 import { AUTHOR, PUBLISHER } from '@/lib/data/author';
 
-const DESCRIPTION = 'Beastly Facts is run by Michael Ryan, a keeper of two rescued bearded dragons, who writes sourced care guides and animal facts. Not a vet, just the research he wishes he had.';
+const DESCRIPTION = 'Beastly Facts is run by Michael Ryan, who keeps two rescued bearded dragons and writes sourced care guides. Not a vet, just the research he wishes he had.';
 
 // The About page in Michael's own words. Every paragraph here is a claim a
 // reader or a reviewer can weigh: who writes the site, which animals he has
