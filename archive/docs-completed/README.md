@@ -23,5 +23,11 @@ One-off plans with nothing left in them, which have no live counterpart:
 - HUB_ROUTER_REVIEWS_COMPLETED_2026-09-16.md: seven action items, 84 hubs rebuilt.
 - CONFLICTS_COMPLETED_2026-09-16.md: every logged conflict resolved.
 - BATCH_D_E_REVIEW_COMPLETED_2026-09-16.md: the batch D and E blind reader review.
+- BEEF_UP_PLAN_COMPLETED_2026-09-22.md: closed by decision rather than by
+  completion. Batches 1 to 5 shipped, 20 articles. Batches 6 to 10, the
+  pick-up sections for 27 handling guides, were never run and were dropped
+  once Search Console showed handling and cost guides to be the two
+  worst-converting page types on the site. The `/beef-up` command went with
+  it. Kept for the per-slug scoping, which is real research.
 
 Nothing here is a source of current instructions.

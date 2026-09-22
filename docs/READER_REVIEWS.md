@@ -32,7 +32,7 @@ review against the Health and More list before treating a gap as real.
   and lazy-loaded images in flattened captures.
 - What the test is good at: cross-page contradictions, questions left
   stranded on one page, sentences that read as an editor's note. What it is
-  not: fact-checking against sources (that is the beef-up loop) and layout.
+  not: fact-checking against sources and layout.
 
 ## Bearded dragon (2026-09-08, five deep dives, before the extractor existed)
 

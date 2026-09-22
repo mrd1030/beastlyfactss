@@ -38,8 +38,7 @@ over anything here.
 | Voice checker, runs in front of `build` | scripts/check-voice.mjs (`--slug`, `--match <regex>`, `--strict`, `--write-baseline`, `--json`) |
 | Legacy failures the strict gate skips | scripts/voice-baseline.json (111 slugs, all standalone blog posts outside any series) |
 | Voice pass command | .claude/commands/voice-pass.md, run as `/voice-pass <regex> [limit N] [go]` |
-| Thin-article expansion plan | docs/BEEF_UP_PLAN.md (batches 1 to 5) |
-| Expansion command | .claude/commands/beef-up.md, run as `/beef-up <batch> go` |
+| Thin-article expansion, closed 2026-09-22 | archive/docs-completed/BEEF_UP_PLAN_COMPLETED_2026-09-22.md |
 | Article content | content/{guides,blog,fun-facts,short-story}/*.mdx |
 | Article page renderer | src/pages/Blog.jsx (title, excerpt block, FAQ list, schema) |
 | MDX components | src/components/mdx/ (ComparisonTable, FunFact, AffiliateLink, DemotedH1, ...) |
@@ -60,11 +59,13 @@ over anything here.
   on article pages at all (branch claude/more-on-block; the
   `ledeMatchesExcerpt` skip caught 196 of 435 near-copies, so the block
   went), and FAQ answers cannot carry a markdown link (`faq-link` rule).
-- Beef-up: batches 1 to 5 are on main, each fact-checked against every
-  cited source and checked by a second session. Three batch 5 articles
-  (toad, millipede, cockroach) carry two sources, not three, by decision.
-  Batches 6 to 10 (pick-up sections for the hands-on handling guides) are
-  scoped in docs/BEEF_UP_PLAN.md and not started.
+- Beef-up, closed 2026-09-22: batches 1 to 5 are on main, each
+  fact-checked against every cited source and checked by a second session.
+  Three batch 5 articles (toad, millipede, cockroach) carry two sources,
+  not three, by decision. Batches 6 to 10 were never run and the loop was
+  retired rather than finished, so the pick-up sections do not exist and
+  are not coming. The plan and the command are gone; the scoping is in
+  archive/docs-completed/BEEF_UP_PLAN_COMPLETED_2026-09-22.md.
 - Article pages, 2026-09-08 (branch claude/more-on-block, merged): the
   Deep Dive list prerenders (the sidebar used to be the string
   "Loading..." in every static page) and opens with a "<Species> care
@@ -148,14 +149,17 @@ pass is done: self-reference and section-link are errors in check-voice now,
 with vs guides, overviews, fun-facts posts and the welcome post exempt from
 section-link by design. All 84 hubs are routers and reconciled, so the "legacy
 hubs" and print-button questions are moot. Item 3 is still open: none of the
-batch 6 handling guides carry a pick-up section. The "Prices last checked" line
-sits on 9 of 84 cost guides.
+batch 6 handling guides carry a pick-up section, and as of 2026-09-22 that is
+the settled answer rather than an open job: the beef-up loop is retired. The
+"Prices last checked" line sits on 9 of 84 cost guides.
 
 1. Merge claude/more-on-block once Mike says merge.
 2. FunFact repeats: 22 FunFact boxes restate a body sentence nearly
    verbatim. Prompt at the end of this file.
-3. `/beef-up 6 go` through `/beef-up 9 go` (pick-up sections). Prompt at
-   the end of this file. Batch 10 is optional.
+3. ~~Beef-up batches 6 to 10 (pick-up sections).~~ Retired 2026-09-22
+   without being run. Handling guides convert at 0.35% and cost guides at
+   0.32%, the two worst page types in Search Console, so 27 more handling
+   guides was the wrong place to spend the words.
 4. Linking pass, remainder: 48 self-reference and 82 section-link
    warnings are left, all on articles outside the species series (vs
    guides, overviews, cross-species guides, standalone posts). The vs and
@@ -284,93 +288,6 @@ sits on 9 of 84 cost guides.
    before they are reconciled (they have, since the whole-guide print is
    gone).
 7. The 111 baseline blog posts: noted.
-
-## The prompt to paste into a new session
-
-See the end of this file. It assumes Fable 5.1, a fresh branch, and that
-Mike will say "merge" when a piece is done.
-
----
-
-```
-Read READMEFIRST.md, then CLAUDE.md, then the "Writing an article" section
-of docs/RULES.md, then .claude/commands/beef-up.md. Work on a new branch
-from main named claude/beef-up-batch-5. Never push main unless I say
-merge. Max two agents at a time.
-
-Run /beef-up 5 go. Then verify it the way READMEFIRST.md describes:
-checker on every slug plus the strict, link, and related-articles gates;
-diff each file against main so no link target, affiliate link, component,
-date, or existing number changed; compare every rewritten FAQ answer to
-the old one for lost hedges or figures the body does not carry; then run
-one fact-check agent that opens every cited URL and classifies each added
-claim as supported, unsupported, misattributed, or contradicted, and
-checks that any pre-existing number in the article was not changed. Fix
-everything it finds and run it once more. Sources hold facts only: no
-retailer product pages. Push the branch and report the before and after
-word counts per article, the sources added, and anything left unfixed.
-Then stop and wait for me to say merge.
-```
-
-## The check prompt, for a fresh session after a batch is pushed
-
-```
-Read READMEFIRST.md, then CLAUDE.md, then the "Writing an article" section
-of docs/RULES.md. Fetch origin and check out branch claude/beef-up-batch-5.
-Do not push main. Max two agents at a time.
-
-You are the second pair of eyes on a batch another session wrote. Verify
-it the way READMEFIRST.md describes, in this order:
-1. node scripts/check-voice.mjs --slug on every changed guide, then
-   --strict, check-internal-links.mjs, check-related-articles.mjs,
-   check-affiliate-mdx.mjs, check-seo-tags.mjs.
-2. Diff every changed file against main: link targets, AffiliateLink
-   hrefs, component names, dates, tags, and every pre-existing number must
-   be unchanged. Sources may only gain entries, and none may be a retailer
-   product or listing page. No em or en dashes anywhere in the diff.
-3. For every rewritten FAQ answer, compare old and new: no hedge lost, no
-   figure the body does not carry, no growth, no near-verbatim body copy.
-4. Run one agent that opens every cited URL and classifies each added
-   claim as supported, unsupported, misattributed, or contradicted, checks
-   arithmetic in any table, and flags any pre-existing number that
-   changed.
-5. Read two of the guides yourself, before and after, as a stranger.
-Fix every defect on the branch, rerun step 1, commit "Beef up: batch 5
-check", push the branch, and report: what the batch got right, what you
-fixed with before and after quotes, and anything you left because it was
-in Mike's original text. Then stop and wait for me to say merge.
-```
-
-## The pick-up prompt, for a fresh session (Opus, medium effort)
-
-Writing and fact-checking here are mechanical against named sources, so
-Opus at medium effort does the batch and its own fact-check agent. Use
-Fable only for the second-eyes check prompt above, and only after the
-batch is pushed.
-
-```
-Read READMEFIRST.md, then CLAUDE.md, then the "Writing an article" section
-of docs/RULES.md, then .claude/commands/beef-up.md. Work on a new branch
-from main named claude/beef-up-batch-6. Never push main unless I say
-merge. Max two agents at a time, one at a time where you can.
-
-Run /beef-up 6 go. The section is "How to pick one up", described per slug
-in the batch 6 table of docs/BEEF_UP_PLAN.md: approach, where the hands
-go, how the body is supported, how the animal goes back down. 120 to 180
-words. Do not repeat the stress signs or session lengths already on the
-page. Ceiling 1,000 body words, 1,100 for the slugs the table marks.
-Verify the way READMEFIRST.md describes: checker on every slug plus the
-strict, link, related-articles, affiliate, and SEO gates; diff each file
-against main so no link target, affiliate link, component, date, tag, or
-existing number changed; then one fact-check agent (Opus) that opens every
-cited URL and classifies each added claim as supported, unsupported,
-misattributed, or contradicted. Fix everything it finds. Sources hold
-facts only: no retailer pages. Push the branch and report before and
-after word counts, sources added, and anything left unfixed. Then stop
-and wait for me to say merge.
-```
-
-Then the same prompt with 7, 8, 9 in place of 6.
 
 ## The FunFact prompt, for a fresh session (Opus, low effort)
 

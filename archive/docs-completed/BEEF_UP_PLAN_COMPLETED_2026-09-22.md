@@ -1,4 +1,40 @@
-# Beef-up plan: the thin articles worth expanding
+# Beef-up plan, closed 2026-09-22
+
+**Closed by decision, not by completion.** Batches 1 to 5 shipped. Batches 6 to
+10 were never run and are not coming back. The `/beef-up` command is deleted and
+this file is history, not instructions.
+
+## What shipped
+
+Batches 1 to 5, 20 articles, each fact-checked against every cited source and
+checked by a second session. The four foundation targets are the clearest
+measure of what the loop did when it ran: crested gecko humidity went 275 to 752
+body words, leopard gecko temperature 298 to 1,014, tokay health 368 to 1,029,
+uromastyx health 383 to 881. Three batch 5 articles (toad, millipede,
+cockroach) carry two sources rather than three, by decision at the time.
+
+## What did not, and why it was dropped
+
+Batches 6 to 10, the "How to pick one up" sections for 27 hands-on handling
+guides. None of them exist. A repo check on 2026-09-16 (commit a7d4b7a) had
+already found the same thing, and a re-check on 2026-09-22 found the section
+heading on 1 of the 27, that one pre-existing.
+
+They were dropped on the numbers. The first Search Console export the site ever
+had, 28 days to 2026-09-19, put handling guides at 9,235 impressions and 32
+clicks, a 0.35% clickthrough rate, and cost guides at 21,610 impressions and 69
+clicks, 0.32%. Those are the two worst-converting page types on the site.
+Legal pages, 13.6% of the pages, took 37% of all clicks at 0.95%. Batches 6 to
+10 would have spent 27 articles of research on the weakest type on the site, and
+batch 2 had already spent seven on the second weakest.
+
+Nothing below is a current instruction. The scoping is kept because the
+per-slug notes are real research and would have to be redone from scratch if
+this is ever reopened against a different page type.
+
+---
+
+# The original plan, as written 2026-09-07
 
 Scoped 2026-09-07 from a pass over all 772 articles. 435 sit at or under
 800 body words, and most of those are short by design: the split care
