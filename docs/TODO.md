@@ -388,8 +388,20 @@ Both are reported as transitions, never as states. A quote that was already
 unfindable when the baseline was written stays unfindable every month, and a
 checker that re-reports it every month is a checker nobody opens.
 
-Still no model call and no API key in the check itself. It is 208 HTTP GETs and
-a hash, a few minutes of CI a month.
+PDFs and .docx files are read as words, not bytes. 50 sources are PDFs and 4
+are .docx, and 879 cells rest on them, a third of the matrix that had no quote
+verification at all until they could be searched. PDFs go through pypdf
+(`scripts/pdf-text.py`), with fontTools alongside it, which is not optional:
+without it pypdf cannot resolve subset CFF Type1 encodings and whole documents
+come back as control characters. A .docx is a zip and node inflates it unaided.
+Either failing falls back to hashing the bytes.
+
+The run prints a coverage line, how many quotable cells had their quote found
+on the live page. Watch that number: a source quietly becoming unreadable looks
+like good news in every other line of the summary.
+
+Still no model call and no API key in the check itself. It is 208 HTTP GETs, a
+hash and a pip install, a few minutes of CI a month.
 
 ### When it fires
 
@@ -449,8 +461,6 @@ this whole job exists to prevent.
 - It does not report furniture. A page that moved less than 0.5% while every
   cited quote still verifies, or a source no cell cites at all, is counted and
   dropped rather than put in front of a reader.
-- It cannot check a PDF's quotes. 12 or so sources are PDFs or .docx, where the
-  fetched bytes are not words. Hash change is the only signal those give.
 - It cannot check an opaque page's quotes. Around 37 sources render their
   statute in JavaScript, or sit behind a viewer, so the fetch returns a shell
   and every quote goes missing at once. A source whose quotes ALL miss is
@@ -460,21 +470,35 @@ this whole job exists to prevent.
   proved why: `le.utah.gov` served 2213 characters to this container and 118 to
   a GitHub runner, which read as a 94.7% edit to a page nobody had touched.
 
-### Open: the 84-quote backlog
+### Open: the 112-quote backlog
 
-The first quote-verification pass found 84 cells across 19 sources whose quoted
-sentence could not be found on the live page. They were recorded in the baseline
-so they do not alarm every month, which means they will otherwise sit there
-forever. Biggest clusters: `ri-250-40-05-3` (22 cells), `de-903` (9),
-`or-635-056-0060` (8), `az-r12-4-406` (7), `va-4vac15-30-40` (7),
-`ks-115-20-3` (5), `nv-nrs-503-597` (4), `wa-rcw-16-30` (4).
+Quote verification found 112 cells across 27 sources whose quoted sentence
+cannot be found on the live page. They are recorded in the baseline so they do
+not alarm every month, which also means they will sit there forever unless
+someone goes looking. Biggest clusters: `ri-250-40-05-3` (22 cells),
+`me-unrestricted` (12), `de-903` (9), `or-635-056-0060` (8), `az-r12-4-406` (7),
+`va-4vac15-30-40` (7), `ks-115-20-3` (5), `ar-unrestricted` (5).
 
-Some share is the matcher rather than the matrix: a quote stitched from a table,
-or one accurate but transcribed loosely. Some share is real drift. Nobody has
-looked yet, and the two cannot be told apart without opening the pages.
+Some share is the matcher rather than the matrix. `me-unrestricted` is a
+two-column species table and pypdf emits the columns swapped, so a quote stored
+as "Mustela putorius furo  Domestic Ferret" comes back in the other order and no
+contiguous window matches. Some share is real drift. The two cannot be told
+apart without opening the pages.
 
 Worth a session of its own, source by source rather than cell by cell, since the
-19 sources are the unit of work and not the 84 cells. Not urgent: these are
+27 sources are the unit of work and not the 112 cells. Not urgent: these are
 cells already published and already sourced, and a quote that has drifted is not
 the same as a status that is wrong.
+
+### Open: the sources CI cannot reach
+
+Roughly 30 sources refuse a GitHub runner on any given day, and the set is not
+the same as the set this container cannot reach. Illinois, Texas, Michigan,
+Kentucky and Mississippi answer here and refuse a runner. Massachusetts, New
+York, Georgia and Hawaii refuse both. Nothing returns 404, so none of them has
+moved, but a source the monthly job cannot fetch is a source the monthly job is
+not actually watching, and the summary counts it as neither good nor bad.
+
+Unsolved. pypdf does not help here: the fetch has to happen somewhere the site
+will answer.
 
