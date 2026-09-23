@@ -9,6 +9,8 @@ export const catGuides = [
     image: "/assets/guides/cat-essentials.jpg",
     sizeCategory: "All Sizes",
     tagline: "Everything your cat would tell you itself, if it felt like it!",
+    seoTitle: "Cat Care Guide: Housing, Diet, and Health",
+    seoDescription: "Indoor cat care that settles the basics: why indoor cats outlive outdoor ones, the litter box count that works, wet versus dry food, and the vaccines to get.",
     funFact: "Cats spend approximately 30 to 50% of their waking hours grooming themselves. This is not just cleanliness: grooming regulates body temperature, stimulates circulation, distributes natural oils, and is a bonding behavior between cats.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -67,6 +69,8 @@ export const catGuides = [
     image: "/assets/guides/cat-american-shorthair.jpg",
     sizeCategory: "All Sizes",
     tagline: "The barn cat that cleaned up nicely and stayed tough about it!",
+    seoTitle: "American Shorthair Care Guide: Diet, Heart, and Home",
+    seoDescription: "American Shorthair care, starting with how it differs from a domestic shorthair, then heart screening, the weight creep to stop early, and time alone.",
     funFact: "For a pedigree cat, the American Shorthair is remarkably outbred. In the largest genetic survey of cat breeds its observed heterozygosity measured 0.57, above the purebred average of 0.51 and closer to random-bred cats at 0.65 than to bottlenecked breeds such as the Singapura, which came in at 0.34.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -122,6 +126,8 @@ export const catGuides = [
     image: "/assets/guides/cat-bengal.jpg",
     sizeCategory: "All Sizes",
     tagline: "The living room leopard that treats your shelves as a climbing route!",
+    seoTitle: "Bengal Cat Care Guide: Energy, DNA Tests, and Health",
+    seoDescription: "Bengal care for a cat that climbs everything: the daily attention it demands, whether it suits a first owner, the DNA tests that matter, and kitten diarrhea.",
     funFact: "The Bengal's most common inherited disease did not come from the wild side of the family tree. Pyruvate kinase deficiency, a recessive hemolytic anemia, sits at a 13 percent allele frequency in unbiased Bengal samples and 17.24 percent among 2,230 Bengals tested across the US and UK, a rate beaten only by the Singapura at 41.4 percent. It entered the breed through the domestic Abyssinian outcrosses used to turn Asian leopard cat hybrids into house cats. The leopard look is the safe part.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -175,6 +181,8 @@ export const catGuides = [
     image: "/assets/guides/cat-domestic-shorthair.jpg",
     sizeCategory: "All Sizes",
     tagline: "The everycat, with no pedigree, no pretense, and no shortage of opinions!",
+    seoTitle: "Domestic Shorthair Care Guide: Diet, Play, and Health",
+    seoDescription: "The everyday cat, sorted: whether tabby is a breed, how much a mixed background really helps, why a heart check still matters, and the prevention to put first.",
     funFact: "Nobody knew what gene made cats orange until 2025, when two teams published the answer simultaneously: a roughly 5 kb deletion in an intron of ARHGAP36 on the X chromosome. No other species has a mutation in that gene causing it to be expressed in pigment cells, so sex-linked orange as cats do it occurs only in cats.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -222,6 +230,8 @@ export const catGuides = [
     image: "/assets/guides/cat-maine-coon.jpg",
     sizeCategory: "All Sizes",
     tagline: "The shaggy giant that never got the memo about how big a lap is!",
+    seoTitle: "Maine Coon Care Guide: Size, Diet, and Heart Health",
+    seoDescription: "Maine Coon care for a cat this size: when growth ends, HCM screening and what an A31P result means, the hip x-ray question, and whether the kidney test matters.",
     funFact: "The breed's signature size and its hip problem are genetically the same trait. In 5,038 screened Maine Coons the severity of hip dysplasia was genetically correlated with body mass, so every generation bred toward the gentle giant look also selects for worse hips. Unwinding it has a visible price: eight generations of selection against dysplasia cut predicted hip scores by about two thirds, and the cats got roughly 33 grams smaller per generation.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -273,6 +283,8 @@ export const catGuides = [
     image: "/assets/guides/cat-persian.jpg",
     sizeCategory: "All Sizes",
     tagline: "The velvet cushion with a face, and a grooming habit to match!",
+    seoTitle: "Persian Cat Care Guide: Grooming, Diet, and Health",
+    seoDescription: "Persian care built around the coat and flat face: grooming a Persian cannot do itself, breathing and kidney risks, doll-face claims, and trouble with kibble.",
     funFact: "Persian breeders quietly pulled off one of the most successful genetic clean-ups in the cat fancy. Surveys from the 1990s and 2000s put polycystic kidney disease in Persians somewhere around 36 to 50 percent in most countries. Then the PKD1 DNA test arrived, and submissions to the UK lab that runs it went from 29 percent positive in 2005 to 10 percent in 2009. When researchers later genotyped 11,036 cats across 90 breeds, the variant turned up in none of the 118 Persians tested. A defect that once affected roughly half the breed was bred down to near-absence in about fifteen years by a cheek swab and breeder discipline.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -326,6 +338,8 @@ export const catGuides = [
     image: "/assets/guides/cat-ragdoll.jpg",
     sizeCategory: "All Sizes",
     tagline: "The big, unbothered cat that follows you from room to room!",
+    seoTitle: "Ragdoll Cat Care Guide: Grooming, Size, and Health",
+    seoDescription: "Ragdoll care for a big, calm lap cat: brushing 2 to 3 times a week, the real adult size that heads off overfeeding, the main heart risk, and life with kids.",
     funFact: "The breed's own registry says the limp is mostly legend. The CFA records that Ann Baker's foundation cat Josephine was so placid that she went limp when held, then adds the part nobody quotes: that characteristic is uncommon in modern Ragdolls, but it did give rise to the name of the breed. The name outlived the trait.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -375,6 +389,8 @@ export const catGuides = [
     image: "/assets/guides/cat-scottish-fold.jpg",
     sizeCategory: "All Sizes",
     tagline: "The folded-ear charmer whose famous ears come with a serious catch!",
+    seoTitle: "Scottish Fold Care Guide: Joints, Pain, and Health",
+    seoDescription: "A Scottish Fold needs a home set up for joint disease. Learn if every fold is affected, what fold-to-straight breeding hides, and the pain signs owners miss.",
     funFact: "Every Scottish Fold in the world traces back to one barn cat, Susie, found in Tayside, Scotland in 1961, and because she produced only a single litter it was her daughter Snooks who became the breed's foundation queen. The uncomfortable corollary is that the fold and the cartilage disease are the same dominant mutation, so no amount of selective breeding can keep one and discard the other.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -433,6 +449,8 @@ export const catGuides = [
     image: "/assets/guides/cat-siamese.jpg",
     sizeCategory: "All Sizes",
     tagline: "The vocal, opinionated cat that insists on being part of everything!",
+    seoTitle: "Siamese Cat Care Guide: Talking, Company, and Health",
+    seoDescription: "Siamese cats talk because they want company. Find out if one can be left alone all day, how trainable it is, and which eye, liver, and airway risks to watch.",
     funFact: "Siamese cats are one of the oldest and most recognizable cat breeds in the world, believed to originate in ancient Thailand (then Siam). Their distinctive color-point pattern (darker face, ears, paws, and tail) is caused by a temperature-sensitive enzyme: cooler areas of the body produce more pigment.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -483,6 +501,8 @@ export const catGuides = [
     image: "/assets/guides/cat-sphynx.jpg",
     sizeCategory: "All Sizes",
     tagline: "The warm, wrinkled velcro cat that needs baths and company in equal measure!",
+    seoTitle: "Sphynx Cat Care Guide: Warmth, Bathing, and Health",
+    seoDescription: "A hairless cat has its own rulebook: warmth and sun exposure, the bathing and ear routine, the hypoallergenic myth, and why a clear heart test is not the end.",
     funFact: "Despite being one of the rarest-looking pedigree cats, the Sphynx is genetically better off than many mainstream breeds. Repeated outcrossing to Devon Rex and American Shorthair lines over more than 30 years left it with observed heterozygosity of 0.58, above the purebred average of 0.51 and above the Persian's.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {

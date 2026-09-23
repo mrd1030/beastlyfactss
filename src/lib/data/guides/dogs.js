@@ -12,6 +12,8 @@ export const dogGuides = [
     image: "/assets/guides/dog-care-essentials.jpg",
     sizeCategory: "All Sizes",
     tagline: "The basics every dog assumes you already know!",
+    seoTitle: "Dog Care Guide: Diet, Exercise, and Health",
+    seoDescription: "The dog basics that matter most: how much exercise a dog needs, which foods are toxic, crate training done right, tooth brushing, and the socialization window.",
     funFact: "Dogs have a sense of smell that is 10,000 to 100,000 times more powerful than a human's. They can detect certain diseases, including cancer, diabetes, and epileptic seizures, through scent alone.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -69,6 +71,8 @@ export const dogGuides = [
     image: "/assets/guides/dog-small.jpg",
     sizeCategory: "Small",
     tagline: "Big personalities packed into a very small footprint!",
+    seoTitle: "Small Breed Dog Care: Diet, Teeth, and Health",
+    seoDescription: "Dogs under 20 lbs play by their own rules: harness over collar, why teeth go bad early, what a luxating patella is, small dog syndrome, and toy puppy meals.",
     funFact: "Small dogs typically live significantly longer than large breeds. Chihuahuas and Dachshunds regularly reach 15 to 18 years, while Great Danes average only 7 to 10 years. The reason is not fully understood, but metabolic rate differences are thought to play a role.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -123,6 +127,8 @@ export const dogGuides = [
     image: "/assets/guides/dog-medium.jpg",
     sizeCategory: "Medium",
     tagline: "The just-right size, with a to-do list all its own!",
+    seoTitle: "Medium Breed Dog Care: Exercise, Diet, and Health",
+    seoDescription: "Medium breed care for dogs of 20 to 60 lbs: the daily exercise target, whether an apartment works, why free-feeding backfires, and the health problems to watch.",
     funFact: "Medium-sized dogs (roughly 20 to 60 lbs) often show the most behavioral versatility. Studies show they tend to score higher on trainability assessments, possibly because they were historically bred for working roles that required responsiveness to human cues.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -177,6 +183,8 @@ export const dogGuides = [
     image: "/assets/guides/dog-large.jpg",
     sizeCategory: "Large",
     tagline: "More dog to love, and more of everything else to match!",
+    seoTitle: "Large Breed Dog Care: Diet, Bloat, and Joints",
+    seoDescription: "Big dogs need a different plan: why large breed puppies skip regular puppy food, the bloat signs that mean act now, what a raised bowl won't fix, and lifespan.",
     funFact: "Large and giant breed puppies must be fed specific large-breed puppy food that is lower in calcium and calories to prevent too-rapid bone growth, which can cause lifelong joint problems. Never feed giant breed puppies regular puppy food.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -234,6 +242,8 @@ export const dogGuides = [
     image: "/assets/guides/dog-beagle.jpg",
     sizeCategory: "Small",
     tagline: "A nose with a dog attached, and your fence is only a suggestion!",
+    seoTitle: "Beagle Care Guide: Fencing, Weight, and Health",
+    seoDescription: "Beagle care starts at the fence: at least five feet tall and dug in. Then off-leash trust, hunger, ear infections, seizures, and Musladin-Lueke syndrome.",
     funFact: "A Beagle's enrichment needs are olfactory, not athletic. Dogs carry roughly 800 to 1,200 functional olfactory receptor genes, and scenthounds like the Beagle were specifically selected for olfactory performance, which is why a 20 minute scent game tires one out more thoroughly than a 20 minute jog.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -292,6 +302,8 @@ export const dogGuides = [
     image: "/assets/guides/dog-border-collie.jpg",
     sizeCategory: "Medium",
     tagline: "The dog that will outthink you before breakfast and ask for more!",
+    seoTitle: "Border Collie Care Guide: Exercise, Tests, and Health",
+    seoDescription: "Border Collie care for a dog bred to run all day: how much exercise it truly needs, apartment life, the MDR1 drug test, collapse during fetch, and merle risks.",
     funFact: "A Border Collie named Chaser learned and retained the proper-noun names of 1,022 individual objects over three years of training, then demonstrated in controlled experiments that she understood names as referring to objects independently of the action commanded, could learn category nouns, and could infer the name of a new object by exclusion. The authors note this is a form of referential understanding normally attributed to human children.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -345,6 +357,8 @@ export const dogGuides = [
     image: "/assets/guides/dog-bulldog.jpg",
     sizeCategory: "Medium",
     tagline: "The snorting, sweet-natured tank that needs a watchful owner!",
+    seoTitle: "Bulldog Care Guide: Heat, Breathing, and Skin",
+    seoDescription: "A Bulldog cannot cool itself well. This guide starts with heat and BOAS, then covers skin fold care, why cesareans are routine, and what to ask a breeder.",
     funFact: "The Bulldog we know is a deliberate reconstruction. When Britain banned blood sports in 1835 the breed lost its job and nearly disappeared, and admirers spent the following decades reworking it into a companion, breeding away the aggression and reshaping the body. A survey of 102 breeding Bulldogs later found a single paternal haplotype in 93% of them, a measure of how narrow the pool doing that rebuilding was.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -403,6 +417,8 @@ export const dogGuides = [
     image: "/assets/guides/dog-dachshund.jpg",
     sizeCategory: "Small",
     tagline: "The long, low badger hound with a back you learn to protect!",
+    seoTitle: "Dachshund Care Guide: Back, Exercise, and Health",
+    seoDescription: "Dachshund care built around the back: what IVDD is, how much you can prevent, early disc warning signs, why a harness beats a collar, and mini versus standard.",
     funFact: "The Dachshund's short legs are not selective breeding for cuteness. They come from an FGF4 retrogene, a copied gene that reinserted itself on chromosome 12, and it sits at a frequency of about 0.99 in the breed. The same insertion that produces the shape also drives premature disc degeneration, with an odds ratio of 51.23 for intervertebral disc disease.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -460,6 +476,8 @@ export const dogGuides = [
     image: "/assets/guides/dog-french-bulldog.jpg",
     sizeCategory: "Small",
     tagline: "The bat-eared comedian that snores through its own punchlines!",
+    seoTitle: "French Bulldog Care Guide: Heat, Breathing, and Spine",
+    seoDescription: "Frenchie care for a flat face: whether BOAS can be fixed, why heat is dangerous, if snoring means trouble, swimming, spine problems, and food coming back up.",
     funFact: "The French Bulldog's signature upright bat ear is an American invention, not a French one. Europe accepted both the folded rose ear and the bat ear. American fanciers founded the French Bull Dog Club of America in 1897, the first club in the world devoted to the breed, wrote the first standard, and staged a show at the Waldorf-Astoria at which only bat-eared dogs were allowed to compete. The bat ear won and became the breed's defining feature worldwide.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -515,6 +533,8 @@ export const dogGuides = [
     image: "/assets/guides/dog-german-shepherd.jpg",
     sizeCategory: "Large",
     tagline: "The working dog that wants a job, and will invent one otherwise!",
+    seoTitle: "German Shepherd Care Guide: Training, Diet, and Health",
+    seoDescription: "Owning a German Shepherd: exercise and training, early socialization, what a degenerative myelopathy result means, EPI versus a loose stomach, and gastropexy.",
     funFact: "Female German Shepherds outlive males by 1.4 years. In 12,146 UK German Shepherds under primary veterinary care, median longevity was 11.1 years for females against 9.7 years for males, and males were recorded with aggression at more than twice the female rate, 6.75 percent against 2.78 percent. Sex is one of the strongest predictors of outcome in the breed.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -568,6 +588,8 @@ export const dogGuides = [
     image: "/assets/guides/dog-golden-retriever.jpg",
     sizeCategory: "Large",
     tagline: "The golden optimist that greets every stranger like an old friend!",
+    seoTitle: "Golden Retriever Care Guide: Coat, Training, and Health",
+    seoDescription: "Golden Retriever care that faces the cancer odds, eye checks for a dog that sees fine, an ichthyosis result, heavy shedding, training that works, and swimming.",
     funFact: "Golden Retrievers that die of cancer actually live longer than the ones that do not. In a UC Davis necropsy series of 655 Goldens, the median age at death was 9.83 years for dogs that died of cancer against 6.93 years for dogs that died of everything else. Cancer is in part the price the breed pays for surviving what kills other dogs younger.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -623,6 +645,8 @@ export const dogGuides = [
     image: "/assets/guides/dog-labrador-retriever.jpg",
     sizeCategory: "Large",
     tagline: "The big, cheerful retriever that never met a puddle it didn't like!",
+    seoTitle: "Labrador Care Guide: Weight, Exercise, and Health",
+    seoDescription: "Labrador care from the fridge door out: what the POMC mutation does to weight, daily exercise, coat color, exercise-induced collapse, and prelim hip scores.",
     funFact: "The appetite gene that makes Labradors chubby is the same gene that makes them good guide dogs. The POMC deletion drives food motivation, which is exactly what trainers select for, and assistance dog breeding stock carries the variant at a 45 percent allele frequency against 12 percent in the general Labrador population. Breeders selecting for trainability accidentally selected for obesity.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -676,6 +700,8 @@ export const dogGuides = [
     image: "/assets/guides/dog-rottweiler.jpg",
     sizeCategory: "Large",
     tagline: "The serious-looking softie that leans its entire weight against you!",
+    seoTitle: "Rottweiler Care Guide: Training, Joints, and Health",
+    seoDescription: "Rottweiler care for a 100 pound people dog: safety with kids and dogs, when to neuter, the real cancer and joint risks, bloat, and breed rules on housing.",
     funFact: "Despite the guarding reputation, Rottweilers were among the first dogs used as guide dogs for the blind, and in more recent decades they worked search and rescue at the Oklahoma City bombing and the World Trade Center disaster sites.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
@@ -736,6 +762,8 @@ export const dogGuides = [
     image: "/assets/guides/dog-siberian-husky.jpg",
     sizeCategory: "Medium",
     tagline: "The escape artist sled dog that needs a job and a secure fence.",
+    seoTitle: "Siberian Husky Care Guide: Fencing, Heat, and Health",
+    seoDescription: "A Husky will run if it can, so this starts with the fence and off-leash trust, then covers hot climates, zinc-responsive dermatosis, anesthesia, and DNA tests.",
     funFact: "The Siberian Husky's famous blue eyes are not a merle or piebald effect and are not linked to coat color at all. A genome-wide association study of more than 6,000 dogs traced them to a single 98.6 kilobase duplication on chromosome 18, near the ALX4 gene involved in mammalian eye development. One copy is enough to produce blue eyes or heterochromia, which is why a Husky can have one blue eye and one brown.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {

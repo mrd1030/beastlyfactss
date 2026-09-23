@@ -7,6 +7,8 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/ackie-monitor.jpg",
     tagline: "The miniature Komodo dragon with a huge personality!",
+    seoTitle: "Ackie Monitor Care Guide: Setup, Diet, and Handling",
+    seoDescription: "Ackie monitors need more room than most expect: a 5x2.5x4 foot enclosure, a very hot basking surface, deep burrows, and why rodents are the feeding mistake.",
     funFact: "Ackie monitors 'taste' the air constantly with their forked tongues, using their Jacobson's organ to detect prey scent, just like their giant Komodo cousins!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -105,6 +107,8 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/tegu.jpg",
     tagline: "The dog-like mega-lizard that can learn its own name!",
+    seoTitle: "Argentine Tegu Care Guide: Law, Setup, and Handling",
+    seoDescription: "Check the law before a tegu: Florida's ban and the states that gate one, then the 8x4x4 enclosure, deep substrate, feeding by age, and handling a 5-foot lizard.",
     funFact: "Tegus are one of the only reptiles known to have near-endothermic (warm-blooded) properties. During breeding season, their body temperature rises above ambient temperatures!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -214,6 +218,8 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/bearded-dragon.jpg",
     tagline: "The chill, cuddly lizard that changes color with its mood!",
+    seoTitle: "Bearded Dragon Care Guide: Setup, Diet, and Health",
+    seoDescription: "Bearded dragon care from day one: the 4x2x2 enclosure as the adult minimum, UVB and basking heat, the diet that flips from insects to greens, and vet signs.",
     funFact: "Bearded dragons wave at each other as a sign of submission, basically saying 'Hey, you're the boss!'",
     relatedStory: {
       slug: "chronicles-of-dex-the-bearded-dragon-the-sun-the-glass-and-the-cricket-that-got-away",
@@ -314,6 +320,8 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/blue-tongue-skink.jpg",
     tagline: "The chunky, blue-tongued charmer who loves a good meal!",
+    seoTitle: "Blue Tongue Skink Care Guide: Setup, Diet, and Handling",
+    seoDescription: "Northern or Indonesian decides the whole setup: the 4x2x2 enclosure both share, the heat and humidity that split them, feeding by age, and reading a huff.",
     funFact: "Blue tongue skinks give live birth instead of laying eggs, and they are one of the largest skink species kept as pets.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
@@ -401,6 +409,8 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/fire-skink.jpg",
     tagline: "Dressed in red and gold, and determined to stay underground!",
+    seoTitle: "Fire Skink Care Guide: Setup, Humidity, and Feeding",
+    seoDescription: "Fire skinks are cheap to buy but a 20-year pet: the 36x18x18 floor, the burrowing mix it lives in, the humidity behind most health problems, and feeding.",
     funFact: "Fire skinks are one of the most brightly colored lizards in the hobby and one of the most rarely seen in their own enclosure. Give one a shallow scattering of substrate and it will vanish; give it the 4 to 6 inches it can actually tunnel through and it will build a burrow system, come out to bask, and behave like a completely different animal.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -495,6 +505,8 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/green-anole.jpg",
     tagline: "The color-changing little acrobat with a signal flag under its chin!",
+    seoTitle: "Green Anole Care Guide: Setup, UVB, and Feeding",
+    seoDescription: "Green anoles cost little and die young when kept casually. The 24x24x24 setup, real UVB, humidity from misting, what to feed, and which problems need a vet.",
     funFact: "Green anoles change color between green and brown based on temperature, mood, and stress rather than to match their surroundings, which is why the 'American chameleon' nickname is a misnomer. A stressed or cold anole goes brown; a relaxed, warm one goes green.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -590,6 +602,8 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/green-iguana.jpg",
     tagline: "A six foot arboreal herbivore sold as a six inch hatchling!",
+    seoTitle: "Green Iguana Care Guide: Housing, Diet, and Health",
+    seoDescription: "Before you buy a green iguana: the 10x5x6 foot adult enclosure no store sells, a strictly plant diet, the heat and UVB it needs, and a lizard up to 7 feet.",
     funFact: "Green iguanas have a pale scale on the top of the head called the parietal eye. It is a genuine third eye with a lens and a retina, wired to the pineal gland rather than to vision, and it detects shadow moving overhead. It is an early warning system for birds of prey.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
@@ -678,6 +692,8 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/chameleon.jpg",
     tagline: "The horned, color-shifting dinosaur of the reptile world!",
+    seoTitle: "Jackson's Chameleon Care Guide: Setup, Water, and Diet",
+    seoDescription: "Jackson's chameleons need cool air, not heat: the 24x24x48 enclosure, the night drop, water as droplets, light supplements to prevent edema, and the law.",
     funFact: "Jackson's chameleons are one of the few chameleon species that give live birth rather than laying eggs. A single birth can produce anywhere from 5 to 30 live offspring after a gestation of roughly 5 to 6 months!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -779,6 +795,8 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/savannah-monitor.jpg",
     tagline: "The powerful, intelligent monitor that needs serious space and a serious keeper!",
+    seoTitle: "Savannah Monitor Care Guide: Setup, Diet, and Handling",
+    seoDescription: "Savannah monitors die of the captive diet: the 8x4x4 foot enclosure no store sells, deep burrowing substrate, feeding that avoids obesity, and handling.",
     funFact: "Savannah monitors are built for digging. In the wild they may create burrows several feet deep to escape the African heat. A deep substrate is one of the most important enrichment features you can give them!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -886,6 +904,8 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/uromastyx.jpg",
     tagline: "The colorful, seed-eating desert dragon that thrives on extreme heat!",
+    seoTitle: "Uromastyx Care Guide: Heat, Diet, and Health",
+    seoDescription: "Uromastyx care runs hot and dry: a 110 to 120°F basking surface, the 4x2x2 floor, deep sandy substrate, greens that supply its water, and when to call a vet.",
     funFact: "Uromastyx (also called spiny-tailed lizards) are almost entirely herbivorous. They get nearly all their water from their food and rarely need a standing water dish! They're one of the few reptiles that thrive on seeds.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -983,6 +1003,8 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/veiled-chameleon.jpg",
     tagline: "The helmet-headed climber with independently swiveling eyes!",
+    seoTitle: "Veiled Chameleon Care Guide: Setup, Water, and Diet",
+    seoDescription: "Veiled chameleons drink only moving water, so the dripper matters: a 24x24x48 cage, heat and UVB, the supplement schedule, and a laying bin for every female.",
     funFact: "Veiled chameleons are remarkably drought-adapted for a chameleon. Native to the mountains of Yemen and Saudi Arabia, they tolerate wider temperature and humidity swings than most other chameleon species. Females are also famous for laying large clutches of infertile eggs even without ever having contact with a male.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the

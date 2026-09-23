@@ -7,6 +7,8 @@ export const fishGuides = [
     petType: "Fish",
     image: "/assets/guides/angelfish.jpg",
     tagline: "The elegant Amazonian cichlid that pairs for life and rules its corner of the tank!",
+    seoTitle: "Angelfish Care Guide: Tank, Tankmates, and Health",
+    seoDescription: "Angelfish need a tall tank, not a long one. Set up water and heat for a cichlid, add angelfish last so tankmates survive, and fix the water before medicating.",
     funFact: "Angelfish are cichlids that often form long-term monogamous breeding pairs, and unlike most fish, both parents cooperatively guard their eggs and fry - fanning them with fresh water and defending the territory together. Their tall, laterally flattened body shape is a natural adaptation for slipping between roots and plant stems in flooded Amazon forest, effectively letting them disguise themselves as a drifting leaf.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -89,6 +91,8 @@ export const fishGuides = [
     petType: "Fish",
     image: "/assets/guides/betta-fish.jpg",
     tagline: "The flowing-finned solo showoff that thrives in its own space and recognizes its keeper!",
+    seoTitle: "Betta Fish Care Guide: Tank, Feeding, and Health",
+    seoDescription: "Skip the bowl: a betta needs a heated, filtered 5-gallon tank. Cycle it first, size portions to the fish's own eye, and see why water is usually the first fix.",
     funFact: "Wild betta fish live in shallow rice paddies and slow-moving water that can run low on oxygen, so they evolved a labyrinth organ that lets them gulp air directly from the surface. Males also build floating bubble nests out of saliva-coated air bubbles to hold their eggs - a behavior captive males will still perform even without a female present.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -164,6 +168,8 @@ export const fishGuides = [
     petType: "Fish",
     image: "/assets/guides/bristlenose-pleco.jpg",
     tagline: "The bristly-nosed algae grazer that politely stays small!",
+    seoTitle: "Bristlenose Pleco Care Guide: Tank, Diet, and Health",
+    seoDescription: "Confirm it is really a bristlenose before you buy. Then plan the tank, the driftwood it has to rasp, the feeding the algae myth skips, and the drugs to avoid.",
     funFact: "Most of the cheap, inch-long 'plecos' sold for algae control are common plecos (Hypostomus plecostomus) or a related Pterygoplichthys species, and neither stays small: both regularly reach 12 to 24 inches and need a 75-gallon-or-larger tank as adults, a size surprise so common that escaped and released pet plecos have established breeding, invasive populations in Texas and Florida rivers. Researchers pulled more than 400 invasive armored catfish from a single stretch of Texas's San Marcos River in one 2022 removal effort. The bristlenose pleco profiled here is a different, deliberately smaller species that tops out around 4 to 6 inches for life, which is exactly why it's the pleco actually worth recommending to a beginner.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -259,6 +265,8 @@ export const fishGuides = [
     petType: "Fish",
     image: "/assets/guides/cardinal-tetra.jpg",
     tagline: "The neon tetra's flashier cousin, lit up red from nose to tail!",
+    seoTitle: "Cardinal Tetra Care Guide: Tank, Water, and Health",
+    seoDescription: "Cardinal tetras want soft, acidic water and a school of ten or more. Set up the tank, feed a tiny mouth, and get wild-caught fish through the first two weeks.",
     funFact: "Huge numbers of cardinal tetras are still sustainably wild-harvested from Brazil's Rio Negro every year through community-based fisheries, a rare case where the aquarium trade directly funds rainforest conservation by giving local communities a real economic reason to keep the river intact.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -341,6 +349,8 @@ export const fishGuides = [
     petType: "Fish",
     image: "/assets/guides/corydoras-catfish.jpg",
     tagline: "The armored little bottom-cleaner that schools, snoozes, and shimmies to the surface for air!",
+    seoTitle: "Corydoras Care Guide: Tank, Substrate, and Feeding",
+    seoDescription: "Cories are not a cleanup crew. Keep six of one species, choose the substrate that protects their barbels, feed sinking food, and dose medication carefully.",
     funFact: "Corydoras catfish can breathe atmospheric air by gulping it at the surface and absorbing oxygen through their intestine - a backup adaptation for the low-oxygen waters they evolved in. This means an occasional dash to the surface for a quick gulp of air is completely normal behavior, not a sign of a sick or distressed fish.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -422,6 +432,8 @@ export const fishGuides = [
     petType: "Fish",
     image: "/assets/guides/discus.jpg",
     tagline: "The king of the aquarium, and it knows exactly how good it looks!",
+    seoTitle: "Discus Care Guide: Tank, Water Changes, and Health",
+    seoDescription: "Discus live and die by water changes. Plan a 75-gallon tank for a group of six, warm soft water, small frequent meals, and the few tankmates that take the heat.",
     funFact: "Newly hatched discus fry feed on a nutrient-rich mucus secreted from both parents' skin, most intensively for roughly the first two weeks after they become free-swimming, with a gradual weaning over the following two weeks. It is one of the only documented cases of sustained direct parental feeding in fish, and a 2010 study found the mucus carries immune antibodies and protein at levels that rise and fall across the feeding period, in a pattern the researchers compared to mammalian milk.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -518,6 +530,8 @@ export const fishGuides = [
     petType: "Fish",
     image: "/assets/guides/goldfish.jpg",
     tagline: "The pond classic that outgrows the bowl, the myth, and your expectations!",
+    seoTitle: "Goldfish Care Guide: Tank Size, Feeding, and Health",
+    seoDescription: "Goldfish do not grow to fit their bowl. Size the tank and filter for a messy coldwater fish, feed the right pellet by age, and spot illnesses that need action.",
     funFact: "Goldfish have real, months-long memories and can be trained to push levers, navigate mazes, and recognize shapes and colors - directly contradicting the popular '3-second memory' myth. They also grow to the size of their environment: a goldfish kept in a tiny bowl doesn't stay small because it's content, it's stunted, which is a sign of poor welfare rather than a convenient feature.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -593,6 +607,8 @@ export const fishGuides = [
     petType: "Fish",
     image: "/assets/guides/guppy.jpg",
     tagline: "The colorful, prolific livebearer that turns a starter tank into a thriving colony fast!",
+    seoTitle: "Guppy Care Guide: Tank, Breeding, and Health",
+    seoDescription: "Guppies are easy until they multiply. Set up a heated, hard-water tank, pick the sex ratio that stops harassment, and choose a population plan before fry come.",
     funFact: "Guppies are livebearers, meaning females give birth to free-swimming fry rather than laying eggs, and a single female can store sperm from one mating to produce several broods of 20 to 50+ fry over the following months. The species is named after Robert John Lechmere Guppy, who submitted specimens from Trinidad to the British Museum in the 1860s.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -672,6 +688,8 @@ export const fishGuides = [
     petType: "Fish",
     image: "/assets/guides/koi.jpg",
     tagline: "The living jewels of the pond world that can genuinely outlive their keepers!",
+    seoTitle: "Koi Care Guide: Pond Setup, Feeding, and Health",
+    seoDescription: "Koi belong in a pond at least 3 feet deep. Size filtration so the water holds, feed by water temperature and stop in the cold, and quarantine every new fish.",
     funFact: "Koi recognize individual people and will learn to approach a familiar keeper at the pond's edge for food. Long-term keepers describe fish that surface for one household member and ignore another, which is a considerable amount of animal for something sold as pond decoration.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -760,6 +778,8 @@ export const fishGuides = [
     petType: "Fish",
     image: "/assets/guides/molly.jpg",
     tagline: "The easygoing livebearer that shrugs at water most fish would sulk in!",
+    seoTitle: "Molly Care Guide: Tank, Diet, and Health",
+    seoDescription: "Mollies need hard, alkaline water and real vegetables. Set up a true 20-gallon tank, settle the salt question, stop the shimmy, and plan for fry before buying.",
     funFact: "Unlike most freshwater aquarium fish, mollies are naturally a brackish-water species that can tightly regulate their salt and water balance well past normal seawater concentration. Whether a healthy freshwater tank needs aquarium salt added is genuinely disputed among experienced keepers though, some use it routinely, others argue consistent water changes do the same job without salt's downsides for live plants and snails.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -854,6 +874,8 @@ export const fishGuides = [
     petType: "Fish",
     image: "/assets/guides/neon-tetra.jpg",
     tagline: "The tiny electric-blue schooler that turns any planted tank into a shimmering river scene!",
+    seoTitle: "Neon Tetra Care Guide: Tank, School, and Health",
+    seoDescription: "Neon tetras settle down in a school of ten. Set up soft, dim water, feed a mouth only 1 to 2mm across, and learn why neon tetra disease is often misdiagnosed.",
     funFact: "A neon tetra's iridescent blue stripe isn't pigment - it's produced by light-reflecting cells called iridophores. That stripe actually dims or goes nearly dark while the fish sleeps at night, a completely natural nocturnal color change rather than a sign of illness.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -935,6 +957,8 @@ export const fishGuides = [
     petType: "Fish",
     image: "/assets/guides/oscar.jpg",
     tagline: "The big-personality cichlid that recognizes its keeper and rearranges the tank on a whim!",
+    seoTitle: "Oscar Care Guide: Tank, Feeding, and Health",
+    seoDescription: "An oscar needs a 75-gallon tank from day one. Size the filter to match, feed pellets instead of feeder goldfish, and catch hole-in-the-head while treatable.",
     funFact: "Oscars are sometimes nicknamed 'water dogs' because of how strongly they bond with and recognize individual keepers - learning to beg at the glass, follow a finger around the tank, and in some cases tolerate supervised hand-feeding, behavior that sets them apart from most other fish.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -1026,6 +1050,8 @@ export const fishGuides = [
     petType: "Fish",
     image: "/assets/guides/platy.jpg",
     tagline: "The endlessly colorful beginner livebearer that's about as close to foolproof as fish get!",
+    seoTitle: "Platy Care Guide: Tank, Breeding, and Health",
+    seoDescription: "Platies are simple fish that make more platies. Set up hard, alkaline water, get the sex ratio and plant cover right, spot overfeeding, and plan for the fry.",
     funFact: "Nearly every color and pattern of platy in the hobby, from Mickey Mouse to tuxedo to bumblebee, comes from generations of selective breeding and repeated hybridization between two closely related species, Xiphophorus maculatus and X. variatus, and even the swordtail. Wild platies are actually a fairly drab olive-brown; the huge color range sold today simply doesn't exist in nature.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -1118,6 +1144,8 @@ export const fishGuides = [
     petType: "Fish",
     image: "/assets/guides/swordtail.jpg",
     tagline: "The active, sword-tailed livebearer that's basically a guppy's bigger, livelier cousin!",
+    seoTitle: "Swordtail Care Guide: Tank, Stocking, and Health",
+    seoDescription: "Two males is the classic swordtail stocking mistake. Set up a 29-gallon tank with a sealed lid, pick the ratio that keeps fins intact, and plan for the fry.",
     funFact: "Female swordtails that have already given birth can sometimes go on to develop a sword, male coloring, and even father broods of their own later in life. Hobbyists have reported the switch for generations, and scientists have studied it since the 1930s, though researchers still debate whether it's a true sex reversal or male traits simply emerging late in a fish that was missexed as a juvenile.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -1216,6 +1244,8 @@ export const fishGuides = [
     petType: "Fish",
     image: "/assets/guides/zebra-danio.jpg",
     tagline: "The tireless little striped torpedo that never stops commuting!",
+    seoTitle: "Zebra Danio Care Guide: Tank, School, and Health",
+    seoDescription: "Zebra danios may not need a heater, but they need a school of 8 to 10, a long tank, and a tight lid. Feed to avoid surprise spawns and know the fish TB signs.",
     funFact: "Zebra danios, known to scientists as zebrafish, are the most widely used non-mammalian vertebrate model organism in developmental biology and genetics research. Their embryos develop transparently outside the mother's body within hours of fertilization, letting researchers watch organs form in real time, and roughly 70 percent of human genes have a working counterpart in the zebrafish genome, sequenced in full in 2013. That same genetic malleability is also how GloFish, the first genetically modified animal ever sold as a pet, came to exist: they're fluorescent zebra danios.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;

@@ -7,6 +7,8 @@ export const snakeGuides = [
     petType: "Snakes",
     image: "/assets/guides/ball-python.jpg",
     tagline: "The gentle noodle that curls into a perfect ball when shy!",
+    seoTitle: "Ball Python Care Guide: Setup, Feeding, and Health",
+    seoDescription: "Ball python care from day one: the 4x2x2 enclosure and humidity that decide it all, feeding by age, when to handle, and the signs that mean a vet visit today.",
     funFact: "Ball pythons can go 3 to 6 months without eating (though they shouldn't have to). When scared, they curl into a tight ball to protect their head, hence the name!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -90,6 +92,8 @@ export const snakeGuides = [
     petType: "Snakes",
     image: "/assets/guides/boa-constrictor.jpg",
     tagline: "The powerful, graceful heavyweight of the pet snake world!",
+    seoTitle: "Boa Constrictor Care Guide: Setup, Feeding, and Handling",
+    seoDescription: "A boa constrictor is a commitment of decades: an enclosure sized for the adult, a heat source it cannot touch, rare adult meals, and the second-handler rule.",
     funFact: "Boa constrictors can sense the heartbeat of their prey using heat-sensitive pits. They literally feel your pulse!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
@@ -162,6 +166,8 @@ export const snakeGuides = [
     petType: "Snakes",
     image: "/assets/guides/california-kingsnake.jpg",
     tagline: "The boldly banded beginner snake that becomes a gem with handling!",
+    seoTitle: "California Kingsnake Care Guide: Setup, Diet, and Handling",
+    seoDescription: "California kingsnakes eat other snakes, so this one lives alone: the 48x24x24 adult enclosure, heat and humidity, feeding, handling timing, and shed trouble.",
     funFact: "Kingsnakes are immune to the venom of rattlesnakes, copperheads, and cottonmouths, and they actively hunt and eat other snakes, including venomous ones! The name 'King' is well earned.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
@@ -242,6 +248,8 @@ export const snakeGuides = [
     petType: "Snakes",
     image: "/assets/guides/corn-snake.jpg",
     tagline: "The curious, colorful beginner snake that never stops exploring!",
+    seoTitle: "Corn Snake Care Guide: Setup, Feeding, and Health",
+    seoDescription: "Corn snake care that settles arguments: the 40-gallon breeder minimum, the thermostat rule with zero exceptions, the humidity debate, and prey sizing.",
     funFact: "Corn snakes are named for their distinctive belly pattern that resembles Indian corn kernels, not because they're found in corn fields (though they are)!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
@@ -318,6 +326,8 @@ export const snakeGuides = [
     petType: "Snakes",
     image: "/assets/guides/garter-snake.jpg",
     tagline: "The backyard classic that eats fish and worms instead of mice!",
+    seoTitle: "Garter Snake Care Guide: Setup, Diet, and Legality",
+    seoDescription: "Many garter snakes never take a mouse. What they eat instead, the thiaminase risk in cheap feeder fish, a pool to swim in, and why the law is harder here.",
     funFact: "Garter snakes give birth to live young instead of laying eggs, and a single litter can range from a handful of babies to as many as 80!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -409,6 +419,8 @@ export const snakeGuides = [
     petType: "Snakes",
     image: "/assets/guides/hognose-snake.jpg",
     tagline: "The drama queen of snakes: the whole display is bluff!",
+    seoTitle: "Hognose Snake Care Guide: Setup, Feeding, and Temperament",
+    seoDescription: "Hognose snakes bluff, play dead, and dig: enclosure size by sex, the dry air and deep substrate they need, feeding that avoids obesity, and the venom question.",
     funFact: "When threatened, hognose snakes will flatten their neck, hiss, lunge (mouth closed), and if that fails, flip over and play dead complete with open mouth and tongue hanging out!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
@@ -492,6 +504,8 @@ export const snakeGuides = [
     petType: "Snakes",
     image: "/assets/guides/milk-snake.jpg",
     tagline: "The brilliantly banded mimic that wears venomous colors with no venom required!",
+    seoTitle: "Milk Snake Care Guide: Setup, Feeding, and Temperament",
+    seoDescription: "Milk snakes hide, musk, and eat each other: the 48x24x24 enclosure, the moisture balance behind most illness, feeding by age, and the states that restrict them.",
     funFact: "Milk snakes are harmless, but their red, black, and yellow banding mimics the deadly coral snake: a survival trick called Batesian mimicry. The rhyme 'Red touch yellow, kill a fellow; red touch black, friend of Jack' helps tell them apart!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -577,6 +591,8 @@ export const snakeGuides = [
     petType: "Snakes",
     image: "/assets/guides/rosy-boa.jpg",
     tagline: "The pint-sized desert boa that's calmer than snakes twice its size!",
+    seoTitle: "Rosy Boa Care Guide: Setup, Feeding, and Handling",
+    seoDescription: "The rosy boa is one of the calmest snakes you can own, and it runs dry: a 90°F basking surface, low humidity unlike other boas, and prey sized to its body.",
     funFact: "A rosy boa runs 24 to 36 inches and rarely tops 4 feet, a fraction of a boa constrictor's adult length, yet it can live just as long: documented individuals have reached past 30 years. The lifespan commitment doesn't shrink with the snake, only the space and setup cost do.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the

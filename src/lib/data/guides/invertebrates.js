@@ -7,6 +7,8 @@ export const invertebrateGuides = [
     petType: "Invertebrates",
     image: "/assets/guides/amano-shrimp.jpg",
     tagline: "The champion algae eater that clears a tank and never overruns it!",
+    seoTitle: "Amano Shrimp Care Guide: Tank, Water, and Feeding",
+    seoDescription: "Amano shrimp care built around the molt: the 10-gallon tank floor, the hardness a new shell needs, copper to keep out, and which algae they actually eat.",
     funFact: "Amano shrimp can't reproduce in a home freshwater aquarium at all. Females carry eggs and release free-swimming larvae just fine, but those larvae need brackish to full-strength salt water to survive past their first few hours of life, then must be raised through several weeks of saltwater development before metamorphosing into juveniles that can return to fresh water. Because of this, almost every Amano shrimp sold in stores today is wild-caught, not captive-bred.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -94,6 +96,8 @@ export const invertebrateGuides = [
     petType: "Invertebrates",
     image: "/assets/guides/cherry-shrimp.jpg",
     tagline: "The tiny, self-multiplying cleanup crew that turns one bag of shrimp into a colony!",
+    seoTitle: "Cherry Shrimp Care Guide: Tank, Water, and Colony",
+    seoDescription: "A cherry shrimp colony that thrives: a mature tank before the shrimp, the GH and KH that decide a molt, the copper limit, and why a colony feeds itself.",
     funFact: "Every color of cherry shrimp in the hobby, from clear to fire-engine red to jet black, is the exact same species. Neocaridina davidi's natural wild coloring is actually a dull, camouflaged greenish-brown; decades of selective breeding by hobbyists produced the entire modern color palette, right down to the graded 'Fire Red' and 'Painted Fire Red' tiers sold today.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -189,6 +193,8 @@ export const invertebrateGuides = [
     petType: "Invertebrates",
     image: "/assets/guides/emperor-scorpion.jpg",
     tagline: "The glossy black heavyweight with a pinch far scarier than its sting!",
+    seoTitle: "Emperor Scorpion Care Guide: Setup, Feeding, and Laws",
+    seoDescription: "Emperor scorpion care from the legal check on: the humidity that matters most, burrowing depth, feeding by life stage, the pinch risk, and what is urgent.",
     funFact: "Emperor scorpions fluoresce a brilliant blue-green under UV/black light. Scientists aren't entirely sure why, but the compound responsible sits in the hyaline layer of their exoskeleton, and scorpions do this under natural UV from moonlight too, not just an artificial black light.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -274,6 +280,8 @@ export const invertebrateGuides = [
     petType: "Invertebrates",
     image: "/assets/guides/ghost-shrimp.jpg",
     tagline: "The see-through scavenger that costs pennies and earns its keep!",
+    seoTitle: "Ghost Shrimp Care Guide: Tank, Feeding, and Health",
+    seoDescription: "Most ghost shrimp start life as feeder stock. How to get them through the first two weeks, the right filter, the copper ceiling, and why they eat each other.",
     funFact: "Despite looking like a smaller, cheaper cousin of the cherry and Amano shrimp sold right next to them in the store, ghost shrimp aren't closely related to either. They belong to the family Palaemonidae, while cherry and Amano shrimp both belong to the unrelated family Atyidae, and each lineage independently evolved from marine ancestors into fresh water at a different point in history. Their famous hardiness is exactly why they're sold cheaply in bulk as feeder shrimp for larger fish, even though plenty of keepers keep them purely as pets.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -368,6 +376,8 @@ export const invertebrateGuides = [
     petType: "Invertebrates",
     image: "/assets/guides/millipede.jpg",
     tagline: "The slow-motion recycler that turns a pile of leaves into garden soil!",
+    seoTitle: "Giant African Millipede Care Guide: Setup, Diet, and Laws",
+    seoDescription: "Giant African millipede care where the substrate is also the food: enclosure size, the humidity that prevents the top killer, safe handling, and permit rules.",
     funFact: "Despite their name, millipedes do not have 1,000 legs. Most species have 40 to 400 legs. However, a species discovered in 2021 (Eumillipes persephone) was found 60 meters underground in Australia and has a record 1,306 legs, making it the only true millipede.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -462,6 +472,8 @@ export const invertebrateGuides = [
     petType: "Invertebrates",
     image: "/assets/guides/hermit-crab.jpg",
     tagline: "The shell-swapping beach scavenger that is nobody's starter pet!",
+    seoTitle: "Hermit Crab Care Guide: Tank, Humidity, and Molting",
+    seoDescription: "Hermit crabs are nobody's starter pet. The humidity and heat that keep gills working, substrate deep enough to molt in, two water dishes, and how many shells.",
     funFact: "Hermit crabs don't grow their own shells - they spend their entire lives searching for, trying on, and trading empty snail shells as they grow, and will even form an orderly 'vacancy chain,' lining up by size to swap shells in turn when a larger one becomes available. In the wild, land hermit crabs can live 20 to 30+ years, though most pet hermit crabs sold in beach-town gift shops die within their first year from incorrect humidity and being kept alone.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -543,6 +555,8 @@ export const invertebrateGuides = [
     petType: "Invertebrates",
     image: "/assets/guides/jumping-spider.jpg",
     tagline: "The tiny, curious-eyed hunter that watches you back and needs barely any space at all!",
+    seoTitle: "Jumping Spider Care Guide: Enclosure, Feeding, and Health",
+    seoDescription: "Jumping spider care in a 4x4x7 inch enclosure: why the door belongs low, feeding by life stage, the never-feed list, and the humidity behind most illness.",
     funFact: "Jumping spiders have some of the best vision of any arthropod, with four pairs of eyes giving them nearly 360-degree awareness and sharp enough focus to visually track and judge the distance of prey before pouncing - hence the name. Many keepers report their jumping spider appearing to watch and turn to follow movement outside the enclosure, genuinely interactive behavior that's unusual for an invertebrate.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -632,6 +646,8 @@ export const invertebrateGuides = [
     petType: "Invertebrates",
     image: "/assets/guides/hissing-cockroach.jpg",
     tagline: "Calm, armored, surprisingly clean, and yes, it hisses!",
+    seoTitle: "Hissing Cockroach Care Guide: Setup, Feeding, and Laws",
+    seoDescription: "Madagascar hissing cockroach care for a colony, not a single roach: the escape barrier that works, the staple food, what a hiss means, and where it is banned.",
     funFact: "Madagascar hissing cockroaches are one of the few insect species where the father plays an active role in rearing offspring. Males guard and protect the female and young after birth, and juveniles stay with the family group for weeks.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -725,6 +741,8 @@ export const invertebrateGuides = [
     petType: "Invertebrates",
     image: "/assets/guides/praying-mantis.jpg",
     tagline: "Nature's most impressive ambush predator, in a palm-sized package!",
+    seoTitle: "Praying Mantis Care Guide: Enclosure, Feeding, and Molting",
+    seoDescription: "Praying mantis care hinges on one height: the perch drop that decides whether a molt succeeds. Plus enclosure size, live prey by stage, and egg cases.",
     funFact: "Praying mantises are the only insects known to have a single ear, located in the center of their chest between their hind legs. They use it to detect the ultrasonic calls of hunting bats, letting them dodge mid-flight. They are also the only insect that can turn its head 180 degrees.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -819,6 +837,8 @@ export const invertebrateGuides = [
     petType: "Invertebrates",
     image: "/assets/guides/stick-insect.jpg",
     tagline: "The master of disguise that is literally a twig with legs!",
+    seoTitle: "Stick Insect Care Guide: Permits, Setup, and Feeding",
+    seoDescription: "Before buying a stick insect: the federal permit hobbyists cannot get and the native species that skip it. Then a tall enclosure, a mesh lid, and host plants.",
     funFact: "Stick insects are parthenogenetic: females can reproduce without males and lay fertile eggs throughout their lives. The eggs of some species can remain viable in soil for years, hatching after the mother is long dead, mimicking plant seeds so perfectly that ants carry them underground.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -909,6 +929,8 @@ export const invertebrateGuides = [
     petType: "Invertebrates",
     image: "/assets/guides/tarantula.jpg",
     tagline: "The misunderstood gentle giant of the spider world, a surprisingly low-maintenance pet!",
+    seoTitle: "Tarantula Care Guide: Enclosure, Feeding, and Molting",
+    seoDescription: "Tarantula care that keeps a spider off the floor of its own tank: a wide enclosure, no mesh lids, feeding by age, and normal fasting versus a real problem.",
     funFact: "Tarantulas can live extraordinarily long lives. Females of some species (like the Mexican Red Knee) can live 25 to 30 years in captivity, while males typically live only 5 to 7 years. A female tarantula may outlive your dog.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
