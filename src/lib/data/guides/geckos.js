@@ -322,6 +322,7 @@ export const geckoGuides = [
     routes: [
       { slug: "leaf-tailed-gecko-cost-guide", line: "$250 to $800 by species and locality, $300 to $600 for the enclosure, and why wild-caught is the expensive option." },
       { slug: "leaf-tailed-gecko-tank-setup-guide", line: "18x18x24 for the smallest species, a cool enclosure with no basking spot, the humidity that defines this genus, and tap water over distilled." },
+      { slug: "leaf-tailed-gecko-feeding-guide", line: "As much as it eats in a night, daily young and every other day adult, insects sized to the species, dusted lightly, and the mist as the water supply." },
       { slug: "leaf-tailed-gecko-handling-guide", line: "Stress signals worth recognizing, and the species whose tail never grows back." },
       { slug: "leaf-tailed-gecko-health-issues-guide", line: "Dehydration as the fast killer, plus MBD, respiratory infection, and why you wait before deworming an import." },
       { slug: "leaf-tailed-gecko-enrichment-guide", line: "No Uroplatus research at all, said plainly, and one usable test for whether the enclosure is dense enough." },
@@ -403,7 +404,7 @@ export const geckoGuides = [
       { slug: "leopard-gecko-cost-guide", line: "$20 to $45 for the gecko, $250 to $400 for the setup, $20 to $50 a month, and what a sick visit really costs." },
       { slug: "leopard-gecko-tank-setup-guide", line: "The 36x18x18 minimum, belly heat on a thermostat, the three-hide system, and the humid hide that prevents most shedding problems." },
       { slug: "leopard-gecko-temperature-guide", line: "Every zone's target, mat versus overhead, the thermostat rule, night temperatures, and the signs the numbers are wrong." },
-      { slug: "leaf-tailed-gecko-feeding-guide", line: "As much as it eats in a night, daily young and every other day adult, insects sized to the species, dusted lightly, and the mist as the water supply." },
+      { slug: "leopard-gecko-feeding-guide", line: "How often by age, what they eat, the safe treats and the foods to avoid, and the reasons one refuses food, from a normal shed to a vet visit." },
       { slug: "leopard-gecko-handling-guide", line: "Settling-in time, the two-handed scoop, the stress signs, and why you never grab the tail." },
       { slug: "leopard-gecko-health-issues-guide", line: "Metabolic bone disease, cryptosporidiosis, impaction, stuck shed, egg binding, prolapse, and the list that means the vet today." },
       { slug: "leopard-gecko-enrichment-guide", line: "What the research says, why the three hides come first, hunting presentation, climbing and dig options, and a priority order." },

@@ -137,6 +137,7 @@ export const amphibianGuides = [
     routes: [
       { slug: "fire-bellied-toad-cost-guide", line: "The toad at $10 to $25, what the paludarium actually costs to build, the monthly run rate, and a lifespan with a documented ceiling of 30 years." },
       { slug: "fire-bellied-toad-tank-setup-guide", line: "The half-land half-water build, water quality as the whole game, temperature, substrate, lighting, and diet basics." },
+      { slug: "fire-bellied-toad-feeding-guide", line: "Live prey it leaps for, two to six items every two to three days, no wider than the head, calcium every feeding, and no hard-shelled feeders." },
       { slug: "fire-bellied-toad-handling-guide", line: "The staged warning display, which toxin this animal actually has, and why it is a minimal-handling, single-species animal." },
       { slug: "fire-bellied-toad-health-issues-guide", line: "Red leg syndrome first, then chytrid, bloat, twitching, and the parasite load that comes with wild-caught stock." },
       { slug: "fire-bellied-toad-enrichment-guide", line: "Planting the water, moving the food around, and what the borrowed amphibian evidence does and does not support." },
@@ -170,7 +171,7 @@ export const amphibianGuides = [
     image: "/assets/guides/pacman-frog.jpg",
     tagline: "The round, grumpy ambush predator that is essentially all mouth!",
     seoTitle: "Pacman Frog Care Guide: Setup, Feeding, and Health",
-    seoDescription: "Pacman frogs need less than most keepers buy. Get heat and humidity right, feed prey no wider than the head, and learn why a buried frog is hunting, not sick.",
+    seoDescription: "Pacman frogs need only a modest setup. Get heat and humidity right, feed prey no wider than the head, and learn why a buried frog is hunting, not bored.",
     funFact: "Pacman frogs (horned frogs, genus Ceratophrys) have an extraordinarily powerful bite for an amphibian. Their bite force relative to body size is comparable to some predatory dinosaurs. They will attempt to eat anything that moves near them, including other frogs, small mice, and keepers' fingers.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -218,7 +219,7 @@ export const amphibianGuides = [
     routes: [
       { slug: "pacman-frog-cost-guide", line: "The frog $15 to $100, the modest setup this species actually needs, and the vet bill that impaction brings." },
       { slug: "pacman-frog-tank-setup-guide", line: "Enclosure size, 75 to 85°F days, 60 to 80% humidity, and why the heat mat never goes underneath." },
-      { slug: "fire-bellied-toad-feeding-guide", line: "Live prey it leaps for, two to six items every two to three days, no wider than the head, calcium every feeding, and no hard-shelled feeders." },
+      { slug: "pacman-frog-feeding-guide", line: "Portion control over schedule, prey no wider than the head, the foods to avoid, and when a long fast is normal and when it needs a vet." },
       { slug: "pacman-frog-handling-guide", line: "Why this is a display animal, how to pick one up on the rare occasion you must, and sexing a mature frog." },
       { slug: "pacman-frog-health-issues-guide", line: "Obesity, impaction, metabolic bone disease, red-leg, and the signs that mean a vet now." },
       { slug: "pacman-frog-enrichment-guide", line: "What the amphibian research actually supports, the priority order, and reading body condition without touching the frog." },
@@ -303,6 +304,7 @@ export const amphibianGuides = [
     routes: [
       { slug: "tiger-salamander-cost-guide", line: "The animal at $30 to $125, the upfront setup, the monthly feeder bill, and the lifespan that is the real commitment." },
       { slug: "tiger-salamander-tank-setup-guide", line: "Enclosure size, 60 to 75°F, humidity, the substrate avoid-list, water, lighting, diet basics, and the larval-to-adult changeover." },
+      { slug: "tiger-salamander-feeding-guide", line: "Worms and crickets at night in measured meals, two to three times a week as an adult, the supplement schedule by age, and the mouse that is a rare treat." },
       { slug: "tiger-salamander-handling-guide", line: "Why handling stays minimal, what to do when it is unavoidable, and why an animal you rarely see is behaving normally." },
       { slug: "tiger-salamander-health-issues-guide", line: "Obesity, substrate impaction, metabolic bone disease, skin and bacterial infection including chytrid, and parasites." },
       { slug: "tiger-salamander-enrichment-guide", line: "Substrate depth as the whole guide, what the amphibian enrichment research does and does not say, and the priority order." },
@@ -388,7 +390,7 @@ export const amphibianGuides = [
       { slug: "whites-tree-frog-tank-setup-guide", line: "The 18x18x24 minimum, the temperature gradient, the humidity that dips instead of sitting high, substrate, UVB, and the water that is safe to mist with." },
       { slug: "whites-tree-frog-handling-guide", line: "Why plain water beats soap, when gloves are the safer option, how long a session runs, and why the risk points at the frog rather than at you." },
       { slug: "whites-tree-frog-health-issues-guide", line: "Obesity as the signature risk, chytridiomycosis, red-leg syndrome, bacterial and skin infections, metabolic bone disease, and the husbandry pattern behind all of them." },
-      { slug: "tiger-salamander-feeding-guide", line: "Worms and crickets at night in measured meals, two to three times a week as an adult, the supplement schedule by age, and the mouse that is a rare treat." },
+      { slug: "whites-tree-frog-feeding-guide", line: "Which insects to offer, how often by size and age, gut-loading and dusting, and the ridge test that shows overfeeding before the frog does." },
       { slug: "whites-tree-frog-enrichment-guide", line: "The red-eyed tree frog plant study and what it actually measured, dense layered planting, broad perches near the top, prey released into cover, and the one rule for group housing." },
     ],
     buyList: [

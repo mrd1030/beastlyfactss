@@ -339,7 +339,7 @@ export const catGuides = [
     sizeCategory: "All Sizes",
     tagline: "The big, unbothered cat that follows you from room to room!",
     seoTitle: "Ragdoll Cat Care Guide: Grooming, Size, and Health",
-    seoDescription: "Ragdoll care for a big, calm lap cat: brushing 2 to 3 times a week, the real adult size that heads off overfeeding, the main heart risk, and life with kids.",
+    seoDescription: "Ragdoll care for a calm lap cat: combing once or twice a week, the real adult size that stops overfeeding, why kidneys outrank the heart, and life with kids.",
     funFact: "The breed's own registry says the limp is mostly legend. The CFA records that Ann Baker's foundation cat Josephine was so placid that she went limp when held, then adds the part nobody quotes: that characteristic is uncommon in modern Ragdolls, but it did give rise to the name of the breed. The name outlived the trait.",
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {

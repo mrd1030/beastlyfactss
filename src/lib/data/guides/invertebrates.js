@@ -97,7 +97,7 @@ export const invertebrateGuides = [
     image: "/assets/guides/cherry-shrimp.jpg",
     tagline: "The tiny, self-multiplying cleanup crew that turns one bag of shrimp into a colony!",
     seoTitle: "Cherry Shrimp Care Guide: Tank, Water, and Colony",
-    seoDescription: "A cherry shrimp colony that thrives: a mature tank before the shrimp, the GH and KH that decide a molt, the copper limit, and why a colony feeds itself.",
+    seoDescription: "A cherry shrimp colony that thrives: a mature tank before the shrimp, the GH and KH that decide a molt, the copper limit, and why a colony mostly feeds itself.",
     funFact: "Every color of cherry shrimp in the hobby, from clear to fire-engine red to jet black, is the exact same species. Neocaridina davidi's natural wild coloring is actually a dull, camouflaged greenish-brown; decades of selective breeding by hobbyists produced the entire modern color palette, right down to the graded 'Fire Red' and 'Painted Fire Red' tiers sold today.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -442,6 +442,7 @@ export const invertebrateGuides = [
     routes: [
       { slug: "giant-millipede-cost-guide", line: "$75 to $150 or more for the animal, the same again for setup, and the import rule behind the price." },
       { slug: "giant-millipede-tank-setup-guide", line: "10 to 15 gallons as a floor, 72 to 80F, 70 to 80%, the 4 to 6 inch substrate that is also the food, and why isopods stay out." },
+      { slug: "giant-millipede-feeding-guide", line: "The substrate as the diet, produce every two to three days and out before it molds, calcium left in, and the molt that looks like a fast." },
       { slug: "giant-millipede-handling-guide", line: "Falls rather than bites, what the curl and the secretion mean, and when to leave a buried animal alone." },
       { slug: "giant-millipede-health-issues-guide", line: "Dehydration, failed molts, mites, and the humidity pattern sitting underneath all three." },
       { slug: "giant-millipede-enrichment-guide", line: "Why the substrate is the enrichment, what the tarantula housing study does and does not transfer, and the priority order." },
@@ -524,7 +525,7 @@ export const invertebrateGuides = [
       { slug: "hermit-crab-tank-setup-guide", line: "Humidity, temperature, substrate depth, the two water dishes, and the shells that go in the tank." },
       { slug: "hermit-crab-handling-guide", line: "Why handling stays minimal, the open-palm method, and how long a buried crab can stay down." },
       { slug: "hermit-crab-health-issues-guide", line: "Post-purchase stress, dehydration and gill suffocation, bad molts, and what seeking help looks like when there's almost no vet care." },
-      { slug: "giant-millipede-feeding-guide", line: "The substrate as the diet, produce every two to three days and out before it molds, calcium left in, and the molt that looks like a fast." },
+      { slug: "hermit-crab-feeding-guide", line: "Why one food is not the diet, calcium for the molt, the two additives toxic to invertebrates, and why water is part of feeding." },
       { slug: "hermit-crab-enrichment-guide", line: "What the shell research actually found, how many shells a group needs, and the priority order for everything else." },
     ],
     buyList: [
@@ -556,7 +557,7 @@ export const invertebrateGuides = [
     image: "/assets/guides/jumping-spider.jpg",
     tagline: "The tiny, curious-eyed hunter that watches you back and needs barely any space at all!",
     seoTitle: "Jumping Spider Care Guide: Enclosure, Feeding, and Health",
-    seoDescription: "Jumping spider care in a 4x4x7 inch enclosure: why the door belongs low, feeding by life stage, the never-feed list, and the humidity behind most illness.",
+    seoDescription: "Jumping spider care from a 4x4x7 inch minimum: why the door belongs low, feeding by life stage, the never-feed list, and the humidity behind most illness.",
     funFact: "Jumping spiders have some of the best vision of any arthropod, with four pairs of eyes giving them nearly 360-degree awareness and sharp enough focus to visually track and judge the distance of prey before pouncing - hence the name. Many keepers report their jumping spider appearing to watch and turn to follow movement outside the enclosure, genuinely interactive behavior that's unusual for an invertebrate.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -902,6 +903,7 @@ export const invertebrateGuides = [
     routes: [
       { slug: "stick-insect-cost-guide", line: "The APHIS permit a hobbyist cannot get, a few dollars a nymph, and $1,000 for a rare giant." },
       { slug: "stick-insect-tank-setup-guide", line: "Three times body length in height, 63 to 77F, bramble and the other host plants, and why the lid is mesh." },
+      { slug: "stick-insect-feeding-guide", line: "Bramble for nearly every species, the plant list by species, cuttings in a covered jar, washed leaves, and an evening mist to drink." },
       { slug: "stick-insect-handling-guide", line: "Body not leg, the three stress signals including playing dead, and why a colony is fine here." },
       { slug: "stick-insect-health-issues-guide", line: "Molting failure, the drowning risk in the cutting jar, mold, and the leg that never grows back." },
       { slug: "stick-insect-enrichment-guide", line: "A short guide, honestly: height, fresh leaves, humidity, and what the tarantula study does not transfer." },
@@ -930,7 +932,7 @@ export const invertebrateGuides = [
     image: "/assets/guides/tarantula.jpg",
     tagline: "The misunderstood gentle giant of the spider world, a surprisingly low-maintenance pet!",
     seoTitle: "Tarantula Care Guide: Enclosure, Feeding, and Molting",
-    seoDescription: "Tarantula care that keeps a spider off the floor of its own tank: a wide enclosure, no mesh lids, feeding by age, and normal fasting versus a real problem.",
+    seoDescription: "Tarantula care built around the fall risk: a wide, low enclosure, no mesh lids, feeding by age, and how to tell normal fasting from a real health problem.",
     funFact: "Tarantulas can live extraordinarily long lives. Females of some species (like the Mexican Red Knee) can live 25 to 30 years in captivity, while males typically live only 5 to 7 years. A female tarantula may outlive your dog.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -975,7 +977,7 @@ export const invertebrateGuides = [
       { slug: "tarantula-handling-guide", line: "Why the answer is almost always no, the real fall risk, and New World versus Old World defenses." },
       { slug: "tarantula-health-issues-guide", line: "Dehydration, stuck molts, injury, and the difference between normal fasting and a real problem." },
       { slug: "tarantula-tank-setup-guide", line: "Enclosure shape and size, substrate depth, the humidity debate, and why mesh lids are out." },
-      { slug: "stick-insect-feeding-guide", line: "Bramble for nearly every species, the plant list by species, cuttings in a covered jar, washed leaves, and an evening mist to drink." },
+      { slug: "tarantula-feeding-guide", line: "Schedule by life stage, what they eat and what to skip, why a weeks-long premolt fast is normal, and the shriveled abdomen that is the real emergency." },
       { slug: "tarantula-enrichment-guide", line: "What the research on enclosure complexity actually found, and what it didn't." },
       { slug: "tarantula-legal-guide", line: "The species question most states never ask, and where a specific tarantula is restricted regardless of the genus." },
     ],

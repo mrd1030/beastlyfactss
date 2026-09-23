@@ -206,6 +206,7 @@ export const birdGuides = [
     routes: [
       { slug: "canary-cost-guide", line: "$25 to $500 depending on what you are buying it for, the setup, and the one question to ask a seller before paying." },
       { slug: "canary-tank-setup-guide", line: "Why width beats height, half-inch bars, 65 to 80°F, the air-quality rule, and what a canary actually eats." },
+      { slug: "canary-feeding-guide", line: "One to two teaspoons a day, mostly pellets, produce as a quarter, egg food through the molt, a cuttlebone and no grit." },
       { slug: "canary-handling-guide", line: "Why this is a look and listen bird, what a silent male means in July against any other month, and the dark catch." },
       { slug: "canary-health-issues-guide", line: "Air-sac mites, scaly face and leg mites, red mites, respiratory infection, and the early signs that come first." },
       { slug: "canary-enrichment-guide", line: "What the song research says about a constantly singing male, flight distance, perches, and the corticosterone finding." },
@@ -283,7 +284,7 @@ export const birdGuides = [
       { slug: "cockatiel-tank-setup-guide", line: "The 20x20x30 minimum, why width beats height, bar spacing, and the kitchen danger worth repeating." },
       { slug: "cockatiel-handling-guide", line: "Building trust before you touch, the flat-palm step-up, and reading a stressed versus comfortable crest." },
       { slug: "cockatiel-health-issues-guide", line: "Nutritional disease, reproductive disease, the kitchen danger, and the signs that mean an avian vet now." },
-      { slug: "canary-feeding-guide", line: "One to two teaspoons a day, mostly pellets, produce as a quarter, egg food through the molt, a cuttlebone and no grit." },
+      { slug: "cockatiel-feeding-guide", line: "Pellets as 75 to 80% of the bowl, how much fresh food belongs beside them, the foods to avoid, and the reasons a cockatiel goes off food." },
       { slug: "cockatiel-enrichment-guide", line: "What two real studies found, why foraging comes first, and a priority order for everything else." },
     ],
     buyList: [
@@ -381,7 +382,7 @@ export const birdGuides = [
     image: "/assets/guides/conure.jpg",
     tagline: "The clownish, cuddly little conure that never stops entertaining!",
     seoTitle: "Green Cheek Conure Care Guide: Cage, Diet, and Health",
-    seoDescription: "Green cheek conure care that starts with quarantine: the cage and room setup, pellets over seed, why most nips are balance, and the diseases new birds carry.",
+    seoDescription: "Green cheek conure care that starts with quarantine: cage and room setup, pellets over seed, why most beak contact is balance, and the diseases new birds carry.",
     funFact: "Green cheek conures are notorious for learning to hang upside down, play dead, and roll over on command. They're often called the 'class clown' of the parrot world and learn tricks faster than almost any other small parrot!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;

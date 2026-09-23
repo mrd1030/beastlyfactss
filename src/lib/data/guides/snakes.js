@@ -216,6 +216,7 @@ export const snakeGuides = [
     routes: [
       { slug: "california-kingsnake-cost-guide", line: "$45 to $300 for the snake, $200 to $500 for the setup, $15 to $30 a month, and the one cost consideration that isn't about money." },
       { slug: "california-kingsnake-tank-setup-guide", line: "The 48x24x24 adult enclosure, the temperature and humidity targets, substrate, feeding, and the two security rules this species carries." },
+      { slug: "california-kingsnake-feeding-guide", line: "Prey as wide as the thickest point, every 5 to 7 days young and 10 to 14 as an adult, never live, and one snake per feeding." },
       { slug: "california-kingsnake-handling-guide", line: "Session lengths, the timing rules around feeding and shedding, the five fear signals, and why this snake must live alone." },
       { slug: "california-kingsnake-health-issues-guide", line: "Respiratory infection, scale rot, mites, mouth rot, retained shed, and why nearly all of it traces back to husbandry." },
       { slug: "california-kingsnake-enrichment-guide", line: "No kingsnake study exists, so this is the corn snake and ratsnake evidence, labeled as borrowed, on floor space, cover, climbing and scent." },
@@ -293,7 +294,7 @@ export const snakeGuides = [
     routes: [
       { slug: "corn-snake-cost-guide", line: "$25 to $70 for the snake, $250 to $600 for the setup, $200 to $500 a year, and what it costs over a two-decade lifespan." },
       { slug: "corn-snake-tank-setup-guide", line: "The 40-gallon breeder minimum, the one non-negotiable thermostat rule, and the genuine humidity disagreement worth knowing about." },
-      { slug: "california-kingsnake-feeding-guide", line: "Prey as wide as the thickest point, every 5 to 7 days young and 10 to 14 as an adult, never live, and one snake per feeding." },
+      { slug: "corn-snake-feeding-guide", line: "Every 5 to 7 days as a hatchling to every 14 to 21 as an adult, why frozen-thawed beats live, and the reasons one goes off food, from shed to brumation." },
       { slug: "corn-snake-handling-guide", line: "Settling-in time, the two-handed support, the timing rules around feeding and shedding, and the stress signs." },
       { slug: "corn-snake-health-issues-guide", line: "Respiratory infection, scale rot, mites, retained shed, mouth rot, and the list that means the vet today." },
       { slug: "corn-snake-enrichment-guide", line: "The 2021 studies on enclosure size and odor discrimination, and why floor space is the enrichment for this species." },
@@ -558,6 +559,7 @@ export const snakeGuides = [
     routes: [
       { slug: "milk-snake-cost-guide", line: "$60 to $500 by subspecies and morph, the $300 to $600 setup, and why the real commitment here is time rather than money." },
       { slug: "milk-snake-tank-setup-guide", line: "The 48x24x24 minimum, the halogen bulb over a basking stone, the moisture balance, feeding, and the no-cohabitation rule." },
+      { slug: "milk-snake-feeding-guide", line: "Prey at 1.5 times the body width or 10% of its weight, every 5 to 7 days as a hatchling and 10 to 14 as an adult, and why hatchlings eat snakes." },
       { slug: "milk-snake-handling-guide", line: "A muskier, flightier temperament than a corn snake's, the cannibalism rule, and where the red-touches-yellow rhyme stops working." },
       { slug: "milk-snake-health-issues-guide", line: "Respiratory infection, scale rot, mites, retained shed, and the one dial, moisture, that sits behind three of them." },
       { slug: "milk-snake-enrichment-guide", line: "Why a snake that hides constantly needs more cover rather than a smaller enclosure, and how to clutter one properly." },
@@ -644,7 +646,7 @@ export const snakeGuides = [
     routes: [
       { slug: "rosy-boa-cost-guide", line: "$150 to $400 for the snake, roughly $150 to $250 for the setup, $6 to $11 a month, and the vet set-aside that outweighs all of it." },
       { slug: "rosy-boa-tank-setup-guide", line: "A modest enclosure, a 90°F basking surface, and the low humidity that runs opposite to every other pet boa." },
-      { slug: "milk-snake-feeding-guide", line: "Prey at 1.5 times the body width or 10% of its weight, every 5 to 7 days as a hatchling and 10 to 14 as an adult, and why hatchlings eat snakes." },
+      { slug: "rosy-boa-feeding-guide", line: "Whole mice sized to the snake, every 10 to 14 days for an adult, why overfeeding is the bigger risk, the winter slowdown, and supplements." },
       { slug: "rosy-boa-handling-guide", line: "One of the calmest snakes you can own, the 48-hour post-feeding wait, and the balling response it rarely bothers to use." },
       { slug: "rosy-boa-health-issues-guide", line: "Respiratory infection, scale rot, retained shed, rostral abrasion, and obesity, with humidity behind most of the list." },
       { slug: "rosy-boa-enrichment-guide", line: "Floor space first, deep dry substrate second, and why the standard 20 gallon long was never actually tested." },

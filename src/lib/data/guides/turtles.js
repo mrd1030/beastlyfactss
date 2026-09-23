@@ -8,7 +8,7 @@ export const turtleGuides = [
     image: "/assets/guides/box-turtle.jpg",
     tagline: "The self-closing, woodland wanderer that can live for over 100 years!",
     seoTitle: "Box Turtle Care Guide: Setup, Diet, and Brumation",
-    seoDescription: "Box turtles live past 60 and need more than a tank: the enclosure worth building, humidity and UVB, a diet that shifts with age, brumation, and state laws.",
+    seoDescription: "Box turtles can live past 60 and need more than a tank: the enclosure worth building, humidity and UVB, a diet that shifts with age, brumation, and state laws.",
     funFact: "Box turtles have a hinged plastron (lower shell) that closes so tightly that no predator can get in. They are the only turtles that can completely seal themselves inside their shell!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -349,7 +349,7 @@ export const turtleGuides = [
     image: "/assets/guides/sulcata-tortoise.jpg",
     tagline: "The tortoise that starts palm-sized and ends up the size of a coffee table!",
     seoTitle: "Sulcata Tortoise Care Guide: Space, Diet, and Health",
-    seoDescription: "Sulcata tortoises reach 100 pounds and live for decades: the outdoor space and shelter to plan now, a grass and hay diet, preventing pyramiding, and state laws.",
+    seoDescription: "Sulcatas reach 100 pounds and live for decades: outdoor space and shelter to plan now, a grass and hay diet, preventing pyramiding, and the federal import ban.",
     funFact: "Sulcata tortoises (African spurred tortoises) are the third-largest tortoise species on Earth. A hatchling the size of a ping-pong ball can grow to over 100 lbs and 3 feet long, in the same home!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;

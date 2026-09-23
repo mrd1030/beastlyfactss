@@ -350,7 +350,7 @@ export const fishGuides = [
     image: "/assets/guides/corydoras-catfish.jpg",
     tagline: "The armored little bottom-cleaner that schools, snoozes, and shimmies to the surface for air!",
     seoTitle: "Corydoras Care Guide: Tank, Substrate, and Feeding",
-    seoDescription: "Cories are not a cleanup crew. Keep six of one species, choose the substrate that protects their barbels, feed sinking food, and dose medication carefully.",
+    seoDescription: "Cories are not a cleanup crew. Keep six of one species over soft sand kept clean, feed them sinking food, and dose any medication at reduced strength.",
     funFact: "Corydoras catfish can breathe atmospheric air by gulping it at the surface and absorbing oxygen through their intestine - a backup adaptation for the low-oxygen waters they evolved in. This means an occasional dash to the surface for a quick gulp of air is completely normal behavior, not a sign of a sick or distressed fish.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -531,7 +531,7 @@ export const fishGuides = [
     image: "/assets/guides/goldfish.jpg",
     tagline: "The pond classic that outgrows the bowl, the myth, and your expectations!",
     seoTitle: "Goldfish Care Guide: Tank Size, Feeding, and Health",
-    seoDescription: "Goldfish do not grow to fit their bowl. Size the tank and filter for a messy coldwater fish, feed the right pellet by age, and spot illnesses that need action.",
+    seoDescription: "Goldfish do not grow to fit their bowl. Size the tank and filter for a messy coldwater fish, feed a sinking goldfish pellet on a set schedule, and spot illness.",
     funFact: "Goldfish have real, months-long memories and can be trained to push levers, navigate mazes, and recognize shapes and colors - directly contradicting the popular '3-second memory' myth. They also grow to the size of their environment: a goldfish kept in a tiny bowl doesn't stay small because it's content, it's stunted, which is a sign of poor welfare rather than a convenient feature.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -875,7 +875,7 @@ export const fishGuides = [
     image: "/assets/guides/neon-tetra.jpg",
     tagline: "The tiny electric-blue schooler that turns any planted tank into a shimmering river scene!",
     seoTitle: "Neon Tetra Care Guide: Tank, School, and Health",
-    seoDescription: "Neon tetras settle down in a school of ten. Set up soft, dim water, feed a mouth only 1 to 2mm across, and learn why neon tetra disease is often misdiagnosed.",
+    seoDescription: "Neon tetras settle down in a school of ten. Set up soft, dim water, feed a mouth only 1 to 2mm across, and see why neon tetra disease is likely over-diagnosed.",
     funFact: "A neon tetra's iridescent blue stripe isn't pigment - it's produced by light-reflecting cells called iridophores. That stripe actually dims or goes nearly dark while the fish sleeps at night, a completely natural nocturnal color change rather than a sign of illness.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -1245,7 +1245,7 @@ export const fishGuides = [
     image: "/assets/guides/zebra-danio.jpg",
     tagline: "The tireless little striped torpedo that never stops commuting!",
     seoTitle: "Zebra Danio Care Guide: Tank, School, and Health",
-    seoDescription: "Zebra danios may not need a heater, but they need a school of 8 to 10, a long tank, and a tight lid. Feed to avoid surprise spawns and know the fish TB signs.",
+    seoDescription: "Zebra danios may not need a heater, but they need six or more, ideally 8 to 10, a long tank, and a tight lid. Feed to avoid surprise spawns and know TB signs.",
     funFact: "Zebra danios, known to scientists as zebrafish, are the most widely used non-mammalian vertebrate model organism in developmental biology and genetics research. Their embryos develop transparently outside the mother's body within hours of fertilization, letting researchers watch organs form in real time, and roughly 70 percent of human genes have a working counterpart in the zebrafish genome, sequenced in full in 2013. That same genetic malleability is also how GloFish, the first genetically modified animal ever sold as a pet, came to exist: they're fluorescent zebra danios.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
