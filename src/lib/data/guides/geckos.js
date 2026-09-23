@@ -7,6 +7,8 @@ export const geckoGuides = [
     petType: "Geckos",
     image: "/assets/guides/african-fat-tail.jpg",
     tagline: "The calm, velvety cousin of the leopard gecko: gentle as can be!",
+    seoTitle: "African Fat-Tailed Gecko Care Guide: Heat, Diet, and Shed",
+    seoDescription: "African fat-tailed gecko care from the first week: the 20-gallon long floor, the humidity that sets it apart from a leopard gecko, portions, and when to handle.",
     funFact: "African fat-tailed geckos store fat in their wide, sausage-shaped tails as an energy reserve, just like leopard geckos. A plump tail is a sign of a healthy, well-fed gecko!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -94,6 +96,8 @@ export const geckoGuides = [
     petType: "Geckos",
     image: "/assets/guides/crested-gecko.jpg",
     tagline: "The velvety, fan-fringed gecko that needs no heat lamp!",
+    seoTitle: "Crested Gecko Care Guide: Setup, Humidity, and Diet",
+    seoDescription: "A crested gecko needs you to avoid heat: the 18x18x24 vertical setup, the 85°F ceiling it cannot cross, why powdered diet is the staple, and what needs a vet.",
     funFact: "Crested geckos were thought to be extinct until rediscovered in 1994 during a tropical storm in New Caledonia!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -168,6 +172,8 @@ export const geckoGuides = [
     petType: "Geckos",
     image: "/assets/guides/gargoyle-gecko.jpg",
     tagline: "The bumpy-headed climber that drops its tail and simply grows another!",
+    seoTitle: "Gargoyle Gecko Care Guide: Setup, Feeding, and Health",
+    seoDescription: "Gargoyle geckos need more than a crested gecko setup: the 86°F ceiling, the daily wet-dry humidity cycle, why insects are required, and a tail that grows back.",
     funFact: "Gargoyle geckos are named for the horn-like bumps on their heads, and unlike their crested gecko cousins they can regrow a dropped tail. A 2024 genome study confirmed the difference: same family, one very different superpower.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -249,6 +255,8 @@ export const geckoGuides = [
     petType: "Geckos",
     image: "/assets/guides/leaf-tailed-gecko.jpg",
     tagline: "Nature's ultimate camouflage artist, hiding in plain sight!",
+    seoTitle: "Leaf-Tailed Gecko Care Guide: Setup, Humidity, and Health",
+    seoDescription: "Leaf-tailed geckos punish shortcuts: why captive-bred matters, a cool tank with no basking spot, humidity and a drying cycle, and dehydration, the fast killer.",
     funFact: "Satanic leaf-tailed geckos (Uroplatus phantasticus) look exactly like dead, decaying leaves, right down to the 'bite marks' and brown patches on their edges!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -314,6 +322,7 @@ export const geckoGuides = [
     routes: [
       { slug: "leaf-tailed-gecko-cost-guide", line: "$250 to $800 by species and locality, $300 to $600 for the enclosure, and why wild-caught is the expensive option." },
       { slug: "leaf-tailed-gecko-tank-setup-guide", line: "18x18x24 for the smallest species, a cool enclosure with no basking spot, the humidity that defines this genus, and tap water over distilled." },
+      { slug: "leaf-tailed-gecko-feeding-guide", line: "As much as it eats in a night, daily young and every other day adult, insects sized to the species, dusted lightly, and the mist as the water supply." },
       { slug: "leaf-tailed-gecko-handling-guide", line: "Stress signals worth recognizing, and the species whose tail never grows back." },
       { slug: "leaf-tailed-gecko-health-issues-guide", line: "Dehydration as the fast killer, plus MBD, respiratory infection, and why you wait before deworming an import." },
       { slug: "leaf-tailed-gecko-enrichment-guide", line: "No Uroplatus research at all, said plainly, and one usable test for whether the enclosure is dense enough." },
@@ -344,6 +353,8 @@ export const geckoGuides = [
     petType: "Geckos",
     image: "/assets/guides/leopard-gecko.jpg",
     tagline: "The smiling gecko that's perfect for first-time reptile parents!",
+    seoTitle: "Leopard Gecko Care Guide: Setup, Feeding, and Health",
+    seoDescription: "Start a leopard gecko right: the 36x18x18 tank that replaced the 20-gallon standard, three hides, belly heat on a thermostat, feeding by age, and vet signs.",
     funFact: "Unlike most geckos, leopard geckos have eyelids and can blink and wink at you! They also store fat in their chunky tails for energy reserves.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
@@ -393,7 +404,7 @@ export const geckoGuides = [
       { slug: "leopard-gecko-cost-guide", line: "$20 to $45 for the gecko, $250 to $400 for the setup, $20 to $50 a month, and what a sick visit really costs." },
       { slug: "leopard-gecko-tank-setup-guide", line: "The 36x18x18 minimum, belly heat on a thermostat, the three-hide system, and the humid hide that prevents most shedding problems." },
       { slug: "leopard-gecko-temperature-guide", line: "Every zone's target, mat versus overhead, the thermostat rule, night temperatures, and the signs the numbers are wrong." },
-      { slug: "leaf-tailed-gecko-feeding-guide", line: "As much as it eats in a night, daily young and every other day adult, insects sized to the species, dusted lightly, and the mist as the water supply." },
+      { slug: "leopard-gecko-feeding-guide", line: "How often by age, what they eat, the safe treats and the foods to avoid, and the reasons one refuses food, from a normal shed to a vet visit." },
       { slug: "leopard-gecko-handling-guide", line: "Settling-in time, the two-handed scoop, the stress signs, and why you never grab the tail." },
       { slug: "leopard-gecko-health-issues-guide", line: "Metabolic bone disease, cryptosporidiosis, impaction, stuck shed, egg binding, prolapse, and the list that means the vet today." },
       { slug: "leopard-gecko-enrichment-guide", line: "What the research says, why the three hides come first, hunting presentation, climbing and dig options, and a priority order." },
@@ -426,6 +437,8 @@ export const geckoGuides = [
     petType: "Geckos",
     image: "/assets/guides/mourning-gecko.jpg",
     tagline: "Tiny, all-female, and happiest as a whole chattering colony!",
+    seoTitle: "Mourning Gecko Care Guide: Setup, Feeding, and Colonies",
+    seoDescription: "Mourning geckos live in all-female colonies, so start a group: a 12x18x18 tank for three to five, escape-proofing, powdered diet, and the calcium they burn.",
     funFact: "Mourning geckos are parthenogenetic. Every individual is female, and they can reproduce without males by cloning themselves!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -526,6 +539,8 @@ export const geckoGuides = [
     petType: "Geckos",
     image: "/assets/guides/tokay-gecko.jpg",
     tagline: "The jewel-toned, loud-voiced gecko that's not for the faint of heart!",
+    seoTitle: "Tokay Gecko Care Guide: Setup, Bites, and Feeding",
+    seoDescription: "Tokay gecko care starts with the bite: reading one before it strikes, the 18x18x36 tank, heat and humidity, feeding by age, and why the cheap one costs more.",
     funFact: "Tokay geckos are named after their incredibly loud 'TO-KAY!' call. Males use this booming vocalization to defend territory and attract mates. You'll hear them from across a room!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the

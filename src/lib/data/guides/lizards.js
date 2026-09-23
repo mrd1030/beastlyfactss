@@ -7,6 +7,8 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/ackie-monitor.jpg",
     tagline: "The miniature Komodo dragon with a huge personality!",
+    seoTitle: "Ackie Monitor Care Guide: Setup, Diet, and Handling",
+    seoDescription: "Ackie monitors need more room than most expect: a 5x2.5x4 foot enclosure, a very hot basking surface, deep burrows, and why rodents are the feeding mistake.",
     funFact: "Ackie monitors 'taste' the air constantly with their forked tongues, using their Jacobson's organ to detect prey scent, just like their giant Komodo cousins!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -105,6 +107,8 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/tegu.jpg",
     tagline: "The dog-like mega-lizard that can learn its own name!",
+    seoTitle: "Argentine Tegu Care Guide: Law, Setup, and Handling",
+    seoDescription: "Check the law before a tegu: Florida ban and the states that gate one, the 8x4x4 enclosure, deep substrate, feeding by age, and handling a lizard up to 5 feet.",
     funFact: "Tegus are one of the only reptiles known to have near-endothermic (warm-blooded) properties. During breeding season, their body temperature rises above ambient temperatures!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -181,6 +185,7 @@ export const lizardGuides = [
       { slug: "argentine-tegu-legal-guide", line: "Florida's prohibited list with the dates, the closed grandfather window, and the eight other jurisdictions that ban or gate one." },
       { slug: "argentine-tegu-cost-guide", line: "$200 to $500 for the animal, a build that often exceeds $1,000 to $3,000, and why the enclosure you can buy is not the one you need." },
       { slug: "argentine-tegu-tank-setup-guide", line: "8x4x4 as a floor, 100 to 110F basking, 70 to 80% humidity, 12 to 18 inches of substrate, and the feeding schedule by age." },
+      { slug: "argentine-tegu-feeding-guide", line: "Five meals a week as a hatchling to two as an adult, the 60/30/10 adult plate, the skull-sized portion, cooked eggs, and brumation versus a real refusal." },
       { slug: "argentine-tegu-handling-guide", line: "Why the dog comparison is earned rather than marketing, reading a tegu by its size, the bite protocol, and the season handling stops." },
       { slug: "argentine-tegu-health-issues-guide", line: "MBD, respiratory infection, parasites and the obesity this species is genuinely prone to, with what each one looks like." },
       { slug: "argentine-tegu-enrichment-guide", line: "Borrowed monitor problem-solving evidence handled honestly, substrate depth as the biggest decision, and puzzle feeding a lizard that will actually work one." },
@@ -214,6 +219,8 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/bearded-dragon.jpg",
     tagline: "The chill, cuddly lizard that changes color with its mood!",
+    seoTitle: "Bearded Dragon Care Guide: Setup, Diet, and Health",
+    seoDescription: "Bearded dragon care from day one: the 4x2x2 enclosure as the adult minimum, UVB and basking heat, the diet that flips from insects to greens, and vet signs.",
     funFact: "Bearded dragons wave at each other as a sign of submission, basically saying 'Hey, you're the boss!'",
     relatedStory: {
       slug: "chronicles-of-dex-the-bearded-dragon-the-sun-the-glass-and-the-cricket-that-got-away",
@@ -277,7 +284,7 @@ export const lizardGuides = [
       { slug: "bearded-dragon-cost-guide", line: "$40 to $100 for the dragon, $400 to $800 for the setup around it, and the surgery bill correct husbandry prevents." },
       { slug: "bearded-dragon-shopping-list", line: "Every item in the cart with a price range and the reason it is there." },
       { slug: "bearded-dragon-tank-setup-guide", line: "The full temperature table, UVB distance and replacement, humidity, and the substrate that will not impact." },
-      { slug: "argentine-tegu-feeding-guide", line: "Five meals a week as a hatchling to two as an adult, the 60/30/10 adult plate, the skull-sized portion, cooked eggs, and brumation versus a real refusal." },
+      { slug: "bearded-dragon-feeding-guide", line: "A plate that flips from mostly insects to mostly greens with age, gut-loading and calcium dust, the foods to avoid, and brumation versus a vet visit." },
       { slug: "bearded-dragon-safe-foods-guide", line: "Staple greens, occasional foods, the daily salad, and the never-feed list." },
       { slug: "bearded-dragon-handling-guide", line: "Wait 7 to 14 days, scoop from below, and the signals that end a session." },
       { slug: "bearded-dragon-health-issues-guide", line: "Metabolic bone disease, impaction, parasites, yellow fungus, atadenovirus, and the list that means the vet today." },
@@ -314,6 +321,8 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/blue-tongue-skink.jpg",
     tagline: "The chunky, blue-tongued charmer who loves a good meal!",
+    seoTitle: "Blue Tongue Skink Care Guide: Setup, Diet, and Handling",
+    seoDescription: "Northern or Indonesian decides the whole setup: the 4x2x2 enclosure both share, the heat and humidity that split them, feeding by age, and reading a huff.",
     funFact: "Blue tongue skinks give live birth instead of laying eggs, and they are one of the largest skink species kept as pets.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
@@ -401,6 +410,8 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/fire-skink.jpg",
     tagline: "Dressed in red and gold, and determined to stay underground!",
+    seoTitle: "Fire Skink Care Guide: Setup, Humidity, and Feeding",
+    seoDescription: "Fire skinks are cheap to buy but a 20-year pet: the 36x18x18 floor, the burrowing mix it lives in, the humidity behind most health problems, and feeding.",
     funFact: "Fire skinks are one of the most brightly colored lizards in the hobby and one of the most rarely seen in their own enclosure. Give one a shallow scattering of substrate and it will vanish; give it the 4 to 6 inches it can actually tunnel through and it will build a burrow system, come out to bask, and behave like a completely different animal.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -495,6 +506,8 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/green-anole.jpg",
     tagline: "The color-changing little acrobat with a signal flag under its chin!",
+    seoTitle: "Green Anole Care Guide: Setup, UVB, and Feeding",
+    seoDescription: "Green anoles cost little and die young when kept casually. The 24x24x24 setup, real UVB, humidity from misting, what to feed, and which problems need a vet.",
     funFact: "Green anoles change color between green and brown based on temperature, mood, and stress rather than to match their surroundings, which is why the 'American chameleon' nickname is a misnomer. A stressed or cold anole goes brown; a relaxed, warm one goes green.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -559,6 +572,7 @@ export const lizardGuides = [
       { slug: "green-anole-legal-guide", line: "Why a native species raises a wildlife question rather than an exotic-pet one, and what to check in your own state." },
       { slug: "green-anole-cost-guide", line: "$5 to $30 for the lizard, $390 to $470 for the enclosure around it, and why the cheap price tag is what drives bad setups." },
       { slug: "green-anole-tank-setup-guide", line: "24x24x24 as a floor, 90F basking with the mesh-burn rule, 60 to 70% humidity, real UVB, and what to feed." },
+      { slug: "green-anole-feeding-guide", line: "Two or three insects smaller than the head every other day, dusted every time, water as droplets, and the two feeders to skip." },
       { slug: "green-anole-handling-guide", line: "A display animal rather than a held one, what the handling study actually measured, and never taking the tail." },
       { slug: "green-anole-health-issues-guide", line: "MBD, respiratory infection, stuck shed, dehydration and parasites, and which are vet-now against fix-the-setup." },
       { slug: "green-anole-enrichment-guide", line: "Two null-result studies handled honestly, why the enclosure still gets built out, and the cohabitation answer." },
@@ -590,6 +604,8 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/green-iguana.jpg",
     tagline: "A six foot arboreal herbivore sold as a six inch hatchling!",
+    seoTitle: "Green Iguana Care Guide: Housing, Diet, and Health",
+    seoDescription: "Before you buy a green iguana: the 10x5x6 foot adult enclosure no store sells, a strictly plant diet, the heat and UVB it needs, and a lizard up to 7 feet.",
     funFact: "Green iguanas have a pale scale on the top of the head called the parietal eye. It is a genuine third eye with a lens and a retina, wired to the pineal gland rather than to vision, and it detects shadow moving overhead. It is an early warning system for birds of prey.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
@@ -648,7 +664,7 @@ export const lizardGuides = [
       { slug: "green-iguana-tank-setup-guide", line: "The 10x5x6 ft adult minimum, the basking and humidity numbers, substrate, UVB, and the vertical space an arboreal lizard needs." },
       { slug: "green-iguana-handling-guide", line: "Claws, tail whipping, tail drop, how to approach, and what breeding season does to a mature male." },
       { slug: "green-iguana-health-issues-guide", line: "Metabolic bone disease, kidney disease, mouth rot, egg binding, burns, and impaction, with the husbandry failure behind each." },
-      { slug: "green-anole-feeding-guide", line: "Two or three insects smaller than the head every other day, dusted every time, water as droplets, and the two feeders to skip." },
+      { slug: "green-iguana-feeding-guide", line: "The greens to build a salad on, the ones that block calcium, why animal protein risks gout, and how often to dust with calcium." },
       { slug: "green-iguana-enrichment-guide", line: "The hatchling sociality research, height and climbing routes, foraging for a herbivore, and why space is the whole problem." },
     ],
     buyList: [
@@ -678,6 +694,8 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/chameleon.jpg",
     tagline: "The horned, color-shifting dinosaur of the reptile world!",
+    seoTitle: "Jackson's Chameleon Care Guide: Setup, Water, and Diet",
+    seoDescription: "Jackson's chameleons need cool air, not heat: the 24x24x48 enclosure, the night drop, water as droplets, light supplements to prevent edema, and the law.",
     funFact: "Jackson's chameleons are one of the few chameleon species that give live birth rather than laying eggs. A single birth can produce anywhere from 5 to 30 live offspring after a gestation of roughly 5 to 6 months!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -779,6 +797,8 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/savannah-monitor.jpg",
     tagline: "The powerful, intelligent monitor that needs serious space and a serious keeper!",
+    seoTitle: "Savannah Monitor Care Guide: Setup, Diet, and Handling",
+    seoDescription: "Savannah monitors die of the captive diet: the 8x4x4 foot enclosure no store sells, deep burrowing substrate, feeding that avoids obesity, and handling.",
     funFact: "Savannah monitors are built for digging. In the wild they may create burrows several feet deep to escape the African heat. A deep substrate is one of the most important enrichment features you can give them!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -849,6 +869,7 @@ export const lizardGuides = [
     routes: [
       { slug: "savannah-monitor-cost-guide", line: "$150 to $300 for a juvenile and $300 to $800 for an adult, why that price is part of the problem, a setup that runs past $1,000, and the gap between what this species can live and what it usually does." },
       { slug: "savannah-monitor-tank-setup-guide", line: "The 8x4x4 foot standard and why nothing off the shelf meets it, a 140 to 150F basking surface, two feet of diggable substrate, the full-submersion basin, and what to feed." },
+      { slug: "savannah-monitor-feeding-guide", line: "Insects as the staple and rodents as the exception, daily young and two to three times a week adult, calcium weekly without vitamin D, and body condition as the portion." },
       { slug: "savannah-monitor-handling-guide", line: "Why this is not the ackie, the five warning signals that end a session, the grip for when an animal has to be controlled, and the nail trim that takes three people." },
       { slug: "savannah-monitor-health-issues-guide", line: "Obesity and fatty liver disease as the defining problem, the wild feeding rhythm that explains it, MBD, and the parasite screen every new animal needs." },
       { slug: "savannah-monitor-enrichment-guide", line: "Eight of eight monitors opening a puzzle tube in ten minutes, why that evidence is genus-level rather than species-level, and puzzle feeding that adds work instead of calories." },
@@ -886,6 +907,8 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/uromastyx.jpg",
     tagline: "The colorful, seed-eating desert dragon that thrives on extreme heat!",
+    seoTitle: "Uromastyx Care Guide: Heat, Diet, and Health",
+    seoDescription: "Uromastyx care runs hot and dry: a 110 to 120°F basking surface, the 4x2x2 floor, deep sandy substrate, greens that supply its water, and when to call a vet.",
     funFact: "Uromastyx (also called spiny-tailed lizards) are almost entirely herbivorous. They get nearly all their water from their food and rarely need a standing water dish! They're one of the few reptiles that thrive on seeds.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -952,7 +975,7 @@ export const lizardGuides = [
     routes: [
       { slug: "uromastyx-cost-guide", line: "$150 to $400 for the lizard, $500 to $900 of setup, and the starter kits that are sized wrong." },
       { slug: "uromastyx-tank-setup-guide", line: "4x2x2 as a floor, a 110 to 120F basking surface, 20 to 30% humidity, and the substrate recipe." },
-      { slug: "savannah-monitor-feeding-guide", line: "Insects as the staple and rodents as the exception, daily young and two to three times a week adult, calcium weekly without vitamin D, and body condition as the portion." },
+      { slug: "uromastyx-feeding-guide", line: "Schedule by age, the near-strict herbivore diet, the treats and foods to avoid, and why a cool basking spot causes weight loss even when it eats." },
       { slug: "uromastyx-handling-guide", line: "Two weeks hands-off, scoop from below, and why the tail is a permanent weapon rather than a sacrifice." },
       { slug: "uromastyx-health-issues-guide", line: "MBD, impaction, respiratory infection, where the water comes from, and the six signs that mean call now." },
       { slug: "uromastyx-enrichment-guide", line: "Heat and a burrow beat every object you can buy, with the priority order to build in." },
@@ -983,6 +1006,8 @@ export const lizardGuides = [
     petType: "Lizards",
     image: "/assets/guides/veiled-chameleon.jpg",
     tagline: "The helmet-headed climber with independently swiveling eyes!",
+    seoTitle: "Veiled Chameleon Care Guide: Setup, Water, and Diet",
+    seoDescription: "Veiled chameleons drink only moving water, so the dripper matters: a 24x24x48 cage, heat and UVB, the supplement schedule, and a laying bin for every female.",
     funFact: "Veiled chameleons are remarkably drought-adapted for a chameleon. Native to the mountains of Yemen and Saudi Arabia, they tolerate wider temperature and humidity swings than most other chameleon species. Females are also famous for laying large clutches of infertile eggs even without ever having contact with a male.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the

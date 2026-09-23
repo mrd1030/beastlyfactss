@@ -7,6 +7,8 @@ export const amphibianGuides = [
     petType: "Amphibians",
     image: "/assets/guides/axolotl.jpg",
     tagline: "The 'forever larva' with feathery gills and superhero-level regeneration!",
+    seoTitle: "Axolotl Care Guide: Cold Water, Feeding, and Health",
+    seoDescription: "Axolotl care starts with cold water: why 60 to 68°F and a chiller beat any heater, the gravel that means surgery, and when a floating axolotl needs a vet today.",
     funFact: "Axolotls are neotenic, meaning they retain their larval (juvenile) features throughout their entire adult life and never undergo full metamorphosis. They keep their feathery external gills, tail fins, and aquatic lifestyle permanently. Scientists study them intensively because they can regenerate not just limbs but heart tissue, spinal cord sections, and parts of their brain with zero scarring.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -82,6 +84,8 @@ export const amphibianGuides = [
     petType: "Amphibians",
     image: "/assets/guides/fire-bellied-toad.jpg",
     tagline: "The little green toad that flips over to flash a fiery belly!",
+    seoTitle: "Fire-Bellied Toad Care Guide: Setup, Diet, and Health",
+    seoDescription: "A fire-bellied toad lives or dies by its water. Build the half-land, half-water tank, feed the right live prey, handle it rarely, and catch red leg early.",
     funFact: "The bright red-orange belly is a warning display, not decoration. Threatened, the toad arches its back and lifts its limbs to show the color off, and every stage after that arch is the animal spending toxin on whatever is holding it.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -133,6 +137,7 @@ export const amphibianGuides = [
     routes: [
       { slug: "fire-bellied-toad-cost-guide", line: "The toad at $10 to $25, what the paludarium actually costs to build, the monthly run rate, and a lifespan with a documented ceiling of 30 years." },
       { slug: "fire-bellied-toad-tank-setup-guide", line: "The half-land half-water build, water quality as the whole game, temperature, substrate, lighting, and diet basics." },
+      { slug: "fire-bellied-toad-feeding-guide", line: "Live prey it leaps for, two to six items every two to three days, no wider than the head, calcium every feeding, and no hard-shelled feeders." },
       { slug: "fire-bellied-toad-handling-guide", line: "The staged warning display, which toxin this animal actually has, and why it is a minimal-handling, single-species animal." },
       { slug: "fire-bellied-toad-health-issues-guide", line: "Red leg syndrome first, then chytrid, bloat, twitching, and the parasite load that comes with wild-caught stock." },
       { slug: "fire-bellied-toad-enrichment-guide", line: "Planting the water, moving the food around, and what the borrowed amphibian evidence does and does not support." },
@@ -165,6 +170,8 @@ export const amphibianGuides = [
     petType: "Amphibians",
     image: "/assets/guides/pacman-frog.jpg",
     tagline: "The round, grumpy ambush predator that is essentially all mouth!",
+    seoTitle: "Pacman Frog Care Guide: Setup, Feeding, and Health",
+    seoDescription: "Pacman frogs need only a modest setup. Get heat and humidity right, feed prey no wider than the head, and learn why a buried frog is hunting, not bored.",
     funFact: "Pacman frogs (horned frogs, genus Ceratophrys) have an extraordinarily powerful bite for an amphibian. Their bite force relative to body size is comparable to some predatory dinosaurs. They will attempt to eat anything that moves near them, including other frogs, small mice, and keepers' fingers.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -212,7 +219,7 @@ export const amphibianGuides = [
     routes: [
       { slug: "pacman-frog-cost-guide", line: "The frog $15 to $100, the modest setup this species actually needs, and the vet bill that impaction brings." },
       { slug: "pacman-frog-tank-setup-guide", line: "Enclosure size, 75 to 85°F days, 60 to 80% humidity, and why the heat mat never goes underneath." },
-      { slug: "fire-bellied-toad-feeding-guide", line: "Live prey it leaps for, two to six items every two to three days, no wider than the head, calcium every feeding, and no hard-shelled feeders." },
+      { slug: "pacman-frog-feeding-guide", line: "Portion control over schedule, prey no wider than the head, the foods to avoid, and when a long fast is normal and when it needs a vet." },
       { slug: "pacman-frog-handling-guide", line: "Why this is a display animal, how to pick one up on the rare occasion you must, and sexing a mature frog." },
       { slug: "pacman-frog-health-issues-guide", line: "Obesity, impaction, metabolic bone disease, red-leg, and the signs that mean a vet now." },
       { slug: "pacman-frog-enrichment-guide", line: "What the amphibian research actually supports, the priority order, and reading body condition without touching the frog." },
@@ -244,6 +251,8 @@ export const amphibianGuides = [
     petType: "Amphibians",
     image: "/assets/guides/tiger-salamander.jpg",
     tagline: "The stout, blotchy burrower that begs for food like a puppy!",
+    seoTitle: "Tiger Salamander Care Guide: Setup, Diet, and Health",
+    seoDescription: "A burrower you will rarely see: the 20-gallon long it needs, how deep the substrate goes, measured feeding, and why appetite loss here is a real red flag.",
     funFact: "Tiger salamanders are one of North America's largest terrestrial salamanders, reaching 13 inches. They are also among the most cold-tolerant amphibians on the continent, naturally overwintering underground in frozen soil across much of the US and Canada.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -295,6 +304,7 @@ export const amphibianGuides = [
     routes: [
       { slug: "tiger-salamander-cost-guide", line: "The animal at $30 to $125, the upfront setup, the monthly feeder bill, and the lifespan that is the real commitment." },
       { slug: "tiger-salamander-tank-setup-guide", line: "Enclosure size, 60 to 75°F, humidity, the substrate avoid-list, water, lighting, diet basics, and the larval-to-adult changeover." },
+      { slug: "tiger-salamander-feeding-guide", line: "Worms and crickets at night in measured meals, two to three times a week as an adult, the supplement schedule by age, and the mouse that is a rare treat." },
       { slug: "tiger-salamander-handling-guide", line: "Why handling stays minimal, what to do when it is unavoidable, and why an animal you rarely see is behaving normally." },
       { slug: "tiger-salamander-health-issues-guide", line: "Obesity, substrate impaction, metabolic bone disease, skin and bacterial infection including chytrid, and parasites." },
       { slug: "tiger-salamander-enrichment-guide", line: "Substrate depth as the whole guide, what the amphibian enrichment research does and does not say, and the priority order." },
@@ -328,6 +338,8 @@ export const amphibianGuides = [
     petType: "Amphibians",
     image: "/assets/guides/whites-tree-frog.jpg",
     tagline: "The chubby tree frog wearing a permanent, unbothered smile!",
+    seoTitle: "White's Tree Frog Care Guide: Setup, Diet, and Health",
+    seoDescription: "White's tree frogs are hardy but prone to obesity. Build the 18x18x24 enclosure with humidity that dips, feed on a schedule, and learn the fat line to watch.",
     funFact: "White's tree frogs are also called 'dumpy tree frogs' because they develop adorable fat rolls (parotoid glands and lipid ridges) as adults. These rolly features are a sign of a well-fed, healthy frog, not obesity!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -378,7 +390,7 @@ export const amphibianGuides = [
       { slug: "whites-tree-frog-tank-setup-guide", line: "The 18x18x24 minimum, the temperature gradient, the humidity that dips instead of sitting high, substrate, UVB, and the water that is safe to mist with." },
       { slug: "whites-tree-frog-handling-guide", line: "Why plain water beats soap, when gloves are the safer option, how long a session runs, and why the risk points at the frog rather than at you." },
       { slug: "whites-tree-frog-health-issues-guide", line: "Obesity as the signature risk, chytridiomycosis, red-leg syndrome, bacterial and skin infections, metabolic bone disease, and the husbandry pattern behind all of them." },
-      { slug: "tiger-salamander-feeding-guide", line: "Worms and crickets at night in measured meals, two to three times a week as an adult, the supplement schedule by age, and the mouse that is a rare treat." },
+      { slug: "whites-tree-frog-feeding-guide", line: "Which insects to offer, how often by size and age, gut-loading and dusting, and the ridge test that shows overfeeding before the frog does." },
       { slug: "whites-tree-frog-enrichment-guide", line: "The red-eyed tree frog plant study and what it actually measured, dense layered planting, broad perches near the top, prey released into cover, and the one rule for group housing." },
     ],
     buyList: [

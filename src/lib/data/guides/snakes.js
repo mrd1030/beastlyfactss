@@ -7,6 +7,8 @@ export const snakeGuides = [
     petType: "Snakes",
     image: "/assets/guides/ball-python.jpg",
     tagline: "The gentle noodle that curls into a perfect ball when shy!",
+    seoTitle: "Ball Python Care Guide: Setup, Feeding, and Health",
+    seoDescription: "Ball python care from day one: the 4x2x2 enclosure and humidity that decide it all, feeding by age, when to handle, and the signs that mean a vet visit today.",
     funFact: "Ball pythons can go 3 to 6 months without eating (though they shouldn't have to). When scared, they curl into a tight ball to protect their head, hence the name!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -90,6 +92,8 @@ export const snakeGuides = [
     petType: "Snakes",
     image: "/assets/guides/boa-constrictor.jpg",
     tagline: "The powerful, graceful heavyweight of the pet snake world!",
+    seoTitle: "Boa Constrictor Care Guide: Setup, Feeding, and Handling",
+    seoDescription: "A boa constrictor is a commitment of decades: an enclosure sized for the adult, a heat source it cannot touch, rare adult meals, and the second-handler rule.",
     funFact: "Boa constrictors can sense the heartbeat of their prey using heat-sensitive pits. They literally feel your pulse!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
@@ -162,6 +166,8 @@ export const snakeGuides = [
     petType: "Snakes",
     image: "/assets/guides/california-kingsnake.jpg",
     tagline: "The boldly banded beginner snake that becomes a gem with handling!",
+    seoTitle: "California Kingsnake Care Guide: Setup, Diet, and Handling",
+    seoDescription: "California kingsnakes eat other snakes, so this one lives alone: the 48x24x24 adult enclosure, heat and humidity, feeding, handling timing, and shed trouble.",
     funFact: "Kingsnakes are immune to the venom of rattlesnakes, copperheads, and cottonmouths, and they actively hunt and eat other snakes, including venomous ones! The name 'King' is well earned.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
@@ -210,6 +216,7 @@ export const snakeGuides = [
     routes: [
       { slug: "california-kingsnake-cost-guide", line: "$45 to $300 for the snake, $200 to $500 for the setup, $15 to $30 a month, and the one cost consideration that isn't about money." },
       { slug: "california-kingsnake-tank-setup-guide", line: "The 48x24x24 adult enclosure, the temperature and humidity targets, substrate, feeding, and the two security rules this species carries." },
+      { slug: "california-kingsnake-feeding-guide", line: "Prey as wide as the thickest point, every 5 to 7 days young and 10 to 14 as an adult, never live, and one snake per feeding." },
       { slug: "california-kingsnake-handling-guide", line: "Session lengths, the timing rules around feeding and shedding, the five fear signals, and why this snake must live alone." },
       { slug: "california-kingsnake-health-issues-guide", line: "Respiratory infection, scale rot, mites, mouth rot, retained shed, and why nearly all of it traces back to husbandry." },
       { slug: "california-kingsnake-enrichment-guide", line: "No kingsnake study exists, so this is the corn snake and ratsnake evidence, labeled as borrowed, on floor space, cover, climbing and scent." },
@@ -242,6 +249,8 @@ export const snakeGuides = [
     petType: "Snakes",
     image: "/assets/guides/corn-snake.jpg",
     tagline: "The curious, colorful beginner snake that never stops exploring!",
+    seoTitle: "Corn Snake Care Guide: Setup, Feeding, and Health",
+    seoDescription: "Corn snake care that settles arguments: the 40-gallon breeder minimum, the thermostat rule with zero exceptions, the humidity debate, and prey sizing.",
     funFact: "Corn snakes are named for their distinctive belly pattern that resembles Indian corn kernels, not because they're found in corn fields (though they are)!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
@@ -285,7 +294,7 @@ export const snakeGuides = [
     routes: [
       { slug: "corn-snake-cost-guide", line: "$25 to $70 for the snake, $250 to $600 for the setup, $200 to $500 a year, and what it costs over a two-decade lifespan." },
       { slug: "corn-snake-tank-setup-guide", line: "The 40-gallon breeder minimum, the one non-negotiable thermostat rule, and the genuine humidity disagreement worth knowing about." },
-      { slug: "california-kingsnake-feeding-guide", line: "Prey as wide as the thickest point, every 5 to 7 days young and 10 to 14 as an adult, never live, and one snake per feeding." },
+      { slug: "corn-snake-feeding-guide", line: "Every 5 to 7 days as a hatchling to every 14 to 21 as an adult, why frozen-thawed beats live, and the reasons one goes off food, from shed to brumation." },
       { slug: "corn-snake-handling-guide", line: "Settling-in time, the two-handed support, the timing rules around feeding and shedding, and the stress signs." },
       { slug: "corn-snake-health-issues-guide", line: "Respiratory infection, scale rot, mites, retained shed, mouth rot, and the list that means the vet today." },
       { slug: "corn-snake-enrichment-guide", line: "The 2021 studies on enclosure size and odor discrimination, and why floor space is the enrichment for this species." },
@@ -318,6 +327,8 @@ export const snakeGuides = [
     petType: "Snakes",
     image: "/assets/guides/garter-snake.jpg",
     tagline: "The backyard classic that eats fish and worms instead of mice!",
+    seoTitle: "Garter Snake Care Guide: Setup, Diet, and Legality",
+    seoDescription: "Many garter snakes never take a mouse. What they eat instead, the thiaminase risk in cheap feeder fish, a pool to swim in, and why the law is harder here.",
     funFact: "Garter snakes give birth to live young instead of laying eggs, and a single litter can range from a handful of babies to as many as 80!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -409,6 +420,8 @@ export const snakeGuides = [
     petType: "Snakes",
     image: "/assets/guides/hognose-snake.jpg",
     tagline: "The drama queen of snakes: the whole display is bluff!",
+    seoTitle: "Hognose Snake Care Guide: Setup, Feeding, and Temperament",
+    seoDescription: "Hognose snakes bluff, play dead, and dig: enclosure size by sex, the dry air and deep substrate they need, feeding that avoids obesity, and the venom question.",
     funFact: "When threatened, hognose snakes will flatten their neck, hiss, lunge (mouth closed), and if that fails, flip over and play dead complete with open mouth and tongue hanging out!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
@@ -492,6 +505,8 @@ export const snakeGuides = [
     petType: "Snakes",
     image: "/assets/guides/milk-snake.jpg",
     tagline: "The brilliantly banded mimic that wears venomous colors with no venom required!",
+    seoTitle: "Milk Snake Care Guide: Setup, Feeding, and Temperament",
+    seoDescription: "Milk snakes hide, musk, and eat each other: the 48x24x24 enclosure, the moisture balance behind most illness, feeding by age, and the states that restrict them.",
     funFact: "Milk snakes are harmless, but their red, black, and yellow banding mimics the deadly coral snake: a survival trick called Batesian mimicry. The rhyme 'Red touch yellow, kill a fellow; red touch black, friend of Jack' helps tell them apart!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -544,6 +559,7 @@ export const snakeGuides = [
     routes: [
       { slug: "milk-snake-cost-guide", line: "$60 to $500 by subspecies and morph, the $300 to $600 setup, and why the real commitment here is time rather than money." },
       { slug: "milk-snake-tank-setup-guide", line: "The 48x24x24 minimum, the halogen bulb over a basking stone, the moisture balance, feeding, and the no-cohabitation rule." },
+      { slug: "milk-snake-feeding-guide", line: "Prey at 1.5 times the body width or 10% of its weight, every 5 to 7 days as a hatchling and 10 to 14 as an adult, and why hatchlings eat snakes." },
       { slug: "milk-snake-handling-guide", line: "A muskier, flightier temperament than a corn snake's, the cannibalism rule, and where the red-touches-yellow rhyme stops working." },
       { slug: "milk-snake-health-issues-guide", line: "Respiratory infection, scale rot, mites, retained shed, and the one dial, moisture, that sits behind three of them." },
       { slug: "milk-snake-enrichment-guide", line: "Why a snake that hides constantly needs more cover rather than a smaller enclosure, and how to clutter one properly." },
@@ -577,6 +593,8 @@ export const snakeGuides = [
     petType: "Snakes",
     image: "/assets/guides/rosy-boa.jpg",
     tagline: "The pint-sized desert boa that's calmer than snakes twice its size!",
+    seoTitle: "Rosy Boa Care Guide: Setup, Feeding, and Handling",
+    seoDescription: "The rosy boa is one of the calmest snakes you can own, and it runs dry: a 90°F basking surface, low humidity unlike other boas, and prey sized to its body.",
     funFact: "A rosy boa runs 24 to 36 inches and rarely tops 4 feet, a fraction of a boa constrictor's adult length, yet it can live just as long: documented individuals have reached past 30 years. The lifespan commitment doesn't shrink with the snake, only the space and setup cost do.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -628,7 +646,7 @@ export const snakeGuides = [
     routes: [
       { slug: "rosy-boa-cost-guide", line: "$150 to $400 for the snake, roughly $150 to $250 for the setup, $6 to $11 a month, and the vet set-aside that outweighs all of it." },
       { slug: "rosy-boa-tank-setup-guide", line: "A modest enclosure, a 90°F basking surface, and the low humidity that runs opposite to every other pet boa." },
-      { slug: "milk-snake-feeding-guide", line: "Prey at 1.5 times the body width or 10% of its weight, every 5 to 7 days as a hatchling and 10 to 14 as an adult, and why hatchlings eat snakes." },
+      { slug: "rosy-boa-feeding-guide", line: "Whole mice sized to the snake, every 10 to 14 days for an adult, why overfeeding is the bigger risk, the winter slowdown, and supplements." },
       { slug: "rosy-boa-handling-guide", line: "One of the calmest snakes you can own, the 48-hour post-feeding wait, and the balling response it rarely bothers to use." },
       { slug: "rosy-boa-health-issues-guide", line: "Respiratory infection, scale rot, retained shed, rostral abrasion, and obesity, with humidity behind most of the list." },
       { slug: "rosy-boa-enrichment-guide", line: "Floor space first, deep dry substrate second, and why the standard 20 gallon long was never actually tested." },

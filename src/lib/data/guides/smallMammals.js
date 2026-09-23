@@ -7,6 +7,8 @@ export const smallMammalGuides = [
     petType: "Small Mammals",
     image: "/assets/guides/chinchilla.jpg",
     tagline: "The incredibly soft, high-jumping rodent that needs dust baths!",
+    seoTitle: "Chinchilla Care Guide: Cage, Heat, and Diet",
+    seoDescription: "Chinchilla care comes down to staying cool: the 150 rule for heat danger, a tall cage with solid floors, dust baths done right, and the hay-first diet.",
     funFact: "Chinchillas can jump up to 6 feet high and can rotate their ears 180 degrees! Their fur is so dense they can have up to 80 hairs per follicle, versus 2 to 3 for humans.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
@@ -81,6 +83,8 @@ export const smallMammalGuides = [
     petType: "Small Mammals",
     image: "/assets/guides/degu.jpg",
     tagline: "The daytime rodent that cannot eat sugar and will not live alone!",
+    seoTitle: "Degu Care Guide: Cage, Diet, and Legal Status",
+    seoDescription: "Degus are never kept alone and cannot eat sugar. A cage with a solid roof, the diet that avoids diabetes, why rabbit pellets are wrong, and where it is banned.",
     funFact: "Degus are one of the few mammals that cannot metabolize dietary sugar properly. They have an unusual insulin structure and develop diabetes and cataracts on a diet most other rodents handle fine, which is why a single grape can matter here in a way it never would for a hamster.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -192,6 +196,8 @@ export const smallMammalGuides = [
     petType: "Small Mammals",
     image: "/assets/guides/mouse.jpg",
     tagline: "The pocket-sized speedster that's cheap to keep but easy to underestimate!",
+    seoTitle: "Mouse Care Guide: Cage, Feeding, and Enrichment",
+    seoDescription: "Mouse care for an animal easy to underestimate: why a wire cage beats a tank, quarter-inch bar spacing, portions for a tiny body, and nesting material.",
     funFact: "A male mouse's strong smell comes down to one specific chemical, trimethylamine, that shows up heavily in his urine and barely at all in a female's or a rat's. It's why an all-male mouse cage needs cleaning far more often than the equivalent rat setup.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -290,6 +296,8 @@ export const smallMammalGuides = [
     petType: "Small Mammals",
     image: "/assets/guides/rat.jpg",
     tagline: "The whip-smart, deeply social rodent that will learn its own name!",
+    seoTitle: "Fancy Rat Care Guide: Cage, Diet, and Health",
+    seoDescription: "Fancy rat care for a pair, since one rat is never enough: why a wire cage beats a glass tank, the real minimum size, and the respiratory warning signs.",
     funFact: "Rats can be trained to respond to their own name, give a high-five, and fetch a ball using the same reward-based methods used on dogs. That knack for learning is also why lab rats have been the standard animal for maze and memory research for more than a century.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
@@ -374,6 +382,8 @@ export const smallMammalGuides = [
     petType: "Small Mammals",
     image: "/assets/guides/ferret.jpg",
     tagline: "The slinky escape artist that sleeps 18 hours and wreaks havoc in the other 6!",
+    seoTitle: "Ferret Care Guide: Setup, Diet, and Health",
+    seoDescription: "Ferret care for an escape artist: a cage for two, ferret-proofing that matters as much, free-fed kibble, adrenal disease, insulinoma, and where they are banned.",
     funFact: "Ferrets do a 'war dance' when they're excited: a frenzied hopping, bouncing, and sideways leaping display also called the 'dooking.' Dooking means your ferret is having the time of their life!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
@@ -444,6 +454,8 @@ export const smallMammalGuides = [
     petType: "Small Mammals",
     image: "/assets/guides/flying-squirrel.jpg",
     tagline: "The tiny nocturnal glider with enormous eyes and no fear of heights!",
+    seoTitle: "Flying Squirrel Care Guide: Laws, Cage, and Diet",
+    seoDescription: "Flying squirrel care starts with state law, then a pair: a cage built tall rather than wide, the calcium ratio behind bone disease, and bonding from the pouch.",
     funFact: "Flying squirrels are true rodents, not marsupials, so despite gliding the same way on the same kind of wrist-to-ankle membrane, they aren't closely related to sugar gliders at all. It's convergent evolution: two unrelated animals independently landing on the same solution.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -534,6 +546,8 @@ export const smallMammalGuides = [
     petType: "Small Mammals",
     image: "/assets/guides/gerbil.jpg",
     tagline: "The tidy desert burrower that wants deep bedding, not a bare cage floor!",
+    seoTitle: "Gerbil Care Guide: Tank, Bedding, and Health",
+    seoDescription: "Gerbil care built on digging: why the enclosure has to be glass, bedding deep enough for real tunnels, protein and fat targets, and the same-day emergency.",
     funFact: "Gerbils came out of the Mongolian desert with a water-conserving physiology that makes them one of the least smelly pets you can keep. They produce only a few drops of highly concentrated urine a day, so a well-kept gerbil tank barely registers compared with a mouse or a rat.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -622,6 +636,8 @@ export const smallMammalGuides = [
     petType: "Small Mammals",
     image: "/assets/guides/guinea-pig.jpg",
     tagline: "The vocal, social little veggie lover that needs a friend!",
+    seoTitle: "Guinea Pig Care Guide: Cage, Vitamin C, and Health",
+    seoDescription: "Guinea pigs need a friend and daily vitamin C. The cage floor for a pair, hay as most of the diet, what scurvy looks like, and signs that mean a vet today.",
     funFact: "Guinea pigs have over 11 different vocalizations. They 'wheek' when excited about food and 'purr' when content (similar to cats but much louder)!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -696,6 +712,8 @@ export const smallMammalGuides = [
     petType: "Small Mammals",
     image: "/assets/guides/hamster.jpg",
     tagline: "The pouch-stuffing solo escape artist that needs way more space than the pet store box!",
+    seoTitle: "Hamster Care Guide: Cage, Bedding, and Health",
+    seoDescription: "Hamster care that starts bigger than the pet store box: real floor space, at least 6 inches of bedding, the right wheel size, the sand bath, and wet tail.",
     funFact: "A hamster's cheek pouches can stretch back past its shoulders when fully packed with food, holding roughly a fifth of the hamster's own body weight.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -764,6 +782,8 @@ export const smallMammalGuides = [
     petType: "Small Mammals",
     image: "/assets/guides/hedgehog.jpg",
     tagline: "The spiky little explorer that runs on a wheel all night!",
+    seoTitle: "Hedgehog Care Guide: Setup, Heat, and Health",
+    seoDescription: "Hedgehog care where temperature is the whole game: the heat range and the emitter that holds it, a 2 by 3 foot floor, feeding by body condition, and legality.",
     funFact: "When threatened, hedgehogs roll into a tight ball and can make a variety of cute snuffling and hissing sounds. They're surprisingly vocal!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -855,6 +875,8 @@ export const smallMammalGuides = [
     petType: "Small Mammals",
     image: "/assets/guides/rabbit.jpg",
     tagline: "The gentle, litter-trainable companion that loves to binky!",
+    seoTitle: "Rabbit Care Guide: Space, Diet, and Health",
+    seoDescription: "Rabbit care that adds years to a lifespan: space for a pen plus a run, hay as most of the diet, the GI stasis emergency, the right lift, and why a pair helps.",
     funFact: "Rabbits can jump up to 4 feet high and run up to 25 mph. They're surprisingly athletic!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
@@ -934,6 +956,8 @@ export const smallMammalGuides = [
     petType: "Small Mammals",
     image: "/assets/guides/sugar-glider.jpg",
     tagline: "The tiny, gliding, social marsupial that needs a colony and lots of enrichment!",
+    seoTitle: "Sugar Glider Care Guide: Cage, Diet, and Laws",
+    seoDescription: "Sugar gliders live in colonies, so plan for two. The legal check, a tall cage with half-inch bars, the calcium ratio that prevents paralysis, and pouch bonding.",
     funFact: "Sugar gliders can glide up to 165 feet in the wild using a membrane called a patagium. They steer with their tails and can even do mid-air turns!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the

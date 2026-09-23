@@ -7,6 +7,8 @@ export const birdGuides = [
     petType: "Birds",
     image: "/assets/guides/african-grey.jpg",
     tagline: "The parrot that learns your words, your routine, and your microwave beep!",
+    seoTitle: "African Grey Parrot Care Guide: Cage, Diet, and Health",
+    seoDescription: "African grey care for a bird that can outlive you: the 36x24x48 cage, a pellet-first diet, why bites happen, and the illness signs a grey hides until late.",
     funFact: "African Greys have the cognitive ability of a 5-year-old child and can learn over 1,000 words. The famous parrot Alex could identify colors, shapes, and even understand the concept of 'same' and 'different'!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -77,6 +79,8 @@ export const birdGuides = [
     petType: "Birds",
     image: "/assets/guides/budgie.jpg",
     tagline: "The cheerful little chatterbox that picks up phrases you never taught it!",
+    seoTitle: "Budgie Care Guide: Cage Setup, Feeding, and Health",
+    seoDescription: "Budgie care done right from week one: why a wide cage beats a tall one, the pellet share of the diet, taming step by step, and the signs that need a vet today.",
     funFact: "Budgies can learn to talk and have been known to learn over 1,700 words! The Guinness World Record holder was a budgie named Puck who knew 1,728 words, more than any other bird on record!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -149,6 +153,8 @@ export const birdGuides = [
     petType: "Birds",
     image: "/assets/guides/canary.jpg",
     tagline: "The tiny opera singer that would rather be heard than held!",
+    seoTitle: "Canary Care Guide: Cage, Diet, and Song",
+    seoDescription: "Canary care for a look-and-listen bird: why cage width beats height, the air-quality rule that keeps it alive, diet, and what a silent male is telling you.",
     funFact: "Only male canaries sing (with rare exceptions), and their song is directly tied to testosterone and daylight length. Centuries of selective breeding have produced distinct song 'breeds,' like the Roller canary, bred specifically for the complexity, tone, and softness of its song rather than for appearance.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -200,6 +206,7 @@ export const birdGuides = [
     routes: [
       { slug: "canary-cost-guide", line: "$25 to $500 depending on what you are buying it for, the setup, and the one question to ask a seller before paying." },
       { slug: "canary-tank-setup-guide", line: "Why width beats height, half-inch bars, 65 to 80°F, the air-quality rule, and what a canary actually eats." },
+      { slug: "canary-feeding-guide", line: "One to two teaspoons a day, mostly pellets, produce as a quarter, egg food through the molt, a cuttlebone and no grit." },
       { slug: "canary-handling-guide", line: "Why this is a look and listen bird, what a silent male means in July against any other month, and the dark catch." },
       { slug: "canary-health-issues-guide", line: "Air-sac mites, scaly face and leg mites, red mites, respiratory infection, and the early signs that come first." },
       { slug: "canary-enrichment-guide", line: "What the song research says about a constantly singing male, flight distance, perches, and the corticosterone finding." },
@@ -231,6 +238,8 @@ export const birdGuides = [
     petType: "Birds",
     image: "/assets/guides/cockatiel.jpg",
     tagline: "The crested whistler that will learn your ringtone and improve on it!",
+    seoTitle: "Cockatiel Care Guide: Cage, Feeding, and Handling",
+    seoDescription: "A cockatiel settles in on your patience: the 20x20x30 cage floor, a pellet-first diet, trust before the step-up, reading the crest, and the kitchen danger.",
     funFact: "Cockatiels are masters of mimicry. Males especially love to learn whistled tunes and will serenade you (and any reflective surface) for hours. Many can even learn short phrases!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -275,7 +284,7 @@ export const birdGuides = [
       { slug: "cockatiel-tank-setup-guide", line: "The 20x20x30 minimum, why width beats height, bar spacing, and the kitchen danger worth repeating." },
       { slug: "cockatiel-handling-guide", line: "Building trust before you touch, the flat-palm step-up, and reading a stressed versus comfortable crest." },
       { slug: "cockatiel-health-issues-guide", line: "Nutritional disease, reproductive disease, the kitchen danger, and the signs that mean an avian vet now." },
-      { slug: "canary-feeding-guide", line: "One to two teaspoons a day, mostly pellets, produce as a quarter, egg food through the molt, a cuttlebone and no grit." },
+      { slug: "cockatiel-feeding-guide", line: "Pellets as 75 to 80% of the bowl, how much fresh food belongs beside them, the foods to avoid, and the reasons a cockatiel goes off food." },
       { slug: "cockatiel-enrichment-guide", line: "What two real studies found, why foraging comes first, and a priority order for everything else." },
     ],
     buyList: [
@@ -300,6 +309,8 @@ export const birdGuides = [
     petType: "Birds",
     image: "/assets/guides/cockatoo.jpg",
     tagline: "The feathered drama major that loves you loudly and forever!",
+    seoTitle: "Cockatoo Care Guide: Cage, Diet, and Behavior",
+    seoDescription: "Before a cockatoo comes home: the 36x24x48 cage floor, the over-bonding trap, why they scream and pluck, the diet that prevents fatty liver, and state laws.",
     funFact: "Cockatoos are considered the most affection-dependent parrots in aviculture. In the wild they maintain near-constant physical contact with their flock and mate, and a captive cockatoo often expects the same level of contact from its owner - which is exactly why the species has one of the highest rates of severe feather-plucking and behavioral problems of any commonly kept parrot when that need isn't met.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -370,6 +381,8 @@ export const birdGuides = [
     petType: "Birds",
     image: "/assets/guides/conure.jpg",
     tagline: "The clownish, cuddly little conure that never stops entertaining!",
+    seoTitle: "Green Cheek Conure Care Guide: Cage, Diet, and Health",
+    seoDescription: "Green cheek conure care that starts with quarantine: cage and room setup, pellets over seed, why most beak contact is balance, and the diseases new birds carry.",
     funFact: "Green cheek conures are notorious for learning to hang upside down, play dead, and roll over on command. They're often called the 'class clown' of the parrot world and learn tricks faster than almost any other small parrot!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -450,6 +463,8 @@ export const birdGuides = [
     petType: "Birds",
     image: "/assets/guides/lovebird.jpg",
     tagline: "The feisty, affectionate little parrot that bonds deeply with its person!",
+    seoTitle: "Lovebird Care Guide: Cage, Feeding, and Handling",
+    seoDescription: "Lovebird care starts with one decision: one bird or two. Then the cage floor, bar spacing as safety, why the nest box waits, and taming a defensive bird.",
     funFact: "Lovebirds mate for life in the wild and are famous for their strong pair bonds. They even feed each other and sit side-by-side for hours! This is where they got their name.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -516,6 +531,8 @@ export const birdGuides = [
     petType: "Birds",
     image: "/assets/guides/parrotlet.jpg",
     tagline: "The pocket parrot with a personality several sizes too big for it!",
+    seoTitle: "Parrotlet Care Guide: Cage, Diet, and Handling",
+    seoDescription: "Parrotlet care for a pocket parrot with a big bite: quarter-inch bars, pellets with no grit, the warning nip most owners miss, and one bird versus a pair.",
     funFact: "Despite being smaller than a budgie, the Pacific parrotlet has a noticeably stronger bite and a personality so bold that keepers often describe it as a big parrot's attitude packed into a tiny bird. It genuinely does not seem to know how small it is.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -603,6 +620,8 @@ export const birdGuides = [
     petType: "Birds",
     image: "/assets/guides/quaker-parakeet.jpg",
     tagline: "The little architect that would rather build a nest than move into one!",
+    seoTitle: "Quaker Parakeet Care Guide: Legality, Cage, and Diet",
+    seoDescription: "Check the law before the cage: thirteen states ban the quaker parakeet. Then cage size, bar spacing, why a nest box never goes in, and a pellet-first diet.",
     funFact: "The quaker is the only parrot that does not nest in a tree cavity. It weaves a bulky stick nest instead, often on electrical infrastructure, and the nest material arcs the current. Every US state ban on this bird is an escape-and-establishment rule rather than a dangerous-animal one.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -690,6 +709,8 @@ export const birdGuides = [
     petType: "Birds",
     image: "/assets/guides/zebra-finch.jpg",
     tagline: "The busy little finch that wants a friend far more than a finger!",
+    seoTitle: "Zebra Finch Care Guide: Cage, Diet, and Group Size",
+    seoDescription: "Zebra finches are never kept alone. Group size, a wide flight cage over a tall one, the pellet and seed split, why they are not hand-tamed, and vet signs.",
     funFact: "Zebra finches are the most widely studied songbird in neuroscience. Only males sing, and they learn their song from a tutor as juveniles in a process remarkably similar to how human babies learn speech, which has made them one of science's best models for understanding vocal learning.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the

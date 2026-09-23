@@ -7,6 +7,8 @@ export const turtleGuides = [
     petType: "Turtles & Tortoises",
     image: "/assets/guides/box-turtle.jpg",
     tagline: "The self-closing, woodland wanderer that can live for over 100 years!",
+    seoTitle: "Box Turtle Care Guide: Setup, Diet, and Brumation",
+    seoDescription: "Box turtles can live past 60 and need more than a tank: the enclosure worth building, humidity and UVB, a diet that shifts with age, brumation, and state laws.",
     funFact: "Box turtles have a hinged plastron (lower shell) that closes so tightly that no predator can get in. They are the only turtles that can completely seal themselves inside their shell!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -89,6 +91,8 @@ export const turtleGuides = [
     petType: "Turtles & Tortoises",
     image: "/assets/guides/red-eared-slider.jpg",
     tagline: "The iconic pet turtle that grows much larger than the pet store suggests!",
+    seoTitle: "Red-Eared Slider Care Guide: Tank, Diet, and Health",
+    seoDescription: "Plan for the adult slider: 10 gallons of water per inch of shell, water and basking temperatures, mandatory UVB, filtration, and a diet that shifts with age.",
     funFact: "Red-eared sliders are one of the world's most invasive species. Released or escaped pets have established populations on every continent except Antarctica!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -177,6 +181,8 @@ export const turtleGuides = [
     petType: "Turtles & Tortoises",
     image: "/assets/guides/red-footed-tortoise.jpg",
     tagline: "The tropical tortoise with painted legs and a real taste for fruit!",
+    seoTitle: "Red-Footed Tortoise Care Guide: Setup, Diet, and Health",
+    seoDescription: "Red-footed tortoises need humidity an open table cannot hold: an 18 to 24 square foot enclosed floor, damp substrate, the protein it cannot skip, and shell rot.",
     funFact: "Unlike the strictly plant-eating Russian and sulcata tortoises, red-footed tortoises are true omnivores that eat carrion, insects, and land snails in the wild - a real taste for animal protein most pet tortoises never develop!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -270,6 +276,8 @@ export const turtleGuides = [
     petType: "Turtles & Tortoises",
     image: "/assets/guides/russian-tortoise.jpg",
     tagline: "The compact, hardy tortoise that digs first and asks later!",
+    seoTitle: "Russian Tortoise Care Guide: Setup, Diet, and Brumation",
+    seoDescription: "A Russian tortoise can outlive 40 years. The floor past the 8 square foot minimum, basking heat and UVB, a grazing diet over salad, and the brumation decision.",
     funFact: "Russian tortoises are one of the world's most cold-tolerant tortoise species. They can survive sub-zero temperatures in the wild by hibernating (brumating) deep underground for months at a time!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -340,6 +348,8 @@ export const turtleGuides = [
     petType: "Turtles & Tortoises",
     image: "/assets/guides/sulcata-tortoise.jpg",
     tagline: "The tortoise that starts palm-sized and ends up the size of a coffee table!",
+    seoTitle: "Sulcata Tortoise Care Guide: Space, Diet, and Health",
+    seoDescription: "Sulcatas reach 100 pounds and live for decades: outdoor space and shelter to plan now, a grass and hay diet, preventing pyramiding, and the federal import ban.",
     funFact: "Sulcata tortoises (African spurred tortoises) are the third-largest tortoise species on Earth. A hatchling the size of a ping-pong ball can grow to over 100 lbs and 3 feet long, in the same home!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
