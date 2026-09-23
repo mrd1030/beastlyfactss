@@ -191,7 +191,8 @@ function App() {
     "sameAs": [
       "https://www.pinterest.com/BeastlyFacts",
       "https://x.com/beastly_facts",
-      "https://www.instagram.com/beastly.facts"
+      "https://www.instagram.com/beastly.facts",
+      "https://www.youtube.com/@BeastlyFactsOfficial"
     ]
   };
 

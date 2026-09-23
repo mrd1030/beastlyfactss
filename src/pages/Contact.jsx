@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from '@/lib/motion-safe';
-import { Mail, Instagram } from 'lucide-react';
+import { Mail, Instagram, Youtube } from 'lucide-react';
 
 function XLogo({ className }) {
   return (
@@ -187,6 +187,26 @@ export default function Contact() {
             <p className="font-body font-bold text-base text-foreground group-hover:text-secondary transition-colors">Threads</p>
             <p className="text-sm text-muted-foreground font-body">@Beastly.Facts</p>
             <p className="text-xs text-muted-foreground font-body mt-0.5">Quick takes & animal trivia 🐾</p>
+          </div>
+        </motion.a>
+
+        <motion.a
+          href="https://www.youtube.com/@BeastlyFactsOfficial"
+          target="_blank"
+          rel="noopener noreferrer"
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.24 }}
+          whileHover={{ y: -2 }}
+          className="flex items-center gap-5 bg-card border border-border rounded-2xl p-6 hover:border-secondary/40 hover:shadow-sm transition-all group"
+        >
+          <div className="w-12 h-12 bg-red-500/10 rounded-2xl flex items-center justify-center flex-shrink-0">
+            <Youtube className="w-5 h-5 text-red-600" />
+          </div>
+          <div>
+            <p className="font-body font-bold text-base text-foreground group-hover:text-secondary transition-colors">YouTube</p>
+            <p className="text-sm text-muted-foreground font-body">@BeastlyFactsOfficial</p>
+            <p className="text-xs text-muted-foreground font-body mt-0.5">Animal facts in video form 🎬</p>
           </div>
         </motion.a>
 

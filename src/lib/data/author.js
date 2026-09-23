@@ -26,12 +26,13 @@ export const AUTHOR = {
   emoji: '🦎',
   // Accounts that are demonstrably the same operator, which is the entire point
   // of sameAs: it lets a crawler reconcile these profiles into one identity
-  // rather than treating each as a separate unknown. Same three the navbar and
-  // footer link, so nothing here is a claim the site does not already make.
+  // rather than treating each as a separate unknown. All are linked from the
+  // navbar and footer, so nothing here is a claim the site does not already make.
   sameAs: [
     'https://instagram.com/beastly.facts',
     'https://www.pinterest.com/beastlyfacts/',
     'https://x.com/beastly_facts',
+    'https://www.youtube.com/@BeastlyFactsOfficial',
   ],
 };
 
