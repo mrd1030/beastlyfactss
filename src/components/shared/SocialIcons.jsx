@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram } from 'lucide-react';
+import { Instagram, Youtube } from 'lucide-react';
 
 // lucide-react ships an Instagram glyph but not X/Pinterest/Facebook/Threads,
 // so those four are hand-drawn here. Single source for all five - Navbar.jsx
@@ -46,6 +46,7 @@ export const SOCIAL_LINKS = [
   { key: 'pinterest', label: 'Pinterest', href: 'https://www.pinterest.com/beastlyfacts/', Icon: PinterestLogo, colorClass: 'hover:text-red-500' },
   { key: 'facebook', label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61590767090597', Icon: FacebookLogo, colorClass: 'hover:text-blue-500' },
   { key: 'threads', label: 'Threads', href: 'https://www.threads.net/@Beastly.Facts', Icon: ThreadsLogo, colorClass: 'hover:text-foreground' },
+  { key: 'youtube', label: 'YouTube', href: 'https://www.youtube.com/@BeastlyFactsOfficial', Icon: Youtube, colorClass: 'hover:text-red-600' },
 ];
 
 // Small "follow us" row - used at the bottom of each /feed/ post so a reader

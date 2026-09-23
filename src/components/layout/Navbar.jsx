@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from '@/lib/motion-safe';
-import { Menu, X, Moon, Sun, ChevronDown, Instagram, Search } from 'lucide-react';
+import { Menu, X, Moon, Sun, ChevronDown, Instagram, Search, Youtube } from 'lucide-react';
 import { useDarkMode } from '@/lib/hooks/useLocalStorage';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { CATEGORIES } from '@/lib/data/categories';
@@ -331,7 +331,8 @@ export default function Navbar() {
                 <a href="https://x.com/beastly_facts" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-foreground/5 text-foreground text-xs font-body font-bold"><XLogo className="w-3.5 h-3.5" /> X</a>
                 <a href="https://www.pinterest.com/beastlyfacts/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-red-500/10 text-red-600 text-xs font-body font-bold"><PinterestLogo className="w-3.5 h-3.5" /> Pinterest</a>
                 <a href="https://www.facebook.com/profile.php?id=61590767090597" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-blue-500/10 text-blue-600 text-xs font-body font-bold"><FacebookLogo className="w-3.5 h-3.5" /> Facebook</a>
-                <a href="https://www.threads.net/@Beastly.Facts" target="_blank" rel="noopener noreferrer" className="col-span-2 flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-foreground/5 text-foreground text-xs font-body font-bold"><ThreadsLogo className="w-3.5 h-3.5" /> Threads</a>
+                <a href="https://www.threads.net/@Beastly.Facts" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-foreground/5 text-foreground text-xs font-body font-bold"><ThreadsLogo className="w-3.5 h-3.5" /> Threads</a>
+                <a href="https://www.youtube.com/@BeastlyFactsOfficial" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-red-500/10 text-red-600 text-xs font-body font-bold"><Youtube className="w-3.5 h-3.5" /> YouTube</a>
               </div>
             </div>
           </motion.div>
