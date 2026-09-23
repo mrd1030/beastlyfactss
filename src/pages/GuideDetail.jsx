@@ -236,16 +236,18 @@ export default function GuideDetail() {
   // at 1200x630 would silently misdeclare every guide photo's real dimensions.
   const ogImageDims = (guide.image && IMAGE_DIMENSIONS[guide.image]) || { width: 1200, height: 630 };
 
-  const guideTitle = `${guide.name} Care Guide | Beastly Facts`;
+  // Hand-written seoTitle/seoDescription win. The template below is only the
+  // fallback: it read the same on every hub, which is what search saw.
+  const guideTitle = guide.seoTitle || `${guide.name} Care Guide | Beastly Facts`;
   // The "for {name}" suffix must never get clipped by truncation, so trim the
   // variable tagline to fit the remaining budget instead of truncating the
   // whole concatenated string (which was cutting off the animal's name).
-  const guideDescription = guide.tagline
+  const guideDescription = guide.seoDescription || (guide.tagline
     ? (() => {
         const suffix = ` Full care guide covering housing, diet, enrichment, and health for ${guide.name}.`;
         return `${truncateDescription(guide.tagline, 155 - suffix.length)}${suffix}`;
       })()
-    : truncateDescription(`Complete care guide for ${guide.name} - covering housing, diet, enrichment, and health. Evidence-based advice for ${guide.petType} keepers.`);
+    : truncateDescription(`Complete care guide for ${guide.name} - covering housing, diet, enrichment, and health. Evidence-based advice for ${guide.petType} keepers.`));
   const canonicalUrl = `https://beastlyfacts.com/guides/${guide.id}/`;
 
   const crumbs = breadcrumbSchema([
