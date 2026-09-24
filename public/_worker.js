@@ -548,6 +548,69 @@ async function notifySubscriber(env) {
 }
 
 
+// POST /api/contact  ->  { ok } | { error }
+//
+// The contact form on /contact/ posts here, and the message goes to Mike as an
+// ntfy push, the same channel the subscriber and comment alerts use. Nothing is
+// stored: the push is the only copy, which is what the privacy policy says.
+//
+// The topic comes from NTFY_CONTACT_NOTIF, falling back to
+// NTFY_SUBSCRIBER_NOTIF, both Cloudflare Pages environment variables rather
+// than repo values: an ntfy topic can be read by anyone who knows its name, so
+// it must never reach the browser. With neither set the route answers 503 and
+// the form tells the visitor to email instead.
+//
+// Spam checks, cheap and silent: a hidden "website" field that people never
+// see and bots fill in, and a minimum time on the page before sending. Either
+// one tripping gets a normal-looking success, so a bot learns nothing.
+const CONTACT_LIMITS = { name: 80, email: 120, message: 2000, minMessage: 10, minMs: 3000 };
+
+async function handleContact(request, env) {
+  if (request.method !== 'POST') return storeJson({ error: 'Method not allowed.' }, 405);
+  let body;
+  try {
+    body = await request.json();
+  } catch {
+    return storeJson({ error: 'Could not read the form.' }, 400);
+  }
+  const name = String(body?.name || '').trim();
+  const email = String(body?.email || '').trim();
+  const message = String(body?.message || '').trim();
+
+  if (String(body?.website || '') !== '' || Number(body?.elapsed) < CONTACT_LIMITS.minMs) {
+    return storeJson({ ok: true });
+  }
+  if (!name || name.length > CONTACT_LIMITS.name) return storeJson({ error: 'Please add your name.' }, 400);
+  if (email && (email.length > CONTACT_LIMITS.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))) {
+    return storeJson({ error: 'That email address does not look right.' }, 400);
+  }
+  if (message.length < CONTACT_LIMITS.minMessage || message.length > CONTACT_LIMITS.message) {
+    return storeJson({ error: `Messages run ${CONTACT_LIMITS.minMessage} to ${CONTACT_LIMITS.message} characters.` }, 400);
+  }
+
+  const topic = env?.NTFY_CONTACT_NOTIF || env?.NTFY_SUBSCRIBER_NOTIF;
+  if (!topic) return storeJson({ error: 'The form is not set up yet.' }, 503);
+
+  try {
+    const res = await fetch('https://ntfy.sh', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({
+        topic,
+        title: `Contact form: ${name}`,
+        message: `${email ? `From: ${email}\n\n` : 'No email given.\n\n'}${message}`,
+        tags: ['envelope'],
+        priority: 4,
+        ...(email && { click: `mailto:${email}` }),
+      }),
+    });
+    if (!res.ok) throw new Error(`ntfy ${res.status}`);
+  } catch {
+    return storeJson({ error: 'The message did not go through.' }, 502);
+  }
+  return storeJson({ ok: true });
+}
+
 // ===========================================================================
 // Care package storefront: Stripe Checkout, the purchase webhook, downloads
 // ===========================================================================
@@ -1122,6 +1185,10 @@ export default {
 
     if (pathname.startsWith('/api/care-packages/')) {
       return handleCarePackageStore(request, env, pathname);
+    }
+
+    if (pathname === '/api/contact' || pathname === '/api/contact/') {
+      return handleContact(request, env);
     }
 
     if (pathname === '/subscribed' || pathname === '/subscribed/') {

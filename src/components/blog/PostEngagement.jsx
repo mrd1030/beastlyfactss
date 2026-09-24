@@ -63,6 +63,11 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
   const [commentText, setCommentText] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  // The comment form stays behind a "Leave a comment" link until asked for.
+  // Most articles have no comments yet, and an empty form on every one of
+  // them was a lot of blank furniture for nothing. Closed on the first render
+  // in both the prerendered HTML and the client, so hydration agrees.
+  const [formOpen, setFormOpen] = useState(false);
 
   // Comment/reply likes: counts per comment id, plus which ones this session
   // has already liked. Populated from the DB on load, same shape as the
@@ -440,16 +445,17 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
         )}
       </div>
 
-      {/* Comments section */}
+      {/* Comments section. Nothing but the link until the first approved
+          comment exists. */}
       <div>
-        <h3 className="font-display font-bold text-lg text-foreground mb-5">
-          Comments
-        </h3>
+        {topLevelComments.length > 0 && (
+          <h3 className="font-display font-bold text-lg text-foreground mb-5">
+            Comments
+          </h3>
+        )}
 
         {/* Existing comments */}
-        {topLevelComments.length === 0 ? (
-          <p className="text-sm text-muted-foreground font-body mb-6">No comments yet - be the first!</p>
-        ) : (
+        {topLevelComments.length > 0 && (
           <div className="space-y-4 mb-8">
             <AnimatePresence>
               {topLevelComments.map(c => (
@@ -587,6 +593,16 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
               Leave another comment
             </button>
           </div>
+        ) : !formOpen ? (
+          <button
+            type="button"
+            onClick={() => setFormOpen(true)}
+            aria-expanded="false"
+            className="inline-flex items-center gap-2 text-sm font-body font-semibold text-secondary hover:underline p-2 -m-2"
+          >
+            <MessageCircle className="w-4 h-4" />
+            Leave a comment
+          </button>
         ) : (
           <form onSubmit={handleSubmitComment} className="space-y-3 bg-card border border-border rounded-2xl p-5">
             <p className="font-body font-bold text-sm text-foreground">Leave a comment</p>
@@ -596,6 +612,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
                 value={name}
                 onChange={e => setName(e.target.value)}
                 required
+                autoFocus
                 className="font-body text-sm"
               />
               <Input

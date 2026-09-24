@@ -36,6 +36,7 @@ function ThreadsLogo({ className }) {
 }
 
 import DonateButton from '@/components/DonateButton';
+import ContactForm from '@/components/shared/ContactForm';
 
 export default function Contact() {
   return (
@@ -72,6 +73,10 @@ export default function Contact() {
       </div>
 
       <div className="max-w-2xl mx-auto px-4 sm:px-6 pb-16 space-y-5">
+        <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 }}>
+          <ContactForm />
+        </motion.div>
+
         <motion.a
           href="mailto:hello@beastlyfacts.com"
           initial={{ opacity: 0, y: 16 }}
