@@ -14,14 +14,22 @@ working checklist.
 - Complete frontmatter IS the structured data. BlogPosting, BreadcrumbList, and
   FAQPage JSON-LD are generated automatically from it, the author byline ties to
   /about via `sameAs`, `dateModified` comes from `lastUpdated` (falling back to `lastReviewed`), and
-  `datePublished` appears on the first build after the article's date arrives.
+  `datePublished` comes from `date`.
   Never hand-write schema blocks in an article.
 - `seoTitle` under 60 characters, `seoDescription` 150 to 160. The meta
   description is `seoDescription`, falling back to `excerpt` truncated at 155.
   The long `description` field is not the meta description, do not polish it
   expecting SERP impact.
-- `date` is the real intended publish date, never backdated. Spread batches 4 to
-  5 per day, never dumped on one date.
+- `date` is the day the article ships: never backdated, never future-dated.
+  scripts/check-publish-dates.mjs fails the build on a future `date`,
+  `lastUpdated` or `lastReviewed`. Writing ahead goes in `content/_scheduled-*`,
+  which the build skips, and moves into `content/` on its day. Spread a batch by
+  shipping 4 to 5 per day, never by dating ahead. Future dating returns only
+  with an automated release queue that moves scheduled files on their day.
+- Every new article gets a permanent rotation number in
+  `src/lib/data/rotation.json` (`node scripts/check-rotation.mjs --assign`
+  after `node scripts/sync-articles.js`). Today's reads picks by number, not
+  date. Never renumber; a removed article leaves a gap.
 - `category` comes from the values in use: Reptiles, Amphibians, Aquatic Life,
   Birds, Small & Exotic Pets, Invertebrates, Cats, Dogs, Comparisons, Legal,
   Roundups, Fun Facts, Pet Care, Enrichment. New categories are a deliberate

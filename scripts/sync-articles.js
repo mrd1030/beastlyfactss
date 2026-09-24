@@ -329,15 +329,14 @@ console.log(`Synced ${mdxMeta.length} MDX post metadata entries to src/lib/gener
 const mdxRelated = mdxMeta.map(({ slug, title, emoji, category }) => ({ slug, title, emoji: emoji || null, category: category || null }));
 fs.writeFileSync('./src/lib/generated/mdx-related.json', JSON.stringify(mdxRelated));
 
-// The build date, as a bundle constant, for anything that has to hide
-// future-dated posts before hydration finishes.
+// The build date, as a bundle constant, for anything that depends on the day
+// before hydration finishes (the Today's reads picks, the animal days calendar).
 //
-// A component cannot call new Date() during its first render to do that: at
-// prerender the module runs at build time and at a real visit it runs later, so
-// the two disagree the moment a post crosses its publish date between deploy
-// and visit, which is a genuine hydration mismatch. This value is baked into
-// the bundle, so it is identical in both, and the real clock is only consulted
-// after mount. See YouMayAlsoLike.jsx.
+// A component cannot call new Date() during its first render: at prerender the
+// module runs at build time and at a real visit it runs later, so the two
+// disagree the next day, which is a genuine hydration mismatch. This value is
+// baked into the bundle, so it is identical in both, and the real clock is only
+// consulted after mount. See src/lib/utils/rotation.js.
 //
 // Its own file rather than a key on mdx-meta.json, which is a bare array that
 // several consumers index directly.

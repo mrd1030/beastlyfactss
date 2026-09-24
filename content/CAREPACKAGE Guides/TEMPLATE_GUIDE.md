@@ -166,8 +166,8 @@ Run `npm run check:links` and `npm run check:related` after installing the artic
 not run `npm run build` unless explicitly asked.
 
 The rest is judgment, unenforced. Combine narrow topics so each article is long enough
-to stand on its own, and spread publish dates across days rather than dumping a batch on
-one. The four standard split guides stay as they are; these are additions, never
+to stand on its own, and ship a batch a few per day rather than all on
+one, each dated the day it goes live, never ahead. The four standard split guides stay as they are; these are additions, never
 replacements. Expanding an existing guide in place is often the better move than a new
 thin article, and several gap rows below call for exactly that.
 

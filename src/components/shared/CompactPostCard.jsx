@@ -1,25 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Clock, Calendar } from 'lucide-react';
 import LocalImage from '@/components/shared/LocalImage';
 import { getDisplayDate } from '@/lib/utils/date';
 import { isPlainLeftClick } from '@/lib/utils/linkClick';
 
 export default function CompactPostCard({ post, onClick }) {
-  // getDisplayDate() compares publishedAt against the live "now" clock, so a
-  // post that's future-scheduled at build time (staggered publish dates are
-  // routine on this site) prerenders with the date hidden - once the real
-  // world catches up to that date without a redeploy, a real visitor's
-  // hydration-time render would compute a shown date where the prerendered
-  // HTML has none, a structural mismatch (same class of bug fixed in
-  // HeroSection.jsx/TrendingFacts.jsx/CategoryBrowse.jsx, and Blog.jsx's
-  // PostView for this same helper). Default to hidden (matching what a
-  // prerender pass always captures, since the effect below is a no-op there)
-  // and reveal post-mount for real clients only.
-  const [date, setDate] = useState('');
-  useEffect(() => {
-    if (window.__IS_PRERENDER__) return;
-    setDate(getDisplayDate(post.publishedAt));
-  }, [post.publishedAt]);
+  // Rendered straight from the frontmatter. Articles are dated the day they
+  // ship (scripts/check-publish-dates.mjs), so the date no longer depends on
+  // the clock and the prerendered HTML and the first client render agree.
+  const date = getDisplayDate(post.publishedAt);
 
   const category = post.category || post.animalType || 'Article';
   const slug = post.slug?.current || post._id || post.id;

@@ -78,6 +78,12 @@ export default function CarePackageComingSoon({ pkg }) {
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="canonical" href={url} />
+        {/* Kept out of the index until the package is buyable. A page announcing
+            a product that does not exist yet is what AdSense's approval checks
+            call "not yet launched", and the free guides it points to are
+            already indexed on their own. It leaves the sitemap in the same
+            change (generate-sitemap.js), so the two never contradict. */}
+        <meta name="robots" content="noindex,follow" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
