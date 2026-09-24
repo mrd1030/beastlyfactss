@@ -399,10 +399,10 @@ export default function Blog() {
     : null;
   const blogTitle = catTitle
     ? `${catTitle} Articles | Beastly Facts`
-    : 'The Critter Digest | Exotic Pet Care Blog | Beastly Facts';
+    : 'The Critter Digest | Beastly Facts';
   const blogDescription = catTitle
-    ? `Browse all ${catTitle} articles on Beastly Facts - care guides, pet tips, and animal husbandry deep-dives from The Critter Digest.`
-    : 'Read the Critter Digest - in-depth reptile and exotic pet care guides, husbandry deep-dives, and pet tips from Beastly Facts. New articles every week.';
+    ? `Browse all ${catTitle} articles from The Critter Digest: care guides, deep dives, pet laws, wild animals and more on Beastly Facts.`
+    : 'The Critter Digest from Beastly Facts: exotic pet care guides, health deep dives, pet laws by state, wild animal features and more.';
   const blogCanonical = catSlug
     ? `https://beastlyfacts.com/blog/category/${catSlug}/`
     : 'https://beastlyfacts.com/blog/';
@@ -419,10 +419,10 @@ export default function Blog() {
         <meta property="og:url" content={blogCanonical} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
-        <meta property="og:image:alt" content="The Critter Digest - reptile and exotic pet care blog by Beastly Facts" />
+        <meta property="og:image:alt" content="The Critter Digest by Beastly Facts" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="The Critter Digest | Beastly Facts" />
-        <meta name="twitter:description" content="In-depth reptile and exotic pet care guides, husbandry deep-dives, and pet tips." />
+        <meta name="twitter:description" content="Exotic pet care guides, health deep dives, pet laws by state, wild animal features and more." />
         <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
       </Helmet>
       <div className="bg-gradient-to-b from-secondary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
@@ -433,7 +433,7 @@ export default function Blog() {
               The Critter Digest
             </h1>
             <p className="text-sm text-muted-foreground font-body max-w-lg">
-              In-depth reptile and exotic pet guides, care tips, and husbandry deep-dives.
+              Care guides, health deep dives, pet laws, wild animal features and more.
             </p>
           </motion.div>
 
