@@ -69,6 +69,7 @@ function toPost(meta) {
     title: meta.title,
     seoTitle: meta.seoTitle,
     seoDescription: meta.seoDescription,
+    noIndex: Boolean(meta.noIndex),
     excerpt: meta.excerpt,
     publishedAt: meta.date || new Date().toISOString(),
 

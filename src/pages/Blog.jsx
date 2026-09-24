@@ -894,8 +894,9 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
         <title>{postTitle}</title>
         <meta name="description" content={postDescription} />
         <link rel="canonical" href={canonicalUrl} />
-        {/* Individual blog post detail pages are always indexable; only the listing view uses dynamic noindex logic. */}
-        <meta name="robots" content="index,follow" />
+        {/* Indexable unless the article's frontmatter sets noIndex: true, which
+            keeps the page reachable for readers and links but out of search. */}
+        <meta name="robots" content={post.noIndex ? 'noindex,follow' : 'index,follow'} />
         <meta property="og:title" content={post.seoTitle || post.title} />
         <meta property="og:description" content={postDescription} />
         <meta property="og:url" content={canonicalUrl} />

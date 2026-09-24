@@ -146,6 +146,9 @@ function getMdxPosts() {
   return mdxMeta
     .filter(post => !isChroniclesSlug(post.slug))
     .filter(post => !RELOCATED_ARTICLE_SLUG_SET.has(post.slug))
+    // noIndex articles render with a robots noindex, so listing them here
+    // would ask Google to crawl a page the page itself says to skip.
+    .filter(post => !post.noIndex)
     .map(post => ({
     path: `/blog/${post.slug}/`,
     // Only emit lastmod when the frontmatter carries a real date: a fabricated
