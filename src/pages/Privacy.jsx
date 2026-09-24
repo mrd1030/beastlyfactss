@@ -28,7 +28,7 @@ export default function Privacy() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <span className="text-3xl mb-2 block" role="img" aria-label="Padlock">🔒</span>
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">Privacy Policy</h1>
-            <p className="text-xs text-muted-foreground font-body">Last updated: September 12, 2026</p>
+            <p className="text-xs text-muted-foreground font-body">Last updated: September 24, 2026</p>
           </motion.div>
         </div>
       </div>
@@ -43,7 +43,7 @@ export default function Privacy() {
             <p>BeastlyFacts.com collects minimal personal information to operate effectively:</p>
             <ul className="list-disc pl-5 space-y-1">
               <li><strong className="text-foreground">Newsletter Data</strong> - email address, collected only when you voluntarily subscribe.</li>
-              <li><strong className="text-foreground">Contact Information</strong> - name and message content provided via contact forms.</li>
+              <li><strong className="text-foreground">Contact Information</strong>: the name, message and optional email address you send through the contact form. The form is delivered to me as a push notification through ntfy and is not stored on the Site. Your email address is used only to reply.</li>
               <li><strong className="text-foreground">Usage & Analytics Data</strong> - we use Google Analytics to measure traffic. This includes IP addresses, browser information, and on-site interaction events.</li>
               <li><strong className="text-foreground">Additional Analytics</strong> - alongside Google Analytics the Site uses Ahrefs Web Analytics and Cloudflare Web Analytics, both of which measure traffic without setting cookies. Cloudflare's is provided by the host that serves the Site. Both process technical request data such as IP address, referring page and browser type.</li>
               <li><strong className="text-foreground">User-Provided Data</strong> - with your consent, we may securely transmit hashed, first-party data to Google Analytics to improve conversion measurement and audience insights.</li>
@@ -93,6 +93,7 @@ export default function Privacy() {
               <li><strong className="text-foreground">Ahrefs</strong> - cookieless traffic analytics - <a href="https://ahrefs.com/privacy" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Policy</a></li>
               <li><strong className="text-foreground">Cloudflare</strong> - hosts and serves the Site, and provides cookieless traffic analytics - <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Policy</a></li>
               <li><strong className="text-foreground">Supabase</strong> - hosts the database that stores comments, likes, shares and care package purchases, and provides the emailed sign-in code for the library - <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Policy</a></li>
+              <li><strong className="text-foreground">ntfy</strong>: delivers contact form messages to me as a push notification: <a href="https://docs.ntfy.sh/privacy/" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Policy</a></li>
               <li><strong className="text-foreground">Stripe</strong> - <a href="https://stripe.com/privacy" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Policy</a></li>
               <li><strong className="text-foreground">Beehiiv</strong> - <a href="https://www.beehiiv.com/privacy" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Policy</a></li>
               <li><strong className="text-foreground">Amazon</strong> - <a href="https://www.amazon.com/privacy" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Notice</a></li>

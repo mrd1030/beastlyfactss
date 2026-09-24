@@ -240,6 +240,10 @@ for (const dir of [...CONTENT_DIRS, 'short-story']) {
       seoTitle: fm.seoTitle || null,
       seoDescription: fm.seoDescription || null,
       lastUpdated: fm.lastUpdated || null,
+      // Carried through so the page renders a robots noindex and the sitemap
+      // leaves it out. Before this the flag only dropped a post from the
+      // listings and RSS, and the page itself still told Google to index it.
+      noIndex: isTruthyFlag(fm.noIndex),
       excerpt: fm.excerpt || fm.description || '',
       date: fm.date || fm.lastUpdated || null,
       // `category` stays the single primary one (used for the card label and
