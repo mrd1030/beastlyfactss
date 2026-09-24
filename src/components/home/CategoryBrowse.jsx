@@ -5,8 +5,10 @@ import { ArrowRight, Search as SearchIcon } from 'lucide-react';
 import { slugify } from '@/lib/utils/slugify';
 import { getCategoryBySlug } from '@/lib/data/categories';
 import CompactPostCard from '@/components/shared/CompactPostCard';
-import { seededShuffle, hashString } from '@/lib/utils/seededShuffle';
+import { seededShuffle } from '@/lib/utils/seededShuffle';
 import { siteToday } from '@/lib/utils/date';
+import { todaysPicks } from '@/lib/utils/rotation';
+import buildStamp from '@/lib/generated/build-stamp.json';
 import { trackSearch } from '@/lib/analytics';
 // Statically imported, not fetch('/articles.json') in a useEffect like
 // before: that always started with loading:true, and prerender.mjs's
@@ -47,16 +49,14 @@ export default function CategoryBrowse() {
   // dailyFact for the same fix, same reasoning). Upgraded to the real day
   // right after mount, skipped during prerendering itself.
   const [daySeed, setDaySeed] = useState(1);
-  // Same hydration contract as daySeed: null on the first render (and in the
-  // prerendered HTML), upgraded to the real ET date right after mount. The
-  // index carries every published MDX file including future-dated ones, and
-  // Blog.jsx gates its listings on this same clock - without the gate here the
-  // homepage was promoting articles /blog/ deliberately hides until their day.
-  const [releaseDay, setReleaseDay] = useState(null);
+  // Same hydration contract as daySeed: the build date on the first render
+  // (and in the prerendered HTML), upgraded to the real ET date after mount.
+  // Drives the rotation picks below.
+  const [today, setToday] = useState(buildStamp.generatedAt);
   useEffect(() => {
     if (window.__IS_PRERENDER__) return;
     setDaySeed(new Date().getDate());
-    setReleaseDay(siteToday());
+    setToday(siteToday());
   }, []);
 
   // Reptiles pinned first, Legal pinned last, the rest shuffled - recomputed
@@ -69,16 +69,13 @@ export default function CategoryBrowse() {
     const pool = articlesIndex.articles.filter(a =>
       (a.categories?.length ? a.categories : [a.category]).includes(selected)
     );
-    const seed = daySeed + hashString(selected);
-    // First render matches the prerendered HTML (see releaseDay above); every
-    // real visitor then gets released articles only, with the two newest
-    // pinned first so fresh work always surfaces ahead of the archive shuffle.
-    if (!releaseDay) return seededShuffle(pool, seed).slice(0, 6);
-    const released = pool.filter(a => a.date && a.date <= releaseDay);
-    const newest = [...released].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 2);
-    const rest = released.filter(a => !newest.includes(a));
-    return [...newest, ...seededShuffle(rest, seed).slice(0, 4)];
-  }, [selected, daySeed, releaseDay]);
+    // The two newest pinned first so fresh work always surfaces, then four
+    // from the rotation, which changes daily and reaches every article in the
+    // category once per cycle (src/lib/utils/rotation.js).
+    const newest = [...pool].sort((a, b) => String(b.date || '').localeCompare(String(a.date || ''))).slice(0, 2);
+    const rest = pool.filter(a => !newest.includes(a));
+    return [...newest, ...todaysPicks(rest, today, 4)];
+  }, [selected, today]);
 
   const handleSelect = (label) => setSelected(label);
 

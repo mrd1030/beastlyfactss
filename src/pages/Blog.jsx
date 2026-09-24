@@ -17,7 +17,9 @@ import { shortLabelFor } from '@/lib/data/articleLabels';
 import { breadcrumbSchema } from '@/lib/utils/breadcrumbs';
 import LEGAL_COVERAGE from '@/lib/generated/legal-coverage.json';
 import { withBrand } from '@/lib/utils/seo';
-import { getDisplayDate, getDisplayIsoDate, byReleaseThenDate, siteToday } from '@/lib/utils/date';
+import { getDisplayDate, byNewest, siteToday } from '@/lib/utils/date';
+import { todaysPicks } from '@/lib/utils/rotation';
+import articlesIndex from '@/lib/generated/articles-index.json';
 import buildStamp from '@/lib/generated/build-stamp.json';
 import * as MdxComponents from '@/components/mdx';
 import MdxArticleBody from '@/components/shared/MdxArticleBody';
@@ -78,26 +80,12 @@ export default function Blog() {
   const location = useLocation();
   const { slug: routeSlug, catSlug } = useParams();
 
-  // Build date first so prerendered HTML and first client render agree, then the
-  // real date after mount. See byReleaseThenDate in @/lib/utils/date.
-  //
-  // The interval is what makes a scheduled article surface on its own. Every
-  // article is already deployed and live; the only thing holding one back is
-  // this cutoff, so a tab left open across midnight used to keep sorting
-  // against yesterday until someone reloaded. Checking once a minute means the
-  // list reorders itself when the date actually arrives, which is also the
-  // moment the morning push notification is announcing (see
-  // scripts/notify-todays-posts.mjs).
-  const [cutoff, setCutoff] = useState(buildStamp.generatedAt);
+  // The day "Today's reads" is picked for. Build date first so the prerendered
+  // HTML and the first client render agree, then the real date after mount.
+  const [today, setToday] = useState(buildStamp.generatedAt);
   useEffect(() => {
     if (window.__IS_PRERENDER__) return;
-    const sync = () => setCutoff(prev => {
-      const now = siteToday();
-      return now === prev ? prev : now;
-    });
-    sync();
-    const id = setInterval(sync, 60 * 1000);
-    return () => clearInterval(id);
+    setToday(siteToday());
   }, []);
   // From the route param on the very first render, not from the effect below:
   // /blog/category/<slug>/ is prerendered with that category applied, so a
@@ -177,11 +165,7 @@ export default function Blog() {
     })),
     ...mdxPosts.filter(p => !isChroniclesPost(p)),
   ]
-  // Same ordering as the homepage's Latest Articles: released posts first and
-  // newest of those on top, with not-yet-dated posts trailing in soonest-first
-  // order. Plain date-descending surfaced October articles above everything a
-  // reader could actually see a date on.
-  .sort(byReleaseThenDate(cutoff));
+  .sort(byNewest);
 
 
   const searchQuery = search.trim().toLowerCase();
@@ -234,6 +218,15 @@ export default function Blog() {
   // an empty list with no page highlighted rather than the last page.
   const safePage = Math.min(Math.max(1, page), Math.max(1, totalPages));
   const paginated = filtered.slice((safePage - 1) * POSTS_PER_PAGE, safePage * POSTS_PER_PAGE);
+
+  // Only on the unfiltered first page: a category, a search or page 7 is the
+  // reader looking for something specific, not browsing.
+  const showTodaysReads = safePage === 1 && !searchQuery && slugify(activeCategory) === 'all';
+  const todaysReads = showTodaysReads
+    ? todaysPicks(articlesIndex.articles, today)
+        .map(a => allPosts.find(p => (p.slug?.current || p.slug) === a.slug))
+        .filter(Boolean)
+    : [];
 
   // Fact Files rows and Beastfile "Related Files" cards link here with router
   // state saying where the reader came from, so the post view can send them
@@ -511,6 +504,19 @@ export default function Blog() {
               <Pagination page={safePage} totalPages={totalPages} onChange={handlePageChange} />
             </div>
 
+            {showTodaysReads && (
+              <section className="mb-8" aria-labelledby="todays-reads">
+                <h2 id="todays-reads" className="font-display font-bold text-lg text-foreground">Today&rsquo;s reads</h2>
+                <p className="text-xs text-muted-foreground font-body mb-3">A fresh set from the library every day</p>
+                <div className="space-y-3">
+                  {todaysReads.map(post => (
+                    <CompactPostCard key={post._id} post={post} onClick={() => handleSelectPost(post)} />
+                  ))}
+                </div>
+                <h2 className="font-display font-bold text-lg text-foreground mt-8">All articles, newest first</h2>
+              </section>
+            )}
+
             <div ref={listRef} className="space-y-3 mb-6">
               {paginated.map((post, i) => (
                 <motion.div key={post._id} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.04 }}>
@@ -627,19 +633,9 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
   const contentRef = useRef(null);
   const sidebarRef = useRef(null);
   const sidebarWrapperRef = useRef(null);
-  // getDisplayDate() compares publishedAt against the live "now" clock, so a
-  // future-scheduled post's own permalink page prerenders with the date span
-  // hidden - once the real world catches up to that date without a redeploy,
-  // a real visitor's hydration-time render would compute a shown span where
-  // prerendered HTML has none, a structural mismatch (same class of bug fixed
-  // in HeroSection.jsx/TrendingFacts.jsx/CategoryBrowse.jsx). Default to
-  // hidden (matching what a prerender pass always captures, since the effect
-  // below is a no-op there) and reveal post-mount for real clients only.
-  const [displayDate, setDisplayDate] = useState('');
-  useEffect(() => {
-    if (window.__IS_PRERENDER__) return;
-    setDisplayDate(getDisplayDate(post.publishedAt));
-  }, [post.publishedAt]);
+  // Straight from the frontmatter: articles are dated the day they ship, so the
+  // prerendered date and the client's first render are the same string.
+  const displayDate = getDisplayDate(post.publishedAt);
   const postSlug = post.slug?.current || post._id || post.id;
 
   // Same curated same-species list the sidebar shows, computed once here so
@@ -810,7 +806,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
     .map((slug) => AFFILIATE_PRODUCTS.find((p) => p.slug === slug))
     .filter(Boolean);
 
-  const isoPublished = getDisplayIsoDate(post.publishedAt);
+  const isoPublished = post.publishedAt || '';
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -819,24 +815,12 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
     "description": postDescription,
     "url": canonicalUrl,
     "image": ogImage,
-    // Computed during render, NOT derived from the displayDate state. That
-    // state is deliberately empty during prerendering (see the effect above,
-    // which returns early on __IS_PRERENDER__ to avoid a hydration mismatch on
-    // the visible date span), and wiring the schema to it meant every one of
-    // the ~380 prerendered article pages shipped datePublished:"" - not just
-    // future-dated ones. An empty string is not a valid Article date, so the
-    // site was emitting no publish-date signal at all in its structured data.
-    //
-    // The hydration hazard does not apply here: react-helmet-async writes head
-    // tags through its own side effects rather than through the body tree React
-    // reconciles at hydration, so a head-only difference cannot produce the
-    // mismatch the span had. Spreading rather than assigning keeps the keys out
-    // entirely when there is no publishable date, since omitting a field is
+    // Straight from the frontmatter, the same value the visible date line shows,
+    // so the structured and user-visible dates always match. Spreading rather
+    // than assigning keeps the keys out entirely when there is no date, since
+    // omitting a field is
     // valid where an empty one is not.
-    // lastReviewed goes through the same future-date gate as the publish date:
-    // a scheduled article carries a review date that has not happened yet, and
-    // schema.org should not claim it has.
-    ...(isoPublished && { datePublished: isoPublished, dateModified: getDisplayIsoDate(post.lastUpdated) || getDisplayIsoDate(post.lastReviewed) || isoPublished }),
+    ...(isoPublished && { datePublished: isoPublished, dateModified: post.lastUpdated || post.lastReviewed || isoPublished }),
     // A Person, not the Organization. The page directly below this renders an
     // AuthorBio card reading "Written by Mike" with a bio and a link to
     // /about/, and every one of the 625 MDX files declares author: "Mike" in

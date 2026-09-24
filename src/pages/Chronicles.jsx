@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
@@ -188,21 +188,10 @@ function SeriesLanding({ series, parts }) {
 }
 
 function StoryCard({ story, seriesId, part, index }) {
-  // getDisplayDate() compares story.publishedAt against the real-world clock
-  // (to keep staged/future-dated chronicles parts invisible until their
-  // date arrives - see src/lib/utils/date.js). Computing that inline during
-  // render is the same class of bug as the Home page's date-driven state:
-  // prerender.mjs bakes in whatever "now" resolves to at build time, but a
-  // real visitor hydrating on a later day - after a staged part's date has
-  // passed - would compute a non-empty date where prerender captured ''
-  // (or vice versa), a hydration mismatch. Default to hidden on the
-  // hydration-critical first render (matches prerender's own first paint),
-  // then upgrade to the real value right after mount on real clients only.
-  const [displayDate, setDisplayDate] = useState('');
-  useEffect(() => {
-    if (window.__IS_PRERENDER__) return;
-    setDisplayDate(getDisplayDate(story.publishedAt));
-  }, [story.publishedAt]);
+  // Straight from the frontmatter: published parts are dated the day they
+  // ship and staged ones wait in content/_scheduled-short-story, so the date
+  // no longer depends on the clock.
+  const displayDate = getDisplayDate(story.publishedAt);
 
   return (
     <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: index * 0.05 }}>
@@ -303,13 +292,7 @@ function StoryReader({ story, part }) {
     window.scrollTo({ top: 0, behavior: 'instant' });
   }, [story]);
 
-  // Same prerender/hydration hazard as StoryCard's date badge above - see
-  // that comment. Default hidden, upgrade post-mount on real clients only.
-  const [displayDate, setDisplayDate] = useState('');
-  useEffect(() => {
-    if (window.__IS_PRERENDER__) return;
-    setDisplayDate(getDisplayDate(story.publishedAt));
-  }, [story.publishedAt]);
+  const displayDate = getDisplayDate(story.publishedAt);
 
   return (
     <motion.article initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}>

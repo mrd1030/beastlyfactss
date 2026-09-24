@@ -6,14 +6,11 @@ import { mdxPosts } from '@/lib/mdxPosts';
 import { isChroniclesPost } from '@/lib/chronicles';
 import { slugify } from '@/lib/utils/slugify';
 import { seededShuffle, hashString } from '@/lib/utils/seededShuffle';
-import buildStamp from '@/lib/generated/build-stamp.json';
-import { siteToday } from '@/lib/utils/date';
 
 // 4, matching what the old Sanity-backed version rendered.
 const RELATED_LIMIT = 4;
 
 const idOf = (post) => post._id || post.slug?.current || post.id;
-const dayOf = (post) => String(post.publishedAt || '').slice(0, 10);
 
 // MDX posts carry `allCategories`; older shapes carry a single `category` or a
 // `categorySlug`. Everything is compared through slugify, the same way
@@ -40,7 +37,7 @@ function tagsOf(post) {
 // shuffled before it is sorted by shared-tag count, and Array.sort is stable,
 // so posts of equal similarity stay in random order rather than always
 // resolving to the same ones.
-function selectRelated({ currentPostId, categorySlug, cutoff, seed, factFilesOnly = false, excludeIds = null }) {
+function selectRelated({ currentPostId, categorySlug, seed, factFilesOnly = false, excludeIds = null }) {
   const current = mdxPosts.find((p) => idOf(p) === currentPostId);
 
   // Arriving from Fact Files narrows the pool to Fact Files. This is not just
@@ -52,7 +49,6 @@ function selectRelated({ currentPostId, categorySlug, cutoff, seed, factFilesOnl
       idOf(p) !== currentPostId &&
       !(excludeIds && excludeIds.has(idOf(p))) &&
       !isChroniclesPost(p) &&
-      dayOf(p) <= cutoff &&
       (!factFilesOnly || (p.factFile && p.myth && p.truth))
   );
 
@@ -104,21 +100,18 @@ export default function YouMayAlsoLike({ currentPostId, categorySlug, onSelectPo
   //
   // The first render has to be byte-identical between prerender.mjs's capture
   // and hydration, so it uses a seed derived from the post id (stable, and
-  // different per article) and the build date from build-stamp.json rather than
-  // a live clock. Calling Math.random() or new Date() during that render is the
-  // exact thing that produced React #418/#423 elsewhere on this site.
+  // different per article) rather than a random one. Calling Math.random()
+  // during that render is the exact thing that produced React #418/#423
+  // elsewhere on this site.
   //
-  // After mount, neither constraint applies: a real random seed goes in, so the
-  // selection differs on every visit, and the real date replaces the build date
-  // so a post published since the last deploy is included and one that has not
-  // reached its date yet is dropped.
+  // After mount that constraint no longer applies, so a real random seed goes
+  // in and the selection differs on every visit.
   const [runtime, setRuntime] = useState(null);
 
   useEffect(() => {
     if (typeof window !== 'undefined' && window.__IS_PRERENDER__) return;
     setRuntime({
       seed: Math.floor(Math.random() * 0x7fffffff),
-      cutoff: siteToday(),
     });
   }, [currentPostId]);
 
@@ -127,7 +120,6 @@ export default function YouMayAlsoLike({ currentPostId, categorySlug, onSelectPo
     return selectRelated({
       currentPostId,
       categorySlug,
-      cutoff: runtime?.cutoff ?? buildStamp.generatedAt,
       seed: runtime?.seed ?? hashString(String(currentPostId)),
       factFilesOnly: factFilesMode,
       excludeIds,

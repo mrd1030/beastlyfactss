@@ -112,7 +112,8 @@ The non-negotiables, in full in [docs/RULES.md](./docs/RULES.md):
 - Never share one photo across multiple facts.
 - Every article needs 1 to 2+ in-body internal links, written by hand, never
   to the same species' sibling guides or its care guide hub.
-- Spread publish dates across days, 4 to 5 per day at most.
+- Date an article the day it ships, never ahead; ship a batch 4 to 5 per day at
+  most. Articles written ahead wait in `content/_scheduled-*`.
 - Dates use US Eastern, not the container clock.
 
 ## MDX components

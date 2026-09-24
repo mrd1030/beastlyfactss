@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useArticleMeta } from '@/lib/articleMeta';
-import buildStamp from '@/lib/generated/build-stamp.json';
-import { siteToday, isFutureDated } from '@/lib/utils/date';
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
@@ -91,15 +89,10 @@ function countDirectItems(list) {
 
 export default function Sources({ children, className = '' }) {
   const { lastReviewed, sourceCount } = useArticleMeta();
-  const [today, setToday] = useState(buildStamp.generatedAt);
   // Starts collapsed, and the prerender renders it collapsed too, so the first
   // client paint matches the served HTML with no hydration mismatch.
   const [expanded, setExpanded] = useState(false);
-  useEffect(() => {
-    if (window.__IS_PRERENDER__) return;
-    setToday(siteToday());
-  }, []);
-  const reviewed = isFutureDated(lastReviewed, today) ? null : formatReviewDate(lastReviewed);
+  const reviewed = formatReviewDate(lastReviewed);
   const parts = [];
   if (reviewed) parts.push(`Last reviewed ${reviewed}`);
   if (sourceCount > 0) parts.push(`${sourceCount} source${sourceCount === 1 ? '' : 's'}`);
