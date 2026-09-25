@@ -312,7 +312,7 @@ Only files this doc checked. No legal guides, care packages, or dog and cat page
 19. **Milk snake:** soften "textbook" mimicry in five places; fix the $60 floor. [done]
 20. **Hognose substrate interval** vs. the hygiene guide (source check). [done: three months kept for a dry bed with droppings pulled the same day; damp or soiled bed gets the monthly change]
 21. **In-page costs:** lovebird cage table, parrotlet FAQ. [done]
-22. **Small drift:** zebra finch weight, swordtail pH, mourning gecko cost table. [open: mourning gecko cost table. 12x18x18 is not a stocked retail size (nearest 12x12x18 or 18x18x18), so pricing it needs a call on which size the setup guide and hub should name. Zebra finch weight (10 to 16 g, 0.35 to 0.56 oz) and swordtail pH done]
+22. **Small drift:** zebra finch weight, swordtail pH, mourning gecko cost table. [done: mourning gecko enclosure moved to ReptiFiles' figures, 12x12x18 for 2 to 3 adults and 18x18x24 for a colony of up to about 9, on the setup guide, hub and cost guide; cost table prices the 12x12x18 at $90 to $110 (Josh's Frogs, Petsense), setup now $230 to $405. Zebra finch weight (10 to 16 g, 0.35 to 0.56 oz) and swordtail pH done]
 23. **Overview syncs:** ferret protein and adrenal wording, sugar glider group size (source check), tokay size. [done: sugar glider is up to seven adults and their young per nest (Australian Museum, ADW)]
 24. **Conure encyclopedia** time-commitment line. [done]
 25. **Red-eared slider** enrichment link to the box turtle enrichment guide. [done]
@@ -327,9 +327,9 @@ Only files this doc checked. No legal guides, care packages, or dog and cat page
 31. **Introductions:** a short intro protocol for budgie, rabbit (pre-bonding quarantine and failed-bond signs), ferret, conure, quaker and canary, reusing the cockatiel and chinchilla protocols as the model. [done: protocols in the budgie, conure, quaker, canary, rabbit and ferret handling guides]
 32. **Bite first aid:** one or two lines in the handling guides for tarantula, tokay, savannah monitor, green iguana, veiled and Jackson's chameleon. [done]
 33. **Sexing:** blue-tongue skink, ackie monitor, savannah monitor, green iguana, cardinal tetra handling guides. [done]
-34. **Unpriced costs:** oscar tank (`oscar-fish-cost-guide.mdx:77`), cockatiel cage, boa monthly costs, bearded dragon lay box and spay, veiled chameleon spay. [open: bearded dragon lay box and spay, veiled chameleon spay; no vet-published reptile spay price found and no lay box product. Oscar tank ($230 to $300), cockatiel cage ($190 to $286) and boa monthly food ($4 to $15) done; oscar "exceeds $1,000" replaced by a sourced $575 to $670 core-kit figure]
+34. **Unpriced costs:** oscar tank (`oscar-fish-cost-guide.mdx:77`), cockatiel cage, boa monthly costs, bearded dragon lay box and spay, veiled chameleon spay. [closed 2026-09-25, no source: bearded dragon lay box and spay, veiled chameleon spay; no vet-published reptile spay price found and no lay box product. Oscar tank ($230 to $300), cockatiel cage ($190 to $286) and boa monthly food ($4 to $15) done; oscar "exceeds $1,000" replaced by a sourced $575 to $670 core-kit figure]
 35. **Positive tankmate lists:** guppy, molly, platy, swordtail, bristlenose, plus a livebearer hardness note for molly and platy. [done]
-36. **Species one-liners:** rat activity pattern; green anole UVB replacement interval; axolotl photoperiod; fire-bellied toad land substrate depth; savannah basin size. [open: fire-bellied toad land substrate depth and a numeric savannah basin size, no source gives a number (savannah soak routine added). Rat activity pattern, green anole UVB interval and axolotl photoperiod done]
+36. **Species one-liners:** rat activity pattern; green anole UVB replacement interval; axolotl photoperiod; fire-bellied toad land substrate depth; savannah basin size. [closed 2026-09-25, no source: fire-bellied toad land substrate depth and a numeric savannah basin size, no source gives a number (savannah soak routine added). Rat activity pattern, green anole UVB interval and axolotl photoperiod done]
 
 ### C. Trust flags
 

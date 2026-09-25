@@ -92,7 +92,7 @@ working checklist.
   overruns: `bearded-dragon-health-issues-guide.mdx` runs 9 (the prolapse, ADV and vet-finding
   material), `red-eared-slider-health-issues-guide.mdx` runs 6 (the pyramiding
   correction needs both the Stancel feeding trial and a cause list),
-  `small-mammal-temperature-heat-stress-guide.mdx` runs 7 and
+  `small-mammal-temperature-heat-stress-guide.mdx` runs 10 and
   `small-mammal-grooming-nails-molting-guide.mdx` runs 8 (one source per species
   where no broad page covers several; consolidated 2026-09-25),
   `uvb-lighting-complete-guide.mdx` runs 7 (the fat-tailed gecko zone is not in

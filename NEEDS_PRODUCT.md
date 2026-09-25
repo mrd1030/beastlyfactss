@@ -70,7 +70,7 @@ is a wiring job, not a sourcing job.
 - NEED. Screen lid for a 10-gallon tank (20x10 in). Fire-bellied toad hub.
 - NEED. Screen lid for a 40-gallon breeder (36x18 in). Gerbil hub, garter snake hub.
 - NEED. Terrarium lid clips or locks for glass tanks. Garter snake hub.
-- NEED. Front-opening terrarium, 12x18x18 in, for a small gecko group. Mourning gecko hub.
+- NEED. 12x12x18 in front-opening glass terrarium, mourning gecko starter. Mourning gecko hub and cost.
 - NEED. Acrylic terrestrial tarantula enclosure, about 20x10x10 in, drilled ventilation, no mesh top. Tarantula hub.
 - NEED. PVC enclosure, 8x4x4 ft (the catalog 8 ft unit is only 2 ft deep and tall). Argentine tegu hub and cost, savannah monitor hub, uromastyx hub (adult Egyptian).
 - NEED. PVC enclosure, 6x2x4 ft, ready made. Green iguana cost.

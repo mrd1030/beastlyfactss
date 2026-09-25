@@ -437,7 +437,7 @@ export const geckoGuides = [
     image: "/assets/guides/mourning-gecko.jpg",
     tagline: "Tiny, all-female, and happiest as a whole chattering colony!",
     seoTitle: "Mourning Gecko Care Guide: Setup, Feeding, and Colonies",
-    seoDescription: "Mourning geckos live in all-female colonies, so start a group: a 12x18x18 tank for three to five, escape-proofing, powdered diet, and the calcium they burn.",
+    seoDescription: "Mourning geckos live in all-female colonies, so start a group: a 12x12x18 tank for two or three, escape-proofing, powdered diet, and the calcium they burn.",
     funFact: "Mourning geckos are parthenogenetic. Every individual is female, and they can reproduce without males by cloning themselves!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -469,7 +469,7 @@ export const geckoGuides = [
       rows: [
         { label: "Day one", value: "Quarantined away from any reptile you already keep, on paper towel, with its own tools and a fecal exam inside that window.", source: "reptile-quarantine-guide" },
         { label: "Buy more than one", value: "Parthenogenetic, all female, and colonial, so the social question is settled and group size is an enrichment decision. A lone gecko survives fine and still lays viable eggs.", source: "mourning-gecko-enrichment-guide" },
-        { label: "Enclosure", value: "A 12x18x18 inch tall, front-opening enclosure for a group of three to five; an 18x18x24 houses the bigger group the colony will become. Height over floor. Adults may eat hatchlings, so separate young as they appear.", source: "mourning-gecko-tank-setup-guide" },
+        { label: "Enclosure", value: "A 12x12x18 inch tall, front-opening enclosure for 2 to 3 adults; an 18x18x24 houses the growing colony, up to about 9. Height over floor. Adults may eat hatchlings, so separate young as they appear.", source: "mourning-gecko-tank-setup-guide" },
         { label: "Escape-proofing", value: "Hatchlings are under an inch and slip through ventilation gaps and door frames that hold any other gecko. Seal every gap with aquarium-safe putty before the geckos go in.", source: "mourning-gecko-tank-setup-guide" },
         { label: "Temperature", value: "70 to 80°F by day with a basking spot up to 85°F, 65 to 72°F at night. Most homes need no heat source at all.", source: "mourning-gecko-tank-setup-guide" },
         { label: "Humidity and substrate", value: "60 to 80% with brief peaks to 90% from daily misting, then a slight dry-down against mold. Coconut coir or a coir and sphagnum blend, moist but never waterlogged.", source: "mourning-gecko-tank-setup-guide" },
@@ -482,7 +482,7 @@ export const geckoGuides = [
         { label: "Feed in more than one place", value: "Shallow dishes at several heights, since a dominant female may guard a single dish.", source: "mourning-gecko-enrichment-guide" },
         { label: "Do not handle", value: "Adults are 3.5 to 4 inches and hatchlings under an inch, and a small drop can be fatal at that scale. Let one walk onto your hand, low and slow. Firing between brown and light tan is normal, not stress.", source: "mourning-gecko-handling-guide" },
         { label: "Shedding", value: "It comes off in pieces rather than one sock. A band left around a toe or tail tip needs humidity raised and a moist hide.", source: "reptile-shedding-complete-guide" },
-        { label: "Budget", value: "$15 to $50 each, a trio around $60. Setup roughly $200 to $450, upkeep $10 to $25 a month, and a routine exam $35 to $105.", source: "mourning-gecko-cost-guide" },
+        { label: "Budget", value: "$15 to $50 each, a trio around $60. Setup roughly $230 to $405, upkeep $10 to $25 a month, and a routine exam $35 to $105.", source: "mourning-gecko-cost-guide" },
         { label: "Adult size", value: "3.5 to 4 inches (8.5 to 10 cm)." },
         { label: "Lifespan", value: "Up to 10 years, some reports of 15.", source: "mourning-gecko-cost-guide" },
       ],
@@ -500,16 +500,16 @@ export const geckoGuides = [
       vetLine: "Skipping UVB or calcium and D3 supplementation doesn't just risk MBD in the abstract, it directly raises egg-binding risk in a species that's laying eggs constantly regardless of whether you're trying to breed it. Given how small a mourning gecko is, a thermometer and hygrometer that's actually accurate matters more than usual for catching drift before it becomes a health problem.",
     },
     routes: [
-      { slug: "mourning-gecko-cost-guide", line: "$15 to $50 a gecko and cheaper by the trio, the $200 to $450 planted setup, and why the Type A to D labels on listings are not morphs." },
-      { slug: "mourning-gecko-tank-setup-guide", line: "The 12x18x18 that holds a small group, the escape-proofing step that matters more than anything else here, humidity that peaks and dries back, and low-output UVB." },
+      { slug: "mourning-gecko-cost-guide", line: "$15 to $50 a gecko and cheaper by the trio, the $230 to $405 planted setup, and why the Type A to D labels on listings are not morphs." },
+      { slug: "mourning-gecko-tank-setup-guide", line: "The 12x12x18 that holds 2 to 3 adults, the escape-proofing step that matters more than anything else here, humidity that peaks and dries back, and low-output UVB." },
       { slug: "mourning-gecko-feeding-guide", line: "Powdered diet every 48 hours and dusted insects weekly, the calcium demand that never pauses, and seven reasons a mourning gecko stops eating." },
       { slug: "mourning-gecko-handling-guide", line: "Why an animal this size is a display pet, what tail loss actually is, and why easy care and handleable are not the same claim." },
       { slug: "mourning-gecko-health-issues-guide", line: "Metabolic bone disease and the egg-binding it leads to, the two-egg clutch every 4 to 6 weeks behind both, retained shed, and what a thin tail means." },
       { slug: "mourning-gecko-enrichment-guide", line: "The one gecko where group housing is the starting point, the tokay study that supports it at a distance, and why empty height is wasted height." },
     ],
     buyList: [
-      "12x18x18 inch tall, front-opening enclosure for a small group",
-      "An 18x18x24 for the colony it becomes",
+      "12x12x18 inch tall, front-opening enclosure for 2 to 3 adults",
+      "An 18x18x24 for the colony it becomes, up to about 9",
       "Aquarium-safe putty for every gap",
       "Tight-fitting escape-proof lid",
       "Low-output UVB in the 5 to 6% range",

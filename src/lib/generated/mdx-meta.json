@@ -24467,7 +24467,7 @@
       },
       {
         "q": "What are the physical risks of handling an adult iguana?",
-        "a": "Four of them. Sharp claws capable of deep scratches during normal handling. Tail-whipping, a real defensive strike that can cause welts and bruising, including to the face. Bites, from a frightened animal or a mature male in breeding season. And tail autotomy, the tail can drop under grasping pressure, so never grab or restrain by the tail."
+        "a": "Four of them. Sharp claws capable of deep scratches during normal handling. Tail-whipping, a real defensive strike that larger iguanas aim at a person's eyes, and one that can cause severe injury. Bites, from a frightened animal or a mature male in breeding season. And tail autotomy, the tail can drop under grasping pressure, so never grab or restrain by the tail."
       },
       {
         "q": "Does breeding season change an iguana's behavior?",
@@ -33617,9 +33617,9 @@
     "path": "/content/guides/mourning-gecko-cost-guide.mdx",
     "slug": "mourning-gecko-cost-guide",
     "title": "How Much Does a Mourning Gecko Really Cost?",
-    "seoTitle": "Mourning Gecko Price: $15 to $65, Plus $200 to $450 Setup",
-    "seoDescription": "Mourning gecko cost: $15-50 per gecko typically, up to $100 for rare localities, a $200-450 setup, and why this all-female species sells in small colonies.",
-    "lastUpdated": "2026-09-15",
+    "seoTitle": "Mourning Gecko Price: $15 to $65, Plus $230 to $405 Setup",
+    "seoDescription": "Mourning gecko cost: $15-50 per gecko typically, up to $100 for rare localities, a $230-405 setup, and why this all-female species sells in small colonies.",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Mourning geckos are among the cheapest reptiles you can keep, and since they're typically sold and housed in small self-sustaining groups rather than one at a time, the usual cost math works a little differently.",
     "date": "2026-07-25",
@@ -33658,7 +33658,7 @@
       },
       {
         "q": "How much does a mourning gecko setup cost upfront?",
-        "a": "Roughly $200 to $450, more than you might expect for such a small gecko, because these are typically kept as a small planted display colony rather than a single animal in a basic tub."
+        "a": "Roughly $230 to $405, more than you might expect for such a small gecko, because these are typically kept as a small planted display colony rather than a single animal in a basic tub."
       },
       {
         "q": "How long do mourning geckos live?",
@@ -33970,7 +33970,7 @@
     "title": "Mourning Gecko Enclosure Setup: A Small, Humid, Planted Display Vivarium",
     "seoTitle": "Mourning Gecko Enclosure Setup Guide",
     "seoDescription": null,
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Mourning gecko setups look more like a miniature planted terrarium than a typical reptile tank, this is a display colony, not a single-animal enclosure.",
     "date": "2026-07-25",
@@ -33997,7 +33997,7 @@
     "faqs": [
       {
         "q": "What size enclosure does a mourning gecko need?",
-        "a": "A tall, front-opening 12x18x18 holds a pair or a small group of three to five. Because the colony multiplies on its own, plan to move up: 18x18x24 houses a bigger group comfortably. For an arboreal species, height counts for more than floor space."
+        "a": "A tall, front-opening 12x12x18 holds 2 to 3 adults. Because the colony multiplies on its own, plan to move up: an 18x18x24 houses a growing colony of up to about 9. For an arboreal species, height counts for more than floor space."
       },
       {
         "q": "Does a mourning gecko need a heat source?",
@@ -42810,7 +42810,7 @@
       },
       {
         "q": "Why do these small mammals overheat faster than I'd expect in a normal warm room?",
-        "a": "Because none of them sweat. Rabbits, guinea pigs, and chinchillas have no functional sweat glands to rely on. Rabbits and other rodents lose heat mainly by dilating blood vessels in their ears, which is a much smaller radiator than a human's whole sweating skin surface, plus behavioral tricks like seeking shade and drinking more. Once ambient heat outpaces what that system can shed, body temperature climbs fast."
+        "a": "Because they can't sweat their heat away. Rabbits cannot sweat, and guinea pigs have no sweat glands at all. Rabbits and other rodents lose heat mainly by dilating blood vessels in their ears, which is a much smaller radiator than a human's whole sweating skin surface, plus behavioral tricks like seeking shade and drinking more. Once ambient heat outpaces what that system can shed, body temperature climbs fast."
       },
       {
         "q": "What are the first signs of heat stress to watch for?",
@@ -42835,7 +42835,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 7,
+    "sourceCount": 10,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1600,
@@ -42908,7 +42908,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 7,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
