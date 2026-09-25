@@ -1081,7 +1081,7 @@ export const lizardGuides = [
     ],
     faqs: [
       { q: "What size enclosure does an adult veiled chameleon need?", a: "24x24x48 inches is the practical floor for an adult, and 4x2x4 feet is better if the space is there. Because they hit adult size in 6 to 8 months, buy the adult enclosure up front rather than planning an upgrade." },
-      { q: "Why can't I just use a water dish?", a: "Standing water does not read as drinking water to this species. Only moving droplets on leaves and branches get a response, so refilling a dish more often will not fix hydration. The dripper or misting system is the essential piece, not an accessory." },
+      { q: "What is egg-binding and why is it an emergency?", a: "Egg-binding (dystocia) is when a female can't pass her egg clutch. Females produce clutches whether or not a male is present, so every female owner needs to recognize the signs: restlessness, digging without producing eggs, straining, lethargy, and swelling. It can kill within 24 hours, and severe cases often require surgery." },
       { q: "What is the correct calcium and vitamin schedule for a veiled chameleon?", a: "Plain calcium, no D3 and no phosphorus, on nearly every feeding. Calcium with D3 goes on about every other week, and a multivitamin carrying a real vitamin A source runs on that same twice-monthly schedule. Excess D3 can turn toxic, which is why it's dosed less often." },
     ],
   },
