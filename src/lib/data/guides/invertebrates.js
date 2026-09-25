@@ -41,7 +41,7 @@ export const invertebrateGuides = [
         { label: "Algae runs out", value: "It is a starting supply, not a renewable one, and a group clears it faster than expected. Supplementing is part of the diet, not a fallback; a shrimp climbing the glass and decor searching is hungry.", source: "amano-shrimp-feeding-guide" },
         { label: "How often to feed", value: "A small amount every couple of days, leftovers out after a few hours, so they stay motivated to work the tank. In more than one spot: a single wafer becomes one shrimp's wafer.", source: "amano-shrimp-feeding-guide" },
         { label: "Drip acclimation", value: "One to two hours at one to two drops per second, three or four hours if the water gap is large. Osmotic shock is a known trigger for failed molts.", source: "amano-shrimp-handling-guide" },
-        { label: "Quarantine", value: "Two to four weeks in a separate cycled tank. Virtually every amano sold is wild-caught, so hitchhikers and stress get time to show.", source: "amano-shrimp-handling-guide" },
+        { label: "Quarantine", value: "Two to four weeks in a separate cycled tank, a bare 10 to 20 gallons. Virtually every amano sold is wild-caught, so hitchhikers and stress get time to show.", source: "amano-shrimp-handling-guide" },
         { label: "Molting", value: "A failed molt is the shell splitting all the way around the body instead of at the head, usually from GH and KH swinging around a water change or a diet short on calcium. There is no treatment once it starts.", source: "amano-shrimp-health-issues-guide" },
         { label: "Water changes", value: "Small and steady, since swings in hardness around a change trigger failed molts. Test nitrate rather than changing by the calendar.", source: "aquarium-water-changes-guide" },
         { label: "Budget", value: "$5 to $12 each, cheaper in a group. Core equipment roughly $60 to $150.", source: "amano-shrimp-cost-guide" },
@@ -80,7 +80,7 @@ export const invertebrateGuides = [
       "Blanched zucchini, spinach or cucumber",
       "Soft, fine-mesh net",
       "Airline tubing for drip acclimation",
-      "A separate cycled tank for quarantine",
+      "A separate cycled tank for quarantine, a bare 10 to 20 gallons",
     ],
     faqs: [
       { q: "Why is my amano shrimp carrying eggs that never hatch?", a: "Because this species cannot complete its life cycle in freshwater. A female mates and carries fertilized eggs normally, and they even hatch into free-swimming larvae, but those larvae need brackish to marine water within their earliest stages to survive and develop. In a standard freshwater tank they die within days, and the whole cycle repeats with the next batch of eggs. It's completely normal, not a sign anything is wrong with your shrimp." },
@@ -348,7 +348,7 @@ export const invertebrateGuides = [
       { slug: "ghost-shrimp-feeding-guide", line: "A wafer every day or two, why they are not an algae crew, and the cannibalism nobody warns about." },
       { slug: "ghost-shrimp-handling-guide", line: "Net rather than hands, drip for 1 to 2 hours, quarantine two to four weeks, and what stress looks like." },
       { slug: "ghost-shrimp-health-issues-guide", line: "Copper at 0.03 mg/L, the feeder-tank history behind most early losses, and the white ring of death." },
-      { slug: "ghost-shrimp-enrichment-guide", line: "Recovery as the real enrichment, the decapod sentience review, and why one bag holds several species." },
+      { slug: "ghost-shrimp-enrichment-guide", line: "Recovery as the real enrichment, the decapod sentience review, and why the label is not always the species in the bag." },
     ],
     buyList: [
       "5 gallon tank as a floor, 10 gallons for a colony",
@@ -441,7 +441,7 @@ export const invertebrateGuides = [
     },
     routes: [
       { slug: "giant-millipede-cost-guide", line: "$75 to $150 or more for the animal, the same again for setup, and the import rule behind the price." },
-      { slug: "giant-millipede-tank-setup-guide", line: "10 to 15 gallons as a floor, 72 to 80F, 70 to 80%, the 4 to 6 inch substrate that is also the food, and why isopods stay out." },
+      { slug: "giant-millipede-tank-setup-guide", line: "10 to 15 gallons as a floor, 72 to 80F, 70 to 80%, the 4 to 6 inch substrate that is also the food, and why isopods stay out of a breeding tank." },
       { slug: "giant-millipede-feeding-guide", line: "The substrate as the diet, produce every two to three days and out before it molds, calcium left in, and the molt that looks like a fast." },
       { slug: "giant-millipede-handling-guide", line: "Falls rather than bites, what the curl and the secretion mean, and when to leave a buried animal alone." },
       { slug: "giant-millipede-health-issues-guide", line: "Dehydration, failed molts, mites, and the humidity pattern sitting underneath all three." },
@@ -582,8 +582,8 @@ export const invertebrateGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Budget", value: "$15 to $25 for a captive-bred spiderling, $25 to $60 for a juvenile or sub-adult female, which lives longer. Setup roughly $112 to $150, then $5 to $15 a month in feeders. Exotic vets rarely treat spiders.", source: "jumping-spider-cost-guide" },
-        { label: "Lifespan", value: "Males 8 to 12 months after maturity, females 1.5 to 3 years. Expect 1 to 3 years overall.", source: "jumping-spider-cost-guide" },
+        { label: "Budget", value: "$15 to $25 for a captive-bred spiderling, $25 to $60 for a juvenile or sub-adult female, which lives longer. Setup roughly $112 to $150, then $5 to $15 a month in feeders. Few exotic vets treat spiders.", source: "jumping-spider-cost-guide" },
+        { label: "Lifespan", value: "Males 8 to 12 months after maturity, females 1.5 to 3 years. Expect 1 to 3 years in captivity.", source: "jumping-spider-cost-guide" },
         { label: "Adult size", value: "0.5 to 0.75 inches (1.3 to 1.9 cm), females larger than males." },
         { label: "Enclosure", value: "At least 4 by 4 by 7 inches, vertical, and 8 to 10 inches tall gives real climbing room. Front-opening, cross-ventilated, the door low since the silk retreat goes at the top. One spider per enclosure: they eat each other.", source: "jumping-spider-tank-setup-guide" },
         { label: "Temperature", value: "72 to 82°F, which is room temperature for most homes. Below about 70°F, a heat mat on the side wall through a thermostat, never under the substrate.", source: "jumping-spider-tank-setup-guide" },
@@ -604,7 +604,7 @@ export const invertebrateGuides = [
     },
     emergencyCard: {
       source: "jumping-spider-feeding-guide",
-      heading: "Check humidity and the water dish first, then act on these today. Exotic vets rarely treat spiders.",
+      heading: "Check humidity and the water dish first, then act on these today. Few exotic vets treat spiders, so know which one near you will.",
       callNow: [
         "Food refusal running well past two weeks with no molt",
         "No interest in food for a week or more after a molt has completed",
@@ -933,7 +933,7 @@ export const invertebrateGuides = [
     tagline: "The misunderstood gentle giant of the spider world, a surprisingly low-maintenance pet!",
     seoTitle: "Tarantula Care Guide: Enclosure, Feeding, and Molting",
     seoDescription: "Tarantula care built around the fall risk: a wide, low enclosure, no mesh lids, feeding by age, and how to tell normal fasting from a real health problem.",
-    funFact: "Tarantulas can live extraordinarily long lives. Females of some species (like the Mexican Red Knee) can live 25 to 30 years in captivity, while males typically live only 5 to 7 years. A female tarantula may outlive your dog.",
+    funFact: "Tarantulas can live extraordinarily long lives. Females of some species (like the Mexican Red Knee) can live 25 to 30 years in captivity, while males rarely live past 10. A female tarantula may outlive your dog.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
@@ -955,7 +955,7 @@ export const invertebrateGuides = [
         { label: "Handling", value: "Mostly, no. Best kept as a look, don't touch pet: a fall can rupture the abdomen and is often fatal, and a hand, shoulder, or couch cushion is enough height for that.", source: "tarantula-handling-guide" },
         { label: "Budget", value: "$25 to $100 for the spider (common beginner species), $70 to $300 for a complete setup, and $5 to $15 a month after that.", source: "tarantula-cost-guide" },
         { label: "Adult size", value: "2 to 12 inch leg span, depending on species." },
-        { label: "Lifespan", value: "15 to 20 years or more for a female Chilean rose hair, typically 4 to 7 for a male. A female is a long-term commitment, though the ongoing budget stays very small the whole time.", source: "tarantula-cost-guide" },
+        { label: "Lifespan", value: "15 to 20 years or more for a female Chilean rose hair, and about 5 for a male, 10 at the outside. A female is a long-term commitment, though the ongoing budget stays very small the whole time.", source: "tarantula-cost-guide" },
         { label: "Power outage", value: "A non-event for most tarantulas at home; they don't need supplemental heat in a typical room and can go without food far longer than most pets. The real risk in this corner of pet keeping is in a car or a shipping box, not a home outage.", source: "invertebrate-emergency-travel-shipping-guide" },
         { label: "Quarantine", value: "At least three months apart from any other invertebrate, with its own tools. Long enough for mites, mold and an import's nematodes to show while the setup is still simple.", source: "invertebrate-quarantine-cleaning-and-escapes-guide" },
         { label: "Cleaning and escapes", value: "Uneaten prey out within 24 hours, remains weekly, substrate every 6 to 12 months or at the first mold. An escapee hides low, dark and warm: search at night with a flashlight and bait with water.", source: "invertebrate-quarantine-cleaning-and-escapes-guide" },

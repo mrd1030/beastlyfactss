@@ -1828,7 +1828,7 @@
     {
       "slug": "california-kingsnake-feeding-guide",
       "title": "What Do California Kingsnakes Eat? Feeding Schedule",
-      "excerpt": "A kingsnake that eats rattlesnakes in the wild eats thawed mice in a tank, every five to seven days as a hatchling and every ten to fourteen as an adult, sized to the widest part of its body. Here is the schedule, the sizing rule, why the prey is never alive, and why two kingsnakes never share a feeding.",
+      "excerpt": "A kingsnake that eats rattlesnakes in the wild eats thawed mice in a tank, every five to seven days while young and every ten to fourteen as an adult, sized to the widest part of its body. Here is the schedule, the sizing rule, why the prey is never alive, and why two kingsnakes never share a feeding.",
       "date": "2026-09-16",
       "image": "/assets/images/california-kingsnake-feeding.jpg",
       "category": "Reptiles",
@@ -2324,7 +2324,7 @@
     {
       "slug": "cockatiel-cost-guide",
       "title": "Cockatiel Price: $75 to $250, Plus $320 to $860 Setup",
-      "excerpt": "Cockatiels are relatively affordable to buy, but the budgeting story here is how long you'll be caring for one. A 10 to 15 year lifespan means this is a long-term financial commitment even though the entry cost is modest.",
+      "excerpt": "Cockatiels are relatively affordable to buy, but the budgeting story here is how long you'll be caring for one. A 12 to 15 year lifespan means this is a long-term financial commitment even though the entry cost is modest.",
       "date": "2026-07-15",
       "image": "/assets/images/cockatiel-cost.jpg",
       "category": "Birds",
@@ -2407,7 +2407,7 @@
     },
     {
       "slug": "cockatoo-cost-guide",
-      "title": "Cockatoo Price: $700 to $3,000, Plus $250 to $1,300 Setup",
+      "title": "Cockatoo Price: $700 to $3,000, Plus $880 to $1,800 Setup",
       "excerpt": "Cockatoos are a serious financial and emotional commitment, and the purchase price is just the smallest part of a decision that plays out over decades.",
       "date": "2026-07-26",
       "image": "/assets/images/cockatoo-cost.jpg",
@@ -2542,7 +2542,7 @@
     {
       "slug": "conure-enrichment-guide",
       "title": "Conure Enrichment Guide",
-      "excerpt": "Wild parrots spend up to six hours a day working for food. A conure with a full bowl is done in three minutes and then has the rest of the day to fill.",
+      "excerpt": "Wild parrots spend a large share of the day working for food. A conure with a full bowl is done in three minutes and then has the rest of the day to fill.",
       "date": "2026-09-04",
       "image": "/assets/images/conure-enrichment.jpg",
       "category": "Enrichment",
@@ -2759,7 +2759,7 @@
     {
       "slug": "corydoras-catfish-health-issues-guide",
       "title": "Corydoras Catfish Health Issues: Signs & Causes",
-      "excerpt": "Corydoras catfish are sensitive to two things above all else, substrate texture and water quality, and understanding that connection explains most of what shows up on this list.",
+      "excerpt": "Corydoras catfish are sensitive to two things above all else, substrate condition and water quality, and understanding that connection explains most of what shows up on this list.",
       "date": "2026-07-27",
       "image": "/assets/images/corydoras-catfish-health-issues.jpg",
       "category": "Fish",
@@ -3388,7 +3388,7 @@
     },
     {
       "slug": "fire-bellied-toad-cost-guide",
-      "title": "Fire-Bellied Toad Price: $10 to $25, Plus $150 to $300 Setup",
+      "title": "Fire-Bellied Toad Price: $10 to $25, Plus $45 to $75 Setup",
       "excerpt": "Fire-bellied toads are inexpensive, and the setup cost here goes toward something a bit different than most amphibians need, real aquatic filtration, not just humidity control.",
       "date": "2026-07-27",
       "image": "/assets/images/fire-bellied-toad-cost.jpg",
@@ -3908,7 +3908,7 @@
     {
       "slug": "gerbil-tank-setup-guide",
       "title": "Gerbil Housing: Tank Size, Depth and Bedding",
-      "excerpt": "Gerbil care comes down to one detail more than any other: providing deep substrate for a species built to dig real tunnels, not just burrow superficially.",
+      "excerpt": "Gerbil housing comes down to one thing more than any other: a burrow, meaning deep substrate plus a tunnel that leads to an enclosed chamber, for a species built to dig real tunnel systems.",
       "date": "2026-08-09",
       "image": "/assets/images/gerbil-tank-setup.jpg",
       "category": "Small & Exotic Pets",
@@ -3968,7 +3968,7 @@
     {
       "slug": "ghost-shrimp-enrichment-guide",
       "title": "Ghost Shrimp Enrichment Guide",
-      "excerpt": "A tank of ghost shrimp is usually several species in one bag, kept in feeder conditions, sold cheap. Most of what goes wrong happened before you bought them.",
+      "excerpt": "Ghost shrimp come out of feeder tanks, sold cheap and sometimes under the wrong label. Most of what goes wrong happened before you bought them.",
       "date": "2026-09-04",
       "image": "/assets/images/ghost-shrimp-enrichment.jpg",
       "category": "Enrichment",
@@ -6802,7 +6802,7 @@
     {
       "slug": "quaker-parakeet-health-issues-guide",
       "title": "Quaker Parakeet Health Issues: Signs & Causes",
-      "excerpt": "Quaker parakeets are hardy birds, and the health issues that do come up trace back overwhelmingly to diet and social wellbeing, both within an owner's control.",
+      "excerpt": "Most of what goes wrong with a quaker parakeet traces back to diet and social wellbeing, both within an owner's control, and that includes a self-injury pattern that goes past ordinary plucking.",
       "date": "2026-08-11",
       "image": "/assets/images/quaker-parakeet-health-issues.jpg",
       "category": "Birds",
@@ -8256,7 +8256,7 @@
     },
     {
       "slug": "tiger-salamander-cost-guide",
-      "title": "Tiger Salamander Price: $30 to $125, Plus $150 to $400 Setup",
+      "title": "Tiger Salamander Price: $30 to $125, Plus $70 to $120 Setup",
       "excerpt": "Tiger salamanders are affordable, and the budgeting story with this species is more about longevity than any single expensive line item.",
       "date": "2026-08-01",
       "image": "/assets/images/tiger-salamander-cost.jpg",
@@ -9093,6 +9093,18 @@
       "animalDay": null
     },
     {
+      "slug": "10-surprising-axolotl-facts",
+      "title": "10 Surprising Axolotl Facts",
+      "excerpt": "Ten quick axolotl facts most people don't know - from limb regeneration and forever-young biology to why these smiling salamanders never leave the water.",
+      "date": "2026-06-06",
+      "image": "/assets/images/fun-facts-axolotl.jpg",
+      "category": "Amphibians",
+      "categories": [
+        "Amphibians"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "10-surprising-ball-python-facts",
       "title": "10 Surprising Ball Python Facts",
       "excerpt": "From heat-sensing pits to 7,000 color morphs, these 10 ball python facts explain why they're the most popular pet snake in the world.",
@@ -9125,6 +9137,18 @@
       "category": "Fish",
       "categories": [
         "Fish"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "10-surprising-boa-constrictor-facts",
+      "title": "10 Surprising Boa Constrictor Facts",
+      "excerpt": "Ten surprising boa constrictor facts - from heartbeat-syncing squeezes to live litters of 60 - and why they're the pet snake world's favorite.",
+      "date": "2026-07-05",
+      "image": "/assets/images/fun-facts-boa-constrictor.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
       ],
       "animalDay": null
     },
@@ -9225,6 +9249,18 @@
       "animalDay": null
     },
     {
+      "slug": "10-surprising-rabbit-facts",
+      "title": "10 Surprising Rabbit Facts",
+      "excerpt": "Ten surprising rabbit facts - from near-360-degree vision and teeth that never stop growing to binkies and why rabbits are smarter than they look.",
+      "date": "2026-06-15",
+      "image": "/assets/images/fun-facts-rabbit.jpg",
+      "category": "Small & Exotic Pets",
+      "categories": [
+        "Small & Exotic Pets"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "10-surprising-tarantula-facts",
       "title": "10 Surprising Tarantula Facts",
       "excerpt": "From blue blood to decades-long lifespans, these 10 tarantula facts reveal why they're far less scary and far more fascinating than their reputation suggests.",
@@ -9233,30 +9269,6 @@
       "category": "Invertebrates",
       "categories": [
         "Invertebrates"
-      ],
-      "animalDay": null
-    },
-    {
-      "slug": "10-surprising-axolotl-facts",
-      "title": "10 Surprising Axolotl Facts",
-      "excerpt": "Ten quick axolotl facts most people don't know - from limb regeneration and forever-young biology to why these smiling salamanders never leave the water.",
-      "date": "2026-06-06",
-      "image": "/assets/images/fun-facts-axolotl.jpg",
-      "category": "Amphibians",
-      "categories": [
-        "Amphibians"
-      ],
-      "animalDay": null
-    },
-    {
-      "slug": "10-surprising-boa-constrictor-facts",
-      "title": "10 Surprising Boa Constrictor Facts",
-      "excerpt": "Ten surprising boa constrictor facts - from heartbeat-syncing squeezes to live litters of 60 - and why they're the pet snake world's favorite.",
-      "date": "2026-07-05",
-      "image": "/assets/images/fun-facts-boa-constrictor.jpg",
-      "category": "Reptiles",
-      "categories": [
-        "Reptiles"
       ],
       "animalDay": null
     },
@@ -9305,18 +9317,6 @@
       "category": "Aquatic Life",
       "categories": [
         "Aquatic Life"
-      ],
-      "animalDay": null
-    },
-    {
-      "slug": "10-surprising-rabbit-facts",
-      "title": "10 Surprising Rabbit Facts",
-      "excerpt": "Ten surprising rabbit facts - from near-360-degree vision and teeth that never stop growing to binkies and why rabbits are smarter than they look.",
-      "date": "2026-06-15",
-      "image": "/assets/images/fun-facts-rabbit.jpg",
-      "category": "Small & Exotic Pets",
-      "categories": [
-        "Small & Exotic Pets"
       ],
       "animalDay": null
     }

@@ -117,7 +117,7 @@ export const amphibianGuides = [
         { label: "What you will see", value: "Diurnal and busy, moving between land and water all day. In the water they preferred artificial plants over PVC pipes by around 40 percent, and both over open space.", source: "fire-bellied-toad-enrichment-guide" },
         { label: "Red leg syndrome", value: "Reddening on the underside and legs, lethargy, and sores, from dirty water. Fast and frequently fatal without antibiotics.", source: "fire-bellied-toad-health-issues-guide" },
         { label: "Wild-caught stock", value: "Most in the trade are wild-caught, which is why a fecal exam for any new toad is worth doing.", source: "fire-bellied-toad-health-issues-guide" },
-        { label: "Budget", value: "$10 to $25 for a standard toad, $100 or more for an albino. Setup roughly $150 to $300, then $15 to $30 a month. An exam runs $50 to $135, an emergency from $150 to $300.", source: "fire-bellied-toad-cost-guide" },
+        { label: "Budget", value: "$10 to $25 for a standard toad, $100 or more for an albino. Setup roughly $45 to $75 before plants and hides, then $15 to $30 a month. An exam runs $50 to $135, an emergency from $150 to $300.", source: "fire-bellied-toad-cost-guide" },
         { label: "Lifespan", value: "10 to 15 years to plan around, with 20 recorded and a maximum of 30.", source: "fire-bellied-toad-cost-guide" },
         { label: "Adult size", value: "1.5 to 2 inches (4 to 5 cm)." },
         { label: "Quarantine", value: "Six to eight weeks for a new amphibian; zoos run a 30-day minimum with 60 preferred.", source: "amphibian-quarantine-and-water-guide" },
@@ -172,7 +172,7 @@ export const amphibianGuides = [
     tagline: "The round, grumpy ambush predator that is essentially all mouth!",
     seoTitle: "Pacman Frog Care Guide: Setup, Feeding, and Health",
     seoDescription: "Pacman frogs need only a modest setup. Get heat and humidity right, feed prey no wider than the head, and learn why a buried frog is hunting, not bored.",
-    funFact: "Pacman frogs (horned frogs, genus Ceratophrys) have an extraordinarily powerful bite for an amphibian. Their bite force relative to body size is comparable to some predatory dinosaurs. They will attempt to eat anything that moves near them, including other frogs, small mice, and keepers' fingers.",
+    funFact: "Pacman frogs (horned frogs, genus Ceratophrys) have an extraordinarily powerful bite for an amphibian. A 2017 study measured Cranwell's horned frogs biting at up to about 33 newtons, and the largest living horned frogs should reach close to 500, the range of medium-sized mammalian carnivores. They will attempt to eat anything that moves near them, including other frogs, small mice, and keepers' fingers.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Quarantine, water, and hygiene rows cite
@@ -197,7 +197,7 @@ export const amphibianGuides = [
         { label: "Buried and motionless", value: "For days at a time is not under-stimulated, it is hunting.", source: "pacman-frog-enrichment-guide" },
         { label: "Handling", value: "Brief and infrequent, supported from underneath or held around the base of the rear legs, ready for a jump, with hands washed before and after.", source: "pacman-frog-handling-guide" },
         { label: "Off food", value: "Fine while active, alert, hydrated, with normal feces and stable weight. Weigh weekly; about 10% loss over a couple of weeks is the signal to act.", source: "pacman-frog-feeding-guide" },
-        { label: "Budget", value: "$15 to $100 for the frog, $100 to $225 for the setup, about $225 all in. An exam is $50 to $150, an exotic emergency fee from around $250.", source: "pacman-frog-cost-guide" },
+        { label: "Budget", value: "$15 to $100 for the frog, $100 to $225 for the setup, roughly $115 to $325 all in. An exam is $50 to $150, an exotic emergency fee from around $250.", source: "pacman-frog-cost-guide" },
         { label: "Adult size", value: "4 to 7 inches, females close to double a male's mass.", source: "pacman-frog-handling-guide" },
         { label: "Lifespan", value: "6 to 10 years, 10 to 15 achievable.", source: "pacman-frog-cost-guide" },
         { label: "Quarantine", value: "6 to 8 weeks, and the clock resets if illness shows partway. A new amphibian moves in a container, never a net.", source: "amphibian-quarantine-and-water-guide" },
@@ -283,7 +283,7 @@ export const amphibianGuides = [
         { label: "Out of sight is normal", value: "Fossorial, so it spends most of its time underground. Rarely visible does not mean unhealthy.", source: "tiger-salamander-handling-guide" },
         { label: "Appetite loss", value: "A specific red flag in an animal this voracious, not routine pickiness.", source: "tiger-salamander-health-issues-guide" },
         { label: "Life stage change", value: "A larval salamander starts fully aquatic, like an axolotl, and the enclosure changes entirely to deep burrowable land as it metamorphoses. Normal, not something gone wrong.", source: "tiger-salamander-tank-setup-guide" },
-        { label: "Budget", value: "$30 to $50 for a juvenile barred or eastern, $125 or more for rarer morphs; the California tiger salamander is protected and not legally a pet. Setup $150 to $400, then $15 to $30 a month. An exam runs $50 to $135, an emergency from $150 to $300.", source: "tiger-salamander-cost-guide" },
+        { label: "Budget", value: "$30 to $50 for a juvenile barred or eastern, $125 or more for rarer morphs; the California tiger salamander is protected and not legally a pet. Setup $70 to $120 before hides and decor, then $15 to $30 a month. An exam runs $50 to $135, an emergency from $150 to $300.", source: "tiger-salamander-cost-guide" },
         { label: "Lifespan", value: "12 to 15 years typical, 25 the captive record.", source: "tiger-salamander-cost-guide" },
         { label: "Adult size", value: "8 to 13 inches (20 to 33 cm)." },
         { label: "Quarantine", value: "Six to eight weeks, with a fecal screen in that window. Bd, and Bsal for salamanders specifically, have a documented pet-trade pathway. Moved in a container, never a net.", source: "amphibian-quarantine-and-water-guide" },

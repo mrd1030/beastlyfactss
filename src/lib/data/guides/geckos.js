@@ -560,7 +560,7 @@ export const geckoGuides = [
       rows: [
         { label: "Legal check", value: "No permit needed in 48 of 52 US jurisdictions. Hawaii allows it for research and exhibition only, the District of Columbia bars it by omission, West Virginia asks for an importation permit, Minnesota treats lizards as protected wild animals.", source: "tokay-gecko-legal-guide" },
         { label: "Quarantine", value: "3 to 6 months for a new reptile, the longer window for a wild-caught animal, in its own room, with a fecal exam early and a repeat before it ends, and a weekly weight.", source: "tokay-gecko-health-issues-guide" },
-        { label: "Enclosure", value: "18 by 18 by 36 inches tall minimum, front-opening for a defensive species, with branches, cork, and foliage spanning the full height. One per enclosure unless deliberately pairing.", source: "tokay-gecko-tank-setup-guide" },
+        { label: "Enclosure", value: "18x18x36 inches tall at least, 24x24x48 the target, front-opening for a defensive species, with branches, cork, and foliage spanning the full height. One per enclosure unless deliberately pairing.", source: "tokay-gecko-tank-setup-guide" },
         { label: "Temperature", value: "Basking 90 to 105F, cooler zone 80 to 85F, and nights at 75 to 80F, warmer than many homes run, from a ceramic emitter or deep heat projector on a thermostat. This species needs night heat more than most.", source: "tokay-gecko-tank-setup-guide" },
         { label: "Humidity", value: "60 to 80%, from daily misting, 2 to 3 inches of coconut fiber under moss and leaf litter, and airflow so it does not mold. No pine or cedar.", source: "tokay-gecko-tank-setup-guide" },
         { label: "Lighting", value: "Survivable without UVB on a D3-supplemented diet, but a 5% forest-strength T5 has real benefit, replaced every 6 to 12 months. Nights genuinely dark.", source: "tokay-gecko-tank-setup-guide" },
@@ -596,7 +596,7 @@ export const geckoGuides = [
       { slug: "tokay-gecko-cost-guide", line: "$15 to $400 for the gecko depending on where it came from, a $300 to $500 setup, and why the cheap one is not the budget option." },
       { slug: "tokay-gecko-tank-setup-guide", line: "18x18x36 minimum, a 90 to 105F basking zone, 60 to 80% humidity, night heat, and what this insectivore eats." },
       { slug: "tokay-gecko-handling-guide", line: "The two kinds of bite, reading a tokay before it bites, what to do when it has hold of you, and session length by tameness." },
-      { slug: "tokay-gecko-feeding-guide", line: "Five minutes of insects no wider than the head, daily young and every other day adult, gut-loaded two to three days, mice twice a month at most." },
+      { slug: "tokay-gecko-feeding-guide", line: "Five minutes of insects no wider than the head, daily young and every other day adult, gut-loaded 24 to 72 hours, mice twice a month at most." },
       { slug: "tokay-gecko-health-issues-guide", line: "MBD, respiratory infection, retained shed, parasites, prolapse, the wild-caught quarantine, and the vet-call list." },
       { slug: "tokay-gecko-enrichment-guide", line: "The 2024 pair-housing study, usable vertical structure, retreats at every level, and the priority order." },
       { slug: "tokay-gecko-legal-guide", line: "Legal in 48 of 52 jurisdictions, the four that are not, and why New Jersey exempts this gecko specifically." },
