@@ -13793,8 +13793,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
-    "headingCount": 9,
+    "sourceCount": 7,
+    "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -22972,7 +22972,7 @@
     "title": "Is It Legal to Own a Giant African Millipede? State-by-State Guide",
     "seoTitle": "Are Giant African Millipedes Legal? State and Federal Rules",
     "seoDescription": "The 2006 millipede import ban is a myth. Real rules: a USDA PPQ 526 permit federally, a named permit in Florida, a ban in Hawaii, and no permit in Oregon.",
-    "lastUpdated": "2026-07-23",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "There was never a 2006 blanket import ban on giant African millipedes, despite what hobbyist forums repeat. The rule is a standing USDA import permit, plus real state variation from Florida's named permit to Oregon's outright approval.",
     "date": "2026-07-23",
@@ -23007,6 +23007,10 @@
       {
         "q": "Can I legally own one in Florida?",
         "a": "Yes, but only with a permit from the Department of Agriculture, not from the wildlife agency. Rule 5B-57.004(1) makes it unlawful to possess any arthropod regulated by the Department or the USDA except under a state permit, unless a federal PPQ 526 has issued with the state's concurrence, and the department issues one only where it finds the animal can be contained to prevent escape."
+      },
+      {
+        "q": "How do I get the USDA permit to bring a millipede into my state?",
+        "a": "Apply to USDA APHIS Plant Protection and Quarantine for a PPQ 526 permit, preferably online through APHIS eFile. The application asks for the species, numbers, where the animals ship from, the destination, the intended use and how you will prevent escape, and it goes to the destination state for review. APHIS puts the average processing time at 127 days. The permit covers importing and interstate movement and comes with containment conditions; keeping one bought inside your own state is a matter of state law."
       }
     ],
     "relatedProducts": [],
@@ -23015,8 +23019,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
-    "headingCount": 7,
+    "sourceCount": 5,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -38125,7 +38129,7 @@
     "title": "Are Quaker Parrots Legal? The Bird Banned for Nest Building",
     "seoTitle": "Are Quaker Parrots Legal? 13 States Ban Them",
     "seoDescription": "Thirteen states ban the quaker parrot outright. The reason is not danger: it is the only parrot that builds stick nests, and it builds them on substations.",
-    "lastUpdated": "2026-09-11",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Thirteen states ban the quaker parrot, more than any other bird we have mapped, and not one of them does it because the bird is dangerous. Kansas puts it on a list with silver carp and zebra mussels.",
     "date": "2026-09-06",
@@ -38164,6 +38168,10 @@
       {
         "q": "Is the quaker parrot legal in New York?",
         "a": "Yes, in both the state and New York City, which is unusual because the city bans far more than the state does. Established quaker colonies have lived in Brooklyn for decades. The bird is banned in neighboring Connecticut, New Jersey and Pennsylvania."
+      },
+      {
+        "q": "Can I bring my quaker parrot if I move to a state that bans them?",
+        "a": "Almost certainly not. Of the thirteen ban states, only Wisconsin's rule has a general permit process for a prohibited species, judged on the keeper's knowledge, a site that contains the bird and no significant harm, and nothing in it is written for pets or new residents. The other twelve limit their exceptions to zoos, exhibitors, research or keepers licensed before the rule, and Wyoming bars a permit outright. Ask the destination state's wildlife agency, or Hawaii's Department of Agriculture, before you move, and if the answer is no, rehome the bird in a state where it is legal."
       }
     ],
     "relatedProducts": [],
@@ -38173,7 +38181,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6,
-    "headingCount": 8,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784

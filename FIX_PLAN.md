@@ -93,7 +93,7 @@ Status: open (leftovers marked OPEN or PARTIAL below)
 Status: open (leftovers marked OPEN or PARTIAL below)
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Noise, leases and neighbors (Sep 8-15). Belongs in cockatoo-legal-guide. OPEN 2026-09-25: legal file, out of scope for wave 3b.
+- [x] [TRULY MISSING] Noise, leases and neighbors (Sep 8-15). Done 2026-09-25: now lives in cockatoo-handling-guide ("Noise, Leases and the Neighbors"), not the legal guide.
 
 ## Invertebrates (8)
 
@@ -262,6 +262,12 @@ Claims with no source on their own page. Source each or cut it.
 - [x] ackie-monitor-handling-guide: the "backflips" FunFact. Done 2026-09-25: no source carries it; FunFact replaced with the burrow-plugging tail (Winter Park Veterinary Hospital, already cited), and the matching body clause cut.
 - [x] small-mammal-vet-visits-and-travel-guide: ferrets can vomit, the insulinoma crash, and rats carrying respiratory disease.
 - [x] small-mammal-temperature-heat-stress-guide: chinchilla 50 to 68°F comfort range, 35 to 45°F cold tolerance (also in a hub row), hamster torpor below 41°F, rabbit "no sweat glands" (VCA's rabbit page says it but is not cited here).
+
+## Found in the legal additions (2026-09-25, not yet fixed)
+
+- [ ] quaker-parakeet-legal-guide: the source titled "Wis. Admin. Code ch. NR 40" links to the DNR species list, not the code. Repoint it to https://docs.legis.wisconsin.gov/code/admin_code/nr/001/40 (which holds both the prohibited list and the NR 40.06 permit the new "Moving to a Ban State" section relies on) after loading it to confirm; the site returned 503 on 2026-09-25. The guide's sixth source also needs its one-line MDX comment.
+- [ ] quaker-parakeet-legal-guide "Moving to a Ban State": Nebraska (166 NAC 8, rules.nebraska.gov failed TLS) and Colorado's non-grandfather exceptions were not read first-hand; confirm "no private route" for both.
+- [ ] giant-millipede-legal-guide: no government page states whether the PPQ 526 carries a fee; the section says nothing about one. Add it if APHIS publishes it.
 
 ## Reader review fixes (set up 2026-09-25)
 
