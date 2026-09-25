@@ -1,0 +1,24 @@
+c01 angelfish discus oscar corydoras-catfish
+c02 betta-fish goldfish koi zebra-danio
+c03 guppy molly platy swordtail
+c04 neon-tetra cardinal-tetra bristlenose-pleco
+c05 amano-shrimp cherry-shrimp ghost-shrimp
+c06 tarantula emperor-scorpion jumping-spider hermit-crab
+c07 hissing-cockroach millipede praying-mantis stick-insect
+c08 budgie cockatiel lovebird parrotlet
+c09 african-grey cockatoo conure
+c10 quaker-parakeet canary zebra-finch
+c11 rabbit guinea-pig chinchilla degu
+c12 hamster gerbil mouse rat
+c13 ferret hedgehog sugar-glider flying-squirrel
+c14 leopard-gecko crested-gecko gargoyle-gecko african-fat-tail
+c15 mourning-gecko leaf-tailed-gecko tokay-gecko
+c16 bearded-dragon uromastyx green-anole
+c17 blue-tongue-skink fire-skink tegu ackie-monitor
+c18 savannah-monitor green-iguana veiled-chameleon jacksons-chameleon
+c19 ball-python corn-snake milk-snake california-kingsnake
+c20 hognose-snake garter-snake rosy-boa boa-constrictor
+c21 box-turtle red-eared-slider red-footed-tortoise
+c22 russian-tortoise sulcata-tortoise
+c23 axolotl tiger-salamander fire-bellied-toad
+c24 pacman-frog whites-tree-frog

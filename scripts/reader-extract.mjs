@@ -18,9 +18,15 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { getDeepDiveSiblings, getRelatedArticleSlugs, isSharedDeepDiveArticle } from '../src/lib/data/relatedArticles.js';
 
-const species = process.argv[2];
-if (!species) { console.error('usage: node scripts/reader-extract.mjs <species-id> [out-dir]'); process.exit(1); }
-const outDir = process.argv[3] || path.join('.reader', species);
+// Flags: --no-legal leaves the species' legal guide out of the set.
+// --sidebar also writes the full text of every Health and More article into
+// <out-dir>/sidebar/, so a reader can open the shared guide before calling
+// something missing instead of judging it from a one-line excerpt.
+const args = process.argv.slice(2);
+const flags = new Set(args.filter((a) => a.startsWith('--')));
+const [species, outArg] = args.filter((a) => !a.startsWith('--'));
+if (!species) { console.error('usage: node scripts/reader-extract.mjs <species-id> [out-dir] [--no-legal] [--sidebar]'); process.exit(1); }
+const outDir = outArg || path.join('.reader', species);
 fs.mkdirSync(outDir, { recursive: true });
 
 const meta = JSON.parse(fs.readFileSync('src/lib/generated/mdx-meta.json', 'utf8')).filter((p) => p.slug);
@@ -202,7 +208,7 @@ const wired = getRelatedArticleSlugs(species, posts)
   .filter((slug) => ownByName(slug) && !isSharedDeepDiveArticle(slug))
   .map((slug) => slug + '.mdx')
   .filter((f) => fs.existsSync(path.join('content/guides', f)));
-const files = Array.from(new Set([...bySuffix, ...wired]));
+const files = Array.from(new Set([...bySuffix, ...wired])).filter((f) => !(flags.has('--no-legal') && f.endsWith('-legal-guide.mdx')));
 files.sort((a, b) => {
   const ia = order.findIndex((o) => a.endsWith(`-${o}-guide.mdx`)); const ib = order.findIndex((o) => b.endsWith(`-${o}-guide.mdx`));
   return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib) || a.localeCompare(b);
@@ -217,6 +223,24 @@ files.forEach((f, i) => {
   fs.writeFileSync(path.join(outDir, name), text + '\n');
   written.push(name);
 });
+
+if (flags.has('--sidebar')) {
+  const findMdx = (slug) => ['guides', 'blog', 'fun-facts', 'short-story']
+    .map((d) => path.join('content', d, slug + '.mdx')).find((f) => fs.existsSync(f));
+  const shared = getRelatedArticleSlugs(species, posts).filter((s) => isSharedDeepDiveArticle(s));
+  fs.mkdirSync(path.join(outDir, 'sidebar'), { recursive: true });
+  shared.forEach((slug, i) => {
+    const file = findMdx(slug);
+    if (!file) return;
+    const raw = fs.readFileSync(file, 'utf8');
+    const [fm, body] = raw.split(/\n---\n/, 2);
+    const title = /^title: "(.*)"$/m.exec(fm)?.[1] || slug;
+    const text = `HEALTH AND MORE ARTICLE (linked from this species' sidebar, shared across the class): ${title}\n\n` + renderBody(body || '', slug) + frontmatterFaqs(fm || '');
+    const name = path.join('sidebar', `${String(i + 1).padStart(2, '0')}-${slug}.txt`);
+    fs.writeFileSync(path.join(outDir, name), text + '\n');
+    written.push(name);
+  });
+}
 
 console.log(`${outDir}: ${written.length} files`);
 for (const w of written) console.log('  ' + w + ' (' + fs.readFileSync(path.join(outDir, w), 'utf8').split(/\s+/).length + ' words)');
