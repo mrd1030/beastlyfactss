@@ -301,12 +301,80 @@ claude/adsense-readiness-review-7u43dx. No checkpoint commits. Do not
 merge to main. Summary only at the end.
 ```
 
-Prompt R2: the same, with "part R2", scope "section 6 items 27 to 40",
-and pull first so R1's commit is in. Gap items (27 to 36) add short,
-sourced text where the reader asked the question; a gap answered by a
-shared guide gets one species sentence with an in-body link to that
-guide, not a copy of it. Trust items (37 to 40): move brand names out of
-advice prose, and source, soften or cut the flat claims.
+Prompt R2 (paste into a fresh session after R1 has pushed):
+
+```
+Reader review fixes, part R2. Work on branch
+claude/adsense-readiness-review-7u43dx (git fetch, check it out, pull so
+R1's commit is in; do not create or push any other branch). Read
+CLAUDE.md, docs/RULES.md, the "Reader review fixes" section of
+FIX_PLAN.md, and READER_REVIEWS_2026-09-25.md sections 3, 4 and 6.
+Scope: section 6 items 27 to 40, plus the product list at the end.
+
+Gap items (27 to 36): for each, confirm the gap still exists on the
+species' own pages and in its Health and More guides, then add short,
+sourced text where the reader asked the question. A gap already
+answered by a shared guide gets one species sentence with an in-body
+link to that guide, not a copy of it. Buy list additions (item 27) use
+only products already in src/lib/data/affiliateProducts.js; grep for
+exact existing links, never invent or source a new product yourself. If
+no existing product fits, add the item to the buy list as plain text
+and log it in NEEDS_PRODUCT.md (below).
+
+Trust items (37 to 40): move brand names and outside site names out of
+advice prose (the Sources block carries attribution). This includes
+older pages that say "according to VCA", "according to Merck" or name
+another site in the body or FAQs, such as bird-chronic-egg-laying-guide
+and avian-polyomavirus-guide; grep content/guides for "according to"
+and fix every hit that names an organization or site, unless the
+sentence genuinely needs the name. Source, soften or cut the flat claims
+readers doubted. Carry each caveat to every page that states the
+claim. Fix the green anole arithmetic.
+
+Research with real web sources (never from memory; never an AI-drafted
+site such as ExoPetGuides or SpectrumCare; prefer vets, universities,
+government, peer-reviewed). A claim with no source found is left out.
+For each change, update every place that states the fact: body,
+frontmatter FAQs, seoDescription, description, excerpt, KeyTakeaway,
+hub rows and hub FAQs (hub FAQs stay word for word with the guide FAQ),
+encyclopedia, overviews and vs guides. Sources stay at 5 per article,
+6 only when each backs its own claim, with a one-line comment saying
+why. No links to the same species' sibling guides, no "see our" or
+"check out" phrasing, no sentence that exists only to carry a link.
+Stamp lastUpdated with the Eastern date on every page touched.
+
+Product list, last step, after all fixes: create NEEDS_PRODUCT.md in the
+repo root (a live doc like NEEDS_IMAGE.md: open items only; finished
+items later move to archive/docs-completed/NEEDS_PRODUCT_COMPLETED_<date>.md).
+It lists every product the owner should find on Amazon. Build it from:
+(a) every item you added as plain text in this session; (b) every hub
+buyList entry in src/lib/data/guides/*.js that has no product link; (c)
+every row in a cost guide table (ComparisonTable) that names an
+equipment item with no AffiliateLink; (d) every equipment item named in
+a tank setup guide's body that has no link, where the page recommends
+buying it. Group by product type (heating, lighting, filtration, water
+testing, enclosures and cages, substrate, food and supplements, health
+and first aid, other), one line per product: what it is, the spec that
+matters (size, wattage, gallons, dimensions, UVB percent), and every
+species or page that needs it. Mark each line NEED (a buy list or cost
+table already names it) or COULD (prose recommends it). Put the NEED
+lines first. Do not search Amazon and do not add any link; the owner
+supplies the links.
+
+Credit limits, hard: never more than 3 agents running at once, each
+taking several items in sequence; no two agents edit the same file. Use
+Opus. Never touch legal files, care packages, or dog and cat pages.
+
+Tick each item in READER_REVIEWS_2026-09-25.md section 6 ("[done]" or
+"[open: reason]"). At the end run sync-articles, check-internal-links,
+check-voice --strict, check-related-articles, check-publish-dates,
+check-rotation, check-seo-tags, check-hub-rows, check-hub-figures,
+check-hub-faqs, check-affiliate-mdx and check-cost-coverage. All must
+pass. Then exactly ONE commit and ONE push to
+claude/adsense-readiness-review-7u43dx. No checkpoint commits. Do not
+merge to main. Summary only at the end, including the NEED and COULD
+counts from NEEDS_PRODUCT.md.
+```
 
 ## 5. Care package updates (noted 2026-09-24, not edited)
 
