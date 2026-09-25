@@ -315,11 +315,15 @@ Gap items (27 to 36): for each, confirm the gap still exists on the
 species' own pages and in its Health and More guides, then add short,
 sourced text where the reader asked the question. A gap already
 answered by a shared guide gets one species sentence with an in-body
-link to that guide, not a copy of it. Buy list additions (item 27) use
-only products already in src/lib/data/affiliateProducts.js; grep for
-exact existing links, never invent or source a new product yourself. If
-no existing product fits, add the item to the buy list as plain text
-and log it in NEEDS_PRODUCT.md (below).
+link to that guide, not a copy of it. The live buy lists (hub buyList
+entries) and cost guide tables only ever gain an item that already
+exists as a product in src/lib/data/affiliateProducts.js (the /gear
+catalog); grep for the exact existing link, never invent or source a
+new product yourself. If no existing product fits, do NOT add the item
+to any buy list or cost table, not even as plain text. Log it in
+NEEDS_PRODUCT.md (below) instead, and it goes live only after the owner
+supplies a product. Care advice in the prose may still say the animal
+needs the item when a source backs it, with no link.
 
 Trust items (37 to 40): move brand names and outside site names out of
 advice prose (the Sources block carries attribution). This includes
@@ -347,7 +351,8 @@ Product list, last step, after all fixes: create NEEDS_PRODUCT.md in the
 repo root (a live doc like NEEDS_IMAGE.md: open items only; finished
 items later move to archive/docs-completed/NEEDS_PRODUCT_COMPLETED_<date>.md).
 It lists every product the owner should find on Amazon. Build it from:
-(a) every item you added as plain text in this session; (b) every hub
+(a) every item this session needed but could not add because no product
+exists in affiliateProducts.js; (b) every hub
 buyList entry in src/lib/data/guides/*.js that has no product link; (c)
 every row in a cost guide table (ComparisonTable) that names an
 equipment item with no AffiliateLink; (d) every equipment item named in
