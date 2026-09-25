@@ -50,7 +50,7 @@ export const birdEncyclopedia = [
       habitat: "Open grassland, scrubland, and lightly wooded areas",
       adultSize: "12-13 inches (30-33 cm) including tail; 2.5-3.5 oz",
       wildDiet: "Grass seeds, grains, berries, and insects",
-      wildLifespan: "Not well documented in the wild; typically 10 to 15 years in captivity, up to about 25 reported, and a longevity record of 35 years",
+      wildLifespan: "Not well documented in the wild; typically 12 to 15 years in captivity, up to about 25 reported, and a longevity record of 35 years",
       conservation: "Least Concern (IUCN)",
       history: "Johann Friedrich Gmelin described the bird in 1788 as Psittacus novaehollandiae, Robert Kerr renamed it Psittacus hollandicus in 1792, and Johann Georg Wagler gave it a genus of its own, Nymphicus, in 1832. Australia prohibits the export of its native birds, a restriction carried today by the Wildlife Protection (Regulation of Exports and Imports) Act of 1982, so cockatiels kept anywhere else descend entirely from stock already outside the country. Breeders answered that closed border with color. A pied mutation appeared in California in 1949, lutino followed in 1958, cinnamon during the 1950s and pearl in 1967, and those four underpin nearly every variety on sale now.",
     },

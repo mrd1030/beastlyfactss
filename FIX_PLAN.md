@@ -1760,3 +1760,89 @@ Shipped 2026-09-24 in commit 4c5ae0a, pushed to claude/adsense-readiness-review-
 - [ ] Weakly verified sources: hamster-tank-setup-guide's Hauzenberger 2006 figures were read from the abstract in search results (ScienceDirect returned 403; the figures match hamster-enrichment-guide). rat-enrichment-guide's Schneidewind and Windschnurer 2026 finding was seen only in a search summary; only the attribution was changed. Confirm both against the papers.
 - [ ] Pet Assure source on canary-health-issues-guide: replace with a vet or university page covering red mites if one can be found.
 - [ ] Leftover phrasing and comments found in passing: hedgehog-health-issues-guide still has "our guide to" (around line 78); 10-surprising-argentine-tegu-facts has "For care basics, see our full..." (line 26); the milk snake hub comment in snakes.js still says the species has no feeding guide; the degu hub comment in smallMammals.js still describes the old 11 to 12 inch wheel history; sugar-glider-cost-guide Sources has an unlinked World Population Review entry.
+
+---
+
+## Waves 2 and 3 (set up 2026-09-24)
+
+Wave 1 is merged. What is left is writing: [TRULY MISSING] items need web research and new
+text, [THIN], [LOW GRADE] and [SHORT] items need existing pages rewritten or expanded. Split
+by animal group, so every species is finished inside one wave:
+
+| Wave | Groups | Open items |
+|---|---|---|
+| 2 | Reptiles, Amphibians, section 4 non-species articles | 208 |
+| 3 | Fish and shrimp, Birds, Small mammals, Invertebrates | 205 |
+
+Rules for both waves:
+- Per species, in order: [COVERED+LINKED] leftovers, then [TRULY MISSING], then [LOW GRADE] and [THIN], then [SHORT].
+- Research means web search with real sources (CLAUDE.md). Aim for 3 to 5 sources per article; never cite from memory; a claim with no source found is left out.
+- A [TRULY MISSING] item that a shared guide could hold for many species goes in that shared guide once, with one species sentence and link on each page, not copied per species.
+- Keep the split guide structure. No new pillar pages. New articles only if an item cannot fit an existing page, and then they get a rotation number and RELATED_ARTICLES wiring.
+- Dogs and cats are out of scope. Care package updates (section 5) are out of scope.
+- Stamp lastUpdated with the Eastern date on every page touched.
+- No commits until the whole wave is done. Then run sync-articles, check-internal-links, check-voice --strict, check-related-articles, check-publish-dates, check-rotation, check-seo-tags, check-hub-rows, check-hub-figures, and make ONE commit and ONE push to the working branch. Merge to main only when the owner says so.
+
+Wave 2 prompt (paste into a fresh session on branch claude/adsense-readiness-review-7u43dx):
+
+```
+Wave 2 of FIX_PLAN.md. Read CLAUDE.md, docs/RULES.md and FIX_PLAN.md
+("Waves 2 and 3" section first). Scope: every open item in the Reptiles,
+Amphibians and section 4 groups. Follow the wave rules in that section.
+Use Opus for yourself and for research and writing agents; run one agent
+per group of 4 to 6 species in parallel, no two agents editing the same
+file. Tick items in FIX_PLAN.md as they are done. Spot-check each agent's
+diff and verify new citations load. One commit and one push at the end;
+do not merge to main. Summary only at the end.
+```
+
+Wave 3 prompt: the same, with scope "Fish and shrimp, Birds, Small
+mammals and Invertebrates groups".
+
+---
+
+## 5. Care package updates (noted 2026-09-24, not edited)
+
+The printable packages still carry figures the site has since corrected. Fix
+these at the next package rebuild. Edit `content/CAREPACKAGE Guides/source/<slug>.html`,
+or for axolotl, budgie, cockatiel, cockatoo, goldfish, guinea-pig, lovebird and
+russian-tortoise the `<slug>-src/pages_*.html` fragments (build.py regenerates
+the HTML), then re-render the PDF.
+
+**Package wrong, site right (change the package):**
+- [ ] Leopard gecko p17: "around half of captive leopard geckos may carry it" and "most commonly diagnosed reptile". Replace with the single Thai farm 51% finding.
+- [ ] Tarantula (profile, pp. 11, 27): male lifespan "4 to 7 years". Site: about 5 for a rose hair, 10 at the outside.
+- [ ] Cockatoo: "75 to 80% pellets... no more than 20 to 40%" fresh (four places). Site: remaining 20 to 25%, seeds under about 10%.
+- [ ] Cockatoo: bathing "two or three times a week". Site: offer a bath daily (VCA).
+- [ ] Cockatoo: cage "$700" to "$1,550". Site: $820 to $880 powder-coated, $1,450 to $1,550 stainless.
+- [ ] Lovebird: "75 to 80% pellets, 20 to 40% fresh". Site: remaining 20 to 25%.
+- [ ] Cockatiel: bathing dish "two or three times a week". Site: a bath offered daily.
+- [ ] Crested gecko p14: "weigh weekly". Site settled on at least monthly, more often while off food.
+- [ ] Russian tortoise: soak "at least 20 minutes, two to three times a week". Site: adults weekly 10 to 20 minutes, juveniles 10 to 15 minutes twice a week, no deeper than the elbows.
+- [ ] Russian tortoise: "that is what causes pyramiding". Site: one suspected driver, not completely understood.
+- [ ] Guinea pig: "hay is 70 to 80% of the diet". Site: roughly 80%.
+- [ ] Ball python p12: list refusal causes with temperature and humidity first, then shed, stress, breeding season.
+- [ ] Goldfish p8: cycle by dosing ammonia to about 3 ppm, done when a full dose reads zero within 24 hours.
+- [ ] Betta p10: feeding "once or twice a day" can add "or up to three smaller meals 6 to 8 hours apart" (optional).
+
+**Package better than the site (fix the site, not the package):**
+- [x] Axolotl pH: package "7.4 to 7.6" (LafeberVet) vs hub and tank setup guide "7.4 to 7.8".
+- [x] Hamster torpor: package "below 41°F (5°C)" (Merck, LafeberVet) vs hub "under 60°F risks torpor".
+
+**Package and site disagree, no source settles it yet (research before changing either):**
+- [ ] Rabbit lifespan: package 7 to 10 indoors, outdoor about 2; site 8 to 12, some to 14, outdoor 3 to 5.
+- [ ] Cockatoo lifespan: package 30 to 45 (veterinary), Moluccan to 70; site hub 40 to 60 typical, Moluccan to 92.
+- [ ] Bird quarantine (cockatiel, cockatoo): package 30 days, 45 to 60 with an existing bird; hub 30 to 45, multi-bird nearer 90.
+- [ ] Betta ich: package about 82°F with copper or formalin; hub 86°F or aquarium salt.
+- [ ] Goldfish filtration: package 10x tank volume per hour minimum; hub at least 4x, ideally 5 to 10.
+- [ ] Bearded dragon costs: package equipment $420 to $860, exam $75 to $200, monthly $60 to $130; cost guide $400 to $800, $120 to $245, $50 to $108.
+- [ ] Leopard gecko costs: package setup $175 to $495, monthly $32 to $91; hub $250 to $400, $20 to $50.
+- [ ] Cockatiel yearly cost: package $300 to $565; hub $200 to $350.
+- [ ] Russian tortoise brumation: package 10 to 14 weeks at most; hub 2 to 4 months.
+
+No differences: budgie.
+
+## 6. Site items found during the package check
+
+- [x] Cockatiel encyclopedia (`src/lib/data/encyclopedia/birds.js` line 53) still says "typically 10 to 15 years in captivity"; every other page now says 12 to 15 (LafeberVet). Change to 12 to 15.
+- [x] UVB replacement interval: owner's call is **6 to 12 months** (Tree of Life Exotic Pet Medical Center: "should be replaced every 6-12 months depending on the model, even if they are still producing visible light"). Wave 1 changed `uvb-lighting-complete-guide.mdx` (FAQ line 47, checklist line 159) to "12 months for a quality T5 HO". Bring it back to 6 to 12 months citing Tree of Life, matching the bearded dragon hub, tank setup guide, UVB article and package.
