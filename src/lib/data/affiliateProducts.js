@@ -869,7 +869,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$450–$650",
     description: "Aquarium chiller that helps keep cold-water species like axolotls in a safer temperature range.",
-    covers: ["Aquarium chiller (keeps water 60-68°F)"],
+    covers: ["Aquarium chiller (keeps water 60-64°F)"],
     altGroup: "axolotl-chiller",
     pets: ["reptiles-amphibians", "fish"],
   },

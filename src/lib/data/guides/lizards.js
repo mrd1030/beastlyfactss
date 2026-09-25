@@ -183,7 +183,7 @@ export const lizardGuides = [
     },
     routes: [
       { slug: "argentine-tegu-legal-guide", line: "Florida's prohibited list with the dates, the closed grandfather window, and the eight other jurisdictions that ban or gate one." },
-      { slug: "argentine-tegu-cost-guide", line: "$200 to $500 for the animal, a build that often exceeds $1,000 to $3,000, and why the enclosure you can buy is not the one you need." },
+      { slug: "argentine-tegu-cost-guide", line: "$200 to $500 for the animal, a build that often exceeds $1,000 to $3,000, and what a true 8x4x4 enclosure costs built to order." },
       { slug: "argentine-tegu-tank-setup-guide", line: "8x4x4 as a floor, 100 to 110F basking, 70 to 80% humidity, 12 to 18 inches of substrate, and the feeding schedule by age." },
       { slug: "argentine-tegu-feeding-guide", line: "Five meals a week as a hatchling to two as an adult, the 60/30/10 adult plate, the skull-sized portion, cooked eggs, and brumation versus a real refusal." },
       { slug: "argentine-tegu-handling-guide", line: "Why the dog comparison is earned rather than marketing, reading a tegu by its size, the bite protocol, and the season handling stops." },
@@ -742,7 +742,7 @@ export const lizardGuides = [
         { label: "Dehydration", value: "The most common problem, since they will not drink from a dish. Sunken eyes and lethargy; manageable early by raising misting and dripper output immediately.", source: "jacksons-chameleon-health-issues-guide" },
         { label: "Edema and gout", value: "Fluid sacs under the throat or chest point to over-supplemented vitamin A or D. Swollen joints are gout, from dehydration, overfeeding, or too much protein. Both are a vet visit.", source: "jacksons-chameleon-health-issues-guide" },
         { label: "Handling", value: "Docile for a chameleon, which still means minimal handling. Gaping, sunken eyes, head jerking, swaying, tail curling, and raised front legs all mean stop.", source: "jacksons-chameleon-handling-guide" },
-        { label: "Sexing and live birth", value: "Males grow three forward horns; females have little or none. Females bear 5 to 30 live young after roughly 5 to 6 months of gestation, which is the toll behind their shorter lives.", source: "jacksons-chameleon-handling-guide" },
+        { label: "Sexing and live birth", value: "Males grow three forward horns; females have little or none. Females bear live young and can store sperm, so a lone female can still give birth. The repeated toll of pregnancy is why females live shorter lives.", source: "jacksons-chameleon-health-issues-guide" },
         { label: "Planting density", value: "Layered live plants so the animal can cross the cage at several heights unseen. If you can always spot it immediately, it is too sparse.", source: "jacksons-chameleon-enrichment-guide" },
         { label: "Legal, before you buy", value: "Hawaii and the District of Columbia bar private ownership, New Jersey and West Virginia require a permit, Minnesota and Maine attach conditions. The other 46 jurisdictions place no restriction.", source: "jacksons-chameleon-legal-guide" },
         { label: "Budget", value: "$50 to $250 for the chameleon, and captive-bred is worth the price over a parasitized wild-caught Hawaiian animal. Setup roughly $400 to $525, then $50 to $100 a month. A routine exam runs $50 to $100.", source: "jacksons-chameleon-cost-guide" },
@@ -1081,7 +1081,7 @@ export const lizardGuides = [
     ],
     faqs: [
       { q: "What size enclosure does an adult veiled chameleon need?", a: "24x24x48 inches is the practical floor for an adult, and 4x2x4 feet is better if the space is there. Because they hit adult size in 6 to 8 months, buy the adult enclosure up front rather than planning an upgrade." },
-      { q: "Why can't I just use a water dish?", a: "Standing water does not read as drinking water to this species. Only moving droplets on leaves and branches get a response, so refilling a dish more often will not fix hydration. The dripper or misting system is the essential piece, not an accessory." },
+      { q: "What is egg-binding and why is it an emergency?", a: "Egg-binding (dystocia) is when a female can't pass her egg clutch. Females produce clutches whether or not a male is present, so every female owner needs to recognize the signs: restlessness, digging without producing eggs, straining, lethargy, and swelling. It can kill within 24 hours, and severe cases often require surgery." },
       { q: "What is the correct calcium and vitamin schedule for a veiled chameleon?", a: "Plain calcium, no D3 and no phosphorus, on nearly every feeding. Calcium with D3 goes on about every other week, and a multivitamin carrying a real vitamin A source runs on that same twice-monthly schedule. Excess D3 can turn toxic, which is why it's dosed less often." },
     ],
   },

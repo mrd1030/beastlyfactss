@@ -399,16 +399,16 @@ Status: open
 - [x] [CONTRADICTION] Insects (framing): hub "no insects... ever" vs green-iguana-feeding-guide "a published tolerance, at under 5% of an adult iguana's diet" before advising against. Soften the hub to match.
 
 **Low grades and thin pages**
-- [ ] [THIN] green-iguana-tank-setup-guide: "very short for the most consequential subject in the set" (Sep 8-15), 464 words.
+- [x] [THIN] green-iguana-tank-setup-guide: "very short for the most consequential subject in the set" (Sep 8-15), 464 words.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Quarantine and fecal screen: reptile-quarantine-guide (body-linked from the enrichment guide). The cost is truly missing (below).
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Quarantine workup cost (fecal, first exam) for an iguana. Belongs in green-iguana-cost-guide.
+- [x] [TRULY MISSING] Quarantine workup cost (fecal, first exam) for an iguana. Belongs in green-iguana-cost-guide.
 
 **Short pages**
-- [ ] [SHORT] green-iguana-handling-guide 461, green-iguana-health-issues-guide 482, green-iguana-tank-setup-guide 464.
+- [x] [SHORT] green-iguana-handling-guide 461, green-iguana-health-issues-guide 482, green-iguana-tank-setup-guide 464.
 
 ### Box turtle (box-turtle)
 Status: open
@@ -424,10 +424,10 @@ Status: open
 - [x] [COVERED+LINKED] Outdoor sun and a lighter calcium schedule: box-turtle-feeding-guide assumes outdoor housing; outdoor-reptile-housing-guide is body-linked. State the outdoor case in the feeding text rather than relying on the setup guide.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] What the homing instinct means after an escape (Sep 8-15). Belongs in box-turtle-handling-guide.
+- [x] [TRULY MISSING] What the homing instinct means after an escape (Sep 8-15). Belongs in box-turtle-handling-guide.
 
 **Short pages**
-- [ ] [SHORT] box-turtle-handling-guide 511, box-turtle-health-issues-guide 434, box-turtle-tank-setup-guide 599.
+- [x] [SHORT] box-turtle-handling-guide 511, box-turtle-health-issues-guide 434, box-turtle-tank-setup-guide 599.
 
 ### Crested gecko (crested-gecko)
 Status: open
@@ -438,17 +438,17 @@ Status: open
 - [x] [ERROR] crested-gecko-tank-setup-guide basking row reads "82-85°F at the surface... (some sources: 72-75°F to be safe)", undercutting itself. State one target.
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] crested-gecko-tank-setup-guide (B), for the row above.
-- [ ] [LOW GRADE] crested-gecko-enrichment-guide (B): generic plant and hide sections that fit any arboreal reptile.
+- [x] [LOW GRADE] crested-gecko-tank-setup-guide (B), for the row above.
+- [x] [LOW GRADE] crested-gecko-enrichment-guide (B): generic plant and hide sections that fit any arboreal reptile.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Cleaning and refill schedule for the water dish. Belongs in crested-gecko-tank-setup-guide.
-- [ ] [TRULY MISSING] Gravid female and infertile egg care (Sep 8-15). Belongs in crested-gecko-health-issues-guide.
-- [ ] [TRULY MISSING] Sexing (Sep 8-15). Belongs in crested-gecko-handling-guide.
-- [ ] [TRULY MISSING] Grow-out enclosure size for juveniles (Sep 8-15). Belongs in crested-gecko-tank-setup-guide.
+- [x] [TRULY MISSING] Cleaning and refill schedule for the water dish. Belongs in crested-gecko-tank-setup-guide.
+- [x] [TRULY MISSING] Gravid female and infertile egg care (Sep 8-15). Belongs in crested-gecko-health-issues-guide.
+- [x] [TRULY MISSING] Sexing (Sep 8-15). Belongs in crested-gecko-handling-guide.
+- [x] [TRULY MISSING] Grow-out enclosure size for juveniles (Sep 8-15). Belongs in crested-gecko-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] crested-gecko-handling-guide 567, crested-gecko-cost-guide 432, crested-gecko-enrichment-guide 364.
+- [x] [SHORT] crested-gecko-handling-guide 567, crested-gecko-cost-guide 432, crested-gecko-enrichment-guide 364.
 
 ### Uromastyx (uromastyx)
 Status: open
@@ -459,19 +459,19 @@ Status: open
 - [x] [CONTRADICTION] UVB labeling: uromastyx-vs-bearded-dragon-guide "Ferguson Zone 4 (most intense)" vs uromastyx-tank-setup-guide, which gives a UVI number and never names a zone. Add the zone to the setup guide.
 
 **Low grades and thin pages**
-- [ ] [THIN] uromastyx-enrichment-guide (B+): restates the tank guide's heat and burrow requirements at length.
-- [ ] [THIN] uromastyx-cost-guide: "the table has two rows and then hands the rest to prose" (Sep 8-15).
+- [x] [THIN] uromastyx-enrichment-guide (B+): restates the tank guide's heat and burrow requirements at length.
+- [x] [THIN] uromastyx-cost-guide: "the table has two rows and then hands the rest to prose" (Sep 8-15).
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Quarantine before joining a collection: reptile-quarantine-guide (sidebar only). Add an in-body link where cohousing comes up.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Sexing and managing a pair or cohabiting animals. Belongs in uromastyx-handling-guide.
-- [ ] [TRULY MISSING] Brumation logistics: how to cool, whether to feed. Belongs in uromastyx-health-issues-guide or the feeding guide.
-- [ ] [TRULY MISSING] Hatchling housing and cleaning cadence (Sep 8-15). Belongs in uromastyx-tank-setup-guide.
+- [x] [TRULY MISSING] Sexing and managing a pair or cohabiting animals. Belongs in uromastyx-handling-guide.
+- [x] [TRULY MISSING] Brumation logistics: how to cool, whether to feed. Belongs in uromastyx-health-issues-guide or the feeding guide.
+- [x] [TRULY MISSING] Hatchling housing and cleaning cadence (Sep 8-15). Belongs in uromastyx-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] uromastyx-handling-guide 346, uromastyx-cost-guide 464, uromastyx-tank-setup-guide 492.
+- [x] [SHORT] uromastyx-handling-guide 346, uromastyx-cost-guide 464, uromastyx-tank-setup-guide 492.
 
 ### Fire skink (fire-skink)
 Status: open
@@ -481,21 +481,21 @@ Status: open
 - [x] [CONTRADICTION] Temperament (framing): encyclopedia "most become confident enough to feed from tongs" vs fire-skink-handling-guide "even settled fire skinks tend to stay squirmy and quick". Add a clause separating tong feeding from handling.
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] fire-skink-cost-guide (B-), for the thermostat problem above.
-- [ ] [THIN] fire-skink-enrichment-guide (B+): borrowed blue-tongue study. The blue-tongue comparison also appears in cost, handling, health and tank setup; trim.
+- [x] [LOW GRADE] fire-skink-cost-guide (B-), for the thermostat problem above.
+- [x] [THIN] fire-skink-enrichment-guide (B+): borrowed blue-tongue study. The blue-tongue comparison also appears in cost, handling, health and tank setup; trim.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Why a bulb needs a dimming controller and how to pick wattage: reptile-heating-thermostats-guide (body-linked). The specific bulb wattage is truly missing (below).
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Basking bulb wattage for the 36x18x18 build. Belongs in fire-skink-tank-setup-guide.
-- [ ] [TRULY MISSING] Sexing and breeding. Belongs in fire-skink-handling-guide.
-- [ ] [TRULY MISSING] Whether females can be group housed, and how. Belongs in fire-skink-enrichment-guide.
-- [ ] [TRULY MISSING] First aid for a dropped tail (Sep 8-15). Belongs in fire-skink-health-issues-guide.
-- [ ] [TRULY MISSING] Substrate volume to buy (topsoil and sand quantities) (Sep 8-15). Belongs in fire-skink-cost-guide.
+- [x] [TRULY MISSING] Basking bulb wattage for the 36x18x18 build. Belongs in fire-skink-tank-setup-guide.
+- [x] [TRULY MISSING] Sexing and breeding. Belongs in fire-skink-handling-guide.
+- [x] [TRULY MISSING] Whether females can be group housed, and how. Belongs in fire-skink-enrichment-guide.
+- [x] [TRULY MISSING] First aid for a dropped tail (Sep 8-15). Belongs in fire-skink-health-issues-guide.
+- [x] [TRULY MISSING] Substrate volume to buy (topsoil and sand quantities) (Sep 8-15). Belongs in fire-skink-cost-guide.
 
 **Short pages**
-- [ ] [SHORT] fire-skink-handling-guide 377, fire-skink-health-issues-guide 432.
+- [x] [SHORT] fire-skink-handling-guide 377, fire-skink-health-issues-guide 432.
 
 ### African fat-tailed gecko (african-fat-tail)
 Status: open
@@ -505,17 +505,17 @@ Status: open
 - [x] [CONTRADICTION] Sand and impaction (framing): african-fat-tail-tank-setup-guide "tends to happen in geckos that are already unhealthy... not simply from naturalistic substrate" vs african-fat-tail-feeding-guide "can cause impaction if swallowed with prey". Give feeding the setup guide's narrower claim.
 
 **Low grades and thin pages**
-- [ ] [THIN] african-fat-tail-enrichment-guide (thin): one borrowed leopard gecko study plus a caveat.
-- [ ] [THIN] The leopard gecko comparison appears in cost, handling, health, tank setup and enrichment. Keep one or two.
+- [x] [THIN] african-fat-tail-enrichment-guide (thin): one borrowed leopard gecko study plus a caveat.
+- [x] [THIN] The leopard gecko comparison appears in cost, handling, health, tank setup and enrichment. Keep one or two.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Sexing. Belongs in african-fat-tail-handling-guide.
-- [ ] [TRULY MISSING] A decision on cohabitation and males (Sep 8-15). Belongs in african-fat-tail-enrichment-guide.
-- [ ] [TRULY MISSING] Spot-clean and full clean schedule. Belongs in african-fat-tail-tank-setup-guide.
-- [ ] [TRULY MISSING] Hygrometer and scale missing from the cost table (Sep 8-15). Belongs in african-fat-tail-cost-guide.
+- [x] [TRULY MISSING] Sexing. Belongs in african-fat-tail-handling-guide.
+- [x] [TRULY MISSING] A decision on cohabitation and males (Sep 8-15). Belongs in african-fat-tail-enrichment-guide.
+- [x] [TRULY MISSING] Spot-clean and full clean schedule. Belongs in african-fat-tail-tank-setup-guide.
+- [x] [TRULY MISSING] Hygrometer and scale missing from the cost table (Sep 8-15). Belongs in african-fat-tail-cost-guide.
 
 **Short pages**
-- [ ] [SHORT] african-fat-tail-handling-guide 363, african-fat-tail-health-issues-guide 504, african-fat-tail-cost-guide 453, african-fat-tail-enrichment-guide 546.
+- [x] [SHORT] african-fat-tail-handling-guide 363, african-fat-tail-health-issues-guide 504, african-fat-tail-cost-guide 453, african-fat-tail-enrichment-guide 546.
 
 ### California kingsnake (california-kingsnake)
 Status: open
@@ -525,20 +525,20 @@ Status: open
 - [x] [CONTRADICTION] Feeding interval: hub "Hatchlings and juveniles every 5 to 7 days" vs california-kingsnake-feeding-guide table hatchling 5 to 6, juvenile 5 to 7. Split the hub row.
 
 **Low grades and thin pages**
-- [ ] [THIN] The corn snake comparison appears in nearly every deep dive, and the solo-housing paragraph is rewritten seven times. Trim both.
-- [ ] [THIN] Encyclopedia graded B. Low priority.
+- [x] [THIN] The corn snake comparison appears in nearly every deep dive, and the solo-housing paragraph is rewritten seven times. Trim both.
+- [x] [THIN] Encyclopedia graded B. Low priority.
 
 **Gaps: covered, not linked**
 - [x] [COVERED, NOT LINKED] Winter cooling (Sep 8-15): snake-brumation-guide covers whether a pet snake needs brumation and names kingsnakes. Wire it (Session 0) and add one kingsnake sentence with an in-body link in california-kingsnake-feeding-guide where winter appetite comes up.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Juvenile enclosure step between the 20 gallon hatchling tank and the 48x24x24 adult. Belongs in california-kingsnake-tank-setup-guide.
-- [ ] [TRULY MISSING] Vetting a breeder and confirming a pure captive-bred kingsnake. Belongs in california-kingsnake-cost-guide.
-- [ ] [TRULY MISSING] Temperature and humidity numbers and a food-refusal threshold in the health guide (Sep 8-15). Belongs in california-kingsnake-health-issues-guide.
-- [ ] [TRULY MISSING] Hatchling temperatures and hygrometer placement (Sep 8-15). Belongs in california-kingsnake-tank-setup-guide.
+- [x] [TRULY MISSING] Juvenile enclosure step between the 20 gallon hatchling tank and the 48x24x24 adult. Belongs in california-kingsnake-tank-setup-guide.
+- [x] [TRULY MISSING] Vetting a breeder and confirming a pure captive-bred kingsnake. Belongs in california-kingsnake-cost-guide.
+- [x] [TRULY MISSING] Temperature and humidity numbers and a food-refusal threshold in the health guide (Sep 8-15). Belongs in california-kingsnake-health-issues-guide.
+- [x] [TRULY MISSING] Hatchling temperatures and hygrometer placement (Sep 8-15). Belongs in california-kingsnake-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] california-kingsnake-health-issues-guide 410, california-kingsnake-cost-guide 437, california-kingsnake-tank-setup-guide 577, california-kingsnake-enrichment-guide 520.
+- [x] [SHORT] california-kingsnake-health-issues-guide 410, california-kingsnake-cost-guide 437, california-kingsnake-tank-setup-guide 577, california-kingsnake-enrichment-guide 520.
 
 ### Rosy boa (rosy-boa)
 Status: open
@@ -548,8 +548,8 @@ Status: open
 - [x] [CONTRADICTION] Enclosure size: rosy-boa-enrichment-guide argues against the 20 gallon figure in rosy-boa-tank-setup-guide using two borrowed studies (Sep 8-15 and Sep 24). Reconcile or frame 20 gallons as a floor.
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] rosy-boa-enrichment-guide (B): see the size point above.
-- [ ] [THIN] rosy-boa-handling-guide (B+): about a third is boa constrictor comparison, which also appears in five of six deep dives.
+- [x] [LOW GRADE] rosy-boa-enrichment-guide (B): see the size point above.
+- [x] [THIN] rosy-boa-handling-guide (B+): about a third is boa constrictor comparison, which also appears in five of six deep dives.
 
 **Doubted claims**
 - [x] [DOUBTED] Every FAQ repeats the same numbers in the same order across pages, "what a templated content system produces". Vary or trim the FAQs.
@@ -558,12 +558,12 @@ Status: open
 - [x] [COVERED, NOT LINKED] UVB yes or no: uvb-lighting-complete-guide says low-output UVB is now advised for nocturnal and crepuscular species and puts snakes in Zones 1 to 2. Add uvb-lighting-complete-guide to RELATED_ARTICLES['rosy-boa'] and one rosy boa sentence with an in-body link in the lighting section of rosy-boa-tank-setup-guide.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Substrate depth in inches (or a starting fill in cubic feet). Belongs in rosy-boa-tank-setup-guide.
-- [ ] [TRULY MISSING] How often to handle (Sep 8-15). Belongs in rosy-boa-handling-guide.
-- [ ] [TRULY MISSING] Photoperiod (Sep 8-15). Belongs in rosy-boa-tank-setup-guide.
+- [x] [TRULY MISSING] Substrate depth in inches (or a starting fill in cubic feet). Belongs in rosy-boa-tank-setup-guide.
+- [x] [TRULY MISSING] How often to handle (Sep 8-15). Belongs in rosy-boa-handling-guide.
+- [x] [TRULY MISSING] Photoperiod (Sep 8-15). Belongs in rosy-boa-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] rosy-boa-handling-guide 514.
+- [x] [SHORT] rosy-boa-handling-guide 514.
 
 ### Red-eared slider (red-eared-slider)
 Status: open
@@ -573,7 +573,7 @@ Status: open
 - [x] [CONTRADICTION] Adult size: encyclopedia "5-12 inches (13-30 cm)" vs red-eared-slider-tank-setup-guide averages of 25.4 cm females and 17.78 cm males. Align the encyclopedia.
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] red-eared-slider-enrichment-guide (B, filler): about half re-runs the tank guide's water volume, filtration and basking advice. Keep the colored-objects study and new material.
+- [x] [LOW GRADE] red-eared-slider-enrichment-guide (B, filler): about half re-runs the tank guide's water volume, filtration and basking advice. Keep the colored-objects study and new material.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Cycling and ammonia and nitrite targets: aquarium-cycling-guide (body-linked; sidebar in Session 0). The buy list's test kit has no target values; add "ammonia and nitrite at zero" with the link.
@@ -583,11 +583,11 @@ Status: open
 - [x] [COVERED, NOT LINKED] Filter media swap and deep clean (Sep 8-15): aquarium-filtration-guide "Never Replace All Your Media at Once". Add aquarium-filtration-guide to RELATED_ARTICLES['red-eared-slider'] and a sentence with an in-body link in red-eared-slider-tank-setup-guide.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Introduction steps and signs to separate when adding a second slider. Belongs in red-eared-slider-handling-guide.
-- [ ] [TRULY MISSING] The tank setup guide's nesting option and the feeding guide's egg binding section never mention each other; add the egg-binding reason to the nesting line in text (sibling pages, so no link).
+- [x] [TRULY MISSING] Introduction steps and signs to separate when adding a second slider. Belongs in red-eared-slider-handling-guide.
+- [x] [TRULY MISSING] The tank setup guide's nesting option and the feeding guide's egg binding section never mention each other; add the egg-binding reason to the nesting line in text (sibling pages, so no link).
 
 **Short pages**
-- [ ] [SHORT] red-eared-slider-handling-guide 466.
+- [x] [SHORT] red-eared-slider-handling-guide 466.
 
 ### Sulcata tortoise (sulcata-tortoise)
 Status: open
@@ -597,19 +597,19 @@ Status: open
 - [x] [CONTRADICTION] Pyramiding (uneven detail): sulcata-tortoise-feeding-guide FAQ adds that Wiesner and Iben's method "has itself been criticized"; sulcata-tortoise-health-issues-guide, which carries the main discussion, does not. Move the caveat into the health guide.
 
 **Low grades and thin pages**
-- [ ] [THIN] sulcata-tortoise-enrichment-guide (A-, honestly thin on native research). Low priority.
+- [x] [THIN] sulcata-tortoise-enrichment-guide (A-, honestly thin on native research). Low priority.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] UVB replacement: uvb-lighting-complete-guide says replace every 12 months (body-linked from the tank setup guide, which the reader could not find in the set; sidebar in Session 0).
 - [x] [COVERED+LINKED] Six month quarantine reasoning: chelonian-herpesvirus-quarantine-guide (sidebar). The hub states six months with no why; add a clause and link.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] UVB bulb specifics for a sulcata (tube strength, distance). Belongs in sulcata-tortoise-tank-setup-guide.
-- [ ] [TRULY MISSING] Emergency vet cost figure (Sep 8-15). Belongs in sulcata-tortoise-cost-guide.
-- [ ] [TRULY MISSING] How to move or transport an adult (Sep 8-15). Belongs in sulcata-tortoise-handling-guide.
+- [x] [TRULY MISSING] UVB bulb specifics for a sulcata (tube strength, distance). Belongs in sulcata-tortoise-tank-setup-guide.
+- [x] [TRULY MISSING] Emergency vet cost figure (Sep 8-15). Belongs in sulcata-tortoise-cost-guide.
+- [x] [TRULY MISSING] How to move or transport an adult (Sep 8-15). Belongs in sulcata-tortoise-handling-guide.
 
 **Short pages**
-- [ ] [SHORT] sulcata-tortoise-handling-guide 524.
+- [x] [SHORT] sulcata-tortoise-handling-guide 524.
 
 ### Argentine tegu (tegu)
 Status: open
@@ -622,12 +622,12 @@ Status: open
 - [x] [DOUBTED] argentine-tegu-feeding-guide sends brumation readers to tortoise-brumation-guide with a caveat. Add a short tegu bridging sentence on what differs.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Sexing. Belongs in argentine-tegu-handling-guide.
-- [ ] [TRULY MISSING] Maintenance and spot-cleaning of 12 to 18 inches of burrow substrate. Belongs in argentine-tegu-tank-setup-guide.
-- [ ] [TRULY MISSING] Price of the 8x4x4 adult build (Sep 8-15). Belongs in argentine-tegu-cost-guide.
+- [x] [TRULY MISSING] Sexing. Belongs in argentine-tegu-handling-guide.
+- [x] [TRULY MISSING] Maintenance and spot-cleaning of 12 to 18 inches of burrow substrate. Belongs in argentine-tegu-tank-setup-guide.
+- [x] [TRULY MISSING] Price of the 8x4x4 adult build (Sep 8-15). Belongs in argentine-tegu-cost-guide.
 
 **Short pages**
-- [ ] [SHORT] argentine-tegu-health-issues-guide 497.
+- [x] [SHORT] argentine-tegu-health-issues-guide 497.
 
 ### Bearded dragon (bearded-dragon)
 Status: open
@@ -639,11 +639,11 @@ Status: open
 - [x] [COVERED+LINKED] Handling clock vs quarantine clock: reptile-quarantine-guide (sidebar). Add one sentence tying the 7 to 14 day settle-in to the 3 to 6 month quarantine in bearded-dragon-handling-guide.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] How to find and vet a reptile-experienced vet. Belongs in bearded-dragon-health-issues-guide (or a shared vet guide).
-- [ ] [TRULY MISSING] Where to buy (breeder, store, rescue) and health checks before buying. Belongs in bearded-dragon-cost-guide.
+- [x] [TRULY MISSING] How to find and vet a reptile-experienced vet. Belongs in bearded-dragon-health-issues-guide (or a shared vet guide).
+- [x] [TRULY MISSING] Where to buy (breeder, store, rescue) and health checks before buying. Belongs in bearded-dragon-cost-guide.
 
 **Short pages**
-- [ ] [SHORT] bearded-dragon-handling-guide 566.
+- [x] [SHORT] bearded-dragon-handling-guide 566.
 
 ### Jackson's chameleon (jacksons-chameleon)
 Status: open
@@ -652,7 +652,7 @@ Status: open
 - [x] [CONTRADICTION] Ambient temperature: jacksons-chameleon-tank-setup-guide "68-75°F" vs jacksons-chameleon-feeding-guide "lives at 70-80°F". Use one band.
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] jacksons-chameleon-handling-guide (B, thin): repeats the live-birth fact already in the encyclopedia and cost guide; the Sep 8-15 run also called it "thin on actual technique".
+- [x] [LOW GRADE] jacksons-chameleon-handling-guide (B, thin): repeats the live-birth fact already in the encyclopedia and cost guide; the Sep 8-15 run also called it "thin on actual technique".
 
 **Doubted claims**
 - [x] [DOUBTED] jacksons-chameleon-tank-setup-guide: humidity "day-low, night-high" is phrased loosely enough to be unfalsifiable. Give the day and night numbers.
@@ -662,13 +662,13 @@ Status: open
 - [x] [COVERED+LINKED] Quarantine walkthrough: reptile-quarantine-guide (sidebar). The hub has a one-line "day one" item; add an in-body link there.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Care of the 5 to 30 live-born young: housing, feeding, age to rehome. Belongs in jacksons-chameleon-health-issues-guide or feeding guide.
-- [ ] [TRULY MISSING] Gravid female, birth and dystocia section; respiratory infection beyond a passing line (Sep 8-15). Belongs in jacksons-chameleon-health-issues-guide.
-- [ ] [TRULY MISSING] Sourcing a captive-bred animal, and how a legal Hawaiian animal reaches the mainland trade (Sep 8-15). Belongs in jacksons-chameleon-cost-guide.
-- [ ] [TRULY MISSING] UVB distance from the branch and how to hold a room at 68 to 75°F (Sep 8-15). Belongs in jacksons-chameleon-tank-setup-guide.
+- [x] [TRULY MISSING] Care of the 5 to 30 live-born young: housing, feeding, age to rehome. Belongs in jacksons-chameleon-health-issues-guide or feeding guide.
+- [x] [TRULY MISSING] Gravid female, birth and dystocia section; respiratory infection beyond a passing line (Sep 8-15). Belongs in jacksons-chameleon-health-issues-guide.
+- [x] [TRULY MISSING] Sourcing a captive-bred animal, and how a legal Hawaiian animal reaches the mainland trade (Sep 8-15). Belongs in jacksons-chameleon-cost-guide.
+- [x] [TRULY MISSING] UVB distance from the branch and how to hold a room at 68 to 75°F (Sep 8-15). Belongs in jacksons-chameleon-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] jacksons-chameleon-handling-guide 424, jacksons-chameleon-health-issues-guide 405, jacksons-chameleon-cost-guide 543.
+- [x] [SHORT] jacksons-chameleon-handling-guide 424, jacksons-chameleon-health-issues-guide 405, jacksons-chameleon-cost-guide 543.
 
 ### Tokay gecko (tokay-gecko)
 Status: open
@@ -683,10 +683,10 @@ Status: open
 - [x] [COVERED+LINKED] Gut-load window: gut-loading-feeder-insects-guide (body-linked; sidebar in Session 0).
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Pair introduction timeline and when to separate. Belongs in tokay-gecko-enrichment-guide.
+- [x] [TRULY MISSING] Pair introduction timeline and when to separate. Belongs in tokay-gecko-enrichment-guide.
 
 **Short pages**
-- [ ] [SHORT] tokay-gecko-cost-guide 430, tokay-gecko-tank-setup-guide 545.
+- [x] [SHORT] tokay-gecko-cost-guide 430, tokay-gecko-tank-setup-guide 545.
 
 ### Hognose snake (hognose-snake)
 Status: open
@@ -698,11 +698,11 @@ Status: open
 - [x] [COVERED, NOT LINKED] Brumation: raised twice (feeding guide and hub) as a reason for appetite loss, never explained. snake-brumation-guide covers whether a pet snake needs it and the abort signs. Add it to RELATED_ARTICLES['hognose-snake'] and one hognose sentence with an in-body link in hognose-snake-feeding-guide. Note the guide lacks a "normal slowdown vs illness" checklist (non-species section).
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Hatchling housing and cleaning cadence (Sep 8-15). Belongs in hognose-snake-tank-setup-guide.
-- [ ] [TRULY MISSING] Handling technique: support, lift, session length (Sep 8-15, verified). Belongs in hognose-snake-handling-guide.
+- [x] [TRULY MISSING] Hatchling housing and cleaning cadence (Sep 8-15). Belongs in hognose-snake-tank-setup-guide.
+- [x] [TRULY MISSING] Handling technique: support, lift, session length (Sep 8-15, verified). Belongs in hognose-snake-handling-guide.
 
 **Short pages**
-- [ ] [SHORT] hognose-snake-health-issues-guide 541.
+- [x] [SHORT] hognose-snake-health-issues-guide 541.
 
 ### Milk snake (milk-snake)
 Status: open
@@ -718,13 +718,13 @@ Status: open
 - [x] [COVERED, NOT LINKED] Brumation vs winter slowdown: snake-brumation-guide. Add it to RELATED_ARTICLES['milk-snake'] and a sentence with an in-body link in milk-snake-feeding-guide's winter slowdown passage.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] What to do about musking or nipping in a settling juvenile. Belongs in milk-snake-handling-guide.
-- [ ] [TRULY MISSING] Pick-up method, session length, first week (Sep 8-15, verified). Belongs in milk-snake-handling-guide.
-- [ ] [TRULY MISSING] Cleaning cadence (Sep 8-15). Belongs in milk-snake-tank-setup-guide.
-- [ ] [TRULY MISSING] Choosing and buying (Sep 8-15). Belongs in milk-snake-cost-guide.
+- [x] [TRULY MISSING] What to do about musking or nipping in a settling juvenile. Belongs in milk-snake-handling-guide.
+- [x] [TRULY MISSING] Pick-up method, session length, first week (Sep 8-15, verified). Belongs in milk-snake-handling-guide.
+- [x] [TRULY MISSING] Cleaning cadence (Sep 8-15). Belongs in milk-snake-tank-setup-guide.
+- [x] [TRULY MISSING] Choosing and buying (Sep 8-15). Belongs in milk-snake-cost-guide.
 
 **Short pages**
-- [ ] [SHORT] milk-snake-handling-guide 539, milk-snake-health-issues-guide 465, milk-snake-cost-guide 535, milk-snake-tank-setup-guide 524, milk-snake-enrichment-guide 513.
+- [x] [SHORT] milk-snake-handling-guide 539, milk-snake-health-issues-guide 465, milk-snake-cost-guide 535, milk-snake-tank-setup-guide 524, milk-snake-enrichment-guide 513.
 
 ### Corn snake (corn-snake)
 Status: open
@@ -733,16 +733,16 @@ Status: open
 - [x] [CONTRADICTION] Humidity: corn-snake-tank-setup-guide gives "40 to 60%" with a flagged minority "65 to 75%" vs corn-snake-vs-hognose-snake-guide flat "40-60%". Carry the caveat into the comparison table.
 
 **Low grades and thin pages**
-- [ ] [THIN] corn-snake-vs-hognose-snake-guide (B+), for the flattening above.
+- [x] [THIN] corn-snake-vs-hognose-snake-guide (B+), for the flattening above.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Quarantine setup steps: reptile-quarantine-guide (sidebar). The hub gives duration only; add an in-body link.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] How to verify an enclosure is escape-proof (Sep 8-15). Belongs in corn-snake-handling-guide or tank setup.
+- [x] [TRULY MISSING] How to verify an enclosure is escape-proof (Sep 8-15). Belongs in corn-snake-handling-guide or tank setup.
 
 **Short pages**
-- [ ] [SHORT] corn-snake-handling-guide 546, corn-snake-health-issues-guide 529.
+- [x] [SHORT] corn-snake-handling-guide 546, corn-snake-health-issues-guide 529.
 
 ### Ball python (ball-python)
 Status: open
@@ -751,12 +751,12 @@ Status: open
 - [x] [CONTRADICTION] Refusal causes (framing): ball-python-feeding-guide lists breeding season (October to March) first vs ball-python-health-issues-guide, which never mentions the season. Use one ordered list on both.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] What to do after an escape (Sep 8-15, verified). Belongs in ball-python-handling-guide.
-- [ ] [TRULY MISSING] Cleaning cadence and a safe disinfectant (Sep 8-15). Belongs in ball-python-tank-setup-guide.
+- [x] [TRULY MISSING] What to do after an escape (Sep 8-15, verified). Belongs in ball-python-handling-guide.
+- [x] [TRULY MISSING] Cleaning cadence and a safe disinfectant (Sep 8-15). Belongs in ball-python-tank-setup-guide.
 - Resolved, no action: "10 Surprising Ball Python Facts" exists at content/fun-facts/10-surprising-ball-python-facts.mdx; the reader only lacked it in the set.
 
 **Short pages**
-- [ ] [SHORT] ball-python-cost-guide 535.
+- [x] [SHORT] ball-python-cost-guide 535.
 
 ### Blue-tongued skink (blue-tongue-skink)
 Status: open
@@ -768,12 +768,12 @@ Status: open
 - [x] [COVERED+LINKED] Heat bulb wattage for a 4x2x2 (Sep 8-15): reptile-heating-thermostats-guide gives the method (body-linked); add the starting wattage.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Body condition reference (weight and shape by life stage), which the feeding guide tells readers to use; adult weight figure (Sep 8-15). Belongs in blue-tongue-skink-health-issues-guide.
-- [ ] [TRULY MISSING] Brumation temperatures (Sep 8-15). Belongs in blue-tongue-skink-health-issues-guide.
-- [ ] [TRULY MISSING] Cleaning cadence (Sep 8-15). Belongs in blue-tongue-skink-tank-setup-guide.
+- [x] [TRULY MISSING] Body condition reference (weight and shape by life stage), which the feeding guide tells readers to use; adult weight figure (Sep 8-15). Belongs in blue-tongue-skink-health-issues-guide. Wave 2: adult weight (283 to 510 g, Smithsonian) and shape signs added; no source gives weights by life stage.
+- [x] [TRULY MISSING] Brumation temperatures (Sep 8-15). Belongs in blue-tongue-skink-health-issues-guide.
+- [x] [TRULY MISSING] Cleaning cadence (Sep 8-15). Belongs in blue-tongue-skink-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] blue-tongue-skink-health-issues-guide 544.
+- [x] [SHORT] blue-tongue-skink-health-issues-guide 544.
 
 ### Green anole (green-anole)
 Status: open
@@ -785,15 +785,15 @@ Status: open
 - [x] [DOUBTED] green-anole-cost-guide: escaped internal note "a genuinely new addition to the gear we recommend" (Sep 8-15, not rechecked). Grep and remove.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Sexing (the dewlap is display, not identification). Belongs in green-anole-handling-guide.
-- [ ] [TRULY MISSING] Spot-clean and substrate refresh schedule. Belongs in green-anole-tank-setup-guide.
-- [ ] [TRULY MISSING] Named live plant species. Belongs in green-anole-tank-setup-guide.
-- [ ] [TRULY MISSING] Egg laying (Sep 8-15, verified). Belongs in green-anole-health-issues-guide.
-- [ ] [TRULY MISSING] How to catch or restrain one (Sep 8-15, verified). Belongs in green-anole-handling-guide.
-- [ ] [TRULY MISSING] green-anole-enrichment-guide says keep a shallow dish "and do not count on it" without the reason (drowning in deep dishes, stated in the feeding guide). Add the reason in text (sibling pages, no link).
+- [x] [TRULY MISSING] Sexing (the dewlap is display, not identification). Belongs in green-anole-handling-guide.
+- [x] [TRULY MISSING] Spot-clean and substrate refresh schedule. Belongs in green-anole-tank-setup-guide.
+- [x] [TRULY MISSING] Named live plant species. Belongs in green-anole-tank-setup-guide.
+- [x] [TRULY MISSING] Egg laying (Sep 8-15, verified). Belongs in green-anole-health-issues-guide.
+- [x] [TRULY MISSING] How to catch or restrain one (Sep 8-15, verified). Belongs in green-anole-handling-guide.
+- [x] [TRULY MISSING] green-anole-enrichment-guide says keep a shallow dish "and do not count on it" without the reason (drowning in deep dishes, stated in the feeding guide). Add the reason in text (sibling pages, no link).
 
 **Short pages**
-- [ ] [SHORT] green-anole-handling-guide 490, green-anole-health-issues-guide 399, green-anole-cost-guide 517.
+- [x] [SHORT] green-anole-handling-guide 490, green-anole-health-issues-guide 399, green-anole-cost-guide 517.
 
 ### Russian tortoise (russian-tortoise)
 Status: open
@@ -802,13 +802,13 @@ Status: open
 - [x] [CONTRADICTION] Pyramiding cause (framing): russian-tortoise-feeding-guide "long attributed to" fast growth on protein vs russian-tortoise-health-issues-guide, VCA "not completely understood". Give the feeding guide the health guide's hedge.
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] russian-tortoise-handling-guide (B, thin; 285 words, the shortest article on the site): restates "observation pet" and the sulcata comparison. Add ram and bite injury between housed females and an escape-proofing checklist.
+- [x] [LOW GRADE] russian-tortoise-handling-guide (B, thin; 285 words, the shortest article on the site): restates "observation pet" and the sulcata comparison. Add ram and bite injury between housed females and an escape-proofing checklist. Wave 2: no source found for female ramming or biting; page covers female bullying stress, male fights and courtship biting instead.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Soak depth, temperature and minutes: tortoise-soaking-guide (sidebar). The hub gives frequency only.
 
 **Short pages**
-- [ ] [SHORT] russian-tortoise-handling-guide 285, russian-tortoise-enrichment-guide 451.
+- [x] [SHORT] russian-tortoise-handling-guide 285, russian-tortoise-enrichment-guide 451.
 
 ### Ackie monitor (ackie-monitor)
 Status: open
@@ -817,22 +817,22 @@ Status: open
 - [x] [ERROR] ackie-monitor-handling-guide lists its two internal links (bearded dragon, blue-tongued skink) twice each. Remove the duplicates.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Sexing and breeding (the feeding guide already discusses reproductive females). Belongs in ackie-monitor-handling-guide or health guide.
-- [ ] [TRULY MISSING] Temperature target for the humid dig zone. Belongs in ackie-monitor-tank-setup-guide.
-- [ ] [TRULY MISSING] How to build a Retes stack. Belongs in ackie-monitor-tank-setup-guide.
-- [ ] [TRULY MISSING] Session frequency for target training and puzzle feeding. Belongs in ackie-monitor-enrichment-guide.
-- [ ] [TRULY MISSING] Ambient humidity number and bulb wattage in the text (Sep 8-15). Belongs in ackie-monitor-tank-setup-guide.
-- [ ] [TRULY MISSING] Target adult weight for the weekly weigh-in (Sep 8-15). Belongs in ackie-monitor-health-issues-guide.
-- [ ] [TRULY MISSING] Breeder vetting (Sep 8-15). Belongs in ackie-monitor-cost-guide.
+- [x] [TRULY MISSING] Sexing and breeding (the feeding guide already discusses reproductive females). Belongs in ackie-monitor-handling-guide or health guide.
+- [x] [TRULY MISSING] Temperature target for the humid dig zone. Belongs in ackie-monitor-tank-setup-guide.
+- [x] [TRULY MISSING] How to build a Retes stack. Belongs in ackie-monitor-tank-setup-guide.
+- [x] [TRULY MISSING] Session frequency for target training and puzzle feeding. Belongs in ackie-monitor-enrichment-guide.
+- [x] [TRULY MISSING] Ambient humidity number and bulb wattage in the text (Sep 8-15). Belongs in ackie-monitor-tank-setup-guide.
+- [x] [TRULY MISSING] Target adult weight for the weekly weigh-in (Sep 8-15). Belongs in ackie-monitor-health-issues-guide.
+- [x] [TRULY MISSING] Breeder vetting (Sep 8-15). Belongs in ackie-monitor-cost-guide.
 
 **Short pages**
-- [ ] [SHORT] ackie-monitor-health-issues-guide 494, ackie-monitor-cost-guide 581.
+- [x] [SHORT] ackie-monitor-health-issues-guide 494, ackie-monitor-cost-guide 581.
 
 ### Boa constrictor (boa-constrictor)
 Status: open
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] boa-constrictor-health-issues-guide (B): zero citations and every section ends on the same "always see a vet" line.
+- [x] [LOW GRADE] boa-constrictor-health-issues-guide (B): zero citations and every section ends on the same "always see a vet" line.
 
 **Doubted claims**
 - [x] [DOUBTED] Same page: no sources at all next to a handling guide with five named sources. Add 3 to 5.
@@ -841,12 +841,12 @@ Status: open
 - [x] [COVERED, NOT LINKED] UVB type and strength: uvb-lighting-complete-guide (Ferguson zones, low UVB for snakes). Add it to RELATED_ARTICLES['boa-constrictor'] and a boa sentence with an in-body link in boa-constrictor-tank-setup-guide.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Locks or latches for an animal this strong. Belongs in boa-constrictor-tank-setup-guide.
-- [ ] [TRULY MISSING] What to do when a healthy adult refuses a meal (also Sep 8-15). Belongs in boa-constrictor-feeding-guide.
-- [ ] [TRULY MISSING] A checklist for a "reputable breeder", the health guide's whole IBD prevention plan; mention the cost guide's lineage-fraud warning in the same passage (sibling, in text). Belongs in boa-constrictor-health-issues-guide.
+- [x] [TRULY MISSING] Locks or latches for an animal this strong. Belongs in boa-constrictor-tank-setup-guide.
+- [x] [TRULY MISSING] What to do when a healthy adult refuses a meal (also Sep 8-15). Belongs in boa-constrictor-feeding-guide.
+- [x] [TRULY MISSING] A checklist for a "reputable breeder", the health guide's whole IBD prevention plan; mention the cost guide's lineage-fraud warning in the same passage (sibling, in text). Belongs in boa-constrictor-health-issues-guide.
 
 **Short pages**
-- [ ] [SHORT] boa-constrictor-health-issues-guide 447, boa-constrictor-feeding-guide 491.
+- [x] [SHORT] boa-constrictor-health-issues-guide 447, boa-constrictor-feeding-guide 491.
 
 ### Leopard gecko (leopard-gecko)
 Status: open
@@ -858,104 +858,104 @@ Status: open
 - [x] [COVERED+LINKED] What the first fecal test screens for: reptile-quarantine-guide "Vet Workup" (coccidia, protozoa, intestinal worms) (body-linked). Add one line in the health guide.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Screen top gap tolerance. Belongs in leopard-gecko-tank-setup-guide.
-- [ ] [TRULY MISSING] Egg-binding prevention and a lay box (Sep 8-15, verified). Belongs in leopard-gecko-health-issues-guide.
-- [ ] [TRULY MISSING] Respiratory infection section (Sep 8-15, verified). Belongs in leopard-gecko-health-issues-guide.
+- [ ] [TRULY MISSING] Screen top gap tolerance. Belongs in leopard-gecko-tank-setup-guide. Wave 2: no vet, university or zoo source gives a gap number; left out.
+- [x] [TRULY MISSING] Egg-binding prevention and a lay box (Sep 8-15, verified). Belongs in leopard-gecko-health-issues-guide.
+- [x] [TRULY MISSING] Respiratory infection section (Sep 8-15, verified). Belongs in leopard-gecko-health-issues-guide.
 
 **Short pages**
-- [ ] [SHORT] leopard-gecko-handling-guide 586, leopard-gecko-cost-guide 489.
+- [x] [SHORT] leopard-gecko-handling-guide 586, leopard-gecko-cost-guide 489.
 
 ### Savannah monitor (savannah-monitor)
 Status: open
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] savannah-monitor-health-issues-guide (NG, filler risk: fourth page to lead with obesity; Sep 8-15 C+ "names four problems and says see a vet").
+- [x] [LOW GRADE] savannah-monitor-health-issues-guide (NG, filler risk: fourth page to lead with obesity; Sep 8-15 C+ "names four problems and says see a vet").
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Night heat: reptile-heating-thermostats-guide "Night Heat Is a Different Setup" (heat mat, ceramic emitter or deep heat projector, no light) (sidebar). savannah-monitor-tank-setup-guide bans ceramic emitters as the primary basking source and never says what holds 70 to 75°F at night; say which it uses, with an in-body link.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Build plan and cost for the 8x4x4 enclosure (also Sep 8-15). Belongs in savannah-monitor-cost-guide.
-- [ ] [TRULY MISSING] Body condition numbers (Sep 8-15). Belongs in savannah-monitor-health-issues-guide.
-- [ ] [TRULY MISSING] Deep soil bed maintenance (Sep 8-15). Belongs in savannah-monitor-tank-setup-guide.
-- [ ] [TRULY MISSING] How to buy and finding a vet (Sep 8-15). Belongs in savannah-monitor-cost-guide and health guide.
+- [x] [TRULY MISSING] Build plan and cost for the 8x4x4 enclosure (also Sep 8-15). Belongs in savannah-monitor-cost-guide. Wave 2: build requirements written from sources; no source for a DIY build cost, so no dollar figure.
+- [x] [TRULY MISSING] Body condition numbers (Sep 8-15). Belongs in savannah-monitor-health-issues-guide.
+- [x] [TRULY MISSING] Deep soil bed maintenance (Sep 8-15). Belongs in savannah-monitor-tank-setup-guide.
+- [x] [TRULY MISSING] How to buy and finding a vet (Sep 8-15). Belongs in savannah-monitor-cost-guide and health guide.
 
 **Short pages**
-- [ ] [SHORT] savannah-monitor-health-issues-guide 423, savannah-monitor-cost-guide 550.
+- [x] [SHORT] savannah-monitor-health-issues-guide 423, savannah-monitor-cost-guide 550.
 
 ### Veiled chameleon (veiled-chameleon)
 Status: open
 
 **Low grades and thin pages**
-- [ ] [THIN] "Never recognize standing water" appears in the hub, tank setup, feeding, health and enrichment. Cut to three.
+- [x] [THIN] "Never recognize standing water" appears in the hub, tank setup, feeding, health and enrichment. Cut to three.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Dripper and misting settings for the 80 to 100% night target: chameleon-hydration-drippers-misters-fogging gives dripper runs (20 to 30 min, once or twice a day) and misting (3 to 5 min, 2 to 4 times a day) (body-linked). Add the night setting to veiled-chameleon-tank-setup-guide.
 - [x] [COVERED+LINKED] Quarantine before meeting another pet: reptile-quarantine-guide (sidebar). Move it into the hub's day-one flow.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] What to do with a clutch of infertile eggs. Belongs in veiled-chameleon-health-issues-guide.
-- [ ] [TRULY MISSING] Photoperiod and cleaning or drainage routine (Sep 8-15, verified). Belongs in veiled-chameleon-tank-setup-guide.
+- [x] [TRULY MISSING] What to do with a clutch of infertile eggs. Belongs in veiled-chameleon-health-issues-guide.
+- [x] [TRULY MISSING] Photoperiod and cleaning or drainage routine (Sep 8-15, verified). Belongs in veiled-chameleon-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] veiled-chameleon-handling-guide 560, veiled-chameleon-health-issues-guide 449.
+- [x] [SHORT] veiled-chameleon-handling-guide 560, veiled-chameleon-health-issues-guide 449.
 
 ### Mourning gecko (mourning-gecko)
 Status: open
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Whether adults need a standing water dish or misting is enough. Belongs in mourning-gecko-tank-setup-guide and the hub buy list.
-- [ ] [TRULY MISSING] Where separated hatchlings live and when they rejoin. Belongs in mourning-gecko-tank-setup-guide.
-- [ ] [TRULY MISSING] Egg and surplus-animal management (Sep 8-15, verified). Belongs in mourning-gecko-health-issues-guide.
-- [ ] [TRULY MISSING] Cleaning and cleanup-crew upkeep (Sep 8-15, verified). Belongs in mourning-gecko-tank-setup-guide.
-- [ ] [TRULY MISSING] The health guide's egg-binding section lacks the feeding guide's "swollen abdomen with straining" tell. Add it in text (sibling pages, no link).
+- [x] [TRULY MISSING] Whether adults need a standing water dish or misting is enough. Belongs in mourning-gecko-tank-setup-guide and the hub buy list.
+- [x] [TRULY MISSING] Where separated hatchlings live and when they rejoin. Belongs in mourning-gecko-tank-setup-guide.
+- [x] [TRULY MISSING] Egg and surplus-animal management (Sep 8-15, verified). Belongs in mourning-gecko-health-issues-guide.
+- [x] [TRULY MISSING] Cleaning and cleanup-crew upkeep (Sep 8-15, verified). Belongs in mourning-gecko-tank-setup-guide.
+- [x] [TRULY MISSING] The health guide's egg-binding section lacks the feeding guide's "swollen abdomen with straining" tell. Add it in text (sibling pages, no link).
 
 **Short pages**
-- [ ] [SHORT] mourning-gecko-health-issues-guide 439, mourning-gecko-tank-setup-guide 460, mourning-gecko-enrichment-guide 579.
+- [x] [SHORT] mourning-gecko-health-issues-guide 439, mourning-gecko-tank-setup-guide 460, mourning-gecko-enrichment-guide 579.
 
 ### Gargoyle gecko (gargoyle-gecko)
 Status: open
 
 **Low grades and thin pages**
-- [ ] [THIN] gargoyle-gecko-enrichment-guide (B+, honestly thin). The Sep 8-15 note that it "links no gargoyle sibling" is dropped: house rules forbid in-body sibling links.
+- [x] [THIN] gargoyle-gecko-enrichment-guide (B+, honestly thin). The Sep 8-15 note that it "links no gargoyle sibling" is dropped: house rules forbid in-body sibling links.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] UVB product example: uvb-lighting-complete-guide Zone 1 names low-output products (body-linked). Name one in the tank setup text next to "12-inch low-output T5".
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Breeding, sexing and egg incubation. Belongs in gargoyle-gecko-health-issues-guide or handling guide.
-- [ ] [TRULY MISSING] One plain sentence that pet-trade gargoyles are captive-bred only (the encyclopedia implies it). Belongs in gargoyle-gecko-cost-guide.
-- [ ] [TRULY MISSING] Cleanup crew quantity (Sep 8-15). Belongs in gargoyle-gecko-cost-guide.
+- [x] [TRULY MISSING] Breeding, sexing and egg incubation. Belongs in gargoyle-gecko-health-issues-guide or handling guide.
+- [x] [TRULY MISSING] One plain sentence that pet-trade gargoyles are captive-bred only (the encyclopedia implies it). Belongs in gargoyle-gecko-cost-guide.
+- [x] [TRULY MISSING] Cleanup crew quantity (Sep 8-15). Belongs in gargoyle-gecko-cost-guide.
 
 **Short pages**
-- [ ] [SHORT] gargoyle-gecko-handling-guide 503, gargoyle-gecko-enrichment-guide 513.
+- [x] [SHORT] gargoyle-gecko-handling-guide 503, gargoyle-gecko-enrichment-guide 513.
 
 ### Leaf-tailed gecko (leaf-tailed-gecko)
 Status: open
 
 **Low grades and thin pages**
-- [ ] [THIN] Encyclopedia graded B (background only). The "sheds in one clean piece, no sunken eyes" check appears in hub, tank setup and health; keep it in health.
+- [x] [THIN] Encyclopedia graded B (background only). The "sheds in one clean piece, no sunken eyes" check appears in hub, tank setup and health; keep it in health.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] How to identify which Uroplatus species you are buying and confirm it is captive-bred. Belongs in leaf-tailed-gecko-cost-guide.
-- [ ] [TRULY MISSING] Enclosure and humidity numbers for species other than the satanic leaf-tail. Belongs in leaf-tailed-gecko-tank-setup-guide.
+- [x] [TRULY MISSING] How to identify which Uroplatus species you are buying and confirm it is captive-bred. Belongs in leaf-tailed-gecko-cost-guide.
+- [x] [TRULY MISSING] Enclosure and humidity numbers for species other than the satanic leaf-tail. Belongs in leaf-tailed-gecko-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] leaf-tailed-gecko-handling-guide 435, leaf-tailed-gecko-health-issues-guide 455, leaf-tailed-gecko-cost-guide 490, leaf-tailed-gecko-enrichment-guide 566.
+- [x] [SHORT] leaf-tailed-gecko-handling-guide 435, leaf-tailed-gecko-health-issues-guide 455, leaf-tailed-gecko-cost-guide 490, leaf-tailed-gecko-enrichment-guide 566.
 
 ### Garter snake (garter-snake)
 Status: open
 
 **Low grades and thin pages**
-- [ ] [THIN] The thiamine mechanism is explained in full on the hub, health guide and feeding guide. Keep one full telling.
+- [x] [THIN] The thiamine mechanism is explained in full on the hub, health guide and feeding guide. Keep one full telling.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Ongoing cost split by diet type (fish and worm eater vs mouse eater). Belongs in garter-snake-cost-guide.
-- [ ] [TRULY MISSING] Wait-after-meal handling rule (Sep 8-15, verified). Belongs in garter-snake-handling-guide.
-- [ ] [TRULY MISSING] A decision on cohabitation, raised and never settled (Sep 8-15). Belongs in garter-snake-enrichment-guide.
+- [x] [TRULY MISSING] Ongoing cost split by diet type (fish and worm eater vs mouse eater). Belongs in garter-snake-cost-guide.
+- [x] [TRULY MISSING] Wait-after-meal handling rule (Sep 8-15, verified). Belongs in garter-snake-handling-guide.
+- [x] [TRULY MISSING] A decision on cohabitation, raised and never settled (Sep 8-15). Belongs in garter-snake-enrichment-guide.
 
 **Short pages**
-- [ ] [SHORT] garter-snake-enrichment-guide 530.
+- [x] [SHORT] garter-snake-enrichment-guide 530.
 
 ### Red-footed tortoise (red-footed-tortoise)
 Status: open
@@ -967,7 +967,7 @@ Status: open
 - [x] [COVERED, NOT LINKED] UVB strength for a forest species: uvb-lighting-complete-guide (Ferguson zones). Add it to RELATED_ARTICLES['red-footed-tortoise'] and link it from red-footed-tortoise-tank-setup-guide's UVB section. The decision rule is still missing (below).
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] How to choose between the T5 HO and the Arcadia Forest 6% option for a given enclosure. Belongs in red-footed-tortoise-tank-setup-guide.
+- [x] [TRULY MISSING] How to choose between the T5 HO and the Arcadia Forest 6% option for a given enclosure. Belongs in red-footed-tortoise-tank-setup-guide.
 
 ## Birds (10)
 
@@ -1393,17 +1393,17 @@ Status: open
 - [x] [CONTRADICTION] Lifespan: hub and tiger-salamander-cost-guide "12 to 15 years typical, 25 the captive record" vs tiger-salamander-vs-axolotl-guide "10-20 years".
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] tiger-salamander-vs-axolotl-guide (C): reconcile all three conflicts above with the species' own guides.
-- [ ] [THIN] tiger-salamander-health-issues-guide: "not one number anywhere" (Sep 8-15, verified).
+- [x] [LOW GRADE] tiger-salamander-vs-axolotl-guide (C): reconcile all three conflicts above with the species' own guides.
+- [x] [THIN] tiger-salamander-health-issues-guide: "not one number anywhere" (Sep 8-15, verified).
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Enclosure size and animal count before cohabitation is safe, and signs of aggression. Belongs in tiger-salamander-tank-setup-guide.
-- [ ] [TRULY MISSING] Numbers in the health guide and a description of a normal shed (Sep 8-15). Belongs in tiger-salamander-health-issues-guide.
-- [ ] [TRULY MISSING] Prey size rule (Sep 8-15, verified). Belongs in tiger-salamander-feeding-guide.
-- [ ] [TRULY MISSING] What kind of vet to look for (Sep 8-15). Belongs in tiger-salamander-health-issues-guide.
+- [x] [TRULY MISSING] Enclosure size and animal count before cohabitation is safe, and signs of aggression. Belongs in tiger-salamander-tank-setup-guide.
+- [x] [TRULY MISSING] Numbers in the health guide and a description of a normal shed (Sep 8-15). Belongs in tiger-salamander-health-issues-guide.
+- [x] [TRULY MISSING] Prey size rule (Sep 8-15, verified). Belongs in tiger-salamander-feeding-guide.
+- [x] [TRULY MISSING] What kind of vet to look for (Sep 8-15). Belongs in tiger-salamander-health-issues-guide.
 
 **Short pages**
-- [ ] [SHORT] tiger-salamander-handling-guide 386, tiger-salamander-health-issues-guide 461, tiger-salamander-cost-guide 558.
+- [x] [SHORT] tiger-salamander-handling-guide 386, tiger-salamander-health-issues-guide 461, tiger-salamander-cost-guide 558.
 
 ### Pacman frog (pacman-frog)
 Status: open
@@ -1418,12 +1418,12 @@ Status: open
 - [x] [COVERED+LINKED] Dechlorination method (Sep 8-15): amphibian-quarantine-and-water-guide "Dechlorinating the Water You Actually Have" (sidebar). Add a line with an in-body link in pacman-frog-tank-setup-guide.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] What to do when a healthy adult starts to aestivate (only the under-a-year danger case is covered). Belongs in pacman-frog-health-issues-guide or feeding guide.
-- [ ] [TRULY MISSING] When the juvenile feeding schedule becomes the adult one (Sep 8-15, verified). Belongs in pacman-frog-feeding-guide.
-- [ ] [TRULY MISSING] Spot-clean routine (Sep 8-15, verified). Belongs in pacman-frog-tank-setup-guide.
+- [x] [TRULY MISSING] What to do when a healthy adult starts to aestivate (only the under-a-year danger case is covered). Belongs in pacman-frog-health-issues-guide or feeding guide.
+- [x] [TRULY MISSING] When the juvenile feeding schedule becomes the adult one (Sep 8-15, verified). Belongs in pacman-frog-feeding-guide.
+- [x] [TRULY MISSING] Spot-clean routine (Sep 8-15, verified). Belongs in pacman-frog-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] pacman-frog-handling-guide 551, pacman-frog-health-issues-guide 575, pacman-frog-cost-guide 473, pacman-frog-tank-setup-guide 487.
+- [x] [SHORT] pacman-frog-handling-guide 551, pacman-frog-health-issues-guide 575, pacman-frog-cost-guide 473, pacman-frog-tank-setup-guide 487.
 
 ### Fire-bellied toad (fire-bellied-toad)
 Status: open
@@ -1432,8 +1432,8 @@ Status: open
 - [x] [ERROR] fire-bellied-toad-cost-guide: the line items do not add to the page's own stated total; the page admits it. Make the table and total agree.
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] fire-bellied-toad-cost-guide (B), for the arithmetic.
-- [ ] [THIN] fire-bellied-toad-enrichment-guide (B+): honest that no Bombina research exists; borrowed evidence only.
+- [x] [LOW GRADE] fire-bellied-toad-cost-guide (B), for the arithmetic.
+- [x] [THIN] fire-bellied-toad-enrichment-guide (B+): honest that no Bombina research exists; borrowed evidence only.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Acclimating a new toad and the 6 to 8 week quarantine: amphibian-quarantine-and-water-guide "Temperature-First Acclimation" (body-linked from the hub only). Repeat the quarantine length with a link in fire-bellied-toad-tank-setup-guide.
@@ -1442,12 +1442,12 @@ Status: open
 - [x] [COVERED, NOT LINKED] Filter size for the 10 gallon water section: aquarium-filtration-guide turnover math. Add it to RELATED_ARTICLES['fire-bellied-toad'] and one sentence with the target turnover and an in-body link in fire-bellied-toad-tank-setup-guide.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Night temperature (only a 65°F floor). Belongs in fire-bellied-toad-tank-setup-guide.
-- [ ] [TRULY MISSING] Sexing and breeding. Belongs in fire-bellied-toad-handling-guide (the toxic skin page) or health guide.
-- [ ] [TRULY MISSING] Water conditioner and dose. Belongs in fire-bellied-toad-tank-setup-guide.
+- [x] [TRULY MISSING] Night temperature (only a 65°F floor). Belongs in fire-bellied-toad-tank-setup-guide.
+- [x] [TRULY MISSING] Sexing and breeding. Belongs in fire-bellied-toad-handling-guide (the toxic skin page) or health guide.
+- [x] [TRULY MISSING] Water conditioner and dose. Belongs in fire-bellied-toad-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] fire-bellied-toad-health-issues-guide 495, fire-bellied-toad-cost-guide 546.
+- [x] [SHORT] fire-bellied-toad-health-issues-guide 495, fire-bellied-toad-cost-guide 546.
 
 ### Axolotl (axolotl)
 Status: open
@@ -1456,32 +1456,32 @@ Status: open
 - [x] [CONTRADICTION] Adult size: axolotl-feeding-guide "12-plus months, over about 7.5 inches" vs hub and encyclopedia adult "9 to 12 inches". Say 7.5 inches is the adult threshold, 9 to 12 the typical range.
 
 **Low grades and thin pages**
-- [ ] [THIN] The no-gravel warning is written out in full in tank setup, feeding, health and enrichment. Keep it in tank setup.
+- [x] [THIN] The no-gravel warning is written out in full in tank setup, feeding, health and enrichment. Keep it in tank setup.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Quarantine before drip acclimation (Sep 8-15, verified): amphibian-quarantine-and-water-guide (sidebar). axolotl-handling-guide goes straight to drip acclimation; add the quarantine step with an in-body link.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] How to pick a healthy axolotl at the store. Belongs in axolotl-cost-guide.
-- [ ] [TRULY MISSING] What mosaic and GFP morphs are (the cost guide prices them; the axolotl profile only lists color names). Belongs in axolotl-cost-guide.
-- [ ] [TRULY MISSING] Chiller sizing against tank volume (cooling-an-aquarium-without-a-chiller-guide gives none). Belongs in axolotl-tank-setup-guide.
-- [ ] [TRULY MISSING] Vet visit cost (Sep 8-15, verified). Belongs in axolotl-cost-guide.
+- [x] [TRULY MISSING] How to pick a healthy axolotl at the store. Belongs in axolotl-cost-guide.
+- [x] [TRULY MISSING] What mosaic and GFP morphs are (the cost guide prices them; the axolotl profile only lists color names). Belongs in axolotl-cost-guide.
+- [x] [TRULY MISSING] Chiller sizing against tank volume (cooling-an-aquarium-without-a-chiller-guide gives none). Belongs in axolotl-tank-setup-guide.
+- [x] [TRULY MISSING] Vet visit cost (Sep 8-15, verified). Belongs in axolotl-cost-guide.
 
 **Short pages**
-- [ ] [SHORT] axolotl-handling-guide 462, axolotl-health-issues-guide 477, axolotl-cost-guide 548, axolotl-tank-setup-guide 551, axolotl-enrichment-guide 422, axolotl-feeding-guide 469.
+- [x] [SHORT] axolotl-handling-guide 462, axolotl-health-issues-guide 477, axolotl-cost-guide 548, axolotl-tank-setup-guide 551, axolotl-enrichment-guide 422, axolotl-feeding-guide 469.
 
 ### White's tree frog (whites-tree-frog)
 Status: open
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Sexing and telling morphs apart before purchase. Belongs in whites-tree-frog-cost-guide.
-- [ ] [TRULY MISSING] Household chemicals and scents (candles, air fresheners, sprays) and amphibian skin, beyond hand washing. Belongs in whites-tree-frog-health-issues-guide.
-- [ ] [TRULY MISSING] Breeding and eggs if a pair is kept. Belongs in whites-tree-frog-health-issues-guide or handling guide.
-- [ ] [TRULY MISSING] Normal skin sloughing (Sep 8-15). Belongs in whites-tree-frog-health-issues-guide.
-- [ ] [TRULY MISSING] Cleaning cadence and water dish change interval (Sep 8-15, verified). Belongs in whites-tree-frog-tank-setup-guide.
+- [x] [TRULY MISSING] Sexing and telling morphs apart before purchase. Belongs in whites-tree-frog-cost-guide.
+- [x] [TRULY MISSING] Household chemicals and scents (candles, air fresheners, sprays) and amphibian skin, beyond hand washing. Belongs in whites-tree-frog-health-issues-guide.
+- [x] [TRULY MISSING] Breeding and eggs if a pair is kept. Belongs in whites-tree-frog-health-issues-guide or handling guide.
+- [x] [TRULY MISSING] Normal skin sloughing (Sep 8-15). Belongs in whites-tree-frog-health-issues-guide.
+- [x] [TRULY MISSING] Cleaning cadence and water dish change interval (Sep 8-15, verified). Belongs in whites-tree-frog-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] whites-tree-frog-handling-guide 473, whites-tree-frog-health-issues-guide 505, whites-tree-frog-tank-setup-guide 462, whites-tree-frog-feeding-guide 585.
+- [x] [SHORT] whites-tree-frog-handling-guide 473, whites-tree-frog-health-issues-guide 505, whites-tree-frog-tank-setup-guide 462, whites-tree-frog-feeding-guide 585.
 
 ## Invertebrates (8)
 
@@ -1653,22 +1653,22 @@ Suggested sessions: N1 the C and D pages (wild animals). N2 fun facts wiring and
 ### Wild animals and other (b22 to b25)
 Status: open
 
-- [ ] [LOW GRADE] the-incredible-axolotl-nature-s-smiling-salamander (D, thin; 475 words): reads like a truncated care excerpt with the affiliate disclosure before any content. Expand into a real profile (regeneration explained, life cycle, conservation) and move the disclosure down. It is also the page axolotl-cost-guide points to for morphs, which it does not explain.
-- [ ] [LOW GRADE] hedgehogs-are-lactose-intolerant-despite-what-cartoons-show (C, filler): cut the padded opener and closer, dedupe the fact list that repeats in body and bullets, lead with the dairy myth.
+- [x] [LOW GRADE] the-incredible-axolotl-nature-s-smiling-salamander (D, thin; 475 words): reads like a truncated care excerpt with the affiliate disclosure before any content. Expand into a real profile (regeneration explained, life cycle, conservation) and move the disclosure down. It is also the page axolotl-cost-guide points to for morphs, which it does not explain.
+- [x] [LOW GRADE] hedgehogs-are-lactose-intolerant-despite-what-cartoons-show (C, filler): cut the padded opener and closer, dedupe the fact list that repeats in body and bullets, lead with the dairy myth.
 - [x] [CONTRADICTION] Same article: quills "up to 7,000" in the opener vs "between 5,000 and 7,000" later.
-- [ ] [LOW GRADE] mantis-shrimp-16-color-vision-punch-power (C, filler): drop the exclamation opener; the title leads with "16-color vision" that the body undercuts.
+- [x] [LOW GRADE] mantis-shrimp-16-color-vision-punch-power (C, filler): drop the exclamation opener; the title leads with "16-color vision" that the body undercuts.
 - [x] [DOUBTED] Same article: "mates for life" is asserted and never sourced.
-- [ ] [LOW GRADE] weirdest-creatures-deep-sea-facts-that-will-blow-your-mind (C, filler): replace hype with named researchers, years and journals per animal.
+- [x] [LOW GRADE] weirdest-creatures-deep-sea-facts-that-will-blow-your-mind (C, filler): replace hype with named researchers, years and journals per animal.
 - [x] [DOUBTED] Same article: "more than 80 percent of Earth's oceans remains largely unexplored", twice, unsourced.
-- [ ] [LOW GRADE] why-parrots-need-social-interaction-and-what-loneliness-does-to-them (C).
+- [x] [LOW GRADE] why-parrots-need-social-interaction-and-what-loneliness-does-to-them (C).
 - [x] [DOUBTED] Same article: grey "emotional intelligence comparable to a 5-year-old", Alex "over 100 words meaningfully" (the encyclopedia says over 150), the limbic system claim; all uncited. Source or hedge.
-- [ ] [THIN] why-axolotls-need-cold-clean-water (B): little original insight and it closes on a test kit sale.
-- [ ] [THIN] why-rabbits-need-unlimited-hay-and-what-happens-to-their-teeth-without-it (B): generic, unsourced pet-care copy.
-- [ ] [THIN] sharks-are-older-than-trees-and-9-other-facts-that-will-blow-your-mind (B): items 7 and 9 add nothing beyond a definition; cut or merge.
-- [ ] [THIN] main-blog-post (B, thin; 390 words): the welcome post gives a new visitor one example link. Add a second topic area.
+- [x] [THIN] why-axolotls-need-cold-clean-water (B): little original insight and it closes on a test kit sale.
+- [x] [THIN] why-rabbits-need-unlimited-hay-and-what-happens-to-their-teeth-without-it (B): generic, unsourced pet-care copy.
+- [x] [THIN] sharks-are-older-than-trees-and-9-other-facts-that-will-blow-your-mind (B): items 7 and 9 add nothing beyond a definition; cut or merge.
+- [x] [THIN] main-blog-post (B, thin; 390 words): the welcome post gives a new visitor one example link. Add a second topic area.
 - [x] [ERROR] Every page in wild-animals-2, wild-animals-4 and wild-animals-6 shows "none" for both sidebar lists. Wire relevant ones (axolotl profile to the axolotl guide, octopus day to the octopus pieces, hedgehog lactose to the hedgehog guide).
-- [ ] [THIN] crows-are-smarter-than-you-think-and-they-probably-already-know-it and do-dolphins-have-names-what-the-research-shows both explain the contested mirror test in full; keep one and cross-link.
-- [ ] [THIN] wolverine-facts-the-toughest-animal-pound-for-pound: the "the legend is real, but" frame repeats in nearly every section.
+- [x] [THIN] crows-are-smarter-than-you-think-and-they-probably-already-know-it and do-dolphins-have-names-what-the-research-shows both explain the contested mirror test in full; keep one and cross-link.
+- [x] [THIN] wolverine-facts-the-toughest-animal-pound-for-pound: the "the legend is real, but" frame repeats in nearly every section.
 
 ### Fun facts (content/fun-facts, b16)
 Status: open
@@ -1676,52 +1676,52 @@ Status: open
 - [x] [ERROR] fun-facts-axolotl: says leucistic axolotls glow from jellyfish GFP; only genetically modified axolotls do. Fix.
 - [ ] [ERROR] fun-facts-axolotl, fun-facts-boa-constrictor, fun-facts-cuttlefish, fun-facts-humpback-whale, fun-facts-octopus, fun-facts-rabbit (all B, thin): no care guide link and empty Deep Dive and Health and More lists. Wire them like fun-facts-1.
 - [x] [DOUBTED] 10-surprising-argentine-tegu-facts: heat generation "rewrote" the endotherm definition, strong for an aside.
-- [ ] [THIN] 10-surprising-bearded-dragon-facts (B). fun-facts-octopus and fun-facts-cuttlefish both retell the three-hearts fact; 10-surprising-argentine-tegu-facts and 10-surprising-emperor-scorpion-facts share the same platypus aside. Vary.
-- [ ] [SHORT] 10-surprising-hissing-cockroach-facts 434, 10-surprising-bearded-dragon-facts 439, 10-surprising-fire-bellied-toad-facts 442, 10-surprising-hedgehog-facts 457, 10-surprising-leopard-gecko-facts 462, 10-surprising-emperor-scorpion-facts 480, fun-facts-rabbit 480, 10-surprising-ball-python-facts 481, 10-surprising-betta-fish-facts 490, fun-facts-axolotl 493, 10-surprising-argentine-tegu-facts 499, 10-surprising-tarantula-facts 515, fun-facts-humpback-whale 516, 10-surprising-praying-mantis-facts 535, fun-facts-cuttlefish 535, 10-surprising-cockatoo-facts 544, 10-surprising-hermit-crab-facts 544, fun-facts-octopus 597.
+- [x] [THIN] 10-surprising-bearded-dragon-facts (B). fun-facts-octopus and fun-facts-cuttlefish both retell the three-hearts fact; 10-surprising-argentine-tegu-facts and 10-surprising-emperor-scorpion-facts share the same platypus aside. Vary.
+- [x] [SHORT] 10-surprising-hissing-cockroach-facts 434, 10-surprising-bearded-dragon-facts 439, 10-surprising-fire-bellied-toad-facts 442, 10-surprising-hedgehog-facts 457, 10-surprising-leopard-gecko-facts 462, 10-surprising-emperor-scorpion-facts 480, fun-facts-rabbit 480, 10-surprising-ball-python-facts 481, 10-surprising-betta-fish-facts 490, fun-facts-axolotl 493, 10-surprising-argentine-tegu-facts 499, 10-surprising-tarantula-facts 515, fun-facts-humpback-whale 516, 10-surprising-praying-mantis-facts 535, fun-facts-cuttlefish 535, 10-surprising-cockatoo-facts 544, 10-surprising-hermit-crab-facts 544, fun-facts-octopus 597. Wave 2: all expanded; seven stay under 575 words (hissing cockroach, fire-bellied toad, hedgehog, leopard gecko, ball python, bearded dragon, praying mantis) rather than pad.
 
 ### Shared class guides (b01 to b09, b19 to b21)
 Status: open
 - [x] [ERROR] long-lived-pet-succession-planning-guide is filed under Dogs and Cats but is entirely about cockatoos and tortoises. Refile its category.
 
-- [ ] [LOW GRADE] why-bearded-dragons-need-uvb-lighting-and-why-skipping-it-is-deadly (B, filler): restates uvb-lighting-complete-guide with no named sources.
+- [x] [LOW GRADE] why-bearded-dragons-need-uvb-lighting-and-why-skipping-it-is-deadly (B, filler): restates uvb-lighting-complete-guide with no named sources.
 - [x] [DOUBTED] Same article: "research consistently shows that UVB-synthesized D3 is more bioavailable... than oral supplements alone", uncited.
 - [x] [CONTRADICTION] Bulb replacement: uvb-lighting-complete-guide "12 months for reptiles" vs why-bearded-dragons-need-uvb-lighting-and-why-skipping-it-is-deadly "every 6 to 12 months" (T5 HO), "every 6 months" (T8), CFL "6 months" while calling CFL supplemental only.
-- [ ] [LOW GRADE] bioactive-setups-bearded-dragons (B): anecdote and affiliate driven, no cost or shopping list.
-- [ ] [THIN] snake-brumation-guide (B+, thin; 466 words): add a normal seasonal slowdown vs illness checklist to match tortoise-brumation-guide. This is what the hognose, milk snake and kingsnake readers needed.
+- [x] [LOW GRADE] bioactive-setups-bearded-dragons (B): anecdote and affiliate driven, no cost or shopping list.
+- [x] [THIN] snake-brumation-guide (B+, thin; 466 words): add a normal seasonal slowdown vs illness checklist to match tortoise-brumation-guide. This is what the hognose, milk snake and kingsnake readers needed.
 - [x] [DOUBTED] t5-vs-compact-uvb-guide (B+): reads as a buyer's guide; the "how much UVB" table covers three groups only.
-- [ ] [TRULY MISSING] reptile-heating-thermostats-guide: no maximum basking surface temperature to verify against.
+- [x] [TRULY MISSING] reptile-heating-thermostats-guide: no maximum basking surface temperature to verify against.
 - [x] [ERROR] reptile-quarantine-guide: the FAQ says lizards are not established to get IBD, but the symptom table lists IBD neurological signs without that caveat. Repeat it in the table.
-- [ ] [THIN] outdoor-reptile-housing-guide: drowning and overheating are asserted, not quantified the way raven predation is.
-- [ ] [TRULY MISSING] amphibian-quarantine-and-water-guide: the hardness section is axolotl only though the title says amphibians; add a short honest note for fire-bellied toad, tiger salamander, pacman and White's.
-- [ ] [TRULY MISSING] aquarium-ich-treatment-guide: say how to place a species not in the table.
-- [ ] [THIN] fish-quarantine-and-treatment-guide: VCA's tablespoon per 5 gallons and Merck's g/L salt frameworks sit side by side; separate them visually.
+- [x] [THIN] outdoor-reptile-housing-guide: drowning and overheating are asserted, not quantified the way raven predation is. Wave 2: overheating quantified (San Diego Zoo desert tortoise); no source quantifies drowning, kept as a depth and ramp rule.
+- [x] [TRULY MISSING] amphibian-quarantine-and-water-guide: the hardness section is axolotl only though the title says amphibians; add a short honest note for fire-bellied toad, tiger salamander, pacman and White's.
+- [x] [TRULY MISSING] aquarium-ich-treatment-guide: say how to place a species not in the table.
+- [x] [THIN] fish-quarantine-and-treatment-guide: VCA's tablespoon per 5 gallons and Merck's g/L salt frameworks sit side by side; separate them visually.
 - [x] [DOUBTED] invertebrate-emergency-travel-shipping-guide: hermit crab "breathes through modified gills" is its one uncited biology claim.
 - [x] [DOUBTED] invertebrate-quarantine-cleaning-and-escapes-guide: "Releasing any non-native invertebrate or its eggs is prohibited", no source or jurisdiction.
 - [x] [DOUBTED] small-mammal-enterotoxemia-guide: subtitle "most vets don't warn you about" is unsupported in the body.
 - [x] [CONTRADICTION] small-mammal-temperature-heat-stress-guide: key takeaway danger at 80°F vs the same table's RSPCA guinea pig risk from 75°F. Make the takeaway species-dependent. Also cut the subtitle dig at "round numbers that circulate on forums".
-- [ ] [TRULY MISSING] bird-emergency-travel-guide: no heat threshold for a carrier in sun, to match its cold guidance.
+- [x] [TRULY MISSING] bird-emergency-travel-guide: no heat threshold for a carrier in sun, to match its cold guidance.
 - [x] [DOUBTED] bird-sexing-weight-body-condition-guide: "more than half of bird species" not dimorphic rests on one 2023 study; add a second source.
-- [ ] [THIN] choosing-a-pet-bird-guide: lifespan table covers cockatiel and cockatoo only.
-- [ ] [THIN] parrot-training-guide and rehomed-parrot-guide both make the "behavior does not transfer between handlers" point without linking each other; bird-pellet-conversion-guide and bird-household-hazards-guide likewise on small body mass. Cross-link.
-- [ ] [THIN] avian-gastric-yeast-guide: name the case series' sample size and species split in the body.
-- [ ] [THIN] Bird guides carry the same 25-item sidebar on every page (b07). Structural; note only.
+- [x] [THIN] choosing-a-pet-bird-guide: lifespan table covers cockatiel and cockatoo only.
+- [x] [THIN] parrot-training-guide and rehomed-parrot-guide both make the "behavior does not transfer between handlers" point without linking each other; bird-pellet-conversion-guide and bird-household-hazards-guide likewise on small body mass. Cross-link.
+- [x] [THIN] avian-gastric-yeast-guide: name the case series' sample size and species split in the body.
+- [x] [THIN] Bird guides carry the same 25-item sidebar on every page (b07). Structural; note only. Noted in wave 2, no edit.
 
 ### Chronicles (b10 to b11)
 Status: open
 
-- [ ] [LOW GRADE] "The Day He Decided the Garden Belonged to Him" (chronicles-otis-1, C): Otis squeezes into the garden as a stranger, contradicting Part 13 "The First Afternoon" (arrived at four months "clipped to a leash"). Relabel as a flashback or prequel, or drop it.
+- [x] [LOW GRADE] "The Day He Decided the Garden Belonged to Him" (chronicles-otis-1, C): Otis squeezes into the garden as a stranger, contradicting Part 13 "The First Afternoon" (arrived at four months "clipped to a leash"). Relabel as a flashback or prequel, or drop it.
 - [x] [ERROR] "What the Glass Was For" (chronicles-dex-2): subtitle "one hundred and forty three afternoons" vs closing "four seasons of afternoons".
-- [ ] [THIN] The nap, dream, wake structure is used six times in sixteen parts in each series (Dex: Pirate of the Sand Sea, The Dragon Who Flew, The Night He Breathed Fire, The Long Drop, Terrarium 500; Otis: First Flight, High Noon at Clover Gulch, Otis Goes Downtown, The Golden Carrot, The Great Warren Expedition, The Moon Made of Clover). Vary the wake-up beat and space them out. Otis Goes Downtown, The Great Warren Expedition and The Moon Made of Clover were graded B.
+- [x] [THIN] The nap, dream, wake structure is used six times in sixteen parts in each series (Dex: Pirate of the Sand Sea, The Dragon Who Flew, The Night He Breathed Fire, The Long Drop, Terrarium 500; Otis: First Flight, High Noon at Clover Gulch, Otis Goes Downtown, The Golden Carrot, The Great Warren Expedition, The Moon Made of Clover). Vary the wake-up beat and space them out. Otis Goes Downtown, The Great Warren Expedition and The Moon Made of Clover were graded B.
 
 ### Overviews (b17 to b18)
 Status: open
 
-- [ ] [THIN] The Argentine tegu paragraph (dog-like once socialized, 2 to 4 month brumation) appears near verbatim in greenanole-tegu-firebelliedtoad-tigersalamander-overview and iguana-fireskink-quaker-overview (the b17 reader counted three overviews; only these two name the tegu). Vary it.
-- [ ] [THIN] rabbit-budgie-overview (254 words) and zebra-finch-parrotlet-overview are two-species entries in a four-species format. Expand or justify.
+- [x] [THIN] The Argentine tegu paragraph (dog-like once socialized, 2 to 4 month brumation) appears near verbatim in greenanole-tegu-firebelliedtoad-tigersalamander-overview and iguana-fireskink-quaker-overview (the b17 reader counted three overviews; only these two name the tegu). Vary it.
+- [x] [THIN] rabbit-budgie-overview (254 words) and zebra-finch-parrotlet-overview are two-species entries in a four-species format. Expand or justify.
 - [x] [CONTRADICTION] sulcata-hedgehog-lovebird-guppy-overview repeats the sulcata hub's "70 to 100" years (see sulcata section).
-- [ ] [THIN] iguana-fireskink-quaker-overview: say up front that the iguana section retells the outgrows-the-setup story from the tegu and monitor pieces.
-- [ ] [THIN] savannah-russiantortoise-cockatoo-stickinsect-overview: add that savannah monitor obesity is captivity-driven, not inherited.
-- [ ] [SHORT] rabbit-budgie-overview 254, degu-gerbil-overview 348, uromastyx-tokay-africangrey-jumpingspider-overview 371, guinea-pig-cockatiel-betta-tarantula-overview 384, five-beginner-reptiles-overview 396, iguana-fireskink-quaker-overview 397, gargoyle-mourning-african-fat-tail-gecko-overview 418, koi-conure-slider-scorpion-overview 421, veiled-chameleon-ferret-hognose-overview 444, sulcata-hedgehog-lovebird-guppy-overview 460, boa-glider-mantis-tetra-overview 463, four-unusual-pets-overview 464, savannah-russiantortoise-cockatoo-stickinsect-overview 469, ackie-milksnake-mhc-angelfish-overview 495, hamster-skink-whitestreefrog-pacmanfrog-overview 505, zebra-finch-parrotlet-overview 534, leaftailedgecko-kingsnake-boxturtle-oscar-overview 581, cherry-amano-ghost-shrimp-overview 593.
+- [x] [THIN] iguana-fireskink-quaker-overview: say up front that the iguana section retells the outgrows-the-setup story from the tegu and monitor pieces.
+- [x] [THIN] savannah-russiantortoise-cockatoo-stickinsect-overview: add that savannah monitor obesity is captivity-driven, not inherited.
+- [x] [SHORT] rabbit-budgie-overview 254, degu-gerbil-overview 348, uromastyx-tokay-africangrey-jumpingspider-overview 371, guinea-pig-cockatiel-betta-tarantula-overview 384, five-beginner-reptiles-overview 396, iguana-fireskink-quaker-overview 397, gargoyle-mourning-african-fat-tail-gecko-overview 418, koi-conure-slider-scorpion-overview 421, veiled-chameleon-ferret-hognose-overview 444, sulcata-hedgehog-lovebird-guppy-overview 460, boa-glider-mantis-tetra-overview 463, four-unusual-pets-overview 464, savannah-russiantortoise-cockatoo-stickinsect-overview 469, ackie-milksnake-mhc-angelfish-overview 495, hamster-skink-whitestreefrog-pacmanfrog-overview 505, zebra-finch-parrotlet-overview 534, leaftailedgecko-kingsnake-boxturtle-oscar-overview 581, cherry-amano-ghost-shrimp-overview 593.
 
 ---
 
@@ -1752,6 +1752,16 @@ Shipped 2026-09-24 in commit 4c5ae0a, pushed to claude/adsense-readiness-review-
 - Source homepages, which the rules forbid: pacman-frog-cost-guide and pacman-frog-handling-guide (a-z-animals.com, backwaterreptiles.com, thecritterdepot.com), pacman-frog-tank-setup-guide (mramphibian.com), why-bearded-dragons-need-uvb-lighting-and-why-skipping-it-is-deadly (ARAV), why-parrots-need-social-interaction-and-what-loneliness-does-to-them (AAV), hamster-tank-setup-guide (Merck).
 - 10-surprising-argentine-tegu-facts: "no reptile had ever been documented" warming itself may be contradicted by pythons that warm their eggs.
 - Jackson's chameleon ambient temperature is now 70 to 80°F (LafeberVet). The wave 2 item at line 668 still quotes the old 68 to 75.
+
+## Wave 2 results
+
+Shipped 2026-09-25 on claude/fix-plan-wave-2-reptiles-81w4hm (checkpoint commits during the run, then one final commit). Not merged to main.
+
+- Done: every open item in Reptiles, Amphibians and section 4, ticked above, except two left open: the leopard gecko screen-top gap (no source gives a number) and the fun-facts wiring [ERROR] (needs an owner decision on guide ids, same as the wave 1 leftover).
+- New shared sections: "Enclosure cleaning schedule" in reptile-salmonella-hygiene-guide and "Choosing a healthy reptile and a reptile vet" in reptile-quarantine-guide. Species cleaning, breeder and vet items link to them.
+- Hub and encyclopedia edits applied from agent requests: kingsnake encyclopedia overview and history; tegu cost routing line; tiger salamander cohabitation row; Jackson's chameleon sexing row repointed to the health guide; mourning gecko buy list and dystocia line; leaf-tailed gecko shed-check row removed; garter snake thiaminase FAQ swapped for feeding frequency; veiled chameleon water-dish FAQ swapped for egg-binding; leopard gecko lifespan row and encyclopedia set to 10 to 20 years, some reaching 25 to 30.
+- Checks: sync-articles, check-internal-links, check-voice --strict (0 errors), check-related-articles, check-publish-dates, check-rotation, check-seo-tags, check-hub-rows, check-hub-figures all pass.
+- Partly done, noted on their lines: blue-tongued skink weights by life stage, Russian tortoise female ramming, savannah monitor DIY build cost, outdoor housing drowning numbers, seven fun facts pages still under 575 words.
 
 ## Still open under wave 1 (needs another look)
 
@@ -1823,7 +1833,21 @@ the HTML), then re-render the PDF.
 - [ ] Guinea pig: "hay is 70 to 80% of the diet". Site: roughly 80%.
 - [ ] Ball python p12: list refusal causes with temperature and humidity first, then shed, stress, breeding season.
 - [ ] Goldfish p8: cycle by dosing ammonia to about 3 ppm, done when a full dose reads zero within 24 hours.
+- [ ] Ball python (about lines 315 and 725): says brooding females heat eggs by shivering. A 2015 study found ball pythons do not shiver-brood; the site's fun facts page was corrected in wave 2.
+- [ ] Leopard gecko (profile p. 3, growth table, p. 34): adult length "6.5 to 11 in, sources differ" and "8 to 11 in" adults. Site now uses 6 to 9 inches (PetMD 6 to 9, LafeberVet 6.5 to 8).
 - [ ] Betta p10: feeding "once or twice a day" can add "or up to three smaller meals 6 to 8 hours apart" (optional).
+
+Added 2026-09-25 from the wave 2 changes:
+- [ ] Axolotl (diet page, pages_2.html:138): "Whole or halved nightcrawler" for adults. Site: worms cut to head-sized portions, never whole, even for a large adult (axolotl-feeding-guide).
+- [ ] Axolotl (handling page, pages_2.html:115): hand washing assumes bare-hand contact. Site: if it must be touched, clean disposable nitrile gloves, since skin oils harm it (axolotl-handling-guide).
+- [ ] Ball python (cleaning, lines 489, 1013, 1260): "Change the substrate fully every 4 to 8 weeks". Site: monthly if messy, at least quarterly if not; bowl and decor scrubbed weekly with 3% bleach left on 10 minutes (ball-python-tank-setup-guide).
+- [ ] Bearded dragon (First 30 days, line 1088): wellness visit "within the first two weeks". Site: first exam within 48 hours (bearded-dragon-health-issues-guide, cost guide; VCA).
+- [ ] Bearded dragon (Salmonella box, line 492): only under-fives told not to handle. Site: under 5, 65 and older, and the immunocompromised should not handle the dragon or touch its enclosure (bearded-dragon-handling-guide; CDC).
+- [ ] Crested gecko (sexing p14, line 666): sexable "at 15 to 18 months". Site: hemipenal bulge shows at 18 to 25 g; under that with no bulge means unsexed, not female (crested-gecko-handling-guide; ReptiFiles).
+- [ ] Crested gecko (lines 458, 522, 859, 1084, 1266): dishes scrubbed weekly, deep clean monthly. Site: dishes washed and disinfected daily, non-bioactive enclosure fully cleaned at least weekly, bleach left on 10 minutes (crested-gecko-tank-setup-guide).
+- [ ] Leopard gecko (handling p8 line 480, behavior p19 line 845): rapid tail flicking means end the session, slow wave "not a complaint". Site says the reverse: slow swish with an arched back is the warning, rapid flick or rattle is excitement at prey or a mate (leopard-gecko-handling-guide; ReptiFiles, LafeberVet).
+- [ ] Leopard gecko (profile, line 285): "15 to 20 years typical, up to 25 to 30". Site: 10 to 20 years, some reaching 25 to 30 (hub, cost guide, fun facts; PetMD, LafeberVet).
+- [ ] Russian tortoise (outdoor pen, pages_2.html:89): walls "at least 12 in above ground". Site: about 2 ft high with an inward lip of about 4 in, buried at least 12 in, mesh cover (russian-tortoise-handling-guide).
 
 **Package better than the site (fix the site, not the package):**
 - [x] Axolotl pH: package "7.4 to 7.6" (LafeberVet) vs hub and tank setup guide "7.4 to 7.8".
@@ -1839,6 +1863,13 @@ the HTML), then re-render the PDF.
 - [ ] Leopard gecko costs: package setup $175 to $495, monthly $32 to $91; hub $250 to $400, $20 to $50.
 - [ ] Cockatiel yearly cost: package $300 to $565; hub $200 to $350.
 - [ ] Russian tortoise brumation: package 10 to 14 weeks at most; hub 2 to 4 months.
+
+Added 2026-09-25 from the wave 2 changes:
+- [ ] Axolotl feeding portion (pages_2.html:143): package "what it finishes in two to three minutes"; site "what it takes in 5 to 10 minutes" (axolotl-feeding-guide).
+- [ ] Axolotl maturity and sexing (pages_1.html:106, pages_2.html:42, 265, pages_3.html:538): package "about a year" (Genetic Stock Center); site males about 10 months, females 12 to 18 months (axolotl-handling-guide; LafeberVet, Chicago Exotics).
+- [ ] Axolotl nets (pages_2.html:115): package "Never: Nets"; site allows a soft fine-mesh net for seconds when nothing else works (axolotl-handling-guide).
+- [ ] Crested gecko vet cost (lines 311, 988): package first exam with fecal "$65 to $210"; site routine visit about $40 to $70 (crested-gecko-cost-guide).
+- [ ] Crested gecko price (lines 302, 988): package normals "$50 to $200", rare "$500 to $1,000 or more"; site normals under $100, standard morphs to about $200, rare upward of $1,000 (crested-gecko-cost-guide).
 
 No differences: budgie.
 

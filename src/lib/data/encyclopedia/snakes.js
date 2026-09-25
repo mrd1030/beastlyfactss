@@ -31,14 +31,14 @@ export const snakeEncyclopedia = [
     id: "kingsnake", name: "California Kingsnake", scientific: "Lampropeltis californiae",
     category: "Snakes", emoji: "🐍", difficulty: "Beginner", guideId: "california-kingsnake", available: true, image: "/assets/guides/california-kingsnake.jpg",
     bio: {
-      overview: "The California kingsnake is a non-venomous colubrid found throughout the western United States and northwestern Mexico. \"King\" snakes earned their name from their ability to kill and consume venomous rattlesnakes - they are immune to pit viper venom. Highly variable in pattern and coloration, they can mimic the banding of venomous coral snakes in some regions. Hardy and easy to care for, they are a popular beginner species.",
+      overview: "The California kingsnake is a non-venomous colubrid found throughout the western United States and northwestern Mexico. \"King\" snakes earned their name from killing and eating other snakes, rattlesnakes included, and their blood serum neutralizes a good deal of pit viper venom. That resistance is strong, not total, and it varies between kingsnake species and populations. A powerful constrictor, it takes almost anything it can overpower, from rodents and lizards to eggs, birds and other snakes. It is active by day in cool weather and shifts to dawn, dusk and night when it is hot. Pattern varies from black and white bands to brown and cream, and some populations are striped instead of banded. Hardy and easy to care for, it is a popular beginner species.",
       origin: "Western United States and northwestern Mexico",
       habitat: "Desert, chaparral, woodland, grassland, and agricultural areas",
       adultSize: "2.5-4 feet (75-120 cm)",
       wildDiet: "Lizards, rodents, birds, eggs, and other snakes (including rattlesnakes)",
       wildLifespan: "5.5 years on average in the wild, the oldest wild specimen recorded at 9; typically 20 years or more in captivity, with a record of 33.3",
       conservation: "Least Concern (IUCN)",
-      history: "This was one of the first snakes bred regularly in captivity, which is why it entered the hobby with a deep catalogue of patterns and morphs while most species still had none. Ease of breeding is the reason: a hardy colubrid that takes rodents readily and tolerates a simple setup is a species a hobbyist can work with over generations. The result is that a beginner buying one today is buying the product of decades of selective breeding rather than a recently collected wild animal.",
+      history: "The California kingsnake is one of the most popular pet snakes, kept for its easy care, its range of colors and its calm temperament, and almost every pet today is captive-bred. That breeding has a tangle in it. In the wild the species intergrades with the desert kingsnake and the Mexican black kingsnake in Arizona, and in captivity it has been crossed with the corn snake to make the \"jungle corn\", a hybrid of two different genera that is fertile. At home it is protected by paperwork: California sets limits on wild collection and requires a propagation permit to breed and sell the species inside the state, so a California seller should be able to name the permit.",
     },
   },
   {

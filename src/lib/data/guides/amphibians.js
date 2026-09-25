@@ -8,7 +8,7 @@ export const amphibianGuides = [
     image: "/assets/guides/axolotl.jpg",
     tagline: "The 'forever larva' with feathery gills and superhero-level regeneration!",
     seoTitle: "Axolotl Care Guide: Cold Water, Feeding, and Health",
-    seoDescription: "Axolotl care starts with cold water: why 60 to 68°F and a chiller beat any heater, the gravel that means surgery, and when a floating axolotl needs a vet today.",
+    seoDescription: "Axolotl care starts with cold water: why 60 to 64°F and a chiller beat any heater, the gravel that means surgery, and when a floating axolotl needs a vet today.",
     funFact: "Axolotls are neotenic, meaning they retain their larval (juvenile) features throughout their entire adult life and never undergo full metamorphosis. They keep their feathery external gills, tail fins, and aquatic lifestyle permanently. Scientists study them intensively because they can regenerate not just limbs but heart tissue, spinal cord sections, and parts of their brain with zero scarring.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -23,7 +23,7 @@ export const amphibianGuides = [
       rows: [
         { label: "Legal check", value: "Banned outright in California, Wyoming, and Alabama, effectively banned in New Jersey, permit-only and not issued for pets in Maine, and reported banned in Washington, D.C.; several other states restrict them in some way. Legal in Virginia since August 2021, despite widely repeated claims otherwise. Check your state before buying.", source: "axolotl-legal-guide" },
         { label: "Tank size", value: "A 20-gallon long tank is the minimum for one axolotl, with a 40-gallon breeder better if keeping two.", source: "axolotl-tank-setup-guide" },
-        { label: "Water temperature", value: "Between 60 and 68°F. Above 72°F starts to cause chronic stress, and it can become fatal in the mid-70s. Never use a heater, plan for an aquarium chiller.", source: "axolotl-tank-setup-guide" },
+        { label: "Water temperature", value: "Between 60 and 64°F. Above 72°F starts to cause chronic stress, and it can become fatal in the mid-70s. Never use a heater, plan for an aquarium chiller.", source: "axolotl-tank-setup-guide" },
         { label: "Water parameters", value: "Ammonia and nitrite at 0, nitrate ideally under 10 ppm, pH 7.4 to 7.6, with 6.5 to 8.0 tolerated if stable.", source: "axolotl-tank-setup-guide" },
         { label: "Cycling", value: "The tank needs to be fully cycled before an axolotl goes in, this isn't a species that tolerates an uncycled tank while it establishes itself.", source: "axolotl-tank-setup-guide" },
         { label: "Substrate", value: "Fine sand with grains under 1mm, or bare-bottom. Never gravel or small rocks, axolotls gulp their food and swallow loose substrate along with it.", source: "axolotl-tank-setup-guide" },
@@ -51,7 +51,7 @@ export const amphibianGuides = [
     },
     routes: [
       { slug: "axolotl-cost-guide", line: "The axolotl itself $30 to $100, why the chiller can double your setup cost, and the real monthly budget." },
-      { slug: "axolotl-tank-setup-guide", line: "Cold water 60 to 68°F, no gravel ever, low-flow filtration, and the water parameters that matter." },
+      { slug: "axolotl-tank-setup-guide", line: "Cold water 60 to 64°F, no gravel ever, low-flow filtration, and the water parameters that matter." },
       { slug: "axolotl-feeding-guide", line: "Schedule by life stage, the gold-standard nightcrawler diet, and why gravel is the mistake that sends axolotls to surgery." },
       { slug: "axolotl-handling-guide", line: "Why hands-off is the default, the submerged-container method, and drip-matching a new arrival in without touching it." },
       { slug: "axolotl-health-issues-guide", line: "Fungal infection, impaction, ammonia burns, heat stress, and the signs that mean a vet visit." },
@@ -271,7 +271,7 @@ export const amphibianGuides = [
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Legal check", value: "Eleven jurisdictions ban it. The January 2025 federal injurious-wildlife listing restricts import and shipment, not ownership. New Jersey's endangered listing reaches a pet whatever its origin.", source: "tiger-salamander-legal-guide" },
-        { label: "Enclosure", value: "A 20-gallon long, 24 by 18 by 12 inches, minimum for one adult, floor over height for a burrower. Cohabitation is not recommended: competition and cannibalism.", source: "tiger-salamander-tank-setup-guide" },
+        { label: "Enclosure", value: "A 20-gallon long, 30 by 12 by 12 inches, minimum for one adult, floor over height for a burrower. Best kept alone; a pair only if close in size, since a large tiger eats a small one.", source: "tiger-salamander-tank-setup-guide" },
         { label: "Temperature", value: "60 to 75°F and never above about 78°F. No heat in a room that stays above 60°F, and never in direct sun: a window heats a tank dangerously fast.", source: "tiger-salamander-tank-setup-guide" },
         { label: "Humidity", value: "70 to 75%, from moist, never soggy, substrate and a shallow dish, with one end slightly damper than the other so it can choose.", source: "tiger-salamander-tank-setup-guide" },
         { label: "Substrate", value: "3 to 4 inches or more of coconut fiber, reptile soil, fertilizer-free topsoil, or cypress mulch. No peat, gravel, sand, small bark, vermiculite, or perlite.", source: "tiger-salamander-tank-setup-guide" },
@@ -311,7 +311,7 @@ export const amphibianGuides = [
       { slug: "tiger-salamander-legal-guide", line: "The January 2025 federal rule, the bait-trade regulations it gets confused with, and where all 52 jurisdictions land." },
     ],
     buyList: [
-      "20-gallon long tank, 24 by 18 by 12 inches",
+      "20-gallon long tank, 30 by 12 by 12 inches",
       "Coconut fiber, commercial reptile soil, fertilizer-free topsoil, or cypress mulch, enough for 3 to 4 inches and deeper if the enclosure allows",
       "Leaf litter for surface cover",
       "Flat cork bark and low hides",
