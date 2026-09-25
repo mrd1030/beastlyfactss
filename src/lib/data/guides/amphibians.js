@@ -271,7 +271,7 @@ export const amphibianGuides = [
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Legal check", value: "Eleven jurisdictions ban it. The January 2025 federal injurious-wildlife listing restricts import and shipment, not ownership. New Jersey's endangered listing reaches a pet whatever its origin.", source: "tiger-salamander-legal-guide" },
-        { label: "Enclosure", value: "A 20-gallon long, 24 by 18 by 12 inches, minimum for one adult, floor over height for a burrower. Cohabitation is not recommended: competition and cannibalism.", source: "tiger-salamander-tank-setup-guide" },
+        { label: "Enclosure", value: "A 20-gallon long, 24 by 18 by 12 inches, minimum for one adult, floor over height for a burrower. Best kept alone; a pair only if close in size, since a large tiger eats a small one.", source: "tiger-salamander-tank-setup-guide" },
         { label: "Temperature", value: "60 to 75°F and never above about 78°F. No heat in a room that stays above 60°F, and never in direct sun: a window heats a tank dangerously fast.", source: "tiger-salamander-tank-setup-guide" },
         { label: "Humidity", value: "70 to 75%, from moist, never soggy, substrate and a shallow dish, with one end slightly damper than the other so it can choose.", source: "tiger-salamander-tank-setup-guide" },
         { label: "Substrate", value: "3 to 4 inches or more of coconut fiber, reptile soil, fertilizer-free topsoil, or cypress mulch. No peat, gravel, sand, small bark, vermiculite, or perlite.", source: "tiger-salamander-tank-setup-guide" },
