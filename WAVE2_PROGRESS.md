@@ -2,20 +2,16 @@
 
 Wave 2 of FIX_PLAN.md is partway done. The agent brief is below the status list. FIX_PLAN.md ticks are not updated yet.
 
-Finished and ticked in FIX_PLAN.md: R3 (tegu, bearded dragon, Jackson's chameleon, tokay, hognose) and R4 (milk snake, corn snake, ball python, blue-tongued skink, green anole, Russian tortoise).
+Finished and ticked in FIX_PLAN.md: R1, R2, R3, R4 (reptile sections from green iguana through Russian tortoise), A1 (all five amphibians) and N1 (wild animals and other). R2's kingsnake encyclopedia rewrite, A1's tiger salamander hub row and the Jackson's hub row fix are applied; check-hub-figures passes.
 
 Stopped mid-work to save credits. Their partial edits are committed, unreviewed, citations not yet verified, and none of their items are ticked:
-- R1: green iguana, box turtle, crested gecko, uromastyx, fire skink (was on the fire skink health guide)
-- R2: African fat-tail, kingsnake, rosy boa, red-eared slider, sulcata (was on the sulcata cost guide vet section)
 - R5: ackie monitor, boa, leopard gecko, savannah monitor, veiled chameleon
 - R6: mourning, gargoyle, leaf-tailed gecko, garter snake, red-footed tortoise (was on the gargoyle cost guide)
-- A1: amphibians (was on the White's tree frog cost guide)
-- N1: wild animals (was rewriting the parrot social interaction article)
 - N2: fun facts
 - N3: shared class guides, including the new reptile-salmonella-hygiene-guide "Enclosure cleaning schedule" and reptile-quarantine-guide "Choosing a healthy reptile and a reptile vet" sections, which R3 and R4 pages already link to. Finish these first.
 - N4: chronicles and overviews (was relabeling the Otis garden prequel)
 
-Also still to do before the wave closes: apply the R2 requests below, fix check-hub-figures on jacksons-chameleon, run the full check list from FIX_PLAN.md "Waves 2 and 3", and review each partial diff against e4b92b7.
+Also still to do before the wave closes: the owner decision on the tiger salamander "20-gallon long, 24 by 18 by 12" mismatch (A1 request 2), then run the full check list from FIX_PLAN.md "Waves 2 and 3", and review each partial diff against e4b92b7.
 
 ## Pending hub and encyclopedia requests
 
