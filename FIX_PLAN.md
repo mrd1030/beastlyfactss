@@ -505,17 +505,17 @@ Status: open
 - [x] [CONTRADICTION] Sand and impaction (framing): african-fat-tail-tank-setup-guide "tends to happen in geckos that are already unhealthy... not simply from naturalistic substrate" vs african-fat-tail-feeding-guide "can cause impaction if swallowed with prey". Give feeding the setup guide's narrower claim.
 
 **Low grades and thin pages**
-- [ ] [THIN] african-fat-tail-enrichment-guide (thin): one borrowed leopard gecko study plus a caveat.
-- [ ] [THIN] The leopard gecko comparison appears in cost, handling, health, tank setup and enrichment. Keep one or two.
+- [x] [THIN] african-fat-tail-enrichment-guide (thin): one borrowed leopard gecko study plus a caveat.
+- [x] [THIN] The leopard gecko comparison appears in cost, handling, health, tank setup and enrichment. Keep one or two.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Sexing. Belongs in african-fat-tail-handling-guide.
-- [ ] [TRULY MISSING] A decision on cohabitation and males (Sep 8-15). Belongs in african-fat-tail-enrichment-guide.
-- [ ] [TRULY MISSING] Spot-clean and full clean schedule. Belongs in african-fat-tail-tank-setup-guide.
-- [ ] [TRULY MISSING] Hygrometer and scale missing from the cost table (Sep 8-15). Belongs in african-fat-tail-cost-guide.
+- [x] [TRULY MISSING] Sexing. Belongs in african-fat-tail-handling-guide.
+- [x] [TRULY MISSING] A decision on cohabitation and males (Sep 8-15). Belongs in african-fat-tail-enrichment-guide.
+- [x] [TRULY MISSING] Spot-clean and full clean schedule. Belongs in african-fat-tail-tank-setup-guide.
+- [x] [TRULY MISSING] Hygrometer and scale missing from the cost table (Sep 8-15). Belongs in african-fat-tail-cost-guide.
 
 **Short pages**
-- [ ] [SHORT] african-fat-tail-handling-guide 363, african-fat-tail-health-issues-guide 504, african-fat-tail-cost-guide 453, african-fat-tail-enrichment-guide 546.
+- [x] [SHORT] african-fat-tail-handling-guide 363, african-fat-tail-health-issues-guide 504, african-fat-tail-cost-guide 453, african-fat-tail-enrichment-guide 546.
 
 ### California kingsnake (california-kingsnake)
 Status: open
@@ -525,20 +525,20 @@ Status: open
 - [x] [CONTRADICTION] Feeding interval: hub "Hatchlings and juveniles every 5 to 7 days" vs california-kingsnake-feeding-guide table hatchling 5 to 6, juvenile 5 to 7. Split the hub row.
 
 **Low grades and thin pages**
-- [ ] [THIN] The corn snake comparison appears in nearly every deep dive, and the solo-housing paragraph is rewritten seven times. Trim both.
-- [ ] [THIN] Encyclopedia graded B. Low priority.
+- [x] [THIN] The corn snake comparison appears in nearly every deep dive, and the solo-housing paragraph is rewritten seven times. Trim both.
+- [x] [THIN] Encyclopedia graded B. Low priority.
 
 **Gaps: covered, not linked**
 - [x] [COVERED, NOT LINKED] Winter cooling (Sep 8-15): snake-brumation-guide covers whether a pet snake needs brumation and names kingsnakes. Wire it (Session 0) and add one kingsnake sentence with an in-body link in california-kingsnake-feeding-guide where winter appetite comes up.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Juvenile enclosure step between the 20 gallon hatchling tank and the 48x24x24 adult. Belongs in california-kingsnake-tank-setup-guide.
-- [ ] [TRULY MISSING] Vetting a breeder and confirming a pure captive-bred kingsnake. Belongs in california-kingsnake-cost-guide.
-- [ ] [TRULY MISSING] Temperature and humidity numbers and a food-refusal threshold in the health guide (Sep 8-15). Belongs in california-kingsnake-health-issues-guide.
-- [ ] [TRULY MISSING] Hatchling temperatures and hygrometer placement (Sep 8-15). Belongs in california-kingsnake-tank-setup-guide.
+- [x] [TRULY MISSING] Juvenile enclosure step between the 20 gallon hatchling tank and the 48x24x24 adult. Belongs in california-kingsnake-tank-setup-guide.
+- [x] [TRULY MISSING] Vetting a breeder and confirming a pure captive-bred kingsnake. Belongs in california-kingsnake-cost-guide.
+- [x] [TRULY MISSING] Temperature and humidity numbers and a food-refusal threshold in the health guide (Sep 8-15). Belongs in california-kingsnake-health-issues-guide.
+- [x] [TRULY MISSING] Hatchling temperatures and hygrometer placement (Sep 8-15). Belongs in california-kingsnake-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] california-kingsnake-health-issues-guide 410, california-kingsnake-cost-guide 437, california-kingsnake-tank-setup-guide 577, california-kingsnake-enrichment-guide 520.
+- [x] [SHORT] california-kingsnake-health-issues-guide 410, california-kingsnake-cost-guide 437, california-kingsnake-tank-setup-guide 577, california-kingsnake-enrichment-guide 520.
 
 ### Rosy boa (rosy-boa)
 Status: open
@@ -548,8 +548,8 @@ Status: open
 - [x] [CONTRADICTION] Enclosure size: rosy-boa-enrichment-guide argues against the 20 gallon figure in rosy-boa-tank-setup-guide using two borrowed studies (Sep 8-15 and Sep 24). Reconcile or frame 20 gallons as a floor.
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] rosy-boa-enrichment-guide (B): see the size point above.
-- [ ] [THIN] rosy-boa-handling-guide (B+): about a third is boa constrictor comparison, which also appears in five of six deep dives.
+- [x] [LOW GRADE] rosy-boa-enrichment-guide (B): see the size point above.
+- [x] [THIN] rosy-boa-handling-guide (B+): about a third is boa constrictor comparison, which also appears in five of six deep dives.
 
 **Doubted claims**
 - [x] [DOUBTED] Every FAQ repeats the same numbers in the same order across pages, "what a templated content system produces". Vary or trim the FAQs.
@@ -558,12 +558,12 @@ Status: open
 - [x] [COVERED, NOT LINKED] UVB yes or no: uvb-lighting-complete-guide says low-output UVB is now advised for nocturnal and crepuscular species and puts snakes in Zones 1 to 2. Add uvb-lighting-complete-guide to RELATED_ARTICLES['rosy-boa'] and one rosy boa sentence with an in-body link in the lighting section of rosy-boa-tank-setup-guide.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Substrate depth in inches (or a starting fill in cubic feet). Belongs in rosy-boa-tank-setup-guide.
-- [ ] [TRULY MISSING] How often to handle (Sep 8-15). Belongs in rosy-boa-handling-guide.
-- [ ] [TRULY MISSING] Photoperiod (Sep 8-15). Belongs in rosy-boa-tank-setup-guide.
+- [x] [TRULY MISSING] Substrate depth in inches (or a starting fill in cubic feet). Belongs in rosy-boa-tank-setup-guide.
+- [x] [TRULY MISSING] How often to handle (Sep 8-15). Belongs in rosy-boa-handling-guide.
+- [x] [TRULY MISSING] Photoperiod (Sep 8-15). Belongs in rosy-boa-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] rosy-boa-handling-guide 514.
+- [x] [SHORT] rosy-boa-handling-guide 514.
 
 ### Red-eared slider (red-eared-slider)
 Status: open
@@ -573,7 +573,7 @@ Status: open
 - [x] [CONTRADICTION] Adult size: encyclopedia "5-12 inches (13-30 cm)" vs red-eared-slider-tank-setup-guide averages of 25.4 cm females and 17.78 cm males. Align the encyclopedia.
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] red-eared-slider-enrichment-guide (B, filler): about half re-runs the tank guide's water volume, filtration and basking advice. Keep the colored-objects study and new material.
+- [x] [LOW GRADE] red-eared-slider-enrichment-guide (B, filler): about half re-runs the tank guide's water volume, filtration and basking advice. Keep the colored-objects study and new material.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Cycling and ammonia and nitrite targets: aquarium-cycling-guide (body-linked; sidebar in Session 0). The buy list's test kit has no target values; add "ammonia and nitrite at zero" with the link.
@@ -583,11 +583,11 @@ Status: open
 - [x] [COVERED, NOT LINKED] Filter media swap and deep clean (Sep 8-15): aquarium-filtration-guide "Never Replace All Your Media at Once". Add aquarium-filtration-guide to RELATED_ARTICLES['red-eared-slider'] and a sentence with an in-body link in red-eared-slider-tank-setup-guide.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Introduction steps and signs to separate when adding a second slider. Belongs in red-eared-slider-handling-guide.
-- [ ] [TRULY MISSING] The tank setup guide's nesting option and the feeding guide's egg binding section never mention each other; add the egg-binding reason to the nesting line in text (sibling pages, so no link).
+- [x] [TRULY MISSING] Introduction steps and signs to separate when adding a second slider. Belongs in red-eared-slider-handling-guide.
+- [x] [TRULY MISSING] The tank setup guide's nesting option and the feeding guide's egg binding section never mention each other; add the egg-binding reason to the nesting line in text (sibling pages, so no link).
 
 **Short pages**
-- [ ] [SHORT] red-eared-slider-handling-guide 466.
+- [x] [SHORT] red-eared-slider-handling-guide 466.
 
 ### Sulcata tortoise (sulcata-tortoise)
 Status: open
@@ -597,19 +597,19 @@ Status: open
 - [x] [CONTRADICTION] Pyramiding (uneven detail): sulcata-tortoise-feeding-guide FAQ adds that Wiesner and Iben's method "has itself been criticized"; sulcata-tortoise-health-issues-guide, which carries the main discussion, does not. Move the caveat into the health guide.
 
 **Low grades and thin pages**
-- [ ] [THIN] sulcata-tortoise-enrichment-guide (A-, honestly thin on native research). Low priority.
+- [x] [THIN] sulcata-tortoise-enrichment-guide (A-, honestly thin on native research). Low priority.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] UVB replacement: uvb-lighting-complete-guide says replace every 12 months (body-linked from the tank setup guide, which the reader could not find in the set; sidebar in Session 0).
 - [x] [COVERED+LINKED] Six month quarantine reasoning: chelonian-herpesvirus-quarantine-guide (sidebar). The hub states six months with no why; add a clause and link.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] UVB bulb specifics for a sulcata (tube strength, distance). Belongs in sulcata-tortoise-tank-setup-guide.
-- [ ] [TRULY MISSING] Emergency vet cost figure (Sep 8-15). Belongs in sulcata-tortoise-cost-guide.
-- [ ] [TRULY MISSING] How to move or transport an adult (Sep 8-15). Belongs in sulcata-tortoise-handling-guide.
+- [x] [TRULY MISSING] UVB bulb specifics for a sulcata (tube strength, distance). Belongs in sulcata-tortoise-tank-setup-guide.
+- [x] [TRULY MISSING] Emergency vet cost figure (Sep 8-15). Belongs in sulcata-tortoise-cost-guide.
+- [x] [TRULY MISSING] How to move or transport an adult (Sep 8-15). Belongs in sulcata-tortoise-handling-guide.
 
 **Short pages**
-- [ ] [SHORT] sulcata-tortoise-handling-guide 524.
+- [x] [SHORT] sulcata-tortoise-handling-guide 524.
 
 ### Argentine tegu (tegu)
 Status: open
