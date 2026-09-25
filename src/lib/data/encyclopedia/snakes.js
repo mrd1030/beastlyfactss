@@ -8,7 +8,7 @@ export const snakeEncyclopedia = [
       habitat: "Grassland, open forest, and agricultural land",
       adultSize: "3-5 feet (90-150 cm); females significantly larger",
       wildDiet: "Small mammals, birds, and amphibians",
-      wildLifespan: "About 10 years on average in the wild; around 20 years in captivity, with zoo reports approaching 50",
+      wildLifespan: "About 10 years on average in the wild; 20 to 30 years in captivity, up to 48 recorded",
       conservation: "Least Concern (IUCN)",
       history: "Almost the entire pet supply traces to three countries at the center of the range, Benin, Ghana, and Togo, which have exported close to four million ball pythons since 1978, most of them to the United States. Snakes were taken straight from the wild through the 1980s and 1990s, and all three switched to ranching as the dominant reported method in the early 2000s, collecting eggs and juveniles and releasing a share back. The captive-bred hobby most keepers buy from grew out of the 1990s, when the first albino ball pythons were bred and the morph market followed. The species now accounts for roughly 80 percent of all CITES Appendix II snake exports, which is why its trade gets studied more closely than any other snake's.",
     },
@@ -87,7 +87,7 @@ export const snakeEncyclopedia = [
     id: "milk-snake", name: "Milk Snake", scientific: "Lampropeltis triangulum",
     category: "Snakes", emoji: "🐍", difficulty: "Beginner", guideId: "milk-snake", available: true, image: "/assets/guides/milk-snake.jpg",
     bio: {
-      overview: "Milk snakes are a widely distributed kingsnake species found from Canada through Central America. Their name comes from the folk myth that they slipped into barns to drink cow's milk - unfounded, but barn-dwelling rodents are certainly part of their diet. Many subspecies display vivid red, black, and yellow/white banding that mimics the venomous coral snake - a classic example of Batesian mimicry.",
+      overview: "Milk snakes are a widely distributed kingsnake species found from Canada through Central America. Their name comes from the folk myth that they slipped into barns to drink cow's milk - unfounded, but barn-dwelling rodents are certainly part of their diet. Many subspecies display vivid red, black, and yellow/white banding that resembles the venomous coral snake, widely explained as Batesian mimicry.",
       origin: "North and Central America (Canada to Ecuador)",
       habitat: "Rocky hillsides, woodland, grassland, farmland, and forest edges",
       adultSize: "2-4 feet (60-120 cm) depending on subspecies",

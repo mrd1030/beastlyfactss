@@ -291,32 +291,32 @@ Only files this doc checked. No legal guides, care packages, or dog and cat page
 
 ### A. Confirmed conflicts (line references are in section 2)
 
-1. **UVB zone table** (`uvb-lighting-complete-guide.mdx:93-96`): check the UVI figures against Baines et al. 2016, then align the Zone 1 gecko pages (leopard 0.5 to 1.5; crested, gargoyle, leaf-tailed 1.0 to 2.0 in `geckos.js` and the crested setup guide).
-2. **Fish quarantine to 30 days:** molly, platy, swordtail (health and handling), neon (health and setup), zebra danio handling, and hub rows `fish.js:817,903,1093,1190`.
-3. **Fishless cycle to 4 to 6 weeks:** molly, platy and swordtail tank setup guides, `fish.js:810,1084`.
-4. **Ich heat:** betta hub wording (`fish.js:119`); add the 86°F option to the cardinal health guide; discus vs. ich guide after a source check.
-5. **Leaf-tailed health guide:** 4 to 6 weeks to 3 to 6 months.
-6. **Hedgehog overview:** state list and WHS 3%.
-7. **Kingsnake fun fact:** "immune" to "strongly resistant, not immune".
-8. **Chinchilla dust bath:** up to 15 minutes in the setup guide and hub.
-9. **Iguana cost guide:** drop 6x3x6 as a "floor".
-10. **Tortoise soaking table:** Russian juvenile "knees" to "elbows".
-11. **White's tree frog:** UVB replacement to 6 to 8 months (setup and cost).
-12. **Uromastyx:** water dish rule, night low (65 vs. 68), and the dragon figures on the vs. page.
-13. **Axolotl hub and setup:** add the bite risk to the two-axolotl line.
-14. **Tiger salamander:** 68°F to 64°F on the vs. page; one cohousing rule.
-15. **Tegu:** hub and setup feeding schedule to the feeding guide's table.
-16. **Ball python encyclopedia:** fix the `wildLifespan` field.
-17. **Cockatoo lifespan:** reconcile hub and cost guide with the VCA figure (source check).
-18. **Sulcata lifespan:** typical vs. achievable on hub and cost guide.
-19. **Milk snake:** soften "textbook" mimicry in five places; fix the $60 floor.
-20. **Hognose substrate interval** vs. the hygiene guide (source check).
-21. **In-page costs:** lovebird cage table, parrotlet FAQ.
-22. **Small drift:** zebra finch weight, swordtail pH, mourning gecko cost table.
-23. **Overview syncs:** ferret protein and adrenal wording, sugar glider group size (source check), tokay size.
-24. **Conure encyclopedia** time-commitment line.
-25. **Red-eared slider** enrichment link to the box turtle enrichment guide.
-26. **Shrimp molting guide:** amano GH exception (source check).
+1. **UVB zone table** (`uvb-lighting-complete-guide.mdx:93-96`): check the UVI figures against Baines et al. 2016, then align the Zone 1 gecko pages (leopard 0.5 to 1.5; crested, gargoyle, leaf-tailed 1.0 to 2.0 in `geckos.js` and the crested setup guide). [done: table checked against Baines et al. 2016 Table 1 and was shifted one zone; zones corrected, fire skink to Zone 2, tegu to Zone 3; leopard, crested, leaf-tailed to 0.6 to 1.4; gargoyle stays 1.0 to 2.0 (paper puts it in Zone 2); dragon 4.0 to 4.5 is inside the corrected Zone 3 peak. Infographic uvb-lighting-complete-guide-1.jpg still shows the old zones and needs a new image]
+2. **Fish quarantine to 30 days:** molly, platy, swordtail (health and handling), neon (health and setup), zebra danio handling, and hub rows `fish.js:817,903,1093,1190`. [done]
+3. **Fishless cycle to 4 to 6 weeks:** molly, platy and swordtail tank setup guides, `fish.js:810,1084`. [done]
+4. **Ich heat:** betta hub wording (`fish.js:119`); add the 86°F option to the cardinal health guide; discus vs. ich guide after a source check. [done: discus ich heat starts at 86°F, discus protocols go to about 90°F, same wording on health guide, hub and ich guide]
+5. **Leaf-tailed health guide:** 4 to 6 weeks to 3 to 6 months. [done]
+6. **Hedgehog overview:** state list and WHS 3%. [done]
+7. **Kingsnake fun fact:** "immune" to "strongly resistant, not immune". [done]
+8. **Chinchilla dust bath:** up to 15 minutes in the setup guide and hub. [done]
+9. **Iguana cost guide:** drop 6x3x6 as a "floor". [done]
+10. **Tortoise soaking table:** Russian juvenile "knees" to "elbows". [done]
+11. **White's tree frog:** UVB replacement to 6 to 8 months (setup and cost). [done]
+12. **Uromastyx:** water dish rule, night low (65 vs. 68), and the dragon figures on the vs. page. [done: dish stays at every age; night about 68°F, never below 65°F; vs page dragon figures matched]
+13. **Axolotl hub and setup:** add the bite risk to the two-axolotl line. [done]
+14. **Tiger salamander:** 68°F to 64°F on the vs. page; one cohousing rule. [done: one conditional rule, close in size and split at the first nip]
+15. **Tegu:** hub and setup feeding schedule to the feeding guide's table. [done]
+16. **Ball python encyclopedia:** fix the `wildLifespan` field. [done]
+17. **Cockatoo lifespan:** reconcile hub and cost guide with the VCA figure (source check). [done: 25 to 45 typical, larger species 70 to 80 or more (VCA, LafeberVet)]
+18. **Sulcata lifespan:** typical vs. achievable on hub and cost guide. [done]
+19. **Milk snake:** soften "textbook" mimicry in five places; fix the $60 floor. [done]
+20. **Hognose substrate interval** vs. the hygiene guide (source check). [done: three months kept for a dry bed with droppings pulled the same day; damp or soiled bed gets the monthly change]
+21. **In-page costs:** lovebird cage table, parrotlet FAQ. [done]
+22. **Small drift:** zebra finch weight, swordtail pH, mourning gecko cost table. [open: mourning gecko cost table. 12x18x18 is not a stocked retail size (nearest 12x12x18 or 18x18x18), so pricing it needs a call on which size the setup guide and hub should name. Zebra finch weight (10 to 16 g, 0.35 to 0.56 oz) and swordtail pH done]
+23. **Overview syncs:** ferret protein and adrenal wording, sugar glider group size (source check), tokay size. [done: sugar glider is up to seven adults and their young per nest (Australian Museum, ADW)]
+24. **Conure encyclopedia** time-commitment line. [done]
+25. **Red-eared slider** enrichment link to the box turtle enrichment guide. [done]
+26. **Shrimp molting guide:** amano GH exception (source check). [done: amano GH 5 to 15 (Shrimp Science); amano setup guide corrected from 4 to 15]
 
 ### B. Most common gaps
 

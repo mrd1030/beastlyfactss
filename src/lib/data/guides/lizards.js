@@ -153,7 +153,7 @@ export const lizardGuides = [
         { label: "Temperature", value: "Basking 100 to 110F, warm ambient in the 90s, cool side around 80F, nights to 65F. A cluster of basking bulbs or a radiant heat panel on a heavy-duty thermostat rated for the wattage.", source: "argentine-tegu-tank-setup-guide" },
         { label: "Humidity and substrate", value: "70 to 80%, from 12 to 18 inches or more of cypress mulch, coconut fiber, or topsoil that holds a burrow, a large water tub, and usually an automatic mister. Tegus dig and brumate in that burrow.", source: "argentine-tegu-tank-setup-guide" },
         { label: "UVB", value: "A 46-inch T5 HO at 12 to 14%, over a quarter to half the length on the warm side, targeting a UVI of 3.0 to 4.0, with a 6500K LED, on a 12 to 14 hour day.", source: "argentine-tegu-tank-setup-guide" },
-        { label: "Feeding frequency", value: "By age: daily when young, every other day from one to three years, every third day past three. Adults run to obesity, so weigh yours.", source: "argentine-tegu-tank-setup-guide" },
+        { label: "Feeding frequency", value: "Five times a week under six months, four to a year, three at one to two years, twice past two. Adults run to obesity.", source: "argentine-tegu-feeding-guide" },
         { label: "Diet", value: "Insects when young, then pre-killed rodents for protein, never live. Vegetables at every stage and more fruit with age: an all-rodent adult diet is the obesity on the emergency card. Lean meat, fish, and eggs as occasional treats.", source: "argentine-tegu-tank-setup-guide" },
         { label: "Supplements", value: "Calcium without D3 on every meal, a multivitamin weekly, at every age.", source: "argentine-tegu-tank-setup-guide" },
         { label: "Never from your hand", value: "A hungry tegu does not distinguish a finger from food. A bowl, tongs, a puzzle feeder, or a separate feeding container, which teaches it the enclosure is not where food appears.", source: "argentine-tegu-tank-setup-guide" },
@@ -682,7 +682,7 @@ export const lizardGuides = [
     ],
     faqs: [
       { q: "What size enclosure does an adult green iguana need?", a: "An adult needs at least 10 feet long, 5 wide, and 6 tall, with 12 by 6 by 6 also recommended. Nothing commercial comes that big, so it is a custom walk-in build. A juvenile can start in a 4x2x4 or a 40 to 55 gallon tank, but will outgrow it inside a year." },
-      { q: "What does the upfront setup cost?", a: "The first-year kit runs about $1,041 to $1,105 once branches, substrate, a soak tub, and a thermometer are in the pile. The adult enclosure comes a year or two later: a walk-in build is several hundred dollars in materials, a custom builder $1,000 and up, and a made to order 6x3x6 foot box $3,740." },
+      { q: "What does the upfront setup cost?", a: "The first-year kit runs about $1,041 to $1,105 once branches, substrate, a soak tub, and a thermometer are in the pile. The adult enclosure comes a year or two later and has to reach 10x5x6 feet, which no store sells: a walk-in build is several hundred dollars in materials, a custom builder $1,000 and up." },
       { q: "What is the most common health issue in green iguanas?", a: "Metabolic bone disease, probably the most common medical problem in pet iguanas and the disease most commonly seen in lizards generally. Watch for a swollen or rubbery lower jaw, swollen or bowed hind limbs, soft bones, and tremors." },
     ],
   },
@@ -909,7 +909,7 @@ export const lizardGuides = [
     tagline: "The colorful, seed-eating desert dragon that thrives on extreme heat!",
     seoTitle: "Uromastyx Care Guide: Heat, Diet, and Health",
     seoDescription: "Uromastyx care runs hot and dry: a 110 to 120°F basking surface, the 4x2x2 floor, deep sandy substrate, greens that supply its water, and when to call a vet.",
-    funFact: "Uromastyx (also called spiny-tailed lizards) are almost entirely herbivorous. They get nearly all their water from their food and rarely need a standing water dish! They're one of the few reptiles that thrive on seeds.",
+    funFact: "Uromastyx (also called spiny-tailed lizards) are almost entirely herbivorous. They get nearly all their water from their food and rarely drink from a standing water dish, though one should still be there! They're one of the few reptiles that thrive on seeds.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
@@ -943,7 +943,7 @@ export const lizardGuides = [
       rows: [
         { label: "Day one", value: "Quarantine 3 to 6 months away from any reptile you already keep, and two weeks alone to settle before regular handling.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "4 by 2 by 2 feet minimum from day one for species up to about 18 inches; an Egyptian needs up to 8x4x4. One per enclosure. A 20-gallon starter kit is too small.", source: "uromastyx-tank-setup-guide" },
-        { label: "Basking, the defining requirement", value: "A basking surface of 110 to 120°F, at least 130°F for the Egyptian, from halogen floods over a stone stack. Cool zone around 85°F, nights around 65°F with no supplemental heat.", source: "uromastyx-tank-setup-guide" },
+        { label: "Basking, the defining requirement", value: "A basking surface of 110 to 120°F, at least 130°F for the Egyptian, from halogen floods over a stone stack. Cool zone around 85°F, nights 68°F, never below 65°F, usually unheated.", source: "uromastyx-tank-setup-guide" },
         { label: "Humidity", value: "20 to 30% ambient on the cool side, dry enough to make a bearded dragon look tropical, with moisture allowed deeper in a burrow. Coastal species like the Yemen want closer to 50%.", source: "uromastyx-tank-setup-guide" },
         { label: "Substrate", value: "Fine sand, or a mix of 50% play sand, 30% topsoil and 20% excavator clay, at least 4 inches deep for burrowing. No calcium sand or walnut shell, both impaction risks. No moisture-holding coco fiber, mulch, or moss.", source: "uromastyx-tank-setup-guide" },
         { label: "UVB", value: "A T5 HO bulb around 14%, targeting a basking UVI of 4.5 to 6.0, with a bright daylight LED bar, replaced every 6 to 12 months.", source: "uromastyx-tank-setup-guide" },
@@ -994,7 +994,7 @@ export const lizardGuides = [
     ],
     faqs: [
       { q: "What size enclosure does a uromastyx need?", a: "Plan on 4x2x2 feet for species that top out around 18 inches, and up to 8x4x4 for a full-grown Egyptian. Keep it to one animal per enclosure." },
-      { q: "How hot does a uromastyx basking spot need to be?", a: "The basking surface has to hit 110 to 120F, and giant Egyptians want at least 130F. Cool side around 85F, night around 65F, usually with no supplemental heat needed." },
+      { q: "How hot does a uromastyx basking spot need to be?", a: "The basking surface has to hit 110 to 120F, and giant Egyptians want at least 130F. Cool side around 85F, night around 68F and never below 65F, usually with no supplemental heat needed." },
       { q: "What's the most common health issue in captive uromastyx?", a: "Metabolic bone disease. The signs are a soft or hanging jaw, swollen limbs, tremors, deformed bones, and lethargy. Behind it: too little calcium or vitamin D3, weak UVB, or a diet too high in phosphorus or oxalates. Severe cases can be fatal, so always see a vet." },
     ],
   },

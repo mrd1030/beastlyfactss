@@ -157,10 +157,10 @@ UVB (ultraviolet B, 290-320nm wavelength) enables reptiles to synthesize vitamin
 
 **Ferguson Zones**
 Researchers classify reptiles into Ferguson Zones (1-4) based on their natural UV exposure:
-- **Zone 1:** Crepuscular/shade dwellers (crested geckos, leopard geckos) - benefit from low UV (UVI 0.6-1.4)
-- **Zone 2:** Partial sun (corn snakes, ball pythons) - benefit from low-moderate UV
-- **Zone 3:** Open shade/basking (bearded dragons, blue-tongue skinks) - need moderate UV (UVI 1.1-3.0)
-- **Zone 4:** Intense baskers (ackie monitors, tegus) - need high UV (UVI 2.9-7.4+)
+- **Zone 1:** Crepuscular and shade dwellers (crested geckos, leopard geckos): low UV, peak UVI 0.6 to 1.4
+- **Zone 2:** Partial sun (corn snakes, ball pythons, fire skinks): low to moderate UV, peak UVI 1.1 to 3.0
+- **Zone 3:** Open or partial sun baskers (bearded dragons, blue-tongue skinks, tegus): moderate UV, peak UVI 2.9 to 7.4
+- **Zone 4:** Midday sun baskers (ackie monitors, uromastyx): high UV, peak UVI 4.5 to 9.5 in the wild, no more than 7.0 to 8.0 under a lamp
 
 **Practical Takeaways**
 - All reptiles benefit from some form of UV exposure - the question is how much

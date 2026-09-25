@@ -386,7 +386,7 @@ export const turtleGuides = [
         { label: "Pyramiding", value: "Permanent once it happens. Humid hides while growing and a paced diet are the defense, whichever study is right about the cause.", source: "sulcata-tortoise-health-issues-guide" },
         { label: "Handling", value: "A juvenile low to the ground, never flipped: it pushes off hard and a short fall cracks the shell. An adult of 80 to 110 pounds is not lifted; interaction happens at ground level. Two males never together.", source: "sulcata-tortoise-handling-guide" },
         { label: "Budget", value: "A few hundred dollars for the indoor juvenile setup, the cheap phase. A basic outdoor enclosure reaches $1,000 and a heated shelter adds $1,000 or more. Getting an 80-plus pound adult to a vet is a logistics problem to plan early.", source: "sulcata-tortoise-cost-guide" },
-        { label: "Lifespan", value: "70 years or more, potentially 100.", source: "sulcata-tortoise-cost-guide" },
+        { label: "Lifespan", value: "50 to 70 years typical, 70 or more achievable.", source: "sulcata-tortoise-cost-guide" },
         { label: "Adult size", value: "24 to 30 inches (61 to 76 cm); 80 to 110 lbs typical, with large males over 40 inches and 200 lbs." },
       ],
     },

@@ -157,7 +157,7 @@ export const smallMammalEncyclopedia = [
     id: "sugar-glider", name: "Sugar Glider", scientific: "Petaurus breviceps",
     category: "Small Mammals", emoji: "🐿️", difficulty: "Advanced", guideId: "sugar-glider", available: true, image: "/assets/guides/sugar-glider.jpg",
     bio: {
-      overview: "Sugar gliders are small marsupials native to Australia, New Guinea, and eastern Indonesia - more closely related to koalas and kangaroos than to flying squirrels, which they superficially resemble. They possess a membrane (patagium) stretching from wrist to ankle that allows them to glide up to 165 feet between trees. Highly social in the wild, they live in groups of 10-15 individuals and communicate through a range of calls, barks, and crabbing sounds.",
+      overview: "Sugar gliders are small marsupials native to Australia, New Guinea, and eastern Indonesia - more closely related to koalas and kangaroos than to flying squirrels, which they superficially resemble. They possess a membrane (patagium) stretching from wrist to ankle that allows them to glide up to 165 feet between trees. Highly social in the wild, they share nests in groups of up to seven adults and their young, and communicate through a range of calls, barks, and crabbing sounds.",
       origin: "Northern and eastern Australia, New Guinea, eastern Indonesia",
       habitat: "Tropical and temperate forest and woodland",
       adultSize: "5-6 inches (13-15 cm) body; males 100-160 g, females 80-130 g",

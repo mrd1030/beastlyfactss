@@ -93,7 +93,7 @@
     "title": "Four Animals, Four First Impressions That Are Wrong",
     "seoTitle": "Ackie, Milk Snake, Cockroach & Angelfish",
     "seoDescription": "Four pets, four wrong impressions: an ackie needing 170F heat, a harmless coral snake mimic, a docile roach, and an angelfish that eats tankmates at 3 inches.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": true,
     "excerpt": "Look at each of these for the first time and you'd guess wrong about what you're getting: ackie monitor, milk snake, hissing cockroach, and angelfish.",
     "date": "2026-07-21",
@@ -124,7 +124,7 @@
       },
       {
         "q": "Does a milk snake's coral-snake-mimic coloring mean it's dangerous?",
-        "a": "Not at all. The red, black, and yellow banding is a real evolutionary adaptation, Batesian mimicry of the venomous eastern coral snake, but the milk snake itself is completely harmless. For a pet owner buying a captive-bred milk snake from a breeder, there's no real confusion risk at all."
+        "a": "Not at all. The red, black, and yellow banding is widely explained as Batesian mimicry of the venomous eastern coral snake, but the milk snake itself is completely harmless. For a pet owner buying a captive-bred milk snake from a breeder, there's no real confusion risk at all."
       },
       {
         "q": "Is the Madagascar hissing cockroach's hiss a warning?",
@@ -1536,7 +1536,7 @@
     "title": "African Grey Parrot vs. Cockatoo: Which Big Parrot Commitment Fits You",
     "seoTitle": "African Grey vs. Cockatoo: Full Parrot Comparison",
     "seoDescription": "African grey vs cockatoo: greys out-talk every parrot, Alex proved 150+ words, while cockatoos are the loudest, clingiest common pet parrot for affection.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "African grey or cockatoo? The differences in talking ability, noise level, and how intensely each one needs you, not just which one looks more impressive.",
     "date": "2026-08-28",
@@ -1577,7 +1577,7 @@
       },
       {
         "q": "How long do African grey parrots and cockatoos live?",
-        "a": "Both are multi-decade, potentially multi-generational commitments. African greys live a mean of 45 years in captivity, some reaching 60 and exceptional birds 70 to 80. Cockatoos live comparably long, commonly 40 to 60 years and sometimes cited past 70 for some species, meaning either bird bought young can realistically need a plan for who cares for it after its original owner can't."
+        "a": "Both are multi-decade, potentially multi-generational commitments. African greys live a mean of 45 years in captivity, some reaching 60 and exceptional birds 70 to 80. Cockatoos typically live 25 to 45 years, and the larger species 70 to 80 or more, meaning either bird bought young can realistically need a plan for who cares for it after its original owner can't."
       },
       {
         "q": "Which is more likely to develop feather plucking, an African grey or a cockatoo?",
@@ -1597,7 +1597,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1264,
@@ -2027,7 +2027,7 @@
       },
       {
         "q": "What water parameters do amano shrimp need?",
-        "a": "64 to 82°F, pH 6.0 to 7.5, and a GH in roughly the 4 to 15 dGH range, with many keepers targeting 6 to 8 dGH specifically because it supplies the minerals this species needs to molt successfully. KH of about 2 to 8 dKH is a reasonable target. Shrimp kept toward the cooler two-thirds of that temperature range tend to live longer."
+        "a": "64 to 82°F, pH 6.0 to 7.5, and a GH in roughly the 5 to 15 dGH range, which supplies the minerals this species needs to molt successfully. KH of about 2 to 8 dKH is a reasonable target. Shrimp kept toward the cooler two-thirds of that temperature range tend to live longer."
       },
       {
         "q": "Does a tank need to be full of algae to keep amano shrimp?",
@@ -2820,7 +2820,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
@@ -3307,7 +3307,7 @@
     "title": "Common Argentine Tegu Health Issues",
     "seoTitle": "Argentine Tegu Health Issues: Signs & Causes",
     "seoDescription": "Argentine tegu health issues trace to husbandry: MBD from weak UVB, respiratory infection from cold damp air, obesity from a juvenile diet fed too long.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Argentine tegus are hardy animals when housed properly, and the issues that do show up trace back to a fairly small set of preventable husbandry gaps, several tied directly to this species' large size.",
     "date": "2026-07-24",
@@ -3354,7 +3354,7 @@
       },
       {
         "q": "What's the underlying pattern behind most Argentine tegu health issues?",
-        "a": "Weak UVB and calcium cause MBD, poor temperature or humidity control causes respiratory infection, and keeping a juvenile feeding schedule into adulthood causes obesity. The adult schedule is every third day past three years of age, against daily for a young tegu. Getting a large scale setup right and adjusting diet as the tegu matures matter more here than with almost any smaller lizard."
+        "a": "Weak UVB and calcium cause MBD, poor temperature or humidity control causes respiratory infection, and keeping a juvenile feeding schedule into adulthood causes obesity. The adult schedule is twice a week past two years of age, against five times a week for a hatchling. Getting a large scale setup right and adjusting diet as the tegu matures matter more here than with almost any smaller lizard."
       }
     ],
     "relatedProducts": [],
@@ -3442,7 +3442,7 @@
     "title": "Argentine Tegu Enclosure Setup",
     "seoTitle": "Argentine Tegu Enclosure Setup Guide",
     "seoDescription": "Argentine tegus need an 8x4x4ft enclosure minimum, 100-110°F basking heat, 70-80% humidity, and 12-18 inches of substrate deep enough for burrowing.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Argentine tegu husbandry operates at a different scale than most pet lizards, this is a big bodied, high energy animal, and the setup needs to reflect that from the start.",
     "date": "2026-07-24",
@@ -4120,7 +4120,7 @@
     "faqs": [
       {
         "q": "What size tank does an axolotl need?",
-        "a": "A 20-gallon long for one, and a 40-gallon breeder if you keep two. Floor space counts for more than height with a bottom-dweller. Use a secure lid: they can climb out given the chance."
+        "a": "A 20-gallon long for one, and a 40-gallon breeder if you keep two, though axolotls bite at each other's limbs and gills, so housing separately is the safer default. Floor space counts for more than height with a bottom-dweller. Use a secure lid: they can climb out given the chance."
       },
       {
         "q": "What temperature should axolotl water be kept at?",
@@ -8438,7 +8438,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 6,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -11333,7 +11333,7 @@
       },
       {
         "q": "What is ich and how do you treat it in cardinal tetras?",
-        "a": "Small white spots resembling salt grains, caused by the parasite Ichthyophthirius multifiliis, along with flashing against decor, rapid breathing, and lethargy, according to VCA Animal Hospitals. It's treatable, and the protocol runs on medication and daily partial water changes, not on heat: raising the temperature is widely repeated advice the protocol does not call for, and this species hits 50% mortality near 33.7°C."
+        "a": "Small white spots resembling salt grains, caused by the parasite Ichthyophthirius multifiliis, along with flashing against decor, rapid breathing, and lethargy, according to VCA Animal Hospitals. It's treatable with medication and a partial water change each day, or with heat, since this species tolerates water reaching 86°F, the temperature most ich strains cannot survive. Raise the tank slowly with strong aeration and hold it there two weeks. The heat stops at 86°F: this species hits 50% mortality near 33.7°C (about 93°F)."
       },
       {
         "q": "What is fin rot and how serious is it?",
@@ -12777,7 +12777,7 @@
     "slug": "chinchilla-tank-setup-guide",
     "title": "Chinchilla Housing: Dust Baths, Not Water, and a Cool Room",
     "seoTitle": "Chinchilla Cage & Housing Setup Guide",
-    "seoDescription": "Chinchilla setup essentials: a 24x24x36 in. minimum cage, 50-68F room temp, and dust baths (never water) 2-3 times a week for 10-30 minutes.",
+    "seoDescription": "Chinchilla setup essentials: a 24x24x36 in. minimum cage, 50-68F room temp, and dust baths (never water) 2-3 times a week for up to 15 minutes at a time.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Chinchilla care has a few rules that surprise new owners, especially around bathing. Get the cage, the temperature, and the dust bath right, and the rest of this species' care is fairly manageable.",
@@ -12813,7 +12813,7 @@
       },
       {
         "q": "How often should I give my chinchilla a dust bath?",
-        "a": "Two to three times a week, some owners go daily, for about 10 to 30 minutes at a time using roughly 1 to 2 inches of dust in a shallow container. Remove the dust container afterward so it doesn't become a permanent fixture in the cage."
+        "a": "Two to three times a week, some owners go daily, for up to 15 minutes at a time using roughly 1 to 2 inches of dust in a shallow container. Remove the dust container afterward so it doesn't become a permanent fixture in the cage."
       },
       {
         "q": "What temperature should a chinchilla's room be?",
@@ -13460,7 +13460,7 @@
     "title": "Cockatiel vs. Cockatoo: Which Parrot Actually Fits Your Life",
     "seoTitle": "Cockatiel vs. Cockatoo: Full Comparison",
     "seoDescription": "Cockatiel vs cockatoo: real differences in size, noise, lifespan, and daily attention needs, compared side by side.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Cockatiel or cockatoo? The differences in size, noise, lifespan, and how much daily attention each one demands, not just which one is friendlier at the pet store.",
     "date": "2026-08-30",
@@ -13501,7 +13501,7 @@
       },
       {
         "q": "Which lives longer, a cockatiel or a cockatoo?",
-        "a": "Cockatoos, often by decades. A cockatiel typically lives 12 to 15 years, and up to about 25 has been reported. Cockatoos commonly live 40 to 60 years, and the largest species have documented individuals living into their 70s and even 90s in captivity, a commitment that can outlast the person who bought it."
+        "a": "Cockatoos, often by decades. A cockatiel typically lives 12 to 15 years, and up to about 25 has been reported. Cockatoos typically live 25 to 45 years, the larger species 70 to 80 or more, and documented individuals have lived into their 90s in captivity, a commitment that can outlast the person who bought it."
       },
       {
         "q": "Do cockatoos need more daily attention than cockatiels?",
@@ -13517,7 +13517,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
@@ -13528,7 +13528,7 @@
     "slug": "cockatoo-cost-guide",
     "title": "How Much Does a Cockatoo Really Cost?",
     "seoTitle": "Cockatoo Price: $700 to $3,000, Plus $880 to $1,800 Setup",
-    "seoDescription": "Cockatoo costs: $700-3,000 for common species, up to $16,000 for a palm cockatoo, plus $880-1,800 setup and a 40 to 60-plus year lifespan to budget for.",
+    "seoDescription": "Cockatoo costs: $700-3,000 for common species, up to $16,000 for a palm cockatoo, plus $880-1,800 setup and a 25 to 45 year lifespan, 70-plus in large species.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Cockatoos are a serious financial and emotional commitment, and the purchase price is just the smallest part of a decision that plays out over decades.",
@@ -13576,7 +13576,7 @@
       },
       {
         "q": "How long do cockatoos live, and why does that matter for cost?",
-        "a": "40 to 60 years is typical, with some individuals living into their 70s or beyond. That is a lifelong commitment that may need planning across more than one owner's lifetime, and the number worth sitting with before any other cost."
+        "a": "25 to 45 years is typical, and the larger species can reach 70 to 80 or more. That is a lifelong commitment that may need planning across more than one owner's lifetime, and the number worth sitting with before any other cost."
       }
     ],
     "relatedProducts": [
@@ -16074,7 +16074,7 @@
     "title": "Crested Gecko Enclosure Setup: Vertical Space, Humidity, and a Hard Temperature Ceiling",
     "seoTitle": "Crested Gecko Enclosure Setup Guide",
     "seoDescription": null,
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Crested geckos flip the usual reptile setup logic. Where most lizards need a hot basking spot, this species needs you to actively avoid overheating them.",
     "date": "2026-07-12",
@@ -16113,7 +16113,7 @@
       },
       {
         "q": "Does a crested gecko need UVB?",
-        "a": "Not strictly, since a complete diet powder supplies vitamin D3, though low-level UVB is still a good idea. If you add it, keep it low: a 24-inch T5 HO around 5.0, for a UVI of 1.0 to 2.0."
+        "a": "Not strictly, since a complete diet powder supplies vitamin D3, though low-level UVB is still a good idea. If you add it, keep it low: a 24-inch T5 HO around 5.0, for a UVI of 0.6 to 1.4."
       }
     ],
     "relatedProducts": [
@@ -16128,7 +16128,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -17176,7 +17176,7 @@
     "title": "Common Discus Health Issues (And What Actually Prevents Them)",
     "seoTitle": "Discus Health Issues: Signs & Causes",
     "seoDescription": "Discus health guide: ich, hole-in-the-head disease, flukes, and fin rot, with symptoms, treatment, and what the research actually says.",
-    "lastUpdated": "2026-09-08",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Discus have a real reputation for being delicate, and most of what backs that up traces to water quality and stress, just with a narrower margin for error than most fish.",
     "date": "2026-09-08",
@@ -17215,7 +17215,7 @@
       },
       {
         "q": "How do you treat ich in discus?",
-        "a": "Quarantine and raise the temperature, though discus-specific sources go higher than the standard advice for other fish, up to around 90°F rather than 86°F, since discus already live near the upper end of ich's tolerance range. Daily water changes and a copper or formalin-based treatment during quarantine round out the protocol."
+        "a": "Quarantine and heat. Most ich strains cannot survive above 86°F, the top of the 82 to 86°F range discus already live in, and discus-specific protocols take the quarantine tank further, to around 90°F. Daily water changes and a copper or formalin-based treatment during quarantine round out the protocol."
       },
       {
         "q": "What are flukes, and are they a real risk for discus?",
@@ -24234,7 +24234,7 @@
     "title": "How Much Does a Green Iguana Really Cost?",
     "seoTitle": "Green Iguana Price: $20 to $1,000, Kit About $1,000",
     "seoDescription": "Green iguana hatchlings cost $20-100. The first-year kit runs about $1,041-1,105. The adult enclosure is a second purchase a year later.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Green iguanas are cheap to buy as babies, and that low starting price is exactly what leads so many owners to underestimate what they're taking on.",
     "date": "2026-08-11",
@@ -24265,7 +24265,7 @@
       },
       {
         "q": "What does the upfront setup cost?",
-        "a": "The first-year kit runs about $1,041 to $1,105 once branches, substrate, a soak tub, and a thermometer are in the pile. The adult enclosure comes a year or two later: a walk-in build is several hundred dollars in materials, a custom builder $1,000 and up, and a made to order 6x3x6 foot box $3,740."
+        "a": "The first-year kit runs about $1,041 to $1,105 once branches, substrate, a soak tub, and a thermometer are in the pile. The adult enclosure comes a year or two later and has to reach 10x5x6 feet, which no store sells: a walk-in build is several hundred dollars in materials, a custom builder $1,000 and up."
       },
       {
         "q": "What are the ongoing monthly costs?",
@@ -27853,7 +27853,7 @@
     "title": "Western Hognose Snake Enclosure Setup: Dry, Deep, and Built for Burrowing",
     "seoTitle": "Hognose Snake Enclosure Setup Guide",
     "seoDescription": "Western hognose enclosure setup: males need 20 gallons, females 40, basking 90-95°F, 30-50% humidity, and 3-6 inches of dry, diggable substrate.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Western hognose care comes down to a fairly short list of priorities: keep it dry, keep the substrate deep enough to burrow in, and get the heat source right.",
     "date": "2026-07-14",
@@ -30712,7 +30712,7 @@
     "title": "Common Leaf-Tailed Gecko Health Issues",
     "seoTitle": "Leaf-Tailed Gecko Health Issues: Signs & Causes",
     "seoDescription": "Leaf-tailed gecko health issues: dehydration is the fastest-moving danger, plus MBD, respiratory infection, and parasites common in wild-caught imports.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Leaf-tailed geckos are delicate, and dehydration specifically deserves more attention with this species than with almost any other reptile.",
     "date": "2026-07-29",
@@ -30823,7 +30823,7 @@
       },
       {
         "q": "Does a leaf-tailed gecko need UVB?",
-        "a": "Yes, low-output UVB is strongly recommended even for this crepuscular genus. Aim for a UVI of 1.0 to 2.0 at the highest branch, skip basking-strength bulbs, and run the lights on a timer at about 13 hours in summer and 11 in winter."
+        "a": "Yes, low-output UVB is strongly recommended even for this crepuscular genus. Aim for a UVI of 0.6 to 1.4 at the highest branch, skip basking-strength bulbs, and run the lights on a timer at about 13 hours in summer and 11 in winter."
       },
       {
         "q": "Why should I use tap water instead of distilled water for misting?",
@@ -31306,7 +31306,7 @@
     "title": "Leopard Gecko Enclosure Setup: What Your Gecko Actually Needs",
     "seoTitle": "Leopard Gecko Enclosure Setup Guide",
     "seoDescription": "Leopard gecko enclosure setup: 36x18x18in minimum, 88-92F belly heat on a thermostat, and a 70-80% humid hide that prevents most shedding problems.",
-    "lastUpdated": "2026-09-08",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Leopard geckos have a reputation for being low-maintenance, and mostly they are, but a few details around humidity and heat placement matter more than the simplicity suggests.",
     "date": "2026-07-06",
@@ -31359,7 +31359,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1,
+    "sourceCount": 2,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -32643,11 +32643,11 @@
     "path": "/content/guides/milk-snake-cost-guide.mdx",
     "slug": "milk-snake-cost-guide",
     "title": "How Much Does a Milk Snake Really Cost?",
-    "seoTitle": "Milk Snake Price: $60 to $500, Plus $300 to $600 Setup",
-    "seoDescription": "Milk snake cost breakdown: $60-500 for the snake depending on subspecies, a $300-600 setup, just $15-30 monthly, and a 20-plus year lifespan.",
-    "lastUpdated": "2026-09-24",
+    "seoTitle": "Milk Snake Price: $70 to $500, Plus $300 to $600 Setup",
+    "seoDescription": "Milk snake cost breakdown: $70-500 for the snake depending on subspecies, a $300-600 setup, just $15-30 monthly, and a 20-plus year lifespan.",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
-    "excerpt": "Milk snakes span a wide price range by subspecies and morph, $60 to $500 for the animal itself, but even the high end stays affordable next to many other pet reptiles.",
+    "excerpt": "Milk snakes span a wide price range by subspecies and morph, $70 to $500 for the animal itself, but even the high end stays affordable next to many other pet reptiles.",
     "date": "2026-07-21",
     "category": "Reptiles",
     "categories": [
@@ -32849,8 +32849,8 @@
     "slug": "milk-snake-handling-guide",
     "title": "How to Handle a Milk Snake (And the Coral Snake Look-Alike Question)",
     "seoTitle": "How to Handle a Milk Snake Correctly",
-    "seoDescription": "Milk snakes are docile but cannibalistic, never house two together. Their red, black, and yellow banding mimics the venomous coral snake exactly.",
-    "lastUpdated": "2026-09-24",
+    "seoDescription": "Milk snakes are docile but cannibalistic, so never house two together. Their red, black, and yellow banding is widely explained as coral snake mimicry.",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Milk snakes are docile overall and generally tolerate handling well, but they run a bit muskier and flightier than the corn snake, especially while young, plus one firm rule about never housing two together.",
     "date": "2026-07-21",
@@ -32885,7 +32885,7 @@
       },
       {
         "q": "Is the milk snake's banding pattern dangerous, since it looks like a coral snake?",
-        "a": "No. The red, black, and yellow (or white) banding is a case of Batesian mimicry, it evolved to resemble the venomous eastern coral snake closely enough to deter predators, but the milk snake itself is completely harmless."
+        "a": "No. The red, black, and yellow (or white) banding is widely explained as Batesian mimicry: it resembles the venomous eastern coral snake closely enough to deter predators, but the milk snake itself is completely harmless."
       },
       {
         "q": "Does the 'red touches yellow, kill a fellow' rhyme work?",
@@ -33146,7 +33146,7 @@
       },
       {
         "q": "Why do milk snakes get mistaken for venomous snakes?",
-        "a": "Because many milk snake subspecies practice genuine Batesian mimicry, evolving color patterns similar to venomous coral snakes to deter predators. It's effective enough at fooling people that rhymes like 'red touch yellow, kill a fellow' exist specifically to help people tell a harmless milk snake apart from a venomous coral snake in the wild. Corn snakes don't mimic a venomous species and don't carry that same identification risk."
+        "a": "Because many milk snake subspecies carry color patterns similar to venomous coral snakes, widely explained as Batesian mimicry that deters predators. It's effective enough at fooling people that rhymes like 'red touch yellow, kill a fellow' exist specifically to help people tell a harmless milk snake apart from a venomous coral snake in the wild. Corn snakes don't mimic a venomous species and don't carry that same identification risk."
       },
       {
         "q": "How did the corn snake get its name?",
@@ -33465,7 +33465,7 @@
     "title": "Common Molly Health Issues (Starting With the 'Shimmy')",
     "seoTitle": "Molly Fish Health Issues: Signs, Causes & Salt",
     "seoDescription": "Common molly health issues: shimmy, ich, velvet, dropsy, swim bladder disorder, symptoms, causes, and the honest answer on whether salt helps.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Molly shimmy is the one condition specific to this species, and water quality sits underneath almost everything else on this list too. Here's what's going on, and the honest answer on whether salt fixes it.",
     "date": "2026-09-08",
@@ -33509,7 +33509,7 @@
       },
       {
         "q": "How do I prevent most molly health issues in the first place?",
-        "a": "A properly cycled tank, stable temperature, and regular partial water changes prevent far more than any medication does after the fact. Quarantining new fish for 2 to 3 weeks before adding them to an established tank catches most problems, including shimmy, before they spread."
+        "a": "A properly cycled tank, stable temperature, and regular partial water changes prevent far more than any medication does after the fact. Quarantining new fish for at least 30 days before adding them to an established tank catches most problems, including shimmy, before they spread."
       },
       {
         "q": "Is marine salt or table salt safe to use instead of aquarium salt?",
@@ -33540,7 +33540,7 @@
     "title": "Molly Tank Setup: A Real 20 Gallons, Sturdy Filtration, and the Salt Question",
     "seoTitle": "Molly Fish Tank Setup Guide",
     "seoDescription": "Molly fish tank setup guide covering tank size, temperature, water chemistry, filtration, and an honest answer on whether mollies need aquarium salt.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Mollies need more room and sturdier filtration than a guppy, and they raise a question guppies never do: whether the tank needs aquarium salt. Here's a complete, honestly-answered setup guide.",
     "date": "2026-09-09",
@@ -33588,7 +33588,7 @@
       },
       {
         "q": "Do I need to cycle a molly tank before adding fish?",
-        "a": "Yes. A fishless cycle takes 2 to 4 weeks to build the bacteria colony that processes waste, less with a bottled bacteria product. Skip it and you get ammonia-driven stress, which shows up as shimmy and other problems; it's among the most common beginner mistakes in the hobby."
+        "a": "Yes. A fishless cycle takes 4 to 6 weeks to build the bacteria colony that processes waste, less with a bottled bacteria product. Skip it and you get ammonia-driven stress, which shows up as shimmy and other problems; it's among the most common beginner mistakes in the hobby."
       }
     ],
     "relatedProducts": [
@@ -34817,7 +34817,7 @@
     "slug": "neon-tetra-health-issues-guide",
     "title": "Common Neon Tetra Health Issues (Including the Disease Named After This Fish)",
     "seoTitle": "Neon Tetra Health Issues: Signs & Causes",
-    "seoDescription": "Neon tetra disease has no cure and spreads when tankmates eat a dead fish. Ich, fin rot, and swim bladder are treatable, quarantine 2-4 weeks to prevent it.",
+    "seoDescription": "Neon tetra disease has no cure and spreads when tankmates eat a dead fish. Ich, fin rot, and swim bladder are treatable. A 30-day quarantine keeps NTD out.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Most neon tetra health problems are treatable and trace back to water quality. One, though, is different, incurable, and named after this species specifically.",
@@ -34861,7 +34861,7 @@
       },
       {
         "q": "How do I prevent most neon tetra health issues, including NTD?",
-        "a": "Water quality and stability cover the treatable ones: a cycled tank, a steady temperature, and regular water changes. NTD, the one that isn't treatable, is prevented mainly by quarantining new fish 2 to 4 weeks before they join an established tank, the single habit that matters most here."
+        "a": "Water quality and stability cover the treatable ones: a cycled tank, a steady temperature, and regular water changes. NTD, the one that isn't treatable, is prevented mainly by quarantining new fish at least 30 days before they join an established tank, the single habit that matters most here."
       }
     ],
     "relatedProducts": [
@@ -36053,7 +36053,7 @@
     "title": "How Much Does a Parrotlet Really Cost?",
     "seoTitle": "Parrotlet Price: $100 to $900, Plus $160 to $300 Setup",
     "seoDescription": "Parrotlet cost breakdown: $100-$900 for the bird, roughly $160-$300 setup, monthly costs, avian vet pricing, and one bird versus two.",
-    "lastUpdated": "2026-09-20",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Parrotlets are the smallest commonly kept parrot, but the price tag and the personality both punch above that size, pricier than a budgie, cheaper than most larger parrots, and with the same one-bird-or-two decision that reshapes a lovebird budget.",
     "date": "2026-09-20",
@@ -36088,7 +36088,7 @@
       },
       {
         "q": "What are the ongoing monthly costs for a parrotlet?",
-        "a": "Roughly $20 to $40 a month, covering pellets, fresh vegetables, rotating toys (parrotlets are hard on toys for their size), and an amortized share of annual vet care."
+        "a": "Roughly $21 to $33 a month, covering pellets, fresh vegetables, rotating toys (parrotlets are hard on toys for their size), and an amortized share of annual vet care."
       },
       {
         "q": "How much does avian vet care cost for a parrotlet?",
@@ -37059,7 +37059,7 @@
     "title": "Common Platy Health Issues (And the Truth About 'Platy Tumors')",
     "seoTitle": "Platy Fish Health Issues: Signs, Causes & Tumors",
     "seoDescription": "Common platy health issues: ich, fin rot, dropsy, swim bladder, shimmy, plus the honest science on melanoma research and platy tumors.",
-    "lastUpdated": "2026-09-15",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Ich, fin rot, dropsy, and shimmy are the everyday risks. Platies are also famous in cancer genetics for melanoma research, and it's worth knowing exactly what that does and doesn't mean for your fish.",
     "date": "2026-09-10",
@@ -37102,7 +37102,7 @@
       },
       {
         "q": "How do I prevent most platy health issues in the first place?",
-        "a": "A cycled tank, a steady temperature, and regular partial water changes prevent far more than medication does after the fact. Quarantine new fish 2 to 3 weeks before they join an established tank, which catches most problems before they spread."
+        "a": "A cycled tank, a steady temperature, and regular partial water changes prevent far more than medication does after the fact. Quarantine new fish at least 30 days before they join an established tank, which catches most problems before they spread."
       }
     ],
     "relatedProducts": [
@@ -37181,7 +37181,7 @@
     "title": "Platy Tank Setup: A Real 10 Gallons, Hard Water, and a Plan for Fry",
     "seoTitle": "Platy Fish Tank Setup Guide",
     "seoDescription": "Platy fish tank setup guide covering tank size, temperature, hard/alkaline water chemistry, filtration, planting, and planning for fry.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Platies are easy to house well. A real 10 gallons, water on the harder and more alkaline side, and a filter that won't shred fry covers most of what this species needs.",
     "date": "2026-09-11",
@@ -37225,7 +37225,7 @@
       },
       {
         "q": "Do I need to cycle a platy tank before adding fish?",
-        "a": "Yes. A fishless cycle takes 2 to 4 weeks to build the bacteria colony that processes waste, less with a bottled bacteria product. Skip it and ammonia stress follows, showing up as shimmy and other problems; it's among the most common beginner mistakes in the hobby."
+        "a": "Yes. A fishless cycle takes 4 to 6 weeks to build the bacteria colony that processes waste, less with a bottled bacteria product. Skip it and ammonia stress follows, showing up as shimmy and other problems; it's among the most common beginner mistakes in the hobby."
       }
     ],
     "relatedProducts": [
@@ -39366,7 +39366,7 @@
     "title": "Red-Eared Slider Enrichment: Escape Behavior Is the Measurement",
     "seoTitle": "Red-Eared Slider Enrichment Guide",
     "seoDescription": "Colored object enrichment reduced escape behavior and raised activity in captive pond sliders, with clear differences between individuals.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Colored objects cut escape behavior and raised activity in captive sliders. They also worked differently for different individual turtles, which is the more useful half of the finding.",
     "date": "2026-09-04",
@@ -39767,7 +39767,7 @@
     "title": "How Much Does a Red-Footed Tortoise Really Cost?",
     "seoTitle": "Red-Footed Tortoise Price: $150 to $900, Setup $500 to $950",
     "seoDescription": "Red-footed tortoise cost breakdown: $150-900 for the tortoise, $500-950 setup, and the humidity gear a Russian tortoise never needed.",
-    "lastUpdated": "2026-09-23",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Red-footed tortoises land in a useful price bracket, pricier and more space-hungry than a Russian tortoise, but nowhere near the multi-thousand-dollar outdoor build a sulcata eventually demands.",
     "date": "2026-09-23",
@@ -42460,7 +42460,7 @@
     "title": "Shrimp Molting: What a Normal Molt Looks Like, and the White Ring That Means It Failed",
     "seoTitle": "Shrimp Molting: Normal Molts and the White Ring",
     "seoDescription": "Shrimp molting explained: adults every 3 to 4 weeks, juveniles every 1 to 2, the GH 6 to 12 range that makes a clean molt, and the white ring of death.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "The invertebrate molting guide is about tarantulas and hermit crabs. This is the aquatic one: how often a shrimp molts, the hour of stillness before and the days of hiding after, why the empty shell stays in the tank, the GH numbers that make or break a molt, and the white ring that means it has already gone wrong.",
     "date": "2026-09-16",
@@ -42501,7 +42501,7 @@
       },
       {
         "q": "What GH do shrimp need to molt?",
-        "a": "Neocaridina, the cherry shrimp, GH 6 to 12 with 7 to 8 the sweet spot. Caridina species GH 4 to 6. Whatever the number, the rule that matters is stability: never raise GH by more than 2 points in a day, and never swing it with a big water change."
+        "a": "Neocaridina, the cherry shrimp, GH 6 to 12 with 7 to 8 the sweet spot. Caridina species GH 4 to 6, except the amano, a hard-water Caridina that molts across GH 5 to 15. Whatever the number, the rule that matters is stability: never raise GH by more than 2 points in a day, and never swing it with a big water change."
       }
     ],
     "relatedProducts": [
@@ -42512,7 +42512,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
@@ -44204,7 +44204,7 @@
     "title": "Four Pets Decided Before You Ever Set Up the Tank",
     "seoTitle": "Sulcata Tortoise, Hedgehog, Lovebird & Guppy Compared",
     "seoDescription": null,
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": true,
     "excerpt": "Each of these has one decision that matters more than anything in the care sheet, and it happens before or at the moment of purchase, not after.",
     "date": "2026-07-20",
@@ -44231,11 +44231,11 @@
     "faqs": [
       {
         "q": "Why does a sulcata tortoise's outdoor space matter more than its enclosure at purchase?",
-        "a": "Because a hatchling grows fast. Sulcatas reach 80 to 110 pounds and can live 70 years or more, potentially 100, and within 5 to 10 years an indoor setup simply stops working. The decision isn't what tank to buy today, it's whether you'll have real outdoor space and a multi-decade plan within just a few years."
+        "a": "Because a hatchling grows fast. Sulcatas reach 80 to 110 pounds and typically live 50 to 70 years, 70 or more with good care, and within 5 to 10 years an indoor setup simply stops working. The decision isn't what tank to buy today, it's whether you'll have real outdoor space and a multi-decade plan within just a few years."
       },
       {
         "q": "Is it true that hedgehogs are illegal in some places?",
-        "a": "Yes. Hedgehogs are banned outright in California, Georgia, Hawaii, and Washington D.C., restricted in Pennsylvania and Maine, and require a permit in New Jersey and Wisconsin. Legality can also vary by city within an otherwise legal state, New York City bans them even though the rest of New York State allows ownership."
+        "a": "Yes. Hedgehogs are banned in California, Georgia, Hawaii, Pennsylvania, Washington D.C., and New York City, and New Jersey is the only state that requires a permit. Legality can also vary by city within an otherwise legal state: New York City bans them even though the rest of New York State allows ownership."
       },
       {
         "q": "Does it matter whether you get one lovebird or two?",
@@ -44263,7 +44263,7 @@
     "slug": "sulcata-tortoise-cost-guide",
     "title": "How Much Does a Sulcata Tortoise Really Cost?",
     "seoTitle": "Sulcata Tortoise Price: $100 to $600, Plus $300+ Setup",
-    "seoDescription": "Full sulcata tortoise cost breakdown: cheap hatchling, expensive adult. Setup, vet care, and why a 70-plus year lifespan changes it.",
+    "seoDescription": "Full sulcata tortoise cost breakdown: cheap hatchling, expensive adult. Setup, vet care, and why a 50 to 70 year lifespan, 70-plus with good care, changes it.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Sulcata tortoises are cheap to buy as hatchlings and one of the most expensive long-term commitments in the entire reptile hobby. The gap between those two facts is the whole story.",
@@ -44307,7 +44307,7 @@
       },
       {
         "q": "How long do sulcata tortoises live, and why does that matter for budgeting?",
-        "a": "70 years or more with good care, potentially 100. The tortoise may outlive you, which is why exotic vet organizations recommend naming a permanent caretaker or a sanctuary placement in your own long-term planning."
+        "a": "50 to 70 years is typical, and 70 years or more is achievable with good care. The tortoise may outlive you, which is why exotic vet organizations recommend naming a permanent caretaker or a sanctuary placement in your own long-term planning."
       }
     ],
     "relatedProducts": [
@@ -44478,7 +44478,7 @@
     "title": "How to Handle a Sulcata Tortoise (While You Still Can)",
     "seoTitle": "How to Handle a Sulcata Tortoise Safely",
     "seoDescription": "Sulcata tortoise handling: only juveniles can be safely picked up, since adults weigh 80-110 lbs (200 for males) and reliable sexing waits until 10-15 inches.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Sulcata tortoises are personable and curious, but real handling, picking the animal up, is only practical while it's still a juvenile. After that, the relationship changes shape entirely.",
     "date": "2026-07-23",
@@ -44534,7 +44534,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -44740,7 +44740,7 @@
     "title": "Sulcata Tortoise vs. Russian Tortoise: Which Tortoise Actually Fits Your Space",
     "seoTitle": "Sulcata vs. Russian Tortoise: Size & Care Compared",
     "seoDescription": null,
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Sulcata or Russian tortoise? The differences in adult size, housing, and how many decades you're signing up for, not just which hatchling looks cuter.",
     "date": "2026-08-25",
@@ -44781,7 +44781,7 @@
       },
       {
         "q": "How long do sulcata and Russian tortoises live?",
-        "a": "Both are multi-generational commitments. A Russian tortoise commonly lives 40 to 50 years. A sulcata can live 70 years or more with good care, potentially 100, meaning a hatchling bought today could realistically outlive the person who bought it and need to be rehomed to family."
+        "a": "Both are multi-generational commitments. A Russian tortoise commonly lives 40 to 50 years. A sulcata typically lives 50 to 70 years, and 70 or more is achievable with good care, meaning a hatchling bought today could realistically outlive the person who bought it and need to be rehomed to family."
       },
       {
         "q": "Do sulcata tortoises and Russian tortoises need to brumate or hibernate?",
@@ -44801,7 +44801,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1264,
@@ -45064,7 +45064,7 @@
       },
       {
         "q": "Do I need to quarantine a new swordtail?",
-        "a": "Yes. A separate tank for 2 to 4 weeks before adding a new fish to your established tank catches most problems before they spread, the same practice that applies across nearly every aquarium fish."
+        "a": "Yes. A separate tank for at least 30 days before adding a new fish to your established tank catches most problems before they spread, the same practice that applies across nearly every aquarium fish."
       }
     ],
     "relatedProducts": [],
@@ -45085,7 +45085,7 @@
     "title": "Common Swordtail Health Issues (Including the One That Isn't a Pathogen)",
     "seoTitle": "Swordtail Fish Health Issues: Signs & Causes",
     "seoDescription": "Common swordtail health issues: ich, fin rot, dropsy, swim bladder disorder, symptoms, causes, and why an unbalanced sex ratio is a real health risk too.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Ich, fin rot, dropsy, and swim bladder disorder cover most of it, but swordtails carry one more genuine health risk that has nothing to do with a pathogen at all.",
     "date": "2026-09-12",
@@ -45128,7 +45128,7 @@
       },
       {
         "q": "How do I prevent most swordtail health issues in the first place?",
-        "a": "A properly cycled tank, a stable temperature, regular partial water changes, and a sane male-to-female ratio prevent far more than any medication does after the fact. Quarantine any new fish for 2 to 4 weeks before it joins an established tank, which stops most problems spreading."
+        "a": "A properly cycled tank, a stable temperature, regular partial water changes, and a sane male-to-female ratio prevent far more than any medication does after the fact. Quarantine any new fish for at least 30 days before it joins an established tank, which stops most problems spreading."
       }
     ],
     "relatedProducts": [
@@ -45228,7 +45228,7 @@
     "title": "T5 vs Compact UVB: Which One Won't Fail Your Reptile",
     "seoTitle": "T5 vs Compact UVB: Which Reptile Bulb Actually Works",
     "seoDescription": "T5 tubes and compact coil UVB bulbs are not interchangeable. Which fits your enclosure, which species need which strength, and when the cheap coil is a trap.",
-    "lastUpdated": "2026-09-02",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "T5 tubes and compact coil UVB bulbs are not interchangeable. Which one fits your enclosure, which species need which strength, and when the coil is a trap.",
     "date": "2026-09-02",
@@ -46087,7 +46087,7 @@
     "title": "Tiger Salamander Enrichment: Underground Is Where the Animal Lives",
     "seoTitle": "Tiger Salamander Enrichment Guide",
     "seoDescription": "Tiger salamanders are fossorial and spend most of their lives underground. Substrate depth is the enrichment decision that matters most.",
-    "lastUpdated": "2026-09-15",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "A tiger salamander spends most of its life in a burrow it dug. Shallow substrate does not make it more visible, it just takes the burrow away.",
     "date": "2026-09-04",
@@ -46458,7 +46458,7 @@
       },
       {
         "q": "Can tiger salamanders be housed together?",
-        "a": "Usually not. Competition and even cannibalism are real risks, though a very large enclosure can sometimes hold a small group, worth researching before you try it."
+        "a": "Usually not. Competition and even cannibalism are real risks. Two adults can share only when they are close in size and have at least a 20-gallon long of floor space, and a pair that starts nipping tails or toes gets separate enclosures that day."
       },
       {
         "q": "What temperature and humidity does a tiger salamander need?",
@@ -47188,7 +47188,7 @@
     "title": "Tortoise Soaking: How Often, How Deep, How Warm, and How Long",
     "seoTitle": "Tortoise Soaking: How Often, How Deep, How Long",
     "seoDescription": "How to soak a tortoise or box turtle: hatchlings daily, desert adults weekly, tropical species 2 to 3 times a week, elbow deep, warm, 10 to 30 minutes.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Every tortoise page says the animal soaks often and none says what that looks like. Here is the schedule by age and species, the depth that keeps the head up, the water temperature, the minutes, and the two things a soak is quietly checking.",
     "date": "2026-09-16",
@@ -47705,7 +47705,7 @@
       },
       {
         "q": "How hot does a uromastyx basking spot need to be?",
-        "a": "The basking surface has to hit 110 to 120F, and giant Egyptians want at least 130F. Cool side around 85F, night around 65F, usually with no supplemental heat needed."
+        "a": "The basking surface has to hit 110 to 120F, and giant Egyptians want at least 130F. Cool side around 85F, night around 68F and never below 65F, usually with no supplemental heat needed."
       },
       {
         "q": "How humid should a uromastyx enclosure be?",
@@ -47736,7 +47736,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -47748,7 +47748,7 @@
     "title": "Four Animals That Break Their Own Category's Rules",
     "seoTitle": "Uromastyx, Gecko, Grey Parrot & Spider",
     "seoDescription": "Uromastyx eat no meat and need drier heat than a bearded dragon. Tokay geckos bite hard, African greys live 45+ years, and jumping spiders hunt by eyesight.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": true,
     "excerpt": "Each of these four breaks the pattern its own category set: a lizard that won't eat meat, a gecko that isn't calm, a bird that might outlive you, and a spider that hunts by sight.",
     "date": "2026-07-24",
@@ -47816,7 +47816,7 @@
     "title": "Uromastyx vs. Bearded Dragon: Which Desert Lizard Fits Your Setup",
     "seoTitle": "Uromastyx vs. Bearded Dragon: Full Comparison",
     "seoDescription": "Uromastyx vs bearded dragon: real differences in diet, UVB needs, temperament, and lifespan, compared side by side.",
-    "lastUpdated": "2026-08-31",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Uromastyx or bearded dragon? The differences in diet, UVB intensity, and how strictly herbivorous one of them is, not just which one looks friendlier at the pet store.",
     "date": "2026-08-31",
@@ -47856,7 +47856,7 @@
       },
       {
         "q": "Which lives longer, a uromastyx or a bearded dragon?",
-        "a": "Uromastyx, often by several years. A uromastyx commonly lives 15 to 20 years with good care. A bearded dragon commonly lives 8 to 12 years. Both are real commitments, but the uromastyx is the longer one."
+        "a": "Uromastyx, often by several years. A uromastyx commonly lives 15 to 20 years with good care. A bearded dragon commonly lives 10 to 15 years. Both are real commitments, but the uromastyx is the longer one."
       },
       {
         "q": "Are uromastyx as calm to handle as bearded dragons?",
@@ -47956,7 +47956,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
+    "sourceCount": 6,
     "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 784,
@@ -48188,7 +48188,7 @@
     "title": "Three Pets Whose Drama Isn't the Real Story",
     "seoTitle": "Veiled Chameleon, Ferret & Hognose Snake Compared",
     "seoDescription": null,
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": true,
     "excerpt": "A hissing chameleon, a nipping ferret, and a cobra-hooding snake all look like the thing to worry about. In every case, the risk is something quieter.",
     "date": "2026-07-15",
@@ -48620,7 +48620,7 @@
     "title": "How Much Does a White's Tree Frog Really Cost?",
     "seoTitle": "White's Tree Frog Price: $20 to $60, Plus $200 to $400 Setup",
     "seoDescription": "White's tree frog cost: $20-60 per frog, a $200-400 setup, and why the 16 year average lifespan (one hit 21) makes this a long haul, not a summer pet.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "White's tree frogs, sometimes called dumpy tree frogs for their round, waxy-skinned build, are one of the more affordable and forgiving amphibians to keep, both to buy and to maintain long term.",
     "date": "2026-07-16",
@@ -48655,7 +48655,7 @@
       },
       {
         "q": "What are the ongoing monthly costs for a White's tree frog?",
-        "a": "Roughly $13 to $24 a month. The recurring line items, feeder insects, supplements, the UVB bulb and water conditioner, come to $155 to $285 across a year, and substrate and modest electricity go on top of that. This isn't a species with heavy recurring expenses once the enclosure is built."
+        "a": "Roughly $15 to $30 a month. The recurring line items, feeder insects, supplements, the UVB bulb and water conditioner, come to $178 to $365 across a year, and substrate and modest electricity go on top of that. This isn't a species with heavy recurring expenses once the enclosure is built."
       },
       {
         "q": "How much does veterinary care cost for a White's tree frog?",
@@ -48956,7 +48956,7 @@
     "title": "White's Tree Frog Enclosure Setup: What Your Frog Actually Needs",
     "seoTitle": "White's Tree Frog Enclosure Setup Guide",
     "seoDescription": "White's tree frogs need an 18x18x24 inch enclosure and humidity that dips to 50-60% between mistings, not a constant 70-80% that causes bacterial infections.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "White's tree frogs are a forgiving amphibian to set up correctly once you understand the one detail that trips up a lot of first-time keepers: humidity that's too constantly high causes more problems than humidity that dips a bit low between mistings.",
     "date": "2026-07-16",
@@ -48995,7 +48995,7 @@
       },
       {
         "q": "Does a White's tree frog need UVB lighting?",
-        "a": "Recommended, though not strictly required: the species survives without UVB and does better with it. Use a low-output T5 in the 5 to 7% range with the basking branch at least 6 inches below the fixture, and replace it every 9 to 12 months even while it still lights up."
+        "a": "Recommended, though not strictly required: the species survives without UVB and does better with it. Use a low-output T5 in the 5 to 7% range with the basking branch at least 6 inches below the fixture, and replace it every 6 to 8 months even while it still lights up."
       },
       {
         "q": "What substrate is safe for a White's tree frog?",
@@ -49823,7 +49823,7 @@
     "title": "Zebra Danio Handling: Why the Easiest Fish to Keep Is One of the Hardest to Catch",
     "seoTitle": "Handling Zebra Danios: Netting and Acclimating",
     "seoDescription": "Zebra danios aren't hand-handled, and they're fast enough that netting takes real technique. School size and safe transfer covered.",
-    "lastUpdated": "2026-09-13",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Zebra danios are an observation pet, not a hands-on one, and their speed makes even netting a real skill. Between school size and a fast fish, technique matters more here than it does for most beginner community fish.",
     "date": "2026-09-13",

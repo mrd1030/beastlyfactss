@@ -168,7 +168,7 @@ export const snakeGuides = [
     tagline: "The boldly banded beginner snake that becomes a gem with handling!",
     seoTitle: "California Kingsnake Care Guide: Setup, Diet, and Handling",
     seoDescription: "California kingsnakes eat other snakes, so this one lives alone: the 48x24x24 adult enclosure, heat and humidity, feeding, handling timing, and shed trouble.",
-    funFact: "Kingsnakes are immune to the venom of rattlesnakes, copperheads, and cottonmouths, and they actively hunt and eat other snakes, including venomous ones! The name 'King' is well earned.",
+    funFact: "Kingsnakes are strongly resistant, not immune, to the venom of rattlesnakes, copperheads, and cottonmouths, and they actively hunt and eat other snakes, including venomous ones! The name 'King' is well earned.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
@@ -507,7 +507,7 @@ export const snakeGuides = [
     tagline: "The brilliantly banded mimic that wears venomous colors with no venom required!",
     seoTitle: "Milk Snake Care Guide: Setup, Feeding, and Temperament",
     seoDescription: "Milk snakes hide, musk, and eat each other: the 48x24x24 enclosure, the moisture balance behind most illness, feeding by age, and the states that restrict them.",
-    funFact: "Milk snakes are harmless, but their red, black, and yellow banding mimics the deadly coral snake: a survival trick called Batesian mimicry. The rhyme 'Red touch yellow, kill a fellow; red touch black, friend of Jack' helps tell them apart!",
+    funFact: "Milk snakes are harmless, but their red, black, and yellow banding resembles the deadly coral snake, a survival trick widely explained as Batesian mimicry. The rhyme 'Red touch yellow, kill a fellow; red touch black, friend of Jack' helps tell them apart!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
@@ -537,7 +537,7 @@ export const snakeGuides = [
         { label: "Temperament", value: "Docile, though muskier and flightier than a corn snake, especially young. Jumpy juveniles settle with regular gentle handling.", source: "milk-snake-handling-guide" },
         { label: "Cover, not a smaller box", value: "Cork tubes and flats, leaf litter over deep aspen, and planting dense enough to break sightlines, so it can cross the enclosure without being exposed. A braced branch adds a level they use. Two hides is the start, not the finish.", source: "milk-snake-enrichment-guide" },
         { label: "The moisture dial", value: "Too wet is scale rot; too dry is retained shed, which shows first as a shed in pieces. The central skill of keeping this species.", source: "milk-snake-health-issues-guide" },
-        { label: "Budget", value: "$60 to $500 for the snake by subspecies and morph, roughly $300 to $600 for the setup, then $15 to $30 a month. A routine exam is $50 to $100, with a fecal test at $25 to $50.", source: "milk-snake-cost-guide" },
+        { label: "Budget", value: "$70 to $500 for the snake by subspecies and morph, roughly $300 to $600 for the setup, then $15 to $30 a month. A routine exam is $50 to $100, with a fecal test at $25 to $50.", source: "milk-snake-cost-guide" },
         { label: "Lifespan", value: "20 years or more with good care.", source: "milk-snake-cost-guide" },
         { label: "Adult size", value: "2 to 4 feet (60 to 120 cm) depending on subspecies." },
         { label: "Hygiene", value: "Wash hands with soap after any contact, keep the snake out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
@@ -556,7 +556,7 @@ export const snakeGuides = [
       vetLine: "Respiratory infection always needs a vet, since it needs antibiotics and won't clear up on its own. So does scale rot, which veterinary sources document as a real risk that can progress to septicemia and become fatal if left untreated, and the substrate and cleaning routine have to be fixed at the same time: treatment alone doesn't fix a setup that's still too damp.",
     },
     routes: [
-      { slug: "milk-snake-cost-guide", line: "$60 to $500 by subspecies and morph, the $300 to $600 setup, and why the real commitment here is time rather than money." },
+      { slug: "milk-snake-cost-guide", line: "$70 to $500 by subspecies and morph, the $300 to $600 setup, and why the real commitment here is time rather than money." },
       { slug: "milk-snake-tank-setup-guide", line: "The 48x24x24 minimum, the halogen bulb over a basking stone, the moisture balance, feeding, and the no-cohabitation rule." },
       { slug: "milk-snake-feeding-guide", line: "Prey at 1.5 times the body width or 10% of its weight, every 5 to 7 days as a hatchling and 10 to 14 as an adult, and why hatchlings eat snakes." },
       { slug: "milk-snake-handling-guide", line: "A muskier, flightier temperament than a corn snake's, the cannibalism rule, and where the red-touches-yellow rhyme stops working." },
