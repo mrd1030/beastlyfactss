@@ -98,21 +98,21 @@ Suggested sessions: F1 swordtail, cherry-shrimp, corydoras-catfish, koi, oscar. 
 Fish acclimation (drip vs float, how many to add at once) is not covered by any shared guide; aquarium-stocking-and-tankmates-guide only mentions floating the bag. It is listed per species below.
 
 ### Swordtail (swordtail)
-Status: open
+Status: done 2026-09-25
 
 **Errors and contradictions**
 - [x] [CONTRADICTION] Male to female ratio: hub "one male to three or four females" vs hub FAQ "some say two or three" vs swordtail-enrichment-guide "two to three females per male minimum". Give the hub the same range the deep dives use.
 - [x] [CONTRADICTION] Feeding frequency: hub "once or twice a day" vs swordtail-feeding-guide "some care sheets recommend two to three smaller meals". Carry the disagreement onto the hub.
 
 **Low grades and thin pages**
-- [ ] [THIN] swordtail-handling-guide (B+): "First-Time Keeper Mistakes" repeats the enrichment guide's "What Not to Do" list point for point (two males, small tank, no lid, platy hybrids). Cut one list.
-- [ ] [THIN] swordtail-cost-guide and swordtail-handling-guide both retell platy interbreeding and the 20 to 100 fry every four weeks as a new discovery. Keep one full telling.
+- [x] [THIN] swordtail-handling-guide (B+): "First-Time Keeper Mistakes" repeats the enrichment guide's "What Not to Do" list point for point (two males, small tank, no lid, platy hybrids). Cut one list.
+- [x] [THIN] swordtail-cost-guide and swordtail-handling-guide both retell platy interbreeding and the 20 to 100 fry every four weeks as a new discovery. Keep one full telling.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Plant list and lighting spec that keep the female-refuge plants alive under the "basic LED, 8 to 10 hours" setup. Belongs in swordtail-tank-setup-guide.
+- [x] [TRULY MISSING] Plant list and lighting spec that keep the female-refuge plants alive under the "basic LED, 8 to 10 hours" setup. Belongs in swordtail-tank-setup-guide.
 
 ### Cherry shrimp (cherry-shrimp)
-Status: open
+Status: done 2026-09-25
 
 **Errors and contradictions**
 - [x] [CONTRADICTION] Origin: encyclopedia "Taiwan and eastern China" vs cherry-shrimp-tank-setup-guide "Taiwan, eastern China, the Korean peninsula, and Vietnam". Pick one sourced range.
@@ -123,53 +123,53 @@ Status: open
 - [x] [COVERED+LINKED] Soft source water: freshwater-ph-gh-kh-guide covers RO blending and remineralizing (sidebar). The hub FAQ says only "test and adjust gradually".
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Starting dose of a remineralizer for water that tests too soft. Belongs in cherry-shrimp-tank-setup-guide.
+- [x] [TRULY MISSING] Starting dose of a remineralizer for water that tests too soft. Belongs in cherry-shrimp-tank-setup-guide.
 
 ### Corydoras catfish (corydoras-catfish)
-Status: open
+Status: done 2026-09-25
 
 **Errors and contradictions**
 - [x] [CONTRADICTION] Barbel erosion (framing): corydoras-catfish-health-issues-guide calls sharp substrate "the usual explanation" vs corydoras-catfish-enrichment-guide "probably wrong about the reason", bacterial load first (Vanderzwalmen 2022). The health guide's seoDescription still states "barbel erosion from sharp substrate" flat (Sep 8-15). Align both to the enrichment guide's cited position.
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] corydoras-catfish-handling-guide (C, thin): a handling guide for an unhandled fish that restates the hub's schooling and air-gulping facts. Rebuild it around the one contact moment: netting (pectoral spines lock in mesh, a fact now sitting in the enrichment guide), arrival acclimation, water changes around a bottom feeder, and dwarf vs standard ID (Sep 8-15).
-- [ ] [THIN] The "Jackson's Chameleon, Canary, Giant Millipede & Corydoras compared" link and blurb is pasted into five of six deep dives. Keep it on one page.
+- [x] [LOW GRADE] corydoras-catfish-handling-guide (C, thin): a handling guide for an unhandled fish that restates the hub's schooling and air-gulping facts. Rebuild it around the one contact moment: netting (pectoral spines lock in mesh, a fact now sitting in the enrichment guide), arrival acclimation, water changes around a bottom feeder, and dwarf vs standard ID (Sep 8-15).
+- [x] [THIN] The "Jackson's Chameleon, Canary, Giant Millipede & Corydoras compared" link and blurb is pasted into five of six deep dives. Keep it on one page.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Quarantine and cycling: fish-quarantine-and-treatment-guide and aquarium-cycling-guide are in the sidebar. The hub's first-week list should name the 30 day quarantine with an in-body link.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] How to vacuum sand without clouding the tank. Belongs in corydoras-catfish-tank-setup-guide.
-- [ ] [TRULY MISSING] Which Corydoras species want cooler or warmer water (Sep 8-15). Belongs in corydoras-catfish-tank-setup-guide.
-- [ ] [TRULY MISSING] Arrival acclimation method. Belongs in the rebuilt handling guide.
+- [x] [TRULY MISSING] How to vacuum sand without clouding the tank. Belongs in corydoras-catfish-tank-setup-guide.
+- [x] [TRULY MISSING] Which Corydoras species want cooler or warmer water (Sep 8-15). Belongs in corydoras-catfish-tank-setup-guide.
+- [x] [TRULY MISSING] Arrival acclimation method. Belongs in the rebuilt handling guide.
 
 **Short pages**
-- [ ] [SHORT] corydoras-catfish-handling-guide 417, corydoras-catfish-health-issues-guide 535, corydoras-catfish-cost-guide 582, corydoras-catfish-tank-setup-guide 559.
+- [x] [SHORT] corydoras-catfish-handling-guide 417, corydoras-catfish-health-issues-guide 535, corydoras-catfish-cost-guide 582, corydoras-catfish-tank-setup-guide 559.
 
 ### Koi (koi)
-Status: open
+Status: done 2026-09-25
 
 **Errors and contradictions**
 - [x] [CONTRADICTION] Adult size: hub and encyclopedia "12-36 inches" vs koi-handling-guide and koi-vs-goldfish-guide "24 to 25 inches, up to 3 feet" vs koi-enrichment-guide "around two feet". The 12 inch floor appears nowhere else. State one range.
 
 **Low grades and thin pages**
-- [ ] [THIN] koi-vs-goldfish-guide (B, filler): the size and lifespan sections rerun cost and setup numbers. Replace with material only a comparison can give.
-- [ ] [THIN] Encyclopedia graded B (background only). Low priority.
+- [x] [THIN] koi-vs-goldfish-guide (B, filler): the size and lifespan sections rerun cost and setup numbers. Replace with material only a comparison can give.
+- [x] [THIN] Encyclopedia graded B (background only). Low priority.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Water test targets (ammonia and nitrite at zero) and the first pond cycle: aquarium-cycling-guide (sidebar). koi-tank-setup-guide and koi-health-issues-guide tell readers to "correct water quality" without the numbers; add them with an in-body link.
 - [x] [COVERED+LINKED] Filtration sizing method: aquarium-filtration-guide gives turnover math (sidebar) but no pond figures. Link it from koi-tank-setup-guide and add the pond number (see truly missing).
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Pond filtration sizing in GPH or turnover per hour against volume and stocking, and EPDM liner sizing math. Belongs in koi-tank-setup-guide.
-- [ ] [TRULY MISSING] What happens after a KHV diagnosis and who it is reported to (Sep 8-15). Belongs in koi-health-issues-guide.
-- [ ] [TRULY MISSING] Arrival acclimation (Sep 8-15). Belongs in koi-handling-guide.
+- [x] [TRULY MISSING] Pond filtration sizing in GPH or turnover per hour against volume and stocking, and EPDM liner sizing math. Belongs in koi-tank-setup-guide.
+- [x] [TRULY MISSING] What happens after a KHV diagnosis and who it is reported to (Sep 8-15). Belongs in koi-health-issues-guide.
+- [x] [TRULY MISSING] Arrival acclimation (Sep 8-15). Belongs in koi-handling-guide.
 
 **Short pages**
-- [ ] [SHORT] koi-handling-guide 480.
+- [x] [SHORT] koi-handling-guide 480.
 
 ### Oscar (oscar)
-Status: open
+Status: done 2026-09-25
 
 **Errors and contradictions**
 - [x] [CONTRADICTION] Hole-in-the-head causes (framing): oscar-fish-health-issues-guide lists nitrate, nutrition, "prolonged carbon use" vs oscar-fish-feeding-guide overfeeding, water quality, diet monotony, vitamins. Give both pages the same disputed-cause list.
@@ -183,14 +183,14 @@ Status: open
 - [x] [COVERED+LINKED] Introducing a tankmate or second oscar: aquarium-stocking-and-tankmates-guide "Adding New Fish Without a Fight" (sidebar). oscar-fish-handling-guide states the "fits in its mouth" rule but not the introduction; add one oscar-specific line with the link.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Metronidazole dose, product and vet-vs-home line for hole-in-the-head. Belongs in oscar-fish-health-issues-guide. Nothing on the site gives a dose.
-- [ ] [TRULY MISSING] Stand and floor loading for 75 to 125 gallons (Sep 8-15). Belongs in oscar-fish-tank-setup-guide.
+- [x] [TRULY MISSING] Metronidazole dose, product and vet-vs-home line for hole-in-the-head. Belongs in oscar-fish-health-issues-guide. Nothing on the site gives a dose.
+- [x] [TRULY MISSING] Stand and floor loading for 75 to 125 gallons (Sep 8-15). Belongs in oscar-fish-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] oscar-fish-handling-guide 441, oscar-fish-health-issues-guide 500, oscar-fish-cost-guide 588, oscar-fish-tank-setup-guide 511, oscar-fish-feeding-guide 433.
+- [x] [SHORT] oscar-fish-handling-guide 441, oscar-fish-health-issues-guide 500, oscar-fish-cost-guide 588, oscar-fish-tank-setup-guide 511, oscar-fish-feeding-guide 433.
 
 ### Discus (discus)
-Status: open
+Status: done 2026-09-25
 
 **Errors and contradictions**
 - [x] [CONTRADICTION] Lifespan: encyclopedia wild "10 to 13 years" vs discus-cost-guide "10 to 15 years... some sources put the typical captive lifespan closer to 8 to 10". Label wild vs captive on both.
@@ -200,10 +200,10 @@ Status: open
 - [x] [COVERED+LINKED] RO remineralizing: freshwater-ph-gh-kh-guide (sidebar) (Sep 8-15).
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Grow-out housing for juveniles (Sep 8-15). Belongs in discus-tank-setup-guide.
+- [x] [TRULY MISSING] Grow-out housing for juveniles (Sep 8-15). Belongs in discus-tank-setup-guide.
 
 ### Betta fish (betta-fish)
-Status: open
+Status: done 2026-09-25
 
 **Errors and contradictions**
 - [x] [CONTRADICTION] Feeding frequency (framing): betta-fish-feeding-guide says sources disagree (once a day vs up to three meals) vs betta-fish-tank-setup-guide FAQ flat "once or twice a day". Carry the hedge into the FAQ.
@@ -212,20 +212,20 @@ Status: open
 - [x] [COVERED+LINKED] Tankmates and group sizes: aquarium-stocking-and-tankmates-guide (sidebar). The hub names a few tankmates; add an in-body link where it does.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Lighting and photoperiod (Sep 8-15). Belongs in betta-fish-tank-setup-guide.
-- [ ] [TRULY MISSING] Picking a healthy betta at the store (Sep 8-15). Belongs in betta-fish-cost-guide.
+- [x] [TRULY MISSING] Lighting and photoperiod (Sep 8-15). Belongs in betta-fish-tank-setup-guide.
+- [x] [TRULY MISSING] Picking a healthy betta at the store (Sep 8-15). Belongs in betta-fish-cost-guide.
 
 **Short pages**
-- [ ] [SHORT] betta-fish-handling-guide 461, betta-fish-cost-guide 585, betta-fish-tank-setup-guide 523.
+- [x] [SHORT] betta-fish-handling-guide 461, betta-fish-cost-guide 585, betta-fish-tank-setup-guide 523.
 
 ### Ghost shrimp (ghost-shrimp)
-Status: open
+Status: open (leftovers marked OPEN or PARTIAL below)
 
 **Errors and contradictions**
 - [x] [CONTRADICTION] Species identity (framing): encyclopedia commits to Palaemon paludosus as "the most common aquarium species" vs ghost-shrimp-enrichment-guide "ghost shrimp is not one species", uncited. Source the mixing claim or soften it to match.
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] ghost-shrimp-enrichment-guide (B-, filler): mostly restates handling and health advice as "recovery", plus a research section.
+- [x] [LOW GRADE] ghost-shrimp-enrichment-guide (B-, filler): mostly restates handling and health advice as "recovery", plus a research section.
 
 **Doubted claims**
 - [x] [DOUBTED] ghost-shrimp-enrichment-guide cites "the decapod sentience review" with no name, year or link, unlike every other page in the set. Cite it properly or cut the section.
@@ -234,16 +234,16 @@ Status: open
 - [x] [COVERED+LINKED] Molting: shrimp-molting-guide (sidebar and body) gives GH for Neocaridina and Caridina only. The Palaemon number is truly missing (below).
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] GH target for a clean molt in Palaemon, as opposed to the 3 to 15 dGH housing range. Belongs in ghost-shrimp-health-issues-guide.
-- [ ] [TRULY MISSING] What to do after a positive copper test (carbon, water changes, how long). Belongs in ghost-shrimp-health-issues-guide.
-- [ ] [TRULY MISSING] How to tell which species is in the bag and whether the numbers change. Belongs in ghost-shrimp-cost-guide or the encyclopedia.
+- [ ] [TRULY MISSING] GH target for a clean molt in Palaemon, as opposed to the 3 to 15 dGH housing range. Belongs in ghost-shrimp-health-issues-guide. OPEN 2026-09-25: no Palaemon-specific figure in any research or established source; hobby care sheets disagree (4 to 8, 5+, 5 to 12 dGH). Left out.
+- [x] [TRULY MISSING] What to do after a positive copper test (carbon, water changes, how long). Belongs in ghost-shrimp-health-issues-guide.
+- [x] [TRULY MISSING] How to tell which species is in the bag and whether the numbers change. Belongs in ghost-shrimp-cost-guide or the encyclopedia.
 
 ### Neon tetra (neon-tetra)
-Status: open
+Status: done 2026-09-25
 
 **Low grades and thin pages**
-- [ ] [THIN] neon-tetra-tank-setup-guide (B+): the tank-size paragraph appears twice back to back ("10 gallons is the practical minimum" then "A 10-gallon tank is a solid starting point"). Cut one.
-- [ ] [THIN] FAQ blocks on tank size and feeding frequency repeat word for word across the hub, tank setup and feeding pages.
+- [x] [THIN] neon-tetra-tank-setup-guide (B+): the tank-size paragraph appears twice back to back ("10 gallons is the practical minimum" then "A 10-gallon tank is a solid starting point"). Cut one.
+- [x] [THIN] FAQ blocks on tank size and feeding frequency repeat word for word across the hub, tank setup and feeding pages.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Named tankmates: aquarium-stocking-and-tankmates-guide "Species by Species" (sidebar). neon-tetra-tank-setup-guide says only "peaceful, similarly sized"; name a few species with an in-body link.
@@ -251,68 +251,68 @@ Status: open
 - [x] [COVERED+LINKED] Softening hard tap water: freshwater-ph-gh-kh-guide (body-linked) (Sep 8-15).
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Acclimation method and how many fish to add at once. Belongs in neon-tetra-handling-guide.
-- [ ] [TRULY MISSING] Sexing and breeding. Belongs in neon-tetra-handling-guide or the hub.
-- [ ] [TRULY MISSING] Euthanasia method (the page recommends it without saying how) (Sep 8-15). Belongs in neon-tetra-health-issues-guide.
+- [x] [TRULY MISSING] Acclimation method and how many fish to add at once. Belongs in neon-tetra-handling-guide.
+- [x] [TRULY MISSING] Sexing and breeding. Belongs in neon-tetra-handling-guide or the hub.
+- [x] [TRULY MISSING] Euthanasia method (the page recommends it without saying how) (Sep 8-15). Belongs in neon-tetra-health-issues-guide.
 
 **Short pages**
-- [ ] [SHORT] neon-tetra-handling-guide 421, neon-tetra-health-issues-guide 490, neon-tetra-cost-guide 538, neon-tetra-tank-setup-guide 527, neon-tetra-feeding-guide 500.
+- [x] [SHORT] neon-tetra-handling-guide 421, neon-tetra-health-issues-guide 490, neon-tetra-cost-guide 538, neon-tetra-tank-setup-guide 527, neon-tetra-feeding-guide 500.
 
 ### Goldfish (goldfish)
-Status: open
+Status: open (leftovers marked OPEN or PARTIAL below)
 
 **Low grades and thin pages**
-- [ ] [THIN] goldfish-handling-guide (B, thin): the slime coat point is restated three times across sections and FAQ. Replace the repeats with acclimation (below).
-- [ ] [THIN] Encyclopedia graded B (history only). Low priority.
+- [x] [THIN] goldfish-handling-guide (B, thin): the slime coat point is restated three times across sections and FAQ. Replace the repeats with acclimation (below).
+- [ ] [THIN] Encyclopedia graded B (history only). Low priority. OPEN 2026-09-25: entry already carries a sourced history; no new sourced material proposed.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Cycling timeline and ammonia dosing: aquarium-cycling-guide (body-linked from goldfish-tank-setup-guide). Optional: one line summarizing the cycling steps.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] A settled adult feeding frequency: goldfish-feeding-guide FAQ splits once daily vs two to three into "1 to 2 small meals". Decide or flag it as unresolved on the hub too.
-- [ ] [TRULY MISSING] Drip or temperature acclimation (Sep 8-15). Belongs in goldfish-handling-guide.
-- [ ] [TRULY MISSING] Treatment doses for fin rot and dropsy (only anchor worm and flukes have doses) (Sep 8-15). Belongs in goldfish-health-issues-guide.
-- [ ] [TRULY MISSING] Spotting a healthy fish vs a "feeder" goldfish (Sep 8-15). Belongs in goldfish-cost-guide.
+- [x] [TRULY MISSING] A settled adult feeding frequency: goldfish-feeding-guide FAQ splits once daily vs two to three into "1 to 2 small meals". Decide or flag it as unresolved on the hub too.
+- [x] [TRULY MISSING] Drip or temperature acclimation (Sep 8-15). Belongs in goldfish-handling-guide.
+- [x] [TRULY MISSING] Treatment doses for fin rot and dropsy (only anchor worm and flukes have doses) (Sep 8-15). Belongs in goldfish-health-issues-guide.
+- [x] [TRULY MISSING] Spotting a healthy fish vs a "feeder" goldfish (Sep 8-15). Belongs in goldfish-cost-guide.
 
 **Short pages**
-- [ ] [SHORT] goldfish-handling-guide 451, goldfish-cost-guide 581, goldfish-tank-setup-guide 531.
+- [x] [SHORT] goldfish-handling-guide 451, goldfish-cost-guide 581, goldfish-tank-setup-guide 531.
 
 ### Cardinal tetra (cardinal-tetra)
-Status: open
+Status: done 2026-09-25
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] cardinal-tetra-tank-setup-guide (B, filler): "A 10-gallon tank is workable for the bare minimum school of 6" then two lines later "A 10-gallon tank covers a school of 6 at minimum". Cut one.
-- [ ] [LOW GRADE] cardinal-tetra-handling-guide (B): the group-size number is stated three times.
-- [ ] [THIN] The Rio Negro harvest story and the 2008 Acta Amazonica nitrite study are retold in six pages; the neon tetra disease paragraph is duplicated between health and feeding.
+- [x] [LOW GRADE] cardinal-tetra-tank-setup-guide (B, filler): "A 10-gallon tank is workable for the bare minimum school of 6" then two lines later "A 10-gallon tank covers a school of 6 at minimum". Cut one.
+- [x] [LOW GRADE] cardinal-tetra-handling-guide (B): the group-size number is stated three times.
+- [x] [THIN] The Rio Negro harvest story and the 2008 Acta Amazonica nitrite study are retold in six pages; the neon tetra disease paragraph is duplicated between health and feeding.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Water change routine: aquarium-water-changes-guide (sidebar). Only the hub has one summary line.
 - [x] [COVERED+LINKED] Quarantine duration: fish-quarantine-and-treatment-guide (body-linked). The health guide says "settled by the hospital tank rules" without the 30 days; state it.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Euthanasia method (Sep 8-15). Belongs in cardinal-tetra-health-issues-guide.
-- [ ] [TRULY MISSING] Arrival acclimation (Sep 8-15). Belongs in cardinal-tetra-handling-guide.
+- [x] [TRULY MISSING] Euthanasia method (Sep 8-15). Belongs in cardinal-tetra-health-issues-guide.
+- [x] [TRULY MISSING] Arrival acclimation (Sep 8-15). Belongs in cardinal-tetra-handling-guide.
 
 **Short pages**
-- [ ] [SHORT] cardinal-tetra-handling-guide 509.
+- [x] [SHORT] cardinal-tetra-handling-guide 509.
 
 ### Amano shrimp (amano-shrimp)
-Status: open
+Status: open (leftovers marked OPEN or PARTIAL below)
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] amano-shrimp-enrichment-guide (B, filler): "What the Decapod Sentience Review Found" admits it has no shrimp data, then quotes it anyway.
-- [ ] [THIN] amano-shrimp-handling-guide (B+): half of it retells the breeding biology. The eggs-need-brackish-water explanation appears in five pages; keep one full telling.
+- [x] [LOW GRADE] amano-shrimp-enrichment-guide (B, filler): "What the Decapod Sentience Review Found" admits it has no shrimp data, then quotes it anyway.
+- [x] [THIN] amano-shrimp-handling-guide (B+): half of it retells the breeding biology. The eggs-need-brackish-water explanation appears in five pages; keep one full telling.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Quarantine tank size: fish-quarantine-and-treatment-guide gives a bare 10 to 20 gallon hospital tank (sidebar). The hub buy list says only "a separate cycled tank"; add the number.
-- [ ] [COVERED+LINKED] Water change percent: aquarium-water-changes-guide has a shrimp row (cherry shrimp, 10% a week) (sidebar). State amano's own figure on the hub.
+- [ ] [COVERED+LINKED] Water change percent: aquarium-water-changes-guide has a shrimp row (cherry shrimp, 10% a week) (sidebar). State amano's own figure on the hub. OPEN 2026-09-25: rechecked Aquarium Co-Op, Shrimp Science, fishkeeper.co.uk; no species figure, only conflicting care-sheet sites.
 - [x] [COVERED+LINKED] Sponge vs hang-on-back: aquarium-filtration-guide "Filter Types" (sidebar). amano-shrimp-tank-setup-guide recommends a HOB without saying whether it replaces the hub's sponge filter; say which.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Quarantine tank cost (Sep 8-15). Belongs in amano-shrimp-cost-guide.
+- [x] [TRULY MISSING] Quarantine tank cost (Sep 8-15). Belongs in amano-shrimp-cost-guide.
 
 ### Angelfish (angelfish)
-Status: open
+Status: done 2026-09-25
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Sunken belly parasites: spotting-a-sick-fish-guide names Spironucleus and Capillaria (sidebar). angelfish-feeding-guide still says "a stomach parasite specific to cichlids" (Sep 8-15 too); name them.
@@ -320,69 +320,69 @@ Status: open
 - [x] [COVERED+LINKED] Nitrate target: aquarium-water-changes-guide (sidebar) (Sep 8-15).
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] How to find an aquatic vet. spotting-a-sick-fish-guide says when, not how. Belongs in angelfish-health-issues-guide (or a shared vet guide).
-- [ ] [TRULY MISSING] Arrival acclimation (Sep 8-15). Belongs in angelfish-handling-guide.
+- [x] [TRULY MISSING] How to find an aquatic vet. spotting-a-sick-fish-guide says when, not how. Belongs in angelfish-health-issues-guide (or a shared vet guide).
+- [x] [TRULY MISSING] Arrival acclimation (Sep 8-15). Belongs in angelfish-handling-guide.
 
 **Short pages**
-- [ ] [SHORT] angelfish-handling-guide 537, angelfish-health-issues-guide 444, angelfish-cost-guide 569, angelfish-tank-setup-guide 594.
+- [x] [SHORT] angelfish-handling-guide 537, angelfish-health-issues-guide 444, angelfish-cost-guide 569, angelfish-tank-setup-guide 594.
 
 ### Bristlenose pleco (bristlenose-pleco)
-Status: open
+Status: done 2026-09-25
 
 **Low grades and thin pages**
-- [ ] [THIN] bristlenose-pleco-handling-guide (B+): a handling guide for an unhandled fish; it earns space with net-spine mechanics but could be reframed around netting and transfer.
+- [x] [THIN] bristlenose-pleco-handling-guide (B+): a handling guide for an unhandled fish; it earns space with net-spine mechanics but could be reframed around netting and transfer.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Ich temperature and a copper-free option: aquarium-ich-treatment-guide covers heat and salt (sidebar). bristlenose-pleco-health-issues-guide still has neither (Sep 8-15).
 - [x] [COVERED+LINKED] GH/KH meaning: freshwater-ph-gh-kh-guide (sidebar). The species range is truly missing (below).
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] GH/KH range for bristlenose. Belongs in bristlenose-pleco-tank-setup-guide.
-- [ ] [TRULY MISSING] How to tell a juvenile bristlenose from a common pleco before the 3 inch bristle stage. Belongs in bristlenose-pleco-cost-guide.
-- [ ] [TRULY MISSING] Portion size for the 85/15 plant-to-protein ratio. Belongs in bristlenose-pleco-feeding-guide.
-- [ ] [TRULY MISSING] Driftwood preparation (Sep 8-15). Belongs in bristlenose-pleco-tank-setup-guide.
+- [x] [TRULY MISSING] GH/KH range for bristlenose. Belongs in bristlenose-pleco-tank-setup-guide.
+- [x] [TRULY MISSING] How to tell a juvenile bristlenose from a common pleco before the 3 inch bristle stage. Belongs in bristlenose-pleco-cost-guide.
+- [x] [TRULY MISSING] Portion size for the 85/15 plant-to-protein ratio. Belongs in bristlenose-pleco-feeding-guide.
+- [x] [TRULY MISSING] Driftwood preparation (Sep 8-15). Belongs in bristlenose-pleco-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] bristlenose-pleco-handling-guide 598, bristlenose-pleco-health-issues-guide 490.
+- [x] [SHORT] bristlenose-pleco-handling-guide 598, bristlenose-pleco-health-issues-guide 490.
 
 ### Guppy (guppy)
-Status: open
+Status: done 2026-09-25
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Visual sexing by the gonopodium, not just size and color. Belongs in guppy-handling-guide (the population plan page).
-- [ ] [TRULY MISSING] What to do when fry appear: birthing box or dense-cover tank, netting fry, when they rejoin adults. Belongs in guppy-handling-guide.
+- [x] [TRULY MISSING] Visual sexing by the gonopodium, not just size and color. Belongs in guppy-handling-guide (the population plan page).
+- [x] [TRULY MISSING] What to do when fry appear: birthing box or dense-cover tank, netting fry, when they rejoin adults. Belongs in guppy-handling-guide.
 
 **Short pages**
-- [ ] [SHORT] guppy-handling-guide 519, guppy-health-issues-guide 485.
+- [x] [SHORT] guppy-handling-guide 519, guppy-health-issues-guide 485.
 
 ### Molly (molly)
-Status: open
+Status: done 2026-09-25
 
 **Low grades and thin pages**
-- [ ] [THIN] molly-handling-guide (B+): opens by restating the hub tagline that mollies are not handled before earning it.
+- [x] [THIN] molly-handling-guide (B+): opens by restating the hub tagline that mollies are not handled before earning it.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Water change walkthrough (percent, nitrate 20/40 ppm): aquarium-water-changes-guide (sidebar). The set has only a hub bullet.
 - [x] [COVERED+LINKED] Filter choice: aquarium-filtration-guide (body-linked). molly-tank-setup-guide leaves it as "what you're optimizing for"; give a default (for example sponge first, HOB if not breeding).
 
 ### Platy (platy)
-Status: open
+Status: done 2026-09-25
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Cycling steps and water testing: aquarium-cycling-guide and freshwater-ph-gh-kh-guide (both body-linked). No action beyond an optional one-line summary of the ammonia dosing step in platy-tank-setup-guide.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] What to do with unwanted fry: rehoming or selling venues, when to separate. Belongs in platy-handling-guide (the breeding plan page).
+- [x] [TRULY MISSING] What to do with unwanted fry: rehoming or selling venues, when to separate. Belongs in platy-handling-guide (the breeding plan page).
 
 ### Zebra danio (zebra-danio)
-Status: open
+Status: done 2026-09-25
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Swim bladder first test: spotting-a-sick-fish-guide "Test the Water Before You Do Anything Else" (sidebar). zebra-danio-health-issues-guide names poor water quality without saying which reading to take first; name it.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Rough fry survival from an accidental spawn in a planted community tank. Belongs in zebra-danio-feeding-guide, where the tradeoff is raised.
-- [ ] [TRULY MISSING] Quarantine tank cost (Sep 8-15). Belongs in zebra-danio-cost-guide.
+- [x] [TRULY MISSING] Rough fry survival from an accidental spawn in a planted community tank. Belongs in zebra-danio-feeding-guide, where the tradeoff is raised.
+- [x] [TRULY MISSING] Quarantine tank cost (Sep 8-15). Belongs in zebra-danio-cost-guide.
 
 ## Reptiles (31)
 
@@ -1490,15 +1490,15 @@ Suggested sessions: I1 millipede, tarantula, jumping-spider, stick-insect. I2 he
 No shared guide covers invertebrate sexing, and invertebrate-molting-guide has no scorpion or mantis numbers.
 
 ### Giant millipede (millipede)
-Status: open
+Status: open (leftovers marked OPEN or PARTIAL below)
 
 **Errors and contradictions**
 - [x] [ERROR] giant-millipede-feeding-guide is orphaned: not in RELATED_ARTICLES['millipede'], cannot auto-detect (prefix giant-millipede, guide id millipede), linked from nowhere. Add it (Session 0).
 - [x] [CONTRADICTION] Isopods: hub "Isopods and springtails are fine as a cleanup crew in a display tank" and the giant-millipede-tank-setup-guide body agree, but the same guide's heading "Skip Isopods as Cleanup Crew" and fun fact "Isopods can harass or weaken a giant millipede" say the opposite. Fix the heading and fun fact.
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] giant-millipede-tank-setup-guide (B), for the isopod conflict.
-- [ ] [LOW GRADE] giant-millipede-enrichment-guide (B, filler): the "priority order" recaps the tank setup substrate section.
+- [x] [LOW GRADE] giant-millipede-tank-setup-guide (B), for the isopod conflict.
+- [x] [LOW GRADE] giant-millipede-enrichment-guide (B, filler): the "priority order" recaps the tank setup substrate section.
 
 **Doubted claims**
 - [x] [DOUBTED] giant-millipede-enrichment-guide: eggshell as calcium is unvetted (Sep 8-15).
@@ -1507,16 +1507,16 @@ Status: open
 - [x] [COVERED+LINKED] Quarantine: invertebrate-quarantine-cleaning-and-escapes-guide, three months (sidebar).
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Sexing. Belongs in giant-millipede-handling-guide.
-- [ ] [TRULY MISSING] Setting up and running a breeding tank (the hub mentions one). Belongs in giant-millipede-tank-setup-guide.
-- [ ] [TRULY MISSING] Where to buy (Sep 8-15). Belongs in giant-millipede-cost-guide.
-- [ ] [TRULY MISSING] How the USDA permit is actually obtained (Sep 8-15). Belongs in giant-millipede-legal-guide.
+- [x] [TRULY MISSING] Sexing. Belongs in giant-millipede-handling-guide.
+- [x] [TRULY MISSING] Setting up and running a breeding tank (the hub mentions one). Belongs in giant-millipede-tank-setup-guide.
+- [x] [TRULY MISSING] Where to buy (Sep 8-15). Belongs in giant-millipede-cost-guide.
+- [ ] [TRULY MISSING] How the USDA permit is actually obtained (Sep 8-15). Belongs in giant-millipede-legal-guide. OPEN 2026-09-25: legal files are out of scope for wave 3.
 
 **Short pages**
-- [ ] [SHORT] giant-millipede-health-issues-guide 486, giant-millipede-cost-guide 455.
+- [x] [SHORT] giant-millipede-health-issues-guide 486, giant-millipede-cost-guide 455.
 
 ### Tarantula (tarantula)
-Status: open
+Status: done 2026-09-25
 
 **Errors and contradictions**
 - [x] [CONTRADICTION] Male lifespan: hub and tarantula-cost-guide "4 to 7 years" vs tarantula-vs-emperor-scorpion-guide "3 to 6 years, often less". Align or say the species differ.
@@ -1527,16 +1527,16 @@ Status: open
 - [x] [COVERED+LINKED] Stuck vs slow molt: invertebrate-molting-guide warning signs (stuck half in and half out for hours with no progress) (body-linked). Add the tarantula line to tarantula-health-issues-guide.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] A subadult or adult that refuses food with no premolt signs. Belongs in tarantula-feeding-guide.
-- [ ] [TRULY MISSING] Sexing a female before buying (Sep 8-15). Belongs in tarantula-cost-guide.
-- [ ] [TRULY MISSING] Sling housing (Sep 8-15). Belongs in tarantula-tank-setup-guide.
-- [ ] [TRULY MISSING] Choosing a seller (Sep 8-15). Belongs in tarantula-cost-guide.
+- [x] [TRULY MISSING] A subadult or adult that refuses food with no premolt signs. Belongs in tarantula-feeding-guide.
+- [x] [TRULY MISSING] Sexing a female before buying (Sep 8-15). Belongs in tarantula-cost-guide.
+- [x] [TRULY MISSING] Sling housing (Sep 8-15). Belongs in tarantula-tank-setup-guide.
+- [x] [TRULY MISSING] Choosing a seller (Sep 8-15). Belongs in tarantula-cost-guide.
 
 **Short pages**
-- [ ] [SHORT] tarantula-handling-guide 554, tarantula-health-issues-guide 492, tarantula-cost-guide 455, tarantula-tank-setup-guide 531.
+- [x] [SHORT] tarantula-handling-guide 554, tarantula-health-issues-guide 492, tarantula-cost-guide 455, tarantula-tank-setup-guide 531.
 
 ### Jumping spider (jumping-spider)
-Status: open
+Status: done 2026-09-25
 
 **Errors and contradictions**
 - [x] [CONTRADICTION] Lifespan: encyclopedia "Wild Lifespan: 1-2 years" vs hub and jumping-spider-cost-guide "1 to 3 years overall", not flagged as captive. Label both.
@@ -1546,38 +1546,38 @@ Status: open
 - [x] [DOUBTED] jumping-spider-cost-guide cites a for-sale listing page in Sources (Sep 8-15).
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Sexing before maturity (price depends on it). Belongs in jumping-spider-cost-guide.
-- [ ] [TRULY MISSING] Humidity number for the tropical relatives the text says "need more". Belongs in jumping-spider-tank-setup-guide.
-- [ ] [TRULY MISSING] Finding a vet who treats spiders. Belongs in jumping-spider-health-issues-guide.
-- [ ] [TRULY MISSING] A humidity number on the health page, whose thesis is humidity (Sep 8-15, verified). Belongs in jumping-spider-health-issues-guide.
-- [ ] [TRULY MISSING] What the "damp cotton ball setup" is (Sep 8-15, verified). Belongs in jumping-spider-tank-setup-guide.
+- [x] [TRULY MISSING] Sexing before maturity (price depends on it). Belongs in jumping-spider-cost-guide.
+- [x] [TRULY MISSING] Humidity number for the tropical relatives the text says "need more". Belongs in jumping-spider-tank-setup-guide.
+- [x] [TRULY MISSING] Finding a vet who treats spiders. Belongs in jumping-spider-health-issues-guide.
+- [x] [TRULY MISSING] A humidity number on the health page, whose thesis is humidity (Sep 8-15, verified). Belongs in jumping-spider-health-issues-guide.
+- [x] [TRULY MISSING] What the "damp cotton ball setup" is (Sep 8-15, verified). Belongs in jumping-spider-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] jumping-spider-handling-guide 334, jumping-spider-health-issues-guide 393, jumping-spider-cost-guide 394, jumping-spider-tank-setup-guide 481.
+- [x] [SHORT] jumping-spider-handling-guide 334, jumping-spider-health-issues-guide 393, jumping-spider-cost-guide 394, jumping-spider-tank-setup-guide 481.
 
 ### Stick insect (stick-insect)
-Status: open
+Status: done 2026-09-25
 
 **Errors and contradictions**
 - [x] [CONTRADICTION] Lifespan: encyclopedia "Wild Lifespan: 6 months-2 years" sits beside the hub's captive breakdown without being labeled a different measure. Label it.
 
 **Low grades and thin pages**
-- [ ] [THIN] Encyclopedia (B, thin but earns it) and stick-insect-health-issues-guide (B, thin; Sep 8-15 "no numbers at all").
+- [x] [THIN] Encyclopedia (B, thin but earns it) and stick-insect-health-issues-guide (B, thin; Sep 8-15 "no numbers at all").
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Whether to intervene in a failing molt (Sep 8-15): invertebrate-molting-guide "When a Molt Actually Goes Wrong" covers stick insects (body-linked). Add the stick insect answer to the health guide.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] How to identify which species you have (most advice branches on species). Belongs in the encyclopedia or stick-insect-cost-guide.
-- [ ] [TRULY MISSING] Where to legally source a species native to your state (also Sep 8-15). Belongs in stick-insect-cost-guide.
-- [ ] [TRULY MISSING] What a vet visit would look like. Belongs in stick-insect-health-issues-guide.
-- [ ] [TRULY MISSING] Mesh aperture for nymphs (Sep 8-15). Belongs in stick-insect-tank-setup-guide.
+- [x] [TRULY MISSING] How to identify which species you have (most advice branches on species). Belongs in the encyclopedia or stick-insect-cost-guide.
+- [x] [TRULY MISSING] Where to legally source a species native to your state (also Sep 8-15). Belongs in stick-insect-cost-guide.
+- [x] [TRULY MISSING] What a vet visit would look like. Belongs in stick-insect-health-issues-guide.
+- [x] [TRULY MISSING] Mesh aperture for nymphs (Sep 8-15). Belongs in stick-insect-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] stick-insect-health-issues-guide 449, stick-insect-cost-guide 540, stick-insect-tank-setup-guide 558.
+- [x] [SHORT] stick-insect-health-issues-guide 449, stick-insect-cost-guide 540, stick-insect-tank-setup-guide 558.
 
 ### Hermit crab (hermit-crab)
-Status: open
+Status: done 2026-09-25
 
 **Doubted claims**
 - [x] [DOUBTED] hermit-crab-health-issues-guide: "before a molt a crab reabsorbs calcium from its old exoskeleton" is uncited. Source it.
@@ -1587,64 +1587,64 @@ Status: open
 - [x] [COVERED+LINKED] What to do with the shed exoskeleton: invertebrate-molting-guide FAQ says crabs eat it for calcium, leave it (body-linked). Add one line to hermit-crab-health-issues-guide.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Marine salt mix ratio or specific gravity for the saltwater dish (also Sep 8-15, verified). Belongs in hermit-crab-tank-setup-guide.
-- [ ] [TRULY MISSING] How to test substrate moisture by feel. Belongs in hermit-crab-tank-setup-guide.
-- [ ] [TRULY MISSING] Sexing and choosing a healthy crab (Sep 8-15). Belongs in hermit-crab-handling-guide or cost guide.
-- [ ] [TRULY MISSING] Price of a group-sized tank (Sep 8-15). Belongs in hermit-crab-cost-guide.
+- [x] [TRULY MISSING] Marine salt mix ratio or specific gravity for the saltwater dish (also Sep 8-15, verified). Belongs in hermit-crab-tank-setup-guide.
+- [x] [TRULY MISSING] How to test substrate moisture by feel. Belongs in hermit-crab-tank-setup-guide.
+- [x] [TRULY MISSING] Sexing and choosing a healthy crab (Sep 8-15). Belongs in hermit-crab-handling-guide or cost guide.
+- [x] [TRULY MISSING] Price of a group-sized tank (Sep 8-15). Belongs in hermit-crab-cost-guide.
 
 **Short pages**
-- [ ] [SHORT] hermit-crab-handling-guide 488, hermit-crab-health-issues-guide 507, hermit-crab-cost-guide 551.
+- [x] [SHORT] hermit-crab-handling-guide 488, hermit-crab-health-issues-guide 507, hermit-crab-cost-guide 551.
 
 ### Emperor scorpion (emperor-scorpion)
-Status: open
+Status: done 2026-09-25
 
 **Low grades and thin pages**
-- [ ] [THIN] The UV fluorescence fun fact appears four times (hub, encyclopedia, tank setup, enrichment); the Guo et al. 2024 soft-exoskeleton quote three times. Keep one of each.
+- [x] [THIN] The UV fluorescence fun fact appears four times (hub, encyclopedia, tank setup, enrichment); the Guo et al. 2024 soft-exoskeleton quote three times. Keep one of each.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Quarantine before joining a group and mite treatment (Sep 8-15): invertebrate-quarantine-cleaning-and-escapes-guide (sidebar). The group-housing sections in emperor-scorpion-tank-setup-guide and enrichment guide should link it in body.
 - [x] [COVERED+LINKED] A molt that looks stuck: invertebrate-molting-guide's general rule (do not intervene, warning signs) (body-linked; sidebar in Session 0). The scorpion-specific answer is truly missing (below).
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Molt count to adulthood and adult molt frequency (the molting guide has no scorpion data; also Sep 8-15). Belongs in emperor-scorpion-health-issues-guide.
-- [ ] [TRULY MISSING] What, if anything, a keeper can try at home for a stuck scorpion molt. Belongs in emperor-scorpion-health-issues-guide.
-- [ ] [TRULY MISSING] Sexing, and first aid for a sting or deep pinch (Sep 8-15). Belongs in emperor-scorpion-handling-guide.
+- [x] [TRULY MISSING] Molt count to adulthood and adult molt frequency (the molting guide has no scorpion data; also Sep 8-15). Belongs in emperor-scorpion-health-issues-guide.
+- [x] [TRULY MISSING] What, if anything, a keeper can try at home for a stuck scorpion molt. Belongs in emperor-scorpion-health-issues-guide.
+- [x] [TRULY MISSING] Sexing, and first aid for a sting or deep pinch (Sep 8-15). Belongs in emperor-scorpion-handling-guide.
 
 **Short pages**
-- [ ] [SHORT] emperor-scorpion-handling-guide 481, emperor-scorpion-feeding-guide 462.
+- [x] [SHORT] emperor-scorpion-handling-guide 481, emperor-scorpion-feeding-guide 462.
 
 ### Praying mantis (praying-mantis)
-Status: open
+Status: open (leftovers marked OPEN or PARTIAL below)
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] praying-mantis-handling-guide (B).
-- [ ] [THIN] Encyclopedia (B, thin by design). Solo housing, premolt signs and crickets chewing a molting mantis are each repeated in four pages.
+- [x] [LOW GRADE] praying-mantis-handling-guide (B).
+- [x] [THIN] Encyclopedia (B, thin by design). Solo housing, premolt signs and crickets chewing a molting mantis are each repeated in four pages.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Sexing (the set repeats that females outlive males three times). Belongs in praying-mantis-handling-guide.
-- [ ] [TRULY MISSING] Number of molts to adulthood (not in invertebrate-molting-guide either). Belongs in praying-mantis-health-issues-guide.
-- [ ] [TRULY MISSING] Cold diapause temperature and length for temperate oothecae. Belongs in praying-mantis-ootheca-guide.
-- [ ] [TRULY MISSING] Temperature and humidity for African mantises. Belongs in praying-mantis-tank-setup-guide.
-- [ ] [TRULY MISSING] Culturing feeders (Sep 8-15, verified). Belongs in praying-mantis-feeding-guide.
-- [ ] [TRULY MISSING] How hand-feeding a mismolted mantis differs from normal tong feeding (Sep 8-15); state it in the health guide text (sibling pages, no link).
-- [ ] [TRULY MISSING] Recheck praying-mantis-cost-guide table against its text (Sep 8-15, not rechecked).
+- [x] [TRULY MISSING] Sexing (the set repeats that females outlive males three times). Belongs in praying-mantis-handling-guide.
+- [x] [TRULY MISSING] Number of molts to adulthood (not in invertebrate-molting-guide either). Belongs in praying-mantis-health-issues-guide.
+- [x] [TRULY MISSING] Cold diapause temperature and length for temperate oothecae. Belongs in praying-mantis-ootheca-guide.
+- [x] [TRULY MISSING] Temperature and humidity for African mantises. Belongs in praying-mantis-tank-setup-guide.
+- [x] [TRULY MISSING] Culturing feeders (Sep 8-15, verified). Belongs in praying-mantis-feeding-guide.
+- [x] [TRULY MISSING] How hand-feeding a mismolted mantis differs from normal tong feeding (Sep 8-15); state it in the health guide text (sibling pages, no link).
+- [x] [TRULY MISSING] Recheck praying-mantis-cost-guide table against its text (Sep 8-15, not rechecked).
 
 **Short pages**
-- [ ] [SHORT] praying-mantis-handling-guide 530, praying-mantis-cost-guide 594, praying-mantis-ootheca-guide 521.
+- [ ] [SHORT] praying-mantis-handling-guide 530, praying-mantis-cost-guide 594, praying-mantis-ootheca-guide 521. PARTIAL 2026-09-25: cost and ootheca expanded; handling rewritten but about 560 words, no further sourced handling material found.
 
 ### Madagascar hissing cockroach (hissing-cockroach)
-Status: open
+Status: done 2026-09-25
 
 **Low grades and thin pages**
-- [ ] [THIN] madagascar-hissing-cockroach-health-issues-guide (NG, thin but earns it for a low-risk species). The molting vulnerability passage is duplicated in the health and enrichment guides; keep one.
+- [x] [THIN] madagascar-hissing-cockroach-health-issues-guide (NG, thin but earns it for a low-risk species). The molting vulnerability passage is duplicated in the health and enrichment guides; keep one.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] How many males make a safe all-male group, and whether adult males fight. Belongs in madagascar-hissing-cockroach-handling-guide.
-- [ ] [TRULY MISSING] Which of the two disputed feeding schedules the hub's numbers follow. Belongs on the hub and madagascar-hissing-cockroach-feeding-guide.
-- [ ] [TRULY MISSING] Ventilation spec (Sep 8-15). Belongs in madagascar-hissing-cockroach-tank-setup-guide.
+- [x] [TRULY MISSING] How many males make a safe all-male group, and whether adult males fight. Belongs in madagascar-hissing-cockroach-handling-guide.
+- [x] [TRULY MISSING] Which of the two disputed feeding schedules the hub's numbers follow. Belongs on the hub and madagascar-hissing-cockroach-feeding-guide.
+- [x] [TRULY MISSING] Ventilation spec (Sep 8-15). Belongs in madagascar-hissing-cockroach-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] madagascar-hissing-cockroach-health-issues-guide 431, madagascar-hissing-cockroach-cost-guide 544, madagascar-hissing-cockroach-tank-setup-guide 509.
+- [x] [SHORT] madagascar-hissing-cockroach-health-issues-guide 431, madagascar-hissing-cockroach-cost-guide 544, madagascar-hissing-cockroach-tank-setup-guide 509.
 
 ## 4. Non-species articles
 
@@ -1763,6 +1763,24 @@ Shipped 2026-09-25 on claude/fix-plan-wave-2-reptiles-81w4hm and merged to main 
 - Checks: sync-articles, check-internal-links, check-voice --strict (0 errors), check-related-articles, check-publish-dates, check-rotation, check-seo-tags, check-hub-rows, check-hub-figures all pass.
 - Partly done, noted on their lines: blue-tongued skink weights by life stage, Russian tortoise female ramming, savannah monitor DIY build cost, outdoor housing drowning numbers, seven fun facts pages still under 575 words.
 
+## Wave 3a results
+
+Done 2026-09-25 on claude/adsense-readiness-review-7u43dx in one commit. Not merged to main.
+
+- Done: every open item in Fish and shrimp and Invertebrates, ticked above, except five left open or partial and noted on their lines: ghost shrimp Palaemon molt GH (no source), goldfish encyclopedia history (nothing to add), amano water change percent (no source), millipede USDA permit (legal file), praying mantis handling length (about 560 words, no more sourced material).
+- New shared sections: "Getting New Fish From the Bag Into the Tank" in aquarium-stocking-and-tankmates-guide; "How to Find a Vet Who Treats Fish" and "When Euthanasia Is the Kindest Option" in spotting-a-sick-fish-guide. Species acclimation, vet and euthanasia items link to them.
+- Hub and encyclopedia edits applied from agent requests: corydoras handling route line and algae row source; tarantula humidity and feeding rows no longer narrate source disagreement; neon tetra hub FAQ swapped tank size for sexing; goldfish feeding row settled at one meal a day; cardinal tetra and stick insect hub FAQs re-copied from their deep dives; emperor scorpion fun fact and molting row; hissing cockroach feeding row; koi, stick insect, emperor scorpion and praying mantis encyclopedia overviews.
+- Checks: sync-articles, check-internal-links, check-voice --strict (0 errors), check-related-articles, check-publish-dates, check-rotation, check-seo-tags, check-hub-rows, check-hub-figures all pass.
+
+**Worth knowing, not fixed (out of scope)**
+- Pages now over five sources, each with an MDX comment above Sources: spotting-a-sick-fish-guide (10), tarantula-cost-guide (9), ghost-shrimp-health-issues-guide (9), swordtail-tank-setup-guide (8), aquarium-stocking-and-tankmates-guide, discus-tank-setup-guide, platy-handling-guide and bristlenose-pleco-tank-setup-guide (7), cherry-shrimp-tank-setup-guide, emperor-scorpion-health-issues-guide and praying-mantis-health-issues-guide (6). docs/RULES.md lists only two overruns.
+- Weaker sources added where nothing better was found: Wikipedia (Ancistrus, Pterygoplichthys), a WordPress blog and a Google Sites database (millipede), exopetguides.com (says it uses AI drafting; jumping spider), retailer blogs (Bulk Reef Supply, Aquasabi, gensou.sg).
+- Retailer product pages still cited in amano-shrimp-cost-guide (aquaticarts) and bristlenose-pleco-cost-guide (aqua-imports, angelsplus).
+- Neon tetra health and tank setup say quarantine 2 to 4 weeks; fish-quarantine-and-treatment-guide says 30 to 60 days.
+- Hermit crab tank size: the site says 10 gallons for 2 to 3 small crabs; Crab Street Journal says 10 gallons per crab.
+- Millipede lifespan: hub says up to 10 years in captivity; Tree of Life Exotics says 5 to 7.
+- discus-tank-setup-guide uses "X, not Y" 7 times (limit 2).
+
 ## Still open under wave 1 (needs another look)
 
 - [ ] Line 308, amano shrimp water change percent: no source gives an amano-specific percentage (The Shrimp Farm, Aquarium Co-Op and Fish Laboratory checked). Left the hub alone rather than invent one.
@@ -1782,7 +1800,7 @@ by animal group, so every species is finished inside one wave:
 | Wave | Groups | Open items |
 |---|---|---|
 | 2 | Reptiles, Amphibians, section 4 non-species articles | done |
-| 3a | Fish and shrimp, Invertebrates | 115 |
+| 3a | Fish and shrimp, Invertebrates | done |
 | 3b | Birds, Small mammals | 90 |
 
 Wave 3 runs as two sessions to hold down credit use. 3a and 3b never run at

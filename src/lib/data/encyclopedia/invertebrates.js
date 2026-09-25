@@ -31,7 +31,7 @@ export const invertebrateEncyclopedia = [
     id: "emperor-scorpion", name: "Emperor Scorpion", scientific: "Pandinus imperator",
     category: "Invertebrates", emoji: "🦂", difficulty: "Beginner/Intermediate", guideId: "emperor-scorpion", available: true, image: "/assets/guides/emperor-scorpion.jpg",
     bio: {
-      overview: "The emperor scorpion is one of the largest scorpion species in the world and the most widely kept scorpion as a pet. Native to the tropical rainforest and savanna of West Africa, they are surprisingly mild-mannered compared to many smaller species. Under UV light their exoskeleton fluoresces a vivid blue-green - a phenomenon related to compounds in the cuticle whose precise function is still debated. Their venom is relatively weak for their size.",
+      overview: "The emperor scorpion is one of the largest scorpion species in the world and the most widely kept scorpion as a pet. Native to the tropical rainforest and savanna of West Africa, they are surprisingly mild-mannered compared to many smaller species. Their venom is relatively weak for their size.",
       origin: "West Africa (Senegal, Guinea-Bissau, Ghana, Nigeria, Togo, Benin)",
       habitat: "Tropical rainforest and savanna",
       adultSize: "7-8 inches (18-20 cm)",
@@ -115,7 +115,7 @@ export const invertebrateEncyclopedia = [
     id: "praying-mantis", name: "Praying Mantis", scientific: "Various",
     category: "Invertebrates", emoji: "🦗", difficulty: "Self-Sufficient", guideId: "praying-mantis", available: true, image: "/assets/guides/praying-mantis.jpg",
     bio: {
-      overview: "Praying mantises are ambush predators in the order Mantodea, with over 2,400 species found across tropical and temperate regions worldwide. They are famous for the iconic \"prayer\" posture of their spiked forelegs, held folded and ready to strike with lightning speed. Female mantises occasionally engage in sexual cannibalism - consuming the male during or after mating - though this occurs less frequently in the wild than in captivity.",
+      overview: "Praying mantises are ambush predators in the order Mantodea, with over 2,400 species found across tropical and temperate regions worldwide. They are famous for the iconic \"prayer\" posture of their spiked forelegs, held folded and ready to strike with lightning speed. Female mantises occasionally engage in sexual cannibalism, consuming the male during or after mating, though this occurs less frequently in the wild than in captivity. Nymphs pass through six or seven molts in the species that have been counted, and the last produces the winged adult, which never molts again.",
       origin: "Worldwide; most species tropical and subtropical",
       habitat: "Forest, grassland, shrubland, and gardens",
       adultSize: "0.5-6 inches (1-15 cm) depending on species",
@@ -136,7 +136,7 @@ export const invertebrateEncyclopedia = [
       wildDiet: "Leaves of various plants (highly species-specific)",
       wildLifespan: "6 months-2 years in the wild, depending on species; the captive figure for common pet species is about a year, females often 18 months",
       conservation: "Varies; some island species Critically Endangered (IUCN)",
-      history: "One species carried the whole order into laboratories. Carausius morosus, named by de Sinéty in 1901, traces its culture stock to a collection from Tamil Nadu and consists entirely of parthenogenetic females, which is why generations of students have reared it under the name Indian or laboratory stick insect. The order also produced one of the more improbable conservation stories on record: Dryococelus australis, the Lord Howe Island stick insect, was written off as extinct by 1920 until a February 2001 survey of Ball's Pyramid found roughly two dozen animals on a single terrace. Two breeding pairs were collected in 2003, one going to a private breeder in Sydney and the other to Melbourne Zoo, which built a captive population from them.",
+      history: "One species carried the whole order into laboratories. Carausius morosus, named by de Sinéty in 1901, traces its culture stock to a collection from Tamil Nadu and consists entirely of parthenogenetic females, which is why generations of students have reared it under the name Indian or laboratory stick insect. The order also produced one of the more improbable conservation stories on record: Dryococelus australis, the Lord Howe Island stick insect, was written off as extinct by 1920 until a February 2001 survey of Ball's Pyramid found roughly two dozen animals on a single terrace. Two breeding pairs were collected in 2003, one going to a private breeder in Sydney and the other to Melbourne Zoo, which built a captive population from them. The Indian stick insect, the species most often kept, is told apart by bright red patches on the inner base of its front legs, shown when it splays them in alarm.",
     },
   },
   {
