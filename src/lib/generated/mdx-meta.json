@@ -1187,7 +1187,7 @@
     "title": "African Grey Parrot Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do African Grey Parrots Eat? Diet and Feeding Schedule",
     "seoDescription": "African grey parrots need pellets at 75-80% of daily diet, fruit capped near 10%. This species is uniquely prone to hypocalcemia on a seed-heavy diet.",
-    "lastUpdated": "2026-09-08",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "African grey parrots have a genuine, well-documented vulnerability that makes getting their diet right more consequential than it is for most pet birds: this species is specifically prone to calcium deficiency.",
     "date": "2026-08-10",
@@ -1216,7 +1216,7 @@
     "faqs": [
       {
         "q": "What should make up most of an African grey's diet?",
-        "a": "Pellets, at 75 to 80% of daily intake per VCA Animal Hospitals. Fresh vegetables make up most of the remaining 20 to 25%, with fruit held to 10% or less. Dark leafy greens, broccoli, squash, and peppers are good choices."
+        "a": "Pellets, at 75 to 80% of daily intake. Fresh vegetables make up most of the remaining 20 to 25%, with fruit held to 10% or less. Dark leafy greens, broccoli, squash, and peppers are good choices."
       },
       {
         "q": "How often should I feed my African grey parrot?",
@@ -1236,7 +1236,7 @@
       },
       {
         "q": "Why has my African grey stopped eating?",
-        "a": "Calcium imbalance and heat stress are both flagged as causes of appetite loss and vomiting in this species. Illness, toxin or heavy metal exposure, egg-related problems, and general stress are other documented causes. Because African greys hide illness well, treat any noticeable drop in appetite or activity as a same-day concern rather than something to watch for a few days."
+        "a": "Illness, infection, and lead or zinc exposure all suppress appetite, and stress can cause a temporary dip. In this species, also watch for low blood calcium, which shows up as weakness and tremors, especially on a seed-heavy diet. Because African greys hide illness well, treat any noticeable drop in appetite or activity as a same-day concern rather than something to watch for a few days."
       }
     ],
     "relatedProducts": [
@@ -1247,7 +1247,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 3,
     "headingCount": 7,
     "ledeMatchesExcerpt": true,
     "imageWidth": 512,
@@ -1524,7 +1524,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -7030,19 +7030,19 @@
     "faqs": [
       {
         "q": "What temperature does Teflon (PTFE) actually become dangerous to birds?",
-        "a": "PTFE coatings start releasing toxic gas once they're heated above 280°C (536°F), according to both the Merck Veterinary Manual and VCA Animal Hospitals. A pan left empty on a hot burner, or one preheating longer than needed, can reach that point in a few minutes, well before it looks or smells like anything is wrong."
+        "a": "PTFE coatings start releasing toxic gas once they're heated above 280°C (536°F). A pan left empty on a hot burner, or one preheating longer than needed, can reach that point in a few minutes, well before it looks or smells like anything is wrong."
       },
       {
         "q": "Can scented candles, wax melts, or plug-in air fresheners really hurt my bird?",
-        "a": "Yes. The Merck Veterinary Manual specifically lists votive candles alongside aerosols, deodorizers, and perfumes as products that can irritate or poison caged birds, and VCA's guidance is that if a scent is strong enough for a person to notice, it's strong enough to affect a bird's respiratory tract. Any product that works by heating or diffusing fragrance, including wax melts, carries the same basic risk."
+        "a": "Yes. Votive candles, aerosols, deodorizers, and perfumes can all irritate or poison caged birds, and if a scent is strong enough for a person to notice, it's strong enough to affect a bird's respiratory tract. Any product that works by heating or diffusing fragrance, including wax melts, carries the same basic risk."
       },
       {
         "q": "My cat just made contact with my bird and I can't find a wound. Do I still need a vet today?",
-        "a": "Yes, the same day, not tomorrow. Cat mouths carry Pasteurella bacteria that can turn septic in a bird within hours, and a bite through feathers often leaves no visible mark even when it has broken skin. Avian sources are explicit that this isn't a wait-and-see situation, treatment needs to start the same day regardless of how the bird looks."
+        "a": "Yes, the same day, not tomorrow. Cat mouths carry Pasteurella bacteria that can turn septic in a bird within hours, and a bite through feathers often leaves no visible mark even when it has broken skin. This isn't a wait-and-see situation, treatment needs to start the same day regardless of how the bird looks."
       },
       {
         "q": "Is a galvanized wire cage safe for a pet bird?",
-        "a": "Not if it's hot-dipped galvanized wire, which is the most common kind sold for cage construction. VCA Animal Hospitals notes that simply chewing on galvanized wire or metal toys has caused zinc poisoning in birds, and zinc can leach off the coating even without the bird swallowing a visible flake. Powder-coated or stainless steel hardware is the safer choice."
+        "a": "Not if it's hot-dipped galvanized wire, which is the most common kind sold for cage construction. Simply chewing on galvanized wire or metal toys has caused zinc poisoning in birds, and zinc can leach off the coating even without the bird swallowing a visible flake. Powder-coated or stainless steel hardware is the safer choice."
       },
       {
         "q": "What household items commonly contain lead that could poison a bird?",
@@ -7238,7 +7238,7 @@
     "faqs": [
       {
         "q": "How long should I quarantine a new pet bird before introducing it to other birds?",
-        "a": "At least 30 days is the standard recommendation from NASPHV's psittacosis compendium, and VCA Animal Hospitals recommends 30 to 45 days in its own guidance on introducing a new bird while it's screened for chlamydia, salmonella, polyomavirus, and PBFD. For aviaries or households adding birds from multiple sources, the Merck Veterinary Manual's guidance on polyomavirus specifically recommends stretching that to 90 days of quarantine and testing before introduction."
+        "a": "At least 30 days, and 30 to 45 in a separate room while the bird is screened for chlamydia, salmonella, polyomavirus, and PBFD. For aviaries or households adding birds from multiple sources, stretch that to 90 days of quarantine and testing before introduction, because polyomavirus can be shed for that long."
       },
       {
         "q": "Do I need to quarantine a bird if I only have one bird right now?",
@@ -7246,19 +7246,19 @@
       },
       {
         "q": "What actually counts as a separate airspace for quarantine?",
-        "a": "A different room with its own door kept shut, not a second cage or a covered corner in the same room as your other birds. NASPHV's compendium is specific that isolation should include a separate air space from other birds, since airborne and aerosolized transmission is part of how some of these conditions spread, not just direct contact."
+        "a": "A different room with its own door kept shut, not a second cage or a covered corner in the same room as your other birds. Isolation means a separate air space from other birds, since airborne and aerosolized transmission is part of how some of these conditions spread, not just direct contact."
       },
       {
         "q": "Can a bird test negative during quarantine and still be a health risk?",
-        "a": "Yes, which is why a single test partway through quarantine isn't the same as a clean bill of health. VCA Animal Hospitals notes that avian polyomavirus can shed intermittently, so several negative tests over time carry more weight than one, and the Merck Veterinary Manual notes that PCR testing for PBFD can detect infection in birds that still look completely healthy."
+        "a": "Yes, which is why a single test partway through quarantine isn't the same as a clean bill of health. Avian polyomavirus can be shed intermittently, so several negative tests over time carry more weight than one, and PCR testing for PBFD can detect infection in birds that still look completely healthy."
       },
       {
         "q": "Is doxycycline a substitute for quarantining a new bird?",
-        "a": "No. Doxycycline is the treatment used once avian chlamydiosis is confirmed or strongly suspected, not a preventive shortcut. NASPHV's compendium specifically discourages routine prophylactic antibiotic use, since it can cause side effects in the bird and contribute to antibiotic-resistant strains of the bacteria."
+        "a": "No. Doxycycline is the treatment used once avian chlamydiosis is confirmed or strongly suspected, not a preventive shortcut. Routine prophylactic antibiotic use is discouraged, since it can cause side effects in the bird and contribute to antibiotic-resistant strains of the bacteria."
       },
       {
         "q": "What order should daily care happen in during quarantine?",
-        "a": "Established, healthy birds first, for every task, feeding, watering, cage cleaning, and handling, with the quarantined bird cared for last and hands washed or gloves changed in between. That sequence follows the same principle NASPHV lays out for controlling disease spread generally: care for healthy birds before handling isolated ones."
+        "a": "Established, healthy birds first, for every task, feeding, watering, cage cleaning, and handling, with the quarantined bird cared for last and hands washed or gloves changed in between. It is the standard rule for controlling disease spread: healthy birds before isolated ones."
       }
     ],
     "relatedProducts": [],
@@ -9583,7 +9583,7 @@
       },
       {
         "q": "What should I budget for a starter setup?",
-        "a": "Most first-time owners land around $175 to $475 for a complete starter setup, with first-year totals (including the bird) commonly running $350 to $900 depending on cage quality."
+        "a": "Most first-time owners land around $175 to $475 for a complete starter setup, with a bare-minimum first year, bird included, coming to around $325 and climbing with cage quality."
       },
       {
         "q": "What are the ongoing monthly costs for a budgie?",
@@ -9727,7 +9727,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 5,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -10879,7 +10879,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 5,
     "headingCount": 10,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -13058,7 +13058,7 @@
     "slug": "cockatiel-cost-guide",
     "title": "How Much Does a Cockatiel Really Cost?",
     "seoTitle": "Cockatiel Price: $75 to $250, Plus $320 to $860 Setup",
-    "seoDescription": "Cockatiel costs: $75-250 for the bird, $320-860 for a full setup, and $200-350 a year after that, plus $85-200 avian exams over a 12-15 year lifespan.",
+    "seoDescription": "Cockatiel costs: $75-250 for the bird, $320-860 for a full setup, and $200-350 a year after that, plus avian vet care over a 12-15 year lifespan.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Cockatiels are relatively affordable to buy, but the budgeting story here is how long you'll be caring for one. A 12 to 15 year lifespan means this is a long-term financial commitment even though the entry cost is modest.",
@@ -13090,7 +13090,7 @@
       },
       {
         "q": "What's the vet cost people most underestimate with cockatiels?",
-        "a": "An initial or annual avian exam commonly runs $85 to $200, and that's before any fecal testing or bloodwork. Reproductive emergencies like egg binding can run $300 to $800 or more, and since avian vets are a specialized field that's harder to find, it's worth locating one before you need it."
+        "a": "The avian exam, once when the bird comes home and then at least yearly, with fecal testing or bloodwork on top. Reproductive emergencies like egg binding can run $300 to $800 or more, and since avian vets are a specialized field that's harder to find, it's worth locating one before you need it."
       },
       {
         "q": "What are the ongoing monthly costs for a cockatiel?",
@@ -13112,7 +13112,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 5,
     "headingCount": 7,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -13184,7 +13184,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -13244,7 +13244,7 @@
       },
       {
         "q": "Is egg binding related to diet?",
-        "a": "Yes, directly. A laying hen pulls calcium from her own bones to build eggshells, so a calcium-poor, seed-heavy diet feeds straight into the risk. Egg binding is a genuine emergency, a small bird can die within hours of becoming egg-bound."
+        "a": "Yes, directly. Cockatiels are prone to low dietary calcium, and a calcium shortfall can lead to egg binding, so a calcium-poor, seed-heavy diet feeds straight into the risk. Egg binding is a genuine emergency, a small bird can die within hours of becoming egg-bound."
       }
     ],
     "relatedProducts": [
@@ -13256,7 +13256,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 5,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -13319,7 +13319,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
+    "sourceCount": 6,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -16429,7 +16429,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 5,
     "headingCount": 12,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -19962,7 +19962,7 @@
     "seoDescription": "How to feed a pet flying squirrel: the wild diet, a safe captive framework, feeding schedule, and the calcium ratio that prevents metabolic bone disease.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
-    "excerpt": "A flying squirrel's wild diet of acorns, seeds, fungi, and the occasional bird egg is easy to approximate badly in captivity, and getting the calcium-to-phosphorus balance wrong is the leading cause of serious illness in this species.",
+    "excerpt": "A flying squirrel's wild diet of acorns, seeds, fungi, and the occasional bird egg is easy to approximate badly in captivity, and getting the calcium-to-phosphorus balance wrong leads to metabolic bone disease, which can end in fractures and paralysis.",
     "date": "2026-09-06",
     "category": "Small & Exotic Pets",
     "categories": [
@@ -19989,7 +19989,7 @@
     "faqs": [
       {
         "q": "What do pet flying squirrels eat?",
-        "a": "A base of high-quality rodent-block pellets, supplemented daily with fresh produce and a protein source (mealworms, crickets, or a little hard-boiled egg or chicken) several times a week, plus calcium: a cuttlebone or calcium block in the cage and calcium powder on insects. Nuts and seeds are best treated as occasional treats rather than a staple, even though that's what people picture first."
+        "a": "A base of high-quality rodent-block pellets, supplemented daily with fresh produce and a protein source (mealworms, crickets, or a little hard-boiled egg or chicken) several times a week, plus calcium: a cuttlebone or calcium block in the cage and calcium powder on moist food. Nuts and seeds are best treated as occasional treats rather than a staple, even though that's what people picture first."
       },
       {
         "q": "How often should you feed a flying squirrel, and how much?",
@@ -20001,11 +20001,11 @@
       },
       {
         "q": "What's the correct calcium-to-phosphorus ratio for a flying squirrel's diet?",
-        "a": "Roughly 2:1. In practice: a diet of about 80% rodent block and 20% produce, a light sprinkle of plain calcium powder on moist food three times a week and on insects, a cuttlebone in the cage, and 20 minutes of daily natural or full-spectrum light. Extra vitamin D3 is a vet's call."
+        "a": "Roughly 2:1. In practice: a diet of about 80% rodent block and 20% produce, a light sprinkle of plain calcium powder on moist food three times a week, a cuttlebone in the cage, and 20 minutes of daily natural or full-spectrum light. Extra vitamin D3 is a vet's call."
       },
       {
         "q": "What foods should flying squirrels avoid?",
-        "a": "An all-seed or nut-heavy diet, for both the phosphorus imbalance and the fat content, which drives obesity fast in a captive animal that's naturally far more active than its cage allows. Also skip chocolate, dairy, candy, and anything processed or heavily salted, none of which show up anywhere in a wild flying squirrel's diet."
+        "a": "An all-seed or nut-heavy diet: nuts and seeds run high in phosphorus and low in calcium, and seeds alone lack essential protein and vitamins. Also skip chocolate, dairy, candy, and anything processed or heavily salted, none of which show up anywhere in a wild flying squirrel's diet."
       }
     ],
     "relatedProducts": [
@@ -20017,7 +20017,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 5,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
@@ -24759,7 +24759,7 @@
     "title": "Four Pets With One Rule Each Worth Knowing First",
     "seoTitle": "Guinea Pig, Cockatiel, Betta & Tarantula",
     "seoDescription": "Four beginner pets, one rule each: guinea pig needs a friend, cockatiel fumes from nonstick pans are fatal, betta needs a real tank, tarantula is look only.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": true,
     "excerpt": "A rodent, a bird, a fish, and a spider, four pets that don't have much in common except that each comes with a single piece of information that matters more than everything else in its care.",
     "date": "2026-07-17",
@@ -25113,7 +25113,7 @@
       },
       {
         "q": "What are the signs of dental disease in guinea pigs?",
-        "a": "Drooling, weight loss, and unusually small droppings. The molars can overgrow while the front incisors still look normal, which is part of why it catches owners off guard. Chronic cases sometimes need trimming under anesthesia every 4 to 6 weeks."
+        "a": "Drooling, weight loss, and unusually small droppings. The molars can overgrow while the front incisors still look normal, which is part of why it catches owners off guard. Chronic cases sometimes need repeat trimming under anesthesia as often as once a month."
       },
       {
         "q": "How often should a healthy-looking guinea pig see a vet?",
@@ -25130,7 +25130,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 5,
     "headingCount": 12,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -25847,9 +25847,9 @@
     "path": "/content/guides/hamster-cost-guide.mdx",
     "slug": "hamster-cost-guide",
     "title": "How Much Does a Hamster Really Cost?",
-    "seoTitle": "Hamster Price: $15 to $25, Plus $150 to $350 Setup",
-    "seoDescription": "Hamster cost breakdown: $15-30 for the animal, $150-350 for setup, $15-50 monthly, and why a median 1.75-year lifespan changes the long-term math.",
-    "lastUpdated": "2026-09-08",
+    "seoTitle": "Hamster Price: $15 to $25, Plus $100 to $250 Setup",
+    "seoDescription": "Hamster cost breakdown: $15-30 for the animal, $100-250 for setup, $15-30 monthly, and why a median 1.75-year lifespan changes the long-term math.",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Hamsters are one of the cheapest pets to buy and one of the easiest to underfund properly. The animal costs almost nothing, doing right by it costs considerably more.",
     "date": "2026-07-14",
@@ -25880,11 +25880,11 @@
       },
       {
         "q": "What does a full hamster setup cost upfront?",
-        "a": "Roughly $150 to $350, covering an enclosure, deep bedding, a solid wheel, and smaller extras like a hideout, water bottle, food dish, sand bath, chew items, and a carrier. A humane setup costs meaningfully more than the animal itself, which is exactly backwards from what the cheap sticker price suggests."
+        "a": "Roughly $100 to $250, animal included, covering an enclosure, deep bedding, a solid wheel, and smaller extras like a hideout, water bottle, food dish, sand bath, chew items, and a carrier. A humane setup costs meaningfully more than the animal itself, which is exactly backwards from what the cheap sticker price suggests."
       },
       {
         "q": "What are the ongoing monthly costs for a hamster?",
-        "a": "About $15 to $50 a month. Food runs $5 to $12, and bedding plus sand bath refills are the bigger recurring cost at $15 to $30 a month, since deep bedding needs regular replacing to stay clean and dust free."
+        "a": "About $15 to $30 a month for food and bedding together, and most of it goes on bedding, because a deep layer gets replaced regularly to keep it clean."
       },
       {
         "q": "How much does hamster vet care cost?",
@@ -25892,7 +25892,7 @@
       },
       {
         "q": "How does a hamster's short lifespan affect the cost math?",
-        "a": "A large veterinary study put the median age at death at 1.75 years, with the range reaching about 3.65 years. Syrians tend toward the higher end, roughly 2 to 3 years, dwarf species often 1.5 to 2.5 years. Fewer years means less time to spread the setup cost, and less total expense."
+        "a": "A large veterinary study put the median age at death at 1.75 years, with the range reaching about 3.65 years. Syrians and Roborovskis tend toward 2 to 3 years, while Winter Whites often live only about a year. Fewer years means less time to spread the setup cost, and less total expense."
       }
     ],
     "relatedProducts": [
@@ -26356,7 +26356,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 5,
     "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -26638,7 +26638,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -27005,8 +27005,8 @@
     "path": "/content/guides/hermit-crab-cost-guide.mdx",
     "slug": "hermit-crab-cost-guide",
     "title": "How Much Does a Hermit Crab Cost?",
-    "seoTitle": "Hermit Crab Price: $3 to $40 Each, Plus $130 to $450 Setup",
-    "seoDescription": "Hermit crab cost breakdown: $3-40 per crab, a $130-450 humidity-controlled setup, and just $10-30 a month, for a pet that can live 10 to 20 years or more.",
+    "seoTitle": "Hermit Crab Price: $5 to $40 Each, Plus $90 to $350 Setup",
+    "seoDescription": "Hermit crab cost breakdown: $5-40 per crab, a $90-350 humidity-controlled setup, and just $10-30 a month, for a pet that can live 10 years or more.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Hermit crabs are often sold as an impulse buy at beach shops and boardwalk stands, which is exactly the wrong way to think about them. Done properly, they need a real setup, and they're social animals that shouldn't be kept alone.",
@@ -27034,11 +27034,11 @@
     "faqs": [
       {
         "q": "How much does a hermit crab itself cost?",
-        "a": "Usually $3 to $40 per crab, the smallest line item in the budget. Budget for at least two: hermit crabs are social and don't do well kept alone, so a single crab isn't the way to keep them properly."
+        "a": "Usually $5 to $40 per crab, the smallest line item in the budget. Budget for at least two: hermit crabs are social and don't do well kept alone, so a single crab isn't the way to keep them properly."
       },
       {
         "q": "What does a proper hermit crab setup cost?",
-        "a": "Plan on $130 to $450 for a full setup: tank, substrate, heat mat, thermometer/hygrometer, extra shells, dishes, and marine salt. Tank size and how many crabs you're starting with are what move you around in that range."
+        "a": "Plan on $90 to $350 for a full setup: tank, substrate, heat mat, thermometer/hygrometer, extra shells, dishes, and marine salt. Tank size and how many crabs you're starting with are what move you around in that range."
       },
       {
         "q": "What are the ongoing monthly costs for a hermit crab?",
@@ -27046,7 +27046,7 @@
       },
       {
         "q": "Why is 'cheap boardwalk crab' a misleading way to think about hermit crab cost?",
-        "a": "Because the low price of the crab itself hides what determines whether it thrives: the tank, substrate depth, humidity control, and multiple spare shells. Skipping that real setup to save money is a common reason boardwalk-shop crabs don't survive long, and it doesn't change the fact that a well-kept hermit crab can live 10 to 20 years or more."
+        "a": "Because the low price of the crab itself hides what determines whether it thrives: the tank, substrate depth, humidity control, and multiple spare shells. Skipping that real setup to save money is a common reason boardwalk-shop crabs don't survive long, and it doesn't change the fact that a well-kept hermit crab can live 10 years or more, and some reach 30."
       }
     ],
     "relatedProducts": [
@@ -27062,7 +27062,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 2,
     "headingCount": 7,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -27238,7 +27238,7 @@
       },
       {
         "q": "When should I never handle my hermit crab?",
-        "a": "Never handle a crab that's molting, has recently changed shells, or is buried in the substrate. Molting crabs are extremely vulnerable, and disturbing one during this time can be fatal, it's one of the clearest rules in hermit crab care."
+        "a": "Never handle a crab that's molting, has just molted, or is buried in the substrate. Molting crabs are extremely vulnerable, and disturbing one during this time can be fatal, it's one of the clearest rules in hermit crab care."
       },
       {
         "q": "What are signs my hermit crab is stressed?",
@@ -38087,7 +38087,7 @@
     "faqs": [
       {
         "q": "What is the most common health issue in Quaker parakeets?",
-        "a": "Fatty liver disease (hepatic lipidosis), almost always tied to a seed-heavy, high-fat diet. The MSD Veterinary Manual lists anorexia, lethargy, an overgrown beak and nails, and green-tinted droppings among the signs, and Merck's Veterinary Manual flags Quaker parakeets as one of the parrot species prone to obesity, which raises the risk."
+        "a": "Fatty liver disease (hepatic lipidosis), almost always tied to a seed-heavy, high-fat diet. Signs include anorexia, lethargy, an overgrown beak and nails, and green-tinted droppings, and Quaker parakeets are among the parrot species prone to obesity, which raises the risk."
       },
       {
         "q": "Why is my Quaker parakeet plucking its feathers?",
@@ -38099,7 +38099,7 @@
       },
       {
         "q": "Is psittacosis dangerous to people, not just birds?",
-        "a": "Yes. The CDC confirms psittacosis is a bacterial infection spread through droppings and respiratory secretions, and it's notably zoonotic, meaning it can pass to people in the household. See a vet, this needs proper diagnosis and treatment for everyone's sake, not just the bird's."
+        "a": "Yes. The bacteria travel in a bird's droppings and respiratory secretions, and people in the same household can catch it from those. See a vet, this needs proper diagnosis and treatment for everyone's sake, not just the bird's."
       },
       {
         "q": "How can I prevent most Quaker parakeet health issues?",
@@ -39028,7 +39028,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 5,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -39067,7 +39067,7 @@
     "faqs": [
       {
         "q": "Are rats easy to handle?",
-        "a": "Yes, more so than most small pets. With regular, gentle handling from a young age, rats become confident and seek out interaction rather than tolerating it. RSPCA behavior guidance describes them as animals that learn quickly and memorize routes and people, which is also why rats are trainable to a degree few other small mammals match."
+        "a": "Yes, more so than most small pets. With regular, gentle handling from a young age, rats become confident and seek out interaction rather than tolerating it. They learn fast and remember both routes and people, which is also why rats are trainable to a degree few other small mammals match."
       },
       {
         "q": "Do rats bite often?",
@@ -39079,7 +39079,7 @@
       },
       {
         "q": "Can you pick a rat up by the tail?",
-        "a": "Never. A rat's tail skin can shear away from the tissue beneath it under pulling or grasping pressure, an injury called degloving or tail slip, most often caused by exactly this kind of handling. Scoop from underneath instead, and remind children and unfamiliar guests never to grab a rat by the tail."
+        "a": "Never. Being lifted by the tail is stressful for a rat and can injure it. Scoop from underneath instead, and remind children and unfamiliar guests never to grab a rat by the tail."
       },
       {
         "q": "Can rats learn tricks?",
@@ -39092,7 +39092,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 7,
+    "sourceCount": 6,
     "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -45491,7 +45491,7 @@
     "slug": "tarantula-handling-guide",
     "title": "Should You Handle a Tarantula? Almost Always, No",
     "seoTitle": "Can You Handle a Tarantula Safely?",
-    "seoDescription": "Tarantulas are look-don't-touch pets: a short fall can rupture and kill the spider, and urticating hairs can cause real corneal damage to your eyes.",
+    "seoDescription": "Tarantulas are look-don't-touch pets: a short fall can kill the spider, and urticating hairs can cause real corneal damage to your eyes.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "If you're hoping for a pet you can hold, a tarantula is probably the wrong choice. Handling carries real risk in both directions, a fall can be fatal to the spider, and its defenses can hurt you.",
@@ -45523,7 +45523,7 @@
       },
       {
         "q": "What happens if a tarantula falls?",
-        "a": "It can rupture the abdomen, and that is often fatal. The drop doesn't have to be far either: a hand, a shoulder, or a couch cushion is enough. There's no margin for error with a body built like this."
+        "a": "It can be fatally injured, since many commonly kept species are that fragile. The drop doesn't have to be far either: a hand, a shoulder, or a couch cushion is enough. There's no margin for error with a body built like this."
       },
       {
         "q": "Are tarantula bites or urticating hairs dangerous?",

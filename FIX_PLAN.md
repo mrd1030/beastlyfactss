@@ -1784,6 +1784,17 @@ Done 2026-09-25 on claude/adsense-readiness-review-7u43dx in one commit. Not mer
 - Millipede lifespan: hub says up to 10 years in captivity; Tree of Life Exotics says 5 to 7.
 - discus-tank-setup-guide uses "X, not Y" 7 times (limit 2).
 
+## Found in the wave 3b review (2026-09-25, not yet fixed)
+
+- [ ] guinea-pig-handling-guide says approach "from the side"; RSPCA Australia says from the front, and no source backs the side approach.
+- [ ] rabbit-health-issues-guide says "80% of unspayed does aged 5 and older" (uterine cancer); Merck gives 80% by 3 years in some strains.
+- [ ] degu-enrichment-guide says sand, not dust, for bathing; PetMD says chinchilla dust twice weekly. Pick one and match the degu siblings and hub.
+- [ ] Gerbil split-cage introduction method conflicts with RSPCA's advice against keeping unfamiliar adults side by side.
+- [ ] rat-feeding-guide names RSPCA and Merck in body text and FAQs (older text). De-name where the sentence does not need it.
+- [ ] Unsourced claims found while removing SpectrumCare (older text): cockatiel-cost egg binding "$300 to $800"; hedgehog-feeding quilling at 4 months and the breeders' "2 nights" rule; lovebird-handling nest box and mirror trigger, grief lasting 4 to 8 weeks; cockatiel-feeding fall nesting trigger; hermit-crab-cost "10-gallon for 2 to 3 crabs" (PetMD says up to two).
+- [ ] Sources that could not be loaded to verify: Petanimalguide (budgie-cost, Cloudflare-blocked) and Vety (hamster-cost, reader proxy only).
+- [ ] african-grey-parrot-legal-guide FAQ tells buyers to look for a CITES certificate; the FWS CITES fact sheet says that does not apply to captive-bred greys. Legal file: owner decision.
+
 ## Still open under wave 1 (needs another look)
 
 - [ ] Line 308, amano shrimp water change percent: no source gives an amano-specific percentage (The Shrimp Farm, Aquarium Co-Op and Fish Laboratory checked). Left the hub alone rather than invent one.
@@ -1919,6 +1930,15 @@ Added 2026-09-25 from the wave 3a changes:
 - [ ] Goldfish (pages_1.html:190, 359; pages_3.html:17, 105, 422): "fine sand or smooth rounded gravel". Site: bare bottom, fine sand, or gravel only at 1/2 inch and up, since pea gravel lodges in the mouth (goldfish-tank-setup-guide; Wildgoose).
 - [ ] Tarantula: no quarantine for a new spider. Hub now says at least three months apart. Add it.
 
+Added 2026-09-25 from the wave 3b changes:
+- [ ] Budgie (budgie-src/pages_1.html:262): "a bird does not need a special lamp". Site: without unfiltered sunlight, a full-spectrum bird UV light 10 to 12 hours a day (budgie-cost-guide; PetMD). The other bird packages already recommend one.
+- [ ] Cockatiel (cockatiel-src/pages_1.html:349): "Two hens or two cocks avoids the egg problem entirely". Site: hens lay with no male; two males are the pairing with no eggs (cockatiel-handling-guide; Lafeber, PetMD, VCA).
+- [ ] Lovebird (lovebird-src/pages_1.html:337, pages_2.html:111): "Two hours a day is the working figure". Site: no study backs a fixed number; daily interaction and time out, and hours alone did not change feather damage odds (lovebird-enrichment-guide; Ebisawa et al. 2021, PetMD).
+- [ ] Budgie, cockatiel, lovebird (budgie-src/pages_2.html:227-229; cockatiel-src/pages_2.html:236, pages_4.html:256; lovebird-src/pages_2.html:242): only a 10% drop is given as a weight trigger. Add: during a diet conversion, more than 1 to 2% lost in a week means the change is too fast (feeding guides; UF Small Animal Hospital).
+- [ ] Rabbit (rabbit.html:1069, 1406, 1578): "Annual vaccination" with one box a year. Site: first course is two doses 21 days apart from 4 weeks old, then yearly; starter series $80 to $180, booster $60 to $75 (rabbit-health-issues-guide, rabbit-cost-guide; Bosco-Lauth et al. 2024).
+- [ ] Hamster (hamster.html:658): Syrians nurse "roughly 26 to 28 days". Site: weaned at about 20 days, can breed at 7 to 8 weeks (hamster-handling-guide; Merck).
+- [ ] Hamster (hamster.html:1342, 1347, 1364, 1519): wheel, dishes and hideout washed monthly, bedding partly replaced every 3 to 4 months. Site: water bottle daily; full clean weekly for a small cage, every few weeks for a large deep-bedded one, nest and hoard set aside and returned (hamster-tank-setup-guide; PetMD, PDSA).
+
 **Package better than the site (fix the site, not the package):**
 - [x] Axolotl pH: package "7.4 to 7.6" (LafeberVet) vs hub and tank setup guide "7.4 to 7.8".
 - [x] Hamster torpor: package "below 41°F (5°C)" (Merck, LafeberVet) vs hub "under 60°F risks torpor".
@@ -1954,6 +1974,16 @@ Added 2026-09-25 from the wave 3a changes:
 - [ ] Tarantula humidity (tarantula.html:465, 1249): package leaves 40 to 75% unsettled; site picks 40 to 60% for dry-adapted species like the rose hair.
 - [ ] Tarantula juvenile feeding (tarantula.html:543): package frames 4 to 7 days vs 7 to 14 as a disagreement; site gives them as one schedule by age. Wording only.
 - [ ] Tarantula oral nematodes (tarantula.html:1124): site adds wild-caught risk, collection spread and more signs (palps tucked, wet sternum, sweet smell); package has the short version.
+
+Added 2026-09-25 from the wave 3b changes:
+- [ ] Budgie cere (budgie-src/pages_2.html:213): package names recessive pied, lutino and albino as keeping a pink cere; site names pastel and solid-color mutations (budgie-cere-color-guide; Lafeber, Wissman DVM).
+- [ ] Cockatoo first-week vet (cockatoo-src/pages_4.html:325): package exam plus 3-test PCR panel $200 to $450; site exam with PBFD test $140 to $210, $24.50 per PCR at the lab (cockatoo-cost-guide). Different scope.
+- [ ] Cockatoo annual vet (cockatoo-src/pages_4.html:339): package exam plus bloodwork $150 to $300; site wellness exam $78 to $115, no bloodwork (cockatoo-cost-guide).
+- [ ] Lovebird seed (lovebird-src/pages_2.html:12): package seed is treat only, never free-fed, millet 2 to 3 times a week (VCA); site allows 1 to 2 teaspoons a day (lovebird-feeding-guide; Bird Vet Melbourne).
+- [ ] Guinea pig spay (guinea-pig-src/pages_3.html:132): package spay only for a medical reason (Merck); site says exotics vets now recommend a preventive flank ovariectomy for young sows (guinea-pig-health-issues-guide; Illinois CVM).
+- [ ] Hamster settling (hamster.html:797, 920): package no handling for the first week; site leave it 24 hours, then start hand-in-cage taming (hamster-handling-guide; RSPCA, Woodgreen).
+- [ ] Hamster groups (hamster.html:577): package lists the Chinese hamster among dwarfs kept in same-sex groups; site says Chinese hamsters live alone, only Roborovski, Campbell's and Winter White can share (hamster-handling-guide; RSPCA).
+- [ ] Hamster (hamster.html:1595): the package cites SpectrumCare, which the site no longer allows (AI-drafted). Replace or drop at the next rebuild.
 
 ## 6. Site items found during the package check
 
