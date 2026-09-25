@@ -4089,7 +4089,7 @@
     "title": "Axolotl Tank Setup: Cold Water and No Gravel",
     "seoTitle": "Axolotl Tank Setup Guide",
     "seoDescription": "Axolotl tank setup essentials: a 20-gallon long minimum, water kept at 60-68°F with no heater, and fine sand under 1mm or bare bottom, never gravel.",
-    "lastUpdated": "2026-07-18",
+    "lastUpdated": "2026-09-24",
     "noIndex": false,
     "excerpt": "Axolotl husbandry comes down to a short list of rules that matter a lot: keep the water cold, skip the gravel, and don't overthink the rest. Get those two things right and this is a manageable pet.",
     "date": "2026-07-18",
@@ -4145,7 +4145,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -25982,7 +25982,7 @@
     "title": "Hamster Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Hamsters Eat? Diet and Feeding Schedule",
     "seoDescription": "Hamster feeding guide: free-choice vs. scheduled feeding, safe and toxic foods, and how to tell hoarding from real appetite loss.",
-    "lastUpdated": "2026-09-08",
+    "lastUpdated": "2026-09-24",
     "noIndex": false,
     "excerpt": "A hamster's cheek pouches can hold roughly a fifth of its own body weight in food, which is exactly why you might not see it eat for a day and it still be completely fine.",
     "date": "2026-08-01",
@@ -26019,7 +26019,7 @@
       },
       {
         "q": "Why has my hamster stopped eating?",
-        "a": "Dental problems, overgrown or broken teeth, are cited as the single most common cause, hamster incisors grow continuously and pain makes chewing something they avoid even when hungry. Stress from a new environment, cold-induced torpor below about 60°F, and simple pickiness in a mixed-food bowl are other common explanations."
+        "a": "Dental problems, overgrown or broken teeth, are cited as the single most common cause, hamster incisors grow continuously and pain makes chewing something they avoid even when hungry. Stress from a new environment, cold-induced torpor below about 41°F (5°C), and simple pickiness in a mixed-food bowl are other common explanations."
       },
       {
         "q": "Is it normal not to see my hamster eat for a whole day?",
@@ -26322,7 +26322,7 @@
       },
       {
         "q": "What temperature should a hamster's room be?",
-        "a": "65 to 75°F, held steady. Under 60°F there's a torpor risk, a hibernation-like state that can be dangerous; over 80°F risks heat stress. Nothing supplemental is needed in a normal indoor room."
+        "a": "65 to 75°F, held steady. Below 65°F the room is out of range and appetite and activity drop; below about 41°F (5°C), especially with short days, a hamster can slip into torpor, a hibernation-like state that can be dangerous; over 80°F risks heat stress. Nothing supplemental is needed in a normal indoor room."
       },
       {
         "q": "Does a hamster need a special wheel?",
@@ -26345,7 +26345,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -47896,7 +47896,7 @@
       },
       {
         "q": "How often do UVB bulbs actually need replacing?",
-        "a": "Every 12 months for most linear T5 HO bulbs used with reptiles, even if the visible light still looks bright, because UV output degrades well before brightness noticeably drops. Amphibian guidance is shorter: Merck specifies every 6 to 8 months or per the manufacturer."
+        "a": "Every 6 to 12 months for reptile UVB bulbs, depending on the model, even if the visible light still looks bright, because UV output degrades well before brightness noticeably drops. Amphibian guidance is shorter: Merck specifies every 6 to 8 months or per the manufacturer."
       },
       {
         "q": "Does glass block UVB?",
@@ -47921,7 +47921,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 784,

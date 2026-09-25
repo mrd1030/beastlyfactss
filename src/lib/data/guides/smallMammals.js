@@ -726,7 +726,7 @@ export const smallMammalGuides = [
       rows: [
         { label: "Legal", value: "Legal in every US state except Hawaii, which bans hamsters outright with no permit route.", source: "hamster-legal-guide" },
         { label: "Enclosure", value: "Roughly 700 to 775 square inches of unbroken floor for a Syrian, around 600 for dwarf species, more always better. Bar spacing no more than 1/2 inch for Syrians, 1/4 inch for smaller species.", source: "hamster-tank-setup-guide" },
-        { label: "Temperature", value: "65 to 75°F, held steady. Under 60°F risks torpor, a hibernation-like state; over 80°F risks heat stress.", source: "hamster-tank-setup-guide" },
+        { label: "Temperature", value: "65 to 75°F, held steady. Below 65°F is out of range; below about 41°F (5°C), especially with short days, risks torpor, a hibernation-like state; over 80°F risks heat stress.", source: "hamster-tank-setup-guide" },
         { label: "Bedding", value: "At least 6 inches of dust-free paper bedding or aspen shavings as the floor, and 15 to 30 inches (40 to 80 cm) is the depth that measurably improves welfare. Never cedar or pine.", source: "hamster-tank-setup-guide" },
         { label: "Wheel", value: "Solid surface, no rungs. 8 to 11 inches for a Syrian, 6 to 8 for a dwarf. Too small forces an arched running posture that's hard on the spine.", source: "hamster-tank-setup-guide" },
         { label: "Sand bath", value: "A dust-free, non-clumping sand bath is a species essential, not an extra, for working coat and skin oils out.", source: "hamster-tank-setup-guide" },
