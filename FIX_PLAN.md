@@ -1722,3 +1722,41 @@ Status: open
 - [ ] [THIN] iguana-fireskink-quaker-overview: say up front that the iguana section retells the outgrows-the-setup story from the tegu and monitor pieces.
 - [ ] [THIN] savannah-russiantortoise-cockatoo-stickinsect-overview: add that savannah monitor obesity is captivity-driven, not inherited.
 - [ ] [SHORT] rabbit-budgie-overview 254, degu-gerbil-overview 348, uromastyx-tokay-africangrey-jumpingspider-overview 371, guinea-pig-cockatiel-betta-tarantula-overview 384, five-beginner-reptiles-overview 396, iguana-fireskink-quaker-overview 397, gargoyle-mourning-african-fat-tail-gecko-overview 418, koi-conure-slider-scorpion-overview 421, veiled-chameleon-ferret-hognose-overview 444, sulcata-hedgehog-lovebird-guppy-overview 460, boa-glider-mantis-tetra-overview 463, four-unusual-pets-overview 464, savannah-russiantortoise-cockatoo-stickinsect-overview 469, ackie-milksnake-mhc-angelfish-overview 495, hamster-skink-whitestreefrog-pacmanfrog-overview 505, zebra-finch-parrotlet-overview 534, leaftailedgecko-kingsnake-boxturtle-oscar-overview 581, cherry-amano-ghost-shrimp-overview 593.
+
+---
+
+## Wave 1 results
+
+Shipped 2026-09-24 in commit 4c5ae0a, pushed to claude/adsense-readiness-review-7u43dx and claude/fix-plan-wave-1-kjrerp. Not merged to main.
+
+**Results**
+- Done: Session 0 wiring plus 229 of the 231 in-scope items ([ERROR], [CONTRADICTION], [DOUBTED], [COVERED, NOT LINKED], [COVERED+LINKED]), all ticked above.
+- Checks: sync-articles ran, and check-internal-links, check-voice --strict, check-related-articles, check-publish-dates and check-rotation all pass. check-voice shows 0 errors, same as before the wave. Hub rows and hub figures also pass; the sulcata hub is 1 word over the cap, inside the allowed slack.
+- Dates: pages with corrected facts carry lastUpdated 2026-09-24. Pages that only gained a link keep their dates.
+
+**Changes made beyond the agents' work**
+- Fun-facts files renamed: fun-facts-axolotl, fun-facts-rabbit and fun-facts-boa-constrictor are now named after their slugs (10-surprising-*-facts). The site finds these pages by the slug in their frontmatter, but check-related-articles looks them up by filename, so wiring them under the old names failed the check the build runs.
+- Change reverted: an agent refiled long-lived-pet-succession-planning-guide as Birds. Its category was already Pet Care, Birds and Turtles & Tortoises, never Dogs and Cats. The reader's complaint came from the name of the batch it was reviewed in.
+- Claim removed: hamster-tank-setup-guide got a line saying hamsters on 10 cm of bedding "slept in hides". No source states that, so it was cut.
+
+**Spot-checks**
+- Gerbil burrow claim (Wiedenmayer 1997): checked against the paper's abstract; it holds.
+- Pacman frog bite force (Lappin et al. 2017): the paper supports the new figures.
+- Parrot training vs foraging wording: the van Zeeland 2009 review supports it. It lists training among many treatments and names foraging as the one with evidence.
+
+**Worth knowing, not fixed (out of scope)**
+- One new source is weak: canary-health-issues-guide now cites Pet Assure, a pet discount plan's blog. It backs the red mite night-feeding and anemia lines, which had no source before.
+- The cockatoo care package HTML (content/CAREPACKAGE Guides/source/cockatoo.html and cockatoo-src/pages_*.html) still says "six hours a day", "$250 to $1,300" setup and "20 to 40% fresh". The site pages were corrected away from those figures.
+- Neon tetra temperature: the two shared fish guides disagree. aquarium-stocking-and-tankmates-guide says neons top out near 77°F; aquarium-ich-treatment-guide says 81°F.
+- Platy cycling time: platy-tank-setup-guide says a fishless cycle takes 2 to 4 weeks; aquarium-cycling-guide says 4 to 6.
+- Source homepages, which the rules forbid: pacman-frog-cost-guide and pacman-frog-handling-guide (a-z-animals.com, backwaterreptiles.com, thecritterdepot.com), pacman-frog-tank-setup-guide (mramphibian.com), why-bearded-dragons-need-uvb-lighting-and-why-skipping-it-is-deadly (ARAV), why-parrots-need-social-interaction-and-what-loneliness-does-to-them (AAV), hamster-tank-setup-guide (Merck).
+- 10-surprising-argentine-tegu-facts: "no reptile had ever been documented" warming itself may be contradicted by pythons that warm their eggs.
+- Jackson's chameleon ambient temperature is now 70 to 80°F (LafeberVet). The wave 2 item at line 668 still quotes the old 68 to 75.
+
+## Still open under wave 1 (needs another look)
+
+- [ ] Line 308, amano shrimp water change percent: no source gives an amano-specific percentage (The Shrimp Farm, Aquarium Co-Op and Fish Laboratory checked). Left the hub alone rather than invent one.
+- [ ] Line 1677, fun-facts wiring: axolotl, boa and rabbit are wired. Cuttlefish, humpback whale and octopus (and world-octopus-day, the-octopus-has-three-hearts-and-uses-all-of-them) have no guide id to attach to. Needs an owner decision on whether they get one.
+- [ ] Weakly verified sources: hamster-tank-setup-guide's Hauzenberger 2006 figures were read from the abstract in search results (ScienceDirect returned 403; the figures match hamster-enrichment-guide). rat-enrichment-guide's Schneidewind and Windschnurer 2026 finding was seen only in a search summary; only the attribution was changed. Confirm both against the papers.
+- [ ] Pet Assure source on canary-health-issues-guide: replace with a vet or university page covering red mites if one can be found.
+- [ ] Leftover phrasing and comments found in passing: hedgehog-health-issues-guide still has "our guide to" (around line 78); 10-surprising-argentine-tegu-facts has "For care basics, see our full..." (line 26); the milk snake hub comment in snakes.js still says the species has no feeding guide; the degu hub comment in smallMammals.js still describes the old 11 to 12 inch wheel history; sugar-glider-cost-guide Sources has an unlinked World Population Review entry.
