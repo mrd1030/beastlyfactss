@@ -255,6 +255,59 @@ push. Do not merge to main. Summary only at the end.
 
 ---
 
+## Reader review fixes (set up 2026-09-25)
+
+Source: READER_REVIEWS_2026-09-25.md, section 6 (40 items). Every conflict
+there was checked against the site files; section 2 has the file and line
+for each. Two sessions to hold down credits: R1 runs items 1 to 26
+(confirmed conflicts), R2 runs items 27 to 40 (gaps and trust flags). R2
+starts only after R1 has pushed.
+
+Prompt R1 (paste into a fresh session):
+
+```
+Reader review fixes, part R1. Work on branch
+claude/adsense-readiness-review-7u43dx (git fetch, check it out, pull; do
+not create or push any other branch). Read CLAUDE.md, docs/RULES.md,
+the "Reader review fixes" section of FIX_PLAN.md, and
+READER_REVIEWS_2026-09-25.md sections 2 and 6. Scope: section 6 items 1
+to 26, nothing else.
+
+For each item, confirm the conflict still exists, then fix it so every
+place that states the fact agrees: body, frontmatter FAQs,
+seoDescription, description, excerpt, KeyTakeaway, hub rows and hub FAQs
+(hub FAQs stay word for word with the guide FAQ), encyclopedia,
+overviews and vs guides. Where an item says "source check", or where the
+two sides need a source to decide, research with real web sources (never
+from memory; never an AI-drafted site such as ExoPetGuides or
+SpectrumCare; prefer vets, universities, government, peer-reviewed).
+Item 1 (UVB zones) is unverified: load Baines et al. 2016 and change the
+table only if the paper shows it is wrong. Sources stay at 5 per
+article, 6 only when each backs its own claim, with a one-line comment
+saying why. No outside site or brand named in prose unless the sentence
+needs it. No links to the same species' sibling guides. Stamp
+lastUpdated with the Eastern date on every page touched.
+
+Credit limits, hard: never more than 3 agents running at once, each
+taking several items in sequence; no two agents edit the same file. Use
+Opus. Never touch legal files, care packages, or dog and cat pages.
+
+Tick each item in READER_REVIEWS_2026-09-25.md section 6 ("[done]" or
+"[open: reason]"). At the end run sync-articles, check-internal-links,
+check-voice --strict, check-related-articles, check-publish-dates,
+check-rotation, check-seo-tags, check-hub-rows, check-hub-figures and
+check-hub-faqs. All must pass. Then exactly ONE commit and ONE push to
+claude/adsense-readiness-review-7u43dx. No checkpoint commits. Do not
+merge to main. Summary only at the end.
+```
+
+Prompt R2: the same, with "part R2", scope "section 6 items 27 to 40",
+and pull first so R1's commit is in. Gap items (27 to 36) add short,
+sourced text where the reader asked the question; a gap answered by a
+shared guide gets one species sentence with an in-body link to that
+guide, not a copy of it. Trust items (37 to 40): move brand names out of
+advice prose, and source, soften or cut the flat claims.
+
 ## 5. Care package updates (noted 2026-09-24, not edited)
 
 The printable packages still carry figures the site has since corrected. Fix
