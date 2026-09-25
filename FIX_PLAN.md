@@ -1834,6 +1834,7 @@ the HTML), then re-render the PDF.
 - [ ] Ball python p12: list refusal causes with temperature and humidity first, then shed, stress, breeding season.
 - [ ] Goldfish p8: cycle by dosing ammonia to about 3 ppm, done when a full dose reads zero within 24 hours.
 - [ ] Ball python (about lines 315 and 725): says brooding females heat eggs by shivering. A 2015 study found ball pythons do not shiver-brood; the site's fun facts page was corrected in wave 2.
+- [ ] Leopard gecko (profile p. 3, growth table, p. 34): adult length "6.5 to 11 in, sources differ" and "8 to 11 in" adults. Site now uses 6 to 9 inches (PetMD 6 to 9, LafeberVet 6.5 to 8).
 - [ ] Betta p10: feeding "once or twice a day" can add "or up to three smaller meals 6 to 8 hours apart" (optional).
 
 **Package better than the site (fix the site, not the package):**

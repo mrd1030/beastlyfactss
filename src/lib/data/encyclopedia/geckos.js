@@ -62,7 +62,7 @@ export const geckoEncyclopedia = [
       overview: "Found across arid regions from Pakistan to northwestern India, leopard geckos are ground-dwelling lizards that shelter in rocky outcrops and dry grasslands by day. Unlike most geckos, they have true eyelids and lack toe pads, making them unable to climb glass. They are among the most widely kept reptile pets in the world, with over 100 recognized color morphs in captivity.",
       origin: "Pakistan, Afghanistan, Iran, India, Nepal",
       habitat: "Rocky desert, arid grassland, and dry scrubland",
-      adultSize: "7-11 inches (18-28 cm)",
+      adultSize: "6-9 inches (15-23 cm)",
       wildDiet: "Insects, scorpions, small lizards, and worms",
       wildLifespan: "6-8 years (predation, parasites, and harsh conditions cut wild lifespans well short of the 10 to 20 years typical in captivity, with some reaching 25 to 30)",
       conservation: "Least Concern (IUCN)",
