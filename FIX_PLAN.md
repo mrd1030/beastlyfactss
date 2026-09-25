@@ -1051,7 +1051,7 @@ Status: open (leftovers marked OPEN or PARTIAL below)
 **Gaps: truly missing**
 - [x] [TRULY MISSING] What CITES paperwork a captive-bred grey should come with (the cost guide raises it). Belongs in african-grey-parrot-cost-guide.
 - [ ] [TRULY MISSING] Daily food amount (Sep 8-15, verified). Belongs in african-grey-parrot-feeding-guide. OPEN 2026-09-25: no vet, university or manufacturer source gives a grey quantity (VCA, Merck, Tree of Life give percentages only).
-- [ ] [CONTRADICTION] (found in wave 3b, 2026-09-25) african-grey-parrot-legal-guide FAQ "What documentation should I look for when buying one?" tells buyers to look for a CITES certificate. The FWS CITES fact sheet says CITES imposes no controls on shipments between states, and african-grey-parrot-cost-guide now says a US-bred grey needs no CITES document and should carry a closed band. Legal file: reconcile when legal files are next opened.
+- [x] [CONTRADICTION] (found in wave 3b, 2026-09-25; fixed 2026-09-25 with owner approval: FAQ and body now say a domestic bird needs a closed band, not a CITES certificate, sourced to the FWS fact sheet) african-grey-parrot-legal-guide FAQ "What documentation should I look for when buying one?" tells buyers to look for a CITES certificate. The FWS CITES fact sheet says CITES imposes no controls on shipments between states, and african-grey-parrot-cost-guide now says a US-bred grey needs no CITES document and should carry a closed band. Legal file: reconcile when legal files are next opened.
 - [x] [TRULY MISSING] What a baseline avian workup includes (Sep 8-15). Belongs in african-grey-parrot-health-issues-guide.
 
 **Short pages**
@@ -1784,6 +1784,67 @@ Done 2026-09-25 on claude/adsense-readiness-review-7u43dx in one commit. Not mer
 - Millipede lifespan: hub says up to 10 years in captivity; Tree of Life Exotics says 5 to 7.
 - discus-tank-setup-guide uses "X, not Y" 7 times (limit 2).
 
+## Cleanup session (set up 2026-09-25)
+
+One session closes every open item outside the care packages, the legal
+files and the fun-facts wiring. Two groups.
+
+**Group 1: fix (research where needed, one sourced answer each).**
+1. Quaker and conure diet math: pellet and produce shares can total over 100%. Fix as cockatoo was fixed, on the feeding guides, hubs and any sibling that repeats it.
+2. Sugar glider pair minimum 30 x 18 x 36 in has no source: use the page's own Merck figure, 36 x 24 x 36 in, on the tank setup guide and hub.
+3. Guinea pig handling "approach from the side": RSPCA says from the front. Match the source everywhere it appears.
+4. Rabbit health "80% of unspayed does aged 5 and older": restate from Merck (80% by 3 years in some strains) on every page and hub that carries it.
+5. Degu bathing, sand vs chinchilla dust: research, pick the answer the strongest source gives, and align every degu page and the hub.
+6. Gerbil split-cage introductions vs RSPCA's advice against housing unfamiliar adults side by side: research, then either keep the method with the RSPCA caveat or change it.
+7. rat-feeding-guide: drop RSPCA and Merck names from body and FAQs unless the sentence needs them.
+8. Unsourced older claims: cockatiel-cost egg binding "$300 to $800"; hedgehog-feeding quilling at 4 months and the breeders' "2 nights" rule; lovebird-handling nest box and mirror trigger and grief lasting 4 to 8 weeks; cockatiel-feeding fall nesting trigger; hermit-crab-cost "10-gallon for 2 to 3 crabs" (PetMD says up to two). Source each or cut it.
+9. Unverifiable sources: replace Petanimalguide (budgie-cost) and Vety (hamster-cost) with loadable vet or university pages, re-checking the figures they carry. Confirm hamster-tank-setup-guide's Hauzenberger 2006 figures and rat-enrichment-guide's Schneidewind and Windschnurer 2026 finding against the papers, or soften the wording to what can be confirmed.
+10. Leftover phrasing: hedgehog-health-issues-guide "our guide to" (around line 78); 10-surprising-argentine-tegu-facts "For care basics, see our full..." (line 26); milk snake hub comment in snakes.js saying the species has no feeding guide; degu hub comment in smallMammals.js on the old wheel history; sugar-glider-cost-guide unlinked World Population Review entry.
+
+**Group 2: close as "no source exists".** Searched in waves 1 to 3b with no vet, university or peer-reviewed figure found. Mark each "Status: closed 2026-09-25, no source" and move it to the archive; leave the pages as they are.
+Palaemon molt GH (ghost shrimp); amano water change percent (both entries); leopard gecko screen top gap; canary egg food amount; African grey daily food amount; cockatoo out-of-cage hours; parrotlet out-of-cage figure; gerbil settling days; sugar glider wheel diameter; flying squirrel supplement dose and new-squirrel introductions; guinea pig mixed-pair neuter cost; chinchilla weaning-to-adult weight curve; hedgehog spay cost; rat spay and mammary tumor surgery cost; goldfish encyclopedia history; praying mantis handling length.
+
+Out of scope for this session: legal files (the African grey CITES line is already fixed), care packages (section 5), the fun-facts wiring item, dogs and cats.
+
+Cleanup prompt (paste into a fresh session):
+
+```
+Cleanup session from FIX_PLAN.md. Work on branch
+claude/adsense-readiness-review-7u43dx (git fetch, check it out, pull; do
+not create or push any other branch). Read CLAUDE.md, docs/RULES.md and
+the "Cleanup session" section of FIX_PLAN.md. Scope: Group 1 (fix) and
+Group 2 (close), nothing else.
+
+Group 1: research with real web sources (never from memory, never an
+AI-drafted site such as ExoPetGuides or SpectrumCare, prefer vets,
+universities, government and peer-reviewed). For each item, change every
+place the claim appears: body, frontmatter FAQs, seoDescription,
+description, excerpt, KeyTakeaway, hub rows and hub FAQs (hub FAQs stay
+word for word with the guide FAQ), encyclopedia, overviews and vs guides.
+Sources stay at 5 per article, 6 only when each backs its own claim, with
+a one-line comment saying why. No outside site named in prose unless the
+sentence needs it. Stamp lastUpdated with the Eastern date on every page
+touched.
+
+Group 2: no research. Mark each item closed with the reason, then move
+the finished Group 1 and Group 2 entries, and every other ticked [x]
+line in FIX_PLAN.md, to archive/docs-completed/FIX_PLAN_COMPLETED_<date>.md
+(newest first), deleting them from FIX_PLAN.md. Empty species sections
+go too. FIX_PLAN.md keeps open work only.
+
+Credit limits, hard: never more than 3 agents running at once, each
+taking several items in sequence; no two agents edit the same file. Use
+Opus. Never touch legal files, care packages, or dog and cat pages.
+
+At the end run sync-articles, check-internal-links, check-voice --strict,
+check-related-articles, check-publish-dates, check-rotation,
+check-seo-tags, check-hub-rows, check-hub-figures and check-hub-faqs. All
+must pass. Then exactly ONE commit and ONE push to
+claude/adsense-readiness-review-7u43dx. No checkpoint commits. Do not
+merge to main. Summary only at the end: what changed per item, and
+anything that could not be settled.
+```
+
 ## Found in the wave 3b review (2026-09-25, not yet fixed)
 
 - [ ] guinea-pig-handling-guide says approach "from the side"; RSPCA Australia says from the front, and no source backs the side approach.
@@ -1793,14 +1854,13 @@ Done 2026-09-25 on claude/adsense-readiness-review-7u43dx in one commit. Not mer
 - [ ] rat-feeding-guide names RSPCA and Merck in body text and FAQs (older text). De-name where the sentence does not need it.
 - [ ] Unsourced claims found while removing SpectrumCare (older text): cockatiel-cost egg binding "$300 to $800"; hedgehog-feeding quilling at 4 months and the breeders' "2 nights" rule; lovebird-handling nest box and mirror trigger, grief lasting 4 to 8 weeks; cockatiel-feeding fall nesting trigger; hermit-crab-cost "10-gallon for 2 to 3 crabs" (PetMD says up to two).
 - [ ] Sources that could not be loaded to verify: Petanimalguide (budgie-cost, Cloudflare-blocked) and Vety (hamster-cost, reader proxy only).
-- [ ] african-grey-parrot-legal-guide FAQ tells buyers to look for a CITES certificate; the FWS CITES fact sheet says that does not apply to captive-bred greys. Legal file: owner decision.
 
 ## Still open under wave 1 (needs another look)
 
 - [ ] Line 308, amano shrimp water change percent: no source gives an amano-specific percentage (The Shrimp Farm, Aquarium Co-Op and Fish Laboratory checked). Left the hub alone rather than invent one.
 - [ ] Line 1677, fun-facts wiring: axolotl, boa and rabbit are wired. Cuttlefish, humpback whale and octopus (and world-octopus-day, the-octopus-has-three-hearts-and-uses-all-of-them) have no guide id to attach to. Needs an owner decision on whether they get one.
 - [ ] Weakly verified sources: hamster-tank-setup-guide's Hauzenberger 2006 figures were read from the abstract in search results (ScienceDirect returned 403; the figures match hamster-enrichment-guide). rat-enrichment-guide's Schneidewind and Windschnurer 2026 finding was seen only in a search summary; only the attribution was changed. Confirm both against the papers.
-- [ ] Pet Assure source on canary-health-issues-guide: replace with a vet or university page covering red mites if one can be found.
+- [x] (replaced in the wave 3b review with Merck, Mites of Poultry) Pet Assure source on canary-health-issues-guide: replace with a vet or university page covering red mites if one can be found.
 - [ ] Leftover phrasing and comments found in passing: hedgehog-health-issues-guide still has "our guide to" (around line 78); 10-surprising-argentine-tegu-facts has "For care basics, see our full..." (line 26); the milk snake hub comment in snakes.js still says the species has no feeding guide; the degu hub comment in smallMammals.js still describes the old 11 to 12 inch wheel history; sugar-glider-cost-guide Sources has an unlinked World Population Review entry.
 
 ---

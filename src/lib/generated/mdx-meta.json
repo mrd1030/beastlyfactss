@@ -1398,7 +1398,7 @@
     "title": "Is It Legal to Own an African Grey Parrot? CITES Appendix I Explained",
     "seoTitle": "Are African Grey Parrots Legal? CITES and State Rules",
     "seoDescription": "African greys hold CITES Appendix I status since 2017, yet a captive-breeding exemption keeps them legal to own. Vermont is the one state they cannot enter.",
-    "lastUpdated": "2026-07-13",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "African grey parrots hold the strictest CITES protection level there is, Appendix I, since 2017. That sounds like an ownership ban. It isn't, and understanding why comes down to one exemption written specifically for captive breeding.",
     "date": "2026-07-13",
@@ -1436,7 +1436,7 @@
       },
       {
         "q": "What documentation should I look for when buying one?",
-        "a": "A CITES certificate and closed-ring, meaning indelible, identification on the bird, both tied to a registered captive-breeding operation. Buying from a breeder who can provide this provenance documentation is the practical way to confirm you're getting a legitimately captive-bred bird, not a laundered wild-caught one, a concern conservation groups have specifically raised about this exemption."
+        "a": "For a bird bred and sold inside the US, a closed leg band, not a CITES certificate. The Appendix I listing governs birds crossing international borders, and CITES imposes no controls on moving a bird between US states, so a domestic bird carries no CITES paperwork. The band, a solid ring slipped over the foot in the first week after hatching, is the evidence of captive birth. CITES permits come into play only if the bird is imported or taken abroad, which is where the laundering concern conservation groups have raised about this exemption applies."
       },
       {
         "q": "Has the US ever restricted importing wild African greys?",
@@ -1453,7 +1453,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
