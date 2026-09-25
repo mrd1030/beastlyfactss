@@ -20,7 +20,7 @@ export const turtleEncyclopedia = [
       overview: "The red-eared slider is one of the world's most widely recognized freshwater turtles, named for the distinctive red stripe behind each eye. Native to the Mississippi River valley, they have become one of the most invasive reptile species globally - released or escaped pets have established populations on every continent except Antarctica. In the wild they bask in large groups on logs and rocks, maintaining a clear social hierarchy.",
       origin: "Mississippi River valley and Gulf Coast (United States)",
       habitat: "Slow-moving freshwater - ponds, lakes, marshes, and rivers",
-      adultSize: "Average shell about 7 inches (17.8 cm) in males and 10 inches (25.4 cm) in females; large females reach 12 inches (30 cm) or more",
+      adultSize: "Average shell about 7 inches (17.8 cm) in males and 10 inches (25.4 cm) in females; large females reach about 11 to 12 inches (29 cm)",
       wildDiet: "Omnivore - aquatic plants, fish, insects, and carrion",
       wildLifespan: "Up to 30 years in the wild; 20-30 years typical in captivity, with a documented captive record of 41.3 years",
       conservation: "Least Concern (IUCN); invasive outside native range",
