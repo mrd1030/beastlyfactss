@@ -63,7 +63,7 @@ export const lizardEncyclopedia = [
     id: "fire-skink", name: "Fire Skink", scientific: "Lepidothyris fernandi",
     category: "Lizards", emoji: "🦎", difficulty: "Beginner", guideId: "fire-skink", available: true, image: "/assets/guides/fire-skink.jpg",
     bio: {
-      overview: "The fire skink is a West African forest lizard with some of the most striking coloring of any commonly kept reptile: brilliant red flanks broken by black and silver barring, a gold and bronze back, and a black-and-white banded throat. It spends most of its life underground or under leaf litter, which is the part new keepers underestimate. A fire skink in a shallow setup will look permanently stressed and hide in a corner; the same animal in deep, moist substrate will burrow, tunnel and then come out to bask and hunt in the open. They are secretive rather than shy, and most become confident enough to feed from tongs.",
+      overview: "The fire skink is a West African forest lizard with some of the most striking coloring of any commonly kept reptile: brilliant red flanks broken by black and silver barring, a gold and bronze back, and a black-and-white banded throat. It spends most of its life underground or under leaf litter, which is the part new keepers underestimate. A fire skink in a shallow setup will look permanently stressed and hide in a corner; the same animal in deep, moist substrate will burrow, tunnel and then come out to bask and hunt in the open. They are secretive rather than shy, and most become confident enough to feed from tongs, though taking food from tongs is not the same as tolerating a hand: even settled animals stay quick and squirmy when held.",
       origin: "West and Central Africa, from Guinea east to Uganda and Angola",
       habitat: "Tropical forest floor and forest edge, in leaf litter and self-dug burrows",
       adultSize: "12-15 inches (30-38 cm) including tail",
@@ -108,7 +108,7 @@ export const lizardEncyclopedia = [
       overview: "Named for naturalist Frederick John Jackson, Jackson's chameleons are native to the highland forests of Kenya and Tanzania. Males are unmistakable - they sport three prominent horns, resembling a miniature Triceratops. Unlike most reptiles, Jackson's chameleons give birth to live young (viviparous) rather than laying eggs. They were introduced to Hawaii in the 1970s and have established feral populations there.",
       origin: "East Africa (Kenya, Tanzania); introduced to Hawaii",
       habitat: "Montane rainforest and cool highland forest",
-      adultSize: "9-13 inches (23-33 cm)",
+      adultSize: "Typically 6-10 inches (15-25 cm) including tail; males up to 15 inches (38 cm), females up to 10 inches (25 cm)",
       wildDiet: "Insects, worms, snails, and small invertebrates",
       wildLifespan: "5-10 years",
       conservation: "Least Concern (IUCN)",

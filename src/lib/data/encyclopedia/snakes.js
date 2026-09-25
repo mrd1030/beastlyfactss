@@ -36,7 +36,7 @@ export const snakeEncyclopedia = [
       habitat: "Desert, chaparral, woodland, grassland, and agricultural areas",
       adultSize: "2.5-4 feet (75-120 cm)",
       wildDiet: "Lizards, rodents, birds, eggs, and other snakes (including rattlesnakes)",
-      wildLifespan: "5.5 years on average in the wild, the oldest wild specimen recorded at 9; up to 33.3 years in captivity",
+      wildLifespan: "5.5 years on average in the wild, the oldest wild specimen recorded at 9; typically 20 years or more in captivity, with a record of 33.3",
       conservation: "Least Concern (IUCN)",
       history: "This was one of the first snakes bred regularly in captivity, which is why it entered the hobby with a deep catalogue of patterns and morphs while most species still had none. Ease of breeding is the reason: a hardy colubrid that takes rodents readily and tolerates a simple setup is a species a hobbyist can work with over generations. The result is that a beginner buying one today is buying the product of decades of selective breeding rather than a recently collected wild animal.",
     },
