@@ -21,7 +21,7 @@ export const smallMammalGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Cage", value: "A reasonable minimum is around 24 by 24 by 36 inches, tall and multi-level with solid, non-wire floors and shelves. Bigger is better for a species this active. Metal beats plastic, since chinchillas chew constantly and ingested plastic can cause a fatal blockage.", source: "chinchilla-tank-setup-guide" },
+        { label: "Cage", value: "Around 24 by 24 by 36 inches is the smallest most care sheets accept; buy 2 by 2 by 4 feet for one chinchilla, tall and multi-level with solid floors and shelves. Metal beats plastic, since chinchillas chew constantly and ingested plastic can cause a fatal blockage.", source: "chinchilla-tank-setup-guide" },
         { label: "Wheel", value: "A solid metal wheel, 15 inches or larger. Never an exercise ball, a genuine overheating and injury risk for this species specifically.", source: "chinchilla-tank-setup-guide" },
         { label: "Temperature", value: "Ideal room temperature is 50 to 68°F, kept cool and dry. Add the Fahrenheit temperature to the humidity percentage; treat a combined total over 150 as dangerous territory.", source: "chinchilla-tank-setup-guide" },
         { label: "Cold tolerance", value: "Far more cold-tolerant than heat-tolerant: comfortable down into the 35 to 45°F range with proper shelter.", source: "small-mammal-temperature-heat-stress-guide" },
@@ -406,7 +406,7 @@ export const smallMammalGuides = [
         { label: "Budget", value: "$300 to $700 to set up. Roughly $50 to $60 a month for a pair. Lifetime vet cost is commonly estimated at $3,000 to $8,000 or more.", source: "ferret-cost-guide" },
         { label: "Adult size", value: "13 to 16 inches body length; males significantly larger." },
         { label: "Lifespan", value: "5 to 9 years on average for US pet ferrets today. Older sources citing 10 to 15 years reflect a healthier population than what's typical now.", source: "ferret-cost-guide" },
-        { label: "Adrenal disease", value: "Symmetrical hair loss starting at the tail base and moving toward the head over weeks to months, skin usually healthy, is the hallmark sign, unlike normal seasonal shedding, which is diffuse and resolves within a few weeks.", source: "ferret-adrenal-disease-guide" },
+        { label: "Adrenal disease", value: "Symmetrical hair loss starting at the tail base and moving toward the head over weeks to months, skin usually not red or scabby, is the hallmark sign, unlike normal seasonal shedding, which is diffuse and resolves within a few weeks.", source: "ferret-adrenal-disease-guide" },
         { label: "Vaccines", value: "Canine distemper (nearly always fatal in ferrets) and rabies, plus annual bloodwork starting at age 2 to 3 for early disease detection.", source: "ferret-health-issues-guide" },
         { label: "Vet trips", value: "A ventilated, hard-sided small-animal carrier, ready before a trip is ever needed rather than bought the morning of an appointment.", source: "small-mammal-vet-visits-and-travel-guide" },
       ],
@@ -428,7 +428,7 @@ export const smallMammalGuides = [
       { slug: "ferret-health-issues-guide", line: "Adrenal disease, insulinoma, GI blockage, and canine distemper, with why middle age is the real turning point." },
       { slug: "ferret-enrichment-guide", line: "The 2022 surveys on what ferrets actually enjoy, and the specific behavior that shows up when they don't get it." },
       { slug: "ferret-legal-guide", line: "Banned in California and Hawaii, restricted in NYC, and the petition that could change California's ban." },
-      { slug: "ferret-adrenal-disease-guide", line: "The hair loss pattern that separates adrenal disease from normal shedding, and what the neutering-age link actually shows." },
+      { slug: "ferret-adrenal-disease-guide", line: "The hair loss pattern that separates adrenal disease from normal shedding, and how a deslorelin implant and surgery compare." },
     ],
     buyList: [
       "30x24x48 inch double-unit multi-level cage",
@@ -443,7 +443,7 @@ export const smallMammalGuides = [
     faqs: [
       { q: "What size cage does a ferret need?", a: "For a pair, at least 30 by 24 by 48 inches, plus about 4 square feet of floor for each ferret beyond two. Experienced owners and exotic vets point to the double-unit multi-level cage with solid levels and a covered ramp. Bar spacing: one inch or less." },
       { q: "What ferret health issues count as a real emergency?", a: "A urinary blockage in males from an adrenal-related enlarged prostate, a sudden collapse or seizure from insulinoma, and a GI blockage from swallowed rubber or foam are all genuine emergencies that need immediate veterinary care, not a wait-and-see approach." },
-      { q: "Is adrenal disease curable in ferrets?", a: "It's treatable and often manageable long-term, but not always fully curable, especially if both adrenal glands are affected or if surgery isn't a safe option. Many ferrets live comfortably for years with appropriate medical management even without a full cure." },
+      { q: "Is adrenal disease curable in ferrets?", a: "Surgery can cure it when one diseased gland is removed completely, but it is not always possible, and the implant controls signs without shrinking the tumor. Many ferrets live comfortably for years under medical management even without a cure." },
     ],
   },
   {
@@ -483,7 +483,7 @@ export const smallMammalGuides = [
         { label: "Setup budget", value: "Roughly $200 to $500 for a pair, and most first-year totals land at $500 to $1,000-plus.", source: "flying-squirrel-cost-guide" },
         { label: "Cage size", value: "Roughly 24x24x36 inches, or 30 by 18 by 36, height first, and bigger wherever you can for a pair. Bar spacing no more than half an inch.", source: "flying-squirrel-tank-setup-guide" },
         { label: "Temperature", value: "65 to 75°F, cooler than a glider, and they struggle with heat, so never much past 80°F. Away from drafts and direct sun.", source: "flying-squirrel-tank-setup-guide" },
-        { label: "Light", value: "At least 20 minutes a day of natural daylight or full-spectrum light, since they make some vitamin D through the skin. This sits beside dietary calcium and D3 as the prevention for bone disease.", source: "flying-squirrel-tank-setup-guide" },
+        { label: "Light", value: "At least 20 minutes a day of natural daylight or full-spectrum light, since they make some vitamin D through the skin. This sits beside dietary calcium as the prevention for bone disease.", source: "flying-squirrel-tank-setup-guide" },
         { label: "The wheel", value: "A hamster or rat wheel is dangerous: the center axle bar can injure the spine or tail mid-run. Solid, axle-free, at least 12 inches across.", source: "flying-squirrel-tank-setup-guide" },
         { label: "Where they sleep", value: "Pouches or a nest box hung high, lined with shredded paper or fleece, and more than one resting spot even for a pair, since they den communally. A solid floor with a washable liner under it all.", source: "flying-squirrel-tank-setup-guide" },
         { label: "The diet, in one line", value: "A pelleted rodent-block staple, fresh produce daily, and a protein source several times a week: mealworms, crickets, a little cooked chicken or egg. Nuts, seeds, and dried fruit are occasional treats, not the base.", source: "flying-squirrel-feeding-guide" },
@@ -507,7 +507,7 @@ export const smallMammalGuides = [
       soon: [
         "Obesity from a nut-and-seed-heavy diet: correct the diet at home, and confirm the adjustment with a vet",
       ],
-      vetLine: "Caught early, bone disease is treatable with corrected calcium, vitamin D3, and light exposure under veterinary guidance. Prevention is a rodent-block staple with calcium and D3 from the start.",
+      vetLine: "Caught early, bone disease is treatable with corrected calcium, vitamin D3, and light exposure under veterinary guidance. Prevention is a rodent-block staple, calcium, and daily light from the start.",
     },
     routes: [
       { slug: "flying-squirrel-cost-guide", line: "$200 to $450 a squirrel and you need two, $200 to $500 of cage, and the legal check that comes first." },
@@ -528,13 +528,13 @@ export const smallMammalGuides = [
       "A washable cage liner rather than loose bedding",
       "A bonding pouch you can carry against your body",
       "Rodent-block staple food",
-      "A calcium and vitamin D3 supplement",
+      "Plain calcium powder and a cuttlebone or calcium block",
       "A full-spectrum light, or a spot with 20 minutes of daylight a day",
       "Gnawing material, since the incisors never stop growing",
     ],
     faqs: [
       { q: "What size cage does a flying squirrel need?", a: "A minimum of roughly 24x24x36 inches, or 30x18x36. Either way, prioritize height over floor space, this is a climbing, gliding animal, and bigger than the stated minimum is always better, especially for a pair or small group." },
-      { q: "What do pet flying squirrels eat?", a: "A base of high-quality rodent-block pellets, supplemented daily with fresh produce and a protein source (mealworms, crickets, or a little hard-boiled egg or chicken) several times a week, plus a calcium and vitamin D3 supplement. Nuts and seeds are best treated as occasional treats rather than a staple, even though that's what people picture first." },
+      { q: "What do pet flying squirrels eat?", a: "A base of high-quality rodent-block pellets, supplemented daily with fresh produce and a protein source (mealworms, crickets, or a little hard-boiled egg or chicken) several times a week, plus calcium: a cuttlebone or calcium block in the cage and calcium powder on insects. Nuts and seeds are best treated as occasional treats rather than a staple, even though that's what people picture first." },
       { q: "What is the most common serious health issue in pet flying squirrels?", a: "Metabolic bone disease. It's almost entirely diet-driven, caused by a calcium-poor, phosphorus-heavy diet, typically one built too heavily around nuts and seeds without calcium and vitamin D3 correction, and it's the same underlying risk that makes sugar glider nutrition so unforgiving." },
     ],
   },
@@ -897,7 +897,7 @@ export const smallMammalGuides = [
         { label: "Pellets and greens", value: "Roughly 1/8 to 1/4 cup of high-fiber timothy pellets per 5 to 6 lbs of body weight daily, and chopped vegetables scaled to body weight with at least 3 varieties of leafy greens.", source: "rabbit-feeding-guide" },
         { label: "Litter", value: "A large cat-litter-box style box with paper-based or wood-pellet litter and hay in or over it. Never clumping litter, pine, or cedar.", source: "rabbit-tank-setup-guide" },
         { label: "Company", value: "A neutered, opposite-sex pair close in age. Solitary rabbits showed less behavior of every kind.", source: "rabbit-enrichment-guide" },
-        { label: "Vet", value: "A rabbit-savvy exotic vet, found before you need one. Twice-yearly wellness exams, and ask about the RHDV2 vaccine.", source: "rabbit-health-issues-guide" },
+        { label: "Vet", value: "A rabbit-savvy exotic vet, found before you need one. Twice-yearly wellness exams, and the RHDV2 vaccine from 4 weeks, two doses 21 days apart, then yearly.", source: "rabbit-health-issues-guide" },
         { label: "Spay or neuter", value: "$150 to $500 or more, budgeted separately. Adoption fees often include it.", source: "rabbit-cost-guide" },
         { label: "Budget", value: "$150 to $600 to set up, $60 to $100 a month, and a $500 to $1,000 emergency fund.", source: "rabbit-cost-guide" },
         { label: "Lifespan", value: "8 to 12 years indoors, some to 14 or beyond. Outdoor rabbits average about 3 to 5.", source: "rabbit-tank-setup-guide" },

@@ -976,7 +976,7 @@ Suggested sessions: B1 conure, canary, quaker-parakeet, african-grey, cockatoo. 
 Site-wide bird gaps with no shared guide: daily food amount in real units (budgie, cockatiel, lovebird, grey, cockatoo, parrotlet), daily out-of-cage time, cage and dish cleaning routine, finding an avian vet. The "wild parrots forage up to six hours a day" figure and the "training outperformed medication" cockatoo study are stated as fact on several pages while cockatoo-enrichment-guide says neither traces to a readable source; each page is listed below.
 
 ### Conure (conure)
-Status: open
+Status: done 2026-09-25
 
 **Errors and contradictions**
 - [x] [ERROR] conure-enrichment-guide states "Wild parrots spend up to six hours a day" as fact in the excerpt, seoDescription, FAQ and body (plus "The six hour figure is worth sitting with"), while cockatoo-enrichment-guide dropped the figure because it does "not trace to a source worth citing". Source it or reword as cockatoo did.
@@ -987,13 +987,13 @@ Status: open
 - [x] [COVERED+LINKED] Wing clipping: bird-wing-clipping-guide (sidebar). conure-tank-setup-guide discusses free flight at length; add a conure line with an in-body link.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Daily out-of-cage time (Sep 8-15). Belongs in conure-enrichment-guide.
+- [x] [TRULY MISSING] Daily out-of-cage time (Sep 8-15). Belongs in conure-enrichment-guide.
 
 **Short pages**
-- [ ] [SHORT] conure-handling-guide 593.
+- [x] [SHORT] conure-handling-guide 593.
 
 ### Canary (canary)
-Status: open
+Status: open (leftovers marked OPEN or PARTIAL below)
 
 **Errors and contradictions**
 - [x] [ERROR] canary-health-issues-guide has no Sources block (confirmed; a medical page).
@@ -1008,14 +1008,14 @@ Status: open
 - [x] [COVERED+LINKED] Hen egg binding (Sep 8-15): bird-chronic-egg-laying-guide (sidebar) explains triggers and binding but names budgies, cockatiels and lovebirds only. Add a canary hen section with an in-body link in canary-health-issues-guide.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Egg food amount (only "two or three times a week"). Belongs in canary-feeding-guide.
-- [ ] [TRULY MISSING] Recheck canary-cost-guide headline against its table (Sep 8-15, not rechecked).
+- [ ] [TRULY MISSING] Egg food amount (only "two or three times a week"). Belongs in canary-feeding-guide. OPEN 2026-09-25: no vet or university source gives a quantity (VCA, PetMD, LafeberVet, Merck, Chicago Exotics checked); only breeder blogs and product pages. Note: Chicago Exotics gives egg food daily during molt and breeding, PetMD two to three times a week (the feeding guide uses PetMD).
+- [x] [TRULY MISSING] Recheck canary-cost-guide headline against its table (Sep 8-15, not rechecked).
 
 **Short pages**
-- [ ] [SHORT] canary-health-issues-guide 476, canary-cost-guide 489, canary-tank-setup-guide 507.
+- [x] [SHORT] canary-health-issues-guide 476, canary-cost-guide 489, canary-tank-setup-guide 507.
 
 ### Quaker parakeet (quaker-parakeet)
-Status: open
+Status: open (leftovers marked OPEN or PARTIAL below)
 
 **Errors and contradictions**
 - [x] [ERROR] quaker-parakeet-handling-guide seoDescription "banned in 10 states" vs body and FAQ "Thirteen jurisdictions". Fix the seoDescription.
@@ -1023,21 +1023,22 @@ Status: open
 - [x] [ERROR] quaker-parakeet-tank-setup-guide still carries reptile template headings "Humidity" and "Substrate and Lining" (Sep 8-15, confirmed in the file).
 
 **Low grades and thin pages**
-- [ ] [THIN] quaker-parakeet-tank-setup-guide (A-, bordering filler): the nest-box warning appears a third time. Keep one full statement.
+- [x] [THIN] quaker-parakeet-tank-setup-guide (A-, bordering filler): the nest-box warning appears a third time. Keep one full statement.
 
 **Doubted claims**
 - [x] [DOUBTED] quaker-parakeet-health-issues-guide opens on "hardy birds" next to a self-mutilation section (Sep 8-15, not rechecked).
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Step-up, bite response and cage-territorial routine (Sep 8-15, verified). Belongs in quaker-parakeet-handling-guide.
-- [ ] [TRULY MISSING] Cleaning cadence (Sep 8-15, verified). Belongs in quaker-parakeet-tank-setup-guide.
-- [ ] [TRULY MISSING] What to do when moving to a ban state (Sep 8-15). Belongs in quaker-parakeet-legal-guide.
+- [x] [TRULY MISSING] Step-up, bite response and cage-territorial routine (Sep 8-15, verified). Belongs in quaker-parakeet-handling-guide.
+- [ ] [ERROR] (found in wave 3b, 2026-09-25) Diet math: quaker and conure feeding figures read "at least 70% pellets" plus "20 to 40% produce", which can total over 100%, the same pattern fixed for cockatoo. Not on the wave 3b list; applies to the quaker-parakeet and conure feeding pages.
+- [x] [TRULY MISSING] Cleaning cadence (Sep 8-15, verified). Belongs in quaker-parakeet-tank-setup-guide.
+- [ ] [TRULY MISSING] What to do when moving to a ban state (Sep 8-15). Belongs in quaker-parakeet-legal-guide. OPEN 2026-09-25: legal file, out of scope for wave 3b.
 
 **Short pages**
-- [ ] [SHORT] quaker-parakeet-health-issues-guide 539, quaker-parakeet-tank-setup-guide 512.
+- [x] [SHORT] quaker-parakeet-health-issues-guide 539, quaker-parakeet-tank-setup-guide 512.
 
 ### African grey (african-grey)
-Status: open
+Status: open (leftovers marked OPEN or PARTIAL below)
 
 **Errors and contradictions**
 - [x] [ERROR] Hub fun fact "can learn over 1,000 words" vs encyclopedia (Alex "over 150 words") and african-grey-parrot-handling-guide (N'kisi's "hundreds" treated as anecdote). Cut or correct the hub line.
@@ -1048,38 +1049,39 @@ Status: open
 - [x] [COVERED+LINKED] Bathing: bird-feather-dust-air-quality-guide covers misting and bathing for greys (sidebar). Enrichment priority 6 "bathing opportunity" has no frequency or method; add it with an in-body link.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] What CITES paperwork a captive-bred grey should come with (the cost guide raises it). Belongs in african-grey-parrot-cost-guide.
-- [ ] [TRULY MISSING] Daily food amount (Sep 8-15, verified). Belongs in african-grey-parrot-feeding-guide.
-- [ ] [TRULY MISSING] What a baseline avian workup includes (Sep 8-15). Belongs in african-grey-parrot-health-issues-guide.
+- [x] [TRULY MISSING] What CITES paperwork a captive-bred grey should come with (the cost guide raises it). Belongs in african-grey-parrot-cost-guide.
+- [ ] [TRULY MISSING] Daily food amount (Sep 8-15, verified). Belongs in african-grey-parrot-feeding-guide. OPEN 2026-09-25: no vet, university or manufacturer source gives a grey quantity (VCA, Merck, Tree of Life give percentages only).
+- [ ] [CONTRADICTION] (found in wave 3b, 2026-09-25) african-grey-parrot-legal-guide FAQ "What documentation should I look for when buying one?" tells buyers to look for a CITES certificate. The FWS CITES fact sheet says CITES imposes no controls on shipments between states, and african-grey-parrot-cost-guide now says a US-bred grey needs no CITES document and should carry a closed band. Legal file: reconcile when legal files are next opened.
+- [x] [TRULY MISSING] What a baseline avian workup includes (Sep 8-15). Belongs in african-grey-parrot-health-issues-guide.
 
 **Short pages**
-- [ ] [SHORT] african-grey-parrot-handling-guide 418, african-grey-parrot-health-issues-guide 383, african-grey-parrot-cost-guide 529, african-grey-parrot-tank-setup-guide 393.
+- [x] [SHORT] african-grey-parrot-handling-guide 418, african-grey-parrot-health-issues-guide 383, african-grey-parrot-cost-guide 529, african-grey-parrot-tank-setup-guide 393.
 
 ### Cockatoo (cockatoo)
-Status: open
+Status: open (leftovers marked OPEN or PARTIAL below)
 
 **Errors and contradictions**
 - [x] [ERROR] Cage cost: hub FAQ and first-week card "$250 to $1,300 or more" vs cockatoo-cost-guide table stainless cage alone "$1,450 to $1,550" vs the paragraph under that table "a large, appropriately sized cage runs $200 to $1,000". One number across all three.
 - [x] [ERROR] Diet math: hub and cockatoo-feeding-guide "75 to 80% pellets, with fresh vegetables and fruit covering no more than another 20 to 40%" (can exceed 100%) vs cockatoo-tank-setup-guide "most of the rest is vegetables, seeds under about 10%". Use the version that adds up.
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] cockatoo-cost-guide (B, thin math), for the cage numbers above.
+- [x] [LOW GRADE] cockatoo-cost-guide (B, thin math), for the cage numbers above.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Bathing: bird-feather-dust-air-quality-guide quotes VCA, mist daily or shower (body-linked). Add frequency and method to cockatoo-tank-setup-guide or enrichment guide.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Daily food amount (Sep 8-15, verified). Belongs in cockatoo-feeding-guide.
-- [ ] [TRULY MISSING] Cage and dish cleaning routine (Sep 8-15, verified). Belongs in cockatoo-tank-setup-guide.
-- [ ] [TRULY MISSING] PBFD screening cost before purchase (Sep 8-15). Belongs in cockatoo-cost-guide.
-- [ ] [TRULY MISSING] Daily out-of-cage time (Sep 8-15). Belongs in cockatoo-enrichment-guide.
-- [ ] [TRULY MISSING] Noise, leases and neighbors (Sep 8-15). Belongs in cockatoo-legal-guide.
+- [x] [TRULY MISSING] Daily food amount (Sep 8-15, verified). Belongs in cockatoo-feeding-guide.
+- [x] [TRULY MISSING] Cage and dish cleaning routine (Sep 8-15, verified). Belongs in cockatoo-tank-setup-guide.
+- [x] [TRULY MISSING] PBFD screening cost before purchase (Sep 8-15). Belongs in cockatoo-cost-guide.
+- [ ] [TRULY MISSING] Daily out-of-cage time (Sep 8-15). Belongs in cockatoo-enrichment-guide. OPEN 2026-09-25: no loadable vet source gives an hours figure for cockatoos (Tree of Life, Chicago Exotics, PetMD, Lafeber, Exotic Bird Hospital checked); the enrichment guide is unchanged.
+- [ ] [TRULY MISSING] Noise, leases and neighbors (Sep 8-15). Belongs in cockatoo-legal-guide. OPEN 2026-09-25: legal file, out of scope for wave 3b.
 
 **Short pages**
-- [ ] [SHORT] cockatoo-health-issues-guide 476, cockatoo-cost-guide 512, cockatoo-tank-setup-guide 489, cockatoo-feeding-guide 501.
+- [x] [SHORT] cockatoo-health-issues-guide 476, cockatoo-cost-guide 512, cockatoo-tank-setup-guide 489, cockatoo-feeding-guide 501.
 
 ### Parrotlet (parrotlet)
-Status: open
+Status: open (leftovers marked OPEN or PARTIAL below)
 
 **Errors and contradictions**
 - [x] [ERROR] parrotlet-enrichment-guide states "up to six hours a day" (FAQ and body) and "Training sessions outperformed medication and feeding enrichment" (body and FAQ) as fact; cockatoo-enrichment-guide declines both. Reword to match.
@@ -1089,11 +1091,11 @@ Status: open
 - [x] [COVERED+LINKED] Quarantine protocol and screening list (bird-quarantine-guide), photoperiod and egg laying (bird-photoperiod-sleep-guide), pellet conversion (bird-pellet-conversion-guide): all in the sidebar, none linked in body (the set's only in-body link is its overview). Add in-body links where each comes up in the health and feeding guides; the feeding guide currently links the budgie version for conversion.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Daily food amount (Sep 8-15, verified). Belongs in parrotlet-feeding-guide.
-- [ ] [TRULY MISSING] Daily out-of-cage figure (Sep 8-15). Belongs in parrotlet-enrichment-guide.
+- [x] [TRULY MISSING] Daily food amount (Sep 8-15, verified). Belongs in parrotlet-feeding-guide.
+- [ ] [TRULY MISSING] Daily out-of-cage figure (Sep 8-15). Belongs in parrotlet-enrichment-guide. PARTIAL 2026-09-25: parrotlet-enrichment-guide now has a "Time Out of the Cage" section (daily handling to keep tameness, supervision, when a pair is the answer). No vet or university source gives an hours figure for parrotlets; left out.
 
 ### Cockatiel (cockatiel)
-Status: open
+Status: done 2026-09-25
 
 **Errors and contradictions**
 - [x] [CONTRADICTION] Lifespan: hub and cockatiel-cost-guide "10 to 15 years" (the cost guide's whole commitment argument) vs cockatiel-vs-cockatoo-guide "15 to 25 year lifespan" and encyclopedia "up to 25 years in captivity, the oldest on record 36".
@@ -1106,38 +1108,38 @@ Status: open
 - [x] [COVERED+LINKED] Bathing: bird-feather-dust-air-quality-guide names cockatiels as dust birds and recommends misting or bathing (sidebar). Enrichment priority 5 has no frequency or method.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Pairing a cockatiel with a companion bird: species match and introduction (bird-colony-aviary-keeping-guide covers budgies, canaries and finches only). Belongs in cockatiel-handling-guide (also Sep 8-15).
-- [ ] [TRULY MISSING] Daily food amount (Sep 8-15, verified). Belongs in cockatiel-feeding-guide.
-- [ ] [TRULY MISSING] Out-of-cage hours (Sep 8-15, verified). Belongs in cockatiel-enrichment-guide.
-- [ ] [TRULY MISSING] What is safe to clean the cage with (Sep 8-15). Belongs in cockatiel-tank-setup-guide.
+- [x] [TRULY MISSING] Pairing a cockatiel with a companion bird: species match and introduction (bird-colony-aviary-keeping-guide covers budgies, canaries and finches only). Belongs in cockatiel-handling-guide (also Sep 8-15).
+- [x] [TRULY MISSING] Daily food amount (Sep 8-15, verified). Belongs in cockatiel-feeding-guide.
+- [x] [TRULY MISSING] Out-of-cage hours (Sep 8-15, verified). Belongs in cockatiel-enrichment-guide.
+- [x] [TRULY MISSING] What is safe to clean the cage with (Sep 8-15). Belongs in cockatiel-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] cockatiel-handling-guide 422, cockatiel-health-issues-guide 561, cockatiel-cost-guide 547, cockatiel-tank-setup-guide 469.
+- [x] [SHORT] cockatiel-handling-guide 422, cockatiel-health-issues-guide 561, cockatiel-cost-guide 547, cockatiel-tank-setup-guide 469.
 
 ### Budgie (budgie)
-Status: open
+Status: done 2026-09-25
 
 **Errors and contradictions**
 - [x] [ERROR] budgie-tank-setup-guide has no Sources block (Sep 8-15, confirmed in the file).
 - [x] [CONTRADICTION] Solo bird: budgie-enrichment-guide "It can be" vs budgie-tank-setup-guide "Not well" (Sep 8-15, not rechecked).
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] budgie-enrichment-guide (B, thin): generic "forage, chew, fly, socialize" parrot advice, and it restates the cage guide's social needs section. Add budgie-specific material.
+- [x] [LOW GRADE] budgie-enrichment-guide (B, thin): generic "forage, chew, fly, socialize" parrot advice, and it restates the cage guide's social needs section. Add budgie-specific material.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Quarantine clock vs taming clock: bird-quarantine-guide (body-linked). Add one sentence in budgie-handling-guide saying whether taming prep starts during the 30 to 45 days or after.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] How to find and evaluate an avian vet. Belongs in budgie-health-issues-guide (or a shared vet guide).
-- [ ] [TRULY MISSING] When the first well-bird exam falls relative to quarantine (bird-quarantine-guide does not say). Belongs in budgie-health-issues-guide.
-- [ ] [TRULY MISSING] Daily food amount (Sep 8-15, verified). Belongs in budgie-feeding-guide.
-- [ ] [TRULY MISSING] Cleaning routine (Sep 8-15). Belongs in budgie-tank-setup-guide.
+- [x] [TRULY MISSING] How to find and evaluate an avian vet. Belongs in budgie-health-issues-guide (or a shared vet guide).
+- [x] [TRULY MISSING] When the first well-bird exam falls relative to quarantine (bird-quarantine-guide does not say). Belongs in budgie-health-issues-guide.
+- [x] [TRULY MISSING] Daily food amount (Sep 8-15, verified). Belongs in budgie-feeding-guide.
+- [x] [TRULY MISSING] Cleaning routine (Sep 8-15). Belongs in budgie-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] budgie-handling-guide 498, budgie-cost-guide 474, budgie-cere-color-guide 374, budgie-enrichment-guide 451.
+- [x] [SHORT] budgie-handling-guide 498, budgie-cost-guide 474, budgie-cere-color-guide 374, budgie-enrichment-guide 451.
 
 ### Zebra finch (zebra-finch)
-Status: open
+Status: done 2026-09-25
 
 **Errors and contradictions**
 - [x] [CONTRADICTION] Within zebra-finch-tank-setup-guide: "width matters more than height" then the RSPCA paragraph "compromise on width" while keeping height and length generous. Say that the sacrificed dimension is depth.
@@ -1148,7 +1150,7 @@ Status: open
 - [x] [COVERED+LINKED] Body weight habit: bird-sexing-weight-body-condition-guide (body-linked). A normal weight in grams for a zebra finch is still missing (Sep 8-15); add it.
 
 ### Lovebird (lovebird)
-Status: open
+Status: done 2026-09-25
 
 **Doubted claims**
 - [x] [DOUBTED] lovebird-tank-setup-guide: round cages "can cause disorientation given how this species positions its eyes", asserted twice with no source or explanation.
@@ -1157,13 +1159,13 @@ Status: open
 - [x] [COVERED+LINKED] Why no other species in the cage: lovebird-vs-budgie-guide explains mismatched cage-mate aggression (body-linked). lovebird-handling-guide states the rule twice without the reason; add it.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Daily food amount (Sep 8-15, verified). Belongs in lovebird-feeding-guide.
-- [ ] [TRULY MISSING] Cleaning routine (Sep 8-15, verified). Belongs in lovebird-tank-setup-guide.
-- [ ] [TRULY MISSING] Introducing a second lovebird beyond "do it slowly" (Sep 8-15). Belongs in lovebird-handling-guide.
-- [ ] [TRULY MISSING] Daily time math for a single bird (Sep 8-15). Belongs in lovebird-enrichment-guide.
+- [x] [TRULY MISSING] Daily food amount (Sep 8-15, verified). Belongs in lovebird-feeding-guide.
+- [x] [TRULY MISSING] Cleaning routine (Sep 8-15, verified). Belongs in lovebird-tank-setup-guide.
+- [x] [TRULY MISSING] Introducing a second lovebird beyond "do it slowly" (Sep 8-15). Belongs in lovebird-handling-guide.
+- [x] [TRULY MISSING] Daily time math for a single bird (Sep 8-15). Belongs in lovebird-enrichment-guide.
 
 **Short pages**
-- [ ] [SHORT] lovebird-handling-guide 598, lovebird-tank-setup-guide 566, lovebird-enrichment-guide 477.
+- [x] [SHORT] lovebird-handling-guide 598, lovebird-tank-setup-guide 566, lovebird-enrichment-guide 477.
 
 ## Small mammals (12)
 
@@ -1172,7 +1174,7 @@ Suggested sessions: M1 degu, sugar-glider, guinea-pig, flying-squirrel, rat, hed
 Site-wide gaps with no shared guide: sexing and introductions or bonding (glider, rat, gerbil, guinea pig, hamster, degu, chinchilla, flying squirrel), cage cleaning schedules, room-proofing for free roam (hamster, glider, degu, gerbil, mouse, hedgehog: Sep 8-15).
 
 ### Degu (degu)
-Status: open
+Status: done 2026-09-25
 
 **Errors and contradictions**
 - [x] [ERROR] Cage size, three numbers: hub and degu-tank-setup-guide body "28 by 18 by 28 inches minimum for a pair" vs the same guide's FAQ "24 by 18 by 24 inches" vs degu-cost-guide table "24x24x48 in multi-level cage". Use one minimum on all three.
@@ -1180,17 +1182,17 @@ Status: open
 - [x] [CONTRADICTION] Lifespan: every guide "5 to 8 years" vs degu-vs-chinchilla-guide table "5 to 9".
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] degu-cost-guide (B) and degu-tank-setup-guide (B), both for the conflicts above.
+- [x] [LOW GRADE] degu-cost-guide (B) and degu-tank-setup-guide (B), both for the conflicts above.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Pick-up method beyond "scoop", bonding and sexing (Sep 8-15). Belongs in degu-handling-guide.
-- [ ] [TRULY MISSING] Room-proofing for time out of the cage (Sep 8-15). Belongs in degu-enrichment-guide.
+- [x] [TRULY MISSING] Pick-up method beyond "scoop", bonding and sexing (Sep 8-15). Belongs in degu-handling-guide.
+- [x] [TRULY MISSING] Room-proofing for time out of the cage (Sep 8-15). Belongs in degu-enrichment-guide.
 
 **Short pages**
-- [ ] [SHORT] degu-handling-guide 432, degu-health-issues-guide 569.
+- [x] [SHORT] degu-handling-guide 432, degu-health-issues-guide 569.
 
 ### Sugar glider (sugar-glider)
-Status: open
+Status: open (leftovers marked OPEN or PARTIAL below)
 
 **Errors and contradictions**
 - [x] [CONTRADICTION] Lifespan: hub and sugar-glider-cost-guide "10 to 15 years in captivity" vs encyclopedia "up to 17.8 years recorded in captivity". Label the record.
@@ -1204,16 +1206,17 @@ Status: open
 - [x] [COVERED, NOT LINKED] Holding a room at 75 to 88°F (Sep 8-15): small-mammal-temperature-heat-stress-guide FAQ says gliders need a heat lamp or ceramic emitter to stay above about 75°F (partial answer). Add it to RELATED_ARTICLES['sugar-glider'] and a glider sentence with an in-body link in sugar-glider-tank-setup-guide.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] How to introduce two gliders ("introductions need care and time" is the whole instruction). Belongs in sugar-glider-handling-guide.
-- [ ] [TRULY MISSING] Sexing and what neutering involves. Belongs in sugar-glider-health-issues-guide.
-- [ ] [TRULY MISSING] Escape recovery (Sep 8-15). Belongs in sugar-glider-handling-guide.
-- [ ] [TRULY MISSING] Wheel diameter in the body text and a cleaning cadence (Sep 8-15, verified). Belongs in sugar-glider-tank-setup-guide.
+- [x] [TRULY MISSING] How to introduce two gliders ("introductions need care and time" is the whole instruction). Belongs in sugar-glider-handling-guide.
+- [x] [TRULY MISSING] Sexing and what neutering involves. Belongs in sugar-glider-health-issues-guide.
+- [x] [TRULY MISSING] Escape recovery (Sep 8-15). Belongs in sugar-glider-handling-guide.
+- [ ] [TRULY MISSING] Wheel diameter in the body text and a cleaning cadence (Sep 8-15, verified). Belongs in sugar-glider-tank-setup-guide. PARTIAL 2026-09-25: cleaning cadence and a wheel section (solid surface, no rodent wheels) are in sugar-glider-tank-setup-guide; no diameter, because every source giving one is a retailer, hobby site or SpectrumCare (Merck, VCA, LafeberVet, PetMD, Tree of Life, Purdue give none).
+- [ ] [DOUBTED] (found in wave 3b, 2026-09-25) sugar-glider-tank-setup-guide and its hub row give a pair minimum of 30 by 18 by 36 inches with no source. The page's own sources say 36 x 24 x 36 in (Merck), 36 H x 24 W x 24 D for a pair (Tree of Life) and 24 x 24 x 48 for a pair (PetMD). Pick one and change page and hub together.
 
 **Short pages**
-- [ ] [SHORT] sugar-glider-handling-guide 382, sugar-glider-health-issues-guide 446, sugar-glider-cost-guide 578, sugar-glider-tank-setup-guide 456, sugar-glider-feeding-guide 550.
+- [x] [SHORT] sugar-glider-handling-guide 382, sugar-glider-health-issues-guide 446, sugar-glider-cost-guide 578, sugar-glider-tank-setup-guide 456, sugar-glider-feeding-guide 550.
 
 ### Guinea pig (guinea-pig)
-Status: open
+Status: open (leftovers marked OPEN or PARTIAL below)
 
 **Errors and contradictions**
 - [x] [CONTRADICTION] Hay share: hub and guinea-pig-tank-setup-guide "roughly 80%" vs guinea-pig-feeding-guide "70 to 80%".
@@ -1223,15 +1226,15 @@ Status: open
 - [x] [COVERED+LINKED] Which antibiotics are dangerous: small-mammal-enterotoxemia-guide (body-linked). guinea-pig-health-issues-guide raises antibiotics for bladder stones; name the drug classes inline.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] How to introduce and bond two guinea pigs (also Sep 8-15). Belongs in guinea-pig-handling-guide.
-- [ ] [TRULY MISSING] Whether to spay preventively given how common ovarian cysts are. Belongs in guinea-pig-health-issues-guide.
-- [ ] [TRULY MISSING] Neuter cost for a mixed pair (Sep 8-15). Belongs in guinea-pig-cost-guide.
+- [x] [TRULY MISSING] How to introduce and bond two guinea pigs (also Sep 8-15). Belongs in guinea-pig-handling-guide.
+- [x] [TRULY MISSING] Whether to spay preventively given how common ovarian cysts are. Belongs in guinea-pig-health-issues-guide.
+- [ ] [TRULY MISSING] Neuter cost for a mixed pair (Sep 8-15). Belongs in guinea-pig-cost-guide. PARTIAL 2026-09-25: guinea-pig-cost-guide has a section on how the pairing choice changes the vet bill; no dollar figure, since every US neuter price found was a forum, retailer or undated rescue page.
 
 **Short pages**
-- [ ] [SHORT] guinea-pig-handling-guide 488, guinea-pig-cost-guide 577, guinea-pig-enrichment-guide 505.
+- [x] [SHORT] guinea-pig-handling-guide 488, guinea-pig-cost-guide 577, guinea-pig-enrichment-guide 505.
 
 ### Flying squirrel (flying-squirrel)
-Status: open
+Status: open (leftovers marked OPEN or PARTIAL below)
 
 **Errors and contradictions**
 - [x] [ERROR] flying-squirrel-legal-guide: heading "The Four Clean States" opens "Nine states are a clean yes" (confirmed). Rename the heading.
@@ -1243,16 +1246,16 @@ Status: open
 - [x] [COVERED, NOT LINKED] Tooth and nail checks (Sep 8-15): small-mammal-grooming-nails-molting-guide covers rodent nail checks (partial; flying squirrels are not named). Add it to RELATED_ARTICLES['flying-squirrel'] and one sentence with an in-body link in flying-squirrel-health-issues-guide.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Calcium and D3 supplement dose (how much powder, how often) and portions in real units (also Sep 8-15). Belongs in flying-squirrel-feeding-guide.
-- [ ] [TRULY MISSING] Introducing a new squirrel to a pair or group, with a quarantine period. Belongs in flying-squirrel-handling-guide.
-- [ ] [TRULY MISSING] Escape recovery (Sep 8-15). Belongs in flying-squirrel-handling-guide.
-- [ ] [TRULY MISSING] Zoonoses (Sep 8-15). Belongs in flying-squirrel-health-issues-guide.
+- [ ] [TRULY MISSING] Calcium and D3 supplement dose (how much powder, how often) and portions in real units (also Sep 8-15). Belongs in flying-squirrel-feeding-guide. PARTIAL 2026-09-25: flying-squirrel-feeding-guide now gives the routine (about 80% rodent block and 20% produce, plain calcium lightly on moist food three times a week and on insects, cuttlebone always in, daily light) and makes extra D3 a vet-set dose only (the old routine D3 dusting contradicted its own source; health guide and hub fixed to match). No source gives daily grams or teaspoons.
+- [ ] [TRULY MISSING] Introducing a new squirrel to a pair or group, with a quarantine period. Belongs in flying-squirrel-handling-guide. PARTIAL 2026-09-25: flying-squirrel-handling-guide has "Adding a Second Squirrel" (which pairings coexist, territoriality by sex, vet parasite check first). No reputable source gives a step method or quarantine length; a shared small-mammal introductions and quarantine guide would close it.
+- [x] [TRULY MISSING] Escape recovery (Sep 8-15). Belongs in flying-squirrel-handling-guide.
+- [x] [TRULY MISSING] Zoonoses (Sep 8-15). Belongs in flying-squirrel-health-issues-guide.
 
 **Short pages**
-- [ ] [SHORT] flying-squirrel-health-issues-guide 558.
+- [x] [SHORT] flying-squirrel-health-issues-guide 558.
 
 ### Rat (rat)
-Status: open
+Status: open (leftovers marked OPEN or PARTIAL below)
 
 **Errors and contradictions**
 - [x] [ERROR] rat-enrichment-guide uses the British "centrepiece" twice (FAQ and body). Change to "centerpiece".
@@ -1262,50 +1265,50 @@ Status: open
 - [x] [DOUBTED] The "mouse encyclopedia profile" closing aside appears in five of six deep dives, templated by the fourth. Keep one.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Spay or neuter cost and mammary tumor removal cost ("one of the more common surgical costs" with no number). Belongs in rat-cost-guide.
-- [ ] [TRULY MISSING] Whether scatter feeding counts toward the twice-daily portion. Belongs in rat-feeding-guide.
-- [ ] [TRULY MISSING] Sexing and introducing a new rat to a group. Belongs in rat-handling-guide.
+- [ ] [TRULY MISSING] Spay or neuter cost and mammary tumor removal cost ("one of the more common surgical costs" with no number). Belongs in rat-cost-guide. PARTIAL 2026-09-25: rat-cost-guide now has male neuter $50 to $100, spay before about 7 months, and recurrence; no tumor removal dollar figure (only forums and SpectrumCare give one).
+- [x] [TRULY MISSING] Whether scatter feeding counts toward the twice-daily portion. Belongs in rat-feeding-guide.
+- [x] [TRULY MISSING] Sexing and introducing a new rat to a group. Belongs in rat-handling-guide.
 
 ### Hedgehog (hedgehog)
-Status: open
+Status: open (leftovers marked OPEN or PARTIAL below)
 
 **Errors and contradictions**
 - [x] [CONTRADICTION] Daily amount, within hedgehog-feeding-guide: recommendation "2 to 3 teaspoons of a protein base plus 1 to 2 teaspoons of chopped produce" vs cited figures "3 to 4 teaspoons a day up to 1 to 3 tablespoons". Pick one amount and explain the spread.
 
 **Low grades and thin pages**
-- [ ] [THIN] Encyclopedia graded B (by design). The sulcata comparison appears near verbatim in cost, handling and tank setup; trim.
+- [x] [THIN] Encyclopedia graded B (by design). The sulcata comparison appears near verbatim in cost, handling and tank setup; trim.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Finding the right vet (Sep 8-15): small-mammal-vet-visits-and-travel-guide (sidebar).
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Whether and how to bathe a hedgehog (small-mammal-grooming-nails-molting-guide does not cover hedgehogs). Belongs in hedgehog-health-issues-guide or handling guide.
-- [ ] [TRULY MISSING] Sexing. Belongs in hedgehog-handling-guide.
-- [ ] [TRULY MISSING] Spay decision and cost (Sep 8-15). Belongs in hedgehog-health-issues-guide and cost guide.
-- [ ] [TRULY MISSING] Salmonella comes up only after self-anointing (Sep 8-15, verified); move a hygiene line earlier in hedgehog-handling-guide.
+- [x] [TRULY MISSING] Whether and how to bathe a hedgehog (small-mammal-grooming-nails-molting-guide does not cover hedgehogs). Belongs in hedgehog-health-issues-guide or handling guide.
+- [x] [TRULY MISSING] Sexing. Belongs in hedgehog-handling-guide.
+- [ ] [TRULY MISSING] Spay decision and cost (Sep 8-15). Belongs in hedgehog-health-issues-guide and cost guide. PARTIAL 2026-09-25: the decision is in hedgehog-health-issues-guide (vets advise strongly considering a preventive spay) and the cost guide covers first exam and checkups; no spay dollar figure (only forums give one).
+- [x] [TRULY MISSING] Salmonella comes up only after self-anointing (Sep 8-15, verified); move a hygiene line earlier in hedgehog-handling-guide.
 
 **Short pages**
-- [ ] [SHORT] hedgehog-handling-guide 494, hedgehog-health-issues-guide 589.
+- [x] [SHORT] hedgehog-handling-guide 494, hedgehog-health-issues-guide 589.
 
 ### Chinchilla (chinchilla)
-Status: open
+Status: open (leftovers marked OPEN or PARTIAL below)
 
 **Errors and contradictions**
 - [x] [CONTRADICTION] Size: hub and encyclopedia "9 to 15 inches; 1 to 2 lbs" vs chinchilla-vs-hamster-guide table "1-1.5 lbs" and its FAQ "14 to 19 inches including its tail". Match the weight and label the tail in the table.
 
 **Low grades and thin pages**
-- [ ] [THIN] "Tank Setup" label on a cage guide (template label, site-wide for bird and mammal cage guides).
+- [x] [THIN] "Tank Setup" label on a cage guide (template label, site-wide for bird and mammal cage guides). Resolved by the setup-title commit: the label reads "Setup guide" and the title says Housing.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Healthy weight gain from about 200 g at weaning to adult. Belongs in chinchilla-health-issues-guide or feeding guide.
-- [ ] [TRULY MISSING] Introductions (Sep 8-15). Belongs in chinchilla-handling-guide.
-- [ ] [TRULY MISSING] Finding and vetting a breeder or rescue (Sep 8-15). Belongs in chinchilla-cost-guide.
+- [ ] [TRULY MISSING] Healthy weight gain from about 200 g at weaning to adult. Belongs in chinchilla-health-issues-guide or feeding guide. PARTIAL 2026-09-25: chinchilla-health-issues-guide has "Weight From Weaning to Adult" (adults males 400 to 500 g, females 450 to 700 g, breeding floor 8 to 12 months and 600 g, weekly gram-scale weighing). No loadable source gives the 200 g weaning weight or a daily growth rate (Mammalian Species 758 returns 403); the unsourced "roughly 200 grams" line in chinchilla-feeding-guide is unchanged.
+- [x] [TRULY MISSING] Introductions (Sep 8-15). Belongs in chinchilla-handling-guide.
+- [x] [TRULY MISSING] Finding and vetting a breeder or rescue (Sep 8-15). Belongs in chinchilla-cost-guide.
 
 **Short pages**
-- [ ] [SHORT] chinchilla-handling-guide 587, chinchilla-cost-guide 548, chinchilla-tank-setup-guide 570, chinchilla-enrichment-guide 592.
+- [x] [SHORT] chinchilla-handling-guide 587, chinchilla-cost-guide 548, chinchilla-tank-setup-guide 570, chinchilla-enrichment-guide 592.
 
 ### Hamster (hamster)
-Status: open
+Status: done 2026-09-25
 
 **Errors and contradictions**
 - [x] [CONTRADICTION] Bedding depth (soft): hamster-tank-setup-guide "6 inches" as the minimum vs its own fun fact and hamster-enrichment-guide study, 15 to 30 inches (40 to 80 cm) improves welfare; the setup page only explains in its last line. State both numbers where 6 inches first appears.
@@ -1314,16 +1317,16 @@ Status: open
 - [x] [COVERED+LINKED] Nail trimming: small-mammal-grooming-nails-molting-guide says hamsters wear nails down and need only an overgrowth check (sidebar). Add that line to the hub or health guide.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Whether dwarf species (Winter White, Campbell's, Roborovski, Chinese) can be pair or group housed. Belongs in hamster-handling-guide or enrichment guide.
-- [ ] [TRULY MISSING] Settling period before first handling (Sep 8-15, verified) and introduction steps. Belongs in hamster-handling-guide.
-- [ ] [TRULY MISSING] Sexing (Sep 8-15). Belongs in hamster-handling-guide.
-- [ ] [TRULY MISSING] Cage cleaning frequency (Sep 8-15, verified). Belongs in hamster-tank-setup-guide.
+- [x] [TRULY MISSING] Whether dwarf species (Winter White, Campbell's, Roborovski, Chinese) can be pair or group housed. Belongs in hamster-handling-guide or enrichment guide.
+- [x] [TRULY MISSING] Settling period before first handling (Sep 8-15, verified) and introduction steps. Belongs in hamster-handling-guide.
+- [x] [TRULY MISSING] Sexing (Sep 8-15). Belongs in hamster-handling-guide.
+- [x] [TRULY MISSING] Cage cleaning frequency (Sep 8-15, verified). Belongs in hamster-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] hamster-handling-guide 565, hamster-tank-setup-guide 581.
+- [x] [SHORT] hamster-handling-guide 565, hamster-tank-setup-guide 581.
 
 ### Gerbil (gerbil)
-Status: open
+Status: open (leftovers marked OPEN or PARTIAL below)
 
 **Errors and contradictions**
 - [x] [CONTRADICTION] What matters most (framing): gerbil-tank-setup-guide "Gerbil care comes down to one detail more than any other: providing deep substrate" vs gerbil-enrichment-guide "roughly half the answer", a tunnel-and-chamber structure is needed (Wiedenmayer 1997). Put the burrow requirement on the setup page.
@@ -1332,49 +1335,49 @@ Status: open
 - [x] [COVERED+LINKED] Nail trimming: small-mammal-grooming-nails-molting-guide (gerbils wear nails down) (sidebar). One line on the hub.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Aftercare after a tail slip or amputation. Belongs in gerbil-health-issues-guide.
-- [ ] [TRULY MISSING] Adding a third or fourth gerbil, and declanning signs (also Sep 8-15). Belongs in gerbil-handling-guide.
-- [ ] [TRULY MISSING] Settling period (Sep 8-15, verified). Belongs in gerbil-handling-guide.
-- [ ] [TRULY MISSING] Sexing and accidental litters (Sep 8-15). Belongs in gerbil-handling-guide or cost guide.
+- [x] [TRULY MISSING] Aftercare after a tail slip or amputation. Belongs in gerbil-health-issues-guide.
+- [x] [TRULY MISSING] Adding a third or fourth gerbil, and declanning signs (also Sep 8-15). Belongs in gerbil-handling-guide.
+- [ ] [TRULY MISSING] Settling period (Sep 8-15, verified). Belongs in gerbil-handling-guide. PARTIAL 2026-09-25: gerbil-handling-guide has a taming section; no source gives a gerbil settling period in days.
+- [x] [TRULY MISSING] Sexing and accidental litters (Sep 8-15). Belongs in gerbil-handling-guide or cost guide.
 
 **Short pages**
-- [ ] [SHORT] gerbil-handling-guide 459, gerbil-cost-guide 599, gerbil-tank-setup-guide 483, gerbil-feeding-guide 529, gerbil-legal-guide 516.
+- [x] [SHORT] gerbil-handling-guide 459, gerbil-cost-guide 599, gerbil-tank-setup-guide 483, gerbil-feeding-guide 529, gerbil-legal-guide 516. Done 2026-09-25 except gerbil-legal-guide (legal file, out of scope for wave 3b).
 
 ### Rabbit (rabbit)
-Status: open
+Status: done 2026-09-25
 
 **Doubted claims**
 - [x] [DOUBTED] rabbit-feeding-guide FAQ: "The window the site now uses everywhere" leaks internal editing language. Reword.
 - [x] [DOUBTED] rabbit-feeding-guide: "Roughly 70% of rabbits recover" could not be traced to a source (Sep 8-15).
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Space, pellet and hay scaled for large and giant breeds (the encyclopedia gives 2.5 to 20+ lbs; every number after is flat). Belongs in rabbit-tank-setup-guide and rabbit-feeding-guide.
-- [ ] [TRULY MISSING] RHDV2 vaccine schedule (start age, booster interval) and cost (also Sep 8-15, verified). Belongs in rabbit-health-issues-guide and rabbit-cost-guide.
+- [x] [TRULY MISSING] Space, pellet and hay scaled for large and giant breeds (the encyclopedia gives 2.5 to 20+ lbs; every number after is flat). Belongs in rabbit-tank-setup-guide and rabbit-feeding-guide.
+- [x] [TRULY MISSING] RHDV2 vaccine schedule (start age, booster interval) and cost (also Sep 8-15, verified). Belongs in rabbit-health-issues-guide and rabbit-cost-guide.
 
 **Short pages**
-- [ ] [SHORT] rabbit-handling-guide 545, rabbit-cost-guide 487, rabbit-tank-setup-guide 512, rabbit-legal-guide 591 (legal, low priority).
+- [x] [SHORT] rabbit-handling-guide 545, rabbit-cost-guide 487, rabbit-tank-setup-guide 512, rabbit-legal-guide 591 (legal, low priority). Done 2026-09-25 except rabbit-legal-guide (legal file, out of scope for wave 3b).
 
 ### Ferret (ferret)
-Status: open
+Status: done 2026-09-25
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] ferret-adrenal-disease-guide (B, thin against the health guide): its causes section repeats ferret-health-issues-guide nearly word for word, same Dutch neutering study and fun fact. Differentiate (the symptom table and treatment options are its value) or merge.
+- [x] [LOW GRADE] ferret-adrenal-disease-guide (B, thin against the health guide): its causes section repeats ferret-health-issues-guide nearly word for word, same Dutch neutering study and fun fact. Differentiate (the symptom table and treatment options are its value) or merge.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Deslorelin implant cost and how long it lasts. Belongs in ferret-cost-guide and ferret-adrenal-disease-guide.
-- [ ] [TRULY MISSING] Where to get a ferret responsibly, beyond price by source. Belongs in ferret-cost-guide.
+- [x] [TRULY MISSING] Deslorelin implant cost and how long it lasts. Belongs in ferret-cost-guide and ferret-adrenal-disease-guide.
+- [x] [TRULY MISSING] Where to get a ferret responsibly, beyond price by source. Belongs in ferret-cost-guide.
 
 **Short pages**
-- [ ] [SHORT] ferret-adrenal-disease-guide 516.
+- [x] [SHORT] ferret-adrenal-disease-guide 516.
 
 ### Mouse (mouse)
-Status: open
+Status: done 2026-09-25
 
 **Low grades and thin pages**
-- [ ] [THIN] "Male mice smell more, don't fully strip the cage" appears near verbatim in mouse-health-issues-guide and mouse-enrichment-guide. Keep one.
+- [x] [THIN] "Male mice smell more, don't fully strip the cage" appears near verbatim in mouse-health-issues-guide and mouse-enrichment-guide. Keep one.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Whether one hideout serves both nesting and cover, or two are needed. Belongs in mouse-tank-setup-guide.
+- [x] [TRULY MISSING] Whether one hideout serves both nesting and cover, or two are needed. Belongs in mouse-tank-setup-guide.
 - Sidebar wiring for mouse is in Session 0.
 
 ## Amphibians (5)
@@ -1801,7 +1804,7 @@ by animal group, so every species is finished inside one wave:
 |---|---|---|
 | 2 | Reptiles, Amphibians, section 4 non-species articles | done |
 | 3a | Fish and shrimp, Invertebrates | done |
-| 3b | Birds, Small mammals | 90 |
+| 3b | Birds, Small mammals | done (17 lines left open, partial or newly found, each marked) |
 
 Wave 3 runs as two sessions to hold down credit use. 3a and 3b never run at
 the same time. 3a keeps fish and shrimp together with invertebrates because
