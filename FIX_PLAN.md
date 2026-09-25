@@ -1653,22 +1653,22 @@ Suggested sessions: N1 the C and D pages (wild animals). N2 fun facts wiring and
 ### Wild animals and other (b22 to b25)
 Status: open
 
-- [ ] [LOW GRADE] the-incredible-axolotl-nature-s-smiling-salamander (D, thin; 475 words): reads like a truncated care excerpt with the affiliate disclosure before any content. Expand into a real profile (regeneration explained, life cycle, conservation) and move the disclosure down. It is also the page axolotl-cost-guide points to for morphs, which it does not explain.
-- [ ] [LOW GRADE] hedgehogs-are-lactose-intolerant-despite-what-cartoons-show (C, filler): cut the padded opener and closer, dedupe the fact list that repeats in body and bullets, lead with the dairy myth.
+- [x] [LOW GRADE] the-incredible-axolotl-nature-s-smiling-salamander (D, thin; 475 words): reads like a truncated care excerpt with the affiliate disclosure before any content. Expand into a real profile (regeneration explained, life cycle, conservation) and move the disclosure down. It is also the page axolotl-cost-guide points to for morphs, which it does not explain.
+- [x] [LOW GRADE] hedgehogs-are-lactose-intolerant-despite-what-cartoons-show (C, filler): cut the padded opener and closer, dedupe the fact list that repeats in body and bullets, lead with the dairy myth.
 - [x] [CONTRADICTION] Same article: quills "up to 7,000" in the opener vs "between 5,000 and 7,000" later.
-- [ ] [LOW GRADE] mantis-shrimp-16-color-vision-punch-power (C, filler): drop the exclamation opener; the title leads with "16-color vision" that the body undercuts.
+- [x] [LOW GRADE] mantis-shrimp-16-color-vision-punch-power (C, filler): drop the exclamation opener; the title leads with "16-color vision" that the body undercuts.
 - [x] [DOUBTED] Same article: "mates for life" is asserted and never sourced.
-- [ ] [LOW GRADE] weirdest-creatures-deep-sea-facts-that-will-blow-your-mind (C, filler): replace hype with named researchers, years and journals per animal.
+- [x] [LOW GRADE] weirdest-creatures-deep-sea-facts-that-will-blow-your-mind (C, filler): replace hype with named researchers, years and journals per animal.
 - [x] [DOUBTED] Same article: "more than 80 percent of Earth's oceans remains largely unexplored", twice, unsourced.
-- [ ] [LOW GRADE] why-parrots-need-social-interaction-and-what-loneliness-does-to-them (C).
+- [x] [LOW GRADE] why-parrots-need-social-interaction-and-what-loneliness-does-to-them (C).
 - [x] [DOUBTED] Same article: grey "emotional intelligence comparable to a 5-year-old", Alex "over 100 words meaningfully" (the encyclopedia says over 150), the limbic system claim; all uncited. Source or hedge.
-- [ ] [THIN] why-axolotls-need-cold-clean-water (B): little original insight and it closes on a test kit sale.
-- [ ] [THIN] why-rabbits-need-unlimited-hay-and-what-happens-to-their-teeth-without-it (B): generic, unsourced pet-care copy.
-- [ ] [THIN] sharks-are-older-than-trees-and-9-other-facts-that-will-blow-your-mind (B): items 7 and 9 add nothing beyond a definition; cut or merge.
-- [ ] [THIN] main-blog-post (B, thin; 390 words): the welcome post gives a new visitor one example link. Add a second topic area.
+- [x] [THIN] why-axolotls-need-cold-clean-water (B): little original insight and it closes on a test kit sale.
+- [x] [THIN] why-rabbits-need-unlimited-hay-and-what-happens-to-their-teeth-without-it (B): generic, unsourced pet-care copy.
+- [x] [THIN] sharks-are-older-than-trees-and-9-other-facts-that-will-blow-your-mind (B): items 7 and 9 add nothing beyond a definition; cut or merge.
+- [x] [THIN] main-blog-post (B, thin; 390 words): the welcome post gives a new visitor one example link. Add a second topic area.
 - [x] [ERROR] Every page in wild-animals-2, wild-animals-4 and wild-animals-6 shows "none" for both sidebar lists. Wire relevant ones (axolotl profile to the axolotl guide, octopus day to the octopus pieces, hedgehog lactose to the hedgehog guide).
-- [ ] [THIN] crows-are-smarter-than-you-think-and-they-probably-already-know-it and do-dolphins-have-names-what-the-research-shows both explain the contested mirror test in full; keep one and cross-link.
-- [ ] [THIN] wolverine-facts-the-toughest-animal-pound-for-pound: the "the legend is real, but" frame repeats in nearly every section.
+- [x] [THIN] crows-are-smarter-than-you-think-and-they-probably-already-know-it and do-dolphins-have-names-what-the-research-shows both explain the contested mirror test in full; keep one and cross-link.
+- [x] [THIN] wolverine-facts-the-toughest-animal-pound-for-pound: the "the legend is real, but" frame repeats in nearly every section.
 
 ### Fun facts (content/fun-facts, b16)
 Status: open
