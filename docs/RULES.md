@@ -75,6 +75,11 @@ working checklist.
 - Care guides keep the split structure (cost / handling / health / tank setup),
   never merged into pillar pages. `<VetDisclaimer />` right after the H1 on
   medical content, `<LegalDisclaimer />` on legality content.
+- A setup guide names the animal's real home in its title, seoTitle, H1, tags
+  and link text: Tank for fish, shrimp, axolotls and aquatic turtles, Pond for
+  koi, Cage for birds and cage mammals, Housing for rabbits, Enclosure for
+  everything else. The slug stays `<species>-tank-setup-guide` for every
+  species: it is the URL, and the `tank-setup` suffix drives auto-wiring.
 
 ## Sources
 

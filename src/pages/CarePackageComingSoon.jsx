@@ -58,7 +58,7 @@ const INSIDE = [
 // readable for nothing.
 const GUIDES = [
   { slug: 'whites-tree-frog-cost-guide', label: 'Cost', line: 'The frog at $20 to $60, a $200 to $400 setup, and $13 to $24 a month after that.' },
-  { slug: 'whites-tree-frog-tank-setup-guide', label: 'Tank setup', line: 'The 18x18x24 minimum, the temperature gradient, substrate, UVB, and safe water.' },
+  { slug: 'whites-tree-frog-tank-setup-guide', label: 'Enclosure setup', line: 'The 18x18x24 minimum, the temperature gradient, substrate, UVB, and safe water.' },
   { slug: 'whites-tree-frog-feeding-guide', label: 'Feeding', line: 'What to offer, how often by size and age, gut loading, dusting, and the ridge test.' },
   { slug: 'whites-tree-frog-handling-guide', label: 'Handling', line: 'Why plain water beats soap, when gloves are safer, and how long a session runs.' },
   { slug: 'whites-tree-frog-health-issues-guide', label: 'Health issues', line: 'Obesity, chytridiomycosis, red-leg syndrome, and metabolic bone disease.' },

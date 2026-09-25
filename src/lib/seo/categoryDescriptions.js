@@ -16,7 +16,7 @@
 // and come from guides-index.json, so they need updating when a category gains
 // or loses a guide.
 export const GUIDE_CATEGORY_DESCRIPTIONS = {
-  'Geckos': "Leopard gecko, crested gecko, tokay and four more gecko care guides. Tank size and setup, what they cost, handling, feeding, and the health problems to expect.",
+  'Geckos': "Leopard gecko, crested gecko, tokay and four more gecko care guides. Enclosure size and setup, what they cost, handling, feeding, and the health problems to expect.",
   'Lizards': "Bearded dragon, blue tongue skink, tegu and eight more lizard care guides. Enclosure size and heating, cost, handling, feeding, and common health problems.",
   'Snakes': "Ball python, corn snake, hognose and five more snake care guides. Enclosure setup and heating, feeding size and schedule, handling, cost, and health problems.",
   'Turtles & Tortoises': "Red-eared slider, sulcata, Russian tortoise, box turtle and red-footed tortoise care guides. Enclosure size, diet, cost, lifespan, and health problems.",
@@ -25,7 +25,7 @@ export const GUIDE_CATEGORY_DESCRIPTIONS = {
   'Dogs': "Dog care basics, size-by-size needs, and breed quirk guides for labradors, german shepherds, huskies and seven more. Temperament, grooming, and health risks.",
   'Cats': "Cat care basics plus breed quirk guides for maine coons, bengals, ragdolls, siamese and five more. What each breed is like to live with, and its health risks.",
   'Invertebrates': "Tarantula, jumping spider, hermit crab, mantis and seven more invertebrate care guides. Enclosure setup, feeding, humidity, cost, and molting problems.",
-  'Amphibians': "Axolotl, pacman frog, White's tree frog, fire-bellied toad and tiger salamander care guides. Tank setup, water and humidity, feeding, cost, and health problems.",
+  'Amphibians': "Axolotl, pacman frog, White's tree frog, fire-bellied toad and tiger salamander care guides. Tank and enclosure setup, water and humidity, feeding, cost, and health problems.",
   'Fish': "Betta, goldfish, guppy, oscar and eleven more fish care guides. Tank size and cycling, water parameters, tank mates, what they cost, and common diseases.",
 };
 

@@ -1755,7 +1755,7 @@ Shipped 2026-09-24 in commit 4c5ae0a, pushed to claude/adsense-readiness-review-
 
 ## Wave 2 results
 
-Shipped 2026-09-25 on claude/fix-plan-wave-2-reptiles-81w4hm (checkpoint commits during the run, then one final commit). Not merged to main.
+Shipped 2026-09-25 on claude/fix-plan-wave-2-reptiles-81w4hm and merged to main as c9c485b4.
 
 - Done: every open item in Reptiles, Amphibians and section 4, ticked above, except two left open: the leopard gecko screen-top gap (no source gives a number) and the fun-facts wiring [ERROR] (needs an owner decision on guide ids, same as the wave 1 leftover).
 - New shared sections: "Enclosure cleaning schedule" in reptile-salmonella-hygiene-guide and "Choosing a healthy reptile and a reptile vet" in reptile-quarantine-guide. Species cleaning, breeder and vet items link to them.
@@ -1781,8 +1781,13 @@ by animal group, so every species is finished inside one wave:
 
 | Wave | Groups | Open items |
 |---|---|---|
-| 2 | Reptiles, Amphibians, section 4 non-species articles | 208 |
-| 3 | Fish and shrimp, Birds, Small mammals, Invertebrates | 205 |
+| 2 | Reptiles, Amphibians, section 4 non-species articles | done |
+| 3a | Fish and shrimp, Invertebrates | 115 |
+| 3b | Birds, Small mammals | 90 |
+
+Wave 3 runs as two sessions to hold down credit use. 3a and 3b never run at
+the same time. 3a keeps fish and shrimp together with invertebrates because
+the shrimp hubs and encyclopedia entries live in the invertebrates.js files.
 
 Rules for both waves:
 - Per species, in order: [COVERED+LINKED] leftovers, then [TRULY MISSING], then [LOW GRADE] and [THIN], then [SHORT].
@@ -1791,23 +1796,57 @@ Rules for both waves:
 - Keep the split guide structure. No new pillar pages. New articles only if an item cannot fit an existing page, and then they get a rotation number and RELATED_ARTICLES wiring.
 - Dogs and cats are out of scope. Care package updates (section 5) are out of scope.
 - Stamp lastUpdated with the Eastern date on every page touched.
-- No commits until the whole wave is done. Then run sync-articles, check-internal-links, check-voice --strict, check-related-articles, check-publish-dates, check-rotation, check-seo-tags, check-hub-rows, check-hub-figures, and make ONE commit and ONE push to the working branch. Merge to main only when the owner says so.
+- Never edit legal files (content/guides/*-legal-guide.mdx, src/lib/data/legalStatus.json, src/lib/data/stateNotes.js, the exotic-pet-laws pages), care packages, or anything about dogs and cats.
+- Do not name outside sites in the prose unless the sentence needs it; the Sources block carries attribution.
+- Setup guides: follow the naming rule in docs/RULES.md (Tank, Pond, Cage, Housing or Enclosure in visible text; the slug never changes).
+- No commits until the whole wave (or part) is done. Then run sync-articles, check-internal-links, check-voice --strict, check-related-articles, check-publish-dates, check-rotation, check-seo-tags, check-hub-rows, check-hub-figures, and make ONE commit and ONE push to the working branch. Merge to main only when the owner says so.
 
-Wave 2 prompt (paste into a fresh session on branch claude/adsense-readiness-review-7u43dx):
+Wave 3 prompts. Paste 3a into a fresh session. Start 3b only after 3a has
+pushed.
 
 ```
-Wave 2 of FIX_PLAN.md. Read CLAUDE.md, docs/RULES.md and FIX_PLAN.md
-("Waves 2 and 3" section first). Scope: every open item in the Reptiles,
-Amphibians and section 4 groups. Follow the wave rules in that section.
-Use Opus for yourself and for research and writing agents; run one agent
-per group of 4 to 6 species in parallel, no two agents editing the same
-file. Tick items in FIX_PLAN.md as they are done. Spot-check each agent's
-diff and verify new citations load. One commit and one push at the end;
-do not merge to main. Summary only at the end.
+Wave 3a of FIX_PLAN.md. Work on branch claude/adsense-readiness-review-7u43dx
+(git fetch, check it out, pull; do not create or push any other branch).
+Read CLAUDE.md, docs/RULES.md and FIX_PLAN.md ("Waves 2 and 3" section
+first). Scope: every open item in the Fish and shrimp and Invertebrates
+groups, nothing else. Follow the wave rules in that section.
+
+Credit limits, hard: never more than 3 agents running at once. Each agent
+takes 4 to 6 species and works them one after another. Start the next
+agent only when one finishes. No two agents edit the same file; hub and
+encyclopedia edits come back to you as requests and you apply them.
+
+Never touch legal files, care packages, or dog and cat pages. Use Opus for
+yourself and the agents. Tick items in FIX_PLAN.md as they are done.
+Spot-check each agent's diff and verify new citations load.
+
+Commits: NONE until every 3a item is done or marked open. Then run the
+checks listed in the wave rules, make exactly ONE commit and ONE push to
+claude/adsense-readiness-review-7u43dx. No checkpoint commits, no second
+push. Do not merge to main. Summary only at the end.
 ```
 
-Wave 3 prompt: the same, with scope "Fish and shrimp, Birds, Small
-mammals and Invertebrates groups".
+```
+Wave 3b of FIX_PLAN.md. Work on branch claude/adsense-readiness-review-7u43dx
+(git fetch, check it out, pull so 3a's commit is in; do not create or
+push any other branch). Read CLAUDE.md, docs/RULES.md and FIX_PLAN.md
+("Waves 2 and 3" section first). Scope: every open item in the Birds and
+Small mammals groups, nothing else. Follow the wave rules in that section.
+
+Credit limits, hard: never more than 3 agents running at once. Each agent
+takes 4 to 6 species and works them one after another. Start the next
+agent only when one finishes. No two agents edit the same file; hub and
+encyclopedia edits come back to you as requests and you apply them.
+
+Never touch legal files, care packages, or dog and cat pages. Use Opus for
+yourself and the agents. Tick items in FIX_PLAN.md as they are done.
+Spot-check each agent's diff and verify new citations load.
+
+Commits: NONE until every 3b item is done or marked open. Then run the
+checks listed in the wave rules, make exactly ONE commit and ONE push to
+claude/adsense-readiness-review-7u43dx. No checkpoint commits, no second
+push. Do not merge to main. Summary only at the end.
+```
 
 ---
 
