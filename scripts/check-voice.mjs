@@ -193,12 +193,12 @@ function check(file) {
     if (/browse the (rest of our|full)/i.test(last)) add(errors, 'closer-dump', '"browse the rest of our" closer');
   }
 
-  // Linking (RULES, Linking, 2026-09-08). The series pass is done: sibling-link
-  // is an error. self-reference and section-link were warnings until the
-  // cross-species pass finished on 2026-09-16; all three are errors now.
+  // Linking (RULES, Linking; revised 2026-09-25). self-reference and
+  // section-link became errors after the cross-species pass on 2026-09-16.
   //   self-reference: the site talking about itself.
-  //   sibling-link: more than one link to the same species' own guides or hub;
-  //     the Deep Dive carries those, prose gets one only when it is the answer.
+  //   sibling-link: more than two links to the same species' own guides, or
+  //     any link to its care guide hub; a sibling link is fine where it is
+  //     the answer, but past two the prose turns into the Deep Dive list.
   //   section-link: a link before the first H2; the first section is about
   //     the animal.
   const selfRefs = slug === 'welcome-to-beastlyfacts' ? [] : (text.match(SELF_REFERENCE) || []);
@@ -206,9 +206,12 @@ function check(file) {
   const suffixMatch = slug.match(/^(.*)-(cost|handling|health-issues|tank-setup|feeding|enrichment|legal)-guide$/);
   if (suffixMatch) {
     const prefix = suffixMatch[1];
-    const sib = new RegExp(`\\]\\((?:/blog/${prefix}-(?:cost|handling|health-issues|tank-setup|feeding|enrichment|legal)-guide/?|/guides/${prefix}/?)\\)`, 'g');
+    const sib = new RegExp(`\\]\\(/blog/${prefix}-(?:cost|handling|health-issues|tank-setup|feeding|enrichment|legal)-guide/?\\)`, 'g');
+    const hub = new RegExp(`\\]\\(/guides/${prefix}/?\\)`, 'g');
     const sibCount = (body.match(sib) || []).length;
-    if (sibCount > 1) add(errors, 'sibling-link', `${sibCount} links to the species' own guides or hub (limit 1)`);
+    const hubCount = (body.match(hub) || []).length;
+    if (sibCount > 2) add(errors, 'sibling-link', `${sibCount} links to the species' own guides (limit 2)`);
+    if (hubCount) add(errors, 'sibling-link', `${hubCount} link(s) to the species' care guide hub`);
   }
   // vs guides and overviews link both animals in the opener by design, the
   // fun-facts posts carry each fact as an H3 so every link sits before the

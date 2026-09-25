@@ -160,20 +160,21 @@ snapshot, not a quote."
   paragraph is content, and if it links, it links the one page that
   follows from the point it makes. The bearded dragon guides are the
   reference. Decided 2026-09-14.
-- In-body links point somewhere the Deep Dive does not: another species
-  ("the same calcium problem sugar gliders have"), a cross-species guide
-  (quarantine, UVB, gut-loading), the encyclopedia profile, an overview or
-  vs piece. Never a link to the same species' cost, handling, health,
-  setup, feeding, enrichment, or legal guide, and never to the care guide
-  hub: the Deep Dive lists all of those on every page. A sentence that
-  exists only to carry a link ("For what it costs, see our cost guide")
-  is deleted, not moved. A content sentence that carried one ("covered in
-  our health guide") loses the clause and keeps the point. Decided
-  2026-09-08 on the flying squirrel set; the rest of the series follow.
-  One exception: when a sibling guide is the direct answer to the question
-  the article raised (the health guide says diet drives everything, the
-  feeding guide has the bowl), one sentence with a reason may link it. At
-  most one such link per article, and the sentence says what is there.
+- In-body links go to whatever page is the real answer to something the
+  article just raised: another species ("the same calcium problem sugar
+  gliders have"), a cross-species guide (quarantine, UVB, gut-loading), the
+  encyclopedia profile, an overview or vs piece, or the same species' own
+  cost, handling, health, setup, feeding or enrichment guide when that is
+  where the answer lives (the health guide says diet drives everything, the
+  feeding guide has the bowl). At most 2 sibling links per article, each in
+  a sentence that says what is there; cross-species links are not capped.
+  Never link the care guide hub. A sentence that exists only to carry a
+  link ("For what it costs, see our cost guide") is deleted, not moved. A
+  content sentence that carried one ("covered in our health guide") loses
+  the clause and keeps the point. Revised 2026-09-25 from the 2026-09-08
+  flying squirrel rule, which banned sibling links outright: a link in the
+  sentence where the question comes up serves readers the Deep Dive
+  sidebar does not reach.
 - The site never talks about itself. No "on this site", "this site's",
   "covered elsewhere", "already covered", "our X guide covers". A
   sentence that compares two articles is an editor's note, not something
