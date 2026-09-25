@@ -3426,7 +3426,7 @@ export const AFFILIATE_PRODUCTS = [
     image: null,
     rating: 4.7,
     price: "$10–$14",
-    description: "Bathing sand rather than the finer chinchilla dust, which is what gerbils and degus actually need to keep their coats from going greasy and matted. One of the few products labeled for both species.",
+    description: "Bathing sand for gerbils and hamsters, which roll in it to work oil out of their coats.",
     covers: ["Sand bath (chinchilla sand)", "Bathing sand", "Sand for bathing"],
     altGroup: "small-pet-bath-sand",
     pets: ["small-mammals"],

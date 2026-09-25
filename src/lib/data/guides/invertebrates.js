@@ -488,7 +488,7 @@ export const invertebrateGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Tank", value: "A glass terrarium, roughly 10 gallons for 2 to 3 small crabs, more for bigger crabs or groups, with a glass or acrylic lid that seals in humidity. Cover part of a screen lid with plastic wrap.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Tank", value: "A glass terrarium, 10 gallons for up to two adult crabs and at least 5 more gallons for each crab added, with a glass or acrylic lid that seals in humidity. Cover part of a screen lid with plastic wrap.", source: "hermit-crab-tank-setup-guide" },
         { label: "Group size", value: "At least two. They are social.", source: "hermit-crab-tank-setup-guide" },
         { label: "Temperature", value: "75 to 85°F, the warm side around 80°F, from a side- or back-mounted heat mat. Never under the tank: heat rising through deep substrate can kill a buried, molting crab.", source: "hermit-crab-tank-setup-guide" },
         { label: "Humidity", value: "75 to 85%, on a hygrometer, held with moist substrate, a sealed lid, and a moss pit.", source: "hermit-crab-tank-setup-guide" },
@@ -529,7 +529,7 @@ export const invertebrateGuides = [
       { slug: "hermit-crab-enrichment-guide", line: "What the shell research actually found, how many shells a group needs, and the priority order for everything else." },
     ],
     buyList: [
-      "Glass terrarium, roughly 10 gallons for 2 to 3 small crabs and larger for a bigger group",
+      "Glass terrarium, 10 gallons for up to two adult crabs, 5 more gallons for each crab added",
       "A glass or acrylic lid that seals humidity in",
       "Play sand and coconut fiber for substrate",
       "Side- or back-mounted heat mat",

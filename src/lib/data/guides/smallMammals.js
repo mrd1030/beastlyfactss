@@ -109,9 +109,9 @@ export const smallMammalGuides = [
     // guide's), bar spacing (half an inch, which was right, but the setup
     // guide said an inch and now says PetMD's half), temperature (60 to 72°F
     // with a ceiling of 80, three degrees past the health guide's 77°F
-    // emergency line), the wheel (12 inches or more, against the setup
-    // guide's 11 to 12), the bath medium (chinchilla dust, a flat reversal
-    // of the enrichment guide's sand), the bath length (ten to fifteen
+    // emergency line), the wheel (12 inches or more, which the setup
+    // guide now matches), the bath medium (chinchilla dust, which the deep
+    // dives now use too), the bath length (ten to fifteen
     // minutes, against twenty), the pellet portion (a tablespoon, against
     // the feeding guide's 1 to 2), six inches of substrate (a number the
     // RSPCA does not give), and carrot, sweet potato, beetroot and parsnip
@@ -127,7 +127,7 @@ export const smallMammalGuides = [
         { label: "Solid roof", value: "Their wild predators are birds of prey, so movement overhead frightens them. A solid roof rather than open mesh.", source: "degu-tank-setup-guide" },
         { label: "Temperature", value: "Cool, 65 to 70°F, and never toward 77°F. Away from windows, radiators, and direct sun.", source: "degu-tank-setup-guide" },
         { label: "Substrate and wheel", value: "Dust-free aspen or paper bedding with a deep digging area. A solid wheel at least 12 inches (30 cm) across; wire wheels catch toes and a small one arches the spine.", source: "degu-tank-setup-guide" },
-        { label: "Sand, not dust", value: "Bathing sand two or three times a week, twenty minutes at a time, sifted and topped up rather than left in. The enrichment guide says sand, not chinchilla dust; the cost guide prices dust, and this card follows the enrichment guide.", source: "degu-enrichment-guide" },
+        { label: "Dust bath", value: "Chinchilla bathing dust two to three times a week, about 20 minutes a session, then taken out. Left in, the tray becomes a toilet.", source: "degu-tank-setup-guide" },
         { label: "Chewing", value: "Mineral and lava blocks, untreated wood, cardboard, apple or willow branches. Anything plastic in the cage will be chewed eventually.", source: "degu-enrichment-guide" },
         { label: "Hay", value: "Unlimited grass hay, timothy, meadow, or orchard, at all times. It is the bulk of the diet and what keeps the teeth worn down.", source: "degu-feeding-guide" },
         { label: "Pellets", value: "Measured, not free-fed: roughly 1 to 2 tablespoons per degu daily. Given the choice they eat pellets over hay and lose the fiber they need.", source: "degu-feeding-guide" },
@@ -161,7 +161,7 @@ export const smallMammalGuides = [
       { slug: "degu-feeding-guide", line: "Hay first and pellets measured, the sugar rule that is a metabolic limit rather than a caution, the coccidiostat in rabbit pellets, and six reasons a degu stops eating." },
       { slug: "degu-handling-guide", line: "Never solo and never by the tail, what tail slip actually is, and the diurnal schedule that is most of why people pick this species." },
       { slug: "degu-health-issues-guide", line: "Diabetes as the defining risk, molar malocclusion as the most diagnosed dental disorder, bumblefoot from wire, and why orange teeth are the healthy ones." },
-      { slug: "degu-enrichment-guide", line: "The research that found degus bathing more on sand a familiar degu used, what that makes the tray, and the priority order that follows." },
+      { slug: "degu-enrichment-guide", line: "The research that found degus dust bathing more on soil a familiar degu used, what that makes the tray, and the priority order that follows." },
       { slug: "degu-legal-guide", line: "Banned in eight jurisdictions and restricted in fifteen, and the list-drafting accident that explains almost every one of them." },
     ],
     buyList: [
@@ -174,7 +174,7 @@ export const smallMammalGuides = [
       "Deep paper or aspen bedding, plus a dig area",
       "Unlimited grass hay (timothy, meadow, or orchard)",
       "Sugar-free degu or chinchilla pellets, no molasses",
-      "Bath house and bathing sand",
+      "Bath house and chinchilla bathing dust",
       "Mineral or lava chew blocks and untreated hardwood",
       "Ceramic or metal hides and tunnels",
       "Water bottle and food dishes",
@@ -185,7 +185,7 @@ export const smallMammalGuides = [
     faqs: [
       { q: "Can I keep just one degu?", a: "No. Degus are highly social and need to live in same-sex pairs or small groups. A solitary degu becomes stressed, which shows up as neurotic or aggressive behavior over time, the direct opposite of the solitary Syrian hamster, which must be housed alone." },
       { q: "Why are degus so prone to diabetes?", a: "They're naturally insulin-resistant, with a genetic predisposition toward diabetes that most small mammals don't share. Even small amounts of fruit, carrot, peas, corn, or sugary treats can trigger the disease, and veterinary literature flags the species as one where that predisposition creates real, ongoing management challenges." },
-      { q: "Does a degu need sand or dust for bathing?", a: "A sand or dust bath two to three times a week supports healthy coat condition and is a real physiological need, not optional grooming. Bathing sand is generally the gentler, better-suited choice for degus specifically, finer chinchilla dust is a reasonable alternative but was formulated for chinchilla fur." },
+      { q: "Does a degu need sand or dust for bathing?", a: "Chinchilla bathing dust, offered two to three times a week for about 20 minutes and then taken out. The dust absorbs oil and dirt from the coat. Left in the cage, the tray becomes a toilet, and overuse of dust baths can cause health problems of its own." },
     ],
   },
   {
@@ -319,7 +319,7 @@ export const smallMammalGuides = [
         { label: "Bedding", value: "Paper or cellulose, changed at least twice a week so ammonia does not build. No sawdust, cedar, or pine.", source: "rat-tank-setup-guide" },
         { label: "Wheel", value: "Solid-surface, at least 12 inches and ideally 14 to 16 for adults, especially males. A small wheel forces an arched spine.", source: "rat-tank-setup-guide" },
         { label: "Company", value: "Never one. Two is a minimum and a small same-sex group is better; single housing is a welfare problem no enrichment fixes.", source: "rat-enrichment-guide" },
-        { label: "Enrichment", value: "Seven categories, nesting material, digging substrate, foraging device, climbing structure, tube, hideaway and suspended area, and more categories beat more of one.", source: "rat-enrichment-guide" },
+        { label: "Enrichment", value: "Seven categories, nesting material, digging substrate, foraging device, climbing structure, tube, hideaway and suspended area, covered before buying more of any one.", source: "rat-enrichment-guide" },
         { label: "Staple diet", value: "A rat-specific pellet or lab block, never pellets made for rabbits, guinea pigs, or hamsters. Vegetables, fruit, grains, and seeds combined under about 10% of the diet.", source: "rat-feeding-guide" },
         { label: "Portions and water", value: "Twice daily, morning and evening, adjusted so a rat finishes what is offered. Water from bottles, more than one per cage.", source: "rat-feeding-guide" },
         { label: "Foods to avoid", value: "Onion, citrus, walnuts, rhubarb, grapes, raisins, chocolate, caffeine, alcohol, raw beans, unripe tomato, green or raw potato, and anything salty or sugary.", source: "rat-feeding-guide" },
@@ -352,7 +352,7 @@ export const smallMammalGuides = [
       { slug: "rat-feeding-guide", line: "Why hamster food is not rat food, the twice-daily portion rule, and the foods to keep away from a rat entirely." },
       { slug: "rat-handling-guide", line: "Why rats rarely bite, what allogrooming looks like, the two-handed scoop, and the tail rule that never bends." },
       { slug: "rat-health-issues-guide", line: "Chronic respiratory disease, mammary and pituitary tumors, kidney disease, and the signs that mean a vet now." },
-      { slug: "rat-enrichment-guide", line: "The pet rat study that found variety, not any one item, is what changes behavior, and the seven categories to cover." },
+      { slug: "rat-enrichment-guide", line: "The pet rat survey that tied paper enrichment, company and keeper time to better behavior, and the seven categories to cover." },
     ],
     buyList: [
       "At least two rats, same-sex",
@@ -657,7 +657,7 @@ export const smallMammalGuides = [
         { label: "Diet", value: "Grass hay unlimited, roughly 80% of the diet. About 1/8 cup (about 2 tablespoons) of vitamin-C-fortified pellets per guinea pig, and roughly 1 cup of fresh leafy greens.", source: "guinea-pig-tank-setup-guide" },
         { label: "Vitamin C", value: "10 to 25 mg/kg a day for a healthy adult, 30 mg/kg or more if growing, pregnant, lactating, or ill, roughly 20 to 25 mg a day for a typical adult. A quarter of a medium bell pepper covers it.", source: "guinea-pig-scurvy-vitamin-c-guide" },
         { label: "Not eating", value: "Call a vet at 8 to 12 hours without eating or producing droppings. Once GI stasis sets in, it can become life-threatening within 24 to 48 hours.", source: "guinea-pig-feeding-guide" },
-        { label: "Handling", value: "Approach from the side, never above. One hand under the chest behind the front legs, the other supporting the hindquarters. Stay low, a fall can be fatal.", source: "guinea-pig-handling-guide" },
+        { label: "Handling", value: "Approach from the front, talking softly first. One hand under the chest behind the front legs, the other supporting the hindquarters. Stay low: a fall can be fatal.", source: "guinea-pig-handling-guide" },
         { label: "Budget", value: "$10 to $60 from a shelter, around $50 at a pet store. $100 to $250 to set up. $33 to $70 a month for one, $60 to $135 for a pair.", source: "guinea-pig-cost-guide" },
         { label: "Adult size", value: "8 to 12 inches, 1.5 to 2.6 lbs." },
         { label: "Lifespan", value: "4 to 8 years." },
@@ -727,14 +727,14 @@ export const smallMammalGuides = [
         { label: "Legal", value: "Legal in every US state except Hawaii, which bans hamsters outright with no permit route.", source: "hamster-legal-guide" },
         { label: "Enclosure", value: "Roughly 700 to 775 square inches of unbroken floor for a Syrian, around 600 for dwarf species, more always better. Bar spacing no more than 1/2 inch for Syrians, 1/4 inch for smaller species.", source: "hamster-tank-setup-guide" },
         { label: "Temperature", value: "65 to 75°F, held steady. Below 65°F is out of range; below about 41°F (5°C), especially with short days, risks torpor, a hibernation-like state; over 80°F risks heat stress.", source: "hamster-tank-setup-guide" },
-        { label: "Bedding", value: "At least 6 inches of dust-free paper bedding or aspen shavings as the floor, and 15 to 30 inches (40 to 80 cm) is the depth that measurably improves welfare. Never cedar or pine.", source: "hamster-tank-setup-guide" },
+        { label: "Bedding", value: "At least 6 inches of dust-free paper bedding or aspen shavings as the floor, and in a bedding-depth study 40 to 80 cm, roughly 15 to 30 inches, seemed to improve welfare. Never cedar or pine.", source: "hamster-tank-setup-guide" },
         { label: "Wheel", value: "Solid surface, no rungs. 8 to 11 inches for a Syrian, 6 to 8 for a dwarf. Too small forces an arched running posture that's hard on the spine.", source: "hamster-tank-setup-guide" },
         { label: "Sand bath", value: "A dust-free, non-clumping sand bath is a species essential, not an extra, for working coat and skin oils out.", source: "hamster-tank-setup-guide" },
         { label: "Company", value: "Syrian hamsters are strictly solitary, and housing two together leads to fighting. This is one of the most common and preventable hamster-owner mistakes there is.", source: "hamster-handling-guide" },
         { label: "Diet", value: "A nutritionally complete hamster pellet or lab block as the staple, not a loose seed mix. Small daily fresh vegetables, under about 10% of the diet combined with fruit.", source: "hamster-feeding-guide" },
         { label: "Not eating", value: "6 to 12 hours without eating is worth watching, 12 to 24 hours warrants a vet call, 24+ hours is critical, 48+ life-threatening. A day of no visible eating can also just mean a hamster is working through a cheek-pouch hoard.", source: "hamster-feeding-guide" },
         { label: "Handling", value: "Let it wake up and orient itself before reaching in, never grab from above. Scoop from below with both hands. Syrians are the easiest to handle; dwarfs and Roborovski are faster and more nip-prone.", source: "hamster-handling-guide" },
-        { label: "Budget", value: "$15 to $25 for a Syrian ($8 to $30 for dwarfs, $5 to $15 rescue). $100 to $250 to set up, animal included. $15 to $30 a month.", source: "hamster-cost-guide" },
+        { label: "Budget", value: "About $26 for a Syrian, $16 to $24 for dwarfs. $100 to $250 to set up, animal included. $10 to $18 a month.", source: "hamster-cost-guide" },
         { label: "Adult size", value: "5 to 7 inches, 4 to 7 oz." },
         { label: "Lifespan", value: "A large veterinary study found a median age at death of 1.75 years. Syrians and Roborovskis tend toward 2 to 3 years, Winter Whites often only about a year.", source: "hamster-cost-guide" },
       ],
@@ -751,7 +751,7 @@ export const smallMammalGuides = [
       vetLine: "An exotic vet, found before you need one. Wet tail is a same-day emergency, not a wait-and-see situation; most of the rest of this list is prevented through clean, dust-free bedding and a stress-free setup.",
     },
     routes: [
-      { slug: "hamster-cost-guide", line: "$15 to $30 for the animal, $100 to $250 to set up, and what a median 1.75-year lifespan means for the budget." },
+      { slug: "hamster-cost-guide", line: "$16 to $26 for the animal, $100 to $250 to set up, and what a median 1.75-year lifespan means for the budget." },
       { slug: "hamster-tank-setup-guide", line: "The real floor space (bigger than any starter kit), bar spacing, bedding depth, wheel size, and the sand bath most kits skip." },
       { slug: "hamster-feeding-guide", line: "Free-choice versus scheduled feeding, safe and toxic foods, and how to tell cheek-pouch hoarding from real appetite loss." },
       { slug: "hamster-handling-guide", line: "Why species matters more than you'd think, the correct scoop-from-below technique, and why waking a sleeping hamster gets you bitten." },
@@ -810,9 +810,9 @@ export const smallMammalGuides = [
         { label: "Feeding schedule", value: "Once daily in the evening, water available around the clock. Roughly 2 to 3 teaspoons of a protein base plus 1 to 2 teaspoons of chopped produce, adjusted by body condition.", source: "hedgehog-feeding-guide" },
         { label: "Base diet", value: "A hedgehog-specific kibble or a low-fat cat food, roughly 30 to 50% protein and 10 to 20% fat. Insects are a supplement: 5 to 6 mealworms or 1 to 2 crickets, 2 to 3 times a week.", source: "hedgehog-feeding-guide" },
         { label: "Foods to avoid", value: "Avocado is toxic. Raw meat, raw eggs, and dairy cause real problems, and nuts, seeds, and hard raw vegetables are choking hazards.", source: "hedgehog-feeding-guide" },
-        { label: "Not eating", value: "Roughly 24 hours is the limit before a vet visit. A newly acquired hedgehog gets closer to 2 nights, since some stress refusal is expected. Check fecal output, not bowl level.", source: "hedgehog-feeding-guide" },
+        { label: "Not eating", value: "Roughly 24 hours is the limit before a vet visit, new arrivals included. Check fecal output, not bowl level.", source: "hedgehog-feeding-guide" },
         { label: "Picking one up", value: "Scoop from underneath with flat or cupped hands and let the ball unroll on its own time. Never force a ball open. Huffing and balling are reflexes, and the 5,000 to 7,000 quills poke bare hands but do not embed.", source: "hedgehog-handling-guide" },
-        { label: "Quilling and self-anointing", value: "Baby quills go at about a month and a heavier round lands around 4 months, with grumpiness that passes within a month. Foaming saliva over its own quills after a new smell is normal, not poisoning.", source: "hedgehog-handling-guide" },
+        { label: "Quilling and self-anointing", value: "Baby quills go at about a month and permanent spines replace them, later shed one at a time, with grumpiness that passes within a month. Foaming saliva over its own quills after a new smell is normal, not poisoning.", source: "hedgehog-handling-guide" },
         { label: "Quarantine", value: "At least two weeks for any new arrival, which is how mites are kept out.", source: "hedgehog-health-issues-guide" },
         { label: "Budget", value: "$100 to $300 for the hedgehog, roughly $200 to $400 for the setup, about $20 to $40 a month plus heating. An exotic vet visit is $80 to $200, and an emergency fund of $500 or more is reasonable.", source: "hedgehog-cost-guide" },
         { label: "Lifespan", value: "3 to 6 years typically, some to 8 to 10.", source: "hedgehog-cost-guide" },
@@ -857,7 +857,7 @@ export const smallMammalGuides = [
     ],
     faqs: [
       { q: "How common is Wobbly Hedgehog Syndrome?", a: "Older figures put it at roughly 10% of captive hedgehogs. A more recent 20-year study across multiple US veterinary institutions found a lower confirmed rate, closer to 3%, with average onset around 3.3 years. It's real and serious when it happens, just less common than the older number implies." },
-      { q: "How long can a hedgehog go without eating?", a: "Multiple sources converge on roughly 24 hours as the outer limit before a vet visit is warranted. For a newly acquired hedgehog still adjusting, breeders are a bit more lenient, around 2 nights, before recommending a call for help, since some initial stress-related refusal is expected." },
+      { q: "How long can a hedgehog go without eating?", a: "Roughly 24 hours is the outer limit before a vet visit is warranted. A newly homed hedgehog often eats less while it settles, so check its droppings as well as the bowl to confirm it is eating at all, and do not stretch the 24-hour line for a new arrival." },
       { q: "Are hedgehogs as cuddly as hamsters or guinea pigs?", a: "No, and the marketing that shelves them together oversells the resemblance. A hedgehog tolerates handling instead of seeking it out, and its temperature needs sit closer to a reptile's than a pocket pet's." },
     ],
   },
@@ -972,7 +972,7 @@ export const smallMammalGuides = [
       rows: [
         { label: "Legal check", value: "Illegal in California, Alaska, Hawaii, the District of Columbia, and New York City, effectively illegal in Pennsylvania, permit-required in New Jersey, import-permit in New Mexico. Georgia, Massachusetts, and Wyoming do not ban them, whatever the internet says.", source: "sugar-glider-legal-guide" },
         { label: "Never one glider", value: "Colonial, so two minimum: pairs or small groups are the veterinary standard. One study found the solitary gliders in its sample healthy, so self-mutilation is a real risk, not a certainty, and it does not overturn the pair rule. Neutering males avoids breeding and most of the scent marking.", source: "sugar-glider-enrichment-guide" },
-        { label: "Cage size", value: "At least 30 by 18 by 36 inches for a pair, and 24 by 24 by 48 or more is the current advice. Height first: this is a climbing, gliding animal.", source: "sugar-glider-tank-setup-guide" },
+        { label: "Cage size", value: "At least 36 inches wide, 24 deep and 36 tall, bought for a pair. Put any extra space into height: this is a climbing, gliding animal.", source: "sugar-glider-tank-setup-guide" },
         { label: "Bar spacing", value: "No more than half an inch. Young gliders squeeze through wider gaps.", source: "sugar-glider-tank-setup-guide" },
         { label: "Temperature", value: "75 to 88°F, in a consistently warm room away from drafts and direct sun. No humidity control, no UVB, ordinary lighting.", source: "sugar-glider-tank-setup-guide" },
         { label: "Cage floor and cover", value: "A solid bottom with washable liners rather than loose bedding. Fleece over the top, back, and sides helps a new glider feel secure.", source: "sugar-glider-tank-setup-guide" },
@@ -1013,7 +1013,7 @@ export const smallMammalGuides = [
       { slug: "sugar-glider-legal-guide", line: "The states and cities that restrict them, and the bans that turn out not to exist." },
     ],
     buyList: [
-      "Tall cage, at least roughly 30 by 18 by 36 inches for a pair, bar spacing half an inch or less",
+      "Tall cage, at least 36 by 24 by 36 inches for a pair, bar spacing half an inch or less",
       "A second glider, never just one",
       "Glider-safe axle-free exercise wheel",
       "Bonding pouch",

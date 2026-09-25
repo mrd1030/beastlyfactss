@@ -514,9 +514,8 @@ export const snakeGuides = [
     // encyclopedia entry, which no deep dive repeats. Quarantine, hygiene and
     // power outage cite the shared reptile guides in the sidebar's Health and
     // More list. Rewritten to the template shape 2026-09-16
-    // (archive/docs-completed/HUB_ROUTER_REVIEWS.md). This species has no feeding guide, so the
-    // feeding rows are
-    // sourced to the Diet Basics section of the setup guide. The old hub sold
+    // (archive/docs-completed/HUB_ROUTER_REVIEWS.md). The feeding row is
+    // sourced to milk-snake-feeding-guide. The old hub sold
     // an under-tank heater as the primary heat source where the setup guide
     // calls it a supplement, put the enclosure floor below the setup guide's
     // minimum, and gave Sinaloans 4 to 5 feet against a cited 40 to 48 inches.
