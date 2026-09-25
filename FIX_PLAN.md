@@ -718,13 +718,13 @@ Status: open
 - [x] [COVERED, NOT LINKED] Brumation vs winter slowdown: snake-brumation-guide. Add it to RELATED_ARTICLES['milk-snake'] and a sentence with an in-body link in milk-snake-feeding-guide's winter slowdown passage.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] What to do about musking or nipping in a settling juvenile. Belongs in milk-snake-handling-guide.
-- [ ] [TRULY MISSING] Pick-up method, session length, first week (Sep 8-15, verified). Belongs in milk-snake-handling-guide.
-- [ ] [TRULY MISSING] Cleaning cadence (Sep 8-15). Belongs in milk-snake-tank-setup-guide.
-- [ ] [TRULY MISSING] Choosing and buying (Sep 8-15). Belongs in milk-snake-cost-guide.
+- [x] [TRULY MISSING] What to do about musking or nipping in a settling juvenile. Belongs in milk-snake-handling-guide.
+- [x] [TRULY MISSING] Pick-up method, session length, first week (Sep 8-15, verified). Belongs in milk-snake-handling-guide.
+- [x] [TRULY MISSING] Cleaning cadence (Sep 8-15). Belongs in milk-snake-tank-setup-guide.
+- [x] [TRULY MISSING] Choosing and buying (Sep 8-15). Belongs in milk-snake-cost-guide.
 
 **Short pages**
-- [ ] [SHORT] milk-snake-handling-guide 539, milk-snake-health-issues-guide 465, milk-snake-cost-guide 535, milk-snake-tank-setup-guide 524, milk-snake-enrichment-guide 513.
+- [x] [SHORT] milk-snake-handling-guide 539, milk-snake-health-issues-guide 465, milk-snake-cost-guide 535, milk-snake-tank-setup-guide 524, milk-snake-enrichment-guide 513.
 
 ### Corn snake (corn-snake)
 Status: open
@@ -733,16 +733,16 @@ Status: open
 - [x] [CONTRADICTION] Humidity: corn-snake-tank-setup-guide gives "40 to 60%" with a flagged minority "65 to 75%" vs corn-snake-vs-hognose-snake-guide flat "40-60%". Carry the caveat into the comparison table.
 
 **Low grades and thin pages**
-- [ ] [THIN] corn-snake-vs-hognose-snake-guide (B+), for the flattening above.
+- [x] [THIN] corn-snake-vs-hognose-snake-guide (B+), for the flattening above.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Quarantine setup steps: reptile-quarantine-guide (sidebar). The hub gives duration only; add an in-body link.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] How to verify an enclosure is escape-proof (Sep 8-15). Belongs in corn-snake-handling-guide or tank setup.
+- [x] [TRULY MISSING] How to verify an enclosure is escape-proof (Sep 8-15). Belongs in corn-snake-handling-guide or tank setup.
 
 **Short pages**
-- [ ] [SHORT] corn-snake-handling-guide 546, corn-snake-health-issues-guide 529.
+- [x] [SHORT] corn-snake-handling-guide 546, corn-snake-health-issues-guide 529.
 
 ### Ball python (ball-python)
 Status: open
@@ -751,12 +751,12 @@ Status: open
 - [x] [CONTRADICTION] Refusal causes (framing): ball-python-feeding-guide lists breeding season (October to March) first vs ball-python-health-issues-guide, which never mentions the season. Use one ordered list on both.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] What to do after an escape (Sep 8-15, verified). Belongs in ball-python-handling-guide.
-- [ ] [TRULY MISSING] Cleaning cadence and a safe disinfectant (Sep 8-15). Belongs in ball-python-tank-setup-guide.
+- [x] [TRULY MISSING] What to do after an escape (Sep 8-15, verified). Belongs in ball-python-handling-guide.
+- [x] [TRULY MISSING] Cleaning cadence and a safe disinfectant (Sep 8-15). Belongs in ball-python-tank-setup-guide.
 - Resolved, no action: "10 Surprising Ball Python Facts" exists at content/fun-facts/10-surprising-ball-python-facts.mdx; the reader only lacked it in the set.
 
 **Short pages**
-- [ ] [SHORT] ball-python-cost-guide 535.
+- [x] [SHORT] ball-python-cost-guide 535.
 
 ### Blue-tongued skink (blue-tongue-skink)
 Status: open
@@ -768,12 +768,12 @@ Status: open
 - [x] [COVERED+LINKED] Heat bulb wattage for a 4x2x2 (Sep 8-15): reptile-heating-thermostats-guide gives the method (body-linked); add the starting wattage.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Body condition reference (weight and shape by life stage), which the feeding guide tells readers to use; adult weight figure (Sep 8-15). Belongs in blue-tongue-skink-health-issues-guide.
-- [ ] [TRULY MISSING] Brumation temperatures (Sep 8-15). Belongs in blue-tongue-skink-health-issues-guide.
-- [ ] [TRULY MISSING] Cleaning cadence (Sep 8-15). Belongs in blue-tongue-skink-tank-setup-guide.
+- [x] [TRULY MISSING] Body condition reference (weight and shape by life stage), which the feeding guide tells readers to use; adult weight figure (Sep 8-15). Belongs in blue-tongue-skink-health-issues-guide. Wave 2: adult weight (283 to 510 g, Smithsonian) and shape signs added; no source gives weights by life stage.
+- [x] [TRULY MISSING] Brumation temperatures (Sep 8-15). Belongs in blue-tongue-skink-health-issues-guide.
+- [x] [TRULY MISSING] Cleaning cadence (Sep 8-15). Belongs in blue-tongue-skink-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] blue-tongue-skink-health-issues-guide 544.
+- [x] [SHORT] blue-tongue-skink-health-issues-guide 544.
 
 ### Green anole (green-anole)
 Status: open
@@ -785,15 +785,15 @@ Status: open
 - [x] [DOUBTED] green-anole-cost-guide: escaped internal note "a genuinely new addition to the gear we recommend" (Sep 8-15, not rechecked). Grep and remove.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Sexing (the dewlap is display, not identification). Belongs in green-anole-handling-guide.
-- [ ] [TRULY MISSING] Spot-clean and substrate refresh schedule. Belongs in green-anole-tank-setup-guide.
-- [ ] [TRULY MISSING] Named live plant species. Belongs in green-anole-tank-setup-guide.
-- [ ] [TRULY MISSING] Egg laying (Sep 8-15, verified). Belongs in green-anole-health-issues-guide.
-- [ ] [TRULY MISSING] How to catch or restrain one (Sep 8-15, verified). Belongs in green-anole-handling-guide.
-- [ ] [TRULY MISSING] green-anole-enrichment-guide says keep a shallow dish "and do not count on it" without the reason (drowning in deep dishes, stated in the feeding guide). Add the reason in text (sibling pages, no link).
+- [x] [TRULY MISSING] Sexing (the dewlap is display, not identification). Belongs in green-anole-handling-guide.
+- [x] [TRULY MISSING] Spot-clean and substrate refresh schedule. Belongs in green-anole-tank-setup-guide.
+- [x] [TRULY MISSING] Named live plant species. Belongs in green-anole-tank-setup-guide.
+- [x] [TRULY MISSING] Egg laying (Sep 8-15, verified). Belongs in green-anole-health-issues-guide.
+- [x] [TRULY MISSING] How to catch or restrain one (Sep 8-15, verified). Belongs in green-anole-handling-guide.
+- [x] [TRULY MISSING] green-anole-enrichment-guide says keep a shallow dish "and do not count on it" without the reason (drowning in deep dishes, stated in the feeding guide). Add the reason in text (sibling pages, no link).
 
 **Short pages**
-- [ ] [SHORT] green-anole-handling-guide 490, green-anole-health-issues-guide 399, green-anole-cost-guide 517.
+- [x] [SHORT] green-anole-handling-guide 490, green-anole-health-issues-guide 399, green-anole-cost-guide 517.
 
 ### Russian tortoise (russian-tortoise)
 Status: open
@@ -802,13 +802,13 @@ Status: open
 - [x] [CONTRADICTION] Pyramiding cause (framing): russian-tortoise-feeding-guide "long attributed to" fast growth on protein vs russian-tortoise-health-issues-guide, VCA "not completely understood". Give the feeding guide the health guide's hedge.
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] russian-tortoise-handling-guide (B, thin; 285 words, the shortest article on the site): restates "observation pet" and the sulcata comparison. Add ram and bite injury between housed females and an escape-proofing checklist.
+- [x] [LOW GRADE] russian-tortoise-handling-guide (B, thin; 285 words, the shortest article on the site): restates "observation pet" and the sulcata comparison. Add ram and bite injury between housed females and an escape-proofing checklist. Wave 2: no source found for female ramming or biting; page covers female bullying stress, male fights and courtship biting instead.
 
 **Gaps: covered and linked**
 - [x] [COVERED+LINKED] Soak depth, temperature and minutes: tortoise-soaking-guide (sidebar). The hub gives frequency only.
 
 **Short pages**
-- [ ] [SHORT] russian-tortoise-handling-guide 285, russian-tortoise-enrichment-guide 451.
+- [x] [SHORT] russian-tortoise-handling-guide 285, russian-tortoise-enrichment-guide 451.
 
 ### Ackie monitor (ackie-monitor)
 Status: open
