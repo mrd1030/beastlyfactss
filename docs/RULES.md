@@ -84,7 +84,7 @@ working checklist.
   and never a URL library. Going over is allowed when every extra link carries a
   claim nothing else in the block supports; when it does, say why in an MDX
   comment directly above `<Sources>` so the next audit doesn't trim it. Current
-  overruns: `bearded-dragon-health-issues-guide.mdx` runs 7 (the prolapse and ADV
+  overruns: `bearded-dragon-health-issues-guide.mdx` runs 9 (the prolapse, ADV and vet-finding
   material), `red-eared-slider-health-issues-guide.mdx` runs 6 (the pyramiding
   correction needs both the Stancel feeding trial and a cause list). Don't "fix"
   either back down.

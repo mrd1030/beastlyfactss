@@ -183,7 +183,7 @@ export const lizardGuides = [
     },
     routes: [
       { slug: "argentine-tegu-legal-guide", line: "Florida's prohibited list with the dates, the closed grandfather window, and the eight other jurisdictions that ban or gate one." },
-      { slug: "argentine-tegu-cost-guide", line: "$200 to $500 for the animal, a build that often exceeds $1,000 to $3,000, and why the enclosure you can buy is not the one you need." },
+      { slug: "argentine-tegu-cost-guide", line: "$200 to $500 for the animal, a build that often exceeds $1,000 to $3,000, and what a true 8x4x4 enclosure costs built to order." },
       { slug: "argentine-tegu-tank-setup-guide", line: "8x4x4 as a floor, 100 to 110F basking, 70 to 80% humidity, 12 to 18 inches of substrate, and the feeding schedule by age." },
       { slug: "argentine-tegu-feeding-guide", line: "Five meals a week as a hatchling to two as an adult, the 60/30/10 adult plate, the skull-sized portion, cooked eggs, and brumation versus a real refusal." },
       { slug: "argentine-tegu-handling-guide", line: "Why the dog comparison is earned rather than marketing, reading a tegu by its size, the bite protocol, and the season handling stops." },

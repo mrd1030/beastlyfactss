@@ -622,12 +622,12 @@ Status: open
 - [x] [DOUBTED] argentine-tegu-feeding-guide sends brumation readers to tortoise-brumation-guide with a caveat. Add a short tegu bridging sentence on what differs.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Sexing. Belongs in argentine-tegu-handling-guide.
-- [ ] [TRULY MISSING] Maintenance and spot-cleaning of 12 to 18 inches of burrow substrate. Belongs in argentine-tegu-tank-setup-guide.
-- [ ] [TRULY MISSING] Price of the 8x4x4 adult build (Sep 8-15). Belongs in argentine-tegu-cost-guide.
+- [x] [TRULY MISSING] Sexing. Belongs in argentine-tegu-handling-guide.
+- [x] [TRULY MISSING] Maintenance and spot-cleaning of 12 to 18 inches of burrow substrate. Belongs in argentine-tegu-tank-setup-guide.
+- [x] [TRULY MISSING] Price of the 8x4x4 adult build (Sep 8-15). Belongs in argentine-tegu-cost-guide.
 
 **Short pages**
-- [ ] [SHORT] argentine-tegu-health-issues-guide 497.
+- [x] [SHORT] argentine-tegu-health-issues-guide 497.
 
 ### Bearded dragon (bearded-dragon)
 Status: open
@@ -639,11 +639,11 @@ Status: open
 - [x] [COVERED+LINKED] Handling clock vs quarantine clock: reptile-quarantine-guide (sidebar). Add one sentence tying the 7 to 14 day settle-in to the 3 to 6 month quarantine in bearded-dragon-handling-guide.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] How to find and vet a reptile-experienced vet. Belongs in bearded-dragon-health-issues-guide (or a shared vet guide).
-- [ ] [TRULY MISSING] Where to buy (breeder, store, rescue) and health checks before buying. Belongs in bearded-dragon-cost-guide.
+- [x] [TRULY MISSING] How to find and vet a reptile-experienced vet. Belongs in bearded-dragon-health-issues-guide (or a shared vet guide).
+- [x] [TRULY MISSING] Where to buy (breeder, store, rescue) and health checks before buying. Belongs in bearded-dragon-cost-guide.
 
 **Short pages**
-- [ ] [SHORT] bearded-dragon-handling-guide 566.
+- [x] [SHORT] bearded-dragon-handling-guide 566.
 
 ### Jackson's chameleon (jacksons-chameleon)
 Status: open
@@ -652,7 +652,7 @@ Status: open
 - [x] [CONTRADICTION] Ambient temperature: jacksons-chameleon-tank-setup-guide "68-75°F" vs jacksons-chameleon-feeding-guide "lives at 70-80°F". Use one band.
 
 **Low grades and thin pages**
-- [ ] [LOW GRADE] jacksons-chameleon-handling-guide (B, thin): repeats the live-birth fact already in the encyclopedia and cost guide; the Sep 8-15 run also called it "thin on actual technique".
+- [x] [LOW GRADE] jacksons-chameleon-handling-guide (B, thin): repeats the live-birth fact already in the encyclopedia and cost guide; the Sep 8-15 run also called it "thin on actual technique".
 
 **Doubted claims**
 - [x] [DOUBTED] jacksons-chameleon-tank-setup-guide: humidity "day-low, night-high" is phrased loosely enough to be unfalsifiable. Give the day and night numbers.
@@ -662,13 +662,13 @@ Status: open
 - [x] [COVERED+LINKED] Quarantine walkthrough: reptile-quarantine-guide (sidebar). The hub has a one-line "day one" item; add an in-body link there.
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Care of the 5 to 30 live-born young: housing, feeding, age to rehome. Belongs in jacksons-chameleon-health-issues-guide or feeding guide.
-- [ ] [TRULY MISSING] Gravid female, birth and dystocia section; respiratory infection beyond a passing line (Sep 8-15). Belongs in jacksons-chameleon-health-issues-guide.
-- [ ] [TRULY MISSING] Sourcing a captive-bred animal, and how a legal Hawaiian animal reaches the mainland trade (Sep 8-15). Belongs in jacksons-chameleon-cost-guide.
-- [ ] [TRULY MISSING] UVB distance from the branch and how to hold a room at 68 to 75°F (Sep 8-15). Belongs in jacksons-chameleon-tank-setup-guide.
+- [x] [TRULY MISSING] Care of the 5 to 30 live-born young: housing, feeding, age to rehome. Belongs in jacksons-chameleon-health-issues-guide or feeding guide.
+- [x] [TRULY MISSING] Gravid female, birth and dystocia section; respiratory infection beyond a passing line (Sep 8-15). Belongs in jacksons-chameleon-health-issues-guide.
+- [x] [TRULY MISSING] Sourcing a captive-bred animal, and how a legal Hawaiian animal reaches the mainland trade (Sep 8-15). Belongs in jacksons-chameleon-cost-guide.
+- [x] [TRULY MISSING] UVB distance from the branch and how to hold a room at 68 to 75°F (Sep 8-15). Belongs in jacksons-chameleon-tank-setup-guide.
 
 **Short pages**
-- [ ] [SHORT] jacksons-chameleon-handling-guide 424, jacksons-chameleon-health-issues-guide 405, jacksons-chameleon-cost-guide 543.
+- [x] [SHORT] jacksons-chameleon-handling-guide 424, jacksons-chameleon-health-issues-guide 405, jacksons-chameleon-cost-guide 543.
 
 ### Tokay gecko (tokay-gecko)
 Status: open
@@ -683,10 +683,10 @@ Status: open
 - [x] [COVERED+LINKED] Gut-load window: gut-loading-feeder-insects-guide (body-linked; sidebar in Session 0).
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Pair introduction timeline and when to separate. Belongs in tokay-gecko-enrichment-guide.
+- [x] [TRULY MISSING] Pair introduction timeline and when to separate. Belongs in tokay-gecko-enrichment-guide.
 
 **Short pages**
-- [ ] [SHORT] tokay-gecko-cost-guide 430, tokay-gecko-tank-setup-guide 545.
+- [x] [SHORT] tokay-gecko-cost-guide 430, tokay-gecko-tank-setup-guide 545.
 
 ### Hognose snake (hognose-snake)
 Status: open
@@ -698,11 +698,11 @@ Status: open
 - [x] [COVERED, NOT LINKED] Brumation: raised twice (feeding guide and hub) as a reason for appetite loss, never explained. snake-brumation-guide covers whether a pet snake needs it and the abort signs. Add it to RELATED_ARTICLES['hognose-snake'] and one hognose sentence with an in-body link in hognose-snake-feeding-guide. Note the guide lacks a "normal slowdown vs illness" checklist (non-species section).
 
 **Gaps: truly missing**
-- [ ] [TRULY MISSING] Hatchling housing and cleaning cadence (Sep 8-15). Belongs in hognose-snake-tank-setup-guide.
-- [ ] [TRULY MISSING] Handling technique: support, lift, session length (Sep 8-15, verified). Belongs in hognose-snake-handling-guide.
+- [x] [TRULY MISSING] Hatchling housing and cleaning cadence (Sep 8-15). Belongs in hognose-snake-tank-setup-guide.
+- [x] [TRULY MISSING] Handling technique: support, lift, session length (Sep 8-15, verified). Belongs in hognose-snake-handling-guide.
 
 **Short pages**
-- [ ] [SHORT] hognose-snake-health-issues-guide 541.
+- [x] [SHORT] hognose-snake-health-issues-guide 541.
 
 ### Milk snake (milk-snake)
 Status: open
