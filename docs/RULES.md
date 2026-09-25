@@ -92,10 +92,12 @@ working checklist.
   overruns: `bearded-dragon-health-issues-guide.mdx` runs 9 (the prolapse, ADV and vet-finding
   material), `red-eared-slider-health-issues-guide.mdx` runs 6 (the pyramiding
   correction needs both the Stancel feeding trial and a cause list),
-  `small-mammal-temperature-heat-stress-guide.mdx` runs 8 and
-  `small-mammal-grooming-nails-molting-guide.mdx` runs 9 (one page per species
-  covered), `uvb-lighting-complete-guide.mdx` runs 7 (the fat-tailed gecko zone
-  is not in Baines 2016). Don't "fix" any of them back down.
+  `small-mammal-temperature-heat-stress-guide.mdx` runs 7 and
+  `small-mammal-grooming-nails-molting-guide.mdx` runs 8 (one source per species
+  where no broad page covers several; consolidated 2026-09-25),
+  `uvb-lighting-complete-guide.mdx` runs 7 (the fat-tailed gecko zone is not in
+  Baines 2016). Before adding a source to any of these, check whether one
+  already cited states the claim.
   Prefer peer-reviewed papers with DOI, then .gov agencies, then museums and
   universities, then established science journalism. Name the actual paper
   title and credit the authors, not just the journal.

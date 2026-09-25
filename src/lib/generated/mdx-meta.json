@@ -416,7 +416,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -4149,7 +4149,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 5,
     "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -42768,7 +42768,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 9,
+    "sourceCount": 8,
     "headingCount": 12,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -42826,7 +42826,7 @@
       },
       {
         "q": "Does this apply to gerbils, mice, degus, hedgehogs, or sugar gliders too?",
-        "a": "Partially. Gerbils adapt to a wide temperature range and resist heat stress well, but need humidity under 50% to avoid a sore nose. Mice and rats do best at 64 to 79°F with humidity between 30 and 70%. Degus are kept cool, below about 77°F (25°C), and handle heat badly, worse with humidity or direct sun. Hedgehogs and sugar gliders don't fit this guide's premise at all: both need supplemental heat from a heat lamp or ceramic heat emitter to stay above roughly 75°F, closer to a reptile's setup than to a guinea pig's."
+        "a": "Partially. Gerbils adapt to a wide temperature range and resist heat stress well, but need humidity under 50% to avoid a sore nose. Mice and rats share the ceiling for all pet rodents: no warmer than 80°F, with humidity below 70%. Degus are kept cool, below about 77°F (25°C), and handle heat badly, worse with humidity or direct sun. Hedgehogs and sugar gliders don't fit this guide's premise at all: both need supplemental heat from a heat lamp or ceramic heat emitter to stay above roughly 75°F, closer to a reptile's setup than to a guinea pig's."
       }
     ],
     "relatedProducts": [],
@@ -42835,7 +42835,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 8,
+    "sourceCount": 7,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1600,
@@ -45543,7 +45543,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 5,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,

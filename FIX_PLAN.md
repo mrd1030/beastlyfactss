@@ -255,6 +255,14 @@ push. Do not merge to main. Summary only at the end.
 
 ---
 
+## Found in the R2 source consolidation (2026-09-25, not yet fixed)
+
+Claims with no source on their own page. Source each or cut it.
+- [ ] green-iguana-handling-guide: tail whipping causes "welts and bruising" (LafeberVet only says lashes are aimed at the eyes).
+- [ ] ackie-monitor-handling-guide: the "backflips" FunFact.
+- [ ] small-mammal-vet-visits-and-travel-guide: ferrets can vomit, the insulinoma crash, and rats carrying respiratory disease.
+- [ ] small-mammal-temperature-heat-stress-guide: chinchilla 50 to 68°F comfort range, 35 to 45°F cold tolerance (also in a hub row), hamster torpor below 41°F, rabbit "no sweat glands" (VCA's rabbit page says it but is not cited here).
+
 ## Reader review fixes (set up 2026-09-25)
 
 Source: READER_REVIEWS_2026-09-25.md, section 6 (40 items). Every conflict
