@@ -1837,6 +1837,18 @@ the HTML), then re-render the PDF.
 - [ ] Leopard gecko (profile p. 3, growth table, p. 34): adult length "6.5 to 11 in, sources differ" and "8 to 11 in" adults. Site now uses 6 to 9 inches (PetMD 6 to 9, LafeberVet 6.5 to 8).
 - [ ] Betta p10: feeding "once or twice a day" can add "or up to three smaller meals 6 to 8 hours apart" (optional).
 
+Added 2026-09-25 from the wave 2 changes:
+- [ ] Axolotl (diet page, pages_2.html:138): "Whole or halved nightcrawler" for adults. Site: worms cut to head-sized portions, never whole, even for a large adult (axolotl-feeding-guide).
+- [ ] Axolotl (handling page, pages_2.html:115): hand washing assumes bare-hand contact. Site: if it must be touched, clean disposable nitrile gloves, since skin oils harm it (axolotl-handling-guide).
+- [ ] Ball python (cleaning, lines 489, 1013, 1260): "Change the substrate fully every 4 to 8 weeks". Site: monthly if messy, at least quarterly if not; bowl and decor scrubbed weekly with 3% bleach left on 10 minutes (ball-python-tank-setup-guide).
+- [ ] Bearded dragon (First 30 days, line 1088): wellness visit "within the first two weeks". Site: first exam within 48 hours (bearded-dragon-health-issues-guide, cost guide; VCA).
+- [ ] Bearded dragon (Salmonella box, line 492): only under-fives told not to handle. Site: under 5, 65 and older, and the immunocompromised should not handle the dragon or touch its enclosure (bearded-dragon-handling-guide; CDC).
+- [ ] Crested gecko (sexing p14, line 666): sexable "at 15 to 18 months". Site: hemipenal bulge shows at 18 to 25 g; under that with no bulge means unsexed, not female (crested-gecko-handling-guide; ReptiFiles).
+- [ ] Crested gecko (lines 458, 522, 859, 1084, 1266): dishes scrubbed weekly, deep clean monthly. Site: dishes washed and disinfected daily, non-bioactive enclosure fully cleaned at least weekly, bleach left on 10 minutes (crested-gecko-tank-setup-guide).
+- [ ] Leopard gecko (handling p8 line 480, behavior p19 line 845): rapid tail flicking means end the session, slow wave "not a complaint". Site says the reverse: slow swish with an arched back is the warning, rapid flick or rattle is excitement at prey or a mate (leopard-gecko-handling-guide; ReptiFiles, LafeberVet).
+- [ ] Leopard gecko (profile, line 285): "15 to 20 years typical, up to 25 to 30". Site: 10 to 20 years, some reaching 25 to 30 (hub, cost guide, fun facts; PetMD, LafeberVet).
+- [ ] Russian tortoise (outdoor pen, pages_2.html:89): walls "at least 12 in above ground". Site: about 2 ft high with an inward lip of about 4 in, buried at least 12 in, mesh cover (russian-tortoise-handling-guide).
+
 **Package better than the site (fix the site, not the package):**
 - [x] Axolotl pH: package "7.4 to 7.6" (LafeberVet) vs hub and tank setup guide "7.4 to 7.8".
 - [x] Hamster torpor: package "below 41°F (5°C)" (Merck, LafeberVet) vs hub "under 60°F risks torpor".
@@ -1851,6 +1863,13 @@ the HTML), then re-render the PDF.
 - [ ] Leopard gecko costs: package setup $175 to $495, monthly $32 to $91; hub $250 to $400, $20 to $50.
 - [ ] Cockatiel yearly cost: package $300 to $565; hub $200 to $350.
 - [ ] Russian tortoise brumation: package 10 to 14 weeks at most; hub 2 to 4 months.
+
+Added 2026-09-25 from the wave 2 changes:
+- [ ] Axolotl feeding portion (pages_2.html:143): package "what it finishes in two to three minutes"; site "what it takes in 5 to 10 minutes" (axolotl-feeding-guide).
+- [ ] Axolotl maturity and sexing (pages_1.html:106, pages_2.html:42, 265, pages_3.html:538): package "about a year" (Genetic Stock Center); site males about 10 months, females 12 to 18 months (axolotl-handling-guide; LafeberVet, Chicago Exotics).
+- [ ] Axolotl nets (pages_2.html:115): package "Never: Nets"; site allows a soft fine-mesh net for seconds when nothing else works (axolotl-handling-guide).
+- [ ] Crested gecko vet cost (lines 311, 988): package first exam with fecal "$65 to $210"; site routine visit about $40 to $70 (crested-gecko-cost-guide).
+- [ ] Crested gecko price (lines 302, 988): package normals "$50 to $200", rare "$500 to $1,000 or more"; site normals under $100, standard morphs to about $200, rare upward of $1,000 (crested-gecko-cost-guide).
 
 No differences: budgie.
 
