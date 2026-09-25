@@ -1713,7 +1713,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -2952,7 +2952,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 7,
+    "sourceCount": 6,
     "headingCount": 11,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
@@ -4161,7 +4161,7 @@
     "title": "How Much Does a Ball Python Really Cost?",
     "seoTitle": "How Much Does a Ball Python Really Cost?",
     "seoDescription": "Ball python costs: $40-100 for a standard snake, $300-800 for a full PVC setup, and just $200-500 a year after, one of the cheapest 20-30 year pets around.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Ball pythons have one of the best cost-to-lifespan ratios of any commonly kept reptile: $300-800 to set up, then low costs for the 20-30 years after.",
     "date": "2026-07-07",
@@ -4215,7 +4215,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -4681,8 +4681,8 @@
     "slug": "ball-python-vs-corn-snake-guide",
     "title": "Ball Python vs. Corn Snake: Which Beginner Snake Fits You Better",
     "seoTitle": "Ball Python vs. Corn Snake: Beginner Snake Guide",
-    "seoDescription": "Ball pythons live 20-30 years but often skip meals for weeks. Corn snakes eat reliably and live 15-20 years, though they escape enclosures far more easily.",
-    "lastUpdated": "2026-09-24",
+    "seoDescription": "Ball pythons live 20-30 years but often skip meals for weeks. Corn snakes eat reliably and live 10-15+ years, though they escape enclosures far more easily.",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Ball python or corn snake? The differences in feeding reliability, humidity needs, escape risk, and lifespan commitment - not just which one looks calmer at the pet store.",
     "date": "2026-07-08",
@@ -4723,7 +4723,7 @@
       },
       {
         "q": "Which snake lives longer, a ball python or a corn snake?",
-        "a": "Ball pythons, often by a decade or more. A well-kept ball python commonly lives 20 to 30 years in captivity. Corn snakes typically live 15 to 20 years. Both are a genuine long-term commitment, but a ball python is the bigger one."
+        "a": "Ball pythons, often by a decade or more. A well-kept ball python commonly lives 20 to 30 years in captivity. Corn snakes typically live 10 to 15 years, with a captive record just over 32. Both are a genuine long-term commitment, but a ball python is the bigger one."
       },
       {
         "q": "Which is calmer to handle, a ball python or a corn snake?",
@@ -5251,7 +5251,7 @@
     "slug": "bearded-dragon-handling-guide",
     "title": "How to Handle a Bearded Dragon Without Stressing It Out",
     "seoTitle": "How to Handle a Bearded Dragon Correctly",
-    "seoDescription": "Wait 7-14 days before first handling a new bearded dragon, then start with 5-10 minute sessions. A blackening beard means stop, that's a stress signal.",
+    "seoDescription": "Wait 7-14 days before first handling a new bearded dragon, then keep sessions near 10-15 minutes so it stays warm. A blackening beard means stop.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Bearded dragons are one of the most handleable pet lizards, but getting the timing, grip, and body language right early is what builds a dragon that enjoys it.",
@@ -5283,15 +5283,15 @@
       },
       {
         "q": "How often can I handle my bearded dragon?",
-        "a": "Once acclimated and eating normally, daily short sessions are fine and help build trust. Start at 5 to 10 minutes and increase gradually. Unlike some reptiles, there's no strict weekly cap, bearded dragons generally tolerate frequent, gentle interaction well."
+        "a": "Once it has settled and is eating normally, a short session every day is fine and builds trust. Work up gradually to about 10 to 15 minutes. Heat sets the ceiling: a dragon out of its enclosure too long cools down, so a cold room means a shorter session."
       },
       {
         "q": "What's the correct way to pick up a bearded dragon?",
-        "a": "Approach from the side or below, never straight down from above, which mimics a predator. Scoop from underneath, supporting the chest, belly, and all four feet so nothing is left dangling. An unsupported foot is what makes a calm dragon suddenly feel difficult to hold."
+        "a": "Let it see your hand coming and never grab it by surprise. Use both hands to lift from underneath, with the chest, belly and all four legs supported, and hold it without squeezing."
       },
       {
         "q": "What does it mean if my bearded dragon's beard turns black?",
-        "a": "A darkening or black beard is a stress or agitation signal, along with body flattening, puffing up, open-mouth gaping, and arm-waving. None of these are dangerous on their own, but they mean the handling session is over."
+        "a": "It is a stress or agitation signal. Other stress signs are darker skin on the back and sides, backing away from your hand, a threat to bite, and struggling. None is dangerous on its own, but each one means the session is over."
       }
     ],
     "relatedProducts": [],
@@ -5300,7 +5300,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -6028,7 +6028,7 @@
     "slug": "betta-fish-handling-guide",
     "title": "How to Handle a Betta Fish (Hint: You Mostly Don't)",
     "seoTitle": "How to Handle a Betta Fish Safely",
-    "seoDescription": "Never handle a betta with bare hands, it strips the protective slime coat instantly. Use a net or cup instead, and float a new bag 15 minutes before release.",
+    "seoDescription": "Never handle a betta with bare hands, it strips the protective slime coat instantly. Use a net or cup, and float a new bag 20 to 30 minutes before release.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Betta fish are not a hands-on pet in the way a guinea pig or a bearded dragon is. The honest answer to how you handle a betta is almost always: you don't, at least not with bare hands.",
@@ -9108,7 +9108,7 @@
       },
       {
         "q": "How long do bristlenose plecos live?",
-        "a": "5 to 10 years with decent care is typical, and well-kept individuals are reasonably often reported at 12 to 14 years. Long commitment for a fish this cheap and this small, worth factoring in before you buy."
+        "a": "5 to 10 years with decent care is typical, and some individuals live longer still. Long commitment for a fish this cheap and this small, worth factoring in before you buy."
       }
     ],
     "relatedProducts": [
@@ -9124,7 +9124,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 4,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
@@ -9248,7 +9248,7 @@
       },
       {
         "q": "How much and how often should I feed a bristlenose pleco?",
-        "a": "Once a day, after lights-out for a nocturnal grazer. Give a wafer or vegetable portion it can clear in a few hours, and pull anything still untouched after 12 hours so it doesn't foul the water."
+        "a": "Once a day, after lights-out for a nocturnal grazer. Give a wafer or vegetable portion it can clear in a few hours, and pull anything still untouched by morning so it doesn't foul the water."
       },
       {
         "q": "Why is my bristlenose pleco not eating or losing weight?",
@@ -9264,7 +9264,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
+    "sourceCount": 4,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
@@ -9435,7 +9435,7 @@
     "faqs": [
       {
         "q": "What size tank does a bristlenose pleco need?",
-        "a": "20 gallons is the practical floor for one adult, though 29 to 30 holds up better long term, since this fish produces a lot of waste for its size. Add about 10 gallons per extra bristlenose."
+        "a": "20 gallons is the practical floor for one adult, though 29 or more holds up better long term, since this fish produces a lot of waste for its size. Size up again for each extra bristlenose."
       },
       {
         "q": "Do bristlenose plecos need driftwood, or is it optional?",
@@ -9467,7 +9467,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 7,
+    "sourceCount": 5,
     "headingCount": 10,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -11020,9 +11020,9 @@
     "path": "/content/guides/cardinal-tetra-cost-guide.mdx",
     "slug": "cardinal-tetra-cost-guide",
     "title": "How Much Does Cardinal Tetra Ownership Really Cost?",
-    "seoTitle": "Cardinal Tetra Price: $1 to $3 Each, Plus $65 to $230 Setup",
-    "seoDescription": "Cardinal tetra cost breakdown: $1-3 per fish, a $100-250 starter setup, and why the school runs 8-10 rather than 6.",
-    "lastUpdated": "2026-09-14",
+    "seoTitle": "Cardinal Tetra Price: About $3 Each, Plus $65 to $230 Setup",
+    "seoDescription": "Cardinal tetra cost breakdown: about $3 per fish, a $100-250 starter setup, and why the school runs 8-10 rather than 6.",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Cardinal tetras cost about the same as their neon tetra cousins, but they're typically kept in a slightly bigger school, and a real Amazon fishery of wild-caught fish sits behind part of the price.",
     "date": "2026-09-05",
@@ -11049,7 +11049,7 @@
     "faqs": [
       {
         "q": "How much does a cardinal tetra cost?",
-        "a": "Most cardinal tetras run $1 to $3 each depending on the retailer, very close to neon tetra pricing. Since this is a schooling species, budget for a group of 8 to 10 or more rather than a single fish, that's roughly $8 to $30 for a starting school."
+        "a": "Around $3 each online, and the per-fish price drops in bigger packs. You buy a school, not one fish: 8 to 10 comes to roughly $25 to $30."
       },
       {
         "q": "What does a basic cardinal tetra tank setup cost?",
@@ -11083,7 +11083,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 5,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -11167,7 +11167,7 @@
     "title": "Cardinal Tetra Feeding: Schedule, Diet, and the Rule That Prevents an Outbreak",
     "seoTitle": "What Do Cardinal Tetras Eat? Diet and Feeding Schedule",
     "seoDescription": "Cardinal tetra feeding guide: micro-pellet portions, a twice-daily schedule, and the removal rule that guards against an incurable disease.",
-    "lastUpdated": "2026-09-06",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Cardinal tetra feeding is simple in principle, small food in small amounts, but the rule that protects the school has nothing to do with portions: never leave a dead fish in the tank.",
     "date": "2026-09-06",
@@ -12343,7 +12343,7 @@
       },
       {
         "q": "What GH and KH do cherry shrimp need?",
-        "a": "The floor is GH 6 degrees (about 110 ppm) and KH 2 degrees (about 40 ppm). The tighter target is roughly 6 to 8 dGH and 2 to 4 dKH, the range that most reliably supports a full, hard molt rather than a soft or failed one."
+        "a": "The floor is GH 6 degrees (about 110 ppm) and KH 2 degrees (about 40 ppm). Below that floor a shrimp has too few minerals to harden a new shell, which is where soft and failed molts come from. Hold pH between 6.5 and 7.5."
       },
       {
         "q": "What temperature do cherry shrimp need, and do they need a heater?",
@@ -12373,7 +12373,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 5,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
@@ -14676,7 +14676,7 @@
     "title": "How Much Does a Corn Snake Really Cost?",
     "seoTitle": "Corn Snake Price: $25 to $70, Plus $250 to $600 Setup",
     "seoDescription": null,
-    "lastUpdated": "2026-09-07",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Corn snakes are one of the most budget-friendly beginner snakes: $250-600 for a solid setup, then low costs for the two decades after.",
     "date": "2026-07-11",
@@ -14707,7 +14707,7 @@
       },
       {
         "q": "Is a thermostat necessary for a corn snake?",
-        "a": "Yes, non-optional. A heat mat running without one can reach around 120°F, hot enough to cause a serious burn. Budget $30 to $100 for a quality thermostat as part of your core setup, not an add-on."
+        "a": "Yes, non-optional. A heat mat running without one can get hot enough to cause a serious burn. Budget $30 to $100 for a quality thermostat as part of your core setup, not an add-on."
       },
       {
         "q": "What does a corn snake cost per year after the initial setup?",
@@ -14715,7 +14715,7 @@
       },
       {
         "q": "What's the total cost over a corn snake's lifetime?",
-        "a": "15 to 20 years is typical in captivity, and the oldest verified corn snake reached 32. Across ten years, setup and every running expense together usually total $800 to $2,000, which is cheap for a reptile you keep that long."
+        "a": "10 to 15 years is common in captivity, a well-kept snake can pass 20, and the oldest on record reached 32. Ten years of setup plus running costs comes to roughly $2,250 to $5,600, which is still modest for a reptile you keep that long."
       }
     ],
     "relatedProducts": [
@@ -14728,7 +14728,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 5,
     "headingCount": 6,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -15061,8 +15061,8 @@
     "slug": "corn-snake-tank-setup-guide",
     "title": "Corn Snake Enclosure Setup: Floor Space, a Mandatory Thermostat, and a Humidity Debate",
     "seoTitle": "Corn Snake Enclosure Setup Guide",
-    "seoDescription": "Corn snake setup: a 40-gallon (36x18x18 in) minimum, a mandatory thermostat since unregulated heat mats can hit 120F, and an 85-88F warm side.",
-    "lastUpdated": "2026-09-08",
+    "seoDescription": "Corn snake setup: a 40-gallon (36x18x18 in) minimum, a mandatory thermostat since unregulated heat mats can burn, and an 85-90F warm side.",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Corn snakes are a forgiving species to set up correctly, with one non-negotiable exception: whatever heat source you choose, it needs a thermostat.",
     "date": "2026-07-11",
@@ -15093,15 +15093,15 @@
       },
       {
         "q": "Is a thermostat required for a corn snake enclosure?",
-        "a": "Yes, with zero exceptions. An unregulated heat mat can reach roughly 120°F, hot enough to burn a snake badly. Put the probe where the snake spends its time, in the warm hide or on the substrate, not taped to the mat."
+        "a": "Yes, with zero exceptions. A heat mat left unregulated can get hot enough to burn a snake badly. Sit the thermostat probe on the warm-side surface where the snake lies."
       },
       {
         "q": "What humidity level does a corn snake need?",
-        "a": "Sources disagree, some recommend 65-75%, others cite 40-60% as sufficient, raised to 60-70% during shedding. Either range works in practice, what matters more is consistency and a dedicated humid hide with damp sphagnum moss during shed cycles."
+        "a": "Sources disagree, some recommend 65-75%, others cite 40-60% as sufficient, raised to around 70% during shedding. Either range works in practice, what matters more is consistency and a dedicated humid hide with damp sphagnum moss during shed cycles."
       },
       {
         "q": "Does a corn snake need UVB?",
-        "a": "Not required. Corn snakes have been kept for decades without it, though it is increasingly seen as beneficial long term. If you add one, use a low-output T5 targeting a UVI around 2.0 to 3.0."
+        "a": "Not required. Corn snakes have been kept for decades without it, though it is increasingly seen as beneficial long term. If you add one, a 5.0 or 6% T5 HO bulb over the warm side should give a basking-area UVI of no more than 2.0 to 3.0."
       }
     ],
     "relatedProducts": [
@@ -15116,7 +15116,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 5,
     "headingCount": 8,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1248,
@@ -15201,7 +15201,7 @@
     "title": "How Much Does Corydoras Catfish Ownership Really Cost?",
     "seoTitle": "Corydoras Catfish Price: $3 to $30, Plus $150 to $215 Setup",
     "seoDescription": "Corydoras catfish cost $3-30 each, but budget for a school of six: $150-215 upfront setup plus $10-20 a month in food and supplies.",
-    "lastUpdated": "2026-07-27",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Corydoras catfish are inexpensive on their own, but the budgeting consideration isn't the individual fish, it's that you need to buy a whole school, not one or two.",
     "date": "2026-07-27",
@@ -15348,7 +15348,7 @@
     "title": "Corydoras Catfish Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Corydoras Catfish Eat? Diet and Feeding Schedule",
     "seoDescription": "Corydoras aren't an algae cleanup crew. Real feeding schedule, sinking food needs, and the myth that quietly starves this fish.",
-    "lastUpdated": "2026-09-15",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Corydoras have a reputation as an algae-eating cleanup crew that isn't accurate, and believing it is one of the easiest ways to accidentally starve a fish that otherwise asks very little of you.",
     "date": "2026-08-10",
@@ -17288,7 +17288,7 @@
       },
       {
         "q": "How often do discus tanks need water changes?",
-        "a": "More often than most community tanks, weekly changes in the 25 to 50% range are commonly recommended, and some serious keepers change water every 2 to 3 days. This is the single biggest recurring task with this species and matters more to long-term health than almost any other setup choice."
+        "a": "More often than most community tanks. Change 10 to 25% weekly, and more whenever nitrate nears 20 ppm unplanted or 40 ppm planted. This is the single biggest recurring task with this species and matters more to long-term health than almost any other setup choice."
       }
     ],
     "relatedProducts": [
@@ -17307,7 +17307,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 7,
+    "sourceCount": 6,
     "headingCount": 12,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1200,
@@ -17927,7 +17927,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 5,
     "headingCount": 11,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -22275,7 +22275,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 7,
+    "sourceCount": 6,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -22514,7 +22514,7 @@
       },
       {
         "q": "Why are ghost shrimp so sensitive to copper?",
-        "a": "Like all freshwater shrimp, their gills and exoskeleton absorb dissolved metals efficiently, and copper is toxic to them at concentrations that barely register for fish. Commonly cited safety thresholds put copper at roughly 0.03 mg/L or lower as the ceiling for invertebrates, and copper-based fish medications, some plant fertilizers, and old copper plumbing are all realistic exposure routes. Keep it as close to zero as possible and confirm any medication or fertilizer is explicitly invertebrate-safe before using it."
+        "a": "Like all freshwater shrimp, their gills and exoskeleton absorb dissolved metals efficiently, and copper is toxic to them at concentrations that barely register for fish. In a 2014 toxicity study on a related freshwater prawn, 0.0313 mg/L of copper killed half the animals within four days, and the researchers put a safe level nearer 0.003 mg/L, and copper-based fish medications, some plant fertilizers, and old copper plumbing are all realistic exposure routes. Keep it as close to zero as possible and confirm any medication or fertilizer is explicitly invertebrate-safe before using it."
       },
       {
         "q": "What do I do if the tank tests positive for copper?",
@@ -22544,7 +22544,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 9,
+    "sourceCount": 6,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -22628,7 +22628,7 @@
     "slug": "giant-millipede-cost-guide",
     "title": "How Much Does a Giant Millipede Really Cost? (And a Supply Note Worth Knowing)",
     "seoTitle": "Giant Millipede Price: $75 to $150, Plus $75 to $150 Setup",
-    "seoDescription": "Giant millipede cost breakdown: $75-150+ per animal due to a USDA import embargo, a $75-150 setup, minimal monthly costs, and up to 10 years in captivity.",
+    "seoDescription": "Giant millipede cost breakdown: $75-150+ per animal because USDA permits keep imports scarce, a $75-150 setup, minimal monthly costs, and 5-7+ years of life.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Giant African millipedes are inexpensive to keep month to month, though the animal itself costs more than you might expect for an invertebrate, and there's a real reason behind that.",
@@ -22656,7 +22656,7 @@
     "faqs": [
       {
         "q": "Why does a giant millipede cost more than other invertebrates?",
-        "a": "Imports are under a USDA embargo, prompted by concerns about a potentially damaging mite species found on imported animals, and bringing one into the country or across state lines requires a USDA plant pest permit. So the animals for sale in the US are captive-bred or older stock instead of fresh imports. Limited supply, not care difficulty, is what pushes the price up."
+        "a": "There is no import ban, but bringing one into the country or across state lines requires a USDA plant pest permit, and the mites wild animals carry are much of the reason imports have dried up. So the animals for sale in the US are captive-bred, from a species that has never bred well in captivity. Limited supply, not care difficulty, is what pushes the price up."
       },
       {
         "q": "How much does a giant millipede cost upfront?",
@@ -22672,7 +22672,7 @@
       },
       {
         "q": "How long do giant millipedes live?",
-        "a": "5 to 7 years in the wild, up to 10 in captivity. That is remarkable longevity for an invertebrate, well past a praying mantis, jumping spider, or hissing cockroach, so treat it as a multi-year commitment and not a short-lived novelty pet."
+        "a": "Typically 5 to 7 years in captivity, and some pass a decade. That is remarkable longevity for an invertebrate, well past a praying mantis, jumping spider, or hissing cockroach, so treat it as a multi-year commitment and not a short-lived novelty pet."
       },
       {
         "q": "Are there legal restrictions that affect price or availability?",
@@ -22950,7 +22950,7 @@
       },
       {
         "q": "What's the underlying pattern behind most giant millipede health problems?",
-        "a": "Low humidity causes both dehydration and failed molts, which account for most serious problems in this species. Excess wetness combined with poor airflow invites mite overgrowth and necrotic lesions instead. Balanced humidity, more than anything else, is the key to this species' health."
+        "a": "Low humidity causes both dehydration and failed molts, which account for most serious problems in this species. Soggy substrate and stale air cause the opposite set of problems: mite build-up and necrotic lesions. Get the moisture balance right and most of this list never happens."
       }
     ],
     "relatedProducts": [],
@@ -22959,8 +22959,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
-    "headingCount": 11,
+    "sourceCount": 5,
+    "headingCount": 10,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -23065,7 +23065,7 @@
       },
       {
         "q": "What's the best substrate for a giant millipede?",
-        "a": "4 to 6 inches of pesticide-free organic topsoil mixed with coconut fiber, plus decaying hardwood and hardwood leaf litter; oak and beech both work. No softwoods, since pine and cedar resins are toxic here, and nothing pesticide-treated."
+        "a": "4 to 6 inches of pesticide-free organic topsoil, plus decaying hardwood and hardwood leaf litter; oak and beech both work. No coconut fiber, which is not food for a millipede and has been linked to fatal impactions. No softwoods, since pine and cedar resins are toxic here, and nothing pesticide-treated."
       },
       {
         "q": "Does a giant millipede enclosure need special lighting?",
@@ -23088,7 +23088,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -23481,7 +23481,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 5,
     "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -29384,7 +29384,7 @@
       },
       {
         "q": "How long does a jumping spider live, and how does that affect budgeting?",
-        "a": "Males typically get 8 to 12 months after maturity, females 1.5 to 3 years. Expect 1 to 3 years overall in captivity, which keeps the total cost of ownership small and the commitment short."
+        "a": "Males usually last only a few months past maturity, while females live considerably longer. Plan on one to two years in captivity, a little more for a well-kept female, which keeps the total cost of ownership small and the commitment short."
       }
     ],
     "relatedProducts": [
@@ -29399,7 +29399,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 2,
     "headingCount": 10,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -29581,11 +29581,11 @@
       },
       {
         "q": "What's the right way to handle a jumping spider?",
-        "a": "Let it walk onto your hand and off again on its own, without grabbing. Work low and over something soft: these spiders are fragile enough that even a short fall can rupture the abdomen and kill them."
+        "a": "Let it walk onto your hand and off again on its own, without grabbing. Work low and over something soft: these spiders are fragile enough that a fall onto a hard surface can badly injure them."
       },
       {
         "q": "What are the most common handling mistakes with this species?",
-        "a": "Dropping or injuring a spider during handling is by far the most common way keepers accidentally harm this species. Using an unmonitored heat mat and letting the enclosure run too dry are the other two common, preventable mistakes."
+        "a": "Dropping or injuring the spider while handling it, running a heat mat with no thermostat, and letting the enclosure dry out. Each one is preventable."
       },
       {
         "q": "How is a jumping spider different from a web-building spider?",
@@ -29613,10 +29613,10 @@
     "slug": "jumping-spider-health-issues-guide",
     "title": "Common Jumping Spider Health Issues",
     "seoTitle": "Jumping Spider Health Issues: Signs & Causes",
-    "seoDescription": "Jumping spider health issues: dehydration is the leading cause of death in captivity, plus retained molt, silk impaction, and pesticide exposure signs.",
+    "seoDescription": "Jumping spider health issues: dehydration is one of the commonest killers in captivity, plus retained molt, silk impaction, and pesticide exposure signs.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
-    "excerpt": "Jumping spiders are hardy when humidity stays consistent, and the large majority of health problems in this species trace back to that one factor.",
+    "excerpt": "Jumping spiders are hardy when humidity stays consistent, and most health problems in this species trace back to that one factor.",
     "date": "2026-07-19",
     "category": "Invertebrates",
     "categories": [
@@ -29641,11 +29641,11 @@
     "faqs": [
       {
         "q": "What's the most common health problem in pet jumping spiders?",
-        "a": "Dehydration, the leading cause of death in captive jumping spiders. Curled legs and lethargy are the signs. The fix is 50 to 60% humidity for a regal, plus a damp cotton ball touching the front legs of a spider already showing signs."
+        "a": "Dehydration, one of the commonest killers of captive jumping spiders. Look for a shriveled abdomen, curled legs and lethargy. Hold a regal at 50 to 60% humidity, and move a spider already showing signs into a small humid ICU with a damp cotton ball to drink from."
       },
       {
         "q": "What happens if a jumping spider gets stuck during a molt?",
-        "a": "It can lose limbs or die. That is retained molt, or dysecdysis, and it comes from insufficient humidity in the lead-up to the molt. Once a molt has failed, there's little that can be done, so never feed or disturb a spider in or approaching one."
+        "a": "It can lose limbs or die. That is retained molt, or dysecdysis, and it comes from insufficient humidity in the lead-up to the molt. Raise humidity before a molt, never feed or disturb a spider in or approaching one, and take a molt that stays stuck after humidity is corrected to a vet."
       },
       {
         "q": "What is silk impaction?",
@@ -29669,7 +29669,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -29708,11 +29708,11 @@
     "faqs": [
       {
         "q": "What size enclosure does a jumping spider need?",
-        "a": "About 4 by 4 by 7 inches, oriented vertically, is the minimum for an adult, and 8 to 10 inches tall gives real climbing room. Arboreal species: height counts for more than floor."
+        "a": "Roughly 8 inches (20 cm) of height for an adult, oriented vertically, with smaller enclosures for spiderlings. Arboreal species: height counts for more than floor."
       },
       {
         "q": "What temperature and humidity does a jumping spider need?",
-        "a": "72 to 82F suits this species well, and normal room temperature is usually fine without any supplemental heat. Target 50 to 60% humidity for Phidippus species like the regal jumping spider, misting one corner every 2 to 3 days with dechlorinated water."
+        "a": "69 to 83F suits this species well, and normal room temperature is usually fine without any supplemental heat. Target 50 to 60% humidity for Phidippus species like the regal jumping spider, misting one corner every few days with dechlorinated water."
       },
       {
         "q": "Can I house more than one jumping spider together?",
@@ -29720,11 +29720,11 @@
       },
       {
         "q": "What substrate is best for a jumping spider enclosure?",
-        "a": "Coconut fiber, or coconut fiber blended with sphagnum moss, an inch or two deep, which buffers humidity between mistings. No sand or vermiculite, and bare paper towel dries out too fast for long-term use."
+        "a": "Coconut fiber, alone or blended with moss. Damp substrate holds moisture, so the enclosure swings less between mistings."
       },
       {
-        "q": "Does a jumping spider need UVB lighting?",
-        "a": "No, UVB is not required for this species. It does need bright ambient light on a normal 12-hour day and night cycle, since it's diurnal and relies on vision to hunt."
+        "q": "What lighting does a jumping spider need?",
+        "a": "Bright light for 12 hours a day, then 12 dark. It hunts by day and by sight, and a timed daylight lamp is the easy way to give it that."
       }
     ],
     "relatedProducts": [
@@ -29739,7 +29739,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
+    "sourceCount": 3,
     "headingCount": 10,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -30329,7 +30329,7 @@
       },
       {
         "q": "Which lives longer, a koi or a goldfish?",
-        "a": "Koi, often considerably. Koi typically live 25 to 50 years, with some individuals reported reaching 100. Goldfish commonly live 10 to 15 years, though well-documented individuals have lived past 40, the record-holding pet goldfish lived to 43."
+        "a": "Koi, often considerably. Koi typically live 25 to 50 years, with some individuals reported reaching 100. Goldfish commonly live 10 to 15 years, and some have been reported past 30 with good care."
       },
       {
         "q": "Can koi and goldfish live in the same pond?",
@@ -30349,7 +30349,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 7,
+    "sourceCount": 6,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
@@ -32162,7 +32162,7 @@
     "title": "Hissing Cockroach Enrichment: Somebody Built Them a Welfare Framework",
     "seoTitle": "Hissing Cockroach Enrichment Guide",
     "seoDescription": "Researchers applied the Animal Welfare Assessment Grid to group-housed Gromphadorhina cockroaches, one of very few invertebrate welfare frameworks in existence.",
-    "lastUpdated": "2026-09-15",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "A 2023 paper assessed welfare in captive group-housed Gromphadorhina using a validated monitoring tool. Almost no invertebrate in the pet trade has that.",
     "date": "2026-09-04",
@@ -33114,7 +33114,7 @@
     "title": "Milk Snake vs. Corn Snake: Which Beginner Snake Actually Differs More",
     "seoTitle": "Milk Snake vs. Corn Snake: Full Comparison",
     "seoDescription": "Milk snake vs corn snake: real differences in range, mimicry, pattern, and care, compared side by side.",
-    "lastUpdated": "2026-09-14",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Milk snake or corn snake? The differences in range, color pattern origin, and why one of them gets mistaken for a venomous species and the other doesn't, since both are excellent beginner snakes.",
     "date": "2026-09-04",
@@ -33397,7 +33397,7 @@
     "title": "Mollies Aren't Handled Either, But They Do Need a Breeding Plan",
     "seoTitle": "How to Handle Molly Fish (and Manage Breeding)",
     "seoDescription": "How molly fish are actually handled (rarely), how they breed, sexing by gonopodium and gravid spot, and how to manage a mixed-sex tank.",
-    "lastUpdated": "2026-09-15",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Mollies are an observation pet, not a hands-on one. What matters is understanding how readily this livebearer breeds, since that determines whether your tank stays the size you set it up to be.",
     "date": "2026-09-07",
@@ -37047,7 +37047,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 7,
+    "sourceCount": 6,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -37640,7 +37640,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 5,
     "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -43309,7 +43309,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 10,
+    "sourceCount": 6,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -44809,7 +44809,7 @@
     "title": "How Much Does Swordtail Fish Ownership Really Cost?",
     "seoTitle": "Swordtail Price: $3 to $25 Each, Plus $115 to $190 Setup",
     "seoDescription": "Full swordtail fish cost breakdown: $3-25 per fish, a $115-190 starter setup, modest upkeep, and why sizing up past 20 gallons pays off.",
-    "lastUpdated": "2026-09-11",
+    "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Swordtails cost about the same per fish as a molly, but they're the common livebearer that outgrows a 20-gallon starting point the fastest.",
     "date": "2026-09-11",
@@ -44840,7 +44840,7 @@
       },
       {
         "q": "What does a basic swordtail tank setup cost?",
-        "a": "A tank, filter, heater, and live plants commonly runs $115 to $190 using a 20-gallon long tank as the base. That 20-gallon figure is the genuine floor for a small trio though, most direct retailers and care sheets recommend stepping up to a 29 or 30-gallon tank as the more realistic starting point, since swordtails are noticeably more active swimmers than a molly or platy, which pushes the cost somewhat past the table above."
+        "a": "A tank, filter, heater, and live plants commonly runs $115 to $190 using a 20-gallon long tank as the base. That 20-gallon figure is the floor for a small trio, but a group wants 30 gallons or more, since swordtails are noticeably more active swimmers than a molly or platy, which pushes the cost somewhat past the table above."
       },
       {
         "q": "What are the ongoing costs of keeping swordtails?",
@@ -45178,19 +45178,19 @@
     "faqs": [
       {
         "q": "What size tank does a swordtail need?",
-        "a": "20 gallons is the genuine floor for a small trio, one male and two or three females, but 29 to 30 gallons is the more realistic starting point that most direct retailers and care sheets recommend, since swordtails are more active, open-water swimmers than a molly or platy. Go long and rectangular over tall, and use a lid, swordtails are capable jumpers."
+        "a": "20 gallons is the genuine floor for a small trio, one male and two or three females, but a group wants 30 gallons or more, on a footprint around 48 by 12 inches, since swordtails are more active, open-water swimmers than a molly or platy. Go long and rectangular over tall, and use a lid, swordtails are capable jumpers."
       },
       {
         "q": "What temperature do swordtails need?",
-        "a": "Tropical, roughly 64 to 82°F, with 72 to 79°F cited most often as the steadier target. Hold it steady rather than chasing a number: keep swings under about 2°F a day. A submersible heater is necessary unless the room stays warm all year."
+        "a": "Tropical, roughly 65 to 82°F, with 75 to 79°F the steadier target. Hold it steady rather than chasing a number, and avoid sudden swings. A submersible heater is necessary unless the room stays warm all year."
       },
       {
         "q": "What water chemistry do swordtails need?",
-        "a": "pH 7.0 to 8.4 in moderately hard to hard water, commonly given as 12 to 30 dGH. Soft tap water can be brought up with crushed coral or a commercial buffering product."
+        "a": "pH 7.0 to 8.4 in moderately hard to hard water, roughly 10 to 25 dGH. Soft tap water can be brought up with crushed coral or a commercial buffering product."
       },
       {
         "q": "Do swordtail tanks need a secure lid?",
-        "a": "Yes. Swordtails are well documented as capable jumpers, retailers selling this exact species specifically warn that the tank needs adequate cover, and hobbyist reports describe fish escaping through gaps as small as a few inches. A tight-fitting lid isn't optional the way it might be for a slower species."
+        "a": "Yes. Swordtails are powerful jumpers, and hobbyist reports describe fish escaping through gaps as small as a few inches. A tight-fitting lid isn't optional the way it might be for a slower species."
       },
       {
         "q": "What kind of filtration is best for a swordtail tank?",
@@ -45212,7 +45212,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 8,
+    "sourceCount": 5,
     "headingCount": 11,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
@@ -45307,7 +45307,7 @@
     "faqs": [
       {
         "q": "How much does a tarantula cost upfront?",
-        "a": "The spider itself runs $25 to $100 for common beginner species, a Chilean rose hair or curly hair typically lands at $20 to $50. Add the enclosure, substrate, hide, decor, and a water dish, and most first-time setups land in the $70 to $300 range before the spider itself."
+        "a": "The spider itself runs $25 to $100 for common beginner species, a curly hair or pink toe typically lands at $30 to $40 and a Chilean rose hair nearer $60 to $70. Add the enclosure, substrate, hide, decor, and a water dish, and most first-time setups land in the $70 to $300 range before the spider itself."
       },
       {
         "q": "What are the ongoing costs of keeping a tarantula?",
@@ -45332,7 +45332,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 9,
+    "sourceCount": 6,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1600,

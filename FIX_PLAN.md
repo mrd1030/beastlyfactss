@@ -1906,9 +1906,22 @@ Added 2026-09-25 from the wave 2 changes:
 - [ ] Leopard gecko (profile, line 285): "15 to 20 years typical, up to 25 to 30". Site: 10 to 20 years, some reaching 25 to 30 (hub, cost guide, fun facts; PetMD, LafeberVet).
 - [ ] Russian tortoise (outdoor pen, pages_2.html:89): walls "at least 12 in above ground". Site: about 2 ft high with an inward lip of about 4 in, buried at least 12 in, mesh cover (russian-tortoise-handling-guide).
 
+Added 2026-09-25 from the wave 3a changes:
+- [ ] Betta (betta-fish.html:794): float the bag "about 15 minutes". Site: 20 to 30 minutes, slow drip only when the temperature gap is over 10°F or the chemistry differs (aquarium-stocking-and-tankmates-guide; Merck, UF/IFAS FA119).
+- [ ] Goldfish (pages_1.html:414, pages_3.html:147): float "15 to 20 minutes". Site: 20 to 30 minutes (same guide; Merck).
+- [ ] Goldfish (pages_1.html:152): goldfish and koi "cannot interbreed". Site: they can be crossed, mostly by artificial spawning, and first-generation hybrid males examined were sterile (koi-vs-goldfish-guide; Gomelsky et al. 2012).
+- [ ] Goldfish (pages_2.html:14, 16): adults "1 to 2 a day", sources disagree. Site: one small meal a day eaten in under 2 minutes, which may be split in two; juveniles 2 to 3 (goldfish-feeding-guide; PetMD).
+- [ ] Goldfish (pages_2.html:336): fin rot "an antibacterial treatment is warranted". Site: no home antibiotic dose; a spreading case is a vet case (goldfish-health-issues-guide; Aquatic Veterinary Services).
+- [ ] Goldfish (pages_3.html:168): quarantine "2 to 4 week minimum". Site: 30 days as the floor (goldfish-cost-guide, hub; AVMA, Merck). Also clashes with the package's own 30 to 60 days (pages_1.html:409, pages_3.html:478).
+- [ ] Goldfish (pages_1.html:190, 359; pages_3.html:17, 105, 422): "fine sand or smooth rounded gravel". Site: bare bottom, fine sand, or gravel only at 1/2 inch and up, since pea gravel lodges in the mouth (goldfish-tank-setup-guide; Wildgoose).
+- [ ] Tarantula: no quarantine for a new spider. Hub now says at least three months apart. Add it.
+
 **Package better than the site (fix the site, not the package):**
 - [x] Axolotl pH: package "7.4 to 7.6" (LafeberVet) vs hub and tank setup guide "7.4 to 7.8".
 - [x] Hamster torpor: package "below 41°F (5°C)" (Merck, LafeberVet) vs hub "under 60°F risks torpor".
+
+Added 2026-09-25 from the wave 3a changes:
+- [x] Tarantula eye first aid: package says do not flush an eye (NIH StatPearls); tarantula-handling-guide said the first aid "covers tape, rinsing". Handling guide sentence fixed.
 
 **Package and site disagree, no source settles it yet (research before changing either):**
 - [ ] Rabbit lifespan: package 7 to 10 indoors, outdoor about 2; site 8 to 12, some to 14, outdoor 3 to 5.
@@ -1929,6 +1942,15 @@ Added 2026-09-25 from the wave 2 changes:
 - [ ] Crested gecko price (lines 302, 988): package normals "$50 to $200", rare "$500 to $1,000 or more"; site normals under $100, standard morphs to about $200, rare upward of $1,000 (crested-gecko-cost-guide).
 
 No differences: budgie.
+
+Added 2026-09-25 from the wave 3a changes:
+- [ ] Betta sorority (betta-fish.html:1019): package "not for beginners, frequently ends in serious injury"; site allows a sorority in at least 10 gallons (betta-fish-handling-guide; PetMD).
+- [ ] Betta tankmates (betta-fish.html:1016, 1017): package ghost shrimp 10 gal and up, schooling fish and corydoras 15 to 20 gal; site lists them with no size above the 5 gallon floor (betta-fish-handling-guide; PetMD).
+- [ ] Betta setup cost (betta-fish.html:310): package $157 to $336; site $100 to $300.
+- [ ] Goldfish costs (pages_1.html:135, 139; pages_3.html:113): package equipment $208 to $500, monthly $13 to $32; site $150 to $400, $10 to $30.
+- [ ] Tarantula humidity (tarantula.html:465, 1249): package leaves 40 to 75% unsettled; site picks 40 to 60% for dry-adapted species like the rose hair.
+- [ ] Tarantula juvenile feeding (tarantula.html:543): package frames 4 to 7 days vs 7 to 14 as a disagreement; site gives them as one schedule by age. Wording only.
+- [ ] Tarantula oral nematodes (tarantula.html:1124): site adds wild-caught risk, collection spread and more signs (palps tucked, wet sternum, sweet smell); package has the short version.
 
 ## 6. Site items found during the package check
 
