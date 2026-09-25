@@ -33,7 +33,7 @@ export const turtleGuides = [
         { label: "Temperature", value: "Basking 90 to 100°F, cool end 70 to 75°F, and no overnight heat as long as the enclosure holds 65 to 70°F.", source: "box-turtle-tank-setup-guide" },
         { label: "Humidity", value: "60 to 80%, misted daily, with a shallow dish big enough to soak in. Hatchlings dehydrate fast and need consistently moist substrate.", source: "box-turtle-tank-setup-guide" },
         { label: "Substrate", value: "Wood chips or a topsoil and coconut fiber mix, 2 to 3 inches deep at the floor and ideally deep enough to burrow fully out of sight. No gravel, sand, additive potting soil, walnut shell, or cat litter.", source: "box-turtle-tank-setup-guide" },
-        { label: "UVB", value: "A 6% T5 HO in a reflective fixture at a UV index of 3.0 to 4.0, around 14 hours a day in summer tapering to about 10 in winter.", source: "box-turtle-tank-setup-guide" },
+        { label: "UVB", value: "A T5 HO in a reflective fixture, set by a basking-area UV index of 3.0 to 4.0 rather than the rating on the box, around 14 hours a day in summer tapering to about 10 in winter.", source: "box-turtle-tank-setup-guide" },
         { label: "Diet", value: "Roughly half animal, half plant: earthworms, insects, occasional lean protein, with leafy greens and vegetables.", source: "box-turtle-tank-setup-guide" },
         { label: "Feeding and calcium", value: "Juveniles daily, adults every other day to every three days, with every other day the safe default. Indoors, calcium and D3 dusted on two or three times a week.", source: "box-turtle-feeding-guide" },
         { label: "Handling", value: "Both hands under the full body, short sessions, never dropped, shaken, or flipped. Hiding with lethargy and reduced appetite is a vet visit, not shyness.", source: "box-turtle-handling-guide" },
@@ -68,8 +68,9 @@ export const turtleGuides = [
     ],
     buyList: [
       "36x18x18 inch enclosure, or an outdoor pen with the fencing buried",
-      "T5 HO UVB fixture and bulb (6% strength, or a Zoo Med ReptiSun 5.0 T5 HO)",
+      "T5 HO UVB fixture and bulb, mounted for a UV index of 3.0 to 4.0 at the basking spot",
       "Basking bulb and a basking dome fixture",
+      "Thermostat",
       "Deep topsoil and coconut fiber substrate, or wood chips",
       "Large soak-able water dish",
       "Hides, cork, and leaf litter for cover",
@@ -161,6 +162,7 @@ export const turtleGuides = [
       "Large basking platform that lets the turtle dry off completely",
       "Linear T5 HO UVB fixture and bulb",
       "Basking heat lamp and dome fixture",
+      "Thermostat",
       "Submersible water heater",
       "Water quality test kit, for ammonia and nitrite at zero",
       "A secure lid",
@@ -282,15 +284,15 @@ export const turtleGuides = [
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
-    // encyclopedia entry, which no deep dive repeats. Hygiene cites the shared
-    // reptile hygiene guide in the sidebar's Health and More list. Reconciled
+    // encyclopedia entry, which no deep dive repeats. Hygiene and quarantine cite
+    // the shared guides in the sidebar's Health and More list. Reconciled
     // 2026-09-08 after the Russian tortoise set test (docs/READER_REVIEWS.md).
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Legal", value: "One state, Colorado, bans it, four require a permit, four attach a condition, and Hawaii, which bans almost everything, expressly allows it. Forty-three states place no rule on it at all.", source: "russian-tortoise-legal-guide" },
-        { label: "Enclosure", value: "A 4x2x2 ft tortoise table, about 8 square feet, is the absolute indoor minimum, genuinely a minimum rather than a goal. Sources disagree on the target: at least 12 square feet, or our own functional recommendation of roughly 7x3.5 ft, about 24 square feet.", source: "russian-tortoise-tank-setup-guide" },
+        { label: "Enclosure", value: "A 4x2x2 ft tortoise table, about 8 square feet, is the absolute indoor minimum, genuinely a minimum rather than a goal. Aim for at least 12 square feet, and better still roughly 7 ft by 3.5 ft, about 24 square feet.", source: "russian-tortoise-tank-setup-guide" },
         { label: "Temperature", value: "Basking 95 to 100°F at the surface, cool side in the 70s°F. Night drops to about 60°F are fine, and most homes need no supplemental night heat.", source: "russian-tortoise-tank-setup-guide" },
         { label: "Humidity", value: "Ambient 30 to 50%, low and dry for this arid species, but a moist hide lined with peat moss for a humid microclimate to hydrate and shed in.", source: "russian-tortoise-tank-setup-guide" },
         { label: "UVB", value: "A 10 to 12% T5 HO tube, covering a third to half the enclosure, for a basking-area UVI near 3.0 to 4.0. Coil and compact bulbs aren't adequate.", source: "russian-tortoise-tank-setup-guide" },
@@ -301,6 +303,7 @@ export const turtleGuides = [
         { label: "Budget", value: "$50 to $150 for a hatchling ($225 to $400 older captive-bred). $372 to $775 to set up. $365 to $715 a year.", source: "russian-tortoise-cost-guide" },
         { label: "Adult size", value: "5 to 10 inches." },
         { label: "Lifespan", value: "40 years or more typical, some individuals reaching 50-plus.", source: "russian-tortoise-cost-guide" },
+        { label: "Quarantine", value: "A minimum of six months, completely separate from any other chelonian, with lab testing. Two or three weeks is not long enough for the herpesvirus.", source: "chelonian-herpesvirus-quarantine-guide" },
         { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the tortoise out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
         { label: "Soaking", value: "Juveniles 10 to 15 minutes twice a week, adults about once a week, in lukewarm water no deeper than the elbows, and never unattended. Watch for urates: white and soft is hydrated, dry and gritty is not.", source: "tortoise-soaking-guide" },
       ],

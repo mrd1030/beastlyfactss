@@ -81,7 +81,7 @@ export const birdGuides = [
     tagline: "The cheerful little chatterbox that picks up phrases you never taught it!",
     seoTitle: "Budgie Care Guide: Cage Setup, Feeding, and Health",
     seoDescription: "Budgie care done right from week one: why a wide cage beats a tall one, the pellet share of the diet, taming step by step, and the signs that need a vet today.",
-    funFact: "Budgies can learn to talk and have been known to learn over 1,700 words! The Guinness World Record holder was a budgie named Puck who knew 1,728 words, more than any other bird on record!",
+    funFact: "The largest vocabulary Guinness World Records has credited to any bird belongs to a budgie: Puck, estimated at 1,728 words before his death in 1994.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size and lifespan come from

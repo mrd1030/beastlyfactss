@@ -190,7 +190,7 @@ export const geckoGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Day one", value: "Quarantined away from any reptile you already keep, on paper towel, with its own tools and a fecal exam inside that window.", source: "reptile-quarantine-guide" },
+        { label: "Day one", value: "A new gecko is quarantined 3 to 6 months away from any reptile you already keep, on paper towel, with its own tools and a fecal exam inside that window.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "18x18x24 inches minimum for an adult, 24x24x24 ideal, vertical over floor, one gecko per enclosure. Hatchlings under about 12 grams do better in a smaller grow-out.", source: "gargoyle-gecko-tank-setup-guide" },
         { label: "Temperature", value: "A cool end of 70 to 75°F and a basking spot of 82 to 85°F, from a low-wattage bulb or ceramic emitter on a thermostat. Nights to the mid-60s are fine and 65°F is the floor. The belief that it needs no heat is the most repeated mistake.", source: "gargoyle-gecko-tank-setup-guide" },
         { label: "The ceiling", value: "Air above 86°F is dangerous, lower than almost any lizard in the hobby. Away from sunny windows: room heat is what pushes a gargoyle past it.", source: "gargoyle-gecko-tank-setup-guide" },
@@ -316,7 +316,7 @@ export const geckoGuides = [
         "Weight loss, diarrhea, regurgitation, and lethargy",
         "Swelling, redness, discharge, or a foul odor at the site where a tail dropped",
       ],
-      vetLine: "Dehydration is the fastest-moving danger here and specialist breeders describe it as a genuine fast killer of this species, manageable at home if caught early by raising humidity immediately. MBD can worsen rapidly once it starts and respiratory infection needs prescription antibiotics, so both are vet-now rather than wait-and-see. A dropped tail is usually managed at home by minimizing handling, with a vet only if the site looks infected.",
+      vetLine: "Dehydration is the fastest-moving danger here, manageable at home if caught early by raising humidity immediately. MBD can worsen rapidly once it starts and respiratory infection needs prescription antibiotics, so both are vet-now rather than wait-and-see. A dropped tail is usually managed at home by minimizing handling, with a vet only if the site looks infected.",
     },
     routes: [
       { slug: "leaf-tailed-gecko-cost-guide", line: "$250 to $800 by species and locality, $300 to $600 for the enclosure, and why wild-caught is the expensive option." },
@@ -571,7 +571,7 @@ export const geckoGuides = [
         { label: "If it bites", value: "Do not pull; tugging tightens the grip. Set it down with all four feet on a surface near a retreat and wait. Never lift by the tail, which detaches and regrows in about 30 days.", source: "tokay-gecko-handling-guide" },
         { label: "Two males", value: "Never. They fight, often with serious or fatal results.", source: "tokay-gecko-handling-guide" },
         { label: "Pair housing", value: "A 2024 study found pair housing improved welfare in captive-bred tokays. One study, and pairing needs quarantine, careful introduction, space and cover for both, and a plan for separating them. Do not pair casually.", source: "tokay-gecko-enrichment-guide" },
-        { label: "Parasites", value: "A 2025 study found intestinal parasites in 42.9% of farmed tokays. A gecko carries a load for months before it shows, so an annual exam with fecal testing.", source: "tokay-gecko-health-issues-guide" },
+        { label: "Parasites", value: "A 2025 study of 21 farmed tokays found intestinal parasites in 42.9% of them, a small sample. A gecko carries a load for months before it shows, so an annual exam with fecal testing.", source: "tokay-gecko-health-issues-guide" },
         { label: "Budget", value: "$15 to $50 for a wild-caught tokay, which is not the budget option once parasite treatment and a harder animal are counted. Captive-bred normals $100 to $150, morphs $150 to $400. Setup $300 to $500, then $15 to $30 a month, and $50 to $100 for a routine exam.", source: "tokay-gecko-cost-guide" },
         { label: "Lifespan", value: "10 to 15 years, documented past 20.", source: "tokay-gecko-cost-guide" },
         { label: "Adult size", value: "10 to 15 inches (25 to 38 cm)." },

@@ -159,7 +159,7 @@ export const amphibianGuides = [
     faqs: [
       { q: "What is red leg syndrome and why is it an emergency?", a: "A bacterial infection, often Aeromonas, that takes hold in dirty or poorly maintained water. Reddening on the underside and legs, lethargy, and visible sores. Frequently fatal without prompt antibiotic treatment, and it progresses fast. Always see a vet immediately." },
       { q: "What size enclosure does a fire-bellied toad need?", a: "10 gallons covers one to three toads, since this is a social species that does fine in a small group of its own kind. Scale up for more. The screen lid has to fit tightly: they are strong jumpers and genuine escape artists." },
-      { q: "Is it safe to handle a fire-bellied toad?", a: "Unless ingested, a fire-bellied toad's skin toxins aren't dangerous to people under normal handling, according to veterinary sources. Even so, minimal handling is the right default for this species, not an overcautious rule." },
+      { q: "Is it safe to handle a fire-bellied toad?", a: "Unless ingested, a fire-bellied toad's skin toxins aren't dangerous to people under normal handling. Even so, minimal handling is the right default for this species, not an overcautious rule." },
     ],
   },
   {
@@ -172,7 +172,7 @@ export const amphibianGuides = [
     tagline: "The round, grumpy ambush predator that is essentially all mouth!",
     seoTitle: "Pacman Frog Care Guide: Setup, Feeding, and Health",
     seoDescription: "Pacman frogs need only a modest setup. Get heat and humidity right, feed prey no wider than the head, and learn why a buried frog is hunting, not bored.",
-    funFact: "Pacman frogs (horned frogs, genus Ceratophrys) have an extraordinarily powerful bite for an amphibian. A 2017 study measured Cranwell's horned frogs biting at up to about 33 newtons, and the largest living horned frogs should reach close to 500, the range of medium-sized mammalian carnivores. They will attempt to eat anything that moves near them, including other frogs, small mice, and keepers' fingers.",
+    funFact: "Pacman frogs (horned frogs, genus Ceratophrys) have an extraordinarily powerful bite for an amphibian. A 2017 study measured Cranwell's horned frogs biting at up to about 33 newtons, and the authors' scaling estimate puts the largest living horned frogs close to 500, the range of medium-sized mammalian carnivores. They will attempt to eat anything that moves near them, including other frogs, small mice, and keepers' fingers.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own. Quarantine, water, and hygiene rows cite

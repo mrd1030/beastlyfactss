@@ -363,7 +363,7 @@ export const invertebrateGuides = [
       "A separate quarantine tank for new arrivals",
     ],
     faqs: [
-      { q: "What size tank do ghost shrimp need?", a: "5 gallons is the workable minimum according to The Shrimp Farm, and 10 gallons gives a small colony more stability and room to forage. Bigger is always more forgiving with water quality, but ghost shrimp don't demand the larger footprint some other species do." },
+      { q: "What size tank do ghost shrimp need?", a: "5 gallons is the workable minimum, and 10 gallons gives a small colony more stability and room to forage. Bigger is always more forgiving with water quality, but ghost shrimp don't demand the larger footprint some other species do." },
       { q: "Why are ghost shrimp so sensitive to copper?", a: "Like all freshwater shrimp, their gills and exoskeleton absorb dissolved metals efficiently, and copper is toxic to them at concentrations that barely register for fish. In a 2014 toxicity study on a related freshwater prawn, 0.0313 mg/L of copper killed half the animals within four days, and the researchers put a safe level nearer 0.003 mg/L, and copper-based fish medications, some plant fertilizers, and old copper plumbing are all realistic exposure routes. Keep it as close to zero as possible and confirm any medication or fertilizer is explicitly invertebrate-safe before using it." },
       { q: "Why does drip acclimation matter so much for shrimp specifically?", a: "Because shrimp can't quickly regulate their internal water balance the way fish can, and a permeable exoskeleton means a sudden shift in water chemistry causes real osmotic stress fast. A slow drip, commonly run for 1 to 2 hours, lets a shrimp adjust gradually instead of being shocked by an abrupt change, and it meaningfully reduces the risk of a failed molt or death shortly after introduction." },
     ],
@@ -649,7 +649,7 @@ export const invertebrateGuides = [
     tagline: "Calm, armored, surprisingly clean, and yes, it hisses!",
     seoTitle: "Hissing Cockroach Care Guide: Setup, Feeding, and Laws",
     seoDescription: "Madagascar hissing cockroach care for a colony, not a single roach: the escape barrier that works, the staple food, what a hiss means, and where it is banned.",
-    funFact: "Madagascar hissing cockroaches are one of the few insect species where the father plays an active role in rearing offspring. Males guard and protect the female and young after birth, and juveniles stay with the family group for weeks.",
+    funFact: "A Madagascar hissing cockroach mother carries her eggs inside her body until they hatch, then gives birth to live nymphs. Researchers have also watched her exude a whitish secretion from the tip of her abdomen just after the birth, which the newborn nymphs actively feed on.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
@@ -744,7 +744,7 @@ export const invertebrateGuides = [
     tagline: "Nature's most impressive ambush predator, in a palm-sized package!",
     seoTitle: "Praying Mantis Care Guide: Enclosure, Feeding, and Molting",
     seoDescription: "Praying mantis care hinges on one height: the perch drop that decides whether a molt succeeds. Plus enclosure size, live prey by stage, and egg cases.",
-    funFact: "Praying mantises are the only insects known to have a single ear, located in the center of their chest between their hind legs. They use it to detect the ultrasonic calls of hunting bats, letting them dodge mid-flight. They are also the only insect that can turn its head 180 degrees.",
+    funFact: "Many praying mantises hear through a single ear in the midline of the underside, between the hind legs, where other insects with eardrums have them in pairs. It picks up the ultrasonic calls of hunting bats, and some species swerve mid-flight when they hear one. A flexible neck also lets a mantis swivel its head through 180 degrees while it waits for prey.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the

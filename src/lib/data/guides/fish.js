@@ -205,12 +205,12 @@ export const fishGuides = [
         { label: "Tank size", value: "20 gallons for a single adult, and 29 or more is the better long-term choice given how much waste one fish makes. Size up again for each extra pleco, and favor floor space and wood surface over height.", source: "bristlenose-pleco-tank-setup-guide" },
         { label: "Temperature and water", value: "74 to 80°F and pH around 6.5 to 7.8, with ammonia and nitrite at zero through regular water changes.", source: "bristlenose-pleco-tank-setup-guide" },
         { label: "Driftwood is required", value: "They rasp wood constantly, and skipping it is tied to digestive problems even in a fish fed correctly. One small ornament piece is a decoration they strip in a couple of weeks; give a substantial piece or several.", source: "bristlenose-pleco-tank-setup-guide" },
-        { label: "Caves and shade", value: "A cave per fish, since males spawn in them and fight over them, plus wood overhangs and broad-leaved plants. A pleco in the open all day has nowhere better to be.", source: "bristlenose-pleco-enrichment-guide" },
-        { label: "Grazing surface", value: "Leave the back and sides of the glass unscrubbed and clean only the front. Biofilm on rock, leaves and glass is a real food source.", source: "bristlenose-pleco-enrichment-guide" },
+        { label: "Caves, shade and grazing", value: "A cave per fish, since males spawn in them and fight over them, plus wood overhangs and broad-leaved plants. Clean only the front glass: biofilm on the back and sides, rock and leaves is a real food source.", source: "bristlenose-pleco-enrichment-guide" },
         { label: "Filtration and oxygen", value: "Real filtration and current, with surface agitation. A warm, well-stocked tank with a large catfish runs low on oxygen faster than people expect.", source: "bristlenose-pleco-enrichment-guide" },
         { label: "Feeding schedule", value: "Once a day, after lights-out, a wafer or vegetable portion cleared within a few hours, near a favorite cave so a shy fish finds it. Remove anything still there next morning.", source: "bristlenose-pleco-feeding-guide" },
         { label: "The algae myth", value: "Tank algae rarely keeps pace with an adult. A bristlenose left to leftovers loses condition slowly, which is why the problem is missed until it is advanced.", source: "bristlenose-pleco-feeding-guide" },
         { label: "Tankmates", value: "Peaceful toward other species. Males are territorial toward each other and toward similar bottom dwellers, competing over caves, so give enough hides that no two males share.", source: "bristlenose-pleco-handling-guide" },
+        { label: "Quarantine", value: "At least 30 days in a bare hospital tank with its own nets and siphon before a new fish joins the display, 30 to 60 for a fish you especially do not want to lose.", source: "fish-quarantine-and-treatment-guide" },
         { label: "Moving one", value: "Lockable fin spines catch in net mesh. Herd it into a cup or wide container and lift that out instead.", source: "bristlenose-pleco-handling-guide" },
         { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
         { label: "Copper", value: "An unprotected belly and a mucous coat that copper damages badly. Copper-based treatments stay off the list entirely; use an alternative for any copper-susceptible parasite.", source: "bristlenose-pleco-health-issues-guide" },
@@ -267,7 +267,7 @@ export const fishGuides = [
     tagline: "The neon tetra's flashier cousin, lit up red from nose to tail!",
     seoTitle: "Cardinal Tetra Care Guide: Tank, Water, and Health",
     seoDescription: "Cardinal tetras want soft, acidic water and a school of ten or more. Set up the tank, feed a tiny mouth, and get wild-caught fish through the first two weeks.",
-    funFact: "Huge numbers of cardinal tetras are still sustainably wild-harvested from Brazil's Rio Negro every year through community-based fisheries, a rare case where the aquarium trade directly funds rainforest conservation by giving local communities a real economic reason to keep the river intact.",
+    funFact: "Many cardinal tetras are still wild-caught every year on Brazil's Rio Negro through community-based fisheries. The trade is often argued to be a conservation positive, since a living fishery gives river communities an economic reason to keep the forest standing, though that claim is contested.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
@@ -337,7 +337,7 @@ export const fishGuides = [
     ],
     faqs: [
       { q: "How many cardinal tetras should I keep together?", a: "Ten is the number to plan for, and 8 to 10 is the least that produces natural schooling. Smaller groups turn pale, hide, and get sick more often from the stress." },
-      { q: "Can cardinal tetras get neon tetra disease?", a: "Yes. It's named after neon tetra specifically, but the Merck Veterinary Manual documents the parasite affecting tetras broadly, along with angelfish, rasboras, barbs, and zebrafish, so cardinal tetra falls within that group. It's caused by a microsporidian parasite, Pleistophora hyphessobryconis, that invades muscle tissue. Watch for restless or erratic swimming, fading or patchy color, visible lumps under the skin, and a curved spine in advanced cases." },
+      { q: "Can cardinal tetras get neon tetra disease?", a: "Yes. It's named after neon tetra specifically, but the parasite affects tetras broadly, along with angelfish, rasboras, barbs, and zebrafish, so cardinal tetra falls within that group. It's caused by a microsporidian parasite, Pleistophora hyphessobryconis, that invades muscle tissue. Watch for restless or erratic swimming, fading or patchy color, visible lumps under the skin, and a curved spine in advanced cases." },
       { q: "What's the non-obvious detail that makes the biggest difference in a cardinal tetra tank?", a: "Recreating blackwater conditions. Driftwood and Indian almond leaves release natural tannins that stain the water and lower pH, mimicking the shaded, leaf-litter-covered streams this species evolved in. Pair that with dense planting and dim lighting, and color and confidence both improve noticeably." },
     ],
   },
@@ -480,7 +480,7 @@ export const fishGuides = [
         { label: "Budget", value: "$20 to $40 for young common-strain fish, so a group of 5 to 6 starts at $150 to $250 even at the budget end; premium strains reach $200 to $450 a fish. Setup roughly $600 to $800, then $20 to $50 a month.", source: "discus-cost-guide" },
         { label: "Lifespan", value: "8 to 10 years typical in captivity, up to 15 with excellent, stable care.", source: "discus-cost-guide" },
         { label: "Adult size", value: "6 to 8 inches (15 to 20 cm) in diameter." },
-        { label: "Quarantine", value: "A bare hospital tank with its own net and siphon, never shared with the display. A sponge filter gives gentle biological filtration.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Quarantine", value: "At least 30 days in a bare, sponge-filtered hospital tank with its own net and siphon, 30 to 60 for a fish you especially do not want to lose.", source: "fish-quarantine-and-treatment-guide" },
         { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
@@ -875,7 +875,7 @@ export const fishGuides = [
     image: "/assets/guides/neon-tetra.jpg",
     tagline: "The tiny electric-blue schooler that turns any planted tank into a shimmering river scene!",
     seoTitle: "Neon Tetra Care Guide: Tank, School, and Health",
-    seoDescription: "Neon tetras settle down in a school of ten. Set up soft, dim water, feed a mouth only 1 to 2mm across, and see why neon tetra disease is likely over-diagnosed.",
+    seoDescription: "Neon tetras settle down in a school of ten. Set up soft, dim water, feed a mouth only 1 to 2mm across, and see why a pale neon is not always neon tetra disease.",
     funFact: "A neon tetra's iridescent blue stripe isn't pigment - it's produced by light-reflecting cells called iridophores. That stripe actually dims or goes nearly dark while the fish sleeps at night, a completely natural nocturnal color change rather than a sign of illness.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -919,14 +919,14 @@ export const fishGuides = [
         "Ragged or bloody-edged fins: fin rot, treatable",
         "Restless swimming at night, fading color along the back, lumps under the skin, a curved spine: neon tetra disease, no cure, and the fish is separated so the others cannot eat it",
       ],
-      vetLine: "Everything treatable here traces back to water quality and stability. Neon tetra disease is likely over-diagnosed; true cases are uncommon in a well-established tank.",
+      vetLine: "Everything treatable here traces back to water quality and stability. Neon tetra disease is often mistaken for columnaris, which is treatable, so treat a suspect fish as bacterial first.",
     },
     routes: [
       { slug: "neon-tetra-cost-guide", line: "$1 to $3 a fish, why the purchase is a group, and the $100 to $300 that goes into the tank around them." },
       { slug: "neon-tetra-tank-setup-guide", line: "10 gallons for six and a 20 long for ten, soft acidic water, gentle flow, dim light, and the blackwater detail." },
       { slug: "neon-tetra-feeding-guide", line: "Twice a day in 2 to 3 minutes, why a 1 to 2mm mouth changes what you buy, and the rule that stops an outbreak." },
       { slug: "neon-tetra-handling-guide", line: "Why this is a netting-only fish, the school floor, and the tankmates that turn a shoal into lunch." },
-      { slug: "neon-tetra-health-issues-guide", line: "Neon tetra disease and why it is over-diagnosed, plus ich, fin rot, and swim bladder trouble." },
+      { slug: "neon-tetra-health-issues-guide", line: "Neon tetra disease and the treatable lookalike it gets mistaken for, plus ich, fin rot, and swim bladder trouble." },
       { slug: "neon-tetra-enrichment-guide", line: "The 2010 study that tested group size properly, and why the answer came back ten rather than six." },
     ],
     buyList: [
@@ -996,7 +996,7 @@ export const fishGuides = [
         { label: "Tank mates", value: "Predatory, not just assertive: what fits in the mouth ends up there. Large tough fish, severums or big plecos, in a large tank, or alone.", source: "oscar-fish-handling-guide" },
         { label: "Not a hands-on pet", value: "They recognize their keeper and can be hand-fed, but the relationship lives at the glass. Lying motionless as if dead is documented normal behavior, not illness.", source: "oscar-fish-handling-guide" },
         { label: "Quarantine", value: "At least 30 days in a separate tank with its own nets and siphon, 30 to 60 for a fish you especially do not want to lose.", source: "fish-quarantine-and-treatment-guide" },
-        { label: "Budget", value: "$7 to $35 for a common juvenile, over $100 for a specialty variety. A low-end 55-gallon build is around $560, and the total easily passes $1,000 with the 75-gallon tank they need. Upkeep $35 to $40 a month.", source: "oscar-fish-cost-guide" },
+        { label: "Budget", value: "$7 to $35 for a common juvenile, over $100 for a specialty variety. A low-end 55-gallon build is around $560. The 75-gallon tank, canister filter and heater an adult needs run about $575 to $670, before the stand. Upkeep $35 to $40 a month.", source: "oscar-fish-cost-guide" },
         { label: "Lifespan", value: "10 to 15 years, occasionally close to 20.", source: "oscar-fish-cost-guide" },
         { label: "Adult size", value: "10 to 14 inches (25 to 36 cm); up to 16 inches in optimal conditions." },
         { label: "Sick fish check", value: "Clear water is not safe water. Ammonia, nitrite and low oxygen are invisible, and gasping at the surface is the visible sign. Test before assuming illness.", source: "spotting-a-sick-fish-guide" },
@@ -1015,7 +1015,7 @@ export const fishGuides = [
       vetLine: "Elevated nitrate is the common thread, hole-in-the-head most of all. Weekly water changes and heavy filtration are the primary defense.",
     },
     routes: [
-      { slug: "oscar-fish-cost-guide", line: "$7 to $35 for the fish and past $1,000 for the tank it needs, the itemized build, and why the animal is the smallest number in the equation." },
+      { slug: "oscar-fish-cost-guide", line: "$7 to $35 for the fish and $575 to $670 for the tank, filter and heater it needs, the itemized build, and why the animal is the smallest number in the equation." },
       { slug: "oscar-fish-tank-setup-guide", line: "The 75-gallon adult minimum to build immediately rather than grow into, filtration sized to 4 or 5 times the volume, and the decor an oscar will move anyway." },
       { slug: "oscar-fish-feeding-guide", line: "The 80/20 pellet-and-frozen split, feeding frequency by size, and why feeder goldfish are the one mistake that matters most." },
       { slug: "oscar-fish-handling-guide", line: "The aquatic dog reputation and what is actually behind it, the sulking after a water change, and the rule that anything fitting in an oscar's mouth ends up there." },
@@ -1327,9 +1327,9 @@ export const fishGuides = [
       "Frozen bloodworms or brine shrimp, for variety rather than daily",
     ],
     faqs: [
-      { q: "What size tank does a school of zebra danios need?", a: "A 10-gallon tank is workable for the bare minimum school of 6. Seriously Fish's recommended footprint, roughly 90x30cm even for a small group, lines up closely with a 20-gallon long tank, a better practical minimum for the fuller 8 to 10 fish school most sources recommend." },
+      { q: "What size tank does a school of zebra danios need?", a: "A 10-gallon tank is workable for the bare minimum school of 6. The recommended footprint, roughly 90x30cm even for a small group, lines up closely with a 20-gallon long tank, a better practical minimum for the fuller 8 to 10 fish school most sources recommend." },
       { q: "Do zebra danios need a heater?", a: "Not strictly. Multiple care sources put their comfortable range at 64 to 77\u00B0F, close enough to room temperature in most homes that a heater is optional. It's still worth adding if your home runs cool or if danios share a tank with tropical fish that need warmer, more stable water." },
-      { q: "How many zebra danios should I keep together?", a: "At least 6. Aquarium Co-Op names 5 to 6 as the workable minimum, but Seriously Fish recommends starting with 8 to 10 or more for natural schooling behavior. A group that's too small is more likely to direct fin-nipping energy at tankmates instead of schooling normally." },
+      { q: "How many zebra danios should I keep together?", a: "At least 6. Five to 6 is the workable minimum, but 8 to 10 or more is the better start for natural schooling behavior. A group that's too small is more likely to direct fin-nipping energy at tankmates instead of schooling normally." },
     ],
   },
 ];
