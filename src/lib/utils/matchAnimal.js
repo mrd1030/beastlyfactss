@@ -61,8 +61,11 @@ function hasWordRun(haystack, needle) {
 // second animal is a kind of the first. A Zebra Finch isn't a kind of zebra,
 // and a Kangaroo Rat or Naked Mole Rat isn't a kind of pet rat, just an
 // unrelated rodent that also got "rat" in its common name. Pairs are
-// unordered since the match itself is bidirectional.
+// unordered since the match itself is bidirectional. A Tiger Salamander is
+// named for its bars, and without this pair it was carrying the wild tiger
+// population and stripe facts.
 const FALSE_COMPOUNDS = [
+  ['tiger salamander', 'tiger'],
   ['zebra finch', 'zebra'],
   ['zebra danio', 'zebra'],
   ['rat', 'kangaroo rat'],
@@ -94,6 +97,20 @@ export function matchesAnimal(pageName, factAnimal) {
 
 // Shared by the encyclopedia and guide pages so the two can't drift apart
 // again - they previously carried separate copies of the same broken test.
+//
+// Guide titles carry a subtitle after the colon ("Siamese: Breed Quirks"),
+// and matching on it left every cat and dog breed guide with no facts while
+// the same breed's encyclopedia page had them. Only the part before the colon
+// names the animal.
+//
+// Most specific first: fact ids are chronological, so the generic "Parrot"
+// facts came before the "African Grey Parrot" ones and the guide's cap of 3
+// hid the facts about the actual species. More words in the fact's animal
+// means a narrower match; the sort is stable, so ties keep id order.
 export function getRelatedFacts(pageName, facts, limit = 3) {
-  return facts.filter((fact) => matchesAnimal(pageName, fact.animal)).slice(0, limit);
+  const name = String(pageName || '').split(':')[0];
+  return facts
+    .filter((fact) => matchesAnimal(name, fact.animal))
+    .sort((a, b) => tokens(b.animal).length - tokens(a.animal).length)
+    .slice(0, limit);
 }
