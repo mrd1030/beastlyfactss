@@ -70,11 +70,12 @@ open with 5+ (an emptyish board looks abandoned).
   fresh pins (new image + new URL combinations) over re-pins.
 - Never pin the same image twice; a page may be re-pinned later only with a
   NEW image composition.
-- Fact pins link the deepest page that exists for the animal, resolved
-  the same way the fact modal resolves its profile link: the Encyclopedia
-  profile (`/encyclopedia/animal/<id>/`) for a kept species, else the
-  Beastfile (`/beastlypedia/<id>/`) for a wild one, else the fact's own
-  `/facts/<slug>/` share page. Article pins link `/blog/<slug>/`, species
+- Fact pins link the deepest page that actually says what the pin says:
+  the Encyclopedia profile (`/encyclopedia/animal/<id>/`) for a kept
+  species, else the Beastfile (`/beastlypedia/<id>/`) for a wild one, else
+  the fact's own `/facts/<slug>/` share page. A profile that exists but
+  never mentions the fact loses to the share page, which states the fact
+  and links onward to the profile anyway. Article pins link `/blog/<slug>/`, species
   pins may link the `/guides/<species>/` hub. See "Fact pin headlines"
   below for why the destination decides the headline.
 - Pin titles must be claims the destination actually supports, drawn from
@@ -115,6 +116,13 @@ reasoning written out.
    - `beastfile` : else it has a Beastfile, `src/lib/generated/beastlypedia-animal-map.json`
    - `fact-modal` : else neither exists, and the pin links `/facts/<slug>/`
 
+   A profile only counts if it says what the pin is about. If the
+   Encyclopedia entry or Beastfile never mentions the fact, the pin goes to
+   `fact-modal` instead, because the modal states the fact and already
+   links onward to the profile. The platypus Beastfile says nothing about
+   milk, and the manta ray Beastfile nothing about its brain, so those two
+   pins stayed on their fact pages in the 9/27 redo.
+
    Print the destination type and the url. This one line is what lets
    someone reading the batch later see why some fact pins got a curiosity
    headline and others did not, instead of it looking arbitrary.
@@ -147,6 +155,13 @@ reasoning written out.
    until the generator gets a CTA slot, the CTA line goes as the closing
    sentence of the pin description instead.
 
+7. **Description.** Must not leak the mechanism either. Pinterest shows
+   the description on the pin's closeup, so a card that withholds the
+   cause and a description that explains it leaves nothing to click for,
+   the same failure one field over. State the result, point at the answer,
+   end with the CTA line. Plain-headline pins keep a plain description and
+   no "reason why" CTA, since there is no withheld reason to promise.
+
 House rules still apply to every field: no em or en dashes, US spelling,
 nothing claimed that the destination page does not say.
 
@@ -157,12 +172,18 @@ nothing claimed that the destination page does not say.
   card built to feel unfinished is less saveable by design. Fewer saves and
   far more clicks is the trade this is making on purpose, so a lower save
   number is not by itself a sign it failed.
+- Do not read the 10/26 window as a verdict on headlines. At the account's
+  current click rate, 20 redone fact pins produce a handful of clicks at
+  most, which is too few to separate a better headline from noise. The
+  reason to fix unposted pins is that a pin keeps drawing impressions for
+  months, so every future click lands wherever it is pointed now.
 - Read the next 30 days as the real test, not the last 30 as the baseline.
   The 9/26 window mostly predates this pipeline: our first pins went out
   9/12 and the first month batch only started 9/19. The first clean read,
   a window made almost entirely of pins built this way, lands around 10/26.
 - Coverage is partial today. Of the 28 fact pins in the 9/19 batch, 10 had a
-  Beastfile. The share of fact pins that can earn a curiosity headline grows
+  Beastfile, and a Beastfile existing is not enough on its own: of the 6
+  still unposted when this was applied, 4 mentioned the fact and 2 did not. The share of fact pins that can earn a curiosity headline grows
   as the Beastfiles and Encyclopedia do.
 
 ## One-time account setup
