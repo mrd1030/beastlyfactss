@@ -66,6 +66,16 @@ export function getBeastfile(id) {
   return beastfiles.find((b) => b.id === id) || null;
 }
 
+// The Beastfile a fun-facts post belongs to, read off its slug
+// (fun-facts-octopus, 10-surprising-octopus-facts). Wild animals have no care
+// guide, so their fun-facts posts otherwise land with an empty Deep Dive;
+// PostSidebar shows this Beastfile in its place. Pure and slug-driven, so the
+// prerendered sidebar and the client's first render agree.
+export function beastfileForPost(slug) {
+  const m = /^fun-facts-(.+)$/.exec(slug || '') || /^10-surprising-(.+)-facts$/.exec(slug || '');
+  return m ? getBeastfile(m[1]) : null;
+}
+
 // Habitat is a label on the card, not a primary filter at launch. Exported so
 // the card and the profile page render the same set rather than each inventing
 // their own casing.

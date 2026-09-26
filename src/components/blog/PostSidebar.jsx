@@ -7,6 +7,7 @@ import { getDeepDiveSiblings, primaryGuideId, speciesNameFor } from '@/lib/data/
 import DeepDiveList from '@/components/shared/DeepDiveList';
 import { readDeepDiveGuide } from '@/lib/data/deepDiveContext';
 import { themedQuizzes } from '@/lib/data/quizzes';
+import { beastfileForPost } from '@/lib/data/beastlypedia';
 import BeehiivSubscribe from './BeehiivSubscribe';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 
@@ -55,6 +56,14 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
       .map((slug) => allPosts.find((p) => (p.slug?.current || p._id || p.id) === slug))
       .filter(Boolean);
   }, [allPosts, currentPost, fromGuideId]);
+
+  // A wild animal has no care guide, so its fun-facts post gets an empty Deep
+  // Dive. Its Beastfile is the page to go deeper on instead. Shown only when
+  // the curated list is empty, so a pet species keeps its own series.
+  const beastfile = useMemo(() => {
+    const slug = currentPost.slug?.current || currentPost._id || currentPost.id;
+    return beastfileForPost(slug);
+  }, [currentPost]);
 
   // Themed quizzes that cite this article as a question source. Auto-wired
   // from the quiz data: a new quiz that sources an article gets its backlink
@@ -195,6 +204,22 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
         onSelect={onSelectPost}
         show="shared"
       />
+
+      {beastfile && deepDiveArticles.length === 0 && (
+        <div className="bg-card border border-border rounded-2xl p-5">
+          <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+            {`🌍 More on the ${beastfile.name}`}
+          </p>
+          <Link to={`/beastlypedia/${beastfile.id}/`} className="group block">
+            <p className="text-xs font-body font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
+              {`${beastfile.name} Beastfile`}
+            </p>
+            {beastfile.tagline && (
+              <p className="text-xs text-muted-foreground font-body mt-0.5">{beastfile.tagline}</p>
+            )}
+          </Link>
+        </div>
+      )}
 
       {/* Quiz backlink: this article is a question source in these quizzes */}
       {quizBacklinks.length > 0 && (
