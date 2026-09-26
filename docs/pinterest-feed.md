@@ -70,12 +70,12 @@ open with 5+ (an emptyish board looks abandoned).
   fresh pins (new image + new URL combinations) over re-pins.
 - Never pin the same image twice; a page may be re-pinned later only with a
   NEW image composition.
-- Fact pins link the deepest page that actually says what the pin says:
-  the Encyclopedia profile (`/encyclopedia/animal/<id>/`) for a kept
-  species, else the Beastfile (`/beastlypedia/<id>/`) for a wild one, else
-  the fact's own `/facts/<slug>/` share page. A profile that exists but
-  never mentions the fact loses to the share page, which states the fact
-  and links onward to the profile anyway. Article pins link `/blog/<slug>/`, species
+- Fact pins link the deepest page that exists for the animal: the
+  Encyclopedia profile (`/encyclopedia/animal/<id>/`) for a kept species,
+  else the Beastfile (`/beastlypedia/<id>/`) for a wild one, else the
+  fact's own `/facts/<slug>/` share page. Both profile types render the
+  animal's facts from `facts.js` in their Fun Facts section, so the pinned
+  fact is on the profile page too, with the rest of the page around it. Article pins link `/blog/<slug>/`, species
   pins may link the `/guides/<species>/` hub. See "Fact pin headlines"
   below for why the destination decides the headline.
 - Pin titles must be claims the destination actually supports, drawn from
@@ -116,30 +116,35 @@ reasoning written out.
    - `beastfile` : else it has a Beastfile, `src/lib/generated/beastlypedia-animal-map.json`
    - `fact-modal` : else neither exists, and the pin links `/facts/<slug>/`
 
-   A profile only counts if it says what the pin is about. If the
-   Encyclopedia entry or Beastfile never mentions the fact, the pin goes to
-   `fact-modal` instead, because the modal states the fact and already
-   links onward to the profile. The platypus Beastfile says nothing about
-   milk, and the manta ray Beastfile nothing about its brain, so those two
-   pins stayed on their fact pages in the 9/27 redo.
+   Check the rendered page, not the data file. A Beastfile's Fun Facts
+   section is built from `facts.js` at build time (see
+   `src/lib/generated/beastlypedia-content.json`, each entry's `facts`), so
+   every fact for that animal appears on it, including the one being
+   pinned. Reading only the authored entry in
+   `src/lib/data/beastlypedia/*.js` misses them: that is how the platypus
+   and manta ray Beastfiles were wrongly judged thin in the first pass of
+   the 9/27 redo. Encyclopedia pages differ in one way: they show at most
+   3 matching facts (`getRelatedFacts` in `src/lib/utils/matchAnimal.js`),
+   so confirm the pinned fact is among them before counting on it.
 
    Print the destination type and the url. This one line is what lets
    someone reading the batch later see why some fact pins got a curiosity
    headline and others did not, instead of it looking arbitrary.
 2. **The fact.** State the surprising fact plainly.
 3. **The mechanism, quoted.** Quote, verbatim, the sentence on the
-   destination page that explains why the fact is true. From the profile
-   body for `encyclopedia` or `beastfile`, from the fact's own `fact` field
-   in `src/lib/data/facts.js` for `fact-modal`. This is what stays on the
+   destination page that explains why the fact is true. The fact's own
+   `fact` field counts for every destination type, since it renders on the
+   profile pages as well as the modal. A profile body can add a mechanism
+   the fact sentence lacks. This is what stays on the
    site and never goes on the card.
 
    **The gate.** If no sentence on that page explains the mechanism, stop
    here. The pin gets a plain headline that states the fact, and step 4 is
    skipped. Do not write a withholding headline for a payoff you cannot
-   quote. This applies in both directions: a thin Beastfile does not earn a
-   curiosity headline just because it is a Beastfile, and a fact pin whose
-   animal has a rich Beastfile must not default to a plain headline because
-   nobody checked the Beastfile.
+   quote. This applies in both directions: a Beastfile does not earn a
+   curiosity headline just for existing, and a fact pin must not default to
+   a plain headline when the Beastfile body holds a mechanism the fact
+   sentence lacks, just because nobody read it.
 4. **Why this headline works.** One or two sentences on how the headline
    creates curiosity without resolving it. Confirm explicitly that someone
    who read only the headline could not explain the mechanism to a friend.
@@ -182,8 +187,8 @@ nothing claimed that the destination page does not say.
   9/12 and the first month batch only started 9/19. The first clean read,
   a window made almost entirely of pins built this way, lands around 10/26.
 - Coverage is partial today. Of the 28 fact pins in the 9/19 batch, 10 had a
-  Beastfile, and a Beastfile existing is not enough on its own: of the 6
-  still unposted when this was applied, 4 mentioned the fact and 2 did not. The share of fact pins that can earn a curiosity headline grows
+  Beastfile. The 6 of those still unposted when this was applied all link
+  their Beastfile now. The share of fact pins that can earn a curiosity headline grows
   as the Beastfiles and Encyclopedia do.
 
 ## One-time account setup
