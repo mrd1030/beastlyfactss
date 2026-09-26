@@ -1,7 +1,7 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { breadcrumbSchema } from '@/lib/utils/breadcrumbs';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useSearchParams } from 'react-router-dom';
 import { MapPin, Globe2, ShieldAlert, Sparkles, ArrowLeft, Image as ImageIcon } from 'lucide-react';
 import { getBeastfile } from '@/lib/data/beastlypedia';
 import RelatedFiles from '@/components/beastlypedia/RelatedFiles';
@@ -41,6 +41,21 @@ export default function BeastfileDetail() {
   // exit. Holds the fact whose photo is open, or null.
   const [photoFact, setPhotoFact] = useState(null);
   const contentRef = useRef(null);
+
+  // ?fact=<id> points at one fact on this page, which is how a Pinterest fact
+  // pin lands here. The fact is scrolled to and highlighted in the list rather
+  // than opened in ImageLightbox, because the lightbox captions the photo with
+  // the title only: a reader who clicked a curiosity headline would get the
+  // picture and still not the answer. In the list the full sentence is right
+  // there. The canonical stays the bare Beastfile url, so the parameter never
+  // splits the page in search.
+  const [searchParams] = useSearchParams();
+  const targetFactId = Number(searchParams.get('fact')) || null;
+  useEffect(() => {
+    if (!targetFactId) return;
+    const el = document.getElementById(`fact-${targetFactId}`);
+    if (el) el.scrollIntoView({ block: 'center' });
+  }, [targetFactId, slug]);
 
   if (!beastfile) {
     return (
@@ -291,7 +306,11 @@ export default function BeastfileDetail() {
               // than showing them the picture in place.
               <ul className="space-y-1">
                 {linkedFacts.map((f, i) => (
-                  <li key={f.title}>
+                  <li
+                    key={f.title}
+                    id={`fact-${f.id}`}
+                    className={f.id === targetFactId ? 'rounded-xl ring-2 ring-secondary bg-background/60' : undefined}
+                  >
                     {f.image ? (
                       <button
                         type="button"

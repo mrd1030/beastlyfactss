@@ -83,7 +83,10 @@ export default function EncyclopediaAnimal() {
     );
   }
 
-  const relatedFacts = getRelatedFacts(animal.name, facts);
+  // Every matching fact, not the helper's default of 3. A fact pin can land
+  // here, and a capped list can drop the very fact the pin promised. The
+  // longest list today is 6 (Bulldog, French Bulldog).
+  const relatedFacts = getRelatedFacts(animal.name, facts, Infinity);
   // Legal guides are pulled out of the deep-dive list and given their own card.
   // Mixed in with husbandry articles they read as one more thing to get round
   // to, when they are the one link on the page that can tell a reader they

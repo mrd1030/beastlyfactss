@@ -127,6 +127,11 @@ reasoning written out.
    3 matching facts (`getRelatedFacts` in `src/lib/utils/matchAnimal.js`),
    so confirm the pinned fact is among them before counting on it.
 
+   A `beastfile` link carries the fact id, `/beastlypedia/<id>/?fact=<fact id>`.
+   The page scrolls to that fact and outlines it, so the reader lands on the
+   answer rather than at the top of a long profile. Without the parameter
+   the pinned fact sits below the fold and nothing marks it.
+
    Print the destination type and the url. This one line is what lets
    someone reading the batch later see why some fact pins got a curiosity
    headline and others did not, instead of it looking arbitrary.
