@@ -89,6 +89,19 @@ alter table public.notification_sends enable row level security;
 -- role key, which bypasses RLS. Same posture as push_subscriptions above.
 revoke all on public.notification_sends from anon, authenticated;
 
+-- One row per day the fun fact of the day went out, and which fact. Separate
+-- from notification_sends because the fact goes out every day, article or not.
+-- fact_id is what the picker reads to avoid resending a fact until every fact
+-- has had a turn. Applied as migration notification_fact_sends_ledger.
+create table if not exists public.notification_fact_sends (
+  send_date date primary key,
+  fact_id integer not null,
+  sent_at timestamptz not null default now()
+);
+
+alter table public.notification_fact_sends enable row level security;
+revoke all on public.notification_fact_sends from anon, authenticated;
+
 -- The shared secret lives in Vault so it never appears in the job definition
 -- or in cron.job_run_details. Set it once (use your own value):
 --
@@ -135,3 +148,4 @@ select cron.schedule(
 --   select jobname, status, return_message, start_time
 --     from cron.job_run_details order by start_time desc limit 10;
 --   select * from public.notification_sends order by send_date desc limit 7;
+--   select * from public.notification_fact_sends order by send_date desc limit 7;

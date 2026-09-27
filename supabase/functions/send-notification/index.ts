@@ -12,6 +12,10 @@
 //      schedule watches the dates instead. See supabase/push_notifications.sql
 //      for the cron entries.
 //
+//      The same run also sends a fun fact of the day, every day, whether or
+//      not an article went out. The two are separate notifications with
+//      separate ledgers, so a day with no new article still gets its fact.
+//
 //   2. By hand, for anything off-schedule - pass an explicit title and body and
 //      it sends immediately, no date logic and no ledger:
 //
@@ -20,9 +24,10 @@
 //          -H "content-type: application/json" \
 //          -d '{"title":"Site news","body":"Something worth a ping.","url":"/blog/"}'
 //
-// The daily path sends at most once per calendar day. It claims the day in
-// notification_sends before sending, so a retry, a second cron entry, or a
-// hand-run of the same mode all no-op instead of buzzing the same phone twice.
+// The daily path sends each kind at most once per calendar day. It claims the
+// day (notification_sends for articles, notification_fact_sends for the fact)
+// before sending, so a retry, a second cron entry, or a hand-run of the same
+// mode all no-op instead of buzzing the same phone twice.
 
 import webpush from "npm:web-push@3.6.7";
 import { createClient } from "npm:@supabase/supabase-js@2";
@@ -36,7 +41,9 @@ const SEND_SECRET = Deno.env.get("SEND_NOTIFICATION_SECRET");
 // arrived" has to mean one thing across the sort, the feed, and this send.
 const SITE_TIMEZONE = "America/New_York";
 const SEND_HOUR_ET = 9;
-const ARTICLES_URL = "https://beastlyfacts.com/articles.json";
+const SITE = "https://beastlyfacts.com";
+const ARTICLES_URL = `${SITE}/articles.json`;
+const FACTS_URL = `${SITE}/facts.json`;
 const BODY_LIMIT = 140;
 
 webpush.setVapidDetails(VAPID_SUBJECT, VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY);
@@ -150,6 +157,79 @@ async function pushToEveryone(payload: { title: string; body: string; url: strin
   return { sent, total: subs?.length ?? 0, removed: deadIds.length };
 }
 
+// Mirrors src/lib/utils/slugify.js, including the "&"/"and" rule, because the
+// fact page route is /facts/<slugified title>/ and a mismatch is a dead link.
+// Same copy as post-social-feed.
+function slugify(text: string): string {
+  return (text || "")
+    .toString()
+    .toLowerCase()
+    .replace(/\s*&\s*|\s+and\s+/g, "-and-")
+    .replace(/\s+/g, "-")
+    .replace(/[^a-z0-9-]/g, "")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+type Fact = { id: number; title?: string; emoji?: string; fact?: string };
+
+// A random fact no subscriber has been sent yet. Once every fact has gone out,
+// it starts over from the ones sent longest ago, so the rotation never stops
+// and never repeats a recent one.
+async function pickFact(): Promise<Fact> {
+  const res = await fetch(FACTS_URL, { headers: { accept: "application/json" } });
+  if (!res.ok) throw new Error(`facts.json returned ${res.status}`);
+  const { facts = [] } = await res.json();
+  const usable = (facts as Fact[]).filter((f) => f && f.id && f.title && f.fact);
+  if (usable.length === 0) throw new Error("facts.json has no usable facts");
+
+  const { data: sent, error } = await supabase
+    .from("notification_fact_sends")
+    .select("fact_id, send_date")
+    .order("send_date", { ascending: false });
+  if (error) throw new Error(error.message);
+
+  // Most recent send per fact, newest first.
+  const lastSent = new Map<number, string>();
+  for (const row of sent ?? []) {
+    if (!lastSent.has(row.fact_id)) lastSent.set(row.fact_id, row.send_date);
+  }
+
+  const fresh = usable.filter((f) => !lastSent.has(f.id));
+  if (fresh.length > 0) return fresh[Math.floor(Math.random() * fresh.length)];
+
+  const oldest = [...usable].sort((a, b) =>
+    lastSent.get(a.id)!.localeCompare(lastSent.get(b.id)!)
+  );
+  return oldest[0];
+}
+
+async function runDailyFact(today: string) {
+  const fact = await pickFact();
+
+  // Same claim-before-send pattern as the article ledger below.
+  const { error: claimError } = await supabase
+    .from("notification_fact_sends")
+    .insert({ send_date: today, fact_id: fact.id });
+  if (claimError) {
+    if (claimError.code === "23505") return { skipped: "fact already sent today" };
+    throw new Error(claimError.message);
+  }
+
+  const payload = {
+    title: `${fact.emoji ? `${fact.emoji} ` : ""}Fun fact: ${fact.title}`,
+    body: truncate(fact.fact || ""),
+    url: `/facts/${slugify(fact.title || "")}/`,
+  };
+  try {
+    const result = await pushToEveryone(payload);
+    return { ...result, fact_id: fact.id, payload };
+  } catch (err) {
+    await supabase.from("notification_fact_sends").delete().eq("send_date", today);
+    throw err;
+  }
+}
+
 async function runDaily(force: boolean) {
   const today = siteToday();
   const hour = siteHour();
@@ -161,9 +241,20 @@ async function runDaily(force: boolean) {
     return json({ skipped: `hour ${hour} ET is not ${SEND_HOUR_ET}`, date: today });
   }
 
+  // Each half runs even if the other fails, so a broken articles.json never
+  // costs the day its fact, and the reverse. In sequence rather than parallel
+  // so a new article lands on the phone ahead of the fact.
+  const settle = (p: Promise<unknown>) =>
+    p.catch((err) => ({ error: (err as Error).message }));
+  const articles = await settle(runDailyArticles(today));
+  const fact = await settle(runDailyFact(today));
+  return json({ date: today, articles, fact });
+}
+
+async function runDailyArticles(today: string) {
   const posts = await articlesPublishedOn(today);
   if (posts.length === 0) {
-    return json({ skipped: "no articles dated today", date: today });
+    return { skipped: "no articles dated today" };
   }
 
   // Claim the day BEFORE sending. Losing the race means another run is already
@@ -179,7 +270,7 @@ async function runDaily(force: boolean) {
     // 23505 = unique_violation, i.e. today is already claimed. That is the
     // dedupe working, not a failure.
     if (claimError.code === "23505") {
-      return json({ skipped: "already sent today", date: today });
+      return { skipped: "already sent today" };
     }
     throw new Error(claimError.message);
   }
@@ -187,7 +278,7 @@ async function runDaily(force: boolean) {
   const payload = buildPayload(posts);
   try {
     const result = await pushToEveryone(payload);
-    return json({ ...result, date: today, claimed: claim?.send_date, payload });
+    return { ...result, claimed: claim?.send_date, payload };
   } catch (err) {
     // Nothing went out, so release the day rather than burning it - the second
     // cron entry or a hand-run can still deliver this morning's notification.
