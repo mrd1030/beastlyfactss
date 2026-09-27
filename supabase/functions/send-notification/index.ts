@@ -171,11 +171,18 @@ function slugify(text: string): string {
     .replace(/^-|-$/g, "");
 }
 
-type Fact = { id: number; title?: string; emoji?: string; fact?: string };
+type Fact = { id: number; title?: string; emoji?: string; fact?: string; category?: string };
 
-// A random fact no subscriber has been sent yet. Once every fact has gone out,
-// it starts over from the ones sent longest ago, so the rotation never stops
-// and never repeats a recent one.
+// How many days back a category stays off limits. Three means no category
+// repeats within any four days in a row, so a run of dog and cat facts can't
+// happen. There are eight categories, so this never starves the pick.
+const CATEGORY_GAP_DAYS = 3;
+
+// A random fact no subscriber has been sent yet, from a category none of the
+// last few days used. Once every fact has gone out, it starts over from the
+// ones sent longest ago, with the same category spacing. The list is read
+// live from facts.json each morning, so a newly added fact joins the unsent
+// pool the day it deploys.
 async function pickFact(): Promise<Fact> {
   const res = await fetch(FACTS_URL, { headers: { accept: "application/json" } });
   if (!res.ok) throw new Error(`facts.json returned ${res.status}`);
@@ -195,10 +202,26 @@ async function pickFact(): Promise<Fact> {
     if (!lastSent.has(row.fact_id)) lastSent.set(row.fact_id, row.send_date);
   }
 
-  const fresh = usable.filter((f) => !lastSent.has(f.id));
+  const byId = new Map(usable.map((f) => [f.id, f]));
+  const recentCategories = new Set(
+    (sent ?? [])
+      .slice(0, CATEGORY_GAP_DAYS)
+      .map((row) => byId.get(row.fact_id)?.category)
+      .filter(Boolean),
+  );
+  // Spacing wins over finishing a cycle. Near the end of a cycle the unsent
+  // facts are mostly the biggest category (Mammals), and sending them in order
+  // would mean a week of Mammals. So when no unsent fact is in an allowed
+  // category, the oldest-sent allowed fact goes instead, and the leftovers go
+  // out as spacing allows. Only if every category were recent (impossible
+  // with eight) would spacing be dropped rather than skip the day.
+  const allowed = usable.filter((f) => !recentCategories.has(f.category));
+  const pool = allowed.length > 0 ? allowed : usable;
+
+  const fresh = pool.filter((f) => !lastSent.has(f.id));
   if (fresh.length > 0) return fresh[Math.floor(Math.random() * fresh.length)];
 
-  const oldest = [...usable].sort((a, b) =>
+  const oldest = [...pool].sort((a, b) =>
     lastSent.get(a.id)!.localeCompare(lastSent.get(b.id)!)
   );
   return oldest[0];
