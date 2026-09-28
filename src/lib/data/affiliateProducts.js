@@ -24,7 +24,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$11–$19",
     description: "Digital gauge that tracks enclosure temperature and humidity at a glance. Helps you catch unsafe swings fast.",
-    covers: ["Digital thermometer and hygrometer", "Hygrometer and thermometer", "Thermometer and hygrometer", "Digital hygrometer", "Digital thermometer"],
+    covers: ["Digital thermometer and hygrometer", "Hygrometer and thermometer", "Thermometer and hygrometer", "Digital hygrometer", "Digital thermometer", "A digital hygrometer", "Digital thermometer/hygrometer combo", "A digital thermometer and hygrometer", "A digital thermometer and hygrometer, since the card asks you to check both", "A digital probe thermometer and hygrometer", "Digital probe thermometer and hygrometer", "Digital hygrometer and thermometer combo", "Digital thermometer and hygrometer for the cool side", "Digital thermometer and hygrometer combo", "Digital thermometer for the room", "Digital thermometer and probe hygrometer"],
     altGroup: "thermometer-hygrometer-combo",
     pets: ["reptiles-amphibians", "small-mammals", "invertebrates"],
   },
@@ -38,7 +38,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$18–$28",
     description: "Handheld laser thermometer for instant surface temperature checks. Great for basking spots and warm hides.",
-    covers: ["Digital thermometer (IR gun ideal/recommended)", "Digital thermometer (IR gun recommended)", "Digital thermometer (IR gun ideal)", "Infrared thermometer gun"],
+    covers: ["Digital thermometer (IR gun ideal/recommended)", "Digital thermometer (IR gun recommended)", "Digital thermometer (IR gun ideal)", "Infrared thermometer gun", "Infrared temperature gun for surface readings", "Infrared temp gun for the basking surface"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -64,7 +64,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$95–$115",
     description: "T5 UVB fixture kit that provides moderate UVB for tropical or shade-dwelling reptiles.",
-    covers: ["Strong UVB (T5 HO Arcadia 6-12%)", "UVB (T5 HO Arcadia 6-12%)", "Moderate UVB (T5 HO Arcadia 6%)", "Strong UVB (T5 HO Arcadia 6% or 12%)"],
+    covers: ["Strong UVB (T5 HO Arcadia 6-12%)", "UVB (T5 HO Arcadia 6-12%)", "Moderate UVB (T5 HO Arcadia 6%)", "Strong UVB (T5 HO Arcadia 6% or 12%)", "A T5 HO UVB kit, 5 to 6%", "Optional T5 HO UVB, 5.0 or 6%", "T5 HO UVB fixture and bulb"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -129,7 +129,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.3,
     price: "$25–$40",
     description: "Under-tank heater with thermostat to provide gentle belly heat without dangerous overheating.",
-    covers: ["Under-tank heater with/+ thermostat", "Heat mat with thermostat", "Heat source with thermostat", "Thermostat-controlled heat source", "Low-wattage heat lamp/mat with thermostat", "Under-tank heater with thermostat", "Under-tank heater + thermostat"],
+    covers: ["Under-tank heater with/+ thermostat", "Heat mat with thermostat", "Heat source with thermostat", "Thermostat-controlled heat source", "Low-wattage heat lamp/mat with thermostat", "Under-tank heater with thermostat", "Under-tank heater + thermostat", "Side-mounted heat mat with a thermostat", "Under-tank heater, or an overhead halogen basking bulb", "Under-tank heat mat", "Under-tank heat mat and an on/off probe thermostat", "Side-mounted heat mat on a thermostat, or a low-wattage overhead bulb", "Side- or back-mounted heat mat", "Under-tank heat pad, overhead heat source, or both", "Heat source (under-tank heater or overhead halogen)", "Under-tank heater with a thermostat"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -142,7 +142,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$8–$14",
     description: "Low-profile water dish that gives reptiles a sturdy place to drink or soak without tipping easily.",
-    covers: ["Shallow water dish", "Small shallow water dish", "Small water dish", "Water dish"],
+    covers: ["Shallow water dish", "Small shallow water dish", "Small water dish", "Water dish", "Shallow water dish that's easy to keep clean", "Shallow water dish, deep enough to drink from and not to drown in", "Shallow water dish that won't drown a burrowed frog", "A shallow water bowl, even though it will mostly go untouched", "Shallow water dish large enough to sit in", "A small shallow water dish with a few pebbles in it"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -155,7 +155,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$18–$30",
     description: "Low-profile water dish that gives reptiles a sturdy place to drink or soak without tipping easily.",
-    covers: ["Soak-able water dish", "Large soak-able water dish", "Shallow soak dish", "Large water dish"],
+    covers: ["Soak-able water dish", "Large soak-able water dish", "Shallow soak dish", "Large water dish", "A water dish large enough for the skink to fully submerge in", "Heavy, tip-resistant water bowl big enough to soak in", "A basin big enough to swim in", "Water dish big enough for the snake to get into", "Water dish the snake can sit in", "Water bowl large enough to soak in", "Shallow water dish large enough to soak in", "Soak-able water bowl"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -168,7 +168,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$7–$12",
     description: "Fine-mist spray bottle for raising humidity and lightly wetting plants, moss, or enclosure walls.",
-    covers: ["Misting bottle", "Fine misting bottle", "Spray bottle", "Fine misting bottle or fogger", "Fine mist system or manual misting bottle", "Mist system or spray bottle"],
+    covers: ["Misting bottle", "Fine misting bottle", "Spray bottle", "Fine misting bottle or fogger", "Fine mist system or manual misting bottle", "Mist system or spray bottle", "Fine mist spray bottle or a misting system, the main water source", "Mister or spray bottle", "A fine mist spray bottle and dechlorinated water", "A spray bottle for misting", "Misting bottle or shower perch", "A fine mist spray bottle and dechlorinated or distilled water", "Fine mist spray bottle, and a shallow dish you don't count on", "Fine mist spray bottle", "Fine mist spray bottle or an automatic mister", "A fine mist spray bottle"],
     pets: ["birds", "reptiles-amphibians", "invertebrates"],
   },
   {
@@ -181,7 +181,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.2,
     price: "$35–$60",
     description: "Automatic misting unit that adds scheduled humidity for tropical reptiles, amphibians, or planted tanks.",
-    covers: ["Automatic misting system", "Automatic mister", "Fine mist system", "Mist system or fogger", "Dripper system and automatic mister"],
+    covers: ["Automatic misting system", "Automatic mister", "Fine mist system", "Mist system or fogger", "Dripper system and automatic mister", "Automatic misting system or fogger", "Automatic fogger or misting system, or a spray bottle"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -194,7 +194,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$12–$28",
     description: "Hideout that gives pets a secure place to shelter, reduce stress, and rest.",
-    covers: ["Cork bark hide", "Cork bark hides", "Cork bark hide(s)", "Cork bark for hiding structures", "Warm, cool, and humid hides", "Multiple hides and enrichment items", "Cork bark tubes and branches", "Cork bark and dense planting", "Flat cork bark and rock hides", "Cork bark and PVC pipe hides", "Cork bark and rock structures"],
+    covers: ["Cork bark hide", "Cork bark hides", "Cork bark hide(s)", "Cork bark for hiding structures", "Warm, cool, and humid hides", "Multiple hides and enrichment items", "Cork bark tubes and branches", "Cork bark and dense planting", "Flat cork bark and rock hides", "Cork bark and PVC pipe hides", "Cork bark and rock structures", "A basic hide", "Two cork bark hides, one per temperature zone"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -207,7 +207,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$15–$30",
     description: "Natural wood decor that adds climbing structure, cover, and a more natural-looking habitat.",
-    covers: ["Branches and cork bark", "Climbing branches", "Sturdy climbing branches", "Branches for climbing/enrichment", "Cork bark and branches", "Branches for climbing", "Branches and climbing structures"],
+    covers: ["Branches and cork bark", "Climbing branches", "Sturdy climbing branches", "Branches for climbing/enrichment", "Cork bark and branches", "Branches for climbing", "Branches and climbing structures", "Sturdy climbing branches and broad leaves or platforms, mounted high", "Branches or cork bark for climbing"],
     pets: ["reptiles-amphibians", "small-mammals"],
   },
   {
@@ -220,7 +220,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$25–$40",
     description: "Liquid test kit for checking key water parameters so aquatic pets are not living in invisible toxins.",
-    covers: ["Water test kit", "Water quality test kit", "Water test kit supplies"],
+    covers: ["Water test kit", "Water quality test kit", "Water test kit supplies", "Liquid water test kit", "Water quality test kit, for ammonia and nitrite at zero", "Liquid-reagent water test kit"],
     pets: ["reptiles-amphibians", "fish"],
   },
   {
@@ -233,7 +233,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$9–$15",
     description: "Water conditioner that removes chlorine and chloramine so tap water is safer for fish and amphibians.",
-    covers: ["Water conditioner", "Dechlorinated/RO water treatment", "Water test kit and conditioner"],
+    covers: ["Water conditioner", "Dechlorinated/RO water treatment", "Water test kit and conditioner", "Water conditioner/dechlorinator", "Water conditioner that neutralizes chlorine and chloramine", "Dechlorinator", "Water conditioner, or bottled spring water"],
     altGroup: "water-conditioner",
     pets: ["reptiles-amphibians", "fish"],
   },
@@ -260,7 +260,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$12–$20",
     description: "Moisture-holding mulch that works well for snakes and other species needing moderate humidity.",
-    covers: ["Coconut fiber or cypress mulch substrate", "Cypress mulch or coconut fiber substrate", "Aspen or cypress mulch substrate"],
+    covers: ["Coconut fiber or cypress mulch substrate", "Cypress mulch or coconut fiber substrate", "Aspen or cypress mulch substrate", "Cypress mulch or coconut coir substrate, 3 to 4 inches deep", "Enough cypress mulch, coconut fiber or organic topsoil for 12 to 18 inches across an 8 by 4 foot floor"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -273,7 +273,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$23–$33",
     description: "Dry, low-dust bedding suited to many snakes and small mammals that prefer arid conditions.",
-    covers: ["Aspen shavings substrate", "Aspen or coconut fiber substrate"],
+    covers: ["Aspen shavings substrate", "Aspen or coconut fiber substrate", "Loose, dry, diggable substrate: soil-based mix with reptile-safe sand, aspen, or coconut fiber", "Aspen shavings or cypress mulch substrate", "Aspen bedding or cypress mulch substrate", "Aspen shavings or other suitable substrate", "Dry aspen shavings, deep enough to hold a tunnel"],
     // Own description already says "small mammals," but pets only listed
     // reptiles-amphibians - linked from the new degu/gerbil tank-setup
     // guides, and the mismatch would have kept it off any small-mammal
@@ -290,7 +290,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$8–$14",
     description: "Moisture-retaining moss for humid hides, egg-laying boxes, and raising local humidity.",
-    covers: ["Sphagnum moss for moist hide", "Damp sphagnum moss for moist hide"],
+    covers: ["Sphagnum moss for moist hide", "Damp sphagnum moss for moist hide", "Sphagnum moss, to hold moisture between mistings", "Humid hide packed with damp sphagnum moss", "Sphagnum moss for the humid hide", "Sphagnum moss or leaf litter for the surface", "Damp sphagnum moss hide, for the shed cycle only"],
     pets: ["reptiles-amphibians"],
   },
 
@@ -437,7 +437,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$15–$28",
     description: "Open litter pan sized for daily cat use and easier scooping.",
-    covers: ["Litter box", "Litter box + litter", "Litter boxes (one per cat + one extra)"],
+    covers: ["Litter box", "Litter box + litter", "Litter boxes (one per cat + one extra)", "Large cat-litter-box style litter box"],
     pets: ["small-mammals", "dogs-cats"],
   },
   {
@@ -517,7 +517,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$55–$75",
     description: "Solid-surface exercise wheel that lets small pets run safely without wire rungs catching feet or tails.",
-    covers: ["12-14 in solid exercise wheel"],
+    covers: ["12-14 in solid exercise wheel", "15 inch or larger solid exercise wheel"],
     pets: ["small-mammals"],
   },
   {
@@ -530,7 +530,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$45–$65",
     description: "Solid-surface exercise wheel that lets small pets run safely without wire rungs catching feet or tails.",
-    covers: ["Solid exercise wheel (glider-specific)"],
+    covers: ["Solid exercise wheel (glider-specific)", "Glider-safe axle-free exercise wheel"],
     pets: ["small-mammals"],
   },
   {
@@ -543,7 +543,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$18–$30",
     description: "Soft paper bedding that absorbs moisture well and is gentler on small-animal feet.",
-    covers: ["Bedding (paper-based or fleece)", "Bedding", "Bedding and litter", "Litter/bedding", "6+ inches of paper-based bedding", "Bedding replacement"],
+    covers: ["Bedding (paper-based or fleece)", "Bedding", "Bedding and litter", "Litter/bedding", "6+ inches of paper-based bedding", "Bedding replacement", "Dust-free paper bedding, 2 to 4cm deep", "Paper-based or cellulose bedding", "6+ inches of paper-based or aspen bedding", "Recycled paper bedding, aspen shavings, or fleece", "Deep paper or aspen bedding, plus a dig area", "Paper-based bedding, kiln-dried pine, or fleece liners"],
     pets: ["small-mammals"],
   },
 
@@ -558,7 +558,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$18–$30",
     description: "Submersible heater that keeps aquarium water at a stable temperature for tropical species.",
-    covers: ["Aquarium heater", "Submersible water heater"],
+    covers: ["Aquarium heater", "Submersible water heater", "Aquarium heater sized for the tank", "Submersible aquarium heater", "Heater, only if the room runs cooler than the high 50s", "Heater, only if the room runs below the comfortable range", "Aquarium heater sized to the tank", "Submersible heater set toward the cooler end", "Aquarium heater, roughly 3 to 5 watts per gallon", "Heater"],
     pets: ["fish", "reptiles-amphibians"],
   },
   {
@@ -571,7 +571,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$8–$15",
     description: "Air-driven sponge filter that provides gentle biofiltration without strong current.",
-    covers: ["Gentle filter", "Gentle/sponge filter"],
+    covers: ["Gentle filter", "Gentle/sponge filter", "Gentle sponge filter or a canister filter with the output diffused through a spray bar", "Sponge filter or a baffled hang-on-back", "Sponge or hang-on-back filter at 4 to 5 times tank volume per hour", "Small aquarium or sponge filter for the water section", "Gentle sponge filter", "Sponge filter, for a breeding or nursery tank", "Sponge filter, or a pre-filter sponge over an existing intake", "Gentle sponge filter, or a guarded intake on anything else", "Sponge filter, or a hang-on-back filter with adjustable flow", "Sponge filter, or a hang-on-back unit you can baffle", "Sponge filter, if fry survival matters", "Sponge filter, or a sponge pre-filter over a stronger intake", "Sponge filter if you plan to breed", "Gentle-flow filter", "Gentle filter, or a sponge filter if fry survival matters"],
     pets: ["fish"],
   },
   {
@@ -584,7 +584,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$120–$160",
     description: "Aquarium filter that moves water through media to keep tanks clearer and biologically healthier.",
-    covers: ["Canister filter (strong filtration)"],
+    covers: ["Canister filter (strong filtration)", "Hang-on-back or canister filter rated to turn the tank over four times an hour", "Filter rated for 4 to 5 times the tank volume per hour"],
     altGroup: "goldfish-filtration",
     pets: ["fish"],
   },
@@ -598,7 +598,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$250–$320",
     description: "Aquarium filter that moves water through media to keep tanks clearer and biologically healthier.",
-    covers: ["Heavy-duty canister filter", "Powerful canister filter (2-3x tank volume)"],
+    covers: ["Heavy-duty canister filter", "Powerful canister filter (2-3x tank volume)", "Canister filter above the tank volume, or a hang-on-back, plus extra surface agitation", "Canister filter or a strong hang-on-back filter, rated well above the tank's actual size"],
     altGroup: "goldfish-filtration",
     pets: ["fish", "reptiles-amphibians"],
   },
@@ -612,7 +612,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$18–$30",
     description: "Glass aquarium tank that gives fish or amphibians more stable water volume than tiny setups.",
-    covers: ["10-20+ gallon tank", "10-20+ gallon tank (for a group)", "10+ gallon tank", "20+ gallon tank"],
+    covers: ["10-20+ gallon tank", "10-20+ gallon tank (for a group)", "10+ gallon tank", "20+ gallon tank", "10 gallon tank minimum for one to three toads, larger for more", "10-gallon tank for a colony, or 5 gallons to start small", "5 gallon tank as a floor, 10 gallons for a colony", "A separate quarantine tank for new arrivals", "10 gallon tank, or 20 gallons if you're not separating the sexes", "10-gallon tank for a school of six, or a 20-gallon long for ten to fifteen", "10-gallon or larger tank", "A separate cycled tank for quarantine, a bare 10 to 20 gallons", "Glass terrarium, 10 gallons for up to two adult crabs, 5 more gallons for each crab added", "10-gallon tank for a small group, or a 20-gallon long to meet the stricter footprint", "10 to 15 gallon terrarium for a juvenile"],
     pets: ["fish", "reptiles-amphibians"],
   },
   {
@@ -625,7 +625,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$35–$60",
     description: "Glass aquarium tank that gives fish or amphibians more stable water volume than tiny setups.",
-    covers: ["20-gallon long aquarium (terrestrial setup)", "20-gallon long+ aquarium", "30x12x12 in or larger enclosure", "20-gallon+ enclosure"],
+    covers: ["20-gallon long aquarium (terrestrial setup)", "20-gallon long+ aquarium", "30x12x12 in or larger enclosure", "20-gallon+ enclosure", "20-gallon long tank (40-gallon breeder if keeping two)", "20-gallon long tank (10-gallon for a bare minimum school of 6)", "20-gallon long for that school, 10 gallons only for a bare minimum six", "20-gallon long glass tank for a pair, 40-gallon breeder preferred", "20-gallon long tank, or 30-plus for sailfin varieties or a growing colony", "20-gallon long tank, 30 by 12 by 12 inches", "20-gallon long tank, 29 or 30 gallons preferred", "A 20 gallon long tank, or a 40-gallon breeder tank or tub"],
     pets: ["reptiles-amphibians", "fish"],
   },
 
@@ -640,7 +640,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$280–$400",
     description: "Reptile enclosure that provides secure living space with easier access, ventilation, and heat control.",
-    covers: ["4x2x2 ft enclosure (PVC or wood/glass)", "4x2x2 ft enclosure", "4x2x2 ft+ enclosure", "4x2x2 ft escape-proof enclosure", "4x2x2 ft PVC or wood enclosure", "3x1.5x1.5 ft to 4x2x2 ft enclosure"],
+    covers: ["4x2x2 ft enclosure (PVC or wood/glass)", "4x2x2 ft enclosure", "4x2x2 ft+ enclosure", "4x2x2 ft escape-proof enclosure", "4x2x2 ft PVC or wood enclosure", "3x1.5x1.5 ft to 4x2x2 ft enclosure", "4x2x2 ft front-opening PVC enclosure", "4x2x2 ft enclosure, secure and locking, PVC preferred over glass", "4x2x2 ft PVC enclosure", "A 4x2x2 ft enclosure as a floor, up to 8x4x4 for a full-grown Egyptian", "40-gallon breeder or 4x2x2 ft PVC enclosure", "Enclosed, front-opening enclosure (4x2x2 ft from hatchling through juvenile)"],
     altGroup: "pvc-enclosure-4x2x2",
     pets: ["reptiles-amphibians"],
   },
@@ -668,7 +668,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.2,
     price: "$142–$180",
     description: "Tall front-opening terrarium suited to climbing reptiles, geckos, or frogs.",
-    covers: ["18x18x24 in arboreal enclosure", "18x18x24 in planted vivarium", "18x18x24 in tall planted enclosure", "18x18x24 in+ arboreal terrarium"],
+    covers: ["18x18x24 in arboreal enclosure", "18x18x24 in planted vivarium", "18x18x24 in tall planted enclosure", "18x18x24 in+ arboreal terrarium", "18x18x24 in+ arboreal terrarium (24x18x24 for a small group of two to four)", "An 18x18x24 for the colony it becomes, up to about 9", "18x18x24in vertical terrarium for a satanic leaf-tailed gecko, more for the larger species", "18x18x24 inch front-opening arboreal enclosure", "18x18x24 inch arboreal terrarium (24x24x24 preferred)"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -695,7 +695,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$120–$220",
     description: "Open-top tortoise habitat that provides floor space, airflow, and easier access for cleaning.",
-    covers: ["Outdoor enclosure or large tortoise table", "Tortoise table or outdoor pen", "Indoor tortoise table (for hatchlings/juveniles)"],
+    covers: ["Outdoor enclosure or large tortoise table", "Tortoise table or outdoor pen", "Indoor tortoise table (for hatchlings/juveniles)", "4x2 ft (or larger) open-top tortoise table", "Tortoise table for the juvenile stage"],
     pets: ["reptiles-amphibians"],
   },
 
@@ -710,7 +710,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$10–$25",
     description: "Perches in varied shapes or diameters that help exercise bird feet and prevent pressure spots.",
-    covers: ["Perches of varied diameters", "Perches and swings", "Multiple textured perches"],
+    covers: ["Perches of varied diameters", "Perches and swings", "Multiple textured perches", "Multiple perches of varied diameters and textures", "Perches of varied diameter and texture", "Perches of varied diameter and material", "Perches of varied diameter", "Perches of varied diameters and textures, plus a swing"],
     altGroup: "bird-perches",
     pets: ["birds"],
   },
@@ -724,7 +724,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$10–$18",
     description: "Soft hanging pouch that gives small pets a cozy place to sleep, hide, and feel secure.",
-    covers: ["Bonding pouch", "Multiple sleeping pouches", "Snuggle pouch or bird tent"],
+    covers: ["Bonding pouch", "Multiple sleeping pouches", "Snuggle pouch or bird tent", "A bonding pouch you can carry against your body", "Sleeping pouch, positioned high in the cage"],
     pets: ["small-mammals", "birds"],
   },
   {
@@ -737,7 +737,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$10–$30",
     description: "Hideout that gives pets a secure place to shelter, reduce stress, and rest.",
-    covers: ["Hideouts and tunnels", "Hideout/igloo", "Platforms and hideouts", "Hideout"],
+    covers: ["Hideouts and tunnels", "Hideout/igloo", "Platforms and hideouts", "Hideout", "Hideout for the nest to go inside"],
     pets: ["small-mammals"],
   },
   {
@@ -750,7 +750,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$15–$30",
     description: "Natural wood decor that adds climbing structure, cover, and a more natural-looking habitat.",
-    covers: ["Driftwood and tall plants", "Driftwood and plant cover", "Heavy driftwood and rock (digging-proof)", "Driftwood or Indian almond leaves"],
+    covers: ["Driftwood and tall plants", "Driftwood and plant cover", "Heavy driftwood and rock (digging-proof)", "Driftwood or Indian almond leaves", "Driftwood for structure", "Driftwood or rock for biofilm to grow on", "Substantial driftwood, or several pieces, not an ornament"],
     pets: ["fish"],
   },
   {
@@ -763,7 +763,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$18–$35",
     description: "Live plants that add cover, humidity, and a more natural look to a terrarium.",
-    covers: ["Dense live plants", "Live plants (pothos, ficus)", "Live plants (pothos, ficus, bromeliads)", "Live plants (pothos, hibiscus, ficus)", "Dense live or silk plants", "Live or silk plants"],
+    covers: ["Dense live plants", "Live plants (pothos, ficus)", "Live plants (pothos, ficus, bromeliads)", "Live plants (pothos, hibiscus, ficus)", "Dense live or silk plants", "Live or silk plants", "Broad-leafed live plants, with artificial foliage filling out the dense parts", "Dense live planting, layered rather than in one plane", "Live or artificial foliage, densely planted"],
     pets: ["fish", "reptiles-amphibians"],
   },
   {
@@ -789,7 +789,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$45–$75",
     description: "Modular grid-and-coroplast cage that gives guinea pigs much more usable floor space.",
-    covers: ["C&C cage (7.5 sq ft+)", "Exercise pen or C&C condo"],
+    covers: ["C&C cage (7.5 sq ft+)", "Exercise pen or C&C condo", "C&C cage or similar (7.5 sq ft minimum, 10.5 for a pair)"],
     pets: ["small-mammals"],
   },
   {
@@ -841,7 +841,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$10–$14",
     description: "Supplement tablets that help guinea pigs meet daily vitamin C needs.",
-    covers: ["Vitamin C supplement (if needed)"],
+    covers: ["Vitamin C supplement (if needed)", "Vitamin C supplement (backup, not a replacement for fresh food)"],
     pets: ["small-mammals"],
   },
 
@@ -856,7 +856,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$18–$26",
     description: "High-fiber timothy hay that supports tooth wear and healthy digestion in herbivores.",
-    covers: ["Grass hay (unlimited)"],
+    covers: ["Grass hay (unlimited)", "Timothy or orchard grass hay", "Hay, worked into the substrate to hold tunnel shape", "Unlimited grass hay (timothy, meadow, or orchard)"],
     pets: ["small-mammals"],
   },
   {
@@ -869,7 +869,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$450–$650",
     description: "Aquarium chiller that helps keep cold-water species like axolotls in a safer temperature range.",
-    covers: ["Aquarium chiller (keeps water 60-64°F)"],
+    covers: ["Aquarium chiller (keeps water 60-64°F)", "Aquarium chiller, or fan-based cooling in cooler climates"],
     altGroup: "axolotl-chiller",
     pets: ["reptiles-amphibians", "fish"],
   },
@@ -1051,7 +1051,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$10–$16",
     description: "Soft sinking pellets sized for axolotls and other amphibians that prefer meat-based foods.",
-    covers: [],
+    covers: ["Nightcrawlers and a sinking pellet formulated for axolotls"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1064,7 +1064,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$8–$12",
     description: "Water conditioner that removes chlorine and chloramine so tap water is safer for fish and amphibians.",
-    covers: [],
+    covers: ["Water conditioner or dechlorinator"],
     pets: ["fish", "reptiles-amphibians"],
   },
   {
@@ -1090,7 +1090,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$10–$30",
     description: "Hideout that gives pets a secure place to shelter, reduce stress, and rest.",
-    covers: [], // resin hide caves are common in both fish tanks and aquatic reptile/amphibian tanks (turtle, axolotl)
+    covers: ["Caves, PVC pipes, and hides"], // resin hide caves are common in both fish tanks and aquatic reptile/amphibian tanks (turtle, axolotl)
     pets: ["fish", "reptiles-amphibians"],
   },
   {
@@ -1103,7 +1103,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$110–$130",
     description: "T5 UVB fixture kit that delivers strong, even UVB for reptiles that need regular basking exposure.",
-    covers: [],
+    covers: ["T5 HO UVB in the 12% desert range", "T5 HO UVB kit, 36 inch, 12% or 14% bulb"],
     altGroup: "t5-uvb-fixture",
     pets: ["reptiles-amphibians"],
   },
@@ -1117,7 +1117,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$90–$110",
     description: "T5 UVB fixture kit that delivers strong, even UVB for reptiles that need regular basking exposure.",
-    covers: [],
+    covers: ["T5 HO UVB kit spanning at least half the warm side", "T5 HO UVB fixture and bulb (Arcadia 12% or Zoo Med ReptiSun 10.0)"],
     altGroup: "t5-uvb-fixture",
     pets: ["reptiles-amphibians"],
   },
@@ -1131,7 +1131,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$111–$141",
     description: "T5 UVB fixture kit that delivers strong, even UVB for reptiles that need regular basking exposure.",
-    covers: ["T5 HO UVB fixture + bulb", "UVB bulb replacement (every 6-12 months)", "Strong desert UVB (T5 HO Arcadia Dragon 12%)"],
+    covers: ["T5 HO UVB fixture + bulb", "UVB bulb replacement (every 6-12 months)", "Strong desert UVB (T5 HO Arcadia Dragon 12%)", "Linear T5 HO UVB kit (Arcadia 14% Dragon or ReptiSun 10.0)", "A T5 HO UVB kit around 14%, plus a bright daylight LED bar", "Strong T5 HO UVB fixture for indoor housing"],
     altGroup: "t5-uvb-fixture",
     pets: ["reptiles-amphibians"],
   },
@@ -1173,7 +1173,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.3,
     price: "$12–$18",
     description: "Stick-on digital probes that make it easy to monitor multiple temperature zones in one reptile setup.",
-    covers: [],
+    covers: ["Thermometer"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1186,7 +1186,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$13–$21",
     description: "Handheld laser thermometer for instant surface temperature checks. Great for basking spots and warm hides.",
-    covers: [], // generic-brand IR gun, commonly used to check heat-source surface temps for hedgehog/sugar glider setups too, not just reptile basking spots
+    covers: ["Infrared temp gun for the mat's surface", "Infrared thermometer for surface readings", "Infrared temperature gun"], // generic-brand IR gun, commonly used to check heat-source surface temps for hedgehog/sugar glider setups too, not just reptile basking spots
     pets: ["reptiles-amphibians", "small-mammals"],
   },
   {
@@ -1199,7 +1199,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$10–$18",
     description: "Seagrass lounging hammock that adds a raised basking and climbing spot for bearded dragons.",
-    covers: [],
+    covers: ["Hammock"],
     altGroup: "basking-hammock",
     pets: ["reptiles-amphibians"],
   },
@@ -1330,7 +1330,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.3,
     price: "$140–$165",
     description: "Spacious bird cage that leaves room for short flights, toys, and multiple perches.",
-    covers: [],
+    covers: ["Wide flight cage, at least 24 by 18 by 18 inches, bar spacing half an inch or less, powder-coated steel"],
     altGroup: "bird-flight-cage",
     pets: ["birds"],
   },
@@ -1386,7 +1386,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$10–$25",
     description: "Perches in varied shapes or diameters that help exercise bird feet and prevent pressure spots.",
-    covers: [],
+    covers: ["Natural wood perches of varied diameter", "Perches of varied diameter and natural wood, no uniform dowels or sandpaper covers"],
     altGroup: "bird-perches",
     pets: ["birds"],
   },
@@ -1442,7 +1442,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$15–$22",
     description: "Pelleted bird diet designed to give more balanced nutrition than seed-heavy mixes.",
-    covers: ["Small parrot pellets"],
+    covers: ["Small parrot pellets", "Formulated small parrot pellets"],
     altGroup: "small-parrot-pellets",
     pets: ["birds"],
   },
@@ -1456,7 +1456,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$10–$15",
     description: "Pelleted bird diet designed to give more balanced nutrition than seed-heavy mixes.",
-    covers: [],
+    covers: ["Formulated pellets"],
     altGroup: "small-parrot-pellets",
     pets: ["birds"],
   },
@@ -1484,7 +1484,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$18–$26",
     description: "Pelleted bird diet designed to give more balanced nutrition than seed-heavy mixes.",
-    covers: [],
+    covers: ["High-quality small parrot pellets"],
     altGroup: "small-parrot-pellets",
     pets: ["birds"],
   },
@@ -1498,7 +1498,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$75–$100",
     description: "Pelleted bird diet designed to give more balanced nutrition than seed-heavy mixes.",
-    covers: ["High-quality parrot pellets", "Large parrot pellets"],
+    covers: ["High-quality parrot pellets", "Large parrot pellets", "Formulated large-parrot pellets"],
     pets: ["birds"],
   },
   {
@@ -1537,7 +1537,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$12–$18",
     description: "Pelleted bird diet designed to give more balanced nutrition than seed-heavy mixes.",
-    covers: ["Seed mix or pellets"],
+    covers: ["Seed mix or pellets", "A small finch or canary pellet formula", "Pellets formulated for canaries, plus a little seed"],
     pets: ["birds"],
   },
   {
@@ -1550,7 +1550,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$4–$8",
     description: "Millet spray treat that encourages foraging and works well for taming or training small birds.",
-    covers: ["Millet sprays (treats)"],
+    covers: ["Millet sprays (treats)", "Millet, for training rewards"],
     altGroup: "bird-millet",
     pets: ["birds"],
   },
@@ -1606,7 +1606,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.3,
     price: "$1–$4",
     description: "Cuttlebone supplement birds can chew for calcium and natural beak wear.",
-    covers: [],
+    covers: ["Cuttlebone", "Cuttlebone or another calcium source"],
     altGroup: "bird-cuttlebone",
     pets: ["birds"],
   },
@@ -1634,7 +1634,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$10–$22",
     description: "Chew, climb, or forage toy that helps reduce boredom and encourages movement in the cage.",
-    covers: ["Foraging and shreddable toys", "Shreddable toys"],
+    covers: ["Foraging and shreddable toys", "Shreddable toys", "Hanging forage toys sized for a small beak", "Shreddable and chew toys"],
     altGroup: "bird-foraging-toys",
     pets: ["birds"],
   },
@@ -1704,7 +1704,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$90–$110",
     description: "HEPA air purifier that captures dander, dust, and fine particles from pet rooms.",
-    covers: [],
+    covers: ["An air purifier"],
     altGroup: "air-purifier",
     pets: ["reptiles-amphibians", "birds", "fish", "dogs-cats", "small-mammals"],
   },
@@ -1767,7 +1767,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$73–$93",
     description: "Thermostat that automatically adjusts heat output to hold a steadier basking temperature.",
-    covers: ["Quality thermostat", "Heat source + quality thermostat"],
+    covers: ["Quality thermostat", "Heat source + quality thermostat", "Thermostat for the heat source", "A dimming thermostat for the basking bulb", "Dimming thermostat"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1794,7 +1794,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$20–$28",
     description: "Calcium supplement dust for feeders or greens to support bones, eggs, and muscle function.",
-    covers: ["Calcium and multivitamin supplements"],
+    covers: ["Calcium and multivitamin supplements", "Calcium with D3", "Calcium and D3 supplement"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1807,7 +1807,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$15–$25",
     description: "Calcium supplement dust for feeders or greens to support bones, eggs, and muscle function.",
-    covers: ["Calcium w/D3 + multivitamin"],
+    covers: ["Calcium w/D3 + multivitamin", "Calcium w/D3 and a reptile multivitamin", "All-in-one calcium and vitamin powder", "Calcium and multivitamin powder, or an all-in-one"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1859,7 +1859,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$49–$71",
     description: "T5 UVB fixture kit that provides moderate UVB for tropical or shade-dwelling reptiles.",
-    covers: ["Low-output UVB (T5 HO)", "Low-output UVB (T5 HO 5%)", "Low-output UVB (T5 HO, Zone 1)", "Low-output UVB (optional but beneficial)", "UVB (T5 HO 5-6%)", "Optional low-level UVB (5%)"],
+    covers: ["Low-output UVB (T5 HO)", "Low-output UVB (T5 HO 5%)", "Low-output UVB (T5 HO, Zone 1)", "Low-output UVB (optional but beneficial)", "UVB (T5 HO 5-6%)", "Optional low-level UVB (5%)", "Low-output UVB (T5 HO in the 5 to 7% range)", "Optional low-output 2 to 5% UVB", "Optional low-output T5 UVB", "Optional low-output linear T5 UVB on a 12-hour timer", "Low-output UVB (T5 HO, around 5.0)", "Low-output T5 UVB and hood", "Low-output UVB, a 5% or forest-strength T5 bulb"],
     altGroup: "low-output-uvb-t5",
     pets: ["reptiles-amphibians"],
   },
@@ -1929,7 +1929,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$14–$22",
     description: "Complete powdered gecko diet you mix with water for fruit-eating species like cresteds.",
-    covers: ["Commercial crested gecko diet (CGD)"],
+    covers: ["Commercial crested gecko diet (CGD)", "Powdered crested gecko diet"],
     altGroup: "crested-gecko-diet",
     pets: ["reptiles-amphibians"],
   },
@@ -1957,7 +1957,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$14–$22",
     description: "Complete powdered gecko diet you mix with water for fruit-eating species like cresteds.",
-    covers: [],
+    covers: ["Powdered crested gecko diet, three or more flavors"],
     altGroup: "crested-gecko-diet",
     pets: ["reptiles-amphibians"],
   },
@@ -1985,7 +1985,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.2,
     price: "$23–$33",
     description: "Hideout that gives pets a secure place to shelter, reduce stress, and rest.",
-    covers: ["Multiple large hides"],
+    covers: ["Multiple large hides", "Multiple hides, one at each end of the gradient"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -2011,7 +2011,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.0,
     price: "$11–$19",
     description: "Hideout that gives pets a secure place to shelter, reduce stress, and rest.",
-    covers: ["Two snug hides"],
+    covers: ["Two snug hides", "A hide (cork bark, half-log, or a broken terracotta pot)"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -2024,7 +2024,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$8–$14",
     description: "Feeding tongs that keep fingers farther from bites while making insects easier to offer accurately.",
-    covers: ["Feeding tongs"],
+    covers: ["Feeding tongs", "Long forceps with soft padding"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -2050,7 +2050,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$14–$24",
     description: "Simple thermostat that turns heaters on and off to keep a safer enclosure temperature.",
-    covers: [], // genuinely multi-purpose per its own listing (brooder/greenhouse/incubator use) - also fits hedgehog/sugar glider heat mat setups
+    covers: ["A thermostat, only if you are running supplemental heat to breed"], // genuinely multi-purpose per its own listing (brooder/greenhouse/incubator use) - also fits hedgehog/sugar glider heat mat setups
     pets: ["reptiles-amphibians", "small-mammals"],
   },
   {
@@ -2063,7 +2063,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.2,
     price: "$202–$258",
     description: "Reptile enclosure that provides secure living space with easier access, ventilation, and heat control.",
-    covers: ["36x18x18 in enclosure"],
+    covers: ["36x18x18 in enclosure", "36x18x18 inch enclosure, or a 40-gallon breeder", "36x18x18 inch enclosure", "A 36x18x18 inch enclosure as a floor, larger for an active species", "2x2x2 foot or 36x18x18 inch PVC or glass enclosure, front-opening and securely latching", "36x18x18 inch enclosure, or an outdoor pen with the fencing buried", "20 to 30 gallon enclosure for an adult, or 36x18x18 inches for a roomier setup"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -2098,7 +2098,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$16–$22",
     description: "Vitamin and calcium combo made to round out sugar glider diets that need supplementation.",
-    covers: ["Calcium and multivitamin supplements (glider-specific)"],
+    covers: ["Calcium and multivitamin supplements (glider-specific)", "Calcium and vitamin D3 multivitamin made for sugar gliders"],
     pets: ["small-mammals"],
   },
   {
@@ -2111,7 +2111,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$20–$28",
     description: "Calcium and vitamin supplement for tortoises and other herbivorous reptiles on plant-heavy diets.",
-    covers: ["Calcium and multivitamin supplements (herbivore, no added phosphorus)", "Calcium supplements"],
+    covers: ["Calcium and multivitamin supplements (herbivore, no added phosphorus)", "Calcium supplements", "Phosphorus-free calcium and a tortoise multivitamin"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -2124,7 +2124,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$10–$18",
     description: "Feeding tongs that keep fingers farther from bites while making insects easier to offer accurately.",
-    covers: ["Feeding tongs (fine-tip precision)"],
+    covers: ["Feeding tongs (fine-tip precision)", "Fine-tip feeding tongs"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -2137,7 +2137,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$7–$12",
     description: "Feeding tongs that keep fingers farther from bites while making insects easier to offer accurately.",
-    covers: ["Feeding tongs (short, soft-tipped)"],
+    covers: ["Feeding tongs (short, soft-tipped)", "Short, soft-tipped feeding tongs"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -2163,7 +2163,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$12–$18",
     description: "Sand and coconut-fiber blend that lets hermit crabs dig, burrow, and hold humidity better.",
-    covers: ["Deep sand/coconut fiber substrate"],
+    covers: ["Deep sand/coconut fiber substrate", "Play sand and coconut fiber for substrate"],
     altGroup: "hermit-crab-substrate",
     pets: ["reptiles-amphibians"],
   },
@@ -2177,7 +2177,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$10–$16",
     description: "Coconut-fiber substrate that holds moisture well for tropical reptiles, invertebrates, and plant roots.",
-    covers: ["Moist substrate (coconut fiber + topsoil)", "Coconut fiber and peat substrate", "Coconut fiber + topsoil substrate", "Deep coconut fiber or topsoil substrate"],
+    covers: ["Moist substrate (coconut fiber + topsoil)", "Coconut fiber and peat substrate", "Coconut fiber + topsoil substrate", "Deep coconut fiber or topsoil substrate", "Coconut fiber, peat, or organic pesticide-free soil substrate"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -2190,7 +2190,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$55–$70",
     description: "T5 UVB fixture kit that delivers strong, even UVB for reptiles that need regular basking exposure.",
-    covers: ["Strong desert UVB (T5 HO 12%+)", "Strong UVB (Arcadia 12%, indoor setups)", "Strong UVB (T5 HO)"],
+    covers: ["Strong desert UVB (T5 HO 12%+)", "Strong UVB (Arcadia 12%, indoor setups)", "Strong UVB (T5 HO)", "Linear T5 HO UVB fixture and bulb"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -2216,7 +2216,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.2,
     price: "$155–$195",
     description: "Screen enclosure that offers strong airflow for reptiles that do best in drier conditions.",
-    covers: ["24x24x48 in all-screen enclosure"],
+    covers: ["24x24x48 in all-screen enclosure", "24x24x48 inch screen or hybrid enclosure, larger if the space allows"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -2229,7 +2229,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$95–$120",
     description: "Low-profile water dish that gives reptiles a sturdy place to drink or soak without tipping easily.",
-    covers: ["Large water tub for soaking"],
+    covers: ["Large water tub for soaking", "Water tub large enough for an adult to fully enter", "A large soaking tub the iguana can fully access"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -2281,7 +2281,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$10–$16",
     description: "Safe small-animal chew set that supports tooth wear and gives bored pets something to gnaw.",
-    covers: ["Chew toys (mineral/pumice)"],
+    covers: ["Chew toys (mineral/pumice)", "Safe chew toys (mineral, pumice, untreated wood)", "Mineral or lava chew blocks and untreated hardwood"],
     pets: ["small-mammals"],
   },
   {
@@ -2294,7 +2294,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$10–$18",
     description: "Safe small-animal chew set that supports tooth wear and gives bored pets something to gnaw.",
-    covers: ["Chew toys (smaller, softer)", "Chew toys and wood blocks"],
+    covers: ["Chew toys (smaller, softer)", "Chew toys and wood blocks", "Safe chew toys"],
     pets: ["small-mammals"],
   },
   {
@@ -2385,7 +2385,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$10–$16",
     description: "Low-glare amber night light that makes nighttime checks easier without harsh white light.",
-    covers: ["Nightlight (prevents night frights)"],
+    covers: ["Nightlight (prevents night frights)", "Nightlight or cage cover (night frights)"],
     pets: ["birds"],
   },
   {
@@ -2398,7 +2398,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$55–$80",
     description: "Starter aquarium kit with tank, filter, and light for giving a betta more stable housing.",
-    covers: ["5+ gallon tank"],
+    covers: ["5+ gallon tank", "5+ gallon tank with a tight-fitting lid (bettas jump)"],
     pets: ["fish"],
   },
   {
@@ -2411,7 +2411,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$12–$18",
     description: "Natural aquarium sand that gives betta and planted freshwater tanks a clean, soft-bottom look.",
-    covers: ["Substrate (sand or smooth gravel)", "Smooth gravel or sand substrate"],
+    covers: ["Substrate (sand or smooth gravel)", "Smooth gravel or sand substrate", "Soft substrate (sand or smooth gravel)"],
     pets: ["fish"],
   },
   {
@@ -2424,7 +2424,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$10–$16",
     description: "Balanced pelleted staple food that is easier to portion and more complete than a treat-heavy mix.",
-    covers: ["Rabbit pellets"],
+    covers: ["Rabbit pellets", "Plain timothy-based pellets"],
     pets: ["small-mammals"],
   },
   {
@@ -2437,7 +2437,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$28–$40",
     description: "Ventilated small-animal carrier that makes trips to the vet or outdoor time easier to manage.",
-    covers: [],
+    covers: ["A carrier"],
     pets: ["small-mammals"],
   },
   {
@@ -2450,7 +2450,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$3–$9",
     description: "Heavy small-animal bowl that is harder to tip during meals.",
-    covers: ["Water bottle and food dishes"],
+    covers: ["Water bottle and food dishes", "Heavy food and water dishes, or a bottle"],
     pets: ["small-mammals"],
   },
   {
@@ -2476,7 +2476,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$25–$35",
     description: "Corner litter pan that helps keep rabbit or guinea pig housing cleaner.",
-    covers: [],
+    covers: ["Corner litter box with paper or pelleted litter"],
     pets: ["small-mammals"],
   },
   {
@@ -2502,7 +2502,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$36–$52",
     description: "Metal exercise pen that creates a roomy, temporary play area indoors or outside.",
-    covers: [], // this is literally a dog/puppy exercise pen repurposed for rabbits here - a dog owner would recognize and want it too
+    covers: ["Foldable metal exercise pen, 4 by 4 feet or bigger"], // this is literally a dog/puppy exercise pen repurposed for rabbits here - a dog owner would recognize and want it too
     pets: ["small-mammals", "dogs-cats"],
   },
 
@@ -2559,7 +2559,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$45–$60",
     description: "Aquarium filter that moves water through media to keep tanks clearer and biologically healthier.",
-    covers: ["Hang-on-back filter"], // hang-on-back filter, a distinct filter type from the canister filters already linked
+    covers: ["Hang-on-back filter", "A secondary hang-on-back filter for redundancy", "Filter rated above the tank volume, for a messy eater", "Hang-on-back or canister filter sized for the tank, gentle to moderate flow"], // hang-on-back filter, a distinct filter type from the canister filters already linked
     altGroup: "goldfish-filtration",
     pets: ["fish"],
   },
@@ -2599,7 +2599,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$280–$360",
     description: "Roomy multi-level small-animal cage that gives chinchillas more climbing space and easy front access.",
-    covers: ["24x24x48 in multi-level cage", "3x2x2 ft multi-level cage"], // Critter Nation and Ferret Nation are the same MidWest cage line under different branding
+    covers: ["24x24x48 in multi-level cage", "3x2x2 ft multi-level cage", "24x24x36 inch multi-level metal cage", "30x24x48 inch double-unit multi-level cage"], // Critter Nation and Ferret Nation are the same MidWest cage line under different branding
     altGroup: "rat-multilevel-cage",
     pets: ["small-mammals"],
   },
@@ -2613,7 +2613,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$10–$20",
     description: "Balanced pelleted staple food that is easier to portion and more complete than a treat-heavy mix.",
-    covers: [], // "Chinchilla pellets" cost-builder line is perishable-adjacent food, correctly not auto-linked
+    covers: ["Plain, chinchilla-specific pellets"], // "Chinchilla pellets" cost-builder line is perishable-adjacent food, correctly not auto-linked
     altGroup: "chinchilla-food",
     pets: ["small-mammals"],
   },
@@ -2646,7 +2646,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$25–$37",
     description: "Coconut-fiber substrate that holds moisture well for tropical reptiles, invertebrates, and plant roots.",
-    covers: [], // the plain coconut-fiber half of hermit crab's 5:1 sand/coco mix - the already-linked Fluker's product is the premixed blend, browsable only
+    covers: ["Coconut coir, or coir and sphagnum moss", "Coco fiber, peat, or a soil-based mix, enough for 5 to 6 inches and deeper if you can", "Coconut fiber, or a coconut fiber and sphagnum moss blend", "Coconut fiber, cypress mulch, or leaf litter", "Coconut fiber or naturalistic soil blend for the land portion", "Coconut fiber, peat moss or orchid bark substrate", "Coconut fiber, cypress mulch, or reptile-specific soil substrate", "Coco fiber or coco husk substrate, enough for 3 to 4 inches", "Moisture-retentive substrate", "Coconut coir, peat moss or plain paper towel for substrate", "Coconut fiber, commercial reptile soil, fertilizer-free topsoil, or cypress mulch, enough for 3 to 4 inches and deeper if the enclosure allows", "Coconut fiber, bioactive soil mix, or paper towel", "Coconut fiber or bioactive substrate, enough for 2 to 3 inches", "Coconut fiber, soil, bark or paper towel substrate", "Coconut fiber, cypress mulch, or a peat-based substrate"], // the plain coconut-fiber half of hermit crab's 5:1 sand/coco mix - the already-linked Fluker's product is the premixed blend, browsable only
     altGroup: "hermit-crab-substrate",
     pets: ["reptiles-amphibians"],
   },
@@ -2660,7 +2660,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$18–$26",
     description: "Salt mix for preparing marine or brackish water with stable salinity and essential trace elements.",
-    covers: ["Marine salt mix (saltwater pool)"], // real gap filled - hermit crab's saltwater pool line had no product before
+    covers: ["Marine salt mix (saltwater pool)", "Marine aquarium salt mix"], // real gap filled - hermit crab's saltwater pool line had no product before
     pets: ["reptiles-amphibians"],
   },
   {
@@ -2673,7 +2673,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$10–$16",
     description: "Assorted natural shells that give hermit crabs larger home options as they grow and molt.",
-    covers: ["Spare shells (2-3 per crab)"], // real gap filled - hermit crab's spare shells line had no product before
+    covers: ["Spare shells (2-3 per crab)", "Natural unpainted shells in a range of sizes, several per crab"], // real gap filled - hermit crab's spare shells line had no product before
     pets: ["reptiles-amphibians"],
   },
   // --- Batch 7: gargoyle/mourning/african-fat-tail gecko gear-list crosscheck alternates ---
@@ -2687,7 +2687,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$55–$70",
     description: "T5 UVB fixture kit that provides moderate UVB for tropical or shade-dwelling reptiles.",
-    covers: [], // alternate only - user's gear-list research specifically named this kit for gargoyle gecko UVB
+    covers: ["Low-output UVB bulb in the 5 to 7% range, optional", "Low-output UVB for a UVI of 0.6 to 1.4, never a basking-style bulb", "T5 HO UVB in the 5 to 6% range, or an Arcadia ShadeDweller kit"], // alternate only - user's gear-list research specifically named this kit for gargoyle gecko UVB
     altGroup: "low-output-uvb-t5",
     pets: ["reptiles-amphibians"],
   },
@@ -2730,7 +2730,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$180–$250",
     description: "EPDM liner that creates a durable, fish-safe waterproof barrier for backyard ponds.",
-    covers: ["1,000+ gallon pond excavation and liner"],
+    covers: ["1,000+ gallon pond excavation and liner", "EPDM rubber liner and underlayment"],
     pets: ["fish"],
   },
   {
@@ -2756,7 +2756,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$80–$110",
     description: "Outdoor air pump kit that boosts pond oxygen levels for fish and beneficial bacteria.",
-    covers: ["Aeration or waterfall pump"],
+    covers: ["Aeration or waterfall pump", "Aeration kit or waterfall pump"],
     pets: ["fish"],
   },
   {
@@ -2795,7 +2795,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$16–$24",
     description: "Beneficial bacteria supplement that helps seed biofiltration and break down waste in ponds.",
-    covers: ["Beneficial bacteria (spring startup)"],
+    covers: ["Beneficial bacteria (spring startup)", "Beneficial bacteria, for spring startup"],
     pets: ["fish"],
   },
   {
@@ -2821,7 +2821,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$45–$70",
     description: "Above-tank basking dock that gives aquatic turtles a dry platform without taking much swim space.",
-    covers: ["Large basking platform"],
+    covers: ["Large basking platform", "Large basking platform that lets the turtle dry off completely"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -2834,7 +2834,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$9–$14",
     description: "Aquatic turtle pellets formulated to provide a more complete daily staple than feeder-only diets.",
-    covers: ["Commercial turtle pellets"],
+    covers: ["Commercial turtle pellets", "Commercial aquatic turtle pellets and dark leafy greens"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -2847,7 +2847,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.3,
     price: "$45–$70",
     description: "Compact terrarium sized for invertebrates, with easier front access for feeding and maintenance.",
-    covers: ["10-20 gallon enclosure with secure lid", "10-20 gallon terrarium"],
+    covers: ["10-20 gallon enclosure with secure lid", "10-20 gallon terrarium", "10-gallon enclosure minimum for one adult, 20 to 30 gallons or more for a group", "20x10x10 inch enclosure or larger, wider than tall", "A 5 gallon tank as a floor, 10 to 20+ gallons for a colony, with a secure screened lid"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -2860,7 +2860,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$35–$45",
     description: "UV flashlight that helps spot scorpions, residue, and fluorescent markings during enclosure checks.",
-    covers: ["UV/black light (optional)"],
+    covers: ["UV/black light (optional)", "UV torch, optional, for viewing"],
     pets: ["reptiles-amphibians"],
   },
 
@@ -2875,7 +2875,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$12–$20",
     description: "Soft hanging pouch that gives small pets a cozy place to sleep, hide, and feel secure.",
-    covers: ["Fleece hammocks and sleep sacks"],
+    covers: ["Fleece hammocks and sleep sacks", "Fleece hammocks and sleep sacks at varied heights"],
     pets: ["small-mammals"],
   },
   {
@@ -2888,7 +2888,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$20–$30",
     description: "Ferret kibble formulated with animal protein and fat for obligate carnivore needs.",
-    covers: ["High-quality ferret kibble or raw diet"],
+    covers: ["High-quality ferret kibble or raw diet", "High-quality, ferret-specific dry kibble"],
     pets: ["small-mammals"],
   },
   {
@@ -2914,7 +2914,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$28–$40",
     description: "Solid-surface exercise wheel that lets small pets run safely without wire rungs catching feet or tails.",
-    covers: ["11-12 in solid exercise wheel"],
+    covers: ["11-12 in solid exercise wheel", "Solid exercise wheel, 8 inches minimum"],
     pets: ["small-mammals"],
   },
   {
@@ -2927,7 +2927,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$9–$14",
     description: "Balanced pelleted staple food that is easier to portion and more complete than a treat-heavy mix.",
-    covers: ["Hamster pellets or lab blocks"],
+    covers: ["Hamster pellets or lab blocks", "Hamster-specific pellets or lab blocks"],
     pets: ["small-mammals"],
   },
 
@@ -2942,7 +2942,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.3,
     price: "$38–$42",
     description: "Axle-free solid-surface exercise wheel sized for hedgehogs, no center bar to catch legs or a tail.",
-    covers: ["Solid exercise wheel (10-12 in)", "Glider-safe axle-free wheel"],
+    covers: ["Solid exercise wheel (10-12 in)", "Glider-safe axle-free wheel", "Large solid-surface exercise wheel, 10.5 to 12 inches"],
     pets: ["small-mammals"],
   },
   {
@@ -2968,7 +2968,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$6–$8",
     description: "Staple flake food formulated specifically for fancy guppy color, growth, and fin development.",
-    covers: ["Flake/micro-pellet food + frozen brine shrimp"],
+    covers: ["Flake/micro-pellet food + frozen brine shrimp", "High-quality tropical flake or micro-pellet food"],
     pets: ["fish"],
   },
 
@@ -2983,7 +2983,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$500–$530",
     description: "Full-size 6-foot PVC enclosure with glass doors and a heavy-duty screen top, sized for an adult boa constrictor.",
-    covers: ["Adult PVC enclosure (6ft+)"],
+    covers: ["Adult PVC enclosure (6ft+)", "6ft+ adult PVC enclosure"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -2996,7 +2996,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$16–$18",
     description: "Nutritionally complete pelleted staple diet with real dried fruit, meant to make up the bulk of a sugar glider's daily food.",
-    covers: ["Commercial sugar glider diet"],
+    covers: ["Commercial sugar glider diet", "A formulated sugar glider diet"],
     pets: ["small-mammals"],
   },
   {
@@ -3009,7 +3009,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$60–$70",
     description: "Front-opening glass terrarium taller than it is wide, matching a mantis's need for vertical space to hang and molt.",
-    covers: ["Tall mesh or acrylic enclosure", "Small tall enclosure (5x5x8 in or similar)"],
+    covers: ["Tall mesh or acrylic enclosure", "Small tall enclosure (5x5x8 in or similar)", "A small vertical, front-opening enclosure, 4x4x7 inches at the least and taller if you can", "Tall enclosure, at least 8 by 8 by 12 inches for an adult"],
     pets: ["invertebrates"],
   },
   {
@@ -3022,7 +3022,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$6–$7",
     description: "Slow-sinking micro pellets sized for small-mouthed fish like neon tetras, an easy staple alongside occasional live or frozen foods.",
-    covers: ["Micro-pellet or micro-crisp food"],
+    covers: ["Micro-pellet or micro-crisp food", "Micro-pellet or crushed flake food", "Flake or micro-pellet food", "Micro or nano pellet, or a tropical flake to crush", "High-quality flake or small pellet"],
     pets: ["fish"],
   },
 
@@ -3037,7 +3037,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$540–$555",
     description: "Large PVC enclosure with the full 4-foot basking height an ackie monitor's extreme heat and burrowing needs require.",
-    covers: ["Large custom/PVC enclosure (5x2.5x4ft)"],
+    covers: ["Large custom/PVC enclosure (5x2.5x4ft)", "Juvenile enclosure, 4x2x4 ft PVC"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -3050,7 +3050,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$55–$65",
     description: "Deep, moisture-holding desert substrate built to hold a genuine burrow, the core requirement for keeping an ackie monitor well.",
-    covers: ["Deep burrowing substrate (12-24in)"],
+    covers: ["Deep burrowing substrate (12-24in)", "12 to 24 inches of soil and sand mix"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -3063,7 +3063,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.0,
     price: "$340–$360",
     description: "Wood-panel vivarium sized for an adult milk snake, holding heat and humidity more effectively than an open glass tank.",
-    covers: ["Wood or PVC vivarium (48x24x24in)"],
+    covers: ["Wood or PVC vivarium (48x24x24in)", "48x24x24 inch front-opening enclosure", "48x24x24 inch wood or PVC vivarium"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -3076,7 +3076,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.0,
     price: "$18–$25",
     description: "Halogen basking bulb, the specialist-endorsed heat source for this species over ceramic, colored, or red bulbs.",
-    covers: ["Halogen basking bulb + fixture"],
+    covers: ["Halogen basking bulb + fixture", "Low-wattage halogen basking bulb, or an under-tank heat mat", "Halogen basking bulb"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -3089,7 +3089,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$2–$4",
     description: "Plain petroleum jelly for the escape-barrier band around the top of a hissing cockroach enclosure, the single detail that keeps them from climbing out.",
-    covers: ["Plain petroleum jelly (escape barrier)"],
+    covers: ["Plain petroleum jelly (escape barrier)", "Plain petroleum jelly for the escape barrier"],
     pets: ["invertebrates"],
   },
   {
@@ -3102,7 +3102,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$290–$310",
     description: "Standard 55-gallon glass aquarium, tall enough at 20 inches to suit a small angelfish group without the shallow-tank mistake many first-time buyers make.",
-    covers: ["55-gallon tall tank (or 29-gallon tall for one fish)"],
+    covers: ["55-gallon tall tank (or 29-gallon tall for one fish)", "55-gallon tank as an entry point, 75 gallons or larger for a proper group", "55-gallon tank and stand, or a 29-gallon tall for a single adult"],
     pets: ["fish"],
   },
   {
@@ -3128,7 +3128,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$19–$26",
     description: "100W halogen PAR38 flood bulb built for basking, not just glowing. Uromastyx need surface temperatures in the 120 to 170°F range to digest and thermoregulate, hotter than a standard incandescent typically delivers, and the wide flood beam covers a full basking platform instead of one narrow hot spot.",
-    covers: ["Halogen flood basking bulb (100W, PAR38-style)"],
+    covers: ["Halogen flood basking bulb (100W, PAR38-style)", "Halogen flood bulbs and a fixture for the basking stack"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -3154,7 +3154,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$285–$315",
     description: "Full tempered-glass 18x18x36in vertical terrarium with independently opening front doors and a 10in waterproof deep base for substrate. The extra height over a standard 18x18x24in tank gives an arboreal gecko genuine climbing room, and switchable glass/mesh side panels let you dial in ventilation without sacrificing visibility.",
-    covers: ["18x18x36in glass terrarium (vertical/arboreal orientation)"],
+    covers: ["18x18x36in glass terrarium (vertical/arboreal orientation)", "Vertical arboreal enclosure, 18x18x36 inches or larger, front-opening"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -3167,7 +3167,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$30–$40",
     description: "Digital aviary scale reading in grams with a removable wooden perch, so a bird stands naturally instead of fighting a flat platform. Daily gram tracking catches the slow weight loss that often precedes illness in African greys, long before it's visible by eye.",
-    covers: ["Gram scale (weight monitoring)"],
+    covers: ["Gram scale (weight monitoring)", "Gram scale", "A gram scale"],
     pets: ["birds"],
   },
   {
@@ -3206,7 +3206,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.2,
     price: "$1,450–$1,550",
     description: "An all-welded, rust-resistant stainless steel cage big enough for cockatoos and macaws. Stainless steel matters for this species because a cockatoo's beak and constant chewing will eventually corrode or destroy powder-coated wire, and the smooth surface is easier to fully disinfect between cleanings.",
-    covers: ["King's Cages or A&E Cage Company stainless steel cage"],
+    covers: ["King's Cages or A&E Cage Company stainless steel cage", "Large stainless steel cage, or a heavy-gauge powder-coated alternative"],
     altGroup: "large-parrot-cage",
     pets: ["birds"],
   },
@@ -3225,7 +3225,7 @@ export const AFFILIATE_PRODUCTS = [
     // its stated $500-1200 range, the stainless option above ($1,450-1,550)
     // does not, so this is the primary match and the stainless cage is
     // linked as the upgrade alternative via altGroup instead.
-    covers: ["Prevue Hendryx large cage", "3x2x4 ft heavy-gauge cage with locks"],
+    covers: ["Prevue Hendryx large cage", "3x2x4 ft heavy-gauge cage with locks", "36x24x48 inch cage or larger"],
     altGroup: "large-parrot-cage",
     pets: ["birds"],
   },
@@ -3243,12 +3243,10 @@ export const AFFILIATE_PRODUCTS = [
     // cost lines (initial chew toy supply, foraging toys specifically, and
     // the annual rotating-toy budget) - all three are this same rotating
     // wooden toy set, not three different products.
-    covers: [
-      "Destructible foraging toys, rotating stock",
+    covers: ["Destructible foraging toys, rotating stock",
       "Destructible wood chew toys (initial supply)",
       "Foraging toys (large parrot, heavy-duty)",
-      "Toys (rotating, heavy destruction rate)",
-    ],
+      "Toys (rotating, heavy destruction rate)", "Destructible foraging toys (wood, cardboard, palm fiber)"],
     pets: ["birds"],
   },
   {
@@ -3261,7 +3259,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$13–$19",
     description: "This acrylic ledge mounts to the outside of a glass terrarium with a strong magnet, giving climbing geckos a fixed elevated spot to reach food and water instead of dishes sitting in the substrate. It comes with six small reusable cups, enough to rotate a water cup and a food cup while keeping spares on hand for cleaning.",
-    covers: ["Magnetic feeding ledge + small water cup"],
+    covers: ["Magnetic feeding ledge + small water cup", "Shallow feeding dishes for several heights", "Magnetic feeding ledge, mounted high"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -3274,7 +3272,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$325–$340",
     description: "The Fluval FX4 is a high-flow canister filter rated for tanks up to 250 gallons, pumping 700 US gallons per hour through multi-stage mechanical, biological, and chemical media. For a single oscar, whose size and heavy waste output demand serious filtration, the FX4 keeps ammonia and nitrite in check without the oversized footprint or cost of the 400-gallon FX6.",
-    covers: ["Fluval FX4 canister filter (for a single oscar, rated to 250gal)"],
+    covers: ["Fluval FX4 canister filter (for a single oscar, rated to 250gal)", "Canister filter rated for 4 to 5 times the tank volume", "Canister filter rated well above the actual tank volume"],
     pets: ["fish"],
   },
   {
@@ -3287,7 +3285,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$23–$29",
     description: "Hikari Cichlid Gold is a floating medium pellet formulated specifically for cichlids, and it's the go-to staple diet for pet Oscars since Oscars are themselves large cichlids. The color-enhancing formula and stabilized vitamin C support the vivid red-orange coloring Oscars are known for, and the pellets float long enough for easy portion control without clouding the tank.",
-    covers: ["Hikari Cichlid Gold pellets (strong cross-source consensus staple food)"],
+    covers: ["Hikari Cichlid Gold pellets (strong cross-source consensus staple food)", "High-quality cichlid pellets, 35 to 45% protein"],
     pets: ["fish"],
   },
   {
@@ -3313,7 +3311,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$17–$21",
     description: "An organic topsoil blend of hardwoods, compost, and leaf matter made specifically for millipedes and isopods, not a dry coconut-fiber-only substrate. It doubles as both bedding and a food source, and the added calcium supports healthy molting and exoskeleton growth in giant millipedes, which need deep, moisture-retentive, edible substrate to thrive.",
-    covers: ["Organic topsoil + leaf litter substrate", "Deep substrate (coconut fiber, topsoil, hardwood)", "Substrate replacement"],
+    covers: ["Organic topsoil + leaf litter substrate", "Deep substrate (coconut fiber, topsoil, hardwood)", "Substrate replacement", "Pesticide-free organic topsoil for a 4 to 6 inch substrate, no coconut fiber"],
     pets: ["invertebrates"],
   },
   {
@@ -3326,7 +3324,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$8–$12",
     description: "These disc-shaped wafers sink straight to the substrate and soften gradually, so corydoras and other bottom feeders can graze at their own pace instead of racing surface fish for flakes. The spirulina, silkworm, and krill blend covers the protein and plant matter corys need, and the wafer format matches how they naturally forage along the tank floor.",
-    covers: ["Sinking wafer food"],
+    covers: ["Sinking wafer food", "Sinking wafers", "Sinking wafers formulated for catfish and bottom feeders", "Sinking pellets or wafers for bottom feeders"],
     pets: ["fish"],
   },
   {
@@ -3339,7 +3337,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$250–$270",
     description: "A 24x24x24 inch glass terrarium with front-opening double hinge doors and a full mesh screen top, giving a green anole the vertical climbing room and airflow it needs since anoles spend most of their time perched off the ground. The front-opening design also makes it easier to mist, feed, and handle plants inside without the anole darting out through a top-opening lid.",
-    covers: ["24x24x24 in front-opening terrarium"],
+    covers: ["24x24x24 in front-opening terrarium", "24x24x24in front-opening terrarium, minimum, for one anole"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -3352,7 +3350,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.0,
     price: "$65–$75",
     description: "This 46 inch T5 HO fixture and bulb combo is long enough to span one end of a large tegu enclosure, delivering the high intensity UVB that big, sun loving lizards need to metabolize calcium properly. It ships with a Desert strength UVB tube built for exactly this kind of basking exposure, rather than the weaker output tubes made for small tropical species.",
-    covers: ["46in T5 HO high-output UVB fixture"],
+    covers: ["46in T5 HO high-output UVB fixture", "46 inch T5 HO UVB tube in the 12 to 14% range", "T5 HO UVB in the 10 to 12% range"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -3365,7 +3363,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$17–$23",
     description: "A heavy-duty digital outlet thermostat rated for up to 1800 watts, far more capacity than the small heat-mat controllers most keepers already own. It switches a plugged-in heat source on and off to hold a set basking temperature, which is what a large tegu enclosure's high-wattage bulb cluster or radiant heat panel needs instead of a low-wattage mat thermostat, and its day/night timer mode lets keepers automate a realistic light and heat cycle.",
-    covers: ["Heavy-duty thermostat (1000W+, for basking cluster or radiant panel)"],
+    covers: ["Heavy-duty thermostat (1000W+, for basking cluster or radiant panel)", "Heavy duty thermostat rated for that wattage"],
     pets: ["reptiles-amphibians"],
   },
 
@@ -3427,7 +3425,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$10–$14",
     description: "Bathing sand for gerbils and hamsters, which roll in it to work oil out of their coats.",
-    covers: ["Sand bath (chinchilla sand)", "Bathing sand", "Sand for bathing"],
+    covers: ["Sand bath (chinchilla sand)", "Bathing sand", "Sand for bathing", "Chinchilla sand and a sand bath dish"],
     altGroup: "small-pet-bath-sand",
     pets: ["small-mammals"],
   },
@@ -3441,7 +3439,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$12–$16",
     description: "The higher-volume alternative to the Supreme sand, with a no-dust formulation. Merck notes gerbils deprived of sand bathing develop matted fur and measurable behavior changes, so this is husbandry rather than grooming.",
-    covers: [],
+    covers: ["Dust-free, non-clumping sand bath"],
     altGroup: "small-pet-bath-sand",
     pets: ["small-mammals"],
   },
@@ -3455,7 +3453,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$35–$42",
     description: "Sized for a standard 20-gallon long, which is the tank a pair of gerbils wants. A glass tank holds the deep bedding gerbils need in a way a wire cage cannot, but it needs a secured mesh top rather than one resting on the rim.",
-    covers: ["Secure mesh lid", "Secure screen lid", "Mesh lid"],
+    covers: ["Secure mesh lid", "Secure screen lid", "Mesh lid", "Secure wire-mesh lid"],
     pets: ["small-mammals", "reptiles-amphibians"],
   },
   {
@@ -3497,7 +3495,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$190–$210",
     description: "The misting system zoos and serious keepers actually use, not a consumer fogger. A pump-driven, timer-controlled system with up to 10 nozzles for even coverage across a tall planted enclosure, worth the step up from a basic fogger for species that need genuinely consistent high humidity rather than a daily spike and crash.",
-    covers: [],
+    covers: ["A misting system, manual or automated, plus a dripper", "Automated misting system", "Misting system starter kit, or a pressure sprayer for twice-daily misting", "Dripper system or automatic mister"],
     altGroup: "reptile-misting-system",
     pets: ["reptiles-amphibians"],
   },
@@ -3513,7 +3511,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$9–$12",
     description: "Small 3 to 5.5in cork bark flats sized for a nano enclosure rather than reptile-scale cork bark, which typically overwhelms a jumping spider's small footprint. Sold specifically for jumping spider and isopod setups. New listing (4 ratings at time of sourcing) - worth a periodic recheck as more reviews come in.",
-    covers: ["Climbing branches and cork bark (miniature)"],
+    covers: ["Climbing branches and cork bark (miniature)", "Mini cork bark flats, small branches, and artificial or live foliage"],
     pets: ["invertebrates"],
   },
 
@@ -3530,7 +3528,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$199.99",
     description: "Two-tier rolling cage with 3/8 inch bar spacing, solid ramps and shelves, and a roll-out tray. A workable size for a pair of rats; step up to a Critter Nation for a trio or more.",
-    covers: [],
+    covers: ["Multi-level wire cage with solid ramped shelves"],
     altGroup: "rat-multilevel-cage",
     pets: ["small-mammals"],
   },
@@ -3544,7 +3542,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$33.99",
     description: "Solid-pan, axle-free exercise wheel wide enough for a full-size rat, with a cage-mount bracket included.",
-    covers: ["Solid-surface exercise wheel, 12 in or larger"],
+    covers: ["Solid-surface exercise wheel, 12 in or larger", "Solid-surface exercise wheel", "A solid, axle-free wheel at least 12 inches across"],
     pets: ["small-mammals"],
   },
   {
@@ -3557,7 +3555,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$12.99",
     description: "Reptile and amphibian dusting multivitamin that includes thiamine (B1) alongside other nutrients. Doesn't fully offset a thiaminase-heavy fish diet on its own, varying or limiting thiaminase-rich fish still matters, but it's the standard supplement keepers reach for.",
-    covers: ["Thiamine (B1) and calcium supplements"],
+    covers: ["Thiamine (B1) and calcium supplements", "A multivitamin for the weekly rotation"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -3570,7 +3568,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$89.99",
     description: "23.6 x 14.4 x 11.8 inch cage with 1/4 inch wire spacing, tight enough for mice. Sold and marketed as a hamster cage, but a common pick among mouse keepers for bar spacing most general \"small animal\" cages don't have.",
-    covers: ["Cage sized and spaced for mice (18x18x10 in minimum, solid floor)"],
+    covers: ["Cage sized and spaced for mice (18x18x10 in minimum, solid floor)", "Wire cage, at least 18 by 18 by 10 inches for two or three mice"],
     pets: ["small-mammals"],
   },
   {
@@ -3636,7 +3634,7 @@ export const AFFILIATE_PRODUCTS = [
     image: "/assets/images/affiliate/product-262.jpg",
     price: "$15–$25",
     description: "Oat, rye and alfalfa seed blend grown in a tray or enclosure so a grazing species crops living plants rather than eating chopped greens from a bowl.",
-    covers: ["Growable browse or forage seed for tortoises"],
+    covers: ["Growable browse or forage seed for tortoises", "Tortoise forage seed mix for growable browse"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -3663,7 +3661,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.2,
     price: "$8–$14",
     description: "Clicker and target stick for cooperative care and cognitive work. Target training moves an animal to a scale or a carrier without restraint.",
-    covers: ["Target stick or clicker for training"],
+    covers: ["Target stick or clicker for training", "Clicker and target stick"],
     pets: ["birds", "reptiles-amphibians", "small-mammals"],
   },
   {
@@ -3689,7 +3687,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.0,
     price: "$15–$25",
     description: "Multi-mechanism extraction board with sliders, lift-out plugs and a pull cord. Suits manipulative species such as monitors and tegus, not bearded dragons.",
-    covers: ["Extraction or puzzle feeder for reptiles"],
+    covers: ["Extraction or puzzle feeder for reptiles", "Extraction puzzle board", "Extraction puzzle feeder"],
     altGroup: "reptile-puzzle-feeding",
     pets: ["reptiles-amphibians"],
   },
@@ -3869,7 +3867,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B077Z2QCS5?tag=beastlyfacts-20",
     description: "Large cool mist humidifier for raising room humidity around a mesh chameleon enclosure or a bird room. Run it through a humidistat rather than on constantly.",
-    covers: [],
+    covers: ["A cool-mist humidifier on a humidistat for the overnight spike"],
     pets: ["reptiles-amphibians", "birds"],
   },
   {
@@ -3879,7 +3877,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0002DIWYQ?tag=beastlyfacts-20",
     description: "Low wattage basking bulb for small arboreal and amphibian enclosures, where a 50W bulb overshoots the safe temperature. Run it on a thermostat.",
-    covers: [],
+    covers: ["Low-wattage bulb or side-mounted heat mat", "Low-wattage heat bulb and fixture, on a thermostat", "Low-wattage basking bulb or ceramic heat emitter"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -3909,7 +3907,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0CJ5HRGGV?tag=beastlyfacts-20",
     description: "Household halogen flood bulbs, widely used as reptile basking lamps. A multipack covers the two or three bulb basking clusters large lizards and tortoises need.",
-    covers: [],
+    covers: ["Cluster of halogen flood bulbs", "Halogen basking bulbs, 75 watt, two or three for the juvenile box, roughly six for the adult branch"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -3919,7 +3917,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B000637NQU?tag=beastlyfacts-20",
     description: "Floating thermostatic de-icer that holds a hole open in pond ice so gases can escape over winter. Low wattage, sized for ponds up to about 1,000 gallons per the listing.",
-    covers: [],
+    covers: ["De-icer, in climates that freeze"],
     pets: ["fish"],
   },
   {
@@ -3949,7 +3947,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0037LWQZG?tag=beastlyfacts-20",
     description: "Freeze-dried bloodworms for a protein treat or supplement to a staple pellet. Shelf stable, so there is no freezer thawing.",
-    covers: [],
+    covers: ["Freeze-dried or frozen bloodworms/brine shrimp for variety"],
     pets: ["fish"],
   },
   {
@@ -3969,7 +3967,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B00U9ME3TI?tag=beastlyfacts-20",
     description: "Dried magnolia leaves for cover, humidity and a food source for bioactive cleanup crews. Also eaten by millipedes and roaches.",
-    covers: [],
+    covers: ["Leaf litter or sphagnum moss, for an Indonesian setup", "Leaf litter for surface cover"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -3979,7 +3977,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B07M6P6ZJD?tag=beastlyfacts-20",
     description: "Low to moderate output LED with extendable brackets, enough for viewing and low light plants. Buy the length that matches the tank; the same line comes in shorter sizes.",
-    covers: [],
+    covers: ["Standard LED light"],
     pets: ["fish"],
   },
   {
@@ -3999,7 +3997,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B00C9MR9YM?tag=beastlyfacts-20",
     description: "Larger clear tote with more depth for laying bins, dig boxes and nesting or brumation boxes for bigger animals.",
-    covers: [],
+    covers: ["A storage tub for a dig box"],
     pets: ["reptiles-amphibians", "small-mammals"],
   },
   {
@@ -4009,7 +4007,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B00M4MXBHG?tag=beastlyfacts-20",
     description: "Plain precut kraft paper for the cage tray, with no ink, dye or wax per the listing. Makes daily droppings checks and tray changes quick.",
-    covers: [],
+    covers: ["Paper cage liner", "Plain cage liner or newspaper", "Newspaper or a cage liner for the cage bottom"],
     pets: ["birds"],
   },
   {
@@ -4019,7 +4017,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0002QI5WM?tag=beastlyfacts-20",
     description: "Glass cage-mount bottle that chewers cannot damage the way they do plastic. Suits rabbits, ferrets, chinchillas, degus and rats.",
-    covers: [],
+    covers: ["Sipper water bottle"],
     pets: ["small-mammals"],
   },
   {
@@ -4039,7 +4037,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B000UJPHL8?tag=beastlyfacts-20",
     description: "Plain phosphorus free calcium with no D3, for most feedings and an always available dish. D3 then comes from UVB or a separate supplement on a schedule.",
-    covers: [],
+    covers: ["Reptile calcium powder", "Plain calcium without D3 or phosphorus"],
     pets: ["reptiles-amphibians", "small-mammals"],
   },
   {
@@ -4049,7 +4047,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0002AS23U?tag=beastlyfacts-20",
     description: "Glass tank with a large footprint for its volume, the usual pick for axolotls, gerbils and small terrestrial reptiles. Lid sold separately.",
-    covers: [],
+    covers: ["20-gallon long enclosure, 40-gallon breeder preferred"],
     pets: ["fish", "reptiles-amphibians", "small-mammals"],
   },
   {
@@ -4059,7 +4057,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0002AQ5YS?tag=beastlyfacts-20",
     description: "Breathable nylon night cover for small bird cages up to about 20x20x29 in. Blocks light for sleep without sealing in air.",
-    covers: [],
+    covers: ["A plain breathable cage cover, not an enclosed \"happy hut\"", "Cage cover for nighttime darkness"],
     pets: ["birds"],
   },
   {
@@ -4089,7 +4087,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B000WFKP80?tag=beastlyfacts-20",
     description: "Orchard grass hay, a softer alternative or rotation with timothy for rabbits, chinchillas and degus, and a grazing hay for tortoises.",
-    covers: [],
+    covers: ["Grass hay, by the box"],
     pets: ["small-mammals", "reptiles-amphibians"],
   },
   {
@@ -4099,7 +4097,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B007R6G8JW?tag=beastlyfacts-20",
     description: "Unscented white paper bedding with no cotton fluff, which also works as nesting material for mice, rats, gerbils and hamsters.",
-    covers: [],
+    covers: ["Unscented paper bedding or fleece"],
     pets: ["small-mammals"],
   },
   {
@@ -4109,7 +4107,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0046HIG7W?tag=beastlyfacts-20",
     description: "Vegetable based flake for livebearers like mollies, platies and swordtails, which graze on algae in the wild.",
-    covers: [],
+    covers: ["Flake or pellet with real vegetable or algae content, plus algae wafers"],
     pets: ["fish"],
   },
   {
@@ -4119,7 +4117,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B000ELY1YQ?tag=beastlyfacts-20",
     description: "Crushed coral that slowly raises hardness and pH, added to the filter or substrate for livebearers in soft tap water.",
-    covers: [],
+    covers: ["Crushed coral or a commercial buffering product, if your tap water runs soft"],
     pets: ["fish"],
   },
   {
@@ -4129,7 +4127,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B01G78H5XS?tag=beastlyfacts-20",
     description: "Dried catappa leaves that tint the water and add tannins for blackwater fish, and give shrimp a biofilm to graze.",
-    covers: [],
+    covers: ["Indian almond leaves and other leaf litter"],
     pets: ["fish"],
   },
   {
@@ -4139,7 +4137,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B00HZLUGSI?tag=beastlyfacts-20",
     description: "Remineralizer that adds GH and KH to RO or very soft water for neocaridina shrimp such as cherry shrimp.",
-    covers: [],
+    covers: ["Remineralizing product, if your source water comes up short", "Mineral supplement if the tap water runs soft"],
     pets: ["fish"],
   },
   {
@@ -4159,7 +4157,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B00JR8K8DA?tag=beastlyfacts-20",
     description: "Complete lab block diet for adult rats and mice, so they cannot pick out favorite pieces the way they do with seed mixes.",
-    covers: [],
+    covers: ["Rat-specific pellets or lab blocks", "Rodent-block staple food"],
     pets: ["small-mammals"],
   },
   {
@@ -4169,7 +4167,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B000MD59TC?tag=beastlyfacts-20",
     description: "Plain crushed oyster shell as a calcium source for millipedes and tortoises. Sold for poultry, but the product is the same.",
-    covers: [],
+    covers: ["Cuttlebone or crushed oyster shell", "Cuttlebone or crushed oyster shell, left in permanently"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -4179,7 +4177,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B07P9VFYVW?tag=beastlyfacts-20",
     description: "Egg food for finches and canaries, fed as a supplement to seed and especially during breeding and molt.",
-    covers: [],
+    covers: ["Egg food for molting and breeding season", "Egg food for molt and breeding season"],
     pets: ["birds"],
   },
   {
@@ -4189,7 +4187,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B00E1JOYEY?tag=beastlyfacts-20",
     description: "Fortified millet and canary seed blend for zebra finches and other small finches.",
-    covers: [],
+    covers: ["Quality finch seed mix, millet and canary seed based"],
     pets: ["birds"],
   },
   {
@@ -4199,7 +4197,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0D6D8XYLV?tag=beastlyfacts-20",
     description: "Multivitamin with preformed vitamin A (retinyl acetate) rather than beta carotene alone, for species like chameleons and monitors that cannot rely on converting it.",
-    covers: [],
+    covers: ["A multivitamin with true vitamin A"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -4219,7 +4217,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B00025Z74C?tag=beastlyfacts-20",
     description: "Floating pellets sized for a betta's mouth, as a staple alongside occasional frozen or freeze-dried foods.",
-    covers: [],
+    covers: ["Betta-specific pellets"],
     pets: ["fish"],
   },
   {
@@ -4229,7 +4227,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B00027ZVDM?tag=beastlyfacts-20",
     description: "Staple pellet for land hermit crabs, fed alongside fresh foods and a calcium source.",
-    covers: [],
+    covers: ["Hermit crab food plus fresh fruit, vegetables, and protein"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -4239,7 +4237,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B01MZH5FFU?tag=beastlyfacts-20",
     description: "Dry roach chow for Madagascar hissing cockroaches and feeder colonies, fed with fresh produce for moisture.",
-    covers: [],
+    covers: ["High-quality dry dog food or commercial roach chow"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -4249,7 +4247,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B00025JZBS?tag=beastlyfacts-20",
     description: "Pellet made for discus, as the staple beside frozen bloodworms and brine shrimp.",
-    covers: [],
+    covers: ["Discus-formulated pellet or granule, sized for a small mouth"],
     pets: ["fish"],
   },
   {
@@ -4259,7 +4257,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0017JFIDC?tag=beastlyfacts-20",
     description: "Timothy based pellet with added vitamin C, which guinea pigs cannot make themselves.",
-    covers: [],
+    covers: ["Vitamin-C-fortified guinea pig pellets"],
     pets: ["small-mammals"],
   },
   {
@@ -4269,7 +4267,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B01HOYD69Q?tag=beastlyfacts-20",
     description: "Dry diet formulated for pet hedgehogs, fed with live or dried insects.",
-    covers: [],
+    covers: ["High-quality hedgehog kibble or low-fat cat food"],
     pets: ["small-mammals"],
   },
   {
@@ -4279,7 +4277,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0010P82UO?tag=beastlyfacts-20",
     description: "Freshwater aquarium salt, not a marine mix. Used in small doses for mollies and as a short term treatment.",
-    covers: [],
+    covers: ["Plain additive-free aquarium salt, only if you decide to use it"],
     pets: ["fish"],
   },
   {
@@ -4300,7 +4298,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0002AS802?tag=beastlyfacts-20",
     description: "Hinged glass top for 30 in tanks such as a 20 long or 29 gallon. Cuts evaporation and stops jumpers while leaving a strip open for feeding.",
-    covers: [],
+    covers: ["Tight-fitting lid, every seam checked", "Lid that seals, with no gaps at the back or around cutouts", "Secure hinged glass lid"],
     pets: ["fish"],
   },
   {
@@ -4320,7 +4318,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0002AS8D4?tag=beastlyfacts-20",
     description: "Two piece hinged glass top for 48 in tanks. Measure the tank's inside width before buying, since 48 in tanks come in more than one depth.",
-    covers: [],
+    covers: ["A secure lid with no meaningful gaps"],
     pets: ["fish"],
   },
   {
@@ -4330,7 +4328,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B01N6MYOHS?tag=beastlyfacts-20",
     description: "Two piece hinged glass canopy for 48x18 in tanks with a center brace, the 75 gallon footprint.",
-    covers: [],
+    covers: ["A tight, secure lid"],
     pets: ["fish"],
   },
   {
@@ -4340,7 +4338,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B08BJ9FQY7?tag=beastlyfacts-20",
     description: "Standard 30x12x18 in glass tank, sold without lid, filter or light.",
-    covers: [],
+    covers: ["20-gallon long tank as a floor, 29 to 30 gallons for the long term", "20-gallon long as a floor, 29 or 30 gallons as the real target"],
     pets: ["fish"],
   },
   {
@@ -4360,7 +4358,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B007R55QUU?tag=beastlyfacts-20",
     description: "Fine black sand that makes small colorful fish like neon and cardinal tetras show up, and is soft on corydoras barbels.",
-    covers: [],
+    covers: ["Dark fine gravel or sand", "Sand, or smooth pea-sized or larger gravel", "Fine gravel or sand", "Sand or fine gravel substrate", "Smooth substrate, sand or rounded gravel", "Fine gravel or sand substrate", "Fine gravel or sand in a darker color", "Fine sand or small, smooth gravel", "Soft sand, about 2 inches deep"],
     pets: ["fish"],
   },
   {
@@ -4370,7 +4368,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B00BDPFX62?tag=beastlyfacts-20",
     description: "Gravel vacuum with a squeeze bulb to start the siphon, so there is no mouth starting. Pulls waste from the substrate during water changes.",
-    covers: [],
+    covers: ["Gravel vacuum and buckets for weekly changes", "Gravel vacuum and two dedicated buckets", "Gravel vacuum"],
     pets: ["fish"],
   },
   {
@@ -4380,7 +4378,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B000255NXC?tag=beastlyfacts-20",
     description: "Faucet powered siphon that drains and refills a tank without buckets. The 50 ft version is B000255NXM.",
-    covers: [],
+    covers: ["Python or similar for the water-change routine"],
     pets: ["fish"],
   },
   {
@@ -4400,7 +4398,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0002563MW?tag=beastlyfacts-20",
     description: "Standard airline for air pumps and sponge filters, also used as a drip line for acclimating shrimp.",
-    covers: [],
+    covers: ["Airline tubing for drip acclimation"],
     pets: ["fish"],
   },
   {
@@ -4420,7 +4418,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B01LVYOCKO?tag=beastlyfacts-20",
     description: "Soft fine mesh net that is gentler on fins than coarse nets. Guide fish into a cup where possible rather than chasing them.",
-    covers: [],
+    covers: ["Net and a transfer cup", "Soft, fine-mesh net"],
     pets: ["fish"],
   },
   {
@@ -4430,7 +4428,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0039G5HCI?tag=beastlyfacts-20",
     description: "Long reach pond net with fish safe mesh for moving koi. Lift koi in a bowl or bag rather than out of the water in the net.",
-    covers: [],
+    covers: ["Pond net and a floating bowl or soft container"],
     pets: ["fish"],
   },
   {
@@ -4500,7 +4498,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0CKZWLWT3?tag=beastlyfacts-20",
     description: "Natural slate for enclosure floors, feeding tiles and basking stacks. Holds heat and wears down nails.",
-    covers: [],
+    covers: ["Large smooth river rock or slate for the water section, never small gravel", "Paper towel or tile for the floor", "Stacked stone or slate for the basking stack", "Retes stack, shelves or tiles"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -4510,7 +4508,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0FXT3SPDZ?tag=beastlyfacts-20",
     description: "Deli cups with fabric vented lids for mantis and spider enclosures, feeder cultures and quarantine. Slings use the 16 oz size.",
-    covers: [],
+    covers: ["Small ventilated plastic cups and 32 oz deli cups, for eggs and hatchlings", "A vented 32-ounce deli cup, if you are starting with a nymph"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -4520,7 +4518,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0CKY4YGZ3?tag=beastlyfacts-20",
     description: "Coarse coconut husk chips that hold humidity without packing down, for frogs and tropical lizards. Expands in water.",
-    covers: [],
+    covers: ["Coconut husk or large-particle cypress mulch, 2 to 4 inches"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -4540,7 +4538,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B000QFOGAE?tag=beastlyfacts-20",
     description: "Metal mesh lid for a standard 10 gallon tank.",
-    covers: [],
+    covers: ["Tight-fitting screen lid"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -4560,7 +4558,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B000OQW98Q?tag=beastlyfacts-20",
     description: "Front opening glass terrarium with a screen top, the usual starter for a small mourning gecko group.",
-    covers: [],
+    covers: ["12x12x18 inch tall, front-opening enclosure for 2 to 3 adults"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -4590,7 +4588,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B005OK83CI?tag=beastlyfacts-20",
     description: "Coarse fir bark that holds humidity and resists mold, used in frog and roach enclosures.",
-    covers: [],
+    covers: ["Coarse orchid bark, coco husk, or a bioactive soil mix"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -4600,7 +4598,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B08ZVRNH7C?tag=beastlyfacts-20",
     description: "Cardboard egg flats stacked as climbing cover for roach colonies.",
-    covers: [],
+    covers: ["Egg-crate stacks or cork bark hides"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -4610,7 +4608,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B08W9ND27F?tag=beastlyfacts-20",
     description: "Capped water tubes that keep cut bramble stems fresh for stick insects, while the cap stops nymphs from drowning.",
-    covers: [],
+    covers: ["A water container for cut stems, with the opening blocked"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -4640,7 +4638,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B009SAZW10?tag=beastlyfacts-20",
     description: "Bird specific UVB lamp and fixture for indoor parrots, which get almost no UVB through window glass. Mount it at the distance the maker gives.",
-    covers: [],
+    covers: ["Full-spectrum UVB light", "Full-spectrum avian UV lighting and fixture"],
     pets: ["birds", "small-mammals"],
   },
   {
@@ -4660,7 +4658,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B000S13JIG?tag=beastlyfacts-20",
     description: "Large rolling play stand with perches and ladders, for out of cage time for cockatoos, greys and other large parrots.",
-    covers: [],
+    covers: ["A play gym"],
     pets: ["birds"],
   },
   {
@@ -4680,7 +4678,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B000A7DFUU?tag=beastlyfacts-20",
     description: "Solid track wheel for mice and dwarf hamsters. Solid, not rungs, so feet and tails cannot catch.",
-    covers: [],
+    covers: ["Solid-surfaced axle-free wheel, 6 to 8 inches"],
     pets: ["small-mammals"],
   },
   {
@@ -4690,7 +4688,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B07FK7V7HC?tag=beastlyfacts-20",
     description: "Wooden nest box that hangs high on the cage, where flying squirrels and gliders prefer to sleep.",
-    covers: [],
+    covers: ["Several sleeping pouches or a nest box, hung high"],
     pets: ["small-mammals", "birds"],
   },
   {
@@ -4720,7 +4718,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B07CZ8LL35?tag=beastlyfacts-20",
     description: "Split tubing that wraps electrical cords so rabbits and ferrets cannot chew through to live wire.",
-    covers: [],
+    covers: ["Bunny-proofing: cord covers and baseboard protection"],
     pets: ["small-mammals"],
   },
   {

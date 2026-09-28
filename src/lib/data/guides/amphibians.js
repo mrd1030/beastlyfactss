@@ -67,7 +67,7 @@ export const amphibianGuides = [
       "Water test kit",
       "Water conditioner/dechlorinator",
       "Caves, PVC pipes, and hides",
-      "Secure lid",
+      "Secure hinged glass lid",
       "Nightcrawlers and a sinking pellet formulated for axolotls",
     ],
     faqs: [
