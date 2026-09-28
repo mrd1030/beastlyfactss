@@ -73,6 +73,20 @@ function openTip(wrapper, tooltip) {
   if (r.top < 8) Object.assign(tooltip.style, { top: '100%', bottom: 'auto', marginTop: '6px' });
 }
 
+// The one tap-opened definition, if any. Module-level with a single
+// document listener, so a tap anywhere outside it closes it no matter which
+// run of the effect below built the term (a re-run skips terms it already
+// wrapped, which used to leave them tied to a listener that was gone).
+const openState = { current: null };
+if (typeof document !== 'undefined') {
+  document.addEventListener('pointerdown', (e) => {
+    if (openState.current && !openState.current.contains(e.target)) {
+      closeTip(openState.current);
+      openState.current = null;
+    }
+  }, true);
+}
+
 function closeTip(wrapper) {
   if (!wrapper) return;
   delete wrapper.dataset.open;
@@ -82,7 +96,7 @@ function closeTip(wrapper) {
   wrapper.lastChild.removeAttribute('style');
 }
 
-function buildHighlightNode(matchedText, info, navigate, openState) {
+function buildHighlightNode(matchedText, info, navigate) {
   const wrapper = document.createElement('span');
   wrapper.className = 'relative inline-block group/gloss';
 
@@ -161,15 +175,6 @@ export default function GlossaryHighlighter({ contentRef, watch }) {
     if (!container || !MATCH_REGEX) return;
 
     const usedSlugs = new Set();
-    // The one tap-opened definition, if any. A tap outside every term closes it.
-    const openState = { current: null };
-    const onOutside = (e) => {
-      if (openState.current && !openState.current.contains(e.target)) {
-        closeTip(openState.current);
-        openState.current = null;
-      }
-    };
-    document.addEventListener('pointerdown', onOutside);
 
     // Snapshot text nodes before mutating - a live TreeWalker can skip or
     // reprocess nodes if the DOM changes underneath it mid-walk.
@@ -196,7 +201,7 @@ export default function GlossaryHighlighter({ contentRef, watch }) {
         usedSlugs.add(info.slug);
         didMatch = true;
         frag.appendChild(document.createTextNode(text.slice(cursor, match.index)));
-        frag.appendChild(buildHighlightNode(match[1], info, navigate, openState));
+        frag.appendChild(buildHighlightNode(match[1], info, navigate));
         cursor = match.index + match[1].length;
       }
 
@@ -205,7 +210,6 @@ export default function GlossaryHighlighter({ contentRef, watch }) {
         textNode.replaceWith(frag);
       }
     }
-    return () => document.removeEventListener('pointerdown', onOutside);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [contentRef, watch]);
 
