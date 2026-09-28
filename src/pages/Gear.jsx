@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Link, useLocation, useParams } from 'react-router-dom';
+import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
 import { ChevronRight, Search, X } from 'lucide-react';
 import { AFFILIATE_PRODUCTS, GEAR_CATEGORY_ORDER, GEAR_PET_TYPES, RETAILERS } from '@/lib/data/affiliateProducts';
@@ -9,6 +9,94 @@ import { slugify } from '@/lib/utils/slugify';
 import ProductCard from '@/components/shared/ProductCard';
 import ProductModal from '@/components/shared/ProductModal';
 import GearCategoryNav from '@/components/shared/GearCategoryNav';
+// Per-animal lists, generated from what the guides already link (see
+// scripts/generate-gear-by-animal.mjs). Searching an animal's name offers its
+// list; /gear/animal/<guide id>/ opens it directly.
+import GEAR_BY_ANIMAL from '@/lib/generated/gear-by-animal.json';
+
+const PRODUCT_BY_SLUG = new Map(AFFILIATE_PRODUCTS.map(p => [p.slug, p]));
+
+// GEAR_CATEGORY_ORDER sets the order, but any category a product actually uses
+// still gets a section: a category missing from the list used to hide its
+// products from this page entirely (Pond Equipment, Food & Supplements).
+const CATEGORY_ORDER = [
+  ...GEAR_CATEGORY_ORDER,
+  ...[...new Set(AFFILIATE_PRODUCTS.map(p => p.category))].filter(c => !GEAR_CATEGORY_ORDER.includes(c)),
+];
+
+function animalsMatching(query) {
+  if (query.length < 3) return [];
+  return GEAR_BY_ANIMAL.animals.filter(a => {
+    const name = a.name.toLowerCase();
+    return name.includes(query) || query.includes(name);
+  }).slice(0, 6);
+}
+
+function AnimalGear({ animal, onSelect, onClose }) {
+  const products = (slugs) => slugs.map(s => PRODUCT_BY_SLUG.get(s)).filter(Boolean);
+  const essentials = products(animal.essentials);
+  const fromBySlug = new Map(animal.recommended.map(r => [r.slug, r.from]));
+  const recommended = products(animal.recommended.map(r => r.slug));
+  const recommendedByCategory = CATEGORY_ORDER
+    .map(category => ({ category, items: recommended.filter(p => p.category === category) }))
+    .filter(g => g.items.length > 0);
+  const alternates = products(animal.alternates);
+
+  return (
+    <div>
+      <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
+        <div className="flex items-center gap-4">
+          <Link to={`/guides/${animal.id}/`} className="text-sm font-body font-semibold text-secondary hover:underline">
+            {`${animal.name} care guide`}
+          </Link>
+          <button type="button" onClick={onClose} className="text-sm font-body font-semibold text-muted-foreground hover:text-foreground">
+            All gear
+          </button>
+        </div>
+      </div>
+
+      {essentials.length > 0 && (
+        <section className="mb-8">
+          <h3 className="font-display font-bold text-lg text-foreground mb-1">Essentials</h3>
+          <p className="text-xs text-muted-foreground font-body mb-3">The setup list from the care guide.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {essentials.map(p => <ProductCard key={p.slug} product={p} onSelect={onSelect} />)}
+          </div>
+        </section>
+      )}
+
+      {recommendedByCategory.length > 0 && (
+        <section className="mb-8">
+          <h3 className="font-display font-bold text-lg text-foreground mb-1">Also recommended</h3>
+          <p className="text-xs text-muted-foreground font-body mb-3">{`Everything else our ${animal.name.toLowerCase()} guides recommend.`}</p>
+          {recommendedByCategory.map(({ category, items }) => (
+            <div key={category} className="mb-5 last:mb-0">
+              <h4 className="font-body font-semibold text-sm text-foreground mb-2">{category}</h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {items.map(p => (
+                  <div key={p.slug}>
+                    <ProductCard product={p} onSelect={onSelect} />
+                    <p className="text-[11px] text-muted-foreground font-body mt-1 px-1">{`From: ${fromBySlug.get(p.slug).join(', ')}`}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </section>
+      )}
+
+      {alternates.length > 0 && (
+        <section className="mb-8">
+          <h3 className="font-display font-bold text-lg text-foreground mb-1">Other sizes and brands</h3>
+          <p className="text-xs text-muted-foreground font-body mb-3">Alternatives to the picks above.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {alternates.map(p => <ProductCard key={p.slug} product={p} onSelect={onSelect} />)}
+          </div>
+        </section>
+      )}
+    </div>
+  );
+}
 
 const DESCRIPTION = truncateDescription(
   `The exact products we recommend across our care guides: heating, lighting, substrate, enclosures, aquarium gear, and dog, cat, and small-mammal supplies.`
@@ -33,10 +121,16 @@ function disclosureText(direction = 'above') {
 
 export default function Gear() {
   const location = useLocation();
-  const { petType } = useParams();
+  const { petType, animalId } = useParams();
   const [activePetType, setActivePetType] = useState(() => resolvePetType(petType));
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const navigate = useNavigate();
+  const activeAnimal = GEAR_BY_ANIMAL.animals.find(a => a.id === animalId) || null;
+  const openAnimal = (id) => {
+    setSearchQuery('');
+    navigate(id ? `/gear/animal/${id}/` : '/gear/');
+  };
 
   useEffect(() => {
     setActivePetType(resolvePetType(petType));
@@ -55,12 +149,16 @@ export default function Gear() {
       })
     : petFilteredProducts;
 
-  const byCategory = GEAR_CATEGORY_ORDER.map(category => ({
+  const animalSuggestions = activeAnimal ? [] : animalsMatching(trimmedQuery);
+
+  const byCategory = CATEGORY_ORDER.map(category => ({
     category,
     products: visibleProducts.filter(p => p.category === category),
   })).filter(group => group.products.length > 0);
 
-  const pageTitle = activePet
+  const pageTitle = activeAnimal
+    ? `${activeAnimal.name} Gear List | Beastly Facts`
+    : activePet
     ? `${activePet.label} Gear & Supplies | Beastly Facts`
     : 'Recommended Gear & Supplies | Beastly Facts';
   const pageDescription = activePet
@@ -69,7 +167,9 @@ export default function Gear() {
       )
     : DESCRIPTION;
   const canonical = `https://beastlyfacts.com${location.pathname.replace(/\/$/, '')}/`;
-  const introText = activePet
+  const introText = activeAnimal
+    ? `Everything our ${activeAnimal.name.toLowerCase()} guides recommend, in one place: the care guide's setup list first, then the rest of the gear the guides link, then other sizes and brands.`
+    : activePet
     ? `The exact ${activePet.label.toLowerCase()} products referenced in our care guides' Cost Builders - filtered to just what applies to these pets.`
     : `The exact products referenced in our care guides' Cost Builders - reptile and amphibian
               heating, lighting, and substrate, plus enclosures, aquarium gear, and dog, cat, and
@@ -105,7 +205,7 @@ export default function Gear() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <span className="text-3xl mb-2 block" role="img" aria-label="Shopping cart">🛒</span>
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">
-              {activePet ? `${activePet.label} Gear` : 'Recommended Gear'}
+              {activeAnimal ? `${activeAnimal.name} Gear` : activePet ? `${activePet.label} Gear` : 'Recommended Gear'}
             </h1>
             <p className="text-sm text-muted-foreground font-body max-w-xl">
               {introText}
@@ -163,7 +263,22 @@ export default function Gear() {
             ))}
           </div>
 
-          <div className="lg:hidden mt-4">
+          {animalSuggestions.length > 0 && (
+            <div className="flex flex-wrap gap-2 mt-3">
+              {animalSuggestions.map(a => (
+                <button
+                  key={a.id}
+                  type="button"
+                  onClick={() => openAnimal(a.id)}
+                  className="px-3 py-1.5 rounded-full text-xs font-body font-semibold bg-secondary/10 text-secondary hover:bg-secondary/20 transition-colors"
+                >
+                  {`${a.emoji} ${a.name} gear list`}
+                </button>
+              ))}
+            </div>
+          )}
+
+          <div className={activeAnimal ? 'hidden' : 'lg:hidden mt-4'}>
             <GearCategoryNav categories={byCategory.map(({ category, products }) => ({ category, count: products.length }))} />
           </div>
         </div>
@@ -172,7 +287,9 @@ export default function Gear() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
           <div className="lg:col-span-2">
-            {byCategory.length === 0 ? (
+            {activeAnimal ? (
+              <AnimalGear animal={activeAnimal} onSelect={setSelectedProduct} onClose={() => openAnimal(null)} />
+            ) : byCategory.length === 0 ? (
               <div className="text-center py-16">
                 <span className="text-4xl block mb-3">🔍</span>
                 <p className="font-body font-bold text-foreground">
@@ -219,7 +336,7 @@ export default function Gear() {
             </div>
           </div>
 
-          <div className="hidden lg:block lg:sticky lg:top-16 self-start">
+          <div className={activeAnimal ? 'hidden' : 'hidden lg:block lg:sticky lg:top-16 self-start'}>
             <GearCategoryNav categories={byCategory.map(({ category, products }) => ({ category, count: products.length }))} />
           </div>
         </div>

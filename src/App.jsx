@@ -95,6 +95,7 @@ const AuthenticatedApp = () => {
           <Route path="/guides/:id" element={<GuideDetail />} />
           <Route path="/gear" element={<Gear />} />
           <Route path="/gear/category/:petType" element={<Gear />} />
+          <Route path="/gear/animal/:animalId" element={<Gear />} />
           <Route path="/encyclopedia" element={<Encyclopedia />} />
           <Route path="/encyclopedia/animal/:id" element={<EncyclopediaAnimal />} />
           <Route path="/encyclopedia/category/:encCat" element={<Encyclopedia />} />

@@ -48,6 +48,12 @@ const GEAR_PET_TYPES = [
   'reptiles-amphibians', 'birds', 'fish', 'dogs-cats', 'small-mammals',
 ];
 
+// Per-animal gear lists, /gear/animal/<guide id>/ (see
+// scripts/generate-gear-by-animal.mjs, which runs earlier in the build).
+const GEAR_ANIMAL_IDS = JSON.parse(
+  readFileSync('./src/lib/generated/gear-by-animal.json', 'utf8'),
+).animals.map((a) => a.id);
+
 // Chronicles series slug prefixes (mirrors CHRONICLES_SERIES in src/lib/chronicles.js).
 // Their stories render on /chronicles/<id>/<part>, not /blog/<slug> - the old
 // blog URLs 301 in public/_redirects.
@@ -222,6 +228,7 @@ const STATIC_ROUTES = [
   ...ENCYCLOPEDIA_CATEGORIES.map(s => `/guides/category/${s}`),
   ...FACT_CATEGORIES.map(s => `/facts/category/${s}`),
   ...GEAR_PET_TYPES.map(s => `/gear/category/${s}`),
+  ...GEAR_ANIMAL_IDS.map(id => `/gear/animal/${id}`),
   ...ENCYCLOPEDIA_ANIMAL_IDS.map(id => `/encyclopedia/animal/${id}`),
   ...BEASTLYPEDIA.groupSlugs.map(s => `/beastlypedia/group/${s}`),
   ...BEASTLYPEDIA.ids.map(id => `/beastlypedia/${id}`),

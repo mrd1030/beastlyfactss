@@ -1,0 +1,5211 @@
+{
+  "animals": [
+    {
+      "id": "ackie-monitor",
+      "name": "Ackie Monitor",
+      "emoji": "🦎",
+      "essentials": [
+        "ackie-substrate-bio-dude-terra-sahara-36qt",
+        "dimming-thermostat-pt02t",
+        "infrared-temp-gun",
+        "arcadia-lumenize-prot5-36in-12pct",
+        "slate-tile-daltile-12x12-6pack",
+        "calcium-zoo-med-without-d3",
+        "vitamin-repashy-vitamin-a-plus",
+        "reptile-extraction-puzzle-board",
+        "target-stick-clicker"
+      ],
+      "recommended": [
+        {
+          "slug": "ackie-enclosure-reptile-habitats-48x24x48-pvc",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "uvb-arcadia-desert-12",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "high-wattage-basking-bulb-250w",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "dubia-roach-colony-starter-kit",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "arcadia-lumenize-prot5-24in-12pct",
+        "arcadia-t5-uvb-36in-14pct-dragon",
+        "reptile-rolling-treat-dispenser"
+      ]
+    },
+    {
+      "id": "african-fat-tail",
+      "name": "African Fat-Tailed Gecko",
+      "emoji": "🦎",
+      "essentials": [
+        "tank-aqueon-40-breeder",
+        "under-tank-heat-mat-thermostat-kit",
+        "dimming-thermostat-pt02t",
+        "digital-thermometer-hygrometer-combo",
+        "uvb-zoo-med-5-0-t5-ho-14in-hood",
+        "sphagnum-moss",
+        "shallow-water-dish",
+        "feeding-tongs-lasnten-long-rubber-tip"
+      ],
+      "recommended": [
+        {
+          "slug": "calcium-repashy-plus-6oz",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "dimming-thermostat-reptizoo-pid",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "hide-exo-terra-gecko-cave-medium",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "cypress-mulch-substrate",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "tank-20-gallon-long",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "infrared-temp-gun",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "substrate-zoo-med-reptisand-burrowing",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "feeding-tongs-short-soft-tip-4pack",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "uvb-arcadia-shadedweller-7-12in",
+        "thermostat-inkbird-heat-mat-ipt-2ch"
+      ]
+    },
+    {
+      "id": "african-grey",
+      "name": "African Grey Parrot",
+      "emoji": "🦜",
+      "essentials": [
+        "cockatoo-cage-prevue-hendryx-large",
+        "bird-perches",
+        "uvb-arcadia-puresun-compact-bird-kit",
+        "puzzle-feeder",
+        "fine-mist-spray-bottle",
+        "bird-food-lafebers-premium-parrots-25lb",
+        "african-grey-parrot-digital-gram-scale"
+      ],
+      "recommended": [
+        {
+          "slug": "bird-flight-cage-large",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "bird-food-harrisons-high-potency-fine-1lb",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "bird-food-roudybush-daily-mini-44oz",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "bird-toy-kyouki-foraging-box",
+          "from": [
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "cockatoo-foraging-toys-large-parrot",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "bird-perch-czwestc-8pc-apple-wood",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "target-stick-clicker",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "cockatoo-cage-stainless-steel-large",
+        "bird-perch-rope-bungee-23in",
+        "bird-perch-rope-63in-2pack",
+        "bird-perch-limio-6pc-set",
+        "bird-cage-yaheetech-69in-xl",
+        "bird-cage-prevue-wrought-iron-flight-5ft",
+        "bird-cage-prevue-steel-flight-large",
+        "bird-cage-yaheetech-61in-playtop",
+        "bird-cage-vision-m02-tall-medium",
+        "bird-cage-prevue-flight-blue-black",
+        "bird-food-roudybush-daily-small-22oz",
+        "bird-food-harrisons-adult-lifetime-1lb",
+        "bird-toy-bbjinronjy-sola-ball-2pc",
+        "bird-toy-rope-perch-bell",
+        "bird-toy-xlpeixin-rope-perch",
+        "bird-toy-swing-sisal-large"
+      ]
+    },
+    {
+      "id": "amano-shrimp",
+      "name": "Amano Shrimp",
+      "emoji": "🦐",
+      "essentials": [
+        "tank-10-gallon",
+        "sponge-filter",
+        "submersible-aquarium-heater",
+        "water-conditioner",
+        "shrimp-mineral-salty-shrimp-gh-kh",
+        "net-aquatop-5in-fine-mesh",
+        "airline-penn-plax-25ft"
+      ],
+      "recommended": [
+        {
+          "slug": "water-test-kit",
+          "from": [
+            "Cost guide",
+            "Health guide"
+          ]
+        },
+        {
+          "slug": "live-terrarium-plants",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "angelfish",
+      "name": "Angelfish",
+      "emoji": "🐠",
+      "essentials": [
+        "angelfish-tank-tetra-55-gallon",
+        "hob-filter-aquaclear-70",
+        "sponge-filter",
+        "submersible-aquarium-heater",
+        "sand-caribsea-tahitian-moon-20lb",
+        "aquarium-led-nicrew-classicled-36-48",
+        "glass-lid-aqueon-versa-top-48in",
+        "water-test-kit",
+        "water-conditioner"
+      ],
+      "recommended": [
+        {
+          "slug": "betta-substrate-caribsea-freshwater-sand",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "driftwood",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "live-terrarium-plants",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "canister-filter",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "canister-filter-large",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "angelfish-medication-seachem-metroplex",
+          "from": [
+            "Cost guide",
+            "Health guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "canister-filter-fluval-fx6"
+      ]
+    },
+    {
+      "id": "tegu",
+      "name": "Argentine Black and White Tegu",
+      "emoji": "🦎",
+      "essentials": [
+        "argentine-tegu-thermostat-heavy-duty",
+        "argentine-tegu-uvb-46in",
+        "cypress-mulch-substrate",
+        "automatic-misting-system-fogger",
+        "soaking-tub-large-38in",
+        "reptile-extraction-puzzle-board",
+        "target-stick-clicker",
+        "digital-thermometer-hygrometer-combo"
+      ],
+      "recommended": [
+        {
+          "slug": "savannah-monitor-enclosure-pvc-8x4x4",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "substrate-tarantula-coconut-fiber-peat",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "high-wattage-basking-fixture",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "calcium-repashy-plus-6oz",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "feeding-tongs-lasnten-long-rubber-tip",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "substrate-zoo-med-eco-earth-coconut-fiber",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "large-soakable-water-dish",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "reptile-rolling-treat-dispenser",
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "substrate-hermit-crab-flukers-sand-coco"
+      ]
+    },
+    {
+      "id": "axolotl",
+      "name": "Axolotl",
+      "emoji": "🦎",
+      "essentials": [
+        "tank-20-gallon-long",
+        "aquarium-chiller-axolotl",
+        "sponge-filter",
+        "digital-thermometer-hygrometer-combo",
+        "water-test-kit",
+        "water-conditioner",
+        "hide-cave-aquarium-decoration",
+        "glass-lid-aqueon-versa-top-30in",
+        "soft-pellets-axolotl"
+      ],
+      "recommended": [
+        {
+          "slug": "aquarium-chiller-jbj-arctica-titanium",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "api-tap-water-conditioner",
+          "from": [
+            "Facts"
+          ]
+        },
+        {
+          "slug": "paizoo-fish-tank-thermometer",
+          "from": [
+            "Facts"
+          ]
+        }
+      ],
+      "alternates": [
+        "aquarium-chiller-fan-budget",
+        "aquarium-chiller-iceprobe-thermoelectric",
+        "thermometer-hygrometer-exo-terra-led-bundle"
+      ]
+    },
+    {
+      "id": "ball-python",
+      "name": "Ball Python",
+      "emoji": "🐍",
+      "essentials": [
+        "pvc-enclosure-4x2x2",
+        "digital-thermometer-hygrometer-combo",
+        "infrared-temp-gun",
+        "cypress-mulch-substrate",
+        "sphagnum-moss",
+        "large-soakable-water-dish",
+        "feeding-tongs-lasnten-long-rubber-tip"
+      ],
+      "recommended": [
+        {
+          "slug": "heat-tape-flexwatt-6in-10ft",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "radiant-heat-panel-reptile-basics-80w",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "under-tank-heat-mat-thermostat-kit",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "dimming-thermostat-pt02t",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "fine-mist-spray-bottle",
+          "from": [
+            "Health guide"
+          ]
+        },
+        {
+          "slug": "outlet-timer-bn-link-mechanical",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "cork-bark-round-hide",
+          "from": [
+            "Feeding guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "climbing-branch-mopani-wood",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "pvc-enclosure-4x2x2-alt",
+        "thermometer-hygrometer-exo-terra-led-bundle"
+      ]
+    },
+    {
+      "id": "dog-beagle",
+      "name": "Beagle",
+      "emoji": "🐕",
+      "essentials": [],
+      "recommended": [
+        {
+          "slug": "rundik-snuffle-mat-dogs",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "nina-ottosson-dog-tornado-puzzle-toy",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "licki-mat-dogs",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "bearded-dragon",
+      "name": "Bearded Dragon",
+      "emoji": "🦎",
+      "essentials": [
+        "pvc-enclosure-4x2x2",
+        "arcadia-t5-uvb-36in-14pct-dragon",
+        "dimming-thermostat-exo-terra-proportional",
+        "digital-thermometer-hygrometer-combo",
+        "infrared-temp-gun",
+        "slate-tile-daltile-12x12-6pack",
+        "bearded-dragon-hammock-triangle",
+        "shallow-water-dish"
+      ],
+      "recommended": [
+        {
+          "slug": "under-tank-heat-mat-thermostat-kit",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "dimming-thermostat-pt02t",
+          "from": [
+            "Cost guide",
+            "Shopping list"
+          ]
+        },
+        {
+          "slug": "calcium-miner-all-indoor-2pack",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "basking-bulb-75w",
+          "from": [
+            "Setup guide",
+            "Shopping list"
+          ]
+        },
+        {
+          "slug": "cork-bark-round-hide",
+          "from": [
+            "Setup guide",
+            "Enrichment guide",
+            "Shopping list"
+          ]
+        },
+        {
+          "slug": "climbing-branch-mopani-wood",
+          "from": [
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "calcium-repashy-superfoods-plus-4oz",
+          "from": [
+            "Feeding guide",
+            "Brumation Guide",
+            "Eggs & Egg Binding (Dystocia) Guide",
+            "Growth guide"
+          ]
+        },
+        {
+          "slug": "feeding-tongs-lasnten-long-rubber-tip",
+          "from": [
+            "Feeding guide",
+            "Brumation Guide"
+          ]
+        },
+        {
+          "slug": "reptile-rolling-treat-dispenser",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "uvb-arcadia-desert-12",
+          "from": [
+            "Bioactive Setups for Bearded Dragons"
+          ]
+        },
+        {
+          "slug": "fine-mist-spray-bottle",
+          "from": [
+            "Bioactive Setups for Bearded Dragons"
+          ]
+        },
+        {
+          "slug": "bioactive-substrate-mix",
+          "from": [
+            "Bioactive Setups for Bearded Dragons"
+          ]
+        },
+        {
+          "slug": "sphagnum-moss",
+          "from": [
+            "Bioactive Setups for Bearded Dragons"
+          ]
+        },
+        {
+          "slug": "basking-dome-fixture",
+          "from": [
+            "Shopping list"
+          ]
+        },
+        {
+          "slug": "dubia-roaches-bag",
+          "from": [
+            "Shopping list"
+          ]
+        },
+        {
+          "slug": "dubia-roach-colony-starter-kit",
+          "from": [
+            "Shopping list"
+          ]
+        },
+        {
+          "slug": "calcium-repashy-plus-6oz",
+          "from": [
+            "Shopping list"
+          ]
+        },
+        {
+          "slug": "soaking-tub-large-38in",
+          "from": [
+            "Eggs & Egg Binding (Dystocia) Guide",
+            "Growth guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "pvc-enclosure-4x2x2-alt",
+        "arcadia-lumenize-prot5-36in-12pct",
+        "arcadia-lumenize-prot5-24in-12pct",
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "bearded-dragon-hammock-seagrass-2pc",
+        "reptile-extraction-puzzle-board"
+      ]
+    },
+    {
+      "id": "cat-bengal",
+      "name": "Bengal",
+      "emoji": "🐈",
+      "essentials": [],
+      "recommended": [
+        {
+          "slug": "cat-tree-scratching-post",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "puzzle-feeder",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "litter-box",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "betta-fish",
+      "name": "Betta Fish",
+      "emoji": "🐠",
+      "essentials": [
+        "betta-tank-5-gallon-starter-kit",
+        "submersible-aquarium-heater",
+        "sponge-filter",
+        "betta-substrate-caribsea-freshwater-sand",
+        "water-conditioner",
+        "water-test-kit",
+        "net-aquatop-5in-fine-mesh",
+        "betta-food-hikari-bio-gold",
+        "freeze-dried-bloodworms-omega-one"
+      ],
+      "recommended": [
+        {
+          "slug": "live-terrarium-plants",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "driftwood",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "api-tap-water-conditioner",
+          "from": [
+            "Water guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "blue-tongue-skink",
+      "name": "Blue Tongue Skink",
+      "emoji": "🦎",
+      "essentials": [
+        "pvc-enclosure-4x2x2",
+        "arcadia-lumenize-prot5-24in-12pct",
+        "dimming-thermostat-exo-terra-proportional",
+        "digital-thermometer-hygrometer-combo",
+        "leaf-litter-joshs-frogs-magnolia",
+        "hide-exo-terra-reptile-cave-xl",
+        "large-soakable-water-dish",
+        "storage-tub-sterilite-56qt"
+      ],
+      "recommended": [
+        {
+          "slug": "uvb-arcadia-forest-6",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "basking-dome-fixture",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "substrate-tarantula-coconut-fiber-peat",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "calcium-miner-all-indoor-2pack",
+          "from": [
+            "Cost guide",
+            "Health guide"
+          ]
+        },
+        {
+          "slug": "dimming-thermostat-pt02t",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "cork-bark-round-hide",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "halogen-flood-vinaco-par30-75w-6pack",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "calcium-repashy-superfoods-plus-4oz",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "reptile-rolling-treat-dispenser",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "feeding-tongs-short-soft-tip-4pack",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "cypress-mulch-substrate",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "pvc-enclosure-4x2x2-alt",
+        "arcadia-lumenize-prot5-36in-12pct",
+        "arcadia-t5-uvb-36in-14pct-dragon",
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "reptile-extraction-puzzle-board"
+      ]
+    },
+    {
+      "id": "boa-constrictor",
+      "name": "Boa Constrictor",
+      "emoji": "🐍",
+      "essentials": [
+        "boa-enclosure-reptile-habitats-6x2x2-pvc",
+        "dimming-thermostat-pt02t",
+        "ceramic-heat-emitter-zoo-med-repticare-150w",
+        "large-soakable-water-dish",
+        "substrate-zoo-med-eco-earth-coconut-fiber",
+        "digital-thermometer-hygrometer-combo",
+        "feeding-tongs-lasnten-long-rubber-tip"
+      ],
+      "recommended": [
+        {
+          "slug": "hide-zoomed-habba-hut-medium",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "cypress-mulch-substrate",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "thermometer-hygrometer-exo-terra-led-bundle",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "climbing-branch-mopani-wood",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "cork-bark-round-xl",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "substrate-hermit-crab-flukers-sand-coco"
+      ]
+    },
+    {
+      "id": "dog-border-collie",
+      "name": "Border Collie",
+      "emoji": "🐕",
+      "essentials": [],
+      "recommended": [
+        {
+          "slug": "rundik-snuffle-mat-dogs",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "nina-ottosson-dog-tornado-puzzle-toy",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "west-paw-zogoflex-toy",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "box-turtle",
+      "name": "Box Turtle",
+      "emoji": "🐢",
+      "essentials": [
+        "enclosure-repti-zoo-36x18x18-50gal",
+        "dimming-thermostat-pt02t",
+        "large-soakable-water-dish",
+        "calcium-miner-all-indoor-2pack"
+      ],
+      "recommended": [
+        {
+          "slug": "uvb-arcadia-forest-6",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "substrate-tarantula-coconut-fiber-peat",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "basking-bulb-75w",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "basking-dome-fixture",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "cypress-mulch-substrate",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "sphagnum-moss",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "hide-exo-terra-reptile-cave-xl",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "bristlenose-pleco",
+      "name": "Bristlenose Pleco",
+      "emoji": "🐟",
+      "essentials": [
+        "tank-tetra-29-gallon",
+        "submersible-aquarium-heater",
+        "hob-filter-aquaclear-70",
+        "driftwood",
+        "sand-caribsea-tahitian-moon-20lb",
+        "corydoras-hikari-sinking-wafers",
+        "water-test-kit",
+        "water-conditioner"
+      ],
+      "recommended": [
+        {
+          "slug": "tank-20-gallon-long",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "hide-cave-aquarium-decoration",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "betta-substrate-caribsea-freshwater-sand",
+          "from": [
+            "Setup guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "canister-filter",
+        "canister-filter-large",
+        "canister-filter-fluval-fx6"
+      ]
+    },
+    {
+      "id": "budgie",
+      "name": "Budgie / Parakeet",
+      "emoji": "🐦",
+      "essentials": [
+        "bird-perches",
+        "bird-cuttlebone-penn-plax-2ct",
+        "bird-food-harrisons-adult-lifetime-1lb",
+        "bird-toy-bbjinronjy-sola-ball-2pc",
+        "bird-feeding-dishes-okllen-4pack",
+        "nail-clippers",
+        "cage-cover-prevue-universal-medium"
+      ],
+      "recommended": [
+        {
+          "slug": "bird-cage-prevue-steel-flight-large",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "bird-food-zupreem-fruitblend-parakeet-2lb",
+          "from": [
+            "Cost guide",
+            "Health guide"
+          ]
+        },
+        {
+          "slug": "bird-treat-kaytee-spray-millet-7oz",
+          "from": [
+            "Handling guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "bird-perch-rope-bungee-23in",
+        "bird-perch-rope-63in-2pack",
+        "bird-perch-limio-6pc-set",
+        "bird-perch-czwestc-8pc-apple-wood",
+        "bird-cuttlebone-prevue-5in",
+        "bird-cuttlebone-double",
+        "bird-food-roudybush-daily-mini-44oz",
+        "bird-food-roudybush-daily-small-22oz",
+        "bird-food-harrisons-high-potency-fine-1lb",
+        "bird-toy-rope-perch-bell",
+        "bird-toy-kyouki-foraging-box",
+        "bird-toy-xlpeixin-rope-perch",
+        "bird-toy-swing-sisal-large",
+        "bird-feeding-bowls-motbach-3pack",
+        "bird-feeding-cups-pinvnby-2pack",
+        "bird-flight-cage-large",
+        "bird-cage-yaheetech-69in-xl",
+        "bird-cage-prevue-wrought-iron-flight-5ft",
+        "bird-cage-yaheetech-61in-playtop",
+        "bird-cage-vision-m02-tall-medium",
+        "bird-cage-prevue-flight-blue-black",
+        "bird-treat-living-world-millet-spray-17-6oz",
+        "bird-treat-birds-love-millet-1lb"
+      ]
+    },
+    {
+      "id": "dog-bulldog",
+      "name": "Bulldog",
+      "emoji": "🐶",
+      "essentials": [],
+      "recommended": [
+        {
+          "slug": "rundik-snuffle-mat-dogs",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "nina-ottosson-dog-tornado-puzzle-toy",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "licki-mat-dogs",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "california-kingsnake",
+      "name": "California Kingsnake",
+      "emoji": "🐍",
+      "essentials": [
+        "milk-snake-vivarium-wooden-48x24x24",
+        "under-tank-heat-mat-thermostat-kit",
+        "dimming-thermostat-pt02t",
+        "cork-bark-round-hide",
+        "aspen-shavings-substrate",
+        "large-soakable-water-dish",
+        "digital-thermometer-hygrometer-combo",
+        "feeding-tongs-lasnten-long-rubber-tip"
+      ],
+      "recommended": [
+        {
+          "slug": "shallow-water-dish",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "pvc-enclosure-4x2x2",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "pvc-enclosure-4x2x2-alt"
+      ]
+    },
+    {
+      "id": "canary",
+      "name": "Canary",
+      "emoji": "🐦",
+      "essentials": [
+        "bird-cage-prevue-flight-blue-black",
+        "bird-perch-czwestc-8pc-apple-wood",
+        "canary-shallow-bird-bath",
+        "bird-cuttlebone-prevue-5in",
+        "bird-food-lafebers-premium-canaries-1-25lb",
+        "egg-food-higgins-3pack",
+        "african-grey-parrot-digital-gram-scale"
+      ],
+      "recommended": [
+        {
+          "slug": "bird-flight-cage-large",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "bird-perches",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "bird-cuttlebone-penn-plax-2ct",
+          "from": [
+            "Cost guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "bird-cage-yaheetech-69in-xl",
+        "bird-cage-prevue-wrought-iron-flight-5ft",
+        "bird-cage-prevue-steel-flight-large",
+        "bird-cage-yaheetech-61in-playtop",
+        "bird-cage-vision-m02-tall-medium",
+        "bird-perch-rope-bungee-23in",
+        "bird-perch-rope-63in-2pack",
+        "bird-perch-limio-6pc-set",
+        "bird-cuttlebone-double"
+      ]
+    },
+    {
+      "id": "cardinal-tetra",
+      "name": "Cardinal Tetra",
+      "emoji": "🐠",
+      "essentials": [
+        "tank-20-gallon-long",
+        "submersible-aquarium-heater",
+        "sponge-filter",
+        "water-test-kit",
+        "water-conditioner",
+        "sand-caribsea-tahitian-moon-20lb",
+        "live-terrarium-plants",
+        "neon-tetra-food-hikari-micro-pellets"
+      ],
+      "recommended": [
+        {
+          "slug": "tank-10-gallon",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "driftwood",
+          "from": [
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "cat-universal",
+      "name": "Cat Care",
+      "emoji": "🐱",
+      "essentials": [],
+      "recommended": [
+        {
+          "slug": "cat-tree-scratching-post",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "puzzle-feeder",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "litter-box",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "cherry-shrimp",
+      "name": "Cherry Shrimp",
+      "emoji": "🦐",
+      "essentials": [
+        "tank-10-gallon",
+        "sponge-filter",
+        "submersible-aquarium-heater",
+        "catappa-leaves-sungrow-50",
+        "shrimp-mineral-salty-shrimp-gh-kh",
+        "water-conditioner",
+        "corydoras-hikari-sinking-wafers"
+      ],
+      "recommended": [
+        {
+          "slug": "live-terrarium-plants",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "water-test-kit",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "chinchilla",
+      "name": "Chinchilla",
+      "emoji": "🐭",
+      "essentials": [
+        "chinchilla-cage-midwest-critter-nation-double",
+        "exercise-wheel-chinchilla",
+        "small-mammal-bowl-kaytee-vege-t-bowl",
+        "chew-chinchilla-mineral-lava-blocks",
+        "digital-thermometer-hygrometer-combo",
+        "bedding-kaytee-clean-cozy-white",
+        "timothy-hay-small-pets",
+        "chinchilla-pellets-oxbow-essentials"
+      ],
+      "recommended": [
+        {
+          "slug": "chinchilla-dust-bath-house",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "chinchilla-dust",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "small-pet-paper-bedding",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "small-pet-hideout-igloo",
+          "from": [
+            "Cost guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "rat-cage-prevue-495-rolling",
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "chinchilla-pellets-mazuri"
+      ]
+    },
+    {
+      "id": "cockatiel",
+      "name": "Cockatiel",
+      "emoji": "🦜",
+      "essentials": [
+        "bird-perches",
+        "bird-feeding-dishes-okllen-4pack",
+        "bird-cuttlebone-penn-plax-2ct",
+        "bird-toy-bbjinronjy-sola-ball-2pc",
+        "nightlight-amber-plug-in"
+      ],
+      "recommended": [
+        {
+          "slug": "bird-flight-cage-large",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "bird-food-zupreem-fruitblend-cockatiel-2lb",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide",
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "bird-treat-kaytee-spray-millet-7oz",
+          "from": [
+            "Handling guide"
+          ]
+        },
+        {
+          "slug": "bird-toys-katumo-small-parrot-variety",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "bird-perch-limio-6pc-set",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "bird-cuttlebone-double",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "bird-perch-rope-bungee-23in",
+        "bird-perch-rope-63in-2pack",
+        "bird-perch-czwestc-8pc-apple-wood",
+        "bird-feeding-bowls-motbach-3pack",
+        "bird-feeding-cups-pinvnby-2pack",
+        "bird-cuttlebone-prevue-5in",
+        "bird-toy-rope-perch-bell",
+        "bird-toy-kyouki-foraging-box",
+        "bird-toy-xlpeixin-rope-perch",
+        "bird-toy-swing-sisal-large",
+        "bird-cage-yaheetech-69in-xl",
+        "bird-cage-prevue-wrought-iron-flight-5ft",
+        "bird-cage-prevue-steel-flight-large",
+        "bird-cage-yaheetech-61in-playtop",
+        "bird-cage-vision-m02-tall-medium",
+        "bird-cage-prevue-flight-blue-black",
+        "bird-treat-living-world-millet-spray-17-6oz",
+        "bird-treat-birds-love-millet-1lb"
+      ]
+    },
+    {
+      "id": "cockatoo",
+      "name": "Cockatoo",
+      "emoji": "🦜",
+      "essentials": [
+        "cockatoo-cage-stainless-steel-large",
+        "cockatoo-foraging-toys-large-parrot",
+        "play-stand-prevue-large-parrot",
+        "air-purifier-levoit-core300-p",
+        "bird-food-lafebers-premium-parrots-25lb"
+      ],
+      "recommended": [
+        {
+          "slug": "cockatoo-cage-prevue-hendryx-large",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "bird-food-harrisons-high-potency-fine-1lb",
+          "from": [
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "bird-food-roudybush-daily-mini-44oz",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "target-stick-clicker",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "bird-toy-kyouki-foraging-box",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "air-purifier-levoit-vital-100s-p",
+        "air-purifier-compact-1076sqft",
+        "bird-food-roudybush-daily-small-22oz",
+        "bird-food-harrisons-adult-lifetime-1lb",
+        "bird-toy-bbjinronjy-sola-ball-2pc",
+        "bird-toy-rope-perch-bell",
+        "bird-toy-xlpeixin-rope-perch",
+        "bird-toy-swing-sisal-large"
+      ]
+    },
+    {
+      "id": "corn-snake",
+      "name": "Corn Snake",
+      "emoji": "🐍",
+      "essentials": [
+        "pvc-enclosure-4x2x2",
+        "under-tank-heat-mat-thermostat-kit",
+        "dimming-thermostat-pt02t",
+        "large-soakable-water-dish",
+        "aspen-shavings-substrate",
+        "digital-thermometer-hygrometer-combo",
+        "climbing-branch-mopani-wood",
+        "feeding-tongs-lasnten-long-rubber-tip",
+        "uvb-arcadia-forest-6"
+      ],
+      "recommended": [
+        {
+          "slug": "tank-aqueon-40-breeder",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "shallow-water-dish",
+          "from": [
+            "Health guide"
+          ]
+        },
+        {
+          "slug": "sphagnum-moss",
+          "from": [
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "cork-bark-round-hide",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "pvc-enclosure-4x2x2-alt",
+        "thermometer-hygrometer-exo-terra-led-bundle"
+      ]
+    },
+    {
+      "id": "corydoras-catfish",
+      "name": "Corydoras Catfish",
+      "emoji": "🐟",
+      "essentials": [
+        "tank-20-gallon-long",
+        "submersible-aquarium-heater",
+        "sponge-filter",
+        "water-test-kit",
+        "water-conditioner",
+        "sand-caribsea-tahitian-moon-20lb",
+        "corydoras-hikari-sinking-wafers",
+        "gravel-vac-python-pro-clean-large"
+      ],
+      "recommended": [
+        {
+          "slug": "betta-substrate-caribsea-freshwater-sand",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "crested-gecko",
+      "name": "Crested Gecko",
+      "emoji": "🦎",
+      "essentials": [
+        "glass-terrarium-18x18x24",
+        "uvb-zoo-med-5-0-t5-ho-14in-hood",
+        "heat-bulb-zoo-med-basking-spot-25w",
+        "digital-thermometer-hygrometer-combo",
+        "bioactive-substrate-mix",
+        "cork-bark-round-hide",
+        "artificial-terrarium-plants",
+        "fine-mist-spray-bottle",
+        "crested-gecko-diet-repashy-classic-6oz"
+      ],
+      "recommended": [
+        {
+          "slug": "dimming-thermostat-pt02t",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "crested-gecko-diet-pangea-watermelon-complete-8oz",
+          "from": [
+            "Cost guide",
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "uvb-arcadia-forest-6",
+          "from": [
+            "Health guide"
+          ]
+        },
+        {
+          "slug": "sphagnum-moss",
+          "from": [
+            "Health guide"
+          ]
+        },
+        {
+          "slug": "shallow-water-dish",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "calcium-tortoise-turtle-herbivorous-sulcata",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "calcium-repashy-plus-lod-3oz",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "climbing-branch-mopani-wood",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "live-terrarium-plants",
+          "from": [
+            "Humidity guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "uvb-arcadia-shadedweller-7-12in",
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "crested-gecko-diet-pangea-fruit-mix-treat-16oz",
+        "crested-gecko-diet-pangea-papaya-8oz",
+        "crested-gecko-diet-pangea-watermelon-2oz",
+        "crested-gecko-diet-repashy-banana-6oz",
+        "crested-gecko-diet-repashy-grubs-n-fruit-6oz",
+        "crested-gecko-diet-repashy-mrp-mango-superblend-12oz"
+      ]
+    },
+    {
+      "id": "dog-dachshund",
+      "name": "Dachshund",
+      "emoji": "🌭",
+      "essentials": [],
+      "recommended": [
+        {
+          "slug": "rundik-snuffle-mat-dogs",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "nina-ottosson-dog-tornado-puzzle-toy",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "licki-mat-dogs",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "degu",
+      "name": "Degu",
+      "emoji": "🐭",
+      "essentials": [
+        "small-pet-paper-bedding",
+        "timothy-hay-small-pets",
+        "chew-chinchilla-mineral-lava-blocks",
+        "small-mammal-bowl-kaytee-vege-t-bowl",
+        "digital-thermometer-hygrometer-combo"
+      ],
+      "recommended": [
+        {
+          "slug": "chinchilla-cage-midwest-critter-nation-double",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "exercise-wheel-chinchilla",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "chinchilla-dust-bath-house",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "small-pet-hideout-igloo",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "chinchilla-pellets-mazuri",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "chinchilla-dust",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "aspen-shavings-substrate",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "small-pet-foraging-puzzle",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "rat-cage-prevue-495-rolling",
+        "chinchilla-pellets-oxbow-essentials",
+        "small-pet-snuffle-mat"
+      ]
+    },
+    {
+      "id": "discus",
+      "name": "Discus",
+      "emoji": "🐟",
+      "essentials": [
+        "angelfish-tank-tetra-55-gallon",
+        "canister-filter-large",
+        "water-test-kit",
+        "water-conditioner",
+        "discus-food-hikari-bio-gold",
+        "water-change-python-no-spill-25ft"
+      ],
+      "recommended": [
+        {
+          "slug": "submersible-aquarium-heater",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "betta-substrate-caribsea-freshwater-sand",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "driftwood",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "live-terrarium-plants",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "angelfish-medication-seachem-metroplex",
+          "from": [
+            "Cost guide",
+            "Health guide"
+          ]
+        },
+        {
+          "slug": "hob-filter-aquaclear-70",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "sponge-filter",
+          "from": [
+            "Setup guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "canister-filter",
+        "canister-filter-fluval-fx6"
+      ]
+    },
+    {
+      "id": "dog-universal",
+      "name": "Dog Care",
+      "emoji": "🐶",
+      "essentials": [],
+      "recommended": [
+        {
+          "slug": "rundik-snuffle-mat-dogs",
+          "from": [
+            "Enrichment guide",
+            "Best Dog Toys for Big and Small Dogs"
+          ]
+        },
+        {
+          "slug": "nina-ottosson-dog-tornado-puzzle-toy",
+          "from": [
+            "Enrichment guide",
+            "Best Dog Toys for Big and Small Dogs"
+          ]
+        },
+        {
+          "slug": "kong-extreme-dog-toy-large",
+          "from": [
+            "Enrichment guide",
+            "Best Dog Toys for Big and Small Dogs"
+          ]
+        },
+        {
+          "slug": "licki-mat-dogs",
+          "from": [
+            "Dog Bloat (GDV)"
+          ]
+        },
+        {
+          "slug": "chuckit-ultra-ball-2-pack",
+          "from": [
+            "Why Dogs Need Daily Exercise (And What Happens If Not)",
+            "Best Dog Toys for Big and Small Dogs"
+          ]
+        },
+        {
+          "slug": "chuckit-ultra-ball-launcher-bundle",
+          "from": [
+            "Best Dog Toys for Big and Small Dogs"
+          ]
+        },
+        {
+          "slug": "zippypaws-skinny-peltz-plush-toys",
+          "from": [
+            "Best Dog Toys for Big and Small Dogs"
+          ]
+        },
+        {
+          "slug": "muddy-mat-door-mat",
+          "from": [
+            "Best Dog Toys for Big and Small Dogs"
+          ]
+        },
+        {
+          "slug": "mammoth-flossy-chews-rope-tug",
+          "from": [
+            "Best Dog Toys for Big and Small Dogs"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "emperor-scorpion",
+      "name": "Emperor Scorpion",
+      "emoji": "🦂",
+      "essentials": [
+        "scorpion-enclosure-10gal-invertebrate",
+        "substrate-zoo-med-eco-earth-coconut-fiber",
+        "sphagnum-moss",
+        "shallow-water-dish",
+        "under-tank-heat-mat-thermostat-kit",
+        "digital-thermometer-hygrometer-combo",
+        "fine-mist-spray-bottle",
+        "feeding-tongs-lasnten-long-rubber-tip",
+        "uv-blacklight-uvbeast-v3"
+      ],
+      "recommended": [
+        {
+          "slug": "substrate-tarantula-coconut-fiber-peat",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "cork-bark-round-small",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "dubia-roaches-bag",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "gutload-flukers-high-calcium-dubia-roach-diet-7oz",
+          "from": [
+            "Feeding guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "substrate-hermit-crab-flukers-sand-coco",
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "gutload-flukers-cricket-quencher-calcium-3pack",
+        "gutload-flukers-orange-cube-cricket-diet-12oz"
+      ]
+    },
+    {
+      "id": "rat",
+      "name": "Fancy Rat",
+      "emoji": "🐀",
+      "essentials": [
+        "rat-cage-prevue-495-rolling",
+        "rat-wheel-exotic-nutrition-silent-runner-12in-regular",
+        "small-pet-paper-bedding",
+        "rat-block-mazuri-2lb",
+        "digital-thermometer-hygrometer-combo"
+      ],
+      "recommended": [
+        {
+          "slug": "chinchilla-cage-midwest-critter-nation-double",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "ferret-hammock-niteangel-nap-sack",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "small-pet-hideout-igloo",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "bird-feeding-dishes-okllen-4pack",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "chew-rabbit-bamboo-sticks",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "small-mammal-play-pack-seagrass",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "small-pet-foraging-puzzle",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "small-animal-tunnel",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "bird-feeding-bowls-motbach-3pack",
+        "bird-feeding-cups-pinvnby-2pack",
+        "small-pet-snuffle-mat"
+      ]
+    },
+    {
+      "id": "ferret",
+      "name": "Ferret",
+      "emoji": "🦡",
+      "essentials": [
+        "chinchilla-cage-midwest-critter-nation-double",
+        "ferret-hammock-niteangel-nap-sack",
+        "rabbit-litter-box-pinvnby",
+        "water-bottle-lixit-glass-16oz",
+        "ferret-food-marshall-premium-diet"
+      ],
+      "recommended": [
+        {
+          "slug": "litter-box",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "small-mammal-play-pack-seagrass",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "small-pet-paper-bedding",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "small-animal-tunnel",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "small-pet-snuffle-mat",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "small-pet-hideout-igloo",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "rat-cage-prevue-495-rolling",
+        "small-pet-foraging-puzzle"
+      ]
+    },
+    {
+      "id": "fire-skink",
+      "name": "Fire Skink",
+      "emoji": "🦎",
+      "essentials": [
+        "enclosure-repti-zoo-36x18x18-50gal",
+        "uvb-arcadia-forest-6",
+        "dimming-thermostat-exo-terra-proportional",
+        "digital-thermometer-hygrometer-combo"
+      ],
+      "recommended": [
+        {
+          "slug": "dimming-thermostat-pt02t",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "automatic-misting-system-fogger",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "topsoil-michigan-peat-garden-magic-40lb",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "dimming-thermostat-reptizoo-pid",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "substrate-zoo-med-eco-earth-coconut-fiber",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "sphagnum-moss",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "calcium-repashy-plus-lod-3oz",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "dubia-roaches-bag",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "substrate-tarantula-coconut-fiber-peat",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "cork-bark-round-hide",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "feeding-tongs-short-soft-tip-4pack",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "thermostat-inkbird-heat-mat-ipt-2ch",
+        "substrate-hermit-crab-flukers-sand-coco"
+      ]
+    },
+    {
+      "id": "fire-bellied-toad",
+      "name": "Fire-Bellied Toad",
+      "emoji": "🐸",
+      "essentials": [
+        "tank-10-gallon",
+        "screen-lid-zilla-20x10",
+        "sponge-filter",
+        "api-tap-water-conditioner",
+        "substrate-zoo-med-eco-earth-coconut-fiber",
+        "slate-tile-daltile-12x12-6pack",
+        "zoo-med-digital-thermometer-3pack",
+        "uvb-arcadia-shadedweller-7-12in"
+      ],
+      "recommended": [
+        {
+          "slug": "water-conditioner",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "substrate-tarantula-coconut-fiber-peat",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "calcium-repashy-plus-lod-3oz",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "gutload-flukers-orange-cube-cricket-diet-12oz",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "artificial-terrarium-plants",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "substrate-hermit-crab-flukers-sand-coco",
+        "uvb-zoo-med-5-0-t5-ho-14in-hood",
+        "gutload-flukers-cricket-quencher-calcium-3pack",
+        "gutload-flukers-high-calcium-dubia-roach-diet-7oz"
+      ]
+    },
+    {
+      "id": "flying-squirrel",
+      "name": "Flying Squirrel",
+      "emoji": "🐿️",
+      "essentials": [
+        "rat-wheel-exotic-nutrition-silent-runner-12in-regular",
+        "nest-box-sugar-gliders-usa-large",
+        "ferret-hammock-niteangel-nap-sack",
+        "sugar-glider-bonding-pouch",
+        "rat-block-mazuri-2lb"
+      ],
+      "recommended": [
+        {
+          "slug": "bird-flight-cage-large",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "hedgehog-wheel-exotic-nutrition-silent-runner-12in-wide",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "climbing-branch-mopani-wood",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "hamster-food-oxbow-garden-select",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "calcium-sugar-glider-vitamin-combo",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Feeding guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "dog-french-bulldog",
+      "name": "French Bulldog",
+      "emoji": "🐶",
+      "essentials": [],
+      "recommended": [
+        {
+          "slug": "rundik-snuffle-mat-dogs",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "nina-ottosson-dog-tornado-puzzle-toy",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "licki-mat-dogs",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "gargoyle-gecko",
+      "name": "Gargoyle Gecko",
+      "emoji": "🦎",
+      "essentials": [
+        "glass-terrarium-18x18x24",
+        "heat-bulb-zoo-med-basking-spot-25w",
+        "dimming-thermostat-pt02t",
+        "digital-thermometer-hygrometer-combo",
+        "uvb-zoo-med-5-0-t5-ho-14in-hood",
+        "substrate-zoo-med-eco-earth-coconut-fiber",
+        "fine-mist-spray-bottle",
+        "crested-gecko-diet-repashy-grubs-n-fruit-6oz",
+        "african-grey-parrot-digital-gram-scale"
+      ],
+      "recommended": [
+        {
+          "slug": "bioactive-substrate-mix",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "climbing-branch-mopani-wood",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "artificial-terrarium-plants",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "crested-gecko-diet-pangea-watermelon-complete-8oz",
+          "from": [
+            "Cost guide",
+            "Feeding guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "calcium-repashy-superfoods-plus-4oz",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "dimming-thermostat-exo-terra-proportional",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "live-terrarium-plants",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "uvb-arcadia-shadedweller-7-12in",
+        "substrate-hermit-crab-flukers-sand-coco",
+        "crested-gecko-diet-pangea-fruit-mix-treat-16oz",
+        "crested-gecko-diet-pangea-papaya-8oz",
+        "crested-gecko-diet-pangea-watermelon-2oz",
+        "crested-gecko-diet-repashy-classic-6oz",
+        "crested-gecko-diet-repashy-banana-6oz",
+        "crested-gecko-diet-repashy-mrp-mango-superblend-12oz"
+      ]
+    },
+    {
+      "id": "garter-snake",
+      "name": "Garter Snake",
+      "emoji": "🐍",
+      "essentials": [
+        "enclosure-repti-zoo-36x18x18-50gal",
+        "under-tank-heat-mat-thermostat-kit",
+        "dimming-thermostat-pt02t",
+        "digital-thermometer-hygrometer-combo",
+        "substrate-zoo-med-eco-earth-coconut-fiber",
+        "large-soakable-water-dish",
+        "water-conditioner",
+        "feeding-tongs-lasnten-long-rubber-tip"
+      ],
+      "recommended": [
+        {
+          "slug": "cypress-mulch-substrate",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "reptile-multivitamin-repcal-herptivite",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "cork-bark-round-hide",
+          "from": [
+            "Cost guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "live-terrarium-plants",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "substrate-hermit-crab-flukers-sand-coco"
+      ]
+    },
+    {
+      "id": "gerbil",
+      "name": "Gerbil",
+      "emoji": "🐭",
+      "essentials": [
+        "tank-20-gallon-long",
+        "screen-cover-zilla-30x12",
+        "timothy-hay-small-pets",
+        "hamster-wheel-niteangel-super-silent-10in",
+        "bath-sand-supreme-science-selective",
+        "digital-thermometer-hygrometer-combo"
+      ],
+      "recommended": [
+        {
+          "slug": "small-pet-hideout-igloo",
+          "from": [
+            "Cost guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "small-mammal-bowl-kaytee-vege-t-bowl",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "small-pet-paper-bedding",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "hamster-food-oxbow-garden-select",
+          "from": [
+            "Cost guide",
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "chew-guinea-pig-natural-sticks",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "aspen-shavings-substrate",
+          "from": [
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "burrow-tunnel-composable",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "bath-sand-niteangel-desert",
+        "thermometer-hygrometer-exo-terra-led-bundle"
+      ]
+    },
+    {
+      "id": "ghost-shrimp",
+      "name": "Ghost Shrimp",
+      "emoji": "🦐",
+      "essentials": [
+        "tank-10-gallon",
+        "sponge-filter",
+        "submersible-aquarium-heater",
+        "sand-caribsea-tahitian-moon-20lb",
+        "water-test-kit",
+        "water-conditioner",
+        "corydoras-hikari-sinking-wafers"
+      ],
+      "recommended": [
+        {
+          "slug": "live-terrarium-plants",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "millipede",
+      "name": "Giant African Millipede",
+      "emoji": "🐛",
+      "essentials": [
+        "tank-20-gallon-long",
+        "giant-millipede-organic-topsoil-substrate",
+        "oyster-shell-manna-pro-5lb",
+        "digital-thermometer-hygrometer-combo",
+        "fine-mist-spray-bottle",
+        "shallow-water-dish"
+      ],
+      "recommended": [
+        {
+          "slug": "leaf-litter-joshs-frogs-magnolia",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "bird-cuttlebone-penn-plax-2ct",
+          "from": [
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "thermometer-hygrometer-exo-terra-led-bundle"
+      ]
+    },
+    {
+      "id": "goldfish",
+      "name": "Goldfish",
+      "emoji": "🐟",
+      "essentials": [
+        "canister-filter-large",
+        "water-test-kit",
+        "water-conditioner",
+        "gravel-vac-python-pro-clean-large",
+        "betta-substrate-caribsea-freshwater-sand"
+      ],
+      "recommended": [
+        {
+          "slug": "tank-10-gallon",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "submersible-aquarium-heater",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "tank-20-gallon-long",
+          "from": [
+            "Setup guide",
+            "Bowl myth guide"
+          ]
+        },
+        {
+          "slug": "canister-filter",
+          "from": [
+            "Setup guide",
+            "Bowl myth guide"
+          ]
+        },
+        {
+          "slug": "goldfish-pellets-hikari-gold",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "api-tap-water-conditioner",
+          "from": [
+            "Bowl myth guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "canister-filter-fluval-fx6",
+        "hob-filter-aquaclear-70"
+      ]
+    },
+    {
+      "id": "green-anole",
+      "name": "Green Anole",
+      "emoji": "🦎",
+      "essentials": [
+        "green-anole-enclosure-24x24x24",
+        "uvb-arcadia-shadedweller-7-12in",
+        "live-terrarium-plants",
+        "digital-thermometer-hygrometer-combo",
+        "fine-mist-spray-bottle",
+        "calcium-repashy-plus-6oz"
+      ],
+      "recommended": [
+        {
+          "slug": "basking-bulb-75w",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "basking-dome-fixture",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "uvb-arcadia-forest-6",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "substrate-tarantula-coconut-fiber-peat",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "calcium-repashy-plus-lod-3oz",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "gutload-flukers-orange-cube-cricket-diet-12oz",
+          "from": [
+            "Feeding guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "uvb-zoo-med-5-0-t5-ho-14in-hood",
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "gutload-flukers-cricket-quencher-calcium-3pack",
+        "gutload-flukers-high-calcium-dubia-roach-diet-7oz"
+      ]
+    },
+    {
+      "id": "conure",
+      "name": "Green Cheek Conure",
+      "emoji": "🦜",
+      "essentials": [
+        "bird-toy-bbjinronjy-sola-ball-2pc",
+        "sugar-glider-bonding-pouch",
+        "uvb-arcadia-puresun-compact-bird-kit",
+        "bird-food-harrisons-adult-lifetime-1lb",
+        "cage-liner-birdcageliners-precut-kraft"
+      ],
+      "recommended": [
+        {
+          "slug": "bird-flight-cage-large",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "bird-perches",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "bird-food-roudybush-daily-mini-44oz",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "bird-toys-katumo-small-parrot-variety",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "bird-toy-kyouki-foraging-box",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "bird-toy-rope-perch-bell",
+        "bird-toy-xlpeixin-rope-perch",
+        "bird-toy-swing-sisal-large",
+        "bird-food-roudybush-daily-small-22oz",
+        "bird-food-harrisons-high-potency-fine-1lb",
+        "bird-cage-yaheetech-69in-xl",
+        "bird-cage-prevue-wrought-iron-flight-5ft",
+        "bird-cage-prevue-steel-flight-large",
+        "bird-cage-yaheetech-61in-playtop",
+        "bird-cage-vision-m02-tall-medium",
+        "bird-cage-prevue-flight-blue-black",
+        "bird-perch-rope-bungee-23in",
+        "bird-perch-rope-63in-2pack",
+        "bird-perch-limio-6pc-set",
+        "bird-perch-czwestc-8pc-apple-wood"
+      ]
+    },
+    {
+      "id": "green-iguana",
+      "name": "Green Iguana",
+      "emoji": "🦎",
+      "essentials": [
+        "ackie-enclosure-reptile-habitats-48x24x48-pvc",
+        "arcadia-lumenize-prot5-36in-12pct",
+        "halogen-flood-vinaco-par30-75w-6pack",
+        "dimming-thermostat-exo-terra-proportional",
+        "misting-system-mistking-starter-5th-gen",
+        "substrate-zoo-med-eco-earth-coconut-chips",
+        "soaking-tub-large-38in",
+        "digital-thermometer-hygrometer-combo"
+      ],
+      "recommended": [
+        {
+          "slug": "calcium-repashy-superveggie-6oz",
+          "from": [
+            "Cost guide",
+            "Feeding guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "automatic-misting-system-fogger",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "large-soakable-water-dish",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "climbing-branch-mopani-wood",
+          "from": [
+            "Cost guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "arcadia-t5-uvb-36in-14pct-dragon",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "uromastyx-halogen-flood-bulb-100w",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "bearded-dragon-hammock-seagrass-2pc",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "tortoise-forage-seed-mix",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "arcadia-lumenize-prot5-24in-12pct",
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "bearded-dragon-hammock-triangle"
+      ]
+    },
+    {
+      "id": "guinea-pig",
+      "name": "Guinea Pig",
+      "emoji": "🐹",
+      "essentials": [
+        "cc-cage-guinea-pig",
+        "small-pet-paper-bedding",
+        "guinea-pig-food-oxbow-essentials-adult",
+        "guinea-pig-vitamin-c-supplement",
+        "small-mammal-bowl-kaytee-vege-t-bowl",
+        "chew-guinea-pig-natural-sticks"
+      ],
+      "recommended": [
+        {
+          "slug": "small-pet-hideout-igloo",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "timothy-hay-small-pets",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide",
+            "Feeding guide",
+            "Vitamin C guide"
+          ]
+        },
+        {
+          "slug": "digital-thermometer-hygrometer-combo",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "small-mammal-play-pack-seagrass",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "small-pet-snuffle-mat",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "small-pet-foraging-puzzle",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "small-animal-tunnel",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "thermometer-hygrometer-exo-terra-led-bundle"
+      ]
+    },
+    {
+      "id": "guppy",
+      "name": "Guppy",
+      "emoji": "🐠",
+      "essentials": [
+        "tank-10-gallon",
+        "submersible-aquarium-heater",
+        "sponge-filter",
+        "sand-caribsea-tahitian-moon-20lb",
+        "water-conditioner",
+        "water-test-kit",
+        "guppy-food-hikari-tropical-fancy-guppy"
+      ],
+      "recommended": [
+        {
+          "slug": "live-terrarium-plants",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "hamster",
+      "name": "Hamster",
+      "emoji": "🌰",
+      "essentials": [
+        "small-pet-paper-bedding",
+        "bath-sand-niteangel-desert",
+        "hamster-food-oxbow-garden-select",
+        "digital-thermometer-hygrometer-combo"
+      ],
+      "recommended": [
+        {
+          "slug": "hamster-cage-prevue-528-universal",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "hamster-wheel-niteangel-super-silent-10in",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "small-pet-hideout-igloo",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "bird-feeding-dishes-okllen-4pack",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "chew-guinea-pig-natural-sticks",
+          "from": [
+            "Cost guide",
+            "Health guide"
+          ]
+        },
+        {
+          "slug": "aspen-shavings-substrate",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "burrow-tunnel-composable",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "bath-sand-supreme-science-selective",
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "bird-feeding-bowls-motbach-3pack",
+        "bird-feeding-cups-pinvnby-2pack"
+      ]
+    },
+    {
+      "id": "hedgehog",
+      "name": "Hedgehog",
+      "emoji": "🦔",
+      "essentials": [
+        "hedgehog-wheel-exotic-nutrition-silent-runner-12in-wide",
+        "digital-thermometer-hygrometer-combo",
+        "small-pet-paper-bedding",
+        "hedgehog-food-exotic-nutrition-complete",
+        "nail-clippers"
+      ],
+      "recommended": [
+        {
+          "slug": "hamster-cage-prevue-528-universal",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "small-pet-hideout-igloo",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "ceramic-heat-emitter-zoo-med-repticare-150w",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "hedgehog-food-iams-proactive-health-chicken-3.5lb",
+          "from": [
+            "Cost guide",
+            "Health guide"
+          ]
+        },
+        {
+          "slug": "thermostat-bn-link-on-off",
+          "from": [
+            "Setup guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "nail-clippers-electric"
+      ]
+    },
+    {
+      "id": "hermit-crab",
+      "name": "Hermit Crab",
+      "emoji": "🦀",
+      "essentials": [
+        "tank-10-gallon",
+        "substrate-hermit-crab-flukers-sand-coco",
+        "under-tank-heat-mat-thermostat-kit",
+        "digital-thermometer-hygrometer-combo",
+        "water-conditioner",
+        "marine-salt-instant-ocean",
+        "hermit-crab-shells-natural-12pk",
+        "bird-cuttlebone-prevue-5in",
+        "hermit-crab-food-zoo-med"
+      ],
+      "recommended": [
+        {
+          "slug": "large-soakable-water-dish",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "climbing-branch-mopani-wood",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "substrate-zoo-med-eco-earth-coconut-fiber",
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "bird-cuttlebone-penn-plax-2ct"
+      ]
+    },
+    {
+      "id": "hognose-snake",
+      "name": "Hognose Snake",
+      "emoji": "🐍",
+      "essentials": [
+        "enclosure-repti-zoo-36x18x18-50gal",
+        "milk-snake-halogen-bulb-exo-terra-sun-glo-50w",
+        "digital-thermometer-hygrometer-combo",
+        "aspen-shavings-substrate",
+        "cork-bark-round-hide",
+        "large-soakable-water-dish",
+        "feeding-tongs-lasnten-long-rubber-tip",
+        "uvb-zoo-med-5-0-t5-ho-14in-hood"
+      ],
+      "recommended": [
+        {
+          "slug": "under-tank-heat-mat-thermostat-kit",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "shallow-water-dish",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "climbing-branch-mopani-wood",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "substrate-zoo-med-reptisand-burrowing",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "uvb-arcadia-shadedweller-7-12in"
+      ]
+    },
+    {
+      "id": "jacksons-chameleon",
+      "name": "Jackson's Chameleon",
+      "emoji": "🦎",
+      "essentials": [
+        "misting-system-mistking-starter-5th-gen",
+        "humidifier-everlasting-comfort-6l",
+        "digital-thermometer-hygrometer-combo"
+      ],
+      "recommended": [
+        {
+          "slug": "uvb-arcadia-forest-6",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "automatic-misting-system-fogger",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "enclosure-zoo-med-reptibreeze-24x24x48",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "milk-snake-halogen-bulb-exo-terra-sun-glo-50w",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "dimming-thermostat-exo-terra-proportional",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "live-terrarium-plants",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "calcium-repashy-plus-6oz",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "calcium-miner-all-indoor-2pack",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "reptile-multivitamin-repcal-herptivite",
+          "from": [
+            "Feeding guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "thermometer-hygrometer-exo-terra-led-bundle"
+      ]
+    },
+    {
+      "id": "jumping-spider",
+      "name": "Jumping Spider",
+      "emoji": "🕷️",
+      "essentials": [
+        "mantis-enclosure-exo-terra-nano-tall",
+        "substrate-zoo-med-eco-earth-coconut-fiber",
+        "cork-bark-mini-flats-jumping-spider",
+        "fine-mist-spray-bottle",
+        "digital-thermometer-hygrometer-combo"
+      ],
+      "recommended": [
+        {
+          "slug": "outlet-timer-bn-link-mechanical",
+          "from": [
+            "Setup guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "substrate-hermit-crab-flukers-sand-coco",
+        "thermometer-hygrometer-exo-terra-led-bundle"
+      ]
+    },
+    {
+      "id": "koi",
+      "name": "Koi",
+      "emoji": "🎏",
+      "essentials": [
+        "pond-liner-firestone-epdm-15x20",
+        "pond-aerator-aquascape-pond-air-2",
+        "pond-netting-alpinereach-15x20",
+        "pond-deicer-kh-thermo-pond-100w",
+        "water-test-kit",
+        "pond-beneficial-bacteria-aquascape",
+        "water-conditioner",
+        "net-aquascape-pond-extendable"
+      ],
+      "recommended": [
+        {
+          "slug": "pond-filter-totalpond-uv-clarifier",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "koi-pellets-kaytee-kois-choice",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "goldfish-gel-food-repashy-super-gold",
+          "from": [
+            "Feeding guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "dog-labrador",
+      "name": "Labrador Retriever",
+      "emoji": "🐶",
+      "essentials": [],
+      "recommended": [
+        {
+          "slug": "nina-ottosson-dog-tornado-puzzle-toy",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "rundik-snuffle-mat-dogs",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "kong-extreme-dog-toy-large",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "leaf-tailed-gecko",
+      "name": "Leaf-Tailed Gecko",
+      "emoji": "🦎",
+      "essentials": [
+        "glass-terrarium-18x18x24",
+        "misting-system-mistking-starter-5th-gen",
+        "uvb-arcadia-shadedweller-7-12in",
+        "live-terrarium-plants",
+        "substrate-zoo-med-eco-earth-coconut-fiber",
+        "digital-thermometer-hygrometer-combo",
+        "leaf-tailed-gecko-magnetic-feeding-ledge",
+        "calcium-repashy-plus-6oz"
+      ],
+      "recommended": [
+        {
+          "slug": "automatic-misting-system-fogger",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "uvb-arcadia-forest-6",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "calcium-repashy-plus-lod-3oz",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "dubia-roaches-bag",
+          "from": [
+            "Feeding guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "uvb-zoo-med-5-0-t5-ho-14in-hood",
+        "substrate-hermit-crab-flukers-sand-coco",
+        "thermometer-hygrometer-exo-terra-led-bundle"
+      ]
+    },
+    {
+      "id": "leopard-gecko",
+      "name": "Leopard Gecko",
+      "emoji": "🦎",
+      "essentials": [
+        "enclosure-repti-zoo-36x18x18-50gal",
+        "under-tank-heat-mat-thermostat-kit",
+        "digital-thermometer-hygrometer-combo",
+        "etekcity-infrared-thermometer-gun",
+        "slate-tile-daltile-12x12-6pack",
+        "feeding-tongs-lasnten-long-rubber-tip",
+        "uvb-zoo-med-5-0-t5-ho-14in-hood"
+      ],
+      "recommended": [
+        {
+          "slug": "uvb-arcadia-desert-12",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "dubia-roach-colony-starter-kit",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "uvb-arcadia-shadedweller-7-12in",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "calcium-repashy-plus-6oz",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "sphagnum-moss",
+          "from": [
+            "Health guide"
+          ]
+        },
+        {
+          "slug": "cork-bark-round-hide",
+          "from": [
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "shallow-water-dish",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "calcium-arcadia-earthpro-revitalised3",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "feeding-tongs-entomology-forceps-fine-tip",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "reptile-rolling-treat-dispenser",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "infrared-temp-gun",
+          "from": [
+            "Temperature guide"
+          ]
+        },
+        {
+          "slug": "zoo-med-digital-thermometer-3pack",
+          "from": [
+            "Temperature guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "reptile-extraction-puzzle-board"
+      ]
+    },
+    {
+      "id": "lovebird",
+      "name": "Lovebird",
+      "emoji": "❤️",
+      "essentials": [
+        "bird-perches",
+        "bird-toy-bbjinronjy-sola-ball-2pc",
+        "cage-cover-prevue-universal-medium",
+        "bird-feeding-dishes-okllen-4pack"
+      ],
+      "recommended": [
+        {
+          "slug": "bird-flight-cage-large",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "bird-food-roudybush-daily-mini-44oz",
+          "from": [
+            "Cost guide",
+            "Health guide"
+          ]
+        },
+        {
+          "slug": "bird-toys-katumo-small-parrot-variety",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "bird-toy-kyouki-foraging-box",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "bird-perch-rope-bungee-23in",
+        "bird-perch-rope-63in-2pack",
+        "bird-perch-limio-6pc-set",
+        "bird-perch-czwestc-8pc-apple-wood",
+        "bird-toy-rope-perch-bell",
+        "bird-toy-xlpeixin-rope-perch",
+        "bird-toy-swing-sisal-large",
+        "bird-feeding-bowls-motbach-3pack",
+        "bird-feeding-cups-pinvnby-2pack",
+        "bird-cage-yaheetech-69in-xl",
+        "bird-cage-prevue-wrought-iron-flight-5ft",
+        "bird-cage-prevue-steel-flight-large",
+        "bird-cage-yaheetech-61in-playtop",
+        "bird-cage-vision-m02-tall-medium",
+        "bird-cage-prevue-flight-blue-black",
+        "bird-food-roudybush-daily-small-22oz",
+        "bird-food-harrisons-high-potency-fine-1lb",
+        "bird-food-harrisons-adult-lifetime-1lb"
+      ]
+    },
+    {
+      "id": "hissing-cockroach",
+      "name": "Madagascar Hissing Cockroach",
+      "emoji": "🪲",
+      "essentials": [
+        "scorpion-enclosure-10gal-invertebrate",
+        "petroleum-jelly-amazon-basics",
+        "substrate-zoo-med-eco-earth-coconut-fiber",
+        "egg-flats-joshs-frogs-15",
+        "roach-food-joshs-frogs-roach-rations",
+        "fine-mist-spray-bottle",
+        "digital-thermometer-hygrometer-combo",
+        "thermostat-bn-link-on-off"
+      ],
+      "recommended": [
+        {
+          "slug": "tank-10-gallon",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "cork-bark-round-hide",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "under-tank-heat-mat-thermostat-kit",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "substrate-hermit-crab-flukers-sand-coco",
+        "thermometer-hygrometer-exo-terra-led-bundle"
+      ]
+    },
+    {
+      "id": "milk-snake",
+      "name": "Milk Snake",
+      "emoji": "🐍",
+      "essentials": [
+        "milk-snake-vivarium-wooden-48x24x24",
+        "dimming-thermostat-pt02t",
+        "sphagnum-moss",
+        "aspen-shavings-substrate",
+        "large-soakable-water-dish",
+        "digital-thermometer-hygrometer-combo",
+        "feeding-tongs-lasnten-long-rubber-tip"
+      ],
+      "recommended": [
+        {
+          "slug": "milk-snake-halogen-bulb-exo-terra-sun-glo-50w",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "cypress-mulch-substrate",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "uvb-zoo-med-5-0-t5-ho-14in-hood",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "dimming-thermostat-exo-terra-proportional",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "cork-bark-round-hide",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "climbing-branch-mopani-wood",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "uvb-arcadia-shadedweller-7-12in"
+      ]
+    },
+    {
+      "id": "molly",
+      "name": "Molly",
+      "emoji": "🐠",
+      "essentials": [
+        "tank-20-gallon-long",
+        "submersible-aquarium-heater",
+        "canister-filter",
+        "sponge-filter",
+        "sand-caribsea-tahitian-moon-20lb",
+        "driftwood",
+        "water-test-kit",
+        "water-conditioner",
+        "crushed-coral-caribsea-10lb",
+        "fish-food-omega-one-veggie-kelp-flakes",
+        "aquarium-salt-api-33oz"
+      ],
+      "recommended": [
+        {
+          "slug": "hob-filter-aquaclear-70",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "live-terrarium-plants",
+          "from": [
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "canister-filter-large",
+        "canister-filter-fluval-fx6"
+      ]
+    },
+    {
+      "id": "mourning-gecko",
+      "name": "Mourning Gecko",
+      "emoji": "🦎",
+      "essentials": [
+        "terrarium-exo-terra-12x12x18",
+        "glass-terrarium-18x18x24",
+        "substrate-zoo-med-eco-earth-coconut-fiber",
+        "fine-mist-spray-bottle",
+        "digital-thermometer-hygrometer-combo",
+        "crested-gecko-diet-repashy-classic-6oz",
+        "leaf-tailed-gecko-magnetic-feeding-ledge",
+        "deli-cups-dubia-farms-32oz-vented",
+        "reptile-multivitamin-repcal-herptivite"
+      ],
+      "recommended": [
+        {
+          "slug": "calcium-zoo-med-without-d3",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "uvb-zoo-med-5-0-t5-ho-14in-hood",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "bioactive-substrate-mix",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "cork-bark-round-hide",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "crested-gecko-diet-pangea-watermelon-complete-8oz",
+          "from": [
+            "Cost guide",
+            "Feeding guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "calcium-arcadia-earthpro-revitalised3",
+          "from": [
+            "Health guide"
+          ]
+        },
+        {
+          "slug": "calcium-repashy-superfoods-plus-4oz",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "live-terrarium-plants",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "substrate-hermit-crab-flukers-sand-coco",
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "crested-gecko-diet-pangea-fruit-mix-treat-16oz",
+        "crested-gecko-diet-pangea-papaya-8oz",
+        "crested-gecko-diet-pangea-watermelon-2oz",
+        "crested-gecko-diet-repashy-banana-6oz",
+        "crested-gecko-diet-repashy-grubs-n-fruit-6oz",
+        "crested-gecko-diet-repashy-mrp-mango-superblend-12oz",
+        "uvb-arcadia-shadedweller-7-12in"
+      ]
+    },
+    {
+      "id": "mouse",
+      "name": "Mouse",
+      "emoji": "🐭",
+      "essentials": [
+        "mouse-cage-ferplast-favola",
+        "small-pet-paper-bedding",
+        "small-pet-hideout-igloo",
+        "wheel-kaytee-silent-spinner-6-5in",
+        "digital-thermometer-hygrometer-combo"
+      ],
+      "recommended": [
+        {
+          "slug": "bird-feeding-dishes-okllen-4pack",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "mouse-young-rat-food-oxbow-essentials",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "chew-guinea-pig-natural-sticks",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "small-pet-foraging-puzzle",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "bird-feeding-bowls-motbach-3pack",
+        "bird-feeding-cups-pinvnby-2pack",
+        "small-pet-snuffle-mat"
+      ]
+    },
+    {
+      "id": "neon-tetra",
+      "name": "Neon Tetra",
+      "emoji": "🐠",
+      "essentials": [
+        "tank-10-gallon",
+        "submersible-aquarium-heater",
+        "sponge-filter",
+        "sand-caribsea-tahitian-moon-20lb",
+        "water-test-kit",
+        "water-conditioner",
+        "neon-tetra-food-hikari-micro-pellets"
+      ],
+      "recommended": [
+        {
+          "slug": "live-terrarium-plants",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "driftwood",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "tank-20-gallon-long",
+          "from": [
+            "Setup guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "oscar",
+      "name": "Oscar",
+      "emoji": "🐟",
+      "essentials": [
+        "oscar-fish-canister-filter-fluval-fx4",
+        "hob-filter-aquaclear-70",
+        "water-test-kit",
+        "water-conditioner",
+        "sand-caribsea-tahitian-moon-20lb",
+        "glass-lid-48x18-center-brace",
+        "gravel-vac-python-pro-clean-large",
+        "oscar-fish-hikari-cichlid-gold-pellets"
+      ],
+      "recommended": [
+        {
+          "slug": "submersible-aquarium-heater",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "driftwood",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "canister-filter",
+        "canister-filter-large",
+        "canister-filter-fluval-fx6"
+      ]
+    },
+    {
+      "id": "pacman-frog",
+      "name": "Pacman Frog",
+      "emoji": "🐸",
+      "essentials": [
+        "substrate-zoo-med-eco-earth-coconut-fiber",
+        "sphagnum-moss",
+        "under-tank-heat-mat-thermostat-kit",
+        "digital-thermometer-hygrometer-combo",
+        "shallow-water-dish",
+        "cork-bark-round-hide",
+        "feeding-tongs-short-soft-tip-4pack",
+        "water-conditioner"
+      ],
+      "recommended": [
+        {
+          "slug": "topsoil-michigan-peat-garden-magic-40lb",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "heat-bulb-zoo-med-basking-spot-25w",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "substrate-tarantula-coconut-fiber-peat",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "calcium-repashy-plus-6oz",
+          "from": [
+            "Cost guide",
+            "Health guide"
+          ]
+        },
+        {
+          "slug": "scorpion-enclosure-10gal-invertebrate",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "substrate-hermit-crab-flukers-sand-coco",
+        "thermometer-hygrometer-exo-terra-led-bundle"
+      ]
+    },
+    {
+      "id": "parrotlet",
+      "name": "Parrotlet",
+      "emoji": "🐦",
+      "essentials": [
+        "bird-perch-czwestc-8pc-apple-wood",
+        "bird-toy-bbjinronjy-sola-ball-2pc",
+        "bird-feeding-dishes-okllen-4pack",
+        "bird-cuttlebone-penn-plax-2ct",
+        "bird-food-roudybush-daily-mini-44oz",
+        "bird-treat-kaytee-spray-millet-7oz",
+        "cage-liner-birdcageliners-precut-kraft",
+        "african-grey-parrot-digital-gram-scale"
+      ],
+      "recommended": [
+        {
+          "slug": "bird-flight-cage-large",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "bird-perches",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "bird-toys-katumo-small-parrot-variety",
+          "from": [
+            "Cost guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "bird-perch-rope-bungee-23in",
+        "bird-perch-rope-63in-2pack",
+        "bird-perch-limio-6pc-set",
+        "bird-toy-rope-perch-bell",
+        "bird-toy-kyouki-foraging-box",
+        "bird-toy-xlpeixin-rope-perch",
+        "bird-toy-swing-sisal-large",
+        "bird-feeding-bowls-motbach-3pack",
+        "bird-feeding-cups-pinvnby-2pack",
+        "bird-cuttlebone-prevue-5in",
+        "bird-cuttlebone-double",
+        "bird-food-roudybush-daily-small-22oz",
+        "bird-food-harrisons-high-potency-fine-1lb",
+        "bird-food-harrisons-adult-lifetime-1lb",
+        "bird-treat-living-world-millet-spray-17-6oz",
+        "bird-treat-birds-love-millet-1lb",
+        "bird-cage-yaheetech-69in-xl",
+        "bird-cage-prevue-wrought-iron-flight-5ft",
+        "bird-cage-prevue-steel-flight-large",
+        "bird-cage-yaheetech-61in-playtop",
+        "bird-cage-vision-m02-tall-medium",
+        "bird-cage-prevue-flight-blue-black"
+      ]
+    },
+    {
+      "id": "cat-persian",
+      "name": "Persian",
+      "emoji": "🐱",
+      "essentials": [],
+      "recommended": [
+        {
+          "slug": "cat-tree-scratching-post",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "litter-box",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "puzzle-feeder",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "platy",
+      "name": "Platy",
+      "emoji": "🐠",
+      "essentials": [
+        "tank-10-gallon",
+        "submersible-aquarium-heater",
+        "sponge-filter",
+        "crushed-coral-caribsea-10lb",
+        "water-test-kit",
+        "water-conditioner",
+        "neon-tetra-food-hikari-micro-pellets"
+      ],
+      "recommended": [
+        {
+          "slug": "live-terrarium-plants",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "fish-food-omega-one-veggie-kelp-flakes",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "tank-20-gallon-long",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "hob-filter-aquaclear-70",
+          "from": [
+            "Setup guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "canister-filter",
+        "canister-filter-large",
+        "canister-filter-fluval-fx6"
+      ]
+    },
+    {
+      "id": "praying-mantis",
+      "name": "Praying Mantis",
+      "emoji": "🦗",
+      "essentials": [
+        "mantis-enclosure-exo-terra-nano-tall",
+        "substrate-zoo-med-eco-earth-coconut-fiber",
+        "fine-mist-spray-bottle",
+        "feeding-tongs-entomology-forceps-fine-tip",
+        "digital-thermometer-hygrometer-combo",
+        "deli-cups-dubia-farms-32oz-vented"
+      ],
+      "recommended": [
+        {
+          "slug": "substrate-tarantula-coconut-fiber-peat",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "climbing-branch-mopani-wood",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "substrate-hermit-crab-flukers-sand-coco",
+        "thermometer-hygrometer-exo-terra-led-bundle"
+      ]
+    },
+    {
+      "id": "quaker-parakeet",
+      "name": "Quaker Parakeet",
+      "emoji": "🦜",
+      "essentials": [
+        "bird-perches",
+        "bird-food-roudybush-daily-small-22oz",
+        "bird-cuttlebone-prevue-5in",
+        "cage-liner-birdcageliners-precut-kraft",
+        "bird-travel-carrier-perch"
+      ],
+      "recommended": [
+        {
+          "slug": "bird-cage-prevue-wrought-iron-flight-5ft",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "bird-food-harrisons-high-potency-fine-1lb",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "bird-toy-bbjinronjy-sola-ball-2pc",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "bird-perch-czwestc-8pc-apple-wood",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "bird-feeding-cups-pinvnby-2pack",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "bird-cuttlebone-penn-plax-2ct",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "bird-food-harrisons-adult-lifetime-1lb",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "bird-toy-rope-perch-bell",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "bird-perch-rope-bungee-23in",
+        "bird-perch-rope-63in-2pack",
+        "bird-perch-limio-6pc-set",
+        "bird-food-roudybush-daily-mini-44oz",
+        "bird-cuttlebone-double",
+        "bird-flight-cage-large",
+        "bird-cage-yaheetech-69in-xl",
+        "bird-cage-prevue-steel-flight-large",
+        "bird-cage-yaheetech-61in-playtop",
+        "bird-cage-vision-m02-tall-medium",
+        "bird-cage-prevue-flight-blue-black",
+        "bird-toy-kyouki-foraging-box",
+        "bird-toy-xlpeixin-rope-perch",
+        "bird-toy-swing-sisal-large",
+        "bird-feeding-bowls-motbach-3pack",
+        "bird-feeding-dishes-okllen-4pack"
+      ]
+    },
+    {
+      "id": "rabbit",
+      "name": "Rabbit",
+      "emoji": "🐰",
+      "essentials": [
+        "rabbit-exercise-pen-midwest-folding-30in",
+        "litter-box",
+        "rabbit-pellet-food-oxbow-garden-select",
+        "small-mammal-bowl-kaytee-vege-t-bowl",
+        "nail-clippers",
+        "rabbit-carrier-petsfit",
+        "cord-protector-sungrow-20ft"
+      ],
+      "recommended": [
+        {
+          "slug": "hay-manger-kaytee-large",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "timothy-hay-small-pets",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide",
+            "Feeding guide",
+            "Enrichment guide",
+            "GI Stasis"
+          ]
+        },
+        {
+          "slug": "small-pet-paper-bedding",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "small-pet-snuffle-mat",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "small-pet-foraging-puzzle",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "rabbit-litter-box-pinvnby",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "chew-rabbit-bamboo-sticks",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "nail-clippers-electric"
+      ]
+    },
+    {
+      "id": "red-eared-slider",
+      "name": "Red-Eared Slider",
+      "emoji": "🐢",
+      "essentials": [
+        "oscar-fish-canister-filter-fluval-fx4",
+        "turtle-basking-platform-turtle-topper-large",
+        "uvb-zoo-med-reptisun-24in-high-output-hood",
+        "dimming-thermostat-pt02t",
+        "submersible-aquarium-heater",
+        "water-test-kit",
+        "turtle-pellets-mazuri-aquatic"
+      ],
+      "recommended": [
+        {
+          "slug": "turtle-enclosure-reptizoo-120gal-glass",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "canister-filter-large",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "basking-dome-fixture",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "calcium-tortoise-turtle-herbivorous-sulcata",
+          "from": [
+            "Feeding guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "red-footed-tortoise",
+      "name": "Red-Footed Tortoise",
+      "emoji": "🐢",
+      "essentials": [
+        "pvc-enclosure-4x2x2",
+        "uvb-arcadia-forest-6",
+        "dimming-thermostat-pt02t",
+        "digital-thermometer-hygrometer-combo",
+        "substrate-zoo-med-eco-earth-coconut-fiber",
+        "sphagnum-moss",
+        "automatic-misting-system-fogger",
+        "large-soakable-water-dish",
+        "calcium-miner-all-indoor-2pack",
+        "bird-cuttlebone-prevue-5in",
+        "tortoise-forage-seed-mix",
+        "target-stick-clicker"
+      ],
+      "recommended": [
+        {
+          "slug": "misting-system-mistking-starter-5th-gen",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "uvb-zoo-med-reptisun-24in-high-output-hood",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "substrate-tarantula-coconut-fiber-peat",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "calcium-arcadia-earthpro-revitalised3",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "ceramic-heat-emitter-zoo-med-repticare-150w",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "milk-snake-halogen-bulb-exo-terra-sun-glo-50w",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "arcadia-lumenize-prot5-24in-12pct",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "bird-cuttlebone-penn-plax-2ct",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "tortoise-table",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "calcium-tortoise-turtle-herbivorous-sulcata",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "pvc-enclosure-4x2x2-alt",
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "substrate-hermit-crab-flukers-sand-coco",
+        "arcadia-lumenize-prot5-36in-12pct",
+        "arcadia-t5-uvb-36in-14pct-dragon"
+      ]
+    },
+    {
+      "id": "rosy-boa",
+      "name": "Rosy Boa",
+      "emoji": "🐍",
+      "essentials": [
+        "enclosure-repti-zoo-36x18x18-50gal",
+        "tank-10-gallon",
+        "under-tank-heat-mat-thermostat-kit",
+        "digital-thermometer-hygrometer-combo",
+        "aspen-shavings-substrate",
+        "sphagnum-moss",
+        "shallow-water-dish",
+        "feeding-tongs-lasnten-long-rubber-tip"
+      ],
+      "recommended": [
+        {
+          "slug": "tank-20-gallon-long",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "screen-cover-zilla-30x12",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "hide-zoomed-habba-hut-medium",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "uvb-zoo-med-5-0-t5-ho-14in-hood",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "cork-bark-round-hide",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "uvb-arcadia-shadedweller-7-12in"
+      ]
+    },
+    {
+      "id": "russian-tortoise",
+      "name": "Russian Tortoise",
+      "emoji": "🐢",
+      "essentials": [
+        "tortoise-table",
+        "arcadia-lumenize-prot5-24in-12pct",
+        "etekcity-infrared-thermometer-gun",
+        "digital-thermometer-hygrometer-combo",
+        "hide-exo-terra-gecko-cave-medium"
+      ],
+      "recommended": [
+        {
+          "slug": "outlet-timer-bn-link-mechanical",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "slate-tile-daltile-12x12-6pack",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "uvb-zoo-med-reptisun-24in-high-output-hood",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "milk-snake-halogen-bulb-exo-terra-sun-glo-50w",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "substrate-tarantula-coconut-fiber-peat",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "bird-cuttlebone-penn-plax-2ct",
+          "from": [
+            "Cost guide",
+            "Health guide"
+          ]
+        },
+        {
+          "slug": "uvb-arcadia-forest-6",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "uvi-meter-solarmeter-6-5r",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "tortoise-forage-seed-mix",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "arcadia-lumenize-prot5-36in-12pct",
+        "arcadia-t5-uvb-36in-14pct-dragon",
+        "thermometer-hygrometer-exo-terra-led-bundle"
+      ]
+    },
+    {
+      "id": "savannah-monitor",
+      "name": "Savannah Monitor",
+      "emoji": "🦎",
+      "essentials": [
+        "halogen-flood-vinaco-par30-75w-6pack",
+        "etekcity-infrared-thermometer-gun",
+        "argentine-tegu-uvb-46in",
+        "feeding-tongs-lasnten-long-rubber-tip",
+        "reptile-extraction-puzzle-board",
+        "target-stick-clicker"
+      ],
+      "recommended": [
+        {
+          "slug": "savannah-monitor-enclosure-pvc-8x4x4",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "uromastyx-halogen-flood-bulb-100w",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "ackie-substrate-bio-dude-terra-sahara-36qt",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "uvb-arcadia-desert-12",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "dubia-roach-colony-starter-kit",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "calcium-miner-all-indoor-2pack",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "substrate-zoo-med-eco-earth-coconut-fiber",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "large-soakable-water-dish",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "reptile-rolling-treat-dispenser",
+        "substrate-hermit-crab-flukers-sand-coco"
+      ]
+    },
+    {
+      "id": "dog-siberian-husky",
+      "name": "Siberian Husky",
+      "emoji": "🐺",
+      "essentials": [],
+      "recommended": [
+        {
+          "slug": "leash-harness-set",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "kong-extreme-dog-toy-large",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "rundik-snuffle-mat-dogs",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "cat-sphynx",
+      "name": "Sphynx",
+      "emoji": "🐱",
+      "essentials": [],
+      "recommended": [
+        {
+          "slug": "cat-tree-scratching-post",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "dental-kit-cat-virbac-cet",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "puzzle-feeder",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "stick-insect",
+      "name": "Stick Insect",
+      "emoji": "🌿",
+      "essentials": [
+        "substrate-zoo-med-eco-earth-coconut-fiber",
+        "fine-mist-spray-bottle",
+        "digital-thermometer-hygrometer-combo",
+        "water-tubes-royal-imports-25pack"
+      ],
+      "recommended": [
+        {
+          "slug": "substrate-tarantula-coconut-fiber-peat",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "substrate-hermit-crab-flukers-sand-coco",
+        "thermometer-hygrometer-exo-terra-led-bundle"
+      ]
+    },
+    {
+      "id": "sugar-glider",
+      "name": "Sugar Glider",
+      "emoji": "🐿️",
+      "essentials": [
+        "exercise-wheel-sugar-glider",
+        "sugar-glider-bonding-pouch",
+        "sugar-glider-diet-exotic-nutrition-glider-complete",
+        "calcium-sugar-glider-vitamin-combo"
+      ],
+      "recommended": [
+        {
+          "slug": "chinchilla-cage-midwest-critter-nation-double",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "hedgehog-wheel-exotic-nutrition-silent-runner-12in-wide",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "small-pet-hideout-igloo",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "rat-cage-prevue-495-rolling"
+      ]
+    },
+    {
+      "id": "sulcata-tortoise",
+      "name": "Sulcata Tortoise",
+      "emoji": "🐢",
+      "essentials": [
+        "dimming-thermostat-pt02t",
+        "tortoise-table",
+        "arcadia-t5-uvb-36in-14pct-dragon",
+        "hay-oxbow-orchard-40oz",
+        "calcium-tortoise-turtle-herbivorous-sulcata",
+        "oyster-shell-manna-pro-5lb",
+        "large-soakable-water-dish"
+      ],
+      "recommended": [
+        {
+          "slug": "halogen-flood-vinaco-par30-75w-6pack",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "escape-proof-fencing",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "ceramic-heat-emitter-zoo-med-repticare-150w",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "uvb-zoo-med-reptisun-24in-high-output-hood",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "basking-bulb-75w",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "tortoise-forage-seed-mix",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "arcadia-lumenize-prot5-36in-12pct",
+        "arcadia-lumenize-prot5-24in-12pct"
+      ]
+    },
+    {
+      "id": "swordtail",
+      "name": "Swordtail",
+      "emoji": "🐠",
+      "essentials": [
+        "tank-tetra-29-gallon",
+        "glass-lid-aqueon-versa-top-30in",
+        "submersible-aquarium-heater",
+        "canister-filter",
+        "sponge-filter",
+        "water-test-kit",
+        "water-conditioner"
+      ],
+      "recommended": [
+        {
+          "slug": "tank-20-gallon-long",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "hob-filter-aquaclear-70",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "live-terrarium-plants",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "canister-filter-large",
+        "canister-filter-fluval-fx6"
+      ]
+    },
+    {
+      "id": "tarantula",
+      "name": "Tarantula",
+      "emoji": "🕷️",
+      "essentials": [
+        "scorpion-enclosure-10gal-invertebrate",
+        "substrate-tarantula-coconut-fiber-peat",
+        "hide-zoomed-habba-hut-medium",
+        "digital-thermometer-hygrometer-combo"
+      ],
+      "recommended": [
+        {
+          "slug": "shallow-water-dish",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "cork-bark-round-hide",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "dubia-roaches-bag",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "feeding-tongs-lasnten-long-rubber-tip",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "fine-mist-spray-bottle",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "feeding-tongs-entomology-forceps-fine-tip",
+          "from": [
+            "Feeding guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "thermometer-hygrometer-exo-terra-led-bundle"
+      ]
+    },
+    {
+      "id": "tiger-salamander",
+      "name": "Tiger Salamander",
+      "emoji": "🐸",
+      "essentials": [
+        "tank-20-gallon-long",
+        "substrate-zoo-med-eco-earth-coconut-fiber",
+        "leaf-litter-joshs-frogs-magnolia",
+        "shallow-water-dish",
+        "water-conditioner",
+        "digital-thermometer-hygrometer-combo",
+        "feeding-tongs-lasnten-long-rubber-tip"
+      ],
+      "recommended": [
+        {
+          "slug": "substrate-tarantula-coconut-fiber-peat",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "api-tap-water-conditioner",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "feeding-tongs-short-soft-tip-4pack",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "calcium-repashy-plus-6oz",
+          "from": [
+            "Feeding guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "substrate-hermit-crab-flukers-sand-coco",
+        "thermometer-hygrometer-exo-terra-led-bundle"
+      ]
+    },
+    {
+      "id": "tokay-gecko",
+      "name": "Tokay Gecko",
+      "emoji": "🦎",
+      "essentials": [
+        "tokay-gecko-terrarium-exo-terra-18x18x36",
+        "milk-snake-halogen-bulb-exo-terra-sun-glo-50w",
+        "dimming-thermostat-pt02t",
+        "uvb-zoo-med-5-0-t5-ho-14in-hood",
+        "substrate-zoo-med-eco-earth-coconut-fiber",
+        "digital-thermometer-hygrometer-combo",
+        "fine-mist-spray-bottle",
+        "shallow-water-dish",
+        "african-grey-parrot-digital-gram-scale"
+      ],
+      "recommended": [
+        {
+          "slug": "ceramic-heat-emitter-zoo-med-repticare-150w",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "dimming-thermostat-exo-terra-proportional",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "sphagnum-moss",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "calcium-repashy-plus-lod-3oz",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "gutload-flukers-high-calcium-dubia-roach-diet-7oz",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "climbing-branch-mopani-wood",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "live-terrarium-plants",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "cork-bark-round-xl",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "uvb-arcadia-shadedweller-7-12in",
+        "substrate-hermit-crab-flukers-sand-coco",
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "gutload-flukers-cricket-quencher-calcium-3pack",
+        "gutload-flukers-orange-cube-cricket-diet-12oz"
+      ]
+    },
+    {
+      "id": "uromastyx",
+      "name": "Uromastyx",
+      "emoji": "🦎",
+      "essentials": [
+        "pvc-enclosure-4x2x2",
+        "uromastyx-halogen-flood-bulb-100w",
+        "arcadia-t5-uvb-36in-14pct-dragon",
+        "slate-tile-daltile-12x12-6pack",
+        "shallow-water-dish",
+        "calcium-miner-all-indoor-2pack"
+      ],
+      "recommended": [
+        {
+          "slug": "substrate-zoo-med-reptisand-burrowing",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "uromastyx-uro-grit-seed-pollen-supplement",
+          "from": [
+            "Cost guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "digital-thermometer-hygrometer-combo",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "etekcity-infrared-thermometer-gun",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "uvi-meter-solarmeter-6-5r",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "calcium-arcadia-earthpro-revitalised3",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "tortoise-forage-seed-mix",
+          "from": [
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "calcium-repashy-superveggie-6oz",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "pvc-enclosure-4x2x2-alt",
+        "arcadia-lumenize-prot5-36in-12pct",
+        "arcadia-lumenize-prot5-24in-12pct",
+        "thermometer-hygrometer-exo-terra-led-bundle"
+      ]
+    },
+    {
+      "id": "veiled-chameleon",
+      "name": "Veiled Chameleon",
+      "emoji": "🦎",
+      "essentials": [
+        "enclosure-zoo-med-reptibreeze-24x24x48",
+        "basking-bulb-75w",
+        "misting-system-mistking-starter-5th-gen",
+        "calcium-zoo-med-without-d3"
+      ],
+      "recommended": [
+        {
+          "slug": "storage-tub-sterilite-56qt",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "uvb-arcadia-forest-6",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "automatic-misting-system-fogger",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "live-terrarium-plants",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "calcium-repashy-plus-lod-3oz",
+          "from": [
+            "Cost guide",
+            "Health guide"
+          ]
+        },
+        {
+          "slug": "digital-thermometer-hygrometer-combo",
+          "from": [
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "calcium-repashy-plus-6oz",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "gutload-flukers-orange-cube-cricket-diet-12oz",
+          "from": [
+            "Feeding guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "thermometer-hygrometer-exo-terra-led-bundle",
+        "gutload-flukers-cricket-quencher-calcium-3pack",
+        "gutload-flukers-high-calcium-dubia-roach-diet-7oz"
+      ]
+    },
+    {
+      "id": "whites-tree-frog",
+      "name": "White's Tree Frog",
+      "emoji": "🐸",
+      "essentials": [
+        "glass-terrarium-18x18x24",
+        "orchid-bark-better-gro-8qt",
+        "live-terrarium-plants",
+        "cork-bark-round-hide",
+        "climbing-branch-mopani-wood",
+        "shallow-water-dish",
+        "uvb-zoo-med-5-0-t5-ho-14in-hood",
+        "heat-bulb-zoo-med-basking-spot-25w",
+        "digital-thermometer-hygrometer-combo",
+        "water-conditioner",
+        "calcium-repashy-plus-6oz"
+      ],
+      "recommended": [
+        {
+          "slug": "artificial-terrarium-plants",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "uvb-arcadia-shadedweller-7-12in",
+        "thermometer-hygrometer-exo-terra-led-bundle"
+      ]
+    },
+    {
+      "id": "zebra-danio",
+      "name": "Zebra Danio",
+      "emoji": "🐠",
+      "essentials": [
+        "tank-20-gallon-long",
+        "glass-lid-aqueon-versa-top-30in",
+        "sponge-filter",
+        "driftwood",
+        "water-test-kit",
+        "water-conditioner",
+        "neon-tetra-food-hikari-micro-pellets"
+      ],
+      "recommended": [
+        {
+          "slug": "tank-10-gallon",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "live-terrarium-plants",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "submersible-aquarium-heater",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "air-pump-hygger-mini-2-20gal",
+          "from": [
+            "Cost guide"
+          ]
+        },
+        {
+          "slug": "airline-penn-plax-25ft",
+          "from": [
+            "Cost guide"
+          ]
+        }
+      ],
+      "alternates": []
+    },
+    {
+      "id": "zebra-finch",
+      "name": "Zebra Finch",
+      "emoji": "🐦",
+      "essentials": [
+        "canary-shallow-bird-bath",
+        "bird-cuttlebone-penn-plax-2ct",
+        "bird-food-lafebers-premium-canaries-1-25lb",
+        "finch-seed-higgins-vita-25lb",
+        "egg-food-higgins-3pack",
+        "african-grey-parrot-digital-gram-scale"
+      ],
+      "recommended": [
+        {
+          "slug": "bird-flight-cage-large",
+          "from": [
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "bird-perches",
+          "from": [
+            "Cost guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "bird-treat-kaytee-spray-millet-7oz",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "bird-feeding-dishes-okllen-4pack",
+          "from": [
+            "Feeding guide"
+          ]
+        },
+        {
+          "slug": "bird-cage-prevue-wrought-iron-flight-5ft",
+          "from": [
+            "Enrichment guide"
+          ]
+        }
+      ],
+      "alternates": [
+        "bird-cuttlebone-prevue-5in",
+        "bird-cuttlebone-double",
+        "bird-cage-yaheetech-69in-xl",
+        "bird-cage-prevue-steel-flight-large",
+        "bird-cage-yaheetech-61in-playtop",
+        "bird-cage-vision-m02-tall-medium",
+        "bird-cage-prevue-flight-blue-black",
+        "bird-perch-rope-bungee-23in",
+        "bird-perch-rope-63in-2pack",
+        "bird-perch-limio-6pc-set",
+        "bird-perch-czwestc-8pc-apple-wood",
+        "bird-treat-living-world-millet-spray-17-6oz",
+        "bird-treat-birds-love-millet-1lb",
+        "bird-feeding-bowls-motbach-3pack",
+        "bird-feeding-cups-pinvnby-2pack"
+      ]
+    }
+  ]
+}
