@@ -21,13 +21,19 @@ function escapeHtml(str) {
 }
 
 // Built once at module load - CATEGORIES is static data.
-const ALIAS_MAP = new Map(); // lowercased alias -> { slug, definition, displayTerm }
+// An all-caps alias is an acronym and only matches written in capitals: the
+// match is otherwise case-insensitive, which had "boas" (the snakes) linking
+// to BOAS the airway syndrome, and "cites" the verb to CITES.
+const isAcronym = (alias) => alias === alias.toUpperCase() && /[A-Z]/.test(alias);
+const ALIAS_MAP = new Map(); // lowercased alias -> { slug, definition, displayTerm, exact }
 for (const cat of CATEGORIES) {
   for (const t of cat.terms) {
     const slug = slugify(t.term);
     for (const alias of extractAliases(t.term)) {
       const key = alias.toLowerCase();
-      if (!ALIAS_MAP.has(key)) ALIAS_MAP.set(key, { slug, definition: t.definition, displayTerm: t.term });
+      if (!ALIAS_MAP.has(key)) {
+        ALIAS_MAP.set(key, { slug, definition: t.definition, displayTerm: t.term, exact: isAcronym(alias) ? alias : null });
+      }
     }
   }
 }
@@ -185,6 +191,7 @@ export default function GlossaryHighlighter({ contentRef, watch }) {
       while ((match = MATCH_REGEX.exec(text))) {
         const info = ALIAS_MAP.get(match[1].toLowerCase());
         if (!info || usedSlugs.has(info.slug)) continue;
+        if (info.exact && match[1] !== info.exact) continue;
 
         usedSlugs.add(info.slug);
         didMatch = true;
