@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { CheckCircle2, XCircle, RotateCcw, Share2 } from 'lucide-react';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
+import { useScrollBackIntoView } from '@/lib/hooks/useScrollBackIntoView';
 
 const KnowledgeQuiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -9,6 +10,7 @@ const KnowledgeQuiz = () => {
   const [showExplanation, setShowExplanation] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [justSaved, setJustSaved] = useState(false);
+  const [playAreaRef, scrollBackToPlayArea] = useScrollBackIntoView();
 
   const { saveQuizResult, recordQuizCompletion } = useFavoritesCtx();
 
@@ -73,6 +75,7 @@ const KnowledgeQuiz = () => {
   };
 
   const handleNext = () => {
+    scrollBackToPlayArea();
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion((prev) => prev + 1);
       setSelectedAnswer(null);
@@ -138,7 +141,7 @@ const KnowledgeQuiz = () => {
               </p>
             </div>
 
-            <div className="mb-6">
+            <div ref={playAreaRef} className="mb-6 scroll-mt-24">
               <div className="flex justify-between text-sm mb-1 text-muted-foreground">
                 <span>{`Question ${currentQuestion + 1} of ${questions.length}`}</span>
                 <span>{`Score: ${score}`}</span>

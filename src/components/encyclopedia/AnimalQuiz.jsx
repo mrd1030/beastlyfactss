@@ -3,6 +3,7 @@ import { motion } from '@/lib/motion-safe';
 import { CheckCircle2, XCircle, RotateCcw, Share2, Check, Layers } from 'lucide-react';
 import { generateAnimalQuiz } from '@/lib/utils/generateAnimalQuiz';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
+import { useScrollBackIntoView } from '@/lib/hooks/useScrollBackIntoView';
 
 export default function AnimalQuiz({ animal }) {
   const questions = useMemo(() => generateAnimalQuiz(animal), [animal.id]);
@@ -13,6 +14,7 @@ export default function AnimalQuiz({ animal }) {
   const [finished, setFinished] = useState(false);
   const [justSaved, setJustSaved] = useState(false);
   const { recordQuizCompletion, saveQuizResult, savedQuizResults, removeQuizResult } = useFavoritesCtx();
+  const [playAreaRef, scrollBackToPlayArea] = useScrollBackIntoView();
 
   // Not enough distractor data for a fair quiz on this animal - skip the section.
   if (questions.length < 2) return null;
@@ -47,6 +49,7 @@ export default function AnimalQuiz({ animal }) {
   };
 
   const handleNext = () => {
+    scrollBackToPlayArea();
     if (index + 1 >= total) {
       setFinished(true);
       recordQuizCompletion();
@@ -103,7 +106,7 @@ export default function AnimalQuiz({ animal }) {
   };
 
   return (
-    <div className="bg-card border border-border rounded-2xl p-5">
+    <div ref={playAreaRef} className="bg-card border border-border rounded-2xl p-5 scroll-mt-24">
       <h2 className="font-display font-bold text-base text-foreground mb-3">🧠 Test Yourself</h2>
 
       {finished ? (

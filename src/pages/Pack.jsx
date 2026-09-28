@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from '@/lib/motion-safe';
 import { Heart, Share2, ChevronDown, ChevronUp, X, RotateCcw } from 'lucide-react';
@@ -35,6 +35,20 @@ export default function Pack() {
   // Most recently saved first, same ordering as the quiz results shelf.
   const sortedSavedContent = [...savedContent].sort((a, b) => (a.savedAt < b.savedAt ? 1 : -1));
   const [confirmingId, setConfirmingId] = useState(null);
+  // Any tap outside the open remove confirmation, or Escape, cancels it.
+  useEffect(() => {
+    if (!confirmingId) return;
+    const onPointerDown = (e) => {
+      if (!e.target.closest?.('[data-remove-confirm]')) setConfirmingId(null);
+    };
+    const onKeyDown = (e) => { if (e.key === 'Escape') setConfirmingId(null); };
+    document.addEventListener('pointerdown', onPointerDown);
+    document.addEventListener('keydown', onKeyDown);
+    return () => {
+      document.removeEventListener('pointerdown', onPointerDown);
+      document.removeEventListener('keydown', onKeyDown);
+    };
+  }, [confirmingId]);
   // Keyed by `${type}-${id}` rather than id alone: content ids are slugs and
   // aren't unique across types (a guide and an encyclopedia entry can share
   // an id), and this is a separate list from the quiz results above anyway.
@@ -153,42 +167,46 @@ export default function Pack() {
         };
         // Shared by both card shapes so the confirmation behaves identically
         // whichever one is on screen.
-        const removeSlot = (
-<div className="absolute top-3 right-3 z-10">
-  {!confirmingId || confirmingId !== qr.id ? (
-    <button 
-      onClick={() => setConfirmingId(qr.id)}
-      className="w-11 h-11 sm:w-6 sm:h-6 flex items-center justify-center rounded-full text-red-400 hover:text-red-500 hover:bg-red-500/10 transition-colors text-lg leading-none"
-      title="Remove from Pack"
-    >
-      ×
-    </button>
-  ) : (
-    // === Styled Confirmation Popup ===
-    <div className="bg-zinc-900 border border-red-500/30 rounded-lg p-3 shadow-xl text-sm w-[210px]">
-      <p className="text-red-400 text-xs mb-2">Remove this result from your Pack?</p>
-      
-      <div className="flex gap-2">
-        <button
-          onClick={() => {
-            removeQuizResult(qr.id);
-            setConfirmingId(null);
-          }}
-          className="flex-1 bg-red-500 hover:bg-red-600 text-white text-xs font-bold py-1.5 rounded-md transition-colors"
-        >
-          Yes, Remove
-        </button>
-        
-        <button
-          onClick={() => setConfirmingId(null)}
-          className="flex-1 bg-zinc-700 hover:bg-zinc-600 text-white text-xs font-bold py-1.5 rounded-md transition-colors"
-        >
-          Cancel
-        </button>
-      </div>
-    </div>
-  )}
-</div>
+        // The confirmation covers the card it belongs to instead of hanging
+        // off its corner: a fixed-width popup pinned to the top right ran off
+        // the left edge of a half-width card on phones. Tapping outside it or
+        // pressing Escape cancels (see the effect on confirmingId).
+        const removeSlot = confirmingId === qr.id ? (
+          <div
+            data-remove-confirm
+            role="alertdialog"
+            aria-label="Remove this result from your Pack?"
+            className="absolute inset-0 z-20 rounded-[inherit] bg-zinc-900/95 border border-red-500/30 p-3 flex flex-col items-center justify-center text-center"
+          >
+            <p className="text-red-400 text-xs font-body font-bold mb-3">Remove this result from your Pack?</p>
+            <div className="flex flex-col gap-2 w-full max-w-[180px]">
+              <button
+                onClick={() => {
+                  removeQuizResult(qr.id);
+                  setConfirmingId(null);
+                }}
+                className="bg-red-500 hover:bg-red-600 text-white text-xs font-bold py-2 rounded-md transition-colors"
+              >
+                Yes, Remove
+              </button>
+              <button
+                onClick={() => setConfirmingId(null)}
+                className="bg-zinc-700 hover:bg-zinc-600 text-white text-xs font-bold py-2 rounded-md transition-colors"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        ) : (
+          <div className="absolute top-3 right-3 z-10">
+            <button
+              onClick={() => setConfirmingId(qr.id)}
+              className="w-11 h-11 sm:w-6 sm:h-6 flex items-center justify-center rounded-full text-red-400 hover:text-red-500 hover:bg-red-500/10 transition-colors text-lg leading-none"
+              title="Remove from Pack"
+            >
+              ×
+            </button>
+          </div>
         );
 
         if (isAnimalCard) {

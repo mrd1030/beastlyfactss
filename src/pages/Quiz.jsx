@@ -7,6 +7,7 @@ import { ArrowRight, RotateCcw, Share2, CheckCircle2, XCircle, Trophy, ChevronRi
 import { quizQuestions, quizResults } from '@/lib/data/quizQuestions';
 import { triviaQuestions } from '@/lib/data/triviaQuestions';
 import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
+import { useScrollBackIntoView } from '@/lib/hooks/useScrollBackIntoView';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';   // ← ADDED
 import KnowledgeQuiz from '@/lib/data/KnowledgeQuiz';
 import { getThemedQuiz } from '@/lib/data/quizzes';
@@ -193,6 +194,7 @@ function TriviaQuizSection() {
   const [answered, setAnswered] = useState(false);
   const [score, setScore] = useState(0);
   const [direction, setDirection] = useState(1);
+  const [playAreaRef, scrollBackToPlayArea] = useScrollBackIntoView();
 
   const { recordQuizCompletion } = useFavoritesCtx();
 
@@ -206,6 +208,7 @@ function TriviaQuizSection() {
   };
 
   const handleNext = () => {
+    scrollBackToPlayArea();
     setDirection(1);
     if (currentIndex + 1 >= TRIVIA_TOTAL) {
       setStep('results');
@@ -310,7 +313,7 @@ function TriviaQuizSection() {
   }
 
   return (
-    <div className="max-w-xl mx-auto py-8">
+    <div ref={playAreaRef} className="max-w-xl mx-auto py-8 scroll-mt-24">
       <div className="flex items-center justify-between mb-3">
         <span className="text-xs font-body text-muted-foreground">{`Question ${currentIndex + 1} of ${TRIVIA_TOTAL}`}</span>
         <span className="text-xs font-body font-bold text-secondary">{`${score} pts`}</span>

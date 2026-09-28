@@ -1,10 +1,11 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from '@/lib/motion-safe';
 import { ArrowLeft, ArrowRight, CheckCircle2, XCircle, ChevronRight, RotateCcw, Share2, Trophy } from 'lucide-react';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { useQuizScores } from '@/lib/hooks/useQuizScores';
+import { useScrollBackIntoView } from '@/lib/hooks/useScrollBackIntoView';
 import { getDisplayDate } from '@/lib/utils/date';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { facts } from '@/lib/data/facts';
@@ -52,24 +53,98 @@ const tierFor = (score, total, reward) => {
 // when /quiz/:tab matches a themed quiz id instead of an evergreen tab.
 // Interaction mirrors the trivia tab so the two feel like one family; what's
 // new here is the per-question source link and the reward card at the end.
+// The tiered result card. Only a perfect run mints the quiz's own reward;
+// lower tiers get honest consolation cards. Shown on the results screen and,
+// once a quiz is finished, on its intro screen.
+function ResultCard({ tier, label, compact = false }) {
+  const tryAgain = tier.kind === 'tryagain';
+  return (
+    <div className={`rounded-3xl ${compact ? 'p-5' : 'p-6'} relative overflow-hidden border-2 ${tryAgain ? 'bg-card border-border' : 'bg-gradient-to-br from-secondary/15 via-card to-primary/10 border-secondary/40'}`}>
+      <p className={`text-[10px] font-body font-bold uppercase tracking-widest mb-2 ${tryAgain ? 'text-muted-foreground' : 'text-secondary'}`}>{tier.heading}</p>
+      <span className={`${compact ? 'text-5xl' : 'text-6xl'} block mb-2`} aria-hidden="true">{tier.card.emoji}</span>
+      <h3 className={`font-display font-bold ${compact ? 'text-xl' : 'text-2xl'} text-foreground`}>{tier.card.title}</h3>
+      <p className="text-sm text-muted-foreground font-body mt-1">{tier.card.blurb}</p>
+      <p className="text-xs font-body font-bold text-secondary mt-3">{label}</p>
+    </div>
+  );
+}
+
 export default function ThemedQuizPage({ quiz }) {
   const [step, setStep] = useState('intro');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selected, setSelected] = useState(null);
   const [answered, setAnswered] = useState(false);
   const [score, setScore] = useState(0);
-  const [savedToPack, setSavedToPack] = useState(false);
+  // What finishing did to the Pack: 'saved' (first card for this quiz),
+  // 'upgraded' (replaced a lower-scoring card) or 'kept' (the Pack already
+  // holds a card at least this good).
+  const [packStatus, setPackStatus] = useState(null);
   const [popupFact, setPopupFact] = useState(null);
   const [imageFact, setImageFact] = useState(null);
-  const playAreaRef = useRef(null);
+  const [playAreaRef, scrollBackToPlayArea] = useScrollBackIntoView();
 
-  const { saveQuizResult, recordQuizCompletion } = useFavoritesCtx();
+  const { saveQuizResult, removeQuizResult, savedQuizResults, recordQuizCompletion } = useFavoritesCtx();
   const { scores, recordScore } = useQuizScores();
   const best = scores[quiz.id];
 
   const total = quiz.questions.length;
   const question = quiz.questions[currentIndex];
   const tier = tierFor(score, total, quiz.reward);
+
+  // This quiz's cards in the Pack. Normally one, but players who saved more
+  // than once before cards were kept one per quiz can hold several.
+  const packCards = savedQuizResults.filter(r => r.type === 'themed-quiz' && r.quizId === quiz.id);
+  const packCard = packCards.reduce((top, r) => (!top || r.score > top.score ? r : top), null);
+
+  const cardFor = (cardScore) => {
+    const card = tierFor(cardScore, total, quiz.reward).card;
+    return {
+      type: 'themed-quiz',
+      emoji: card.emoji,
+      title: card.title,
+      description: `${card.blurb} Scored ${cardScore}/${total} on "${quiz.title}".`,
+      quizId: quiz.id,
+      quizTitle: quiz.title,
+      score: cardScore,
+      total,
+    };
+  };
+
+  // Finishing saves the card on its own, one card per quiz: a better score
+  // replaces the old card, an equal or lower one leaves it alone.
+  const savePackCard = (finalScore) => {
+    if (packCard && packCard.score >= finalScore) return 'kept';
+    packCards.forEach(r => removeQuizResult(r.id));
+    saveQuizResult(cardFor(finalScore));
+    return packCard ? 'upgraded' : 'saved';
+  };
+
+  // Progress lives in sessionStorage so an article source link (which leaves
+  // the page) or a reload drops the player back on the same question. Read in
+  // an effect, not during render, so the prerendered intro still hydrates.
+  const progressKey = `beastly-themed-quiz-progress-${quiz.id}`;
+  useEffect(() => {
+    try {
+      const saved = JSON.parse(sessionStorage.getItem(progressKey));
+      if (!saved || saved.currentIndex >= total) return;
+      setCurrentIndex(saved.currentIndex);
+      setSelected(saved.selected);
+      setAnswered(saved.answered);
+      setScore(saved.score);
+      setStep('quiz');
+    } catch { /* no saved progress */ }
+  }, [progressKey, total]);
+
+  useEffect(() => {
+    if (step !== 'quiz') return;
+    try {
+      sessionStorage.setItem(progressKey, JSON.stringify({ currentIndex, selected, answered, score }));
+    } catch { /* storage blocked: the quiz still plays, it just won't resume */ }
+  }, [progressKey, step, currentIndex, selected, answered, score]);
+
+  const clearProgress = () => {
+    try { sessionStorage.removeItem(progressKey); } catch { /* ignore */ }
+  };
 
   const handleSelect = (i) => {
     if (answered) return;
@@ -78,25 +153,14 @@ export default function ThemedQuizPage({ quiz }) {
     if (i === question.answer) setScore(s => s + 1);
   };
 
-  // Next collapses the explanation, so the page gets shorter but the scroll
-  // position stays put. On a phone that leaves the next question above the
-  // screen, so bring the top of the play area back under the navbar when it
-  // has scrolled out of view.
-  const scrollToPlayArea = () => {
-    const el = playAreaRef.current;
-    if (!el) return;
-    const navbarGap = parseFloat(getComputedStyle(el).scrollMarginTop) || 0;
-    if (el.getBoundingClientRect().top >= navbarGap) return;
-    const reduced = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
-    el.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
-  };
-
   const handleNext = () => {
-    scrollToPlayArea();
+    scrollBackToPlayArea();
     if (currentIndex + 1 >= total) {
       const finalScore = score;
       recordScore(quiz.id, finalScore, total);
       recordQuizCompletion();
+      setPackStatus(savePackCard(finalScore));
+      clearProgress();
       setStep('results');
     } else {
       setAnswered(false);
@@ -106,27 +170,20 @@ export default function ThemedQuizPage({ quiz }) {
   };
 
   const handleRestart = () => {
+    clearProgress();
     setStep('intro');
     setCurrentIndex(0);
     setSelected(null);
     setAnswered(false);
     setScore(0);
-    setSavedToPack(false);
+    setPackStatus(null);
   };
 
-  const handleSaveToPack = () => {
-    if (savedToPack) return;
-    saveQuizResult({
-      type: 'themed-quiz',
-      emoji: tier.card.emoji,
-      title: tier.card.title,
-      description: `${tier.card.blurb} Scored ${score}/${total} on "${quiz.title}".`,
-      quizId: quiz.id,
-      quizTitle: quiz.title,
-      score,
-      total,
-    });
-    setSavedToPack(true);
+  // For a player who finished before cards saved on their own and never
+  // saved one: their best score still earns the card from the intro screen.
+  const handleSaveBestToPack = () => {
+    if (packCard || !best) return;
+    saveQuizResult(cardFor(best.score));
   };
 
   const handleSourceClick = (e, source) => {
@@ -213,10 +270,24 @@ export default function ThemedQuizPage({ quiz }) {
                   </div>
                 ))}
               </div>
-              {best && (
-                <p className="text-xs font-body text-muted-foreground mb-4">
-                  {`Your best: ${best.score}/${best.total}`}
-                </p>
+              {(packCard || best) && (
+                <div className="mb-6">
+                  <ResultCard
+                    compact
+                    tier={tierFor((packCard || best).score, total, quiz.reward)}
+                    label={`Your best · ${(packCard || best).score}/${total}`}
+                  />
+                  {packCard ? (
+                    <Link to="/pack/" className="inline-flex items-center gap-1 mt-3 text-xs font-body font-bold text-secondary hover:underline">
+                      <CheckCircle2 className="w-3.5 h-3.5" /> In your Pack <ArrowRight className="w-3 h-3" />
+                    </Link>
+                  ) : (
+                    <button onClick={handleSaveBestToPack}
+                      className="inline-flex items-center gap-1.5 mt-3 text-xs font-body font-bold text-secondary hover:underline">
+                      ❤️ Save this card to your Pack
+                    </button>
+                  )}
+                </div>
               )}
               <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={() => setStep('quiz')}
                 className="bg-secondary text-secondary-foreground font-body font-bold text-base px-8 py-3.5 rounded-2xl shadow-lg shadow-secondary/30">
@@ -250,6 +321,11 @@ export default function ThemedQuizPage({ quiz }) {
           <div className="max-w-md mx-auto py-4">
             <div className="flex items-center justify-between mb-3 text-xs font-body text-muted-foreground">
               <span>{`Question ${currentIndex + 1} of ${total}`}</span>
+              {/* Progress resumes after leaving the page, so starting fresh
+                  needs its own way out. */}
+              {currentIndex > 0 && (
+                <button onClick={handleRestart} className="font-bold hover:text-secondary hover:underline">Start over</button>
+              )}
               <span>{`Score: ${score}`}</span>
             </div>
             <div className="w-full bg-muted rounded-full h-1.5 mb-6 overflow-hidden">
@@ -315,29 +391,26 @@ export default function ThemedQuizPage({ quiz }) {
                 {`You scored ${score} of ${total}${best && best.score > score ? `, your best is still ${best.score}` : ''}.`}
               </p>
 
-              {/* The tiered result card. Only a perfect run mints the quiz's
-                  own reward; lower tiers get honest consolation cards. */}
-              <div className={`rounded-3xl p-6 mb-6 relative overflow-hidden border-2 ${tier.kind === 'tryagain' ? 'bg-card border-border' : 'bg-gradient-to-br from-secondary/15 via-card to-primary/10 border-secondary/40'}`}>
-                <p className={`text-[10px] font-body font-bold uppercase tracking-widest mb-2 ${tier.kind === 'tryagain' ? 'text-muted-foreground' : 'text-secondary'}`}>{tier.heading}</p>
-                <span className="text-6xl block mb-2" aria-hidden="true">{tier.card.emoji}</span>
-                <h3 className="font-display font-bold text-2xl text-foreground">{tier.card.title}</h3>
-                <p className="text-sm text-muted-foreground font-body mt-1">{tier.card.blurb}</p>
-                <p className="text-xs font-body font-bold text-secondary mt-3">{`${quiz.title} · ${score}/${total}`}</p>
+              <div className="mb-3">
+                <ResultCard tier={tier} label={`${quiz.title} · ${score}/${total}`} />
               </div>
+              <Link to="/pack/" className="inline-flex items-center gap-1.5 mb-6 text-xs font-body font-bold text-emerald-700 dark:text-emerald-300 hover:underline">
+                <CheckCircle2 className="w-3.5 h-3.5" />
+                {packStatus === 'kept'
+                  ? `Your ${packCard ? packCard.score : score}/${total} card is already in your Pack`
+                  : packStatus === 'upgraded' ? 'Your Pack card was upgraded to this score' : 'Saved to your Pack'}
+              </Link>
 
-              {/* On a try-again result the filled button is Retake, not Save:
-                  the card pushed is another run, not the consolation card. */}
+              {/* The card saves itself on finishing, so the buttons are just
+                  Share and Retake. Retake is the filled one below a perfect
+                  score, since another run is what earns a better card. */}
               <div className="flex flex-col sm:flex-row justify-center gap-3">
-                <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleSaveToPack} disabled={savedToPack}
-                  className={`font-body font-bold text-sm px-6 py-3 rounded-2xl flex items-center justify-center gap-2 ${savedToPack ? 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300' : tier.kind === 'tryagain' ? 'bg-card border border-border text-foreground' : 'bg-secondary text-secondary-foreground'}`}>
-                  {savedToPack ? <><CheckCircle2 className="w-4 h-4" /> Saved to Pack</> : <>❤️ Save card to Pack</>}
-                </motion.button>
                 <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleShare}
-                  className="bg-card border border-border text-foreground font-body font-bold text-sm px-6 py-3 rounded-2xl flex items-center justify-center gap-2">
+                  className={`${tier.kind === 'perfect' ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-foreground'} font-body font-bold text-sm px-6 py-3 rounded-2xl flex items-center justify-center gap-2`}>
                   <Share2 className="w-4 h-4" /> Share
                 </motion.button>
                 <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleRestart}
-                  className={`font-body font-bold text-sm px-6 py-3 rounded-2xl flex items-center justify-center gap-2 ${tier.kind === 'tryagain' ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-foreground'}`}>
+                  className={`font-body font-bold text-sm px-6 py-3 rounded-2xl flex items-center justify-center gap-2 ${tier.kind === 'perfect' ? 'bg-card border border-border text-foreground' : 'bg-secondary text-secondary-foreground'}`}>
                   <RotateCcw className="w-4 h-4" /> {tier.kind === 'tryagain' ? 'Try Again' : 'Retake'}
                 </motion.button>
               </div>
