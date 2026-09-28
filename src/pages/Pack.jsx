@@ -5,7 +5,7 @@ import { Heart, Share2, ChevronDown, ChevronUp, X, RotateCcw } from 'lucide-reac
 import { Link } from 'react-router-dom';
 import { facts } from '@/lib/data/facts';
 import { imagePathFor } from '@/lib/data/factImages';
-import { quizShareImage, shareQuizResult } from '@/lib/utils/quizShareImage';
+import { quizPhrase, quizShareImage, shareQuizResult } from '@/lib/utils/quizShareImage';
 import { useFavoritesCtx, ACHIEVEMENTS } from '@/lib/FavoritesContext';
 import FactCard from '@/components/shared/FactCard';
 import FactModal from '@/components/shared/FactModal';
@@ -152,7 +152,7 @@ export default function Pack() {
           const text = isAnimalCard
             ? `${qr.animalEmoji || '🐾'} I scored ${qr.score}/${qr.total} on the ${qr.animalName} quiz on BeastlyFacts! Think you can beat me?`
             : isThemedCard
-              ? `${qr.emoji} I earned the "${qr.title}" card scoring ${qr.score}/${qr.total} on the ${qr.quizTitle} quiz at BeastlyFacts. Think you can beat me?`
+              ? `${qr.emoji} I earned the "${qr.title}" card scoring ${qr.score}/${qr.total} on ${quizPhrase(qr.quizTitle)} at BeastlyFacts. Think you can beat me?`
               : `${qr.emoji} I got ${qr.title} on BeastlyFacts!\n\n${qr.description}\n\nFind out your result at ${window.location.origin}/quiz`;
           const url = isAnimalCard
             ? `${window.location.origin}/encyclopedia/animal/${qr.animalId}/`

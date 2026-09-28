@@ -16,6 +16,16 @@ biweekly Routine writes them; this file is its style guide and format spec.
   reward card calls `saveQuizResult({ type: 'themed-quiz', ... })` and shows
   up on the Pack page shelf.
 
+## The classics
+
+The three evergreen quizzes live in `src/lib/data/quizzes/classics.js`, not in
+`index.js`: they have no number or date and are pinned separately on the hub.
+Trivia and knowledge use the same format as a themed quiz (below) plus
+`classic: true`, and play through ThemedQuizPage, so every rule here applies
+to them too, sources included. The personality quiz has no right answers and
+keeps its own component in `Quiz.jsx`, styled to match. Their share cards come
+from the same `generate-quiz-og.mjs` run.
+
 ## Format
 
 ```js

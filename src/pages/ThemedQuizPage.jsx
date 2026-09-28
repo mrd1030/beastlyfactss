@@ -11,7 +11,7 @@ import { truncateDescription } from '@/lib/utils/truncate';
 import { facts } from '@/lib/data/facts';
 import { slugify } from '@/lib/utils/slugify';
 import { imagePathFor } from '@/lib/data/factImages';
-import { quizShareImage, shareQuizResult } from '@/lib/utils/quizShareImage';
+import { quizPhrase, quizShareImage, shareQuizResult } from '@/lib/utils/quizShareImage';
 import FactModal from '@/components/shared/FactModal';
 import ImageLightbox from '@/components/shared/ImageLightbox';
 
@@ -50,10 +50,10 @@ const tierFor = (score, total, reward) => {
   };
 };
 
-// Plays one dated themed quiz (src/lib/data/quizzes/). Rendered by Quiz.jsx
-// when /quiz/:tab matches a themed quiz id instead of an evergreen tab.
-// Interaction mirrors the trivia tab so the two feel like one family; what's
-// new here is the per-question source link and the reward card at the end.
+// Plays one themed quiz (src/lib/data/quizzes/): a dated one, or the classic
+// trivia and knowledge quizzes (classics.js, `classic: true`). Rendered by
+// Quiz.jsx when /quiz/:tab matches either. Every question carries a source
+// link, and the run ends in a reward card.
 // The tiered result card. Only a perfect run mints the quiz's own reward;
 // lower tiers get honest consolation cards. Shown on the results screen and,
 // once a quiz is finished, on its intro screen.
@@ -197,8 +197,8 @@ export default function ThemedQuizPage({ quiz }) {
 
   const handleShare = () => {
     const text = tier.kind === 'perfect'
-      ? `${quiz.emoji} I scored ${score}/${total} on the "${quiz.title}" quiz at BeastlyFacts and earned the ${quiz.reward.emoji} ${quiz.reward.title} card. Think you can beat me?`
-      : `${quiz.emoji} I scored ${score}/${total} on the "${quiz.title}" quiz at BeastlyFacts. Think you can beat me?`;
+      ? `${quiz.emoji} I scored ${score}/${total} on ${quizPhrase(quiz.title, { quoted: true })} at BeastlyFacts and earned the ${quiz.reward.emoji} ${quiz.reward.title} card. Think you can beat me?`
+      : `${quiz.emoji} I scored ${score}/${total} on ${quizPhrase(quiz.title, { quoted: true })} at BeastlyFacts. Think you can beat me?`;
     const url = `${window.location.origin}/quiz/${quiz.id}/`;
     const image = quizShareImage({
       emoji: tier.card.emoji,
@@ -255,7 +255,7 @@ export default function ThemedQuizPage({ quiz }) {
           </Link>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <p className="text-[10px] font-body font-bold uppercase tracking-wider text-secondary mb-1">
-              {`Quiz #${quiz.number} · ${getDisplayDate(quiz.date)}`}
+              {quiz.classic ? 'Classic quiz' : `Quiz #${quiz.number} · ${getDisplayDate(quiz.date)}`}
             </p>
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-1">
               <span className="mr-2" aria-hidden="true">{quiz.emoji}</span>{quiz.title}

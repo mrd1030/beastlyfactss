@@ -1,12 +1,12 @@
 // Renders the 1200x630 share card (og:image / twitter:image) for every themed
-// quiz: the quiz emoji on a card tile, the title and tagline in the site's
+// quiz and the three classics: the quiz emoji on a card tile, the title and tagline in the site's
 // own faces, and the reward card a perfect score earns. No photography: a
 // branded card reads better at thumbnail size than any animal photo, and it
 // keeps guide and fact photos out of share previews.
 //
 // Output: public/assets/og/quiz-<id>.jpg, mozjpeg quality 80. The file name
 // is the URL platforms cache the card against, so never rename one.
-// ThemedQuizPage.jsx points at this path; a quiz without its card falls back
+// ThemedQuizPage.jsx and Quiz.jsx (personality) point at this path; a quiz without its card falls back
 // to og-default.jpg only if this script was never run, so run it whenever a
 // quiz file lands:
 //
@@ -22,6 +22,7 @@ import { pathToFileURL } from 'node:url';
 import puppeteer from 'puppeteer';
 import sharp from 'sharp';
 import { themedQuizzes } from '../src/lib/data/quizzes/index.js';
+import { classicQuizzes, personalityQuiz } from '../src/lib/data/quizzes/classics.js';
 
 const W = 1200;
 const H = 630;
@@ -53,18 +54,20 @@ h1 { font-family: 'Schibsted Grotesk', sans-serif; font-weight: 800; font-size: 
 .reward .e { font-family: 'Noto Color Emoji', sans-serif; font-size: 32px; }
 .domain { position: absolute; right: 80px; bottom: 34px; font-weight: 800; font-size: 24px; color: #B5491B; letter-spacing: 0.04em; }
 </style></head><body>
-<div class="tile"><div class="emoji">${quiz.emoji}</div><div class="num">QUIZ #${quiz.number}</div></div>
+<div class="tile"><div class="emoji">${quiz.emoji}</div><div class="num">${quiz.classic ? 'CLASSIC' : `QUIZ #${quiz.number}`}</div></div>
 <div class="text">
   <div class="kicker">Beastly Facts Quiz</div>
   <h1>${esc(quiz.title)}</h1>
   <p class="tagline">${esc(quiz.tagline)}</p>
-  <div class="reward"><span class="e">${quiz.reward.emoji}</span>Score ${quiz.questions.length}/${quiz.questions.length} to earn ${esc(quiz.reward.title)}</div>
+  <div class="reward">${quiz.reward
+    ? `<span class="e">${quiz.reward.emoji}</span>Score ${quiz.questions.length}/${quiz.questions.length} to earn ${esc(quiz.reward.title)}`
+    : `<span class="e">🐾</span>${esc(quiz.ogLine)}`}</div>
 </div>
 <div class="domain">beastlyfacts.com</div>
 </body></html>`;
 
 fs.mkdirSync(outDir, { recursive: true });
-const todo = themedQuizzes.filter(q => force || !fs.existsSync(path.join(outDir, `quiz-${q.id}.jpg`)));
+const todo = [...themedQuizzes, ...classicQuizzes, personalityQuiz].filter(q => force || !fs.existsSync(path.join(outDir, `quiz-${q.id}.jpg`)));
 if (!todo.length) {
   console.log('Every quiz already has a share card. Pass --force to re-render.');
   process.exit(0);

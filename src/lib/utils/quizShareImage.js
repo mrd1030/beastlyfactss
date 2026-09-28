@@ -36,6 +36,14 @@ function roundRect(ctx, x, y, w, h, r) {
   ctx.closePath();
 }
 
+// "the Cleanup Crew Check quiz", but "The Bearded Dragon Boss quiz": share
+// text wrote "on the The Bearded Dragon Boss quiz" for titles that already
+// start with "The".
+export function quizPhrase(title, { quoted = false } = {}) {
+  const name = quoted ? `"${title}"` : title;
+  return /^the\s/i.test(title) ? `${name} quiz` : `the ${name} quiz`;
+}
+
 // kicker: small orange line above the emoji ("Reward card earned").
 // line: the score line under the blurb ("8/8 on Cleanup Crew Check").
 export async function quizShareImage({ emoji, title, blurb, kicker, line, fileName }) {

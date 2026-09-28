@@ -1,7 +1,7 @@
 export const quizQuestions = [
   {
     id: 1,
-    question: "It's Saturday morning - what are you doing?",
+    question: "It's Saturday morning. What are you doing?",
     emoji: "🌅",
     options: [
       { text: "Sleeping in until noon 😴", scores: { cat: 2, python: 2 } },
@@ -86,14 +86,16 @@ export const quizResults = {
     description: "Loyal, energetic, and everyone's best friend! You light up every room with your infectious enthusiasm and you'd do anything for the people you love. You're the friend who always shows up with snacks and good vibes.",
     traits: ["Loyal", "Energetic", "Loving", "Social"],
     color: "bg-orange",
+    meet: { label: 'Golden Retriever profile', to: '/encyclopedia/animal/golden-retriever/' },
   },
   cat: {
     name: "Cat",
     emoji: "🐱",
     title: "You're a Majestic Cat!",
-    description: "Independent, graceful, and secretly a huge softie. You value your alone time but when you love someone, you love HARD. You probably nap a lot and that's okay - you've earned it, royalty.",
+    description: "Independent, graceful, and secretly a huge softie. You value your alone time but when you love someone, you love HARD. You probably nap a lot, and that's okay. You've earned it, royalty.",
     traits: ["Independent", "Elegant", "Curious", "Affectionate"],
     color: "bg-hotpink",
+    meet: { label: 'Domestic Shorthair profile', to: '/encyclopedia/animal/domestic-shorthair/' },
   },
   parrot: {
     name: "Parrot",
@@ -102,6 +104,7 @@ export const quizResults = {
     description: "Colorful, chatty, and the life of every party! You have opinions about EVERYTHING and you're not afraid to share them. Your energy is contagious and your humor is top-tier.",
     traits: ["Chatty", "Colorful", "Smart", "Social"],
     color: "bg-teal",
+    meet: { label: 'African Grey care guide', to: '/guides/african-grey/' },
   },
   hedgehog: {
     name: "Hedgehog",
@@ -110,6 +113,7 @@ export const quizResults = {
     description: "A little prickly on the outside but pure sweetness on the inside! You take your time warming up to people, but once you do, you're the most loyal and lovable friend ever.",
     traits: ["Thoughtful", "Unique", "Gentle", "Observant"],
     color: "bg-sunny",
+    meet: { label: 'Hedgehog care guide', to: '/guides/hedgehog/' },
   },
   rabbit: {
     name: "Rabbit",
@@ -118,14 +122,16 @@ export const quizResults = {
     description: "Full of joy, energy, and random binkies! You find happiness in the little things and spread cheer wherever you go. You're curious about everything and love exploring new things.",
     traits: ["Joyful", "Curious", "Gentle", "Playful"],
     color: "bg-forest",
+    meet: { label: 'Rabbit care guide', to: '/guides/rabbit/' },
   },
   python: {
     name: "Ball Python",
     emoji: "🐍",
     title: "You're a Chill Ball Python!",
-    description: "Cool, calm, and totally unbothered. You don't need drama - you're content just vibing and being your authentic self. People are fascinated by you and your unique energy.",
+    description: "Cool, calm, and totally unbothered. You don't need drama. You're content just vibing and being your authentic self. People are fascinated by you and your unique energy.",
     traits: ["Calm", "Patient", "Unique", "Mysterious"],
     color: "bg-purple-600",
+    meet: { label: 'Ball Python care guide', to: '/guides/ball-python/' },
   },
   gecko: {
     name: "Leopard Gecko",
@@ -134,5 +140,6 @@ export const quizResults = {
     description: "Always smiling, always chill, always adorable! You have a quiet confidence that draws people in. You're low-maintenance but high-personality, and you always look great doing it.",
     traits: ["Chill", "Cute", "Confident", "Easy-going"],
     color: "bg-lime-500",
+    meet: { label: 'Leopard Gecko care guide', to: '/guides/leopard-gecko/' },
   },
 };
