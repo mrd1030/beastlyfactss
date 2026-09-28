@@ -80,8 +80,11 @@ export default {
 4. Verify: every `source.to` resolves to a real released page, `answer`
    indexes are right, exactly 8 questions, id and number are new.
 5. Run `npx eslint src/lib/data/quizzes/ --quiet` and fix anything it flags.
-6. Commit ONLY the new quiz file and `index.js`, message like
-   "Quiz #3: <title>". Push to main (a real deploy, no [CI Skip]).
+6. Run `node scripts/generate-quiz-og.mjs` to render the quiz's share card
+   (`public/assets/og/quiz-<id>.jpg`, the page's og:image). Look at it: the
+   title must fit on the card without clipping.
+7. Commit ONLY the new quiz file, `index.js` and the new share card, message
+   like "Quiz #3: <title>". Push to main (a real deploy, no [CI Skip]).
 
 ## When a run does not produce a quiz
 

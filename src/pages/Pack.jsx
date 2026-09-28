@@ -5,6 +5,7 @@ import { Heart, Share2, ChevronDown, ChevronUp, X, RotateCcw } from 'lucide-reac
 import { Link } from 'react-router-dom';
 import { facts } from '@/lib/data/facts';
 import { imagePathFor } from '@/lib/data/factImages';
+import { quizShareImage, shareQuizResult } from '@/lib/utils/quizShareImage';
 import { useFavoritesCtx, ACHIEVEMENTS } from '@/lib/FavoritesContext';
 import FactCard from '@/components/shared/FactCard';
 import FactModal from '@/components/shared/FactModal';
@@ -159,6 +160,19 @@ export default function Pack() {
               ? `${window.location.origin}/quiz/${qr.quizId}/`
               : `${window.location.origin}/quiz/`;
 
+          // Themed cards also attach a picture of the card itself.
+          if (isThemedCard) {
+            const image = quizShareImage({
+              emoji: qr.emoji,
+              title: qr.title,
+              blurb: qr.description.replace(/ Scored \d+\/\d+ on ".*"\.$/, ''),
+              kicker: qr.score === qr.total ? 'Reward card earned' : 'Beastly Facts quiz card',
+              line: `${qr.score}/${qr.total} on ${qr.quizTitle}`,
+              fileName: `beastlyfacts-${qr.quizId}.png`,
+            });
+            shareQuizResult({ title: qr.title, text, url, image });
+            return;
+          }
           if (navigator.share) {
             navigator.share({ title: qr.title, text, url }).catch(() => {});
           } else {

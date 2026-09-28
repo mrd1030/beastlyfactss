@@ -11,6 +11,7 @@ import { truncateDescription } from '@/lib/utils/truncate';
 import { facts } from '@/lib/data/facts';
 import { slugify } from '@/lib/utils/slugify';
 import { imagePathFor } from '@/lib/data/factImages';
+import { quizShareImage, shareQuizResult } from '@/lib/utils/quizShareImage';
 import FactModal from '@/components/shared/FactModal';
 import ImageLightbox from '@/components/shared/ImageLightbox';
 
@@ -199,11 +200,15 @@ export default function ThemedQuizPage({ quiz }) {
       ? `${quiz.emoji} I scored ${score}/${total} on the "${quiz.title}" quiz at BeastlyFacts and earned the ${quiz.reward.emoji} ${quiz.reward.title} card. Think you can beat me?`
       : `${quiz.emoji} I scored ${score}/${total} on the "${quiz.title}" quiz at BeastlyFacts. Think you can beat me?`;
     const url = `${window.location.origin}/quiz/${quiz.id}/`;
-    if (navigator.share) {
-      navigator.share({ title: `${quiz.title} | Beastly Facts`, text, url }).catch(() => {});
-    } else {
-      navigator.clipboard.writeText(`${text} ${url}`);
-    }
+    const image = quizShareImage({
+      emoji: tier.card.emoji,
+      title: tier.card.title,
+      blurb: tier.card.blurb,
+      kicker: tier.heading,
+      line: `${score}/${total} on ${quiz.title}`,
+      fileName: `beastlyfacts-${quiz.id}.png`,
+    });
+    shareQuizResult({ title: `${quiz.title} | Beastly Facts`, text, url, image });
   };
 
   // Unique source pages, in question order. Shown on the intro screen: it
@@ -219,6 +224,9 @@ export default function ThemedQuizPage({ quiz }) {
   // description past Google's display limit.
   const pageDescription = truncateDescription(`${quiz.tagline} ${total} sourced questions from real Beastly Facts pages, plus a reward card for your Pack.`);
   const canonicalUrl = `https://beastlyfacts.com/quiz/${quiz.id}/`;
+  // Rendered per quiz by scripts/generate-quiz-og.mjs. Never rename: share
+  // previews are cached against this URL.
+  const ogImage = `https://beastlyfacts.com/assets/og/quiz-${quiz.id}.jpg`;
 
   return (
     <div className="min-h-screen">
@@ -230,14 +238,14 @@ export default function ThemedQuizPage({ quiz }) {
         <meta property="og:description" content={pageDescription} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
+        <meta property="og:image" content={ogImage} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content={`${quiz.title} quiz on Beastly Facts`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
-        <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
+        <meta name="twitter:image" content={ogImage} />
       </Helmet>
 
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-6 px-4 sm:px-6">
