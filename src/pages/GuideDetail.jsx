@@ -548,6 +548,17 @@ export default function GuideDetail() {
                     </p>
                   ) : null;
                 })()}
+                {/* Any matched line means the generator built this animal a
+                    list (scripts/generate-gear-by-animal.mjs keys essentials
+                    off the same covers match), so the link never 404s. */}
+                {guide.buyList.some((item) => getAffiliateForItem(item)) && (
+                  <Link
+                    to={`/gear/animal/${guide.id}/`}
+                    className="inline-flex items-center gap-1 mt-3 text-xs font-body font-semibold text-secondary hover:underline"
+                  >
+                    {`Full ${guide.name.split(':')[0].trim()} gear list`} <ChevronRight className="w-3.5 h-3.5" />
+                  </Link>
+                )}
               </div>
             )}
 
