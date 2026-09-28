@@ -2,6 +2,75 @@
 
 Companion to NEEDS_PRODUCT.md in root. Finished batches only, newest first.
 
+## 2026-09-28, second batch: 44 lines, 47 products
+
+Tier 4 of NEEDS_PRODUCT.xlsx, same method as the first batch below. Weak or unfound picks stayed in NEEDS_PRODUCT.md with notes in the sheet.
+
+### Lighting
+
+- NEED. Avian full-spectrum UVB lamp and fixture (UVB 5.0 class, bird-specific), mounted 12 to 18 in from the perch. African grey hub, conure hub and cost, flying squirrel hub. Setup prose also: cockatoo, quaker parakeet, zebra finch. **Added:** uvb-arcadia-puresun-compact-bird-kit (conure cost).
+- NEED. Small low-output 6500K LED plant or grow light, 12 to 24 in, for planted terrariums and photoperiod. Green anole hub, tiger salamander hub, ball python hub and cost (photoperiod LED), stick insect hub and cost. Setup prose also: giant millipede, jumping spider. **Added:** grow-light-bio-dude-glow-grow-16in (/gear only).
+
+### Filtration
+
+- NEED. Aquarium air pump, quiet, runs one sponge filter in 5 to 20 gal, with check valve and airline. Betta hub, zebra danio hub and cost. **Added:** air-pump-hygger-mini-2-20gal (zebra danio cost).
+- NEED. Airline tubing, standard 3/16 in, 10 to 25 ft roll (also used for drip acclimation). Zebra danio cost, amano shrimp hub. **Added:** airline-penn-plax-25ft (zebra danio cost).
+- NEED. Pre-filter sponge sleeve for a filter intake, shrimp-safe. Amano shrimp hub, cherry shrimp hub, ghost shrimp hub. **Added:** prefilter-sponge-aquaneat-6pack (/gear only).
+- NEED. Small internal aquarium filter for a shallow water section, under 10 gal. Fire-bellied toad hub. **Added:** filter-fluval-u1-internal (/gear only).
+- NEED. Gravel vacuum and siphon, hand-start, for 10 to 75 gal tanks. Corydoras hub, goldfish hub, oscar hub. Setup prose also: betta. **Added:** gravel-vac-python-pro-clean-large (/gear only).
+- NEED. Python-style no-spill water change hose that connects to a faucet, 25 to 50 ft. Discus hub, oscar hub (quarantine hose). **Added:** water-change-python-no-spill-25ft (/gear only).
+
+### Water testing
+
+- NEED. TDS meter, handheld digital, 0 to 999 ppm. Cherry shrimp hub. **Added:** tds-meter-hm-digital-tds3 (/gear only).
+- NEED. GH and KH liquid test kit (the catalog kit does not test hardness). Amano shrimp hub, cherry shrimp hub. **Added:** test-kit-api-gh-kh (/gear only).
+
+### Enclosures and cages
+
+- NEED. 29-gallon aquarium (30x12x18 in). Bristlenose pleco hub, corydoras hub, swordtail hub. **Added:** tank-tetra-29-gallon (/gear only).
+- NEED. Aquarium stand rated for a filled 55-gallon tank. Angelfish hub. **Added:** stand-aquatic-fundamentals-55 (/gear only).
+- NEED. Glass aquarium lid, hinged, for a 10-gallon (20x10 in). Guppy hub, platy hub, zebra danio hub, amano shrimp hub, hermit crab hub (sealing lid that holds humidity). **Added:** glass-lid-aqueon-versa-top-20in (/gear only).
+- NEED. Glass aquarium lid, hinged, for a 20-long or 29-gallon (30x12 in). Molly hub, platy hub, swordtail hub, zebra danio hub, guppy hub, goldfish hub. **Added:** glass-lid-aqueon-versa-top-30in (/gear only).
+- NEED. Glass aquarium lid for a 55-gallon (48x13 in). Angelfish hub, goldfish hub. **Added:** glass-lid-aqueon-versa-top-48in (/gear only).
+- NEED. Glass aquarium lid for a 75-gallon (48x18 in). Oscar hub. **Added:** glass-lid-48x18-center-brace (/gear only).
+- NEED. Screen lid for a 10-gallon tank (20x10 in). Fire-bellied toad hub. **Added:** screen-lid-zilla-20x10 (/gear only).
+- NEED. Screen lid for a 40-gallon breeder (36x18 in). Gerbil hub, garter snake hub. **Added:** screen-lid-zilla-36x18 (/gear only).
+- NEED. Terrarium lid clips or locks for glass tanks. Garter snake hub. **Added:** lid-clips-zilla-locking (/gear only).
+- NEED. 12x12x18 in front-opening glass terrarium, mourning gecko starter. Mourning gecko hub and cost. **Added:** terrarium-exo-terra-12x12x18 (mourning gecko cost).
+
+### Substrate
+
+- NEED. Excavator clay or burrowing clay, for tunnels that hold. Uromastyx hub, savannah monitor hub. **Added:** substrate-zoo-med-excavator-clay-10lb (/gear only).
+- NEED. Orchid bark, coarse. White's tree frog hub, hissing cockroach hub. **Added:** orchid-bark-better-gro-8qt (/gear only).
+- NEED. Coconut husk chips, coarse. White's tree frog hub, pacman frog hub, green iguana hub. **Added:** substrate-zoo-med-eco-earth-coconut-chips (/gear only).
+- NEED. Dark (black) aquarium sand, fine grain. Cardinal tetra hub, neon tetra hub. Setup prose also: guppy, platy, zebra danio. **Added:** sand-caribsea-tahitian-moon-20lb (/gear only).
+- COULD. Drainage layer media (clay balls or hydroballs) with a substrate barrier mesh, for bioactive builds. Gargoyle gecko setup prose. **Added:** leca-joshs-frogs-false-bottom (/gear only); substrate-barrier-joshs-frogs-24x18 (/gear only).
+
+### Health and first aid
+
+- COULD. Bird- and small-pet-safe cage disinfectant. Setup prose: African grey, cockatoo, quaker parakeet, gerbil. **Added:** disinfectant-rescue-one-step-rtu (/gear only).
+
+### Other
+
+- NEED. Soft fine-mesh aquarium net and transfer cup, plus a large pond net for koi. Betta hub, goldfish hub, amano shrimp hub, oscar hub, koi hub. **Added:** net-aquatop-5in-fine-mesh (/gear only); net-aquascape-pond-extendable (/gear only).
+- NEED. Pond liner underlayment fabric, sized to the liner. Koi hub. **Added:** pond-underlayment-sandbaggy-6x50 (/gear only).
+- NEED. Vented deli cups, 32 oz (16 oz for slings). Mourning gecko hub, praying mantis hub. Setup prose also: tarantula. **Added:** deli-cups-dubia-farms-32oz-vented (/gear only).
+- NEED. Aquarium-safe silicone or putty for sealing gaps. Mourning gecko hub, garter snake hub. **Added:** silicone-aqueon-aquarium-sealant (/gear only).
+- NEED. Flat slate, flagstone or porcelain tile, for floors, feeding tiles and basking stacks. Leopard gecko hub, bearded dragon hub, uromastyx hub, Russian tortoise hub, fire-bellied toad hub. **Added:** slate-tile-daltile-12x12-6pack (leopard gecko cost, Russian tortoise cost).
+- NEED. Small terracotta pots, for broken-pot hides. Emperor scorpion hub, tarantula hub. **Added:** terracotta-pots-juvale-2in-10pack (/gear only).
+- NEED. Egg-crate flats, for roach hides. Hissing cockroach hub. **Added:** egg-flats-joshs-frogs-15 (/gear only).
+- NEED. Water tubes or a stoppered container for cut host-plant stems. Stick insect hub. **Added:** water-tubes-royal-imports-25pack (/gear only).
+- NEED. Bird water bottle, cage mount. Conure hub and cost. **Added:** water-bottle-lixit-bird-glass-16oz (/gear only).
+- NEED. Concrete or grooming perch. Conure hub. **Added:** perch-pollys-pastel-medium (/gear only).
+- NEED. Parrot shredding material: palm strips, willow, seagrass, paper strips. Quaker parakeet hub. **Added:** shredder-planet-pleasures-zig-zag (/gear only).
+- NEED. Parrot play stand or play gym, large. Cockatoo hub. Setup prose also: African grey, quaker parakeet. **Added:** play-stand-prevue-large-parrot (/gear only).
+- NEED. Solid-surface exercise wheel, 6 to 8 in, for mice and dwarf hamsters. Mouse hub and cost, hamster hub (dwarf). **Added:** wheel-kaytee-silent-spinner-6-5in (mouse cost).
+- NEED. Wooden small-animal nest box, hung high. Flying squirrel hub. Setup prose also: degu. **Added:** nest-box-sugar-gliders-usa-large (/gear only).
+- NEED. Washable fleece cage liners, sized to the cage. Chinchilla hub, guinea pig hub, hedgehog hub, flying squirrel hub, sugar glider hub. **Added:** fleece-liner-guineadad-original (/gear only).
+- NEED. Hay rack or hay feeder. Guinea pig hub, rabbit hub and cost. **Added:** hay-manger-kaytee-large (rabbit cost).
+- NEED. Washable pen flooring (vinyl mat, rug or fleece over a yoga mat) and a waterproof tarp. Rabbit hub. **Added:** pen-mat-prevue-playpen-cover (/gear only); tarp-xpose-6x8-10mil (/gear only).
+- NEED. Cord protectors and baseboard guards for bunny-proofing. Rabbit hub and cost. **Added:** cord-protector-sungrow-20ft (rabbit cost).
+
 ## 2026-09-28: 40 lines, 44 products
 
 Sourced from Amazon search results with the owner's go-ahead (the topsoil pick was the owner's own). Every product was added to `src/lib/data/affiliateProducts.js` with a `?tag=beastlyfacts-20` link and no price, rating or image yet: those wait for a check on the live listing. Hub "What to buy" lists render as plain text, so "wired" means the /gear catalog plus any cost guide table row that names the item. Rows are listed in parentheses; "/gear only" means no cost guide row names it cleanly yet.
