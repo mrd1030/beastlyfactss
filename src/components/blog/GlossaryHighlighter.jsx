@@ -174,42 +174,61 @@ export default function GlossaryHighlighter({ contentRef, watch }) {
     const container = contentRef.current;
     if (!container || !MATCH_REGEX) return;
 
-    const usedSlugs = new Set();
+    const scan = () => {
+      const usedSlugs = new Set();
 
-    // Snapshot text nodes before mutating - a live TreeWalker can skip or
-    // reprocess nodes if the DOM changes underneath it mid-walk.
-    const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
-    const textNodes = [];
-    let node;
-    while ((node = walker.nextNode())) {
-      if (node.nodeValue.trim() && !hasSkippedAncestor(node, container)) textNodes.push(node);
-    }
-
-    for (const textNode of textNodes) {
-      const text = textNode.nodeValue;
-      MATCH_REGEX.lastIndex = 0;
-      let match;
-      let cursor = 0;
-      let didMatch = false;
-      const frag = document.createDocumentFragment();
-
-      while ((match = MATCH_REGEX.exec(text))) {
-        const info = ALIAS_MAP.get(match[1].toLowerCase());
-        if (!info || usedSlugs.has(info.slug)) continue;
-        if (info.exact && match[1] !== info.exact) continue;
-
-        usedSlugs.add(info.slug);
-        didMatch = true;
-        frag.appendChild(document.createTextNode(text.slice(cursor, match.index)));
-        frag.appendChild(buildHighlightNode(match[1], info, navigate));
-        cursor = match.index + match[1].length;
+      // Snapshot text nodes before mutating - a live TreeWalker can skip or
+      // reprocess nodes if the DOM changes underneath it mid-walk.
+      const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
+      const textNodes = [];
+      let node;
+      while ((node = walker.nextNode())) {
+        if (node.nodeValue.trim() && !hasSkippedAncestor(node, container)) textNodes.push(node);
       }
 
-      if (didMatch) {
-        frag.appendChild(document.createTextNode(text.slice(cursor)));
-        textNode.replaceWith(frag);
+      for (const textNode of textNodes) {
+        const text = textNode.nodeValue;
+        MATCH_REGEX.lastIndex = 0;
+        let match;
+        let cursor = 0;
+        let didMatch = false;
+        const frag = document.createDocumentFragment();
+
+        while ((match = MATCH_REGEX.exec(text))) {
+          const info = ALIAS_MAP.get(match[1].toLowerCase());
+          if (!info || usedSlugs.has(info.slug)) continue;
+          if (info.exact && match[1] !== info.exact) continue;
+
+          usedSlugs.add(info.slug);
+          didMatch = true;
+          frag.appendChild(document.createTextNode(text.slice(cursor, match.index)));
+          frag.appendChild(buildHighlightNode(match[1], info, navigate));
+          cursor = match.index + match[1].length;
+        }
+
+        if (didMatch) {
+          frag.appendChild(document.createTextNode(text.slice(cursor)));
+          textNode.replaceWith(frag);
+        }
       }
+    };
+
+    // Reached by a link from another article, the new article's body is a
+    // code chunk that may still be downloading: MdxArticleBody shows a
+    // [data-mdx-loading] placeholder, and scanning that finds nothing. Wait
+    // for the real text to replace it, then scan. A direct load already has
+    // the text in place, so it scans straight away.
+    if (!container.querySelector('[data-mdx-loading]')) {
+      scan();
+      return;
     }
+    const observer = new MutationObserver(() => {
+      if (container.querySelector('[data-mdx-loading]')) return;
+      observer.disconnect();
+      scan();
+    });
+    observer.observe(container, { childList: true, subtree: true });
+    return () => observer.disconnect();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [contentRef, watch]);
 
