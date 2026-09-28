@@ -256,3 +256,94 @@ spray. No people, no boardwalk, no hands, no text, no watermark. Landscape 3:2.
 **Check:** the spray is visible and comes from the nostrils, salt crust is on
 the snout, and the animal is black with a blunt snout rather than a green
 iguana.
+
+## Facts awaiting photos, 2026-09-27 run
+
+Five fact photos for the drafts parked in `NEEDS_IMAGE.md`. Same rules as the
+run above: **fact photos are not cropped**, the ratio given is what suits the
+subject, and each is installed at whatever size it arrives, re-encoded through
+mozjpeg at 80, never enlarged. Each needs its own photo, no reuse and no sharing
+between facts.
+
+**Tasmanian Devil, "Biggest Bite, Smallest Body"** → `/assets/facts/tasmanian-devil.jpg`
+
+A Tasmanian devil lying on the forest floor with a large pale bone clamped
+crosswise in its jaws, mouth wide, the heavy jaw muscles bunched at the cheeks
+and the stubby, worn-down canines and molars visible around the bone. Stocky
+small-dog-sized marsupial, coarse black fur, a white band across the chest,
+pink-red ears that glow where the light catches them, broad blunt head far too
+big for the body. Healthy face: clean skin around the muzzle and jaw, no lumps,
+no sores, no wounds. Not a black bear cub and not a honey badger: the devil has
+the white chest band, pink ears and no grey stripe down the back. Tasmanian wet
+eucalypt forest at dusk, damp leaf litter and ferns, low warm light from the
+side. Shot at 200mm, f/4, eye level with the animal. No carcass, no fur or
+blood on the bone, no hands, no people, no text, no watermark. Landscape 3:2.
+**Check:** the white chest band and pink ears are there, the face is clean of
+any lesion, and the bone is bare rather than a carcass.
+
+**Shiba Inu, "The Shiba Scream"** → `/assets/facts/shiba-inu.jpg`
+
+A Shiba Inu sitting on a folded bath towel mid "Shiba scream": mouth thrown wide
+open, head tilted back, ears pinned flat, eyes squeezed half shut, pure
+theatrical protest. A pair of small pet nail clippers lies closed on the towel
+beside one front paw, untouched. Red coat with cream urajiro markings on the
+cheeks, throat, chest and inner legs, a thick tail curled tightly over the back,
+small triangular ears, fox-like face. Not an Akita: a small, compact dog, about
+knee height, with a finer muzzle. Not a Norwegian Lundehund and not a Corgi:
+full-length legs, a tightly curled tail, and a red coat rather than fawn with
+black tips. Bright bathroom or laundry room, clean white tile, soft daylight
+from a window. Shot at 50mm, f/2.8, dog sharp and the room softly blurred. No
+hands, no people, no grooming table, no text on the clippers, no text, no
+watermark. Portrait suits it.
+**Check:** the mouth is open wide in a yell rather than a yawn, the tail curls
+over the back, and the cream urajiro markings are present.
+
+**Frilled Shark, "Three and a Half Year Wait"** → `/assets/facts/frilled-shark.jpg`
+
+A frilled shark swimming slowly through dark open water with its mouth partly
+open, rows of small three-pointed teeth visible along the jaws. Long eel-like
+dark brown body, a flattened snake-like head with the mouth at the very tip of
+the snout rather than underneath, six gill slits with ruffled frilly edges, the
+first pair meeting across the throat, a single small dorsal fin set far back
+near the tail. Not an eel and not a moray: it has paired pectoral fins, frilled
+gill slits and a shark's skin and tail, not smooth eel skin. Not a basking shark
+or any other gaping shark either: slim and serpentine, the mouth at the tip.
+Deep ocean, deep blue fading to black, fine marine snow drifting in the water,
+lit softly from the side by a single cool lamp so the body reads against the
+dark. Shot at 60mm, f/8. No submersible, no divers, no seafloor, no text, no
+watermark. Landscape 3:2 suits the long body.
+**Check:** six frilled gill slits, a terminal mouth at the tip of the snout, and
+the dorsal fin sits far back near the tail.
+
+**Matamata Turtle, "Sucks First, Asks Later"** → `/assets/facts/matamata.jpg`
+
+A matamata turtle resting motionless on the bottom of a shallow blackwater
+river, half buried among dead leaves, its head stretched forward and flat on the
+riverbed. Wide flat triangular head fringed with ragged skin flaps and
+tubercles, a long tubular snout ending in a tiny snorkel nose, very small eyes,
+a wide slit of a mouth. Dark brown shell with three rough knobbed ridges running
+lengthwise, the whole animal the color and texture of bark and leaf litter. Not
+a snapping turtle and not a common snake-necked turtle: the head is broad,
+flat and fringed with flaps, the snout is a narrow tube, and the shell is
+ridged and knobbly rather than smooth. Tea-colored tannin water, sunlight
+filtering down in shafts, sediment and leaves on the bottom, underwater view.
+Shot at 35mm, f/5.6, the head sharp. No fish in the mouth, no aquarium glass,
+no plants in pots, no hands, no text, no watermark. Landscape 3:2.
+**Check:** the fringed flat head and snorkel snout are clear, the shell carries
+the three knobbed ridges, and the animal reads as camouflage rather than as a
+turtle on display.
+
+**Potoo, "Sleeping With Eyes Open"** → `/assets/facts/potoo.jpg`
+
+A common potoo perched bolt upright on the jagged tip of a broken dead branch,
+bill pointed to the sky, body held so straight and still that it reads as the
+top of the snag itself. Mottled grey, brown and black cryptic plumage that
+matches the bark exactly, a small hooked bill with an enormous gape line, large
+eyes almost closed with only a thin slit visible. Not an owl: no facial disk,
+no ear tufts, a tiny bill. Not a nightjar on the ground: the potoo perches
+vertically at the very end of a snag in the open. Neotropical forest edge at
+dusk, sky pale behind, soft fading light, the snag sharp against a soft green
+background. Shot at 400mm, f/5.6. No people, no nest, no other birds, no text,
+no watermark. Portrait suits the upright pose.
+**Check:** the bird is vertical at the tip of a broken branch, the eyes show
+only a narrow slit, and there is no facial disk or ear tuft.
