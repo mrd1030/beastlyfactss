@@ -23,6 +23,11 @@ import articlesIndex from '@/lib/generated/articles-index.json';
 import buildStamp from '@/lib/generated/build-stamp.json';
 import * as MdxComponents from '@/components/mdx';
 import MdxArticleBody from '@/components/shared/MdxArticleBody';
+
+// Cost guides get their price tables linked through `covers` (see
+// ComparisonTable), so gear links live in the table, not the paragraphs.
+const CostGuideTable = (props) => <MdxComponents.ComparisonTable {...props} linkCovers />;
+const COST_GUIDE_COMPONENTS = { ...MdxComponents, ComparisonTable: CostGuideTable };
 import { AUTHOR, PUBLISHER, authorSchema } from '@/lib/data/author';
 import { firsthandNote } from '@/lib/data/firsthand';
 import { ArticleMetaProvider } from '@/lib/articleMeta';
@@ -1024,7 +1029,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
             <ArticleMetaProvider value={{ lastReviewed: post.lastReviewed, sourceCount: post.sourceCount }}>
             <div ref={contentRef} className="prose prose-base max-w-[37rem] mx-auto dark:prose-invert font-body">
               {post.source === 'mdx' && post.content ? (
-                <MdxArticleBody slug={post.slug.current} components={MdxComponents} loadingLabel="Loading article…" />
+                <MdxArticleBody slug={post.slug.current} components={/-cost-guide$/.test(post.slug.current) ? COST_GUIDE_COMPONENTS : MdxComponents} loadingLabel="Loading article…" />
               ) : (
                 <LocalPostContent content={typeof post.content === 'string' ? post.content : ''} />
               )}

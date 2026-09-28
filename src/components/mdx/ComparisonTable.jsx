@@ -1,9 +1,26 @@
 import React from 'react';
+import AffiliateLink from './AffiliateLink';
+import { getAffiliateForItem } from '@/lib/data/affiliateProducts';
+
+// linkCovers: a row whose first cell is plain text matching a product's
+// `covers` exactly renders as that product's link, the same match the hub
+// What to buy lists use. Blog.jsx turns it on for cost guides only, so a
+// cost table links its gear without affiliate links in the paragraphs.
+// A first cell that is already JSX (a hand-written <AffiliateLink>) is left
+// alone.
+function linkedCell(cell) {
+  if (typeof cell !== 'string') return cell;
+  const product = getAffiliateForItem(cell);
+  return product
+    ? <AffiliateLink href={product.link} product={product.product}>{cell}</AffiliateLink>
+    : cell;
+}
 
 export default function ComparisonTable({ 
   headers = [], 
   rows = [], 
-  className = '' 
+  className = '',
+  linkCovers = false,
 }) {
   if (!headers.length || !rows.length) return null;
 
@@ -33,7 +50,7 @@ export default function ComparisonTable({
                   key={cellIndex} 
                   className="px-4 py-3 text-muted-foreground"
                 >
-                  {cell}
+                  {linkCovers && cellIndex === 0 ? linkedCell(cell) : cell}
                 </td>
               ))}
             </tr>

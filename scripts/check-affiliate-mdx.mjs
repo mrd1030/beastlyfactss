@@ -42,7 +42,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-import { AFFILIATE_PRODUCTS } from '../src/lib/data/affiliateProducts.js';
+import { AFFILIATE_PRODUCTS, getAffiliateForItem } from '../src/lib/data/affiliateProducts.js';
 
 const MAX_PROSE_LINKS = 5;
 
@@ -100,15 +100,6 @@ for (const file of files) {
 
   const { frontmatter, body } = splitFrontmatter(text);
 
-  const isAffiliate = /^affiliate:\s*true/m.test(frontmatter);
-  if ((isAffiliate || opens > 0) && !body.includes('<AffiliateDisclosure')) {
-    missingDisclosure.push({ name });
-  }
-
-  for (const slug of relatedProductSlugs(frontmatter)) {
-    if (!productSlugs.has(slug)) badSlugs.push({ name, slug });
-  }
-
   // Which ComparisonTable a link sits in, or -1 for body prose.
   const tables = [...body.matchAll(/<ComparisonTable[\s\S]*?\n\/>/g)].map((m) => [
     m.index,
@@ -116,7 +107,30 @@ for (const file of files) {
   ]);
   const tableIndexAt = (i) => tables.findIndex(([a, b]) => i >= a && i < b);
 
-  const occurrences = [];
+  // Cost guides also link table rows at render time: a plain-text first cell
+  // that matches a product's `covers` becomes an AffiliateLink (ComparisonTable
+  // linkCovers, switched on in Blog.jsx). Those links never appear in the MDX,
+  // so they are derived here to count toward the disclosure and repeat rules.
+  const autoLinks = [];
+  if (name.endsWith('-cost-guide.mdx')) {
+    tables.forEach(([a, b], ti) => {
+      for (const r of body.slice(a, b).matchAll(/\[\s*"((?:[^"\\]|\\.)*)"\s*,/g)) {
+        const product = getAffiliateForItem(JSON.parse(`"${r[1]}"`));
+        if (product) autoLinks.push({ href: product.link, table: ti });
+      }
+    });
+  }
+
+  const isAffiliate = /^affiliate:\s*true/m.test(frontmatter);
+  if ((isAffiliate || opens > 0 || autoLinks.length > 0) && !body.includes('<AffiliateDisclosure')) {
+    missingDisclosure.push({ name });
+  }
+
+  for (const slug of relatedProductSlugs(frontmatter)) {
+    if (!productSlugs.has(slug)) badSlugs.push({ name, slug });
+  }
+
+  const occurrences = [...autoLinks];
   for (const m of body.matchAll(/<AffiliateLink\b[^>]*>[\s\S]*?<\/AffiliateLink>/g)) {
     const href = (m[0].match(/href=["']([^"']+)["']/) || [])[1];
     occurrences.push({ href, table: tableIndexAt(m.index) });
