@@ -71,6 +71,15 @@ export const ANIMAL_EVENTS = [
     blurb: 'Slow, ancient, and frequently outliving their owners.',
   },
   {
+    id: 'world-otter-day', name: 'World Otter Day', emoji: '🦦',
+    // Floating: the last Wednesday in May, per the International Otter
+    // Survival Fund, which created the day. https://www.otter.org/world-otter-day
+    ranges: { 2026: { start: '05-27', end: '05-27' }, 2027: { start: '05-26', end: '05-26' } },
+    animals: ['Otter', 'Sea Otter'],
+    categories: ['Wild Animals'],
+    blurb: 'Every otter, river and sea, gets its day.',
+  },
+  {
     id: 'world-oceans-day', name: 'World Oceans Day', emoji: '🌊',
     month: 6, day: 8,
     animals: ['Octopus', 'Dolphin', 'Shark', 'Jellyfish', 'Mantis Shrimp', 'Seahorse', 'Narwhal', 'Hagfish'],
@@ -228,6 +237,16 @@ export const ANIMAL_EVENTS = [
     animals: ['Dolphin'],
     categories: ['Aquatic Life'],
     blurb: 'They use names. Actual names, for each other.',
+  },
+  {
+    id: 'sea-otter-awareness-week', name: 'Sea Otter Awareness Week', emoji: '🦦',
+    // Floating: the last full week of September, Sunday to Saturday, per
+    // Defenders of Wildlife, one of its organizers.
+    // https://defenders.org/sea-otter-awareness-week
+    ranges: { 2026: { start: '09-20', end: '09-26' }, 2027: { start: '09-19', end: '09-25' } },
+    animals: ['Sea Otter'],
+    categories: ['Wild Animals'],
+    blurb: 'The densest fur on Earth, and no blubber under it.',
   },
   {
     id: 'international-rabbit-day', name: 'International Rabbit Day', emoji: '🐰',
