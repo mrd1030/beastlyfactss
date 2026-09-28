@@ -373,4 +373,38 @@ export const marineBeastfiles = [
     secondaryAlt: 'A humpback whale tail fluke raised above the water before a dive',
     relatedFiles: ['10-surprising-humpback-whale-facts'],
   },
+  {
+    id: 'sea-otter',
+    // Draft until the hero and secondary land. Promote by deleting this line.
+    draft: true,
+    name: 'Sea Otter',
+    scientific: 'Enhydra lutris',
+    tagline: 'No blubber, the densest fur on Earth, and an appetite that holds coastlines together.',
+    habitat: 'Ocean',
+    group: 'Marine Life',
+    overview:
+      'The sea otter is the largest member of the weasel family and one of the few marine mammals with no blubber at all. It stays warm on fur alone, up to a million hairs per square inch, and pays for it by eating about a quarter of its body weight every day. That appetite makes it a keystone species. By eating sea urchins it keeps them from stripping kelp forests bare, and in a California estuary it eats the burrowing crabs that tear salt marsh banks apart. It floats on its back to eat, cracks hard shells open with a rock, and stashes food in loose pockets of skin under each forearm while it dives.',
+    origin:
+      'Coastal waters of the North Pacific: Alaska and the Aleutian Islands, the Kuril Islands off Russia, and central California. Nearly all of them live off Alaska and Russia.',
+    notableTraits: [
+      'Densest fur of any animal, and no insulating blubber',
+      'Eats about a quarter of its body weight every day',
+      'Uses rocks as tools to crack open hard-shelled prey',
+      'Carries food in skin pockets under each forearm',
+      'Keystone predator of kelp forests and salt marshes',
+    ],
+    conservation:
+      'Endangered on the IUCN Red List. The fur trade of the 1700s and 1800s nearly wiped the species out, and California was down to about 50 otters found off Big Sur in 1938. Around 168,000 now live off Alaska and Russia. The southern sea otter of California numbers around 3,000 and is listed as Threatened under the US Endangered Species Act.',
+    funFacts: [
+      'A sea otter eats about a quarter of its own body weight every day.',
+      'It cracks open shellfish by pounding them against a rock balanced on its chest.',
+      'Where sea otters returned to a California estuary, its salt marsh banks eroded far more slowly.',
+    ],
+    heroImage: '/assets/beastlypedia/sea-otter-hero.jpg',
+    heroAlt:
+      'A sea otter floating on its back in a golden kelp forest, cracking a shell against a rock resting on its chest',
+    secondaryImage: '/assets/beastlypedia/sea-otter-secondary.jpg',
+    secondaryAlt: 'A sea otter asleep on the water surface, wrapped in a strand of kelp with its paws over its face',
+    relatedFiles: ['sea-otters-salt-marsh-erosion-elkhorn-slough'],
+  },
 ];

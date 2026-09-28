@@ -15,7 +15,24 @@ The five October heroes and the five parked facts all landed the same day.
 
 ## Guide heroes still needed
 
-None. The five October heroes (world animal day, octopus, sloth, reptile
+**Sea otter, 2026-09-28.** Three images, all 3:2 at 1168x784 except the
+portrait secondary. Prompts under "Sea otter, 2026-09-28" in `IMAGE_PROMPTS.md`.
+
+| Image | Path |
+|---|---|
+| Beastfile hero | `/assets/beastlypedia/sea-otter-hero.jpg` |
+| Beastfile secondary (portrait) | `/assets/beastlypedia/sea-otter-secondary.jpg` |
+| Article hero | `/assets/images/sea-otters-salt-marsh-erosion-elkhorn-slough.jpg` |
+
+To ship once all three land: delete `draft: true` from the `sea-otter` entry in
+`src/lib/data/beastlypedia/marine.js`; rename
+`content/guides/sea-otters-salt-marsh-erosion-elkhorn-slough.mdx.draft` to
+`.mdx` and set its `date`, `lastUpdated` and `lastReviewed` to the ship day;
+then `node scripts/sync-articles.js`, `node scripts/check-rotation.mjs
+--assign`, `node scripts/generate-beastlypedia-index.js`. The two go live
+together: the article links the Beastfile and the Beastfile lists the article.
+
+Otherwise none. The five October heroes (world animal day, octopus, sloth, reptile
 awareness, wombat) arrived at 1168x784 exactly, so nothing was resized and
 nothing was enlarged.
 
