@@ -39,6 +39,37 @@ written, one per fact, under "Facts awaiting photos, 2026-09-27 run" in
 4. **Matamata Turtle** (Reptiles) - Sucks First, Asks Later. The matamata's flat, ridged shell and bark-like skin flaps make it nearly invisible on a muddy riverbed. Its jaws are too weak to chew, so it snaps its mouth open in a flash, creating a vacuum that sucks in fish and water together, then swallows its prey whole. Visual hook: a matamata turtle's leaf-shaped, bark-textured head camouflaged among riverbed leaves.
 5. **Potoo** (Birds) - Sleeping With Eyes Open. By day, potoos perch upright and hold still, looking exactly like a broken tree stump. Tiny notches in their eyelids stay open even when the eyes are shut, letting them watch for danger while looking fast asleep, and at night their call is a haunting, drawn out wail some describe as poor me one. Visual hook: a potoo perched upright at dusk, eyes barely open, blending into a broken branch.
 
+## 2026-09-28 run: 3 serval facts drafted, awaiting images
+
+The serval is the only Beastfile still on its authored `funFacts`. These three
+move it onto database facts once promoted (then run
+`node scripts/generate-beastlypedia-index.js`). All three: animal "Serval",
+category "Mammals", emoji 🐆. Prompts are under "Serval facts, 2026-09-28" in
+`IMAGE_PROMPTS.md`; photos install under `/assets/facts/`.
+
+1. **Ears Tuned to Mice** → `serval-ears.jpg`. Servals have the largest ears of
+   any cat for their body size, and each ear can swivel on its own to pinpoint a
+   sound. Their hearing reaches into the ultrasonic range, so they can pick up
+   the high-pitched calls rodents use to talk to each other, even when the prey
+   is hidden in tall grass.
+   Sources: [San Diego Zoo](https://animals.sandiegozoo.org/animals/serval),
+   [Wild Tomorrow](https://wildtomorrow.org/blog/2024/6/17/10-facts-about-servals).
+2. **Plucks Birds From the Air** → `serval-leap.jpg`. Standing on its hind legs,
+   a serval can spring more than 9 feet (2.7 meters) straight up and snatch a
+   bird right out of the air, taking it in flight with a single vertical leap.
+   Sources: [San Diego Zoo](https://animals.sandiegozoo.org/animals/serval),
+   [Panthera](https://panthera.org/blog-post/5-fun-facts-about-small-cats).
+3. **An Arm Down the Burrow** → `serval-burrow.jpg`. The serval has the longest
+   legs for its body size of any cat, and they are not just for running. When a
+   rodent bolts underground, a serval will reach a long foreleg straight down
+   the burrow and hook its meal out of the tunnel.
+   Source: [San Diego Zoo](https://animals.sandiegozoo.org/animals/serval).
+
+Left out on purpose: the Beastfile's fallback line that the serval has "the
+highest hunting success rate of any wild cat". Sources split on it: San Diego
+Zoo says so, Panthera gives the title to the black-footed cat at 60 percent,
+and estimates of the serval's own rate run from about half to two in three.
+
 **None older.** The 2026-09-21 run of five (Hoatzin, Norwegian Lundehund, Numbat,
 Yeti Crab, Marine Iguana) was promoted on 2026-09-22 as ids 329 to 333. The
 batch is recorded in `archive/docs-completed/NEEDS_IMAGE_COMPLETED_2026-09-17.md`.

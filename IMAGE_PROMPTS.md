@@ -347,3 +347,42 @@ background. Shot at 400mm, f/5.6. No people, no nest, no other birds, no text,
 no watermark. Portrait suits the upright pose.
 **Check:** the bird is vertical at the tip of a broken branch, the eyes show
 only a narrow slit, and there is no facial disk or ear tuft.
+
+## Serval facts, 2026-09-28
+
+Three fact photos for the serval drafts in `NEEDS_IMAGE.md`. The Beastfile
+hero is already a serval standing alert in tall grass and the secondary a close
+spotted portrait, so each frame below is built to read differently from both,
+and from each other: backlit ears, a mid-air leap, a leg down a hole. Written
+short on purpose. Same install rules as above: not cropped, mozjpeg at 80,
+never enlarged.
+
+**Ears Tuned to Mice** → `/assets/facts/serval-ears.jpg`
+
+A serval seen from behind and slightly to the side at sunrise, head low in dry
+grass, both huge ears turned in different directions, listening. Low sun behind
+the ears so they glow and show the black backs with a white spot on each. Tall
+slim spotted cat, not a cheetah or a leopard. Soft golden light, blurred
+grassland. No people, no text. Portrait.
+**Check:** the ears point in two different directions and the white ear spots
+show.
+
+**Plucks Birds From the Air** → `/assets/facts/serval-leap.jpg`
+
+A serval in the middle of a high vertical leap above tall grass, body stretched
+upright, front paws reaching up toward a small bird taking off just above it.
+Long legs, big rounded ears, golden coat with black spots. Not a cheetah or a
+caracal: no tear marks on the face, no ear tufts. Bright African savanna, clear
+blue sky. No people, no text. Portrait.
+**Check:** the cat is fully off the ground, and the ears are rounded with no
+tufts.
+
+**An Arm Down the Burrow** → `/assets/facts/serval-burrow.jpg`
+
+A serval lying flat on short grass with one long front leg pushed deep into a
+small hole in the ground, head tilted and ears pointed at the hole, concentrating.
+Tall slim spotted cat with big rounded ears. Not a cheetah. Overcast soft light,
+green grass and bare earth around the hole. No rodent visible, no people, no
+text. Landscape 3:2.
+**Check:** the leg is clearly down the hole, and the cat reads as a serval with
+big rounded ears.
