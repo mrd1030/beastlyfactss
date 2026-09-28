@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from '@/lib/motion-safe';
@@ -61,6 +61,7 @@ export default function ThemedQuizPage({ quiz }) {
   const [savedToPack, setSavedToPack] = useState(false);
   const [popupFact, setPopupFact] = useState(null);
   const [imageFact, setImageFact] = useState(null);
+  const playAreaRef = useRef(null);
 
   const { saveQuizResult, recordQuizCompletion } = useFavoritesCtx();
   const { scores, recordScore } = useQuizScores();
@@ -77,7 +78,21 @@ export default function ThemedQuizPage({ quiz }) {
     if (i === question.answer) setScore(s => s + 1);
   };
 
+  // Next collapses the explanation, so the page gets shorter but the scroll
+  // position stays put. On a phone that leaves the next question above the
+  // screen, so bring the top of the play area back under the navbar when it
+  // has scrolled out of view.
+  const scrollToPlayArea = () => {
+    const el = playAreaRef.current;
+    if (!el) return;
+    const navbarGap = parseFloat(getComputedStyle(el).scrollMarginTop) || 0;
+    if (el.getBoundingClientRect().top >= navbarGap) return;
+    const reduced = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+    el.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+  };
+
   const handleNext = () => {
+    scrollToPlayArea();
     if (currentIndex + 1 >= total) {
       const finalScore = score;
       recordScore(quiz.id, finalScore, total);
@@ -185,7 +200,7 @@ export default function ThemedQuizPage({ quiz }) {
         </div>
       </div>
 
-      <div className="px-4 sm:px-6 pb-16">
+      <div ref={playAreaRef} className="px-4 sm:px-6 pb-16 scroll-mt-24">
         {step === 'intro' && (
           <div className="max-w-md mx-auto text-center py-8">
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>
