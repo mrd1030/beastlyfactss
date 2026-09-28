@@ -127,7 +127,7 @@ export const mammalBeastfiles = [
     heroAlt:
       'A narwhal at the surface among Arctic sea ice with its long spiral tusk clear of the water',
     secondaryImage: '/assets/facts/narwhal-2.jpg',
-    secondaryAlt: 'A narwhal breaking the surface in cold Arctic water, mottled grey skin visible',
+    secondaryAlt: 'A narwhal breaking the surface in cold Arctic water, mottled gray skin visible',
     relatedFiles: ['narwhal-facts-the-real-unicorn-of-the-sea'],
   },
   {
@@ -321,9 +321,9 @@ export const mammalBeastfiles = [
     ],
     heroImage: '/assets/beastlypedia/gray-wolf-hero.jpg',
     heroAlt:
-      'A grey wolf standing in snow at the edge of conifer forest, looking directly toward the camera',
+      'A gray wolf standing in snow at the edge of conifer forest, looking directly toward the camera',
     secondaryImage: '/assets/facts/wolf.jpg',
-    secondaryAlt: 'A grey wolf in profile with thick winter coat',
+    secondaryAlt: 'A gray wolf in profile with thick winter coat',
     relatedFiles: ['alpha-wolf-myth-what-the-research-actually-says'],
   },
   {

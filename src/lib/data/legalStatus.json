@@ -8,7 +8,7 @@
     "  conditional legal without a permit only if a stated condition is met",
     "  restricted  on a restricted list, permit regime applies but pet keeping is not clearly ruled out",
     "  legal       expressly allowed by name in the jurisdiction own rules",
-    "  unclear     the rule is genuinely ambiguous for this animal. Render grey,",
+    "  unclear     the rule is genuinely ambiguous for this animal. Render gray,",
     "              never as legal. Used where a definition arguably reaches an",
     "              animal but does not name it, e.g. Texas ends its list with",
     "              \"or any hybrid of an animal listed in this subdivision\" and",
@@ -4400,7 +4400,7 @@
           "sourceId": "pa-58-137-1",
           "cite": "58 Pa. Code § 137.1(a)(1)",
           "quote": "In the family Felidae . Species and subspecies, except species which are commonly called house cats which may be possessed but not released into the wild.",
-          "note": "Genuinely unresolved, and the ambiguity is structural. The Bengal is a cross between the domestic cat and the Asian leopard cat, so it sits on both sides of this line at once: the opening sentence of § 137.1(a) prohibits a crossbreed or hybrid of the listed animals which are similar in appearance, while the Felidae line exempts species commonly called house cats. Nothing in the regulation names a filial generation, a percentage of wild ancestry, or the Bengal itself, so an early generation animal and a late generation one get the same silent text. Rendered grey rather than guessed.",
+          "note": "Genuinely unresolved, and the ambiguity is structural. The Bengal is a cross between the domestic cat and the Asian leopard cat, so it sits on both sides of this line at once: the opening sentence of § 137.1(a) prohibits a crossbreed or hybrid of the listed animals which are similar in appearance, while the Felidae line exempts species commonly called house cats. Nothing in the regulation names a filial generation, a percentage of wild ancestry, or the Bengal itself, so an early generation animal and a late generation one get the same silent text. Rendered gray rather than guessed.",
           "verifiedOn": "2026-09-05"
         },
         "MI": {
@@ -13406,7 +13406,7 @@
           "cite": "Unrestricted Species list",
           "status": "legal",
           "quote": "Octodon degu   Degu",
-          "note": "Named individually, which is worth noting because the degu is barred outright in California and Georgia and is a legal grey area in several other states.",
+          "note": "Named individually, which is worth noting because the degu is barred outright in California and Georgia and is a legal gray area in several other states.",
           "verifiedOn": "2026-08-05"
         },
         "AR": {
@@ -14596,7 +14596,7 @@
           "cite": "W. Va. C.S.R. § 58-73-1.1; W. Va. Code § 20-2-13; WVDNR turtle checklist",
           "status": "unclear",
           "quote": "The take or possession of any native West Virginia reptile or amphibian species not listed hereafter is prohibited pursuant to W. Va. Code 20-2-4.",
-          "note": "The red-eared slider is the one West Virginia cell where nativity is itself the question, and both answers to it are restrictive, which is why this is grey rather than green. WVDNR publishes its turtle checklist under a heading of native species and the red-eared slider, Trachemys scripta elegans, is the last name on it, beside the woodland box turtle and the snapping turtle. If the department reads its own checklist as settling nativity, and that is how the corn snake, gartersnake, milksnake, kingsnake, hognose and box turtle cells here were decided, then § 58-73-1.1 prohibits this animal: the rule’s section 4 list of what may be taken or possessed runs to ten bait salamanders, two frogs and two turtles, the eastern spiny softshell and the snapping turtle, and the slider is not on it. If instead the department treats the slider as introduced rather than native, because its natural range stops well west of West Virginia, then it is an exotic reptile and § 20-2-13 applies to it like every other exotic reptile in this column: no possession within the state of live wildlife from without the state except under an importation permit from the director. Banned on one reading and permit on the other, and no West Virginia text distinguishes native from established.",
+          "note": "The red-eared slider is the one West Virginia cell where nativity is itself the question, and both answers to it are restrictive, which is why this is gray rather than green. WVDNR publishes its turtle checklist under a heading of native species and the red-eared slider, Trachemys scripta elegans, is the last name on it, beside the woodland box turtle and the snapping turtle. If the department reads its own checklist as settling nativity, and that is how the corn snake, gartersnake, milksnake, kingsnake, hognose and box turtle cells here were decided, then § 58-73-1.1 prohibits this animal: the rule’s section 4 list of what may be taken or possessed runs to ten bait salamanders, two frogs and two turtles, the eastern spiny softshell and the snapping turtle, and the slider is not on it. If instead the department treats the slider as introduced rather than native, because its natural range stops well west of West Virginia, then it is an exotic reptile and § 20-2-13 applies to it like every other exotic reptile in this column: no possession within the state of live wildlife from without the state except under an importation permit from the director. Banned on one reading and permit on the other, and no West Virginia text distinguishes native from established.",
           "verifiedOn": "2026-09-16",
           "permitFor": "personal"
         },
@@ -23101,7 +23101,7 @@
           "sourceId": "nv-nac-503",
           "cite": "NAC 503.110(1)(d)(5)",
           "quote": "(5) Wild European Rabbit....................... Oryctolagus cuniculus",
-          "note": "The two columns of this row disagree with each other. The scientific classification names Oryctolagus cuniculus, which is the species every domestic rabbit belongs to, while the common name column says Wild European Rabbit. Nothing in the section says whether domesticated races are carved out, and unlike the chinchilla, mink, rat, mouse, turkey and duck entries elsewhere in these rules, no domesticated races wording appears here. Pet rabbits are plainly sold in Nevada and the definition of wildlife at NRS 501.097 reaches animals found naturally in a wild state, which a domesticated breed arguably is not. Rendered grey rather than guessed, because the text arguably reaches the animal and clearly was aimed at the wild form. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
+          "note": "The two columns of this row disagree with each other. The scientific classification names Oryctolagus cuniculus, which is the species every domestic rabbit belongs to, while the common name column says Wild European Rabbit. Nothing in the section says whether domesticated races are carved out, and unlike the chinchilla, mink, rat, mouse, turkey and duck entries elsewhere in these rules, no domesticated races wording appears here. Pet rabbits are plainly sold in Nevada and the definition of wildlife at NRS 501.097 reaches animals found naturally in a wild state, which a domesticated breed arguably is not. Rendered gray rather than guessed, because the text arguably reaches the animal and clearly was aimed at the wild form. Nevada leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality before the state.",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
         },

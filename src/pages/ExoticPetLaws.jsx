@@ -257,7 +257,7 @@ export default function ExoticPetLaws() {
       );
 
   // An animal with no restriction anywhere has no page of its own worth
-  // indexing: an all-grey map and one honest sentence. It stays selectable on
+  // indexing: an all-gray map and one honest sentence. It stays selectable on
   // the hub and fully rendered for anyone who lands on it, but it is kept out
   // of the index and out of the sitemap rather than shipped as a thin page.
   const nothingToReport = restricted.length === 0;
@@ -418,7 +418,7 @@ export default function ExoticPetLaws() {
                       {', A to Z. The map, the list and the counts all follow whichever one is selected.'}
                     </li>
                     <li>
-                      {'On the colours: flat grey was read and had no rule, dotted was never read for this animal, and hatched means the rule does not resolve either way. The first two are easy to confuse and mean very different things.'}
+                      {'On the colours: flat gray was read and had no rule, dotted was never read for this animal, and hatched means the rule does not resolve either way. The first two are easy to confuse and mean very different things.'}
                     </li>
                   </ol>
                   <a
@@ -587,7 +587,7 @@ export default function ExoticPetLaws() {
               <ul className="space-y-2.5">
                 {BUCKET_ORDER.map((key) => {
                   const b = STATUS_BUCKETS[key];
-                  // The two grey buckets carry a count too, otherwise "read it,
+                  // The two gray buckets carry a count too, otherwise "read it,
                   // found nothing" and "have not read it" look interchangeable.
                   const n =
                     key === 'none'
@@ -806,19 +806,19 @@ export default function ExoticPetLaws() {
           <h2 className="font-display font-bold text-lg text-foreground mb-2">How to read this</h2>
           <div className="space-y-2.5 text-sm font-body text-muted-foreground leading-relaxed">
             <p>
-              Two of the shades mean very different things and are worth telling apart. A flat grey state was
+              Two of the shades mean very different things and are worth telling apart. A flat gray state was
               read for this animal and nothing in it restricts one. A dotted state has not been read for this
               animal at all. Coverage runs from two jurisdictions to fifty-one depending on the species, so on
               a less-researched animal most of the map is a gap in our work rather than a finding, and it
               should not be taken as permission.
             </p>
             <p>
-              Even a flat grey is not a guarantee. It means no restriction was found in the specific body of
+              Even a flat gray is not a guarantee. It means no restriction was found in the specific body of
               law checked for that state, which is recorded alongside each jurisdiction. Cities and counties
               regularly ban animals their state allows, and several states say so in their own rules.
             </p>
             <p>
-              Hatched grey means the rule genuinely does not resolve. Usually a definition arguably reaches
+              Hatched gray means the rule genuinely does not resolve. Usually a definition arguably reaches
               the animal without naming it, and the honest answer is to ask the agency rather than to guess.
               Those entries are marked unclear on purpose rather than being rounded to a yes or a no.
             </p>

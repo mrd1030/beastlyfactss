@@ -126,7 +126,7 @@ export const fishGuides = [
       heading: "Test the water and temperature first, then act on these the same day.",
       callNow: [
         "Raised, pinecone-like scales (dropsy), a poor prognosis but worth same-day contact with an aquatic vet",
-        "Pale or greyish saddle-shaped patches, ragged fin edges, or a cottony fuzz (columnaris)",
+        "Pale or grayish saddle-shaped patches, ragged fin edges, or a cottony fuzz (columnaris)",
         "A fine gold or rust-colored dusty sheen (velvet), which moves fast and can kill quickly",
         "Buoyancy problems that do not clear after a 2 to 3 day fast",
         "Any illness that does not improve once water quality and temperature are corrected",

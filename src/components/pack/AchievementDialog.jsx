@@ -56,7 +56,7 @@ export default function AchievementDialog({ achievement, unlocked, state, onClos
               <X className="w-4 h-4" />
             </button>
 
-            {/* A locked badge stays greyed here too. Showing it in full colour
+            {/* A locked badge stays grayed here too. Showing it in full colour
                 in the dialog would read as though tapping it earned it. */}
             <span className={`text-5xl block mb-2 ${unlocked ? '' : 'grayscale opacity-50'}`}>
               {achievement.emoji}

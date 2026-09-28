@@ -165,7 +165,7 @@ export default function HeroSection({ onOpenFact }) {
             rather than punched out of it. border-b-0 because the bottom edge
             runs on into the page rather than closing.
             The border is warmed in dark mode. --border there is hsl(141 14% 42%),
-            a green-grey, which renders as RGB(79,98,81) once it is at 70% over
+            a green-gray, which renders as RGB(79,98,81) once it is at 70% over
             the photograph. Against red desert earth that reads cold, close to
             blue, by simultaneous contrast. A tan at hue 36 sits in the same
             family as the image and as the light-mode --border, which is already

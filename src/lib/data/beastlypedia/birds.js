@@ -9,7 +9,7 @@ export const birdBeastfiles = [
     habitat: 'Wetlands',
     group: 'Birds',
     overview:
-      'The shoebill is a very large grey wading bird of central African swamps, and the bill is the point: a huge clog-shaped structure with a hooked tip and sharp edges, capable of taking lungfish, catfish, water snakes and even young crocodiles. Its hunting style is patience taken to an extreme. It stands motionless over floating vegetation, sometimes for hours, then collapses forward in a single violent lunge that scoops fish and water together, and it discards the vegetation before swallowing. Despite the common name it is not closely related to storks; it sits nearer pelicans.',
+      'The shoebill is a very large gray wading bird of central African swamps, and the bill is the point: a huge clog-shaped structure with a hooked tip and sharp edges, capable of taking lungfish, catfish, water snakes and even young crocodiles. Its hunting style is patience taken to an extreme. It stands motionless over floating vegetation, sometimes for hours, then collapses forward in a single violent lunge that scoops fish and water together, and it discards the vegetation before swallowing. Despite the common name it is not closely related to storks; it sits nearer pelicans.',
     origin:
       'Freshwater swamps and papyrus marshes in eastern tropical Africa, notably South Sudan, Uganda, Zambia and parts of the Congo basin.',
     notableTraits: [
@@ -41,7 +41,7 @@ export const birdBeastfiles = [
     habitat: 'Rainforest',
     group: 'Birds',
     overview:
-      'This is the largest pigeon in the world, blue-grey and roughly the size of a turkey, with a maroon breast, a deep red eye and an upright fan of lacy, white-tipped crest feathers. It spends most of its time walking the forest floor of New Guinea, foraging for fallen fruit, seeds and small invertebrates, and flies up into trees mainly to roost or escape. Pairs are long-lasting and both parents share incubation. Like all pigeons it feeds its chick on crop milk, a protein-rich secretion produced in the crop rather than any kind of true milk.',
+      'This is the largest pigeon in the world, blue-gray and roughly the size of a turkey, with a maroon breast, a deep red eye and an upright fan of lacy, white-tipped crest feathers. It spends most of its time walking the forest floor of New Guinea, foraging for fallen fruit, seeds and small invertebrates, and flies up into trees mainly to roost or escape. Pairs are long-lasting and both parents share incubation. Like all pigeons it feeds its chick on crop milk, a protein-rich secretion produced in the crop rather than any kind of true milk.',
     origin:
       'Lowland and swamp forest of northern New Guinea and nearby islands, mostly on the ground below closed canopy.',
     notableTraits: [
@@ -60,7 +60,7 @@ export const birdBeastfiles = [
     ],
     heroImage: '/assets/beastlypedia/victoria-crowned-pigeon-hero.jpg',
     heroAlt:
-      'A Victoria crowned pigeon walking on a rainforest floor showing its blue-grey plumage and lacy crest',
+      'A Victoria crowned pigeon walking on a rainforest floor showing its blue-gray plumage and lacy crest',
     secondaryImage: '/assets/beastlypedia/victoria-crowned-pigeon-secondary.jpg',
     secondaryAlt:
       'Close portrait of a Victoria crowned pigeon showing its lace-tipped crest and red eye',
@@ -191,7 +191,7 @@ export const birdBeastfiles = [
       'A nest in Vermilion, Ohio weighed over 2 tons and was used for 34 years before its tree came down.',
     ],
     heroImage: '/assets/beastlypedia/bald-eagle-hero.jpg',
-    heroAlt: 'An adult bald eagle perched on a bare branch over grey winter water, white head and tail against a dark brown body',
+    heroAlt: 'An adult bald eagle perched on a bare branch over gray winter water, white head and tail against a dark brown body',
     secondaryImage: '/assets/beastlypedia/bald-eagle-secondary.jpg',
     secondaryAlt: 'An adult bald eagle standing on the rim of an enormous stick nest in a dead tree, dwarfed by the nest',
     relatedFiles: ['ultimate-birdwatching-guide-best-places-times-tips-2026'],

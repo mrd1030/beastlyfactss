@@ -53,15 +53,16 @@ for (const para of paragraphs) {
       failures.push(`intensifier "${w}" in: "${para.slice(0, 70)}..."`);
     }
   }
-  // British variants the rules bar in prose.
+  // British variants the rules bar in prose. "grey" is flagged except in the
+  // bird's name, African grey, which keeps the spelling.
   for (const [bad, good] of [
-    ['licence', 'license'], ['organise', 'organize'], ['gray', 'grey'],
+    ['licence', 'license'], ['organise', 'organize'], ['(?<!african )grey', 'gray'],
     ['authorised', 'authorized'], ['authorisation', 'authorization'],
     ['categorised', 'categorized'], ['labelled', 'labeled'], ['colour', 'color'],
     ['recognised', 'recognized'], ['legalised', 'legalized'],
   ]) {
     if (new RegExp(`\\b${bad}\\b`, 'i').test(para)) {
-      failures.push(`use "${good}" not "${bad}" in: "${para.slice(0, 70)}..."`);
+      failures.push(`use "${good}" not "${bad.replace(/^\(\?<![^)]*\)/, '')}" in: "${para.slice(0, 70)}..."`);
     }
   }
 }

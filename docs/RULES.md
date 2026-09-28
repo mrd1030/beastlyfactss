@@ -43,7 +43,7 @@ working checklist.
   not a dash substitute. "Round fish gulp air, it is how they fail" is a comma
   splice wearing a dash's job, and 900 of them in a row is a fingerprint. If
   both halves are full clauses, they get a period.
-- US spelling, "grey" preferred. No AI-tell phrasing ("nature's ultimate X",
+- US spelling, including "gray" for the color. "Grey" stays only inside names spelled that way (African grey, greyhound, grey kangaroo) and in quoted text, titles and product names. Species whose American name uses gray are written gray: gray wolf, great gray owl. No AI-tell phrasing ("nature's ultimate X",
   "let that sink in", "delve into").
 - Intensifiers are rationed, not banned. "genuinely", "actually", "really",
   and "the real X" are fine in Mike's mouth once in a while. They are not

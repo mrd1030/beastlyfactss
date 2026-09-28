@@ -154,7 +154,7 @@ animal is hanging rather than posed on a person.
 
 A wild lizard basking on warm rock in low sun, body angled toward the light,
 head raised, one foreleg lifted off the hot stone. A plain, unremarkable small
-lizard of no obvious pet species: brown and grey, keeled scales, nothing
+lizard of no obvious pet species: brown and gray, keeled scales, nothing
 ornamental. This is deliberate, the article's point is that the threatened
 reptiles are the ones nobody photographs. Dry scrub habitat, long golden light,
 rock texture sharp. Shot at 100mm macro, f/5.6. Not a bearded dragon, not a
@@ -167,7 +167,7 @@ platform, and it is not a recognisable pet-trade species.
 
 A bare-nosed wombat standing at the mouth of its burrow on dry grass in evening
 light, facing the camera, stocky and low to the ground. Bare leathery nose,
-small rounded ears, coarse brown grey fur. Not a koala and not a hairy-nosed
+small rounded ears, coarse brown gray fur. Not a koala and not a hairy-nosed
 wombat: a naked nose with no fur on it, short rounded ears rather than large
 fluffy ones, and a heavy barrel body on very short legs. Australian dry
 grassland at dusk, warm low light, burrow entrance visible behind. Shot at
@@ -205,13 +205,13 @@ A Norwegian Lundehund standing on wet coastal rock with one front paw lifted and
 angled so the extra toes are visible on the pad. Small spitz build, wedge head,
 upright triangular ears, reddish fawn coat with black-tipped guard hairs and
 white on the chest and feet. Not a Shiba Inu and not a Norwegian Elkhound: the
-Lundehund is smaller and lighter than the elkhound and is fawn rather than grey,
-with a narrower muzzle than a Shiba. Steep Norwegian sea cliff and grey North
+Lundehund is smaller and lighter than the elkhound and is fawn rather than gray,
+with a narrower muzzle than a Shiba. Steep Norwegian sea cliff and gray North
 Atlantic behind, overcast maritime light, cold desaturated palette. Shot at
 135mm, f/4. No handler, no lead, no collar, no hands, no text, no watermark.
 Portrait or 3:2, whichever the frame wants.
 **Check:** the raised paw shows more than the usual four weight-bearing toes,
-and the dog is fawn and light-framed rather than grey and heavy.
+and the dog is fawn and light-framed rather than gray and heavy.
 
 **Numbat, "The Termite Marathon"**
 
@@ -260,7 +260,7 @@ iguana.
 ## Sea otter, 2026-09-28
 
 Beastfile hero, Beastfile secondary and the salt marsh article hero. The two
-sea otter fact photos already on disk are both otters floating in grey-green
+sea otter fact photos already on disk are both otters floating in gray-green
 open water, so these three use a kelp forest, a sleeping portrait and a marsh
 creek. Short on purpose.
 
@@ -271,7 +271,7 @@ A sea otter floating on its back at the surface of a kelp forest, cracking a cla
 
 **Beastfile secondary** → `/assets/beastlypedia/sea-otter-secondary.jpg`, portrait
 
-A sea otter asleep on the water, wrapped in a strand of kelp so it does not drift, both front paws pressed over its eyes. Pale grizzled face, dense dark brown fur beaded with water. Calm grey-blue water, overcast soft light, close crop. Not a river otter. No people, no text. Portrait.
+A sea otter asleep on the water, wrapped in a strand of kelp so it does not drift, both front paws pressed over its eyes. Pale grizzled face, dense dark brown fur beaded with water. Calm gray-blue water, overcast soft light, close crop. Not a river otter. No people, no text. Portrait.
 **Check:** the kelp wraps the body and the paws cover the eyes.
 
 **Article hero** → `/assets/images/sea-otters-salt-marsh-erosion-elkhorn-slough.jpg`, 1168x784

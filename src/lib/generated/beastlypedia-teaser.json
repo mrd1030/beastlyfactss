@@ -77,7 +77,7 @@
     "tagline": "There is no alpha wolf. The researcher who popularized the idea spent years retracting it.",
     "group": "Mammals",
     "heroImage": "/assets/beastlypedia/gray-wolf-hero.jpg",
-    "heroAlt": "A grey wolf standing in snow at the edge of conifer forest, looking directly toward the camera"
+    "heroAlt": "A gray wolf standing in snow at the edge of conifer forest, looking directly toward the camera"
   },
   {
     "id": "lion",
@@ -213,7 +213,7 @@
     "tagline": "A turkey-sized pigeon wearing a crown of lace.",
     "group": "Birds",
     "heroImage": "/assets/beastlypedia/victoria-crowned-pigeon-hero.jpg",
-    "heroAlt": "A Victoria crowned pigeon walking on a rainforest floor showing its blue-grey plumage and lacy crest"
+    "heroAlt": "A Victoria crowned pigeon walking on a rainforest floor showing its blue-gray plumage and lacy crest"
   },
   {
     "id": "emperor-penguin",
@@ -245,7 +245,7 @@
     "tagline": "A bird that went from 417 nesting pairs to a fixture on winter rivers.",
     "group": "Birds",
     "heroImage": "/assets/beastlypedia/bald-eagle-hero.jpg",
-    "heroAlt": "An adult bald eagle perched on a bare branch over grey winter water, white head and tail against a dark brown body"
+    "heroAlt": "An adult bald eagle perched on a bare branch over gray winter water, white head and tail against a dark brown body"
   },
   {
     "id": "manta-ray",
