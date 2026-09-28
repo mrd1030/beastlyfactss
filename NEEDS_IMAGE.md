@@ -25,7 +25,17 @@ feeding-guide heroes on 2026-09-09.
 
 ## Facts awaiting images
 
-**None.** The 2026-09-21 run of five (Hoatzin, Norwegian Lundehund, Numbat,
+## 2026-09-27 run: 5 facts drafted, awaiting images
+
+Ready for the site owner to generate photos and add to facts.js.
+
+1. **Tasmanian Devil** (Mammals) - Biggest Bite, Smallest Body. Tasmanian devils have the strongest bite force relative to body size of any living mammal, with a bite force quotient higher than lions or tigers. They crunch through entire carcasses, bones, fur and all, which wears their teeth down to blunt nubs over a lifetime. Visual hook: a Tasmanian devil's jaws clamped on a bone, teeth visibly worn down.
+2. **Shiba Inu** (Dogs & Cats) - The Shiba Scream. Shiba Inus are famous for the Shiba scream, a piercing, high-pitched shriek most owners hear during nail trims, baths, or vet visits. Despite the drama, the breed grooms itself like a cat, licking its paws and coat clean, and stays notably low odor for a dog. Visual hook: a Shiba Inu mid scream during a nail trim, ears pinned back.
+3. **Frilled Shark** (Ocean) - Three and a Half Year Wait. Frilled sharks stay pregnant for up to 42 months, the longest known gestation of any vertebrate. Their eel-like body and roughly 300 trident-shaped teeth arranged in 25 rows have earned them living fossil status, largely unchanged for tens of millions of years. Visual hook: a frilled shark's eel-like body and open trident-toothed jaw in dark water.
+4. **Matamata Turtle** (Reptiles) - Sucks First, Asks Later. The matamata's flat, ridged shell and bark-like skin flaps make it nearly invisible on a muddy riverbed. Its jaws are too weak to chew, so it snaps its mouth open in a flash, creating a vacuum that sucks in fish and water together, then swallows its prey whole. Visual hook: a matamata turtle's leaf-shaped, bark-textured head camouflaged among riverbed leaves.
+5. **Potoo** (Birds) - Sleeping With Eyes Open. By day, potoos perch upright and hold still, looking exactly like a broken tree stump. Tiny notches in their eyelids stay open even when the eyes are shut, letting them watch for danger while looking fast asleep, and at night their call is a haunting, drawn out wail some describe as poor me one. Visual hook: a potoo perched upright at dusk, eyes barely open, blending into a broken branch.
+
+**None older.** The 2026-09-21 run of five (Hoatzin, Norwegian Lundehund, Numbat,
 Yeti Crab, Marine Iguana) was promoted on 2026-09-22 as ids 329 to 333. The
 batch is recorded in `archive/docs-completed/NEEDS_IMAGE_COMPLETED_2026-09-17.md`.
 
