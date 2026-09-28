@@ -13,6 +13,8 @@ import { getRelatedFacts } from '@/lib/utils/matchAnimal';
 import { relatedPosts } from '@/lib/relatedPosts';
 import { getRelatedArticleSlugs } from '@/lib/data/relatedArticles';
 import DeepDiveList from '@/components/shared/DeepDiveList';
+import AffiliateLink from '@/components/mdx/AffiliateLink';
+import { getAffiliateForItem, RETAILERS } from '@/lib/data/affiliateProducts';
 import { CARE_PACKAGES, carePackageBookCover, isCarePackageBuyable } from '@/lib/data/carePackages';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
@@ -512,13 +514,31 @@ export default function GuideDetail() {
                   🛒 What to buy
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                  {guide.buyList.map((item) => (
-                    <div key={item} className="flex items-start gap-2.5 text-xs text-muted-foreground font-body bg-muted/50 rounded-xl p-2.5">
-                      <Check className="w-3.5 h-3.5 text-primary mt-0.5 flex-shrink-0" />
-                      {item}
-                    </div>
-                  ))}
+                  {guide.buyList.map((item) => {
+                    // Same exact `covers` match the old Cost Builder used, so a
+                    // buy-list line links only when a product was written for it.
+                    const product = getAffiliateForItem(item);
+                    return (
+                      <div key={item} className="flex items-start gap-2.5 text-xs text-muted-foreground font-body bg-muted/50 rounded-xl p-2.5">
+                        <Check className="w-3.5 h-3.5 text-primary mt-0.5 flex-shrink-0" />
+                        {product
+                          ? <span><AffiliateLink href={product.link} product={product.product}>{item}</AffiliateLink></span>
+                          : item}
+                      </div>
+                    );
+                  })}
                 </div>
+                {(() => {
+                  const retailers = [...new Set(guide.buyList
+                    .map((item) => getAffiliateForItem(item))
+                    .filter(Boolean)
+                    .map((p) => RETAILERS[p.retailer]?.label || 'retailer'))];
+                  return retailers.length > 0 ? (
+                    <p className="text-[11px] text-muted-foreground/80 font-body mt-3">
+                      {`Underlined items are paid ${retailers.join(' and ')} links. We may earn a commission at no extra cost to you.`}
+                    </p>
+                  ) : null;
+                })()}
                 {(() => {
                   const costRoute = guide.routes.find(r => /-(cost-guide|shopping-list)$/.test(r.slug));
                   return costRoute ? (
