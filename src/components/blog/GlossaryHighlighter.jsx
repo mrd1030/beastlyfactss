@@ -25,14 +25,33 @@ function escapeHtml(str) {
 // match is otherwise case-insensitive, which had "boas" (the snakes) linking
 // to BOAS the airway syndrome, and "cites" the verb to CITES.
 const isAcronym = (alias) => alias === alias.toUpperCase() && /[A-Z]/.test(alias);
-const ALIAS_MAP = new Map(); // lowercased alias -> { slug, definition, displayTerm, exact }
+// onlyIn/skipIn (see glossaryTerms.js) are tested with a global copy so every
+// place the phrase occurs in the text can be checked against the match.
+const globalize = (re) => (re ? new RegExp(re.source, re.flags.includes('g') ? re.flags : `${re.flags}g`) : null);
+
+// Whether some match of `re` in `text` spans the whole [start, end) range.
+function phraseCovers(re, text, start, end) {
+  re.lastIndex = 0;
+  let m;
+  while ((m = re.exec(text))) {
+    if (m.index <= start && m.index + m[0].length >= end) return true;
+    if (m.index > start) return false;
+    if (!m[0].length) re.lastIndex++;
+  }
+  return false;
+}
+
+const ALIAS_MAP = new Map(); // lowercased alias -> { slug, definition, displayTerm, exact, onlyIn, skipIn }
 for (const cat of CATEGORIES) {
   for (const t of cat.terms) {
     const slug = slugify(t.term);
     for (const alias of extractAliases(t.term)) {
       const key = alias.toLowerCase();
       if (!ALIAS_MAP.has(key)) {
-        ALIAS_MAP.set(key, { slug, definition: t.definition, displayTerm: t.term, exact: isAcronym(alias) ? alias : null });
+        ALIAS_MAP.set(key, {
+          slug, definition: t.definition, displayTerm: t.term, exact: isAcronym(alias) ? alias : null,
+          onlyIn: globalize(t.onlyIn), skipIn: globalize(t.skipIn),
+        });
       }
     }
   }
@@ -198,6 +217,9 @@ export default function GlossaryHighlighter({ contentRef, watch }) {
           const info = ALIAS_MAP.get(match[1].toLowerCase());
           if (!info || usedSlugs.has(info.slug)) continue;
           if (info.exact && match[1] !== info.exact) continue;
+          const end = match.index + match[1].length;
+          if (info.onlyIn && !phraseCovers(info.onlyIn, text, match.index, end)) continue;
+          if (info.skipIn && phraseCovers(info.skipIn, text, match.index, end)) continue;
 
           usedSlugs.add(info.slug);
           didMatch = true;
