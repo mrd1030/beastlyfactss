@@ -3988,7 +3988,7 @@
     "faqs": [
       {
         "q": "What does a fungal infection look like on an axolotl?",
-        "a": "A white or grey, cotton-like growth on the gills or body, usually triggered by warm water, poor water quality, stress, or an existing injury. Treatment starts with correcting water quality and cooling the tank, with salt baths sometimes helping, though severe cases need a vet-prescribed antifungal."
+        "a": "A white or gray, cotton-like growth on the gills or body, usually triggered by warm water, poor water quality, stress, or an existing injury. Treatment starts with correcting water quality and cooling the tank, with salt baths sometimes helping, though severe cases need a vet-prescribed antifungal."
       },
       {
         "q": "What is heat stress in axolotls and how serious is it?",
@@ -7300,7 +7300,7 @@
     "readTime": 10,
     "difficulty": "Beginner/Intermediate",
     "image": "/assets/images/bird-sexing-weight-body-condition-guide.jpg",
-    "imageAlt": "A grey cockatiel standing on a perch mounted to a digital gram scale, with a hand gently checking the keel bone along its breastbone",
+    "imageAlt": "A gray cockatiel standing on a perch mounted to a digital gram scale, with a hand gently checking the keel bone along its breastbone",
     "emoji": "⚖️",
     "lastReviewed": "2026-09-24",
     "author": "Michael Ryan",
@@ -13087,7 +13087,7 @@
     "faqs": [
       {
         "q": "How much does a cockatiel cost upfront?",
-        "a": "The bird itself runs $75 to $250 depending on color mutation, with normal grey typically the cheapest. A complete starter setup, cage, perches, dishes, and toys, brings most first-time owners to $320 to $860 total."
+        "a": "The bird itself runs $75 to $250 depending on color mutation, with normal gray typically the cheapest. A complete starter setup, cage, perches, dishes, and toys, brings most first-time owners to $320 to $860 total."
       },
       {
         "q": "What's the vet cost people most underestimate with cockatiels?",
@@ -28236,7 +28236,7 @@
       },
       {
         "q": "My old dog's eyes have gone cloudy blue. Is that a cataract?",
-        "a": "Probably not. Nuclear sclerosis is a normal age change where the lens becomes denser, giving the pupil a hazy blue-grey look, and it does not cause blindness. A cataract is an actual opacity that blocks light. They look similar to an owner and completely different through an ophthalmoscope, so this is one where you genuinely cannot tell at home. The practical difference is that a dog with nuclear sclerosis still navigates normally."
+        "a": "Probably not. Nuclear sclerosis is a normal age change where the lens becomes denser, giving the pupil a hazy blue-gray look, and it does not cause blindness. A cataract is an actual opacity that blocks light. They look similar to an owner and completely different through an ophthalmoscope, so this is one where you genuinely cannot tell at home. The practical difference is that a dog with nuclear sclerosis still navigates normally."
       },
       {
         "q": "The vet wants to reposition my dog's cherry eye rather than remove it. Why?",
@@ -34516,7 +34516,7 @@
     "readTime": 7,
     "difficulty": null,
     "image": "/assets/images/narwhal-facts-the-real-unicorn-of-the-sea-0.jpg",
-    "imageAlt": "A narwhal swimming beneath Arctic sea ice, showing its mottled grey skin and the single long spiraled tusk extending from the side of its upper jaw",
+    "imageAlt": "A narwhal swimming beneath Arctic sea ice, showing its mottled gray skin and the single long spiraled tusk extending from the side of its upper jaw",
     "emoji": "🐳",
     "lastReviewed": null,
     "author": "Michael Ryan",
@@ -38147,7 +38147,7 @@
     "readTime": 8,
     "difficulty": "Beginner",
     "image": "/assets/guides/quaker-parakeet-legal.jpg",
-    "imageAlt": "Green and grey quaker parakeet perched on a branch with a stick nest structure behind it",
+    "imageAlt": "Green and gray quaker parakeet perched on a branch with a stick nest structure behind it",
     "emoji": "🦜",
     "lastReviewed": "2026-09-11",
     "author": "Michael Ryan",
@@ -42129,7 +42129,7 @@
     "readTime": 7,
     "difficulty": "Intermediate",
     "image": "/assets/guides/savannah-monitor-legal.jpg",
-    "imageAlt": "Savannah monitor on sand in close profile, its blunt snout, heavy neck and yellow-speckled grey scales clearly visible",
+    "imageAlt": "Savannah monitor on sand in close profile, its blunt snout, heavy neck and yellow-speckled gray scales clearly visible",
     "emoji": "🦎",
     "lastReviewed": "2026-09-16",
     "author": "Michael Ryan",
@@ -42288,6 +42288,65 @@
     "myth": null,
     "truth": null,
     "sourceCount": 7,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/sea-otters-salt-marsh-erosion-elkhorn-slough.mdx",
+    "slug": "sea-otters-salt-marsh-erosion-elkhorn-slough",
+    "title": "The Sea Otters Holding a California Salt Marsh Together",
+    "seoTitle": "Sea Otters Slow Salt Marsh Erosion by Eating Crabs",
+    "seoDescription": "Sea otters returning to Elkhorn Slough slowed salt marsh erosion by 69% on average, a 2024 Nature study found, by eating the crabs that dig the banks apart.",
+    "lastUpdated": "2026-09-28",
+    "noIndex": false,
+    "excerpt": "When sea otters returned to Elkhorn Slough, the salt marsh banks along its creeks stopped crumbling as fast. The otters were eating the crabs that dig those banks apart, and a 2024 study proved it with cages.",
+    "date": "2026-09-28",
+    "category": "Wild Animals",
+    "categories": [
+      "Wild Animals"
+    ],
+    "tags": [
+      "Sea Otter",
+      "Sea Otters",
+      "Elkhorn Slough",
+      "Salt Marsh",
+      "Keystone Species",
+      "Trophic Cascade",
+      "Marine Mammals",
+      "Conservation",
+      "Wild Animals"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/sea-otters-salt-marsh-erosion-elkhorn-slough.jpg",
+    "imageAlt": "A sea otter floating in a narrow salt marsh creek between muddy pickleweed banks, holding a small crab in its paws",
+    "emoji": "🦦",
+    "lastReviewed": "2026-09-28",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How do sea otters slow salt marsh erosion?",
+        "a": "They eat lined shore crabs, which burrow into marsh banks and eat the roots that hold the mud together. With fewer crabs the banks stay stronger and erode more slowly. In Elkhorn Slough, creek bank erosion slowed by an average of 69 percent once the otter population recovered."
+      },
+      {
+        "q": "Why do sea otters eat so much?",
+        "a": "They have no blubber. A sea otter keeps warm with fur alone, so it burns energy fast and eats about a quarter of its body weight every day."
+      },
+      {
+        "q": "Are sea otters endangered?",
+        "a": "The species is listed as Endangered by the IUCN. The southern sea otter of California numbers around 3,000 and is listed as Threatened under the US Endangered Species Act."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -43772,7 +43831,7 @@
     "faqs": [
       {
         "q": "How much does a sugar glider cost to buy?",
-        "a": "$200 to $500 each, and since sugar gliders should never be kept alone, budget for a pair from the start. Standard grey gliders run toward the lower end of that range, named color morphs cost more, and rescue gliders run $50 to $200."
+        "a": "$200 to $500 each, and since sugar gliders should never be kept alone, budget for a pair from the start. Standard gray gliders run toward the lower end of that range, named color morphs cost more, and rescue gliders run $50 to $200."
       },
       {
         "q": "Are sugar gliders legal everywhere?",
@@ -49258,7 +49317,7 @@
     "readTime": 6,
     "difficulty": null,
     "image": "/assets/images/why-rabbits-need-unlimited-hay-and-what-happens-to-their-teeth-without-it-0.jpg",
-    "imageAlt": "\"A cute domestic rabbit with grey and white fur actively eats fresh hay from a pile. Its ears are upright and it is focused on its meal in soft natural lighting.\"",
+    "imageAlt": "\"A cute domestic rabbit with gray and white fur actively eats fresh hay from a pile. Its ears are upright and it is focused on its meal in soft natural lighting.\"",
     "emoji": "🐰",
     "lastReviewed": null,
     "author": "Michael Ryan",

@@ -334,5 +334,13 @@
     "group": "Marine Life",
     "heroImage": "/assets/beastlypedia/humpback-whale-hero.jpg",
     "heroAlt": "A humpback whale breaching clear of the ocean surface with water streaming from its long pectoral fin"
+  },
+  {
+    "id": "sea-otter",
+    "name": "Sea Otter",
+    "tagline": "No blubber, the densest fur on Earth, and an appetite that holds coastlines together.",
+    "group": "Marine Life",
+    "heroImage": "/assets/beastlypedia/sea-otter-hero.jpg",
+    "heroAlt": "A sea otter floating on its back in a golden kelp forest, cracking a shell against a rock resting on its chest"
   }
 ]

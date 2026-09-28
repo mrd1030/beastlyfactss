@@ -2598,3 +2598,34 @@ big rounded ears.
 The frames actually installed came from short versions of the five 2026-09-27
 prompts, written the same day at the site owner's request; the Shiba and the
 frilled shark each took a second attempt.
+
+---
+
+# Sea otter (installed 2026-09-28)
+
+Beastfile hero, Beastfile secondary and the salt marsh article hero. The two
+sea otter fact photos already on disk are both otters floating in gray-green
+open water, so these three use a kelp forest, a sleeping portrait and a marsh
+creek. Short on purpose.
+
+**Beastfile hero** → `/assets/beastlypedia/sea-otter-hero.jpg`, 1168x784
+
+A sea otter floating on its back at the surface of a kelp forest, cracking a clam against a flat rock resting on its chest. Pale grizzled face, dark brown body, small round ears, big webbed hind feet poking up. Not a river otter: it floats belly-up and has a short flat tail. Golden kelp fronds all around, calm blue-green water, soft morning light. No people, no boats, no text. Landscape 3:2.
+**Check:** the otter is on its back with the rock on its chest.
+
+**Beastfile secondary** → `/assets/beastlypedia/sea-otter-secondary.jpg`, portrait
+
+A sea otter asleep on the water, wrapped in a strand of kelp so it does not drift, both front paws pressed over its eyes. Pale grizzled face, dense dark brown fur beaded with water. Calm gray-blue water, overcast soft light, close crop. Not a river otter. No people, no text. Portrait.
+**Check:** the kelp wraps the body and the paws cover the eyes.
+
+**Article hero** → `/assets/images/sea-otters-salt-marsh-erosion-elkhorn-slough.jpg`, 1168x784
+
+A sea otter floating on its back in a narrow salt marsh creek, holding a small dark crab in its front paws and eating it. Low muddy banks topped with green and red pickleweed on both sides, the edges slumping into the water. Pale grizzled face, dark brown body. Not a river otter. Still water, soft overcast California light. No people, no buildings, no text. Landscape 3:2.
+**Check:** it is a marsh creek with muddy vegetated banks, not open ocean, and the otter holds a crab.
+
+# Sea otter pocket fact (installed 2026-09-28)
+
+**Pockets Under the Arms** → `/assets/facts/sea-otter-3.jpg`
+
+A sea otter just surfacing from a dive, floating upright in the water, with two or three clams tucked under one forearm against its chest and one more held in its paws. Pale grizzled face, wet dark brown fur. Not a river otter. Rocky kelp coast behind, soft gray daylight. No people, no text. Portrait.
+**Check:** the clams are held under the forearm, not just in the paws.

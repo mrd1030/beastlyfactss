@@ -8,7 +8,7 @@ sixteen Beastfiles; there are 42. Numbers below are recomputed from
 
 | | Count |
 |---|---|
-| Beastfiles | 42 |
+| Beastfiles | 43 (sea otter added 2026-09-28) |
 | Rendering no Related Files section | 10 |
 | Still on authored `funFacts` instead of database facts | 0 (serval closed 2026-09-28) |
 | Carrying a secondary image | 42 |

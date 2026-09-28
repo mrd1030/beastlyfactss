@@ -168,7 +168,7 @@
         "category": "Aquatic Life",
         "publishedAt": "2026-07-30",
         "image": "/assets/images/narwhal-facts-the-real-unicorn-of-the-sea-0.jpg",
-        "imageAlt": "A narwhal swimming beneath Arctic sea ice, showing its mottled grey skin and the single long spiraled tusk extending from the side of its upper jaw",
+        "imageAlt": "A narwhal swimming beneath Arctic sea ice, showing its mottled gray skin and the single long spiraled tusk extending from the side of its upper jaw",
         "animal": "Narwhal",
         "myth": "The narwhal tusk is a horn.",
         "truth": "It is a tooth, grown out through the lip, threaded with ten million channels that let the animal taste the sea through it.",
@@ -1305,10 +1305,10 @@
     ],
     "related": [],
     "siblings": [
-      "dolphin",
-      "clownfish",
-      "immortal-jellyfish",
-      "seahorse"
+      "humpback-whale",
+      "sea-otter",
+      "leafy-sea-dragon",
+      "dolphin"
     ]
   },
   "leafy-sea-dragon": {
@@ -1324,10 +1324,10 @@
     ],
     "related": [],
     "siblings": [
-      "clownfish",
-      "immortal-jellyfish",
-      "seahorse",
-      "shark"
+      "sea-otter",
+      "manta-ray",
+      "dolphin",
+      "clownfish"
     ]
   },
   "dolphin": {
@@ -1414,10 +1414,10 @@
       }
     ],
     "siblings": [
-      "immortal-jellyfish",
-      "seahorse",
-      "shark",
-      "octopus"
+      "manta-ray",
+      "leafy-sea-dragon",
+      "clownfish",
+      "immortal-jellyfish"
     ]
   },
   "clownfish": {
@@ -1490,10 +1490,10 @@
       }
     ],
     "siblings": [
-      "seahorse",
-      "shark",
-      "octopus",
-      "mantis-shrimp"
+      "leafy-sea-dragon",
+      "dolphin",
+      "immortal-jellyfish",
+      "seahorse"
     ]
   },
   "immortal-jellyfish": {
@@ -1559,10 +1559,10 @@
       }
     ],
     "siblings": [
-      "shark",
-      "octopus",
-      "mantis-shrimp",
-      "cuttlefish"
+      "dolphin",
+      "clownfish",
+      "seahorse",
+      "shark"
     ]
   },
   "seahorse": {
@@ -1621,10 +1621,10 @@
       }
     ],
     "siblings": [
-      "octopus",
-      "mantis-shrimp",
-      "cuttlefish",
-      "humpback-whale"
+      "clownfish",
+      "immortal-jellyfish",
+      "shark",
+      "octopus"
     ]
   },
   "shark": {
@@ -1669,10 +1669,10 @@
       }
     ],
     "siblings": [
-      "mantis-shrimp",
-      "cuttlefish",
-      "humpback-whale",
-      "manta-ray"
+      "immortal-jellyfish",
+      "seahorse",
+      "octopus",
+      "mantis-shrimp"
     ]
   },
   "octopus": {
@@ -1733,10 +1733,10 @@
       }
     ],
     "siblings": [
-      "cuttlefish",
-      "humpback-whale",
-      "manta-ray",
-      "leafy-sea-dragon"
+      "seahorse",
+      "shark",
+      "mantis-shrimp",
+      "cuttlefish"
     ]
   },
   "mantis-shrimp": {
@@ -1774,10 +1774,10 @@
       }
     ],
     "siblings": [
-      "humpback-whale",
-      "manta-ray",
-      "leafy-sea-dragon",
-      "dolphin"
+      "shark",
+      "octopus",
+      "cuttlefish",
+      "humpback-whale"
     ]
   },
   "cuttlefish": {
@@ -1810,10 +1810,10 @@
       }
     ],
     "siblings": [
-      "manta-ray",
-      "leafy-sea-dragon",
-      "dolphin",
-      "clownfish"
+      "octopus",
+      "mantis-shrimp",
+      "humpback-whale",
+      "sea-otter"
     ]
   },
   "humpback-whale": {
@@ -1839,10 +1839,53 @@
       }
     ],
     "siblings": [
-      "leafy-sea-dragon",
-      "dolphin",
-      "clownfish",
-      "immortal-jellyfish"
+      "mantis-shrimp",
+      "cuttlefish",
+      "sea-otter",
+      "manta-ray"
+    ]
+  },
+  "sea-otter": {
+    "animal": "Sea Otter",
+    "facts": [
+      {
+        "id": 17,
+        "title": "Sea Otter Hand-Holding",
+        "fact": "Sea otters usually rest in groups called rafts, and to keep from drifting while they sleep they wrap themselves in strands of kelp or seagrass. They do sometimes hold paws, but far less often than the famous photos suggest: wild otters mostly keep together by watching, listening and staying close.",
+        "category": "Ocean",
+        "image": "/assets/facts/sea-otter.jpg"
+      },
+      {
+        "id": 162,
+        "title": "A Million Hairs Per Inch",
+        "fact": "Sea otters have the densest fur of any animal on Earth, up to a million hairs packed into a single square inch. With no blubber to keep them warm, that fur trapping air bubbles is their only insulation, so they spend hours every day grooming to keep it in top shape.",
+        "category": "Ocean",
+        "image": "/assets/facts/sea-otter-2.jpg"
+      },
+      {
+        "id": 342,
+        "title": "Pockets Under the Arms",
+        "fact": "A sea otter carries its own shopping bag. A loose patch of skin under each forearm works as a pocket, so on a single dive it can collect several clams or urchins, tuck them away and bring the whole haul to the surface, where it eats floating on its back.",
+        "category": "Ocean",
+        "image": "/assets/facts/sea-otter-3.jpg"
+      }
+    ],
+    "related": [
+      {
+        "id": "sea-otters-salt-marsh-erosion-elkhorn-slough",
+        "slug": "sea-otters-salt-marsh-erosion-elkhorn-slough",
+        "title": "Sea Otters Slow Salt Marsh Erosion by Eating Crabs",
+        "excerpt": "When sea otters returned to Elkhorn Slough, the salt marsh banks along its creeks stopped crumbling as fast. The otters",
+        "category": "Wild Animals",
+        "publishedAt": "2026-09-28",
+        "image": "/assets/images/sea-otters-salt-marsh-erosion-elkhorn-slough.jpg"
+      }
+    ],
+    "siblings": [
+      "cuttlefish",
+      "humpback-whale",
+      "manta-ray",
+      "leafy-sea-dragon"
     ]
   }
 }

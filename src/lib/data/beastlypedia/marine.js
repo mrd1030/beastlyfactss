@@ -375,8 +375,6 @@ export const marineBeastfiles = [
   },
   {
     id: 'sea-otter',
-    // Draft until the hero and secondary land. Promote by deleting this line.
-    draft: true,
     name: 'Sea Otter',
     scientific: 'Enhydra lutris',
     tagline: 'No blubber, the densest fur on Earth, and an appetite that holds coastlines together.',

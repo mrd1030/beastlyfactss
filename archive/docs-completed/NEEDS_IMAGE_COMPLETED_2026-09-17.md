@@ -8,6 +8,24 @@ Newest first.
 
 ---
 
+## 2026-09-28: sea otter Beastfile, article and third fact
+
+Four images, all installed the day the prompts were written, none resized:
+
+| Image | File | Size |
+|---|---|---|
+| Beastfile hero | `/assets/beastlypedia/sea-otter-hero.jpg` | 1168x784 |
+| Beastfile secondary | `/assets/beastlypedia/sea-otter-secondary.jpg` | 896x1200 |
+| Article hero | `/assets/images/sea-otters-salt-marsh-erosion-elkhorn-slough.jpg` | 1168x784 |
+| Fact 342, Pockets Under the Arms | `/assets/facts/sea-otter-3.jpg` | 784x1168 |
+
+The `sea-otter` Beastfile dropped `draft: true` and went live with three facts
+(17, 162, 342) and the salt marsh article as its Related File. Fact 17 was
+rewritten the same day: wild sea otters rarely hold paws and mostly wrap in
+kelp or seagrass (Seattle Aquarium; US Fish and Wildlife Service). Fact 342
+sources: US Fish and Wildlife Service, southern sea otter; Monterey Bay
+Aquarium, sea otter.
+
 ## 2026-09-28: the 2026-09-27 run and three serval facts
 
 Eight fact photos, promoted as ids 334 to 341. The serval three moved the last

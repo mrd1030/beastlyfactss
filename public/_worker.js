@@ -384,6 +384,7 @@ const FACT_IMAGES = {
   339: '/assets/facts/serval-ears.jpg', // "Ears Tuned to Mice"
   340: '/assets/facts/serval-leap.jpg', // "Plucks Birds From the Air"
   341: '/assets/facts/serval-burrow.jpg', // "An Arm Down the Burrow"
+  342: '/assets/facts/sea-otter-3.jpg', // "Pockets Under the Arms"
 };
 
 function imageFor(fact) {

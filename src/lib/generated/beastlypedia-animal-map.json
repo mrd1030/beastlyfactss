@@ -166,5 +166,9 @@
   "humpback whale": {
     "id": "humpback-whale",
     "name": "Humpback Whale"
+  },
+  "sea otter": {
+    "id": "sea-otter",
+    "name": "Sea Otter"
   }
 }

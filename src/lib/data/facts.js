@@ -341,6 +341,7 @@ export const facts = [
   { id: 339, title: "Ears Tuned to Mice", emoji: "🐆", animal: "Serval", category: "Mammals", fact: "Servals have the largest ears of any cat for their body size, and each ear can swivel on its own to pinpoint a sound. Their hearing reaches into the ultrasonic range, so they can pick up the high-pitched calls rodents use to talk to each other, even when the prey is hidden in tall grass.", image: "🐆" },
   { id: 340, title: "Plucks Birds From the Air", emoji: "🐆", animal: "Serval", category: "Mammals", fact: "Standing on its hind legs, a serval can spring more than 9 feet (2.7 meters) straight up and snatch a bird right out of the air, taking it in flight with a single vertical leap.", image: "🐆" },
   { id: 341, title: "An Arm Down the Burrow", emoji: "🐆", animal: "Serval", category: "Mammals", fact: "The serval has the longest legs for its body size of any cat, and they are not just for running. When a rodent bolts underground, a serval will reach a long foreleg straight down the burrow and hook its meal out of the tunnel.", image: "🐆" },
+  { id: 342, title: "Pockets Under the Arms", emoji: "🦦", animal: "Sea Otter", category: "Ocean", fact: "A sea otter carries its own shopping bag. A loose patch of skin under each forearm works as a pocket, so on a single dive it can collect several clams or urchins, tuck them away and bring the whole haul to the surface, where it eats floating on its back.", image: "🦦" },
 ];
 
 // `textColor` follows DifficultyLegend.jsx: the category colour applied to the
