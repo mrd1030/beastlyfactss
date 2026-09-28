@@ -695,9 +695,16 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
   // already scrolls the window for sidebar-triggered navigation, but never
   // touched the sidebar's own scroll position, which is what stayed wherever
   // it was left on the previous post.
+  //
+  // Not on back/forward (POP): ScrollToTop puts the reader back where they
+  // were, and this effect scrolling to the top was undoing that, so back from
+  // an in-article link landed at the previous article's title.
+  const navigationType = useNavigationType();
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
     if (sidebarRef.current) sidebarRef.current.scrollTop = 0;
+    if (navigationType === 'POP') return;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [postSlug]);
 
   // The sidebar (an overflow-y-auto box taller inside than the sticky window

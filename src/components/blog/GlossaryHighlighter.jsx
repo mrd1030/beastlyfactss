@@ -40,31 +40,84 @@ const MATCH_REGEX = SORTED_ALIASES.length
 
 const SKIP_TAGS = new Set(['A', 'CODE', 'PRE', 'SCRIPT', 'STYLE', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6']);
 
-function buildHighlightNode(matchedText, info, navigate) {
+// Touch has no hover, so on a phone the first tap on a term used to jump
+// straight to the Glossary with no hint of why the word was marked. Touch
+// now works the way iOS Safari treats hover content and Tippy.js recommends:
+// the first tap opens the definition, a second tap on the term (or a tap on
+// the definition itself) goes to the Glossary, and a tap anywhere else
+// closes it. Mouse and keyboard are unchanged: hover or focus shows it,
+// click goes. The CSS hover rule is limited to (hover: hover) devices, or
+// iOS would spend the first tap on a hover and need a third to navigate.
+function isTouchTap(pointerType) {
+  if (pointerType) return pointerType !== 'mouse';
+  return window.matchMedia?.('(hover: none)').matches ?? false;
+}
+
+function openTip(wrapper, tooltip) {
+  wrapper.dataset.open = 'true';
+  wrapper.firstChild.setAttribute('aria-expanded', 'true');
+  Object.assign(tooltip.style, { display: 'block', pointerEvents: 'auto', left: '', top: '', bottom: '' });
+  // Keep it on screen: a term near the right edge would push a 16rem box off
+  // the side, and one near the top of the viewport has no room above.
+  const r = tooltip.getBoundingClientRect();
+  // clientWidth, not innerWidth: on a phone innerWidth can report the zoomed-out
+  // layout width and leave the box hanging off the visible edge.
+  const overflowRight = r.right - (document.documentElement.clientWidth - 8);
+  if (overflowRight > 0) tooltip.style.left = `${-Math.min(overflowRight, r.left - 8)}px`;
+  if (r.top < 8) Object.assign(tooltip.style, { top: '100%', bottom: 'auto', marginTop: '6px' });
+}
+
+function closeTip(wrapper) {
+  if (!wrapper) return;
+  delete wrapper.dataset.open;
+  wrapper.firstChild.setAttribute('aria-expanded', 'false');
+  // The tapped term keeps focus, and focus-within would hold it open.
+  if (wrapper.contains(document.activeElement)) document.activeElement.blur();
+  wrapper.lastChild.removeAttribute('style');
+}
+
+function buildHighlightNode(matchedText, info, navigate, openState) {
   const wrapper = document.createElement('span');
   wrapper.className = 'relative inline-block group/gloss';
 
+  const go = () => {
+    closeTip(openState.current);
+    openState.current = null;
+    navigate(`/glossary/#${info.slug}`);
+  };
+
+  let pointerType = '';
   const link = document.createElement('a');
   link.href = `/glossary/#${info.slug}`;
   link.textContent = matchedText;
   link.className = 'bg-secondary/10 hover:bg-secondary/20 border-b border-dotted border-secondary/70 text-foreground rounded px-0.5 -mx-0.5 transition-colors cursor-help';
   link.setAttribute('aria-describedby', `gloss-tip-${info.slug}`);
+  link.addEventListener('pointerdown', (e) => { pointerType = e.pointerType; });
   link.addEventListener('click', (e) => {
     if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
     e.preventDefault();
-    navigate(`/glossary/#${info.slug}`);
+    if (isTouchTap(pointerType) && openState.current !== wrapper) {
+      closeTip(openState.current);
+      openTip(wrapper, tooltip);
+      openState.current = wrapper;
+      return;
+    }
+    go();
   });
   wrapper.appendChild(link);
 
   const tooltip = document.createElement('span');
   tooltip.id = `gloss-tip-${info.slug}`;
   tooltip.setAttribute('role', 'tooltip');
-  tooltip.className = 'pointer-events-none absolute left-0 bottom-full mb-1.5 z-20 hidden group-hover/gloss:block group-focus-within/gloss:block w-64 max-w-[80vw]';
+  tooltip.className = 'pointer-events-none absolute left-0 bottom-full mb-1.5 z-20 hidden [@media(hover:hover)]:group-hover/gloss:block group-focus-within/gloss:block w-64 max-w-[80vw]';
   tooltip.innerHTML = `<span class="block bg-card border border-border rounded-xl shadow-lg px-3 py-2 text-xs leading-relaxed text-muted-foreground text-left">` +
     `<span class="block font-body font-bold text-foreground mb-0.5">${escapeHtml(info.displayTerm)}</span>` +
     `${escapeHtml(info.definition)}` +
     `<span class="block mt-1 text-[10px] font-semibold text-secondary">View in Glossary →</span>` +
     `</span>`;
+  // Only reachable when a tap opened it: hover tooltips stay
+  // pointer-events-none so they never block the text under them.
+  tooltip.addEventListener('click', (e) => { e.preventDefault(); go(); });
   wrapper.appendChild(tooltip);
 
   return wrapper;
@@ -102,6 +155,15 @@ export default function GlossaryHighlighter({ contentRef, watch }) {
     if (!container || !MATCH_REGEX) return;
 
     const usedSlugs = new Set();
+    // The one tap-opened definition, if any. A tap outside every term closes it.
+    const openState = { current: null };
+    const onOutside = (e) => {
+      if (openState.current && !openState.current.contains(e.target)) {
+        closeTip(openState.current);
+        openState.current = null;
+      }
+    };
+    document.addEventListener('pointerdown', onOutside);
 
     // Snapshot text nodes before mutating - a live TreeWalker can skip or
     // reprocess nodes if the DOM changes underneath it mid-walk.
@@ -127,7 +189,7 @@ export default function GlossaryHighlighter({ contentRef, watch }) {
         usedSlugs.add(info.slug);
         didMatch = true;
         frag.appendChild(document.createTextNode(text.slice(cursor, match.index)));
-        frag.appendChild(buildHighlightNode(match[1], info, navigate));
+        frag.appendChild(buildHighlightNode(match[1], info, navigate, openState));
         cursor = match.index + match[1].length;
       }
 
@@ -136,6 +198,7 @@ export default function GlossaryHighlighter({ contentRef, watch }) {
         textNode.replaceWith(frag);
       }
     }
+    return () => document.removeEventListener('pointerdown', onOutside);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [contentRef, watch]);
 
