@@ -594,6 +594,35 @@ export default function Blog() {
   );
 }
 
+// Four cards up front, the rest behind a button, so a long relatedProducts
+// list does not turn the end of an article into a storefront. The list itself
+// is unchanged; only how many show before the reader asks for more.
+const GEAR_CARDS_SHOWN = 4;
+function RecommendedGearGrid({ products, onSelect }) {
+  const [expanded, setExpanded] = useState(false);
+  const visible = expanded ? products : products.slice(0, GEAR_CARDS_SHOWN);
+  const hidden = products.length - GEAR_CARDS_SHOWN;
+  return (
+    <>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {visible.map((product) => (
+          <ProductCard key={product.slug} product={product} onSelect={onSelect} />
+        ))}
+      </div>
+      {hidden > 0 && (
+        <button
+          type="button"
+          onClick={() => setExpanded((v) => !v)}
+          className="mt-3 text-xs font-body font-semibold text-secondary hover:underline"
+          aria-expanded={expanded}
+        >
+          {expanded ? 'Show fewer' : `View ${hidden} more`}
+        </button>
+      )}
+    </>
+  );
+}
+
 function AuthorBio({ firsthand }) {
   return (
     <div className="mt-10 mb-2 flex items-start gap-4 bg-card border border-border rounded-2xl p-5">
@@ -1065,11 +1094,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
                 <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
                   🛒 Recommended Gear
                 </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {relatedProducts.map((product) => (
-                    <ProductCard key={product.slug} product={product} onSelect={setSelectedProduct} />
-                  ))}
-                </div>
+                <RecommendedGearGrid key={postSlug} products={relatedProducts} onSelect={setSelectedProduct} />
                 <p className="text-[11px] text-muted-foreground/70 font-body italic mt-3">
                   As an Amazon Associate, we earn from qualifying purchases through the links above - at no extra cost to you.
                 </p>
