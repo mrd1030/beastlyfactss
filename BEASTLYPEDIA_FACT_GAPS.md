@@ -46,9 +46,9 @@ header photo exists. The `.draft` suffix keeps `check-images.mjs` and
 
 ## Open gaps
 
-**None.** As of 2026-09-17 every fact in `facts.js` resolves its own photo, and
-the serval is the only Beastfile still rendering its authored `funFacts` instead
-of database facts. It needs three facts written and three photos, one per fact.
+**None.** As of 2026-09-28 every fact in `facts.js` resolves its own photo, and
+every Beastfile renders database facts. The serval, the last one on its
+authored `funFacts`, got its three (ids 339 to 341) that day.
 
 Shipped entries are not kept here. They live in
 `archive/docs-completed/BEASTLYPEDIA_FACT_GAPS_COMPLETED_2026-09-17.md`.

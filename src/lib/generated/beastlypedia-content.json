@@ -315,7 +315,7 @@
         "animal": "Slow Loris",
         "myth": "No primate is venomous.",
         "truth": "The slow loris mixes venom from a gland on its own arm into its saliva. In one clinical series, 43 percent of people bitten needed hospital care.",
-        "sourceCount": 9
+        "sourceCount": 8
       }
     ],
     "siblings": [
@@ -386,7 +386,7 @@
       {
         "id": 20,
         "title": "Breath-Holding Sloths",
-        "fact": "Sloths can hold their breath underwater for up to 40 minutes, longer than dolphins! They slow their heart rate to just one-third of normal to conserve oxygen.",
+        "fact": "Sloths can hold their breath underwater for up to 40 minutes. The trick is slowing their heart rate to about a third of its normal pace, which makes the oxygen in each breath last far longer.",
         "category": "Mammals",
         "image": "/assets/facts/sloth.jpg"
       },
@@ -552,7 +552,30 @@
     ]
   },
   "serval": {
-    "facts": [],
+    "animal": "Serval",
+    "facts": [
+      {
+        "id": 339,
+        "title": "Ears Tuned to Mice",
+        "fact": "Servals have the largest ears of any cat for their body size, and each ear can swivel on its own to pinpoint a sound. Their hearing reaches into the ultrasonic range, so they can pick up the high-pitched calls rodents use to talk to each other, even when the prey is hidden in tall grass.",
+        "category": "Mammals",
+        "image": "/assets/facts/serval-ears.jpg"
+      },
+      {
+        "id": 340,
+        "title": "Plucks Birds From the Air",
+        "fact": "Standing on its hind legs, a serval can spring more than 9 feet (2.7 meters) straight up and snatch a bird right out of the air, taking it in flight with a single vertical leap.",
+        "category": "Mammals",
+        "image": "/assets/facts/serval-leap.jpg"
+      },
+      {
+        "id": 341,
+        "title": "An Arm Down the Burrow",
+        "fact": "The serval has the longest legs for its body size of any cat, and they are not just for running. When a rodent bolts underground, a serval will reach a long foreleg straight down the burrow and hook its meal out of the tunnel.",
+        "category": "Mammals",
+        "image": "/assets/facts/serval-burrow.jpg"
+      }
+    ],
     "related": [],
     "siblings": [
       "rhinoceros",
@@ -626,7 +649,7 @@
         "animal": "Wombat",
         "myth": "A wombat has a square sphincter.",
         "truth": "There is no such thing. The cube is shaped much further up, by stiff and stretchy bands in the intestine wall.",
-        "sourceCount": 10
+        "sourceCount": 9
       }
     ],
     "siblings": [
@@ -741,14 +764,14 @@
         "id": "wolverine-facts-the-toughest-animal-pound-for-pound",
         "slug": "wolverine-facts-the-toughest-animal-pound-for-pound",
         "title": "Wolverine Facts: The Toughest Animal Pound for Pound",
-        "excerpt": "Meet the wolverine: a ferocious, fearless mustelid that defends carcasses against far larger animals. We checked which",
+        "excerpt": "Meet the wolverine: a mustelid under 40 pounds that ranges over 200 square miles, digs food out of the snow, and avoids",
         "category": "Wild Animals",
         "publishedAt": "2026-07-31",
         "image": "/assets/images/wolverine-facts-the-toughest-animal-pound-for-pound-0.jpg",
         "imageAlt": "A wolverine (Gulo gulo) in the wild, showing its thick dark fur, golden side stripes, and powerful muscular build on rocky terrain",
         "animal": "Wolverine",
         "myth": "A wolverine will drive a bear, a cougar or a wolf pack off a kill.",
-        "truth": "That traces to one uncited sentence on a reference site. A camera study of 58 puma kills logged 20 scavenger species and no wolverine.",
+        "truth": "Alaska biologists have never seen one chase a bear off, and near Anchorage one wolf pack killed three of four collared wolverines.",
         "sourceCount": 5
       }
     ],
@@ -1018,8 +1041,8 @@
       {
         "id": "the-incredible-axolotl-nature-s-smiling-salamander",
         "slug": "the-incredible-axolotl-nature-s-smiling-salamander",
-        "title": "Axolotl Care Guide: Nature's Smiling Salamander",
-        "excerpt": "Meet the axolotl, the smiling 'walking fish' that regenerates its own limbs and stays a baby forever. Why scientists",
+        "title": "Axolotl Facts: Regeneration, Morphs and Life Cycle",
+        "excerpt": "Meet the axolotl, the Mexican salamander that keeps its gills for life, rebuilds whole limbs, and is down 99 percent in",
         "category": "Aquatic Life",
         "publishedAt": "2026-05-23",
         "image": "/assets/images/the-incredible-axolotl-nature-s-smiling-salamander-0.jpg",
@@ -1027,7 +1050,7 @@
         "animal": "Axolotl",
         "myth": "The axolotl never grows up.",
         "truth": "It reaches full adult size and breeds. The word is paedomorphosis, and the right hormone pushes it through metamorphosis anyway.",
-        "sourceCount": 5
+        "sourceCount": 8
       }
     ],
     "siblings": [
@@ -1161,7 +1184,7 @@
         "animal": "Crow",
         "myth": "Betty the crow bending a wire into a hook was the clearest case of invention in any animal.",
         "truth": "Wild New Caledonian crows bend twigs using the same motion. She applied a species-typical move to an unfamiliar material.",
-        "sourceCount": 3
+        "sourceCount": 4
       }
     ],
     "siblings": [
@@ -1379,7 +1402,7 @@
         "id": "do-dolphins-have-names-what-the-research-shows",
         "slug": "do-dolphins-have-names-what-the-research-shows",
         "title": "Do Dolphins Have Names? The Real Science",
-        "excerpt": "Bottlenose dolphins really do use something like names for each other. The research behind that claim is narrower, and",
+        "excerpt": "Bottlenose dolphins do use something like names for each other. The research behind that claim is narrower, and more",
         "category": "Aquatic Life",
         "publishedAt": "2026-07-20",
         "image": "/assets/images/do-dolphins-have-names-what-the-research-shows.jpg",
@@ -1387,7 +1410,7 @@
         "animal": "Dolphin",
         "myth": "Dolphins call each other by name.",
         "truth": "Each one invents a signature whistle and answers to it. Calling that a name overstates a narrower and stranger finding.",
-        "sourceCount": 11
+        "sourceCount": 10
       }
     ],
     "siblings": [
@@ -1463,7 +1486,7 @@
         "animal": "Clownfish",
         "myth": "Marlin raises Nemo alone after Coral dies.",
         "truth": "Every clownfish is born male. Marlin would have become female and paired with his own son.",
-        "sourceCount": 10
+        "sourceCount": 9
       }
     ],
     "siblings": [
@@ -1594,7 +1617,7 @@
         "animal": "Seahorse",
         "myth": "The male seahorse just carries the eggs.",
         "truth": "He grows a placenta and feeds the embryos, and had to dismantle part of his own immune system to stop his body rejecting them.",
-        "sourceCount": 7
+        "sourceCount": 6
       }
     ],
     "siblings": [
@@ -1633,8 +1656,8 @@
       {
         "id": "sharks-are-older-than-trees-and-9-other-facts-that-will-blow-your-mind",
         "slug": "sharks-are-older-than-trees-and-9-other-facts-that-will-blow-your-mind",
-        "title": "10 Mind-Blowing Shark Facts You Won't Believe",
-        "excerpt": "Sharks predate trees by 65 million years, and that is just the start. Dive into 10 jaw-dropping shark facts that will",
+        "title": "8 Shark Facts: Older Than Trees, Centuries-Old Sharks",
+        "excerpt": "Sharks predate trees by 65 million years, and that is just the start. Eight shark facts, from glowing catsharks to a",
         "category": "Aquatic Life",
         "publishedAt": "2026-07-31",
         "image": "/assets/images/sharks-are-older-than-trees-and-9-other-facts-that-will-blow-your-mind-0.jpg",
@@ -1738,8 +1761,8 @@
       {
         "id": "mantis-shrimp-16-color-vision-punch-power",
         "slug": "mantis-shrimp-16-color-vision-punch-power",
-        "title": "Mantis Shrimp: Vision & Punch Power",
-        "excerpt": "Mantis shrimp punch faster than a bullet and see colors humans can't imagine. The wild science behind their vision,",
+        "title": "Mantis Shrimp: How Its Eyes and Punch Really Work",
+        "excerpt": "Mantis shrimp strike at over 20 meters per second and carry 12 color receptors, yet discriminate colors worse than",
         "category": "Wild Animals",
         "publishedAt": "2026-06-10",
         "image": "/assets/images/mantis-shrimp-16-color-vision-punch-power-0.jpg",
@@ -1747,7 +1770,7 @@
         "animal": "Mantis Shrimp",
         "myth": "Sixteen color receptors means the mantis shrimp sees colors we cannot imagine.",
         "truth": "It discriminates color worse than we do. The receptors work as a fast lookup, not as a richer picture.",
-        "sourceCount": 3
+        "sourceCount": 5
       }
     ],
     "siblings": [

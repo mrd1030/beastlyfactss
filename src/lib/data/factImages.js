@@ -358,6 +358,14 @@ export const FACT_IMAGES = {
   331: '/assets/facts/numbat.jpg',
   332: '/assets/facts/yeti-crab.jpg',
   333: '/assets/facts/marine-iguana.jpg',
+  334: '/assets/facts/tasmanian-devil.jpg', // "Biggest Bite, Smallest Body"
+  335: '/assets/facts/matamata.jpg', // "Sucks First, Asks Later"
+  336: '/assets/facts/potoo.jpg', // "Sleeping With Eyes Open"
+  337: '/assets/facts/shiba-inu.jpg', // "The Shiba Scream"
+  338: '/assets/facts/frilled-shark.jpg', // "Three and a Half Year Wait"
+  339: '/assets/facts/serval-ears.jpg', // "Ears Tuned to Mice"
+  340: '/assets/facts/serval-leap.jpg', // "Plucks Birds From the Air"
+  341: '/assets/facts/serval-burrow.jpg', // "An Arm Down the Burrow"
 };
 
 // Site-relative path for <img src>, or null if this fact has no dedicated photo yet.

@@ -10,12 +10,12 @@ sixteen Beastfiles; there are 42. Numbers below are recomputed from
 |---|---|
 | Beastfiles | 42 |
 | Rendering no Related Files section | 10 |
-| Still on authored `funFacts` instead of database facts | 1 (serval) |
+| Still on authored `funFacts` instead of database facts | 0 (serval closed 2026-09-28) |
 | Carrying a secondary image | 42 |
 | Carrying an `encyclopediaId` | 1 |
 
-The fact gap is effectively closed. Every Beastfile but the serval now pulls
-real facts with photos, which was the original point of Route A.
+The fact gap is closed. Every Beastfile now pulls real facts with photos,
+which was the original point of Route A; the serval was the last, on 2026-09-28.
 
 ## The ten with no Related Files
 

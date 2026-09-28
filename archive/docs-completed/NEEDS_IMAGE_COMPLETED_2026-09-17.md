@@ -8,6 +8,36 @@ Newest first.
 
 ---
 
+## 2026-09-28: the 2026-09-27 run and three serval facts
+
+Eight fact photos, promoted as ids 334 to 341. The serval three moved the last
+Beastfile off its authored `funFacts`, and with them the fallback line claiming
+the serval has the highest hunting success of any wild cat, which the sources
+dispute (Panthera gives that to the black-footed cat).
+
+| id | Fact | File | Size |
+|---|---|---|---|
+| 334 | Tasmanian Devil, Biggest Bite, Smallest Body | `tasmanian-devil.jpg` | 1168x784 |
+| 335 | Matamata Turtle, Sucks First, Asks Later | `matamata.jpg` | 1264x848 |
+| 336 | Potoo, Sleeping With Eyes Open | `potoo.jpg` | 784x1168 |
+| 337 | Shiba Inu, The Shiba Scream | `shiba-inu.jpg` | 896x1200 |
+| 338 | Frilled Shark, Three and a Half Year Wait | `frilled-shark.jpg` | 1264x848 |
+| 339 | Serval, Ears Tuned to Mice | `serval-ears.jpg` | 848x1264 |
+| 340 | Serval, Plucks Birds From the Air | `serval-leap.jpg` | 784x1168 |
+| 341 | Serval, An Arm Down the Burrow | `serval-burrow.jpg` | 1168x784 |
+
+Not cropped, none enlarged, all through mozjpeg at 80. Registered by id in both
+`src/lib/data/factImages.js` and `public/_worker.js`. Two first attempts were
+rejected on their Check lines and regenerated: the Shiba read as a yawn, and
+the frilled shark had a smooth gill fold and a mid-back dorsal fin. The serval
+leap frame keeps the hind feet in the grass rather than fully airborne,
+accepted because the fact opens "Standing on its hind legs".
+
+Serval fact sources, kept here and never on the cards: San Diego Zoo
+(animals.sandiegozoo.org/animals/serval) for the ears, ultrasonic hearing, the
+2.7 meter leap and the leg down a burrow; Wild Tomorrow for independently
+rotating ears; Panthera for taking birds in flight.
+
 ## 2026-09-22: the October heroes and the five parked facts
 
 Five guide heroes for the October animal days cluster: world-animal-day,
