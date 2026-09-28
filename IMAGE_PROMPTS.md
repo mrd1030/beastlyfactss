@@ -278,3 +278,10 @@ A sea otter asleep on the water, wrapped in a strand of kelp so it does not drif
 
 A sea otter floating on its back in a narrow salt marsh creek, holding a small dark crab in its front paws and eating it. Low muddy banks topped with green and red pickleweed on both sides, the edges slumping into the water. Pale grizzled face, dark brown body. Not a river otter. Still water, soft overcast California light. No people, no buildings, no text. Landscape 3:2.
 **Check:** it is a marsh creek with muddy vegetated banks, not open ocean, and the otter holds a crab.
+
+## Sea otter pocket fact, 2026-09-28
+
+**Pockets Under the Arms** → `/assets/facts/sea-otter-3.jpg`
+
+A sea otter just surfacing from a dive, floating upright in the water, with two or three clams tucked under one forearm against its chest and one more held in its paws. Pale grizzled face, wet dark brown fur. Not a river otter. Rocky kelp coast behind, soft gray daylight. No people, no text. Portrait.
+**Check:** the clams are held under the forearm, not just in the paws.

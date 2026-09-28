@@ -42,7 +42,21 @@ feeding-guide heroes on 2026-09-09.
 
 ## Facts awaiting images
 
-**None.** The 2026-09-27 run of five and the 2026-09-28 serval run of three were
+**Sea otter, "Pockets Under the Arms"** → `/assets/facts/sea-otter-3.jpg`.
+Animal "Sea Otter", category "Ocean", emoji 🦦. Third fact for the sea otter
+Beastfile; promote with the Beastfile or before it. Prompt under "Sea otter
+pocket fact" in `IMAGE_PROMPTS.md`.
+
+> A sea otter carries its own shopping bag. A loose patch of skin under each
+> forearm works as a pocket, so on a single dive it can collect several clams
+> or urchins, tuck them away and bring the whole haul to the surface, where it
+> eats floating on its back.
+
+Sources: US Fish and Wildlife Service, southern sea otter
+(fws.gov/species/southern-sea-otter-enhydra-lutris-nereis), and Monterey Bay
+Aquarium, sea otter.
+
+**Otherwise none.** The 2026-09-27 run of five and the 2026-09-28 serval run of three were
 promoted on 2026-09-28 as ids 334 to 341, recorded in
 `archive/docs-completed/NEEDS_IMAGE_COMPLETED_2026-09-17.md`.
 
