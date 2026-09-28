@@ -152,7 +152,7 @@ export default function Glossary() {
     const results = [];
     for (const cat of CATEGORIES) {
       for (const term of cat.terms) {
-        const inTerm = term.term.toLowerCase().includes(q);
+        const inTerm = term.term.toLowerCase().includes(q) || (term.aliases || []).some(a => a.toLowerCase().includes(q));
         const inDefinition = term.definition.toLowerCase().includes(q);
         if (inTerm || inDefinition) {
           results.push({ ...term, catEmoji: cat.emoji, catLabel: cat.label, rank: inTerm ? 0 : 1 });

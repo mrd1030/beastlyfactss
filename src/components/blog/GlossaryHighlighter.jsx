@@ -45,7 +45,7 @@ const ALIAS_MAP = new Map(); // lowercased alias -> { slug, definition, displayT
 for (const cat of CATEGORIES) {
   for (const t of cat.terms) {
     const slug = slugify(t.term);
-    for (const alias of extractAliases(t.term)) {
+    for (const alias of [...extractAliases(t.term), ...(t.aliases || [])]) {
       const key = alias.toLowerCase();
       if (!ALIAS_MAP.has(key)) {
         ALIAS_MAP.set(key, {

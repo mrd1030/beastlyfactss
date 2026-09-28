@@ -206,7 +206,7 @@ export function searchLocalContent(query) {
   GLOSSARY_CATEGORIES.forEach(cat => {
     cat.terms.forEach(t => {
       if (glossary.length >= MAX_PER_TYPE) return;
-      if (matches(t.term, variants) || matches(t.definition, variants)) {
+      if (matches(t.term, variants) || (t.aliases || []).some(a => matches(a, variants)) || matches(t.definition, variants)) {
         glossary.push({
           key: `gloss-${slugify(t.term)}`,
           type: 'Glossary',
