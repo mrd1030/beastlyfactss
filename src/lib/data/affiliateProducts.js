@@ -24,7 +24,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$11–$19",
     description: "Digital gauge that tracks enclosure temperature and humidity at a glance. Helps you catch unsafe swings fast.",
-    covers: ["Digital thermometer and hygrometer", "Hygrometer and thermometer", "Thermometer and hygrometer", "Digital hygrometer", "Digital thermometer", "A digital hygrometer", "Digital thermometer/hygrometer combo", "A digital thermometer and hygrometer", "A digital thermometer and hygrometer, since the card asks you to check both", "A digital probe thermometer and hygrometer", "Digital probe thermometer and hygrometer", "Digital hygrometer and thermometer combo", "Digital thermometer and hygrometer for the cool side", "Digital thermometer and hygrometer combo", "Digital thermometer for the room", "Digital thermometer and probe hygrometer"],
+    covers: ["Digital thermometer and hygrometer", "Hygrometer and thermometer", "Thermometer and hygrometer", "Digital hygrometer", "Digital thermometer", "A digital hygrometer", "Digital thermometer/hygrometer combo", "A digital thermometer and hygrometer", "A digital thermometer and hygrometer, since the card asks you to check both", "A digital probe thermometer and hygrometer", "Digital probe thermometer and hygrometer", "Digital hygrometer and thermometer combo", "Digital thermometer and hygrometer for the cool side", "Digital thermometer and hygrometer combo", "Digital thermometer for the room", "Digital thermometer and probe hygrometer", "Thermometers and hygrometer", "Thermometer and hygrometer combo"],
     altGroup: "thermometer-hygrometer-combo",
     pets: ["reptiles-amphibians", "small-mammals", "invertebrates"],
   },
@@ -64,7 +64,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$95–$115",
     description: "T5 UVB fixture kit that provides moderate UVB for tropical or shade-dwelling reptiles.",
-    covers: ["Strong UVB (T5 HO Arcadia 6-12%)", "UVB (T5 HO Arcadia 6-12%)", "Moderate UVB (T5 HO Arcadia 6%)", "Strong UVB (T5 HO Arcadia 6% or 12%)", "A T5 HO UVB kit, 5 to 6%", "Optional T5 HO UVB, 5.0 or 6%", "T5 HO UVB fixture and bulb"],
+    covers: ["Strong UVB (T5 HO Arcadia 6-12%)", "UVB (T5 HO Arcadia 6-12%)", "Moderate UVB (T5 HO Arcadia 6%)", "Strong UVB (T5 HO Arcadia 6% or 12%)", "A T5 HO UVB kit, 5 to 6%", "Optional T5 HO UVB, 5.0 or 6%", "T5 HO UVB fixture and bulb", "T5 HO UVB kit, 36 inch, 6% bulb"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -129,7 +129,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.3,
     price: "$25–$40",
     description: "Under-tank heater with thermostat to provide gentle belly heat without dangerous overheating.",
-    covers: ["Under-tank heater with/+ thermostat", "Heat mat with thermostat", "Heat source with thermostat", "Thermostat-controlled heat source", "Low-wattage heat lamp/mat with thermostat", "Under-tank heater with thermostat", "Under-tank heater + thermostat", "Side-mounted heat mat with a thermostat", "Under-tank heater, or an overhead halogen basking bulb", "Under-tank heat mat", "Under-tank heat mat and an on/off probe thermostat", "Side-mounted heat mat on a thermostat, or a low-wattage overhead bulb", "Side- or back-mounted heat mat", "Under-tank heat pad, overhead heat source, or both", "Heat source (under-tank heater or overhead halogen)", "Under-tank heater with a thermostat"],
+    covers: ["Under-tank heater with/+ thermostat", "Heat mat with thermostat", "Heat source with thermostat", "Thermostat-controlled heat source", "Low-wattage heat lamp/mat with thermostat", "Under-tank heater with thermostat", "Under-tank heater + thermostat", "Side-mounted heat mat with a thermostat", "Under-tank heater, or an overhead halogen basking bulb", "Under-tank heat mat", "Under-tank heat mat and an on/off probe thermostat", "Side-mounted heat mat on a thermostat, or a low-wattage overhead bulb", "Side- or back-mounted heat mat", "Under-tank heat pad, overhead heat source, or both", "Heat source (under-tank heater or overhead halogen)", "Under-tank heater with a thermostat", "Under-tank heat mat and thermostat"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -273,7 +273,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$23–$33",
     description: "Dry, low-dust bedding suited to many snakes and small mammals that prefer arid conditions.",
-    covers: ["Aspen shavings substrate", "Aspen or coconut fiber substrate", "Loose, dry, diggable substrate: soil-based mix with reptile-safe sand, aspen, or coconut fiber", "Aspen shavings or cypress mulch substrate", "Aspen bedding or cypress mulch substrate", "Aspen shavings or other suitable substrate", "Dry aspen shavings, deep enough to hold a tunnel"],
+    covers: ["Aspen shavings substrate", "Aspen or coconut fiber substrate", "Loose, dry, diggable substrate: soil-based mix with reptile-safe sand, aspen, or coconut fiber", "Aspen shavings or cypress mulch substrate", "Aspen bedding or cypress mulch substrate", "Aspen shavings or other suitable substrate", "Dry aspen shavings, deep enough to hold a tunnel", "Aspen substrate", "Aspen, full change every 3 to 6 months"],
     // Own description already says "small mammals," but pets only listed
     // reptiles-amphibians - linked from the new degu/gerbil tank-setup
     // guides, and the mismatch would have kept it off any small-mammal
@@ -558,7 +558,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$18–$30",
     description: "Submersible heater that keeps aquarium water at a stable temperature for tropical species.",
-    covers: ["Aquarium heater", "Submersible water heater", "Aquarium heater sized for the tank", "Submersible aquarium heater", "Heater, only if the room runs cooler than the high 50s", "Heater, only if the room runs below the comfortable range", "Aquarium heater sized to the tank", "Submersible heater set toward the cooler end", "Aquarium heater, roughly 3 to 5 watts per gallon", "Heater"],
+    covers: ["Aquarium heater", "Submersible water heater", "Aquarium heater sized for the tank", "Submersible aquarium heater", "Heater, only if the room runs cooler than the high 50s", "Heater, only if the room runs below the comfortable range", "Aquarium heater sized to the tank", "Submersible heater set toward the cooler end", "Aquarium heater, roughly 3 to 5 watts per gallon", "Heater", "Heater (optional, mainly to stabilize temperature)"],
     pets: ["fish", "reptiles-amphibians"],
   },
   {
@@ -571,7 +571,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$8–$15",
     description: "Air-driven sponge filter that provides gentle biofiltration without strong current.",
-    covers: ["Gentle filter", "Gentle/sponge filter", "Gentle sponge filter or a canister filter with the output diffused through a spray bar", "Sponge filter or a baffled hang-on-back", "Sponge or hang-on-back filter at 4 to 5 times tank volume per hour", "Small aquarium or sponge filter for the water section", "Gentle sponge filter", "Sponge filter, for a breeding or nursery tank", "Sponge filter, or a pre-filter sponge over an existing intake", "Gentle sponge filter, or a guarded intake on anything else", "Sponge filter, or a hang-on-back filter with adjustable flow", "Sponge filter, or a hang-on-back unit you can baffle", "Sponge filter, if fry survival matters", "Sponge filter, or a sponge pre-filter over a stronger intake", "Sponge filter if you plan to breed", "Gentle-flow filter", "Gentle filter, or a sponge filter if fry survival matters"],
+    covers: ["Gentle filter", "Gentle/sponge filter", "Gentle sponge filter or a canister filter with the output diffused through a spray bar", "Sponge filter or a baffled hang-on-back", "Sponge or hang-on-back filter at 4 to 5 times tank volume per hour", "Small aquarium or sponge filter for the water section", "Gentle sponge filter", "Sponge filter, for a breeding or nursery tank", "Sponge filter, or a pre-filter sponge over an existing intake", "Gentle sponge filter, or a guarded intake on anything else", "Sponge filter, or a hang-on-back filter with adjustable flow", "Sponge filter, or a hang-on-back unit you can baffle", "Sponge filter, if fry survival matters", "Sponge filter, or a sponge pre-filter over a stronger intake", "Sponge filter if you plan to breed", "Gentle-flow filter", "Gentle filter, or a sponge filter if fry survival matters", "Sponge filter"],
     pets: ["fish"],
   },
   {
@@ -612,7 +612,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$18–$30",
     description: "Glass aquarium tank that gives fish or amphibians more stable water volume than tiny setups.",
-    covers: ["10-20+ gallon tank", "10-20+ gallon tank (for a group)", "10+ gallon tank", "20+ gallon tank", "10 gallon tank minimum for one to three toads, larger for more", "10-gallon tank for a colony, or 5 gallons to start small", "5 gallon tank as a floor, 10 gallons for a colony", "A separate quarantine tank for new arrivals", "10 gallon tank, or 20 gallons if you're not separating the sexes", "10-gallon tank for a school of six, or a 20-gallon long for ten to fifteen", "10-gallon or larger tank", "A separate cycled tank for quarantine, a bare 10 to 20 gallons", "Glass terrarium, 10 gallons for up to two adult crabs, 5 more gallons for each crab added", "10-gallon tank for a small group, or a 20-gallon long to meet the stricter footprint", "10 to 15 gallon terrarium for a juvenile"],
+    covers: ["10-20+ gallon tank", "10-20+ gallon tank (for a group)", "10+ gallon tank", "20+ gallon tank", "10 gallon tank minimum for one to three toads, larger for more", "10-gallon tank for a colony, or 5 gallons to start small", "5 gallon tank as a floor, 10 gallons for a colony", "A separate quarantine tank for new arrivals", "10 gallon tank, or 20 gallons if you're not separating the sexes", "10-gallon tank for a school of six, or a 20-gallon long for ten to fifteen", "10-gallon or larger tank", "A separate cycled tank for quarantine, a bare 10 to 20 gallons", "Glass terrarium, 10 gallons for up to two adult crabs, 5 more gallons for each crab added", "10-gallon tank for a small group, or a 20-gallon long to meet the stricter footprint", "10 to 15 gallon terrarium for a juvenile", "10 gallon tank", "10-gallon glass tank, bare"],
     pets: ["fish", "reptiles-amphibians"],
   },
   {
@@ -640,7 +640,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$280–$400",
     description: "Reptile enclosure that provides secure living space with easier access, ventilation, and heat control.",
-    covers: ["4x2x2 ft enclosure (PVC or wood/glass)", "4x2x2 ft enclosure", "4x2x2 ft+ enclosure", "4x2x2 ft escape-proof enclosure", "4x2x2 ft PVC or wood enclosure", "3x1.5x1.5 ft to 4x2x2 ft enclosure", "4x2x2 ft front-opening PVC enclosure", "4x2x2 ft enclosure, secure and locking, PVC preferred over glass", "4x2x2 ft PVC enclosure", "A 4x2x2 ft enclosure as a floor, up to 8x4x4 for a full-grown Egyptian", "40-gallon breeder or 4x2x2 ft PVC enclosure", "Enclosed, front-opening enclosure (4x2x2 ft from hatchling through juvenile)"],
+    covers: ["4x2x2 ft enclosure (PVC or wood/glass)", "4x2x2 ft enclosure", "4x2x2 ft+ enclosure", "4x2x2 ft escape-proof enclosure", "4x2x2 ft PVC or wood enclosure", "3x1.5x1.5 ft to 4x2x2 ft enclosure", "4x2x2 ft front-opening PVC enclosure", "4x2x2 ft enclosure, secure and locking, PVC preferred over glass", "4x2x2 ft PVC enclosure", "A 4x2x2 ft enclosure as a floor, up to 8x4x4 for a full-grown Egyptian", "40-gallon breeder or 4x2x2 ft PVC enclosure", "Enclosed, front-opening enclosure (4x2x2 ft from hatchling through juvenile)", "Enclosure (4x2x2 ft, ~120 gallons)"],
     altGroup: "pvc-enclosure-4x2x2",
     pets: ["reptiles-amphibians"],
   },
@@ -668,7 +668,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.2,
     price: "$142–$180",
     description: "Tall front-opening terrarium suited to climbing reptiles, geckos, or frogs.",
-    covers: ["18x18x24 in arboreal enclosure", "18x18x24 in planted vivarium", "18x18x24 in tall planted enclosure", "18x18x24 in+ arboreal terrarium", "18x18x24 in+ arboreal terrarium (24x18x24 for a small group of two to four)", "An 18x18x24 for the colony it becomes, up to about 9", "18x18x24in vertical terrarium for a satanic leaf-tailed gecko, more for the larger species", "18x18x24 inch front-opening arboreal enclosure", "18x18x24 inch arboreal terrarium (24x24x24 preferred)"],
+    covers: ["18x18x24 in arboreal enclosure", "18x18x24 in planted vivarium", "18x18x24 in tall planted enclosure", "18x18x24 in+ arboreal terrarium", "18x18x24 in+ arboreal terrarium (24x18x24 for a small group of two to four)", "An 18x18x24 for the colony it becomes, up to about 9", "18x18x24in vertical terrarium for a satanic leaf-tailed gecko, more for the larger species", "18x18x24 inch front-opening arboreal enclosure", "18x18x24 inch arboreal terrarium (24x24x24 preferred)", "Enclosure (18x18x24 in, vertical/arboreal)"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -695,7 +695,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$120–$220",
     description: "Open-top tortoise habitat that provides floor space, airflow, and easier access for cleaning.",
-    covers: ["Outdoor enclosure or large tortoise table", "Tortoise table or outdoor pen", "Indoor tortoise table (for hatchlings/juveniles)", "4x2 ft (or larger) open-top tortoise table", "Tortoise table for the juvenile stage"],
+    covers: ["Outdoor enclosure or large tortoise table", "Tortoise table or outdoor pen", "Indoor tortoise table (for hatchlings/juveniles)", "4x2 ft (or larger) open-top tortoise table", "Tortoise table for the juvenile stage", "Indoor tortoise table (hatchling/juvenile)"],
     pets: ["reptiles-amphibians"],
   },
 
@@ -1131,7 +1131,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$111–$141",
     description: "T5 UVB fixture kit that delivers strong, even UVB for reptiles that need regular basking exposure.",
-    covers: ["T5 HO UVB fixture + bulb", "UVB bulb replacement (every 6-12 months)", "Strong desert UVB (T5 HO Arcadia Dragon 12%)", "Linear T5 HO UVB kit (Arcadia 14% Dragon or ReptiSun 10.0)", "A T5 HO UVB kit around 14%, plus a bright daylight LED bar", "Strong T5 HO UVB fixture for indoor housing"],
+    covers: ["T5 HO UVB fixture + bulb", "UVB bulb replacement (every 6-12 months)", "Strong desert UVB (T5 HO Arcadia Dragon 12%)", "Linear T5 HO UVB kit (Arcadia 14% Dragon or ReptiSun 10.0)", "A T5 HO UVB kit around 14%, plus a bright daylight LED bar", "Strong T5 HO UVB fixture for indoor housing", "UVB fixture and linear T5 HO bulb"],
     altGroup: "t5-uvb-fixture",
     pets: ["reptiles-amphibians"],
   },
@@ -1386,7 +1386,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$10–$25",
     description: "Perches in varied shapes or diameters that help exercise bird feet and prevent pressure spots.",
-    covers: ["Natural wood perches of varied diameter", "Perches of varied diameter and natural wood, no uniform dowels or sandpaper covers"],
+    covers: ["Natural wood perches of varied diameter", "Perches of varied diameter and natural wood, no uniform dowels or sandpaper covers", "Natural wood perches, three or four"],
     altGroup: "bird-perches",
     pets: ["birds"],
   },
@@ -1414,7 +1414,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$7–$12",
     description: "Clamp-on feeding cup that keeps food or water off the cage floor and easy to refill.",
-    covers: [], // clip-on cage cups work the same on small-mammal wire cages, matching the generic bird-feeding-dishes product's established cross-tag
+    covers: ["Stainless or ceramic food and water cups, two"], // clip-on cage cups work the same on small-mammal wire cages, matching the generic bird-feeding-dishes product's established cross-tag
     altGroup: "bird-feeding-dishes",
     pets: ["birds", "small-mammals"],
   },
@@ -1767,7 +1767,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$73–$93",
     description: "Thermostat that automatically adjusts heat output to hold a steadier basking temperature.",
-    covers: ["Quality thermostat", "Heat source + quality thermostat", "Thermostat for the heat source", "A dimming thermostat for the basking bulb", "Dimming thermostat"],
+    covers: ["Quality thermostat", "Heat source + quality thermostat", "Thermostat for the heat source", "A dimming thermostat for the basking bulb", "Dimming thermostat", "Dimmer/thermostat for the basking bulb"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1780,7 +1780,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.2,
     price: "$23–$33",
     description: "Thermostat that automatically adjusts heat output to hold a steadier basking temperature.",
-    covers: ["Under-tank heater with quality thermostat"],
+    covers: ["Under-tank heater with quality thermostat", "Dimming thermostat, for the basking bulb"],
     altGroup: "reptile-heat-mat-thermostat",
     pets: ["reptiles-amphibians"],
   },
@@ -1807,7 +1807,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$15–$25",
     description: "Calcium supplement dust for feeders or greens to support bones, eggs, and muscle function.",
-    covers: ["Calcium w/D3 + multivitamin", "Calcium w/D3 and a reptile multivitamin", "All-in-one calcium and vitamin powder", "Calcium and multivitamin powder, or an all-in-one"],
+    covers: ["Calcium w/D3 + multivitamin", "Calcium w/D3 and a reptile multivitamin", "All-in-one calcium and vitamin powder", "Calcium and multivitamin powder, or an all-in-one", "Calcium and vitamin supplements"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1859,7 +1859,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$49–$71",
     description: "T5 UVB fixture kit that provides moderate UVB for tropical or shade-dwelling reptiles.",
-    covers: ["Low-output UVB (T5 HO)", "Low-output UVB (T5 HO 5%)", "Low-output UVB (T5 HO, Zone 1)", "Low-output UVB (optional but beneficial)", "UVB (T5 HO 5-6%)", "Optional low-level UVB (5%)", "Low-output UVB (T5 HO in the 5 to 7% range)", "Optional low-output 2 to 5% UVB", "Optional low-output T5 UVB", "Optional low-output linear T5 UVB on a 12-hour timer", "Low-output UVB (T5 HO, around 5.0)", "Low-output T5 UVB and hood", "Low-output UVB, a 5% or forest-strength T5 bulb"],
+    covers: ["Low-output UVB (T5 HO)", "Low-output UVB (T5 HO 5%)", "Low-output UVB (T5 HO, Zone 1)", "Low-output UVB (optional but beneficial)", "UVB (T5 HO 5-6%)", "Optional low-level UVB (5%)", "Low-output UVB (T5 HO in the 5 to 7% range)", "Optional low-output 2 to 5% UVB", "Optional low-output T5 UVB", "Optional low-output linear T5 UVB on a 12-hour timer", "Low-output UVB (T5 HO, around 5.0)", "Low-output T5 UVB and hood", "Low-output UVB, a 5% or forest-strength T5 bulb", "Low-output UVB fixture and bulb", "Low-output UVB fixture (T5 HO)"],
     altGroup: "low-output-uvb-t5",
     pets: ["reptiles-amphibians"],
   },
@@ -1887,7 +1887,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$20–$28",
     description: "Complete powdered gecko diet you mix with water for fruit-eating species like cresteds.",
-    covers: ["Commercial crested gecko diet"],
+    covers: ["Commercial crested gecko diet", "Complete crested gecko diet powder", "Commercial complete gecko diet"],
     altGroup: "crested-gecko-diet",
     pets: ["reptiles-amphibians"],
   },
@@ -2063,7 +2063,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.2,
     price: "$202–$258",
     description: "Reptile enclosure that provides secure living space with easier access, ventilation, and heat control.",
-    covers: ["36x18x18 in enclosure", "36x18x18 inch enclosure, or a 40-gallon breeder", "36x18x18 inch enclosure", "A 36x18x18 inch enclosure as a floor, larger for an active species", "2x2x2 foot or 36x18x18 inch PVC or glass enclosure, front-opening and securely latching", "36x18x18 inch enclosure, or an outdoor pen with the fencing buried", "20 to 30 gallon enclosure for an adult, or 36x18x18 inches for a roomier setup"],
+    covers: ["36x18x18 in enclosure", "36x18x18 inch enclosure, or a 40-gallon breeder", "36x18x18 inch enclosure", "A 36x18x18 inch enclosure as a floor, larger for an active species", "2x2x2 foot or 36x18x18 inch PVC or glass enclosure, front-opening and securely latching", "36x18x18 inch enclosure, or an outdoor pen with the fencing buried", "20 to 30 gallon enclosure for an adult, or 36x18x18 inches for a roomier setup", "36x18x18 in enclosure (female minimum 36x18x16 in; a male needs only 30x13x13 in)", "Enclosure (36x18x18 in minimum)"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -2216,7 +2216,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.2,
     price: "$155–$195",
     description: "Screen enclosure that offers strong airflow for reptiles that do best in drier conditions.",
-    covers: ["24x24x48 in all-screen enclosure", "24x24x48 inch screen or hybrid enclosure, larger if the space allows"],
+    covers: ["24x24x48 in all-screen enclosure", "24x24x48 inch screen or hybrid enclosure, larger if the space allows", "24x24x48 in tall screen or hybrid enclosure"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -2398,7 +2398,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$55–$80",
     description: "Starter aquarium kit with tank, filter, and light for giving a betta more stable housing.",
-    covers: ["5+ gallon tank", "5+ gallon tank with a tight-fitting lid (bettas jump)"],
+    covers: ["5+ gallon tank", "5+ gallon tank with a tight-fitting lid (bettas jump)", "5-gallon-plus tank"],
     pets: ["fish"],
   },
   {
@@ -2502,7 +2502,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$36–$52",
     description: "Metal exercise pen that creates a roomy, temporary play area indoors or outside.",
-    covers: ["Foldable metal exercise pen, 4 by 4 feet or bigger"], // this is literally a dog/puppy exercise pen repurposed for rabbits here - a dog owner would recognize and want it too
+    covers: ["Foldable metal exercise pen, 4 by 4 feet or bigger", "Enclosure/exercise pen (foldable metal x-pen)"], // this is literally a dog/puppy exercise pen repurposed for rabbits here - a dog owner would recognize and want it too
     pets: ["small-mammals", "dogs-cats"],
   },
 
@@ -2646,7 +2646,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$25–$37",
     description: "Coconut-fiber substrate that holds moisture well for tropical reptiles, invertebrates, and plant roots.",
-    covers: ["Coconut coir, or coir and sphagnum moss", "Coco fiber, peat, or a soil-based mix, enough for 5 to 6 inches and deeper if you can", "Coconut fiber, or a coconut fiber and sphagnum moss blend", "Coconut fiber, cypress mulch, or leaf litter", "Coconut fiber or naturalistic soil blend for the land portion", "Coconut fiber, peat moss or orchid bark substrate", "Coconut fiber, cypress mulch, or reptile-specific soil substrate", "Coco fiber or coco husk substrate, enough for 3 to 4 inches", "Moisture-retentive substrate", "Coconut coir, peat moss or plain paper towel for substrate", "Coconut fiber, commercial reptile soil, fertilizer-free topsoil, or cypress mulch, enough for 3 to 4 inches and deeper if the enclosure allows", "Coconut fiber, bioactive soil mix, or paper towel", "Coconut fiber or bioactive substrate, enough for 2 to 3 inches", "Coconut fiber, soil, bark or paper towel substrate", "Coconut fiber, cypress mulch, or a peat-based substrate"], // the plain coconut-fiber half of hermit crab's 5:1 sand/coco mix - the already-linked Fluker's product is the premixed blend, browsable only
+    covers: ["Coconut coir, or coir and sphagnum moss", "Coco fiber, peat, or a soil-based mix, enough for 5 to 6 inches and deeper if you can", "Coconut fiber, or a coconut fiber and sphagnum moss blend", "Coconut fiber, cypress mulch, or leaf litter", "Coconut fiber or naturalistic soil blend for the land portion", "Coconut fiber, peat moss or orchid bark substrate", "Coconut fiber, cypress mulch, or reptile-specific soil substrate", "Coco fiber or coco husk substrate, enough for 3 to 4 inches", "Moisture-retentive substrate", "Coconut coir, peat moss or plain paper towel for substrate", "Coconut fiber, commercial reptile soil, fertilizer-free topsoil, or cypress mulch, enough for 3 to 4 inches and deeper if the enclosure allows", "Coconut fiber, bioactive soil mix, or paper towel", "Coconut fiber or bioactive substrate, enough for 2 to 3 inches", "Coconut fiber, soil, bark or paper towel substrate", "Coconut fiber, cypress mulch, or a peat-based substrate", "Coconut fiber substrate, about 6 inches deep (8 to 9 bags)"], // the plain coconut-fiber half of hermit crab's 5:1 sand/coco mix - the already-linked Fluker's product is the premixed blend, browsable only
     altGroup: "hermit-crab-substrate",
     pets: ["reptiles-amphibians"],
   },
@@ -2687,7 +2687,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$55–$70",
     description: "T5 UVB fixture kit that provides moderate UVB for tropical or shade-dwelling reptiles.",
-    covers: ["Low-output UVB bulb in the 5 to 7% range, optional", "Low-output UVB for a UVI of 0.6 to 1.4, never a basking-style bulb", "T5 HO UVB in the 5 to 6% range, or an Arcadia ShadeDweller kit"], // alternate only - user's gear-list research specifically named this kit for gargoyle gecko UVB
+    covers: ["Low-output UVB bulb in the 5 to 7% range, optional", "Low-output UVB for a UVI of 0.6 to 1.4, never a basking-style bulb", "T5 HO UVB in the 5 to 6% range, or an Arcadia ShadeDweller kit", "Optional low-level UVB fixture and bulb"], // alternate only - user's gear-list research specifically named this kit for gargoyle gecko UVB
     altGroup: "low-output-uvb-t5",
     pets: ["reptiles-amphibians"],
   },
@@ -3495,7 +3495,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$190–$210",
     description: "The misting system zoos and serious keepers actually use, not a consumer fogger. A pump-driven, timer-controlled system with up to 10 nozzles for even coverage across a tall planted enclosure, worth the step up from a basic fogger for species that need genuinely consistent high humidity rather than a daily spike and crash.",
-    covers: ["A misting system, manual or automated, plus a dripper", "Automated misting system", "Misting system starter kit, or a pressure sprayer for twice-daily misting", "Dripper system or automatic mister"],
+    covers: ["A misting system, manual or automated, plus a dripper", "Automated misting system", "Misting system starter kit, or a pressure sprayer for twice-daily misting", "Dripper system or automatic mister", "Misting system, manual or automated"],
     altGroup: "reptile-misting-system",
     pets: ["reptiles-amphibians"],
   },
