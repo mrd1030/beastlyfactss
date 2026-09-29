@@ -24,24 +24,25 @@ export const ITEM_PAL = {
   P: '#e0564a', p: '#f28b7f',
 };
 
+// Hides stand about half the tank's height, big enough for him to curl up in.
 function hide() {
-  const g = makeGrid(26, 14);
-  fillEllipse(g, 13, 13, 12.5, 12, 'b');
-  // Bark grain.
-  for (let x = 2; x < 25; x += 3) for (let y = 2; y < 13; y++) if (g[y][x]) g[y][x] = 'B';
-  for (let x = 4; x < 23; x++) if (g[3][x]) g[3][x] = 'h';
+  const g = makeGrid(40, 26);
+  fillEllipse(g, 20, 26, 19.5, 25, 'b');
+  // Bark grain and a lit top edge.
+  for (let x = 3; x < 38; x += 4) for (let y = 3; y < 26; y++) if (g[y][x]) g[y][x] = 'B';
+  for (let x = 8; x < 32; x++) if (g[3][x]) g[3][x] = 'h';
+  for (let x = 12; x < 28; x++) if (g[2][x]) g[2][x] = 'h';
   // The doorway.
-  fillEllipse(g, 13, 14, 6, 7.5, null);
-  fillRect(g, 0, 13, 26, 1, null);
+  fillEllipse(g, 20, 27, 9, 14, null);
   return outline(g);
 }
 
 function cave() {
-  const g = makeGrid(24, 13);
-  fillEllipse(g, 12, 13, 11.5, 11, 's');
-  fillEllipse(g, 9, 9, 6, 4, 't');
-  for (const [x, y] of [[5, 8], [15, 5], [18, 9], [11, 4], [7, 11]]) g[y][x] = 'S';
-  fillEllipse(g, 13, 13.5, 5, 6.5, null);
+  const g = makeGrid(38, 25);
+  fillEllipse(g, 19, 25, 18.5, 24, 's');
+  fillEllipse(g, 14, 12, 9, 6, 't');
+  for (const [x, y] of [[7, 14], [26, 6], [30, 14], [17, 5], [10, 20], [28, 20], [22, 10]]) g[y][x] = 'S';
+  fillEllipse(g, 20, 26, 8.5, 13, null);
   return outline(g);
 }
 
@@ -112,12 +113,15 @@ function heatRock() {
   return outline(g);
 }
 
+// A taller stack of basking slate, so he sits up closer to the lamp.
 function platform() {
-  const g = makeGrid(34, 16);
-  fillPoly(g, [[1, 16], [3, 9], [10, 6], [24, 5], [32, 8], [33, 16]], 's');
-  fillPoly(g, [[3, 9], [10, 6], [24, 5], [32, 8], [30, 10], [5, 11]], 't');
-  for (let x = 4; x < 32; x += 6) for (let y = 11; y < 16; y++) g[y][x] = 'S';
-  fillRect(g, 2, 13, 31, 1, 'S');
+  const g = makeGrid(36, 22);
+  fillPoly(g, [[1, 22], [2, 10], [9, 6], [25, 5], [34, 8], [35, 22]], 's');
+  fillPoly(g, [[2, 10], [9, 6], [25, 5], [34, 8], [32, 10], [5, 11]], 't');
+  // Slate layers.
+  for (const y of [13, 17]) for (let x = 2; x < 35; x++) g[y][x] = 'S';
+  for (let x = 5; x < 34; x += 7) for (let y = 11; y < 22; y++) if (g[y][x]) g[y][x] = 'S';
+  for (let x = 3; x < 34; x += 5) g[15][x] = 't';
   return outline(g);
 }
 

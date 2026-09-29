@@ -32,11 +32,11 @@ function tankBox(size) {
 export function slotRects(size) {
   const { L, R } = tankBox(size);
   const w = R - L;
-  const floor = (f) => ({ x: Math.round(L + w * f - 16), y: FLOOR - 22, w: 32, h: 24 });
+  const floor = (f) => ({ x: Math.round(L + w * f - 18), y: FLOOR - 28, w: 36, h: 30 });
   const all = {
-    cool: floor(0.22),
-    middle: floor(0.46),
-    warm: floor(0.64),
+    cool: floor(0.2),
+    middle: floor(0.43),
+    warm: floor(0.63),
     // Tall enough to cover a branch standing on the floor as well as a hammock.
     hang: { x: Math.round(L + w * 0.18), y: TANK_TOP + 8, w: Math.round(w * 0.44), h: FLOOR - TANK_TOP - 12 },
   };
@@ -121,9 +121,7 @@ function drawScene(ctx, game, now, frame, pose) {
   }
 
   // Basking platform under the bulb, water dish on the cool side.
-  drawGrid(ctx, itemSprite('platform'), ITEM_PAL, R - 38, FLOOR - 14);
-  const fresh = now - game.waterAt < 24 * 3600e3;
-  drawGrid(ctx, itemSprite('waterDish', fresh), ITEM_PAL, L + 4, FLOOR - 4);
+  drawGrid(ctx, itemSprite('platform'), ITEM_PAL, R - 39, FLOOR - 20);
   if (st.heat === 'rock') drawGrid(ctx, itemSprite('heatRock'), ITEM_PAL, Math.round((L + R) / 2) - 9, FLOOR - 7);
 
   // The dragon: basking on the platform when it is warm, down on the floor
@@ -142,8 +140,8 @@ function drawScene(ctx, game, now, frame, pose) {
     dx = Math.round(cx - DRAGON_W / 2);
     dy = FLOOR + 1 - (DRAGON_H - 1);
   } else if (st.basking >= bmin) {
-    dx = R - 44;
-    dy = FLOOR - 11 - 30;
+    dx = R - 45;
+    dy = FLOOR - 47;
   } else {
     dx = Math.round(L + (R - L) * 0.45 - DRAGON_W / 2);
     dy = FLOOR + 1 - 31;
@@ -166,6 +164,10 @@ function drawScene(ctx, game, now, frame, pose) {
   }
 
   if (!(sleeping && hideSlot)) drawDragon();
+
+  // The water dish sits in front, so a big hide never covers it.
+  const fresh = now - game.waterAt < 24 * 3600e3;
+  drawGrid(ctx, itemSprite('waterDish', fresh), ITEM_PAL, L + 4, FLOOR - 4);
 
   // Poop left in the tank.
   ctx.fillStyle = '#5a3a1e';
