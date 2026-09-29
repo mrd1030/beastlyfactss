@@ -126,8 +126,8 @@ export function shareText({ title, guesses, answer, won, streak }) {
   // The grid alone reads as random squares to anyone who has not played,
   // so a line says what the game is and what the result means.
   const line = won
-    ? `I guessed today's hidden animal in ${guesses.length} ${guesses.length === 1 ? 'try' : 'tries'} on Beastle, the daily animal word game. Can you beat me?`
-    : "Today's hidden animal on Beastle, the daily animal word game, beat me. Can you get it?";
+    ? `I guessed today's hidden animal in ${guesses.length} ${guesses.length === 1 ? 'try' : 'tries'} on Beastle, the daily animal word game. Give it a try!`
+    : "Today's hidden animal on Beastle, the daily animal word game, stumped me. Can you get it?";
   return `${head}\n${line}\n\n${rows.join('\n')}`;
 }
 
