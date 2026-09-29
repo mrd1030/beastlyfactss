@@ -581,41 +581,9 @@ function clueFor(entry) {
   return maskFact(first, [entry.name, fact?.animal, entry.answer].filter(Boolean));
 }
 
-// The daily and archive clue: opens after the second guess, once per
-// puzzle, so a 1/6 or 2/6 never had it. Using it (or the letter reveal)
-// puts a 💡 on the result.
+// The daily and archive clue opens after the second guess, once per puzzle,
+// so a 1/6 or 2/6 never had it.
 const CLUE_AFTER = 2;
-function Clue({ entry, guesses, done, shown, onUse }) {
-  const clue = useMemo(() => clueFor(entry), [entry]);
-  if (!clue || (done && !shown)) return null;
-  if (!shown && guesses.length < CLUE_AFTER) {
-    const left = CLUE_AFTER - guesses.length;
-    return (
-      <span className="inline-flex items-center gap-2 border border-dashed border-border text-muted-foreground font-body font-bold text-sm px-4 py-2 rounded-xl">
-        <Lightbulb className="w-4 h-4" /> {`Clue available in ${left} ${left === 1 ? 'try' : 'tries'}`}
-      </span>
-    );
-  }
-  if (!shown) {
-    return (
-      <button
-        type="button"
-        onClick={onUse}
-        className="inline-flex items-center gap-2 bg-accent/20 hover:bg-accent/30 text-foreground font-body font-bold text-sm px-4 py-2 rounded-xl transition-colors"
-      >
-        <Lightbulb className="w-4 h-4 text-accent-ink" /> Get clue?
-      </button>
-    );
-  }
-  return (
-    <div className="w-full bg-accent/15 border border-accent/40 rounded-2xl px-4 py-2.5" role="note">
-      <p className="text-sm font-body text-foreground leading-relaxed">
-        <Lightbulb className="w-4 h-4 text-accent-ink inline -mt-0.5 mr-1.5" />
-        {clue}
-      </p>
-    </div>
-  );
-}
 
 // One button, two steps: the first tap shows the clue, the second gives up.
 function HelpButton({ entry, clueShown, onClue, onGiveUp }) {
@@ -697,28 +665,62 @@ function spotLabel(answer, index) {
   return `Letter ${index + 1}`;
 }
 
-function Hint({ entry, guesses, done, hintIndex, onUse }) {
-  if (done || guesses.length < HINT_AFTER) return null;
-  if (hintIndex == null) {
-    if (firstUngreened(entry.answer, guesses) == null) return null;
+// Daily and archive help, in one strip so both are visible from the start:
+// the fact clue (after guess 2), then the letter (after guess 4). Each shows
+// a countdown until it opens, a button while it is open, and a check once
+// used. Using either puts a 💡 on the result.
+const HELP_CHIP = 'inline-flex items-center gap-1.5 font-body font-bold text-sm px-3 py-1.5 rounded-xl';
+const tries = (n) => `${n} ${n === 1 ? 'try' : 'tries'}`;
+
+function HelpChip({ label, after, guesses, used, available, onUse }) {
+  if (used) {
+    return <span className={`${HELP_CHIP} text-muted-foreground`}><Check className="w-4 h-4 text-primary" /> {label}</span>;
+  }
+  if (guesses.length < after) {
     return (
-      <button
-        type="button"
-        onClick={() => onUse(firstUngreened(entry.answer, guesses))}
-        className="inline-flex items-center gap-2 bg-accent/20 hover:bg-accent/30 text-foreground font-body font-bold text-sm px-4 py-2 rounded-xl transition-colors"
-      >
-        <Lightbulb className="w-4 h-4 text-accent-ink" /> Reveal a letter (one per animal)
-      </button>
+      <span className={`${HELP_CHIP} border border-dashed border-border text-muted-foreground`}>
+        <Lightbulb className="w-4 h-4" /> {`${label} in ${tries(after - guesses.length)}`}
+      </span>
     );
   }
+  if (!available) return null;
   return (
-    <div className="flex items-center gap-3 bg-accent/15 border border-accent/40 rounded-2xl px-4 py-2.5" role="note">
-      <Lightbulb className="w-4 h-4 text-accent-ink flex-shrink-0" />
-      <p className="text-sm font-body text-foreground">{`${spotLabel(entry.answer, hintIndex)} is`}</p>
-      <span className="w-9 h-9 flex items-center justify-center rounded-[18%] bg-primary text-primary-foreground font-display font-bold text-lg">
-        {lettersOf(entry.answer)[hintIndex]}
-      </span>
-    </div>
+    <button type="button" onClick={onUse} className={`${HELP_CHIP} bg-accent/20 hover:bg-accent/30 text-foreground transition-colors`}>
+      <Lightbulb className="w-4 h-4 text-accent-ink" /> {`Get ${label.toLowerCase()}?`}
+    </button>
+  );
+}
+
+function HelpStrip({ entry, guesses, done, clueShown, hintIndex, onClue, onHint }) {
+  const clue = useMemo(() => clueFor(entry), [entry]);
+  const nextLetter = firstUngreened(entry.answer, guesses);
+  const letterUsed = hintIndex != null;
+  return (
+    <>
+      {!done && (
+        <div className="flex flex-wrap items-center justify-center gap-2">
+          {clue && <HelpChip label="Clue" after={CLUE_AFTER} guesses={guesses} used={clueShown} available onUse={onClue} />}
+          <HelpChip label="Letter" after={HINT_AFTER} guesses={guesses} used={letterUsed} available={nextLetter != null} onUse={() => onHint(nextLetter)} />
+        </div>
+      )}
+      {clueShown && clue && (
+        <div className="w-full bg-accent/15 border border-accent/40 rounded-2xl px-4 py-2.5" role="note">
+          <p className="text-sm font-body text-foreground leading-relaxed">
+            <Lightbulb className="w-4 h-4 text-accent-ink inline -mt-0.5 mr-1.5" />
+            {clue}
+          </p>
+        </div>
+      )}
+      {letterUsed && !done && (
+        <div className="flex items-center gap-3 bg-accent/15 border border-accent/40 rounded-2xl px-4 py-2.5" role="note">
+          <Lightbulb className="w-4 h-4 text-accent-ink flex-shrink-0" />
+          <p className="text-sm font-body text-foreground">{`${spotLabel(entry.answer, hintIndex)} is`}</p>
+          <span className="w-9 h-9 flex items-center justify-center rounded-[18%] bg-primary text-primary-foreground font-display font-bold text-lg">
+            {lettersOf(entry.answer)[hintIndex]}
+          </span>
+        </div>
+      )}
+    </>
   );
 }
 
@@ -1090,8 +1092,7 @@ export default function Beastle() {
         {ready && mode === 'daily' && dailyEntry && (
           <div className="space-y-5">
             <Game entry={dailyEntry} guesses={dailyGame.guesses} done={dailyGame.done} words={words} onSubmit={submitDaily} showGroup>
-              <Clue entry={dailyEntry} guesses={dailyGame.guesses} done={dailyGame.done} shown={!!dailyGame.clueShown} onUse={takeDailyClue} />
-              <Hint entry={dailyEntry} guesses={dailyGame.guesses} done={dailyGame.done} hintIndex={dailyGame.hintIndex} onUse={takeDailyHint} />
+              <HelpStrip entry={dailyEntry} guesses={dailyGame.guesses} done={dailyGame.done} clueShown={!!dailyGame.clueShown} hintIndex={dailyGame.hintIndex} onClue={takeDailyClue} onHint={takeDailyHint} />
             </Game>
             {dailyGame.done && (
               <>
@@ -1186,8 +1187,7 @@ export default function Beastle() {
               <p className="text-xs font-body font-bold text-muted-foreground">{`Beastle #${archiveDay} · ${formatDay(archiveDay)}`}</p>
             </div>
             <Game entry={archiveEntry} guesses={archiveGame.guesses} done={archiveGame.done} words={words} onSubmit={submitArchive} showGroup>
-              <Clue entry={archiveEntry} guesses={archiveGame.guesses} done={archiveGame.done} shown={!!archiveGame.clueShown} onUse={takeArchiveClue} />
-              <Hint entry={archiveEntry} guesses={archiveGame.guesses} done={archiveGame.done} hintIndex={archiveGame.hintIndex} onUse={takeArchiveHint} />
+              <HelpStrip entry={archiveEntry} guesses={archiveGame.guesses} done={archiveGame.done} clueShown={!!archiveGame.clueShown} hintIndex={archiveGame.hintIndex} onClue={takeArchiveClue} onHint={takeArchiveHint} />
             </Game>
             {archiveGame.done && (
               <Reveal entry={archiveEntry} won={archiveGame.won} guesses={archiveGame.guesses.length}>
