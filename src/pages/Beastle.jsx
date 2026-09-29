@@ -62,7 +62,7 @@ function gridColumns(shape) {
   return shape.map((s) => (s.sep ? '0.55rem' : `repeat(${s.len}, minmax(0, 2.9rem))`)).join(' ');
 }
 
-function Board({ answer, guesses, current, done, shaking }) {
+function Board({ answer, guesses, current, done, shaking, locked = null }) {
   const shape = useMemo(() => shapeOf(answer), [answer]);
   const letters = lettersOf(answer);
   const columns = gridColumns(shape);
@@ -84,7 +84,7 @@ function Board({ answer, guesses, current, done, shaking }) {
       }
       for (let k = 0; k < part.len; k++, i++) {
         const ch = guess ? guess[i] : typing ? current[i] || '' : '';
-        const state = scored?.[i];
+        const state = scored?.[i] || (typing && locked?.has(i) ? 'correct' : undefined);
         cells.push(
           <div
             key={i}
@@ -173,6 +173,28 @@ function Game({ entry, guesses, done, words, onSubmit, showGroup = false, childr
     setTimeout(() => setShaking(false), 450);
   };
 
+  // In a two-word answer, a word a guess has already got fully green stays
+  // filled in and locked in every later row, so only the other word is
+  // typed. The typed string holds just the open letters; the full guess is
+  // put back together on Enter, so it scores and shares like any other row.
+  const locked = useMemo(() => {
+    const lengths = entry.answer.split(/[ -]/).map((w) => w.length);
+    const set = new Set();
+    if (lengths.length < 2) return set;
+    let at = 0;
+    for (const len of lengths) {
+      const range = Array.from({ length: len }, (_, k) => at + k);
+      if (guesses.some((g) => range.every((i) => g[i] === letters[i]))) range.forEach((i) => set.add(i));
+      at += len;
+    }
+    return set;
+  }, [entry.answer, guesses, letters]);
+  const openCount = letters.length - locked.size;
+  const compose = useCallback((typed) => {
+    let t = 0;
+    return [...letters].map((ch, i) => (locked.has(i) ? ch : typed[t++] || ''));
+  }, [letters, locked]);
+
   const onKey = useCallback((key) => {
     if (done) return;
     const typed = currentRef.current;
@@ -182,21 +204,22 @@ function Game({ entry, guesses, done, words, onSubmit, showGroup = false, childr
       return;
     }
     if (key === 'ENTER') {
-      const why = validate(typed, entry.answer, words);
+      const full = typed.length < openCount ? typed : compose(typed).join('');
+      const why = validate(full, entry.answer, words);
       if (why) {
         reject(why);
         return;
       }
       setMessage('');
       setTyped('');
-      onSubmit(typed);
+      onSubmit(full);
       return;
     }
-    if (/^[A-Z]$/.test(key) && typed.length < letters.length) {
+    if (/^[A-Z]$/.test(key) && typed.length < openCount) {
       setMessage('');
       setTyped(typed + key);
     }
-  }, [done, entry.answer, words, onSubmit, letters.length]);
+  }, [done, entry.answer, words, onSubmit, openCount, compose]);
 
   useEffect(() => {
     const handler = (e) => {
@@ -225,7 +248,7 @@ function Game({ entry, guesses, done, words, onSubmit, showGroup = false, childr
           ? `${words_.length} words: ${words_.map((w) => `${w.length} letters`).join(' + ')}`
           : `${letters.length} letters`}
       </p>
-      <Board answer={entry.answer} guesses={guesses} current={current} done={done} shaking={shaking} />
+      <Board answer={entry.answer} guesses={guesses} current={compose(current)} done={done} shaking={shaking} locked={locked} />
       <p className="min-h-[1.25rem] text-sm font-body font-semibold text-secondary text-center" role="status" aria-live="polite">
         {message}
       </p>
@@ -668,6 +691,7 @@ function HowToPlay() {
         <li><span className="inline-block w-4 h-4 rounded-sm bg-accent align-middle mr-2" />Gold: the letter is in the name, but somewhere else. This is Wordle&apos;s yellow.</li>
         <li><span className="inline-block w-4 h-4 rounded-sm bg-muted-foreground/40 align-middle mr-2" />Gray: the letter is not in the name.</li>
       </ul>
+      <p>In a two-word name, once one word is all green it stays filled in, and you only type the other word.</p>
       <p>Everyone gets the same animal each day, and a new one arrives at midnight Eastern. The number of letters changes every day, from short names like LION to longer ones like SALAMANDER.</p>
       <p>Each daily puzzle tells you what kind of animal it is, like a mammal or a bird. After 4 guesses you can also reveal one letter. A result that used it shows a 💡 when you share it.</p>
       <p>Unlimited lets you keep playing, at the level you pick:</p>
