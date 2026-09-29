@@ -322,7 +322,7 @@ function decorChange(s, now, decor) {
   const after = placedDecor(s).length;
   if (now - (s.logs.rearrange.at(-1) || 0) < 3600e3) {
     s.logs.rearrange[s.logs.rearrange.length - 1] = now;
-    return [{ text: after > before ? 'Added to the tank.' : 'Tank rearranged.', tone: 'good' }];
+    return [{ text: after > before ? 'Added to the tank.' : 'Tank rearranged.', tone: 'good', quiet: true }];
   }
   const recent = within(s.logs.rearrange, now, 7 * DAY).length;
   s.logs.rearrange.push(now);
@@ -342,7 +342,8 @@ function result(s, now, parts, guide) {
   const worst = parts.reduce((w, p) => (TONE_RANK[p.tone] > TONE_RANK[w] ? p.tone : w), 'good');
   const text = parts.map((p) => p.text).join(' ');
   const g = guide || parts.find((p) => p.guide && p.tone !== 'good')?.guide || parts.find((p) => p.guide)?.guide || null;
-  log(s, now, text, worst, g);
+  // Quiet parts (another move in the same rearranging session) skip the log.
+  if (!parts.every((p) => p.quiet)) log(s, now, text, worst, g);
   return { state: s, msg: { text, tone: worst, guide: g } };
 }
 

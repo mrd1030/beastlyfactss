@@ -356,18 +356,21 @@ export default function CritterKeeper() {
 
         {ready && game && (
           <>
-            <div className="bg-card border border-border rounded-2xl overflow-hidden mb-4">
-              <TankScene
-                game={game}
-                now={now}
-                pose={eating ? 'eat' : 'idle'}
-                onDecor={(decor) => doAction('decor', { decor })}
-                badge={(
-                  <span className="absolute left-2 top-2 bg-card/90 backdrop-blur px-2.5 py-1 rounded-lg text-xs font-body font-bold text-foreground pointer-events-none">
-                    {md.emoji} {md.text}
-                  </span>
-                )}
-              />
+            {/* The tank is a direct child of the page column (TankScene's
+                root is display: contents) so it can stay stuck under the
+                header while everything below it scrolls. */}
+            <TankScene
+              game={game}
+              now={now}
+              pose={eating ? 'eat' : 'idle'}
+              onDecor={(decor) => doAction('decor', { decor })}
+              badge={(
+                <span className="absolute left-2 top-2 bg-card/90 backdrop-blur px-2.5 py-1 rounded-lg text-xs font-body font-bold text-foreground pointer-events-none">
+                  {md.emoji} {md.text}
+                </span>
+              )}
+            />
+            <div className="bg-card border border-border rounded-2xl mb-4">
               <div className="p-4">
                 <div className="flex items-baseline justify-between gap-3 mb-3">
                   <h2 className="font-display font-bold text-2xl text-foreground">{game.name}</h2>

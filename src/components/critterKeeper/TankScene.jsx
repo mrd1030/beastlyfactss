@@ -350,8 +350,12 @@ export default function TankScene({ game, now, pose = 'idle', onDecor, badge }) 
   const fits = (slot) => active && DECOR[active.id].hangs === (slot === 'hang');
 
   return (
-    <div>
-      <div ref={boxRef} className="relative select-none" style={{ touchAction: drag ? 'none' : 'auto' }}>
+    <div className="contents">
+      <div
+        ref={boxRef}
+        className="sticky z-20 select-none rounded-2xl overflow-hidden border border-border shadow-md bg-card"
+        style={{ top: 'calc(56px + var(--safe-area-inset-top, 0px))', touchAction: drag ? 'none' : 'auto' }}
+      >
         <canvas
           ref={canvasRef}
           width={SW}
@@ -380,7 +384,7 @@ export default function TankScene({ game, now, pose = 'idle', onDecor, badge }) 
         {badge}
       </div>
 
-      <div className="px-3 pt-3">
+      <div className="bg-card border border-border rounded-2xl p-3 mt-3 mb-4">
         <p className="text-xs font-body font-bold text-muted-foreground mb-2">
           {picked ? `Tap a spot in the tank for the ${DECOR[picked.id].label.toLowerCase()}` : 'Drag items into the tank'}
         </p>
