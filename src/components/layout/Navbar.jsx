@@ -262,7 +262,7 @@ export default function Navbar() {
               </button>
             </form>
             {searchQuery.trim() && (
-              <div className="max-h-80 overflow-y-auto custom-scrollbar px-2 pb-2 border-t border-border/60">
+              <div className="max-h-80 overflow-y-auto overscroll-contain custom-scrollbar px-2 pb-2 border-t border-border/60">
                 {searchResults.length > 0 ? (
                   <>
                     <div className="pt-2 space-y-0.5">
@@ -289,7 +289,7 @@ export default function Navbar() {
         )}
         {mobileOpen && (
           <motion.div key="mobile-menu" {...dropdownAnimation} ref={menuRef} className="z-50 border-t border-border/60 bg-card/75 text-foreground backdrop-blur-xl overflow-hidden sm:absolute sm:top-[57px] sm:right-4 sm:w-80 sm:rounded-2xl sm:border sm:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] dark:sm:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8)] transform-gpu">
-            <div className="p-4 max-h-[calc(100vh_-_3.5rem_-_3.5rem_-_0.75rem_-_var(--safe-area-inset-top)_-_var(--safe-area-inset-bottom))] sm:max-h-[70vh] overflow-y-auto custom-scrollbar">
+            <div className="p-4 max-h-[calc(100vh_-_3.5rem_-_3.5rem_-_0.75rem_-_var(--safe-area-inset-top)_-_var(--safe-area-inset-bottom))] sm:max-h-[70vh] overflow-y-auto overscroll-contain custom-scrollbar">
               <div className="space-y-1">
                 <p className={`${groupLabelClass} pt-1`}>Keep a pet</p>
                 {[{ to: '/guides/', emoji: '\ud83d\udcd6', label: 'Care guides' }, { to: '/blog/', emoji: '\ud83d\udcf0', label: 'Articles' }, { to: '/encyclopedia/', emoji: '\ud83d\udcda', label: 'Encyclopedia' }, { to: '/gear/', emoji: '\ud83d\uded2', label: 'Gear' }, { to: '/care-packages/', emoji: '\ud83d\udce6', label: 'Care packages' }].map(item => (
