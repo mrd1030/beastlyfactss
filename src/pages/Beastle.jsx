@@ -9,7 +9,7 @@ import {
 import { STORAGE, dateForDay, liveStreak } from '@/lib/beastle/day';
 import { beatShare, fetchDailyStats, logDailyResult } from '@/lib/beastle/results';
 import { beastleShareImage } from '@/lib/beastle/shareImage';
-import { bonusRound, factFor } from '@/lib/beastle/bonus';
+import { bonusRound, factFor, maskFact } from '@/lib/beastle/bonus';
 import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { logSiteEvent } from '@/lib/siteEvents';
@@ -491,6 +491,41 @@ function ArchiveList({ today, archive, onPick }) {
   );
 }
 
+// A short clue for unlimited: the first sentence of the animal's fact (or its
+// profile blurb) with every form of its name blanked out.
+function clueFor(entry) {
+  const fact = entry.factIds[0] ? factFor(entry.factIds[0]) : null;
+  const text = fact?.fact || entry.blurb;
+  if (!text) return null;
+  const first = (text.match(/^.*?[.!?](\s|$)/)?.[0] || text).trim();
+  return maskFact(first, [entry.name, fact?.animal, entry.answer].filter(Boolean));
+}
+
+// One button, two steps: the first tap shows the clue, the second gives up.
+function HelpButton({ entry, clueShown, onClue, onGiveUp }) {
+  const clue = useMemo(() => clueFor(entry), [entry]);
+  const showClue = clueShown && clue;
+  return (
+    <div className="flex flex-col items-center gap-2">
+      {showClue && (
+        <div className="w-full bg-accent/15 border border-accent/40 rounded-2xl px-4 py-2.5" role="note">
+          <p className="text-sm font-body text-foreground leading-relaxed">
+            <Lightbulb className="w-4 h-4 text-accent-ink inline -mt-0.5 mr-1.5" />
+            {clue}
+          </p>
+        </div>
+      )}
+      <button
+        type="button"
+        onClick={clueShown || !clue ? onGiveUp : onClue}
+        className="text-xs font-body font-bold text-muted-foreground hover:text-foreground underline underline-offset-4"
+      >
+        {clueShown || !clue ? 'Still stuck? Give up and show the answer' : 'Need help? Get a clue'}
+      </button>
+    </div>
+  );
+}
+
 const LEVEL_OPTIONS = [
   ['easy', 'Easy', 'Easy: animals everyone knows, like lions and dolphins'],
   ['medium', 'Medium', 'Medium: everything in Easy, plus animals most people have heard of'],
@@ -741,6 +776,14 @@ export default function Beastle() {
     setUnlimited(next);
   }, [newUnlimited, setUnlimited]);
 
+  const showUnlimitedClue = useCallback(() => {
+    const u = unlimitedRef.current;
+    if (!u.current || u.current.done || u.current.clueShown) return;
+    const next = { ...u, current: { ...u.current, clueShown: true } };
+    unlimitedRef.current = next;
+    setUnlimited(next);
+  }, [setUnlimited]);
+
   // Ends the current unlimited animal as a miss and shows the answer.
   const giveUpUnlimited = useCallback(() => {
     const u = unlimitedRef.current;
@@ -939,11 +982,12 @@ export default function Beastle() {
               />
             </Game>
             {!unlimited.current.done && (
-              <div className="text-center">
-                <button type="button" onClick={giveUpUnlimited} className="text-xs font-body font-bold text-muted-foreground hover:text-foreground underline underline-offset-4">
-                  Give up and show the answer
-                </button>
-              </div>
+              <HelpButton
+                entry={unlimitedEntry}
+                clueShown={!!unlimited.current.clueShown}
+                onClue={showUnlimitedClue}
+                onGiveUp={giveUpUnlimited}
+              />
             )}
             {unlimited.current.done && (
               <Reveal entry={unlimitedEntry} won={unlimited.current.won} guesses={unlimited.current.guesses.length}>
