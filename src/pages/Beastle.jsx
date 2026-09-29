@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, ArrowRight, BarChart3, Bell, BellOff, Check, Delete, HelpCircle, Lightbulb, RotateCcw, Share2, BookOpen, X } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BarChart3, Bell, BellOff, Check, Delete, HelpCircle, Image as ImageIcon, Lightbulb, RotateCcw, Share2, BookOpen, X } from 'lucide-react';
 import {
   LEVELS, MAX_GUESSES, answerForDay, dayNumber, keyStates, lettersOf, loadWords, pickUnlimited,
   score, shapeOf, shareText, validate, byAnswer,
@@ -835,7 +835,11 @@ export default function Beastle() {
     return null;
   };
 
-  const share = () => {
+  // Two shares on purpose. With a picture attached, many Android targets
+  // (Messages, Instagram, Messenger) keep the picture and drop the text, so
+  // the main share is text only, the emoji grid and link that every app
+  // keeps, and the picture card is its own button on phones.
+  const share = ({ withImage = false } = {}) => {
     const streak = liveStreak(stats, today);
     const text = shareText({
       title: `Beastle #${today}`,
@@ -844,17 +848,15 @@ export default function Beastle() {
       won: dailyGame.won,
       streak,
     });
-    // Started inside the click; shareQuizResult awaits it on phones and
-    // ignores it on desktop, where the text goes to the clipboard.
-    const image = beastleShareImage({
-      day: today,
-      guesses: dailyGame.guesses,
-      answer: dailyEntry.answer,
-      won: dailyGame.won,
-      streak,
-    });
+    // Started inside the click so the share still counts as user initiated.
+    const image = withImage
+      ? beastleShareImage({ day: today, guesses: dailyGame.guesses, answer: dailyEntry.answer, won: dailyGame.won, streak })
+      : undefined;
     shareQuizResult({ title: 'Beastle | Beastly Facts', text, url: 'https://beastlyfacts.com/beastle/', image });
   };
+  const canSharePicture = typeof window !== 'undefined'
+    && !!navigator.share
+    && (navigator.userAgentData?.mobile === true || window.matchMedia?.('(pointer: coarse)').matches);
 
   const pageTitle = 'Beastle: The Daily Animal Word Game | Beastly Facts';
   const pageDescription = 'Guess the hidden animal in six tries. A new animal every day, the same one for everyone, plus a bonus fact round and unlimited practice.';
@@ -938,9 +940,14 @@ export default function Beastle() {
                 <Reveal entry={dailyEntry} won={dailyGame.won} guesses={dailyGame.guesses.length}>
                   <EveryoneToday day={today} guesses={dailyGame.won ? dailyGame.guesses.length : null} />
                   <div className="flex flex-col sm:flex-row gap-2 justify-center mt-4">
-                    <button type="button" onClick={share} className="inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground font-body font-bold text-sm px-5 py-2.5 rounded-2xl">
+                    <button type="button" onClick={() => share()} className="inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground font-body font-bold text-sm px-5 py-2.5 rounded-2xl">
                       <Share2 className="w-4 h-4" /> Share result
                     </button>
+                    {canSharePicture && (
+                      <button type="button" onClick={() => share({ withImage: true })} className="inline-flex items-center justify-center gap-2 bg-muted text-foreground font-body font-bold text-sm px-5 py-2.5 rounded-2xl">
+                        <ImageIcon className="w-4 h-4" /> Share picture
+                      </button>
+                    )}
                   </div>
                   <p className="text-xs text-muted-foreground font-body mt-3">
                     {'Next Beastle in '}<Countdown />
