@@ -22,7 +22,11 @@ export const GUIDES = {
 export const START_AGE_DAYS = 120;
 export const AGE_SPEED = 7;
 export const ADULT_AGE_DAYS = 548;
-export const SETTLE_DAYS = 7; // wait 7 to 14 days before handling
+// The guides say to wait 7 to 14 days before handling. A real day is a
+// dragon week here, so that is one real day.
+export const SETTLE_DAYS = 1;
+// Rearranging freely while setting up the tank, in real days.
+export const SETUP_GRACE_DAYS = 7;
 export const LIGHTS_ON = 8;
 export const LIGHTS_OFF = 21; // 13 hours, inside the guides' 10 to 14
 

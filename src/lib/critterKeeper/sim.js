@@ -1,6 +1,6 @@
 import {
   ADULT_AGE_DAYS, AGE_SPEED, CONDITIONS, DUSTS, ENRICHMENT, GROWTH, GUIDES, HANDLE_LENGTHS, INSECTS,
-  LIGHTS_OFF, LIGHTS_ON, MARKS, GROWTH_BANDS, MBD_STAGES, VET_COOLDOWN_HOURS, PLANTS, RANGES, SETTLE_DAYS, START_AGE_DAYS, STARTER_SETUP,
+  LIGHTS_OFF, LIGHTS_ON, MARKS, GROWTH_BANDS, MBD_STAGES, VET_COOLDOWN_HOURS, PLANTS, RANGES, SETTLE_DAYS, SETUP_GRACE_DAYS, START_AGE_DAYS, STARTER_SETUP,
   SUBSTRATES, TANKS, UVB_MOUNTS, UVB_TYPES, BIO_ESTABLISH_DAYS, TANK_SLOTS,
 } from '@/lib/critterKeeper/rules';
 import { DECOR } from '@/lib/critterKeeper/sprites/items';
@@ -376,7 +376,7 @@ function decorChange(s, now, { decor, free, layers }) {
   const recent = within(s.logs.rearrange, now, 7 * DAY).length;
   s.logs.rearrange.push(now);
   // Setting up in the first week never counts against him.
-  if (recent && after <= before && daysHome(s, now) >= SETTLE_DAYS) {
+  if (recent && after <= before && daysHome(s, now) >= SETUP_GRACE_DAYS) {
     s.h.stress += 15;
     return [{ text: 'He already had a new layout this week. Rearrange occasionally, not constantly.', tone: 'warn', guide: 'enrichment' }];
   }
@@ -636,8 +636,8 @@ function handle(s, now, { length }) {
   if (daysHome(s, now) < SETTLE_DAYS) {
     s.h.stress += 30;
     s.m.trust -= 5;
-    const left = Math.ceil(SETTLE_DAYS - daysHome(s, now));
-    return [{ text: `He puffs up and darkens his beard. He is still settling in: wait 7 to 14 days after bringing a dragon home before handling. (${left} more day${left === 1 ? '' : 's'})`, tone: 'warn', guide: 'handling' }];
+    const left = Math.max(1, Math.ceil((SETTLE_DAYS - daysHome(s, now)) * 24));
+    return [{ text: `He puffs up and darkens his beard. He is still settling in: wait 7 to 14 days after bringing a dragon home before handling. That is about ${left} more hour${left === 1 ? '' : 's'} here.`, tone: 'warn', guide: 'handling' }];
   }
   s.logs.handles.push(now);
   if (s.cond.stress) {
@@ -670,7 +670,7 @@ function enrich(s, now, { kind }) {
   }
   if (kind === 'roam' && daysHome(s, now) < SETTLE_DAYS) {
     s.h.stress += 10;
-    return [{ text: 'He is still settling in. Give him a week in his tank first.', tone: 'warn', guide: 'handling' }];
+    return [{ text: 'He is still settling in. Give him his first week (a day here) in his tank first.', tone: 'warn', guide: 'handling' }];
   }
   s.m.fun += kind === 'roam' ? 35 : 30;
   if (kind === 'roam') s.h.fat -= 3;
