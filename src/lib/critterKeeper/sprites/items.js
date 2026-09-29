@@ -26,16 +26,9 @@ export const ITEM_PAL = {
   P: '#e0564a', p: '#f28b7f',
 };
 
-// Hides are little huts: about half the tank's height, big enough for him
-// to curl up in, with a dark, solid doorway. The 'shell' variant leaves the
-// doorway empty, for drawing him inside it.
-function hut(g, part) {
-  const out = outline(g);
-  if (part === 'shell') return out.map((row) => row.map((k) => (k === 'v' || k === 'u' ? null : k)));
-  return out;
-}
-
-function hide(part) {
+// Hides are little huts: about half the tank's height, with a dark, solid
+// doorway ('v') that he peeks out of when he sleeps inside.
+function hide() {
   const g = makeGrid(40, 26);
   fillEllipse(g, 20, 26, 19.5, 25, 'b');
   // Bark grain and a lit top edge.
@@ -45,17 +38,17 @@ function hide(part) {
   // The doorway, dark inside with a shadowed rim.
   fillEllipse(g, 20, 27, 9, 14, 'u');
   fillEllipse(g, 20, 28, 8, 13, 'v');
-  return hut(g, part);
+  return outline(g);
 }
 
-function cave(part) {
+function cave() {
   const g = makeGrid(38, 25);
   fillEllipse(g, 19, 25, 18.5, 24, 's');
   fillEllipse(g, 14, 12, 9, 6, 't');
   for (const [x, y] of [[7, 14], [26, 6], [30, 14], [17, 5], [10, 20], [28, 20], [22, 10]]) g[y][x] = 'S';
   fillEllipse(g, 20, 26, 8.5, 13, 'u');
   fillEllipse(g, 20, 27, 7.5, 12, 'v');
-  return hut(g, part);
+  return outline(g);
 }
 
 // Free-placed items are drawn from their shapes after rotating them, so

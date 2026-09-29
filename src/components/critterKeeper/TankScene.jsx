@@ -159,11 +159,17 @@ function drawScene(ctx, game, now, frame, pose, free = game.free || {}, selected
   const g = buildDragon({ lift, pose: sleeping ? 'sleep' : pose, blink, mood: moodOf(game, now), zs: false });
   const slots = slotRects(st.tank);
   const hideSlot = Object.entries(game.decor || {}).find(([slot, id]) => DECOR[id]?.hide && slots[slot])?.[0];
+  const items = layoutItems(game, free);
+  const hut = sleeping ? items.find((it) => it.slot === hideSlot) : null;
   let dx;
   let dy;
-  if (sleeping) {
-    const cx = hideSlot ? slots[hideSlot].x + slots[hideSlot].w / 2 + 2 : L + (R - L) * 0.42;
-    dx = Math.round(cx - DRAGON_W / 2);
+  if (hut) {
+    // Asleep in a hut: his sleeping face sits in the doorway (the sprite's
+    // face is around 35,17), and only the part inside the opening is drawn.
+    dx = hut.x + 20 - 35;
+    dy = hut.y + 21 - 17;
+  } else if (sleeping) {
+    dx = Math.round(L + (R - L) * 0.42 - DRAGON_W / 2);
     dy = FLOOR + 1 - (DRAGON_H - 1);
   } else if (st.basking >= bmin) {
     dx = R - 45;
@@ -172,16 +178,20 @@ function drawScene(ctx, game, now, frame, pose, free = game.free || {}, selected
     dx = Math.round(L + (R - L) * 0.45 - DRAGON_W / 2);
     dy = FLOOR + 1 - 31;
   }
-  const drawDragon = () => drawGrid(ctx, g, dragonPalette(moodOf(game, now)), dx, dy);
+  const pal = dragonPalette(moodOf(game, now));
 
-  const items = layoutItems(game, free);
   for (const it of items) {
     drawGrid(ctx, it.g, ITEM_PAL, it.x, it.y);
-    // Asleep in a hut: the dark inside, then him, then the hut's walls over
-    // him, so he shows curled up in the doorway.
-    if (sleeping && it.slot === hideSlot) {
-      drawDragon();
-      drawGrid(ctx, itemSprite(it.id, 'shell'), ITEM_PAL, it.x, it.y);
+    if (it === hut) {
+      // Only his pixels that land on the dark inside of the doorway.
+      for (let y = 0; y < DRAGON_H; y++) {
+        for (let x = 0; x < DRAGON_W; x++) {
+          const k = g[y][x];
+          if (!k || it.g[dy + y - it.y]?.[dx + x - it.x] !== 'v') continue;
+          ctx.fillStyle = pal[k];
+          ctx.fillRect(dx + x, dy + y, 1, 1);
+        }
+      }
     }
     if (it.id === selected) {
       // Marching-ants box around the item picked for moving or layering.
@@ -193,7 +203,7 @@ function drawScene(ctx, game, now, frame, pose, free = game.free || {}, selected
     }
   }
 
-  if (!(sleeping && hideSlot)) drawDragon();
+  if (!hut) drawGrid(ctx, g, pal, dx, dy);
 
   // The water dish sits in front, so a big hide never covers it.
   const fresh = now - game.waterAt < 24 * 3600e3;
@@ -215,8 +225,9 @@ function drawScene(ctx, game, now, frame, pose, free = game.free || {}, selected
     ctx.fillRect(L, TANK_TOP, R - L, FLOOR + 8 - TANK_TOP);
     // Floating Zs above him.
     ctx.fillStyle = '#9cc0ff';
-    const zx = dx + 34;
-    const zy = dy + 2 - (frame % 4);
+    // Above the hut when he is in one, otherwise above his head.
+    const zx = hut ? hut.x + Math.round(hut.g[0].length / 2) + 4 : dx + 34;
+    const zy = (hut ? hut.y - 7 : dy + 2) - (frame % 4);
     [[0, 0], [1, 0], [2, 0], [2, 1], [1, 2], [0, 3], [1, 3], [2, 3]].forEach(([a, b]) => ctx.fillRect(zx + a, zy + b, 1, 1));
   }
 

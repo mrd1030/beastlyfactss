@@ -269,6 +269,9 @@ function step(s, t, dt) {
 export function tick(state, now) {
   if (!state) return state;
   const s = JSON.parse(JSON.stringify(state));
+  // A clock that went backward (a changed device clock) restarts from now
+  // instead of freezing him until real time catches up.
+  if (s.lastTick > now) s.lastTick = now;
   s.decor = s.decor || {};
   s.free = s.free || {};
   s.bio = s.bio || null;
