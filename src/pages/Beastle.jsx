@@ -581,11 +581,13 @@ function clueFor(entry) {
   return maskFact(first, [entry.name, fact?.animal, entry.answer].filter(Boolean));
 }
 
-// The daily and archive clue: usable from the first guess, once per puzzle.
-// Using it (or the letter reveal) puts a 💡 on the result.
-function Clue({ entry, done, shown, onUse }) {
+// The daily and archive clue: opens after the second guess, once per
+// puzzle, so a 1/6 or 2/6 never had it. Using it (or the letter reveal)
+// puts a 💡 on the result.
+const CLUE_AFTER = 2;
+function Clue({ entry, guesses, done, shown, onUse }) {
   const clue = useMemo(() => clueFor(entry), [entry]);
-  if (!clue || (done && !shown)) return null;
+  if (!clue || (done && !shown) || (!shown && guesses.length < CLUE_AFTER)) return null;
   if (!shown) {
     return (
       <button
@@ -729,7 +731,7 @@ function HowToPlay() {
       </ul>
       <p>In a two-word name, once one word is all green it stays filled in, and you only type the other word.</p>
       <p>Everyone gets the same animal each day, and a new one arrives at midnight Eastern. The number of letters changes every day, from short names like LION to longer ones like SALAMANDER.</p>
-      <p>Each daily puzzle tells you what kind of animal it is, like a mammal or a bird. If you want more help, you can get a clue from a real fact about the animal at any time, and after 4 guesses you can reveal one letter. A result that used either shows a 💡 when you share it.</p>
+      <p>Each daily puzzle tells you what kind of animal it is, like a mammal or a bird. If you want more help, you can get a clue from a real fact about the animal after 2 guesses, and after 4 guesses you can reveal one letter. A result that used either shows a 💡 when you share it.</p>
       <p>Unlimited lets you keep playing, at the level you pick:</p>
       <ul className="space-y-1">
         {LEVEL_OPTIONS.map(([id, , text]) => <li key={id}>{text}.</li>)}
@@ -833,7 +835,8 @@ export default function Beastle() {
     });
     recordQuizCompletion();
     if (won) recordBeastleStreak(streak);
-    logSiteEvent('themed_quiz', `Beastle #${today}: ${won ? guesses.length : 'X'}/${MAX_GUESSES} (${dailyEntry.name})`);
+    const helps = [next.clueShown && 'clue', next.hintIndex != null && 'letter'].filter(Boolean);
+    logSiteEvent('themed_quiz', `Beastle #${today}: ${won ? guesses.length : 'X'}/${MAX_GUESSES} (${dailyEntry.name})${helps.length ? ` 💡 used ${helps.join(' + ')}` : ' no help'}`);
     if (won) celebrate();
     setShowStats(true);
   }, [dailyEntry, today, stats, setDaily, setStats, recordQuizCompletion, recordBeastleStreak]);
@@ -913,7 +916,7 @@ export default function Beastle() {
   // then carries a 💡 in the share so a hinted solve reads as one.
   const takeDailyClue = useCallback(() => {
     const game = dailyRef.current;
-    if (game.done || game.clueShown) return;
+    if (game.done || game.clueShown || game.guesses.length < CLUE_AFTER) return;
     const next = { ...game, day: today, clueShown: true };
     dailyRef.current = next;
     setDaily(next);
@@ -922,7 +925,7 @@ export default function Beastle() {
   const takeArchiveClue = useCallback(() => {
     const all = archiveRef.current;
     const game = archiveRecord(all, archiveDay) || EMPTY_REPLAY;
-    if (game.done || game.clueShown) return;
+    if (game.done || game.clueShown || game.guesses.length < CLUE_AFTER) return;
     const next = { ...all, [archiveDay]: { ...game, answer: answerForDay(archiveDay).answer, clueShown: true } };
     archiveRef.current = next;
     setArchive(next);
@@ -1079,7 +1082,7 @@ export default function Beastle() {
         {ready && mode === 'daily' && dailyEntry && (
           <div className="space-y-5">
             <Game entry={dailyEntry} guesses={dailyGame.guesses} done={dailyGame.done} words={words} onSubmit={submitDaily} showGroup>
-              <Clue entry={dailyEntry} done={dailyGame.done} shown={!!dailyGame.clueShown} onUse={takeDailyClue} />
+              <Clue entry={dailyEntry} guesses={dailyGame.guesses} done={dailyGame.done} shown={!!dailyGame.clueShown} onUse={takeDailyClue} />
               <Hint entry={dailyEntry} guesses={dailyGame.guesses} done={dailyGame.done} hintIndex={dailyGame.hintIndex} onUse={takeDailyHint} />
             </Game>
             {dailyGame.done && (
@@ -1175,7 +1178,7 @@ export default function Beastle() {
               <p className="text-xs font-body font-bold text-muted-foreground">{`Beastle #${archiveDay} · ${formatDay(archiveDay)}`}</p>
             </div>
             <Game entry={archiveEntry} guesses={archiveGame.guesses} done={archiveGame.done} words={words} onSubmit={submitArchive} showGroup>
-              <Clue entry={archiveEntry} done={archiveGame.done} shown={!!archiveGame.clueShown} onUse={takeArchiveClue} />
+              <Clue entry={archiveEntry} guesses={archiveGame.guesses} done={archiveGame.done} shown={!!archiveGame.clueShown} onUse={takeArchiveClue} />
               <Hint entry={archiveEntry} guesses={archiveGame.guesses} done={archiveGame.done} hintIndex={archiveGame.hintIndex} onUse={takeArchiveHint} />
             </Game>
             {archiveGame.done && (
