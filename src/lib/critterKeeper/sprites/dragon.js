@@ -32,7 +32,14 @@ export const TILT_H = 52;
 export const TILT_ANCHOR = { x: 32, y: 38 };
 const FEET = { x: 19, y: 29.5 };
 
-function tiltGrid(g, angle) {
+// He grows: about 60% of adult size when he arrives at 4 months, full size
+// at 18 months.
+export function dragonScale(ageDays) {
+  const t = Math.min(1, Math.max(0, (ageDays - 120) / 428));
+  return 0.6 + 0.4 * t;
+}
+
+function tiltGrid(g, angle, scale = 1) {
   const out = makeGrid(TILT_W, TILT_H);
   const cos = Math.cos(angle);
   const sin = Math.sin(angle);
@@ -40,8 +47,8 @@ function tiltGrid(g, angle) {
     for (let ox = 0; ox < TILT_W; ox++) {
       const dx = ox + 0.5 - TILT_ANCHOR.x;
       const dy = oy + 0.5 - TILT_ANCHOR.y;
-      const sx = Math.floor(FEET.x + dx * cos + dy * sin);
-      const sy = Math.floor(FEET.y - dx * sin + dy * cos);
+      const sx = Math.floor(FEET.x + (dx * cos + dy * sin) / scale);
+      const sy = Math.floor(FEET.y + (-dx * sin + dy * cos) / scale);
       out[oy][ox] = g[sy]?.[sx] ?? null;
     }
   }
@@ -49,9 +56,10 @@ function tiltGrid(g, angle) {
 }
 
 // pose: 'idle' | 'eat' | 'sleep'. lift bobs the body a pixel; the feet stay put.
-// tilt (radians, negative is head up) rotates him around his feet into a
-// TILT_W x TILT_H grid.
-export function buildDragon({ lift = 0, pose = 'idle', blink = false, mood = 'normal', zs = true, tilt = 0 } = {}) {
+// tilt (radians, negative is head up) and scale (his size for his age)
+// transform him around his feet into a TILT_W x TILT_H grid.
+// anchored always returns the feet-anchored grid, even at full size, no tilt.
+export function buildDragon({ lift = 0, pose = 'idle', blink = false, mood = 'normal', zs = true, tilt = 0, scale = 1, anchored = false } = {}) {
   const W = DRAGON_W;
   const H = DRAGON_H;
   const g = makeGrid(W, H);
@@ -172,7 +180,7 @@ export function buildDragon({ lift = 0, pose = 'idle', blink = false, mood = 'no
     drawTail(false, 0.72);
   }
 
-  if (tilt) return outline(tiltGrid(g, tilt), 'o', ['c']);
+  if (tilt || scale !== 1 || anchored) return outline(tiltGrid(g, tilt, scale), 'o', ['c']);
 
   const out = g.map((row) => row.slice());
   for (let y = 0; y < H; y++) {

@@ -1,10 +1,10 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Check, RotateCcw, RotateCw } from 'lucide-react';
 import { drawGrid } from '@/lib/critterKeeper/pixel';
-import { DRAGON_H, DRAGON_W, TILT_ANCHOR, TILT_W, buildDragon, dragonPalette } from '@/lib/critterKeeper/sprites/dragon';
+import { DRAGON_H, DRAGON_W, TILT_ANCHOR, TILT_H, TILT_W, buildDragon, dragonPalette, dragonScale } from '@/lib/critterKeeper/sprites/dragon';
 import { DECOR, ITEM_PAL, itemSprite } from '@/lib/critterKeeper/sprites/items';
 import { TANK_SLOTS } from '@/lib/critterKeeper/rules';
-import { baskRange, isDay } from '@/lib/critterKeeper/sim';
+import { ageDays, baskRange, isDay } from '@/lib/critterKeeper/sim';
 
 // The pixel tank. Everything is drawn at a small logical size and scaled up
 // with image-rendering: pixelated, so one logical unit is one art pixel.
@@ -152,33 +152,41 @@ function drawScene(ctx, game, now, frame, pose, free = game.free || {}, selected
 
   // The dragon: basking on the platform when it is warm, down on the floor
   // when it is cold, curled up asleep at night, inside his hide if he has one.
+  // He is drawn at his size for his age, every pose placed by the point
+  // between his feet.
+  const scale = dragonScale(ageDays(game, now));
   const [bmin] = baskRange(game, now);
   const sleeping = !day;
   const lift = !sleeping && frame % 2 ? 1 : 0;
   const blink = !sleeping && frame % 9 === 8;
-  const g = buildDragon({ lift, pose: sleeping ? 'sleep' : pose, blink, mood: moodOf(game, now), zs: false });
+  const mood = moodOf(game, now);
+  const pal = dragonPalette(mood);
+  const body = (opts) => buildDragon({ lift, blink, mood, zs: false, scale, anchored: true, ...opts });
   const slots = slotRects(st.tank);
   const hideSlot = Object.entries(game.decor || {}).find(([slot, id]) => DECOR[id]?.hide && slots[slot])?.[0];
   const items = layoutItems(game, free);
   const hut = sleeping ? items.find((it) => it.slot === hideSlot) : null;
-  let dx;
-  let dy;
+  let fx;
+  let fy;
   if (hut) {
-    // Asleep in a hut: his sleeping face sits in the doorway (the sprite's
-    // face is around 35,17), and only the part inside the opening is drawn.
-    dx = hut.x + 20 - 35;
-    dy = hut.y + 21 - 17;
+    // Asleep in a hut: his sleeping face (16 across and 12.5 up from his
+    // feet at full size) sits in the doorway; only what is inside the
+    // opening is drawn.
+    fx = hut.x + 20 - 16 * scale;
+    fy = hut.y + 21 + 12.5 * scale;
   } else if (sleeping) {
-    dx = Math.round(L + (R - L) * 0.42 - DRAGON_W / 2);
-    dy = FLOOR + 1 - (DRAGON_H - 1);
+    fx = L + (R - L) * 0.42 - 3;
+    fy = FLOOR - 1.5;
   } else if (st.basking >= bmin) {
-    dx = R - 45;
-    dy = FLOOR - 46;
+    fx = R - 26;
+    fy = FLOOR - 16.5;
   } else {
-    dx = Math.round(L + (R - L) * 0.45 - DRAGON_W / 2);
-    dy = FLOOR + 1 - 31;
+    fx = L + (R - L) * 0.45 - 3;
+    fy = FLOOR - 0.5;
   }
-  const pal = dragonPalette(moodOf(game, now));
+  const grid = body({ pose: sleeping ? 'sleep' : pose });
+  const ox = Math.round(fx - TILT_ANCHOR.x);
+  const oy = Math.round(fy - TILT_ANCHOR.y);
 
   // Perched on the branch: tilted along it, facing uphill, feet on the bark.
   // Drawn right after the branch, so whatever is in front of the branch is
@@ -194,11 +202,10 @@ function drawScene(ctx, game, now, frame, pose, free = game.free || {}, selected
     const tilt = Math.max(-1.1, Math.min(1.1, Math.atan2(up.y, right ? up.x : -up.x)));
     const n = d.x >= 0 ? { x: d.y, y: -d.x } : { x: -d.y, y: d.x };
     const [px, py] = branch.g.toSprite(32, 17);
-    const fx = branch.x + px + n.x * 2.6;
-    const fy = branch.y + py + n.y * 2.6;
-    const tg = buildDragon({ lift, blink, mood: moodOf(game, now), tilt });
+    const bx = branch.x + px + n.x * 2.6;
+    const by = branch.y + py + n.y * 2.6;
     const ax = right ? TILT_ANCHOR.x : TILT_W - 1 - TILT_ANCHOR.x;
-    drawGrid(ctx, tg, pal, Math.round(fx - ax), Math.round(fy - TILT_ANCHOR.y), { flip: !right });
+    drawGrid(ctx, body({ tilt }), pal, Math.round(bx - ax), Math.round(by - TILT_ANCHOR.y), { flip: !right });
   });
 
   for (const it of items) {
@@ -206,12 +213,12 @@ function drawScene(ctx, game, now, frame, pose, free = game.free || {}, selected
     if (perch && it.id === 'branch') perch();
     if (it === hut) {
       // Only his pixels that land on the dark inside of the doorway.
-      for (let y = 0; y < DRAGON_H; y++) {
-        for (let x = 0; x < DRAGON_W; x++) {
-          const k = g[y][x];
-          if (!k || it.g[dy + y - it.y]?.[dx + x - it.x] !== 'v') continue;
+      for (let y = 0; y < TILT_H; y++) {
+        for (let x = 0; x < TILT_W; x++) {
+          const k = grid[y][x];
+          if (!k || it.g[oy + y - it.y]?.[ox + x - it.x] !== 'v') continue;
           ctx.fillStyle = pal[k];
-          ctx.fillRect(dx + x, dy + y, 1, 1);
+          ctx.fillRect(ox + x, oy + y, 1, 1);
         }
       }
     }
@@ -225,7 +232,7 @@ function drawScene(ctx, game, now, frame, pose, free = game.free || {}, selected
     }
   }
 
-  if (!hut && !perch) drawGrid(ctx, g, pal, dx, dy);
+  if (!hut && !perch) drawGrid(ctx, grid, pal, ox, oy);
 
   // The water dish sits in front, so a big hide never covers it.
   const fresh = now - game.waterAt < 24 * 3600e3;
@@ -248,8 +255,8 @@ function drawScene(ctx, game, now, frame, pose, free = game.free || {}, selected
     // Floating Zs above him.
     ctx.fillStyle = '#9cc0ff';
     // Above the hut when he is in one, otherwise above his head.
-    const zx = hut ? hut.x + Math.round(hut.g[0].length / 2) + 4 : dx + 34;
-    const zy = (hut ? hut.y - 7 : dy + 2) - (frame % 4);
+    const zx = hut ? hut.x + Math.round(hut.g[0].length / 2) + 4 : Math.round(fx + 15 * scale);
+    const zy = (hut ? hut.y - 7 : Math.round(fy - 28 * scale)) - (frame % 4);
     [[0, 0], [1, 0], [2, 0], [2, 1], [1, 2], [0, 3], [1, 3], [2, 3]].forEach(([a, b]) => ctx.fillRect(zx + a, zy + b, 1, 1));
   }
 
