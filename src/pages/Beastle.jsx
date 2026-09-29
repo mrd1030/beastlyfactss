@@ -14,7 +14,7 @@ import { logSiteEvent } from '@/lib/siteEvents';
 import { shareQuizResult } from '@/lib/utils/quizShareImage';
 import { SITE_TIMEZONE } from '@/lib/utils/date';
 import { useIsMobileViewport } from '@/lib/hooks/useIsMobileViewport';
-import { getBeastleReminder, isPushSupported, setBeastleReminder } from '@/lib/pushNotifications';
+import { getBeastleReminder, getExistingSubscription, isPushSupported, setBeastleReminder } from '@/lib/pushNotifications';
 
 const EMPTY_STATS = { played: 0, wins: 0, streak: 0, maxStreak: 0, lastWinDay: null, dist: [0, 0, 0, 0, 0, 0] };
 const EMPTY_UNLIMITED = { seen: [], current: null, played: 0, wins: 0 };
@@ -362,11 +362,15 @@ function BeastleReminder() {
   const [on, setOn] = useState(false);
   const [busy, setBusy] = useState(false);
   const [failed, setFailed] = useState(false);
+  // Whether Beastly Facts notifications are already on for this device. Only
+  // people without them need telling that the reminder switches them on.
+  const [subscribed, setSubscribed] = useState(true);
 
   useEffect(() => {
     if (!isPushSupported()) return;
     setSupported(true);
     setOn(getBeastleReminder());
+    getExistingSubscription().then((sub) => setSubscribed(!!sub)).catch(() => setSubscribed(false));
   }, []);
 
   if (!isMobile || !supported) return null;
@@ -375,8 +379,10 @@ function BeastleReminder() {
     setBusy(true);
     setFailed(false);
     const ok = await setBeastleReminder(!on).catch(() => false);
-    if (ok) setOn(!on);
-    else setFailed(true);
+    if (ok) {
+      setOn(!on);
+      setSubscribed(true);
+    } else setFailed(true);
     setBusy(false);
   };
 
@@ -390,9 +396,9 @@ function BeastleReminder() {
         <p className="text-xs text-muted-foreground font-body mt-0.5">
           {failed
             ? "That didn't work. Check that notifications are allowed for this site."
-            : on
+            : on || subscribed
               ? 'A ping at 9am Eastern when the new animal arrives.'
-              : 'A ping at 9am Eastern when the new animal arrives. Also turns on Beastly Facts notifications if they are off.'}
+              : 'A ping at 9am Eastern when the new animal arrives. Also turns on Beastly Facts notifications.'}
         </p>
       </div>
       <button
