@@ -149,6 +149,21 @@ const DAILY_SHORT = {
 };
 const letterCount = (answer) => answer.replace(/[ -]/g, '').length;
 
+// The daily's free hint: which kind of animal it is. Encyclopedia categories
+// and Beastfile groups map straight across, except Beastlypedia's Marine
+// Life, which mixes fish, mammals and invertebrates, so it goes by id.
+const ENC_GROUP = {
+  Amphibians: 'amphibian', Birds: 'bird', Cats: 'mammal', Dogs: 'mammal', Fish: 'fish',
+  Geckos: 'reptile', Invertebrates: 'invertebrate', Lizards: 'reptile',
+  'Small Mammals': 'mammal', Snakes: 'reptile', 'Turtles & Tortoises': 'reptile',
+};
+const BP_GROUP = { Mammals: 'mammal', Reptiles: 'reptile', Amphibians: 'amphibian', Birds: 'bird' };
+const MARINE_GROUP = {
+  'manta-ray': 'fish', 'leafy-sea-dragon': 'fish', dolphin: 'mammal', clownfish: 'fish',
+  'immortal-jellyfish': 'invertebrate', seahorse: 'fish', shark: 'fish', octopus: 'invertebrate',
+  'mantis-shrimp': 'invertebrate', cuttlefish: 'invertebrate', 'humpback-whale': 'mammal', 'sea-otter': 'mammal',
+};
+
 // Days are numbered from launch in the site's timezone (America/New_York):
 // Beastle #1 is this date.
 // Must match EPOCH in src/lib/beastle/day.js.
@@ -267,6 +282,7 @@ async function main() {
       emoji: a.emoji,
       image: a.image || null,
       link: `/encyclopedia/animal/${a.id}/`,
+      group: ENC_GROUP[a.category] || null,
       blurb: firstSentence(a.bio?.overview),
     }, true);
   }
@@ -279,6 +295,7 @@ async function main() {
       emoji: null,
       image: b.heroImage || null,
       link: `/beastlypedia/${b.id}/`,
+      group: BP_GROUP[b.group] || MARINE_GROUP[b.id] || null,
       blurb: b.funFacts?.[0] || b.tagline || '',
     }, true);
   }
@@ -371,6 +388,8 @@ async function main() {
   if (unknown.length) console.log(`difficulty lists name answers not in the pool: ${unknown.join(', ')}`);
   const count = (l) => pool.filter((e) => e.level === l).length;
   console.log(`levels: ${count('easy')} easy, ${count('medium')} medium, ${count('hard')} hard`);
+  const noGroup = pool.filter((e) => e.daily && !e.group).map((e) => e.answer);
+  if (noGroup.length) console.log(`daily answers with no group hint: ${noGroup.join(', ')}`);
   if (skipped.length) console.log(`skipped (no playable name, add an override): ${[...new Set(skipped)].join(', ')}`);
 }
 

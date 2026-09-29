@@ -110,7 +110,7 @@ export function loadWords() {
 const TILE = { correct: '🟩', present: '🟨', absent: '⬛' };
 
 // Spoiler-free share grid; word gaps are kept so the shape reads.
-export function shareText({ title, guesses, answer, won, streak }) {
+export function shareText({ title, guesses, answer, won, streak, hinted = false }) {
   const letters = lettersOf(answer);
   const lengths = wordLengths(answer);
   const rows = guesses.map((g) => {
@@ -122,7 +122,8 @@ export function shareText({ title, guesses, answer, won, streak }) {
       return part;
     }).join(' ');
   });
-  const head = `🦎 ${title}: ${won ? guesses.length : 'X'}/${MAX_GUESSES}${streak > 1 ? ` 🔥${streak} day streak` : ''}`;
+  // 💡 marks a solve that used the reveal-a-letter hint.
+  const head = `🦎 ${title}: ${won ? guesses.length : 'X'}/${MAX_GUESSES}${hinted ? ' 💡' : ''}${streak > 1 ? ` 🔥${streak} day streak` : ''}`;
   // The grid alone reads as random squares to anyone who has not played,
   // so a line says what the game is and what the result means.
   const line = won

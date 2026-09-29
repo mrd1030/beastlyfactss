@@ -32,7 +32,7 @@ function loadImage(src) {
   });
 }
 
-export async function beastleShareImage({ day, guesses, answer, won, streak }) {
+export async function beastleShareImage({ day, guesses, answer, won, streak, hinted = false }) {
   try {
     if (typeof document === 'undefined' || typeof File === 'undefined') return null;
     await Promise.all([
@@ -59,7 +59,7 @@ export async function beastleShareImage({ day, guesses, answer, won, streak }) {
     ctx.fillText(`Beastle #${day}`, 270, headerY + 80);
     ctx.fillStyle = MUTED;
     ctx.font = `700 42px ${BODY}`;
-    const scoreLine = `${won ? guesses.length : 'X'}/${MAX_GUESSES}${streak > 1 ? `  ·  ${streak} day streak` : ''}`;
+    const scoreLine = `${won ? guesses.length : 'X'}/${MAX_GUESSES}${hinted ? '  ·  used a hint' : ''}${streak > 1 ? `  ·  ${streak} day streak` : ''}`;
     ctx.fillText(scoreLine, 272, headerY + 140);
 
     // The grid, sized to fit the longest name, with gaps between words.

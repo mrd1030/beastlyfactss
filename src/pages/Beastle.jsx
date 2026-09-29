@@ -147,7 +147,7 @@ function Keyboard({ keys, onKey, disabled }) {
 
 // The board, keyboard and input for one puzzle. The parent owns the guesses
 // so daily and unlimited can store them differently.
-function Game({ entry, guesses, done, words, onSubmit, children }) {
+function Game({ entry, guesses, done, words, onSubmit, showGroup = false, children }) {
   const [current, setCurrent] = useState('');
   const [message, setMessage] = useState('');
   const [shaking, setShaking] = useState(false);
@@ -216,7 +216,11 @@ function Game({ entry, guesses, done, words, onSubmit, children }) {
 
   return (
     <div className="flex flex-col items-center gap-4">
-      <p className="text-xs text-muted-foreground font-body">
+      <p className="text-xs text-muted-foreground font-body text-center">
+        {showGroup && entry.group && (
+          <span className="font-bold text-foreground">{`It's ${/^[aeiou]/.test(entry.group) ? 'an' : 'a'} ${entry.group}`}</span>
+        )}
+        {showGroup && entry.group && ' · '}
         {words_.length > 1
           ? `${words_.length} words: ${words_.map((w) => `${w.length} letters`).join(' + ')}`
           : `${letters.length} letters`}
@@ -241,13 +245,14 @@ const MINI_TILE = {
 // share buttons clearly share the Beastle, not the animal: score, streak, a
 // small copy of the grid, everyone's totals, the shares and the countdown.
 function ResultBox({ day, entry, game, streak, children }) {
+  const hinted = game.hintIndex != null;
   const letters = lettersOf(entry.answer);
   const lengths = entry.answer.split(/[ -]/).map((w) => w.length);
   return (
     <div className="rounded-3xl border-2 border-primary/30 bg-gradient-to-br from-primary/10 via-card to-accent/15 p-5 sm:p-6 text-center">
       <p className="text-[10px] font-body font-bold uppercase tracking-widest text-primary dark:text-accent mb-1">Your result</p>
       <h2 className="font-display font-bold text-2xl text-foreground">
-        {`Beastle #${day} · ${game.won ? game.guesses.length : 'X'}/${MAX_GUESSES}${streak > 1 ? ` 🔥${streak}` : ''}`}
+        {`Beastle #${day} · ${game.won ? game.guesses.length : 'X'}/${MAX_GUESSES}${hinted ? ' 💡' : ''}${streak > 1 ? ` 🔥${streak}` : ''}`}
       </h2>
       <div className="mt-3 flex flex-col items-center gap-1" aria-hidden="true">
         {game.guesses.map((g, r) => {
@@ -663,7 +668,8 @@ function HowToPlay() {
         <li><span className="inline-block w-4 h-4 rounded-sm bg-accent align-middle mr-2" />Gold: the letter is in the name, but somewhere else. This is Wordle&apos;s yellow.</li>
         <li><span className="inline-block w-4 h-4 rounded-sm bg-muted-foreground/40 align-middle mr-2" />Gray: the letter is not in the name.</li>
       </ul>
-      <p>Everyone gets the same animal each day, and a new one arrives at midnight Eastern.</p>
+      <p>Everyone gets the same animal each day, and a new one arrives at midnight Eastern. The number of letters changes every day, from short names like LION to longer ones like SALAMANDER.</p>
+      <p>Each daily puzzle tells you what kind of animal it is, like a mammal or a bird. After 4 guesses you can also reveal one letter. A result that used it shows a 💡 when you share it.</p>
       <p>Unlimited lets you keep playing, at the level you pick:</p>
       <ul className="space-y-1">
         {LEVEL_OPTIONS.map(([id, , text]) => <li key={id}>{text}.</li>)}
@@ -737,13 +743,15 @@ export default function Beastle() {
   dailyRef.current = dailyGame;
   const unlimitedRef = useRef(unlimited);
   unlimitedRef.current = unlimited;
+  const archiveRef = useRef(archive);
+  archiveRef.current = archive;
 
   const submitDaily = useCallback((guess) => {
     const game = dailyRef.current;
     if (game.done) return;
     const letters = lettersOf(dailyEntry.answer);
     const guesses = [...game.guesses, guess];
-    const next = { day: today, guesses, done: false, won: false };
+    const next = { ...game, day: today, guesses, done: false, won: false };
     dailyRef.current = next;
     const won = guess === letters;
     const done = won || guesses.length >= MAX_GUESSES;
@@ -841,6 +849,25 @@ export default function Beastle() {
     setUnlimited(next);
   }, [setUnlimited]);
 
+  // The daily's reveal-a-letter: same rules as unlimited, and the result
+  // then carries a 💡 in the share so a hinted solve reads as one.
+  const takeDailyHint = useCallback((index) => {
+    const game = dailyRef.current;
+    if (game.done || game.hintIndex != null || index == null) return;
+    const next = { ...game, day: today, hintIndex: index };
+    dailyRef.current = next;
+    setDaily(next);
+  }, [today, setDaily]);
+
+  const takeArchiveHint = useCallback((index) => {
+    const all = archiveRef.current;
+    const game = all[archiveDay] || { guesses: [], done: false, won: false };
+    if (game.done || game.hintIndex != null || index == null) return;
+    const next = { ...all, [archiveDay]: { ...game, hintIndex: index } };
+    archiveRef.current = next;
+    setArchive(next);
+  }, [archiveDay, setArchive]);
+
   const takeUnlimitedHint = useCallback((index) => {
     const u = unlimitedRef.current;
     if (!u.current || u.current.hintIndex != null || index == null) return;
@@ -853,8 +880,6 @@ export default function Beastle() {
     setJournal((j) => (j.some((x) => x.answer === item.answer) ? j : [...j, item]));
   }, [setJournal]);
 
-  const archiveRef = useRef(archive);
-  archiveRef.current = archive;
   const archiveEntry = archiveDay ? answerForDay(archiveDay) : null;
   const archiveGame = (archiveDay && archive[archiveDay]) || { guesses: [], done: false, won: false };
 
@@ -865,7 +890,7 @@ export default function Beastle() {
     if (game.done || !archiveEntry) return;
     const guesses = [...game.guesses, guess];
     const won = guess === lettersOf(archiveEntry.answer);
-    const next = { ...all, [archiveDay]: { guesses, won, done: won || guesses.length >= MAX_GUESSES } };
+    const next = { ...all, [archiveDay]: { ...game, guesses, won, done: won || guesses.length >= MAX_GUESSES } };
     archiveRef.current = next;
     setArchive(next);
     if (won) celebrate();
@@ -884,16 +909,18 @@ export default function Beastle() {
   // on phones, attaches the result grid picture as well, like the quizzes.
   const share = ({ withImage = false } = {}) => {
     const streak = liveStreak(stats, today);
+    const hinted = dailyGame.hintIndex != null;
     const text = shareText({
       title: `Beastle #${today}`,
       guesses: dailyGame.guesses,
       answer: dailyEntry.answer,
       won: dailyGame.won,
       streak,
+      hinted,
     });
     // Started inside the click so the share still counts as user initiated.
     const image = withImage
-      ? beastleShareImage({ day: today, guesses: dailyGame.guesses, answer: dailyEntry.answer, won: dailyGame.won, streak })
+      ? beastleShareImage({ day: today, guesses: dailyGame.guesses, answer: dailyEntry.answer, won: dailyGame.won, streak, hinted })
       : undefined;
     shareQuizResult({ title: 'Beastle | Beastly Facts', text, url: 'https://beastlyfacts.com/beastle/', image });
   };
@@ -974,7 +1001,9 @@ export default function Beastle() {
 
         {ready && mode === 'daily' && dailyEntry && (
           <div className="space-y-5">
-            <Game entry={dailyEntry} guesses={dailyGame.guesses} done={dailyGame.done} words={words} onSubmit={submitDaily} />
+            <Game entry={dailyEntry} guesses={dailyGame.guesses} done={dailyGame.done} words={words} onSubmit={submitDaily} showGroup>
+              <Hint entry={dailyEntry} guesses={dailyGame.guesses} done={dailyGame.done} hintIndex={dailyGame.hintIndex} onUse={takeDailyHint} />
+            </Game>
             {dailyGame.done && (
               <>
                 <ResultBox day={today} entry={dailyEntry} game={dailyGame} streak={liveStreak(stats, today)}>
@@ -1067,7 +1096,9 @@ export default function Beastle() {
               </button>
               <p className="text-xs font-body font-bold text-muted-foreground">{`Beastle #${archiveDay} · ${formatDay(archiveDay)}`}</p>
             </div>
-            <Game entry={archiveEntry} guesses={archiveGame.guesses} done={archiveGame.done} words={words} onSubmit={submitArchive} />
+            <Game entry={archiveEntry} guesses={archiveGame.guesses} done={archiveGame.done} words={words} onSubmit={submitArchive} showGroup>
+              <Hint entry={archiveEntry} guesses={archiveGame.guesses} done={archiveGame.done} hintIndex={archiveGame.hintIndex} onUse={takeArchiveHint} />
+            </Game>
             {archiveGame.done && (
               <Reveal entry={archiveEntry} won={archiveGame.won} guesses={archiveGame.guesses.length}>
                 {nextUnplayedArchive() && (
