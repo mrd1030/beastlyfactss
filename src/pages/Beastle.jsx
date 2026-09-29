@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, ArrowRight, BarChart3, Bell, BellOff, Check, Delete, HelpCircle, Image as ImageIcon, Lightbulb, RotateCcw, Share2, BookOpen, X } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BarChart3, Bell, BellOff, Check, Delete, HelpCircle, Lightbulb, RotateCcw, Share2, BookOpen, X } from 'lucide-react';
 import {
   LEVELS, MAX_GUESSES, answerForDay, dayNumber, keyStates, lettersOf, loadWords, pickUnlimited,
   score, shapeOf, shareText, validate, byAnswer,
@@ -14,6 +14,7 @@ import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { logSiteEvent } from '@/lib/siteEvents';
 import { shareQuizResult } from '@/lib/utils/quizShareImage';
+import { toast } from '@/components/ui/use-toast';
 import { SITE_TIMEZONE } from '@/lib/utils/date';
 import { useIsMobileViewport } from '@/lib/hooks/useIsMobileViewport';
 import { getBeastleReminder, getExistingSubscription, isPushSupported, setBeastleReminder } from '@/lib/pushNotifications';
@@ -835,11 +836,11 @@ export default function Beastle() {
     return null;
   };
 
-  // Two shares on purpose. With a picture attached, many Android targets
-  // (Messages, Instagram, Messenger) keep the picture and drop the text, so
-  // the main share is text only, the emoji grid and link that every app
-  // keeps, and the picture card is its own button on phones.
-  const share = ({ withImage = false } = {}) => {
+  // One share with the picture and the text, like the quizzes. Some apps
+  // (Threads, for one) keep the picture and drop the text, and the Android
+  // sheet has no Copy for an image share, so on phones the text also goes
+  // to the clipboard first, ready to paste. Desktop copies it anyway.
+  const share = () => {
     const streak = liveStreak(stats, today);
     const text = shareText({
       title: `Beastle #${today}`,
@@ -848,15 +849,18 @@ export default function Beastle() {
       won: dailyGame.won,
       streak,
     });
-    // Started inside the click so the share still counts as user initiated.
-    const image = withImage
-      ? beastleShareImage({ day: today, guesses: dailyGame.guesses, answer: dailyEntry.answer, won: dailyGame.won, streak })
-      : undefined;
-    shareQuizResult({ title: 'Beastle | Beastly Facts', text, url: 'https://beastlyfacts.com/beastle/', image });
+    const url = 'https://beastlyfacts.com/beastle/';
+    // Both started inside the click, before anything is awaited, so the
+    // clipboard write and the share sheet still count as user initiated.
+    const image = beastleShareImage({ day: today, guesses: dailyGame.guesses, answer: dailyEntry.answer, won: dailyGame.won, streak });
+    if (navigator.share && navigator.clipboard?.writeText) {
+      navigator.clipboard.writeText(`${text}\n${url}`).then(
+        () => toast({ title: 'Result copied too', description: 'If the app only takes the picture, paste the text in.' }),
+        () => {},
+      );
+    }
+    shareQuizResult({ title: 'Beastle | Beastly Facts', text, url, image });
   };
-  const canSharePicture = typeof window !== 'undefined'
-    && !!navigator.share
-    && (navigator.userAgentData?.mobile === true || window.matchMedia?.('(pointer: coarse)').matches);
 
   const pageTitle = 'Beastle: The Daily Animal Word Game | Beastly Facts';
   const pageDescription = 'Guess the hidden animal in six tries. A new animal every day, the same one for everyone, plus a bonus fact round and unlimited practice.';
@@ -943,11 +947,7 @@ export default function Beastle() {
                     <button type="button" onClick={() => share()} className="inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground font-body font-bold text-sm px-5 py-2.5 rounded-2xl">
                       <Share2 className="w-4 h-4" /> Share result
                     </button>
-                    {canSharePicture && (
-                      <button type="button" onClick={() => share({ withImage: true })} className="inline-flex items-center justify-center gap-2 bg-muted text-foreground font-body font-bold text-sm px-5 py-2.5 rounded-2xl">
-                        <ImageIcon className="w-4 h-4" /> Share picture
-                      </button>
-                    )}
+
                   </div>
                   <p className="text-xs text-muted-foreground font-body mt-3">
                     {'Next Beastle in '}<Countdown />
