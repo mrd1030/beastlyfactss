@@ -325,10 +325,11 @@ function setupChange(s, now, opts) {
 
 // Moving decor counts as rearranging: great now and then, stressful when
 // constant. One drag session (an hour) counts once.
-function decorChange(s, now, { decor, free }) {
+function decorChange(s, now, { decor, free, layers }) {
   const before = placedDecor(s).length;
   if (decor) s.decor = decor;
   if (free) s.free = free;
+  if (layers) s.layers = layers;
   const after = placedDecor(s).length;
   if (now - (s.logs.rearrange.at(-1) || 0) < 3600e3) {
     s.logs.rearrange[s.logs.rearrange.length - 1] = now;

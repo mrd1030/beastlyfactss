@@ -136,8 +136,9 @@ function heatRock() {
 // A taller stack of basking slate, so he sits up closer to the lamp.
 function platform() {
   const g = makeGrid(36, 22);
-  fillPoly(g, [[1, 22], [2, 10], [9, 6], [25, 5], [34, 8], [35, 22]], 's');
-  fillPoly(g, [[2, 10], [9, 6], [25, 5], [34, 8], [32, 10], [5, 11]], 't');
+  // A flat top, so his feet sit on it wherever he stands.
+  fillPoly(g, [[1, 22], [2, 7], [5, 5], [31, 5], [34, 7], [35, 22]], 's');
+  fillPoly(g, [[2, 7], [5, 5], [31, 5], [34, 7], [32, 10], [4, 10]], 't');
   // Slate layers.
   for (const y of [13, 17]) for (let x = 2; x < 35; x++) g[y][x] = 'S';
   for (let x = 5; x < 34; x += 7) for (let y = 11; y < 22; y++) if (g[y][x]) g[y][x] = 'S';

@@ -50,6 +50,28 @@ export function freeBox(size, id, p = {}) {
   return { g, w, h, cx, cy, x: Math.round(cx - w / 2), y: Math.round(cy - h / 2) };
 }
 
+// Every placed item with its sprite, position and layer, back to front. The
+// player can send things to the front or back; unlayered floor items sit
+// behind the branch and hammock.
+export function layoutItems(game, free = game.free || {}) {
+  const slots = slotRects(game.setup.tank);
+  const layers = game.layers || {};
+  return [
+    ...Object.entries(game.decor || {})
+      .filter(([slot, id]) => slots[slot] && DECOR[id] && !DECOR[id].free)
+      .map(([slot, id]) => {
+        const g = itemSprite(id);
+        return { id, slot, g, x: Math.round(slots[slot].x + slots[slot].w / 2 - g[0].length / 2), y: FLOOR + 1 - g.length, z: layers[id] ?? 0 };
+      }),
+    ...Object.entries(free)
+      .filter(([id]) => DECOR[id]?.free)
+      .map(([id, p]) => {
+        const box = freeBox(game.setup.tank, id, p);
+        return { id, slot: 'free', g: box.g, x: box.x, y: box.y, z: layers[id] ?? 1 };
+      }),
+  ].sort((a, b) => a.z - b.z);
+}
+
 // Tiny seeded random so the substrate texture never flickers between frames.
 function rand(seed) {
   let x = seed;
@@ -66,7 +88,7 @@ function moodOf(game, now) {
   return 'normal';
 }
 
-function drawScene(ctx, game, now, frame, pose, free = game.free || {}) {
+function drawScene(ctx, game, now, frame, pose, free = game.free || {}, selected = null) {
   const st = game.setup;
   const { L, R } = tankBox(st.tank);
   const day = isDay(now);
@@ -145,7 +167,7 @@ function drawScene(ctx, game, now, frame, pose, free = game.free || {}) {
     dy = FLOOR + 1 - (DRAGON_H - 1);
   } else if (st.basking >= bmin) {
     dx = R - 45;
-    dy = FLOOR - 47;
+    dy = FLOOR - 46;
   } else {
     dx = Math.round(L + (R - L) * 0.45 - DRAGON_W / 2);
     dy = FLOOR + 1 - 31;
@@ -153,17 +175,17 @@ function drawScene(ctx, game, now, frame, pose, free = game.free || {}) {
   const drawDragon = () => drawGrid(ctx, g, dragonPalette(moodOf(game, now)), dx, dy);
 
   if (sleeping && hideSlot) drawDragon();
-  // Floor decor in its spots, then the free-placed branch and hammock.
-  for (const [slot, id] of Object.entries(game.decor || {})) {
-    const rect = slots[slot];
-    if (!rect || !DECOR[id] || DECOR[id].free) continue;
-    const g = itemSprite(id);
-    drawGrid(ctx, g, ITEM_PAL, Math.round(rect.x + rect.w / 2 - g[0].length / 2), FLOOR + 1 - g.length);
-  }
-  for (const [id, p] of Object.entries(free)) {
-    if (!DECOR[id]?.free) continue;
-    const box = freeBox(st.tank, id, p);
-    drawGrid(ctx, box.g, ITEM_PAL, box.x, box.y);
+  const items = layoutItems(game, free);
+  for (const it of items) {
+    drawGrid(ctx, it.g, ITEM_PAL, it.x, it.y);
+    if (it.id === selected) {
+      // Marching-ants box around the item picked for moving or layering.
+      ctx.fillStyle = '#ffffff';
+      const w = it.g[0].length;
+      const h = it.g.length;
+      for (let i = 0; i < w; i += 2) { ctx.fillRect(it.x + i, it.y - 1, 1, 1); ctx.fillRect(it.x + i, it.y + h, 1, 1); }
+      for (let i = 0; i < h; i += 2) { ctx.fillRect(it.x - 1, it.y + i, 1, 1); ctx.fillRect(it.x + w, it.y + i, 1, 1); }
+    }
   }
 
   if (!(sleeping && hideSlot)) drawDragon();
@@ -315,8 +337,8 @@ export default function TankScene({ game, now, pose = 'idle', onDecor, badge }) 
 
   useEffect(() => {
     const ctx = canvasRef.current?.getContext('2d');
-    if (ctx) drawScene(ctx, game, now, frame, pose, preview);
-  }, [game, now, frame, pose, preview]);
+    if (ctx) drawScene(ctx, game, now, frame, pose, preview, selected);
+  }, [game, now, frame, pose, preview, selected]);
 
   const placeSlot = useCallback((id, slot, from) => {
     const next = { ...decor };
@@ -341,6 +363,22 @@ export default function TankScene({ game, now, pose = 'idle', onDecor, badge }) 
     onDecor({ free: next });
     setSelected(null);
   }, [free, onDecor]);
+
+  // Front to back: move an item above or below everything else.
+  const layer = (id, front) => {
+    const current = game.layers || {};
+    const all = [...Object.values(decor).map((d) => current[d] ?? 0), ...Object.keys(free).map((f) => current[f] ?? 1)];
+    const z = front ? Math.max(0, ...all) + 1 : Math.min(0, ...all) - 1;
+    onDecor({ layers: { ...current, [id]: z } });
+  };
+
+  const takeOut = (id) => {
+    if (free[id]) return removeFree(id);
+    const slot = Object.keys(decor).find((k) => decor[k] === id);
+    if (slot) placeSlot(id, null, slot);
+    setSelected(null);
+    return undefined;
+  };
 
   const rotate = (id, by) => {
     const p = free[id] || {};
@@ -369,7 +407,7 @@ export default function TankScene({ game, now, pose = 'idle', onDecor, badge }) 
       setDragNow(null);
       if (!d) return;
       if (!d.moved) {
-        if (d.from === 'free') setSelected((cur) => (cur === d.id ? null : d.id));
+        if (d.from) setSelected((cur) => (cur === d.id ? null : d.id));
         else setPicked((p) => (p && p.id === d.id && p.from === d.from ? null : { id: d.id, from: d.from }));
         return;
       }
@@ -402,6 +440,15 @@ export default function TankScene({ game, now, pose = 'idle', onDecor, badge }) 
     setDragNow({ id, from, x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, moved: false });
   };
 
+  const grabAt = (e) => {
+    if (picked) return;
+    const pt = toTank(e.clientX, e.clientY);
+    if (!pt?.inside) return;
+    const hit = layoutItems(game).reverse().find((it) => it.g[Math.floor(pt.y) - it.y]?.[Math.floor(pt.x) - it.x]);
+    if (hit) startDrag(hit.id, hit.slot)(e);
+    else setSelected(null);
+  };
+
   // Tap-to-place: floor items go in the tapped spot, free items where tapped.
   const tapTank = (e) => {
     if (!picked) return;
@@ -431,6 +478,7 @@ export default function TankScene({ game, now, pose = 'idle', onDecor, badge }) 
       <div
         ref={boxRef}
         onClick={tapTank}
+        onPointerDown={grabAt}
         className="sticky z-20 select-none rounded-2xl overflow-hidden border border-border shadow-md bg-card"
         style={{ top: 'calc(56px + var(--safe-area-inset-top, 0px))', touchAction: drag ? 'none' : 'auto' }}
       >
@@ -449,23 +497,9 @@ export default function TankScene({ game, now, pose = 'idle', onDecor, badge }) 
             <div
               key={slot}
               data-slot={slot}
-              onPointerDown={id && !picked ? startDrag(id, slot) : undefined}
               className={`absolute rounded-md transition-colors ${fits ? 'border-2 border-dashed border-white/90 bg-white/20' : ''} ${id ? 'cursor-grab' : ''}`}
               style={{ left: pct(r.x, SW), top: pct(r.y, SH), width: pct(r.w, SW), height: pct(r.h, SH), touchAction: 'none' }}
-              aria-label={id ? `${DECOR[id].label} in the tank. Drag it out or to another spot.` : 'Empty floor spot'}
-            />
-          );
-        })}
-        {!drag && Object.entries(free).map(([id, p]) => {
-          if (!DECOR[id]?.free) return null;
-          const b = freeBox(size, id, p);
-          return (
-            <div
-              key={id}
-              onPointerDown={!picked ? startDrag(id, 'free') : undefined}
-              className={`absolute cursor-grab rounded-md ${selected === id ? 'outline outline-2 outline-dashed outline-white/90' : ''}`}
-              style={{ left: pct(b.x, SW), top: pct(b.y, SH), width: pct(b.w, SW), height: pct(b.h, SH), touchAction: 'none' }}
-              aria-label={`${DECOR[id].label}. Drag to move it, tap to rotate it.`}
+              aria-label={id ? `${DECOR[id].label} in the tank. Drag it to move it, tap it for more.` : 'Empty floor spot'}
             />
           );
         })}
@@ -473,19 +507,25 @@ export default function TankScene({ game, now, pose = 'idle', onDecor, badge }) 
       </div>
 
       <div className="bg-card border border-border rounded-2xl p-3 mt-3 mb-4">
-        {selected && free[selected] ? (
-          <div className="flex items-center gap-2 mb-3 pb-3 border-b border-border">
+        {selected && inTank.has(selected) ? (
+          <div className="flex flex-wrap items-center gap-2 mb-3 pb-3 border-b border-border">
             <span className="text-sm font-body font-bold text-foreground mr-auto">{DECOR[selected].label}</span>
-            <button type="button" onClick={() => rotate(selected, -15)} aria-label="Rotate left" className="p-2 rounded-xl border border-border hover:bg-muted"><RotateCcw className="w-4 h-4" /></button>
-            <button type="button" onClick={() => rotate(selected, 15)} aria-label="Rotate right" className="p-2 rounded-xl border border-border hover:bg-muted"><RotateCw className="w-4 h-4" /></button>
-            <button type="button" onClick={() => removeFree(selected)} className="px-3 py-2 rounded-xl border border-border text-xs font-body font-bold hover:bg-muted">Take out</button>
+            {DECOR[selected].free && (
+              <>
+                <button type="button" onClick={() => rotate(selected, -15)} aria-label="Rotate left" className="p-2 rounded-xl border border-border hover:bg-muted"><RotateCcw className="w-4 h-4" /></button>
+                <button type="button" onClick={() => rotate(selected, 15)} aria-label="Rotate right" className="p-2 rounded-xl border border-border hover:bg-muted"><RotateCw className="w-4 h-4" /></button>
+              </>
+            )}
+            <button type="button" onClick={() => layer(selected, false)} className="px-2.5 py-2 rounded-xl border border-border text-xs font-body font-bold hover:bg-muted">To back</button>
+            <button type="button" onClick={() => layer(selected, true)} className="px-2.5 py-2 rounded-xl border border-border text-xs font-body font-bold hover:bg-muted">To front</button>
+            <button type="button" onClick={() => takeOut(selected)} className="px-2.5 py-2 rounded-xl border border-border text-xs font-body font-bold hover:bg-muted">Take out</button>
             <button type="button" onClick={() => setSelected(null)} aria-label="Done" className="p-2 rounded-xl bg-primary text-primary-foreground"><Check className="w-4 h-4" /></button>
           </div>
         ) : null}
         <p className="text-xs font-body font-bold text-muted-foreground mb-2">
           {picked
             ? `Tap ${DECOR[picked.id].free ? 'anywhere in the tank' : 'a floor spot in the tank'} for the ${DECOR[picked.id].label.toLowerCase()}`
-            : 'Drag items into the tank. The branch and hammock go anywhere: tap one to rotate it.'}
+            : 'Drag items into the tank. The branch and hammock go anywhere. Tap anything in the tank to move it to the front or back.'}
         </p>
         <div className="flex flex-wrap gap-2">
           {Object.entries(DECOR).map(([id, item]) => {
