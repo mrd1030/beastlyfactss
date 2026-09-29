@@ -1,0 +1,300 @@
+// Builds the Beastle answer pool and daily schedule into
+// src/lib/data/beastle/pool.json, and the guess dictionary into
+// public/beastle/words.txt.
+//
+// Run by hand after adding encyclopedia animals, Beastfiles or facts:
+//   node scripts/generate-beastle.mjs
+//
+// The schedule is append-only. Days already written never change, so a new
+// animal can never rewrite a past puzzle (or someone's streak). New animals
+// join the rotation when the schedule is next extended.
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath, pathToFileURL } from 'node:url';
+
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const load = (rel) => import(pathToFileURL(path.join(root, rel)).href);
+
+// Encyclopedia index.js imports without extensions, which Vite resolves and
+// Node does not, so the category files are read one by one.
+const ENCYCLOPEDIA_FILES = [
+  'amphibians', 'birds', 'cats', 'dogs', 'fish', 'geckos', 'invertebrates',
+  'lizards', 'smallMammals', 'snakes', 'turtles',
+];
+
+// Answer overrides, keyed "enc:<id>", "bp:<id>" or "fact:<animal>". The answer
+// is what the player types, so it is the short common name: WOMBAT, not the
+// southern hairy-nosed wombat. null drops the animal from the game.
+const OVERRIDES = {
+  // Encyclopedia
+  'enc:betta-fish': 'Betta',
+  'enc:corydoras-catfish': 'Corydoras',
+  'enc:labrador': 'Labrador',
+  'enc:siberian-husky': 'Husky',
+  'enc:green-iguana': 'Iguana',
+  'enc:green-anole': 'Anole',
+  'enc:kingsnake': 'Kingsnake',
+  'enc:hognose-snake': 'Hognose',
+  'enc:bristlenose-pleco': 'Pleco',
+  'enc:emperor-scorpion': 'Scorpion',
+  'enc:mouse': 'Mouse',
+  'enc:rat': 'Rat',
+  'enc:budgie': 'Budgie',
+  'enc:conure': 'Conure',
+  'enc:african-grey': 'African Grey',
+  'enc:whites-tree-frog': 'Tree Frog',
+  'enc:millipede': 'Millipede',
+  'enc:hissing-cockroach': 'Cockroach',
+  'enc:tegu': 'Tegu',
+  'enc:flying-squirrel': 'Flying Squirrel',
+  'enc:jacksons-chameleon': null,
+  'enc:fire-bellied-toad': null,
+  'enc:african-fat-tail': null,
+  'enc:leaf-tailed-gecko': null,
+  'enc:blue-tongue-skink': null,
+  'enc:red-eared-slider': null,
+  'enc:red-footed-tortoise': null,
+  // Beastlypedia
+  'bp:african-elephant': 'Elephant',
+  'bp:dolphin': 'Dolphin',
+  'bp:emperor-penguin': 'Penguin',
+  'bp:gray-wolf': 'Wolf',
+  'bp:green-anaconda': 'Anaconda',
+  'bp:immortal-jellyfish': 'Jellyfish',
+  'bp:shark': 'Shark',
+  'bp:sloth': 'Sloth',
+  'bp:blue-poison-dart-frog': 'Dart Frog',
+  'bp:victoria-crowned-pigeon': 'Crowned Pigeon',
+  'bp:manta-ray': 'Manta Ray',
+  'bp:leafy-sea-dragon': 'Leafy Seadragon',
+  // Fact animals (unlimited only unless they match a daily answer)
+  'fact:Honey Bee': 'Honeybee',
+  'fact:Rhino': 'Rhinoceros',
+  'fact:Siamese Cat': 'Siamese',
+  'fact:Sphynx Cat': 'Sphynx',
+  'fact:Sea Turtles': 'Sea Turtle',
+  'fact:Green Sea Turtle': 'Sea Turtle',
+  'fact:Tamarin Monkeys': 'Tamarin',
+  'fact:American Alligator': 'Alligator',
+  'fact:African Grey Parrot': 'African Grey',
+  'fact:Cuban Tree Frog': 'Tree Frog',
+  'fact:Three-Toed Sloth': 'Sloth',
+  'fact:Common House Spider': 'House Spider',
+  'fact:California Sea Lion': 'Sea Lion',
+  "fact:Wallace's Flying Frog": 'Flying Frog',
+  'fact:Pen-tailed Tree Shrew': 'Tree Shrew',
+  'fact:Gentoo and Adélie Penguin': 'Penguin',
+  'fact:Bar-Tailed Godwit': 'Godwit',
+  'fact:Naked Mole Rat': 'Mole Rat',
+  'fact:Star-Nosed Mole': 'Mole',
+  'fact:Leafy Sea Dragon': 'Leafy Seadragon',
+  'fact:Giant Manta Ray': 'Manta Ray',
+  'fact:Frilled-necked Lizard': 'Frilled Lizard',
+  'fact:Blue Poison Dart Frog': 'Dart Frog',
+  'fact:Victoria Crowned Pigeon': 'Crowned Pigeon',
+  'fact:Red-Footed Tortoise': 'Tortoise',
+  'fact:Pembroke Welsh Corgi': 'Corgi',
+  'fact:Short-Beaked Echidna': 'Echidna',
+  'fact:Red-footed Booby': null,
+};
+
+// Days are numbered from launch in the site's timezone (America/New_York):
+// Beastle #1 is this date.
+// Must match EPOCH in src/lib/beastle/day.js.
+const EPOCH = '2026-09-28';
+const SCHEDULE_DAYS = 730;
+// One two-word answer per seven-day block, the rest single words.
+const WEEK = 7;
+
+const MAX_WORDS = 2;
+const MIN_WORD = 3;
+const MAX_WORD = 12;
+
+// Letters only, words split on spaces and hyphens. The separator is kept so
+// AYE-AYE shows its hyphen on the board.
+function toAnswer(raw) {
+  if (raw === null) return null;
+  const cleaned = raw
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .toUpperCase()
+    .replace(/'/g, '')
+    .trim();
+  const parts = cleaned.split(/([ -])/).filter(Boolean);
+  const words = parts.filter((p) => p !== ' ' && p !== '-');
+  if (!words.length || words.length > MAX_WORDS) return null;
+  if (words.some((w) => !/^[A-Z]+$/.test(w) || w.length < MIN_WORD || w.length > MAX_WORD)) return null;
+  return parts.join('').replace(/ +/g, ' ');
+}
+
+function answerFor(key, name) {
+  if (Object.prototype.hasOwnProperty.call(OVERRIDES, key)) return toAnswer(OVERRIDES[key]);
+  return toAnswer(name);
+}
+
+const firstSentence = (text = '') => {
+  const m = text.match(/^.*?[.!?](\s|$)/);
+  return (m ? m[0] : text).trim();
+};
+
+// Seeded so a rerun extends the schedule the same way every time.
+function rng(seed) {
+  let s = seed >>> 0;
+  return () => {
+    s = (s + 0x6d2b79f5) >>> 0;
+    let t = s;
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function shuffle(list, rand) {
+  const a = [...list];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(rand() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+async function main() {
+  const encyclopedia = [];
+  for (const f of ENCYCLOPEDIA_FILES) {
+    const mod = await load(`src/lib/data/encyclopedia/${f}.js`);
+    for (const v of Object.values(mod)) if (Array.isArray(v)) encyclopedia.push(...v);
+  }
+  const { beastfiles } = await load('src/lib/data/beastlypedia/index.js');
+  const { facts } = await load('src/lib/data/facts.js');
+  const { imagePathFor } = await load('src/lib/data/factImages.js');
+  const { slugify } = await load('src/lib/utils/slugify.js');
+
+  const factsByAnswer = new Map();
+  const skipped = [];
+  const entries = new Map();
+
+  const add = (entry, daily) => {
+    if (!entry.answer) {
+      skipped.push(entry.key);
+      return;
+    }
+    const existing = entries.get(entry.answer);
+    if (existing) {
+      existing.daily = existing.daily || daily;
+      return;
+    }
+    entries.set(entry.answer, { ...entry, daily });
+  };
+
+  // Facts first, only to learn which answers have facts: the reveal on any
+  // answer shows one of them when it can.
+  for (const f of facts) {
+    const answer = answerFor(`fact:${f.animal}`, f.animal);
+    if (!answer) continue;
+    if (!factsByAnswer.has(answer)) factsByAnswer.set(answer, []);
+    factsByAnswer.get(answer).push(f.id);
+  }
+
+  // Encyclopedia before Beastlypedia, so an animal in both links to its
+  // encyclopedia page.
+  for (const a of encyclopedia) {
+    const answer = answerFor(`enc:${a.id}`, a.name);
+    add({
+      key: `enc:${a.id}`,
+      answer,
+      name: a.name,
+      emoji: a.emoji,
+      image: a.image || null,
+      link: `/encyclopedia/animal/${a.id}/`,
+      blurb: firstSentence(a.bio?.overview),
+    }, true);
+  }
+  for (const b of beastfiles) {
+    const answer = answerFor(`bp:${b.id}`, b.name);
+    add({
+      key: `bp:${b.id}`,
+      answer,
+      name: b.name,
+      emoji: null,
+      image: b.heroImage || null,
+      link: `/beastlypedia/${b.id}/`,
+      blurb: b.funFacts?.[0] || b.tagline || '',
+    }, true);
+  }
+  // Fact animals join unlimited only.
+  for (const f of facts) {
+    const answer = answerFor(`fact:${f.animal}`, f.animal);
+    add({
+      key: `fact:${f.animal}`,
+      answer,
+      name: f.animal,
+      emoji: f.emoji,
+      image: imagePathFor(f),
+      link: `/facts/${slugify(f.title)}/`,
+      blurb: '',
+    }, false);
+  }
+
+  const pool = [...entries.values()]
+    .map((e) => ({ ...e, factIds: factsByAnswer.get(e.answer) || [] }))
+    .sort((a, b) => a.answer.localeCompare(b.answer));
+
+  // Schedule: append-only list of daily answers.
+  const outFile = path.join(root, 'src/lib/data/beastle/pool.json');
+  const previous = fs.existsSync(outFile) ? JSON.parse(fs.readFileSync(outFile, 'utf8')) : null;
+  const dailyAnswers = new Set(pool.filter((e) => e.daily).map((e) => e.answer));
+  const schedule = [...(previous?.schedule || [])];
+
+  const singles = [...dailyAnswers].filter((a) => !/[ -]/.test(a));
+  const multis = [...dailyAnswers].filter((a) => /[ -]/.test(a));
+  const rand = rng(0xbea57 + schedule.length);
+  let singleQueue = [];
+  let multiQueue = [];
+  const recent = (n) => new Set(schedule.slice(-n));
+  const next = (queueName) => {
+    const refill = () => shuffle(queueName === 'multi' ? multis : singles, rand);
+    let queue = queueName === 'multi' ? multiQueue : singleQueue;
+    if (!queue.length) queue = refill();
+    // Never repeat an answer inside a 30-day window across a reshuffle.
+    const avoid = recent(30);
+    const idx = queue.findIndex((a) => !avoid.has(a));
+    const pick = queue.splice(idx === -1 ? 0 : idx, 1)[0];
+    if (queueName === 'multi') multiQueue = queue; else singleQueue = queue;
+    return pick;
+  };
+  while (schedule.length < SCHEDULE_DAYS) {
+    const blockStart = schedule.length - (schedule.length % WEEK);
+    const multiSlot = blockStart + Math.floor(rng(blockStart + 1)() * WEEK);
+    const useMulti = multis.length && schedule.length === multiSlot;
+    schedule.push(next(useMulti ? 'multi' : 'single'));
+  }
+
+  fs.mkdirSync(path.dirname(outFile), { recursive: true });
+  fs.writeFileSync(outFile, JSON.stringify({
+    epoch: EPOCH,
+    schedule,
+    pool: pool.map(({ daily, ...rest }) => ({ ...rest, daily: daily || undefined })),
+  }, null, 0) + '\n');
+
+  // Dictionary: common English (SCOWL size 50, American plus shared English)
+  // plus every word that appears in an answer.
+  const words = new Set();
+  for (const variant of ['english', 'american']) {
+    for (const size of [10, 20, 35, 40, 50]) {
+      const file = path.join(root, `node_modules/wordlist-english/${variant}-words-${size}.json`);
+      for (const w of JSON.parse(fs.readFileSync(file, 'utf8'))) {
+        if (/^[a-z]{2,12}$/.test(w)) words.add(w);
+      }
+    }
+  }
+  for (const e of pool) for (const w of e.answer.split(/[ -]/)) words.add(w.toLowerCase());
+  const wordsFile = path.join(root, 'public/beastle/words.txt');
+  fs.mkdirSync(path.dirname(wordsFile), { recursive: true });
+  fs.writeFileSync(wordsFile, [...words].sort().join('\n') + '\n');
+
+  const daily = pool.filter((e) => e.daily);
+  console.log(`pool ${pool.length} (daily ${daily.length}: ${singles.length} single, ${multis.length} two-word)`);
+  console.log(`schedule ${schedule.length} days from ${EPOCH}, dictionary ${words.size} words`);
+  if (skipped.length) console.log(`skipped (no playable name, add an override): ${[...new Set(skipped)].join(', ')}`);
+}
+
+main();

@@ -221,6 +221,7 @@ const staticPages = [
   '/beastlypedia/',
   '/guides/',
   '/quiz/',
+  '/beastle/',
   '/quiz/personality/',
   '/quiz/trivia/',
   '/quiz/knowledge/',
@@ -309,7 +310,7 @@ async function generateSitemap() {
 
   uniqueStatic.forEach(path => {
     const isHome = path === '/';
-    const isHighFreq = ['/', '/facts/', '/blog/', '/encyclopedia/', '/guides/', '/animal-facts/', '/fact-files/', '/quiz/'].includes(path);
+    const isHighFreq = ['/', '/facts/', '/blog/', '/encyclopedia/', '/guides/', '/animal-facts/', '/fact-files/', '/quiz/', '/beastle/'].includes(path);
     const isGuideCat = path.startsWith('/guides/category/');
     const isGuideDetail = path.startsWith('/guides/') && !isGuideCat;
     const isEncAnimal = path.startsWith('/encyclopedia/animal/');

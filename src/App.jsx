@@ -24,6 +24,7 @@ import Home from '@/pages/Home';
 const Facts = hydratable('Facts');
 const Quiz = hydratable('Quiz');
 const QuizHub = hydratable('QuizHub');
+const Beastle = hydratable('Beastle');
 const Pack = hydratable('Pack');
 const Encyclopedia = hydratable('Encyclopedia');
 const Blog = hydratable('Blog');
@@ -115,6 +116,7 @@ const AuthenticatedApp = () => {
           <Route path="/chronicles/:seriesId" element={<Chronicles />} />
           <Route path="/chronicles/:seriesId/:part" element={<Chronicles />} />
           <Route path="/quiz" element={<QuizHub />} />
+          <Route path="/beastle" element={<Beastle />} />
           <Route path="/quiz/:tab" element={<Quiz />} />
           <Route path="/pack" element={<Pack />} />
           <Route path="/about" element={<About />} />

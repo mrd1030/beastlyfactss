@@ -6,6 +6,7 @@ import { ArrowRight, CheckCircle2, Calendar } from 'lucide-react';
 import { themedQuizzes, releasedQuizzes } from '@/lib/data/quizzes';
 import { useQuizScores } from '@/lib/hooks/useQuizScores';
 import { siteToday } from '@/lib/utils/date';
+import BeastleCard from '@/components/beastle/BeastleCard';
 
 // Not getDisplayDate(): that helper deliberately renders future dates as
 // nothing, and the next drop date is future by definition.
@@ -84,6 +85,7 @@ export default function QuizHub() {
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 pb-16">
+        <div className="mb-4"><BeastleCard /></div>
         {featured && (
           <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
             <Link to={`/quiz/${featured.id}/`} className="block bg-gradient-to-br from-secondary/15 via-card to-primary/10 border-2 border-secondary/40 rounded-3xl p-6 sm:p-8 hover:border-secondary transition-colors group">

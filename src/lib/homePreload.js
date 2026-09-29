@@ -29,6 +29,7 @@ const modules = {
   CritterDigestPreview: () => import('@/components/home/CritterDigestPreview'),
   DexTeaser: () => import('@/components/home/DexTeaser'),
   QuizzesTeaser: () => import('@/components/home/QuizzesTeaser'),
+  BeastleTeaser: () => import('@/components/home/BeastleTeaser'),
   Newsletter: () => import('@/components/shared/Newsletter'),
   // Data, not a component. HeroSection used to import facts.js statically for
   // its daily fact, which put the whole 118KB array in the entry chunk of
