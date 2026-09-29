@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer className="bg-card border-t border-border mt-16" data-site-chrome>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-12 pb-28 md:pb-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
 
           {/* Brand Column - Prominent */}
           <div className="col-span-2 md:col-span-1">
@@ -67,9 +67,16 @@ export default function Footer() {
                 { to: '/animal-days/', label: 'Animal days' },
                 { to: '/gallery/', label: 'Gallery' },
                 { to: '/feed/', label: 'The feed' },
-                { to: '/quiz/', label: 'Quizzes' },
+              ]
+            },
+            {
+              // The interactive side of the site: the daily game first (the
+              // habit), then the pet, the quizzes and the Dex stories.
+              title: "Play",
+              links: [
                 { to: '/beastle/', label: 'Beastle' },
                 { to: '/critter-keeper/', label: 'Critter Keeper' },
+                { to: '/quiz/', label: 'Quizzes' },
                 { to: '/chronicles/dex/', label: 'Chronicles' },
               ]
             },
