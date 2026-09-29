@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { ArrowRight, BarChart3, Bell, BellOff, Delete, HelpCircle, Lightbulb, RotateCcw, Share2, BookOpen } from 'lucide-react';
 import {
-  MAX_GUESSES, answerForDay, dayNumber, keyStates, lettersOf, loadWords, pickUnlimited,
+  LEVELS, MAX_GUESSES, answerForDay, dayNumber, keyStates, lettersOf, loadWords, pickUnlimited,
   score, shapeOf, shareText, validate, byAnswer,
 } from '@/lib/beastle/engine';
 import { STORAGE, liveStreak } from '@/lib/beastle/day';
@@ -416,6 +416,37 @@ function BeastleReminder() {
   );
 }
 
+const LEVEL_OPTIONS = [
+  ['easy', 'Easy', 'Animals everyone knows'],
+  ['medium', 'Medium', 'Adds ones most people have heard of'],
+  ['hard', 'Hard', 'Everything, including the deep cuts'],
+];
+
+function DifficultyPicker({ level, onChange, pending }) {
+  const blurb = LEVEL_OPTIONS.find(([id]) => id === level)?.[2];
+  return (
+    <div>
+      <div className="flex gap-1 p-1 bg-muted rounded-xl" role="radiogroup" aria-label="Difficulty">
+        {LEVEL_OPTIONS.map(([id, label]) => (
+          <button
+            key={id}
+            type="button"
+            role="radio"
+            aria-checked={level === id}
+            onClick={() => onChange(id)}
+            className={`flex-1 py-1.5 rounded-lg text-xs font-body font-bold transition-colors ${level === id ? 'bg-card text-foreground shadow-sm' : 'text-muted-foreground'}`}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+      <p className="text-center text-[11px] text-muted-foreground font-body mt-1.5">
+        {pending ? `${blurb}. Starts with the next animal.` : blurb}
+      </p>
+    </div>
+  );
+}
+
 // Unlimited only: one hint per animal, offered once four guesses are used.
 // It reveals the leftmost letter no guess has turned green yet. The spot is
 // fixed when the hint is taken, so later greens never move what it shows.
@@ -583,10 +614,11 @@ export default function Beastle() {
 
   const unlimitedEntry = unlimited.current ? byAnswer.get(unlimited.current.answer) : null;
 
-  const newUnlimited = useCallback(() => {
+  const newUnlimited = useCallback((levelOverride) => {
     const u = unlimitedRef.current;
-    const pick = pickUnlimited(u.seen || [], dailyEntry?.answer);
-    const next = { ...u, current: { answer: pick.answer, guesses: [], done: false, won: false } };
+    const level = levelOverride || u.level || 'medium';
+    const pick = pickUnlimited(u.seen || [], dailyEntry?.answer, level);
+    const next = { ...u, level, current: { answer: pick.answer, guesses: [], done: false, won: false } };
     unlimitedRef.current = next;
     setUnlimited(next);
   }, [setUnlimited, dailyEntry]);
@@ -613,6 +645,20 @@ export default function Beastle() {
     setUnlimited(next);
     if (won) celebrate();
   }, [setUnlimited]);
+
+  // A new difficulty deals a fresh animal right away unless a game is under
+  // way, which finishes first; the next animal uses the new level.
+  const setUnlimitedLevel = useCallback((level) => {
+    const u = unlimitedRef.current;
+    if (u.level === level) return;
+    if (!u.current || u.current.done || u.current.guesses.length === 0) {
+      newUnlimited(level);
+      return;
+    }
+    const next = { ...u, level };
+    unlimitedRef.current = next;
+    setUnlimited(next);
+  }, [newUnlimited, setUnlimited]);
 
   const takeUnlimitedHint = useCallback((index) => {
     const u = unlimitedRef.current;
@@ -741,6 +787,11 @@ export default function Beastle() {
             <p className="text-center text-xs font-body font-bold text-accent-ink bg-accent/15 rounded-xl py-2 px-3">
               Practice mode: no streak here, play as many as you like. Stuck? After 4 guesses you can reveal one letter.
             </p>
+            <DifficultyPicker
+              level={unlimited.level || 'medium'}
+              onChange={setUnlimitedLevel}
+              pending={unlimited.current.guesses.length > 0 && !unlimited.current.done && unlimitedEntry && !LEVELS[unlimited.level || 'medium'].includes(unlimitedEntry.level)}
+            />
             <Game
               entry={unlimitedEntry}
               guesses={unlimited.current.guesses}
@@ -758,7 +809,7 @@ export default function Beastle() {
             </Game>
             {unlimited.current.done && (
               <Reveal entry={unlimitedEntry} won={unlimited.current.won} guesses={unlimited.current.guesses.length}>
-                <button type="button" onClick={newUnlimited} className="mt-4 inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground font-body font-bold text-sm px-5 py-2.5 rounded-2xl">
+                <button type="button" onClick={() => newUnlimited()} className="mt-4 inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground font-body font-bold text-sm px-5 py-2.5 rounded-2xl">
                   <RotateCcw className="w-4 h-4" /> Next animal
                 </button>
               </Reveal>

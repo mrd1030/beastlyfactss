@@ -96,7 +96,40 @@ const OVERRIDES = {
   'fact:Pembroke Welsh Corgi': 'Corgi',
   'fact:Short-Beaked Echidna': 'Echidna',
   'fact:Red-footed Booby': null,
+  // Same animal as an encyclopedia or Beastfile answer under another name.
+  'fact:Green Anaconda': 'Anaconda',
+  'fact:Fancy Rat': 'Rat',
+  'fact:Fancy Mouse': 'Mouse',
+  'fact:Bristlenose Pleco': 'Pleco',
 };
+
+// Unlimited difficulty. Easy: animals nearly everyone can name. Hard: deep
+// cuts nobody could guess from letters alone (hobby species, rare wildlife).
+// Everything else is medium. Medium plays easy + medium, hard plays all.
+// Keyed by answer; an answer not listed is medium.
+const EASY = new Set([
+  'ALLIGATOR', 'BAT', 'BALD EAGLE', 'BULLDOG', 'BUTTERFLY', 'CANARY', 'CAT', 'CHEETAH',
+  'CHICKEN', 'CRICKET', 'CROCODILE', 'CROW', 'DEER', 'DOG', 'DOLPHIN', 'ELEPHANT',
+  'FIREFLY', 'FLAMINGO', 'GECKO', 'GIRAFFE', 'GOAT', 'GOLDFISH', 'GUINEA PIG', 'HAMSTER',
+  'HEDGEHOG', 'HIPPO', 'HONEYBEE', 'HUMMINGBIRD', 'IGUANA', 'JELLYFISH', 'KANGAROO', 'KOALA',
+  'LION', 'MOUSE', 'OCTOPUS', 'ORCA', 'OWL', 'PARROT', 'PENGUIN', 'POLAR BEAR', 'RABBIT',
+  'RAT', 'REINDEER', 'RHINOCEROS', 'SCORPION', 'SEA LION', 'SEA TURTLE', 'SEAHORSE', 'SHARK',
+  'SLOTH', 'SNAKE', 'STARFISH', 'TIGER', 'TORTOISE', 'VULTURE', 'WOLF', 'WOODPECKER', 'ZEBRA',
+]);
+const HARD = new Set([
+  'ACKIE MONITOR', 'AMANO SHRIMP', 'AYE-AYE', 'BARRELEYE FISH', 'BASENJI', 'BASILISK LIZARD',
+  'BOMBARDIER BEETLE', 'CARDINAL TETRA', 'CHERRY SHRIMP', 'CONURE', 'CORYDORAS',
+  'CROWNED PIGEON', 'DEGU', 'DISCUS', 'DRACO LIZARD', 'DUMBO OCTOPUS', 'FIRE SKINK',
+  'FLYING FROG', 'FRILLED SHARK', 'GABOON VIPER', 'GARGOYLE GECKO', 'GHARIAL', 'GHOST SHRIMP',
+  'GODWIT', 'HAGFISH', 'HAIRY FROG', 'HOATZIN', 'KAKAPO', 'KEA', 'LYREBIRD', 'MATAMATA TURTLE',
+  'MOLLY', 'MOURNING GECKO', 'MUDSKIPPER', 'NORWEGIAN LUNDEHUND', 'NUDIBRANCH', 'NUMBAT',
+  'OCEAN SUNFISH', 'OKAPI', 'OSCAR', 'PARROTLET', 'PISTOL SHRIMP', 'PLATY', 'PLECO', 'POTOO',
+  'PRONGHORN', 'PYGMY MARMOSET', 'QUAKER PARAKEET', 'ROSY BOA', 'SATIN BOWERBIRD',
+  'SECRETARY BIRD', 'SHIMA ENAGA', 'SHOEBILL', 'SULCATA TORTOISE', 'SWORDTAIL', 'TAMARIN',
+  'TEGU', 'THORNY DEVIL', 'TOKAY GECKO', 'TREE SHREW', 'TUATARA', 'UROMASTYX',
+  'VAMPIRE SQUID', 'WANDERING ALBATROSS', 'YETI CRAB', 'ZEBRA DANIO',
+]);
+const levelOf = (answer) => (EASY.has(answer) ? 'easy' : HARD.has(answer) ? 'hard' : 'medium');
 
 // Days are numbered from launch in the site's timezone (America/New_York):
 // Beastle #1 is this date.
@@ -235,7 +268,7 @@ async function main() {
   }
 
   const pool = [...entries.values()]
-    .map((e) => ({ ...e, factIds: factsByAnswer.get(e.answer) || [] }))
+    .map((e) => ({ ...e, factIds: factsByAnswer.get(e.answer) || [], level: levelOf(e.answer) }))
     .sort((a, b) => a.answer.localeCompare(b.answer));
 
   // Schedule: append-only list of daily answers.
@@ -294,6 +327,10 @@ async function main() {
   const daily = pool.filter((e) => e.daily);
   console.log(`pool ${pool.length} (daily ${daily.length}: ${singles.length} single, ${multis.length} two-word)`);
   console.log(`schedule ${schedule.length} days from ${EPOCH}, dictionary ${words.size} words`);
+  const unknown = [...EASY, ...HARD].filter((a) => !pool.some((e) => e.answer === a));
+  if (unknown.length) console.log(`difficulty lists name answers not in the pool: ${unknown.join(', ')}`);
+  const count = (l) => pool.filter((e) => e.level === l).length;
+  console.log(`levels: ${count('easy')} easy, ${count('medium')} medium, ${count('hard')} hard`);
   if (skipped.length) console.log(`skipped (no playable name, add an override): ${[...new Set(skipped)].join(', ')}`);
 }
 

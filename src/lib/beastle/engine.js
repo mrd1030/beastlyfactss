@@ -126,9 +126,18 @@ export function shareText({ title, guesses, answer, won, streak }) {
   return `${head}\n${rows.join('\n')}`;
 }
 
-// Unlimited: anything except today's daily answer, unseen answers first.
-export function pickUnlimited(seen, exclude) {
-  const open = pool.filter((e) => e.answer !== exclude);
+// Unlimited difficulty: which answer levels each setting plays.
+export const LEVELS = {
+  easy: ['easy'],
+  medium: ['easy', 'medium'],
+  hard: ['easy', 'medium', 'hard'],
+};
+
+// Unlimited: anything at the chosen difficulty except today's daily answer,
+// unseen answers first.
+export function pickUnlimited(seen, exclude, level = 'medium') {
+  const allowed = LEVELS[level] || LEVELS.medium;
+  const open = pool.filter((e) => e.answer !== exclude && allowed.includes(e.level));
   const fresh = open.filter((e) => !seen.includes(e.answer));
   const from = fresh.length ? fresh : open;
   return from[Math.floor(Math.random() * from.length)];
