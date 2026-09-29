@@ -39,7 +39,7 @@ export const turtleGuides = [
         { label: "Handling", value: "Both hands under the full body, short sessions, never dropped, shaken, or flipped. Hiding with lethargy and reduced appetite is a vet visit, not shyness.", source: "box-turtle-handling-guide" },
         { label: "Enrichment", value: "Deep substrate to burrow through first, then hides and cover throughout, then floor space and outdoor time. Never on newspaper or a bare liner.", source: "box-turtle-enrichment-guide" },
         { label: "Brumation", value: "Its own protocol, not a tortoise's: a vet exam first, a 10 to 14 day fast, a band of 45 to 50 degrees Fahrenheit, and a stop past 10% weight loss.", source: "tortoise-brumation-guide" },
-        { label: "Budget", value: "Roughly $345 to $453 upfront and $40 to $70 a month. A routine exam is $60 to $135; an emergency starts around $150 and can reach $500.", source: "box-turtle-cost-guide" },
+        { label: "Budget", value: "Roughly $325 to $489 upfront and $40 to $70 a month. A routine exam is $60 to $135; an emergency starts around $150 and can reach $500.", source: "box-turtle-cost-guide" },
         { label: "Adult size", value: "4.5 to 7 inches (11 to 18 cm)." },
         { label: "Lifespan", value: "Documented past 60, with very old individuals over 100.", source: "box-turtle-cost-guide" },
         { label: "Hygiene", value: "Wash hands with soap after any contact, and never clean the enclosure or water dish in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
