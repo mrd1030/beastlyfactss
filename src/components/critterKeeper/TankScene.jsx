@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Check, RotateCcw, RotateCw } from 'lucide-react';
 import { drawGrid } from '@/lib/critterKeeper/pixel';
-import { DRAGON_H, DRAGON_W, buildDragon, dragonPalette } from '@/lib/critterKeeper/sprites/dragon';
+import { DRAGON_H, DRAGON_W, TILT_ANCHOR, TILT_W, buildDragon, dragonPalette } from '@/lib/critterKeeper/sprites/dragon';
 import { DECOR, ITEM_PAL, itemSprite } from '@/lib/critterKeeper/sprites/items';
 import { TANK_SLOTS } from '@/lib/critterKeeper/rules';
 import { baskRange, isDay } from '@/lib/critterKeeper/sim';
@@ -203,7 +203,26 @@ function drawScene(ctx, game, now, frame, pose, free = game.free || {}, selected
     }
   }
 
-  if (!hut) drawGrid(ctx, g, pal, dx, dy);
+  // Perched on the branch: tilted along it, facing uphill, feet on the bark.
+  const branch = !sleeping && game.perchUntil > now && free.branch ? freeBox(st.tank, 'branch', free.branch) : null;
+  if (branch) {
+    const rot = ((free.branch.rot || 0) * Math.PI) / 180;
+    // The perch is midway up the main limb (shape points 22,21 to 42,13).
+    const a = Math.atan2(-8, 20) + rot;
+    const d = { x: Math.cos(a), y: Math.sin(a) };
+    const up = d.y <= 0 ? d : { x: -d.x, y: -d.y };
+    const right = up.x >= 0;
+    const tilt = Math.max(-1.1, Math.min(1.1, Math.atan2(up.y, right ? up.x : -up.x)));
+    const n = d.x >= 0 ? { x: d.y, y: -d.x } : { x: -d.y, y: d.x };
+    const [px, py] = branch.g.toSprite(32, 17);
+    const fx = branch.x + px + n.x * 2.6;
+    const fy = branch.y + py + n.y * 2.6;
+    const tg = buildDragon({ lift, blink, mood: moodOf(game, now), tilt });
+    const ax = right ? TILT_ANCHOR.x : TILT_W - 1 - TILT_ANCHOR.x;
+    drawGrid(ctx, tg, pal, Math.round(fx - ax), Math.round(fy - TILT_ANCHOR.y), { flip: !right });
+  } else if (!hut) {
+    drawGrid(ctx, g, pal, dx, dy);
+  }
 
   // The water dish sits in front, so a big hide never covers it.
   const fresh = now - game.waterAt < 24 * 3600e3;

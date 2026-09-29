@@ -147,6 +147,7 @@ export const ENRICHMENT = {
   dig: { label: 'Dig box' },
   roam: { label: 'Free roam, 15 minutes' },
   hunt: { label: 'Insect hunt' },
+  climb: { label: 'Climb the branch' },
 };
 
 // Growth guide weight table, midpoints, by age in days.

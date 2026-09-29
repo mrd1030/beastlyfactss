@@ -1,4 +1,4 @@
-import { makeGrid, pip } from '@/lib/critterKeeper/pixel';
+import { makeGrid, outline, pip } from '@/lib/critterKeeper/pixel';
 
 // The chibi bearded dragon, facing right. One sprite, drawn from shapes, so
 // every pose and mood lines up. Moods only swap palette colors.
@@ -25,8 +25,33 @@ export function dragonPalette(mood = 'normal') {
   return { ...DRAGON_PAL, ...(DRAGON_MOODS[mood] || {}) };
 }
 
+// Tilted sprites (perched on a branch) are drawn into a bigger grid that
+// pivots on the point between his feet, placed at TILT_ANCHOR.
+export const TILT_W = 64;
+export const TILT_H = 52;
+export const TILT_ANCHOR = { x: 32, y: 38 };
+const FEET = { x: 19, y: 29.5 };
+
+function tiltGrid(g, angle) {
+  const out = makeGrid(TILT_W, TILT_H);
+  const cos = Math.cos(angle);
+  const sin = Math.sin(angle);
+  for (let oy = 0; oy < TILT_H; oy++) {
+    for (let ox = 0; ox < TILT_W; ox++) {
+      const dx = ox + 0.5 - TILT_ANCHOR.x;
+      const dy = oy + 0.5 - TILT_ANCHOR.y;
+      const sx = Math.floor(FEET.x + dx * cos + dy * sin);
+      const sy = Math.floor(FEET.y - dx * sin + dy * cos);
+      out[oy][ox] = g[sy]?.[sx] ?? null;
+    }
+  }
+  return out;
+}
+
 // pose: 'idle' | 'eat' | 'sleep'. lift bobs the body a pixel; the feet stay put.
-export function buildDragon({ lift = 0, pose = 'idle', blink = false, mood = 'normal', zs = true } = {}) {
+// tilt (radians, negative is head up) rotates him around his feet into a
+// TILT_W x TILT_H grid.
+export function buildDragon({ lift = 0, pose = 'idle', blink = false, mood = 'normal', zs = true, tilt = 0 } = {}) {
   const W = DRAGON_W;
   const H = DRAGON_H;
   const g = makeGrid(W, H);
@@ -146,6 +171,8 @@ export function buildDragon({ lift = 0, pose = 'idle', blink = false, mood = 'no
     drawTail(true, 0.72);
     drawTail(false, 0.72);
   }
+
+  if (tilt) return outline(tiltGrid(g, tilt), 'o', ['c']);
 
   const out = g.map((row) => row.slice());
   for (let y = 0; y < H; y++) {

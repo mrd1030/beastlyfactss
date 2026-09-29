@@ -71,7 +71,13 @@ function rotated(parts, rot, [cx, cy]) {
   const rows = g.map((row, y) => (row.some(Boolean) ? y : -1)).filter((y) => y >= 0);
   const cols = g[0].map((_, x) => (g.some((row) => row[x]) ? x : -1)).filter((x) => x >= 0);
   const trimmed = g.slice(rows[0] - 1, rows.at(-1) + 2).map((row) => row.slice(cols[0] - 1, cols.at(-1) + 2));
-  return outline(trimmed);
+  const out = outline(trimmed);
+  // Shape coordinates to sprite pixels, for finding points on the item.
+  out.toSprite = (x, y) => {
+    const [tx, ty] = turn([x, y]);
+    return [tx - minX - (cols[0] - 1), ty - minY - (rows[0] - 1)];
+  };
+  return out;
 }
 
 function branch(rot = 0) {

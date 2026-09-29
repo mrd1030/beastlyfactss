@@ -527,6 +527,13 @@ function handle(s, now, { length }) {
 function enrich(s, now, { kind }) {
   if (!isDay(now)) return [asleep(s)];
   const E = ENRICHMENT[kind];
+  if (kind === 'climb') {
+    if (!s.free?.branch) return [{ text: 'Put the climbing branch in the tank first: drag it in from the items under the tank.', tone: 'info', guide: 'enrichment' }];
+    // Enrichment guide: climbing structure at more than one height.
+    s.perchUntil = now + 40 * 60e3;
+    s.m.fun += 25;
+    return [{ text: 'He climbs up his branch and settles in to survey the tank.', tone: 'good' }];
+  }
   if (kind === 'dig' && !placedDecor(s).includes('digbox')) {
     return [{ text: 'Put a dig box in the tank first: drag it in from the items under the tank.', tone: 'info', guide: 'enrichment' }];
   }
@@ -667,6 +674,7 @@ export function mood(s, now) {
   if (Object.keys(s.cond).length) return { emoji: '🤒', text: 'Not feeling well' };
   if (s.m.full < 25) return { emoji: '🍽️', text: 'Hungry, pacing the glass' };
   if (s.m.fun < 20) return { emoji: '🥱', text: 'Bored, glass surfing' };
+  if (s.perchUntil > now && s.free?.branch) return { emoji: '🌿', text: 'Perched on his branch' };
   if (s.setup.basking < baskRange(s, now)[0]) return { emoji: '🥶', text: 'Cold and sluggish' };
   return { emoji: '☀️', text: 'Basking under his lamp' };
 }
