@@ -20,9 +20,14 @@ function lookOf(s, now) {
   return 'normal';
 }
 
+// Problems whose fix is to leave him be (quiet time for a black beard, no
+// more D3 dusting) never call the player over.
+const LEAVE_BE = ['stress', 'd3'];
+
 function alertOf(s) {
   if (s.critical) return 'critical';
-  if (needsVet(s) || Object.keys(s.cond).length || s.m.full < 25 || s.m.water < 30) return 'alert';
+  const needsYou = Object.keys(s.cond).some((id) => !LEAVE_BE.includes(id));
+  if (needsVet(s) || needsYou || s.m.full < 25 || s.m.water < 30) return 'alert';
   return null;
 }
 
