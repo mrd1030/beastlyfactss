@@ -179,6 +179,12 @@ function step(s, t, dt) {
 
   // Loose substrate gets swallowed with food; a warm basking spot keeps
   // digestion moving.
+  // Up the branch on his own: a 25% chance each daytime hour, for half an hour.
+  if (day && s.free?.branch && !(s.perchUntil > t) && Math.random() < 0.25 * dt) {
+    s.perchUntil = t + 30 * 60e3;
+    m.fun += 10;
+  }
+
   const sub = SUBSTRATES[s.setup.substrate];
   if (day && sub.loose) h.gut += sub.gut * dt;
   if (day && warm) h.gut -= 0.3 * dt;
@@ -527,13 +533,6 @@ function handle(s, now, { length }) {
 function enrich(s, now, { kind }) {
   if (!isDay(now)) return [asleep(s)];
   const E = ENRICHMENT[kind];
-  if (kind === 'climb') {
-    if (!s.free?.branch) return [{ text: 'Put the climbing branch in the tank first: drag it in from the items under the tank.', tone: 'info', guide: 'enrichment' }];
-    // Enrichment guide: climbing structure at more than one height.
-    s.perchUntil = now + 40 * 60e3;
-    s.m.fun += 25;
-    return [{ text: 'He climbs up his branch and settles in to survey the tank.', tone: 'good' }];
-  }
   if (kind === 'dig' && !placedDecor(s).includes('digbox')) {
     return [{ text: 'Put a dig box in the tank first: drag it in from the items under the tank.', tone: 'info', guide: 'enrichment' }];
   }

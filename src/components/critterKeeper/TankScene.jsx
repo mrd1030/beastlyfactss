@@ -180,8 +180,30 @@ function drawScene(ctx, game, now, frame, pose, free = game.free || {}, selected
   }
   const pal = dragonPalette(moodOf(game, now));
 
+  // Perched on the branch: tilted along it, facing uphill, feet on the bark.
+  // Drawn right after the branch, so whatever is in front of the branch is
+  // in front of him too.
+  const branch = !sleeping && game.perchUntil > now && free.branch ? freeBox(st.tank, 'branch', free.branch) : null;
+  const perch = branch && (() => {
+    const rot = ((free.branch.rot || 0) * Math.PI) / 180;
+    // The perch is midway up the main limb (shape points 22,21 to 42,13).
+    const a = Math.atan2(-8, 20) + rot;
+    const d = { x: Math.cos(a), y: Math.sin(a) };
+    const up = d.y <= 0 ? d : { x: -d.x, y: -d.y };
+    const right = up.x >= 0;
+    const tilt = Math.max(-1.1, Math.min(1.1, Math.atan2(up.y, right ? up.x : -up.x)));
+    const n = d.x >= 0 ? { x: d.y, y: -d.x } : { x: -d.y, y: d.x };
+    const [px, py] = branch.g.toSprite(32, 17);
+    const fx = branch.x + px + n.x * 2.6;
+    const fy = branch.y + py + n.y * 2.6;
+    const tg = buildDragon({ lift, blink, mood: moodOf(game, now), tilt });
+    const ax = right ? TILT_ANCHOR.x : TILT_W - 1 - TILT_ANCHOR.x;
+    drawGrid(ctx, tg, pal, Math.round(fx - ax), Math.round(fy - TILT_ANCHOR.y), { flip: !right });
+  });
+
   for (const it of items) {
     drawGrid(ctx, it.g, ITEM_PAL, it.x, it.y);
+    if (perch && it.id === 'branch') perch();
     if (it === hut) {
       // Only his pixels that land on the dark inside of the doorway.
       for (let y = 0; y < DRAGON_H; y++) {
@@ -203,26 +225,7 @@ function drawScene(ctx, game, now, frame, pose, free = game.free || {}, selected
     }
   }
 
-  // Perched on the branch: tilted along it, facing uphill, feet on the bark.
-  const branch = !sleeping && game.perchUntil > now && free.branch ? freeBox(st.tank, 'branch', free.branch) : null;
-  if (branch) {
-    const rot = ((free.branch.rot || 0) * Math.PI) / 180;
-    // The perch is midway up the main limb (shape points 22,21 to 42,13).
-    const a = Math.atan2(-8, 20) + rot;
-    const d = { x: Math.cos(a), y: Math.sin(a) };
-    const up = d.y <= 0 ? d : { x: -d.x, y: -d.y };
-    const right = up.x >= 0;
-    const tilt = Math.max(-1.1, Math.min(1.1, Math.atan2(up.y, right ? up.x : -up.x)));
-    const n = d.x >= 0 ? { x: d.y, y: -d.x } : { x: -d.y, y: d.x };
-    const [px, py] = branch.g.toSprite(32, 17);
-    const fx = branch.x + px + n.x * 2.6;
-    const fy = branch.y + py + n.y * 2.6;
-    const tg = buildDragon({ lift, blink, mood: moodOf(game, now), tilt });
-    const ax = right ? TILT_ANCHOR.x : TILT_W - 1 - TILT_ANCHOR.x;
-    drawGrid(ctx, tg, pal, Math.round(fx - ax), Math.round(fy - TILT_ANCHOR.y), { flip: !right });
-  } else if (!hut) {
-    drawGrid(ctx, g, pal, dx, dy);
-  }
+  if (!hut && !perch) drawGrid(ctx, g, pal, dx, dy);
 
   // The water dish sits in front, so a big hide never covers it.
   const fresh = now - game.waterAt < 24 * 3600e3;

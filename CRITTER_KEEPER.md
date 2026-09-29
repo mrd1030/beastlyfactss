@@ -68,8 +68,8 @@ the symptoms a real dragon would, each linking to the guide that explains why.
   crisp). Items add to enrichment; fewer than two hides adds stress. Moving
   things counts as rearranging, which the guide says to do occasionally,
   not constantly.
-- **Perching:** Enrichment > Climb the branch (needs the branch in the
-  tank) sends him up for about 40 minutes. He is drawn tilted along the
+- **Perching:** with the branch in the tank he climbs it on his own: a 25%
+  chance each daytime hour, for half an hour. He is drawn tilted along the
   branch, facing uphill whichever way it is rotated, pivoting on the point
   between his feet (`tilt` in `buildDragon`).
 
