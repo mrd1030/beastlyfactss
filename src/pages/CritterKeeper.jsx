@@ -618,6 +618,7 @@ export default function CritterKeeper() {
                   <Meter label="Trust" value={game.m.trust} />
                   <Meter label="Enrichment" value={game.m.fun} />
                   <Meter label="Tank clean" value={game.m.clean} />
+                  <Meter label="Calm" value={100 - game.h.stress} />
                 </div>
                 {game.poops > 0 && <p className="mt-3 text-xs font-body text-muted-foreground">💩 {game.poops} in the tank</p>}
               </div>

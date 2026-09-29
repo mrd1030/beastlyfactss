@@ -262,7 +262,10 @@ function step(s, t, dt) {
 
   // No hide, or a tank he has outgrown, keeps him on edge.
   const edgy = (small ? 0.3 : 0) + (hides(s) === 0 ? 0.15 : 0);
-  h.stress += edgy ? edgy * dt : -1 * dt;
+  // Left alone for two hours with a hide at each end, he calms down about
+  // four times faster (the handling guide: end the session, let him calm).
+  const calm = isCalming(s, t);
+  h.stress += edgy ? edgy * dt : -(calm ? 4 : 1) * dt;
   if (m.full < 10) h.fat -= 0.2 * dt;
   else if (h.fat > 0) h.fat -= 0.03 * dt;
 
@@ -429,6 +432,7 @@ function setupChange(s, now, opts) {
 // Moving decor counts as rearranging: great now and then, stressful when
 // constant. One drag session (an hour) counts once.
 function decorChange(s, now, { decor, free, layers }) {
+  s.lastBother = now;
   const before = placedDecor(s).length;
   if (decor) s.decor = decor;
   if (free) s.free = free;
@@ -676,6 +680,7 @@ function serveSalad(s, now, { plants = [], dust, mist }) {
 }
 
 function soak(s, now) {
+  s.lastBother = now;
   if (within(s.logs.soaks, now, DAY).length) {
     s.h.stress += 10;
     return [{ text: 'He already had a soak today. Once or twice a week is plenty.', tone: 'warn', guide: 'feeding' }];
@@ -696,6 +701,7 @@ function soak(s, now) {
 }
 
 function handle(s, now, { length }) {
+  s.lastBother = now;
   if (!isDay(now)) return [asleep(s)];
   const parts = [];
   if (daysHome(s, now) < SETTLE_DAYS) {
@@ -737,6 +743,7 @@ function enrich(s, now, { kind }) {
     s.h.stress += 10;
     return [{ text: 'He is still settling in. Give him his first week (a day here) in his tank first.', tone: 'warn', guide: 'handling' }];
   }
+  if (kind === 'roam') s.lastBother = now;
   s.m.fun += kind === 'roam' ? 35 : 30;
   if (kind === 'roam') s.h.fat -= 3;
   if (kind === 'hunt') s.m.full += 5;
@@ -768,6 +775,12 @@ function clean(s, now) {
   s.m.clean = 100;
   const stool = stoolReport(s, now);
   return [{ text: had ? `Spot cleaned. ${stool.text}` : `Nothing to pick up. ${stool.text}`, tone: stool.tone === 'good' ? 'good' : stool.tone, guide: 'growth' }];
+}
+
+// Quiet time: nobody has handled, soaked or rearranged him for two hours,
+// and he has a hide at each end.
+export function isCalming(s, t) {
+  return t - (s.lastBother || 0) >= 2 * 3600e3 && hides(s) >= 2;
 }
 
 export function vetReadyAt(s) {
@@ -936,6 +949,17 @@ export function nextStep(s, now) {
     return { text: `${s.name} is in real trouble. He has stopped eating and can barely lift his head. A vet can still save him, but only in the next ${left} hours.`, action: 'vet', urgent: true };
   }
   if (needsVet(s)) return { text: `${s.name} needs a vet.`, action: 'vet' };
+  if (s.cond.stress || s.h.stress >= 50) {
+    const quiet = Math.max(0, Math.ceil((2 * 3600e3 - (now - (s.lastBother || 0))) / 3600e3));
+    return {
+      text: quiet
+        ? `He's stressed. Give him some quiet time: no handling, soaks or rearranging for ${quiet === 1 ? 'about an hour' : `a couple of hours`}.`
+        : hides(s) < 2
+          ? "He's stressed. Two hides, one warm and one cool, help him calm down."
+          : "He's stressed, but calming down. Keep leaving him be.",
+      action: hides(s) < 2 && !quiet ? 'decorate' : null,
+    };
+  }
   const fix = nextFix(s, now);
   if (fix) return { text: fix.setup ? 'Something in his tank is wrong. Check the tank.' : 'He needs hides: one warm, one cool.', action: fix.setup ? 'tank' : 'decorate' };
   if (!isDay(now)) return { text: 'He is asleep. Let him rest until the lights come on.', action: null };
