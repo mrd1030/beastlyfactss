@@ -2,7 +2,11 @@
 import { useState, useEffect } from "react";
 
 const TOAST_LIMIT = 20;
-const TOAST_REMOVE_DELAY = 1000000;
+// How long a closed toast stays in state (for its exit) before it is removed.
+const TOAST_REMOVE_DELAY = 1000;
+// How long a toast shows before it closes itself. Pass `duration` to a
+// toast() call to override it, or Infinity to keep it until closed.
+const TOAST_DURATION = 4000;
 
 const actionTypes = {
   ADD_TOAST: "ADD_TOAST",
@@ -122,10 +126,11 @@ function toast({ ...props }) {
   const dismiss = () =>
     dispatch({ type: actionTypes.DISMISS_TOAST, toastId: id });
 
+  const { duration = TOAST_DURATION, ...rest } = props;
   dispatch({
     type: actionTypes.ADD_TOAST,
     toast: {
-      ...props,
+      ...rest,
       id,
       open: true,
       onOpenChange: (open) => {
@@ -133,6 +138,9 @@ function toast({ ...props }) {
       },
     },
   });
+  // These toasts are plain elements, not Radix, so nothing closes them on a
+  // timer unless this does.
+  if (Number.isFinite(duration)) setTimeout(dismiss, duration);
 
   return {
     id,
