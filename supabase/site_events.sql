@@ -1,10 +1,11 @@
--- Site activity pings: quiz completions and push opt-ins land in
+-- Site activity pings: quiz completions, push opt-ins and new Critter
+-- Keeper dragons ("beardies") land in
 -- public.site_events, and each new row posts a notification to ntfy so it
 -- shows up on the owner's phone.
 --
 -- Where the rows come from:
---   - Quizzes: the browser inserts directly (src/lib/siteEvents.js). Anon may
---     insert quiz kinds only, never read.
+--   - Quizzes and Critter Keeper adoptions: the browser inserts directly
+--     (src/lib/siteEvents.js). Anon may insert those kinds only, never read.
 --   - Push opt-ins: a trigger on push_subscriptions.
 --   - Comments are NOT logged here: notify_new_comment (blog_comments_notify)
 --     already pings ntfy with Approve/Reject buttons, and this would double it.
@@ -21,10 +22,16 @@
 
 create table if not exists public.site_events (
   id bigint generated always as identity primary key,
-  kind text not null check (kind in ('personality_quiz', 'themed_quiz', 'animal_quiz', 'push_opt_in')),
+  kind text not null check (kind in ('personality_quiz', 'themed_quiz', 'animal_quiz', 'push_opt_in', 'beardie_adopted')),
   label text not null default '' check (char_length(label) <= 160),
   created_at timestamptz not null default now()
 );
+
+-- Kinds added after the table first existed: create table if not exists
+-- leaves the old check in place, so replace it.
+alter table public.site_events drop constraint if exists site_events_kind_check;
+alter table public.site_events add constraint site_events_kind_check
+  check (kind in ('personality_quiz', 'themed_quiz', 'animal_quiz', 'push_opt_in', 'beardie_adopted'));
 
 create index if not exists site_events_created_at_idx on public.site_events (created_at desc);
 
@@ -34,7 +41,7 @@ drop policy if exists "anyone can log a quiz" on public.site_events;
 create policy "anyone can log a quiz"
   on public.site_events for insert
   to anon, authenticated
-  with check (kind in ('personality_quiz', 'themed_quiz', 'animal_quiz'));
+  with check (kind in ('personality_quiz', 'themed_quiz', 'animal_quiz', 'beardie_adopted'));
 
 revoke all on public.site_events from anon, authenticated;
 grant insert on public.site_events to anon, authenticated;
@@ -48,10 +55,10 @@ security definer
 set search_path = public
 as $$
 begin
-  if new.kind in ('personality_quiz', 'themed_quiz', 'animal_quiz')
+  if new.kind in ('personality_quiz', 'themed_quiz', 'animal_quiz', 'beardie_adopted')
      and (select count(*) from public.site_events
           where created_at > now() - interval '1 hour'
-            and kind in ('personality_quiz', 'themed_quiz', 'animal_quiz')) >= 300 then
+            and kind in ('personality_quiz', 'themed_quiz', 'animal_quiz', 'beardie_adopted')) >= 300 then
     return null;
   end if;
   return new;
@@ -88,6 +95,7 @@ begin
     when 'themed_quiz' then 'Quiz finished'
     when 'animal_quiz' then 'Beastlypedia quiz finished'
     when 'push_opt_in' then 'New push subscriber'
+    when 'beardie_adopted' then 'New Beardie adopted'
   end;
 
   perform net.http_post(
@@ -96,8 +104,9 @@ begin
       'topic', topic,
       'title', title,
       'message', coalesce(nullif(new.label, ''), title),
-      'tags', jsonb_build_array(case when new.kind = 'push_opt_in' then 'bell'
-                                     else 'tada' end),
+      'tags', jsonb_build_array(case new.kind when 'push_opt_in' then 'bell'
+                                              when 'beardie_adopted' then 'lizard'
+                                              else 'tada' end),
       'priority', 2
     )
   );

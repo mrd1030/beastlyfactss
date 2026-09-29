@@ -1,9 +1,9 @@
 import { supabase, isSupabaseConfigured } from '@/api/supabaseClient';
 
-// Logs a quiz completion to public.site_events, which pings the owner's phone
-// through ntfy (see supabase/site_events.sql). Push opt-ins are logged by a
-// database trigger and comments already ping on their own, so only quizzes
-// call this.
+// Logs a quiz completion or a Critter Keeper adoption to public.site_events,
+// which pings the owner's phone through ntfy (see supabase/site_events.sql).
+// Push opt-ins are logged by a database trigger and comments already ping on
+// their own, so only those two call this.
 //
 // Fire and forget: a failed insert must never touch the results screen. One
 // row per kind + label per tab session, so replaying a quiz doesn't re-ping.

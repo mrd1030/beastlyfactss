@@ -5,6 +5,7 @@ import { ArrowRight, BookOpen, Bug, Info, Droplets, Hand, Leaf, RotateCcw, Sofa,
 import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
 import { setWidgetOn, useCritterGame, widgetOn } from '@/lib/critterKeeper/useCritterGame';
 import { useDialogFocus } from '@/lib/critterKeeper/ui';
+import { logSiteEvent } from '@/lib/siteEvents';
 import {
   ENRICHMENT, GROWTH_BANDS, GUIDES, MARKS, HANDLE_LENGTHS, HEAT_SOURCES, INSECTS, DUSTS, PLANTS, SUBSTRATES, TANKS, UVB_MOUNTS, UVB_TYPES, CONDITIONS,
 } from '@/lib/critterKeeper/rules';
@@ -619,7 +620,16 @@ export default function CritterKeeper() {
 
         {!ready && <div className="h-96 rounded-2xl bg-muted animate-pulse" aria-hidden="true" />}
 
-        {ready && !game && <Adopt lessons={lessons} onAdopt={(name) => setGame(newGame(name, Date.now(), lessons))} />}
+        {ready && !game && (
+          <Adopt
+            lessons={lessons}
+            onAdopt={(name) => {
+              const born = newGame(name, Date.now(), lessons);
+              setGame(born);
+              logSiteEvent('beardie_adopted', `Someone adopted a beardie named ${born.name}${lessons ? ` (after ${lessons.from})` : ''}`);
+            }}
+          />
+        )}
 
         {ready && game?.dead && <Memorial game={game} onAdopt={adoptAgain} />}
 
