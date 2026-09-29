@@ -1,12 +1,14 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { ArrowRight, BarChart3, Bell, BellOff, Delete, HelpCircle, Lightbulb, RotateCcw, Share2, BookOpen } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BarChart3, Bell, BellOff, Check, Delete, HelpCircle, Lightbulb, RotateCcw, Share2, BookOpen, X } from 'lucide-react';
 import {
   LEVELS, MAX_GUESSES, answerForDay, dayNumber, keyStates, lettersOf, loadWords, pickUnlimited,
   score, shapeOf, shareText, validate, byAnswer,
 } from '@/lib/beastle/engine';
-import { STORAGE, liveStreak } from '@/lib/beastle/day';
+import { STORAGE, dateForDay, liveStreak } from '@/lib/beastle/day';
+import { beatShare, fetchDailyStats, logDailyResult } from '@/lib/beastle/results';
+import { beastleShareImage } from '@/lib/beastle/shareImage';
 import { bonusRound, factFor } from '@/lib/beastle/bonus';
 import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
@@ -416,6 +418,79 @@ function BeastleReminder() {
   );
 }
 
+// How everyone else did on today's daily. Logs this player's result first
+// (once per device per day, which also covers anyone who finished before
+// this existed), then reads the day's totals.
+function EveryoneToday({ day, guesses }) {
+  const [stats, setStats] = useState(null);
+  useEffect(() => {
+    let cancelled = false;
+    logDailyResult(day, guesses)
+      .then(() => fetchDailyStats(day))
+      .then((s) => { if (!cancelled) setStats(s); });
+    return () => { cancelled = true; };
+  }, [day, guesses]);
+
+  if (!stats || stats.played < 1) return null;
+  const solvedPct = Math.round((stats.wins / stats.played) * 100);
+  const avg = stats.wins
+    ? (stats.dist.reduce((sum, n, i) => sum + n * (i + 1), 0) / stats.wins).toFixed(1)
+    : null;
+  const beat = beatShare(stats, guesses);
+  return (
+    <div className="mt-4 rounded-2xl bg-primary/10 px-4 py-3 text-sm font-body text-foreground">
+      <p>
+        {`${stats.played.toLocaleString()} ${stats.played === 1 ? 'player' : 'players'} today · ${solvedPct}% solved${avg ? ` · ${avg} guesses on average` : ''}`}
+      </p>
+      {beat != null && stats.played >= 3 && (
+        <p className="font-bold mt-0.5">{`You did better than ${beat}% of players`}</p>
+      )}
+    </div>
+  );
+}
+
+const formatDay = (n) =>
+  new Date(`${dateForDay(n)}T12:00:00Z`).toLocaleDateString(undefined, { month: 'short', day: 'numeric', timeZone: 'UTC' });
+
+// Every past daily, newest first. Replays never touch the streak, the stats
+// or everyone's totals.
+function ArchiveList({ today, archive, onPick }) {
+  const days = [];
+  for (let n = today - 1; n >= 1; n--) days.push(n);
+  if (!days.length) {
+    return <p className="py-10 text-center text-sm text-muted-foreground font-body">Past puzzles show up here from tomorrow.</p>;
+  }
+  return (
+    <div className="grid grid-cols-3 sm:grid-cols-4 gap-2">
+      {days.map((n) => {
+        const g = archive[n];
+        const status = g?.done ? (g.won ? 'won' : 'lost') : g?.guesses?.length ? 'playing' : 'new';
+        return (
+          <button
+            key={n}
+            type="button"
+            onClick={() => onPick(n)}
+            className={`rounded-xl border px-2 py-3 text-center transition-colors ${
+              status === 'won' ? 'border-primary/40 bg-primary/10'
+                : status === 'lost' ? 'border-border bg-muted/60'
+                  : 'border-border bg-card hover:border-secondary/40'
+            }`}
+          >
+            <span className="block font-display font-bold text-base text-foreground">{`#${n}`}</span>
+            <span className="block text-[11px] text-muted-foreground font-body">{formatDay(n)}</span>
+            <span className="mt-1 flex items-center justify-center gap-1 text-[11px] font-body font-bold">
+              {status === 'won' && <><Check className="w-3.5 h-3.5 text-primary dark:text-accent" />{`${g.guesses.length}/${MAX_GUESSES}`}</>}
+              {status === 'lost' && <><X className="w-3.5 h-3.5 text-muted-foreground" />Missed</>}
+              {status === 'playing' && <span className="text-secondary">In progress</span>}
+              {status === 'new' && <span className="text-secondary">Play</span>}
+            </span>
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
 const LEVEL_OPTIONS = [
   ['easy', 'Easy', 'Easy: animals everyone knows, like lions and dolphins'],
   ['medium', 'Medium', 'Medium: everything in Easy, plus animals most people have heard of'],
@@ -531,6 +606,8 @@ export default function Beastle() {
   const [bonus, setBonus] = useLocalStorage(STORAGE.bonus, null);
   const [, setJournal] = useLocalStorage(STORAGE.journal, []);
   const [unlimited, setUnlimited, unlimitedLoaded] = useLocalStorage(STORAGE.unlimited, EMPTY_UNLIMITED);
+  const [archive, setArchive, archiveLoaded] = useLocalStorage(STORAGE.archive, {});
+  const [archiveDay, setArchiveDay] = useState(null);
   const { recordQuizCompletion, recordBeastleStreak } = useFavoritesCtx();
 
   // On this page "Install" / "Add to Home Screen" offers the Beastle app
@@ -562,7 +639,7 @@ export default function Beastle() {
     loadWords().then(setWords);
   }, []);
 
-  const ready = today !== null && dailyLoaded && statsLoaded && unlimitedLoaded;
+  const ready = today !== null && dailyLoaded && statsLoaded && unlimitedLoaded && archiveLoaded;
   const dailyEntry = today ? answerForDay(today) : null;
   const dailyGame = daily?.day === today ? daily : { day: today, guesses: [], done: false, won: false };
 
@@ -676,15 +753,49 @@ export default function Beastle() {
     setJournal((j) => (j.some((x) => x.answer === item.answer) ? j : [...j, item]));
   }, [setJournal]);
 
+  const archiveRef = useRef(archive);
+  archiveRef.current = archive;
+  const archiveEntry = archiveDay ? answerForDay(archiveDay) : null;
+  const archiveGame = (archiveDay && archive[archiveDay]) || { guesses: [], done: false, won: false };
+
+  // Replays of past dailies: saved per day, nothing else is touched.
+  const submitArchive = useCallback((guess) => {
+    const all = archiveRef.current;
+    const game = all[archiveDay] || { guesses: [], done: false, won: false };
+    if (game.done || !archiveEntry) return;
+    const guesses = [...game.guesses, guess];
+    const won = guess === lettersOf(archiveEntry.answer);
+    const next = { ...all, [archiveDay]: { guesses, won, done: won || guesses.length >= MAX_GUESSES } };
+    archiveRef.current = next;
+    setArchive(next);
+    if (won) celebrate();
+  }, [archiveDay, archiveEntry, setArchive]);
+
+  const nextUnplayedArchive = () => {
+    for (let n = (archiveDay || today) - 1; n >= 1; n--) if (!archive[n]?.done) return n;
+    for (let n = today - 1; n > (archiveDay || 0); n--) if (!archive[n]?.done) return n;
+    return null;
+  };
+
   const share = () => {
+    const streak = liveStreak(stats, today);
     const text = shareText({
       title: `Beastle #${today}`,
       guesses: dailyGame.guesses,
       answer: dailyEntry.answer,
       won: dailyGame.won,
-      streak: liveStreak(stats, today),
+      streak,
     });
-    shareQuizResult({ title: 'Beastle | Beastly Facts', text, url: 'https://beastlyfacts.com/beastle/' });
+    // Started inside the click; shareQuizResult awaits it on phones and
+    // ignores it on desktop, where the text goes to the clipboard.
+    const image = beastleShareImage({
+      day: today,
+      guesses: dailyGame.guesses,
+      answer: dailyEntry.answer,
+      won: dailyGame.won,
+      streak,
+    });
+    shareQuizResult({ title: 'Beastle | Beastly Facts', text, url: 'https://beastlyfacts.com/beastle/', image });
   };
 
   const pageTitle = 'Beastle: The Daily Animal Word Game | Beastly Facts';
@@ -700,14 +811,14 @@ export default function Beastle() {
         <meta property="og:description" content={pageDescription} />
         <meta property="og:url" content="https://beastlyfacts.com/beastle/" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/og/beastle.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Beastle, the daily animal word game from Beastly Facts" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Beastle: The Daily Animal Word Game" />
         <meta name="twitter:description" content={pageDescription} />
-        <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/og/beastle.jpg" />
       </Helmet>
 
       <div className="max-w-lg mx-auto px-4 pt-8 pb-16">
@@ -743,7 +854,7 @@ export default function Beastle() {
         )}
 
         <div className="flex gap-1 p-1 bg-muted rounded-2xl mb-5" role="tablist">
-          {[['daily', "Today's Beastle"], ['unlimited', 'Unlimited']].map(([id, label]) => (
+          {[['daily', 'Today'], ['unlimited', 'Unlimited'], ['archive', 'Archive']].map(([id, label]) => (
             <button
               key={id}
               type="button"
@@ -767,6 +878,7 @@ export default function Beastle() {
             {dailyGame.done && (
               <>
                 <Reveal entry={dailyEntry} won={dailyGame.won} guesses={dailyGame.guesses.length}>
+                  <EveryoneToday day={today} guesses={dailyGame.won ? dailyGame.guesses.length : null} />
                   <div className="flex flex-col sm:flex-row gap-2 justify-center mt-4">
                     <button type="button" onClick={share} className="inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground font-body font-bold text-sm px-5 py-2.5 rounded-2xl">
                       <Share2 className="w-4 h-4" /> Share result
@@ -821,6 +933,36 @@ export default function Beastle() {
             <p className="text-center text-xs text-muted-foreground font-body">
               {`${unlimited.wins || 0} solved of ${unlimited.played || 0} played`}
             </p>
+          </div>
+        )}
+
+        {ready && mode === 'archive' && !archiveEntry && (
+          <div className="space-y-4">
+            <p className="text-center text-xs font-body font-bold text-accent-ink bg-accent/15 rounded-xl py-2 px-3">
+              Every past Beastle. Replays never count toward your streak.
+            </p>
+            <ArchiveList today={today} archive={archive} onPick={setArchiveDay} />
+          </div>
+        )}
+
+        {ready && mode === 'archive' && archiveEntry && (
+          <div className="space-y-5">
+            <div className="flex items-center justify-between gap-2">
+              <button type="button" onClick={() => setArchiveDay(null)} className="inline-flex items-center gap-1.5 text-sm font-body font-bold text-foreground">
+                <ArrowLeft className="w-4 h-4" /> All puzzles
+              </button>
+              <p className="text-xs font-body font-bold text-muted-foreground">{`Beastle #${archiveDay} · ${formatDay(archiveDay)}`}</p>
+            </div>
+            <Game entry={archiveEntry} guesses={archiveGame.guesses} done={archiveGame.done} words={words} onSubmit={submitArchive} />
+            {archiveGame.done && (
+              <Reveal entry={archiveEntry} won={archiveGame.won} guesses={archiveGame.guesses.length}>
+                {nextUnplayedArchive() && (
+                  <button type="button" onClick={() => setArchiveDay(nextUnplayedArchive())} className="mt-4 inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground font-body font-bold text-sm px-5 py-2.5 rounded-2xl">
+                    {`Play #${nextUnplayedArchive()}`} <ArrowRight className="w-4 h-4" />
+                  </button>
+                )}
+              </Reveal>
+            )}
           </div>
         )}
 

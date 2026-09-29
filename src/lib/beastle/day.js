@@ -22,6 +22,7 @@ export const STORAGE = {
   bonus: 'beastle-bonus',
   journal: 'beastle-journal',
   unlimited: 'beastle-unlimited',
+  archive: 'beastle-archive',
 };
 
 // A streak survives until a full day is missed: won today or yesterday.

@@ -40,4 +40,38 @@ await sharp(any).resize(192, 192).png().toFile(out('beastle-192.png'));
 await sharp(any).resize(512, 512).png().toFile(out('beastle-512.png'));
 await sharp(any).resize(180, 180).png().toFile(out('beastle-apple-touch-180.png'));
 await sharp(maskable).resize(512, 512).png().toFile(out('beastle-maskable-512.png'));
-console.log('Beastle icons written to public/pwa/');
+// Link preview for /beastle/ (og:image, 1200x630): the icon art on the
+// left, the name, a line of copy and a solved tile row on the right.
+const W = 1200;
+const H = 630;
+const GREEN = '#154B3D';
+const GOLD = '#D9A441';
+const GRAY = '#C9C0AF';
+const rows = [[GRAY, GOLD, GRAY, GRAY, GOLD, GRAY, GRAY], [GREEN, GREEN, GRAY, GOLD, GRAY, GREEN, GRAY], [GREEN, GREEN, GREEN, GREEN, GREEN, GREEN, GREEN]];
+const tile = 52;
+const gap = 10;
+const tilesSvg = rows.map((row, r) => row.map((c, i) =>
+  `<rect x="${600 + i * (tile + gap)}" y="${370 + r * (tile + gap)}" width="${tile}" height="${tile}" rx="10" fill="${c}"/>`).join('')).join('');
+const text = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
+  <text x="600" y="215" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="112" fill="#1D3226">Beastle</text>
+  <text x="604" y="285" font-family="Segoe UI, Arial, sans-serif" font-weight="600" font-size="40" fill="#5C6B60">The daily animal word game</text>
+  <text x="604" y="335" font-family="Segoe UI, Arial, sans-serif" font-weight="600" font-size="30" fill="#B5491B">Guess the hidden animal in six tries</text>
+  ${tilesSvg}
+</svg>`;
+// Edges feathered so the source's faint background gradient fades into
+// the flat canvas instead of showing a box.
+const feather = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="470" height="470">
+  <defs><filter id="f"><feGaussianBlur stdDeviation="10"/></filter></defs>
+  <rect x="22" y="22" width="426" height="426" rx="30" fill="#fff" filter="url(#f)"/>
+</svg>`);
+const art = await sharp(any).resize(470, 470).ensureAlpha()
+  .composite([{ input: feather, blend: 'dest-in' }])
+  .png().toBuffer();
+// Background taken from the art's own corner, so no box shows around it.
+const { data: corner } = await sharp(any).extract({ left: 2, top: 2, width: 1, height: 1 }).raw().toBuffer({ resolveWithObject: true });
+await sharp({ create: { width: W, height: H, channels: 3, background: { r: corner[0], g: corner[1], b: corner[2] } } })
+  .composite([{ input: art, left: 80, top: 80 }, { input: Buffer.from(text), left: 0, top: 0 }])
+  .jpeg({ quality: 88, mozjpeg: true })
+  .toFile(path.join(root, 'public/assets/og/beastle.jpg'));
+
+console.log('Beastle icons and public/assets/og/beastle.jpg written');
