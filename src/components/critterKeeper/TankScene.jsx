@@ -174,10 +174,15 @@ function drawScene(ctx, game, now, frame, pose, free = game.free || {}, selected
   }
   const drawDragon = () => drawGrid(ctx, g, dragonPalette(moodOf(game, now)), dx, dy);
 
-  if (sleeping && hideSlot) drawDragon();
   const items = layoutItems(game, free);
   for (const it of items) {
     drawGrid(ctx, it.g, ITEM_PAL, it.x, it.y);
+    // Asleep in a hut: the dark inside, then him, then the hut's walls over
+    // him, so he shows curled up in the doorway.
+    if (sleeping && it.slot === hideSlot) {
+      drawDragon();
+      drawGrid(ctx, itemSprite(it.id, 'shell'), ITEM_PAL, it.x, it.y);
+    }
     if (it.id === selected) {
       // Marching-ants box around the item picked for moving or layering.
       ctx.fillStyle = '#ffffff';

@@ -20,30 +20,42 @@ export const ITEM_PAL = {
   R: '#b8432a', r: '#e2733f', q: '#f5b169',
   // metal and glass
   X: '#9aa3ab', x: '#cfd6dc', K: '#e8edf0', k: '#c0392b',
+  // the dark inside of a hide
+  v: '#22150c', u: '#3a2618',
   // treat ball
   P: '#e0564a', p: '#f28b7f',
 };
 
-// Hides stand about half the tank's height, big enough for him to curl up in.
-function hide() {
+// Hides are little huts: about half the tank's height, big enough for him
+// to curl up in, with a dark, solid doorway. The 'shell' variant leaves the
+// doorway empty, for drawing him inside it.
+function hut(g, part) {
+  const out = outline(g);
+  if (part === 'shell') return out.map((row) => row.map((k) => (k === 'v' || k === 'u' ? null : k)));
+  return out;
+}
+
+function hide(part) {
   const g = makeGrid(40, 26);
   fillEllipse(g, 20, 26, 19.5, 25, 'b');
   // Bark grain and a lit top edge.
   for (let x = 3; x < 38; x += 4) for (let y = 3; y < 26; y++) if (g[y][x]) g[y][x] = 'B';
   for (let x = 8; x < 32; x++) if (g[3][x]) g[3][x] = 'h';
   for (let x = 12; x < 28; x++) if (g[2][x]) g[2][x] = 'h';
-  // The doorway.
-  fillEllipse(g, 20, 27, 9, 14, null);
-  return outline(g);
+  // The doorway, dark inside with a shadowed rim.
+  fillEllipse(g, 20, 27, 9, 14, 'u');
+  fillEllipse(g, 20, 28, 8, 13, 'v');
+  return hut(g, part);
 }
 
-function cave() {
+function cave(part) {
   const g = makeGrid(38, 25);
   fillEllipse(g, 19, 25, 18.5, 24, 's');
   fillEllipse(g, 14, 12, 9, 6, 't');
   for (const [x, y] of [[7, 14], [26, 6], [30, 14], [17, 5], [10, 20], [28, 20], [22, 10]]) g[y][x] = 'S';
-  fillEllipse(g, 20, 26, 8.5, 13, null);
-  return outline(g);
+  fillEllipse(g, 20, 26, 8.5, 13, 'u');
+  fillEllipse(g, 20, 27, 7.5, 12, 'v');
+  return hut(g, part);
 }
 
 // Free-placed items are drawn from their shapes after rotating them, so
