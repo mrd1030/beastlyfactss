@@ -741,6 +741,21 @@ export default function Beastle() {
     setUnlimited(next);
   }, [newUnlimited, setUnlimited]);
 
+  // Ends the current unlimited animal as a miss and shows the answer.
+  const giveUpUnlimited = useCallback(() => {
+    const u = unlimitedRef.current;
+    const cur = u.current;
+    if (!cur || cur.done) return;
+    const next = {
+      ...u,
+      current: { ...cur, done: true, won: false, gaveUp: true },
+      seen: [...new Set([...(u.seen || []), cur.answer])],
+      played: (u.played || 0) + 1,
+    };
+    unlimitedRef.current = next;
+    setUnlimited(next);
+  }, [setUnlimited]);
+
   const takeUnlimitedHint = useCallback((index) => {
     const u = unlimitedRef.current;
     if (!u.current || u.current.hintIndex != null || index == null) return;
@@ -923,6 +938,13 @@ export default function Beastle() {
                 onUse={takeUnlimitedHint}
               />
             </Game>
+            {!unlimited.current.done && (
+              <div className="text-center">
+                <button type="button" onClick={giveUpUnlimited} className="text-xs font-body font-bold text-muted-foreground hover:text-foreground underline underline-offset-4">
+                  Give up and show the answer
+                </button>
+              </div>
+            )}
             {unlimited.current.done && (
               <Reveal entry={unlimitedEntry} won={unlimited.current.won} guesses={unlimited.current.guesses.length}>
                 <button type="button" onClick={() => newUnlimited()} className="mt-4 inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground font-body font-bold text-sm px-5 py-2.5 rounded-2xl">
