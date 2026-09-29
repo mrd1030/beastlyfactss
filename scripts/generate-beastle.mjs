@@ -54,6 +54,9 @@ const OVERRIDES = {
   'enc:blue-tongue-skink': null,
   'enc:red-eared-slider': null,
   'enc:red-footed-tortoise': null,
+  // Coat types, not animals anyone would guess.
+  'enc:domestic-shorthair': null,
+  'enc:american-shorthair': null,
   // Beastlypedia
   'bp:african-elephant': 'Elephant',
   'bp:dolphin': 'Dolphin',

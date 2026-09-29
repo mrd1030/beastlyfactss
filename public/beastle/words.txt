@@ -1516,7 +1516,6 @@ amendments
 amends
 amenities
 amenity
-american
 amethyst
 amethysts
 amiability
@@ -46150,7 +46149,6 @@ shorter
 shortest
 shortfall
 shortfalls
-shorthair
 shorthand
 shorthorn
 shorthorns
