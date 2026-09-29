@@ -122,8 +122,13 @@ export function shareText({ title, guesses, answer, won, streak }) {
       return part;
     }).join(' ');
   });
-  const head = `${title} ${won ? guesses.length : 'X'}/${MAX_GUESSES}${streak > 1 ? ` 🔥${streak}` : ''}`;
-  return `${head}\n${rows.join('\n')}`;
+  const head = `🦎 ${title}: ${won ? guesses.length : 'X'}/${MAX_GUESSES}${streak > 1 ? ` 🔥${streak} day streak` : ''}`;
+  // The grid alone reads as random squares to anyone who has not played,
+  // so a line says what the game is and what the result means.
+  const line = won
+    ? `I guessed today's hidden animal in ${guesses.length} ${guesses.length === 1 ? 'try' : 'tries'} on Beastle, the daily animal word game. Can you beat me?`
+    : "Today's hidden animal on Beastle, the daily animal word game, beat me. Can you get it?";
+  return `${head}\n${line}\n\n${rows.join('\n')}`;
 }
 
 // Unlimited difficulty: which answer levels each setting plays.
