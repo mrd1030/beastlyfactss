@@ -134,6 +134,21 @@ const HARD = new Set([
 ]);
 const levelOf = (answer) => (EASY.has(answer) ? 'easy' : HARD.has(answer) ? 'hard' : 'medium');
 
+// Long two-word names never go in the daily. Past this many letters, the
+// daily uses one word instead (the last one, unless DAILY_SHORT says
+// otherwise), the reveal card still shows the full name, and the full
+// two-word answer stays in unlimited as Hard only. RED PANDA, FENNEC FOX and
+// the like stay two words.
+const DAILY_TWO_WORD_MAX = 11;
+// One-word daily answers for long names, keyed like OVERRIDES. null keeps the
+// animal out of the daily entirely (its full name stays in unlimited Hard).
+const DAILY_SHORT = {
+  'enc:boa-constrictor': 'Boa',
+  'enc:scottish-fold': null,
+  'bp:mantis-shrimp': null,
+};
+const letterCount = (answer) => answer.replace(/[ -]/g, '').length;
+
 // Days are numbered from launch in the site's timezone (America/New_York):
 // Beastle #1 is this date.
 // Must match EPOCH in src/lib/beastle/day.js.
@@ -213,6 +228,17 @@ async function main() {
       skipped.push(entry.key);
       return;
     }
+    // A long two-word daily name splits in two: the full name for unlimited
+    // Hard, and a one-word answer (same card) for the daily.
+    if (daily && /[ -]/.test(entry.answer) && letterCount(entry.answer) > DAILY_TWO_WORD_MAX) {
+      add({ ...entry, forceLevel: 'hard' }, false);
+      const short = Object.prototype.hasOwnProperty.call(DAILY_SHORT, entry.key)
+        ? DAILY_SHORT[entry.key]
+        : entry.answer.split(/[ -]/).pop();
+      // A hard animal stays out of the daily in any form.
+      if (short && !HARD.has(entry.answer)) add({ ...entry, key: `${entry.key}:daily`, answer: toAnswer(short) }, true);
+      return;
+    }
     const existing = entries.get(entry.answer);
     if (existing) {
       existing.daily = existing.daily || daily;
@@ -271,7 +297,7 @@ async function main() {
   }
 
   const pool = [...entries.values()]
-    .map((e) => ({ ...e, factIds: factsByAnswer.get(e.answer) || [], level: levelOf(e.answer) }))
+    .map(({ forceLevel, ...e }) => ({ ...e, factIds: factsByAnswer.get(e.answer) || [], level: forceLevel || levelOf(e.answer) }))
     .sort((a, b) => a.answer.localeCompare(b.answer));
 
   // Schedule: append-only list of daily answers.
