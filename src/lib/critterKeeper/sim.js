@@ -60,6 +60,18 @@ function growthTarget(age) {
 }
 
 function log(s, t, text, tone = 'info', guide = null) {
+  const top = s.log?.[0];
+  // The same thing again within a few hours stacks onto one entry.
+  if (top && top.text === text && t - top.t < 6 * 3600e3) {
+    const count = (top.count || 1) + 1;
+    s.log = [{ ...top, t, count }, ...s.log.slice(1)];
+    // Five in a row and he notices.
+    if (count === 5) {
+      s.what = t;
+      s.log = [{ t, text: `${s.name} stops and stares at you. What are you doing?`, tone: 'info', guide: null }, ...s.log].slice(0, 40);
+    }
+    return;
+  }
   s.log = [{ t, text, tone, guide }, ...(s.log || [])].slice(0, 40);
 }
 

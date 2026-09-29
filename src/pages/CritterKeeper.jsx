@@ -137,18 +137,26 @@ function SaladPanel({ onDo }) {
 }
 
 function HandlePanel({ onDo }) {
+  const [length, setLength] = useState('right');
   return (
-    <Field label="How long?">
-      {Object.entries(HANDLE_LENGTHS).map(([id, h]) => <Chip key={id} onClick={() => onDo('handle', { length: id })}>{h.label}</Chip>)}
-    </Field>
+    <div>
+      <Field label="How long?">
+        {Object.entries(HANDLE_LENGTHS).map(([id, h]) => <Chip key={id} active={length === id} onClick={() => setLength(id)}>{h.label}</Chip>)}
+      </Field>
+      <Go onClick={() => onDo('handle', { length })}>Handle him for {HANDLE_LENGTHS[length].label}</Go>
+    </div>
   );
 }
 
 function EnrichPanel({ onDo }) {
+  const [kind, setKind] = useState('dig');
   return (
-    <Field label="Pick one">
-      {Object.entries(ENRICHMENT).map(([id, e]) => <Chip key={id} onClick={() => onDo('enrich', { kind: id })}>{e.label}</Chip>)}
-    </Field>
+    <div>
+      <Field label="Pick one">
+        {Object.entries(ENRICHMENT).map(([id, e]) => <Chip key={id} active={kind === id} onClick={() => setKind(id)}>{e.label}</Chip>)}
+      </Field>
+      <Go onClick={() => onDo('enrich', { kind })}>Start: {ENRICHMENT[kind].label.toLowerCase()}</Go>
+    </div>
   );
 }
 
@@ -281,6 +289,15 @@ function GrowthPanel({ game, now, onDo, msg }) {
 function TodayCard({ game, now, onStep }) {
   const items = checklist(game, now);
   const done = items.filter((c) => c.done).length;
+  if (done === items.length) {
+    // Done for today: one line, with the streak today just earned.
+    return (
+      <div className="flex items-center justify-between bg-primary/10 border border-primary/30 rounded-2xl px-3 py-2.5 mb-4">
+        <p className="font-body font-bold text-sm text-primary">✓ Today&apos;s care is done</p>
+        <p className="text-xs font-body font-bold text-foreground">🔥 {game.streak + 1}-day streak</p>
+      </div>
+    );
+  }
   return (
     <div className="bg-card border border-border rounded-2xl p-3 mb-4">
       <div className="flex items-baseline justify-between mb-2">
@@ -302,7 +319,7 @@ function TodayCard({ game, now, onStep }) {
         ))}
       </div>
       <p className="mt-2 text-[11px] font-body text-muted-foreground">
-        {done === items.length ? 'All four done. The streak grows at midnight.' : `${done} of ${items.length} done. Finish all four today to keep the streak.`}
+        {`${done} of ${items.length} done. Finish all four today to keep the streak.`}
       </p>
     </div>
   );
@@ -437,7 +454,7 @@ function Log({ entries }) {
             <p className="text-[11px] font-body text-muted-foreground">
               {new Date(e.t).toLocaleString('en-US', { weekday: 'short', hour: 'numeric', minute: '2-digit' })}
             </p>
-            <p className="text-sm font-body text-foreground">{e.text}</p>
+            <p className="text-sm font-body text-foreground">{e.text}{e.count > 1 && <span className="ml-1.5 text-xs font-bold text-muted-foreground">×{e.count}</span>}</p>
             {e.guide && e.tone !== 'good' && <div className="mt-1"><GuideLink id={e.guide} /></div>}
           </li>
         ))}
@@ -454,6 +471,7 @@ export default function CritterKeeper() {
   const [msg, setMsg] = useState(null);
   const [eating, setEating] = useState(false);
   const [decorating, setDecorating] = useState(false);
+  const [confirmReset, setConfirmReset] = useState(false);
   const [tong, setTong] = useState(null); // the dust chosen for a Tong Time round
   const panelRef = useRef(null);
 
@@ -518,7 +536,13 @@ export default function CritterKeeper() {
     }
     if (PANELS[id]) {
       setOpen(toggle && open === id ? null : id);
-      setTimeout(() => panelRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+      // Scroll the panel to just below the pinned tank, not behind it.
+      setTimeout(() => {
+        const panel = panelRef.current;
+        if (!panel) return;
+        const tankBottom = document.querySelector('[data-tank-box]')?.getBoundingClientRect().bottom || 0;
+        window.scrollBy({ top: panel.getBoundingClientRect().top - tankBottom - 8, behavior: 'smooth' });
+      }, 50);
     } else {
       doAction(id);
     }
@@ -634,7 +658,7 @@ export default function CritterKeeper() {
             {open && (() => {
               const Panel = PANELS[open];
               return (
-                <div ref={panelRef} className="bg-card border border-border rounded-2xl p-4 mb-4 scroll-mt-72">
+                <div ref={panelRef} className="bg-card border border-border rounded-2xl p-4 mb-4">
                   <Panel
                     key={`${open}-${JSON.stringify(game.setup)}`}
                     game={game}
@@ -650,6 +674,25 @@ export default function CritterKeeper() {
                 </div>
               );
             })()}
+
+            {confirmReset && (
+              <div className="fixed inset-0 z-[60] bg-black/50 flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="ck-reset-title">
+                <div className="w-full max-w-sm bg-card border border-border rounded-2xl p-5 shadow-xl">
+                  <h2 id="ck-reset-title" className="font-display font-bold text-lg text-foreground mb-1">Are you sure?</h2>
+                  <p className="text-sm font-body text-muted-foreground mb-4">{game.name}, his tank and his care log will be gone for good. This cannot be undone.</p>
+                  <div className="flex gap-2 justify-end">
+                    <button type="button" onClick={() => setConfirmReset(false)} className="px-4 py-2 rounded-xl border border-border font-body font-bold text-sm hover:bg-muted">Keep {game.name}</button>
+                    <button
+                      type="button"
+                      onClick={() => { setConfirmReset(false); setGame(null); setMsg(null); setOpen(null); }}
+                      className="px-4 py-2 rounded-xl bg-destructive text-destructive-foreground font-body font-bold text-sm"
+                    >
+                      Start over
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
 
             {tong && (
               <TongTime
@@ -671,7 +714,7 @@ export default function CritterKeeper() {
 
             <button
               type="button"
-              onClick={() => { if (window.confirm(`Start over? ${game.name} and his care log will be gone.`)) { setGame(null); setMsg(null); setOpen(null); } }}
+              onClick={() => setConfirmReset(true)}
               className="mt-6 inline-flex items-center gap-1.5 text-xs font-body text-muted-foreground hover:text-foreground"
             >
               <RotateCcw className="w-3.5 h-3.5" /> Start over

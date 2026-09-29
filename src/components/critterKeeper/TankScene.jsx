@@ -191,6 +191,8 @@ function drawScene(ctx, game, now, frame, pose, free = game.free || {}, selected
   // Perched on the branch: tilted along it, facing uphill, feet on the bark.
   // Drawn right after the branch, so whatever is in front of the branch is
   // in front of him too.
+  // Where his head is, for the "?!" bubble; the perch moves it.
+  let head = { x: fx + 12 * scale, y: fy - 34 * scale };
   const branch = !sleeping && game.perchUntil > now && free.branch ? freeBox(st.tank, 'branch', free.branch) : null;
   const perch = branch && (() => {
     const rot = ((free.branch.rot || 0) * Math.PI) / 180;
@@ -205,6 +207,7 @@ function drawScene(ctx, game, now, frame, pose, free = game.free || {}, selected
     const bx = branch.x + px + n.x * 2.6;
     const by = branch.y + py + n.y * 2.6;
     const ax = right ? TILT_ANCHOR.x : TILT_W - 1 - TILT_ANCHOR.x;
+    head = { x: bx + (right ? 12 : -12) * scale, y: by - 34 * scale };
     drawGrid(ctx, body({ tilt }), pal, Math.round(bx - ax), Math.round(by - TILT_ANCHOR.y), { flip: !right });
   });
 
@@ -233,6 +236,20 @@ function drawScene(ctx, game, now, frame, pose, free = game.free || {}, selected
   }
 
   if (!hut && !perch) drawGrid(ctx, grid, pal, ox, oy);
+
+  // "?!" over his head for a few seconds after the player repeats something
+  // five times in a row.
+  if (Date.now() - (game.what || 0) < 5000 && !hut) {
+    const bx = Math.round(head.x) - 5;
+    const by = Math.round(head.y) - 9;
+    ctx.fillStyle = '#2b1d12';
+    ctx.fillRect(bx - 1, by - 1, 13, 10);
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(bx, by, 11, 8);
+    ctx.fillRect(bx + 2, by + 8, 2, 2);
+    ctx.fillStyle = '#c0392b';
+    [[2, 1], [3, 1], [4, 1], [5, 2], [4, 3], [3, 4], [3, 6], [8, 1], [8, 2], [8, 3], [8, 4], [8, 6]].forEach(([a, b]) => ctx.fillRect(bx + a, by + b, 1, 1));
+  }
 
   // The water dish sits in front, so a big hide never covers it.
   const fresh = now - game.waterAt < 24 * 3600e3;
@@ -522,6 +539,7 @@ export default function TankScene({ game, now, pose = 'idle', onDecor, badge, fo
     <div className="contents">
       <div
         ref={boxRef}
+        data-tank-box
         onClick={tapTank}
         onPointerDown={grabAt}
         className="sticky z-20 select-none rounded-2xl overflow-hidden border border-border shadow-md bg-card"
