@@ -348,6 +348,7 @@ async function main() {
   let singleQueue = [];
   let multiQueue = [];
   const recent = (n) => new Set(schedule.slice(-n));
+  const groupOf = new Map(pool.map((e) => [e.answer, e.group]));
   const next = (queueName) => {
     const refill = () => shuffle(queueName === 'multi' ? multis : singles, rand);
     let queue = queueName === 'multi' ? multiQueue : singleQueue;
@@ -357,7 +358,19 @@ async function main() {
     for (const group of RELATED) {
       if (group.some((a) => avoid.has(a))) group.forEach((a) => avoid.add(a));
     }
-    const idx = queue.findIndex((a) => !avoid.has(a));
+    // Mix the kinds of animal so the group hint changes day to day. Falls
+    // back step by step if nothing in the queue fits.
+    // Mammals are about half the pool, so only they may come back after one
+    // day; every other group waits at least three.
+    const prevGroup = groupOf.get(schedule[schedule.length - 1]);
+    const lastThree = schedule.slice(-3).map((a) => groupOf.get(a));
+    const spaced = (a) => {
+      const g = groupOf.get(a);
+      return g !== prevGroup && (g === 'mammal' || !lastThree.includes(g));
+    };
+    let idx = queue.findIndex((a) => !avoid.has(a) && spaced(a));
+    if (idx === -1) idx = queue.findIndex((a) => !avoid.has(a) && groupOf.get(a) !== prevGroup);
+    if (idx === -1) idx = queue.findIndex((a) => !avoid.has(a));
     const pick = queue.splice(idx === -1 ? 0 : idx, 1)[0];
     if (queueName === 'multi') multiQueue = queue; else singleQueue = queue;
     return pick;
