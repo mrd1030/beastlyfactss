@@ -28,6 +28,39 @@ function matches(text, variants) {
   return variants.some(v => lower.includes(v));
 }
 
+const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+// `whole` requires the word to end too: "rat" but not "ratio".
+function matchesWord(text, variants, whole = false) {
+  if (typeof text !== 'string') return false;
+  const lower = text.toLowerCase();
+  return variants.some(v => new RegExp(`\\b${escapeRe(v)}${whole ? '\\b' : ''}`).test(lower));
+}
+
+// Each section keeps only MAX_PER_TYPE results, so order decides what shows.
+// Substring matching alone let "rat" fill the encyclopedia list with
+// Invertebrates (the category) and Ceratophrys (a scientific name) before
+// Fancy Rat was reached, and put "Ratio" articles ahead of "Pet Rat". Real
+// word matches come first (the name before other fields, the exact word
+// before a word that starts with it), and letters buried inside a word come
+// last, so "cat" lists the cat breeds before Sulcata Tortoise. Array.sort is
+// stable, so data order still breaks ties.
+function rank(title, others, variants) {
+  if (matchesWord(title, variants, true)) return 0;
+  if (matchesWord(title, variants)) return 1;
+  if (others.some(t => matchesWord(t, variants, true))) return 2;
+  if (others.some(t => matchesWord(t, variants))) return 3;
+  if (matches(title, variants)) return 4;
+  return 5;
+}
+
+function ranked(items, titleOf, othersOf, variants) {
+  return items
+    .map(item => ({ item, r: rank(titleOf(item), othersOf(item), variants) }))
+    .sort((a, b) => a.r - b.r)
+    .map(({ item }) => item);
+}
+
 // Longest aliases first so "leo gecko" wins before "leo" gets a chance to
 // rewrite part of it. Word-boundary regexes so "leo" never fires inside
 // "leopard" and "bp" never fires inside a longer word.
@@ -166,8 +199,10 @@ export function searchLocalContent(query) {
   const { variants } = normalizeQuery(query);
   if (!variants.length) return { guides: [], encyclopedia: [], glossary: [], beastlypedia: [], articles: [] };
 
-  const guides = allGuides
-    .filter(g => matches(g.name, variants) || matches(g.tagline, variants) || matches(g.petType, variants))
+  const guides = ranked(
+    allGuides.filter(g => matches(g.name, variants) || matches(g.tagline, variants) || matches(g.petType, variants)),
+    g => g.name, g => [g.tagline, g.petType], variants,
+  )
     .slice(0, MAX_PER_TYPE)
     .map(g => ({
       key: `guide-${g.id}`,
@@ -178,8 +213,10 @@ export function searchLocalContent(query) {
       to: `/guides/${g.id}/`,
     }));
 
-  const encyclopedia = encyclopediaAnimals
-    .filter(a => matches(a.name, variants) || matches(a.scientific, variants) || matches(a.category, variants))
+  const encyclopedia = ranked(
+    encyclopediaAnimals.filter(a => matches(a.name, variants) || matches(a.scientific, variants) || matches(a.category, variants)),
+    a => a.name, a => [a.scientific, a.category], variants,
+  )
     .slice(0, MAX_PER_TYPE)
     .map(a => ({
       key: `enc-${a.id}`,
@@ -190,8 +227,10 @@ export function searchLocalContent(query) {
       to: `/encyclopedia/animal/${a.id}/`,
     }));
 
-  const beastlypedia = beastfiles
-    .filter(b => matches(b.name, variants) || matches(b.scientific, variants) || matches(b.tagline, variants) || matches(b.group, variants) || (b.alsoKnownAs || []).some(a => matches(a, variants)))
+  const beastlypedia = ranked(
+    beastfiles.filter(b => matches(b.name, variants) || matches(b.scientific, variants) || matches(b.tagline, variants) || matches(b.group, variants) || (b.alsoKnownAs || []).some(a => matches(a, variants))),
+    b => b.name, b => [b.scientific, b.tagline, b.group, ...(b.alsoKnownAs || [])], variants,
+  )
     .slice(0, MAX_PER_TYPE)
     .map(b => ({
       key: `beastfile-${b.id}`,
@@ -202,26 +241,31 @@ export function searchLocalContent(query) {
       to: `/beastlypedia/${b.id}/`,
     }));
 
-  const glossary = [];
+  const glossaryHits = [];
   GLOSSARY_CATEGORIES.forEach(cat => {
     cat.terms.forEach(t => {
-      if (glossary.length >= MAX_PER_TYPE) return;
       if (matches(t.term, variants) || (t.aliases || []).some(a => matches(a, variants)) || matches(t.definition, variants)) {
-        glossary.push({
-          key: `gloss-${slugify(t.term)}`,
-          type: 'Glossary',
-          emoji: cat.emoji || '📘',
-          title: t.term,
-          subtitle: t.definition,
-          to: `/glossary#${slugify(t.term)}`,
-        });
+        glossaryHits.push({ t, cat });
       }
     });
   });
+  const glossary = ranked(glossaryHits, ({ t }) => t.term, ({ t }) => [...(t.aliases || []), t.definition], variants)
+    .slice(0, MAX_PER_TYPE)
+    .map(({ t, cat }) => ({
+      key: `gloss-${slugify(t.term)}`,
+      type: 'Glossary',
+      emoji: cat.emoji || '📘',
+      title: t.term,
+      subtitle: t.definition,
+      to: `/glossary#${slugify(t.term)}`,
+    }));
 
-  const articles = mdxPosts
-    .filter(p => !isChroniclesPost(p))
-    .filter(p => matches(p.title, variants) || matches(p.excerpt, variants) || (p.tags || []).some(t => matches(t, variants)))
+  const articles = ranked(
+    mdxPosts
+      .filter(p => !isChroniclesPost(p))
+      .filter(p => matches(p.title, variants) || matches(p.excerpt, variants) || (p.tags || []).some(t => matches(t, variants))),
+    p => p.title, p => [p.excerpt, ...(p.tags || [])], variants,
+  )
     .slice(0, MAX_PER_TYPE)
     .map(p => ({
       key: `article-${p._id}`,
