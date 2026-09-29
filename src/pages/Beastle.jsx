@@ -23,12 +23,14 @@ const KEY_ROWS = ['QWERTYUIOP', 'ASDFGHJKL', 'ZXCVBNM'];
 const TILE_STYLE = {
   correct: 'bg-primary border-primary text-primary-foreground',
   present: 'bg-accent border-accent text-accent-foreground',
-  absent: 'bg-muted-foreground/60 border-transparent text-background',
+  // Pale on purpose: absent has to read as clearly lighter than the dark
+  // green, not just a different hue, or color-blind players lose it.
+  absent: 'bg-muted-foreground/40 border-transparent text-foreground',
 };
 const KEY_STYLE = {
   correct: 'bg-primary text-primary-foreground',
   present: 'bg-accent text-accent-foreground',
-  absent: 'bg-muted-foreground/40 text-foreground/60',
+  absent: 'bg-muted-foreground/40 text-foreground',
 };
 
 // Seconds until the next day on the site clock, for the "next Beastle" line.
@@ -420,7 +422,7 @@ function HowToPlay() {
       <ul className="space-y-1">
         <li><span className="inline-block w-4 h-4 rounded-sm bg-primary align-middle mr-2" />Green: right letter, right spot.</li>
         <li><span className="inline-block w-4 h-4 rounded-sm bg-accent align-middle mr-2" />Gold: the letter is in the name, but somewhere else. This is Wordle&apos;s yellow.</li>
-        <li><span className="inline-block w-4 h-4 rounded-sm bg-muted-foreground/60 align-middle mr-2" />Gray: the letter is not in the name.</li>
+        <li><span className="inline-block w-4 h-4 rounded-sm bg-muted-foreground/40 align-middle mr-2" />Gray: the letter is not in the name.</li>
       </ul>
       <p>Everyone gets the same animal each day, and a new one arrives at midnight Eastern.</p>
     </div>
