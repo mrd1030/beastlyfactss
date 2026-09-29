@@ -838,7 +838,7 @@ export default function Beastle() {
   // Share sends text and link only: with a file attached the Android sheet
   // switches to its image layout, which has no Copy, and apps like Threads
   // keep the picture and drop the text. Without one the link unfurls into
-  // the Beastle preview card (public/assets/og/beastle.jpg). Share image,
+  // the Beastle preview card (public/assets/og/beastle.jpg). Share result image,
   // on phones, attaches the result grid picture as well, like the quizzes.
   const share = ({ withImage = false } = {}) => {
     const streak = liveStreak(stats, today);
@@ -943,7 +943,7 @@ export default function Beastle() {
                     </button>
                     {canShareImage() && (
                       <button type="button" onClick={() => share({ withImage: true })} className="inline-flex items-center justify-center gap-2 bg-muted text-foreground font-body font-bold text-sm px-5 py-2.5 rounded-2xl">
-                        <ImageIcon className="w-4 h-4" /> Share image
+                        <ImageIcon className="w-4 h-4" /> Share result image
                       </button>
                     )}
 
