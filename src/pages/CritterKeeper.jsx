@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { ArrowRight, BookOpen, Bug, Droplets, Hand, Leaf, RotateCcw, Sofa, Sparkles, Stethoscope, Thermometer, Trash2, Waves } from 'lucide-react';
 import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
-import { useCritterGame } from '@/lib/critterKeeper/useCritterGame';
+import { setWidgetOn, useCritterGame, widgetOn } from '@/lib/critterKeeper/useCritterGame';
 import {
   ENRICHMENT, GROWTH_BANDS, GUIDES, MARKS, HANDLE_LENGTHS, HEAT_SOURCES, INSECTS, DUSTS, PLANTS, SUBSTRATES, TANKS, UVB_MOUNTS, UVB_TYPES, CONDITIONS,
 } from '@/lib/critterKeeper/rules';
@@ -473,6 +473,8 @@ export default function CritterKeeper() {
   const [eating, setEating] = useState(false);
   const [decorating, setDecorating] = useState(false);
   const [confirmReset, setConfirmReset] = useState(false);
+  const [bubbleOn, setBubbleOn] = useState(true);
+  useEffect(() => setBubbleOn(widgetOn()), []);
   const [tong, setTong] = useState(null); // the dust chosen for a Tong Time round
   const panelRef = useRef(null);
 
@@ -622,6 +624,22 @@ export default function CritterKeeper() {
                   <Meter label="Calm" value={100 - game.h.stress} />
                 </div>
                 {game.poops > 0 && <p className="mt-3 text-xs font-body text-muted-foreground">💩 {game.poops} in the tank</p>}
+                <div className="mt-4 pt-3 border-t border-border flex items-center justify-between gap-3">
+                  <span id="ck-bubble-label" className="text-sm font-body text-foreground">
+                    Show {game.name} on every page
+                    <span className="block text-[11px] text-muted-foreground">A little bubble in the corner of the site, so you can check on him anywhere.</span>
+                  </span>
+                  <button
+                    type="button"
+                    role="switch"
+                    aria-checked={bubbleOn}
+                    aria-labelledby="ck-bubble-label"
+                    onClick={() => { setWidgetOn(!bubbleOn); setBubbleOn(!bubbleOn); }}
+                    className={`relative shrink-0 w-11 h-6 rounded-full transition-colors ${bubbleOn ? 'bg-primary' : 'bg-muted-foreground/40'}`}
+                  >
+                    <span className={`absolute top-0.5 left-0.5 w-5 h-5 rounded-full bg-card shadow transition-transform ${bubbleOn ? 'translate-x-5' : ''}`} />
+                  </button>
+                </div>
               </div>
             </div>
 

@@ -1,5 +1,5 @@
 import React, { Suspense, lazy, useEffect, useState } from 'react';
-import { CRITTER_EVENT, hasGame } from '@/lib/critterKeeper/useCritterGame';
+import { CRITTER_EVENT, hasGame, widgetOn } from '@/lib/critterKeeper/useCritterGame';
 
 // Mounted on every page by AppLayout. It carries almost nothing: it only
 // checks, after the page has settled, whether a dragon exists, and only then
@@ -12,9 +12,7 @@ export default function CritterBubbleSlot() {
 
   useEffect(() => {
     if (window.__IS_PRERENDER__) return undefined;
-    const check = () => {
-      if (hasGame()) setShow(true);
-    };
+    const check = () => setShow(hasGame() && widgetOn());
     const idle = window.requestIdleCallback
       ? window.requestIdleCallback(check, { timeout: 4000 })
       : window.setTimeout(check, 1500);

@@ -60,3 +60,19 @@ export function useCritterGame() {
 }
 
 export const CRITTER_EVENT = EVENT;
+
+// The "Show Dex on every page" switch. On unless the player turns it off.
+const WIDGET_KEY = 'critter-keeper-widget';
+export function widgetOn() {
+  try {
+    return localStorage.getItem(WIDGET_KEY) !== 'off';
+  } catch {
+    return true;
+  }
+}
+export function setWidgetOn(on) {
+  try {
+    localStorage.setItem(WIDGET_KEY, on ? 'on' : 'off');
+  } catch { /* ignore */ }
+  window.dispatchEvent(new CustomEvent(EVENT, { detail: readGame() }));
+}
