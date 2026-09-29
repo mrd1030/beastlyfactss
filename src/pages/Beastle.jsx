@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, ArrowRight, BarChart3, Bell, BellOff, Check, Delete, HelpCircle, Lightbulb, RotateCcw, Share2, BookOpen, X } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BarChart3, Bell, BellOff, Check, Delete, HelpCircle, Image as ImageIcon, Lightbulb, RotateCcw, Share2, BookOpen, X } from 'lucide-react';
 import {
   LEVELS, MAX_GUESSES, answerForDay, dayNumber, keyStates, lettersOf, loadWords, pickUnlimited,
   score, shapeOf, shareText, validate, byAnswer,
@@ -12,7 +12,8 @@ import { bonusRound, factFor, maskFact } from '@/lib/beastle/bonus';
 import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { logSiteEvent } from '@/lib/siteEvents';
-import { shareQuizResult } from '@/lib/utils/quizShareImage';
+import { canShareImage, shareQuizResult } from '@/lib/utils/quizShareImage';
+import { beastleShareImage } from '@/lib/beastle/shareImage';
 import { SITE_TIMEZONE } from '@/lib/utils/date';
 import { useIsMobileViewport } from '@/lib/hooks/useIsMobileViewport';
 import { getBeastleReminder, getExistingSubscription, isPushSupported, setBeastleReminder } from '@/lib/pushNotifications';
@@ -834,12 +835,12 @@ export default function Beastle() {
     return null;
   };
 
-  // Text and link only, no attached picture. With a file attached the
-  // Android sheet switches to its image layout, which has no Copy, and
-  // apps like Threads keep the picture and drop the text. Without one,
-  // every app gets the text, the sheet keeps Copy, and the link unfurls
-  // into the Beastle preview card (public/assets/og/beastle.jpg).
-  const share = () => {
+  // Share sends text and link only: with a file attached the Android sheet
+  // switches to its image layout, which has no Copy, and apps like Threads
+  // keep the picture and drop the text. Without one the link unfurls into
+  // the Beastle preview card (public/assets/og/beastle.jpg). Share image,
+  // on phones, attaches the result grid picture as well, like the quizzes.
+  const share = ({ withImage = false } = {}) => {
     const streak = liveStreak(stats, today);
     const text = shareText({
       title: `Beastle #${today}`,
@@ -848,7 +849,11 @@ export default function Beastle() {
       won: dailyGame.won,
       streak,
     });
-    shareQuizResult({ title: 'Beastle | Beastly Facts', text, url: 'https://beastlyfacts.com/beastle/' });
+    // Started inside the click so the share still counts as user initiated.
+    const image = withImage
+      ? beastleShareImage({ day: today, guesses: dailyGame.guesses, answer: dailyEntry.answer, won: dailyGame.won, streak })
+      : undefined;
+    shareQuizResult({ title: 'Beastle | Beastly Facts', text, url: 'https://beastlyfacts.com/beastle/', image });
   };
 
   const pageTitle = 'Beastle: The Daily Animal Word Game | Beastly Facts';
@@ -936,6 +941,11 @@ export default function Beastle() {
                     <button type="button" onClick={() => share()} className="inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground font-body font-bold text-sm px-5 py-2.5 rounded-2xl">
                       <Share2 className="w-4 h-4" /> Share result
                     </button>
+                    {canShareImage() && (
+                      <button type="button" onClick={() => share({ withImage: true })} className="inline-flex items-center justify-center gap-2 bg-muted text-foreground font-body font-bold text-sm px-5 py-2.5 rounded-2xl">
+                        <ImageIcon className="w-4 h-4" /> Share image
+                      </button>
+                    )}
 
                   </div>
                   <p className="text-xs text-muted-foreground font-body mt-3">
