@@ -5,7 +5,7 @@ import { Heart, Share2, ChevronDown, ChevronUp, X, RotateCcw } from 'lucide-reac
 import { Link } from 'react-router-dom';
 import { facts } from '@/lib/data/facts';
 import { imagePathFor } from '@/lib/data/factImages';
-import { quizPhrase, quizShareImage, shareQuizResult } from '@/lib/utils/quizShareImage';
+import { quizShareImage, scoreShareText, shareQuizResult } from '@/lib/utils/quizShareImage';
 import { useFavoritesCtx, ACHIEVEMENTS } from '@/lib/FavoritesContext';
 import FactCard from '@/components/shared/FactCard';
 import FactModal from '@/components/shared/FactModal';
@@ -144,28 +144,32 @@ export default function Pack() {
         const isAnimalCard = qr.type === 'animal-quiz';
 
         const isThemedCard = qr.type === 'themed-quiz';
+        // Themed card descriptions end in "Scored 8/8 on ...", which the
+        // three-line clamp cut off mid-score. The score gets its own row, so
+        // the blurb drops it.
+        const blurb = isThemedCard ? qr.description.replace(/ Scored \d+\/\d+ on ".*"\.$/, '') : qr.description;
 
         const handleShareQuiz = () => {
           // An animal card has a score and a page worth linking to, a themed
           // card has both plus a named reward, and the personality result has
           // neither, so each gets its own wording.
           const text = isAnimalCard
-            ? `${qr.animalEmoji || '🐾'} I scored ${qr.score}/${qr.total} on the ${qr.animalName} quiz on BeastlyFacts! Think you can beat me?`
+            ? scoreShareText({ emoji: qr.animalEmoji || '🐾', title: qr.animalName, score: qr.score, total: qr.total })
             : isThemedCard
-              ? `${qr.emoji} I earned the "${qr.title}" card scoring ${qr.score}/${qr.total} on ${quizPhrase(qr.quizTitle)} at BeastlyFacts. Think you can beat me?`
-              : `${qr.emoji} I got ${qr.title} on BeastlyFacts!\n\n${qr.description}\n\nFind out your result at ${window.location.origin}/quiz`;
+              ? scoreShareText({ emoji: qr.emoji, title: qr.quizTitle, score: qr.score, total: qr.total })
+              : `${qr.emoji} I got ${qr.title} on BeastlyFacts! Which critter are you?`;
           const url = isAnimalCard
             ? `${window.location.origin}/encyclopedia/animal/${qr.animalId}/`
             : isThemedCard
               ? `${window.location.origin}/quiz/${qr.quizId}/`
-              : `${window.location.origin}/quiz/`;
+              : `${window.location.origin}/quiz/personality/`;
 
           // Themed cards also attach a picture of the card itself.
           if (isThemedCard) {
             const image = quizShareImage({
               emoji: qr.emoji,
               title: qr.title,
-              blurb: qr.description.replace(/ Scored \d+\/\d+ on ".*"\.$/, ''),
+              blurb,
               kicker: qr.score === qr.total ? 'Reward card earned' : 'Beastly Facts quiz card',
               line: `${qr.score}/${qr.total} on ${qr.quizTitle}`,
               fileName: `beastlyfacts-${qr.quizId}.png`,
@@ -173,11 +177,7 @@ export default function Pack() {
             shareQuizResult({ title: qr.title, text, url, image });
             return;
           }
-          if (navigator.share) {
-            navigator.share({ title: qr.title, text, url }).catch(() => {});
-          } else {
-            navigator.clipboard.writeText(`${text} ${url}`);
-          }
+          shareQuizResult({ title: qr.title, text, url });
         };
         // Shared by both card shapes so the confirmation behaves identically
         // whichever one is on screen.
@@ -235,11 +235,19 @@ export default function Pack() {
         }
 
         return (
-          <div key={qr.id} className="bg-card border border-border rounded-2xl p-5 relative">
+          <div key={qr.id} className={`bg-card border rounded-2xl p-5 relative ${isThemedCard && qr.score === qr.total ? 'border-secondary/50' : 'border-border'}`}>
             {removeSlot}
-            <span className="text-4xl block mb-2">{qr.emoji}</span>
+            <span className="text-4xl block mb-2" aria-hidden="true">{qr.emoji}</span>
             <h3 className="font-display font-bold text-lg pr-6">{qr.title}</h3>
-            <p className="text-sm text-muted-foreground mt-2 line-clamp-3">{qr.description}</p>
+            {isThemedCard && (
+              <div className="mt-1.5">
+                <p className="text-xs font-body font-semibold text-secondary leading-tight line-clamp-2">{qr.quizTitle}</p>
+                <span className="inline-block mt-1.5 text-xs font-body font-bold tabular-nums px-2 py-0.5 rounded-md bg-secondary text-secondary-foreground">
+                  {`${qr.score}/${qr.total}`}
+                </span>
+              </div>
+            )}
+            <p className="text-sm text-muted-foreground mt-2 line-clamp-3">{blurb}</p>
 
             <div className="flex flex-wrap items-center gap-2 mt-4">
               {/* Share Button */}

@@ -7,6 +7,8 @@
 // Returns null wherever the canvas or the platform can't do it, and the
 // caller falls back to a text-only share.
 
+import { toast } from '@/components/ui/use-toast';
+
 const S = 1080;
 const CREAM = '#F9F1E1';
 const INK = '#1D3226';
@@ -42,6 +44,15 @@ function roundRect(ctx, x, y, w, h, r) {
 export function quizPhrase(title, { quoted = false } = {}) {
   const name = quoted ? `"${title}"` : title;
   return /^the\s/i.test(title) ? `${name} quiz` : `the ${name} quiz`;
+}
+
+// The share message for any scored quiz. A perfect score cannot be beaten,
+// so it asks whether they know as much instead of daring them to beat it.
+export function scoreShareText({ emoji, title, score, total }) {
+  const quiz = quizPhrase(title);
+  return score === total
+    ? `${emoji} I got a perfect ${score}/${total} on ${quiz} at BeastlyFacts. Think you know as much as me?`
+    : `${emoji} Check out ${quiz} at BeastlyFacts and try to beat my ${score}/${total}!`;
 }
 
 // kicker: small orange line above the emoji ("Reward card earned").
@@ -136,13 +147,50 @@ export async function quizShareImage({ emoji, title, blurb, kicker, line, fileNa
   }
 }
 
-// Shares text + link, with the card image attached when the platform takes
-// files. The link goes in the text as well as url: several share targets
-// drop `url` once a file is attached. Desktop without the share sheet copies
-// the text and link instead.
+// Share sheets only earn their place on phones. Desktop Chrome and Edge have
+// navigator.share too, but it opens the Windows or macOS share panel, whose
+// "Copy" copies the attached image or nothing, never the text and link. So a
+// desktop copies the message straight to the clipboard and says so, and a
+// phone gets the share sheet with the card picture attached.
+// A touch-first device counts even when userAgentData says otherwise:
+// Android tablets report mobile: false and still have a share sheet worth
+// using. Touchscreen laptops keep a fine primary pointer, so they copy.
+const onPhone = () => navigator.userAgentData?.mobile === true
+  || (window.matchMedia?.('(pointer: coarse)').matches ?? false);
+
+// Clipboard API first; the hidden-textarea fallback covers browsers that
+// block it. Runs inside the click, before anything is awaited, so the
+// browser still counts it as user-initiated.
+function copyText(text) {
+  const done = () => toast({ title: 'Copied to your clipboard', description: 'Paste it anywhere to share your result.' });
+  const fallback = () => {
+    try {
+      const el = document.createElement('textarea');
+      el.value = text;
+      el.setAttribute('readonly', '');
+      el.style.position = 'fixed';
+      el.style.opacity = '0';
+      document.body.appendChild(el);
+      el.select();
+      const ok = document.execCommand('copy');
+      el.remove();
+      if (ok) done();
+      else toast({ title: 'Could not copy', description: text });
+    } catch {
+      toast({ title: 'Could not copy', description: text });
+    }
+  };
+  if (navigator.clipboard?.writeText) navigator.clipboard.writeText(text).then(done, fallback);
+  else fallback();
+}
+
+// Shares text + link. On a phone the card image rides along when the
+// platform takes files, and the link goes in the text as well as url because
+// several share targets drop `url` once a file is attached. `image` is
+// optional: cards with no picture share text and link only.
 export async function shareQuizResult({ title, text, url, image }) {
-  if (!navigator.share) {
-    navigator.clipboard?.writeText(`${text} ${url}`);
+  if (!navigator.share || !onPhone()) {
+    copyText(`${text} ${url}`);
     return;
   }
   const file = await image;
