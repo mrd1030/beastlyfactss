@@ -16,7 +16,25 @@ function linkedCell(cell) {
     : cell;
 }
 
-export default function ComparisonTable({ 
+function hasAffiliateLink(node) {
+  if (Array.isArray(node)) return node.some(hasAffiliateLink);
+  if (!React.isValidElement(node)) return false;
+  return node.type === AffiliateLink || hasAffiliateLink(node.props?.children);
+}
+
+// A table that puts a dollar figure beside an Amazon link gets a note saying
+// the figure is a category estimate. The Associates Program Policies only
+// allow Amazon prices that come from the Creators API or PA API, so these
+// ranges must never read as the linked listing's current price.
+function needsPriceNote(rows, linkCovers) {
+  const hasPrice = rows.some((row) => row.some((cell) => typeof cell === 'string' && /\$\d/.test(cell)));
+  if (!hasPrice) return false;
+  return rows.some((row) =>
+    hasAffiliateLink(row[0]) || (linkCovers && typeof row[0] === 'string' && getAffiliateForItem(row[0]))
+  );
+}
+
+export default function ComparisonTable({
   headers = [], 
   rows = [], 
   className = '',
@@ -57,6 +75,11 @@ export default function ComparisonTable({
           ))}
         </tbody>
       </table>
+      {needsPriceNote(rows, linkCovers) && (
+        <p className="px-4 py-2 border-t border-border text-xs font-body text-muted-foreground">
+          Typical price ranges across retailers, not current Amazon prices.
+        </p>
+      )}
     </div>
   );
 }

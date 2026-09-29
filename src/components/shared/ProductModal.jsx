@@ -110,13 +110,7 @@ export default function ProductModal({ product, onClose }) {
             {product.product}
           </h2>
 
-          {/* Rating hidden for the same reason as in ProductCard.jsx: a stale
-              copied number, not a live rating. */}
-          {product.price && (
-            <div className="flex items-center gap-3 mb-3">
-              <span className="text-sm font-body font-semibold text-foreground">{product.price}</span>
-            </div>
-          )}
+          {/* Rating and price hidden for the same reasons as in ProductCard.jsx. */}
 
           {product.description && (
             <p className="text-sm font-body text-muted-foreground mb-4 leading-relaxed">

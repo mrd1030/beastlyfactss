@@ -20,15 +20,11 @@ export default function ProductCard({ product, onSelect, className = '' }) {
         <p className="font-body font-bold text-sm text-foreground group-hover:text-secondary transition-colors leading-snug">
           {product.product}
         </p>
-        {/* The star rating is deliberately not shown. The number in the data
-            file was copied from the retailer at research time and never
-            refreshed, so on the page it read as a live rating it is not. The
-            price range is kept because it is presented as a range, not a fact. */}
-        {product.price && (
-          <div className="flex items-center gap-2 mt-1">
-            <span className="text-xs font-body text-muted-foreground">{product.price}</span>
-          </div>
-        )}
+        {/* Rating and price are deliberately not shown. The Associates Program
+            Policies allow Amazon star ratings, prices and availability only when
+            they come from the Creators API or PA API, and these were copied by
+            hand at research time. The data stays in affiliateProducts.js so it
+            can come back once the API is wired up. */}
         <div className="mt-auto pt-2 flex items-center gap-1 text-xs font-body font-semibold text-secondary">
           <ShoppingCart className="w-3.5 h-3.5 flex-shrink-0" />
           {onSelect ? `See on ${retailerLabel}` : `Shop on ${retailerLabel}`}
