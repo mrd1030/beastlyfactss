@@ -8,6 +8,7 @@ import { quizQuestions, quizResults } from '@/lib/data/quizQuestions';
 import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
 import { useScrollBackIntoView } from '@/lib/hooks/useScrollBackIntoView';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
+import { logSiteEvent } from '@/lib/siteEvents';
 import { getThemedQuiz } from '@/lib/data/quizzes';
 import { getClassicQuiz, personalityQuiz } from '@/lib/data/quizzes/classics';
 import { quizPhrase, quizShareImage, shareQuizResult } from '@/lib/utils/quizShareImage';
@@ -79,6 +80,7 @@ function PersonalityQuizPage() {
     setResult(match);
     saveMatch(match);
     recordQuizCompletion();
+    logSiteEvent('personality_quiz', `Matched ${match.name} ${match.emoji}`);
     setStep('result');
     // Dynamic import (mirrors HeroSection's confetti trigger): canvas-confetti
     // lives in its own manualChunk (vite.config.js) so this stays on demand.

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from '@/lib/motion-safe';
 import { ArrowLeft, ArrowRight, CheckCircle2, XCircle, ChevronRight, RotateCcw, Share2, Trophy } from 'lucide-react';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
+import { logSiteEvent } from '@/lib/siteEvents';
 import { useQuizScores } from '@/lib/hooks/useQuizScores';
 import { useScrollBackIntoView } from '@/lib/hooks/useScrollBackIntoView';
 import { getDisplayDate } from '@/lib/utils/date';
@@ -160,6 +161,7 @@ export default function ThemedQuizPage({ quiz }) {
       const finalScore = score;
       recordScore(quiz.id, finalScore, total);
       recordQuizCompletion();
+      logSiteEvent('themed_quiz', `${quiz.title}: ${finalScore}/${total}`);
       setPackStatus(savePackCard(finalScore));
       clearProgress();
       setStep('results');

@@ -3,6 +3,7 @@ import { motion } from '@/lib/motion-safe';
 import { CheckCircle2, XCircle, RotateCcw, Share2, Check, Layers } from 'lucide-react';
 import { generateAnimalQuiz } from '@/lib/utils/generateAnimalQuiz';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
+import { logSiteEvent } from '@/lib/siteEvents';
 import { useScrollBackIntoView } from '@/lib/hooks/useScrollBackIntoView';
 
 export default function AnimalQuiz({ animal }) {
@@ -53,6 +54,7 @@ export default function AnimalQuiz({ animal }) {
     if (index + 1 >= total) {
       setFinished(true);
       recordQuizCompletion();
+      logSiteEvent('animal_quiz', `${animal.name}: ${score}/${total}`);
       celebrate(score);
     } else {
       setIndex(i => i + 1);
