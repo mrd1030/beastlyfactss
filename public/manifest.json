@@ -20,5 +20,31 @@
       "type": "image/png",
       "purpose": "any"
     }
+  ],
+  "shortcuts": [
+    {
+      "name": "Beastle",
+      "short_name": "Beastle",
+      "description": "Today's animal word game",
+      "url": "/beastle/",
+      "icons": [
+        {
+          "src": "/pwa/beastle-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "My Pack",
+      "url": "/pack/",
+      "icons": [
+        {
+          "src": "/pwa/icon-256.png",
+          "sizes": "256x256",
+          "type": "image/png"
+        }
+      ]
+    }
   ]
 }

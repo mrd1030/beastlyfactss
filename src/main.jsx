@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { HelmetProvider } from 'react-helmet-async'
 import App from '@/App.jsx'
 import { preloadForCurrentRoute } from '@/lib/routePreload'
+import { initBeastleAppMode } from '@/lib/beastle/appMode'
 import '@/index.css'
 
 // A successful boot means this load matches the current deploy - clear any
@@ -77,6 +78,10 @@ const app = (
 //     prerendering the same way as useLocalStorage.js's deferred reads -
 //     otherwise they can settle before prerender.mjs captures the page,
 //     baking state a fresh client's first render can't match yet.
+// Before hydration and before the splash lifts, so the installed Beastle app
+// never shows the site's own header first.
+initBeastleAppMode();
+
 preloadForCurrentRoute().finally(() => {
   ReactDOM.hydrateRoot(document.getElementById('root'), app);
 

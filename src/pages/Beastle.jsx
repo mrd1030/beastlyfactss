@@ -440,6 +440,27 @@ export default function Beastle() {
   const [unlimited, setUnlimited, unlimitedLoaded] = useLocalStorage(STORAGE.unlimited, EMPTY_UNLIMITED);
   const { recordQuizCompletion, recordBeastleStreak } = useFavoritesCtx();
 
+  // On this page "Install" / "Add to Home Screen" offers the Beastle app
+  // (public/beastle-manifest.json) instead of Beastly Facts. Head tags are
+  // swapped in place rather than through Helmet, because the browser reads
+  // the first manifest link and index.html already has one. Runs during
+  // prerender too, so the baked /beastle/ HTML carries the Beastle manifest.
+  useEffect(() => {
+    const swaps = [
+      ['link[rel="manifest"]', 'href', '/beastle-manifest.json'],
+      ['link[rel="apple-touch-icon"]', 'href', '/pwa/beastle-apple-touch-180.png'],
+      ['meta[name="apple-mobile-web-app-title"]', 'content', 'Beastle'],
+    ];
+    const previous = swaps.map(([sel, attr, value]) => {
+      const el = document.querySelector(sel);
+      if (!el) return null;
+      const old = el.getAttribute(attr);
+      el.setAttribute(attr, value);
+      return [el, attr, old];
+    });
+    return () => previous.forEach((p) => p && p[0].setAttribute(p[1], p[2]));
+  }, []);
+
   // The day is read after mount, never during prerender, so the baked HTML
   // is the same for everyone and the real puzzle appears on hydration.
   useEffect(() => {

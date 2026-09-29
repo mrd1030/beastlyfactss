@@ -4,6 +4,7 @@ import Navbar from './Navbar.jsx';
 import Footer from './Footer';
 import BottomTabs from './BottomTabs';
 import AchievementToast from '../shared/AchievementToast';
+import BeastleAppBar from '@/components/beastle/BeastleAppBar';
 import { useIsMobileViewport } from '@/lib/hooks/useIsMobileViewport';
 import { useSwipeBack } from '@/lib/hooks/useSwipeBack';
 
@@ -35,7 +36,7 @@ const PageLoadingFallback = () => (
 const RoutedContent = () => (
   <>
     <main className="flex-1 pt-14 pb-0 md:pb-0">
-      <div className="pb-16 md:pb-0">
+      <div className="pb-16 md:pb-0" data-app-main-pad>
         <Outlet />
       </div>
     </main>
@@ -105,6 +106,8 @@ export default function AppLayout() {
       )}
       {/* Mobile-only bottom navigation */}
       <BottomTabs />
+      {/* The installed Beastle app's own header and tabs; hidden elsewhere */}
+      <BeastleAppBar />
     </div>
   );
 }

@@ -8,7 +8,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-card border-t border-border mt-16">
+    <footer className="bg-card border-t border-border mt-16" data-site-chrome>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-12 pb-28 md:pb-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
 

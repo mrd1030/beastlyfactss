@@ -185,6 +185,7 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className="fixed top-0 left-0 right-0 z-50 transition-colors duration-300 navbar-safe-top"
+      data-site-chrome
     >
       <div className={`absolute inset-0 -z-10 transition-all duration-300 ${
         mobileOpen || scrolled

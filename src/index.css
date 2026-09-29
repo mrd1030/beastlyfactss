@@ -418,3 +418,10 @@ html, body {
 @media (prefers-reduced-motion: reduce) {
   .beastle-shake { animation: none; }
 }
+
+/* Installed Beastle app (src/lib/beastle/appMode.js): the site's header,
+   footer and tabs give way to the Beastle bar, on every screen size. */
+[data-beastle-app-only] { display: none; }
+.beastle-app [data-beastle-app-only] { display: block; }
+.beastle-app [data-site-chrome] { display: none !important; }
+.beastle-app [data-app-main-pad] { padding-bottom: calc(4rem + var(--safe-area-inset-bottom)); }
