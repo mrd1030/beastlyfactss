@@ -1,6 +1,6 @@
 import {
   ADULT_AGE_DAYS, AGE_SPEED, CONDITIONS, DUSTS, ENRICHMENT, GROWTH, GUIDES, HANDLE_LENGTHS, INSECTS,
-  LIGHTS_OFF, LIGHTS_ON, MARKS, MBD_STAGES, VET_COOLDOWN_HOURS, PLANTS, RANGES, SETTLE_DAYS, START_AGE_DAYS, STARTER_SETUP,
+  LIGHTS_OFF, LIGHTS_ON, MARKS, GROWTH_BANDS, MBD_STAGES, VET_COOLDOWN_HOURS, PLANTS, RANGES, SETTLE_DAYS, START_AGE_DAYS, STARTER_SETUP,
   SUBSTRATES, TANKS, UVB_MOUNTS, UVB_TYPES, BIO_ESTABLISH_DAYS, TANK_SLOTS,
 } from '@/lib/critterKeeper/rules';
 import { DECOR } from '@/lib/critterKeeper/sprites/items';
@@ -140,6 +140,9 @@ export function newGame(name, now) {
     streak: 0,
     bestStreak: 0,
     dayKey: dayKey(now),
+    today: freshToday(now),
+    weights: [],
+    lastDust: 0,
     dayOk: true,
     log: [],
   };
@@ -275,17 +278,17 @@ function step(s, t, dt) {
   if (d3 >= 5) addCond(s, 'd3', t);
   else if (d3 <= 2) dropCond(s, 'd3', t);
 
-  if (health(s) < 70) s.dayOk = false;
   const key = dayKey(t);
   if (key !== s.dayKey) {
-    if (s.dayOk) {
+    // The day that just ended keeps the streak only if its checklist was done.
+    if (checklistDone(s, t)) {
       s.streak += 1;
       s.bestStreak = Math.max(s.bestStreak, s.streak);
     } else {
       s.streak = 0;
     }
     s.dayKey = key;
-    s.dayOk = true;
+    s.today = freshToday(t);
   }
 }
 
@@ -298,6 +301,8 @@ export function tick(state, now) {
   s.marks = s.marks || [];
   if (s.toeLoss && !s.marks.includes('toe')) s.marks.push('toe');
   s.decor = s.decor || {};
+  s.today = s.today || freshToday(s.lastTick);
+  s.weights = s.weights || [];
   s.free = s.free || {};
   s.bio = s.bio || null;
   // Saves from before free placement kept the branch or hammock in a
@@ -449,6 +454,17 @@ function feedInsects(s, now, { insect, size, dust }) {
     parts.push({ text: 'Wild-caught insects can carry parasites and pesticides. Feed captive-bred insects.', tone: 'warn', guide: 'foods' });
   }
 
+  s.today.fed = true;
+  parts.push(...applyDust(s, now, dust, stage));
+  return parts;
+}
+
+function applyDust(s, now, dust, stage) {
+  const parts = [];
+  if (dust && dust !== 'none') {
+    s.today.dusted = true;
+    s.lastDust = now;
+  }
   if (dust === 'calcium') s.h.calcium += 35;
   if (dust === 'd3') {
     s.h.calcium += 35;
@@ -459,6 +475,92 @@ function feedInsects(s, now, { insect, size, dust }) {
   if (dust === 'none' && stage === 'juvenile' && s.h.calcium < 30) {
     parts.push({ text: 'Juveniles need calcium dusted on most feedings.', tone: 'warn', guide: 'feeding' });
   }
+  return parts;
+}
+
+// Why he cannot be fed right now, or null if he can.
+export function feedBlock(s, now) {
+  if (needsVet(s)) return `${s.name} needs a vet before anything else.`;
+  if (!isDay(now)) return `${s.name} is asleep. Feed him during the day, when his basking heat lets him digest.`;
+  if (s.m.full >= 85) return 'He is full right now. Try again later.';
+  return null;
+}
+
+// Tong Time: the mini game's result. Right-size prey fills him up; prey
+// wider than the space between his eyes adds impaction risk; a firefly
+// poisons him. Tong-feeding also counts as enrichment (foraging).
+function tongs(s, now, { good = 0, small = 0, big = 0, firefly = 0, dust = 'calcium' }) {
+  if (!isDay(now)) return [asleep(s)];
+  if (firefly) {
+    addCond(s, 'poisoned', now);
+    return [{ text: 'You fed him a firefly. A single firefly can kill a bearded dragon. Get him to a vet now.', tone: 'bad', guide: 'foods' }];
+  }
+  const eaten = good + small + big;
+  if (!eaten) return [{ text: 'He did not get anything that round.', tone: 'info', quiet: true }];
+  const stage = stageOf(s, now);
+  const parts = [];
+  const [bmin, bmax] = baskRange(s, now);
+  const per = stage === 'adult' ? 5 : 7;
+  if (s.setup.basking < bmin) {
+    s.m.full += eaten * 2;
+    s.h.gut += 10;
+    s.poopAt = s.poopAt || now + 30 * HOUR;
+    s.poopKind = 'undigested';
+    parts.push({ text: `He takes a few and loses interest. His basking spot is ${s.setup.basking}°F, below the ${bmin} to ${bmax}°F he needs to digest.`, tone: 'warn', guide: 'tank' });
+  } else {
+    s.m.full += good * per + (small + big) * Math.round(per / 2);
+    s.poopAt = s.poopAt || now + (stage === 'adult' ? 30 : 14) * HOUR;
+    s.poopKind = 'normal';
+    parts.push({ text: `Tong-fed ${eaten} insect${eaten === 1 ? '' : 's'}. Hand-feeding with tongs doubles as enrichment.`, tone: 'good' });
+  }
+  s.m.fun += 10;
+  s.lastInsects = now;
+  s.today.fed = true;
+  if (big) {
+    s.h.gut += 8 * big;
+    parts.push({ text: `${big} of those ${big === 1 ? 'was' : 'were'} too big. Prey should be no wider than the space between his eyes.`, tone: 'warn', guide: 'feeding' });
+  }
+  parts.push(...applyDust(s, now, dust, stage));
+  return parts;
+}
+
+// The growth guide's weight range for an age in days, interpolated.
+export function growthBand(age) {
+  const m = age / 30.4;
+  const B = GROWTH_BANDS;
+  if (m <= B[0][0]) return [B[0][1], B[0][2]];
+  for (let i = 1; i < B.length; i++) {
+    if (m <= B[i][0]) {
+      const f = (m - B[i - 1][0]) / (B[i][0] - B[i - 1][0]);
+      return [Math.round(B[i - 1][1] + (B[i][1] - B[i - 1][1]) * f), Math.round(B[i - 1][2] + (B[i][2] - B[i - 1][2]) * f)];
+    }
+  }
+  return [B.at(-1)[1], B.at(-1)[2]];
+}
+
+// The weekly weigh-in. One real day is one dragon week, so it is once a day.
+function weigh(s, now) {
+  const last = s.weights.at(-1);
+  if (last && dayKey(last.t) === dayKey(now)) return [{ text: `Already weighed today: ${last.g} g. Once a week (once a day here) is the routine.`, tone: 'info', guide: 'growth' }];
+  const age = ageDays(s, now);
+  const g = Math.max(1, Math.round(s.h.weight * (1 + (Math.random() - 0.5) * 0.03)));
+  const parts = [];
+  const [lo, hi] = growthBand(age);
+  const months = Math.round(age / 30.4);
+  if (g < lo || g > hi) parts.push({ text: `${g} g at ${months} months, ${g < lo ? 'under' : 'over'} the usual ${lo} to ${hi} g. Ranges are wide and plenty of healthy dragons fall outside them. The trend over the weeks matters more.`, tone: 'info', guide: 'growth' });
+  else parts.push({ text: `${g} g at ${months} months, inside the ${lo} to ${hi} g range for his age.`, tone: 'good' });
+  if (s.today.fed) parts.push({ text: 'Tip: weigh before his first meal, so a full stomach does not skew the reading.', tone: 'info', guide: 'growth' });
+  const stage = stageOf(s, now);
+  const back = s.weights.filter((w) => now - w.t >= 3 * DAY && now - w.t <= 5 * DAY);
+  if (stage === 'juvenile' && back.length && g <= Math.max(...back.map((w) => w.g))) {
+    parts.push({ text: 'His weight has not gone up in about three weeks. A juvenile stuck for three to four weeks needs a vet check.', tone: 'warn', guide: 'growth' });
+  }
+  const recent = s.weights.filter((w) => now - w.t <= 6 * DAY);
+  if (stage === 'adult' && recent.length && g < Math.max(...recent.map((w) => w.g)) * 0.9) {
+    parts.push({ text: 'He has lost about a tenth of his weight. Outside a laying cycle, that is a vet visit.', tone: 'warn', guide: 'growth' });
+  }
+  s.weights = [...s.weights, { t: now, age, g }].slice(-120);
+  s.today.weighed = true;
   return parts;
 }
 
@@ -495,7 +597,12 @@ function serveSalad(s, now, { plants = [], dust, mist }) {
     const n = within(s.logs.fruit, now, 7 * DAY).length;
     if (n > 2) parts.push({ text: `Fruit ${n} times this week. Once or twice a week at most.`, tone: 'warn', guide: 'foods' });
   }
-  if (dust) s.h.calcium += 20;
+  if (dust) {
+    s.h.calcium += 20;
+    s.today.dusted = true;
+    s.lastDust = now;
+  }
+  if (real.length) s.today.fed = true;
   if (mist) {
     s.m.water += 10;
     parts.push({ text: 'Misting the salad is how he gets extra water without making the tank humid.', tone: 'good' });
@@ -590,6 +697,7 @@ export function stoolReport(s, now) {
 }
 
 function clean(s, now) {
+  s.today.tray = true;
   const had = s.poops;
   s.poops = 0;
   s.m.clean = 100;
@@ -632,6 +740,7 @@ function vet(s, now) {
 
 export function act(state, type, opts = {}, now = Date.now()) {
   const s = tick(state, now);
+  if (s.today.key !== dayKey(now)) s.today = freshToday(now);
   if (needsVet(s) && !['vet', 'setup', 'fixnext', 'decor', 'bulb', 'water', 'clean'].includes(type)) {
     return { state: s, msg: { text: `${s.name} needs a vet before anything else.`, tone: 'bad', guide: 'health' } };
   }
@@ -648,6 +757,8 @@ export function act(state, type, opts = {}, now = Date.now()) {
     case 'handle': parts = handle(s, now, opts); break;
     case 'enrich': parts = enrich(s, now, opts); break;
     case 'clean': parts = clean(s, now); break;
+    case 'weigh': parts = weigh(s, now); break;
+    case 'tongs': parts = tongs(s, now, opts); break;
     case 'bulb':
       s.bulbAt = now;
       s.bulbWarned = false;
@@ -704,6 +815,27 @@ export function tankChecks(s, now) {
   ];
 }
 
+function freshToday(t) {
+  return { key: dayKey(t), fed: false, dusted: false, weighed: false, tray: false };
+}
+
+// Today's care checklist. Adults are dusted two or three times a week, so
+// for them a dusting in the last three days counts.
+export function checklist(s, now) {
+  const t = s.today || freshToday(now);
+  const adult = stageOf(s, now) === 'adult';
+  return [
+    { id: 'fed', label: 'Fed', done: t.fed, action: adult ? 'salad' : 'insects', hint: adult ? 'serve his salad.' : 'feed him insects.' },
+    { id: 'dusted', label: 'Dusted', done: t.dusted || (adult && now - (s.lastDust || 0) < 3 * DAY), action: 'insects', hint: 'dust his food with calcium.' },
+    { id: 'weighed', label: 'Weighed', done: t.weighed, action: 'weigh', hint: 'weigh him (his weekly weigh-in).' },
+    { id: 'tray', label: 'Tray', done: t.tray, action: 'clean', hint: 'check his tray and spot clean.' },
+  ];
+}
+
+function checklistDone(s, now) {
+  return checklist(s, now).every((c) => c.done);
+}
+
 // The basic setup, one fix at a time, each with the reason from the guides.
 export function nextFix(s, now) {
   const st = s.setup;
@@ -733,6 +865,8 @@ export function nextStep(s, now) {
   if (s.poops > 0 || s.m.clean < 40) return { text: 'Time to spot clean the tank.', action: 'clean' };
   if (s.m.fun < 35) return { text: 'He is bored. Give him some enrichment.', action: 'enrich' };
   if (daysHome(s, now) >= SETTLE_DAYS && s.m.trust < 40) return { text: 'Build trust: handle him for about 15 minutes.', action: 'handle' };
+  const todo = checklist(s, now).find((c) => !c.done);
+  if (todo) return { text: `Today's care: ${todo.hint}`, action: todo.action };
   return { text: 'All good for now. Check back later.', action: null };
 }
 

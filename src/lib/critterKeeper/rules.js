@@ -149,6 +149,19 @@ export const ENRICHMENT = {
   hunt: { label: 'Insect hunt' },
 };
 
+// Growth guide weight table as ranges, by age in months, for the weigh-in
+// chart: 10 to 40 g at 2 months, 30 to 90 g at 3 to 4, 80 to 200 g at 5 to
+// 6, 150 to 350 g at 8 to 10, 250 to 450 g at 12, 300 to 500 g as an adult.
+export const GROWTH_BANDS = [[2, 10, 40], [3.5, 30, 90], [5.5, 80, 200], [9, 150, 350], [12, 250, 450], [18, 300, 500]];
+
+// The daily care checklist. A day with all four done keeps the streak.
+export const CHECKLIST = [
+  { id: 'fed', label: 'Fed' },
+  { id: 'dusted', label: 'Dusted' },
+  { id: 'weighed', label: 'Weighed' },
+  { id: 'tray', label: 'Tray' },
+];
+
 // Growth guide weight table, midpoints, by age in days.
 export const GROWTH = [
   [0, 5], [60, 25], [105, 60], [165, 140], [270, 250], [365, 350], [548, 400],

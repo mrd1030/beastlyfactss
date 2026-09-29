@@ -4,15 +4,16 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, BookOpen, Bug, Droplets, Hand, Leaf, RotateCcw, Sofa, Sparkles, Stethoscope, Thermometer, Trash2, Waves } from 'lucide-react';
 import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
 import {
-  ENRICHMENT, GUIDES, MARKS, HANDLE_LENGTHS, HEAT_SOURCES, INSECTS, DUSTS, PLANTS, SUBSTRATES, TANKS, UVB_MOUNTS, UVB_TYPES, CONDITIONS,
+  ENRICHMENT, GROWTH_BANDS, GUIDES, MARKS, HANDLE_LENGTHS, HEAT_SOURCES, INSECTS, DUSTS, PLANTS, SUBSTRATES, TANKS, UVB_MOUNTS, UVB_TYPES, CONDITIONS,
 } from '@/lib/critterKeeper/rules';
 import {
-  act, ageDays, health, mbdSymptoms, mood, needsVet, newGame, nextFix, nextStep, tankChecks, tick,
+  act, ageDays, checklist, feedBlock, growthBand, health, mbdSymptoms, mood, needsVet, newGame, nextFix, nextStep, tankChecks, tick,
 } from '@/lib/critterKeeper/sim';
 import TankScene, { DragonCanvas } from '@/components/critterKeeper/TankScene';
+import TongTime from '@/components/critterKeeper/TongTime';
 
 const STORAGE_KEY = 'critter-keeper-v1';
-const STEP_LABEL = { vet: 'Vet', tank: 'Tank', decorate: 'Decorate', insects: 'Feed', salad: 'Salad', water: 'Water', clean: 'Clean', enrich: 'Play', handle: 'Handle' };
+const STEP_LABEL = { weigh: 'Weigh', vet: 'Vet', tank: 'Tank', decorate: 'Decorate', insects: 'Feed', salad: 'Salad', water: 'Water', clean: 'Clean', enrich: 'Play', handle: 'Handle' };
 
 const TONE = {
   good: 'bg-primary/10 border-primary/30',
@@ -83,12 +84,23 @@ function Go({ onClick, children }) {
   );
 }
 
-function InsectPanel({ onDo }) {
+function InsectPanel({ onDo, onTongs }) {
   const [insect, setInsect] = useState('dubia');
   const [size, setSize] = useState('right');
   const [dust, setDust] = useState('calcium');
   return (
     <div>
+      <button
+        type="button"
+        onClick={() => onTongs(dust)}
+        className="w-full mb-4 flex items-center justify-between gap-3 bg-accent/20 hover:bg-accent/30 border border-accent/40 rounded-xl px-4 py-3 text-left"
+      >
+        <span>
+          <span className="block font-body font-bold text-sm text-foreground">🥢 Tong Time</span>
+          <span className="block text-xs font-body text-muted-foreground">Hand-feed him with tongs. Pick the right size, skip the fireflies. Uses the dusting below.</span>
+        </span>
+        <span className="text-xs font-body font-bold text-primary">Play</span>
+      </button>
       <Field label="Feeder">
         {Object.entries(INSECTS).map(([id, i]) => <Chip key={id} active={insect === id} onClick={() => setInsect(id)}>{i.label}</Chip>)}
       </Field>
@@ -218,6 +230,83 @@ function TankPanel({ game, now, onDo, msg }) {
   );
 }
 
+function GrowthChart({ weights, age }) {
+  const x = (m) => 30 + ((m - 2) / 18) * 262;
+  const y = (g) => 150 - (g / 520) * 140;
+  const top = GROWTH_BANDS.map(([m, , hi]) => `${x(m)},${y(hi)}`);
+  const bottom = [...GROWTH_BANDS].reverse().map(([m, lo]) => `${x(m)},${y(lo)}`);
+  const extend = `${x(20)},${y(500)} ${x(20)},${y(300)}`;
+  const pts = weights.map((w) => [x(Math.min(20, w.age / 30.4)), y(w.g)]);
+  return (
+    <svg viewBox="0 0 300 170" className="w-full h-auto" role="img" aria-label="His weight against the growth guide's normal range">
+      <polygon points={`${top.join(' ')} ${extend} ${bottom.join(' ')}`} className="fill-primary/15" />
+      {[0, 250, 500].map((g) => (
+        <g key={g}>
+          <line x1="30" x2="292" y1={y(g)} y2={y(g)} className="stroke-border" strokeWidth="1" />
+          <text x="26" y={y(g) + 3} textAnchor="end" className="fill-muted-foreground" fontSize="9">{g}</text>
+        </g>
+      ))}
+      {[3, 6, 9, 12, 15, 18].map((m) => (
+        <text key={m} x={x(m)} y="164" textAnchor="middle" className="fill-muted-foreground" fontSize="9">{m} mo</text>
+      ))}
+      <line x1={x(Math.min(20, age / 30.4))} x2={x(Math.min(20, age / 30.4))} y1="10" y2="150" className="stroke-accent" strokeDasharray="3 3" />
+      {pts.length > 1 && <polyline points={pts.map((p) => p.join(',')).join(' ')} fill="none" className="stroke-primary" strokeWidth="2" />}
+      {pts.map(([px, py], i) => <circle key={i} cx={px} cy={py} r="3" className="fill-primary" />)}
+    </svg>
+  );
+}
+
+function GrowthPanel({ game, now, onDo, msg }) {
+  const weights = game.weights || [];
+  const today = checklist(game, now).find((c) => c.id === 'weighed').done;
+  const age = ageDays(game, now);
+  const [lo, hi] = growthBand(age);
+  return (
+    <div>
+      <p className="text-sm font-body text-foreground mb-3">
+        Weigh him once a week in grams, before his first meal, and watch the trend. Here a dragon week passes every day, so it is a daily check. Normal for his age: {lo} to {hi} g.
+      </p>
+      {msg && <p className="text-sm font-body text-foreground bg-muted rounded-lg px-3 py-2 mb-3">{msg.text}</p>}
+      {!today && <Go onClick={() => onDo('weigh')}>Weigh him</Go>}
+      <div className="mt-3">
+        <GrowthChart weights={weights} age={age} />
+        <p className="text-[11px] font-body text-muted-foreground">Shaded: the growth guide's normal range. Dots: his weigh-ins.</p>
+      </div>
+      <div className="mt-2"><GuideLink id="growth" /></div>
+    </div>
+  );
+}
+
+function TodayCard({ game, now, onStep }) {
+  const items = checklist(game, now);
+  const done = items.filter((c) => c.done).length;
+  return (
+    <div className="bg-card border border-border rounded-2xl p-3 mb-4">
+      <div className="flex items-baseline justify-between mb-2">
+        <p className="font-display font-bold text-foreground">Today&apos;s care</p>
+        <p className="text-xs font-body text-muted-foreground">
+          {game.streak > 0 ? `🔥 ${game.streak}-day streak` : 'Start a streak today'}
+        </p>
+      </div>
+      <div className="grid grid-cols-4 gap-2">
+        {items.map((c) => (
+          <button
+            key={c.id}
+            type="button"
+            onClick={() => !c.done && onStep(c.action)}
+            className={`py-2 rounded-xl text-xs font-body font-bold border ${c.done ? 'bg-primary/10 border-primary/30 text-primary' : 'border-dashed border-border text-foreground hover:bg-muted'}`}
+          >
+            {c.done ? '✓ ' : ''}{c.label}
+          </button>
+        ))}
+      </div>
+      <p className="mt-2 text-[11px] font-body text-muted-foreground">
+        {done === items.length ? 'All four done. The streak grows at midnight.' : `${done} of ${items.length} done. Finish all four today to keep the streak.`}
+      </p>
+    </div>
+  );
+}
+
 const ACTIONS = [
   { id: 'insects', label: 'Insects', icon: Bug, panel: InsectPanel },
   { id: 'salad', label: 'Salad', icon: Leaf, panel: SaladPanel },
@@ -229,6 +318,8 @@ const ACTIONS = [
   { id: 'tank', label: 'Tank', icon: Thermometer, panel: TankPanel },
   { id: 'decorate', label: 'Decorate', icon: Sofa },
 ];
+
+const PANELS = { ...Object.fromEntries(ACTIONS.filter((a) => a.panel).map((a) => [a.id, a.panel])), weigh: GrowthPanel };
 
 function Adopt({ onAdopt }) {
   const [name, setName] = useState('Dex');
@@ -309,6 +400,7 @@ export default function CritterKeeper() {
   const [msg, setMsg] = useState(null);
   const [eating, setEating] = useState(false);
   const [decorating, setDecorating] = useState(false);
+  const [tong, setTong] = useState(null); // the dust chosen for a Tong Time round
   const panelRef = useRef(null);
 
   // Time is read after mount only, so the prerendered page is the same for
@@ -336,7 +428,7 @@ export default function CritterKeeper() {
       setEating(true);
       setTimeout(() => setEating(false), 2500);
     }
-    if (!['tank'].includes(open)) setOpen(null);
+    if (!['tank', 'weigh'].includes(open)) setOpen(null);
   };
 
   const pageTitle = 'Critter Keeper: Raise a Virtual Bearded Dragon | Beastly Facts';
@@ -356,8 +448,7 @@ export default function CritterKeeper() {
       setDecorating((d) => (toggle ? !d : true));
       return;
     }
-    const action = ACTIONS.find((a) => a.id === id);
-    if (action?.panel) {
+    if (PANELS[id]) {
       setOpen(toggle && open === id ? null : id);
       setTimeout(() => panelRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
     } else {
@@ -415,13 +506,13 @@ export default function CritterKeeper() {
                 </div>
               )}
             />
+            <TodayCard game={game} now={now} onStep={(id) => runStep(id, false)} />
             <div className="bg-card border border-border rounded-2xl mb-4">
               <div className="p-4">
                 <div className="flex items-baseline justify-between gap-3 mb-3">
                   <h2 className="font-display font-bold text-2xl text-foreground">{game.name}</h2>
                   <p className="text-xs font-body text-muted-foreground text-right">
                     {Math.round(age / 30.4)} months · {Math.round(game.h.weight)} g
-                    {game.streak > 0 && <> · 🔥 {game.streak} healthy day{game.streak === 1 ? '' : 's'}</>}
                     {game.vetVisits > 0 && <> · 🩺 {game.vetVisits} vet visit{game.vetVisits === 1 ? '' : 's'}</>}
                   </p>
                 </div>
@@ -470,13 +561,36 @@ export default function CritterKeeper() {
             </div>
 
             {open && (() => {
-              const Panel = ACTIONS.find((a) => a.id === open).panel;
+              const Panel = PANELS[open];
               return (
                 <div ref={panelRef} className="bg-card border border-border rounded-2xl p-4 mb-4 scroll-mt-72">
-                  <Panel key={`${open}-${JSON.stringify(game.setup)}`} game={game} now={now} onDo={doAction} msg={msg} />
+                  <Panel
+                    key={`${open}-${JSON.stringify(game.setup)}`}
+                    game={game}
+                    now={now}
+                    onDo={doAction}
+                    msg={msg}
+                    onTongs={(dust) => {
+                      const why = feedBlock(game, Date.now());
+                      if (why) setMsg({ text: why, tone: 'info' });
+                      else setTong({ dust });
+                    }}
+                  />
                 </div>
               );
             })()}
+
+            {tong && (
+              <TongTime
+                age={age}
+                dust={tong.dust}
+                onFinish={(result) => {
+                  const dust = tong.dust;
+                  setTong(null);
+                  doAction('tongs', { ...result, dust });
+                }}
+              />
+            )}
 
             <Log entries={game.log} />
 

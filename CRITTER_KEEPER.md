@@ -91,6 +91,22 @@ the symptoms a real dragon would, each linking to the guide that explains why.
 - Lifelong marks (`MARKS`): toe loss from stuck shed, a crooked jaw once MBD
   gets severe. Each lowers his top health by 5 for good.
 
+## Daily loop (built)
+
+- **Today's care checklist:** Fed, Dusted, Weighed, Tray. The streak counts
+  days with all four done (checked at midnight); a vet visit resets it.
+  Adults count a dusting in the last three days, since they are dusted two
+  or three times a week. Unfinished items feed the do-this-now line.
+- **Weigh-in:** once a real day (a dragon week), in grams, with a little
+  scale noise. Plotted on the growth guide's ranges (`GROWTH_BANDS`), with
+  the guide's advice: weigh before the first meal, watch the trend, a
+  juvenile stuck three to four weeks or an adult losing a tenth needs a vet.
+- **Tong Time** (`TongTime.jsx`): from the Insects panel. 30 seconds of
+  feeders crossing the floor; a bar shows the widest prey he can take (it
+  grows with him). Right size fills him, too big is a strike (three ends
+  it) and adds impaction risk, a firefly poisons him. Counts as fed, as
+  dusted with the chosen dust, and as enrichment (tong-feeding).
+
 ## Ideas from Fable (not built yet)
 
 Mini games, each teaching a guide rule and feeding the sim: Tong Time (pick
