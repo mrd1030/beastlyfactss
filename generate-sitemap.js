@@ -222,6 +222,7 @@ const staticPages = [
   '/guides/',
   '/quiz/',
   '/beastle/',
+  '/critter-keeper/',
   '/quiz/personality/',
   '/quiz/trivia/',
   '/quiz/knowledge/',

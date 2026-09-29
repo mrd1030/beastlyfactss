@@ -25,6 +25,7 @@ export const ROUTE_LOADERS = {
   Quiz: () => import('@/pages/Quiz'),
   QuizHub: () => import('@/pages/QuizHub'),
   Beastle: () => import('@/pages/Beastle'),
+  CritterKeeper: () => import('@/pages/CritterKeeper'),
   Pack: () => import('@/pages/Pack'),
   Encyclopedia: () => import('@/pages/Encyclopedia'),
   Blog: () => import('@/pages/Blog'),

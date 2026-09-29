@@ -208,6 +208,7 @@ const STATIC_ROUTES = [
   '/pack',
   '/quiz',
   '/beastle',
+  '/critter-keeper',
   '/quiz/personality',
   '/quiz/trivia',
   '/quiz/knowledge',
