@@ -4,7 +4,9 @@ A virtual bearded dragon that runs on the site's own care guides. Get the heat,
 UVB, food, water and handling right and he thrives. Get it wrong and he shows
 the symptoms a real dragon would, each linking to the guide that explains why.
 
-- **Branch:** `critter-keeper`. Nothing ships to beastlyfacts.com until it merges.
+- **Live:** merged to main and shipped to beastlyfacts.com on 2026-09-29
+  (v1). Work continues on the `critter-keeper` branch, which the sharetest
+  project still builds.
 - **Test site:** https://beastlyfactss-sharetest.pages.dev/critter-keeper/ (the
   sharetest Pages project builds this branch as its production branch; a push
   shows up in about 2 minutes).
