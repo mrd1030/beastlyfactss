@@ -231,7 +231,49 @@ function Game({ entry, guesses, done, words, onSubmit, children }) {
   );
 }
 
-function Reveal({ entry, won, guesses, children }) {
+const MINI_TILE = {
+  correct: 'bg-primary',
+  present: 'bg-accent',
+  absent: 'bg-muted-foreground/40',
+};
+
+// The player's own daily result, kept apart from the animal's card so the
+// share buttons clearly share the Beastle, not the animal: score, streak, a
+// small copy of the grid, everyone's totals, the shares and the countdown.
+function ResultBox({ day, entry, game, streak, children }) {
+  const letters = lettersOf(entry.answer);
+  const lengths = entry.answer.split(/[ -]/).map((w) => w.length);
+  return (
+    <div className="rounded-3xl border-2 border-primary/30 bg-gradient-to-br from-primary/10 via-card to-accent/15 p-5 sm:p-6 text-center">
+      <p className="text-[10px] font-body font-bold uppercase tracking-widest text-primary dark:text-accent mb-1">Your result</p>
+      <h2 className="font-display font-bold text-2xl text-foreground">
+        {`Beastle #${day} · ${game.won ? game.guesses.length : 'X'}/${MAX_GUESSES}${streak > 1 ? ` 🔥${streak}` : ''}`}
+      </h2>
+      <div className="mt-3 flex flex-col items-center gap-1" aria-hidden="true">
+        {game.guesses.map((g, r) => {
+          const states = score(g, letters);
+          let at = 0;
+          return (
+            <div key={r} className="flex gap-2">
+              {lengths.map((len, w) => {
+                const part = states.slice(at, at + len);
+                at += len;
+                return (
+                  <div key={w} className="flex gap-1">
+                    {part.map((s, i) => <span key={i} className={`w-[18px] h-[18px] rounded ${MINI_TILE[s]}`} />)}
+                  </div>
+                );
+              })}
+            </div>
+          );
+        })}
+      </div>
+      {children}
+    </div>
+  );
+}
+
+function Reveal({ entry, won, guesses, kicker, children }) {
   const fact = entry.factIds[0] ? factFor(entry.factIds[0]) : null;
   const blurb = entry.blurb || fact?.fact || '';
   return (
@@ -241,7 +283,7 @@ function Reveal({ entry, won, guesses, children }) {
       )}
       <div className="p-5 sm:p-6 text-center">
         <p className="text-[10px] font-body font-bold uppercase tracking-widest text-secondary mb-1">
-          {won ? `Solved in ${guesses} of ${MAX_GUESSES}` : 'The answer was'}
+          {kicker || (won ? `Solved in ${guesses} of ${MAX_GUESSES}` : 'The answer was')}
         </p>
         <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground">{entry.name}</h2>
         {blurb && <p className="text-sm text-muted-foreground font-body mt-2 leading-relaxed">{blurb}</p>}
@@ -935,7 +977,7 @@ export default function Beastle() {
             <Game entry={dailyEntry} guesses={dailyGame.guesses} done={dailyGame.done} words={words} onSubmit={submitDaily} />
             {dailyGame.done && (
               <>
-                <Reveal entry={dailyEntry} won={dailyGame.won} guesses={dailyGame.guesses.length}>
+                <ResultBox day={today} entry={dailyEntry} game={dailyGame} streak={liveStreak(stats, today)}>
                   <EveryoneToday day={today} guesses={dailyGame.won ? dailyGame.guesses.length : null} />
                   <div className="flex flex-col sm:flex-row gap-2 justify-center mt-4">
                     <button type="button" onClick={() => share()} className="inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground font-body font-bold text-sm px-5 py-2.5 rounded-2xl">
@@ -946,12 +988,12 @@ export default function Beastle() {
                         <ImageIcon className="w-4 h-4" /> Share result image
                       </button>
                     )}
-
                   </div>
                   <p className="text-xs text-muted-foreground font-body mt-3">
                     {'Next Beastle in '}<Countdown />
                   </p>
-                </Reveal>
+                </ResultBox>
+                <Reveal entry={dailyEntry} won={dailyGame.won} guesses={dailyGame.guesses.length} kicker="Today's animal" />
                 <BeastleReminder />
                 <Bonus today={today} dailyAnswer={dailyEntry.answer} bonus={bonus} setBonus={setBonus} addToJournal={addToJournal} />
                 <button type="button" onClick={() => setMode('unlimited')} className="w-full inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground font-body font-bold text-sm py-3 rounded-2xl">
