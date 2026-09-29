@@ -69,6 +69,7 @@ export default function Footer() {
                 { to: '/feed/', label: 'The feed' },
                 { to: '/quiz/', label: 'Quizzes' },
                 { to: '/beastle/', label: 'Beastle' },
+                { to: '/critter-keeper/', label: 'Critter Keeper' },
                 { to: '/chronicles/dex/', label: 'Chronicles' },
               ]
             },

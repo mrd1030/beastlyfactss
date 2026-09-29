@@ -310,7 +310,7 @@ export default function Navbar() {
                   </div>
                 )}
                 <p className={groupLabelClass}>Learn something wild</p>
-                {[{ to: '/facts/', emoji: '\u26a1', label: 'Facts' }, { to: '/fact-files/', emoji: '\ud83d\udd0d', label: 'Fact files' }, { to: '/beastlypedia/', emoji: '\ud83d\udc3e', label: 'Beastlypedia' }, { to: '/animal-days/', emoji: '\ud83d\udcc5', label: 'Animal days' }, { to: '/gallery/', emoji: '\ud83d\udcf8', label: 'Gallery' }, { to: '/quiz/', emoji: '\ud83c\udfaf', label: 'Quizzes' }, { to: '/beastle/', emoji: '🔤', label: 'Beastle' }, { to: '/chronicles/dex/', emoji: '\ud83d\udcdc', label: 'Chronicles' }].map(item => (
+                {[{ to: '/facts/', emoji: '\u26a1', label: 'Facts' }, { to: '/fact-files/', emoji: '\ud83d\udd0d', label: 'Fact files' }, { to: '/beastlypedia/', emoji: '\ud83d\udc3e', label: 'Beastlypedia' }, { to: '/animal-days/', emoji: '\ud83d\udcc5', label: 'Animal days' }, { to: '/gallery/', emoji: '\ud83d\udcf8', label: 'Gallery' }, { to: '/quiz/', emoji: '\ud83c\udfaf', label: 'Quizzes' }, { to: '/beastle/', emoji: '🔤', label: 'Beastle' }, { to: '/critter-keeper/', emoji: '🦎', label: 'Critter Keeper' }, { to: '/chronicles/dex/', emoji: '\ud83d\udcdc', label: 'Chronicles' }].map(item => (
                   <Link key={item.to} to={item.to} onClick={handleMenuNav} className={menuLinkClass(linkActive(location.pathname, item.to))}>
                     <span>{item.emoji}</span>{item.label}
                   </Link>
