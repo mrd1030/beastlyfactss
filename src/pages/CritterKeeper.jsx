@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { ArrowRight, BookOpen, Bug, Droplets, Hand, Leaf, RotateCcw, Sofa, Sparkles, Stethoscope, Thermometer, Trash2, Waves } from 'lucide-react';
+import { ArrowRight, BookOpen, Bug, Info, Droplets, Hand, Leaf, RotateCcw, Sofa, Sparkles, Stethoscope, Thermometer, Trash2, Waves } from 'lucide-react';
 import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
 import { setWidgetOn, useCritterGame, widgetOn } from '@/lib/critterKeeper/useCritterGame';
 import { useDialogFocus } from '@/lib/critterKeeper/ui';
@@ -391,6 +391,28 @@ function Memorial({ game, onAdopt }) {
   );
 }
 
+// "Local only Beardie": saves live in this browser only. A tap explains it.
+function LocalOnly({ className = '' }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <span className={`inline-flex flex-col items-start ${className}`}>
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+        className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-muted border border-border text-[11px] font-body font-bold text-muted-foreground hover:text-foreground"
+      >
+        Local only Beardie <Info className="w-3 h-3" />
+      </button>
+      {open && (
+        <span className="mt-1.5 text-[11px] font-body text-muted-foreground leading-snug">
+          He lives in this browser on this device. Clearing browsing data, a private window, or a new phone starts over.
+        </span>
+      )}
+    </span>
+  );
+}
+
 function Adopt({ onAdopt, lessons }) {
   const [name, setName] = useState('Dex');
   return (
@@ -406,6 +428,7 @@ function Adopt({ onAdopt, lessons }) {
         <p className="text-sm font-body text-muted-foreground leading-relaxed mb-4">
           He lives in real time, even while this page is closed, and grows a week older every day. Get something wrong and he shows real symptoms.
         </p>
+        <LocalOnly className="mb-4" />
         <label className="block text-xs font-body font-bold text-muted-foreground mb-1.5" htmlFor="ck-name">His name</label>
         <input
           id="ck-name"
@@ -632,13 +655,14 @@ export default function CritterKeeper() {
             <TodayCard game={game} now={now} onStep={(id) => runStep(id, false)} />
             <div className="bg-card border border-border rounded-2xl mb-4">
               <div className="p-4">
-                <div className="flex items-baseline justify-between gap-3 mb-3">
+                <div className="flex items-baseline justify-between gap-3">
                   <h2 className="font-display font-bold text-2xl text-foreground">{game.name}</h2>
                   <p className="text-xs font-body text-muted-foreground text-right">
                     {Math.round(age / 30.4)} months · {Math.round(game.h.weight)} g
                     {game.vetVisits > 0 && <> · 🩺 {game.vetVisits} vet visit{game.vetVisits === 1 ? '' : 's'}</>}
                   </p>
                 </div>
+                <LocalOnly className="mt-1 mb-3" />
                 <div className="mb-3"><Meter label="Health" value={hp} /></div>
                 <div className="grid grid-cols-2 gap-x-4 gap-y-2.5">
                   <Meter label="Fullness" value={game.m.full} />
@@ -768,9 +792,6 @@ export default function CritterKeeper() {
             <p>
               He lives in real time, even while this page is closed, and grows a week older every day, so he is an adult in about two months. Feed him, keep his water fresh, weigh him, handle him gently and keep his tank interesting. When something goes wrong he shows the symptoms a real dragon would, each linked to the guide that explains it, like{' '}
               <Link to={GUIDES.uvb.to} className="text-primary font-bold underline underline-offset-2">why skipping UVB leads to metabolic bone disease</Link>.
-            </p>
-            <p className="text-muted-foreground">
-              Your dragon is saved in this browser. Clearing your browsing data or switching devices starts a new one.
             </p>
           </div>
         </section>

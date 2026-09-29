@@ -161,6 +161,14 @@ brumation at a year, gotcha day); one living enclosure event a week; decor
 unlocked by streaks (3, 7, 14, 30 days); one push a day at most, never a
 guilt ping; a Beastle win drops a hornworm treat in the tank.
 
+## Local only Beardie
+
+Saves live only in the browser. A "Local only Beardie" pill on the adopt
+screen (read before adopting) and on his card (by his name) says so; a tap
+explains: "He lives in this browser on this device. Clearing browsing
+data, a private window, or a new phone starts over." Not in the bubble or
+quick care, and not in the About section.
+
 ## Future maybe: save to an account
 
 Not now: the site is on Supabase's free plan, and its built-in email sender
