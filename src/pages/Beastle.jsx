@@ -8,13 +8,11 @@ import {
 } from '@/lib/beastle/engine';
 import { STORAGE, dateForDay, liveStreak } from '@/lib/beastle/day';
 import { beatShare, fetchDailyStats, logDailyResult } from '@/lib/beastle/results';
-import { beastleShareImage } from '@/lib/beastle/shareImage';
 import { bonusRound, factFor, maskFact } from '@/lib/beastle/bonus';
 import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { logSiteEvent } from '@/lib/siteEvents';
 import { shareQuizResult } from '@/lib/utils/quizShareImage';
-import { toast } from '@/components/ui/use-toast';
 import { SITE_TIMEZONE } from '@/lib/utils/date';
 import { useIsMobileViewport } from '@/lib/hooks/useIsMobileViewport';
 import { getBeastleReminder, getExistingSubscription, isPushSupported, setBeastleReminder } from '@/lib/pushNotifications';
@@ -836,10 +834,11 @@ export default function Beastle() {
     return null;
   };
 
-  // One share with the picture and the text, like the quizzes. Some apps
-  // (Threads, for one) keep the picture and drop the text, and the Android
-  // sheet has no Copy for an image share, so on phones the text also goes
-  // to the clipboard first, ready to paste. Desktop copies it anyway.
+  // Text and link only, no attached picture. With a file attached the
+  // Android sheet switches to its image layout, which has no Copy, and
+  // apps like Threads keep the picture and drop the text. Without one,
+  // every app gets the text, the sheet keeps Copy, and the link unfurls
+  // into the Beastle preview card (public/assets/og/beastle.jpg).
   const share = () => {
     const streak = liveStreak(stats, today);
     const text = shareText({
@@ -849,17 +848,7 @@ export default function Beastle() {
       won: dailyGame.won,
       streak,
     });
-    const url = 'https://beastlyfacts.com/beastle/';
-    // Both started inside the click, before anything is awaited, so the
-    // clipboard write and the share sheet still count as user initiated.
-    const image = beastleShareImage({ day: today, guesses: dailyGame.guesses, answer: dailyEntry.answer, won: dailyGame.won, streak });
-    if (navigator.share && navigator.clipboard?.writeText) {
-      navigator.clipboard.writeText(`${text}\n${url}`).then(
-        () => toast({ title: 'Result copied too', description: 'If the app only takes the picture, paste the text in.' }),
-        () => {},
-      );
-    }
-    shareQuizResult({ title: 'Beastle | Beastly Facts', text, url, image });
+    shareQuizResult({ title: 'Beastle | Beastly Facts', text, url: 'https://beastlyfacts.com/beastle/' });
   };
 
   const pageTitle = 'Beastle: The Daily Animal Word Game | Beastly Facts';
