@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import QuickCare from '@/components/critterKeeper/QuickCare';
 import { drawGrid } from '@/lib/critterKeeper/pixel';
 import { DRAGON_H, DRAGON_W, buildDragon, dragonPalette } from '@/lib/critterKeeper/sprites/dragon';
 import { isDay, mood, needsVet, tick } from '@/lib/critterKeeper/sim';
@@ -7,8 +8,7 @@ import { useCritterGame } from '@/lib/critterKeeper/useCritterGame';
 
 // The floating Critter Keeper bubble: his pixel sprite in the corner of
 // every page, showing how he is at a glance. A red dot means something needs
-// you; a red pulse means he is critical. Tapping it goes to his page (the
-// quick-care popup comes next).
+// you; a red pulse means he is critical. Tapping it opens quick care.
 
 // Pages where the bubble would be in the way.
 const HIDDEN_ON = ['/critter-keeper', '/composer'];
@@ -32,9 +32,9 @@ function alertOf(s) {
 }
 
 export default function CritterBubble() {
-  const [game, , loaded] = useCritterGame();
+  const [game, setGame, loaded] = useCritterGame();
   const { pathname } = useLocation();
-  const navigate = useNavigate();
+  const [open, setOpen] = useState(false);
   const canvasRef = useRef(null);
   const [now, setNow] = useState(() => Date.now());
 
@@ -72,10 +72,13 @@ export default function CritterBubble() {
   const md = mood(live, now);
 
   return (
+    <>
     <button
       type="button"
-      onClick={() => navigate('/critter-keeper/')}
-      aria-label={`${live.name}: ${md.text}. Open Critter Keeper.`}
+      onClick={() => setOpen(true)}
+      aria-haspopup="dialog"
+      aria-expanded={open}
+      aria-label={`${live.name}: ${md.text}. Open quick care.`}
       title={`${live.name}: ${md.text}`}
       className="fixed right-4 z-40 w-16 h-16 rounded-full bg-card border-2 border-foreground/80 shadow-lg flex items-center justify-center hover:scale-105 transition-transform bottom-[calc(56px+var(--safe-area-inset-bottom,0px)+12px)] md:bottom-6"
     >
@@ -87,5 +90,7 @@ export default function CritterBubble() {
         </span>
       )}
     </button>
+    {open && <QuickCare game={game} setGame={setGame} onClose={() => setOpen(false)} />}
+    </>
   );
 }

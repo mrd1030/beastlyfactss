@@ -8,8 +8,8 @@ import { ageDays, baskRange, isDay } from '@/lib/critterKeeper/sim';
 
 // The pixel tank. Everything is drawn at a small logical size and scaled up
 // with image-rendering: pixelated, so one logical unit is one art pixel.
-const SW = 176;
-const SH = 104;
+export const SW = 176;
+export const SH = 104;
 const FLOOR = 86;
 const TANK_TOP = 16;
 const TANK_WIDTH = { 20: 92, 40: 124, 120: 164 };
@@ -88,7 +88,7 @@ function moodOf(game, now) {
   return 'normal';
 }
 
-function drawScene(ctx, game, now, frame, pose, free = game.free || {}, selected = null) {
+export function drawScene(ctx, game, now, frame, pose, free = game.free || {}, selected = null) {
   const st = game.setup;
   const { L, R } = tankBox(st.tank);
   const day = isDay(now);
@@ -355,6 +355,31 @@ function ItemIcon({ id }) {
 }
 
 const pct = (v, of) => `${(v / of) * 100}%`;
+
+// A small, look-only tank for the quick-care popup.
+export function MiniTank({ game, now, pose = 'idle', className = '' }) {
+  const ref = useRef(null);
+  const [frame, setFrame] = useState(0);
+  useEffect(() => {
+    const t = setInterval(() => setFrame((f) => f + 1), 550);
+    return () => clearInterval(t);
+  }, []);
+  useEffect(() => {
+    const ctx = ref.current?.getContext('2d');
+    if (ctx) drawScene(ctx, game, now, frame, pose);
+  }, [game, now, frame, pose]);
+  return (
+    <canvas
+      ref={ref}
+      width={SW}
+      height={SH}
+      className={`block w-full ${className}`}
+      style={{ imageRendering: 'pixelated', aspectRatio: `${SW} / ${SH}` }}
+      role="img"
+      aria-label={`${game.name}'s tank`}
+    />
+  );
+}
 
 export default function TankScene({ game, now, pose = 'idle', onDecor, badge, footer, decorating = false, onDoneDecorating }) {
   const canvasRef = useRef(null);

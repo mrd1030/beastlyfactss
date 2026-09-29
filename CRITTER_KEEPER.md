@@ -126,6 +126,25 @@ the symptoms a real dragon would, each linking to the guide that explains why.
 - Settling in before handling is one real day (the guides' 7 to 14 days on
   the game clock). Rearranging while setting up is free for a real week.
 
+## The floating widget (built)
+
+- `useCritterGame` (`src/lib/critterKeeper/useCritterGame.js`) is the one
+  shared dragon: the page, the bubble and the popup read and save it, and a
+  change is broadcast to every copy and to other tabs.
+- `CritterBubbleSlot` sits in AppLayout on every page. It carries only an
+  existence check, run after idle; the bubble and the game code load only
+  if a dragon exists and "Show Dex on every page" (on his card) is on.
+  Nothing renders during prerender or hydration.
+- `CritterBubble`: his sprite in the corner (above the phone tab bar), with
+  his look, a red dot when he needs you (not for problems whose fix is
+  leaving him be) and a pulse when critical. Hidden on his page, the
+  composer and the installed Beastle app.
+- `QuickCare`: the sheet the bubble opens. A live mini tank, the
+  do-this-now line, today's checklist, quick feed (dubias with calcium, or
+  a salad for an adult), water, soak, clean, weigh, Tong Time, the vet when
+  needed, and a link to his page. Opening it brings him up to date, and
+  counts as seeing a critical warning.
+
 ## Ideas from Fable (not built yet)
 
 Mini games, each teaching a guide rule and feeding the sim: Tong Time (pick
