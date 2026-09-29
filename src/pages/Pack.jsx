@@ -171,7 +171,7 @@ export default function Pack() {
               ? `${window.location.origin}/quiz/${qr.quizId}/`
               : `${window.location.origin}/quiz/personality/`;
 
-          // Share image attaches a picture of the card (themed cards only);
+          // Share card attaches a picture of the card (themed cards only);
           // plain Share is text and link.
           if (isThemedCard && withImage) {
             const image = quizShareImage({
@@ -270,7 +270,7 @@ export default function Pack() {
                   onClick={() => handleShareQuiz({ withImage: true })}
                   className="flex items-center gap-1.5 text-xs font-body font-bold px-3 py-1.5 rounded-lg bg-secondary/10 hover:bg-secondary/20 text-secondary transition-colors"
                 >
-                  <ImageIcon className="w-3.5 h-3.5" /> Share image
+                  <ImageIcon className="w-3.5 h-3.5" /> Share card
                 </button>
               )}
 

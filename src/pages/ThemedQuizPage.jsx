@@ -420,7 +420,7 @@ export default function ThemedQuizPage({ quiz }) {
                 {canShareImage() && (
                   <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={() => handleShare({ withImage: true })}
                     className="bg-card border border-border text-foreground font-body font-bold text-sm px-6 py-3 rounded-2xl flex items-center justify-center gap-2">
-                    <ImageIcon className="w-4 h-4" /> Share image
+                    <ImageIcon className="w-4 h-4" /> Share card
                   </motion.button>
                 )}
                 <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleRestart}
