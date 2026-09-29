@@ -95,7 +95,8 @@ export function loadWords() {
   if (!wordsPromise) {
     wordsPromise = fetch('/beastle/words.txt')
       .then((r) => (r.ok ? r.text() : Promise.reject(new Error(String(r.status)))))
-      .then((t) => new Set(t.split('\n').filter(Boolean)))
+      // \r? because a Windows checkout can hand the file over with CRLF.
+      .then((t) => new Set(t.split(/\r?\n/).filter(Boolean)))
       .catch(() => {
         // Without the list every full-length guess is allowed, which beats a
         // game that cannot be played.
