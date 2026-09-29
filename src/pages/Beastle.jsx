@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { ArrowRight, BarChart3, Delete, HelpCircle, RotateCcw, Share2, BookOpen } from 'lucide-react';
+import { ArrowRight, BarChart3, Bell, BellOff, Delete, HelpCircle, RotateCcw, Share2, BookOpen } from 'lucide-react';
 import {
   MAX_GUESSES, answerForDay, dayNumber, keyStates, lettersOf, loadWords, pickUnlimited,
   score, shapeOf, shareText, validate, byAnswer,
@@ -13,6 +13,8 @@ import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { logSiteEvent } from '@/lib/siteEvents';
 import { shareQuizResult } from '@/lib/utils/quizShareImage';
 import { SITE_TIMEZONE } from '@/lib/utils/date';
+import { useIsMobileViewport } from '@/lib/hooks/useIsMobileViewport';
+import { getBeastleReminder, isPushSupported, setBeastleReminder } from '@/lib/pushNotifications';
 
 const EMPTY_STATS = { played: 0, wins: 0, streak: 0, maxStreak: 0, lastWinDay: null, dist: [0, 0, 0, 0, 0, 0] };
 const EMPTY_UNLIMITED = { seen: [], current: null, played: 0, wins: 0 };
@@ -350,6 +352,61 @@ function Bonus({ today, dailyAnswer, bonus, setBonus, addToJournal }) {
   );
 }
 
+// Opt-in 9am ping for the next Beastle. Mobile only, like the Pack's
+// notification switch (NotificationOptIn), which it shares a subscription with.
+function BeastleReminder() {
+  const isMobile = useIsMobileViewport();
+  const [supported, setSupported] = useState(false);
+  const [on, setOn] = useState(false);
+  const [busy, setBusy] = useState(false);
+  const [failed, setFailed] = useState(false);
+
+  useEffect(() => {
+    if (!isPushSupported()) return;
+    setSupported(true);
+    setOn(getBeastleReminder());
+  }, []);
+
+  if (!isMobile || !supported) return null;
+
+  const toggle = async () => {
+    setBusy(true);
+    setFailed(false);
+    const ok = await setBeastleReminder(!on).catch(() => false);
+    if (ok) setOn(!on);
+    else setFailed(true);
+    setBusy(false);
+  };
+
+  return (
+    <div className="bg-card border border-border rounded-2xl p-5 flex items-center gap-4">
+      <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center flex-shrink-0">
+        {on ? <Bell className="w-5 h-5 text-secondary" /> : <BellOff className="w-5 h-5 text-muted-foreground" />}
+      </div>
+      <div className="flex-1 min-w-0">
+        <p className="font-display font-bold text-sm text-foreground">{on ? 'Daily reminder is on' : 'Remind me tomorrow'}</p>
+        <p className="text-xs text-muted-foreground font-body mt-0.5">
+          {failed
+            ? "That didn't work. Check that notifications are allowed for this site."
+            : on
+              ? 'A ping at 9am Eastern when the new animal arrives.'
+              : 'A ping at 9am Eastern when the new animal arrives. Also turns on Beastly Facts notifications if they are off.'}
+        </p>
+      </div>
+      <button
+        type="button"
+        onClick={toggle}
+        disabled={busy}
+        className={`flex-shrink-0 px-4 py-3 rounded-xl text-xs font-body font-bold transition-colors disabled:opacity-50 ${
+          on ? 'bg-muted text-muted-foreground' : 'bg-secondary text-secondary-foreground'
+        }`}
+      >
+        {busy ? '...' : on ? 'Turn off' : 'Remind me'}
+      </button>
+    </div>
+  );
+}
+
 function HowToPlay() {
   return (
     <div className="text-sm font-body text-muted-foreground leading-relaxed space-y-2">
@@ -381,7 +438,7 @@ export default function Beastle() {
   const [bonus, setBonus] = useLocalStorage(STORAGE.bonus, null);
   const [, setJournal] = useLocalStorage(STORAGE.journal, []);
   const [unlimited, setUnlimited, unlimitedLoaded] = useLocalStorage(STORAGE.unlimited, EMPTY_UNLIMITED);
-  const { recordQuizCompletion } = useFavoritesCtx();
+  const { recordQuizCompletion, recordBeastleStreak } = useFavoritesCtx();
 
   // The day is read after mount, never during prerender, so the baked HTML
   // is the same for everyone and the real puzzle appears on hydration.
@@ -425,8 +482,8 @@ export default function Beastle() {
     Object.assign(next, { done, won });
     setDaily(next);
     if (!done) return;
+    const streak = won ? liveStreak(stats, today) + 1 : 0;
     setStats((s) => {
-      const streak = won ? liveStreak(s, today) + 1 : 0;
       const dist = [...(s.dist || EMPTY_STATS.dist)];
       if (won) dist[guesses.length - 1] += 1;
       return {
@@ -439,10 +496,11 @@ export default function Beastle() {
       };
     });
     recordQuizCompletion();
+    if (won) recordBeastleStreak(streak);
     logSiteEvent('themed_quiz', `Beastle #${today}: ${won ? guesses.length : 'X'}/${MAX_GUESSES} (${dailyEntry.name})`);
     if (won) celebrate();
     setShowStats(true);
-  }, [dailyEntry, today, setDaily, setStats, recordQuizCompletion]);
+  }, [dailyEntry, today, stats, setDaily, setStats, recordQuizCompletion, recordBeastleStreak]);
 
   const unlimitedEntry = unlimited.current ? byAnswer.get(unlimited.current.answer) : null;
 
@@ -581,6 +639,7 @@ export default function Beastle() {
                     {'Next Beastle in '}<Countdown />
                   </p>
                 </Reveal>
+                <BeastleReminder />
                 <Bonus today={today} dailyAnswer={dailyEntry.answer} bonus={bonus} setBonus={setBonus} addToJournal={addToJournal} />
                 <button type="button" onClick={() => setMode('unlimited')} className="w-full inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground font-body font-bold text-sm py-3 rounded-2xl">
                   Keep playing: Unlimited <ArrowRight className="w-4 h-4" />

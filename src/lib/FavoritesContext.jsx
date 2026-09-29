@@ -26,6 +26,11 @@ export const ACHIEVEMENTS = [
   { id: 'quiz-master', emoji: '🎓', title: 'Quiz Master', description: 'Completed 10 quizzes', hint: 'Finish 10 quizzes.', target: 10, current: (s) => s.quizzesCompleted, unit: 'quizzes completed', check: (s) => s.quizzesCompleted >= 10 },
   { id: 'streak-3', emoji: '🔥', title: 'On a Roll', description: '3-day visit streak', hint: 'Visit Beastly Facts on 3 days in a row.', target: 3, current: (s) => s.streakCount, unit: 'day streak', check: (s) => s.streakCount >= 3 },
   { id: 'streak-7', emoji: '⚡', title: 'Week-Long Wildling', description: '7-day visit streak', hint: 'Visit Beastly Facts on 7 days in a row.', target: 7, current: (s) => s.streakCount, unit: 'day streak', check: (s) => s.streakCount >= 7 },
+  // Beastle streaks count solved days in a row, and read the best streak ever
+  // reached, so a badge stays earned after a missed day resets the live one.
+  { id: 'beastle-7', emoji: '🔤', title: 'Beastle Week', description: 'Solved Beastle 7 days in a row', hint: 'Solve the daily Beastle 7 days in a row.', target: 7, current: (s) => s.beastleBest, unit: 'day Beastle streak', check: (s) => s.beastleBest >= 7 },
+  { id: 'beastle-30', emoji: '🦉', title: 'Beastle Month', description: 'Solved Beastle 30 days in a row', hint: 'Solve the daily Beastle 30 days in a row.', target: 30, current: (s) => s.beastleBest, unit: 'day Beastle streak', check: (s) => s.beastleBest >= 30 },
+  { id: 'beastle-100', emoji: '👑', title: 'Beastle Legend', description: 'Solved Beastle 100 days in a row', hint: 'Solve the daily Beastle 100 days in a row.', target: 100, current: (s) => s.beastleBest, unit: 'day Beastle streak', check: (s) => s.beastleBest >= 100 },
 ];
 
 export function FavoritesProvider({ children }) {
@@ -59,6 +64,7 @@ export function FavoritesProvider({ children }) {
   const [savedContent, setSavedContent] = useState([]);
   const [savedQuizResults, setSavedQuizResults] = useState([]);
   const [quizzesCompleted, setQuizzesCompleted] = useState(0);
+  const [beastleBest, setBeastleBest] = useState(0);
   const isFirstFavoritesWrite = React.useRef(true);
   const isFirstSavedContentWrite = React.useRef(true);
   const isFirstQuizResultsWrite = React.useRef(true);
@@ -93,6 +99,16 @@ export function FavoritesProvider({ children }) {
     try {
       const stored = parseInt(localStorage.getItem('beastly-quizzes-completed') || '0', 10) || 0;
       if (stored > 0) setQuizzesCompleted(stored);
+    } catch { /* ignore */ }
+  }, []);
+
+  // Beastle owns its stats (src/lib/beastle/day.js STORAGE.stats); this only
+  // mirrors the best streak for the achievements, and the game reports a new
+  // one through recordBeastleStreak when a daily is solved.
+  useEffect(() => {
+    try {
+      const stats = JSON.parse(localStorage.getItem('beastle-stats') || 'null');
+      if (stats?.maxStreak > 0) setBeastleBest(stats.maxStreak);
     } catch { /* ignore */ }
   }, []);
 
@@ -209,7 +225,11 @@ export function FavoritesProvider({ children }) {
     });
   };
 
-  const achievementState = { favoritesCount: favorites.length, quizzesCompleted, streakCount: streak };
+  const recordBeastleStreak = (n) => {
+    setBeastleBest(prev => Math.max(prev, n));
+  };
+
+  const achievementState = { favoritesCount: favorites.length, quizzesCompleted, streakCount: streak, beastleBest };
   const unlockedAchievements = ACHIEVEMENTS.filter(a => a.check(achievementState));
 
   // Seeded once, on first-ever load, with whatever's already unlocked at that
@@ -257,6 +277,7 @@ export function FavoritesProvider({ children }) {
       removeQuizResult,
       quizzesCompleted,
       recordQuizCompletion,
+      recordBeastleStreak,
       streak,
       unlockedAchievements,
       // Exposed so the Pack can show how far along a locked badge is, rather

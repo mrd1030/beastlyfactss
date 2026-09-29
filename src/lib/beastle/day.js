@@ -26,6 +26,6 @@ export const STORAGE = {
 
 // A streak survives until a full day is missed: won today or yesterday.
 export function liveStreak(stats, today = dayNumber()) {
-  if (!stats?.lastWinDay) return 0;
+  if (stats?.lastWinDay == null) return 0;
   return stats.lastWinDay >= today - 1 ? stats.streak : 0;
 }

@@ -22,6 +22,7 @@
 // src/lib/generated/gear-by-animal.json.
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 import { amphibianGuides } from '../src/lib/data/guides/amphibians.js';
 import { birdGuides } from '../src/lib/data/guides/birds.js';
@@ -38,7 +39,9 @@ import { AFFILIATE_PRODUCTS, getAffiliateForItem } from '../src/lib/data/affilia
 import { getRelatedArticleSlugs } from '../src/lib/data/relatedArticles.js';
 import { shortLabelFor } from '../src/lib/data/articleLabels.js';
 
-const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
+// fileURLToPath, not URL.pathname: on Windows pathname is /C:/... with %20
+// for spaces, which path.resolve turns into C:\C:\...
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const index = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/lib/generated/articles-index.json'), 'utf8'));
 const posts = index.articles.map((a) => ({ ...a, _id: a.slug }));
 const titleOf = new Map(index.articles.map((a) => [a.slug, a.title]));
