@@ -7,7 +7,7 @@ import {
   score, shapeOf, shareText, validate, byAnswer,
 } from '@/lib/beastle/engine';
 import { STORAGE, liveStreak } from '@/lib/beastle/day';
-import { bonusRound, factFor, maskFact } from '@/lib/beastle/bonus';
+import { bonusRound, factFor } from '@/lib/beastle/bonus';
 import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { logSiteEvent } from '@/lib/siteEvents';
@@ -417,37 +417,50 @@ function BeastleReminder() {
 }
 
 // Unlimited only: one hint per animal, offered once four guesses are used.
-// The hint is one of the animal's facts (or its profile blurb) with every
-// form of its name blanked out, the same masking as the bonus round.
+// It reveals the leftmost letter no guess has turned green yet. The spot is
+// fixed when the hint is taken, so later greens never move what it shows.
 const HINT_AFTER = 4;
 
-function hintFor(entry) {
-  const fact = entry.factIds[0] ? factFor(entry.factIds[0]) : null;
-  const text = fact?.fact || entry.blurb;
-  if (!text) return null;
-  return maskFact(text, [entry.name, fact?.animal, entry.answer].filter(Boolean));
+function firstUngreened(answer, guesses) {
+  const letters = lettersOf(answer);
+  const green = new Set();
+  for (const g of guesses) score(g, letters).forEach((s, i) => { if (s === 'correct') green.add(i); });
+  for (let i = 0; i < letters.length; i++) if (!green.has(i)) return i;
+  return null;
 }
 
-function Hint({ entry, guesses, done, used, onUse }) {
-  const hint = useMemo(() => hintFor(entry), [entry]);
-  if (done || !hint || guesses.length < HINT_AFTER) return null;
-  if (!used) {
+function spotLabel(answer, index) {
+  const lengths = answer.split(/[ -]/).map((w) => w.length);
+  if (lengths.length === 1) return `Letter ${index + 1}`;
+  let i = index;
+  for (let w = 0; w < lengths.length; w++) {
+    if (i < lengths[w]) return `Word ${w + 1}, letter ${i + 1}`;
+    i -= lengths[w];
+  }
+  return `Letter ${index + 1}`;
+}
+
+function Hint({ entry, guesses, done, hintIndex, onUse }) {
+  if (done || guesses.length < HINT_AFTER) return null;
+  if (hintIndex == null) {
+    if (firstUngreened(entry.answer, guesses) == null) return null;
     return (
       <button
         type="button"
-        onClick={onUse}
+        onClick={() => onUse(firstUngreened(entry.answer, guesses))}
         className="inline-flex items-center gap-2 bg-accent/20 hover:bg-accent/30 text-foreground font-body font-bold text-sm px-4 py-2 rounded-xl transition-colors"
       >
-        <Lightbulb className="w-4 h-4 text-accent-ink" /> Get a hint (one per animal)
+        <Lightbulb className="w-4 h-4 text-accent-ink" /> Reveal a letter (one per animal)
       </button>
     );
   }
   return (
-    <div className="w-full bg-accent/15 border border-accent/40 rounded-2xl px-4 py-3" role="note">
-      <p className="text-[10px] font-body font-bold uppercase tracking-widest text-accent-ink mb-1 flex items-center gap-1">
-        <Lightbulb className="w-3 h-3" /> Hint
-      </p>
-      <p className="text-sm font-body text-foreground leading-relaxed">{hint}</p>
+    <div className="flex items-center gap-3 bg-accent/15 border border-accent/40 rounded-2xl px-4 py-2.5" role="note">
+      <Lightbulb className="w-4 h-4 text-accent-ink flex-shrink-0" />
+      <p className="text-sm font-body text-foreground">{`${spotLabel(entry.answer, hintIndex)} is`}</p>
+      <span className="w-9 h-9 flex items-center justify-center rounded-[18%] bg-primary text-primary-foreground font-display font-bold text-lg">
+        {lettersOf(entry.answer)[hintIndex]}
+      </span>
     </div>
   );
 }
@@ -601,10 +614,10 @@ export default function Beastle() {
     if (won) celebrate();
   }, [setUnlimited]);
 
-  const takeUnlimitedHint = useCallback(() => {
+  const takeUnlimitedHint = useCallback((index) => {
     const u = unlimitedRef.current;
-    if (!u.current || u.current.hintUsed) return;
-    const next = { ...u, current: { ...u.current, hintUsed: true } };
+    if (!u.current || u.current.hintIndex != null || index == null) return;
+    const next = { ...u, current: { ...u.current, hintIndex: index } };
     unlimitedRef.current = next;
     setUnlimited(next);
   }, [setUnlimited]);
@@ -726,7 +739,7 @@ export default function Beastle() {
         {ready && mode === 'unlimited' && unlimitedEntry && (
           <div className="space-y-5">
             <p className="text-center text-xs font-body font-bold text-accent-ink bg-accent/15 rounded-xl py-2 px-3">
-              Practice mode: no streak here, play as many as you like. Stuck? A hint unlocks after 4 guesses.
+              Practice mode: no streak here, play as many as you like. Stuck? After 4 guesses you can reveal one letter.
             </p>
             <Game
               entry={unlimitedEntry}
@@ -739,7 +752,7 @@ export default function Beastle() {
                 entry={unlimitedEntry}
                 guesses={unlimited.current.guesses}
                 done={unlimited.current.done}
-                used={!!unlimited.current.hintUsed}
+                hintIndex={unlimited.current.hintIndex}
                 onUse={takeUnlimitedHint}
               />
             </Game>
