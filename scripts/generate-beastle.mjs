@@ -143,10 +143,17 @@ const DAILY_TWO_WORD_MAX = 11;
 // One-word daily answers for long names, keyed like OVERRIDES. null keeps the
 // animal out of the daily entirely (its full name stays in unlimited Hard).
 const DAILY_SHORT = {
-  'enc:boa-constrictor': 'Boa',
+  // BOA: a three-letter reptile is over in two guesses with the group hint.
+  'enc:boa-constrictor': null,
+  // MONITOR reads as a screen, not a lizard, even with the reptile hint.
+  'enc:savannah-monitor': null,
   'enc:scottish-fold': null,
   'bp:mantis-shrimp': null,
 };
+
+// Daily answers that feel like repeats of each other, kept at least the same
+// 30 days apart as a repeat of one answer.
+const RELATED = [['DRAGON', 'SEADRAGON']];
 const letterCount = (answer) => answer.replace(/[ -]/g, '').length;
 
 // The daily's free hint: which kind of animal it is. Encyclopedia categories
@@ -347,6 +354,9 @@ async function main() {
     if (!queue.length) queue = refill();
     // Never repeat an answer inside a 30-day window across a reshuffle.
     const avoid = recent(30);
+    for (const group of RELATED) {
+      if (group.some((a) => avoid.has(a))) group.forEach((a) => avoid.add(a));
+    }
     const idx = queue.findIndex((a) => !avoid.has(a));
     const pick = queue.splice(idx === -1 ? 0 : idx, 1)[0];
     if (queueName === 'multi') multiQueue = queue; else singleQueue = queue;
