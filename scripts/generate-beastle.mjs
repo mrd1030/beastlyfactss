@@ -154,6 +154,12 @@ const DAILY_SHORT = {
 // Daily answers that feel like repeats of each other, kept at least the same
 // 30 days apart as a repeat of one answer.
 const RELATED = [['DRAGON', 'SEADRAGON']];
+
+// Past days changed on purpose, the one exception to an append-only
+// schedule. #1 was PARROTLET, a hard-tier answer set before difficulty
+// existed. Archive replays are tied to the answer they were played
+// against (src/pages/Beastle.jsx), so a changed day starts fresh.
+const SCHEDULE_OVERRIDES = { 1: 'PENGUIN' };
 const letterCount = (answer) => answer.replace(/[ -]/g, '').length;
 
 // The daily's free hint: which kind of animal it is. Encyclopedia categories
@@ -340,6 +346,10 @@ async function main() {
     const today = Math.floor((Date.parse(`${todayEt}T00:00:00Z`) - Date.parse(`${EPOCH}T00:00:00Z`)) / 86400000) + 1;
     schedule = schedule.slice(0, Math.max(0, today));
     console.log(`rebuilding the schedule after Beastle #${today} (${todayEt})`);
+  }
+
+  for (const [day, answer] of Object.entries(SCHEDULE_OVERRIDES)) {
+    if (schedule.length >= Number(day)) schedule[Number(day) - 1] = answer;
   }
 
   const singles = [...dailyAnswers].filter((a) => !/[ -]/.test(a));

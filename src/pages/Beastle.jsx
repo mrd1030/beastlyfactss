@@ -522,6 +522,16 @@ function EveryoneToday({ day, guesses }) {
 const formatDay = (n) =>
   new Date(`${dateForDay(n)}T12:00:00Z`).toLocaleDateString(undefined, { month: 'short', day: 'numeric', timeZone: 'UTC' });
 
+// A saved replay only counts for the answer it was played against. If a
+// past day's answer is ever changed (SCHEDULE_OVERRIDES in
+// scripts/generate-beastle.mjs), the old replay is ignored and the day
+// starts fresh. Replays saved before answers were recorded count as stale.
+const EMPTY_REPLAY = { guesses: [], done: false, won: false };
+function archiveRecord(all, day) {
+  const rec = all[day];
+  return rec && rec.answer === answerForDay(day)?.answer ? rec : null;
+}
+
 // Every past daily, newest first. Replays never touch the streak, the stats
 // or everyone's totals.
 function ArchiveList({ today, archive, onPick }) {
@@ -533,7 +543,7 @@ function ArchiveList({ today, archive, onPick }) {
   return (
     <div className="grid grid-cols-3 sm:grid-cols-4 gap-2">
       {days.map((n) => {
-        const g = archive[n];
+        const g = archiveRecord(archive, n);
         const status = g?.done ? (g.won ? 'won' : 'lost') : g?.guesses?.length ? 'playing' : 'new';
         return (
           <button
@@ -885,9 +895,9 @@ export default function Beastle() {
 
   const takeArchiveHint = useCallback((index) => {
     const all = archiveRef.current;
-    const game = all[archiveDay] || { guesses: [], done: false, won: false };
+    const game = archiveRecord(all, archiveDay) || EMPTY_REPLAY;
     if (game.done || game.hintIndex != null || index == null) return;
-    const next = { ...all, [archiveDay]: { ...game, hintIndex: index } };
+    const next = { ...all, [archiveDay]: { ...game, answer: answerForDay(archiveDay).answer, hintIndex: index } };
     archiveRef.current = next;
     setArchive(next);
   }, [archiveDay, setArchive]);
@@ -905,24 +915,24 @@ export default function Beastle() {
   }, [setJournal]);
 
   const archiveEntry = archiveDay ? answerForDay(archiveDay) : null;
-  const archiveGame = (archiveDay && archive[archiveDay]) || { guesses: [], done: false, won: false };
+  const archiveGame = (archiveDay && archiveRecord(archive, archiveDay)) || EMPTY_REPLAY;
 
   // Replays of past dailies: saved per day, nothing else is touched.
   const submitArchive = useCallback((guess) => {
     const all = archiveRef.current;
-    const game = all[archiveDay] || { guesses: [], done: false, won: false };
+    const game = archiveRecord(all, archiveDay) || EMPTY_REPLAY;
     if (game.done || !archiveEntry) return;
     const guesses = [...game.guesses, guess];
     const won = guess === lettersOf(archiveEntry.answer);
-    const next = { ...all, [archiveDay]: { ...game, guesses, won, done: won || guesses.length >= MAX_GUESSES } };
+    const next = { ...all, [archiveDay]: { ...game, answer: archiveEntry.answer, guesses, won, done: won || guesses.length >= MAX_GUESSES } };
     archiveRef.current = next;
     setArchive(next);
     if (won) celebrate();
   }, [archiveDay, archiveEntry, setArchive]);
 
   const nextUnplayedArchive = () => {
-    for (let n = (archiveDay || today) - 1; n >= 1; n--) if (!archive[n]?.done) return n;
-    for (let n = today - 1; n > (archiveDay || 0); n--) if (!archive[n]?.done) return n;
+    for (let n = (archiveDay || today) - 1; n >= 1; n--) if (!archiveRecord(archive, n)?.done) return n;
+    for (let n = today - 1; n > (archiveDay || 0); n--) if (!archiveRecord(archive, n)?.done) return n;
     return null;
   };
 
