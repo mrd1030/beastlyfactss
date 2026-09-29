@@ -268,7 +268,7 @@ const MINI_TILE = {
 // share buttons clearly share the Beastle, not the animal: score, streak, a
 // small copy of the grid, everyone's totals, the shares and the countdown.
 function ResultBox({ day, entry, game, streak, children }) {
-  const hinted = game.hintIndex != null;
+  const hinted = game.hintIndex != null || !!game.clueShown;
   const letters = lettersOf(entry.answer);
   const lengths = entry.answer.split(/[ -]/).map((w) => w.length);
   return (
@@ -581,6 +581,32 @@ function clueFor(entry) {
   return maskFact(first, [entry.name, fact?.animal, entry.answer].filter(Boolean));
 }
 
+// The daily and archive clue: usable from the first guess, once per puzzle.
+// Using it (or the letter reveal) puts a 💡 on the result.
+function Clue({ entry, done, shown, onUse }) {
+  const clue = useMemo(() => clueFor(entry), [entry]);
+  if (!clue || (done && !shown)) return null;
+  if (!shown) {
+    return (
+      <button
+        type="button"
+        onClick={onUse}
+        className="inline-flex items-center gap-2 bg-accent/20 hover:bg-accent/30 text-foreground font-body font-bold text-sm px-4 py-2 rounded-xl transition-colors"
+      >
+        <Lightbulb className="w-4 h-4 text-accent-ink" /> Need a clue?
+      </button>
+    );
+  }
+  return (
+    <div className="w-full bg-accent/15 border border-accent/40 rounded-2xl px-4 py-2.5" role="note">
+      <p className="text-sm font-body text-foreground leading-relaxed">
+        <Lightbulb className="w-4 h-4 text-accent-ink inline -mt-0.5 mr-1.5" />
+        {clue}
+      </p>
+    </div>
+  );
+}
+
 // One button, two steps: the first tap shows the clue, the second gives up.
 function HelpButton({ entry, clueShown, onClue, onGiveUp }) {
   const clue = useMemo(() => clueFor(entry), [entry]);
@@ -703,7 +729,7 @@ function HowToPlay() {
       </ul>
       <p>In a two-word name, once one word is all green it stays filled in, and you only type the other word.</p>
       <p>Everyone gets the same animal each day, and a new one arrives at midnight Eastern. The number of letters changes every day, from short names like LION to longer ones like SALAMANDER.</p>
-      <p>Each daily puzzle tells you what kind of animal it is, like a mammal or a bird. After 4 guesses you can also reveal one letter. A result that used it shows a 💡 when you share it.</p>
+      <p>Each daily puzzle tells you what kind of animal it is, like a mammal or a bird. If you want more help, you can get a clue from a real fact about the animal at any time, and after 4 guesses you can reveal one letter. A result that used either shows a 💡 when you share it.</p>
       <p>Unlimited lets you keep playing, at the level you pick:</p>
       <ul className="space-y-1">
         {LEVEL_OPTIONS.map(([id, , text]) => <li key={id}>{text}.</li>)}
@@ -885,6 +911,23 @@ export default function Beastle() {
 
   // The daily's reveal-a-letter: same rules as unlimited, and the result
   // then carries a 💡 in the share so a hinted solve reads as one.
+  const takeDailyClue = useCallback(() => {
+    const game = dailyRef.current;
+    if (game.done || game.clueShown) return;
+    const next = { ...game, day: today, clueShown: true };
+    dailyRef.current = next;
+    setDaily(next);
+  }, [today, setDaily]);
+
+  const takeArchiveClue = useCallback(() => {
+    const all = archiveRef.current;
+    const game = archiveRecord(all, archiveDay) || EMPTY_REPLAY;
+    if (game.done || game.clueShown) return;
+    const next = { ...all, [archiveDay]: { ...game, answer: answerForDay(archiveDay).answer, clueShown: true } };
+    archiveRef.current = next;
+    setArchive(next);
+  }, [archiveDay, setArchive]);
+
   const takeDailyHint = useCallback((index) => {
     const game = dailyRef.current;
     if (game.done || game.hintIndex != null || index == null) return;
@@ -943,7 +986,7 @@ export default function Beastle() {
   // on phones, attaches the result grid picture as well, like the quizzes.
   const share = ({ withImage = false } = {}) => {
     const streak = liveStreak(stats, today);
-    const hinted = dailyGame.hintIndex != null;
+    const hinted = dailyGame.hintIndex != null || !!dailyGame.clueShown;
     const text = shareText({
       title: `Beastle #${today}`,
       guesses: dailyGame.guesses,
@@ -1036,6 +1079,7 @@ export default function Beastle() {
         {ready && mode === 'daily' && dailyEntry && (
           <div className="space-y-5">
             <Game entry={dailyEntry} guesses={dailyGame.guesses} done={dailyGame.done} words={words} onSubmit={submitDaily} showGroup>
+              <Clue entry={dailyEntry} done={dailyGame.done} shown={!!dailyGame.clueShown} onUse={takeDailyClue} />
               <Hint entry={dailyEntry} guesses={dailyGame.guesses} done={dailyGame.done} hintIndex={dailyGame.hintIndex} onUse={takeDailyHint} />
             </Game>
             {dailyGame.done && (
@@ -1131,6 +1175,7 @@ export default function Beastle() {
               <p className="text-xs font-body font-bold text-muted-foreground">{`Beastle #${archiveDay} · ${formatDay(archiveDay)}`}</p>
             </div>
             <Game entry={archiveEntry} guesses={archiveGame.guesses} done={archiveGame.done} words={words} onSubmit={submitArchive} showGroup>
+              <Clue entry={archiveEntry} done={archiveGame.done} shown={!!archiveGame.clueShown} onUse={takeArchiveClue} />
               <Hint entry={archiveEntry} guesses={archiveGame.guesses} done={archiveGame.done} hintIndex={archiveGame.hintIndex} onUse={takeArchiveHint} />
             </Game>
             {archiveGame.done && (
