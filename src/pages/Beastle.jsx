@@ -1,13 +1,13 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { ArrowRight, BarChart3, Bell, BellOff, Delete, HelpCircle, RotateCcw, Share2, BookOpen } from 'lucide-react';
+import { ArrowRight, BarChart3, Bell, BellOff, Delete, HelpCircle, Lightbulb, RotateCcw, Share2, BookOpen } from 'lucide-react';
 import {
   MAX_GUESSES, answerForDay, dayNumber, keyStates, lettersOf, loadWords, pickUnlimited,
   score, shapeOf, shareText, validate, byAnswer,
 } from '@/lib/beastle/engine';
 import { STORAGE, liveStreak } from '@/lib/beastle/day';
-import { bonusRound, factFor } from '@/lib/beastle/bonus';
+import { bonusRound, factFor, maskFact } from '@/lib/beastle/bonus';
 import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { logSiteEvent } from '@/lib/siteEvents';
@@ -145,7 +145,7 @@ function Keyboard({ keys, onKey, disabled }) {
 
 // The board, keyboard and input for one puzzle. The parent owns the guesses
 // so daily and unlimited can store them differently.
-function Game({ entry, guesses, done, words, onSubmit }) {
+function Game({ entry, guesses, done, words, onSubmit, children }) {
   const [current, setCurrent] = useState('');
   const [message, setMessage] = useState('');
   const [shaking, setShaking] = useState(false);
@@ -223,6 +223,7 @@ function Game({ entry, guesses, done, words, onSubmit }) {
       <p className="min-h-[1.25rem] text-sm font-body font-semibold text-secondary text-center" role="status" aria-live="polite">
         {message}
       </p>
+      {children}
       {!done && <Keyboard keys={keys} onKey={onKey} disabled={done} />}
     </div>
   );
@@ -415,6 +416,42 @@ function BeastleReminder() {
   );
 }
 
+// Unlimited only: one hint per animal, offered once four guesses are used.
+// The hint is one of the animal's facts (or its profile blurb) with every
+// form of its name blanked out, the same masking as the bonus round.
+const HINT_AFTER = 4;
+
+function hintFor(entry) {
+  const fact = entry.factIds[0] ? factFor(entry.factIds[0]) : null;
+  const text = fact?.fact || entry.blurb;
+  if (!text) return null;
+  return maskFact(text, [entry.name, fact?.animal, entry.answer].filter(Boolean));
+}
+
+function Hint({ entry, guesses, done, used, onUse }) {
+  const hint = useMemo(() => hintFor(entry), [entry]);
+  if (done || !hint || guesses.length < HINT_AFTER) return null;
+  if (!used) {
+    return (
+      <button
+        type="button"
+        onClick={onUse}
+        className="inline-flex items-center gap-2 bg-accent/20 hover:bg-accent/30 text-foreground font-body font-bold text-sm px-4 py-2 rounded-xl transition-colors"
+      >
+        <Lightbulb className="w-4 h-4 text-accent-ink" /> Get a hint (one per animal)
+      </button>
+    );
+  }
+  return (
+    <div className="w-full bg-accent/15 border border-accent/40 rounded-2xl px-4 py-3" role="note">
+      <p className="text-[10px] font-body font-bold uppercase tracking-widest text-accent-ink mb-1 flex items-center gap-1">
+        <Lightbulb className="w-3 h-3" /> Hint
+      </p>
+      <p className="text-sm font-body text-foreground leading-relaxed">{hint}</p>
+    </div>
+  );
+}
+
 function HowToPlay() {
   return (
     <div className="text-sm font-body text-muted-foreground leading-relaxed space-y-2">
@@ -564,6 +601,14 @@ export default function Beastle() {
     if (won) celebrate();
   }, [setUnlimited]);
 
+  const takeUnlimitedHint = useCallback(() => {
+    const u = unlimitedRef.current;
+    if (!u.current || u.current.hintUsed) return;
+    const next = { ...u, current: { ...u.current, hintUsed: true } };
+    unlimitedRef.current = next;
+    setUnlimited(next);
+  }, [setUnlimited]);
+
   const addToJournal = useCallback((item) => {
     setJournal((j) => (j.some((x) => x.answer === item.answer) ? j : [...j, item]));
   }, [setJournal]);
@@ -681,7 +726,7 @@ export default function Beastle() {
         {ready && mode === 'unlimited' && unlimitedEntry && (
           <div className="space-y-5">
             <p className="text-center text-xs font-body font-bold text-accent-ink bg-accent/15 rounded-xl py-2 px-3">
-              Practice mode: no streak here, play as many as you like.
+              Practice mode: no streak here, play as many as you like. Stuck? A hint unlocks after 4 guesses.
             </p>
             <Game
               entry={unlimitedEntry}
@@ -689,7 +734,15 @@ export default function Beastle() {
               done={unlimited.current.done}
               words={words}
               onSubmit={submitUnlimited}
-            />
+            >
+              <Hint
+                entry={unlimitedEntry}
+                guesses={unlimited.current.guesses}
+                done={unlimited.current.done}
+                used={!!unlimited.current.hintUsed}
+                onUse={takeUnlimitedHint}
+              />
+            </Game>
             {unlimited.current.done && (
               <Reveal entry={unlimitedEntry} won={unlimited.current.won} guesses={unlimited.current.guesses.length}>
                 <button type="button" onClick={newUnlimited} className="mt-4 inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground font-body font-bold text-sm px-5 py-2.5 rounded-2xl">
