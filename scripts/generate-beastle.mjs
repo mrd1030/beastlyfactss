@@ -274,8 +274,20 @@ async function main() {
   // Schedule: append-only list of daily answers.
   const outFile = path.join(root, 'src/lib/data/beastle/pool.json');
   const previous = fs.existsSync(outFile) ? JSON.parse(fs.readFileSync(outFile, 'utf8')) : null;
-  const dailyAnswers = new Set(pool.filter((e) => e.daily).map((e) => e.answer));
-  const schedule = [...(previous?.schedule || [])];
+  // Hard answers stay out of the daily: everyone plays it and a miss costs a
+  // streak. They are still in unlimited on Hard.
+  const dailyAnswers = new Set(pool.filter((e) => e.daily && e.level !== 'hard').map((e) => e.answer));
+  let schedule = [...(previous?.schedule || [])];
+
+  // --rebuild-future: keep every day up to and including today (site clock)
+  // and redeal the rest, for when the daily pool itself changes. Past and
+  // current puzzles never change, so no one's streak or share grid moves.
+  if (process.argv.includes('--rebuild-future')) {
+    const todayEt = new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
+    const today = Math.floor((Date.parse(`${todayEt}T00:00:00Z`) - Date.parse(`${EPOCH}T00:00:00Z`)) / 86400000) + 1;
+    schedule = schedule.slice(0, Math.max(0, today));
+    console.log(`rebuilding the schedule after Beastle #${today} (${todayEt})`);
+  }
 
   const singles = [...dailyAnswers].filter((a) => !/[ -]/.test(a));
   const multis = [...dailyAnswers].filter((a) => /[ -]/.test(a));
@@ -324,8 +336,7 @@ async function main() {
   fs.mkdirSync(path.dirname(wordsFile), { recursive: true });
   fs.writeFileSync(wordsFile, [...words].sort().join('\n') + '\n');
 
-  const daily = pool.filter((e) => e.daily);
-  console.log(`pool ${pool.length} (daily ${daily.length}: ${singles.length} single, ${multis.length} two-word)`);
+  console.log(`pool ${pool.length} (daily ${dailyAnswers.size}: ${singles.length} single, ${multis.length} two-word)`);
   console.log(`schedule ${schedule.length} days from ${EPOCH}, dictionary ${words.size} words`);
   const unknown = [...EASY, ...HARD].filter((a) => !pool.some((e) => e.answer === a));
   if (unknown.length) console.log(`difficulty lists name answers not in the pool: ${unknown.join(', ')}`);

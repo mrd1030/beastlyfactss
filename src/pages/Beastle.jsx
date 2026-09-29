@@ -417,9 +417,9 @@ function BeastleReminder() {
 }
 
 const LEVEL_OPTIONS = [
-  ['easy', 'Easy', 'Animals everyone knows'],
-  ['medium', 'Medium', 'Adds ones most people have heard of'],
-  ['hard', 'Hard', 'Everything, including the deep cuts'],
+  ['easy', 'Easy', 'Easy: animals everyone knows, like lions and dolphins'],
+  ['medium', 'Medium', 'Medium: everything in Easy, plus animals most people have heard of'],
+  ['hard', 'Hard', 'Hard: Easy and Medium, plus rare and hobby animals almost nobody knows'],
 ];
 
 function DifficultyPicker({ level, onChange, pending }) {
@@ -512,6 +512,10 @@ function HowToPlay() {
         <li><span className="inline-block w-4 h-4 rounded-sm bg-muted-foreground/40 align-middle mr-2" />Gray: the letter is not in the name.</li>
       </ul>
       <p>Everyone gets the same animal each day, and a new one arrives at midnight Eastern.</p>
+      <p>Unlimited lets you keep playing, at the level you pick:</p>
+      <ul className="space-y-1">
+        {LEVEL_OPTIONS.map(([id, , text]) => <li key={id}>{text}.</li>)}
+      </ul>
     </div>
   );
 }
