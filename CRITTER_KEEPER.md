@@ -73,6 +73,40 @@ the symptoms a real dragon would, each linking to the guide that explains why.
   branch, facing uphill whichever way it is rotated, pivoting on the point
   between his feet (`tilt` in `buildDragon`).
 
+## First session and stakes (Fable review, steps 1 and 2)
+
+- A "do this now" line under the tank (`nextStep`): the vet, then the tank,
+  then hides, then the lowest need, each with a button that opens the right
+  panel.
+- Basic setup fixes one thing at a time (`nextFix`), each with the reason
+  from the guides, in order: UVB, UVB over mesh, heat rock, basking temp,
+  substrate, humidity, cool side, tank size, then hides.
+- The decor tray hides behind a Decorate button. Rearranging is free in the
+  first week (setting up).
+- Health slides with hidden risk (bone, respiratory, gut, stress, calcium,
+  thirst) before symptoms fire.
+- The vet costs something: a visit resets the healthy-day streak, and the
+  vet can see him again only after 12 hours, except for poisoning and burns.
+  The visit count shows on his card.
+- Lifelong marks (`MARKS`): toe loss from stuck shed, a crooked jaw once MBD
+  gets severe. Each lowers his top health by 5 for good.
+
+## Ideas from Fable (not built yet)
+
+Mini games, each teaching a guide rule and feeding the sim: Tong Time (pick
+prey no wider than his eyes, skip fireflies), Salad Bar (staple, occasional,
+rare, never), Dust and Load (gut-load a day ahead, dust by age), Litter Tray
+(read the stool and urates), Shed Check (find stuck rings, soak, never peel),
+Lift Him Right (scoop from underneath, 10 to 15 minutes, a black beard ends
+it).
+
+Retention: a daily checklist (feed, dust, weigh, tray) whose streak counts
+full days; weekly weigh-ins plotted on the growth table (a real day is a
+dragon week); milestones as events (first shed, sexing at 4 to 6 months,
+brumation at a year, gotcha day); one living enclosure event a week; decor
+unlocked by streaks (3, 7, 14, 30 days); one push a day at most, never a
+guilt ping; a Beastle win drops a hornworm treat in the tank.
+
 ## Next
 
 1. **Living enclosure** (the tank should not be set once and done):

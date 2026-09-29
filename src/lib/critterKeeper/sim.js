@@ -1,6 +1,6 @@
 import {
   ADULT_AGE_DAYS, AGE_SPEED, CONDITIONS, DUSTS, ENRICHMENT, GROWTH, GUIDES, HANDLE_LENGTHS, INSECTS,
-  LIGHTS_OFF, LIGHTS_ON, MBD_STAGES, PLANTS, RANGES, SETTLE_DAYS, START_AGE_DAYS, STARTER_SETUP,
+  LIGHTS_OFF, LIGHTS_ON, MARKS, MBD_STAGES, VET_COOLDOWN_HOURS, PLANTS, RANGES, SETTLE_DAYS, START_AGE_DAYS, STARTER_SETUP,
   SUBSTRATES, TANKS, UVB_MOUNTS, UVB_TYPES, BIO_ESTABLISH_DAYS, TANK_SLOTS,
 } from '@/lib/critterKeeper/rules';
 import { DECOR } from '@/lib/critterKeeper/sprites/items';
@@ -89,6 +89,16 @@ export function health(s) {
     hp -= w;
   }
   if (s.m.full < 10) hp -= 10;
+  // Hidden risk shows before symptoms do, so health slides first and a
+  // problem can be caught early.
+  const { h } = s;
+  let risk = h.resp * 0.15 + h.gut * 0.15;
+  if (h.bone < 85) risk += (85 - h.bone) * 0.4;
+  if (h.stress > 30) risk += (h.stress - 30) * 0.3;
+  if (h.calcium < 15) risk += 4;
+  if (s.m.water < 40) risk += (40 - s.m.water) * 0.3;
+  hp -= Math.min(risk, 45);
+  hp -= 5 * (s.marks || []).length;
   return clamp(Math.round(hp));
 }
 
@@ -123,6 +133,8 @@ export function newGame(name, now) {
     shed: { next: now + 3 * DAY, until: null, soaked: false },
     cond: {},
     toeLoss: false,
+    marks: [],
+    lastVet: 0,
     parasitesAt: null,
     vetVisits: 0,
     streak: 0,
@@ -232,6 +244,7 @@ function step(s, t, dt) {
   if (s.cond.stuckShed && t - s.cond.stuckShed.since > 2 * DAY) {
     delete s.cond.stuckShed;
     s.toeLoss = true;
+    if (!s.marks.includes('toe')) s.marks.push('toe');
     log(s, t, 'Stuck shed cut off the circulation and he lost the tip of a toe. Lost tissue does not grow back.', 'bad', 'health');
   }
 
@@ -248,6 +261,10 @@ function step(s, t, dt) {
   if (h.gut >= 70) addCond(s, 'impaction', t);
   else if (h.gut < 40) dropCond(s, 'impaction', t, 'He passed a stool. The impaction cleared.');
   if (h.bone < 60) addCond(s, 'mbd', t);
+  if (h.bone < 40 && !s.marks.includes('jaw')) {
+    s.marks.push('jaw');
+    log(s, t, `${s.name}'s lower jaw is softening and healing crooked. It will stay that way for life.`, 'bad', 'uvb');
+  }
   else if (h.bone >= 70) dropCond(s, 'mbd', t, 'His bones are getting stronger.');
   if (h.resp >= 100) addCond(s, 'respiratory', t);
   if (h.stress >= 50) addCond(s, 'stress', t);
@@ -278,6 +295,8 @@ export function tick(state, now) {
   // A clock that went backward (a changed device clock) restarts from now
   // instead of freezing him until real time catches up.
   if (s.lastTick > now) s.lastTick = now;
+  s.marks = s.marks || [];
+  if (s.toeLoss && !s.marks.includes('toe')) s.marks.push('toe');
   s.decor = s.decor || {};
   s.free = s.free || {};
   s.bio = s.bio || null;
@@ -318,6 +337,11 @@ function setupChange(s, now, opts) {
     s.bulbAt = now;
     s.bulbWarned = false;
   }
+  // A different kind of UVB means a new bulb.
+  if (opts.uvb && opts.uvb !== s.setup.uvb) {
+    s.bulbAt = now;
+    s.bulbWarned = false;
+  }
   const wasBio = s.setup.substrate === 'bioactive';
   s.setup = { ...s.setup, ...opts };
   parts.push({ text: 'Tank updated.', tone: 'good' });
@@ -346,7 +370,8 @@ function decorChange(s, now, { decor, free, layers }) {
   }
   const recent = within(s.logs.rearrange, now, 7 * DAY).length;
   s.logs.rearrange.push(now);
-  if (recent && after <= before) {
+  // Setting up in the first week never counts against him.
+  if (recent && after <= before && daysHome(s, now) >= SETTLE_DAYS) {
     s.h.stress += 15;
     return [{ text: 'He already had a new layout this week. Rearrange occasionally, not constantly.', tone: 'warn', guide: 'enrichment' }];
   }
@@ -572,10 +597,24 @@ function clean(s, now) {
   return [{ text: had ? `Spot cleaned. ${stool.text}` : `Nothing to pick up. ${stool.text}`, tone: stool.tone === 'good' ? 'good' : stool.tone, guide: 'growth' }];
 }
 
+export function vetReadyAt(s) {
+  // Poisoning and burns are emergencies: no waiting.
+  if (s.cond.poisoned || s.cond.burn) return 0;
+  return (s.lastVet || 0) + VET_COOLDOWN_HOURS * 3600e3;
+}
+
 function vet(s, now) {
   const treated = Object.keys(s.cond).filter((id) => id !== 'obesity');
   if (!treated.length && health(s) > 30) return [{ text: 'The vet says he looks healthy. Nothing to treat.', tone: 'good' }];
+  const ready = vetReadyAt(s);
+  if (now < ready) {
+    const at = new Date(ready).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+    return [{ text: `The vet can see him again at ${at}. Until then, fix what you can: the cause is usually in the tank or the diet.`, tone: 'warn', guide: 'health' }];
+  }
   s.vetVisits += 1;
+  s.lastVet = now;
+  s.streak = 0;
+  s.dayOk = false;
   for (const id of treated) delete s.cond[id];
   s.h.resp = Math.min(s.h.resp, 30);
   s.h.gut = Math.min(s.h.gut, 20);
@@ -586,14 +625,14 @@ function vet(s, now) {
   if (treated.includes('d3')) s.logs.d3 = [];
   const causes = treated.map((id) => CONDITIONS[id].cause).filter(Boolean);
   return [
-    { text: `The vet treated ${s.name} for ${treated.map((id) => CONDITIONS[id].label.toLowerCase()).join(', ')}.`, tone: 'info' },
+    { text: `The vet treated ${s.name} for ${treated.map((id) => CONDITIONS[id].label.toLowerCase()).join(', ')}. A vet visit resets his healthy-day streak.`, tone: 'info' },
     ...(causes.length ? [{ text: `If the cause stays, it comes back. ${causes.join(' ')}`, tone: 'warn', guide: CONDITIONS[treated[0]].guide }] : []),
   ];
 }
 
 export function act(state, type, opts = {}, now = Date.now()) {
   const s = tick(state, now);
-  if (needsVet(s) && !['vet', 'setup', 'bulb', 'water', 'clean'].includes(type)) {
+  if (needsVet(s) && !['vet', 'setup', 'fixnext', 'decor', 'bulb', 'water', 'clean'].includes(type)) {
     return { state: s, msg: { text: `${s.name} needs a vet before anything else.`, tone: 'bad', guide: 'health' } };
   }
   let parts;
@@ -614,14 +653,14 @@ export function act(state, type, opts = {}, now = Date.now()) {
       s.bulbWarned = false;
       parts = [{ text: 'New UVB bulb in. Output fades before the light visibly dims, so tubes need replacing every 6 to 12 months.', tone: 'good', guide: 'uvb' }];
       break;
-    case 'setup':
-      // A different kind of UVB means a new bulb.
-      if (opts.uvb && opts.uvb !== s.setup.uvb) {
-        s.bulbAt = now;
-        s.bulbWarned = false;
-      }
-      parts = setupChange(s, now, opts);
+    case 'setup': parts = setupChange(s, now, opts); break;
+    case 'fixnext': {
+      const fix = nextFix(s, now);
+      if (!fix) parts = [{ text: 'Everything in the tank checks out.', tone: 'good' }];
+      else if (!fix.setup) parts = [{ text: fix.text, tone: 'info', guide: fix.guide }];
+      else parts = [{ text: fix.text, tone: 'good', guide: fix.guide }, ...setupChange(s, now, fix.setup).slice(1)];
       break;
+    }
     case 'decor': parts = decorChange(s, now, opts); break;
     case 'vet': parts = vet(s, now); break;
     default: return { state: s, msg: null };
@@ -663,6 +702,38 @@ export function tankChecks(s, now) {
     { id: 'hides', label: 'Hides', value: `${hides(s)}`, target: 'One on the warm end and one on the cool end', state: hides(s) >= 2 ? 'ok' : 'low' },
     { id: 'tank', label: 'Tank', value: TANKS[st.tank].label, target: '4x2x2 ft for an adult', state: tooSmall(s, now) ? 'low' : 'ok' },
   ];
+}
+
+// The basic setup, one fix at a time, each with the reason from the guides.
+export function nextFix(s, now) {
+  const st = s.setup;
+  const [bmin, bmax] = baskRange(s, now);
+  const mid = (a, b) => Math.round((a + b) / 2);
+  if (st.uvb !== 't5') return { setup: { uvb: 't5' }, text: 'Put in a T5 HO UVB tube with a reflector. Without UVB he cannot use calcium, which leads to metabolic bone disease.', guide: 'uvb' };
+  if (st.mount !== 'mesh') return { setup: { mount: 'mesh' }, text: 'Moved the UVB tube over the mesh. Glass and plastic block UVB.', guide: 'uvb' };
+  if (st.heat === 'rock') return { setup: { heat: 'halogen' }, text: 'Swapped the heat rock for a halogen basking bulb above him. Heat rocks cause burns.', guide: 'health' };
+  if (st.basking < bmin || st.basking > bmax) return { setup: { basking: mid(bmin, bmax) }, text: `Set the basking spot to ${mid(bmin, bmax)}°F. He needs ${bmin} to ${bmax}°F to digest.`, guide: 'tank' };
+  if (SUBSTRATES[st.substrate].loose && st.substrate !== 'bioactive') return { setup: { substrate: 'tile' }, text: 'Swapped the loose substrate for tile. Loose substrate can be swallowed and cause impaction.', guide: 'tank' };
+  if (st.humidity < RANGES.humidity[0] || st.humidity > RANGES.humidity[1]) return { setup: { humidity: 35 }, text: 'Brought humidity to 35%. Too damp and he risks a respiratory infection.', guide: 'tank' };
+  if (st.cool < RANGES.cool[0] || st.cool > RANGES.cool[1]) return { setup: { cool: 80 }, text: 'Set the cool side to 80°F, inside the 75 to 85°F range, so he can cool off.', guide: 'tank' };
+  if (st.tank !== '120') return { setup: { tank: '120' }, text: 'Moved him into a 4x2x2 tank, the adult minimum. A cramped tank stresses him.', guide: 'tank' };
+  if (hides(s) < 2) return { text: 'Add hides with Decorate: one on the warm end and one on the cool end.', guide: 'enrichment' };
+  return null;
+}
+
+// The one thing most worth doing right now, for the line under the tank.
+export function nextStep(s, now) {
+  if (needsVet(s)) return { text: `${s.name} needs a vet.`, action: 'vet' };
+  const fix = nextFix(s, now);
+  if (fix) return { text: fix.setup ? 'Something in his tank is wrong. Check the tank.' : 'He needs hides: one warm, one cool.', action: fix.setup ? 'tank' : 'decorate' };
+  if (!isDay(now)) return { text: 'He is asleep. Let him rest until the lights come on.', action: null };
+  const adult = stageOf(s, now) === 'adult';
+  if (s.m.full < 35) return { text: adult ? 'He is hungry. Serve him a salad.' : 'He is hungry. Feed him insects.', action: adult ? 'salad' : 'insects' };
+  if (s.m.water < 40) return { text: 'He could use water. Refresh his dish.', action: 'water' };
+  if (s.poops > 0 || s.m.clean < 40) return { text: 'Time to spot clean the tank.', action: 'clean' };
+  if (s.m.fun < 35) return { text: 'He is bored. Give him some enrichment.', action: 'enrich' };
+  if (daysHome(s, now) >= SETTLE_DAYS && s.m.trust < 40) return { text: 'Build trust: handle him for about 15 minutes.', action: 'handle' };
+  return { text: 'All good for now. Check back later.', action: null };
 }
 
 export function mood(s, now) {

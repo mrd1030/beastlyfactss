@@ -1,17 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { BookOpen, Bug, Droplets, Hand, Leaf, RotateCcw, Sparkles, Stethoscope, Thermometer, Trash2, Waves } from 'lucide-react';
+import { ArrowRight, BookOpen, Bug, Droplets, Hand, Leaf, RotateCcw, Sofa, Sparkles, Stethoscope, Thermometer, Trash2, Waves } from 'lucide-react';
 import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
 import {
-  BASIC_SETUP, ENRICHMENT, GUIDES, HANDLE_LENGTHS, HEAT_SOURCES, INSECTS, DUSTS, PLANTS, SUBSTRATES, TANKS, UVB_MOUNTS, UVB_TYPES, CONDITIONS,
+  ENRICHMENT, GUIDES, MARKS, HANDLE_LENGTHS, HEAT_SOURCES, INSECTS, DUSTS, PLANTS, SUBSTRATES, TANKS, UVB_MOUNTS, UVB_TYPES, CONDITIONS,
 } from '@/lib/critterKeeper/rules';
 import {
-  act, ageDays, health, mbdSymptoms, mood, needsVet, newGame, tankChecks, tick,
+  act, ageDays, health, mbdSymptoms, mood, needsVet, newGame, nextFix, nextStep, tankChecks, tick,
 } from '@/lib/critterKeeper/sim';
 import TankScene, { DragonCanvas } from '@/components/critterKeeper/TankScene';
 
 const STORAGE_KEY = 'critter-keeper-v1';
+const STEP_LABEL = { vet: 'Vet', tank: 'Tank', decorate: 'Decorate', insects: 'Feed', salad: 'Salad', water: 'Water', clean: 'Clean', enrich: 'Play', handle: 'Handle' };
 
 const TONE = {
   good: 'bg-primary/10 border-primary/30',
@@ -150,7 +151,7 @@ function Slider({ label, value, min, max, unit, onChange }) {
   );
 }
 
-function TankPanel({ game, now, onDo }) {
+function TankPanel({ game, now, onDo, msg }) {
   const [draft, setDraft] = useState(game.setup);
   const set = (k) => (v) => setDraft((d) => ({ ...d, [k]: v }));
   const checks = tankChecks(game, now);
@@ -169,14 +170,25 @@ function TankPanel({ game, now, onDo }) {
           </li>
         ))}
       </ul>
-      <div className="mb-4 bg-primary/10 border border-primary/30 rounded-xl p-3">
-        <p className="text-sm font-body text-foreground mb-2">
-          <strong>Basic setup:</strong> a 4x2x2 tank on tile, a T5 HO UVB tube over mesh, a halogen basking bulb, the basking spot and cool side in range, humidity at 35%.
-        </p>
-        <button type="button" onClick={() => onDo('setup', BASIC_SETUP)} className="bg-primary text-primary-foreground font-body font-bold text-sm px-4 py-2 rounded-xl">
-          Use the basic setup
-        </button>
-      </div>
+      {(() => {
+        const fix = nextFix(game, now);
+        const left = checks.filter((c) => c.state !== 'ok').length;
+        return (
+          <div className="mb-4 bg-primary/10 border border-primary/30 rounded-xl p-3">
+            <p className="text-sm font-body text-foreground mb-2">
+              {fix
+                ? <><strong>Basic setup:</strong> {`${left} thing${left === 1 ? '' : 's'} to fix. Fix them yourself below, or one at a time here, each with the reason.`}</>
+                : <><strong>Basic setup:</strong> everything checks out.</>}
+            </p>
+            {msg && <p className="text-sm font-body text-foreground bg-card/70 rounded-lg px-3 py-2 mb-2">{msg.text}</p>}
+            {fix && (
+              <button type="button" onClick={() => onDo('fixnext')} className="bg-primary text-primary-foreground font-body font-bold text-sm px-4 py-2 rounded-xl">
+                Fix the next problem
+              </button>
+            )}
+          </div>
+        );
+      })()}
       <Field label="Tank">
         {Object.entries(TANKS).map(([id, t]) => <Chip key={id} active={draft.tank === id} onClick={() => set('tank')(id)}>{t.label}</Chip>)}
       </Field>
@@ -215,6 +227,7 @@ const ACTIONS = [
   { id: 'enrich', label: 'Enrichment', icon: Sparkles, panel: EnrichPanel },
   { id: 'clean', label: 'Spot clean', icon: Trash2 },
   { id: 'tank', label: 'Tank', icon: Thermometer, panel: TankPanel },
+  { id: 'decorate', label: 'Decorate', icon: Sofa },
 ];
 
 function Adopt({ onAdopt }) {
@@ -248,7 +261,8 @@ function Adopt({ onAdopt }) {
 
 function Problems({ game }) {
   const ids = Object.keys(game.cond);
-  if (!ids.length && !game.toeLoss) return null;
+  const marks = game.marks || [];
+  if (!ids.length && !marks.length) return null;
   return (
     <div className="space-y-2 mb-4">
       {ids.map((id) => {
@@ -261,9 +275,9 @@ function Problems({ game }) {
           </div>
         );
       })}
-      {game.toeLoss && (
-        <p className="text-xs font-body text-muted-foreground">He is missing the tip of a toe from stuck shed. It will not grow back.</p>
-      )}
+      {marks.map((id) => (
+        <p key={id} className="text-xs font-body text-muted-foreground">Lifelong: {MARKS[id]}</p>
+      ))}
     </div>
   );
 }
@@ -294,6 +308,8 @@ export default function CritterKeeper() {
   const [open, setOpen] = useState(null);
   const [msg, setMsg] = useState(null);
   const [eating, setEating] = useState(false);
+  const [decorating, setDecorating] = useState(false);
+  const panelRef = useRef(null);
 
   // Time is read after mount only, so the prerendered page is the same for
   // everyone and the live dragon appears on hydration.
@@ -331,6 +347,23 @@ export default function CritterKeeper() {
   const md = ready && game ? mood(game, now) : null;
   const hp = ready && game ? health(game) : 100;
   const age = ready && game ? ageDays(game, now) : 0;
+  const step = ready && game ? nextStep(game, now) : null;
+
+  // One way in for the action buttons and the next-step button: open a
+  // panel, toggle decorating, or just do it.
+  const runStep = (id, toggle = true) => {
+    if (id === 'decorate') {
+      setDecorating((d) => (toggle ? !d : true));
+      return;
+    }
+    const action = ACTIONS.find((a) => a.id === id);
+    if (action?.panel) {
+      setOpen(toggle && open === id ? null : id);
+      setTimeout(() => panelRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+    } else {
+      doAction(id);
+    }
+  };
 
   return (
     <div className="min-h-screen">
@@ -364,10 +397,22 @@ export default function CritterKeeper() {
               now={now}
               pose={eating ? 'eat' : 'idle'}
               onDecor={(change) => doAction('decor', change)}
+              decorating={decorating}
+              onDoneDecorating={() => setDecorating(false)}
               badge={(
                 <span className="absolute left-2 top-2 bg-card/90 backdrop-blur px-2.5 py-1 rounded-lg text-xs font-body font-bold text-foreground pointer-events-none">
                   {md.emoji} {md.text}
                 </span>
+              )}
+              footer={step && (
+                <div className="flex items-center gap-2 px-3 py-2 border-t border-border bg-card">
+                  <p className="flex-1 text-xs font-body font-bold text-foreground">{step.text}</p>
+                  {step.action && (
+                    <button type="button" onClick={() => runStep(step.action, false)} className="shrink-0 inline-flex items-center gap-1 bg-primary text-primary-foreground text-xs font-body font-bold px-3 py-1.5 rounded-lg">
+                      {STEP_LABEL[step.action] || 'Go'} <ArrowRight className="w-3.5 h-3.5" />
+                    </button>
+                  )}
+                </div>
               )}
             />
             <div className="bg-card border border-border rounded-2xl mb-4">
@@ -377,6 +422,7 @@ export default function CritterKeeper() {
                   <p className="text-xs font-body text-muted-foreground text-right">
                     {Math.round(age / 30.4)} months · {Math.round(game.h.weight)} g
                     {game.streak > 0 && <> · 🔥 {game.streak} healthy day{game.streak === 1 ? '' : 's'}</>}
+                    {game.vetVisits > 0 && <> · 🩺 {game.vetVisits} vet visit{game.vetVisits === 1 ? '' : 's'}</>}
                   </p>
                 </div>
                 <div className="mb-3"><Meter label="Health" value={hp} /></div>
@@ -406,15 +452,15 @@ export default function CritterKeeper() {
               </div>
             )}
 
-            <div className="grid grid-cols-4 gap-2 mb-3">
+            <div className="grid grid-cols-3 gap-2 mb-3">
               {ACTIONS.map(({ id, label, icon: Icon, panel }) => (
                 <button
                   key={id}
                   type="button"
-                  onClick={() => (panel ? setOpen(open === id ? null : id) : doAction(id))}
-                  aria-expanded={panel ? open === id : undefined}
+                  onClick={() => runStep(id)}
+                  aria-expanded={panel ? open === id : id === 'decorate' ? decorating : undefined}
                   className={`flex flex-col items-center gap-1 py-3 rounded-xl border text-xs font-body font-bold transition-colors ${
-                    open === id ? 'bg-primary text-primary-foreground border-primary' : 'bg-card text-foreground border-border hover:bg-muted'
+                    open === id || (id === 'decorate' && decorating) ? 'bg-primary text-primary-foreground border-primary' : 'bg-card text-foreground border-border hover:bg-muted'
                   }`}
                 >
                   <Icon className="w-5 h-5" />
@@ -426,8 +472,8 @@ export default function CritterKeeper() {
             {open && (() => {
               const Panel = ACTIONS.find((a) => a.id === open).panel;
               return (
-                <div className="bg-card border border-border rounded-2xl p-4 mb-4">
-                  <Panel key={`${open}-${JSON.stringify(game.setup)}`} game={game} now={now} onDo={doAction} />
+                <div ref={panelRef} className="bg-card border border-border rounded-2xl p-4 mb-4 scroll-mt-72">
+                  <Panel key={`${open}-${JSON.stringify(game.setup)}`} game={game} now={now} onDo={doAction} msg={msg} />
                 </div>
               );
             })()}

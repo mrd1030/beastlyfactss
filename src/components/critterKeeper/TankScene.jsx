@@ -332,7 +332,7 @@ function ItemIcon({ id }) {
 
 const pct = (v, of) => `${(v / of) * 100}%`;
 
-export default function TankScene({ game, now, pose = 'idle', onDecor, badge }) {
+export default function TankScene({ game, now, pose = 'idle', onDecor, badge, footer, decorating = false, onDoneDecorating }) {
   const canvasRef = useRef(null);
   const boxRef = useRef(null);
   const [frame, setFrame] = useState(0);
@@ -542,9 +542,15 @@ export default function TankScene({ game, now, pose = 'idle', onDecor, badge }) 
           );
         })}
         {badge}
+        {footer}
       </div>
 
+      {decorating && (
       <div className="bg-card border border-border rounded-2xl p-3 mt-3 mb-4">
+        <div className="flex items-center justify-between mb-2">
+          <p className="text-sm font-display font-bold text-foreground">Decorate</p>
+          <button type="button" onClick={onDoneDecorating} className="px-3 py-1.5 rounded-xl bg-primary text-primary-foreground text-xs font-body font-bold">Done</button>
+        </div>
         {selected && inTank.has(selected) ? (
           <div className="flex flex-wrap items-center gap-2 mb-3 pb-3 border-b border-border">
             <span className="text-sm font-body font-bold text-foreground mr-auto">{DECOR[selected].label}</span>
@@ -585,6 +591,8 @@ export default function TankScene({ game, now, pose = 'idle', onDecor, badge }) 
           })}
         </div>
       </div>
+      )}
+      {!decorating && <div className="mb-4" />}
 
       {(floorDrag || freeOutside) && (
         <div className="fixed pointer-events-none z-50" style={{ left: drag.x - 24, top: drag.y - 20 }}>

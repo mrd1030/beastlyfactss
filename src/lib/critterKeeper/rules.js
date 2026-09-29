@@ -223,6 +223,17 @@ export const CONDITIONS = {
   },
 };
 
+// Lifelong marks: damage the guides say does not heal back. Each one
+// lowers his top health a little for good.
+export const MARKS = {
+  toe: 'Missing the tip of a toe from stuck shed. Lost tissue does not grow back.',
+  jaw: 'A crooked lower jaw from metabolic bone disease. Healed crooked jaws stay crooked for life.',
+};
+
+// The vet treats what you cannot, but a visit resets the healthy-day streak
+// and, outside emergencies, the vet can see him again only after this long.
+export const VET_COOLDOWN_HOURS = 12;
+
 export const MBD_STAGES = [
   [60, 'Lower appetite and energy.'],
   [40, 'Trouble walking, and he no longer lifts his body clear of the floor.'],
