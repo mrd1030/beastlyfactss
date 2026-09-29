@@ -11,7 +11,7 @@ import { truncateDescription } from '@/lib/utils/truncate';
 import { facts } from '@/lib/data/facts';
 import { slugify } from '@/lib/utils/slugify';
 import { imagePathFor } from '@/lib/data/factImages';
-import { quizPhrase, quizShareImage, shareQuizResult } from '@/lib/utils/quizShareImage';
+import { quizShareImage, scoreShareText, shareQuizResult } from '@/lib/utils/quizShareImage';
 import FactModal from '@/components/shared/FactModal';
 import ImageLightbox from '@/components/shared/ImageLightbox';
 
@@ -196,9 +196,7 @@ export default function ThemedQuizPage({ quiz }) {
   };
 
   const handleShare = () => {
-    const text = tier.kind === 'perfect'
-      ? `${quiz.emoji} I scored ${score}/${total} on ${quizPhrase(quiz.title, { quoted: true })} at BeastlyFacts and earned the ${quiz.reward.emoji} ${quiz.reward.title} card. Think you can beat me?`
-      : `${quiz.emoji} I scored ${score}/${total} on ${quizPhrase(quiz.title, { quoted: true })} at BeastlyFacts. Think you can beat me?`;
+    const text = scoreShareText({ emoji: quiz.emoji, title: quiz.title, score, total });
     const url = `${window.location.origin}/quiz/${quiz.id}/`;
     const image = quizShareImage({
       emoji: tier.card.emoji,

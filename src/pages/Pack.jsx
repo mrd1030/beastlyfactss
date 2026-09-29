@@ -5,7 +5,7 @@ import { Heart, Share2, ChevronDown, ChevronUp, X, RotateCcw } from 'lucide-reac
 import { Link } from 'react-router-dom';
 import { facts } from '@/lib/data/facts';
 import { imagePathFor } from '@/lib/data/factImages';
-import { quizPhrase, quizShareImage, shareQuizResult } from '@/lib/utils/quizShareImage';
+import { quizShareImage, scoreShareText, shareQuizResult } from '@/lib/utils/quizShareImage';
 import { useFavoritesCtx, ACHIEVEMENTS } from '@/lib/FavoritesContext';
 import FactCard from '@/components/shared/FactCard';
 import FactModal from '@/components/shared/FactModal';
@@ -154,9 +154,9 @@ export default function Pack() {
           // card has both plus a named reward, and the personality result has
           // neither, so each gets its own wording.
           const text = isAnimalCard
-            ? `${qr.animalEmoji || '🐾'} I scored ${qr.score}/${qr.total} on the ${qr.animalName} quiz on BeastlyFacts! Think you can beat me?`
+            ? scoreShareText({ emoji: qr.animalEmoji || '🐾', title: qr.animalName, score: qr.score, total: qr.total })
             : isThemedCard
-              ? `${qr.emoji} I earned the "${qr.title}" card scoring ${qr.score}/${qr.total} on ${quizPhrase(qr.quizTitle)} at BeastlyFacts. Think you can beat me?`
+              ? scoreShareText({ emoji: qr.emoji, title: qr.quizTitle, score: qr.score, total: qr.total })
               : `${qr.emoji} I got ${qr.title} on BeastlyFacts! Which critter are you?`;
           const url = isAnimalCard
             ? `${window.location.origin}/encyclopedia/animal/${qr.animalId}/`
@@ -240,11 +240,11 @@ export default function Pack() {
             <span className="text-4xl block mb-2" aria-hidden="true">{qr.emoji}</span>
             <h3 className="font-display font-bold text-lg pr-6">{qr.title}</h3>
             {isThemedCard && (
-              <div className="flex items-start gap-2 mt-1.5 min-w-0">
-                <span className="flex-shrink-0 text-xs font-body font-bold tabular-nums px-2 py-0.5 rounded-md bg-secondary text-secondary-foreground">
+              <div className="mt-1.5">
+                <p className="text-xs font-body font-semibold text-secondary leading-tight line-clamp-2">{qr.quizTitle}</p>
+                <span className="inline-block mt-1.5 text-xs font-body font-bold tabular-nums px-2 py-0.5 rounded-md bg-secondary text-secondary-foreground">
                   {`${qr.score}/${qr.total}`}
                 </span>
-                <span className="text-xs font-body font-semibold text-secondary leading-tight line-clamp-2">{qr.quizTitle}</span>
               </div>
             )}
             <p className="text-sm text-muted-foreground mt-2 line-clamp-3">{blurb}</p>

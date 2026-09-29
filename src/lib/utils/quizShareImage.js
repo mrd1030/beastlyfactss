@@ -46,6 +46,15 @@ export function quizPhrase(title, { quoted = false } = {}) {
   return /^the\s/i.test(title) ? `${name} quiz` : `the ${name} quiz`;
 }
 
+// The share message for any scored quiz. A perfect score cannot be beaten,
+// so it asks whether they know as much instead of daring them to beat it.
+export function scoreShareText({ emoji, title, score, total }) {
+  const quiz = quizPhrase(title);
+  return score === total
+    ? `${emoji} I got a perfect ${score}/${total} on ${quiz} at BeastlyFacts. Think you know as much as me?`
+    : `${emoji} Check out ${quiz} at BeastlyFacts and try to beat my ${score}/${total}!`;
+}
+
 // kicker: small orange line above the emoji ("Reward card earned").
 // line: the score line under the blurb ("8/8 on Cleanup Crew Check").
 export async function quizShareImage({ emoji, title, blurb, kicker, line, fileName }) {
