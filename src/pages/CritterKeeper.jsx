@@ -7,12 +7,13 @@ import {
   ENRICHMENT, GROWTH_BANDS, GUIDES, MARKS, HANDLE_LENGTHS, HEAT_SOURCES, INSECTS, DUSTS, PLANTS, SUBSTRATES, TANKS, UVB_MOUNTS, UVB_TYPES, CONDITIONS,
 } from '@/lib/critterKeeper/rules';
 import {
-  act, ageDays, checklist, feedBlock, growthBand, health, mbdSymptoms, mood, needsVet, newGame, nextFix, nextStep, tankChecks, tick,
+  act, ageDays, checklist, daysHome, feedBlock, growthBand, health, markCriticalSeen, memorialOf, mbdSymptoms, mood, needsVet, newGame, nextFix, nextStep, tankChecks, tick,
 } from '@/lib/critterKeeper/sim';
 import TankScene, { DragonCanvas } from '@/components/critterKeeper/TankScene';
 import TongTime from '@/components/critterKeeper/TongTime';
 
 const STORAGE_KEY = 'critter-keeper-v1';
+const REMEMBERED_KEY = 'critter-keeper-remembered';
 const STEP_LABEL = { weigh: 'Weigh', vet: 'Vet', tank: 'Tank', decorate: 'Decorate', insects: 'Feed', salad: 'Salad', water: 'Water', clean: 'Clean', enrich: 'Play', handle: 'Handle' };
 
 const TONE = {
@@ -321,7 +322,58 @@ const ACTIONS = [
 
 const PANELS = { ...Object.fromEntries(ACTIONS.filter((a) => a.panel).map((a) => [a.id, a.panel])), weigh: GrowthPanel };
 
-function Adopt({ onAdopt }) {
+// What the last dragon's problems taught, each with the guide that explains it.
+function Lessons({ lessons, title }) {
+  if (!lessons?.had?.length) return null;
+  return (
+    <div className="bg-accent/10 border border-accent/40 rounded-2xl p-4 mb-4">
+      <p className="font-display font-bold text-foreground mb-2">{title}</p>
+      <ul className="space-y-1.5">
+        {lessons.had.filter((id) => CONDITIONS[id]).map((id) => (
+          <li key={id} className="text-sm font-body text-foreground">
+            {CONDITIONS[id].label}: {CONDITIONS[id].cause || CONDITIONS[id].symptoms}{' '}
+            <GuideLink id={CONDITIONS[id].guide} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function Memorial({ game, onAdopt }) {
+  const [look, setLook] = useState(false);
+  const m = memorialOf(game);
+  const days = Math.max(1, Math.round((m.diedAt - m.adoptedAt) / 86400e3));
+  const when = new Date(m.diedAt).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+  return (
+    <div className="bg-card border border-border rounded-2xl p-5">
+      <h2 className="font-display font-bold text-2xl text-foreground mb-2">{m.name} died</h2>
+      <p className="text-sm font-body text-foreground leading-relaxed mb-3">
+        {m.name} died on {when}. He was {Math.round(m.age / 30.4)} months old and lived with you for {days} day{days === 1 ? '' : 's'}.
+      </p>
+      <p className="text-sm font-body text-foreground leading-relaxed mb-1"><strong>What went wrong:</strong> {m.cause.text}</p>
+      <div className="mb-3"><GuideLink id={m.cause.guide} /></div>
+      <p className="text-sm font-body text-muted-foreground leading-relaxed mb-4">
+        Most serious bearded dragon health problems trace back to the setup, not bad luck. With the right care, bearded dragons typically live 10 to 15 years. You know more now than when he came home.
+      </p>
+      <div className="flex flex-wrap gap-2">
+        <button type="button" onClick={onAdopt} className="bg-primary text-primary-foreground font-body font-bold text-sm px-4 py-2.5 rounded-xl">Adopt a new dragon</button>
+        <button type="button" onClick={() => setLook((v) => !v)} aria-expanded={look} className="border border-border font-body font-bold text-sm px-4 py-2.5 rounded-xl hover:bg-muted">Look back at {m.name}</button>
+      </div>
+      {look && (
+        <div className="mt-4 pt-4 border-t border-border">
+          <p className="text-sm font-body text-foreground mb-2">
+            Best streak: {m.bestStreak} day{m.bestStreak === 1 ? '' : 's'} · Vet visits: {m.vetVisits}
+          </p>
+          {m.marks.map((id) => <p key={id} className="text-xs font-body text-muted-foreground mb-1">Lifelong: {MARKS[id]}</p>)}
+          {m.weights.length > 0 && <GrowthChart weights={m.weights} age={m.age} />}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function Adopt({ onAdopt, lessons }) {
   const [name, setName] = useState('Dex');
   return (
     <div className="bg-card border border-border rounded-2xl overflow-hidden">
@@ -345,6 +397,7 @@ function Adopt({ onAdopt }) {
           className="w-full mb-3 px-3 py-2.5 rounded-xl border border-border bg-background text-foreground font-body"
         />
         <Go onClick={() => onAdopt(name)}>Bring him home</Go>
+        {lessons && <div className="mt-4"><Lessons lessons={lessons} title={`What ${lessons.from} taught you`} /></div>}
       </div>
     </div>
   );
@@ -395,6 +448,7 @@ function Log({ entries }) {
 
 export default function CritterKeeper() {
   const [game, setGame, loaded] = useLocalStorage(STORAGE_KEY, null);
+  const [remembered, setRemembered] = useLocalStorage(REMEMBERED_KEY, []);
   const [now, setNow] = useState(null);
   const [open, setOpen] = useState(null);
   const [msg, setMsg] = useState(null);
@@ -417,6 +471,20 @@ export default function CritterKeeper() {
     if (!loaded || !now || !game) return;
     if (now - game.lastTick >= 60000) setGame(tick(game, now));
   }, [loaded, now, game, setGame]);
+
+  // The rescue window starts the moment the critical warning is on screen.
+  useEffect(() => {
+    if (game?.critical && !game.critical.seenAt && document.visibilityState === 'visible') setGame(markCriticalSeen(game, Date.now()));
+  }, [game, setGame]);
+
+  const last = remembered[0];
+  const lessons = last?.had?.length ? { from: last.name, had: last.had } : null;
+  const adoptAgain = () => {
+    setRemembered([memorialOf(game), ...remembered].slice(0, 5));
+    setGame(null);
+    setMsg(null);
+    setOpen(null);
+  };
 
   const doAction = (type, opts) => {
     const t = Date.now();
@@ -476,9 +544,11 @@ export default function CritterKeeper() {
 
         {!ready && <div className="h-96 rounded-2xl bg-muted animate-pulse" aria-hidden="true" />}
 
-        {ready && !game && <Adopt onAdopt={(name) => setGame(newGame(name, Date.now()))} />}
+        {ready && !game && <Adopt lessons={lessons} onAdopt={(name) => setGame(newGame(name, Date.now(), lessons))} />}
 
-        {ready && game && (
+        {ready && game?.dead && <Memorial game={game} onAdopt={adoptAgain} />}
+
+        {ready && game && !game.dead && (
           <>
             {/* The tank is a direct child of the page column (TankScene's
                 root is display: contents) so it can stay stuck under the
@@ -496,8 +566,8 @@ export default function CritterKeeper() {
                 </span>
               )}
               footer={step && (
-                <div className="flex items-center gap-2 px-3 py-2 border-t border-border bg-card">
-                  <p className="flex-1 text-xs font-body font-bold text-foreground">{step.text}</p>
+                <div className={`flex items-center gap-2 px-3 py-2 border-t ${step.urgent ? 'bg-destructive text-destructive-foreground border-destructive' : 'border-border bg-card text-foreground'}`}>
+                  <p className="flex-1 text-xs font-body font-bold">{step.text}</p>
                   {step.action && (
                     <button type="button" onClick={() => runStep(step.action, false)} className="shrink-0 inline-flex items-center gap-1 bg-primary text-primary-foreground text-xs font-body font-bold px-3 py-1.5 rounded-lg">
                       {STEP_LABEL[step.action] || 'Go'} <ArrowRight className="w-3.5 h-3.5" />
@@ -506,6 +576,7 @@ export default function CritterKeeper() {
                 </div>
               )}
             />
+            {game.lessons && daysHome(game, now) < 1 && <Lessons lessons={game.lessons} title={`What ${game.lessons.from} taught you`} />}
             <TodayCard game={game} now={now} onStep={(id) => runStep(id, false)} />
             <div className="bg-card border border-border rounded-2xl mb-4">
               <div className="p-4">

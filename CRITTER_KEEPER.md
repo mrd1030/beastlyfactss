@@ -107,6 +107,25 @@ the symptoms a real dragon would, each linking to the guide that explains why.
   it) and adds impaction risk, a firefly poisons him. Counts as fed, as
   dusted with the chosen dust, and as enrichment (tong-feeding).
 
+## Death (built, Fable's plan)
+
+- Health at 0 makes him **critical** (not a condition): a red warning in
+  the do-this-now line with an hours countdown. A vet visit in the 72 hour
+  window saves him (no cooldown, streak still resets).
+- The window only starts once the player has **seen** the warning
+  (`markCriticalSeen`, called by the page), so time away with the page
+  closed can bring him to critical but never kill him.
+- If the window runs out he dies. The ending card gives his age, days
+  together, the cause (`CAUSE_OF_DEATH`, first match in order: poisoning,
+  MBD, respiratory, impaction, burns, parasites, dehydration, else neglect)
+  with its guide, and only lines found in the guides. "Look back" shows his
+  best streak, vet visits, lifelong marks and growth chart.
+- "Adopt a new dragon" keeps him in `critter-keeper-remembered` (last 5) and
+  starts fresh, with "What he taught you": every condition he ever had
+  (`had`) and its guide, on the adopt screen and the new dragon's first day.
+- Settling in before handling is one real day (the guides' 7 to 14 days on
+  the game clock). Rearranging while setting up is free for a real week.
+
 ## Ideas from Fable (not built yet)
 
 Mini games, each teaching a guide rule and feeding the sim: Tong Time (pick

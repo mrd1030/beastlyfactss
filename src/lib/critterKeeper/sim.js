@@ -1,6 +1,6 @@
 import {
   ADULT_AGE_DAYS, AGE_SPEED, CONDITIONS, DUSTS, ENRICHMENT, GROWTH, GUIDES, HANDLE_LENGTHS, INSECTS,
-  LIGHTS_OFF, LIGHTS_ON, MARKS, GROWTH_BANDS, MBD_STAGES, VET_COOLDOWN_HOURS, PLANTS, RANGES, SETTLE_DAYS, SETUP_GRACE_DAYS, START_AGE_DAYS, STARTER_SETUP,
+  LIGHTS_OFF, LIGHTS_ON, MARKS, GROWTH_BANDS, CRITICAL_HOURS, CAUSE_OF_DEATH, CAUSE_NEGLECT, MBD_STAGES, VET_COOLDOWN_HOURS, PLANTS, RANGES, SETTLE_DAYS, SETUP_GRACE_DAYS, START_AGE_DAYS, STARTER_SETUP,
   SUBSTRATES, TANKS, UVB_MOUNTS, UVB_TYPES, BIO_ESTABLISH_DAYS, TANK_SLOTS,
 } from '@/lib/critterKeeper/rules';
 import { DECOR } from '@/lib/critterKeeper/sprites/items';
@@ -66,6 +66,7 @@ function log(s, t, text, tone = 'info', guide = null) {
 function addCond(s, id, t) {
   if (s.cond[id]) return;
   s.cond[id] = { since: t };
+  s.had = [...new Set([...(s.had || []), id])];
   const c = CONDITIONS[id];
   log(s, t, `${c.label}: ${id === 'mbd' ? mbdSymptoms(s) : c.symptoms}`, 'bad', c.guide);
 }
@@ -103,13 +104,47 @@ export function health(s) {
 }
 
 export function needsVet(s) {
-  return Object.keys(s.cond).some((id) => CONDITIONS[id].vet)
+  return !!s.critical || Object.keys(s.cond).some((id) => CONDITIONS[id].vet)
     || (s.cond.mbd && s.h.bone < 40)
     || (s.cond.impaction && s.h.gut >= 90)
     || health(s) <= 30;
 }
 
-export function newGame(name, now) {
+// Hours left in the rescue window, or null if the player has not seen it yet.
+export function criticalHoursLeft(s, now) {
+  if (!s.critical?.seenAt) return null;
+  return Math.max(0, Math.ceil((s.critical.seenAt + CRITICAL_HOURS * 3600e3 - now) / 3600e3));
+}
+
+// The page calls this when the critical warning is on screen: the rescue
+// window starts now.
+export function markCriticalSeen(s, now) {
+  if (!s.critical || s.critical.seenAt) return s;
+  return { ...s, critical: { ...s.critical, seenAt: now } };
+}
+
+export function causeOfDeath(s) {
+  const found = CAUSE_OF_DEATH.find(([id]) => s.cond[id]);
+  return found ? { text: found[1], guide: found[2] } : { text: CAUSE_NEGLECT[0], guide: CAUSE_NEGLECT[1] };
+}
+
+// What to keep when he is gone: for "Look back" and the next dragon's lessons.
+export function memorialOf(s) {
+  return {
+    name: s.name,
+    adoptedAt: s.adoptedAt,
+    diedAt: s.dead.at,
+    age: ageDays(s, s.dead.at),
+    cause: s.dead.cause,
+    weights: s.weights || [],
+    marks: s.marks || [],
+    bestStreak: s.bestStreak || 0,
+    vetVisits: s.vetVisits || 0,
+    had: s.had || [],
+  };
+}
+
+export function newGame(name, now, lessons = null) {
   const s = {
     v: 1,
     name: name.trim().slice(0, 20) || 'Dex',
@@ -143,6 +178,10 @@ export function newGame(name, now) {
     today: freshToday(now),
     weights: [],
     lastDust: 0,
+    had: [],
+    critical: null,
+    dead: null,
+    lessons,
     dayOk: true,
     log: [],
   };
@@ -278,6 +317,19 @@ function step(s, t, dt) {
   if (d3 >= 5) addCond(s, 'd3', t);
   else if (d3 <= 2) dropCond(s, 'd3', t);
 
+  // Health at 0 starts the critical state. He can only die once the player
+  // has seen the warning and the rescue window has run out.
+  if (!s.critical && health(s) <= 0) {
+    s.critical = { reachedAt: t, seenAt: null };
+    log(s, t, `${s.name} is in critical condition. Only a vet can save him now.`, 'bad', 'health');
+  } else if (s.critical && health(s) >= 25) {
+    s.critical = null;
+  }
+  if (s.critical?.seenAt && t >= s.critical.seenAt + CRITICAL_HOURS * 3600e3) {
+    s.dead = { at: s.critical.seenAt + CRITICAL_HOURS * 3600e3, cause: causeOfDeath(s) };
+    return;
+  }
+
   const key = dayKey(t);
   if (key !== s.dayKey) {
     // The day that just ended keeps the streak only if its checklist was done.
@@ -298,6 +350,7 @@ export function tick(state, now) {
   // A clock that went backward (a changed device clock) restarts from now
   // instead of freezing him until real time catches up.
   if (s.lastTick > now) s.lastTick = now;
+  if (s.dead) return s;
   s.marks = s.marks || [];
   if (s.toeLoss && !s.marks.includes('toe')) s.marks.push('toe');
   s.decor = s.decor || {};
@@ -312,7 +365,7 @@ export function tick(state, now) {
     delete s.decor.hang;
   }
   let t = Math.max(s.lastTick, now - MAX_CATCH_UP);
-  while (t < now) {
+  while (t < now && !s.dead) {
     const span = Math.min(HOUR, now - t);
     t += span;
     step(s, t, span / HOUR);
@@ -706,14 +759,14 @@ function clean(s, now) {
 }
 
 export function vetReadyAt(s) {
-  // Poisoning and burns are emergencies: no waiting.
-  if (s.cond.poisoned || s.cond.burn) return 0;
+  // Critical, poisoning and burns are emergencies: no waiting.
+  if (s.critical || s.cond.poisoned || s.cond.burn) return 0;
   return (s.lastVet || 0) + VET_COOLDOWN_HOURS * 3600e3;
 }
 
 function vet(s, now) {
   const treated = Object.keys(s.cond).filter((id) => id !== 'obesity');
-  if (!treated.length && health(s) > 30) return [{ text: 'The vet says he looks healthy. Nothing to treat.', tone: 'good' }];
+  if (!treated.length && health(s) > 30 && !s.critical) return [{ text: 'The vet says he looks healthy. Nothing to treat.', tone: 'good' }];
   const ready = vetReadyAt(s);
   if (now < ready) {
     const at = new Date(ready).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
@@ -721,6 +774,12 @@ function vet(s, now) {
   }
   s.vetVisits += 1;
   s.lastVet = now;
+  const wasCritical = !!s.critical;
+  s.critical = null;
+  if (wasCritical) {
+    s.m.full = Math.max(s.m.full, 40);
+    s.m.water = Math.max(s.m.water, 70);
+  }
   s.streak = 0;
   s.dayOk = false;
   for (const id of treated) delete s.cond[id];
@@ -731,15 +790,20 @@ function vet(s, now) {
   s.m.water = Math.max(s.m.water, 70);
   s.parasitesAt = null;
   if (treated.includes('d3')) s.logs.d3 = [];
-  const causes = treated.map((id) => CONDITIONS[id].cause).filter(Boolean);
+  // The two most important causes, so the message stays readable.
+  const causes = treated.map((id) => CONDITIONS[id].cause).filter(Boolean).slice(0, 2);
   return [
-    { text: `The vet treated ${s.name} for ${treated.map((id) => CONDITIONS[id].label.toLowerCase()).join(', ')}. A vet visit resets his healthy-day streak.`, tone: 'info' },
+    {
+      text: `${treated.length ? `The vet treated ${s.name} for ${treated.map((id) => CONDITIONS[id].label.toLowerCase()).join(', ')}.` : `The vet stabilized ${s.name}.`}${wasCritical ? ' He pulled through.' : ''} A vet visit resets his streak.`,
+      tone: 'info',
+    },
     ...(causes.length ? [{ text: `If the cause stays, it comes back. ${causes.join(' ')}`, tone: 'warn', guide: CONDITIONS[treated[0]].guide }] : []),
   ];
 }
 
 export function act(state, type, opts = {}, now = Date.now()) {
   const s = tick(state, now);
+  if (s.dead) return { state: s, msg: null };
   if (s.today.key !== dayKey(now)) s.today = freshToday(now);
   if (needsVet(s) && !['vet', 'setup', 'fixnext', 'decor', 'bulb', 'water', 'clean'].includes(type)) {
     return { state: s, msg: { text: `${s.name} needs a vet before anything else.`, tone: 'bad', guide: 'health' } };
@@ -855,6 +919,10 @@ export function nextFix(s, now) {
 
 // The one thing most worth doing right now, for the line under the tank.
 export function nextStep(s, now) {
+  if (s.critical) {
+    const left = criticalHoursLeft(s, now) ?? CRITICAL_HOURS;
+    return { text: `${s.name} is in real trouble. He has stopped eating and can barely lift his head. A vet can still save him, but only in the next ${left} hours.`, action: 'vet', urgent: true };
+  }
   if (needsVet(s)) return { text: `${s.name} needs a vet.`, action: 'vet' };
   const fix = nextFix(s, now);
   if (fix) return { text: fix.setup ? 'Something in his tank is wrong. Check the tank.' : 'He needs hides: one warm, one cool.', action: fix.setup ? 'tank' : 'decorate' };
@@ -871,6 +939,7 @@ export function nextStep(s, now) {
 }
 
 export function mood(s, now) {
+  if (s.critical) return { emoji: '🆘', text: 'Critical' };
   if (needsVet(s)) return { emoji: '🚑', text: 'Needs a vet' };
   if (!isDay(now)) return { emoji: '😴', text: `Asleep. Lights on at ${LIGHTS_ON}:00` };
   if (s.cond.stress) return { emoji: '😤', text: 'Black beard, stressed' };

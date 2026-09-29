@@ -247,6 +247,24 @@ export const MARKS = {
   jaw: 'A crooked lower jaw from metabolic bone disease. Healed crooked jaws stay crooked for life.',
 };
 
+// Critical: when his health reaches 0 the player gets a rescue window. It
+// only starts counting once the player has seen the warning, so time away
+// with the page closed can never kill him.
+export const CRITICAL_HOURS = 72;
+
+// What went wrong, for the ending card, in the guides' own terms. The
+// first condition in this order that he had at the end is the cause.
+export const CAUSE_OF_DEATH = [
+  ['poisoned', 'Poisoning. Fireflies, avocado and onion are all on the never-feed list, and a single firefly can kill.', 'foods'],
+  ['mbd', 'Metabolic bone disease, from too little UVB or calcium. It is the most common serious illness in pet bearded dragons, and almost always preventable.', 'uvb'],
+  ['respiratory', 'A respiratory infection, from a tank that was too cool or too humid. It can be fatal without treatment from a vet.', 'health'],
+  ['impaction', 'Impaction, from loose substrate, prey that was too big, or a basking spot too cold to digest.', 'health'],
+  ['burn', 'Burns, from a heat rock or an overhot basking spot.', 'health'],
+  ['parasites', 'Parasites, from wild-caught insects.', 'health'],
+  ['dehydration', 'Dehydration. Fresh water every day and a soak once or twice a week keep him hydrated.', 'growth'],
+];
+export const CAUSE_NEGLECT = ['Neglect: too long without food, water and care.', 'feeding'];
+
 // The vet treats what you cannot, but a visit resets the healthy-day streak
 // and, outside emergencies, the vet can see him again only after this long.
 export const VET_COOLDOWN_HOURS = 12;
