@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, BookOpen, Bug, Droplets, Hand, Leaf, RotateCcw, Sofa, Sparkles, Stethoscope, Thermometer, Trash2, Waves } from 'lucide-react';
 import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
 import { setWidgetOn, useCritterGame, widgetOn } from '@/lib/critterKeeper/useCritterGame';
+import { useDialogFocus } from '@/lib/critterKeeper/ui';
 import {
   ENRICHMENT, GROWTH_BANDS, GUIDES, MARKS, HANDLE_LENGTHS, HEAT_SOURCES, INSECTS, DUSTS, PLANTS, SUBSTRATES, TANKS, UVB_MOUNTS, UVB_TYPES, CONDITIONS,
 } from '@/lib/critterKeeper/rules';
@@ -443,6 +444,22 @@ function Problems({ game }) {
   );
 }
 
+function ConfirmReset({ name, onKeep, onReset }) {
+  const ref = useDialogFocus(onKeep);
+  return (
+    <div className="fixed inset-0 z-[60] bg-black/50 flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="ck-reset-title">
+      <div ref={ref} className="w-full max-w-sm bg-card border border-border rounded-2xl p-5 shadow-xl">
+        <h2 id="ck-reset-title" className="font-display font-bold text-lg text-foreground mb-1">Are you sure?</h2>
+        <p className="text-sm font-body text-muted-foreground mb-4">{name}, his tank and his care log will be gone for good. This cannot be undone.</p>
+        <div className="flex gap-2 justify-end">
+          <button type="button" onClick={onKeep} className="px-4 py-2 rounded-xl border border-border font-body font-bold text-sm hover:bg-muted">Keep {name}</button>
+          <button type="button" onClick={onReset} className="px-4 py-2 rounded-xl bg-destructive text-destructive-foreground font-body font-bold text-sm">Start over</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function Log({ entries }) {
   if (!entries.length) return null;
   return (
@@ -561,6 +578,14 @@ export default function CritterKeeper() {
         <meta property="og:description" content={pageDescription} />
         <meta property="og:url" content="https://beastlyfacts.com/critter-keeper/" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/og/critter-keeper.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Critter Keeper: a pixel bearded dragon on his basking rock" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Critter Keeper: Raise a Virtual Bearded Dragon" />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/og/critter-keeper.jpg" />
       </Helmet>
 
       <div className="max-w-lg mx-auto px-4 pt-8 pb-16">
@@ -696,22 +721,11 @@ export default function CritterKeeper() {
             })()}
 
             {confirmReset && (
-              <div className="fixed inset-0 z-[60] bg-black/50 flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="ck-reset-title">
-                <div className="w-full max-w-sm bg-card border border-border rounded-2xl p-5 shadow-xl">
-                  <h2 id="ck-reset-title" className="font-display font-bold text-lg text-foreground mb-1">Are you sure?</h2>
-                  <p className="text-sm font-body text-muted-foreground mb-4">{game.name}, his tank and his care log will be gone for good. This cannot be undone.</p>
-                  <div className="flex gap-2 justify-end">
-                    <button type="button" onClick={() => setConfirmReset(false)} className="px-4 py-2 rounded-xl border border-border font-body font-bold text-sm hover:bg-muted">Keep {game.name}</button>
-                    <button
-                      type="button"
-                      onClick={() => { setConfirmReset(false); setGame(null); setMsg(null); setOpen(null); }}
-                      className="px-4 py-2 rounded-xl bg-destructive text-destructive-foreground font-body font-bold text-sm"
-                    >
-                      Start over
-                    </button>
-                  </div>
-                </div>
-              </div>
+              <ConfirmReset
+                name={game.name}
+                onKeep={() => setConfirmReset(false)}
+                onReset={() => { setConfirmReset(false); setGame(null); setMsg(null); setOpen(null); }}
+              />
             )}
 
             {tong && (
@@ -741,6 +755,25 @@ export default function CritterKeeper() {
             </button>
           </>
         )}
+
+        {/* Always rendered, prerender included, so the page has real text
+            before the game loads and for anyone who has not adopted yet. */}
+        <section className="mt-12 pt-8 border-t border-border" aria-labelledby="ck-about">
+          <h2 id="ck-about" className="font-display font-bold text-xl text-foreground mb-3">About Critter Keeper</h2>
+          <div className="space-y-3 text-sm font-body text-foreground leading-relaxed">
+            <p>
+              Critter Keeper is a virtual bearded dragon that runs on the same care rules as our guides. He comes home at 4 months old with a pet store starter kit, and your first job is fixing it: the basking temperatures, UVB and substrate all come from the{' '}
+              <Link to={GUIDES.tank.to} className="text-primary font-bold underline underline-offset-2">bearded dragon tank setup guide</Link>.
+            </p>
+            <p>
+              He lives in real time, even while this page is closed, and grows a week older every day, so he is an adult in about two months. Feed him, keep his water fresh, weigh him, handle him gently and keep his tank interesting. When something goes wrong he shows the symptoms a real dragon would, each linked to the guide that explains it, like{' '}
+              <Link to={GUIDES.uvb.to} className="text-primary font-bold underline underline-offset-2">why skipping UVB leads to metabolic bone disease</Link>.
+            </p>
+            <p className="text-muted-foreground">
+              Your dragon is saved in this browser. Clearing your browsing data or switching devices starts a new one.
+            </p>
+          </div>
+        </section>
       </div>
     </div>
   );

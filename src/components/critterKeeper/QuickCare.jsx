@@ -5,6 +5,7 @@ import { GUIDES } from '@/lib/critterKeeper/rules';
 import { act, ageDays, checklist, feedBlock, markCriticalSeen, mood, needsVet, nextStep, stageOf, tick } from '@/lib/critterKeeper/sim';
 import { MiniTank } from '@/components/critterKeeper/TankScene';
 import TongTime from '@/components/critterKeeper/TongTime';
+import { useDialogFocus } from '@/lib/critterKeeper/ui';
 
 // The quick-care sheet the bubble opens: a live look at him, what to do
 // next, today's checklist, and one-tap care. Everything else (the tank,
@@ -36,6 +37,7 @@ export default function QuickCare({ game, setGame, onClose }) {
   const [msg, setMsg] = useState(null);
   const [eating, setEating] = useState(false);
   const [tong, setTong] = useState(false);
+  const panelRef = useDialogFocus(() => (tong ? null : onClose()));
 
   // Opening the sheet brings him up to date and saves it. If he is
   // critical, the warning is now on screen, so the rescue window starts.
@@ -43,12 +45,7 @@ export default function QuickCare({ game, setGame, onClose }) {
     const t = Date.now();
     setGame(markCriticalSeen(tick(game, t), t));
     const beat = setInterval(() => setNow(Date.now()), 30000);
-    const esc = (e) => e.key === 'Escape' && onClose();
-    window.addEventListener('keydown', esc);
-    return () => {
-      clearInterval(beat);
-      window.removeEventListener('keydown', esc);
-    };
+    return () => clearInterval(beat);
   }, []);
 
   const doAction = (type, opts) => {
@@ -75,7 +72,7 @@ export default function QuickCare({ game, setGame, onClose }) {
   return (
     <div className="fixed inset-0 z-[55] flex items-end md:items-auto md:block" role="dialog" aria-modal="true" aria-label={`Quick care for ${game.name}`}>
       <button type="button" aria-label="Close" onClick={onClose} className="absolute inset-0 bg-black/40 md:bg-transparent cursor-default" />
-      <div className="relative w-full md:absolute md:right-4 md:bottom-24 md:w-96 max-h-[88vh] overflow-y-auto bg-background border border-border rounded-t-2xl md:rounded-2xl shadow-xl pb-[calc(var(--safe-area-inset-bottom,0px)+12px)]">
+      <div ref={panelRef} className="relative w-full md:absolute md:right-4 md:bottom-24 md:w-96 max-h-[88vh] overflow-y-auto bg-background border border-border rounded-t-2xl md:rounded-2xl shadow-xl pb-[calc(var(--safe-area-inset-bottom,0px)+12px)]">
         <div className="flex items-center justify-between px-4 pt-3 pb-2">
           <div>
             <p className="font-display font-bold text-lg text-foreground leading-tight">{game.name}</p>

@@ -410,11 +410,6 @@ function setupChange(s, now, opts) {
     s.bulbAt = now;
     s.bulbWarned = false;
   }
-  // A different kind of UVB means a new bulb.
-  if (opts.uvb && opts.uvb !== s.setup.uvb) {
-    s.bulbAt = now;
-    s.bulbWarned = false;
-  }
   const wasBio = s.setup.substrate === 'bioactive';
   s.setup = { ...s.setup, ...opts };
   parts.push({ text: 'Tank updated.', tone: 'good' });

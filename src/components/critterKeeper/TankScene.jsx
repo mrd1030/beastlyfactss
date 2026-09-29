@@ -5,6 +5,7 @@ import { DRAGON_H, DRAGON_W, TILT_ANCHOR, TILT_H, TILT_W, buildDragon, dragonPal
 import { DECOR, ITEM_PAL, itemSprite } from '@/lib/critterKeeper/sprites/items';
 import { TANK_SLOTS } from '@/lib/critterKeeper/rules';
 import { ageDays, baskRange, isDay } from '@/lib/critterKeeper/sim';
+import { useFrames } from '@/lib/critterKeeper/ui';
 
 // The pixel tank. Everything is drawn at a small logical size and scaled up
 // with image-rendering: pixelated, so one logical unit is one art pixel.
@@ -326,19 +327,14 @@ export function drawScene(ctx, game, now, frame, pose, free = game.free || {}, s
 // A lone animated dragon, for the adopt screen.
 export function DragonCanvas({ pose = 'idle', mood = 'normal', className = '' }) {
   const ref = useRef(null);
+  const frame = useFrames();
   useEffect(() => {
-    let frame = 0;
-    const paint = () => {
-      const c = ref.current;
-      if (!c) return;
-      const ctx = c.getContext('2d');
-      ctx.clearRect(0, 0, DRAGON_W, DRAGON_H);
-      drawGrid(ctx, buildDragon({ pose, mood, lift: frame % 2, blink: frame % 9 === 8 }), dragonPalette(mood));
-    };
-    paint();
-    const t = setInterval(() => { frame += 1; paint(); }, 550);
-    return () => clearInterval(t);
-  }, [pose, mood]);
+    const c = ref.current;
+    if (!c) return;
+    const ctx = c.getContext('2d');
+    ctx.clearRect(0, 0, DRAGON_W, DRAGON_H);
+    drawGrid(ctx, buildDragon({ pose, mood, lift: frame % 2, blink: frame % 9 === 8 }), dragonPalette(mood));
+  }, [pose, mood, frame]);
   return <canvas ref={ref} width={DRAGON_W} height={DRAGON_H} className={className} style={{ imageRendering: 'pixelated' }} />;
 }
 
@@ -359,11 +355,7 @@ const pct = (v, of) => `${(v / of) * 100}%`;
 // A small, look-only tank for the quick-care popup.
 export function MiniTank({ game, now, pose = 'idle', className = '' }) {
   const ref = useRef(null);
-  const [frame, setFrame] = useState(0);
-  useEffect(() => {
-    const t = setInterval(() => setFrame((f) => f + 1), 550);
-    return () => clearInterval(t);
-  }, []);
+  const frame = useFrames();
   useEffect(() => {
     const ctx = ref.current?.getContext('2d');
     if (ctx) drawScene(ctx, game, now, frame, pose);
@@ -384,7 +376,7 @@ export function MiniTank({ game, now, pose = 'idle', className = '' }) {
 export default function TankScene({ game, now, pose = 'idle', onDecor, badge, footer, decorating = false, onDoneDecorating }) {
   const canvasRef = useRef(null);
   const boxRef = useRef(null);
-  const [frame, setFrame] = useState(0);
+  const frame = useFrames();
   const [drag, setDrag] = useState(null); // { id, from: slot | 'free' | null, x, y, moved }
   const [picked, setPicked] = useState(null); // tap-to-place fallback
   const [selected, setSelected] = useState(null); // a free item picked for rotating
@@ -393,11 +385,6 @@ export default function TankScene({ game, now, pose = 'idle', onDecor, badge, fo
   const decor = game.decor || {};
   const free = game.free || {};
   const inTank = new Set([...Object.values(decor), ...Object.keys(free)]);
-
-  useEffect(() => {
-    const t = setInterval(() => setFrame((f) => f + 1), 550);
-    return () => clearInterval(t);
-  }, []);
 
   // Screen point to tank pixels, and whether it is over the tank at all.
   const toTank = (clientX, clientY) => {

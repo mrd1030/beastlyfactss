@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { X } from 'lucide-react';
+import { useDialogFocus } from '@/lib/critterKeeper/ui';
 
 // Tong Time: feeders scurry across the floor and the player picks them up
 // with tongs. The feeding guide's rule is the whole game: prey no wider than
@@ -90,6 +91,7 @@ export default function TongTime({ age, dust, onFinish }) {
     setOverState(why);
   };
   const maxW = maxWidthFor(age);
+  const cardRef = useDialogFocus(() => onFinish(score.current));
   const target = age >= 548 ? 5 : 8;
 
   useEffect(() => {
@@ -199,7 +201,7 @@ export default function TongTime({ age, dust, onFinish }) {
 
   return (
     <div className="fixed inset-0 z-[60] bg-black/60 flex items-center justify-center p-3" role="dialog" aria-modal="true" aria-label="Tong Time">
-      <div className="w-full max-w-md bg-card border border-border rounded-2xl overflow-hidden shadow-xl">
+      <div ref={cardRef} className="w-full max-w-md bg-card border border-border rounded-2xl overflow-hidden shadow-xl">
         <div className="flex items-center justify-between px-4 pt-3">
           <h2 className="font-display font-bold text-lg text-foreground">Tong Time</h2>
           <button type="button" onClick={() => onFinish(score.current)} aria-label="Stop" className="p-1.5 rounded-lg hover:bg-muted"><X className="w-4 h-4" /></button>
