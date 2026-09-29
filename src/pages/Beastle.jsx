@@ -587,7 +587,15 @@ function clueFor(entry) {
 const CLUE_AFTER = 2;
 function Clue({ entry, guesses, done, shown, onUse }) {
   const clue = useMemo(() => clueFor(entry), [entry]);
-  if (!clue || (done && !shown) || (!shown && guesses.length < CLUE_AFTER)) return null;
+  if (!clue || (done && !shown)) return null;
+  if (!shown && guesses.length < CLUE_AFTER) {
+    const left = CLUE_AFTER - guesses.length;
+    return (
+      <span className="inline-flex items-center gap-2 border border-dashed border-border text-muted-foreground font-body font-bold text-sm px-4 py-2 rounded-xl">
+        <Lightbulb className="w-4 h-4" /> {`Clue available in ${left} ${left === 1 ? 'try' : 'tries'}`}
+      </span>
+    );
+  }
   if (!shown) {
     return (
       <button
@@ -595,7 +603,7 @@ function Clue({ entry, guesses, done, shown, onUse }) {
         onClick={onUse}
         className="inline-flex items-center gap-2 bg-accent/20 hover:bg-accent/30 text-foreground font-body font-bold text-sm px-4 py-2 rounded-xl transition-colors"
       >
-        <Lightbulb className="w-4 h-4 text-accent-ink" /> Need a clue?
+        <Lightbulb className="w-4 h-4 text-accent-ink" /> Get clue?
       </button>
     );
   }
