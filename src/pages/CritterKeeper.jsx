@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { ArrowRight, BookOpen, Bug, Droplets, Hand, Leaf, RotateCcw, Sofa, Sparkles, Stethoscope, Thermometer, Trash2, Waves } from 'lucide-react';
 import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
+import { useCritterGame } from '@/lib/critterKeeper/useCritterGame';
 import {
   ENRICHMENT, GROWTH_BANDS, GUIDES, MARKS, HANDLE_LENGTHS, HEAT_SOURCES, INSECTS, DUSTS, PLANTS, SUBSTRATES, TANKS, UVB_MOUNTS, UVB_TYPES, CONDITIONS,
 } from '@/lib/critterKeeper/rules';
@@ -12,7 +13,6 @@ import {
 import TankScene, { DragonCanvas } from '@/components/critterKeeper/TankScene';
 import TongTime from '@/components/critterKeeper/TongTime';
 
-const STORAGE_KEY = 'critter-keeper-v1';
 const REMEMBERED_KEY = 'critter-keeper-remembered';
 const STEP_LABEL = { weigh: 'Weigh', vet: 'Vet', tank: 'Tank', decorate: 'Decorate', insects: 'Feed', salad: 'Salad', water: 'Water', clean: 'Clean', enrich: 'Play', handle: 'Handle' };
 
@@ -464,7 +464,8 @@ function Log({ entries }) {
 }
 
 export default function CritterKeeper() {
-  const [game, setGame, loaded] = useLocalStorage(STORAGE_KEY, null);
+  // Shared with the floating bubble, so both always show the same dragon.
+  const [game, setGame, loaded] = useCritterGame();
   const [remembered, setRemembered] = useLocalStorage(REMEMBERED_KEY, []);
   const [now, setNow] = useState(null);
   const [open, setOpen] = useState(null);

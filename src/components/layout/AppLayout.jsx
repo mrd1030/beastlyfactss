@@ -5,6 +5,7 @@ import Footer from './Footer';
 import BottomTabs from './BottomTabs';
 import AchievementToast from '../shared/AchievementToast';
 import BeastleAppBar from '@/components/beastle/BeastleAppBar';
+import CritterBubbleSlot from '@/components/critterKeeper/CritterBubbleSlot';
 import { useIsMobileViewport } from '@/lib/hooks/useIsMobileViewport';
 import { useSwipeBack } from '@/lib/hooks/useSwipeBack';
 
@@ -106,6 +107,8 @@ export default function AppLayout() {
       )}
       {/* Mobile-only bottom navigation */}
       <BottomTabs />
+      {/* Critter Keeper's floating dragon, only once one has been adopted */}
+      <CritterBubbleSlot />
       {/* The installed Beastle app's own header and tabs; hidden elsewhere */}
       <BeastleAppBar />
     </div>
