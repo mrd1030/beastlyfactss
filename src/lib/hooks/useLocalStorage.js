@@ -43,8 +43,25 @@ export function useLocalStorage(key, initialValue) {
   return [value, setValue, loaded];
 }
 
+// More than one component can hold the theme (the site Navbar, and the
+// installed Beastle app's bar while the Navbar is hidden but still mounted),
+// so a change is broadcast and every holder follows it. Without this the
+// hidden Navbar keeps a stale value and the two disagree.
+const DARK_EVENT = 'beastly-dark-mode-change';
+
 export function useDarkMode() {
-  const [dark, setDark] = useLocalStorage('beastly-dark-mode', false);
+  const [dark, setDarkState] = useLocalStorage('beastly-dark-mode', false);
+
+  useEffect(() => {
+    const follow = (e) => setDarkState(e.detail);
+    window.addEventListener(DARK_EVENT, follow);
+    return () => window.removeEventListener(DARK_EVENT, follow);
+  }, [setDarkState]);
+
+  const setDark = (value) => {
+    setDarkState(value);
+    window.dispatchEvent(new CustomEvent(DARK_EVENT, { detail: value }));
+  };
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', dark);

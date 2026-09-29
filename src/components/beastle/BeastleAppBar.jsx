@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Heart } from 'lucide-react';
+import { ArrowLeft, Heart, Moon, Sun } from 'lucide-react';
+import { useDarkMode } from '@/lib/hooks/useLocalStorage';
 
 // Header and tab bar for the installed Beastle app. Always rendered and
 // hidden by CSS unless <html> has .beastle-app (see appMode.js and the
@@ -24,6 +25,8 @@ const TABS = [
 export default function BeastleAppBar() {
   const { pathname } = useLocation();
   const navigate = useNavigate();
+  // The site Navbar holds the theme switch, and it is hidden in the app.
+  const [dark, setDark] = useDarkMode();
   const onTab = TABS.some(({ to }) => pathname.startsWith(to.replace(/\/$/, '')));
 
   return (
@@ -40,6 +43,14 @@ export default function BeastleAppBar() {
               <ArrowLeft className="w-5 h-5" /> Back
             </button>
           )}
+          <button
+            type="button"
+            onClick={() => setDark(!dark)}
+            className="ml-auto p-2 rounded-full hover:bg-muted transition-colors"
+            aria-label={dark ? 'Switch to light mode' : 'Switch to dark mode'}
+          >
+            {dark ? <Sun className="w-5 h-5 text-sunny" /> : <Moon className="w-5 h-5 text-muted-foreground" />}
+          </button>
         </div>
       </header>
       <nav
