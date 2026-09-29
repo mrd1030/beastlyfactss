@@ -68,6 +68,7 @@ export default function Footer() {
                 { to: '/gallery/', label: 'Gallery' },
                 { to: '/feed/', label: 'The feed' },
                 { to: '/quiz/', label: 'Quizzes' },
+                { to: '/beastle/', label: 'Beastle' },
                 { to: '/chronicles/dex/', label: 'Chronicles' },
               ]
             },
