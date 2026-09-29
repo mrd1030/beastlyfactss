@@ -16,6 +16,10 @@
 //      not an article went out. The two are separate notifications with
 //      separate ledgers, so a day with no new article still gets its fact.
 //
+//      Last, "Beastle #N is live" goes to the subscriptions that opted in on
+//      /beastle/ (push_subscriptions.beastle_reminder, see
+//      supabase/beastle_reminders.sql), with its own ledger.
+//
 //   2. By hand, for anything off-schedule - pass an explicit title and body and
 //      it sends immediately, no date logic and no ledger:
 //
@@ -45,6 +49,8 @@ const SITE = "https://beastlyfacts.com";
 const ARTICLES_URL = `${SITE}/articles.json`;
 const FACTS_URL = `${SITE}/facts.json`;
 const BODY_LIMIT = 140;
+// Beastle #1's date. Must match EPOCH in src/lib/beastle/day.js.
+const BEASTLE_EPOCH = "2026-09-28";
 
 webpush.setVapidDetails(VAPID_SUBJECT, VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY);
 
@@ -120,10 +126,15 @@ function buildPayload(posts: Article[]) {
   };
 }
 
-async function pushToEveryone(payload: { title: string; body: string; url: string }) {
-  const { data: subs, error } = await supabase
+async function pushToEveryone(
+  payload: { title: string; body: string; url: string },
+  { beastleOnly = false } = {},
+) {
+  let query = supabase
     .from("push_subscriptions")
     .select("id, endpoint, p256dh, auth");
+  if (beastleOnly) query = query.eq("beastle_reminder", true);
+  const { data: subs, error } = await query;
   if (error) throw new Error(error.message);
 
   const body = JSON.stringify(payload);
@@ -253,6 +264,39 @@ async function runDailyFact(today: string) {
   }
 }
 
+function beastleDay(today: string): number {
+  const day = 24 * 3600 * 1000;
+  return Math.floor(
+    (Date.parse(`${today}T00:00:00Z`) - Date.parse(`${BEASTLE_EPOCH}T00:00:00Z`)) / day,
+  ) + 1;
+}
+
+async function runDailyBeastle(today: string) {
+  const n = beastleDay(today);
+  if (n < 1) return { skipped: "before Beastle #1" };
+
+  const { error: claimError } = await supabase
+    .from("beastle_notification_sends")
+    .insert({ send_date: today, day_number: n });
+  if (claimError) {
+    if (claimError.code === "23505") return { skipped: "Beastle already sent today" };
+    throw new Error(claimError.message);
+  }
+
+  const payload = {
+    title: `🔤 Beastle #${n} is live`,
+    body: "A new mystery animal is waiting. Can you get it in six guesses?",
+    url: "/beastle/",
+  };
+  try {
+    const result = await pushToEveryone(payload, { beastleOnly: true });
+    return { ...result, day: n };
+  } catch (err) {
+    await supabase.from("beastle_notification_sends").delete().eq("send_date", today);
+    throw err;
+  }
+}
+
 async function runDaily(force: boolean) {
   const today = siteToday();
   const hour = siteHour();
@@ -271,7 +315,8 @@ async function runDaily(force: boolean) {
     p.catch((err) => ({ error: (err as Error).message }));
   const articles = await settle(runDailyArticles(today));
   const fact = await settle(runDailyFact(today));
-  return json({ date: today, articles, fact });
+  const beastle = await settle(runDailyBeastle(today));
+  return json({ date: today, articles, fact, beastle });
 }
 
 async function runDailyArticles(today: string) {

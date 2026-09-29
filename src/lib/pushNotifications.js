@@ -130,3 +130,34 @@ export async function unsubscribeFromPush() {
   const sub = await getExistingSubscription();
   if (sub) await sub.unsubscribe();
 }
+
+// Beastle's daily 9am reminder rides on the same subscription, flagged
+// server-side (push_subscriptions.beastle_reminder, set through the
+// set_beastle_reminder rpc because the table is insert-only). Turning it on
+// subscribes first when needed. The local copy only drives the toggle's
+// label; the server flag is what the 9am send reads.
+const BEASTLE_REMINDER_KEY = 'beastle-reminder';
+
+export function getBeastleReminder() {
+  try {
+    return localStorage.getItem(BEASTLE_REMINDER_KEY) === 'true';
+  } catch {
+    return false;
+  }
+}
+
+export async function setBeastleReminder(on) {
+  if (!isSupabaseConfigured) return false;
+  let sub = await getExistingSubscription();
+  if (!sub && on) sub = await subscribeToPush();
+  if (!sub) return false;
+  const { data, error } = await supabase.rpc('set_beastle_reminder', {
+    p_endpoint: sub.toJSON().endpoint,
+    p_on: on,
+  });
+  if (error || !data) return false;
+  try {
+    localStorage.setItem(BEASTLE_REMINDER_KEY, String(on));
+  } catch { /* ignore */ }
+  return true;
+}

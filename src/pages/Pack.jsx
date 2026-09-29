@@ -14,6 +14,7 @@ import ClearPackDialog from '@/components/layout/ClearPackDialog';
 import NotificationOptIn from '@/components/pack/NotificationOptIn';
 import QuizTradingCard from '@/components/pack/QuizTradingCard';
 import AchievementDialog from '@/components/pack/AchievementDialog';
+import BeastleCard from '@/components/beastle/BeastleCard';
 
 
 const CONTENT_TYPE_META = {
@@ -126,6 +127,12 @@ export default function Pack() {
               );
             })}
           </div>
+        </div>
+
+        {/* Beastle stats and the field journal the bonus round fills */}
+        <div className="mt-10 max-w-3xl">
+          <h2 className="font-display font-bold text-xl text-foreground mb-4">🔤 Beastle</h2>
+          <BeastleCard showJournal />
         </div>
 
 {/* Saved Quiz Results */}

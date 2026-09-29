@@ -4,15 +4,36 @@
     {
       "name": "dev",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
+      "runtimeArgs": [
+        "run",
+        "dev"
+      ],
       "port": 5173,
       "autoPort": true
     },
     {
       "name": "worker",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["wrangler", "pages", "dev", "dist", "--port", "8788", "--compatibility-date", "2026-06-23"],
+      "runtimeArgs": [
+        "wrangler",
+        "pages",
+        "dev",
+        "dist",
+        "--port",
+        "8788",
+        "--compatibility-date",
+        "2026-06-23"
+      ],
       "port": 8788
+    },
+    {
+      "name": "vite",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "vite"
+      ],
+      "port": 5173,
+      "autoPort": true
     }
   ]
 }

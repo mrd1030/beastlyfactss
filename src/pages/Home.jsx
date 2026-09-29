@@ -66,6 +66,7 @@ export default function Home() {
           inbound link site-wide, on the Facts page. */}
       <HomeChild name="FactPhotoStrip" onOpenFact={setSelectedFact} />
       <HomeChild name="FactsToGuidesBanner" />
+      <HomeChild name="BeastleTeaser" />
 
       {/* Two dividers, marking the three blocks the eleven sections already were
           in intent: facts, reference, editorial. A tinted band behind each block

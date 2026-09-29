@@ -47,6 +47,7 @@ const ROUTE_PRELOADS = [
   [p => p.startsWith('/blog'), 'Blog'],
   [p => p.startsWith('/chronicles'), 'Chronicles'],
   [p => pathIs(p, '/quiz'), 'QuizHub'],
+  [p => pathIs(p, '/beastle'), 'Beastle'],
   [p => p.startsWith('/quiz/') || pathIs(p, '/trivia'), 'Quiz'],
   [p => pathIs(p, '/pack'), 'Pack'],
   [p => pathIs(p, '/about'), 'About'],
