@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link, useLocation, useParams } from 'react-router-dom';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { motion, AnimatePresence } from '@/lib/motion-safe';
-import { ArrowLeft, ArrowRight, CheckCircle2, RotateCcw, Share2 } from 'lucide-react';
+import { ArrowLeft, ArrowRight, CheckCircle2, Image as ImageIcon, RotateCcw, Share2 } from 'lucide-react';
 import { quizQuestions, quizResults } from '@/lib/data/quizQuestions';
 import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
 import { useScrollBackIntoView } from '@/lib/hooks/useScrollBackIntoView';
@@ -11,7 +11,7 @@ import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { logSiteEvent } from '@/lib/siteEvents';
 import { getThemedQuiz } from '@/lib/data/quizzes';
 import { getClassicQuiz, personalityQuiz } from '@/lib/data/quizzes/classics';
-import { quizPhrase, quizShareImage, shareQuizResult } from '@/lib/utils/quizShareImage';
+import { canShareImage, quizPhrase, quizShareImage, shareQuizResult } from '@/lib/utils/quizShareImage';
 import ThemedQuizPage from '@/pages/ThemedQuizPage';
 
 // Results saved before the "meet" links existed are still in localStorage, so
@@ -95,18 +95,18 @@ function PersonalityQuizPage() {
     setScores({});
   };
 
-  const handleShare = () => {
+  const handleShare = ({ withImage = false } = {}) => {
     if (!result) return;
     const text = `${quiz.emoji} I got ${result.name} ${result.emoji} on ${quizPhrase(quiz.title, { quoted: true })} at BeastlyFacts. Which critter are you?`;
     const url = `${window.location.origin}/quiz/${quiz.id}/`;
-    const image = quizShareImage({
+    const image = withImage ? quizShareImage({
       emoji: result.emoji,
       title: result.name,
       blurb: result.traits.join(' · '),
       kicker: 'My critter match',
       line: `${quiz.title} on Beastly Facts`,
       fileName: `beastlyfacts-${quiz.id}.png`,
-    });
+    }) : undefined;
     shareQuizResult({ title: `${quiz.title} | Beastly Facts`, text, url, image });
   };
 
@@ -236,10 +236,16 @@ function PersonalityQuizPage() {
                 <CheckCircle2 className="w-3.5 h-3.5" /> Saved to your Pack
               </Link>
               <div className="flex flex-col sm:flex-row justify-center gap-3">
-                <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleShare}
+                <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={() => handleShare()}
                   className="bg-secondary text-secondary-foreground font-body font-bold text-sm px-6 py-3 rounded-2xl flex items-center justify-center gap-2">
                   <Share2 className="w-4 h-4" /> Share
                 </motion.button>
+                {canShareImage() && (
+                  <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={() => handleShare({ withImage: true })}
+                    className="bg-card border border-border text-foreground font-body font-bold text-sm px-6 py-3 rounded-2xl flex items-center justify-center gap-2">
+                    <ImageIcon className="w-4 h-4" /> Share image
+                  </motion.button>
+                )}
                 <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleRestart}
                   className="bg-card border border-border text-foreground font-body font-bold text-sm px-6 py-3 rounded-2xl flex items-center justify-center gap-2">
                   <RotateCcw className="w-4 h-4" /> Retake

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from '@/lib/motion-safe';
-import { ArrowLeft, ArrowRight, CheckCircle2, XCircle, ChevronRight, RotateCcw, Share2, Trophy } from 'lucide-react';
+import { ArrowLeft, ArrowRight, CheckCircle2, XCircle, ChevronRight, Image as ImageIcon, RotateCcw, Share2, Trophy } from 'lucide-react';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { logSiteEvent } from '@/lib/siteEvents';
 import { useQuizScores } from '@/lib/hooks/useQuizScores';
@@ -12,7 +12,7 @@ import { truncateDescription } from '@/lib/utils/truncate';
 import { facts } from '@/lib/data/facts';
 import { slugify } from '@/lib/utils/slugify';
 import { imagePathFor } from '@/lib/data/factImages';
-import { quizShareImage, scoreShareText, shareQuizResult } from '@/lib/utils/quizShareImage';
+import { canShareImage, quizShareImage, scoreShareText, shareQuizResult } from '@/lib/utils/quizShareImage';
 import FactModal from '@/components/shared/FactModal';
 import ImageLightbox from '@/components/shared/ImageLightbox';
 
@@ -197,17 +197,17 @@ export default function ThemedQuizPage({ quiz }) {
     setPopupFact(fact);
   };
 
-  const handleShare = () => {
+  const handleShare = ({ withImage = false } = {}) => {
     const text = scoreShareText({ emoji: quiz.emoji, title: quiz.title, score, total });
     const url = `${window.location.origin}/quiz/${quiz.id}/`;
-    const image = quizShareImage({
+    const image = withImage ? quizShareImage({
       emoji: tier.card.emoji,
       title: tier.card.title,
       blurb: tier.card.blurb,
       kicker: tier.heading,
       line: `${score}/${total} on ${quiz.title}`,
       fileName: `beastlyfacts-${quiz.id}.png`,
-    });
+    }) : undefined;
     shareQuizResult({ title: `${quiz.title} | Beastly Facts`, text, url, image });
   };
 
@@ -413,10 +413,16 @@ export default function ThemedQuizPage({ quiz }) {
                   Share and Retake. Retake is the filled one below a perfect
                   score, since another run is what earns a better card. */}
               <div className="flex flex-col sm:flex-row justify-center gap-3">
-                <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleShare}
+                <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={() => handleShare()}
                   className={`${tier.kind === 'perfect' ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-foreground'} font-body font-bold text-sm px-6 py-3 rounded-2xl flex items-center justify-center gap-2`}>
                   <Share2 className="w-4 h-4" /> Share
                 </motion.button>
+                {canShareImage() && (
+                  <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={() => handleShare({ withImage: true })}
+                    className="bg-card border border-border text-foreground font-body font-bold text-sm px-6 py-3 rounded-2xl flex items-center justify-center gap-2">
+                    <ImageIcon className="w-4 h-4" /> Share image
+                  </motion.button>
+                )}
                 <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleRestart}
                   className={`font-body font-bold text-sm px-6 py-3 rounded-2xl flex items-center justify-center gap-2 ${tier.kind === 'perfect' ? 'bg-card border border-border text-foreground' : 'bg-secondary text-secondary-foreground'}`}>
                   <RotateCcw className="w-4 h-4" /> {tier.kind === 'tryagain' ? 'Try Again' : 'Retake'}

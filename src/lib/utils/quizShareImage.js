@@ -158,6 +158,12 @@ export async function quizShareImage({ emoji, title, blurb, kicker, line, fileNa
 const onPhone = () => navigator.userAgentData?.mobile === true
   || (window.matchMedia?.('(pointer: coarse)').matches ?? false);
 
+// Whether a separate "Share image" button makes sense: only a phone's share
+// sheet takes the picture. Plain Share sends text and link only, because an
+// attached file switches the Android sheet to its image layout, which has no
+// Copy, and apps like Threads keep the picture and drop the text.
+export const canShareImage = () => typeof navigator !== 'undefined' && !!navigator.share && onPhone();
+
 // Clipboard API first; the hidden-textarea fallback covers browsers that
 // block it. Runs inside the click, before anything is awaited, so the
 // browser still counts it as user-initiated.

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from '@/lib/motion-safe';
-import { Heart, Share2, ChevronDown, ChevronUp, X, RotateCcw } from 'lucide-react';
+import { Heart, Share2, ChevronDown, ChevronUp, X, RotateCcw, Image as ImageIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { facts } from '@/lib/data/facts';
 import { imagePathFor } from '@/lib/data/factImages';
-import { quizShareImage, scoreShareText, shareQuizResult } from '@/lib/utils/quizShareImage';
+import { canShareImage, quizShareImage, scoreShareText, shareQuizResult } from '@/lib/utils/quizShareImage';
 import { useFavoritesCtx, ACHIEVEMENTS } from '@/lib/FavoritesContext';
 import FactCard from '@/components/shared/FactCard';
 import FactModal from '@/components/shared/FactModal';
@@ -156,7 +156,7 @@ export default function Pack() {
         // the blurb drops it.
         const blurb = isThemedCard ? qr.description.replace(/ Scored \d+\/\d+ on ".*"\.$/, '') : qr.description;
 
-        const handleShareQuiz = () => {
+        const handleShareQuiz = ({ withImage = false } = {}) => {
           // An animal card has a score and a page worth linking to, a themed
           // card has both plus a named reward, and the personality result has
           // neither, so each gets its own wording.
@@ -171,8 +171,9 @@ export default function Pack() {
               ? `${window.location.origin}/quiz/${qr.quizId}/`
               : `${window.location.origin}/quiz/personality/`;
 
-          // Themed cards also attach a picture of the card itself.
-          if (isThemedCard) {
+          // Share image attaches a picture of the card (themed cards only);
+          // plain Share is text and link.
+          if (isThemedCard && withImage) {
             const image = quizShareImage({
               emoji: qr.emoji,
               title: qr.title,
@@ -235,7 +236,7 @@ export default function Pack() {
             <QuizTradingCard
               key={qr.id}
               result={qr}
-              onShare={handleShareQuiz}
+              onShare={() => handleShareQuiz()}
               removeSlot={removeSlot}
             />
           );
@@ -259,11 +260,19 @@ export default function Pack() {
             <div className="flex flex-wrap items-center gap-2 mt-4">
               {/* Share Button */}
               <button
-                onClick={handleShareQuiz}
+                onClick={() => handleShareQuiz()}
                 className="flex items-center gap-1.5 text-xs font-body font-bold px-3 py-1.5 rounded-lg bg-secondary/10 hover:bg-secondary/20 text-secondary transition-colors"
               >
                 <Share2 className="w-3.5 h-3.5" /> Share
               </button>
+              {isThemedCard && canShareImage() && (
+                <button
+                  onClick={() => handleShareQuiz({ withImage: true })}
+                  className="flex items-center gap-1.5 text-xs font-body font-bold px-3 py-1.5 rounded-lg bg-secondary/10 hover:bg-secondary/20 text-secondary transition-colors"
+                >
+                  <ImageIcon className="w-3.5 h-3.5" /> Share image
+                </button>
+              )}
 
               {/* Themed cards link back to their quiz so a Nice Try or So
                   Close card can be upgraded from right here. */}
