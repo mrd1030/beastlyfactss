@@ -53,11 +53,12 @@ export const SUBSTRATES = {
 };
 export const BIO_ESTABLISH_DAYS = 3; // a few weeks of dragon time
 
-// Decor spots per tank size: a bigger tank has room for more.
+// Floor decor spots per tank size: a bigger tank has room for more. The
+// branch and hammock are placed freely and do not use these.
 export const TANK_SLOTS = {
-  20: ['cool', 'hang'],
-  40: ['cool', 'middle', 'hang'],
-  120: ['cool', 'middle', 'warm', 'hang'],
+  20: ['cool'],
+  40: ['cool', 'middle'],
+  120: ['cool', 'middle', 'warm'],
 };
 
 export const UVB_TYPES = {

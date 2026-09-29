@@ -363,7 +363,7 @@ export default function CritterKeeper() {
               game={game}
               now={now}
               pose={eating ? 'eat' : 'idle'}
-              onDecor={(decor) => doAction('decor', { decor })}
+              onDecor={(change) => doAction('decor', change)}
               badge={(
                 <span className="absolute left-2 top-2 bg-card/90 backdrop-blur px-2.5 py-1 rounded-lg text-xs font-body font-bold text-foreground pointer-events-none">
                   {md.emoji} {md.text}

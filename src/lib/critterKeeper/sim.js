@@ -111,6 +111,7 @@ export function newGame(name, now) {
     h: { bone: 85, calcium: 30, gut: 0, resp: 0, fat: 0, stress: 10, weight: growthTarget(START_AGE_DAYS) },
     poops: 0,
     decor: {},
+    free: {},
     bio: null,
     poopAt: null,
     poopKind: 'normal',
@@ -269,7 +270,14 @@ export function tick(state, now) {
   if (!state) return state;
   const s = JSON.parse(JSON.stringify(state));
   s.decor = s.decor || {};
+  s.free = s.free || {};
   s.bio = s.bio || null;
+  // Saves from before free placement kept the branch or hammock in a
+  // 'hang' slot; it moves to a free spot the tank picks (x: null).
+  if (s.decor.hang) {
+    s.free[s.decor.hang] = { x: null, y: null, rot: 0 };
+    delete s.decor.hang;
+  }
   let t = Math.max(s.lastTick, now - MAX_CATCH_UP);
   while (t < now) {
     const span = Math.min(HOUR, now - t);
@@ -283,7 +291,8 @@ export function tick(state, now) {
 // Decor that is actually in a slot this tank has.
 export function placedDecor(s) {
   const slots = TANK_SLOTS[s.setup.tank] || [];
-  return Object.entries(s.decor || {}).filter(([slot, id]) => slots.includes(slot) && DECOR[id]).map(([, id]) => id);
+  const floor = Object.entries(s.decor || {}).filter(([slot, id]) => slots.includes(slot) && DECOR[id]).map(([, id]) => id);
+  return [...floor, ...Object.keys(s.free || {}).filter((id) => DECOR[id]?.free)];
 }
 export const hides = (s) => placedDecor(s).filter((id) => DECOR[id].hide).length;
 
@@ -316,9 +325,10 @@ function setupChange(s, now, opts) {
 
 // Moving decor counts as rearranging: great now and then, stressful when
 // constant. One drag session (an hour) counts once.
-function decorChange(s, now, decor) {
+function decorChange(s, now, { decor, free }) {
   const before = placedDecor(s).length;
-  s.decor = decor;
+  if (decor) s.decor = decor;
+  if (free) s.free = free;
   const after = placedDecor(s).length;
   if (now - (s.logs.rearrange.at(-1) || 0) < 3600e3) {
     s.logs.rearrange[s.logs.rearrange.length - 1] = now;
@@ -602,7 +612,7 @@ export function act(state, type, opts = {}, now = Date.now()) {
       }
       parts = setupChange(s, now, opts);
       break;
-    case 'decor': parts = decorChange(s, now, opts.decor || {}); break;
+    case 'decor': parts = decorChange(s, now, opts); break;
     case 'vet': parts = vet(s, now); break;
     default: return { state: s, msg: null };
   }

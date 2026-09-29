@@ -60,10 +60,14 @@ the symptoms a real dragon would, each linking to the guide that explains why.
   substrate). The cleanup crew takes a few weeks to establish (3 real days in
   game); once it has, it breaks down waste, though you still pick up any feces
   you can see. Still a loose substrate, so a little impaction risk.
-- **Drag and drop decor:** a tray of enrichment items and slots in the tank
-  (cool side floor, middle floor, warm side floor, and a hanging spot). Items
-  add to enrichment; no hide adds stress. Moving things counts as
-  rearranging, which the guide says to do occasionally, not constantly.
+- **Drag and drop decor:** a tray of enrichment items. Floor items (log
+  hide, rock cave, dig box, succulent, treat ball) snap into floor spots: 1
+  in a 20 gallon, 2 in a 40, 3 in a 4x2x2. The climbing branch and hammock
+  are free: they land wherever they are released, can be moved again, and
+  rotate in 15° steps (drawn from their shapes after rotating, so they stay
+  crisp). Items add to enrichment; fewer than two hides adds stress. Moving
+  things counts as rearranging, which the guide says to do occasionally,
+  not constantly.
 
 ## Next
 

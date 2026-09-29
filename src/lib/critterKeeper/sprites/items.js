@@ -46,25 +46,45 @@ function cave() {
   return outline(g);
 }
 
-function branch() {
-  const g = makeGrid(46, 24);
-  stroke(g, [[2, 21], [16, 15], [28, 10], [43, 3]], (f) => 2.3 - f * 0.9, (f, x, y) => ((x + y) % 5 === 0 ? 'B' : y % 3 ? 'b' : 'h'));
-  stroke(g, [[20, 13], [25, 18], [30, 20]], 1.3, 'b');
-  stroke(g, [[32, 9], [35, 13]], 1, 'B');
-  return outline(g);
+// Free-placed items are drawn from their shapes after rotating them, so
+// they stay crisp pixel art at any angle instead of a blurry rotated image.
+function rotated(parts, rot, [cx, cy]) {
+  const rad = (rot * Math.PI) / 180;
+  const cos = Math.cos(rad);
+  const sin = Math.sin(rad);
+  const turn = ([x, y]) => [cx + (x - cx) * cos - (y - cy) * sin, cy + (x - cx) * sin + (y - cy) * cos];
+  const turned = parts.map((p) => ({ ...p, pts: p.pts.map(turn) }));
+  const all = turned.flatMap((p) => p.pts);
+  const pad = 5;
+  const minX = Math.floor(Math.min(...all.map((q) => q[0]))) - pad;
+  const minY = Math.floor(Math.min(...all.map((q) => q[1]))) - pad;
+  const maxX = Math.ceil(Math.max(...all.map((q) => q[0]))) + pad;
+  const maxY = Math.ceil(Math.max(...all.map((q) => q[1]))) + pad;
+  const g = makeGrid(maxX - minX, maxY - minY);
+  for (const p of turned) stroke(g, p.pts.map(([x, y]) => [x - minX, y - minY]), p.r, p.c);
+  // Trim the empty border so the sprite's box hugs the art.
+  const rows = g.map((row, y) => (row.some(Boolean) ? y : -1)).filter((y) => y >= 0);
+  const cols = g[0].map((_, x) => (g.some((row) => row[x]) ? x : -1)).filter((x) => x >= 0);
+  const trimmed = g.slice(rows[0] - 1, rows.at(-1) + 2).map((row) => row.slice(cols[0] - 1, cols.at(-1) + 2));
+  return outline(trimmed);
 }
 
-function hammock() {
-  const g = makeGrid(36, 12);
-  for (let x = 3; x <= 32; x++) {
-    const t = (x - 3) / 29;
-    const y = 2 + Math.round(Math.sin(t * Math.PI) * 6);
-    for (let k = 0; k < 2; k++) g[y + k][x] = (x + k) % 2 ? 'm' : 'n';
-  }
-  // Suction cups at the ends.
-  fillRect(g, 0, 1, 3, 3, 'X');
-  fillRect(g, 33, 1, 3, 3, 'X');
-  return outline(g);
+function branch(rot = 0) {
+  const bark = (f, x, y) => ((x + y) % 5 === 0 ? 'B' : y % 3 ? 'b' : 'h');
+  return rotated([
+    { pts: [[2, 30], [22, 21], [42, 13], [64, 3]], r: (f) => 3.2 - f * 1.5, c: bark },
+    { pts: [[28, 18], [36, 26], [44, 29]], r: 1.8, c: 'b' },
+    { pts: [[50, 9], [55, 16]], r: 1.3, c: 'B' },
+  ], rot, [33, 16]);
+}
+
+function hammock(rot = 0) {
+  const curve = Array.from({ length: 15 }, (_, i) => [4 + (i * 52) / 14, 3 + Math.sin((i / 14) * Math.PI) * 10]);
+  return rotated([
+    { pts: curve, r: 1.4, c: (f, x, y) => ((x + y) % 2 ? 'm' : 'n') },
+    { pts: [[1, 3], [1.2, 3]], r: 2.2, c: 'X' },
+    { pts: [[59, 3], [59.2, 3]], r: 2.2, c: 'X' },
+  ], rot, [30, 8]);
 }
 
 function digbox() {
@@ -149,14 +169,15 @@ export function itemSprite(id, variant) {
   return cache.get(key);
 }
 
-// Decor the player can drag into the tank. `hangs` items only go in the
-// hanging spot; the rest go on the floor.
+// Decor the player can drag into the tank. Floor items snap into the floor
+// spots; `free` items (branch, hammock) go wherever they are dropped and can
+// be rotated.
 export const DECOR = {
-  hide: { label: 'Log hide', hangs: false, hide: true },
-  cave: { label: 'Rock cave', hangs: false, hide: true },
-  digbox: { label: 'Dig box', hangs: false },
-  plant: { label: 'Succulent', hangs: false },
-  treatball: { label: 'Treat ball', hangs: false },
-  branch: { label: 'Climbing branch', hangs: true },
-  hammock: { label: 'Hammock', hangs: true },
+  hide: { label: 'Log hide', hide: true },
+  cave: { label: 'Rock cave', hide: true },
+  digbox: { label: 'Dig box' },
+  plant: { label: 'Succulent' },
+  treatball: { label: 'Treat ball' },
+  branch: { label: 'Climbing branch', free: true },
+  hammock: { label: 'Hammock', free: true },
 };
