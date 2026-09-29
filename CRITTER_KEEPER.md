@@ -161,6 +161,25 @@ brumation at a year, gotcha day); one living enclosure event a week; decor
 unlocked by streaks (3, 7, 14, 30 days); one push a day at most, never a
 guilt ping; a Beastle win drops a hornworm treat in the tank.
 
+## Future maybe: save to an account
+
+Not now: the site is on Supabase's free plan, and its built-in email sender
+only manages a few sign-in emails an hour. Revisit if the plan or email
+setup changes. The plan, for then:
+
+- A "Keep him safe" card on his page, signing in with the same emailed
+  code as the care package library (`CarePackageLibrary.jsx`, Supabase
+  `signInWithOtp`), so buyers are already signed in.
+- One private table, one row per account (user id, game, remembered
+  dragons, updated time), with RLS so each person reads and writes only
+  their own row.
+- Signing in on a new device pulls the save down; if that device already
+  has a different dragon, ask which to keep. While signed in, changes save
+  a few seconds after they happen. Newest save wins, which is safe because
+  the sim runs on real time.
+- The bubble stays local-only, so the Supabase client still loads only on
+  his page.
+
 ## Next
 
 1. **Living enclosure** (the tank should not be set once and done):
