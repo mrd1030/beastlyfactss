@@ -158,11 +158,43 @@ export async function quizShareImage({ emoji, title, blurb, kicker, line, fileNa
 const onPhone = () => navigator.userAgentData?.mobile === true
   || (window.matchMedia?.('(pointer: coarse)').matches ?? false);
 
-// Whether a separate "Share image" button makes sense: only a phone's share
-// sheet takes the picture. Plain Share sends text and link only, because an
-// attached file switches the Android sheet to its image layout, which has no
-// Copy, and apps like Threads keep the picture and drop the text.
-export const canShareImage = () => typeof navigator !== 'undefined' && !!navigator.share && onPhone();
+// Whether to offer a separate image share: on phones only. Plain Share sends
+// text and link only, because an attached file switches the Android sheet to
+// its image layout, which has no Copy, and apps like Threads keep the
+// picture and drop the text. Phones without a share sheet (the in-app
+// browsers of Reddit, Instagram and the like) still get the button: the
+// picture opens full screen to press and hold instead (showImageToSave).
+export const canShareImage = () => typeof navigator !== 'undefined' && onPhone();
+
+// For browsers with no share sheet: the picture full screen with a note to
+// press and hold it, which saves or shares an image even inside in-app
+// browsers. Plain DOM so any page can call it without a component.
+function showImageToSave(file) {
+  const src = URL.createObjectURL(file);
+  const overlay = document.createElement('div');
+  overlay.setAttribute('role', 'dialog');
+  overlay.setAttribute('aria-label', 'Your result picture');
+  overlay.style.cssText = 'position:fixed;inset:0;z-index:200;background:rgba(10,20,15,0.92);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:24px;';
+  const img = document.createElement('img');
+  img.src = src;
+  img.alt = 'Your result picture';
+  img.style.cssText = 'max-width:100%;max-height:70vh;border-radius:16px;box-shadow:0 12px 32px rgba(0,0,0,0.4);';
+  const note = document.createElement('p');
+  note.textContent = 'Press and hold the picture to save or share it.';
+  note.style.cssText = 'color:#FFF9EE;font:600 16px system-ui,sans-serif;text-align:center;margin:0;';
+  const close = document.createElement('button');
+  close.type = 'button';
+  close.textContent = 'Done';
+  close.style.cssText = 'background:#FFF9EE;color:#1D3226;font:700 15px system-ui,sans-serif;border:0;border-radius:12px;padding:10px 28px;';
+  const done = () => {
+    overlay.remove();
+    URL.revokeObjectURL(src);
+  };
+  close.addEventListener('click', done);
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) done(); });
+  overlay.append(img, note, close);
+  document.body.appendChild(overlay);
+}
 
 // Clipboard API first; the hidden-textarea fallback covers browsers that
 // block it. Runs inside the click, before anything is awaited, so the
@@ -195,6 +227,15 @@ function copyText(text) {
 // several share targets drop `url` once a file is attached. `image` is
 // optional: cards with no picture share text and link only.
 export async function shareQuizResult({ title, text, url, image }) {
+  // A phone with no share sheet (an in-app browser) asking for the picture
+  // gets it full screen to press and hold, and the text goes to the
+  // clipboard alongside it.
+  if (!navigator.share && image && onPhone()) {
+    copyText(`${text} ${url}`);
+    const file = await image;
+    if (file) showImageToSave(file);
+    return;
+  }
   if (!navigator.share || !onPhone()) {
     copyText(`${text} ${url}`);
     return;
