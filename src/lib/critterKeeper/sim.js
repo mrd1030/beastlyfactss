@@ -1,8 +1,9 @@
 import {
   ADULT_AGE_DAYS, AGE_SPEED, CONDITIONS, DUSTS, ENRICHMENT, GROWTH, GUIDES, HANDLE_LENGTHS, INSECTS,
   LIGHTS_OFF, LIGHTS_ON, MBD_STAGES, PLANTS, RANGES, SETTLE_DAYS, START_AGE_DAYS, STARTER_SETUP,
-  SUBSTRATES, TANKS, UVB_MOUNTS, UVB_TYPES,
+  SUBSTRATES, TANKS, UVB_MOUNTS, UVB_TYPES, BIO_ESTABLISH_DAYS, TANK_SLOTS,
 } from '@/lib/critterKeeper/rules';
+import { DECOR } from '@/lib/critterKeeper/sprites/items';
 
 // The simulation. State is a plain object kept in localStorage. tick() runs
 // it forward hour by hour to "now", so the dragon keeps living while the
@@ -109,6 +110,8 @@ export function newGame(name, now) {
     m: { full: 60, water: 60, trust: 15, fun: 60, clean: 90 },
     h: { bone: 85, calcium: 30, gut: 0, resp: 0, fat: 0, stress: 10, weight: growthTarget(START_AGE_DAYS) },
     poops: 0,
+    decor: {},
+    bio: null,
     poopAt: null,
     poopKind: 'normal',
     lastStool: null,
@@ -142,8 +145,17 @@ function step(s, t, dt) {
 
   m.full -= dt * (stage === 'adult' ? 100 / 72 : 100 / 40) * (shedding ? 0.6 : 1);
   m.water -= dt * (t - s.waterAt < DAY ? 0.7 : 1.4);
-  m.fun -= dt * (100 / 72) * (small ? 1.6 : 1);
-  m.clean -= dt * (0.4 + 0.4 * s.poops);
+  // Decor in the tank keeps him busier between play sessions.
+  const items = placedDecor(s);
+  m.fun -= dt * (100 / 72) * (small ? 1.6 : 1) * Math.max(0.55, 1 - 0.12 * items.length);
+  const crew = bioReady(s, t);
+  m.clean -= dt * (crew ? 0.15 : 0.4 + 0.4 * s.poops);
+  // An established cleanup crew breaks down waste on its own, slowly.
+  if (crew && s.poops > 0 && Math.random() < 0.15 * dt) s.poops -= 1;
+  if (s.bio && !s.bio.ready && crew) {
+    s.bio.ready = true;
+    log(s, t, 'The cleanup crew is established. The isopods and springtails now break down waste, though you still pick up any feces you can see.', 'good');
+  }
   if (m.fun < 20 || m.full < 10) m.trust -= 0.1 * dt;
 
   // Calcium and UVB build bone; missing either wears it down, fastest in
@@ -166,7 +178,8 @@ function step(s, t, dt) {
 
   // Loose substrate gets swallowed with food; a warm basking spot keeps
   // digestion moving.
-  if (day && SUBSTRATES[s.setup.substrate].loose) h.gut += 0.6 * dt;
+  const sub = SUBSTRATES[s.setup.substrate];
+  if (day && sub.loose) h.gut += sub.gut * dt;
   if (day && warm) h.gut -= 0.3 * dt;
 
   const hum = s.setup.humidity;
@@ -174,7 +187,9 @@ function step(s, t, dt) {
   if (s.setup.cool < RANGES.cool[0] || !warm) damp += 0.3;
   h.resp = damp > 0 ? h.resp + damp * dt : h.resp - 0.5 * dt;
 
-  h.stress += small ? 0.3 * dt : -1 * dt;
+  // No hide, or a tank he has outgrown, keeps him on edge.
+  const edgy = (small ? 0.3 : 0) + (hides(s) === 0 ? 0.15 : 0);
+  h.stress += edgy ? edgy * dt : -1 * dt;
   if (m.full < 10) h.fat -= 0.2 * dt;
   else if (h.fat > 0) h.fat -= 0.03 * dt;
 
@@ -253,6 +268,8 @@ function step(s, t, dt) {
 export function tick(state, now) {
   if (!state) return state;
   const s = JSON.parse(JSON.stringify(state));
+  s.decor = s.decor || {};
+  s.bio = s.bio || null;
   let t = Math.max(s.lastTick, now - MAX_CATCH_UP);
   while (t < now) {
     const span = Math.min(HOUR, now - t);
@@ -261,6 +278,60 @@ export function tick(state, now) {
   }
   s.lastTick = now;
   return s;
+}
+
+// Decor that is actually in a slot this tank has.
+export function placedDecor(s) {
+  const slots = TANK_SLOTS[s.setup.tank] || [];
+  return Object.entries(s.decor || {}).filter(([slot, id]) => slots.includes(slot) && DECOR[id]).map(([, id]) => id);
+}
+export const hides = (s) => placedDecor(s).filter((id) => DECOR[id].hide).length;
+
+// The bioactive cleanup crew works once it has had time to establish, and
+// only in a tank big enough for 4 to 6 inches of substrate.
+export function bioReady(s, t) {
+  return s.setup.substrate === 'bioactive' && s.setup.tank === '120' && !!s.bio && t - s.bio.since >= BIO_ESTABLISH_DAYS * DAY;
+}
+
+function setupChange(s, now, opts) {
+  const parts = [];
+  // A different kind of UVB means a new bulb.
+  if (opts.uvb && opts.uvb !== s.setup.uvb) {
+    s.bulbAt = now;
+    s.bulbWarned = false;
+  }
+  const wasBio = s.setup.substrate === 'bioactive';
+  s.setup = { ...s.setup, ...opts };
+  parts.push({ text: 'Tank updated.', tone: 'good' });
+  if (s.setup.substrate === 'bioactive' && !wasBio) {
+    s.bio = { since: now, ready: false };
+    parts.push({ text: 'Bioactive is in. The isopods and springtails need a few weeks to establish before they keep up with waste.', tone: 'info', guide: 'bioactive' });
+  }
+  if (s.setup.substrate !== 'bioactive') s.bio = null;
+  if (s.setup.substrate === 'bioactive' && s.setup.tank !== '120') {
+    parts.push({ text: 'Bioactive needs a 4x2x2 or larger, for 4 to 6 inches of substrate.', tone: 'warn', guide: 'bioactive' });
+  }
+  return parts;
+}
+
+// Moving decor counts as rearranging: great now and then, stressful when
+// constant. One drag session (an hour) counts once.
+function decorChange(s, now, decor) {
+  const before = placedDecor(s).length;
+  s.decor = decor;
+  const after = placedDecor(s).length;
+  if (now - (s.logs.rearrange.at(-1) || 0) < 3600e3) {
+    s.logs.rearrange[s.logs.rearrange.length - 1] = now;
+    return [{ text: after > before ? 'Added to the tank.' : 'Tank rearranged.', tone: 'good' }];
+  }
+  const recent = within(s.logs.rearrange, now, 7 * DAY).length;
+  s.logs.rearrange.push(now);
+  if (recent && after <= before) {
+    s.h.stress += 15;
+    return [{ text: 'He already had a new layout this week. Rearrange occasionally, not constantly.', tone: 'warn', guide: 'enrichment' }];
+  }
+  s.m.fun += 15;
+  return [{ text: 'He explores the new layout, climbing everything.', tone: 'good' }];
 }
 
 // ---- Care actions ----
@@ -441,15 +512,8 @@ function handle(s, now, { length }) {
 function enrich(s, now, { kind }) {
   if (!isDay(now)) return [asleep(s)];
   const E = ENRICHMENT[kind];
-  if (kind === 'rearrange') {
-    const recent = within(s.logs.rearrange, now, 7 * DAY).length;
-    s.logs.rearrange.push(now);
-    if (recent) {
-      s.h.stress += 15;
-      return [{ text: 'He already had a new layout this week. Rearrange occasionally, not constantly.', tone: 'warn', guide: 'enrichment' }];
-    }
-    s.m.fun += 20;
-    return [{ text: 'He explores the new layout, climbing everything.', tone: 'good' }];
+  if (kind === 'dig' && !placedDecor(s).includes('digbox')) {
+    return [{ text: 'Put a dig box in the tank first: drag it in from the items under the tank.', tone: 'info', guide: 'enrichment' }];
   }
   if (kind === 'roam' && daysHome(s, now) < SETTLE_DAYS) {
     s.h.stress += 10;
@@ -535,9 +599,9 @@ export function act(state, type, opts = {}, now = Date.now()) {
         s.bulbAt = now;
         s.bulbWarned = false;
       }
-      s.setup = { ...s.setup, ...opts };
-      parts = [{ text: 'Tank updated.', tone: 'good' }];
+      parts = setupChange(s, now, opts);
       break;
+    case 'decor': parts = decorChange(s, now, opts.decor || {}); break;
     case 'vet': parts = vet(s, now); break;
     default: return { state: s, msg: null };
   }
@@ -568,7 +632,14 @@ export function tankChecks(s, now) {
       state: uvb >= 0.8 ? 'ok' : 'low',
     },
     { id: 'heat', label: 'Heat source', value: st.heat === 'rock' ? 'Heat rock' : 'Halogen bulb', target: 'Overhead bulb, no heat rocks', state: st.heat === 'rock' ? 'high' : 'ok' },
-    { id: 'substrate', label: 'Substrate', value: SUBSTRATES[st.substrate].label, target: 'Tile or paper towel', state: SUBSTRATES[st.substrate].loose ? 'high' : 'ok' },
+    st.substrate === 'bioactive'
+      ? {
+        id: 'substrate', label: 'Substrate', value: 'Bioactive',
+        target: st.tank !== '120' ? 'Needs a 4x2x2 or larger' : bioReady(s, now) ? 'Cleanup crew established' : 'Cleanup crew establishing',
+        state: st.tank !== '120' ? 'low' : 'ok',
+      }
+      : { id: 'substrate', label: 'Substrate', value: SUBSTRATES[st.substrate].label, target: 'Tile or paper towel', state: SUBSTRATES[st.substrate].loose ? 'high' : 'ok' },
+    { id: 'hides', label: 'Hides', value: `${hides(s)}`, target: 'One on the warm end and one on the cool end', state: hides(s) >= 2 ? 'ok' : 'low' },
     { id: 'tank', label: 'Tank', value: TANKS[st.tank].label, target: '4x2x2 ft for an adult', state: tooSmall(s, now) ? 'low' : 'ok' },
   ];
 }

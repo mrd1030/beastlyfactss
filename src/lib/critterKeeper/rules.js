@@ -13,6 +13,7 @@ export const GUIDES = {
   enrichment: { to: blog('bearded-dragon-enrichment-guide'), label: 'enrichment guide' },
   growth: { to: blog('bearded-dragon-growth-weight-checks-guide'), label: 'growth and weight guide' },
   uvb: { to: blog('why-bearded-dragons-need-uvb-lighting-and-why-skipping-it-is-deadly'), label: 'UVB lighting guide' },
+  bioactive: { to: blog('bioactive-setups-bearded-dragons'), label: 'bioactive setup guide' },
 };
 
 // Time: the dragon arrives at 4 months old and ages a week for every real
@@ -39,11 +40,24 @@ export const TANKS = {
   120: { label: '4x2x2 ft (about 120 gallons)', outgrownAt: Infinity },
 };
 
+// gut: how fast a loose substrate builds impaction risk while he eats on it.
 export const SUBSTRATES = {
-  sand: { label: 'Calcium sand', loose: true },
-  walnut: { label: 'Crushed walnut shell', loose: true },
+  sand: { label: 'Calcium sand', loose: true, gut: 0.6 },
+  walnut: { label: 'Crushed walnut shell', loose: true, gut: 0.6 },
   paper: { label: 'Paper towel', loose: false },
   tile: { label: 'Tile', loose: false },
+  // Bioactive guide: 4 to 6 inches of arid bioactive substrate in a 4x2x2 or
+  // larger, with a cleanup crew that needs a few weeks to establish. Still a
+  // loose substrate, for experienced keepers.
+  bioactive: { label: 'Bioactive', loose: true, gut: 0.15, bio: true },
+};
+export const BIO_ESTABLISH_DAYS = 3; // a few weeks of dragon time
+
+// Decor spots per tank size: a bigger tank has room for more.
+export const TANK_SLOTS = {
+  20: ['cool', 'hang'],
+  40: ['cool', 'middle', 'hang'],
+  120: ['cool', 'middle', 'warm', 'hang'],
 };
 
 export const UVB_TYPES = {
@@ -55,6 +69,18 @@ export const UVB_TYPES = {
 export const UVB_MOUNTS = {
   mesh: { label: 'Over the mesh lid', factor: 1 },
   glass: { label: 'Behind a glass or plastic cover', factor: 0 },
+};
+
+// The guides' simple, safe setup, one tap away in the tank panel.
+export const BASIC_SETUP = {
+  tank: '120',
+  substrate: 'tile',
+  uvb: 't5',
+  mount: 'mesh',
+  heat: 'halogen',
+  basking: 105,
+  cool: 80,
+  humidity: 35,
 };
 
 export const HEAT_SOURCES = {
@@ -120,7 +146,6 @@ export const ENRICHMENT = {
   dig: { label: 'Dig box' },
   roam: { label: 'Free roam, 15 minutes' },
   hunt: { label: 'Insect hunt' },
-  rearrange: { label: 'Rearrange the tank' },
 };
 
 // Growth guide weight table, midpoints, by age in days.

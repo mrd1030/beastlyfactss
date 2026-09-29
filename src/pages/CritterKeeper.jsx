@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 import { BookOpen, Bug, Droplets, Hand, Leaf, RotateCcw, Sparkles, Stethoscope, Thermometer, Trash2, Waves } from 'lucide-react';
 import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
 import {
-  ENRICHMENT, GUIDES, HANDLE_LENGTHS, HEAT_SOURCES, INSECTS, DUSTS, PLANTS, SUBSTRATES, TANKS, UVB_MOUNTS, UVB_TYPES, CONDITIONS,
+  BASIC_SETUP, ENRICHMENT, GUIDES, HANDLE_LENGTHS, HEAT_SOURCES, INSECTS, DUSTS, PLANTS, SUBSTRATES, TANKS, UVB_MOUNTS, UVB_TYPES, CONDITIONS,
 } from '@/lib/critterKeeper/rules';
 import {
-  act, ageDays, health, isDay, mbdSymptoms, mood, needsVet, newGame, tankChecks, tick,
+  act, ageDays, health, mbdSymptoms, mood, needsVet, newGame, tankChecks, tick,
 } from '@/lib/critterKeeper/sim';
+import TankScene, { DragonCanvas } from '@/components/critterKeeper/TankScene';
 
 const STORAGE_KEY = 'critter-keeper-v1';
-const PHOTO = '/assets/guides/bearded-dragon-card@2x.jpg';
 
 const TONE = {
   good: 'bg-primary/10 border-primary/30',
@@ -169,6 +169,14 @@ function TankPanel({ game, now, onDo }) {
           </li>
         ))}
       </ul>
+      <div className="mb-4 bg-primary/10 border border-primary/30 rounded-xl p-3">
+        <p className="text-sm font-body text-foreground mb-2">
+          <strong>Basic setup:</strong> a 4x2x2 tank on tile, a T5 HO UVB tube over mesh, a halogen basking bulb, the basking spot and cool side in range, humidity at 35%.
+        </p>
+        <button type="button" onClick={() => onDo('setup', BASIC_SETUP)} className="bg-primary text-primary-foreground font-body font-bold text-sm px-4 py-2 rounded-xl">
+          Use the basic setup
+        </button>
+      </div>
       <Field label="Tank">
         {Object.entries(TANKS).map(([id, t]) => <Chip key={id} active={draft.tank === id} onClick={() => set('tank')(id)}>{t.label}</Chip>)}
       </Field>
@@ -213,7 +221,9 @@ function Adopt({ onAdopt }) {
   const [name, setName] = useState('Dex');
   return (
     <div className="bg-card border border-border rounded-2xl overflow-hidden">
-      <img src={PHOTO} alt="A bearded dragon resting on a branch" width="640" height="480" className="w-full aspect-[4/3] object-cover" />
+      <div className="bg-[#efe6d2] flex justify-center py-6">
+        <DragonCanvas className="w-3/4 max-w-xs" />
+      </div>
       <div className="p-5">
         <h2 className="font-display font-bold text-xl text-foreground mb-2">Adopt a bearded dragon</h2>
         <p className="text-sm font-body text-foreground leading-relaxed mb-2">
@@ -283,6 +293,7 @@ export default function CritterKeeper() {
   const [now, setNow] = useState(null);
   const [open, setOpen] = useState(null);
   const [msg, setMsg] = useState(null);
+  const [eating, setEating] = useState(false);
 
   // Time is read after mount only, so the prerendered page is the same for
   // everyone and the live dragon appears on hydration.
@@ -305,6 +316,10 @@ export default function CritterKeeper() {
     setGame(state);
     setNow(t);
     setMsg(m);
+    if (['insects', 'salad'].includes(type) && m?.tone !== 'bad') {
+      setEating(true);
+      setTimeout(() => setEating(false), 2500);
+    }
     if (!['tank'].includes(open)) setOpen(null);
   };
 
@@ -315,7 +330,6 @@ export default function CritterKeeper() {
   const vet = ready && game && needsVet(game);
   const md = ready && game ? mood(game, now) : null;
   const hp = ready && game ? health(game) : 100;
-  const night = ready && !isDay(now);
   const age = ready && game ? ageDays(game, now) : 0;
 
   return (
@@ -343,14 +357,17 @@ export default function CritterKeeper() {
         {ready && game && (
           <>
             <div className="bg-card border border-border rounded-2xl overflow-hidden mb-4">
-              <div className="relative">
-                <img src={PHOTO} alt={`${game.name} the bearded dragon`} width="640" height="480" className={`w-full aspect-[16/10] object-cover ${night ? 'brightness-[0.35]' : ''}`} />
-                <div className="absolute left-3 bottom-3 right-3 flex items-center gap-2">
-                  <span className="bg-card/90 backdrop-blur px-3 py-1.5 rounded-xl text-sm font-body font-bold text-foreground">
+              <TankScene
+                game={game}
+                now={now}
+                pose={eating ? 'eat' : 'idle'}
+                onDecor={(decor) => doAction('decor', { decor })}
+                badge={(
+                  <span className="absolute left-2 top-2 bg-card/90 backdrop-blur px-2.5 py-1 rounded-lg text-xs font-body font-bold text-foreground pointer-events-none">
                     {md.emoji} {md.text}
                   </span>
-                </div>
-              </div>
+                )}
+              />
               <div className="p-4">
                 <div className="flex items-baseline justify-between gap-3 mb-3">
                   <h2 className="font-display font-bold text-2xl text-foreground">{game.name}</h2>
@@ -407,7 +424,7 @@ export default function CritterKeeper() {
               const Panel = ACTIONS.find((a) => a.id === open).panel;
               return (
                 <div className="bg-card border border-border rounded-2xl p-4 mb-4">
-                  <Panel key={open} game={game} now={now} onDo={doAction} />
+                  <Panel key={`${open}-${JSON.stringify(game.setup)}`} game={game} now={now} onDo={doAction} />
                 </div>
               );
             })()}
