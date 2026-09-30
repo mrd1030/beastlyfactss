@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { BookOpen, ArrowRight } from 'lucide-react';
 import { CHRONICLES_SERIES, chroniclesPath } from '@/lib/chronicles';
 import LocalImage from '@/components/shared/LocalImage';
+import IconChip from '@/components/shared/IconChip';
+import { FeatherText } from '@/components/icons/labIcons';
 
 // Alt text mirrors each series' own hero-image frontmatter (imageAlt) so this
 // teaser and the story's own page describe the same photo the same way.
@@ -22,7 +24,7 @@ export default function DexTeaser() {
           viewport={{ once: true }}
           className="mb-4"
         >
-          <span className="text-xl block mb-1">📖</span>
+          <IconChip icon={FeatherText} color="orange" size="row" className="mb-2" />
           <h2 className="font-display font-bold text-lg sm:text-xl text-foreground">
             Chronicles: Original Fiction
           </h2>
