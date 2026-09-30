@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dices, Sparkles, ListOrdered } from 'lucide-react';
+import { Dice5, Sparkles, ListOrdered } from 'lucide-react';
 
 /**
  * The order switcher shared by /facts/ and /gallery/, which browse the same
@@ -45,7 +45,7 @@ export default function FactOrderControl({ order, onChange, onRandomize, classNa
         </button>
       ))}
       <button type="button" onClick={onRandomize} aria-pressed={order === 'random'} className={pill(order === 'random')}>
-        <Dices className="w-3.5 h-3.5" />{` ${order === 'random' ? 'Shuffle again' : 'Random'}`}
+        <Dice5 className="w-3.5 h-3.5" />{` ${order === 'random' ? 'Roll again' : 'Random'}`}
       </button>
     </div>
   );
