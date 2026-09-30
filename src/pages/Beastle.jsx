@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, ArrowRight, BarChart3, Bell, BellOff, Check, Delete, HelpCircle, Image as ImageIcon, Lightbulb, RotateCcw, Share2, BookOpen, X } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BarChart3, Bell, BellOff, Check, Delete, HelpCircle, Image as ImageIcon, Lightbulb, Loader2, RotateCcw, Share2, BookOpen, X } from 'lucide-react';
 import {
   LEVELS, MAX_GUESSES, answerForDay, dayNumber, keyStates, lettersOf, loadWords, pickUnlimited,
   score, shapeOf, shareText, validate, byAnswer,
@@ -113,14 +113,61 @@ function Board({ answer, guesses, current, done, shaking, locked = null }) {
   return <div className="flex flex-col gap-1 w-full">{rows}</div>;
 }
 
+// A raised key that sinks when pressed. A quick tap is over before the
+// browser paints :active, so the pressed look is held in state for a beat,
+// and a key typed on a real keyboard flashes its on-screen key too.
+const RAISED = 'shadow-[0_3px_0_0_rgb(0_0_0/0.25)] transition-[transform,box-shadow] duration-75';
+const SUNK = 'translate-y-[3px] shadow-none brightness-90';
+const HOLD_MS = 110;
+
+function usePressed() {
+  const [down, setDown] = useState(null);
+  const timer = useRef(null);
+  useEffect(() => () => clearTimeout(timer.current), []);
+  const press = useCallback((id) => {
+    clearTimeout(timer.current);
+    setDown(id);
+  }, []);
+  const release = useCallback(() => {
+    clearTimeout(timer.current);
+    timer.current = setTimeout(() => setDown(null), HOLD_MS);
+  }, []);
+  const flash = useCallback((id) => {
+    press(id);
+    release();
+  }, [press, release]);
+  return { down, press, release, flash };
+}
+
 function Keyboard({ keys, onKey, disabled }) {
-  const btn = 'h-12 rounded-md font-body font-bold text-sm flex items-center justify-center select-none active:scale-95 transition-transform disabled:opacity-50';
+  const { down, press, release, flash } = usePressed();
+  useEffect(() => {
+    if (disabled) return undefined;
+    const handler = (e) => {
+      if (e.ctrlKey || e.metaKey || e.altKey) return;
+      const tag = e.target?.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+      if (document.querySelector('[aria-modal="true"]')) return;
+      if (e.key === 'Enter') flash('ENTER');
+      else if (e.key === 'Backspace') flash('BACK');
+      else if (/^[a-zA-Z]$/.test(e.key)) flash(e.key.toUpperCase());
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, [disabled, flash]);
+  const pressProps = (id) => ({
+    onPointerDown: () => press(id),
+    onPointerUp: release,
+    onPointerLeave: release,
+    onPointerCancel: release,
+  });
+  const btn = (id) => `h-12 rounded-md font-body font-bold text-sm flex items-center justify-center select-none touch-manipulation disabled:opacity-50 ${RAISED} ${down === id ? SUNK : ''}`;
   return (
     <div className="flex flex-col gap-1.5 w-full max-w-lg mx-auto" aria-label="Keyboard">
       {KEY_ROWS.map((row, r) => (
         <div key={row} className="flex gap-1 justify-center">
           {r === 2 && (
-            <button type="button" disabled={disabled} onClick={() => onKey('ENTER')} className={`${btn} px-2 flex-[1.5] bg-secondary text-secondary-foreground text-xs`}>
+            <button type="button" disabled={disabled} onClick={() => onKey('ENTER')} {...pressProps('ENTER')} className={`${btn('ENTER')} px-2 flex-[1.5] bg-secondary text-secondary-foreground text-xs`}>
               Enter
             </button>
           )}
@@ -130,13 +177,14 @@ function Keyboard({ keys, onKey, disabled }) {
               type="button"
               disabled={disabled}
               onClick={() => onKey(l)}
-              className={`${btn} flex-1 max-w-[2.6rem] ${KEY_STYLE[keys[l]] || 'bg-muted text-foreground'}`}
+              {...pressProps(l)}
+              className={`${btn(l)} flex-1 max-w-[2.6rem] ${KEY_STYLE[keys[l]] || 'bg-muted text-foreground'}`}
             >
               {l}
             </button>
           ))}
           {r === 2 && (
-            <button type="button" disabled={disabled} onClick={() => onKey('BACK')} aria-label="Delete letter" className={`${btn} flex-[1.5] bg-muted text-foreground`}>
+            <button type="button" disabled={disabled} onClick={() => onKey('BACK')} {...pressProps('BACK')} aria-label="Delete letter" className={`${btn('BACK')} flex-[1.5] bg-muted text-foreground`}>
               <Delete className="w-5 h-5" />
             </button>
           )}
@@ -258,6 +306,38 @@ function Game({ entry, guesses, done, words, onSubmit, showGroup = false, childr
       {children}
       {!done && <Keyboard keys={keys} onKey={onKey} disabled={done} />}
     </div>
+  );
+}
+
+// A share button that sinks when tapped and says it is working until the
+// share sheet or the copy finishes, since the image takes a moment to draw.
+function ShareButton({ onShare, icon: Icon, label, busyLabel, className }) {
+  const { down, press, release } = usePressed();
+  const [busy, setBusy] = useState(false);
+  const run = async () => {
+    if (busy) return;
+    setBusy(true);
+    try {
+      await onShare();
+    } finally {
+      setBusy(false);
+    }
+  };
+  return (
+    <button
+      type="button"
+      onClick={run}
+      onPointerDown={() => press('share')}
+      onPointerUp={release}
+      onPointerLeave={release}
+      onPointerCancel={release}
+      disabled={busy}
+      aria-busy={busy}
+      className={`inline-flex items-center justify-center gap-2 font-body font-bold text-sm px-5 py-2.5 rounded-2xl select-none touch-manipulation disabled:opacity-80 ${RAISED} ${down || busy ? SUNK : ''} ${className}`}
+    >
+      {busy ? <Loader2 className="w-4 h-4 motion-safe:animate-spin" /> : <Icon className="w-4 h-4" />}
+      {busy ? busyLabel : label}
+    </button>
   );
 }
 
@@ -1023,7 +1103,7 @@ export default function Beastle() {
     const image = withImage
       ? beastleShareImage({ day: today, guesses: dailyGame.guesses, answer: dailyEntry.answer, won: dailyGame.won, streak, hinted })
       : undefined;
-    shareQuizResult({ title: 'Beastle | Beastly Facts', text, url: 'https://beastlyfacts.com/beastle/', image });
+    return shareQuizResult({ title: 'Beastle | Beastly Facts', text, url: 'https://beastlyfacts.com/beastle/', image });
   };
 
   const pageTitle = 'Beastle: The Daily Animal Word Game | Beastly Facts';
@@ -1110,13 +1190,9 @@ export default function Beastle() {
                 <ResultBox day={today} entry={dailyEntry} game={dailyGame} streak={liveStreak(stats, today)}>
                   <EveryoneToday day={today} guesses={dailyGame.won ? dailyGame.guesses.length : null} />
                   <div className="flex flex-col sm:flex-row gap-2 justify-center mt-4">
-                    <button type="button" onClick={() => share()} className="inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground font-body font-bold text-sm px-5 py-2.5 rounded-2xl">
-                      <Share2 className="w-4 h-4" /> Share result
-                    </button>
+                    <ShareButton onShare={() => share()} icon={Share2} label="Share result" busyLabel="Sharing..." className="bg-secondary text-secondary-foreground" />
                     {canShareImage() && (
-                      <button type="button" onClick={() => share({ withImage: true })} className="inline-flex items-center justify-center gap-2 bg-muted text-foreground font-body font-bold text-sm px-5 py-2.5 rounded-2xl">
-                        <ImageIcon className="w-4 h-4" /> Share result image
-                      </button>
+                      <ShareButton onShare={() => share({ withImage: true })} icon={ImageIcon} label="Share result image" busyLabel="Making your image..." className="bg-muted text-foreground" />
                     )}
                   </div>
                   <p className="text-xs text-muted-foreground font-body mt-3">
