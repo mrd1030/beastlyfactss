@@ -427,14 +427,13 @@ html, body {
 .beastle-app [data-app-main-pad] { padding-bottom: calc(4rem + var(--safe-area-inset-bottom)); }
 
 /* Page-title badge (PageBadge in src/components/shared/IconChip.jsx). From md
-   up it floats beside the title and the two share a floor line: the title is
-   pushed down so its baseline meets the badge's bottom edge, and the badge
-   stands up above it like a tag. Everything after the title (the subtitle,
-   a search bar, buttons) starts below both. The push is tuned for the 56px
-   badge and the sm:text-4xl titles every page uses. */
+   up it floats beside the title, with the title's capitals centered on the
+   badge. Everything after the title (the subtitle, a search bar, buttons)
+   starts below both. The push is tuned for the 56px badge and the
+   sm:text-4xl titles every page uses. */
 @media (min-width: 768px) {
   /* Padding, not margin: a margin would collapse through the header and
      carry the badge down with it. */
-  .page-badge ~ :is(h1, :has(h1)) { padding-top: 23px; }
+  .page-badge ~ :is(h1, :has(h1)) { padding-top: 8px; }
   .page-badge ~ :not(h1):not(:has(h1)) { clear: left; }
 }
