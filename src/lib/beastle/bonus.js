@@ -75,14 +75,46 @@ function decoysFor(entry, fact, exclude, rand) {
   return [...same, ...other];
 }
 
-export function bonusRound(day, excludeAnswer) {
-  const rand = rng(day * 7919);
-  const candidates = withFacts.filter((e) => e.answer !== excludeAnswer);
+// From this day on, the round walks one fixed shuffled order of every fact
+// animal, three a day, so an animal never comes back until all the others
+// have had a turn (about two months). Days before it keep the free draw they
+// were played with, so a round already played never changes under anyone.
+const SEQUENCE_FROM_DAY = 4;
+const ORDER = (() => {
+  const rand = rng(20260928);
+  const order = [...withFacts];
+  for (let i = order.length - 1; i > 0; i--) {
+    const j = Math.floor(rand() * (i + 1));
+    [order[i], order[j]] = [order[j], order[i]];
+  }
+  return order;
+})();
+
+function pickAnimals(day, excludeAnswer, rand) {
   const picked = [];
+  if (day >= SEQUENCE_FROM_DAY) {
+    const start = (day - SEQUENCE_FROM_DAY) * BONUS_QUESTIONS;
+    const half = Math.floor(ORDER.length / 2);
+    for (let slot = 0; slot < BONUS_QUESTIONS; slot++) {
+      // A slot holding the day's own answer is filled from halfway round the
+      // order, not the next animal along, which is tomorrow's first question.
+      let e = ORDER[(start + slot) % ORDER.length];
+      if (e.answer === excludeAnswer || picked.includes(e)) e = ORDER[(start + slot + half) % ORDER.length];
+      picked.push(e);
+    }
+    return picked;
+  }
+  const candidates = withFacts.filter((e) => e.answer !== excludeAnswer);
   while (picked.length < BONUS_QUESTIONS && picked.length < candidates.length) {
     const e = candidates[Math.floor(rand() * candidates.length)];
     if (!picked.includes(e)) picked.push(e);
   }
+  return picked;
+}
+
+export function bonusRound(day, excludeAnswer) {
+  const rand = rng(day * 7919);
+  const picked = pickAnimals(day, excludeAnswer, rand);
   return picked.map((entry) => {
     const fact = factById.get(entry.factIds[Math.floor(rand() * entry.factIds.length)]);
     const options = [entry, ...decoysFor(entry, fact, excludeAnswer, rand)]
