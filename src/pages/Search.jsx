@@ -11,7 +11,9 @@ import { isChroniclesPost } from '@/lib/chronicles';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 import { searchLocalContent, normalizeQuery, correctQuery } from '@/lib/localSearch';
 import { Search as BadgeIcon } from 'lucide-react';
-import { PageBadge } from '@/components/shared/IconChip';
+import IconChip, { PageBadge } from '@/components/shared/IconChip';
+import { CATEGORY_ICONS } from '@/lib/data/categoryIcons';
+import { PawPrint } from 'lucide-react';
 
 function LocalResultRow({ result }) {
   return (
@@ -343,7 +345,7 @@ export default function Search() {
                   to={c.to || `/blog/category/${c.slug}/`}
                   className="flex items-center gap-2 bg-card border border-border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group"
                 >
-                  <span className="text-xl">{c.emoji}</span>
+                  <IconChip icon={CATEGORY_ICONS[c.slug] || PawPrint} color="gold" size="heading" />
                   <span className="text-sm font-body font-semibold text-foreground group-hover:text-secondary transition-colors">{c.label}</span>
                 </Link>
               ))}
