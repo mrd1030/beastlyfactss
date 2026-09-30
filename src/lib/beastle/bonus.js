@@ -21,18 +21,58 @@ function rng(seed) {
 }
 
 const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const nameWords = (name) => name.toLowerCase().split(/[\s-]+/).filter((w) => w.length >= 3);
 
-// Blanks every word of the animal's names (and its plural), longest first, so
-// "red pandas" goes before "red" and nothing leaks through as half a name.
-export function maskFact(text, names) {
+// Splits a fact into plain text and the blanked name, so the round can show
+// the blank before an answer and the real word after it. Every word of the
+// animal's names (and its plural) is blanked, longest first, so "red pandas"
+// goes before "red" and nothing leaks through as half a name. A run of
+// blanked words ("Wandering _____ _____") becomes one blank.
+export function maskParts(text, names) {
   const words = [...new Set(names.flatMap((n) => [n, ...n.split(/[\s-]+/)]))]
     .filter((w) => w.length >= 3)
     .sort((a, b) => b.length - a.length);
-  let out = text;
-  for (const w of words) {
-    out = out.replace(new RegExp(`\\b${escape(w)}(es|s)?\\b`, 'gi'), '_____');
+  if (!words.length) return [{ text }];
+  const re = new RegExp(`\\b(?:${words.map(escape).join('|')})(?:es|s)?\\b`, 'gi');
+  const parts = [];
+  let at = 0;
+  for (const m of text.matchAll(re)) {
+    const gap = text.slice(at, m.index);
+    const last = parts[parts.length - 1];
+    if (last?.blank && /^[\s-]*$/.test(gap)) last.blank += gap + m[0];
+    else {
+      if (gap) parts.push({ text: gap });
+      parts.push({ blank: m[0] });
+    }
+    at = m.index + m[0].length;
   }
-  return out.replace(/(_____[\s-]*)+_____/g, '_____');
+  if (at < text.length) parts.push({ text: text.slice(at) });
+  return parts;
+}
+
+export const maskFact = (text, names) => maskParts(text, names).map((p) => p.text ?? '_____').join('');
+
+// Wrong answers that make you read the fact without turning it into a
+// trick: two of the same kind of animal (birds for a bird) and one of
+// another kind, all well known. A choice never shares a word with the answer
+// (no second chameleon on a chameleon fact) and is never named in the fact.
+const DECOYS = pool.filter((e) => e.level !== 'hard');
+
+function decoysFor(entry, fact, exclude, rand) {
+  const banned = new Set([entry.name, entry.answer, fact.animal].flatMap(nameWords));
+  const factText = fact.fact.toLowerCase();
+  const fits = (o) => o.answer !== entry.answer
+    && o.answer !== exclude
+    && !nameWords(o.name).some((w) => banned.has(w) || new RegExp(`\\b${escape(w)}(?:es|s)?\\b`).test(factText));
+  const draw = (list, n, taken) => {
+    const open = list.filter((o) => fits(o) && !taken.includes(o));
+    const out = [];
+    while (out.length < n && open.length) out.push(open.splice(Math.floor(rand() * open.length), 1)[0]);
+    return out;
+  };
+  const same = draw(DECOYS.filter((o) => o.group && o.group === entry.group), 2, []);
+  const other = draw(DECOYS.filter((o) => o.group !== entry.group), 3 - same.length, same);
+  return [...same, ...other];
 }
 
 export function bonusRound(day, excludeAnswer) {
@@ -45,20 +85,17 @@ export function bonusRound(day, excludeAnswer) {
   }
   return picked.map((entry) => {
     const fact = factById.get(entry.factIds[Math.floor(rand() * entry.factIds.length)]);
-    const others = [];
-    while (others.length < 3) {
-      const o = candidates[Math.floor(rand() * candidates.length)];
-      if (o !== entry && !others.includes(o)) others.push(o);
-    }
-    const options = [entry, ...others]
+    const options = [entry, ...decoysFor(entry, fact, excludeAnswer, rand)]
       .map((o) => ({ o, k: rand() }))
       .sort((a, b) => a.k - b.k)
       .map(({ o }) => ({ answer: o.answer, name: o.name }));
+    const parts = maskParts(fact.fact, [entry.name, fact.animal, entry.answer]);
     return {
       answer: entry.answer,
       name: entry.name,
       factId: fact.id,
-      clue: maskFact(fact.fact, [entry.name, fact.animal, entry.answer]),
+      clue: parts.map((p) => p.text ?? '_____').join(''),
+      parts,
       options,
     };
   });

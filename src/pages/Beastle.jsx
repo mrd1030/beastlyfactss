@@ -475,7 +475,13 @@ function Bonus({ today, dailyAnswer, bonus, setBonus, addToJournal }) {
           if (qi > 0 && picks[qi - 1] === undefined) return null;
           return (
             <div key={q.factId}>
-              <p className="text-sm font-body text-foreground leading-relaxed mb-2">{`${qi + 1}. ${q.clue}`}</p>
+              {/* Once answered, the blank fills in with the real word, so a
+                  miss still teaches the animal and "_____ have" reads right. */}
+              <p className="text-sm font-body text-foreground leading-relaxed mb-2">
+                {answered
+                  ? [`${qi + 1}. `, ...q.parts.map((p, i) => (p.blank ? <strong key={i} className="font-bold text-primary dark:text-accent">{p.blank}</strong> : p.text))]
+                  : `${qi + 1}. ${q.clue}`}
+              </p>
               <div className="grid grid-cols-2 gap-2">
                 {q.options.map((o) => {
                   const isRight = o.answer === q.answer;

@@ -177,6 +177,30 @@ const MARINE_GROUP = {
   'mantis-shrimp': 'invertebrate', cuttlefish: 'invertebrate', 'humpback-whale': 'mammal', 'sea-otter': 'mammal',
 };
 
+// Fact-only animals (unlimited and the bonus round) take their group from
+// their fact's category. Ocean and Weird & Wonderful mix every kind of
+// animal, so those go by name. The bonus round picks its wrong answers from
+// the same group, so every fact animal needs one.
+const FACT_CATEGORY_GROUP = {
+  Mammals: 'mammal', 'Dogs & Cats': 'mammal', Birds: 'bird', Reptiles: 'reptile',
+  Fish: 'fish', Invertebrates: 'invertebrate',
+};
+const FACT_GROUP = {
+  Anglerfish: 'fish', 'Barreleye Fish': 'fish', Blobfish: 'fish', 'Frilled Shark': 'fish', Lionfish: 'fish',
+  'Ocean Sunfish': 'fish', Pufferfish: 'fish', Sawfish: 'fish', Hagfish: 'fish', 'Electric Eel': 'fish', Mudskipper: 'fish',
+  'Elephant Seal': 'mammal', Orca: 'mammal', 'California Sea Lion': 'mammal', 'Sperm Whale': 'mammal',
+  'Short-Beaked Echidna': 'mammal', 'Star-Nosed Mole': 'mammal', 'Naked Mole Rat': 'mammal',
+  'Box Jellyfish': 'invertebrate', 'Dumbo Octopus': 'invertebrate', 'Giant Squid': 'invertebrate',
+  'Mimic Octopus': 'invertebrate', Nudibranch: 'invertebrate', 'Pistol Shrimp': 'invertebrate',
+  'Sea Cucumber': 'invertebrate', 'Sea Sponge': 'invertebrate', Starfish: 'invertebrate',
+  'Vampire Squid': 'invertebrate', 'Yeti Crab': 'invertebrate', 'Bombardier Beetle': 'invertebrate',
+  Butterfly: 'invertebrate', 'Coconut Crab': 'invertebrate', Cricket: 'invertebrate', 'Dung Beetle': 'invertebrate',
+  Firefly: 'invertebrate', Honeybee: 'invertebrate', 'Common House Spider': 'invertebrate',
+  'Leafcutter Ant': 'invertebrate', Mayfly: 'invertebrate', Tardigrade: 'invertebrate',
+  "Wallace's Flying Frog": 'amphibian', 'Hairy Frog': 'amphibian', 'Wood Frog': 'amphibian',
+  'Green Sea Turtle': 'reptile',
+};
+
 // Days are numbered from launch in the site's timezone (America/New_York):
 // Beastle #1 is this date.
 // Must match EPOCH in src/lib/beastle/day.js.
@@ -322,6 +346,7 @@ async function main() {
       emoji: f.emoji,
       image: imagePathFor(f),
       link: `/facts/${slugify(f.title)}/`,
+      group: FACT_GROUP[f.animal] || FACT_CATEGORY_GROUP[f.category] || null,
       blurb: '',
     }, false);
   }
