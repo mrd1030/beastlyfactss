@@ -3,7 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { breadcrumbSchema } from '@/lib/utils/breadcrumbs';
 import { useLocation, useNavigate, useParams, Link } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
-import { ArrowLeft, BookOpen, ChevronRight } from 'lucide-react';
+import { ArrowLeft, BookOpen, ChevronRight, ClipboardList, Globe, History, Sparkles } from 'lucide-react';
+import IconChip from '@/components/shared/IconChip';
 import { encyclopediaAnimals, difficultyColor } from '@/lib/data/encyclopedia';
 import { allGuides } from '@/lib/data/guides';
 import { facts } from '@/lib/data/facts';
@@ -214,7 +215,7 @@ export default function EncyclopediaAnimal() {
 
             {/* Overview */}
             <div className="bg-card border border-border rounded-2xl p-5">
-              <h2 className="font-display font-bold text-base text-foreground mb-3">🌍 Overview</h2>
+              <h2 className="flex items-center gap-2 font-display font-bold text-base text-foreground mb-3"><IconChip icon={Globe} size="heading" />Overview</h2>
               {bio.overview
                 ? <p className="text-sm font-body text-muted-foreground leading-relaxed">{bio.overview}</p>
                 : <p className="text-sm font-body text-muted-foreground italic leading-relaxed">
@@ -225,7 +226,7 @@ export default function EncyclopediaAnimal() {
 
             {/* Bio stats */}
             <div className="bg-card border border-border rounded-2xl p-5">
-              <h2 className="font-display font-bold text-base text-foreground mb-4">📋 Quick Facts</h2>
+              <h2 className="flex items-center gap-2 font-display font-bold text-base text-foreground mb-4"><IconChip icon={ClipboardList} size="heading" />Quick Facts</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <BioField label="Native Range" value={bio.origin} />
                 <BioField label="Natural Habitat" value={bio.habitat} />
@@ -241,7 +242,7 @@ export default function EncyclopediaAnimal() {
                 rather than a "coming soon" placeholder. */}
             {bio.history && (
               <div className="bg-card border border-border rounded-2xl p-5">
-                <h2 className="font-display font-bold text-base text-foreground mb-3">📜 History</h2>
+                <h2 className="flex items-center gap-2 font-display font-bold text-base text-foreground mb-3"><IconChip icon={History} size="heading" />History</h2>
                 <p className="text-sm font-body text-muted-foreground leading-relaxed">{bio.history}</p>
               </div>
             )}
@@ -255,7 +256,7 @@ export default function EncyclopediaAnimal() {
             {/* Fun facts from facts page */}
             {relatedFacts.length > 0 && (
               <div className="bg-card border border-border rounded-2xl p-5">
-                <h2 className="font-display font-bold text-base text-foreground mb-3">🤩 Fun Facts</h2>
+                <h2 className="flex items-center gap-2 font-display font-bold text-base text-foreground mb-3"><IconChip icon={Sparkles} size="heading" />Fun Facts</h2>
                 <div className="space-y-3">
                   {relatedFacts.map(fact => (
                     <div key={fact.id} className="bg-secondary/5 border border-secondary/20 rounded-xl px-4 py-3">

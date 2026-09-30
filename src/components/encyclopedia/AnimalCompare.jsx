@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from 'react';
-import { Share2 } from 'lucide-react';
+import { Scale, Share2 } from 'lucide-react';
+import IconChip from '@/components/shared/IconChip';
 import { encyclopediaAnimals } from '@/lib/data/encyclopedia';
 import { humanReference } from '@/lib/data/humanReference';
 
@@ -44,7 +45,7 @@ export default function AnimalCompare({ animal }) {
   return (
     <div className="bg-card border border-border rounded-2xl p-5">
       <div className="flex items-center justify-between gap-3 mb-4">
-        <h2 className="font-display font-bold text-base text-foreground">⚖️ Compare</h2>
+        <h2 className="flex items-center gap-2 font-display font-bold text-base text-foreground"><IconChip icon={Scale} size="heading" />Compare</h2>
         <select
           value={compareId}
           onChange={(e) => setCompareId(e.target.value)}

@@ -4,16 +4,18 @@ import { Link } from 'react-router-dom';
 import { CARE_PACKAGES, CARE_PACKAGE_GROUPS, carePackageBookCover, isCarePackageBuyable } from '@/lib/data/carePackages';
 import CarePackagesNav from '@/components/shared/CarePackagesNav';
 import CarePackageCard from '@/components/shared/CarePackageCard';
+import IconChip from '@/components/shared/IconChip';
+import { BookOpen, Printer, RefreshCw, TriangleAlert } from 'lucide-react';
 import '@/styles/care-package-hub.css';
 
 const TITLE = 'Printable Care Packages | Beastly Facts';
 const DESCRIPTION = 'Printable PDF owner manuals for reptiles, birds, fish, and small mammals. Same research standards as our free guides, formatted to keep by the enclosure.';
 
 const FEATURES = [
-  { emoji: '📖', title: 'The first pages are free', body: 'Every package has a free sample on its page: the contents page and the introduction as a PDF, so you see every page it covers before you buy.' },
-  { emoji: '🖨️', title: 'Print what matters', body: 'Temperature targets, shopping lists, first-30-days plans, and daily routines designed to live near the habitat.' },
-  { emoji: '⚠️', title: 'Clear Never rules', body: 'Safety-critical mistakes are called out plainly so common beginner errors are harder to miss.' },
-  { emoji: '🔁', title: 'Every corrected edition is free', body: 'Buy once. When a correction ships, the file behind your download becomes the new edition, and your library shows which one you hold.' },
+  { icon: BookOpen, title: 'The first pages are free', body: 'Every package has a free sample on its page: the contents page and the introduction as a PDF, so you see every page it covers before you buy.' },
+  { icon: Printer, title: 'Print what matters', body: 'Temperature targets, shopping lists, first-30-days plans, and daily routines designed to live near the habitat.' },
+  { icon: TriangleAlert, title: 'Clear Never rules', body: 'Safety-critical mistakes are called out plainly so common beginner errors are harder to miss.' },
+  { icon: RefreshCw, title: 'Every corrected edition is free', body: 'Buy once. When a correction ships, the file behind your download becomes the new edition, and your library shows which one you hold.' },
 ];
 
 // One featured package per catalog section, in section order, from the
@@ -130,7 +132,7 @@ export default function CarePackages() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {FEATURES.map(f => (
               <div key={f.title} className="bg-card border border-border rounded-2xl p-5">
-                <span className="text-2xl mb-2 block" aria-hidden="true">{f.emoji}</span>
+                <IconChip icon={f.icon} color="orange" size="row" className="mb-3" />
                 <h3 className="font-body font-bold text-sm text-foreground mb-1">{f.title}</h3>
                 <p className="text-sm text-muted-foreground font-body">{f.body}</p>
               </div>

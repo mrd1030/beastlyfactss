@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { motion } from '@/lib/motion-safe';
-import { CheckCircle2, XCircle, RotateCcw, Share2, Check, Layers } from 'lucide-react';
+import { Brain, CheckCircle2, XCircle, RotateCcw, Share2, Check, Layers } from 'lucide-react';
+import IconChip from '@/components/shared/IconChip';
 import { generateAnimalQuiz } from '@/lib/utils/generateAnimalQuiz';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { logSiteEvent } from '@/lib/siteEvents';
@@ -109,7 +110,7 @@ export default function AnimalQuiz({ animal }) {
 
   return (
     <div ref={playAreaRef} className="bg-card border border-border rounded-2xl p-5 scroll-mt-24">
-      <h2 className="font-display font-bold text-base text-foreground mb-3">🧠 Test Yourself</h2>
+      <h2 className="flex items-center gap-2 font-display font-bold text-base text-foreground mb-3"><IconChip icon={Brain} size="heading" />Test Yourself</h2>
 
       {finished ? (
         <div className="text-center py-2">
