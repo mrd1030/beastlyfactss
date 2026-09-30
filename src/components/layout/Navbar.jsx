@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
+import PixelIcon from '@/components/icons/PixelIcon';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from '@/lib/motion-safe';
 import { Menu, X, Moon, Sun, ChevronDown, Instagram, Search, Youtube } from 'lucide-react';
@@ -292,9 +293,9 @@ export default function Navbar() {
             <div className="p-4 max-h-[calc(100vh_-_3.5rem_-_3.5rem_-_0.75rem_-_var(--safe-area-inset-top)_-_var(--safe-area-inset-bottom))] sm:max-h-[70vh] overflow-y-auto overscroll-contain custom-scrollbar">
               <div className="space-y-1">
                 <p className={`${groupLabelClass} pt-1`}>Keep a pet</p>
-                {[{ to: '/guides/', emoji: '\ud83d\udcd6', label: 'Care guides' }, { to: '/blog/', emoji: '\ud83d\udcf0', label: 'Articles' }, { to: '/encyclopedia/', emoji: '\ud83d\udcda', label: 'Encyclopedia' }, { to: '/gear/', emoji: '\ud83d\uded2', label: 'Gear' }, { to: '/care-packages/', emoji: '\ud83d\udce6', label: 'Care packages' }].map(item => (
+                {[{ to: '/guides/', icon: 'guides', label: 'Care guides' }, { to: '/blog/', icon: 'articles', label: 'Articles' }, { to: '/encyclopedia/', icon: 'encyclopedia', label: 'Encyclopedia' }, { to: '/gear/', icon: 'gear', label: 'Gear' }, { to: '/care-packages/', icon: 'packages', label: 'Care packages' }].map(item => (
                   <Link key={item.to} to={item.to} onClick={handleMenuNav} className={menuLinkClass(linkActive(location.pathname, item.to))}>
-                    <span>{item.emoji}</span>{item.label}
+                    <PixelIcon name={item.icon} className="w-5 h-5 flex-shrink-0" />{item.label}
                   </Link>
                 ))}
                 <button onClick={() => setDigestOpen(!digestOpen)} className="w-full flex items-center justify-between px-4 py-2 text-sm font-body text-muted-foreground hover:text-foreground">
@@ -310,27 +311,27 @@ export default function Navbar() {
                   </div>
                 )}
                 <p className={groupLabelClass}>Learn something wild</p>
-                {[{ to: '/facts/', emoji: '\u26a1', label: 'Facts' }, { to: '/fact-files/', emoji: '\ud83d\udd0d', label: 'Fact files' }, { to: '/beastlypedia/', emoji: '\ud83d\udc3e', label: 'Beastlypedia' }, { to: '/animal-days/', emoji: '\ud83d\udcc5', label: 'Animal days' }, { to: '/gallery/', emoji: '\ud83d\udcf8', label: 'Gallery' }].map(item => (
+                {[{ to: '/facts/', icon: 'facts', label: 'Facts' }, { to: '/fact-files/', icon: 'factFiles', label: 'Fact files' }, { to: '/beastlypedia/', icon: 'beastlypedia', label: 'Beastlypedia' }, { to: '/animal-days/', icon: 'animalDays', label: 'Animal days' }, { to: '/gallery/', icon: 'gallery', label: 'Gallery' }].map(item => (
                   <Link key={item.to} to={item.to} onClick={handleMenuNav} className={menuLinkClass(linkActive(location.pathname, item.to))}>
-                    <span>{item.emoji}</span>{item.label}
+                    <PixelIcon name={item.icon} className="w-5 h-5 flex-shrink-0" />{item.label}
                   </Link>
                 ))}
                 <p className={groupLabelClass}>Play</p>
-                {[{ to: '/beastle/', emoji: '🔤', label: 'Beastle' }, { to: '/critter-keeper/', emoji: '🦎', label: 'Critter Keeper' }, { to: '/quiz/', emoji: '\ud83c\udfaf', label: 'Quizzes' }, { to: '/chronicles/dex/', emoji: '\ud83d\udcdc', label: 'Chronicles' }].map(item => (
+                {[{ to: '/beastle/', icon: 'beastle', label: 'Beastle' }, { to: '/critter-keeper/', icon: 'critterKeeper', label: 'Critter Keeper' }, { to: '/quiz/', icon: 'quizzes', label: 'Quizzes' }, { to: '/chronicles/dex/', icon: 'chronicles', label: 'Chronicles' }].map(item => (
                   <Link key={item.to} to={item.to} onClick={handleMenuNav} className={menuLinkClass(linkActive(location.pathname, item.to))}>
-                    <span>{item.emoji}</span>{item.label}
+                    <PixelIcon name={item.icon} className="w-5 h-5 flex-shrink-0" />{item.label}
                   </Link>
                 ))}
                 <p className={groupLabelClass}>Tools</p>
-                {[{ to: '/exotic-pet-laws/', emoji: '\u2696\ufe0f', label: 'Is it legal?' }, { to: '/pack/', emoji: '\u2764\ufe0f', label: 'My Pack' }, { to: '/search/', emoji: '\ud83d\udd0e', label: 'Search' }, { to: '/feed/', emoji: '\ud83d\udcf1', label: 'Feed' }].map(item => (
+                {[{ to: '/exotic-pet-laws/', icon: 'legal', label: 'Is it legal?' }, { to: '/pack/', icon: 'pack', label: 'My Pack' }, { to: '/search/', icon: 'search', label: 'Search' }, { to: '/feed/', icon: 'feed', label: 'Feed' }].map(item => (
                   <Link key={item.to} to={item.to} onClick={handleMenuNav} className={menuLinkClass(linkActive(location.pathname, item.to))}>
-                    <span>{item.emoji}</span>{item.label}
+                    <PixelIcon name={item.icon} className="w-5 h-5 flex-shrink-0" />{item.label}
                   </Link>
                 ))}
                 <p className={groupLabelClass}>The site</p>
-                {[{ to: '/about/', emoji: '\ud83e\udd81', label: 'About' }, { to: '/contact/', emoji: '\ud83d\udc8c', label: 'Contact' }, { to: '/donate/', emoji: '\u2764\ufe0f', label: 'Support us' }].map(item => (
+                {[{ to: '/about/', icon: 'about', label: 'About' }, { to: '/contact/', icon: 'contact', label: 'Contact' }, { to: '/donate/', icon: 'support', label: 'Support us' }].map(item => (
                   <Link key={item.to} to={item.to} onClick={handleMenuNav} className={menuLinkClass(linkActive(location.pathname, item.to))}>
-                    <span>{item.emoji}</span>{item.label}
+                    <PixelIcon name={item.icon} className="w-5 h-5 flex-shrink-0" />{item.label}
                   </Link>
                 ))}
               </div>
