@@ -434,6 +434,6 @@ html, body {
 @media (min-width: 768px) {
   /* Padding, not margin: a margin would collapse through the header and
      carry the badge down with it. */
-  .page-badge ~ :is(h1, :has(h1)) { padding-top: 8px; }
+  .page-badge ~ :is(h1, :has(h1)) { padding-top: 4px; }
   .page-badge ~ :not(h1):not(:has(h1)) { clear: left; }
 }

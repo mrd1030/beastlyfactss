@@ -19,7 +19,7 @@ const SOLID = {
 };
 
 const SIZES = {
-  hero: { box: 'w-14 h-14 rounded-2xl shadow-sm', icon: 'w-7 h-7', stroke: 2, solid: true },
+  hero: { box: 'w-14 h-14 md:w-12 md:h-12 rounded-2xl shadow-sm', icon: 'w-7 h-7 md:w-6 md:h-6', stroke: 2, solid: true },
   heading: { box: 'w-8 h-8 rounded-lg', icon: 'w-[18px] h-[18px]', stroke: 2.25 },
   row: { box: 'w-11 h-11 rounded-xl', icon: 'w-[22px] h-[22px]', stroke: 2 },
   empty: { box: 'w-16 h-16 rounded-full', icon: 'w-8 h-8', stroke: 1.5 },
@@ -29,7 +29,7 @@ const SIZES = {
 // the full width, and beside the title and subtitle from md up, where a
 // badge above would float in the empty width.
 export function PageBadge({ icon, color = 'teal' }) {
-  return <IconChip icon={icon} color={color} size="hero" className="page-badge mb-3 md:float-left md:mr-4" />;
+  return <IconChip icon={icon} color={color} size="hero" className="page-badge mb-3 md:float-left md:mr-3" />;
 }
 
 export default function IconChip({ icon: Icon, color = 'teal', size = 'row', className = '' }) {
