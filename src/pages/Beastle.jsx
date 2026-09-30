@@ -691,8 +691,10 @@ function HelpChip({ label, after, guesses, used, available, onUse }) {
   );
 }
 
-function HelpStrip({ entry, guesses, done, clueShown, hintIndex, onClue, onHint }) {
-  const clue = useMemo(() => clueFor(entry), [entry]);
+// Unlimited keeps its own anytime clue in HelpButton, so it passes letterOnly.
+function HelpStrip({ entry, guesses, done, clueShown, hintIndex, onClue, onHint, letterOnly = false }) {
+  const fact = useMemo(() => clueFor(entry), [entry]);
+  const clue = letterOnly ? null : fact;
   const nextLetter = firstUngreened(entry.answer, guesses);
   const letterUsed = hintIndex != null;
   return (
@@ -1139,12 +1141,13 @@ export default function Beastle() {
               words={words}
               onSubmit={submitUnlimited}
             >
-              <Hint
+              <HelpStrip
+                letterOnly
                 entry={unlimitedEntry}
                 guesses={unlimited.current.guesses}
                 done={unlimited.current.done}
                 hintIndex={unlimited.current.hintIndex}
-                onUse={takeUnlimitedHint}
+                onHint={takeUnlimitedHint}
               />
             </Game>
             {!unlimited.current.done && (
