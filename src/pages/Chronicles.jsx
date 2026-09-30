@@ -14,9 +14,11 @@ import ReadingProgressBar from '@/components/blog/ReadingProgressBar';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 import LocalImage from '@/components/shared/LocalImage';
 import { pickWithinLimit, TITLE_MAX } from '@/lib/utils/seo';
-import { FeatherText as BadgeIcon } from '@/components/icons/labIcons';
+import { FeatherText, FeatherText as BadgeIcon } from '@/components/icons/labIcons';
 import IconChip, { PageBadge } from '@/components/shared/IconChip';
 import { Feather } from 'lucide-react';
+import { Newspaper } from 'lucide-react';
+import { ImageOff } from 'lucide-react';
 
 // Story titles all start with "Chronicles of <character>:" - the sidebar and
 // cards drop that prefix so the episode name is what stands out.
@@ -206,7 +208,7 @@ function StoryCard({ story, seriesId, part, index }) {
           {story.image ? (
             <LocalImage src={story.image} alt={story.imageAlt || story.title} className="w-full h-full object-cover" loading="lazy" />
           ) : (
-            <div className="w-full h-full flex items-center justify-center text-2xl">📖</div>
+            <div className="w-full h-full flex items-center justify-center"><ImageOff className="w-6 h-6 text-muted-foreground/60" aria-hidden="true" /></div>
           )}
         </div>
         <div className="min-w-0">
@@ -340,7 +342,7 @@ function ChroniclesSidebar({ bySeries, activeSeriesId, activePart }) {
   return (
     <div className="lg:sticky lg:top-16 self-start max-h-[calc(100vh-6rem)] overflow-y-auto custom-scrollbar-hide pb-4 space-y-5">
       <div className="bg-card border border-border rounded-2xl p-5">
-        <h3 className="font-display font-bold text-sm text-foreground mb-3">📖 All Stories</h3>
+        <h3 className="flex items-center gap-1.5 font-display font-bold text-sm text-foreground mb-3"><FeatherText className="w-4 h-4 text-secondary" aria-hidden="true" />All Stories</h3>
         <div className="space-y-4">
           {CHRONICLES_SERIES.map(s => (
             <div key={s.id}>
@@ -380,7 +382,7 @@ function ChroniclesSidebar({ bySeries, activeSeriesId, activePart }) {
       </div>
 
       <Link to="/blog/" className="block bg-card border border-border rounded-2xl p-5 hover:border-secondary/40 transition-colors group">
-        <p className="text-xs font-body font-bold text-secondary mb-1">📰 The Critter Digest</p>
+        <p className="flex items-center gap-1.5 text-xs font-body font-bold text-secondary mb-1"><Newspaper className="w-3.5 h-3.5" aria-hidden="true" />The Critter Digest</p>
         <p className="text-xs text-muted-foreground font-body leading-relaxed">
           Care guides, husbandry deep-dives, and fun facts - the main Beastly Facts blog.
         </p>

@@ -27,12 +27,14 @@ import { seriesForSlug, chroniclesPath } from '@/lib/chronicles';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 import { SearchX } from 'lucide-react';
 import IconChip from '@/components/shared/IconChip';
+import { CalendarDays, Siren, Newspaper, ShoppingCart, ListChecks, CircleHelp, Library, Scale, Sparkles, Lightbulb, House, Utensils, Gamepad2, Pill } from 'lucide-react';
+import { FeatherText } from '@/components/icons/labIcons';
 
 const sectionMeta = [
-  { key: 'housing',    icon: '🏠', label: 'Housing & Setup' },
-  { key: 'diet',       icon: '🥗', label: 'Diet & Feeding' },
-  { key: 'enrichment', icon: '🎮', label: 'Enrichment & Handling' },
-  { key: 'health',     icon: '💊', label: 'Health & Common Issues' },
+  { key: 'housing',    icon: House, label: 'Housing & Setup' },
+  { key: 'diet',       icon: Utensils, label: 'Diet & Feeding' },
+  { key: 'enrichment', icon: Gamepad2, label: 'Enrichment & Handling' },
+  { key: 'health',     icon: Pill, label: 'Health & Common Issues' },
 ];
 
 export default function GuideDetail() {
@@ -399,7 +401,7 @@ export default function GuideDetail() {
             {/* Fun fact */}
             <div className="bg-secondary/5 border border-secondary/20 rounded-xl px-4 py-3">
               <p className="text-sm font-body text-foreground">
-                <span className="font-body font-bold text-secondary">🤓 Did you know?</span>
+                <span className="inline-flex items-center gap-1.5 font-body font-bold text-secondary"><Lightbulb className="w-3.5 h-3.5" aria-hidden="true" />Did you know?</span>
                 {` ${guide.funFact}`}
               </p>
             </div>
@@ -419,7 +421,7 @@ export default function GuideDetail() {
             {isRouter && (
               <div className="bg-card border border-border rounded-2xl p-5">
                 <h2 className="font-display font-bold text-base text-foreground mb-2 flex items-center gap-2">
-                  🗓️ The first week
+                  <IconChip icon={CalendarDays} color="orange" size="heading" />The first week
                 </h2>
                 {guide.firstWeek.intro && (
                   <p className="text-sm text-muted-foreground font-body mb-4">{guide.firstWeek.intro}</p>
@@ -445,7 +447,7 @@ export default function GuideDetail() {
             {isRouter && guide.emergencyCard && (
               <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-5">
                 <h2 className="font-display font-bold text-base text-foreground mb-2 flex items-center gap-2">
-                  🚨 Emergency card
+                  <IconChip icon={Siren} color="orange" size="heading" />Emergency card
                 </h2>
                 {/* The heading is per hub (docs/RULES.md, Hubs): "call the vet" is
                     right for a rabbit and wrong for a shrimp, whose cost guide says
@@ -494,7 +496,7 @@ export default function GuideDetail() {
             {isRouter && (
               <div className="bg-card border border-border rounded-2xl p-5">
                 <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
-                  📰 Where to go next
+                  <IconChip icon={Newspaper} color="orange" size="heading" />Where to go next
                 </h2>
                 <div className="divide-y divide-border/60">
                   {guide.routes.map(({ slug, line }) => (
@@ -513,7 +515,7 @@ export default function GuideDetail() {
             {isRouter && guide.buyList?.length > 0 && (
               <div className="bg-card border border-border rounded-2xl p-5">
                 <h2 className="font-display font-bold text-sm text-foreground mb-4 flex items-center gap-2">
-                  🛒 What to buy
+                  <IconChip icon={ShoppingCart} color="orange" size="heading" />What to buy
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   {guide.buyList.map((item) => {
@@ -568,7 +570,7 @@ export default function GuideDetail() {
             {!isRouter && sectionMeta.map(({ key, icon, label }) => (
               <div key={key} className="bg-card border border-border rounded-2xl p-5">
                 <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
-                  {`${icon} ${label}`}
+                  <IconChip icon={icon} color="orange" size="heading" />{label}
                 </h2>
                 <div className="text-sm text-muted-foreground font-body leading-relaxed space-y-3">
                   {guide.sections[key].split('\n\n').map((para, i) => (
@@ -582,7 +584,7 @@ export default function GuideDetail() {
             {!isRouter && (
             <div className="bg-card border border-border rounded-2xl p-5">
               <h2 className="font-display font-bold text-sm text-foreground mb-4 flex items-center gap-2">
-                ✅ Complete Care Checklist
+                <IconChip icon={ListChecks} color="orange" size="heading" />Complete Care Checklist
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {guide.sections.checklist.map((item, i) => (
@@ -602,7 +604,7 @@ export default function GuideDetail() {
             {guide.faqs?.length > 0 && (
               <div className="bg-card border border-border rounded-2xl p-5">
                 <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
-                  ❓ Frequently Asked Questions
+                  <IconChip icon={CircleHelp} color="orange" size="heading" />Frequently Asked Questions
                 </h2>
                 <div className="space-y-1">
                   {guide.faqs.map((faq, i) => (
@@ -640,8 +642,8 @@ export default function GuideDetail() {
             {/* Encyclopedia link */}
             {encAnimal && (
               <div className="bg-card border border-border rounded-2xl p-5">
-                <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
-                  📚 Encyclopedia
+                <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3 flex items-center gap-1.5">
+                  <Library className="w-3.5 h-3.5" aria-hidden="true" />Encyclopedia
                 </p>
                 <Link to={`/encyclopedia/animal/${encAnimal.id}/`} state={{ returnTo: location.state?.returnTo || '/guides/' }} className="group block">
                   <div className="flex items-start gap-3 mb-3">
@@ -672,7 +674,7 @@ export default function GuideDetail() {
             {carePackage && (
               <div className="bg-secondary/5 border border-secondary/20 rounded-2xl p-5">
                 <p className="text-xs font-body font-semibold text-secondary uppercase tracking-wide mb-3 flex items-center gap-1.5">
-                  🖨️ Printable Guide
+                  <Printer className="w-3.5 h-3.5" aria-hidden="true" />Printable Guide
                 </p>
                 <Link to={carePackage.storefront === 'stripe' ? `/care-packages/${carePackage.id}/` : '/care-packages/store/'} className="group block">
                   <div className="flex items-start gap-3 mb-3">
@@ -701,8 +703,8 @@ export default function GuideDetail() {
             {/* Legal guide, kept above and apart from the deep-dive list */}
             {legalArticles.length > 0 && (
               <div className="bg-card border border-border rounded-2xl p-5">
-                <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
-                  ⚖️ Legal Guide
+                <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3 flex items-center gap-1.5">
+                  <Scale className="w-3.5 h-3.5" aria-hidden="true" />Legal Guide
                 </p>
                 <div className="space-y-3">
                   {legalArticles.map(article => (
@@ -722,7 +724,7 @@ export default function GuideDetail() {
             {/* Related short story */}
             {guide.relatedStory && (
               <div className="bg-secondary/5 border border-secondary/20 rounded-2xl p-5">
-                <p className="text-xs font-body font-bold text-secondary mb-2">📖 Short Story</p>
+                <p className="flex items-center gap-1.5 text-xs font-body font-bold text-secondary mb-2"><FeatherText className="w-3.5 h-3.5" aria-hidden="true" />Short Story</p>
                 <p className="text-xs text-muted-foreground font-body mb-2">{`There's a whole fiction series about a ${guide.name.toLowerCase()}:`}</p>
                 <Link
                   to={seriesForSlug(guide.relatedStory.slug) ? chroniclesPath(seriesForSlug(guide.relatedStory.slug).id) : `/blog/${guide.relatedStory.slug}/`}
@@ -738,8 +740,8 @@ export default function GuideDetail() {
             {/* Related fun facts */}
             {relatedFacts.length > 0 && (
               <div className="bg-card border border-border rounded-2xl p-5">
-                <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
-                  🤩 Fun Facts
+                <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3 flex items-center gap-1.5">
+                  <Sparkles className="w-3.5 h-3.5" aria-hidden="true" />Fun Facts
                 </p>
                 <div className="space-y-3">
                   {relatedFacts.map(fact => (
@@ -776,7 +778,7 @@ export default function GuideDetail() {
                   to="/facts/"
                   className="flex items-center gap-2 text-sm font-body font-semibold text-foreground hover:text-secondary transition-colors py-1"
                 >
-                  <span className="text-base">🤩</span>
+                  <Sparkles className="w-4 h-4 text-secondary" aria-hidden="true" />
                   Animal Fun Facts
                   <ChevronRight className="w-3.5 h-3.5 ml-auto" />
                 </Link>

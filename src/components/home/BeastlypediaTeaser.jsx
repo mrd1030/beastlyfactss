@@ -8,6 +8,8 @@ import LocalImage from '@/components/shared/LocalImage';
 // about 5KB, against roughly 40KB for the data modules themselves. See that
 // script for why this is a separate file from beastlypedia-index.json.
 import beastfiles from '@/lib/generated/beastlypedia-teaser.json';
+import { FoxFaceTail } from '@/components/icons/labIcons';
+import IconChip from '@/components/shared/IconChip';
 
 // Four, matching EncyclopediaTeaser's row. Each card renders a 640x480 card
 // variant, and rendering every Beastfile up front is the same "improve image
@@ -40,7 +42,7 @@ export default function BeastlypediaTeaser() {
           className="flex items-end justify-between mb-5"
         >
           <div>
-            <span className="text-2xl block mb-1">🗂️</span>
+            <IconChip icon={FoxFaceTail} color="teal" size="row" className="mb-2" />
             <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
               Beastlypedia
             </h2>

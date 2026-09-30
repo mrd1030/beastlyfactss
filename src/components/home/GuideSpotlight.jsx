@@ -13,6 +13,8 @@ import guidesIndex from '@/lib/generated/guides-index.json';
 import { difficultyColor } from '@/lib/data/encyclopedia/meta';
 import { hashString } from '@/lib/utils/seededShuffle';
 import LocalImage from '@/components/shared/LocalImage';
+import { BookOpen } from 'lucide-react';
+import IconChip from '@/components/shared/IconChip';
 
 // One guide per pet type so the sample reflects the site's actual range
 // instead of whichever category happens to sit first in the index. Covers
@@ -68,7 +70,7 @@ export default function GuideSpotlight() {
           className="flex items-end justify-between mb-6"
         >
           <div>
-            <span className="text-2xl block mb-1">📖</span>
+            <IconChip icon={BookOpen} color="orange" size="row" className="mb-2" />
             <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
               Care guides
             </h2>

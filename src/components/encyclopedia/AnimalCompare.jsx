@@ -51,7 +51,7 @@ export default function AnimalCompare({ animal }) {
           onChange={(e) => setCompareId(e.target.value)}
           className="text-xs font-body font-semibold bg-muted border border-border rounded-lg px-2.5 py-1.5 text-foreground max-w-[55%]"
         >
-          <option value="human">🧑 vs Human</option>
+          <option value="human">vs Human</option>
           {groups.map(({ category, animals }) => (
             <optgroup key={category} label={category}>
               {animals.map(a => (

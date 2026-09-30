@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
+import { CircleCheck } from 'lucide-react';
+import IconChip from '@/components/shared/IconChip';
 
 export default function BeehiivSubscribe() {
   const [email, setEmail] = useState('');
@@ -79,7 +81,7 @@ export default function BeehiivSubscribe() {
               <X className="w-5 h-5" />
             </button>
 
-            <div className="text-6xl mb-4">🎉</div>
+            <IconChip icon={CircleCheck} color="teal" size="row" className="mb-4" />
             <h3 className="font-display font-bold text-2xl mb-3">You're Subscribed!</h3>
             <p className="text-muted-foreground mb-6">
               Thank you! Your subscription is now active.<br />

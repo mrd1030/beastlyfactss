@@ -21,6 +21,7 @@ import { truncateDescription } from '@/lib/utils/truncate';
 import beastlypediaContent from '@/lib/generated/beastlypedia-content.json';
 import { SearchX } from 'lucide-react';
 import IconChip from '@/components/shared/IconChip';
+import { ImageOff } from 'lucide-react';
 
 const SITE = 'https://beastlyfacts.com';
 
@@ -172,7 +173,7 @@ export default function BeastfileDetail() {
             />
           ) : (
             <div className="w-full aspect-[3/2] sm:aspect-[16/9] bg-muted flex flex-col items-center justify-center gap-2 border-b-2 border-dashed border-border">
-              <span className="text-4xl">📷</span>
+              <ImageOff className="w-10 h-10 text-muted-foreground/60" aria-hidden="true" />
               <span className="text-xs font-body font-bold uppercase tracking-wider text-muted-foreground">
                 Hero image pending
               </span>
@@ -295,7 +296,7 @@ export default function BeastfileDetail() {
             now, and a card on a card just reads as a rendering mistake. */}
         {(linkedFacts.length > 0 || funFacts?.length > 0) && (
           <div className="mt-4 bg-muted/50 border border-border/60 rounded-2xl p-5">
-            <h2 className="font-display font-bold text-base text-foreground mb-3">🤯 Fun Facts</h2>
+            <h2 className="flex items-center gap-2 font-display font-bold text-base text-foreground mb-3"><IconChip icon={Sparkles} color="teal" size="heading" />Fun Facts</h2>
 
             {linkedFacts.length > 0 ? (
               // The real entries from the fact database. Writing these a second

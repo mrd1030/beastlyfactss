@@ -19,6 +19,8 @@ import { trackSearch } from '@/lib/analytics';
 // whole page. A static import resolves synchronously and identically on
 // both sides, so there's no fetch-timing race left to mismatch.
 import articlesIndex from '@/lib/generated/articles-index.json';
+import { LayoutGrid } from 'lucide-react';
+import IconChip from '@/components/shared/IconChip';
 
 // Only categories with enough MDX content to fill this browser's 6-article
 // preview without looking sparse. Still excluded for that reason: comparisons,
@@ -98,7 +100,7 @@ export default function CategoryBrowse() {
           viewport={{ once: true }}
           className="mb-6"
         >
-          <span className="text-2xl block mb-1">🐾</span>
+          <IconChip icon={LayoutGrid} color="teal" size="row" className="mb-2" />
           <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
             The Beastly Hub
           </h2>

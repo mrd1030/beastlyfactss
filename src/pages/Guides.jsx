@@ -13,9 +13,10 @@ import BrowseRow from '@/components/shared/BrowseRow';
 import { groupGuides } from '@/lib/data/guideGroups';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 import { trackEvent } from '@/lib/analytics';
-import { BookOpen as BadgeIcon } from 'lucide-react';
+import { BookOpen, BookOpen as BadgeIcon } from 'lucide-react';
 import IconChip, { PageBadge } from '@/components/shared/IconChip';
 import { SearchX } from 'lucide-react';
+import { Library } from 'lucide-react';
 
 const guideFilters = [
   { label: 'All', emoji: '🐾' },
@@ -170,8 +171,8 @@ export default function Guides() {
           </motion.div>
           <div className="flex gap-2 mt-5 bg-muted/60 border border-border rounded-2xl p-1.5 max-w-sm">
             {[
-              { id: 'encyclopedia', label: '📚 Encyclopedia' },
-              { id: 'guides', label: '📖 Care Guides' },
+              { id: 'encyclopedia', label: 'Encyclopedia', icon: Library },
+              { id: 'guides', label: 'Care Guides', icon: BookOpen },
             ].map(tab => {
               const destination = tab.id === 'encyclopedia'
                 ? (activeFilter === 'All' ? '/encyclopedia/' : `/encyclopedia/category/${toSlug(activeFilter)}/`)
@@ -186,7 +187,7 @@ export default function Guides() {
                     tab.id === 'guides' ? 'bg-card border border-border shadow-sm text-foreground' : 'text-muted-foreground hover:text-foreground'
                   }`}
                 >
-                  {tab.label}
+                  <span className="inline-flex items-center justify-center gap-1.5">{React.createElement(tab.icon, { className: 'w-3.5 h-3.5', 'aria-hidden': true })}{tab.label}</span>
                 </Link>
               );
             })}

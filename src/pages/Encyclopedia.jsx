@@ -14,14 +14,15 @@ import { catGuides } from '@/lib/data/guides/cats';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 import CrossLinkCta from '@/components/shared/CrossLinkCta';
 import { trackEvent } from '@/lib/analytics';
-import { Library as BadgeIcon } from 'lucide-react';
+import { Library, Library as BadgeIcon } from 'lucide-react';
 import IconChip, { PageBadge } from '@/components/shared/IconChip';
 import { SearchX } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
 
 // Tabs
 const TABS = [
-  { id: 'encyclopedia', label: '📚 Encyclopedia' },
-  { id: 'guides', label: '📖 Care Guides' },
+  { id: 'encyclopedia', label: 'Encyclopedia', icon: Library },
+  { id: 'guides', label: 'Care Guides', icon: BookOpen },
 ];
 
 const guideFilters = [
@@ -241,7 +242,7 @@ export default function Encyclopedia() {
                     activeTab === tab.id ? 'bg-card border border-border shadow-sm text-foreground' : 'text-muted-foreground hover:text-foreground'
                   }`}
                 >
-                  {tab.label}
+                  <span className="inline-flex items-center justify-center gap-1.5">{React.createElement(tab.icon, { className: 'w-3.5 h-3.5', 'aria-hidden': true })}{tab.label}</span>
                 </Link>
               );
             })}

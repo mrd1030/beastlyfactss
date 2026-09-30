@@ -15,13 +15,20 @@ import NotificationOptIn from '@/components/pack/NotificationOptIn';
 import QuizTradingCard from '@/components/pack/QuizTradingCard';
 import AchievementDialog from '@/components/pack/AchievementDialog';
 import BeastleCard from '@/components/beastle/BeastleCard';
+import { Trophy, Bookmark } from 'lucide-react';
+import { TargetArrow } from '@/components/icons/labIcons';
+import IconChip, { PageBadge } from '@/components/shared/IconChip';
+import PixelIcon from '@/components/icons/PixelIcon';
+import { BookOpen, Library, Newspaper } from 'lucide-react';
+import { FoxFaceTail } from '@/components/icons/labIcons';
 
 
+// Icons match the menu: book, library, fox, newspaper.
 const CONTENT_TYPE_META = {
-  guide: { emoji: '📖', label: 'Guide' },
-  encyclopedia: { emoji: '🦎', label: 'Encyclopedia' },
-  beastlypedia: { emoji: '🎴', label: 'Beastfile' },
-  article: { emoji: '📰', label: 'Article' },
+  guide: { icon: BookOpen, label: 'Guide' },
+  encyclopedia: { icon: Library, label: 'Encyclopedia' },
+  beastlypedia: { icon: FoxFaceTail, label: 'Beastfile' },
+  article: { icon: Newspaper, label: 'Article' },
 };
 
 export default function Pack() {
@@ -87,7 +94,7 @@ export default function Pack() {
       </Helmet>
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-          <span className="text-3xl mb-2 block">❤️</span>
+          <PageBadge icon={Heart} color="teal" />
           <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">
             My Beast Pack
           </h1>
@@ -99,7 +106,7 @@ export default function Pack() {
         {/* Achievements */}
         <div className="mt-10">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="font-display font-bold text-xl text-foreground">🏆 Achievements</h2>
+            <h2 className="flex items-center gap-2 font-display font-bold text-xl text-foreground"><IconChip icon={Trophy} color="teal" size="heading" />Achievements</h2>
             {streak >= 2 && (
               <span className="text-xs font-body font-bold text-secondary bg-secondary/10 px-3 py-1.5 rounded-full">
                 {`🔥 ${streak}-day streak`}
@@ -131,7 +138,7 @@ export default function Pack() {
 
         {/* Beastle stats and the field journal the bonus round fills */}
         <div className="mt-10 max-w-3xl">
-          <h2 className="font-display font-bold text-xl text-foreground mb-4">🔤 Beastle</h2>
+          <h2 className="flex items-center gap-2 font-display font-bold text-xl text-foreground mb-4"><PixelIcon name="beastle" className="w-7 h-7" />Beastle</h2>
           <BeastleCard showJournal />
         </div>
 
@@ -139,7 +146,7 @@ export default function Pack() {
 {savedQuizResults.length > 0 && (
   <div className="mt-10 mb-8">
     <div className="flex items-baseline gap-2 mb-4">
-      <h2 className="font-display font-bold text-xl text-foreground">🧩 Saved Quiz Results</h2>
+      <h2 className="flex items-center gap-2 font-display font-bold text-xl text-foreground"><IconChip icon={TargetArrow} color="teal" size="heading" />Saved Quiz Results</h2>
       <span className="text-sm text-muted-foreground font-body tabular-nums">
         {savedQuizResults.length}
       </span>
@@ -315,14 +322,14 @@ export default function Pack() {
 {sortedSavedContent.length > 0 && (
   <div className="mt-10 mb-8">
     <div className="flex items-baseline gap-2 mb-4">
-      <h2 className="font-display font-bold text-xl text-foreground">📚 Saved Guides &amp; Articles</h2>
+      <h2 className="flex items-center gap-2 font-display font-bold text-xl text-foreground"><IconChip icon={Bookmark} color="teal" size="heading" />Saved Guides &amp; Articles</h2>
       <span className="text-sm text-muted-foreground font-body tabular-nums">
         {sortedSavedContent.length}
       </span>
     </div>
     <div className="flex flex-col gap-2">
       {sortedSavedContent.map((item) => {
-        const meta = CONTENT_TYPE_META[item.type] || { emoji: '🔖', label: item.type };
+        const meta = CONTENT_TYPE_META[item.type] || { icon: Bookmark, label: item.type };
         const key = `${item.type}-${item.id}`;
         const confirming = confirmingContentKey === key;
         return (
@@ -330,7 +337,7 @@ export default function Pack() {
             key={key}
             className="group flex items-center gap-3 bg-card border border-border rounded-xl pl-3 pr-2 py-2.5 hover:border-secondary/40 transition-colors"
           >
-            <span className="text-xl flex-shrink-0" aria-hidden="true">{meta.emoji}</span>
+            <IconChip icon={meta.icon} color="teal" size="heading" />
             <Link to={item.url} className="min-w-0 flex-1">
               <p className="text-sm font-body font-bold text-foreground truncate">{item.title}</p>
               <p className="text-xs text-muted-foreground font-body truncate">

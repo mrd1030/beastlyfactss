@@ -3,6 +3,8 @@ import { motion } from '@/lib/motion-safe';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
+import { Mail } from 'lucide-react';
+import IconChip from '@/components/shared/IconChip';
 
 export default function Newsletter() {
 
@@ -19,7 +21,7 @@ export default function Newsletter() {
 
                         {/* Left: email promo. Critter Digest is the newsletter name. */}
                         <div>
-                            <span className="text-3xl block mb-3">📰</span>
+                            <IconChip icon={Mail} color="orange" size="row" className="mb-3" />
                             <h2 className="font-display font-bold text-2xl text-foreground mb-1">
                                 Critter Digest
                             </h2>

@@ -10,6 +10,8 @@ import { themedQuizzes } from '@/lib/data/quizzes';
 import { beastfileForPost } from '@/lib/data/beastlypedia';
 import BeehiivSubscribe from './BeehiivSubscribe';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
+import { Compass } from 'lucide-react';
+import { FoxFaceTail, TargetArrow } from '@/components/icons/labIcons';
 
 export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
   const { isFavorite, toggleFavorite } = useFavoritesCtx();
@@ -207,8 +209,8 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
 
       {beastfile && deepDiveArticles.length === 0 && (
         <div className="bg-card border border-border rounded-2xl p-5">
-          <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
-            {`🌍 More on the ${beastfile.name}`}
+          <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3 flex items-center gap-1.5">
+            <FoxFaceTail className="w-3.5 h-3.5" aria-hidden="true" />{`More on the ${beastfile.name}`}
           </p>
           <Link to={`/beastlypedia/${beastfile.id}/`} className="group block">
             <p className="text-xs font-body font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
@@ -224,8 +226,8 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
       {/* Quiz backlink: this article is a question source in these quizzes */}
       {quizBacklinks.length > 0 && (
         <div className="bg-card border border-border rounded-2xl p-5">
-          <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
-            🧩 Quiz Yourself
+          <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3 flex items-center gap-1.5">
+            <TargetArrow className="w-3.5 h-3.5" aria-hidden="true" />Quiz Yourself
           </p>
           <div className="space-y-3">
             {quizBacklinks.map(qz => (
@@ -287,7 +289,7 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
       {/* Random Fact */}
       {randomReady && (
       <div className="bg-card border border-border rounded-2xl p-5">
-        <h3 className="font-display font-bold text-sm text-foreground mb-3">🐾 Random Fact</h3>
+        <h3 className="flex items-center gap-1.5 font-display font-bold text-sm text-foreground mb-3"><Compass className="w-4 h-4 text-secondary" aria-hidden="true" />Random Fact</h3>
         <div className="text-center mb-3">
           <span className="text-3xl">{displayFact.emoji}</span>
         </div>

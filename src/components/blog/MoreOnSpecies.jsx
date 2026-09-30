@@ -1,6 +1,7 @@
 import React from 'react';
 import DeepDiveList from '@/components/shared/DeepDiveList';
 import { primaryGuideId, speciesNameFor } from '@/lib/data/relatedArticles';
+import { Newspaper } from 'lucide-react';
 
 // The curated same-species list (own articles only; the shared "Health and
 // More" material stays in the sidebar), rendered after the FAQ below lg. On
@@ -17,7 +18,7 @@ import { primaryGuideId, speciesNameFor } from '@/lib/data/relatedArticles';
 //
 function speciesLabel(slug) {
   const name = speciesNameFor(slug);
-  return name ? `📰 More on the ${name}` : '📰 More on this topic';
+  return name ? `More on the ${name}` : 'More on this topic';
 }
 
 function hubFor(slug) {
@@ -33,6 +34,7 @@ export default function MoreOnSpecies({ currentSlug, articles, onSelectPost }) {
         articles={articles}
         onSelect={onSelectPost}
         ownTitle={speciesLabel(currentSlug)}
+        ownIcon={Newspaper}
         show="own"
         hub={hubFor(currentSlug)}
       />

@@ -7,6 +7,24 @@ import { CATEGORIES, TOTAL_TERMS } from '@/lib/data/glossaryTerms';
 import { slugify } from '@/lib/utils/slugify';
 import { BookA as BadgeIcon } from 'lucide-react';
 import { PageBadge } from '@/components/shared/IconChip';
+import { BookA, Bird, Dna, Dog, Fish, HeartPulse, House, Microscope, Scale, Stethoscope, Turtle } from 'lucide-react';
+import { Chameleon, Spider } from '@/components/icons/labIcons';
+
+// A line icon per glossary category (ids from src/lib/data/glossaryTerms.js).
+const GLOSSARY_ICONS = {
+  general: House,
+  reptiles: Chameleon,
+  turtles: Turtle,
+  health: Stethoscope,
+  birds: Bird,
+  'dogs-cats': Dog,
+  invertebrates: Spider,
+  aquatic: Fish,
+  legal: Scale,
+  anatomy: HeartPulse,
+  biology: Microscope,
+  genetics: Dna,
+};
 
 const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
@@ -39,7 +57,7 @@ function Highlight({ text, query }) {
   );
 }
 
-function TermCard({ term, showCategory, catEmoji, catLabel, query }) {
+function TermCard({ term, showCategory, catId, catLabel, query }) {
   const id = slugify(term.term);
   return (
     <div
@@ -47,8 +65,9 @@ function TermCard({ term, showCategory, catEmoji, catLabel, query }) {
       className="group px-4 sm:px-5 py-4 scroll-mt-40 transition-colors duration-500 hover:bg-muted/40"
     >
       {showCategory && (
-        <span className="text-[10px] font-body text-muted-foreground uppercase tracking-wider">
-          {`${catEmoji} ${catLabel}`}
+        <span className="inline-flex items-center gap-1 text-[10px] font-body text-muted-foreground uppercase tracking-wider">
+          {React.createElement(GLOSSARY_ICONS[catId] || BookA, { className: 'w-3 h-3', 'aria-hidden': true })}
+          {catLabel}
         </span>
       )}
       <h3 className="font-display font-bold text-base text-foreground mt-0.5 flex items-baseline gap-1.5">
@@ -157,7 +176,7 @@ export default function Glossary() {
         const inTerm = term.term.toLowerCase().includes(q) || (term.aliases || []).some(a => a.toLowerCase().includes(q));
         const inDefinition = term.definition.toLowerCase().includes(q);
         if (inTerm || inDefinition) {
-          results.push({ ...term, catEmoji: cat.emoji, catLabel: cat.label, rank: inTerm ? 0 : 1 });
+          results.push({ ...term, catId: cat.id, catLabel: cat.label, rank: inTerm ? 0 : 1 });
         }
       }
     }
@@ -172,7 +191,7 @@ export default function Glossary() {
     for (const cat of CATEGORIES) {
       for (const term of cat.terms) {
         if (term.term[0].toUpperCase() === activeLetter) {
-          results.push({ ...term, catEmoji: cat.emoji, catLabel: cat.label });
+          results.push({ ...term, catId: cat.id, catLabel: cat.label });
         }
       }
     }
@@ -298,7 +317,7 @@ export default function Glossary() {
                 href={`#${cat.id}`}
                 className="inline-flex items-center gap-1.5 text-xs font-body font-medium pl-2.5 pr-1.5 py-1.5 rounded-full bg-muted hover:bg-primary/10 hover:text-primary transition-colors"
               >
-                <span aria-hidden="true">{cat.emoji}</span>
+                {React.createElement(GLOSSARY_ICONS[cat.id] || BookA, { className: 'w-3.5 h-3.5', 'aria-hidden': true })}
                 {cat.label}
                 <span className="text-[10px] font-bold tabular-nums bg-background/80 text-muted-foreground rounded-full px-1.5 py-px">
                   {cat.terms.length}
@@ -342,7 +361,7 @@ export default function Glossary() {
                     key={t.term}
                     term={t}
                     showCategory
-                    catEmoji={t.catEmoji}
+                    catId={t.catId}
                     catLabel={t.catLabel}
                     query={searchResults ? trimmedQuery : ''}
                   />
@@ -365,9 +384,9 @@ export default function Glossary() {
             <div className="flex items-center gap-3 mb-4">
               <span
                 aria-hidden="true"
-                className="flex-shrink-0 w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-xl"
+                className="flex-shrink-0 w-10 h-10 rounded-xl bg-primary/10 dark:bg-primary/20 text-primary flex items-center justify-center"
               >
-                {cat.emoji}
+                {React.createElement(GLOSSARY_ICONS[cat.id] || BookA, { className: 'w-5 h-5' })}
               </span>
               <div className="min-w-0">
                 <h2 className="font-display font-bold text-xl text-foreground leading-tight">

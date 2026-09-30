@@ -9,6 +9,8 @@ import LocalImage from '@/components/shared/LocalImage';
 // index carries. The full data barrel is 120KB and was loading on the homepage
 // for the sake of eleven numbers.
 import encyclopediaIndex from '@/lib/generated/encyclopedia-index.json';
+import { Library } from 'lucide-react';
+import IconChip from '@/components/shared/IconChip';
 const encyclopediaAnimals = encyclopediaIndex.animals;
 
 const PREVIEW_COUNT = 8;
@@ -68,7 +70,7 @@ export default function EncyclopediaTeaser() {
           className="flex items-end justify-between mb-5"
         >
           <div>
-            <span className="text-2xl block mb-1">📚</span>
+            <IconChip icon={Library} color="teal" size="row" className="mb-2" />
             <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
               Animal Encyclopedia
             </h2>

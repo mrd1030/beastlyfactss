@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 import { facts } from '@/lib/data/facts';
 import FactCard from '../shared/FactCard';
+import { Dice5 } from 'lucide-react';
+import IconChip from '@/components/shared/IconChip';
 
 function rotate(offset) {
   if (!facts.length) return [];
@@ -57,7 +59,7 @@ export default function TrendingFacts({ onOpenFact, onOpenImage }) {
               traffic level there is no honest trending number to compute
               instead. So the heading says what it actually is. */}
           <div>
-            <span className="text-2xl mb-1 block">🎲</span>
+            <IconChip icon={Dice5} color="teal" size="row" className="mb-2" />
             <h2 className="font-display font-bold text-2xl text-foreground">Today&rsquo;s Wild Picks</h2>
             <p className="text-sm text-muted-foreground font-body mt-1">A fresh handful from the fact library, reshuffled every day</p>
           </div>

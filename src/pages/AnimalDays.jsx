@@ -13,6 +13,8 @@ import beastfileTeasers from '@/lib/generated/beastlypedia-teaser.json';
 import CrossLinkCta from '@/components/shared/CrossLinkCta';
 import buildStamp from '@/lib/generated/build-stamp.json';
 import { siteToday } from '@/lib/utils/date';
+import { CalendarDays } from 'lucide-react';
+import { PageBadge } from '@/components/shared/IconChip';
 
 // Membership is the `animalDay` frontmatter flag, not a category, for the same
 // reason Fact Files uses one: a category would make this page a mirror of the
@@ -276,7 +278,7 @@ export default function AnimalDays() {
 
       <div className="mx-auto max-w-4xl">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-8">
-          <span className="mb-1 block text-2xl">📅</span>
+          <PageBadge icon={CalendarDays} color="teal" />
           <h1 className="mb-3 font-display text-3xl font-bold text-foreground sm:text-4xl">
             Animal Days
           </h1>

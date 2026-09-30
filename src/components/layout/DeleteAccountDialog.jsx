@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Trash2, AlertTriangle } from 'lucide-react';
 import { motion, AnimatePresence } from '@/lib/motion-safe';
+import { UserX } from 'lucide-react';
+import IconChip from '@/components/shared/IconChip';
 
 export default function DeleteAccountDialog() {
   const [open, setOpen] = useState(false);
@@ -49,7 +51,7 @@ export default function DeleteAccountDialog() {
             >
               {done ? (
                 <div className="text-center py-4">
-                  <span className="text-5xl block mb-3">👋</span>
+                  <IconChip icon={UserX} color="gray" size="empty" className="mb-3" />
                   <h2 className="font-display font-bold text-lg text-foreground mb-1">Account Deleted</h2>
                   <p className="text-sm text-muted-foreground font-body">Your account has been removed. Goodbye!</p>
                 </div>

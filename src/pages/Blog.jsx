@@ -61,6 +61,9 @@ import ProductCard from '@/components/shared/ProductCard';
 import ProductModal from '@/components/shared/ProductModal';
 import { AFFILIATE_PRODUCTS } from '@/lib/data/affiliateProducts';
 import { SearchX } from 'lucide-react';
+import { CircleHelp, ShoppingCart } from 'lucide-react';
+import { FeatherText } from '@/components/icons/labIcons';
+import { Scale } from 'lucide-react';
 
 const POSTS_PER_PAGE = 10;
 
@@ -489,7 +492,7 @@ export default function Blog() {
               to="/exotic-pet-laws/"
               className="mt-5 flex items-start gap-3 rounded-xl border border-primary/30 bg-primary/5 p-4 transition-colors hover:border-primary/60"
             >
-              <span className="text-xl leading-none" role="img" aria-label="Scales of justice">⚖️</span>
+              <IconChip icon={Scale} color="teal" size="heading" />
               <span>
                 <span className="block font-display font-bold text-sm text-foreground">
                   Start with the interactive map
@@ -622,7 +625,7 @@ export default function Blog() {
             </div>
 
             <Link to="/chronicles/dex/" className="block bg-secondary/5 border border-secondary/20 rounded-2xl p-5 hover:border-secondary/40 transition-colors group">
-              <p className="text-xs font-body font-bold text-secondary mb-1">📖 The Chronicles</p>
+              <p className="flex items-center gap-1.5 text-xs font-body font-bold text-secondary mb-1"><FeatherText className="w-3.5 h-3.5" aria-hidden="true" />The Chronicles</p>
               <p className="text-xs text-muted-foreground font-body leading-relaxed">
                 Short fiction from the Beastly Facts universe - follow Dex and Otis in their own series.
               </p>
@@ -1146,7 +1149,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
             {post.faqs?.length > 0 && (
               <div className="bg-card border border-border rounded-2xl p-5 mt-8">
                 <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
-                  ❓ Frequently Asked Questions
+                  <IconChip icon={CircleHelp} color="orange" size="heading" />Frequently Asked Questions
                 </h2>
                 <div className="space-y-1">
                   {post.faqs.map((faq, i) => (
@@ -1169,7 +1172,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
             {relatedProducts.length > 0 && (
               <div className="mt-8">
                 <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
-                  🛒 Recommended Gear
+                  <IconChip icon={ShoppingCart} color="orange" size="heading" />Recommended Gear
                 </h2>
                 <RecommendedGearGrid key={postSlug} products={relatedProducts} onSelect={setSelectedProduct} />
                 <p className="text-[11px] text-muted-foreground/70 font-body italic mt-3">

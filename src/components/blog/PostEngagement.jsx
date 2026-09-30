@@ -5,6 +5,8 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { toast } from 'sonner';
 import { motion, AnimatePresence } from '@/lib/motion-safe';
+import { CircleCheck } from 'lucide-react';
+import IconChip from '@/components/shared/IconChip';
 
 // AppLayout swaps <RoutedContent /> for <Suspense><RoutedContent /></Suspense>
 // once its `ready` flag flips just after mount, which React treats as a
@@ -586,7 +588,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
         {/* Comment form */}
         {submitted ? (
           <div className="bg-accent/10 border border-accent/20 rounded-2xl p-5 text-center">
-            <span className="text-2xl block mb-2">🐾</span>
+            <IconChip icon={CircleCheck} color="teal" size="row" className="mb-2" />
             <p className="font-body font-bold text-sm text-foreground">Thanks for your comment!</p>
             <p className="text-xs text-muted-foreground font-body mt-1">It'll show up once approved.</p>
             <button onClick={() => setSubmitted(false)} className="text-xs text-secondary mt-3 underline font-body">

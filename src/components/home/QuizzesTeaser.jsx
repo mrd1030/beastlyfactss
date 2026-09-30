@@ -3,6 +3,8 @@ import { motion } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { themedQuizzes } from '@/lib/data/quizzes';
+import { TargetArrow } from '@/components/icons/labIcons';
+import IconChip from '@/components/shared/IconChip';
 
 // Full class strings kept complete (not concatenated at render time) so
 // Tailwind's static scanner can find and generate them.
@@ -50,7 +52,7 @@ export default function QuizzesTeaser() {
           viewport={{ once: true }}
           className="text-center mb-8"
         >
-          <span className="text-3xl mb-2 block">🧩</span>
+          <IconChip icon={TargetArrow} color="gold" size="row" className="mb-3" />
           <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-2">Test Yourself</h2>
           <p className="text-sm text-muted-foreground font-body max-w-md mx-auto">A new themed quiz every other week, plus the classics.</p>
         </motion.div>

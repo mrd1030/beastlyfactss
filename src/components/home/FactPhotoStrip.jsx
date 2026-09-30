@@ -4,6 +4,8 @@ import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 import { facts } from '@/lib/data/facts';
 import { imagePathFor } from '@/lib/data/factImages';
 import LocalImage from '@/components/shared/LocalImage';
+import { Camera } from 'lucide-react';
+import IconChip from '@/components/shared/IconChip';
 
 const STRIP_COUNT = 14;
 
@@ -51,7 +53,7 @@ export default function FactPhotoStrip({ onOpenFact }) {
       <div className="max-w-7xl mx-auto">
         <div className="flex items-end justify-between mb-4">
           <div>
-            <span className="text-2xl mb-1 block">📸</span>
+            <IconChip icon={Camera} color="teal" size="row" className="mb-2" />
             <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
               Fact Photos
             </h2>

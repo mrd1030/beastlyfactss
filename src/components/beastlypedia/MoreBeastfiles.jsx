@@ -6,6 +6,9 @@ import LocalImage from '@/components/shared/LocalImage';
 // against this, rather than repeating each name and image path four more times
 // across beastlypedia-content.json.
 import teaser from '@/lib/generated/beastlypedia-teaser.json';
+import { FoxFaceTail } from '@/components/icons/labIcons';
+import IconChip from '@/components/shared/IconChip';
+import { ImageOff } from 'lucide-react';
 
 const byId = new Map(teaser.map((b) => [b.id, b]));
 
@@ -21,7 +24,7 @@ export default function MoreBeastfiles({ ids }) {
 
   return (
     <section className="mt-4 bg-muted/50 border border-border/60 rounded-2xl p-5">
-      <h2 className="font-display font-bold text-base text-foreground mb-3">🐾 More Beastfiles</h2>
+      <h2 className="flex items-center gap-2 font-display font-bold text-base text-foreground mb-3"><IconChip icon={FoxFaceTail} color="teal" size="heading" />More Beastfiles</h2>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         {items.map((b) => (
           <Link
@@ -40,7 +43,7 @@ export default function MoreBeastfiles({ ids }) {
                   variant="card"
                 />
               ) : (
-                <div className="w-full h-full flex items-center justify-center text-2xl">🐾</div>
+                <div className="w-full h-full flex items-center justify-center"><ImageOff className="w-6 h-6 text-muted-foreground/60" aria-hidden="true" /></div>
               )}
             </div>
             <div className="p-2.5 flex-1">

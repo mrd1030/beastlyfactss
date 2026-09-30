@@ -1,7 +1,21 @@
 import React, { useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
-import { Check, ChevronDown, Download } from 'lucide-react';
+import {
+  Ban, Bath, Check, ChevronDown, CircleDot, ClipboardList, Container, Download, Droplet, Egg, FileText, Fish, Hand,
+  Handshake, HeartHandshake, House, Layers, Leaf, Moon, Rat, Ruler, Salad, Scale, Scissors, Snowflake, Soup, Sun,
+  Thermometer, TriangleAlert, Wheat,
+} from 'lucide-react';
+import { Spider } from '@/components/icons/labIcons';
+
+// The "What's inside" cards keep their emoji in carePackageCopy.js as the
+// key; this turns each into a line icon drawn in the package's own accent.
+const INSIDE_ICONS = {
+  '🧰': ClipboardList, '⚠️': TriangleAlert, '🥗': Salad, '🏠': House, '🥚': Egg, '💧': Droplet, '📐': Ruler,
+  '🪣': Container, '🪟': Moon, '🥣': Soup, '🤲': Hand, '🤝': Handshake, '💞': HeartHandshake, '🐟': Fish,
+  '🏜️': Sun, '🌾': Wheat, '🧊': Snowflake, '❄️': Snowflake, '🛞': CircleDot, '🛁': Bath, '🚫': Ban, '🕸️': Spider,
+  '🐭': Rat, '🐍': Layers, '🌿': Leaf, '🌡️': Thermometer, '✂️': Scissors, '⚖️': Scale, '📄': FileText,
+};
 import { CARE_PACKAGES } from '@/lib/data/carePackages';
 import { getCarePackageCopy } from '@/lib/data/carePackageCopy';
 import { getCarePackageTheme, carePackageThemeCss } from '@/lib/data/carePackageThemes';
@@ -250,7 +264,13 @@ export default function CarePackageProduct() {
             <div className="cp-reveal grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {inside.map(card => (
                 <div key={card.title} className="cp-card rounded-xl p-5">
-                  <p className="text-2xl mb-2" aria-hidden="true">{card.emoji}</p>
+                  <span
+                    className="cp-accent-text inline-flex w-11 h-11 items-center justify-center rounded-xl mb-3"
+                    style={{ background: 'color-mix(in srgb, currentColor 14%, transparent)' }}
+                    aria-hidden="true"
+                  >
+                    {React.createElement(INSIDE_ICONS[card.emoji] || FileText, { className: 'w-[22px] h-[22px]' })}
+                  </span>
                   <h3 className="font-bold mb-1">{card.title}</h3>
                   <p className="cp-muted text-sm">{card.line}</p>
                 </div>

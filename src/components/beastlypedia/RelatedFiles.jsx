@@ -2,6 +2,8 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 import FactFileRow from '@/components/shared/FactFileRow';
+import { FolderSearch } from 'lucide-react';
+import IconChip from '@/components/shared/IconChip';
 
 // Takes already-resolved cards rather than slugs.
 //
@@ -23,7 +25,7 @@ export default function RelatedFiles({ posts, returnTo, returnLabel }) {
 
   return (
     <section className="mt-4 bg-muted/50 border border-border/60 rounded-2xl p-5">
-      <h2 className="font-display font-bold text-base text-foreground mb-3">📁 Related Files</h2>
+      <h2 className="flex items-center gap-2 font-display font-bold text-base text-foreground mb-3"><IconChip icon={FolderSearch} color="teal" size="heading" />Related Files</h2>
       {/* Single column, not the old two-up grid: a folder row is a full-width
           object, with the polaroid hanging off its right edge. */}
       <div className="space-y-5">

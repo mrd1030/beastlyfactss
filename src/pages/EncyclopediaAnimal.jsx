@@ -31,6 +31,8 @@ import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 import LEGAL_BY_ENCYCLOPEDIA_ID from '@/lib/generated/legal-summary.json';
 import { pickWithinLimit, TITLE_MAX } from '@/lib/utils/seo';
 import { SearchX } from 'lucide-react';
+import { Lightbulb, Scale } from 'lucide-react';
+import { FeatherText } from '@/components/icons/labIcons';
 
 function BioField({ label, value }) {
   return (
@@ -288,8 +290,8 @@ export default function EncyclopediaAnimal() {
             {/* Guide CTA */}
             {guide && (
               <div className="bg-card border border-border rounded-2xl p-5">
-                <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
-                  📖 Care Guide
+                <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3 flex items-center gap-1.5">
+                  <BookOpen className="w-3.5 h-3.5" aria-hidden="true" />Care Guide
                 </p>
                 <Link to={`/guides/${guide.id}/`} state={{ returnTo: location.state?.returnTo || '/encyclopedia/' }} className="group block">
                   <div className="flex items-start gap-3 mb-3">
@@ -313,8 +315,8 @@ export default function EncyclopediaAnimal() {
                 was looking at. */}
             {legal && (
               <div className="bg-card border border-border rounded-2xl p-5">
-                <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
-                  ⚖️ Where it is legal
+                <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3 flex items-center gap-1.5">
+                  <Scale className="w-3.5 h-3.5" aria-hidden="true" />Where it is legal
                 </p>
                 <Link to={`/exotic-pet-laws/${legal.id}/`} className="group block">
                   <p className="text-xs text-muted-foreground font-body leading-relaxed mb-3">
@@ -337,8 +339,8 @@ export default function EncyclopediaAnimal() {
                 in one place and reads as its own kind of thing. */}
             {legalArticles.length > 0 && (
               <div className="bg-card border border-border rounded-2xl p-5">
-                <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
-                  ⚖️ Legal Guide
+                <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3 flex items-center gap-1.5">
+                  <Scale className="w-3.5 h-3.5" aria-hidden="true" />Legal Guide
                 </p>
                 <div className="space-y-3">
                   {legalArticles.map(article => (
@@ -365,7 +367,7 @@ export default function EncyclopediaAnimal() {
             {/* Did you know */}
             {guide?.funFact && (
               <div className="bg-secondary/5 border border-secondary/20 rounded-2xl p-5">
-                <p className="text-xs font-body font-bold text-secondary mb-2">🤓 Did You Know?</p>
+                <p className="flex items-center gap-1.5 text-xs font-body font-bold text-secondary mb-2"><Lightbulb className="w-3.5 h-3.5" aria-hidden="true" />Did You Know?</p>
                 <p className="text-sm font-body text-foreground leading-relaxed">{guide.funFact}</p>
               </div>
             )}
@@ -373,7 +375,7 @@ export default function EncyclopediaAnimal() {
             {/* Related short story */}
             {animal.relatedStory && (
               <div className="bg-secondary/5 border border-secondary/20 rounded-2xl p-5">
-                <p className="text-xs font-body font-bold text-secondary mb-2">📖 Short Story</p>
+                <p className="flex items-center gap-1.5 text-xs font-body font-bold text-secondary mb-2"><FeatherText className="w-3.5 h-3.5" aria-hidden="true" />Short Story</p>
                 <p className="text-xs text-muted-foreground font-body mb-2">{`There's a whole fiction series about a ${animal.name.toLowerCase()}:`}</p>
                 <Link
                   to={seriesForSlug(animal.relatedStory.slug) ? chroniclesPath(seriesForSlug(animal.relatedStory.slug).id) : `/blog/${animal.relatedStory.slug}/`}
@@ -404,7 +406,7 @@ export default function EncyclopediaAnimal() {
                   to="/facts/"
                   className="flex items-center gap-2 text-sm font-body font-semibold text-foreground hover:text-secondary transition-colors py-1"
                 >
-                  <span className="text-base">🤩</span>
+                  <Sparkles className="w-4 h-4 text-secondary" aria-hidden="true" />
                   Animal Fun Facts
                   <ChevronRight className="w-3.5 h-3.5 ml-auto" />
                 </Link>

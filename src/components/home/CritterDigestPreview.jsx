@@ -12,6 +12,8 @@ import articlesIndex from '@/lib/generated/articles-index.json';
 import buildStamp from '@/lib/generated/build-stamp.json';
 import { siteToday } from '@/lib/utils/date';
 import { todaysPicks } from '@/lib/utils/rotation';
+import { Newspaper } from 'lucide-react';
+import IconChip from '@/components/shared/IconChip';
 
 export default function CritterDigestPreview() {
   const navigate = useNavigate();
@@ -46,7 +48,7 @@ export default function CritterDigestPreview() {
           className="flex items-end justify-between mb-6"
         >
           <div>
-            <span className="text-2xl block mb-1">📰</span>
+            <IconChip icon={Newspaper} color="orange" size="row" className="mb-2" />
             <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
               Today&rsquo;s reads
             </h2>

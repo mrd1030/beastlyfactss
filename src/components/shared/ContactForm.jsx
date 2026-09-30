@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { CircleCheck } from 'lucide-react';
+import IconChip from '@/components/shared/IconChip';
 
 // Posts to /api/contact in public/_worker.js, which forwards the message to
 // Mike as an ntfy push. Nothing is stored anywhere.
@@ -46,7 +48,7 @@ export default function ContactForm() {
   if (status === 'sent') {
     return (
       <div className="bg-accent/10 border border-accent/20 rounded-2xl p-6 text-center">
-        <span className="text-2xl block mb-2">🐾</span>
+        <IconChip icon={CircleCheck} color="teal" size="row" className="mb-2" />
         <p className="font-body font-bold text-sm text-foreground">Thanks, your message is on its way.</p>
         <p className="text-xs text-muted-foreground font-body mt-1">
           {email ? 'I reply by email, usually within a few days.' : 'You left no email, so I cannot write back, but I will read it.'}

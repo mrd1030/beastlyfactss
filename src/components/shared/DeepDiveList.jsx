@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { rememberDeepDiveGuide } from '@/lib/data/deepDiveContext';
 import { DEEP_DIVE_LIMIT, isSharedDeepDiveArticle } from '@/lib/data/relatedArticles';
+import { BookOpen, HeartPulse, Microscope } from 'lucide-react';
 
 // The Deep Dive sidebar, shared by GuideDetail, EncyclopediaAnimal and the blog
 // sidebar, which all built the same list from the same data and rendered it
@@ -33,8 +34,8 @@ import { DEEP_DIVE_LIMIT, isSharedDeepDiveArticle } from '@/lib/data/relatedArti
 // A generic second heading rather than "More on Birds" on purpose. The class
 // name lives in the guide index, which the blog route does not import and
 // should not start importing 32KB for a label.
-const SHARED_TITLE = '🩺 Health and More';
-const OWN_TITLE = '📰 Deep Dive';
+const SHARED_TITLE = 'Health and More';
+const OWN_TITLE = 'Deep Dive';
 
 // One section: the visible slice, the overflow, and the toggle between them.
 //
@@ -43,7 +44,7 @@ const OWN_TITLE = '📰 Deep Dive';
 // a guide page would quietly cut its outbound links right after
 // scripts/audit-internal-links.mjs was written to watch for exactly that. In
 // the DOM behind a toggle they still count; sliced out of the array they do not.
-function Section({ title, articles, renderLink }) {
+function Section({ title, icon: Icon, articles, renderLink }) {
   const [expanded, setExpanded] = useState(false);
   if (articles.length === 0) return null;
 
@@ -52,7 +53,8 @@ function Section({ title, articles, renderLink }) {
 
   return (
     <div className="bg-card border border-border rounded-2xl p-5">
-      <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+      <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3 flex items-center gap-1.5">
+        {Icon && <Icon className="w-3.5 h-3.5" aria-hidden="true" />}
         {title}
       </p>
       <div className="space-y-3">
@@ -89,7 +91,7 @@ function Section({ title, articles, renderLink }) {
 // hub: { id, name } puts a "<Name> care guide" row at the top of the species
 // list, linking the guide hub page. Article pages have no other visible link
 // to the hub once the prose stops carrying one.
-export default function DeepDiveList({ articles, guideId, onSelect, ownTitle = OWN_TITLE, show = 'both', hub = null }) {
+export default function DeepDiveList({ articles, guideId, onSelect, ownTitle = OWN_TITLE, ownIcon = Microscope, show = 'both', hub = null }) {
   if (!articles || articles.length === 0) return null;
 
   const slugOf = article => article.slug?.current || article._id || article.id;
@@ -128,15 +130,15 @@ export default function DeepDiveList({ articles, guideId, onSelect, ownTitle = O
 
   const hubRow = hub ? (
     <Link key="hub" to={`/guides/${hub.id}/`} className="group block">
-      <p className={textClass}>{`📘 ${hub.name} care guide`}</p>
+      <p className={`${textClass} flex items-center gap-1.5`}><BookOpen className="w-3.5 h-3.5 flex-shrink-0" aria-hidden="true" />{`${hub.name} care guide`}</p>
     </Link>
   ) : null;
   const ownRows = hubRow ? [{ _hub: true }, ...own] : own;
   const renderOwnRow = (item) => (item._hub ? hubRow : renderLink(item));
   return (
     <>
-      {show !== 'shared' && <Section title={ownTitle} articles={ownRows} renderLink={renderOwnRow} />}
-      {show !== 'own' && <Section title={SHARED_TITLE} articles={shared} renderLink={renderLink} />}
+      {show !== 'shared' && <Section title={ownTitle} icon={ownIcon} articles={ownRows} renderLink={renderOwnRow} />}
+      {show !== 'own' && <Section title={SHARED_TITLE} icon={HeartPulse} articles={shared} renderLink={renderLink} />}
     </>
   );
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin } from 'lucide-react';
 import LocalImage from '@/components/shared/LocalImage';
+import { ImageOff } from 'lucide-react';
 
 // The dossier look: the photo sits above the card's own top edge rather than
 // inside it, so each entry reads as a print stuck to a file rather than a
@@ -36,7 +37,7 @@ export default function BeastfileCard({ beastfile }) {
           // Obvious on purpose. A subtle placeholder would let a Beastfile ship
           // looking finished when its hero has not been shot yet.
           <div className="w-full aspect-[4/3] bg-muted flex flex-col items-center justify-center gap-1 border-2 border-dashed border-border">
-            <span className="text-2xl">📷</span>
+            <ImageOff className="w-6 h-6 text-muted-foreground/60" aria-hidden="true" />
             <span className="text-[10px] font-body font-bold uppercase tracking-wider text-muted-foreground">
               Hero image pending
             </span>

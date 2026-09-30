@@ -39,6 +39,7 @@ import DonateButton from '@/components/DonateButton';
 import ContactForm from '@/components/shared/ContactForm';
 import { Mail as BadgeIcon } from 'lucide-react';
 import { PageBadge } from '@/components/shared/IconChip';
+import { Clock } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -231,7 +232,7 @@ export default function Contact() {
           transition={{ delay: 0.2 }}
           className="bg-primary/5 border border-primary/10 rounded-2xl p-6"
         >
-          <p className="font-body font-bold text-sm text-foreground mb-1">📬 Response time</p>
+          <p className="flex items-center gap-1.5 font-body font-bold text-sm text-foreground mb-1"><Clock className="w-4 h-4 text-secondary" aria-hidden="true" />Response time</p>
           <p className="text-xs text-muted-foreground font-body leading-relaxed">
             This site is run by one person who also keeps real live animals - so responses may take a couple of days.
             But every message gets read and appreciated. Whether you've spotted an error, want to suggest a new guide,
