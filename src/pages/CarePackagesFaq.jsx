@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
 import CarePackagesNav from '@/components/shared/CarePackagesNav';
+import { CircleHelp as BadgeIcon } from 'lucide-react';
+import { PageBadge } from '@/components/shared/IconChip';
 
 const TITLE = 'Care Package FAQ | Beastly Facts';
 const DESCRIPTION = 'Answers about format, printing, refunds, and lifetime updates for the Beastly Facts printable care packages, plus what each PDF covers and how delivery works.';
@@ -84,7 +86,7 @@ export default function CarePackagesFaq() {
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block" role="img" aria-label="Question mark">❓</span>
+            <PageBadge icon={BadgeIcon} color="teal" />
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-3">
               Questions before you buy.
             </h1>

@@ -7,13 +7,14 @@ import React from 'react';
 const TINTED = {
   teal: 'bg-primary/15 dark:bg-primary/20 text-primary',
   orange: 'bg-secondary/15 dark:bg-secondary/20 text-secondary',
-  gold: 'bg-accent/25 dark:bg-accent/20 text-accent-ink dark:text-accent',
+  gold: 'bg-[#f39b16]/20 dark:bg-accent/20 text-accent-ink dark:text-accent',
   gray: 'bg-muted text-muted-foreground',
 };
 const SOLID = {
   teal: 'bg-primary text-primary-foreground',
   orange: 'bg-secondary text-secondary-foreground',
-  gold: 'bg-accent text-accent-foreground',
+  // Light mode uses Beastle's amber: the theme's light accent reads as mustard.
+  gold: 'bg-[#f39b16] text-[#113b30] dark:bg-accent dark:text-accent-foreground',
   gray: 'bg-muted text-muted-foreground',
 };
 
@@ -23,6 +24,13 @@ const SIZES = {
   row: { box: 'w-11 h-11 rounded-xl', icon: 'w-[22px] h-[22px]', stroke: 2 },
   empty: { box: 'w-16 h-16 rounded-full', icon: 'w-8 h-8', stroke: 1.5 },
 };
+
+// The page-title badge: above the title on phones, where a long title needs
+// the full width, and beside the title and subtitle from md up, where a
+// badge above would float in the empty width.
+export function PageBadge({ icon, color = 'teal' }) {
+  return <IconChip icon={icon} color={color} size="hero" className="page-badge mb-3 md:float-left md:mr-4" />;
+}
 
 export default function IconChip({ icon: Icon, color = 'teal', size = 'row', className = '' }) {
   const s = SIZES[size];

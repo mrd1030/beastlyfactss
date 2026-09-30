@@ -7,6 +7,8 @@ import { themedQuizzes, releasedQuizzes } from '@/lib/data/quizzes';
 import { useQuizScores } from '@/lib/hooks/useQuizScores';
 import { siteToday } from '@/lib/utils/date';
 import BeastleCard from '@/components/beastle/BeastleCard';
+import { Target as BadgeIcon } from 'lucide-react';
+import { PageBadge } from '@/components/shared/IconChip';
 
 // Not getDisplayDate(): that helper deliberately renders future dates as
 // nothing, and the next drop date is future by definition.
@@ -75,7 +77,7 @@ export default function QuizHub() {
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block" role="img" aria-label="Puzzle piece">🧩</span>
+            <PageBadge icon={BadgeIcon} color="teal" />
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-1">Quizzes</h1>
             <p className="text-sm text-muted-foreground font-body max-w-lg">
               Every themed quiz is built from real guides and facts on this site, with sourced answers and a collectible reward card. New quiz every other Monday.

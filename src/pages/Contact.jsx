@@ -37,6 +37,8 @@ function ThreadsLogo({ className }) {
 
 import DonateButton from '@/components/DonateButton';
 import ContactForm from '@/components/shared/ContactForm';
+import { Mail as BadgeIcon } from 'lucide-react';
+import { PageBadge } from '@/components/shared/IconChip';
 
 export default function Contact() {
   return (
@@ -61,7 +63,7 @@ export default function Contact() {
       <div className="bg-gradient-to-b from-secondary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block" role="img" aria-label="Love letter">💌</span>
+            <PageBadge icon={BadgeIcon} color="orange" />
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">
               Get in Touch
             </h1>

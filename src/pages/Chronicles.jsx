@@ -14,6 +14,8 @@ import ReadingProgressBar from '@/components/blog/ReadingProgressBar';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 import LocalImage from '@/components/shared/LocalImage';
 import { pickWithinLimit, TITLE_MAX } from '@/lib/utils/seo';
+import { ScrollText as BadgeIcon } from 'lucide-react';
+import { PageBadge } from '@/components/shared/IconChip';
 
 // Story titles all start with "Chronicles of <character>:" - the sidebar and
 // cards drop that prefix so the episode name is what stands out.
@@ -88,7 +90,7 @@ export default function Chronicles() {
       <div className="bg-gradient-to-b from-secondary/5 to-transparent pt-12 pb-6 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block" role="img" aria-label="Open book">📖</span>
+            <PageBadge icon={BadgeIcon} color="orange" />
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">
               The Chronicles
             </h1>

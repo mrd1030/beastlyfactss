@@ -5,6 +5,8 @@ import { Link, useLocation } from 'react-router-dom';
 import { Search, X, ArrowUp, Hash } from 'lucide-react';
 import { CATEGORIES, TOTAL_TERMS } from '@/lib/data/glossaryTerms';
 import { slugify } from '@/lib/utils/slugify';
+import { BookA as BadgeIcon } from 'lucide-react';
+import { PageBadge } from '@/components/shared/IconChip';
 
 const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
@@ -206,7 +208,7 @@ export default function Glossary() {
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block" role="img" aria-label="Open book">📖</span>
+            <PageBadge icon={BadgeIcon} color="teal" />
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">
               Pet Care &amp; Animal Science Glossary
             </h1>

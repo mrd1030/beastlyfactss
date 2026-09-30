@@ -2,6 +2,8 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
+import { PawPrint as BadgeIcon } from 'lucide-react';
+import { PageBadge } from '@/components/shared/IconChip';
 
 const sections = [
   {
@@ -78,7 +80,7 @@ export default function AnimalFacts() {
       <div className="bg-gradient-to-b from-accent/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block" role="img" aria-label="Animal tracks">🐾</span>
+            <PageBadge icon={BadgeIcon} color="gold" />
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-3">
               Fun Animal Facts & Pet Care Tips
             </h1>

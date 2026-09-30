@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
 import CarePackagesNav from '@/components/shared/CarePackagesNav';
+import { Lightbulb as BadgeIcon } from 'lucide-react';
+import { PageBadge } from '@/components/shared/IconChip';
 
 const TITLE = 'Why We Exist | Beastly Facts Care Packages';
 const DESCRIPTION = 'Why the printable Beastly Facts care packages exist: checked numbers over recycled forum advice, and a standard you can keep by the enclosure.';
@@ -30,7 +32,7 @@ export default function CarePackagesWhyWeExist() {
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block" role="img" aria-label="Lightbulb">💡</span>
+            <PageBadge icon={BadgeIcon} color="teal" />
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-3">
               Bad care advice is easy to find. Correct advice should be too.
             </h1>

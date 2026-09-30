@@ -4,7 +4,7 @@ import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { slugify } from '@/lib/utils/slugify';
 import { motion } from '@/lib/motion-safe';
 import { ArrowLeft, ChevronDown, Clock, Newspaper, Search as SearchIcon, X } from 'lucide-react';
-import IconChip from '@/components/shared/IconChip';
+import { PageBadge } from '@/components/shared/IconChip';
 import { useNavigate, useLocation, useParams, useNavigationType, Link } from 'react-router-dom';
 import { getCategoryBySlug } from '@/lib/data/categories';
 import { blogPosts as localPosts } from '@/lib/data/newsletters';
@@ -427,7 +427,7 @@ export default function Blog() {
       <div className="bg-gradient-to-b from-secondary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <IconChip icon={Newspaper} color="orange" size="hero" className="mb-3" />
+            <PageBadge icon={Newspaper} color="orange" />
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-1">
               The Critter Digest
             </h1>

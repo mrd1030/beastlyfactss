@@ -1,6 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from '@/lib/motion-safe';
+import { Lock as BadgeIcon } from 'lucide-react';
+import { PageBadge } from '@/components/shared/IconChip';
 
 const Section = ({ title, children }) => (
   <div className="mb-8">
@@ -26,7 +28,7 @@ export default function Privacy() {
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block" role="img" aria-label="Padlock">🔒</span>
+            <PageBadge icon={BadgeIcon} color="teal" />
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">Privacy Policy</h1>
             <p className="text-xs text-muted-foreground font-body">Last updated: September 24, 2026</p>
           </motion.div>

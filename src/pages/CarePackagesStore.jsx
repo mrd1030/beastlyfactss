@@ -6,6 +6,8 @@ import { CARE_PACKAGES, groupCarePackages, isCarePackageBuyable } from '@/lib/da
 import { getCarePackageTheme } from '@/lib/data/carePackageThemes';
 import CarePackagesNav from '@/components/shared/CarePackagesNav';
 import CarePackageCard from '@/components/shared/CarePackageCard';
+import { ShoppingBag as BadgeIcon } from 'lucide-react';
+import { PageBadge } from '@/components/shared/IconChip';
 import '@/styles/care-package-hub.css';
 
 const TITLE = 'Care Package Store | Beastly Facts';
@@ -47,7 +49,7 @@ export default function CarePackagesStore() {
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block" role="img" aria-label="Shopping bag">🛍️</span>
+            <PageBadge icon={BadgeIcon} color="teal" />
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-3">
               Every care package, in one place.
             </h1>

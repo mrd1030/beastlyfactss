@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
 import { CATEGORIES } from '@/lib/data/categories';
+import { LayoutGrid as BadgeIcon } from 'lucide-react';
+import { PageBadge } from '@/components/shared/IconChip';
 
 // The three lists below are hardcoded mirrors (same convention as prerender.mjs
 // and generate-sitemap.js) rather than imports, so this page doesn't pull the
@@ -133,7 +135,7 @@ export default function Categories() {
       <div className="bg-gradient-to-b from-accent/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block" role="img" aria-label="File cabinet">🗂️</span>
+            <PageBadge icon={BadgeIcon} color="gold" />
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-1">Browse by Category</h1>
             <p className="text-sm text-muted-foreground font-body max-w-lg">
               Everything on Beastly Facts, organised by animal type. Fun facts, articles, care guides, and species profiles.

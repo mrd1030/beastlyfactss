@@ -7,6 +7,8 @@ import { supabase, isSupabaseConfigured } from '@/api/supabaseClient';
 import CrossLinkCta from '@/components/shared/CrossLinkCta';
 import { SocialLinksRow } from '@/components/shared/SocialIcons';
 import { captionHasTag, splitCaptionByHashtags } from '@/lib/utils/hashtags';
+import { Rss as BadgeIcon } from 'lucide-react';
+import { PageBadge } from '@/components/shared/IconChip';
 
 // Caption text with each #hashtag swapped for a link to its /feed/tag/ page.
 // Plain text segments render as-is; a hashtag keeps its original typed case
@@ -109,7 +111,7 @@ export default function Feed() {
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block" role="img" aria-label="Camera with flash">📱</span>
+            <PageBadge icon={BadgeIcon} color="teal" />
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">
               {tag ? `#${tag}` : 'The Feed'}
             </h1>

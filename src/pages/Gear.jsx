@@ -13,6 +13,8 @@ import GearCategoryNav from '@/components/shared/GearCategoryNav';
 // scripts/generate-gear-by-animal.mjs). Searching an animal's name offers its
 // list; /gear/animal/<guide id>/ opens it directly.
 import GEAR_BY_ANIMAL from '@/lib/generated/gear-by-animal.json';
+import { ShoppingCart as BadgeIcon } from 'lucide-react';
+import { PageBadge } from '@/components/shared/IconChip';
 
 const PRODUCT_BY_SLUG = new Map(AFFILIATE_PRODUCTS.map(p => [p.slug, p]));
 
@@ -203,7 +205,7 @@ export default function Gear() {
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block" role="img" aria-label="Shopping cart">🛒</span>
+            <PageBadge icon={BadgeIcon} color="teal" />
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">
               {activeAnimal ? `${activeAnimal.name} Gear` : activePet ? `${activePet.label} Gear` : 'Recommended Gear'}
             </h1>

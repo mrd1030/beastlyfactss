@@ -15,6 +15,8 @@ import FactOrderControl from '@/components/shared/FactOrderControl';
 import Pagination from '@/components/shared/Pagination';
 import FactModal from '@/components/shared/FactModal';
 import ImageLightbox from '@/components/shared/ImageLightbox';
+import { Compass as BadgeIcon } from 'lucide-react';
+import { PageBadge } from '@/components/shared/IconChip';
 
 // Reduced footprint size to instantly clear initial painting lag
 const PAGE_SIZE = 16; 
@@ -269,7 +271,7 @@ export default function Facts() {
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block" role="img" aria-label="Brain">🧠</span> 
+            <PageBadge icon={BadgeIcon} color="teal" />
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">
               Fun Animal Facts
             </h1> 

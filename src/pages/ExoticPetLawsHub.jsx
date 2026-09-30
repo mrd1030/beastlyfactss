@@ -7,6 +7,8 @@ import { JURISDICTIONS_AZ, CODE_TO_SLUG } from '@/lib/data/stateSlugs';
 import * as MdxComponents from '@/components/mdx';
 import MdxArticleBody from '@/components/shared/MdxArticleBody';
 import { withBrand } from '@/lib/utils/seo';
+import { Scale as BadgeIcon } from 'lucide-react';
+import { PageBadge } from '@/components/shared/IconChip';
 
 // The written hub for exotic pet law. Until now this lived at
 // /blog/exotic-pet-legal-hub/ while /exotic-pet-laws/ rendered the interactive
@@ -59,7 +61,7 @@ export default function ExoticPetLawsHub() {
 
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-6 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
-          <span className="text-3xl mb-2 block" role="img" aria-label="Balance scale">⚖️</span>
+          <PageBadge icon={BadgeIcon} color="teal" />
           <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-3">
             Exotic pet laws, state by state
           </h1>

@@ -13,6 +13,8 @@ import Pagination from '@/components/shared/Pagination';
 import CrossLinkCta from '@/components/shared/CrossLinkCta';
 import FactOrderControl from '@/components/shared/FactOrderControl';
 import { seededShuffle } from '@/lib/utils/seededShuffle';
+import { Camera as BadgeIcon } from 'lucide-react';
+import { PageBadge } from '@/components/shared/IconChip';
 
 const PAGE_SIZE = 30;
 
@@ -196,7 +198,7 @@ export default function Gallery() {
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block" role="img" aria-label="Camera">📸</span>
+            <PageBadge icon={BadgeIcon} color="teal" />
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">
               Photo Gallery
             </h1>
