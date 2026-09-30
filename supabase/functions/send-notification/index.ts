@@ -16,9 +16,12 @@
 //      not an article went out. The two are separate notifications with
 //      separate ledgers, so a day with no new article still gets its fact.
 //
-//      Last, "Beastle #N is live" goes to the subscriptions that opted in on
-//      /beastle/ (push_subscriptions.beastle_reminder, see
-//      supabase/beastle_reminders.sql), with its own ledger.
+//      "Beastle #N is live" is its own run, {"mode":"beastle"}, which pg_cron
+//      calls five minutes later (9:05 ET). It goes to the subscriptions that
+//      opted in on /beastle/ (push_subscriptions.beastle_reminder, see
+//      supabase/beastle_reminders.sql), with its own ledger. It used to ride
+//      in the 9:00 run, but landing in the same second as the fact, one of
+//      the two could go missing on a phone.
 //
 //   2. By hand, for anything off-schedule - pass an explicit title and body and
 //      it sends immediately, no date logic and no ledger:
@@ -27,6 +30,8 @@
 //          -H "x-send-secret: <SEND_NOTIFICATION_SECRET>" \
 //          -H "content-type: application/json" \
 //          -d '{"title":"Site news","body":"Something worth a ping.","url":"/blog/"}'
+//
+//      Add "beastleOnly": true to send it only to the Beastle reminder phones.
 //
 // The daily path sends each kind at most once per calendar day. It claims the
 // day (notification_sends for articles, notification_fact_sends for the fact)
@@ -315,8 +320,19 @@ async function runDaily(force: boolean) {
     p.catch((err) => ({ error: (err as Error).message }));
   const articles = await settle(runDailyArticles(today));
   const fact = await settle(runDailyFact(today));
-  const beastle = await settle(runDailyBeastle(today));
-  return json({ date: today, articles, fact, beastle });
+  return json({ date: today, articles, fact });
+}
+
+// The 9:05 run. Same clock check as the daily one, so of the two cron entries
+// (13:05 and 14:05 UTC) only the one inside 9am ET sends.
+async function runBeastle(force: boolean) {
+  const today = siteToday();
+  const hour = siteHour();
+  if (!force && hour !== SEND_HOUR_ET) {
+    return json({ skipped: `hour ${hour} ET is not ${SEND_HOUR_ET}`, date: today });
+  }
+  const beastle = await runDailyBeastle(today).catch((err) => ({ error: (err as Error).message }));
+  return json({ date: today, beastle });
 }
 
 async function runDailyArticles(today: string) {
@@ -371,12 +387,15 @@ Deno.serve(async (req) => {
       // 9am window; it skips the clock check, never the ledger.
       return await runDaily(input.force === true);
     }
+    if (input.mode === "beastle") {
+      return await runBeastle(input.force === true);
+    }
 
     const { title, body, url = "/" } = input;
     if (!title || !body) {
-      return json({ error: "title and body are required (or pass mode: 'daily')" }, 400);
+      return json({ error: "title and body are required (or pass mode: 'daily' or 'beastle')" }, 400);
     }
-    return json(await pushToEveryone({ title, body, url }));
+    return json(await pushToEveryone({ title, body, url }, { beastleOnly: input.beastleOnly === true }));
   } catch (err) {
     return json({ error: (err as Error).message }, 500);
   }
