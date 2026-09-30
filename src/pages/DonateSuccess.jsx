@@ -31,7 +31,7 @@ export default function DonateSuccess() {
         >
           <CheckCircle className="w-20 h-20 text-green-500" />
         </motion.div>
-        <h1 className="font-display font-bold text-3xl text-foreground mb-3">Thank You! 🐾</h1>
+        <h1 className="font-display font-bold text-3xl text-foreground mb-3">Thank You!</h1>
         <p className="text-muted-foreground font-body leading-relaxed mb-6">
           Your donation was successful. Your support helps us continue sharing amazing animal facts!
         </p>

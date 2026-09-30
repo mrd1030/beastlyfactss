@@ -51,7 +51,7 @@ export default function Newsletter() {
                                 Subscribe - it's free
                             </h3>
                             <p className="text-xs text-muted-foreground font-body mb-4">
-                                Occasional, not weekly. Unsubscribe in one click. 🐾
+                                Occasional, not weekly. Unsubscribe in one click.
                             </p>
                             <BeehiivSubscribe />
                         </div>

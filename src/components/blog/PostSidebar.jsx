@@ -178,7 +178,7 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
           sidebar stacks under the article and the ask belongs at the end. */}
       <div className="bg-card border border-border rounded-2xl p-5 order-last lg:order-none">
         <h3 className="font-display font-bold text-sm text-foreground mb-1">Subscribe - it's free</h3>
-        <p className="text-xs text-muted-foreground font-body mb-4">An occasional email when something new is worth your time. No spam. 🐾</p>
+        <p className="text-xs text-muted-foreground font-body mb-4">An occasional email when something new is worth your time. No spam.</p>
         <BeehiivSubscribe />
       </div>
 
@@ -303,7 +303,7 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
           }`}
         >
           <Heart className={`w-3.5 h-3.5 ${isFavorite(displayFact.id) ? 'fill-hotpink' : ''}`} />
-          {isFavorite(displayFact.id) ? 'Saved to Pack 🐾' : 'Save to My Pack'}
+          {isFavorite(displayFact.id) ? 'Saved to Pack' : 'Save to My Pack'}
         </button>
       </div>
       )}

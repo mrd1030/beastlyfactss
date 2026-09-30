@@ -131,16 +131,16 @@ export default function AnimalFacts() {
           transition={{ delay: 0.4 }}
           className="bg-primary/5 border border-primary/10 rounded-2xl p-6 sm:p-8 text-center"
         >
-          <p className="font-display font-bold text-lg text-foreground mb-2">Want more? We've got hundreds of facts 🌟</p>
+          <p className="font-display font-bold text-lg text-foreground mb-2">Want more? We've got hundreds of facts.</p>
           <p className="text-sm font-body text-muted-foreground mb-5">
             Explore our full facts library, take the animal personality quiz, or dive into our in-depth care guides.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link to="/facts/" className="bg-secondary text-secondary-foreground px-5 py-2.5 rounded-full font-body font-bold text-sm hover:opacity-90 transition-opacity">
-              🐾 Browse All Facts
+              Browse All Facts
             </Link>
             <Link to="/encyclopedia/" className="bg-card border border-border text-foreground px-5 py-2.5 rounded-full font-body font-bold text-sm hover:bg-muted transition-colors">
-              📚 Encyclopedia & Care Guides
+              Encyclopedia & Care Guides
             </Link>
           </div>
         </motion.div>

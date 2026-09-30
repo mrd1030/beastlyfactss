@@ -14,7 +14,8 @@ import { groupGuides } from '@/lib/data/guideGroups';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 import { trackEvent } from '@/lib/analytics';
 import { BookOpen as BadgeIcon } from 'lucide-react';
-import { PageBadge } from '@/components/shared/IconChip';
+import IconChip, { PageBadge } from '@/components/shared/IconChip';
+import { SearchX } from 'lucide-react';
 
 const guideFilters = [
   { label: 'All', emoji: '🐾' },
@@ -266,7 +267,7 @@ export default function Guides() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-16 space-y-10">
         {groupedGuides.length === 0 ? (
           <div className="text-center py-16">
-            <span className="text-4xl block mb-3">🔍</span>
+            <IconChip icon={SearchX} color="gray" size="empty" className="mb-3" />
             <p className="font-body font-bold text-foreground">No guides found</p>
           </div>
         ) : (

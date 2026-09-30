@@ -92,7 +92,7 @@ export default function Pack() {
             My Beast Pack
           </h1>
           <p className="text-sm text-muted-foreground font-body max-w-lg">
-            Your personal collection of favorite facts! Tap the heart on any fact to save it here. 🐾
+            Your personal collection of favorite facts! Tap the heart on any fact to save it here.
           </p>
         </motion.div>
 
@@ -391,7 +391,7 @@ export default function Pack() {
               Your pack is empty!
             </h2>
             <p className="text-sm text-muted-foreground font-body mb-6 max-w-sm mx-auto">
-              Go explore some facts and tap the ❤️ to start building your collection!
+              Go explore some facts and tap the heart to start building your collection!
             </p>
             <Link to="/facts/">
               <motion.button

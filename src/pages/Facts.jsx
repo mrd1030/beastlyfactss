@@ -16,7 +16,8 @@ import Pagination from '@/components/shared/Pagination';
 import FactModal from '@/components/shared/FactModal';
 import ImageLightbox from '@/components/shared/ImageLightbox';
 import { Compass as BadgeIcon } from 'lucide-react';
-import { PageBadge } from '@/components/shared/IconChip';
+import IconChip, { PageBadge } from '@/components/shared/IconChip';
+import { SearchX } from 'lucide-react';
 
 // Reduced footprint size to instantly clear initial painting lag
 const PAGE_SIZE = 16; 
@@ -276,7 +277,7 @@ export default function Facts() {
               Fun Animal Facts
             </h1> 
             <p className="text-sm text-muted-foreground font-body max-w-lg">
-              Mind-blowing facts that will make you say "wait, REALLY?!" 🤯
+              Mind-blowing facts that will make you say "wait, REALLY?!"
             </p>
             <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2">
               <Link to="/fact-files/" className="inline-flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline p-1.5 -m-1.5">
@@ -333,7 +334,7 @@ export default function Facts() {
         <div className="flex flex-col items-center text-center gap-3 mb-6">
           <p className="text-xs text-muted-foreground font-body">
             {`${displayFacts.length} facts found`}
-            {order === 'random' && <span className="ml-1 text-secondary font-semibold">· randomized 🎲</span>}
+            {order === 'random' && <span className="ml-1 text-secondary font-semibold">· randomized</span>}
             {order === 'numeric' && <span className="ml-1 text-secondary font-semibold">· numbered</span>}
             {totalPages > 1 && <span>{` · Page ${safePage} of ${totalPages}`}</span>}
           </p>
@@ -359,7 +360,7 @@ export default function Facts() {
         {/* Empty Search Result Fallback */}
         {displayFacts.length === 0 && (
           <div className="text-center py-16">
-            <span className="text-4xl block mb-3">🔍</span> 
+            <IconChip icon={SearchX} color="gray" size="empty" className="mb-3" /> 
             <p className="font-body font-bold text-foreground">No facts found!</p> 
             <p className="text-sm text-muted-foreground font-body mt-1">Try a different search or category.</p> 
           </div>

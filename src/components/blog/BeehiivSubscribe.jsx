@@ -64,7 +64,7 @@ export default function BeehiivSubscribe() {
           disabled={loading}
           className="w-full bg-secondary hover:opacity-90 text-secondary-foreground font-body font-bold py-3 rounded-xl transition-all disabled:opacity-70"
         >
-          {loading ? 'Please wait...' : "Subscribe - it's free 🐾"}
+          {loading ? 'Please wait...' : "Subscribe - it's free"}
         </button>
       </form>
 

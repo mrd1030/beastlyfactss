@@ -19,6 +19,8 @@ import { truncateDescription } from '@/lib/utils/truncate';
 // is 197KB, and RelatedFiles used to import the 182KB articles index to render
 // one or two cards. Neither is imported here now.
 import beastlypediaContent from '@/lib/generated/beastlypedia-content.json';
+import { SearchX } from 'lucide-react';
+import IconChip from '@/components/shared/IconChip';
 
 const SITE = 'https://beastlyfacts.com';
 
@@ -65,7 +67,7 @@ export default function BeastfileDetail() {
           <meta name="robots" content="noindex" />
         </Helmet>
         <div className="text-center">
-          <span className="text-4xl block mb-3">🔍</span>
+          <IconChip icon={SearchX} color="gray" size="empty" className="mb-3" />
           <h1 className="font-display font-bold text-xl text-foreground mb-2">Beastfile not found</h1>
           <Link
             to="/beastlypedia/"

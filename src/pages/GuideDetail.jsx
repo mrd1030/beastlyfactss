@@ -25,6 +25,8 @@ import CostBuilder from '@/components/guides/CostBuilder';
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 import { seriesForSlug, chroniclesPath } from '@/lib/chronicles';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
+import { SearchX } from 'lucide-react';
+import IconChip from '@/components/shared/IconChip';
 
 const sectionMeta = [
   { key: 'housing',    icon: '🏠', label: 'Housing & Setup' },
@@ -217,7 +219,7 @@ export default function GuideDetail() {
           <meta name="robots" content="noindex" />
         </Helmet>
         <div className="text-center">
-          <span className="text-4xl block mb-3">🔍</span>
+          <IconChip icon={SearchX} color="gray" size="empty" className="mb-3" />
           <h2 className="font-display font-bold text-xl text-foreground mb-2">Guide not found</h2>
           <Link to="/guides/" className="text-secondary text-sm font-body font-semibold hover:underline">
             Browse all guides →
@@ -661,7 +663,7 @@ export default function GuideDetail() {
             {/* Newsletter signup */}
             <div className="bg-card border border-border rounded-2xl p-5">
               <h3 className="font-display font-bold text-sm text-foreground mb-1">Subscribe - it's free</h3>
-              <p className="text-xs text-muted-foreground font-body mb-4">New care guides straight to your inbox. No spam. 🐾</p>
+              <p className="text-xs text-muted-foreground font-body mb-4">New care guides straight to your inbox. No spam.</p>
               <BeehiivSubscribe />
             </div>
 

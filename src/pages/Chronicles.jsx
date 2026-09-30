@@ -15,7 +15,8 @@ import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 import LocalImage from '@/components/shared/LocalImage';
 import { pickWithinLimit, TITLE_MAX } from '@/lib/utils/seo';
 import { FeatherText as BadgeIcon } from '@/components/icons/labIcons';
-import { PageBadge } from '@/components/shared/IconChip';
+import IconChip, { PageBadge } from '@/components/shared/IconChip';
+import { Feather } from 'lucide-react';
 
 // Story titles all start with "Chronicles of <character>:" - the sidebar and
 // cards drop that prefix so the episode name is what stands out.
@@ -124,7 +125,7 @@ export default function Chronicles() {
               <SeriesLanding series={series} parts={parts} />
             ) : !story ? (
               <div className="text-center py-20">
-                <span className="text-4xl block mb-3">🪶</span>
+                <IconChip icon={Feather} color="gray" size="empty" className="mb-3" />
                 <p className="font-body font-bold text-foreground mb-1">This part hasn't been written yet</p>
                 <p className="text-sm text-muted-foreground font-body mb-4">
                   {`${series.shortName} is still working on it. Check back soon!`}
@@ -390,7 +391,7 @@ function ChroniclesSidebar({ bySeries, activeSeriesId, activePart }) {
 
       <div className="bg-card border border-border rounded-2xl p-6">
         <h3 className="font-display font-bold text-base text-foreground mb-1">Subscribe - it's free</h3>
-        <p className="text-xs text-muted-foreground font-body mb-4">New stories and articles straight to your inbox. No spam, ever. 🐾</p>
+        <p className="text-xs text-muted-foreground font-body mb-4">New stories and articles straight to your inbox. No spam, ever.</p>
         <BeehiivSubscribe />
       </div>
     </div>

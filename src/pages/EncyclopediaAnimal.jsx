@@ -30,6 +30,7 @@ import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 // count restrictions dragged all of it onto every animal page. This is 2KB.
 import LEGAL_BY_ENCYCLOPEDIA_ID from '@/lib/generated/legal-summary.json';
 import { pickWithinLimit, TITLE_MAX } from '@/lib/utils/seo';
+import { SearchX } from 'lucide-react';
 
 function BioField({ label, value }) {
   return (
@@ -74,7 +75,7 @@ export default function EncyclopediaAnimal() {
           <meta name="robots" content="noindex" />
         </Helmet>
         <div className="text-center">
-          <span className="text-4xl block mb-3">🔍</span>
+          <IconChip icon={SearchX} color="gray" size="empty" className="mb-3" />
           <h2 className="font-display font-bold text-xl text-foreground mb-2">Animal not found</h2>
           <Link to="/encyclopedia/" className="text-secondary text-sm font-body font-semibold hover:underline">
             Browse the encyclopedia →
@@ -354,7 +355,7 @@ export default function EncyclopediaAnimal() {
             {/* Newsletter signup */}
             <div className="bg-card border border-border rounded-2xl p-5">
               <h3 className="font-display font-bold text-sm text-foreground mb-1">Subscribe - it's free</h3>
-              <p className="text-xs text-muted-foreground font-body mb-4">New animal facts and care guides straight to your inbox. No spam. 🐾</p>
+              <p className="text-xs text-muted-foreground font-body mb-4">New animal facts and care guides straight to your inbox. No spam.</p>
               <BeehiivSubscribe />
             </div>
 

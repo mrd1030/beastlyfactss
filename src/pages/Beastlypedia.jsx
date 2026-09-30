@@ -4,6 +4,8 @@ import { useParams, Link } from 'react-router-dom';
 import { beastfiles, beastfileGroups } from '@/lib/data/beastlypedia';
 import BeastfileCard from '@/components/beastlypedia/BeastfileCard';
 import CrossLinkCta from '@/components/shared/CrossLinkCta';
+import { SearchX } from 'lucide-react';
+import IconChip from '@/components/shared/IconChip';
 
 const CANONICAL = 'https://beastlyfacts.com/beastlypedia/';
 const DESCRIPTION =
@@ -155,7 +157,7 @@ export default function Beastlypedia() {
           </div>
         ) : (
           <div className="text-center py-20">
-            <span className="text-4xl block mb-3">🔍</span>
+            <IconChip icon={SearchX} color="gray" size="empty" className="mb-3" />
             <p className="font-display font-bold text-lg text-foreground mb-1">Nothing here yet</p>
             <p className="text-sm text-muted-foreground font-body">
               {query ? 'No Beastfile matches that search.' : 'More Beastfiles are on the way.'}

@@ -14,6 +14,7 @@ import { Search as BadgeIcon } from 'lucide-react';
 import IconChip, { PageBadge } from '@/components/shared/IconChip';
 import { CATEGORY_ICONS } from '@/lib/data/categoryIcons';
 import { PawPrint } from 'lucide-react';
+import { SearchX } from 'lucide-react';
 
 function LocalResultRow({ result }) {
   return (
@@ -312,7 +313,7 @@ export default function Search() {
         {/* Empty state */}
         {hasSearched && query && sorted.length === 0 && localResultsFlat.length === 0 && (
           <div className="text-center py-16">
-            <span className="text-4xl block mb-3">😔</span>
+            <IconChip icon={SearchX} color="gray" size="empty" className="mb-3" />
             <p className="font-display font-bold text-foreground text-lg">No results found</p>
             <p className="text-sm text-muted-foreground font-body mt-1 mb-6">Try different keywords or browse by category.</p>
             <div className="flex flex-wrap justify-center gap-2">

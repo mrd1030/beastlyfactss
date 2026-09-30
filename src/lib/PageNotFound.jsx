@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate, useNavigationType } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowLeft } from 'lucide-react';
+import { FileQuestion } from 'lucide-react';
+import IconChip from '@/components/shared/IconChip';
 
 export default function PageNotFound() {
     const location = useLocation();
@@ -30,7 +32,7 @@ export default function PageNotFound() {
                 <meta name="robots" content="noindex" />
             </Helmet>
             <div className="text-center max-w-md">
-                <span className="text-5xl block mb-4" role="img" aria-label="See-no-evil monkey">🙈</span>
+                <IconChip icon={FileQuestion} color="gray" size="empty" className="mb-4" />
                 <h1 className="font-display font-bold text-3xl text-foreground mb-2">404 - Page Not Found</h1>
                 <p className="text-sm text-muted-foreground font-body leading-relaxed mb-6">
                     {"We couldn't find "}<span className="font-semibold text-foreground">{pageName ? `"${pageName}"` : 'that page'}</span>{'. It may have moved, or it never existed in the first place.'}

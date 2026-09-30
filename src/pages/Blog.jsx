@@ -4,7 +4,7 @@ import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { slugify } from '@/lib/utils/slugify';
 import { motion } from '@/lib/motion-safe';
 import { ArrowLeft, ChevronDown, Clock, Newspaper, Search as SearchIcon, X } from 'lucide-react';
-import { PageBadge } from '@/components/shared/IconChip';
+import IconChip, { PageBadge } from '@/components/shared/IconChip';
 import { useNavigate, useLocation, useParams, useNavigationType, Link } from 'react-router-dom';
 import { getCategoryBySlug } from '@/lib/data/categories';
 import { blogPosts as localPosts } from '@/lib/data/newsletters';
@@ -48,6 +48,7 @@ import { getDeepDiveSiblings } from '@/lib/data/relatedArticles';
 import ProductCard from '@/components/shared/ProductCard';
 import ProductModal from '@/components/shared/ProductModal';
 import { AFFILIATE_PRODUCTS } from '@/lib/data/affiliateProducts';
+import { SearchX } from 'lucide-react';
 
 const POSTS_PER_PAGE = 10;
 
@@ -531,7 +532,7 @@ export default function Blog() {
               ))}
               {filtered.length === 0 && (
                 <div className="text-center py-12">
-                  <span className="text-3xl block mb-2">😿</span>
+                  <IconChip icon={SearchX} color="gray" size="empty" className="mb-3" />
                   <p className="font-body font-bold text-foreground text-sm">No articles found</p>
                   <p className="text-xs text-muted-foreground font-body mt-1">Try a different search term or category.</p>
                 </div>
@@ -551,14 +552,14 @@ export default function Blog() {
           <div className="space-y-5">
             <div className="bg-card border border-border rounded-2xl p-6">
               <h3 className="font-display font-bold text-base text-foreground mb-1">Subscribe - it's free</h3>
-              <p className="text-xs text-muted-foreground font-body mb-4">New articles straight to your inbox. No spam, ever. 🐾</p>
+              <p className="text-xs text-muted-foreground font-body mb-4">New articles straight to your inbox. No spam, ever.</p>
               <BeehiivSubscribe />
             </div>
 
             <Link to="/chronicles/dex/" className="block bg-secondary/5 border border-secondary/20 rounded-2xl p-5 hover:border-secondary/40 transition-colors group">
               <p className="text-xs font-body font-bold text-secondary mb-1">📖 The Chronicles</p>
               <p className="text-xs text-muted-foreground font-body leading-relaxed">
-                Short fiction from the Beastly Facts universe - follow Dex 🦎 and Otis 🐰 in their own series.
+                Short fiction from the Beastly Facts universe - follow Dex and Otis in their own series.
               </p>
               <span className="inline-block mt-2 text-xs font-body font-semibold text-secondary group-hover:underline">Start reading →</span>
             </Link>

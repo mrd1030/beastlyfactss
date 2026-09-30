@@ -93,7 +93,7 @@ export default function Contact() {
           <div>
             <p className="font-body font-bold text-base text-foreground group-hover:text-secondary transition-colors">Email Me</p>
             <p className="text-sm text-muted-foreground font-body">hello@beastlyfacts.com</p>
-            <p className="text-xs text-muted-foreground font-body mt-0.5">I read every message 🐾</p>
+            <p className="text-xs text-muted-foreground font-body mt-0.5">I read every message.</p>
           </div>
         </motion.a>
 
@@ -113,7 +113,7 @@ export default function Contact() {
           <div>
             <p className="font-body font-bold text-base text-foreground group-hover:text-hotpink transition-colors">Instagram</p>
             <p className="text-sm text-muted-foreground font-body">@beastly.facts</p>
-            <p className="text-xs text-muted-foreground font-body mt-0.5">Daily animal facts & behind-the-scenes 🦎</p>
+            <p className="text-xs text-muted-foreground font-body mt-0.5">Daily animal facts & behind-the-scenes</p>
           </div>
         </motion.a>
 
@@ -133,7 +133,7 @@ export default function Contact() {
           <div>
             <p className="font-body font-bold text-base text-foreground group-hover:text-secondary transition-colors">X</p>
             <p className="text-sm text-muted-foreground font-body">@beastly_facts</p>
-            <p className="text-xs text-muted-foreground font-body mt-0.5">Animal facts & wildlife content 🐾</p>
+            <p className="text-xs text-muted-foreground font-body mt-0.5">Animal facts & wildlife content</p>
           </div>
         </motion.a>
 
@@ -153,7 +153,7 @@ export default function Contact() {
           <div>
             <p className="font-body font-bold text-base text-foreground group-hover:text-secondary transition-colors">Pinterest</p>
             <p className="text-sm text-muted-foreground font-body">@BeastlyFacts</p>
-            <p className="text-xs text-muted-foreground font-body mt-0.5">Animal boards & reptile inspiration 📌</p>
+            <p className="text-xs text-muted-foreground font-body mt-0.5">Animal boards & reptile inspiration</p>
           </div>
         </motion.a>
 
@@ -173,7 +173,7 @@ export default function Contact() {
           <div>
             <p className="font-body font-bold text-base text-foreground group-hover:text-secondary transition-colors">Facebook</p>
             <p className="text-sm text-muted-foreground font-body">Beastly Facts</p>
-            <p className="text-xs text-muted-foreground font-body mt-0.5">Community updates & animal facts 🦁</p>
+            <p className="text-xs text-muted-foreground font-body mt-0.5">Community updates & animal facts</p>
           </div>
         </motion.a>
 
@@ -193,7 +193,7 @@ export default function Contact() {
           <div>
             <p className="font-body font-bold text-base text-foreground group-hover:text-secondary transition-colors">Threads</p>
             <p className="text-sm text-muted-foreground font-body">@Beastly.Facts</p>
-            <p className="text-xs text-muted-foreground font-body mt-0.5">Quick takes & animal trivia 🐾</p>
+            <p className="text-xs text-muted-foreground font-body mt-0.5">Quick takes & animal trivia</p>
           </div>
         </motion.a>
 
@@ -213,7 +213,7 @@ export default function Contact() {
           <div>
             <p className="font-body font-bold text-base text-foreground group-hover:text-secondary transition-colors">YouTube</p>
             <p className="text-sm text-muted-foreground font-body">@BeastlyFactsOfficial</p>
-            <p className="text-xs text-muted-foreground font-body mt-0.5">Animal facts in video form 🎬</p>
+            <p className="text-xs text-muted-foreground font-body mt-0.5">Animal facts in video form</p>
           </div>
         </motion.a>
 

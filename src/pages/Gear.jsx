@@ -14,7 +14,8 @@ import GearCategoryNav from '@/components/shared/GearCategoryNav';
 // list; /gear/animal/<guide id>/ opens it directly.
 import GEAR_BY_ANIMAL from '@/lib/generated/gear-by-animal.json';
 import { ShoppingCart as BadgeIcon } from 'lucide-react';
-import { PageBadge } from '@/components/shared/IconChip';
+import IconChip, { PageBadge } from '@/components/shared/IconChip';
+import { SearchX } from 'lucide-react';
 
 const PRODUCT_BY_SLUG = new Map(AFFILIATE_PRODUCTS.map(p => [p.slug, p]));
 
@@ -293,7 +294,7 @@ export default function Gear() {
               <AnimalGear animal={activeAnimal} onSelect={setSelectedProduct} onClose={() => openAnimal(null)} />
             ) : byCategory.length === 0 ? (
               <div className="text-center py-16">
-                <span className="text-4xl block mb-3">🔍</span>
+                <IconChip icon={SearchX} color="gray" size="empty" className="mb-3" />
                 <p className="font-body font-bold text-foreground">
                   {trimmedQuery ? `No gear matches "${searchQuery.trim()}"` : 'No gear found for this filter yet'}
                 </p>

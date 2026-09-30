@@ -15,7 +15,8 @@ import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 import CrossLinkCta from '@/components/shared/CrossLinkCta';
 import { trackEvent } from '@/lib/analytics';
 import { Library as BadgeIcon } from 'lucide-react';
-import { PageBadge } from '@/components/shared/IconChip';
+import IconChip, { PageBadge } from '@/components/shared/IconChip';
+import { SearchX } from 'lucide-react';
 
 // Tabs
 const TABS = [
@@ -368,7 +369,7 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
 
         {grouped.length === 0 && (
           <div className="text-center py-16">
-            <span className="text-4xl block mb-3">🔍</span>
+            <IconChip icon={SearchX} color="gray" size="empty" className="mb-3" />
             <p className="font-body font-bold text-foreground">Nothing found</p>
             <p className="text-sm text-muted-foreground font-body mt-1">Try a different search or category.</p>
           </div>
@@ -442,7 +443,7 @@ function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeS
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-16 space-y-10">
         {groups.length === 0 ? (
           <div className="text-center py-16">
-            <span className="text-4xl block mb-3">🔍</span>
+            <IconChip icon={SearchX} color="gray" size="empty" className="mb-3" />
             <p className="font-body font-bold text-foreground">No guides found</p>
           </div>
         ) : (

@@ -8,7 +8,8 @@ import CrossLinkCta from '@/components/shared/CrossLinkCta';
 import { SocialLinksRow } from '@/components/shared/SocialIcons';
 import { captionHasTag, splitCaptionByHashtags } from '@/lib/utils/hashtags';
 import { Rss as BadgeIcon } from 'lucide-react';
-import { PageBadge } from '@/components/shared/IconChip';
+import IconChip, { PageBadge } from '@/components/shared/IconChip';
+import { SearchX } from 'lucide-react';
 
 // Caption text with each #hashtag swapped for a link to its /feed/tag/ page.
 // Plain text segments render as-is; a hashtag keeps its original typed case
@@ -156,7 +157,7 @@ export default function Feed() {
           <p className="text-center text-sm text-muted-foreground font-body py-16">The feed couldn't load right now.</p>
         ) : displayPosts.length === 0 ? (
           <div className="text-center py-16">
-            <span className="text-4xl block mb-3">🐾</span>
+            <IconChip icon={SearchX} color="gray" size="empty" className="mb-3" />
             <p className="font-body font-bold text-foreground">
               {q
                 ? `Nothing matches "${query.trim()}".`

@@ -14,7 +14,8 @@ import CrossLinkCta from '@/components/shared/CrossLinkCta';
 import FactOrderControl from '@/components/shared/FactOrderControl';
 import { seededShuffle } from '@/lib/utils/seededShuffle';
 import { Camera as BadgeIcon } from 'lucide-react';
-import { PageBadge } from '@/components/shared/IconChip';
+import IconChip, { PageBadge } from '@/components/shared/IconChip';
+import { SearchX, ImageOff } from 'lucide-react';
 
 const PAGE_SIZE = 30;
 
@@ -336,7 +337,7 @@ export default function Gallery() {
 
         {displayPhotos.length === 0 && (
           <div className="text-center py-16">
-            <span className="text-4xl block mb-3">{search ? '🔍' : '📷'}</span>
+            <IconChip icon={search ? SearchX : ImageOff} color="gray" size="empty" className="mb-3" />
             {search ? (
               <>
                 <p className="font-body font-bold text-foreground">
