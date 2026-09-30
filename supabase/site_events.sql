@@ -107,7 +107,9 @@ begin
       'tags', jsonb_build_array(case new.kind when 'push_opt_in' then 'bell'
                                               when 'beardie_adopted' then 'lizard'
                                               else 'tada' end),
-      'priority', 2
+      -- Beastle finishes and new beardies buzz (3, default); quiz and push
+      -- pings stay quiet in the shade (2, low).
+      'priority', case when new.kind = 'beardie_adopted' or new.label like 'Beastle #%' then 3 else 2 end
     )
   );
   return new;

@@ -72,6 +72,12 @@ export default [
         { ignore: ["cmdk-input-wrapper", "toast-close", "fetchpriority"] },
       ],
       "react-hooks/rules-of-hooks": "error",
+      // The rules object above replaces the one the recommended configs
+      // spread in, so their undefined-name checks were silently off. That is
+      // how a leftover <Hint /> blanked Beastle Unlimited for a day. These two
+      // are back on their own.
+      "no-undef": "error",
+      "react/jsx-no-undef": "error",
     },
   },
 ];
