@@ -7,7 +7,7 @@ import { themedQuizzes, releasedQuizzes } from '@/lib/data/quizzes';
 import { useQuizScores } from '@/lib/hooks/useQuizScores';
 import { siteToday } from '@/lib/utils/date';
 import BeastleCard from '@/components/beastle/BeastleCard';
-import { Target as BadgeIcon } from 'lucide-react';
+import { TargetArrow as BadgeIcon } from '@/components/icons/labIcons';
 import { PageBadge } from '@/components/shared/IconChip';
 
 // Not getDisplayDate(): that helper deliberately renders future dates as

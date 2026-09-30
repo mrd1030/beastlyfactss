@@ -1,15 +1,17 @@
 import {
-  ArrowLeftRight, Bird, Cat, Compass, Dog, Fish, PawPrint, Puzzle, Scale, ScrollText,
-  ShoppingCart, Sparkles, Stethoscope, Turtle, Waves,
+  ArrowLeftRight, Bird, Cat, Compass, Dog, Fish, Puzzle, Scale,
+  ShoppingCart, Sparkles, Stethoscope, Turtle,
 } from 'lucide-react';
-import { Chameleon, FrogFace, Hedgehog, Spider } from '@/components/icons/labIcons';
+import {
+  Chameleon, ElephantFace, FeatherText, FrogFace, Hedgehog, Spider, Whale,
+} from '@/components/icons/labIcons';
 
-// A line icon per category in src/lib/data/categories.js. The frog,
-// chameleon, spider and hedgehog come from @lucide/lab, since lucide itself
-// has none of them.
+// A line icon per category in src/lib/data/categories.js. The animals lucide
+// itself doesn't draw (frog, chameleon, spider, hedgehog, whale, elephant)
+// and the quill come from @lucide/lab.
 export const CATEGORY_ICONS = {
   amphibians: FrogFace,
-  'aquatic-life': Waves,
+  'aquatic-life': Whale,
   birds: Bird,
   cats: Cat,
   comparisons: ArrowLeftRight,
@@ -23,8 +25,8 @@ export const CATEGORY_ICONS = {
   'product-picks': ShoppingCart,
   reptiles: Chameleon,
   roundups: Compass,
-  'short-stories': ScrollText,
+  'short-stories': FeatherText,
   'small-and-exotic-pets': Hedgehog,
   'turtles-and-tortoises': Turtle,
-  'wild-animals': PawPrint,
+  'wild-animals': ElephantFace,
 };

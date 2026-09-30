@@ -14,7 +14,7 @@ import ReadingProgressBar from '@/components/blog/ReadingProgressBar';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 import LocalImage from '@/components/shared/LocalImage';
 import { pickWithinLimit, TITLE_MAX } from '@/lib/utils/seo';
-import { ScrollText as BadgeIcon } from 'lucide-react';
+import { FeatherText as BadgeIcon } from '@/components/icons/labIcons';
 import { PageBadge } from '@/components/shared/IconChip';
 
 // Story titles all start with "Chronicles of <character>:" - the sidebar and

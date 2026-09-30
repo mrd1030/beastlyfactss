@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
+import { FeatherText, FoxFaceTail, TargetArrow } from '@/components/icons/labIcons';
 import PixelIcon from '@/components/icons/PixelIcon';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from '@/lib/motion-safe';
-import { Menu, X, Moon, Sun, ChevronDown, Instagram, Search, Youtube, BookOpen, Newspaper, Library, ShoppingCart, Package, Compass, FolderSearch, PawPrint, CalendarDays, Camera, Target, ScrollText, Scale, Heart, Rss, Info, Mail, PiggyBank } from 'lucide-react';
+import { Menu, X, Moon, Sun, ChevronDown, Instagram, Search, Youtube, BookOpen, Newspaper, Library, ShoppingCart, Package, Compass, FolderSearch, CalendarDays, Camera, Scale, Heart, Rss, Info, Mail, PiggyBank } from 'lucide-react';
 import { useDarkMode } from '@/lib/hooks/useLocalStorage';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { CATEGORIES } from '@/lib/data/categories';
@@ -320,13 +321,13 @@ export default function Navbar() {
                   </div>
                 )}
                 <p className={groupLabelClass}>Learn something wild</p>
-                {[{ to: '/facts/', icon: Compass, label: 'Facts' }, { to: '/fact-files/', icon: FolderSearch, label: 'Fact files' }, { to: '/beastlypedia/', icon: PawPrint, label: 'Beastlypedia' }, { to: '/animal-days/', icon: CalendarDays, label: 'Animal days' }, { to: '/gallery/', icon: Camera, label: 'Gallery' }].map(item => (
+                {[{ to: '/facts/', icon: Compass, label: 'Facts' }, { to: '/fact-files/', icon: FolderSearch, label: 'Fact files' }, { to: '/beastlypedia/', icon: FoxFaceTail, label: 'Beastlypedia' }, { to: '/animal-days/', icon: CalendarDays, label: 'Animal days' }, { to: '/gallery/', icon: Camera, label: 'Gallery' }].map(item => (
                   <Link key={item.to} to={item.to} onClick={handleMenuNav} className={menuLinkClass(linkActive(location.pathname, item.to))}>
                     <MenuIcon item={item} />{item.label}
                   </Link>
                 ))}
                 <p className={groupLabelClass}>Play</p>
-                {[{ to: '/beastle/', pixel: 'beastle', label: 'Beastle' }, { to: '/critter-keeper/', pixel: 'critterKeeper', label: 'Critter Keeper' }, { to: '/quiz/', icon: Target, label: 'Quizzes' }, { to: '/chronicles/dex/', icon: ScrollText, label: 'Chronicles' }].map(item => (
+                {[{ to: '/beastle/', pixel: 'beastle', label: 'Beastle' }, { to: '/critter-keeper/', pixel: 'critterKeeper', label: 'Critter Keeper' }, { to: '/quiz/', icon: TargetArrow, label: 'Quizzes' }, { to: '/chronicles/dex/', icon: FeatherText, label: 'Chronicles' }].map(item => (
                   <Link key={item.to} to={item.to} onClick={handleMenuNav} className={menuLinkClass(linkActive(location.pathname, item.to))}>
                     <MenuIcon item={item} />{item.label}
                   </Link>
