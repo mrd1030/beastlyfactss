@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import PixelIcon from '@/components/icons/PixelIcon';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from '@/lib/motion-safe';
-import { Menu, X, Moon, Sun, ChevronDown, Instagram, Search, Youtube } from 'lucide-react';
+import { Menu, X, Moon, Sun, ChevronDown, Instagram, Search, Youtube, BookOpen, Newspaper, Library, ShoppingCart, Package, Compass, FolderSearch, PawPrint, CalendarDays, Camera, Target, ScrollText, Scale, Heart, Rss, Info, Mail, PiggyBank } from 'lucide-react';
 import { useDarkMode } from '@/lib/hooks/useLocalStorage';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { CATEGORIES } from '@/lib/data/categories';
@@ -10,6 +10,15 @@ import MobileBackButton from './MobileBackButton';
 import DonateButton from '@/components/DonateButton';
 import Logo from '@/components/Logo';
 import { XLogo, PinterestLogo, FacebookLogo, ThreadsLogo } from '@/components/shared/SocialIcons';
+
+// Menu icons: lucide line icons, like the header and the bottom tabs, except
+// the two pixel games, which keep their pixel sprites so pixel art on the site
+// always means something you can play.
+function MenuIcon({ item }) {
+  if (item.pixel) return <PixelIcon name={item.pixel} className="w-5 h-5 flex-shrink-0" />;
+  const Icon = item.icon;
+  return <Icon className="w-5 h-5 flex-shrink-0" strokeWidth={2} aria-hidden="true" />;
+}
 
 const dropdownAnimation = {
   initial: { opacity: 0, height: 0, y: -50, scale: 0.94 },
@@ -293,9 +302,9 @@ export default function Navbar() {
             <div className="p-4 max-h-[calc(100vh_-_3.5rem_-_3.5rem_-_0.75rem_-_var(--safe-area-inset-top)_-_var(--safe-area-inset-bottom))] sm:max-h-[70vh] overflow-y-auto overscroll-contain custom-scrollbar">
               <div className="space-y-1">
                 <p className={`${groupLabelClass} pt-1`}>Keep a pet</p>
-                {[{ to: '/guides/', icon: 'guides', label: 'Care guides' }, { to: '/blog/', icon: 'articles', label: 'Articles' }, { to: '/encyclopedia/', icon: 'encyclopedia', label: 'Encyclopedia' }, { to: '/gear/', icon: 'gear', label: 'Gear' }, { to: '/care-packages/', icon: 'packages', label: 'Care packages' }].map(item => (
+                {[{ to: '/guides/', icon: BookOpen, label: 'Care guides' }, { to: '/blog/', icon: Newspaper, label: 'Articles' }, { to: '/encyclopedia/', icon: Library, label: 'Encyclopedia' }, { to: '/gear/', icon: ShoppingCart, label: 'Gear' }, { to: '/care-packages/', icon: Package, label: 'Care packages' }].map(item => (
                   <Link key={item.to} to={item.to} onClick={handleMenuNav} className={menuLinkClass(linkActive(location.pathname, item.to))}>
-                    <PixelIcon name={item.icon} className="w-5 h-5 flex-shrink-0" />{item.label}
+                    <MenuIcon item={item} />{item.label}
                   </Link>
                 ))}
                 <button onClick={() => setDigestOpen(!digestOpen)} className="w-full flex items-center justify-between px-4 py-2 text-sm font-body text-muted-foreground hover:text-foreground">
@@ -311,27 +320,27 @@ export default function Navbar() {
                   </div>
                 )}
                 <p className={groupLabelClass}>Learn something wild</p>
-                {[{ to: '/facts/', icon: 'facts', label: 'Facts' }, { to: '/fact-files/', icon: 'factFiles', label: 'Fact files' }, { to: '/beastlypedia/', icon: 'beastlypedia', label: 'Beastlypedia' }, { to: '/animal-days/', icon: 'animalDays', label: 'Animal days' }, { to: '/gallery/', icon: 'gallery', label: 'Gallery' }].map(item => (
+                {[{ to: '/facts/', icon: Compass, label: 'Facts' }, { to: '/fact-files/', icon: FolderSearch, label: 'Fact files' }, { to: '/beastlypedia/', icon: PawPrint, label: 'Beastlypedia' }, { to: '/animal-days/', icon: CalendarDays, label: 'Animal days' }, { to: '/gallery/', icon: Camera, label: 'Gallery' }].map(item => (
                   <Link key={item.to} to={item.to} onClick={handleMenuNav} className={menuLinkClass(linkActive(location.pathname, item.to))}>
-                    <PixelIcon name={item.icon} className="w-5 h-5 flex-shrink-0" />{item.label}
+                    <MenuIcon item={item} />{item.label}
                   </Link>
                 ))}
                 <p className={groupLabelClass}>Play</p>
-                {[{ to: '/beastle/', icon: 'beastle', label: 'Beastle' }, { to: '/critter-keeper/', icon: 'critterKeeper', label: 'Critter Keeper' }, { to: '/quiz/', icon: 'quizzes', label: 'Quizzes' }, { to: '/chronicles/dex/', icon: 'chronicles', label: 'Chronicles' }].map(item => (
+                {[{ to: '/beastle/', pixel: 'beastle', label: 'Beastle' }, { to: '/critter-keeper/', pixel: 'critterKeeper', label: 'Critter Keeper' }, { to: '/quiz/', icon: Target, label: 'Quizzes' }, { to: '/chronicles/dex/', icon: ScrollText, label: 'Chronicles' }].map(item => (
                   <Link key={item.to} to={item.to} onClick={handleMenuNav} className={menuLinkClass(linkActive(location.pathname, item.to))}>
-                    <PixelIcon name={item.icon} className="w-5 h-5 flex-shrink-0" />{item.label}
+                    <MenuIcon item={item} />{item.label}
                   </Link>
                 ))}
                 <p className={groupLabelClass}>Tools</p>
-                {[{ to: '/exotic-pet-laws/', icon: 'legal', label: 'Is it legal?' }, { to: '/pack/', icon: 'pack', label: 'My Pack' }, { to: '/search/', icon: 'search', label: 'Search' }, { to: '/feed/', icon: 'feed', label: 'Feed' }].map(item => (
+                {[{ to: '/exotic-pet-laws/', icon: Scale, label: 'Is it legal?' }, { to: '/pack/', icon: Heart, label: 'My Pack' }, { to: '/search/', icon: Search, label: 'Search' }, { to: '/feed/', icon: Rss, label: 'Feed' }].map(item => (
                   <Link key={item.to} to={item.to} onClick={handleMenuNav} className={menuLinkClass(linkActive(location.pathname, item.to))}>
-                    <PixelIcon name={item.icon} className="w-5 h-5 flex-shrink-0" />{item.label}
+                    <MenuIcon item={item} />{item.label}
                   </Link>
                 ))}
                 <p className={groupLabelClass}>The site</p>
-                {[{ to: '/about/', icon: 'about', label: 'About' }, { to: '/contact/', icon: 'contact', label: 'Contact' }, { to: '/donate/', icon: 'support', label: 'Support us' }].map(item => (
+                {[{ to: '/about/', icon: Info, label: 'About' }, { to: '/contact/', icon: Mail, label: 'Contact' }, { to: '/donate/', icon: PiggyBank, label: 'Support us' }].map(item => (
                   <Link key={item.to} to={item.to} onClick={handleMenuNav} className={menuLinkClass(linkActive(location.pathname, item.to))}>
-                    <PixelIcon name={item.icon} className="w-5 h-5 flex-shrink-0" />{item.label}
+                    <MenuIcon item={item} />{item.label}
                   </Link>
                 ))}
               </div>
