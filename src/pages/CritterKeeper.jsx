@@ -796,11 +796,11 @@ export default function CritterKeeper() {
           <h2 id="ck-about" className="font-display font-bold text-xl text-foreground mb-3">About Critter Keeper</h2>
           <div className="space-y-3 text-sm font-body text-foreground leading-relaxed">
             <p>
-              Critter Keeper is a virtual bearded dragon that runs on the same care rules as our guides. He comes home at 4 months old with a pet store starter kit, and your first job is fixing it: the basking temperatures, UVB and substrate all come from the{' '}
+              {`Critter Keeper is a virtual bearded dragon that runs on the same care rules as our guides. He comes home at 4 months old with a pet store starter kit, and your first job is fixing it: the basking temperatures, UVB and substrate all come from the `}
               <Link to={GUIDES.tank.to} className="text-primary font-bold underline underline-offset-2">bearded dragon tank setup guide</Link>.
             </p>
             <p>
-              He lives in real time, even while this page is closed, and grows a week older every day, so he is an adult in about two months. Feed him, keep his water fresh, weigh him, handle him gently and keep his tank interesting. When something goes wrong he shows the symptoms a real dragon would, each linked to the guide that explains it, like{' '}
+              {`He lives in real time, even while this page is closed, and grows a week older every day, so he is an adult in about two months. Feed him, keep his water fresh, weigh him, handle him gently and keep his tank interesting. When something goes wrong he shows the symptoms a real dragon would, each linked to the guide that explains it, like `}
               <Link to={GUIDES.uvb.to} className="text-primary font-bold underline underline-offset-2">why skipping UVB leads to metabolic bone disease</Link>.
             </p>
           </div>

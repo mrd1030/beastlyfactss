@@ -728,8 +728,7 @@ function HowToPlay() {
   return (
     <div className="text-sm font-body text-muted-foreground leading-relaxed space-y-2">
       <p>
-        Guess the hidden animal in {MAX_GUESSES} tries. The blank tiles show how many letters it has, and a two-word name
-        shows its gap, so RED PANDA looks like ___ _____.
+        {`Guess the hidden animal in ${MAX_GUESSES} tries. The blank tiles show how many letters it has, and a two-word name shows its gap, so RED PANDA looks like ___ _____.`}
       </p>
       <p>
         Type any real word that fits each space. After each guess the tiles change color:
@@ -744,7 +743,7 @@ function HowToPlay() {
       <p>Each daily puzzle tells you what kind of animal it is, like a mammal or a bird. If you want more help, you can get a clue from a real fact about the animal after 2 guesses, and after 4 guesses you can reveal one letter. A result that used either shows a 💡 when you share it.</p>
       <p>Unlimited lets you keep playing, at the level you pick:</p>
       <ul className="space-y-1">
-        {LEVEL_OPTIONS.map(([id, , text]) => <li key={id}>{text}.</li>)}
+        {LEVEL_OPTIONS.map(([id, , text]) => <li key={id}>{`${text}.`}</li>)}
       </ul>
     </div>
   );
