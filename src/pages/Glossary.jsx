@@ -62,7 +62,7 @@ function TermCard({ term, showCategory, catId, catLabel, query }) {
   return (
     <div
       id={id}
-      className="group px-4 sm:px-5 py-4 scroll-mt-40 transition-colors duration-500 hover:bg-muted/40"
+      className="group px-4 sm:px-5 py-4 scroll-mt-52 sm:scroll-mt-40 transition-colors duration-500 hover:bg-muted/40"
     >
       {showCategory && (
         <span className="inline-flex items-center gap-1 text-[10px] font-body text-muted-foreground uppercase tracking-wider">
@@ -275,9 +275,10 @@ export default function Glossary() {
             )}
           </div>
 
-          {/* Scrolls horizontally on phones, fits one row of 26 on wider screens. */}
+          {/* Two rows of 13 on phones, one row of 26 on wider screens. Never a
+              swipe row: every letter stays in view. */}
           <div
-            className="flex gap-1 overflow-x-auto pb-0.5 scrollbar-hide sm:grid sm:grid-cols-[repeat(26,minmax(0,1fr))] sm:overflow-visible"
+            className="grid grid-cols-[repeat(13,minmax(0,1fr))] gap-1 sm:grid-cols-[repeat(26,minmax(0,1fr))]"
             role="navigation"
             aria-label="Browse by letter"
           >
@@ -290,7 +291,7 @@ export default function Glossary() {
                   onClick={() => hasTerms && handleLetterClick(letter)}
                   aria-pressed={isActive}
                   aria-disabled={!hasTerms}
-                  className={`flex-shrink-0 w-8 h-8 sm:w-auto sm:h-7 rounded-lg text-sm sm:text-xs font-body font-bold transition-colors ${
+                  className={`h-7 rounded-lg text-sm sm:text-xs font-body font-bold transition-colors ${
                     isActive
                       ? 'bg-primary text-primary-foreground shadow-sm'
                       : hasTerms
@@ -308,9 +309,26 @@ export default function Glossary() {
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 pb-16 pt-6">
 
-        {/* Category jump nav - only when not filtered */}
+        {/* Category jump: a dropdown on phones, where 12 chips ran to five
+            rows, and the chips from md up. Only when not filtered. */}
         {!isFiltered && (
-          <nav aria-label="Browse by category" className="flex flex-wrap gap-2 mb-10">
+          <div className="md:hidden mb-8">
+            <label htmlFor="glossary-jump" className="sr-only">Jump to a category</label>
+            <select
+              id="glossary-jump"
+              value=""
+              onChange={(e) => document.getElementById(e.target.value)?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+              className="w-full px-3 py-2.5 rounded-xl border border-border bg-card text-sm font-body font-medium text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40"
+            >
+              <option value="" disabled>Jump to a category</option>
+              {CATEGORIES.map(cat => (
+                <option key={cat.id} value={cat.id}>{`${cat.label} (${cat.terms.length})`}</option>
+              ))}
+            </select>
+          </div>
+        )}
+        {!isFiltered && (
+          <nav aria-label="Browse by category" className="hidden md:flex flex-wrap gap-2 mb-10">
             {CATEGORIES.map(cat => (
               <a
                 key={cat.id}
@@ -379,7 +397,7 @@ export default function Glossary() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.04 }}
-            className="mb-12 scroll-mt-40"
+            className="mb-12 scroll-mt-52 sm:scroll-mt-40"
           >
             <div className="flex items-center gap-3 mb-4">
               <span

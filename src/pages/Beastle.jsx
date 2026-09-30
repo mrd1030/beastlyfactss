@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, ArrowRight, BarChart3, Bell, BellOff, Check, Delete, HelpCircle, Image as ImageIcon, Lightbulb, Loader2, RotateCcw, Share2, BookOpen, X } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BarChart3, Bell, BellOff, Check, Delete, HelpCircle, Image as ImageIcon, Lightbulb, Loader2, RotateCcw, Share2, BookOpen, CalendarDays, InfinityIcon, X } from 'lucide-react';
 import {
   LEVELS, MAX_GUESSES, answerForDay, dayNumber, keyStates, lettersOf, loadWords, pickUnlimited,
   score, shapeOf, shareText, validate, byAnswer,
@@ -407,7 +407,7 @@ function Reveal({ entry, won, guesses, kicker, children }) {
   );
 }
 
-function Stats({ stats, today }) {
+function Stats({ stats, today, bars = true }) {
   const streak = liveStreak(stats, today);
   const max = Math.max(1, ...stats.dist);
   const cells = [
@@ -426,19 +426,40 @@ function Stats({ stats, today }) {
           </div>
         ))}
       </div>
-      <p className="text-xs font-body font-bold text-foreground mt-4 mb-2">Guesses to solve</p>
-      <div className="space-y-1">
-        {stats.dist.map((n, i) => (
-          <div key={i} className="flex items-center gap-2 text-xs font-body">
-            <span className="w-3 text-muted-foreground tabular-nums">{i + 1}</span>
-            <div className="flex-1">
-              <div
-                className={`${TILE_FILL.correct} rounded px-1.5 py-0.5 text-right font-bold tabular-nums min-w-[1.5rem]`}
-                style={{ width: `${Math.max(8, (n / max) * 100)}%` }}
-              >
-                {n}
+      {bars && (
+        <>
+          <p className="text-xs font-body font-bold text-foreground mt-4 mb-2">Guesses to solve</p>
+          <div className="space-y-1">
+            {stats.dist.map((n, i) => (
+              <div key={i} className="flex items-center gap-2 text-xs font-body">
+                <span className="w-3 text-muted-foreground tabular-nums">{i + 1}</span>
+                <div className="flex-1">
+                  <div
+                    className={`${TILE_FILL.correct} rounded px-1.5 py-0.5 text-right font-bold tabular-nums min-w-[1.5rem]`}
+                    style={{ width: `${Math.max(8, (n / max) * 100)}%` }}
+                  >
+                    {n}
+                  </div>
+                </div>
               </div>
-            </div>
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
+// A small counts card for the side panel on wide screens.
+function RailCounts({ icon: Icon, title, cells }) {
+  return (
+    <div>
+      <h2 className="flex items-center gap-2 font-display font-bold text-base text-foreground mb-2"><Icon className="w-4 h-4 text-secondary" aria-hidden="true" />{title}</h2>
+      <div className="bg-card border border-border rounded-2xl p-5 grid grid-cols-3 gap-2 text-center">
+        {cells.map(([label, value]) => (
+          <div key={label}>
+            <p className={`font-display font-bold text-foreground tabular-nums h-8 flex items-center justify-center ${typeof value === 'number' ? 'text-2xl' : 'text-base'}`}>{value}</p>
+            <p className="text-[10px] font-body font-bold uppercase tracking-wider text-muted-foreground">{label}</p>
           </div>
         ))}
       </div>
@@ -632,19 +653,28 @@ function withDailyInArchive(all, game) {
   return { ...all, [game.day]: { answer, guesses, won, done: true, asDaily: true, clueShown, hintIndex } };
 }
 
+// Running out of tries on a past puzzle hides the answer and asks: try again
+// or see it. A retry starts a clean board and replaces the miss, so a solve
+// on a retry counts as solved; `retries` marks the day as retried. Dailies
+// played on their own day never get this: one go a day.
+function withPlay(all, day, patch) {
+  return { ...all, [day]: { ...(archiveRecord(all, day) || EMPTY_REPLAY), answer: answerForDay(day).answer, ...patch } };
+}
+const resultLine = (g) => (g.won ? `solved in ${g.guesses.length} of ${MAX_GUESSES}` : 'missed');
+
 // Every past daily, newest first. Replays never touch the streak, the stats
 // or everyone's totals.
-function ArchiveList({ today, archive, onPick }) {
+function ArchiveList({ today, archive, onPick, limit = Infinity, cols = 'grid-cols-3 sm:grid-cols-4' }) {
   const days = [];
-  for (let n = today - 1; n >= 1; n--) days.push(n);
+  for (let n = today - 1; n >= 1 && days.length < limit; n--) days.push(n);
   if (!days.length) {
     return <p className="py-10 text-center text-sm text-muted-foreground font-body">Past puzzles show up here from tomorrow.</p>;
   }
   return (
-    <div className="grid grid-cols-3 sm:grid-cols-4 gap-2">
+    <div className={`grid ${cols} gap-2`}>
       {days.map((n) => {
         const g = archiveRecord(archive, n);
-        const status = g?.done ? (g.won ? 'won' : 'lost') : g?.guesses?.length ? 'playing' : 'new';
+        const status = g?.done ? (g.won ? 'won' : 'lost') : g?.outOfTries ? 'stuck' : g?.guesses?.length ? 'playing' : 'new';
         return (
           <button
             key={n}
@@ -657,13 +687,19 @@ function ArchiveList({ today, archive, onPick }) {
             }`}
           >
             <span className="block font-display font-bold text-base text-foreground">{`#${n}`}</span>
-            <span className="block text-[11px] text-muted-foreground font-body">{formatDay(n)}</span>
+            <span className="block text-[11px] whitespace-nowrap text-muted-foreground font-body">{formatDay(n)}</span>
             <span className="mt-1 flex items-center justify-center gap-1 text-[11px] font-body font-bold">
               {status === 'won' && <><Check className="w-3.5 h-3.5 text-primary dark:text-accent" />{`${g.guesses.length}/${MAX_GUESSES}`}</>}
               {status === 'lost' && <><X className="w-3.5 h-3.5 text-muted-foreground" />Missed</>}
               {status === 'playing' && <span className="text-secondary">In progress</span>}
+              {status === 'stuck' && <span className="text-secondary">Try again?</span>}
               {status === 'new' && <span className="text-secondary">Play</span>}
             </span>
+            {g?.retries > 0 && (
+              <span className="mt-0.5 flex items-center justify-center gap-1 text-[10px] whitespace-nowrap font-body text-muted-foreground" title={`Retried ${g.retries} ${g.retries === 1 ? 'time' : 'times'}`}>
+                <RotateCcw className="w-3 h-3" aria-hidden="true" />Retried
+              </span>
+            )}
           </button>
         );
       })}
@@ -926,6 +962,26 @@ export default function Beastle() {
   const archiveRef = useRef(archive);
   archiveRef.current = archive;
 
+  const addToJournal = useCallback((item) => {
+    setJournal((j) => (j.some((x) => x.answer === item.answer || x.name === item.name) ? j : [...j, item]));
+  }, [setJournal]);
+
+  // Every solved daily and past puzzle belongs in the field journal. The
+  // archive keeps both, so this also picks up solves from before the journal
+  // took them; Unlimited solves are added as they happen.
+  useEffect(() => {
+    if (!ready) return;
+    const solved = Object.entries(archive)
+      .filter(([, r]) => r?.won && byAnswer.has(r.answer))
+      .map(([day, r]) => ({ answer: r.answer, name: byAnswer.get(r.answer).name, day: Number(day) }));
+    if (!solved.length) return;
+    setJournal((j) => {
+      const have = new Set(j.flatMap((x) => [x.answer, x.name]));
+      const add = solved.filter((s) => !have.has(s.answer) && !have.has(s.name));
+      return add.length ? [...j, ...add] : j;
+    });
+  }, [ready, archive, setJournal]);
+
   // Carries a finished daily into the archive for anyone who finished it
   // before the archive kept them, as long as the daily slot still holds it.
   useEffect(() => {
@@ -969,7 +1025,6 @@ export default function Beastle() {
     const helps = [next.clueShown && 'clue', next.hintIndex != null && 'letter'].filter(Boolean);
     logSiteEvent('themed_quiz', `Beastle #${today}: ${won ? guesses.length : 'X'}/${MAX_GUESSES} (${dailyEntry.name})${helps.length ? ` 💡 used ${helps.join(' + ')}` : ' no help'}`);
     if (won) celebrate();
-    setShowStats(true);
   }, [dailyEntry, today, stats, setDaily, setStats, setArchive, recordQuizCompletion, recordBeastleStreak]);
 
   const unlimitedEntry = unlimited.current ? byAnswer.get(unlimited.current.answer) : null;
@@ -1003,8 +1058,11 @@ export default function Beastle() {
     };
     unlimitedRef.current = next;
     setUnlimited(next);
-    if (won) celebrate();
-  }, [setUnlimited]);
+    if (won) {
+      celebrate();
+      addToJournal({ answer: cur.answer, name: byAnswer.get(cur.answer)?.name || cur.answer });
+    }
+  }, [setUnlimited, addToJournal]);
 
   // A new difficulty deals a fresh animal right away unless a game is under
   // way, which finishes first; the next animal uses the new level.
@@ -1028,7 +1086,8 @@ export default function Beastle() {
     setUnlimited(next);
   }, [setUnlimited]);
 
-  // Ends the current unlimited animal as a miss and shows the answer.
+  // Ends the current unlimited animal and shows the answer. A give-up is not
+  // counted as played, so it never drags the solved record down.
   const giveUpUnlimited = useCallback(() => {
     const u = unlimitedRef.current;
     const cur = u.current;
@@ -1037,7 +1096,6 @@ export default function Beastle() {
       ...u,
       current: { ...cur, done: true, won: false, gaveUp: true },
       seen: [...new Set([...(u.seen || []), cur.answer])],
-      played: (u.played || 0) + 1,
     };
     unlimitedRef.current = next;
     setUnlimited(next);
@@ -1057,7 +1115,7 @@ export default function Beastle() {
     const all = archiveRef.current;
     const game = archiveRecord(all, archiveDay) || EMPTY_REPLAY;
     if (game.done || game.clueShown || game.guesses.length < CLUE_AFTER) return;
-    const next = { ...all, [archiveDay]: { ...game, answer: answerForDay(archiveDay).answer, clueShown: true } };
+    const next = withPlay(all, archiveDay, { clueShown: true });
     archiveRef.current = next;
     setArchive(next);
   }, [archiveDay, setArchive]);
@@ -1074,7 +1132,7 @@ export default function Beastle() {
     const all = archiveRef.current;
     const game = archiveRecord(all, archiveDay) || EMPTY_REPLAY;
     if (game.done || game.hintIndex != null || index == null) return;
-    const next = { ...all, [archiveDay]: { ...game, answer: answerForDay(archiveDay).answer, hintIndex: index } };
+    const next = withPlay(all, archiveDay, { hintIndex: index });
     archiveRef.current = next;
     setArchive(next);
   }, [archiveDay, setArchive]);
@@ -1087,25 +1145,36 @@ export default function Beastle() {
     setUnlimited(next);
   }, [setUnlimited]);
 
-  const addToJournal = useCallback((item) => {
-    setJournal((j) => (j.some((x) => x.answer === item.answer) ? j : [...j, item]));
-  }, [setJournal]);
-
   const archiveEntry = archiveDay ? answerForDay(archiveDay) : null;
-  const archiveGame = (archiveDay && archiveRecord(archive, archiveDay)) || EMPTY_REPLAY;
+  const archiveRec = archiveDay ? archiveRecord(archive, archiveDay) : null;
+  const archiveGame = archiveRec || EMPTY_REPLAY;
 
-  // Replays of past dailies: saved per day, nothing else is touched.
+  // Replays of past dailies: saved per day, nothing else is touched. A miss
+  // stops at outOfTries with the answer still hidden until the player picks.
   const submitArchive = useCallback((guess) => {
     const all = archiveRef.current;
     const game = archiveRecord(all, archiveDay) || EMPTY_REPLAY;
-    if (game.done || !archiveEntry) return;
+    if (game.done || game.outOfTries || !archiveEntry) return;
     const guesses = [...game.guesses, guess];
     const won = guess === lettersOf(archiveEntry.answer);
-    const next = { ...all, [archiveDay]: { ...game, answer: archiveEntry.answer, guesses, won, done: won || guesses.length >= MAX_GUESSES } };
+    const outOfTries = !won && guesses.length >= MAX_GUESSES;
+    const next = withPlay(all, archiveDay, { guesses, won, done: won, outOfTries });
     archiveRef.current = next;
     setArchive(next);
     if (won) celebrate();
   }, [archiveDay, archiveEntry, setArchive]);
+
+  const settleArchiveMiss = useCallback((retry) => {
+    const all = archiveRef.current;
+    const rec = archiveRecord(all, archiveDay);
+    if (!rec?.outOfTries) return;
+    const next = retry
+      ? withPlay(all, archiveDay, { ...EMPTY_REPLAY, outOfTries: false, clueShown: false, hintIndex: null, retries: (rec.retries || 0) + 1 })
+      : withPlay(all, archiveDay, { outOfTries: false, done: true });
+    archiveRef.current = next;
+    setArchive(next);
+    if (retry) window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [archiveDay, setArchive]);
 
   const nextUnplayedArchive = () => {
     for (let n = (archiveDay || today) - 1; n >= 1; n--) if (!archiveRecord(archive, n)?.done) return n;
@@ -1161,7 +1230,11 @@ export default function Beastle() {
         <meta name="twitter:image" content="https://beastlyfacts.com/assets/og/beastle.jpg" />
       </Helmet>
 
-      <div className="max-w-lg mx-auto px-4 pt-8 pb-16 lg:max-w-xl lg:my-10 lg:px-10 lg:pt-10 lg:pb-12 lg:bg-card lg:border lg:border-border lg:rounded-3xl lg:shadow-sm">
+      {/* Wide screens: the game card at its normal size (so the keyboard stays
+          on screen) with a side panel. Phones never see the panel; it renders
+          only after load, so the prerendered page is unchanged. */}
+      <div className="lg:max-w-6xl lg:mx-auto lg:px-6 lg:grid lg:grid-cols-[minmax(0,36rem)_17rem] lg:justify-center lg:items-start lg:gap-6">
+      <div className="max-w-lg mx-auto px-4 pt-8 pb-16 lg:max-w-xl lg:w-full lg:my-10 lg:px-10 lg:pt-10 lg:pb-12 lg:bg-card lg:border lg:border-border lg:rounded-3xl lg:shadow-sm">
         <div className="flex items-center justify-between gap-3 mb-4">
           <div>
             <h1 className="font-display font-bold text-3xl text-foreground">Beastle</h1>
@@ -1229,6 +1302,10 @@ export default function Beastle() {
                   </div>
                   <p className="text-xs text-muted-foreground font-body mt-3">
                     {'Next Beastle in '}<Countdown />
+                    <span className="lg:hidden">
+                      {' · '}
+                      <button type="button" onClick={() => { setShowStats(true); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="font-bold text-secondary hover:underline">Your stats</button>
+                    </span>
                   </p>
                 </ResultBox>
                 <Reveal entry={dailyEntry} won={dailyGame.won} guesses={dailyGame.guesses.length} kicker="Today's animal" />
@@ -1258,6 +1335,7 @@ export default function Beastle() {
               done={unlimited.current.done}
               words={words}
               onSubmit={submitUnlimited}
+              showGroup
             >
               <HelpStrip
                 entry={unlimitedEntry}
@@ -1300,13 +1378,33 @@ export default function Beastle() {
               <button type="button" onClick={() => setArchiveDay(null)} className="inline-flex items-center gap-1.5 text-sm font-body font-bold text-foreground">
                 <ArrowLeft className="w-4 h-4" /> All puzzles
               </button>
-              <p className="text-xs font-body font-bold text-muted-foreground">{`Beastle #${archiveDay} · ${formatDay(archiveDay)}`}</p>
+              <p className="text-xs font-body font-bold text-muted-foreground">{`Beastle #${archiveDay} · ${formatDay(archiveDay)}${archiveRec?.retries ? ` · Try ${archiveRec.retries + 1}` : ''}`}</p>
             </div>
-            <Game entry={archiveEntry} guesses={archiveGame.guesses} done={archiveGame.done} words={words} onSubmit={submitArchive} showGroup>
-              <HelpStrip entry={archiveEntry} guesses={archiveGame.guesses} done={archiveGame.done} clueShown={!!archiveGame.clueShown} hintIndex={archiveGame.hintIndex} onClue={takeArchiveClue} onHint={takeArchiveHint} />
+            <Game key={`${archiveDay}-${archiveRec?.retries || 0}`} entry={archiveEntry} guesses={archiveGame.guesses} done={archiveGame.done || !!archiveGame.outOfTries} words={words} onSubmit={submitArchive} showGroup>
+              <HelpStrip entry={archiveEntry} guesses={archiveGame.guesses} done={archiveGame.done || !!archiveGame.outOfTries} clueShown={!!archiveGame.clueShown} hintIndex={archiveGame.hintIndex} onClue={takeArchiveClue} onHint={takeArchiveHint} />
             </Game>
+            {archiveGame.outOfTries && (
+              <div className="rounded-3xl border-2 border-secondary/40 bg-gradient-to-br from-secondary/10 via-card to-primary/10 p-5 sm:p-6 text-center">
+                <p className="text-[10px] font-body font-bold uppercase tracking-widest text-secondary mb-1">Out of tries</p>
+                <h2 className="font-display font-bold text-xl text-foreground">Want another go?</h2>
+                <p className="mt-2 text-sm font-body text-muted-foreground">The answer stays hidden. A retry starts a clean board and this miss won't count against you.</p>
+                <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
+                  <button type="button" onClick={() => settleArchiveMiss(true)} className="inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground font-body font-bold text-sm px-5 py-2.5 rounded-2xl">
+                    <RotateCcw className="w-4 h-4" /> Try again
+                  </button>
+                  <button type="button" onClick={() => settleArchiveMiss(false)} className="inline-flex items-center justify-center gap-2 border border-border bg-card text-foreground font-body font-bold text-sm px-5 py-2.5 rounded-2xl hover:border-secondary/40">
+                    See answer
+                  </button>
+                </div>
+              </div>
+            )}
             {archiveGame.done && (
-              <Reveal entry={archiveEntry} won={archiveGame.won} guesses={archiveGame.guesses.length} kicker={archiveGame.asDaily ? `Your daily · ${archiveGame.won ? `solved in ${archiveGame.guesses.length} of ${MAX_GUESSES}` : 'missed'}` : undefined}>
+              <Reveal
+                entry={archiveEntry}
+                won={archiveGame.won}
+                guesses={archiveGame.guesses.length}
+                kicker={archiveGame.asDaily ? `Your daily · ${resultLine(archiveGame)}` : archiveGame.won && archiveRec?.retries ? `Solved in ${archiveGame.guesses.length} of ${MAX_GUESSES} · Retried` : undefined}
+              >
                 {nextUnplayedArchive() && (
                   <button type="button" onClick={() => setArchiveDay(nextUnplayedArchive())} className="mt-4 inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground font-body font-bold text-sm px-5 py-2.5 rounded-2xl">
                     {`Play #${nextUnplayedArchive()}`} <ArrowRight className="w-4 h-4" />
@@ -1320,7 +1418,7 @@ export default function Beastle() {
           </div>
         )}
 
-        <section className="mt-12 border-t border-border pt-8">
+        <section id="how-to-play" className="mt-12 border-t border-border pt-8 scroll-mt-24">
           <h2 className="font-display font-bold text-xl text-foreground mb-3">About Beastle</h2>
           <HowToPlay />
           <p className="text-sm font-body text-muted-foreground leading-relaxed mt-2">
@@ -1339,6 +1437,61 @@ export default function Beastle() {
             <Link to="/quiz/" className="font-bold text-secondary hover:underline">More animal quizzes</Link>
           </p>
         </section>
+      </div>
+      {ready && (
+        <aside className="hidden lg:block sticky top-24 mt-10 space-y-4">
+          {/* The top card follows the tab, so Unlimited never shows the
+              daily stats. */}
+          {mode === 'daily' && (
+            <div>
+              <h2 className="flex items-center gap-2 font-display font-bold text-base text-foreground mb-2"><BarChart3 className="w-4 h-4 text-secondary" aria-hidden="true" />Your stats</h2>
+              <Stats stats={stats} today={today} bars={false} />
+            </div>
+          )}
+          {mode === 'unlimited' && (
+            <RailCounts
+              icon={InfinityIcon}
+              title="Unlimited"
+              cells={[
+                ['Solved', unlimited.wins || 0],
+                ['Played', unlimited.played || 0],
+                ['Level', (unlimited.level || 'medium').replace(/^./, (c) => c.toUpperCase())],
+              ]}
+            />
+          )}
+          {mode === 'archive' && (() => {
+            const past = Array.from({ length: Math.max(0, today - 1) }, (_, i) => archiveRecord(archive, i + 1));
+            return (
+              <RailCounts
+                icon={CalendarDays}
+                title="Past puzzles"
+                cells={[
+                  ['Played', past.filter((g) => g?.done).length],
+                  ['Solved', past.filter((g) => g?.won).length],
+                  ['Left', past.filter((g) => !g?.done).length],
+                ]}
+              />
+            );
+          })()}
+          {mode !== 'archive' && (
+          <div className="bg-card border border-border rounded-2xl p-5">
+            <div className="flex items-center justify-between mb-3">
+              <h2 className="flex items-center gap-2 font-display font-bold text-base text-foreground"><CalendarDays className="w-4 h-4 text-secondary" aria-hidden="true" />Archive</h2>
+              <button type="button" onClick={() => { setArchiveDay(null); setMode('archive'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-xs font-body font-bold text-secondary hover:underline">See all</button>
+            </div>
+            <ArchiveList today={today} archive={archive} limit={6} cols="grid-cols-3" onPick={(n) => { setMode('archive'); setArchiveDay(n); window.scrollTo({ top: 0, behavior: 'smooth' }); }} />
+          </div>
+          )}
+          <div className="bg-card border border-border rounded-2xl p-5">
+            <ul className="space-y-2 text-xs font-body text-foreground">
+              <li className="flex items-center gap-2"><span className={`w-5 h-5 rounded-sm flex-shrink-0 ${TILE_FILL.correct}`} />Right letter, right spot</li>
+              <li className="flex items-center gap-2"><span className={`w-5 h-5 rounded-sm flex-shrink-0 ${TILE_FILL.present}`} />In the name, wrong spot</li>
+              <li className="flex items-center gap-2"><span className={`w-5 h-5 rounded-sm flex-shrink-0 ${TILE_FILL.absent}`} />Not in the name</li>
+            </ul>
+            <a href="#how-to-play" className="inline-block mt-3 text-xs font-body font-bold text-secondary hover:underline">Full rules</a>
+          </div>
+        </aside>
+      )}
       </div>
     </div>
   );
