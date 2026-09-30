@@ -5,6 +5,7 @@ import { slugify } from '@/lib/utils/slugify';
 import { motion } from '@/lib/motion-safe';
 import { ArrowLeft, ChevronDown, Clock, Newspaper, Search as SearchIcon, X } from 'lucide-react';
 import IconChip, { PageBadge } from '@/components/shared/IconChip';
+import { CATEGORY_ICONS } from '@/lib/data/categoryIcons';
 import { useNavigate, useLocation, useParams, useNavigationType, Link } from 'react-router-dom';
 import { getCategoryBySlug } from '@/lib/data/categories';
 import { blogPosts as localPosts } from '@/lib/data/newsletters';
@@ -491,10 +492,11 @@ export default function Blog() {
                 {i > 0 && <span className="text-muted-foreground/40 mx-2.5" aria-hidden="true">&middot;</span>}
                 <Link
                   to={item.to}
-                  className={`inline-block pb-1 border-b-2 whitespace-nowrap transition-colors ${
+                  className={`inline-flex items-center gap-1 pb-1 border-b-2 whitespace-nowrap transition-colors ${
                     slugify(activeCategory) === item.slug ? 'border-secondary text-foreground font-semibold' : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
                   }`}
                 >
+                  {CATEGORY_ICONS[item.slug] && React.createElement(CATEGORY_ICONS[item.slug], { className: 'w-3.5 h-3.5', 'aria-hidden': true })}
                   {item.title}
                 </Link>
               </React.Fragment>
@@ -570,7 +572,10 @@ export default function Blog() {
                 <div className="space-y-1">
                   {categories.map(cat => (
                     <Link key={cat.slug} to={`/blog/category/${cat.slug}/`} className="flex items-center justify-between w-full px-2 py-1.5 rounded-lg text-xs font-body hover:bg-muted transition-colors group">
-                      <span className="text-foreground group-hover:text-secondary transition-colors font-semibold">{cat.title}</span>
+                      <span className="inline-flex items-center gap-2 text-foreground group-hover:text-secondary transition-colors font-semibold">
+                        {CATEGORY_ICONS[cat.slug] && React.createElement(CATEGORY_ICONS[cat.slug], { className: 'w-4 h-4 text-secondary', 'aria-hidden': true })}
+                        {cat.title}
+                      </span>
                       <span className="text-muted-foreground">{cat.count}</span>
                     </Link>
                   ))}
