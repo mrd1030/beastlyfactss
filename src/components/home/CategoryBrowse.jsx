@@ -21,6 +21,12 @@ import { trackSearch } from '@/lib/analytics';
 import articlesIndex from '@/lib/generated/articles-index.json';
 import { LayoutGrid } from 'lucide-react';
 import IconChip from '@/components/shared/IconChip';
+import { CATEGORY_ICONS } from '@/lib/data/categoryIcons';
+
+function CategoryIcon({ meta, className }) {
+  const Icon = CATEGORY_ICONS[meta?.slug];
+  return Icon ? <Icon className={className} aria-hidden="true" /> : null;
+}
 
 // Only categories with enough MDX content to fill this browser's 6-article
 // preview without looking sparse. Still excluded for that reason: comparisons,
@@ -100,13 +106,17 @@ export default function CategoryBrowse() {
           viewport={{ once: true }}
           className="mb-6"
         >
-          <IconChip icon={LayoutGrid} color="teal" size="row" className="mb-2" />
-          <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
-            The Beastly Hub
-          </h2>
-          <p className="text-xs text-muted-foreground font-body mt-0.5">
-            Everything on the site starts here - pick a category or search for something specific
-          </p>
+          <div className="flex items-center gap-3">
+            <IconChip icon={LayoutGrid} color="teal" size="row" />
+            <div className="min-w-0">
+              <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
+                The Beastly Hub
+              </h2>
+              <p className="text-xs text-muted-foreground font-body mt-0.5">
+                Everything on the site starts here - pick a category or search for something specific
+              </p>
+            </div>
+          </div>
         </motion.div>
 
         {/* Search bar */}
@@ -146,7 +156,7 @@ export default function CategoryBrowse() {
                     : 'bg-card border-border text-foreground hover:border-secondary/40'
                 }`}
               >
-                <span aria-hidden="true">{meta?.emoji}</span>{label}
+                <CategoryIcon meta={meta} className="w-4 h-4" />{label}
               </button>
             );
           })}
@@ -187,7 +197,7 @@ export default function CategoryBrowse() {
           >
             <div className="flex items-center justify-between mb-3">
               <h3 className="font-display font-bold text-sm text-foreground flex items-center gap-1.5">
-                <span aria-hidden="true">{selectedMeta?.emoji}</span>{selected}
+                <CategoryIcon meta={selectedMeta} className="w-4 h-4 text-secondary" />{selected}
               </h3>
               <Link
                 to={`/blog/category/${selectedSlug}/`}

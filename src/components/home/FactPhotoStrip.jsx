@@ -53,13 +53,17 @@ export default function FactPhotoStrip({ onOpenFact }) {
       <div className="max-w-7xl mx-auto">
         <div className="flex items-end justify-between mb-4">
           <div>
-            <IconChip icon={Camera} color="teal" size="row" className="mb-2" />
-            <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
-              Fact Photos
-            </h2>
-            <p className="text-sm text-muted-foreground font-body mt-1">
-              {`Every fact has its own photo. All ${withPhotos.length} of them are in the gallery.`}
-            </p>
+            <div className="flex items-center gap-3">
+              <IconChip icon={Camera} color="teal" size="row" />
+              <div className="min-w-0">
+                <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
+                  Fact Photos
+                </h2>
+                <p className="text-sm text-muted-foreground font-body mt-1">
+                  {`Every fact has its own photo. All ${withPhotos.length} of them are in the gallery.`}
+                </p>
+              </div>
+            </div>
           </div>
           <div className="hidden sm:flex items-center gap-4">
             <Link

@@ -48,13 +48,17 @@ export default function CritterDigestPreview() {
           className="flex items-end justify-between mb-6"
         >
           <div>
-            <IconChip icon={Newspaper} color="orange" size="row" className="mb-2" />
-            <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
-              Today&rsquo;s reads
-            </h2>
-            <p className="text-xs text-muted-foreground font-body mt-0.5">
-              A fresh set from the Critter Digest every day
-            </p>
+            <div className="flex items-center gap-3">
+              <IconChip icon={Newspaper} color="orange" size="row" />
+              <div className="min-w-0">
+                <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
+                  Today&rsquo;s reads
+                </h2>
+                <p className="text-xs text-muted-foreground font-body mt-0.5">
+                  A fresh set from the Critter Digest every day
+                </p>
+              </div>
+            </div>
           </div>
           <Link to="/blog/" className="hidden sm:flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2">
             View all articles <ArrowRight className="w-3.5 h-3.5" />

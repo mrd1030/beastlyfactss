@@ -24,13 +24,17 @@ export default function DexTeaser() {
           viewport={{ once: true }}
           className="mb-4"
         >
-          <IconChip icon={FeatherText} color="orange" size="row" className="mb-2" />
-          <h2 className="font-display font-bold text-lg sm:text-xl text-foreground">
-            Chronicles: Original Fiction
-          </h2>
-          <p className="text-xs text-muted-foreground font-body mt-0.5">
-            Short stories told entirely from the animal's point of view
-          </p>
+          <div className="flex items-center gap-3">
+            <IconChip icon={FeatherText} color="orange" size="row" />
+            <div className="min-w-0">
+              <h2 className="font-display font-bold text-lg sm:text-xl text-foreground">
+                Chronicles: Original Fiction
+              </h2>
+              <p className="text-xs text-muted-foreground font-body mt-0.5">
+                Short stories told entirely from the animal's point of view
+              </p>
+            </div>
+          </div>
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

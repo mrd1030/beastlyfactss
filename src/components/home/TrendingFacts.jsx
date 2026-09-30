@@ -59,9 +59,13 @@ export default function TrendingFacts({ onOpenFact, onOpenImage }) {
               traffic level there is no honest trending number to compute
               instead. So the heading says what it actually is. */}
           <div>
-            <IconChip icon={Dice5} color="teal" size="row" className="mb-2" />
-            <h2 className="font-display font-bold text-2xl text-foreground">Today&rsquo;s Wild Picks</h2>
-            <p className="text-sm text-muted-foreground font-body mt-1">A fresh handful from the fact library, reshuffled every day</p>
+            <div className="flex items-center gap-3">
+              <IconChip icon={Dice5} color="teal" size="row" />
+              <div className="min-w-0">
+                <h2 className="font-display font-bold text-2xl text-foreground">Today&rsquo;s Wild Picks</h2>
+                <p className="text-sm text-muted-foreground font-body mt-1">A fresh handful from the fact library, reshuffled every day</p>
+              </div>
+            </div>
           </div>
           <div className="hidden sm:flex items-center gap-4">
             <Link to="/facts/" className="hidden sm:flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2">

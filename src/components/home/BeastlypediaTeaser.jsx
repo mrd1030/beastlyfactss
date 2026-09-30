@@ -42,13 +42,17 @@ export default function BeastlypediaTeaser() {
           className="flex items-end justify-between mb-5"
         >
           <div>
-            <IconChip icon={FoxFaceTail} color="teal" size="row" className="mb-2" />
-            <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
-              Beastlypedia
-            </h2>
-            <p className="text-xs text-muted-foreground font-body mt-0.5">
-              {`${beastfiles.length} files on wild animals worth knowing about. No care guides, just the animal.`}
-            </p>
+            <div className="flex items-center gap-3">
+              <IconChip icon={FoxFaceTail} color="teal" size="row" />
+              <div className="min-w-0">
+                <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
+                  Beastlypedia
+                </h2>
+                <p className="text-xs text-muted-foreground font-body mt-0.5">
+                  {`${beastfiles.length} files on wild animals worth knowing about. No care guides, just the animal.`}
+                </p>
+              </div>
+            </div>
           </div>
           <Link
             to="/beastlypedia/"

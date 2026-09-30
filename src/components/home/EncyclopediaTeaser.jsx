@@ -70,13 +70,17 @@ export default function EncyclopediaTeaser() {
           className="flex items-end justify-between mb-5"
         >
           <div>
-            <IconChip icon={Library} color="teal" size="row" className="mb-2" />
-            <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
-              Animal Encyclopedia
-            </h2>
-            <p className="text-xs text-muted-foreground font-body mt-0.5">
-              {`Pet species profiles across ${encyclopediaCategories.length} categories, from dogs and cats to reptiles and fish.`}
-            </p>
+            <div className="flex items-center gap-3">
+              <IconChip icon={Library} color="teal" size="row" />
+              <div className="min-w-0">
+                <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
+                  Animal Encyclopedia
+                </h2>
+                <p className="text-xs text-muted-foreground font-body mt-0.5">
+                  {`Pet species profiles across ${encyclopediaCategories.length} categories, from dogs and cats to reptiles and fish.`}
+                </p>
+              </div>
+            </div>
           </div>
           <Link to="/encyclopedia/" className="hidden sm:flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2">
             Browse all animals <ArrowRight className="w-3.5 h-3.5" />

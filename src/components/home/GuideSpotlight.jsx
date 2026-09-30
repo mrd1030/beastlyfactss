@@ -70,13 +70,17 @@ export default function GuideSpotlight() {
           className="flex items-end justify-between mb-6"
         >
           <div>
-            <IconChip icon={BookOpen} color="orange" size="row" className="mb-2" />
-            <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
-              Care guides
-            </h2>
-            <p className="text-xs text-muted-foreground font-body mt-0.5">
-              {`A rotating pick from ${guidesIndex.guides.length}+ species guides. Each one links out to deep dives on setup, diet, health, handling, cost, and the law.`}
-            </p>
+            <div className="flex items-center gap-3">
+              <IconChip icon={BookOpen} color="orange" size="row" />
+              <div className="min-w-0">
+                <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
+                  Care guides
+                </h2>
+                <p className="text-xs text-muted-foreground font-body mt-0.5">
+                  {`A rotating pick from ${guidesIndex.guides.length}+ species guides. Each one links out to deep dives on setup, diet, health, handling, cost, and the law.`}
+                </p>
+              </div>
+            </div>
           </div>
           <Link to="/guides/" className="hidden sm:flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2">
             All guides <ArrowRight className="w-3.5 h-3.5" />
