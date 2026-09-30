@@ -23,18 +23,22 @@ const EMPTY_STATS = { played: 0, wins: 0, streak: 0, maxStreak: 0, lastWinDay: n
 const EMPTY_UNLIMITED = { seen: [], current: null, played: 0, wins: 0 };
 const KEY_ROWS = ['QWERTYUIOP', 'ASDFGHJKL', 'ZXCVBNM'];
 
+// Beastle's own tile colors. Dark mode uses the theme teal and gold; light
+// mode has its own, because the theme's light primary and accent (deep forest
+// green, mustard) read muddy as game tiles. In light mode the three run dark,
+// mid, light (teal, gray, amber), so they separate by brightness alone for
+// color-blind players.
+const TILE_FILL = {
+  correct: 'bg-[#278769] text-white dark:bg-primary dark:text-primary-foreground',
+  present: 'bg-[#f39b16] text-[#113b30] dark:bg-accent dark:text-accent-foreground',
+  absent: 'bg-[#938c85] text-white dark:bg-muted-foreground/40 dark:text-foreground',
+};
 const TILE_STYLE = {
-  correct: 'bg-primary border-primary text-primary-foreground',
-  present: 'bg-accent border-accent text-accent-foreground',
-  // Pale on purpose: absent has to read as clearly lighter than the dark
-  // green, not just a different hue, or color-blind players lose it.
-  absent: 'bg-muted-foreground/40 border-transparent text-foreground',
+  correct: `${TILE_FILL.correct} border-[#278769] dark:border-primary`,
+  present: `${TILE_FILL.present} border-[#f39b16] dark:border-accent`,
+  absent: `${TILE_FILL.absent} border-transparent`,
 };
-const KEY_STYLE = {
-  correct: 'bg-primary text-primary-foreground',
-  present: 'bg-accent text-accent-foreground',
-  absent: 'bg-muted-foreground/40 text-foreground',
-};
+const KEY_STYLE = TILE_FILL;
 
 // Seconds until the next day on the site clock, for the "next Beastle" line.
 function secondsToMidnight() {
@@ -341,11 +345,7 @@ function ShareButton({ onShare, icon: Icon, label, busyLabel, className }) {
   );
 }
 
-const MINI_TILE = {
-  correct: 'bg-primary',
-  present: 'bg-accent',
-  absent: 'bg-muted-foreground/40',
-};
+const MINI_TILE = TILE_FILL;
 
 // The player's own daily result, kept apart from the animal's card so the
 // share buttons clearly share the Beastle, not the animal: score, streak, a
@@ -433,7 +433,7 @@ function Stats({ stats, today }) {
             <span className="w-3 text-muted-foreground tabular-nums">{i + 1}</span>
             <div className="flex-1">
               <div
-                className="bg-primary text-primary-foreground rounded px-1.5 py-0.5 text-right font-bold tabular-nums min-w-[1.5rem]"
+                className={`${TILE_FILL.correct} rounded px-1.5 py-0.5 text-right font-bold tabular-nums min-w-[1.5rem]`}
                 style={{ width: `${Math.max(8, (n / max) * 100)}%` }}
               >
                 {n}
@@ -486,7 +486,7 @@ function Bonus({ today, dailyAnswer, bonus, setBonus, addToJournal }) {
                 {q.options.map((o) => {
                   const isRight = o.answer === q.answer;
                   const state = !answered ? 'bg-muted hover:bg-muted/70 text-foreground'
-                    : isRight ? 'bg-primary text-primary-foreground'
+                    : isRight ? TILE_FILL.correct
                       : o.answer === pick ? 'bg-secondary/20 text-foreground line-through' : 'bg-muted/50 text-muted-foreground';
                   return (
                     <button
@@ -824,7 +824,7 @@ function HelpStrip({ entry, guesses, done, clueShown, hintIndex, onClue, onHint 
         <div className="flex items-center gap-3 bg-accent/15 border border-accent/40 rounded-2xl px-4 py-2.5" role="note">
           <Lightbulb className="w-4 h-4 text-accent-ink flex-shrink-0" />
           <p className="text-sm font-body text-foreground">{`${spotLabel(entry.answer, hintIndex)} is`}</p>
-          <span className="w-9 h-9 flex items-center justify-center rounded-[18%] bg-primary text-primary-foreground font-display font-bold text-lg">
+          <span className={`w-9 h-9 flex items-center justify-center rounded-[18%] ${TILE_FILL.correct} font-display font-bold text-lg`}>
             {lettersOf(entry.answer)[hintIndex]}
           </span>
         </div>
@@ -843,9 +843,9 @@ function HowToPlay() {
         Type any real word that fits each space. After each guess the tiles change color:
       </p>
       <ul className="space-y-1">
-        <li><span className="inline-block w-4 h-4 rounded-sm bg-primary align-middle mr-2" />Green: right letter, right spot.</li>
-        <li><span className="inline-block w-4 h-4 rounded-sm bg-accent align-middle mr-2" />Gold: the letter is in the name, but somewhere else. This is Wordle&apos;s yellow.</li>
-        <li><span className="inline-block w-4 h-4 rounded-sm bg-muted-foreground/40 align-middle mr-2" />Gray: the letter is not in the name.</li>
+        <li><span className={`inline-block w-4 h-4 rounded-sm align-middle mr-2 ${TILE_FILL.correct}`} />Green: right letter, right spot.</li>
+        <li><span className={`inline-block w-4 h-4 rounded-sm align-middle mr-2 ${TILE_FILL.present}`} />Gold: the letter is in the name, but somewhere else. This is Wordle&apos;s yellow.</li>
+        <li><span className={`inline-block w-4 h-4 rounded-sm align-middle mr-2 ${TILE_FILL.absent}`} />Gray: the letter is not in the name.</li>
       </ul>
       <p>In a two-word name, once one word is all green it stays filled in, and you only type the other word.</p>
       <p>Everyone gets the same animal each day, and a new one arrives at midnight Eastern. The number of letters changes every day, from short names like LION to longer ones like SALAMANDER.</p>
@@ -1139,8 +1139,10 @@ export default function Beastle() {
   const pageTitle = 'Beastle: The Daily Animal Word Game | Beastly Facts';
   const pageDescription = 'Guess the hidden animal in six tries. A new animal every day, the same one for everyone, plus a bonus fact round and unlimited practice.';
 
+  // On wide screens the game sits in a framed card over a soft gold wash, so
+  // the narrow column reads as a game table instead of floating in the page.
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen lg:bg-gradient-to-b lg:from-accent/10 lg:via-transparent lg:to-transparent">
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
@@ -1159,7 +1161,7 @@ export default function Beastle() {
         <meta name="twitter:image" content="https://beastlyfacts.com/assets/og/beastle.jpg" />
       </Helmet>
 
-      <div className="max-w-lg mx-auto px-4 pt-8 pb-16">
+      <div className="max-w-lg mx-auto px-4 pt-8 pb-16 lg:max-w-xl lg:my-10 lg:px-10 lg:pt-10 lg:pb-12 lg:bg-card lg:border lg:border-border lg:rounded-3xl lg:shadow-sm">
         <div className="flex items-center justify-between gap-3 mb-4">
           <div>
             <h1 className="font-display font-bold text-3xl text-foreground">Beastle</h1>
