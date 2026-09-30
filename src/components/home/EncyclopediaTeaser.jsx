@@ -11,6 +11,7 @@ import LocalImage from '@/components/shared/LocalImage';
 import encyclopediaIndex from '@/lib/generated/encyclopedia-index.json';
 import { Library } from 'lucide-react';
 import IconChip from '@/components/shared/IconChip';
+import GroupIcon from '@/components/icons/GroupIcon';
 const encyclopediaAnimals = encyclopediaIndex.animals;
 
 const PREVIEW_COUNT = 8;
@@ -109,10 +110,10 @@ export default function EncyclopediaTeaser() {
                         variant="card"
                       />
                     ) : (
-                      <div className="w-full h-full flex items-center justify-center text-4xl">{cat.emoji}</div>
+                      <div className="w-full h-full flex items-center justify-center"><GroupIcon name={cat.name} className="w-10 h-10 text-muted-foreground" /></div>
                     )}
-                    <span className="absolute bottom-2 right-2 w-8 h-8 rounded-full bg-card/90 backdrop-blur-sm flex items-center justify-center text-base shadow-sm">
-                      {cat.emoji}
+                    <span className="absolute bottom-2 right-2 w-8 h-8 rounded-full bg-card/90 backdrop-blur-sm flex items-center justify-center shadow-sm">
+                      <GroupIcon name={cat.name} className="w-4 h-4 text-secondary" />
                     </span>
                   </div>
                   <div className="p-3 flex flex-col flex-1">

@@ -18,6 +18,7 @@ import { Library, Library as BadgeIcon } from 'lucide-react';
 import IconChip, { PageBadge } from '@/components/shared/IconChip';
 import { SearchX } from 'lucide-react';
 import { BookOpen } from 'lucide-react';
+import GroupIcon from '@/components/icons/GroupIcon';
 
 // Tabs
 const TABS = [
@@ -317,11 +318,11 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
           <Link
             to="/encyclopedia/"
             onClick={() => setActiveCategory('All')}
-            className={`inline-block pb-1 border-b-2 whitespace-nowrap transition-colors ${
+            className={`inline-flex items-center gap-1.5 pb-1 border-b-2 whitespace-nowrap transition-colors ${
               activeCategory === 'All' ? 'border-secondary text-foreground font-semibold' : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
             }`}
           >
-            ✨ All
+            <GroupIcon name="All" />All
           </Link>
           {encyclopediaCategories.map(cat => {
             const urlSlug = cat.name.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');
@@ -330,11 +331,11 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
                 <span className="text-muted-foreground/40 mx-2.5" aria-hidden="true">&middot;</span>
                 <Link
                   to={`/encyclopedia/category/${urlSlug}/`}
-                  className={`inline-block pb-1 border-b-2 whitespace-nowrap transition-colors ${
+                  className={`inline-flex items-center gap-1.5 pb-1 border-b-2 whitespace-nowrap transition-colors ${
                     activeCategory === cat.name ? 'border-secondary text-foreground font-semibold' : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
                   }`}
                 >
-                  {`${cat.emoji} ${cat.name}`}
+                  <GroupIcon name={cat.name} />{cat.name}
                 </Link>
               </React.Fragment>
             );
@@ -346,7 +347,7 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
         {grouped.map((group) => (
           <motion.div key={group.name} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
             <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
-              <span>{group.emoji}</span>{` ${group.name}`}
+              <GroupIcon name={group.name} className="w-4 h-4 text-secondary" />{group.name}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
               {group.animals.map((animal) => (
@@ -406,7 +407,7 @@ function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeS
                 activeFilter === f.label ? 'bg-accent text-accent-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
               }`}
             >
-              <span>{f.emoji}</span>{` ${f.label}`}
+              <GroupIcon name={f.label} />{f.label}
             </Link>
           ))}
         </div>
@@ -451,7 +452,7 @@ function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeS
           groups.map((group) => (
             <motion.div key={group.name} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
               <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
-                <span>{group.emoji}</span>{` ${group.name}`}
+                <GroupIcon name={group.name} className="w-4 h-4 text-secondary" />{group.name}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
                 {group.guides.map((guide) => (

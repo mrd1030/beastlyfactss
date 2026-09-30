@@ -6,6 +6,7 @@ import BeastfileCard from '@/components/beastlypedia/BeastfileCard';
 import CrossLinkCta from '@/components/shared/CrossLinkCta';
 import { SearchX } from 'lucide-react';
 import IconChip from '@/components/shared/IconChip';
+import GroupIcon from '@/components/icons/GroupIcon';
 
 const CANONICAL = 'https://beastlyfacts.com/beastlypedia/';
 const DESCRIPTION =
@@ -67,7 +68,7 @@ export default function Beastlypedia() {
     group === 'All' ? '/beastlypedia/' : `/beastlypedia/group/${group.slug}/`;
 
   const filterLinkClass = (isActive) =>
-    `inline-block pb-1 border-b-2 whitespace-nowrap transition-colors ${
+    `inline-flex items-center gap-1.5 pb-1 border-b-2 whitespace-nowrap transition-colors ${
       isActive
         ? 'border-secondary text-foreground font-semibold'
         : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
@@ -120,7 +121,7 @@ export default function Beastlypedia() {
 
         <div className="flex flex-wrap items-center gap-y-2 mb-5 text-xs font-body">
           <Link to={groupPath('All')} className={filterLinkClass(activeGroup === 'All')}>
-            All
+            <GroupIcon name="All" />All
           </Link>
           {populatedGroups.map((g) => (
             <React.Fragment key={g.slug}>
@@ -129,7 +130,7 @@ export default function Beastlypedia() {
                 to={groupPath(g)}
                 className={filterLinkClass(activeGroup === g.name)}
               >
-                {`${g.emoji} ${g.name}`}
+                <GroupIcon name={g.name} />{g.name}
               </Link>
             </React.Fragment>
           ))}

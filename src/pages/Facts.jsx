@@ -17,6 +17,7 @@ import FactModal from '@/components/shared/FactModal';
 import ImageLightbox from '@/components/shared/ImageLightbox';
 import { Compass as BadgeIcon } from 'lucide-react';
 import IconChip, { PageBadge } from '@/components/shared/IconChip';
+import GroupIcon from '@/components/icons/GroupIcon';
 import { SearchX } from 'lucide-react';
 
 // Reduced footprint size to instantly clear initial painting lag
@@ -314,13 +315,13 @@ export default function Facts() {
                 <Link
                   to={slugify(cat) === 'all' ? '/facts/' : `/facts/category/${slugify(cat)}/`}
                   onClick={() => { setOrder(o => (o === 'random' ? 'daily' : o)); setRandomOrder([]); }}
-                  className={`inline-block pb-1 border-b-2 whitespace-nowrap transition-colors ${
+                  className={`inline-flex items-center gap-1.5 pb-1 border-b-2 whitespace-nowrap transition-colors ${
                     activeCategory === cat
                       ? 'border-secondary text-foreground font-semibold'
                       : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
                   }`}
                 >
-                  {cat === 'All' ? '✨ All' : `${categories.find(c => c.name === cat)?.emoji || ''} ${cat}`}
+                  <GroupIcon name={cat} />{cat}
                 </Link>
               </React.Fragment>
             ))}

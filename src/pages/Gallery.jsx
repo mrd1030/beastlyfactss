@@ -16,6 +16,7 @@ import { seededShuffle } from '@/lib/utils/seededShuffle';
 import { Camera as BadgeIcon } from 'lucide-react';
 import IconChip, { PageBadge } from '@/components/shared/IconChip';
 import { SearchX, ImageOff } from 'lucide-react';
+import GroupIcon from '@/components/icons/GroupIcon';
 
 const PAGE_SIZE = 30;
 
@@ -236,13 +237,13 @@ export default function Gallery() {
                 <button
                   type="button"
                   onClick={() => handleCategoryChange(cat)}
-                  className={`inline-block pb-1 border-b-2 whitespace-nowrap transition-colors ${
+                  className={`inline-flex items-center gap-1.5 pb-1 border-b-2 whitespace-nowrap transition-colors ${
                     activeCategory === cat
                       ? 'border-secondary text-foreground font-semibold'
                       : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
                   }`}
                 >
-                  {cat === 'All' ? '✨ All' : `${categories.find(c => c.name === cat)?.emoji || ''} ${cat}`}
+                  <GroupIcon name={cat} />{cat}
                 </button>
               </React.Fragment>
             ))}

@@ -63,7 +63,7 @@ export default function CarePackages() {
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 pt-10 pb-16 grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-center">
           <div>
             <p className="cph-hero-eyebrow inline-flex items-center gap-2 text-xs font-body font-bold tracking-widest uppercase mb-4">
-              <span aria-hidden="true">🖨️</span> Printable owner manuals
+              <Printer className="w-4 h-4" aria-hidden="true" /> Printable owner manuals
             </p>
             <h1 className="font-display font-bold text-4xl sm:text-5xl leading-[1.05] tracking-tight mb-5">
               Clear husbandry standards for animals you actually keep.

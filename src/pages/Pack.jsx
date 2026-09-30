@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from '@/lib/motion-safe';
-import { Heart, Share2, ChevronDown, ChevronUp, X, RotateCcw, Image as ImageIcon } from 'lucide-react';
+import { Heart, HeartCrack, Share2, ChevronDown, ChevronUp, X, RotateCcw, Image as ImageIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { facts } from '@/lib/data/facts';
 import { imagePathFor } from '@/lib/data/factImages';
@@ -388,11 +388,12 @@ export default function Pack() {
             className="text-center py-20"
           >
             <motion.span
-              className="text-6xl block mb-4"
+              className="inline-flex mb-4 text-secondary"
               animate={{ scale: [1, 1.1, 1] }}
               transition={{ repeat: Infinity, duration: 2 }}
+              aria-hidden="true"
             >
-              💔
+              <HeartCrack className="w-14 h-14" />
             </motion.span>
             <h2 className="font-display font-bold text-xl text-foreground mb-2">
               Your pack is empty!

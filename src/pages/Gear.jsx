@@ -16,6 +16,7 @@ import GEAR_BY_ANIMAL from '@/lib/generated/gear-by-animal.json';
 import { ShoppingCart as BadgeIcon } from 'lucide-react';
 import IconChip, { PageBadge } from '@/components/shared/IconChip';
 import { SearchX } from 'lucide-react';
+import GroupIcon from '@/components/icons/GroupIcon';
 
 const PRODUCT_BY_SLUG = new Map(AFFILIATE_PRODUCTS.map(p => [p.slug, p]));
 
@@ -249,7 +250,7 @@ export default function Gear() {
                   : 'bg-card border border-border text-muted-foreground hover:text-foreground'
               }`}
             >
-              <span>🐾</span> All Pets
+              <GroupIcon name="All Pets" />All Pets
             </Link>
             {GEAR_PET_TYPES.map(t => (
               <Link
@@ -261,7 +262,7 @@ export default function Gear() {
                     : 'bg-card border border-border text-muted-foreground hover:text-foreground'
                 }`}
               >
-                <span>{t.emoji}</span>{` ${t.label}`}
+                <GroupIcon name={t.label} />{t.label}
               </Link>
             ))}
           </div>

@@ -17,6 +17,7 @@ import { BookOpen, BookOpen as BadgeIcon } from 'lucide-react';
 import IconChip, { PageBadge } from '@/components/shared/IconChip';
 import { SearchX } from 'lucide-react';
 import { Library } from 'lucide-react';
+import GroupIcon from '@/components/icons/GroupIcon';
 
 const guideFilters = [
   { label: 'All', emoji: '🐾' },
@@ -225,7 +226,7 @@ export default function Guides() {
                       : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
                   }`}
                 >
-                  <span>{f.emoji}</span>{` ${f.label}`}
+                  <GroupIcon name={f.label} />{f.label}
                 </Link>
               </React.Fragment>
             );
@@ -275,7 +276,7 @@ export default function Guides() {
           groupedGuides.map((group) => (
             <motion.div key={group.name} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
               <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
-                <span>{group.emoji}</span>{` ${group.name}`}
+                <GroupIcon name={group.name} className="w-4 h-4 text-secondary" />{group.name}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
                 {group.guides.map((guide) => (

@@ -654,7 +654,7 @@ export default function Blog() {
               <div className="space-y-3">
                 {allPosts.slice(0, 4).map(post => (
                   <button key={post._id} onClick={() => handleSelectPost(post)} className="w-full text-left flex items-start gap-2.5 group">
-                    <span className="text-lg flex-shrink-0">🦎</span>
+                    {(() => { const Icon = CATEGORY_ICONS[slugify(post.category || '')]; return Icon ? <Icon className="w-4 h-4 flex-shrink-0 mt-0.5 text-muted-foreground" aria-hidden="true" /> : null; })()}
                     <p className="text-xs text-muted-foreground group-hover:text-foreground transition-colors line-clamp-2">{post.title}</p>
                   </button>
                 ))}

@@ -786,7 +786,7 @@ export default function GuideDetail() {
                   to="/gear/"
                   className="flex items-center gap-2 text-sm font-body font-semibold text-foreground hover:text-secondary transition-colors py-1"
                 >
-                  <span className="text-base">🛒</span>
+                  <ShoppingCart className="w-4 h-4 text-secondary" aria-hidden="true" />
                   Recommended Gear
                   <ChevronRight className="w-3.5 h-3.5 ml-auto" />
                 </Link>

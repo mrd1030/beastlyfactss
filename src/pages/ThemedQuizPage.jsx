@@ -15,6 +15,7 @@ import { imagePathFor } from '@/lib/data/factImages';
 import { canShareImage, quizShareImage, scoreShareText, shareQuizResult } from '@/lib/utils/quizShareImage';
 import FactModal from '@/components/shared/FactModal';
 import ImageLightbox from '@/components/shared/ImageLightbox';
+import { BookCheck, CircleHelp, Heart } from 'lucide-react';
 
 // A source pointing at /facts/<slug>/ is a fact card, not a page of its own:
 // that route just opens the Facts page with the fact's modal, and closing the
@@ -271,9 +272,9 @@ export default function ThemedQuizPage({ quiz }) {
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>
               <span className="text-6xl block mb-4" aria-hidden="true">{quiz.emoji}</span>
               <div className="flex items-center justify-center gap-6 mb-6 text-sm font-body text-muted-foreground">
-                {[['❓', `${total} Questions`], ['📚', 'Sourced Answers'], [quiz.reward.emoji, 'Reward Card']].map(([e, l]) => (
+                {[[CircleHelp, `${total} Questions`], [BookCheck, 'Sourced Answers'], [quiz.reward.emoji, 'Reward Card']].map(([e, l]) => (
                   <div key={l} className="flex flex-col items-center gap-1">
-                    <span className="text-2xl" aria-hidden="true">{e}</span>
+                    {typeof e === 'string' ? <span className="text-2xl" aria-hidden="true">{e}</span> : React.createElement(e, { className: 'w-6 h-6 text-secondary', 'aria-hidden': true })}
                     <span>{l}</span>
                   </div>
                 ))}
@@ -292,14 +293,14 @@ export default function ThemedQuizPage({ quiz }) {
                   ) : (
                     <button onClick={handleSaveBestToPack}
                       className="inline-flex items-center gap-1.5 mt-3 text-xs font-body font-bold text-secondary hover:underline">
-                      ❤️ Save this card to your Pack
+                      <Heart className="w-3.5 h-3.5" aria-hidden="true" /> Save this card to your Pack
                     </button>
                   )}
                 </div>
               )}
               <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={() => setStep('quiz')}
                 className="bg-secondary text-secondary-foreground font-body font-bold text-base px-8 py-3.5 rounded-2xl shadow-lg shadow-secondary/30">
-                Start Quiz 🚀
+                Start Quiz
               </motion.button>
 
               {sourcePages.length > 0 && (

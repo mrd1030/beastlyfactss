@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { Scale, Share2 } from 'lucide-react';
+import { Scale, Share2, User } from 'lucide-react';
 import IconChip from '@/components/shared/IconChip';
 import { encyclopediaAnimals } from '@/lib/data/encyclopedia';
 import { humanReference } from '@/lib/data/humanReference';
@@ -68,7 +68,9 @@ export default function AnimalCompare({ animal }) {
           <p className="font-body font-bold text-sm text-foreground leading-snug">{animal.name}</p>
         </div>
         <div className="text-center">
-          <span className="text-3xl block mb-1">{compareAnimal.emoji}</span>
+          {compareId === 'human'
+            ? <User className="w-8 h-8 mx-auto mb-1 text-muted-foreground" aria-hidden="true" />
+            : <span className="text-3xl block mb-1">{compareAnimal.emoji}</span>}
           <p className="font-body font-bold text-sm text-foreground leading-snug">{compareAnimal.name}</p>
         </div>
       </div>
