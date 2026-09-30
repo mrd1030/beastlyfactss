@@ -1,5 +1,5 @@
 import {
-  ArrowLeftRight, Bird, Cat, Compass, Dog, Fish, Puzzle, Scale,
+  ArrowLeftRight, Bird, Cat, Dog, Fish, ListChecks, Puzzle, Scale,
   ShoppingCart, Sparkles, Stethoscope, Turtle,
 } from 'lucide-react';
 import {
@@ -24,7 +24,7 @@ export const CATEGORY_ICONS = {
   'pet-care': Stethoscope,
   'product-picks': ShoppingCart,
   reptiles: Chameleon,
-  roundups: Compass,
+  roundups: ListChecks,
   'short-stories': FeatherText,
   'small-and-exotic-pets': Hedgehog,
   'turtles-and-tortoises': Turtle,
