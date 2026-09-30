@@ -29,6 +29,7 @@ const BASE_URL = `http://localhost:${PORT}`;
 // live site's post list from, so routes derived here can't drift from the pages
 // the app will actually render.
 import { RELOCATED_ARTICLE_SLUG_SET } from './src/lib/data/relocatedArticles.js';
+import { WILD_TOPICS } from './src/lib/data/articleTopics.js';
 
 const MDX_META_PATH = 'src/lib/generated/mdx-meta.json';
 
@@ -98,6 +99,12 @@ function getMdxCategoryRoutes(meta) {
       if (!slug || slug === 'site-news' || slug === 'short-stories') continue;
       routes.add(`/blog/category/${slug}`);
     }
+  }
+  // Topic views inside Wild Animals (src/lib/data/articleTopics.js): noindex
+  // filtered copies of the category page, prerendered so a hard load of one
+  // finds a file instead of a 404.
+  if (routes.has('/blog/category/wild-animals')) {
+    for (const t of WILD_TOPICS) routes.add(`/blog/category/wild-animals/${t.slug}`);
   }
   return [...routes];
 }

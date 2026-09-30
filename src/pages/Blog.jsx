@@ -6,6 +6,17 @@ import { motion } from '@/lib/motion-safe';
 import { ArrowLeft, ChevronDown, Clock, Newspaper, Search as SearchIcon, X } from 'lucide-react';
 import IconChip, { PageBadge } from '@/components/shared/IconChip';
 import { ANIMAL_CATEGORY_SLUGS, CATEGORY_ICONS } from '@/lib/data/categoryIcons';
+import { ARTICLE_TOPIC, WILD_TOPICS } from '@/lib/data/articleTopics';
+import { BadgeCheck, CalendarDays, Sprout, Star, Zap } from 'lucide-react';
+
+const TOPIC_ICONS = {
+  all: CATEGORY_ICONS['wild-animals'],
+  'wild-abilities': Zap,
+  'myths-busted': BadgeCheck,
+  conservation: Sprout,
+  'animal-days': CalendarDays,
+  spotlights: Star,
+};
 import { useNavigate, useLocation, useParams, useNavigationType, Link } from 'react-router-dom';
 import { getCategoryBySlug } from '@/lib/data/categories';
 import { blogPosts as localPosts } from '@/lib/data/newsletters';
@@ -86,7 +97,7 @@ function findStaticPost(postParam) {
 export default function Blog() {
   const navigate = useNavigate();
   const location = useLocation();
-  const { slug: routeSlug, catSlug } = useParams();
+  const { slug: routeSlug, catSlug, topicSlug } = useParams();
 
   // The day "Today's reads" is picked for. Build date first so the prerendered
   // HTML and the first client render agree, then the real date after mount.
@@ -117,6 +128,10 @@ export default function Blog() {
     return findStaticPost(postParam);
   });
   const [page, setPage] = useState(1);
+  // The topic inside a category (/blog/category/wild-animals/<topic>/, Wild
+  // Animals only for now). From the route on the first render, like the
+  // category: each topic view is prerendered already filtered.
+  const [topic, setTopic] = useState(() => topicSlug || 'all');
   const listRef = useRef(null);
 
   useEffect(() => {
@@ -127,6 +142,7 @@ export default function Blog() {
 
     setActiveCategory(catParam || 'All');
     setPage(pageParam);
+    setTopic(topicSlug || 'all');
 
     if (postParam) {
       // Short stories moved to their own Chronicles section - send any old
@@ -144,7 +160,7 @@ export default function Blog() {
     } else {
       setSelectedPost(null);
     }
-  }, [location.search, routeSlug, catSlug]);
+  }, [location.search, routeSlug, catSlug, topicSlug]);
 
   // Free-text filtering is client-side only (not URL-synced) - reset back to
   // page 1 whenever the query changes so a stale deep page doesn't render empty.
@@ -177,6 +193,7 @@ export default function Blog() {
 
 
   const searchQuery = search.trim().toLowerCase();
+  const topicFilterOn = slugify(activeCategory) === 'wild-animals';
 
   const filtered = allPosts.filter(p => {
     if (slugify(activeCategory) !== 'all') {
@@ -186,6 +203,7 @@ export default function Blog() {
         : p.category && slugify(p.category) === lowerActive;
       if (!inCategory) return false;
     }
+    if (topicFilterOn && topic !== 'all' && ARTICLE_TOPIC[p.slug?.current || p.slug] !== topic) return false;
     if (searchQuery) {
       const haystack = `${p.title || ''} ${p.excerpt || ''}`.toLowerCase();
       if (!haystack.includes(searchQuery)) return false;
@@ -325,7 +343,7 @@ export default function Blog() {
     }
     // Prefer the real URL slug from the route; slugify only for legacy ?category= titles.
     const catPath = activeCategory && slugify(activeCategory) !== 'all'
-      ? `/blog/category/${catSlug || slugify(activeCategory)}/`
+      ? `/blog/category/${catSlug || slugify(activeCategory)}/${topicSlug ? `${topicSlug}/` : ''}`
       : '/blog/';
     const urlParams = new URLSearchParams();
     if (page > 1) urlParams.set('page', page.toString());
@@ -370,7 +388,7 @@ export default function Blog() {
   const handlePageChange = (newPage) => {
     setPage(newPage);
     const catPath = activeCategory && slugify(activeCategory) !== 'all'
-      ? `/blog/category/${catSlug || slugify(activeCategory)}/`
+      ? `/blog/category/${catSlug || slugify(activeCategory)}/${topicSlug ? `${topicSlug}/` : ''}`
       : '/blog/';
     const urlParams = new URLSearchParams();
     if (newPage > 1) urlParams.set('page', newPage.toString());
@@ -394,7 +412,9 @@ export default function Blog() {
     );
   }
 
-  const shouldNoindex = hasNoindexStateParams(location.search);
+  // A topic view is a filtered copy of its category page: noindex, with the
+  // canonical (blogCanonical, built from catSlug alone) on the category page.
+  const shouldNoindex = hasNoindexStateParams(location.search) || Boolean(topicSlug);
   const catTitle = catSlug
     ? catSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
     : null;
@@ -522,6 +542,28 @@ export default function Blog() {
                 </div>
               </div>
             ))}
+            {/* Topics inside Wild Animals: filtered views at
+                /blog/category/wild-animals/<topic>/, noindex, so the category
+                page stays the indexed one. */}
+            {topicFilterOn && (
+              <div className="rounded-xl bg-muted/50 px-3 py-2.5">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground/70 mb-1.5">In Wild Animals</p>
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+                  {[{ slug: 'all', label: 'All wild' }, ...WILD_TOPICS].map(t => (
+                    <Link
+                      key={t.slug}
+                      to={t.slug === 'all' ? '/blog/category/wild-animals/' : `/blog/category/wild-animals/${t.slug}/`}
+                      className={`inline-flex items-center gap-1 pb-1 border-b-2 whitespace-nowrap transition-colors ${
+                        topic === t.slug ? 'border-secondary text-foreground font-semibold' : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
+                      }`}
+                    >
+                      {React.createElement(TOPIC_ICONS[t.slug], { className: 'w-3.5 h-3.5', 'aria-hidden': true })}
+                      {t.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>

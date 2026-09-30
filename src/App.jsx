@@ -112,6 +112,7 @@ const AuthenticatedApp = () => {
           <Route path="/beastlypedia/:slug" element={<BeastfileDetail />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/category/:catSlug" element={<Blog />} />
+          <Route path="/blog/category/:catSlug/:topicSlug" element={<Blog />} />
           <Route path="/blog/:slug" element={<Blog />} />
           <Route path="/chronicles" element={<Chronicles />} />
           <Route path="/chronicles/:seriesId" element={<Chronicles />} />
