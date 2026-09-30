@@ -5,7 +5,7 @@ import { slugify } from '@/lib/utils/slugify';
 import { motion } from '@/lib/motion-safe';
 import { ArrowLeft, ChevronDown, Clock, Newspaper, Search as SearchIcon, X } from 'lucide-react';
 import IconChip, { PageBadge } from '@/components/shared/IconChip';
-import { CATEGORY_ICONS } from '@/lib/data/categoryIcons';
+import { ANIMAL_CATEGORY_SLUGS, CATEGORY_ICONS } from '@/lib/data/categoryIcons';
 import { useNavigate, useLocation, useParams, useNavigationType, Link } from 'react-router-dom';
 import { getCategoryBySlug } from '@/lib/data/categories';
 import { blogPosts as localPosts } from '@/lib/data/newsletters';
@@ -486,20 +486,41 @@ export default function Blog() {
             </Link>
           )}
 
-          <div className="flex flex-wrap items-center gap-y-2 mt-4 text-xs font-body">
-            {[{ slug: 'all', title: 'All', to: '/blog/' }, ...categories.map(cat => ({ slug: cat.slug, title: cat.title, to: `/blog/category/${cat.slug}/` }))].map((item, i) => (
-              <React.Fragment key={item.slug}>
-                {i > 0 && <span className="text-muted-foreground/40 mx-2.5" aria-hidden="true">&middot;</span>}
-                <Link
-                  to={item.to}
-                  className={`inline-flex items-center gap-1 pb-1 border-b-2 whitespace-nowrap transition-colors ${
-                    slugify(activeCategory) === item.slug ? 'border-secondary text-foreground font-semibold' : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
-                  }`}
-                >
-                  {CATEGORY_ICONS[item.slug] && React.createElement(CATEGORY_ICONS[item.slug], { className: 'w-3.5 h-3.5', 'aria-hidden': true })}
-                  {item.title}
-                </Link>
-              </React.Fragment>
+          {/* Two labeled rows, animals and topics, so 18 categories scan as two
+              short lists instead of one long mixed one. Everything stays
+              visible on phones: the rows wrap, they never scroll sideways. */}
+          <div className="mt-4 space-y-3 text-xs font-body">
+            {/* All articles belongs to neither group, so it stands on its own. */}
+            <Link
+              to="/blog/"
+              className={`inline-flex items-center gap-1 pb-1 border-b-2 whitespace-nowrap transition-colors ${
+                slugify(activeCategory) === 'all' ? 'border-secondary text-foreground font-semibold' : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
+              }`}
+            >
+              <Newspaper className="w-3.5 h-3.5" aria-hidden="true" />
+              All articles
+            </Link>
+            {[
+              ['Animals', categories.filter(cat => ANIMAL_CATEGORY_SLUGS.has(cat.slug))],
+              ['Topics', categories.filter(cat => !ANIMAL_CATEGORY_SLUGS.has(cat.slug))],
+            ].map(([label, group]) => (
+              <div key={label}>
+                <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground/70 mb-1.5">{label}</p>
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+                {group.map(cat => ({ slug: cat.slug, title: cat.title, to: `/blog/category/${cat.slug}/` })).map(item => (
+                  <Link
+                    key={item.slug}
+                    to={item.to}
+                    className={`inline-flex items-center gap-1 pb-1 border-b-2 whitespace-nowrap transition-colors ${
+                      slugify(activeCategory) === item.slug ? 'border-secondary text-foreground font-semibold' : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
+                    }`}
+                  >
+                    {CATEGORY_ICONS[item.slug] && React.createElement(CATEGORY_ICONS[item.slug], { className: 'w-3.5 h-3.5', 'aria-hidden': true })}
+                    {item.title}
+                  </Link>
+                ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>

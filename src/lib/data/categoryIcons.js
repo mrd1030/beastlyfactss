@@ -9,6 +9,13 @@ import {
 // A line icon per category in src/lib/data/categories.js. The animals lucide
 // itself doesn't draw (frog, chameleon, spider, whale, elephant)
 // and the quill come from @lucide/lab.
+// The categories that are a kind of animal, as opposed to a topic (Legal,
+// Comparisons, Roundups...). The Articles page lists the two apart.
+export const ANIMAL_CATEGORY_SLUGS = new Set([
+  'amphibians', 'aquatic-life', 'birds', 'cats', 'dogs', 'fish', 'invertebrates',
+  'reptiles', 'small-and-exotic-pets', 'turtles-and-tortoises', 'wild-animals',
+]);
+
 export const CATEGORY_ICONS = {
   amphibians: FrogFace,
   'aquatic-life': Whale,
