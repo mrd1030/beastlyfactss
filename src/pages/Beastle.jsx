@@ -16,6 +16,7 @@ import { canShareImage, shareQuizResult } from '@/lib/utils/quizShareImage';
 import { beastleShareImage } from '@/lib/beastle/shareImage';
 import { SITE_TIMEZONE } from '@/lib/utils/date';
 import { useIsMobileViewport } from '@/lib/hooks/useIsMobileViewport';
+import { useDialogFocus } from '@/lib/critterKeeper/ui';
 import { getBeastleReminder, getExistingSubscription, isPushSupported, setBeastleReminder } from '@/lib/pushNotifications';
 
 const EMPTY_STATS = { played: 0, wins: 0, streak: 0, maxStreak: 0, lastWinDay: null, dist: [0, 0, 0, 0, 0, 0] };
@@ -226,6 +227,8 @@ function Game({ entry, guesses, done, words, onSubmit, showGroup = false, childr
       if (e.ctrlKey || e.metaKey || e.altKey) return;
       const tag = e.target?.tagName;
       if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+      // A popup like the give-up check owns the keys while it is open.
+      if (document.querySelector('[aria-modal="true"]')) return;
       if (e.key === 'Enter') { e.preventDefault(); onKey('ENTER'); }
       else if (e.key === 'Backspace') onKey('BACK');
       else if (/^[a-zA-Z]$/.test(e.key)) onKey(e.key.toUpperCase());
@@ -585,27 +588,36 @@ function clueFor(entry) {
 // so a 1/6 or 2/6 never had it.
 const CLUE_AFTER = 2;
 
-// One button, two steps: the first tap shows the clue, the second gives up.
-function HelpButton({ entry, clueShown, onClue, onGiveUp }) {
-  const clue = useMemo(() => clueFor(entry), [entry]);
-  const showClue = clueShown && clue;
+// Unlimited's way out, behind an "are you sure" so a stray tap never ends
+// the animal.
+function GiveUp({ onGiveUp }) {
+  const [asking, setAsking] = useState(false);
   return (
-    <div className="flex flex-col items-center gap-2">
-      {showClue && (
-        <div className="w-full bg-accent/15 border border-accent/40 rounded-2xl px-4 py-2.5" role="note">
-          <p className="text-sm font-body text-foreground leading-relaxed">
-            <Lightbulb className="w-4 h-4 text-accent-ink inline -mt-0.5 mr-1.5" />
-            {clue}
-          </p>
-        </div>
-      )}
+    <div className="flex justify-center">
       <button
         type="button"
-        onClick={clueShown || !clue ? onGiveUp : onClue}
+        onClick={() => setAsking(true)}
         className="text-xs font-body font-bold text-muted-foreground hover:text-foreground underline underline-offset-4"
       >
-        {clueShown || !clue ? 'Still stuck? Give up and show the answer' : 'Need help? Get a clue'}
+        Give up and show the answer
       </button>
+      {asking && <ConfirmGiveUp onKeep={() => setAsking(false)} onGiveUp={() => { setAsking(false); onGiveUp(); }} />}
+    </div>
+  );
+}
+
+function ConfirmGiveUp({ onKeep, onGiveUp }) {
+  const ref = useDialogFocus(onKeep);
+  return (
+    <div className="fixed inset-0 z-[60] bg-black/50 flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="beastle-giveup-title">
+      <div ref={ref} className="w-full max-w-sm bg-card border border-border rounded-2xl p-5 shadow-xl">
+        <h2 id="beastle-giveup-title" className="font-display font-bold text-lg text-foreground mb-1">Are you sure?</h2>
+        <p className="text-sm font-body text-muted-foreground mb-4">This animal ends as a miss and the answer shows.</p>
+        <div className="flex gap-2 justify-end">
+          <button type="button" onClick={onKeep} className="px-4 py-2 rounded-xl border border-border font-body font-bold text-sm text-foreground hover:bg-muted">Keep playing</button>
+          <button type="button" onClick={onGiveUp} className="px-4 py-2 rounded-xl bg-destructive text-destructive-foreground font-body font-bold text-sm">Show the answer</button>
+        </div>
+      </div>
     </div>
   );
 }
@@ -691,10 +703,8 @@ function HelpChip({ label, after, guesses, used, available, onUse }) {
   );
 }
 
-// Unlimited keeps its own anytime clue in HelpButton, so it passes letterOnly.
-function HelpStrip({ entry, guesses, done, clueShown, hintIndex, onClue, onHint, letterOnly = false }) {
-  const fact = useMemo(() => clueFor(entry), [entry]);
-  const clue = letterOnly ? null : fact;
+function HelpStrip({ entry, guesses, done, clueShown, hintIndex, onClue, onHint }) {
+  const clue = useMemo(() => clueFor(entry), [entry]);
   const nextLetter = firstUngreened(entry.answer, guesses);
   const letterUsed = hintIndex != null;
   return (
@@ -902,7 +912,7 @@ export default function Beastle() {
 
   const showUnlimitedClue = useCallback(() => {
     const u = unlimitedRef.current;
-    if (!u.current || u.current.done || u.current.clueShown) return;
+    if (!u.current || u.current.done || u.current.clueShown || u.current.guesses.length < CLUE_AFTER) return;
     const next = { ...u, current: { ...u.current, clueShown: true } };
     unlimitedRef.current = next;
     setUnlimited(next);
@@ -1127,7 +1137,7 @@ export default function Beastle() {
         {ready && mode === 'unlimited' && unlimitedEntry && (
           <div className="space-y-5">
             <p className="text-center text-xs font-body font-bold text-accent-ink bg-accent/15 rounded-xl py-2 px-3">
-              Practice mode: no streak here, play as many as you like. Stuck? After 4 guesses you can reveal one letter.
+              Practice mode: no streak here, play as many as you like. Stuck? After 2 guesses you can get a clue, and after 4 you can reveal one letter.
             </p>
             <DifficultyPicker
               level={unlimited.level || 'medium'}
@@ -1142,21 +1152,17 @@ export default function Beastle() {
               onSubmit={submitUnlimited}
             >
               <HelpStrip
-                letterOnly
                 entry={unlimitedEntry}
                 guesses={unlimited.current.guesses}
                 done={unlimited.current.done}
+                clueShown={!!unlimited.current.clueShown}
                 hintIndex={unlimited.current.hintIndex}
+                onClue={showUnlimitedClue}
                 onHint={takeUnlimitedHint}
               />
             </Game>
             {!unlimited.current.done && (
-              <HelpButton
-                entry={unlimitedEntry}
-                clueShown={!!unlimited.current.clueShown}
-                onClue={showUnlimitedClue}
-                onGiveUp={giveUpUnlimited}
-              />
+              <GiveUp onGiveUp={giveUpUnlimited} />
             )}
             {unlimited.current.done && (
               <Reveal entry={unlimitedEntry} won={unlimited.current.won} guesses={unlimited.current.guesses.length}>
