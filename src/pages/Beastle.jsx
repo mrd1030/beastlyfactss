@@ -621,6 +621,17 @@ function archiveRecord(all, day) {
   return rec && rec.answer === answerForDay(day)?.answer ? rec : null;
 }
 
+// A finished daily is also kept in the archive, because the daily slot is
+// overwritten the next day and the archive would otherwise offer that day
+// again as unplayed. It shows there as finished, never as a replay. A day
+// already finished as a replay keeps its replay.
+function withDailyInArchive(all, game) {
+  const answer = answerForDay(game.day)?.answer;
+  if (!game.done || !answer || archiveRecord(all, game.day)?.done) return all;
+  const { guesses, won, clueShown, hintIndex } = game;
+  return { ...all, [game.day]: { answer, guesses, won, done: true, asDaily: true, clueShown, hintIndex } };
+}
+
 // Every past daily, newest first. Replays never touch the streak, the stats
 // or everyone's totals.
 function ArchiveList({ today, archive, onPick }) {
@@ -915,6 +926,16 @@ export default function Beastle() {
   const archiveRef = useRef(archive);
   archiveRef.current = archive;
 
+  // Carries a finished daily into the archive for anyone who finished it
+  // before the archive kept them, as long as the daily slot still holds it.
+  useEffect(() => {
+    if (!ready || !daily?.done) return;
+    const kept = withDailyInArchive(archiveRef.current, daily);
+    if (kept === archiveRef.current) return;
+    archiveRef.current = kept;
+    setArchive(kept);
+  }, [ready, daily, setArchive]);
+
   const submitDaily = useCallback((guess) => {
     const game = dailyRef.current;
     if (game.done) return;
@@ -927,6 +948,9 @@ export default function Beastle() {
     Object.assign(next, { done, won });
     setDaily(next);
     if (!done) return;
+    const kept = withDailyInArchive(archiveRef.current, next);
+    archiveRef.current = kept;
+    setArchive(kept);
     const streak = won ? liveStreak(stats, today) + 1 : 0;
     setStats((s) => {
       const dist = [...(s.dist || EMPTY_STATS.dist)];
@@ -946,7 +970,7 @@ export default function Beastle() {
     logSiteEvent('themed_quiz', `Beastle #${today}: ${won ? guesses.length : 'X'}/${MAX_GUESSES} (${dailyEntry.name})${helps.length ? ` 💡 used ${helps.join(' + ')}` : ' no help'}`);
     if (won) celebrate();
     setShowStats(true);
-  }, [dailyEntry, today, stats, setDaily, setStats, recordQuizCompletion, recordBeastleStreak]);
+  }, [dailyEntry, today, stats, setDaily, setStats, setArchive, recordQuizCompletion, recordBeastleStreak]);
 
   const unlimitedEntry = unlimited.current ? byAnswer.get(unlimited.current.answer) : null;
 
@@ -1280,12 +1304,15 @@ export default function Beastle() {
               <HelpStrip entry={archiveEntry} guesses={archiveGame.guesses} done={archiveGame.done} clueShown={!!archiveGame.clueShown} hintIndex={archiveGame.hintIndex} onClue={takeArchiveClue} onHint={takeArchiveHint} />
             </Game>
             {archiveGame.done && (
-              <Reveal entry={archiveEntry} won={archiveGame.won} guesses={archiveGame.guesses.length}>
+              <Reveal entry={archiveEntry} won={archiveGame.won} guesses={archiveGame.guesses.length} kicker={archiveGame.asDaily ? `Your daily · ${archiveGame.won ? `solved in ${archiveGame.guesses.length} of ${MAX_GUESSES}` : 'missed'}` : undefined}>
                 {nextUnplayedArchive() && (
                   <button type="button" onClick={() => setArchiveDay(nextUnplayedArchive())} className="mt-4 inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground font-body font-bold text-sm px-5 py-2.5 rounded-2xl">
                     {`Play #${nextUnplayedArchive()}`} <ArrowRight className="w-4 h-4" />
                   </button>
                 )}
+                <button type="button" onClick={() => { setArchiveDay(null); setMode('unlimited'); }} className="mt-3 block mx-auto text-xs font-body font-bold text-muted-foreground hover:text-foreground underline underline-offset-4">
+                  Play a random one in Unlimited
+                </button>
               </Reveal>
             )}
           </div>
