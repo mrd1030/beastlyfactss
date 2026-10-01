@@ -12,6 +12,8 @@ import { inSentence, joinList } from '@/lib/utils/animalNames';
 import { breadcrumbSchema } from '@/lib/utils/breadcrumbs';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import LegalDisclaimer from '@/components/mdx/LegalDisclaimer';
+import { SourceNoticeBox } from '@/components/mdx/SourceNotice';
+import { SOURCE_NOTICES, noticeText } from '@/lib/data/sourceNotices';
 import { withBrand, pickWithinLimit, plural, TITLE_MAX, DESCRIPTION_MAX, BRAND } from '@/lib/utils/seo';
 
 const SITE = 'https://beastlyfacts.com';
@@ -112,6 +114,16 @@ export default function ExoticPetLawsState() {
   const verified = verifiedDates?.line;
   const verifiedCitation = verifiedDates?.citation;
   const notes = notesFor(code);
+  // A box at the top for each source with an open notice that rows on this
+  // page rest on (src/lib/data/sourceNotices.js), dated from those rows.
+  const sourceNotices = Object.keys(SOURCE_NOTICES)
+    .map((id) => {
+      const rows = j.rows.filter((r) => r.entry?.sourceId === id);
+      return rows.length
+        ? { id, ...noticeText(id, { surface: 'page', dates: rows.map((r) => r.entry.verifiedOn), count: rows.length, formatDay }) }
+        : null;
+    })
+    .filter((n) => n?.text);
 
   const isState = j.level === 'state';
   // "in Texas" works; "in New York City" works; "in the District of Columbia"
@@ -222,6 +234,10 @@ export default function ExoticPetLawsState() {
           <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-3">
             {`Exotic pet laws in ${inPlace}`}
           </h1>
+          {sourceNotices.map((n) => (
+            <SourceNoticeBox key={n.id} title={n.title} text={n.text} className="!mt-0 !mb-5" />
+          ))}
+
           {/* Single string: see the hydration note on the index page. */}
           <p className="text-muted-foreground font-body leading-relaxed">{opener}</p>
 

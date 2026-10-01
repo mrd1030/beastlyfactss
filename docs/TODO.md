@@ -537,7 +537,8 @@ their August dates. Wayback holds the full list as late as 2026-02-12. Ask IFW,
 or recheck next month.
 
 The 30 guides that discuss Maine carry a `<SourceNotice id="me-unrestricted" />`
-box saying so, worded in src/lib/data/sourceNotices.js. After each recheck,
+box saying so, and the Maine state page carries the same box at the top.
+Both are worded in src/lib/data/sourceNotices.js. After each recheck,
 move `statusCheckedOn` there to the recheck date. Once the full list is back and
 the 50 cells are re-verified, delete the `me-unrestricted` entry: the boxes
 stop rendering on the next build, and the tags can come out of the guides after.
