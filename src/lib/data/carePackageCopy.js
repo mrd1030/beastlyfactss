@@ -732,7 +732,7 @@ export const CARE_PACKAGE_COPY = {
       'The trigger list for chronic laying, why the eggs stay where they are, and egg binding as a same-day emergency',
     ],
     inside: [
-      { emoji: '🏠', title: 'Cage, placement and hazards', line: 'Cage size and the half-inch bar spacing, perches and dishes, where the cage goes, and the household hazards page, PTFE first.' },
+      { emoji: '🏠', title: 'Cage, placement and hazards', line: 'Cage size and the half-inch bar spacing, perches and dishes, where the cage goes, and the household hazards page, starting with nonstick pan fumes (PTFE).' },
       { emoji: '🪟', title: 'Sleep and night frights', line: '10 to 12 hours of real darkness, the dim night light that prevents the signature injury, and day length as the hormone lever.' },
       { emoji: '🥗', title: 'Diet and pellet conversion', line: 'The 75 to 80 percent pellet target, five conversion methods, vegetable and fruit charts, and the never-feed list.' },
       { emoji: '🤝', title: 'Handling and the crest', line: 'Taming in steps, reading the crest, one bird or two, wing clipping from both sides, sexing, and the daily gram scale.' },
@@ -743,7 +743,7 @@ export const CARE_PACKAGE_COPY = {
     previews: [
       { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
       { page: 7, alt: 'Light, sleep and night frights, with the darkness and light targets' },
-      { page: 8, alt: 'Household hazards and bird-proofing, PTFE first' },
+      { page: 8, alt: 'Household hazards and bird-proofing, starting with nonstick pan fumes' },
       { page: 28, alt: 'Setup checklist and targets' },
       { page: 30, alt: 'Budget and shopping list' },
       { page: 32, alt: 'Symptom quick reference table' },
@@ -779,7 +779,7 @@ export const CARE_PACKAGE_COPY = {
     ],
     inside: [
       { emoji: '⚖️', title: 'The honest test', line: 'Nine questions to answer before you buy, five species compared on size, price, noise and temperament, and where the bird comes from.' },
-      { emoji: '🏠', title: 'Housing, dust and hazards', line: 'Cage size, bar gauge and padlocks, the play stand, 10 to 12 hours of darkness, feather dust and the HEPA purifier, and PTFE.' },
+      { emoji: '🏠', title: 'Housing, dust and hazards', line: 'Cage size, bar gauge and padlocks, the play stand, 10 to 12 hours of darkness, feather dust and the HEPA air purifier, and the fumes from overheated nonstick pans (PTFE).' },
       { emoji: '🥗', title: 'Diet and foraging', line: 'The 75 to 80 percent pellet target, converting a seed eater, the never-feed list, nuts as training pay, and nothing in a bowl.' },
       { emoji: '🤝', title: 'Training and behavior', line: 'Training sessions, bites and sexual maturity, over-bonding and independence, screaming, wing clipping, and hormones.' },
       { emoji: '⚠️', title: 'Health and red flags', line: 'Plucking and the molt differential, PBFD, obesity, lipomas and fatty liver, psittacosis, droppings, and quarantine.' },
