@@ -25,6 +25,7 @@ const mdxMeta = JSON.parse(
 const outPath = path.join(root, 'src/lib/generated/legal-summary.json');
 const guidesPath = path.join(root, 'src/lib/generated/legal-guides.json');
 const coveragePath = path.join(root, 'src/lib/generated/legal-coverage.json');
+const verifiedPath = path.join(root, 'src/lib/generated/legal-verified.json');
 
 // Keyed by encyclopediaId, because that is what the encyclopedia route has in
 // hand. The two id sets do not always match: every cat is cat-<breed> in the
@@ -84,10 +85,28 @@ const coverage = {
     .map((c) => legal.jurisdictions[c].name),
 };
 
+// When each guide's legal information was last checked, kept apart from the
+// article's lastUpdated on purpose. A spelling or link pass bumps nothing here;
+// only re-verifying a cell against the published text moves its verifiedOn.
+// Stored as the span of the animal's cells, oldest to newest, so the guide can
+// say a range where there is one (see src/lib/utils/verifiedDates.js). Keyed by
+// guide slug, which is what <LegalDisclaimer> has in hand. A few KB, so the
+// article bundle never imports the matrix to get it.
+const verified = {};
+for (const a of Object.values(legal.animals)) {
+  const slug = /^\/blog\/([^/]+)\/$/.exec(a.article || '')?.[1];
+  const dates = Object.values(a.jurisdictions)
+    .map((e) => e.verifiedOn)
+    .filter((d) => typeof d === 'string' && d)
+    .sort();
+  if (slug && dates.length) verified[slug] = { from: dates[0], to: dates[dates.length - 1] };
+}
+
 fs.mkdirSync(path.dirname(outPath), { recursive: true });
 fs.writeFileSync(outPath, `${JSON.stringify(summary, null, 2)}\n`);
 fs.writeFileSync(guidesPath, `${JSON.stringify(guides, null, 2)}\n`);
 fs.writeFileSync(coveragePath, `${JSON.stringify(coverage, null, 2)}\n`);
+fs.writeFileSync(verifiedPath, `${JSON.stringify(verified, null, 2)}\n`);
 
 const count = Object.keys(summary).length;
 const bytes = fs.statSync(outPath).size;
