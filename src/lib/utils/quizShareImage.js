@@ -168,9 +168,22 @@ export const canShareImage = () => typeof navigator !== 'undefined' && onPhone()
 
 // For browsers with no share sheet: the picture full screen with a note to
 // press and hold it, which saves or shares an image even inside in-app
-// browsers. Plain DOM so any page can call it without a component.
-function showImageToSave(file) {
-  const src = URL.createObjectURL(file);
+// browsers, plus a Download button. Plain DOM so any page can call it without
+// a component. A data: URL rather than a blob: one, because DuckDuckGo's
+// press-and-hold menu and its downloads both refuse blob: images but save
+// data: ones.
+function readAsDataUrl(file) {
+  return new Promise((resolve) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = () => resolve(null);
+    reader.readAsDataURL(file);
+  });
+}
+
+async function showImageToSave(file) {
+  const src = await readAsDataUrl(file);
+  if (!src) return;
   const overlay = document.createElement('div');
   overlay.setAttribute('role', 'dialog');
   overlay.setAttribute('aria-label', 'Your result picture');
@@ -180,19 +193,24 @@ function showImageToSave(file) {
   img.alt = 'Your result picture';
   img.style.cssText = 'max-width:100%;max-height:70vh;border-radius:16px;box-shadow:0 12px 32px rgba(0,0,0,0.4);';
   const note = document.createElement('p');
-  note.textContent = 'Press and hold the picture to save or share it.';
+  note.textContent = 'Press and hold the picture to save or share it, or download it below.';
   note.style.cssText = 'color:#FFF9EE;font:600 16px system-ui,sans-serif;text-align:center;margin:0;';
+  const download = document.createElement('a');
+  download.href = src;
+  download.download = file.name || 'beastly-facts.png';
+  download.textContent = 'Download';
+  download.style.cssText = 'background:#D9A441;color:#1D3226;font:700 15px system-ui,sans-serif;border-radius:12px;padding:10px 28px;text-decoration:none;';
   const close = document.createElement('button');
   close.type = 'button';
   close.textContent = 'Done';
   close.style.cssText = 'background:#FFF9EE;color:#1D3226;font:700 15px system-ui,sans-serif;border:0;border-radius:12px;padding:10px 28px;';
-  const done = () => {
-    overlay.remove();
-    URL.revokeObjectURL(src);
-  };
+  const buttons = document.createElement('div');
+  buttons.style.cssText = 'display:flex;gap:12px;flex-wrap:wrap;justify-content:center;';
+  buttons.append(download, close);
+  const done = () => overlay.remove();
   close.addEventListener('click', done);
   overlay.addEventListener('click', (e) => { if (e.target === overlay) done(); });
-  overlay.append(img, note, close);
+  overlay.append(img, note, buttons);
   document.body.appendChild(overlay);
 }
 
@@ -233,7 +251,7 @@ export async function shareQuizResult({ title, text, url, image }) {
   if (!navigator.share && image && onPhone()) {
     copyText(`${text} ${url}`);
     const file = await image;
-    if (file) showImageToSave(file);
+    if (file) await showImageToSave(file);
     return;
   }
   if (!navigator.share || !onPhone()) {
