@@ -492,3 +492,147 @@ Added 2026-09-25 from the wave 3b changes:
 - [ ] Hamster settling (hamster.html:797, 920): package no handling for the first week; site leave it 24 hours, then start hand-in-cage taming (hamster-handling-guide; RSPCA, Woodgreen).
 - [ ] Hamster groups (hamster.html:577): package lists the Chinese hamster among dwarfs kept in same-sex groups; site says Chinese hamsters live alone, only Roborovski, Campbell's and Winter White can share (hamster-handling-guide; RSPCA).
 - [ ] Hamster (hamster.html:1595): the package cites SpectrumCare, which the site no longer allows (AI-drafted). Replace or drop at the next rebuild.
+
+## 5b. Undefined abbreviations in the care packages (audited 2026-10-01, not edited)
+
+The standard: every abbreviation is spelled out (what the letters stand for, not just a description of what it does) at its first mention in reading order, cover and contents included, and has its own glossary entry. Line numbers are in the generated `content/CAREPACKAGE Guides/source/<slug>.html`. For goldfish and guinea pig the fixes go in the `<slug>-src/pages_*.html` fragments, which match the generated HTML. For axolotl, budgie, lovebird and russian tortoise the fragments are stale (axolotl and tortoise HTML is 2.2 against 2.1 fragments, budgie and lovebird HTML is 2.1 against 2.0 fragments, with body and CSS changes made straight in the HTML), so fix the generated HTML or bring the fragments up to date first; do not run their build.py as things stand. Not counted: pH, DC, US, USB, ICU, vitamin names, author initials, journal titles (PLOS ONE, BMC), brand names (LafeberVet, ReptiFiles, ReptiSun) and the M1 to M12 month columns. Cockatiel, cockatoo and whites-tree-frog were skipped.
+
+**Axolotl**
+- [ ] Axolotl: "ppm" first used p4 (axolotl.html:294) bare, never spelled out; no glossary entry (the glossary only uses it inside Ammonia and Nitrate).
+- [ ] Axolotl: "IUCN" first used p4 (axolotl.html:299) bare, never spelled out; not in the glossary.
+- [ ] Axolotl: "GFP" first used p5 (axolotl.html:321) bare, never spelled out (green fluorescent protein); not in the glossary.
+- [ ] Axolotl: "M.R.S." first used p6 (axolotl.html:372) bare, never spelled out (Maine Revised Statutes); not in the glossary. 2.2-only content.
+- [ ] Axolotl: "CFR" first used p6 (axolotl.html:373, "50 CFR 16") bare, never spelled out (Code of Federal Regulations); not in the glossary. 2.2-only content.
+- [ ] Axolotl: "USFWS" first used p6 (axolotl.html:395); "US Fish and Wildlife Service" is in the sentence before but never paired with the short form; not in the glossary.
+- [ ] Axolotl: "GH" and "KH" first used p12 (axolotl.html:622) bare; spelled out only in the glossary (p40).
+- [ ] Axolotl: "RO" first used p12 (axolotl.html:622) bare, never spelled out (reverse osmosis); not in the glossary.
+- [ ] Axolotl: "PVC" first used p14 (axolotl.html:709) bare, never spelled out; not in the glossary.
+- [ ] Axolotl, Sources page only (p41): AZA (axolotl.html:1769), USGS (:1771), VCA (:1772, described as "Animal Hospitals" but never expanded) and NC State (:1779) bare; none in the glossary.
+
+**Ball python**
+- [ ] Ball python: "IBD" first used p2 contents (ball-python.html:202), then bare on p13 (:639) and p18 (:818); spelled out only from p19 (:837); in the glossary.
+- [ ] Ball python: "PVC" first used p4 (ball-python.html:288) bare, never spelled out; not in the glossary.
+- [ ] Ball python: "IUCN" first used p4 (ball-python.html:292) bare, never spelled out; not in the glossary.
+- [ ] Ball python: "UVB" first used in the p5 enclosure diagram (ball-python.html:327), first text use p6 (:401), bare, never spelled out; not in the glossary.
+- [ ] Ball python: "VCA" first used p7 (ball-python.html:420) bare, never spelled out; not in the glossary.
+- [ ] Ball python: "CDC" first used p9 (ball-python.html:519) bare; spelled out only on the Sources page (p34); not in the glossary.
+- [ ] Ball python: "ASF" spelled out at first use p11 (ball-python.html:568); not in the glossary.
+- [ ] Ball python: "FDA" first used p11 (ball-python.html:583) bare; spelled out only on the Sources page (p34); not in the glossary.
+- [ ] Ball python: "RI" spelled out at first use p17 (ball-python.html:786); not in the glossary.
+
+**Bearded dragon**
+- [ ] Bearded dragon: "UVB" first used on the cover p1 (bearded-dragon.html:139) bare, 52 uses, never spelled out ("ultraviolet light" appears once, in a fun fact at p4 :314, without the label); no glossary entry of its own.
+- [ ] Bearded dragon: "T5 HO" first used p4 (bearded-dragon.html:288) bare; the glossary entry gives "high-output" but never says what T5 means. "T8" (p6 :397) is bare and not in the glossary either.
+- [ ] Bearded dragon: "UVI" first used p4 (bearded-dragon.html:288) bare; spelled out only in the glossary (p33).
+- [ ] Bearded dragon: "IUCN" first used p4 (bearded-dragon.html:291) bare, never spelled out; not in the glossary.
+- [ ] Bearded dragon: "MBD" first used p4 (bearded-dragon.html:307) bare in the emergency budget box; spelled out p17 (:816); in the glossary.
+- [ ] Bearded dragon: "PVC" first used p5 (bearded-dragon.html:324) bare, never spelled out; not in the glossary.
+- [ ] Bearded dragon: "UV" first used p6 (bearded-dragon.html:385) bare, never spelled out; not in the glossary.
+- [ ] Bearded dragon: "CDC" first used p8 (bearded-dragon.html:492) bare in the Salmonella box; spelled out only on the Sources page (p34); not in the glossary.
+- [ ] Bearded dragon: "BSFL" spelled out at first use p10 (bearded-dragon.html:544); not in the glossary.
+- [ ] Bearded dragon: "ADV" first used p2 contents (bearded-dragon.html:200) and the p18 page title (:839) bare; spelled out p18 (:845); in the glossary.
+- [ ] Bearded dragon: "RI" spelled out at first use p18 (bearded-dragon.html:842); not in the glossary.
+- [ ] Bearded dragon: "PCR" first used p18 (bearded-dragon.html:846) bare, never spelled out; not in the glossary.
+- [ ] Bearded dragon: "CANV" first used p18 (bearded-dragon.html:849) bare, never spelled out; the glossary names it under Yellow fungus without expanding it.
+- [ ] Bearded dragon, Sources page only (p34): "VCA" (bearded-dragon.html:1439) described as "Animal Hospitals" but never expanded; not in the glossary.
+
+**Betta fish**
+- [ ] Betta: "ppm" first used p4 (betta-fish.html:300) bare; spelled out only in the glossary (p35).
+- [ ] Betta: "IUCN" first used p4 (betta-fish.html:303) bare, never spelled out; not in the glossary.
+- [ ] Betta: "GH" and "KH" first used p8 (betta-fish.html:477) bare; spelled out only in the glossary ("carbonate hardness" is on p7 :457 without the KH label).
+- [ ] Betta: "NH3", "NO2" and "NO3" first used as the p32 owner log headers (betta-fish.html:1423) bare; the glossary pairs them with ammonia, nitrite and nitrate, the body never does.
+- [ ] Betta, Sources page only (p36): VCA (betta-fish.html:1573, described but never expanded) and NC State (:1581) bare; not in the glossary.
+
+**Budgie** (fix in budgie.html; fragments stale)
+- [ ] Budgie: "PBFD" first used p2 contents (budgie.html:199) bare; spelled out p22 (:1027); in the glossary.
+- [ ] Budgie: "IUCN" first used p4 (budgie.html:297) bare, never spelled out; not in the glossary.
+- [ ] Budgie: "MSD" first used p5 (budgie.html:325) as "the MSD Veterinary Manual": described but never expanded; not in the glossary.
+- [ ] Budgie: "PTFE" first used p8 (budgie.html:473) bare in the heading "PTFE: nonstick cookware"; spelled out only in the glossary (p38).
+- [ ] Budgie: "VCA" first used p18 (budgie.html:872) bare, never spelled out; not in the glossary.
+- [ ] Budgie: "PCR" first used p22 (budgie.html:1028) bare, never spelled out; not in the glossary.
+- [ ] Budgie: "CDC" and "CPSC" first used p34 (budgie.html:1561) bare, never spelled out anywhere; not in the glossary.
+- [ ] Budgie, Sources page only (p39): NASPHV (budgie.html:1787), DVM (:1788) and UC Davis (:1791) bare; not in the glossary.
+
+**Crested gecko**
+- [ ] Crested gecko: "MBD" first used on the cover p1 (crested-gecko.html:148) bare; spelled out p17 (:767); the glossary has "Metabolic bone disease" but not the MBD form.
+- [ ] Crested gecko: "IUCN" first used p4 (crested-gecko.html:295) bare, never spelled out; not in the glossary.
+- [ ] Crested gecko: "PVC" first used p5 (crested-gecko.html:328) bare, never spelled out; not in the glossary.
+- [ ] Crested gecko: "UVB" first used in the p5 enclosure diagram (crested-gecko.html:330), first text use p7 (:439), bare, never spelled out; not in the glossary.
+- [ ] Crested gecko: "T5 HO" first used p7 (crested-gecko.html:440) bare, never spelled out; not in the glossary.
+- [ ] Crested gecko: "UVI" first used p7 (crested-gecko.html:440) bare, never spelled out; not in the glossary.
+- [ ] Crested gecko: "CDC" first used p8 (crested-gecko.html:487) bare; spelled out only on the Sources page (p34); not in the glossary.
+- [ ] Crested gecko: "FTS" spelled out at first use p17 (crested-gecko.html:774); the glossary has "Floppy tail syndrome" but not the FTS form.
+- [ ] Crested gecko, Sources page only (p34): VCA (crested-gecko.html:1359, described but never expanded) and PMC (:1361) bare; not in the glossary.
+
+**Goldfish** (fix in goldfish-src fragments)
+- [ ] Goldfish: "ppm" first used p4 (goldfish.html:294) bare, never spelled out; no glossary entry (used only inside other entries).
+- [ ] Goldfish: "mg/L" first used p25 (goldfish.html:969) bare, never spelled out; not in the glossary.
+- [ ] Goldfish, Sources page only (p39): USGS (goldfish.html:1524) and UF/IFAS (:1525) bare; not in the glossary.
+
+**Guinea pig** (fix in guinea-pig-src fragments)
+- [ ] Guinea pig: "GI" first used p2 contents (guinea-pig.html:198) and the p19 page title (:945) bare; the next paragraph opens "Gastrointestinal stasis" (:948) without pairing it to GI; the glossary "GI stasis" entry is described but never expanded.
+- [ ] Guinea pig: "C&C" first used p5 (guinea-pig.html:347): described (wire cubes, corrugated plastic base) but never expanded in the body; expanded in the glossary.
+- [ ] Guinea pig: "VCA" and "RSPCA" first used p7 (guinea-pig.html:426) bare, never spelled out; not in the glossary.
+- [ ] Guinea pig, Sources page only (p40): MSD (guinea-pig.html:1785) and PDSA (:1795) bare; not in the glossary.
+
+**Hamster**
+- [ ] Hamster: "IUCN" first used p4 (hamster.html:304) bare, never spelled out; not in the glossary.
+- [ ] Hamster: "UVB" first used p9 (hamster.html:518) bare, never spelled out; not in the glossary.
+- [ ] Hamster: "VCA" first used p9 (hamster.html:522) bare, never spelled out; not in the glossary.
+- [ ] Hamster: "ODFW" first used p24 (hamster.html:1106) bare, never spelled out (Oregon Department of Fish and Wildlife); not in the glossary.
+- [ ] Hamster: "HOA" first used p24 (hamster.html:1113) bare, never spelled out; not in the glossary.
+- [ ] Hamster, Sources page only (p36): ILAR (hamster.html:1589), RSPCA and PDSA (:1594) and SPAH (:1595) bare; not in the glossary.
+
+**Leopard gecko**
+- [ ] Leopard gecko: "UVB" first used on the cover p1 (leopard-gecko.html:144) bare, 27 uses, never spelled out; no glossary entry of its own (only inside the UVI entry).
+- [ ] Leopard gecko: "MBD" first used on the cover p1 (leopard-gecko.html:146) bare; spelled out p17 (:785); the glossary has "Metabolic bone disease" but not the MBD form.
+- [ ] Leopard gecko: "UVI" first used p4 (leopard-gecko.html:290) bare; spelled out only in the glossary (p33).
+- [ ] Leopard gecko: "IUCN" first used p4 (leopard-gecko.html:293) bare, never spelled out; not in the glossary.
+- [ ] Leopard gecko: "T5 HO" first used p7 (leopard-gecko.html:441) bare, never spelled out; not in the glossary.
+- [ ] Leopard gecko: "CDC" first used p8 (leopard-gecko.html:485) bare; spelled out only on the Sources page (p34); not in the glossary.
+- [ ] Leopard gecko: "BSFL" first used p10 (leopard-gecko.html:537) in the black soldier fly larvae row but never paired with that name; not in the glossary.
+- [ ] Leopard gecko: "PCR" first used p17 (leopard-gecko.html:779) bare, never spelled out; not in the glossary.
+- [ ] Leopard gecko, Sources page only (p34): "VCA" (leopard-gecko.html:1368) described but never expanded; not in the glossary.
+
+**Lovebird** (fix in lovebird.html; fragments stale)
+- [ ] Lovebird: "PBFD" first used p2 contents (lovebird.html:197) and the p20 page title (:889) bare; spelled out p20 (:892); in the glossary.
+- [ ] Lovebird: "IUCN" first used p4 (lovebird.html:292) bare, never spelled out; not in the glossary.
+- [ ] Lovebird: "VCA" first used p5 (lovebird.html:324) bare, never spelled out; not in the glossary.
+- [ ] Lovebird: "UC Davis" first used p7 (lovebird.html:440) bare, never spelled out; not in the glossary.
+- [ ] Lovebird: "UVB" first and only use p7 (lovebird.html:448) bare, never spelled out; not in the glossary.
+- [ ] Lovebird: "PTFE" first used in the p8 heading (lovebird.html:470) bare; the next sentence (:471) spells it out but as "polytetrafluoroethylene gas", the coating-not-a-gas error fixed in the cockatiel and cockatoo 1.2; the glossary entry is described but never expanded.
+- [ ] Lovebird: "PCR" first used p20 (lovebird.html:893) bare, never spelled out; not in the glossary.
+- [ ] Lovebird: "CDC" and "CPSC" first used p32 (lovebird.html:1370) bare; CPSC spelled out only on the Sources page (p38), CDC never; not in the glossary.
+- [ ] Lovebird, Sources page only (p38): DVM (lovebird.html:1606) and NASPHV (:1609) bare; not in the glossary.
+
+**Rabbit**
+- [ ] Rabbit: "GI" first used on the cover p1 (rabbit.html:145) bare, 22 uses, spelled out only in a Sources title (p39 :1695); the glossary "GI stasis" entry is described but never expanded.
+- [ ] Rabbit: "RHDV2" first used p2 contents (rabbit.html:211) and the p23 page title (:1057) bare; spelled out p23 (:1069); in the glossary. Both spell it "Haemorrhagic"; US prose wants "Hemorrhagic".
+- [ ] Rabbit: "RHDV1" first used p23 (rabbit.html:1069) bare; only type 2 is spelled out; not in the glossary.
+- [ ] Rabbit: "IUCN" first used p4 (rabbit.html:302) bare, never spelled out; not in the glossary.
+- [ ] Rabbit: "VCA" first used p7 (rabbit.html:471) bare, never spelled out; not in the glossary.
+- [ ] Rabbit: "UVB" only use p40 version history (rabbit.html:1712) bare; not in the glossary.
+- [ ] Rabbit, Sources page only (p39): RSPCA (rabbit.html:1679) and PDSA (:1680) bare; not in the glossary.
+
+**Russian tortoise** (fix in russian-tortoise.html; fragments stale)
+- [ ] Russian tortoise: "UVB" first used on the cover p1 (russian-tortoise.html:133) bare, 39 uses, never spelled out ("ultraviolet light" appears once at p18 :880 without the label); no glossary entry of its own.
+- [ ] Russian tortoise: "T5 HO" first used p4 (russian-tortoise.html:291) bare; the glossary entry gives "high-output" but never says what T5 means.
+- [ ] Russian tortoise: "UVI" first used p4 (russian-tortoise.html:291) bare; spelled out p7 (:436); in the glossary.
+- [ ] Russian tortoise: "IUCN" and "CITES" first used p4 (russian-tortoise.html:295) bare, never spelled out; not in the glossary.
+- [ ] Russian tortoise: "UV" first used p6 (russian-tortoise.html:415) bare, never spelled out; not in the glossary.
+- [ ] Russian tortoise: "VCA" first used p9 (russian-tortoise.html:513) bare, never spelled out; not in the glossary.
+- [ ] Russian tortoise: "CDC" first used p10 (russian-tortoise.html:561) bare, never spelled out; not in the glossary.
+- [ ] Russian tortoise: "EAZWV" first used p21 (russian-tortoise.html:990) bare, never spelled out; not in the glossary.
+- [ ] Russian tortoise: "PCR" first used p21 (russian-tortoise.html:993) bare, never spelled out; not in the glossary.
+- [ ] Russian tortoise: "CPW" first used p25 (russian-tortoise.html:1134) bare, never spelled out (Colorado Parks and Wildlife); not in the glossary. 2.2-only content.
+- [ ] Russian tortoise: "CFR" and "FDA" first used p25 (russian-tortoise.html:1139) bare; the glossary entry "21 CFR 1240.62" expands neither.
+- [ ] Russian tortoise, Sources page only (p37): "MSD" (russian-tortoise.html:1706) bare; not in the glossary.
+
+**Tarantula**
+- [ ] Tarantula: "DKS" first used p2 contents (tarantula.html:218) and the p26 page title (:1121) bare; spelled out p26 (:1126); in the glossary.
+- [ ] Tarantula: "CITES" first used p4 (tarantula.html:316) bare, never spelled out; not in the glossary.
+- [ ] Tarantula: "EPA" first used p26 (tarantula.html:1136) bare, never spelled out; not in the glossary.
+- [ ] Tarantula: "HOA" first used p28 (tarantula.html:1210) bare, never spelled out; not in the glossary.
+- [ ] Tarantula: "USPS", "USDA" and "APHIS" first used p36 (tarantula.html:1502) bare, never spelled out; not in the glossary.
+- [ ] Tarantula: "UVB" only use p44 version history (tarantula.html:1754) bare; not in the glossary.
+- [ ] Tarantula, Sources page only (p43): "NIH" (tarantula.html:1717) bare; not in the glossary.
