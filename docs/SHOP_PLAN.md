@@ -67,6 +67,7 @@ had moved past the PDF):
 | tarantula | Tarantula_Care_Package_v2.3.pdf | 44 |
 | cockatiel | Cockatiel_Care_Package_v1.2.pdf | 40 |
 | cockatoo | Cockatoo_Care_Package_v1.2.pdf | 45 |
+| whites-tree-frog | Whites_Tree_Frog_Care_Package_v1.0.pdf | 39 |
 
 The catalog carries these numbers. When a source is edited again, re-render
 with `_render.mjs`, move the old PDF to `rebuilt/past versions/` with a row in
@@ -78,6 +79,10 @@ themes, previews, samples and a Worker entry, on `storefront: 'stripe'` with
 empty price ids, so checkout refuses them with a 409 until the live prices
 exist. Still to do for both: the live Stripe price in the catalog and the
 Worker, and the PDF in the bucket.
+
+The White's tree frog (v1.0, 1 October 2026) is wired the same way and in the
+same state. Its old `storefront: 'soon'` landing page is no longer reached:
+the URL now renders the full product page.
 
 ## Work, in order
 

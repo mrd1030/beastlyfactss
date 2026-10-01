@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     q: 'How long are they?',
-    a: "Each package runs 34 to 44 pages depending on species. Every one covers setup, diet, health red flags, and an owner routine - the exact page count is listed on that package's card in the store and on its product page.",
+    a: "Each package runs 35 to 45 pages depending on species. Every one covers setup, diet, health red flags, and an owner routine. The exact page count is listed on that package's card in the store and on its product page.",
   },
   {
     q: 'Is this a subscription?',

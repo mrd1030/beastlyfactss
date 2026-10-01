@@ -806,6 +806,54 @@ export const CARE_PACKAGE_COPY = {
     ],
   },
 
+  // Written from the source HTML, edition 1.0, the same way as the birds.
+
+  'whites-tree-frog': {
+    hook: 'An easy frog for sixteen years, if someone counts the crickets.',
+    heroParagraph:
+      'A 39-page printable manual with the vertical enclosure, a humidity cycle that dips instead of sitting high, the water that is safe to mist with, feeding by size and age, the ridge test that catches obesity early, seven health pages, and the printable owner tools.',
+    heroTicks: ['39 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
+    roulette: [
+      'A care sheet that says "high humidity," and an enclosure that never dries out',
+      'Untreated tap water in the mister, or distilled water because it sounds purer',
+      'A frog that eats everything offered, fed everything offered',
+      'Two frogs of different sizes sharing one enclosure',
+    ],
+    answers: [
+      'A 50 to 60 percent baseline, misted to 70 to 80 once or twice a day and then left to dry back, with a chart of the cycle',
+      'Dechlorinated tap or spring water only, and why distilled and reverse-osmosis water can be fatal to a frog',
+      '3 to 4 insects, 2 to 3 times a week for an adult, and the eardrum ridge test that shows obesity before the waistline does',
+      'Size-matched groups only, because this frog will try to swallow anything that fits, a smaller frog included',
+    ],
+    inside: [
+      { emoji: '🏠', title: 'The vertical enclosure', line: 'The 18 by 18 by 24 inch minimum measured in height, where it goes, the gentle temperature gradient, and every heat source outside the glass.' },
+      { emoji: '💧', title: 'Humidity and safe water', line: 'The cycle that dips after each misting, ventilation, the water that is safe to mist with, UVB (ultraviolet B) light, substrate and plants.' },
+      { emoji: '🥣', title: 'Feeding and the ridge test', line: 'Feeding by size and age, staples and treats, gut-loading and dusting, and the fat ridges above the eardrum that read body condition.' },
+      { emoji: '🤲', title: 'Handling, groups and quarantine', line: 'Plain water and no soap, size-matched groups and sexing, choosing a frog, six to eight weeks of quarantine, and normal behavior.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Obesity and fatty liver, chytrid, red-leg, metabolic bone disease and vitamin A, skin and chemical injuries, impaction and parasites.' },
+      { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, outage plan, pet-sitter sheet, and the logs.' },
+    ],
+    previewHeadline: 'The cycle chart, the ridge test, and the card that lives by the enclosure.',
+    previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
+      { page: 7, alt: 'The humidity cycle that dips, with a chart of the evening misting spike and the dry-back' },
+      { page: 14, alt: 'Body condition: reading the fat ridges above the eardrum, three readings' },
+      { page: 21, alt: 'Obesity, fatty eyes and fatty liver: causes, signs and recovery' },
+      { page: 28, alt: 'Emergency and quick targets card, to print and post near the enclosure' },
+      { page: 29, alt: 'Budget and shopping list, setup and yearly costs' },
+    ],
+    whoFor: [
+      "New White's tree frog owners setting up the enclosure before the frog comes home",
+      'Keepers whose frog is filling out over the eardrums, or whose enclosure never dries',
+      'Anyone keeping two or more frogs together, or bringing a new one home to a group',
+    ],
+    whatNot: [
+      'Not a substitute for a veterinarian who sees amphibians',
+      'Not a live website mirror, a clean printable package instead',
+      'Not a subscription, one purchase and every corrected edition is free',
+    ],
+  },
+
 };
 
 export function getCarePackageCopy(id) {

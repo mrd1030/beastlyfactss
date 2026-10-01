@@ -99,7 +99,9 @@ export default function CarePackageProduct() {
   const editionDate = formatEditionDate(pkg.versionDate, { year: 'numeric', month: 'long', day: 'numeric' });
   const editionShort = formatEditionDate(pkg.versionDate, { year: 'numeric', month: 'short' });
   const amount = pkg.price?.replace(/[^\d.]/g, '') || '';
-  const animalLower = pkg.animal.toLowerCase();
+  // Lowercased for running text, except a possessive proper name: White's
+  // tree frog, not white's tree frog.
+  const animalLower = pkg.animal.split(' ').map(w => (/'s$/.test(w) ? w : w.toLowerCase())).join(' ');
 
   const hook = copy?.hook || pkg.name;
   const heroParagraph = copy?.heroParagraph || pkg.blurb;

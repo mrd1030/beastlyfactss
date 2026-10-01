@@ -655,9 +655,10 @@ async function handleContact(request, env) {
 // BOTH files.
 //
 // A package missing here cannot be bought even if the catalog says it can,
-// which is the safe direction for the two to disagree in. All 16 are here and
-// all 16 carry storefront: 'stripe', so the two agree (the cockatiel and
-// cockatoo with empty price ids, which checkout refuses); a package added to the
+// which is the safe direction for the two to disagree in. All 17 are here and
+// all 17 carry storefront: 'stripe', so the two agree (the cockatiel, cockatoo
+// and White's tree frog with empty price ids, which checkout refuses); a
+// package added to the
 // catalog and forgotten here gets a clean 404 from checkout rather than a sale
 // nobody can fulfil.
 //
@@ -763,6 +764,13 @@ const CARE_PACKAGE_STORE = {
   cockatoo: {
     name: 'Cockatoo Care Package',
     edition: '1.2',
+    priceIdSandbox: '',
+    priceIdLive: '',
+  },
+  // Same as the birds above: no price yet, so checkout fails closed with a 409.
+  'whites-tree-frog': {
+    name: "White's Tree Frog Care Package",
+    edition: '1.0',
     priceIdSandbox: '',
     priceIdLive: '',
   },
