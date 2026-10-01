@@ -1287,7 +1287,7 @@ export const CARE_PACKAGES = [
     seoDescription: '40-page printable cockatiel guide: cage size and bar spacing, night frights, converting a seed eater to pellets, chronic egg laying, and health triage.',
     bullets: [
       'Cage size and placement, perches, light and sleep, household hazards, one bird or two, diet and pellet conversion, handling and the crest, and wing clipping in one guide',
-      'Health section with red flags, vitamin A, calcium and fatty liver, respiratory disease and psittacosis, PBFD, Giardia and plucking, molt, and chronic egg laying and egg binding guidance',
+      'Health section with red flags, vitamin A, calcium and fatty liver, respiratory disease and psittacosis, beak and feather disease, Giardia and plucking, molt, and chronic egg laying and egg binding guidance',
       'Setup checklist, budget and shopping list, first 30 days checklist, symptom quick reference, owner log, and a daily and weekly routine',
     ],
     contents: [
@@ -1324,7 +1324,7 @@ export const CARE_PACKAGES = [
           'Health Red Flags & What to Tell the Vet',
           'Vitamin A, Calcium & Fatty Liver',
           'Respiratory Disease & Psittacosis',
-          'PBFD, Polyomavirus & Other Viral Disease',
+          'PBFD (Psittacine Beak & Feather Disease), Polyomavirus & Other Viral Disease',
           'Foreign Bodies, Heavy Metal, Mites & Injuries',
           'Feather Plucking & Behavioral Health',
           'Molt & Seasonal Behavior',
@@ -1377,7 +1377,7 @@ export const CARE_PACKAGES = [
     seoDescription: '45-page printable cockatoo guide: an honest decision test, five species compared, training and foraging against plucking, and a succession plan.',
     bullets: [
       'The decision test and species comparison, cage, locks and placement, light and sleep, feather dust and air quality, household hazards, diet and foraging in one guide',
-      'Behavior and health sections with training, bites and sexual maturity, over-bonding and screaming, egg laying, plucking and the molt differential, PBFD, and obesity, lipomas and fatty liver',
+      'Behavior and health sections with training, bites and sexual maturity, over-bonding and screaming, egg laying, plucking and the molt differential, beak and feather disease, and obesity, lipomas and fatty liver',
       'Legal status by state, a succession plan, setup checklist, budget and shopping list, first 30 days checklist, symptom quick reference, and the owner and vet logs',
     ],
     contents: [
@@ -1429,7 +1429,7 @@ export const CARE_PACKAGES = [
         items: [
           'Health Red Flags & What to Tell the Vet',
           'Feather-Destructive Behavior, Molt & the Differential',
-          'PBFD & Viral Disease',
+          'Beak & Feather Disease & Other Viruses',
           'Obesity, Lipomas & Fatty Liver',
           'Psittacosis, Respiratory Disease, Metals & Injuries',
           'Reading Droppings & Hydration',
@@ -1438,7 +1438,7 @@ export const CARE_PACKAGES = [
       },
       {
         label: 'The Long View',
-        items: ['Legal Status, CITES & State Rules', 'The Sixty-Year Bird: Succession & Rehoming'],
+        items: ['Legal Status, the Wildlife Trade Treaty & State Rules', 'The Sixty-Year Bird: Succession & Rehoming'],
       },
       {
         label: 'Quick Reference',

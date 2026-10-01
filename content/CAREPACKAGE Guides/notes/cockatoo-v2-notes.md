@@ -410,3 +410,53 @@ and this pass became one 1.2.
     <tr><td>1.2</td><td>Sep 2026</td><td>t3</td><td>Legal edition. New Jersey was wrong and is corrected: the package read the potentially dangerous table at 4.8(a), found no cockatoo, and called the bird legal. That is backwards. The exempt list at 4.4 decides, its nine entries hold no cockatoo, and 4.5 therefore requires a permit. Virginia keeps its own row. Vermont was added as a ban, since the Domestic Species List clears psittacines one binomial at a time and <em>Cacatua</em> is on none of the three lists, and Massachusetts was added as a permit for the IUCN-listed species.</td></tr>
     <tr><td>1.1</td><td>Sep 2026</td><td>t3</td><td>Corrections pass, cross-checked page by page against the site's cross-species bird articles. Page 31 stopped calling a rehomed bird's withdrawal grief, which Merck lists as a potential sign of illness, and routes it to a vet check; blood-feather first aid was corrected to firm pressure with no pulling at home; weighing moved from weekly to daily; the 45 to 60 day multi-bird quarantine became Merck's 90 days; the training session length became VCA's ramp; and the bird fancier's lung source line was corrected, since the case report behind it documents a pigeon keeper rather than a psittacine one. Added: the hand-raised against parent-raised tradeoff, the pale grey juvenile iris, the pet trust law position, the 48-hour egg marker, Merck's four to seven outermost primaries and partial second molt, and the generator, carbon monoxide, lead, zinc and droppings figures.</td></tr>
 ```
+
+### Tightened for the abbreviations pass
+
+The owner asked for every abbreviation to be spelled out, with a plain description, at its
+first mention and in the glossary. Two contents entries were reworded so the first mention
+lands in the body, where there is room to explain it. Pages 6 and 29 lost a few words to
+absorb the expansions, and the glossary, which went from 25 rows to 42 with no room to grow,
+had every two-line definition cut to one line and its term column narrowed from 28% to 21%.
+
+**Page 2, two contents entries.** Now "Beak & Feather Disease & Other Viruses" and "Legal
+Status, the Wildlife Trade Treaty & State Rules".
+
+```html
+      <tr><td>PBFD &amp; Viral Disease</td><td class="small" style="text-align:right;">25</td></tr>
+      <tr><td>Legal Status, CITES &amp; State Rules</td><td class="small" style="text-align:right;">30</td></tr>
+```
+
+**Page 6, two clauses of the "What does not change" callout.**
+
+```html
+    Every commonly kept cockatoo is highly social, highly intelligent, loud, destructive and long-lived. There is <strong>no low-maintenance cockatoo</strong>. Choosing a smaller species buys you a smaller cage, a smaller food bill and a quieter bird by degrees, not a different animal. Do not read this page as a way to get a cockatoo without the commitment on page 5.
+```
+
+**Page 29, one word in the introduction list** ("seriously" became "hard").
+
+```html
+    <li><strong>Neutral ground first.</strong> The first physical meeting happens on a play stand or a table, never inside either cage. A cockatoo defends its cage seriously and a bite from this beak lands differently between birds than between budgies</li>
+```
+
+**Page 42, the glossary definitions that were shortened to one line.** The CITES row was
+also rewritten to give the treaty's full name.
+
+```html
+    <tr><td style="width:28%;font-weight:700;color:var(--accent-dark);">Bird fancier's lung</td><td>Hypersensitivity pneumonitis in people, caused by prolonged exposure to avian proteins in feather dust and dried droppings. Page 10</td></tr>
+    <tr><td style="font-weight:700;color:var(--accent-dark);">Blood feather</td><td>A growing feather with a live blood supply in the shaft. Dark and full at the base, and it bleeds freely if broken or cut. Pages 20 and 27</td></tr>
+    <tr><td style="font-weight:700;color:var(--accent-dark);">Chronic egg laying</td><td>Repeated clutches out of season, driven by the environment rather than by a mate. Page 22</td></tr>
+    <tr><td style="font-weight:700;color:var(--accent-dark);">CITES</td><td>The international convention governing trade in endangered species. It regulates trade, not domestic ownership. Page 30</td></tr>
+    <tr><td style="font-weight:700;color:var(--accent-dark);">Contact call</td><td>A loud call used to locate flock members out of sight. Most cockatoo screaming is this. Page 19</td></tr>
+    <tr><td style="font-weight:700;color:var(--accent-dark);">Corticosterone</td><td>The main avian stress hormone, used in the plucking study as an objective measure of whether a treatment worked. Page 16</td></tr>
+    <tr><td style="font-weight:700;color:var(--accent-dark);">Eye pinning</td><td>Rapid dilation and contraction of the pupil, signaling high arousal. Excitement or aggression depending on what else the bird is doing. Page 17</td></tr>
+    <tr><td style="font-weight:700;color:var(--accent-dark);">Foraging</td><td>Working for food rather than eating it from a bowl. A wild parrot spends much of its day doing it. Page 15</td></tr>
+    <tr><td style="font-weight:700;color:var(--accent-dark);">Keel</td><td>The ridge of breastbone down the front of the bird, used to judge body condition by feel. Page 21</td></tr>
+    <tr><td style="font-weight:700;color:var(--accent-dark);">PBFD</td><td>Psittacine beak and feather disease. An incurable circovirus first described in Australian cockatoos. Page 25</td></tr>
+    <tr><td style="font-weight:700;color:var(--accent-dark);">Pin feather</td><td>A new feather still in its waxy keratin sheath. Normal during a molt, and sore to touch. Page 24</td></tr>
+    <tr><td style="font-weight:700;color:var(--accent-dark);">Powder down</td><td>Specialized feathers that break down into a fine dust used in grooming. Cockatoos produce a great deal of it. Page 10</td></tr>
+    <tr><td style="font-weight:700;color:var(--accent-dark);">PTFE</td><td>Polytetrafluoroethylene, the nonstick coating whose fumes kill birds when overheated. Page 11</td></tr>
+    <tr><td style="font-weight:700;color:var(--accent-dark);">Regurgitation</td><td>Deliberate bringing up of food as courtship, aimed at a mate, a toy or a person. Not vomiting. Page 22</td></tr>
+    <tr><td style="font-weight:700;color:var(--accent-dark);">Station</td><td>A trained cue to go to a named perch and stay. The behavior that gets a bird off your shoulder politely. Page 16</td></tr>
+    <tr><td style="font-weight:700;color:var(--accent-dark);">Target training</td><td>Teaching the bird to touch its beak to a stick. The foundation for everything else, and it keeps hands away from the beak. Page 16</td></tr>
+```
