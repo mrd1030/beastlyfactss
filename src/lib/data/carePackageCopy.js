@@ -717,8 +717,8 @@ export const CARE_PACKAGE_COPY = {
   cockatiel: {
     hook: 'A twenty-five-year cockatiel starts with the food bowl and a night light.',
     heroParagraph:
-      'A 40-page printable manual with the cage and the bar spacing that is a safety limit, the night light that stops night frights, five ways to convert a seed eater, the levers that prevent chronic egg laying, nine health pages, and the printable owner tools.',
-    heroTicks: ['40 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
+      'A 41-page printable manual with the cage and the bar spacing that is a safety limit, the night light that stops night frights, five ways to convert a seed eater, the levers that prevent chronic egg laying, nine health pages, and the printable owner tools.',
+    heroTicks: ['41 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
     roulette: [
       'A seed bowl sold as a complete diet',
       'A tall, narrow cage bought for its looks',
@@ -763,8 +763,8 @@ export const CARE_PACKAGE_COPY = {
   cockatoo: {
     hook: 'Four to six hours most days, for decades. Take the honest test first.',
     heroParagraph:
-      'A 45-page printable manual with a decision test written to talk some readers out of the bird, five species compared, training and foraging as the plan against plucking and screaming, feather dust and your own lungs, seven health pages, state legal status, and a succession plan.',
-    heroTicks: ['45 pages, print or view', 'Advanced, not a first parrot', 'No external links inside the PDF'],
+      'A 46-page printable manual with a decision test written to talk some readers out of the bird, five species compared, training and foraging as the plan against plucking and screaming, feather dust and your own lungs, seven health pages, state legal status, and a succession plan.',
+    heroTicks: ['46 pages, print or view', 'Advanced, not a first parrot', 'No external links inside the PDF'],
     roulette: [
       'A hand-raised baby sold on the cuddling, and nothing about the bird at eight years old',
       'Constant one-on-one time in the first weeks, then a bird that screams when that person leaves the room',

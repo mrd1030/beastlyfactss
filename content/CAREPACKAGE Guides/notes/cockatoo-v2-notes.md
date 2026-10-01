@@ -416,8 +416,8 @@ and this pass became one 1.2.
 The owner asked for every abbreviation to be spelled out, with a plain description, at its
 first mention and in the glossary. Two contents entries were reworded so the first mention
 lands in the body, where there is room to explain it. Pages 6 and 29 lost a few words to
-absorb the expansions, and the glossary, which went from 25 rows to 42 with no room to grow,
-had every two-line definition cut to one line and its term column narrowed from 28% to 21%.
+absorb the expansions. Both were tried back at full wording in the glossary split below, and
+each pushed its page to 6 px free, so both stay trimmed.
 
 **Page 2, two contents entries.** Now "Beak & Feather Disease & Other Viruses" and "Legal
 Status, the Wildlife Trade Treaty & State Rules".
@@ -439,24 +439,12 @@ Status, the Wildlife Trade Treaty & State Rules".
     <li><strong>Neutral ground first.</strong> The first physical meeting happens on a play stand or a table, never inside either cage. A cockatoo defends its cage seriously and a bite from this beak lands differently between birds than between budgies</li>
 ```
 
-**Page 42, the glossary definitions that were shortened to one line.** The CITES row was
-also rewritten to give the treaty's full name.
-
-```html
-    <tr><td style="width:28%;font-weight:700;color:var(--accent-dark);">Bird fancier's lung</td><td>Hypersensitivity pneumonitis in people, caused by prolonged exposure to avian proteins in feather dust and dried droppings. Page 10</td></tr>
-    <tr><td style="font-weight:700;color:var(--accent-dark);">Blood feather</td><td>A growing feather with a live blood supply in the shaft. Dark and full at the base, and it bleeds freely if broken or cut. Pages 20 and 27</td></tr>
-    <tr><td style="font-weight:700;color:var(--accent-dark);">Chronic egg laying</td><td>Repeated clutches out of season, driven by the environment rather than by a mate. Page 22</td></tr>
-    <tr><td style="font-weight:700;color:var(--accent-dark);">CITES</td><td>The international convention governing trade in endangered species. It regulates trade, not domestic ownership. Page 30</td></tr>
-    <tr><td style="font-weight:700;color:var(--accent-dark);">Contact call</td><td>A loud call used to locate flock members out of sight. Most cockatoo screaming is this. Page 19</td></tr>
-    <tr><td style="font-weight:700;color:var(--accent-dark);">Corticosterone</td><td>The main avian stress hormone, used in the plucking study as an objective measure of whether a treatment worked. Page 16</td></tr>
-    <tr><td style="font-weight:700;color:var(--accent-dark);">Eye pinning</td><td>Rapid dilation and contraction of the pupil, signaling high arousal. Excitement or aggression depending on what else the bird is doing. Page 17</td></tr>
-    <tr><td style="font-weight:700;color:var(--accent-dark);">Foraging</td><td>Working for food rather than eating it from a bowl. A wild parrot spends much of its day doing it. Page 15</td></tr>
-    <tr><td style="font-weight:700;color:var(--accent-dark);">Keel</td><td>The ridge of breastbone down the front of the bird, used to judge body condition by feel. Page 21</td></tr>
-    <tr><td style="font-weight:700;color:var(--accent-dark);">PBFD</td><td>Psittacine beak and feather disease. An incurable circovirus first described in Australian cockatoos. Page 25</td></tr>
-    <tr><td style="font-weight:700;color:var(--accent-dark);">Pin feather</td><td>A new feather still in its waxy keratin sheath. Normal during a molt, and sore to touch. Page 24</td></tr>
-    <tr><td style="font-weight:700;color:var(--accent-dark);">Powder down</td><td>Specialized feathers that break down into a fine dust used in grooming. Cockatoos produce a great deal of it. Page 10</td></tr>
-    <tr><td style="font-weight:700;color:var(--accent-dark);">PTFE</td><td>Polytetrafluoroethylene, the nonstick coating whose fumes kill birds when overheated. Page 11</td></tr>
-    <tr><td style="font-weight:700;color:var(--accent-dark);">Regurgitation</td><td>Deliberate bringing up of food as courtship, aimed at a mate, a toy or a person. Not vomiting. Page 22</td></tr>
-    <tr><td style="font-weight:700;color:var(--accent-dark);">Station</td><td>A trained cue to go to a named perch and stay. The behavior that gets a bird off your shoulder politely. Page 16</td></tr>
-    <tr><td style="font-weight:700;color:var(--accent-dark);">Target training</td><td>Teaching the bird to touch its beak to a stick. The foundation for everything else, and it keeps hands away from the beak. Page 16</td></tr>
-```
+**Restored: the glossary.** The abbreviations pass took the glossary from 25 rows to 42 on
+one page, cut 16 two-line definitions to one line and narrowed the term column from 28% to
+21%. The owner's ruling: more pages rather than a shortened glossary. The glossary is now two
+pages, 42 (B to I) and 43 (K to Z, "Glossary, continued"), with all 16 definitions back at
+their full 1.1 wording, the CITES row keeping the treaty's full name, the column back at 28%,
+and each of the 17 abbreviation rows given a full entry: the expansion, what it is, and what
+it means for an owner. The package went from 45 to 46 pages; Sources, Sources Continued and
+Where the Sources Disagree moved to 44, 45 and 46, and every page reference to them moved with
+them.
