@@ -14,6 +14,7 @@
 // Runs before `vite build` (see package.json).
 import fs from 'node:fs';
 import path from 'node:path';
+import { aggregateVerified } from '../src/lib/utils/verifiedDates.js';
 
 const root = process.cwd();
 const legal = JSON.parse(
@@ -88,18 +89,20 @@ const coverage = {
 // When each guide's legal information was last checked, kept apart from the
 // article's lastUpdated on purpose. A spelling or link pass bumps nothing here;
 // only re-verifying a cell against the published text moves its verifiedOn.
-// Stored as the span of the animal's cells, oldest to newest, so the guide can
-// say a range where there is one (see src/lib/utils/verifiedDates.js). Keyed by
-// guide slug, which is what <LegalDisclaimer> has in hand. A few KB, so the
-// article bundle never imports the matrix to get it.
+// Stored as aggregateVerified() output (the date most cells share, plus the
+// cells that differ, named by jurisdiction) so <LegalDisclaimer> applies the
+// same rule as the map and state pages without importing the matrix.
+// Keyed by guide slug, which is what <LegalDisclaimer> has in hand.
 const verified = {};
 for (const a of Object.values(legal.animals)) {
   const slug = /^\/blog\/([^/]+)\/$/.exec(a.article || '')?.[1];
-  const dates = Object.values(a.jurisdictions)
-    .map((e) => e.verifiedOn)
-    .filter((d) => typeof d === 'string' && d)
-    .sort();
-  if (slug && dates.length) verified[slug] = { from: dates[0], to: dates[dates.length - 1] };
+  const agg = aggregateVerified(
+    Object.entries(a.jurisdictions).map(([code, e]) => ({
+      date: e.verifiedOn,
+      label: legal.jurisdictions[code]?.name || code,
+    })),
+  );
+  if (slug && agg) verified[slug] = agg;
 }
 
 fs.mkdirSync(path.dirname(outPath), { recursive: true });

@@ -8,11 +8,11 @@ import LEGAL_VERIFIED from '@/lib/generated/legal-verified.json';
 // lastUpdated: a spelling or link pass changes the page without anyone
 // re-reading the law. It comes from the matrix cells' verifiedOn, via
 // scripts/generate-legal-summary.mjs, so only re-verifying a cell moves it.
+// Worded by describeVerified(), the same rule the map and state pages use.
 // Guides with no matrix animal behind them (federal, breeding) show no line.
 export default function LegalDisclaimer({ children, className = '' }) {
   const { slug } = useArticleMeta();
-  const span = slug ? LEGAL_VERIFIED[slug] : null;
-  const verified = span ? describeVerified([span.from, span.to]) : null;
+  const verified = slug ? describeVerified(LEGAL_VERIFIED[slug])?.line : null;
   return (
     <div className={`my-8 rounded-2xl border border-destructive/30 bg-destructive/5 p-6 ${className}`}>
       <div className="flex items-start gap-3">

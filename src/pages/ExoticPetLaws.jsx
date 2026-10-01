@@ -11,7 +11,7 @@ import { CODE_TO_SLUG, SLUG_TO_CODE } from '@/lib/data/stateSlugs';
 import { inSentence, inTitle } from '@/lib/utils/animalNames';
 import { breadcrumbSchema } from '@/lib/utils/breadcrumbs';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
-import { describeVerified, formatDay } from '@/lib/utils/verifiedDates';
+import { aggregateVerified, describeVerified, formatDay } from '@/lib/utils/verifiedDates';
 import CitationBox from '@/components/legal/CitationBox';
 import { withBrand, pickWithinLimit, plural, TITLE_MAX, DESCRIPTION_MAX, BRAND } from '@/lib/utils/seo';
 import LegalStatusMap, { STATUS_BUCKETS, BUCKET_ORDER, bucketFor } from '@/components/legal/LegalStatusMap';
@@ -226,9 +226,17 @@ export default function ExoticPetLaws() {
     ? { code: selectedState, entry: statuses[selectedState] }
     : null;
 
-  // The span across this animal's researched jurisdictions, not the newest of
-  // them. See src/lib/utils/verifiedDates.js for why the newest alone overstates.
-  const verified = describeVerified(Object.values(statuses).map((e) => e.verifiedOn));
+  // The date most of this animal's jurisdictions share, with the ones that
+  // differ named, in the citation's short form. Same rule as the legal guide's
+  // line; see src/lib/utils/verifiedDates.js.
+  const verified = describeVerified(
+    aggregateVerified(
+      Object.entries(statuses).map(([code, e]) => ({
+        date: e.verifiedOn,
+        label: LEGAL.jurisdictions[code]?.name || code,
+      })),
+    ),
+  )?.citation;
 
   // Animal names here run from "Hamster" to "Argentine black and white tegu", a
   // 23 character swing, so the tags are composed from variants rather than one

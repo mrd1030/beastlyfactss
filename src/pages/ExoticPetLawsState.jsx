@@ -5,7 +5,7 @@ import LEGAL from '@/lib/data/legalStatus.json';
 import { STATUS_BUCKETS } from '@/components/legal/LegalStatusMap';
 import { forJurisdiction, TRACKED_ANIMAL_COUNT } from '@/lib/data/legalByState';
 import { notesFor } from '@/lib/data/stateNotes';
-import { describeVerified, formatDay } from '@/lib/utils/verifiedDates';
+import { aggregateVerified, describeVerified, formatDay } from '@/lib/utils/verifiedDates';
 import CitationBox from '@/components/legal/CitationBox';
 import { SLUG_TO_CODE, CODE_TO_SLUG } from '@/lib/data/stateSlugs';
 import { inSentence, joinList } from '@/lib/utils/animalNames';
@@ -101,12 +101,16 @@ export default function ExoticPetLawsState() {
   const clear = j.rows.filter((r) => r.bucket === 'none');
   const unchecked = j.rows.filter((r) => r.bucket === 'notChecked');
   const banned = j.rows.filter((r) => r.bucket === 'banned');
-  // The span of the column, not its newest date. 36 of the 52 jurisdictions
-  // hold several distinct verifiedOn values about a month apart, and printing
-  // only the newest claimed freshness the older rows do not have. That matters
-  // more here than elsewhere because the citation box below puts this string
-  // into text other people publish.
-  const verified = describeVerified(j.rows.map((r) => r.entry?.verifiedOn));
+  // The date most of this column's rows share, with the rows that differ named
+  // by animal or counted. The page line gets the full sentence; the citation
+  // box below gets the short form, because it puts the string into text other
+  // people publish. Rule lives in src/lib/utils/verifiedDates.js.
+  const verifiedDates = describeVerified(
+    aggregateVerified(j.rows.map((r) => ({ date: r.entry?.verifiedOn, label: r.name }))),
+    { unit: 'animals' },
+  );
+  const verified = verifiedDates?.line;
+  const verifiedCitation = verifiedDates?.citation;
   const notes = notesFor(code);
 
   const isState = j.level === 'state';
@@ -433,7 +437,7 @@ export default function ExoticPetLawsState() {
           <CitationBox
             title={`Exotic pet laws in ${j.name}`}
             url={canonical}
-            verified={verified}
+            verified={verifiedCitation}
           />
 
           <section className="mt-12 rounded-xl border border-border bg-card p-5">
