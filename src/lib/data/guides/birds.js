@@ -621,7 +621,7 @@ export const birdGuides = [
     image: "/assets/guides/quaker-parakeet.jpg",
     tagline: "The little architect that would rather build a nest than move into one!",
     seoTitle: "Quaker Parakeet Care Guide: Legality, Cage, and Diet",
-    seoDescription: "Check the law before the cage: thirteen states ban the quaker parakeet. Then cage size, bar spacing, why a nest box never goes in, and a pellet-first diet.",
+    seoDescription: "Check the law before the cage: fourteen states ban the quaker parakeet. Then cage size, bar spacing, why a nest box never goes in, and a pellet-first diet.",
     funFact: "The quaker is the only parrot that does not nest in a tree cavity. It weaves a bulky stick nest instead, often on electrical infrastructure, and the nest material arcs the current. Every US state ban on this bird is an escape-and-establishment rule rather than a dangerous-animal one.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -641,7 +641,7 @@ export const birdGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal check first", value: "Thirteen states ban it: California, Colorado, Connecticut, Georgia, Hawaii, Kansas, Kentucky, Nebraska, New Jersey, Pennsylvania, Vermont, Wisconsin, and Wyoming. Maine, Rhode Island, and Arkansas require a permit, Virginia attaches a condition, Tennessee is unresolved.", source: "quaker-parakeet-legal-guide" },
+        { label: "Legal check first", value: "Fourteen states ban it: California, Colorado, Connecticut, Georgia, Hawaii, Kansas, Kentucky, Maine, Nebraska, New Jersey, Pennsylvania, Vermont, Wisconsin, and Wyoming. Rhode Island and Arkansas require a permit, Virginia attaches a condition, Tennessee is unresolved.", source: "quaker-parakeet-legal-guide" },
         { label: "Why the bans exist", value: "The only parrot that builds a stick nest rather than using a cavity, often on electrical infrastructure. Florida Power and Light logged 498 outages from the birds in the first five months of 2001.", source: "quaker-parakeet-legal-guide" },
         { label: "Cage", value: "24 by 24 by 36 inches minimum, a 30 to 36 inch flight-style cage the better target, on heavy-gauge bars spaced 1/2 to 5/8 inch and never past 3/4. Never a nest box: it triggers hormonal aggression.", source: "quaker-parakeet-tank-setup-guide" },
         { label: "Temperature and light", value: "Room temperature, off drafts, and never outdoors as it climbs toward 90°F. Full-spectrum lighting is optional, up to about 4 hours a day if you run one.", source: "quaker-parakeet-tank-setup-guide" },
@@ -673,7 +673,7 @@ export const birdGuides = [
       vetLine: "Fix the diet first, since an all-seed diet drives the liver disease and the deficiencies. Hygiene and quarantine handle PBFD and psittacosis.",
     },
     routes: [
-      { slug: "quaker-parakeet-legal-guide", line: "All 52 jurisdictions read against the state codes themselves, thirteen outright bans, and why every one of them is an invasive species rule." },
+      { slug: "quaker-parakeet-legal-guide", line: "All 52 jurisdictions read against the state codes themselves, fourteen outright bans, and why every one of them is an invasive species rule." },
       { slug: "quaker-parakeet-cost-guide", line: "$250 to $500 for the bird, dated retail prices for the setup, real clinic pricing, and the toy line that never stops." },
       { slug: "quaker-parakeet-tank-setup-guide", line: "Cage size and bar spacing, why a nest box is the one thing never to add, diet basics, and lighting that is optional rather than required." },
       { slug: "quaker-parakeet-handling-guide", line: "Temperament, the nest-building instinct behind the cage aggression, and the legal trap that catches buyers before they ever handle one." },
@@ -696,7 +696,7 @@ export const birdGuides = [
       "Avian vet contact, located before you need one",
     ],
     faqs: [
-      { q: "Which states ban quaker parrots?", a: "Thirteen: California, Colorado, Connecticut, Georgia, Hawaii, Kansas, Kentucky, Nebraska, New Jersey, Pennsylvania, Vermont, Wisconsin and Wyoming. Maine, Rhode Island and Arkansas require a permit, Virginia allows them on a condition, and Tennessee is unresolved. In the remaining 34 jurisdictions on our map, including New York City, nothing reaches the species." },
+      { q: "Which states ban quaker parrots?", a: "Fourteen: California, Colorado, Connecticut, Georgia, Hawaii, Kansas, Kentucky, Maine, Nebraska, New Jersey, Pennsylvania, Vermont, Wisconsin and Wyoming. Rhode Island and Arkansas require a permit, Virginia allows them on a condition, and Tennessee is unresolved. In the remaining 34 jurisdictions on our map, including New York City, nothing reaches the species." },
       { q: "What size cage does a Quaker parakeet need?", a: "24 by 24 by 36 inches is a reasonable minimum, though a wider flight-style cage at 30 to 36 inches is the better real-world target for an active bird. Bar spacing 1/2 to 5/8 inch, never past 3/4, on heavy-gauge bars, since this species chews hard." },
       { q: "What is the most common health issue in Quaker parakeets?", a: "Fatty liver disease (hepatic lipidosis), almost always tied to a seed-heavy, high-fat diet. Signs include anorexia, lethargy, an overgrown beak and nails, and green-tinted droppings, and Quaker parakeets are among the parrot species prone to obesity, which raises the risk." },
     ],
