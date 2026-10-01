@@ -21,6 +21,18 @@ function rng(seed) {
 }
 
 const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+// The match below adds "s" and "es" itself; these are the plurals it can't
+// reach. "Wolves" slipped past a WOLF clue on Beastle #4 and gave it away.
+const IRREGULAR = [[/mouse$/i, 'mice'], [/goose$/i, 'geese'], [/louse$/i, 'lice']];
+function plurals(w) {
+  const out = [w];
+  if (/[^aeiou]y$/i.test(w)) out.push(`${w.slice(0, -1)}ies`);
+  if (/fe$/i.test(w)) out.push(`${w.slice(0, -2)}ves`);
+  else if (/f$/i.test(w)) out.push(`${w.slice(0, -1)}ves`);
+  for (const [re, pl] of IRREGULAR) if (re.test(w)) out.push(w.replace(re, pl));
+  return out;
+}
 const nameWords = (name) => name.toLowerCase().split(/[\s-]+/).filter((w) => w.length >= 3);
 
 // Splits a fact into plain text and the blanked name, so the round can show
@@ -31,6 +43,7 @@ const nameWords = (name) => name.toLowerCase().split(/[\s-]+/).filter((w) => w.l
 export function maskParts(text, names) {
   const words = [...new Set(names.flatMap((n) => [n, ...n.split(/[\s-]+/)]))]
     .filter((w) => w.length >= 3)
+    .flatMap(plurals)
     .sort((a, b) => b.length - a.length);
   if (!words.length) return [{ text }];
   const re = new RegExp(`\\b(?:${words.map(escape).join('|')})(?:es|s)?\\b`, 'gi');
