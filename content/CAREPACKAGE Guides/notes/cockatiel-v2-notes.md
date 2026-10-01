@@ -310,3 +310,19 @@ second half went with it.
 **Page 18 and page 29, the sick-bird warming figure,** was 80 to 85 F (27 to 29 C). The site
 gives 75 to 80 F for a sick bird, so the package now prints about 80 F (27 C), the top of
 that range and the bottom of LafeberVet's 80 to 90 F for supplemental heat.
+
+**Page 7, the sleep paragraph, cut for space** when the abbreviation pass spelled out UVB,
+NHLBI and HEPA on the same page. The 1.2 draft wording:
+
+> It is also the cheapest thing in this book to fix. Before you change the diet, buy a toy,
+> or call a behaviorist about a screaming bird, count the hours of real darkness it is
+> actually getting.
+
+Now "It is also the cheapest fix in this book. Before you change the diet, buy a toy, or
+call a behaviorist, count the hours of real darkness it gets."
+
+**Page 39, the Lafeber night fright row, cut for space** when NASPHV, MSD and UC Davis
+were spelled out. Was "The mechanism, the night light recommendation, partial rather than
+full covering, identifying external triggers, and the response when one happens." Now "The
+mechanism, the night light, partial rather than full covering, external triggers, and the
+response when one happens."
