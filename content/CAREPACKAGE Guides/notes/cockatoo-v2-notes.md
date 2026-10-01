@@ -294,3 +294,119 @@ still points at expanding `cockatoo-screaming-feather-plucking-explained.mdx`
 rather than opening a new URL. The weaning window of 90 to 150 days on page 6, the
 weights by species on pages 4 and 6, and the itemized budget on page 34 also have
 no article behind them.
+
+---
+
+## Cut in 1.2
+
+The October 2026 pass cross-checked every figure against the site again and moved the
+package to whatever the site's guides now print. Nothing below was deleted outright: the
+first group was withdrawn because the site corrected away from it, the second was tightened
+for space. Original wording from the 1.1 file (with the September legal edition) follows.
+
+### Withdrawn because the site no longer supports it
+
+**Page 16, the training study callout and its framing.** `cockatoo-enrichment-guide` now says
+the 2014 sulphur-crested study's full text is not openly available and declines to repeat
+the claim that training outperformed the other treatments. The page now cites the study
+design only, plus the van Zeeland (2009) review, which lists training, environmental and
+foraging enrichment together without ranking them. The cover blurb, the contents title and
+pages 3, 5 and 24 lost the same claim.
+
+```html
+    <span class="label">What the study found</span>
+    An assessment and treatment programme for feather plucking in <strong>sulphur-crested cockatoos</strong> compared medication, socialization, training sessions and feeding enrichment, and checked the results against behavioural observation, feather condition scoring and corticosterone levels. <strong>Training sessions were the most successful treatment.</strong> The authors attributed that to the social attention and mental stimulation the sessions provided, rather than to anything about the specific behaviours being taught.
+  <p style="margin-top:5pt;">That is not a result about tricks. It says the most effective intervention available for the signature problem of this species is <strong>structured time you personally spend with the bird</strong>, which is exactly the thing most owners have least of and no product can replace. So protect the sessions when the week gets busy, ahead of almost anything else in the routine.</p>
+    It is not a substitute for the hours out of the cage, the foraging, or the sleep. And it is not a fix applied after a problem starts: the study treated established plucking, but every practitioner in this field says the same thing, which is that prevention in this species is disproportionately more effective than treatment. Start the sessions in week one, on a bird with no problems at all.
+```
+
+**Page 15 and the glossary, the six-hour wild foraging figure.** Same guide: the hour
+figures do not trace to a source worth citing. Now "a large share of its waking day".
+
+```html
+  <div class="section-sub">Wild parrots spend up to six hours a day getting food. A full bowl takes minutes. That gap is the problem.</div>
+  <p>Wild parrots spend <strong>up to six hours a day</strong> searching for, selecting and manipulating food. A captive bird with a full dish is finished in minutes. That is not a small difference in daily routine, it is most of the bird's waking behaviour missing, and something fills the space: in this species it is screaming, destruction and plucking.</p>
+    <tr><td style="font-weight:700;color:var(--accent-dark);">Foraging</td><td>Working for food rather than eating it from a bowl. Wild parrots spend up to six hours a day doing it. Page 15</td></tr>
+```
+
+**Page 12, the diet split and one unsourced aside.** Fresh food is now the remaining 20 to
+25%, seed under about 10% (`cockatoo-feeding-guide`).
+
+```html
+  <p>VCA gives the target as <strong>approximately 75 to 80% formulated pellets</strong>, with fresh fruit and vegetables making up <strong>no more than 20 to 40%</strong> of the daily diet, and seed as a small minority rather than the base of it. That is the whole prescription, and it is the same figure across every large parrot.</p>
+```
+
+**Page 34, cage, first vet visit, food and annual exam lines.** Replaced by the site's cage
+ranges, the $140 to $210 exam with PBFD test, $20 to $50 a month for food and $78 to $115 for
+a wellness exam (`cockatoo-cost-guide`). Page 37 lost "with bloodwork" to match.
+
+```html
+    <tr><td>Cage: heavy powder-coated at the low end, stainless at the high</td><td>$700</td><td>$1,550</td></tr>
+    <tr><td>Well-bird exam plus a PCR panel, week one</td><td>$200</td><td>$450</td></tr>
+    <tr><td>Pellets</td><td>$200</td><td>$350</td></tr>
+    <tr><td>Fresh vegetables, fruit and nuts</td><td>$250</td><td>$450</td></tr>
+    <tr><td>Annual avian exam plus bloodwork</td><td>$150</td><td>$300</td></tr>
+    <tr><td><strong>Once a year</strong></td><td>Wellness exam with bloodwork, even when nothing is wrong. In a bird that hides illness this well, the annual exam is where problems are actually found</td></tr>
+```
+
+**Page 37, weekly bathing and weekly weighing, and the session length.** Bathing and
+weighing are daily on the site; sessions follow VCA's ramp.
+
+```html
+      <div class="check-item"><div class="box"></div><span><strong>Two training sessions, ten to fifteen minutes each</strong></span></div>
+      <div class="check-item"><div class="box"></div><span>Weigh and log it. Page 40</span></div>
+      <div class="check-item"><div class="box"></div><span>Bathe or shower the bird two or three times. Page 10</span></div>
+```
+
+**Page 22, the 80 to 85 F warming figure.** `bird-emergency-travel-guide` gives 75 to 80 F
+for a sick bird, with recovery best at the upper end.
+
+```html
+  <p style="margin-top:4pt;">Meanwhile: carrier, dark and quiet, warmed to <strong>80 to 85&deg;F (27 to 29&deg;C)</strong>, inside LafeberVet's 80 to 90&deg;F range under supplemental heat where VCA puts a recovering bird at 75 to 80&deg;F. Back off at flat sleek feathers, wings held out or open-mouth breathing, which mean too hot. Never massage the abdomen or pull at a visible egg.</p>
+```
+
+### Tightened for space
+
+**Page 30**, which overflowed by 139 px at the start of this pass because the September
+legal edition added the New Jersey reasoning without re-measuring. California and Virginia
+now share a row. The Massachusetts row was corrected as well as cut: it called the bar
+"IUCN Endangered and Critically Endangered" where the site reads 9.01(3)(b) as any IUCN
+listing, with a permit tier MassWildlife does not issue for pets.
+
+```html
+  <p>In the great majority of US states a pet cockatoo raises no legal question at all. Idaho and Colorado clear pet birds as a category outright; Oklahoma's noncontrolled exotic-species exemption names cockatoos specifically; New Hampshire and Montana name the parrot order or family as unregulated. Where a state does restrict a parrot, it is almost always the monk parakeet, named in California, Connecticut, New Jersey and Virginia among others, and every cockatoo is outside those lists.</p>
+    CITES governs <strong>international trade</strong>, not domestic ownership, so an Appendix I listing does not by itself make a captive-bred bird illegal to keep. It matters here for two reasons: a state can write its own rule that keys off the listing, and moving a bird across an international border is a serious permitting exercise rather than a formality.
+    <tr><td><strong>Maine</strong>, for the Moluccan, yellow-crested and umbrella</td><td>Permit required</td><td>Maine clears the whole parrot order from its captivity-permit requirement, then carves out any species on CITES Appendix I or the IUCN's Endangered, Critically Endangered or Extinct in the Wild tiers. The Moluccan and yellow-crested are Appendix I; the umbrella is IUCN Endangered even though it is only Appendix II, so the IUCN half of the rule catches it on its own</td></tr>
+    <tr><td><strong>Maine</strong>, for the galah, cockatiel and other smaller species</td><td>Legal, no permit</td><td>Not on Appendix I or the most endangered IUCN tiers, so they clear the blanket exemption</td></tr>
+    <tr><td><strong>Arkansas</strong></td><td>Legal</td><td>Five cockatoo species, including the Appendix I Moluccan and yellow-crested, are named directly on the state's unrestricted list with no conservation-status carve-out at all. The same birds Maine permits</td></tr>
+    <tr><td><strong>Hawaii</strong></td><td>Conditional, a real import process</td><td>White cockatoos, the galah, gang-gang, black cockatoos and palm cockatoo are on the conditionally approved animal list. Bringing one in requires an import permit, pre-departure quarantine, health certification and permanent identification before the bird arrives. A process, not a ban</td></tr>
+    <tr><td><strong>California</strong></td><td>Legal</td><td>The only parrot on the restricted species list is the monk parakeet</td></tr>
+    <tr><td><strong>Virginia</strong></td><td>Legal</td><td>The only parrot on the permit table is the monk parakeet. <em>Cacatua</em> is absent from it</td></tr>
+    <tr><td><strong>New Jersey</strong></td><td>Permit</td><td>Easy to read backwards. The potentially dangerous table at 4.8(a) names three parrots and no cockatoo, but that table lists escape-and-establish agricultural pests, so being off it only means a bird is not banned. What decides whether a bird is free is the exempt list at 4.4, and its nine entries are the budgerigar, cockatiel, peafowl, rock dove, canary, house sparrow, European starling, zebra finch and society finch. No cockatoo, so 4.5 requires a permit. The Division also treats an IUCN Red List entry as an endangered listing, and the umbrella is Endangered and the Moluccan Vulnerable, so for those two the answer may be harder than a permit</td></tr>
+    <tr><td><strong>Vermont</strong></td><td>Banned</td><td>An inverted-list state. The Domestic Species List clears psittacines one binomial at a time, the budgerigar, cockatiel, lovebirds, rosellas and <em>Psittacula</em> among them, and <em>Cacatua</em> is on none of the three lists. A species on none of them is treated as Restricted</td></tr>
+    <tr><td><strong>Massachusetts</strong></td><td>Permit for the listed species</td><td>The exemption is subject to a categorical bar on IUCN Endangered and Critically Endangered species, which catches the umbrella, Moluccan and yellow-crested the same way Maine's rule does</td></tr>
+    <tr><td><strong>Everywhere else</strong></td><td>Generally legal</td><td>No state-level restriction found. An ordinary captive-bred psittacine pet</td></tr>
+    <strong>Your lease or HOA.</strong> A noise clause is far more likely to end a cockatoo's stay than a wildlife statute is. Page 19.<br />
+    <strong>Local ordinances.</strong> City and county rules on exotic animals and on noise sit underneath state law and are not covered by any state list.<br />
+    <strong>Paperwork on the bird itself.</strong> Ask for hatch records, banding or microchip details, and for CITES documentation if the bird was ever imported. A bird you cannot document is a bird you may struggle to move, sell, or place in a sanctuary later. Page 31.
+```
+
+**Page 29**, two clauses, to absorb the 30 to 45 day figure.
+
+```html
+    Public health guidance for birds exposed to other birds at shows, sales or events is to quarantine <strong>at least 30 days and test before returning or adding them to a group</strong>. Take that as the floor. In a household with an existing bird, Merck's figure for introducing a bird to an aviary or an established group is <strong>90 days</strong> with testing, because an infected adult can shed polyomavirus intermittently for up to 90 days before clearing it. There is no version of this that takes a weekend.
+    A 30-day settling period in a quiet room, with a vet exam at the start of it, is good for a single new cockatoo too. It catches problems while your expectations are still forming, gives the bird the low-pressure start page 18 asks for, and stops the intense first-weeks over-bonding that causes so much trouble later.
+```
+
+**Page 45**, the three rewritten disagreement rows, the closed-gap list, and the two
+history rows, which were merged and shortened when the unreleased September legal edition
+and this pass became one 1.2.
+
+```html
+    <tr><td><strong>Life span</strong></td><td>LafeberVet's veterinary information sheet gives <strong>30 to 45 years</strong> generally, with Moluccans up to 70. VCA gives <strong>25 to 45, with the larger species at 70 to 80 or more</strong>, a wider band at both ends. Consumer sources commonly give 40 to 70-plus, and umbrellas at 50 to 70. This book prints the veterinary range with the documented upper figure alongside it, because the planning consequence on page 31 is the same either way: assume the bird outlives you</td></tr>
+    <tr><td><strong>Diet split</strong></td><td>Some care references give 60 to 70% pellets for large parrots. VCA's cockatoo feeding page gives <strong>75 to 80%</strong>, with fresh food at no more than 20 to 40%, and that is what is printed here</td></tr>
+    <tr><td><strong>Cost</strong></td><td>Published setup figures of $250 to $1,300 omit the play stand, the air purifier, a gram scale, a carrier and a real first veterinary visit with a PCR panel. Page 34 itemizes all of them and lands at $2,105 to $6,930, with the lines summing to the totals</td></tr>
+    At 1.0 this list ran to seven items. All but one have since been closed by articles on the site: the bird fancier's lung material on page 10, the iris sexing and keel scoring on page 21, the quarantine periods on page 29, the droppings reference on page 28, the wing clipping page and the succession material on page 31 all now have a companion guide behind them, and every one was cross-checked against it at 1.1. What is still carried by this book alone: the <strong>itemized budget on page 34</strong>, the weights and weaning ages by species on pages 4 and 6, and the measured noise figure this book deliberately does <strong>not</strong> print, because no acoustic or veterinary source worth citing gives one. Everything else is sourced on pages 43 and 44.
+    <tr><td>1.2</td><td>Sep 2026</td><td>t3</td><td>Legal edition. New Jersey was wrong and is corrected: the package read the potentially dangerous table at 4.8(a), found no cockatoo, and called the bird legal. That is backwards. The exempt list at 4.4 decides, its nine entries hold no cockatoo, and 4.5 therefore requires a permit. Virginia keeps its own row. Vermont was added as a ban, since the Domestic Species List clears psittacines one binomial at a time and <em>Cacatua</em> is on none of the three lists, and Massachusetts was added as a permit for the IUCN-listed species.</td></tr>
+    <tr><td>1.1</td><td>Sep 2026</td><td>t3</td><td>Corrections pass, cross-checked page by page against the site's cross-species bird articles. Page 31 stopped calling a rehomed bird's withdrawal grief, which Merck lists as a potential sign of illness, and routes it to a vet check; blood-feather first aid was corrected to firm pressure with no pulling at home; weighing moved from weekly to daily; the 45 to 60 day multi-bird quarantine became Merck's 90 days; the training session length became VCA's ramp; and the bird fancier's lung source line was corrected, since the case report behind it documents a pigeon keeper rather than a psittacine one. Added: the hand-raised against parent-raised tradeoff, the pale grey juvenile iris, the pet trust law position, the 48-hour egg marker, Merck's four to seven outermost primaries and partial second molt, and the generator, carbon monoxide, lead, zinc and droppings figures.</td></tr>
+```

@@ -137,7 +137,7 @@ Shipped 2026-09-24 in commit 4c5ae0a, pushed to claude/adsense-readiness-review-
 
 **Worth knowing, not fixed (out of scope)**
 - One new source is weak: canary-health-issues-guide now cites Pet Assure, a pet discount plan's blog. It backs the red mite night-feeding and anemia lines, which had no source before.
-- The cockatoo care package HTML (content/CAREPACKAGE Guides/source/cockatoo.html and cockatoo-src/pages_*.html) still says "six hours a day", "$250 to $1,300" setup and "20 to 40% fresh". The site pages were corrected away from those figures.
+- The cockatoo care package HTML (content/CAREPACKAGE Guides/source/cockatoo.html and cockatoo-src/pages_*.html) still says "six hours a day", "$250 to $1,300" setup and "20 to 40% fresh". The site pages were corrected away from those figures. Fixed in cockatoo 1.2 (2026-10-01).
 - Neon tetra temperature: the two shared fish guides disagree. aquarium-stocking-and-tankmates-guide says neons top out near 77°F; aquarium-ich-treatment-guide says 81°F.
 - Platy cycling time: platy-tank-setup-guide says a fishless cycle takes 2 to 4 weeks; aquarium-cycling-guide says 4 to 6.
 - Source homepages, which the rules forbid: pacman-frog-cost-guide and pacman-frog-handling-guide (a-z-animals.com, backwaterreptiles.com, thecritterdepot.com), pacman-frog-tank-setup-guide (mramphibian.com), why-bearded-dragons-need-uvb-lighting-and-why-skipping-it-is-deadly (ARAV), why-parrots-need-social-interaction-and-what-loneliness-does-to-them (AAV), hamster-tank-setup-guide (Merck).
@@ -406,11 +406,11 @@ the HTML), then re-render the PDF.
 **Package wrong, site right (change the package):**
 - [ ] Leopard gecko p17: "around half of captive leopard geckos may carry it" and "most commonly diagnosed reptile". Replace with the single Thai farm 51% finding.
 - [ ] Tarantula (profile, pp. 11, 27): male lifespan "4 to 7 years". Site: about 5 for a rose hair, 10 at the outside.
-- [ ] Cockatoo: "75 to 80% pellets... no more than 20 to 40%" fresh (four places). Site: remaining 20 to 25%, seeds under about 10%.
-- [ ] Cockatoo: bathing "two or three times a week". Site: offer a bath daily (VCA).
-- [ ] Cockatoo: cage "$700" to "$1,550". Site: $820 to $880 powder-coated, $1,450 to $1,550 stainless.
+- [x] Cockatoo: "75 to 80% pellets... no more than 20 to 40%" fresh (four places). Site: remaining 20 to 25%, seeds under about 10%. Done in 1.2 (2026-10-01).
+- [x] Cockatoo: bathing "two or three times a week". Site: offer a bath daily (VCA). Done in 1.2 (2026-10-01).
+- [x] Cockatoo: cage "$700" to "$1,550". Site: $820 to $880 powder-coated, $1,450 to $1,550 stainless. Done in 1.2 (2026-10-01), at the current cost guide figures: $1,250 to $1,500 powder-coated, $1,800 to $2,500 stainless.
 - [ ] Lovebird: "75 to 80% pellets, 20 to 40% fresh". Site: remaining 20 to 25%.
-- [ ] Cockatiel: bathing dish "two or three times a week". Site: a bath offered daily.
+- [x] Cockatiel: bathing dish "two or three times a week". Site: a bath offered daily. Done in 1.2 (2026-10-01).
 - [ ] Crested gecko p14: "weigh weekly". Site settled on at least monthly, more often while off food.
 - [ ] Russian tortoise: soak "at least 20 minutes, two to three times a week". Site: adults weekly 10 to 20 minutes, juveniles 10 to 15 minutes twice a week, no deeper than the elbows.
 - [ ] Russian tortoise: "that is what causes pyramiding". Site: one suspected driver, not completely understood.
@@ -445,9 +445,9 @@ Added 2026-09-25 from the wave 3a changes:
 
 Added 2026-09-25 from the wave 3b changes:
 - [ ] Budgie (budgie-src/pages_1.html:262): "a bird does not need a special lamp". Site: without unfiltered sunlight, a full-spectrum bird UV light 10 to 12 hours a day (budgie-cost-guide; PetMD). The other bird packages already recommend one.
-- [ ] Cockatiel (cockatiel-src/pages_1.html:349): "Two hens or two cocks avoids the egg problem entirely". Site: hens lay with no male; two males are the pairing with no eggs (cockatiel-handling-guide; Lafeber, PetMD, VCA).
+- [x] Cockatiel (cockatiel-src/pages_1.html:349): "Two hens or two cocks avoids the egg problem entirely". Site: hens lay with no male; two males are the pairing with no eggs (cockatiel-handling-guide; Lafeber, PetMD, VCA). Done in 1.2 (2026-10-01).
 - [ ] Lovebird (lovebird-src/pages_1.html:337, pages_2.html:111): "Two hours a day is the working figure". Site: no study backs a fixed number; daily interaction and time out, and hours alone did not change feather damage odds (lovebird-enrichment-guide; Ebisawa et al. 2021, PetMD).
-- [ ] Budgie, cockatiel, lovebird (budgie-src/pages_2.html:227-229; cockatiel-src/pages_2.html:236, pages_4.html:256; lovebird-src/pages_2.html:242): only a 10% drop is given as a weight trigger. Add: during a diet conversion, more than 1 to 2% lost in a week means the change is too fast (feeding guides; UF Small Animal Hospital).
+- [ ] Budgie, cockatiel, lovebird (budgie-src/pages_2.html:227-229; cockatiel-src/pages_2.html:236, pages_4.html:256; lovebird-src/pages_2.html:242): only a 10% drop is given as a weight trigger. Add: during a diet conversion, more than 1 to 2% lost in a week means the change is too fast (feeding guides; UF Small Animal Hospital). Cockatiel done in 1.2 (2026-10-01); budgie and lovebird still open.
 - [ ] Rabbit (rabbit.html:1069, 1406, 1578): "Annual vaccination" with one box a year. Site: first course is two doses 21 days apart from 4 weeks old, then yearly; starter series $80 to $180, booster $60 to $75 (rabbit-health-issues-guide, rabbit-cost-guide; Bosco-Lauth et al. 2024).
 - [ ] Hamster (hamster.html:658): Syrians nurse "roughly 26 to 28 days". Site: weaned at about 20 days, can breed at 7 to 8 weeks (hamster-handling-guide; Merck).
 - [ ] Hamster (hamster.html:1342, 1347, 1364, 1519): wheel, dishes and hideout washed monthly, bedding partly replaced every 3 to 4 months. Site: water bottle daily; full clean weekly for a small cage, every few weeks for a large deep-bedded one, nest and hoard set aside and returned (hamster-tank-setup-guide; PetMD, PDSA).
@@ -456,13 +456,13 @@ Added 2026-09-25 from the wave 3a changes:
 
 **Package and site disagree, no source settles it yet (research before changing either):**
 - [ ] Rabbit lifespan: package 7 to 10 indoors, outdoor about 2; site 8 to 12, some to 14, outdoor 3 to 5.
-- [ ] Cockatoo lifespan: package 30 to 45 (veterinary), Moluccan to 70; site hub 40 to 60 typical, Moluccan to 92.
-- [ ] Bird quarantine (cockatiel, cockatoo): package 30 days, 45 to 60 with an existing bird; hub 30 to 45, multi-bird nearer 90.
+- [x] Cockatoo lifespan: package 30 to 45 (veterinary), Moluccan to 70; site hub 40 to 60 typical, Moluccan to 92. Done in 1.2 (2026-10-01).
+- [x] Bird quarantine (cockatiel, cockatoo): package 30 days, 45 to 60 with an existing bird; hub 30 to 45, multi-bird nearer 90. Done in 1.2 (2026-10-01).
 - [ ] Betta ich: package about 82°F with copper or formalin; hub 86°F or aquarium salt.
 - [ ] Goldfish filtration: package 10x tank volume per hour minimum; hub at least 4x, ideally 5 to 10.
 - [ ] Bearded dragon costs: package equipment $420 to $860, exam $75 to $200, monthly $60 to $130; cost guide $400 to $800, $120 to $245, $50 to $108.
 - [ ] Leopard gecko costs: package setup $175 to $495, monthly $32 to $91; hub $250 to $400, $20 to $50.
-- [ ] Cockatiel yearly cost: package $300 to $565; hub $200 to $350.
+- [x] Cockatiel yearly cost: package $300 to $565; hub $200 to $350. Done in 1.2 (2026-10-01).
 - [ ] Russian tortoise brumation: package 10 to 14 weeks at most; hub 2 to 4 months.
 
 Added 2026-09-25 from the wave 2 changes:
@@ -485,8 +485,8 @@ Added 2026-09-25 from the wave 3a changes:
 
 Added 2026-09-25 from the wave 3b changes:
 - [ ] Budgie cere (budgie-src/pages_2.html:213): package names recessive pied, lutino and albino as keeping a pink cere; site names pastel and solid-color mutations (budgie-cere-color-guide; Lafeber, Wissman DVM).
-- [ ] Cockatoo first-week vet (cockatoo-src/pages_4.html:325): package exam plus 3-test PCR panel $200 to $450; site exam with PBFD test $140 to $210, $24.50 per PCR at the lab (cockatoo-cost-guide). Different scope.
-- [ ] Cockatoo annual vet (cockatoo-src/pages_4.html:339): package exam plus bloodwork $150 to $300; site wellness exam $78 to $115, no bloodwork (cockatoo-cost-guide).
+- [x] Cockatoo first-week vet (cockatoo-src/pages_4.html:325): package exam plus 3-test PCR panel $200 to $450; site exam with PBFD test $140 to $210, $24.50 per PCR at the lab (cockatoo-cost-guide). Different scope. Done in 1.2 (2026-10-01).
+- [x] Cockatoo annual vet (cockatoo-src/pages_4.html:339): package exam plus bloodwork $150 to $300; site wellness exam $78 to $115, no bloodwork (cockatoo-cost-guide). Done in 1.2 (2026-10-01).
 - [ ] Lovebird seed (lovebird-src/pages_2.html:12): package seed is treat only, never free-fed, millet 2 to 3 times a week (VCA); site allows 1 to 2 teaspoons a day (lovebird-feeding-guide; Bird Vet Melbourne).
 - [ ] Guinea pig spay (guinea-pig-src/pages_3.html:132): package spay only for a medical reason (Merck); site says exotics vets now recommend a preventive flank ovariectomy for young sows (guinea-pig-health-issues-guide; Illinois CVM).
 - [ ] Hamster settling (hamster.html:797, 920): package no handling for the first week; site leave it 24 hours, then start hand-in-cage taming (hamster-handling-guide; RSPCA, Woodgreen).

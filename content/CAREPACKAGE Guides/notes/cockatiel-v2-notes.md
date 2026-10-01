@@ -273,3 +273,40 @@ exception in one FAQ line but never covers the dimorphism or the mutations, whic
 is why that row could not be closed. The claim on page 17 that VCA finds
 reproductive problems more common in cockatiels than budgies also stays flagged for
 an external check.
+
+---
+
+## Cut in 1.2
+
+Version 1.2 (October 2026) was a cross-check against the site. These words left the
+page, for space or because the site no longer supports them, and are kept here.
+
+**Page 39, the guides paragraph, cut for space.** The list of guides became "sixteen
+cross-species bird guides, from household hazards and quarantine to first aid and
+feather dust." The 1.1 wording:
+
+> Beastly Facts guides drawn on: cockatiel cage setup, feeding, health issues, handling,
+> enrichment and cost, plus the cockatiel and cockatoo comparison, and the cross-species
+> bird guides written since this edition, which now carry pages this package used to
+> source externally: household hazards, photoperiod and sleep, pellet conversion,
+> quarantine, droppings, wing clipping, sexing and body condition, feather loss and molt,
+> chronic egg laying, emergency and travel, first aid and grooming, body language, parrot
+> training, avian gastric yeast, feather dust and air quality, and choosing a pet bird.
+
+**Page 29, the first-aid kit callout, cut for space:** "Assemble it in week one, where
+anyone can find it in the dark." Now "Keep it where anyone can find it in the dark."
+
+**Page 29, the weight row,** was "A fall of about 10% from baseline, or three declining
+weighings" and is now "A 10% fall, three falling weighings, or 1 to 2% a week in a diet
+change". The quarantine row lost "with an existing bird" along with the old 45 to 60 days.
+
+**Page 15, the recall callout,** ended "and it takes a fortnight." No site page gives a
+timeline for recall training, so it now ends "built a little more distance at a time."
+
+**Page 9, the pairing paragraph,** opened "Two hens or two cocks avoids the egg problem
+entirely and they will still bond." The first half was wrong (hens lay with no male); the
+second half went with it.
+
+**Page 18 and page 29, the sick-bird warming figure,** was 80 to 85 F (27 to 29 C). The site
+gives 75 to 80 F for a sick bird, so the package now prints about 80 F (27 C), the top of
+that range and the bottom of LafeberVet's 80 to 90 F for supplemental heat.

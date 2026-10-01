@@ -1,3 +1,5 @@
+> **Stale since 1.1. Do not run build.py.** These fragments still hold 1.0. The 1.1 and 1.2 edits were made directly in `../cockatoo.html`, which is now the source of truth. Running build.py overwrites it with 1.0 text. Edit `../cockatoo.html` and render with `node ../_render.mjs cockatoo "<Name>" <version>`, or port the HTML back into fragments first.
+
 # Cockatoo care package source
 
 `../cockatoo.html` is generated. Edit the fragments here, then:
