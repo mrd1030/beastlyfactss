@@ -536,6 +536,12 @@ than a ban on hedgehogs and bearded dragons, so the 50 cells resting on it keep
 their August dates. Wayback holds the full list as late as 2026-02-12. Ask IFW,
 or recheck next month.
 
+The 30 guides that discuss Maine carry a `<SourceNotice id="me-unrestricted" />`
+box saying so, worded in src/lib/data/sourceNotices.js. After each recheck,
+move `statusCheckedOn` there to the recheck date. Once the full list is back and
+the 50 cells are re-verified, delete the `me-unrestricted` entry: the boxes
+stop rendering on the next build, and the tags can come out of the guides after.
+
 ### Upcoming: Wisconsin native herps change on 2027-01-01
 
 CR 25-092 repeals and recreates Wis. Admin. Code NR 16.12 effective 1 January

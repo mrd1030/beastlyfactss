@@ -15,6 +15,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { aggregateVerified } from '../src/lib/utils/verifiedDates.js';
+import { SOURCE_NOTICES } from '../src/lib/data/sourceNotices.js';
 
 const root = process.cwd();
 const legal = JSON.parse(
@@ -27,6 +28,7 @@ const outPath = path.join(root, 'src/lib/generated/legal-summary.json');
 const guidesPath = path.join(root, 'src/lib/generated/legal-guides.json');
 const coveragePath = path.join(root, 'src/lib/generated/legal-coverage.json');
 const verifiedPath = path.join(root, 'src/lib/generated/legal-verified.json');
+const noticesPath = path.join(root, 'src/lib/generated/legal-source-notices.json');
 
 // Keyed by encyclopediaId, because that is what the encyclopedia route has in
 // hand. The two id sets do not always match: every cat is cat-<breed> in the
@@ -105,11 +107,29 @@ for (const a of Object.values(legal.animals)) {
   if (slug && agg) verified[slug] = agg;
 }
 
+// For each guide, the verifiedOn of every cell resting on a source with an
+// open notice (src/lib/data/sourceNotices.js), keyed slug -> source id. That
+// is the "accurate when we checked it on" date <SourceNotice> prints, taken
+// from the cell so it is right for each animal. A guide whose cells span
+// several dates on one source gets the oldest, the one that holds for all.
+const notices = {};
+for (const a of Object.values(legal.animals)) {
+  const slug = /^\/blog\/([^/]+)\/$/.exec(a.article || '')?.[1];
+  if (!slug) continue;
+  for (const e of Object.values(a.jurisdictions)) {
+    if (!SOURCE_NOTICES[e.sourceId] || !e.verifiedOn) continue;
+    notices[slug] ??= {};
+    const prev = notices[slug][e.sourceId];
+    if (!prev || e.verifiedOn < prev) notices[slug][e.sourceId] = e.verifiedOn;
+  }
+}
+
 fs.mkdirSync(path.dirname(outPath), { recursive: true });
 fs.writeFileSync(outPath, `${JSON.stringify(summary, null, 2)}\n`);
 fs.writeFileSync(guidesPath, `${JSON.stringify(guides, null, 2)}\n`);
 fs.writeFileSync(coveragePath, `${JSON.stringify(coverage, null, 2)}\n`);
 fs.writeFileSync(verifiedPath, `${JSON.stringify(verified, null, 2)}\n`);
+fs.writeFileSync(noticesPath, `${JSON.stringify(notices, null, 2)}\n`);
 
 const count = Object.keys(summary).length;
 const bytes = fs.statSync(outPath).size;
