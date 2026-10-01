@@ -40,8 +40,46 @@ const nameWords = (name) => name.toLowerCase().split(/[\s-]+/).filter((w) => w.l
 // animal's names (and its plural) is blanked, longest first, so "red pandas"
 // goes before "red" and nothing leaks through as half a name. A run of
 // blanked words ("Wandering _____ _____") becomes one blank.
+// Words that give the answer away without being its name: a root, a
+// scientific name, a country the breed is named for. Keyed by answer, which
+// every caller passes in `names`. Found by checking every pool clue for
+// leftover pieces of the name; add to it when a new animal joins the pool.
+const ALSO_MASK = {
+  LION: ['lioness'],
+  RHINOCEROS: ['rhino'],
+  MANTIS: ['Mantodea'],
+  'PRAYING MANTIS': ['Mantodea'],
+  CUTTLEFISH: ['cuttlebone'],
+  BUDGIE: ['budgerigar'],
+  BENGAL: ['bengalensis'],
+  CROCODILE: ['crocodilian'],
+  FERRET: ['ferreting'],
+  'ELECTRIC EEL': ['electricity'],
+  SWORDTAIL: ['sword'],
+  'SATIN BOWERBIRD': ['bower'],
+  PERSIAN: ['Persia'],
+  SIAMESE: ['Siam'],
+  'GERMAN SHEPHERD': ['Germany'],
+  SHEPHERD: ['Germany'],
+  'SCOTTISH FOLD': ['Scotland', 'folded'],
+  PARROTLET: ['parrot'],
+  'BALD EAGLE': ['balde'],
+  'BEARDED DRAGON': ['beard'],
+  'HAIRY FROG': ['hair'],
+  CHICKEN: ['chick'],
+  'CROWNED PIGEON': ['crown'],
+  BLOBFISH: ['blob'],
+  BULLDOG: ['bull'],
+  'BOA CONSTRICTOR': ['constriction'],
+  'LEAFY SEADRAGON': ['leaf'],
+  'WOOD FROG': ['woodland'],
+  GHARIAL: ['ghara'],
+  'SAVANNAH MONITOR': ['savanna'],
+};
+
 export function maskParts(text, names) {
-  const words = [...new Set(names.flatMap((n) => [n, ...n.split(/[\s-]+/)]))]
+  const all = names.flatMap((n) => [n, ...(ALSO_MASK[n.toUpperCase()] || [])]);
+  const words = [...new Set(all.flatMap((n) => [n, ...n.split(/[\s-]+/)]))]
     .filter((w) => w.length >= 3)
     .flatMap(plurals)
     .sort((a, b) => b.length - a.length);
