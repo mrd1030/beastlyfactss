@@ -21,8 +21,8 @@ const HOW_IT_WORKS = [
 
 export default function CarePackagesStore() {
   // Buyable means sold here, or still sold on Gumroad if one were ever put
-  // back. All 14 sell here, so comingSoon is empty and its section does not
-  // render. The filter stays keyed on storefront rather than status, which is
+  // back. All 16 written packages sell here, so comingSoon holds only the
+  // announced White's tree frog. The filter stays keyed on storefront rather than status, which is
   // what keying on status alone got wrong.
   const live = CARE_PACKAGES.filter(isCarePackageBuyable);
   const groups = groupCarePackages(live);

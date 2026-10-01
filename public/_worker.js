@@ -655,8 +655,9 @@ async function handleContact(request, env) {
 // BOTH files.
 //
 // A package missing here cannot be bought even if the catalog says it can,
-// which is the safe direction for the two to disagree in. All 14 are here and
-// all 14 carry storefront: 'stripe', so the two agree; a package added to the
+// which is the safe direction for the two to disagree in. All 16 are here and
+// all 16 carry storefront: 'stripe', so the two agree (the cockatiel and
+// cockatoo with empty price ids, which checkout refuses); a package added to the
 // catalog and forgotten here gets a clean 404 from checkout rather than a sale
 // nobody can fulfil.
 //
@@ -748,6 +749,22 @@ const CARE_PACKAGE_STORE = {
     edition: '2.3',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENCK9qtY3Ob6vafJILVYIP',
+  },
+  // Price ids pending. Both fields stay empty until the live price exists, so
+  // checkout answers 409 "no price set up yet" before any Stripe call: the
+  // buy button fails closed. Fill priceIdLive and the catalog's stripePriceId
+  // in the same commit.
+  cockatiel: {
+    name: 'Cockatiel Care Package',
+    edition: '1.2',
+    priceIdSandbox: '',
+    priceIdLive: '',
+  },
+  cockatoo: {
+    name: 'Cockatoo Care Package',
+    edition: '1.2',
+    priceIdSandbox: '',
+    priceIdLive: '',
   },
 };
 

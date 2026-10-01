@@ -255,7 +255,7 @@ export default function CarePackageComingSoon({ pkg }) {
           <Link to={`/guides/${pkg.id}/`} className="cp-accent-text font-semibold underline">
             {`free ${pkg.animal} care guide`}
           </Link>
-          {'. The other fourteen packages are in the '}
+          {'. The other sixteen packages are in the '}
           <Link to="/care-packages/store/" className="cp-accent-text font-semibold underline">store</Link>
           {'.'}
         </p>

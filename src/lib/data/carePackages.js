@@ -1,10 +1,12 @@
-// The printable PDF care packages. All 14 sell here now, through Stripe, so
-// this file is the catalog rather than a mirror of someone else's listing.
+// The printable PDF care packages. All 16 written ones sell here, through
+// Stripe, so this file is the catalog rather than a mirror of someone else's
+// listing. The cockatiel and cockatoo are wired but wait on a live price id.
 //
 // status records whether a package ever had a Gumroad listing, and now only
-// decides the teaser row for one that sells nowhere. Nothing sells nowhere
-// today, so the teaser row is empty and isCarePackageBuyable is true for all
-// 14. Read storefront, not status, when the question is "can this be bought".
+// decides the teaser row for one that sells nowhere. Nothing written sells
+// nowhere, so isCarePackageBuyable is true for all 16 and false only for the
+// announced White's tree frog. Read storefront, not status, when the question
+// is "can this be bought".
 // Both use `cover`, the guide hero under public/assets/guides, as the card and
 // product page art; nothing is loaded from Gumroad's CDN any more.
 //
@@ -1257,6 +1259,207 @@ export const CARE_PACKAGES = [
       {
         label: 'Reference',
         items: ['Glossary', 'Sources', 'Version History & About'],
+      },
+    ],
+  },
+  {
+    id: 'cockatiel',
+    animal: 'Cockatiel',
+    name: 'Cockatiel Care Package',
+    badge: 'Bird',
+    emoji: '🐦',
+    status: 'coming-soon',
+    // On the product page, but not buyable until the price exists. stripePriceId
+    // is filled when the live price is created, in the same commit as
+    // priceIdLive in CARE_PACKAGE_STORE in public/_worker.js. Until then the
+    // Worker answers the buy button with a 409 and no checkout session, so the
+    // button fails closed with a readable message rather than taking money. The
+    // PDF also has to be in the bucket before this ships to main.
+    storefront: 'stripe',
+    stripePriceId: '',
+    price: '$8.99',
+    pages: 40,
+    version: '1.2',
+    versionDate: '2026-10-01',
+    samplePages: 4,
+    cover: '/assets/guides/cockatiel.jpg',
+    blurb: 'Complete 40-page printable guide with cage size and the bar spacing that is a safety limit, the night light that prevents night frights, five ways to convert a seed eater to pellets, chronic egg laying and egg binding, and owner checklists.',
+    seoDescription: '40-page printable cockatiel guide: cage size and bar spacing, night frights, converting a seed eater to pellets, chronic egg laying, and health triage.',
+    bullets: [
+      'Cage size and placement, perches, light and sleep, household hazards, one bird or two, diet and pellet conversion, handling and the crest, and wing clipping in one guide',
+      'Health section with red flags, vitamin A, calcium and fatty liver, respiratory disease and psittacosis, PBFD, Giardia and plucking, molt, and chronic egg laying and egg binding guidance',
+      'Setup checklist, budget and shopping list, first 30 days checklist, symptom quick reference, owner log, and a daily and weekly routine',
+    ],
+    contents: [
+      {
+        label: 'Getting Started',
+        items: ['How to Use This Package'],
+      },
+      {
+        label: 'Quick Profile',
+        items: ['Quick Profile & Cost Overview'],
+      },
+      {
+        label: 'Full Care Guide',
+        items: [
+          'Cage Size, Bar Spacing & Placement',
+          'Perches, Dishes & What to Leave Out',
+          'Light, Sleep & Night Frights',
+          'Household Hazards & Bird-Proofing',
+          'One Cockatiel or Two, and the Whistling Trade-Off',
+          'Diet: Pellets, Seed & Converting a Seed Eater',
+          'Safe Vegetables, Greens & Herbs',
+          'Fruit, Treats & the Never-Feed List',
+          'Common Mistakes & Enrichment',
+          'Handling, Taming & Reading the Crest',
+          'Wing Clipping & Flight',
+          'Sexing, Weight & Body Condition',
+          'Hens, Hormones & Chronic Egg Laying',
+          'Egg Binding',
+        ],
+      },
+      {
+        label: 'Health & Common Issues',
+        items: [
+          'Health Red Flags & What to Tell the Vet',
+          'Vitamin A, Calcium & Fatty Liver',
+          'Respiratory Disease & Psittacosis',
+          'PBFD, Polyomavirus & Other Viral Disease',
+          'Foreign Bodies, Heavy Metal, Mites & Injuries',
+          'Feather Plucking & Behavioral Health',
+          'Molt & Seasonal Behavior',
+          'Reading Droppings & Hydration',
+          'Quarantine & Adding a Second Bird',
+        ],
+      },
+      {
+        label: 'Quick Reference',
+        items: ['Setup Checklist & Targets', 'Emergency & Quick Targets Card'],
+      },
+      {
+        label: 'Owner Tools',
+        items: [
+          'Budget & Shopping List',
+          'First 30 Days Checklist',
+          'Symptom Quick Reference',
+          'Daily, Weekly & Seasonal Routine',
+          'Power Outages, Travel & Transport',
+          'Pet-Sitter Sheet',
+          'Owner Log',
+          'Equipment & Vet Log',
+        ],
+      },
+      {
+        label: 'Reference',
+        items: ['Glossary', 'Sources & Further Reading', 'Where the Sources Disagree, Version History & About'],
+      },
+    ],
+  },
+  {
+    id: 'cockatoo',
+    animal: 'Cockatoo',
+    name: 'Cockatoo Care Package',
+    badge: 'Bird',
+    emoji: '🦜',
+    status: 'coming-soon',
+    // Same as the cockatiel above: stripePriceId is filled when the live price
+    // is created, alongside priceIdLive in public/_worker.js, and until then the
+    // Worker refuses checkout with a 409.
+    storefront: 'stripe',
+    stripePriceId: '',
+    price: '$8.99',
+    pages: 45,
+    version: '1.2',
+    versionDate: '2026-10-01',
+    samplePages: 6,
+    cover: '/assets/guides/cockatoo.jpg',
+    blurb: 'Complete 45-page printable guide with an honest decision test, five species compared, training and foraging as the plan against plucking and screaming, feather dust and your own lungs, and a succession plan for a bird that may outlive you.',
+    seoDescription: '45-page printable cockatoo guide: an honest decision test, five species compared, training and foraging against plucking, and a succession plan.',
+    bullets: [
+      'The decision test and species comparison, cage, locks and placement, light and sleep, feather dust and air quality, household hazards, diet and foraging in one guide',
+      'Behavior and health sections with training, bites and sexual maturity, over-bonding and screaming, egg laying, plucking and the molt differential, PBFD, and obesity, lipomas and fatty liver',
+      'Legal status by state, a succession plan, setup checklist, budget and shopping list, first 30 days checklist, symptom quick reference, and the owner and vet logs',
+    ],
+    contents: [
+      {
+        label: 'Getting Started',
+        items: ['How to Use This Package'],
+      },
+      {
+        label: 'Before You Commit',
+        items: [
+          'Quick Profile & Cost Overview',
+          'Is a Cockatoo Right for You? The Honest Test',
+          'Which Cockatoo: Size, Price, Noise & Temperament',
+        ],
+      },
+      {
+        label: 'Housing & Environment',
+        items: [
+          'Cage Size, Bar Gauge, Locks & Placement',
+          'Perches, Play Stands & Out-of-Cage Space',
+          'Light, Sleep & the 10 to 12 Hour Rule',
+          'Feather Dust, Air Quality & Your Own Lungs',
+          'Household Hazards & Bird-Proofing',
+        ],
+      },
+      {
+        label: 'Diet',
+        items: [
+          'Diet: Pellets, Seed & Converting a Seed Eater',
+          'Safe Vegetables, Greens & Fruit',
+          'Nuts, Treats & the Never-Feed List',
+          'Foraging: Filling the Gap a Bowl Leaves',
+        ],
+      },
+      {
+        label: 'Behavior & Handling',
+        items: [
+          'Training, and Why It Comes First',
+          'Handling, Step-Up, Bites & Sexual Maturity',
+          'Over-Bonding, Separation Anxiety & Independence',
+          'Screaming, Noise & the Household Reality',
+          'Wing Clipping & Flight',
+          'Sexing, Weight & Body Condition',
+          'Hens, Hormones & Chronic Egg Laying',
+        ],
+      },
+      {
+        label: 'Health & Common Issues',
+        items: [
+          'Health Red Flags & What to Tell the Vet',
+          'Feather-Destructive Behavior, Molt & the Differential',
+          'PBFD & Viral Disease',
+          'Obesity, Lipomas & Fatty Liver',
+          'Psittacosis, Respiratory Disease, Metals & Injuries',
+          'Reading Droppings & Hydration',
+          'Quarantine & Adding a Second Bird',
+        ],
+      },
+      {
+        label: 'The Long View',
+        items: ['Legal Status, CITES & State Rules', 'The Sixty-Year Bird: Succession & Rehoming'],
+      },
+      {
+        label: 'Quick Reference',
+        items: ['Setup Checklist & Targets', 'Emergency & Quick Targets Card'],
+      },
+      {
+        label: 'Owner Tools',
+        items: [
+          'Budget & Shopping List',
+          'First 30 Days Checklist',
+          'Symptom Quick Reference',
+          'Daily, Weekly & Seasonal Routine',
+          'Power Outages, Travel & Transport',
+          'Pet-Sitter Sheet',
+          'Owner Log',
+          'Equipment & Vet Log',
+        ],
+      },
+      {
+        label: 'Reference',
+        items: ['Glossary', 'Sources & Further Reading', 'Sources, Continued', 'Where the Sources Disagree, Version History & About'],
       },
     ],
   },

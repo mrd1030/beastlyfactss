@@ -65,16 +65,19 @@ had moved past the PDF):
 | rabbit | Rabbit_Care_Package_v2.1.pdf | 40 |
 | russian-tortoise | Russian_Tortoise_Care_Package_v2.2.pdf | 38 |
 | tarantula | Tarantula_Care_Package_v2.3.pdf | 44 |
+| cockatiel | Cockatiel_Care_Package_v1.2.pdf | 40 |
+| cockatoo | Cockatoo_Care_Package_v1.2.pdf | 45 |
 
 The catalog carries these numbers. When a source is edited again, re-render
 with `_render.mjs`, move the old PDF to `rebuilt/past versions/` with a row in
 its README, update `pages`, `version` and `versionDate` in the catalog, the
 `edition` in the Worker's mirror, and re-upload the bucket file.
 
-Two more exist as finished PDFs with cover art but are not in the catalog at
-all: cockatiel (v1.1, 40 pages) and cockatoo (v1.1, 45 pages). Adding them is
-two catalog entries plus the per-package work below. Optional, but cheap once
-the template is built.
+Cockatiel and cockatoo (v1.2, 1 October 2026) are in the catalog with copy,
+themes, previews, samples and a Worker entry, on `storefront: 'stripe'` with
+empty price ids, so checkout refuses them with a 409 until the live prices
+exist. Still to do for both: the live Stripe price in the catalog and the
+Worker, and the PDF in the bucket.
 
 ## Work, in order
 

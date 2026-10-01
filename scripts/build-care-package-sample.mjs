@@ -31,7 +31,9 @@ if (!id) {
   process.exit(1);
 }
 
-const catalogText = readFileSync(join(ROOT, 'src', 'lib', 'data', 'carePackages.js'), 'utf8');
+// CRLF folded to LF: a Windows checkout (core.autocrlf) has CRLF on disk, and
+// the entry pattern below is written against \n.
+const catalogText = readFileSync(join(ROOT, 'src', 'lib', 'data', 'carePackages.js'), 'utf8').replace(/\r\n/g, '\n');
 const entry = catalogText.match(new RegExp(`  \\{\\n    id: '${id}',[\\s\\S]*?\\n  \\},\\n`));
 if (!entry) throw new Error(`${id} is not in the catalog`);
 const field = name => entry[0].match(new RegExp(`    ${name}: '([^']*)'`))?.[1];
