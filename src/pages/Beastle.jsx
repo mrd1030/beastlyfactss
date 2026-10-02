@@ -215,6 +215,9 @@ const AQUATIC_FISH = {
   MUDSKIPPER: 'Mudskippers are fish, a kind of goby, even though they spend much of their time out of water.',
 };
 function groupHint(entry) {
+  // The daily's own hint for animals few could name from the group alone
+  // ("It's a type of gecko"), set in scripts/generate-beastle.mjs.
+  if (entry.hint) return entry.hint;
   if (AQUATIC_FISH[entry.answer]) return "It's an aquatic animal";
   return `It's ${/^[aeiou]/.test(entry.group) ? 'an' : 'a'} ${entry.group}`;
 }
@@ -316,10 +319,10 @@ function Game({ entry, guesses, done, words, onSubmit, showGroup = false, childr
   return (
     <div className="flex flex-col items-center gap-4">
       <p className="text-xs text-muted-foreground font-body text-center">
-        {showGroup && entry.group && (
+        {showGroup && (entry.hint || entry.group) && (
           <span className="font-bold text-foreground">{groupHint(entry)}</span>
         )}
-        {showGroup && entry.group && ' · '}
+        {showGroup && (entry.hint || entry.group) && ' · '}
         {words_.length > 1
           ? `${words_.length} words: ${words_.map((w) => `${w.length} letters`).join(' + ')}`
           : `${letters.length} letters`}
@@ -417,7 +420,7 @@ function Reveal({ entry, won, guesses, kicker, children }) {
         <p className="text-[10px] font-body font-bold uppercase tracking-widest text-secondary mb-1">
           {kicker || (won ? `Solved in ${guesses} of ${MAX_GUESSES}` : 'The answer was')}
         </p>
-        <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground">{entry.name}</h2>
+        <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground">{[entry.name, ...(entry.also || []).map((a) => a.name)].join(' and ')}</h2>
         {blurb && <p className="text-sm text-muted-foreground font-body mt-2 leading-relaxed">{blurb}</p>}
         {AQUATIC_FISH[entry.answer] && (
           <p className="text-sm text-foreground font-body mt-3 leading-relaxed bg-accent/15 border border-accent/40 rounded-2xl px-4 py-2.5">
@@ -425,9 +428,14 @@ function Reveal({ entry, won, guesses, kicker, children }) {
             {AQUATIC_FISH[entry.answer]}
           </p>
         )}
-        <Link to={entry.link} className="inline-flex items-center gap-1 mt-3 text-sm font-body font-bold text-secondary hover:underline">
-          {`Meet the ${entry.name}`} <ArrowRight className="w-4 h-4" />
-        </Link>
+        {/* SHORTHAIR is two cats: a link to each. */}
+        <div className="flex flex-wrap justify-center gap-x-4">
+          {[entry, ...(entry.also || [])].map((a) => (
+            <Link key={a.link} to={a.link} className="inline-flex items-center gap-1 mt-3 text-sm font-body font-bold text-secondary hover:underline">
+              {`Meet the ${a.name}`} <ArrowRight className="w-4 h-4" />
+            </Link>
+          ))}
+        </div>
         {children}
       </div>
     </div>
