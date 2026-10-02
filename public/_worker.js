@@ -667,7 +667,7 @@ async function handleContact(request, env) {
 const CARE_PACKAGE_STORE = {
   'bearded-dragon': {
     name: 'Bearded Dragon Care Package',
-    edition: '3.1',
+    edition: '3.2',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENBp9qtY3Ob6vamuXMA6sD',
   },

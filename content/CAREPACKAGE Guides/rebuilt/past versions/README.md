@@ -101,6 +101,7 @@ own field:
 | `Cockatoo_Care_Package_v1.1.pdf` | 1.2 | Abbreviations such as PTFE and PCR used without saying what the letters stand for, a glossary squeezed onto one page, and the corrections from two review passes against the site |
 | `Cockatiel_Care_Package_v1.2.pdf` | 1.3 | Outside organizations and sources named in the care text rather than on the sources pages, and a maze of page pointers, with the glossary pointing into the tool pages |
 | `Cockatoo_Care_Package_v1.2.pdf` | 1.3 | Outside organizations and sources named in the care text rather than on the sources pages, and a maze of page pointers, with the glossary pointing into the tool pages |
+| `Bearded_Dragon_Care_Package_v3.1.pdf` | 3.2 | A first vet visit within two weeks against the site's 48 hours; Salmonella advice for children under 5 only; calcium with D3 once a week for adults against twice; a UVB tube 12 to 15 in above the basking spot when the maker's chart reads UVI 8.5 at 12 in; costs that no longer matched the cost guide; tape on the thermostat probe; abbreviations used without saying what they stand for; brand names in the care text; and a maze of page pointers |
 
 Hamster and Bearded Dragon reached a genuine third edition on their own count,
 so their numbers stood. Hamster's version history had picked up a line claiming

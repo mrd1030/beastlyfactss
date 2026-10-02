@@ -158,8 +158,8 @@ export const CARE_PACKAGE_COPY = {
   'bearded-dragon': {
     hook: "Basking temps you don't have to guess at.",
     heroParagraph:
-      'A 35-page printable manual with basking, UVB and diet targets split by age, thermostat and UVB distance guidance, and health triage, not one blurry range copied across a dozen care sheets.',
-    heroTicks: ['35 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
+      'A 36-page printable manual with basking, UVB and diet targets split by age, thermostat and UVB distance guidance, and health triage, not one blurry range copied across a dozen care sheets.',
+    heroTicks: ['36 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
     roulette: [
       'Basking temps that vary 15+ degrees between sources',
       'UVB replacement schedules nobody agrees on',

@@ -53,7 +53,7 @@ had moved past the PDF):
 | --- | --- | --- |
 | axolotl | Axolotl_Care_Package_v2.2.pdf | 42 |
 | ball-python | Ball_Python_Care_Package_v2.2.pdf | 34 |
-| bearded-dragon | Bearded_Dragon_Care_Package_v3.1.pdf | 35 |
+| bearded-dragon | Bearded_Dragon_Care_Package_v3.2.pdf | 36 |
 | betta-fish | Betta_Fish_Care_Package_v2.2.pdf | 37 |
 | budgie | Budgie_Care_Package_v2.1.pdf | 40 |
 | crested-gecko | Crested_Gecko_Care_Package_v2.1.pdf | 34 |
