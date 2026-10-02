@@ -159,7 +159,8 @@ const DAILY_HINT = {
   'bp:thorny-devil': [null, "It's a type of lizard"],
   'enc:jacksons-chameleon': ['Jacksons', "It's a type of chameleon"],
   'bp:panther-chameleon': ['Panther', "It's a type of chameleon"],
-  'enc:boa-constrictor': ['Boa', "It's a type of snake"],
+  // The whole name: people say "boa constrictor", not "boa".
+  'enc:boa-constrictor': ['Boa Constrictor', "It's a type of snake"],
   'enc:rosy-boa': ['Rosy', "It's a type of boa"],
   'bp:gaboon-viper': ['Gaboon', "It's a type of viper"],
   'enc:sulcata-tortoise': ['Sulcata', "It's a type of tortoise"],
@@ -189,9 +190,11 @@ const DAILY_HINT = {
   'enc:degu': [null, "It's a type of rodent"],
   'bp:aye-aye': [null, "It's a type of lemur"],
   'enc:french-bulldog': ['French', "It's a type of bulldog"],
-  'enc:scottish-fold': ['Scottish', "It's a type of cat"],
-  'enc:domestic-shorthair': ['Domestic', "It's a type of cat"],
-  'enc:american-shorthair': ['American', "It's a type of cat"],
+  // FOLD: the ears are the breed; SCOTTISH reads as a nationality.
+  'enc:scottish-fold': ['Fold', "It's a type of cat"],
+  // One daily answer for both; the reveal shows both (`also`).
+  'enc:domestic-shorthair': ['Shorthair', "It's a type of cat"],
+  'enc:american-shorthair': ['Shorthair', "It's a type of cat"],
 };
 
 // Daily answers that feel like repeats of each other, kept at least the same
@@ -331,7 +334,7 @@ async function main() {
         if (entry.answer) add({ ...entry, forceLevel: longTwoWord ? 'hard' : undefined }, false);
         add({ ...entry, key: `${entry.key}:daily`, answer: dailyAnswer, hint, hinted: true, dailyOk: true, dailyOnly: !!entry.answer || undefined }, true);
       } else {
-        add({ ...entry, hint, hinted: true, dailyOk: true }, true);
+        add({ ...entry, hint, hinted: true, dailyOk: true, forceLevel: longTwoWord ? 'hard' : undefined }, true);
       }
       return;
     }
@@ -341,7 +344,7 @@ async function main() {
     }
     // A long two-word daily name splits in two: the full name for unlimited
     // Hard, and a one-word answer (same card) for the daily.
-    if (daily && /[ -]/.test(entry.answer) && letterCount(entry.answer) > DAILY_TWO_WORD_MAX) {
+    if (daily && !entry.hinted && /[ -]/.test(entry.answer) && letterCount(entry.answer) > DAILY_TWO_WORD_MAX) {
       add({ ...entry, forceLevel: 'hard' }, false);
       const short = Object.prototype.hasOwnProperty.call(DAILY_SHORT, entry.key)
         ? DAILY_SHORT[entry.key]
@@ -353,6 +356,10 @@ async function main() {
     const existing = entries.get(entry.answer);
     if (existing) {
       existing.daily = existing.daily || daily;
+      // Two animals sharing one daily answer (SHORTHAIR): the reveal shows both.
+      if (entry.hinted && existing.hinted && entry.link !== existing.link) {
+        existing.also = [...(existing.also || []), { name: entry.name, link: entry.link }];
+      }
       return;
     }
     entries.set(entry.answer, { ...entry, daily });

@@ -420,7 +420,7 @@ function Reveal({ entry, won, guesses, kicker, children }) {
         <p className="text-[10px] font-body font-bold uppercase tracking-widest text-secondary mb-1">
           {kicker || (won ? `Solved in ${guesses} of ${MAX_GUESSES}` : 'The answer was')}
         </p>
-        <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground">{entry.name}</h2>
+        <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground">{[entry.name, ...(entry.also || []).map((a) => a.name)].join(' and ')}</h2>
         {blurb && <p className="text-sm text-muted-foreground font-body mt-2 leading-relaxed">{blurb}</p>}
         {AQUATIC_FISH[entry.answer] && (
           <p className="text-sm text-foreground font-body mt-3 leading-relaxed bg-accent/15 border border-accent/40 rounded-2xl px-4 py-2.5">
@@ -428,9 +428,14 @@ function Reveal({ entry, won, guesses, kicker, children }) {
             {AQUATIC_FISH[entry.answer]}
           </p>
         )}
-        <Link to={entry.link} className="inline-flex items-center gap-1 mt-3 text-sm font-body font-bold text-secondary hover:underline">
-          {`Meet the ${entry.name}`} <ArrowRight className="w-4 h-4" />
-        </Link>
+        {/* SHORTHAIR is two cats: a link to each. */}
+        <div className="flex flex-wrap justify-center gap-x-4">
+          {[entry, ...(entry.also || [])].map((a) => (
+            <Link key={a.link} to={a.link} className="inline-flex items-center gap-1 mt-3 text-sm font-body font-bold text-secondary hover:underline">
+              {`Meet the ${a.name}`} <ArrowRight className="w-4 h-4" />
+            </Link>
+          ))}
+        </div>
         {children}
       </div>
     </div>

@@ -78,6 +78,7 @@ const ALSO_MASK = {
   'SAVANNAH MONITOR': ['savanna'],
   // Daily answers that are one word of a longer name (scripts/generate-beastle.mjs
   // DAILY_HINT), keyed by the full name.
+  'DOMESTIC SHORTHAIR': ['short'],
   'AMERICAN SHORTHAIR': ['America'],
   "JACKSON'S CHAMELEON": ['Jackson'],
   'BLUE TONGUE SKINK': ['tongued'],
