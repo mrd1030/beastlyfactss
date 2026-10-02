@@ -200,13 +200,22 @@ function Keyboard({ keys, onKey, disabled }) {
 
 // Fish most players wouldn't file under "fish" say "aquatic animal" instead,
 // so the hint points the way a player thinks (Beastle #5, MANTA RAY). Display
-// only: entry.group stays "fish" for the bonus round's decoys.
-const AQUATIC_FISH = new Set([
-  'MANTA RAY', 'SHARK', 'FRILLED SHARK', 'SEAHORSE', 'SEADRAGON', 'LEAFY SEADRAGON',
-  'ELECTRIC EEL', 'MUDSKIPPER',
-]);
+// only: entry.group stays "fish" for the bonus round's decoys. Once the
+// answer is out, the reveal says it was a fish all along.
+const SHARK_FISH = 'Sharks are fish, with a skeleton of cartilage instead of bone and gills to breathe.';
+const SEADRAGON_FISH = 'Seadragons are fish, close relatives of seahorses, and they breathe through gills.';
+const AQUATIC_FISH = {
+  'MANTA RAY': 'Manta rays are fish. Like sharks, they have a skeleton of cartilage instead of bone and breathe through gills.',
+  SHARK: SHARK_FISH,
+  'FRILLED SHARK': SHARK_FISH,
+  SEAHORSE: 'Seahorses are fish. They breathe through gills and swim with a small fin on their back.',
+  SEADRAGON: SEADRAGON_FISH,
+  'LEAFY SEADRAGON': SEADRAGON_FISH,
+  'ELECTRIC EEL': "The electric eel isn't a true eel, but it is a fish: a knifefish from South America.",
+  MUDSKIPPER: 'Mudskippers are fish, a kind of goby, even though they spend much of their time out of water.',
+};
 function groupHint(entry) {
-  if (AQUATIC_FISH.has(entry.answer)) return "It's an aquatic animal";
+  if (AQUATIC_FISH[entry.answer]) return "It's an aquatic animal";
   return `It's ${/^[aeiou]/.test(entry.group) ? 'an' : 'a'} ${entry.group}`;
 }
 
@@ -410,6 +419,12 @@ function Reveal({ entry, won, guesses, kicker, children }) {
         </p>
         <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground">{entry.name}</h2>
         {blurb && <p className="text-sm text-muted-foreground font-body mt-2 leading-relaxed">{blurb}</p>}
+        {AQUATIC_FISH[entry.answer] && (
+          <p className="text-sm text-foreground font-body mt-3 leading-relaxed bg-accent/15 border border-accent/40 rounded-2xl px-4 py-2.5">
+            <span className="font-bold">Did you know? </span>
+            {AQUATIC_FISH[entry.answer]}
+          </p>
+        )}
         <Link to={entry.link} className="inline-flex items-center gap-1 mt-3 text-sm font-body font-bold text-secondary hover:underline">
           {`Meet the ${entry.name}`} <ArrowRight className="w-4 h-4" />
         </Link>
