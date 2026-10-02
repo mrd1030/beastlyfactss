@@ -673,7 +673,7 @@ const CARE_PACKAGE_STORE = {
   },
   'leopard-gecko': {
     name: 'Leopard Gecko Care Package',
-    edition: '2.1',
+    edition: '3.0',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENBs9qtY3Ob6vaOPtdFLAt',
   },
@@ -697,7 +697,7 @@ const CARE_PACKAGE_STORE = {
   },
   'crested-gecko': {
     name: 'Crested Gecko Care Package',
-    edition: '2.1',
+    edition: '3.0',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENC19qtY3Ob6vasiNmiLfX',
   },
@@ -721,7 +721,7 @@ const CARE_PACKAGE_STORE = {
   },
   'ball-python': {
     name: 'Ball Python Care Package',
-    edition: '2.2',
+    edition: '3.0',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENCE9qtY3Ob6vajtYqePnI',
   },
