@@ -462,6 +462,7 @@ Added 2026-09-25 from the wave 3a changes:
 - [ ] Goldfish filtration: package 10x tank volume per hour minimum; hub at least 4x, ideally 5 to 10.
 - [ ] Bearded dragon costs: package equipment $420 to $860, exam $75 to $200, monthly $60 to $130; cost guide $400 to $800, $120 to $245, $50 to $108.
 - [ ] Leopard gecko costs: package setup $175 to $495, monthly $32 to $91; hub $250 to $400, $20 to $50.
+- [ ] Vets' association name (added 2026-10-02): leopard-gecko.html lines 761 and 1376, crested-gecko.html lines 750 and 1364, ball-python.html lines 768 and 1367 say "Association of Reptilian and Amphibian Veterinarians"; the organization's current name is "Association of Reptile and Amphibian Veterinarians" (arav.org). The site and the package template were fixed on 2026-10-02. Leave the 1996 proceedings citation titles as published.
 - [ ] Leopard gecko enclosure source (added 2026-10-02): the package's 36x18x18 in minimum is right, but its sources page backs it only with the ReptiFiles care sheet as republished by Zen Habitats. Add the page the site now cites for it, ReptiFiles Leopard Gecko Terrarium Size (https://reptifiles.com/leopard-gecko-care/leopard-gecko-terrarium-size/). The site's leopard-gecko-tank-setup-guide got the same source on 2026-10-02.
 - [x] Cockatiel yearly cost: package $300 to $565; hub $200 to $350. Done in 1.2 (2026-10-01).
 - [ ] Russian tortoise brumation: package 10 to 14 weeks at most; hub 2 to 4 months.
