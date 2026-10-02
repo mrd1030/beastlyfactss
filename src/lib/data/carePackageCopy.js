@@ -412,7 +412,7 @@ export const CARE_PACKAGE_COPY = {
     ],
     previewHeadline: 'Print-first pages, clearly marked.',
     previews: [
-      { page: 4, alt: 'Quick profile and cost overview' },
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
       { page: 7, alt: 'The temperature gradient and belly heat' },
       { page: 12, alt: 'Diet and feeding by age' },
       { page: 28, alt: 'Cryptosporidiosis: stick tail disease' },
