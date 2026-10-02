@@ -203,7 +203,7 @@ export const geckoGuides = [
         { label: "Not eating", value: "A healthy adult goes up to 2 to 3 weeks; a juvenile not past 4 to 5 days. Water is the time-critical one: no more than 2 to 3 days without access. Weigh regularly; a thinning tail is the early sign.", source: "gargoyle-gecko-feeding-guide" },
         { label: "Handling, week one", value: "Wait two weeks after it comes home, then 5-minute sessions every other day, working toward 15 and a daily total near 20. Adults are calm; juveniles are jumpy.", source: "gargoyle-gecko-handling-guide" },
         { label: "Tail and teeth", value: "Never hold the tail. It regrows, unlike a crested gecko's. A bite is rare and provoked, and can break skin: soap and water.", source: "gargoyle-gecko-handling-guide" },
-        { label: "Budget", value: "$50 to $300 for a common animal, $500 to $1,000 or more for a premium morph, and $280 to $520 in gear. $10 to $25 a month, and $50 to $150 for a routine exam.", source: "gargoyle-gecko-cost-guide" },
+        { label: "Budget", value: "$50 to $300 for a common animal, $500 to $1,000 or more for a premium morph, and $280 to $520 in gear. $15 to $30 a month, and $50 to $150 for a routine exam.", source: "gargoyle-gecko-cost-guide" },
         { label: "Lifespan", value: "15 to 20 years, some breeding well past 20.", source: "gargoyle-gecko-cost-guide" },
         { label: "Adult size", value: "7 to 9 inches (18 to 23 cm) including tail." },
         { label: "Hygiene", value: "Wash hands with soap after any contact, keep the gecko out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
