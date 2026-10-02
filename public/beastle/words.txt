@@ -1516,6 +1516,7 @@ amendments
 amends
 amenities
 amenity
+american
 amethyst
 amethysts
 amiability
@@ -15998,6 +15999,7 @@ earbud
 earbuds
 eardrum
 eardrums
+eared
 earful
 earfuls
 earl
@@ -27346,6 +27348,7 @@ jackpots
 jackrabbit
 jackrabbits
 jacks
+jacksons
 jade
 jaded
 jades
@@ -46149,6 +46152,7 @@ shorter
 shortest
 shortfall
 shortfalls
+shorthair
 shorthand
 shorthorn
 shorthorns
