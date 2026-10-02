@@ -215,6 +215,9 @@ const AQUATIC_FISH = {
   MUDSKIPPER: 'Mudskippers are fish, a kind of goby, even though they spend much of their time out of water.',
 };
 function groupHint(entry) {
+  // The daily's own hint for animals few could name from the group alone
+  // ("It's a type of gecko"), set in scripts/generate-beastle.mjs.
+  if (entry.hint) return entry.hint;
   if (AQUATIC_FISH[entry.answer]) return "It's an aquatic animal";
   return `It's ${/^[aeiou]/.test(entry.group) ? 'an' : 'a'} ${entry.group}`;
 }
@@ -316,10 +319,10 @@ function Game({ entry, guesses, done, words, onSubmit, showGroup = false, childr
   return (
     <div className="flex flex-col items-center gap-4">
       <p className="text-xs text-muted-foreground font-body text-center">
-        {showGroup && entry.group && (
+        {showGroup && (entry.hint || entry.group) && (
           <span className="font-bold text-foreground">{groupHint(entry)}</span>
         )}
-        {showGroup && entry.group && ' · '}
+        {showGroup && (entry.hint || entry.group) && ' · '}
         {words_.length > 1
           ? `${words_.length} words: ${words_.map((w) => `${w.length} letters`).join(' + ')}`
           : `${letters.length} letters`}

@@ -47,16 +47,6 @@ const OVERRIDES = {
   'enc:hissing-cockroach': 'Cockroach',
   'enc:tegu': 'Tegu',
   'enc:flying-squirrel': 'Flying Squirrel',
-  'enc:jacksons-chameleon': null,
-  'enc:fire-bellied-toad': null,
-  'enc:african-fat-tail': null,
-  'enc:leaf-tailed-gecko': null,
-  'enc:blue-tongue-skink': null,
-  'enc:red-eared-slider': null,
-  'enc:red-footed-tortoise': null,
-  // Coat types, not animals anyone would guess.
-  'enc:domestic-shorthair': null,
-  'enc:american-shorthair': null,
   // Beastlypedia
   'bp:african-elephant': 'Elephant',
   'bp:dolphin': 'Dolphin',
@@ -142,13 +132,66 @@ const levelOf = (answer) => (EASY.has(answer) ? 'easy' : HARD.has(answer) ? 'har
 const DAILY_TWO_WORD_MAX = 11;
 // One-word daily answers for long names, keyed like OVERRIDES. null keeps the
 // animal out of the daily entirely (its full name stays in unlimited Hard).
-const DAILY_SHORT = {
-  // BOA: a three-letter reptile is over in two guesses with the group hint.
-  'enc:boa-constrictor': null,
-  // MONITOR reads as a screen, not a lizard, even with the reptile hint.
-  'enc:savannah-monitor': null,
-  'enc:scottish-fold': null,
-  'bp:mantis-shrimp': null,
+const DAILY_SHORT = {};
+
+// Every encyclopedia animal and Beastfile is on the daily (decided
+// 2026-10-02). The ones a casual player couldn't name from the kind of animal
+// alone get a daily answer and a plainer hint here: [daily answer, hint].
+// Answer null keeps the animal's own answer; hint null keeps the group hint.
+// Daily and archive only. Unlimited keeps the full name at its own level and
+// never shows a hint, so it plays exactly as before.
+const GECKO = "It's a type of gecko";
+const AQUARIUM_FISH = "It's an aquarium fish";
+const SHRIMP = "It's a type of shrimp";
+const DAILY_HINT = {
+  'enc:leopard-gecko': ['Leopard', GECKO],
+  'enc:tokay-gecko': ['Tokay', GECKO],
+  'enc:gargoyle-gecko': ['Gargoyle', GECKO],
+  'enc:mourning-gecko': ['Mourning', GECKO],
+  'enc:african-fat-tail': ['Fat-Tailed', GECKO],
+  'enc:leaf-tailed-gecko': ['Leaf-Tailed', GECKO],
+  'enc:ackie-monitor': ['Ackie', "It's a type of monitor lizard"],
+  'enc:savannah-monitor': ['Savannah', "It's a type of monitor lizard"],
+  'enc:fire-skink': ['Fire', "It's a type of skink"],
+  'enc:blue-tongue-skink': ['Blue Tongue', "It's a type of skink"],
+  'enc:tegu': [null, "It's a type of lizard"],
+  'enc:uromastyx': [null, "It's a type of lizard"],
+  'bp:thorny-devil': [null, "It's a type of lizard"],
+  'enc:jacksons-chameleon': ['Jacksons', "It's a type of chameleon"],
+  'bp:panther-chameleon': ['Panther', "It's a type of chameleon"],
+  'enc:boa-constrictor': ['Boa', "It's a type of snake"],
+  'enc:rosy-boa': ['Rosy', "It's a type of boa"],
+  'bp:gaboon-viper': ['Gaboon', "It's a type of viper"],
+  'enc:sulcata-tortoise': ['Sulcata', "It's a type of tortoise"],
+  'enc:red-footed-tortoise': ['Red-Footed', "It's a type of tortoise"],
+  'enc:red-eared-slider': ['Red-Eared', "It's a type of turtle"],
+  'enc:fire-bellied-toad': ['Fire-Bellied', "It's a type of toad"],
+  'enc:amano-shrimp': ['Amano', SHRIMP],
+  'enc:cherry-shrimp': ['Cherry', SHRIMP],
+  'enc:ghost-shrimp': ['Ghost', SHRIMP],
+  // MANTIS is the praying mantis's daily answer.
+  'bp:mantis-shrimp': ['Shrimp', "It's a crustacean"],
+  'enc:cardinal-tetra': ['Cardinal', "It's a type of tetra fish"],
+  'enc:corydoras-catfish': [null, "It's a type of catfish"],
+  'enc:zebra-danio': [null, AQUARIUM_FISH],
+  'enc:molly': [null, AQUARIUM_FISH],
+  'enc:oscar': [null, AQUARIUM_FISH],
+  'enc:platy': [null, AQUARIUM_FISH],
+  'enc:discus': [null, AQUARIUM_FISH],
+  'enc:swordtail': [null, AQUARIUM_FISH],
+  'enc:bristlenose-pleco': [null, AQUARIUM_FISH],
+  'enc:conure': [null, "It's a type of parrot"],
+  'enc:parrotlet': [null, "It's a type of parrot"],
+  'enc:quaker-parakeet': ['Quaker', "It's a type of parakeet"],
+  'bp:victoria-crowned-pigeon': ['Crowned', "It's a type of pigeon"],
+  'bp:shima-enaga': [null, "It's a small bird from Japan"],
+  'bp:shoebill': [null, null],
+  'enc:degu': [null, "It's a type of rodent"],
+  'bp:aye-aye': [null, "It's a type of lemur"],
+  'enc:french-bulldog': ['French', "It's a type of bulldog"],
+  'enc:scottish-fold': ['Scottish', "It's a type of cat"],
+  'enc:domestic-shorthair': ['Domestic', "It's a type of cat"],
+  'enc:american-shorthair': ['American', "It's a type of cat"],
 };
 
 // Daily answers that feel like repeats of each other, kept at least the same
@@ -276,6 +319,22 @@ async function main() {
   const entries = new Map();
 
   const add = (entry, daily) => {
+    // A DAILY_HINT animal: its daily answer (with the hint) and, when that is
+    // a different answer, the full name for unlimited at its usual level.
+    // dailyOnly keeps the daily answer out of unlimited and the bonus round,
+    // where the full name already plays.
+    if (daily && !entry.hinted && Object.prototype.hasOwnProperty.call(DAILY_HINT, entry.key)) {
+      const [short, hint] = DAILY_HINT[entry.key];
+      const dailyAnswer = short ? toAnswer(short) : entry.answer;
+      const longTwoWord = entry.answer && /[ -]/.test(entry.answer) && letterCount(entry.answer) > DAILY_TWO_WORD_MAX;
+      if (dailyAnswer !== entry.answer) {
+        if (entry.answer) add({ ...entry, forceLevel: longTwoWord ? 'hard' : undefined }, false);
+        add({ ...entry, key: `${entry.key}:daily`, answer: dailyAnswer, hint, hinted: true, dailyOk: true, dailyOnly: !!entry.answer || undefined }, true);
+      } else {
+        add({ ...entry, hint, hinted: true, dailyOk: true }, true);
+      }
+      return;
+    }
     if (!entry.answer) {
       skipped.push(entry.key);
       return;
@@ -352,15 +411,16 @@ async function main() {
   }
 
   const pool = [...entries.values()]
-    .map(({ forceLevel, ...e }) => ({ ...e, factIds: factsByAnswer.get(e.answer) || [], level: forceLevel || levelOf(e.answer) }))
+    .map(({ forceLevel, hinted, ...e }) => ({ ...e, factIds: factsByAnswer.get(e.answer) || [], level: forceLevel || levelOf(e.answer) }))
     .sort((a, b) => a.answer.localeCompare(b.answer));
 
   // Schedule: append-only list of daily answers.
   const outFile = path.join(root, 'src/lib/data/beastle/pool.json');
   const previous = fs.existsSync(outFile) ? JSON.parse(fs.readFileSync(outFile, 'utf8')) : null;
   // Hard answers stay out of the daily: everyone plays it and a miss costs a
-  // streak. They are still in unlimited on Hard.
-  const dailyAnswers = new Set(pool.filter((e) => e.daily && e.level !== 'hard').map((e) => e.answer));
+  // streak. They are still in unlimited on Hard. DAILY_HINT animals are the
+  // exception: the plainer daily hint is what makes them fair.
+  const dailyAnswers = new Set(pool.filter((e) => e.daily && (e.level !== 'hard' || e.dailyOk)).map((e) => e.answer));
   let schedule = [...(previous?.schedule || [])];
 
   // --rebuild-future: keep every day up to and including today (site clock)
@@ -421,7 +481,7 @@ async function main() {
   fs.writeFileSync(outFile, JSON.stringify({
     epoch: EPOCH,
     schedule,
-    pool: pool.map(({ daily, ...rest }) => ({ ...rest, daily: daily || undefined })),
+    pool: pool.map(({ daily, dailyOk, ...rest }) => ({ ...rest, daily: daily || undefined })),
   }, null, 0) + '\n');
 
   // Dictionary: common English (SCOWL size 50, American plus shared English)

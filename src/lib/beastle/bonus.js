@@ -7,7 +7,8 @@ import { pool } from '@/lib/beastle/engine';
 
 export const BONUS_QUESTIONS = 3;
 const factById = new Map(facts.map((f) => [f.id, f]));
-const withFacts = pool.filter((e) => e.factIds.length);
+// dailyOnly answers are a second entry for an animal already here by full name.
+const withFacts = pool.filter((e) => e.factIds.length && !e.dailyOnly);
 
 function rng(seed) {
   let s = seed >>> 0;
@@ -75,6 +76,12 @@ const ALSO_MASK = {
   'WOOD FROG': ['woodland'],
   GHARIAL: ['ghara'],
   'SAVANNAH MONITOR': ['savanna'],
+  // Daily answers that are one word of a longer name (scripts/generate-beastle.mjs
+  // DAILY_HINT), keyed by the full name.
+  'AMERICAN SHORTHAIR': ['America'],
+  "JACKSON'S CHAMELEON": ['Jackson'],
+  'BLUE TONGUE SKINK': ['tongued'],
+  'LEAF-TAILED GECKO': ['tail'],
 };
 
 export function maskParts(text, names) {
@@ -107,7 +114,7 @@ export const maskFact = (text, names) => maskParts(text, names).map((p) => p.tex
 // trick: two of the same kind of animal (birds for a bird) and one of
 // another kind, all well known. A choice never shares a word with the answer
 // (no second chameleon on a chameleon fact) and is never named in the fact.
-const DECOYS = pool.filter((e) => e.level !== 'hard');
+const DECOYS = pool.filter((e) => e.level !== 'hard' && !e.dailyOnly);
 
 function decoysFor(entry, fact, exclude, rand) {
   const banned = new Set([entry.name, entry.answer, fact.animal].flatMap(nameWords));
