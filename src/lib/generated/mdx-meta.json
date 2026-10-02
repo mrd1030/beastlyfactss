@@ -627,7 +627,7 @@
     "path": "/content/guides/african-fat-tail-cost-guide.mdx",
     "slug": "african-fat-tail-cost-guide",
     "title": "How Much Does an African Fat-Tailed Gecko Really Cost?",
-    "seoTitle": "Fat-Tailed Gecko Price: $75 to $600, Plus $200 to $500 Setup",
+    "seoTitle": "Fat-Tailed Gecko Price: $75 to $600, Plus $325 to $580 Setup",
     "seoDescription": null,
     "lastUpdated": "2026-10-02",
     "noIndex": false,
@@ -660,7 +660,7 @@
       },
       {
         "q": "What does a full setup cost before the gecko?",
-        "a": "Roughly $200 to $500 with the optional UVB. That covers a 20-gallon long enclosure (40-gallon breeder is a better choice), an under-tank heat mat and thermostat, optional low-output UVB, substrate, three hides, a thermometer/hygrometer, and a water dish."
+        "a": "Roughly $325 to $500 without UVB, $370 to $580 with the optional low-output UVB. That covers a 36x18x18 inch enclosure, an under-tank heat mat and thermostat, substrate, three hides, a thermometer/hygrometer, and a water dish."
       },
       {
         "q": "What are the ongoing monthly costs?",
@@ -672,7 +672,7 @@
       }
     ],
     "relatedProducts": [
-      "tank-20-gallon-long",
+      "enclosure-repti-zoo-36x18x18-50gal",
       "dimming-thermostat-reptizoo-pid",
       "hide-exo-terra-gecko-cave-medium",
       "calcium-repashy-plus-6oz"
@@ -967,7 +967,7 @@
     "slug": "african-fat-tail-tank-setup-guide",
     "title": "African Fat-Tailed Gecko Enclosure Setup: Built for the Ground, Not the Branches",
     "seoTitle": "African Fat-Tailed Gecko Enclosure Setup Guide",
-    "seoDescription": "African fat-tailed gecko setup: a 20-gallon tank minimum, warm side at 88-92F on a thermostat, a humid hide at 70-80%, and 4+ inches of burrowing substrate.",
+    "seoDescription": "African fat-tailed gecko setup: a 36x18-inch floor minimum, warm side at 88-92F on a thermostat, a humid hide at 70-80%, and 4+ inches of burrowing substrate.",
     "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Unlike most of the geckos commonly kept as pets, fat-tailed geckos are ground-dwellers and burrowers, not climbers, and the whole setup should reflect that.",
@@ -995,7 +995,7 @@
     "faqs": [
       {
         "q": "What size enclosure does an African fat-tailed gecko need?",
-        "a": "A 20-gallon long is the minimum for one adult, and a 36x18x16 inch (40-gallon breeder) is meaningfully better. Height buys little here: this is a terrestrial species, on the ground and under it."
+        "a": "36x18x18 inches is the current minimum for one adult, past the old 20-gallon-long floor that many care sheets still print. A 36x18x16 inch 40-gallon breeder gives the same floor. Height buys little here: this is a terrestrial species, on the ground and under it."
       },
       {
         "q": "Does an African fat-tailed gecko need a heat mat or a heat lamp?",
@@ -1015,7 +1015,8 @@
       }
     ],
     "relatedProducts": [
-      "tank-20-gallon-long",
+      "enclosure-repti-zoo-36x18x18-50gal",
+      "tank-aqueon-40-breeder",
       "dimming-thermostat-reptizoo-pid",
       "hide-exo-terra-gecko-cave-medium",
       "sphagnum-moss",
@@ -1029,7 +1030,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -31364,7 +31365,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 3,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
