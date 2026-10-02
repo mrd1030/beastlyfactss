@@ -101,6 +101,7 @@ own field:
 | `Cockatoo_Care_Package_v1.1.pdf` | 1.2 | Abbreviations such as PTFE and PCR used without saying what the letters stand for, a glossary squeezed onto one page, and the corrections from two review passes against the site |
 | `Cockatiel_Care_Package_v1.2.pdf` | 1.3 | Outside organizations and sources named in the care text rather than on the sources pages, and a maze of page pointers, with the glossary pointing into the tool pages |
 | `Cockatoo_Care_Package_v1.2.pdf` | 1.3 | Outside organizations and sources named in the care text rather than on the sources pages, and a maze of page pointers, with the glossary pointing into the tool pages |
+| `Russian_Tortoise_Care_Package_v2.2.pdf` | 2.3 | Legal counts that missed the West Virginia permit; an 8 by 4 ft target the cited care sheet no longer gives; soaks of 20 minutes two to three times a week against the site's weekly 10 to 20 minutes for an adult; calcium with D3 twice a week where the site says only if a vet asks; pyramiding given one settled cause; fruit allowed at under 5%; pen walls 12 in high; no probe-clip or lamp-clearance rule; abbreviations used without saying what they stand for; brand and organization names in the care text; a maze of page pointers; and an overflowing legal page |
 
 Hamster and Bearded Dragon reached a genuine third edition on their own count,
 so their numbers stood. Hamster's version history had picked up a line claiming

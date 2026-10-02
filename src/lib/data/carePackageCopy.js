@@ -480,8 +480,8 @@ export const CARE_PACKAGE_COPY = {
   'russian-tortoise': {
     hook: 'An animal that can outlive its owner deserves the setup right.',
     heroParagraph:
-      'A 38-page printable manual with real UVB and basking targets, the brumation decision and protocol, outdoor housing and escape-proofing, honest space requirements, and health triage, not the small starter tank they are usually sold with.',
-    heroTicks: ['38 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
+      'A 41-page printable manual with real UVB and basking targets, the brumation decision and protocol, outdoor housing and escape-proofing, honest space requirements, and health triage, not the small starter tank they are usually sold with.',
+    heroTicks: ['41 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
     roulette: [
       "A small starter tank that's outgrown within a year",
       'UVB treated as optional instead of required',
@@ -508,8 +508,8 @@ export const CARE_PACKAGE_COPY = {
       { page: 6, alt: 'Temperature, basking and night lows' },
       { page: 11, alt: 'Diet: what a steppe grazer actually eats' },
       { page: 18, alt: 'Metabolic bone disease and pyramiding' },
-      { page: 27, alt: 'Emergency and quick targets card' },
-      { page: 30, alt: 'Symptom quick reference table' },
+      { page: 28, alt: 'Emergency and quick targets card' },
+      { page: 31, alt: 'Symptom quick reference table' },
     ],
     whoFor: [
       'New Russian tortoise owners setting up correctly the first time',
