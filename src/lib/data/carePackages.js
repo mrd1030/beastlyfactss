@@ -1622,8 +1622,9 @@ export function carePackageAnimalInSentence(pkg) {
     .join(' ');
 }
 
-// The free sample every package ships with: the cover, contents and opening
-// pages, served next to the previews.
+// Where a card's "Read the first N pages free" link goes: the package's own
+// page, scrolled to its sample box, so the reader sees what the package is
+// before the download. Only a package with a page here gets the link.
 export function carePackageSampleHref(pkg) {
-  return pkg.samplePages ? `/assets/care-packages/${pkg.id}/sample.pdf` : null;
+  return pkg.samplePages && pkg.storefront === 'stripe' ? `/care-packages/${pkg.id}/#sample` : null;
 }

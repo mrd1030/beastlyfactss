@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import {
   Ban, Bath, Check, ChevronDown, CircleDot, ClipboardList, Container, Download, Droplet, Egg, FileText, Fish, Hand,
   Handshake, HeartHandshake, House, Layers, Leaf, Moon, Rat, Ruler, Salad, Scale, Scissors, Snowflake, Soup, Sun,
@@ -63,6 +63,26 @@ export default function CarePackageProduct() {
   const pkg = CARE_PACKAGES.find(p => p.id === packageId);
   const rootRef = useRef(null);
   useCarePackageReveal(rootRef);
+  const { hash } = useLocation();
+
+  // The "Read the first N pages free" links on guide cards land on #sample.
+  // ScrollToTop leaves hashed URLs alone, so the page scrolls itself, and does
+  // it once more after the preview carousel has had time to load and shift
+  // the layout, unless the reader has already scrolled on their own.
+  useEffect(() => {
+    if (hash !== '#sample') return;
+    let moved = false;
+    const stop = () => { moved = true; };
+    const go = () => { if (!moved) document.getElementById('sample')?.scrollIntoView({ block: 'center' }); };
+    ['wheel', 'touchstart', 'keydown'].forEach(t => window.addEventListener(t, stop, { passive: true }));
+    const first = requestAnimationFrame(go);
+    const again = setTimeout(go, 700);
+    return () => {
+      cancelAnimationFrame(first);
+      clearTimeout(again);
+      ['wheel', 'touchstart', 'keydown'].forEach(t => window.removeEventListener(t, stop));
+    };
+  }, [hash, packageId]);
 
   // A package that is announced but not built gets the same URL and a
   // different page, so the link in a newsletter or a card never has to change
@@ -319,7 +339,7 @@ export default function CarePackageProduct() {
               <CarePackagePreviewCarousel packageId={pkg.id} packageName={pkg.name} previews={previews} />
               <p className="cp-muted text-sm mt-6 text-center">Click a page to see it at full size. The contents page is complete; the others fade out where the paid content starts.</p>
               {sampleHref && (
-                <div className="cp-card rounded-2xl p-5 mt-6 flex flex-wrap items-center justify-between gap-4">
+                <div id="sample" className="cp-card rounded-2xl p-5 mt-6 flex flex-wrap items-center justify-between gap-4">
                   <div>
                     <p className="font-bold">{`The first ${pkg.samplePages} pages, free`}</p>
                     <p className="cp-muted text-sm">{`Pages 1 to ${pkg.samplePages} as a PDF: the contents page and the introduction, so you can see every page the full package covers. None of the care guide itself.`}</p>

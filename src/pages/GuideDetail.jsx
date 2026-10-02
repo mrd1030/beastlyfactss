@@ -698,9 +698,9 @@ export default function GuideDetail() {
                   </div>
                 </Link>
                 {carePackageSampleHref(carePackage) && (
-                  <a href={carePackageSampleHref(carePackage)} download className="mt-2 block text-xs font-body font-semibold text-secondary underline decoration-secondary/40 hover:decoration-secondary">
+                  <Link to={carePackageSampleHref(carePackage)} className="mt-2 block text-xs font-body font-semibold text-secondary underline decoration-secondary/40 hover:decoration-secondary">
                     {`Read the first ${carePackage.samplePages} pages free`}
-                  </a>
+                  </Link>
                 )}
               </div>
             )}

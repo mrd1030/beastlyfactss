@@ -56,9 +56,9 @@ export default function CarePackageBlock({ animal, variant = 'setup' }) {
         </p>
         {sampleHref && (
           <p className="font-body text-sm mt-2">
-            <a href={sampleHref} download className="font-semibold text-secondary underline decoration-secondary/40 hover:decoration-secondary">
+            <Link to={sampleHref} className="font-semibold text-secondary underline decoration-secondary/40 hover:decoration-secondary">
               {`Read the first ${pkg.samplePages} pages free`}
-            </a>
+            </Link>
           </p>
         )}
       </div>
