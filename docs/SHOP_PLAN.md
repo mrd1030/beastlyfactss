@@ -65,16 +65,32 @@ had moved past the PDF):
 | rabbit | Rabbit_Care_Package_v2.1.pdf | 40 |
 | russian-tortoise | Russian_Tortoise_Care_Package_v2.2.pdf | 38 |
 | tarantula | Tarantula_Care_Package_v2.3.pdf | 44 |
+| cockatiel | Cockatiel_Care_Package_v1.2.pdf | 40 |
+| cockatoo | Cockatoo_Care_Package_v1.2.pdf | 45 |
+| whites-tree-frog | Whites_Tree_Frog_Care_Package_v1.0.pdf | 39 |
+| hognose-snake | Hognose_Snake_Care_Package_v1.0.pdf | 44 |
+| gargoyle-gecko | Gargoyle_Gecko_Care_Package_v1.0.pdf | 41 |
+| african-fat-tail | African_Fat-Tailed_Gecko_Care_Package_v1.0.pdf | 42 |
 
 The catalog carries these numbers. When a source is edited again, re-render
 with `_render.mjs`, move the old PDF to `rebuilt/past versions/` with a row in
 its README, update `pages`, `version` and `versionDate` in the catalog, the
 `edition` in the Worker's mirror, and re-upload the bucket file.
 
-Two more exist as finished PDFs with cover art but are not in the catalog at
-all: cockatiel (v1.1, 40 pages) and cockatoo (v1.1, 45 pages). Adding them is
-two catalog entries plus the per-package work below. Optional, but cheap once
-the template is built.
+Cockatiel and cockatoo (v1.2, 1 October 2026) are in the catalog with copy,
+themes, previews, samples and a Worker entry, on `storefront: 'stripe'` with
+empty price ids, so checkout refuses them with a 409 until the live prices
+exist. Still to do for both: the live Stripe price in the catalog and the
+Worker, and the PDF in the bucket.
+
+The White's tree frog (v1.0, 1 October 2026) is wired the same way and in the
+same state. Its old `storefront: 'soon'` landing page is no longer reached:
+the URL now renders the full product page.
+
+The hognose snake, gargoyle gecko and African fat-tailed gecko (v1.0,
+2 October 2026) are new, never on Gumroad, and went straight to the same
+setup with live prices created 2026-10-02. Each needs its PDF in the bucket
+before its branch reaches main.
 
 ## Work, in order
 

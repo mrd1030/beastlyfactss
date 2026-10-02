@@ -26,7 +26,7 @@ export const snakeGuides = [
         { label: "Legal check", value: "Broadly legal; the invasive-constrictor rules were written to exclude it. Illegal in Hawaii and New York City, a permit in New Jersey and Delaware, a permitted breeder in Minnesota, and city ordinances vary.", source: "ball-python-legal-guide" },
         { label: "Enclosure", value: "4x2x2 feet for an adult, at least as long as the snake, in PVC, which holds humidity far better than glass. A hatchling up to about 300 grams does well in a 10-gallon, a juvenile under 3 feet in 36x18x18. One snake per enclosure.", source: "ball-python-tank-setup-guide" },
         { label: "Temperatures", value: "Warm side 88 to 92°F with air nowhere above 95°F, cool side 75 to 80°F, nights 72 to 75°F. Every heat source on a thermostat, no hot rocks.", source: "ball-python-tank-setup-guide" },
-        { label: "Thermostat probe", value: "On the floor of the warm hide under foil tape, the surface the snake lies on, never up in the air near the fixture.", source: "reptile-heating-thermostats-guide" },
+        { label: "Thermostat probe", value: "On the floor of the warm hide, the surface the snake lies on, held with a probe clip or suction cup rather than tape, never up in the air near the fixture.", source: "reptile-heating-thermostats-guide" },
         { label: "Humidity", value: "55 to 65%, raised to 70 to 80% during a shed, on a digital hygrometer. Too dry means bad sheds and respiratory infection; too wet without ventilation means scale rot.", source: "ball-python-tank-setup-guide" },
         { label: "Substrate", value: "Cypress mulch or coconut coir 3 to 4 inches deep. No aspen, which molds at this humidity, and never pine or cedar.", source: "ball-python-tank-setup-guide" },
         { label: "Hides and water", value: "At least two snug hides, warm and cool, touching the body at several points, and a heavy bowl big enough to soak in.", source: "ball-python-tank-setup-guide" },
@@ -427,8 +427,10 @@ export const snakeGuides = [
     // deep dive named in `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size comes from the encyclopedia
     // entry, which no deep dive repeats. Quarantine, the thermostat probe,
-    // weight checks, and the power-outage floor cite the shared reptile and
-    // snake guides in the sidebar's Health and More list. Rewritten to the
+    // and the power-outage floor cite the shared reptile and snake guides in
+    // the sidebar's Health and More list. Weight checks cite the health guide's
+    // weekly weigh-in (ReptiFiles), not the shared snake guide's monthly
+    // default, since 2026-10-02. Rewritten to the
     // template shape 2026-09-16 (archive/docs-completed/HUB_ROUTER_REVIEWS.md). The old hub's
     // 40 to 60% humidity and its crepuscular
     // activity line are both retired here: the tank setup guide's 30 to 50%
@@ -439,48 +441,48 @@ export const snakeGuides = [
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "Quarantined 3 to 6 months away from any reptile you already keep, on paper towel, with its own tools and a vet workup inside that window.", source: "reptile-quarantine-guide" },
-        { label: "Legal check", value: "Georgia and West Virginia rule it out. Colorado allows captive-bred Western and Plains hognose with documentation from May 1, 2026, but not Eastern. California is the open question to confirm with the state agency.", source: "hognose-snake-legal-guide" },
+        { label: "Legal check", value: "Hawaii, Kansas and New York City rule it out. Georgia, New York State and West Virginia ban only their native hognoses, not the western. Colorado allows captive-bred Western and Plains hognose with documentation from May 1, 2026, but not Eastern. California is legal without a permit.", source: "hognose-snake-legal-guide" },
         { label: "Enclosure", value: "About one square foot of floor per foot of snake. A 20-gallon equivalent (30x13x13 inches) minimum for a male, a 40-gallon (36x18x16) for a larger female, or a 2x2x2 foot PVC for either. Floor over height.", source: "hognose-snake-tank-setup-guide" },
-        { label: "Temperatures", value: "Basking 90 to 95°F, cool side 70 to 75°F, nights 75 to 78°F, from a low-wattage halogen over the substrate on a thermostat or dimmer. The thermostat is not optional.", source: "hognose-snake-tank-setup-guide" },
-        { label: "Thermostat probe", value: "For a mat, on the floor of the warm hide under foil tape, the surface the snake lies on, never up in the air near the fixture.", source: "reptile-heating-thermostats-guide" },
+        { label: "Temperatures", value: "Basking 90 to 95°F, cool side 70 to 75°F, nights at room temperature but no colder than about 60°F, from a low-wattage halogen over the substrate on a dimming thermostat. The thermostat is not optional.", source: "hognose-snake-tank-setup-guide" },
+        { label: "Thermostat probe", value: "At the snake's level, never left up near the fixture reading room air. Over a basking bulb, follow the controller's instruction on probe placement and check the result with a separate thermometer.", source: "reptile-heating-thermostats-guide" },
         { label: "Humidity", value: "30 to 50%, on the dry side. No misting the enclosure; one humid hide for shedding, moistened only as needed. Damp everywhere is respiratory infection and scale rot.", source: "hognose-snake-tank-setup-guide" },
         { label: "Substrate", value: "3 to 6 inches of dry, diggable soil and sand, about 70% soil-based to 30% reptile sand, or aspen or coconut fiber as the soil part. Kept dry.", source: "hognose-snake-tank-setup-guide" },
         { label: "Where the digging goes", value: "Deep substrate on the cool end, basking surface on the warm end, cover at both, so it never trades the temperature it wants for the behavior it wants.", source: "hognose-snake-enrichment-guide" },
         { label: "Lighting", value: "Active by day, so a 12-hour cycle, and a low-output linear T5 UVB is increasingly recommended.", source: "hognose-snake-tank-setup-guide" },
         { label: "Where to feed", value: "In a separate container, on frozen-thawed prey. Enthusiastic, messy eaters that swallow substrate with their food. After three refusals, scent the prey with tuna, salmon, or broth.", source: "hognose-snake-health-issues-guide" },
         { label: "How much to feed", value: "Less activity than in the wild, and overfeeding shortens lives here. Match frequency and portion to the adult's activity, not the juvenile's growth schedule.", source: "hognose-snake-health-issues-guide" },
-        { label: "Weight checks", value: "Weigh monthly while growing. A rounded loaf in cross-section is right; a ridge down the spine is underweight, skin folds or a doughy feel over the ribs overweight.", source: "snake-sexing-growth-body-condition-guide" },
+        { label: "Weight checks", value: "Weigh weekly on a gram scale and keep a record of weight, meals, sheds and behavior. A sudden drop is the first thing to show a vet.", source: "hognose-snake-health-issues-guide" },
         { label: "Handling", value: "Bites are rare and are feeding responses, so wash hands first and never handle right after a meal. Stay calm through the hood-and-hiss display rather than dropping the snake.", source: "hognose-snake-handling-guide" },
-        { label: "Venom", value: "Rear-fanged and mildly venomous, not medically significant to a healthy person. The one documented bite produced local swelling and bruising and a full recovery.", source: "hognose-snake-handling-guide" },
-        { label: "Budget", value: "$50 to $100 for a wild-type, $200 to $500 for the setup, then $10 to $25 a month. A routine exam is $50 to $100, a fecal test $25 to $50.", source: "hognose-snake-cost-guide" },
+        { label: "Venom", value: "Rear-fanged and mildly venomous. Bites are uncommon and stay local: a quick bite often does nothing, while a snake that holds on or chews can cause marked swelling and bruising.", source: "hognose-snake-handling-guide" },
+        { label: "Budget", value: "$50 to $100 for a wild-type, $200 to $500 for the setup, then $15 to $28 a month. A routine exam is $50 to $100, a fecal test $25 to $50.", source: "hognose-snake-cost-guide" },
         { label: "Lifespan", value: "10 to 15 years, 15 to 20 achievable.", source: "hognose-snake-cost-guide" },
         { label: "Adult size", value: "1.5 to 3.5 feet (45 to 107 cm) depending on species." },
-        { label: "Power outage", value: "75 to 78°F is the normal night low. Below 75°F, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
+        { label: "Power outage", value: "Room temperature is a normal night, down to 60°F. Below 60°F, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },
     emergencyCard: {
       source: "hognose-snake-health-issues-guide",
       callNow: [
         "Open-mouth breathing, wheezing, drooling or visible mucus, and lethargy",
-        "A failure to pass waste, bloating, and lethargy that doesn't clear within a reasonable window",
+        "A missed stool past the snake's usual gap after a meal, with bloating, lethargy, refused food or regurgitation",
         "Discolored or blistered belly scales that progress beyond mild discoloration",
         "Mites or internal parasites, which periodic fecal checks catch early, especially on a newly acquired snake",
       ],
-      vetLine: "A reptile-experienced vet, found before you need one. A respiratory infection always needs a vet, since it needs antibiotics and won't resolve on its own. With impaction, mild cases sometimes resolve on their own, and anything that doesn't pass within a reasonable window needs a vet, with severe cases sometimes requiring surgery.",
+      vetLine: "A reptile-experienced vet, found before you need one. A respiratory infection always needs a vet, since it needs antibiotics and won't resolve on its own. With impaction there is no fixed number of days: a missed stool with bloating, lethargy or refused food needs a vet, and severe cases sometimes require surgery.",
     },
     routes: [
       { slug: "hognose-snake-cost-guide", line: "What the snake costs by morph, the $200 to $500 setup, the low monthly running cost, and what vet visits run." },
       { slug: "hognose-snake-tank-setup-guide", line: "Enclosure size split by sex, the temperature gradient, the dry humidity range, and the deep substrate this species digs into." },
-      { slug: "hognose-snake-handling-guide", line: "The puff adder act, the death-feigning routine, what the one documented bite case actually involved, and when bites happen." },
+      { slug: "hognose-snake-handling-guide", line: "The puff adder act, the death-feigning routine, what documented bites actually involve, and when bites happen." },
       { slug: "hognose-snake-health-issues-guide", line: "Respiratory infection, impaction, obesity and fatty liver, scale rot, and parasites, with the cause behind each." },
       { slug: "hognose-snake-feeding-guide", line: "Prey size by gram weight for hatchlings, how the schedule slows with age, frozen thawed prey, and scenting a hatchling that refuses." },
       { slug: "hognose-snake-enrichment-guide", line: "The preference study where the snakes chose enrichment, why the digging goes on the cool side, and a priority order." },
-      { slug: "hognose-snake-legal-guide", line: "Why venomous-reptile bans exclude this genus, the two states where ownership is off the table, and Colorado's 2026 split rule." },
+      { slug: "hognose-snake-legal-guide", line: "Why venomous-reptile bans exclude this genus, the six places where ownership is off the table, and Colorado's 2026 split rule." },
     ],
     buyList: [
       "2x2x2 foot or 36x18x18 inch PVC or glass enclosure, front-opening and securely latching",
-      "Low-wattage halogen basking bulb, or an under-tank heat mat",
-      "Thermostat or dimmer, whichever heat source you use",
+      "Low-wattage halogen basking bulb in a fixture",
+      "Dimming thermostat for the basking bulb",
       "Digital thermometer and hygrometer",
       "Loose, dry, diggable substrate: soil-based mix with reptile-safe sand, aspen, or coconut fiber",
       "Warm, cool, and humid hides",
@@ -493,8 +495,8 @@ export const snakeGuides = [
     ],
     faqs: [
       { q: "How humid should a hognose snake enclosure be?", a: "30 to 50% ambient, dry compared with most pet snakes. Rather than misting the whole enclosure, run one dedicated humid hide for shedding and add moisture only there." },
-      { q: "Why are hognose snakes prone to impaction?", a: "Hognoses are enthusiastic, somewhat messy eaters, and they're prone to swallowing substrate along with their food. Feeding in a separate container away from the loose substrate is the single most effective prevention. Watch for a failure to pass waste, bloating, and lethargy, and see a vet if it doesn't resolve within a reasonable window." },
-      { q: "Are Western hognose snakes dangerous to handle?", a: "The rear-fanged venom isn't considered medically significant to a healthy person, and the one documented bite case in the literature came down the same way: not a dangerous species, just one to handle thoughtfully. That case is still worth knowing about: swelling, bruising, and mild cellulitis at the bite site, no systemic effects, and a recovery that ran about five months." },
+      { q: "Why are hognose snakes prone to impaction?", a: "Hognoses are enthusiastic, somewhat messy eaters, and they're prone to swallowing substrate along with their food. Feeding in a separate container away from the loose substrate is the single most effective prevention. Learn your snake's usual gap between a meal and its stool. A missed stool past that gap, with bloating, lethargy or refused food, needs a vet, not more waiting." },
+      { q: "Are Western hognose snakes dangerous to handle?", a: "Not dangerous, but not harmless either. Bites are documented and uncommon, mostly from a hungry snake around feeding time, and the effects stay local. A quick bite often does nothing; a snake that holds on or chews can cause marked swelling and bruising. In the best-known case a keeper had swelling, bruising and mild cellulitis, no systemic effects, and a recovery that ran about five months." },
     ],
   },
   {
@@ -627,7 +629,7 @@ export const snakeGuides = [
         { label: "Budget", value: "$150 to $200 for a normal, $200 to $400 for localities and morphs. Setup roughly $150 to $250, then $6 to $11 a month. Vet care is the bigger line: $78 for an established-client exam, $128 new, so set aside $100 to $200 a year.", source: "rosy-boa-cost-guide" },
         { label: "Lifespan", value: "18 to 22 years on average in captivity, with documented individuals past 30.", source: "rosy-boa-cost-guide" },
         { label: "Adult size", value: "24 to 36 inches (60 to 90 cm), rarely over 4 feet (122 cm)." },
-        { label: "Thermostat probe", value: "On the floor of the warm hide under foil tape, the surface the snake lies on, never up in the air near the fixture.", source: "reptile-heating-thermostats-guide" },
+        { label: "Thermostat probe", value: "On the floor of the warm hide, the surface the snake lies on, held with a probe clip or suction cup rather than tape, never up in the air near the fixture.", source: "reptile-heating-thermostats-guide" },
         { label: "Hygiene", value: "Children younger than 5 should not handle or touch reptiles or their environments at all.", source: "reptile-salmonella-hygiene-guide" },
       ],
     },

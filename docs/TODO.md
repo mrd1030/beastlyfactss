@@ -502,3 +502,54 @@ not actually watching, and the summary counts it as neither good nor bad.
 Unsolved. pypdf does not help here: the fetch has to happen somewhere the site
 will answer.
 
+### The desktop pass, every month after the CI run
+
+The CI issue's last line ("N source(s) could not be read from here") is a work
+item, not a footnote. Every source CI could not read gets read from the desktop
+the same day, so every cell can carry the month's date. Done in full on
+2026-10-01: 2,654 of 2,704 cells verified and stamped, the other 50 below.
+
+- PDFs on Windows: run with `PYTHONIOENCODING=utf-8`. Without it pypdf's output
+  dies on the first non-cp1252 character and every such PDF reads as unreadable.
+  That one setting turned 160 "unchecked" cells into 216 verified ones.
+- Sites that refuse a script (Georgia, Massachusetts, New York DEC, Nebraska's
+  rules portal) open fine in Chrome. Run the quote check inside the page; for a
+  PDF, load pdf.js from cdnjs into the page and read it there. Where a site's
+  content security policy blocks that, fetch the file locally instead.
+- Never pass a Cloudflare or other human check. OSCN (Oklahoma statutes) sits
+  behind one; the official Title 29 file at oklegislature.gov carries the text.
+- Many "missing quotes" were never drift: the quote came from a different
+  section than the source URL. 2026-10-01 re-pointed 136 cells to the
+  section they actually quote and added 18 sources. Fix the pointer, not the
+  quote.
+- After the pass, trigger the workflow with `refresh_baseline` so the baseline
+  matches the corrected URLs, or the re-pointed sources report as NEW.
+
+### Open: Maine's unrestricted list (50 cells unverified)
+
+On 2026-09-08 IFW replaced https://www.maine.gov/ifw/docs/unrestrictedspecies.pdf
+with a 12-page list that holds fish only. The mammal, bird, reptile and
+invertebrate pages are gone, no other file replaces them, and IFW's
+"Purchasing or Possessing Wildlife" page still says a species missing from that
+list "is automatically prohibited". Almost certainly a publishing error rather
+than a ban on hedgehogs and bearded dragons, so the 50 cells resting on it keep
+their August dates. Wayback holds the full list as late as 2026-02-12. Ask IFW,
+or recheck next month.
+
+The 30 guides that discuss Maine carry a `<SourceNotice id="me-unrestricted" />`
+box saying so, and the Maine state page carries the same box at the top.
+Both are worded in src/lib/data/sourceNotices.js. After each recheck,
+move `statusCheckedOn` there to the recheck date. Once the full list is back and
+the 50 cells are re-verified, delete the `me-unrestricted` entry: the boxes
+stop rendering on the next build, and the tags can come out of the guides after.
+
+### Upcoming: Wisconsin native herps change on 2027-01-01
+
+CR 25-092 repeals and recreates Wis. Admin. Code NR 16.12 effective 1 January
+2027. Today a person may keep up to 5 of most non-listed native snakes and
+lizards; from that date no one may possess a live native amphibian or reptile
+except under the new (3) exemptions (captive-bred color variants, licensed
+farms, institutions), and anything held before then must be registered by 30
+June 2027. Revisit garter-snake/WI, milk-snake/WI, hognose-snake/WI,
+snapping-turtle/WI and tiger-salamander/WI on that date.
+

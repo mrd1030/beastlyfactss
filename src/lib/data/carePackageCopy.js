@@ -711,6 +711,292 @@ export const CARE_PACKAGE_COPY = {
     ],
   },
 
+  // The two birds below were written from their own source HTML, edition 1.2,
+  // the same way as the four above.
+
+  cockatiel: {
+    hook: 'A twenty-five-year cockatiel starts with the food bowl and a night light.',
+    heroParagraph:
+      'A 41-page printable manual with the cage and the bar spacing that is a safety limit, the night light that stops night frights, five ways to convert a seed eater, the levers that prevent chronic egg laying, nine health pages, and the printable owner tools.',
+    heroTicks: ['41 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
+    roulette: [
+      'A seed bowl sold as a complete diet',
+      'A tall, narrow cage bought for its looks',
+      'A bird thrashing in the dark at 2am, and nobody saying why',
+      'A hen laying clutch after clutch with no male in the house',
+    ],
+    answers: [
+      '75 to 80 percent pellets, five ways to convert a seed eater, and the weight loss that means slow down',
+      'A 20 by 20 inch floor, a 24 by 24 by 30 inch target, width over height, and bars at half an inch',
+      'Night frights explained, and the dim night light that prevents the injury this species is known for',
+      'The trigger list for chronic laying, why the eggs stay where they are, and egg binding as a same-day emergency',
+    ],
+    inside: [
+      { emoji: '🏠', title: 'Cage, placement and hazards', line: 'Cage size and the half-inch bar spacing, perches and dishes, where the cage goes, and the household hazards page, starting with nonstick pan fumes (PTFE).' },
+      { emoji: '🪟', title: 'Sleep and night frights', line: '10 to 12 hours of real darkness, the dim night light that prevents the signature injury, and day length as the hormone lever.' },
+      { emoji: '🥗', title: 'Diet and pellet conversion', line: 'The 75 to 80 percent pellet target, five conversion methods, vegetable and fruit charts, and the never-feed list.' },
+      { emoji: '🤝', title: 'Handling and the crest', line: 'Taming in steps, reading the crest, one bird or two, wing clipping from both sides, sexing, and the daily gram scale.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Chronic egg laying and egg binding, vitamin A and fatty liver, psittacosis, beak and feather disease (PBFD), Giardia and plucking, molt, and quarantine.' },
+      { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, pet-sitter sheet, and the logs.' },
+    ],
+    previewHeadline: 'The pages that make a five-year bird a twenty-five-year one.',
+    previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
+      { page: 7, alt: 'Light, sleep and night frights, with the darkness and light targets' },
+      { page: 8, alt: 'Household hazards and bird-proofing, starting with nonstick pan fumes' },
+      { page: 28, alt: 'Setup checklist and targets' },
+      { page: 30, alt: 'Budget and shopping list' },
+      { page: 32, alt: 'Symptom quick reference table' },
+    ],
+    whoFor: [
+      'New cockatiel owners buying the cage before the bird',
+      'Keepers with a bird on a seed mix who want it on pellets without a hunger strike',
+      'Anyone with a hen who has started laying, before it turns into a habit',
+    ],
+    whatNot: [
+      'Not a substitute for an avian veterinarian',
+      'Not a live website mirror, a clean printable package instead',
+      'Not a subscription, one purchase and every corrected edition is free',
+    ],
+  },
+
+  cockatoo: {
+    hook: 'Four to six hours most days, for decades. Take the honest test first.',
+    heroParagraph:
+      'A 47-page printable manual with a decision test written to talk some readers out of the bird, six species compared, training and foraging as the plan against plucking and screaming, feather dust and your own lungs, seven health pages, state legal status, and a succession plan.',
+    heroTicks: ['47 pages, print or view', 'Advanced, not a first parrot', 'No external links inside the PDF'],
+    roulette: [
+      'A hand-raised baby sold on the cuddling, and nothing about the bird at eight years old',
+      'Constant one-on-one time in the first weeks, then a bird that screams when that person leaves the room',
+      'Plucking blamed on boredom before anyone has seen a vet',
+      'A bird that can live 70 years, and no plan for who takes it next',
+    ],
+    answers: [
+      'Nine questions to answer out loud before you buy, and an honest case for adoption',
+      'Independence built from day one: several people in rotation, a stand worth being on, and departures made boring',
+      'Medical causes ruled out first, then training, foraging, sleep and routine in order of value',
+      'A succession page: a named guardian, a sanctuary fallback, money attached, and the will',
+    ],
+    inside: [
+      { emoji: '⚖️', title: 'The honest test', line: 'Nine questions to answer before you buy, six species compared on size, price, noise and temperament, and where the bird comes from.' },
+      { emoji: '🏠', title: 'Housing, dust and hazards', line: 'Cage size, bar gauge and padlocks, the play stand, 10 to 12 hours of darkness, feather dust and the HEPA air purifier, and the fumes from overheated nonstick pans (PTFE).' },
+      { emoji: '🥗', title: 'Diet and foraging', line: 'The 75 to 80 percent pellet target, converting a seed eater, the never-feed list, nuts as training pay, and nothing in a bowl.' },
+      { emoji: '🤝', title: 'Training and behavior', line: 'Training sessions, bites and sexual maturity, over-bonding and independence, screaming, wing clipping, and hormones.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Plucking and the molt differential, beak and feather disease (PBFD), obesity, lipomas and fatty liver, psittacosis, droppings, and quarantine.' },
+      { emoji: '🧰', title: 'The long view and owner tools', line: 'Legal status by state, a succession plan, setup checklist, emergency card, budget, first 30 days, symptom reference, and the logs.' },
+    ],
+    previewHeadline: 'The pages to read before the bird, and the ones to keep after.',
+    previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
+      { page: 5, alt: 'Is a cockatoo right for you? The nine-question honest test' },
+      { page: 31, alt: 'The sixty-year bird: succession and rehoming plan' },
+      { page: 32, alt: 'Setup checklist and targets' },
+      { page: 34, alt: 'Budget and shopping list' },
+      { page: 36, alt: 'Symptom quick reference table' },
+    ],
+    whoFor: [
+      'Anyone deciding whether to buy a cockatoo, before they meet the baby',
+      'Owners of a cockatoo that screams, plucks or has become a one-person bird',
+      'Keepers who want a written plan for a bird that may outlive them',
+    ],
+    whatNot: [
+      'Not a substitute for an avian veterinarian or a certified parrot behavior consultant',
+      'Not a live website mirror, a clean printable package instead',
+      'Not a subscription, one purchase and every corrected edition is free',
+    ],
+  },
+
+  // Written from the source HTML, edition 1.0, the same way as the birds.
+
+  'whites-tree-frog': {
+    hook: 'An easy frog for sixteen years, if someone counts the crickets.',
+    heroParagraph:
+      'A 39-page printable manual with the vertical enclosure, a humidity cycle that dips instead of sitting high, the water that is safe to mist with, feeding by size and age, the ridge test that catches obesity early, seven health pages, and the printable owner tools.',
+    heroTicks: ['39 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
+    roulette: [
+      'A care sheet that says "high humidity," and an enclosure that never dries out',
+      'Untreated tap water in the mister, or distilled water because it sounds purer',
+      'A frog that eats everything offered, fed everything offered',
+      'Two frogs of different sizes sharing one enclosure',
+    ],
+    answers: [
+      'A 50 to 60 percent baseline, misted to 70 to 80 once or twice a day and then left to dry back, with a chart of the cycle',
+      'Dechlorinated tap or spring water only, and why distilled and reverse-osmosis water can be fatal to a frog',
+      '3 to 4 insects, 2 to 3 times a week for an adult, and the eardrum ridge test that shows obesity before the waistline does',
+      'Size-matched groups only, because this frog will try to swallow anything that fits, a smaller frog included',
+    ],
+    inside: [
+      { emoji: '🏠', title: 'The vertical enclosure', line: 'The 18 by 18 by 24 inch minimum measured in height, where it goes, the gentle temperature gradient, and every heat source outside the glass.' },
+      { emoji: '💧', title: 'Humidity and safe water', line: 'The cycle that dips after each misting, ventilation, the water that is safe to mist with, UVB (ultraviolet B) light, substrate and plants.' },
+      { emoji: '🥣', title: 'Feeding and the ridge test', line: 'Feeding by size and age, staples and treats, gut-loading and dusting, and the fat ridges above the eardrum that read body condition.' },
+      { emoji: '🤲', title: 'Handling, groups and quarantine', line: 'Plain water and no soap, size-matched groups and sexing, choosing a frog, six to eight weeks of quarantine, and normal behavior.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Obesity and fatty liver, chytrid, red-leg, metabolic bone disease and vitamin A, skin and chemical injuries, impaction and parasites.' },
+      { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, outage plan, pet-sitter sheet, and the logs.' },
+    ],
+    previewHeadline: 'The cycle chart, the ridge test, and the card that lives by the enclosure.',
+    previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
+      { page: 7, alt: 'The humidity cycle that dips, with a chart of the evening misting spike and the dry-back' },
+      { page: 14, alt: 'Body condition: reading the fat ridges above the eardrum, three readings' },
+      { page: 21, alt: 'Obesity, fatty eyes and fatty liver: causes, signs and recovery' },
+      { page: 28, alt: 'Emergency and quick targets card, to print and post near the enclosure' },
+      { page: 29, alt: 'Budget and shopping list, setup and yearly costs' },
+    ],
+    whoFor: [
+      "New White's tree frog owners setting up the enclosure before the frog comes home",
+      'Keepers whose frog is filling out over the eardrums, or whose enclosure never dries',
+      'Anyone keeping two or more frogs together, or bringing a new one home to a group',
+    ],
+    whatNot: [
+      'Not a substitute for a veterinarian who sees amphibians',
+      'Not a live website mirror, a clean printable package instead',
+      'Not a subscription, one purchase and every corrected edition is free',
+    ],
+  },
+
+
+  // Written from the source HTML, edition 1.0, the same way as the tree frog.
+
+  'hognose-snake': {
+    hook: 'The hood and the hiss are a bluff. The dry air is the real rule.',
+    heroParagraph:
+      'A 44-page printable manual with the enclosure sized by sex, a dry setup at 30 to 50% humidity, prey by gram weight, what the hood, the hiss and the death act mean, the venom question answered from the bite research, a state-by-state legal summary, seven health pages, and the printable owner tools.',
+    heroTicks: ['44 pages, print or view', 'Intermediate level', 'No external links inside the PDF'],
+    roulette: [
+      'Misting advice borrowed from a tropical snake, for an animal from the dry prairie',
+      'An adult still fed every week, because that is what it ate as a hatchling',
+      'A snake that hoods, hisses and rolls over, and a forum that calls it aggressive or dying',
+      '"Venomous" on one page, "harmless" on the next, and no word on whether it is legal where you live',
+    ],
+    answers: [
+      '30 to 50% humidity, no misting, and one humid hide for shedding, because damp air is the root of respiratory infection and scale rot',
+      "Prey sized by the snake's weight in grams, every 5 to 7 days while young and about every two weeks as an adult, fed in a separate container",
+      'The hood, the hiss and the death act explained as bluff, and the one sign that is not the act: limp with no trigger',
+      'Rear-fanged and mildly venomous, from two bite studies, and all 50 states, the District of Columbia and New York City sorted into legal, conditional, permit-only and banned',
+    ],
+    inside: [
+      { emoji: '🏠', title: 'Dry, deep housing', line: 'The enclosure sized by sex, a 90 to 95°F basking surface, nights at room temperature but no colder than 60°F, every heat source on a thermostat, optional UVB (ultraviolet B) light, and 3 to 6 inches of substrate, deepest at the cool end.' },
+      { emoji: '🐭', title: 'Feeding by gram weight', line: "Prey by the snake's weight, frozen-thawed and fed in a separate container, safe thawing, the adult schedule that prevents obesity, and the refusing hognose." },
+      { emoji: '🐍', title: 'The bluff and the venom', line: 'Hooding, hissing and playing dead, what two bite studies found, how feeding bites happen, and cool water over the face to make a snake let go.' },
+      { emoji: '⚖️', title: 'The law, state by state', line: 'Legal in 27, conditional in 15, permit-only in 4 and banned in 6, with which hognose each rule reaches. Three of the six bans reach only the native hognoses.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Respiratory infection and scale rot, impaction, regurgitation and obesity, mites and Cryptosporidium, stuck shed, mouth rot, burns, prolapse, and the winter slowdown.' },
+      { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, outage plan, pet-sitter sheet, and the logs.' },
+    ],
+    previewHeadline: 'The gradient, the venom page, and the card that lives by the enclosure.',
+    previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
+      { page: 7, alt: 'The temperature gradient: basking 90 to 95°F, cool side 70 to 75°F, nights at room temperature but no colder than 60°F' },
+      { page: 15, alt: 'The venom question and bites: rear-fanged and mildly venomous, two bite studies, and what to do if a snake holds on' },
+      { page: 25, alt: 'Respiratory and belly-scale infections: one cause, too much moisture, with signs and the vet response for each' },
+      { page: 32, alt: 'Emergency and quick targets card, to print and post near the enclosure' },
+      { page: 33, alt: 'Budget and shopping list, setup and yearly costs' },
+    ],
+    whoFor: [
+      'New western hognose owners setting up the enclosure before the snake comes home',
+      'Keepers whose hognose hoods, plays dead or turns down food, and want to know which of those is normal',
+      'Anyone checking whether a hognose is legal in their state, or their city, before buying one',
+    ],
+    whatNot: [
+      'Not a substitute for a veterinarian who sees reptiles',
+      'Not legal advice: a summary of state rules as of October 2026, to confirm with your state and city',
+      'Not a subscription, one purchase and every corrected edition is free',
+    ],
+  },
+
+  'gargoyle-gecko': {
+    hook: 'It needs heat, and it cannot take much of it.',
+    heroParagraph:
+      'A 41-page printable manual with the tall, cluttered enclosure, a gentle warm spot under an 86°F ceiling, a humidity cycle that dries out every day, powder and insects on a real schedule, six health pages, and the printable owner tools.',
+    heroTicks: ['41 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
+    roulette: [
+      'A care sheet that says "no heat needed," and an enclosure with no warm spot at all',
+      'Humidity held high around the clock, or left to sit dry for days',
+      'Insects called an optional treat, the way crested gecko sheets describe them',
+      'A tall enclosure with bare glass walls, and a gecko sleeping upside down on them',
+    ],
+    answers: [
+      'A basking spot of 82 to 85°F on a thermostat, a 70 to 75°F cool end, and the 86°F ceiling and 65°F floor printed as limits, not targets',
+      'A heavy evening mist, then a dry-back toward 50 percent before the next one, with a chart of the daily cycle',
+      'Complete diet powder every 2 to 3 days and dusted, gut-loaded insects 1 to 2 times a week for an adult, checked against its weight in grams',
+      'Branches and cork from the floor to the top, because sleeping on bare glass is what bends the tail into floppy tail syndrome',
+    ],
+    inside: [
+      { emoji: '🏠', title: 'The tall, cluttered enclosure', line: 'The 18 by 18 by 24 inch minimum measured in height, where it goes, safe substrates, and branches and cork from the floor to the top.' },
+      { emoji: '🌡️', title: 'The gradient and the ceiling', line: 'An 82 to 85°F basking spot, the 86°F limit and 65°F floor, a thermostat on every bulb, the daily wet-dry cycle, and UVB (ultraviolet B) light.' },
+      { emoji: '🦗', title: 'Powder and insects', line: 'Complete diet powder and live insects by age, gut-loading and two dusting jars, the never-feed list, and a growth table in grams.' },
+      { emoji: '🤲', title: 'Handling, the bite and the tail', line: "Two weeks to settle, a bite that can break skin, a tail that grows back unlike a crested gecko's, sexing, eggs, and quarantine." },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Metabolic bone disease, floppy tail and tail loss, stuck shed and toe loss, respiratory infection, overheating, parasites and mouth rot.' },
+      { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, heat wave and outage plan, pet-sitter sheet, and the logs.' },
+    ],
+    previewHeadline: 'The heat limit, the feeding schedule, and the card that lives by the enclosure.',
+    previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
+      { page: 6, alt: 'The gradient and the 86°F ceiling: the temperature table with its two limits, and the bulb on a thermostat' },
+      { page: 11, alt: 'Diet and feeding by age: complete diet powder and live insects, with the schedule for juveniles and adults' },
+      { page: 24, alt: 'Floppy tail syndrome and tail loss: cause, signs and treatment for each, and the test of where the gecko sleeps' },
+      { page: 29, alt: 'Emergency and quick targets card, to print and post near the enclosure' },
+      { page: 30, alt: 'Budget and shopping list, setup and yearly costs' },
+    ],
+    whoFor: [
+      'New gargoyle gecko owners setting up the enclosure before the gecko comes home',
+      'Crested gecko keepers adding a gargoyle, who need the differences spelled out',
+      'Anyone whose room runs warm in summer, or whose gecko sleeps on the glass',
+    ],
+    whatNot: [
+      'Not a substitute for a veterinarian who treats reptiles',
+      'Not a live website mirror, a clean printable package instead',
+      'Not a subscription, one purchase and every corrected edition is free',
+    ],
+  },
+
+  // Written from the source HTML, edition 1.0, the same way as the tree frog.
+
+  'african-fat-tail': {
+    hook: 'Not a leopard gecko with a different pattern. The difference is one damp box.',
+    heroParagraph:
+      'A 42-page printable manual with every way it differs from a leopard gecko, belly heat on a thermostat with the probe where it belongs, the humid hide that keeps skin off the toes, a soil mix it can burrow in, feeding by age, seven health pages, and the printable owner tools.',
+    heroTicks: ['42 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
+    roulette: [
+      'A leopard gecko care sheet at 30 to 40 percent humidity, and old skin ringing the toes after every shed',
+      'A heat mat plugged straight into the wall, or a probe taped to the back of the mat',
+      '"Pure sand" in one post and "never loose substrate" in the next, for a gecko that digs',
+      'A feeding chart that counts days, for a gecko that can go weeks without eating and be fine',
+    ],
+    answers: [
+      '50 to 70 percent through the enclosure and a humid hide held at 70 to 80, the one box that prevents almost all stuck shed',
+      '88 to 92°F (31 to 33°C) at the warm side surface, on a thermostat, with the probe flat on the warm hide floor and a second thermometer beside it',
+      'A 70/30 topsoil and play sand mix at least 4 inches deep for healthy adults, and paper towel for juveniles, quarantine and any unwell gecko',
+      'Daily feeding for hatchlings easing to 3 to 4 times a week for adults, corrected by the tail: as thick as the neck or thicker',
+    ],
+    inside: [
+      { emoji: '🦎', title: 'Not a leopard gecko', line: 'Origin, humidity, temperament, substrate, heat, enclosure, nest temperature and price side by side, and what carries across.' },
+      { emoji: '🏜️', title: 'Housing, heat and the humid hide', line: 'The 36 by 18 by 18 inch minimum or a 40-gallon breeder with the same floor, a heat mat on a thermostat, three hides, the burrowing mix, and optional UVB (ultraviolet B).' },
+      { emoji: '🦗', title: 'Feeding by age', line: 'Five feeding pages: hatchling portions to adult intervals, staples, treats and the never-feed list, gut-loading and dusting, and why it stops eating.' },
+      { emoji: '🤲', title: 'Handling, females and quarantine', line: 'A calm gecko handled low and never by the tail, sexing and body condition, the laying box every female needs, and 3 to 6 months of quarantine.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Retained shed and eye problems, metabolic bone disease, impaction and respiratory infection, egg binding and prolapse, parasites, mouth rot, tail loss and burns.' },
+      { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, outage plan, pet-sitter sheet, and the logs.' },
+    ],
+    previewHeadline: 'The side-by-side, the probe and the hide, and the card that lives by the enclosure.',
+    previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
+      { page: 5, alt: 'Fat-tail or leopard gecko: origin, humidity, temperament, substrate, belly heat, enclosure and price side by side' },
+      { page: 7, alt: 'Belly heat, the thermostat and the probe: warm side, cool side and night targets, and where the probe goes' },
+      { page: 8, alt: 'Humidity and the three hides: 50 to 70 percent in the enclosure and a humid hide held at 70 to 80' },
+      { page: 23, alt: 'Retained shed and eye problems: cause, signs, response and recovery for skin stuck on the toes and tail tip' },
+      { page: 30, alt: 'Emergency and quick targets card, to print and post near the enclosure' },
+    ],
+    whoFor: [
+      'New African fat-tailed gecko owners setting up the enclosure before the gecko comes home',
+      'Leopard gecko keepers adding a fat-tail, or running one from a leopard gecko care sheet',
+      'Keepers whose gecko keeps leaving old skin on its toes or tail tip',
+    ],
+    whatNot: [
+      'Not a substitute for a veterinarian who sees reptiles',
+      'Not a live website mirror, a clean printable package instead',
+      'Not a subscription, one purchase and every corrected edition is free',
+    ],
+  },
+
 };
 
 export function getCarePackageCopy(id) {

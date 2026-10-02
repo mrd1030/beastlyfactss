@@ -273,3 +273,258 @@ exception in one FAQ line but never covers the dimorphism or the mutations, whic
 is why that row could not be closed. The claim on page 17 that VCA finds
 reproductive problems more common in cockatiels than budgies also stays flagged for
 an external check.
+
+---
+
+## Cut in 1.2
+
+Version 1.2 (October 2026) was a cross-check against the site. These words left the
+page, for space or because the site no longer supports them, and are kept here.
+
+**Page 39, the guides paragraph, cut for space.** The list of guides became "sixteen
+cross-species bird guides, from household hazards and quarantine to first aid and
+feather dust." The 1.1 wording:
+
+> Beastly Facts guides drawn on: cockatiel cage setup, feeding, health issues, handling,
+> enrichment and cost, plus the cockatiel and cockatoo comparison, and the cross-species
+> bird guides written since this edition, which now carry pages this package used to
+> source externally: household hazards, photoperiod and sleep, pellet conversion,
+> quarantine, droppings, wing clipping, sexing and body condition, feather loss and molt,
+> chronic egg laying, emergency and travel, first aid and grooming, body language, parrot
+> training, avian gastric yeast, feather dust and air quality, and choosing a pet bird.
+
+**Page 29, the first-aid kit callout, cut for space:** "Assemble it in week one, where
+anyone can find it in the dark." Now "Keep it where anyone can find it in the dark."
+
+**Page 29, the weight row,** was "A fall of about 10% from baseline, or three declining
+weighings" and is now "A 10% fall, three falling weighings, or 1 to 2% a week in a diet
+change". The quarantine row lost "with an existing bird" along with the old 45 to 60 days.
+
+**Page 15, the recall callout,** ended "and it takes a fortnight." No site page gives a
+timeline for recall training, so it now ends "built a little more distance at a time."
+
+**Page 9, the pairing paragraph,** opened "Two hens or two cocks avoids the egg problem
+entirely and they will still bond." The first half was wrong (hens lay with no male); the
+second half went with it.
+
+**Page 18 and page 29, the sick-bird warming figure,** was 80 to 85 F (27 to 29 C). The site
+gives 75 to 80 F for a sick bird, so the package now prints about 80 F (27 C), the top of
+that range and the bottom of LafeberVet's 80 to 90 F for supplemental heat.
+
+**Page 7, the sleep paragraph, cut for space** when the abbreviation pass spelled out UVB,
+NHLBI and HEPA on the same page. The 1.2 draft wording:
+
+> It is also the cheapest thing in this book to fix. Before you change the diet, buy a toy,
+> or call a behaviorist about a screaming bird, count the hours of real darkness it is
+> actually getting.
+
+Now "It is also the cheapest fix in this book. Before you change the diet, buy a toy, or
+call a behaviorist, count the hours of real darkness it gets."
+
+**Page 39, the Lafeber night fright row, cut for space** when NASPHV, MSD and UC Davis
+were spelled out. Was "The mechanism, the night light recommendation, partial rather than
+full covering, identifying external triggers, and the response when one happens." Now "The
+mechanism, the night light, partial rather than full covering, external triggers, and the
+response when one happens."
+
+## Review fixes, 1.2
+
+Editor's review, applied 1 October 2026. Still 41 pages; nothing was cut and no page was
+added. Pages 7 and 8 overflowed after the glosses went in and were brought back by
+rebalancing table columns and two rewordings that keep every fact (logged below).
+
+**Spelling and US usage**
+
+- Page 29: "Laboured breathing" is now "Labored breathing".
+- Page 31: "pencilled into the planner" is now "penciled into the planner".
+- Page 34: "A reptile in a power cut ... A cockatiel in a power cut" is now "power outage"
+  in both places. Glossary CDC and CO entries: "in a power cut" / "during a power cut" are
+  now "in a power outage" / "during a power outage".
+- Page 8: "Ceiling fans and hobs" is now "Ceiling fans and stove burners". No other "hob"
+  in the book.
+- Page 26: "berries or beetroot" is now "berries or beets".
+- Pages 4 and 19: "About 107.1°F (41.8°C)" is now "About 41.8°C (107.2°F)".
+- Page 7: "a louder, bitier, more anxious cockatiel" is now "a louder, more bite-prone, more
+  anxious cockatiel".
+
+**Jargon glossed at first use, each with a new glossary entry**
+
+- Page 8, zinc row: "Chelated by a vet" is now "Treated by a vet with chelation, a course of
+  drugs that bind the metal so the body can pass it". Glossary: Chelation (pages 8, 23).
+- Page 21: "the problem is at the syrinx" is now "the syrinx, the bird's voice box at the
+  base of the windpipe". Glossary: Syrinx.
+- Page 15: "cut below the coverts that overlay them" is now "cut below the coverts, the short
+  feathers that overlay the base of the flight feathers". Glossary: Coverts.
+- Page 18: "Calcium is what makes the oviduct contract" is now "The oviduct is the tube an
+  egg travels down to be laid, and calcium is what makes it contract". Glossary: Oviduct.
+- Page 22: "the mouth, nose or cloaca" now adds "the shared chamber under the tail that
+  droppings and eggs leave through". Glossary: Cloaca.
+- Page 7 (first use of cere): "a bleeding cere" is now "a bleeding cere (the nostril patch
+  above the beak)". The Cere glossary entry already existed.
+
+**Consistency**
+
+- Page 4: "Page 30 itemizes it." is now "Page 30 adds a scale, a carrier, a sleep cage and
+  the first exam and lands at $392 to $1,027."
+- Page 9: "Roughly 1.6 to 1.8 times, not double" is now "Roughly 1.8 times one bird, not
+  double". Page 30 pair row: low end $515 is now $513 (285 x 1.8); high end $990 (550 x
+  1.8) was already right.
+- Page 8, zinc row: added "A buyer cannot tell which kind a cage has, so treat all
+  galvanized metal as out" after the electroplated/hot-dipped sentence, matching pages 6
+  and 28.
+- Page 26: "Plain paper, changed daily, no grate in the way if you can manage it." is now
+  "Plain paper, changed daily; a grate is fine if the paper under it is still readable."
+- Page 6, nails: "keep the bird off its water dish for a few hours" is now "keep it out of
+  the bath and away from the water dish for a few hours so the clot is not washed off".
+- Glossary, UC Davis: dropped "and of the point that covering a cage may not give a bird its
+  best rest", which page 7 never says. The Sources page row still lists that point as
+  something the source covers.
+
+**Health entries completed**
+
+- Page 23, Giardia box: added "Treated with an antiparasitic course from the vet; the
+  itching stops once the parasite is cleared."
+- Page 23, Bumblefoot row: added "Treated with perch changes, weight loss and, if the sole
+  is broken, antibiotics and dressings from the vet."
+- Page 20, Hypovitaminosis A: added "Recovery follows the diet change over weeks, and the
+  vet rechecks the bird to confirm it." Calcium deficiency: added "Once the diet is
+  corrected, recovery follows over weeks, and the vet rechecks the bird to confirm it." Kept
+  to that general wording because the book's sources give no recovery timeline.
+
+**Owner tools**
+
+- Page 33, enrichment log: four rows is now seven, which fills the page.
+- Page 37, twelve-month planner: Month column left blank, as in every other package. It
+  reads as a rolling planner started from whatever month the bird arrives.
+
+**Reworded to fit, no content removed**
+
+- Page 7, sleep paragraph: "count the hours of real darkness it gets" is now "count its
+  hours of real darkness".
+- Page 7 settings table: label column 32% is now 25%. Page 8 hazards table: Hazard column
+  24% is now 20%, "What it does" 30% is now 36%.
+
+## Review fixes, 1.3
+
+Applied 2 October 2026. The rule from docs/RULES.md, "The source goes in the block, not the
+sentence": every outside source named in the care text (Merck/MSD, VCA, LafeberVet/Lafeber,
+CDC, CPSC, NHLBI) is rewritten as a plain statement in the book's own words. 32 mentions
+across 29 passages on pages 5 to 34; pages 38 to 41 (glossary, sources, where the sources
+disagree, version history) are untouched apart from four glossary page pointers. Every number,
+instruction and safety point is unchanged. Still 41 pages, nothing cut; minimum free space
+16px (page 40, unchanged). Each source is still credited on page 40.
+
+**Care text, before and after**
+
+- Page 5, cage size (LafeberVet): "Credible sources give different cage figures and both are printed here rather than averaged. LafeberVet gives a minimum of 20 to 24 in (50 to 60 cm) long and wide for a cockatiel. Care references commonly cite 20×20×30 in (51×51×76 cm) as a minimum, and many keepers" is now "A cockatiel cage needs a minimum of 20 to 24 in (50 to 60 cm) of length and width, with 20×20×30 in (51×51×76 cm) the smallest workable box, and many keepers"
+- Page 5, bar spacing (LafeberVet): "LafeberVet gives 0.5 to 0.75 in (1.3 to 1.9 cm) as the range. Care guidance for pet cockatiels is stricter and gives half an inch or smaller, and that is the figure to build to: a cockatiel's head is small enough that the top of the published range is a genuine entrapment risk," is now "Recommended spacing runs from 0.5 to 0.75 in (1.3 to 1.9 cm). Build to the narrow end, half an inch or smaller, because a cockatiel's head is small enough that the top of that range is a genuine entrapment risk,"
+- Page 7, light table (LafeberVet, Merck): "which is 16 hours of dark; LafeberVet gives the same intervention as 8 to 10 hours. An intervention, run under vet advice, not a permanent setting. Merck names a photoperiod over 12 hours as a documented risk factor for excessive laying." is now "which is 16 hours of dark; the intervention runs 8 to 10 hours, and 8 is the end to use. An intervention, run under vet advice, not a permanent setting. A photoperiod over 12 hours is a recognized risk factor for excessive laying."
+- Page 7, dust and lungs (Merck): "Cockatiels are a powder-down species; Merck names them with cockatoos as heavy producers of the keratin dust that films a room." is now "Cockatiels are a powder-down species and, like cockatoos, shed a heavy load of the keratin dust that films a room."
+- Page 7, dust and lungs (NHLBI): "bird fancier's lung: the NHLBI (US National Heart, Lung, and Blood Institute) lists pet birds in the home as a risk factor, usually diagnosed between 50 and 70," is now "bird fancier's lung. Pet birds in the home are a recognized risk factor; it is usually diagnosed between 50 and 70,"
+- Page 8, PTFE (Merck): "and the Merck Veterinary Manual notes that acute death is often the only clinical sign." is now "and often the first and only sign is a dead bird."
+- Page 8, PTFE sources (Merck): "Cookware is not the only source. Merck also lists irons" is now "Cookware is not the only source. The same fumes can come from irons"
+- Page 10, diet target (VCA): "VCA (Veterinary Centers of America), a large US chain of veterinary hospitals, gives the target as 75 to 80% formulated pellets, 20 to 25% fresh vegetables and fruit, and seed as a very small part of the diet rather than the base of it." is now "The target is 75 to 80% formulated pellets, 20 to 25% fresh vegetables and fruit, and seed as a very small share of the diet, never the base of it."
+- Page 10, seed callout (Merck): "and Merck notes that even a half-seed, half-pellet diet leaves a bird vitamin A deficient." is now "and even a diet split evenly between seed and pellets leaves a bird low in vitamin A."
+- Page 10, conversion (VCA): "VCA is blunt that this can take days, weeks or months." is now "Expect this to take days, weeks or months."
+- Page 10, treats (VCA): "VCA describes honey sticks plainly as seeds stuck together with sugar and honey, and similarly nutrient-deficient." is now "Honey sticks are just seed glued together with sugar and honey, with the same nutritional gaps as a seed bowl."
+- Page 15, wing clipping (Merck): "There is no fixed interval to quote: Merck notes molt timing varies with nutrition, daylight and humidity, so check" is now "There is no fixed interval to quote: molt timing shifts with diet, day length and humidity, so check"
+- Page 15, blood feathers (Merck): "Merck's method is four to seven of the outermost primaries" is now "The standard clip takes four to seven of the outermost primaries"
+- Page 16, weight table (Merck): "Merck's working definition of obesity in a bird. Page 20" is now "The working definition of obesity in a bird. Page 20"
+- Page 17, section subhead (VCA): "VCA notes reproductive problems are even more common" is now "Reproductive problems are even more common"
+- Page 17, leave the clutch (LafeberVet): "incubation runs 19 to 21 days, which is this species' own figure from LafeberVet rather than the 21 to 28 days quoted as a general parrot range, so" is now "incubation runs 19 to 21 days, shorter than the 21 to 28 day range for parrots in general, so"
+- Page 18, egg binding opener (VCA): "VCA names cockatiels among the small birds most often affected, and states plainly that small birds can die within a few hours of becoming egg-bound, from compromised circulation and pressure on the airways." is now "Cockatiels are among the small birds it strikes most often, and a small bird that is egg-bound can be dead within a few hours, from compromised circulation and pressure on the airways."
+- Page 18, signs (VCA): "And VCA's marker, which stands on its own before any of the rest appears:" is now "And one marker that counts on its own, before any of the rest appears:"
+- Page 18, first aid warmth (LafeberVet): "and where LafeberVet's 80 to 90°F (27 to 32°C) range for supplemental heat begins." is now "and the bottom of the 80 to 90°F (27 to 32°C) range for supplemental heat."
+- Page 20, hypovitaminosis A (Merck): "and Merck is specific that it is not only all-seed diets that cause it: even a diet of half seed and half pellets leaves a bird deficient." is now "and an all-seed diet is not the only cause: a bowl that is half seed, half pellets still leaves a bird short."
+- Page 20, calcium (Merck): "not through a hypocalcemia syndrome, which Merck highlights in African greys rather than cockatiels, but through" is now "not through a hypocalcemia syndrome, which is an African grey problem rather than a cockatiel one, but through"
+- Page 20, obesity (Merck): "Merck's working figure for obesity is roughly 20% over ideal weight" is now "The working threshold for obesity is roughly 20% over ideal weight"
+- Page 23, Giardia (VCA): "VCA describes infected birds as having loose stools or being intensely itchy, attacking themselves violently, especially under the wings, and that itch" is now "An infected bird shows loose stools or an intense itch, turning on itself violently, mostly under the wings, and that itch"
+- Page 23, blood feather row (VCA): "Do not pull it: VCA does not recommend pulling a blood feather at home, and even in clinic it is a last resort." is now "Do not pull it: pulling is not a home procedure, and even in clinic it is a last resort."
+- Page 25, molt (Merck): "Merck's picture is a full molt at least annually, with many birds also running a smaller partial molt about six months after the main one." is now "Expect a full molt at least once a year, and in many birds a smaller partial molt about six months after the main one."
+- Page 26, polyuria row (VCA): "and VCA notes polyuria is often the first sign of kidney damage from zinc." is now "and polyuria is often the first sign of kidney damage from zinc."
+- Page 26, undigested seed row (Merck): "Always abnormal, and Merck lists whole seed in the droppings as a sign of avian gastric yeast," is now "Always abnormal, and whole seed in the droppings is a sign of avian gastric yeast,"
+- Page 26, gastric yeast box (Merck): "Merck lists it as a sign of avian gastric yeast, Macrorhabdus ornithogaster, and names cockatiels among the species it most affects;" is now "It is a sign of avian gastric yeast, Macrorhabdus ornithogaster, and cockatiels are among the species it hits hardest;"
+- Page 27, quarantine (Merck): "For an aviary or an established group, Merck's figure is 90 days with testing," is now "For an aviary or an established group, make it 90 days with testing,"
+- Page 34, generator (CDC, CPSC): "A generator runs outside and at least 20 feet from any door, window or vent, the figure from the CDC (US Centers for Disease Control and Prevention), and the CPSC (US Consumer Product Safety Commission) rules out running one in or near an enclosed space, so an open garage door does not qualify." is now "A generator runs outside, at least 20 feet from any door, window or vent, and never in or near an enclosed space: an open garage door does not make a garage safe."
+
+Kept on purpose: page 26, "one case series found it more often in cockatiels than
+budgerigars". It names no outside source, so it is outside this pass.
+
+**Glossary pointers repointed to the sources page**
+
+- CDC and CPSC: Page 34 is now Page 40 (page 34 no longer names either).
+- NHLBI: Page 7 is now Page 40.
+- VCA: Page 10 is now Page 40.
+- MSD already pointed at page 40. No definition was shortened. Photoperiod still points at
+  page 7, which still uses the word.
+
+**Version**
+
+- Cover badge and colophon: Version 1.2 is now Version 1.3 (Oct 2026).
+- Version history: added the 1.3 row, "Outside sources named in the care text rewritten as
+  plain statements; every source is still credited on page 40."
+- Rendered to rebuilt/Cockatiel_Care_Package_v1.3.pdf; v1.2 left in place.
+
+## Pointer trim, 1.3
+
+The owner found the book "a maze". Every "page N" pointer was counted by page with a
+script that splits the visible text on the page containers, then trimmed by hand under
+the maze rules (one pointer per destination per page, no pointer to the next or previous
+page the reader is turning to anyway, no ping-pong, nothing points to the glossary,
+glossary entries keep every page that still covers the term). Tool pages (how to use,
+setup checklist, emergency card, first 30 days, symptom quick reference, routine,
+sitter sheet) were left alone.
+
+**Counts**
+
+| | Before | After |
+|---|---|---|
+| Total pointers | 218 | 168 |
+| Repeats on the same page, all pages | 39 | 26 |
+| Repeats outside tool pages and glossary | 11 | 0 |
+| Repeats on tool pages (left alone) | 10 | 10 |
+| Glossary pointers | 46 | 43 |
+| Ping-pong pairs (A to B and B to A) | 17 | 0 |
+| Pointers to the glossary | 0 | 0 |
+
+The 16 glossary repeats left are different terms covered on the same page (for example
+Hepatic lipidosis and Hypovitaminosis A both on page 20, five source bodies on page 40),
+which the glossary rule allows. Tool pages hold 56 pointers and the glossary 43, so 99 of
+the 168 are fixed by the rules; the care, health, profile and legal pages went from 116
+to 69.
+
+**Where most came out**
+
+- Page 4, profile: 12 to 6. Second pointers to pages 5, 7, 10, 16 and 30 cut, and the
+  lifespan row's "page 10 and page 20" dropped.
+- Page 7, light: 5 to 1. "Almost everything on pages 17 and 18 traces back to a
+  photoperiod" is now "Almost all hormone and laying trouble traces back to a
+  photoperiod"; the laying row's Page 17 and the plucking pointer to page 24 cut
+  (pages 17 and 24 keep their pointers to page 7).
+- Page 41: 6 to 2. Version history rows no longer carry page numbers.
+- Page 16: 4 to 1. "anything on pages 17 and 18" is now "anything to do with hormones
+  or eggs"; the obesity row's Page 20 cut (page 20 keeps its pointer to the scale on 16).
+- Pages 19 and 20: 7 to 4 each. Page 19 keeps one pointer to 36 and none to 26
+  ("the daily droppings check"; page 26 keeps its pointer to 19); page 20 drops 21,
+  24 and 18.
+- Page 40: 3 to 0. The sources table no longer points at pages 6, 26 and 7.
+- Also cut: 5 (zinc, page 9), 6 (rope perch to 23, calcium to 18), 10 ("Pages 20 and 18
+  are the consequences."), 11 (onion row to 12), 12 (training on 13), 13 (both
+  plucking rows to 24), 14 (egg problem on 17), 15 (Page 14 builds the real thing),
+  17 (18 and 16), 18 (17), 21 (droppings to 26, irritants to 8), 23 (Giardia to 24),
+  25 (plucking to 24), 26 (page 11 and page 6).
+
+**Ping-pong pairs resolved** (direction kept): 9 to 5, 23 to 6, 6 to 26, 17 to 7,
+24 to 7, 20 to 10, 24 to 13, 17 to 14, 20 to 16, 18 to 20, 26 to 19, 21 to 20,
+24 to 20, 26 to 21, 24 to 23. Pairs 16 and 17, and 17 and 18, are adjacent pages and
+lost both directions.
+
+**Glossary**: every entry's listed pages were checked against the page text. Three
+in-definition pointers named a page that does not cover the term and were dropped:
+CDC "the psittacosis guidance behind page 21" is now "the psittacosis guidance this
+book follows"; UC Davis "the sleep figure on page 7" is now "in this book"; UVB "the diet
+on page 10" is now "the diet in this book". All Page 40 pointers for source bodies, and
+multi-page entries (Chelation 8, 23; CO 8, 34; PCR 22, 27; Vitamin D3 17, 20), stand.
+
+Measured after the trim: all 41 pages clear, minimum 16px free. Rendered to
+rebuilt/Cockatiel_Care_Package_v1.3.pdf; previews and sample rebuilt.

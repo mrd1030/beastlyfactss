@@ -269,6 +269,18 @@ third care sheet.
 - `affiliate: true` always pairs with `<AffiliateDisclosure />` immediately
   after the H1. No product linked twice in the same article.
 
+## Care package card
+
+- `<CarePackageBlock>` goes on exactly two guides per packaged species: the
+  tank setup guide with `variant="setup"` and the health issues guide with
+  `variant="health"`. It is the last thing in the file, after `</Sources>`, so
+  the article itself ends on the animal.
+- One card per article. Never on cost, handling, enrichment, feeding or any
+  other guide, and never on a shared or cross-species article. No lead-in
+  sentence pointing at it: the card speaks for itself.
+- A new package gets its two cards when it ships. The hub sidebar card is
+  automatic and needs nothing.
+
 ## Images
 
 - Everything is 3:2. Article images 1600x1067, guide images 1168x784, mozjpeg

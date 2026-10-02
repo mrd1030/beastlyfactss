@@ -90,4 +90,5 @@ export const JURISDICTIONS_BY_RESTRICTION = Object.values(BY_CODE)
 // It was wrong for the only thing it was used for: 36 of the 52 jurisdictions
 // carry several distinct verifiedOn values about a month apart, so the newest
 // of them presented as "last verified" overstates the older rows. Use
-// describeVerified() in src/lib/utils/verifiedDates.js, which reports the span.
+// describeVerified() in src/lib/utils/verifiedDates.js, which leads with the
+// date most rows share and names or counts the rows that differ.

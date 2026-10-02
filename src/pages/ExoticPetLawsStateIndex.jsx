@@ -10,7 +10,7 @@ import {
   TRACKED_ANIMAL_COUNT,
 } from '@/lib/data/legalByState';
 import { JURISDICTIONS_AZ, CODE_TO_SLUG } from '@/lib/data/stateSlugs';
-import { describeVerified } from '@/lib/utils/verifiedDates';
+import { aggregateVerified, describeVerified } from '@/lib/utils/verifiedDates';
 import LegalDisclaimer from '@/components/mdx/LegalDisclaimer';
 import CitationBox from '@/components/legal/CitationBox';
 import { withBrand } from '@/lib/utils/seo';
@@ -58,11 +58,17 @@ export default function ExoticPetLawsStateIndex() {
   const mostRestrictive = JURISDICTIONS_BY_RESTRICTION.slice(0, 10);
 
   // Across the whole matrix here, since this page summarises all of it. The
-  // ranking is the most quotable thing on the site, so the span it rests on has
-  // to travel with it.
+  // ranking is the most quotable thing on the site, so the dates it rests on
+  // have to travel with it. Labelled by jurisdiction, so stragglers that all
+  // sit in one state are named rather than counted.
   const verified = describeVerified(
-    Object.values(STATE_LEGAL).flatMap((j) => j.rows.map((r) => r.entry?.verifiedOn)),
-  );
+    aggregateVerified(
+      Object.values(STATE_LEGAL).flatMap((j) =>
+        j.rows.map((r) => ({ date: r.entry?.verifiedOn, label: j.name })),
+      ),
+    ),
+    { unit: 'entries' },
+  )?.citation;
 
   return (
     <div className="min-h-screen bg-background">

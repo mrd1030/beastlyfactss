@@ -151,7 +151,7 @@
     "path": "/content/guides/ackie-monitor-cost-guide.mdx",
     "slug": "ackie-monitor-cost-guide",
     "title": "How Much Does an Ackie Monitor Really Cost?",
-    "seoTitle": "Ackie Monitor Price: $150 to $450, Plus $800 to $1,500 Setup",
+    "seoTitle": "Ackie Monitor Price: $150 to $450, Plus $850 to $2,150 Setup",
     "seoDescription": null,
     "lastUpdated": "2026-09-24",
     "noIndex": false,
@@ -184,7 +184,7 @@
       },
       {
         "q": "What does the upfront setup cost?",
-        "a": "$800 to $1,500 or more. The enclosure, deep substrate for burrowing, UVB, several high-wattage basking bulbs, a thermostat and Retes stack, hides, and monitoring gear add up fast. The total lands well past a bearded dragon or leopard gecko setup."
+        "a": "$850 to $2,150 or more. The enclosure, deep substrate for burrowing, UVB, several high-wattage basking bulbs, a thermostat and Retes stack, hides, and monitoring gear add up fast. The total lands well past a bearded dragon or leopard gecko setup."
       },
       {
         "q": "What are the ongoing monthly costs?",
@@ -627,9 +627,9 @@
     "path": "/content/guides/african-fat-tail-cost-guide.mdx",
     "slug": "african-fat-tail-cost-guide",
     "title": "How Much Does an African Fat-Tailed Gecko Really Cost?",
-    "seoTitle": "Fat-Tailed Gecko Price: $75 to $600, Plus $200 to $500 Setup",
+    "seoTitle": "Fat-Tailed Gecko Price: $75 to $600, Plus $325 to $580 Setup",
     "seoDescription": null,
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "African fat-tailed geckos cost more upfront than most beginner geckos, and morphs push that number considerably higher, but the ongoing bills stay modest.",
     "date": "2026-07-26",
@@ -660,7 +660,7 @@
       },
       {
         "q": "What does a full setup cost before the gecko?",
-        "a": "Roughly $200 to $500 with the optional UVB. That covers a 20-gallon long enclosure (40-gallon breeder is a better choice), an under-tank heat mat and thermostat, optional low-output UVB, substrate, three hides, a thermometer/hygrometer, and a water dish."
+        "a": "Roughly $325 to $500 without UVB, $370 to $580 with the optional low-output UVB. That covers a 36x18x18 inch enclosure, an under-tank heat mat and thermostat, substrate, three hides, a thermometer/hygrometer, and a water dish."
       },
       {
         "q": "What are the ongoing monthly costs?",
@@ -672,7 +672,7 @@
       }
     ],
     "relatedProducts": [
-      "tank-20-gallon-long",
+      "enclosure-repti-zoo-36x18x18-50gal",
       "dimming-thermostat-reptizoo-pid",
       "hide-exo-terra-gecko-cave-medium",
       "calcium-repashy-plus-6oz"
@@ -766,7 +766,7 @@
     "title": "African Fat-Tailed Gecko Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do African Fat-Tailed Geckos Eat? Diet and Schedule",
     "seoDescription": "African fat-tailed gecko feeding: a fat-storing tail lets adults fast for weeks to months. Schedule by age, phosphorus-free calcium, and what never to feed.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "The tail is a fat reserve, which is why healthy adults can go months without eating and be completely fine. Here's how to tell that from real trouble.",
     "date": "2026-07-31",
@@ -898,7 +898,7 @@
     "title": "Common African Fat-Tailed Gecko Health Issues",
     "seoTitle": "African Fat-Tailed Gecko Health Issues: Signs & Causes",
     "seoDescription": "African fat-tailed gecko health: metabolic bone disease is the most serious risk from missed calcium, D3, or UVB. Retained shed is the most common complaint.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Fat-tailed geckos are hardy when their two biggest needs, heat and humidity, are met. Nearly every common issue traces back to one of those two things.",
     "date": "2026-07-26",
@@ -967,8 +967,8 @@
     "slug": "african-fat-tail-tank-setup-guide",
     "title": "African Fat-Tailed Gecko Enclosure Setup: Built for the Ground, Not the Branches",
     "seoTitle": "African Fat-Tailed Gecko Enclosure Setup Guide",
-    "seoDescription": "African fat-tailed gecko setup: a 20-gallon tank minimum, warm side at 88-92F on a thermostat, a humid hide at 70-80%, and 4+ inches of burrowing substrate.",
-    "lastUpdated": "2026-09-24",
+    "seoDescription": "African fat-tailed gecko setup: a 36x18-inch floor minimum, warm side at 88-92F on a thermostat, a humid hide at 70-80%, and 4+ inches of burrowing substrate.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Unlike most of the geckos commonly kept as pets, fat-tailed geckos are ground-dwellers and burrowers, not climbers, and the whole setup should reflect that.",
     "date": "2026-07-26",
@@ -995,7 +995,7 @@
     "faqs": [
       {
         "q": "What size enclosure does an African fat-tailed gecko need?",
-        "a": "A 20-gallon long is the minimum for one adult, and a 36x18x16 inch (40-gallon breeder) is meaningfully better. Height buys little here: this is a terrestrial species, on the ground and under it."
+        "a": "36x18x18 inches is the current minimum for one adult, past the old 20-gallon-long floor that many care sheets still print. A 36x18x16 inch 40-gallon breeder gives the same floor. Height buys little here: this is a terrestrial species, on the ground and under it."
       },
       {
         "q": "Does an African fat-tailed gecko need a heat mat or a heat lamp?",
@@ -1015,7 +1015,8 @@
       }
     ],
     "relatedProducts": [
-      "tank-20-gallon-long",
+      "enclosure-repti-zoo-36x18x18-50gal",
+      "tank-aqueon-40-breeder",
       "dimming-thermostat-reptizoo-pid",
       "hide-exo-terra-gecko-cave-medium",
       "sphagnum-moss",
@@ -1029,7 +1030,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -1650,8 +1651,8 @@
     "path": "/content/guides/amano-shrimp-cost-guide.mdx",
     "slug": "amano-shrimp-cost-guide",
     "title": "How Much Does Amano Shrimp Ownership Really Cost?",
-    "seoTitle": "Amano Shrimp Price: $5 to $12, Plus $60 to $150 Setup",
-    "seoDescription": "Amano shrimp cost breakdown: $5-12 per shrimp, a $60-150 starter setup, and why wild-caught sourcing keeps prices above cherry shrimp.",
+    "seoTitle": "Amano Shrimp Price: $5 to $12, Plus $45 to $170 Setup",
+    "seoDescription": "Amano shrimp cost breakdown: $5-12 per shrimp, a $45-170 starter setup, and why wild-caught sourcing keeps prices above cherry shrimp.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Amano shrimp cost more than a basic cherry shrimp, and selective breeding has almost nothing to do with why. Almost every one sold is wild-caught, because this species can't complete its life cycle in freshwater.",
@@ -1683,11 +1684,11 @@
       },
       {
         "q": "What does a basic amano shrimp tank setup cost?",
-        "a": "Roughly $60 to $150 for the core equipment: a 10-gallon tank ($18-30), a heater ($18-30), a sponge filter ($8-15), and driftwood or plants for grazing surface ($15-30). Add substrate and basic decor and most first setups land in that range before the shrimp themselves."
+        "a": "Roughly $45 to $170 for the core equipment: a 10-gallon tank ($15-40), a heater ($15-35), a sponge filter ($5-15), and driftwood or plants for grazing surface ($10-35). Add substrate and basic decor and most first setups land in that range before the shrimp themselves."
       },
       {
         "q": "What are the ongoing costs of keeping amano shrimp?",
-        "a": "Low. Sinking algae wafers run roughly $8 to $12 a year for a small group, water conditioner $9 to $15 a year, and a water test kit is a $25 to $40 purchase worth having given how much this species' molting depends on stable mineral content, not just clean water."
+        "a": "Low. Sinking algae wafers run roughly $5 to $10 a year for a small group, water conditioner $5 to $15 a year, and a water test kit is a $15 to $40 purchase worth having given how much this species' molting depends on stable mineral content, not just clean water."
       },
       {
         "q": "Why do amano shrimp cost more than cherry shrimp?",
@@ -2204,7 +2205,7 @@
     "path": "/content/guides/angelfish-cost-guide.mdx",
     "slug": "angelfish-cost-guide",
     "title": "How Much Does Angelfish Ownership Really Cost?",
-    "seoTitle": "Angelfish Price: $3 to $50, Plus $300 to $600 Setup",
+    "seoTitle": "Angelfish Price: $3 to $50, Plus $410 to $640 Setup",
     "seoDescription": null,
     "lastUpdated": "2026-09-25",
     "noIndex": false,
@@ -2237,7 +2238,7 @@
       },
       {
         "q": "What does a proper angelfish tank setup cost?",
-        "a": "Roughly $300 to $600 for the tank and stand, filtration, a heater, LED lighting, and substrate, driftwood, and broadleaf plants. A 55-gallon tank suits a small group, while a single fish can work in a 29-gallon tall tank, height matters more than length for this species."
+        "a": "Roughly $410 to $640 for the tank and stand, filtration, a heater, LED lighting, and substrate, driftwood, and broadleaf plants. A 55-gallon tank suits a small group, while a single fish can work in a 29-gallon tall tank, height matters more than length for this species."
       },
       {
         "q": "What are the ongoing monthly costs for an angelfish?",
@@ -6718,7 +6719,7 @@
     "title": "Bird Emergency Plan: Power Outages, Travel, and Transport",
     "seoTitle": "Bird Emergency Plan: Outages, Travel, Transport",
     "seoDescription": "A pet bird emergency plan for power outages, travel and transport. Why birds keep eating through an outage, the real combustion risk, and a sitter sheet.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-01",
     "noIndex": false,
     "excerpt": "For a reptile, a power outage means stop feeding and find heat. For a bird, it is almost the opposite, and the real danger isn't the cold, it's what people burn trying to fix it.",
     "date": "2026-09-04",
@@ -6767,7 +6768,7 @@
       },
       {
         "q": "What temperature should I keep a stressed or unwell bird at during an emergency?",
-        "a": "The ideal recovery range for a sick bird is 75 to 80 degrees Fahrenheit (22 to 25 degrees Celsius), achieved by covering the cage and moving it to the warmest interior room rather than by adding an open flame or unvented heater."
+        "a": "The ideal recovery range for a sick bird is 75 to 80 degrees Fahrenheit (24 to 27 degrees Celsius), achieved by covering the cage and moving it to the warmest interior room rather than by adding an open flame or unvented heater."
       }
     ],
     "relatedProducts": [],
@@ -8523,7 +8524,7 @@
     "slug": "box-turtle-cost-guide",
     "title": "How Much Does a Box Turtle Really Cost? (And a Legal Note on Where They Come From)",
     "seoTitle": "How Much Is a Box Turtle? Price, Setup and Legal Notes",
-    "seoDescription": "Box turtle costs: a $345-453 setup where lighting and heating dominate, $60-135 routine vet exams, and a 60-plus year lifespan to plan a budget around.",
+    "seoDescription": "Box turtle costs: a $325-489 setup where lighting and heating dominate, $60-135 routine vet exams, and a 60-plus year lifespan to plan a budget around.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Box turtles come with an important sourcing consideration that affects both cost and legality, worth understanding before anything else, on top of a lighting and heating setup that dominates the upfront budget.",
@@ -8559,7 +8560,7 @@
       },
       {
         "q": "What does the upfront setup cost?",
-        "a": "Roughly $345 to $453 for a large enclosure, T5 HO UVB fixture and bulb, basking bulb and dome, deep substrate, and a water dish. The lighting and heating equipment dominates this budget, and neither piece is optional for this species."
+        "a": "Roughly $325 to $489 for a large enclosure, T5 HO UVB fixture and bulb, basking bulb and dome, deep substrate, and a water dish. The lighting and heating equipment dominates this budget, and neither piece is optional for this species."
       },
       {
         "q": "What are the ongoing costs like?",
@@ -8870,7 +8871,7 @@
     "title": "Is It Legal to Own a Box Turtle? State-by-State Guide",
     "seoTitle": "Is a Box Turtle Legal in Your State? Full Guide",
     "seoDescription": "Box turtle laws vary by state: wild collection is banned in several states, and Florida caps ownership at 2 per person even for captive-bred turtles.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-10-01",
     "noIndex": false,
     "excerpt": "Taking a box turtle from the wild is restricted in most states, but even a legally acquired, captive-bred one isn't automatically unrestricted. Florida caps possession at two per person, and a handful of states attach real conditions.",
     "date": "2026-07-23",
@@ -8890,7 +8891,7 @@
     "image": "/assets/guides/box-turtle-legal.jpg",
     "imageAlt": "Eastern box turtle on a forest floor",
     "emoji": "🐢",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -9064,7 +9065,7 @@
     "path": "/content/guides/bristlenose-pleco-cost-guide.mdx",
     "slug": "bristlenose-pleco-cost-guide",
     "title": "How Much Does Bristlenose Pleco Ownership Really Cost?",
-    "seoTitle": "Bristlenose Pleco Price: $7 to $25, Plus $155 to $265 Setup",
+    "seoTitle": "Bristlenose Pleco Price: $7 to $25, Plus $150 to $310 Setup",
     "seoDescription": "Bristlenose pleco cost breakdown: the fish, a proper 20-30 gallon setup with required driftwood, annual costs, and why species ID matters here.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
@@ -9097,11 +9098,11 @@
       },
       {
         "q": "What does a basic bristlenose pleco tank setup cost?",
-        "a": "Roughly $155 to $265 upfront, covering a 20 to 30 gallon tank, a filter sized above the tank's minimum rating, a heater, driftwood, caves for daytime hiding, and a water test kit. Driftwood is a genuine line item here, not an optional decor upgrade."
+        "a": "Roughly $150 to $310 upfront, covering a 20 to 30 gallon tank, a filter sized above the tank's minimum rating, a heater, driftwood, caves for daytime hiding, and a water test kit. Driftwood is a genuine line item here, not an optional decor upgrade."
       },
       {
         "q": "What are the ongoing costs of keeping a bristlenose pleco?",
-        "a": "Roughly $45 to $85 a year: sinking algae wafers and fresh vegetables, plus water conditioner and occasional test kit refills. Driftwood doesn't need frequent replacing, but budget for an occasional new piece, $15 to $30, every year or two as an older piece gets fully grazed down."
+        "a": "Roughly $45 to $85 a year: sinking algae wafers and fresh vegetables, plus water conditioner and occasional test kit refills. Driftwood doesn't need frequent replacing, but budget for an occasional new piece, $10 to $35, every year or two as an older piece gets fully grazed down."
       },
       {
         "q": "Do bristlenose plecos need regular vet visits?",
@@ -10547,8 +10548,8 @@
     "path": "/content/guides/canary-cost-guide.mdx",
     "slug": "canary-cost-guide",
     "title": "How Much Does a Canary Really Cost?",
-    "seoTitle": "Canary Price: $25 to $500, Plus $150 to $275 Setup",
-    "seoDescription": "Canary costs: $25 to $500 for the bird, males 20 to 50% more since only they sing, $150 to $275 setup, $10 to $30 a month, over a 6 to 12 year lifespan.",
+    "seoTitle": "Canary Price: $25 to $500, Plus $195 to $345 Setup",
+    "seoDescription": "Canary costs: $25 to $500 for the bird, males 20 to 50% more since only they sing, $195 to $345 setup, $10 to $30 a month, over a 6 to 12 year lifespan.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Canaries are one of the more affordable pet birds to buy, but the cost scales up meaningfully once you get into specialized song and show breeds, and the cost decision here isn't about money at all.",
@@ -10580,7 +10581,7 @@
       },
       {
         "q": "What does a full canary setup cost upfront?",
-        "a": "Roughly $150 to $275, covering a wide flight cage, natural wood perches of varied diameter, a cuttlebone and basic supplements, and a shallow bird bath. A quality flight cage alone runs $120 to $220."
+        "a": "Roughly $195 to $345, covering a wide flight cage, natural wood perches of varied diameter, a cuttlebone and basic supplements, and a shallow bird bath. A quality flight cage alone runs $175 to $300."
       },
       {
         "q": "What are the ongoing monthly costs for a canary?",
@@ -11021,8 +11022,8 @@
     "path": "/content/guides/cardinal-tetra-cost-guide.mdx",
     "slug": "cardinal-tetra-cost-guide",
     "title": "How Much Does Cardinal Tetra Ownership Really Cost?",
-    "seoTitle": "Cardinal Tetra Price: About $3 Each, Plus $65 to $230 Setup",
-    "seoDescription": "Cardinal tetra cost breakdown: about $3 per fish, a $100-250 starter setup, and why the school runs 8-10 rather than 6.",
+    "seoTitle": "Cardinal Tetra Price: About $3 Each, Plus $70 to $260 Setup",
+    "seoDescription": "Cardinal tetra cost breakdown: about $3 per fish, a $105-280 starter setup, and why the school runs 8-10 rather than 6.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Cardinal tetras cost about the same as their neon tetra cousins, but they're typically kept in a slightly bigger school, and a real Amazon fishery of wild-caught fish sits behind part of the price.",
@@ -11054,11 +11055,11 @@
       },
       {
         "q": "What does a basic cardinal tetra tank setup cost?",
-        "a": "Roughly $65 to $230 for the core equipment, a 10 to 20 gallon tank ($20-150), a heater ($18-30), a gentle filter ($8-15), and live plants ($18-35). Add substrate and basic decor and most first-time setups land around $100 to $250."
+        "a": "Roughly $70 to $260 for the core equipment, a 10 to 20 gallon tank ($20-150), a heater ($15-35), a gentle filter ($5-15), and live plants ($30-60). Add substrate and basic decor and most first-time setups land around $105 to $280."
       },
       {
         "q": "What are the ongoing costs of keeping cardinal tetras?",
-        "a": "Low. A micro-pellet food runs roughly $15 to $30 a year, water conditioner $10 to $15 a year, and a water test kit is a $25 to $40 purchase you'll rely on more than once given how sensitive this species is to an incomplete nitrogen cycle."
+        "a": "Low. A micro-pellet food runs roughly $15 to $30 a year, water conditioner $10 to $15 a year, and a water test kit is a $15 to $40 purchase you'll rely on more than once given how sensitive this species is to an incomplete nitrogen cycle."
       },
       {
         "q": "Why do cardinal tetras sometimes cost slightly more than neon tetras?",
@@ -11964,8 +11965,8 @@
     "path": "/content/guides/cherry-shrimp-cost-guide.mdx",
     "slug": "cherry-shrimp-cost-guide",
     "title": "How Much Does Cherry Shrimp Ownership Really Cost?",
-    "seoTitle": "Cherry Shrimp Price: $4 to $8 Each, Plus $45 to $110 Setup",
-    "seoDescription": "Cherry shrimp cost breakdown: roughly $4-8 per shrimp by grade, a $45-110 starter setup, and why a colony multiplies for free.",
+    "seoTitle": "Cherry Shrimp Price: $4 to $8 Each, Plus $50 to $150 Setup",
+    "seoDescription": "Cherry shrimp cost breakdown: roughly $4-8 per shrimp by grade, a $50-150 starter setup, and why a colony multiplies for free.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Cherry shrimp are cheap to buy, but the cost story isn't the shrimp, it's how fast a starting group turns into a colony you never budgeted for.",
@@ -11997,11 +11998,11 @@
       },
       {
         "q": "What does a basic cherry shrimp tank setup cost?",
-        "a": "Roughly $45 to $110 for the core equipment: a 5 to 10-gallon tank ($18-30), a sponge filter ($8-15), live plants or moss ($18-35), and a heater if your room runs cool ($18-30, often skippable). Add a water conditioner and test kit and most first setups land in the $80 to $150 range."
+        "a": "Roughly $50 to $150 for the core equipment: a 5 to 10-gallon tank ($15-40), a sponge filter ($5-15), live plants or moss ($30-60), and a heater if your room runs cool ($15-35, often skippable). Add a water conditioner and test kit and most first setups land in the $85 to $190 range."
       },
       {
         "q": "What are the ongoing costs of keeping cherry shrimp?",
-        "a": "Low. A container of sinking wafer food runs $8 to $12 and lasts a small colony most of a year, water conditioner is $9 to $15 a year, and a mineral or GH-boosting supplement to support healthy molting adds a few dollars every few months. A water test kit ($25-40) is a one-time purchase you'll keep reaching for."
+        "a": "Low. A container of sinking wafer food runs $5 to $10 and lasts a small colony most of a year, water conditioner is $5 to $15 a year, and a mineral or GH-boosting supplement to support healthy molting adds a few dollars every few months. A water test kit ($15-40) is a one-time purchase you'll keep reaching for."
       },
       {
         "q": "Why do cherry shrimp color grades vary so much in price?",
@@ -13060,7 +13061,7 @@
     "title": "How Much Does a Cockatiel Really Cost?",
     "seoTitle": "Cockatiel Price: $75 to $250, Plus $320 to $860 Setup",
     "seoDescription": "Cockatiel costs: $75-250 for the bird, $320-860 for a full setup, and $200-350 a year after that, plus avian vet care over a 12-15 year lifespan.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-01",
     "noIndex": false,
     "excerpt": "Cockatiels are relatively affordable to buy, but the budgeting story here is how long you'll be caring for one. A 12 to 15 year lifespan means this is a long-term financial commitment even though the entry cost is modest.",
     "date": "2026-07-15",
@@ -13095,7 +13096,7 @@
       },
       {
         "q": "What are the ongoing monthly costs for a cockatiel?",
-        "a": "Food and supplies run about $24 to $63 a month for a pellet-based diet with fresh food, adding up to roughly $200 to $350 a year once toy replacement and cage upkeep are factored in."
+        "a": "Food, toys and cage upkeep for a pellet-based diet with fresh food come to roughly $200 to $350 a year, which works out to about $17 to $29 a month."
       },
       {
         "q": "Why does a cockatiel's cost add up more over time than the purchase price suggests?",
@@ -13528,9 +13529,9 @@
     "path": "/content/guides/cockatoo-cost-guide.mdx",
     "slug": "cockatoo-cost-guide",
     "title": "How Much Does a Cockatoo Really Cost?",
-    "seoTitle": "Cockatoo Price: $700 to $3,000, Plus $880 to $1,800 Setup",
-    "seoDescription": "Cockatoo costs: $700-3,000 for common species, up to $16,000 for a palm cockatoo, plus $880-1,800 setup and a 25 to 45 year lifespan, 70-plus in large species.",
-    "lastUpdated": "2026-09-25",
+    "seoTitle": "Cockatoo Price: $700 to $3,000, Plus $900 to $2,500 Setup",
+    "seoDescription": "Cockatoo costs: $700-3,000 for common species, up to $16,000 for a palm cockatoo, plus $900-2,500 setup and a 25 to 45 year lifespan, 70+ in large species.",
+    "lastUpdated": "2026-10-01",
     "noIndex": false,
     "excerpt": "Cockatoos are a serious financial and emotional commitment, and the purchase price is just the smallest part of a decision that plays out over decades.",
     "date": "2026-07-26",
@@ -13565,7 +13566,7 @@
       },
       {
         "q": "What does a cockatoo's upfront setup cost?",
-        "a": "Roughly $880 to $1,800, covering a large cage ($820 to $880 for heavy-gauge powder-coated steel, $1,450 to $1,550 for stainless), perches, bowls, and an initial set of toys ($20 to $200), and a destructible foraging set ($42 to $49). A play gym and an air purifier come on top of that."
+        "a": "Roughly $900 to $2,500, covering a large cage ($850 to $1,300 for heavy-gauge powder-coated steel, $1,350 to $2,200 for stainless), perches, bowls, and an initial set of toys ($20 to $200), and a destructible foraging set ($25 to $90). A play gym and an air purifier come on top of that."
       },
       {
         "q": "What are the ongoing monthly costs of owning a cockatoo?",
@@ -13603,7 +13604,7 @@
     "title": "Cockatoo Enrichment: What the Research Actually Supports",
     "seoTitle": "Cockatoo Enrichment Guide",
     "seoDescription": "What parrot feather-plucking research supports for cockatoo enrichment: foraging, environmental complexity and training, and where the evidence stops.",
-    "lastUpdated": "2026-09-08",
+    "lastUpdated": "2026-10-01",
     "noIndex": false,
     "excerpt": "Feather damaging behavior is multifactorial, and the research on it is thinner than the confident claims suggest. What is supported: foraging enrichment, environmental complexity, and reinforcement-based training.",
     "date": "2026-09-04",
@@ -13650,7 +13651,7 @@
       },
       {
         "q": "How long do they live?",
-        "a": "Decades, commonly into the 40s and 50s and sometimes beyond 60 for larger species. That is a bird that may outlive you, and it is a genuine reason to think about who takes it on afterwards."
+        "a": "Decades: 25 to 45 years is typical, and the larger species can reach 70 to 80 or more. That is a bird that may outlive you, and it is a genuine reason to think about who takes it on afterwards."
       }
     ],
     "relatedProducts": [
@@ -13875,8 +13876,8 @@
     "slug": "cockatoo-legal-guide",
     "title": "Is It Legal to Own a Cockatoo? State-by-State Guide",
     "seoTitle": "Is a Cockatoo Legal in Your State? Full Guide",
-    "seoDescription": "Cockatoos are legal in nearly every US state, but Maine requires a permit for the Moluccan, yellow-crested, and umbrella cockatoo under its CITES carve-out.",
-    "lastUpdated": "2026-09-11",
+    "seoDescription": "Cockatoos are legal in nearly every US state, but Maine requires a permit for the Moluccan, Goffin's, yellow-crested and umbrella under its CITES carve-out.",
+    "lastUpdated": "2026-10-01",
     "noIndex": false,
     "excerpt": "Most cockatoos are legal to own across the US, but 'is a cockatoo legal in Maine' doesn't have one answer, it depends on the species. Maine clears the whole parrot order except anything on CITES Appendix I or the IUCN's most endangered tiers, and that carve-out catches several of the most commonly kept pet cockatoos by name.",
     "date": "2026-08-29",
@@ -13919,7 +13920,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 2400,
@@ -15129,7 +15130,7 @@
     "title": "Corn Snake vs. Hognose Snake: Which Beginner-Friendly Snake Fits You",
     "seoTitle": "Corn Snake vs. Hognose Snake: Beginner Snake Guide",
     "seoDescription": null,
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Corn snake or hognose snake? The differences in size, feeding, and that famous hognose 'death drop', not just which one is trending on social media.",
     "date": "2026-08-26",
@@ -15158,7 +15159,7 @@
     "faqs": [
       {
         "q": "Are hognose snakes venomous, and is that dangerous to keep as a pet?",
-        "a": "Technically yes, but not in any way that matters for a pet owner. Hognoses have small rear fangs and a mild venom evolved to subdue toads, their main prey in the wild. It's not considered medically significant to humans, and captive-bred hognoses very rarely bite at all. The one documented bite case in the literature stayed local: swelling, bruising and mild cellulitis, with no systemic effects."
+        "a": "Technically yes, but not in any way that matters for a pet owner. Hognoses have small rear fangs and a mild venom evolved to subdue toads, their main prey in the wild. Captive-bred hognoses very rarely bite, and the documented bites stay local. A quick bite often does nothing, while a snake that holds on can cause swelling, bruising and mild cellulitis, with no systemic effects."
       },
       {
         "q": "Which is easier to feed, a corn snake or a hognose snake?",
@@ -15166,7 +15167,7 @@
       },
       {
         "q": "Which snake stays smaller, corn snake or hognose?",
-        "a": "Hognose snakes, noticeably. Adult hognoses typically reach 2 to 3.5 feet, while adult corn snakes commonly reach 3.5 to 5 feet. That size difference also means a hognose can be housed comfortably in a smaller adult enclosure, especially adult males, which stay on the smaller end of that range."
+        "a": "Hognose snakes, noticeably. Adult western hognoses run 14 to 37 inches, about 1 to 3 feet, while adult corn snakes commonly reach 3.5 to 5 feet. That size difference also means a hognose can be housed comfortably in a smaller adult enclosure, especially adult males, which stay on the smaller end of that range."
       },
       {
         "q": "Why does my hognose snake play dead?",
@@ -15200,8 +15201,8 @@
     "path": "/content/guides/corydoras-catfish-cost-guide.mdx",
     "slug": "corydoras-catfish-cost-guide",
     "title": "How Much Does Corydoras Catfish Ownership Really Cost?",
-    "seoTitle": "Corydoras Catfish Price: $3 to $30, Plus $150 to $215 Setup",
-    "seoDescription": "Corydoras catfish cost $3-30 each, but budget for a school of six: $150-215 upfront setup plus $10-20 a month in food and supplies.",
+    "seoTitle": "Corydoras Catfish Price: $3 to $30, Plus $140 to $250 Setup",
+    "seoDescription": "Corydoras catfish cost $3-30 each, but budget for a school of six: $140-250 upfront setup plus $10-20 a month in food and supplies.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Corydoras catfish are inexpensive on their own, but the budgeting consideration isn't the individual fish, it's that you need to buy a whole school, not one or two.",
@@ -15233,7 +15234,7 @@
       },
       {
         "q": "What does a basic corydoras catfish tank setup cost?",
-        "a": "Roughly $150 to $215 upfront, covering a 20-gallon long tank, a filter and heater, soft sand substrate, plants, hides, a water conditioner, and a test kit. The substrate line item matters more for this species than it does for most community fish."
+        "a": "Roughly $140 to $250 upfront, covering a 20-gallon long tank, a filter and heater, soft sand substrate, plants, hides, a water conditioner, and a test kit. The substrate line item matters more for this species than it does for most community fish."
       },
       {
         "q": "What are the ongoing costs of keeping corydoras catfish?",
@@ -16295,8 +16296,8 @@
     "path": "/content/guides/degu-cost-guide.mdx",
     "slug": "degu-cost-guide",
     "title": "How Much Does Degu Ownership Really Cost?",
-    "seoTitle": "Degu Price: $10 to $50, Plus $375 to $520 Setup",
-    "seoDescription": "Degus cost $10-50 each, but budget for a pair: $375-520 for the setup, plus vet costs for dental work and diabetes, common in a species that lives 5-9 years.",
+    "seoTitle": "Degu Price: $10 to $50, Plus $395 to $525 Setup",
+    "seoDescription": "Degus cost $10-50 each, but budget for a pair: $395-525 for the setup, plus vet costs for dental work and diabetes, common in a species that lives 5-9 years.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Degus are affordable individually, and the budgeting point with this species is that 'individually' isn't how you should be thinking about the purchase at all.",
@@ -16328,7 +16329,7 @@
       },
       {
         "q": "What does a full degu setup cost upfront?",
-        "a": "Roughly $375 to $520 of equipment to house a pair properly, before the animals. Most of that is the large multi-level cage, with a solid exercise wheel, bedding, hides, and a dust bath setup behind it."
+        "a": "Roughly $395 to $525 of equipment to house a pair properly, before the animals. Most of that is the large multi-level cage, with a solid exercise wheel, bedding, hides, and a dust bath setup behind it."
       },
       {
         "q": "What are the ongoing monthly costs for a pair of degus?",
@@ -16896,8 +16897,8 @@
     "path": "/content/guides/discus-cost-guide.mdx",
     "slug": "discus-cost-guide",
     "title": "How Much Does Discus Ownership Really Cost?",
-    "seoTitle": "Discus Fish Price: $20 to $450, Plus $600 to $800 Setup",
-    "seoDescription": "Discus fish cost guide: fish price ($20-450+), full tank setup ($600-800+), monthly costs, vet care, and lifespan, all from verified sources.",
+    "seoTitle": "Discus Fish Price: $20 to $450, Plus $335 to $675 Setup",
+    "seoDescription": "Discus fish cost guide: fish price ($20-450+), full tank setup ($335-675+), monthly costs, vet care, and lifespan, all from verified sources.",
     "lastUpdated": "2026-09-24",
     "noIndex": false,
     "excerpt": "Discus are one of the pricier community fish you can keep, and the cost isn't the fish itself, it's the filtration and water-change routine this species demands.",
@@ -16929,7 +16930,7 @@
       },
       {
         "q": "What does a proper discus tank setup cost?",
-        "a": "Roughly $600 to $800 for a real 55-gallon setup, tank, strong filtration, heater, substrate, driftwood, and plants, and more once you add an RO/DI unit for hard tap water or step up to a 75-gallon-plus tank."
+        "a": "Roughly $335 to $675 for a real 55-gallon setup, tank, strong filtration, heater, substrate, driftwood, and plants, and more once you add an RO/DI unit for hard tap water or step up to a 75-gallon-plus tank."
       },
       {
         "q": "What are the ongoing monthly costs for a discus?",
@@ -18868,8 +18869,8 @@
     "path": "/content/guides/fire-bellied-toad-cost-guide.mdx",
     "slug": "fire-bellied-toad-cost-guide",
     "title": "How Much Does a Fire-Bellied Toad Really Cost?",
-    "seoTitle": "Fire-Bellied Toad Price: $10 to $25, Plus $45 to $75 Setup",
-    "seoDescription": "Fire-bellied toads cost $10 to $25, the core setup $45 to $75 before plants and hides, and upkeep $15 to $30 a month, for a toad that lives 10 to 15 years.",
+    "seoTitle": "Fire-Bellied Toad Price: $10 to $25, Plus $35 to $90 Setup",
+    "seoDescription": "Fire-bellied toads cost $10 to $25, the core setup $35 to $90 before plants and hides, and upkeep $15 to $30 a month, for a toad that lives 10 to 15 years.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Fire-bellied toads are inexpensive, and the setup cost here goes toward something a bit different than most amphibians need, real aquatic filtration, not just humidity control.",
@@ -18901,7 +18902,7 @@
       },
       {
         "q": "What does a full fire-bellied toad setup cost upfront?",
-        "a": "Roughly $45 to $75 for a 10 to 20 gallon tank set up as a semi-aquatic paludarium, a small aquarium filter for the water section, water conditioner, and substrate for the land portion. Plants, hides, a screen lid, and a thermometer come on top, and their cost depends on how the paludarium is built."
+        "a": "Roughly $35 to $90 for a 10 to 20 gallon tank set up as a semi-aquatic paludarium, a small aquarium filter for the water section, water conditioner, and substrate for the land portion. Plants, hides, a screen lid, and a thermometer come on top, and their cost depends on how the paludarium is built."
       },
       {
         "q": "What are the ongoing monthly costs for a fire-bellied toad?",
@@ -20594,9 +20595,9 @@
     "path": "/content/guides/gargoyle-gecko-cost-guide.mdx",
     "slug": "gargoyle-gecko-cost-guide",
     "title": "How Much Does a Gargoyle Gecko Really Cost?",
-    "seoTitle": "Gargoyle Gecko Price: $50 to $1,000, Plus $230 to $445 Setup",
-    "seoDescription": "Gargoyle geckos cost $50 to $1,000+ depending on morph, plus $230-445 in setup gear. They live 15-20+ years, so budget for decades, not just year one.",
-    "lastUpdated": "2026-09-24",
+    "seoTitle": "Gargoyle Gecko Price: $50 to $1,000, Plus $280 to $520 Setup",
+    "seoDescription": "Gargoyle geckos cost $50 to $1,000+ depending on morph, plus $280-520 in setup gear. They live 15-20+ years, so budget for decades, not just year one.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Gargoyle geckos sit at an interesting price point: affordable for a common reticulated animal, but morphs and proven breeding lines can push the number into four figures.",
     "date": "2026-07-24",
@@ -20627,11 +20628,11 @@
       },
       {
         "q": "What does a complete gargoyle gecko setup cost upfront?",
-        "a": "Roughly $230 to $445 in gear (enclosure, UVB, substrate, decor, thermometer/hygrometer, misting bottle), plus the gecko itself. All-in, a typical setup with a common animal lands around $280 to $745, and a premium morph can push the first-year total past $1,000."
+        "a": "Roughly $280 to $520 in gear (enclosure, UVB, heat bulb and dome, thermostat, substrate, decor, thermometer/hygrometer, misting bottle), plus the gecko itself. All-in, a typical setup with a common animal lands around $330 to $820, and a premium morph can push the first-year total past $1,000."
       },
       {
         "q": "What are the ongoing monthly costs for a gargoyle gecko?",
-        "a": "Most keepers land in the $10 to $25 a month range for food and supplements. One 8-ounce bag of powdered gecko diet lasts a single adult about two months and runs around $20. Insects, the annual UVB bulb swap, and vet care are periodic add-ons rather than monthly expenses."
+        "a": "Most keepers land in the $15 to $30 a month range for food and supplements. One 8-ounce bag of powdered gecko diet lasts a single adult about two months and runs $20 to $28, so plan on six bags a year. Insects, the annual UVB bulb swap, and vet care are periodic add-ons rather than monthly expenses."
       },
       {
         "q": "Does a gargoyle gecko need expensive vet care?",
@@ -20639,7 +20640,7 @@
       },
       {
         "q": "How long do gargoyle geckos live, and how does that affect budgeting?",
-        "a": "15 to 20 years is typical, with some keepers reporting animals still breeding well past 20. Budget a UVB bulb replacement annually, which is the conservative end of the 6-to-12-month window bulbs are rated for. This isn't a short-term pet, budget for decades, not just the first year."
+        "a": "15 to 20 years is typical, with some keepers reporting animals still breeding well past 20. Budget at least one UVB bulb a year. Tubes are replaced every 6 to 12 months depending on the model, so yearly is the longest a bulb should stay in. This isn't a short-term pet, budget for decades, not just the first year."
       }
     ],
     "relatedProducts": [
@@ -20737,7 +20738,7 @@
     "title": "Gargoyle Gecko Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Gargoyle Geckos Eat? Diet and Feeding Schedule",
     "seoDescription": null,
-    "lastUpdated": "2026-09-03",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Gargoyle geckos are more carnivorous than their crested gecko cousins, which is why insects are a required part of the diet here, not just enrichment.",
     "date": "2026-07-30",
@@ -20766,7 +20767,7 @@
     "faqs": [
       {
         "q": "How often should I feed my gargoyle gecko?",
-        "a": "Hatchlings and juveniles get fresh commercial gecko diet daily, adults every 2 to 3 days, though one detailed care sheet breaks life stages out differently and lands on every other day for full adults. For live insects specifically, most sources say weekly for adults, though one specialist source recommends as little as twice a month, citing obesity risk, a real disagreement worth knowing."
+        "a": "Hatchlings and juveniles get fresh commercial gecko diet daily, adults every 2 to 3 days. Live insects go in 1 to 2 times a week for juveniles and adults alike, scaled by body condition rather than the calendar. Vertebrate prey such as pinky mice is what needs a cap, no more than twice a month, because that is where obesity comes from."
       },
       {
         "q": "Do gargoyle geckos need live insects, or is powder enough?",
@@ -20798,7 +20799,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 3,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -20874,7 +20875,7 @@
     "title": "Common Gargoyle Gecko Health Issues and What Causes Them",
     "seoTitle": "Gargoyle Gecko Health Issues: Signs & Causes",
     "seoDescription": "Gargoyle gecko health issues: MBD from calcium deficiency, stuck shed from low humidity, respiratory infection from excess moisture, and floppy tail syndrome.",
-    "lastUpdated": "2026-09-14",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Gargoyle gecko health problems overwhelmingly come down to two husbandry errors: an enclosure that's too wet, or one that doesn't give the gecko enough hiding spots.",
     "date": "2026-07-24",
@@ -20901,7 +20902,7 @@
     "faqs": [
       {
         "q": "What is the first sign of metabolic bone disease in a gargoyle gecko?",
-        "a": "A kinked or wavy tail, a soft jaw, or curved limbs, sometimes with tremors, appetite loss, or loss of coordination. The two calcium sacs under the throat are the other early tell: depleted white sacs are a visible warning. The cause is calcium or vitamin D3 deficiency, often with inadequate UVB."
+        "a": "A kinked or wavy tail, a soft jaw, or curved limbs, sometimes with tremors, appetite loss, or loss of coordination. During an exam, a vet may also look at the calcium sacs, which sit at the back of the palate. The cause is calcium or vitamin D3 deficiency, often with inadequate UVB."
       },
       {
         "q": "Why do gargoyle geckos lose toes or tail tips?",
@@ -20913,7 +20914,7 @@
       },
       {
         "q": "What is floppy tail syndrome and is it gargoyle-specific?",
-        "a": "Yes, it's a condition largely specific to this species, where the tail hangs over the gecko's back or to one side, usually from repeatedly sleeping upside-down on bare glass. Over time it can deform the tail base and hips, making it hard to defecate or, in females, lay eggs. Cluttering the enclosure with hides and branches prevents it."
+        "a": "No. It shows up in crested geckos too, and in both species it is a condition where the tail hangs over the gecko's back or to one side, usually from repeatedly sleeping upside-down on bare glass. Over time it can deform the tail base and hips, making it hard to defecate or, in females, lay eggs. Cluttering the enclosure with hides and branches prevents it."
       },
       {
         "q": "When should I take my gargoyle gecko to a vet?",
@@ -21013,8 +21014,8 @@
     "slug": "gargoyle-mourning-african-fat-tail-gecko-overview",
     "title": "Three Geckos, Three Very Different Pets",
     "seoTitle": "Gargoyle vs Mourning vs African Fat-Tailed Gecko",
-    "seoDescription": "Gargoyle, mourning, and African fat-tailed geckos compared: one avoids heat above 82F, one breeds without males, one burrows and needs extra humidity.",
-    "lastUpdated": "2026-09-24",
+    "seoDescription": "Gargoyle, mourning, and African fat-tailed geckos compared: one has a low 86F heat ceiling, one breeds without males, one burrows and needs extra humidity.",
+    "lastUpdated": "2026-10-02",
     "noIndex": true,
     "excerpt": "Gargoyle, mourning, and African fat-tailed geckos barely share a care sheet. One needs to stay cool, one needs belly heat, one you'll never touch, one you'll hold daily, one digs while the other two climb.",
     "date": "2026-07-27",
@@ -21041,7 +21042,7 @@
     "faqs": [
       {
         "q": "Is a gargoyle gecko the same to keep as a crested gecko?",
-        "a": "Close, but not identical. Gargoyle geckos share the same room-temperature, no-heat-lamp-needed setup as crested geckos, and they're calmer as adults than as skittish juveniles. Two real differences: a gargoyle's bite can break skin, unlike a crested gecko's, and a gargoyle's dropped tail grows back, while a crested gecko's does not."
+        "a": "Close, but not identical. Gargoyle geckos share the crested gecko's cool, humid, climbing setup: a gentle gradient with a basking spot around 82 to 85°F, and air never above 86°F. They're calmer as adults than as skittish juveniles. Two real differences: a gargoyle's bite can break skin, unlike a crested gecko's, and a gargoyle's dropped tail grows back, while a crested gecko's does not."
       },
       {
         "q": "Can I handle a mourning gecko like I would a gargoyle gecko?",
@@ -21062,7 +21063,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 5,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -21415,7 +21416,7 @@
     "title": "Is It Legal to Own a Garter Snake? State-by-State Guide",
     "seoTitle": "Is a Garter Snake Legal in Your State? Full Guide",
     "seoDescription": "Garter snakes are legal in most states but regulated as wildlife. New York reaches even pet-store bred snakes, and Hawaii bans them outright.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-10-01",
     "noIndex": false,
     "excerpt": "Garter snakes are native almost everywhere, so most states regulate them as wildlife first and a pet second, often more strictly than an imported colubrid. New York is the standout: state guidance says its native-species law doesn't differentiate between wild-caught and captive-bred animals, so even a pet-store garter snake needs a permit there.",
     "date": "2026-08-29",
@@ -21435,13 +21436,13 @@
     "image": "/assets/guides/garter-snake-legal.jpg",
     "imageAlt": "Common garter snake moving through grass",
     "emoji": "🐍",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "Can I keep a garter snake I caught in my backyard?",
-        "a": "It depends entirely on your state. Because garter snakes are native almost everywhere, most states regulate wild collection under hunting or fishing license rules with a bag limit, not as an ordinary pet-trade purchase. California caps wild collection at 2 per day and closes it entirely in six Southern California counties; Michigan uses a combined 3-per-day, 6-in-possession cap for reptiles and amphibians taken under a fishing license. A few states, including Delaware and Georgia, don't offer a normal pet-keeping path for a wild native garter snake at all."
+        "a": "It depends entirely on your state. Because garter snakes are native almost everywhere, most states regulate wild collection under hunting or fishing license rules with a bag limit, not as an ordinary pet-trade purchase. California caps wild collection at 2 per day and closes it entirely in six Southern California counties; Michigan uses a combined 3-per-day, 6-in-possession cap for reptiles and amphibians taken under a fishing license. Delaware lets you keep one without a permit. A few states, including Georgia and Rhode Island, don't offer a normal pet-keeping path for a wild native garter snake at all."
       },
       {
         "q": "Do I need a permit for a pet-store garter snake in New York?",
@@ -21449,7 +21450,7 @@
       },
       {
         "q": "Is a garter snake illegal anywhere?",
-        "a": "Hawaii bans every species of snake outright, with no path for a garter snake at all. Delaware, Georgia, and Rhode Island regulate it as native wildlife with no ordinary pet-permit route, which effectively closes off casual ownership. Most other states do allow it, though often with a permit or sourcing condition attached rather than treating it like an ordinary pet-trade colubrid."
+        "a": "Hawaii bans every species of snake outright, with no path for a garter snake at all. Georgia and Rhode Island regulate it as native wildlife with no ordinary pet-permit route, which effectively closes off casual ownership. Most other states do allow it, though often with a permit or sourcing condition attached rather than treating it like an ordinary pet-trade colubrid."
       }
     ],
     "relatedProducts": [],
@@ -21459,7 +21460,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 5,
-    "headingCount": 9,
+    "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
     "imageHeight": 896
@@ -21539,8 +21540,8 @@
     "path": "/content/guides/gerbil-cost-guide.mdx",
     "slug": "gerbil-cost-guide",
     "title": "How Much Does Gerbil Ownership Really Cost?",
-    "seoTitle": "Gerbil Price: $5 to $50 Each, Plus $150 to $350 Setup",
-    "seoDescription": "Gerbil cost breakdown: $10-20 per gerbil, budget for at least two, a $150-350 setup for a pair, $10-20 monthly, and a 2 to 3 year lifespan.",
+    "seoTitle": "Gerbil Price: $5 to $50 Each, Plus $145 to $385 Setup",
+    "seoDescription": "Gerbil cost breakdown: $10-20 per gerbil, budget for at least two, a $145-385 setup for a pair, $10-20 monthly, and a 2 to 3 year lifespan.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Gerbils are one of the more affordable small pets, with one important caveat: like the degu, you're budgeting for two animals, not one.",
@@ -21572,7 +21573,7 @@
       },
       {
         "q": "What does a full gerbil setup cost upfront?",
-        "a": "Roughly $150 to $350. The big line is a glass tank instead of a wire cage, and after that come deep bedding, a solid exercise wheel, hides, and chews. One gerbil lands near the bottom of that range, a properly housed pair near the top."
+        "a": "Roughly $145 to $385. The big line is a glass tank instead of a wire cage, and after that come deep bedding, a solid exercise wheel, hides, and chews. One gerbil lands near the bottom of that range, a properly housed pair near the top."
       },
       {
         "q": "What are the ongoing monthly costs for gerbils?",
@@ -22213,8 +22214,8 @@
     "path": "/content/guides/ghost-shrimp-cost-guide.mdx",
     "slug": "ghost-shrimp-cost-guide",
     "title": "How Much Does Ghost Shrimp Ownership Really Cost?",
-    "seoTitle": "Ghost Shrimp Price: Under $1 Each, Plus $40 to $130 Setup",
-    "seoDescription": "Ghost shrimp cost breakdown: often under $1 in bulk, $1-3 each at retail, a roughly $40-130 starter tank, and why feeder pricing isn't pet-quality care.",
+    "seoTitle": "Ghost Shrimp Price: Under $1 Each, Plus $40 to $180 Setup",
+    "seoDescription": "Ghost shrimp cost breakdown: often under $1 in bulk, $1-3 each at retail, a roughly $40-180 starter tank, and why feeder pricing isn't pet-quality care.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Ghost shrimp are some of the cheapest livestock in the aquarium hobby, sold in bulk as feeder stock for other fish as often as they're kept as pets in their own right, and that split identity is the story behind the price tag.",
@@ -22246,11 +22247,11 @@
       },
       {
         "q": "What does a basic ghost shrimp tank setup cost?",
-        "a": "Roughly $40 to $130 for the core equipment: a 5 to 10 gallon tank ($18-30), a gentle sponge filter ($8-15), a heater if your room runs cool ($18-30), sand or fine gravel substrate ($12-18), and live plants for cover ($18-35). A basic tank and filter alone can come in near the low end of that range."
+        "a": "Roughly $40 to $180 for the core equipment: a 5 to 10 gallon tank ($15-40), a gentle sponge filter ($5-15), a heater if your room runs cool ($15-35), sand or fine gravel substrate ($15-30), and live plants for cover ($30-60). A basic tank and filter alone can come in near the low end of that range."
       },
       {
         "q": "What are the ongoing costs of keeping ghost shrimp?",
-        "a": "Minimal. A sinking wafer food that doubles as a supplemental staple runs roughly $16 to $35 a year for a small colony, and water conditioner is another $9 to $15 a year. Ghost shrimp scavenge a meaningful share of their own food from algae, biofilm, and leftovers, which keeps the feeding line item small."
+        "a": "Minimal. A sinking wafer food that doubles as a supplemental staple runs roughly $16 to $35 a year for a small colony, and water conditioner is another $5 to $15 a year. Ghost shrimp scavenge a meaningful share of their own food from algae, biofilm, and leftovers, which keeps the feeding line item small."
       },
       {
         "q": "Why are ghost shrimp so much cheaper than other aquarium shrimp?",
@@ -22628,8 +22629,8 @@
     "path": "/content/guides/giant-millipede-cost-guide.mdx",
     "slug": "giant-millipede-cost-guide",
     "title": "How Much Does a Giant Millipede Really Cost? (And a Supply Note Worth Knowing)",
-    "seoTitle": "Giant Millipede Price: $75 to $150, Plus $75 to $150 Setup",
-    "seoDescription": "Giant millipede cost breakdown: $75-150+ per animal because USDA permits keep imports scarce, a $75-150 setup, minimal monthly costs, and 5-7+ years of life.",
+    "seoTitle": "Giant Millipede Price: $75 to $150, Plus $75 to $190 Setup",
+    "seoDescription": "Giant millipede cost breakdown: $75-150+ per animal because USDA permits keep imports scarce, a $75-190 setup, minimal monthly costs, and 5-7+ years of life.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Giant African millipedes are inexpensive to keep month to month, though the animal itself costs more than you might expect for an invertebrate, and there's a real reason behind that.",
@@ -22661,7 +22662,7 @@
       },
       {
         "q": "How much does a giant millipede cost upfront?",
-        "a": "The millipede itself typically runs $75 to $150 or more, a real step up in price for an invertebrate, driven entirely by the supply situation rather than anything about the animal's care difficulty. Setup, tank, substrate, leaf litter, a hygrometer, and a spray bottle, adds roughly another $75 to $150."
+        "a": "The millipede itself typically runs $75 to $150 or more, a real step up in price for an invertebrate, driven entirely by the supply situation rather than anything about the animal's care difficulty. Setup, tank, substrate, leaf litter, a hygrometer, and a spray bottle, adds roughly another $75 to $190."
       },
       {
         "q": "What are the ongoing costs of keeping a giant millipede?",
@@ -23755,8 +23756,8 @@
     "path": "/content/guides/green-anole-cost-guide.mdx",
     "slug": "green-anole-cost-guide",
     "title": "How Much Does a Green Anole Really Cost?",
-    "seoTitle": "Green Anole Price: $5 to $30, Plus $390 to $470 Setup",
-    "seoDescription": "Full green anole cost breakdown: $5-30 for the anole, $390-470 setup, and why this cheap reptile is so often under-housed.",
+    "seoTitle": "Green Anole Price: $5 to $30, Plus $350 to $520 Setup",
+    "seoDescription": "Full green anole cost breakdown: $5-30 for the anole, $350-520 setup, and why this cheap reptile is so often under-housed.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Green anoles are one of the cheapest reptiles you can buy, and that low price is exactly why this species is so often underestimated and under-housed.",
@@ -23788,7 +23789,7 @@
       },
       {
         "q": "What does a proper upfront setup cost?",
-        "a": "Roughly $390 to $470. A 24x24x24 inch front-opening terrarium is the largest single expense by far relative to the animal's price, followed by a basking heat lamp and dome, a T5 HO UVB fixture and bulb, a 6500K LED for general illumination, substrate and climbing material, and a thermometer/hygrometer combo plus a misting bottle."
+        "a": "Roughly $350 to $520. A 24x24x24 inch front-opening terrarium is the largest single expense by far relative to the animal's price, followed by a basking heat lamp and dome, a T5 HO UVB fixture and bulb, a 6500K LED for general illumination, substrate and climbing material, and a thermometer/hygrometer combo plus a misting bottle."
       },
       {
         "q": "How much does a green anole cost per month?",
@@ -23804,7 +23805,7 @@
       },
       {
         "q": "Does the anole's cheap price mean it's cheap to keep well?",
-        "a": "No. The $390 to $470 setup costs at least 13 times what a $30 anole does, and 78 to 94 times the price of a $5 one, so the purchase price says almost nothing about the cost of keeping one well. Skipping that investment is why the short-lifespan reputation persists."
+        "a": "No. The $350 to $520 setup costs at least 11 times what a $30 anole does, and 70 to 104 times the price of a $5 one, so the purchase price says almost nothing about the cost of keeping one well. Skipping that investment is why the short-lifespan reputation persists."
       }
     ],
     "relatedProducts": [
@@ -24238,7 +24239,7 @@
     "slug": "green-iguana-cost-guide",
     "title": "How Much Does a Green Iguana Really Cost?",
     "seoTitle": "Green Iguana Price: $20 to $1,000, Kit About $1,000",
-    "seoDescription": "Green iguana hatchlings cost $20-100. The first-year kit runs about $1,041-1,105. The adult enclosure is a second purchase a year later.",
+    "seoDescription": "Green iguana hatchlings cost $20-100. The first-year kit runs about $1,032-1,101. The adult enclosure is a second purchase a year later.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Green iguanas are cheap to buy as babies, and that low starting price is exactly what leads so many owners to underestimate what they're taking on.",
@@ -24270,7 +24271,7 @@
       },
       {
         "q": "What does the upfront setup cost?",
-        "a": "The first-year kit runs about $1,041 to $1,105 once branches, substrate, a soak tub, and a thermometer are in the pile. The adult enclosure comes a year or two later and has to reach 10x5x6 feet, which no store sells: a walk-in build is several hundred dollars in materials, a custom builder $1,000 and up."
+        "a": "The first-year kit runs about $1,032 to $1,101 once branches, substrate, a soak tub, and a thermometer are in the pile. The adult enclosure comes a year or two later and has to reach 10x5x6 feet, which no store sells: a walk-in build is several hundred dollars in materials, a custom builder $1,000 and up."
       },
       {
         "q": "What are the ongoing monthly costs?",
@@ -27467,8 +27468,8 @@
     "slug": "hognose-snake-cost-guide",
     "title": "How Much Does a Western Hognose Snake Really Cost?",
     "seoTitle": "Hognose Snake Price: $50 to $1,000+, Plus $200 to $500 Setup",
-    "seoDescription": "Western hognose cost: $50-100 for a normal morph up to $1,000+ for rare combos, a $200-500 setup, and just $10-25 monthly, cheaper to run than a ball python.",
-    "lastUpdated": "2026-09-25",
+    "seoDescription": "Western hognose cost: $50-100 for a normal morph up to $1,000+ for rare combos, a $200-500 setup, and about $15-28 monthly, cheaper to run than a ball python.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Western hognose snakes are one of the more affordable pet snakes to keep long term, with a low ongoing cost that lands them close to a corn snake and well under a ball python.",
     "date": "2026-07-14",
@@ -27498,11 +27499,11 @@
       },
       {
         "q": "What does the upfront setup cost for a hognose snake?",
-        "a": "Roughly $200 to $500. That covers a PVC or glass enclosure sized around 2x2x2 feet or 36x18x18 inches, a halogen basking bulb with a thermostat or dimmer, a digital thermometer and hygrometer, deep loose substrate for burrowing, hides, and a water bowl."
+        "a": "Roughly $200 to $500. That covers a PVC or glass enclosure sized around 2x2x2 feet or 36x18x18 inches, a halogen basking bulb in a fixture on a dimming thermostat, a digital thermometer and hygrometer, deep loose substrate for burrowing, hides, and a water bowl."
       },
       {
         "q": "What are the ongoing monthly costs for a hognose snake?",
-        "a": "Roughly $10 to $25 a month. Hognoses don't eat as often as some other snakes, so frozen and thawed rodents plus the occasional substrate change cover nearly all of it."
+        "a": "Roughly $15 to $28 a month, or $180 to $330 a year. Frozen and thawed rodents are the largest line even though hognoses don't eat as often as some other snakes, and electricity for the heat, an annual wellness check and the occasional substrate change make up the rest."
       },
       {
         "q": "What do vet visits cost for a hognose snake?",
@@ -27515,7 +27516,7 @@
     ],
     "relatedProducts": [
       "enclosure-repti-zoo-36x18x18-50gal",
-      "under-tank-heat-mat-thermostat-kit",
+      "milk-snake-halogen-bulb-exo-terra-sun-glo-50w",
       "cork-bark-round-hide",
       "digital-thermometer-hygrometer-combo",
       "aspen-shavings-substrate"
@@ -27669,8 +27670,8 @@
     "slug": "hognose-snake-handling-guide",
     "title": "How to Handle a Western Hognose Snake (And Why the Drama Is Mostly Bluff)",
     "seoTitle": "How to Handle a Hognose Snake Correctly",
-    "seoDescription": "A hognose's hood-and-hiss display and death-feigning act are pure bluff. Rear-fanged and mildly venomous, and the one documented bite took months to heal.",
-    "lastUpdated": "2026-09-24",
+    "seoDescription": "A hognose's hood-and-hiss display and death-feigning act are pure bluff. Rear-fanged and mildly venomous: bites are rare, and even a bad one stays local.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Western hognose snakes have built their reputation on a dramatic defensive display that looks alarming and means almost the opposite of what it appears to. Understanding that display is the whole key to handling this species well.",
     "date": "2026-07-14",
@@ -27705,7 +27706,7 @@
       },
       {
         "q": "Are Western hognose snakes dangerous to handle?",
-        "a": "The rear-fanged venom isn't considered medically significant to a healthy person, and the one documented bite case in the literature came down the same way: not a dangerous species, just one to handle thoughtfully. That case is still worth knowing about: swelling, bruising, and mild cellulitis at the bite site, no systemic effects, and a recovery that ran about five months."
+        "a": "Not dangerous, but not harmless either. Bites are documented and uncommon, mostly from a hungry snake around feeding time, and the effects stay local. A quick bite often does nothing; a snake that holds on or chews can cause marked swelling and bruising. In the best-known case a keeper had swelling, bruising and mild cellulitis, no systemic effects, and a recovery that ran about five months."
       },
       {
         "q": "What causes a hognose snake to bite?",
@@ -27722,7 +27723,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -27765,7 +27766,7 @@
       },
       {
         "q": "Why are hognose snakes prone to impaction?",
-        "a": "Hognoses are enthusiastic, somewhat messy eaters, and they're prone to swallowing substrate along with their food. Feeding in a separate container away from the loose substrate is the single most effective prevention. Watch for a failure to pass waste, bloating, and lethargy, and see a vet if it doesn't resolve within a reasonable window."
+        "a": "Hognoses are enthusiastic, somewhat messy eaters, and they're prone to swallowing substrate along with their food. Feeding in a separate container away from the loose substrate is the single most effective prevention. Learn your snake's usual gap between a meal and its stool. A missed stool past that gap, with bloating, lethargy or refused food, needs a vet, not more waiting."
       },
       {
         "q": "Can a hognose snake become obese?",
@@ -27791,7 +27792,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 11,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -27802,10 +27803,10 @@
     "slug": "hognose-snake-legal-guide",
     "title": "Is It Legal to Own a Hognose Snake? State-by-State Guide",
     "seoTitle": "Is a Hognose Snake Legal in Your State? Full Guide",
-    "seoDescription": "Hognoses are exempt from venomous-reptile bans everywhere checked. Georgia bans them as pets outright, and Colorado's 2026 rule covers only two subspecies.",
-    "lastUpdated": "2026-09-16",
+    "seoDescription": "Hognose snakes clear venomous-reptile laws almost everywhere. Six places ban them, Georgia and New York City among them, and Colorado's 2026 rule splits them.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
-    "excerpt": "Hognose snakes are mildly rear-fanged, but that doesn't make them a regulated venomous species anywhere we checked. The restriction to watch for is Georgia, which bans keeping native hognose as pets regardless of captive-bred origin.",
+    "excerpt": "Hognose snakes are mildly rear-fanged, and New York City is the one place that regulates them for it. The restrictions to watch for are native-wildlife rules: Georgia, West Virginia and Kansas bar the hognose as their own wildlife, whatever the animal's origin.",
     "date": "2026-07-22",
     "category": "Legal",
     "categories": [
@@ -27823,13 +27824,13 @@
     "image": "/assets/guides/hognose-snake-legal.jpg",
     "imageAlt": "Hognose snake with its distinctive upturned snout",
     "emoji": "🐍",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "Is a hognose snake venomous, and does that make it illegal?",
-        "a": "Hognose snakes are mildly rear-fanged, meaning they produce a weak venom used mostly to subdue toads, but medical case reports describe bites as causing local swelling at worst, not a systemic reaction. Every state venomous-reptile law we checked, including Alabama, Kentucky, Louisiana, Arkansas, and Florida, specifically excludes the genus Heterodon by name."
+        "a": "Hognose snakes are mildly rear-fanged, with a weak venom used mostly to subdue toads, and case reports describe local effects, not systemic ones. Kentucky and Alabama name the genus Heterodon as an exception to their venomous-reptile bans, and New Hampshire names the western hognose. Arkansas, Florida and Louisiana clear it without naming it. New York City goes the other way and bans rear-fanged colubrids, the hognose included."
       },
       {
         "q": "Can I legally own a hognose snake in Georgia?",
@@ -27847,7 +27848,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6,
-    "headingCount": 10,
+    "headingCount": 11,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
     "imageHeight": 896
@@ -27858,7 +27859,7 @@
     "title": "Western Hognose Snake Enclosure Setup: Dry, Deep, and Built for Burrowing",
     "seoTitle": "Hognose Snake Enclosure Setup Guide",
     "seoDescription": "Western hognose enclosure setup: males need 20 gallons, females 40, basking 90-95°F, 30-50% humidity, and 3-6 inches of dry, diggable substrate.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Western hognose care comes down to a fairly short list of priorities: keep it dry, keep the substrate deep enough to burrow in, and get the heat source right.",
     "date": "2026-07-14",
@@ -27889,7 +27890,7 @@
       },
       {
         "q": "What temperature does a hognose snake enclosure need?",
-        "a": "A basking area around 90 to 95°F on one end, a cool side at 70 to 75°F, and a night temperature around 75 to 78°F. The commonly recommended heat source is a low-wattage halogen basking bulb over the substrate on a thermostat or dimmer, rather than a heat mat or ceramic heat emitter as the primary source."
+        "a": "A basking area around 90 to 95°F on one end, a cool side at 70 to 75°F, and nights that can fall to room temperature, no colder than about 60°F. The commonly recommended heat source is a low-wattage halogen basking bulb over the substrate on a dimming thermostat, rather than a heat mat or ceramic heat emitter as the primary source."
       },
       {
         "q": "How humid should a hognose snake enclosure be?",
@@ -27906,7 +27907,8 @@
     ],
     "relatedProducts": [
       "enclosure-repti-zoo-36x18x18-50gal",
-      "under-tank-heat-mat-thermostat-kit",
+      "milk-snake-halogen-bulb-exo-terra-sun-glo-50w",
+      "dimming-thermostat-pt02t",
       "aspen-shavings-substrate",
       "cork-bark-round-hide",
       "digital-thermometer-hygrometer-combo"
@@ -27916,7 +27918,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -28798,8 +28800,8 @@
     "path": "/content/guides/jacksons-chameleon-cost-guide.mdx",
     "slug": "jacksons-chameleon-cost-guide",
     "title": "How Much Does a Jackson's Chameleon Really Cost?",
-    "seoTitle": "Jackson's Chameleon Price: $50 to $250, Setup $400 to $525",
-    "seoDescription": "Jackson's chameleon cost breakdown: $50-250 for the animal, $400-525 upfront setup, and why females live just 3-5 years versus 8-10 for males.",
+    "seoTitle": "Jackson's Chameleon Price: $50 to $250, Setup $345 to $475",
+    "seoDescription": "Jackson's chameleon cost breakdown: $50-250 for the animal, $345-475 upfront setup, and why females live just 3-5 years versus 8-10 for males.",
     "lastUpdated": "2026-09-24",
     "noIndex": false,
     "excerpt": "Jackson's chameleons sit in a comparable price range to the veiled chameleon, but the two species diverge in some important ways worth understanding before you buy.",
@@ -28831,7 +28833,7 @@
       },
       {
         "q": "What does the upfront enclosure setup cost?",
-        "a": "Roughly $400 to $525, covering a tall screen or hybrid enclosure sized for an adult, a UVB fixture and bulb, a halogen basking bulb on a dimmer, a misting system, and live plants with moisture-retentive substrate."
+        "a": "Roughly $345 to $475, covering a tall screen or hybrid enclosure sized for an adult, a UVB fixture and bulb, a halogen basking bulb on a dimmer, a misting system, and live plants with moisture-retentive substrate."
       },
       {
         "q": "What are the ongoing monthly costs?",
@@ -29344,8 +29346,8 @@
     "path": "/content/guides/jumping-spider-cost-guide.mdx",
     "slug": "jumping-spider-cost-guide",
     "title": "How Much Does a Jumping Spider Really Cost?",
-    "seoTitle": "Jumping Spider Price: $15 to $60, Plus $112 to $150 Setup",
-    "seoDescription": "Real jumping spider cost breakdown: $15-60 for the spider, $112-150 setup, $5-15/month after. See why the short lifespan matters most.",
+    "seoTitle": "Jumping Spider Price: $15 to $60, Plus $75 to $180 Setup",
+    "seoDescription": "Real jumping spider cost breakdown: $15-60 for the spider, $75-180 setup, $5-15/month after. See why the short lifespan matters most.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Jumping spiders, the regal jumping spider especially, are among the most affordable and space-efficient pets anyone can keep, accessible even on a tight budget.",
@@ -29377,7 +29379,7 @@
       },
       {
         "q": "What does a complete jumping spider setup cost upfront?",
-        "a": "Roughly $112 to $150, covering a small vertical arboreal enclosure, coconut fiber substrate, artificial plants or cork bark for climbing, a fine mister, and a digital hygrometer. The enclosure is most of it."
+        "a": "Roughly $75 to $180, covering a small vertical arboreal enclosure, coconut fiber substrate, artificial plants or cork bark for climbing, a fine mister, and a digital hygrometer. The enclosure is most of it."
       },
       {
         "q": "What are the ongoing monthly costs of keeping a jumping spider?",
@@ -31364,7 +31366,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 3,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -32990,7 +32992,7 @@
     "title": "Is It Legal to Own a Milk Snake? State-by-State Guide",
     "seoTitle": "Is a Milk Snake Legal in Your State? Full Guide",
     "seoDescription": "Milk snake legality: banned in Georgia, purchase-restricted in Wisconsin, capped at 1 in Pennsylvania, plus rules in Utah, South Carolina and New Jersey.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-10-01",
     "noIndex": false,
     "excerpt": "Milk snakes are a common pet-trade species with one of the more tangled legal pictures out there: Georgia bans them outright as a native species, and Wisconsin restricts even buying a captive-bred one. Pennsylvania caps possession in a way that reads as reaching purchased pets, and Utah, which looks like it does the same, turns out not to.",
     "date": "2026-08-29",
@@ -33010,7 +33012,7 @@
     "image": "/assets/guides/milk-snake-legal.jpg",
     "imageAlt": "Milk snake showing its red, black, and white banded pattern",
     "emoji": "🐍",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -33020,7 +33022,7 @@
       },
       {
         "q": "Can I buy a captive-bred milk snake in Wisconsin?",
-        "a": "It's restricted. Wisconsin's rule states that \"the purchase of native amphibians and reptiles is prohibited except as provided in specified exceptions,\" and because milk snake is Wisconsin native, that includes captive-bred animals, not just wild-caught ones. Wild possession is separately capped at 5 individuals."
+        "a": "It's restricted. Wisconsin's rule states that \"the purchase of native amphibians and reptiles is prohibited except as provided in specified exceptions,\" and because milk snake is Wisconsin native, that includes captive-bred animals, not just wild-caught ones. Wild possession is separately capped at 5 individuals. From 1 January 2027 that cap ends: only captive-bred color variants may be acquired, and a wild-type milk snake already held must be registered with the DNR by 30 June 2027."
       },
       {
         "q": "Does Pennsylvania require a permit for a captive-bred milk snake?",
@@ -33185,8 +33187,8 @@
     "path": "/content/guides/molly-cost-guide.mdx",
     "slug": "molly-cost-guide",
     "title": "How Much Does Molly Fish Ownership Really Cost?",
-    "seoTitle": "Molly Fish Price: $2 to $20 Each, Plus $130 to $260 Setup",
-    "seoDescription": "Full molly fish cost breakdown: $2-20 per fish, a $130-260 20-gallon starter setup, low monthly upkeep, and why it costs more than a guppy tank.",
+    "seoTitle": "Molly Fish Price: $2 to $20 Each, Plus $135 to $280 Setup",
+    "seoDescription": "Full molly fish cost breakdown: $2-20 per fish, a $135-280 20-gallon starter setup, low monthly upkeep, and why it costs more than a guppy tank.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Mollies cost a little more upfront than guppies, mainly because they need a bigger tank and sturdier filtration from day one. Once that's sorted, keeping them is inexpensive.",
@@ -33218,7 +33220,7 @@
       },
       {
         "q": "What does a basic molly tank setup cost?",
-        "a": "A 20-gallon setup, tank, filter, heater, and basic supplies, commonly runs $130 to $260. That's higher than a guppy's typical 10-gallon starting point, mainly because mollies need more swimming room and a filter rated for a bigger bioload from the start."
+        "a": "A 20-gallon setup, tank, filter, heater, and basic supplies, commonly runs $135 to $280. That's higher than a guppy's typical 10-gallon starting point, mainly because mollies need more swimming room and a filter rated for a bigger bioload from the start."
       },
       {
         "q": "What are the ongoing costs of keeping mollies?",
@@ -34042,7 +34044,7 @@
     "path": "/content/guides/mouse-cost-guide.mdx",
     "slug": "mouse-cost-guide",
     "title": "How Much Does a Pet Mouse Really Cost?",
-    "seoTitle": "Pet Mouse Price: $5 to $20 Each, Plus $100 to $210 Setup",
+    "seoTitle": "Pet Mouse Price: $5 to $20 Each, Plus $100 to $225 Setup",
     "seoDescription": "Fancy mouse cost guide: the mice, group setup, monthly food and bedding, vet care, and what a 1.5 to 2 year lifespan means for the budget.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
@@ -34075,7 +34077,7 @@
       },
       {
         "q": "What does a full mouse setup cost upfront?",
-        "a": "Roughly $100 to $210 for a proper group setup. A correctly sized, tightly spaced cage and a smooth, mouse-sized wheel are the two items worth shopping around for rather than grabbing the cheapest option, since mice are harder to house securely than a hamster or gerbil despite being smaller."
+        "a": "Roughly $100 to $225 for a proper group setup. A correctly sized, tightly spaced cage and a smooth, mouse-sized wheel are the two items worth shopping around for rather than grabbing the cheapest option, since mice are harder to house securely than a hamster or gerbil despite being smaller."
       },
       {
         "q": "What are the ongoing monthly costs for mice?",
@@ -35001,8 +35003,8 @@
         "a": "Do not assume so. Iowa's statute says water monitor with no scientific name attached. That usually means Varanus salvator, but Varanus niloticus is commonly called the African water monitor, and the statute gives no binomial to settle it. Idaho has a similar problem with an undefined non-dangerous qualifier."
       },
       {
-        "q": "Does Georgia allow a Nile monitor with a licence?",
-        "a": "Not as a pet. Georgia names six reptiles in its licence rule and closes the pet route on all of them in the same subparagraph: they may only be licensed for scientific, educational or public exhibition purposes."
+        "q": "Does Georgia allow a Nile monitor with a license?",
+        "a": "Not as a pet. Georgia names six reptiles in its license rule and closes the pet route on all of them in the same subparagraph: they may only be licensed for scientific, educational or public exhibition purposes."
       }
     ],
     "relatedProducts": [],
@@ -35021,7 +35023,7 @@
     "path": "/content/guides/oscar-fish-cost-guide.mdx",
     "slug": "oscar-fish-cost-guide",
     "title": "How Much Does Oscar Fish Ownership Really Cost?",
-    "seoTitle": "Oscar Fish Price: $7 to $35, Plus a $575+ Tank Setup",
+    "seoTitle": "Oscar Fish Price: $7 to $35, Plus a $470+ Tank Setup",
     "seoDescription": null,
     "lastUpdated": "2026-09-25",
     "noIndex": false,
@@ -35054,7 +35056,7 @@
       },
       {
         "q": "How much does an oscar tank setup cost upfront?",
-        "a": "A 55-gallon starter setup, the usual entry point, has been estimated at around $560 for a low-end build. That undersells the species: the 75-gallon tank, canister filter and heater an adult needs run about $575 to $670 on their own, before a stand, lid, light and substrate."
+        "a": "A 55-gallon starter setup, the usual entry point, has been estimated at around $560 for a low-end build. That undersells the species: the 75-gallon tank, canister filter and heater an adult needs run about $470 to $685 on their own, before a stand, lid, light and substrate."
       },
       {
         "q": "What are the ongoing monthly costs of keeping an oscar?",
@@ -36056,8 +36058,8 @@
     "path": "/content/guides/parrotlet-cost-guide.mdx",
     "slug": "parrotlet-cost-guide",
     "title": "How Much Does a Parrotlet Really Cost?",
-    "seoTitle": "Parrotlet Price: $100 to $900, Plus $160 to $300 Setup",
-    "seoDescription": "Parrotlet cost breakdown: $100-$900 for the bird, roughly $160-$300 setup, monthly costs, avian vet pricing, and one bird versus two.",
+    "seoTitle": "Parrotlet Price: $100 to $900, Plus $210 to $365 Setup",
+    "seoDescription": "Parrotlet cost breakdown: $100-$900 for the bird, roughly $210-$365 setup, monthly costs, avian vet pricing, and one bird versus two.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Parrotlets are the smallest commonly kept parrot, but the price tag and the personality both punch above that size, pricier than a budgie, cheaper than most larger parrots, and with the same one-bird-or-two decision that reshapes a lovebird budget.",
@@ -36089,7 +36091,7 @@
       },
       {
         "q": "What does a full parrotlet setup cost upfront?",
-        "a": "Roughly $160 to $300, covering an 18x18x24 inch (or larger) cage, varied perches, foraging and chew toys, food and water dishes, and a cuttlebone for calcium. The cage is the biggest single line item, and it's worth spending toward the top of that range rather than the bottom."
+        "a": "Roughly $210 to $365, covering an 18x18x24 inch (or larger) cage, varied perches, foraging and chew toys, food and water dishes, and a cuttlebone for calcium. The cage is the biggest single line item, and it's worth spending toward the top of that range rather than the bottom."
       },
       {
         "q": "What are the ongoing monthly costs for a parrotlet?",
@@ -37317,8 +37319,8 @@
     "path": "/content/guides/praying-mantis-cost-guide.mdx",
     "slug": "praying-mantis-cost-guide",
     "title": "How Much Does a Praying Mantis Cost?",
-    "seoTitle": "Praying Mantis Price: $15 to $75, Plus $85 to $145 Setup",
-    "seoDescription": "Full praying mantis cost breakdown: $15-150 for the mantis, $85-145 setup, and why a 6-12 month lifespan matters more than price.",
+    "seoTitle": "Praying Mantis Price: $15 to $75, Plus $65 to $165 Setup",
+    "seoDescription": "Full praying mantis cost breakdown: $15-150 for the mantis, $65-165 setup, and why a 6-12 month lifespan matters more than price.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Praying mantises are one of the most affordable exotic pets available, cheap to buy and cheap to keep, with one important caveat about how long you'll have one.",
@@ -37350,7 +37352,7 @@
       },
       {
         "q": "What does the upfront setup cost for a praying mantis?",
-        "a": "The three required lines, a properly sized enclosure that's taller than it is wide, substrate, and branches or mesh for climbing and molting, come to about $85 to $115. Adding the optional spray bottle and feeding tongs takes it to roughly $100 to $145, before the mantis itself."
+        "a": "The three required lines, a properly sized enclosure that's taller than it is wide, substrate, and branches or mesh for climbing and molting, come to about $65 to $130. Adding the optional spray bottle and feeding tongs takes it to roughly $80 to $165, before the mantis itself."
       },
       {
         "q": "What are the ongoing monthly costs of keeping a praying mantis?",
@@ -38000,8 +38002,8 @@
     "slug": "quaker-parakeet-handling-guide",
     "title": "Is It Legal to Own a Quaker Parakeet? And How to Handle One",
     "seoTitle": "Quaker Parakeet Legality and Handling Guide",
-    "seoDescription": "Quaker parakeets are banned in 13 states including California and Georgia, talk as well as pricier African greys, and are the only nest-building parrot.",
-    "lastUpdated": "2026-09-25",
+    "seoDescription": "Quaker parakeets are banned in 14 states including California and Georgia, talk as well as pricier African greys, and are the only nest-building parrot.",
+    "lastUpdated": "2026-10-01",
     "noIndex": false,
     "excerpt": "Quaker parakeets are intelligent, social, gifted talkers, and also a bird where a legal check needs to happen before anything else.",
     "date": "2026-08-11",
@@ -38032,7 +38034,7 @@
       },
       {
         "q": "Which states commonly ban Quaker parakeets outright?",
-        "a": "Thirteen, on the statute-by-statute count in the quaker legal guide: California, Colorado, Connecticut, Georgia, Hawaii, Kansas, Kentucky, Nebraska, New Jersey, Pennsylvania, Vermont, Wisconsin and Wyoming. Maine, Rhode Island and Arkansas require a permit, Virginia allows the bird on a condition, and Tennessee is unresolved. Nothing reaches the species in the remaining 34 jurisdictions, New York and Ohio among them."
+        "a": "Fourteen, on the statute-by-statute count in the quaker legal guide: California, Colorado, Connecticut, Georgia, Hawaii, Kansas, Kentucky, Maine, Nebraska, New Jersey, Pennsylvania, Vermont, Wisconsin and Wyoming. Rhode Island and Arkansas require a permit, Virginia allows the bird on a condition, and Tennessee is unresolved. Nothing reaches the species in the remaining 34 jurisdictions, New York and Ohio among them."
       },
       {
         "q": "Are Quaker parakeets good talkers?",
@@ -38127,11 +38129,11 @@
     "path": "/content/guides/quaker-parakeet-legal-guide.mdx",
     "slug": "quaker-parakeet-legal-guide",
     "title": "Are Quaker Parrots Legal? The Bird Banned for Nest Building",
-    "seoTitle": "Are Quaker Parrots Legal? 13 States Ban Them",
-    "seoDescription": "Thirteen states ban the quaker parrot outright. The reason is not danger: it is the only parrot that builds stick nests, and it builds them on substations.",
-    "lastUpdated": "2026-09-25",
+    "seoTitle": "Are Quaker Parrots Legal? 14 States Ban Them",
+    "seoDescription": "Fourteen states ban the quaker parrot outright. The reason is not danger: it is the only parrot that builds stick nests, and it builds them on substations.",
+    "lastUpdated": "2026-10-01",
     "noIndex": false,
-    "excerpt": "Thirteen states ban the quaker parrot, more than any other bird we have mapped, and not one of them does it because the bird is dangerous. Kansas puts it on a list with silver carp and zebra mussels.",
+    "excerpt": "Fourteen states ban the quaker parrot, more than any other bird we have mapped, and not one of them does it because the bird is dangerous. Kansas puts it on a list with silver carp and zebra mussels.",
     "date": "2026-09-06",
     "category": "Legal",
     "categories": [
@@ -38149,13 +38151,13 @@
     "image": "/assets/guides/quaker-parakeet-legal.jpg",
     "imageAlt": "Green and gray quaker parakeet perched on a branch with a stick nest structure behind it",
     "emoji": "🦜",
-    "lastReviewed": "2026-09-11",
+    "lastReviewed": "2026-10-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "Which states ban quaker parrots?",
-        "a": "Thirteen: California, Colorado, Connecticut, Georgia, Hawaii, Kansas, Kentucky, Nebraska, New Jersey, Pennsylvania, Vermont, Wisconsin and Wyoming. Maine, Rhode Island and Arkansas require a permit, Virginia allows them on a condition, and Tennessee is unresolved. In the remaining 34 jurisdictions on our map, including New York City, nothing reaches the species."
+        "a": "Fourteen: California, Colorado, Connecticut, Georgia, Hawaii, Kansas, Kentucky, Maine, Nebraska, New Jersey, Pennsylvania, Vermont, Wisconsin and Wyoming. Rhode Island and Arkansas require a permit, Virginia allows them on a condition, and Tennessee is unresolved. In the remaining 34 jurisdictions on our map, including New York City, nothing reaches the species."
       },
       {
         "q": "Why do so many states ban a small parrot?",
@@ -38171,7 +38173,7 @@
       },
       {
         "q": "Can I bring my quaker parrot if I move to a state that bans them?",
-        "a": "Almost certainly not. Of the thirteen ban states, only Wisconsin's rule has a general permit process for a prohibited species, judged on the keeper's knowledge, a site that contains the bird and no significant harm, and nothing in it is written for pets or new residents. The other twelve limit their exceptions to zoos, exhibitors, research or keepers licensed before the rule, and Wyoming bars a permit outright. Ask the destination state's wildlife agency, or Hawaii's Department of Agriculture, before you move, and if the answer is no, rehome the bird in a state where it is legal."
+        "a": "Almost certainly not. Of the fourteen ban states, only Wisconsin's rule has a general permit process for a prohibited species, judged on the keeper's knowledge, a site that contains the bird and no significant harm, and nothing in it is written for pets or new residents. The other thirteen limit their exceptions to zoos, exhibitors, research or keepers licensed before the rule, and Wyoming bars a permit outright. Ask the destination state's wildlife agency, or Hawaii's Department of Agriculture, before you move, and if the answer is no, rehome the bird in a state where it is legal."
       }
     ],
     "relatedProducts": [],
@@ -38836,7 +38838,7 @@
     "path": "/content/guides/rat-cost-guide.mdx",
     "slug": "rat-cost-guide",
     "title": "How Much Does a Pet Rat Really Cost?",
-    "seoTitle": "Pet Rat Price: $10 to $20 Each, Plus $250 to $550 Setup",
+    "seoTitle": "Pet Rat Price: $10 to $20 Each, Plus $230 to $550 Setup",
     "seoDescription": "Real pet rat cost breakdown: pair pricing, multi-level cage setup, monthly costs, vet care, and how a 2 to 3 year lifespan affects your budget.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
@@ -38873,7 +38875,7 @@
       },
       {
         "q": "What does a full rat setup cost upfront?",
-        "a": "Roughly $250 to $550 for a properly housed pair. The cage is by far the biggest line item, a large multi-level wire cage, not a small starter kit, runs anywhere from about $130 for a basic model to $360 for a spacious double-unit cage."
+        "a": "Roughly $230 to $550 for a properly housed pair. The cage is by far the biggest line item, a large multi-level wire cage, not a small starter kit, runs anywhere from about $130 for a basic model to $360 for a spacious double-unit cage."
       },
       {
         "q": "What are the ongoing monthly costs for a pair of rats?",
@@ -40430,7 +40432,7 @@
     "title": "Reptile Emergency Plan: Power Outages, Travel, and Pet Sitters",
     "seoTitle": "Reptile Emergency Plan: Outages, Travel, Pet Sitters",
     "seoDescription": "A reptile emergency plan for power outages, travel, and pet sitters, with species-specific temperature floors, an outage kit, and a fill-in sitter sheet.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "What to actually do when the power goes out, you're leaving town, or you're handing your reptile off to a sitter, with species-specific cold floors in one table.",
     "date": "2026-09-15",
@@ -40534,7 +40536,7 @@
       },
       {
         "q": "Where does the temperature probe actually go?",
-        "a": "At the animal's level, never taped to the back of the heat mat and never left up near the fixture reading room air. For an under-tank mat that means the floor of the warm hide. For an overhead lamp, thermostat manufacturers disagree between the basking surface itself and the air a few inches below the bulb, so follow your controller's instruction and verify the result with a separate thermometer. A probe reading the heat source itself, rather than the level the reptile occupies, can let the basking surface run far hotter than the thermostat's display shows, which is how a correctly set thermostat still produces a burn."
+        "a": "At the animal's level, never against the back of the heat mat and never left up near the fixture reading room air. For an under-tank mat that means the floor of the warm hide, held with a probe clip or suction cup rather than tape. For an overhead lamp, thermostat manufacturers disagree between the basking surface itself and the air a few inches below the bulb, so follow your controller's instruction and verify the result with a separate thermometer. A probe reading the heat source itself, rather than the level the reptile occupies, can let the basking surface run far hotter than the thermostat's display shows, which is how a correctly set thermostat still produces a burn."
       },
       {
         "q": "How do I know what wattage heat source to buy?",
@@ -40561,7 +40563,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 7,
     "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -43191,10 +43193,10 @@
     "slug": "snapping-turtle-legal-guide",
     "title": "Are Snapping Turtles Legal? Seasons, Creel Limits and Bans",
     "seoTitle": "Are Snapping Turtles Legal? Seasons and Bag Limits",
-    "seoDescription": "Twelve states allow snapping turtles with a season and a bag limit, eight ban them, and the answer usually sits in the fishing rules, not the pet rules.",
-    "lastUpdated": "2026-09-16",
+    "seoDescription": "Thirteen states allow snapping turtles with a season or a limit, seven ban them, and the answer usually sits in the fishing rules, not the pet rules.",
+    "lastUpdated": "2026-10-01",
     "noIndex": false,
-    "excerpt": "The snapping turtle is the one native reptile a dozen states still let you take, and they answer it in the fishing regulations rather than the pet ones. Twelve jurisdictions attach a season and a bag limit. Eight ban it outright.",
+    "excerpt": "The snapping turtle is the one native reptile a dozen states still let you take, and they answer it in the fishing regulations rather than the pet ones. Thirteen jurisdictions attach a season or a limit. Seven ban it outright.",
     "date": "2026-09-06",
     "category": "Legal",
     "categories": [
@@ -43212,13 +43214,13 @@
     "image": "/assets/guides/snapping-turtle-legal.jpg",
     "imageAlt": "Common snapping turtle at the muddy edge of a pond with its head raised",
     "emoji": "🐢",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "Is it legal to keep a snapping turtle you found?",
-        "a": "It depends on the state and it is not the same question as whether you may own one. Twelve jurisdictions set an open season and a bag limit for taking one from the wild, usually under a fishing license: New York runs 15 July to 30 September with a twelve-inch minimum, Michigan 15 July to 15 September at two a day, Illinois 15 June to 15 October at two a day. Eight jurisdictions ban possession entirely."
+        "a": "It depends on the state and it is not the same question as whether you may own one. Thirteen jurisdictions set a season, a bag limit or both for taking one from the wild, usually under a fishing license: New York runs 15 July to 30 September with a twelve-inch minimum, Michigan 15 July to 15 September at two a day, Illinois 15 June to 15 October at two a day. Seven jurisdictions ban possession entirely."
       },
       {
         "q": "Why is a snapping turtle in the fishing regulations?",
@@ -43230,7 +43232,7 @@
       },
       {
         "q": "Which states ban snapping turtles outright?",
-        "a": "Eight: California, Nevada, Oregon, Colorado, Delaware, Rhode Island, Hawaii and New York City. Arizona, Iowa and Louisiana restrict them, six require a permit, and twelve allow them with a season or a limit attached."
+        "a": "Seven: California, Nevada, Oregon, Colorado, Rhode Island, Hawaii and New York City. Arizona, Iowa and Louisiana restrict them, six require a permit, and thirteen allow them with a season or a limit attached."
       }
     ],
     "relatedProducts": [],
@@ -43393,8 +43395,8 @@
     "path": "/content/guides/stick-insect-cost-guide.mdx",
     "slug": "stick-insect-cost-guide",
     "title": "How Much Does a Stick Insect Really Cost? (And a Legal Note to Read First)",
-    "seoTitle": "Stick Insect Price: A Few Dollars, Plus $77 to $98 Setup",
-    "seoDescription": "Stick insect cost breakdown: a few dollars per nymph, up to $1,000+ for rare giants, a $77-98 setup, and a USDA permit hobbyists can't realistically get.",
+    "seoTitle": "Stick Insect Price: A Few Dollars, Plus $60 to $125 Setup",
+    "seoDescription": "Stick insect cost breakdown: a few dollars per nymph, up to $1,000+ for rare giants, a $60-125 setup, and a USDA permit hobbyists can't realistically get.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Stick insects are cheap to buy and cheap to keep. The catch in the US is legal: which species you have decides whether you can keep it at all, and most care advice branches on species too.",
@@ -43430,7 +43432,7 @@
       },
       {
         "q": "What does the upfront setup cost for a stick insect?",
-        "a": "Roughly $77 to $98, covering a tall, mesh-topped enclosure, substrate, and a spray bottle for misting. The enclosure is most of it. An optional small heat or grow light adds more, and isn't required for most commonly kept species."
+        "a": "Roughly $60 to $125, covering a tall, mesh-topped enclosure, substrate, and a spray bottle for misting. The enclosure is most of it. An optional small heat or grow light adds more, and isn't required for most commonly kept species."
       },
       {
         "q": "What are the ongoing costs of keeping a stick insect?",
@@ -44881,8 +44883,8 @@
     "path": "/content/guides/swordtail-cost-guide.mdx",
     "slug": "swordtail-cost-guide",
     "title": "How Much Does Swordtail Fish Ownership Really Cost?",
-    "seoTitle": "Swordtail Price: $3 to $25 Each, Plus $115 to $190 Setup",
-    "seoDescription": "Full swordtail fish cost breakdown: $3-25 per fish, a $115-190 starter setup, modest upkeep, and why sizing up past 20 gallons pays off.",
+    "seoTitle": "Swordtail Price: $3 to $25 Each, Plus $135 to $255 Setup",
+    "seoDescription": "Full swordtail fish cost breakdown: $3-25 per fish, a $135-255 starter setup, modest upkeep, and why sizing up past 20 gallons pays off.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Swordtails cost about the same per fish as a molly, but they're the common livebearer that outgrows a 20-gallon starting point the fastest.",
@@ -44914,7 +44916,7 @@
       },
       {
         "q": "What does a basic swordtail tank setup cost?",
-        "a": "A tank, filter, heater, and live plants commonly runs $115 to $190 using a 20-gallon long tank as the base. That 20-gallon figure is the floor for a small trio, but a group wants 30 gallons or more, since swordtails are noticeably more active swimmers than a molly or platy, which pushes the cost somewhat past the table above."
+        "a": "A tank, filter, heater, and live plants commonly runs $135 to $255 using a 20-gallon long tank as the base. That 20-gallon figure is the floor for a small trio, but a group wants 30 gallons or more, since swordtails are noticeably more active swimmers than a molly or platy, which pushes the cost somewhat past the table above."
       },
       {
         "q": "What are the ongoing costs of keeping swordtails?",
@@ -46081,8 +46083,8 @@
     "path": "/content/guides/tiger-salamander-cost-guide.mdx",
     "slug": "tiger-salamander-cost-guide",
     "title": "How Much Does a Tiger Salamander Really Cost?",
-    "seoTitle": "Tiger Salamander Price: $30 to $125, Plus $70 to $120 Setup",
-    "seoDescription": "A full tiger salamander cost breakdown: $30 to $125 for the animal, $70 to $120 for the core setup plus hides, and a lifespan that can reach 25 years.",
+    "seoTitle": "Tiger Salamander Price: $30 to $125, Plus $70 to $160 Setup",
+    "seoDescription": "A full tiger salamander cost breakdown: $30 to $125 for the animal, $70 to $160 for the core setup plus hides, and a lifespan that can reach 25 years.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Tiger salamanders are affordable, and the budgeting story with this species is more about longevity than any single expensive line item.",
@@ -46118,7 +46120,7 @@
       },
       {
         "q": "What does a full tiger salamander setup cost upfront?",
-        "a": "Roughly $70 to $120 for a 20-gallon-long tank, deep moisture-retentive substrate, water conditioner, a shallow water dish, and a thermometer and hygrometer combo. Hides and decor come on top and cost whatever you choose to spend."
+        "a": "Roughly $70 to $160 for a 20-gallon-long tank, deep moisture-retentive substrate, water conditioner, a shallow water dish, and a thermometer and hygrometer combo. Hides and decor come on top and cost whatever you choose to spend."
       },
       {
         "q": "What are the ongoing monthly costs for a tiger salamander?",
@@ -46430,7 +46432,7 @@
     "title": "Is It Legal to Own a Tiger Salamander? Three Separate Rules Explained",
     "seoTitle": "Are Tiger Salamanders Legal? Federal and State Rules",
     "seoDescription": "A 2025 federal rule restricts importing tiger salamanders, not owning one. Bait-trade rules are separate again, and New Jersey bars keeping one at all.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-10-01",
     "noIndex": false,
     "excerpt": "A 2025 federal rule added tiger salamanders to an injurious wildlife list, and headlines made that sound like a ban. It isn't one. The species sits under three separate, unrelated legal regimes, and only one of them has anything to do with owning a pet.",
     "date": "2026-07-18",
@@ -46450,7 +46452,7 @@
     "image": "/assets/guides/tiger-salamander-legal.jpg",
     "imageAlt": "Tiger salamander with yellow and black blotched pattern, representing its legal status",
     "emoji": "🦎",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -46486,7 +46488,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 3,
-    "headingCount": 9,
+    "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -47394,11 +47396,11 @@
     "path": "/content/guides/uromastyx-cost-guide.mdx",
     "slug": "uromastyx-cost-guide",
     "title": "How Much Does a Uromastyx Really Cost?",
-    "seoTitle": "Uromastyx Price: $150 to $400, Plus $500 to $900 Setup",
-    "seoDescription": "Uromastyx cost $150-400, plus $500-900 for a proper 4x2x2 ft setup and $25-45 a month. They commonly live 15-20 years, sometimes past 25 with great care.",
+    "seoTitle": "Uromastyx Price: $150 to $400, Plus $515 to $1,210 Setup",
+    "seoDescription": "Uromastyx cost $150-400, plus $515-1,210 for a proper 4x2x2 ft setup and $25-45 a month. They commonly live 15-20 years, sometimes past 25 with great care.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
-    "excerpt": "Uromastyx sit in a familiar price range for the lizard itself, but a proper setup pushes the upfront cost to $500-900, driven by just how hot and specialized this species' enclosure needs to be.",
+    "excerpt": "Uromastyx sit in a familiar price range for the lizard itself, but a proper setup pushes the upfront cost to $515-1,210, driven by just how hot and specialized this species' enclosure needs to be.",
     "date": "2026-07-24",
     "category": "Reptiles",
     "categories": [
@@ -47431,7 +47433,7 @@
       },
       {
         "q": "What does a proper upfront setup cost?",
-        "a": "Roughly $500 to $900. The largest single expense is the enclosure, 4x2x2 feet at minimum, followed by a halogen basking fixture, a T5 HO UVB kit, a bright daylight LED bar, a thermometer and hygrometer, an infrared temperature gun, and deep sand substrate."
+        "a": "Roughly $515 to $1,210. The largest single expense is the enclosure, 4x2x2 feet at minimum, followed by a halogen basking bulb, a T5 HO UVB kit, a bright daylight LED bar, a thermometer and hygrometer, an infrared temperature gun, and deep sand substrate."
       },
       {
         "q": "How much does a uromastyx cost per month?",
@@ -48293,7 +48295,7 @@
       },
       {
         "q": "Are hognose snakes dangerous?",
-        "a": "No. Their entire defensive act, hooding, hissing, mock striking, and even playing dead, is bluff meant to avoid a confrontation, not start one. They are rear-fanged and mildly venomous, but that venom is not considered medically significant to a healthy person, and genuine aggression in this species is close to unheard of."
+        "a": "No. Their entire defensive act, hooding, hissing, mock striking, and even playing dead, is bluff meant to avoid a confrontation, not start one. They are rear-fanged and mildly venomous: bites are uncommon and their effects stay local, though a snake that holds on can cause real swelling, and genuine aggression in this species is close to unheard of."
       },
       {
         "q": "What's the risk with each of these three pets, if it's not the drama?",
@@ -48688,9 +48690,9 @@
     "path": "/content/guides/whites-tree-frog-cost-guide.mdx",
     "slug": "whites-tree-frog-cost-guide",
     "title": "How Much Does a White's Tree Frog Really Cost?",
-    "seoTitle": "White's Tree Frog Price: $20 to $60, Plus $200 to $400 Setup",
-    "seoDescription": "White's tree frog cost: $20-60 per frog, a $200-400 setup, and why the 16 year average lifespan (one hit 21) makes this a long haul, not a summer pet.",
-    "lastUpdated": "2026-09-25",
+    "seoTitle": "White's Tree Frog Price: $20 to $60, Plus $265 to $490 Setup",
+    "seoDescription": "White's tree frog cost: $20-60 per frog, a $265-490 setup, and why the 16 year average lifespan (one hit 21) makes this a long haul, not a summer pet.",
+    "lastUpdated": "2026-10-01",
     "noIndex": false,
     "excerpt": "White's tree frogs, sometimes called dumpy tree frogs for their round, waxy-skinned build, are one of the more affordable and forgiving amphibians to keep, both to buy and to maintain long term.",
     "date": "2026-07-16",
@@ -48721,11 +48723,11 @@
       },
       {
         "q": "What does a full White's tree frog setup cost upfront?",
-        "a": "Roughly $200 to $400 or more, covering an 18x18x24 inch vertical terrarium, a heat source, a low-level UVB fixture, substrate, and climbing branches and decor."
+        "a": "Roughly $265 to $490, covering an 18x18x24 inch vertical terrarium, a heat source, a low-level UVB fixture, substrate, and climbing branches and decor."
       },
       {
         "q": "What are the ongoing monthly costs for a White's tree frog?",
-        "a": "Roughly $15 to $30 a month. The recurring line items, feeder insects, supplements, the UVB bulb and water conditioner, come to $178 to $365 across a year, and substrate and modest electricity go on top of that. This isn't a species with heavy recurring expenses once the enclosure is built."
+        "a": "Roughly $15 to $30 a month. The recurring line items, feeder insects, supplements, the UVB bulb and water conditioner, come to $178 to $360 across a year, and substrate and modest electricity go on top of that. This isn't a species with heavy recurring expenses once the enclosure is built."
       },
       {
         "q": "How much does veterinary care cost for a White's tree frog?",
@@ -48893,7 +48895,7 @@
     "title": "How to Handle a White's Tree Frog",
     "seoTitle": "How to Handle a White's Tree Frog Safely",
     "seoDescription": "How to handle a White's tree frog safely: why bare hands are the real risk, correct wetted-hand technique, and session length.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-10-01",
     "noIndex": false,
     "excerpt": "White's tree frogs are unusually handleable for an amphibian, docile, slow-moving, and known for their calm, almost smiling expression. But the risk here runs in a direction people don't expect: it's not the frog hurting you, it's you accidentally hurting the frog.",
     "date": "2026-07-16",
@@ -48945,7 +48947,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 7,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -49026,7 +49028,7 @@
     "title": "White's Tree Frog Enclosure Setup: What Your Frog Actually Needs",
     "seoTitle": "White's Tree Frog Enclosure Setup Guide",
     "seoDescription": "White's tree frogs need an 18x18x24 inch enclosure and humidity that dips to 50-60% between mistings, not a constant 70-80% that causes bacterial infections.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-01",
     "noIndex": false,
     "excerpt": "White's tree frogs are a forgiving amphibian to set up correctly once you understand the one detail that trips up a lot of first-time keepers: humidity that's too constantly high causes more problems than humidity that dips a bit low between mistings.",
     "date": "2026-07-16",
@@ -49679,8 +49681,8 @@
     "path": "/content/guides/zebra-danio-cost-guide.mdx",
     "slug": "zebra-danio-cost-guide",
     "title": "How Much Does Zebra Danio Ownership Really Cost?",
-    "seoTitle": "Zebra Danio Price: $2 to $3 Each, Plus $60 to $150 Setup",
-    "seoDescription": "Zebra danio cost: $2-3 per fish, a $60-150 starter setup, and why GloFish danios cost about four times as much.",
+    "seoTitle": "Zebra Danio Price: $2 to $3 Each, Plus $70 to $170 Setup",
+    "seoDescription": "Zebra danio cost: $2-3 per fish, a $70-170 starter setup, and why GloFish danios cost about four times as much.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Zebra danios are about as cheap as a starter fish gets, and one of the few community species where a heater is optional. The price story is the gap between the plain wild-type fish and its glow-in-the-dark GloFish cousin.",
@@ -49712,11 +49714,11 @@
       },
       {
         "q": "What does a basic zebra danio tank setup cost?",
-        "a": "Roughly $60 to $150 for the core equipment: a 10 to 20-gallon long tank ($18-60), a gentle filter ($8-15), and live or silk plants for cover ($18-35). A heater ($18-30) is worth budgeting for if your home runs cool, but is optional in a warm, stable room. Add substrate and a water test kit and most first setups land around $100 to $180."
+        "a": "Roughly $70 to $170 for the core equipment: a 10 to 20-gallon long tank ($18-60), a gentle filter ($5-15), and live or silk plants for cover ($30-60). A heater ($15-35) is worth budgeting for if your home runs cool, but is optional in a warm, stable room. Add substrate and a water test kit and most first setups land around $105 to $210."
       },
       {
         "q": "What are the ongoing costs of keeping zebra danios?",
-        "a": "Very low, even by cheap-fish standards. A flake or micro-pellet food runs roughly $15 to $25 a year for a small school, water conditioner about $9 to $15 a year, and a water test kit is a one-time $25 to $40 purchase you'll use for the life of the tank."
+        "a": "Very low, even by cheap-fish standards. A flake or micro-pellet food runs roughly $15 to $25 a year for a small school, water conditioner about $5 to $15 a year, and a water test kit is a one-time $25 to $40 purchase you'll use for the life of the tank."
       },
       {
         "q": "Why do GloFish zebra danios cost so much more than regular ones?",
@@ -50097,7 +50099,7 @@
     "path": "/content/guides/zebra-finch-cost-guide.mdx",
     "slug": "zebra-finch-cost-guide",
     "title": "How Much Does a Zebra Finch Really Cost?",
-    "seoTitle": "Zebra Finch Price: $30 to $120, Plus $180 to $400 Setup",
+    "seoTitle": "Zebra Finch Price: $30 to $120, Plus $225 to $465 Setup",
     "seoDescription": "Real zebra finch cost breakdown: $15-60 per bird, why you must buy at least a pair, cage setup costs, and monthly food costs.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
@@ -50134,7 +50136,7 @@
       },
       {
         "q": "What does a full zebra finch setup cost upfront?",
-        "a": "Roughly $180 to $400 for a pair, including the birds, a wide flight cage, perches of varied diameter, a shallow bath, and a cuttlebone. The cage is the single biggest line item at $120 to $220 for a quality flight cage."
+        "a": "Roughly $225 to $465 for a pair, including the birds, a wide flight cage, perches of varied diameter, a shallow bath, and a cuttlebone. The cage is the single biggest line item at $175 to $300 for a quality flight cage."
       },
       {
         "q": "What are the ongoing monthly costs for zebra finches?",

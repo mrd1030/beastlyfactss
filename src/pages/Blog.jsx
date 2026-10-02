@@ -1135,7 +1135,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
                 attribute in each MDX file: sourceCount is derived at sync time
                 from the real list, so an authored copy of it would go stale the
                 first time a source moved. */}
-            <ArticleMetaProvider value={{ lastReviewed: post.lastReviewed, sourceCount: post.sourceCount }}>
+            <ArticleMetaProvider value={{ slug: post.slug?.current, lastReviewed: post.lastReviewed, sourceCount: post.sourceCount }}>
             <div ref={contentRef} className="prose prose-base max-w-[37rem] mx-auto dark:prose-invert font-body">
               {post.source === 'mdx' && post.content ? (
                 <MdxArticleBody slug={post.slug.current} components={/-cost-guide$/.test(post.slug.current) ? COST_GUIDE_COMPONENTS : MdxComponents} loadingLabel="Loading article…" />

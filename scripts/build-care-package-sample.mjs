@@ -31,10 +31,17 @@ if (!id) {
   process.exit(1);
 }
 
-const catalogText = readFileSync(join(ROOT, 'src', 'lib', 'data', 'carePackages.js'), 'utf8');
+// CRLF folded to LF: a Windows checkout (core.autocrlf) has CRLF on disk, and
+// the entry pattern below is written against \n.
+const catalogText = readFileSync(join(ROOT, 'src', 'lib', 'data', 'carePackages.js'), 'utf8').replace(/\r\n/g, '\n');
 const entry = catalogText.match(new RegExp(`  \\{\\n    id: '${id}',[\\s\\S]*?\\n  \\},\\n`));
 if (!entry) throw new Error(`${id} is not in the catalog`);
-const field = name => entry[0].match(new RegExp(`    ${name}: '([^']*)'`))?.[1];
+// Single or double quotes: a name with an apostrophe (White's) is written
+// in double quotes in the catalog.
+const field = name => {
+  const m = entry[0].match(new RegExp(`    ${name}: (?:'([^']*)'|"([^"]*)")`));
+  return m ? (m[1] ?? m[2]) : undefined;
+};
 const fieldNum = name => Number(entry[0].match(new RegExp(`    ${name}: (\\d+)`))?.[1]);
 const animal = field('animal');
 const name = field('name');
@@ -83,7 +90,7 @@ try {
       </div>
       <p style="margin:0 0 8pt;"><strong>In this sample:</strong> ${listed.join(', ')}. The contents page shows every one of the ${pages} pages, so you can see exactly what the full package covers before you buy it.</p>
       <p style="margin:0 0 8pt;"><strong>Not in this sample:</strong> the ${rest} pages that follow, which are the full care guide, the health section, the quick reference cards, and the owner tools, checklists and logs.</p>
-      <p style="margin:0;"><strong>The full package</strong> is ${price} at <strong>beastlyfacts.com/care-packages/${id}/</strong>. One purchase, and every corrected edition is a free re-download from your library. The free ${animal.toLowerCase()} care guide it was built from is at beastlyfacts.com/guides/${id}/, and stays free.</p>
+      <p style="margin:0;"><strong>The full package</strong> is ${price} at <strong>beastlyfacts.com/care-packages/${id}/</strong>. One purchase, and every corrected edition is a free re-download from your library. The free ${animal.split(' ').map(w => (/'s$|^(Russian|African)$/.test(w) ? w : w.toLowerCase())).join(' ')} care guide it was built from is at beastlyfacts.com/guides/${id}/, and stays free.</p>
     `;
     if (foot) {
       // The footer is cloned from page 2, so its page number says 2.
