@@ -50,10 +50,11 @@ Things worth knowing before editing:
   heating and thermostats, UVB lighting, emergency plan, stool and urates, gut-loading,
   shedding) own the numbers; prices come only from the cost guide. Where the site disagrees with
   itself, the topic's own guide wins, and the Where the Sources Disagree page says so.
-- **Not in this edition for lack of a site source:** adult weight in grams, sexual maturity age,
-  shed frequency, color "firing", a separate vitamin D3 or multivitamin schedule, mealworms and
-  waxworms, overheating first aid beyond turning the heat off and calling a vet. Add them only
-  once a site guide carries them.
+- **Not in this edition for lack of a site source:** a separate vitamin D3 or multivitamin
+  schedule, and cooling an enclosure with a frozen bottle or by misting (no veterinary or
+  specialist source found on 2 October 2026). Add them only once a site guide carries them.
+  Adult weight, maturity, shed frequency, firing up, the worm feeders, overweight signs,
+  overheating first aid and tail-stump care went onto the site on 2 October 2026 and are in.
 - **Abbreviations are spelled out at first use in reading order** (the cover expands UVB, the
   how-to page defines the units), and every one has a glossary entry. Keep it that way when
   adding a page.
