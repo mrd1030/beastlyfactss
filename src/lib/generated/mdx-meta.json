@@ -27765,7 +27765,7 @@
       },
       {
         "q": "Why are hognose snakes prone to impaction?",
-        "a": "Hognoses are enthusiastic, somewhat messy eaters, and they're prone to swallowing substrate along with their food. Feeding in a separate container away from the loose substrate is the single most effective prevention. Watch for a failure to pass waste, bloating, and lethargy, and see a vet if it doesn't resolve within a reasonable window."
+        "a": "Hognoses are enthusiastic, somewhat messy eaters, and they're prone to swallowing substrate along with their food. Feeding in a separate container away from the loose substrate is the single most effective prevention. Learn your snake's usual gap between a meal and its stool. A missed stool past that gap, with bloating, lethargy or refused food, needs a vet, not more waiting."
       },
       {
         "q": "Can a hognose snake become obese?",
@@ -27791,7 +27791,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 11,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -40535,7 +40535,7 @@
       },
       {
         "q": "Where does the temperature probe actually go?",
-        "a": "At the animal's level, never taped to the back of the heat mat and never left up near the fixture reading room air. For an under-tank mat that means the floor of the warm hide. For an overhead lamp, thermostat manufacturers disagree between the basking surface itself and the air a few inches below the bulb, so follow your controller's instruction and verify the result with a separate thermometer. A probe reading the heat source itself, rather than the level the reptile occupies, can let the basking surface run far hotter than the thermostat's display shows, which is how a correctly set thermostat still produces a burn."
+        "a": "At the animal's level, never against the back of the heat mat and never left up near the fixture reading room air. For an under-tank mat that means the floor of the warm hide, held with a probe clip or suction cup rather than tape. For an overhead lamp, thermostat manufacturers disagree between the basking surface itself and the air a few inches below the bulb, so follow your controller's instruction and verify the result with a separate thermometer. A probe reading the heat source itself, rather than the level the reptile occupies, can let the basking surface run far hotter than the thermostat's display shows, which is how a correctly set thermostat still produces a burn."
       },
       {
         "q": "How do I know what wattage heat source to buy?",
@@ -40562,7 +40562,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 7,
     "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
