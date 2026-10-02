@@ -627,9 +627,9 @@
     "path": "/content/guides/african-fat-tail-cost-guide.mdx",
     "slug": "african-fat-tail-cost-guide",
     "title": "How Much Does an African Fat-Tailed Gecko Really Cost?",
-    "seoTitle": "Fat-Tailed Gecko Price: $75 to $600, Plus $200 to $500 Setup",
+    "seoTitle": "Fat-Tailed Gecko Price: $75 to $600, Plus $325 to $580 Setup",
     "seoDescription": null,
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "African fat-tailed geckos cost more upfront than most beginner geckos, and morphs push that number considerably higher, but the ongoing bills stay modest.",
     "date": "2026-07-26",
@@ -660,7 +660,7 @@
       },
       {
         "q": "What does a full setup cost before the gecko?",
-        "a": "Roughly $200 to $500 with the optional UVB. That covers a 20-gallon long enclosure (40-gallon breeder is a better choice), an under-tank heat mat and thermostat, optional low-output UVB, substrate, three hides, a thermometer/hygrometer, and a water dish."
+        "a": "Roughly $325 to $500 without UVB, $370 to $580 with the optional low-output UVB. That covers a 36x18x18 inch enclosure, an under-tank heat mat and thermostat, substrate, three hides, a thermometer/hygrometer, and a water dish."
       },
       {
         "q": "What are the ongoing monthly costs?",
@@ -672,7 +672,7 @@
       }
     ],
     "relatedProducts": [
-      "tank-20-gallon-long",
+      "enclosure-repti-zoo-36x18x18-50gal",
       "dimming-thermostat-reptizoo-pid",
       "hide-exo-terra-gecko-cave-medium",
       "calcium-repashy-plus-6oz"
@@ -766,7 +766,7 @@
     "title": "African Fat-Tailed Gecko Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do African Fat-Tailed Geckos Eat? Diet and Schedule",
     "seoDescription": "African fat-tailed gecko feeding: a fat-storing tail lets adults fast for weeks to months. Schedule by age, phosphorus-free calcium, and what never to feed.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "The tail is a fat reserve, which is why healthy adults can go months without eating and be completely fine. Here's how to tell that from real trouble.",
     "date": "2026-07-31",
@@ -898,7 +898,7 @@
     "title": "Common African Fat-Tailed Gecko Health Issues",
     "seoTitle": "African Fat-Tailed Gecko Health Issues: Signs & Causes",
     "seoDescription": "African fat-tailed gecko health: metabolic bone disease is the most serious risk from missed calcium, D3, or UVB. Retained shed is the most common complaint.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Fat-tailed geckos are hardy when their two biggest needs, heat and humidity, are met. Nearly every common issue traces back to one of those two things.",
     "date": "2026-07-26",
@@ -967,8 +967,8 @@
     "slug": "african-fat-tail-tank-setup-guide",
     "title": "African Fat-Tailed Gecko Enclosure Setup: Built for the Ground, Not the Branches",
     "seoTitle": "African Fat-Tailed Gecko Enclosure Setup Guide",
-    "seoDescription": "African fat-tailed gecko setup: a 20-gallon tank minimum, warm side at 88-92F on a thermostat, a humid hide at 70-80%, and 4+ inches of burrowing substrate.",
-    "lastUpdated": "2026-09-24",
+    "seoDescription": "African fat-tailed gecko setup: a 36x18-inch floor minimum, warm side at 88-92F on a thermostat, a humid hide at 70-80%, and 4+ inches of burrowing substrate.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Unlike most of the geckos commonly kept as pets, fat-tailed geckos are ground-dwellers and burrowers, not climbers, and the whole setup should reflect that.",
     "date": "2026-07-26",
@@ -995,7 +995,7 @@
     "faqs": [
       {
         "q": "What size enclosure does an African fat-tailed gecko need?",
-        "a": "A 20-gallon long is the minimum for one adult, and a 36x18x16 inch (40-gallon breeder) is meaningfully better. Height buys little here: this is a terrestrial species, on the ground and under it."
+        "a": "36x18x18 inches is the current minimum for one adult, past the old 20-gallon-long floor that many care sheets still print. A 36x18x16 inch 40-gallon breeder gives the same floor. Height buys little here: this is a terrestrial species, on the ground and under it."
       },
       {
         "q": "Does an African fat-tailed gecko need a heat mat or a heat lamp?",
@@ -1015,7 +1015,8 @@
       }
     ],
     "relatedProducts": [
-      "tank-20-gallon-long",
+      "enclosure-repti-zoo-36x18x18-50gal",
+      "tank-aqueon-40-breeder",
       "dimming-thermostat-reptizoo-pid",
       "hide-exo-terra-gecko-cave-medium",
       "sphagnum-moss",
@@ -1029,7 +1030,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -15129,7 +15130,7 @@
     "title": "Corn Snake vs. Hognose Snake: Which Beginner-Friendly Snake Fits You",
     "seoTitle": "Corn Snake vs. Hognose Snake: Beginner Snake Guide",
     "seoDescription": null,
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Corn snake or hognose snake? The differences in size, feeding, and that famous hognose 'death drop', not just which one is trending on social media.",
     "date": "2026-08-26",
@@ -15158,7 +15159,7 @@
     "faqs": [
       {
         "q": "Are hognose snakes venomous, and is that dangerous to keep as a pet?",
-        "a": "Technically yes, but not in any way that matters for a pet owner. Hognoses have small rear fangs and a mild venom evolved to subdue toads, their main prey in the wild. It's not considered medically significant to humans, and captive-bred hognoses very rarely bite at all. The one documented bite case in the literature stayed local: swelling, bruising and mild cellulitis, with no systemic effects."
+        "a": "Technically yes, but not in any way that matters for a pet owner. Hognoses have small rear fangs and a mild venom evolved to subdue toads, their main prey in the wild. Captive-bred hognoses very rarely bite, and the documented bites stay local. A quick bite often does nothing, while a snake that holds on can cause swelling, bruising and mild cellulitis, with no systemic effects."
       },
       {
         "q": "Which is easier to feed, a corn snake or a hognose snake?",
@@ -15166,7 +15167,7 @@
       },
       {
         "q": "Which snake stays smaller, corn snake or hognose?",
-        "a": "Hognose snakes, noticeably. Adult hognoses typically reach 2 to 3.5 feet, while adult corn snakes commonly reach 3.5 to 5 feet. That size difference also means a hognose can be housed comfortably in a smaller adult enclosure, especially adult males, which stay on the smaller end of that range."
+        "a": "Hognose snakes, noticeably. Adult western hognoses run 14 to 37 inches, about 1 to 3 feet, while adult corn snakes commonly reach 3.5 to 5 feet. That size difference also means a hognose can be housed comfortably in a smaller adult enclosure, especially adult males, which stay on the smaller end of that range."
       },
       {
         "q": "Why does my hognose snake play dead?",
@@ -20594,9 +20595,9 @@
     "path": "/content/guides/gargoyle-gecko-cost-guide.mdx",
     "slug": "gargoyle-gecko-cost-guide",
     "title": "How Much Does a Gargoyle Gecko Really Cost?",
-    "seoTitle": "Gargoyle Gecko Price: $50 to $1,000, Plus $230 to $445 Setup",
-    "seoDescription": "Gargoyle geckos cost $50 to $1,000+ depending on morph, plus $230-445 in setup gear. They live 15-20+ years, so budget for decades, not just year one.",
-    "lastUpdated": "2026-09-24",
+    "seoTitle": "Gargoyle Gecko Price: $50 to $1,000, Plus $280 to $520 Setup",
+    "seoDescription": "Gargoyle geckos cost $50 to $1,000+ depending on morph, plus $280-520 in setup gear. They live 15-20+ years, so budget for decades, not just year one.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Gargoyle geckos sit at an interesting price point: affordable for a common reticulated animal, but morphs and proven breeding lines can push the number into four figures.",
     "date": "2026-07-24",
@@ -20627,11 +20628,11 @@
       },
       {
         "q": "What does a complete gargoyle gecko setup cost upfront?",
-        "a": "Roughly $230 to $445 in gear (enclosure, UVB, substrate, decor, thermometer/hygrometer, misting bottle), plus the gecko itself. All-in, a typical setup with a common animal lands around $280 to $745, and a premium morph can push the first-year total past $1,000."
+        "a": "Roughly $280 to $520 in gear (enclosure, UVB, heat bulb and dome, thermostat, substrate, decor, thermometer/hygrometer, misting bottle), plus the gecko itself. All-in, a typical setup with a common animal lands around $330 to $820, and a premium morph can push the first-year total past $1,000."
       },
       {
         "q": "What are the ongoing monthly costs for a gargoyle gecko?",
-        "a": "Most keepers land in the $10 to $25 a month range for food and supplements. One 8-ounce bag of powdered gecko diet lasts a single adult about two months and runs around $20. Insects, the annual UVB bulb swap, and vet care are periodic add-ons rather than monthly expenses."
+        "a": "Most keepers land in the $15 to $30 a month range for food and supplements. One 8-ounce bag of powdered gecko diet lasts a single adult about two months and runs $20 to $28, so plan on six bags a year. Insects, the annual UVB bulb swap, and vet care are periodic add-ons rather than monthly expenses."
       },
       {
         "q": "Does a gargoyle gecko need expensive vet care?",
@@ -20639,7 +20640,7 @@
       },
       {
         "q": "How long do gargoyle geckos live, and how does that affect budgeting?",
-        "a": "15 to 20 years is typical, with some keepers reporting animals still breeding well past 20. Budget a UVB bulb replacement annually, which is the conservative end of the 6-to-12-month window bulbs are rated for. This isn't a short-term pet, budget for decades, not just the first year."
+        "a": "15 to 20 years is typical, with some keepers reporting animals still breeding well past 20. Budget at least one UVB bulb a year. Tubes are replaced every 6 to 12 months depending on the model, so yearly is the longest a bulb should stay in. This isn't a short-term pet, budget for decades, not just the first year."
       }
     ],
     "relatedProducts": [
@@ -20737,7 +20738,7 @@
     "title": "Gargoyle Gecko Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Gargoyle Geckos Eat? Diet and Feeding Schedule",
     "seoDescription": null,
-    "lastUpdated": "2026-09-03",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Gargoyle geckos are more carnivorous than their crested gecko cousins, which is why insects are a required part of the diet here, not just enrichment.",
     "date": "2026-07-30",
@@ -20766,7 +20767,7 @@
     "faqs": [
       {
         "q": "How often should I feed my gargoyle gecko?",
-        "a": "Hatchlings and juveniles get fresh commercial gecko diet daily, adults every 2 to 3 days, though one detailed care sheet breaks life stages out differently and lands on every other day for full adults. For live insects specifically, most sources say weekly for adults, though one specialist source recommends as little as twice a month, citing obesity risk, a real disagreement worth knowing."
+        "a": "Hatchlings and juveniles get fresh commercial gecko diet daily, adults every 2 to 3 days. Live insects go in 1 to 2 times a week for juveniles and adults alike, scaled by body condition rather than the calendar. Vertebrate prey such as pinky mice is what needs a cap, no more than twice a month, because that is where obesity comes from."
       },
       {
         "q": "Do gargoyle geckos need live insects, or is powder enough?",
@@ -20798,7 +20799,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 3,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -20874,7 +20875,7 @@
     "title": "Common Gargoyle Gecko Health Issues and What Causes Them",
     "seoTitle": "Gargoyle Gecko Health Issues: Signs & Causes",
     "seoDescription": "Gargoyle gecko health issues: MBD from calcium deficiency, stuck shed from low humidity, respiratory infection from excess moisture, and floppy tail syndrome.",
-    "lastUpdated": "2026-09-14",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Gargoyle gecko health problems overwhelmingly come down to two husbandry errors: an enclosure that's too wet, or one that doesn't give the gecko enough hiding spots.",
     "date": "2026-07-24",
@@ -20901,7 +20902,7 @@
     "faqs": [
       {
         "q": "What is the first sign of metabolic bone disease in a gargoyle gecko?",
-        "a": "A kinked or wavy tail, a soft jaw, or curved limbs, sometimes with tremors, appetite loss, or loss of coordination. The two calcium sacs under the throat are the other early tell: depleted white sacs are a visible warning. The cause is calcium or vitamin D3 deficiency, often with inadequate UVB."
+        "a": "A kinked or wavy tail, a soft jaw, or curved limbs, sometimes with tremors, appetite loss, or loss of coordination. During an exam, a vet may also look at the calcium sacs, which sit at the back of the palate. The cause is calcium or vitamin D3 deficiency, often with inadequate UVB."
       },
       {
         "q": "Why do gargoyle geckos lose toes or tail tips?",
@@ -20913,7 +20914,7 @@
       },
       {
         "q": "What is floppy tail syndrome and is it gargoyle-specific?",
-        "a": "Yes, it's a condition largely specific to this species, where the tail hangs over the gecko's back or to one side, usually from repeatedly sleeping upside-down on bare glass. Over time it can deform the tail base and hips, making it hard to defecate or, in females, lay eggs. Cluttering the enclosure with hides and branches prevents it."
+        "a": "No. It shows up in crested geckos too, and in both species it is a condition where the tail hangs over the gecko's back or to one side, usually from repeatedly sleeping upside-down on bare glass. Over time it can deform the tail base and hips, making it hard to defecate or, in females, lay eggs. Cluttering the enclosure with hides and branches prevents it."
       },
       {
         "q": "When should I take my gargoyle gecko to a vet?",
@@ -21013,8 +21014,8 @@
     "slug": "gargoyle-mourning-african-fat-tail-gecko-overview",
     "title": "Three Geckos, Three Very Different Pets",
     "seoTitle": "Gargoyle vs Mourning vs African Fat-Tailed Gecko",
-    "seoDescription": "Gargoyle, mourning, and African fat-tailed geckos compared: one avoids heat above 82F, one breeds without males, one burrows and needs extra humidity.",
-    "lastUpdated": "2026-09-24",
+    "seoDescription": "Gargoyle, mourning, and African fat-tailed geckos compared: one has a low 86F heat ceiling, one breeds without males, one burrows and needs extra humidity.",
+    "lastUpdated": "2026-10-02",
     "noIndex": true,
     "excerpt": "Gargoyle, mourning, and African fat-tailed geckos barely share a care sheet. One needs to stay cool, one needs belly heat, one you'll never touch, one you'll hold daily, one digs while the other two climb.",
     "date": "2026-07-27",
@@ -21041,7 +21042,7 @@
     "faqs": [
       {
         "q": "Is a gargoyle gecko the same to keep as a crested gecko?",
-        "a": "Close, but not identical. Gargoyle geckos share the same room-temperature, no-heat-lamp-needed setup as crested geckos, and they're calmer as adults than as skittish juveniles. Two real differences: a gargoyle's bite can break skin, unlike a crested gecko's, and a gargoyle's dropped tail grows back, while a crested gecko's does not."
+        "a": "Close, but not identical. Gargoyle geckos share the crested gecko's cool, humid, climbing setup: a gentle gradient with a basking spot around 82 to 85°F, and air never above 86°F. They're calmer as adults than as skittish juveniles. Two real differences: a gargoyle's bite can break skin, unlike a crested gecko's, and a gargoyle's dropped tail grows back, while a crested gecko's does not."
       },
       {
         "q": "Can I handle a mourning gecko like I would a gargoyle gecko?",
@@ -21062,7 +21063,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 5,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -27467,8 +27468,8 @@
     "slug": "hognose-snake-cost-guide",
     "title": "How Much Does a Western Hognose Snake Really Cost?",
     "seoTitle": "Hognose Snake Price: $50 to $1,000+, Plus $200 to $500 Setup",
-    "seoDescription": "Western hognose cost: $50-100 for a normal morph up to $1,000+ for rare combos, a $200-500 setup, and just $10-25 monthly, cheaper to run than a ball python.",
-    "lastUpdated": "2026-09-25",
+    "seoDescription": "Western hognose cost: $50-100 for a normal morph up to $1,000+ for rare combos, a $200-500 setup, and about $15-28 monthly, cheaper to run than a ball python.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Western hognose snakes are one of the more affordable pet snakes to keep long term, with a low ongoing cost that lands them close to a corn snake and well under a ball python.",
     "date": "2026-07-14",
@@ -27498,11 +27499,11 @@
       },
       {
         "q": "What does the upfront setup cost for a hognose snake?",
-        "a": "Roughly $200 to $500. That covers a PVC or glass enclosure sized around 2x2x2 feet or 36x18x18 inches, a halogen basking bulb with a thermostat or dimmer, a digital thermometer and hygrometer, deep loose substrate for burrowing, hides, and a water bowl."
+        "a": "Roughly $200 to $500. That covers a PVC or glass enclosure sized around 2x2x2 feet or 36x18x18 inches, a halogen basking bulb in a fixture on a dimming thermostat, a digital thermometer and hygrometer, deep loose substrate for burrowing, hides, and a water bowl."
       },
       {
         "q": "What are the ongoing monthly costs for a hognose snake?",
-        "a": "Roughly $10 to $25 a month. Hognoses don't eat as often as some other snakes, so frozen and thawed rodents plus the occasional substrate change cover nearly all of it."
+        "a": "Roughly $15 to $28 a month, or $180 to $330 a year. Frozen and thawed rodents are the largest line even though hognoses don't eat as often as some other snakes, and electricity for the heat, an annual wellness check and the occasional substrate change make up the rest."
       },
       {
         "q": "What do vet visits cost for a hognose snake?",
@@ -27515,7 +27516,7 @@
     ],
     "relatedProducts": [
       "enclosure-repti-zoo-36x18x18-50gal",
-      "under-tank-heat-mat-thermostat-kit",
+      "milk-snake-halogen-bulb-exo-terra-sun-glo-50w",
       "cork-bark-round-hide",
       "digital-thermometer-hygrometer-combo",
       "aspen-shavings-substrate"
@@ -27669,8 +27670,8 @@
     "slug": "hognose-snake-handling-guide",
     "title": "How to Handle a Western Hognose Snake (And Why the Drama Is Mostly Bluff)",
     "seoTitle": "How to Handle a Hognose Snake Correctly",
-    "seoDescription": "A hognose's hood-and-hiss display and death-feigning act are pure bluff. Rear-fanged and mildly venomous, and the one documented bite took months to heal.",
-    "lastUpdated": "2026-09-24",
+    "seoDescription": "A hognose's hood-and-hiss display and death-feigning act are pure bluff. Rear-fanged and mildly venomous: bites are rare, and even a bad one stays local.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Western hognose snakes have built their reputation on a dramatic defensive display that looks alarming and means almost the opposite of what it appears to. Understanding that display is the whole key to handling this species well.",
     "date": "2026-07-14",
@@ -27705,7 +27706,7 @@
       },
       {
         "q": "Are Western hognose snakes dangerous to handle?",
-        "a": "The rear-fanged venom isn't considered medically significant to a healthy person, and the one documented bite case in the literature came down the same way: not a dangerous species, just one to handle thoughtfully. That case is still worth knowing about: swelling, bruising, and mild cellulitis at the bite site, no systemic effects, and a recovery that ran about five months."
+        "a": "Not dangerous, but not harmless either. Bites are documented and uncommon, mostly from a hungry snake around feeding time, and the effects stay local. A quick bite often does nothing; a snake that holds on or chews can cause marked swelling and bruising. In the best-known case a keeper had swelling, bruising and mild cellulitis, no systemic effects, and a recovery that ran about five months."
       },
       {
         "q": "What causes a hognose snake to bite?",
@@ -27722,7 +27723,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -27765,7 +27766,7 @@
       },
       {
         "q": "Why are hognose snakes prone to impaction?",
-        "a": "Hognoses are enthusiastic, somewhat messy eaters, and they're prone to swallowing substrate along with their food. Feeding in a separate container away from the loose substrate is the single most effective prevention. Watch for a failure to pass waste, bloating, and lethargy, and see a vet if it doesn't resolve within a reasonable window."
+        "a": "Hognoses are enthusiastic, somewhat messy eaters, and they're prone to swallowing substrate along with their food. Feeding in a separate container away from the loose substrate is the single most effective prevention. Learn your snake's usual gap between a meal and its stool. A missed stool past that gap, with bloating, lethargy or refused food, needs a vet, not more waiting."
       },
       {
         "q": "Can a hognose snake become obese?",
@@ -27791,7 +27792,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 11,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -27802,10 +27803,10 @@
     "slug": "hognose-snake-legal-guide",
     "title": "Is It Legal to Own a Hognose Snake? State-by-State Guide",
     "seoTitle": "Is a Hognose Snake Legal in Your State? Full Guide",
-    "seoDescription": "Hognoses are exempt from venomous-reptile bans everywhere checked. Georgia bans them as pets outright, and Colorado's 2026 rule covers only two subspecies.",
-    "lastUpdated": "2026-10-01",
+    "seoDescription": "Hognose snakes clear venomous-reptile laws almost everywhere. Six places ban them, Georgia and New York City among them, and Colorado's 2026 rule splits them.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
-    "excerpt": "Hognose snakes are mildly rear-fanged, but that doesn't make them a regulated venomous species anywhere we checked. The restriction to watch for is Georgia, which bans keeping native hognose as pets regardless of captive-bred origin.",
+    "excerpt": "Hognose snakes are mildly rear-fanged, and New York City is the one place that regulates them for it. The restrictions to watch for are native-wildlife rules: Georgia, West Virginia and Kansas bar the hognose as their own wildlife, whatever the animal's origin.",
     "date": "2026-07-22",
     "category": "Legal",
     "categories": [
@@ -27829,7 +27830,7 @@
     "faqs": [
       {
         "q": "Is a hognose snake venomous, and does that make it illegal?",
-        "a": "Hognose snakes are mildly rear-fanged, meaning they produce a weak venom used mostly to subdue toads, but medical case reports describe bites as causing local swelling at worst, not a systemic reaction. Every state venomous-reptile law we checked, including Alabama, Kentucky, Louisiana, Arkansas, and Florida, specifically excludes the genus Heterodon by name."
+        "a": "Hognose snakes are mildly rear-fanged, with a weak venom used mostly to subdue toads, and case reports describe local effects, not systemic ones. Kentucky and Alabama name the genus Heterodon as an exception to their venomous-reptile bans, and New Hampshire names the western hognose. Arkansas, Florida and Louisiana clear it without naming it. New York City goes the other way and bans rear-fanged colubrids, the hognose included."
       },
       {
         "q": "Can I legally own a hognose snake in Georgia?",
@@ -27858,7 +27859,7 @@
     "title": "Western Hognose Snake Enclosure Setup: Dry, Deep, and Built for Burrowing",
     "seoTitle": "Hognose Snake Enclosure Setup Guide",
     "seoDescription": "Western hognose enclosure setup: males need 20 gallons, females 40, basking 90-95°F, 30-50% humidity, and 3-6 inches of dry, diggable substrate.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Western hognose care comes down to a fairly short list of priorities: keep it dry, keep the substrate deep enough to burrow in, and get the heat source right.",
     "date": "2026-07-14",
@@ -27889,7 +27890,7 @@
       },
       {
         "q": "What temperature does a hognose snake enclosure need?",
-        "a": "A basking area around 90 to 95°F on one end, a cool side at 70 to 75°F, and a night temperature around 75 to 78°F. The commonly recommended heat source is a low-wattage halogen basking bulb over the substrate on a thermostat or dimmer, rather than a heat mat or ceramic heat emitter as the primary source."
+        "a": "A basking area around 90 to 95°F on one end, a cool side at 70 to 75°F, and nights that can fall to room temperature, no colder than about 60°F. The commonly recommended heat source is a low-wattage halogen basking bulb over the substrate on a dimming thermostat, rather than a heat mat or ceramic heat emitter as the primary source."
       },
       {
         "q": "How humid should a hognose snake enclosure be?",
@@ -27906,7 +27907,8 @@
     ],
     "relatedProducts": [
       "enclosure-repti-zoo-36x18x18-50gal",
-      "under-tank-heat-mat-thermostat-kit",
+      "milk-snake-halogen-bulb-exo-terra-sun-glo-50w",
+      "dimming-thermostat-pt02t",
       "aspen-shavings-substrate",
       "cork-bark-round-hide",
       "digital-thermometer-hygrometer-combo"
@@ -27916,7 +27918,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -31364,7 +31366,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 3,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -40430,7 +40432,7 @@
     "title": "Reptile Emergency Plan: Power Outages, Travel, and Pet Sitters",
     "seoTitle": "Reptile Emergency Plan: Outages, Travel, Pet Sitters",
     "seoDescription": "A reptile emergency plan for power outages, travel, and pet sitters, with species-specific temperature floors, an outage kit, and a fill-in sitter sheet.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "What to actually do when the power goes out, you're leaving town, or you're handing your reptile off to a sitter, with species-specific cold floors in one table.",
     "date": "2026-09-15",
@@ -40534,7 +40536,7 @@
       },
       {
         "q": "Where does the temperature probe actually go?",
-        "a": "At the animal's level, never taped to the back of the heat mat and never left up near the fixture reading room air. For an under-tank mat that means the floor of the warm hide. For an overhead lamp, thermostat manufacturers disagree between the basking surface itself and the air a few inches below the bulb, so follow your controller's instruction and verify the result with a separate thermometer. A probe reading the heat source itself, rather than the level the reptile occupies, can let the basking surface run far hotter than the thermostat's display shows, which is how a correctly set thermostat still produces a burn."
+        "a": "At the animal's level, never against the back of the heat mat and never left up near the fixture reading room air. For an under-tank mat that means the floor of the warm hide, held with a probe clip or suction cup rather than tape. For an overhead lamp, thermostat manufacturers disagree between the basking surface itself and the air a few inches below the bulb, so follow your controller's instruction and verify the result with a separate thermometer. A probe reading the heat source itself, rather than the level the reptile occupies, can let the basking surface run far hotter than the thermostat's display shows, which is how a correctly set thermostat still produces a burn."
       },
       {
         "q": "How do I know what wattage heat source to buy?",
@@ -40561,7 +40563,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 7,
     "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -48293,7 +48295,7 @@
       },
       {
         "q": "Are hognose snakes dangerous?",
-        "a": "No. Their entire defensive act, hooding, hissing, mock striking, and even playing dead, is bluff meant to avoid a confrontation, not start one. They are rear-fanged and mildly venomous, but that venom is not considered medically significant to a healthy person, and genuine aggression in this species is close to unheard of."
+        "a": "No. Their entire defensive act, hooding, hissing, mock striking, and even playing dead, is bluff meant to avoid a confrontation, not start one. They are rear-fanged and mildly venomous: bites are uncommon and their effects stay local, though a snake that holds on can cause real swelling, and genuine aggression in this species is close to unheard of."
       },
       {
         "q": "What's the risk with each of these three pets, if it's not the drama?",

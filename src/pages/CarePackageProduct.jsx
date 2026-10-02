@@ -121,7 +121,7 @@ export default function CarePackageProduct() {
   const amount = pkg.price?.replace(/[^\d.]/g, '') || '';
   // Lowercased for running text, except a possessive proper name: White's
   // tree frog, not white's tree frog.
-  const animalLower = pkg.animal.split(' ').map(w => (/'s$/.test(w) ? w : w.toLowerCase())).join(' ');
+  const animalLower = pkg.animal.split(' ').map(w => (/'s$|^(Russian|African)$/.test(w) ? w : w.toLowerCase())).join(' ');
 
   const hook = copy?.hook || pkg.name;
   const heroParagraph = copy?.heroParagraph || pkg.blurb;

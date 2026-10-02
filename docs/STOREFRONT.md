@@ -82,7 +82,7 @@ price, and it is correct as recorded.
 
 ### Live products and prices
 
-The whole lineup, on `acct_1Tbn669qtY3Ob6va` in **live mode**. All 17 are
+The whole lineup, on `acct_1Tbn669qtY3Ob6va` in **live mode**. All 20 are
 $8.99 USD, one time, and every product carries `metadata.package_id` matching
 the catalog id and a `url` pointing at its product page.
 
@@ -105,6 +105,9 @@ the catalog id and a `url` pointing at its product page.
 | `cockatiel` | `prod_VMgJ1o5OmKLIVC` | `price_1ULwwQ9qtY3Ob6vaZoUuXLtw` |
 | `cockatoo` | `prod_VMgJgk5Yr4fsMX` | `price_1ULwwY9qtY3Ob6vaVwNPPWLL` |
 | `whites-tree-frog` | `prod_VMgJWxlccGOkk8` | `price_1ULwwZ9qtY3Ob6vaXWw8eqo1` |
+| `hognose-snake` | `prod_VMpDW7Pcqazx8i` | `price_1UM5ZC9qtY3Ob6vagncB2NR6` |
+| `gargoyle-gecko` | `prod_VMpD1jV6jPxHwG` | `price_1UM5ZE9qtY3Ob6va7nQlh94C` |
+| `african-fat-tail` | `prod_VMpDSeXWhHTCe2` | `price_1UM5ZF9qtY3Ob6vaVvMy9Fdr` |
 
 These ids are in `stripePriceId` in the catalog and in `priceIdLive` in the
 Worker's `CARE_PACKAGE_STORE`. All 14 packages now carry

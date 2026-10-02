@@ -854,6 +854,149 @@ export const CARE_PACKAGE_COPY = {
     ],
   },
 
+
+  // Written from the source HTML, edition 1.0, the same way as the tree frog.
+
+  'hognose-snake': {
+    hook: 'The hood and the hiss are a bluff. The dry air is the real rule.',
+    heroParagraph:
+      'A 44-page printable manual with the enclosure sized by sex, a dry setup at 30 to 50% humidity, prey by gram weight, what the hood, the hiss and the death act mean, the venom question answered from the bite research, a state-by-state legal summary, seven health pages, and the printable owner tools.',
+    heroTicks: ['44 pages, print or view', 'Intermediate level', 'No external links inside the PDF'],
+    roulette: [
+      'Misting advice borrowed from a tropical snake, for an animal from the dry prairie',
+      'An adult still fed every week, because that is what it ate as a hatchling',
+      'A snake that hoods, hisses and rolls over, and a forum that calls it aggressive or dying',
+      '"Venomous" on one page, "harmless" on the next, and no word on whether it is legal where you live',
+    ],
+    answers: [
+      '30 to 50% humidity, no misting, and one humid hide for shedding, because damp air is the root of respiratory infection and scale rot',
+      "Prey sized by the snake's weight in grams, every 5 to 7 days while young and about every two weeks as an adult, fed in a separate container",
+      'The hood, the hiss and the death act explained as bluff, and the one sign that is not the act: limp with no trigger',
+      'Rear-fanged and mildly venomous, from two bite studies, and all 50 states, the District of Columbia and New York City sorted into legal, conditional, permit-only and banned',
+    ],
+    inside: [
+      { emoji: '🏠', title: 'Dry, deep housing', line: 'The enclosure sized by sex, a 90 to 95°F basking surface, nights at room temperature but no colder than 60°F, every heat source on a thermostat, optional UVB (ultraviolet B) light, and 3 to 6 inches of substrate, deepest at the cool end.' },
+      { emoji: '🐭', title: 'Feeding by gram weight', line: "Prey by the snake's weight, frozen-thawed and fed in a separate container, safe thawing, the adult schedule that prevents obesity, and the refusing hognose." },
+      { emoji: '🐍', title: 'The bluff and the venom', line: 'Hooding, hissing and playing dead, what two bite studies found, how feeding bites happen, and cool water over the face to make a snake let go.' },
+      { emoji: '⚖️', title: 'The law, state by state', line: 'Legal in 27, conditional in 15, permit-only in 4 and banned in 6, with which hognose each rule reaches. Three of the six bans reach only the native hognoses.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Respiratory infection and scale rot, impaction, regurgitation and obesity, mites and Cryptosporidium, stuck shed, mouth rot, burns, prolapse, and the winter slowdown.' },
+      { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, outage plan, pet-sitter sheet, and the logs.' },
+    ],
+    previewHeadline: 'The gradient, the venom page, and the card that lives by the enclosure.',
+    previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
+      { page: 7, alt: 'The temperature gradient: basking 90 to 95°F, cool side 70 to 75°F, nights at room temperature but no colder than 60°F' },
+      { page: 15, alt: 'The venom question and bites: rear-fanged and mildly venomous, two bite studies, and what to do if a snake holds on' },
+      { page: 25, alt: 'Respiratory and belly-scale infections: one cause, too much moisture, with signs and the vet response for each' },
+      { page: 32, alt: 'Emergency and quick targets card, to print and post near the enclosure' },
+      { page: 33, alt: 'Budget and shopping list, setup and yearly costs' },
+    ],
+    whoFor: [
+      'New western hognose owners setting up the enclosure before the snake comes home',
+      'Keepers whose hognose hoods, plays dead or turns down food, and want to know which of those is normal',
+      'Anyone checking whether a hognose is legal in their state, or their city, before buying one',
+    ],
+    whatNot: [
+      'Not a substitute for a veterinarian who sees reptiles',
+      'Not legal advice: a summary of state rules as of October 2026, to confirm with your state and city',
+      'Not a subscription, one purchase and every corrected edition is free',
+    ],
+  },
+
+  'gargoyle-gecko': {
+    hook: 'It needs heat, and it cannot take much of it.',
+    heroParagraph:
+      'A 41-page printable manual with the tall, cluttered enclosure, a gentle warm spot under an 86°F ceiling, a humidity cycle that dries out every day, powder and insects on a real schedule, six health pages, and the printable owner tools.',
+    heroTicks: ['41 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
+    roulette: [
+      'A care sheet that says "no heat needed," and an enclosure with no warm spot at all',
+      'Humidity held high around the clock, or left to sit dry for days',
+      'Insects called an optional treat, the way crested gecko sheets describe them',
+      'A tall enclosure with bare glass walls, and a gecko sleeping upside down on them',
+    ],
+    answers: [
+      'A basking spot of 82 to 85°F on a thermostat, a 70 to 75°F cool end, and the 86°F ceiling and 65°F floor printed as limits, not targets',
+      'A heavy evening mist, then a dry-back toward 50 percent before the next one, with a chart of the daily cycle',
+      'Complete diet powder every 2 to 3 days and dusted, gut-loaded insects 1 to 2 times a week for an adult, checked against its weight in grams',
+      'Branches and cork from the floor to the top, because sleeping on bare glass is what bends the tail into floppy tail syndrome',
+    ],
+    inside: [
+      { emoji: '🏠', title: 'The tall, cluttered enclosure', line: 'The 18 by 18 by 24 inch minimum measured in height, where it goes, safe substrates, and branches and cork from the floor to the top.' },
+      { emoji: '🌡️', title: 'The gradient and the ceiling', line: 'An 82 to 85°F basking spot, the 86°F limit and 65°F floor, a thermostat on every bulb, the daily wet-dry cycle, and UVB (ultraviolet B) light.' },
+      { emoji: '🦗', title: 'Powder and insects', line: 'Complete diet powder and live insects by age, gut-loading and two dusting jars, the never-feed list, and a growth table in grams.' },
+      { emoji: '🤲', title: 'Handling, the bite and the tail', line: "Two weeks to settle, a bite that can break skin, a tail that grows back unlike a crested gecko's, sexing, eggs, and quarantine." },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Metabolic bone disease, floppy tail and tail loss, stuck shed and toe loss, respiratory infection, overheating, parasites and mouth rot.' },
+      { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, heat wave and outage plan, pet-sitter sheet, and the logs.' },
+    ],
+    previewHeadline: 'The heat limit, the feeding schedule, and the card that lives by the enclosure.',
+    previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
+      { page: 6, alt: 'The gradient and the 86°F ceiling: the temperature table with its two limits, and the bulb on a thermostat' },
+      { page: 11, alt: 'Diet and feeding by age: complete diet powder and live insects, with the schedule for juveniles and adults' },
+      { page: 24, alt: 'Floppy tail syndrome and tail loss: cause, signs and treatment for each, and the test of where the gecko sleeps' },
+      { page: 29, alt: 'Emergency and quick targets card, to print and post near the enclosure' },
+      { page: 30, alt: 'Budget and shopping list, setup and yearly costs' },
+    ],
+    whoFor: [
+      'New gargoyle gecko owners setting up the enclosure before the gecko comes home',
+      'Crested gecko keepers adding a gargoyle, who need the differences spelled out',
+      'Anyone whose room runs warm in summer, or whose gecko sleeps on the glass',
+    ],
+    whatNot: [
+      'Not a substitute for a veterinarian who treats reptiles',
+      'Not a live website mirror, a clean printable package instead',
+      'Not a subscription, one purchase and every corrected edition is free',
+    ],
+  },
+
+  // Written from the source HTML, edition 1.0, the same way as the tree frog.
+
+  'african-fat-tail': {
+    hook: 'Not a leopard gecko with a different pattern. The difference is one damp box.',
+    heroParagraph:
+      'A 42-page printable manual with every way it differs from a leopard gecko, belly heat on a thermostat with the probe where it belongs, the humid hide that keeps skin off the toes, a soil mix it can burrow in, feeding by age, seven health pages, and the printable owner tools.',
+    heroTicks: ['42 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
+    roulette: [
+      'A leopard gecko care sheet at 30 to 40 percent humidity, and old skin ringing the toes after every shed',
+      'A heat mat plugged straight into the wall, or a probe taped to the back of the mat',
+      '"Pure sand" in one post and "never loose substrate" in the next, for a gecko that digs',
+      'A feeding chart that counts days, for a gecko that can go weeks without eating and be fine',
+    ],
+    answers: [
+      '50 to 70 percent through the enclosure and a humid hide held at 70 to 80, the one box that prevents almost all stuck shed',
+      '88 to 92°F (31 to 33°C) at the warm side surface, on a thermostat, with the probe flat on the warm hide floor and a second thermometer beside it',
+      'A 70/30 topsoil and play sand mix at least 4 inches deep for healthy adults, and paper towel for juveniles, quarantine and any unwell gecko',
+      'Daily feeding for hatchlings easing to 3 to 4 times a week for adults, corrected by the tail: as thick as the neck or thicker',
+    ],
+    inside: [
+      { emoji: '🦎', title: 'Not a leopard gecko', line: 'Origin, humidity, temperament, substrate, heat, enclosure, nest temperature and price side by side, and what carries across.' },
+      { emoji: '🏜️', title: 'Housing, heat and the humid hide', line: 'The 36 by 18 by 18 inch minimum or a 40-gallon breeder with the same floor, a heat mat on a thermostat, three hides, the burrowing mix, and optional UVB (ultraviolet B).' },
+      { emoji: '🦗', title: 'Feeding by age', line: 'Five feeding pages: hatchling portions to adult intervals, staples, treats and the never-feed list, gut-loading and dusting, and why it stops eating.' },
+      { emoji: '🤲', title: 'Handling, females and quarantine', line: 'A calm gecko handled low and never by the tail, sexing and body condition, the laying box every female needs, and 3 to 6 months of quarantine.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Retained shed and eye problems, metabolic bone disease, impaction and respiratory infection, egg binding and prolapse, parasites, mouth rot, tail loss and burns.' },
+      { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, outage plan, pet-sitter sheet, and the logs.' },
+    ],
+    previewHeadline: 'The side-by-side, the probe and the hide, and the card that lives by the enclosure.',
+    previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
+      { page: 5, alt: 'Fat-tail or leopard gecko: origin, humidity, temperament, substrate, belly heat, enclosure and price side by side' },
+      { page: 7, alt: 'Belly heat, the thermostat and the probe: warm side, cool side and night targets, and where the probe goes' },
+      { page: 8, alt: 'Humidity and the three hides: 50 to 70 percent in the enclosure and a humid hide held at 70 to 80' },
+      { page: 23, alt: 'Retained shed and eye problems: cause, signs, response and recovery for skin stuck on the toes and tail tip' },
+      { page: 30, alt: 'Emergency and quick targets card, to print and post near the enclosure' },
+    ],
+    whoFor: [
+      'New African fat-tailed gecko owners setting up the enclosure before the gecko comes home',
+      'Leopard gecko keepers adding a fat-tail, or running one from a leopard gecko care sheet',
+      'Keepers whose gecko keeps leaving old skin on its toes or tail tip',
+    ],
+    whatNot: [
+      'Not a substitute for a veterinarian who sees reptiles',
+      'Not a live website mirror, a clean printable package instead',
+      'Not a subscription, one purchase and every corrected edition is free',
+    ],
+  },
+
 };
 
 export function getCarePackageCopy(id) {
