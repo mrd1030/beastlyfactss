@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
-"""Assemble the russian-tortoise care package.
+"""Assemble the Russian Tortoise care package, edition 3.0 (Testudo horsfieldii).
 
 Content files carry <!--PAGE key--> markers. Page numbers are assigned in
 document order, {{P:key}} tokens are resolved to those numbers, the TOC is
 generated from SECTIONS, and each page gets its footer. Splitting or adding a
 page only means editing the content and SECTIONS; every number follows.
+
+The build fails on a duplicate page key, a page missing from the contents, a
+contents entry with no page, an unknown {{P:key}}, a leftover placeholder, an
+em or en dash (character or entity), a literal "page N" cross-reference,
+an external link (http or www), or a British word on the banned list.
 """
 import base64
 import os
@@ -13,66 +18,89 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.normpath(os.path.join(HERE, "..", "russian-tortoise.html"))
+# The cover photo every edition since 2.0 has carried, embedded as base64 only,
+# never resized or re-encoded (md5 35a2a824de746f5b8bdf606dc5642548).
 COVER = os.path.normpath(os.path.join(HERE, "..", "..", "images", "russian-tortoise-cover-3.jpg"))
+
+EDITION = "3.0"
 
 # TOC: (section label, [(key, title), ...])
 SECTIONS = [
     ("Getting Started", [
         ("howto", "How to Use This Package"),
     ]),
-    ("Section 01 &middot; Quick Profile", [
+    ("Section 01 &middot; Profile", [
         ("profile", "Quick Profile &amp; Cost Overview"),
+        ("species", "The Species, Size &amp; Lifespan"),
     ]),
-    ("Section 02 &middot; Full Care Guide", [
-        ("housing", "Enclosure Size, Type &amp; the Table Question"),
-        ("heat", "Temperature, Basking &amp; Night Lows"),
-        ("uvb", "UVB, Lighting &amp; the Equipment That Controls It"),
-        ("humidity", "Humidity, Substrate &amp; the Moist Hide"),
-        ("outdoor", "Outdoor Housing &amp; Escape-Proofing"),
-        ("handling", "Handling, Temperament &amp; Why Males Live Alone"),
-        ("diet", "Diet: What a Steppe Grazer Actually Eats"),
-        ("weeds", "Weeds, Grazing &amp; Growing Your Own"),
-        ("never", "Fruit, Protein, Supplements &amp; the Never-Feed List"),
-        ("mistakes", "Common Mistakes &amp; Enrichment"),
-        ("sexing", "Sexing, Growth &amp; Body Condition"),
-        ("eggs", "Females, Eggs &amp; Egg Binding"),
+    ("Section 02 &middot; Housing &amp; Environment", [
+        ("enclosure", "Enclosure Size, Type &amp; Where It Goes"),
+        ("temperature", "Temperature, Basking &amp; Night Lows"),
+        ("equipment", "Thermostats, Timers &amp; Thermometers"),
+        ("uvb", "UVB: Tube, Strength &amp; Mounting Distance"),
+        ("substrate", "Humidity, Substrate &amp; Furnishings"),
+        ("outdoor", "Outdoor Pens &amp; Escape-Proofing"),
+        ("cleaning", "Cleaning &amp; Hygiene"),
     ]),
-    ("Section 03 &middot; Health &amp; Common Issues", [
-        ("redflags", "Health Red Flags &amp; What to Tell the Vet"),
+    ("Section 03 &middot; Feeding", [
+        ("diet", "Diet by Age &amp; How Much"),
+        ("weeds", "Weeds, Hay &amp; Growing Your Own"),
+        ("never", "Fruit, Protein &amp; the Never-Feed List"),
+        ("supplements", "Calcium, Multivitamin &amp; Water"),
+        ("growth", "Growth, Weight &amp; Body Condition"),
+    ]),
+    ("Section 04 &middot; Handling &amp; Behavior", [
+        ("handling", "Handling &amp; Hygiene"),
+        ("behavior", "Daily Rhythm, Courtship &amp; Living Alone"),
+        ("enrichment", "Enrichment &amp; Common Mistakes"),
+    ]),
+    ("Section 05 &middot; Arrival &amp; Life Stages", [
+        ("arrival", "Choosing a Tortoise, Quarantine &amp; the First Vet Visit"),
+        ("eggs", "Sexing &amp; Females That Lay"),
+        ("binding", "Egg Binding"),
+        ("brumation", "Brumation: the Decision &amp; the Protocol"),
+    ]),
+    ("Section 06 &middot; The Law", [
+        ("legal", "Is a Russian Tortoise Legal Where You Live?"),
+        ("legal2", "The Four-Inch Rule &amp; the Trade"),
+    ]),
+    ("Section 07 &middot; Health &amp; Common Issues", [
+        ("redflags", "Red Flags &amp; Finding a Vet"),
         ("mbd", "Metabolic Bone Disease &amp; Pyramiding"),
         ("respiratory", "Respiratory Infection &amp; Herpesvirus"),
-        ("shell", "Shell Rot, Trauma &amp; Abscesses"),
-        ("parasites", "Parasites, the Fecal Test &amp; Quarantine"),
-        ("minor", "Vitamin A Deficiency, Cloacoliths &amp; Beak Overgrowth"),
-        ("brumation", "Brumation: the Decision and the Protocol"),
-        ("poop", "Reading Droppings, Urates &amp; Hydration"),
+        ("shell", "Shell Rot, Shell Trauma &amp; Abscesses"),
+        ("parasites", "Parasites &amp; Hexamita"),
+        ("vitamina", "Vitamin A, Bladder Stones &amp; Beak Overgrowth"),
+        ("stool", "Reading Droppings, Urates &amp; Hydration"),
     ]),
-    ("Section 04 &middot; Quick Reference", [
-        ("legal", "The Law &amp; the Four-Inch Rule"),
+    ("Section 08 &middot; Quick Reference", [
         ("checklist", "Setup Checklist &amp; Targets"),
         ("emergency", "Emergency &amp; Quick Targets Card"),
     ]),
-    ("Section 05 &middot; Owner Tools", [
+    ("Section 09 &middot; Owner Tools", [
         ("budget", "Budget &amp; Shopping List"),
-        ("first30", "First 30 Days Checklist"),
+        ("first30", "First 30 Days"),
         ("symptoms", "Symptom Quick Reference"),
         ("routine", "Daily, Weekly &amp; Seasonal Routine"),
-        ("outage", "Power Outages, Travel &amp; Transport"),
+        ("outage", "Power Outages, Heat Waves, Travel &amp; Transport"),
         ("sitter", "Pet-Sitter Sheet"),
         ("ownerlog", "Owner Log"),
-        ("equiplog", "Equipment, Supplement &amp; Vet Log"),
+        ("equiplog", "Equipment &amp; Vet Log"),
+        ("enrichlog", "Enrichment Checklist &amp; Log"),
     ]),
     ("Reference", [
-        ("glossary", "Glossary"),
+        ("glossary", "Glossary, A to M"),
+        ("glossary2", "Glossary, N to Z"),
         ("sources", "Sources"),
-        ("disagree", "Where the Sources Disagree &amp; Version History"),
+        ("disagree", "Where the Sources Disagree"),
+        ("about", "Version History &amp; About"),
     ]),
 ]
 
 FOOT = ('<div class="pagefoot"><span class="brand">Beastly Facts</span>'
-        '<span>Russian Tortoise Care Package</span><span>%d</span></div>')
+        '<span>Russian Tortoise Care Package &middot; Edition ' + EDITION + '</span><span>%d</span></div>')
 
-PAGE_FILES = ("pages_1.html", "pages_2.html", "pages_3.html", "pages_4.html", "pages_5.html", "pages_6.html")
+PAGE_FILES = tuple(sorted(n for n in os.listdir(HERE) if n.startswith("pages_") and n.endswith(".html")))
 
 
 def main():
@@ -80,6 +108,23 @@ def main():
     body = "".join(
         open(os.path.join(HERE, n), encoding="utf-8").read() for n in PAGE_FILES
     )
+
+    # No hand-numbered cross-references: every one must be a {{P:key}} token.
+    literal = re.findall(r"[Pp]ages? [0-9]+", body)
+    if literal:
+        sys.exit("literal page reference(s), use {{P:key}}: %s" % sorted(set(literal)))
+
+    # No external links, and US usage only. Checked on the body, before the
+    # cover photo is embedded, so base64 text cannot trip the word list.
+    if re.search(r"https?:|www\.|\.com\b", re.sub(r'xmlns="[^"]*"', "", body)):
+        sys.exit("external link present in the body")
+    text = re.sub(r"<[^>]+>", " ", body)
+    for word in (r"\bhob\b", r"\btorch", r"\bmains\b", r"power cut", r"fortnight", r"skirting",
+                 r"\bcolour", r"behaviour", r"\bgrey\b", r"\bmum\b", r"\btyre", r"\bcentre\b",
+                 r"\borganis", r"\bprogramme", r"\bfavour", r"\bmetre", r"\blitre", r"\bfibre",
+                 r"\bodour", r"\bsynthesis[ei]",r"\bmould", r"\bcatalogue"):
+        if re.search(word, text, re.I):
+            sys.exit("British usage %r present" % word)
 
     # Assign page numbers in document order from the PAGE markers.
     keys = re.findall(r"<!--PAGE\s+([a-z0-9_]+)\s*-->", body)
@@ -97,6 +142,11 @@ def main():
     untocd = [k for k in keys if k not in toc_keys and k not in ("cover", "contents")]
     if untocd:
         sys.exit("pages missing from the TOC: %s" % untocd)
+    if [k for k in keys if k not in ("cover", "contents")] != toc_keys:
+        sys.exit("TOC order does not match page order")
+    foots = re.findall(r"<!--FOOT\s+([a-z0-9_]+)\s*-->", body)
+    if sorted(foots) != sorted(keys):
+        sys.exit("PAGE and FOOT markers do not pair up: %s" % sorted(set(keys) ^ set(foots)))
 
     # Build the TOC.
     toc = []
@@ -125,7 +175,7 @@ def main():
 
     html = head + body
 
-    # Embed the cover photo.
+    # Embed the cover photo, as is: base64 only, no resize or re-encode.
     uri = "data:image/jpeg;base64," + base64.b64encode(open(COVER, "rb").read()).decode()
     if html.count("{{COVER_IMAGE_DATA_URI}}") != 1:
         sys.exit("cover placeholder not found exactly once")
@@ -134,9 +184,9 @@ def main():
     left = re.findall(r"\{\{[A-Za-z_:0-9]+\}\}", html)
     if left:
         sys.exit("unresolved placeholders: %s" % sorted(set(left)))
-    for bad in ("—", "–"):
+    for bad in ("—", "–", "&mdash;", "&ndash;", "&#8212;", "&#8211;", "&#x2014;", "&#x2013;"):
         if bad in html:
-            sys.exit("em or en dash present in output")
+            sys.exit("em or en dash present in output: %r" % bad)
 
     open(SRC, "w", encoding="utf-8").write(html)
     print("wrote %s (%d pages, %d bytes)" % (SRC, total, len(html)))
