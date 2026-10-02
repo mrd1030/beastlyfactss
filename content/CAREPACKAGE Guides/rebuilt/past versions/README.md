@@ -97,6 +97,10 @@ own field:
 | `Russian_Tortoise_Care_Package_v2.1.pdf` | 2.2 | Legal edition, cut from the same source pass as the other September 2026 legal editions |
 | `Hamster_Care_Package_v2.2.pdf` | 2.3 | Legal edition. Oregon added to the legality table: a white list with no hamster on it, and a default rule that bars an unlisted species by silence |
 | `Tarantula_Care_Package_v2.2.pdf` | 2.3 | Legal edition. Oregon, New Mexico and New Jersey added to the legality table |
+| `Cockatiel_Care_Package_v1.1.pdf` | 1.2 | Abbreviations such as PTFE and PCR used without saying what the letters stand for, a glossary squeezed onto one page, and the corrections from two review passes against the site |
+| `Cockatoo_Care_Package_v1.1.pdf` | 1.2 | Abbreviations such as PTFE and PCR used without saying what the letters stand for, a glossary squeezed onto one page, and the corrections from two review passes against the site |
+| `Cockatiel_Care_Package_v1.2.pdf` | 1.3 | Outside organizations and sources named in the care text rather than on the sources pages, and a maze of page pointers, with the glossary pointing into the tool pages |
+| `Cockatoo_Care_Package_v1.2.pdf` | 1.3 | Outside organizations and sources named in the care text rather than on the sources pages, and a maze of page pointers, with the glossary pointing into the tool pages |
 
 Hamster and Bearded Dragon reached a genuine third edition on their own count,
 so their numbers stood. Hamster's version history had picked up a line claiming
