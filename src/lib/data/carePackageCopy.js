@@ -530,8 +530,8 @@ export const CARE_PACKAGE_COPY = {
   'ball-python': {
     hook: 'Every heat source on a thermostat. Everything else follows.',
     heroParagraph:
-      'A 35-page printable manual with enclosure and heat, the humidity range that decides everything, a prey chart and thawing method, the seven reasons a ball python stops eating, six health pages, and the printable owner tools.',
-    heroTicks: ['35 pages, print or view', 'Beginner to intermediate', 'No external links inside the PDF'],
+      'A 48-page printable manual with enclosure and heat, the humidity range that decides everything, prey and thawing, why a ball python stops eating, choosing a healthy snake, the law in every state, seven health pages, and the printable owner tools.',
+    heroTicks: ['48 pages, print or view', 'Beginner to intermediate', 'No external links inside the PDF'],
     roulette: [
       'A heat mat running bare, with no thermostat in sight',
       'Humidity ranges that swing 20 points between care sheets',
@@ -541,25 +541,25 @@ export const CARE_PACKAGE_COPY = {
     answers: [
       'Every heat source through a thermostat, with where the probe goes and why',
       'The humidity range that decides everything, and the substrate that holds it',
-      'The seven reasons a ball python stops eating, and the one that is illness',
+      'Why a ball python stops eating, the causes checked in order, and when a fast needs a vet',
       'Respiratory infection, scale rot, mouth rot, mites and burns, each described before it is advanced',
     ],
     inside: [
-      { emoji: '🏠', title: 'Housing and heat', line: 'Enclosure, temperature, humidity and lighting, thermostats, probes and heat sources, substrate and furnishings.' },
-      { emoji: '🐭', title: 'Prey and feeding', line: 'Feeding by age, a full prey chart and the never-feed list, thawing, presentation and refusals.' },
-      { emoji: '⚠️', title: 'Health and red flags', line: 'Respiratory infection and scale rot, mouth rot, mites and thermal burns, parasites, regurgitation, obesity and IBD.' },
-      { emoji: '🐍', title: 'Shedding and behavior', line: 'Shedding, refusal and defensive behavior, and reading poop and keeping a ball python hydrated.' },
-      { emoji: '🤲', title: 'Handling, first days and eggs', line: 'Handling and the first days, common mistakes and enrichment, and females, eggs and egg binding.' },
+      { emoji: '🏠', title: 'Housing and heat', line: 'The enclosure and where it goes, the temperature gradient and heat sources, thermostats and probes, humidity and light, substrate, hides and cleaning.' },
+      { emoji: '🐭', title: 'Prey and feeding', line: 'Feeding by age, prey types and the never-feed list, thawing and freezer storage, why a ball python stops eating, and growth and body condition.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Respiratory infection and scale rot, mouth rot, mites and burns, parasites, regurgitation and obesity, inclusion body disease, shedding, and reading droppings.' },
+      { emoji: '🐍', title: 'Handling and behavior', line: 'Handling and taming, body language, normal behavior and escapes, and enrichment that works.' },
+      { emoji: '🥚', title: 'Arrival, eggs and the law', line: 'Choosing a healthy snake and quarantine, telling male from female, follicles and egg binding, the winter appetite dip, and where a ball python is legal.' },
       { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, pet-sitter sheet, and the logs.' },
     ],
     previewHeadline: 'The pages that stop the guessing.',
     previews: [
       { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
-      { page: 6, alt: 'Temperature, humidity and lighting' },
-      { page: 11, alt: 'Prey chart and the never-feed list' },
-      { page: 16, alt: 'Respiratory infection and scale rot' },
-      { page: 22, alt: 'Emergency and quick targets card' },
-      { page: 25, alt: 'Symptom quick reference table' },
+      { page: 7, alt: 'The temperature gradient and heat sources' },
+      { page: 12, alt: 'Diet and feeding by age' },
+      { page: 26, alt: 'Respiratory infection and scale rot' },
+      { page: 33, alt: 'Emergency and quick targets card' },
+      { page: 36, alt: 'Symptom quick reference table' },
     ],
     whoFor: [
       'New ball python owners buying the enclosure before the snake',
