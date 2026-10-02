@@ -26,7 +26,7 @@ export const geckoGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Day one", value: "Quarantined away from any reptile you already keep, on paper towel, with its own tools and a fecal exam inside that window.", source: "reptile-quarantine-guide" },
+        { label: "Day one", value: "A new gecko is quarantined 3 to 6 months away from any reptile you already keep, on paper towel, with its own tools and a fecal exam inside that window.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "A 20-gallon long minimum for one adult, a 36x18x16 inch 40-gallon breeder better. Height buys little for a terrestrial burrower.", source: "african-fat-tail-tank-setup-guide" },
         { label: "Heat", value: "A heat mat on a thermostat for a warm-side floor of 88 to 92°F, a cool side of 75 to 80°F, and nights of 70 to 75°F. No heat rocks or strong overhead bulbs, which burn.", source: "african-fat-tail-tank-setup-guide" },
         { label: "Humidity", value: "Ambient 50 to 70%, higher than a leopard gecko, with a permanent humid hide at 70 to 80%, which is what prevents shedding trouble.", source: "african-fat-tail-tank-setup-guide" },
@@ -203,7 +203,7 @@ export const geckoGuides = [
         { label: "Not eating", value: "A healthy adult goes up to 2 to 3 weeks; a juvenile not past 4 to 5 days. Water is the time-critical one: no more than 2 to 3 days without access. Weigh regularly; a thinning tail is the early sign.", source: "gargoyle-gecko-feeding-guide" },
         { label: "Handling, week one", value: "Wait two weeks after it comes home, then 5-minute sessions every other day, working toward 15 and a daily total near 20. Adults are calm; juveniles are jumpy.", source: "gargoyle-gecko-handling-guide" },
         { label: "Tail and teeth", value: "Never hold the tail. It regrows, unlike a crested gecko's. A bite is rare and provoked, and can break skin: soap and water.", source: "gargoyle-gecko-handling-guide" },
-        { label: "Budget", value: "$50 to $300 for a common animal, $500 to $1,000 or more for a premium morph, and $230 to $445 in gear. $10 to $25 a month, and $50 to $150 for a routine exam.", source: "gargoyle-gecko-cost-guide" },
+        { label: "Budget", value: "$50 to $300 for a common animal, $500 to $1,000 or more for a premium morph, and $280 to $520 in gear. $10 to $25 a month, and $50 to $150 for a routine exam.", source: "gargoyle-gecko-cost-guide" },
         { label: "Lifespan", value: "15 to 20 years, some breeding well past 20.", source: "gargoyle-gecko-cost-guide" },
         { label: "Adult size", value: "7 to 9 inches (18 to 23 cm) including tail." },
         { label: "Hygiene", value: "Wash hands with soap after any contact, keep the gecko out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
@@ -220,7 +220,7 @@ export const geckoGuides = [
       vetLine: "Retained shed wraps a toe like a tourniquet until it dies, so a stuck band is a same-day soak. New geckos are quarantined and given a fecal exam before joining a collection.",
     },
     routes: [
-      { slug: "gargoyle-gecko-cost-guide", line: "$50 to $300 for a common animal and past $1,000 for a morph, the $230 to $445 of gear, and what a 15-to-20-year lifespan costs." },
+      { slug: "gargoyle-gecko-cost-guide", line: "$50 to $300 for a common animal and past $1,000 for a morph, the $280 to $520 of gear, and what a 15-to-20-year lifespan costs." },
       { slug: "gargoyle-gecko-tank-setup-guide", line: "The gradient this species needs, the 86°F ceiling it cannot cross, the daily wet-dry humidity cycle, and the clutter that prevents floppy tail syndrome." },
       { slug: "gargoyle-gecko-feeding-guide", line: "Powdered diet versus live insects, the schedule by age, where the sources genuinely disagree, and how to read appetite loss." },
       { slug: "gargoyle-gecko-handling-guide", line: "Two weeks before the first session, the two defense mechanisms, the bite that breaks skin, and the tail that grows back." },

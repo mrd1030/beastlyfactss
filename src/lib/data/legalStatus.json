@@ -21700,7 +21700,7 @@
           "sourceId": "ri-250-40-05-3",
           "cite": "§ 3.17(A)(4)(c)(2)(F)",
           "quote": "All Gekkos (Gekkonidae) may be kept without an exotic animal possession permit except the Big Bend Gekko (Coleonyx reticulatus)",
-          "note": "Correlophus ciliatus is a diplodactylid on current taxonomy, but the clause covers all geckos: its only exception, Coleonyx reticulatus, is a eublepharid, which shows Gekkonidae is being used here for the whole group rather than for one modern family. The crested gecko is IUCN Vulnerable and CITES Appendix II, and Rhode Island only excepts species that are endangered, so neither listing reaches it.",
+          "note": "Correlophus ciliatus is a diplodactylid on current taxonomy, but the clause covers all geckos: its only exception, Coleonyx reticulatus, is a eublepharid, which shows Gekkonidae is being used here for the whole group rather than for one modern family. The crested gecko is IUCN Vulnerable and not listed under CITES, and Rhode Island only excepts species that are endangered, so its status does not reach it.",
           "verifiedOn": "2026-10-01"
         },
         "AR": {
@@ -21716,7 +21716,7 @@
           "sourceId": "me-unrestricted",
           "cite": "Unrestricted Species List, Reptilia, Sauria",
           "quote": "all species in infraorder Gekkota Except for: Nephrurus deleani",
-          "note": "Correlophus ciliatus is a diplodactylid and therefore inside Gekkota. The asterisk is the thing to check here rather than the taxonomy: it removes anything the IUCN rates Endangered, Critically Endangered or Extinct in the Wild, and the crested gecko is Vulnerable, one rung below the cut. Its CITES listing is Appendix II, and the filter names Appendix I. Both are close enough that a reassessment or an uplisting would move this cell without Maine changing anything, which is the same exposure Massachusetts carries for the ball python. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorized animal may not be possessed at all.",
+          "note": "Correlophus ciliatus is a diplodactylid and therefore inside Gekkota. The asterisk is the thing to check here rather than the taxonomy: it removes anything the IUCN rates Endangered, Critically Endangered or Extinct in the Wild, and the crested gecko is Vulnerable, one rung below the cut. It is not listed under CITES at all, so the Appendix I filter does not touch it. The IUCN rating is close enough that a reassessment would move this cell without Maine changing anything, which is the same exposure Massachusetts carries for the ball python. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorized animal may not be possessed at all.",
           "verifiedOn": "2026-09-05"
         },
         "MO": {
