@@ -464,3 +464,67 @@ budgerigars". It names no outside source, so it is outside this pass.
 - Version history: added the 1.3 row, "Outside sources named in the care text rewritten as
   plain statements; every source is still credited on page 40."
 - Rendered to rebuilt/Cockatiel_Care_Package_v1.3.pdf; v1.2 left in place.
+
+## Pointer trim, 1.3
+
+The owner found the book "a maze". Every "page N" pointer was counted by page with a
+script that splits the visible text on the page containers, then trimmed by hand under
+the maze rules (one pointer per destination per page, no pointer to the next or previous
+page the reader is turning to anyway, no ping-pong, nothing points to the glossary,
+glossary entries keep every page that still covers the term). Tool pages (how to use,
+setup checklist, emergency card, first 30 days, symptom quick reference, routine,
+sitter sheet) were left alone.
+
+**Counts**
+
+| | Before | After |
+|---|---|---|
+| Total pointers | 218 | 168 |
+| Repeats on the same page, all pages | 39 | 26 |
+| Repeats outside tool pages and glossary | 11 | 0 |
+| Repeats on tool pages (left alone) | 10 | 10 |
+| Glossary pointers | 46 | 43 |
+| Ping-pong pairs (A to B and B to A) | 17 | 0 |
+| Pointers to the glossary | 0 | 0 |
+
+The 16 glossary repeats left are different terms covered on the same page (for example
+Hepatic lipidosis and Hypovitaminosis A both on page 20, five source bodies on page 40),
+which the glossary rule allows. Tool pages hold 56 pointers and the glossary 43, so 99 of
+the 168 are fixed by the rules; the care, health, profile and legal pages went from 116
+to 69.
+
+**Where most came out**
+
+- Page 4, profile: 12 to 6. Second pointers to pages 5, 7, 10, 16 and 30 cut, and the
+  lifespan row's "page 10 and page 20" dropped.
+- Page 7, light: 5 to 1. "Almost everything on pages 17 and 18 traces back to a
+  photoperiod" is now "Almost all hormone and laying trouble traces back to a
+  photoperiod"; the laying row's Page 17 and the plucking pointer to page 24 cut
+  (pages 17 and 24 keep their pointers to page 7).
+- Page 41: 6 to 2. Version history rows no longer carry page numbers.
+- Page 16: 4 to 1. "anything on pages 17 and 18" is now "anything to do with hormones
+  or eggs"; the obesity row's Page 20 cut (page 20 keeps its pointer to the scale on 16).
+- Pages 19 and 20: 7 to 4 each. Page 19 keeps one pointer to 36 and none to 26
+  ("the daily droppings check"; page 26 keeps its pointer to 19); page 20 drops 21,
+  24 and 18.
+- Page 40: 3 to 0. The sources table no longer points at pages 6, 26 and 7.
+- Also cut: 5 (zinc, page 9), 6 (rope perch to 23, calcium to 18), 10 ("Pages 20 and 18
+  are the consequences."), 11 (onion row to 12), 12 (training on 13), 13 (both
+  plucking rows to 24), 14 (egg problem on 17), 15 (Page 14 builds the real thing),
+  17 (18 and 16), 18 (17), 21 (droppings to 26, irritants to 8), 23 (Giardia to 24),
+  25 (plucking to 24), 26 (page 11 and page 6).
+
+**Ping-pong pairs resolved** (direction kept): 9 to 5, 23 to 6, 6 to 26, 17 to 7,
+24 to 7, 20 to 10, 24 to 13, 17 to 14, 20 to 16, 18 to 20, 26 to 19, 21 to 20,
+24 to 20, 26 to 21, 24 to 23. Pairs 16 and 17, and 17 and 18, are adjacent pages and
+lost both directions.
+
+**Glossary**: every entry's listed pages were checked against the page text. Three
+in-definition pointers named a page that does not cover the term and were dropped:
+CDC "the psittacosis guidance behind page 21" is now "the psittacosis guidance this
+book follows"; UC Davis "the sleep figure on page 7" is now "in this book"; UVB "the diet
+on page 10" is now "the diet in this book". All Page 40 pointers for source bodies, and
+multi-page entries (Chelation 8, 23; CO 8, 34; PCR 22, 27; Vitamin D3 17, 20), stand.
+
+Measured after the trim: all 41 pages clear, minimum 16px free. Rendered to
+rebuilt/Cockatiel_Care_Package_v1.3.pdf; previews and sample rebuilt.

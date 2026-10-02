@@ -744,3 +744,49 @@ sources-disagree page and version history, and was excluded from this pass.
 Minimum 15 px (page 30, unchanged). Changed: p10 87 to 105, p21 30 to 48, p38 56 to 73,
 p20 126 to 109 (the clip sentence runs a line longer), p47 23 to 16. Every other page is
 as it was at 1.2.
+
+## Pointer trim, 1.3
+
+The owner found the book "a maze". Every "page N" in cockatoo.html was counted by page
+(there is no bare-number Page column in this book), then trimmed by hand against the maze
+rules: tool pages untouched (how-to-use, setup checklist, emergency card, first 30 days,
+symptom table, routine, sitter sheet), one pointer per destination per page everywhere else,
+no self-pointers, no next/previous-page pointers inside a section, no ping-pong pairs, nothing
+pointing to the glossary, and glossary entries kept as they were (rule 10: an entry may list
+every page that covers the term). Every listed glossary page was checked and still covers its
+term, so no glossary pointer changed.
+
+| | Before | After |
+|---|---|---|
+| Pointers, total | 282 | 226 |
+| Tool pages | 63 | 63 |
+| Glossary (pages 42 to 44) | 59 | 59 |
+| Everything else | 160 | 104 |
+| Repeats on one page, outside tool pages and glossary | 22 | 0 |
+| Repeats, all pages | 51 | 29 (10 on tool pages, 19 across glossary entries) |
+| Ping-pong pairs (A to B and B to A) | 16 | 0 |
+| Pointers to the glossary | 0 | 0 |
+| Self-pointers | 0 | 0 |
+
+The 160-or-fewer target was not reachable once tool pages (63) and the full glossary (59)
+were protected: that leaves 38 for the rest of the book. What remains outside those is one pointer
+per destination per page.
+
+**Where the cuts landed.** Pages 46 and 47 (5 each: duplicate 4, 6 and 31 on the sources page;
+duplicate 34, 30, 31 and 45/46 on the disagree page, with the version-history rows reworded to
+"the sources pages", "the state table" and "the succession page"), page 6 (4), pages 4, 21,
+23 and 26 (3 each), then one or two on most care and health pages.
+
+**Ping-pong pairs resolved** (kept direction first): 5 to 19, 8 to 18, 9 to 22, 10 to 25,
+10 to 29, 16 to 14, 18 to 16, 16 to 38, 17 to 22, 21 to 26, 23 to 28, 24 to 27, 28 to 26,
+31 to 40; 26 and 27 both lost their pointer to each other as adjacent pages; 47 keeps
+"sourced on pages 45 and 46" and page 45 dropped its pointer to 47.
+
+**Judgment cuts beyond the literal rules**, all passing mentions rather than hand-offs, easy to
+restore if wanted: page 5 "they are on page 15"; page 6 "(page 18)" and "what page 29 exists
+to prevent" (now "what quarantine exists to prevent"); page 8 and page 10 "budget on page 34";
+page 12 "on the scale from page 21"; page 15 "the toy line on page 34" (now "in the budget");
+page 24 "the dust on page 10".
+
+Measure: 47 pages, every page at least 15 px free (minimum page 30, 15 px). Previews (cover,
+2, 5, 31, 32, 34, 36) and sample.pdf re-rendered.
