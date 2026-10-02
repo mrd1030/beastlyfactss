@@ -374,6 +374,30 @@ export default function CarePackageProduct() {
           </section>
         )}
 
+        {/* WHAT CHANGED: the book's own version history, for a buyer holding
+            an older printout. Only packages rebuilt on the current outline
+            carry `history`; the rest show nothing here until their next edition. */}
+        {pkg.history?.length > 0 && (
+          <section className="max-w-3xl mx-auto px-4 sm:px-6 pt-16">
+            <div className="cp-reveal">
+              <p className="cp-label cp-accent-text mb-2">What changed</p>
+              <h2 className="font-display font-bold text-2xl tracking-tight mb-2">{`This is edition ${pkg.version}.`}</h2>
+              <p className="cp-muted text-sm mb-5">
+                {'Bought before? Re-download free from '}
+                <Link to="/care-packages/library/" className="underline">your library</Link>
+                {`.${pkg.legalAsOf ? ` State legal status as of ${pkg.legalAsOf}.` : ''}`}
+              </p>
+              <ul className="space-y-3 text-sm">
+                {pkg.history.map(h => (
+                  <li key={h.edition}>
+                    <strong>{`${h.edition}, ${h.date}.`}</strong>{` ${h.text}`}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        )}
+
         {/* FINAL CTA */}
         <section id="buy" className="max-w-4xl mx-auto px-4 sm:px-6 pt-20 pb-12 text-center">
           <p className="cp-label cp-accent-text mb-3">Ready when you are</p>

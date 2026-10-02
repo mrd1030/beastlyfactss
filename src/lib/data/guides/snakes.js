@@ -289,7 +289,7 @@ export const snakeGuides = [
         "Any mouth swelling or discharge",
         "Neurological symptoms (star-gazing or corkscrewing movements)",
       ],
-      vetLine: "A reptile-experienced vet, found through the Association of Reptilian and Amphibian Veterinarians before you need one. Get a new corn snake checked within the first few weeks of ownership, then an annual wellness exam with a fecal test after that.",
+      vetLine: "A reptile-experienced vet, found through the Association of Reptile and Amphibian Veterinarians before you need one. Get a new corn snake checked within the first few weeks of ownership, then an annual wellness exam with a fecal test after that.",
     },
     routes: [
       { slug: "corn-snake-cost-guide", line: "$25 to $70 for the snake, $250 to $600 for the setup, $200 to $500 a year, and what it costs over a two-decade lifespan." },
