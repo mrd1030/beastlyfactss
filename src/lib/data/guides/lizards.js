@@ -242,7 +242,7 @@ export const lizardGuides = [
         { label: "Enclosure", value: "4x2x2 ft, about 120 gallons, and that is the adult minimum, not an upgrade for later.", source: "bearded-dragon-tank-setup-guide" },
         { label: "Basking surface", value: "95 to 110°F for adults, 105 to 115°F for juveniles, measured with an infrared thermometer aimed at the surface itself.", source: "bearded-dragon-tank-setup-guide" },
         { label: "Rest of the gradient", value: "Warm side air about 90°F, cool side 75 to 85°F, nights 65 to 75°F. Heat overnight only if the room falls below 65°F, with a ceramic heat emitter.", source: "bearded-dragon-tank-setup-guide" },
-        { label: "UVB", value: "A linear T5 HO tube over about two-thirds of the enclosure, 12 to 18 inches from the basking surface, never behind glass. 10 to 14 hours a day, replaced every 6 to 12 months.", source: "bearded-dragon-tank-setup-guide" },
+        { label: "UVB", value: "A linear T5 HO tube over about two-thirds of the enclosure, about 16 to 18 inches above the basking surface, or 11 to 12 through mesh, never behind glass. 10 to 14 hours a day, replaced every 6 to 12 months.", source: "bearded-dragon-tank-setup-guide" },
         { label: "Humidity", value: "30 to 40%.", source: "bearded-dragon-tank-setup-guide" },
         { label: "Floor", value: "Paper towel, newspaper, or tile. No loose sand, calcium sand included.", source: "bearded-dragon-tank-setup-guide" },
         { label: "Diet ratio", value: "Juveniles roughly 80% insects and 20% greens. Adults flip to about 80% greens.", source: "bearded-dragon-tank-setup-guide" },
