@@ -1598,3 +1598,32 @@ export function carePackageBookCover(pkg) {
   if (pkg.storefront === 'soon') return pkg.cover;
   return `/assets/care-packages/${pkg.id}/cover.jpg`;
 }
+
+// What the animal lives in, by the naming rule in docs/RULES.md: Tank for fish
+// and axolotls, Cage for birds and cage mammals, Housing for rabbits,
+// Enclosure for everything else. The in-article card says "keep by the cage",
+// not "keep by the enclosure", for a budgie.
+const CARE_PACKAGE_HOME = {
+  'betta-fish': 'tank', goldfish: 'tank', axolotl: 'tank',
+  budgie: 'cage', lovebird: 'cage', cockatiel: 'cage', cockatoo: 'cage',
+  'guinea-pig': 'cage', hamster: 'cage',
+  rabbit: 'housing',
+};
+export function carePackageHome(pkg) {
+  return CARE_PACKAGE_HOME[pkg.id] || 'enclosure';
+}
+
+// The animal as it reads mid-sentence: lowercase, except a name that is a
+// proper noun ("White's tree frog", "Russian tortoise").
+export function carePackageAnimalInSentence(pkg) {
+  return pkg.animal
+    .split(' ')
+    .map(w => (/^(White's|Russian)$/.test(w) ? w : w.toLowerCase()))
+    .join(' ');
+}
+
+// The free sample every package ships with: the cover, contents and opening
+// pages, served next to the previews.
+export function carePackageSampleHref(pkg) {
+  return pkg.samplePages ? `/assets/care-packages/${pkg.id}/sample.pdf` : null;
+}
