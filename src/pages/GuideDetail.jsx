@@ -15,7 +15,7 @@ import { getRelatedArticleSlugs } from '@/lib/data/relatedArticles';
 import DeepDiveList from '@/components/shared/DeepDiveList';
 import AffiliateLink from '@/components/mdx/AffiliateLink';
 import { getAffiliateForItem, RETAILERS } from '@/lib/data/affiliateProducts';
-import { CARE_PACKAGES, carePackageBookCover, isCarePackageBuyable } from '@/lib/data/carePackages';
+import { CARE_PACKAGES, carePackageBookCover, carePackageSampleHref, isCarePackageBuyable } from '@/lib/data/carePackages';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 import SaveButton from '@/components/shared/SaveButton';
@@ -697,6 +697,11 @@ export default function GuideDetail() {
                     {isCarePackageBuyable(carePackage) ? 'Get the printable PDF' : 'See all care packages'} <ChevronRight className="w-3.5 h-3.5" />
                   </div>
                 </Link>
+                {carePackageSampleHref(carePackage) && (
+                  <Link to={carePackageSampleHref(carePackage)} className="mt-2 block text-xs font-body font-semibold text-secondary underline decoration-secondary/40 hover:decoration-secondary">
+                    {`Read the first ${carePackage.samplePages} pages free`}
+                  </Link>
+                )}
               </div>
             )}
 
