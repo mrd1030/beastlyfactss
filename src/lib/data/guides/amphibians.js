@@ -21,7 +21,7 @@ export const amphibianGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal check", value: "Banned outright in California, Wyoming, and Alabama, effectively banned in New Jersey, permit-only and not issued for pets in Maine, and reported banned in Washington, D.C.; several other states restrict them in some way. Legal in Virginia since August 2021, despite widely repeated claims otherwise. Check your state before buying.", source: "axolotl-legal-guide" },
+        { label: "Legal check", value: "Banned in California, New Jersey, New Mexico, Wyoming, Alabama, and Washington, D.C. A permit that is not issued for pets in Maine, Vermont, and Massachusetts, and an importation permit in West Virginia. Conditional in Hawaii, Rhode Island, and Minnesota, and unclear in Arkansas. Legal in Virginia since August 2021, despite widely repeated claims otherwise. Check your state before buying.", source: "axolotl-legal-guide" },
         { label: "Tank size", value: "A 20-gallon long tank is the minimum for one axolotl, with a 40-gallon breeder better if keeping two. Cohoused axolotls bite at limbs and gills, so housing separately is the safer default.", source: "axolotl-tank-setup-guide" },
         { label: "Water temperature", value: "Between 60 and 64°F. Above 72°F starts to cause chronic stress, and it can become fatal in the mid-70s. Never use a heater, plan for an aquarium chiller.", source: "axolotl-tank-setup-guide" },
         { label: "Water parameters", value: "Ammonia and nitrite at 0, nitrate ideally under 10 ppm, pH 7.4 to 7.6, with 6.5 to 8.0 tolerated if stable.", source: "axolotl-tank-setup-guide" },
@@ -32,7 +32,7 @@ export const amphibianGuides = [
         { label: "Diet", value: "Earthworms or nightcrawlers as the gold-standard staple, paired with a quality sinking pellet formulated for axolotls. Size each meal to roughly the axolotl's head, remove anything uneaten after 15 to 30 minutes.", source: "axolotl-feeding-guide" },
         { label: "Handling", value: "Minimal, reserved for genuine necessity. Guide it into a submerged container rather than lifting it out by hand or using a net, and keep it in water at all times.", source: "axolotl-handling-guide" },
         { label: "Not eating / floating", value: "See a vet promptly for fungal growth that hasn't improved within 48 hours of correcting water quality, suspected impaction, red streaking or open wounds, or appetite loss lasting 5 days or more.", source: "axolotl-health-issues-guide" },
-        { label: "Budget", value: "$30 to $100 for the axolotl itself, $200 to $500 for a basic setup or $450 to $900 with a chiller, and $15 to $45 a month after that.", source: "axolotl-cost-guide" },
+        { label: "Budget", value: "$30 to $100 for the axolotl itself, $120 to $375 for a basic setup or $270 to $775 with a chiller, and $15 to $45 a month after that.", source: "axolotl-cost-guide" },
         { label: "Adult size", value: "9 to 12 inches." },
         { label: "Lifespan", value: "10 to 15 years typical in captivity." },
         { label: "Quarantine", value: "6 to 8 weeks per general veterinary guidance, landing closer to the 8-week end than the shortest end. The clock resets, not just pauses, if the animal shows illness partway through.", source: "amphibian-quarantine-and-water-guide" },
