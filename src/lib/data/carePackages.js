@@ -1269,14 +1269,11 @@ export const CARE_PACKAGES = [
     badge: 'Bird',
     emoji: '🐦',
     status: 'coming-soon',
-    // On the product page, but not buyable until the price exists. stripePriceId
-    // is filled when the live price is created, in the same commit as
-    // priceIdLive in CARE_PACKAGE_STORE in public/_worker.js. Until then the
-    // Worker answers the buy button with a 409 and no checkout session, so the
-    // button fails closed with a readable message rather than taking money. The
-    // PDF also has to be in the bucket before this ships to main.
+    // Live price created 2026-10-01, matching priceIdLive in
+    // CARE_PACKAGE_STORE in public/_worker.js. The PDF has to be in the bucket
+    // before this ships to main, or a buyer pays and the download fails.
     storefront: 'stripe',
-    stripePriceId: '',
+    stripePriceId: 'price_1ULwwQ9qtY3Ob6vaZoUuXLtw',
     price: '$8.99',
     pages: 41,
     version: '1.2',
@@ -1362,11 +1359,10 @@ export const CARE_PACKAGES = [
     badge: 'Bird',
     emoji: '🦜',
     status: 'coming-soon',
-    // Same as the cockatiel above: stripePriceId is filled when the live price
-    // is created, alongside priceIdLive in public/_worker.js, and until then the
-    // Worker refuses checkout with a 409.
+    // Same as the cockatiel above: live price created 2026-10-01, PDF to the
+    // bucket before main.
     storefront: 'stripe',
-    stripePriceId: '',
+    stripePriceId: 'price_1ULwwY9qtY3Ob6vaVwNPPWLL',
     price: '$8.99',
     pages: 47,
     version: '1.2',
@@ -1470,12 +1466,10 @@ export const CARE_PACKAGES = [
     badge: 'Amphibian',
     emoji: '🐸',
     status: 'coming-soon',
-    // Same as the birds above: stripePriceId is filled when the live price is
-    // created, alongside priceIdLive in public/_worker.js, and until then the
-    // Worker refuses checkout with a 409. The PDF also has to be in the bucket
-    // before this ships to main.
+    // Same as the birds above: live price created 2026-10-01, PDF to the
+    // bucket before main.
     storefront: 'stripe',
-    stripePriceId: '',
+    stripePriceId: 'price_1ULwwZ9qtY3Ob6vaXWw8eqo1',
     price: '$8.99',
     pages: 39,
     version: '1.0',

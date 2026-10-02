@@ -751,28 +751,25 @@ const CARE_PACKAGE_STORE = {
     priceIdSandbox: '',
     priceIdLive: 'price_1UENCK9qtY3Ob6vafJILVYIP',
   },
-  // Price ids pending. Both fields stay empty until the live price exists, so
-  // checkout answers 409 "no price set up yet" before any Stripe call: the
-  // buy button fails closed. Fill priceIdLive and the catalog's stripePriceId
-  // in the same commit.
+  // Live prices created 2026-10-01. Only the live ids exist; none of the three
+  // was ever sold in the Sandbox.
   cockatiel: {
     name: 'Cockatiel Care Package',
     edition: '1.2',
     priceIdSandbox: '',
-    priceIdLive: '',
+    priceIdLive: 'price_1ULwwQ9qtY3Ob6vaZoUuXLtw',
   },
   cockatoo: {
     name: 'Cockatoo Care Package',
     edition: '1.2',
     priceIdSandbox: '',
-    priceIdLive: '',
+    priceIdLive: 'price_1ULwwY9qtY3Ob6vaVwNPPWLL',
   },
-  // Same as the birds above: no price yet, so checkout fails closed with a 409.
   'whites-tree-frog': {
     name: "White's Tree Frog Care Package",
     edition: '1.0',
     priceIdSandbox: '',
-    priceIdLive: '',
+    priceIdLive: 'price_1ULwwZ9qtY3Ob6vaXWw8eqo1',
   },
 };
 
