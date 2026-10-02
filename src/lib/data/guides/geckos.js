@@ -198,7 +198,7 @@ export const geckoGuides = [
         { label: "Substrate and clutter", value: "Coconut fiber, or paper towel for hatchlings and sick geckos; no sand, wood chips, or gravel. Heavy clutter of branches, vines, and cork, since resting on bare glass is how floppy tail starts.", source: "gargoyle-gecko-tank-setup-guide" },
         { label: "UVB", value: "Survivable without, since a complete powdered diet supplies D3, but a 12-inch low-output T5 at a basking UVI of 1.0 to 2.0 over open mesh, 12 hours a day, has real benefits.", source: "gargoyle-gecko-tank-setup-guide" },
         { label: "Staple diet", value: "A powdered crested gecko diet at 2 to 3 parts water to 1 part powder in a cup or on a ledge, rotating 3 or more brands. Hatchlings and juveniles daily, adults every 2 to 3 days.", source: "gargoyle-gecko-feeding-guide" },
-        { label: "Insects are required", value: "Unlike a crested gecko: 1 to 2 times a week for juveniles, once a week for adults, gut-loaded 24 to 48 hours and dusted with calcium without D3 most times, with D3 periodically.", source: "gargoyle-gecko-feeding-guide" },
+        { label: "Insects are required", value: "Unlike a crested gecko: 1 to 2 times a week for juveniles and adults, by body condition, gut-loaded 24 to 48 hours and dusted with calcium without D3 most times, with D3 periodically.", source: "gargoyle-gecko-feeding-guide" },
         { label: "Foods to avoid", value: "Citrus, starfruit, rhubarb, garlic, onion, eggplant, dairy, and avocado.", source: "gargoyle-gecko-feeding-guide" },
         { label: "Not eating", value: "A healthy adult goes up to 2 to 3 weeks; a juvenile not past 4 to 5 days. Water is the time-critical one: no more than 2 to 3 days without access. Weigh regularly; a thinning tail is the early sign.", source: "gargoyle-gecko-feeding-guide" },
         { label: "Handling, week one", value: "Wait two weeks after it comes home, then 5-minute sessions every other day, working toward 15 and a daily total near 20. Adults are calm; juveniles are jumpy.", source: "gargoyle-gecko-handling-guide" },
@@ -222,7 +222,7 @@ export const geckoGuides = [
     routes: [
       { slug: "gargoyle-gecko-cost-guide", line: "$50 to $300 for a common animal and past $1,000 for a morph, the $280 to $520 of gear, and what a 15-to-20-year lifespan costs." },
       { slug: "gargoyle-gecko-tank-setup-guide", line: "The gradient this species needs, the 86°F ceiling it cannot cross, the daily wet-dry humidity cycle, and the clutter that prevents floppy tail syndrome." },
-      { slug: "gargoyle-gecko-feeding-guide", line: "Powdered diet versus live insects, the schedule by age, where the sources genuinely disagree, and how to read appetite loss." },
+      { slug: "gargoyle-gecko-feeding-guide", line: "Powdered diet versus live insects, the schedule by age, why pinky mice are the real obesity risk, and how to read appetite loss." },
       { slug: "gargoyle-gecko-handling-guide", line: "Two weeks before the first session, the two defense mechanisms, the bite that breaks skin, and the tail that grows back." },
       { slug: "gargoyle-gecko-health-issues-guide", line: "Metabolic bone disease, floppy tail syndrome, respiratory infection, parasites, and the vet-today list." },
       { slug: "gargoyle-gecko-enrichment-guide", line: "No gargoyle study exists, so this is the crested and leopard gecko evidence, labeled as borrowed, on height, novelty and feeding." },

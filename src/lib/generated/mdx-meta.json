@@ -20738,7 +20738,7 @@
     "title": "Gargoyle Gecko Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Gargoyle Geckos Eat? Diet and Feeding Schedule",
     "seoDescription": null,
-    "lastUpdated": "2026-09-03",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Gargoyle geckos are more carnivorous than their crested gecko cousins, which is why insects are a required part of the diet here, not just enrichment.",
     "date": "2026-07-30",
@@ -20767,7 +20767,7 @@
     "faqs": [
       {
         "q": "How often should I feed my gargoyle gecko?",
-        "a": "Hatchlings and juveniles get fresh commercial gecko diet daily, adults every 2 to 3 days, though one detailed care sheet breaks life stages out differently and lands on every other day for full adults. For live insects specifically, most sources say weekly for adults, though one specialist source recommends as little as twice a month, citing obesity risk, a real disagreement worth knowing."
+        "a": "Hatchlings and juveniles get fresh commercial gecko diet daily, adults every 2 to 3 days. Live insects go in 1 to 2 times a week for juveniles and adults alike, scaled by body condition rather than the calendar. Vertebrate prey such as pinky mice is what needs a cap, no more than twice a month, because that is where obesity comes from."
       },
       {
         "q": "Do gargoyle geckos need live insects, or is powder enough?",
@@ -20799,7 +20799,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 3,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
