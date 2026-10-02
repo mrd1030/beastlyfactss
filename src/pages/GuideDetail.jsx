@@ -151,7 +151,7 @@ export default function GuideDetail() {
     // The package's own product page, not the hub: every package sells here
     // now, so the footer of a printed card can name the page that sells it.
     const packageLine = carePackage
-      ? `${esc(carePackage.name)}: ${carePackage.pages} pages, PDF, ${esc(carePackage.price)}${isCarePackageBuyable(carePackage) ? '' : ', listing soon'}, at beastlyfacts.com/care-packages/${esc(carePackage.id)}/`
+      ? `${esc(carePackage.name)}: ${carePackage.pages ? `${carePackage.pages} pages, ` : ''}PDF, ${esc(carePackage.price)}${isCarePackageBuyable(carePackage) ? '' : ', listing soon'}, at beastlyfacts.com/care-packages/${esc(carePackage.id)}/`
       : '';
     const footer = `<div class="footer">Free from BeastlyFacts.com &bull; ${new Date().toLocaleDateString()}${packageLine ? ' &bull; ' + packageLine : ''}</div>`;
     const printHTML = `
@@ -689,7 +689,7 @@ export default function GuideDetail() {
                         {carePackage.name}
                       </p>
                       <p className="text-xs text-muted-foreground font-body mt-0.5">
-                        {`${carePackage.pages} pages · PDF · ${carePackage.price}${isCarePackageBuyable(carePackage) ? '' : ' · listing soon'}`}
+                        {`${carePackage.pages ? `${carePackage.pages} pages · ` : ''}PDF · ${carePackage.price}${isCarePackageBuyable(carePackage) ? '' : ' · listing soon'}`}
                       </p>
                     </div>
                   </div>

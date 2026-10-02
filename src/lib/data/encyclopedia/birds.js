@@ -48,7 +48,7 @@ export const birdEncyclopedia = [
       overview: "Cockatiels are the smallest member of the cockatoo family and are endemic to Australia, where they inhabit open country and lightly wooded areas across the continent. They are highly nomadic, following water sources and seeding grasses. Cockatiels were the first parrot species to be widely bred in captivity and remain among the most popular pet birds worldwide, prized for their gentle temperament, whistling ability, and trainability.",
       origin: "Australia",
       habitat: "Open grassland, scrubland, and lightly wooded areas",
-      adultSize: "12-13 inches (30-33 cm) including tail; 2.5-3.5 oz",
+      adultSize: "12-13 inches (30-33 cm) including tail; 80-125 g (about 3-4.5 oz)",
       wildDiet: "Grass seeds, grains, berries, and insects",
       wildLifespan: "Not well documented in the wild; typically 12 to 15 years in captivity, up to about 25 reported, and a longevity record of 35 years",
       conservation: "Least Concern (IUCN)",
