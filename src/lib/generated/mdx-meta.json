@@ -23290,9 +23290,9 @@
     "path": "/content/guides/goldfish-cost-guide.mdx",
     "slug": "goldfish-cost-guide",
     "title": "How Much Does a Goldfish Really Cost?",
-    "seoTitle": "Goldfish Price: Under $10, Plus the $150 to $400 Setup",
-    "seoDescription": "Goldfish cost breakdown: the fish itself often under $10, a proper tank and filtration setup at $150-400, and just $10-30 a month once you skip the bowl.",
-    "lastUpdated": "2026-09-25",
+    "seoTitle": "Goldfish Price: Under $10, Plus the $105 to $270 Setup",
+    "seoDescription": "Goldfish cost breakdown: the fish itself often under $10, a proper tank and filtration setup at $105-270, and just $10-30 a month once you skip the bowl.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Goldfish have the worst reputation-to-reality gap of almost any common pet. The fish itself costs next to nothing, but proper goldfish keeping requires a large tank and serious filtration, exactly the part the classic fish-in-a-bowl image leaves out entirely.",
     "date": "2026-07-20",
@@ -23323,7 +23323,7 @@
       },
       {
         "q": "What does a proper goldfish tank setup cost?",
-        "a": "A complete setup, tank, filtration, optional heater, substrate, dechlorinator, decor, and a test kit, typically runs $150 to $400. Filtration is the part worth budgeting extra for since goldfish produce far more waste than most fish their size."
+        "a": "A complete setup for one fancy goldfish, tank, basic filtration, optional heater, substrate, dechlorinator, decor, and a test kit, adds up to $105 to $270. Filtration is the part worth budgeting extra for, since goldfish produce far more waste than most fish their size and a canister filter costs more than the basic figure counted here."
       },
       {
         "q": "What are the ongoing monthly costs for a goldfish?",
@@ -23358,7 +23358,7 @@
     "title": "Goldfish Enrichment: Space, Plants, and Foraging Done Right",
     "seoTitle": "Goldfish Enrichment Guide",
     "seoDescription": "Goldfish enrichment research: fish spend about 90% of their time in planted areas versus 10% in open space, and substrate particle size affects foraging.",
-    "lastUpdated": "2026-08-19",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Goldfish enrichment is inseparable from the tank itself. Decor and plants can't rescue a bowl or bad water, but once the setup is right, real research shows what adds value on top.",
     "date": "2026-08-19",
@@ -23392,7 +23392,7 @@
       },
       {
         "q": "What substrate is best for goldfish foraging?",
-        "a": "Fine sand or smooth rounded gravel supports natural sifting behavior. Research on substrate particle size found it measurably affects how much time goldfish spend foraging, with coarse sand outperforming a lot of coarser gravel options for this specifically. Avoid sharp gravel or anything easily swallowed."
+        "a": "Sand supports natural sifting behavior. Research on substrate particle size found it measurably affects how much time goldfish spend foraging, with coarse sand outperforming a lot of coarser gravel options for this specifically. Gravel is safe only when every piece is at least 1/2 inch across, and sharp or swallowable stones are out."
       },
       {
         "q": "What plants survive in a goldfish tank?",
@@ -23415,8 +23415,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
-    "headingCount": 9,
+    "sourceCount": 4,
+    "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1376,
     "imageHeight": 768
@@ -23499,7 +23499,7 @@
     "title": "How to \"Handle\" a Goldfish (Net and Cup, Not Hands)",
     "seoTitle": "How to Handle a Goldfish Safely",
     "seoDescription": "A goldfish's slime coat takes 24-48 hours to regrow after bare hand contact. Use a wet net or container transfer instead, never dry hands.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Like most fish, goldfish should not be routinely picked up by hand. This isn't an overcautious rule, their protective slime coat is a genuine, physical barrier against disease, and bare hands remove it on contact.",
     "date": "2026-07-20",
@@ -23547,8 +23547,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
-    "headingCount": 8,
+    "sourceCount": 5,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -23559,7 +23559,7 @@
     "title": "Common Goldfish Health Issues (And What Actually Prevents Them)",
     "seoTitle": "Goldfish Health Issues: Signs & Causes",
     "seoDescription": "Goldfish health issues to know: ich's white spots, swim bladder disorder in fancy varieties, and dropsy's pinecone scales, a sign of organ failure.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Goldfish are hardier than their reputation suggests when kept in the right conditions, but a handful of issues come up often enough to be worth knowing before they show up in your own tank.",
     "date": "2026-07-20",
@@ -23621,8 +23621,8 @@
     "slug": "goldfish-tank-setup-guide",
     "title": "Goldfish Tank Setup: Bigger Than You Think, Filtered More Than You'd Guess",
     "seoTitle": "Goldfish Tank Setup Guide",
-    "seoDescription": "Goldfish need at least 20 gallons for one fancy fish, 55+ for single tails, and filtration turning over tank volume 4-10 times an hour.",
-    "lastUpdated": "2026-09-25",
+    "seoDescription": "Goldfish need at least 20 gallons for one fancy fish, 55+ for single tails, and filtration turning over tank volume 10 times an hour or more.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "If you take away one thing from goldfish care, make it this: the bowl is wrong, and the tank you need is bigger than most people expect for what looks like a small, simple fish.",
     "date": "2026-07-20",
@@ -23653,11 +23653,11 @@
       },
       {
         "q": "How much filtration does a goldfish tank need?",
-        "a": "Enough to turn over the whole tank at least 4 times an hour, ideally 5 to 10, because goldfish produce far more waste than their size suggests. Two filters on one tank is normal practice here, not overkill."
+        "a": "Enough to turn over the whole tank 10 times an hour or more, the figure for a heavily stocked, messy tank, because goldfish produce far more waste than their size suggests. Two filters on one tank is normal practice here, not overkill."
       },
       {
         "q": "What water parameters should I keep for goldfish?",
-        "a": "Goldfish are a coldwater species, comfortable in the 65 to 75°F range with no heater strictly required. Keep ammonia and nitrite at 0 and nitrate under roughly 20 ppm, and do weekly water changes of 25 to 50%, always treating new water with a dechlorinator first."
+        "a": "Goldfish are a coldwater species, comfortable in the 65 to 75°F range, with no heater needed unless the room falls below that. Keep ammonia and nitrite at 0 and nitrate under roughly 20 ppm, and do weekly water changes of 25 to 50%, always treating new water with a dechlorinator first."
       },
       {
         "q": "What should I feed a goldfish?",
@@ -23688,7 +23688,7 @@
     "title": "The Goldfish Bowl Myth: What the Research Actually Shows",
     "seoTitle": "The Goldfish Bowl Myth Debunked",
     "seoDescription": null,
-    "lastUpdated": "2026-09-08",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Why the goldfish bowl and 3-second-memory myths are wrong, what undersized tanks really do to goldfish, and the true space requirements by variety.",
     "date": "2026-06-26",
@@ -23746,8 +23746,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
-    "headingCount": 8,
+    "sourceCount": 4,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1620,
     "imageHeight": 1080
@@ -30296,7 +30296,7 @@
     "title": "Koi vs. Goldfish: Which Pond Fish Actually Fits Your Space",
     "seoTitle": "Koi vs. Goldfish: Full Comparison",
     "seoDescription": "Koi vs goldfish: real differences in species, size, housing needs, and lifespan, compared side by side.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Koi or goldfish? The differences in size, species, and whether you need a pond, not just which one is more colorful at the garden store.",
     "date": "2026-09-03",
@@ -30332,7 +30332,7 @@
       },
       {
         "q": "Which gets bigger, a koi or a goldfish?",
-        "a": "Koi, by a wide margin. A typical adult koi reaches 24 to 25 inches, with some approaching 3 feet in ideal conditions. Most goldfish stay in the 4 to 8 inch range, though pond-raised common and comet goldfish can grow larger than the fancy varieties bred for aquariums."
+        "a": "Koi, by a wide margin. A typical adult koi reaches 24 to 25 inches, with some approaching 3 feet in ideal conditions. Fancy goldfish stay at 6 to 8 inches, while common and comet goldfish reach 10 to 14 inches or more, especially in a pond."
       },
       {
         "q": "Which lives longer, a koi or a goldfish?",

@@ -87,10 +87,10 @@ export const fishEncyclopedia = [
     id: "goldfish", name: "Goldfish", scientific: "Carassius auratus",
     category: "Fish", emoji: "🐟", difficulty: "Beginner", guideId: "goldfish", available: true, image: "/assets/guides/goldfish.jpg",
     bio: {
-      overview: "The goldfish is one of the earliest domesticated fish, bred in China over a thousand years ago from a wild silver-gray carp relative for its color mutations. Selective breeding over centuries produced dozens of ornamental varieties, from the streamlined common and comet goldfish to elaborately finned fancy types like the oranda and ranchu. Goldfish grow to the size of their environment, and contrary to popular myth, they retain memories for months and can be trained to respond to cues and simple tasks.",
+      overview: "The goldfish is one of the earliest domesticated fish, bred in China over a thousand years ago from a wild silver-gray carp relative for its color mutations. Selective breeding over centuries produced dozens of ornamental varieties, from the streamlined common and comet goldfish to elaborately finned fancy types like the oranda and ranchu. Goldfish do not grow to fit their tank, and a small one stunts them rather than keeping them small. Contrary to popular myth, they retain memories for months and can be trained to respond to cues and simple tasks.",
       origin: "China (domesticated from a wild carp relative)",
       habitat: "Slow-moving rivers, ponds, and lakes; entirely domesticated as a pet",
-      adultSize: "4-12+ inches (10-30+ cm) depending on variety and space",
+      adultSize: "6-14+ inches (15-36+ cm) depending on variety",
       wildDiet: "Omnivorous - plant matter, insects, crustaceans, and detritus",
       wildLifespan: "10-15 years typical; 20-30+ years in spacious, well-kept ponds",
       conservation: "Domesticated (not evaluated; wild ancestor Least Concern)",
