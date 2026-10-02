@@ -403,3 +403,64 @@ rebalancing table columns and two rewordings that keep every fact (logged below)
   hours of real darkness".
 - Page 7 settings table: label column 32% is now 25%. Page 8 hazards table: Hazard column
   24% is now 20%, "What it does" 30% is now 36%.
+
+## Review fixes, 1.3
+
+Applied 2 October 2026. The rule from docs/RULES.md, "The source goes in the block, not the
+sentence": every outside source named in the care text (Merck/MSD, VCA, LafeberVet/Lafeber,
+CDC, CPSC, NHLBI) is rewritten as a plain statement in the book's own words. 32 mentions
+across 29 passages on pages 5 to 34; pages 38 to 41 (glossary, sources, where the sources
+disagree, version history) are untouched apart from four glossary page pointers. Every number,
+instruction and safety point is unchanged. Still 41 pages, nothing cut; minimum free space
+16px (page 40, unchanged). Each source is still credited on page 40.
+
+**Care text, before and after**
+
+- Page 5, cage size (LafeberVet): "Credible sources give different cage figures and both are printed here rather than averaged. LafeberVet gives a minimum of 20 to 24 in (50 to 60 cm) long and wide for a cockatiel. Care references commonly cite 20×20×30 in (51×51×76 cm) as a minimum, and many keepers" is now "A cockatiel cage needs a minimum of 20 to 24 in (50 to 60 cm) of length and width, with 20×20×30 in (51×51×76 cm) the smallest workable box, and many keepers"
+- Page 5, bar spacing (LafeberVet): "LafeberVet gives 0.5 to 0.75 in (1.3 to 1.9 cm) as the range. Care guidance for pet cockatiels is stricter and gives half an inch or smaller, and that is the figure to build to: a cockatiel's head is small enough that the top of the published range is a genuine entrapment risk," is now "Recommended spacing runs from 0.5 to 0.75 in (1.3 to 1.9 cm). Build to the narrow end, half an inch or smaller, because a cockatiel's head is small enough that the top of that range is a genuine entrapment risk,"
+- Page 7, light table (LafeberVet, Merck): "which is 16 hours of dark; LafeberVet gives the same intervention as 8 to 10 hours. An intervention, run under vet advice, not a permanent setting. Merck names a photoperiod over 12 hours as a documented risk factor for excessive laying." is now "which is 16 hours of dark; the intervention runs 8 to 10 hours, and 8 is the end to use. An intervention, run under vet advice, not a permanent setting. A photoperiod over 12 hours is a recognized risk factor for excessive laying."
+- Page 7, dust and lungs (Merck): "Cockatiels are a powder-down species; Merck names them with cockatoos as heavy producers of the keratin dust that films a room." is now "Cockatiels are a powder-down species and, like cockatoos, shed a heavy load of the keratin dust that films a room."
+- Page 7, dust and lungs (NHLBI): "bird fancier's lung: the NHLBI (US National Heart, Lung, and Blood Institute) lists pet birds in the home as a risk factor, usually diagnosed between 50 and 70," is now "bird fancier's lung. Pet birds in the home are a recognized risk factor; it is usually diagnosed between 50 and 70,"
+- Page 8, PTFE (Merck): "and the Merck Veterinary Manual notes that acute death is often the only clinical sign." is now "and often the first and only sign is a dead bird."
+- Page 8, PTFE sources (Merck): "Cookware is not the only source. Merck also lists irons" is now "Cookware is not the only source. The same fumes can come from irons"
+- Page 10, diet target (VCA): "VCA (Veterinary Centers of America), a large US chain of veterinary hospitals, gives the target as 75 to 80% formulated pellets, 20 to 25% fresh vegetables and fruit, and seed as a very small part of the diet rather than the base of it." is now "The target is 75 to 80% formulated pellets, 20 to 25% fresh vegetables and fruit, and seed as a very small share of the diet, never the base of it."
+- Page 10, seed callout (Merck): "and Merck notes that even a half-seed, half-pellet diet leaves a bird vitamin A deficient." is now "and even a diet split evenly between seed and pellets leaves a bird low in vitamin A."
+- Page 10, conversion (VCA): "VCA is blunt that this can take days, weeks or months." is now "Expect this to take days, weeks or months."
+- Page 10, treats (VCA): "VCA describes honey sticks plainly as seeds stuck together with sugar and honey, and similarly nutrient-deficient." is now "Honey sticks are just seed glued together with sugar and honey, with the same nutritional gaps as a seed bowl."
+- Page 15, wing clipping (Merck): "There is no fixed interval to quote: Merck notes molt timing varies with nutrition, daylight and humidity, so check" is now "There is no fixed interval to quote: molt timing shifts with diet, day length and humidity, so check"
+- Page 15, blood feathers (Merck): "Merck's method is four to seven of the outermost primaries" is now "The standard clip takes four to seven of the outermost primaries"
+- Page 16, weight table (Merck): "Merck's working definition of obesity in a bird. Page 20" is now "The working definition of obesity in a bird. Page 20"
+- Page 17, section subhead (VCA): "VCA notes reproductive problems are even more common" is now "Reproductive problems are even more common"
+- Page 17, leave the clutch (LafeberVet): "incubation runs 19 to 21 days, which is this species' own figure from LafeberVet rather than the 21 to 28 days quoted as a general parrot range, so" is now "incubation runs 19 to 21 days, shorter than the 21 to 28 day range for parrots in general, so"
+- Page 18, egg binding opener (VCA): "VCA names cockatiels among the small birds most often affected, and states plainly that small birds can die within a few hours of becoming egg-bound, from compromised circulation and pressure on the airways." is now "Cockatiels are among the small birds it strikes most often, and a small bird that is egg-bound can be dead within a few hours, from compromised circulation and pressure on the airways."
+- Page 18, signs (VCA): "And VCA's marker, which stands on its own before any of the rest appears:" is now "And one marker that counts on its own, before any of the rest appears:"
+- Page 18, first aid warmth (LafeberVet): "and where LafeberVet's 80 to 90°F (27 to 32°C) range for supplemental heat begins." is now "and the bottom of the 80 to 90°F (27 to 32°C) range for supplemental heat."
+- Page 20, hypovitaminosis A (Merck): "and Merck is specific that it is not only all-seed diets that cause it: even a diet of half seed and half pellets leaves a bird deficient." is now "and an all-seed diet is not the only cause: a bowl that is half seed, half pellets still leaves a bird short."
+- Page 20, calcium (Merck): "not through a hypocalcemia syndrome, which Merck highlights in African greys rather than cockatiels, but through" is now "not through a hypocalcemia syndrome, which is an African grey problem rather than a cockatiel one, but through"
+- Page 20, obesity (Merck): "Merck's working figure for obesity is roughly 20% over ideal weight" is now "The working threshold for obesity is roughly 20% over ideal weight"
+- Page 23, Giardia (VCA): "VCA describes infected birds as having loose stools or being intensely itchy, attacking themselves violently, especially under the wings, and that itch" is now "An infected bird shows loose stools or an intense itch, turning on itself violently, mostly under the wings, and that itch"
+- Page 23, blood feather row (VCA): "Do not pull it: VCA does not recommend pulling a blood feather at home, and even in clinic it is a last resort." is now "Do not pull it: pulling is not a home procedure, and even in clinic it is a last resort."
+- Page 25, molt (Merck): "Merck's picture is a full molt at least annually, with many birds also running a smaller partial molt about six months after the main one." is now "Expect a full molt at least once a year, and in many birds a smaller partial molt about six months after the main one."
+- Page 26, polyuria row (VCA): "and VCA notes polyuria is often the first sign of kidney damage from zinc." is now "and polyuria is often the first sign of kidney damage from zinc."
+- Page 26, undigested seed row (Merck): "Always abnormal, and Merck lists whole seed in the droppings as a sign of avian gastric yeast," is now "Always abnormal, and whole seed in the droppings is a sign of avian gastric yeast,"
+- Page 26, gastric yeast box (Merck): "Merck lists it as a sign of avian gastric yeast, Macrorhabdus ornithogaster, and names cockatiels among the species it most affects;" is now "It is a sign of avian gastric yeast, Macrorhabdus ornithogaster, and cockatiels are among the species it hits hardest;"
+- Page 27, quarantine (Merck): "For an aviary or an established group, Merck's figure is 90 days with testing," is now "For an aviary or an established group, make it 90 days with testing,"
+- Page 34, generator (CDC, CPSC): "A generator runs outside and at least 20 feet from any door, window or vent, the figure from the CDC (US Centers for Disease Control and Prevention), and the CPSC (US Consumer Product Safety Commission) rules out running one in or near an enclosed space, so an open garage door does not qualify." is now "A generator runs outside, at least 20 feet from any door, window or vent, and never in or near an enclosed space: an open garage door does not make a garage safe."
+
+Kept on purpose: page 26, "one case series found it more often in cockatiels than
+budgerigars". It names no outside source, so it is outside this pass.
+
+**Glossary pointers repointed to the sources page**
+
+- CDC and CPSC: Page 34 is now Page 40 (page 34 no longer names either).
+- NHLBI: Page 7 is now Page 40.
+- VCA: Page 10 is now Page 40.
+- MSD already pointed at page 40. No definition was shortened. Photoperiod still points at
+  page 7, which still uses the word.
+
+**Version**
+
+- Cover badge and colophon: Version 1.2 is now Version 1.3 (Oct 2026).
+- Version history: added the 1.3 row, "Outside sources named in the care text rewritten as
+  plain statements; every source is still credited on page 40."
+- Rendered to rebuilt/Cockatiel_Care_Package_v1.3.pdf; v1.2 left in place.

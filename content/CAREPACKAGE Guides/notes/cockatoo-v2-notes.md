@@ -589,3 +589,158 @@ here; it needs its own fix.
 
 Minimum 15 px (page 30). Tightest: p30 15, p5 16, p35 16, p31 22, p6 23, p29 23, p47 23, p11
 26, p24 26, p17 27, p27 28, p37 28.
+
+## Review fixes, 1.3
+
+Applied 2 October 2026, under docs/RULES.md "The source goes in the block, not the sentence".
+A script over the visible text found 25 mentions of Merck, VCA, LafeberVet or Lafeber, the
+NHLBI, the CDC and the CPSC outside the glossary (42 to 44), the sources pages (45, 46) and
+page 47, in 21 passages. Each was rewritten as a plain statement in the book's own words, with
+every number, instruction and safety point kept. Wording that was still the source's own
+("acute death is often the only clinical sign", "potential signs of illness", "immature
+cockatoos have a pale gray iris", the dinner-plate portion line) was reworded, not just
+de-attributed. The rerun of the script finds 0 mentions outside pages 42 to 47, and 0 dashes.
+
+### Before and after
+
+**Page 9, light table.**
+
+- Before: 8 hours a day, or LafeberVet's slightly wider 8 to 10. An intervention, under vet advice, not a permanent setting. Merck names a photoperiod over 12 hours as a documented risk factor for excessive laying
+- After: 8 hours a day. The workable range is 8 to 10; start at 8, the low end. An intervention, under vet advice, not a permanent setting. More than 12 hours of light a day is a documented risk factor for excessive laying
+
+**Page 10, bird fancier's lung callout.**
+
+- Before: The NHLBI (National Heart, Lung, and Blood Institute, the US government's heart and lung research institute) lists having pet birds in the home as a risk factor in its own right, not just occupational exposure, and puts most diagnoses between the ages of 50 and 70.
+- After: Having pet birds in the home is a risk factor in its own right, not just occupational exposure, and most diagnoses come between the ages of 50 and 70.
+
+**Page 11, PTFE callout.**
+
+- Before: it gives off fumes that cause direct caustic damage to the lung, and the Merck Veterinary Manual notes that acute death is often the only clinical sign.
+- After: it gives off fumes that cause direct caustic damage to the lung, and often the bird simply dies, with no sign beforehand.
+
+**Page 11, PTFE callout, other sources.**
+
+- Before: Cookware is not the only source. Merck also lists irons and ironing board covers
+- After: Cookware is not the only source. The same coating turns up in irons and ironing board covers
+
+**Page 12, portions.**
+
+- Before: VCA (Veterinary Centers of America), a large US chain of veterinary hospitals, offers a mental picture worth keeping: a small handful of food for a cockatoo is roughly a dinner-plate portion for a person.
+- After: Keep the scale in mind: to a cockatoo, a small handful of food is about what a full dinner plate is to a person.
+
+**Page 14, never-feed list.**
+
+- Before: VCA names all four as toxic and potentially fatal.
+- After: All four are toxic and can be fatal.
+
+**Page 16, training table.**
+
+- Before: VCA's ramp: five to ten minutes, once or twice a day, working up to two twenty-minute sessions
+- After: Start at five to ten minutes, once or twice a day, and work up to two twenty-minute sessions
+
+**Page 20, blood feathers callout.**
+
+- Before: Merck's method is four to seven of the outermost primaries on both wings, cut below the coverts that overlay them, with the secondaries closer to the body left alone, because
+- After: A standard clip takes four to seven of the outermost primaries on both wings, cut below the coverts that overlay them, and leaves the secondaries closer to the body alone, because
+
+**Page 21, sexing by iris.**
+
+- Before: LafeberVet gives the reason it fails in a young bird: immature cockatoos have a pale gray iris, so the cue simply is not there yet.
+- After: In a young bird it fails outright: a juvenile's iris is pale gray in both sexes, so the cue simply is not there yet.
+
+**Page 21, weighing.**
+
+- Before: Lafeber's Susan Orosz is specific: a scale reading grams rather than ounces, used daily, with the number written down, because it is the chart rather than any single reading that shows a trend.
+- After: Weigh in grams, not ounces, every day, and write each number down: a trend shows on the chart, never in one reading.
+
+**Page 21, weight table.**
+
+- Before: Merck's working definition of obesity in a bird. Page 26
+- After: Obese. Page 26
+
+**Page 22, egg binding.**
+
+- Before: VCA adds a marker that stands on its own before the rest of that list appears: no egg passed in 48 hours
+- After: One marker counts on its own, before any of those signs appear: no egg passed in 48 hours
+
+**Page 24, molt table.**
+
+- Before: Merck's picture is a full molt at least once a year, with many birds also running a smaller partial molt about six months after.
+- After: Expect a full molt at least once a year, and in many birds a smaller partial molt about six months after.
+
+**Page 26, obesity.**
+
+- Before: Merck's working figure for obesity in a bird is roughly 20% over ideal weight, and Merck names galahs, alongside macaws, Amazons and Quaker parrots, as species prone to it.
+- After: Obesity in a bird starts at roughly 20% over ideal weight, and galahs, alongside macaws, Amazons and Quaker parrots, are among the species prone to it.
+
+**Page 26, vitamin A callout.**
+
+- Before: Merck notes that even a diet of half seed and half pellets leaves a bird deficient.
+- After: A diet that is half seed and half pellets still falls short.
+
+**Page 27, blood feather first aid.**
+
+- Before: Do not pull it: VCA does not recommend pulling one at home, and even in clinic it is a last resort
+- After: Do not pull it at home; even in clinic, pulling is a last resort
+
+**Page 28, droppings: polyuria.**
+
+- Before: and VCA notes polyuria is often the first sign of kidney damage from zinc.
+- After: and in zinc poisoning, polyuria is often the first sign that the kidneys are being damaged.
+
+**Page 28, droppings: undigested food.**
+
+- Before: Always abnormal, and Merck lists whole seed in the droppings as a sign of avian gastric yeast,
+- After: Always abnormal, and whole seed in the droppings is a sign of avian gastric yeast,
+
+**Page 29, quarantine.**
+
+- Before: Merck's figure for introducing a bird to an aviary or an established group is 90 days with testing,
+- After: introducing a new bird to an aviary or an established group takes 90 days with testing,
+
+**Page 31, rehoming.**
+
+- Before: Merck treats reduced morning vocalizing and reduced interaction as potential signs of illness, so the first move is a vet check rather than an assumption about grief. VCA puts the first exam within 1 to 2 weeks of acquiring any bird
+- After: less morning calling and less interaction can both signal illness, so the first move is a vet check rather than an assumption about grief. Any newly acquired bird gets its first exam within 1 to 2 weeks
+
+**Page 38, power outage callout.**
+
+- Before: A generator runs outside and at least 20 feet from any door, window or vent, the figure from the CDC (US Centers for Disease Control and Prevention), and the CPSC (US Consumer Product Safety Commission) rules out running one in or near an enclosed space, so an open garage door does not qualify.
+- After: A generator runs outside, at least 20 feet from any door, window or vent, and never in or near an enclosed space: an open garage door does not make a garage safe.
+
+### Glossary page pointers
+
+Four entries pointed at body pages that no longer use the term, and now point at the sources
+page where it appears: CDC, pages 38 and 45 to pages 45 and 46; CPSC, page 38 to page 46;
+NHLBI, page 10 to page 45; VCA, page 12 to page 45. MSD already pointed at page 45. No
+definition was changed or shortened, and every abbreviation stays in the glossary because the
+sources pages still use it.
+
+### Version
+
+Cover badge "Version 1.3 · Oct 2026", colophon line on page 47 to Version 1.3, and a 1.3 row
+in the version history: "Outside sources named in the care text rewritten as plain statements;
+every source is still credited on pages 45 and 46."
+
+The new row took page 47 from 23 px free to -12 px. No content was cut. Three layout moves on
+that page only: the version table's narrow columns went from 12/12/12% to 9/11/11%, which gave
+the What Changed column room to drop a line (+15 px); the divider above the colophon went from
+8 pt to 4 pt margins (+10 px); and the closing muted paragraph's top margin went from 5 pt to
+3 pt. Page 47 is now 16 px free.
+
+### Not done
+
+**First-mention spelling on the sources pages.** With VCA, the CDC and the CPSC gone from the
+body, their first appearance in the book is now on the sources pages, where VCA (page 45, "VCA
+Animal Hospitals"), the CDC (page 45, after the spelled-out NASPHV) and the CPSC (page 46, "US
+CDC and CPSC") are not spelled out inline. All three are in the glossary. Out of scope for this
+pass; spelling them out inline would be a change to pages 45 and 46.
+
+**Page 47 and the 1.1 history row** still name Merck and VCA, by design: that page is the
+sources-disagree page and version history, and was excluded from this pass.
+
+### Free space after the fixes
+
+Minimum 15 px (page 30, unchanged). Changed: p10 87 to 105, p21 30 to 48, p38 56 to 73,
+p20 126 to 109 (the clip sentence runs a line longer), p47 23 to 16. Every other page is
+as it was at 1.2.
