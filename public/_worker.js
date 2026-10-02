@@ -667,7 +667,7 @@ async function handleContact(request, env) {
 const CARE_PACKAGE_STORE = {
   'bearded-dragon': {
     name: 'Bearded Dragon Care Package',
-    edition: '3.1',
+    edition: '4.0',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENBp9qtY3Ob6vamuXMA6sD',
   },
@@ -715,7 +715,7 @@ const CARE_PACKAGE_STORE = {
   },
   'russian-tortoise': {
     name: 'Russian Tortoise Care Package',
-    edition: '2.2',
+    edition: '2.3',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENCB9qtY3Ob6vaTvVBMark',
   },
