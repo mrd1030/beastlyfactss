@@ -51,11 +51,14 @@ Things worth knowing before editing:
   encyclopedia entry own the numbers; prices come only from the cost guide, and the budget
   rows are its rows, so the totals add up. Where the site disagrees with itself, the species
   guide wins and the conflict goes on the "Where the sources disagree" page.
-- **Left out for want of a site source:** weights by age (the snake sexing guide says no
-  verified ranges exist), a body-weight percentage for prey, female follicle and egg-binding
-  detail beyond the prolapse link, dehydration signs other than urates, and supplements (whole
-  prey is the complete diet; the site says nothing more). Add them back only with a site
-  article behind them.
+- **Restored from the site on 2 October 2026:** prey at 10 to 15% of body weight and the prey
+  stages, the weight fixed points (800 to 1,000 g female fast, about 1,500 g at maturity, 10% loss),
+  sexual maturity, the first meal and young-snake refusal lines, no supplements, the never-feed
+  additions, stool rate, dehydration signs beyond urates, the humidity chamber, seated handling,
+  and the `eggs` page (follicles, laying and egg binding), each now in a ball python guide.
+  **Still left out for want of a source:** a full weight-by-age chart and hatchling weight, sticky
+  saliva as a dehydration sign, scale rot clearing over one or two sheds, a gerbil-specific reason
+  beyond live prey, and a gram scale price (the catalog has none for reptiles).
 - **Abbreviations are spelled out at first use in reading order** (the how-to page defines the
   units; the enclosure diagram says "ultraviolet" so UVB is first met, and defined, on the
   humidity page), and every one has a glossary entry. Keep it that way when adding a page.

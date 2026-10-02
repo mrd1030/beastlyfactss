@@ -58,7 +58,8 @@ SECTIONS = [
     ]),
     ("Section 05 &middot; Arrival &amp; Life Stages", [
         ("arrival", "Choosing a Snake, Quarantine &amp; the First Vet Visit"),
-        ("sexing", "Telling the Sex, Females &amp; Eggs"),
+        ("sexing", "Telling Male from Female"),
+        ("eggs", "Females, Follicles &amp; Egg Binding"),
         ("winter", "The Winter Appetite Dip &amp; Brumation"),
     ]),
     ("Section 06 &middot; The Law", [
@@ -89,9 +90,10 @@ SECTIONS = [
         ("enrichlog", "Enrichment Checklist &amp; Log"),
     ]),
     ("Reference", [
-        ("glossary", "Glossary, A to L"),
-        ("glossary2", "Glossary, M to Z"),
+        ("glossary", "Glossary, A to I"),
+        ("glossary2", "Glossary, L to Z"),
         ("sources", "Sources"),
+        ("sources2", "Sources, Continued"),
         ("disagree", "Where the Sources Disagree"),
         ("about", "Version History &amp; About"),
     ]),
