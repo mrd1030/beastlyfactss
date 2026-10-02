@@ -230,3 +230,30 @@ gargoyle-specific; and the emergency plan's gargoyle row carries a crested figur
 every other day, three times a week), adult insects (weekly, twice monthly, three times a
 week) and UVB life (6 months to a year). The site's figures sit inside every range and the
 package keeps them; page 41 prints the spread.
+
+## Pointer trim, 1.0
+
+Page pointers trimmed by the maze rules so every package reads alike: tool pages (how to use,
+setup checklist, emergency card, first 30 days, symptom reference, routine, sitter sheet) keep
+one pointer per row; everywhere else one pointer per destination per page, no pointer to the
+page you are on, no pointer to the next or previous page in the same section, no ping-pong
+(A to B and B to A), and nothing points to the glossary. Glossary entries keep every page
+that covers the term; each listed page was checked and still covers it.
+
+| | Before | After |
+|---|---|---|
+| Pointers, total | 170 | 147 |
+| On tool pages | 46 | 46 |
+| Repeats on care pages | 9 | 0 |
+| Glossary pointers (out) | 51 | 51 |
+| Ping-pong pairs | 7 | 0 |
+| Pointers to the glossary | 0 | 0 |
+| Self-pointers | 0 | 0 |
+
+The 23 removed: ping-pong returns (humidity to shed, UVB to MBD, substrate to FTS, diet to
+enrichment, insects to MBD, appetite to behavior); same-section neighbors (enclosure to the
+gradient, UVB to furnishings, diet to powder twice, powder to diet, sexing to eggs, FTS to
+MBD, droppings to parasites); second pointers to the same page (powder to appetite, the
+mistakes table's second gradient and substrate rows, the behavior table's second FTS and
+shed rows, MBD's second supplement pointer, "Pages 27 and 18" to "Page 18"); and the About
+page's two pointers back to Sources. All 41 pages still fit (minimum 66px free).

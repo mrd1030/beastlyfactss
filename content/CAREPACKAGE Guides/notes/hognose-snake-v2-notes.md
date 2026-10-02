@@ -259,3 +259,32 @@ and the figure chosen.
 
 - The lidded feeding tub ($5 to $10) and kitchen scale ($10 to $20) had no source for their prices, so both moved to the "not in the totals" line, unpriced. Equipment is now $258 to $441 and all in $383 to $691, on pages 4, 33 and 44.
 - "commonest" now reads "most common".
+
+## Pointer trim, 1.0
+
+Page pointers trimmed by the maze rules so every package reads alike: tool pages (how to use,
+setup checklist, emergency card, first 30 days, symptom reference with its Page column,
+routine, sitter sheet) keep one pointer per row; everywhere else one pointer per destination
+per page, no pointer to the page you are on, no pointer to the next or previous page in the
+same section, no ping-pong (A to B and B to A), and nothing points to the glossary. Glossary
+entries keep every page that covers the term; each listed page was checked and still covers
+it ("Conditional" points to the States with Conditions page, which lists them).
+
+| | Before | After |
+|---|---|---|
+| Pointers, total | 162 | 140 |
+| On tool pages | 47 | 47 |
+| Repeats on care pages | 7 | 0 |
+| Glossary pointers (out) | 39 | 39 |
+| Ping-pong pairs | 6 | 0 |
+| Pointers to the glossary | 0 | 0 |
+| Self-pointers | 0 | 0 |
+
+The 22 removed: ping-pong returns (species to growth, humidity to respiratory, feeding to
+impaction, thawing to impaction, display to enrichment, impaction to stool); same-section
+neighbors (profile to species twice, enclosure to temperature, temperature to heating twice,
+substrate to humidity, feeding to thawing, thawing to refusals, display to venom, impaction
+to parasites); second pointers to the same page (profile's lighting row, the refusals page's
+regurgitation callout, growth's size hint, the stool page's mites line); and the About
+page's two pointers back to Sources. "Work through page 13" now reads "work through the
+refusal checklist that follows". All 44 pages still fit (minimum 28px free).

@@ -233,3 +233,32 @@ guide; the package prints the first inside the second. Lifespan is 15 to 20 comm
 with a documented record just over 16 (cost guide), against 10 to 20 in Tree of Life and
 Animal Diversity Web; page 4 prints the site figure and page 42 the spread. None is a site
 error.
+
+## Pointer trim, 1.0
+
+Page pointers trimmed by the maze rules so every package reads alike: tool pages (how to use,
+setup checklist, emergency card, first 30 days, symptom reference, routine, sitter sheet) keep
+one pointer per row; everywhere else one pointer per destination per page, no pointer to the
+page you are on, no pointer to the next or previous page in the same section, no ping-pong
+(A to B and B to A), and nothing points to the glossary. Glossary entries keep every page
+that covers the term; each listed page was checked and still covers it.
+
+| | Before | After |
+|---|---|---|
+| Pointers, total | 131 | 118 |
+| On tool pages | 48 | 47 |
+| Repeats on care pages | 5 | 0 |
+| Glossary pointers (out) | 16 | 16 |
+| Ping-pong pairs | 1 | 0 |
+| Pointers to the glossary | 1 | 0 |
+| Self-pointers | 0 | 0 |
+
+The 13 removed: the how-to page's "collected in the Glossary on page 39"; the MBD page's
+gout pointer back to Reading Poop (ping-pong); same-section neighbors (enclosure to the heat
+mat, feeders to supplements, red flags to retained shed, retained shed to MBD, Reading Poop
+to parasites); second pointers to the same page (the diet page's yard-insects line, now
+covered by the four-parts table, and its second supplements cell, merged into one cell
+spanning both rows; the red-flags table's impaction row; the second state-rules pointer on
+Sources); and the About page's two pointers back to Sources. The four-parts table keeps its
+Page column, including the next-page schedule row, as a section index. All 42 pages still
+fit (minimum 38px free).
