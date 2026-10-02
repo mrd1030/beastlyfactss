@@ -60,7 +60,7 @@ had moved past the PDF):
 | goldfish | Goldfish_Care_Package_v2.1.pdf | 40 |
 | guinea-pig | Guinea_Pig_Care_Package_v2.1.pdf | 41 |
 | hamster | Hamster_Care_Package_v2.3.pdf | 37 |
-| leopard-gecko | Leopard_Gecko_Care_Package_v2.1.pdf | 35 |
+| leopard-gecko | Leopard_Gecko_Care_Package_v3.0.pdf | 49 |
 | lovebird | Lovebird_Care_Package_v2.1.pdf | 39 |
 | rabbit | Rabbit_Care_Package_v2.1.pdf | 40 |
 | russian-tortoise | Russian_Tortoise_Care_Package_v2.3.pdf | 41 |

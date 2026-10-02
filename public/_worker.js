@@ -673,7 +673,7 @@ const CARE_PACKAGE_STORE = {
   },
   'leopard-gecko': {
     name: 'Leopard Gecko Care Package',
-    edition: '2.1',
+    edition: '3.0',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENBs9qtY3Ob6vaOPtdFLAt',
   },
