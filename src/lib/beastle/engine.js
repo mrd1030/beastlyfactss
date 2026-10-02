@@ -143,7 +143,8 @@ export const LEVELS = {
 // unseen answers first.
 export function pickUnlimited(seen, exclude, level = 'medium') {
   const allowed = LEVELS[level] || LEVELS.medium;
-  const open = pool.filter((e) => e.answer !== exclude && allowed.includes(e.level));
+  // dailyOnly answers (TOKAY for the tokay gecko) play here under their full name.
+  const open = pool.filter((e) => !e.dailyOnly && e.answer !== exclude && allowed.includes(e.level));
   const fresh = open.filter((e) => !seen.includes(e.answer));
   const from = fresh.length ? fresh : open;
   return from[Math.floor(Math.random() * from.length)];
