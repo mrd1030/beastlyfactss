@@ -250,8 +250,8 @@ export const CARE_PACKAGE_COPY = {
   'crested-gecko': {
     hook: 'Forgiving in some ways. Unforgiving in others.',
     heroParagraph:
-      'A 35-page printable manual with the humidity cycle and the 85°F ceiling a crested gecko actually needs, diet powder on a real schedule, and health triage, not a setup that quietly punishes small mistakes.',
-    heroTicks: ['35 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
+      'A 47-page printable manual with the humidity cycle and the 85°F ceiling a crested gecko actually needs, diet powder on a real schedule, choosing a healthy gecko, the law in every state, and health triage, not a setup that quietly punishes small mistakes.',
+    heroTicks: ['47 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
     roulette: [
       'Humidity that spikes and crashes instead of cycling',
       'Diet powder treated as a rough guess, not a schedule',
@@ -265,21 +265,21 @@ export const CARE_PACKAGE_COPY = {
       'Floppy tail syndrome, impaction and overheating treated as real signals',
     ],
     inside: [
-      { emoji: '💧', title: 'Humidity cycling', line: 'Temperature, humidity and the 85°F ceiling, misting, ventilation and lighting.' },
-      { emoji: '🥗', title: 'Diet on a schedule', line: 'Feeding by age, complete diet powder mixing and rotation, feeder insects, fruit and the never-feed list.' },
-      { emoji: '⚠️', title: 'Health and red flags', line: 'MBD and floppy tail syndrome, impaction, stuck shed and respiratory infection, dehydration, tail loss and overheating.' },
-      { emoji: '🏠', title: 'Housing and handling', line: 'Enclosure, common mistakes and enrichment, and reading poop and keeping a gecko hydrated.' },
-      { emoji: '🥚', title: 'Sexing, growth and eggs', line: 'Sexing, growth and body condition, and females, eggs and egg binding.' },
+      { emoji: '💧', title: 'Humidity cycling', line: 'Temperature and the 85°F ceiling, heat control, the daily humidity cycle, misting and airflow, and UVB light and day length.' },
+      { emoji: '🥗', title: 'Diet on a schedule', line: 'Feeding by age, complete diet powder mixing, rotation and refusals, feeder insects and gut-loading, the never-feed list, and calcium on its own page.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Metabolic bone disease, floppy tail syndrome and tail loss, stuck shed and respiratory infection, impaction, parasites, overheating, and reading droppings.' },
+      { emoji: '🏠', title: 'Housing and handling', line: 'The vertical enclosure and where it goes, substrate and bioactive setups, cleaning, handling and taming, body language, and enrichment.' },
+      { emoji: '🥚', title: 'Arrival, eggs and the law', line: 'Choosing a healthy gecko and quarantine, sexing, eggs and egg binding, shedding and the winter slowdown, and where a crested gecko is legal.' },
       { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, pet-sitter sheet, and the logs.' },
     ],
     previewHeadline: 'Print-first pages, clearly marked.',
     previews: [
       { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
-      { page: 6, alt: 'Temperature, humidity and the 85°F ceiling' },
-      { page: 9, alt: 'Complete diet powder: mixing, portions and rotation' },
-      { page: 16, alt: 'Metabolic bone disease and floppy tail syndrome' },
-      { page: 22, alt: 'Emergency and quick targets card' },
-      { page: 25, alt: 'Symptom quick reference table' },
+      { page: 7, alt: 'Temperature, the 85°F ceiling and heat control' },
+      { page: 12, alt: 'Diet and feeding by age' },
+      { page: 27, alt: 'Metabolic bone disease' },
+      { page: 33, alt: 'Emergency and quick targets card' },
+      { page: 36, alt: 'Symptom quick reference table' },
     ],
     whoFor: [
       'New crested gecko owners setting up a consistent enclosure',
