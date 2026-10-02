@@ -711,6 +711,149 @@ export const CARE_PACKAGE_COPY = {
     ],
   },
 
+  // The two birds below were written from their own source HTML, edition 1.2,
+  // the same way as the four above.
+
+  cockatiel: {
+    hook: 'A twenty-five-year cockatiel starts with the food bowl and a night light.',
+    heroParagraph:
+      'A 41-page printable manual with the cage and the bar spacing that is a safety limit, the night light that stops night frights, five ways to convert a seed eater, the levers that prevent chronic egg laying, nine health pages, and the printable owner tools.',
+    heroTicks: ['41 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
+    roulette: [
+      'A seed bowl sold as a complete diet',
+      'A tall, narrow cage bought for its looks',
+      'A bird thrashing in the dark at 2am, and nobody saying why',
+      'A hen laying clutch after clutch with no male in the house',
+    ],
+    answers: [
+      '75 to 80 percent pellets, five ways to convert a seed eater, and the weight loss that means slow down',
+      'A 20 by 20 inch floor, a 24 by 24 by 30 inch target, width over height, and bars at half an inch',
+      'Night frights explained, and the dim night light that prevents the injury this species is known for',
+      'The trigger list for chronic laying, why the eggs stay where they are, and egg binding as a same-day emergency',
+    ],
+    inside: [
+      { emoji: '🏠', title: 'Cage, placement and hazards', line: 'Cage size and the half-inch bar spacing, perches and dishes, where the cage goes, and the household hazards page, starting with nonstick pan fumes (PTFE).' },
+      { emoji: '🪟', title: 'Sleep and night frights', line: '10 to 12 hours of real darkness, the dim night light that prevents the signature injury, and day length as the hormone lever.' },
+      { emoji: '🥗', title: 'Diet and pellet conversion', line: 'The 75 to 80 percent pellet target, five conversion methods, vegetable and fruit charts, and the never-feed list.' },
+      { emoji: '🤝', title: 'Handling and the crest', line: 'Taming in steps, reading the crest, one bird or two, wing clipping from both sides, sexing, and the daily gram scale.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Chronic egg laying and egg binding, vitamin A and fatty liver, psittacosis, beak and feather disease (PBFD), Giardia and plucking, molt, and quarantine.' },
+      { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, pet-sitter sheet, and the logs.' },
+    ],
+    previewHeadline: 'The pages that make a five-year bird a twenty-five-year one.',
+    previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
+      { page: 7, alt: 'Light, sleep and night frights, with the darkness and light targets' },
+      { page: 8, alt: 'Household hazards and bird-proofing, starting with nonstick pan fumes' },
+      { page: 28, alt: 'Setup checklist and targets' },
+      { page: 30, alt: 'Budget and shopping list' },
+      { page: 32, alt: 'Symptom quick reference table' },
+    ],
+    whoFor: [
+      'New cockatiel owners buying the cage before the bird',
+      'Keepers with a bird on a seed mix who want it on pellets without a hunger strike',
+      'Anyone with a hen who has started laying, before it turns into a habit',
+    ],
+    whatNot: [
+      'Not a substitute for an avian veterinarian',
+      'Not a live website mirror, a clean printable package instead',
+      'Not a subscription, one purchase and every corrected edition is free',
+    ],
+  },
+
+  cockatoo: {
+    hook: 'Four to six hours most days, for decades. Take the honest test first.',
+    heroParagraph:
+      'A 47-page printable manual with a decision test written to talk some readers out of the bird, six species compared, training and foraging as the plan against plucking and screaming, feather dust and your own lungs, seven health pages, state legal status, and a succession plan.',
+    heroTicks: ['47 pages, print or view', 'Advanced, not a first parrot', 'No external links inside the PDF'],
+    roulette: [
+      'A hand-raised baby sold on the cuddling, and nothing about the bird at eight years old',
+      'Constant one-on-one time in the first weeks, then a bird that screams when that person leaves the room',
+      'Plucking blamed on boredom before anyone has seen a vet',
+      'A bird that can live 70 years, and no plan for who takes it next',
+    ],
+    answers: [
+      'Nine questions to answer out loud before you buy, and an honest case for adoption',
+      'Independence built from day one: several people in rotation, a stand worth being on, and departures made boring',
+      'Medical causes ruled out first, then training, foraging, sleep and routine in order of value',
+      'A succession page: a named guardian, a sanctuary fallback, money attached, and the will',
+    ],
+    inside: [
+      { emoji: '⚖️', title: 'The honest test', line: 'Nine questions to answer before you buy, six species compared on size, price, noise and temperament, and where the bird comes from.' },
+      { emoji: '🏠', title: 'Housing, dust and hazards', line: 'Cage size, bar gauge and padlocks, the play stand, 10 to 12 hours of darkness, feather dust and the HEPA air purifier, and the fumes from overheated nonstick pans (PTFE).' },
+      { emoji: '🥗', title: 'Diet and foraging', line: 'The 75 to 80 percent pellet target, converting a seed eater, the never-feed list, nuts as training pay, and nothing in a bowl.' },
+      { emoji: '🤝', title: 'Training and behavior', line: 'Training sessions, bites and sexual maturity, over-bonding and independence, screaming, wing clipping, and hormones.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Plucking and the molt differential, beak and feather disease (PBFD), obesity, lipomas and fatty liver, psittacosis, droppings, and quarantine.' },
+      { emoji: '🧰', title: 'The long view and owner tools', line: 'Legal status by state, a succession plan, setup checklist, emergency card, budget, first 30 days, symptom reference, and the logs.' },
+    ],
+    previewHeadline: 'The pages to read before the bird, and the ones to keep after.',
+    previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
+      { page: 5, alt: 'Is a cockatoo right for you? The nine-question honest test' },
+      { page: 31, alt: 'The sixty-year bird: succession and rehoming plan' },
+      { page: 32, alt: 'Setup checklist and targets' },
+      { page: 34, alt: 'Budget and shopping list' },
+      { page: 36, alt: 'Symptom quick reference table' },
+    ],
+    whoFor: [
+      'Anyone deciding whether to buy a cockatoo, before they meet the baby',
+      'Owners of a cockatoo that screams, plucks or has become a one-person bird',
+      'Keepers who want a written plan for a bird that may outlive them',
+    ],
+    whatNot: [
+      'Not a substitute for an avian veterinarian or a certified parrot behavior consultant',
+      'Not a live website mirror, a clean printable package instead',
+      'Not a subscription, one purchase and every corrected edition is free',
+    ],
+  },
+
+  // Written from the source HTML, edition 1.0, the same way as the birds.
+
+  'whites-tree-frog': {
+    hook: 'An easy frog for sixteen years, if someone counts the crickets.',
+    heroParagraph:
+      'A 39-page printable manual with the vertical enclosure, a humidity cycle that dips instead of sitting high, the water that is safe to mist with, feeding by size and age, the ridge test that catches obesity early, seven health pages, and the printable owner tools.',
+    heroTicks: ['39 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
+    roulette: [
+      'A care sheet that says "high humidity," and an enclosure that never dries out',
+      'Untreated tap water in the mister, or distilled water because it sounds purer',
+      'A frog that eats everything offered, fed everything offered',
+      'Two frogs of different sizes sharing one enclosure',
+    ],
+    answers: [
+      'A 50 to 60 percent baseline, misted to 70 to 80 once or twice a day and then left to dry back, with a chart of the cycle',
+      'Dechlorinated tap or spring water only, and why distilled and reverse-osmosis water can be fatal to a frog',
+      '3 to 4 insects, 2 to 3 times a week for an adult, and the eardrum ridge test that shows obesity before the waistline does',
+      'Size-matched groups only, because this frog will try to swallow anything that fits, a smaller frog included',
+    ],
+    inside: [
+      { emoji: '🏠', title: 'The vertical enclosure', line: 'The 18 by 18 by 24 inch minimum measured in height, where it goes, the gentle temperature gradient, and every heat source outside the glass.' },
+      { emoji: '💧', title: 'Humidity and safe water', line: 'The cycle that dips after each misting, ventilation, the water that is safe to mist with, UVB (ultraviolet B) light, substrate and plants.' },
+      { emoji: '🥣', title: 'Feeding and the ridge test', line: 'Feeding by size and age, staples and treats, gut-loading and dusting, and the fat ridges above the eardrum that read body condition.' },
+      { emoji: '🤲', title: 'Handling, groups and quarantine', line: 'Plain water and no soap, size-matched groups and sexing, choosing a frog, six to eight weeks of quarantine, and normal behavior.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Obesity and fatty liver, chytrid, red-leg, metabolic bone disease and vitamin A, skin and chemical injuries, impaction and parasites.' },
+      { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, outage plan, pet-sitter sheet, and the logs.' },
+    ],
+    previewHeadline: 'The cycle chart, the ridge test, and the card that lives by the enclosure.',
+    previews: [
+      { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
+      { page: 7, alt: 'The humidity cycle that dips, with a chart of the evening misting spike and the dry-back' },
+      { page: 14, alt: 'Body condition: reading the fat ridges above the eardrum, three readings' },
+      { page: 21, alt: 'Obesity, fatty eyes and fatty liver: causes, signs and recovery' },
+      { page: 28, alt: 'Emergency and quick targets card, to print and post near the enclosure' },
+      { page: 29, alt: 'Budget and shopping list, setup and yearly costs' },
+    ],
+    whoFor: [
+      "New White's tree frog owners setting up the enclosure before the frog comes home",
+      'Keepers whose frog is filling out over the eardrums, or whose enclosure never dries',
+      'Anyone keeping two or more frogs together, or bringing a new one home to a group',
+    ],
+    whatNot: [
+      'Not a substitute for a veterinarian who sees amphibians',
+      'Not a live website mirror, a clean printable package instead',
+      'Not a subscription, one purchase and every corrected edition is free',
+    ],
+  },
+
 };
 
 export function getCarePackageCopy(id) {

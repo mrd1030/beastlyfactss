@@ -137,7 +137,7 @@ Shipped 2026-09-24 in commit 4c5ae0a, pushed to claude/adsense-readiness-review-
 
 **Worth knowing, not fixed (out of scope)**
 - One new source is weak: canary-health-issues-guide now cites Pet Assure, a pet discount plan's blog. It backs the red mite night-feeding and anemia lines, which had no source before.
-- The cockatoo care package HTML (content/CAREPACKAGE Guides/source/cockatoo.html and cockatoo-src/pages_*.html) still says "six hours a day", "$250 to $1,300" setup and "20 to 40% fresh". The site pages were corrected away from those figures.
+- The cockatoo care package HTML (content/CAREPACKAGE Guides/source/cockatoo.html and cockatoo-src/pages_*.html) still says "six hours a day", "$250 to $1,300" setup and "20 to 40% fresh". The site pages were corrected away from those figures. Fixed in cockatoo 1.2 (2026-10-01).
 - Neon tetra temperature: the two shared fish guides disagree. aquarium-stocking-and-tankmates-guide says neons top out near 77°F; aquarium-ich-treatment-guide says 81°F.
 - Platy cycling time: platy-tank-setup-guide says a fishless cycle takes 2 to 4 weeks; aquarium-cycling-guide says 4 to 6.
 - Source homepages, which the rules forbid: pacman-frog-cost-guide and pacman-frog-handling-guide (a-z-animals.com, backwaterreptiles.com, thecritterdepot.com), pacman-frog-tank-setup-guide (mramphibian.com), why-bearded-dragons-need-uvb-lighting-and-why-skipping-it-is-deadly (ARAV), why-parrots-need-social-interaction-and-what-loneliness-does-to-them (AAV), hamster-tank-setup-guide (Merck).
@@ -406,11 +406,11 @@ the HTML), then re-render the PDF.
 **Package wrong, site right (change the package):**
 - [ ] Leopard gecko p17: "around half of captive leopard geckos may carry it" and "most commonly diagnosed reptile". Replace with the single Thai farm 51% finding.
 - [ ] Tarantula (profile, pp. 11, 27): male lifespan "4 to 7 years". Site: about 5 for a rose hair, 10 at the outside.
-- [ ] Cockatoo: "75 to 80% pellets... no more than 20 to 40%" fresh (four places). Site: remaining 20 to 25%, seeds under about 10%.
-- [ ] Cockatoo: bathing "two or three times a week". Site: offer a bath daily (VCA).
-- [ ] Cockatoo: cage "$700" to "$1,550". Site: $820 to $880 powder-coated, $1,450 to $1,550 stainless.
+- [x] Cockatoo: "75 to 80% pellets... no more than 20 to 40%" fresh (four places). Site: remaining 20 to 25%, seeds under about 10%. Done in 1.2 (2026-10-01).
+- [x] Cockatoo: bathing "two or three times a week". Site: offer a bath daily (VCA). Done in 1.2 (2026-10-01).
+- [x] Cockatoo: cage "$700" to "$1,550". Site: $820 to $880 powder-coated, $1,450 to $1,550 stainless. Done in 1.2 (2026-10-01), at the current cost guide figures: $1,250 to $1,500 powder-coated, $1,800 to $2,500 stainless.
 - [ ] Lovebird: "75 to 80% pellets, 20 to 40% fresh". Site: remaining 20 to 25%.
-- [ ] Cockatiel: bathing dish "two or three times a week". Site: a bath offered daily.
+- [x] Cockatiel: bathing dish "two or three times a week". Site: a bath offered daily. Done in 1.2 (2026-10-01).
 - [ ] Crested gecko p14: "weigh weekly". Site settled on at least monthly, more often while off food.
 - [ ] Russian tortoise: soak "at least 20 minutes, two to three times a week". Site: adults weekly 10 to 20 minutes, juveniles 10 to 15 minutes twice a week, no deeper than the elbows.
 - [ ] Russian tortoise: "that is what causes pyramiding". Site: one suspected driver, not completely understood.
@@ -445,9 +445,9 @@ Added 2026-09-25 from the wave 3a changes:
 
 Added 2026-09-25 from the wave 3b changes:
 - [ ] Budgie (budgie-src/pages_1.html:262): "a bird does not need a special lamp". Site: without unfiltered sunlight, a full-spectrum bird UV light 10 to 12 hours a day (budgie-cost-guide; PetMD). The other bird packages already recommend one.
-- [ ] Cockatiel (cockatiel-src/pages_1.html:349): "Two hens or two cocks avoids the egg problem entirely". Site: hens lay with no male; two males are the pairing with no eggs (cockatiel-handling-guide; Lafeber, PetMD, VCA).
+- [x] Cockatiel (cockatiel-src/pages_1.html:349): "Two hens or two cocks avoids the egg problem entirely". Site: hens lay with no male; two males are the pairing with no eggs (cockatiel-handling-guide; Lafeber, PetMD, VCA). Done in 1.2 (2026-10-01).
 - [ ] Lovebird (lovebird-src/pages_1.html:337, pages_2.html:111): "Two hours a day is the working figure". Site: no study backs a fixed number; daily interaction and time out, and hours alone did not change feather damage odds (lovebird-enrichment-guide; Ebisawa et al. 2021, PetMD).
-- [ ] Budgie, cockatiel, lovebird (budgie-src/pages_2.html:227-229; cockatiel-src/pages_2.html:236, pages_4.html:256; lovebird-src/pages_2.html:242): only a 10% drop is given as a weight trigger. Add: during a diet conversion, more than 1 to 2% lost in a week means the change is too fast (feeding guides; UF Small Animal Hospital).
+- [ ] Budgie, cockatiel, lovebird (budgie-src/pages_2.html:227-229; cockatiel-src/pages_2.html:236, pages_4.html:256; lovebird-src/pages_2.html:242): only a 10% drop is given as a weight trigger. Add: during a diet conversion, more than 1 to 2% lost in a week means the change is too fast (feeding guides; UF Small Animal Hospital). Cockatiel done in 1.2 (2026-10-01); budgie and lovebird still open.
 - [ ] Rabbit (rabbit.html:1069, 1406, 1578): "Annual vaccination" with one box a year. Site: first course is two doses 21 days apart from 4 weeks old, then yearly; starter series $80 to $180, booster $60 to $75 (rabbit-health-issues-guide, rabbit-cost-guide; Bosco-Lauth et al. 2024).
 - [ ] Hamster (hamster.html:658): Syrians nurse "roughly 26 to 28 days". Site: weaned at about 20 days, can breed at 7 to 8 weeks (hamster-handling-guide; Merck).
 - [ ] Hamster (hamster.html:1342, 1347, 1364, 1519): wheel, dishes and hideout washed monthly, bedding partly replaced every 3 to 4 months. Site: water bottle daily; full clean weekly for a small cage, every few weeks for a large deep-bedded one, nest and hoard set aside and returned (hamster-tank-setup-guide; PetMD, PDSA).
@@ -456,13 +456,13 @@ Added 2026-09-25 from the wave 3a changes:
 
 **Package and site disagree, no source settles it yet (research before changing either):**
 - [ ] Rabbit lifespan: package 7 to 10 indoors, outdoor about 2; site 8 to 12, some to 14, outdoor 3 to 5.
-- [ ] Cockatoo lifespan: package 30 to 45 (veterinary), Moluccan to 70; site hub 40 to 60 typical, Moluccan to 92.
-- [ ] Bird quarantine (cockatiel, cockatoo): package 30 days, 45 to 60 with an existing bird; hub 30 to 45, multi-bird nearer 90.
+- [x] Cockatoo lifespan: package 30 to 45 (veterinary), Moluccan to 70; site hub 40 to 60 typical, Moluccan to 92. Done in 1.2 (2026-10-01).
+- [x] Bird quarantine (cockatiel, cockatoo): package 30 days, 45 to 60 with an existing bird; hub 30 to 45, multi-bird nearer 90. Done in 1.2 (2026-10-01).
 - [ ] Betta ich: package about 82°F with copper or formalin; hub 86°F or aquarium salt.
 - [ ] Goldfish filtration: package 10x tank volume per hour minimum; hub at least 4x, ideally 5 to 10.
 - [ ] Bearded dragon costs: package equipment $420 to $860, exam $75 to $200, monthly $60 to $130; cost guide $400 to $800, $120 to $245, $50 to $108.
 - [ ] Leopard gecko costs: package setup $175 to $495, monthly $32 to $91; hub $250 to $400, $20 to $50.
-- [ ] Cockatiel yearly cost: package $300 to $565; hub $200 to $350.
+- [x] Cockatiel yearly cost: package $300 to $565; hub $200 to $350. Done in 1.2 (2026-10-01).
 - [ ] Russian tortoise brumation: package 10 to 14 weeks at most; hub 2 to 4 months.
 
 Added 2026-09-25 from the wave 2 changes:
@@ -485,10 +485,154 @@ Added 2026-09-25 from the wave 3a changes:
 
 Added 2026-09-25 from the wave 3b changes:
 - [ ] Budgie cere (budgie-src/pages_2.html:213): package names recessive pied, lutino and albino as keeping a pink cere; site names pastel and solid-color mutations (budgie-cere-color-guide; Lafeber, Wissman DVM).
-- [ ] Cockatoo first-week vet (cockatoo-src/pages_4.html:325): package exam plus 3-test PCR panel $200 to $450; site exam with PBFD test $140 to $210, $24.50 per PCR at the lab (cockatoo-cost-guide). Different scope.
-- [ ] Cockatoo annual vet (cockatoo-src/pages_4.html:339): package exam plus bloodwork $150 to $300; site wellness exam $78 to $115, no bloodwork (cockatoo-cost-guide).
+- [x] Cockatoo first-week vet (cockatoo-src/pages_4.html:325): package exam plus 3-test PCR panel $200 to $450; site exam with PBFD test $140 to $210, $24.50 per PCR at the lab (cockatoo-cost-guide). Different scope. Done in 1.2 (2026-10-01).
+- [x] Cockatoo annual vet (cockatoo-src/pages_4.html:339): package exam plus bloodwork $150 to $300; site wellness exam $78 to $115, no bloodwork (cockatoo-cost-guide). Done in 1.2 (2026-10-01).
 - [ ] Lovebird seed (lovebird-src/pages_2.html:12): package seed is treat only, never free-fed, millet 2 to 3 times a week (VCA); site allows 1 to 2 teaspoons a day (lovebird-feeding-guide; Bird Vet Melbourne).
 - [ ] Guinea pig spay (guinea-pig-src/pages_3.html:132): package spay only for a medical reason (Merck); site says exotics vets now recommend a preventive flank ovariectomy for young sows (guinea-pig-health-issues-guide; Illinois CVM).
 - [ ] Hamster settling (hamster.html:797, 920): package no handling for the first week; site leave it 24 hours, then start hand-in-cage taming (hamster-handling-guide; RSPCA, Woodgreen).
 - [ ] Hamster groups (hamster.html:577): package lists the Chinese hamster among dwarfs kept in same-sex groups; site says Chinese hamsters live alone, only Roborovski, Campbell's and Winter White can share (hamster-handling-guide; RSPCA).
 - [ ] Hamster (hamster.html:1595): the package cites SpectrumCare, which the site no longer allows (AI-drafted). Replace or drop at the next rebuild.
+
+## 5b. Undefined abbreviations in the care packages (audited 2026-10-01, not edited)
+
+The standard: every abbreviation is spelled out (what the letters stand for, not just a description of what it does) at its first mention in reading order, cover and contents included, and has its own glossary entry. Line numbers are in the generated `content/CAREPACKAGE Guides/source/<slug>.html`. For goldfish and guinea pig the fixes go in the `<slug>-src/pages_*.html` fragments, which match the generated HTML. For axolotl, budgie, lovebird and russian tortoise the fragments are stale (axolotl and tortoise HTML is 2.2 against 2.1 fragments, budgie and lovebird HTML is 2.1 against 2.0 fragments, with body and CSS changes made straight in the HTML), so fix the generated HTML or bring the fragments up to date first; do not run their build.py as things stand. Not counted: pH, DC, US, USB, ICU, vitamin names, author initials, journal titles (PLOS ONE, BMC), brand names (LafeberVet, ReptiFiles, ReptiSun) and the M1 to M12 month columns. Cockatiel, cockatoo and whites-tree-frog were skipped.
+
+**Axolotl**
+- [ ] Axolotl: "ppm" first used p4 (axolotl.html:294) bare, never spelled out; no glossary entry (the glossary only uses it inside Ammonia and Nitrate).
+- [ ] Axolotl: "IUCN" first used p4 (axolotl.html:299) bare, never spelled out; not in the glossary.
+- [ ] Axolotl: "GFP" first used p5 (axolotl.html:321) bare, never spelled out (green fluorescent protein); not in the glossary.
+- [ ] Axolotl: "M.R.S." first used p6 (axolotl.html:372) bare, never spelled out (Maine Revised Statutes); not in the glossary. 2.2-only content.
+- [ ] Axolotl: "CFR" first used p6 (axolotl.html:373, "50 CFR 16") bare, never spelled out (Code of Federal Regulations); not in the glossary. 2.2-only content.
+- [ ] Axolotl: "USFWS" first used p6 (axolotl.html:395); "US Fish and Wildlife Service" is in the sentence before but never paired with the short form; not in the glossary.
+- [ ] Axolotl: "GH" and "KH" first used p12 (axolotl.html:622) bare; spelled out only in the glossary (p40).
+- [ ] Axolotl: "RO" first used p12 (axolotl.html:622) bare, never spelled out (reverse osmosis); not in the glossary.
+- [ ] Axolotl: "PVC" first used p14 (axolotl.html:709) bare, never spelled out; not in the glossary.
+- [ ] Axolotl, Sources page only (p41): AZA (axolotl.html:1769), USGS (:1771), VCA (:1772, described as "Animal Hospitals" but never expanded) and NC State (:1779) bare; none in the glossary.
+
+**Ball python**
+- [ ] Ball python: "IBD" first used p2 contents (ball-python.html:202), then bare on p13 (:639) and p18 (:818); spelled out only from p19 (:837); in the glossary.
+- [ ] Ball python: "PVC" first used p4 (ball-python.html:288) bare, never spelled out; not in the glossary.
+- [ ] Ball python: "IUCN" first used p4 (ball-python.html:292) bare, never spelled out; not in the glossary.
+- [ ] Ball python: "UVB" first used in the p5 enclosure diagram (ball-python.html:327), first text use p6 (:401), bare, never spelled out; not in the glossary.
+- [ ] Ball python: "VCA" first used p7 (ball-python.html:420) bare, never spelled out; not in the glossary.
+- [ ] Ball python: "CDC" first used p9 (ball-python.html:519) bare; spelled out only on the Sources page (p34); not in the glossary.
+- [ ] Ball python: "ASF" spelled out at first use p11 (ball-python.html:568); not in the glossary.
+- [ ] Ball python: "FDA" first used p11 (ball-python.html:583) bare; spelled out only on the Sources page (p34); not in the glossary.
+- [ ] Ball python: "RI" spelled out at first use p17 (ball-python.html:786); not in the glossary.
+
+**Bearded dragon**
+- [ ] Bearded dragon: "UVB" first used on the cover p1 (bearded-dragon.html:139) bare, 52 uses, never spelled out ("ultraviolet light" appears once, in a fun fact at p4 :314, without the label); no glossary entry of its own.
+- [ ] Bearded dragon: "T5 HO" first used p4 (bearded-dragon.html:288) bare; the glossary entry gives "high-output" but never says what T5 means. "T8" (p6 :397) is bare and not in the glossary either.
+- [ ] Bearded dragon: "UVI" first used p4 (bearded-dragon.html:288) bare; spelled out only in the glossary (p33).
+- [ ] Bearded dragon: "IUCN" first used p4 (bearded-dragon.html:291) bare, never spelled out; not in the glossary.
+- [ ] Bearded dragon: "MBD" first used p4 (bearded-dragon.html:307) bare in the emergency budget box; spelled out p17 (:816); in the glossary.
+- [ ] Bearded dragon: "PVC" first used p5 (bearded-dragon.html:324) bare, never spelled out; not in the glossary.
+- [ ] Bearded dragon: "UV" first used p6 (bearded-dragon.html:385) bare, never spelled out; not in the glossary.
+- [ ] Bearded dragon: "CDC" first used p8 (bearded-dragon.html:492) bare in the Salmonella box; spelled out only on the Sources page (p34); not in the glossary.
+- [ ] Bearded dragon: "BSFL" spelled out at first use p10 (bearded-dragon.html:544); not in the glossary.
+- [ ] Bearded dragon: "ADV" first used p2 contents (bearded-dragon.html:200) and the p18 page title (:839) bare; spelled out p18 (:845); in the glossary.
+- [ ] Bearded dragon: "RI" spelled out at first use p18 (bearded-dragon.html:842); not in the glossary.
+- [ ] Bearded dragon: "PCR" first used p18 (bearded-dragon.html:846) bare, never spelled out; not in the glossary.
+- [ ] Bearded dragon: "CANV" first used p18 (bearded-dragon.html:849) bare, never spelled out; the glossary names it under Yellow fungus without expanding it.
+- [ ] Bearded dragon, Sources page only (p34): "VCA" (bearded-dragon.html:1439) described as "Animal Hospitals" but never expanded; not in the glossary.
+
+**Betta fish**
+- [ ] Betta: "ppm" first used p4 (betta-fish.html:300) bare; spelled out only in the glossary (p35).
+- [ ] Betta: "IUCN" first used p4 (betta-fish.html:303) bare, never spelled out; not in the glossary.
+- [ ] Betta: "GH" and "KH" first used p8 (betta-fish.html:477) bare; spelled out only in the glossary ("carbonate hardness" is on p7 :457 without the KH label).
+- [ ] Betta: "NH3", "NO2" and "NO3" first used as the p32 owner log headers (betta-fish.html:1423) bare; the glossary pairs them with ammonia, nitrite and nitrate, the body never does.
+- [ ] Betta, Sources page only (p36): VCA (betta-fish.html:1573, described but never expanded) and NC State (:1581) bare; not in the glossary.
+
+**Budgie** (fix in budgie.html; fragments stale)
+- [ ] Budgie: "PBFD" first used p2 contents (budgie.html:199) bare; spelled out p22 (:1027); in the glossary.
+- [ ] Budgie: "IUCN" first used p4 (budgie.html:297) bare, never spelled out; not in the glossary.
+- [ ] Budgie: "MSD" first used p5 (budgie.html:325) as "the MSD Veterinary Manual": described but never expanded; not in the glossary.
+- [ ] Budgie: "PTFE" first used p8 (budgie.html:473) bare in the heading "PTFE: nonstick cookware"; spelled out only in the glossary (p38).
+- [ ] Budgie: "VCA" first used p18 (budgie.html:872) bare, never spelled out; not in the glossary.
+- [ ] Budgie: "PCR" first used p22 (budgie.html:1028) bare, never spelled out; not in the glossary.
+- [ ] Budgie: "CDC" and "CPSC" first used p34 (budgie.html:1561) bare, never spelled out anywhere; not in the glossary.
+- [ ] Budgie, Sources page only (p39): NASPHV (budgie.html:1787), DVM (:1788) and UC Davis (:1791) bare; not in the glossary.
+
+**Crested gecko**
+- [ ] Crested gecko: "MBD" first used on the cover p1 (crested-gecko.html:148) bare; spelled out p17 (:767); the glossary has "Metabolic bone disease" but not the MBD form.
+- [ ] Crested gecko: "IUCN" first used p4 (crested-gecko.html:295) bare, never spelled out; not in the glossary.
+- [ ] Crested gecko: "PVC" first used p5 (crested-gecko.html:328) bare, never spelled out; not in the glossary.
+- [ ] Crested gecko: "UVB" first used in the p5 enclosure diagram (crested-gecko.html:330), first text use p7 (:439), bare, never spelled out; not in the glossary.
+- [ ] Crested gecko: "T5 HO" first used p7 (crested-gecko.html:440) bare, never spelled out; not in the glossary.
+- [ ] Crested gecko: "UVI" first used p7 (crested-gecko.html:440) bare, never spelled out; not in the glossary.
+- [ ] Crested gecko: "CDC" first used p8 (crested-gecko.html:487) bare; spelled out only on the Sources page (p34); not in the glossary.
+- [ ] Crested gecko: "FTS" spelled out at first use p17 (crested-gecko.html:774); the glossary has "Floppy tail syndrome" but not the FTS form.
+- [ ] Crested gecko, Sources page only (p34): VCA (crested-gecko.html:1359, described but never expanded) and PMC (:1361) bare; not in the glossary.
+
+**Goldfish** (fix in goldfish-src fragments)
+- [ ] Goldfish: "ppm" first used p4 (goldfish.html:294) bare, never spelled out; no glossary entry (used only inside other entries).
+- [ ] Goldfish: "mg/L" first used p25 (goldfish.html:969) bare, never spelled out; not in the glossary.
+- [ ] Goldfish, Sources page only (p39): USGS (goldfish.html:1524) and UF/IFAS (:1525) bare; not in the glossary.
+
+**Guinea pig** (fix in guinea-pig-src fragments)
+- [ ] Guinea pig: "GI" first used p2 contents (guinea-pig.html:198) and the p19 page title (:945) bare; the next paragraph opens "Gastrointestinal stasis" (:948) without pairing it to GI; the glossary "GI stasis" entry is described but never expanded.
+- [ ] Guinea pig: "C&C" first used p5 (guinea-pig.html:347): described (wire cubes, corrugated plastic base) but never expanded in the body; expanded in the glossary.
+- [ ] Guinea pig: "VCA" and "RSPCA" first used p7 (guinea-pig.html:426) bare, never spelled out; not in the glossary.
+- [ ] Guinea pig, Sources page only (p40): MSD (guinea-pig.html:1785) and PDSA (:1795) bare; not in the glossary.
+
+**Hamster**
+- [ ] Hamster: "IUCN" first used p4 (hamster.html:304) bare, never spelled out; not in the glossary.
+- [ ] Hamster: "UVB" first used p9 (hamster.html:518) bare, never spelled out; not in the glossary.
+- [ ] Hamster: "VCA" first used p9 (hamster.html:522) bare, never spelled out; not in the glossary.
+- [ ] Hamster: "ODFW" first used p24 (hamster.html:1106) bare, never spelled out (Oregon Department of Fish and Wildlife); not in the glossary.
+- [ ] Hamster: "HOA" first used p24 (hamster.html:1113) bare, never spelled out; not in the glossary.
+- [ ] Hamster, Sources page only (p36): ILAR (hamster.html:1589), RSPCA and PDSA (:1594) and SPAH (:1595) bare; not in the glossary.
+
+**Leopard gecko**
+- [ ] Leopard gecko: "UVB" first used on the cover p1 (leopard-gecko.html:144) bare, 27 uses, never spelled out; no glossary entry of its own (only inside the UVI entry).
+- [ ] Leopard gecko: "MBD" first used on the cover p1 (leopard-gecko.html:146) bare; spelled out p17 (:785); the glossary has "Metabolic bone disease" but not the MBD form.
+- [ ] Leopard gecko: "UVI" first used p4 (leopard-gecko.html:290) bare; spelled out only in the glossary (p33).
+- [ ] Leopard gecko: "IUCN" first used p4 (leopard-gecko.html:293) bare, never spelled out; not in the glossary.
+- [ ] Leopard gecko: "T5 HO" first used p7 (leopard-gecko.html:441) bare, never spelled out; not in the glossary.
+- [ ] Leopard gecko: "CDC" first used p8 (leopard-gecko.html:485) bare; spelled out only on the Sources page (p34); not in the glossary.
+- [ ] Leopard gecko: "BSFL" first used p10 (leopard-gecko.html:537) in the black soldier fly larvae row but never paired with that name; not in the glossary.
+- [ ] Leopard gecko: "PCR" first used p17 (leopard-gecko.html:779) bare, never spelled out; not in the glossary.
+- [ ] Leopard gecko, Sources page only (p34): "VCA" (leopard-gecko.html:1368) described but never expanded; not in the glossary.
+
+**Lovebird** (fix in lovebird.html; fragments stale)
+- [ ] Lovebird: "PBFD" first used p2 contents (lovebird.html:197) and the p20 page title (:889) bare; spelled out p20 (:892); in the glossary.
+- [ ] Lovebird: "IUCN" first used p4 (lovebird.html:292) bare, never spelled out; not in the glossary.
+- [ ] Lovebird: "VCA" first used p5 (lovebird.html:324) bare, never spelled out; not in the glossary.
+- [ ] Lovebird: "UC Davis" first used p7 (lovebird.html:440) bare, never spelled out; not in the glossary.
+- [ ] Lovebird: "UVB" first and only use p7 (lovebird.html:448) bare, never spelled out; not in the glossary.
+- [ ] Lovebird: "PTFE" first used in the p8 heading (lovebird.html:470) bare; the next sentence (:471) spells it out but as "polytetrafluoroethylene gas", the coating-not-a-gas error fixed in the cockatiel and cockatoo 1.2; the glossary entry is described but never expanded.
+- [ ] Lovebird: "PCR" first used p20 (lovebird.html:893) bare, never spelled out; not in the glossary.
+- [ ] Lovebird: "CDC" and "CPSC" first used p32 (lovebird.html:1370) bare; CPSC spelled out only on the Sources page (p38), CDC never; not in the glossary.
+- [ ] Lovebird, Sources page only (p38): DVM (lovebird.html:1606) and NASPHV (:1609) bare; not in the glossary.
+
+**Rabbit**
+- [ ] Rabbit: "GI" first used on the cover p1 (rabbit.html:145) bare, 22 uses, spelled out only in a Sources title (p39 :1695); the glossary "GI stasis" entry is described but never expanded.
+- [ ] Rabbit: "RHDV2" first used p2 contents (rabbit.html:211) and the p23 page title (:1057) bare; spelled out p23 (:1069); in the glossary. Both spell it "Haemorrhagic"; US prose wants "Hemorrhagic".
+- [ ] Rabbit: "RHDV1" first used p23 (rabbit.html:1069) bare; only type 2 is spelled out; not in the glossary.
+- [ ] Rabbit: "IUCN" first used p4 (rabbit.html:302) bare, never spelled out; not in the glossary.
+- [ ] Rabbit: "VCA" first used p7 (rabbit.html:471) bare, never spelled out; not in the glossary.
+- [ ] Rabbit: "UVB" only use p40 version history (rabbit.html:1712) bare; not in the glossary.
+- [ ] Rabbit, Sources page only (p39): RSPCA (rabbit.html:1679) and PDSA (:1680) bare; not in the glossary.
+
+**Russian tortoise** (fix in russian-tortoise.html; fragments stale)
+- [ ] Russian tortoise: "UVB" first used on the cover p1 (russian-tortoise.html:133) bare, 39 uses, never spelled out ("ultraviolet light" appears once at p18 :880 without the label); no glossary entry of its own.
+- [ ] Russian tortoise: "T5 HO" first used p4 (russian-tortoise.html:291) bare; the glossary entry gives "high-output" but never says what T5 means.
+- [ ] Russian tortoise: "UVI" first used p4 (russian-tortoise.html:291) bare; spelled out p7 (:436); in the glossary.
+- [ ] Russian tortoise: "IUCN" and "CITES" first used p4 (russian-tortoise.html:295) bare, never spelled out; not in the glossary.
+- [ ] Russian tortoise: "UV" first used p6 (russian-tortoise.html:415) bare, never spelled out; not in the glossary.
+- [ ] Russian tortoise: "VCA" first used p9 (russian-tortoise.html:513) bare, never spelled out; not in the glossary.
+- [ ] Russian tortoise: "CDC" first used p10 (russian-tortoise.html:561) bare, never spelled out; not in the glossary.
+- [ ] Russian tortoise: "EAZWV" first used p21 (russian-tortoise.html:990) bare, never spelled out; not in the glossary.
+- [ ] Russian tortoise: "PCR" first used p21 (russian-tortoise.html:993) bare, never spelled out; not in the glossary.
+- [ ] Russian tortoise: "CPW" first used p25 (russian-tortoise.html:1134) bare, never spelled out (Colorado Parks and Wildlife); not in the glossary. 2.2-only content.
+- [ ] Russian tortoise: "CFR" and "FDA" first used p25 (russian-tortoise.html:1139) bare; the glossary entry "21 CFR 1240.62" expands neither.
+- [ ] Russian tortoise, Sources page only (p37): "MSD" (russian-tortoise.html:1706) bare; not in the glossary.
+
+**Tarantula**
+- [ ] Tarantula: "DKS" first used p2 contents (tarantula.html:218) and the p26 page title (:1121) bare; spelled out p26 (:1126); in the glossary.
+- [ ] Tarantula: "CITES" first used p4 (tarantula.html:316) bare, never spelled out; not in the glossary.
+- [ ] Tarantula: "EPA" first used p26 (tarantula.html:1136) bare, never spelled out; not in the glossary.
+- [ ] Tarantula: "HOA" first used p28 (tarantula.html:1210) bare, never spelled out; not in the glossary.
+- [ ] Tarantula: "USPS", "USDA" and "APHIS" first used p36 (tarantula.html:1502) bare, never spelled out; not in the glossary.
+- [ ] Tarantula: "UVB" only use p44 version history (tarantula.html:1754) bare; not in the glossary.
+- [ ] Tarantula, Sources page only (p43): "NIH" (tarantula.html:1717) bare; not in the glossary.

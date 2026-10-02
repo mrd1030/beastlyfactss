@@ -330,7 +330,7 @@ export const birdGuides = [
         { label: "Sleep", value: "10 to 12 hours of genuine darkness and quiet for sleep every night. Sleep deprivation in this species measurably worsens screaming and other behavioral issues.", source: "cockatoo-tank-setup-guide" },
         { label: "Diet", value: "Pellets should make up 75 to 80% of daily intake, fresh vegetables most of the remaining 20 to 25%, fruit a smaller share, and seeds under about 10%, kept to high-fat treats rather than the foundation.", source: "cockatoo-feeding-guide" },
         { label: "Bonding", value: "Avoid over-bonding in the first weeks, it cements an anxious dependency rather than a healthy one. Real engagement with this species means 4 to 6 hours of interaction most days, not an occasional check-in, but consistent shoulder and lap time can itself become the problem if a cockatoo forms a pair bond with one person.", source: "cockatoo-handling-guide" },
-        { label: "Budget", value: "$700 to $3,000 for common species (rarer species run higher), $1,300 to $2,800 for a complete setup, mostly the cage, and $20 to $50 a month for food after that. Toy replacement is the bigger recurring cost, since cockatoos destroy wooden toys fast.", source: "cockatoo-cost-guide" },
+        { label: "Budget", value: "$700 to $3,000 for common species (rarer species run higher), $900 to $2,500 for a complete setup, mostly the cage, and $20 to $50 a month for food after that. Toy replacement is the bigger recurring cost, since cockatoos destroy wooden toys fast.", source: "cockatoo-cost-guide" },
         { label: "Adult size", value: "18 inches (46 cm); 1.1 to 1.7 lbs." },
         { label: "Lifespan", value: "25 to 45 years is typical, and the larger species can reach 70 to 80 or more.", source: "cockatoo-cost-guide" },
         { label: "Disease risk", value: "Psittacine beak and feather disease is incurable, often fatal, and highly contagious. Confirm with a vet through PCR testing, and quarantine any new bird before it meets an established one.", source: "cockatoo-health-issues-guide" },
@@ -349,7 +349,7 @@ export const birdGuides = [
       vetLine: "An avian vet, found before you need one. Always start with a vet visit to rule out a medical cause before assuming plucking or screaming is purely behavioral, and confirm PBFD with a vet through PCR testing.",
     },
     routes: [
-      { slug: "cockatoo-cost-guide", line: "$700 to $3,000 for the bird, $880 to $1,800 for setup, and the lifespan number that should drive the whole decision." },
+      { slug: "cockatoo-cost-guide", line: "$700 to $3,000 for the bird, $900 to $2,500 for setup, and the lifespan number that should drive the whole decision." },
       { slug: "cockatoo-handling-guide", line: "Why cockatoos get surrendered so often, the over-bonding trap, and the 4 to 6 hour daily reality." },
       { slug: "cockatoo-health-issues-guide", line: "Feather-destructive behavior, PBFD, lipomas, fatty liver disease, and when a behavior change means the vet." },
       { slug: "cockatoo-tank-setup-guide", line: "The 36x24x48 minimum, stainless steel versus powder-coated, bar spacing, and sleep." },

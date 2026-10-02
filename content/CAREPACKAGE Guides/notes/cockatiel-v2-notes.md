@@ -273,3 +273,133 @@ exception in one FAQ line but never covers the dimorphism or the mutations, whic
 is why that row could not be closed. The claim on page 17 that VCA finds
 reproductive problems more common in cockatiels than budgies also stays flagged for
 an external check.
+
+---
+
+## Cut in 1.2
+
+Version 1.2 (October 2026) was a cross-check against the site. These words left the
+page, for space or because the site no longer supports them, and are kept here.
+
+**Page 39, the guides paragraph, cut for space.** The list of guides became "sixteen
+cross-species bird guides, from household hazards and quarantine to first aid and
+feather dust." The 1.1 wording:
+
+> Beastly Facts guides drawn on: cockatiel cage setup, feeding, health issues, handling,
+> enrichment and cost, plus the cockatiel and cockatoo comparison, and the cross-species
+> bird guides written since this edition, which now carry pages this package used to
+> source externally: household hazards, photoperiod and sleep, pellet conversion,
+> quarantine, droppings, wing clipping, sexing and body condition, feather loss and molt,
+> chronic egg laying, emergency and travel, first aid and grooming, body language, parrot
+> training, avian gastric yeast, feather dust and air quality, and choosing a pet bird.
+
+**Page 29, the first-aid kit callout, cut for space:** "Assemble it in week one, where
+anyone can find it in the dark." Now "Keep it where anyone can find it in the dark."
+
+**Page 29, the weight row,** was "A fall of about 10% from baseline, or three declining
+weighings" and is now "A 10% fall, three falling weighings, or 1 to 2% a week in a diet
+change". The quarantine row lost "with an existing bird" along with the old 45 to 60 days.
+
+**Page 15, the recall callout,** ended "and it takes a fortnight." No site page gives a
+timeline for recall training, so it now ends "built a little more distance at a time."
+
+**Page 9, the pairing paragraph,** opened "Two hens or two cocks avoids the egg problem
+entirely and they will still bond." The first half was wrong (hens lay with no male); the
+second half went with it.
+
+**Page 18 and page 29, the sick-bird warming figure,** was 80 to 85 F (27 to 29 C). The site
+gives 75 to 80 F for a sick bird, so the package now prints about 80 F (27 C), the top of
+that range and the bottom of LafeberVet's 80 to 90 F for supplemental heat.
+
+**Page 7, the sleep paragraph, cut for space** when the abbreviation pass spelled out UVB,
+NHLBI and HEPA on the same page. The 1.2 draft wording:
+
+> It is also the cheapest thing in this book to fix. Before you change the diet, buy a toy,
+> or call a behaviorist about a screaming bird, count the hours of real darkness it is
+> actually getting.
+
+Now "It is also the cheapest fix in this book. Before you change the diet, buy a toy, or
+call a behaviorist, count the hours of real darkness it gets."
+
+**Page 39, the Lafeber night fright row, cut for space** when NASPHV, MSD and UC Davis
+were spelled out. Was "The mechanism, the night light recommendation, partial rather than
+full covering, identifying external triggers, and the response when one happens." Now "The
+mechanism, the night light, partial rather than full covering, external triggers, and the
+response when one happens."
+
+## Review fixes, 1.2
+
+Editor's review, applied 1 October 2026. Still 41 pages; nothing was cut and no page was
+added. Pages 7 and 8 overflowed after the glosses went in and were brought back by
+rebalancing table columns and two rewordings that keep every fact (logged below).
+
+**Spelling and US usage**
+
+- Page 29: "Laboured breathing" is now "Labored breathing".
+- Page 31: "pencilled into the planner" is now "penciled into the planner".
+- Page 34: "A reptile in a power cut ... A cockatiel in a power cut" is now "power outage"
+  in both places. Glossary CDC and CO entries: "in a power cut" / "during a power cut" are
+  now "in a power outage" / "during a power outage".
+- Page 8: "Ceiling fans and hobs" is now "Ceiling fans and stove burners". No other "hob"
+  in the book.
+- Page 26: "berries or beetroot" is now "berries or beets".
+- Pages 4 and 19: "About 107.1°F (41.8°C)" is now "About 41.8°C (107.2°F)".
+- Page 7: "a louder, bitier, more anxious cockatiel" is now "a louder, more bite-prone, more
+  anxious cockatiel".
+
+**Jargon glossed at first use, each with a new glossary entry**
+
+- Page 8, zinc row: "Chelated by a vet" is now "Treated by a vet with chelation, a course of
+  drugs that bind the metal so the body can pass it". Glossary: Chelation (pages 8, 23).
+- Page 21: "the problem is at the syrinx" is now "the syrinx, the bird's voice box at the
+  base of the windpipe". Glossary: Syrinx.
+- Page 15: "cut below the coverts that overlay them" is now "cut below the coverts, the short
+  feathers that overlay the base of the flight feathers". Glossary: Coverts.
+- Page 18: "Calcium is what makes the oviduct contract" is now "The oviduct is the tube an
+  egg travels down to be laid, and calcium is what makes it contract". Glossary: Oviduct.
+- Page 22: "the mouth, nose or cloaca" now adds "the shared chamber under the tail that
+  droppings and eggs leave through". Glossary: Cloaca.
+- Page 7 (first use of cere): "a bleeding cere" is now "a bleeding cere (the nostril patch
+  above the beak)". The Cere glossary entry already existed.
+
+**Consistency**
+
+- Page 4: "Page 30 itemizes it." is now "Page 30 adds a scale, a carrier, a sleep cage and
+  the first exam and lands at $392 to $1,027."
+- Page 9: "Roughly 1.6 to 1.8 times, not double" is now "Roughly 1.8 times one bird, not
+  double". Page 30 pair row: low end $515 is now $513 (285 x 1.8); high end $990 (550 x
+  1.8) was already right.
+- Page 8, zinc row: added "A buyer cannot tell which kind a cage has, so treat all
+  galvanized metal as out" after the electroplated/hot-dipped sentence, matching pages 6
+  and 28.
+- Page 26: "Plain paper, changed daily, no grate in the way if you can manage it." is now
+  "Plain paper, changed daily; a grate is fine if the paper under it is still readable."
+- Page 6, nails: "keep the bird off its water dish for a few hours" is now "keep it out of
+  the bath and away from the water dish for a few hours so the clot is not washed off".
+- Glossary, UC Davis: dropped "and of the point that covering a cage may not give a bird its
+  best rest", which page 7 never says. The Sources page row still lists that point as
+  something the source covers.
+
+**Health entries completed**
+
+- Page 23, Giardia box: added "Treated with an antiparasitic course from the vet; the
+  itching stops once the parasite is cleared."
+- Page 23, Bumblefoot row: added "Treated with perch changes, weight loss and, if the sole
+  is broken, antibiotics and dressings from the vet."
+- Page 20, Hypovitaminosis A: added "Recovery follows the diet change over weeks, and the
+  vet rechecks the bird to confirm it." Calcium deficiency: added "Once the diet is
+  corrected, recovery follows over weeks, and the vet rechecks the bird to confirm it." Kept
+  to that general wording because the book's sources give no recovery timeline.
+
+**Owner tools**
+
+- Page 33, enrichment log: four rows is now seven, which fills the page.
+- Page 37, twelve-month planner: Month column left blank, as in every other package. It
+  reads as a rolling planner started from whatever month the bird arrives.
+
+**Reworded to fit, no content removed**
+
+- Page 7, sleep paragraph: "count the hours of real darkness it gets" is now "count its
+  hours of real darkness".
+- Page 7 settings table: label column 32% is now 25%. Page 8 hazards table: Hazard column
+  24% is now 20%, "What it does" 30% is now 36%.

@@ -484,6 +484,75 @@ export const CARE_PACKAGE_THEMES = {
     patternSize: '22px 22px',
   },
 
+  // The two birds below take their cover chrome from the source HTML, the same
+  // re-toned palettes their PDF covers wear (see each one's -src/README.md).
+
+  // Amber-brown: the warm sunset behind the cockatiel cover photo, deep umber
+  // into amber. The bird bobs in the eyebrow like a whistling cock; faint
+  // feather lines across the hero.
+  cockatiel: {
+    light: {
+      'hero-from': '#241c12', 'hero-via': '#3a2a16', 'hero-to': '#4e3617',
+      'hero-ink': '#fdf5e9', 'hero-eyebrow': '#ddae74',
+      'hero-button-bg': '#e8a24e', 'hero-button-ink': '#241c12',
+      glow: '232, 162, 78',
+      ground: '#fbf7f0', ink: '#2b2420', muted: '#6e6459',
+      accent: '#c4761b', 'accent-strong': '#8f5410', 'accent-ink': '#241c12',
+      'accent-soft': '#f7e6ce', 'accent-soft-border': '#e8cfa8',
+      'card-bg': '#ffffff', 'card-border': '#efe3cc',
+      'panel-bg': '#241c12', 'panel-ink': '#f4eadb', 'panel-muted': '#daccb6',
+      'cta-bg': '#e8a24e', 'cta-ink': '#241c12',
+    },
+    dark: {
+      'hero-from': '#16110a', 'hero-via': '#241c12', 'hero-to': '#3a2a16',
+      'hero-ink': '#fdf5e9', 'hero-eyebrow': '#ddae74',
+      'hero-button-bg': '#e8a24e', 'hero-button-ink': '#241c12',
+      glow: '232, 162, 78',
+      ground: '#16110a', ink: '#efe3cc', muted: '#b8a88e',
+      accent: '#e8a24e', 'accent-strong': '#f0bd78', 'accent-ink': '#241c12',
+      'accent-soft': '#241c12', 'accent-soft-border': '#4e3617',
+      'card-bg': '#3a2a16', 'card-border': '#5c462a',
+      'panel-bg': '#0d0a06', 'panel-ink': '#f4eadb', 'panel-muted': '#c8b89e',
+      'cta-bg': '#e8a24e', 'cta-ink': '#241c12',
+    },
+    motion: { eyebrowIcon: '🐦', eyebrowMotion: 'cp-bob 1.8s ease-in-out infinite', coverMotion: 'cp-rise 3.4s ease-in-out infinite' },
+    pattern: 'repeating-linear-gradient(160deg, rgba(221, 174, 116, 0.06) 0 1px, transparent 1px 12px)',
+    patternSize: 'auto',
+  },
+
+  // Indigo: the dark canopy behind the sulphur-crested cover photo, with the
+  // cover's periwinkle as the accent. A slow sway in the eyebrow, and a fine
+  // dot grid on the hero for the powder down this family sheds.
+  cockatoo: {
+    light: {
+      'hero-from': '#14162a', 'hero-via': '#1e2140', 'hero-to': '#2b2f60',
+      'hero-ink': '#f3f4fc', 'hero-eyebrow': '#a5a8d6',
+      'hero-button-bg': '#9498e0', 'hero-button-ink': '#14162a',
+      glow: '148, 152, 224',
+      ground: '#f8f9fd', ink: '#1a1c33', muted: '#4f5480',
+      accent: '#3a3f7a', 'accent-strong': '#282c5c', 'accent-ink': '#ffffff',
+      'accent-soft': '#e6e7f7', 'accent-soft-border': '#c6c9e4',
+      'card-bg': '#ffffff', 'card-border': '#e1e2f1',
+      'panel-bg': '#14162a', 'panel-ink': '#f3f4fc', 'panel-muted': '#c6c9e4',
+      'cta-bg': '#9498e0', 'cta-ink': '#14162a',
+    },
+    dark: {
+      'hero-from': '#0b0c18', 'hero-via': '#14162a', 'hero-to': '#1e2140',
+      'hero-ink': '#f3f4fc', 'hero-eyebrow': '#a5a8d6',
+      'hero-button-bg': '#9498e0', 'hero-button-ink': '#14162a',
+      glow: '148, 152, 224',
+      ground: '#0b0c18', ink: '#e6e7f7', muted: '#a3a6c8',
+      accent: '#9498e0', 'accent-strong': '#b4b7ec', 'accent-ink': '#14162a',
+      'accent-soft': '#14162a', 'accent-soft-border': '#2b2f60',
+      'card-bg': '#1e2140', 'card-border': '#43477a',
+      'panel-bg': '#06070e', 'panel-ink': '#f3f4fc', 'panel-muted': '#b9bcda',
+      'cta-bg': '#9498e0', 'cta-ink': '#14162a',
+    },
+    motion: { eyebrowIcon: '🦜', eyebrowMotion: 'cp-sway 3s ease-in-out infinite', coverMotion: 'cp-rise 4s ease-in-out infinite' },
+    pattern: 'radial-gradient(circle at 1px 1px, rgba(165, 168, 214, 0.10) 1.5px, transparent 2px)',
+    patternSize: '22px 22px',
+  },
+
   // Rainforest canopy rather than the blackwater used for the fish and the
   // axolotl: a White's tree frog is arboreal and the wrong habitat reads as a
   // mistake to anyone who keeps one. Greens off the animal itself, with the

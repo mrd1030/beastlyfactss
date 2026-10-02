@@ -1,3 +1,5 @@
+> **Stale since 2.1. Do not run build.py.** These fragments still hold 2.0. The 2.1 edits were made directly in `../lovebird.html`, which is now the source of truth. Running build.py overwrites it with 2.0 text. Edit `../lovebird.html`, or port the HTML back into fragments first. (Found 2026-10-01.)
+
 # Lovebird care package source
 
 `../lovebird.html` is generated. Edit the fragments here, then:

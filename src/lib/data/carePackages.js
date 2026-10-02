@@ -1,10 +1,12 @@
-// The printable PDF care packages. All 14 sell here now, through Stripe, so
-// this file is the catalog rather than a mirror of someone else's listing.
+// The printable PDF care packages. All 17 sell here, through Stripe, so this
+// file is the catalog rather than a mirror of someone else's listing. The
+// cockatiel, cockatoo and White's tree frog are wired but wait on a live
+// price id.
 //
 // status records whether a package ever had a Gumroad listing, and now only
-// decides the teaser row for one that sells nowhere. Nothing sells nowhere
-// today, so the teaser row is empty and isCarePackageBuyable is true for all
-// 14. Read storefront, not status, when the question is "can this be bought".
+// decides the teaser row for one that sells nowhere. Nothing sells nowhere,
+// so isCarePackageBuyable is true for all 17. Read storefront, not status,
+// when the question is "can this be bought".
 // Both use `cover`, the guide hero under public/assets/guides, as the card and
 // product page art; nothing is loaded from Gumroad's CDN any more.
 //
@@ -1261,27 +1263,298 @@ export const CARE_PACKAGES = [
     ],
   },
   {
+    id: 'cockatiel',
+    animal: 'Cockatiel',
+    name: 'Cockatiel Care Package',
+    badge: 'Bird',
+    emoji: '🐦',
+    status: 'coming-soon',
+    // Live price created 2026-10-01, matching priceIdLive in
+    // CARE_PACKAGE_STORE in public/_worker.js. The PDF has to be in the bucket
+    // before this ships to main, or a buyer pays and the download fails.
+    storefront: 'stripe',
+    stripePriceId: 'price_1ULwwQ9qtY3Ob6vaZoUuXLtw',
+    price: '$8.99',
+    pages: 41,
+    version: '1.2',
+    versionDate: '2026-10-01',
+    samplePages: 4,
+    cover: '/assets/guides/cockatiel.jpg',
+    blurb: 'Complete 41-page printable guide with cage size and the bar spacing that is a safety limit, the night light that prevents night frights, five ways to convert a seed eater to pellets, chronic egg laying and egg binding, and owner checklists.',
+    seoDescription: '41-page printable cockatiel guide: cage size and bar spacing, night frights, converting a seed eater to pellets, chronic egg laying, and health triage.',
+    bullets: [
+      'Cage size and placement, perches, light and sleep, household hazards, one bird or two, diet and pellet conversion, handling and the crest, and wing clipping in one guide',
+      'Health section with red flags, vitamin A, calcium and fatty liver, respiratory disease and psittacosis, beak and feather disease, Giardia and plucking, molt, and chronic egg laying and egg binding guidance',
+      'Setup checklist, budget and shopping list, first 30 days checklist, symptom quick reference, owner log, and a daily and weekly routine',
+    ],
+    contents: [
+      {
+        label: 'Getting Started',
+        items: ['How to Use This Package'],
+      },
+      {
+        label: 'Quick Profile',
+        items: ['Quick Profile & Cost Overview'],
+      },
+      {
+        label: 'Full Care Guide',
+        items: [
+          'Cage Size, Bar Spacing & Placement',
+          'Perches, Dishes & What to Leave Out',
+          'Light, Sleep & Night Frights',
+          'Household Hazards & Bird-Proofing',
+          'One Cockatiel or Two, and the Whistling Trade-Off',
+          'Diet: Pellets, Seed & Converting a Seed Eater',
+          'Safe Vegetables, Greens & Herbs',
+          'Fruit, Treats & the Never-Feed List',
+          'Common Mistakes & Enrichment',
+          'Handling, Taming & Reading the Crest',
+          'Wing Clipping & Flight',
+          'Sexing, Weight & Body Condition',
+          'Hens, Hormones & Chronic Egg Laying',
+          'Egg Binding',
+        ],
+      },
+      {
+        label: 'Health & Common Issues',
+        items: [
+          'Health Red Flags & What to Tell the Vet',
+          'Vitamin A, Calcium & Fatty Liver',
+          'Respiratory Disease & Psittacosis',
+          'PBFD (Psittacine Beak & Feather Disease), Polyomavirus & Other Viral Disease',
+          'Foreign Bodies, Heavy Metal, Mites & Injuries',
+          'Feather Plucking & Behavioral Health',
+          'Molt & Seasonal Behavior',
+          'Reading Droppings & Hydration',
+          'Quarantine & Adding a Second Bird',
+        ],
+      },
+      {
+        label: 'Quick Reference',
+        items: ['Setup Checklist & Targets', 'Emergency & Quick Targets Card'],
+      },
+      {
+        label: 'Owner Tools',
+        items: [
+          'Budget & Shopping List',
+          'First 30 Days Checklist',
+          'Symptom Quick Reference',
+          'Daily, Weekly & Seasonal Routine',
+          'Power Outages, Travel & Transport',
+          'Pet-Sitter Sheet',
+          'Owner Log',
+          'Equipment & Vet Log',
+        ],
+      },
+      {
+        label: 'Reference',
+        items: ['Glossary, A to M', 'Glossary, N to Z', 'Sources & Further Reading', 'Where the Sources Disagree, Version History & About'],
+      },
+    ],
+  },
+  {
+    id: 'cockatoo',
+    animal: 'Cockatoo',
+    name: 'Cockatoo Care Package',
+    badge: 'Bird',
+    emoji: '🦜',
+    status: 'coming-soon',
+    // Same as the cockatiel above: live price created 2026-10-01, PDF to the
+    // bucket before main.
+    storefront: 'stripe',
+    stripePriceId: 'price_1ULwwY9qtY3Ob6vaVwNPPWLL',
+    price: '$8.99',
+    pages: 47,
+    version: '1.2',
+    versionDate: '2026-10-01',
+    samplePages: 6,
+    cover: '/assets/guides/cockatoo.jpg',
+    blurb: 'Complete 47-page printable guide with an honest decision test, six species compared, training and foraging as the plan against plucking and screaming, feather dust and your own lungs, and a succession plan for a bird that may outlive you.',
+    seoDescription: '47-page printable cockatoo guide: an honest decision test, six species compared, training and foraging against plucking, and a succession plan.',
+    bullets: [
+      'The decision test and species comparison, cage, locks and placement, light and sleep, feather dust and air quality, household hazards, diet and foraging in one guide',
+      'Behavior and health sections with training, bites and sexual maturity, over-bonding and screaming, egg laying, plucking and the molt differential, beak and feather disease, and obesity, lipomas and fatty liver',
+      'Legal status by state, a succession plan, setup checklist, budget and shopping list, first 30 days checklist, symptom quick reference, and the owner and vet logs',
+    ],
+    contents: [
+      {
+        label: 'Getting Started',
+        items: ['How to Use This Package'],
+      },
+      {
+        label: 'Before You Commit',
+        items: [
+          'Quick Profile & Cost Overview',
+          'Is a Cockatoo Right for You? The Honest Test',
+          'Which Cockatoo: Size, Price, Noise & Temperament',
+        ],
+      },
+      {
+        label: 'Housing & Environment',
+        items: [
+          'Cage Size, Bar Gauge, Locks & Placement',
+          'Perches, Play Stands & Out-of-Cage Space',
+          'Light, Sleep & the 10 to 12 Hour Rule',
+          'Feather Dust, Air Quality & Your Own Lungs',
+          'Household Hazards & Bird-Proofing',
+        ],
+      },
+      {
+        label: 'Diet',
+        items: [
+          'Diet: Pellets, Seed & Converting a Seed Eater',
+          'Safe Vegetables, Greens & Fruit',
+          'Nuts, Treats & the Never-Feed List',
+          'Foraging: Filling the Gap a Bowl Leaves',
+        ],
+      },
+      {
+        label: 'Behavior & Handling',
+        items: [
+          'Training, and Why It Comes First',
+          'Handling, Step-Up, Bites & Sexual Maturity',
+          'Over-Bonding, Separation Anxiety & Independence',
+          'Screaming, Noise & the Household Reality',
+          'Wing Clipping & Flight',
+          'Sexing, Weight & Body Condition',
+          'Hens, Hormones & Chronic Egg Laying',
+        ],
+      },
+      {
+        label: 'Health & Common Issues',
+        items: [
+          'Health Red Flags & What to Tell the Vet',
+          'Feather-Destructive Behavior, Molt & the Differential',
+          'Beak & Feather Disease & Other Viruses',
+          'Obesity, Lipomas & Fatty Liver',
+          'Psittacosis, Respiratory Disease, Metals & Injuries',
+          'Reading Droppings & Hydration',
+          'Quarantine & Adding a Second Bird',
+        ],
+      },
+      {
+        label: 'The Long View',
+        items: ['Legal Status, the Wildlife Trade Treaty & State Rules', 'The Sixty-Year Bird: Succession & Rehoming'],
+      },
+      {
+        label: 'Quick Reference',
+        items: ['Setup Checklist & Targets', 'Emergency & Quick Targets Card'],
+      },
+      {
+        label: 'Owner Tools',
+        items: [
+          'Budget & Shopping List',
+          'First 30 Days Checklist',
+          'Symptom Quick Reference',
+          'Daily, Weekly & Seasonal Routine',
+          'Power Outages, Travel & Transport',
+          'Pet-Sitter Sheet',
+          'Owner Log',
+          'Equipment & Vet Log',
+        ],
+      },
+      {
+        label: 'Reference',
+        items: ['Glossary', 'Glossary, Continued', 'Glossary, Continued', 'Sources & Further Reading', 'Sources, Continued', 'Where the Sources Disagree, Version History & About'],
+      },
+    ],
+  },
+  {
     id: 'whites-tree-frog',
     animal: "White's Tree Frog",
     name: "White's Tree Frog Care Package",
     badge: 'Amphibian',
     emoji: '🐸',
     status: 'coming-soon',
-    // Announced, not written. storefront: 'soon' gives it a landing page at
-    // /care-packages/whites-tree-frog/ with no buy button and no claims a
-    // missing PDF cannot back. That is why there is no pages, version,
-    // samplePages or contents here: every one of those describes a file that
-    // does not exist, and a card that prints "undefined pages" is worse than
-    // one that says nothing. When the package is built, this becomes 'stripe'
-    // with a price id and those fields filled in, and the URL does not change.
-    storefront: 'soon',
+    // Same as the birds above: live price created 2026-10-01, PDF to the
+    // bucket before main.
+    storefront: 'stripe',
+    stripePriceId: 'price_1ULwwZ9qtY3Ob6vaXWw8eqo1',
     price: '$8.99',
+    pages: 39,
+    version: '1.0',
+    versionDate: '2026-10-01',
+    samplePages: 4,
     cover: '/assets/guides/whites-tree-frog.jpg',
-    blurb: 'In progress. The printable manual for the frog whose signature risk is being fed too well, with the humidity that dips instead of sitting high, the water that is safe to mist with, and obesity read off the tympanum rather than the waistline.',
+    blurb: 'Complete 39-page printable guide with the vertical enclosure, a humidity cycle that dips instead of sitting high, the water that is safe to mist with, feeding by size and age, the ridge test that catches obesity early, and seven health pages.',
+    seoDescription: "39-page printable White's tree frog guide: the vertical enclosure, a humidity cycle that dips, safe misting water, and the ridge test that catches obesity.",
     bullets: [
-      'Housing and the vertical 18x18x24 minimum, the temperature gradient, the humidity cycle, substrate, UVB, and the water that is safe to mist with',
-      'Health section with obesity as the signature risk, chytridiomycosis, red-leg syndrome, bacterial and skin infections, and metabolic bone disease',
-      'Feeding by size and age, handling with plain water and no soap, group housing by size, and the printable owner tools the rest of the series carries',
+      'The vertical enclosure and where it goes, the temperature gradient, the humidity cycle, safe misting water, UVB (ultraviolet B) light, substrate and plants, and cleaning without soap in one guide',
+      'Feeding by size and age, feeders and supplements, the ridge test, handling with plain water, size-matched groups and sexing, choosing a frog and quarantine, and seven health pages from obesity and chytrid to red-leg and metabolic bone disease',
+      'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom quick reference, outage and travel plan, pet-sitter sheet, and the owner and vet logs',
+    ],
+    contents: [
+      {
+        label: 'Getting Started',
+        items: ['How to Use This Package'],
+      },
+      {
+        label: 'Quick Profile',
+        items: ['Quick Profile & Cost Overview'],
+      },
+      {
+        label: 'Housing & Environment',
+        items: [
+          'The Vertical Enclosure & Where It Goes',
+          'The Temperature Gradient & Heating',
+          'The Humidity Cycle That Dips',
+          'The Water That Is Safe to Mist With',
+          'Ultraviolet (UVB) Light & the Day Length',
+          'Substrate, Plants & Furnishings',
+          'Cleaning Without Soap, and Household Chemicals',
+        ],
+      },
+      {
+        label: 'Feeding',
+        items: [
+          'Feeding by Size & Age',
+          'Feeder Insects, Treats & Supplements',
+          'Body Condition: Reading the Tympanum Ridges',
+        ],
+      },
+      {
+        label: 'Handling, Company & Behavior',
+        items: [
+          'Handling With Plain Water & No Soap',
+          'Group Housing by Size, Sexing & Breeding',
+          'Choosing a Frog, Quarantine & the Law',
+          'Common Mistakes & Enrichment',
+          'Shedding, Color, Calling & Normal Behavior',
+        ],
+      },
+      {
+        label: 'Health & Common Issues',
+        items: [
+          'Health Red Flags & Finding a Vet',
+          'Obesity, Fatty Eyes & Fatty Liver',
+          'Chytridiomycosis',
+          'Red-Leg Syndrome & Bacterial Infection',
+          'Metabolic Bone Disease & Vitamin A',
+          'Skin Injuries, Chemical Exposure & Dehydration',
+          'Impaction, Parasites & Shedding Problems',
+        ],
+      },
+      {
+        label: 'Quick Reference',
+        items: ['Setup Checklist & Targets', 'Emergency & Quick Targets Card'],
+      },
+      {
+        label: 'Owner Tools',
+        items: [
+          'Budget & Shopping List',
+          'First 30 Days',
+          'Symptom Quick Reference',
+          'Daily, Weekly & Seasonal Routine',
+          'Power Outages, Heat Waves, Travel & Transport',
+          'Pet-Sitter Sheet',
+          'Owner Log',
+          'Equipment & Vet Log',
+        ],
+      },
+      {
+        label: 'Reference',
+        items: ['Glossary', 'Sources', 'Where the Sources Disagree, Version History & About'],
+      },
     ],
   },
 ];

@@ -1,3 +1,5 @@
+> **Stale since 2.2. Do not run build.py.** These fragments still hold 2.1. The 2.2 edits were made directly in `../russian-tortoise.html`, which is now the source of truth. Running build.py overwrites it with 2.1 text. Edit `../russian-tortoise.html`, or port the HTML back into fragments first. (Found 2026-10-01.)
+
 # Russian tortoise care package source
 
 `../russian-tortoise.html` is generated. Edit the fragments here, then:

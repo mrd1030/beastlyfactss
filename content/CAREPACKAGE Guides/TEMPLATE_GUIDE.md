@@ -2211,3 +2211,78 @@ confirmed article error:
 husbandry detail on this species, it is the organising idea of the whole package, and pages
 3, 5, 6, 13, 19, 23, 26 and 28 all point back at it. Writing it as a single line in a table
 the way the reptile skeleton assumes would waste the most useful thing the guide has to say.
+
+### White's Tree Frog 1.0, t3 (Oct 2026)
+
+A new build, the first terrestrial amphibian, 39 pages. Source is fragments plus a build
+script in `source/whites-tree-frog-src/`, and `notes/whites-tree-frog-v2-notes.md` carries
+the per-page free space, the claims removed in the source-check pass, seven undrafted page
+ideas and a ranked cut list. **The axolotl note above, that an amphibian takes the aquatic
+skeleton, holds for a fully aquatic one only.** A frog that meets water in a dish and a
+mister took the arboreal reptile skeleton (Crested Gecko 2.0) with four changes: a water
+page in place of water chemistry, a cleaning and household chemicals page, seven health
+pages instead of four, and body condition as its own feeding page because obesity is the
+signature risk. Pacman frog, fire-bellied toad (half), and an adult tiger salamander will
+want the same shape. The cockatoo head CSS fitted every page first time, minimum 92 px free.
+
+Already covered, do not rewrite: `whites-tree-frog-tank-setup-guide.mdx` carries the
+18&times;18&times;24 in minimum, the gradient, the humidity cycle that dips, the
+dechlorinated-not-distilled water rule, the dish depth, UVB distance and the cleaning
+routine. `whites-tree-frog-feeding-guide.mdx` carries the schedule by size and the ridge
+test with its clinical signs. `whites-tree-frog-health-issues-guide.mdx` carries obesity,
+the slough cycle with the Cramp and Ohmer papers, and the household chemicals.
+`whites-tree-frog-handling-guide.mdx` carries the plain-water technique and the breeding
+figures. `whites-tree-frog-cost-guide.mdx` carries sexing and the blue-morph explanation.
+`amphibian-quarantine-and-water-guide.mdx` carries the 6 to 8 weeks, the container method,
+temperature-first acclimation and chloramine. Note `amphibian-tubbing-and-salt-baths-guide.mdx`
+does **not** transfer: its figures are axolotl-only and it says so, and page 20 tells the
+reader not to borrow them. `reptile-emergency-plan-guide.mdx` only half transfers: page 33
+adapts its outage method and its trip table, shifted one tier stricter as the article itself
+says to for a misting species, but it has no amphibian rows.
+
+| Gap | Pages | Scope | Shape |
+|---|---|---|---|
+| Amphibian emergency plan: outages, heat waves, travel and transport | 6, 28, 33, 34 | Cross-species (terrestrial and semi-aquatic amphibians) | **Derived and proposed.** Nothing on the site; the reptile plan has no amphibian rows and the aquarium outage article is about oxygen. The package's 65&deg;F (18&deg;C) floor and 90&deg;F (32&deg;C) ceiling come from Chicago Exotics Animal Hospital alone, and the heat-wave method is logic, not a source. Needs per-species floors and ceilings, keeping the skin damp through an outage, Merck's transport container (ventilated plastic, moistened paper towel), and the sitter's misting job. Serves White's tree frog, pacman frog, fire-bellied toad, tiger salamander |
+| Chytrid for keepers | 17, 22, 26 | Cross-species (every amphibian) | **Derived.** `whites-tree-frog-health-issues-guide.mdx` gives chytrid one paragraph and the quarantine guide covers the biosecurity. Nothing on signs beyond lethargy and weight loss, the real-time PCR skin swab, itraconazole baths at 0.01% for 5 minutes a day for 10 to 11 days, the above-23&deg;C (73&deg;F) point, or disinfection afterward. Every figure on page 22 is Merck's infectious diseases page plus Betts and Mader. One cross-species article, not a species expansion |
+| Amphibian health signs: dehydration, toxic exposure, rostral abrasion, gastric overload, short tongue syndrome, ranavirus | 23 to 26, 31 | Cross-species (amphibians) | **Derived.** Zero site coverage for any of these in an amphibian. Pages 25 and 26 are sourced from Mader (Reptiles Magazine) and Merck's noninfectious and infectious disorders pages. The red-leg prognosis (likelihood of death high even with early treatment) and culture-based diagnosis on page 23, and the bone disease signs, 30-day oral calcium course and permanent-deformity point on page 24, belong in the same piece or in an expanded `whites-tree-frog-health-issues-guide.mdx` |
+| Amphibian heat stress | 6, 33 | Cross-species (amphibians, and every tropical reptile) | **Proposed.** Extends the Crested Gecko block's overheating row rather than opening a second one: write it once for reptiles and amphibians or link the two. No veterinary source loaded for this build describes an overheated tree frog, so page 6 prints a ceiling and no signs |
+| Photoperiod, UV index, ventilation and the cedar and pine rule for this species | 7, 9, 10 | White's tree frog | **Derived.** Small, and best as an expansion of `whites-tree-frog-tank-setup-guide.mdx`: 12 hours on and 12 off (Rich, Tree of Life, Chicago Exotics), a UV index of 0.7 to 1.6 (Betts), Merck's 1 to 2 air changes an hour, glass blocking UVB, and Merck's cedar and pine mulch warning. All PDF-only now |
+| Froglet feeding and rearing | 12 | White's tree frog | **Derived.** The feeding guide covers juveniles in one line. The froglet row (under 4 cm, one to four pinhead crickets daily) is Chicago Exotics only. No species growth or weight table exists anywhere, which is why the owner log tracks ridges, not grams |
+| Disinfecting an amphibian enclosure | 11, 22 | Cross-species (amphibians) | **Derived.** The site says plain hot water and stops. Merck's bleach figure (30 mL per liter, at least 30 minutes, rinse, dry) and Mader's list of disinfectants that harm amphibians are PDF-only. Pairs naturally with the chytrid article |
+| Legal status for White's tree frog | 17 | White's tree frog, and pacman frog | **Derived.** Not in `legalStatus.json`, so no state table could be built. Page 17 carries a short note using only class-wide rules already in `stateNotes.js` (Nevada, Oklahoma, Hawaii, Massachusetts, DC). Add the species to the legal research before any v2 legal page |
+| Bioactive enclosures | 10 | Cross-species (tropical reptiles and amphibians) | **Proposed.** Extends the Crested Gecko block's bioactive row: a frog adds the drainage point, since waterlogged soil is what builds ammonia |
+| Escaped frog recovery | 25 | Cross-species (tree frogs) | **Proposed.** Tree frogs climb glass and squeeze through lid gaps, and a dried-out escapee is a common first-year emergency. Page 25 carries a short callout built from Mader's dehydration response |
+
+**Numbers with no site source at all:** the 65&deg;F and 90&deg;F limits (pages 6, 27, 28,
+32 to 34); the 12 hour photoperiod and UV index 0.7 to 1.6 (page 9); the froglet feeding row
+(page 12); black soldier fly larvae as a food (page 13); every figure on the chytrid,
+red-leg, bone disease, skin and minor-condition pages beyond what the health guide names
+(pages 22 to 26); the bleach dilution (page 11); and the itemized budget lines for the heat
+mat and thermostat, substrate, branches, dish, conditioner and spray bottle, which come from
+`affiliateProducts.js` prices rather than an article (page 29), and with them the $289 to
+$528 equipment and $374 to $758 all-in totals.
+
+**Site work found by the build, not fixed there.** Four items.
+
+- **The setup-cost headline is below the cost guide's own list.**
+  `whites-tree-frog-cost-guide.mdx` says $200 to $400 (and its seoTitle carries it), while
+  its five priced equipment lines already sum to $200 to $380 and it says the heat source,
+  substrate and branches go on top. Page 29 itemizes to $289 to $528 of equipment.
+- **Glove material.** The handling guide and hub say powder-free nitrile. Merck's clinical
+  techniques page names moistened powder-free vinyl, and LafeberVet (McDermott and Pollock)
+  reports tadpole deaths from latex and nitrile and, less often, vinyl. Worth "nitrile or
+  vinyl" plus the froglet caution. Page 15 names no material and page 39 carries the caution.
+- **Bathtub washing.** `whites-tree-frog-tank-setup-guide.mdx` says to wash equipment in "a
+  laundry sink or bathtub"; `reptile-salmonella-hygiene-guide.mdx`, on CDC guidance, says
+  never a bathtub people use. Page 11 follows the hygiene guide.
+- **The fat ridges contradict each other.** `guides/amphibians.js` `funFact` calls the fat
+  rolls and lipid ridges "a sign of a well-fed, healthy frog, not obesity", while the
+  feeding guide reads sagging or folding ridges as obese. Defined is healthy, folding is not;
+  the funFact should say so.
+
+**Source drift found while building.** The care sheets disagree on night temperature (64 to
+78&deg;F across four sources), basking (one vet guide gives a 95&deg;F spot against
+Chicago Exotics' 90&deg;F ceiling), adult feeding (twice a week to four times), dusting
+(weekly to four times weekly) and enclosure size (15 to 25 gallons). The site's figures sit
+inside every range and the package keeps them; page 39 prints the spread. None is a site
+error.

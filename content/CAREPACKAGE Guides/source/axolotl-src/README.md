@@ -1,3 +1,5 @@
+> **Stale since 2.2. Do not run build.py.** These fragments still hold 2.1. The 2.2 edits were made directly in `../axolotl.html`, which is now the source of truth. Running build.py overwrites it with 2.1 text. Edit `../axolotl.html`, or port the HTML back into fragments first. (Found 2026-10-01.)
+
 # Axolotl care package source
 
 `../axolotl.html` is generated. Edit the fragments here, then:
