@@ -9,7 +9,7 @@ export const snakeEncyclopedia = [
       adultSize: "3-5 feet (90-150 cm); females significantly larger",
       wildDiet: "Small mammals, birds, and amphibians",
       wildLifespan: "About 10 years on average in the wild; 20 to 30 years in captivity, up to 48 recorded",
-      conservation: "Least Concern (IUCN)",
+      conservation: "Near Threatened (IUCN); Appendix II (CITES)",
       history: "Almost the entire pet supply traces to three countries at the center of the range, Benin, Ghana, and Togo, which have exported close to four million ball pythons since 1978, most of them to the United States. Snakes were taken straight from the wild through the 1980s and 1990s, and all three switched to ranching as the dominant reported method in the early 2000s, collecting eggs and juveniles and releasing a share back. The captive-bred hobby most keepers buy from grew out of the 1990s, when the first albino ball pythons were bred and the morph market followed. The species now accounts for roughly 80 percent of all CITES Appendix II snake exports, which is why its trade gets studied more closely than any other snake's.",
     },
   },
