@@ -30926,11 +30926,11 @@
     "path": "/content/guides/leopard-gecko-cost-guide.mdx",
     "slug": "leopard-gecko-cost-guide",
     "title": "How Much Does a Leopard Gecko Really Cost?",
-    "seoTitle": "Leopard Gecko Price: $20 to $150, Plus $250 to $400 Setup",
+    "seoTitle": "Leopard Gecko Price: $20 to $150, Plus $175 to $495 Setup",
     "seoDescription": null,
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
-    "excerpt": "Leopard geckos are one of the more budget-friendly reptiles to keep: roughly $250-400 to set up, then $20-50 a month after that.",
+    "excerpt": "Leopard geckos are one of the more budget-friendly reptiles to keep: $175 to $495 of equipment, $325 to $710 with the first vet exam, then $20 to $82 a month.",
     "date": "2026-07-06",
     "category": "Reptiles",
     "categories": [
@@ -30959,11 +30959,11 @@
       },
       {
         "q": "Is a leopard gecko cheaper to keep than other reptiles?",
-        "a": "Generally yes. Setup runs $250 to $400, and ongoing costs of $20 to $50 a month are on the lower end for reptiles, it's possible to keep that closer to $100 a year if you breed your own feeders and buy supplies in bulk."
+        "a": "Generally yes. Equipment runs $175 to $495, and ongoing costs of $20 to $82 a month are on the lower end for reptiles. Breeding your own feeders and buying supplies in bulk keeps a budget near the bottom of that range."
       },
       {
         "q": "Do I need to budget for UVB even though it's optional?",
-        "a": "It's worth it even though not required. A low-level UVB fixture and bulb runs $20 to $50 upfront and about $45 to $80 a year to replace, and research shows even brief low-level exposure benefits vitamin D3 levels."
+        "a": "It's worth it even though not required. A low-level UVB fixture and bulb runs $20 to $50 upfront and about $4 to $7 a month in replacement tubes, and research shows even brief low-level exposure benefits vitamin D3 levels."
       },
       {
         "q": "What should I budget for vet care?",
@@ -31061,7 +31061,7 @@
     "title": "Leopard Gecko Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Leopard Geckos Eat? Diet and Feeding Schedule",
     "seoDescription": null,
-    "lastUpdated": "2026-09-08",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "How often to feed a leopard gecko by age, what they eat, and the reasons they refuse food, from a normal shed to something worth a vet visit.",
     "date": "2026-07-24",
@@ -31093,11 +31093,11 @@
       },
       {
         "q": "What do leopard geckos eat?",
-        "a": "Commercially raised insects only, never wild-caught. Crickets are the usual staple, alongside dubia roaches, mealworms, superworms, and black soldier fly larvae. Waxworms and superworms are fine as occasional treats but shouldn't be a daily staple, they're high in fat."
+        "a": "Commercially raised insects, never wild-caught. Crickets are the usual staple, alongside dubia roaches, mealworms, superworms, and black soldier fly larvae. Waxworms and superworms are fine as occasional treats but shouldn't be a daily staple, they're high in fat."
       },
       {
         "q": "Do I need to gut-load and dust the insects?",
-        "a": "Yes. A leopard gecko gets its nutrition from what its prey ate, not just the prey itself. Feed insects a nutritious diet for 24 to 48 hours before offering them, dust with calcium before most feedings (more often for juveniles), alternate in calcium with D3 a couple times a week if your gecko doesn't get UVB exposure, and add a multivitamin about once a week."
+        "a": "Yes. A leopard gecko gets its nutrition from what its prey ate, not just the prey itself. Feed insects a nutritious diet for 24 to 72 hours before offering them, dust with calcium before most feedings (more often for juveniles), alternate in calcium with D3 a couple times a week if your gecko doesn't get UVB exposure, and add a multivitamin about once a week."
       },
       {
         "q": "Why has my leopard gecko stopped eating?",
@@ -31121,8 +31121,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
-    "headingCount": 7,
+    "sourceCount": 6,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -31193,7 +31193,7 @@
     "title": "Common Leopard Gecko Health Issues and What to Watch For",
     "seoTitle": "Leopard Gecko Health Issues: Signs & Causes",
     "seoDescription": null,
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Leopard geckos are generally hardy, but stick tail disease has no cure and is easy to miss early. Here's what every owner should know how to recognize.",
     "date": "2026-07-06",
@@ -31220,7 +31220,7 @@
     "faqs": [
       {
         "q": "What is stick tail disease in leopard geckos?",
-        "a": "It's the common name for cryptosporidiosis, a severe and highly contagious parasite with no cure. Around half of captive leopard geckos may carry it, and it causes the tail to thin out to a stick shape along with emaciation and appetite loss. Symptomatic cases have a mortality rate around 50%."
+        "a": "It's the common name for cryptosporidiosis, a severe and highly contagious parasite with no cure. A PCR screen of one Thai breeding facility found it in 51% of the geckos tested, and it causes the tail to thin out to a stick shape along with emaciation and appetite loss. Symptomatic cases have a mortality rate around 50%."
       },
       {
         "q": "How is cryptosporidiosis diagnosed and treated?",
@@ -31247,7 +31247,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6,
-    "headingCount": 10,
+    "headingCount": 11,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -31313,7 +31313,7 @@
     "title": "Leopard Gecko Enclosure Setup: What Your Gecko Actually Needs",
     "seoTitle": "Leopard Gecko Enclosure Setup Guide",
     "seoDescription": "Leopard gecko enclosure setup: 36x18x18in minimum, 88-92F belly heat on a thermostat, and a 70-80% humid hide that prevents most shedding problems.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Leopard geckos have a reputation for being low-maintenance, and mostly they are, but a few details around humidity and heat placement matter more than the simplicity suggests.",
     "date": "2026-07-06",
@@ -31366,7 +31366,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,

@@ -48,7 +48,8 @@ SECTIONS = [
         ("gutload", "Gut-Loading: What to Feed the Feeders"),
         ("treats", "Treats, Refusals &amp; the Never-Feed List"),
         ("supplements", "Supplements: Calcium, Vitamin D3 &amp; Multivitamin"),
-        ("growth", "Weight, the Tail &amp; Body Condition"),
+        ("growth", "Growth, Weight &amp; the Tail"),
+        ("condition", "Body Condition: Thin, Ideal &amp; Overweight"),
     ]),
     ("Section 04 &middot; Handling &amp; Behavior", [
         ("handling", "Handling &amp; Taming"),

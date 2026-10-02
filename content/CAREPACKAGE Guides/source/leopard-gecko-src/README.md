@@ -50,8 +50,8 @@ Things worth knowing before editing:
 - **Every figure comes from the site.** The deep dives in `content/guides/leopard-gecko-*.mdx`
   and the shared reptile guides own the numbers; prices come only from the cost guide. Where
   the site disagrees with itself, the topic's own guide wins, and the Where the Sources
-  Disagree page says which. The cost guide's monthly rows add to $20 to $82 while its headline
-  is $20 to $50; the budget page prints both, labeled.
+  Disagree page says which. Every cost total is the sum of its own rows, as on the site since
+  2 October 2026: $175 to $495 of equipment, $325 to $710 with the first vet exam, $20 to $82 a month.
 - **Abbreviations are spelled out at first use in reading order** (the cover expands UVB, the
   profile UVI, the enclosure page PVC, the UVB page T5 HO, the arrival page PCR, the legal page
   CITES, the bone disease page MBD; the how-to page defines the units), and every one has a
