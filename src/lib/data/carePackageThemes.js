@@ -587,6 +587,112 @@ export const CARE_PACKAGE_THEMES = {
     patternSize: '48px 48px',
   },
 
+
+  // Dry prairie rather than the pine clay used for the ball python: a western
+  // hognose lives on shortgrass prairie and sandy ground, and its setup is the
+  // driest of the snakes here. Khaki and olive off the snake's back over the
+  // near-black of its belly, with the belly's yellow as the accent so the
+  // palette is not tan on tan. Faint oval blotches on the hero for the pattern.
+  'hognose-snake': {
+    light: {
+      'hero-from': '#1f1d12', 'hero-via': '#3a3520', 'hero-to': '#5e5430',
+      'hero-ink': '#f5efdc', 'hero-eyebrow': '#f3d27a',
+      'hero-button-bg': '#f0c24b', 'hero-button-ink': '#1f1d12',
+      glow: '240, 194, 75',
+      ground: '#f9f5ea', ink: '#1f1d12', muted: '#5e5640',
+      accent: '#6a6b2c', 'accent-strong': '#52531f', 'accent-ink': '#ffffff',
+      'accent-soft': '#f1ecd6', 'accent-soft-border': '#ddd3ad',
+      'card-bg': '#ffffff', 'card-border': '#e8e0c6',
+      'panel-bg': '#1f1d12', 'panel-ink': '#f5efdc', 'panel-muted': '#cbc2a2',
+      'cta-bg': '#f0c24b', 'cta-ink': '#1f1d12',
+    },
+    dark: {
+      'hero-from': '#121109', 'hero-via': '#1f1d12', 'hero-to': '#3a3520',
+      'hero-ink': '#f5efdc', 'hero-eyebrow': '#f3d27a',
+      'hero-button-bg': '#f0c24b', 'hero-button-ink': '#121109',
+      glow: '240, 194, 75',
+      ground: '#121109', ink: '#ece5cf', muted: '#b3aa8a',
+      accent: '#c7bf6a', 'accent-strong': '#ddd48a', 'accent-ink': '#121109',
+      'accent-soft': '#1f1d12', 'accent-soft-border': '#3f3a22',
+      'card-bg': '#332e1b', 'card-border': '#4f482b',
+      'panel-bg': '#0a0905', 'panel-ink': '#f5efdc', 'panel-muted': '#bfb596',
+      'cta-bg': '#f0c24b', 'cta-ink': '#121109',
+    },
+    motion: { eyebrowIcon: '🐍', eyebrowMotion: 'cp-sway 3.6s ease-in-out infinite', coverMotion: 'cp-rise 4s ease-in-out infinite' },
+    pattern: 'radial-gradient(ellipse 10px 6px at 50% 50%, rgba(243, 210, 122, 0.08) 95%, transparent 100%)',
+    patternSize: '36px 28px',
+  },
+
+  // Night forest on New Caledonia rather than the crested gecko's green
+  // canopy: the two share an island and a powder, and the page should not
+  // read as a reskin. Charcoal slate off the gargoyle's reticulated gray, with
+  // the orange-red of its blotches as the accent. A slow creep in the eyebrow,
+  // and a faint diamond net over the hero for the reticulated pattern.
+  'gargoyle-gecko': {
+    light: {
+      'hero-from': '#171b1c', 'hero-via': '#232a2b', 'hero-to': '#353d3c',
+      'hero-ink': '#f3f2ef', 'hero-eyebrow': '#f2a07a',
+      'hero-button-bg': '#e8693c', 'hero-button-ink': '#171b1c',
+      glow: '232, 105, 60',
+      ground: '#f6f5f2', ink: '#181c1d', muted: '#545b5a',
+      accent: '#c2491f', 'accent-strong': '#9c3814', 'accent-ink': '#ffffff',
+      'accent-soft': '#f7e3d9', 'accent-soft-border': '#eac0ab',
+      'card-bg': '#ffffff', 'card-border': '#e4e2dd',
+      'panel-bg': '#171b1c', 'panel-ink': '#f3f2ef', 'panel-muted': '#c3c7c4',
+      'cta-bg': '#e8693c', 'cta-ink': '#171b1c',
+    },
+    dark: {
+      'hero-from': '#0d1011', 'hero-via': '#171b1c', 'hero-to': '#232a2b',
+      'hero-ink': '#f3f2ef', 'hero-eyebrow': '#f2a07a',
+      'hero-button-bg': '#e8693c', 'hero-button-ink': '#0d1011',
+      glow: '232, 105, 60',
+      ground: '#0d1011', ink: '#e6e5e1', muted: '#a5aba8',
+      accent: '#f08458', 'accent-strong': '#f6a582', 'accent-ink': '#0d1011',
+      'accent-soft': '#171b1c', 'accent-soft-border': '#353d3c',
+      'card-bg': '#262d2e', 'card-border': '#454e4c',
+      'panel-bg': '#070909', 'panel-ink': '#f3f2ef', 'panel-muted': '#b4b9b6',
+      'cta-bg': '#e8693c', 'cta-ink': '#0d1011',
+    },
+    motion: { eyebrowIcon: '🦎', eyebrowMotion: 'cp-drift 3.6s ease-in-out infinite', coverMotion: 'cp-rise 4.2s ease-in-out infinite' },
+    pattern: 'repeating-linear-gradient(45deg, rgba(242, 160, 122, 0.06) 0 1px, transparent 1px 16px), repeating-linear-gradient(-45deg, rgba(242, 160, 122, 0.06) 0 1px, transparent 1px 16px)',
+    patternSize: 'auto',
+  },
+
+  // West African savanna at dusk, kept well away from the leopard gecko's night
+  // purple and amber: the fat-tail's chocolate bands deepen into a rust dusk
+  // sky, with its tan banding as the eyebrow and the pale dorsal stripe as the
+  // hero button. A slow sway in the eyebrow for the tail-wave it makes while
+  // stalking, and faint horizontal bands on the hero for the banded tail.
+  'african-fat-tail': {
+    light: {
+      'hero-from': '#2a1a12', 'hero-via': '#4a2a1c', 'hero-to': '#7a3f26',
+      'hero-ink': '#fbf3e8', 'hero-eyebrow': '#e9c9a0',
+      'hero-button-bg': '#fbf3e8', 'hero-button-ink': '#2a1a12',
+      glow: '214, 120, 84',
+      ground: '#faf5ef', ink: '#24170f', muted: '#6b5446',
+      accent: '#a8492e', 'accent-strong': '#8a3a23', 'accent-ink': '#ffffff',
+      'accent-soft': '#f6e6dc', 'accent-soft-border': '#e8c9b6',
+      'card-bg': '#ffffff', 'card-border': '#eedfd3',
+      'panel-bg': '#2a1a12', 'panel-ink': '#f6ece2', 'panel-muted': '#d4c0b0',
+      'cta-bg': '#a8492e', 'cta-ink': '#ffffff',
+    },
+    dark: {
+      'hero-from': '#150d09', 'hero-via': '#2a1a12', 'hero-to': '#4a2a1c',
+      'hero-ink': '#fbf3e8', 'hero-eyebrow': '#e9c9a0',
+      'hero-button-bg': '#f3e3cf', 'hero-button-ink': '#2a1a12',
+      glow: '214, 120, 84',
+      ground: '#150d09', ink: '#f0e4d8', muted: '#bba796',
+      accent: '#e08a66', 'accent-strong': '#eba788', 'accent-ink': '#150d09',
+      'accent-soft': '#24160f', 'accent-soft-border': '#4a2a1c',
+      'card-bg': '#33211a', 'card-border': '#5a3828',
+      'panel-bg': '#0b0705', 'panel-ink': '#f6ece2', 'panel-muted': '#c8b3a2',
+      'cta-bg': '#e08a66', 'cta-ink': '#150d09',
+    },
+    motion: { eyebrowIcon: '🦎', eyebrowMotion: 'cp-sway 2.6s ease-in-out infinite', coverMotion: 'cp-rise 3.8s ease-in-out infinite' },
+    pattern: 'repeating-linear-gradient(0deg, rgba(233, 201, 160, 0.06) 0 10px, transparent 10px 28px)',
+    patternSize: 'auto',
+  },
+
 };
 
 const FALLBACK_ID = 'hamster';

@@ -1,11 +1,9 @@
-// The printable PDF care packages. All 17 sell here, through Stripe, so this
-// file is the catalog rather than a mirror of someone else's listing. The
-// cockatiel, cockatoo and White's tree frog are wired but wait on a live
-// price id.
+// The printable PDF care packages. All 20 sell here, through Stripe, so this
+// file is the catalog rather than a mirror of someone else's listing.
 //
 // status records whether a package ever had a Gumroad listing, and now only
 // decides the teaser row for one that sells nowhere. Nothing sells nowhere,
-// so isCarePackageBuyable is true for all 17. Read storefront, not status,
+// so isCarePackageBuyable is true for all 20. Read storefront, not status,
 // when the question is "can this be bought".
 // Both use `cover`, the guide hero under public/assets/guides, as the card and
 // product page art; nothing is loaded from Gumroad's CDN any more.
@@ -1557,6 +1555,313 @@ export const CARE_PACKAGES = [
       },
     ],
   },
+
+  {
+    id: 'hognose-snake',
+    animal: 'Hognose Snake',
+    name: 'Hognose Snake Care Package',
+    badge: 'Reptile',
+    emoji: '🐍',
+    status: 'coming-soon',
+    // Live price created 2026-10-02, PDF to the bucket before main.
+    storefront: 'stripe',
+    stripePriceId: 'price_1UM5ZC9qtY3Ob6vagncB2NR6',
+    price: '$8.99',
+    pages: 44,
+    version: '1.0',
+    versionDate: '2026-10-02',
+    samplePages: 5,
+    cover: '/assets/guides/hognose-snake.jpg',
+    blurb: 'Complete 44-page printable guide to the western hognose with the enclosure sized by sex, dry air at 30 to 50% humidity, prey by gram weight fed in a separate container, the venom question answered from the bite research, a state-by-state legal summary, and seven health pages.',
+    seoDescription: '44-page printable western hognose guide: the dry setup, prey by gram weight, the venom question from the bite research, and a state-by-state legal summary.',
+    bullets: [
+      'The enclosure sized by sex, the temperature gradient, every heat source on a thermostat, dry air and the one humid hide, optional UVB (ultraviolet B) light, and deep digging substrate on the cool end in one guide',
+      'Prey by gram weight, frozen-thawed and fed in a separate container, the refusing hognose, the hood and the death act, the venom question, a state-by-state legal summary, and seven health pages from respiratory infection and scale rot to the winter slowdown',
+      'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom quick reference, outage and travel plan, pet-sitter sheet, and the owner, equipment, quarantine and vet logs',
+    ],
+    contents: [
+      {
+        label: 'Getting Started',
+        items: ['How to Use This Package'],
+      },
+      {
+        label: 'Quick Profile',
+        items: ['Quick Profile & Cost Overview', 'Which Hognose This Is, Size & Lifespan'],
+      },
+      {
+        label: 'Housing & Environment',
+        items: [
+          'The Enclosure, Sized by Sex & Age',
+          'The Temperature Gradient',
+          'Heat Sources, Thermostats & Probes',
+          'Dry Air, the Humid Hide & Ultraviolet Light',
+          'Deep Bedding, Digging & Cleaning',
+        ],
+      },
+      {
+        label: 'Feeding',
+        items: [
+          'Prey Size & Feeding Schedule',
+          'Frozen Prey: Thawing, Storage & Where to Feed',
+          'The Refusing Hognose',
+        ],
+      },
+      {
+        label: 'Behavior & Handling',
+        items: [
+          'Hooding, Hissing & Playing Dead',
+          'The Venom Question & Bites',
+          'Handling & Hygiene',
+          'Enrichment & Common Mistakes',
+        ],
+      },
+      {
+        label: 'Arrival & Life Stages',
+        items: [
+          'Choosing a Hognose, Quarantine & the First Vet Visit',
+          'Telling the Sex, Weight & Body Condition',
+          'Females, Eggs & Eggs That Get Stuck',
+        ],
+      },
+      {
+        label: 'The Law',
+        items: [
+          'Is a Hognose Legal Where You Live?',
+          'States With Conditions',
+          'States Where It Is Legal',
+        ],
+      },
+      {
+        label: 'Health & Common Issues',
+        items: [
+          'Health Red Flags & Finding a Vet',
+          'Respiratory & Belly-Scale Infections',
+          'Blockages, Regurgitated Meals & Obesity',
+          'Mites & Internal Parasites',
+          'Shedding, Mouth Infections, Burns & Tissue at the Vent',
+          'The Winter Slowdown',
+          'Reading Droppings & Hydration',
+        ],
+      },
+      {
+        label: 'Quick Reference',
+        items: ['Setup Checklist & Targets', 'Emergency & Quick Targets Card'],
+      },
+      {
+        label: 'Owner Tools',
+        items: [
+          'Budget & Shopping List',
+          'First 30 Days',
+          'Symptom Quick Reference',
+          'Daily, Weekly & Seasonal Routine',
+          'Power Outages, Travel & Transport',
+          'Pet-Sitter Sheet',
+          'Owner Log',
+          'Equipment, Quarantine & Vet Log',
+        ],
+      },
+      {
+        label: 'Reference',
+        items: ['Glossary, A to H', 'Glossary, H to Z', 'Sources', 'Where the Sources Disagree, Version History & About'],
+      },
+    ],
+  },
+  {
+    id: 'gargoyle-gecko',
+    animal: 'Gargoyle Gecko',
+    name: 'Gargoyle Gecko Care Package',
+    badge: 'Reptile',
+    emoji: '🦎',
+    status: 'coming-soon',
+    // Live price created 2026-10-02, PDF to the bucket before main.
+    storefront: 'stripe',
+    stripePriceId: 'price_1UM5ZE9qtY3Ob6va7nQlh94C',
+    price: '$8.99',
+    pages: 41,
+    version: '1.0',
+    versionDate: '2026-10-02',
+    samplePages: 4,
+    cover: '/assets/guides/gargoyle-gecko.jpg',
+    blurb: 'Complete 41-page printable guide with the tall, cluttered enclosure, a gentle warm spot under an 86°F ceiling, a humidity cycle that dries out every day, powder and insects by age, the tail that grows back, and six health pages.',
+    seoDescription: '41-page printable gargoyle gecko guide: the 86°F ceiling, a humidity cycle that dries out daily, powder plus insects by age, and floppy tail prevention.',
+    bullets: [
+      'The tall enclosure and where it goes, the gradient and the 86°F ceiling, the daily humidity cycle, UVB (ultraviolet B) light, substrate and clutter, and cleaning and hygiene in one guide',
+      'Powder and insects by age, feeders and supplements, the never-feed list, weight in grams, handling and the tail that grows back, sexing and eggs, quarantine, and six health pages from metabolic bone disease and floppy tail to stuck shed and respiratory infection',
+      'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom quick reference, heat wave and outage plan, pet-sitter sheet, and the owner and equipment logs',
+    ],
+    contents: [
+      {
+        label: 'Getting Started',
+        items: ['How to Use This Package'],
+      },
+      {
+        label: 'Quick Profile',
+        items: ['Quick Profile & Cost Overview'],
+      },
+      {
+        label: 'Housing & Environment',
+        items: [
+          'The Vertical Enclosure & Where It Goes',
+          'The Gradient & the 86°F Ceiling',
+          'The Humidity Cycle, Misting & Airflow',
+          'UVB (Ultraviolet B) Light & the Day Length',
+          'Substrate, Clutter & Furnishings',
+          'Cleaning & Hygiene',
+        ],
+      },
+      {
+        label: 'Feeding',
+        items: [
+          'Diet & Feeding by Age',
+          'Complete Diet Powder: Mixing & Rotation',
+          'Feeder Insects & Supplements',
+          'Treats, the Never-Feed List & Appetite',
+          'Weight, Growth & Body Condition',
+        ],
+      },
+      {
+        label: 'Handling, Behavior & Breeding',
+        items: [
+          'Handling, the Bite & the Tail',
+          'Sexing, Single Housing & Pairs',
+          'Females, Eggs & Egg Binding',
+          'Choosing a Gecko, Quarantine & the Law',
+          'Common Mistakes & Enrichment',
+          'Shedding, Seasonal Slowdown & Behavior',
+        ],
+      },
+      {
+        label: 'Health & Common Issues',
+        items: [
+          'Health Red Flags & Finding a Vet',
+          'Metabolic Bone Disease',
+          'Floppy Tail Syndrome & Tail Loss',
+          'Stuck Shed, Toe Loss & Respiratory Infection',
+          'Overheating, Dehydration & Reading Droppings',
+          'Parasites, Blockages, Mouth Rot & More',
+        ],
+      },
+      {
+        label: 'Quick Reference',
+        items: ['Setup Checklist & Targets', 'Emergency & Quick Targets Card'],
+      },
+      {
+        label: 'Owner Tools',
+        items: [
+          'Budget & Shopping List',
+          'First 30 Days',
+          'Symptom Quick Reference',
+          'Daily, Weekly & Seasonal Routine',
+          'Heat Waves, Power Outages, Travel & Transport',
+          'Pet-Sitter Sheet',
+          'Owner Log',
+          'Equipment & Vet Log',
+        ],
+      },
+      {
+        label: 'Reference',
+        items: ['Glossary, A to H', 'Glossary, I to Z', 'Sources', 'Where the Sources Disagree, Version History & About'],
+      },
+    ],
+  },
+  {
+    id: 'african-fat-tail',
+    animal: 'African Fat-Tailed Gecko',
+    name: 'African Fat-Tailed Gecko Care Package',
+    badge: 'Reptile',
+    emoji: '🦎',
+    status: 'coming-soon',
+    // Live price created 2026-10-02, PDF to the bucket before main.
+    storefront: 'stripe',
+    stripePriceId: 'price_1UM5ZF9qtY3Ob6vaVvMy9Fdr',
+    price: '$8.99',
+    pages: 42,
+    version: '1.0',
+    versionDate: '2026-10-02',
+    samplePages: 5,
+    cover: '/assets/guides/african-fat-tail.jpg',
+    blurb: 'Complete 42-page printable guide with every way it differs from a leopard gecko, belly heat on a thermostat, a 50 to 70% enclosure with a humid hide at 70 to 80%, a soil mix it can burrow in, feeding by age, and seven health pages.',
+    seoDescription: '42-page printable African fat-tailed gecko guide: how it differs from a leopard gecko, belly heat, the humid hide that stops stuck shed, and feeding by age.',
+    bullets: [
+      'Every way it differs from a leopard gecko, the floor-space enclosure, belly heat on a thermostat with the probe in the right place, humidity and the three hides, a substrate for a burrower, and the light cycle with optional UVB (ultraviolet B) in one guide',
+      'Five feeding pages from hatchling portions to the never-feed list, handling a calm gecko, sexing and the tail as the body condition gauge, females and the laying box, choosing a gecko and quarantine, and seven health pages from retained shed to egg binding',
+      'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom quick reference, outage and travel plan, pet-sitter sheet, and the owner, equipment and vet logs',
+    ],
+    contents: [
+      {
+        label: 'Getting Started',
+        items: ['How to Use This Package'],
+      },
+      {
+        label: 'Quick Profile',
+        items: ['Quick Profile & Cost Overview', 'Fat-Tail or Leopard Gecko? The Differences'],
+      },
+      {
+        label: 'Housing & Environment',
+        items: [
+          'A Floor-Space Enclosure & Where It Goes',
+          'Belly Heat, the Thermostat & the Probe',
+          'Humidity & the Three Hides',
+          'Substrate for a Burrower & Furnishings',
+          'Light Cycle & UVB (Ultraviolet B) Light',
+        ],
+      },
+      {
+        label: 'Feeding',
+        items: [
+          'What African Fat-Tailed Geckos Eat',
+          'Feeding Schedule by Age & How Much',
+          'Feeder Insects: Staples, Treats & Never',
+          'Gut-Loading & Calcium Dusting',
+          'Why It Stops Eating & When to Worry',
+        ],
+      },
+      {
+        label: 'Handling, Females & Behavior',
+        items: [
+          'Handling a Calm Gecko',
+          'Sexing, Weight & Body Condition',
+          'Females, Eggs & the Laying Box',
+          'Choosing a Gecko, Quarantine & the Law',
+          'Common Mistakes & Enrichment',
+          'Shedding, Seasons, Sounds & Behavior',
+        ],
+      },
+      {
+        label: 'Health & Common Issues',
+        items: [
+          'Health Red Flags & Finding a Vet',
+          'Retained Shed & Eye Problems',
+          'Metabolic Bone Disease & Vitamin Problems',
+          'Impaction & Respiratory Infection',
+          'Egg Binding, Prolapse & Male Problems',
+          'Parasites, Mouth Rot, Tail Loss & Burns',
+          'Reading Poop & Hydration',
+        ],
+      },
+      {
+        label: 'Quick Reference',
+        items: ['Setup Checklist & Targets', 'Emergency & Quick Targets Card'],
+      },
+      {
+        label: 'Owner Tools',
+        items: [
+          'Budget & Shopping List',
+          'First 30 Days',
+          'Symptom Quick Reference',
+          'Daily, Weekly & Seasonal Routine',
+          'Power Outages, Travel & Transport',
+          'Pet-Sitter Sheet',
+          'Owner Log',
+          'Equipment, Supplement & Vet Log',
+        ],
+      },
+      {
+        label: 'Reference',
+        items: ['Glossary, A to I', 'Glossary, M to Z', 'Sources', 'Where the Sources Disagree, Version History & About'],
+      },
+    ],
+  },
 ];
 
 // ---------------------------------------------------------------------------
@@ -1614,11 +1919,11 @@ export function carePackageHome(pkg) {
 }
 
 // The animal as it reads mid-sentence: lowercase, except a name that is a
-// proper noun ("White's tree frog", "Russian tortoise").
+// proper noun ("White's tree frog", "Russian tortoise", "African fat-tailed gecko").
 export function carePackageAnimalInSentence(pkg) {
   return pkg.animal
     .split(' ')
-    .map(w => (/^(White's|Russian)$/.test(w) ? w : w.toLowerCase()))
+    .map(w => (/^(White's|Russian|African)$/.test(w) ? w : w.toLowerCase()))
     .join(' ');
 }
 

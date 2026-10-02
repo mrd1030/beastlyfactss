@@ -655,11 +655,9 @@ async function handleContact(request, env) {
 // BOTH files.
 //
 // A package missing here cannot be bought even if the catalog says it can,
-// which is the safe direction for the two to disagree in. All 17 are here and
-// all 17 carry storefront: 'stripe', so the two agree (the cockatiel, cockatoo
-// and White's tree frog with empty price ids, which checkout refuses); a
-// package added to the
-// catalog and forgotten here gets a clean 404 from checkout rather than a sale
+// which is the safe direction for the two to disagree in. All 20 are here and
+// all 20 carry storefront: 'stripe' and a live price id, so the two agree; a
+// package added to the catalog and forgotten here gets a clean 404 from checkout rather than a sale
 // nobody can fulfil.
 //
 // checkout prefers priceIdLive and falls back to priceIdSandbox, so a
@@ -770,6 +768,24 @@ const CARE_PACKAGE_STORE = {
     edition: '1.0',
     priceIdSandbox: '',
     priceIdLive: 'price_1ULwwZ9qtY3Ob6vaXWw8eqo1',
+  },
+  'hognose-snake': {
+    name: 'Hognose Snake Care Package',
+    edition: '1.0',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UM5ZC9qtY3Ob6vagncB2NR6',
+  },
+  'gargoyle-gecko': {
+    name: 'Gargoyle Gecko Care Package',
+    edition: '1.0',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UM5ZE9qtY3Ob6va7nQlh94C',
+  },
+  'african-fat-tail': {
+    name: 'African Fat-Tailed Gecko Care Package',
+    edition: '1.0',
+    priceIdSandbox: '',
+    priceIdLive: 'price_1UM5ZF9qtY3Ob6vaVvMy9Fdr',
   },
 };
 

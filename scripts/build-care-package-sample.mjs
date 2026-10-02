@@ -90,7 +90,7 @@ try {
       </div>
       <p style="margin:0 0 8pt;"><strong>In this sample:</strong> ${listed.join(', ')}. The contents page shows every one of the ${pages} pages, so you can see exactly what the full package covers before you buy it.</p>
       <p style="margin:0 0 8pt;"><strong>Not in this sample:</strong> the ${rest} pages that follow, which are the full care guide, the health section, the quick reference cards, and the owner tools, checklists and logs.</p>
-      <p style="margin:0;"><strong>The full package</strong> is ${price} at <strong>beastlyfacts.com/care-packages/${id}/</strong>. One purchase, and every corrected edition is a free re-download from your library. The free ${animal.split(' ').map(w => (/'s$/.test(w) ? w : w.toLowerCase())).join(' ')} care guide it was built from is at beastlyfacts.com/guides/${id}/, and stays free.</p>
+      <p style="margin:0;"><strong>The full package</strong> is ${price} at <strong>beastlyfacts.com/care-packages/${id}/</strong>. One purchase, and every corrected edition is a free re-download from your library. The free ${animal.split(' ').map(w => (/'s$|^(Russian|African)$/.test(w) ? w : w.toLowerCase())).join(' ')} care guide it was built from is at beastlyfacts.com/guides/${id}/, and stays free.</p>
     `;
     if (foot) {
       // The footer is cloned from page 2, so its page number says 2.
