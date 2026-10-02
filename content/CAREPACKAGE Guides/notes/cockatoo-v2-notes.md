@@ -448,3 +448,144 @@ and each of the 17 abbreviation rows given a full entry: the expansion, what it 
 it means for an owner. The package went from 45 to 46 pages; Sources, Sources Continued and
 Where the Sources Disagree moved to 44, 45 and 46, and every page reference to them moved with
 them.
+
+## Review fixes, 1.2
+
+An editor's review of the 46-page 1.2 PDF, applied 1 October 2026. Statuses were checked
+before editing: the Global Biodiversity Information Facility species API returns the
+Moluccan (IUCN taxon 22684784) as ENDANGERED, Goffin's (22684800) and the palm (22684723)
+as NEAR_THREATENED and the sulphur-crested (22684781) as LEAST_CONCERN; the Norwegian
+Scientific Committee for Food and Environment's 2020 report on CITES Appendix I parrots names
+the Moluccan, Goffin's (Tanimbar corella), yellow-crested and palm cockatoos as Appendix I.
+cites.org itself refused automated fetches (403). Both sources were added as one row on the
+sources pages.
+
+The package went from 46 to 47 pages. Six new glossary entries pushed the two glossary pages
+117 px past the footer, and the owner's rule is a new page rather than shorter definitions, so
+the glossary is now three pages: 42 (B to Cr), 43 (D to N, "Terms D to N.") and 44 (P to Z,
+"Terms P to Z."). Sources, Sources Continued and Where the Sources Disagree moved to 45, 46 and
+47; the contents page, cover badge, colophon, every "page 44/45/46" reference, the glossary
+page references, and the store `pages`, blurb, seoDescription, heroParagraph, heroTicks and
+contents list moved with them. The new sources row sits on page 46, because page 45 had no
+room for it.
+
+### Replaced wording
+
+**Page 30, New Jersey row (legal blocker).**
+
+```html
+The Division also treats an IUCN Red List entry as an endangered listing, and the umbrella is Endangered and the Moluccan Vulnerable, so for those two the answer may be harder than a permit
+```
+
+Now "the umbrella and the Moluccan are both IUCN Endangered", hedge unchanged. No other
+"Vulnerable" was in the file.
+
+**Page 30, both Maine rows (legal blocker).** Goffin's is Appendix I, so it was wrongly
+covered by "Legal, no permit".
+
+```html
+<tr><td><strong>Maine</strong>, for the Moluccan, yellow-crested and umbrella</td><td>Permit required</td><td>Maine clears the parrot order from its permit requirement, then carves out any species on CITES Appendix I or the IUCN's Endangered, Critically Endangered or Extinct in the Wild tiers. The Moluccan and yellow-crested are Appendix I; ...
+<tr><td><strong>Maine</strong>, for the galah, cockatiel and other smaller species</td><td>Legal, no permit</td><td>Not on Appendix I or those IUCN tiers</td></tr>
+```
+
+Row 1 now covers the Moluccan, Goffin's, yellow-crested, palm and umbrella, with "permit rule"
+and "anything on" absorbing the extra names. Row 2 is now "for species off both lists", naming
+the galah, sulphur-crested, Major Mitchell's and cockatiel in the Why column.
+
+**Page 6, species table.** Goffin's gained "CITES Appendix I. Page 30"; the palm gained "CITES
+Appendix I"; the Moluccan's "CITES Appendix I, which has real legal consequences" became "IUCN
+Endangered and CITES Appendix I, which has real legal consequences".
+
+**Page 4, conservation row.**
+
+```html
+The umbrella is Endangered on the Red List ... Several species are on Appendix I of CITES
+```
+
+Now "The umbrella and the Moluccan are Endangered ... The Moluccan, Goffin's, yellow-crested
+and palm are on Appendix I of CITES".
+
+**Behavior consultant, one name throughout.** Was: page 3 "a certified avian behavior
+consultant", pages 18 and 23 the same, page 24 "When to bring in a behaviorist" and "a
+certified avian behaviorist ... Behaviorists work with", page 33 "Avian behavior consultant",
+page 36 "a behaviorist after", glossary "Certified Parrot Behavior Consultant ... Page 45",
+store whatNot "certified avian behavior consultant". Now "certified parrot behavior consultant
+(CPBC)" at page 3 and "certified parrot behavior consultant" or "behavior consultant" after;
+the glossary row points to pages 3, 33 and 46.
+
+**Sexual maturity.** Page 17 subtitle "the change at five to seven years old" is now "three to
+six years old"; page 36 "aged 3 to 7" is now "aged 3 to 6", matching LafeberVet's 3 to 4 and 5
+to 6 on pages 4 and 17.
+
+**US usage.** Page 11 "Ceiling fans and hobs", "Mains cables", "a cable a budgie could not
+dent" and "cable trunking" are now "Ceiling fans and stove burners", "Power cords", "a cord"
+and "cord covers"; the hazard table's columns went from 22/28% to 25/30% so the longer label
+holds one line. Page 28 "beetroot" is now "beets"; page 38 "power cut" (twice) is now "power
+outage"; pages 17 and 19 "afterwards" is now "afterward"; page 34 "untreated offcuts" (twice)
+is now "untreated wood scraps". No hob, mains, torch, boot, skirting, fortnight or laboured
+remained; "penciled" was already US.
+
+**Page 36, droppings.** "Lime-green droppings ... 48 hours" and "Unformed droppings, no solid
+part ... 48 hours" are now "Vet within 24 hours", matching pages 28 and 33.
+
+**Glossary page refs.** Corticosterone "Page 16" (page 16 never uses the word; the sources page
+does) is now the sources page, 45 after the renumber. Regurgitation "Page 22" is now 23, where
+courtship regurgitation is described.
+
+**Page 4 total.** "$2,200 to $7,300" is now "$2,195 to $7,340", matching pages 34 and 47.
+
+**Page 30 footer.** "as of September 2026" is now "October 2026".
+
+**Six species.** Cover "Five species compared" is now "Six species compared", and the same in
+the store blurb, seoDescription, heroParagraph and the honest-test inside line.
+
+**Page 5 adoption callout.** "$1,000 to $3,500 for a baby" is now "$700 to $3,500".
+
+**Page 35, week 1.** "Baseline weight established across seven days" is now "Weighed daily,
+toward a two-week baseline. Page 21".
+
+**Page 25.** "amazons" is now "Amazons".
+
+**Sources.** The two LafeberVet rows ("Basic Information Sheet: Cockatoo" and "Basic
+Information Sheet for the Cockatoo", the second carrying only the iris quote, DNA testing and
+a repeat of the weights) are one row under the second title, with the iris quote and DNA
+testing appended. No glossary or text reference named either title.
+
+**Page 3, print these first.** The columns ran 32, 33, 36, 37 / 39, 40, 41, 31; they now run
+31, 32, 33, 36 / 37, 39, 40, 41.
+
+**First-mention glosses, each with a glossary row.** Page 24 "Giardia and PBFD" is now
+"Giardia, a gut parasite (page 27), and PBFD"; page 16 "haloperidol" is now "haloperidol (an
+antipsychotic drug)"; page 25 "a circovirus" is now "a circovirus, a small virus"; page 25
+"crop secretions" is now "secretions from the crop (the storage pouch in the throat)" and
+"crop stasis" is "crop stasis (food sitting unmoving in the crop)"; page 30 "one binomial at a
+time" is now "one binomial (the two-part scientific name) at a time"; page 11 "Chelated by a
+vet" is now "Treated by chelation, a course of drugs that bind the metal so the body can pass
+it". Two more jargon first mentions the review did not list, fixed the same way: page 25
+"other psittacines including cockatoos" is now "other psittacines (parrots and cockatoos)
+too", with a Psittacine glossary row, and page 25 "mouth, nose or cloaca" is now "mouth, nose
+or vent", the word the book already uses. New glossary rows: Binomial, Chelation, Circovirus,
+Crop stasis, Giardia, Haloperidol, Psittacine.
+
+**Page 37 log.** Three blank rows became five, which fills the page to 28 px.
+
+**Bar spacing.** Pages 4, 7, 32 (checklist and numbers table) and 33 now all read "3/4 in (19
+mm) for Goffin's and galah, up to 1 in (25 mm) for the large species". Pages 4 and 7 had "3/4
+to 1 in (19 to 25 mm) for a large cockatoo"; pages 32 and 33 had "3/4 to 1 in (19 to 25 mm)"
+with no qualifier. The page 7 cage drawing label "Bars 3/4 to 1 in apart" is unchanged.
+
+### Not done
+
+**Version history line.** A clause on the Moluccan and Goffin's corrections was tried on the
+1.2 row and took page 47 to -5 px free, then 9 px in a shorter form, so it is not in the PDF.
+Suggested wording for when there is room: "the Moluccan was corrected to IUCN Endangered, and
+Goffin's and the palm, both CITES Appendix I, now need a Maine permit."
+
+**Site legal guide.** content/guides/cockatoo-legal-guide.mdx has the same Goffin's gap: its
+Maine row puts "cockatiel, galah, other smaller species" under "Legal, no permit". Out of scope
+here; it needs its own fix.
+
+### Free space after the fixes
+
+Minimum 15 px (page 30). Tightest: p30 15, p5 16, p35 16, p31 22, p6 23, p29 23, p47 23, p11
+26, p24 26, p17 27, p27 28, p37 28.

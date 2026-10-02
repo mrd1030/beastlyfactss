@@ -56,8 +56,10 @@ loaded during the build carried them. Kept here so nobody re-adds them unsourced
   somewhere 10 degrees lower to go". The 10-degree figure was invented; the water-loss
   mechanism had no source in hand.
 - Page 6, the signs table row "Frog pressed low on the glass, pale, restless | The warm end
-  may be over 90&deg;F (32&deg;C)". No source describes overheating signs for this species.
-  Replaced by a row that reads the thermometer instead.
+  may be over 90&deg;F (32&deg;C)". Those particular signs had no source. Replaced by a row that
+  reads the thermometer instead. Correction from the review: Mader (Reptiles Magazine,
+  already a source) does describe overheating in amphibians generally, "hyperactivity,
+  incoordination, lethargy and, ultimately, death", and page 6 now carries those signs.
 - Page 12, "or start nibbling a sleeping frog" on leftover crickets. Plausible, unsourced.
 - Page 13, dubia roaches "do not chirp or climb out". True of the insect, irrelevant to the
   frog, unsourced.
@@ -71,10 +73,12 @@ loaded during the build carried them. Kept here so nobody re-adds them unsourced
 In rough priority order. Each needs sourcing before it goes on a page.
 
 1. **A heat-stress page.** The package prints a 90&deg;F (32&deg;C) ceiling from one vet
-   care sheet and a heat-wave method adapted from logic rather than a source. What an
-   overheated tree frog looks like, and what to do in the first ten minutes, was not found
-   in any veterinary source loaded during the build. The crested gecko block logs the
-   reptile version of the same gap.
+   care sheet and a heat-wave method adapted from logic rather than a source. The signs are
+   now sourced: Mader's amphibian hypo/hyperthermia section gives "hyperactivity,
+   incoordination, lethargy and, ultimately, death", and first aid of fresh, chlorine-free
+   water at the proper temperature, with fluids from a vet for severe cases. That is
+   amphibians in general, not this species, and a species-specific first ten minutes is
+   still unsourced. The crested gecko block logs the reptile version of the same gap.
 2. **Froglet and juvenile rearing.** One table row covers frogs under 4 cm. Buyers of small
    juveniles, and anyone whose pair bred, need prey sizing, enclosure scale-down, and growth
    expectations. No species growth table or weight range was found anywhere.
@@ -126,6 +130,71 @@ If v2 has to lose pages:
 - **Page 22, chytrid, and page 17, quarantine.** The disease that kills, and the habit that
   prevents it.
 - **Pages 28, 34, 35.** The emergency card, sitter sheet and owner log are what people print.
+
+## Review fixes, 1.0
+
+An editor's review, applied in place on 1.0 (October 2026). Still 39 pages; minimum free
+space after the fixes is 23 px, on the glossary (page 37). Page numbers below are the 39-page
+PDF. Replaced wording, old then new:
+
+- **Page 15, gloves.** "Powder-free disposable gloves, wetted with dechlorinated water" became
+  "Powder-free vinyl gloves (nitrile is a second choice), never latex, wetted with dechlorinated
+  water", per Merck (moistened powder-free vinyl, not latex). The froglet caution moved here
+  from the page 39 table: tadpole deaths reported from latex, nitrile and, to a lesser extent,
+  vinyl (LafeberVet). Page 39 row "Powder-free disposable gloves, wetted. Vinyl is the cautious
+  choice for a froglet" became "Powder-free vinyl, nitrile second, never latex, wetted. The
+  froglet caution is on page 15". Page 27 checklist lists no handling supplies, so no glove
+  line was added.
+- **Page 11, bleach.** "household bleach at 30 mL per liter" became "plain, unscented
+  household bleach (not splashless or scented) at 30 mL per liter".
+- **Page 5, enclosure.** "A 20-gallon-equivalent enclosure is comfortable for a single frog"
+  contradicted the 18x18x24 in minimum (about 34 gallons). Now "A 20-gallon tall tank is the
+  smallest figure any veterinary source gives; this package uses 18x18x24 in."
+- **Page 33, trip table.** Adult, 1 to 2 nights: "A sitter every 1 to 2 days" became "A sitter
+  daily", matching daily misting and dish changes and the note under the table.
+- **Jargon.** Page 6 "the hygrometer" became "the hygrometer (humidity meter)", plus a glossary
+  entry. Page 24 "a cloacal prolapse" became "a cloacal prolapse (tissue pushed out of the
+  vent, the frog's single rear opening)", plus a glossary entry that also defines the vent.
+  "Cloaca" is never used bare. Page 22 "the fungus's DNA" became "the fungus's DNA
+  (deoxyribonucleic acid, the genetic code)".
+- **Page 26, health entries.** Impaction gained a Recovery row: "Depends on what was blocking
+  and how it was removed. Afterward, smaller prey and a coarse or bare floor". Swelling gained
+  Signs ("A body or limbs puffed up with fluid. With ranavirus, reddened skin and bleeding
+  under the belly; with chytrid, the skin signs on page 22") and Recovery ("Follows the cause.
+  Ranavirus is frequently fatal; chytrid caught early can respond to treatment. The frog stays
+  apart from any others until the vet clears it"). Its "Causes" row is now "Cause", and the
+  ranavirus skin signs moved from Cause to Signs.
+- **UVB tube, one phrasing.** Page 4 "a low-output 5 to 7% T5 tube, the slim fluorescent kind
+  (T5 means 5/8 inch across)" became "a 5 to 7% UVB T5 HO tube ... T5 is the slim fluorescent
+  kind, 5/8 inch across; HO, high output, is the tube format; the 5 to 7% rating is what keeps
+  it gentle". Page 9 "Low-output T5, 5 to 7%" became "5 to 7% UVB T5 HO tube", and "A low-output
+  tube is cheap insurance" became "A gentle 5 to 7% tube is cheap insurance". Page 27
+  "Low-output UVB, T5 HO (high output) 5 to 7%" became "5 to 7% UVB T5 HO (high output) tube".
+  Page 29 "Low-output UVB, T5 HO 5%, fixture and tube" became "UVB fixture and 5 to 7% UVB T5
+  HO tube" (price unchanged). Glossary T5 HO entry adds "5 to 7% keeps it gentle".
+- **Page 22, chytrid treatment.** "Raising the enclosure temperature above about 73&deg;F
+  (23&deg;C) may help halt the infection, which a vet will fold into the plan rather than leave
+  to guesswork" became "Keeping the frog at the warm end of its range, as the vet directs, may
+  help halt the infection". The whole gradient already sits above 73&deg;F. Sources page Merck
+  line "the 23&deg;C (73&deg;F) point" became "warmth as part of treatment".
+- **Page 22, Bd range.** "more than 200 amphibian species" became "hundreds of amphibian
+  species".
+- **Page 12, smaller adult.** "3 to 4 insects, about three-week-old crickets" became "2 to 4
+  insects, crickets about three to four weeks old", covering Chicago Exotics' sub-adult "one
+  to two, three to four week old crickets".
+- **Heat stress.** Verified against the live Mader article (Amphibian Hypo/Hyperthermia):
+  "Signs include hyperactivity, incoordination, lethargy and, ultimately, death." Page 6 gained
+  a signs row: "Hyperactive or uncoordinated, then lethargic | Signs of overheating. Read the
+  warm end now; past 90&deg;F (32&deg;C), turn the heat off, give fresh treated water at room
+  temperature, and call the vet". Page 33 "a frog that is limp, flat or will not move: cool
+  the room and call the vet" became "a frog that is hyperactive, uncoordinated or lethargic,
+  the signs of overheating: cool the room, give it fresh treated water at room temperature,
+  and call the vet". Sources page Mader line adds "overheating".
+- **Page 3, repeated phrase.** "because two frogs of different sizes is a feeding accident
+  waiting to happen" became "because when two frogs differ in size, the bigger one may try to
+  swallow the smaller". Page 16 keeps the original wording.
+- **Page 36, vet visit log.** Header "Treatment and follow-up" became "Treatment, follow-up",
+  which now sits on one line.
 
 ## Site may be wrong, found during the build
 

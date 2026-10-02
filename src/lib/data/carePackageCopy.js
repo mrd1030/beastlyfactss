@@ -763,8 +763,8 @@ export const CARE_PACKAGE_COPY = {
   cockatoo: {
     hook: 'Four to six hours most days, for decades. Take the honest test first.',
     heroParagraph:
-      'A 46-page printable manual with a decision test written to talk some readers out of the bird, five species compared, training and foraging as the plan against plucking and screaming, feather dust and your own lungs, seven health pages, state legal status, and a succession plan.',
-    heroTicks: ['46 pages, print or view', 'Advanced, not a first parrot', 'No external links inside the PDF'],
+      'A 47-page printable manual with a decision test written to talk some readers out of the bird, six species compared, training and foraging as the plan against plucking and screaming, feather dust and your own lungs, seven health pages, state legal status, and a succession plan.',
+    heroTicks: ['47 pages, print or view', 'Advanced, not a first parrot', 'No external links inside the PDF'],
     roulette: [
       'A hand-raised baby sold on the cuddling, and nothing about the bird at eight years old',
       'Constant one-on-one time in the first weeks, then a bird that screams when that person leaves the room',
@@ -778,7 +778,7 @@ export const CARE_PACKAGE_COPY = {
       'A succession page: a named guardian, a sanctuary fallback, money attached, and the will',
     ],
     inside: [
-      { emoji: '⚖️', title: 'The honest test', line: 'Nine questions to answer before you buy, five species compared on size, price, noise and temperament, and where the bird comes from.' },
+      { emoji: '⚖️', title: 'The honest test', line: 'Nine questions to answer before you buy, six species compared on size, price, noise and temperament, and where the bird comes from.' },
       { emoji: '🏠', title: 'Housing, dust and hazards', line: 'Cage size, bar gauge and padlocks, the play stand, 10 to 12 hours of darkness, feather dust and the HEPA air purifier, and the fumes from overheated nonstick pans (PTFE).' },
       { emoji: '🥗', title: 'Diet and foraging', line: 'The 75 to 80 percent pellet target, converting a seed eater, the never-feed list, nuts as training pay, and nothing in a bowl.' },
       { emoji: '🤝', title: 'Training and behavior', line: 'Training sessions, bites and sexual maturity, over-bonding and independence, screaming, wing clipping, and hormones.' },
@@ -800,7 +800,7 @@ export const CARE_PACKAGE_COPY = {
       'Keepers who want a written plan for a bird that may outlive them',
     ],
     whatNot: [
-      'Not a substitute for an avian veterinarian or a certified avian behavior consultant',
+      'Not a substitute for an avian veterinarian or a certified parrot behavior consultant',
       'Not a live website mirror, a clean printable package instead',
       'Not a subscription, one purchase and every corrected edition is free',
     ],
