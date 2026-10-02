@@ -158,8 +158,8 @@ export const CARE_PACKAGE_COPY = {
   'bearded-dragon': {
     hook: "Basking temps you don't have to guess at.",
     heroParagraph:
-      'A 36-page printable manual with basking, UVB and diet targets split by age, thermostat and UVB distance guidance, and health triage, not one blurry range copied across a dozen care sheets.',
-    heroTicks: ['36 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
+      'A 48-page printable manual with basking, UVB and diet targets split by age, thermostat and UVB distance guidance, choosing a healthy dragon, the law in every state, and health triage, not one blurry range copied across a dozen care sheets.',
+    heroTicks: ['48 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
     roulette: [
       'Basking temps that vary 15+ degrees between sources',
       'UVB replacement schedules nobody agrees on',
@@ -173,21 +173,21 @@ export const CARE_PACKAGE_COPY = {
       'Stuck shed and brumation handled the safe way, step by step',
     ],
     inside: [
-      { emoji: '🏠', title: 'Housing and setup', line: 'Enclosure, temperature, UVB and humidity, thermostats, timers and UVB distance, substrate and furnishings.' },
-      { emoji: '🥗', title: 'Diet by age', line: 'Feeding by age, feeder insects, safe greens and vegetables, fruit, extras and the never-feed list.' },
-      { emoji: '⚠️', title: 'Health and red flags', line: 'Metabolic bone disease and impaction, respiratory infection, ADV and yellow fungus, parasites, mouth rot and eye problems.' },
-      { emoji: '🪟', title: 'Brumation and shedding', line: 'Brumation, stuck shed and glass surfing, explained and fixed, plus reading poop and keeping a dragon hydrated.' },
-      { emoji: '🥚', title: 'Sexing, growth and eggs', line: 'Sexing, growth and body condition, and females, eggs and egg binding.' },
+      { emoji: '🏠', title: 'Housing and setup', line: 'The enclosure and where it goes, the temperature gradient, thermostats and probes, UVB tube and distance, substrate, bioactive setups and cleaning.' },
+      { emoji: '🥗', title: 'Diet by age', line: 'Feeding by age, feeder insects and gut-loading, safe greens, the never-feed list, and calcium, vitamin D3 and multivitamin on their own page.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Metabolic bone disease, impaction and dehydration, respiratory infection, atadenovirus and yellow fungus, parasites, shedding, burns, and reading poop.' },
+      { emoji: '🪟', title: 'Handling and behavior', line: 'Handling and taming, the beard, color changes, arm-waving and glass surfing explained, and enrichment that works.' },
+      { emoji: '🥚', title: 'Arrival, eggs and the law', line: 'Choosing a healthy dragon and quarantine, sexing, eggs and egg binding, brumation, and where a bearded dragon is legal.' },
       { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, pet-sitter sheet, and the logs.' },
     ],
     previewHeadline: 'Bold Never rules, impossible to miss.',
     previews: [
       { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
-      { page: 6, alt: 'Temperature, UVB and humidity targets' },
-      { page: 9, alt: 'Diet and feeding by age' },
-      { page: 17, alt: 'Metabolic bone disease and impaction' },
-      { page: 23, alt: 'Emergency and quick targets card' },
-      { page: 26, alt: 'Symptom quick reference table' },
+      { page: 7, alt: 'The temperature gradient and heat' },
+      { page: 12, alt: 'Diet by age' },
+      { page: 27, alt: 'Metabolic bone disease' },
+      { page: 34, alt: 'Emergency and quick targets card' },
+      { page: 37, alt: 'Symptom quick reference table' },
     ],
     whoFor: [
       'New bearded dragon owners setting up correctly the first time',

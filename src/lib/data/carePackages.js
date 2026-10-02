@@ -22,6 +22,14 @@
 // the source HTML's table of contents rather than transcribed. Regenerate it
 // when a package is rebuilt (the parser is described in docs/SHOP_PLAN.md).
 //
+// history and legalAsOf are optional, and only packages rebuilt on the current
+// outline carry them. history is the book's own version-history list, copied
+// from its back page (newest first, one entry per edition); the product page
+// shows it under "What changed" so a buyer holding an older printout can see
+// what moved. legalAsOf is the month the book's state legal status was last
+// read; bump it after the monthly legal check even when nothing changed, since
+// only a real change to the book needs a new edition.
+//
 // ---------------------------------------------------------------------------
 // storefront: where the buy button goes
 // ---------------------------------------------------------------------------
@@ -62,76 +70,128 @@ export const CARE_PACKAGES = [
     storefront: 'stripe',
     stripePriceId: 'price_1UENBp9qtY3Ob6vamuXMA6sD',
     price: '$8.99',
-    pages: 36,
-    version: '3.2',
+    pages: 48,
+    version: '4.0',
     versionDate: '2026-10-02',
-    samplePages: 4,
+    samplePages: 5,
     cover: '/assets/guides/bearded-dragon.jpg',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/beardeddragoncarepackage',
-    blurb: 'Complete 36-page printable guide with temperature targets, diet ratios by age, health triage, an owner log, and enrichment checklists.',
+    blurb: 'Complete 48-page printable guide with temperature and UVB targets, feeding by age, choosing a healthy dragon, brumation, the law in every state, seven health pages, and the owner tools.',
     bullets: [
-      'Housing, heat and UVB, substrate, handling, diet, and enrichment in one guide',
-      'Health section with red flags, metabolic bone disease and impaction, respiratory infection and yellow fungus, and brumation, stuck shed, and glass surfing guidance',
-      'Shopping list, first 30 days checklist, owner log, and a daily and weekly routine',
+      'The enclosure and where it goes, the temperature gradient, thermostats and probes, UVB (ultraviolet B) tube and distance, substrate and bioactive setups, and cleaning in one guide',
+      'Feeding by age, insects, greens and supplements, handling and body language, choosing a dragon and quarantine, eggs and brumation, the law in every state, and seven health pages',
+      'Setup checklist, emergency card, budget, first 30 days, symptom reference, routine, outage and heat-wave plan, pet-sitter sheet, and the logs',
     ],
     contents: [
       {
-        label: 'Getting Started',
-        items: ['How to Use This Package'],
-      },
-      {
-        label: 'Quick Profile',
-        items: ['Quick Profile & Cost Overview'],
-      },
-      {
-        label: 'Full Care Guide',
+        label: "Getting Started",
         items: [
-          'Housing & Enclosure',
-          'Temperature, UVB & Humidity',
-          'Thermostats, Timers & UVB Distance',
-          'Substrate, Furnishings & Handling',
-          'Diet & Feeding by Age',
-          'Feeder Insects: Staples, Treats & Never',
-          'Safe Greens & Vegetables',
-          'Fruit, Extras & the Never-Feed List',
-          'Common Mistakes & Enrichment',
-          'Sexing, Growth & Body Condition',
-          'Females, Eggs & Egg Binding',
+          "How to Use This Package",
         ],
       },
       {
-        label: 'Health & Common Issues',
+        label: "Profile",
         items: [
-          'Health Red Flags & What to Tell the Vet',
-          'Metabolic Bone Disease & Impaction',
-          'Respiratory Infection, Atadenovirus & Yellow Fungus',
-          'Parasites, Mouth Rot, Tail Rot & Eye Problems',
-          'Brumation, Stuck Shed & Glass Surfing',
-          'Reading Poop & Keeping a Dragon Hydrated',
+          "Quick Profile & Cost Overview",
+          "The Species, Morphs, Size & Lifespan",
         ],
       },
       {
-        label: 'Quick Reference',
-        items: ['Setup Checklist & Temperature Targets', 'Emergency & Quick Targets Card'],
-      },
-      {
-        label: 'Owner Tools',
+        label: "Housing & Environment",
         items: [
-          'Budget & Shopping List',
-          'First 30 Days Checklist',
-          'Symptom Quick Reference',
-          'Daily, Weekly & Seasonal Routine',
-          'Power Outages, Travel & Transport',
-          'Pet-Sitter Sheet',
-          'Owner Log',
-          'Equipment, Supplement & Vet Log',
-          'Enrichment Checklist & Log',
+          "Enclosure Size, Type & Where It Goes",
+          "The Temperature Gradient & Heat",
+          "Thermostats, Probes & Timers",
+          "UVB: Tube, Strength & Mounting Distance",
+          "Substrate, Furnishings & Bioactive Setups",
+          "Cleaning & Hygiene",
         ],
       },
       {
-        label: 'Reference',
-        items: ['Glossary', 'Glossary, Continued', 'Sources', 'Version History & About'],
+        label: "Feeding",
+        items: [
+          "Diet by Age",
+          "Feeder Insects & Gut-Loading",
+          "Safe Greens & Vegetables",
+          "Fruit, Treats & the Never-Feed List",
+          "Supplements: Calcium, Vitamin D3 & Multivitamin",
+          "Growth, Weight & Body Condition",
+        ],
       },
+      {
+        label: "Handling & Behavior",
+        items: [
+          "Handling & Taming",
+          "Body Language: Beard, Color, Arm-Wave & Glass Surfing",
+          "Enrichment & Common Mistakes",
+        ],
+      },
+      {
+        label: "Arrival & Life Stages",
+        items: [
+          "Choosing a Dragon, Quarantine & the First Vet Visit",
+          "Sexing & Females That Lay",
+          "Egg Binding",
+          "Brumation",
+        ],
+      },
+      {
+        label: "The Law",
+        items: [
+          "Is a Bearded Dragon Legal Where You Live?",
+        ],
+      },
+      {
+        label: "Health & Common Issues",
+        items: [
+          "Red Flags & Finding a Vet",
+          "Metabolic Bone Disease",
+          "Impaction, Dehydration & Prolapse",
+          "Respiratory Infection, Atadenovirus & Yellow Fungus",
+          "Parasites, Mouth Rot & Eye Problems",
+          "Shedding, Tail and Toe Rot & Burns",
+          "Reading Poop, Urates & Hydration",
+        ],
+      },
+      {
+        label: "Quick Reference",
+        items: [
+          "Setup Checklist & Targets",
+          "Emergency & Quick Targets Card",
+        ],
+      },
+      {
+        label: "Owner Tools",
+        items: [
+          "Budget & Shopping List",
+          "First 30 Days",
+          "Symptom Quick Reference",
+          "Daily, Weekly & Seasonal Routine",
+          "Power Outages, Heat Waves, Travel & Transport",
+          "Pet-Sitter Sheet",
+          "Owner Log",
+          "Equipment & Vet Log",
+          "Enrichment Checklist & Log",
+        ],
+      },
+      {
+        label: "Reference",
+        items: [
+          "Glossary, A to H",
+          "Glossary, I to Z",
+          "Sources",
+          "Where the Sources Disagree",
+          "Version History & About",
+        ],
+      },
+    ],
+    legalAsOf: 'October 2026',
+    history: [
+      { edition: "4.0", date: "Oct 2026", text: "Rebuilt on the current outline, 48 pages. Safety: hatchlings under about 1 month fed 2 to 3 times daily, 1 to 4 months twice daily, juveniles to 18 months once daily with a fresh salad every day, adults insects a few times a week; plain calcium near-daily for juveniles; multivitamin 1 to 2 times a week; feeders gut-loaded 24 to 72 hours on calcium-rich foods; setup checklist UVB distance corrected to 16 to 18 in; stuck shed loosened with a 30-minute chin-deep soak; handling sessions built up to 10 to 15 minutes; egg binding is a vet visit after more than 24 to 48 hours of digging or straining. Legal: a new page on the law in all 52 jurisdictions. Other changes are wording only." },
+      { edition: "3.2", date: "Oct 2026", text: "Safety: first vet exam within 48 hours; Salmonella precautions for children under 5, adults 65 and older, and anyone with a weakened immune system; calcium with D3 twice weekly for adults; 60°F (16°C) outage floor; thermostat probe clipped, never taped; lamps at least 4 to 6 in above the dragon, basking surface never above 122°F (50°C); UVB tube 16 to 18 in, 11 to 12 through mesh; yellow fungus outlook now guarded to grave, so see a vet at the first patch. Costs: setup, vet and monthly costs updated, greens included. Other changes are wording only." },
+      { edition: "3.1", date: "Sep 2026", text: "Safety: quarantine for a new reptile now 3 to 6 months; discolored urates no longer blamed on excess calcium. Other changes are wording only." },
+      { edition: "3.0", date: "Sep 2026", text: "Rebuilt, 34 pages. Safety: plain calcium daily, with D3 as a backup." },
+      { edition: "2.0", date: "Aug 2026", text: "Second edition, 22 pages. Replaced by 3.0." },
     ],
   },
   {
