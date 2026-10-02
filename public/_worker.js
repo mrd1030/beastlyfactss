@@ -697,7 +697,7 @@ const CARE_PACKAGE_STORE = {
   },
   'crested-gecko': {
     name: 'Crested Gecko Care Package',
-    edition: '2.1',
+    edition: '3.0',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENC19qtY3Ob6vasiNmiLfX',
   },
