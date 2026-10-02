@@ -480,8 +480,8 @@ export const CARE_PACKAGE_COPY = {
   'russian-tortoise': {
     hook: 'An animal that can outlive its owner deserves the setup right.',
     heroParagraph:
-      'A 41-page printable manual with real UVB and basking targets, the brumation decision and protocol, outdoor housing and escape-proofing, honest space requirements, and health triage, not the small starter tank they are usually sold with.',
-    heroTicks: ['41 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
+      'A 49-page printable manual with real UVB and basking targets, the brumation decision and protocol, outdoor pens and escape-proofing, honest space requirements, the law in every state, and health triage, not the small starter tank they are usually sold with.',
+    heroTicks: ['49 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
     roulette: [
       "A small starter tank that's outgrown within a year",
       'UVB treated as optional instead of required',
@@ -495,21 +495,21 @@ export const CARE_PACKAGE_COPY = {
       'Pyramiding, shell rot and MBD called out where you cannot miss them',
     ],
     inside: [
-      { emoji: '🏜️', title: 'Housing and UVB', line: 'Enclosure size and the table question, temperature, basking and night lows, UVB and lighting, humidity and the moist hide.' },
-      { emoji: '🌿', title: 'Outdoors and diet', line: 'Outdoor housing and escape-proofing, what a steppe grazer actually eats, weeds and growing your own, the never-feed list.' },
-      { emoji: '⚠️', title: 'Health and red flags', line: 'MBD and pyramiding, respiratory infection and herpesvirus, shell rot and abscesses, parasites, vitamin A deficiency and beak overgrowth.' },
-      { emoji: '❄️', title: 'Brumation and seasonal care', line: 'The brumation decision and the protocol, so winter is not left to chance.' },
-      { emoji: '⚖️', title: 'Sexing, eggs and the law', line: 'Sexing, growth and body condition, females and egg binding, and the four-inch rule.' },
-      { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, pet-sitter sheet, and the logs.' },
+      { emoji: '🏜️', title: 'Housing and UVB', line: 'The enclosure and where it goes, temperature, basking and night lows, thermostats and timers, UVB tube and distance, humidity, substrate and cleaning.' },
+      { emoji: '🌿', title: 'Outdoors and diet', line: 'Outdoor pens and escape-proofing, diet by age and how much, weeds, hay and growing your own, the never-feed list, and calcium and water on their own page.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Metabolic bone disease and pyramiding, respiratory infection and herpesvirus, shell rot and abscesses, parasites, vitamin A, bladder stones and beak overgrowth, and reading droppings.' },
+      { emoji: '❄️', title: 'Behavior and brumation', line: 'Handling, daily rhythm, courtship and living alone, enrichment, and the brumation decision and protocol, so winter is not left to chance.' },
+      { emoji: '⚖️', title: 'Arrival, eggs and the law', line: 'Choosing a tortoise, quarantine and the first vet visit, sexing, eggs and egg binding, and where a Russian tortoise is legal, with the four-inch rule.' },
+      { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, routine, outage and heat-wave plan, pet-sitter sheet, and the logs.' },
     ],
     previewHeadline: 'Print-first pages, clearly marked.',
     previews: [
       { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
-      { page: 6, alt: 'Temperature, basking and night lows' },
-      { page: 11, alt: 'Diet: what a steppe grazer actually eats' },
-      { page: 18, alt: 'Metabolic bone disease and pyramiding' },
-      { page: 28, alt: 'Emergency and quick targets card' },
-      { page: 31, alt: 'Symptom quick reference table' },
+      { page: 7, alt: 'Temperature, basking and night lows' },
+      { page: 13, alt: 'Diet by age and how much' },
+      { page: 28, alt: 'Metabolic bone disease and pyramiding' },
+      { page: 35, alt: 'Emergency and quick targets card' },
+      { page: 38, alt: 'Symptom quick reference table' },
     ],
     whoFor: [
       'New Russian tortoise owners setting up correctly the first time',

@@ -715,7 +715,7 @@ const CARE_PACKAGE_STORE = {
   },
   'russian-tortoise': {
     name: 'Russian Tortoise Care Package',
-    edition: '2.3',
+    edition: '3.0',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENCB9qtY3Ob6vaTvVBMark',
   },

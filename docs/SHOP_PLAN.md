@@ -63,7 +63,7 @@ had moved past the PDF):
 | leopard-gecko | Leopard_Gecko_Care_Package_v3.0.pdf | 49 |
 | lovebird | Lovebird_Care_Package_v2.1.pdf | 39 |
 | rabbit | Rabbit_Care_Package_v2.1.pdf | 40 |
-| russian-tortoise | Russian_Tortoise_Care_Package_v2.3.pdf | 41 |
+| russian-tortoise | Russian_Tortoise_Care_Package_v3.0.pdf | 49 |
 | tarantula | Tarantula_Care_Package_v2.3.pdf | 44 |
 | cockatiel | Cockatiel_Care_Package_v1.2.pdf | 40 |
 | cockatoo | Cockatoo_Care_Package_v1.2.pdf | 45 |
