@@ -198,15 +198,15 @@ function Keyboard({ keys, onKey, disabled }) {
   );
 }
 
-// Fish most players wouldn't file under "fish" get "aquatic animal" with it,
-// so the hint still points the right way (Beastle #5, MANTA RAY). Display
+// Fish most players wouldn't file under "fish" say "aquatic animal" instead,
+// so the hint points the way a player thinks (Beastle #5, MANTA RAY). Display
 // only: entry.group stays "fish" for the bonus round's decoys.
 const AQUATIC_FISH = new Set([
   'MANTA RAY', 'SHARK', 'FRILLED SHARK', 'SEAHORSE', 'SEADRAGON', 'LEAFY SEADRAGON',
   'ELECTRIC EEL', 'MUDSKIPPER',
 ]);
 function groupHint(entry) {
-  if (AQUATIC_FISH.has(entry.answer)) return "It's an aquatic animal, a fish";
+  if (AQUATIC_FISH.has(entry.answer)) return "It's an aquatic animal";
   return `It's ${/^[aeiou]/.test(entry.group) ? 'an' : 'a'} ${entry.group}`;
 }
 
