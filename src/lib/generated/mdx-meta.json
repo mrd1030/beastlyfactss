@@ -498,9 +498,9 @@
     "path": "/content/guides/ackie-monitor-legal-guide.mdx",
     "slug": "ackie-monitor-legal-guide",
     "title": "Is It Legal to Own an Ackie Monitor? State-by-State Guide",
-    "seoTitle": "Are Ackie Monitors Legal? Banned in Only Two Places",
+    "seoTitle": "Are Ackie Monitors Legal? Banned in Only Four Places",
     "seoDescription": "Ackie monitors are legal in 40 of 52 US jurisdictions. Louisiana bans two other species, not this dwarf one. Four places ban it, three by family alone.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "The Ackie monitor clears almost every state, including Louisiana, which bans two other monitor species by name but was never written to reach a dwarf species this size. The four dead ends all catch it as a Varanus rather than as itself.",
     "date": "2026-08-29",
@@ -520,7 +520,7 @@
     "image": "/assets/guides/ackie-monitor-legal.jpg",
     "imageAlt": "Ackie monitor perched on a sun-warmed rock, its dark body and pale yellow speckling and long banded tail clearly visible",
     "emoji": "🦎",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -1419,7 +1419,7 @@
     "image": "/assets/guides/african-grey-parrot-legal.jpg",
     "imageAlt": "African grey parrot perched calmly, representing its captive-bred legal status",
     "emoji": "🦜",
-    "lastReviewed": "2026-07-13",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -3376,7 +3376,7 @@
     "title": "Is It Legal to Own an Argentine Tegu? Florida's Prohibited List Explained",
     "seoTitle": "Are Argentine Tegus Legal? Florida Ban and Permits",
     "seoDescription": "Argentine tegus have been banned from new ownership in Florida since April 2021. The grandfather permit window closed that July. No federal ban exists.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Argentine tegus aren't federally restricted and most states don't touch them, but Florida is the exception. Since 2021 they've been on the state's Prohibited species list, and the window to grandfather one in has already closed.",
     "date": "2026-07-14",
@@ -3396,7 +3396,7 @@
     "image": "/assets/guides/argentine-tegu-legal.jpg",
     "imageAlt": "Argentine black and white tegu in Florida habitat",
     "emoji": "🦎",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -4027,7 +4027,7 @@
     "title": "Is It Legal to Own an Axolotl? State-by-State Guide (Virginia Myth Corrected)",
     "seoTitle": "Are Axolotls Legal? Banned States and the Virginia Update",
     "seoDescription": "Where axolotls are actually banned (California and more), why Virginia was legalized in 2021, and the reasoning behind each rule.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Axolotls are banned in a handful of states, California among them, but Virginia isn't one of them anymore. A 2021 rule change legalized them there, and a lot of hobbyist sites still haven't caught up.",
     "date": "2026-07-15",
@@ -4047,7 +4047,7 @@
     "image": "/assets/guides/axolotl-legal.jpg",
     "imageAlt": "Pink axolotl in a planted aquarium, representing its state-by-state legal status",
     "emoji": "🦎",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -4057,7 +4057,7 @@
       },
       {
         "q": "Which states ban axolotls?",
-        "a": "California bans them outright under a detrimental-species regulation, with no pet permits issued. New Jersey effectively bans them, listing axolotls among species that may not be kept as pets or sold. Maine requires a permit that isn't typically issued for pet ownership. Washington DC also reportedly bans them under its prohibited-animals rules. Wyoming and Alabama ban them via the 2025 federal injurious wildlife listing."
+        "a": "California bans them outright under a detrimental-species regulation, with no pet permits issued. New Jersey bans them, listing axolotls among species that may not be kept as pets or sold. Maine requires a permit that isn't typically issued for pet ownership. Washington DC bans them by omission, since no amphibian fits its permitted pet categories. Wyoming and Alabama ban them via the 2025 federal injurious wildlife listing, and New Mexico bans them through a default group IV designation."
       },
       {
         "q": "Why is California so strict about axolotls specifically?",
@@ -4069,7 +4069,7 @@
       },
       {
         "q": "What about New Mexico?",
-        "a": "New Mexico allows possession in some cases but restricts importing axolotls from other states, more of an import-control issue than an outright pet ban."
+        "a": "New Mexico bans them. The axolotl is not on the Director's list, so a default clause designates it group IV, which is closed to the general public. The rule is written as an importation rule, so it governs bringing one into the state rather than keeping one already there."
       },
       {
         "q": "Why do bans on this species exist at all if axolotls aren't endangered?",
@@ -4514,7 +4514,7 @@
     "image": "/assets/guides/ball-python-legal.jpg",
     "imageAlt": "Ball python coiled in its enclosure",
     "emoji": "🐍",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -5405,7 +5405,7 @@
     "image": "/assets/guides/bearded-dragon-legal.jpg",
     "imageAlt": "Bearded dragon basking on a flat stone under a heat lamp",
     "emoji": "🦎",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -5778,7 +5778,7 @@
     "title": "Are Bengal Cats Legal? The Generation Rules Explained",
     "seoTitle": "Are Bengal Cats Legal? F1 to F5 Rules by State",
     "seoDescription": "Bengal cat laws by state: New York's five-generation rule, Iowa's F4 cutoff, Maryland's 30-pound test, explained simply.",
-    "lastUpdated": "2026-08-13",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "The same Bengal is a domestic cat in Indiana, legal in Iowa only from the fourth generation, and in Minnesota caught by one sentence of a definition and exempted by another. Four states draw the line four different ways, and one draws it by weight.",
     "date": "2026-08-13",
@@ -5799,7 +5799,7 @@
     "image": "/assets/guides/bengal-cat-legal.jpg",
     "imageAlt": "Bengal cat with rosetted coat standing alert on a wooden floor",
     "emoji": "🐈",
-    "lastReviewed": "2026-08-13",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [],
@@ -7788,7 +7788,7 @@
     "image": "/assets/guides/blue-tongue-skink-legal.jpg",
     "imageAlt": "Blue-tongued skink with its tongue extended, showing the blue coloration it is named for",
     "emoji": "🦎",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -8269,7 +8269,7 @@
     "image": "/assets/guides/boa-constrictor-legal.jpg",
     "imageAlt": "Boa constrictor coiled, representing its legal status across US states",
     "emoji": "🐍",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -8891,7 +8891,7 @@
     "image": "/assets/guides/box-turtle-legal.jpg",
     "imageAlt": "Eastern box turtle on a forest floor",
     "emoji": "🐢",
-    "lastReviewed": "2026-10-01",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -10070,7 +10070,7 @@
     "title": "Are Burmese Pythons Legal? The Federal Ban a Court Narrowed",
     "seoTitle": "Are Burmese Pythons Legal? Federal Rule vs States",
     "seoDescription": "The Burmese python is federally injurious wildlife, but a 2017 court ruling narrowed the ban. Ten states prohibit it outright and Ohio measures it instead.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "The Burmese python has been federal injurious wildlife since 2012, and most people assume that settles it. A 2017 D.C. Circuit ruling took the interstate half of that ban away, which is why twenty-nine jurisdictions still have no rule of their own.",
     "date": "2026-09-06",
@@ -10090,7 +10090,7 @@
     "image": "/assets/guides/burmese-python-legal.jpg",
     "imageAlt": "Coiled Burmese python showing its patterned tan and brown markings",
     "emoji": "🐍",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -10104,7 +10104,7 @@
       },
       {
         "q": "Which states ban the Burmese python?",
-        "a": "Ten: Florida, New York, Montana, Alabama, Wyoming, Louisiana, Hawaii, New Mexico, Georgia and New York City. Eight require a permit, three attach a condition, Idaho is unclear, and thirty have no rule reaching the species."
+        "a": "Ten: Florida, New York, Montana, Alabama, Wyoming, Louisiana, Hawaii, New Mexico, Georgia and New York City. Nine require a permit, three attach a condition, Idaho is unclear, and twenty-nine have no rule reaching the species."
       },
       {
         "q": "Why does Ohio measure the snake instead of naming it?",
@@ -10985,7 +10985,7 @@
     "image": "/assets/guides/capybara-legal.jpg",
     "imageAlt": "Adult capybara resting at the edge of shallow water with reeds behind it",
     "emoji": "🦫",
-    "lastReviewed": "2026-09-11",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -12724,8 +12724,8 @@
     "slug": "chinchilla-legal-guide",
     "title": "Is It Legal to Own a Chinchilla? State-by-State Guide",
     "seoTitle": "Is a Chinchilla Legal in Your State? Full Guide",
-    "seoDescription": "No US state bans pet chinchillas, despite claims about California and Texas. CITES exempts the domesticated form; Hawaii only requires an import permit.",
-    "lastUpdated": "2026-07-22",
+    "seoDescription": "No US state bans pet chinchillas, despite claims about California and Texas. CITES exempts the domesticated form; only Hawaii and New Jersey need permits.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "We couldn't find a single US state that bans pet chinchillas, despite blog posts claiming California and Texas do. The legal story is a wild-population treaty that explicitly exempts domesticated pets.",
     "date": "2026-07-22",
@@ -12745,7 +12745,7 @@
     "image": "/assets/guides/chinchilla-legal.jpg",
     "imageAlt": "Pet chinchilla taking a dust bath",
     "emoji": "🐭",
-    "lastReviewed": "2026-07-22",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -12755,7 +12755,7 @@
       },
       {
         "q": "Do I need a permit to own a chinchilla anywhere in the US?",
-        "a": "The only real permit requirement we found is Hawaii's, and it's a standard import permit and vet certificate required for bringing almost any non-native mammal into the state, not a chinchilla-specific restriction. No state requires a permit just to own one you already have."
+        "a": "The only permit requirements we found are Hawaii's and New Jersey's. Hawaii asks for a standard import permit and vet certificate, as it does for almost any non-native mammal, and New Jersey requires a permit for any exotic or nongame species that its exempt list does not name. Neither is chinchilla-specific, and Massachusetts asks only that the animal come from captive stock."
       },
       {
         "q": "Are chinchillas protected animals because of CITES?",
@@ -13897,7 +13897,7 @@
     "image": "/assets/guides/cockatoo-legal.jpg",
     "imageAlt": "Umbrella cockatoo perched calmly on a natural wood stand",
     "emoji": "🦜",
-    "lastReviewed": "2026-09-11",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -15009,9 +15009,9 @@
     "title": "Is It Legal to Own a Corn Snake? State-by-State Guide",
     "seoTitle": "Is a Corn Snake Legal in Your State? Full Guide",
     "seoDescription": "Corn snakes are banned as pets in Georgia, even captive-bred ones, since they're native. New Jersey allows nine morphs; South Carolina caps them at 20 inches.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
-    "excerpt": "Corn snakes are the classic pet-store starter snake almost everywhere, except Georgia, where the state's own wildlife agency lists them as a native species that can't be kept as a pet at all, captive-bred or not. New Jersey, South Carolina, Illinois, Maryland, and Minnesota all attach their own conditions too, and two of them work by morph name rather than by species.",
+    "excerpt": "Corn snakes are the classic pet-store starter snake almost everywhere, except Georgia, West Virginia and Hawaii. Georgia's own wildlife agency lists them as a native species that can't be kept as a pet at all, captive-bred or not. New Jersey, South Carolina, Illinois, Maryland, and Minnesota all attach their own conditions too, and two of them work by morph name rather than by species.",
     "date": "2026-08-29",
     "category": "Legal",
     "categories": [
@@ -15029,7 +15029,7 @@
     "image": "/assets/guides/corn-snake-legal.jpg",
     "imageAlt": "Corn snake with its distinctive orange and black blotched pattern",
     "emoji": "🐍",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -16019,9 +16019,9 @@
     "path": "/content/guides/crested-gecko-legal-guide.mdx",
     "slug": "crested-gecko-legal-guide",
     "title": "Is It Legal to Own a Crested Gecko? State-by-State Guide",
-    "seoTitle": "Are Crested Geckos Legal? The Six Places They Aren't",
+    "seoTitle": "Are Crested Geckos Legal? The Seven Places They Aren't",
     "seoDescription": "Crested geckos are legal in 45 of 52 US jurisdictions. Hawaii and DC bar them, and Massachusetts needs a permit because the IUCN rates the species vulnerable.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Crested geckos clear 45 of 52 jurisdictions without a permit, which makes the seven exceptions worth knowing precisely. The one most keepers never see coming is Massachusetts, where the permit is triggered by the species' conservation status rather than by anything it does.",
     "date": "2026-09-12",
@@ -16041,7 +16041,7 @@
     "image": "/assets/guides/crested-gecko-legal.jpg",
     "imageAlt": "Crested gecko gripping a branch, showing the eyelash crests it is named for",
     "emoji": "🦎",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -16700,7 +16700,7 @@
     "title": "Is It Legal to Own a Degu? State-by-State Guide",
     "seoTitle": "Are Degus Legal? Banned in 8 of 52 Jurisdictions",
     "seoDescription": "Degus are banned in 8 of 52 US jurisdictions and need a permit in 7 more. Most rules clear chinchillas and guinea pigs by name, then leave the degu off.",
-    "lastUpdated": "2026-09-13",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "The degu is the most restricted small rodent kept as a pet in the US, and the reason repeats almost word for word from state to state: the cleared-rodent list names the chinchilla, guinea pig, gerbil, hamster, mouse and rat, and stops there.",
     "date": "2026-09-13",
@@ -16720,7 +16720,7 @@
     "image": "/assets/guides/degu-legal.jpg",
     "imageAlt": "Degu sitting on a wooden ledge holding forage in its forepaws",
     "emoji": "🐹",
-    "lastReviewed": "2026-09-13",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -17938,10 +17938,10 @@
   {
     "path": "/content/guides/emperor-scorpion-legal-guide.mdx",
     "slug": "emperor-scorpion-legal-guide",
-    "title": "Are Emperor Scorpions Legal? Six States Say No or Maybe",
+    "title": "Are Emperor Scorpions Legal? Ten Places Restrict Them",
     "seoTitle": "Are Emperor Scorpions Legal? State Laws and the CITES Rule",
     "seoDescription": "Emperor scorpions are legal in most US states, but banned in NYC, Hawaii, and DC. They've been CITES Appendix II since 1995, affecting imports, not ownership.",
-    "lastUpdated": "2026-08-18",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Montana clears the emperor scorpion by name while banning every pet tarantula. Maine does the reverse. The one rule that follows this species everywhere is federal and it is about export paperwork, not possession.",
     "date": "2026-08-18",
@@ -17961,7 +17961,7 @@
     "image": "/assets/guides/emperor-scorpion-legal.jpg",
     "imageAlt": "Emperor scorpion on bark chips with its heavy granular pincers forward and tail curled over its back",
     "emoji": "🦂",
-    "lastReviewed": "2026-08-18",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [],
@@ -18291,8 +18291,8 @@
     "slug": "fennec-fox-legal-guide",
     "title": "Are Fennec Foxes Legal? The Word Fox Does Most of the Work",
     "seoTitle": "Are Fennec Foxes Legal? Where the Smallest Fox Is Banned",
-    "seoDescription": "Fennec fox legality by state: 15 outright bans, 7 permit states, 14 with no restriction. Maryland bans it with one word, fox, no exceptions.",
-    "lastUpdated": "2026-08-20",
+    "seoDescription": "Fennec fox legality by state: 18 outright bans, 12 permit states, 17 with no restriction. Maryland bans it with one word, fox, no exceptions.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "A three pound desert fox gets caught by rules written about rabies vectors and coyotes. Maryland bans it with the single word fox, and Nevada names it twice under two different genus names.",
     "date": "2026-08-20",
@@ -18312,7 +18312,7 @@
     "image": "/assets/guides/fennec-fox-legal.jpg",
     "imageAlt": "Fennec fox standing on a pale sand dune at sunset with its oversized ears backlit",
     "emoji": "🦊",
-    "lastReviewed": "2026-08-20",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [],
@@ -18746,7 +18746,7 @@
     "title": "Is It Legal to Own a Ferret? State-by-State Guide",
     "seoTitle": "Is a Ferret Legal in Your State? Full Guide",
     "seoDescription": "Where pet ferrets are actually illegal: California and Hawaii's outright bans, NYC's local ban, and the citations behind each.",
-    "lastUpdated": "2026-07-22",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Ferrets are legal pets almost everywhere in the US, with two real exceptions: California and Hawaii ban them outright, and New York City bans them locally even though the rest of New York State allows them.",
     "date": "2026-07-22",
@@ -18766,7 +18766,7 @@
     "image": "/assets/guides/ferret-legal.jpg",
     "imageAlt": "Pet ferret peeking out of a cardboard box",
     "emoji": "🦡",
-    "lastReviewed": "2026-07-22",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -20162,7 +20162,7 @@
     "title": "Is It Legal to Own a Flying Squirrel? State-by-State Guide",
     "seoTitle": "Are Flying Squirrels Legal? The Most Restricted Small Pet",
     "seoDescription": "Pet flying squirrels are clean-legal in only 9 of 52 jurisdictions. Nineteen need a permit, eighteen are bans, and Montana prohibits the species by name.",
-    "lastUpdated": "2026-09-14",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "A flying squirrel looks like a small, easy pet, but because it's native wildlife across most of the country, most states regulate it like protected wildlife instead of exotic-pet stock. Across all 52 jurisdictions only nine are a clean yes, nineteen require a permit, and eighteen are effective bans.",
     "date": "2026-08-29",
@@ -20182,7 +20182,7 @@
     "image": "/assets/guides/flying-squirrel-legal.jpg",
     "imageAlt": "Southern flying squirrel clinging to bark at night, its large dark eyes and outstretched patagium skin fold visible",
     "emoji": "🐿️",
-    "lastReviewed": "2026-09-14",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -21416,7 +21416,7 @@
     "title": "Is It Legal to Own a Garter Snake? State-by-State Guide",
     "seoTitle": "Is a Garter Snake Legal in Your State? Full Guide",
     "seoDescription": "Garter snakes are legal in most states but regulated as wildlife. New York reaches even pet-store bred snakes, and Hawaii bans them outright.",
-    "lastUpdated": "2026-10-01",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Garter snakes are native almost everywhere, so most states regulate them as wildlife first and a pet second, often more strictly than an imported colubrid. New York is the standout: state guidance says its native-species law doesn't differentiate between wild-caught and captive-bred animals, so even a pet-store garter snake needs a permit there.",
     "date": "2026-08-29",
@@ -21436,7 +21436,7 @@
     "image": "/assets/guides/garter-snake-legal.jpg",
     "imageAlt": "Common garter snake moving through grass",
     "emoji": "🐍",
-    "lastReviewed": "2026-10-01",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -21450,7 +21450,7 @@
       },
       {
         "q": "Is a garter snake illegal anywhere?",
-        "a": "Hawaii bans every species of snake outright, with no path for a garter snake at all. Georgia and Rhode Island regulate it as native wildlife with no ordinary pet-permit route, which effectively closes off casual ownership. Most other states do allow it, though often with a permit or sourcing condition attached rather than treating it like an ordinary pet-trade colubrid."
+        "a": "Hawaii bans every species of snake outright, with no path for a garter snake at all. Georgia, Rhode Island and West Virginia regulate it as native wildlife with no ordinary pet-permit route, New York reaches even captive-bred animals, and Colorado and New York City bar it as well. Most other states do allow it, though often with a permit or sourcing condition attached rather than treating it like an ordinary pet-trade colubrid."
       }
     ],
     "relatedProducts": [],
@@ -21901,7 +21901,7 @@
     "image": "/assets/guides/gerbil-legal.jpg",
     "imageAlt": "Mongolian gerbil standing upright on deep bedding",
     "emoji": "🐹",
-    "lastReviewed": "2026-09-14",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -22973,7 +22973,7 @@
     "title": "Is It Legal to Own a Giant African Millipede? State-by-State Guide",
     "seoTitle": "Are Giant African Millipedes Legal? State and Federal Rules",
     "seoDescription": "The 2006 millipede import ban is a myth. Real rules: a USDA PPQ 526 permit federally, a named permit in Florida, a ban in Hawaii, and no permit in Oregon.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "There was never a 2006 blanket import ban on giant African millipedes, despite what hobbyist forums repeat. The rule is a standing USDA import permit, plus real state variation from Florida's named permit to Oregon's outright approval.",
     "date": "2026-07-23",
@@ -22993,7 +22993,7 @@
     "image": "/assets/guides/giant-millipede-legal.jpg",
     "imageAlt": "Giant African millipede curled on bark",
     "emoji": "🐛",
-    "lastReviewed": "2026-07-23",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -24106,9 +24106,9 @@
     "title": "Are Green Anoles Legal? The Lizard That Gets Harder Where It Lives",
     "seoTitle": "Are Green Anoles Legal? The Native State Problem",
     "seoDescription": "The green anole is unregulated in 37 jurisdictions and restricted in the southeastern states where it is native. Louisiana wrote a rule for it by name.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
-    "excerpt": "In most of the country a green anole is an unregulated pet shop lizard. In the eight southeastern states it comes from, it is native wildlife with bag limits, license requirements and in Mississippi a hunting license.",
+    "excerpt": "In most of the country a green anole is an unregulated pet shop lizard. In the southeastern states it comes from, it is native wildlife with bag limits, license requirements and in Mississippi a hunting license.",
     "date": "2026-09-06",
     "category": "Legal",
     "categories": [
@@ -24126,7 +24126,7 @@
     "image": "/assets/guides/green-anole-legal.jpg",
     "imageAlt": "Green anole with extended pink dewlap perched on a leafy branch",
     "emoji": "🦎",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -24568,8 +24568,8 @@
     "slug": "green-iguana-legal-guide",
     "title": "Is It Legal to Own a Green Iguana? State-by-State Guide",
     "seoTitle": "Are Green Iguanas Legal? Florida Banned Them in 2021",
-    "seoDescription": "Green iguanas are banned in five US jurisdictions including Florida, which prohibited them in 2021. Two more need a permit, and Vermont restricts by omission.",
-    "lastUpdated": "2026-09-16",
+    "seoDescription": "Green iguanas are banned in five US jurisdictions including Florida, which prohibited them in 2021. Three more need a permit, and Vermont restricts by omission.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "The green iguana is the most restricted lizard in common keeping, and the map changed recently. Florida added it to the prohibited list in 2021, which means a great deal of older advice describing Florida as the easy state for this animal is now backwards.",
     "date": "2026-09-11",
@@ -24589,7 +24589,7 @@
     "image": "/assets/guides/green-iguana-legal.jpg",
     "imageAlt": "Adult green iguana on a branch, showing its dewlap and dorsal crest",
     "emoji": "🦎",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -25168,7 +25168,7 @@
     "image": "/assets/guides/guinea-pig-legal.jpg",
     "imageAlt": "Two guinea pigs together on a bed of timothy hay",
     "emoji": "🐹",
-    "lastReviewed": "2026-09-11",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -26201,8 +26201,8 @@
     "slug": "hamster-legal-guide",
     "title": "Are Hamsters Legal? The One State That Says No",
     "seoTitle": "Are Hamsters Legal? Where They Are Actually Banned",
-    "seoDescription": "Hamsters are legal in every US state except Hawaii. California and Rhode Island clear both Syrian and dwarf hamsters by name, then ban the gerbil next door.",
-    "lastUpdated": "2026-08-12",
+    "seoDescription": "Hamsters are legal in every US state except Hawaii, and Oregon's rule is unclear. California clears Syrian and dwarf hamsters by name, then bans the gerbil.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Exactly one state bans hamsters, and it is not the one people guess. California, which restricts more animals than anywhere else, clears both the golden hamster and the dwarfs by name, then bans the gerbil sitting in the next cage over.",
     "date": "2026-08-12",
@@ -26222,7 +26222,7 @@
     "image": "/assets/guides/hamster-legal.jpg",
     "imageAlt": "Golden Syrian hamster sitting upright on pale bedding with its front paws held together",
     "emoji": "🐹",
-    "lastReviewed": "2026-08-12",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [],
@@ -26789,7 +26789,7 @@
     "title": "Is It Legal to Own a Hedgehog? State-by-State Guide",
     "seoTitle": "Are Hedgehogs Legal in Your State? The Real Answer",
     "seoDescription": "Hedgehogs are banned in California, Georgia, Hawaii, Pennsylvania, DC, and NYC. New Jersey is the only state requiring a permit, not Maine or Wisconsin.",
-    "lastUpdated": "2026-08-11",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Six places in the US will not let you keep a hedgehog, and almost every list of them gets the reasons wrong. Pennsylvania has no law against hedgehogs at all. Hawaii never names the pet species. Maine, widely reported as a permit state, does not require one.",
     "date": "2026-08-11",
@@ -26809,7 +26809,7 @@
     "image": "/assets/guides/hedgehog-legal.jpg",
     "imageAlt": "African pygmy hedgehog walking toward the camera on a pale surface",
     "emoji": "🦔",
-    "lastReviewed": "2026-08-11",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [],
@@ -27824,7 +27824,7 @@
     "image": "/assets/guides/hognose-snake-legal.jpg",
     "imageAlt": "Hognose snake with its distinctive upturned snout",
     "emoji": "🐍",
-    "lastReviewed": "2026-10-01",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -29757,10 +29757,10 @@
     "slug": "kingsnake-legal-guide",
     "title": "Is It Legal to Own a California Kingsnake? State-by-State Guide",
     "seoTitle": "Is a California Kingsnake Legal in Your State? Full Guide",
-    "seoDescription": "California kingsnakes are legal almost everywhere, but Oregon and Nevada judge them by color pattern, Hawaii bans all snakes, and Delaware requires a permit.",
-    "lastUpdated": "2026-09-14",
+    "seoDescription": "California kingsnakes are legal almost everywhere, but Hawaii and West Virginia ban them, Delaware and New Jersey require permits, and Oregon judges by pattern.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
-    "excerpt": "California kingsnakes are legal to own almost everywhere in the US, but Oregon and Nevada both write their rules around how the snake looks rather than what species it is. Hawaii bans every snake outright, and Delaware requires a permit for any reptile not native to the state.",
+    "excerpt": "California kingsnakes are legal to own almost everywhere in the US, but Oregon and Nevada both write their rules around how the snake looks rather than what species it is. Hawaii bans every snake outright, West Virginia bans the genus as its own native wildlife, and Delaware and New Jersey require a permit.",
     "date": "2026-08-29",
     "category": "Legal",
     "categories": [
@@ -29778,7 +29778,7 @@
     "image": "/assets/guides/kingsnake-legal.jpg",
     "imageAlt": "California kingsnake coiled in its enclosure, showing its banded pattern",
     "emoji": "🐍",
-    "lastReviewed": "2026-09-14",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -29792,7 +29792,7 @@
       },
       {
         "q": "Is a kingsnake banned anywhere in the US?",
-        "a": "Yes. Hawaii bans the entire snake suborder Serpentes outright, with no pet-keeping permit available, so a California kingsnake is illegal there the same as any other snake. Delaware doesn't ban it but does require a permit, since it's a reptile not native to or generally found in the state. Those are the only two states that stand in the way anywhere in the country."
+        "a": "Yes, in two states. Hawaii bans the entire snake suborder Serpentes outright, with no pet-keeping permit available, so a California kingsnake is illegal there the same as any other snake. West Virginia bans it too, because its reptile rule bars possessing any native species it does not list and the genus is native there. Delaware and New Jersey don't ban it but require a permit, Utah caps wild-caught animals at four, and Minnesota and Colorado attach conditions. Those states, with Oregon's pattern test, are the only ones that stand in the way anywhere in the country."
       }
     ],
     "relatedProducts": [],
@@ -31278,7 +31278,7 @@
     "image": "/assets/guides/leopard-gecko-legal.jpg",
     "imageAlt": "Leopard gecko standing on sand-colored substrate, showing its spotted pattern",
     "emoji": "🦎",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -32992,9 +32992,9 @@
     "title": "Is It Legal to Own a Milk Snake? State-by-State Guide",
     "seoTitle": "Is a Milk Snake Legal in Your State? Full Guide",
     "seoDescription": "Milk snake legality: banned in Georgia, purchase-restricted in Wisconsin, capped at 1 in Pennsylvania, plus rules in Utah, South Carolina and New Jersey.",
-    "lastUpdated": "2026-10-01",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
-    "excerpt": "Milk snakes are a common pet-trade species with one of the more tangled legal pictures out there: Georgia bans them outright as a native species, and Wisconsin restricts even buying a captive-bred one. Pennsylvania caps possession in a way that reads as reaching purchased pets, and Utah, which looks like it does the same, turns out not to.",
+    "excerpt": "Milk snakes are a common pet-trade species with one of the more tangled legal pictures out there: Georgia bans them outright as a native species, and Wisconsin restricts even buying a captive-bred one. Pennsylvania caps possession at one and bars importing the native species, and Utah, which looks like it caps purchased pets too, turns out not to.",
     "date": "2026-08-29",
     "category": "Legal",
     "categories": [
@@ -33012,7 +33012,7 @@
     "image": "/assets/guides/milk-snake-legal.jpg",
     "imageAlt": "Milk snake showing its red, black, and white banded pattern",
     "emoji": "🐍",
-    "lastReviewed": "2026-10-01",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -33025,8 +33025,8 @@
         "a": "It's restricted. Wisconsin's rule states that \"the purchase of native amphibians and reptiles is prohibited except as provided in specified exceptions,\" and because milk snake is Wisconsin native, that includes captive-bred animals, not just wild-caught ones. Wild possession is separately capped at 5 individuals. From 1 January 2027 that cap ends: only captive-bred color variants may be acquired, and a wild-type milk snake already held must be registered with the DNR by 30 June 2027."
       },
       {
-        "q": "Does Pennsylvania require a permit for a captive-bred milk snake?",
-        "a": "Yes, and this one catches people off guard. 58 Pa. Code § 79.4 requires a permit for continued possession \"regardless of the animal's origin,\" and milk snake falls under Pennsylvania's catch-all native-species possession limit of 1, since it isn't specifically tabled elsewhere in Chapter 79."
+        "q": "Can I keep a captive-bred milk snake in Pennsylvania?",
+        "a": "With limits. Milk snake falls under Pennsylvania's catch-all native-species possession limit of 1, since it isn't specifically tabled elsewhere in Chapter 79. 58 Pa. Code § 79.4 is not a standing permit: it was a one-time grandfather permit for animals held on 1 January 2007, and its window closed on 30 June 2007. What binds a milk snake now is § 79.10(a), which makes importing a native species from another jurisdiction unlawful, and § 79.9, which bars selling or buying a Pennsylvania reptile and its progeny. Designated color morphs are exempt under § 79.12."
       }
     ],
     "relatedProducts": [],
@@ -34965,10 +34965,10 @@
     "slug": "nile-monitor-legal-guide",
     "title": "Is It Legal to Own a Nile Monitor? State-by-State Guide",
     "seoTitle": "Are Nile Monitors Legal? Banned in 9 of 52 Places",
-    "seoDescription": "Nile monitors are banned in 9 of 52 US jurisdictions and need a permit in 7 more. Florida, Louisiana and New York name the species directly in their rules.",
-    "lastUpdated": "2026-09-16",
+    "seoDescription": "Nile monitors are banned in 9 of 52 US jurisdictions and need a permit in 8 more. Florida, Louisiana and New York name the species directly in their rules.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
-    "excerpt": "The Nile monitor is the only monitor named on Florida's prohibited list, and one of very few reptiles that several states bar by name rather than by family. Nine jurisdictions ban it and seven more require a permit.",
+    "excerpt": "The Nile monitor is the only monitor named on Florida's prohibited list, and one of very few reptiles that several states bar by name rather than by family. Nine jurisdictions ban it and eight more require a permit.",
     "date": "2026-09-14",
     "category": "Legal",
     "categories": [
@@ -34986,13 +34986,13 @@
     "image": "/assets/guides/nile-monitor-legal.jpg",
     "imageAlt": "Nile monitor at the water's edge with its tongue extended",
     "emoji": "🦎",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "Which states ban the Nile monitor?",
-        "a": "Nine jurisdictions: Florida, Louisiana, New York, New York City, Georgia, Connecticut, New Mexico, Hawaii and the District of Columbia. Seven more require a permit, including Rhode Island, Maine, Arkansas, Vermont, Delaware, Massachusetts and New Jersey."
+        "a": "Nine jurisdictions: Florida, Louisiana, New York, New York City, Georgia, Connecticut, New Mexico, Hawaii and the District of Columbia. Eight more require a permit: Rhode Island, Maine, Arkansas, Vermont, Delaware, Massachusetts, New Jersey and West Virginia."
       },
       {
         "q": "Why does Florida ban the Nile monitor but not other monitors?",
@@ -37282,7 +37282,7 @@
     "image": "/assets/guides/prairie-dog-legal.jpg",
     "imageAlt": "Black-tailed prairie dog standing upright at a burrow entrance on short-grass prairie",
     "emoji": "🐾",
-    "lastReviewed": "2026-09-11",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -38151,7 +38151,7 @@
     "image": "/assets/guides/quaker-parakeet-legal.jpg",
     "imageAlt": "Green and gray quaker parakeet perched on a branch with a stick nest structure behind it",
     "emoji": "🦜",
-    "lastReviewed": "2026-10-01",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -38742,7 +38742,7 @@
     "image": "/assets/guides/rabbit-legal.jpg",
     "imageAlt": "Rabbit sitting alert indoors with its ears raised",
     "emoji": "🐰",
-    "lastReviewed": "2026-09-14",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -39653,7 +39653,7 @@
     "title": "Is It Legal to Own a Red-Eared Slider? State-by-State Guide",
     "seoTitle": "Is a Red-Eared Slider Legal in Your State? Full Guide",
     "seoDescription": "No federal ban on owning a red-eared slider, only a 1975 rule against selling ones under 4 inches. Colorado owners had to file by July 30, 2026.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "There's no federal ban on owning a red-eared slider, only a 1975 rule against selling tiny ones. The restrictions come from state invasive-species laws, and Colorado added a big one in 2026 whose filing deadline has now passed.",
     "date": "2026-07-22",
@@ -39673,7 +39673,7 @@
     "image": "/assets/guides/red-eared-slider-legal.jpg",
     "imageAlt": "Red-eared slider turtle basking on a rock",
     "emoji": "🐢",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -40171,8 +40171,8 @@
     "slug": "red-footed-tortoise-legal-guide",
     "title": "Is It Legal to Own a Red-Footed Tortoise? State Guide",
     "seoTitle": "Are Red-Footed Tortoises Legal? No State Bans Them",
-    "seoDescription": "Red-footed tortoises are banned nowhere in the US. Three jurisdictions need a permit, five attach conditions, and New York City draws its line by shell size.",
-    "lastUpdated": "2026-09-16",
+    "seoDescription": "Red-footed tortoises are banned nowhere in the US. Four jurisdictions need a permit, five attach conditions, and New York City draws its line by shell size.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "No US jurisdiction bans the red-footed tortoise outright, which makes it unusual among the reptiles on this map. What it gets instead is conditions, and the most consequential one is a rule about shell size that has nothing to do with the species.",
     "date": "2026-09-11",
@@ -40192,7 +40192,7 @@
     "image": "/assets/guides/red-footed-tortoise-legal.jpg",
     "imageAlt": "Red-footed tortoise walking on a damp forest floor, red leg scales visible",
     "emoji": "🐢",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -41188,9 +41188,9 @@
     "title": "Is It Legal to Own a Rosy Boa? State-by-State Guide",
     "seoTitle": "Is a Rosy Boa Legal in Your State? Full Guide",
     "seoDescription": "NYC's Boidae ban technically outlaws the 2-3 foot rosy boa on the same clause as the green anaconda. New Jersey needs a permit, Hawaii bans it.",
-    "lastUpdated": "2026-09-15",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
-    "excerpt": "New York City's health code bans 'any member of the family Boidae' by name, and a rosy boa, a docile species of 24 to 36 inches, is technically a boid. It reads as banned in NYC on the exact same clause that catches the green anaconda. Everywhere else, it's one of the most broadly legal pet snakes around, with narrow exceptions in New Jersey and Hawaii.",
+    "excerpt": "New York City's health code bans 'any member of the family Boidae' by name, and a rosy boa, a docile species of 24 to 36 inches, is technically a boid. It reads as banned in NYC on the exact same clause that catches the green anaconda. Everywhere else, it's one of the most broadly legal pet snakes around, with narrow exceptions in New Jersey, Colorado and Hawaii.",
     "date": "2026-08-29",
     "category": "Legal",
     "categories": [
@@ -41208,7 +41208,7 @@
     "image": "/assets/guides/rosy-boa-legal.jpg",
     "imageAlt": "Rosy boa coiled on sand in its enclosure",
     "emoji": "🐍",
-    "lastReviewed": "2026-09-15",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -41648,8 +41648,8 @@
     "slug": "russian-tortoise-legal-guide",
     "title": "Are Russian Tortoises Legal? State-by-State Guide",
     "seoTitle": "Are Russian Tortoises Legal? The Rule People Get Backwards",
-    "seoDescription": "Colorado is the one state that bans the Russian tortoise. Four more require a permit, Hawaii allows it, and the federal 4-inch rule restricts selling.",
-    "lastUpdated": "2026-09-16",
+    "seoDescription": "Colorado is the one state that bans the Russian tortoise. Five more require a permit, Hawaii allows it, and the federal 4-inch rule restricts selling.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "One state bans the Russian tortoise and it is not the one you would guess. The rule that shapes the hobby is federal, it is about size rather than species, and it restricts selling rather than owning. Hawaii, of all places, allows the entire genus.",
     "date": "2026-08-12",
@@ -41669,7 +41669,7 @@
     "image": "/assets/guides/russian-tortoise-legal.jpg",
     "imageAlt": "Russian tortoise walking across dry ground with its head raised",
     "emoji": "🐢",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [],
@@ -42113,7 +42113,7 @@
     "title": "Are Savannah Monitors Legal? Louisiana Is the Surprise",
     "seoTitle": "Are Savannah Monitors Legal? Bans, Permits and Arkansas",
     "seoDescription": "Savannah monitor legality: legal in 40 of 52 jurisdictions, banned by name in Louisiana, and Arkansas clears 10 monitors while leaving this one out.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Forty jurisdictions have nothing to say about savannah monitors. Louisiana bans this species by name while leaving most monitors alone, and Arkansas clears ten monitors without including it.",
     "date": "2026-08-19",
@@ -42133,7 +42133,7 @@
     "image": "/assets/guides/savannah-monitor-legal.jpg",
     "imageAlt": "Savannah monitor on sand in close profile, its blunt snout, heavy neck and yellow-speckled gray scales clearly visible",
     "emoji": "🦎",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [],
@@ -42404,7 +42404,7 @@
     "title": "Are Servals Legal? The Most Restricted Pet in America",
     "seoTitle": "Are Servals Legal? Banned in 17 of 52 Jurisdictions",
     "seoDescription": "Serval legality: 17 of 52 jurisdictions ban it outright, Ohio bans the cat but legalizes its savannah cat hybrid, and Texas requires $100,000 insurance.",
-    "lastUpdated": "2026-08-19",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Thirty-five of the 52 jurisdictions restrict the serval, seventeen of them outright. Ohio bans the cat and expressly legalizes its hybrid, and Montana clears it by name.",
     "date": "2026-08-19",
@@ -42425,7 +42425,7 @@
     "image": "/assets/guides/serval-legal.jpg",
     "imageAlt": "Serval walking through tall golden savanna grass, its spotted flank and long legs lit by low sun",
     "emoji": "🐆",
-    "lastReviewed": "2026-08-19",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [],
@@ -43193,10 +43193,10 @@
     "slug": "snapping-turtle-legal-guide",
     "title": "Are Snapping Turtles Legal? Seasons, Creel Limits and Bans",
     "seoTitle": "Are Snapping Turtles Legal? Seasons and Bag Limits",
-    "seoDescription": "Thirteen states allow snapping turtles with a season or a limit, seven ban them, and the answer usually sits in the fishing rules, not the pet rules.",
-    "lastUpdated": "2026-10-01",
+    "seoDescription": "Fourteen states allow snapping turtles with a season or a limit, seven ban them, and the answer usually sits in the fishing rules, not the pet rules.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
-    "excerpt": "The snapping turtle is the one native reptile a dozen states still let you take, and they answer it in the fishing regulations rather than the pet ones. Thirteen jurisdictions attach a season or a limit. Seven ban it outright.",
+    "excerpt": "The snapping turtle is the one native reptile a dozen states still let you take, and they answer it in the fishing regulations rather than the pet ones. Fourteen jurisdictions attach a season or a limit. Seven ban it outright.",
     "date": "2026-09-06",
     "category": "Legal",
     "categories": [
@@ -43214,13 +43214,13 @@
     "image": "/assets/guides/snapping-turtle-legal.jpg",
     "imageAlt": "Common snapping turtle at the muddy edge of a pond with its head raised",
     "emoji": "🐢",
-    "lastReviewed": "2026-10-01",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "Is it legal to keep a snapping turtle you found?",
-        "a": "It depends on the state and it is not the same question as whether you may own one. Thirteen jurisdictions set a season, a bag limit or both for taking one from the wild, usually under a fishing license: New York runs 15 July to 30 September with a twelve-inch minimum, Michigan 15 July to 15 September at two a day, Illinois 15 June to 15 October at two a day. Seven jurisdictions ban possession entirely."
+        "a": "It depends on the state and it is not the same question as whether you may own one. Fourteen jurisdictions set a season, a bag limit or both for taking one from the wild, usually under a fishing license: New York runs 15 July to 30 September with a twelve-inch minimum, Michigan 15 July to 15 September at two a day, Illinois 15 June to 15 October at two a day. Seven jurisdictions ban possession entirely."
       },
       {
         "q": "Why is a snapping turtle in the fishing regulations?",
@@ -43232,7 +43232,7 @@
       },
       {
         "q": "Which states ban snapping turtles outright?",
-        "a": "Seven: California, Nevada, Oregon, Colorado, Rhode Island, Hawaii and New York City. Arizona, Iowa and Louisiana restrict them, six require a permit, and thirteen allow them with a season or a limit attached."
+        "a": "Seven: California, Nevada, Oregon, Colorado, Rhode Island, Hawaii and New York City. Arizona, Iowa and Louisiana restrict them, seven require a permit, and fourteen allow them with a season or a limit attached."
       }
     ],
     "relatedProducts": [],
@@ -44150,10 +44150,10 @@
     "slug": "sugar-glider-legal-guide",
     "title": "Is It Legal to Own a Sugar Glider? State-by-State Guide",
     "seoTitle": "Is a Sugar Glider Legal in Your State? Full Guide",
-    "seoDescription": "Sugar glider legality: banned in California, Alaska, and Hawaii, effectively illegal in Pennsylvania, but legal (despite rumors) in Georgia and Wyoming.",
-    "lastUpdated": "2026-07-22",
+    "seoDescription": "Sugar glider legality: banned in California, Alaska, Hawaii, Pennsylvania, DC and NYC, but legal (despite rumors) in Georgia and Wyoming.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
-    "excerpt": "Sugar gliders are illegal in California, Alaska, and Hawaii, and essentially unobtainable in Pennsylvania. Everywhere else they're generally legal, despite what several popular blog posts claim about Georgia, Massachusetts, and Wyoming.",
+    "excerpt": "Sugar gliders are banned in California, Alaska, Hawaii and Pennsylvania, plus the District of Columbia and New York City. Everywhere else they're generally legal, despite what several popular blog posts claim about Georgia, Massachusetts, and Wyoming.",
     "date": "2026-07-22",
     "category": "Legal",
     "categories": [
@@ -44171,7 +44171,7 @@
     "image": "/assets/guides/sugar-glider-legal.jpg",
     "imageAlt": "Sugar glider held gently in cupped hands",
     "emoji": "🐿️",
-    "lastReviewed": "2026-07-22",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -44185,7 +44185,7 @@
       },
       {
         "q": "Can I get a permit to own a sugar glider in Pennsylvania?",
-        "a": "Technically yes, but in practice almost never. Pennsylvania's Game Commission can issue possession permits, but they're rarely granted for pet sugar gliders. Bills to legalize ownership outright have been introduced repeatedly since 2017, and none of them had cleared committee when this guide was last reviewed in July 2026."
+        "a": "No. The Game Commission reads the statute's list of banned animals as reaching a marsupial that resembles none of them, so possession is barred and there is no pet permit path. Bills to legalize ownership have been introduced repeatedly since 2017, and none had cleared committee as of September 2026."
       }
     ],
     "relatedProducts": [],
@@ -44687,7 +44687,7 @@
     "title": "Is It Legal to Own a Sulcata Tortoise? State-by-State Guide",
     "seoTitle": "Is a Sulcata Tortoise Legal in Your State? Full Guide",
     "seoDescription": "No US state bans sulcata tortoises, import has been banned since 2000. One Arizona sanctuary alone takes in 1,250 surrendered 200 lb tortoises a year.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "No US state bans owning a sulcata tortoise. The legal fact is a federal import ban dating to 2000, and the practical problem is that these tortoises grow to about 200 pounds and overwhelm rescues nationwide.",
     "date": "2026-07-23",
@@ -44707,7 +44707,7 @@
     "image": "/assets/guides/sulcata-tortoise-legal.jpg",
     "imageAlt": "Sulcata tortoise grazing outdoors",
     "emoji": "🐢",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -45708,7 +45708,7 @@
     "image": "/assets/guides/tarantula-legal.jpg",
     "imageAlt": "Tarantula on coconut fiber substrate in a glass terrarium, cork bark behind it",
     "emoji": "🕷️",
-    "lastReviewed": "2026-08-18",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [],
@@ -46432,7 +46432,7 @@
     "title": "Is It Legal to Own a Tiger Salamander? Three Separate Rules Explained",
     "seoTitle": "Are Tiger Salamanders Legal? Federal and State Rules",
     "seoDescription": "A 2025 federal rule restricts importing tiger salamanders, not owning one. Bait-trade rules are separate again, and New Jersey bars keeping one at all.",
-    "lastUpdated": "2026-10-01",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "A 2025 federal rule added tiger salamanders to an injurious wildlife list, and headlines made that sound like a ban. It isn't one. The species sits under three separate, unrelated legal regimes, and only one of them has anything to do with owning a pet.",
     "date": "2026-07-18",
@@ -46452,7 +46452,7 @@
     "image": "/assets/guides/tiger-salamander-legal.jpg",
     "imageAlt": "Tiger salamander with yellow and black blotched pattern, representing its legal status",
     "emoji": "🦎",
-    "lastReviewed": "2026-10-01",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -46478,7 +46478,7 @@
       },
       {
         "q": "So is it legal to own a pet tiger salamander?",
-        "a": "In the vast majority of the country, yes. The federal listing, the bait-trade rules, and native-species protections are three separate things, and none of them amount to a general pet-ownership ban. Always check your own state's exotic-pet rules directly, since this guide covers the federal and cross-state pattern, not every state's individual statute."
+        "a": "In most of the country, yes, though twelve jurisdictions ban it and several more attach conditions. The federal listing, the bait-trade rules, and native-species protections are three separate things, and none of them amount to a general pet-ownership ban. Always check your own state's exotic-pet rules directly, since this guide covers the federal and cross-state pattern, not every state's individual statute."
       }
     ],
     "relatedProducts": [],
@@ -47005,7 +47005,7 @@
     "image": "/assets/guides/tokay-gecko-legal.jpg",
     "imageAlt": "Tokay gecko clinging head-down to a tree trunk, showing its orange-spotted blue skin",
     "emoji": "🦎",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -48457,7 +48457,7 @@
     "title": "Are Veiled Chameleons Legal? State-by-State Guide",
     "seoTitle": "Are Veiled Chameleons Legal? Where They Are Banned",
     "seoDescription": "Where veiled chameleons are actually illegal: Hawaii's default ban, Washington DC's lizard ban, and New Jersey's permit rule.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Two places will not let you keep a veiled chameleon, and neither one banned the species. Washington DC left every lizard off a list of seven allowed pets. Hawaii bars anything it has not approved, and the veiled chameleon is already loose on two islands.",
     "date": "2026-08-13",
@@ -48477,7 +48477,7 @@
     "image": "/assets/guides/veiled-chameleon-legal.jpg",
     "imageAlt": "Veiled chameleon gripping a branch with its casque and striped flank visible",
     "emoji": "🦎",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [],
