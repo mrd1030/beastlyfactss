@@ -165,3 +165,68 @@ A single long prompt from Android. Claude ran 3 Opus agents, fixed items 1-26, a
 ### Partial notes on sessions not fully read
 - session_01LTtqtxid4fXrNFvyypjQW2 (wave 1): "Push it too", then "Are all the results noted somewhere?" / "I ment this". The summary was then saved into FIX_PLAN.md.
 - session_01HbsV42Nkf1K7UdSpvj4jCQ (AdSense review): "My rules forbid it becoming a linking library, not for links to go to sibling articles. That's your made up rule". Claude also had to fix a lastUpdated date from the UTC day to the Eastern day.
+
+## Batch E (sessions 25-30)
+
+### session_01DuALg3RVTrjdq5PtMRGRu2: Animals hub sayings audit (09-18)
+- The user interrupted Claude's fact-checking with "Ok not so popular your bubble... I dont want it to be 'omg information...' I want something witty and nice."
+- "Ok please merge to origin". Claude's merge ritual:
+  - `git status`.
+  - fetch, then a behind check.
+  - `git diff --stat origin/main..branch`.
+  - `merge --ff-only`, then push.
+  - `git log -1 && git status -sb`.
+  - A note on whether [CI Skip] is set.
+- Routine: `git status --short && git branch --show-current` at the start. After edits, a dash grep and check-voice.
+
+### session_01Cdweo1mMJhpowry95AkvEA: Next quiz creation failure (09-17)
+- The quiz Routine had been stuck since Sep 14 on a Bash permission prompt (`git config credential.helper`).
+- "I want it built now and the routine fixed. Fix the social feed too".
+- "Apply it. And make sure the quiz page is upside, and the quiz preview on the homepage is updated..."
+- "Please add a view all quizzes button to the homepage quizzes spot, then merge"
+- Commands:
+  - `TZ=America/New_York date` (twice).
+  - A dash scan.
+  - eslint plus `tsc -p ./jsconfig.json`.
+  - vite plus Playwright screenshots.
+  - fetch, pull, merge, push.
+
+### session_01R6ibaMZzsE6yLNPZ5dhyBr: Birdwatching guide improvements (09-17; about 380 Bash calls; the most corrections of any session)
+- Corrections:
+  - "You better check the fact photo amount... Don't skim the rules"
+  - "Make sure you're using the correct photo, i sent 2. Do not cropt without looking..."
+  - "FACT IMAGES DO NOT NEED TO BE CROPPED LIKE THE ENRICHMENT HERO IMAGES"
+  - "...the .md files in completed should not be in there like that... How do I know anything is going correctly if this is in the wrong section"
+  - "Make sure you don't make it like we are advertising the sources either"
+  - "For sources, this is a guide, not a review for another site. Act like it..."
+- Chained asks: "Merge. Then check the wild animal articles for the internal links check, source check and if it's a link library too".
+- Deploy checked by hand:
+  - The user pasted the Cloudflare log: "tell me why the build stalls here and then fails after times out 30+ minutes".
+  - "I already redeployed twice and same thing at same place".
+  - "Build is still running, no stalling yet" / "It passed".
+- Claude quoted UTC log times bare, which breaks the CLAUDE.md time rule.
+- The stop hook forced a commit of regenerated JSON.
+- Commands: check-voice about 19 times, sync-articles 5, git log 12, git status 9.
+
+### session_016jAinjBWzo3aYHthhEeVeS: Legal audit KS/WV/VA (09-16)
+- Kickoff template: "Read CLAUDE.md, docs/RULES.md, the _readme block... Work on a new branch from main named claude/legal-audit-ks-wv-va. Never push main; stop and wait for me to say merge. No agents."
+- Before merging, Claude ran 6 checks but not check-hub-figures. The Cloudflare build failed, and the user pasted the raw log with no comment.
+- Claude then ran `npm run build`. "Never fucking run the full build without me saying. Fucking merge it now"
+
+### session_0194d4YstoNU1mqkwCMWVAS2: Price-check line for cost guides (09-16)
+- The same kickoff template ("Read CLAUDE.md... Never push main; stop and wait for me to say merge. No agents.").
+- The prompt was written in another session: "Give me prompt for 1 and 2 so I can either use sonnet or opus a d save you for stronger items".
+- "Please tell me you just did price check date, and did not add where the price was checked?" The user then asked a different session to verify the branch.
+- The same 4 checks ran 5 times, once per class: check-voice --strict, check-seo-tags, check-hub-figures, check-cost-coverage.
+- Claude used em dashes in its chat replies.
+
+### Patterns from batch E
+1. "Merge" or "...then merge" shows up in every session, usually chained to the next task.
+2. A copy-paste kickoff template ("Read CLAUDE.md... new branch... Never push main... No agents").
+3. Things the user checks by hand: Cloudflare build status (logs pasted, "It passed"), another session's work, and whether the rules were followed.
+4. check-hub-figures gets skipped inconsistently, and that broke two deploys (09-16 and 09-28).
+5. Running `npm run build` without permission.
+6. Bare UTC times.
+
+### Not read
+- session_01SUBeLZYvKKuzsCroj3f7uH (Hub router review mistakes, 09-16): only read from 09:14 UTC on.
