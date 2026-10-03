@@ -88,7 +88,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$12–$20",
     description: "Ceramic-topped lamp fixture that safely holds a basking or heat bulb over the enclosure.",
-    covers: ["Basking bulb + fixture", "Basking heat lamp", "Ceramic dome fixture for the basking bulb"],
+    covers: ["Basking bulb + fixture", "Basking heat lamp", "Ceramic dome fixture for the basking bulb", "Dome fixture for the heat bulb"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -184,7 +184,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$12–$28",
     description: "Hideout that gives pets a secure place to shelter, reduce stress, and rest.",
-    covers: ["Cork bark hide", "Cork bark hides", "Cork bark hide(s)", "Cork bark for hiding structures", "Warm, cool, and humid hides", "Multiple hides and enrichment items", "Cork bark tubes and branches", "Cork bark and dense planting", "Flat cork bark and rock hides", "Cork bark and PVC pipe hides", "Cork bark and rock structures", "A basic hide", "Two cork bark hides, one per temperature zone", "Cork bark hide for the cool end, and a basking platform"],
+    covers: ["Cork bark hide", "Cork bark hides", "Cork bark hide(s)", "Cork bark for hiding structures", "Warm, cool, and humid hides", "Multiple hides and enrichment items", "Cork bark tubes and branches", "Cork bark tubes", "Cork bark and dense planting", "Flat cork bark and rock hides", "Cork bark and PVC pipe hides", "Cork bark and rock structures", "A basic hide", "Two cork bark hides, one per temperature zone", "Cork bark hide for the cool end, and a basking platform"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1651,7 +1651,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.2,
     price: "$23–$33",
     description: "Thermostat that automatically adjusts heat output to hold a steadier basking temperature.",
-    covers: ["Under-tank heater with quality thermostat", "Dimming thermostat, for the basking bulb"],
+    covers: ["Under-tank heater with quality thermostat", "Dimming thermostat, for the basking bulb", "Dimming thermostat for the heat bulb"],
     altGroup: "reptile-heat-mat-thermostat",
     pets: ["reptiles-amphibians"],
   },
@@ -2480,7 +2480,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$25–$37",
     description: "Coconut-fiber substrate that holds moisture well for tropical reptiles, invertebrates, and plant roots.",
-    covers: ["Coconut coir, or coir and sphagnum moss", "Coco fiber, peat, or a soil-based mix, enough for 5 to 6 inches and deeper if you can", "Coconut fiber, or a coconut fiber and sphagnum moss blend", "Coconut fiber, cypress mulch, or leaf litter", "Coconut fiber or naturalistic soil blend for the land portion", "Coconut fiber, peat moss or orchid bark substrate", "Coconut fiber, cypress mulch, or reptile-specific soil substrate", "Coco fiber or coco husk substrate, enough for 3 to 4 inches", "Moisture-retentive substrate", "Coconut coir, peat moss or plain paper towel for substrate", "Coconut fiber, commercial reptile soil, fertilizer-free topsoil, or cypress mulch, enough for 3 to 4 inches and deeper if the enclosure allows", "Coconut fiber, bioactive soil mix, or paper towel", "Coconut fiber or bioactive substrate, enough for 2 to 3 inches", "Coconut fiber, soil, bark or paper towel substrate", "Coconut fiber, cypress mulch, or a peat-based substrate", "Coconut fiber substrate, about 6 inches deep (8 to 9 bags)"], // the plain coconut-fiber half of hermit crab's 5:1 sand/coco mix - the already-linked Fluker's product is the premixed blend, browsable only
+    covers: ["Coconut coir, or coir and sphagnum moss", "Coconut fiber substrate, at least 2 inches deep", "Coco fiber, peat, or a soil-based mix, enough for 5 to 6 inches and deeper if you can", "Coconut fiber, or a coconut fiber and sphagnum moss blend", "Coconut fiber, cypress mulch, or leaf litter", "Coconut fiber or naturalistic soil blend for the land portion", "Coconut fiber, peat moss or orchid bark substrate", "Coconut fiber, cypress mulch, or reptile-specific soil substrate", "Coco fiber or coco husk substrate, enough for 3 to 4 inches", "Moisture-retentive substrate", "Coconut coir, peat moss or plain paper towel for substrate", "Coconut fiber, commercial reptile soil, fertilizer-free topsoil, or cypress mulch, enough for 3 to 4 inches and deeper if the enclosure allows", "Coconut fiber, bioactive soil mix, or paper towel", "Coconut fiber or bioactive substrate, enough for 2 to 3 inches", "Coconut fiber, soil, bark or paper towel substrate", "Coconut fiber, cypress mulch, or a peat-based substrate", "Coconut fiber substrate, about 6 inches deep (8 to 9 bags)"], // the plain coconut-fiber half of hermit crab's 5:1 sand/coco mix - the already-linked Fluker's product is the premixed blend, browsable only
     altGroup: "hermit-crab-substrate",
     pets: ["reptiles-amphibians"],
   },
@@ -3634,7 +3634,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0002DIWYQ?tag=beastlyfacts-20",
     description: "Low wattage basking bulb for small arboreal and amphibian enclosures, where a 50W bulb overshoots the safe temperature. Run it on a thermostat.",
-    covers: ["Low-wattage bulb or side-mounted heat mat", "Low-wattage heat bulb and fixture, on a thermostat", "Low-wattage basking bulb or ceramic heat emitter"],
+    covers: ["Low-wattage bulb or side-mounted heat mat", "Low-wattage heat bulb and fixture, on a thermostat", "Low-wattage basking bulb or ceramic heat emitter", "Low-wattage heat bulb, 25 to 40 W"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -3794,7 +3794,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B000UJPHL8?tag=beastlyfacts-20",
     description: "Plain phosphorus free calcium with no D3, for most feedings and an always available dish. D3 then comes from UVB or a separate supplement on a schedule.",
-    covers: ["Reptile calcium powder", "Plain calcium without D3 or phosphorus"],
+    covers: ["Reptile calcium powder", "Plain calcium without D3 or phosphorus", "Plain calcium for dusting insects"],
     pets: ["reptiles-amphibians", "small-mammals"],
   },
   {

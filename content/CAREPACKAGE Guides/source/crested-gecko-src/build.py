@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assemble the Crested Gecko care package, edition 3.0 (Correlophus ciliatus).
+"""Assemble the Crested Gecko care package, edition 3.1 (Correlophus ciliatus).
 
 Content files carry <!--PAGE key--> markers. Page numbers are assigned in
 document order, {{P:key}} tokens are resolved to those numbers, the TOC is
@@ -23,7 +23,7 @@ SRC = os.path.normpath(os.path.join(HERE, "..", "crested-gecko.html"))
 # file the 2.1 HTML carried (md5 713cfbd37439b065abcc47f87da83faa).
 COVER = os.path.normpath(os.path.join(HERE, "..", "..", "images", "crested-gecko-cover-2.jpg"))
 
-EDITION = "3.0"
+EDITION = "3.1"
 
 # TOC: (section label, [(key, title), ...])
 SECTIONS = [
@@ -77,7 +77,8 @@ SECTIONS = [
         ("emergency", "Emergency &amp; Quick Targets Card"),
     ]),
     ("Section 09 &middot; Owner Tools", [
-        ("budget", "Budget &amp; Shopping List"),
+        ("budget", "Budget: Setup &amp; Shopping List"),
+        ("budget2", "Budget: Monthly Costs"),
         ("first30", "First 30 Days"),
         ("symptoms", "Symptom Quick Reference"),
         ("routine", "Daily, Weekly &amp; Seasonal Routine"),
