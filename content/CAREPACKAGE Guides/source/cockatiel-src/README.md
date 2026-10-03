@@ -49,8 +49,9 @@ Things worth knowing before editing:
   Section 05 and renumber the section labels.
 - **Every figure comes from the site.** The cockatiel guides in `content/guides/cockatiel-*.mdx`
   and the shared bird guides own the numbers; prices come only from the cost guide, and every total
-  equals its own rows (setup $295 to $601 with the bird included; $200 to $350 a year, about $17 to
-  $29 a month; vet exams unpriced on the site and so unpriced here). Where the site disagrees with
+  equals its own rows: every item priced and rounded to the nearest $5 (setup $390 to $790 with the
+  bird included; $180 to $360 a year, $15 to $30 a month; vet exams unpriced on the site and so
+  unpriced here). The budget runs over two pages (`budget` and `budget2`). Where the site disagrees with
   itself, the topic's own guide wins. The site was corrected first on 2026-10-03; re-check these
   pages if the guides change.
 - **Abbreviations are spelled out at first use in reading order** (units on the how-to page, UV and

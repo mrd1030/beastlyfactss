@@ -1194,7 +1194,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$180–$240",
     description: "Spacious bird cage that leaves room for short flights, toys, and multiple perches.",
-    covers: ["18x18x18 inch cage or larger, wider rather than taller", "18x18x24 inch cage minimum, 24x18x24 for a pair"],
+    covers: ["18x18x18 inch cage or larger, wider rather than taller", "18x18x24 inch cage minimum, 24x18x24 for a pair", "Flight cage at least 20x20x30 inches, bars half an inch or less apart"],
     altGroup: "bird-flight-cage",
     pets: ["birds"],
   },
