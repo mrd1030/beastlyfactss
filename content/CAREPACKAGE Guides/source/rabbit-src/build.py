@@ -86,7 +86,7 @@ SECTIONS = [
         ("travel", "Leaving Town, Transport &amp; Moving"),
         ("sitter", "Pet-Sitter Sheet"),
         ("ownerlog", "Owner Log"),
-        ("equiplog", "Equipment, Vet &amp; Bonding Log"),
+        ("equiplog", "Care, Vet &amp; Bonding Log"),
         ("enrichlog", "Enrichment Checklist &amp; Log"),
     ]),
     ("Reference", [
