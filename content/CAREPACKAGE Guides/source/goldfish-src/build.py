@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assemble the Goldfish care package, edition 3.0 (Carassius auratus).
+"""Assemble the Goldfish care package, edition 3.1 (Carassius auratus).
 
 Content files carry <!--PAGE key--> markers. Page numbers are assigned in
 document order, {{P:key}} tokens are resolved to those numbers, the TOC is
@@ -22,7 +22,7 @@ SRC = os.path.normpath(os.path.join(HERE, "..", "goldfish.html"))
 # only, never resized or re-encoded (md5 c265215866a95efd980d006aee4aad2f).
 COVER = os.path.normpath(os.path.join(HERE, "..", "..", "images", "goldfish-cover-4.jpg"))
 
-EDITION = "3.0"
+EDITION = "3.1"
 
 # TOC: (section label, [(key, title), ...])
 SECTIONS = [
@@ -77,7 +77,8 @@ SECTIONS = [
         ("emergency", "Emergency &amp; Quick Targets Card"),
     ]),
     ("Section 09 &middot; Owner Tools", [
-        ("budget", "Budget &amp; Shopping List"),
+        ("budget", "Budget: Setup Costs"),
+        ("budget2", "Budget: Running Costs &amp; Shopping List"),
         ("first30", "First 30 Days"),
         ("symptoms", "Symptom Quick Reference"),
         ("routine", "Daily, Weekly &amp; Seasonal Routine"),

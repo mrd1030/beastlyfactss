@@ -3,8 +3,8 @@
 `../goldfish.html` is generated. Edit the fragments here, never that file, then:
 
     python build.py                                                  # assemble the source
-    node ../_render.mjs goldfish "Goldfish" 3.0 --measure            # overflow check
-    node ../_render.mjs goldfish "Goldfish" 3.0                      # render the PDF
+    node ../_render.mjs goldfish "Goldfish" 3.1 --measure            # overflow check
+    node ../_render.mjs goldfish "Goldfish" 3.1                      # render the PDF
 
 On Windows, set `CHROME_BIN` to Chrome first
 (`CHROME_BIN="C:/Program Files/Google/Chrome/Application/chrome.exe"`). Every page must report at
@@ -26,7 +26,7 @@ Things worth knowing before editing:
   `#155E76` / `#D9EDF3`, the 2.1 cover with its top-left icon untouched) on the outline the other
   rebuilt packages use, with the Bearded Dragon 4.0 head styles and a two-column contents page.
 - **The edition is in two places.** `EDITION` in `build.py` drives every page footer
-  ("Goldfish Care Package, Edition 3.0"). The cover chip, the colophon and the version history in
+  ("Goldfish Care Package, Edition 3.1"). The cover chip, the colophon and the version history in
   `pages_07.html` carry it as text. Change all of them together.
 - **Every cross-reference is a token.** Keep pointers sparse: tool pages (how-to, checklist,
   emergency card, symptom table, first 30 days, routine, sitter sheet) one per row; everywhere else

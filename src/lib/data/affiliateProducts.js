@@ -583,7 +583,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$35–$60",
     description: "Glass aquarium tank that gives fish or amphibians more stable water volume than tiny setups.",
-    covers: ["20-gallon long aquarium (terrestrial setup)", "20-gallon long+ aquarium", "30x12x12 in or larger enclosure", "20-gallon+ enclosure", "20-gallon long tank (40-gallon breeder if keeping two)", "20-gallon long tank (10-gallon for a bare minimum school of 6)", "20-gallon long for that school, 10 gallons only for a bare minimum six", "20-gallon long glass tank for a pair, 40-gallon breeder preferred", "20-gallon long tank, or 30-plus for sailfin varieties or a growing colony", "20-gallon long tank, 30 by 12 by 12 inches", "20-gallon long tank, 29 or 30 gallons preferred", "A 20 gallon long tank, or a 40-gallon breeder tank or tub"],
+    covers: ["20-gallon long aquarium (terrestrial setup)", "20-gallon long+ aquarium", "30x12x12 in or larger enclosure", "20-gallon+ enclosure", "20-gallon long tank (40-gallon breeder if keeping two)", "20-gallon long tank (10-gallon for a bare minimum school of 6)", "20-gallon long for that school, 10 gallons only for a bare minimum six", "20-gallon long glass tank for a pair, 40-gallon breeder preferred", "20-gallon long tank, or 30-plus for sailfin varieties or a growing colony", "20-gallon long tank, 30 by 12 by 12 inches", "20-gallon long tank, 29 or 30 gallons preferred", "A 20 gallon long tank, or a 40-gallon breeder tank or tub", "20-gallon long tank for one fancy goldfish (55+ gallons or a pond for a common or comet)"],
     pets: ["reptiles-amphibians", "fish"],
   },
 
@@ -2235,7 +2235,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$12–$18",
     description: "Natural aquarium sand that gives betta and planted freshwater tanks a clean, soft-bottom look.",
-    covers: ["Substrate (sand or smooth gravel)", "Smooth gravel or sand substrate", "Soft substrate (sand or smooth gravel)"],
+    covers: ["Substrate (sand or smooth gravel)", "Smooth gravel or sand substrate", "Soft substrate (sand or smooth gravel)", "Fine sand substrate, or a bare bottom"],
     pets: ["fish"],
   },
   {
@@ -2372,7 +2372,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$73–$83",
     description: "Aquarium filter that moves water through media to keep tanks clearer and biologically healthier.",
-    covers: ["Hang-on-back filter", "A secondary hang-on-back filter for redundancy", "Filter rated above the tank volume, for a messy eater", "Hang-on-back or canister filter sized for the tank, gentle to moderate flow"], // hang-on-back filter, a distinct filter type from the canister filters already linked
+    covers: ["Hang-on-back filter", "A secondary hang-on-back filter for redundancy", "Filter rated above the tank volume, for a messy eater", "Hang-on-back or canister filter sized for the tank, gentle to moderate flow", "Hang-on-back filter moving at least 200 gallons an hour"], // hang-on-back filter, a distinct filter type from the canister filters already linked
     altGroup: "goldfish-filtration",
     pets: ["fish"],
   },
@@ -2424,7 +2424,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$16–$24",
     description: "Staple goldfish food formulated for better digestion, growth, and cleaner water than cheap flakes.",
-    covers: [],
+    covers: ["Goldfish gel food for variety"],
     pets: ["fish"],
   },
   {
@@ -4056,7 +4056,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0002AS802?tag=beastlyfacts-20",
     description: "Hinged glass top for 30 in tanks such as a 20 long or 29 gallon. Cuts evaporation and stops jumpers while leaving a strip open for feeding.",
-    covers: ["Tight-fitting lid, every seam checked", "Lid that seals, with no gaps at the back or around cutouts", "Secure hinged glass lid"],
+    covers: ["Tight-fitting lid, every seam checked", "Lid that seals, with no gaps at the back or around cutouts", "Secure hinged glass lid", "Tight-fitting lid sized to the tank (goldfish jump)"],
     pets: ["fish"],
   },
   {
