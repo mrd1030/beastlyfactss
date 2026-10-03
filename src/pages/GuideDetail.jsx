@@ -327,24 +327,16 @@ export default function GuideDetail() {
         </Helmet>
       )}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-12 pb-16">
-        {/* Back */}
-        <button
-          type="button"
-          onClick={handleBack}
-          className="inline-flex items-center gap-1.5 text-sm font-body font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -mx-2 -mt-2 mb-4"
-        >
-          <ArrowLeft className="w-4 h-4" /> Back to Guides
-        </button>
-
-        {/* Header */}
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-8">
-          <div className="flex items-center justify-between gap-3 mb-4">
-            <div className="flex items-center gap-3 min-w-0">
-              <span className="text-4xl sm:text-5xl flex-shrink-0">{guide.emoji}</span>
-              <h1 className="font-display font-bold text-2xl sm:text-3xl text-foreground leading-tight truncate">
-                {guide.name}
-              </h1>
-            </div>
+        {/* Back, with the save and print buttons on the same row so the title
+            below gets the full width and wraps instead of truncating. */}
+        <div className="flex items-center justify-between gap-3 mb-4">
+          <button
+            type="button"
+            onClick={handleBack}
+            className="inline-flex items-center gap-1.5 text-sm font-body font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -mx-2 -mt-2"
+          >
+            <ArrowLeft className="w-4 h-4" /> Back to Guides
+          </button>
             <div className="flex-shrink-0 flex items-center gap-2">
               <SaveButton
                 type="guide"
@@ -365,6 +357,15 @@ export default function GuideDetail() {
                 </button>
               )}
             </div>
+        </div>
+
+        {/* Header */}
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-8">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="text-4xl sm:text-5xl flex-shrink-0">{guide.emoji}</span>
+            <h1 className="font-display font-bold text-2xl sm:text-3xl text-foreground leading-tight break-words min-w-0">
+              {guide.name}
+            </h1>
           </div>
           <p className="text-sm text-muted-foreground font-body mt-2">{guide.petType}</p>
           <div className="flex items-center gap-2 mt-1.5 mb-4">

@@ -25,42 +25,42 @@ export function DifficultyLegend() {
           <tbody className="divide-y divide-border text-xs sm:text-sm">
             <tr>
               <td className="p-2.5 sm:p-3 font-body font-bold text-sky-500 dark:text-sky-400 whitespace-nowrap">1</td>
-              <td className="p-2.5 sm:p-3 font-body font-semibold text-foreground whitespace-nowrap">Self-Sufficient</td>
+              <td className="p-2.5 sm:p-3 font-body font-semibold text-foreground whitespace-nowrap">Self-Sufficient <span className="text-muted-foreground font-normal">(S)</span></td>
               <td className="p-2.5 sm:p-3 text-muted-foreground font-body leading-relaxed">
                 Minimal daily interaction required. Thrives on a steady, automated environment setup. Ideal for observation-only configurations.
               </td>
             </tr>
             <tr>
               <td className="p-2.5 sm:p-3 font-body font-bold text-emerald-500 dark:text-emerald-400 whitespace-nowrap">2</td>
-              <td className="p-2.5 sm:p-3 font-body font-semibold text-foreground whitespace-nowrap">Beginner</td>
+              <td className="p-2.5 sm:p-3 font-body font-semibold text-foreground whitespace-nowrap">Beginner <span className="text-muted-foreground font-normal">(B)</span></td>
               <td className="p-2.5 sm:p-3 text-muted-foreground font-body leading-relaxed">
                 Requires standard routine husbandry (feeding, cleaning) but features a forgiving learning curve and highly documented care steps.
               </td>
             </tr>
             <tr>
               <td className="p-2.5 sm:p-3 font-body font-bold text-lime-500 dark:text-lime-400 whitespace-nowrap">3</td>
-              <td className="p-2.5 sm:p-3 font-body font-semibold text-foreground whitespace-nowrap">Beginner/Intermediate</td>
+              <td className="p-2.5 sm:p-3 font-body font-semibold text-foreground whitespace-nowrap">Beginner/Intermediate <span className="text-muted-foreground font-normal">(B/I)</span></td>
               <td className="p-2.5 sm:p-3 text-muted-foreground font-body leading-relaxed">
                 Manageable for a first-timer willing to research, but with a real learning curve - a specific husbandry detail, temperament quirk, or dietary requirement most true beginner species don't have.
               </td>
             </tr>
             <tr>
               <td className="p-2.5 sm:p-3 font-body font-bold text-amber-500 dark:text-amber-400 whitespace-nowrap">4</td>
-              <td className="p-2.5 sm:p-3 font-body font-semibold text-foreground whitespace-nowrap">Intermediate</td>
+              <td className="p-2.5 sm:p-3 font-body font-semibold text-foreground whitespace-nowrap">Intermediate <span className="text-muted-foreground font-normal">(I)</span></td>
               <td className="p-2.5 sm:p-3 text-muted-foreground font-body leading-relaxed">
                 Demands specialized husbandry parameters, precise dietary variations, regular environmental balancing, or managed handling temperaments.
               </td>
             </tr>
             <tr>
               <td className="p-2.5 sm:p-3 font-body font-bold text-orange-500 dark:text-orange-400 whitespace-nowrap">5</td>
-              <td className="p-2.5 sm:p-3 font-body font-semibold text-foreground whitespace-nowrap">Intermediate/Advanced</td>
+              <td className="p-2.5 sm:p-3 font-body font-semibold text-foreground whitespace-nowrap">Intermediate/Advanced <span className="text-muted-foreground font-normal">(I/A)</span></td>
               <td className="p-2.5 sm:p-3 text-muted-foreground font-body leading-relaxed">
                 Beyond typical intermediate care - often due to adult size, strength, or a demanding environmental parameter - but not yet requiring truly expert-only experience.
               </td>
             </tr>
             <tr>
               <td className="p-2.5 sm:p-3 font-body font-bold text-hotpink whitespace-nowrap">6</td>
-              <td className="p-2.5 sm:p-3 font-body font-semibold text-foreground whitespace-nowrap">Advanced</td>
+              <td className="p-2.5 sm:p-3 font-body font-semibold text-foreground whitespace-nowrap">Advanced <span className="text-muted-foreground font-normal">(A)</span></td>
               <td className="p-2.5 sm:p-3 text-muted-foreground font-body leading-relaxed">
                 Strict environmental control tolerances, complex diet demands, major space allocations, intense financial or long-term lifespans, or expert-only species profiles.
               </td>

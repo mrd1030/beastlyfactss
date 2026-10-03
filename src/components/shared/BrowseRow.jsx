@@ -18,6 +18,21 @@ import LocalImage from '@/components/shared/LocalImage';
 // italic, because in both cases it is the secondary identifier under the name.
 const difficultyFallback = 'text-muted-foreground bg-muted';
 
+// On a phone the full tier name ("Beginner/Intermediate") took most of the
+// row and cut the animal's name to a few letters. Phones get the short code
+// instead; the chip still opens the legend, which lists the codes beside the
+// tiers, and tablets and desktops keep the full word.
+export const DIFFICULTY_SHORT = {
+  'Self-Sufficient': 'S',
+  Beginner: 'B',
+  'Beginner/Intermediate': 'B/I',
+  'Beginner-Intermediate': 'B/I',
+  Intermediate: 'I',
+  'Intermediate/Advanced': 'I/A',
+  'Intermediate-Advanced': 'I/A',
+  Advanced: 'A',
+};
+
 export default function BrowseRow({
   to,
   name,
@@ -38,9 +53,12 @@ export default function BrowseRow({
     <button
       type="button"
       onClick={(e) => { e.preventDefault(); e.stopPropagation(); onOpenLegend?.(); }}
+      title={difficulty}
+      aria-label={`Difficulty: ${difficulty}. Open the difficulty legend`}
       className={`text-xs font-body font-semibold px-2 py-0.5 rounded-full hover:opacity-80 transition-all ${diffClass}`}
     >
-      {difficulty}
+      <span className="sm:hidden">{DIFFICULTY_SHORT[difficulty] || difficulty}</span>
+      <span className="hidden sm:inline">{difficulty}</span>
     </button>
   ) : null;
 
@@ -69,7 +87,7 @@ export default function BrowseRow({
     <div className="flex items-center gap-3 min-w-0">
       {thumb}
       <div className="min-w-0">
-        <p className="font-body font-semibold text-sm text-foreground truncate">{name}</p>
+        <p className="font-body font-semibold text-sm text-foreground line-clamp-2 break-words">{name}</p>
         {subtitle && (
           <p className="text-xs text-muted-foreground font-body italic truncate">{subtitle}</p>
         )}

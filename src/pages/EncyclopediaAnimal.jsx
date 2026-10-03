@@ -153,32 +153,33 @@ export default function EncyclopediaAnimal() {
       </Helmet>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-12 pb-16">
-        {/* Back */}
-        <button
-          type="button"
-          onClick={handleBack}
-          className="inline-flex items-center gap-1.5 text-sm font-body font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -mx-2 -mt-2 mb-4"
-        >
-          <ArrowLeft className="w-4 h-4" /> Back to Encyclopedia
-        </button>
+        {/* Back, with the save button on the same row so the name below gets
+            the full width and wraps instead of truncating. */}
+        <div className="flex items-center justify-between gap-3 mb-4">
+          <button
+            type="button"
+            onClick={handleBack}
+            className="inline-flex items-center gap-1.5 text-sm font-body font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -mx-2 -mt-2"
+          >
+            <ArrowLeft className="w-4 h-4" /> Back to Encyclopedia
+          </button>
+          <SaveButton
+            type="encyclopedia"
+            id={animal.id}
+            title={animal.name}
+            subtitle={animal.category}
+            url={`/encyclopedia/animal/${animal.id}/`}
+            className="flex-shrink-0"
+          />
+        </div>
 
         {/* Header */}
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-8">
-          <div className="flex items-center justify-between gap-3">
-            <div className="flex items-center gap-3 min-w-0">
-              <span className="text-4xl sm:text-5xl flex-shrink-0">{animal.emoji}</span>
-              <h1 className="font-display font-bold text-2xl sm:text-3xl text-foreground leading-tight truncate">
-                {animal.name}
-              </h1>
-            </div>
-            <SaveButton
-              type="encyclopedia"
-              id={animal.id}
-              title={animal.name}
-              subtitle={animal.category}
-              url={`/encyclopedia/animal/${animal.id}/`}
-              className="flex-shrink-0"
-            />
+          <div className="flex items-center gap-3">
+            <span className="text-4xl sm:text-5xl flex-shrink-0">{animal.emoji}</span>
+            <h1 className="font-display font-bold text-2xl sm:text-3xl text-foreground leading-tight break-words min-w-0">
+              {animal.name}
+            </h1>
           </div>
           <p className="text-sm text-muted-foreground font-body italic mt-1.5">{animal.scientific}</p>
           <div className="flex flex-wrap items-center gap-2 mt-2">
