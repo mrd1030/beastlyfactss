@@ -6,32 +6,45 @@ import type { Card } from '../types'
 const EMPTY: Card = { done: [], doing: [], waiting: [], updatedAt: null }
 const card = atom({ plugin: 'where-are-we', key: 'card' } as const, EMPTY)
 
-const TOOL = 'mcp__where-are-we__update_card'
+// The card lives in a plain JSON file in the project, written by the model
+// with its ordinary Write or Edit tool. A tool registered through
+// $.tool.register would be cleaner, but on Windows that tool's loopback MCP
+// server answers its first request and garbles every one after it
+// (InvalidHTTPResponse on tools/list), so the tool never reaches the session.
+// Reported to Anthropic 2026-10-03; until it is fixed, the file is the channel.
+const FILE = '.where-are-we.json'
 const MAX_DONE = 30
 const SHOWN_DONE = 4
 
-const DESCRIPTION = [
-  'Updates the Where-are-we card the owner sees above the prompt. It is saved per project across sessions,',
-  'so a fresh session after a usage-limit handoff picks it up. Call it whenever an item starts, finishes,',
-  'or comes to need the owner\'s OK (Fable reviews, merges, pushes to main, anything you must not start unasked).',
-  'Each section you pass replaces that section whole, so send the full list for it; omit a section to keep it.',
-  'Items are short noun phrases (under 60 characters), no em or en dashes.',
-].join(' ')
+const list = (v: unknown) =>
+  Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string' && x.trim() !== '').map(x => x.trim()) : []
 
-const SCHEMA = {
-  type: 'object',
-  properties: {
-    done: { type: 'array', items: { type: 'string' }, description: 'Finished items, oldest first.' },
-    doing: { type: 'array', items: { type: 'string' }, description: 'Items in progress now.' },
-    waiting: { type: 'array', items: { type: 'string' }, description: 'Items waiting on the owner\'s OK.' },
-  },
-  additionalProperties: false,
+// Forward slashes, no trailing slash: Windows paths arrive either way.
+const slashes = (p: string) => {
+  const s = p.split('\\').join('/')
+  return s.endsWith('/') ? s.slice(0, -1) : s
+}
+const norm = (p: string) => slashes(p).toLowerCase()
+
+async function cardPath($: EngineInterface) {
+  return `${slashes(await $.session.root())}/${FILE}`
 }
 
-const list = (v: unknown) =>
-  Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string' && x.trim() !== '').map(x => x.trim()) : undefined
+async function isCardWrite($: EngineInterface, filePath: string, ran: { deny?: unknown; isError?: boolean }) {
+  const target = norm(filePath)
+  const isCard = target === norm(await cardPath($)) || target.endsWith(`/${FILE}`)
+  return isCard && ran.deny === undefined && ran.isError !== true
+}
 
-const keyFor = (root: string) => `card:${root.replace(/\\/g, '/').toLowerCase()}`
+function parse(text: string): Card {
+  const raw = JSON.parse(text) as Record<string, unknown>
+  return {
+    done: list(raw.done).slice(-MAX_DONE),
+    doing: list(raw.doing),
+    waiting: list(raw.waiting),
+    updatedAt: typeof raw.updatedAt === 'number' ? raw.updatedAt : null,
+  }
+}
 
 // The owner's clock is US Eastern; written bare, no zone label.
 function stamp(ms: number) {
@@ -46,11 +59,19 @@ function stamp(ms: number) {
   }
 }
 
-async function load($: EngineInterface) {
-  const saved = (await $.store.get(keyFor(await $.session.root()))) as Card | undefined
-  await update($, card, () => ({ ...EMPTY, ...(saved ?? {}) }))
+// A missing or unreadable file is an empty card, never a failed session.
+async function load($: EngineInterface, stampNow = false) {
+  let next = EMPTY
+  try {
+    next = parse(await $.fs.read(await cardPath($)))
+  } catch {
+    next = EMPTY
+  }
+  if (stampNow) next = { ...next, updatedAt: await $.clock.now() }
+  await update($, card, () => next)
 }
 
+// The buttons write the file too, so it stays the one source of truth.
 async function save($: EngineInterface, fn: (c: Card) => Card) {
   const now = await $.clock.now()
   let next = EMPTY
@@ -58,46 +79,45 @@ async function save($: EngineInterface, fn: (c: Card) => Card) {
     next = { ...fn(c), updatedAt: now }
     return next
   })
-  await $.store.set(keyFor(await $.session.root()), next)
+  await $.fs.write(await cardPath($), `${JSON.stringify(next, null, 2)}\n`)
 }
 
-function summary(c: Card) {
+function summary(c: Card, path: string) {
   const line = (items: string[]) => (items.length ? items.join('; ') : 'nothing')
   return [
     'Where-are-we card (shown to the owner above the prompt, saved across sessions):',
     `Done: ${line(c.done.slice(-8))}`,
     `In progress: ${line(c.doing)}`,
     `Waiting on owner's OK: ${line(c.waiting)}`,
-    `Keep it current with ${TOOL} as items start, finish, or need the owner's OK.`,
+    `Keep it current by writing ${path} with the Write tool whenever an item starts, finishes, or comes to need`,
+    'the owner\'s OK (Fable reviews, merges, pushes to main, anything you must not start unasked).',
+    'The file is JSON: {"done": [...], "doing": [...], "waiting": [...]}, each list complete (done oldest first),',
+    'items short noun phrases under 60 characters, no em or en dashes. Write the whole file each time.',
   ].join('\n')
 }
 
 export const register: Register = on => {
   on('session.start', async ($, e, next) => {
     await load($)
-    await $.tool.register({ name: 'update_card', description: DESCRIPTION, inputSchema: SCHEMA })
     return next(e)
   })
 
   on('prompt.submit', async ($, e, next) => {
     const c = await read($, card)
-    return next({ ...e, context: [...(e.context ?? []), summary(c)] })
+    return next({ ...e, context: [...(e.context ?? []), summary(c, await cardPath($))] })
   })
 
-  on('tool.call', { tool: TOOL }, async ($, e) => {
-    const args = e as unknown as Record<string, unknown>
-    const done = list(args.done)
-    const doing = list(args.doing)
-    const waiting = list(args.waiting)
+  // After a successful Write or Edit of the card file, redraw from the file.
+  on('tool.call', { tool: 'Write' }, async ($, e, next) => {
+    const ran = await next(e)
+    if (await isCardWrite($, e.file_path, ran)) await load($, true)
+    return ran
+  })
 
-    await save($, c => ({
-      ...c,
-      done: (done ?? c.done).slice(-MAX_DONE),
-      doing: doing ?? c.doing,
-      waiting: waiting ?? c.waiting,
-    }))
-
-    return { result: 'Card updated.' }
+  on('tool.call', { tool: 'Edit' }, async ($, e, next) => {
+    const ran = await next(e)
+    if (await isCardWrite($, e.file_path, ran)) await load($, true)
+    return ran
   })
 
   on('ui.render', { component: 'AbovePrompt' }, async ($, e, next) => {
