@@ -5819,9 +5819,9 @@
     "path": "/content/guides/betta-fish-cost-guide.mdx",
     "slug": "betta-fish-cost-guide",
     "title": "How Much Does a Betta Fish Really Cost?",
-    "seoTitle": "Betta Fish Price: $5 to $30, Plus $100 to $300 Setup",
-    "seoDescription": "Betta fish cost breakdown: $5-30 for the fish (up to $55 rare), $100-300 for a heated tank setup, and $20-30 a month ongoing, vet visits are rare.",
-    "lastUpdated": "2026-09-25",
+    "seoTitle": "Betta Fish Price: $5 to $30, Plus $105 to $280 Setup",
+    "seoDescription": "Betta fish cost breakdown: $5-30 for the fish (up to $55 rare), $105-280 for a heated tank setup, and $10-25 a month ongoing, vet visits are rare.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Betta fish have a reputation as a starter pet you can keep in almost nothing, which is exactly the misconception worth correcting. A proper setup costs more than the bowl-and-fish combo suggests, but it's still one of the more affordable pets you can keep once it's built.",
     "date": "2026-07-14",
@@ -5856,7 +5856,7 @@
       },
       {
         "q": "What does a proper betta tank setup cost?",
-        "a": "Plan on $100 to $300 for a full setup: tank, heater, filter, decor, water conditioner, and a basic test kit. How much you spend on the tank itself and the quality of the heater and filter is what moves you around in that range."
+        "a": "Plan on $105 to $280 for a full setup: tank, heater, filter, decor, substrate, water conditioner, and a basic test kit, before the fish. Add $5 to $30 for the fish and the all-in figure is $110 to $310. How much you spend on the tank itself and the quality of the heater and filter is what moves you around in that range."
       },
       {
         "q": "What are the ongoing monthly costs for a betta?",
@@ -5961,7 +5961,7 @@
     "title": "Betta Fish Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Betta Fish Eat? Diet and Feeding Schedule",
     "seoDescription": "A betta's stomach is about the size of its eye, so 2-4 pellets a meal is right. Feed once or twice daily, fast weekly, and worry past 5-7 days without food.",
-    "lastUpdated": "2026-07-24",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "How much to feed a betta (less than you'd think), what belongs in the bowl, and the reasons a betta goes off food, from picky eating to something water-quality related.",
     "date": "2026-07-24",
@@ -6018,8 +6018,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
-    "headingCount": 7,
+    "sourceCount": 5,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -6030,7 +6030,7 @@
     "title": "How to Handle a Betta Fish (Hint: You Mostly Don't)",
     "seoTitle": "How to Handle a Betta Fish Safely",
     "seoDescription": "Never handle a betta with bare hands, it strips the protective slime coat instantly. Use a net or cup, and float a new bag 20 to 30 minutes before release.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Betta fish are not a hands-on pet in the way a guinea pig or a bearded dragon is. The honest answer to how you handle a betta is almost always: you don't, at least not with bare hands.",
     "date": "2026-07-14",
@@ -6065,7 +6065,7 @@
       },
       {
         "q": "Can a betta live with other fish?",
-        "a": "A male lives alone or with peaceful, short-finned tankmates such as corydoras, mystery snails, ghost shrimp, and some small tetras or rasboras. Never a second male, and never fin-nippers like tiger barbs. Females can share a tank as a sorority, which needs at least 10 gallons."
+        "a": "A male lives alone or with peaceful, short-finned tankmates such as corydoras, mystery snails, ghost shrimp, and some small tetras or rasboras. Tankmates need at least 10 to 20 gallons, and ghost shrimp only once they pass about 1.5 inches. Never a second male, and never fin-nippers like tiger barbs. Females can share a tank as a sorority, which needs at least 10 gallons with cover."
       },
       {
         "q": "What does day-to-day betta handling look like?",
@@ -6082,8 +6082,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
-    "headingCount": 8,
+    "sourceCount": 3,
+    "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -6094,7 +6094,7 @@
     "title": "Common Betta Fish Health Issues (And Why Water Quality Comes First)",
     "seoTitle": "Betta Fish Health Issues: Signs & Causes",
     "seoDescription": "Betta fish health issues from fin rot to ich, velvet, and swim bladder disorder, with symptoms, causes, and why water quality is the first thing to check.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Almost every common betta illness traces back to one of two things: water quality or water temperature. That's good news, since it means the first response to a sick betta is almost always the same starting point.",
     "date": "2026-07-14",
@@ -6125,7 +6125,7 @@
       },
       {
         "q": "How do I know if my betta has ich or velvet?",
-        "a": "Ich shows up as small white grains across the body and fins, along with scratching against decor, and is treated by gradually raising tank temperature along with a copper or formalin-based medication. Velvet gives the fish a fine gold or rust-colored dusty sheen, moves fast, and needs a darkened tank plus an antiparasitic or copper treatment started early."
+        "a": "Ich shows up as small white grains across the body and fins, along with scratching against decor, and is treated by slowly raising the tank to 86°F with an air stone and holding it for two weeks, or with aquarium salt at about a tablespoon per 5 gallons. Velvet gives the fish a fine gold or rust-colored dusty sheen, moves fast, and needs a darkened tank plus an antiparasitic or copper treatment started early."
       },
       {
         "q": "What causes swim bladder disorder in bettas?",
@@ -6158,7 +6158,7 @@
     "title": "Betta Fish Tank Setup: Bigger, Warmer, and Cycled",
     "seoTitle": "Betta Fish Tank Setup Guide",
     "seoDescription": "Betta fish tank setup: 5 gallons minimum, a 15-25W heater holding 76-82°F, and a gentle sponge filter, bettas' long fins can't handle strong current.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "The bowl-on-a-desk image most people have of betta fish is outdated. Modern betta care centers on a proper heated, filtered tank, and the setup itself isn't complicated once you know what matters.",
     "date": "2026-07-14",
@@ -6215,7 +6215,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,

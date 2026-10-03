@@ -727,7 +727,7 @@ const CARE_PACKAGE_STORE = {
   },
   'betta-fish': {
     name: 'Betta Fish Care Package',
-    edition: '2.2',
+    edition: '3.0',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENCG9qtY3Ob6vaxKLgeXwO',
   },
