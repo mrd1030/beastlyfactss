@@ -26,14 +26,31 @@ const slashes = (p: string) => {
 }
 const norm = (p: string) => slashes(p).toLowerCase()
 
+// One card per repository, not per folder: a session in a git worktree
+// (bf-store, .claude/worktrees/...) uses the main checkout's card, so every
+// branch in flight lands on the same list. A worktree's `.git` is a file
+// reading `gitdir: <main>/.git/worktrees/<name>`; the main checkout's is a
+// directory, which fs.read rejects, and then the session root is the answer.
+let cached: string | undefined
+
 async function cardPath($: EngineInterface) {
-  return `${slashes(await $.session.root())}/${FILE}`
+  if (cached) return cached
+  const root = slashes(await $.session.root())
+  let home = root
+  try {
+    const line = (await $.fs.read(`${root}/.git`)).trim()
+    const gitdir = line.startsWith('gitdir:') ? slashes(line.slice('gitdir:'.length).trim()) : ''
+    const at = gitdir.indexOf('/.git/worktrees/')
+    if (at > 0) home = gitdir.slice(0, at)
+  } catch {
+    home = root
+  }
+  cached = `${home}/${FILE}`
+  return cached
 }
 
 async function isCardWrite($: EngineInterface, filePath: string, ran: { deny?: unknown; isError?: boolean }) {
-  const target = norm(filePath)
-  const isCard = target === norm(await cardPath($)) || target.endsWith(`/${FILE}`)
-  return isCard && ran.deny === undefined && ran.isError !== true
+  return norm(filePath) === norm(await cardPath($)) && ran.deny === undefined && ran.isError !== true
 }
 
 function parse(text: string): Card {
