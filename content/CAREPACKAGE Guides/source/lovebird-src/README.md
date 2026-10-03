@@ -47,7 +47,7 @@ Things worth knowing before editing:
 - **Every figure comes from the site.** The guides in `content/guides/lovebird-*.mdx` and the
   shared bird guides own the numbers; prices come only from the cost guide, whose rows and
   totals add up: every item priced and rounded to the nearest $5, $295 to $625 setup, $260 to $430 a
-  year, $22 to $36 a month. The budget runs over two pages (`budget` and `budget2`). Anything the
+  year, $20 to $40 a month. The budget runs over two pages (`budget` and `budget2`). Anything the
   site does not support is left out: masked lovebirds, a pair-cost figure, scaly face mites,
   night frights and a cuttlebone are not in this edition for that reason.
 - **Abbreviations are spelled out at first use in reading order** (the how-to page defines the
