@@ -69,11 +69,11 @@ had moved past the PDF):
 | budgie | Budgie_Care_Package_v2.1.pdf | 40 |
 | crested-gecko | Crested_Gecko_Care_Package_v3.1.pdf | 48 |
 | goldfish | Goldfish_Care_Package_v3.1.pdf | 49 |
-| guinea-pig | Guinea_Pig_Care_Package_v2.1.pdf | 41 |
-| hamster | Hamster_Care_Package_v2.3.pdf | 37 |
+| guinea-pig | Guinea_Pig_Care_Package_v3.0.pdf | 51 |
+| hamster | Hamster_Care_Package_v3.0.pdf | 47 |
 | leopard-gecko | Leopard_Gecko_Care_Package_v3.1.pdf | 52 |
 | lovebird | Lovebird_Care_Package_v2.1.pdf | 39 |
-| rabbit | Rabbit_Care_Package_v2.1.pdf | 40 |
+| rabbit | Rabbit_Care_Package_v3.0.pdf | 50 |
 | russian-tortoise | Russian_Tortoise_Care_Package_v3.1.pdf | 51 |
 | tarantula | Tarantula_Care_Package_v2.3.pdf | 44 |
 | cockatiel | Cockatiel_Care_Package_v1.2.pdf | 40 |

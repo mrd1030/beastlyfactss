@@ -703,7 +703,7 @@ const CARE_PACKAGE_STORE = {
   },
   'guinea-pig': {
     name: 'Guinea Pig Care Package',
-    edition: '2.1',
+    edition: '3.0',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENC39qtY3Ob6vaks244qto',
   },
@@ -733,13 +733,13 @@ const CARE_PACKAGE_STORE = {
   },
   hamster: {
     name: 'Hamster Care Package',
-    edition: '2.3',
+    edition: '3.0',
     priceIdSandbox: 'price_1UC9Up9qtY3Ob6vac8xRLEu2',
     priceIdLive: 'price_1UENBJ9qtY3Ob6vaJcPpuniM',
   },
   rabbit: {
     name: 'Rabbit Care Package',
-    edition: '2.1',
+    edition: '3.0',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENCH9qtY3Ob6vaaasv4qjw',
   },
