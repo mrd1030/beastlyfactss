@@ -122,3 +122,12 @@ Same checks 1 to 6. A change here touches the guide and the hub only.
 | Veiled chameleon | ☐ |
 | Zebra danio | ☐ |
 | Zebra finch | ☐ |
+
+## Open questions, to answer during the cost checks (logged 2026-10-03)
+
+- Bearded dragon: the thermostat row is $40 to $80 but the linked dimming thermostat is $73 to $93 in the catalog; raise the row to $40 to $95?
+- Bearded dragon: bearded-dragon-shopping-list.mdx carries its own per-product prices ($5 steps, enclosure $300 to $700) that differ from the new cost rows; align it?
+- Invertebrates: the quarantine guide no longer gives three months (no acceptable source); emperor-scorpion-enrichment, emperor-scorpion-tank-setup, giant-millipede-cost, giant-millipede-health-issues and hermit-crab-health-issues still say three months.
+- Tarantula: the site handling guide says "North American" venom; the book now says New World species.
+- Jumping spider: Arachnamoria (escape source) not yet checked against the source bar.
+- Five light-passed books (hognose, gargoyle, African fat-tail, White's tree frog, cockatoo): free script checks, then a Fable reading pass each.
