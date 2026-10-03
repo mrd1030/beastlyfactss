@@ -2,6 +2,129 @@
 
 Finished items moved out of FIX_PLAN.md, newest batch first.
 
+# Batch moved 2026-10-02 (care package rebuilds)
+
+Resolved by the Bearded Dragon 4.0 rebuild and the 3.0 rebuilds of the leopard gecko, crested gecko, ball python, Russian tortoise, axolotl, betta fish and goldfish packages, each built site first and reviewed. Moved under their original section headings.
+
+## 5. Care package updates (noted 2026-09-24, not edited)
+
+- [x] Leopard gecko p17: "around half of captive leopard geckos may carry it" and "most commonly diagnosed reptile". Replace with the single Thai farm 51% finding.
+- [x] Crested gecko p14: "weigh weekly". Site settled on at least monthly, more often while off food.
+- [x] Russian tortoise: soak "at least 20 minutes, two to three times a week". Site: adults weekly 10 to 20 minutes, juveniles 10 to 15 minutes twice a week, no deeper than the elbows.
+- [x] Russian tortoise: "that is what causes pyramiding". Site: one suspected driver, not completely understood.
+- [x] Ball python p12: list refusal causes with temperature and humidity first, then shed, stress, breeding season.
+- [x] Goldfish p8: cycle by dosing ammonia to about 3 ppm, done when a full dose reads zero within 24 hours.
+- [x] Ball python (about lines 315 and 725): says brooding females heat eggs by shivering. A 2015 study found ball pythons do not shiver-brood; the site's fun facts page was corrected in wave 2.
+- [x] Leopard gecko (profile p. 3, growth table, p. 34): adult length "6.5 to 11 in, sources differ" and "8 to 11 in" adults. Site now uses 6 to 9 inches (PetMD 6 to 9, LafeberVet 6.5 to 8).
+- [x] Betta p10: feeding "once or twice a day" can add "or up to three smaller meals 6 to 8 hours apart" (optional).
+- [x] Axolotl (diet page, pages_2.html:138): "Whole or halved nightcrawler" for adults. Site: worms cut to head-sized portions, never whole, even for a large adult (axolotl-feeding-guide).
+- [x] Axolotl (handling page, pages_2.html:115): hand washing assumes bare-hand contact. Site: if it must be touched, clean disposable nitrile gloves, since skin oils harm it (axolotl-handling-guide).
+- [x] Ball python (cleaning, lines 489, 1013, 1260): "Change the substrate fully every 4 to 8 weeks". Site: monthly if messy, at least quarterly if not; bowl and decor scrubbed weekly with 3% bleach left on 10 minutes (ball-python-tank-setup-guide).
+- [x] Bearded dragon (First 30 days, line 1088): wellness visit "within the first two weeks". Site: first exam within 48 hours (bearded-dragon-health-issues-guide, cost guide; VCA).
+- [x] Bearded dragon (Salmonella box, line 492): only under-fives told not to handle. Site: under 5, 65 and older, and the immunocompromised should not handle the dragon or touch its enclosure (bearded-dragon-handling-guide; CDC).
+- [x] Crested gecko (sexing p14, line 666): sexable "at 15 to 18 months". Site: hemipenal bulge shows at 18 to 25 g; under that with no bulge means unsexed, not female (crested-gecko-handling-guide; ReptiFiles).
+- [x] Crested gecko (lines 458, 522, 859, 1084, 1266): dishes scrubbed weekly, deep clean monthly. Site: dishes washed and disinfected daily, non-bioactive enclosure fully cleaned at least weekly, bleach left on 10 minutes (crested-gecko-tank-setup-guide).
+- [x] Leopard gecko (handling p8 line 480, behavior p19 line 845): rapid tail flicking means end the session, slow wave "not a complaint". Site says the reverse: slow swish with an arched back is the warning, rapid flick or rattle is excitement at prey or a mate (leopard-gecko-handling-guide; ReptiFiles, LafeberVet).
+- [x] Leopard gecko (profile, line 285): "15 to 20 years typical, up to 25 to 30". Site: 10 to 20 years, some reaching 25 to 30 (hub, cost guide, fun facts; PetMD, LafeberVet).
+- [x] Russian tortoise (outdoor pen, pages_2.html:89): walls "at least 12 in above ground". Site: about 2 ft high with an inward lip of about 4 in, buried at least 12 in, mesh cover (russian-tortoise-handling-guide).
+- [x] Betta (betta-fish.html:794): float the bag "about 15 minutes". Site: 20 to 30 minutes, slow drip only when the temperature gap is over 10°F or the chemistry differs (aquarium-stocking-and-tankmates-guide; Merck, UF/IFAS FA119).
+- [x] Goldfish (pages_1.html:414, pages_3.html:147): float "15 to 20 minutes". Site: 20 to 30 minutes (same guide; Merck).
+- [x] Goldfish (pages_1.html:152): goldfish and koi "cannot interbreed". Site: they can be crossed, mostly by artificial spawning, and first-generation hybrid males examined were sterile (koi-vs-goldfish-guide; Gomelsky et al. 2012).
+- [x] Goldfish (pages_2.html:14, 16): adults "1 to 2 a day", sources disagree. Site: one small meal a day eaten in under 2 minutes, which may be split in two; juveniles 2 to 3 (goldfish-feeding-guide; PetMD).
+- [x] Goldfish (pages_2.html:336): fin rot "an antibacterial treatment is warranted". Site: no home antibiotic dose; a spreading case is a vet case (goldfish-health-issues-guide; Aquatic Veterinary Services).
+- [x] Goldfish (pages_3.html:168): quarantine "2 to 4 week minimum". Site: 30 days as the floor (goldfish-cost-guide, hub; AVMA, Merck). Also clashes with the package's own 30 to 60 days (pages_1.html:409, pages_3.html:478).
+- [x] Goldfish (pages_1.html:190, 359; pages_3.html:17, 105, 422): "fine sand or smooth rounded gravel". Site: bare bottom, fine sand, or gravel only at 1/2 inch and up, since pea gravel lodges in the mouth (goldfish-tank-setup-guide; Wildgoose).
+- [x] Betta ich: package about 82°F with copper or formalin; hub 86°F or aquarium salt.
+- [x] Goldfish filtration: package 10x tank volume per hour minimum; hub at least 4x, ideally 5 to 10.
+- [x] Bearded dragon costs: package equipment $420 to $860, exam $75 to $200, monthly $60 to $130; cost guide $400 to $800, $120 to $245, $50 to $108.
+- [x] Leopard gecko costs: package setup $175 to $495, monthly $32 to $91; hub $250 to $400, $20 to $50.
+- [x] Vets' association name (added 2026-10-02): leopard-gecko.html lines 761 and 1376, crested-gecko.html lines 750 and 1364, ball-python.html lines 768 and 1367 say "Association of Reptilian and Amphibian Veterinarians"; the organization's current name is "Association of Reptile and Amphibian Veterinarians" (arav.org). The site and the package template were fixed on 2026-10-02. Leave the 1996 proceedings citation titles as published.
+- [x] Leopard gecko enclosure source (added 2026-10-02): the package's 36x18x18 in minimum is right, but its sources page backs it only with the ReptiFiles care sheet as republished by Zen Habitats. Add the page the site now cites for it, ReptiFiles Leopard Gecko Terrarium Size (https://reptifiles.com/leopard-gecko-care/leopard-gecko-terrarium-size/). The site's leopard-gecko-tank-setup-guide got the same source on 2026-10-02.
+- [x] Russian tortoise brumation: package 10 to 14 weeks at most; hub 2 to 4 months.
+- [x] Axolotl feeding portion (pages_2.html:143): package "what it finishes in two to three minutes"; site "what it takes in 5 to 10 minutes" (axolotl-feeding-guide).
+- [x] Axolotl maturity and sexing (pages_1.html:106, pages_2.html:42, 265, pages_3.html:538): package "about a year" (Genetic Stock Center); site males about 10 months, females 12 to 18 months (axolotl-handling-guide; LafeberVet, Chicago Exotics).
+- [x] Axolotl nets (pages_2.html:115): package "Never: Nets"; site allows a soft fine-mesh net for seconds when nothing else works (axolotl-handling-guide).
+- [x] Crested gecko vet cost (lines 311, 988): package first exam with fecal "$65 to $210"; site routine visit about $40 to $70 (crested-gecko-cost-guide).
+- [x] Crested gecko price (lines 302, 988): package normals "$50 to $200", rare "$500 to $1,000 or more"; site normals under $100, standard morphs to about $200, rare upward of $1,000 (crested-gecko-cost-guide).
+- [x] Betta sorority (betta-fish.html:1019): package "not for beginners, frequently ends in serious injury"; site allows a sorority in at least 10 gallons (betta-fish-handling-guide; PetMD).
+- [x] Betta tankmates (betta-fish.html:1016, 1017): package ghost shrimp 10 gal and up, schooling fish and corydoras 15 to 20 gal; site lists them with no size above the 5 gallon floor (betta-fish-handling-guide; PetMD).
+- [x] Betta setup cost (betta-fish.html:310): package $157 to $336; site $100 to $300.
+- [x] Goldfish costs (pages_1.html:135, 139; pages_3.html:113): package equipment $208 to $500, monthly $13 to $32; site $150 to $400, $10 to $30.
+
+## 5b. Undefined abbreviations in the care packages (audited 2026-10-01, not edited)
+
+- [x] Axolotl: "ppm" first used p4 (axolotl.html:294) bare, never spelled out; no glossary entry (the glossary only uses it inside Ammonia and Nitrate).
+- [x] Axolotl: "IUCN" first used p4 (axolotl.html:299) bare, never spelled out; not in the glossary.
+- [x] Axolotl: "GFP" first used p5 (axolotl.html:321) bare, never spelled out (green fluorescent protein); not in the glossary.
+- [x] Axolotl: "M.R.S." first used p6 (axolotl.html:372) bare, never spelled out (Maine Revised Statutes); not in the glossary. 2.2-only content.
+- [x] Axolotl: "CFR" first used p6 (axolotl.html:373, "50 CFR 16") bare, never spelled out (Code of Federal Regulations); not in the glossary. 2.2-only content.
+- [x] Axolotl: "USFWS" first used p6 (axolotl.html:395); "US Fish and Wildlife Service" is in the sentence before but never paired with the short form; not in the glossary.
+- [x] Axolotl: "GH" and "KH" first used p12 (axolotl.html:622) bare; spelled out only in the glossary (p40).
+- [x] Axolotl: "RO" first used p12 (axolotl.html:622) bare, never spelled out (reverse osmosis); not in the glossary.
+- [x] Axolotl: "PVC" first used p14 (axolotl.html:709) bare, never spelled out; not in the glossary.
+- [x] Axolotl, Sources page only (p41): AZA (axolotl.html:1769), USGS (:1771), VCA (:1772, described as "Animal Hospitals" but never expanded) and NC State (:1779) bare; none in the glossary.
+- [x] Ball python: "IBD" first used p2 contents (ball-python.html:202), then bare on p13 (:639) and p18 (:818); spelled out only from p19 (:837); in the glossary.
+- [x] Ball python: "PVC" first used p4 (ball-python.html:288) bare, never spelled out; not in the glossary.
+- [x] Ball python: "IUCN" first used p4 (ball-python.html:292) bare, never spelled out; not in the glossary.
+- [x] Ball python: "UVB" first used in the p5 enclosure diagram (ball-python.html:327), first text use p6 (:401), bare, never spelled out; not in the glossary.
+- [x] Ball python: "VCA" first used p7 (ball-python.html:420) bare, never spelled out; not in the glossary.
+- [x] Ball python: "CDC" first used p9 (ball-python.html:519) bare; spelled out only on the Sources page (p34); not in the glossary.
+- [x] Ball python: "ASF" spelled out at first use p11 (ball-python.html:568); not in the glossary.
+- [x] Ball python: "FDA" first used p11 (ball-python.html:583) bare; spelled out only on the Sources page (p34); not in the glossary.
+- [x] Ball python: "RI" spelled out at first use p17 (ball-python.html:786); not in the glossary.
+- [x] Bearded dragon: "UVB" first used on the cover p1 (bearded-dragon.html:139) bare, 52 uses, never spelled out ("ultraviolet light" appears once, in a fun fact at p4 :314, without the label); no glossary entry of its own.
+- [x] Bearded dragon: "T5 HO" first used p4 (bearded-dragon.html:288) bare; the glossary entry gives "high-output" but never says what T5 means. "T8" (p6 :397) is bare and not in the glossary either.
+- [x] Bearded dragon: "UVI" first used p4 (bearded-dragon.html:288) bare; spelled out only in the glossary (p33).
+- [x] Bearded dragon: "IUCN" first used p4 (bearded-dragon.html:291) bare, never spelled out; not in the glossary.
+- [x] Bearded dragon: "MBD" first used p4 (bearded-dragon.html:307) bare in the emergency budget box; spelled out p17 (:816); in the glossary.
+- [x] Bearded dragon: "PVC" first used p5 (bearded-dragon.html:324) bare, never spelled out; not in the glossary.
+- [x] Bearded dragon: "UV" first used p6 (bearded-dragon.html:385) bare, never spelled out; not in the glossary.
+- [x] Bearded dragon: "CDC" first used p8 (bearded-dragon.html:492) bare in the Salmonella box; spelled out only on the Sources page (p34); not in the glossary.
+- [x] Bearded dragon: "BSFL" spelled out at first use p10 (bearded-dragon.html:544); not in the glossary.
+- [x] Bearded dragon: "ADV" first used p2 contents (bearded-dragon.html:200) and the p18 page title (:839) bare; spelled out p18 (:845); in the glossary.
+- [x] Bearded dragon: "RI" spelled out at first use p18 (bearded-dragon.html:842); not in the glossary.
+- [x] Bearded dragon: "PCR" first used p18 (bearded-dragon.html:846) bare, never spelled out; not in the glossary.
+- [x] Bearded dragon: "CANV" first used p18 (bearded-dragon.html:849) bare, never spelled out; the glossary names it under Yellow fungus without expanding it.
+- [x] Bearded dragon, Sources page only (p34): "VCA" (bearded-dragon.html:1439) described as "Animal Hospitals" but never expanded; not in the glossary.
+- [x] Betta: "ppm" first used p4 (betta-fish.html:300) bare; spelled out only in the glossary (p35).
+- [x] Betta: "IUCN" first used p4 (betta-fish.html:303) bare, never spelled out; not in the glossary.
+- [x] Betta: "GH" and "KH" first used p8 (betta-fish.html:477) bare; spelled out only in the glossary ("carbonate hardness" is on p7 :457 without the KH label).
+- [x] Betta: "NH3", "NO2" and "NO3" first used as the p32 owner log headers (betta-fish.html:1423) bare; the glossary pairs them with ammonia, nitrite and nitrate, the body never does.
+- [x] Betta, Sources page only (p36): VCA (betta-fish.html:1573, described but never expanded) and NC State (:1581) bare; not in the glossary.
+- [x] Crested gecko: "MBD" first used on the cover p1 (crested-gecko.html:148) bare; spelled out p17 (:767); the glossary has "Metabolic bone disease" but not the MBD form.
+- [x] Crested gecko: "IUCN" first used p4 (crested-gecko.html:295) bare, never spelled out; not in the glossary.
+- [x] Crested gecko: "PVC" first used p5 (crested-gecko.html:328) bare, never spelled out; not in the glossary.
+- [x] Crested gecko: "UVB" first used in the p5 enclosure diagram (crested-gecko.html:330), first text use p7 (:439), bare, never spelled out; not in the glossary.
+- [x] Crested gecko: "T5 HO" first used p7 (crested-gecko.html:440) bare, never spelled out; not in the glossary.
+- [x] Crested gecko: "UVI" first used p7 (crested-gecko.html:440) bare, never spelled out; not in the glossary.
+- [x] Crested gecko: "CDC" first used p8 (crested-gecko.html:487) bare; spelled out only on the Sources page (p34); not in the glossary.
+- [x] Crested gecko: "FTS" spelled out at first use p17 (crested-gecko.html:774); the glossary has "Floppy tail syndrome" but not the FTS form.
+- [x] Crested gecko, Sources page only (p34): VCA (crested-gecko.html:1359, described but never expanded) and PMC (:1361) bare; not in the glossary.
+- [x] Goldfish: "ppm" first used p4 (goldfish.html:294) bare, never spelled out; no glossary entry (used only inside other entries).
+- [x] Goldfish: "mg/L" first used p25 (goldfish.html:969) bare, never spelled out; not in the glossary.
+- [x] Goldfish, Sources page only (p39): USGS (goldfish.html:1524) and UF/IFAS (:1525) bare; not in the glossary.
+- [x] Leopard gecko: "UVB" first used on the cover p1 (leopard-gecko.html:144) bare, 27 uses, never spelled out; no glossary entry of its own (only inside the UVI entry).
+- [x] Leopard gecko: "MBD" first used on the cover p1 (leopard-gecko.html:146) bare; spelled out p17 (:785); the glossary has "Metabolic bone disease" but not the MBD form.
+- [x] Leopard gecko: "UVI" first used p4 (leopard-gecko.html:290) bare; spelled out only in the glossary (p33).
+- [x] Leopard gecko: "IUCN" first used p4 (leopard-gecko.html:293) bare, never spelled out; not in the glossary.
+- [x] Leopard gecko: "T5 HO" first used p7 (leopard-gecko.html:441) bare, never spelled out; not in the glossary.
+- [x] Leopard gecko: "CDC" first used p8 (leopard-gecko.html:485) bare; spelled out only on the Sources page (p34); not in the glossary.
+- [x] Leopard gecko: "BSFL" first used p10 (leopard-gecko.html:537) in the black soldier fly larvae row but never paired with that name; not in the glossary.
+- [x] Leopard gecko: "PCR" first used p17 (leopard-gecko.html:779) bare, never spelled out; not in the glossary.
+- [x] Leopard gecko, Sources page only (p34): "VCA" (leopard-gecko.html:1368) described but never expanded; not in the glossary.
+- [x] Russian tortoise: "UVB" first used on the cover p1 (russian-tortoise.html:133) bare, 39 uses, never spelled out ("ultraviolet light" appears once at p18 :880 without the label); no glossary entry of its own.
+- [x] Russian tortoise: "T5 HO" first used p4 (russian-tortoise.html:291) bare; the glossary entry gives "high-output" but never says what T5 means.
+- [x] Russian tortoise: "UVI" first used p4 (russian-tortoise.html:291) bare; spelled out p7 (:436); in the glossary.
+- [x] Russian tortoise: "IUCN" and "CITES" first used p4 (russian-tortoise.html:295) bare, never spelled out; not in the glossary.
+- [x] Russian tortoise: "UV" first used p6 (russian-tortoise.html:415) bare, never spelled out; not in the glossary.
+- [x] Russian tortoise: "VCA" first used p9 (russian-tortoise.html:513) bare, never spelled out; not in the glossary.
+- [x] Russian tortoise: "CDC" first used p10 (russian-tortoise.html:561) bare, never spelled out; not in the glossary.
+- [x] Russian tortoise: "EAZWV" first used p21 (russian-tortoise.html:990) bare, never spelled out; not in the glossary.
+- [x] Russian tortoise: "PCR" first used p21 (russian-tortoise.html:993) bare, never spelled out; not in the glossary.
+- [x] Russian tortoise: "CPW" first used p25 (russian-tortoise.html:1134) bare, never spelled out (Colorado Parks and Wildlife); not in the glossary. 2.2-only content.
+- [x] Russian tortoise: "CFR" and "FDA" first used p25 (russian-tortoise.html:1139) bare; the glossary entry "21 CFR 1240.62" expands neither.
+- [x] Russian tortoise, Sources page only (p37): "MSD" (russian-tortoise.html:1706) bare; not in the glossary.
+
 # Batch moved 2026-09-25 (cleanup session)
 
 Every ticked line in FIX_PLAN.md as of the cleanup session, with finished sections moved whole under their original headings.
