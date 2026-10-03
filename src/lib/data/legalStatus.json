@@ -15013,12 +15013,11 @@
           "verifiedOn": "2026-10-01"
         },
         "VT": {
-          "status": "permit",
-          "sourceId": "vt-restricted-list",
-          "cite": "Restricted Wild Animal List, July 2025",
-          "quote": "Testudines | Emydidae | Trachemys | scripta elegans | Red-eared slider",
-          "note": "Named on the Restricted list to the subspecies, along with the yellow-bellied and Cumberland sliders, so the whole Trachemys scripta complex is caught. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in. Act 47 of 2025 then put the same answer in statute: Sec. 14 says \"A person shall not import, possess, or sell in the State a pond slider turtle (Trachemys scripta),\" except a turtle legally acquired as a pet before July 1, 2025, and stock a pet dealer or commercial collection permittee held before that date. Sec. 14 lapses when the Commissioner adopts a slider rule under 10 V.S.A. § 4085.",
-          "permitFor": "commercial-exhibition-research",
+          "status": "banned",
+          "sourceId": "vt-act-47-2025",
+          "cite": "Act 47 (2025), Sec. 14(a)",
+          "quote": "A person shall not import, possess, or sell in the State a pond slider turtle (Trachemys scripta)",
+          "note": "Act 47 of 2025 bans importing, possessing or selling any pond slider, so there is no route for a new pet. The Restricted Wild Animal List (July 2025) also names the red-eared slider, and Regulation 881 issues permits only for bona fide scientific or educational purposes, never for a pet. Sec. 14 lapses when the Commissioner adopts a slider rule under 10 V.S.A. section 4085.",
           "grandfathered": {
             "before": "2025-07-01",
             "detail": "Act 47 (2025) Sec. 14(a)(1)(A): a person may continue to possess a pond slider legally acquired as a pet before July 1, 2025. There is nothing to file; the Fish and Wildlife Department tells those owners they do not need to do anything different, only never to release the turtle."
