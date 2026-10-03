@@ -1,0 +1,6 @@
+{
+  "name": "where-are-we",
+  "version": "0.1.0",
+  "description": "A card above the prompt: Done / In progress / Waiting on your OK, kept by Claude and saved per project across sessions.",
+  "types": "./types/index.d.ts"
+}

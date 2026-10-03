@@ -1,0 +1,6 @@
+{
+  "name": "zookeeper",
+  "version": "0.1.0",
+  "description": "Flags BeastlyFacts house-rule slips in edits, shell calls and chat as they happen; blocks npm run build unless asked.",
+  "types": "./types/index.d.ts"
+}

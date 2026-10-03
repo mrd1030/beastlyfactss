@@ -42,6 +42,7 @@ dist-ssr
 !.claude/commands/
 !.claude/hooks/
 !.claude/settings.json
+!.claude/mods/
 
 # regenerated keyword-research output, not source
 tools/keyword-finder/keyword-ideas.csv
