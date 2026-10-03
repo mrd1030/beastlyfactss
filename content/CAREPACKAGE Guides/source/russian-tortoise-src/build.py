@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assemble the Russian Tortoise care package, edition 3.0 (Testudo horsfieldii).
+"""Assemble the Russian Tortoise care package, edition 3.1 (Testudo horsfieldii).
 
 Content files carry <!--PAGE key--> markers. Page numbers are assigned in
 document order, {{P:key}} tokens are resolved to those numbers, the TOC is
@@ -22,7 +22,7 @@ SRC = os.path.normpath(os.path.join(HERE, "..", "russian-tortoise.html"))
 # never resized or re-encoded (md5 35a2a824de746f5b8bdf606dc5642548).
 COVER = os.path.normpath(os.path.join(HERE, "..", "..", "images", "russian-tortoise-cover-3.jpg"))
 
-EDITION = "3.0"
+EDITION = "3.1"
 
 # TOC: (section label, [(key, title), ...])
 SECTIONS = [
@@ -78,7 +78,8 @@ SECTIONS = [
         ("emergency", "Emergency &amp; Quick Targets Card"),
     ]),
     ("Section 09 &middot; Owner Tools", [
-        ("budget", "Budget &amp; Shopping List"),
+        ("budget", "Budget: Setup &amp; Shopping List"),
+        ("budget2", "Budget: Yearly Costs"),
         ("first30", "First 30 Days"),
         ("symptoms", "Symptom Quick Reference"),
         ("routine", "Daily, Weekly &amp; Seasonal Routine"),

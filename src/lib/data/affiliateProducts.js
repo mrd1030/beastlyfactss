@@ -2019,7 +2019,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$10–$16",
     description: "Coconut-fiber substrate that holds moisture well for tropical reptiles, invertebrates, and plant roots.",
-    covers: ["Moist substrate (coconut fiber + topsoil)", "Coconut fiber and peat substrate", "Coconut fiber + topsoil substrate", "Deep coconut fiber or topsoil substrate", "Coconut fiber, peat, or organic pesticide-free soil substrate"],
+    covers: ["Moist substrate (coconut fiber + topsoil)", "Coconut fiber and peat substrate", "Coconut fiber + topsoil substrate", "Deep coconut fiber or topsoil substrate", "Coconut fiber, peat, or organic pesticide-free soil substrate", "Coconut coir for the 50/50 topsoil and coconut coir mix"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -3784,7 +3784,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B000GQ4KX6?tag=beastlyfacts-20",
     description: "Reed sedge peat and sand topsoil for mixing burrowing and bioactive substrates. Check the bag for added fertilizer before using it in an enclosure.",
-    covers: [],
+    covers: ["Topsoil for the 50/50 topsoil and coconut coir mix"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -3834,7 +3834,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0037AP20I?tag=beastlyfacts-20",
     description: "Plain sphagnum peat for mixing moisture holding substrates for tarantulas, scorpions, roaches and tortoises. Check the bag for wetting agents.",
-    covers: [],
+    covers: ["Peat moss for the moist hide"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -4256,7 +4256,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0CKZWLWT3?tag=beastlyfacts-20",
     description: "Natural slate for enclosure floors, feeding tiles and basking stacks. Holds heat and wears down nails.",
-    covers: ["Large smooth river rock or slate for the water section, never small gravel", "Paper towel or tile for the floor", "Stacked stone or slate for the basking stack", "Retes stack, shelves or tiles", "Slate tiles, stacked low and stable"],
+    covers: ["Large smooth river rock or slate for the water section, never small gravel", "Paper towel or tile for the floor", "Stacked stone or slate for the basking stack", "Retes stack, shelves or tiles", "Slate tiles, stacked low and stable", "Slate tiles for a feeding tile and flat stones"],
     pets: ["reptiles-amphibians"],
   },
   {

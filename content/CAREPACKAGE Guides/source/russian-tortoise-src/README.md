@@ -3,10 +3,10 @@
 `../russian-tortoise.html` is generated. Edit the fragments here, never that file, then:
 
     python build.py                                                          # assemble the source
-    node ../_render.mjs russian-tortoise "Russian Tortoise" 3.0 --measure    # overflow check
-    node ../_render.mjs russian-tortoise "Russian Tortoise" 3.0              # render the PDF
+    node ../_render.mjs russian-tortoise "Russian Tortoise" 3.1 --measure    # overflow check
+    node ../_render.mjs russian-tortoise "Russian Tortoise" 3.1              # render the PDF
 
-The PDF is `rebuilt/Russian_Tortoise_Care_Package_v3.0.pdf`. On Windows, set `CHROME_BIN` to
+The PDF is `rebuilt/Russian_Tortoise_Care_Package_v3.1.pdf`. On Windows, set `CHROME_BIN` to
 Chrome first (`CHROME_BIN="C:/Program Files/Google/Chrome/Application/chrome.exe"`). Every
 page must report at least 15 px free.
 
@@ -28,7 +28,7 @@ Things worth knowing before editing:
   `#5C6A2A` / `#E9EEDA`, the 2.x cover with its top-left icon untouched) on the bearded dragon
   4.0 outline and head CSS, with a two-column contents page.
 - **The edition is in two places.** `EDITION` in `build.py` drives every page footer
-  ("Russian Tortoise Care Package · Edition 3.0"). The cover chip, the colophon and the version
+  ("Russian Tortoise Care Package · Edition 3.1"). The cover chip, the colophon and the version
   history in `pages_07.html` carry it as text. Change all of them together.
 - **Every cross-reference is a token.** The build refuses a hand-written "page 12". Keep
   pointers sparse: tool pages (how-to, checklist, emergency card, budget, first 30 days,
