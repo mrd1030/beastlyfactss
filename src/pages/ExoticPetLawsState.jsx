@@ -235,7 +235,7 @@ export default function ExoticPetLawsState() {
             {`Exotic pet laws in ${inPlace}`}
           </h1>
           {sourceNotices.map((n) => (
-            <SourceNoticeBox key={n.id} title={n.title} text={n.text} className="!mt-0 !mb-5" />
+            <SourceNoticeBox key={n.id} title={n.title} text={n.text} archive={n.archive} className="!mt-0 !mb-5" />
           ))}
 
           {/* Single string: see the hydration note on the index page. */}

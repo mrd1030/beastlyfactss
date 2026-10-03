@@ -31,6 +31,17 @@ Not done, and each one is a real blocker for real sales:
   in the Sandbox.
 - PDFs uploaded to the `care-packages` bucket. Only the Hamster is there.
 
+## Next new package: Tetras, grouped (added 2026-10-03, Fable-reviewed)
+
+One grouped package, on the model of the Tarantula package (a multi-species group entry and package that already sells on the flagship outline). Neon and cardinal tetras share almost all their care and differ mainly in numbers.
+
+- Title leads with the search term: "Neon Tetra Care Package: Neon, Cardinal and the Small Tetras". Confirm "neon tetra" over "tetra" in GSC or Ahrefs before locking it.
+- v1.0 covers neon and cardinal only, from the existing guides. A species-at-a-glance page (adult length, school floor, temperature band, pH band, from the two tank-setup guides) and a per-species column on the temperature page carry the differences.
+- Safety line: the ich-by-heat treatment (86F) sits above the neon's comfort ceiling, so the shared health page needs a neon caveat.
+- Law page: one page like the Goldfish package (never release, the release rules), plus where the fish comes from (cardinals are still a wild-caught Rio Negro fishery). No state table; fish have no state legal data here.
+- Same process: site first, flagship outline, fish line icon in the ring, a Fable review on the owner's OK, store page, Stripe product, bucket upload.
+- Order: after the queued rebuilds (rabbit, hamster, guinea pig, budgie, lovebird, tarantula, White's tree frog). Only if it sells or GSC shows demand: ember and rummy-nose get encyclopedia entries and guides first, then package v1.1. Encyclopedia: no Tetras group entry at all (owner, 2026-10-03), since it would repeat the individual tetra pages; each tetra keeps its own entry, and a "Neon vs Cardinal Tetra" comparison article (in the style of the betta vs goldfish and koi vs goldfish guides) carries the side-by-side numbers. That article is a required step: it ships before the package, so the package's species-at-a-glance page has a published page to match and link, and it carries "tetra" in its title and SEO tags for the generic query. One GSC or Ahrefs check settles the "neon tetra" versus "tetra" title order for both the article and the package. Leave the corydoras entry as it is.
+
 ## The edition problem, decide this first
 
 The nine Gumroad listings sell the old editions: v1.0 or v2.0, 20 to 22 pages.
