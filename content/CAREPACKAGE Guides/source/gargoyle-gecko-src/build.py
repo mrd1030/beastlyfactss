@@ -70,6 +70,7 @@ SECTIONS = [
     ]),
     ("Section 08 &middot; Owner Tools", [
         ("budget", "Budget &amp; Shopping List"),
+        ("budget2", "Budget: Yearly Costs"),
         ("first30", "First 30 Days"),
         ("symptoms", "Symptom Quick Reference"),
         ("routine", "Daily, Weekly &amp; Seasonal Routine"),

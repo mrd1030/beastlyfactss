@@ -334,6 +334,7 @@ export const turtleGuides = [
       "Dimming thermostat, for the basking bulb",
       "Plug-in timer for the lights",
       "Infrared temperature gun",
+      "Digital kitchen scale in grams",
       "Digital probe thermometer and hygrometer",
       "Topsoil for the 50/50 topsoil and coconut coir mix",
       "Coconut coir for the 50/50 topsoil and coconut coir mix",

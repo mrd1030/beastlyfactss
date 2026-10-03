@@ -397,7 +397,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$7–$11",
     description: "Styptic powder to quickly help stop minor bleeding from a too-short nail trim.",
-    covers: ["Styptic powder"], // pairs with the nail clippers above for the combined "+ styptic powder" cost-builder line
+    covers: [], // "Styptic powder" now links the Kwik Stop jar below, which is sized and labeled for birds and small animals
     pets: ["dogs-cats", "small-mammals", "birds"], // same standard nail-trim companion across guinea pig/rabbit and bird nail care, not just dogs/cats
   },
   {
@@ -2962,7 +2962,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$30–$40",
     description: "Digital aviary scale reading in grams with a removable wooden perch, so a bird stands naturally instead of fighting a flat platform. Daily gram tracking catches the slow weight loss that often precedes illness in African greys, long before it's visible by eye.",
-    covers: ["Gram scale (weight monitoring)", "Gram scale", "A gram scale"],
+    covers: ["Gram scale (weight monitoring)", "A gram scale"], // "Gram scale" now links the kitchen scale below, which the owner chose for every species
     pets: ["birds"],
   },
   {
@@ -4579,6 +4579,39 @@ export const AFFILIATE_PRODUCTS = [
     description: "Wooden hideout with a window, sized for a guinea pig to turn around inside.",
     covers: ["Guinea pig hideout"],
     pets: ["small-mammals"],
+  },
+  {
+    slug: "nail-clippers-pet-republique-small-animal",
+    product: "Pet Republique Cat Nail Clippers, Stainless Steel, for Cats, Kittens, Hamsters, Rabbits, Birds and Small Breed Animals",
+    category: "Small Mammal & Exotic Pet Gear",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B01GBSSKVU?tag=beastlyfacts-20",
+    price: "~$8",
+    description: "Small stainless-steel clippers sized for rabbits, guinea pigs, chinchillas, hamsters and small birds. Not sized for a large parrot's nails.",
+    covers: ["Nail clippers for small animals", "Small nail clippers", "Nail clippers sized for a small bird"],
+    pets: ["small-mammals", "birds"],
+  },
+  {
+    slug: "styptic-powder-kwik-stop",
+    product: "Miracle Care Kwik Stop Styptic Powder for Dogs, Cats, and Birds, 0.5 oz",
+    category: "Small Mammal & Exotic Pet Gear",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B0002H3RBU?tag=beastlyfacts-20",
+    price: "~$9",
+    description: "Styptic powder that stops the bleeding from a nail trimmed into the quick. Keep it open within reach before every trim.",
+    covers: ["Styptic powder", "Styptic powder made for birds"],
+    pets: ["small-mammals", "birds", "dogs-cats"],
+  },
+  {
+    slug: "gram-scale-etekcity-kitchen",
+    product: "Etekcity Food Kitchen Scale, Digital Grams and Ounces, 11 lb",
+    category: "Small Mammal & Exotic Pet Gear",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B0113UZJE2?tag=beastlyfacts-20",
+    price: "~$14",
+    description: "Digital kitchen scale reading in 1 g steps up to 5 kg. Weigh a small animal in a lidded tub, or a bird on a perch or in a small box set on top, and tare the container first.",
+    covers: ["Gram scale", "Kitchen scale that reads in grams", "Digital gram scale", "Kitchen scale in grams", "Digital kitchen scale in grams", "Digital kitchen scale reading in 1 g steps, with a perch or box on top"],
+    pets: ["small-mammals", "birds", "reptiles-amphibians"],
   },
 ];
 

@@ -502,8 +502,9 @@ export const snakeGuides = [
       "Water dish big enough for the snake to get into",
       "A separate container for feeding off the substrate",
       "Feeding tongs",
+      "Kitchen scale in grams",
       "Frozen/thawed mice",
-      "Optional low-output T5 UVB, 5.0 or 6%, half to two thirds of the enclosure length",
+      "Optional low-output T5 UVB, 5.0 or 6%, half to two thirds of the enclosure length (check the length against your enclosure)",
       "Optional night heat: heat mat and on/off thermostat, only below 60°F",
     ],
     faqs: [

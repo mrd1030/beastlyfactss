@@ -94,6 +94,7 @@ SECTIONS = [
         ("glossary", "Glossary, A to H"),
         ("glossary2", "Glossary, I to Z"),
         ("sources", "Sources"),
+        ("sources2", "Sources, Continued"),
         ("disagree", "Where the Sources Disagree"),
         ("about", "Version History &amp; About"),
     ]),
