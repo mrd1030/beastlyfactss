@@ -39,6 +39,7 @@ SECTIONS = [
         ("temperature", "The Temperature Gradient &amp; Heat"),
         ("thermostats", "Thermostats, Probes &amp; Timers"),
         ("uvb", "UVB: Tube, Strength &amp; Mounting Distance"),
+        ("uvb2", "UVB: Meter &amp; Daylight Lamp"),
         ("substrate", "Substrate, Furnishings &amp; Bioactive Setups"),
         ("cleaning", "Cleaning &amp; Hygiene"),
     ]),
