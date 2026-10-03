@@ -691,7 +691,7 @@ const CARE_PACKAGE_STORE = {
   },
   budgie: {
     name: 'Budgie Care Package',
-    edition: '2.1',
+    edition: '3.0',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENBy9qtY3Ob6vaLv2cNMGc',
   },
@@ -709,7 +709,7 @@ const CARE_PACKAGE_STORE = {
   },
   lovebird: {
     name: 'Lovebird Care Package',
-    edition: '2.1',
+    edition: '3.0',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENC89qtY3Ob6vav2ARp6wq',
   },
@@ -753,7 +753,7 @@ const CARE_PACKAGE_STORE = {
   // was ever sold in the Sandbox.
   cockatiel: {
     name: 'Cockatiel Care Package',
-    edition: '1.3',
+    edition: '3.0',
     priceIdSandbox: '',
     priceIdLive: 'price_1ULwwQ9qtY3Ob6vaZoUuXLtw',
   },
