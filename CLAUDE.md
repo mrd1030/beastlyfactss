@@ -60,8 +60,11 @@ Solo developer passion project. Prefer fast, decisive work over exploration.
   of work in flight across branches). The live card is the untracked
   .where-are-we.json in the main checkout. The .md is only ever combined,
   never overwritten: every item from both sides, nothing dropped, Done wins
-  over In progress over Waiting, the newer Saved line kept. Write it only when
-  I say "save the card to git" (commit only it, [CI Skip], push main); "load
+  over In progress over Waiting over Up next, the newer Saved line kept.
+  In progress holds only what is being worked on right now; the rest of a
+  batch waits in order under Up next (the card's "next" list). Write the .md
+  only when I say "save the card to git" (commit only it, [CI Skip], push
+  main); "load
   the card from git" combines it back into the card. When a branch that
   changes the built site is done, ask me whether to combine the card into the
   .md on it before the merge. A merge conflict in it is resolved the same way.

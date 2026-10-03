@@ -1,14 +1,17 @@
 import { atom, read, update } from 'claude-code'
-import type { EngineInterface, Register } from 'claude-code'
+import type { EngineInterface, Register, RenderElement } from 'claude-code'
 
 import type { Archived, Armed, Backup, Card, Ledger } from '../types'
 
-const EMPTY: Card = { done: [], doing: [], waiting: [], updatedAt: null }
+const EMPTY: Card = { done: [], doing: [], next: [], waiting: [], updatedAt: null }
 const EMPTY_LEDGER: Ledger = { doneAt: {}, archived: [], undo: null }
 const card = atom({ plugin: 'where-are-we', key: 'card' } as const, EMPTY)
 const ledger = atom({ plugin: 'where-are-we', key: 'ledger' } as const, EMPTY_LEDGER)
 const picked = atom({ plugin: 'where-are-we', key: 'picked' } as const, [] as string[])
 const armed = atom({ plugin: 'where-are-we', key: 'armed' } as const, null as Armed | null)
+// Hide folds the card to one line of counts with a Show button. Kept in the
+// mod's store per repo, so it holds across sessions on this machine.
+const isHidden = atom({ plugin: 'where-are-we', key: 'isHidden' } as const, false)
 
 // Archive, Archive all done and Reset take two presses: the first turns the
 // button into "Press again", which lapses after CONFIRM_MS.
@@ -34,7 +37,10 @@ const BACKUP_FILE = '.where-are-we-backups.json'
 const SNAPSHOT = 'WHERE_ARE_WE.md'
 const ARCHIVE_DOC = 'archive/docs-completed/WHERE_ARE_WE_COMPLETED_<YYYY-MM-DD>.md'
 const MAX_DONE = 30
-const SHOWN_DONE = 8
+// Rows drawn per section before the rest fold into "+N more", so a long list
+// cannot push the conversation off the screen.
+const SHOWN_DONE = 6
+const SHOWN_ROWS = 6
 
 const list = (v: unknown) =>
   Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string' && x.trim() !== '').map(x => x.trim()) : []
@@ -85,6 +91,7 @@ function parseCard(text: string): Card {
   return {
     done: list(raw.done).slice(-MAX_DONE),
     doing: list(raw.doing),
+    next: list(raw.next),
     waiting: list(raw.waiting),
     updatedAt: typeof raw.updatedAt === 'number' ? raw.updatedAt : null,
   }
@@ -272,11 +279,15 @@ function summary(c: Card, path: string, archivePath: string, backupsPath: string
     'Where-are-we card (shown to the owner above the prompt, saved across sessions):',
     `Done: ${line(c.done.slice(-8))}`,
     `In progress: ${line(c.doing)}`,
+    `Up next: ${line(c.next)}`,
     `Waiting on owner's OK: ${line(c.waiting)}`,
     `Keep it current by writing ${path} with the Write tool whenever an item starts, finishes, or comes to need`,
     'the owner\'s OK (Fable reviews, merges, pushes to main, anything you must not start unasked).',
-    'The file is JSON: {"done": [...], "doing": [...], "waiting": [...]}, each list complete (done oldest first),',
-    'items short noun phrases under 60 characters, no em or en dashes. Write the whole file each time.',
+    'The file is JSON: {"done": [...], "doing": [...], "next": [...], "waiting": [...]}, each list complete',
+    '(done oldest first), items short noun phrases under 60 characters, no em or en dashes. Write the whole file.',
+    '"doing" (In progress) holds ONLY what is being worked on this moment, usually one item. Everything planned',
+    'but not started goes in "next" (Up next), in the order it will be done; move the first of it into "doing"',
+    'when you start it. A batch of many items is one in "doing" and the rest queued in "next".',
     `The owner archives Done items with the card's buttons; the mod keeps them in ${archivePath}.`,
     'An archived item never goes back on the card or into the snapshot; repeat work gets a distinct name.',
     `Before every Archive, Reset and Undo the mod copies the card and that file into ${backupsPath}`,
@@ -286,8 +297,8 @@ function summary(c: Card, path: string, archivePath: string, backupsPath: string
     `Both files are untracked. ${SNAPSHOT} is the card's tracked snapshot and ${ARCHIVE_DOC}`,
     '(one file; create it with today\'s date only if none exists) is the archive\'s; both change only on request.',
     `Both are only ever COMBINED, never overwritten: add what is missing, drop nothing. In ${SNAPSHOT}, an item`,
-    'in two states takes Done over In progress over Waiting, archived items are left out, and the newer',
-    '"Saved <date time, US Eastern>" line is kept. Sections: Done, In progress, Waiting on your OK.',
+    'in two states takes Done over In progress over Waiting over Up next, archived items are left out, and the',
+    'newer "Saved <date time, US Eastern>" line is kept. Sections: Done, In progress, Up next, Waiting on your OK.',
     'In the archive doc, batches go newest first, each headed by its archivedAtText, one line per task:',
     '"<task> (done <doneAtText>)"; skip a task already listed in the same batch.',
     `"Save the card to git": combine the card into ${SNAPSHOT} and the archive file into the archive doc, commit`,
@@ -299,9 +310,22 @@ function summary(c: Card, path: string, archivePath: string, backupsPath: string
   ].join('\n')
 }
 
+const hiddenKey = async ($: EngineInterface) => `hidden:${norm(await homeDir($))}`
+
+async function setHidden($: EngineInterface, value: boolean) {
+  await update($, isHidden, () => value)
+  await $.store.set(await hiddenKey($), value)
+}
+
 export const register: Register = on => {
   on('session.start', async ($, e, next) => {
     await load($)
+    try {
+      const saved = await $.store.get(await hiddenKey($))
+      await update($, isHidden, () => saved === true)
+    } catch {
+      await update($, isHidden, () => false)
+    }
     return next(e)
   })
 
@@ -314,13 +338,13 @@ export const register: Register = on => {
   // After a successful Write or Edit of the card file, redraw from the file.
   on('tool.call', { tool: 'Write' }, async ($, e, next) => {
     const ran = await next(e)
-    if (await isCardWrite($, e.file_path, ran)) await load($, true)
+    if (await isCardWrite($, String(e.file_path ?? ''), ran)) await load($, true)
     return ran
   })
 
   on('tool.call', { tool: 'Edit' }, async ($, e, next) => {
     const ran = await next(e)
-    if (await isCardWrite($, e.file_path, ran)) await load($, true)
+    if (await isCardWrite($, String(e.file_path ?? ''), ran)) await load($, true)
     return ran
   })
 
@@ -329,8 +353,9 @@ export const register: Register = on => {
     const l = await read($, ledger)
     const p = await read($, picked)
     const a = await read($, armed)
+    const hidden = await read($, isHidden)
     const below = await next(e)
-    const hasItems = c.done.length + c.doing.length + c.waiting.length > 0
+    const hasItems = c.done.length + c.doing.length + c.next.length + c.waiting.length > 0
 
     // An empty card still shows while Undo can bring something back.
     if (e.props.hasSurvey || (!hasItems && !l.undo)) {
@@ -338,23 +363,48 @@ export const register: Register = on => {
     }
 
     const { Box, Button, Text } = $.ui.resolve(e)
+    const stack = (top: RenderElement) =>
+      below ? (
+        <Box flexDirection="column">
+          {top}
+          {below}
+        </Box>
+      ) : (
+        top
+      )
+
+    // Hidden: one line of counts, and Show to open the card again.
+    if (hidden) {
+      const counts = `${c.done.length} done · ${c.doing.length} in progress · ${c.next.length} up next · ${c.waiting.length} waiting`
+      return stack(
+        <Box borderStyle="round" borderColor="magenta" paddingX={1}>
+          <Text color="magenta" bold>
+            Where are we{' '}
+          </Text>
+          <Text dimColor>{`${counts} `}</Text>
+          <Button key="show" variant="primary" label="Show" onPress={() => setHidden($, false)} />
+        </Box>,
+      )
+    }
     const shown = c.done.slice(-SHOWN_DONE)
     const earlier = c.done.length - shown.length
     const when = c.updatedAt === null ? '' : stamp(c.updatedAt)
     const toggle = (t: string) => update($, picked, x => (x.includes(t) ? x.filter(y => y !== t) : [...x, t]))
 
-    const section = (label: string, color: string, items: string[], mark: string) =>
+    // `mark` of null numbers the rows instead, for the queue's order.
+    const section = (label: string, color: string, items: string[], mark: string | null) =>
       items.length === 0 ? null : (
         <Box key={label} flexDirection="column">
           <Text color={color} bold>
             {label}
           </Text>
-          {items.map((item, i) => (
+          {items.slice(0, SHOWN_ROWS).map((item, i) => (
             <Text key={`${label}${i}`} wrap="truncate-end">
               {'  '}
-              {mark} {item}
+              {mark ?? `${i + 1}.`} {item}
             </Text>
           ))}
+          {items.length > SHOWN_ROWS ? <Text dimColor>  +{items.length - SHOWN_ROWS} more</Text> : null}
         </Box>
       )
 
@@ -413,20 +463,16 @@ export const register: Register = on => {
           ) : null}
           {hasItems && l.undo ? gap('g3') : null}
           {l.undo ? <Button key="undo" label="Undo" onPress={() => undo($)} /> : null}
+          {gap('g4')}
+          <Button key="hide" label="Hide" onPress={() => setHidden($, true)} />
         </Box>
         {done}
         {section('In progress', 'blue', c.doing, '›')}
+        {section('Up next', 'cyan', c.next, null)}
         {section('Waiting on your OK', 'red', c.waiting, '?')}
       </Box>
     )
 
-    return below ? (
-      <Box flexDirection="column">
-        {mine}
-        {below}
-      </Box>
-    ) : (
-      mine
-    )
+    return stack(mine)
   })
 }

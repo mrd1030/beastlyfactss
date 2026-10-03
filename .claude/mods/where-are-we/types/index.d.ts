@@ -1,6 +1,8 @@
 export type Card = {
   done: string[]
   doing: string[]
+  // The queue: work lined up after what is in progress, in order.
+  next: string[]
   waiting: string[]
   updatedAt: number | null
 }
@@ -45,6 +47,6 @@ export type Armed = { key: string; at: number }
 
 declare module 'claude-code' {
   interface PluginState {
-    'where-are-we': { card: Card; ledger: Ledger; picked: string[]; armed: Armed | null }
+    'where-are-we': { card: Card; ledger: Ledger; picked: string[]; armed: Armed | null; isHidden: boolean }
   }
 }
