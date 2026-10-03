@@ -576,8 +576,8 @@ export const CARE_PACKAGE_COPY = {
   'betta-fish': {
     hook: 'The tank is cycled before the fish goes in. Everything else is detail.',
     heroParagraph:
-      'A 37-page printable manual with tank, heater and lid, a fishless cycling walkthrough, the water numbers that actually matter, feeding without overfeeding, five health pages with dosing limits, and a blackout plan.',
-    heroTicks: ['37 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
+      'A 53-page printable manual with tank, heater and lid, a fishless cycling walkthrough, the water numbers that actually matter, feeding without overfeeding, choosing a healthy betta and quarantine, eight health pages with dosing limits, and a power outage plan.',
+    heroTicks: ['53 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
     roulette: [
       'A bowl on a desk, room temperature, no filter',
       '"Add the fish and the tank will cycle itself"',
@@ -591,21 +591,21 @@ export const CARE_PACKAGE_COPY = {
       'A pellet staple, a feeding schedule, and why a betta stops eating',
     ],
     inside: [
-      { emoji: '🪣', title: 'Tank, heater and lid', line: 'Tank size, the heater and the lid, and the temperature held steady, never room temperature.' },
-      { emoji: '💧', title: 'The nitrogen cycle', line: 'Filtration and the nitrogen cycle, fishless cycling step by step, water quality and testing, water changes and keeping the cycle.' },
-      { emoji: '⚠️', title: 'Health and red flags', line: 'Fin rot and ich, velvet and columnaris, swim bladder, dropsy and mycobacteriosis, and finding a vet.' },
-      { emoji: '🥣', title: 'Diet', line: 'The feeding schedule, why a betta stops eating, the food chart and the never-feed list.' },
-      { emoji: '🐟', title: 'Behavior and tankmates', line: 'Reading a healthy betta, stress signals and behavior, tankmates, and enrichment from the research.' },
-      { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist and water targets, emergency card, budget and shopping list, first 30 days, symptom reference, blackout plan, pet-sitter sheet, and the logs.' },
+      { emoji: '🪣', title: 'Tank, heater and lid', line: 'Tank size, type and where it goes, the heater and thermometer, filtration and gentle flow, substrate, plants and decor, and cleaning.' },
+      { emoji: '💧', title: 'The nitrogen cycle', line: 'The nitrogen cycle and fishless cycling, fish-in cycling and a stalled cycle, water testing and hardness, water changes and conditioner.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Red flags and testing the water first, finding a vet, fin rot, ich and velvet, columnaris, swim bladder, dropsy and fish tuberculosis, and medication rules.' },
+      { emoji: '🥣', title: 'Diet', line: 'The feeding schedule, pellets and the food chart, treats and the never-feed list, why a betta stops eating, and body condition.' },
+      { emoji: '🐟', title: 'Handling, arrival and behavior', line: 'Handling, body language, flaring and bubble nests, enrichment from the research, choosing a healthy betta, quarantine, tankmates and fry.' },
+      { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist and targets, emergency card, budget and shopping list, first 30 days, symptom reference, power outage plan, pet-sitter sheet, and the logs.' },
     ],
     previewHeadline: 'The pages that keep the water at zero.',
     previews: [
       { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
-      { page: 7, alt: 'Fishless cycling, step by step' },
-      { page: 8, alt: 'Water quality and testing' },
-      { page: 18, alt: 'Fin rot and ich' },
-      { page: 24, alt: 'Emergency and quick targets card' },
-      { page: 27, alt: 'Symptom quick reference table' },
+      { page: 7, alt: 'Temperature, heater and thermometer' },
+      { page: 15, alt: 'Diet and feeding schedule' },
+      { page: 31, alt: 'Ich and velvet' },
+      { page: 37, alt: 'Emergency and quick targets card' },
+      { page: 40, alt: 'Symptom quick reference table' },
     ],
     whoFor: [
       'New betta owners who have not bought the tank yet, which is the right time',
