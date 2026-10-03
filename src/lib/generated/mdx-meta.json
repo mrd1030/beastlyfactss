@@ -22007,7 +22007,7 @@
     "title": "Gerbil vs. Guinea Pig: Which Small Pet Actually Fits Your Space",
     "seoTitle": "Gerbil vs. Guinea Pig: Full Comparison",
     "seoDescription": "Gerbil vs guinea pig: real differences in size, space, lifespan, and diet needs, compared side by side.",
-    "lastUpdated": "2026-09-14",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Gerbil or guinea pig? The differences in size, lifespan, and daily diet needs, not just which one is easier to hold, since both need company either way.",
     "date": "2026-09-01",
@@ -22040,7 +22040,7 @@
       },
       {
         "q": "Which is bigger, a gerbil or a guinea pig?",
-        "a": "Guinea pigs, by a lot. An adult gerbil weighs only a few ounces and fits easily in two cupped hands. An adult guinea pig weighs 1.5 to 2.5 pounds and needs a larger enclosure, at least 7.5 square feet even for a single pig, compared to a fraction of that for a pair of gerbils."
+        "a": "Guinea pigs, by a lot. An adult gerbil weighs only a few ounces and fits easily in two cupped hands. An adult guinea pig weighs 1.5 to 2.6 pounds and needs a larger enclosure, at least 7.5 square feet even for a single pig, compared to a fraction of that for a pair of gerbils."
       },
       {
         "q": "Which lives longer, a gerbil or a guinea pig?",
@@ -24819,9 +24819,9 @@
     "path": "/content/guides/guinea-pig-cost-guide.mdx",
     "slug": "guinea-pig-cost-guide",
     "title": "How Much Does a Guinea Pig Really Cost?",
-    "seoTitle": "Guinea Pig Price: $10 to $60, Plus $100 to $250 Setup",
-    "seoDescription": "Guinea pigs cost just $10-60, but budget $100-250 upfront and $60-135 a month for the pair every credible source recommends.",
-    "lastUpdated": "2026-09-25",
+    "seoTitle": "Guinea Pig Price: $10 to $60, Plus $158 to $204 Setup",
+    "seoDescription": "Guinea pigs cost just $10-60, but budget $158-204 upfront and $60-135 a month for the pair every credible source recommends.",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Guinea pigs are cheap to adopt and expensive to underestimate. The animal itself costs almost nothing, but guinea pigs are social animals that need a same-species companion, so most of the budgeting math here is about caring for two, not one.",
     "date": "2026-07-16",
@@ -24842,13 +24842,13 @@
     "image": "/assets/images/guinea-pig-cost.jpg",
     "imageAlt": "Two guinea pigs sharing a properly sized cage with hay, dishes, and a hideout",
     "emoji": "🐹",
-    "lastReviewed": "2026-07-16",
+    "lastReviewed": "2026-10-03",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "How much does a guinea pig itself cost?",
-        "a": "$10 to $60 from a shelter, around $50 at most pet stores, and $100 or more for specialty breeds like Teddy, Abyssinian, or Silkie. The animal is the cheapest part of ownership, the cage and the fact that you need two are where the budget goes."
+        "a": "$10 to $60 from a shelter, around $50 at most pet stores, and $100 or more for specialty breeds like Teddy or Silkie. The animal is the cheapest part of ownership, the cage and the fact that you need two are where the budget goes."
       },
       {
         "q": "Why does a guinea pig budget need to plan for two animals, not one?",
@@ -24856,25 +24856,25 @@
       },
       {
         "q": "What should I budget for a starter setup?",
-        "a": "Most first-time setups, including a properly sized cage, bedding, dishes, and a hideout, land around $100 to $250. The cage is the single biggest line item, and it's worth getting the size right the first time rather than upgrading later."
+        "a": "Most first-time setups, including a properly sized cage, bedding, a food dish, a water bottle, and a hideout, add up to about $158 to $204. The cage is the single biggest line item, and it's worth getting the size right the first time rather than upgrading later."
       },
       {
         "q": "What are the ongoing monthly costs for guinea pigs?",
-        "a": "$33 to $70 a month for one, $60 to $135 for a pair, and a pair is the recommended minimum. Pellets account for roughly $30 to $50 of that, fresh vegetables $20 to $50, and timothy hay $40 to $60."
+        "a": "$33 to $70 a month for one, $60 to $135 for a pair, and a pair is the recommended minimum. Hay, pellets and fresh vegetables are the recurring lines, and hay grows with the number of animals because it is unlimited."
       }
     ],
     "relatedProducts": [
       "cc-cage-guinea-pig",
       "timothy-hay-small-pets",
-      "small-pet-hideout-igloo",
-      "small-pet-paper-bedding"
+      "guinea-pig-hideout-niteangel-wood-house",
+      "bedding-kaytee-clean-cozy-white"
     ],
     "factFile": false,
     "animalDay": null,
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 8,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -24951,7 +24951,7 @@
     "title": "Guinea Pig Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Guinea Pigs Eat? Diet and Feeding Schedule",
     "seoDescription": null,
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Unlimited hay, a daily vitamin C source, and why a guinea pig that skips even a few meals needs same-day attention, not a wait-and-see approach.",
     "date": "2026-07-26",
@@ -24974,7 +24974,7 @@
     "image": "/assets/images/guinea-pig-feeding.jpg",
     "imageAlt": "Guinea pig eating fresh hay and bell pepper next to a water bottle",
     "emoji": "🐹",
-    "lastReviewed": "2026-09-24",
+    "lastReviewed": "2026-10-03",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -25012,8 +25012,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
-    "headingCount": 7,
+    "sourceCount": 6,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -25024,7 +25024,7 @@
     "title": "How to Handle a Guinea Pig Without Scaring It",
     "seoTitle": "How to Handle a Guinea Pig Safely",
     "seoDescription": "Guinea pigs read being lifted as a predator attack. Approach from the front, support both ends with two hands, and stay low to the floor: a fall can kill.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Guinea pigs are prey animals, and being lifted off the ground is, to their instincts, exactly what a predator attack looks like. That doesn't mean they can't become comfortable with handling, it means the approach matters more than it would with a less nervous pet.",
     "date": "2026-07-16",
@@ -25072,8 +25072,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
-    "headingCount": 8,
+    "sourceCount": 5,
+    "headingCount": 11,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1248,
     "imageHeight": 832
@@ -25084,7 +25084,7 @@
     "title": "Common Guinea Pig Health Issues (And Why Vitamin C Matters So Much)",
     "seoTitle": "Guinea Pig Health Issues: Signs & Causes",
     "seoDescription": "Guinea pigs are obligate nasal breathers, so respiratory infections are emergencies. GI stasis and vitamin C deficiency are the other two to watch.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Guinea pigs mask illness well, which means routine care matters more than it might seem to when everything looks fine. A handful of conditions come up often enough that every owner should be able to recognize them.",
     "date": "2026-07-16",
@@ -25119,7 +25119,7 @@
       },
       {
         "q": "What are the signs of dental disease in guinea pigs?",
-        "a": "Drooling, weight loss, and unusually small droppings. The molars can overgrow while the front incisors still look normal, which is part of why it catches owners off guard. Chronic cases sometimes need repeat trimming under anesthesia as often as once a month."
+        "a": "Drooling, weight loss, and unusually small droppings. The molars can overgrow while the front incisors still look normal, which is part of why it catches owners off guard. Severe or chronic cases can need the procedure repeated under anesthesia as often as every 4 to 6 weeks."
       },
       {
         "q": "How often should a healthy-looking guinea pig see a vet?",
@@ -25136,8 +25136,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
-    "headingCount": 12,
+    "sourceCount": 6,
+    "headingCount": 15,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -25148,7 +25148,7 @@
     "title": "Is It Legal to Own a Guinea Pig? The Short Answer",
     "seoTitle": "Are Guinea Pigs Legal? Yes, in All 52 Jurisdictions",
     "seoDescription": "Guinea pigs are legal in all 52 US jurisdictions, with only Hawaii attaching a condition. No US state requires keeping them in pairs, though Switzerland does.",
-    "lastUpdated": "2026-09-11",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "The guinea pig is the least restricted animal on this entire map, cleared in all 52 jurisdictions with only Hawaii attaching a condition. The question worth answering instead is the pairs one, and the answer is not what most people have heard.",
     "date": "2026-09-11",
@@ -25168,13 +25168,13 @@
     "image": "/assets/guides/guinea-pig-legal.jpg",
     "imageAlt": "Two guinea pigs together on a bed of timothy hay",
     "emoji": "🐹",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-10-03",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "Are guinea pigs legal in all 50 states?",
-        "a": "Yes, and in DC and New York City as well. Across all 52 jurisdictions checked, only Hawaii attaches anything, and what it attaches is a conditional approval rather than a restriction. No state requires a permit to keep one."
+        "a": "Yes, and in DC and New York City as well. Across all 52 jurisdictions checked, only Hawaii attaches anything, and what it attaches is a conditional approval rather than a restriction. No state requires a permit to keep one. Hawaii requires an import permit and a vet certificate to bring one in."
       },
       {
         "q": "Is it illegal to buy only one guinea pig?",
@@ -25195,7 +25195,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 7,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -25207,7 +25207,7 @@
     "title": "Guinea Pig Scurvy: Why Vitamin C Isn't Optional",
     "seoTitle": "Guinea Pig Scurvy: Vitamin C Guide",
     "seoDescription": "Guinea pigs need 10-25 mg/kg of vitamin C daily, and a quarter of a bell pepper covers it. Degraded pellets alone won't prevent scurvy.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Guinea pigs can't make their own vitamin C, unlike almost every other small pet. Here's what scurvy actually looks like and why pellets alone aren't enough.",
     "date": "2026-07-09",
@@ -25263,7 +25263,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1600,
@@ -25275,7 +25275,7 @@
     "title": "Guinea Pig Housing and Diet: Why Vitamin C Is Non-Negotiable",
     "seoTitle": "Guinea Pig Cage Setup & Diet Guide",
     "seoDescription": "Guinea pigs need 7.5 sq ft solo or 10.5 sq ft for a pair, 65-79°F, and 10-25 mg/kg of vitamin C daily since they can't make their own.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Guinea pig care is fairly forgiving once the basics are right, but there's one dietary detail that sets this species apart from almost every other small pet, and getting it wrong has real health consequences.",
     "date": "2026-07-16",
@@ -25314,7 +25314,7 @@
       },
       {
         "q": "What should I avoid feeding a guinea pig?",
-        "a": "Alfalfa hay for adults, which is too high in calcium and appropriate only for very young guinea pigs, iceberg lettuce, which has essentially no nutritional value, and high-sugar fruit as anything more than an occasional treat. Also don't add vitamin C to the water, it changes the taste and often leads guinea pigs to drink less."
+        "a": "Alfalfa hay for adults, which is too high in calcium and suited only to growing, pregnant, or nursing guinea pigs, iceberg lettuce, which has essentially no nutritional value, and high-sugar fruit as anything more than an occasional treat. Also don't add vitamin C to the water, it changes the taste and often leads guinea pigs to drink less."
       }
     ],
     "relatedProducts": [
@@ -25329,8 +25329,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
-    "headingCount": 7,
+    "sourceCount": 6,
+    "headingCount": 8,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -42778,7 +42778,7 @@
     "title": "Grooming, Nails, and Molting in Small Mammals",
     "seoTitle": "Small Mammal Grooming, Nails and Molting Guide",
     "seoDescription": "How often rabbits, guinea pigs and chinchillas molt, nail trim technique, scent glands, and why a bath is a genuine hazard for some small mammals.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Molting, nail trims, and scent glands look like tidiness chores, but a rabbit cannot vomit swallowed fur, which is what turns a heavy molt into a genuine GI risk.",
     "date": "2026-09-04",
@@ -42804,7 +42804,7 @@
     "image": "/assets/images/small-mammal-grooming-nails-molting-guide.jpg",
     "imageAlt": "Hands gently trimming a rabbit's nail while checking the pink quick before the cut",
     "emoji": "✂️",
-    "lastReviewed": "2026-09-25",
+    "lastReviewed": "2026-10-03",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
