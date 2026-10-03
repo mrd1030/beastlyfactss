@@ -6,7 +6,7 @@
     node ../_render.mjs hognose-snake "Hognose Snake" 1.1 --measure  # overflow check
     node ../_render.mjs hognose-snake "Hognose Snake" 1.1            # render the PDF
 
-This is edition 1.1 (46 pages); the 1.0 PDF is in `rebuilt/past versions/`. The PDF is `rebuilt/Hognose_Snake_Care_Package_v1.1.pdf`. On Windows, set `CHROME_BIN` to
+This is edition 1.1 (47 pages); the 1.0 PDF is in `rebuilt/past versions/`. The PDF is `rebuilt/Hognose_Snake_Care_Package_v1.1.pdf`. On Windows, set `CHROME_BIN` to
 Chrome first.
 
 `build.py` reads every `pages_*.html` file in name order, assigns page numbers in document

@@ -124,7 +124,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.3,
     price: "$25–$40",
     description: "Under-tank heater with thermostat to provide gentle belly heat without dangerous overheating.",
-    covers: ["Under-tank heater with/+ thermostat", "Heat mat with thermostat", "Heat source with thermostat", "Thermostat-controlled heat source", "Low-wattage heat lamp/mat with thermostat", "Under-tank heater with thermostat", "Under-tank heater + thermostat", "Side-mounted heat mat with a thermostat", "Under-tank heater, or an overhead halogen basking bulb", "Under-tank heat mat", "Under-tank heat mat and an on/off probe thermostat", "Side-mounted heat mat on a thermostat, or a low-wattage overhead bulb", "Side- or back-mounted heat mat", "Under-tank heat pad, overhead heat source, or both", "Heat source (under-tank heater or overhead halogen)", "Under-tank heater with a thermostat", "Under-tank heat mat and thermostat"],
+    covers: ["Under-tank heater with/+ thermostat", "Heat mat with thermostat", "Heat source with thermostat", "Thermostat-controlled heat source", "Low-wattage heat lamp/mat with thermostat", "Under-tank heater with thermostat", "Under-tank heater + thermostat", "Side-mounted heat mat with a thermostat", "Under-tank heater, or an overhead halogen basking bulb", "Under-tank heat mat", "Under-tank heat mat and an on/off probe thermostat", "Side-mounted heat mat on a thermostat, or a low-wattage overhead bulb", "Side- or back-mounted heat mat", "Under-tank heat pad, overhead heat source, or both", "Heat source (under-tank heater or overhead halogen)", "Under-tank heater with a thermostat", "Under-tank heat mat and thermostat", "Optional night heat: heat mat and on/off thermostat, only below 60°F"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -196,7 +196,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$15–$30",
     description: "Natural wood decor that adds climbing structure, cover, and a more natural-looking habitat.",
-    covers: ["Branches and cork bark", "Climbing branches", "Sturdy climbing branches", "Branches for climbing/enrichment", "Cork bark and branches", "Branches for climbing", "Branches and climbing structures", "Sturdy climbing branches and broad leaves or platforms, mounted high", "Branches or cork bark for climbing"],
+    covers: ["Branches and cork bark", "Climbing branches", "Sturdy climbing branches", "Branches for climbing/enrichment", "Cork bark and branches", "Branches for climbing", "Branches and climbing structures", "Sturdy climbing branches and broad leaves or platforms, mounted high", "Branches or cork bark for climbing", "Branches for cover"],
     pets: ["reptiles-amphibians", "small-mammals"],
   },
   {
@@ -2878,7 +2878,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.0,
     price: "$18–$25",
     description: "Halogen basking bulb, the specialist-endorsed heat source for this species over ceramic, colored, or red bulbs.",
-    covers: ["Halogen basking bulb + fixture", "Low-wattage halogen basking bulb, or an under-tank heat mat", "Halogen basking bulb"],
+    covers: ["Halogen basking bulb + fixture", "Low-wattage halogen basking bulb, or an under-tank heat mat", "Halogen basking bulb", "Low-wattage halogen basking bulb, 50 W"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -3744,7 +3744,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B07WD34M2Y?tag=beastlyfacts-20",
     description: "Clear latching tote for dig boxes, laying bins, feeding containers and soaking. Cheap, easy to clean and simple to replace.",
-    covers: [],
+    covers: ["A separate container for feeding off the substrate"],
     pets: ["reptiles-amphibians", "small-mammals"],
   },
   {
