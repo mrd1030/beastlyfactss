@@ -137,8 +137,8 @@ export const birdGuides = [
       "Food and water dishes",
       "Nail clippers",
       "Cage cover for nighttime darkness",
-      "Full-spectrum UV light made for birds, unless the bird gets unfiltered sunlight",
-      "Gram scale for weighing the bird",
+      "Full-spectrum avian UV lighting and fixture",
+      "Gram scale",
     ],
     faqs: [
       { q: "How much does a budgie itself cost?", a: "$20 to $80. It's the cheapest part of ownership, the cage and long-term avian vet care are where the budget goes." },
