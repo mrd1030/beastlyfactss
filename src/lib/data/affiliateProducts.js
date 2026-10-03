@@ -1841,7 +1841,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.2,
     price: "$23–$33",
     description: "Hideout that gives pets a secure place to shelter, reduce stress, and rest.",
-    covers: ["Multiple large hides", "Multiple hides, one at each end of the gradient"],
+    covers: ["Multiple large hides", "Multiple hides, one at each end of the gradient", "Two snug hides, one warm side and one cool side"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1901,7 +1901,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$14–$24",
     description: "Simple thermostat that turns heaters on and off to keep a safer enclosure temperature.",
-    covers: ["A thermostat, only if you are running supplemental heat to breed"], // genuinely multi-purpose per its own listing (brooder/greenhouse/incubator use) - also fits hedgehog/sugar glider heat mat setups
+    covers: ["A thermostat, only if you are running supplemental heat to breed", "Thermostat, one for every heat source"], // genuinely multi-purpose per its own listing (brooder/greenhouse/incubator use) - also fits hedgehog/sugar glider heat mat setups
     pets: ["reptiles-amphibians", "small-mammals"],
   },
   {
@@ -2091,7 +2091,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$30–$42",
     description: "Hideout that gives pets a secure place to shelter, reduce stress, and rest.",
-    covers: ["Cork bark rounds and sturdy branches"],
+    covers: ["Cork bark rounds and sturdy branches", "Cork bark rounds for cover"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -3654,7 +3654,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0190KNRK0?tag=beastlyfacts-20",
     description: "Overhead radiant heat panel that mounts to the enclosure ceiling and warms a broad area without light. Suits large PVC enclosures and heated shelters, on a thermostat.",
-    covers: [],
+    covers: ["Radiant heat panel, 80 W, for the 4x2x2"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -4246,7 +4246,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B099NRFK6T?tag=beastlyfacts-20",
     description: "LED plant light for planted and bioactive terrariums, and a simple way to set a day and night cycle for species without UVB needs.",
-    covers: [],
+    covers: ["Optional daylight LED for the 12-hour photoperiod"],
     pets: ["reptiles-amphibians"],
   },
   {

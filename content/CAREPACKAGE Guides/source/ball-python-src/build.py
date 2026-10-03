@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assemble the Ball Python care package, edition 3.0 (Python regius).
+"""Assemble the Ball Python care package, edition 3.1 (Python regius).
 
 Content files carry <!--PAGE key--> markers. Page numbers are assigned in
 document order, {{P:key}} tokens are resolved to those numbers, the TOC is
@@ -25,7 +25,7 @@ SRC = os.path.normpath(os.path.join(HERE, "..", "ball-python.html"))
 # (md5 f6a4f87bd683b71f83a2174e90502d8c).
 COVER = os.path.normpath(os.path.join(HERE, "..", "..", "images", "ball-python-cover-1.jpg"))
 
-EDITION = "3.0"
+EDITION = "3.1"
 
 # TOC: (section label, [(key, title), ...])
 SECTIONS = [
@@ -79,7 +79,8 @@ SECTIONS = [
         ("emergency", "Emergency &amp; Quick Targets Card"),
     ]),
     ("Section 09 &middot; Owner Tools", [
-        ("budget", "Budget &amp; Shopping List"),
+        ("budget", "Budget: Setup &amp; Shopping List"),
+        ("budget2", "Budget: Yearly Costs"),
         ("first30", "First 30 Days"),
         ("symptoms", "Symptom Quick Reference"),
         ("routine", "Daily, Weekly &amp; Seasonal Routine"),
