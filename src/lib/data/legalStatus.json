@@ -1689,7 +1689,8 @@
           "cite": "§ 671(c)(2)(D)",
           "quote": "Order Insectivora-Shrews, Moles, Hedgehogs, etc. All species (D)",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "Hedgehogs are restricted as a whole order, marked (D) for detrimental, so there is no pet route. The only possession permit, Animal Care, requires lawful possession before January 1992."
         },
         "GA": {
           "status": "banned",
@@ -1932,7 +1933,8 @@
           "status": "legal",
           "sourceId": "ar-unrestricted",
           "quote": "Four-toed or African Pygmy Hedgehog (Atelerix albiventris)",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The African pygmy hedgehog is named individually on Arkansas's unrestricted captive wildlife list, so it is exempt from the possession, breeder and importation permit codes."
         },
         "ID": {
           "status": "legal",
@@ -1955,14 +1957,16 @@
           "sourceId": "ri-250-40-05-3",
           "cite": "§ 3.17(A)(6)(a)(1)",
           "quote": "Four-toed (African pygmy) Hedgehog (Erinaceus albiventris) (Atelerix pruneri),",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Named on the § 3.17 list of animals that need no exotic animal possession permit."
         },
         "NH": {
           "status": "legal",
           "sourceId": "nh-fis800",
           "cite": "Fis 804.02(b)(7)(l)",
           "quote": "African pigmy hedgehog;",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The African pygmy hedgehog is named on New Hampshire's non-controlled possession list."
         },
         "MO": {
           "status": "legal",
@@ -1992,7 +1996,8 @@
           "cite": "12.6.2205(1)(a)",
           "quote": "African pygmy hedgehog - Atelerix albiventris and Atelerix algirus;",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "African pygmy hedgehogs are named on Montana's noncontrolled exotic wildlife list, so no permit is needed. The rule expressly preserves county and city ordinances, which can be stricter."
         },
         "WV": {
           "status": "legal",
@@ -2007,7 +2012,8 @@
           "sourceId": "ak-5aac92-029",
           "cite": "§ 92.029(b)",
           "quote": "Hedgehog, African Pygmy   Erinaceus albiventris",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The African pygmy hedgehog is named on the short list of species that need no live game permit in Alaska."
         },
         "SD": {
           "status": "legal",
@@ -2067,7 +2073,8 @@
           "sourceId": "ok-800-25-25-3",
           "cite": "§ 800:25-25-3(a)(15)",
           "quote": "The following wildlife species are exempt from import and export permits, commercial wildlife breeders licenses, noncommercial wildlife breeders licenses and commercial hunting area license requirements... (15) Hedgehogs.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Hedgehogs are named on Oklahoma's list of species exempt from import, export and breeder license requirements."
         },
         "NE": {
           "status": "unclear",
@@ -2115,7 +2122,8 @@
           "sourceId": "dc-8-1808",
           "cite": "§ 8-1808(j)(1)(F)",
           "quote": "Ferrets",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Ferrets are one of the seven categories the District allows as household pets."
         },
         "NYC": {
           "status": "banned",
@@ -2137,7 +2145,8 @@
           "status": "legal",
           "sourceId": "me-unrestricted",
           "quote": "Mustela putorius furo  Domestic Ferret",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "note": "Named on Maine's unrestricted species list as the domestic ferret, so it needs no importation or possession permit."
         },
         "NY": {
           "status": "legal",
@@ -2245,7 +2254,8 @@
           "cite": "NAC 503.140",
           "quote": "European ferret (Mustela putorius)",
           "localOverride": true,
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The European ferret is named on Nevada's list of species needing no permit. Clark County, Las Vegas and Henderson are frequently stricter than the state, so check the municipality."
         },
         "VA": {
           "status": "legal",
@@ -2309,14 +2319,16 @@
           "status": "legal",
           "sourceId": "ar-unrestricted",
           "quote": "European Domestic Ferret (Mustela putorius)",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The European domestic ferret is named individually on Arkansas's unrestricted captive wildlife list, so it is exempt from the possession, breeder and importation permit codes."
         },
         "ID": {
           "status": "legal",
           "sourceId": "id-130110",
           "cite": "§ 010.06",
           "quote": "dogs, cats ferrets, rabbits, rodents, non-venomous or non-dangerous reptiles and amphibians, non-poultry birds, hedgehogs, tenrecs, and sugar gliders",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Ferrets are named among the conventional pets, which sit outside Idaho's wildlife permit regime."
         },
         "KY": {
           "status": "legal",
@@ -2340,7 +2352,8 @@
           "sourceId": "nh-fis800",
           "cite": "Fis 804.02(b)(7)(g)",
           "quote": "Ferrets, domesticated (Mustela putorius furo);",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Domesticated ferrets are named on New Hampshire's non-controlled possession list."
         },
         "MO": {
           "status": "legal",
@@ -2370,7 +2383,8 @@
           "cite": "§ 87-5-702(2)",
           "quote": "The term includes livestock, as defined in 81-2-702, dogs, cats, rodents, Eurasian ferrets, and poultry.",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "The statutory definition of domestic animal names Eurasian ferrets, so a ferret is outside the exotic wildlife rules. Local rules can still be stricter than the state's."
         },
         "WV": {
           "status": "legal",
@@ -2385,7 +2399,8 @@
           "sourceId": "ak-5aac92-029",
           "cite": "§ 92.029(b)",
           "quote": "European ferret   Mustela putorius furo",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The European ferret is named on the short list of species that need no live game permit in Alaska."
         },
         "SD": {
           "status": "legal",
@@ -2446,7 +2461,8 @@
           "sourceId": "ok-800-25-25-3",
           "cite": "§ 800:25-25-3(a)(10)",
           "quote": "(10) Ferrets (except black-footed, Mustela nigripes).",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Ferrets are named on the exempt list, except the black-footed ferret. The exemption is from import, export and breeder permits, not a ban."
         },
         "NE": {
           "status": "legal",
@@ -2517,7 +2533,8 @@
           "cite": "§ 671(c)(2)(C)",
           "quote": "Order Marsupialia-Marsupials or Pouched Animals: All species (W)",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "Marsupials are restricted as a whole order, marked (W) for welfare, so the sugar glider has no pet route. The only possession permit, Animal Care, requires lawful possession before January 1992."
         },
         "GA": {
           "status": "conditional",
@@ -2677,7 +2694,8 @@
           "cite": "NAC 503.140",
           "quote": "Marsupial",
           "localOverride": true,
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Marsupials appear on Nevada's list of species needing no permit. The sugar glider is a marsupial. Clark County, Las Vegas and Henderson are frequently stricter than the state, so check the municipality."
         },
         "VA": {
           "status": "legal",
@@ -2774,14 +2792,16 @@
           "sourceId": "ri-250-40-05-3",
           "cite": "§ 3.17(A)(6)(a)(10)",
           "quote": "Sugar Glider (Petaurus breviceps),",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Named on the § 3.17 list of animals that need no exotic animal possession permit."
         },
         "NH": {
           "status": "legal",
           "sourceId": "nh-fis800",
           "cite": "Fis 804.02(b)(7)(m)",
           "quote": "Sugar glider (Petaurus breviceps);",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The sugar glider is named on New Hampshire's non-controlled possession list."
         },
         "MO": {
           "status": "legal",
@@ -2810,7 +2830,8 @@
           "cite": "12.6.2205(1)(e)",
           "quote": "Sugar gliders - Petaurus breviceps;",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "Sugar gliders are named on Montana's noncontrolled exotic wildlife list, so no permit is needed. The rule expressly preserves county and city ordinances, which can be stricter."
         },
         "WV": {
           "status": "legal",
@@ -2848,7 +2869,8 @@
           "sourceId": "in-312-9-11",
           "cite": "312 IAC 9-11-1(a)",
           "quote": "a person must have a permit... to possess a wild animal if the wild animal is either of the following: (1) Referenced in this rule. (2) Listed in this article as an endangered species or a threatened species.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Indiana's wild animal permit applies only to animals the rule references or to listed endangered or threatened species, and the sugar glider is neither."
         },
         "ND": {
           "status": "legal",
@@ -2862,7 +2884,8 @@
           "sourceId": "wy-ch10",
           "cite": "§ 2(j), § 16",
           "quote": "domesticated sugar gliders (Petaurus breviceps),",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Wyoming defines domestic and domesticated animals by a closed list, and the domesticated sugar glider is on it, so it is not treated as wildlife."
         },
         "MS": {
           "status": "legal",
@@ -2883,7 +2906,8 @@
           "sourceId": "ok-800-25-25-3",
           "cite": "§ 800:25-25-3(a)(31)",
           "quote": "(31) Sugar gliders",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Sugar gliders are named on Oklahoma's list of species exempt from import, export and breeder license requirements."
         },
         "NE": {
           "status": "legal",
@@ -2929,7 +2953,8 @@
           "cite": "§ 671(c)(2)(J)(1)(b)",
           "quote": "Domesticated races of golden hamsters of the species Mesocricetus auratus and domesticated races of dwarf hamsters of the Genus Phodopus are not restricted",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "The restricted rodent entry carves out domesticated golden and dwarf hamsters by name, so a pet hamster is not restricted. The state says in terms that cities and counties may still prohibit what it allows."
         },
         "GA": {
           "status": "legal",
@@ -2952,7 +2977,8 @@
           "sourceId": "dc-8-1808",
           "cite": "§ 8-1808(j)(1)(C)",
           "quote": "Domesticated rodents and rabbits",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A hamster is a domesticated rodent, one of the seven categories the District allows as household pets."
         },
         "NYC": {
           "status": "legal",
@@ -3000,7 +3026,8 @@
           "cite": "§ 7(17)",
           "quote": "Hamster (Mesocricetus spp.);",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "A hamster is named on the § 7 list of species exempt from the permit requirement. Local governments may add their own rules."
         },
         "RI": {
           "status": "legal",
@@ -3015,14 +3042,16 @@
           "sourceId": "nh-fis800",
           "cite": "Fis 804.02(b)(7)(d)",
           "quote": "Hamsters, domesticated (Cricetus cricetus);",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Domesticated hamsters are named on New Hampshire's non-controlled possession list."
         },
         "SC": {
           "status": "legal",
           "sourceId": "sc-50-16",
           "cite": "§ 50-16-60",
           "quote": "The importation of the following wildlife for sale in the pet trade does not require a permit: ...13. hamsters",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Hamsters are named on the list of animals whose importation for the pet trade needs no permit, and sit outside the groups § 50-16-20 does cover."
         },
         "MT": {
           "status": "legal",
@@ -3030,7 +3059,8 @@
           "cite": "§ 87-5-702(2)",
           "quote": "The term includes livestock, as defined in 81-2-702, dogs, cats, rodents, Eurasian ferrets, and poultry.",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "A hamster is a rodent, and the statutory definition of domestic animal expressly includes rodents, so it is outside the exotic wildlife rules. Local rules can still be stricter than the state's."
         },
         "WV": {
           "status": "legal",
@@ -3081,7 +3111,8 @@
           "sourceId": "wy-ch10",
           "cite": "§ 2(j), § 16",
           "quote": "domesticated hamster (Mesocricetus auratus),",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Wyoming defines domestic and domesticated animals by a closed list, and the domesticated hamster is on it, so it is not treated as wildlife."
         },
         "MS": {
           "status": "legal",
@@ -3102,7 +3133,8 @@
           "sourceId": "ok-800-25-25-3",
           "cite": "§ 800:25-25-3(a)(14)",
           "quote": "(14) Hamsters.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Hamsters are named on Oklahoma's list of species exempt from import, export and breeder license requirements."
         },
         "NE": {
           "status": "legal",
@@ -3364,13 +3396,15 @@
           "sourceId": "hi-4-71-6-5",
           "cite": "Part A",
           "quote": "Gerbillus gerbillus gerbil Meriones unguiculatus gerbil",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Both gerbil species are named on Part A, which is headed for research and exhibition, so a university or licensed exhibitor can hold one and a private keeper cannot."
         },
         "DC": {
           "status": "legal",
           "sourceId": "dc-8-1808",
           "cite": "§ 8-1808(j)(1)(C)",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A gerbil is a domesticated rodent, one of the seven categories the District allows as household pets."
         },
         "NJ": {
           "status": "legal",
@@ -3410,28 +3444,32 @@
           "cite": "§ 7(14)",
           "quote": "Gerbil (Meriones unguiculatus);",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "A gerbil is named on the § 7 list of species exempt from the permit requirement. Local governments may add their own rules."
         },
         "RI": {
           "status": "legal",
           "sourceId": "ri-250-40-05-3",
           "cite": "§ 3.6(A)(5)(y)",
           "quote": "Mongolian Gerbil (Meriones unguiculatus),",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Named in § 3.6 among the domestic animals, so it sits outside the exotic animal permit regime."
         },
         "NH": {
           "status": "legal",
           "sourceId": "nh-fis800",
           "cite": "Fis 804.02(b)(7)(b)",
           "quote": "Gerbils, domesticated;",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Domesticated gerbils are named on New Hampshire's non-controlled possession list."
         },
         "SC": {
           "status": "legal",
           "sourceId": "sc-50-16",
           "cite": "§ 50-16-60",
           "quote": "The importation of the following wildlife for sale in the pet trade does not require a permit: ...5. gerbils",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Gerbils are named on the list of animals whose importation for the pet trade needs no permit, and sit outside the groups § 50-16-20 does cover."
         },
         "MT": {
           "status": "legal",
@@ -3439,7 +3477,8 @@
           "cite": "§ 87-5-702(2)",
           "quote": "The term includes livestock, as defined in 81-2-702, dogs, cats, rodents, Eurasian ferrets, and poultry.",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "A gerbil is a rodent, and the statutory definition of domestic animal expressly includes rodents, so it is outside the exotic wildlife rules. Local rules can still be stricter than the state's."
         },
         "WV": {
           "status": "legal",
@@ -3512,7 +3551,8 @@
           "sourceId": "ok-800-25-25-3",
           "cite": "§ 800:25-25-3(a)(11)",
           "quote": "(11) Gerbils.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Gerbils are named on Oklahoma's list of species exempt from import, export and breeder license requirements."
         },
         "NE": {
           "status": "legal",
@@ -3768,7 +3808,8 @@
           "cite": "§ 671(c)(1)(M)",
           "quote": "Family Psittacidae-Parrots, Parakeets: Myiopsitta monachus (Monk or Quaker parakeet) (D)",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "The monk (Quaker) parakeet is named on the restricted list and marked (D) for detrimental, so it cannot be kept as a pet. The only possession permit, Animal Care, requires lawful possession before January 1992."
         },
         "GA": {
           "status": "banned",
@@ -3786,7 +3827,8 @@
           "status": "banned",
           "sourceId": "hi-4-71-6",
           "quote": "Myiopsitta monachus  parakeet, monk (quaker)",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The monk (Quaker) parakeet is named on Hawaii's prohibited animal list, and animals not on the approved lists are prohibited by default, so there is no pet route."
         },
         "NYC": {
           "status": "legal",
@@ -3864,7 +3906,8 @@
           "cite": "§ 3.17(A)(5)(b)(9)",
           "quote": "Psittacidae (Parrots and their allies) except for Myiopsitta monachus (Monk Parakeet), which requires a permit,",
           "permitFor": "personal",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Rhode Island exempts the parrot family from the exotic animal possession permit but names the monk parakeet as the exception, so a Quaker needs a personal permit first."
         },
         "NH": {
           "status": "legal",
@@ -4207,7 +4250,8 @@
           "cite": "§ 671(c)(2)(K)(1)(b)",
           "quote": "Domestic cats and hybrids of domestic cats are not restricted",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "The restricted felid entry does not reach domestic cats or their hybrids, and a Bengal is a hybrid of a domestic cat. The state says in terms that cities and counties may still prohibit what it allows."
         },
         "DC": {
           "status": "legal",
@@ -4406,7 +4450,8 @@
           "sourceId": "ok-800-25-25-3",
           "cite": "§ 800:25-25-3(a)(4)",
           "quote": "(4) Cats (except native cats and bears).",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Cats are exempt except native cats and bears, and a Bengal is not a native cat. The exemption is from import, export and breeder permits, not a ban."
         },
         "NE": {
           "status": "conditional",
@@ -4777,7 +4822,8 @@
           "sourceId": "id-130110",
           "cite": "§ 010.06",
           "quote": "non-venomous or non-dangerous reptiles and amphibians",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A veiled chameleon is a nonvenomous reptile, and Idaho's conventional pet definition covers non-venomous or non-dangerous reptiles and amphibians, which sit outside the wildlife permit regime."
         },
         "KY": {
           "status": "legal",
@@ -4792,14 +4838,16 @@
           "sourceId": "ri-250-40-05-3",
           "cite": "§ 3.17(A)(4)(c)(2)(J)",
           "quote": "Old World Chameleons (Chameleonidae) may be kept without an exotic animal possession permit.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Old World chameleons are cleared as a group on the § 3.17 no-permit list."
         },
         "NH": {
           "status": "legal",
           "sourceId": "nh-fis800",
           "cite": "Fis 804.02(b)(4)",
           "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A veiled chameleon is an exotic, nonvenomous reptile, so it clears the non-controlled list, which excludes only alligators, crocodiles and venomous reptiles other than the western hognose snake."
         },
         "MO": {
           "status": "legal",
@@ -4820,7 +4868,8 @@
           "sourceId": "sc-50-16",
           "cite": "§ 50-16-60",
           "quote": "15. reptiles",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles are listed as animals whose importation for the pet trade needs no permit, and they are outside the groups § 50-16-20 does cover."
         },
         "MT": {
           "status": "legal",
@@ -4828,7 +4877,8 @@
           "cite": "§ 87-5-706(1)(e)(vi)",
           "quote": "all nonnative tropical and subtropical species of nonvenomous lizards not on the controlled or prohibited lists, including but not limited to the following families or subfamilies: ...(vi) Chamaeleonidae (chameleons);",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "The statutory pet list covers nonnative tropical and subtropical nonvenomous lizards in the chameleon family that are not on the controlled or prohibited lists, and the veiled chameleon falls within it, so no permit is needed. Local rules can still be stricter than the state's."
         },
         "WV": {
           "status": "permit",
@@ -4844,7 +4894,8 @@
           "sourceId": "ak-5aac92-029",
           "cite": "§ 92.029(b)",
           "quote": "Any nonvenomous reptile   Class Reptilia (crocodile, alligator, snake, turtle, or lizard)",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Alaska's no-permit list covers any nonvenomous reptile, and the veiled chameleon is one."
         },
         "AL": {
           "status": "legal",
@@ -4858,7 +4909,8 @@
           "sourceId": "in-312-9-11",
           "cite": "312 IAC 9-11-8(a)",
           "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The Class III permit covers venomous reptiles and crocodilians at least five feet long, and the veiled chameleon is neither."
         },
         "ND": {
           "status": "legal",
@@ -4872,7 +4924,8 @@
           "sourceId": "wy-ch69",
           "cite": "§ 10(a)(i)",
           "quote": "(i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles not listed in Section 8 or 9 need no importation or possession permit, and the veiled chameleon is on neither list."
         },
         "MS": {
           "status": "legal",
@@ -4893,7 +4946,8 @@
           "sourceId": "ok-800-25-25-3",
           "cite": "§ 800:25-25-3(c)",
           "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A veiled chameleon is a reptile not native to Oklahoma, which the exemption covers as a class, with a carve-out for species that could establish wild populations and are injurious under federal rules. The exemption is from import, export and breeder permits, not a ban."
         },
         "HI": {
           "status": "banned",
@@ -5117,7 +5171,8 @@
           "sourceId": "id-130110",
           "cite": "§ 010.06",
           "quote": "non-venomous or non-dangerous reptiles and amphibians",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A Russian tortoise is a nonvenomous reptile, and Idaho's conventional pet definition covers non-venomous or non-dangerous reptiles and amphibians, which sit outside the wildlife permit regime."
         },
         "KY": {
           "status": "legal",
@@ -5140,7 +5195,8 @@
           "sourceId": "nh-fis800",
           "cite": "Fis 804.02(b)(4)",
           "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A Russian tortoise is an exotic, nonvenomous reptile, so it clears the non-controlled list, which excludes only alligators, crocodiles and venomous reptiles other than the western hognose snake."
         },
         "MO": {
           "status": "legal",
@@ -5161,7 +5217,8 @@
           "sourceId": "sc-50-16",
           "cite": "§ 50-16-60",
           "quote": "15. reptiles",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles are listed as animals whose importation for the pet trade needs no permit, and they are outside the groups § 50-16-20 does cover."
         },
         "MT": {
           "status": "legal",
@@ -5186,7 +5243,8 @@
           "sourceId": "ak-5aac92-029",
           "cite": "§ 92.029(b)",
           "quote": "Any nonvenomous reptile   Class Reptilia (crocodile, alligator, snake, turtle, or lizard)",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Alaska's no-permit list covers any nonvenomous reptile, and the Russian tortoise is one."
         },
         "AL": {
           "status": "legal",
@@ -5200,7 +5258,8 @@
           "sourceId": "in-312-9-11",
           "cite": "312 IAC 9-11-8(a)",
           "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The Class III permit covers venomous reptiles and crocodilians at least five feet long, and the Russian tortoise is neither."
         },
         "ND": {
           "status": "legal",
@@ -5214,7 +5273,8 @@
           "sourceId": "wy-ch69",
           "cite": "§ 10(a)(i)",
           "quote": "(i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles not listed in Section 8 or 9 need no importation or possession permit, and the Russian tortoise is on neither list."
         },
         "MS": {
           "status": "legal",
@@ -5235,7 +5295,8 @@
           "sourceId": "ok-800-25-25-3",
           "cite": "§ 800:25-25-3(c)",
           "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A Russian tortoise is a reptile not native to Oklahoma, which the exemption covers as a class, with a carve-out for species that could establish wild populations and are injurious under federal rules. The exemption is from import, export and breeder permits, not a ban."
         },
         "HI": {
           "status": "conditional",
@@ -5498,7 +5559,8 @@
           "sourceId": "dc-8-1808",
           "cite": "§ 8-1808(j)(1)(E)",
           "quote": "Non-venomous snakes",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A ball python is a nonvenomous snake, which falls in one of the seven categories the District allows as household pets."
         },
         "NYC": {
           "status": "banned",
@@ -5602,7 +5664,8 @@
           "sourceId": "id-130110",
           "cite": "§ 010.06",
           "quote": "non-venomous or non-dangerous reptiles and amphibians",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A ball python is a nonvenomous reptile, and Idaho's conventional pet definition covers non-venomous or non-dangerous reptiles and amphibians, which sit outside the wildlife permit regime."
         },
         "IA": {
           "status": "legal",
@@ -5626,14 +5689,16 @@
           "sourceId": "ri-250-40-05-3",
           "cite": "§ 3.17(A)(4)(b)(2)(A)",
           "quote": "All species of boas and pythons (family Boidae), may be kept without an exotic animal possession permit except those species that are endangered, and except the Emerald Tree Boa (Corallus caninus), Green Tree Python (Chondropython spp.), African Rock Python (Python sebae), Reticulated Python (Python reticulatus) and all species of Anaconda (Eunectes spp.).",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Boas and pythons are cleared as a group, except endangered species and a short named list (emerald tree boa, green tree python, African rock python, reticulated python and the anacondas), and the ball python is not on it."
         },
         "NH": {
           "status": "legal",
           "sourceId": "nh-fis800",
           "cite": "Fis 804.02(b)(4)",
           "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A ball python is an exotic, nonvenomous reptile, so it clears the non-controlled list, which excludes only alligators, crocodiles and venomous reptiles other than the western hognose snake."
         },
         "MO": {
           "status": "legal",
@@ -5656,7 +5721,8 @@
           "sourceId": "sc-50-16",
           "cite": "§ 50-16-60",
           "quote": "15. reptiles",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles are listed as animals whose importation for the pet trade needs no permit, and they are outside the groups § 50-16-20 does cover."
         },
         "MT": {
           "status": "legal",
@@ -5664,7 +5730,8 @@
           "cite": "§ 87-5-706(1)(d)(iv)",
           "quote": "all nonnative tropical and subtropical species of nonvenomous snakes not on the controlled or prohibited lists in the families: ...(iv) Pythonidae (pythons);",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "The statutory pet list covers nonnative tropical and subtropical nonvenomous snakes in the python family that are not on the controlled or prohibited lists, and the ball python falls within it, so no permit is needed. Local rules can still be stricter than the state's."
         },
         "WV": {
           "status": "permit",
@@ -5680,7 +5747,8 @@
           "sourceId": "ak-5aac92-029",
           "cite": "§ 92.029(b)",
           "quote": "Any nonvenomous reptile   Class Reptilia (crocodile, alligator, snake, turtle, or lizard)",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Alaska's no-permit list covers any nonvenomous reptile, and the ball python is one."
         },
         "AL": {
           "status": "legal",
@@ -5695,7 +5763,8 @@
           "sourceId": "in-312-9-11",
           "cite": "312 IAC 9-11-8(a)",
           "quote": "A permit is required under this rule for the following Class III wild animals: ...(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The Class III permit covers venomous reptiles and crocodilians at least five feet long, and the ball python is neither."
         },
         "ND": {
           "status": "legal",
@@ -5709,7 +5778,8 @@
           "sourceId": "wy-ch69",
           "cite": "§ 10(a)(i)",
           "quote": "The animals listed in this section may be imported or possessed without securing an importation/possession permit... (i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles not listed in Section 8 or 9 need no importation or possession permit, and the ball python is on neither list."
         },
         "MS": {
           "status": "legal",
@@ -5731,7 +5801,8 @@
           "sourceId": "ok-800-25-25-3",
           "cite": "§ 800:25-25-3(c)",
           "quote": "Except as otherwise provided, monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license; except those which are biologically capable of establishing self-sustaining populations in the wild of Oklahoma and which may be potentially injurious or detrimental to Oklahoma's wildlife, agriculture or public safety in accordance with existing USDI or APHIS regulations.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A ball python is a reptile not native to Oklahoma, which the exemption covers as a class, with a carve-out for species that could establish wild populations and are injurious under federal rules. The exemption is from import, export and breeder permits, not a ban."
         },
         "NC": {
           "sourceId": "nc-14-417",
@@ -6018,7 +6089,8 @@
           "sourceId": "id-130110",
           "cite": "§ 010.06",
           "quote": "non-venomous or non-dangerous reptiles and amphibians",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A boa constrictor is a nonvenomous reptile, and Idaho's conventional pet definition covers non-venomous or non-dangerous reptiles and amphibians, which sit outside the wildlife permit regime."
         },
         "IA": {
           "status": "legal",
@@ -6034,7 +6106,8 @@
           "cite": "§ 4(2)(t)",
           "quote": "Venomous exotic snakes of the families Viperidae, Atractaspididae, Elapidae, Hydrophidae, and Colubridae, except for hognose snakes (Genus Heterodon);",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "The inherently dangerous list covers venomous exotic snakes, and a boa constrictor is not venomous. Local governments may add their own rules."
         },
         "RI": {
           "status": "legal",
@@ -6049,7 +6122,8 @@
           "sourceId": "nh-fis800",
           "cite": "Fis 804.02(b)(4)",
           "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A boa constrictor is an exotic, nonvenomous reptile, so it clears the non-controlled list, which excludes only alligators, crocodiles and venomous reptiles other than the western hognose snake."
         },
         "MO": {
           "status": "conditional",
@@ -6071,7 +6145,8 @@
           "sourceId": "sc-50-16",
           "cite": "§ 50-16-60",
           "quote": "15. reptiles",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles are listed as animals whose importation for the pet trade needs no permit, and they are outside the groups § 50-16-20 does cover."
         },
         "MT": {
           "status": "legal",
@@ -6079,7 +6154,8 @@
           "cite": "§ 87-5-706(1)(d)(i)",
           "quote": "all nonnative tropical and subtropical species of nonvenomous snakes not on the controlled or prohibited lists in the families: (i) Boidae (boas);",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "The statutory pet list covers nonnative tropical and subtropical nonvenomous snakes in the boa family that are not on the controlled or prohibited lists, and the boa constrictor falls within it, so no permit is needed. Local rules can still be stricter than the state's."
         },
         "WV": {
           "status": "permit",
@@ -6095,7 +6171,8 @@
           "sourceId": "ak-5aac92-029",
           "cite": "§ 92.029(b)",
           "quote": "Any nonvenomous reptile   Class Reptilia (crocodile, alligator, snake, turtle, or lizard)",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Alaska's no-permit list covers any nonvenomous reptile, and the boa constrictor is one."
         },
         "AL": {
           "status": "legal",
@@ -6110,7 +6187,8 @@
           "sourceId": "in-312-9-11",
           "cite": "312 IAC 9-11-8(a)",
           "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The Class III permit covers venomous reptiles and crocodilians at least five feet long, and the boa constrictor is neither."
         },
         "ND": {
           "status": "legal",
@@ -6124,7 +6202,8 @@
           "sourceId": "wy-ch69",
           "cite": "§ 10(a)(i)",
           "quote": "(i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles not listed in Section 8 or 9 need no importation or possession permit, and the boa constrictor is on neither list."
         },
         "MS": {
           "status": "legal",
@@ -6147,7 +6226,8 @@
           "sourceId": "ok-800-25-25-3",
           "cite": "§ 800:25-25-3(c)",
           "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A boa constrictor is a reptile not native to Oklahoma, which the exemption covers as a class, with a carve-out for species that could establish wild populations and are injurious under federal rules. The exemption is from import, export and breeder permits, not a ban."
         },
         "NC": {
           "sourceId": "nc-14-417",
@@ -7229,7 +7309,8 @@
           "sourceId": "id-130110",
           "cite": "§ 010.06",
           "quote": "non-venomous or non-dangerous reptiles and amphibians",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "An Argentine tegu is a nonvenomous reptile, and Idaho's conventional pet definition covers non-venomous or non-dangerous reptiles and amphibians, which sit outside the wildlife permit regime."
         },
         "IA": {
           "status": "legal",
@@ -7260,7 +7341,8 @@
           "sourceId": "nh-fis800",
           "cite": "Fis 804.02(b)(4)",
           "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "An Argentine tegu is an exotic, nonvenomous reptile, so it clears the non-controlled list, which excludes only alligators, crocodiles and venomous reptiles other than the western hognose snake."
         },
         "MO": {
           "status": "legal",
@@ -7281,7 +7363,8 @@
           "sourceId": "sc-50-16",
           "cite": "§ 50-16-60",
           "quote": "15. reptiles",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles are listed as animals whose importation for the pet trade needs no permit, and they are outside the groups § 50-16-20 does cover."
         },
         "MT": {
           "status": "legal",
@@ -7289,7 +7372,8 @@
           "cite": "§ 87-5-706(1)(e)(xxii)",
           "quote": "(xxii) Teiidae (whiptail);",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "The statutory pet list covers nonnative tropical and subtropical nonvenomous lizards in the whiptail family (Teiidae) that are not on the controlled or prohibited lists, and the Argentine tegu falls within it, so no permit is needed. Local rules can still be stricter than the state's."
         },
         "WV": {
           "status": "permit",
@@ -7305,7 +7389,8 @@
           "sourceId": "ak-5aac92-029",
           "cite": "§ 92.029(b)",
           "quote": "Any nonvenomous reptile   Class Reptilia (crocodile, alligator, snake, turtle, or lizard)",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Alaska's no-permit list covers any nonvenomous reptile, and the Argentine tegu is one."
         },
         "AL": {
           "status": "banned",
@@ -7320,7 +7405,8 @@
           "sourceId": "in-312-9-11",
           "cite": "312 IAC 9-11-8(a)",
           "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The Class III permit covers venomous reptiles and crocodilians at least five feet long, and the Argentine tegu is neither."
         },
         "ND": {
           "status": "legal",
@@ -7334,7 +7420,8 @@
           "sourceId": "wy-ch69",
           "cite": "§ 10(a)(i)",
           "quote": "(i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles not listed in Section 8 or 9 need no importation or possession permit, and the Argentine tegu is on neither list."
         },
         "MS": {
           "status": "legal",
@@ -7352,14 +7439,16 @@
             "before": "2025-01-01",
             "detail": "Owners had 365 days from the effective date of the January 2025 rule to register the animal and obtain a permit. Registered animals may not be bred and no more may be acquired."
           },
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "All tegus of the genera Salvator and Tupinambis, including the Argentine black and white tegu, are named on Louisiana's list of prohibited nonnative species, so a new keeper has no route. Owners had 365 days from the January 2025 effective date to register and obtain a permit; registered animals may not be bred and no more may be acquired."
         },
         "OK": {
           "status": "legal",
           "sourceId": "ok-800-25-25-3",
           "cite": "§ 800:25-25-3(c)",
           "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "An Argentine tegu is a reptile not native to Oklahoma, which the exemption covers as a class, with a carve-out for species that could establish wild populations and are injurious under federal rules. The exemption is from import, export and breeder permits, not a ban."
         },
         "NC": {
           "sourceId": "nc-14-417",
@@ -7639,7 +7728,8 @@
           "sourceId": "id-130110",
           "cite": "§ 010.06",
           "quote": "non-venomous or non-dangerous reptiles and amphibians",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A Savannah monitor is a nonvenomous reptile, and Idaho's conventional pet definition covers non-venomous or non-dangerous reptiles and amphibians, which sit outside the wildlife permit regime."
         },
         "IA": {
           "status": "legal",
@@ -7664,14 +7754,16 @@
           "cite": "§ 3.17(A)(4)(c)(1)",
           "quote": "Possession of the Gila Monster, Beaded Lizard (Heloderatidae), and all Monitors (Varanidae) requires an exotic animal possession permit.",
           "permitFor": "personal",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "All monitors (Varanidae) require an exotic animal possession permit, so a keeper must obtain one before getting the Savannah monitor."
         },
         "NH": {
           "status": "legal",
           "sourceId": "nh-fis800",
           "cite": "Fis 804.02(b)(4)",
           "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A Savannah monitor is an exotic, nonvenomous reptile, so it clears the non-controlled list, which excludes only alligators, crocodiles and venomous reptiles other than the western hognose snake."
         },
         "MO": {
           "status": "legal",
@@ -7692,7 +7784,8 @@
           "sourceId": "sc-50-16",
           "cite": "§ 50-16-60",
           "quote": "15. reptiles",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles are listed as animals whose importation for the pet trade needs no permit, and they are outside the groups § 50-16-20 does cover."
         },
         "MT": {
           "status": "legal",
@@ -7700,7 +7793,8 @@
           "cite": "§ 87-5-706(1)(e)(xxiv)",
           "quote": "(xxiv) Varanidae (monitor lizard);",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "The statutory pet list covers nonnative tropical and subtropical nonvenomous lizards in the monitor family that are not on the controlled or prohibited lists, and the Savannah monitor falls within it, so no permit is needed. Local rules can still be stricter than the state's."
         },
         "WV": {
           "status": "permit",
@@ -7716,7 +7810,8 @@
           "sourceId": "ak-5aac92-029",
           "cite": "§ 92.029(b)",
           "quote": "Any nonvenomous reptile   Class Reptilia (crocodile, alligator, snake, turtle, or lizard)",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Alaska's no-permit list covers any nonvenomous reptile, and the Savannah monitor is one."
         },
         "AL": {
           "status": "legal",
@@ -7730,7 +7825,8 @@
           "sourceId": "in-312-9-11",
           "cite": "312 IAC 9-11-8(a)",
           "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The Class III permit covers venomous reptiles and crocodilians at least five feet long, and the Savannah monitor is neither."
         },
         "ND": {
           "status": "legal",
@@ -7744,7 +7840,8 @@
           "sourceId": "wy-ch69",
           "cite": "§ 10(a)(i)",
           "quote": "(i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles not listed in Section 8 or 9 need no importation or possession permit, and the Savannah monitor is on neither list."
         },
         "MS": {
           "status": "legal",
@@ -7770,7 +7867,8 @@
           "sourceId": "ok-800-25-25-3",
           "cite": "§ 800:25-25-3(c)",
           "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A Savannah monitor is a reptile not native to Oklahoma, which the exemption covers as a class, with a carve-out for species that could establish wild populations and are injurious under federal rules. The exemption is from import, export and breeder permits, not a ban."
         },
         "NC": {
           "sourceId": "nc-14-417",
@@ -8059,7 +8157,8 @@
           "sourceId": "ca-671",
           "cite": "§ 671(c)(2)(J)(1)",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "Rodents are restricted under § 671(c)(2)(J)(1), and the carve-outs there cover domesticated hamsters, guinea pigs and chinchillas but not the prairie dog. No California permit covers pet keeping."
         },
         "GA": {
           "status": "banned",
@@ -8127,7 +8226,8 @@
           "status": "restricted",
           "sourceId": "az-r12-4-406",
           "quote": "The family Sciuridae. Common names include: chipmunks, marmots, prairie dogs, squirrels, and woodchucks.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The restricted live wildlife list reaches the whole family Sciuridae, which includes prairie dogs, so a special license is required."
         },
         "OR": {
           "status": "banned",
@@ -8239,7 +8339,8 @@
           "sourceId": "id-020427",
           "cite": "§ 410.07",
           "quote": "Prairie Dogs (Cynomys).",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Prairie dogs (Cynomys) are on the deleterious exotic animal list, and possessing one requires a permit from the Administrator."
         },
         "KY": {
           "status": "banned",
@@ -8247,7 +8348,8 @@
           "cite": "§ 4(1)(u)",
           "quote": "Prairie dog (Cynomys spp.);",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "Prairie dogs are on the § 4(1) prohibited species list, which is for species injurious to native ecosystems, so there is no pet route. Local governments may add their own rules."
         },
         "RI": {
           "status": "permit",
@@ -8490,7 +8592,8 @@
           "sourceId": "ca-671",
           "cite": "§ 671(c)(2)(J)(1)",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "Rodents are restricted under § 671(c)(2)(J)(1), and the carve-outs there cover domesticated hamsters, guinea pigs and chinchillas but not the capybara. No California permit covers pet keeping."
         },
         "GA": {
           "status": "banned",
@@ -8923,7 +9026,8 @@
           "cite": "§ 671(c)(2)(K)(2)",
           "quote": "Family Canidae-All species (W)",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "The whole canid family is restricted, marked (W) for welfare. No California permit type covers pet keeping. The only possession permit, Animal Care, requires lawful possession before January 1992."
         },
         "GA": {
           "status": "banned",
@@ -8969,7 +9073,8 @@
           "status": "restricted",
           "sourceId": "az-r12-4-406",
           "quote": "All species of the order Carnivora",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The restricted live wildlife list reaches the whole order Carnivora, so the fennec fox requires a special license."
         },
         "OR": {
           "status": "banned",
@@ -9066,7 +9171,8 @@
           "sourceId": "id-020427",
           "cite": "§ 402.01",
           "quote": "All Non-native Canidae Species.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "All non-native canids are on the deleterious exotic animal list, and possessing one requires a permit from the Administrator."
         },
         "IA": {
           "status": "banned",
@@ -9161,7 +9267,8 @@
           "cite": "12:68:18:03(1)(b)",
           "quote": "(1) Of the order Carnivora, all nondomestic members of the following families: ...(b) Canidae;",
           "permitFor": "personal",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Canidae is one of the mammal families that need a possession permit under 12:68:18:03, so a keeper must obtain one for a fennec fox."
         },
         "AL": {
           "status": "banned",
@@ -9367,7 +9474,8 @@
           "cite": "§ 671(c)(2)(K)(1)",
           "quote": "Family Felidae-All species (W)",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "The whole felid family is restricted, marked (W) for welfare, and only domestic cats and their hybrids are carved out. No California permit type covers pet keeping. The only possession permit, Animal Care, requires lawful possession before January 1992."
         },
         "GA": {
           "status": "banned",
@@ -9413,7 +9521,8 @@
           "status": "restricted",
           "sourceId": "az-r12-4-406",
           "quote": "All species of the order Carnivora",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The restricted live wildlife list reaches the whole order Carnivora, so the serval requires a special license."
         },
         "OR": {
           "status": "banned",
@@ -9555,7 +9664,8 @@
             "before": "2007-07-01",
             "detail": "An owner in possession on 1 July 2007 could keep the animal after implanting an electronic identification device within sixty days and registering with the department by 31 December 2007. No new route exists."
           },
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Servals fall in the felid family, which Iowa defines as a dangerous wild animal, and only domestic cats are carved out, so no new keeper can own one. Owners in possession on 1 July 2007 could keep an animal after implanting an electronic identification device and registering it by 31 December 2007."
         },
         "KY": {
           "status": "legal",
@@ -9834,7 +9944,8 @@
           "cite": "§ 671(c)(2)(J)(1)(e)",
           "quote": "Domesticated races of chinchillas of the species Chinchilla laniger are not restricted",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "The restricted rodent entry carves out domesticated chinchillas (Chinchilla laniger) by name. The state says in terms that cities and counties may still prohibit what it allows."
         },
         "GA": {
           "status": "legal",
@@ -9848,7 +9959,8 @@
           "status": "legal",
           "sourceId": "dc-8-1808",
           "cite": "§ 8-1808(j)(1)(C)",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A chinchilla is a domesticated rodent, one of the seven categories the District allows as household pets."
         },
         "NYC": {
           "status": "legal",
@@ -9939,7 +10051,8 @@
           "cite": "NAC 503.140",
           "quote": "Domesticated races of chinchillas",
           "localOverride": true,
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Domesticated chinchillas are named on Nevada's list of species needing no permit. Clark County, Las Vegas and Henderson are frequently stricter than the state, so check the municipality."
         },
         "VA": {
           "status": "legal",
@@ -10003,7 +10116,8 @@
           "sourceId": "id-020427",
           "cite": "§ 410.08",
           "quote": "South American Rodents. All South American rodents except guinea pigs and chinchillas.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The South American rodent entry on the deleterious exotic animal list excludes chinchillas by name, so the chinchilla is not on the list."
         },
         "KY": {
           "status": "legal",
@@ -10011,7 +10125,8 @@
           "cite": "§ 7(6)",
           "quote": "Chinchilla (Chinchilla laniger);",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "A chinchilla is named on the § 7 list of species exempt from the permit requirement. Local governments may add their own rules."
         },
         "RI": {
           "status": "legal",
@@ -10026,7 +10141,8 @@
           "sourceId": "nh-fis800",
           "cite": "Fis 804.02(b)(7)(a)",
           "quote": "Chinchillas, domesticated, (Chinchilla spp);",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Domesticated chinchillas are named on New Hampshire's non-controlled possession list."
         },
         "MO": {
           "status": "legal",
@@ -10055,7 +10171,8 @@
           "cite": "§ 87-5-702(2)",
           "quote": "The term includes livestock, as defined in 81-2-702, dogs, cats, rodents, Eurasian ferrets, and poultry.",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "A chinchilla is a rodent, and the statutory definition of domestic animal expressly includes rodents, so it is outside the exotic wildlife rules. Local rules can still be stricter than the state's."
         },
         "WV": {
           "status": "legal",
@@ -10070,7 +10187,8 @@
           "sourceId": "ak-5aac92-029",
           "cite": "§ 92.029(b)",
           "quote": "Chinchilla   Chinchilla laniger",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The chinchilla is named on the short list of species that need no live game permit in Alaska."
         },
         "SD": {
           "status": "legal",
@@ -10107,7 +10225,8 @@
           "sourceId": "wy-ch10",
           "cite": "§ 2(j), § 16",
           "quote": "domesticated chinchilla (Chinchilla laniger),",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Wyoming defines domestic and domesticated animals by a closed list, and the domesticated chinchilla is on it, so it is not treated as wildlife."
         },
         "MS": {
           "status": "legal",
@@ -10128,7 +10247,8 @@
           "sourceId": "ok-800-25-25-3",
           "cite": "§ 800:25-25-3(a)(7)",
           "quote": "(7) Chinchillas.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Chinchillas are named on Oklahoma's list of species exempt from import, export and breeder license requirements."
         },
         "NE": {
           "status": "legal",
@@ -10248,7 +10368,8 @@
           "cite": "§ 671(c)(2)(J)(1)(d)",
           "quote": "Domesticated races of guinea pigs of the species Cavia porcellus are not restricted",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "The restricted rodent entry carves out domesticated guinea pigs (Cavia porcellus) by name. The state says in terms that cities and counties may still prohibit what it allows."
         },
         "GA": {
           "status": "legal",
@@ -10303,7 +10424,8 @@
           "sourceId": "id-020427",
           "cite": "§ 410.08",
           "quote": "South American Rodents. All South American rodents except guinea pigs and chinchillas.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The South American rodent entry on the deleterious exotic animal list excludes guinea pigs by name, so the guinea pig is not on the list."
         },
         "KY": {
           "status": "legal",
@@ -10311,28 +10433,32 @@
           "cite": "§ 7(16)",
           "quote": "Guinea pig (Cavia porcellus);",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "A guinea pig is named on the § 7 list of species exempt from the permit requirement. Local governments may add their own rules."
         },
         "RI": {
           "status": "legal",
           "sourceId": "ri-250-40-05-3",
           "cite": "§ 3.6(A)(5)(u)",
           "quote": "Guinea Pig (Cavia porcellus),",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Named in § 3.6 among the domestic animals, so it sits outside the exotic animal permit regime."
         },
         "NH": {
           "status": "legal",
           "sourceId": "nh-fis800",
           "cite": "Fis 804.02(b)(7)(c)",
           "quote": "Guinea pigs, domesticated;",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Domesticated guinea pigs are named on New Hampshire's non-controlled possession list."
         },
         "SC": {
           "status": "legal",
           "sourceId": "sc-50-16",
           "cite": "§ 50-16-60",
           "quote": "The importation of the following wildlife for sale in the pet trade does not require a permit: ...14. guinea pigs",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Guinea pigs are named on the list of animals whose importation for the pet trade needs no permit, and sit outside the groups § 50-16-20 does cover."
         },
         "MT": {
           "status": "legal",
@@ -10340,7 +10466,8 @@
           "cite": "§ 87-5-702(2)",
           "quote": "The term includes livestock, as defined in 81-2-702, dogs, cats, rodents, Eurasian ferrets, and poultry.",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "A guinea pig is a rodent, and the statutory definition of domestic animal expressly includes rodents, so it is outside the exotic wildlife rules. Local rules can still be stricter than the state's."
         },
         "WV": {
           "status": "legal",
@@ -10355,7 +10482,8 @@
           "sourceId": "ak-5aac92-029",
           "cite": "§ 92.029(b)",
           "quote": "Guinea pig   Cavia porcellus",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The guinea pig is named on the short list of species that need no live game permit in Alaska."
         },
         "SD": {
           "status": "legal",
@@ -10390,7 +10518,8 @@
           "sourceId": "wy-ch10",
           "cite": "§ 2(j), § 16",
           "quote": "domesticated guinea pig (Cavia porcellus),",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Wyoming defines domestic and domesticated animals by a closed list, and the domesticated guinea pig is on it, so it is not treated as wildlife."
         },
         "MS": {
           "status": "legal",
@@ -10411,7 +10540,8 @@
           "sourceId": "ok-800-25-25-3",
           "cite": "§ 800:25-25-3(a)(13)",
           "quote": "(13) Guinea pigs.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Guinea pigs are named on Oklahoma's list of species exempt from import, export and breeder license requirements."
         },
         "NE": {
           "status": "legal",
@@ -10692,7 +10822,8 @@
           "sourceId": "id-130110",
           "cite": "§ 010.06",
           "quote": "non-venomous or non-dangerous reptiles and amphibians",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A green iguana is a nonvenomous reptile, and Idaho's conventional pet definition covers non-venomous or non-dangerous reptiles and amphibians, which sit outside the wildlife permit regime."
         },
         "IA": {
           "status": "legal",
@@ -10715,14 +10846,16 @@
           "sourceId": "ri-250-40-05-3",
           "cite": "§ 3.17(A)(4)(c)(2)(G)",
           "quote": "The following Iguanid Lizards (Iguanidae) may be kept without an exotic animal possession permit: Basilisks (Basiliscus spp.), Collared and Leopard Lizards (Crotaphytus spp.), Common or Green Iguanas (Iguana i. iguana)",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Common or green iguanas are named among the iguanids that may be kept without an exotic animal possession permit."
         },
         "NH": {
           "status": "legal",
           "sourceId": "nh-fis800",
           "cite": "Fis 804.02(b)(4)",
           "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A green iguana is an exotic, nonvenomous reptile, so it clears the non-controlled list, which excludes only alligators, crocodiles and venomous reptiles other than the western hognose snake."
         },
         "MO": {
           "status": "legal",
@@ -10743,7 +10876,8 @@
           "sourceId": "sc-50-16",
           "cite": "§ 50-16-60",
           "quote": "15. reptiles",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles are listed as animals whose importation for the pet trade needs no permit, and they are outside the groups § 50-16-20 does cover."
         },
         "MT": {
           "status": "legal",
@@ -10751,7 +10885,8 @@
           "cite": "§ 87-5-706(1)(e)(xv)",
           "quote": "(xv) Iguanidae (iguanas);",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "The statutory pet list covers nonnative tropical and subtropical nonvenomous lizards in the iguana family that are not on the controlled or prohibited lists, and the green iguana falls within it, so no permit is needed. Local rules can still be stricter than the state's."
         },
         "WV": {
           "status": "permit",
@@ -10767,7 +10902,8 @@
           "sourceId": "ak-5aac92-029",
           "cite": "§ 92.029(b)",
           "quote": "Any nonvenomous reptile   Class Reptilia (crocodile, alligator, snake, turtle, or lizard)",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Alaska's no-permit list covers any nonvenomous reptile, and the green iguana is one."
         },
         "AL": {
           "status": "legal",
@@ -10781,7 +10917,8 @@
           "sourceId": "in-312-9-11",
           "cite": "312 IAC 9-11-8(a)",
           "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The Class III permit covers venomous reptiles and crocodilians at least five feet long, and the green iguana is neither."
         },
         "ND": {
           "status": "legal",
@@ -10795,7 +10932,8 @@
           "sourceId": "wy-ch69",
           "cite": "§ 10(a)(i)",
           "quote": "(i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles not listed in Section 8 or 9 need no importation or possession permit, and the green iguana is on neither list."
         },
         "MS": {
           "status": "legal",
@@ -10813,14 +10951,16 @@
             "before": "2025-01-01",
             "detail": "Registration within 365 days of the rule taking effect, no breeding, no further acquisition."
           },
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The green iguana is named on Louisiana's list of prohibited nonnative species, so a new keeper has no route. Owners had 365 days from the January 2025 effective date to register; registered animals may not be bred and no more may be acquired."
         },
         "OK": {
           "status": "legal",
           "sourceId": "ok-800-25-25-3",
           "cite": "§ 800:25-25-3(c)",
           "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A green iguana is a reptile not native to Oklahoma, which the exemption covers as a class, with a carve-out for species that could establish wild populations and are injurious under federal rules. The exemption is from import, export and breeder permits, not a ban."
         },
         "NC": {
           "sourceId": "nc-14-417",
@@ -11094,7 +11234,8 @@
           "cite": "§ 671(c)(7)(B)",
           "quote": "Family Chelyridae-Snapping Turtles: All species (D)",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "The snapping turtle family is restricted, all species, marked (D) for detrimental, so there is no pet route."
         },
         "NYC": {
           "status": "banned",
@@ -11545,7 +11686,8 @@
           "sourceId": "id-130110",
           "cite": "§ 010.06",
           "quote": "non-venomous or non-dangerous reptiles and amphibians",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A tokay gecko is a nonvenomous reptile, and Idaho's conventional pet definition covers non-venomous or non-dangerous reptiles and amphibians, which sit outside the wildlife permit regime."
         },
         "KY": {
           "status": "legal",
@@ -11560,14 +11702,16 @@
           "sourceId": "ri-250-40-05-3",
           "cite": "§ 3.17(A)(4)(c)(2)(F)",
           "quote": "All Gekkos (Gekkonidae) may be kept without an exotic animal possession permit except the Big Bend Gekko (Coleonyx reticulatus).",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "All geckos may be kept without a permit except the Big Bend gecko, and the tokay is not that species."
         },
         "NH": {
           "status": "legal",
           "sourceId": "nh-fis800",
           "cite": "Fis 804.02(b)(4)",
           "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A tokay gecko is an exotic, nonvenomous reptile, so it clears the non-controlled list, which excludes only alligators, crocodiles and venomous reptiles other than the western hognose snake."
         },
         "MO": {
           "status": "legal",
@@ -11588,7 +11732,8 @@
           "sourceId": "sc-50-16",
           "cite": "§ 50-16-60",
           "quote": "15. reptiles",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles are listed as animals whose importation for the pet trade needs no permit, and they are outside the groups § 50-16-20 does cover."
         },
         "MT": {
           "status": "legal",
@@ -11596,7 +11741,8 @@
           "cite": "§ 87-5-706(1)(e)(xiii)",
           "quote": "(xiii) Gekkonidae (geckos);",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "The statutory pet list covers nonnative tropical and subtropical nonvenomous lizards in the gecko family that are not on the controlled or prohibited lists, and the tokay gecko falls within it, so no permit is needed. Local rules can still be stricter than the state's."
         },
         "WV": {
           "status": "permit",
@@ -11612,7 +11758,8 @@
           "sourceId": "ak-5aac92-029",
           "cite": "§ 92.029(b)",
           "quote": "Any nonvenomous reptile   Class Reptilia (crocodile, alligator, snake, turtle, or lizard)",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Alaska's no-permit list covers any nonvenomous reptile, and the tokay gecko is one."
         },
         "AL": {
           "status": "legal",
@@ -11626,7 +11773,8 @@
           "sourceId": "in-312-9-11",
           "cite": "312 IAC 9-11-8(a)",
           "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The Class III permit covers venomous reptiles and crocodilians at least five feet long, and the tokay gecko is neither."
         },
         "ND": {
           "status": "legal",
@@ -11640,7 +11788,8 @@
           "sourceId": "wy-ch69",
           "cite": "§ 10(a)(i)",
           "quote": "(i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles not listed in Section 8 or 9 need no importation or possession permit, and the tokay gecko is on neither list."
         },
         "MS": {
           "status": "legal",
@@ -11661,7 +11810,8 @@
           "sourceId": "ok-800-25-25-3",
           "cite": "§ 800:25-25-3(c)",
           "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A tokay gecko is a reptile not native to Oklahoma, which the exemption covers as a class, with a carve-out for species that could establish wild populations and are injurious under federal rules. The exemption is from import, export and breeder permits, not a ban."
         },
         "NC": {
           "sourceId": "nc-14-417",
@@ -11958,7 +12108,8 @@
           "cite": "§ 671(c)(3)(C)(1)",
           "quote": "Genus Ambystoma (nonnative tiger salamander group)-(D)",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "Nonnative tiger salamanders (genus Ambystoma) are restricted and marked (D) for detrimental, so there is no pet route."
         },
         "ID": {
           "status": "conditional",
@@ -11998,7 +12149,8 @@
           "sourceId": "sc-50-16",
           "cite": "§ 50-16-60",
           "quote": "16. amphibians.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Amphibians are listed as animals whose importation for the pet trade needs no permit, and they are outside the groups § 50-16-20 does cover."
         },
         "OK": {
           "status": "permit",
@@ -12439,14 +12591,16 @@
           "cite": "§ 3.17(A)(4)(c)(1)",
           "quote": "Possession of the Gila Monster, Beaded Lizard (Heloderatidae), and all Monitors (Varanidae) requires an exotic animal possession permit.",
           "permitFor": "personal",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "All monitors (Varanidae) require an exotic animal possession permit, so a keeper must obtain one before getting the Nile monitor."
         },
         "NH": {
           "status": "legal",
           "sourceId": "nh-fis800",
           "cite": "Fis 804.02(b)(4)",
           "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A Nile monitor is an exotic, nonvenomous reptile, so it clears the non-controlled list, which excludes only alligators, crocodiles and venomous reptiles other than the western hognose snake."
         },
         "KS": {
           "status": "legal",
@@ -12460,7 +12614,8 @@
           "sourceId": "sc-50-16",
           "cite": "§ 50-16-60",
           "quote": "15. reptiles",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles are listed as animals whose importation for the pet trade needs no permit, and they are outside the groups § 50-16-20 does cover."
         },
         "MT": {
           "status": "legal",
@@ -12476,7 +12631,8 @@
           "sourceId": "ak-5aac92-029",
           "cite": "§ 92.029(b)",
           "quote": "Any nonvenomous reptile   Class Reptilia (crocodile, alligator, snake, turtle, or lizard)",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Alaska's no-permit list covers any nonvenomous reptile, and the Nile monitor is one."
         },
         "AL": {
           "status": "legal",
@@ -12490,7 +12646,8 @@
           "sourceId": "in-312-9-11",
           "cite": "312 IAC 9-11-8(a)",
           "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The Class III permit covers venomous reptiles and crocodilians at least five feet long, and the Nile monitor is neither."
         },
         "ND": {
           "status": "legal",
@@ -12504,7 +12661,8 @@
           "sourceId": "wy-ch69",
           "cite": "§ 10(a)(i)",
           "quote": "(i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles not listed in Section 8 or 9 need no importation or possession permit, and the Nile monitor is on neither list."
         },
         "MS": {
           "status": "legal",
@@ -12522,7 +12680,8 @@
             "before": "2025-01-01",
             "detail": "Registration within 365 days of the rule taking effect, no breeding, no further acquisition."
           },
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The Nile monitor is named on Louisiana's list of prohibited nonnative species, so a new keeper has no route. Owners had 365 days from the January 2025 effective date to register; registered animals may not be bred and no more may be acquired."
         },
         "OK": {
           "status": "legal",
@@ -13002,7 +13161,8 @@
             "before": "2025-01-01",
             "detail": "Registration within 365 days of the rule taking effect, no breeding, no further acquisition."
           },
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The Burmese python is named on Louisiana's list of prohibited nonnative species, so a new keeper has no route. Owners had 365 days from the January 2025 effective date to register; registered animals may not be bred and no more may be acquired."
         },
         "OK": {
           "status": "permit",
@@ -13331,7 +13491,8 @@
           "sourceId": "ri-250-40-05-3",
           "cite": "§ 3.17(A)(6)(a)(3)",
           "quote": "Degu (Octodon degus),",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Named on the § 3.17 list of animals that need no exotic animal possession permit."
         },
         "NH": {
           "status": "legal",
@@ -13368,7 +13529,8 @@
           "cite": "12.6.2205(1)(b)",
           "quote": "Degu (bush-tailed rat) - Octodon degus;",
           "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "localOverride": true,
+          "note": "Degus are named on Montana's noncontrolled exotic wildlife list, so no permit is needed. The rule expressly preserves county and city ordinances, which can be stricter."
         },
         "WV": {
           "status": "legal",
@@ -16829,7 +16991,8 @@
           "sourceId": "dc-8-1808",
           "cite": "§ 8-1808(j)(1)",
           "quote": "Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A corn snake is a nonvenomous snake, which falls in one of the seven categories the District allows as household pets."
         },
         "DE": {
           "status": "conditional",
@@ -16874,7 +17037,8 @@
           "sourceId": "id-130110",
           "cite": "§ 010.06",
           "quote": "non-venomous or non-dangerous reptiles and amphibians",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A corn snake is a nonvenomous reptile, and Idaho's conventional pet definition covers non-venomous or non-dangerous reptiles and amphibians, which sit outside the wildlife permit regime."
         },
         "IL": {
           "status": "conditional",
@@ -16945,7 +17109,8 @@
           "sourceId": "mt-87-5-706",
           "cite": "§ 87-5-706(1)(d)(v)",
           "quote": "all nonnative tropical and subtropical species of nonvenomous snakes not on the controlled or prohibited lists in the families: ...(v) Colubridae (modern snakes);",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The statutory pet list covers nonnative tropical and subtropical nonvenomous snakes in the colubrid family that are not on the controlled or prohibited lists, and the corn snake falls within it, so no permit is needed."
         },
         "NC": {
           "status": "legal",
@@ -17094,7 +17259,8 @@
           "sourceId": "wy-ch69",
           "cite": "Chapter 69, § 10(a)(i)",
           "quote": "Amphibians and reptiles not listed in Section 8 or 9 of this regulation",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles not listed in Section 8 or 9 need no importation or possession permit, and the corn snake is on neither list."
         },
         "WI": {
           "sourceId": "wi-import-permit",
@@ -17216,7 +17382,8 @@
           "sourceId": "ak-5aac92-029",
           "cite": "§ 92.029(b)",
           "quote": "Any nonvenomous reptile   Class Reptilia   (crocodile, alligator, snake, turtle, or lizard)",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Alaska's no-permit list covers any nonvenomous reptile, and the milk snake is one."
         },
         "AZ": {
           "status": "legal",
@@ -17245,7 +17412,8 @@
           "sourceId": "dc-8-1808",
           "cite": "§ 8-1808(j)(1)",
           "quote": "Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A milk snake is a nonvenomous snake, which falls in one of the seven categories the District allows as household pets."
         },
         "DE": {
           "status": "conditional",
@@ -17290,7 +17458,8 @@
           "sourceId": "id-130110",
           "cite": "§ 010.06",
           "quote": "non-venomous or non-dangerous reptiles and amphibians",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A milk snake is a nonvenomous reptile, and Idaho's conventional pet definition covers non-venomous or non-dangerous reptiles and amphibians, which sit outside the wildlife permit regime."
         },
         "IL": {
           "status": "conditional",
@@ -17361,7 +17530,8 @@
           "sourceId": "mt-87-5-706",
           "cite": "§ 87-5-706(1)(d)(v)",
           "quote": "all nonnative tropical and subtropical species of nonvenomous snakes not on the controlled or prohibited lists in the families: ...(v) Colubridae (modern snakes);",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The statutory pet list covers nonnative tropical and subtropical nonvenomous snakes in the colubrid family that are not on the controlled or prohibited lists, and the milk snake falls within it, so no permit is needed."
         },
         "NC": {
           "status": "legal",
@@ -17493,7 +17663,8 @@
           "sourceId": "wy-ch69",
           "cite": "Chapter 69, § 10(a)(i)",
           "quote": "Amphibians and reptiles not listed in Section 8 or 9 of this regulation",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles not listed in Section 8 or 9 need no importation or possession permit, and the milk snake is on neither list."
         },
         "MI": {
           "status": "conditional",
@@ -17631,7 +17802,8 @@
           "sourceId": "ak-5aac92-029",
           "cite": "§ 92.029(b)",
           "quote": "Any nonvenomous reptile   Class Reptilia   (crocodile, alligator, snake, turtle, or lizard)",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Alaska's no-permit list covers any nonvenomous reptile, and the rosy boa is one."
         },
         "AZ": {
           "status": "legal",
@@ -17709,7 +17881,8 @@
           "sourceId": "id-130110",
           "cite": "§ 010.06",
           "quote": "non-venomous or non-dangerous reptiles and amphibians",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A rosy boa is a nonvenomous reptile, and Idaho's conventional pet definition covers non-venomous or non-dangerous reptiles and amphibians, which sit outside the wildlife permit regime."
         },
         "IL": {
           "status": "legal",
@@ -17725,7 +17898,8 @@
           "sourceId": "in-312-9-11",
           "cite": "312 IAC 9-11-8(a)",
           "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The Class III permit covers venomous reptiles and crocodilians at least five feet long, and the rosy boa is neither."
         },
         "KS": {
           "status": "legal",
@@ -17793,7 +17967,8 @@
           "sourceId": "mt-87-5-706",
           "cite": "§ 87-5-706(1)(d)(i)",
           "quote": "all nonnative tropical and subtropical species of nonvenomous snakes not on the controlled or prohibited lists in the families: (i) Boidae (boas);",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The statutory pet list covers nonnative tropical and subtropical nonvenomous snakes in the boa family that are not on the controlled or prohibited lists, and the rosy boa falls within it, so no permit is needed."
         },
         "NC": {
           "status": "legal",
@@ -17822,7 +17997,8 @@
           "sourceId": "nh-fis800",
           "cite": "Fis 804.02(b)(4)",
           "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "A rosy boa is an exotic, nonvenomous reptile, so it clears the non-controlled list, which excludes only alligators, crocodiles and venomous reptiles other than the western hognose snake."
         },
         "NJ": {
           "status": "permit",
@@ -17955,7 +18131,8 @@
           "sourceId": "wy-ch69",
           "cite": "§ 10(a)(i)",
           "quote": "Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles not listed in Section 8 or 9 need no importation or possession permit, and the rosy boa is on neither list."
         },
         "WI": {
           "sourceId": "wi-import-permit",
@@ -18384,7 +18561,7 @@
           "sourceId": "mt-arm-12-6-22",
           "cite": "12.6.2215(4)(q); 12.6.2201(7)",
           "quote": "The following mammals are classified as prohibited species: ... (q) Southern flying squirrel - Glaucomys volans",
-          "note": "Named outright, which makes Montana the only jurisdiction on this map to prohibit this animal by binomial. ARM 12.6.2201(7) defines a prohibited species as one that \"may not be possessed, sold, purchased, exchanged, or transported in Montana, except as provided in 87-5-709, MCA, or this subchapter\", and 87-5-709 is the exception for zoos, research and rehabilitation rather than for pets. The company it keeps on that list is telling: the Virginia opossum, the short-tailed opossum, the brush-tailed possum, nutria and the African soft fur rat, all animals Montana treats as escape and establishment risks rather than as dangerous ones. Montana has its own flying squirrel, the northern, and the prohibition is written for the southern species alone.",
+          "note": "Named outright by binomial, as Oregon also does. ARM 12.6.2201(7) defines a prohibited species as one that \"may not be possessed, sold, purchased, exchanged, or transported in Montana, except as provided in 87-5-709, MCA, or this subchapter\", and 87-5-709 is the exception for zoos, research and rehabilitation rather than for pets. The company it keeps on that list is telling: the Virginia opossum, the short-tailed opossum, the brush-tailed possum, nutria and the African soft fur rat, all animals Montana treats as escape and establishment risks rather than as dangerous ones. Montana has its own flying squirrel, the northern, and the prohibition is written for the southern species alone.",
           "localOverride": true,
           "verifiedOn": "2026-10-01"
         },
@@ -18596,7 +18773,8 @@
           "sourceId": "nh-fis800",
           "cite": "Fis 804.02(b)(4)",
           "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "An Ackie monitor is an exotic, nonvenomous reptile, so it clears the non-controlled list, which excludes only alligators, crocodiles and venomous reptiles other than the western hognose snake."
         },
         "MO": {
           "status": "legal",
@@ -18617,14 +18795,16 @@
           "sourceId": "sc-50-16",
           "cite": "§ 50-16-60",
           "quote": "15. reptiles",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles are listed as animals whose importation for the pet trade needs no permit, and they are outside the groups § 50-16-20 does cover."
         },
         "AK": {
           "status": "legal",
           "sourceId": "ak-5aac92-029",
           "cite": "§ 92.029(b)",
           "quote": "Any nonvenomous reptile   Class Reptilia (crocodile, alligator, snake, turtle, or lizard)",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Alaska's no-permit list covers any nonvenomous reptile, and the Ackie monitor is one."
         },
         "AL": {
           "status": "legal",
@@ -18638,7 +18818,8 @@
           "sourceId": "in-312-9-11",
           "cite": "312 IAC 9-11-8(a)",
           "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "The Class III permit covers venomous reptiles and crocodilians at least five feet long, and the Ackie monitor is neither."
         },
         "ND": {
           "status": "legal",
@@ -18652,7 +18833,8 @@
           "sourceId": "wy-ch69",
           "cite": "§ 10(a)(i)",
           "quote": "(i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "Reptiles not listed in Section 8 or 9 need no importation or possession permit, and the Ackie monitor is on neither list."
         },
         "MS": {
           "status": "legal",
@@ -18666,7 +18848,8 @@
           "sourceId": "ok-800-25-25-3",
           "cite": "§ 800:25-25-3(c)",
           "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "An Ackie monitor is a reptile not native to Oklahoma, which the exemption covers as a class, with a carve-out for species that could establish wild populations and are injurious under federal rules. The exemption is from import, export and breeder permits, not a ban."
         },
         "NC": {
           "status": "legal",
@@ -18705,7 +18888,8 @@
           "cite": "§ 3.17(A)(4)(c)(1)",
           "quote": "Possession of the Gila Monster, Beaded Lizard (Heloderatidae), and all Monitors (Varanidae) requires an exotic animal possession permit.",
           "permitFor": "personal",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-10-01",
+          "note": "All monitors (Varanidae) require an exotic animal possession permit, so a keeper must obtain one before getting the Ackie monitor."
         },
         "NJ": {
           "status": "permit",
