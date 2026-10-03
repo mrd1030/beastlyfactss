@@ -65,6 +65,11 @@ Solo developer passion project. Prefer fast, decisive work over exploration.
   the card from git" combines it back into the card. When a branch that
   changes the built site is done, ask me whether to combine the card into the
   .md on it before the merge. A merge conflict in it is resolved the same way.
+- The card's Archive buttons move Done tasks into the untracked
+  .where-are-we-archive.json; an archived task never goes back on the card or
+  into WHERE_ARE_WE.md. "Save the card to git" also combines that ledger into
+  archive/docs-completed/WHERE_ARE_WE_COMPLETED_<date>.md (one file, batches
+  newest first, each task with its done time), committed with the .md.
 - Finishing a batch of work does not move the doc that tracks it. The cycling
   docs (NEEDS_IMAGE.md, IMAGE_PROMPTS.md, BEASTLYPEDIA_FACT_GAPS.md) stay in
   root and hold open work only. Each has ONE companion in

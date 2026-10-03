@@ -44,8 +44,10 @@ dist-ssr
 !.claude/settings.json
 !.claude/mods/
 
-# the Where-are-we card's contents, per checkout (written by the mod and by Claude)
+# the Where-are-we card's contents and its archive ledger, in the main checkout
+# (written by the mod and by Claude; tracked copies are made only on request)
 .where-are-we.json
+.where-are-we-archive.json
 
 # regenerated keyword-research output, not source
 tools/keyword-finder/keyword-ideas.csv
