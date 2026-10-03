@@ -45,7 +45,7 @@ never invented. Where no price exists, say so and ask the owner.
 | Leopard gecko | ☐ | ☐ | |
 | Crested gecko | ☐ | ☐ | |
 | Gargoyle gecko | ☐ | ☐ | |
-| African fat-tailed gecko | ☐ | ☐ | |
+| African fat-tailed gecko | ☐ | ☐ | Found in the 1.1 light pass: the cost guide heading and prose say setup $325 to $580 but its table sums to $369 to $579 (the book uses the table); the description line says "$75-1,000+" while the body says $75 to $600. |
 | Ball python | ☐ | ☐ | |
 | Hognose snake | ☐ | ☐ | |
 | Russian tortoise | ☐ | ☐ | |
