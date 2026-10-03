@@ -953,7 +953,7 @@ export const invertebrateGuides = [
         { label: "Feeding schedule", value: "Slings every 2 to 3 days, juveniles every 4 to 7 days when young and every 7 to 14 days as they grow, adults every 1 to 2 weeks, sometimes far less for a slow-metabolism species.", source: "tarantula-feeding-guide" },
         { label: "Not eating", value: "Usually not an emergency. A plump, active spider refusing food for weeks is typically just in premolt. For juveniles specifically, refusing food for more than 6 to 8 weeks alongside weight loss or lethargy is worth a vet consult.", source: "tarantula-feeding-guide" },
         { label: "Handling", value: "Mostly, no. Best kept as a look, don't touch pet: a fall can fatally injure the spider, and a hand, shoulder, or couch cushion is enough height for that.", source: "tarantula-handling-guide" },
-        { label: "Budget", value: "$25 to $100 for the spider (common beginner species), $105 to $300 for the setup with every item priced, and $75 to $235 a year after that, most of it feeder insects.", source: "tarantula-cost-guide" },
+        { label: "Budget", value: "$25 to $100 for the spider (common beginner species), $105 to $305 for the setup with every item priced, and $75 to $235 a year after that, most of it feeder insects.", source: "tarantula-cost-guide" },
         { label: "Adult size", value: "2 to 12 inch leg span, depending on species." },
         { label: "Lifespan", value: "15 to 20 years or more for a female Chilean rose hair, and about 5 for a male, 10 at the outside. A female is a long-term commitment, though the ongoing budget stays very small the whole time.", source: "tarantula-cost-guide" },
         { label: "Power outage", value: "A non-event for most tarantulas at home; they don't need supplemental heat in a typical room and can go without food far longer than most pets. The real risk in this corner of pet keeping is in a car or a shipping box, not a home outage.", source: "invertebrate-emergency-travel-shipping-guide" },
@@ -973,7 +973,7 @@ export const invertebrateGuides = [
       vetLine: "Prevention matters more than treatment. A shallow water dish and correct humidity prevent most dehydration; never disturb, handle, or feed a molting tarantula.",
     },
     routes: [
-      { slug: "tarantula-cost-guide", line: "$25 to $100 for the spider, $105 to $300 for setup, $75 to $235 a year, and why the ongoing budget stays small for decades." },
+      { slug: "tarantula-cost-guide", line: "$25 to $100 for the spider, $105 to $305 for setup, $75 to $235 a year, and why the ongoing budget stays small for decades." },
       { slug: "tarantula-handling-guide", line: "Why the answer is almost always no, the real fall risk, and New World versus Old World defenses." },
       { slug: "tarantula-health-issues-guide", line: "Dehydration, stuck molts, injury, and the difference between normal fasting and a real problem." },
       { slug: "tarantula-tank-setup-guide", line: "Enclosure shape and size, substrate depth, the humidity debate, and why mesh lids are out." },
@@ -996,7 +996,7 @@ export const invertebrateGuides = [
       "Gut-load food for the feeders",
     ],
     faqs: [
-      { q: "How much does a tarantula cost upfront?", a: "The spider itself runs $25 to $100 for common beginner species, a curly hair or pink toe typically lands at $30 to $40 and a Chilean rose hair nearer $60 to $70. Every item is priced: the enclosure, substrate, a hide, two water dishes, a thermometer and hygrometer, feeding tongs, catch cups, a tub to rehouse over, safety glasses, and the first feeders and gut-load food. The setup comes to $105 to $300 before the spider itself, or $130 to $400 with it." },
+      { q: "How much does a tarantula cost upfront?", a: "The spider itself runs $25 to $100 for common beginner species, a curly hair or pink toe typically lands at $30 to $40 and a Chilean rose hair nearer $60 to $70. Every item is priced: the enclosure, substrate, a hide, two water dishes, a thermometer and hygrometer, feeding tongs, catch cups, a tub to rehouse over, safety glasses, and the first feeders and gut-load food. The setup comes to $105 to $305 before the spider itself, or $130 to $405 with it." },
       { q: "What size enclosure does a pet tarantula need?", a: "About 20 by 10 by 10 inches for an adult, roughly a 10-gallon, sized to around three times the leg span. Keep it low, under about 12 inches tall, since a fall is a genuine danger for most tarantulas." },
       { q: "Can you hold a tarantula?", a: "Mostly, no. Most tarantulas, including the Chilean rose hair, are best kept as strictly look, don't touch pets, since a fall can be fatal to the spider and its defenses can hurt you." },
     ],

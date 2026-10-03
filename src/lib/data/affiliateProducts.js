@@ -1284,7 +1284,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3TadpK8",
     rating: 4.5,
     price: "$10–$25",
-    description: "Perches in varied shapes or diameters that help exercise bird feet and prevent pressure spots.",
+    description: "Bark-on apple wood and hardwood perches for small birds. The listing gives the straight perches as 0.6 to 1 in thick.",
     covers: ["Natural wood perches of varied diameter", "Perches of varied diameter and natural wood, no uniform dowels or sandpaper covers", "Natural wood perches, three or four"],
     altGroup: "bird-perches",
     pets: ["birds"],
@@ -3836,7 +3836,9 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0002AQ5YS?tag=beastlyfacts-20",
     description: "Breathable nylon night cover for small bird cages up to about 20x20x29 in. Blocks light for sleep without sealing in air.",
-    covers: ["A plain breathable cage cover, not an enclosed \"happy hut\"", "Cage cover for nighttime darkness"],
+    // Too small for the 31 x 20.5 in flight cage the budgie and lovebird guides
+    // link, so those cover lines moved to the Large size below (2026-10-03).
+    covers: [],
     pets: ["birds"],
   },
   {
@@ -4656,6 +4658,78 @@ export const AFFILIATE_PRODUCTS = [
     description: "47 by 23.6 by 25.5 inch hamster cage, about 1,110 sq in of floor, acrylic panels on a chew-proof metal frame and a deep base that holds up to 11 inches of bedding. The maker lists it for Syrian and dwarf hamsters.",
     covers: ["700 to 775+ sq in enclosure for a Syrian (bin, wire with bars no wider than 1/2 inch, or glass tank)"],
     pets: ["small-mammals"],
+  },
+  // --- Step 4 gear (2026-10-03): fish and tarantula ---
+  {
+    slug: "goldfish-heater-aqueon-50w-adjustable",
+    product: "Aqueon Submersible Aquarium Heater, 50 Watts, Up to 20 Gallons",
+    category: "Aquarium Equipment",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B07C7D222G?tag=beastlyfacts-20",
+    price: "~$38",
+    description: "50-watt submersible glass heater rated for tanks up to 20 gallons, adjustable from 68 to 88°F, with an indicator light and automatic shut-off. Set at the bottom of its dial it holds a 20-gallon goldfish tank at the cool end of the 65 to 75°F range in a cold room.",
+    covers: ["Heater, only if the room falls below 65°F"],
+    pets: ["fish"],
+  },
+  {
+    slug: "aquarium-plant-anubias-nana-potted",
+    product: "SubstrateSource Anubias Nana Live Aquarium Plant, 1 Pot",
+    category: "Decor & Enrichment",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B008HXF16K?tag=beastlyfacts-20",
+    price: "~$15",
+    description: "One potted Anubias nana, a live aquatic plant with tough, teardrop-shaped leaves on a rhizome that ties onto wood or rock. Grows in low to medium light with no added CO2, and its leaves stand up to a goldfish that eats softer plants.",
+    covers: ["Live or silk plants (no sharp plastic)", "Hardy live plants such as anubias or java fern"],
+    pets: ["fish"],
+  },
+  {
+    slug: "safety-glasses-dewalt-concealer-clear",
+    product: "DEWALT DPG82-11 Concealer Clear Anti-Fog Dual Mold Safety Goggle, Clear Lens, 1 Pair",
+    category: "Small Mammal & Exotic Pet Gear",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B01A12J3GI?tag=beastlyfacts-20",
+    price: "~$13",
+    description: "Clear anti-fog safety glasses with a soft rubber seal around the eyes and an adjustable strap, rated ANSI Z87.1+. The seal keeps loose hairs and substrate dust out when rehousing a tarantula or changing its substrate.",
+    covers: ["Safety glasses"],
+    pets: ["invertebrates"],
+  },
+  // --- Step 4 gear (2026-10-03): birds ---
+  // Spec and price checked 2026-10-03. Cover: Amazon listing (model 12503,
+  // max cage 37x25x48 in) and PetSmart item 20726 ($39.89, cages up to
+  // 41x27x48 in). Perch: Chewy item 1271902 ($39.61, 32 in, 1 to 1.5 in
+  // diameter). Cup: Chewy item 5138758 ($14.99, list $19.99), Prevue model 1227.
+  {
+    slug: "cage-cover-prevue-good-night-large",
+    product: "Prevue Pet Products Large Bird Cage Cover, Black",
+    category: "Small Mammal & Exotic Pet Gear",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B0002AQ5ZC?tag=beastlyfacts-20",
+    price: "~$40",
+    description: "Breathable nylon night cover, model 12503, for flat-top cages up to about 37x25x48 in. Fits the 31 x 20.5 in Prevue flight cage with room to spare, and the front flap lifts for a check without taking the cover off.",
+    covers: ["A plain breathable cage cover, not an enclosed \"happy hut\"", "Cage cover for nighttime darkness"],
+    pets: ["birds"],
+  },
+  {
+    slug: "perch-yml-dragonwood-32in",
+    product: "YML Double Bolt Dragonwood Perch, 32 by 1 by 1.5-Inch",
+    category: "Decor & Enrichment",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B00KVUVHGA?tag=beastlyfacts-20",
+    price: "~$40",
+    description: "Natural dragonwood branch perch, 32 in long and 1 to 1.5 in across, bolted at both ends. Sized for a cockatoo's 3/4 to 2 in range; check the length against the cage width before you buy.",
+    covers: ["Perches 3/4 to 2 inches across, varied diameter and material"],
+    pets: ["birds"],
+  },
+  {
+    slug: "coop-cup-prevue-30oz-bolt-on",
+    product: "Prevue Pet Products Coop Cup 30 Oz Bolt On",
+    category: "Feeding & Watering",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B0002AQ93A?tag=beastlyfacts-20",
+    price: "$15–$20",
+    description: "All stainless steel 30 oz cup, about 5 7/8 in across, that bolts through the cage bars so a large parrot cannot lift it off. Buy two, one for food and one for water.",
+    covers: ["Stainless bolt-on dishes and swing-out feeders"],
+    pets: ["birds"],
   },
 ];
 
