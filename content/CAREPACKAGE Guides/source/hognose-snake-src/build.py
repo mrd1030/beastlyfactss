@@ -22,12 +22,14 @@ SRC = os.path.normpath(os.path.join(HERE, "..", "hognose-snake.html"))
 # Embedded as base64 only, never resized or re-encoded.
 COVER = os.path.normpath(os.path.join(HERE, "..", "..", "images", "hognose-snake-cover-1.jpg"))
 
+EDITION = "1.1"
+
 # TOC: (section label, [(key, title), ...])
 SECTIONS = [
     ("Getting Started", [
         ("howto", "How to Use This Package"),
     ]),
-    ("Section 01 &middot; Quick Profile", [
+    ("Section 01 &middot; Profile", [
         ("profile", "Quick Profile &amp; Cost Overview"),
         ("species", "Which Hognose This Is, Size &amp; Lifespan"),
     ]),
@@ -43,16 +45,17 @@ SECTIONS = [
         ("thawing", "Frozen Prey: Thawing, Storage &amp; Where to Feed"),
         ("refusals", "The Refusing Hognose"),
     ]),
-    ("Section 04 &middot; Behavior &amp; Handling", [
+    ("Section 04 &middot; Handling &amp; Behavior", [
+        ("handling", "Handling &amp; Hygiene"),
         ("display", "Hooding, Hissing &amp; Playing Dead"),
         ("venom", "The Venom Question &amp; Bites"),
-        ("handling", "Handling &amp; Hygiene"),
         ("enrichment", "Enrichment &amp; Common Mistakes"),
     ]),
     ("Section 05 &middot; Arrival &amp; Life Stages", [
         ("arrival", "Choosing a Hognose, Quarantine &amp; the First Vet Visit"),
         ("growth", "Telling the Sex, Weight &amp; Body Condition"),
         ("eggs", "Females, Eggs &amp; Eggs That Get Stuck"),
+        ("seasonal", "The Winter Slowdown"),
     ]),
     ("Section 06 &middot; The Law", [
         ("legal", "Is a Hognose Legal Where You Live?"),
@@ -65,7 +68,6 @@ SECTIONS = [
         ("impaction", "Blockages, Regurgitated Meals &amp; Obesity"),
         ("parasites", "Mites &amp; Internal Parasites"),
         ("shedding", "Shedding, Mouth Infections, Burns &amp; Tissue at the Vent"),
-        ("seasonal", "The Winter Slowdown"),
         ("stool", "Reading Droppings &amp; Hydration"),
     ]),
     ("Section 08 &middot; Quick Reference", [
@@ -83,15 +85,17 @@ SECTIONS = [
         ("equiplog", "Equipment, Quarantine &amp; Vet Log"),
     ]),
     ("Reference", [
-        ("glossary", "Glossary, A to H"),
-        ("glossary2", "Glossary, H to Z"),
+        ("glossary", "Glossary, A to D"),
+        ("glossary2", "Glossary, E to N"),
+        ("glossary3", "Glossary, O to Z"),
         ("sources", "Sources"),
-        ("about", "Where the Sources Disagree, Version History &amp; About"),
+        ("disagree", "Where the Sources Disagree"),
+        ("about", "Version History &amp; About"),
     ]),
 ]
 
 FOOT = ('<div class="pagefoot"><span class="brand">Beastly Facts</span>'
-        '<span>Hognose Snake Care Package</span><span>%d</span></div>')
+        '<span>Hognose Snake Care Package &middot; Edition ' + EDITION + '</span><span>%d</span></div>')
 
 PAGE_FILES = tuple(sorted(n for n in os.listdir(HERE) if n.startswith("pages_") and n.endswith(".html")))
 
@@ -134,6 +138,8 @@ def main():
     untocd = [k for k in keys if k not in toc_keys and k not in ("cover", "contents")]
     if untocd:
         sys.exit("pages missing from the TOC: %s" % untocd)
+    if [k for k in keys if k not in ("cover", "contents")] != toc_keys:
+        sys.exit("TOC order does not match page order")
     foots = re.findall(r"<!--FOOT\s+([a-z0-9_]+)\s*-->", body)
     if sorted(foots) != sorted(keys):
         sys.exit("PAGE and FOOT markers do not pair up: %s" % sorted(set(keys) ^ set(foots)))

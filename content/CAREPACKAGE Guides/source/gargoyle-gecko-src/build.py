@@ -22,11 +22,13 @@ SRC = os.path.normpath(os.path.join(HERE, "..", "gargoyle-gecko.html"))
 COVER = os.path.normpath(os.path.join(HERE, "..", "..", "images", "gargoyle-gecko-cover-1.jpg"))
 
 # TOC: (section label, [(key, title), ...])
+EDITION = "1.1"
+
 SECTIONS = [
     ("Getting Started", [
         ("howto", "How to Use This Package"),
     ]),
-    ("Section 01 &middot; Quick Profile", [
+    ("Section 01 &middot; Profile", [
         ("profile", "Quick Profile &amp; Cost Overview"),
     ]),
     ("Section 02 &middot; Housing &amp; Environment", [
@@ -44,15 +46,17 @@ SECTIONS = [
         ("avoid", "Treats, the Never-Feed List &amp; Appetite"),
         ("weight", "Weight, Growth &amp; Body Condition"),
     ]),
-    ("Section 04 &middot; Handling, Behavior &amp; Breeding", [
+    ("Section 04 &middot; Handling &amp; Behavior", [
         ("handling", "Handling, the Bite &amp; the Tail"),
+        ("behavior", "Shedding, Seasonal Slowdown &amp; Behavior"),
+        ("enrichment", "Common Mistakes &amp; Enrichment"),
+    ]),
+    ("Section 05 &middot; Arrival &amp; Life Stages", [
+        ("arrival", "Choosing a Gecko, Quarantine &amp; the Law"),
         ("sexing", "Sexing, Single Housing &amp; Pairs"),
         ("eggs", "Females, Eggs &amp; Egg Binding"),
-        ("arrival", "Choosing a Gecko, Quarantine &amp; the Law"),
-        ("enrichment", "Common Mistakes &amp; Enrichment"),
-        ("behavior", "Shedding, Seasonal Slowdown &amp; Behavior"),
     ]),
-    ("Section 05 &middot; Health &amp; Common Issues", [
+    ("Section 06 &middot; Health &amp; Common Issues", [
         ("redflags", "Health Red Flags &amp; Finding a Vet"),
         ("mbd", "Metabolic Bone Disease"),
         ("fts", "Floppy Tail Syndrome &amp; Tail Loss"),
@@ -60,11 +64,11 @@ SECTIONS = [
         ("heat", "Overheating, Dehydration &amp; Reading Droppings"),
         ("minor", "Parasites, Blockages, Mouth Rot &amp; More"),
     ]),
-    ("Section 06 &middot; Quick Reference", [
+    ("Section 07 &middot; Quick Reference", [
         ("checklist", "Setup Checklist &amp; Targets"),
         ("emergency", "Emergency &amp; Quick Targets Card"),
     ]),
-    ("Section 07 &middot; Owner Tools", [
+    ("Section 08 &middot; Owner Tools", [
         ("budget", "Budget &amp; Shopping List"),
         ("first30", "First 30 Days"),
         ("symptoms", "Symptom Quick Reference"),
@@ -83,7 +87,7 @@ SECTIONS = [
 ]
 
 FOOT = ('<div class="pagefoot"><span class="brand">Beastly Facts</span>'
-        '<span>Gargoyle Gecko Care Package</span><span>%d</span></div>')
+        '<span>Gargoyle Gecko Care Package &middot; Edition ' + EDITION + '</span><span>%d</span></div>')
 
 PAGE_FILES = ("pages_1.html", "pages_2.html", "pages_3.html", "pages_4.html", "pages_5.html")
 
@@ -117,6 +121,8 @@ def main():
     missing = [k for k in toc_keys if k not in nums]
     if missing:
         sys.exit("TOC references missing pages: %s" % missing)
+    if [k for k in toc_keys if k in nums] != [k for k in keys if k in toc_keys]:
+        sys.exit("contents order differs from page order")
     untocd = [k for k in keys if k not in toc_keys and k not in ("cover", "contents")]
     if untocd:
         sys.exit("pages missing from the TOC: %s" % untocd)

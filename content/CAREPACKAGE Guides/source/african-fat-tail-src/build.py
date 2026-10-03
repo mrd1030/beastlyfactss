@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assemble the African fat-tailed gecko care package.
+"""Assemble the African fat-tailed gecko care package, edition 1.1.
 
 Content files carry <!--PAGE key--> markers. Page numbers are assigned in
 document order, {{P:key}} tokens are resolved to those numbers, the TOC is
@@ -21,12 +21,14 @@ SRC = os.path.normpath(os.path.join(HERE, "..", "african-fat-tail.html"))
 # african-fat-tail-cover-2.jpg is the alternate frame (smaller gecko, more tail).
 COVER = os.path.normpath(os.path.join(HERE, "..", "..", "images", "african-fat-tail-cover-1.jpg"))
 
+EDITION = "1.1"
+
 # TOC: (section label, [(key, title), ...])
 SECTIONS = [
     ("Getting Started", [
         ("howto", "How to Use This Package"),
     ]),
-    ("Section 01 &middot; Quick Profile", [
+    ("Section 01 &middot; Profile", [
         ("profile", "Quick Profile &amp; Cost Overview"),
         ("leopard", "Fat-Tail or Leopard Gecko? The Differences"),
     ]),
@@ -34,8 +36,8 @@ SECTIONS = [
         ("enclosure", "A Floor-Space Enclosure &amp; Where It Goes"),
         ("heat", "Belly Heat, the Thermostat &amp; the Probe"),
         ("humidity", "Humidity &amp; the Three Hides"),
-        ("substrate", "Substrate for a Burrower &amp; Furnishings"),
         ("lighting", "Light Cycle &amp; UVB (Ultraviolet B) Light"),
+        ("substrate", "Substrate for a Burrower, Furnishings &amp; Cleaning"),
     ]),
     ("Section 03 &middot; Feeding", [
         ("diet", "What African Fat-Tailed Geckos Eat"),
@@ -44,15 +46,17 @@ SECTIONS = [
         ("supplements", "Gut-Loading &amp; Calcium Dusting"),
         ("refusal", "Why It Stops Eating &amp; When to Worry"),
     ]),
-    ("Section 04 &middot; Handling, Females &amp; Behavior", [
+    ("Section 04 &middot; Handling &amp; Behavior", [
         ("handling", "Handling a Calm Gecko"),
+        ("behavior", "Shedding, Seasons, Sounds &amp; Behavior"),
+        ("enrichment", "Common Mistakes &amp; Enrichment"),
+    ]),
+    ("Section 05 &middot; Arrival &amp; Life Stages", [
+        ("arrival", "Choosing a Gecko, Quarantine &amp; the Law"),
         ("sexing", "Sexing, Weight &amp; Body Condition"),
         ("eggs", "Females, Eggs &amp; the Laying Box"),
-        ("arrival", "Choosing a Gecko, Quarantine &amp; the Law"),
-        ("enrichment", "Common Mistakes &amp; Enrichment"),
-        ("behavior", "Shedding, Seasons, Sounds &amp; Behavior"),
     ]),
-    ("Section 05 &middot; Health &amp; Common Issues", [
+    ("Section 06 &middot; Health &amp; Common Issues", [
         ("redflags", "Health Red Flags &amp; Finding a Vet"),
         ("shed", "Retained Shed &amp; Eye Problems"),
         ("mbd", "Metabolic Bone Disease &amp; Vitamin Problems"),
@@ -61,11 +65,11 @@ SECTIONS = [
         ("minor", "Parasites, Mouth Rot, Tail Loss &amp; Burns"),
         ("poop", "Reading Poop &amp; Hydration"),
     ]),
-    ("Section 06 &middot; Quick Reference", [
+    ("Section 07 &middot; Quick Reference", [
         ("checklist", "Setup Checklist &amp; Targets"),
         ("emergency", "Emergency &amp; Quick Targets Card"),
     ]),
-    ("Section 07 &middot; Owner Tools", [
+    ("Section 08 &middot; Owner Tools", [
         ("budget", "Budget &amp; Shopping List"),
         ("first30", "First 30 Days"),
         ("symptoms", "Symptom Quick Reference"),
@@ -79,14 +83,15 @@ SECTIONS = [
         ("glossary", "Glossary, A to I"),
         ("glossary2", "Glossary, M to Z"),
         ("sources", "Sources"),
-        ("about", "Where the Sources Disagree, Version History &amp; About"),
+        ("disagree", "Where the Sources Disagree"),
+        ("about", "Version History &amp; About"),
     ]),
 ]
 
 FOOT = ('<div class="pagefoot"><span class="brand">Beastly Facts</span>'
-        '<span>African Fat-Tailed Gecko Care Package</span><span>%d</span></div>')
+        '<span>African Fat-Tailed Gecko Care Package &middot; Edition ' + EDITION + '</span><span>%d</span></div>')
 
-PAGE_FILES = ("pages_1.html", "pages_2.html", "pages_3.html", "pages_4.html", "pages_5.html", "pages_6.html")
+PAGE_FILES = tuple(sorted(n for n in os.listdir(HERE) if n.startswith("pages_") and n.endswith(".html")))
 
 
 def main():
@@ -116,6 +121,8 @@ def main():
     untocd = [k for k in keys if k not in toc_keys and k not in ("cover", "contents")]
     if untocd:
         sys.exit("pages missing from the TOC: %s" % untocd)
+    if [k for k in keys if k not in ("cover", "contents")] != toc_keys:
+        sys.exit("TOC order does not match page order")
     foots = re.findall(r"<!--FOOT\s+([a-z0-9_]+)\s*-->", body)
     if sorted(foots) != sorted(keys):
         sys.exit("PAGE and FOOT markers do not pair up: %s" % sorted(set(keys) ^ set(foots)))
