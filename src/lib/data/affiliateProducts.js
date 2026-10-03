@@ -723,7 +723,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$10–$20",
     description: "Silk or plastic plants that add cover and climbing structure without the care of live plants.",
-    covers: ["Live or artificial plants", "Dense live or artificial plants", "Broad-leafed plants or artificial foliage", "Live or artificial plants + cork bark"],
+    covers: ["Live or artificial plants", "Dense live or artificial plants", "Broad-leafed plants or artificial foliage", "Live or artificial plants + cork bark", "Artificial foliage for the dense parts"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1149,7 +1149,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$15–$35",
     description: "Live feeder insects for reptiles that need a protein-rich staple or a starter breeding colony.",
-    covers: ["Dubia roaches or crickets"], // hedgehogs and sugar gliders eat feeder roaches as a real dietary staple too, not just reptiles/amphibians
+    covers: ["Dubia roaches or crickets", "Gut-loaded live insect feeders: crickets or dubia roaches"], // hedgehogs and sugar gliders eat feeder roaches as a real dietary staple too, not just reptiles/amphibians
     pets: ["reptiles-amphibians", "small-mammals"],
   },
 
