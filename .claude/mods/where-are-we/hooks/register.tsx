@@ -13,6 +13,8 @@ const card = atom({ plugin: 'where-are-we', key: 'card' } as const, EMPTY)
 // (InvalidHTTPResponse on tools/list), so the tool never reaches the session.
 // Reported to Anthropic 2026-10-03; until it is fixed, the file is the channel.
 const FILE = '.where-are-we.json'
+// The tracked, human-readable copy, written only when the owner asks.
+const SNAPSHOT = 'WHERE_ARE_WE.md'
 const MAX_DONE = 30
 const SHOWN_DONE = 4
 
@@ -110,6 +112,13 @@ function summary(c: Card, path: string) {
     'the owner\'s OK (Fable reviews, merges, pushes to main, anything you must not start unasked).',
     'The file is JSON: {"done": [...], "doing": [...], "waiting": [...]}, each list complete (done oldest first),',
     'items short noun phrases under 60 characters, no em or en dashes. Write the whole file each time.',
+    `The card file is untracked; ${SNAPSHOT} beside it is its tracked snapshot, changed only on request.`,
+    `"Save the card to git": write ${SNAPSHOT} from the card (Done, In progress, Waiting on your OK, and a`,
+    '"Saved <date time, US Eastern>" line), commit only that file on main with [CI Skip] in the message, push main.',
+    `"Load the card from git": pull, then write the card file from ${SNAPSHOT}.`,
+    'When a branch\'s work is finished and it changes what the site builds (not only docs or mods), ask the owner',
+    `whether to refresh ${SNAPSHOT} on that branch from the card before it merges. On a merge conflict in`,
+    `${SNAPSHOT}, regenerate it from the card rather than merging the two lists by hand.`,
   ].join('\n')
 }
 

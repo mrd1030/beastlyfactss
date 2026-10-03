@@ -56,6 +56,12 @@ Solo developer passion project. Prefer fast, decisive work over exploration.
 
 ## Docs and where they live
 - Docs live in root. CLAUDE.md never moves from root under any circumstances.
+- WHERE_ARE_WE.md is the saved copy of the Where-are-we card (the master list
+  of work in flight across branches). The live card is the untracked
+  .where-are-we.json in the main checkout. Write the .md only when I say
+  "save the card to git" (commit only it, [CI Skip], push main); "load the
+  card from git" copies it back. When a branch that changes the built site is
+  done, ask me whether to refresh the .md on it before the merge.
 - Finishing a batch of work does not move the doc that tracks it. The cycling
   docs (NEEDS_IMAGE.md, IMAGE_PROMPTS.md, BEASTLYPEDIA_FACT_GAPS.md) stay in
   root and hold open work only. Each has ONE companion in
