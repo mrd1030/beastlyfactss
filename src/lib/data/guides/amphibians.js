@@ -402,7 +402,7 @@ export const amphibianGuides = [
       "Cork bark and PVC pipe hides",
       "Sturdy climbing branches and broad leaves or platforms, mounted high",
       "Shallow water dish that's easy to keep clean",
-      "Low-output UVB (T5 HO in the 5 to 7% range)",
+      "Low-output UVB (T5 in the 5 to 7% range)",
       "Side-mounted heat mat with a thermostat",
       "Digital thermometer and hygrometer",
       "Water conditioner/dechlorinator",

@@ -120,7 +120,7 @@ export const geckoGuides = [
         { label: "Enclosure", value: "18x18x24 inches is the minimum for one adult, and taller is genuinely better, a 2x2x2 foot enclosure is a common upgrade. Height matters more than floor space here.", source: "crested-gecko-tank-setup-guide" },
         { label: "Temperature", value: "Ambient 72 to 78°F. 85°F is a hard ceiling with zero exceptions, this species runs into heat danger faster than cold.", source: "crested-gecko-tank-setup-guide" },
         { label: "Humidity", value: "60 to 80% overnight, spiking to 80% or higher right after the evening mist and drying to 45 to 50% by late afternoon before the next one. The daily swing is the point, not a constant number.", source: "crested-gecko-humidity-guide" },
-        { label: "UVB", value: "Not strictly required, since a complete diet powder already supplies vitamin D3, but low-level UVB is still worth adding: a 24-inch T5 HO around 5.0, for a UVI of 0.6 to 1.4.", source: "crested-gecko-tank-setup-guide" },
+        { label: "UVB", value: "Not strictly required, since a complete diet powder already supplies vitamin D3, but low-level UVB is still worth adding: a 12-inch T5 HO around 5.0, for a UVI of 0.6 to 1.4.", source: "crested-gecko-tank-setup-guide" },
         { label: "Floor", value: "Paper towel for hatchlings and quarantine setups. Coconut fiber, sphagnum, or a bioactive mix for adults, at least 2 inches deep.", source: "crested-gecko-tank-setup-guide" },
         { label: "Feeding schedule", value: "Hatchlings and juveniles get commercial crested gecko diet (CGD) daily, with live insects 1 to 2 times a week. Adults move to CGD every 2 to 3 days, with insects about once a week.", source: "crested-gecko-feeding-guide" },
         { label: "Not eating", value: "A healthy, good-weight adult can typically go 2 to 3 weeks without eating, but a vet consult is worth considering after the second week, especially with visible weight loss.", source: "crested-gecko-feeding-guide" },
@@ -154,7 +154,7 @@ export const geckoGuides = [
     ],
     buyList: [
       "18x18x24 inch front-opening arboreal enclosure",
-      "Low-output 24-inch T5 HO UVB, around 5.0 (check the length against your enclosure)",
+      "Low-output 12-inch T5 UVB fixture (check the length against your enclosure)",
       "Low-wattage heat bulb, 25 to 40 W",
       "Dome fixture for the heat bulb",
       "Dimming thermostat for the heat bulb",

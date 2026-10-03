@@ -64,7 +64,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$95–$115",
     description: "T5 UVB fixture kit that provides moderate UVB for tropical or shade-dwelling reptiles.",
-    covers: ["Strong UVB (T5 HO Arcadia 6-12%)", "UVB (T5 HO Arcadia 6-12%)", "Moderate UVB (T5 HO Arcadia 6%)", "Strong UVB (T5 HO Arcadia 6% or 12%)", "A T5 HO UVB kit, 5 to 6%", "Optional T5 HO UVB, 5.0 or 6%", "T5 HO UVB fixture and bulb", "T5 HO UVB kit, 36 inch, 6% bulb"],
+    covers: ["Strong UVB (T5 HO Arcadia 6-12%)", "UVB (T5 HO Arcadia 6-12%)", "Moderate UVB (T5 HO Arcadia 6%)", "Strong UVB (T5 HO Arcadia 6% or 12%)", "A T5 HO UVB kit, 5 to 6%", "Optional T5 HO UVB, 5.0 or 6%", "T5 HO UVB fixture and bulb", "T5 HO UVB kit, 36 inch, 6% bulb", "Optional low-level UVB fixture and bulb, about 34 in (check the length against your enclosure)"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1724,7 +1724,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$49–$71",
     description: "T5 UVB fixture kit that provides moderate UVB for tropical or shade-dwelling reptiles.",
-    covers: ["Low-output UVB (T5 HO)", "Low-output UVB (T5 HO 5%)", "Low-output UVB (T5 HO, Zone 1)", "Low-output UVB (optional but beneficial)", "UVB (T5 HO 5-6%)", "Optional low-level UVB (5%)", "Low-output UVB (T5 HO in the 5 to 7% range)", "Optional low-output 2 to 5% UVB", "Optional low-output T5 UVB", "Optional low-output linear T5 UVB on a 12-hour timer", "Low-output UVB (T5 HO, around 5.0)", "Low-output T5 UVB and hood", "Low-output UVB, a 5% or forest-strength T5 bulb", "Low-output UVB fixture and bulb", "Low-output UVB fixture (T5 HO)"],
+    covers: ["Low-output UVB (T5 HO)", "Low-output UVB (T5 HO 5%)", "Low-output UVB (T5 HO, Zone 1)", "Low-output UVB (optional but beneficial)", "UVB (T5 HO 5-6%)", "Optional low-level UVB (5%)", "Optional low-output 2 to 5% UVB", "Optional low-output T5 UVB", "Optional low-output linear T5 UVB on a 12-hour timer", "Low-output UVB (T5 HO, around 5.0)", "Low-output UVB, a 5% or forest-strength T5 bulb", "Low-output UVB fixture and bulb", "Low-output UVB fixture (T5 HO)"],
     altGroup: "low-output-uvb-t5",
     pets: ["reptiles-amphibians"],
   },
@@ -2518,8 +2518,19 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$55–$70",
     description: "T5 UVB fixture kit that provides moderate UVB for tropical or shade-dwelling reptiles.",
-    covers: ["Low-output UVB bulb in the 5 to 7% range, optional", "Low-output UVB for a UVI of 0.6 to 1.4, never a basking-style bulb", "T5 HO UVB in the 5 to 6% range, or an Arcadia ShadeDweller kit", "Optional low-level UVB fixture and bulb"], // alternate only - user's gear-list research specifically named this kit for gargoyle gecko UVB
+    covers: ["Low-output UVB bulb in the 5 to 7% range, optional", "Low-output UVB for a UVI of 0.6 to 1.4, never a basking-style bulb", "T5 HO UVB in the 5 to 6% range, or an Arcadia ShadeDweller kit", "Optional low-level UVB fixture and bulb", "Low-output 12-inch T5 UVB fixture (check the length against your enclosure)", "Low-output T5 UVB and hood", "Low-output UVB (T5 in the 5 to 7% range)"], // alternate only - user's gear-list research specifically named this kit for gargoyle gecko UVB
     altGroup: "low-output-uvb-t5",
+    pets: ["reptiles-amphibians"],
+  },
+  {
+    slug: "uvb-arcadia-forest-6-22in-24w",
+    product: "Arcadia T5 UVB Reptile Light Fixture Kit 22.5 in, 24 W, 6% UVB Forest",
+    category: "Heating & Lighting",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B09T96TPHJ?tag=beastlyfacts-20",
+    price: "$85–$100",
+    description: "T5 HO UVB fixture kit with a 6% tube about 22 inches long, sized for a 36 inch enclosure. Check the length against your enclosure.",
+    covers: ["Optional low-output T5 UVB, 5.0 or 6%, about two-thirds of the enclosure length (check the length against your enclosure)"],
     pets: ["reptiles-amphibians"],
   },
   {
