@@ -47,7 +47,7 @@ Things worth knowing before editing:
   recount and re-check every row.
 - **Every figure comes from the site.** The deep dives in `content/guides/hamster-*.mdx` and
   the shared small-mammal guides own the numbers; prices come only from the cost guide, whose
-  rows and totals add up: every item priced and rounded to the nearest $5, setup $185 to $390
+  rows and totals add up: every item priced and rounded to the nearest $5, setup $185 to $550
   with a Syrian and $165 to $430 with a dwarf, $140 to $265 a year before the vet ($10 to $25 a
   month). The budget runs over two pages (`budget` and `budget2`). Where
   the site disagrees with itself, the topic's own guide wins. The October 2026 site pass

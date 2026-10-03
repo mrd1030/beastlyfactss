@@ -635,9 +635,9 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$120–$220",
     description: "Spacious bird cage that leaves room for short flights, toys, and multiple perches.",
-    covers: ["Flight cage (24-30 in wide)", "36x24x48 in cage (larger preferred)", "18x18x24 in cage (larger preferred)", "24x24x24 in+ cage (larger preferred)", "24x24x30 in cage (larger preferred)", "24x24x30 in+ cage (larger preferred)", "24x24x36 in aviary-style cage"],
+    covers: ["36x24x48 in cage (larger preferred)"],
     altGroup: "bird-flight-cage",
-    pets: ["birds", "small-mammals"],
+    pets: ["birds"],
   },
   {
     slug: "tortoise-table",
@@ -1194,7 +1194,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$180–$240",
     description: "Spacious bird cage that leaves room for short flights, toys, and multiple perches.",
-    covers: ["18x18x18 inch cage or larger, wider rather than taller", "18x18x24 inch cage minimum, 24x18x24 for a pair", "Flight cage at least 20x20x30 inches, bars half an inch or less apart"],
+    covers: ["18x18x18 inch cage or larger, wider rather than taller", "18x18x24 inch cage minimum, 24x18x24 for a pair", "Flight cage at least 20x20x30 inches, bars half an inch or less apart", "Wide flight cage, at least 24 by 18 by 18 inches, bar spacing half an inch or less, powder-coated steel"],
     altGroup: "bird-flight-cage",
     pets: ["birds"],
   },
@@ -1233,7 +1233,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.3,
     price: "$140–$165",
     description: "Spacious bird cage that leaves room for short flights, toys, and multiple perches.",
-    covers: ["Wide flight cage, at least 24 by 18 by 18 inches, bar spacing half an inch or less, powder-coated steel"],
+    covers: [],
     altGroup: "bird-flight-cage",
     pets: ["birds"],
   },
@@ -2716,7 +2716,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$70–$95",
     description: "Wire small-animal cage with a deep base and room for a wheel, hide, and bedding.",
-    covers: ["450+ sq in cage (bin, wire, or glass tank)", "2x4 ft enclosure (bin or modified cage)"],
+    covers: ["2x4 ft enclosure (bin or modified cage)"],
     pets: ["small-mammals"],
   },
   {
@@ -2998,7 +2998,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.2,
     price: "$1,450–$1,550",
     description: "An all-welded, rust-resistant stainless steel cage big enough for cockatoos and macaws. Stainless steel matters for this species because a cockatoo's beak and constant chewing will eventually corrode or destroy powder-coated wire, and the smooth surface is easier to fully disinfect between cleanings.",
-    covers: ["King's Cages or A&E Cage Company stainless steel cage", "Large stainless steel cage, or a heavy-gauge powder-coated alternative"],
+    covers: ["King's Cages or A&E Cage Company stainless steel cage", "Large stainless steel cage, or a heavy-gauge powder-coated alternative", "36x24x48 inch cage or larger"],
     altGroup: "large-parrot-cage",
     pets: ["birds"],
   },
@@ -3010,13 +3010,12 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B00KYQUJME?tag=beastlyfacts-20",
     rating: 4.2,
     price: "$820–$880",
-    description: "A heavy-gauge, powder-coated steel cage sized for cockatoos, macaws, and other large parrots, hundreds less than a full stainless steel cage of the same size. Reviewers confirm using it for umbrella and galah cockatoos, macaws, African greys, and eclectus parrots.",
-    // "3x2x4 ft heavy-gauge cage with locks" is the cockatoo guide's own cost
-    // line (src/lib/data/guides/birds.js) - this $820-880 cage sits inside
-    // its stated $500-1200 range, the stainless option above ($1,450-1,550)
-    // does not, so this is the primary match and the stainless cage is
-    // linked as the upgrade alternative via altGroup instead.
-    covers: ["Prevue Hendryx large cage", "3x2x4 ft heavy-gauge cage with locks", "36x24x48 inch cage or larger"],
+    description: "A heavy-gauge, powder-coated steel cage for macaws and other large parrots whose guides allow bar spacing past 1 inch, hundreds less than a full stainless steel cage of the same size.",
+    // Bars are 1 3/8 in apart: past the 1 in limit for cockatoos and African
+    // greys (3/4 in for Goffin's and galahs), so it covers no cockatoo or grey
+    // line (2026-10-03). The stainless Imperial above (1 in bars) is the
+    // cockatoo and grey match.
+    covers: [],
     altGroup: "large-parrot-cage",
     pets: ["birds"],
   },
@@ -4612,6 +4611,28 @@ export const AFFILIATE_PRODUCTS = [
     description: "Digital kitchen scale reading in 1 g steps up to 5 kg. Weigh a small animal in a lidded tub, or a bird on a perch or in a small box set on top, and tare the container first.",
     covers: ["Gram scale", "Kitchen scale that reads in grams", "Digital gram scale", "Kitchen scale in grams", "Digital kitchen scale in grams", "Digital kitchen scale reading in 1 g steps, with a perch or box on top"],
     pets: ["small-mammals", "birds", "reptiles-amphibians"],
+  },
+  {
+    slug: "betta-heater-hygger-25w",
+    product: "hygger Small Aquarium Betta Heater, 25W",
+    category: "Aquarium Equipment",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B0BGG8DB25?tag=beastlyfacts-20",
+    price: "~$22",
+    description: "25-watt submersible heater for 2.5 to 5 gallon tanks, adjustable from 59 to 93°F on an LED controller that sits outside the tank, with dry-run and overheat protection. The size for a 5-gallon betta tank.",
+    covers: ["Adjustable 15 to 25 watt aquarium heater"],
+    pets: ["fish"],
+  },
+  {
+    slug: "hamster-cage-bucatstate-3-0-47in",
+    product: "BUCATSTATE Hamster Cage 3.0, 47 in",
+    category: "Enclosures & Cages",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B0D5L9BWWN?tag=beastlyfacts-20",
+    price: "$185 to $250",
+    description: "47 by 23.6 by 25.5 inch hamster cage, about 1,110 sq in of floor, acrylic panels on a chew-proof metal frame and a deep base that holds up to 11 inches of bedding. The maker lists it for Syrian and dwarf hamsters.",
+    covers: ["700 to 775+ sq in enclosure for a Syrian (bin, wire with bars no wider than 1/2 inch, or glass tank)"],
+    pets: ["small-mammals"],
   },
 ];
 
