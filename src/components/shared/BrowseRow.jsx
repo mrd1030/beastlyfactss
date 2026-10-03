@@ -55,7 +55,7 @@ export default function BrowseRow({
       onClick={(e) => { e.preventDefault(); e.stopPropagation(); onOpenLegend?.(); }}
       title={difficulty}
       aria-label={`Difficulty: ${difficulty}. Open the difficulty legend`}
-      className={`inline-flex justify-center min-w-[2.75rem] sm:min-w-0 text-xs font-body font-semibold px-2 py-0.5 rounded-full hover:opacity-80 transition-all ${diffClass}`}
+      className={`inline-flex justify-center min-w-[2.125rem] sm:min-w-0 text-xs font-body font-semibold px-2 py-0.5 rounded-full hover:opacity-80 transition-all ${diffClass}`}
     >
       <span className="sm:hidden">{DIFFICULTY_SHORT[difficulty] || difficulty}</span>
       <span className="hidden sm:inline">{difficulty}</span>
