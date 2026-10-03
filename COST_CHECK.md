@@ -18,7 +18,11 @@ before the next mass package upload.**
 5. The line under the last cost table names the retailers:
    "Prices last checked <Month Year> at <retailers>." It stays (RULES.md).
    Rows priced from catalog fields say "at PetSmart and other retailers".
-6. Package only: the budget page and profile cost lines match the site.
+6. Every cost table row carries a gear link (`<AffiliateLink>` with the exact
+   catalog link and product name) where a fitting product exists. Rows with no
+   fitting product stay unlinked and go in the species' Notes as
+   "No gear available: <row>".
+7. Package only: the budget page and profile cost lines match the site.
 
 Prices come only from retailer checks or catalog price fields, never Amazon and
 never invented. Where no price exists, say so and ask the owner.
@@ -50,7 +54,7 @@ never invented. Where no price exists, say so and ask the owner.
 
 ## Cost guides without a package (64): site only
 
-Same checks 1 to 5. A change here touches the guide and the hub only.
+Same checks 1 to 6. A change here touches the guide and the hub only.
 
 | Species | Checked |
 |---|---|
