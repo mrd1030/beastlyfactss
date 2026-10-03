@@ -77,11 +77,11 @@ had moved past the PDF):
 | russian-tortoise | Russian_Tortoise_Care_Package_v3.1.pdf | 51 |
 | tarantula | Tarantula_Care_Package_v2.3.pdf | 44 |
 | cockatiel | Cockatiel_Care_Package_v1.2.pdf | 40 |
-| cockatoo | Cockatoo_Care_Package_v1.2.pdf | 45 |
-| whites-tree-frog | Whites_Tree_Frog_Care_Package_v1.0.pdf | 39 |
-| hognose-snake | Hognose_Snake_Care_Package_v1.0.pdf | 44 |
-| gargoyle-gecko | Gargoyle_Gecko_Care_Package_v1.0.pdf | 41 |
-| african-fat-tail | African_Fat-Tailed_Gecko_Care_Package_v1.0.pdf | 42 |
+| cockatoo | Cockatoo_Care_Package_v1.4.pdf | 49 |
+| whites-tree-frog | Whites_Tree_Frog_Care_Package_v1.1.pdf | 42 |
+| hognose-snake | Hognose_Snake_Care_Package_v1.1.pdf | 47 |
+| gargoyle-gecko | Gargoyle_Gecko_Care_Package_v1.1.pdf | 42 |
+| african-fat-tail | African_Fat-Tailed_Gecko_Care_Package_v1.1.pdf | 45 |
 
 The catalog carries these numbers. When a source is edited again, re-render
 with `_render.mjs`, move the old PDF to `rebuilt/past versions/` with a row in

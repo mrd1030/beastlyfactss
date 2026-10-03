@@ -119,6 +119,11 @@ own field:
 | `Axolotl_Care_Package_v3.0.pdf` | 3.1 | 45 pages, with a budget that left items unpriced and costs unrounded |
 | `Betta_Fish_Care_Package_v3.0.pdf` | 3.1 | 53 pages, with a one-page budget that left items unpriced and costs unrounded |
 | `Goldfish_Care_Package_v3.0.pdf` | 3.1 | 48 pages, with a one-page budget that left items unpriced and costs unrounded |
+| `Gargoyle_Gecko_Care_Package_v1.0.pdf` | 1.1 | 41 pages on an older layout: cover icon, section order and page pointers out of step with the other packages, no units note, one outside organization named in the care text, no UVB tube size or basking distance, and a one-page budget that left items unpriced and costs unrounded |
+| `African_Fat-Tailed_Gecko_Care_Package_v1.0.pdf` | 1.1 | 42 pages on an older layout: cover icon, section order and page pointers out of step with the other packages, where the sources disagree sharing a page, no units entry in the glossary, and a one-page budget that left items unpriced and costs unrounded |
+| `Hognose_Snake_Care_Package_v1.0.pdf` | 1.1 | 44 pages on an older layout: cover icon, section order and names and page pointers out of step with the other packages, where the sources disagree sharing a page, a shorter glossary, and a one-page budget that left items unpriced and costs unrounded |
+| `Whites_Tree_Frog_Care_Package_v1.0.pdf` | 1.1 | 39 pages on an older layout: cover icon, section order and page pointers out of step with the other packages, no units note, no thermostat probe mounting, a shorter glossary, and costs with items unpriced and unrounded |
+| `Cockatoo_Care_Package_v1.3.pdf` | 1.4 | 47 pages on an older layout: cover icon, section order and page pointers out of step with the other packages, no units note, fewer glossary entries, outside names in the care text, and a one-page budget that left items unpriced and costs unrounded |
 
 Hamster and Bearded Dragon reached a genuine third edition on their own count,
 so their numbers stood. Hamster's version history had picked up a line claiming

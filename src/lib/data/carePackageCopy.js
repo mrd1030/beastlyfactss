@@ -763,8 +763,8 @@ export const CARE_PACKAGE_COPY = {
   cockatoo: {
     hook: 'Four to six hours most days, for decades. Take the honest test first.',
     heroParagraph:
-      'A 47-page printable manual with a decision test written to talk some readers out of the bird, six species compared, training and foraging as the plan against plucking and screaming, feather dust and your own lungs, seven health pages, state legal status, and a succession plan.',
-    heroTicks: ['47 pages, print or view', 'Advanced, not a first parrot', 'No external links inside the PDF'],
+      'A 49-page printable manual with a decision test written to talk some readers out of the bird, six species compared, training and foraging as the plan against plucking and screaming, feather dust and your own lungs, six health pages, state legal status, and a succession plan.',
+    heroTicks: ['49 pages, print or view', 'Advanced, not a first parrot', 'No external links inside the PDF'],
     roulette: [
       'A hand-raised baby sold on the cuddling, and nothing about the bird at eight years old',
       'Constant one-on-one time in the first weeks, then a bird that screams when that person leaves the room',
@@ -789,10 +789,10 @@ export const CARE_PACKAGE_COPY = {
     previews: [
       { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
       { page: 5, alt: 'Is a cockatoo right for you? The nine-question honest test' },
-      { page: 31, alt: 'The sixty-year bird: succession and rehoming plan' },
+      { page: 24, alt: 'The sixty-year bird: succession and rehoming plan' },
       { page: 32, alt: 'Setup checklist and targets' },
       { page: 34, alt: 'Budget and shopping list' },
-      { page: 36, alt: 'Symptom quick reference table' },
+      { page: 37, alt: 'Symptom quick reference table' },
     ],
     whoFor: [
       'Anyone deciding whether to buy a cockatoo, before they meet the baby',
@@ -811,8 +811,8 @@ export const CARE_PACKAGE_COPY = {
   'whites-tree-frog': {
     hook: 'An easy frog for sixteen years, if someone counts the crickets.',
     heroParagraph:
-      'A 39-page printable manual with the vertical enclosure, a humidity cycle that dips instead of sitting high, the water that is safe to mist with, feeding by size and age, the ridge test that catches obesity early, seven health pages, and the printable owner tools.',
-    heroTicks: ['39 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
+      'A 42-page printable manual with the vertical enclosure, a humidity cycle that dips instead of sitting high, the water that is safe to mist with, feeding by size and age, the ridge test that catches obesity early, seven health pages, and the printable owner tools.',
+    heroTicks: ['42 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
     roulette: [
       'A care sheet that says "high humidity," and an enclosure that never dries out',
       'Untreated tap water in the mister, or distilled water because it sounds purer',
@@ -860,8 +860,8 @@ export const CARE_PACKAGE_COPY = {
   'hognose-snake': {
     hook: 'The hood and the hiss are a bluff. The dry air is the real rule.',
     heroParagraph:
-      'A 44-page printable manual with the enclosure sized by sex, a dry setup at 30 to 50% humidity, prey by gram weight, what the hood, the hiss and the death act mean, the venom question answered from the bite research, a state-by-state legal summary, seven health pages, and the printable owner tools.',
-    heroTicks: ['44 pages, print or view', 'Intermediate level', 'No external links inside the PDF'],
+      'A 47-page printable manual with the enclosure sized by sex, a dry setup at 30 to 50% humidity, prey by gram weight, what the hood, the hiss and the death act mean, the venom question answered from the bite research, a state-by-state legal summary, seven health pages, and the printable owner tools.',
+    heroTicks: ['47 pages, print or view', 'Intermediate level', 'No external links inside the PDF'],
     roulette: [
       'Misting advice borrowed from a tropical snake, for an animal from the dry prairie',
       'An adult still fed every week, because that is what it ate as a hatchling',
@@ -886,8 +886,8 @@ export const CARE_PACKAGE_COPY = {
     previews: [
       { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
       { page: 7, alt: 'The temperature gradient: basking 90 to 95°F, cool side 70 to 75°F, nights at room temperature but no colder than 60°F' },
-      { page: 15, alt: 'The venom question and bites: rear-fanged and mildly venomous, two bite studies, and what to do if a snake holds on' },
-      { page: 25, alt: 'Respiratory and belly-scale infections: one cause, too much moisture, with signs and the vet response for each' },
+      { page: 16, alt: 'The venom question and bites: rear-fanged and mildly venomous, two bite studies, and what to do if a snake holds on' },
+      { page: 26, alt: 'Respiratory and belly-scale infections: one cause, too much moisture, with signs and the vet response for each' },
       { page: 32, alt: 'Emergency and quick targets card, to print and post near the enclosure' },
       { page: 33, alt: 'Budget and shopping list, setup and yearly costs' },
     ],
@@ -906,8 +906,8 @@ export const CARE_PACKAGE_COPY = {
   'gargoyle-gecko': {
     hook: 'It needs heat, and it cannot take much of it.',
     heroParagraph:
-      'A 41-page printable manual with the tall, cluttered enclosure, a gentle warm spot under an 86°F ceiling, a humidity cycle that dries out every day, powder and insects on a real schedule, six health pages, and the printable owner tools.',
-    heroTicks: ['41 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
+      'A 42-page printable manual with the tall, cluttered enclosure, a gentle warm spot under an 86°F ceiling, a humidity cycle that dries out every day, powder and insects on a real schedule, six health pages, and the printable owner tools.',
+    heroTicks: ['42 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
     roulette: [
       'A care sheet that says "no heat needed," and an enclosure with no warm spot at all',
       'Humidity held high around the clock, or left to sit dry for days',
@@ -954,8 +954,8 @@ export const CARE_PACKAGE_COPY = {
   'african-fat-tail': {
     hook: 'Not a leopard gecko with a different pattern. The difference is one damp box.',
     heroParagraph:
-      'A 42-page printable manual with every way it differs from a leopard gecko, belly heat on a thermostat with the probe where it belongs, the humid hide that keeps skin off the toes, a soil mix it can burrow in, feeding by age, seven health pages, and the printable owner tools.',
-    heroTicks: ['42 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
+      'A 45-page printable manual with every way it differs from a leopard gecko, belly heat on a thermostat with the probe where it belongs, the humid hide that keeps skin off the toes, a soil mix it can burrow in, feeding by age, seven health pages, and the printable owner tools.',
+    heroTicks: ['45 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
     roulette: [
       'A leopard gecko care sheet at 30 to 40 percent humidity, and old skin ringing the toes after every shed',
       'A heat mat plugged straight into the wall, or a probe taped to the back of the mat',
@@ -982,8 +982,8 @@ export const CARE_PACKAGE_COPY = {
       { page: 5, alt: 'Fat-tail or leopard gecko: origin, humidity, temperament, substrate, belly heat, enclosure and price side by side' },
       { page: 7, alt: 'Belly heat, the thermostat and the probe: warm side, cool side and night targets, and where the probe goes' },
       { page: 8, alt: 'Humidity and the three hides: 50 to 70 percent in the enclosure and a humid hide held at 70 to 80' },
-      { page: 23, alt: 'Retained shed and eye problems: cause, signs, response and recovery for skin stuck on the toes and tail tip' },
-      { page: 30, alt: 'Emergency and quick targets card, to print and post near the enclosure' },
+      { page: 24, alt: 'Retained shed and eye problems: cause, signs, response and recovery for skin stuck on the toes and tail tip' },
+      { page: 31, alt: 'Emergency and quick targets card, to print and post near the enclosure' },
     ],
     whoFor: [
       'New African fat-tailed gecko owners setting up the enclosure before the gecko comes home',
