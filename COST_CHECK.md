@@ -40,7 +40,7 @@ never invented. Where no price exists, say so and ask the owner.
 | Rabbit | ☐ | ☐ | Cost guide re-totaled on claude/rabbit-rebuild (setup $125 to $197, monthly $62 to $135). |
 | Guinea pig | ☐ | ☐ | Cost guide re-totaled on claude/guinea-pig-rebuild (setup $158 to $204). |
 | Hamster | ☐ | ☐ | On claude/hamster-rebuild. |
-| Cockatoo | ☐ | ☐ | |
+| Cockatoo | ☐ | ☐ | Found in the 1.4 light pass: the book's budget page itemizes setup at $2,195 to $7,340 (play stand, purifier, carrier, up to a $3,500 Moluccan); the site's first-year table says $1,975 to $6,300 before toys, bird $700 to $3,000. Scopes differ; the book's disagree page explains it. |
 | Bearded dragon | ☐ | ☐ | |
 | Leopard gecko | ☐ | ☐ | |
 | Crested gecko | ☐ | ☐ | |
