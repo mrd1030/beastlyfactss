@@ -45,6 +45,6 @@ export type Armed = { key: string; at: number }
 
 declare module 'claude-code' {
   interface PluginState {
-    'where-are-we': { card: Card; ledger: Ledger; picked: string[]; armed: Armed | null }
+    'where-are-we': { card: Card; ledger: Ledger; picked: string[]; armed: Armed | null; isHidden: boolean }
   }
 }

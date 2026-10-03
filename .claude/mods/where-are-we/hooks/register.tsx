@@ -1,5 +1,5 @@
 import { atom, read, update } from 'claude-code'
-import type { EngineInterface, Register } from 'claude-code'
+import type { EngineInterface, Register, RenderElement } from 'claude-code'
 
 import type { Archived, Armed, Backup, Card, Ledger } from '../types'
 
@@ -9,6 +9,9 @@ const card = atom({ plugin: 'where-are-we', key: 'card' } as const, EMPTY)
 const ledger = atom({ plugin: 'where-are-we', key: 'ledger' } as const, EMPTY_LEDGER)
 const picked = atom({ plugin: 'where-are-we', key: 'picked' } as const, [] as string[])
 const armed = atom({ plugin: 'where-are-we', key: 'armed' } as const, null as Armed | null)
+// Hide folds the card to one line of counts with a Show button. Kept in the
+// mod's store per repo, so it holds across sessions on this machine.
+const isHidden = atom({ plugin: 'where-are-we', key: 'isHidden' } as const, false)
 
 // Archive, Archive all done and Reset take two presses: the first turns the
 // button into "Press again", which lapses after CONFIRM_MS.
@@ -34,7 +37,10 @@ const BACKUP_FILE = '.where-are-we-backups.json'
 const SNAPSHOT = 'WHERE_ARE_WE.md'
 const ARCHIVE_DOC = 'archive/docs-completed/WHERE_ARE_WE_COMPLETED_<YYYY-MM-DD>.md'
 const MAX_DONE = 30
-const SHOWN_DONE = 8
+// Rows drawn per section before the rest fold into "+N more", so a long list
+// cannot push the conversation off the screen.
+const SHOWN_DONE = 6
+const SHOWN_ROWS = 6
 
 const list = (v: unknown) =>
   Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string' && x.trim() !== '').map(x => x.trim()) : []
@@ -299,9 +305,22 @@ function summary(c: Card, path: string, archivePath: string, backupsPath: string
   ].join('\n')
 }
 
+const hiddenKey = async ($: EngineInterface) => `hidden:${norm(await homeDir($))}`
+
+async function setHidden($: EngineInterface, value: boolean) {
+  await update($, isHidden, () => value)
+  await $.store.set(await hiddenKey($), value)
+}
+
 export const register: Register = on => {
   on('session.start', async ($, e, next) => {
     await load($)
+    try {
+      const saved = await $.store.get(await hiddenKey($))
+      await update($, isHidden, () => saved === true)
+    } catch {
+      await update($, isHidden, () => false)
+    }
     return next(e)
   })
 
@@ -314,13 +333,13 @@ export const register: Register = on => {
   // After a successful Write or Edit of the card file, redraw from the file.
   on('tool.call', { tool: 'Write' }, async ($, e, next) => {
     const ran = await next(e)
-    if (await isCardWrite($, e.file_path, ran)) await load($, true)
+    if (await isCardWrite($, String(e.file_path ?? ''), ran)) await load($, true)
     return ran
   })
 
   on('tool.call', { tool: 'Edit' }, async ($, e, next) => {
     const ran = await next(e)
-    if (await isCardWrite($, e.file_path, ran)) await load($, true)
+    if (await isCardWrite($, String(e.file_path ?? ''), ran)) await load($, true)
     return ran
   })
 
@@ -329,6 +348,7 @@ export const register: Register = on => {
     const l = await read($, ledger)
     const p = await read($, picked)
     const a = await read($, armed)
+    const hidden = await read($, isHidden)
     const below = await next(e)
     const hasItems = c.done.length + c.doing.length + c.waiting.length > 0
 
@@ -338,6 +358,29 @@ export const register: Register = on => {
     }
 
     const { Box, Button, Text } = $.ui.resolve(e)
+    const stack = (top: RenderElement) =>
+      below ? (
+        <Box flexDirection="column">
+          {top}
+          {below}
+        </Box>
+      ) : (
+        top
+      )
+
+    // Hidden: one line of counts, and Show to open the card again.
+    if (hidden) {
+      const counts = `${c.done.length} done · ${c.doing.length} in progress · ${c.waiting.length} waiting`
+      return stack(
+        <Box borderStyle="round" borderColor="magenta" paddingX={1}>
+          <Text color="magenta" bold>
+            Where are we{' '}
+          </Text>
+          <Text dimColor>{`${counts} `}</Text>
+          <Button key="show" variant="primary" label="Show" onPress={() => setHidden($, false)} />
+        </Box>,
+      )
+    }
     const shown = c.done.slice(-SHOWN_DONE)
     const earlier = c.done.length - shown.length
     const when = c.updatedAt === null ? '' : stamp(c.updatedAt)
@@ -349,12 +392,13 @@ export const register: Register = on => {
           <Text color={color} bold>
             {label}
           </Text>
-          {items.map((item, i) => (
+          {items.slice(0, SHOWN_ROWS).map((item, i) => (
             <Text key={`${label}${i}`} wrap="truncate-end">
               {'  '}
               {mark} {item}
             </Text>
           ))}
+          {items.length > SHOWN_ROWS ? <Text dimColor>  +{items.length - SHOWN_ROWS} more</Text> : null}
         </Box>
       )
 
@@ -413,6 +457,8 @@ export const register: Register = on => {
           ) : null}
           {hasItems && l.undo ? gap('g3') : null}
           {l.undo ? <Button key="undo" label="Undo" onPress={() => undo($)} /> : null}
+          {gap('g4')}
+          <Button key="hide" label="Hide" onPress={() => setHidden($, true)} />
         </Box>
         {done}
         {section('In progress', 'blue', c.doing, '›')}
@@ -420,13 +466,6 @@ export const register: Register = on => {
       </Box>
     )
 
-    return below ? (
-      <Box flexDirection="column">
-        {mine}
-        {below}
-      </Box>
-    ) : (
-      mine
-    )
+    return stack(mine)
   })
 }
