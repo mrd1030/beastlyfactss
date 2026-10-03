@@ -87,6 +87,7 @@ export const geckoGuides = [
       "Calcium with D3",
       "Reptile multivitamin",
       "Dubia roaches or crickets",
+      "UV index meter (optional, highly recommended)",
     ],
     faqs: [
       { q: "How humid should the enclosure be?", a: "Higher than a leopard gecko needs, though the enclosure stays mostly dry. Ambient around 50 to 70% works, and a permanent humid hide at 70 to 80% is the piece that prevents shedding problems." },
@@ -168,6 +169,7 @@ export const geckoGuides = [
       "Commercial crested gecko diet (CGD)",
       "Plain calcium for dusting insects",
       "Occasional feeder insects (crickets, dubia)",
+      "UV index meter (optional, highly recommended)",
     ],
     faqs: [
       { q: "How long can a crested gecko go without eating?", a: "About 2 to 3 weeks for a healthy adult at a good weight, though a vet consult is worth considering once the second week passes, especially alongside visible weight loss. Juveniles hold far less reserve and don't get that grace period. Water runs on a shorter clock: roughly 3 days." },
@@ -257,6 +259,7 @@ export const geckoGuides = [
       "Plain calcium without D3 or phosphorus",
       "Calcium with D3",
       "Dubia roaches or crickets",
+      "UV index meter (optional, highly recommended)",
     ],
     faqs: [
       { q: "Can a gargoyle gecko regrow its tail, unlike a crested gecko?", a: "Yes, and this is one of the biggest differences between the two species. Gargoyle geckos regenerate a dropped tail, confirmed by peer-reviewed genome research, while crested geckos cannot. The regrown tail is prehensile and cartilage-based rather than bone, with somewhat asymmetrical scales, but it's fully functional." },
@@ -443,6 +446,7 @@ export const geckoGuides = [
       "Dubia roaches or crickets",
       "Optional low-level UVB fixture and bulb",
       "Plug-in timer for the lights",
+      "UV index meter (optional, highly recommended)",
     ],
     faqs: [
       { q: "What's the one setup detail people get wrong most often?", a: "Humidity. Keep the general enclosure at 30 to 40%, but separately provide a dedicated humid hide at 70 to 80% humidity. Raising humidity across the whole enclosure to hit that number instead just creates a respiratory infection risk." },

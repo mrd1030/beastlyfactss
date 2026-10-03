@@ -1937,7 +1937,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$240–$265",
     description: "The instrument keepers use to verify a UV index of 3 to 4 at the basking site rather than trusting a bulb's stated percentage, which drops off long before the bulb stops emitting visible light. At well over two hundred dollars it is the most expensive single item on this site and is genuinely optional, but it is the only way to actually measure what a reptile is receiving.",
-    covers: [], // some parrot keepers provide UVB lighting too (birds.js references "Full-spectrum UVB light") and would want to verify output the same way
+    covers: ["UV index meter (optional, highly recommended)"], // some parrot keepers provide UVB lighting too (birds.js references "Full-spectrum UVB light") and would want to verify output the same way
     pets: ["reptiles-amphibians", "birds"],
   },
 

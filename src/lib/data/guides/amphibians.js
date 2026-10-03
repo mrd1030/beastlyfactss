@@ -409,6 +409,7 @@ export const amphibianGuides = [
       "Fine mist spray bottle",
       "Calcium w/D3 and a reptile multivitamin",
       "Gut-loaded live insect feeders: crickets or dubia roaches",
+      "UV index meter (optional, highly recommended)",
     ],
     faqs: [
       { q: "What humidity level is correct for a White's tree frog?", a: "Hold a baseline of 50 to 60% and let misting push it to 70 to 80% once or twice a day, then let it fall. Humidity that never drops is linked to bacterial and red-leg issues, so damp around the clock is the thing to avoid." },

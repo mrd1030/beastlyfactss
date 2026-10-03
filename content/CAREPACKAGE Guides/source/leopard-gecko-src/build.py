@@ -39,6 +39,7 @@ SECTIONS = [
         ("temperature", "The Temperature Gradient &amp; Belly Heat"),
         ("thermostats", "Heat Mats, Thermostats, Probes &amp; Timers"),
         ("uvb", "UVB: Low Output, Optional &amp; Worth It"),
+        ("uvb2", "UVB: Meter &amp; Schedule"),
         ("substrate", "Substrate, Furnishings &amp; the Three Hides"),
         ("cleaning", "Cleaning &amp; Hygiene"),
     ]),

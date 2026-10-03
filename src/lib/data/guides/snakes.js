@@ -84,6 +84,7 @@ export const snakeGuides = [
       "Optional low-level UVB fixture and bulb, about 34 in (check the length against your enclosure)",
       "Optional daylight LED for the 12-hour photoperiod",
       "Plug-in timer for the lights",
+      "UV index meter (optional, highly recommended)",
     ],
     faqs: [
       { q: "What humidity level does a ball python need?", a: "Ambient 55 to 65%, raised to 70 to 80% while the snake is in shed. Dry air gives bad sheds and raises respiratory infection risk; too wet without ventilation goes the other way, toward scale rot." },
@@ -506,6 +507,7 @@ export const snakeGuides = [
       "Frozen/thawed mice",
       "Optional low-output T5 UVB, 5.0 or 6%, about two-thirds of the enclosure length (check the length against your enclosure)",
       "Optional night heat: heat mat and on/off thermostat, only below 60°F",
+      "UV index meter (optional, highly recommended)",
     ],
     faqs: [
       { q: "How humid should a hognose snake enclosure be?", a: "30 to 50% ambient, dry compared with most pet snakes. Rather than misting the whole enclosure, run one dedicated humid hide for shedding and add moisture only there." },

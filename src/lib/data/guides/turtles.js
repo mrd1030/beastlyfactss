@@ -344,6 +344,7 @@ export const turtleGuides = [
       "Shallow water dish large enough to soak in",
       "Plain calcium without D3 or phosphorus",
       "Grass hay, by the box",
+      "UV index meter (optional, highly recommended)",
     ],
     faqs: [
       { q: "What size enclosure does a Russian tortoise need?", a: "4 feet by 2 by 2 is the absolute indoor minimum, though something nearer 7 feet by 3.5 is the comfortable working size. Use an open-topped tortoise table rather than a closed glass aquarium." },

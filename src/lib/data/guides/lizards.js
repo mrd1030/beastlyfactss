@@ -312,6 +312,7 @@ export const lizardGuides = [
       "Calcium with D3",
       "Reptile multivitamin",
       "Shallow water dish",
+      "UV index meter (optional, highly recommended)",
     ],
     faqs: [
       { q: "How hot does the basking spot need to be?", a: "95 to 110°F on the basking surface for adults, and 105 to 115°F for juveniles, measured with an infrared thermometer aimed at the actual surface rather than the air. That heat comes from a separate basking bulb, not the UVB tube, which supplies UV but little usable heat on its own." },
