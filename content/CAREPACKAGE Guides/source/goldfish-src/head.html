@@ -86,12 +86,19 @@ tr:last-child td{border-bottom:none;}
 .col{flex:1;}
 .divider{height:0.75pt;background:var(--line);margin:12pt 0;}
 h2.h{font-size:13.5pt;margin:14pt 0 5pt 0;}
+.snug p,.snug li{line-height:1.42;}
+.snug li{margin-bottom:2pt;}
+.snug h2.h{margin:9pt 0 3pt 0;}
+.snug .callout{padding:8pt 12pt;margin:7pt 0;}
+.snug table.dense td{line-height:1.32;}
 h3.h{font-size:11pt;margin:10pt 0 4pt 0;color:var(--accent-dark);}
 .small{font-size:8.8pt;color:var(--faint);}
 .toc-label{font-family:'Inter',sans-serif;font-weight:700;font-size:9pt;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);margin-top:6pt;margin-bottom:1pt;border-bottom:1pt solid var(--line);padding-bottom:3pt;}
 .toc-label:first-of-type{margin-top:10pt;}
-.toc table{margin-top:0;}
-.toc td{padding:1.4pt 0;border-bottom:none;font-size:9.2pt;line-height:1.3;}
+.toc{column-count:2;column-gap:20pt;}
+.toc table{margin-top:0;break-inside:avoid;}
+.toc-label{break-after:avoid;}
+.toc td{padding:1pt 0;border-bottom:none;font-size:9.2pt;line-height:1.3;}
 
 /* t3 additions */
 .tier{display:inline-block;font-size:7.6pt;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;border-radius:20pt;padding:2pt 7pt;white-space:nowrap;}
@@ -113,6 +120,11 @@ table.log.tall td{height:30pt;}
 .card p{font-size:9.3pt;line-height:1.45;}
 .compact p,.compact li{font-size:9.8pt;}
 .tight p{margin-bottom:5pt;}
+/* 4.0 additions: a denser reference style for the glossary, legal and sources pages */
+table.ref{font-size:8.3pt;margin-top:6pt;}
+table.ref td{padding:2.2pt 6pt;line-height:1.28;}
+table.ref th{padding:4pt 6pt;}
 </style>
 </head>
 <body>
+

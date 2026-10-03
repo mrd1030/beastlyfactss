@@ -2069,7 +2069,7 @@
     "title": "Amphibian Quarantine, Acclimation, and Water Hardness: The Full Guide",
     "seoTitle": "Amphibian Quarantine and Water Hardness Guide",
     "seoDescription": "How to quarantine and acclimate a new amphibian without a net, why Bsal and Bd make it non-optional, and why axolotl hardness figures lack a real source.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "A new amphibian needs a container instead of a net, a temperature match before a chemistry match, and weeks of quarantine, and the water it goes into afterward has a real, honest gap in what's actually known about hardness.",
     "date": "2026-09-04",
@@ -2138,7 +2138,7 @@
     "title": "Tubbing, Cooling, and Salt Baths for Sick Axolotls",
     "seoTitle": "Axolotl Tubbing, Cooling & Salt Baths Guide",
     "seoDescription": "How axolotl tubbing, cooling and salt baths work, the figures a WSAVA veterinary paper actually gives, and a clear line on where home care has to stop.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Tubbing, cooling, and salt baths are real interventions axolotl keepers reach for first, but the numbers that circulate online are rarely the ones a vet would actually use.",
     "date": "2026-09-04",
@@ -2195,7 +2195,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -2629,7 +2629,7 @@
     "title": "How to Cycle a Fish Tank, Start to Finish: Fishless and Fish-In",
     "seoTitle": "How to Cycle a Fish Tank: Fishless and Fish-In",
     "seoDescription": "The nitrogen cycle explained for freshwater fish tanks and axolotls: fishless ammonia dosing, fish-in water change thresholds, and why cycles stall or restart.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Fishless and fish-in cycling for freshwater tanks, explained with real ammonia dosing numbers, action thresholds, and the reasons a cycle stalls or crashes.",
     "date": "2026-09-04",
@@ -2676,7 +2676,7 @@
       },
       {
         "q": "Do axolotls need a cycled tank the same way fish do?",
-        "a": "Yes, and there's less room for error. Axolotls are kept alone in their tank, are sensitive to ammonia and nitrite at the same low levels as fish, and are typically added only once a tank is already cycled rather than cycled with the animal in it. Because axolotls are kept cooler than most tropical fish, expect their tank's cycle to run on the slower end of the timeline."
+        "a": "Yes, and there's less room for error. Axolotls are usually kept alone in their tank, are sensitive to ammonia and nitrite at the same low levels as fish, and are typically added only once a tank is already cycled rather than cycled with the animal in it. Because axolotls are kept cooler than most tropical fish, expect their tank's cycle to run on the slower end of the timeline."
       }
     ],
     "relatedProducts": [],
@@ -3696,9 +3696,9 @@
     "path": "/content/guides/axolotl-cost-guide.mdx",
     "slug": "axolotl-cost-guide",
     "title": "How Much Does an Axolotl Really Cost?",
-    "seoTitle": "Axolotl Price: $30 to $100, Plus $200 to $500 Setup",
-    "seoDescription": "Axolotl cost breakdown: $30-100 for the animal, $450-900 for a full setup with a chiller, and $15-45 a month, the chiller is the real budget driver.",
-    "lastUpdated": "2026-09-25",
+    "seoTitle": "Axolotl Price: $30 to $100, Plus $120 to $375 Setup",
+    "seoDescription": "Axolotl cost breakdown: $30-100 for the animal, $270-775 for a full setup with a chiller, and $15-45 a month, the chiller is the real budget driver.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Axolotls look deceptively simple to keep, a tank of water and a strange, smiling salamander. The cost driver isn't obvious until you get into the specifics: keeping the water cold enough is what determines your budget.",
     "date": "2026-07-18",
@@ -3729,15 +3729,15 @@
       },
       {
         "q": "What does a full axolotl setup cost, including a chiller?",
-        "a": "Plan on $200 to $500 for a basic setup, or $450 to $900 once you factor in a proper chiller and a fully cycled filter. The chiller is the single item that does the most to separate the low and high ends of that range."
+        "a": "Plan on $120 to $375 for a basic setup, or $270 to $775 once you factor in a proper chiller. The chiller is the single item that does the most to separate the low and high ends of that range."
       },
       {
         "q": "What are the ongoing monthly costs for an axolotl?",
         "a": "Around $15 to $45 a month, with food (nightcrawlers) running $5 to $15 of that. The rest goes to water conditioner, filter media, and the electricity a chiller draws, which varies a lot by climate and season."
       },
       {
-        "q": "Why is a chiller considered a non-negotiable cost for axolotls?",
-        "a": "Axolotls need water between 60 and 64°F, and most homes run warmer than that for part of the year. Without a chiller you can't reliably keep the water in a safe range, which makes it part of the cost of keeping this species responsibly rather than an optional upgrade."
+        "q": "When does an axolotl need a chiller?",
+        "a": "Whenever the room runs warmer than the water should. Axolotls need water between 60 and 64°F, and most homes run warmer than that for part of the year. If you can't reliably keep the water in range with a cool room and a fan, the chiller is part of the cost of keeping this species responsibly, not an optional upgrade."
       }
     ],
     "relatedProducts": [
@@ -3766,7 +3766,7 @@
     "title": "Axolotl Enrichment: Hides, Foraging, and Safe Novelty",
     "seoTitle": "Axolotl Enrichment Guide",
     "seoDescription": "Axolotl enrichment means choice: 3 to 4 stable hides, a sand saucer for foraging, monthly minor changes only. Cohousing isn't enrichment, it's a bite risk.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Axolotl enrichment isn't about toys, it's about giving choice: multiple smooth hides, plant cover, and food they have to search for instead of a bowl they wait next to.",
     "date": "2026-08-14",
@@ -3819,8 +3819,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
-    "headingCount": 7,
+    "sourceCount": 5,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -3902,7 +3902,7 @@
     "title": "Should You Handle an Axolotl? Only When You Truly Have To",
     "seoTitle": "Axolotl Handling: What to Know",
     "seoDescription": "Axolotls have scaleless skin, no protective slime coat, and a mostly cartilage skeleton, so handling should be rare and always via a submerged container.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Axolotls are not a hands-on pet, and this isn't a preference, it's about their physical vulnerability. Handling should be minimal and reserved for genuine necessity, not casual interaction.",
     "date": "2026-07-18",
@@ -3950,7 +3950,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 8,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -3962,7 +3962,7 @@
     "title": "Common Axolotl Health Issues (Most Trace Back to Temperature)",
     "seoTitle": "Axolotl Health Issues: Signs & Causes",
     "seoDescription": "Axolotl health problems mostly trace to warm water: heat stress starts above 72°F and turns fatal near 75°F, alongside fungal infection and impaction risk.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Axolotls are hardy in the right conditions and surprisingly fragile outside them. A large share of what goes wrong traces back to water that's too warm, which makes temperature control the single most important thing to get right.",
     "date": "2026-07-18",
@@ -4016,7 +4016,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 5,
-    "headingCount": 9,
+    "headingCount": 10,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -4094,7 +4094,7 @@
     "title": "Axolotl Tank Setup: Cold Water and No Gravel",
     "seoTitle": "Axolotl Tank Setup Guide",
     "seoDescription": "Axolotl tank setup essentials: a 20-gallon long minimum, water kept at 60-64°F with no heater, and fine sand under 1mm or bare bottom, never gravel.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Axolotl husbandry comes down to a short list of rules that matter a lot: keep the water cold, skip the gravel, and don't overthink the rest. Get those two things right and this is a manageable pet.",
     "date": "2026-07-18",
@@ -5819,9 +5819,9 @@
     "path": "/content/guides/betta-fish-cost-guide.mdx",
     "slug": "betta-fish-cost-guide",
     "title": "How Much Does a Betta Fish Really Cost?",
-    "seoTitle": "Betta Fish Price: $5 to $30, Plus $100 to $300 Setup",
-    "seoDescription": "Betta fish cost breakdown: $5-30 for the fish (up to $55 rare), $100-300 for a heated tank setup, and $20-30 a month ongoing, vet visits are rare.",
-    "lastUpdated": "2026-09-25",
+    "seoTitle": "Betta Fish Price: $5 to $30, Plus $105 to $280 Setup",
+    "seoDescription": "Betta fish cost breakdown: $5-30 for the fish (up to $55 rare), $105-280 for a heated tank setup, and $10-25 a month ongoing, vet visits are rare.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Betta fish have a reputation as a starter pet you can keep in almost nothing, which is exactly the misconception worth correcting. A proper setup costs more than the bowl-and-fish combo suggests, but it's still one of the more affordable pets you can keep once it's built.",
     "date": "2026-07-14",
@@ -5856,7 +5856,7 @@
       },
       {
         "q": "What does a proper betta tank setup cost?",
-        "a": "Plan on $100 to $300 for a full setup: tank, heater, filter, decor, water conditioner, and a basic test kit. How much you spend on the tank itself and the quality of the heater and filter is what moves you around in that range."
+        "a": "Plan on $105 to $280 for a full setup: tank, heater, filter, decor, substrate, water conditioner, and a basic test kit, before the fish. Add $5 to $30 for the fish and the all-in figure is $110 to $310. How much you spend on the tank itself and the quality of the heater and filter is what moves you around in that range."
       },
       {
         "q": "What are the ongoing monthly costs for a betta?",
@@ -5961,7 +5961,7 @@
     "title": "Betta Fish Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Betta Fish Eat? Diet and Feeding Schedule",
     "seoDescription": "A betta's stomach is about the size of its eye, so 2-4 pellets a meal is right. Feed once or twice daily, fast weekly, and worry past 5-7 days without food.",
-    "lastUpdated": "2026-07-24",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "How much to feed a betta (less than you'd think), what belongs in the bowl, and the reasons a betta goes off food, from picky eating to something water-quality related.",
     "date": "2026-07-24",
@@ -6018,8 +6018,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
-    "headingCount": 7,
+    "sourceCount": 5,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -6030,7 +6030,7 @@
     "title": "How to Handle a Betta Fish (Hint: You Mostly Don't)",
     "seoTitle": "How to Handle a Betta Fish Safely",
     "seoDescription": "Never handle a betta with bare hands, it strips the protective slime coat instantly. Use a net or cup, and float a new bag 20 to 30 minutes before release.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Betta fish are not a hands-on pet in the way a guinea pig or a bearded dragon is. The honest answer to how you handle a betta is almost always: you don't, at least not with bare hands.",
     "date": "2026-07-14",
@@ -6065,7 +6065,7 @@
       },
       {
         "q": "Can a betta live with other fish?",
-        "a": "A male lives alone or with peaceful, short-finned tankmates such as corydoras, mystery snails, ghost shrimp, and some small tetras or rasboras. Never a second male, and never fin-nippers like tiger barbs. Females can share a tank as a sorority, which needs at least 10 gallons."
+        "a": "A male lives alone or with peaceful, short-finned tankmates such as corydoras, mystery snails, ghost shrimp, and some small tetras or rasboras. Tankmates need at least 10 to 20 gallons, and ghost shrimp only once they pass about 1.5 inches. Never a second male, and never fin-nippers like tiger barbs. Females can share a tank as a sorority, which needs at least 10 gallons with cover."
       },
       {
         "q": "What does day-to-day betta handling look like?",
@@ -6082,8 +6082,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
-    "headingCount": 8,
+    "sourceCount": 3,
+    "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -6094,7 +6094,7 @@
     "title": "Common Betta Fish Health Issues (And Why Water Quality Comes First)",
     "seoTitle": "Betta Fish Health Issues: Signs & Causes",
     "seoDescription": "Betta fish health issues from fin rot to ich, velvet, and swim bladder disorder, with symptoms, causes, and why water quality is the first thing to check.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Almost every common betta illness traces back to one of two things: water quality or water temperature. That's good news, since it means the first response to a sick betta is almost always the same starting point.",
     "date": "2026-07-14",
@@ -6125,7 +6125,7 @@
       },
       {
         "q": "How do I know if my betta has ich or velvet?",
-        "a": "Ich shows up as small white grains across the body and fins, along with scratching against decor, and is treated by gradually raising tank temperature along with a copper or formalin-based medication. Velvet gives the fish a fine gold or rust-colored dusty sheen, moves fast, and needs a darkened tank plus an antiparasitic or copper treatment started early."
+        "a": "Ich shows up as small white grains across the body and fins, along with scratching against decor, and is treated by slowly raising the tank to 86°F with an air stone and holding it for two weeks, or with aquarium salt at about a tablespoon per 5 gallons. Velvet gives the fish a fine gold or rust-colored dusty sheen, moves fast, and needs a darkened tank plus an antiparasitic or copper treatment started early."
       },
       {
         "q": "What causes swim bladder disorder in bettas?",
@@ -6158,7 +6158,7 @@
     "title": "Betta Fish Tank Setup: Bigger, Warmer, and Cycled",
     "seoTitle": "Betta Fish Tank Setup Guide",
     "seoDescription": "Betta fish tank setup: 5 gallons minimum, a 15-25W heater holding 76-82°F, and a gentle sponge filter, bettas' long fins can't handle strong current.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "The bowl-on-a-desk image most people have of betta fish is outdated. Modern betta care centers on a proper heated, filtered tank, and the setup itself isn't complicated once you know what matters.",
     "date": "2026-07-14",
@@ -6215,7 +6215,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -23290,9 +23290,9 @@
     "path": "/content/guides/goldfish-cost-guide.mdx",
     "slug": "goldfish-cost-guide",
     "title": "How Much Does a Goldfish Really Cost?",
-    "seoTitle": "Goldfish Price: Under $10, Plus the $150 to $400 Setup",
-    "seoDescription": "Goldfish cost breakdown: the fish itself often under $10, a proper tank and filtration setup at $150-400, and just $10-30 a month once you skip the bowl.",
-    "lastUpdated": "2026-09-25",
+    "seoTitle": "Goldfish Price: Under $10, Plus the $105 to $270 Setup",
+    "seoDescription": "Goldfish cost breakdown: the fish itself often under $10, a proper tank and filtration setup at $105-270, and just $10-30 a month once you skip the bowl.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Goldfish have the worst reputation-to-reality gap of almost any common pet. The fish itself costs next to nothing, but proper goldfish keeping requires a large tank and serious filtration, exactly the part the classic fish-in-a-bowl image leaves out entirely.",
     "date": "2026-07-20",
@@ -23323,7 +23323,7 @@
       },
       {
         "q": "What does a proper goldfish tank setup cost?",
-        "a": "A complete setup, tank, filtration, optional heater, substrate, dechlorinator, decor, and a test kit, typically runs $150 to $400. Filtration is the part worth budgeting extra for since goldfish produce far more waste than most fish their size."
+        "a": "A complete setup for one fancy goldfish, tank, basic filtration, optional heater, substrate, dechlorinator, decor, and a test kit, adds up to $105 to $270. Filtration is the part worth budgeting extra for, since goldfish produce far more waste than most fish their size and a canister filter costs more than the basic figure counted here."
       },
       {
         "q": "What are the ongoing monthly costs for a goldfish?",
@@ -23358,7 +23358,7 @@
     "title": "Goldfish Enrichment: Space, Plants, and Foraging Done Right",
     "seoTitle": "Goldfish Enrichment Guide",
     "seoDescription": "Goldfish enrichment research: fish spend about 90% of their time in planted areas versus 10% in open space, and substrate particle size affects foraging.",
-    "lastUpdated": "2026-08-19",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Goldfish enrichment is inseparable from the tank itself. Decor and plants can't rescue a bowl or bad water, but once the setup is right, real research shows what adds value on top.",
     "date": "2026-08-19",
@@ -23392,7 +23392,7 @@
       },
       {
         "q": "What substrate is best for goldfish foraging?",
-        "a": "Fine sand or smooth rounded gravel supports natural sifting behavior. Research on substrate particle size found it measurably affects how much time goldfish spend foraging, with coarse sand outperforming a lot of coarser gravel options for this specifically. Avoid sharp gravel or anything easily swallowed."
+        "a": "Sand supports natural sifting behavior. Research on substrate particle size found it measurably affects how much time goldfish spend foraging, with coarse sand outperforming a lot of coarser gravel options for this specifically. Gravel is safe only when every piece is at least 1/2 inch across, and sharp or swallowable stones are out."
       },
       {
         "q": "What plants survive in a goldfish tank?",
@@ -23415,8 +23415,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
-    "headingCount": 9,
+    "sourceCount": 4,
+    "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1376,
     "imageHeight": 768
@@ -23499,7 +23499,7 @@
     "title": "How to \"Handle\" a Goldfish (Net and Cup, Not Hands)",
     "seoTitle": "How to Handle a Goldfish Safely",
     "seoDescription": "A goldfish's slime coat takes 24-48 hours to regrow after bare hand contact. Use a wet net or container transfer instead, never dry hands.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Like most fish, goldfish should not be routinely picked up by hand. This isn't an overcautious rule, their protective slime coat is a genuine, physical barrier against disease, and bare hands remove it on contact.",
     "date": "2026-07-20",
@@ -23547,8 +23547,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
-    "headingCount": 8,
+    "sourceCount": 5,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -23559,7 +23559,7 @@
     "title": "Common Goldfish Health Issues (And What Actually Prevents Them)",
     "seoTitle": "Goldfish Health Issues: Signs & Causes",
     "seoDescription": "Goldfish health issues to know: ich's white spots, swim bladder disorder in fancy varieties, and dropsy's pinecone scales, a sign of organ failure.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Goldfish are hardier than their reputation suggests when kept in the right conditions, but a handful of issues come up often enough to be worth knowing before they show up in your own tank.",
     "date": "2026-07-20",
@@ -23621,8 +23621,8 @@
     "slug": "goldfish-tank-setup-guide",
     "title": "Goldfish Tank Setup: Bigger Than You Think, Filtered More Than You'd Guess",
     "seoTitle": "Goldfish Tank Setup Guide",
-    "seoDescription": "Goldfish need at least 20 gallons for one fancy fish, 55+ for single tails, and filtration turning over tank volume 4-10 times an hour.",
-    "lastUpdated": "2026-09-25",
+    "seoDescription": "Goldfish need at least 20 gallons for one fancy fish, 55+ for single tails, and filtration turning over tank volume 10 times an hour or more.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "If you take away one thing from goldfish care, make it this: the bowl is wrong, and the tank you need is bigger than most people expect for what looks like a small, simple fish.",
     "date": "2026-07-20",
@@ -23653,11 +23653,11 @@
       },
       {
         "q": "How much filtration does a goldfish tank need?",
-        "a": "Enough to turn over the whole tank at least 4 times an hour, ideally 5 to 10, because goldfish produce far more waste than their size suggests. Two filters on one tank is normal practice here, not overkill."
+        "a": "Enough to turn over the whole tank 10 times an hour or more, the figure for a heavily stocked, messy tank, because goldfish produce far more waste than their size suggests. Two filters on one tank is normal practice here, not overkill."
       },
       {
         "q": "What water parameters should I keep for goldfish?",
-        "a": "Goldfish are a coldwater species, comfortable in the 65 to 75°F range with no heater strictly required. Keep ammonia and nitrite at 0 and nitrate under roughly 20 ppm, and do weekly water changes of 25 to 50%, always treating new water with a dechlorinator first."
+        "a": "Goldfish are a coldwater species, comfortable in the 65 to 75°F range, with no heater needed unless the room falls below that. Keep ammonia and nitrite at 0 and nitrate under roughly 20 ppm, and do weekly water changes of 25 to 50%, always treating new water with a dechlorinator first."
       },
       {
         "q": "What should I feed a goldfish?",
@@ -23688,7 +23688,7 @@
     "title": "The Goldfish Bowl Myth: What the Research Actually Shows",
     "seoTitle": "The Goldfish Bowl Myth Debunked",
     "seoDescription": null,
-    "lastUpdated": "2026-09-08",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Why the goldfish bowl and 3-second-memory myths are wrong, what undersized tanks really do to goldfish, and the true space requirements by variety.",
     "date": "2026-06-26",
@@ -23746,8 +23746,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
-    "headingCount": 8,
+    "sourceCount": 4,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1620,
     "imageHeight": 1080
@@ -30296,7 +30296,7 @@
     "title": "Koi vs. Goldfish: Which Pond Fish Actually Fits Your Space",
     "seoTitle": "Koi vs. Goldfish: Full Comparison",
     "seoDescription": "Koi vs goldfish: real differences in species, size, housing needs, and lifespan, compared side by side.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Koi or goldfish? The differences in size, species, and whether you need a pond, not just which one is more colorful at the garden store.",
     "date": "2026-09-03",
@@ -30332,7 +30332,7 @@
       },
       {
         "q": "Which gets bigger, a koi or a goldfish?",
-        "a": "Koi, by a wide margin. A typical adult koi reaches 24 to 25 inches, with some approaching 3 feet in ideal conditions. Most goldfish stay in the 4 to 8 inch range, though pond-raised common and comet goldfish can grow larger than the fancy varieties bred for aquariums."
+        "a": "Koi, by a wide margin. A typical adult koi reaches 24 to 25 inches, with some approaching 3 feet in ideal conditions. Fancy goldfish stay at 6 to 8 inches, while common and comet goldfish reach 10 to 14 inches or more, especially in a pond."
       },
       {
         "q": "Which lives longer, a koi or a goldfish?",
@@ -40787,7 +40787,7 @@
     "title": "Reading Reptile Stool, Urates, and Hydration: A Daily Health Check",
     "seoTitle": "Reptile Stool and Urates: A Daily Health Check",
     "seoDescription": "How to read reptile stool and urates across lizards, geckos, snakes, and tortoises: what's normal by diet type, real dehydration signs, and genuine red flags.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Reptile stool and urates are a free, five-second daily health check that works across lizards, geckos, snakes, and turtles and tortoises alike. Here's what's normal by diet type, what counts as dehydrated, and what's an actual red flag.",
     "date": "2026-09-04",
@@ -41316,7 +41316,7 @@
     "title": "How Much Does a Russian Tortoise Really Cost?",
     "seoTitle": "Russian Tortoise Price: $50 to $400, Plus $372 to $775 Setup",
     "seoDescription": "Full Russian tortoise cost breakdown: $50-400 for the tortoise, $372-775 setup, and why this one can live indoors for life.",
-    "lastUpdated": "2026-09-08",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Russian tortoises are one of the more approachable tortoises to own, both in price and, unlike the sulcata, in the fact that this species can live its entire life indoors.",
     "date": "2026-07-30",
@@ -41359,7 +41359,7 @@
       },
       {
         "q": "How long do Russian tortoises live, and why does that matter for budgeting?",
-        "a": "40 years or more is typical, and some individuals reach 50-plus. At $365 to $715 a year, that adds up to roughly $15,000 to $30,000 before a single illness. Plan for a succession of care."
+        "a": "40 years or more is typical, and some individuals reach 50-plus. At $365 to $715 a year, that adds up to $14,600 to $28,600 before a single illness. Plan for a succession of care."
       },
       {
         "q": "Can a Russian tortoise live indoors for its whole life?",
@@ -41389,8 +41389,8 @@
     "slug": "russian-tortoise-enrichment-guide",
     "title": "Russian Tortoise Enrichment: Digging, Grazing, and Exploration",
     "seoTitle": "Russian Tortoise Enrichment Guide",
-    "seoDescription": "Russian tortoises need 6-12+ inches of diggable substrate, scattered forage instead of a bowl, and a layout refreshed every 1-2 weeks, not daily.",
-    "lastUpdated": "2026-09-24",
+    "seoDescription": "Russian tortoises need 6-12+ inches of diggable substrate, scattered forage instead of a bowl, and a layout refreshed every 1-4 weeks, not daily.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Russian tortoises are persistent diggers and grazers, enrichment here means real substrate to dig into, scattered forage instead of a bowl, and a landscape with actual routes through it.",
     "date": "2026-08-16",
@@ -41453,7 +41453,7 @@
     "title": "Russian Tortoise Feeding: Fiber, Calcium, and Growing Slowly",
     "seoTitle": "Russian Tortoise Feeding: Diet, Calcium, Portions",
     "seoDescription": "Russian tortoise feeding guide: what a grazing herbivore needs, calcium ratios, why fast growth is a problem, and how to spot an overweight tortoise now.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "A Russian tortoise is built to graze its way through fibrous weeds all day, which is a very different job from clearing a bowl of salad in ten minutes and then waiting.",
     "date": "2026-09-09",
@@ -41514,7 +41514,7 @@
     "title": "How to Handle a Russian Tortoise",
     "seoTitle": "How to Handle a Russian Tortoise Safely",
     "seoDescription": "Russian tortoises are skilled climbers and diggers, house males separately, skip glass aquariums, and never over-humidify this arid species.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Russian tortoises are hardy and generally tolerant, but like most tortoises, this isn't a species built for regular handling, it's better understood as an observation pet with occasional, careful interaction.",
     "date": "2026-07-30",
@@ -41570,8 +41570,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
-    "headingCount": 7,
+    "sourceCount": 4,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -41582,7 +41582,7 @@
     "title": "Common Russian Tortoise Health Issues and What Causes Them",
     "seoTitle": "Russian Tortoise Health Issues: Signs & Causes",
     "seoDescription": "Weak UVB causes metabolic bone disease, cold or damp housing causes respiratory infection, and pyramiding set during growth is permanent.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Russian tortoises are hardy, and most health problems trace back to a handful of husbandry basics, temperature, humidity, and diet, that are within an owner's control.",
     "date": "2026-07-30",
@@ -41637,8 +41637,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
-    "headingCount": 10,
+    "sourceCount": 6,
+    "headingCount": 15,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -41690,8 +41690,8 @@
     "slug": "russian-tortoise-tank-setup-guide",
     "title": "Russian Tortoise Enclosure Setup: Compact Housing With Real Requirements",
     "seoTitle": "Russian Tortoise Enclosure Setup Guide",
-    "seoDescription": "Russian tortoises need a 4x2x2 foot minimum table, a 95-100F basking spot, 30-50% humidity, and indoor keepers can skip brumation entirely.",
-    "lastUpdated": "2026-09-25",
+    "seoDescription": "Russian tortoises need a 4x2x2 foot minimum table, a 95F basking spot, 40-50% humidity, and indoor keepers can skip brumation entirely.",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Russian tortoise care is manageable indoors for this species' entire life, and getting the enclosure type, temperature, and humidity right is most of what it takes to keep one thriving.",
     "date": "2026-07-30",
@@ -41704,6 +41704,7 @@
       "Enclosure Setup",
       "UVB",
       "Brumation",
+      "Cleaning",
       "Care Tips",
       "Tortoise Care"
     ],
@@ -41722,23 +41723,23 @@
       },
       {
         "q": "What temperature does a Russian tortoise enclosure need?",
-        "a": "Basking 95 to 100°F at the surface, cool side in the 70s°F. This is a cold-hardy species: night drops to about 60°F are fine, and most homes need no supplemental night heat."
+        "a": "Basking about 95°F at the surface, cool side in the 70s°F. This is a cold-hardy species: night drops to about 60°F are fine, and most homes need no supplemental night heat."
       },
       {
         "q": "Does humidity matter for a Russian tortoise?",
-        "a": "Yes, but ambient humidity should stay relatively low, 30 to 50%, appropriate for this arid-adapted species. A moist hide lined with peat moss provides a humid microclimate for hydration and shedding without raising humidity across the whole enclosure."
+        "a": "Yes, but ambient humidity should stay relatively low, 40 to 50% at the open surface, appropriate for this arid-adapted species. A juvenile runs 40 to 75%, lower by day and higher at night. A moist hide lined with peat moss provides a humid microclimate for hydration and shedding without raising humidity across the whole enclosure."
       },
       {
         "q": "What substrate is best for a Russian tortoise?",
-        "a": "Topsoil and coconut coir at 50/50, or a similar sand and loam blend, deep enough to burrow in and kept slightly damp rather than bone dry. No pure sand, no rabbit pellets, no newspaper-only floor."
+        "a": "Topsoil and coconut coir at 50/50, or a similar sand and loam blend, at least 4 inches deep for a juvenile and 6 for an adult, kept slightly damp rather than bone dry. No pure sand, no rabbit pellets, no newspaper-only floor."
       },
       {
         "q": "Do Russian tortoises need to brumate?",
-        "a": "They're physiologically programmed to, entering roughly 2 to 4 months of dormancy over winter at 40 to 55°F. Indoor keepers have a real choice most others don't: by maintaining full lighting, heat, and feeding year-round, you can keep your tortoise active through winter instead of brumating it."
+        "a": "They're physiologically programmed to, and a captive brumation is held at 35 to 50°F, ideally 41°F, for no longer than 10 weeks in a small tortoise and 14 in a large one. Indoor keepers have a real choice most others don't: by maintaining full lighting, heat, and feeding year-round, you can keep your tortoise active through winter instead of brumating it."
       },
       {
         "q": "What UVB setup does a Russian tortoise need?",
-        "a": "A T5 HO tube, with Arcadia 12% and Zoo Med ReptiSun 10.0 both well regarded, in a reflective fixture covering a third to half the enclosure length, for a basking-area UVI near 3.0 to 4.0. Coil and compact UVB bulbs aren't adequate here."
+        "a": "A T5 HO tube, with Arcadia 12% and Zoo Med ReptiSun 10.0 both well regarded, in a reflective fixture covering a third to half the enclosure length, mounted so the tortoise's back sits 14 to 16 inches below it through mesh or 17 to 20 inches with no mesh, for a basking-area UVI near 3.0 to 4.0. Coil and compact UVB bulbs aren't adequate here."
       }
     ],
     "relatedProducts": [
@@ -41753,8 +41754,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
-    "headingCount": 9,
+    "sourceCount": 5,
+    "headingCount": 10,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -42233,7 +42234,7 @@
     "title": "Four Pets, Four Things Nobody Mentions Before You Buy",
     "seoTitle": "Savannah, Tortoise, Cockatoo & Stick Insect",
     "seoDescription": "Four pets compared: savannah monitors risk fatty liver, cockatoos top surrender lists, but a Russian tortoise can live indoors for 40+ years.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": true,
     "excerpt": "A cheap lizard, a surprisingly easy tortoise, a heavily surrendered bird, and a legally complicated insect: four new pets, and four details the price tag and the pet store never bring up.",
     "date": "2026-07-31",
@@ -44812,7 +44813,7 @@
     "title": "Sulcata Tortoise vs. Russian Tortoise: Which Tortoise Actually Fits Your Space",
     "seoTitle": "Sulcata vs. Russian Tortoise: Size & Care Compared",
     "seoDescription": null,
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Sulcata or Russian tortoise? The differences in adult size, housing, and how many decades you're signing up for, not just which hatchling looks cuter.",
     "date": "2026-08-25",
@@ -44845,7 +44846,7 @@
       },
       {
         "q": "How big does a sulcata tortoise get compared to a Russian tortoise?",
-        "a": "There's no real comparison. An adult sulcata weighs 80 to 110 pounds, and a large male can pass 200, on par with a large dog. An adult Russian tortoise weighs just 2 to 3 pounds and stays around 6 to 10 inches long, small enough to hold in two hands for its whole life."
+        "a": "There's no real comparison. An adult sulcata weighs 80 to 110 pounds, and a large male can pass 200, on par with a large dog. An adult Russian tortoise weighs just 2 to 3 pounds and stays around 5 to 10 inches long, small enough to hold in two hands for its whole life."
       },
       {
         "q": "Which tortoise is better for a beginner, sulcata or Russian?",
@@ -45955,7 +45956,7 @@
     "title": "The Incredible Axolotl - Nature’s Smiling Salamander",
     "seoTitle": "Axolotl Facts: Regeneration, Morphs and Life Cycle",
     "seoDescription": null,
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Meet the axolotl, the Mexican salamander that keeps its gills for life, rebuilds whole limbs, and is down 99 percent in its only wild home.",
     "date": "2026-05-23",
@@ -47120,7 +47121,7 @@
     "title": "Tortoise Brumation: Which Species, and How to Do It Right",
     "seoTitle": "Tortoise Brumation: What's Safe, By Species",
     "seoDescription": "A safety-first tortoise brumation guide: which species should never brumate, the pre-brumation fast, the temperature band, weighing, and the warm-up soak.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Brumation done badly is one of the most common ways a healthy tortoise dies. Here's the do-not list, the fast, the real temperature band, and the weigh-ins that catch trouble early.",
     "date": "2026-09-04",
@@ -48895,7 +48896,7 @@
     "title": "How to Handle a White's Tree Frog",
     "seoTitle": "How to Handle a White's Tree Frog Safely",
     "seoDescription": "How to handle a White's tree frog safely: why bare hands are the real risk, correct wetted-hand technique, and session length.",
-    "lastUpdated": "2026-10-01",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "White's tree frogs are unusually handleable for an amphibian, docile, slow-moving, and known for their calm, almost smiling expression. But the risk here runs in a direction people don't expect: it's not the frog hurting you, it's you accidentally hurting the frog.",
     "date": "2026-07-16",
@@ -49141,7 +49142,7 @@
     "title": "Why Axolotls Need Cold, Clean Water (And How to Keep It That Way)",
     "seoTitle": "Axolotl Water Quality: Keep It Cold and Clean",
     "seoDescription": null,
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-02",
     "noIndex": false,
     "excerpt": "Warm water holds less oxygen and makes the same ammonia reading more toxic. Why axolotls need water in the low 60s °F, and how to keep it clean.",
     "date": "2026-06-16",
@@ -49170,8 +49171,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
-    "headingCount": 7,
+    "sourceCount": 5,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1280,
     "imageHeight": 720

@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
-"""Assemble the goldfish care package.
+"""Assemble the Goldfish care package, edition 3.0 (Carassius auratus).
 
 Content files carry <!--PAGE key--> markers. Page numbers are assigned in
 document order, {{P:key}} tokens are resolved to those numbers, the TOC is
 generated from SECTIONS, and each page gets its footer. Splitting or adding a
 page only means editing the content and SECTIONS; every number follows.
+
+The build fails on a duplicate page key, a page missing from the contents, a
+contents entry with no page, an unknown {{P:key}}, a leftover placeholder, an
+em or en dash (character or entity), a literal "page N" cross-reference,
+an external link (http or www), or a British word on the banned list.
 """
 import base64
 import os
@@ -13,79 +18,117 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.normpath(os.path.join(HERE, "..", "goldfish.html"))
+# The cover photo the goldfish package has carried since 2.0, embedded as base64
+# only, never resized or re-encoded (md5 c265215866a95efd980d006aee4aad2f).
 COVER = os.path.normpath(os.path.join(HERE, "..", "..", "images", "goldfish-cover-4.jpg"))
 
-# TOC: (section label or None, [(key, title), ...])
+EDITION = "3.0"
+
+# TOC: (section label, [(key, title), ...])
 SECTIONS = [
     ("Getting Started", [
         ("howto", "How to Use This Package"),
     ]),
-    ("Section 01 &middot; Quick Profile", [
-        ("profile", "Quick Profile"),
-        ("cost", "Cost, Commitment &amp; Fun Facts"),
+    ("Section 01 &middot; Profile", [
+        ("profile", "Quick Profile &amp; Cost Overview"),
+        ("species", "The Goldfish, Varieties, Size &amp; Lifespan"),
     ]),
-    ("Section 02 &middot; Full Care Guide", [
-        ("tank", "Tank Size &amp; the Bowl Myth"),
+    ("Section 02 &middot; Housing &amp; Environment", [
+        ("tank", "Tank Size, Type &amp; the Bowl Myth"),
+        ("temperature", "Water Temperature, Heater &amp; Lid"),
         ("filtration", "Filtration: Sizing the Filter"),
-        ("media", "Filter Media &amp; Maintenance"),
+        ("media", "Filter Media, Air Pump &amp; Maintenance"),
         ("cycling", "Cycling, With or Without a Fish"),
         ("water", "Water Targets &amp; Testing"),
-        ("changes", "Water Changes &amp; Early Warnings"),
+        ("changes", "Water Changes, Cleaning &amp; Hygiene"),
         ("substrate", "Substrate, Plants &amp; Decor"),
-        ("handling", "Handling, Quarantine &amp; Settling In"),
-        ("feeding", "Feeding by Age"),
-        ("diet", "Pellets, Presentation &amp; Pond Feeding"),
-        ("staples", "Staple Foods &amp; Vegetables"),
-        ("protein", "Protein Foods"),
-        ("treats", "Treats, Extras &amp; the Never-Feed List"),
-        ("mistakes", "Common Mistakes &amp; Enrichment"),
-        ("varieties", "Varieties, Tankmates &amp; Sexing"),
-        ("growth", "Growth, Body Condition &amp; Lifespan"),
     ]),
-    ("Section 03 &middot; Health &amp; Common Issues", [
-        ("redflags", "Health Red Flags &amp; What to Tell the Vet"),
+    ("Section 03 &middot; Feeding", [
+        ("diet", "Diet by Age"),
+        ("pellets", "Pellets, Gel, Flake &amp; Presentation"),
+        ("foods", "Vegetables, Protein Foods &amp; Treats"),
+        ("never", "The Never-Feed List"),
+        ("appetite", "When a Goldfish Stops Eating"),
+    ]),
+    ("Section 04 &middot; Handling &amp; Behavior", [
+        ("handling", "Handling: Net and Cup, Never Hands"),
+        ("behavior", "Normal Behavior &amp; Body Language"),
+        ("enrichment", "Enrichment &amp; Common Mistakes"),
+    ]),
+    ("Section 05 &middot; Arrival &amp; Life Stages", [
+        ("arrival", "Choosing a Healthy Goldfish &amp; Bringing It Home"),
+        ("quarantine", "Quarantine &amp; the Hospital Tank"),
+        ("spawning", "Sexing, Spawning &amp; Fry"),
+        ("seasons", "Heat Waves, Pond Winters &amp; Moving Outdoors"),
+    ]),
+    ("Section 06 &middot; The Law", [
+        ("legal", "Never Release a Goldfish: the Law"),
+    ]),
+    ("Section 07 &middot; Health &amp; Common Issues", [
+        ("redflags", "Red Flags &amp; Finding a Vet"),
         ("ammonia", "Ammonia Poisoning &amp; Ich"),
-        ("finrot", "Fin Rot, Fungus &amp; Dropsy"),
-        ("swimbladder", "Swim Bladder Disorder &amp; Minor Conditions"),
-        ("behavior", "Behavior, Spawning &amp; Reading Waste"),
+        ("bacterial", "Fin Rot, Fungus, Ulcers, Popeye &amp; Dropsy"),
+        ("parasites", "Flukes, Anchor Worm &amp; Velvet"),
+        ("buoyancy", "Swim Bladder Disorder &amp; Constipation"),
+        ("waste", "Reading Waste &amp; When Euthanasia Is Kindest"),
     ]),
-    ("Section 04 &middot; Quick Reference", [
+    ("Section 08 &middot; Quick Reference", [
         ("checklist", "Setup Checklist &amp; Targets"),
         ("emergency", "Emergency &amp; Quick Targets Card"),
     ]),
-    ("Section 05 &middot; Owner Tools", [
+    ("Section 09 &middot; Owner Tools", [
         ("budget", "Budget &amp; Shopping List"),
-        ("first30", "First 30 Days Checklist"),
+        ("first30", "First 30 Days"),
         ("symptoms", "Symptom Quick Reference"),
         ("routine", "Daily, Weekly &amp; Seasonal Routine"),
-        ("outage", "Power Outages, Travel &amp; Transport"),
+        ("outage", "Power Outages, Heat Waves, Travel &amp; Transport"),
         ("sitter", "Pet-Sitter Sheet"),
         ("ownerlog", "Owner Log"),
-        ("equiplog", "Equipment &amp; Maintenance Log"),
+        ("equiplog", "Equipment &amp; Vet Log"),
         ("enrichlog", "Enrichment Checklist &amp; Log"),
     ]),
     ("Reference", [
-        ("glossary", "Glossary"),
+        ("glossary", "Glossary, A to H"),
+        ("glossary2", "Glossary, I to Z"),
         ("sources", "Sources"),
-        ("versions", "Version History &amp; About"),
+        ("disagree", "Where the Sources Disagree"),
+        ("about", "Version History &amp; About"),
     ]),
 ]
 
 FOOT = ('<div class="pagefoot"><span class="brand">Beastly Facts</span>'
-        '<span>Goldfish Care Package</span><span>%d</span></div>')
+        '<span>Goldfish Care Package &middot; Edition ' + EDITION + '</span><span>%d</span></div>')
+
+PAGE_FILES = tuple(sorted(n for n in os.listdir(HERE) if n.startswith("pages_") and n.endswith(".html")))
 
 
 def main():
     head = open(os.path.join(HERE, "head.html"), encoding="utf-8").read()
     body = "".join(
-        open(os.path.join(HERE, n), encoding="utf-8").read()
-        for n in ("pages_1.html", "pages_2.html", "pages_3.html")
+        open(os.path.join(HERE, n), encoding="utf-8").read() for n in PAGE_FILES
     )
+
+    # No hand-numbered cross-references: every one must be a {{P:key}} token.
+    literal = re.findall(r"[Pp]ages? [0-9]+", body)
+    if literal:
+        sys.exit("literal page reference(s), use {{P:key}}: %s" % sorted(set(literal)))
+
+    # No external links, and US usage only. Checked on the body, before the
+    # cover photo is embedded, so base64 text cannot trip the word list.
+    if re.search(r"https?:|www\.|\.com\b", re.sub(r'xmlns="[^"]*"', "", body)):
+        sys.exit("external link present in the body")
+    text = re.sub(r"<[^>]+>", " ", body)
+    for word in (r"\bhob\b", r"\btorch", r"\bmains\b", r"power cut", r"fortnight", r"skirting",
+                 r"\bcolour", r"behaviour", r"\bgrey\b", r"\bmum\b", r"\btyre", r"\bcentre\b",
+                 r"\borganis", r"\bprogramme", r"\bfavour", r"\bmetre", r"\blitre", r"\bfibre",
+                 r"\bodour", r"\bsynthesis[ei]",r"\bmould", r"\bcatalogue"):
+        if re.search(word, text, re.I):
+            sys.exit("British usage %r present" % word)
 
     # Assign page numbers in document order from the PAGE markers.
     keys = re.findall(r"<!--PAGE\s+([a-z0-9_]+)\s*-->", body)
     if len(keys) != len(set(keys)):
-        dupes = [k for k in set(keys) if keys.count(k) > 1]
+        dupes = sorted(k for k in set(keys) if keys.count(k) > 1)
         sys.exit("duplicate page keys: %s" % dupes)
     nums = {k: i + 1 for i, k in enumerate(keys)}
     total = len(keys)
@@ -98,6 +141,11 @@ def main():
     untocd = [k for k in keys if k not in toc_keys and k not in ("cover", "contents")]
     if untocd:
         sys.exit("pages missing from the TOC: %s" % untocd)
+    if [k for k in keys if k not in ("cover", "contents")] != toc_keys:
+        sys.exit("TOC order does not match page order")
+    foots = re.findall(r"<!--FOOT\s+([a-z0-9_]+)\s*-->", body)
+    if sorted(foots) != sorted(keys):
+        sys.exit("PAGE and FOOT markers do not pair up: %s" % sorted(set(keys) ^ set(foots)))
 
     # Build the TOC.
     toc = []
@@ -126,7 +174,7 @@ def main():
 
     html = head + body
 
-    # Embed the cover photo.
+    # Embed the cover photo, as is: base64 only, no resize or re-encode.
     uri = "data:image/jpeg;base64," + base64.b64encode(open(COVER, "rb").read()).decode()
     if html.count("{{COVER_IMAGE_DATA_URI}}") != 1:
         sys.exit("cover placeholder not found exactly once")
@@ -135,9 +183,9 @@ def main():
     left = re.findall(r"\{\{[A-Za-z_:0-9]+\}\}", html)
     if left:
         sys.exit("unresolved placeholders: %s" % sorted(set(left)))
-    for bad in ("—", "–"):
+    for bad in ("—", "–", "&mdash;", "&ndash;", "&#8212;", "&#8211;", "&#x2014;", "&#x2013;"):
         if bad in html:
-            sys.exit("em or en dash present in output")
+            sys.exit("em or en dash present in output: %r" % bad)
 
     open(SRC, "w", encoding="utf-8").write(html)
     print("wrote %s (%d pages, %d bytes)" % (SRC, total, len(html)))
