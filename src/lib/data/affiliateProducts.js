@@ -136,7 +136,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$8–$14",
     description: "Low-profile water dish that gives reptiles a sturdy place to drink or soak without tipping easily.",
-    covers: ["Shallow water dish", "Small shallow water dish", "Small water dish", "Water dish", "Shallow water dish that's easy to keep clean", "Shallow water dish, deep enough to drink from and not to drown in", "Shallow water dish that won't drown a burrowed frog", "A shallow water bowl, even though it will mostly go untouched", "Shallow water dish large enough to sit in", "A small shallow water dish with a few pebbles in it"],
+    covers: ["Shallow water dish", "Small shallow water dish", "Small water dish", "Water dish", "Shallow water dish that's easy to keep clean", "Shallow water dish, deep enough to drink from and not to drown in", "Shallow water dish that won't drown a burrowed frog", "A shallow water bowl, even though it will mostly go untouched", "Shallow water dish large enough to sit in", "A small shallow water dish with a few pebbles in it", "Shallow water dish, and a spare"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -184,7 +184,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$12–$28",
     description: "Hideout that gives pets a secure place to shelter, reduce stress, and rest.",
-    covers: ["Cork bark hide", "Cork bark hides", "Cork bark hide(s)", "Cork bark for hiding structures", "Warm, cool, and humid hides", "Multiple hides and enrichment items", "Cork bark tubes and branches", "Cork bark tubes", "Cork bark and dense planting", "Flat cork bark and rock hides", "Cork bark and PVC pipe hides", "Cork bark and rock structures", "A basic hide", "Two cork bark hides, one per temperature zone", "Cork bark hide for the cool end, and a basking platform"],
+    covers: ["Cork bark hide", "Cork bark hides", "Cork bark hide(s)", "Cork bark for hiding structures", "Warm, cool, and humid hides", "Multiple hides and enrichment items", "Cork bark tubes and branches", "Cork bark tubes", "Cork bark and dense planting", "Flat cork bark and rock hides", "Cork bark and PVC pipe hides", "Cork bark and rock structures", "A basic hide", "Two cork bark hides, one per temperature zone", "Cork bark hide for the cool end, and a basking platform", "A hide (cork bark, half-log, or a broken terracotta pot)"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1149,7 +1149,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$15–$35",
     description: "Live feeder insects for reptiles that need a protein-rich staple or a starter breeding colony.",
-    covers: ["Dubia roaches or crickets", "Gut-loaded live insect feeders: crickets or dubia roaches"], // hedgehogs and sugar gliders eat feeder roaches as a real dietary staple too, not just reptiles/amphibians
+    covers: ["Dubia roaches or crickets", "Gut-loaded live insect feeders: crickets or dubia roaches", "Live feeder insects (crickets or dubia roaches)"], // hedgehogs and sugar gliders eat feeder roaches as a real dietary staple too, not just reptiles/amphibians
     pets: ["reptiles-amphibians", "small-mammals"],
   },
 
@@ -1865,7 +1865,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.0,
     price: "$11–$19",
     description: "Hideout that gives pets a secure place to shelter, reduce stress, and rest.",
-    covers: ["Two snug hides", "A hide (cork bark, half-log, or a broken terracotta pot)"],
+    covers: ["Two snug hides"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1877,7 +1877,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$8–$14",
     description: "Feeding tongs that keep fingers farther from bites while making insects easier to offer accurately.",
-    covers: ["Feeding tongs", "Long forceps with soft padding"],
+    covers: ["Feeding tongs", "Long forceps with soft padding", "Long feeding tongs"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -2666,7 +2666,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.3,
     price: "$45–$70",
     description: "Compact terrarium sized for invertebrates, with easier front access for feeding and maintenance.",
-    covers: ["10-20 gallon enclosure with secure lid", "10-20 gallon terrarium", "10-gallon enclosure minimum for one adult, 20 to 30 gallons or more for a group", "20x10x10 inch enclosure or larger, wider than tall", "A 5 gallon tank as a floor, 10 to 20+ gallons for a colony, with a secure screened lid"],
+    covers: ["10-20 gallon enclosure with secure lid", "10-20 gallon terrarium", "10-gallon enclosure minimum for one adult, 20 to 30 gallons or more for a group", "A 5 gallon tank as a floor, 10 to 20+ gallons for a colony, with a secure screened lid"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -3184,7 +3184,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$5–$8",
     description: "A dry gut-load formulated to push feeder insects toward a positive calcium to phosphorus ratio, which is the specific problem with crickets and roaches: they are naturally far heavier in phosphorus than calcium. Doubles as roach colony bedding, so a dubia bin is gut-loading continuously.",
-    covers: ["High-calcium gut-load diet"],
+    covers: ["High-calcium gut-load diet", "Gut-load food for the feeders"],
     altGroup: "cricket-gutload",
     pets: ["reptiles-amphibians"],
   },
@@ -3754,7 +3754,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B00C9MR9YM?tag=beastlyfacts-20",
     description: "Larger clear tote with more depth for laying bins, dig boxes and nesting or brumation boxes for bigger animals.",
-    covers: ["A storage tub for a dig box", "A dig box"],
+    covers: ["A storage tub for a dig box", "A dig box", "A large tub to rehouse over"],
     pets: ["reptiles-amphibians", "small-mammals"],
   },
   {
@@ -4266,7 +4266,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0FXT3SPDZ?tag=beastlyfacts-20",
     description: "Deli cups with fabric vented lids for mantis and spider enclosures, feeder cultures and quarantine. Slings use the 16 oz size.",
-    covers: ["Small ventilated plastic cups and 32 oz deli cups, for eggs and hatchlings", "A vented 32-ounce deli cup, if you are starting with a nymph"],
+    covers: ["Small ventilated plastic cups and 32 oz deli cups, for eggs and hatchlings", "A vented 32-ounce deli cup, if you are starting with a nymph", "Vented 32 oz deli cups, for a catch cup and a spare"],
     pets: ["reptiles-amphibians"],
   },
   {

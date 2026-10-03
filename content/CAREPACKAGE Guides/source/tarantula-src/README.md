@@ -52,8 +52,8 @@ Things worth knowing before editing:
   changes, recount and re-check every row.
 - **Every figure comes from the site.** The deep dives in `content/guides/tarantula-*.mdx` and
   the shared invertebrate guides own the numbers; prices come only from the cost guide, and the
-  budget page must equal its totals ($50 to $170 setup, $75 to $270 with the spider, $5 to $15
-  a month, $60 to $180 a year). Where the site disagrees with itself, the topic's own guide wins.
+  budget page must equal its totals, every item priced and rounded to the nearest $5 ($105 to
+  $300 setup, $130 to $400 with the spider, $75 to $235 a year, about $5 to $20 a month). Where the site disagrees with itself, the topic's own guide wins.
 - **Abbreviations are spelled out at first use in reading order** (the how-to page defines the
   units), and every one has a glossary entry. Keep it that way when adding a page.
 - **No outside names in care text**: no brands, stores, websites or organizations. Named
