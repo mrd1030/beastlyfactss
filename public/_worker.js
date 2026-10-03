@@ -667,13 +667,13 @@ async function handleContact(request, env) {
 const CARE_PACKAGE_STORE = {
   'bearded-dragon': {
     name: 'Bearded Dragon Care Package',
-    edition: '4.0',
+    edition: '4.1',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENBp9qtY3Ob6vamuXMA6sD',
   },
   'leopard-gecko': {
     name: 'Leopard Gecko Care Package',
-    edition: '3.0',
+    edition: '3.1',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENBs9qtY3Ob6vaOPtdFLAt',
   },
@@ -697,7 +697,7 @@ const CARE_PACKAGE_STORE = {
   },
   'crested-gecko': {
     name: 'Crested Gecko Care Package',
-    edition: '3.0',
+    edition: '3.1',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENC19qtY3Ob6vasiNmiLfX',
   },
@@ -715,13 +715,13 @@ const CARE_PACKAGE_STORE = {
   },
   'russian-tortoise': {
     name: 'Russian Tortoise Care Package',
-    edition: '3.0',
+    edition: '3.1',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENCB9qtY3Ob6vaTvVBMark',
   },
   'ball-python': {
     name: 'Ball Python Care Package',
-    edition: '3.0',
+    edition: '3.1',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENCE9qtY3Ob6vajtYqePnI',
   },

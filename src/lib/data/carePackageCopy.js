@@ -158,8 +158,8 @@ export const CARE_PACKAGE_COPY = {
   'bearded-dragon': {
     hook: "Basking temps you don't have to guess at.",
     heroParagraph:
-      'A 48-page printable manual with basking, UVB and diet targets split by age, thermostat and UVB distance guidance, choosing a healthy dragon, the law in every state, and health triage, not one blurry range copied across a dozen care sheets.',
-    heroTicks: ['48 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
+      'A 50-page printable manual with basking, UVB and diet targets split by age, thermostat and UVB distance guidance, choosing a healthy dragon, the law in every state, and health triage, not one blurry range copied across a dozen care sheets.',
+    heroTicks: ['50 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
     roulette: [
       'Basking temps that vary 15+ degrees between sources',
       'UVB replacement schedules nobody agrees on',
@@ -184,10 +184,10 @@ export const CARE_PACKAGE_COPY = {
     previews: [
       { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
       { page: 7, alt: 'The temperature gradient and heat' },
-      { page: 12, alt: 'Diet by age' },
-      { page: 27, alt: 'Metabolic bone disease' },
-      { page: 34, alt: 'Emergency and quick targets card' },
-      { page: 37, alt: 'Symptom quick reference table' },
+      { page: 13, alt: 'Diet by age' },
+      { page: 28, alt: 'Metabolic bone disease' },
+      { page: 35, alt: 'Emergency and quick targets card' },
+      { page: 39, alt: 'Symptom quick reference table' },
     ],
     whoFor: [
       'New bearded dragon owners setting up correctly the first time',
@@ -250,8 +250,8 @@ export const CARE_PACKAGE_COPY = {
   'crested-gecko': {
     hook: 'Forgiving in some ways. Unforgiving in others.',
     heroParagraph:
-      'A 47-page printable manual with the humidity cycle and the 85°F ceiling a crested gecko actually needs, diet powder on a real schedule, choosing a healthy gecko, the law in every state, and health triage, not a setup that quietly punishes small mistakes.',
-    heroTicks: ['47 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
+      'A 48-page printable manual with the humidity cycle and the 85°F ceiling a crested gecko actually needs, diet powder on a real schedule, choosing a healthy gecko, the law in every state, and health triage, not a setup that quietly punishes small mistakes.',
+    heroTicks: ['48 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
     roulette: [
       'Humidity that spikes and crashes instead of cycling',
       'Diet powder treated as a rough guess, not a schedule',
@@ -279,7 +279,7 @@ export const CARE_PACKAGE_COPY = {
       { page: 12, alt: 'Diet and feeding by age' },
       { page: 27, alt: 'Metabolic bone disease' },
       { page: 33, alt: 'Emergency and quick targets card' },
-      { page: 36, alt: 'Symptom quick reference table' },
+      { page: 37, alt: 'Symptom quick reference table' },
     ],
     whoFor: [
       'New crested gecko owners setting up a consistent enclosure',
@@ -388,8 +388,8 @@ export const CARE_PACKAGE_COPY = {
   'leopard-gecko': {
     hook: 'The belly heat number that actually matters.',
     heroParagraph:
-      'A 49-page printable manual with belly heat, thermostat and probe placement, the three-hide humidity system, diet and gut-loading by age, choosing a healthy gecko, the law in every state, and health triage, not a forum-average guess.',
-    heroTicks: ['49 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
+      'A 52-page printable manual with belly heat, thermostat and probe placement, the three-hide humidity system, diet and gut-loading by age, choosing a healthy gecko, the law in every state, and health triage, not a forum-average guess.',
+    heroTicks: ['52 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
     roulette: [
       'Belly heat ranges that swing 10 degrees between sources',
       'No mention of humidity until shed already gets stuck',
@@ -414,10 +414,10 @@ export const CARE_PACKAGE_COPY = {
     previews: [
       { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
       { page: 7, alt: 'The temperature gradient and belly heat' },
-      { page: 12, alt: 'Diet and feeding by age' },
-      { page: 28, alt: 'Cryptosporidiosis: stick tail disease' },
-      { page: 35, alt: 'Emergency and quick targets card' },
-      { page: 38, alt: 'Symptom quick reference table' },
+      { page: 13, alt: 'Diet and feeding by age' },
+      { page: 29, alt: 'Cryptosporidiosis: stick tail disease' },
+      { page: 36, alt: 'Emergency and quick targets card' },
+      { page: 40, alt: 'Symptom quick reference table' },
     ],
     whoFor: [
       'New leopard gecko owners setting up their first habitat',
@@ -480,8 +480,8 @@ export const CARE_PACKAGE_COPY = {
   'russian-tortoise': {
     hook: 'An animal that can outlive its owner deserves the setup right.',
     heroParagraph:
-      'A 49-page printable manual with real UVB and basking targets, the brumation decision and protocol, outdoor pens and escape-proofing, honest space requirements, the law in every state, and health triage, not the small starter tank they are usually sold with.',
-    heroTicks: ['49 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
+      'A 51-page printable manual with real UVB and basking targets, the brumation decision and protocol, outdoor pens and escape-proofing, honest space requirements, the law in every state, and health triage, not the small starter tank they are usually sold with.',
+    heroTicks: ['51 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
     roulette: [
       "A small starter tank that's outgrown within a year",
       'UVB treated as optional instead of required',
@@ -509,7 +509,7 @@ export const CARE_PACKAGE_COPY = {
       { page: 13, alt: 'Diet by age and how much' },
       { page: 28, alt: 'Metabolic bone disease and pyramiding' },
       { page: 35, alt: 'Emergency and quick targets card' },
-      { page: 38, alt: 'Symptom quick reference table' },
+      { page: 39, alt: 'Symptom quick reference table' },
     ],
     whoFor: [
       'New Russian tortoise owners setting up correctly the first time',
@@ -530,8 +530,8 @@ export const CARE_PACKAGE_COPY = {
   'ball-python': {
     hook: 'Every heat source on a thermostat. Everything else follows.',
     heroParagraph:
-      'A 48-page printable manual with enclosure and heat, the humidity range that decides everything, prey and thawing, why a ball python stops eating, choosing a healthy snake, the law in every state, seven health pages, and the printable owner tools.',
-    heroTicks: ['48 pages, print or view', 'Beginner to intermediate', 'No external links inside the PDF'],
+      'A 49-page printable manual with enclosure and heat, the humidity range that decides everything, prey and thawing, why a ball python stops eating, choosing a healthy snake, the law in every state, seven health pages, and the printable owner tools.',
+    heroTicks: ['49 pages, print or view', 'Beginner to intermediate', 'No external links inside the PDF'],
     roulette: [
       'A heat mat running bare, with no thermostat in sight',
       'Humidity ranges that swing 20 points between care sheets',
@@ -559,7 +559,7 @@ export const CARE_PACKAGE_COPY = {
       { page: 12, alt: 'Diet and feeding by age' },
       { page: 26, alt: 'Respiratory infection and scale rot' },
       { page: 33, alt: 'Emergency and quick targets card' },
-      { page: 36, alt: 'Symptom quick reference table' },
+      { page: 37, alt: 'Symptom quick reference table' },
     ],
     whoFor: [
       'New ball python owners buying the enclosure before the snake',
