@@ -4754,6 +4754,18 @@ export const AFFILIATE_PRODUCTS = [
     covers: ["Calcium with D3 powder"],
     pets: ["reptiles-amphibians"],
   },
+  // --- Bearded dragon thermostat (2026-10-03) ---
+  {
+    slug: "thermostat-vivarium-electronics-ve-200",
+    product: "Vivarium Electronics VE-200 Thermostat (Reptile Basics)",
+    category: "Heating & Lighting",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B00U33EBAE?tag=beastlyfacts-20",
+    price: "$115–$160",
+    description: "Reptile thermostat with three modes: dimming for incandescent and halogen basking bulbs, pulse proportional, and on/off. Rated to 700 W, with a 10 ft probe and a safety shutoff.",
+    covers: ["Dimming thermostat with a safety shutoff, for the basking bulb"],
+    pets: ["reptiles-amphibians"],
+  },
 ];
 
 // Display order for category sections on the standalone gear page.
