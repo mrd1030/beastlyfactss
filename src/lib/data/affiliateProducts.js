@@ -2728,7 +2728,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$28–$40",
     description: "Solid-surface exercise wheel that lets small pets run safely without wire rungs catching feet or tails.",
-    covers: ["11-12 in solid exercise wheel", "Solid exercise wheel, 8 inches minimum"],
+    covers: ["11-12 in solid exercise wheel", "Solid exercise wheel, 8 inches minimum", "8 to 11 inch solid-surface exercise wheel (Syrian)"],
     pets: ["small-mammals"],
   },
   {
@@ -3804,7 +3804,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0002AS23U?tag=beastlyfacts-20",
     description: "Glass tank with a large footprint for its volume, the usual pick for axolotls, gerbils and small terrestrial reptiles. Lid sold separately.",
-    covers: ["20-gallon long enclosure, 40-gallon breeder preferred"],
+    covers: ["20-gallon long enclosure, 40-gallon breeder preferred", "40-gallon breeder tank for a dwarf, or a bin with about 600 sq in of floor"],
     pets: ["fish", "reptiles-amphibians", "small-mammals"],
   },
   {
@@ -4436,7 +4436,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B000A7DFUU?tag=beastlyfacts-20",
     description: "Solid track wheel for mice and dwarf hamsters. Solid, not rungs, so feet and tails cannot catch.",
-    covers: ["Solid-surfaced axle-free wheel, 6 to 8 inches"],
+    covers: ["Solid-surfaced axle-free wheel, 6 to 8 inches", "6 to 8 inch solid-surface exercise wheel (dwarf)"],
     pets: ["small-mammals"],
   },
   {
