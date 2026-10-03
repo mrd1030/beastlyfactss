@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assemble the Axolotl care package, edition 3.0 (Ambystoma mexicanum).
+"""Assemble the Axolotl care package, edition 3.1 (Ambystoma mexicanum).
 
 Content files carry <!--PAGE key--> markers. Page numbers are assigned in
 document order, {{P:key}} tokens are resolved to those numbers, the TOC is
@@ -23,7 +23,7 @@ SRC = os.path.normpath(os.path.join(HERE, "..", "axolotl.html"))
 # 2.2 HTML carried inline (md5 c38548239067daec21a16e24bfb4c3f3).
 COVER = os.path.normpath(os.path.join(HERE, "..", "..", "images", "axolotl-cover-1.jpg"))
 
-EDITION = "3.0"
+EDITION = "3.1"
 
 # TOC: (section label, [(key, title), ...])
 SECTIONS = [
@@ -75,7 +75,8 @@ SECTIONS = [
         ("emergency", "Emergency &amp; Quick Targets Card"),
     ]),
     ("Section 09 &middot; Owner Tools", [
-        ("budget", "Budget &amp; Shopping List"),
+        ("budget", "Budget: Setup &amp; Shopping List"),
+        ("budget2", "Budget: Monthly Costs &amp; Vet Fees"),
         ("first30", "First 30 Days"),
         ("symptoms", "Symptom Quick Reference"),
         ("routine", "Daily, Weekly &amp; Seasonal Routine"),

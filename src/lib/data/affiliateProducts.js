@@ -822,7 +822,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.2,
     price: "$20–$35",
     description: "Aquarium chiller that helps keep cold-water species like axolotls in a safer temperature range.",
-    covers: [], // cheaper fan-based alternative to the compressor chiller above - browsable only, same pattern as pvc-enclosure-4x2x2-alt
+    covers: ["Aquarium cooling fan, for a room that runs only a little warm"], // cheaper fan-based cooling; the axolotl buy list links it for the basic setup
     altGroup: "axolotl-chiller",
     pets: ["reptiles-amphibians", "fish"],
   },
@@ -998,7 +998,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$10–$15",
     description: "Compact digital aquarium thermometer that gives a quick water reading without bulky glass equipment.",
-    covers: [], // submersible tank thermometers are interchangeable hardware between fish tanks and aquatic reptile/amphibian tanks
+    covers: ["Digital aquarium thermometer for the water"], // submersible tank thermometers are interchangeable hardware between fish tanks and aquatic reptile/amphibian tanks
     pets: ["fish", "reptiles-amphibians"],
   },
   {

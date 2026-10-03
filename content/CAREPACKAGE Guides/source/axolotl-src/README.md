@@ -3,10 +3,10 @@
 `../axolotl.html` is generated. Edit the fragments here, never that file, then:
 
     python build.py                                       # assemble the source
-    node ../_render.mjs axolotl "Axolotl" 3.0 --measure    # overflow check
-    node ../_render.mjs axolotl "Axolotl" 3.0              # render the PDF
+    node ../_render.mjs axolotl "Axolotl" 3.1 --measure    # overflow check
+    node ../_render.mjs axolotl "Axolotl" 3.1              # render the PDF
 
-The PDF is `rebuilt/Axolotl_Care_Package_v3.0.pdf`. On Windows, set `CHROME_BIN` to Chrome
+The PDF is `rebuilt/Axolotl_Care_Package_v3.1.pdf`. On Windows, set `CHROME_BIN` to Chrome
 first (`CHROME_BIN="C:/Program Files/Google/Chrome/Application/chrome.exe"`). Every page must
 report at least 15 px free.
 
@@ -28,7 +28,7 @@ Things worth knowing before editing:
   top-left icon untouched) on the outline the recent packages use, with the two-column contents
   page and the `table.ref` style from the bearded dragon 4.0 head.
 - **The edition is in two places.** `EDITION` in `build.py` drives every page footer
-  ("Axolotl Care Package · Edition 3.0"). The cover chip, the colophon and the version history
+  ("Axolotl Care Package · Edition 3.1"). The cover chip, the colophon and the version history
   in `pages_07.html` carry it as text. Change all of them together.
 - **Every cross-reference is a token.** The build refuses a hand-written "page 12". Keep
   pointers sparse: tool pages (how-to, checklist, emergency card, symptom table, first 30 days,
