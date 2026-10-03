@@ -38262,7 +38262,7 @@
     "title": "Rabbit and Budgie: Two Classic Pets, Almost Always Kept Too Small",
     "seoTitle": "Rabbit vs Budgie: Both Need More Space",
     "seoDescription": "Rabbits and budgies are both commonly kept pets almost always housed in something smaller than they actually need, hutch and starter cage alike.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": true,
     "excerpt": "Rabbits and budgies are two of the most commonly kept pets outside of cats and dogs, and both are, more often than not, housed in something significantly smaller than they need.",
     "date": "2026-07-13",
@@ -38282,7 +38282,7 @@
     "image": "/assets/guides/rabbit-budgie-overview.jpg",
     "imageAlt": "Side by side of a rabbit in a grassy pen and a budgie on a wide perch",
     "emoji": "📏",
-    "lastReviewed": "2026-07-13",
+    "lastReviewed": "2026-10-03",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -38315,9 +38315,9 @@
     "path": "/content/guides/rabbit-cost-guide.mdx",
     "slug": "rabbit-cost-guide",
     "title": "How Much Does a Rabbit Really Cost?",
-    "seoTitle": "Rabbit Cost: $150 to $600 Setup, Then $60 to $100 a Month",
-    "seoDescription": "Rabbit cost breakdown: $150-600 setup, $150-500+ spay/neuter, and $60-100 a month in hay, pellets, and litter once you're past year one.",
-    "lastUpdated": "2026-09-25",
+    "seoTitle": "Rabbit Cost: $93 to $185 Setup, Then $55 to $130 a Month",
+    "seoDescription": "Rabbit cost breakdown: $93-185 setup, $150-500+ spay/neuter, and $55-130 a month in hay, pellets, vegetables, and litter, with a $500-1,000 emergency fund.",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Rabbits have a reputation as a simple starter pet, but the cost picture is bigger than the low adoption fee suggests, especially once spay/neuter is factored in.",
     "date": "2026-07-13",
@@ -38338,13 +38338,13 @@
     "image": "/assets/images/rabbit-cost.jpg",
     "imageAlt": "Rabbit in a fully equipped exercise pen with hay and dishes",
     "emoji": "🐰",
-    "lastReviewed": "2026-07-13",
+    "lastReviewed": "2026-10-03",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "What does it cost to set up for a new rabbit?",
-        "a": "Most collective initial supplies (exercise pen, litter box, dishes, nail clippers, hay feeder, and bunny-proofing) run $150 to $300, with fuller setups reaching $600."
+        "a": "The five items in the setup table (exercise pen, litter box, dishes, nail clippers, and carrier) add up to $93 to $185. A hay feeder, cord tubing, flooring, a hide, and a dig box come on top, depending on what you already own."
       },
       {
         "q": "Why is spay or neuter such a big line item?",
@@ -38352,7 +38352,7 @@
       },
       {
         "q": "What are the ongoing monthly costs for a rabbit?",
-        "a": "Hay ($20-40), pellets ($5-15), fresh vegetables ($15-50), and litter ($15-25) typically total $60 to $100 a month. Add routine vet care and a realistic annual total lands around $500 to $800 after the first year."
+        "a": "Hay ($20-40), pellets ($5-15), fresh vegetables ($15-50), and litter ($15-25) add up to $55 to $130 a month. Two wellness exams and one RHDV2 booster add $180 to $275 a year, so a year after the first runs $840 to $1,835."
       },
       {
         "q": "How much should I set aside for a rabbit vet emergency?",
@@ -38455,7 +38455,7 @@
     "title": "Rabbit Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Rabbits Eat? Diet and Feeding Schedule",
     "seoDescription": "Rabbits need unlimited hay at 80-85% of their diet, measured pellets by body weight, and a vet call within hours of a skipped meal, not a full day.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Unlimited hay, measured pellets, and why a rabbit that skips even a single meal needs same-day attention. Here's a real feeding schedule and how to read a rabbit that's stopped eating.",
     "date": "2026-07-27",
@@ -38478,7 +38478,7 @@
     "image": "/assets/images/rabbit-feeding.jpg",
     "imageAlt": "Rabbit eating fresh hay and leafy greens",
     "emoji": "🐰",
-    "lastReviewed": "2026-09-24",
+    "lastReviewed": "2026-10-03",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -38517,7 +38517,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 5,
-    "headingCount": 8,
+    "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -38528,7 +38528,7 @@
     "title": "Rabbit GI Stasis: The Silent Emergency Every Owner Should Recognize",
     "seoTitle": "Rabbit GI Stasis: A Silent Emergency",
     "seoDescription": null,
-    "lastUpdated": "2026-09-04",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Rabbit GI stasis can turn fatal within hours - the early warning signs, why unlimited hay matters so much, and when it becomes an emergency vet visit.",
     "date": "2026-07-01",
@@ -38550,7 +38550,7 @@
     "image": "/assets/images/rabbit-gi-stasis.jpg",
     "imageAlt": "Healthy rabbit eating a large pile of fresh hay in a clean enclosure",
     "emoji": "🐰",
-    "lastReviewed": "2026-07-01",
+    "lastReviewed": "2026-10-03",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -38583,8 +38583,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
-    "headingCount": 9,
+    "sourceCount": 4,
+    "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1620,
     "imageHeight": 1080
@@ -38595,7 +38595,7 @@
     "title": "How to Handle a Rabbit Without Hurting It",
     "seoTitle": "How to Handle a Rabbit Safely",
     "seoDescription": "An unsupported hold can fracture a rabbit's spine. Support chest and hindquarters together, and skip trancing, it raises stress hormones, not calm.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Rabbits are more physically fragile than most first-time owners expect. An unsupported or panicked rabbit can injure itself trying to escape your grip.",
     "date": "2026-07-13",
@@ -38616,7 +38616,7 @@
     "image": "/assets/images/rabbit-handling.jpg",
     "imageAlt": "Rabbit being carried securely with full body support against a person",
     "emoji": "🐰",
-    "lastReviewed": "2026-07-13",
+    "lastReviewed": "2026-10-03",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -38643,8 +38643,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
-    "headingCount": 9,
+    "sourceCount": 3,
+    "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -38655,7 +38655,7 @@
     "title": "Common Rabbit Health Issues and Why You Need the Right Vet",
     "seoTitle": "Rabbit Health Issues: Signs & Causes",
     "seoDescription": "GI stasis after 8 to 12 hours without food is an emergency. Teeth grow 4-5 inches a year, and in some strains 80% of unspayed does get uterine cancer by 3.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Rabbits need a rabbit-savvy exotic vet, not a standard small-animal clinic. Here's what to watch for, from GI stasis to dental disease, and when it's a true emergency.",
     "date": "2026-07-13",
@@ -38676,7 +38676,7 @@
     "image": "/assets/images/rabbit-health-issues.jpg",
     "imageAlt": "Rabbit being examined by an exotic veterinarian",
     "emoji": "🐰",
-    "lastReviewed": "2026-07-13",
+    "lastReviewed": "2026-10-03",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -38711,7 +38711,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6,
-    "headingCount": 10,
+    "headingCount": 12,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -38781,7 +38781,7 @@
     "title": "Rabbit Housing: Why the Old Pet-Store Cage Isn't Enough",
     "seoTitle": "Rabbit Housing Setup Guide",
     "seoDescription": null,
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Rabbit housing guidance has shifted substantially. The space rabbits need is much larger than what's traditionally been sold as a starter cage.",
     "date": "2026-07-13",
@@ -38801,7 +38801,7 @@
     "image": "/assets/images/rabbit-tank-setup.jpg",
     "imageAlt": "Rabbit exercise pen setup with litter box, hay feeder, and hides",
     "emoji": "🐰",
-    "lastReviewed": "2026-07-13",
+    "lastReviewed": "2026-10-03",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -38828,8 +38828,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
-    "headingCount": 8,
+    "sourceCount": 6,
+    "headingCount": 13,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -42850,7 +42850,7 @@
     "title": "Heat Stress and Cold in Small Mammals: Temperature Ranges and Emergency Signs",
     "seoTitle": "Small Mammal Heat Stress: Safe Temps and Signs",
     "seoDescription": "Vet-sourced safe and dangerous temperature ranges for guinea pigs, rabbits, chinchillas, and hamsters, with the ordered signs of heat stress and first aid.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Guinea pigs, rabbits, chinchillas, and hamsters have no heat lamp and no UVB to lean on, so your room's own temperature is the whole story. Here are the real comfortable ranges, the danger thresholds, and the ordered signs of heat stress by species.",
     "date": "2026-09-04",
@@ -42870,7 +42870,7 @@
     "image": "/assets/images/small-mammal-temperature-heat-stress-guide.jpg",
     "imageAlt": "A guinea pig lying flat on a tile floor next to a room thermometer reading in the mid-80s Fahrenheit",
     "emoji": "🌡️",
-    "lastReviewed": "2026-09-25",
+    "lastReviewed": "2026-10-03",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
