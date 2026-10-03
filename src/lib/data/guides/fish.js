@@ -552,7 +552,7 @@ export const fishGuides = [
         { label: "Diet", value: "A quality sinking pellet formulated specifically for goldfish as the base, not tropical fish flake. Supplement 2 to 3 times a week with blanched vegetables and high-protein treats in moderation.", source: "goldfish-feeding-guide" },
         { label: "Not eating", value: "Short gaps of 3 to 4 days are fine for a healthy adult in an established tank. The trigger to seek help is 24 to 48 hours of refusal combined with lethargy, pineconing scales, clamped fins, abnormal floating or sinking, gasping at the surface, visible wounds or white spots, cotton-like growths, or a visibly thinning body.", source: "goldfish-feeding-guide" },
         { label: "Handling", value: "Guide it into a container of tank water rather than lifting it out by hand. If a net is needed, wet it first and use soft rubber, never knotted nylon. Keep the fish out of water as briefly as possible.", source: "goldfish-handling-guide" },
-        { label: "Budget", value: "The fish itself often costs less than $10. The equipment for a complete setup adds up to $105 to $270. Ongoing costs run $10 to $30 a month.", source: "goldfish-cost-guide" },
+        { label: "Budget", value: "The fish itself often costs less than $10. The equipment for a complete setup adds up to $145 to $325. Ongoing costs run $10 to $30 a month.", source: "goldfish-cost-guide" },
         { label: "Adult size", value: "6 to 8 inches for a fancy goldfish, 10 to 14+ inches for a common or comet, 10 to 12 inches for a shubunkin.", source: "goldfish-tank-size-bowl-myth" },
         { label: "Lifespan", value: "10 to 15 years typical; 20 to 30+ years in spacious, well-kept ponds." },
         { label: "Tankmates", value: "Fancy with fancy, single-tail with single-tail. Not a tropical tank: guppies and anything slower at the food are the pairings that fail.", source: "aquarium-stocking-and-tankmates-guide" },
@@ -574,7 +574,7 @@ export const fishGuides = [
       vetLine: "An aquatic vet, found before you need one. Most of the health list is prevented, not treated, through water quality, quarantine, and appropriate feeding.",
     },
     routes: [
-      { slug: "goldfish-cost-guide", line: "The fish itself under $10, a $105 to $270 setup where filtration is the real cost, and $10 to $30 a month after that." },
+      { slug: "goldfish-cost-guide", line: "The fish itself under $10, a $145 to $325 setup where filtration is the real cost, and $10 to $30 a month after that." },
       { slug: "goldfish-tank-setup-guide", line: "The real tank size, filtration turnover math, water parameters, and cycling before the fish goes in." },
       { slug: "goldfish-tank-size-bowl-myth", line: "Why goldfish don't grow to fit their tank, the real space requirements by variety, and what self-cleaning bowl kits get wrong." },
       { slug: "goldfish-feeding-guide", line: "Schedule by life stage, pellets versus flakes versus gel, safe foods by tier, and the honest range of reasons a goldfish stops eating." },

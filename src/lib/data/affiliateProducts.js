@@ -2370,9 +2370,36 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B000260FUW?tag=beastlyfacts-20",
     rating: 4.7,
-    price: "$45–$60",
+    price: "$73–$83",
     description: "Aquarium filter that moves water through media to keep tanks clearer and biologically healthier.",
     covers: ["Hang-on-back filter", "A secondary hang-on-back filter for redundancy", "Filter rated above the tank volume, for a messy eater", "Hang-on-back or canister filter sized for the tank, gentle to moderate flow"], // hang-on-back filter, a distinct filter type from the canister filters already linked
+    altGroup: "goldfish-filtration",
+    pets: ["fish"],
+  },
+  {
+    // 200 gallons an hour, the floor for a 20-gallon goldfish tank at 10 turnovers an hour.
+    // Price checked at PetSmart, October 2026, where it sells as the Fluval AC50.
+    slug: "hob-filter-aquaclear-50",
+    product: "AquaClear 50 Power Filter (20-50 gal)",
+    category: "Aquarium Equipment",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B000260FUM?tag=beastlyfacts-20",
+    price: "$63–$73",
+    description: "Hang-on-back power filter rated at 200 gallons an hour, with mechanical, chemical and biological media in one basket.",
+    covers: [],
+    altGroup: "goldfish-filtration",
+    pets: ["fish"],
+  },
+  {
+    // 275 gallons an hour. Price checked at PetSmart, October 2026.
+    slug: "hob-filter-penguin-pro-275",
+    product: "Marineland Penguin PRO 275 Power Filter (up to 50 gal)",
+    category: "Aquarium Equipment",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B07YXHTPJR?tag=beastlyfacts-20",
+    price: "$53–$57",
+    description: "Hang-on-back power filter rated at 275 gallons an hour, with a cartridge and a bio-wheel for biological filtration.",
+    covers: [],
     altGroup: "goldfish-filtration",
     pets: ["fish"],
   },
