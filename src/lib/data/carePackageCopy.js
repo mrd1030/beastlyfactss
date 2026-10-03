@@ -644,8 +644,8 @@ export const CARE_PACKAGE_COPY = {
   tarantula: {
     hook: 'Keep it low, keep the water dish full, and leave it alone.',
     heroParagraph:
-      'A 44-page printable manual with an enclosure built low so a fall cannot kill, substrate depth by species type, the water that prevents the most common cause of death, molting start to finish, a safe rehousing method, and where tarantulas are banned.',
-    heroTicks: ['44 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
+      'A 49-page printable manual with an enclosure built low to limit how far a spider can fall, substrate depth by species type, the water that prevents the leading cause of death, molting start to finish, a safe rehousing method, and the law in every state.',
+    heroTicks: ['49 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
     roulette: [
       'A tall glass enclosure and a heavy-bodied spider with somewhere to fall from',
       'A spider that has not eaten in six weeks, and an owner sure it is dying',
@@ -659,21 +659,21 @@ export const CARE_PACKAGE_COPY = {
       'Urticating hairs, bites and your own safety, with the first aid clinical sources actually describe',
     ],
     inside: [
-      { emoji: '🏠', title: 'Enclosure and substrate', line: 'Enclosure shape, size and the lid, substrate, hide and furnishing by type, temperature, humidity and ventilation.' },
-      { emoji: '💧', title: 'Water and feeding', line: 'Water and what actually kills tarantulas, feeding by life stage, the prey chart and the never-feed list, why a tarantula stops eating.' },
-      { emoji: '🕸️', title: 'Molting and rehousing', line: 'Molting, the cycle and what to do and never do, and rehousing, when and how to prepare and the method.' },
-      { emoji: '⚠️', title: 'Health and red flags', line: 'Dehydration and falls, molt complications, mites and mold, nematodes, DKS and pesticides, and what is not a red flag.' },
-      { emoji: '🚫', title: 'Handling and the law', line: 'Why the answer to handling is no, what interacting actually looks like, urticating hairs and bites, and where tarantulas are not legal.' },
-      { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, blackout plan, pet-sitter sheet, and the molt and maintenance logs.' },
+      { emoji: '🏠', title: 'Enclosure and substrate', line: 'Enclosure shape and size sized to leg span, a secure lid that is never mesh, tree-dwelling enclosures and slings, temperature, humidity and ventilation, substrate depth and hides, and escapes.' },
+      { emoji: '💧', title: 'Water and feeding', line: 'The water dish that prevents the leading cause of death, diet by age, feeder insects and the never-feed list, gut-loading instead of supplements, why a tarantula stops eating, and body condition.' },
+      { emoji: '🕸️', title: 'Molting and rehousing', line: 'Molting on two pages, the cycle and what to do and never do, sexing and mature males, and rehousing with the cup and card method.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Dehydration and reading the abdomen, falls, injuries and stuck molts, oral nematodes, mites and mold, DKS (dyskinetic syndrome) and pesticides, and finding a vet.' },
+      { emoji: '🚫', title: 'Handling and the law', line: 'Why the answer to handling is no, what interacting looks like instead, urticating hairs, bites and your own safety, choosing a spider and quarantine, and where a tarantula is legal.' },
+      { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, routine, outage, travel and shipping plan, pet-sitter sheet, and the owner, molt and vet logs.' },
     ],
     previewHeadline: 'The pages that keep a spider off the floor.',
     previews: [
       { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
       { page: 6, alt: 'Enclosure: shape, size and the lid' },
-      { page: 9, alt: 'Water, and what actually kills tarantulas' },
-      { page: 14, alt: 'Molting: what to do and never do' },
-      { page: 30, alt: 'Emergency and quick targets card' },
-      { page: 33, alt: 'Symptom quick reference table' },
+      { page: 9, alt: 'Humidity, water and ventilation' },
+      { page: 23, alt: 'Molting: what to do and never do' },
+      { page: 33, alt: 'Emergency and quick targets card' },
+      { page: 36, alt: 'Symptom quick reference table' },
     ],
     whoFor: [
       'New keepers choosing the enclosure before the spider',

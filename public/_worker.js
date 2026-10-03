@@ -745,7 +745,7 @@ const CARE_PACKAGE_STORE = {
   },
   tarantula: {
     name: 'Tarantula Care Package',
-    edition: '2.3',
+    edition: '3.0',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENCK9qtY3Ob6vafJILVYIP',
   },

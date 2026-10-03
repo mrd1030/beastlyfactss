@@ -75,7 +75,7 @@ had moved past the PDF):
 | lovebird | Lovebird_Care_Package_v3.0.pdf | 49 |
 | rabbit | Rabbit_Care_Package_v3.0.pdf | 50 |
 | russian-tortoise | Russian_Tortoise_Care_Package_v3.1.pdf | 51 |
-| tarantula | Tarantula_Care_Package_v2.3.pdf | 44 |
+| tarantula | Tarantula_Care_Package_v3.0.pdf | 49 |
 | cockatiel | Cockatiel_Care_Package_v3.0.pdf | 52 |
 | cockatoo | Cockatoo_Care_Package_v1.4.pdf | 49 |
 | whites-tree-frog | Whites_Tree_Frog_Care_Package_v1.1.pdf | 42 |
