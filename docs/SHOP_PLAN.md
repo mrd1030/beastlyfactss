@@ -40,7 +40,7 @@ One grouped package, on the model of the Tarantula package (a multi-species grou
 - Safety line: the ich-by-heat treatment (86F) sits above the neon's comfort ceiling, so the shared health page needs a neon caveat.
 - Law page: one page like the Goldfish package (never release, the release rules), plus where the fish comes from (cardinals are still a wild-caught Rio Negro fishery). No state table; fish have no state legal data here.
 - Same process: site first, flagship outline, fish line icon in the ring, a Fable review on the owner's OK, store page, Stripe product, bucket upload.
-- Order: after the queued rebuilds (rabbit, hamster, guinea pig, budgie, lovebird, tarantula, White's tree frog). Only if it sells or GSC shows demand: ember and rummy-nose get encyclopedia entries and guides first, then a Tetras group entry (like the tarantula entry, scientific "Various (Characidae)"), then package v1.1. No group entry while only two tetras exist; leave the corydoras entry as it is.
+- Order: after the queued rebuilds (rabbit, hamster, guinea pig, budgie, lovebird, tarantula, White's tree frog). Only if it sells or GSC shows demand: ember and rummy-nose get encyclopedia entries and guides first, then package v1.1. Encyclopedia: no Tetras group entry at all (owner, 2026-10-03), since it would repeat the individual tetra pages; each tetra keeps its own entry, and an optional "Neon vs Cardinal Tetra" comparison article can carry the side-by-side numbers. Leave the corydoras entry as it is.
 
 ## The edition problem, decide this first
 
