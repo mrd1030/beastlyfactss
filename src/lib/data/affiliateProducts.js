@@ -711,8 +711,8 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$18–$35",
     description: "Live plants that add cover, humidity, and a more natural look to a terrarium.",
-    covers: ["Dense live plants", "Live plants (pothos, ficus)", "Live plants (pothos, ficus, bromeliads)", "Live plants (pothos, hibiscus, ficus)", "Dense live or silk plants", "Live or silk plants", "Broad-leafed live plants, with artificial foliage filling out the dense parts", "Dense live planting, layered rather than in one plane", "Live or artificial foliage, densely planted"],
-    pets: ["fish", "reptiles-amphibians"],
+    covers: ["Live plants (pothos, ficus)", "Live plants (pothos, ficus, bromeliads)", "Live plants (pothos, hibiscus, ficus)", "Broad-leafed live plants, with artificial foliage filling out the dense parts", "Dense live planting, layered rather than in one plane", "Live or artificial foliage, densely planted"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "artificial-terrarium-plants",
@@ -4679,7 +4679,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B008HXF16K?tag=beastlyfacts-20",
     price: "~$15",
     description: "One potted Anubias nana, a live aquatic plant with tough, teardrop-shaped leaves on a rhizome that ties onto wood or rock. Grows in low to medium light with no added CO2, and its leaves stand up to a goldfish that eats softer plants.",
-    covers: ["Live or silk plants (no sharp plastic)", "Hardy live plants such as anubias or java fern"],
+    covers: ["Live or silk plants (no sharp plastic)", "Hardy live plants such as anubias or java fern", "Dense live plants"],
     pets: ["fish"],
   },
   {
