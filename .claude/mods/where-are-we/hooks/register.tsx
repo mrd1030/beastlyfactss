@@ -113,12 +113,14 @@ function summary(c: Card, path: string) {
     'The file is JSON: {"done": [...], "doing": [...], "waiting": [...]}, each list complete (done oldest first),',
     'items short noun phrases under 60 characters, no em or en dashes. Write the whole file each time.',
     `The card file is untracked; ${SNAPSHOT} beside it is its tracked snapshot, changed only on request.`,
-    `"Save the card to git": write ${SNAPSHOT} from the card (Done, In progress, Waiting on your OK, and a`,
-    '"Saved <date time, US Eastern>" line), commit only that file on main with [CI Skip] in the message, push main.',
-    `"Load the card from git": pull, then write the card file from ${SNAPSHOT}.`,
+    `${SNAPSHOT} is only ever COMBINED, never overwritten: union of every item already in it and every item on`,
+    'the card, nothing dropped; an item in two states takes Done over In progress over Waiting; keep the newer',
+    '"Saved <date time, US Eastern>" line. Sections: Done, In progress, Waiting on your OK.',
+    `"Save the card to git": combine the card into ${SNAPSHOT}, commit only that file on main with [CI Skip]`,
+    `in the message, push main. "Load the card from git": pull, then combine ${SNAPSHOT} into the card file.`,
     'When a branch\'s work is finished and it changes what the site builds (not only docs or mods), ask the owner',
-    `whether to refresh ${SNAPSHOT} on that branch from the card before it merges. On a merge conflict in`,
-    `${SNAPSHOT}, regenerate it from the card rather than merging the two lists by hand.`,
+    `whether to combine the card into ${SNAPSHOT} on that branch before it merges. A merge conflict in`,
+    `${SNAPSHOT} is resolved the same way: combine both sides, drop nothing.`,
   ].join('\n')
 }
 
