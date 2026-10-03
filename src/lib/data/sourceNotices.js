@@ -23,7 +23,13 @@ export const SOURCE_NOTICES = {
     title: "Maine's species list is offline",
     // When the agency replaced the file, and when the replacement was last looked at.
     changedOn: '2026-09-08',
-    statusCheckedOn: '2026-10-01',
+    statusCheckedOn: '2026-10-02',
+    // The last full copy anyone can still read: the Internet Archive's capture of
+    // the list before Maine replaced it. Rendered as a link after the text.
+    archive: {
+      label: 'See the last full list, saved by the Internet Archive on 12 February 2026',
+      url: 'https://web.archive.org/web/20260212233615/https://www.maine.gov/IFW/docs/unrestrictedspecies.pdf',
+    },
     body:
       "On {changed}, Maine's Department of Inland Fisheries and Wildlife replaced its Unrestricted Species List with a version that covers fish only. The mammal, bird, reptile and invertebrate pages were removed without explanation, and when we last checked on {status}, nothing had replaced them.",
     guideTail:
@@ -49,6 +55,7 @@ export function noticeText(id, { surface, dates, count, formatDay }) {
   const tail = surface === 'page' ? notice.pageTail : notice.guideTail;
   return {
     title: notice.title,
+    archive: notice.archive || null,
     text: `${notice.body} ${tail}`
       .replace('{changed}', formatDay(notice.changedOn))
       .replace('{status}', formatDay(notice.statusCheckedOn))

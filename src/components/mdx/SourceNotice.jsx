@@ -17,12 +17,12 @@ export default function SourceNotice({ id, className = '' }) {
   const checked = slug ? NOTICE_DATES[slug]?.[id] : null;
   const notice = checked ? noticeText(id, { surface: 'guide', dates: [checked], formatDay }) : null;
   if (!notice) return null;
-  return <SourceNoticeBox title={notice.title} text={notice.text} className={className} />;
+  return <SourceNoticeBox title={notice.title} text={notice.text} archive={notice.archive} className={className} />;
 }
 
 // The box itself, shared with the state pages. Text arrives as one string, so
 // prerender and hydration produce the same single text node.
-export function SourceNoticeBox({ title, text, className = '' }) {
+export function SourceNoticeBox({ title, text, archive = null, className = '' }) {
   return (
     <div className={`not-prose my-8 rounded-2xl border border-amber-500/40 border-l-4 border-l-amber-500 bg-amber-500/5 p-6 ${className}`}>
       <div className="flex items-start gap-3">
@@ -34,6 +34,11 @@ export function SourceNoticeBox({ title, text, className = '' }) {
             {title}
           </div>
           <div className="text-foreground font-body text-[15px] leading-relaxed">{text}</div>
+          {archive && (
+            <a href={archive.url} target="_blank" rel="noopener noreferrer" className="mt-2 inline-block font-body text-[15px] font-semibold text-amber-700 underline dark:text-amber-400">
+              {archive.label}
+            </a>
+          )}
         </div>
       </div>
     </div>
