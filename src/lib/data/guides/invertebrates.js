@@ -986,7 +986,7 @@ export const invertebrateGuides = [
       "Coconut fiber, peat, or organic pesticide-free soil substrate",
       "A secure acrylic lid with drilled ventilation (never mesh)",
       "A hide (cork bark, half-log, or a broken terracotta pot)",
-      "A shallow water dish",
+      "Shallow water dish",
       "Live feeder insects (crickets or dubia roaches)",
       "Digital thermometer/hygrometer combo",
     ],

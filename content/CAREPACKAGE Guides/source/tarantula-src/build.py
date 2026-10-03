@@ -69,7 +69,7 @@ SECTIONS = [
         ("dehydration", "Dehydration &amp; Reading the Abdomen"),
         ("injury", "Falls, Injuries &amp; Stuck Molts"),
         ("parasites", "Oral Nematodes, Mites &amp; Mold"),
-        ("pesticides", "DKS &amp; Pesticides"),
+        ("pesticides", "Dyskinetic Syndrome (DKS) &amp; Pesticides"),
         ("hairs", "Urticating Hairs, Bites &amp; Your Own Safety"),
     ]),
     ("Section 08 &middot; Quick Reference", [
