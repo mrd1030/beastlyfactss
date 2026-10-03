@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
-"""Assemble the lovebird care package.
+"""Assemble the Lovebird care package, edition 3.0 (Agapornis spp.).
 
 Content files carry <!--PAGE key--> markers. Page numbers are assigned in
 document order, {{P:key}} tokens are resolved to those numbers, the TOC is
 generated from SECTIONS, and each page gets its footer. Splitting or adding a
 page only means editing the content and SECTIONS; every number follows.
+
+The build fails on a duplicate page key, a page missing from the contents, a
+contents entry with no page, an unknown {{P:key}}, a leftover placeholder, an
+em or en dash (character or entity), a literal "page N" cross-reference,
+an external link (http or www), or a British word on the banned list.
 """
 import base64
 import os
@@ -13,66 +18,86 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.normpath(os.path.join(HERE, "..", "lovebird.html"))
+# The cover photo every edition since 2.0 has carried (lovebird-cover-2.jpg). Embedded as
+# base64 only, never resized or re-encoded.
 COVER = os.path.normpath(os.path.join(HERE, "..", "..", "images", "lovebird-cover-2.jpg"))
+
+EDITION = "3.0"
 
 # TOC: (section label, [(key, title), ...])
 SECTIONS = [
     ("Getting Started", [
         ("howto", "How to Use This Package"),
     ]),
-    ("Section 01 &middot; Quick Profile", [
+    ("Section 01 &middot; Profile", [
         ("profile", "Quick Profile &amp; Cost Overview"),
+        ("species", "The Species, Colors, Size &amp; Lifespan"),
     ]),
-    ("Section 02 &middot; Full Care Guide", [
-        ("cage", "Cage Size, Bar Spacing &amp; Placement"),
-        ("furnishings", "Perches, Dishes &amp; What to Leave Out"),
-        ("light", "Light, Sleep &amp; Household Climate"),
-        ("hazards", "Household Hazards &amp; Bird-Proofing"),
-        ("pairing", "One Bird or Two: the Decision That Shapes Everything"),
-        ("diet", "Diet: Pellets, Seeds &amp; Converting a Seed Eater"),
+    ("Section 02 &middot; Housing &amp; Environment", [
+        ("enclosure", "Cage Size, Bar Spacing &amp; Where It Goes"),
+        ("perches", "Perches, Dishes &amp; What to Leave Out"),
+        ("climate", "Temperature, Light &amp; Sleep"),
+        ("hazards", "Household Hazards: Fumes &amp; Air Quality"),
+        ("proofing", "Bird-Proofing &amp; the Slow Poisons"),
+        ("cleaning", "Cleaning, Bathing &amp; Hygiene"),
+    ]),
+    ("Section 03 &middot; Feeding", [
+        ("diet", "Diet: Pellets, Seed &amp; Portions"),
+        ("convert", "Converting a Seed Eater to Pellets"),
         ("veg", "Safe Vegetables, Greens &amp; Herbs"),
-        ("fruit", "Fruit, Extras &amp; the Never-Feed List"),
-        ("mistakes", "Common Mistakes &amp; Enrichment"),
-        ("handling", "Handling, Taming &amp; the Bite Problem"),
-        ("clipping", "Wing Clipping &amp; Flight"),
-        ("sexing", "Sexing, Weight &amp; Body Condition"),
-        ("eggs", "Hens, Hormones &amp; Chronic Egg Laying"),
-        ("eggbinding", "Egg Binding"),
+        ("fruit", "Fruit, Treats &amp; the Never-Feed List"),
+        ("supplements", "Supplements, Calcium &amp; the Grit Myth"),
+        ("growth", "Weight, Body Condition &amp; the Daily Scale"),
     ]),
-    ("Section 03 &middot; Health &amp; Common Issues", [
-        ("redflags", "Health Red Flags &amp; What to Tell the Vet"),
-        ("pbfd", "PBFD &amp; Polyomavirus"),
+    ("Section 04 &middot; Handling &amp; Behavior", [
+        ("handling", "Handling, Taming &amp; the Bite Problem"),
+        ("behavior", "Body Language, Normal Noise &amp; When It Is Not"),
+        ("pair", "One Bird or Two"),
+        ("flight", "Wing Clipping &amp; Flight"),
+        ("enrichment", "Enrichment &amp; Common Mistakes"),
+    ]),
+    ("Section 05 &middot; Arrival &amp; Life Stages", [
+        ("arrival", "Choosing a Lovebird, Quarantine &amp; the First Vet Visit"),
+        ("hormones", "Sexing, Hens &amp; Chronic Egg Laying"),
+        ("binding", "Egg Binding"),
+        ("molt", "Molt, Hormonal Seasons &amp; Seasonal Behavior"),
+    ]),
+    ("Section 06 &middot; Health &amp; Common Issues", [
+        ("redflags", "Red Flags &amp; Finding a Vet"),
+        ("viruses", "Psittacine Beak &amp; Feather Disease and Polyomavirus"),
         ("respiratory", "Respiratory Disease &amp; Psittacosis"),
         ("plucking", "Feather Plucking &amp; Behavioral Health"),
-        ("minor", "Nutritional Disease, Mites &amp; Injuries"),
-        ("molt", "Molt, Hormones &amp; Seasonal Behavior"),
-        ("droppings", "Reading Droppings &amp; Hydration"),
+        ("nutrition", "Nutritional Disease, Gut Problems &amp; Injuries"),
+        ("stool", "Reading Droppings, Urates &amp; Hydration"),
     ]),
-    ("Section 04 &middot; Quick Reference", [
+    ("Section 07 &middot; Quick Reference", [
         ("checklist", "Setup Checklist &amp; Targets"),
         ("emergency", "Emergency &amp; Quick Targets Card"),
     ]),
-    ("Section 05 &middot; Owner Tools", [
+    ("Section 08 &middot; Owner Tools", [
         ("budget", "Budget &amp; Shopping List"),
-        ("first30", "First 30 Days Checklist"),
+        ("first30", "First 30 Days"),
         ("symptoms", "Symptom Quick Reference"),
         ("routine", "Daily, Weekly &amp; Seasonal Routine"),
-        ("outage", "Power Outages, Travel &amp; Transport"),
+        ("outage", "Power Outages, Heat, Travel &amp; Transport"),
         ("sitter", "Pet-Sitter Sheet"),
         ("ownerlog", "Owner Log"),
         ("equiplog", "Equipment &amp; Vet Log"),
         ("enrichlog", "Enrichment Checklist &amp; Log"),
     ]),
     ("Reference", [
-        ("glossary", "Glossary"),
-        ("sources", "Sources, Version History &amp; About"),
+        ("glossary", "Glossary, A to L"),
+        ("glossary2", "Glossary, M to Z"),
+        ("sources", "Sources"),
+        ("disagree", "Where the Sources Disagree"),
+        ("about", "Version History &amp; About"),
     ]),
 ]
 
 FOOT = ('<div class="pagefoot"><span class="brand">Beastly Facts</span>'
-        '<span>Lovebird Care Package</span><span>%d</span></div>')
+        '<span>Lovebird Care Package &middot; Edition ' + EDITION + '</span><span>%d</span></div>')
 
-PAGE_FILES = ("pages_1.html", "pages_2.html", "pages_3.html", "pages_4.html")
+PAGE_FILES = tuple(sorted(n for n in os.listdir(HERE) if n.startswith("pages_") and n.endswith(".html")))
 
 
 def main():
@@ -80,6 +105,23 @@ def main():
     body = "".join(
         open(os.path.join(HERE, n), encoding="utf-8").read() for n in PAGE_FILES
     )
+
+    # No hand-numbered cross-references: every one must be a {{P:key}} token.
+    literal = re.findall(r"[Pp]ages? [0-9]+", body)
+    if literal:
+        sys.exit("literal page reference(s), use {{P:key}}: %s" % sorted(set(literal)))
+
+    # No external links, and US usage only. Checked on the body, before the
+    # cover photo is embedded, so base64 text cannot trip the word list.
+    if re.search(r"https?:|www\.|\.com\b", re.sub(r'xmlns="[^"]*"', "", body)):
+        sys.exit("external link present in the body")
+    text = re.sub(r"<[^>]+>", " ", body)
+    for word in (r"\bhob\b", r"\btorch", r"\bmains\b", r"power cut", r"fortnight", r"skirting",
+                 r"\bcolour", r"behaviour", r"(?<!African )\bgrey\b", r"\bmum\b", r"\btyre", r"\bcentre\b",
+                 r"\borganis", r"\bprogramme", r"\bfavour", r"\bmetre", r"\blitre", r"\bfibre",
+                 r"\bodour", r"\bsynthesis[ei]",r"\bmould", r"\bcatalogue"):
+        if re.search(word, text, re.I):
+            sys.exit("British usage %r present" % word)
 
     # Assign page numbers in document order from the PAGE markers.
     keys = re.findall(r"<!--PAGE\s+([a-z0-9_]+)\s*-->", body)
@@ -97,6 +139,11 @@ def main():
     untocd = [k for k in keys if k not in toc_keys and k not in ("cover", "contents")]
     if untocd:
         sys.exit("pages missing from the TOC: %s" % untocd)
+    if [k for k in keys if k not in ("cover", "contents")] != toc_keys:
+        sys.exit("TOC order does not match page order")
+    foots = re.findall(r"<!--FOOT\s+([a-z0-9_]+)\s*-->", body)
+    if sorted(foots) != sorted(keys):
+        sys.exit("PAGE and FOOT markers do not pair up: %s" % sorted(set(keys) ^ set(foots)))
 
     # Build the TOC.
     toc = []
@@ -125,7 +172,7 @@ def main():
 
     html = head + body
 
-    # Embed the cover photo.
+    # Embed the cover photo, as is: base64 only, no resize or re-encode.
     uri = "data:image/jpeg;base64," + base64.b64encode(open(COVER, "rb").read()).decode()
     if html.count("{{COVER_IMAGE_DATA_URI}}") != 1:
         sys.exit("cover placeholder not found exactly once")
@@ -134,9 +181,9 @@ def main():
     left = re.findall(r"\{\{[A-Za-z_:0-9]+\}\}", html)
     if left:
         sys.exit("unresolved placeholders: %s" % sorted(set(left)))
-    for bad in ("—", "–"):
+    for bad in ("—", "–", "&mdash;", "&ndash;", "&#8212;", "&#8211;", "&#x2014;", "&#x2013;"):
         if bad in html:
-            sys.exit("em or en dash present in output")
+            sys.exit("em or en dash present in output: %r" % bad)
 
     open(SRC, "w", encoding="utf-8").write(html)
     print("wrote %s (%d pages, %d bytes)" % (SRC, total, len(html)))
