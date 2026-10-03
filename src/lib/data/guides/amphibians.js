@@ -367,7 +367,7 @@ export const amphibianGuides = [
         { label: "Obesity check", value: "Fat bulging over the tympanum and in the armpits, not general roundness, is the line between the natural dumpy look and a problem.", source: "whites-tree-frog-health-issues-guide" },
         { label: "Handling", value: "5 to 15 minutes, no more than about twice a week, with hands washed in plain water only, no soap, or in wet powder-free vinyl gloves (nitrile second, never latex).", source: "whites-tree-frog-handling-guide" },
         { label: "Cover", value: "Broad-leaved live plants at several heights so it can sit supported and unseen; artificial ones fill the dense parts but do not do the humidity. Always immediately visible means not enough in there.", source: "whites-tree-frog-enrichment-guide" },
-        { label: "Budget", value: "$20 to $60 for the frog, $295 to $565 for the setup, $345 to $715 with the first vet exam, then $175 to $360 a year in supplies, about $15 to $30 a month. An exam runs $50 to $150, an exotic emergency fee from around $250.", source: "whites-tree-frog-cost-guide" },
+        { label: "Budget", value: "$20 to $60 for the frog, $295 to $565 for the setup, $345 to $715 with the first vet exam, then $150 to $245 a year in supplies, about $10 to $25 a month. An exam runs $50 to $150, an exotic emergency fee from around $250.", source: "whites-tree-frog-cost-guide" },
         { label: "Lifespan", value: "About 16 years on average, one recorded at 21; conservative figures say 10 to 15-plus.", source: "whites-tree-frog-cost-guide" },
         { label: "Adult size", value: "3 to 4.5 inches (7 to 11 cm)." },
         { label: "Quarantine", value: "Six to eight weeks, resetting if illness shows partway. Zoos run a 30-day minimum with 60 preferred.", source: "amphibian-quarantine-and-water-guide" },
@@ -387,7 +387,7 @@ export const amphibianGuides = [
       vetLine: "An amphibian-experienced vet, found before you need one. Amphibian medicine has real limits, and husbandry does more than treatment ever will.",
     },
     routes: [
-      { slug: "whites-tree-frog-cost-guide", line: "The frog at $20 to $60, a $295 to $565 setup, $175 to $360 a year in supplies after that, and what a 16-year average lifespan does to the budget." },
+      { slug: "whites-tree-frog-cost-guide", line: "The frog at $20 to $60, a $295 to $565 setup, $150 to $245 a year in supplies after that, and what a 16-year average lifespan does to the budget." },
       { slug: "whites-tree-frog-tank-setup-guide", line: "The 18x18x24 minimum, the temperature gradient, the humidity that dips instead of sitting high, substrate, UVB, and the water that is safe to mist with." },
       { slug: "whites-tree-frog-handling-guide", line: "Why plain water beats soap, when gloves are the safer option, how long a session runs, and why the risk points at the frog rather than at you." },
       { slug: "whites-tree-frog-health-issues-guide", line: "Obesity as the signature risk, chytridiomycosis, red-leg syndrome, bacterial and skin infections, metabolic bone disease, and the husbandry pattern behind all of them." },

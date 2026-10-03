@@ -300,7 +300,7 @@ export const turtleGuides = [
         { label: "Diet", value: "Unlimited grass hay and a rotation of wild weeds, dandelion, plantain, and clover among them, as the staple, rather than cultivated grocery greens. High-oxalate greens like spinach and chard stay off the rotation. Fruit stays off the menu altogether.", source: "russian-tortoise-tank-setup-guide" },
         { label: "Brumation", value: "Physiologically programmed to brumate, held at 35 to 50°F, ideally 41°F, for no longer than 10 weeks in a small tortoise and 14 in a large one. Indoor keepers can skip it entirely by maintaining full lighting, heat, and feeding year-round.", source: "russian-tortoise-tank-setup-guide" },
         { label: "Handling", value: "An observation pet, not one built for regular handling. House males separately, they ram and bully other tortoises. Skilled climber and digger, more of an escape risk than it looks.", source: "russian-tortoise-handling-guide" },
-        { label: "Budget", value: "$50 to $150 for a hatchling ($225 to $400 older captive-bred). $410 to $835 to set up. $365 to $715 a year, about $30 to $60 a month.", source: "russian-tortoise-cost-guide" },
+        { label: "Budget", value: "$50 to $150 for a hatchling ($225 to $400 older captive-bred). $410 to $835 to set up. $370 to $695 a year, about $30 to $60 a month.", source: "russian-tortoise-cost-guide" },
         { label: "Adult size", value: "5 to 10 inches." },
         { label: "Lifespan", value: "40 years or more typical, some individuals reaching 50-plus.", source: "russian-tortoise-cost-guide" },
         { label: "Quarantine", value: "A minimum of six months, completely separate from any other chelonian, with lab testing. Two or three weeks is not long enough for the herpesvirus.", source: "chelonian-herpesvirus-quarantine-guide" },
@@ -319,7 +319,7 @@ export const turtleGuides = [
       vetLine: "A reptile-experienced vet, found before you need one. Run a fecal test on any newly acquired tortoise regardless of symptoms; respiratory infection needs antibiotics and doesn't wait.",
     },
     routes: [
-      { slug: "russian-tortoise-cost-guide", line: "$50 to $400 for the tortoise, $410 to $835 to set up, $365 to $715 a year after that, and why the 40-plus year lifespan should decide the purchase." },
+      { slug: "russian-tortoise-cost-guide", line: "$50 to $400 for the tortoise, $410 to $835 to set up, $370 to $695 a year after that, and why the 40-plus year lifespan should decide the purchase." },
       { slug: "russian-tortoise-tank-setup-guide", line: "The real floor target beyond the 8 sq ft minimum, the 95°F basking spot, low ambient humidity with a moist hide, and the brumation decision indoor keepers get to make." },
       { slug: "russian-tortoise-handling-guide", line: "Why this is an observation pet, the talented climbing and digging that makes escapes easy, and why males need separate enclosures." },
       { slug: "russian-tortoise-health-issues-guide", line: "Metabolic bone disease, respiratory infection, shell rot, pyramiding, parasites, and the kidney infection specific to this genus." },
