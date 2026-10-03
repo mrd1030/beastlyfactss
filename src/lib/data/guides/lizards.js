@@ -303,6 +303,7 @@ export const lizardGuides = [
       "Infrared temp gun for the basking surface",
       "Paper towel or tile for the floor",
       "Cork bark hide for the cool end, and a basking platform",
+      "Climbing branches",
       "Hammock",
       "Dubia roaches or crickets",
       "Feeding tongs",
