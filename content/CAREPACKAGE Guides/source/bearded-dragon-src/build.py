@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assemble the Bearded Dragon care package, edition 4.0 (Pogona vitticeps).
+"""Assemble the Bearded Dragon care package, edition 4.1 (Pogona vitticeps).
 
 Content files carry <!--PAGE key--> markers. Page numbers are assigned in
 document order, {{P:key}} tokens are resolved to those numbers, the TOC is
@@ -23,7 +23,7 @@ SRC = os.path.normpath(os.path.join(HERE, "..", "bearded-dragon.html"))
 # file the 3.2 HTML carried inline (md5 2bd9db0f5997bf39bdf7d6e51e047400).
 COVER = os.path.normpath(os.path.join(HERE, "..", "..", "images", "bearded-dragon-cover-3.jpg"))
 
-EDITION = "4.0"
+EDITION = "4.1"
 
 # TOC: (section label, [(key, title), ...])
 SECTIONS = [
