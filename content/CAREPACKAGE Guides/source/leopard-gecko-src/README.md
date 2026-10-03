@@ -51,7 +51,7 @@ Things worth knowing before editing:
   and the shared reptile guides own the numbers; prices come only from the cost guide. Where
   the site disagrees with itself, the topic's own guide wins, and the Where the Sources
   Disagree page says which. Every cost total is the sum of its own rows, as on the site since
-  3 October 2026: $340 to $795 of equipment, $490 to $1,010 with the first vet exam, $30 to $85 a month.
+  3 October 2026: $315 to $760 of equipment, $465 to $975 with the first vet exam, $30 to $85 a month.
 - **Abbreviations are spelled out at first use in reading order** (the cover expands UVB, the
   profile UVI, the enclosure page PVC, the UVB page T5 HO, the arrival page PCR, the legal page
   CITES, the bone disease page MBD; the how-to page defines the units), and every one has a

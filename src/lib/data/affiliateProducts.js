@@ -3344,7 +3344,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$12.99",
     description: "Reptile and amphibian dusting multivitamin that includes thiamine (B1) alongside other nutrients. Doesn't fully offset a thiaminase-heavy fish diet on its own, varying or limiting thiaminase-rich fish still matters, but it's the standard supplement keepers reach for.",
-    covers: ["Thiamine (B1) and calcium supplements", "A multivitamin for the weekly rotation", "Reptile multivitamin"],
+    covers: ["Thiamine (B1) and calcium supplements", "A multivitamin for the weekly rotation"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -4730,6 +4730,29 @@ export const AFFILIATE_PRODUCTS = [
     description: "All stainless steel 30 oz cup, about 5 7/8 in across, that bolts through the cage bars so a large parrot cannot lift it off. Buy two, one for food and one for water.",
     covers: ["Stainless bolt-on dishes and swing-out feeders"],
     pets: ["birds"],
+  },
+  // --- Owner's own supplements (2026-10-03) ---
+  {
+    slug: "multivitamin-zoo-med-reptivite-without-d3-2oz",
+    product: "Zoo Med ReptiVite without D3, 2 oz",
+    category: "Food & Supplements",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B00167S5GC?tag=beastlyfacts-20",
+    price: "~$4",
+    description: "Reptile vitamin, mineral and amino acid powder with no added D3, for dusting insects or greens on multivitamin days. It contains dicalcium phosphate, so it is not phosphorus free.",
+    covers: ["Reptile multivitamin"],
+    pets: ["reptiles-amphibians"],
+  },
+  {
+    slug: "calcium-zoo-med-repti-calcium-with-d3-3oz",
+    product: "Zoo Med Repti Calcium with D3, 3 oz",
+    category: "Food & Supplements",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B094DBWD8C?tag=beastlyfacts-20",
+    price: "~$6",
+    description: "Phosphorus free precipitated calcium carbonate with vitamin D3, for the dusting days that call for D3. A single 3 oz jar, listed by DBDPet with a printed tip card attached.",
+    covers: ["Calcium with D3 powder"],
+    pets: ["reptiles-amphibians"],
   },
 ];
 
