@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assemble the Betta Fish care package, edition 3.0 (Betta splendens).
+"""Assemble the Betta Fish care package, edition 3.1 (Betta splendens).
 
 Content files carry <!--PAGE key--> markers. Page numbers are assigned in
 document order, {{P:key}} tokens are resolved to those numbers, the TOC is
@@ -23,7 +23,7 @@ SRC = os.path.normpath(os.path.join(HERE, "..", "betta-fish.html"))
 # and embedded as base64 only, never resized or re-encoded.
 COVER = os.path.normpath(os.path.join(HERE, "..", "..", "images", "betta-fish-cover-2.jpg"))
 
-EDITION = "3.0"
+EDITION = "3.1"
 
 # TOC: (section label, [(key, title), ...])
 SECTIONS = [
@@ -79,7 +79,8 @@ SECTIONS = [
         ("emergency", "Emergency &amp; Quick Targets Card"),
     ]),
     ("Section 08 &middot; Owner Tools", [
-        ("budget", "Budget &amp; Shopping List"),
+        ("budget", "Budget: Setup &amp; Shopping List"),
+        ("budget2", "Budget: Running Costs"),
         ("first30", "First 30 Days"),
         ("symptoms", "Symptom Quick Reference"),
         ("routine", "Daily, Weekly &amp; Seasonal Routine"),

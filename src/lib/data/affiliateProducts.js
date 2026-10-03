@@ -1010,7 +1010,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$10–$30",
     description: "Hideout that gives pets a secure place to shelter, reduce stress, and rest.",
-    covers: ["Caves, PVC pipes, and hides"], // resin hide caves are common in both fish tanks and aquatic reptile/amphibian tanks (turtle, axolotl)
+    covers: ["Caves, PVC pipes, and hides", "Smooth hide cave, no sharp edges"], // resin hide caves are common in both fish tanks and aquatic reptile/amphibian tanks (turtle, axolotl)
     pets: ["fish", "reptiles-amphibians"],
   },
   {
@@ -4166,7 +4166,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B07XP4TMVW?tag=beastlyfacts-20",
     description: "Small quiet air pump with airline, air stone and check valve, enough to run one sponge filter in a betta or nano tank.",
-    covers: [],
+    covers: ["Small air pump to run the sponge filter"],
     pets: ["fish"],
   },
   {
