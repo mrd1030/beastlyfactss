@@ -957,8 +957,8 @@ export const invertebrateGuides = [
         { label: "Adult size", value: "2 to 12 inch leg span, depending on species." },
         { label: "Lifespan", value: "15 to 20 years or more for a female Chilean rose hair, and about 5 for a male, 10 at the outside. A female is a long-term commitment, though the ongoing budget stays very small the whole time.", source: "tarantula-cost-guide" },
         { label: "Power outage", value: "A non-event for most tarantulas at home; they don't need supplemental heat in a typical room and can go without food far longer than most pets. The real risk in this corner of pet keeping is in a car or a shipping box, not a home outage.", source: "invertebrate-emergency-travel-shipping-guide" },
-        { label: "Quarantine", value: "At least three months apart from any other invertebrate, with its own tools. Long enough for mites, mold and an import's nematodes to show while the setup is still simple.", source: "invertebrate-quarantine-cleaning-and-escapes-guide" },
-        { label: "Cleaning and escapes", value: "Uneaten prey out within 24 hours, remains weekly, substrate every 6 to 12 months or at the first mold. An escapee hides low, dark and warm: search at night with a flashlight and bait with water.", source: "invertebrate-quarantine-cleaning-and-escapes-guide" },
+        { label: "Quarantine", value: "Apart from any other invertebrate, with its own tools, until it has been seen to feed, drink and settle, and longer if it was wild-caught. Mites and mold build slowly, and nematodes turn up mostly in wild-caught spiders.", source: "invertebrate-quarantine-cleaning-and-escapes-guide" },
+        { label: "Cleaning and escapes", value: "Uneaten prey out within 24 hours, remains weekly, substrate every 6 to 12 months or at the first mold. For an escapee, close the door of the room and search it low for a ground-dweller, high for a climber.", source: "invertebrate-quarantine-cleaning-and-escapes-guide" },
       ],
     },
     emergencyCard: {
