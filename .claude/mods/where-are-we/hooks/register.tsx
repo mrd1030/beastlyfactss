@@ -1,13 +1,20 @@
 import { atom, read, update } from 'claude-code'
 import type { EngineInterface, Register } from 'claude-code'
 
-import type { Archived, Card, Ledger } from '../types'
+import type { Archived, Armed, Backup, Card, Ledger } from '../types'
 
 const EMPTY: Card = { done: [], doing: [], waiting: [], updatedAt: null }
 const EMPTY_LEDGER: Ledger = { doneAt: {}, archived: [], undo: null }
 const card = atom({ plugin: 'where-are-we', key: 'card' } as const, EMPTY)
 const ledger = atom({ plugin: 'where-are-we', key: 'ledger' } as const, EMPTY_LEDGER)
 const picked = atom({ plugin: 'where-are-we', key: 'picked' } as const, [] as string[])
+const armed = atom({ plugin: 'where-are-we', key: 'armed' } as const, null as Armed | null)
+
+// Archive, Archive all done and Reset take two presses: the first turns the
+// button into "Press again", which lapses after CONFIRM_MS.
+const CONFIRM_MS = 5000
+// How many backups the backups file keeps, newest first.
+const MAX_BACKUPS = 20
 
 // The card lives in a plain JSON file in the project, written by the model
 // with its ordinary Write or Edit tool. A tool registered through
@@ -20,6 +27,9 @@ const FILE = '.where-are-we.json'
 // archived tasks, and what Undo puts back. Untracked like the card, so a
 // button press never touches git or lands on whichever branch is checked out.
 const LEDGER_FILE = '.where-are-we-archive.json'
+// A copy of both taken before every Archive, Reset and Undo, so even an Undo
+// pressed by mistake can be walked back. Untracked too.
+const BACKUP_FILE = '.where-are-we-backups.json'
 // The tracked, human-readable copies, written only when the owner asks.
 const SNAPSHOT = 'WHERE_ARE_WE.md'
 const ARCHIVE_DOC = 'archive/docs-completed/WHERE_ARE_WE_COMPLETED_<YYYY-MM-DD>.md'
@@ -61,9 +71,13 @@ async function homeDir($: EngineInterface) {
 
 const cardPath = async ($: EngineInterface) => `${await homeDir($)}/${FILE}`
 const ledgerPath = async ($: EngineInterface) => `${await homeDir($)}/${LEDGER_FILE}`
+const backupPath = async ($: EngineInterface) => `${await homeDir($)}/${BACKUP_FILE}`
 
+// The card file, or the archive file when a session restores a backup.
 async function isCardWrite($: EngineInterface, filePath: string, ran: { deny?: unknown; isError?: boolean }) {
-  return norm(filePath) === norm(await cardPath($)) && ran.deny === undefined && ran.isError !== true
+  const target = norm(filePath)
+  const isOurs = target === norm(await cardPath($)) || target === norm(await ledgerPath($))
+  return isOurs && ran.deny === undefined && ran.isError !== true
 }
 
 function parseCard(text: string): Card {
@@ -179,6 +193,33 @@ async function commit($: EngineInterface, c: Card, l: Ledger) {
   await update($, picked, p => p.filter(t => c.done.includes(t)))
 }
 
+// Copies the card and the ledger, as they stand, to the top of the backups
+// file before a button changes them. A broken backups file starts over.
+async function backup($: EngineInterface, reason: string) {
+  const c = await read($, card)
+  const l = await read($, ledger)
+  const now = await $.clock.now()
+  const path = await backupPath($)
+  const old = await readOr($, path, t => (JSON.parse(t) as Backup[]).filter(b => b && typeof b.at === 'number'), [] as Backup[])
+  const entry: Backup = { at: now, atText: full(now), reason, card: c, doneAt: l.doneAt, archived: l.archived }
+  await $.fs.write(path, `${JSON.stringify([entry, ...old].slice(0, MAX_BACKUPS), null, 2)}\n`)
+}
+
+// First press arms the button; a second press within CONFIRM_MS runs it.
+async function confirmThen($: EngineInterface, key: string, run: () => Promise<void>) {
+  const a = await read($, armed)
+  const now = await $.clock.now()
+  if (a && a.key === key && now - a.at < CONFIRM_MS) {
+    await update($, armed, () => null)
+    await run()
+    return
+  }
+  await update($, armed, () => ({ key, at: now }))
+  await $.clock.after(CONFIRM_MS, () => {
+    void update($, armed, x => (x && x.key === key && x.at === now ? null : x))
+  })
+}
+
 async function archive($: EngineInterface, which: 'picked' | 'all') {
   const c = await read($, card)
   const l = await read($, ledger)
@@ -186,6 +227,7 @@ async function archive($: EngineInterface, which: 'picked' | 'all') {
   const chosen = which === 'all' ? c.done : c.done.filter(t => p.includes(t))
   if (chosen.length === 0) return
 
+  await backup($, which === 'all' ? 'Archive all done' : `Archive ${chosen.length}`)
   const now = await $.clock.now()
   const entries: Archived[] = chosen.map(text => {
     const at = l.doneAt[text] ?? null
@@ -204,6 +246,7 @@ async function archive($: EngineInterface, which: 'picked' | 'all') {
 }
 
 async function reset($: EngineInterface) {
+  await backup($, 'Reset')
   const c = await read($, card)
   const l = await read($, ledger)
   const now = await $.clock.now()
@@ -218,11 +261,12 @@ async function reset($: EngineInterface) {
 async function undo($: EngineInterface) {
   const l = await read($, ledger)
   if (!l.undo) return
+  await backup($, 'Undo')
   const now = await $.clock.now()
   await commit($, { ...l.undo.card, updatedAt: now }, { doneAt: l.undo.doneAt, archived: l.undo.archived, undo: null })
 }
 
-function summary(c: Card, path: string, archivePath: string) {
+function summary(c: Card, path: string, archivePath: string, backupsPath: string) {
   const line = (items: string[]) => (items.length ? items.join('; ') : 'nothing')
   return [
     'Where-are-we card (shown to the owner above the prompt, saved across sessions):',
@@ -233,8 +277,12 @@ function summary(c: Card, path: string, archivePath: string) {
     'the owner\'s OK (Fable reviews, merges, pushes to main, anything you must not start unasked).',
     'The file is JSON: {"done": [...], "doing": [...], "waiting": [...]}, each list complete (done oldest first),',
     'items short noun phrases under 60 characters, no em or en dashes. Write the whole file each time.',
-    `The owner archives Done items with the card's buttons; the mod keeps them in ${archivePath} (never edit it).`,
+    `The owner archives Done items with the card's buttons; the mod keeps them in ${archivePath}.`,
     'An archived item never goes back on the card or into the snapshot; repeat work gets a distinct name.',
+    `Before every Archive, Reset and Undo the mod copies the card and that file into ${backupsPath}`,
+    '(newest first, each with atText and reason). Edit the archive file only to restore a backup, and only when the',
+    'owner asks ("undo the card clear", "restore the card from <time>"): write the backup\'s card into the card',
+    'file and {"doneAt", "archived", "undo": null} into the archive file. Never edit the backups file.',
     `Both files are untracked. ${SNAPSHOT} is the card's tracked snapshot and ${ARCHIVE_DOC}`,
     '(one file; create it with today\'s date only if none exists) is the archive\'s; both change only on request.',
     `Both are only ever COMBINED, never overwritten: add what is missing, drop nothing. In ${SNAPSHOT}, an item`,
@@ -259,7 +307,8 @@ export const register: Register = on => {
 
   on('prompt.submit', async ($, e, next) => {
     const c = await read($, card)
-    return next({ ...e, context: [...(e.context ?? []), summary(c, await cardPath($), await ledgerPath($))] })
+    const text = summary(c, await cardPath($), await ledgerPath($), await backupPath($))
+    return next({ ...e, context: [...(e.context ?? []), text] })
   })
 
   // After a successful Write or Edit of the card file, redraw from the file.
@@ -279,6 +328,7 @@ export const register: Register = on => {
     const c = await read($, card)
     const l = await read($, ledger)
     const p = await read($, picked)
+    const a = await read($, armed)
     const below = await next(e)
     const hasItems = c.done.length + c.doing.length + c.waiting.length > 0
 
@@ -331,6 +381,8 @@ export const register: Register = on => {
       )
 
     const gap = (k: string) => <Text key={k}> </Text>
+    // A button armed by its first press says so until it lapses.
+    const labelFor = (key: string, label: string) => (a && a.key === key ? `Press again: ${label}` : label)
 
     const mine = (
       <Box flexDirection="column" borderStyle="round" borderColor="magenta" paddingX={1}>
@@ -340,14 +392,25 @@ export const register: Register = on => {
           </Text>
           <Text dimColor>{when ? `updated ${when} ` : ''}</Text>
           {p.length > 0 ? (
-            <Button key="archive-picked" variant="primary" label={`Archive ${p.length}`} onPress={() => archive($, 'picked')} />
+            <Button
+              key="archive-picked"
+              variant="primary"
+              label={labelFor('archive-picked', `Archive ${p.length}`)}
+              onPress={() => confirmThen($, 'archive-picked', () => archive($, 'picked'))}
+            />
           ) : null}
           {p.length > 0 ? gap('g1') : null}
           {c.done.length > 0 ? (
-            <Button key="archive-all" label="Archive all done" onPress={() => archive($, 'all')} />
+            <Button
+              key="archive-all"
+              label={labelFor('archive-all', 'Archive all done')}
+              onPress={() => confirmThen($, 'archive-all', () => archive($, 'all'))}
+            />
           ) : null}
           {c.done.length > 0 ? gap('g2') : null}
-          {hasItems ? <Button key="reset" label="Reset" onPress={() => reset($)} /> : null}
+          {hasItems ? (
+            <Button key="reset" label={labelFor('reset', 'Reset')} onPress={() => confirmThen($, 'reset', () => reset($))} />
+          ) : null}
           {hasItems && l.undo ? gap('g3') : null}
           {l.undo ? <Button key="undo" label="Undo" onPress={() => undo($)} /> : null}
         </Box>

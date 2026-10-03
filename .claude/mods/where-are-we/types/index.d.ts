@@ -29,8 +29,22 @@ export type Ledger = {
   undo: Undo | null
 }
 
+// A copy of the card and the archive ledger taken just before an Archive,
+// Reset or Undo, kept newest first in the backups file.
+export type Backup = {
+  at: number
+  atText: string
+  reason: string
+  card: Card
+  doneAt: Record<string, number>
+  archived: Archived[]
+}
+
+// A button pressed once and waiting for its confirming second press.
+export type Armed = { key: string; at: number }
+
 declare module 'claude-code' {
   interface PluginState {
-    'where-are-we': { card: Card; ledger: Ledger; picked: string[] }
+    'where-are-we': { card: Card; ledger: Ledger; picked: string[]; armed: Armed | null }
   }
 }

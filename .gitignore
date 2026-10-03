@@ -48,6 +48,7 @@ dist-ssr
 # (written by the mod and by Claude; tracked copies are made only on request)
 .where-are-we.json
 .where-are-we-archive.json
+.where-are-we-backups.json
 
 # regenerated keyword-research output, not source
 tools/keyword-finder/keyword-ideas.csv

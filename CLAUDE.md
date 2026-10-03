@@ -70,6 +70,9 @@ Solo developer passion project. Prefer fast, decisive work over exploration.
   into WHERE_ARE_WE.md. "Save the card to git" also combines that ledger into
   archive/docs-completed/WHERE_ARE_WE_COMPLETED_<date>.md (one file, batches
   newest first, each task with its done time), committed with the .md.
+  Archive, Archive all done and Reset take two presses, and every Archive,
+  Reset and Undo first copies the card and ledger into the untracked
+  .where-are-we-backups.json (last 20); restore one only when I ask.
 - Finishing a batch of work does not move the doc that tracks it. The cycling
   docs (NEEDS_IMAGE.md, IMAGE_PROMPTS.md, BEASTLYPEDIA_FACT_GAPS.md) stay in
   root and hold open work only. Each has ONE companion in
