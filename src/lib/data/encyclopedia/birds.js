@@ -20,7 +20,7 @@ export const birdEncyclopedia = [
       overview: "The budgerigar (budgie) is native to the semi-arid interior of Australia, where enormous nomadic flocks follow rainfall and seed availability across the outback. In the wild they are small, swift, and highly social - flocks of thousands are common. They are the third most popular pet in the world after dogs and cats, and the best-selling pet bird globally. With training, many budgies develop the ability to mimic speech - some hold records for the largest bird vocabulary.",
       origin: "Interior of Australia",
       habitat: "Open grassland, scrubland, and open woodland",
-      adultSize: "7 inches (18 cm); 1-1.4 oz",
+      adultSize: "7 inches (18 cm); 25-35 g (0.9-1.2 oz)",
       wildDiet: "Grass seeds, berries, and plant matter",
       wildLifespan: "Not well documented in the wild; typically 7 to 15 years in captivity, with the oldest documented individual living 29 years, 2 months (Guinness World Records)",
       conservation: "Least Concern (IUCN)",
