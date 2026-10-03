@@ -35,8 +35,8 @@ never invented. Where no price exists, say so and ask the owner.
 | Betta fish | ✅ 2026-10-03 | ✅ no change | All totals, hub lines and links matched. |
 | Budgie | ◐ hub only | ❌ needs fix | Buy list fixed and linked (branch claude/budgie-rebuild). Cost table still has no rows for gram scale ($30 to $40), cuttlebone ($8 to $12), UV light (no catalog price). Waiting on the owner. |
 | Lovebird | ◐ hub only | ❌ needs fix | Buy list fixed and linked (branch claude/lovebird-rebuild). Cost table still has no rows for dishes ($10 to $18), bath ($12 to $16), gram scale ($30 to $40), UV light (no catalog price). Waiting on the owner. |
-| Cockatiel | ☐ | ☐ | Rebuild paused. Its agent re-priced perch, dish and toy rows from catalog fields: setup $295 to $601 (was $320 to $860). |
-| Tarantula | ☐ | ☐ | Rebuild paused. Setup now $50 to $170, or $75 to $270 with the spider (was $70 to $300). |
+| Cockatiel | ◐ rebuild | ✅ matches site | Rebuilt 3.0 on claude/cockatiel-rebuild: setup $295 to $601, book matches. Hub buy list items with no cost row: cuttlebone or mineral block, nightlight or cage cover. No gear available: the bird, annual total. |
+| Tarantula | ◐ rebuild | ✅ matches site | Rebuilt 3.0 on claude/tarantula-rebuild: setup $50 to $170 ($75 to $270 with the spider), book matches. Unlinked buy list: acrylic lid (no product), feeder insects (product has no covers). Thermometer/hygrometer links but has no cost row. No gear available: the spider, annual total. |
 | Rabbit | ☐ | ☐ | Cost guide re-totaled on claude/rabbit-rebuild (setup $125 to $197, monthly $62 to $135). |
 | Guinea pig | ☐ | ☐ | Cost guide re-totaled on claude/guinea-pig-rebuild (setup $158 to $204). |
 | Hamster | ☐ | ☐ | On claude/hamster-rebuild. |
