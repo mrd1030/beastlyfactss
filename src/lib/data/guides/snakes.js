@@ -504,7 +504,7 @@ export const snakeGuides = [
       "Feeding tongs",
       "Kitchen scale in grams",
       "Frozen/thawed mice",
-      "Optional low-output T5 UVB, 5.0 or 6%, half to two thirds of the enclosure length (check the length against your enclosure)",
+      "Optional low-output T5 UVB, 5.0 or 6%, about two-thirds of the enclosure length (check the length against your enclosure)",
       "Optional night heat: heat mat and on/off thermostat, only below 60°F",
     ],
     faqs: [

@@ -3252,8 +3252,8 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0D82DPB1D?tag=beastlyfacts-20",
     rating: 4.8,
     price: "$18–$24",
-    description: "Phosphorus-free calcium and multivitamin supplement built for strict herbivores. Unlike standard reptile calcium dusts, which are formulated with D3 for insect-eaters, this one avoids adding phosphorus on top of an already vegetable-heavy diet, which is what green iguanas, box turtles, and Russian tortoises actually need.",
-    covers: ["Calcium and multivitamin supplements (herbivore, no added phosphorus)"],
+    description: "All-in-one calcium, vitamin and trace mineral powder for herbivores and omnivores, sprinkled over greens. The label lists vitamin D3 (at least 10,000 IU per lb) and a plant base of alfalfa, pea protein and rice bran, with calcium at a minimum of 4%. It makes no phosphorus-free claim.",
+    covers: [],
     pets: ["reptiles-amphibians"],
   },
   {
