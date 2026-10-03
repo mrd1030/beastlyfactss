@@ -53,7 +53,13 @@ const MOVE = /\b(git\s+mv|mv|move|Move-Item|Rename-Item|cp|copy|Copy-Item)\b/i
 const CROP = /(\bcrop\b|\.extract\(|-crop\b|-extent\b|fit:\s*['"]?(cover|fill)\b|\bfit=(cover|fill)\b|\.resize\(\s*\d+\s*,\s*\d+)/i
 const FACT_PHOTO = /(assets[\/\\]+facts|FACT_IMAGES|fact[ _-]?(photo|image)s?)/i
 
-const BUILD = /\bnpm\s+run\s+build(?=$|[\s;&|"'`)])/m
+// Only a build that runs: npm at a command position, after heredoc bodies
+// and quoted strings (commit messages, echo text) are cut away.
+const BUILD = /(?:^|[;&|(\n])\s*npm\s+run\s+build(?=$|[\s;&|)])/m
+const runnable = (command: string) =>
+  command
+    .replace(/<<-?\s*(['"]?)(\w+)\1[^\n]*\n[\s\S]*?\n\s*\2\s*$/gm, '')
+    .replace(/'[^']*'|"(?:[^"\\]|\\.)*"/g, '""')
 const ASKED_BUILD = /\b(npm run build|run (the |a )?(full )?build|do (the |a )?(full )?build|build (it|the site|now)|go ahead (and )?build|please build|ok(ay)? to build|you can build)\b/gi
 const NEGATED = /\b(don'?t|do not|never|no|not|without|unless|blocks?|blocking|skip)\b[^.]{0,25}$/i
 
@@ -152,7 +158,7 @@ export const register: Register = on => {
     if (e.tool === 'Bash' || e.tool === 'PowerShell') {
       const command = str(args.command)
 
-      if (BUILD.test(command) && !buildAsked) {
+      if (BUILD.test(runnable(command)) && !buildAsked) {
         await flag($, e.tool, [{ rule: 'npm run build blocked', detail: 'you did not ask for a build this prompt' }])
         return {
           deny: 'zookeeper: `npm run build` is blocked unless the user asked for a build in this prompt. Installs stop at check-images.mjs and check-internal-links.mjs.',
