@@ -104,7 +104,7 @@ export const smallMammalEncyclopedia = [
       overview: "The Syrian hamster - the most common pet hamster species - was first brought into captivity from a single wild-caught female found near Aleppo, Syria in 1930; nearly every pet Syrian hamster alive today descends from that one litter. In the wild, Syrian hamsters are solitary burrowers that dig extensive tunnel systems and are fiercely territorial toward other hamsters, a trait that carries directly into captivity and is the reason Syrians must be housed alone as adults.",
       origin: "Northern Syria and southern Turkey",
       habitat: "Arid steppe and agricultural land, in extensive burrow systems",
-      adultSize: "5-7 inches (13-18 cm); 4-7 oz",
+      adultSize: "5-7 inches (13-18 cm); 3-5 oz (85-140 g)",
       wildDiet: "Seeds, grains, grasses, and occasional insects",
       wildLifespan: "2-3 years",
       conservation: "Vulnerable (IUCN - wild Syrian hamster population)",

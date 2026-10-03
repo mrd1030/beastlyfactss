@@ -234,7 +234,7 @@ export const smallMammalGuides = [
         { label: "Enclosure size", value: "At least 18 by 18 by 10 inches for 2 to 3 mice, with more floor and real climbing room on shelves and levels always the safer default.", source: "mouse-tank-setup-guide" },
         { label: "Bedding", value: "Dust-free paper, about 2 to 4cm deep, far shallower than a hamster's. No cedar, no aromatic pine, no cotton-wool nesting products.", source: "mouse-tank-setup-guide" },
         { label: "Nesting material", value: "A mouse in a room you find comfortable is below its own comfort range. The research puts the useful amount at six to ten grams, more than most pet cages hold.", source: "mouse-enrichment-guide" },
-        { label: "Wheel", value: "Solid, axle-free, 6 to 8 inches rather than a hamster's 10 to 12, and not the only enrichment.", source: "mouse-tank-setup-guide" },
+        { label: "Wheel", value: "Solid, axle-free, 6 to 8 inches rather than a hamster's 8 to 11, and not the only enrichment.", source: "mouse-tank-setup-guide" },
         { label: "Temperature and humidity", value: "64 to 79°F and 30 to 70% humidity. Damp, drafts, dust, and poor ventilation all raise respiratory risk.", source: "mouse-health-issues-guide" },
         { label: "Diet", value: "A pellet formulated for mice or rats at 20 to 25% protein, higher than the 14 to 16% a hamster or gerbil needs, which is why the hamster-and-gerbil tub is wrong.", source: "mouse-feeding-guide" },
         { label: "How to feed it", value: "A measured ration once daily, some of it scattered for foraging. Pea-sized pieces of greens, carrot, pepper, or broccoli daily, pulled before they spoil. Eating its own droppings is normal, not illness.", source: "mouse-feeding-guide" },
@@ -724,7 +724,7 @@ export const smallMammalGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal", value: "Legal in every US state except Hawaii, which bans hamsters outright with no permit route.", source: "hamster-legal-guide" },
+        { label: "Legal", value: "Legal everywhere except Hawaii, which bans hamsters outright with no permit route, and Oregon, where the rule is unclear.", source: "hamster-legal-guide" },
         { label: "Enclosure", value: "Roughly 700 to 775 square inches of unbroken floor for a Syrian, around 600 for dwarf species, more always better. Bar spacing no more than 1/2 inch for Syrians, 1/4 inch for smaller species.", source: "hamster-tank-setup-guide" },
         { label: "Temperature", value: "65 to 75°F, held steady. Below 65°F is out of range; below about 41°F (5°C), especially with short days, risks torpor, a hibernation-like state; over 80°F risks heat stress.", source: "hamster-tank-setup-guide" },
         { label: "Bedding", value: "At least 6 inches of dust-free paper bedding or aspen shavings as the floor, and in a bedding-depth study 40 to 80 cm, roughly 15 to 30 inches, seemed to improve welfare. Never cedar or pine.", source: "hamster-tank-setup-guide" },
@@ -734,8 +734,8 @@ export const smallMammalGuides = [
         { label: "Diet", value: "A nutritionally complete hamster pellet or lab block as the staple, not a loose seed mix. Small daily fresh vegetables, under about 10% of the diet combined with fruit.", source: "hamster-feeding-guide" },
         { label: "Not eating", value: "6 to 12 hours without eating is worth watching, 12 to 24 hours warrants a vet call, 24+ hours is critical, 48+ life-threatening. A day of no visible eating can also just mean a hamster is working through a cheek-pouch hoard.", source: "hamster-feeding-guide" },
         { label: "Handling", value: "Let it wake up and orient itself before reaching in, never grab from above. Scoop from below with both hands. Syrians are the easiest to handle; dwarfs and Roborovski are faster and more nip-prone.", source: "hamster-handling-guide" },
-        { label: "Budget", value: "About $26 for a Syrian, $16 to $24 for dwarfs. $100 to $250 to set up, animal included. $10 to $18 a month.", source: "hamster-cost-guide" },
-        { label: "Adult size", value: "5 to 7 inches, 4 to 7 oz." },
+        { label: "Budget", value: "About $26 for a Syrian, $16 to $24 for dwarfs. $111 to $226 to set up, animal included. $10 to $18 a month.", source: "hamster-cost-guide" },
+        { label: "Adult size", value: "5 to 7 inches, 3 to 5 oz." },
         { label: "Lifespan", value: "A large veterinary study found a median age at death of 1.75 years. Syrians and Roborovskis tend toward 2 to 3 years, Winter Whites often only about a year.", source: "hamster-cost-guide" },
       ],
     },
@@ -751,7 +751,7 @@ export const smallMammalGuides = [
       vetLine: "An exotic vet, found before you need one. Wet tail is a same-day emergency, not a wait-and-see situation; most of the rest of this list is prevented through clean, dust-free bedding and a stress-free setup.",
     },
     routes: [
-      { slug: "hamster-cost-guide", line: "$16 to $26 for the animal, $100 to $250 to set up, and what a median 1.75-year lifespan means for the budget." },
+      { slug: "hamster-cost-guide", line: "$16 to $26 for the animal, $111 to $226 to set up with it, and what a median 1.75-year lifespan means for the budget." },
       { slug: "hamster-tank-setup-guide", line: "The real floor space (bigger than any starter kit), bar spacing, bedding depth, wheel size, and the sand bath most kits skip." },
       { slug: "hamster-feeding-guide", line: "Free-choice versus scheduled feeding, safe and toxic foods, and how to tell cheek-pouch hoarding from real appetite loss." },
       { slug: "hamster-handling-guide", line: "Why species matters more than you'd think, the correct scoop-from-below technique, and why waking a sleeping hamster gets you bitten." },
