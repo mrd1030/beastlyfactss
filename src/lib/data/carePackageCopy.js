@@ -112,8 +112,8 @@ export const CARE_PACKAGE_COPY = {
   axolotl: {
     hook: 'Cold water and a real cycle, not a bare bowl.',
     heroParagraph:
-      'A 42-page printable manual with the cold-water setup, the cooling plan for summer, a cycling walkthrough with or without the axolotl in the tank, and the health section for what actually goes wrong.',
-    heroTicks: ['42 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
+      'A 45-page printable manual with the cold-water setup, the cooling plan for summer, a fishless cycling walkthrough, choosing a healthy axolotl, the law in every state, and the health section for what actually goes wrong.',
+    heroTicks: ['45 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
     roulette: [
       'A tank set up like a warm-water community aquarium',
       'No real cycling before the axolotl goes in',
@@ -122,26 +122,26 @@ export const CARE_PACKAGE_COPY = {
     ],
     answers: [
       'A real cold-water tank setup, with the temperature numbers that matter and how to hold them in summer',
-      'A cycling plan, with or without the axolotl already in the tank',
+      'A fishless cycling walkthrough, and what to do if ammonia shows up',
       'Water targets and testing stated plainly, with the early warnings that mean a change is due',
       'Fungal and bacterial infection, impaction, floating and heat stress, each on its own page',
     ],
     inside: [
-      { emoji: '🧊', title: 'Cold-water setup', line: 'Tank size, the temperature numbers that matter, cooling methods and the summer plan.' },
-      { emoji: '💧', title: 'Filtration, cycling and water', line: 'Flow, cycling with or without an axolotl, water targets and testing, water changes and early warnings.' },
-      { emoji: '⚠️', title: 'Health and red flags', line: 'Heat stress and reading the gills, fungal and bacterial infection, impaction and floating, burns and injuries.' },
-      { emoji: '🥗', title: 'Diet, morphs and tankmates', line: 'Feeding by age, staples and the never-feed list, choosing an axolotl, housing together and tankmates.' },
-      { emoji: '🛁', title: 'Tubbing and salt baths', line: 'The tubbing, cooling and salt bath methods, when to use them and when not to.' },
+      { emoji: '🧊', title: 'Cold-water setup', line: 'Tank size and where it goes, the temperature numbers that matter, chillers, fans and cooling without one, substrate, hides and cleaning.' },
+      { emoji: '💧', title: 'Filtration, cycling and water', line: 'Water quality and the nitrogen cycle, filtration, flow and lighting, water changes and hygiene.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Red flags and finding a vet, heat stress and the gills, fungal and bacterial infection, impaction and floating, ammonia burns, parasites and eyes.' },
+      { emoji: '🥗', title: 'Diet by age', line: 'Feeding by age, worms, pellets and frozen foods, the never-feed list and supplements, growth and body condition.' },
+      { emoji: '🤝', title: 'Handling, arrival and the law', line: 'Handling and moving an axolotl, body language, choosing one and quarantine, sexing and pairs, and where an axolotl is legal.' },
       { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, pet-sitter sheet, and the logs.' },
     ],
     previewHeadline: 'Print-first pages, clearly marked.',
     previews: [
       { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
-      { page: 8, alt: 'Temperature: the numbers that matter' },
-      { page: 11, alt: 'Cycling, with or without an axolotl' },
-      { page: 24, alt: 'Heat stress and reading the gills' },
-      { page: 30, alt: 'Emergency and quick targets card' },
-      { page: 33, alt: 'Symptom quick reference table' },
+      { page: 7, alt: 'Temperature: the numbers that matter' },
+      { page: 13, alt: 'Diet and feeding by age' },
+      { page: 25, alt: 'Heat stress and reading the gills' },
+      { page: 31, alt: 'Emergency and quick targets card' },
+      { page: 34, alt: 'Symptom quick reference table' },
     ],
     whoFor: [
       'New axolotl owners setting up a proper cold-water tank',

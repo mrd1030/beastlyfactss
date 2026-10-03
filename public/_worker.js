@@ -685,7 +685,7 @@ const CARE_PACKAGE_STORE = {
   },
   axolotl: {
     name: 'Axolotl Care Package',
-    edition: '2.2',
+    edition: '3.0',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENBw9qtY3Ob6vaRVFVm391',
   },

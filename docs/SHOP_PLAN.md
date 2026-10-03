@@ -51,7 +51,7 @@ had moved past the PDF):
 
 | Package | File | Pages |
 | --- | --- | --- |
-| axolotl | Axolotl_Care_Package_v2.2.pdf | 42 |
+| axolotl | Axolotl_Care_Package_v3.0.pdf | 45 |
 | ball-python | Ball_Python_Care_Package_v3.0.pdf | 48 |
 | bearded-dragon | Bearded_Dragon_Care_Package_v4.0.pdf | 48 |
 | betta-fish | Betta_Fish_Care_Package_v2.2.pdf | 37 |
