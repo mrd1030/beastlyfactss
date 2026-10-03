@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
-"""Assemble the guinea-pig care package.
+"""Assemble the Guinea Pig care package, edition 3.0 (Cavia porcellus).
 
 Content files carry <!--PAGE key--> markers. Page numbers are assigned in
 document order, {{P:key}} tokens are resolved to those numbers, the TOC is
 generated from SECTIONS, and each page gets its footer. Splitting or adding a
 page only means editing the content and SECTIONS; every number follows.
+
+The build fails on a duplicate page key, a page missing from the contents, a
+contents entry with no page, an unknown {{P:key}}, a leftover placeholder, an
+em or en dash (character or entity), a literal "page N" cross-reference,
+an external link (http or www), or a British word on the banned list.
 """
 import base64
 import os
@@ -13,69 +18,91 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.normpath(os.path.join(HERE, "..", "guinea-pig.html"))
+# The cover photo every edition since 2.0 has carried: a guinea pig on a warm
+# background. Embedded as base64 only, never resized or re-encoded. It is the
+# same file the 2.1 HTML carried inline (md5 3da61036edb9c46ca8a19cf3c820fd28).
 COVER = os.path.normpath(os.path.join(HERE, "..", "..", "images", "guinea-pig-cover-2.jpg"))
+
+EDITION = "3.0"
 
 # TOC: (section label, [(key, title), ...])
 SECTIONS = [
     ("Getting Started", [
         ("howto", "How to Use This Package"),
     ]),
-    ("Section 01 &middot; Quick Profile", [
+    ("Section 01 &middot; Profile", [
         ("profile", "Quick Profile &amp; Cost Overview"),
+        ("species", "The Species, Coat Types, Size &amp; Lifespan"),
     ]),
-    ("Section 02 &middot; Full Care Guide", [
-        ("cage", "Enclosure Size, Shape &amp; Flooring"),
-        ("setup", "Bedding, Hides &amp; Cage Layout"),
-        ("climate", "Temperature, Heat Stress &amp; Household Climate"),
-        ("mistakes", "Common Mistakes, Enrichment &amp; Floor Time"),
-        ("pairs", "Pairs and Groups: Choosing Your Guinea Pigs"),
-        ("bonding", "Introducing &amp; Bonding Two Guinea Pigs"),
-        ("handling", "Handling, Sounds &amp; Body Language"),
-        ("hay", "Hay: the 80% Nobody Budgets For"),
-        ("vitc", "Vitamin C: the Rule That Makes This Species Different"),
-        ("veg", "Daily Vegetables &amp; Greens"),
-        ("pellets", "Pellets, Fruit, Treats &amp; the Never-Feed List"),
-        ("grooming", "Grooming, Nails, Coats &amp; Boar Cleaning"),
+    ("Section 02 &middot; Housing &amp; Environment", [
+        ("enclosure", "Enclosure Size, Type &amp; Where It Goes"),
+        ("temperature", "Temperature, Humidity &amp; Heat Stress"),
+        ("bedding", "Bedding, Hides &amp; Cage Layout"),
+        ("cleaning", "Cleaning, Water &amp; Hygiene"),
+    ]),
+    ("Section 03 &middot; Feeding", [
+        ("diet", "Diet by Age &amp; Unlimited Hay"),
+        ("vitc", "Vitamin C: the Daily Rule"),
+        ("produce", "Vegetables &amp; Pellets"),
+        ("treats", "Fruit, Treats &amp; the Never-Feed List"),
+        ("growth", "Weight &amp; Body Condition"),
+    ]),
+    ("Section 04 &middot; Handling &amp; Behavior", [
+        ("handling", "Handling &amp; Taming"),
+        ("grooming", "Grooming, Nails &amp; Coats"),
+        ("behavior", "Sounds &amp; Body Language"),
+        ("pairs", "Pairs, Groups &amp; Who Lives Together"),
+        ("intro", "Introducing &amp; Bonding Two Guinea Pigs"),
+        ("enrichment", "Enrichment &amp; Common Mistakes"),
+    ]),
+    ("Section 05 &middot; Arrival &amp; Life Stages", [
+        ("arrival", "Choosing a Healthy Guinea Pig &amp; Quarantine"),
         ("sexing", "Sexing, Neutering &amp; the Breeding Deadline"),
     ]),
-    ("Section 03 &middot; Health &amp; Common Issues", [
-        ("redflags", "Health Red Flags &amp; the 8 to 12 Hour Rule"),
-        ("stasis", "GI Stasis, Bloat &amp; a Pig That Stops Eating"),
-        ("dental", "Dental Disease &amp; Malocclusion"),
+    ("Section 06 &middot; The Law", [
+        ("legal", "Is a Guinea Pig Legal Where You Live?"),
+    ]),
+    ("Section 07 &middot; Health &amp; Common Issues", [
+        ("redflags", "Red Flags, the 8 to 12 Hour Rule &amp; Finding a Vet"),
+        ("stasis", "Gastrointestinal Stasis &amp; a Pig That Stops Eating"),
+        ("dental", "Dental Disease"),
         ("scurvy", "Scurvy: Stages, Treatment &amp; Recovery"),
         ("respiratory", "Respiratory Infection &amp; Pneumonia"),
-        ("urinary", "Bladder Stones &amp; Urinary Disease"),
-        ("repro", "Ovarian Cysts &amp; Reproductive Disease"),
-        ("skin", "Mites, Lice, Ringworm, Lumps &amp; Bumblefoot"),
+        ("urinary", "Bladder Stones &amp; Urinary Problems"),
+        ("repro", "Ovarian Cysts, Pregnancy &amp; Spaying"),
+        ("skin", "Mites, Lice, Ringworm, Lumps, Bumblefoot &amp; Boar Butt"),
         ("antibiotics", "Antibiotics &amp; Enterotoxemia"),
-        ("anesthesia", "Anesthesia &amp; the Vet Conversation"),
-        ("droppings", "Droppings, Weight &amp; Body Condition"),
+        ("vetvisit", "Anesthesia, Travel &amp; the Vet Visit"),
+        ("droppings", "Reading Droppings, Urine &amp; Hydration"),
     ]),
-    ("Section 04 &middot; Quick Reference", [
+    ("Section 08 &middot; Quick Reference", [
         ("checklist", "Setup Checklist &amp; Targets"),
         ("emergency", "Emergency &amp; Quick Targets Card"),
     ]),
-    ("Section 05 &middot; Owner Tools", [
+    ("Section 09 &middot; Owner Tools", [
         ("budget", "Budget &amp; Shopping List"),
-        ("first30", "First 30 Days Checklist"),
+        ("first30", "First 30 Days"),
         ("symptoms", "Symptom Quick Reference"),
         ("routine", "Daily, Weekly &amp; Seasonal Routine"),
-        ("outage", "Heat Waves, Power Outages &amp; Travel"),
+        ("outage", "Power Outages, Heat Waves, Travel &amp; Transport"),
         ("sitter", "Pet-Sitter Sheet"),
         ("ownerlog", "Owner Log"),
         ("equiplog", "Equipment &amp; Vet Log"),
+        ("enrichlog", "Enrichment Checklist &amp; Log"),
     ]),
     ("Reference", [
-        ("glossary", "Glossary"),
-        ("sources", "Sources &amp; Further Reading"),
-        ("version", "Version History &amp; About"),
+        ("glossary", "Glossary, A to G"),
+        ("glossary2", "Glossary, H to Z"),
+        ("sources", "Sources"),
+        ("disagree", "Where the Sources Disagree"),
+        ("about", "Version History &amp; About"),
     ]),
 ]
 
 FOOT = ('<div class="pagefoot"><span class="brand">Beastly Facts</span>'
-        '<span>Guinea Pig Care Package</span><span>%d</span></div>')
+        '<span>Guinea Pig Care Package &middot; Edition ' + EDITION + '</span><span>%d</span></div>')
 
-PAGE_FILES = ("pages_1.html", "pages_2.html", "pages_3.html", "pages_4.html", "pages_5.html")
+PAGE_FILES = tuple(sorted(n for n in os.listdir(HERE) if n.startswith("pages_") and n.endswith(".html")))
 
 
 def main():
@@ -83,6 +110,23 @@ def main():
     body = "".join(
         open(os.path.join(HERE, n), encoding="utf-8").read() for n in PAGE_FILES
     )
+
+    # No hand-numbered cross-references: every one must be a {{P:key}} token.
+    literal = re.findall(r"[Pp]ages? [0-9]+", body)
+    if literal:
+        sys.exit("literal page reference(s), use {{P:key}}: %s" % sorted(set(literal)))
+
+    # No external links, and US usage only. Checked on the body, before the
+    # cover photo is embedded, so base64 text cannot trip the word list.
+    if re.search(r"https?:|www\.|\.com\b", re.sub(r'xmlns="[^"]*"', "", body)):
+        sys.exit("external link present in the body")
+    text = re.sub(r"<[^>]+>", " ", body)
+    for word in (r"\bhob\b", r"\btorch", r"\bmains\b", r"power cut", r"fortnight", r"skirting",
+                 r"\bcolour", r"behaviour", r"\bgrey\b", r"\bmum\b", r"\btyre", r"\bcentre\b",
+                 r"\borganis", r"\bprogramme", r"\bfavour", r"\bmetre", r"\blitre", r"\bfibre",
+                 r"\bodour", r"\bsynthesis[ei]",r"\bmould", r"\bcatalogue", r"\bdiarrhoea", r"\bfaeces", r"\bhaemo", r"\banaesth", r"\boedema"):
+        if re.search(word, text, re.I):
+            sys.exit("British usage %r present" % word)
 
     # Assign page numbers in document order from the PAGE markers.
     keys = re.findall(r"<!--PAGE\s+([a-z0-9_]+)\s*-->", body)
@@ -100,6 +144,11 @@ def main():
     untocd = [k for k in keys if k not in toc_keys and k not in ("cover", "contents")]
     if untocd:
         sys.exit("pages missing from the TOC: %s" % untocd)
+    if [k for k in keys if k not in ("cover", "contents")] != toc_keys:
+        sys.exit("TOC order does not match page order")
+    foots = re.findall(r"<!--FOOT\s+([a-z0-9_]+)\s*-->", body)
+    if sorted(foots) != sorted(keys):
+        sys.exit("PAGE and FOOT markers do not pair up: %s" % sorted(set(keys) ^ set(foots)))
 
     # Build the TOC.
     toc = []
@@ -128,7 +177,7 @@ def main():
 
     html = head + body
 
-    # Embed the cover photo.
+    # Embed the cover photo, as is: base64 only, no resize or re-encode.
     uri = "data:image/jpeg;base64," + base64.b64encode(open(COVER, "rb").read()).decode()
     if html.count("{{COVER_IMAGE_DATA_URI}}") != 1:
         sys.exit("cover placeholder not found exactly once")
@@ -137,9 +186,9 @@ def main():
     left = re.findall(r"\{\{[A-Za-z_:0-9]+\}\}", html)
     if left:
         sys.exit("unresolved placeholders: %s" % sorted(set(left)))
-    for bad in ("—", "–"):
+    for bad in ("—", "–", "&mdash;", "&ndash;", "&#8212;", "&#8211;", "&#x2014;", "&#x2013;"):
         if bad in html:
-            sys.exit("em or en dash present in output")
+            sys.exit("em or en dash present in output: %r" % bad)
 
     open(SRC, "w", encoding="utf-8").write(html)
     print("wrote %s (%d pages, %d bytes)" % (SRC, total, len(html)))
