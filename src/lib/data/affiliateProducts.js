@@ -4486,7 +4486,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0002FP43Q?tag=beastlyfacts-20",
     description: "Natural palm leaf roll for parrots to shred, which is normal foraging behavior worth providing every day.",
-    covers: [],
+    covers: ["Palm for shredding, a first supply"],
     pets: ["birds"],
   },
   {
