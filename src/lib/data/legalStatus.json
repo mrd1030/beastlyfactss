@@ -1543,7 +1543,7 @@
     "nd-48-1-09": {
       "title": "North Dakota Administrative Code Article 48.1-09, Nontraditional Livestock",
       "url": "https://www.ndlegis.gov/information/acdata/pdf/48.1-09-01.pdf",
-      "note": "The nontraditional livestock category system is alive and sits here, not in the repealed title 48. 48.1-09-01-02 sorts every nondomestic species held in confinement into three categories, category 1 needing no license and categories 2 and 3 needing one before the animal is acquired. Subsection 4 exempts arachnids and invertebrates from even the importation permit."
+      "note": "The nontraditional livestock category system is alive and sits here, not in the repealed title 48. 48.1-09-01-02 sorts every nondomestic species held in confinement into three categories, category 1 needing no license and categories 2 and 3 needing one before the animal is acquired. Subsection 4 exempts arachnids and invertebrates from even the importation permit, along with a short list of small pets named one by one: gerbils, guinea pigs, hamsters, mice, rats and sugar gliders. The Board of Animal Health's own page (https://www.ndda.nd.gov/divisions/animal-health/non-traditional-livestock) files that list under Exempt Animals and calls them exempt from non-traditional livestock requirements and importation requirements. Last amended April 1, 2026."
     },
     "sd-40-3-24": {
       "title": "SDCL 40-3-24 to 40-3-26, nondomestic mammals, and SDCL 41-1-1, Game, Fish and Parks definitions",
@@ -1674,6 +1674,11 @@
       "title": "Michigan Ferrets Act, 1994 PA 358, MCL 287.891 to 287.901",
       "url": "https://www.legislature.mi.gov/documents/mcl/pdf/mcl-act-358-of-1994.pdf",
       "note": "Regulates ferret breeding rather than keeping. A hobby breeder, someone with 4 or fewer ferrets at least 6 months old or a litter under 5 months held temporarily for shows or breed improvement and registered with a national ferret registry, may breed without a license or permit if the Act's housing, veterinary care and sale conditions are met."
+    },
+    "vt-act-47-2025": {
+      "title": "Vermont Act 47 (2025), H.231, An act relating to technical corrections to fish and wildlife statutes, as enacted",
+      "url": "https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT047/ACT047%20As%20Enacted.pdf",
+      "note": "Signed June 5, 2025. Sec. 14 bars importing, possessing or selling a pond slider (Trachemys scripta) in Vermont, except a turtle legally acquired as a pet before July 1, 2025, and stock a pet dealer or commercial collection permittee can document holding before that date. Sec. 14(b) repeals the section once the Commissioner adopts a slider rule under 10 V.S.A. § 4085. Sec. 13 adds § 4085, which from January 1, 2027 bars intentionally taking any reptile or amphibian in Vermont unless a rule allows it. The Fish and Wildlife Department's notice (https://www.vtfishandwildlife.com/press-releases/sale-pond-slider-turtles-prohibited) tells an owner from before July 1, 2025 that nothing needs doing."
     }
   },
   "animals": {
@@ -2874,10 +2879,11 @@
         },
         "ND": {
           "status": "legal",
-          "sourceId": "nd-36-01",
-          "cite": "§ 36-01-08.4",
-          "quote": "A person may not keep a skunk or raccoon in captivity.",
-          "verifiedOn": "2026-10-01"
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(4)(i)",
+          "quote": "i. Sugar gliders.",
+          "note": "Sugar gliders are named in 48.1-09-01-02(4), the short list of small pets that, unless the state veterinarian decides otherwise on disease or safety grounds, \"are exempt from the importation permit and certificate of veterinary inspection requirement.\" They appear in neither category 2 nor category 3, the only tiers that need a license, and the Board of Animal Health's own page lists them under Exempt Animals as exempt from non-traditional livestock requirements. The only animals North Dakota bars outright are skunks and raccoons.",
+          "verifiedOn": "2026-10-02"
         },
         "WY": {
           "status": "legal",
@@ -3101,10 +3107,11 @@
         },
         "ND": {
           "status": "legal",
-          "sourceId": "nd-36-01",
-          "cite": "§ 36-01-08.4",
-          "quote": "A person may not keep a skunk or raccoon in captivity.",
-          "verifiedOn": "2026-10-01"
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(4)(f)",
+          "quote": "f. Hamsters.",
+          "note": "Hamsters are named in 48.1-09-01-02(4), the short list of small pets that, unless the state veterinarian decides otherwise on disease or safety grounds, \"are exempt from the importation permit and certificate of veterinary inspection requirement.\" They appear in neither category 2 nor category 3, the only tiers that need a license, and the Board of Animal Health's own page lists them under Exempt Animals as exempt from non-traditional livestock requirements. The only animals North Dakota bars outright are skunks and raccoons.",
+          "verifiedOn": "2026-10-02"
         },
         "WY": {
           "status": "legal",
@@ -3519,10 +3526,11 @@
         },
         "ND": {
           "status": "legal",
-          "sourceId": "nd-36-01",
-          "cite": "§ 36-01-08.4",
-          "quote": "A person may not keep a skunk or raccoon in captivity.",
-          "verifiedOn": "2026-10-01"
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(4)(d)",
+          "quote": "d. Gerbils.",
+          "note": "Gerbils are named in 48.1-09-01-02(4), the short list of small pets that, unless the state veterinarian decides otherwise on disease or safety grounds, \"are exempt from the importation permit and certificate of veterinary inspection requirement.\" They appear in neither category 2 nor category 3, the only tiers that need a license, and the Board of Animal Health's own page lists them under Exempt Animals as exempt from non-traditional livestock requirements. The only animals North Dakota bars outright are skunks and raccoons.",
+          "verifiedOn": "2026-10-02"
         },
         "WY": {
           "status": "legal",
@@ -3807,9 +3815,9 @@
           "sourceId": "ca-671",
           "cite": "§ 671(c)(1)(M)",
           "quote": "Family Psittacidae-Parrots, Parakeets: Myiopsitta monachus (Monk or Quaker parakeet) (D)",
-          "verifiedOn": "2026-10-01",
+          "verifiedOn": "2026-10-02",
           "localOverride": true,
-          "note": "The monk (Quaker) parakeet is named on the restricted list and marked (D) for detrimental, so it cannot be kept as a pet. The only possession permit, Animal Care, requires lawful possession before January 1992."
+          "note": "The monk (Quaker) parakeet is named by binomial, Myiopsitta monachus, on the restricted list and marked (D) for detrimental, so it cannot be kept as a pet. The only possession permit, Animal Care, requires lawful possession before January 1992."
         },
         "GA": {
           "status": "banned",
@@ -3826,9 +3834,10 @@
         "HI": {
           "status": "banned",
           "sourceId": "hi-4-71-6",
+          "cite": "HAR § 4-71-6, List of Prohibited Animals",
           "quote": "Myiopsitta monachus  parakeet, monk (quaker)",
-          "verifiedOn": "2026-10-01",
-          "note": "The monk (Quaker) parakeet is named on Hawaii's prohibited animal list, and animals not on the approved lists are prohibited by default, so there is no pet route."
+          "verifiedOn": "2026-10-02",
+          "note": "Named by binomial, Myiopsitta monachus, on Hawaii's prohibited animal list, and animals not on the approved lists are prohibited by default, so there is no pet route."
         },
         "NYC": {
           "status": "legal",
@@ -3896,8 +3905,8 @@
           "sourceId": "ky-301-2-082",
           "cite": "§ 4(1)(q)",
           "quote": "Monk or Quaker parakeet (Myiopsitta monachus);",
-          "note": "The permit-exempt list confirms the exclusion: it clears parrots, lovebirds, budgerigars, macaws and parakeets except the monk parakeet.",
-          "verifiedOn": "2026-10-01",
+          "note": "Named by binomial, Myiopsitta monachus, in the prohibited list at Section 4(1)(q). The permit-exempt list confirms the exclusion: it clears parrots, lovebirds, budgerigars, macaws and parakeets \"except monk parakeet, M. monachus\".",
+          "verifiedOn": "2026-10-02",
           "localOverride": true
         },
         "RI": {
@@ -6135,10 +6144,11 @@
         },
         "KS": {
           "status": "legal",
-          "sourceId": "ks-32-1301",
-          "cite": "§ 32-1301(d)(3)",
-          "quote": "all non-native, venomous snakes.",
-          "verifiedOn": "2026-10-01"
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-3(a), (b), (d)",
+          "quote": "exotic wildlife species may be imported, possessed, sold, offered for sale or purchased, provided the exotic wildlife was legally captured, raised, exported, possessed, sold or purchased or any combination of these activities in its place of origin.",
+          "note": "A boa constrictor is not native to Kansas and has no established wild population there, so it is exotic wildlife under 115-20-3(d), which \"may be possessed without limit in time and number\" with no permit. It is not a dangerous regulated animal either, because K.S.A. 32-1301(d)(3) reaches only non-native venomous snakes. The one condition is in the quote: the animal has to have been obtained legally where it came from, so keep the receipt.",
+          "verifiedOn": "2026-10-02"
         },
         "SC": {
           "status": "legal",
@@ -9021,13 +9031,13 @@
       "scientific": "Vulpes zerda",
       "jurisdictions": {
         "CA": {
-          "status": "restricted",
+          "status": "banned",
           "sourceId": "ca-671",
           "cite": "§ 671(c)(2)(K)(2)",
           "quote": "Family Canidae-All species (W)",
-          "verifiedOn": "2026-10-01",
+          "verifiedOn": "2026-10-02",
           "localOverride": true,
-          "note": "The whole canid family is restricted, marked (W) for welfare. No California permit type covers pet keeping. The only possession permit, Animal Care, requires lawful possession before January 1992."
+          "note": "The whole canid family is restricted, marked (W) for welfare. No California permit type covers pet keeping: 671.1(b) issues permits for Animal Care, aquaculture, AZA institutions, breeding, broker or dealer work, exhibiting, native species exhibiting, nuisance bird abatement, research, shelters, single event breeding and fish. The only possession permit, Animal Care, requires lawful possession in California before January 1992, so no route is open to a new keeper. That makes it a ban, the same answer the sugar glider gets under the same section."
         },
         "GA": {
           "status": "banned",
@@ -9469,13 +9479,13 @@
       "scientific": "Leptailurus serval",
       "jurisdictions": {
         "CA": {
-          "status": "restricted",
+          "status": "banned",
           "sourceId": "ca-671",
           "cite": "§ 671(c)(2)(K)(1)",
           "quote": "Family Felidae-All species (W)",
-          "verifiedOn": "2026-10-01",
+          "verifiedOn": "2026-10-02",
           "localOverride": true,
-          "note": "The whole felid family is restricted, marked (W) for welfare, and only domestic cats and their hybrids are carved out. No California permit type covers pet keeping. The only possession permit, Animal Care, requires lawful possession before January 1992."
+          "note": "The whole felid family is restricted, marked (W) for welfare, and only domestic cats and their hybrids are carved out. No California permit type covers pet keeping: 671.1(b) issues permits for Animal Care, aquaculture, AZA institutions, breeding, broker or dealer work, exhibiting, native species exhibiting, nuisance bird abatement, research, shelters, single event breeding and fish. The only possession permit, Animal Care, requires lawful possession in California before January 1992, so no route is open to a new keeper. That makes it a ban, the same answer the sugar glider gets under the same section."
         },
         "GA": {
           "status": "banned",
@@ -10215,10 +10225,11 @@
         },
         "ND": {
           "status": "legal",
-          "sourceId": "nd-36-01",
-          "cite": "§ 36-01-08.4",
-          "quote": "A person may not keep a skunk or raccoon in captivity.",
-          "verifiedOn": "2026-10-01"
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(1)(b)",
+          "quote": "pigeons, rabbits, ratites, chinchilla, Guinea fowl, ranch foxes, ranch mink, peafowl, all pheasants, quail, chukar, hedgehog, degus, and other species as ordered by the board.",
+          "note": "The chinchilla is named in category 1, the tier for species generally considered domestic or not inherently dangerous, and 48.1-09-01-02(1)(c) says category 1 species \"do not require a nontraditional livestock license, but owners must otherwise comply with the rules in this title.\" Only categories 2 and 3 need a license. Bringing one into North Dakota still takes a certificate of veterinary inspection and an importation permit number from the state veterinarian under 48.1-09-02-01, because the chinchilla is not on the subsection 4 list of small pets exempt from that step.",
+          "verifiedOn": "2026-10-02"
         },
         "WY": {
           "status": "legal",
@@ -10508,10 +10519,11 @@
         },
         "ND": {
           "status": "legal",
-          "sourceId": "nd-36-01",
-          "cite": "§ 36-01-08.4",
-          "quote": "A person may not keep a skunk or raccoon in captivity.",
-          "verifiedOn": "2026-10-01"
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(4)(e)",
+          "quote": "e. Guinea pigs.",
+          "note": "Guinea pigs are named in 48.1-09-01-02(4), the short list of small pets that, unless the state veterinarian decides otherwise on disease or safety grounds, \"are exempt from the importation permit and certificate of veterinary inspection requirement.\" They appear in neither category 2 nor category 3, the only tiers that need a license, and the Board of Animal Health's own page lists them under Exempt Animals as exempt from non-traditional livestock requirements. The only animals North Dakota bars outright are skunks and raccoons.",
+          "verifiedOn": "2026-10-02"
         },
         "WY": {
           "status": "legal",
@@ -13573,10 +13585,11 @@
         },
         "ND": {
           "status": "legal",
-          "sourceId": "nd-36-01",
-          "cite": "§ 36-01-08.4",
-          "quote": "A person may not keep a skunk or raccoon in captivity.",
-          "verifiedOn": "2026-10-01"
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(1)(b)",
+          "quote": "pigeons, rabbits, ratites, chinchilla, Guinea fowl, ranch foxes, ranch mink, peafowl, all pheasants, quail, chukar, hedgehog, degus, and other species as ordered by the board.",
+          "note": "The degu is named in category 1, the tier for species generally considered domestic or not inherently dangerous, and 48.1-09-01-02(1)(c) says category 1 species \"do not require a nontraditional livestock license, but owners must otherwise comply with the rules in this title.\" Only categories 2 and 3 need a license. Bringing one into North Dakota still takes a certificate of veterinary inspection and an importation permit number from the state veterinarian under 48.1-09-02-01, because the degu is not on the subsection 4 list of small pets exempt from that step.",
+          "verifiedOn": "2026-10-02"
         },
         "WY": {
           "status": "permit",
@@ -15004,9 +15017,13 @@
           "sourceId": "vt-restricted-list",
           "cite": "Restricted Wild Animal List, July 2025",
           "quote": "Testudines | Emydidae | Trachemys | scripta elegans | Red-eared slider",
-          "note": "Named on the Restricted list to the subspecies, along with the yellow-bellied and Cumberland sliders, so the whole Trachemys scripta complex is caught. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
+          "note": "Named on the Restricted list to the subspecies, along with the yellow-bellied and Cumberland sliders, so the whole Trachemys scripta complex is caught. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in. Act 47 of 2025 then put the same answer in statute: Sec. 14 says \"A person shall not import, possess, or sell in the State a pond slider turtle (Trachemys scripta),\" except a turtle legally acquired as a pet before July 1, 2025, and stock a pet dealer or commercial collection permittee held before that date. Sec. 14 lapses when the Commissioner adopts a slider rule under 10 V.S.A. § 4085.",
           "permitFor": "commercial-exhibition-research",
-          "verifiedOn": "2026-10-01"
+          "grandfathered": {
+            "before": "2025-07-01",
+            "detail": "Act 47 (2025) Sec. 14(a)(1)(A): a person may continue to possess a pond slider legally acquired as a pet before July 1, 2025. There is nothing to file; the Fish and Wildlife Department tells those owners they do not need to do anything different, only never to release the turtle."
+          },
+          "verifiedOn": "2026-10-02"
         },
         "NM": {
           "status": "permit",
@@ -15048,8 +15065,8 @@
           "sourceId": "co-w7",
           "cite": "§ 708; CPW herpetofauna list",
           "quote": "A person may possess, transport, or export, but not propagate, a red-eared slider taken from the wild in Colorado for the life of the animal.",
-          "note": "Colorado reversed itself on this species in 2026. The red-eared slider used to be named outright on the Chapter W-11 unregulated wildlife list; Chapter W-7 § 708(A) now declares it invasive herpetofauna detrimental to Colorado wildlife and habitat, allows unlimited collection from the wild, and leaves Emydidae off every appendix. CPW's summary of the position is \"No import, no sale\". What survives is narrow and points the wrong way for a buyer: § 708(C)(1) permits keeping a slider taken from the wild in Colorado, for that animal's life, with no propagation and no release. So the pet-trade route is closed while the wild-take route is wide open, which is the opposite of how these rules usually run.",
-          "verifiedOn": "2026-10-01"
+          "note": "Colorado reversed itself on this species in 2026. The red-eared slider used to be named outright on the Chapter W-11 unregulated wildlife list; Chapter W-7 § 708(A) now declares it invasive herpetofauna detrimental to Colorado wildlife and habitat, allows unlimited collection from the wild, and leaves Emydidae off every appendix. CPW's summary of the position is \"No import, no sale\". What survives is narrow and points the wrong way for a buyer: § 708(C)(1) permits keeping a slider taken from the wild in Colorado, for that animal's life, with no propagation and no release. So the pet-trade route is closed while the wild-take route is wide open, which is the opposite of how these rules usually run. W-7 does have a Legacy Report, due July 30, 2026, but it does not reach the slider: it covers Appendix B snakes held on May 1, 2026 (§ 703(C)), native species collected on or before that date (§ 704(B)(7)), and Gila monsters and Mexican beaded lizards (§ 707). No provision keeps a pet-store slider on the strength of a Legacy Report.",
+          "verifiedOn": "2026-10-02"
         },
         "IL": {
           "status": "conditional",
@@ -15211,8 +15228,8 @@
           "status": "unclear",
           "cite": "List of Conditionally Approved Animals, Family Testudinidae",
           "quote": "Geochelone (all species in genus)",
-          "note": "The list was written when the sulcata was Geochelone sulcata. It has since moved to Centrochelys, which appears nowhere on any Hawaii list, so whether the clearance followed the species through the rename is not something the text answers. Ask the Department of Agriculture.",
-          "verifiedOn": "2026-10-01"
+          "note": "The conditionally approved list the Department of Agriculture posts today is still the one dated November 28, 2006, and it clears \"Geochelone (all species in genus)\". When it was written the sulcata was Geochelone sulcata. It has since moved to Centrochelys, which appears on none of the four current lists (conditionally approved, restricted for research and exhibition, restricted for private and commercial use, prohibited), and the rules say nothing about a listed animal whose genus changes. The same list names Chelonoidis separately, so the drafters did track the genera of their day. Whether the clearance followed the species through the rename is not something the text answers. Ask the Department of Agriculture's Plant Quarantine Branch before importing one.",
+          "verifiedOn": "2026-10-02"
         },
         "RI": {
           "sourceId": "ri-250-40-05-3",
@@ -17903,10 +17920,11 @@
         },
         "KS": {
           "status": "legal",
-          "sourceId": "ks-32-1301",
-          "cite": "§ 32-1301(d)(3)",
-          "quote": "all non-native, venomous snakes.",
-          "verifiedOn": "2026-10-01"
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-3(a), (b), (d)",
+          "quote": "exotic wildlife species may be imported, possessed, sold, offered for sale or purchased, provided the exotic wildlife was legally captured, raised, exported, possessed, sold or purchased or any combination of these activities in its place of origin.",
+          "note": "The rosy boa comes from the desert Southwest and Baja California, not Kansas, so it is exotic wildlife under 115-20-3(d), which \"may be possessed without limit in time and number\" with no permit. It is not a dangerous regulated animal either, because K.S.A. 32-1301(d)(3) reaches only non-native venomous snakes. The one condition is in the quote: the animal has to have been obtained legally where it came from, so keep the receipt.",
+          "verifiedOn": "2026-10-02"
         },
         "KY": {
           "status": "legal",
@@ -20355,8 +20373,8 @@
           "sourceId": "ma-321-9-01",
           "cite": "321 CMR 9.01(10)(a)",
           "quote": "All species of turtles may be kept without a permit, up to a limit of 100 turtles and/or eggs, in any combination, of each species, except for the following species for which a permit is always required: 1. Species categorically non-exempt pursuant to 321 CMR 9.01(3). 2. Argentina or Chaco Tortoise (Geochelone chilensis). 3. Gopher Tortoises (Gopherus polyphemus) and all other species in the genus Gopherus. 4. Pancake Tortoise (Malacochersus tornieri). 5. Spotted Turtle (Clemmys guttata). 6. Red-eared Slider (Trachemys scripta, including all subspecies and forms).",
-          "note": "Falls under the general turtle allowance: no permit, capped at 100 of the species in any combination of animals and eggs, which is a dealer-scale limit rather than a keeper-scale one. The categorical bar is worth checking here and comes out clean on the current IUCN checklist, which carries no assessment for Chelonoidis carbonarius; the older 1996 assessment was published under Geochelone carbonaria and is not on the current list. That makes this a thinner answer than the other tortoises on this row, and a reassessment would move it into the permit tier without any change to Massachusetts law.",
-          "verifiedOn": "2026-10-01"
+          "note": "Falls under the general turtle allowance: no permit, capped at 100 of the species in any combination of animals and eggs, which is a dealer-scale limit rather than a keeper-scale one. The categorical bar in 9.01(3)(b), species listed in the IUCN Red Book(s), is the thing to check here, and it still comes out clean: the IUCN Red List, version 2026-1, assesses sixteen Chelonoidis species and none of them is Chelonoidis carbonarius (checked at iucnredlist.org on 2026-10-02). The older 1996 assessment was published under Geochelone carbonaria and is not on the current list. If the IUCN publishes a new assessment, 9.01(3) takes the species out of the allowance and into the permit tier with no change to Massachusetts law, so this answer is only as current as the Red List.",
+          "verifiedOn": "2026-10-02"
         },
         "NJ": {
           "status": "permit",
