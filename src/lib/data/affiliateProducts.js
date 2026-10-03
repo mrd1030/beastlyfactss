@@ -1994,7 +1994,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$9–$15",
     description: "Natural sand substrate for desert species that like to dig, bask, and show natural behaviors.",
-    covers: ["Sandy desert substrate", "Deep substrate (12 in+ sandy soil mix)", "12 in+ deep substrate (topsoil/sand mix)"],
+    covers: ["Sandy desert substrate", "Deep substrate (12 in+ sandy soil mix)", "12 in+ deep substrate (topsoil/sand mix)", "Reptile sand for the burrowing mix"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -2480,7 +2480,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$25–$37",
     description: "Coconut-fiber substrate that holds moisture well for tropical reptiles, invertebrates, and plant roots.",
-    covers: ["Coconut coir, or coir and sphagnum moss", "Coconut fiber substrate, at least 2 inches deep", "Coco fiber, peat, or a soil-based mix, enough for 5 to 6 inches and deeper if you can", "Coconut fiber, or a coconut fiber and sphagnum moss blend", "Coconut fiber, cypress mulch, or leaf litter", "Coconut fiber or naturalistic soil blend for the land portion", "Coconut fiber, peat moss or orchid bark substrate", "Coconut fiber, cypress mulch, or reptile-specific soil substrate", "Coco fiber or coco husk substrate, enough for 3 to 4 inches", "Moisture-retentive substrate", "Coconut coir, peat moss or plain paper towel for substrate", "Coconut fiber, commercial reptile soil, fertilizer-free topsoil, or cypress mulch, enough for 3 to 4 inches and deeper if the enclosure allows", "Coconut fiber, bioactive soil mix, or paper towel", "Coconut fiber or bioactive substrate, enough for 2 to 3 inches", "Coconut fiber, soil, bark or paper towel substrate", "Coconut fiber, cypress mulch, or a peat-based substrate", "Coconut fiber substrate, about 6 inches deep (8 to 9 bags)"], // the plain coconut-fiber half of hermit crab's 5:1 sand/coco mix - the already-linked Fluker's product is the premixed blend, browsable only
+    covers: ["Coconut coir, or coir and sphagnum moss", "Coconut fiber substrate, at least 2 inches deep", "Coco fiber, peat, or a soil-based mix, enough for 5 to 6 inches and deeper if you can", "Coconut fiber, or a coconut fiber and sphagnum moss blend", "Coconut fiber, cypress mulch, or leaf litter", "Coconut fiber or naturalistic soil blend for the land portion", "Coconut fiber, peat moss or orchid bark substrate", "Coconut fiber, cypress mulch, or reptile-specific soil substrate", "Coco fiber or coco husk substrate, enough for 3 to 4 inches", "Moisture-retentive substrate", "Coconut coir, peat moss or plain paper towel for substrate", "Coconut fiber, commercial reptile soil, fertilizer-free topsoil, or cypress mulch, enough for 3 to 4 inches and deeper if the enclosure allows", "Coconut fiber, bioactive soil mix, or paper towel", "Coconut fiber or bioactive substrate, enough for 2 to 3 inches", "Coconut fiber, soil, bark or paper towel substrate", "Coconut fiber, cypress mulch, or a peat-based substrate", "Coconut fiber substrate, about 6 inches deep (8 to 9 bags)", "Coconut fiber for the burrowing mix"], // the plain coconut-fiber half of hermit crab's 5:1 sand/coco mix - the already-linked Fluker's product is the premixed blend, browsable only
     altGroup: "hermit-crab-substrate",
     pets: ["reptiles-amphibians"],
   },
@@ -4256,7 +4256,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0CKZWLWT3?tag=beastlyfacts-20",
     description: "Natural slate for enclosure floors, feeding tiles and basking stacks. Holds heat and wears down nails.",
-    covers: ["Large smooth river rock or slate for the water section, never small gravel", "Paper towel or tile for the floor", "Stacked stone or slate for the basking stack", "Retes stack, shelves or tiles"],
+    covers: ["Large smooth river rock or slate for the water section, never small gravel", "Paper towel or tile for the floor", "Stacked stone or slate for the basking stack", "Retes stack, shelves or tiles", "Slate tiles, stacked low and stable"],
     pets: ["reptiles-amphibians"],
   },
   {
