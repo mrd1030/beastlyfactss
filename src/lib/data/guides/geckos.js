@@ -40,7 +40,7 @@ export const geckoGuides = [
         { label: "The tail is the gauge", value: "A fall and winter appetite drop is normal in adults, and the tail fat lets a healthy adult fast for weeks. A tail thinner than the neck is the warning sign.", source: "african-fat-tail-feeding-guide" },
         { label: "Handling, week one", value: "Two weeks after it comes home and once it is eating. Support the whole body and let it walk across your hands; a chirp or squeak means put it down. Never the tail, which drops and regrows smoother.", source: "african-fat-tail-handling-guide" },
         { label: "Stuck shed", value: "Retained shed on the toes and tail tip is the commonest fat-tail problem, from low humidity or no moist hide, and the hide prevents almost all of it.", source: "african-fat-tail-health-issues-guide" },
-        { label: "Budget", value: "Normals around $100 inside a $75 to $600 range, morphs to $600 to $1,000. $450 to $815 to set up, $550 to $1,030 with the first vet exam and fecal test. $240 to $540 a year after that.", source: "african-fat-tail-cost-guide" },
+        { label: "Budget", value: "Normals around $100 inside a $75 to $600 range, morphs to $600 to $1,000. $510 to $870 to set up, $610 to $1,085 with the first vet exam and fecal test. $240 to $540 a year after that.", source: "african-fat-tail-cost-guide" },
         { label: "Lifespan", value: "15 to 20 years cited; the best-documented captive maximum is just over 16.", source: "african-fat-tail-cost-guide" },
         { label: "Adult size", value: "7 to 9 inches (18 to 23 cm)." },
         { label: "Hygiene", value: "Wash hands with soap after any contact, keep the gecko out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
@@ -61,7 +61,7 @@ export const geckoGuides = [
       vetLine: "Eye problems are reported relatively often in this species, so anything outside a shed cycle is worth a visit.",
     },
     routes: [
-      { slug: "african-fat-tail-cost-guide", line: "$75 to $600 for a normal and past $1,000 for stacked morphs, $450 to $815 to set up, $240 to $540 a year, and what a documented 16-year maximum means for budgeting." },
+      { slug: "african-fat-tail-cost-guide", line: "$75 to $600 for a normal and past $1,000 for stacked morphs, $510 to $870 to set up, $240 to $540 a year, and what a documented 16-year maximum means for budgeting." },
       { slug: "african-fat-tail-tank-setup-guide", line: "The 36x18-inch floor, the heat mat gradient, the humidity that separates this species from a leopard gecko, and 4 inches of substrate to burrow in." },
       { slug: "african-fat-tail-feeding-guide", line: "Portion by body length, the schedule by age, the phosphorus-free calcium rule, and why the tail is a better gauge than a day count." },
       { slug: "african-fat-tail-handling-guide", line: "Two weeks before the first session, what a chirp means, and why the tail is never a handhold." },
