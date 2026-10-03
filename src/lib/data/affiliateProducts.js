@@ -397,7 +397,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$7–$11",
     description: "Styptic powder to quickly help stop minor bleeding from a too-short nail trim.",
-    covers: [], // pairs with the nail clippers above for the combined "+ styptic powder" cost-builder line
+    covers: ["Styptic powder"], // pairs with the nail clippers above for the combined "+ styptic powder" cost-builder line
     pets: ["dogs-cats", "small-mammals", "birds"], // same standard nail-trim companion across guinea pig/rabbit and bird nail care, not just dogs/cats
   },
   {
@@ -2139,7 +2139,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$15–$22",
     description: "Safe small-animal chew set that supports tooth wear and gives bored pets something to gnaw.",
-    covers: ["Chew toys (larger, tougher)"],
+    covers: ["Chew toys (larger, tougher)", "Chew material: bamboo sticks or untreated willow"],
     pets: ["small-mammals"],
   },
   {
@@ -2271,7 +2271,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$3–$9",
     description: "Heavy small-animal bowl that is harder to tip during meals.",
-    covers: ["Water bottle and food dishes", "Heavy food and water dishes, or a bottle"],
+    covers: ["Water bottle and food dishes", "Heavy food and water dishes, or a bottle", "Heavy food and water dishes"],
     pets: ["small-mammals"],
   },
   {
@@ -3754,7 +3754,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B00C9MR9YM?tag=beastlyfacts-20",
     description: "Larger clear tote with more depth for laying bins, dig boxes and nesting or brumation boxes for bigger animals.",
-    covers: ["A storage tub for a dig box"],
+    covers: ["A storage tub for a dig box", "A dig box"],
     pets: ["reptiles-amphibians", "small-mammals"],
   },
   {
@@ -3774,7 +3774,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0002QI5WM?tag=beastlyfacts-20",
     description: "Glass cage-mount bottle that chewers cannot damage the way they do plastic. Suits rabbits, ferrets, chinchillas, degus and rats.",
-    covers: ["Sipper water bottle"],
+    covers: ["Sipper water bottle", "Chew-proof glass water bottle, for a sore chin"],
     pets: ["small-mammals"],
   },
   {
@@ -4426,7 +4426,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B005FU4Z74?tag=beastlyfacts-20",
     description: "Wooden hay rack that clips to a wire cage and keeps hay off the floor so less is soiled and wasted.",
-    covers: [],
+    covers: ["Hay feeder or rack"],
     pets: ["small-mammals"],
   },
   {
@@ -4506,7 +4506,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B07GYZLYGL?tag=beastlyfacts-20",
     description: "Waterproof tarp under a pen mat or rug, so accidents do not soak through to the floor.",
-    covers: [],
+    covers: ["Waterproof tarp under the pen"],
     pets: ["small-mammals"],
   },
   {
@@ -4553,7 +4553,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "~$25",
     description: "Recycled paper pellet litter for a rabbit litter box, absorbent and safe if nibbled.",
-    covers: ["Paper pellet litter for rabbits"],
+    covers: ["Paper pellet litter for rabbits", "Paper-based or compressed wood-pellet litter"],
     pets: ["small-mammals"],
   },
   {
