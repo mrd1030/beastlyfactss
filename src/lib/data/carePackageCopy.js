@@ -112,8 +112,8 @@ export const CARE_PACKAGE_COPY = {
   axolotl: {
     hook: 'Cold water and a real cycle, not a bare bowl.',
     heroParagraph:
-      'A 45-page printable manual with the cold-water setup, the cooling plan for summer, a fishless cycling walkthrough, choosing a healthy axolotl, the law in every state, and the health section for what actually goes wrong.',
-    heroTicks: ['45 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
+      'A 46-page printable manual with the cold-water setup, the cooling plan for summer, a fishless cycling walkthrough, choosing a healthy axolotl, the law in every state, and the health section for what actually goes wrong.',
+    heroTicks: ['46 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
     roulette: [
       'A tank set up like a warm-water community aquarium',
       'No real cycling before the axolotl goes in',
@@ -141,7 +141,7 @@ export const CARE_PACKAGE_COPY = {
       { page: 13, alt: 'Diet and feeding by age' },
       { page: 25, alt: 'Heat stress and reading the gills' },
       { page: 31, alt: 'Emergency and quick targets card' },
-      { page: 34, alt: 'Symptom quick reference table' },
+      { page: 35, alt: 'Symptom quick reference table' },
     ],
     whoFor: [
       'New axolotl owners setting up a proper cold-water tank',
@@ -296,8 +296,8 @@ export const CARE_PACKAGE_COPY = {
   goldfish: {
     hook: "Stop guessing your goldfish's tank targets.",
     heroParagraph:
-      'A 48-page printable manual with the exact tank size, filtration, cycling and water targets goldfish actually need, feeding by age, quarantine, the Minnesota and New York rules on never releasing one, and health triage, not bowl-era advice recycled across the internet.',
-    heroTicks: ['48 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
+      'A 49-page printable manual with the exact tank size, filtration, cycling and water targets goldfish actually need, feeding by age, quarantine, the Minnesota and New York rules on never releasing one, and health triage, not bowl-era advice recycled across the internet.',
+    heroTicks: ['49 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
     roulette: [
       '"A bowl is fine to start"',
       'No real cycling before the fish goes in',
@@ -325,7 +325,7 @@ export const CARE_PACKAGE_COPY = {
       { page: 14, alt: 'Diet by age' },
       { page: 28, alt: 'Ammonia poisoning and ich' },
       { page: 34, alt: 'Emergency and quick targets card' },
-      { page: 37, alt: 'Symptom quick reference table' },
+      { page: 38, alt: 'Symptom quick reference table' },
     ],
     whoFor: [
       'New goldfish owners setting up a proper tank for the first time',
@@ -576,8 +576,8 @@ export const CARE_PACKAGE_COPY = {
   'betta-fish': {
     hook: 'The tank is cycled before the fish goes in. Everything else is detail.',
     heroParagraph:
-      'A 53-page printable manual with tank, heater and lid, a fishless cycling walkthrough, the water numbers that actually matter, feeding without overfeeding, choosing a healthy betta and quarantine, eight health pages with dosing limits, and a power outage plan.',
-    heroTicks: ['53 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
+      'A 54-page printable manual with tank, heater and lid, a fishless cycling walkthrough, the water numbers that actually matter, feeding without overfeeding, choosing a healthy betta and quarantine, eight health pages with dosing limits, and a power outage plan.',
+    heroTicks: ['54 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
     roulette: [
       'A bowl on a desk, room temperature, no filter',
       '"Add the fish and the tank will cycle itself"',
@@ -605,7 +605,7 @@ export const CARE_PACKAGE_COPY = {
       { page: 15, alt: 'Diet and feeding schedule' },
       { page: 31, alt: 'Ich and velvet' },
       { page: 37, alt: 'Emergency and quick targets card' },
-      { page: 40, alt: 'Symptom quick reference table' },
+      { page: 41, alt: 'Symptom quick reference table' },
     ],
     whoFor: [
       'New betta owners who have not bought the tank yet, which is the right time',

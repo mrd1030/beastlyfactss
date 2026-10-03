@@ -679,13 +679,13 @@ const CARE_PACKAGE_STORE = {
   },
   goldfish: {
     name: 'Goldfish Care Package',
-    edition: '3.0',
+    edition: '3.1',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENBu9qtY3Ob6vaU6oDSTyD',
   },
   axolotl: {
     name: 'Axolotl Care Package',
-    edition: '3.0',
+    edition: '3.1',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENBw9qtY3Ob6vaRVFVm391',
   },
@@ -727,7 +727,7 @@ const CARE_PACKAGE_STORE = {
   },
   'betta-fish': {
     name: 'Betta Fish Care Package',
-    edition: '3.0',
+    edition: '3.1',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENCG9qtY3Ob6vaxKLgeXwO',
   },

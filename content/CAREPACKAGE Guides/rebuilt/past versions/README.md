@@ -116,6 +116,9 @@ own field:
 | `Crested_Gecko_Care_Package_v3.0.pdf` | 3.1 | 47 pages, with the UVB tube not sized to about two-thirds of the 18 in top, and a one-page budget with unpriced items and unrounded costs |
 | `Ball_Python_Care_Package_v3.0.pdf` | 3.1 | 48 pages, with a one-page budget that left items unpriced and costs unrounded |
 | `Russian_Tortoise_Care_Package_v3.0.pdf` | 3.1 | 49 pages, with a one-page budget that left items unpriced and costs unrounded |
+| `Axolotl_Care_Package_v3.0.pdf` | 3.1 | 45 pages, with a budget that left items unpriced and costs unrounded |
+| `Betta_Fish_Care_Package_v3.0.pdf` | 3.1 | 53 pages, with a one-page budget that left items unpriced and costs unrounded |
+| `Goldfish_Care_Package_v3.0.pdf` | 3.1 | 48 pages, with a one-page budget that left items unpriced and costs unrounded |
 
 Hamster and Bearded Dragon reached a genuine third edition on their own count,
 so their numbers stood. Hamster's version history had picked up a line claiming

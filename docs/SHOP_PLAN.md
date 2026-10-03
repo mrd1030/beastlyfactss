@@ -62,13 +62,13 @@ had moved past the PDF):
 
 | Package | File | Pages |
 | --- | --- | --- |
-| axolotl | Axolotl_Care_Package_v3.0.pdf | 45 |
+| axolotl | Axolotl_Care_Package_v3.1.pdf | 46 |
 | ball-python | Ball_Python_Care_Package_v3.1.pdf | 49 |
 | bearded-dragon | Bearded_Dragon_Care_Package_v4.1.pdf | 50 |
-| betta-fish | Betta_Fish_Care_Package_v3.0.pdf | 53 |
+| betta-fish | Betta_Fish_Care_Package_v3.1.pdf | 54 |
 | budgie | Budgie_Care_Package_v2.1.pdf | 40 |
 | crested-gecko | Crested_Gecko_Care_Package_v3.1.pdf | 48 |
-| goldfish | Goldfish_Care_Package_v3.0.pdf | 48 |
+| goldfish | Goldfish_Care_Package_v3.1.pdf | 49 |
 | guinea-pig | Guinea_Pig_Care_Package_v2.1.pdf | 41 |
 | hamster | Hamster_Care_Package_v2.3.pdf | 37 |
 | leopard-gecko | Leopard_Gecko_Care_Package_v3.1.pdf | 52 |
