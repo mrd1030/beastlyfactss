@@ -602,7 +602,7 @@ export const fishGuides = [
       "Driftwood, hardscape, and smooth decor, nothing sharp or fin-trapping",
       "Gravel vacuum",
       "Two buckets used only for the tank",
-      "Soft rubber net and a transfer container",
+      "Soft fine-mesh or rubber net and a transfer container",
       "A separate cycled tank for quarantine, a bare 10 to 20 gallons",
       "Sinking goldfish-specific pellets",
       "Goldfish gel food for variety",
