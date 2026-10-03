@@ -1889,7 +1889,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$8–$14",
     description: "Feeding tongs that keep fingers farther from bites while making insects easier to offer accurately.",
-    covers: ["Feeding tongs", "Long forceps with soft padding", "Long feeding tongs"],
+    covers: ["Feeding tongs", "Long forceps with soft padding", "Long feeding tongs", "Blunt, round-tipped forceps for offering feeders"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -4270,7 +4270,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B099NRFK6T?tag=beastlyfacts-20",
     description: "LED plant light for planted and bioactive terrariums, and a simple way to set a day and night cycle for species without UVB needs.",
-    covers: ["Optional daylight LED for the 12-hour photoperiod"],
+    covers: ["Optional daylight LED for the 12-hour photoperiod", "6500 K daylight lamp alongside the UVB tube"],
     pets: ["reptiles-amphibians"],
   },
   {

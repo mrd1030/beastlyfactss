@@ -37,6 +37,7 @@ SECTIONS = [
         ("heat", "Belly Heat, the Thermostat &amp; the Probe"),
         ("humidity", "Humidity &amp; the Three Hides"),
         ("lighting", "Light Cycle &amp; UVB (Ultraviolet B) Light"),
+        ("lighting2", "UVB Upkeep, Going Without &amp; Vitamin D3"),
         ("substrate", "Substrate for a Burrower, Furnishings &amp; Cleaning"),
     ]),
     ("Section 03 &middot; Feeding", [
