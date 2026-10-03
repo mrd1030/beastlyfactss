@@ -1,12 +1,12 @@
-> **Stale since 1.1. Do not run build.py.** These fragments still hold 1.0. The 1.1 and 1.2 edits were made directly in `../cockatoo.html`, which is now the source of truth. Running build.py overwrites it with 1.0 text. Edit `../cockatoo.html` and render with `node ../_render.mjs cockatoo "<Name>" <version>`, or port the HTML back into fragments first.
+> **Stale since 1.1. Do not run build.py.** These fragments still hold 1.0. The 1.1 to 1.4 edits were made directly in `../cockatoo.html` (1.4 also moved pages into the flagship section order, so the fragments differ in page order as well as text), which is now the source of truth. Running build.py overwrites it with 1.0 text. Edit `../cockatoo.html` and render with `node ../_render.mjs cockatoo "<Name>" <version>`, or port the HTML back into fragments first.
 
 # Cockatoo care package source
 
 `../cockatoo.html` is generated. Edit the fragments here, then:
 
     python3 build.py                                   # assemble the source
-    node ../_render.mjs cockatoo "Cockatoo" 1.0 --measure  # overflow check
-    node ../_render.mjs cockatoo "Cockatoo" 1.0            # render the PDF
+    node ../_render.mjs cockatoo "Cockatoo" 1.4 --measure  # overflow check
+    node ../_render.mjs cockatoo "Cockatoo" 1.4            # render the PDF
 
 `build.py` assigns page numbers in document order from the `<!--PAGE key-->` markers,
 resolves `{{P:key}}` cross-references and `<!--FOOT key-->` footers, generates the contents

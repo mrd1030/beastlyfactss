@@ -8,7 +8,8 @@ page only means editing the content and SECTIONS; every number follows.
 
 The build fails on a duplicate page key, a page missing from the contents, a
 contents entry with no page, an unknown {{P:key}}, a leftover placeholder, an
-em or en dash (character or entity), or a literal "page N" cross-reference.
+em or en dash (character or entity), a literal "page N" cross-reference,
+an external link (http or www), or a British word on the banned list.
 """
 import base64
 import os
@@ -20,12 +21,14 @@ SRC = os.path.normpath(os.path.join(HERE, "..", "whites-tree-frog.html"))
 # The owner's cover photo. whites-tree-frog-cover-2.jpg is the alternate frame.
 COVER = os.path.normpath(os.path.join(HERE, "..", "..", "images", "whites-tree-frog-cover-1.jpg"))
 
+EDITION = "1.1"
+
 # TOC: (section label, [(key, title), ...])
 SECTIONS = [
     ("Getting Started", [
         ("howto", "How to Use This Package"),
     ]),
-    ("Section 01 &middot; Quick Profile", [
+    ("Section 01 &middot; Profile", [
         ("profile", "Quick Profile &amp; Cost Overview"),
     ]),
     ("Section 02 &middot; Housing &amp; Environment", [
@@ -33,7 +36,7 @@ SECTIONS = [
         ("temperature", "The Temperature Gradient &amp; Heating"),
         ("humidity", "The Humidity Cycle That Dips"),
         ("water", "The Water That Is Safe to Mist With"),
-        ("uvb", "Ultraviolet (UVB) Light &amp; the Day Length"),
+        ("uvb", "Ultraviolet B (UVB) Light &amp; the Day Length"),
         ("substrate", "Substrate, Plants &amp; Furnishings"),
         ("cleaning", "Cleaning Without Soap, and Household Chemicals"),
     ]),
@@ -42,14 +45,16 @@ SECTIONS = [
         ("feeders", "Feeder Insects, Treats &amp; Supplements"),
         ("bodycondition", "Body Condition: Reading the Tympanum Ridges"),
     ]),
-    ("Section 04 &middot; Handling, Company &amp; Behavior", [
+    ("Section 04 &middot; Handling &amp; Behavior", [
         ("handling", "Handling With Plain Water &amp; No Soap"),
-        ("group", "Group Housing by Size, Sexing &amp; Breeding"),
-        ("arrival", "Choosing a Frog, Quarantine &amp; the Law"),
-        ("enrichment", "Common Mistakes &amp; Enrichment"),
         ("behavior", "Shedding, Color, Calling &amp; Normal Behavior"),
+        ("enrichment", "Common Mistakes &amp; Enrichment"),
     ]),
-    ("Section 05 &middot; Health &amp; Common Issues", [
+    ("Section 05 &middot; Arrival &amp; Life Stages", [
+        ("arrival", "Choosing a Frog, Quarantine &amp; the Law"),
+        ("group", "Group Housing by Size, Sexing &amp; Breeding"),
+    ]),
+    ("Section 06 &middot; Health &amp; Common Issues", [
         ("redflags", "Health Red Flags &amp; Finding a Vet"),
         ("obesity", "Obesity, Fatty Eyes &amp; Fatty Liver"),
         ("chytrid", "Chytridiomycosis"),
@@ -58,11 +63,11 @@ SECTIONS = [
         ("skin", "Skin Injuries, Chemical Exposure &amp; Dehydration"),
         ("minor", "Impaction, Parasites &amp; Shedding Problems"),
     ]),
-    ("Section 06 &middot; Quick Reference", [
+    ("Section 07 &middot; Quick Reference", [
         ("checklist", "Setup Checklist &amp; Targets"),
         ("emergency", "Emergency &amp; Quick Targets Card"),
     ]),
-    ("Section 07 &middot; Owner Tools", [
+    ("Section 08 &middot; Owner Tools", [
         ("budget", "Budget &amp; Shopping List"),
         ("first30", "First 30 Days"),
         ("symptoms", "Symptom Quick Reference"),
@@ -73,16 +78,18 @@ SECTIONS = [
         ("equiplog", "Equipment &amp; Vet Log"),
     ]),
     ("Reference", [
-        ("glossary", "Glossary"),
+        ("glossary", "Glossary, A to H"),
+        ("glossary2", "Glossary, I to Z"),
         ("sources", "Sources"),
-        ("about", "Where the Sources Disagree, Version History &amp; About"),
+        ("disagree", "Where the Sources Disagree"),
+        ("about", "Version History &amp; About"),
     ]),
 ]
 
 FOOT = ('<div class="pagefoot"><span class="brand">Beastly Facts</span>'
-        '<span>White\'s Tree Frog Care Package</span><span>%d</span></div>')
+        '<span>White\'s Tree Frog Care Package &middot; Edition ' + EDITION + '</span><span>%d</span></div>')
 
-PAGE_FILES = ("pages_1.html", "pages_2.html", "pages_3.html", "pages_4.html", "pages_5.html")
+PAGE_FILES = tuple(sorted(n for n in os.listdir(HERE) if n.startswith("pages_") and n.endswith(".html")))
 
 
 def main():
@@ -96,6 +103,15 @@ def main():
     if literal:
         sys.exit("literal page reference(s), use {{P:key}}: %s" % sorted(set(literal)))
 
+    # No external links, and US usage only. Checked on the body, before the
+    # cover photo is embedded, so base64 text cannot trip the word list.
+    if re.search(r"https?:|www\.|\.com\b", re.sub(r'xmlns="[^"]*"', "", body)):
+        sys.exit("external link present in the body")
+    text = re.sub(r"<[^>]+>", " ", body)
+    for word in (r'\bhob\b', r'\btorch', r'\bmains\b', r'power cut', r'fortnight', r'skirting', r'\bcolour', r'behaviour', r'\bgrey\b', r'\bmum\b', r'\btyre', r'\bcentre\b', r'\borganis(?:e|ed|es|ing|ation)\b', r'\bprogramme', r'\bfavour', r'\bmetre', r'\blitre', r'\bfibre', r'\bodour', r'\bsynthesis[ei]', r'\bmould', r'\bcatalogue'):
+        if re.search(word, text, re.I):
+            sys.exit("British usage %r present" % word)
+
     # Assign page numbers in document order from the PAGE markers.
     keys = re.findall(r"<!--PAGE\s+([a-z0-9_]+)\s*-->", body)
     if len(keys) != len(set(keys)):
@@ -106,6 +122,8 @@ def main():
 
     # Every TOC entry must exist as a page, and vice versa (cover/contents aside).
     toc_keys = [k for _, entries in SECTIONS for k, _ in entries]
+    if [k for k in keys if k in toc_keys] != toc_keys:
+        sys.exit("contents order differs from page order")
     missing = [k for k in toc_keys if k not in nums]
     if missing:
         sys.exit("TOC references missing pages: %s" % missing)
