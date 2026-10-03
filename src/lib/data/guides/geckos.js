@@ -126,7 +126,7 @@ export const geckoGuides = [
         { label: "Feeding schedule", value: "Hatchlings and juveniles get commercial crested gecko diet (CGD) daily, with live insects 1 to 2 times a week. Adults move to CGD every 2 to 3 days, with insects about once a week.", source: "crested-gecko-feeding-guide" },
         { label: "Not eating", value: "A healthy, good-weight adult can typically go 2 to 3 weeks without eating, but a vet consult is worth considering after the second week, especially with visible weight loss.", source: "crested-gecko-feeding-guide" },
         { label: "Handling", value: "Wait about two weeks, and until the gecko is a sub-adult of 10 to 15 grams (roughly 4 to 5 inches, about 6 months old). Then 5 minute sessions building to 15 minutes, under 20 minutes total a day. Never grab the tail, it does not grow back.", source: "crested-gecko-handling-guide" },
-        { label: "Budget", value: "$50 to $200 for a normal morph, upward of $1,000 for rare and specialty morphs. $360 to $595 of equipment, $425 to $805 with the first vet exam. $40 to $60 a month after that.", source: "crested-gecko-cost-guide" },
+        { label: "Budget", value: "$50 to $200 for a normal morph, upward of $1,000 for rare and specialty morphs. $355 to $590 of equipment, $420 to $800 with the first vet exam. $40 to $60 a month after that.", source: "crested-gecko-cost-guide" },
         { label: "Adult size", value: "7 to 9 inches including tail." },
         { label: "Lifespan", value: "15 to 20 years in captivity, with the earliest known captive individuals living into their 30s.", source: "crested-gecko-cost-guide" },
         { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the gecko out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
@@ -145,7 +145,7 @@ export const geckoGuides = [
       vetLine: "An exotic vet, found before you need one. Bring a new gecko in within the first 30 days of ownership, then an annual wellness exam with a fecal test as a baseline, not just when something looks wrong.",
     },
     routes: [
-      { slug: "crested-gecko-cost-guide", line: "$50 to $200 for the gecko, $360 to $595 of equipment, and $40 to $60 a month after that." },
+      { slug: "crested-gecko-cost-guide", line: "$50 to $200 for the gecko, $355 to $590 of equipment, and $40 to $60 a month after that." },
       { slug: "crested-gecko-tank-setup-guide", line: "The 18x18x24 vertical minimum, the 85°F hard ceiling, and why this species needs you to avoid heat rather than provide it." },
       { slug: "crested-gecko-humidity-guide", line: "The 60 to 80% daily swing, a misting schedule that actually works, and the signs humidity is running too low or too high." },
       { slug: "crested-gecko-feeding-guide", line: "Why powdered diet, not live insects, should be the staple, portion size by age, and the honest range of reasons a gecko stops eating." },
