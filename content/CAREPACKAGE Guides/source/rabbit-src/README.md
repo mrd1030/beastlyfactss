@@ -44,8 +44,8 @@ Things worth knowing before editing:
 - **Every figure comes from the site.** The deep dives in `content/guides/rabbit-*.mdx` and the
   shared small-mammal guides (temperature and heat stress, grooming, nails and molting, vet
   visits and travel, enterotoxemia) own the numbers. Prices come only from the cost guide,
-  whose rows and totals add up: equipment $93 to $185, food and litter $55 to $130 a month, a
-  year after the first $840 to $1,835, the first year $1,103 to $2,625 without the adoption
+  whose rows and totals add up: equipment $125 to $197, food and litter $62 to $135 a month, a
+  year after the first $924 to $1,895, the first year $1,219 to $2,697 without the adoption
   fee. A hay feeder, cord tubing, flooring, a hide, a dig box, chew material and a scale are not priced there, so they are
   listed unpriced.
 - **The law page mirrors `src/lib/data/legalStatus.json`** (rabbit entries, read 1 October
