@@ -452,8 +452,7 @@ export const CARE_PACKAGES = [
           "Version History & About",
         ],
       },
-    ],
-    legalAsOf: 'October 2026',
+    ],
     history: [
       { edition: "3.0", date: "Oct 2026", text: "Rebuilt on the current outline, 48 pages. Safety: pH 6.5 to 7.5; fishless cycle dosed to 3 ppm; fish-in change of at least a third at 0.1 ppm; bag floated 20 to 30 minutes; adults fed once a day, or the same ration split in two, with no weekly fasting day; ich treated with salt or malachite green until the spots have been gone for days, heat no higher than 75°F; anchor worm dose 0.066 mg/L; no home antibiotic for fin rot; floor bare, fine sand or gravel at least 1/2 in across; temperature moved no faster than 1°F an hour; outage surface agitation every 10 to 15 minutes in a small tank, 20 to 30 in a larger one; goldfish and koi can be crossed; never-feed list is bread and refined starches, raw meat, cheese and onions. Legal: new page on never releasing a goldfish, with the Minnesota and New York rules. Costs: equipment $105 to $270, monthly $10 to $30. Other changes are wording only." },
       { edition: "2.1", date: "Sep 2026", text: "Safety: turnover raised to 10 times an hour; KH retargeted to 100 ppm and up; GH 60 to 180 ppm; quarantine raised to a 30-day minimum; fish-in action line 0.1 to 0.25 ppm. Replaced by 3.0." },
