@@ -31,6 +31,15 @@ Not done, and each one is a real blocker for real sales:
   in the Sandbox.
 - PDFs uploaded to the `care-packages` bucket. Only the Hamster is there.
 
+## Next new package: Tetras, grouped (added 2026-10-03)
+
+One Tetra Care Package rather than one per species, because neon and cardinal tetras share almost all of their care (schooling in groups of six or more, soft acidic water, a cycled tank, gentle flow, small foods, the same diseases and quarantine) and differ mainly in numbers, cardinals running warmer than neons. Title it for search, for example "Tetra Care Package: Neon, Cardinal and Other Small Tetras".
+
+- Start with the two tetras the site already covers, neon-tetra and cardinal-tetra (encyclopedia entries and guides exist). A "species at a glance" page plus a per-species column on the setup and feeding pages carries the differences.
+- Pipeline order holds: any further tetra (ember, rummy-nose, black skirt, glowlight) gets its encyclopedia entry and guides first, then joins the package as a new edition.
+- Same process as the rebuilds: site first, the bearded dragon outline, the fish line icon in the ring, a Fable review on the owner's OK, then the store page, Stripe product and bucket upload.
+- Queued after the current rebuilds (rabbit, hamster, guinea pig, then budgie, lovebird, tarantula, White's tree frog).
+
 ## The edition problem, decide this first
 
 The nine Gumroad listings sell the old editions: v1.0 or v2.0, 20 to 22 pages.
