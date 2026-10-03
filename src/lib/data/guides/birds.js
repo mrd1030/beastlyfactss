@@ -516,9 +516,9 @@ export const birdGuides = [
       "Shreddable and chew toys",
       "A plain breathable cage cover, not an enclosed \"happy hut\"",
       "Food and water dishes",
-      "A shallow dish for the daily bath",
-      "Avian UVB lamp, unless the bird gets regular safe outdoor time",
-      "Gram scale for weighing the bird",
+      "Shallow bird bath",
+      "Full-spectrum avian UV lighting and fixture",
+      "Gram scale",
     ],
     faqs: [
       { q: "How much does a lovebird cost to buy?", a: "$50 to $150 for a common peach-faced or Fischer's. Rare mutations (lutino, blue, pied, and combinations) go for $200 to $400 or more, and exceptional individuals reach $1,000. Adoption typically runs $20 to $100. A hand-raised bird costs more than a parent-raised one and is generally the better choice for a tame, interactive pet." },
