@@ -679,7 +679,7 @@ const CARE_PACKAGE_STORE = {
   },
   goldfish: {
     name: 'Goldfish Care Package',
-    edition: '2.1',
+    edition: '3.0',
     priceIdSandbox: '',
     priceIdLive: 'price_1UENBu9qtY3Ob6vaU6oDSTyD',
   },

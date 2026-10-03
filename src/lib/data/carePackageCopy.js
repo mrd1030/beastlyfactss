@@ -296,8 +296,8 @@ export const CARE_PACKAGE_COPY = {
   goldfish: {
     hook: "Stop guessing your goldfish's tank targets.",
     heroParagraph:
-      'A 40-page printable manual with the exact tank size, filtration, cycling and water targets goldfish actually need, feeding by age, and health triage, not bowl-era advice recycled across the internet.',
-    heroTicks: ['40 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
+      'A 48-page printable manual with the exact tank size, filtration, cycling and water targets goldfish actually need, feeding by age, quarantine, the Minnesota and New York rules on never releasing one, and health triage, not bowl-era advice recycled across the internet.',
+    heroTicks: ['48 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
     roulette: [
       '"A bowl is fine to start"',
       'No real cycling before the fish goes in',
@@ -311,21 +311,21 @@ export const CARE_PACKAGE_COPY = {
       'Every number sourced, versioned and dated, printed and kept by the tank',
     ],
     inside: [
-      { emoji: '🪣', title: 'Tank and filtration', line: 'Tank size and the bowl myth, filtration, filter media and maintenance, substrate, plants and decor.' },
-      { emoji: '💧', title: 'Cycling and water', line: 'Cycling the tank, water targets and testing, water changes and early warnings.' },
-      { emoji: '⚠️', title: 'Health and red flags', line: 'Ammonia poisoning and ich, fin rot, fungus and dropsy, swim bladder disorder and minor conditions.' },
-      { emoji: '🥗', title: 'Feeding by age', line: 'Pellets and presentation, staple foods and vegetables, protein foods, treats and the never-feed list.' },
-      { emoji: '🐟', title: 'Varieties and tankmates', line: 'Varieties, tankmates and sexing, growth and lifespan, handling, quarantine and settling in.' },
+      { emoji: '🪣', title: 'Tank and filtration', line: 'Tank size, type and the bowl myth, water temperature, heater and lid, filter sizing, filter media and the air pump, substrate, plants and decor.' },
+      { emoji: '💧', title: 'Cycling and water', line: 'Cycling with or without a fish, water targets and testing, water changes, cleaning and hygiene.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'Red flags and finding a vet, ammonia poisoning and ich, fin rot, fungus, ulcers and dropsy, flukes, anchor worm and velvet, swim bladder disorder, and reading waste.' },
+      { emoji: '🥗', title: 'Feeding by age', line: 'Diet by age, pellets, gel and flake, vegetables, protein foods and treats, the never-feed list, and what to do when a goldfish stops eating.' },
+      { emoji: '🐟', title: 'Arrival, spawning and the law', line: 'Choosing a healthy goldfish, quarantine and the hospital tank, sexing, spawning and fry, heat waves and pond winters, and the Minnesota and New York rules on never releasing a goldfish.' },
       { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, pet-sitter sheet, and the logs.' },
     ],
     previewHeadline: 'Print-first pages, clearly marked.',
     previews: [
       { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
-      { page: 6, alt: 'Tank size and the bowl myth' },
-      { page: 9, alt: 'Cycling the tank' },
-      { page: 23, alt: 'Ammonia poisoning and ich' },
-      { page: 28, alt: 'Emergency and quick targets card' },
-      { page: 31, alt: 'Symptom quick reference table' },
+      { page: 6, alt: 'Tank size, type and the bowl myth' },
+      { page: 14, alt: 'Diet by age' },
+      { page: 28, alt: 'Ammonia poisoning and ich' },
+      { page: 34, alt: 'Emergency and quick targets card' },
+      { page: 37, alt: 'Symptom quick reference table' },
     ],
     whoFor: [
       'New goldfish owners setting up a proper tank for the first time',
