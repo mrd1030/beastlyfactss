@@ -288,7 +288,7 @@ export const birdGuides = [
       { slug: "cockatiel-enrichment-guide", line: "What two real studies found, why foraging comes first, and a priority order for everything else." },
     ],
     buyList: [
-      "20x20x30 inch cage or larger, wider rather than taller (24x24x30 for easier movement)",
+      "24x24x30 in cage (larger preferred)",
       "Perches of varied diameter and texture",
       "Food and water dishes",
       "Cuttlebone or mineral block",

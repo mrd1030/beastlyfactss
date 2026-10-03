@@ -119,8 +119,8 @@ def main():
     if re.search(r"https?:|www\.|\.com\b", re.sub(r'xmlns="[^"]*"', "", body)):
         sys.exit("external link present in the body")
     text = re.sub(r"<[^>]+>", " ", body)
-    # "grey" stays only inside the species name African grey (and grey parrot).
-    text = re.sub(r"African greys?|greys? parrots?", " ", text)
+    # "grey" stays only inside the species name African grey (and grey parrot); a journal title keeps its spelling.
+    text = re.sub(r"African greys?|greys? parrots?|Applied Animal Behaviour Science", " ", text)
     for word in (r"\bhob\b", r"\btorch", r"\bmains\b", r"power cut", r"fortnight", r"skirting",
                  r"\bcolour", r"behaviour", r"\bgrey\b", r"\bmum\b", r"\btyre", r"\bcentre\b",
                  r"\borganis", r"\bprogramme", r"\bfavour", r"\bmetre", r"\blitre", r"\bfibre",
