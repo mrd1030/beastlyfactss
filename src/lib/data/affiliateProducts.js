@@ -76,7 +76,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$8–$14",
     description: "Heat bulb that creates a focused basking spot so reptiles can warm up and digest properly.",
-    covers: ["Basking bulb", "Basking bulb replacement"],
+    covers: ["Basking bulb", "Basking bulb replacement", "75W basking bulb"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -88,7 +88,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$12–$20",
     description: "Ceramic-topped lamp fixture that safely holds a basking or heat bulb over the enclosure.",
-    covers: ["Basking bulb + fixture", "Basking heat lamp"],
+    covers: ["Basking bulb + fixture", "Basking heat lamp", "Ceramic dome fixture for the basking bulb"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -184,7 +184,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$12–$28",
     description: "Hideout that gives pets a secure place to shelter, reduce stress, and rest.",
-    covers: ["Cork bark hide", "Cork bark hides", "Cork bark hide(s)", "Cork bark for hiding structures", "Warm, cool, and humid hides", "Multiple hides and enrichment items", "Cork bark tubes and branches", "Cork bark and dense planting", "Flat cork bark and rock hides", "Cork bark and PVC pipe hides", "Cork bark and rock structures", "A basic hide", "Two cork bark hides, one per temperature zone"],
+    covers: ["Cork bark hide", "Cork bark hides", "Cork bark hide(s)", "Cork bark for hiding structures", "Warm, cool, and humid hides", "Multiple hides and enrichment items", "Cork bark tubes and branches", "Cork bark and dense planting", "Flat cork bark and rock hides", "Cork bark and PVC pipe hides", "Cork bark and rock structures", "A basic hide", "Two cork bark hides, one per temperature zone", "Cork bark hide for the cool end, and a basking platform"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1149,7 +1149,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$15–$35",
     description: "Live feeder insects for reptiles that need a protein-rich staple or a starter breeding colony.",
-    covers: [], // hedgehogs and sugar gliders eat feeder roaches as a real dietary staple too, not just reptiles/amphibians
+    covers: ["Dubia roaches or crickets"], // hedgehogs and sugar gliders eat feeder roaches as a real dietary staple too, not just reptiles/amphibians
     pets: ["reptiles-amphibians", "small-mammals"],
   },
 
@@ -3322,7 +3322,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$12.99",
     description: "Reptile and amphibian dusting multivitamin that includes thiamine (B1) alongside other nutrients. Doesn't fully offset a thiaminase-heavy fish diet on its own, varying or limiting thiaminase-rich fish still matters, but it's the standard supplement keepers reach for.",
-    covers: ["Thiamine (B1) and calcium supplements", "A multivitamin for the weekly rotation"],
+    covers: ["Thiamine (B1) and calcium supplements", "A multivitamin for the weekly rotation", "Reptile multivitamin"],
     pets: ["reptiles-amphibians"],
   },
   {

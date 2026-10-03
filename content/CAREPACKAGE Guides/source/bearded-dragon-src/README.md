@@ -3,10 +3,10 @@
 `../bearded-dragon.html` is generated. Edit the fragments here, never that file, then:
 
     python build.py                                                      # assemble the source
-    node ../_render.mjs bearded-dragon "Bearded Dragon" 4.0 --measure    # overflow check
-    node ../_render.mjs bearded-dragon "Bearded Dragon" 4.0              # render the PDF
+    node ../_render.mjs bearded-dragon "Bearded Dragon" 4.1 --measure    # overflow check
+    node ../_render.mjs bearded-dragon "Bearded Dragon" 4.1              # render the PDF
 
-The PDF is `rebuilt/Bearded_Dragon_Care_Package_v4.0.pdf`. On Windows, set `CHROME_BIN` to
+The PDF is `rebuilt/Bearded_Dragon_Care_Package_v4.1.pdf`. On Windows, set `CHROME_BIN` to
 Chrome first (`CHROME_BIN="C:/Program Files/Google/Chrome/Application/chrome.exe"`). Every
 page must report at least 15 px free.
 
@@ -26,7 +26,7 @@ Things worth knowing before editing:
   accent `#B5551F` / `#8C4118` / `#F4E3D3`, the 3.2 cover) on the newer outline the recent
   packages use, with a two-column contents page.
 - **The edition is in two places.** `EDITION` in `build.py` drives every page footer
-  ("Bearded Dragon Care Package · Edition 4.0"). The cover chip, the colophon and the version
+  ("Bearded Dragon Care Package · Edition 4.1"). The cover chip, the colophon and the version
   history in `pages_07.html` carry it as text. Change all of them together.
 - **Every cross-reference is a token.** The build refuses a hand-written "page 12". Keep
   pointers sparse: tool pages (how-to, checklist, emergency card, symptom table, first 30 days,
