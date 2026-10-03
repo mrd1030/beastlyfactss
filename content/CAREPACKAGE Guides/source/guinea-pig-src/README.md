@@ -50,8 +50,11 @@ Things worth knowing before editing:
   Carolina, Ohio, Oregon, Washington). If that file changes, recount and re-check every row.
 - **Every figure comes from the site.** The deep dives in `content/guides/guinea-pig-*.mdx`
   and the shared small mammal guides (temperature and heat stress, vet visits and travel,
-  grooming and nails, enterotoxemia) own the numbers; prices come only from the cost guide, and
-  the budget page leaves unpriced lines unpriced. Where the site disagrees with itself, the
+  grooming and nails, enterotoxemia) own the numbers; prices come only from the cost guide, whose
+  rows and totals add up: setup $300 to $470 with every item priced and rounded to the nearest
+  $5, a pair $75 to $185 a month (food $60 to $135, food for one $30 to $70). Neuter or spay is
+  the one line left unpriced, since clinics set it. The budget runs over two pages (`budget` and
+  `budget2`). Where the site disagrees with itself, the
   topic's own guide wins. The 3.0 rebuild first fixed the site (heat onset at 75°F, alfalfa
   stages, the cost guide's pair breakdown) and added the missing material (sexing and breeding
   timings, choosing a healthy guinea pig, sounds, cleaning and water, weighing, mites, lice,

@@ -507,7 +507,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$18–$30",
     description: "Soft paper bedding that absorbs moisture well and is gentler on small-animal feet.",
-    covers: ["Bedding (paper-based or fleece)", "Bedding", "Bedding and litter", "Litter/bedding", "6+ inches of paper-based bedding", "Bedding replacement", "Dust-free paper bedding, 2 to 4cm deep", "Paper-based or cellulose bedding", "6+ inches of paper-based or aspen bedding", "Recycled paper bedding, aspen shavings, or fleece", "Deep paper or aspen bedding, plus a dig area", "Paper-based bedding, kiln-dried pine, or fleece liners"],
+    covers: ["Bedding (paper-based or fleece)", "Bedding", "Bedding and litter", "Litter/bedding", "6+ inches of paper-based bedding", "Bedding replacement", "Dust-free paper bedding, 2 to 4cm deep", "Paper-based or cellulose bedding", "6+ inches of paper-based or aspen bedding", "Recycled paper bedding, aspen shavings, or fleece", "Deep paper or aspen bedding, plus a dig area"],
     pets: ["small-mammals"],
   },
 
@@ -2271,7 +2271,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$3–$9",
     description: "Heavy small-animal bowl that is harder to tip during meals.",
-    covers: ["Water bottle and food dishes", "Heavy food and water dishes, or a bottle", "Heavy food and water dishes"],
+    covers: ["Water bottle and food dishes", "Heavy food and water dishes, or a bottle", "Heavy food and water dishes", "Heavy food dish"],
     pets: ["small-mammals"],
   },
   {
@@ -2307,7 +2307,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$40–$58",
     description: "Seagrass toys and tunnel set that encourages chewing, hiding, and gentle exploration.",
-    covers: ["Toys, tunnels, and dig boxes"],
+    covers: ["Toys, tunnels, and dig boxes", "A second hide and a tunnel for a pair"],
     pets: ["small-mammals"],
   },
   {
@@ -3855,7 +3855,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B007R6G8JW?tag=beastlyfacts-20",
     price: "~$15",
     description: "Unscented white paper bedding with no cotton fluff, which also works as nesting material for mice, rats, gerbils and hamsters.",
-    covers: ["Unscented paper bedding or fleece"],
+    covers: ["Unscented paper bedding or fleece", "Paper-based bedding, kiln-dried pine, or fleece liners"],
     pets: ["small-mammals"],
   },
   {
@@ -4015,7 +4015,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0017JFIDC?tag=beastlyfacts-20",
     description: "Timothy based pellet with added vitamin C, which guinea pigs cannot make themselves.",
-    covers: ["Vitamin-C-fortified guinea pig pellets"],
+    covers: [], // 10 lb: a guinea pig pair takes well over 90 days to finish it, past the use-within-90-days-of-manufacture rule
     pets: ["small-mammals"],
   },
   {
@@ -4529,7 +4529,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "~$32",
     description: "Hard-sided carrier with top and front doors, roomy enough for a medium rabbit on a vet trip.",
-    covers: ["Rabbit carrier, hard-sided and top-loading"],
+    covers: ["Rabbit carrier, hard-sided and top-loading", "Hard-sided carrier, big enough for the pair"],
     pets: ["small-mammals"],
   },
   {
