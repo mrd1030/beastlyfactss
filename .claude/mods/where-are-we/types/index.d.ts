@@ -1,6 +1,8 @@
 export type Card = {
   done: string[]
   doing: string[]
+  // The queue: work lined up after what is in progress, in order.
+  next: string[]
   waiting: string[]
   updatedAt: number | null
 }
