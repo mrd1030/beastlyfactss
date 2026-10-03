@@ -24848,7 +24848,7 @@
     "faqs": [
       {
         "q": "How much does a guinea pig itself cost?",
-        "a": "$10 to $60 from a shelter, around $50 at most pet stores, and $100 or more for specialty breeds like Teddy, Abyssinian, or Silkie. The animal is the cheapest part of ownership, the cage and the fact that you need two are where the budget goes."
+        "a": "$10 to $60 from a shelter, around $50 at most pet stores, and $100 or more for specialty breeds like Teddy or Silkie. The animal is the cheapest part of ownership, the cage and the fact that you need two are where the budget goes."
       },
       {
         "q": "Why does a guinea pig budget need to plan for two animals, not one?",
@@ -24974,7 +24974,7 @@
     "image": "/assets/images/guinea-pig-feeding.jpg",
     "imageAlt": "Guinea pig eating fresh hay and bell pepper next to a water bottle",
     "emoji": "🐹",
-    "lastReviewed": "2026-09-24",
+    "lastReviewed": "2026-10-03",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -25148,7 +25148,7 @@
     "title": "Is It Legal to Own a Guinea Pig? The Short Answer",
     "seoTitle": "Are Guinea Pigs Legal? Yes, in All 52 Jurisdictions",
     "seoDescription": "Guinea pigs are legal in all 52 US jurisdictions, with only Hawaii attaching a condition. No US state requires keeping them in pairs, though Switzerland does.",
-    "lastUpdated": "2026-09-11",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "The guinea pig is the least restricted animal on this entire map, cleared in all 52 jurisdictions with only Hawaii attaching a condition. The question worth answering instead is the pairs one, and the answer is not what most people have heard.",
     "date": "2026-09-11",
@@ -25168,13 +25168,13 @@
     "image": "/assets/guides/guinea-pig-legal.jpg",
     "imageAlt": "Two guinea pigs together on a bed of timothy hay",
     "emoji": "🐹",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-10-03",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "Are guinea pigs legal in all 50 states?",
-        "a": "Yes, and in DC and New York City as well. Across all 52 jurisdictions checked, only Hawaii attaches anything, and what it attaches is a conditional approval rather than a restriction. No state requires a permit to keep one."
+        "a": "Yes, and in DC and New York City as well. Across all 52 jurisdictions checked, only Hawaii attaches anything, and what it attaches is a conditional approval rather than a restriction. No state requires a permit to keep one. Hawaii requires an import permit and a vet certificate to bring one in."
       },
       {
         "q": "Is it illegal to buy only one guinea pig?",
@@ -25195,7 +25195,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 7,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -42778,7 +42778,7 @@
     "title": "Grooming, Nails, and Molting in Small Mammals",
     "seoTitle": "Small Mammal Grooming, Nails and Molting Guide",
     "seoDescription": "How often rabbits, guinea pigs and chinchillas molt, nail trim technique, scent glands, and why a bath is a genuine hazard for some small mammals.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Molting, nail trims, and scent glands look like tidiness chores, but a rabbit cannot vomit swallowed fur, which is what turns a heavy molt into a genuine GI risk.",
     "date": "2026-09-04",
@@ -42804,7 +42804,7 @@
     "image": "/assets/images/small-mammal-grooming-nails-molting-guide.jpg",
     "imageAlt": "Hands gently trimming a rabbit's nail while checking the pink quick before the cut",
     "emoji": "✂️",
-    "lastReviewed": "2026-09-25",
+    "lastReviewed": "2026-10-03",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
