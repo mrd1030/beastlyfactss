@@ -31,14 +31,16 @@ Not done, and each one is a real blocker for real sales:
   in the Sandbox.
 - PDFs uploaded to the `care-packages` bucket. Only the Hamster is there.
 
-## Next new package: Tetras, grouped (added 2026-10-03)
+## Next new package: Tetras, grouped (added 2026-10-03, Fable-reviewed)
 
-One Tetra Care Package rather than one per species, because neon and cardinal tetras share almost all of their care (schooling in groups of six or more, soft acidic water, a cycled tank, gentle flow, small foods, the same diseases and quarantine) and differ mainly in numbers, cardinals running warmer than neons. Title it for search, for example "Tetra Care Package: Neon, Cardinal and Other Small Tetras".
+One grouped package, on the model of the Tarantula package (a multi-species group entry and package that already sells on the flagship outline). Neon and cardinal tetras share almost all their care and differ mainly in numbers.
 
-- Start with the two tetras the site already covers, neon-tetra and cardinal-tetra (encyclopedia entries and guides exist). A "species at a glance" page plus a per-species column on the setup and feeding pages carries the differences.
-- Pipeline order holds: any further tetra (ember, rummy-nose, black skirt, glowlight) gets its encyclopedia entry and guides first, then joins the package as a new edition.
-- Same process as the rebuilds: site first, the bearded dragon outline, the fish line icon in the ring, a Fable review on the owner's OK, then the store page, Stripe product and bucket upload.
-- Queued after the current rebuilds (rabbit, hamster, guinea pig, then budgie, lovebird, tarantula, White's tree frog).
+- Title leads with the search term: "Neon Tetra Care Package: Neon, Cardinal and the Small Tetras". Confirm "neon tetra" over "tetra" in GSC or Ahrefs before locking it.
+- v1.0 covers neon and cardinal only, from the existing guides. A species-at-a-glance page (adult length, school floor, temperature band, pH band, from the two tank-setup guides) and a per-species column on the temperature page carry the differences.
+- Safety line: the ich-by-heat treatment (86F) sits above the neon's comfort ceiling, so the shared health page needs a neon caveat.
+- Law page: one page like the Goldfish package (never release, the release rules), plus where the fish comes from (cardinals are still a wild-caught Rio Negro fishery). No state table; fish have no state legal data here.
+- Same process: site first, flagship outline, fish line icon in the ring, a Fable review on the owner's OK, store page, Stripe product, bucket upload.
+- Order: after the queued rebuilds (rabbit, hamster, guinea pig, budgie, lovebird, tarantula, White's tree frog). Only if it sells or GSC shows demand: ember and rummy-nose get encyclopedia entries and guides first, then a Tetras group entry (like the tarantula entry, scientific "Various (Characidae)"), then package v1.1. No group entry while only two tetras exist; leave the corydoras entry as it is.
 
 ## The edition problem, decide this first
 
