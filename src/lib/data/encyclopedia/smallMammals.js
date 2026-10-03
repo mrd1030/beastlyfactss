@@ -107,7 +107,7 @@ export const smallMammalEncyclopedia = [
       adultSize: "5-7 inches (13-18 cm); 3-5 oz (85-140 g)",
       wildDiet: "Seeds, grains, grasses, and occasional insects",
       wildLifespan: "2-3 years",
-      conservation: "Vulnerable (IUCN - wild Syrian hamster population)",
+      conservation: "Endangered (IUCN - wild Syrian hamster population)",
       history: "George Robert Waterhouse presented the species to a meeting of the Zoological Society of London in 1839, and then the scientific record went quiet: there appears to be no further study of it until 1930, a gap of roughly 91 years. It was hunted down again because Saul Adler needed a breeding substitute for the Chinese hamsters he was using in leishmaniasis research. In 1931 Adler carried some to England in his coat pockets and handed them to Edward Hindle, who founded the first British colony, and stock reached the United States in 1938. Albert Marsh turned the animal into a commercial pet through his Gulf Hamstery in the 1940s, with the craze peaking between 1948 and 1951.",
     },
   },
