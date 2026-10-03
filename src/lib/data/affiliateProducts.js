@@ -1750,7 +1750,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.8,
     price: "$20–$28",
     description: "Complete powdered gecko diet you mix with water for fruit-eating species like cresteds.",
-    covers: ["Commercial crested gecko diet", "Complete crested gecko diet powder", "Commercial complete gecko diet"],
+    covers: ["Commercial crested gecko diet", "Complete crested gecko diet powder", "Commercial complete gecko diet", "Complete powdered gecko diet, three or more flavors in rotation"],
     altGroup: "crested-gecko-diet",
     pets: ["reptiles-amphibians"],
   },
