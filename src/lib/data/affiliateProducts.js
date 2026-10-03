@@ -1853,7 +1853,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$24–$34",
     description: "Hideout that gives pets a secure place to shelter, reduce stress, and rest.",
-    covers: ["3 hides (warm, cool, moist)"],
+    covers: ["3 hides (warm, cool, moist)", "Three hides: warm dry, cool dry, and a humid hide"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -3694,7 +3694,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0D6VSDFH4?tag=beastlyfacts-20",
     description: "Plug-in timer with 15 minute settings that keeps lights on a fixed day and night cycle, so the photoperiod holds when nobody is home to flip a switch.",
-    covers: [],
+    covers: ["Plug-in timer for the lights"],
     pets: ["reptiles-amphibians", "fish", "birds", "small-mammals"],
   },
   {

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assemble the Leopard Gecko care package, edition 3.0 (Eublepharis macularius).
+"""Assemble the Leopard Gecko care package, edition 3.1 (Eublepharis macularius).
 
 Content files carry <!--PAGE key--> markers. Page numbers are assigned in
 document order, {{P:key}} tokens are resolved to those numbers, the TOC is
@@ -23,7 +23,7 @@ SRC = os.path.normpath(os.path.join(HERE, "..", "leopard-gecko.html"))
 # the 2.1 HTML carried (md5 e6eca9d53e4056b11403f4da08071002).
 COVER = os.path.normpath(os.path.join(HERE, "..", "..", "images", "leopard-gecko-cover-1.jpg"))
 
-EDITION = "3.0"
+EDITION = "3.1"
 
 # TOC: (section label, [(key, title), ...])
 SECTIONS = [

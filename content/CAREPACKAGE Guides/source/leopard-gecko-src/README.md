@@ -3,10 +3,10 @@
 `../leopard-gecko.html` is generated. Edit the fragments here, never that file, then:
 
     python build.py                                                     # assemble the source
-    node ../_render.mjs leopard-gecko "Leopard Gecko" 3.0 --measure     # overflow check
-    node ../_render.mjs leopard-gecko "Leopard Gecko" 3.0               # render the PDF
+    node ../_render.mjs leopard-gecko "Leopard Gecko" 3.1 --measure     # overflow check
+    node ../_render.mjs leopard-gecko "Leopard Gecko" 3.1               # render the PDF
 
-The PDF is `rebuilt/Leopard_Gecko_Care_Package_v3.0.pdf`. On Windows, set `CHROME_BIN` to
+The PDF is `rebuilt/Leopard_Gecko_Care_Package_v3.1.pdf`. On Windows, set `CHROME_BIN` to
 Chrome first (`CHROME_BIN="C:/Program Files/Google/Chrome/Application/chrome.exe"`). Every
 page must report at least 15 px free.
 
@@ -27,7 +27,7 @@ Things worth knowing before editing:
   `#E4E8EB`, the 2.1 cover) on the newer outline the recent packages use, with a two-column
   contents page. It follows the bearded dragon 4.0 source system file for file.
 - **The edition is in two places.** `EDITION` in `build.py` drives every page footer
-  ("Leopard Gecko Care Package · Edition 3.0"). The cover chip, the colophon and the version
+  ("Leopard Gecko Care Package · Edition 3.1"). The cover chip, the colophon and the version
   history in `pages_07.html` carry it as text. Change all of them together.
 - **Every cross-reference is a token.** The build refuses a hand-written "page 12". Keep
   pointers sparse: tool pages (how-to, checklist, emergency card, symptom table, first 30 days,
@@ -51,7 +51,7 @@ Things worth knowing before editing:
   and the shared reptile guides own the numbers; prices come only from the cost guide. Where
   the site disagrees with itself, the topic's own guide wins, and the Where the Sources
   Disagree page says which. Every cost total is the sum of its own rows, as on the site since
-  2 October 2026: $175 to $495 of equipment, $325 to $710 with the first vet exam, $20 to $82 a month.
+  3 October 2026: $205 to $570 of equipment, $355 to $785 with the first vet exam, $30 to $85 a month.
 - **Abbreviations are spelled out at first use in reading order** (the cover expands UVB, the
   profile UVI, the enclosure page PVC, the UVB page T5 HO, the arrival page PCR, the legal page
   CITES, the bone disease page MBD; the how-to page defines the units), and every one has a
