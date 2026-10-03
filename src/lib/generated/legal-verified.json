@@ -28,49 +28,74 @@
   "sugar-glider-legal-guide": {
     "total": 52,
     "modal": "2026-10-01",
-    "modalCount": 51,
+    "modalCount": 50,
     "others": [
       [
         "2026-08-04",
         "Maine"
+      ],
+      [
+        "2026-10-02",
+        "North Dakota"
       ]
     ],
     "from": "2026-08-04",
-    "to": "2026-10-01"
+    "to": "2026-10-02"
   },
   "hamster-legal-guide": {
     "total": 52,
     "modal": "2026-10-01",
-    "modalCount": 51,
+    "modalCount": 50,
     "others": [
       [
         "2026-08-05",
         "Maine"
+      ],
+      [
+        "2026-10-02",
+        "North Dakota"
       ]
     ],
     "from": "2026-08-05",
-    "to": "2026-10-01"
+    "to": "2026-10-02"
   },
   "gerbil-legal-guide": {
     "total": 52,
     "modal": "2026-10-01",
-    "modalCount": 51,
+    "modalCount": 50,
     "others": [
       [
         "2026-08-05",
         "Maine"
+      ],
+      [
+        "2026-10-02",
+        "North Dakota"
       ]
     ],
     "from": "2026-08-05",
-    "to": "2026-10-01"
+    "to": "2026-10-02"
   },
   "quaker-parakeet-legal-guide": {
     "total": 52,
     "modal": "2026-10-01",
-    "modalCount": 52,
-    "others": [],
+    "modalCount": 49,
+    "others": [
+      [
+        "2026-10-02",
+        "California"
+      ],
+      [
+        "2026-10-02",
+        "Hawaii"
+      ],
+      [
+        "2026-10-02",
+        "Kentucky"
+      ]
+    ],
     "from": "2026-10-01",
-    "to": "2026-10-01"
+    "to": "2026-10-02"
   },
   "bengal-cat-legal-guide": {
     "total": 52,
@@ -127,15 +152,19 @@
   "boa-constrictor-legal-guide": {
     "total": 52,
     "modal": "2026-10-01",
-    "modalCount": 51,
+    "modalCount": 50,
     "others": [
       [
         "2026-08-05",
         "Maine"
+      ],
+      [
+        "2026-10-02",
+        "Kansas"
       ]
     ],
     "from": "2026-08-05",
-    "to": "2026-10-01"
+    "to": "2026-10-02"
   },
   "tarantula-legal-guide": {
     "total": 52,
@@ -218,54 +247,70 @@
   "fennec-fox-legal-guide": {
     "total": 52,
     "modal": "2026-10-01",
-    "modalCount": 51,
+    "modalCount": 50,
     "others": [
       [
         "2026-08-05",
         "Maine"
+      ],
+      [
+        "2026-10-02",
+        "California"
       ]
     ],
     "from": "2026-08-05",
-    "to": "2026-10-01"
+    "to": "2026-10-02"
   },
   "serval-legal-guide": {
     "total": 52,
     "modal": "2026-10-01",
-    "modalCount": 51,
+    "modalCount": 50,
     "others": [
       [
         "2026-08-05",
         "Maine"
+      ],
+      [
+        "2026-10-02",
+        "California"
       ]
     ],
     "from": "2026-08-05",
-    "to": "2026-10-01"
+    "to": "2026-10-02"
   },
   "chinchilla-legal-guide": {
     "total": 52,
     "modal": "2026-10-01",
-    "modalCount": 51,
+    "modalCount": 50,
     "others": [
       [
         "2026-08-04",
         "Maine"
+      ],
+      [
+        "2026-10-02",
+        "North Dakota"
       ]
     ],
     "from": "2026-08-04",
-    "to": "2026-10-01"
+    "to": "2026-10-02"
   },
   "guinea-pig-legal-guide": {
     "total": 52,
     "modal": "2026-10-01",
-    "modalCount": 51,
+    "modalCount": 50,
     "others": [
       [
         "2026-08-05",
         "Maine"
+      ],
+      [
+        "2026-10-02",
+        "North Dakota"
       ]
     ],
     "from": "2026-08-05",
-    "to": "2026-10-01"
+    "to": "2026-10-02"
   },
   "green-iguana-legal-guide": {
     "total": 52,
@@ -348,15 +393,19 @@
   "degu-legal-guide": {
     "total": 52,
     "modal": "2026-10-01",
-    "modalCount": 51,
+    "modalCount": 50,
     "others": [
       [
         "2026-08-05",
         "Maine"
+      ],
+      [
+        "2026-10-02",
+        "North Dakota"
       ]
     ],
     "from": "2026-08-05",
-    "to": "2026-10-01"
+    "to": "2026-10-02"
   },
   "axolotl-legal-guide": {
     "total": 52,
@@ -387,28 +436,40 @@
   "red-eared-slider-legal-guide": {
     "total": 52,
     "modal": "2026-10-01",
-    "modalCount": 51,
+    "modalCount": 49,
     "others": [
       [
         "2026-08-05",
         "Maine"
+      ],
+      [
+        "2026-10-02",
+        "Colorado"
+      ],
+      [
+        "2026-10-02",
+        "Vermont"
       ]
     ],
     "from": "2026-08-05",
-    "to": "2026-10-01"
+    "to": "2026-10-02"
   },
   "sulcata-tortoise-legal-guide": {
     "total": 52,
     "modal": "2026-10-01",
-    "modalCount": 51,
+    "modalCount": 50,
     "others": [
       [
         "2026-08-05",
         "Maine"
+      ],
+      [
+        "2026-10-02",
+        "Hawaii"
       ]
     ],
     "from": "2026-08-05",
-    "to": "2026-10-01"
+    "to": "2026-10-02"
   },
   "hognose-snake-legal-guide": {
     "total": 52,
@@ -478,15 +539,19 @@
   "rosy-boa-legal-guide": {
     "total": 52,
     "modal": "2026-10-01",
-    "modalCount": 51,
+    "modalCount": 50,
     "others": [
       [
         "2026-09-05",
         "Maine"
+      ],
+      [
+        "2026-10-02",
+        "Kansas"
       ]
     ],
     "from": "2026-09-05",
-    "to": "2026-10-01"
+    "to": "2026-10-02"
   },
   "flying-squirrel-legal-guide": {
     "total": 52,
@@ -551,15 +616,19 @@
   "red-footed-tortoise-legal-guide": {
     "total": 52,
     "modal": "2026-10-01",
-    "modalCount": 51,
+    "modalCount": 50,
     "others": [
       [
         "2026-08-27",
         "Maine"
+      ],
+      [
+        "2026-10-02",
+        "Massachusetts"
       ]
     ],
     "from": "2026-08-27",
-    "to": "2026-10-01"
+    "to": "2026-10-02"
   },
   "bearded-dragon-legal-guide": {
     "total": 52,
