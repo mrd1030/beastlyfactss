@@ -1,4 +1,4 @@
-# Claude Code usage audit (partial, in progress)
+# Claude Code usage audit (partial, cloud run stopped)
 
 Goal: read the last 30 sessions, find repeated asks, things checked by hand, and
 before/after rituals, then suggest 5 Claude Code mods ranked by time saved.
@@ -7,6 +7,62 @@ Nothing gets built yet.
 This file holds the findings from the cloud run, which was stopped early to save
 cost. The "Still to read" list at the bottom is what the local run picks up.
 Times are US Eastern.
+
+## Batch A (sessions 1-6)
+
+### session_01Fz1JGuA8vhp9mS8YARfKtZ: Legal guides British to US spelling (10-01, 17:22 to 19:43)
+- Changed 415 British spellings to US. Added a legal "verified" date line and a Maine notice box.
+- The British-to-US ask came twice: "please look for this and fix them to US English" and "yes, fix it and check all the state notes". The user pasted Claude's own earlier finding back in as the task.
+- "ask fable" (17:45) and "ask fable too. and the US map, and the per state" (17:51).
+- "why do you keep saying degu" (17:58). Claude kept reusing one example.
+- After every change Claude ran:
+  - sync-articles.
+  - check-voice --strict, check-internal-links, check-legal-map-sync, check-state-notes, check-legal-sources.
+  - generate-legal-summary.
+  - vite plus puppeteer screenshots.
+  - A revert of the generated-file drift, then a commit and push.
+- "Awesome please merge to main". Before pushing, Claude ran check-publish-dates, check-related-articles, check-seo-tags and vite build, then `git push origin HEAD:main`.
+
+### session_018R7GYPb1E5DEyjqW1bQSG2: Monthly legal 50 states+ check (10-01, Windows desktop)
+- Questions the user asked:
+  - "is there a monthly legal 50 states+ setting check?"
+  - "do you have pypdf?"
+  - "which branch is this on"
+  - "please tell me if the british spelling is because they are in the statute or not"
+- "make sure very single legal page gets looked at and updated to last checked, being today"
+- "merge this to main, not the bird branch, but the legal branch, and do it as ci skip. do not check for anything and just do it"
+- "wtf do you mean only 3, everything we done in this session should of been uploaded. or did you fuck it up because of the bird branch". Claude had reported "3 commits" instead of the work. It answered with `git diff --stat`, then: "ok you scared me, thank you."
+- A shared desktop checkout let a bird-branch commit leak into the legal branch. Claude fixed it with cherry-pick and a worktree.
+
+### session_019G6t2eDcbChBBRyPnnksnM: Care Packages cover images (10-01 23:42 to 10-02 00:15)
+- Picked up after the previous session hit its usage limit. Carried-over messages included "do you need extra mode? or a different model?" and "low? but this has been on high the entire time".
+- "awesome, please merge them". When Claude then asked about the last branch: "wtf yes!"
+- Before every main push Claude ran:
+  - The check loop: publish-dates, internal-links, hub-rows, hub-figures, voice --strict, cost-coverage, affiliate-mdx, related-articles.
+  - `npx vite build --outDir <scratch>`.
+  - `git checkout -- public src/lib/generated`.
+  - eslint and screenshots.
+
+### session_015FY9J8oHfAN5CLxJZNuzhW: Care Packages cover images (partial: only 10-03 14:00 to 16:49 plus the compaction summary)
+- "ok where are we again" and "Ok what's still on the list"
+- "Do a fable review of the 5 light fix items. But cautious on credits". The user ran /compact by hand.
+- Fable was requested 4 or more times.
+- Chrome connector trouble:
+  - "Can you look at chewy through my extension?"
+  - "close the tab and then start a new one"
+  - "stop closing the tab"
+- Confusion: "what are you talking about 2.5%" and "i still don't understand the 2.5% 'max'".
+- "ugh, i'm becoming more and more anxious about my site..."
+- After each edit: sync-articles plus a 5-check loop.
+
+### Patterns from batch A
+1. Merge to main in every session. The wording changes and so do the checks: once "do not check for anything", other times the full suite plus vite build.
+2. "Ask Fable" for a second opinion, 6 or more times.
+3. British to US spelling, twice on the same day.
+4. Questions about state: which branch, what got merged, "where are we again".
+5. Worry about usage and credits: a usage-limit handoff, "cautious on credits", /compact by hand, model and effort questions.
+6. The shared desktop checkout leaking commits across branches.
+7. The same check set after almost every content edit, plus the legal set on legal edits.
 
 ## Batch B (sessions 7-12)
 
@@ -230,3 +286,26 @@ A single long prompt from Android. Claude ran 3 Opus agents, fixed items 1-26, a
 
 ### Not read
 - session_01SUBeLZYvKKuzsCroj3f7uH (Hub router review mistakes, 09-16): only read from 09:14 UTC on.
+
+## Still to read (for the local run)
+
+Not started:
+- session_01WdfHRw7iheXpQdNpNqUXCK: Ping for beastle (10-01)
+- session_01QrddsLsGcYHG6irH2Fojj2: Rift beast pixel sprites (09-29)
+
+Partly read (the unread part is noted; times are Eastern):
+- session_015FY9J8oHfAN5CLxJZNuzhW: Care Packages cover images. Everything before 10-03 14:00.
+- session_01CYH4nWp4ewPv1HEuS4MtGm: NFTY notification options. Everything before 09-30 13:07.
+- session_012EvHa8anGf58M3dpjKW87b: Fun facts and appearance review. The 09-26 start, up to 09-28 05:33.
+- session_013dw8pp5f45xZMqfAqr4C3D: Quiz share and hero image issues. Anything after 09-28 21:21.
+- session_015HCXUpPmHqksaVRxmytZkN: Reader review fixes R2. 09-25 16:22 to 16:59.
+- session_01D44bQNPB4CyvdM9kLj5M5j: Wave 3b FIX_PLAN review. 09-25 06:32 to 06:59.
+- session_011w1L9LV7kMzmvj61Ctpbm2: Wave 3a FIX_PLAN readiness review. 09-25 03:08 to 03:38.
+- session_0165RqQLB5LgEqdHDvpsDvGN: FIX_PLAN wave 2. 09-24 22:29 to 09-25 01:46.
+- session_01LTtqtxid4fXrNFvyypjQW2: FIX_PLAN wave 1 review. Everything except the tail.
+- session_01HbsV42Nkf1K7UdSpvj4jCQ: Google AdSense readiness review. Everything before 09-25 17:35.
+- session_01SUBeLZYvKKuzsCroj3f7uH: Hub router review mistakes. Everything before 09-16 05:14.
+- session_01Coe2gZVD3Dqt4Pdwr7c2bW: Site content expansion. The part before compaction was read only through its summary, which listed every user message. Low priority.
+
+Fully read (18): 01Fz1J, 018R7G, 019G6t, 01SeaY, 01YGJA, 01FWwv, 01Qq5f, 016tP9,
+01RRQK, 015dg8, 01EwoQ, 01DuAL, 01Cdwe, 01R6ib, 016jAi, 0194d4, plus most of 013dw8 and 01Coe2.
