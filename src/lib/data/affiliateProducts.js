@@ -635,7 +635,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$120–$220",
     description: "Spacious bird cage that leaves room for short flights, toys, and multiple perches.",
-    covers: ["Flight cage (24-30 in wide)", "36x24x48 in cage (larger preferred)", "18x18x24 in cage (larger preferred)", "24x24x24 in+ cage (larger preferred)", "24x24x30 in cage (larger preferred)", "24x24x30 in+ cage (larger preferred)", "24x24x36 in aviary-style cage"],
+    covers: ["Flight cage (24-30 in wide)", "36x24x48 in cage (larger preferred)", "18x18x24 in cage (larger preferred)", "24x24x24 in+ cage (larger preferred)", "24x24x30 in cage (larger preferred)", "24x24x30 in+ cage (larger preferred)", "24x24x36 in aviary-style cage", "18x18x24 inch cage minimum, 24x18x24 for a pair"],
     altGroup: "bird-flight-cage",
     pets: ["birds", "small-mammals"],
   },
