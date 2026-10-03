@@ -946,7 +946,7 @@ export const invertebrateGuides = [
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Enclosure", value: "Horizontal, wider than tall, to limit fall risk. A reasonable adult minimum is around 20x10x10 inches, roughly a 10-gallon, sized to about three times the tarantula's leg span. Keep overall height under about 12 inches.", source: "tarantula-tank-setup-guide" },
-        { label: "Substrate", value: "At least 3 inches of coconut fiber, peat, or organic pesticide-free soil, filling roughly half to two-thirds of the enclosure.", source: "tarantula-tank-setup-guide" },
+        { label: "Substrate", value: "At least 3 inches of coconut fiber, peat, or organic pesticide-free soil, and more in a taller tank, since a deeper floor shortens the distance the spider can fall from the lid.", source: "tarantula-tank-setup-guide" },
         { label: "Lid", value: "A secure lid, but never mesh, a tarantula's feet can get caught in it and cause real injury. Acrylic with drilled ventilation holes is the better choice.", source: "tarantula-tank-setup-guide" },
         { label: "Humidity", value: "Published targets run from 40 to 60% up to 65 to 75%. Use the lower end for dry-adapted species like the Chilean rose hair. A reliable water dish plus lightly moistened substrate holds it more steadily than heavy misting.", source: "tarantula-tank-setup-guide" },
         { label: "Housing", value: "One tarantula per enclosure. Most species are solitary and cannibalistic, and cohabitation isn't workable regardless of enclosure size.", source: "tarantula-tank-setup-guide" },
