@@ -1401,7 +1401,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$12–$18",
     description: "Pelleted bird diet designed to give more balanced nutrition than seed-heavy mixes.",
-    covers: ["Budgie pellets or seed mix"],
+    covers: ["Budgie pellets or seed mix", "Formulated budgie pellets"],
     pets: ["birds"],
   },
   {

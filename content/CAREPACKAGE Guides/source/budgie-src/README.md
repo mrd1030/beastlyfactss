@@ -47,7 +47,9 @@ Things worth knowing before editing:
   the page after Section 05 and renumber the section labels.
 - **Every figure comes from the site.** The budgie guides in `content/guides/budgie-*.mdx` and the
   shared bird guides own the numbers; prices come only from the cost guide, and every total equals
-  its own rows (setup $165 to $465, monthly about $19 to $55, first year about $390 to $1,130).
+  its own rows: every item priced and rounded to the nearest $5, setup $335 to $775, monthly
+  $25 to $60 ($20 to $55 before the exam), first year about $620 to $1,500. The budget runs
+  over two pages (`budget` and `budget2`).
   Where the site disagrees with itself, the topic's own guide wins. The site was corrected first
   on 2026-10-03; re-check these pages if the guides change.
 - **Abbreviations are spelled out at first use in reading order** (UV and DNA on the profile
