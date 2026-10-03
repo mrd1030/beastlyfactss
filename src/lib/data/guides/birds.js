@@ -261,7 +261,7 @@ export const birdGuides = [
         { label: "Diet", value: "Pellets should make up roughly 75 to 80% of daily intake, with fresh vegetables and fruit filling no more than another 20 to 25% and seeds kept to a small minority. All-seed diets are a well-documented cause of malnutrition in pet cockatiels.", source: "cockatiel-feeding-guide" },
         { label: "Feeding style", value: "Free-choice, not scheduled: refresh the base pellet bowl in the morning when they're hungriest and top it up if it empties before evening, it should never sit empty for long.", source: "cockatiel-feeding-guide" },
         { label: "Handling", value: "Give a new bird 7 to 14 days with no handling attempts. Build trust with treats through the bars, then a hand inside the cage, before offering a flat palm (not a single finger) for step-up training, in sessions of 10 to 15 minutes.", source: "cockatiel-handling-guide" },
-        { label: "Budget", value: "$75 to $250 for the bird, $320 to $860 for a complete starter setup, and $200 to $350 a year after that. Avian exams come on top, at least yearly, and reproductive emergencies like egg binding can strike with no warning.", source: "cockatiel-cost-guide" },
+        { label: "Budget", value: "$75 to $250 for the bird, $295 to $601 for a complete starter setup with the bird included, and $200 to $350 a year after that. Avian exams come on top, at least yearly, and reproductive emergencies like egg binding can strike with no warning.", source: "cockatiel-cost-guide" },
         { label: "Adult size", value: "12 to 13 inches (30 to 33 cm) including tail; 80 to 125 g (about 3 to 4.5 oz)." },
         { label: "Lifespan", value: "Typically 12 to 15 years, and up to about 25 has been reported, so budget for the long end.", source: "cockatiel-cost-guide" },
         { label: "Zoonotic risk", value: "Psittacosis, caused by Chlamydia psittaci, is zoonotic, meaning it can pass to people in the household.", source: "cockatiel-health-issues-guide" },
@@ -282,7 +282,7 @@ export const birdGuides = [
       vetLine: "An avian vet, found before you need one. Cockatiels hide illness so effectively that these signs usually mean the problem is already advanced, so none of them should wait.",
     },
     routes: [
-      { slug: "cockatiel-cost-guide", line: "$75 to $250 for the bird, $320 to $860 for a starter setup, and the avian vet cost that catches people off guard." },
+      { slug: "cockatiel-cost-guide", line: "$75 to $250 for the bird, $295 to $601 for a full starter setup, and the avian vet cost that catches people off guard." },
       { slug: "cockatiel-tank-setup-guide", line: "The 20x20x30 minimum, why width beats height, bar spacing, and the kitchen danger worth repeating." },
       { slug: "cockatiel-handling-guide", line: "Building trust before you touch, the flat-palm step-up, and reading a stressed versus comfortable crest." },
       { slug: "cockatiel-health-issues-guide", line: "Nutritional disease, reproductive disease, the kitchen danger, and the signs that mean an avian vet now." },
@@ -290,7 +290,7 @@ export const birdGuides = [
       { slug: "cockatiel-enrichment-guide", line: "What two real studies found, why foraging comes first, and a priority order for everything else." },
     ],
     buyList: [
-      "20x20x30 inch cage or larger, wider rather than taller (24x24x30 for easier movement)",
+      "24x24x30 in cage (larger preferred)",
       "Perches of varied diameter and texture",
       "Food and water dishes",
       "Cuttlebone or mineral block",
@@ -298,7 +298,7 @@ export const birdGuides = [
       "Nightlight or cage cover (night frights)",
     ],
     faqs: [
-      { q: "How much does a cockatiel cost upfront?", a: "The bird itself runs $75 to $250 depending on color mutation, with normal gray typically the cheapest. A complete starter setup, cage, perches, dishes, and toys, brings most first-time owners to $320 to $860 total." },
+      { q: "How much does a cockatiel cost upfront?", a: "The bird itself runs $75 to $250 depending on color mutation, with normal gray typically the cheapest. A complete starter setup, the bird, cage, perches, dishes, and toys, comes to $295 to $601 total." },
       { q: "What size cage does a cockatiel need?", a: "Reference tables put the minimum near 20 by 20 by 30 inches for one bird, and many keepers go to 24 by 24 by 30 for easier movement. Width matters more than height, since cockatiels are horizontal flyers." },
       { q: "What symptoms mean I should call an avian vet right away?", a: "Discharge from the eyes, nose, or mouth, bleeding, a change in droppings, sitting on the cage floor instead of perching, feathers fluffed for long stretches, tail-bobbing or labored breathing, or any sudden shift in appetite or behavior. Cockatiels hide illness so effectively that these signs usually mean the problem is already advanced, so none of them should wait." },
     ],
