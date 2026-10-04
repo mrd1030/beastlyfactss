@@ -76,7 +76,7 @@ export const CARE_PACKAGES = [
     samplePages: 5,
     cover: '/assets/guides/bearded-dragon.jpg',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/beardeddragoncarepackage',
-    blurb: 'Complete 50-page printable guide with temperature and UVB targets, feeding by age, choosing a healthy dragon, brumation, the law in every state, seven health pages, and the owner tools.',
+    blurb: 'Complete 50-page printable guide with temperature and UVB (ultraviolet B) targets, feeding by age, choosing a healthy dragon, brumation, the law in every state, seven health pages, and the owner tools.',
     bullets: [
       'The enclosure and where it goes, the temperature gradient, thermostats and probes, UVB (ultraviolet B) tube and distance, substrate and bioactive setups, and cleaning in one guide',
       'Feeding by age, insects, greens and supplements, handling and body language, choosing a dragon and quarantine, eggs and brumation, the law in every state, and seven health pages',
@@ -213,7 +213,7 @@ export const CARE_PACKAGES = [
     samplePages: 5,
     cover: '/assets/guides/leopard-gecko.jpg',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/leopardgeckocarepackage',
-    blurb: 'Complete 52-page printable guide with belly heat and the three hides, optional low-output UVB, insect feeding and gut-loading by age, choosing a healthy gecko, the law in every state, seven health pages, and the owner tools.',
+    blurb: 'Complete 52-page printable guide with belly heat and the three hides, optional low-output UVB (ultraviolet B), insect feeding by age and gut-loading, choosing a healthy gecko, the law in every state, seven health pages, and the owner tools.',
     bullets: [
       'The enclosure and where it goes, the temperature gradient and belly heat, heat mats, thermostats and probes, optional low-output UVB (ultraviolet B), substrate and the three hides, and cleaning in one guide',
       'Feeding by age, insects, gut-loading and supplements, growth and body condition, handling and body language, choosing a gecko and quarantine, eggs, shedding and brumation, the law in every state, and seven health pages',
@@ -461,6 +461,7 @@ export const CARE_PACKAGES = [
         ],
       },
     ],
+    legalAsOf: 'October 2026',
     history: [
       { edition: "3.1", date: "Oct 2026", text: "Now 49 pages. Costs: every item priced and rounded to the nearest $5; setup $310 to $615, monthly $10 to $30, the budget now over two pages. Other changes are wording only." },
       { edition: "3.0", date: "Oct 2026", text: "Rebuilt on the current outline, 48 pages. Safety: pH 6.5 to 7.5; fishless cycle dosed to 3 ppm; fish-in change of at least a third at 0.1 ppm; bag floated 20 to 30 minutes; adults fed once a day or the same ration split in two, no fasting day; ich treated with salt or malachite green until spots gone for days, heat no higher than 75°F; anchor worm dose 0.066 mg/L; no home antibiotic for fin rot; floor bare, or sand or gravel at least 1/2 in across; temperature changes no faster than 1°F an hour; outage surface agitation every 10 to 15 minutes in a small tank, 20 to 30 in a larger one; goldfish and koi can cross; never feed bread, refined starches, raw meat, cheese or onions. Legal: a new page on never releasing a goldfish, Minnesota and New York rules. Costs: equipment $105 to $270, monthly $10 to $30. Other changes are wording only." },
@@ -1286,7 +1287,7 @@ export const CARE_PACKAGES = [
     samplePages: 5,
     cover: '/assets/guides/ball-python.jpg',
     blurb: 'Complete 49-page printable guide with thermostat and probe placement, humidity through the shed, feeding by age, why a ball python stops eating, choosing a healthy snake, the law in every state, seven health pages, and the owner tools.',
-    seoDescription: '49-page printable ball python guide: thermostat and probe placement, the humidity range that decides everything, a full prey chart, and health triage.',
+    seoDescription: '49-page printable ball python guide: thermostat and probe placement, the humidity range that decides everything, feeding by age and the never-feed list, and health triage.',
     bullets: [
       'The enclosure and where it goes, the temperature gradient and heat sources, thermostats and probes, humidity and optional ultraviolet light, substrate and hides, and cleaning in one guide',
       'Feeding by age, prey, thawing and why a ball python stops eating, handling and body language, choosing a snake and quarantine, females and egg binding, the winter appetite dip, the law in every state, and seven health pages',
@@ -1810,7 +1811,7 @@ export const CARE_PACKAGES = [
     ],
     legalAsOf: 'October 2026',
     history: [
-      { edition: "3.0", date: "Oct 2026", text: "Rebuilt on the current outline, 50 pages. Safety: first vaccine dose from 4 weeks, a second 21 days later, then yearly; uterine cancer risk up to 80% by 3 years in some strains; spay bucks at 10 to 12 weeks once the testicles descend, does around 6 months; room 61 to 72°F (16 to 22°C), heat line about 80°F (26 to 27°C), temperature plus humidity 150 or less; vegetables at least 2 cups per 6 lb (2.7 kg) daily, 3 or more leafy greens; even one maggot is a flystrike emergency; scent glands cleaned by a vet or groomer; brushing weekly, daily in a molt; bladder stone signs: frequent urination, teeth grinding, weight loss. Legal: 52 jurisdictions, legal in 50, unclear in Minnesota and Nevada. Costs: every item priced and rounded to the nearest $5; setup $250 to $545; food and litter $60 to $135 a month; first year $1,320 to $3,045, later years $900 to $1,895; the budget now over two pages. Other changes are wording only." },
+      { edition: "3.0", date: "Oct 2026", text: "Rebuilt on the current outline, 50 pages. Safety: first vaccine dose from 4 weeks, a second 21 days later, then yearly; uterine cancer risk up to 80% by 3 years in some strains; neuter bucks at 10 to 12 weeks once the testicles descend, does around 6 months; room 61 to 72°F (16 to 22°C), heat line about 80°F (26 to 27°C), temperature plus humidity 150 or less; vegetables at least 2 cups per 6 lb (2.7 kg) daily, 3 or more leafy greens; even one maggot is a flystrike emergency; scent glands cleaned by a vet or groomer; brushing weekly, daily in a molt; bladder stone signs: frequent urination, teeth grinding, weight loss. Legal: 52 jurisdictions, legal in 50, unclear in Minnesota and Nevada. Costs: every item priced and rounded to the nearest $5; setup $250 to $545; food and litter $60 to $135 a month; first year $1,320 to $3,045, later years $900 to $1,895; the budget now over two pages. Other changes are wording only." },
       { edition: "2.1", date: "Sep 2026", text: "Safety: comfortable range 61 to 72°F, heat ceiling 80°F; nails and scent glands every 6 to 8 weeks; fast before surgery up to 3 hours, eating again within 2 to 3 hours; stasis at 8 to 12 hours. Other changes are wording only." },
       { edition: "2.0", date: "Sep 2026", text: "Rebuilt, 39 pages. Replaced by 3.0." },
       { edition: "1.0", date: "Sep 2026", text: "First edition, 22 pages. Replaced by 2.0." },
@@ -2215,6 +2216,7 @@ export const CARE_PACKAGES = [
         ],
       },
     ],
+    legalAsOf: 'October 2026',
     history: [
       { edition: "1.4", date: "Oct 2026", text: "Aligned to the current layout: cover icon, section order, page pointers, a units note on the how-to page, new glossary entries, and outside names removed from the care text. Costs: every item priced and rounded to the nearest $5; setup $2,270 to $6,410 with the bird and first exam, $875 to $1,995 a year; the budget now runs over two pages. Other changes are wording only." },
       { edition: "1.3", date: "Oct 2026", text: "Outside sources named in the care text rewritten as plain statements; every source is still credited on the sources pages. Other changes are wording only." },

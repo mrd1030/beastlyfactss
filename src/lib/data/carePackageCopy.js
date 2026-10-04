@@ -89,7 +89,7 @@ export const CARE_PACKAGE_COPY = {
     hook: 'Cold water and a real cycle, not a bare bowl.',
     heroParagraph:
       'A 46-page printable manual with the cold-water setup, the cooling plan for summer, a fishless cycling walkthrough, choosing a healthy axolotl, the law in every state, and the health section for what actually goes wrong.',
-    heroTicks: ['46 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
+    heroTicks: ['46 pages, print or view', 'Intermediate level', 'No external links inside the PDF'],
     roulette: [
       'A tank set up like a warm-water community aquarium',
       'No real cycling before the axolotl goes in',
@@ -100,7 +100,7 @@ export const CARE_PACKAGE_COPY = {
       'A real cold-water tank setup, with the temperature numbers that matter and how to hold them in summer',
       'A fishless cycling walkthrough, and what to do if ammonia shows up',
       'Water targets and testing stated plainly, with the early warnings that mean a change is due',
-      'Fungal and bacterial infection, impaction, floating and heat stress, each on its own page',
+      'Heat stress and the gills, fungal and bacterial infection, and impaction and floating, each on its own page',
     ],
     inside: [
       { emoji: '🧊', title: 'Cold-water setup', line: 'Tank size and where it goes, the temperature numbers that matter, chillers, fans and cooling without one, substrate, hides and cleaning.' },
@@ -134,7 +134,7 @@ export const CARE_PACKAGE_COPY = {
   'bearded-dragon': {
     hook: "Basking temps you don't have to guess at.",
     heroParagraph:
-      'A 50-page printable manual with basking, UVB and diet targets split by age, thermostat and UVB distance guidance, choosing a healthy dragon, the law in every state, and health triage, not one blurry range copied across a dozen care sheets.',
+      'A 50-page printable manual with basking and diet targets split by age, UVB (ultraviolet B) strength and mounting distance, thermostat and probe placement, choosing a healthy dragon, the law in every state, and health triage, not one blurry range copied across a dozen care sheets.',
     heroTicks: ['50 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
     roulette: [
       'Basking temps that vary 15+ degrees between sources',
@@ -231,7 +231,7 @@ export const CARE_PACKAGE_COPY = {
     roulette: [
       'Humidity that spikes and crashes instead of cycling',
       'Diet powder treated as a rough guess, not a schedule',
-      'Stuck shed and MBD nobody explained how to spot',
+      'Stuck shed and MBD (metabolic bone disease) nobody explained how to spot',
       'Floppy tail syndrome dismissed as "just how they sit"',
     ],
     answers: [
@@ -241,7 +241,7 @@ export const CARE_PACKAGE_COPY = {
       'Floppy tail syndrome, impaction and overheating treated as real signals',
     ],
     inside: [
-      { emoji: '💧', title: 'Humidity cycling', line: 'Temperature and the 85°F ceiling, heat control, the daily humidity cycle, misting and airflow, and UVB light and day length.' },
+      { emoji: '💧', title: 'Humidity cycling', line: 'Temperature and the 85°F ceiling, heat control, the daily humidity cycle, misting and airflow, and UVB (ultraviolet B) light and day length.' },
       { emoji: '🥗', title: 'Diet on a schedule', line: 'Feeding by age, complete diet powder mixing, rotation and refusals, feeder insects and gut-loading, the never-feed list, and calcium on its own page.' },
       { emoji: '⚠️', title: 'Health and red flags', line: 'Metabolic bone disease, floppy tail syndrome and tail loss, stuck shed and respiratory infection, impaction, parasites, overheating, and reading droppings.' },
       { emoji: '🏠', title: 'Housing and handling', line: 'The vertical enclosure and where it goes, substrate and bioactive setups, cleaning, handling and taming, body language, and enrichment.' },
@@ -273,7 +273,7 @@ export const CARE_PACKAGE_COPY = {
     hook: "Stop guessing your goldfish's tank targets.",
     heroParagraph:
       'A 49-page printable manual with the exact tank size, filtration, cycling and water targets goldfish actually need, feeding by age, quarantine, the Minnesota and New York rules on never releasing one, and health triage, not bowl-era advice recycled across the internet.',
-    heroTicks: ['49 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
+    heroTicks: ['49 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
     roulette: [
       '"A bowl is fine to start"',
       'No real cycling before the fish goes in',
@@ -316,10 +316,10 @@ export const CARE_PACKAGE_COPY = {
   },
 
   'guinea-pig': {
-    hook: 'Two facts drive most vet visits. This covers both.',
+    hook: 'Two decisions cost the most to undo. This settles both.',
     heroParagraph:
       'A 51-page printable manual with the real floor space standard, the hay that is 80 percent of the diet, the vitamin C guinea pigs cannot make on their own, bonding a pair, the law in every state, and eleven pages of health triage.',
-    heroTicks: ['51 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
+    heroTicks: ['51 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
     roulette: [
       'A cage sized for the pet store display, not real life',
       'Vitamin C treated as optional instead of daily',
@@ -364,7 +364,7 @@ export const CARE_PACKAGE_COPY = {
   'leopard-gecko': {
     hook: 'The belly heat number that actually matters.',
     heroParagraph:
-      'A 52-page printable manual with belly heat, thermostat and probe placement, the three-hide humidity system, diet and gut-loading by age, choosing a healthy gecko, the law in every state, and health triage, not a forum-average guess.',
+      'A 52-page printable manual with belly heat, thermostat and probe placement, the three-hide humidity system, feeding by age and gut-loading, choosing a healthy gecko, the law in every state, and health triage, not a forum-average guess.',
     heroTicks: ['52 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
     roulette: [
       'Belly heat ranges that swing 10 degrees between sources',
@@ -375,11 +375,11 @@ export const CARE_PACKAGE_COPY = {
     answers: [
       'One belly heat target, with where the thermostat probe goes',
       'The three-hide humidity system built in from day one',
-      'Stick tail disease and MBD called out where you cannot miss them',
-      'Diet and gut-loading broken out by age, not one generic list',
+      'Stick tail disease and metabolic bone disease called out where you cannot miss them',
+      'Feeding broken out by age, with gut-loading on its own page, not one generic list',
     ],
     inside: [
-      { emoji: '🏜️', title: 'Housing and setup', line: 'The enclosure and where it goes, the temperature gradient and belly heat, heat mats, thermostats and probes, optional UVB, substrate, the three hides and cleaning.' },
+      { emoji: '🏜️', title: 'Housing and setup', line: 'The enclosure and where it goes, the temperature gradient and belly heat, heat mats, thermostats and probes, optional UVB (ultraviolet B), substrate, the three hides and cleaning.' },
       { emoji: '🥗', title: 'Diet by age', line: 'Feeding by age, feeder insects and gut-loading, treats, refusals and the never-feed list, calcium, vitamin D3 and multivitamin on their own page, and growth and body condition.' },
       { emoji: '⚠️', title: 'Health and red flags', line: 'Stick tail disease, metabolic bone disease, impaction, dehydration and prolapse, respiratory infection, parasites and mites, stuck shed, tail loss, burns, and reading poop.' },
       { emoji: '🪟', title: 'Handling and behavior', line: 'Handling and taming, the tail, sounds and posture explained, and enrichment that works.' },
@@ -456,19 +456,19 @@ export const CARE_PACKAGE_COPY = {
   'russian-tortoise': {
     hook: 'An animal that can outlive its owner deserves the setup right.',
     heroParagraph:
-      'A 51-page printable manual with real UVB and basking targets, the brumation decision and protocol, outdoor pens and escape-proofing, honest space requirements, the law in every state, and health triage, not the small starter tank they are usually sold with.',
-    heroTicks: ['51 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
+      'A 51-page printable manual with real ultraviolet B (UVB) and basking targets, the brumation decision and protocol, outdoor pens and escape-proofing, honest space requirements, the law in every state, and health triage, not the glass tank that is the wrong shape for this species.',
+    heroTicks: ['51 pages, print or view', 'Intermediate level', 'No external links inside the PDF'],
     roulette: [
-      "A small starter tank that's outgrown within a year",
+      'A glass tank that was the wrong shape and ventilation from day one',
       'UVB treated as optional instead of required',
       "No plan for winter, brumation just happens or doesn't",
       'Pyramiding and shell rot nobody explained how to spot',
     ],
     answers: [
-      'Real long-term space requirements, indoors and out, checked and dated',
+      'Real long-term space requirements, indoors and out: the floor, the target and why a tank is the wrong shape',
       'UVB, basking and night low targets stated plainly, with the equipment that controls them',
-      'The brumation decision and the protocol, indoor or out',
-      'Pyramiding, shell rot and MBD called out where you cannot miss them',
+      'The brumation decision and the protocol, fridge or insulated box, or warm all winter',
+      'Pyramiding, shell rot and metabolic bone disease called out where you cannot miss them',
     ],
     inside: [
       { emoji: '🏜️', title: 'Housing and UVB', line: 'The enclosure and where it goes, temperature, basking and night lows, thermostats and timers, UVB tube and distance, humidity, substrate and cleaning.' },
@@ -510,7 +510,7 @@ export const CARE_PACKAGE_COPY = {
     heroTicks: ['49 pages, print or view', 'Beginner to intermediate', 'No external links inside the PDF'],
     roulette: [
       'A heat mat running bare, with no thermostat in sight',
-      'Humidity ranges that swing 20 points between care sheets',
+      'Humidity targets that sit 15 points apart between care sheets',
       'A snake that refuses food, and a forum that says it is dying',
       'Scale rot and respiratory infection nobody described until they were advanced',
     ],
@@ -539,7 +539,7 @@ export const CARE_PACKAGE_COPY = {
     ],
     whoFor: [
       'New ball python owners buying the enclosure before the snake',
-      'Keepers whose snake has stopped eating and want the seven reasons in order',
+      'Keepers whose snake has stopped eating and want the four causes checked in order',
       'Anyone who wants the setup audited against real targets rather than a forum average',
     ],
     whatNot: [
@@ -552,7 +552,7 @@ export const CARE_PACKAGE_COPY = {
   'betta-fish': {
     hook: 'The tank is cycled before the fish goes in. Everything else is detail.',
     heroParagraph:
-      'A 54-page printable manual with tank, heater and lid, a fishless cycling walkthrough, the water numbers that actually matter, feeding without overfeeding, choosing a healthy betta and quarantine, eight health pages with dosing limits, and a power outage plan.',
+      'A 54-page printable manual with tank, heater and lid, a fishless cycling walkthrough, the water numbers that actually matter, feeding without overfeeding, choosing a healthy betta and quarantine, eight health pages with the medication rules, and a power outage plan.',
     heroTicks: ['54 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
     roulette: [
       'A bowl on a desk, room temperature, no filter',
@@ -563,7 +563,7 @@ export const CARE_PACKAGE_COPY = {
     answers: [
       '5 gallons minimum, heated, filtered, cycled and lidded, with the reason for each',
       'A fishless cycling walkthrough, step by step, started while the fish is still in the shop',
-      'Fin rot, ich, velvet and columnaris, with dosing and duration limits',
+      'Fin rot, ich, velvet and columnaris, with the medication rules and the aquarium salt limits',
       'A pellet staple, a feeding schedule, and why a betta stops eating',
     ],
     inside: [
@@ -617,7 +617,7 @@ export const CARE_PACKAGE_COPY = {
       { emoji: '🌾', title: 'Diet: hay first', line: 'Diet by age, unlimited grass hay at 80 to 85 percent of the diet, greens, vegetables and measured pellets, treats, the never-feed list and water, and growth and body condition.' },
       { emoji: '🤲', title: 'Handling and behavior', line: 'Picking a rabbit up with the spine supported, building trust, body language and normal behavior, enrichment and common mistakes.' },
       { emoji: '💞', title: 'Bonding, arrival and the law', line: 'Bonding a companion stage by stage, choosing a rabbit, quarantine and the first vet visit, sexing, spay and neuter, molting, grooming and nails, and where a rabbit is legal.' },
-      { emoji: '⚠️', title: 'Health and red flags', line: 'GI (gastrointestinal) stasis on two pages, dental disease, flystrike and snuffles, sore hocks, bladder stones, uterine cancer and E. cuniculi, the RHDV2 (rabbit hemorrhagic disease virus 2) vaccine and antibiotics, and reading droppings and cecotropes.' },
+      { emoji: '⚠️', title: 'Health and red flags', line: 'GI (gastrointestinal) stasis on two pages, dental disease, flystrike and snuffles, sore hocks, bladder stones, uterine cancer and the parasite Encephalitozoon cuniculi (E. cuniculi), the RHDV2 (rabbit hemorrhagic disease virus 2) vaccine and antibiotics, and reading droppings and cecotropes.' },
       { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, routine, outage and heat wave plan, leaving town and moving, pet-sitter sheet, and the logs.' },
     ],
     previewHeadline: 'The pages that catch it early.',
@@ -630,7 +630,7 @@ export const CARE_PACKAGE_COPY = {
       { page: 38, alt: 'Symptom quick reference table' },
     ],
     whoFor: [
-      'New rabbit owners before the hutch and before the rabbit',
+      'New rabbit owners before the pen and before the rabbit',
       'Keepers who want a bonded pair and a plan to get there',
       'Anyone who wants the emergency card on the wall and the 8 to 12 hour rule in their head',
     ],
