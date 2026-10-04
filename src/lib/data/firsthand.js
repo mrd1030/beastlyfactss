@@ -16,6 +16,7 @@ const FIRSTHAND = [
   { match: /cockatoo/, note: 'Mike has looked after a neighbor’s cockatoo on and off for years.' },
   { match: /budgie|lovebird/, note: 'Mike has looked after neighbors’ budgies and lovebirds on and off for years.' },
   { match: /chinchilla/, note: 'Mike kept a chinchilla for a stretch. The dust bath and heat advice here is lived.' },
+  { match: /hermit-crab/, note: 'Mike has kept three hermit crabs for about five years, in a 40-gallon tank.' },
 ];
 
 // Slugs that mention a firsthand species but are not about keeping it.

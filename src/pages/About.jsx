@@ -151,6 +151,9 @@ export default function About() {
             a <Link to="/chronicles/otis/" className="text-secondary font-semibold hover:underline">Chronicles page</Link> of his own.
           </p>
           <p>
+            I have also kept three hermit crabs for about five years. They share a 40-gallon tank.
+          </p>
+          <p>
             A little over a year ago Dex's eyes started swelling and he stopped acting like himself. The vet
             diagnosed heart disease. He is on medication now, with arthritis on top of it. He is still here. If I
             had not known what I know now, I would not have caught the early signs. That is the reason this site
