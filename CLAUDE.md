@@ -36,7 +36,7 @@ Solo developer passion project. Prefer fast, decisive work over exploration.
 ## Technical Notes & Commands
 - Always Read a file before making changes to it.
 - "Research" means web search with real, verifiable sources. Never write research-shaped content from memory, and never hand me citations flagged as unverified. Aim for 3 to 5 source URLs per article, and go to 6 only when every source is quoted in the body and trimming one would orphan a cited claim. Never pad a Sources block to hit a number.
-- Never fetch photos or source new affiliate products yourself. Grep affiliateProducts.js for exact existing links, never from memory.
+- Photos: free-licensed images may be fetched (owner, 2026-10-04), but always tell me and show me each image before it is installed or finalized, credit it in IMAGE_CREDITS.md, and never repeat any image anywhere on the site, in any slot. Never source new affiliate products yourself. Grep affiliateProducts.js for exact existing links, never from memory.
 - Infographic/content installs must stop at the image and internal-link checks. Do not run `npm run build` unless explicitly asked.
 - Content pipeline order: matrix → legal guide → encyclopedia/Beastfile → care guides.
 - **A cloud session cannot browse the external web.** Both engines launch fine
