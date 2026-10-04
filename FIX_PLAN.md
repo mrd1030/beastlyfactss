@@ -78,7 +78,7 @@ Checked by opening each guide. "Wiring" notes where RELATED_ARTICLES and the bod
 ---
 
 ## Found during the 2026-10-03 pricing, UVB and gear pass (open)
-- [ ] Public image credits page (from the 2026-10-04 photo rule): CC BY and CC BY-SA photos need visible credit where they are shown. IMAGE_CREDITS.md lists 11 Wikimedia Commons photos (author, license, source) but nothing on the site shows it. Add an /image-credits/ page listing every row (author, license with a link, source, "cropped" where true), link it from the footer, and keep it in step with IMAGE_CREDITS.md.
+- [ ] Public image credits page (from the 2026-10-04 photo rule; owner's plan for 2026-10-05: first go through the 11 Commons photos in IMAGE_CREDITS.md and decide keep or replace, then build the page, then the 11 fact photos in NEEDS_IMAGE.md): CC BY and CC BY-SA photos need visible credit where they are shown. IMAGE_CREDITS.md lists 11 Wikimedia Commons photos (author, license, source) but nothing on the site shows it. Add an /image-credits/ page listing every row (author, license with a link, source, "cropped" where true), link it from the footer, and keep it in step with IMAGE_CREDITS.md.
 
 Checked against main on 2026-10-04. Each line: species, file, the problem, the fix or the decision needed.
 
