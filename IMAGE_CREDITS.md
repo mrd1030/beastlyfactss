@@ -1,6 +1,6 @@
 # Image Credits
 
-Tracks source, author, license, slot and any crop for every photo that came from a free-licensed source such as Wikimedia Commons (mainly in `public/assets/facts/`, plus Beastlypedia images), as opposed to Adobe Stock, AI-generated, Canva-made or owner photos. Allowed licenses (owner, 2026-10-04): CC0, public domain, CC BY, CC BY-SA. CC BY and CC BY-SA require visible credit wherever the photo is shown, so every row here must also appear on the site's public credits page, and on a credits page in any PDF or book that uses it; note "cropped" when a photo was cropped. See the photo rule in CLAUDE.md.
+Tracks source, author, license, slot and any crop for every photo that came from a free-licensed source such as Wikimedia Commons (mainly in `public/assets/facts/`, plus Beastlypedia images), as opposed to Adobe Stock, AI-generated, Canva-made or owner photos. Allowed licenses (owner, 2026-10-04): CC0, public domain, CC BY, CC BY-SA, and Commons' "copyrighted free use" (any use, commercial included). CC BY and CC BY-SA require visible credit wherever the photo is shown, so every row here must also appear on the site's public credits page, and on a credits page in any PDF or book that uses it; note "cropped" when a photo was cropped. See the photo rule in CLAUDE.md.
 
 | File | Subject | Author | License | Source |
 |---|---|---|---|---|
