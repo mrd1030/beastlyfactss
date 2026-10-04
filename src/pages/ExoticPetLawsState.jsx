@@ -218,8 +218,8 @@ export default function ExoticPetLawsState() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content={canonical} />
         <meta property="og:image" content={`${SITE}/assets/guides/exotic-pet-legal-hub.jpg`} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+        <meta property="og:image:width" content="1168" />
+        <meta property="og:image:height" content="784" />
         <meta property="og:image:alt" content={`Exotic pet laws in ${j.name}`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={`${SITE}/assets/guides/exotic-pet-legal-hub.jpg`} />
