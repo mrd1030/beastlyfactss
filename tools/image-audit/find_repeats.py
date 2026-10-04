@@ -8,6 +8,7 @@ Allowed exceptions (owner, 2026-10-04):
   but never as the entry's head (heroImage).
 - An animal's care guide hub and its encyclopedia entry are one page with a toggle,
   so they count as one slot.
+- The legal section (hub article, map, state and state-index pages) shares one hero.
 The site-wide og-default.jpg share image is not counted.
 
 Usage, from the repo root:  python tools/image-audit/find_repeats.py
@@ -17,7 +18,7 @@ import collections, glob, os, re
 
 IMG = re.compile(r'/assets/[A-Za-z0-9_./-]+\.(?:jpg|jpeg|png|webp|gif|avif)')
 ALLOWED_FILES = {'pool.json', 'carePackages.js', 'carePackageCopy.js', 'imageDimensions.js'}
-SKIP_IMAGES = {'/assets/og-default.jpg'}
+SKIP_IMAGES = {'/assets/og-default.jpg', '/assets/guides/exotic-pet-legal-hub.jpg'}
 
 
 def slot(path, line):

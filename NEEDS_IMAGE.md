@@ -7,36 +7,29 @@ removed from this file, which is the only place that history lives.
 
 ## Open right now
 
-**The 12 repeated photos below (found 2026-10-04).** As of 2026-09-28 every guide hero is on disk and every fact on the
+**The 11 facts below need their own photo (found 2026-10-04).** As of 2026-09-28 every guide hero is on disk and every fact on the
 site resolves its own photo, 342 of 342, none shared between two facts.
 
 The five October heroes and the five parked facts all landed the same day.
 `check-images.mjs` passes on 1,674 referenced paths.
 
-## Repeated photos (found 2026-10-04)
+## Facts that need their own photo (found 2026-10-04)
 
-Owner rule, 2026-10-04: one source photo appears once across the site, the packages and the books. Allowed exceptions: Beastle and the store's package cards may show a photo already on the site; a fact photo may be a Beastlypedia entry's secondary image (never its head); and an animal's care guide hub and encyclopedia entry are one page with a toggle, so they share one photo. Each image below is shown in another slot too; keep it in one slot and give the other its own new photo (free-licensed photos may be sourced under the photo rule in CLAUDE.md, shown to the owner first). Regenerate with `python tools/image-audit/find_repeats.py`; the site-wide og-default.jpg share image is not counted.
+These 11 facts have no entry in FACT_IMAGES, so `imagePathFor()` falls back to ANIMAL_IMAGES by animal name and shows a photo another page already uses (the reason for the old fetch ban). Owner rule, 2026-10-04: one source photo appears once across the site, the packages and the books. Fix: give each fact its own new photo in FACT_IMAGES by fact id (never ANIMAL_IMAGES), mirrored in `public/_worker.js`; the hub, encyclopedia and article keep theirs. Photos may be free-licensed under the photo rule in CLAUDE.md, or generated; show the owner each one before installing. Fact photos are not cropped (CLAUDE.md). Once all 11 are in, the matching ANIMAL_IMAGES fallbacks can go.
 
-### A fact uses the animal's hub and encyclopedia head photo (7)
+Allowed reuse, not on this list: Beastle and the store's package cards; a fact photo as a Beastlypedia secondary image (never the head); a care guide hub and its encyclopedia entry (one page with a toggle); the legal section's shared hero. `python tools/image-audit/find_repeats.py` rechecks.
 
-- [ ] `/assets/guides/ball-python.jpg`: fact, hub and encyclopedia page (snakes)
-- [ ] `/assets/guides/bearded-dragon.jpg`: fact, hub and encyclopedia page (lizards)
-- [ ] `/assets/guides/crested-gecko.jpg`: fact, hub and encyclopedia page (geckos)
-- [ ] `/assets/guides/guinea-pig.jpg`: fact, hub and encyclopedia page (smallMammals)
-- [ ] `/assets/guides/hedgehog.jpg`: fact, hub and encyclopedia page (smallMammals)
-- [ ] `/assets/guides/leopard-gecko.jpg`: fact, hub and encyclopedia page (geckos)
-- [ ] `/assets/guides/rabbit.jpg`: fact, hub and encyclopedia page (smallMammals)
-
-### A fact photo is also a fun-facts article photo (4)
-
-- [ ] `/assets/images/fun-facts-axolotl.jpg`: article 10-surprising-axolotl-facts, fact
-- [ ] `/assets/images/fun-facts-boa-constrictor.jpg`: article 10-surprising-boa-constrictor-facts, fact
-- [ ] `/assets/images/fun-facts-cuttlefish.jpg`: article fun-facts-cuttlefish, fact
-- [ ] `/assets/images/fun-facts-octopus.jpg`: article fun-facts-octopus, fact
-
-### One hero across the legal pages (1)
-
-- [ ] `/assets/guides/exotic-pet-legal-hub.jpg`: article exotic-pet-legal-hub, page ExoticPetLaws, page ExoticPetLawsHub, page ExoticPetLawsState, page ExoticPetLawsStateIndex
+- [ ] Fact 1, Octopus: "Three Hearts of Love". Now shows `/assets/images/fun-facts-octopus.jpg`, the octopus fun-facts article hero.
+- [ ] Fact 2, Hedgehog: "Spiny Situation". Now shows `/assets/guides/hedgehog.jpg`, the hedgehog hub and encyclopedia head.
+- [ ] Fact 5, Bearded Dragon: "Mood Ring Lizards". Now shows `/assets/guides/bearded-dragon.jpg`, the bearded dragon hub and encyclopedia head (the owner's own Dex or Cera photos are a candidate).
+- [ ] Fact 6, Rabbit: "Purring Bunnies". Now shows `/assets/guides/rabbit.jpg`, the rabbit hub and encyclopedia head.
+- [ ] Fact 14, Axolotl: "Axolotl Superpowers". Now shows `/assets/images/fun-facts-axolotl.jpg`, the axolotl fun-facts article hero.
+- [ ] Fact 39, Ball Python: "Months Without Eating". Now shows `/assets/guides/ball-python.jpg`, the ball python hub and encyclopedia head.
+- [ ] Fact 41, Leopard Gecko: "Tail Fat Reserves". Now shows `/assets/guides/leopard-gecko.jpg`, the leopard gecko hub and encyclopedia head.
+- [ ] Fact 42, Crested Gecko: "Rediscovered in 1994". Now shows `/assets/guides/crested-gecko.jpg`, the crested gecko hub and encyclopedia head.
+- [ ] Fact 56, Guinea Pig: "Guinea Pigs Are Social". Now shows `/assets/guides/guinea-pig.jpg`, the guinea pig hub and encyclopedia head.
+- [ ] Fact 72, Cuttlefish: "Hypnotic Skin". Now shows `/assets/images/fun-facts-cuttlefish.jpg`, the cuttlefish fun-facts article hero.
+- [ ] Fact 149, Boa Constrictor: "Not a Suffocation Squeeze". Now shows `/assets/images/fun-facts-boa-constrictor.jpg`, the boa constrictor fun-facts article hero.
 
 ## Guide heroes still needed
 
