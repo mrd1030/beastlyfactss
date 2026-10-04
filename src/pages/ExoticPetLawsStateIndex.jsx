@@ -81,6 +81,12 @@ export default function ExoticPetLawsStateIndex() {
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={canonical} />
+        <meta property="og:image" content={`${SITE}/assets/guides/exotic-pet-legal-hub.jpg`} />
+        <meta property="og:image:width" content="1168" />
+        <meta property="og:image:height" content="784" />
+        <meta property="og:image:alt" content="Exotic pet laws ranked state by state" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={`${SITE}/assets/guides/exotic-pet-legal-hub.jpg`} />
         <meta name="twitter:title" content={withBrand(title)} />
         <meta name="twitter:description" content={description} />
       </Helmet>

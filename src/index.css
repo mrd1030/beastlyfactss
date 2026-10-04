@@ -430,10 +430,11 @@ html, body {
    up it floats beside the title, with the title's capitals centered on the
    badge. Everything after the title (the subtitle, a search bar, buttons)
    starts below both. The push is tuned for the 56px badge and the
-   sm:text-4xl titles every page uses. */
+   sm:text-4xl titles every page uses. A header title that is not the page's
+   H1 (the Chronicles header) carries .page-title to get the same placement. */
 @media (min-width: 768px) {
   /* Padding, not margin: a margin would collapse through the header and
      carry the badge down with it. */
-  .page-badge ~ :is(h1, :has(h1)) { padding-top: 4px; }
-  .page-badge ~ :not(h1):not(:has(h1)) { clear: left; }
+  .page-badge ~ :is(h1, .page-title, :has(h1)) { padding-top: 4px; }
+  .page-badge ~ :not(h1):not(.page-title):not(:has(h1)) { clear: left; }
 }

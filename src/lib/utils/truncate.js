@@ -2,7 +2,12 @@
 // Prefers ending on a complete sentence so the snippet reads as finished.
 // Falls back to a word-boundary cut with an ellipsis when no sentence end
 // lands late enough to leave a useful description.
-const MIN_SENTENCE_CUT = 70;
+//
+// The floor was 70, which let a short tagline or opening sentence end the
+// description on its own: Ahrefs flagged 23 pages under its 110-char minimum
+// (Beastfiles, encyclopedia profiles, two excerpt-fallback posts). At 110 a
+// cut that early falls through to the word-boundary cut instead.
+const MIN_SENTENCE_CUT = 110;
 
 export function truncateDescription(text, max = 160) {
   if (!text || text.length <= max) return text;

@@ -94,9 +94,13 @@ export default function Chronicles() {
         <div className="max-w-6xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <PageBadge icon={BadgeIcon} color="orange" />
-            <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">
+            {/* Not the H1: on every series and episode page this header was the
+                H1, so all 36 Chronicles pages shared "The Chronicles" (Ahrefs
+                duplicate H1, 2026-09-29) and the episode title sat at H2. The
+                series heading and the episode title below carry the H1 now. */}
+            <p className="page-title font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">
               The Chronicles
-            </h1>
+            </p>
             <p className="text-sm text-muted-foreground font-body max-w-xl">
               Short fiction from the Beastly Facts universe - each series told from the animal's point of view.
             </p>
@@ -168,9 +172,9 @@ function SeriesLanding({ series, parts }) {
   return (
     <div>
       <div className="mb-6">
-        <h2 className="font-display font-bold text-xl text-foreground">
+        <h1 className="font-display font-bold text-xl text-foreground">
           {`${series.emoji} Chronicles of ${series.character}`}
-        </h2>
+        </h1>
         <p className="text-sm text-muted-foreground font-body mt-1">{series.blurb}</p>
       </div>
 
@@ -317,9 +321,9 @@ function StoryReader({ story, part }) {
         )}
       </div>
 
-      <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-5 leading-tight">
+      <h1 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-5 leading-tight">
         {story.title}
-      </h2>
+      </h1>
 
       {story.image ? (
         <div className="mb-8">
