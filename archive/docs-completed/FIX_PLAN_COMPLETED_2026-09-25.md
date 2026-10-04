@@ -2,6 +2,351 @@
 
 Finished items moved out of FIX_PLAN.md, newest batch first.
 
+## Resolved by the 2026-10-03 care package and pricing work (archived 2026-10-04)
+
+Reconciled against main at 566f9ef3: all 20 care packages at 3.0 or later, the store pages, and the 2026-10-03 pricing, UVB, gear and review work. Every item below was checked in the files it names. Some were closed by later site passes rather than the package work, and the finished wave records and session prompts are archived as obsolete. Moved under their original headings.
+
+### 5. Care package updates (noted 2026-09-24, not edited)
+
+- [x] Tarantula (profile, pp. 11, 27): male lifespan "4 to 7 years". Site: about 5 for a rose hair, 10 at the outside. Resolved 2026-10-04: Tarantula 3.0 gives a male rose hair about 5 years, 10 at the outside.
+- [x] Cockatoo: "75 to 80% pellets... no more than 20 to 40%" fresh (four places). Site: remaining 20 to 25%, seeds under about 10%. Done in 1.2 (2026-10-01). Resolved 2026-10-04: already ticked done in the 1.2 rebuild; moved with the rest of the section.
+- [x] Cockatoo: bathing "two or three times a week". Site: offer a bath daily (VCA). Done in 1.2 (2026-10-01). Resolved 2026-10-04: already ticked done in the 1.2 rebuild; moved with the rest of the section.
+- [x] Cockatoo: cage "$700" to "$1,550". Site: $820 to $880 powder-coated, $1,450 to $1,550 stainless. Done in 1.2 (2026-10-01), at the current cost guide figures: $1,250 to $1,500 powder-coated, $1,800 to $2,500 stainless. Resolved 2026-10-04: already ticked done in the 1.2 rebuild; moved with the rest of the section.
+- [x] Lovebird: "75 to 80% pellets, 20 to 40% fresh". Site: remaining 20 to 25%. Resolved 2026-10-04: Lovebird 3.0 puts fresh food at the remaining 20 to 25%.
+- [x] Cockatiel: bathing dish "two or three times a week". Site: a bath offered daily. Done in 1.2 (2026-10-01). Resolved 2026-10-04: already ticked done in the 1.2 rebuild; moved with the rest of the section.
+- [x] Guinea pig: "hay is 70 to 80% of the diet". Site: roughly 80%. Resolved 2026-10-04: Guinea Pig 3.0 says roughly 80%.
+- [x] Tarantula: no quarantine for a new spider. Hub now says at least three months apart. Add it. Resolved 2026-10-04: Tarantula 3.0 has a quarantine section (apart, own tools, until it has fed, drunk and settled). The hub no longer states three months, and the book matches the site.
+- [x] Budgie (budgie-src/pages_1.html:262): "a bird does not need a special lamp". Site: without unfiltered sunlight, a full-spectrum bird UV light 10 to 12 hours a day (budgie-cost-guide; PetMD). The other bird packages already recommend one. Resolved 2026-10-04: Budgie 3.0 calls for a full-spectrum bird UV light 10 to 12 hours a day without unfiltered sunlight and prices it.
+- [x] Cockatiel (cockatiel-src/pages_1.html:349): "Two hens or two cocks avoids the egg problem entirely". Site: hens lay with no male; two males are the pairing with no eggs (cockatiel-handling-guide; Lafeber, PetMD, VCA). Done in 1.2 (2026-10-01). Resolved 2026-10-04: already ticked done in the 1.2 rebuild; moved with the rest of the section.
+- [x] Lovebird (lovebird-src/pages_1.html:337, pages_2.html:111): "Two hours a day is the working figure". Site: no study backs a fixed number; daily interaction and time out, and hours alone did not change feather damage odds (lovebird-enrichment-guide; Ebisawa et al. 2021, PetMD). Resolved 2026-10-04: Lovebird 3.0: a supervised session out daily, no fixed hours for a single bird.
+- [x] Budgie, cockatiel, lovebird (budgie-src/pages_2.html:227-229; cockatiel-src/pages_2.html:236, pages_4.html:256; lovebird-src/pages_2.html:242): only a 10% drop is given as a weight trigger. Add: during a diet conversion, more than 1 to 2% lost in a week means the change is too fast (feeding guides; UF Small Animal Hospital). Cockatiel done in 1.2 (2026-10-01); budgie and lovebird still open. Resolved 2026-10-04: Budgie 3.0 and Lovebird 3.0 both carry the 1 to 2% a week rule.
+- [x] Rabbit (rabbit.html:1069, 1406, 1578): "Annual vaccination" with one box a year. Site: first course is two doses 21 days apart from 4 weeks old, then yearly; starter series $80 to $180, booster $60 to $75 (rabbit-health-issues-guide, rabbit-cost-guide; Bosco-Lauth et al. 2024). Resolved 2026-10-04: Rabbit 3.0: first dose from 4 weeks, second 21 days later, then yearly; starter series $80 to $180.
+- [x] Hamster (hamster.html:658): Syrians nurse "roughly 26 to 28 days". Site: weaned at about 20 days, can breed at 7 to 8 weeks (hamster-handling-guide; Merck). Resolved 2026-10-04: Hamster 3.0: pups weaned at about 20 days.
+- [x] Hamster (hamster.html:1342, 1347, 1364, 1519): wheel, dishes and hideout washed monthly, bedding partly replaced every 3 to 4 months. Site: water bottle daily; full clean weekly for a small cage, every few weeks for a large deep-bedded one, nest and hoard set aside and returned (hamster-tank-setup-guide; PetMD, PDSA). Resolved 2026-10-04: Hamster 3.0: full clean weekly for a small cage, every few weeks for a large deep-bedded one, nest and hoard returned.
+- [x] Rabbit lifespan: package 7 to 10 indoors, outdoor about 2; site 8 to 12, some to 14, outdoor 3 to 5. Resolved 2026-10-04: Rabbit 3.0 matches the site: 8 to 12 indoors, some to 14 or 16, outdoor 3 to 5.
+- [x] Cockatoo lifespan: package 30 to 45 (veterinary), Moluccan to 70; site hub 40 to 60 typical, Moluccan to 92. Done in 1.2 (2026-10-01). Resolved 2026-10-04: already ticked done in the 1.2 rebuild; moved with the rest of the section.
+- [x] Bird quarantine (cockatiel, cockatoo): package 30 days, 45 to 60 with an existing bird; hub 30 to 45, multi-bird nearer 90. Done in 1.2 (2026-10-01). Resolved 2026-10-04: already ticked done in the 1.2 rebuild; moved with the rest of the section.
+- [x] Cockatiel yearly cost: package $300 to $565; hub $200 to $350. Done in 1.2 (2026-10-01). Resolved 2026-10-04: already ticked done in the 1.2 rebuild; moved with the rest of the section.
+- [x] Tarantula humidity (tarantula.html:465, 1249): package leaves 40 to 75% unsettled; site picks 40 to 60% for dry-adapted species like the rose hair. Resolved 2026-10-04: Tarantula 3.0 settles on 40 to 60% for a rose hair.
+- [x] Tarantula juvenile feeding (tarantula.html:543): package frames 4 to 7 days vs 7 to 14 as a disagreement; site gives them as one schedule by age. Wording only. Resolved 2026-10-04: Tarantula 3.0 gives one schedule by age.
+- [x] Tarantula oral nematodes (tarantula.html:1124): site adds wild-caught risk, collection spread and more signs (palps tucked, wet sternum, sweet smell); package has the short version. Resolved 2026-10-04: Tarantula 3.0 carries the site health guide section as it now stands (the site no longer lists the extra signs).
+- [x] Budgie cere (budgie-src/pages_2.html:213): package names recessive pied, lutino and albino as keeping a pink cere; site names pastel and solid-color mutations (budgie-cere-color-guide; Lafeber, Wissman DVM). Resolved 2026-10-04: Budgie 3.0 names pastel and solid-color mutations.
+- [x] Cockatoo first-week vet (cockatoo-src/pages_4.html:325): package exam plus 3-test PCR panel $200 to $450; site exam with PBFD test $140 to $210, $24.50 per PCR at the lab (cockatoo-cost-guide). Different scope. Done in 1.2 (2026-10-01). Resolved 2026-10-04: already ticked done in the 1.2 rebuild; moved with the rest of the section.
+- [x] Cockatoo annual vet (cockatoo-src/pages_4.html:339): package exam plus bloodwork $150 to $300; site wellness exam $78 to $115, no bloodwork (cockatoo-cost-guide). Done in 1.2 (2026-10-01). Resolved 2026-10-04: already ticked done in the 1.2 rebuild; moved with the rest of the section.
+- [x] Lovebird seed (lovebird-src/pages_2.html:12): package seed is treat only, never free-fed, millet 2 to 3 times a week (VCA); site allows 1 to 2 teaspoons a day (lovebird-feeding-guide; Bird Vet Melbourne). Resolved 2026-10-04: Lovebird 3.0: seed measured, never free-fed, no more than 1 to 2 teaspoons a day.
+- [x] Guinea pig spay (guinea-pig-src/pages_3.html:132): package spay only for a medical reason (Merck); site says exotics vets now recommend a preventive flank ovariectomy for young sows (guinea-pig-health-issues-guide; Illinois CVM). Resolved 2026-10-04: Guinea Pig 3.0 adds the preventive flank spay for young sows.
+- [x] Hamster settling (hamster.html:797, 920): package no handling for the first week; site leave it 24 hours, then start hand-in-cage taming (hamster-handling-guide; RSPCA, Woodgreen). Resolved 2026-10-04: Hamster 3.0: left alone for the first 24 hours apart from food, water and a look.
+- [x] Hamster groups (hamster.html:577): package lists the Chinese hamster among dwarfs kept in same-sex groups; site says Chinese hamsters live alone, only Roborovski, Campbell's and Winter White can share (hamster-handling-guide; RSPCA). Resolved 2026-10-04: Hamster 3.0: Chinese hamster one per enclosure; only Winter White, Campbell's and Roborovski share.
+- [x] Hamster (hamster.html:1595): the package cites SpectrumCare, which the site no longer allows (AI-drafted). Replace or drop at the next rebuild. Resolved 2026-10-04: gone from Hamster 3.0.
+
+### 5b. Undefined abbreviations in the care packages (audited 2026-10-01, not edited)
+
+- [x] Budgie: "PBFD" first used p2 contents (budgie.html:199) bare; spelled out p22 (:1027); in the glossary. Resolved 2026-10-04: Budgie 3.0 spells it out at first use (no longer in the contents) and has a glossary entry.
+- [x] Budgie: "IUCN" first used p4 (budgie.html:297) bare, never spelled out; not in the glossary. Resolved 2026-10-04: no longer used in Budgie 3.0.
+- [x] Budgie: "MSD" first used p5 (budgie.html:325) as "the MSD Veterinary Manual": described but never expanded; not in the glossary. Resolved 2026-10-04: no longer used in Budgie 3.0.
+- [x] Budgie: "PTFE" first used p8 (budgie.html:473) bare in the heading "PTFE: nonstick cookware"; spelled out only in the glossary (p38). Resolved 2026-10-04: Budgie 3.0 spells it out at first use and has a glossary entry.
+- [x] Budgie: "PCR" first used p22 (budgie.html:1028) bare, never spelled out; not in the glossary. Resolved 2026-10-04: Budgie 3.0 spells it out at first use and has a glossary entry.
+- [x] Budgie: "CDC" and "CPSC" first used p34 (budgie.html:1561) bare, never spelled out anywhere; not in the glossary. Resolved 2026-10-04: no longer used in Budgie 3.0.
+- [x] Budgie, Sources page only (p39): NASPHV (budgie.html:1787), DVM (:1788) and UC Davis (:1791) bare; not in the glossary. Resolved 2026-10-04 for DVM and UC Davis, which no longer appear. NASPHV stays open in FIX_PLAN.md (spelled out on the Sources page, no glossary entry).
+- [x] Guinea pig: "GI" first used p2 contents (guinea-pig.html:198) and the p19 page title (:945) bare; the next paragraph opens "Gastrointestinal stasis" (:948) without pairing it to GI; the glossary "GI stasis" entry is described but never expanded. Resolved 2026-10-04: Guinea Pig 3.0 pairs it with "Gastrointestinal" at first use; the glossary has GI and GI stasis entries.
+- [x] Guinea pig: "C&C" first used p5 (guinea-pig.html:347): described (wire cubes, corrugated plastic base) but never expanded in the body; expanded in the glossary. Resolved 2026-10-04: Guinea Pig 3.0 expands it at first use and in the glossary.
+- [x] Guinea pig, Sources page only (p40): MSD (guinea-pig.html:1785) and PDSA (:1795) bare; not in the glossary. Resolved 2026-10-04: MSD and PDSA no longer appear in Guinea Pig 3.0.
+- [x] Hamster: "IUCN" first used p4 (hamster.html:304) bare, never spelled out; not in the glossary. Resolved 2026-10-04: Hamster 3.0 spells it out at first use and has a glossary entry.
+- [x] Hamster: "UVB" first used p9 (hamster.html:518) bare, never spelled out; not in the glossary. Resolved 2026-10-04: Hamster 3.0 spells it out at first use and has a glossary entry.
+- [x] Hamster: "VCA" first used p9 (hamster.html:522) bare, never spelled out; not in the glossary. Resolved 2026-10-04: Hamster 3.0 has a glossary entry and spells it out on the Sources page.
+- [x] Hamster: "ODFW" first used p24 (hamster.html:1106) bare, never spelled out (Oregon Department of Fish and Wildlife); not in the glossary. Resolved 2026-10-04: no longer used in Hamster 3.0.
+- [x] Hamster: "HOA" first used p24 (hamster.html:1113) bare, never spelled out; not in the glossary. Resolved 2026-10-04: no longer used in Hamster 3.0.
+- [x] Hamster, Sources page only (p36): ILAR (hamster.html:1589), RSPCA and PDSA (:1594) and SPAH (:1595) bare; not in the glossary. Resolved 2026-10-04: ILAR and SPAH no longer appear; RSPCA and PDSA are spelled out with glossary entries in Hamster 3.0.
+- [x] Lovebird: "PBFD" first used p2 contents (lovebird.html:197) and the p20 page title (:889) bare; spelled out p20 (:892); in the glossary. Resolved 2026-10-04: Lovebird 3.0 spells it out at first use and has a glossary entry.
+- [x] Lovebird: "IUCN" first used p4 (lovebird.html:292) bare, never spelled out; not in the glossary. Resolved 2026-10-04: Lovebird 3.0 spells it out at first use and has a glossary entry.
+- [x] Lovebird: "UC Davis" first used p7 (lovebird.html:440) bare, never spelled out; not in the glossary. Resolved 2026-10-04: no longer used in Lovebird 3.0.
+- [x] Lovebird: "UVB" first and only use p7 (lovebird.html:448) bare, never spelled out; not in the glossary. Resolved 2026-10-04: Lovebird 3.0 spells it out at first use and has a glossary entry.
+- [x] Lovebird: "PTFE" first used in the p8 heading (lovebird.html:470) bare; the next sentence (:471) spells it out but as "polytetrafluoroethylene gas", the coating-not-a-gas error fixed in the cockatiel and cockatoo 1.2; the glossary entry is described but never expanded. Resolved 2026-10-04: Lovebird 3.0 calls it the nonstick coating, spells it out, and the glossary expands it.
+- [x] Lovebird: "PCR" first used p20 (lovebird.html:893) bare, never spelled out; not in the glossary. Resolved 2026-10-04: Lovebird 3.0 spells it out at first use and has a glossary entry.
+- [x] Lovebird: "CDC" and "CPSC" first used p32 (lovebird.html:1370) bare; CPSC spelled out only on the Sources page (p38), CDC never; not in the glossary. Resolved 2026-10-04: no longer used in Lovebird 3.0.
+- [x] Lovebird, Sources page only (p38): DVM (lovebird.html:1606) and NASPHV (:1609) bare; not in the glossary. Resolved 2026-10-04: DVM and NASPHV no longer appear in Lovebird 3.0.
+- [x] Rabbit: "GI" first used on the cover p1 (rabbit.html:145) bare, 22 uses, spelled out only in a Sources title (p39 :1695); the glossary "GI stasis" entry is described but never expanded. Resolved 2026-10-04: Rabbit 3.0 spells it out on the cover and the glossary expands it.
+- [x] Rabbit: "RHDV2" first used p2 contents (rabbit.html:211) and the p23 page title (:1057) bare; spelled out p23 (:1069); in the glossary. Both spell it "Haemorrhagic"; US prose wants "Hemorrhagic". Resolved 2026-10-04: Rabbit 3.0 spells it out at first use with US "hemorrhagic"; glossary entry kept.
+- [x] Rabbit: "RHDV1" first used p23 (rabbit.html:1069) bare; only type 2 is spelled out; not in the glossary. Resolved 2026-10-04: no longer used in Rabbit 3.0.
+- [x] Rabbit: "IUCN" first used p4 (rabbit.html:302) bare, never spelled out; not in the glossary. Resolved 2026-10-04: Rabbit 3.0 spells it out at first use and has a glossary entry.
+- [x] Rabbit: "VCA" first used p7 (rabbit.html:471) bare, never spelled out; not in the glossary. Resolved 2026-10-04: Rabbit 3.0 spells it out and has a glossary entry.
+- [x] Rabbit: "UVB" only use p40 version history (rabbit.html:1712) bare; not in the glossary. Resolved 2026-10-04: no longer used in Rabbit 3.0.
+- [x] Rabbit, Sources page only (p39): RSPCA (rabbit.html:1679) and PDSA (:1680) bare; not in the glossary. Resolved 2026-10-04: Rabbit 3.0 spells out RSPCA and PDSA and has glossary entries for both.
+- [x] Tarantula: "DKS" first used p2 contents (tarantula.html:218) and the p26 page title (:1121) bare; spelled out p26 (:1126); in the glossary. Resolved 2026-10-04: Tarantula 3.0 spells it out from the contents on and has a glossary entry.
+- [x] Tarantula: "CITES" first used p4 (tarantula.html:316) bare, never spelled out; not in the glossary. Resolved 2026-10-04: Tarantula 3.0 spells it out at first use and has a glossary entry.
+- [x] Tarantula: "EPA" first used p26 (tarantula.html:1136) bare, never spelled out; not in the glossary. Resolved 2026-10-04: no longer used in Tarantula 3.0.
+- [x] Tarantula: "HOA" first used p28 (tarantula.html:1210) bare, never spelled out; not in the glossary. Resolved 2026-10-04: no longer used in Tarantula 3.0.
+- [x] Tarantula: "USPS", "USDA" and "APHIS" first used p36 (tarantula.html:1502) bare, never spelled out; not in the glossary. Resolved 2026-10-04: Tarantula 3.0 spells out USPS and USDA APHIS at first use, with glossary entries.
+- [x] Tarantula: "UVB" only use p44 version history (tarantula.html:1754) bare; not in the glossary. Resolved 2026-10-04: no longer used in Tarantula 3.0.
+- [x] Tarantula, Sources page only (p43): "NIH" (tarantula.html:1717) bare; not in the glossary. Resolved 2026-10-04: NIH no longer appears in Tarantula 3.0.
+
+### 3. Species sections (quaker parakeet, cockatoo, giant millipede)
+
+- [x] [TRULY MISSING] What to do when moving to a ban state (Sep 8-15). Belongs in quaker-parakeet-legal-guide. OPEN 2026-09-25: legal file, out of scope for wave 3b. Resolved 2026-10-04: quaker-parakeet-legal-guide now has a "Moving to a Ban State With a Quaker" section.
+- [x] [TRULY MISSING] Noise, leases and neighbors (Sep 8-15). Done 2026-09-25: now lives in cockatoo-handling-guide ("Noise, Leases and the Neighbors"), not the legal guide. Resolved 2026-10-04: already ticked done 2026-09-25.
+- [x] [TRULY MISSING] How the USDA permit is actually obtained (Sep 8-15). Belongs in giant-millipede-legal-guide. OPEN 2026-09-25: legal files are out of scope for wave 3. Resolved 2026-10-04: giant-millipede-legal-guide now has "How the PPQ 526 Permit Works" (APHIS eFile route, application fields, timeline).
+
+### Found in the R2 source consolidation (2026-09-25)
+
+- [x] green-iguana-handling-guide: tail whipping causes "welts and bruising" (LafeberVet only says lashes are aimed at the eyes). Done 2026-09-25: reworded to lashes aimed at the eyes (LafeberVet) and severe injury from tail, claws and teeth (Chicago Exotics); welts and bruising cut. Resolved 2026-10-04: already ticked done; rechecked in the files.
+- [x] ackie-monitor-handling-guide: the "backflips" FunFact. Done 2026-09-25: no source carries it; FunFact replaced with the burrow-plugging tail (Winter Park Veterinary Hospital, already cited), and the matching body clause cut. Resolved 2026-10-04: already ticked done; rechecked in the files.
+- [x] small-mammal-vet-visits-and-travel-guide: ferrets can vomit, the insulinoma crash, and rats carrying respiratory disease. Resolved 2026-10-04: already ticked done; rechecked in the files.
+- [x] small-mammal-temperature-heat-stress-guide: chinchilla 50 to 68°F comfort range, 35 to 45°F cold tolerance (also in a hub row), hamster torpor below 41°F, rabbit "no sweat glands" (VCA's rabbit page says it but is not cited here). Resolved 2026-10-04: already ticked done; rechecked in the files.
+
+### Wave notes, "worth knowing, not fixed" (resolved since)
+
+- One new source is weak: canary-health-issues-guide now cites Pet Assure, a pet discount plan's blog. It backs the red mite night-feeding and anemia lines, which had no source before. Resolved 2026-10-04: the Pet Assure source is no longer cited on the canary pages.
+- The cockatoo care package HTML (content/CAREPACKAGE Guides/source/cockatoo.html and cockatoo-src/pages_*.html) still says "six hours a day", "$250 to $1,300" setup and "20 to 40% fresh". The site pages were corrected away from those figures. Fixed in cockatoo 1.2 (2026-10-01). Resolved 2026-10-04: fixed in cockatoo 1.2, as the line already says.
+- Platy cycling time: platy-tank-setup-guide says a fishless cycle takes 2 to 4 weeks; aquarium-cycling-guide says 4 to 6. Resolved 2026-10-04: platy-tank-setup-guide now says 4 to 6 weeks, matching aquarium-cycling-guide.
+- Source homepages, which the rules forbid: pacman-frog-cost-guide and pacman-frog-handling-guide (a-z-animals.com, backwaterreptiles.com, thecritterdepot.com), pacman-frog-tank-setup-guide (mramphibian.com), why-bearded-dragons-need-uvb-lighting-and-why-skipping-it-is-deadly (ARAV), why-parrots-need-social-interaction-and-what-loneliness-does-to-them (AAV), hamster-tank-setup-guide (Merck). Resolved 2026-10-04: every listed page now cites deep links, no homepages.
+- 10-surprising-argentine-tegu-facts: "no reptile had ever been documented" warming itself may be contradicted by pythons that warm their eggs. Resolved 2026-10-04: fact 1 now names the brooding pythons and calls the tegu the first lizard shown to warm itself.
+- Jackson's chameleon ambient temperature is now 70 to 80°F (LafeberVet). The wave 2 item at line 668 still quotes the old 68 to 75. Obsolete 2026-10-04: the wave 2 item it points at is done and archived.
+- Neon tetra health and tank setup say quarantine 2 to 4 weeks; fish-quarantine-and-treatment-guide says 30 to 60 days. Resolved 2026-10-04: both now say at least 30 days.
+- Millipede lifespan: hub says up to 10 years in captivity; Tree of Life Exotics says 5 to 7. Resolved 2026-10-04: the hub now says typically 5 to 7 years, some past 10.
+
+### Finished wave records and session prompts (obsolete: every wave and both reader review runs are done)
+
+Wave 3b is done (its own table says so); READER_REVIEWS_2026-09-25.md section 6 is ticked through item 40 and NEEDS_PRODUCT.md exists, so the R1 and R2 prompts have run. The records are kept here verbatim.
+
+#### Wave 1 results
+
+Shipped 2026-09-24 in commit 4c5ae0a, pushed to claude/adsense-readiness-review-7u43dx and claude/fix-plan-wave-1-kjrerp. Not merged to main.
+
+**Results**
+- Done: Session 0 wiring plus 229 of the 231 in-scope items ([ERROR], [CONTRADICTION], [DOUBTED], [COVERED, NOT LINKED], [COVERED+LINKED]), all ticked above.
+- Checks: sync-articles ran, and check-internal-links, check-voice --strict, check-related-articles, check-publish-dates and check-rotation all pass. check-voice shows 0 errors, same as before the wave. Hub rows and hub figures also pass; the sulcata hub is 1 word over the cap, inside the allowed slack.
+- Dates: pages with corrected facts carry lastUpdated 2026-09-24. Pages that only gained a link keep their dates.
+
+**Changes made beyond the agents' work**
+- Fun-facts files renamed: fun-facts-axolotl, fun-facts-rabbit and fun-facts-boa-constrictor are now named after their slugs (10-surprising-*-facts). The site finds these pages by the slug in their frontmatter, but check-related-articles looks them up by filename, so wiring them under the old names failed the check the build runs.
+- Change reverted: an agent refiled long-lived-pet-succession-planning-guide as Birds. Its category was already Pet Care, Birds and Turtles & Tortoises, never Dogs and Cats. The reader's complaint came from the name of the batch it was reviewed in.
+- Claim removed: hamster-tank-setup-guide got a line saying hamsters on 10 cm of bedding "slept in hides". No source states that, so it was cut.
+
+**Spot-checks**
+- Gerbil burrow claim (Wiedenmayer 1997): checked against the paper's abstract; it holds.
+- Pacman frog bite force (Lappin et al. 2017): the paper supports the new figures.
+- Parrot training vs foraging wording: the van Zeeland 2009 review supports it. It lists training among many treatments and names foraging as the one with evidence.
+
+#### Wave 2 results
+
+Shipped 2026-09-25 on claude/fix-plan-wave-2-reptiles-81w4hm and merged to main as c9c485b4.
+
+- Done: every open item in Reptiles, Amphibians and section 4, ticked above, except two left open: the leopard gecko screen-top gap (no source gives a number) and the fun-facts wiring [ERROR] (needs an owner decision on guide ids, same as the wave 1 leftover).
+- New shared sections: "Enclosure cleaning schedule" in reptile-salmonella-hygiene-guide and "Choosing a healthy reptile and a reptile vet" in reptile-quarantine-guide. Species cleaning, breeder and vet items link to them.
+- Hub and encyclopedia edits applied from agent requests: kingsnake encyclopedia overview and history; tegu cost routing line; tiger salamander cohabitation row; Jackson's chameleon sexing row repointed to the health guide; mourning gecko buy list and dystocia line; leaf-tailed gecko shed-check row removed; garter snake thiaminase FAQ swapped for feeding frequency; veiled chameleon water-dish FAQ swapped for egg-binding; leopard gecko lifespan row and encyclopedia set to 10 to 20 years, some reaching 25 to 30.
+- Checks: sync-articles, check-internal-links, check-voice --strict (0 errors), check-related-articles, check-publish-dates, check-rotation, check-seo-tags, check-hub-rows, check-hub-figures all pass.
+- Partly done, noted on their lines: blue-tongued skink weights by life stage, Russian tortoise female ramming, savannah monitor DIY build cost, outdoor housing drowning numbers, seven fun facts pages still under 575 words.
+
+#### Wave 3a results
+
+Done 2026-09-25 on claude/adsense-readiness-review-7u43dx in one commit. Not merged to main.
+
+- Done: every open item in Fish and shrimp and Invertebrates, ticked above, except five left open or partial and noted on their lines: ghost shrimp Palaemon molt GH (no source), goldfish encyclopedia history (nothing to add), amano water change percent (no source), millipede USDA permit (legal file), praying mantis handling length (about 560 words, no more sourced material).
+- New shared sections: "Getting New Fish From the Bag Into the Tank" in aquarium-stocking-and-tankmates-guide; "How to Find a Vet Who Treats Fish" and "When Euthanasia Is the Kindest Option" in spotting-a-sick-fish-guide. Species acclimation, vet and euthanasia items link to them.
+- Hub and encyclopedia edits applied from agent requests: corydoras handling route line and algae row source; tarantula humidity and feeding rows no longer narrate source disagreement; neon tetra hub FAQ swapped tank size for sexing; goldfish feeding row settled at one meal a day; cardinal tetra and stick insect hub FAQs re-copied from their deep dives; emperor scorpion fun fact and molting row; hissing cockroach feeding row; koi, stick insect, emperor scorpion and praying mantis encyclopedia overviews.
+- Checks: sync-articles, check-internal-links, check-voice --strict (0 errors), check-related-articles, check-publish-dates, check-rotation, check-seo-tags, check-hub-rows, check-hub-figures all pass.
+
+#### Waves 2 and 3 (set up 2026-09-24)
+
+Wave 1 is merged. What is left is writing: [TRULY MISSING] items need web research and new
+text, [THIN], [LOW GRADE] and [SHORT] items need existing pages rewritten or expanded. Split
+by animal group, so every species is finished inside one wave:
+
+| Wave | Groups | Open items |
+|---|---|---|
+| 2 | Reptiles, Amphibians, section 4 non-species articles | done |
+| 3a | Fish and shrimp, Invertebrates | done |
+| 3b | Birds, Small mammals | done (17 lines left open, partial or newly found, each marked) |
+
+Wave 3 runs as two sessions to hold down credit use. 3a and 3b never run at
+the same time. 3a keeps fish and shrimp together with invertebrates because
+the shrimp hubs and encyclopedia entries live in the invertebrates.js files.
+
+Rules for both waves:
+- Per species, in order: [COVERED+LINKED] leftovers, then [TRULY MISSING], then [LOW GRADE] and [THIN], then [SHORT].
+- Research means web search with real sources (CLAUDE.md). Aim for 3 to 5 sources per article; never cite from memory; a claim with no source found is left out.
+- A [TRULY MISSING] item that a shared guide could hold for many species goes in that shared guide once, with one species sentence and link on each page, not copied per species.
+- Keep the split guide structure. No new pillar pages. New articles only if an item cannot fit an existing page, and then they get a rotation number and RELATED_ARTICLES wiring.
+- Dogs and cats are out of scope. Care package updates (section 5) are out of scope.
+- Stamp lastUpdated with the Eastern date on every page touched.
+- Never edit legal files (content/guides/*-legal-guide.mdx, src/lib/data/legalStatus.json, src/lib/data/stateNotes.js, the exotic-pet-laws pages), care packages, or anything about dogs and cats.
+- Do not name outside sites in the prose unless the sentence needs it; the Sources block carries attribution.
+- Setup guides: follow the naming rule in docs/RULES.md (Tank, Pond, Cage, Housing or Enclosure in visible text; the slug never changes).
+- No commits until the whole wave (or part) is done. Then run sync-articles, check-internal-links, check-voice --strict, check-related-articles, check-publish-dates, check-rotation, check-seo-tags, check-hub-rows, check-hub-figures, and make ONE commit and ONE push to the working branch. Merge to main only when the owner says so.
+
+Wave 3 prompts. Paste 3a into a fresh session. Start 3b only after 3a has
+pushed.
+
+```
+Wave 3a of FIX_PLAN.md. Work on branch claude/adsense-readiness-review-7u43dx
+(git fetch, check it out, pull; do not create or push any other branch).
+Read CLAUDE.md, docs/RULES.md and FIX_PLAN.md ("Waves 2 and 3" section
+first). Scope: every open item in the Fish and shrimp and Invertebrates
+groups, nothing else. Follow the wave rules in that section.
+
+Credit limits, hard: never more than 3 agents running at once. Each agent
+takes 4 to 6 species and works them one after another. Start the next
+agent only when one finishes. No two agents edit the same file; hub and
+encyclopedia edits come back to you as requests and you apply them.
+
+Never touch legal files, care packages, or dog and cat pages. Use Opus for
+yourself and the agents. Tick items in FIX_PLAN.md as they are done.
+Spot-check each agent's diff and verify new citations load.
+
+Commits: NONE until every 3a item is done or marked open. Then run the
+checks listed in the wave rules, make exactly ONE commit and ONE push to
+claude/adsense-readiness-review-7u43dx. No checkpoint commits, no second
+push. Do not merge to main. Summary only at the end.
+```
+
+```
+Wave 3b of FIX_PLAN.md. Work on branch claude/adsense-readiness-review-7u43dx
+(git fetch, check it out, pull so 3a's commit is in; do not create or
+push any other branch). Read CLAUDE.md, docs/RULES.md and FIX_PLAN.md
+("Waves 2 and 3" section first). Scope: every open item in the Birds and
+Small mammals groups, nothing else. Follow the wave rules in that section.
+
+Credit limits, hard: never more than 3 agents running at once. Each agent
+takes 4 to 6 species and works them one after another. Start the next
+agent only when one finishes. No two agents edit the same file; hub and
+encyclopedia edits come back to you as requests and you apply them.
+
+Never touch legal files, care packages, or dog and cat pages. Use Opus for
+yourself and the agents. Tick items in FIX_PLAN.md as they are done.
+Spot-check each agent's diff and verify new citations load.
+
+Commits: NONE until every 3b item is done or marked open. Then run the
+checks listed in the wave rules, make exactly ONE commit and ONE push to
+claude/adsense-readiness-review-7u43dx. No checkpoint commits, no second
+push. Do not merge to main. Summary only at the end.
+```
+
+#### Reader review fixes (set up 2026-09-25)
+
+Source: READER_REVIEWS_2026-09-25.md, section 6 (40 items). Every conflict
+there was checked against the site files; section 2 has the file and line
+for each. Two sessions to hold down credits: R1 runs items 1 to 26
+(confirmed conflicts), R2 runs items 27 to 40 (gaps and trust flags). R2
+starts only after R1 has pushed.
+
+Prompt R1 (paste into a fresh session):
+
+```
+Reader review fixes, part R1. Work on branch
+claude/adsense-readiness-review-7u43dx (git fetch, check it out, pull; do
+not create or push any other branch). Read CLAUDE.md, docs/RULES.md,
+the "Reader review fixes" section of FIX_PLAN.md, and
+READER_REVIEWS_2026-09-25.md sections 2 and 6. Scope: section 6 items 1
+to 26, nothing else.
+
+For each item, confirm the conflict still exists, then fix it so every
+place that states the fact agrees: body, frontmatter FAQs,
+seoDescription, description, excerpt, KeyTakeaway, hub rows and hub FAQs
+(hub FAQs stay word for word with the guide FAQ), encyclopedia,
+overviews and vs guides. Where an item says "source check", or where the
+two sides need a source to decide, research with real web sources (never
+from memory; never an AI-drafted site such as ExoPetGuides or
+SpectrumCare; prefer vets, universities, government, peer-reviewed).
+Item 1 (UVB zones) is unverified: load Baines et al. 2016 and change the
+table only if the paper shows it is wrong. Sources stay at 5 per
+article, 6 only when each backs its own claim, with a one-line comment
+saying why. No outside site or brand named in prose unless the sentence
+needs it. No links to the same species' sibling guides. Stamp
+lastUpdated with the Eastern date on every page touched.
+
+Credit limits, hard: never more than 3 agents running at once, each
+taking several items in sequence; no two agents edit the same file. Use
+Opus. Never touch legal files, care packages, or dog and cat pages.
+
+Tick each item in READER_REVIEWS_2026-09-25.md section 6 ("[done]" or
+"[open: reason]"). At the end run sync-articles, check-internal-links,
+check-voice --strict, check-related-articles, check-publish-dates,
+check-rotation, check-seo-tags, check-hub-rows, check-hub-figures and
+check-hub-faqs. All must pass. Then exactly ONE commit and ONE push to
+claude/adsense-readiness-review-7u43dx. No checkpoint commits. Do not
+merge to main. Summary only at the end.
+```
+
+Prompt R2 (paste into a fresh session after R1 has pushed):
+
+```
+Reader review fixes, part R2. Work on branch
+claude/adsense-readiness-review-7u43dx (git fetch, check it out, pull so
+R1's commit is in; do not create or push any other branch). Read
+CLAUDE.md, docs/RULES.md, the "Reader review fixes" section of
+FIX_PLAN.md, and READER_REVIEWS_2026-09-25.md sections 3, 4 and 6.
+Scope: section 6 items 27 to 40, plus the product list at the end.
+
+Gap items (27 to 36): for each, confirm the gap still exists on the
+species' own pages and in its Health and More guides, then add short,
+sourced text where the reader asked the question. A gap already
+answered by a shared guide gets one species sentence with an in-body
+link to that guide, not a copy of it. The live buy lists (hub buyList
+entries) and cost guide tables only ever gain an item that already
+exists as a product in src/lib/data/affiliateProducts.js (the /gear
+catalog); grep for the exact existing link, never invent or source a
+new product yourself. If no existing product fits, do NOT add the item
+to any buy list or cost table, not even as plain text. Log it in
+NEEDS_PRODUCT.md (below) instead, and it goes live only after the owner
+supplies a product. Care advice in the prose may still say the animal
+needs the item when a source backs it, with no link.
+
+Trust items (37 to 40): move brand names and outside site names out of
+advice prose (the Sources block carries attribution). This includes
+older pages that say "according to VCA", "according to Merck" or name
+another site in the body or FAQs, such as bird-chronic-egg-laying-guide
+and avian-polyomavirus-guide; grep content/guides for "according to"
+and fix every hit that names an organization or site, unless the
+sentence genuinely needs the name. Source, soften or cut the flat claims
+readers doubted. Carry each caveat to every page that states the
+claim. Fix the green anole arithmetic.
+
+Research with real web sources (never from memory; never an AI-drafted
+site such as ExoPetGuides or SpectrumCare; prefer vets, universities,
+government, peer-reviewed). A claim with no source found is left out.
+For each change, update every place that states the fact: body,
+frontmatter FAQs, seoDescription, description, excerpt, KeyTakeaway,
+hub rows and hub FAQs (hub FAQs stay word for word with the guide FAQ),
+encyclopedia, overviews and vs guides. Sources stay at 5 per article,
+6 only when each backs its own claim, with a one-line comment saying
+why. No links to the same species' sibling guides, no "see our" or
+"check out" phrasing, no sentence that exists only to carry a link.
+Stamp lastUpdated with the Eastern date on every page touched.
+
+Product list, last step, after all fixes: create NEEDS_PRODUCT.md in the
+repo root (a live doc like NEEDS_IMAGE.md: open items only; finished
+items later move to archive/docs-completed/NEEDS_PRODUCT_COMPLETED_<date>.md).
+It lists every product the owner should find on Amazon. Build it from:
+(a) every item this session needed but could not add because no product
+exists in affiliateProducts.js; (b) every hub
+buyList entry in src/lib/data/guides/*.js that has no product link; (c)
+every row in a cost guide table (ComparisonTable) that names an
+equipment item with no AffiliateLink; (d) every equipment item named in
+a tank setup guide's body that has no link, where the page recommends
+buying it. Group by product type (heating, lighting, filtration, water
+testing, enclosures and cages, substrate, food and supplements, health
+and first aid, other), one line per product: what it is, the spec that
+matters (size, wattage, gallons, dimensions, UVB percent), and every
+species or page that needs it. Mark each line NEED (a buy list or cost
+table already names it) or COULD (prose recommends it). Put the NEED
+lines first. Do not search Amazon and do not add any link; the owner
+supplies the links.
+
+Credit limits, hard: never more than 3 agents running at once, each
+taking several items in sequence; no two agents edit the same file. Use
+Opus. Never touch legal files, care packages, or dog and cat pages.
+
+Tick each item in READER_REVIEWS_2026-09-25.md section 6 ("[done]" or
+"[open: reason]"). At the end run sync-articles, check-internal-links,
+check-voice --strict, check-related-articles, check-publish-dates,
+check-rotation, check-seo-tags, check-hub-rows, check-hub-figures,
+check-hub-faqs, check-affiliate-mdx and check-cost-coverage. All must
+pass. Then exactly ONE commit and ONE push to
+claude/adsense-readiness-review-7u43dx. No checkpoint commits. Do not
+merge to main. Summary only at the end, including the NEED and COULD
+counts from NEEDS_PRODUCT.md.
+```
+
 # Batch moved 2026-10-02 (care package rebuilds)
 
 Resolved by the Bearded Dragon 4.0 rebuild and the 3.0 rebuilds of the leopard gecko, crested gecko, ball python, Russian tortoise, axolotl, betta fish and goldfish packages, each built site first and reviewed. Moved under their original section headings.
