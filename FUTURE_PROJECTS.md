@@ -22,4 +22,4 @@ Turn the care packages into real printed books (KDP, like the Chronicles of Dex 
 
 ## Credentials and an editorial policy page (noted 2026-10-03)
 
-From a separate chat: a vet reviewer for the health guides is the biggest trust step; a university-backed course certificate supports it; a dedicated /editorial-policy/ page with a public corrections log would show the sourcing, fact-check and reader-test process the About page only summarizes. The owner is looking into courses in another session.
+From a separate chat: a vet reviewer for the health guides is the biggest trust step; a university-backed course certificate supports it; a dedicated /editorial-policy/ page with a public corrections log would show the sourcing, fact-check and reader-test process the About page only summarizes.
