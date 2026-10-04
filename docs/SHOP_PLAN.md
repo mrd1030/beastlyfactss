@@ -88,11 +88,9 @@ with `_render.mjs`, move the old PDF to `rebuilt/past versions/` with a row in
 its README, update `pages`, `version` and `versionDate` in the catalog, the
 `edition` in the Worker's mirror, and re-upload the bucket file.
 
-Cockatiel and cockatoo (v1.2, 1 October 2026) are in the catalog with copy,
-themes, previews, samples and a Worker entry, on `storefront: 'stripe'` with
-empty price ids, so checkout refuses them with a 409 until the live prices
-exist. Still to do for both: the live Stripe price in the catalog and the
-Worker, and the PDF in the bucket.
+Cockatiel (v3.0) and cockatoo (v1.4) are in the catalog with copy, themes,
+previews, samples, a Worker entry and live Stripe prices. Still to do for both:
+the PDF in the bucket.
 
 The White's tree frog (v1.0, 1 October 2026) is wired the same way and in the
 same state. Its old `storefront: 'soon'` landing page is no longer reached:

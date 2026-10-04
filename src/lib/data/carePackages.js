@@ -1971,7 +1971,7 @@ export const CARE_PACKAGES = [
     versionDate: '2026-10-03',
     samplePages: 5,
     cover: '/assets/guides/cockatiel.jpg',
-    blurb: 'Complete 52-page printable guide with cage size and the bar spacing that is a safety limit, the night light that prevents night frights, converting a seed eater to pellets, chronic egg laying and egg binding, seven health pages, and the owner tools.',
+    blurb: 'Complete 52-page printable guide with cage size and the bar spacing that is a safety limit, the night light that prevents night fright injuries, converting a seed eater to pellets, chronic egg laying and egg binding, seven health pages, and the owner tools.',
     seoDescription: '52-page printable cockatiel guide: cage size and bar spacing, night frights, converting a seed eater to pellets, chronic egg laying, and health triage.',
     bullets: [
       'Cage size, bar spacing and placement, perches and dishes, temperature, light, sleep and night frights, fumes, feather dust and household hazards, and cleaning in one guide',

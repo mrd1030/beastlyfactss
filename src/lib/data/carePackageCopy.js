@@ -693,7 +693,7 @@ export const CARE_PACKAGE_COPY = {
   cockatiel: {
     hook: 'A long-lived cockatiel starts with the food bowl and a night light.',
     heroParagraph:
-      'A 52-page printable manual with the cage and the bar spacing that is a safety limit, the night light that stops night frights, two schedules for converting a seed eater, the levers that prevent chronic egg laying, seven health pages, and the printable owner tools.',
+      'A 52-page printable manual with the cage and the bar spacing that is a safety limit, the night light that stops a night fright from becoming an injury, two schedules for converting a seed eater, the levers that prevent chronic egg laying, seven health pages, and the printable owner tools.',
     heroTicks: ['52 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
     roulette: [
       'A seed bowl sold as a complete diet',
@@ -704,12 +704,12 @@ export const CARE_PACKAGE_COPY = {
     answers: [
       '75 to 80 percent pellets, two schedules for converting a seed eater, and the weight loss that means slow down',
       'A 20 by 20 by 30 inch minimum, 24 by 24 by 30 for easier movement, width over height, and bars half an inch apart or closer',
-      'Night frights explained, and the dim night light that prevents the injury this species is known for',
+      'Night frights explained, and the small night light that prevents the injury this species is known for',
       'The trigger list for chronic laying, why the eggs stay where they are, and egg binding as a same-day emergency',
     ],
     inside: [
       { emoji: '🏠', title: 'Cage, placement and hazards', line: 'Cage size and the half-inch bar spacing, perches and dishes, where the cage goes, fumes from overheated nonstick pans (PTFE, polytetrafluoroethylene) and feather dust, metals, pets and plants, and cleaning.' },
-      { emoji: '🪟', title: 'Sleep and night frights', line: '10 to 12 hours of real darkness, the dim night light that prevents the signature injury, and day length as the hormone lever.' },
+      { emoji: '🪟', title: 'Sleep and night frights', line: '10 to 12 hours of real darkness, the small night light that prevents the signature injury, and day length as the hormone lever.' },
       { emoji: '🥗', title: 'Diet and pellet conversion', line: 'The 75 to 80 percent pellet target, two conversion schedules and the daily weight check, vegetables, fruit and fresh food, treats, supplements and the never-feed list.' },
       { emoji: '🤝', title: 'Handling and the crest', line: 'Taming in steps, reading the crest, one cockatiel or two, wing clipping on both wings, blood feather first aid, choosing a cockatiel, quarantine, sexing, and the daily gram scale.' },
       { emoji: '⚠️', title: 'Health and red flags', line: 'Chronic egg laying and egg binding, vitamin A, calcium and fatty liver, breathing problems and psittacosis, beak and feather disease and polyomavirus, Giardia, gastric yeast, rope and metal, plucking, and reading droppings.' },
