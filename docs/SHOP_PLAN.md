@@ -92,11 +92,11 @@ Cockatiel (v3.0) and cockatoo (v1.4) are in the catalog with copy, themes,
 previews, samples, a Worker entry and live Stripe prices. Still to do for both:
 the PDF in the bucket.
 
-The White's tree frog (v1.0, 1 October 2026) is wired the same way and in the
+The White's tree frog (v1.1, 3 October 2026) is wired the same way and in the
 same state. Its old `storefront: 'soon'` landing page is no longer reached:
 the URL now renders the full product page.
 
-The hognose snake, gargoyle gecko and African fat-tailed gecko (v1.0,
+The hognose snake, gargoyle gecko and African fat-tailed gecko (now v1.1, first wired
 2 October 2026) are new, never on Gumroad, and went straight to the same
 setup with live prices created 2026-10-02. Each needs its PDF in the bucket
 before its branch reaches main.

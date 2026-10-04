@@ -755,7 +755,7 @@ export const CARE_PACKAGE_COPY = {
     ],
     inside: [
       { emoji: '⚖️', title: 'The honest test', line: 'Nine questions to answer before you buy, six species compared on size, price, noise and temperament, and where the bird comes from.' },
-      { emoji: '🏠', title: 'Housing, dust and hazards', line: 'Cage size, bar gauge and padlocks, the play stand, 10 to 12 hours of darkness, feather dust and the HEPA air purifier, and the fumes from overheated nonstick pans (PTFE).' },
+      { emoji: '🏠', title: 'Housing, dust and hazards', line: 'Cage size, bar gauge and padlocks, the play stand, 10 to 12 hours of darkness, feather dust and the HEPA (high-efficiency particulate air) purifier, and the fumes from overheated nonstick pans (PTFE).' },
       { emoji: '🥗', title: 'Diet and foraging', line: 'The 75 to 80 percent pellet target, converting a seed eater, the never-feed list, nuts as training pay, and nothing in a bowl.' },
       { emoji: '🤝', title: 'Training and behavior', line: 'Training sessions, bites and sexual maturity, over-bonding and independence, screaming, wing clipping, and hormones.' },
       { emoji: '⚠️', title: 'Health and red flags', line: 'Plucking and the molt differential, beak and feather disease (PBFD), obesity, lipomas and fatty liver, psittacosis, droppings, and quarantine.' },
@@ -816,7 +816,7 @@ export const CARE_PACKAGE_COPY = {
       { page: 14, alt: 'Body condition: reading the fat ridges above the eardrum, three readings' },
       { page: 21, alt: 'Obesity, fatty eyes and fatty liver: causes, signs and recovery' },
       { page: 28, alt: 'Emergency and quick targets card, to print and post near the enclosure' },
-      { page: 29, alt: 'Budget and shopping list, setup and yearly costs' },
+      { page: 29, alt: 'Budget and shopping list, every setup item priced' },
     ],
     whoFor: [
       "New White's tree frog owners setting up the enclosure before the frog comes home",
@@ -865,7 +865,7 @@ export const CARE_PACKAGE_COPY = {
       { page: 16, alt: 'The venom question and bites: rear-fanged and mildly venomous, two bite studies, and what to do if a snake holds on' },
       { page: 26, alt: 'Respiratory and belly-scale infections: one cause, too much moisture, with signs and the vet response for each' },
       { page: 32, alt: 'Emergency and quick targets card, to print and post near the enclosure' },
-      { page: 33, alt: 'Budget and shopping list, setup and yearly costs' },
+      { page: 33, alt: 'Budget and shopping list: every setup item priced, with the equipment and all-in totals' },
     ],
     whoFor: [
       'New western hognose owners setting up the enclosure before the snake comes home',
@@ -909,9 +909,9 @@ export const CARE_PACKAGE_COPY = {
       { page: 2, alt: "What's inside: the contents page, every page of the package listed" },
       { page: 6, alt: 'The gradient and the 86°F ceiling: the temperature table with its two limits, and the bulb on a thermostat' },
       { page: 11, alt: 'Diet and feeding by age: complete diet powder and live insects, with the schedule for juveniles and adults' },
-      { page: 24, alt: 'Floppy tail syndrome and tail loss: cause, signs and treatment for each, and the test of where the gecko sleeps' },
+      { page: 24, alt: 'Floppy tail syndrome and tail loss: cause, signs and what to do for each, and the test of where the gecko sleeps' },
       { page: 29, alt: 'Emergency and quick targets card, to print and post near the enclosure' },
-      { page: 30, alt: 'Budget and shopping list, setup and yearly costs' },
+      { page: 30, alt: 'Budget and shopping list: every setup item priced, with the first vet exam and the gecko added up' },
     ],
     whoFor: [
       'New gargoyle gecko owners setting up the enclosure before the gecko comes home',
