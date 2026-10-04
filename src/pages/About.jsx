@@ -151,8 +151,8 @@ export default function About() {
             a <Link to="/chronicles/otis/" className="text-secondary font-semibold hover:underline">Chronicles page</Link> of his own.
           </p>
           <p>
-            I have also kept three hermit crabs for about five years. Each one came from my niece and nephews,
-            who brought them home and handed them over to me about a month later.
+            I have also kept three hermit crabs for about five years. Each one started out with my niece and nephews
+            and ended up with me.
           </p>
           <p>
             A little over a year ago Dex's eyes started swelling and he stopped acting like himself. The vet
