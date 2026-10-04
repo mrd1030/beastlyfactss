@@ -6,6 +6,8 @@ Allowed exceptions (owner, 2026-10-04):
   (carePackages.js, carePackageCopy.js) may show a photo already on the site.
 - A fact photo may also appear on a Beastlypedia entry as its secondary image,
   but never as the entry's head (heroImage).
+- An animal's care guide hub and its encyclopedia entry are one page with a toggle,
+  so they count as one slot.
 The site-wide og-default.jpg share image is not counted.
 
 Usage, from the repo root:  python tools/image-audit/find_repeats.py
@@ -21,10 +23,8 @@ SKIP_IMAGES = {'/assets/og-default.jpg'}
 def slot(path, line):
     p = path.replace(os.sep, '/')
     base = os.path.basename(p)
-    if '/lib/data/guides/' in p:
-        return 'care guide hub (' + base[:-3] + ')'
-    if '/lib/data/encyclopedia/' in p:
-        return 'encyclopedia (' + base[:-3] + ')'
+    if '/lib/data/guides/' in p or '/lib/data/encyclopedia/' in p:
+        return 'hub and encyclopedia page (' + base[:-3] + ')'
     if '/lib/data/beastlypedia/' in p:
         kind = 'secondary' if 'secondaryImage' in line else 'head'
         return 'Beastfile ' + kind + ' (' + base[:-3] + ')'
