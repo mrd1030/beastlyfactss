@@ -29,6 +29,8 @@
 // what moved. legalAsOf is the month the book's state legal status was last
 // read; bump it after the monthly legal check even when nothing changed, since
 // only a real change to the book needs a new edition.
+// legalLabel is optional and replaces the words "State legal status" in that
+// line, for a book whose law page is narrower than a state-by-state survey.
 //
 // ---------------------------------------------------------------------------
 // storefront: where the buy button goes
@@ -462,6 +464,7 @@ export const CARE_PACKAGES = [
       },
     ],
     legalAsOf: 'October 2026',
+    legalLabel: 'Minnesota and New York release rules',
     history: [
       { edition: "3.1", date: "Oct 2026", text: "Now 49 pages. Costs: every item priced and rounded to the nearest $5; setup $310 to $615, monthly $10 to $30, the budget now over two pages. Other changes are wording only." },
       { edition: "3.0", date: "Oct 2026", text: "Rebuilt on the current outline, 48 pages. Safety: pH 6.5 to 7.5; fishless cycle dosed to 3 ppm; fish-in change of at least a third at 0.1 ppm; bag floated 20 to 30 minutes; adults fed once a day or the same ration split in two, no fasting day; ich treated with salt or malachite green until spots gone for days, heat no higher than 75°F; anchor worm dose 0.066 mg/L; no home antibiotic for fin rot; floor bare, or sand or gravel at least 1/2 in across; temperature changes no faster than 1°F an hour; outage surface agitation every 10 to 15 minutes in a small tank, 20 to 30 in a larger one; goldfish and koi can cross; never feed bread, refined starches, raw meat, cheese or onions. Legal: a new page on never releasing a goldfish, Minnesota and New York rules. Costs: equipment $105 to $270, monthly $10 to $30. Other changes are wording only." },
@@ -2367,7 +2370,7 @@ export const CARE_PACKAGES = [
     seoDescription: '47-page printable western hognose guide: the dry setup, prey by gram weight, the venom question from the bite research, and a state-by-state legal summary.',
     bullets: [
       'The enclosure sized by sex, the temperature gradient, every heat source on a thermostat, dry air and the one humid hide, optional UVB (ultraviolet B) light, and deep digging substrate on the cool end in one guide',
-      'Prey by gram weight, frozen-thawed and fed in a separate container, the refusing hognose, the hood and the death act, the venom question, a state-by-state legal summary, and six health pages from respiratory infection and scale rot to tissue at the vent, plus the winter slowdown',
+      'Prey by gram weight, frozen-thawed and fed in a separate container, the refusing hognose, the hood and the death act, the venom question, a state-by-state legal summary, and six health pages, from red flags and respiratory infection and scale rot through mites and parasites to reading droppings and hydration, plus the winter slowdown',
       'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom quick reference, outage and travel plan, pet-sitter sheet, and the owner, equipment, quarantine and vet logs',
     ],
     contents: [

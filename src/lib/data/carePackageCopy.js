@@ -420,7 +420,7 @@ export const CARE_PACKAGE_COPY = {
     ],
     answers: [
       'The one-bird-or-two decision explained up front',
-      'Real cage minimums, the bar-spacing safety limit, and where the cage goes',
+      'Real cage minimums, the bar spacing safety limit, and where the cage goes',
       'Chronic egg laying and egg binding covered plainly, egg binding on its own page',
       'Feather plucking treated as the health signal it is',
     ],
@@ -456,18 +456,18 @@ export const CARE_PACKAGE_COPY = {
   'russian-tortoise': {
     hook: 'An animal that can outlive its owner deserves the setup right.',
     heroParagraph:
-      'A 51-page printable manual with real ultraviolet B (UVB) and basking targets, the brumation decision and protocol, outdoor pens and escape-proofing, honest space requirements, the law in every state, and health triage, not the glass tank that is the wrong shape for this species.',
+      'A 51-page printable manual with real UVB (ultraviolet B) and basking targets, the brumation decision and protocol, outdoor pens and escape-proofing, honest space requirements, the law in every state, and health triage, not the glass tank that is the wrong shape for this species.',
     heroTicks: ['51 pages, print or view', 'Intermediate level', 'No external links inside the PDF'],
     roulette: [
-      'A glass tank that was the wrong shape and ventilation from day one',
+      'A closed glass tank that holds damp air and a wall it paces along',
       'UVB treated as optional instead of required',
       "No plan for winter, brumation just happens or doesn't",
       'Pyramiding and shell rot nobody explained how to spot',
     ],
     answers: [
-      'Real long-term space requirements, indoors and out: the floor, the target and why a tank is the wrong shape',
+      'Real long-term space requirements, indoors and out: the floor figure, the target, and the open table instead of a tank',
       'UVB, basking and night low targets stated plainly, with the equipment that controls them',
-      'The brumation decision and the protocol, fridge or insulated box, or warm all winter',
+      'The brumation decision and the protocol: a fridge or an insulated box, or kept warm all year',
       'Pyramiding, shell rot and metabolic bone disease called out where you cannot miss them',
     ],
     inside: [
@@ -510,7 +510,7 @@ export const CARE_PACKAGE_COPY = {
     heroTicks: ['49 pages, print or view', 'Beginner to intermediate', 'No external links inside the PDF'],
     roulette: [
       'A heat mat running bare, with no thermostat in sight',
-      'Humidity targets that sit 15 points apart between care sheets',
+      'Humidity targets that disagree from one care sheet to the next',
       'A snake that refuses food, and a forum that says it is dying',
       'Scale rot and respiratory infection nobody described until they were advanced',
     ],

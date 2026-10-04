@@ -385,7 +385,7 @@ export default function CarePackageProduct() {
               <p className="cp-muted text-sm mb-5">
                 {'Bought before? Re-download free from '}
                 <Link to="/care-packages/library/" className="underline">your library</Link>
-                {`.${pkg.legalAsOf ? ` State legal status as of ${pkg.legalAsOf}.` : ''}`}
+                {`.${pkg.legalAsOf ? ` ${pkg.legalLabel || 'State legal status'} as of ${pkg.legalAsOf}.` : ''}`}
               </p>
               <ul className="space-y-3 text-sm">
                 {pkg.history.map(h => (
