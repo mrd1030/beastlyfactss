@@ -1,0 +1,62 @@
+[
+ [
+  "All 20",
+  "Every cost table total equals the sum of its rows",
+  "PASS",
+  "Checked row by row; alternative paths (Syrian/dwarf, with/without chiller), animal and vet rows sit outside subtotals by design"
+ ],
+ [
+  "All 20",
+  "Every linked product priced at or below its row range",
+  "PASS",
+  "No row priced below its linked catalog product"
+ ],
+ [
+  "All 20",
+  "Hub Budget row and route line carry the setup totals",
+  "PASS",
+  "Checked all 20 against the cost guide"
+ ],
+ [
+  "All 20",
+  "Book carries the setup totals",
+  "PASS",
+  "White's tree frog book quotes setup with the frog ($365 to $780); site heading quotes setup with the exam ($345 to $720); both add up"
+ ],
+ [
+  "All 20",
+  "Hub list and cost rows link the same products",
+  "PASS",
+  "Two flags were label-text differences on the same product"
+ ],
+ [
+  "All 20",
+  "Shared gear links one product everywhere",
+  "PASS",
+  "Scale (Etekcity, 14 species), styptic (Kwik Stop, 5), clipper (Pet Republique, 4)"
+ ],
+ [
+  "Goldfish",
+  "Every row priced",
+  "NOTED",
+  "Soft rubber net and transfer container: no retail listing found; unpriced, outside the total"
+ ],
+ [
+  "Rabbit",
+  "Every row priced",
+  "NOTED",
+  "Baseboard protection: depends on the room; unpriced, outside the total"
+ ],
+ [
+  "Safety (step 1)",
+  "Gear that breaks a book's size rule",
+  "FIXED",
+  "Betta heater (hygger 25 W), hamster cage (40 gal breeder / BUCATSTATE 47 in), lovebird and canary cage (Prevue F040), cockatoo cage (Prevue Imperial); conure, parrotlet, zebra finch, flying squirrel cage links removed"
+ ],
+ [
+  "Hedgehog (not a package)",
+  "Prevue 528 linked as a 2x3 ft enclosure",
+  "OPEN",
+  "Outside the 20; for the site-wide pass"
+ ]
+]
