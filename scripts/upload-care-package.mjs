@@ -12,7 +12,11 @@
 // Usage:
 //   SUPABASE_URL=https://xxxx.supabase.co \
 //   SUPABASE_SERVICE_ROLE_KEY=sb_secret_... \
-//   node scripts/upload-care-package.mjs hamster "content/CAREPACKAGE Guides/rebuilt/Hamster_Care_Package_v2.2.pdf"
+//   node --use-system-ca scripts/upload-care-package.mjs hamster "content/CAREPACKAGE Guides/rebuilt/Hamster_Care_Package_v3.0.pdf"
+//
+// --use-system-ca is required on the desktop. Without it every upload dies
+// with UNABLE_TO_VERIFY_LEAF_SIGNATURE ("fetch failed"), because something on
+// the machine inspects HTTPS and only the Windows certificate store trusts it.
 //
 // The service role key is a secret and is not in this repo. Take it from
 // Supabase Dashboard -> Settings -> API Keys, run this once, and do not leave
@@ -32,7 +36,7 @@ const url = process.env.SUPABASE_URL;
 const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
 if (!packageId || !filePath) {
-  console.error('Usage: node scripts/upload-care-package.mjs <package-id> <path-to-pdf>');
+  console.error('Usage: node --use-system-ca scripts/upload-care-package.mjs <package-id> <path-to-pdf>');
   process.exit(1);
 }
 

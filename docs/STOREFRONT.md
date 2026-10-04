@@ -170,9 +170,14 @@ uses for likes and comments.
    ```
    SUPABASE_URL=https://ipqqeofzlwvfnunduuru.supabase.co \
    SUPABASE_SERVICE_ROLE_KEY=sb_secret_... \
-   node scripts/upload-care-package.mjs hamster \
-     "content/CAREPACKAGE Guides/rebuilt/Hamster_Care_Package_v2.2.pdf"
+   node --use-system-ca scripts/upload-care-package.mjs hamster \
+     "content/CAREPACKAGE Guides/rebuilt/Hamster_Care_Package_v3.0.pdf"
    ```
+
+   Keep `--use-system-ca`. Without it every upload from the desktop fails with
+   `UNABLE_TO_VERIFY_LEAF_SIGNATURE`: something on the machine inspects HTTPS,
+   and only the Windows certificate store trusts its certificate, not Node's
+   own list.
 
    Dashboard -> Storage -> care-packages -> Upload does the same thing. The
    script only exists so the path cannot be mistyped, which would silently

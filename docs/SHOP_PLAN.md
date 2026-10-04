@@ -29,7 +29,6 @@ Not done, and each one is a real blocker for real sales:
   details on the live account.
 - One Stripe product and price per package. Only the Hamster has one, and only
   in the Sandbox.
-- PDFs uploaded to the `care-packages` bucket. Only the Hamster is there.
 
 ## Next new package: Tetras, grouped (added 2026-10-03, Fable-reviewed)
 
@@ -246,11 +245,15 @@ Live prices are created later, on the live account, and go into
 
 ```
 SUPABASE_URL=... SUPABASE_SERVICE_ROLE_KEY=... \
-node scripts/upload-care-package.mjs <id> "content/CAREPACKAGE Guides/rebuilt/<File>_v<N>.pdf"
+node --use-system-ca scripts/upload-care-package.mjs <id> "content/CAREPACKAGE Guides/rebuilt/<File>_v<N>.pdf"
 ```
 
 Once per package, path `care-packages/<id>.pdf`. This needs the service role
-key, so it is a local-machine step, not a cloud session step.
+key, so it is a local-machine step, not a cloud session step. Keep
+`--use-system-ca`: on the desktop, every upload without it fails with
+`UNABLE_TO_VERIFY_LEAF_SIGNATURE`, because something on the machine inspects
+HTTPS and only the Windows certificate store trusts it. All 20 editions were
+uploaded this way on 2026-10-04.
 
 ### 6. Flip and test, one at a time
 
@@ -317,7 +320,7 @@ Every bucket file must be the edition the catalog and Worker name. Upload each
 package's PDF from `rebuilt/` before the branch that bumps it merges:
 
 ```
-node scripts/upload-care-package.mjs <id> "content/CAREPACKAGE Guides/rebuilt/<file>.pdf"
+node --use-system-ca scripts/upload-care-package.mjs <id> "content/CAREPACKAGE Guides/rebuilt/<file>.pdf"
 ```
 
 ## Sessions and model
