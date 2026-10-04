@@ -37,14 +37,14 @@ export const CARE_PACKAGE_COPY = {
       'A 47-page printable manual with the floor space and bedding depth the pet-shop kit cannot hold, wet tail recognized on sight, torpor told apart from death, the law in every state, and the routines that make a short life a good one.',
     heroTicks: [
       '47 pages, print or view',
-      'Syrian and dwarf, every portion by species',
+      'Beginner friendly',
       'No external links inside the PDF',
     ],
     roulette: [
       'Cage sizes that range from a shoebox to a sixth of a room',
       'Bedding advice measured in inches of liner, never in burrows',
       'Diarrhea that looks minor, and a hamster that is gone in two days',
-      'A cold, stiff hamster in January and no way to tell torpor from death',
+      'A cold, still hamster in January and no way to tell torpor from death',
     ],
     answers: [
       'One unbroken floor space target, in square inches and square centimeters, for Syrians and for dwarfs',
@@ -55,7 +55,7 @@ export const CARE_PACKAGE_COPY = {
     inside: [
       { emoji: '🏠', title: 'Enclosure and bedding', line: 'Unbroken floor space by species, bar spacing and where the cage goes, bedding depth and the study behind it, temperature, humidity and light with no heat lamp, and cleaning.' },
       { emoji: '🛞', title: 'The wheel, the sand bath and the rest', line: 'Solid wheel sizes by species, why the odometer is not a welfare score, the sand bath that is a species essential, and hides and furnishings.' },
-      { emoji: '🥣', title: 'Diet by species', line: 'The pellet staple and the schedule, weaning, fresh foods, hay and protein, treats and the never-feed list, water and why a hamster stops eating, and weight, body condition and aging.' },
+      { emoji: '🥣', title: 'Diet and feeding', line: 'The pellet staple and the schedule, weaning, fresh foods, hay and protein, treats and the never-feed list, water and why a hamster stops eating, and weight, body condition and aging.' },
       { emoji: '🤲', title: 'Handling, arrival and the law', line: 'Handling that stops the biting before it starts, body language, choosing a species and housing company, the first vet visit, sexing, torpor told apart from death, and where a hamster is legal.' },
       { emoji: '⚠️', title: 'Health and red flags', line: 'Wet tail, overgrown incisors and cheek pouches, tumors, skin problems and diabetes, respiratory infection and heat stress, antibiotics to ask about before the first dose, and germs you can catch.' },
       { emoji: '🧰', title: 'Owner tools', line: 'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom reference, routine, outage and heat wave plan, pet-sitter sheet, and the logs.' },
@@ -180,13 +180,13 @@ export const CARE_PACKAGE_COPY = {
   budgie: {
     hook: '"Easy first bird" isn\'t the same as easy cage.',
     heroParagraph:
-      'A 52-page printable manual with real cage size and bar spacing minimums, a plan for converting a seed eater to pellets, bird-proofing the house, and the health section for the mistakes that actually shorten a budgie\'s life.',
-    heroTicks: ['52 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
+      'A 52-page printable manual with the real cage size minimum and the bar spacing limit, a plan for converting a seed eater to pellets, bird-proofing the house, and the health section for the mistakes that actually shorten a budgie\'s life.',
+    heroTicks: ['52 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
     roulette: [
       'A cage sized for the bird, not for flight and exercise',
       'A seed-only diet that skips the nutrients pellets provide',
       'No idea what fatty liver or scaly face mites look like',
-      'Bar spacing nobody checked against a real minimum',
+      'Bar spacing nobody checked against the half-inch safety limit',
     ],
     answers: [
       'At least 18 by 18 by 18 inches for one bird, about 30 by 18 by 18 for a pair, and bars half an inch or less apart',
@@ -227,7 +227,7 @@ export const CARE_PACKAGE_COPY = {
     hook: 'Forgiving in some ways. Unforgiving in others.',
     heroParagraph:
       'A 48-page printable manual with the humidity cycle and the 85°F ceiling a crested gecko actually needs, diet powder on a real schedule, choosing a healthy gecko, the law in every state, and health triage, not a setup that quietly punishes small mistakes.',
-    heroTicks: ['48 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
+    heroTicks: ['48 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
     roulette: [
       'Humidity that spikes and crashes instead of cycling',
       'Diet powder treated as a rough guess, not a schedule',
@@ -305,7 +305,7 @@ export const CARE_PACKAGE_COPY = {
     ],
     whoFor: [
       'New goldfish owners setting up a proper tank for the first time',
-      'Intermediate keepers who want one consistent standard',
+      'Keepers who want one consistent standard',
       'Anyone tired of bowl advice and scattered forum threads',
     ],
     whatNot: [
@@ -365,7 +365,7 @@ export const CARE_PACKAGE_COPY = {
     hook: 'The belly heat number that actually matters.',
     heroParagraph:
       'A 52-page printable manual with belly heat, thermostat and probe placement, the three-hide humidity system, feeding by age and gut-loading, choosing a healthy gecko, the law in every state, and health triage, not a forum-average guess.',
-    heroTicks: ['52 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
+    heroTicks: ['52 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
     roulette: [
       'Belly heat ranges that swing 10 degrees between sources',
       'No mention of humidity until shed already gets stuck',
@@ -397,7 +397,7 @@ export const CARE_PACKAGE_COPY = {
     ],
     whoFor: [
       'New leopard gecko owners setting up their first habitat',
-      'Intermediate keepers who want one consistent standard',
+      'Keepers who want one consistent standard',
       'Anyone who prefers a printable manual over scattered advice',
     ],
     whatNot: [
@@ -411,7 +411,7 @@ export const CARE_PACKAGE_COPY = {
     hook: "Solo or paired isn't a small decision.",
     heroParagraph:
       'A 49-page printable manual that walks through the one-bird-or-two decision that shapes everything else, plus real cage sizing, converting a seed eater, bird-proofing the house, and health triage.',
-    heroTicks: ['49 pages, print or view', 'Beginner and intermediate friendly', 'No external links inside the PDF'],
+    heroTicks: ['49 pages, print or view', 'Intermediate level', 'No external links inside the PDF'],
     roulette: [
       'Solo versus pair decided by accident, not on purpose',
       "A cage sized like it's for a smaller, quieter bird",
@@ -420,7 +420,7 @@ export const CARE_PACKAGE_COPY = {
     ],
     answers: [
       'The one-bird-or-two decision explained up front',
-      'Real cage size, bar spacing and placement minimums',
+      'Real cage minimums, the bar-spacing safety limit, and where the cage goes',
       'Chronic egg laying and egg binding covered plainly, egg binding on its own page',
       'Feather plucking treated as the health signal it is',
     ],
@@ -644,7 +644,7 @@ export const CARE_PACKAGE_COPY = {
   tarantula: {
     hook: 'Keep it low, keep the water dish full, and leave it alone.',
     heroParagraph:
-      'A 49-page printable manual with an enclosure built low to limit how far a spider can fall, substrate depth by species type, the water that prevents the leading cause of death, molting start to finish, a safe rehousing method, and the law in every state.',
+      'A 49-page printable manual with an enclosure built low to limit how far a spider can fall, the substrate depth that takes the fall height away, the water that prevents the leading cause of death, molting start to finish, a safe rehousing method, and the law in every state.',
     heroTicks: ['49 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
     roulette: [
       'A tall glass enclosure and a heavy-bodied spider with somewhere to fall from',
@@ -691,7 +691,7 @@ export const CARE_PACKAGE_COPY = {
   // the same way as the four above.
 
   cockatiel: {
-    hook: 'A twenty-five-year cockatiel starts with the food bowl and a night light.',
+    hook: 'A long-lived cockatiel starts with the food bowl and a night light.',
     heroParagraph:
       'A 52-page printable manual with the cage and the bar spacing that is a safety limit, the night light that stops night frights, two schedules for converting a seed eater, the levers that prevent chronic egg laying, seven health pages, and the printable owner tools.',
     heroTicks: ['52 pages, print or view', 'Beginner friendly', 'No external links inside the PDF'],
@@ -836,7 +836,7 @@ export const CARE_PACKAGE_COPY = {
   'hognose-snake': {
     hook: 'The hood and the hiss are a bluff. The dry air is the real rule.',
     heroParagraph:
-      'A 47-page printable manual with the enclosure sized by sex, a dry setup at 30 to 50% humidity, prey by gram weight, what the hood, the hiss and the death act mean, the venom question answered from the bite research, a state-by-state legal summary, seven health pages, and the printable owner tools.',
+      'A 47-page printable manual with the enclosure sized by sex, a dry setup at 30 to 50% humidity, prey by gram weight, what the hood, the hiss and the death act mean, the venom question answered from the bite research, a state-by-state legal summary, six health pages, and the printable owner tools.',
     heroTicks: ['47 pages, print or view', 'Intermediate level', 'No external links inside the PDF'],
     roulette: [
       'Misting advice borrowed from a tropical snake, for an animal from the dry prairie',

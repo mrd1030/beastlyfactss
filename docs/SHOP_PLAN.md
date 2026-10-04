@@ -315,12 +315,11 @@ care guide page, the count recorded as `samplePages` in the catalog), and a
 strip of three related packages. Per package that is about 1.4MB of assets
 under `public/assets/care-packages/<id>/`, 20MB for the catalog.
 
-The Hamster bucket file is still v2.2. `rebuilt/Hamster_Care_Package_v2.3.pdf`
-is the edition the catalog and Worker now name, so upload it before the branch
-merges:
+Every bucket file must be the edition the catalog and Worker name. Upload each
+package's PDF from `rebuilt/` before the branch that bumps it merges:
 
 ```
-node scripts/upload-care-package.mjs hamster "content/CAREPACKAGE Guides/rebuilt/Hamster_Care_Package_v2.3.pdf"
+node scripts/upload-care-package.mjs <id> "content/CAREPACKAGE Guides/rebuilt/<file>.pdf"
 ```
 
 ## Sessions and model

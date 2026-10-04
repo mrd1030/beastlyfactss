@@ -80,7 +80,7 @@ export default function CarePackages() {
               </Link>
             </div>
             <ul className="cph-hero-muted flex flex-wrap gap-x-6 gap-y-2 text-sm font-body">
-              <li>✓ 35 to 47 pages each</li>
+              <li>✓ 42 to 54 pages each</li>
               <li>✓ Free first pages on every package</li>
               <li>✓ No external links inside the PDF</li>
             </ul>

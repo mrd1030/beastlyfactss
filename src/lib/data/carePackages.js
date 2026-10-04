@@ -2363,11 +2363,11 @@ export const CARE_PACKAGES = [
     versionDate: '2026-10-03',
     samplePages: 5,
     cover: '/assets/guides/hognose-snake.jpg',
-    blurb: 'Complete 47-page printable guide to the western hognose with the enclosure sized by sex, dry air at 30 to 50% humidity, prey by gram weight fed in a separate container, the venom question answered from the bite research, a state-by-state legal summary, and seven health pages.',
+    blurb: 'Complete 47-page printable guide to the western hognose with the enclosure sized by sex, dry air at 30 to 50% humidity, prey by gram weight fed in a separate container, the venom question answered from the bite research, a state-by-state legal summary, and six health pages.',
     seoDescription: '47-page printable western hognose guide: the dry setup, prey by gram weight, the venom question from the bite research, and a state-by-state legal summary.',
     bullets: [
       'The enclosure sized by sex, the temperature gradient, every heat source on a thermostat, dry air and the one humid hide, optional UVB (ultraviolet B) light, and deep digging substrate on the cool end in one guide',
-      'Prey by gram weight, frozen-thawed and fed in a separate container, the refusing hognose, the hood and the death act, the venom question, a state-by-state legal summary, and seven health pages from respiratory infection and scale rot to the winter slowdown',
+      'Prey by gram weight, frozen-thawed and fed in a separate container, the refusing hognose, the hood and the death act, the venom question, a state-by-state legal summary, and six health pages from respiratory infection and scale rot to the winter slowdown',
       'Setup checklist, emergency card, budget and shopping list, first 30 days, symptom quick reference, outage and travel plan, pet-sitter sheet, and the owner, equipment, quarantine and vet logs',
     ],
     contents: [
