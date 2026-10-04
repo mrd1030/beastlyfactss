@@ -488,7 +488,7 @@ export const invertebrateGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Tank", value: "A glass terrarium, 10 gallons for up to two adult crabs and at least 5 more gallons for each crab added, with a glass or acrylic lid that seals in humidity. Cover part of a screen lid with plastic wrap.", source: "hermit-crab-tank-setup-guide" },
+        { label: "Tank", value: "A glass terrarium with at least 10 gallons per small to medium crab and 15 per large, so 20 gallons for a pair, with a glass or acrylic lid that seals in humidity. Cover part of a screen lid with plastic wrap.", source: "hermit-crab-tank-setup-guide" },
         { label: "Group size", value: "At least two. They are social.", source: "hermit-crab-tank-setup-guide" },
         { label: "Temperature", value: "75 to 85°F, the warm side around 80°F, from a side- or back-mounted heat mat. Never under the tank: heat rising through deep substrate can kill a buried, molting crab.", source: "hermit-crab-tank-setup-guide" },
         { label: "Humidity", value: "75 to 85%, on a hygrometer, held with moist substrate, a sealed lid, and a moss pit.", source: "hermit-crab-tank-setup-guide" },
@@ -501,7 +501,7 @@ export const invertebrateGuides = [
         { label: "The first molt", value: "Every pet hermit crab is wild-caught, and the adjustment period is where most deaths happen. Isolate new crabs, change humidity and temperature gradually, and count a crab past the risk only after its first molt in your care.", source: "hermit-crab-health-issues-guide" },
         { label: "Food to avoid", value: "Copper sulfate, toxic to invertebrates, and ethoxyquin, a preservative that hides in fish meal without appearing on the label.", source: "hermit-crab-feeding-guide" },
         { label: "A lost limb", value: "Regrows over successive molts, first as a small bud.", source: "hermit-crab-health-issues-guide" },
-        { label: "Budget", value: "$5 to $40 per crab, roughly $90 to $350 for a complete setup, then $10 to $30 a month.", source: "hermit-crab-cost-guide" },
+        { label: "Budget", value: "$5 to $40 per crab, roughly $95 to $350 for a complete setup, then $10 to $30 a month.", source: "hermit-crab-cost-guide" },
         { label: "Lifespan", value: "10 years or more when kept well, and some reach 30.", source: "hermit-crab-cost-guide" },
         { label: "Adult size", value: "Up to 4 inches (10 cm) across, including legs." },
         { label: "Household pesticides", value: "Every insecticide sold for a home kills arthropods, and ant spray in the kitchen, a plug-in in the hallway, or a dog's flea treatment all reach an enclosure.", source: "invertebrate-pesticide-hazards-guide" },
@@ -529,7 +529,7 @@ export const invertebrateGuides = [
       { slug: "hermit-crab-enrichment-guide", line: "What the shell research actually found, how many shells a group needs, and the priority order for everything else." },
     ],
     buyList: [
-      "Glass terrarium, 10 gallons for up to two adult crabs, 5 more gallons for each crab added",
+      "Glass terrarium, at least 10 gallons per small to medium crab and 15 per large, 20 gallons for a pair",
       "A glass or acrylic lid that seals humidity in",
       "Play sand and coconut fiber for substrate",
       "Side- or back-mounted heat mat",
