@@ -43,7 +43,7 @@ Live editions (2026-10-04): bearded dragon 4.1; leopard gecko, crested gecko, ba
 
 ### Crested gecko (3.1, `crested-gecko-src`)
 - [ ] Glossary: IUCN (`pages_07.html:40`) and VCA (`:58`) out; CITES (`:12`) moves to the law page mini glossary.
-- [ ] Book: heat. `pages_02.html:53` says "many setups need no heat at all" and `pages_06.html:120` "If the room holds the range, skip the bulb and thermostat"; the site (cost guide FAQ, comparison, setup guide's 82 to 85°F basking spot, ReptiFiles) now says a small bulb on a thermostat is needed. Waiting on the owner's call; the book follows it. (Consistency sweep 2026-10-05.)
+- [ ] Gear: the fogger is left unlinked as the "or" alternative to the spray bottle (cost guide setup row).
 - [ ] Book: `pages_02.html:44` pair space "double the space of an 18×18×36 in" enclosure; the setup guide's single-adult minimum is 18x18x24 (the cost guide :85 says the same 18x18x36, so settle both). (Sweep 2026-10-05.)
 
 ### Gargoyle gecko (1.1, `gargoyle-gecko-src`)
