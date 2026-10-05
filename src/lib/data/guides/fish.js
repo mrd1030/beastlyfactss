@@ -792,7 +792,7 @@ export const fishGuides = [
     petType: "Fish",
     image: "/assets/guides/molly.jpg",
     tagline: "The easygoing livebearer that shrugs at water most fish would sulk in!",
-    seoTitle: "Molly Care Guide: Tank, Diet, and Health",
+    seoTitle: "Molly Fish Care Guide: Tank, Diet, Breeding, and Health",
     seoDescription: "Mollies need hard, alkaline water and real vegetables. Set up a true 20-gallon tank, settle the salt question, stop the shimmy, and plan for fry before buying.",
     funFact: "Unlike most freshwater aquarium fish, mollies are naturally a brackish-water species that can tightly regulate their salt and water balance well past normal seawater concentration. Whether a healthy freshwater tank needs aquarium salt added is genuinely disputed among experienced keepers though, some use it routinely, others argue consistent water changes do the same job without salt's downsides for live plants and snails.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
@@ -1159,7 +1159,7 @@ export const fishGuides = [
     petType: "Fish",
     image: "/assets/guides/swordtail.jpg",
     tagline: "The active, sword-tailed livebearer that's basically a guppy's bigger, livelier cousin!",
-    seoTitle: "Swordtail Care Guide: Tank, Stocking, and Health",
+    seoTitle: "Swordtail Fish Care Guide: Stocking, Breeding, and Health",
     seoDescription: "Two males is the classic swordtail stocking mistake. Set up a 29-gallon tank with a sealed lid, pick the ratio that keeps fins intact, and plan for the fry.",
     funFact: "Female swordtails that have already given birth can sometimes go on to develop a sword, male coloring, and even father broods of their own later in life. Hobbyists have reported the switch for generations, and scientists have studied it since the 1930s, though researchers still debate whether it's a true sex reversal or male traits simply emerging late in a fish that was missexed as a juvenile.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the

@@ -34,18 +34,64 @@ function needsPriceNote(rows, linkCovers) {
   );
 }
 
+// tierColumn: the index of a column holding a feeding tier ("Staple",
+// "Never"...). Those cells render as a colored pill, green for everyday
+// through red for never. Opt-in per table, so a "Never" in any other table
+// stays plain text. An unknown tier word falls back to gray.
+const TIER_STYLES = {
+  'staple': 'text-emerald-800 bg-emerald-100 dark:bg-emerald-950 dark:text-emerald-400',
+  // Not orange: tailwind.config.js overrides `orange` with one brand hex, so
+  // orange-100 and friends don't exist on this site.
+  'occasional': 'text-yellow-800 bg-yellow-100 dark:bg-yellow-950 dark:text-yellow-400',
+  'treat only': 'text-amber-900 bg-amber-200 dark:bg-amber-900 dark:text-amber-200',
+  'topper only': 'text-amber-900 bg-amber-200 dark:bg-amber-900 dark:text-amber-200',
+  'rare': 'text-amber-900 bg-amber-200 dark:bg-amber-900 dark:text-amber-200',
+  'never': 'text-red-800 bg-red-100 dark:bg-red-950 dark:text-red-400',
+};
+const TIER_FALLBACK = 'text-slate-700 bg-slate-100 dark:bg-slate-800 dark:text-slate-300';
+
+function tierCell(cell) {
+  if (typeof cell !== 'string') return cell;
+  const style = TIER_STYLES[cell.trim().toLowerCase()] || TIER_FALLBACK;
+  return (
+    <span className={`inline-block whitespace-nowrap rounded-full px-2.5 py-0.5 text-xs font-semibold ${style}`}>
+      {cell}
+    </span>
+  );
+}
+
+const STACK_TEXT_LENGTH = 30;
+
+function textLength(node) {
+  if (typeof node === 'string' || typeof node === 'number') return String(node).length;
+  if (Array.isArray(node)) return node.reduce((sum, n) => sum + textLength(n), 0);
+  if (React.isValidElement(node)) return textLength(node.props?.children);
+  return 0;
+}
+
 export default function ComparisonTable({
-  headers = [], 
-  rows = [], 
+  headers = [],
+  rows = [],
   className = '',
   linkCovers = false,
+  tierColumn,
 }) {
   if (!headers.length || !rows.length) return null;
 
+  // Phones: a table of 3+ columns with sentences in it squeezes every column
+  // to a sliver, so below md each row stacks into a card. The first cell (and
+  // a tier pill) is the title line; every other cell gets its header as a
+  // small label above it. Tables of short values (cost Low / High, two-column
+  // cost tables) fit a phone fine and stay tables.
+  const stacked = headers.length >= 3
+    && rows.some((row) => row.slice(1).some((cell) => textLength(cell) > STACK_TEXT_LENGTH));
+  const isTitleCell = (i) => i === 0 || i === tierColumn;
+  const s = (mobile, desktop) => (stacked ? `${mobile} ${desktop}` : '');
+
   return (
     <div className={`not-prose my-8 overflow-x-auto rounded-xl border border-border ${className}`}>
-      <table className="w-full text-sm">
-        <thead>
+      <table className={`w-full text-sm ${s('block', 'md:table')}`}>
+        <thead className={s('hidden', 'md:table-header-group')}>
           <tr className="border-b border-border bg-muted/50">
             {headers.map((header, index) => (
               <th 
@@ -57,18 +103,28 @@ export default function ComparisonTable({
             ))}
           </tr>
         </thead>
-        <tbody>
+        <tbody className={s('block', 'md:table-row-group')}>
           {rows.map((row, rowIndex) => (
-            <tr 
-              key={rowIndex} 
-              className="border-b border-border last:border-0 hover:bg-muted/30 transition-colors"
+            <tr
+              key={rowIndex}
+              className={`border-b border-border last:border-0 hover:bg-muted/30 transition-colors ${s('block py-3 space-y-1.5', 'md:table-row md:py-0')}`}
             >
               {row.map((cell, cellIndex) => (
-                <td 
-                  key={cellIndex} 
-                  className="px-4 py-3 text-muted-foreground"
+                <td
+                  key={cellIndex}
+                  data-label={stacked && !isTitleCell(cellIndex) ? headers[cellIndex] || undefined : undefined}
+                  // Padding is set per layout, never as a base class: py-3
+                  // beside py-0 resolves by CSS order, not class order.
+                  className={`px-4 text-muted-foreground ${
+                    !stacked ? 'py-3'
+                    : isTitleCell(cellIndex)
+                      ? `block py-0 md:table-cell md:py-3 ${cellIndex === 0 ? 'font-semibold text-foreground md:font-normal md:text-muted-foreground' : ''}`
+                      : 'block py-0 md:table-cell md:py-3 before:block before:text-xs before:font-semibold before:text-foreground/70 before:content-[attr(data-label)] md:before:content-none'
+                  }`}
                 >
-                  {linkCovers && cellIndex === 0 ? linkedCell(cell) : cell}
+                  {cellIndex === tierColumn
+                    ? tierCell(cell)
+                    : linkCovers && cellIndex === 0 ? linkedCell(cell) : cell}
                 </td>
               ))}
             </tr>
