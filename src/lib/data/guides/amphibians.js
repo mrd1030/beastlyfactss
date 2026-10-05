@@ -280,7 +280,7 @@ export const amphibianGuides = [
         { label: "Lighting", value: "No UVB needed for a nocturnal burrower, though a low level is optional. A low-wattage light on a 10 to 12 hour cycle.", source: "tiger-salamander-tank-setup-guide" },
         { label: "Feeding schedule", value: "Juveniles every one to two days, adults two to three times a week, at night, in measured amounts: it does not stop when full, and obesity is its commonest problem.", source: "tiger-salamander-tank-setup-guide" },
         { label: "Supplements", value: "Calcium with D3 plus a multivitamin on the feeders, every feeding while growing and every second to fourth as an adult. A thawed pinkie is a rare treat, never live.", source: "tiger-salamander-tank-setup-guide" },
-        { label: "Handling", value: "Avoided. If necessary, wet powder-free nitrile gloves and a brief session.", source: "tiger-salamander-handling-guide" },
+        { label: "Handling", value: "Avoided. If necessary, wet powder-free vinyl gloves (nitrile as a fallback, never latex) and a brief session.", source: "tiger-salamander-handling-guide" },
         { label: "Out of sight is normal", value: "Fossorial, so it spends most of its time underground. Rarely visible does not mean unhealthy.", source: "tiger-salamander-handling-guide" },
         { label: "Appetite loss", value: "A specific red flag in an animal this voracious, not routine pickiness.", source: "tiger-salamander-health-issues-guide" },
         { label: "Life stage change", value: "A larval salamander starts fully aquatic, like an axolotl, and the enclosure changes entirely to deep burrowable land as it metamorphoses. Normal, not something gone wrong.", source: "tiger-salamander-tank-setup-guide" },
