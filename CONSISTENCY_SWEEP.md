@@ -25,7 +25,7 @@ UVB tubes are replaced every 6 to 12 months on the maker's schedule.
 
 ## Needs the owner first
 
-- [ ] **Crested gecko heat.** Website now says a small bulb on a thermostat is
+- [x] **Crested gecko heat.** Settled 2026-10-05: the package was right (vets: heat only below about 72F, thermostat on any heat, thermometer either way); the site was corrected. Website now says a small bulb on a thermostat is
   needed (cost guide FAQ, comparison, matching the setup guide's 82-85F basking
   spot and ReptiFiles). The package says "many setups need no heat at all"
   (crested-gecko-src pages_02:53) and "if the room holds the range, skip the
@@ -79,7 +79,7 @@ UVB tubes are replaced every 6 to 12 months on the maker's schedule.
 - [ ] African fat-tail: health guide :113 "book a vet visit if the gecko stops
   eating" vs feeding guide :93/:81 seasonal fasts are normal (and :95 repeats
   the vet line). Owner: health guide, needs a seasonal-fast exception.
-- [ ] Crested gecko heat: see "Needs the owner first".
+- [x] Crested gecko heat: settled, see "Needs the owner first".
 - [ ] Guinea pig feeding guide :62 vitamin C "2 to 3 times" an adult's when
   growing/pregnant vs scurvy guide :88 30-40 mg vs 20-25 mg (~1.5x). Owner:
   scurvy guide.
