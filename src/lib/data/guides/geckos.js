@@ -230,7 +230,7 @@ export const geckoGuides = [
         "A tail that stays deformed despite adding hides (possible FTS)",
         "Any sign of parasites or impaction",
       ],
-      vetLine: "Retained shed wraps a toe like a tourniquet until it dies, so a stuck band is a same-day soak. New geckos are quarantined and given a fecal exam before joining a collection.",
+      vetLine: "Retained shed wraps a toe like a tourniquet until it dies, so early stuck shed gets a warm soak, and a tight band or a darkened toe goes to a vet. New geckos are quarantined and given a fecal exam before joining a collection.",
     },
     routes: [
       { slug: "gargoyle-gecko-cost-guide", line: "$50 to $300 for a common animal and past $1,000 for a morph, $335 to $630 to set up, $320 to $565 a year, and what a 15-to-20-year lifespan costs." },

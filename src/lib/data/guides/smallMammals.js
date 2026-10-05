@@ -315,7 +315,7 @@ export const smallMammalGuides = [
         { label: "Cage type", value: "A wire cage with a solid sealed base, never a glass tank. A tank traps the ammonia that drives the respiratory disease rats are prone to.", source: "rat-tank-setup-guide" },
         { label: "Cage size", value: "24x24x24 inches is the minimum for a single rat, and you are keeping at least two, so it is a starting point. Cages built for ferrets or chinchillas are usually the right size.", source: "rat-tank-setup-guide" },
         { label: "Bar spacing", value: "About half an inch or less. At three-quarters of an inch an adult can get its head stuck.", source: "rat-tank-setup-guide" },
-        { label: "Temperature", value: "66 to 73°F ideal, fine across 64 to 79°F. They cannot sweat or pant, and heat stress becomes a real risk above about 86°F.", source: "rat-tank-setup-guide" },
+        { label: "Temperature", value: "66 to 73°F ideal, fine across 64 to 79°F. They cannot sweat or pant, and heat stress becomes a real risk above about 80°F.", source: "rat-tank-setup-guide" },
         { label: "Bedding", value: "Paper or cellulose, changed at least twice a week so ammonia does not build. No sawdust, cedar, or pine.", source: "rat-tank-setup-guide" },
         { label: "Wheel", value: "Solid-surface, at least 12 inches and ideally 14 to 16 for adults, especially males. A small wheel forces an arched spine.", source: "rat-tank-setup-guide" },
         { label: "Company", value: "Never one. Two is a minimum and a small same-sex group is better; single housing is a welfare problem no enrichment fixes.", source: "rat-enrichment-guide" },
