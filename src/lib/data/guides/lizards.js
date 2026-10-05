@@ -286,7 +286,7 @@ export const lizardGuides = [
       { slug: "bearded-dragon-tank-setup-guide", line: "The full temperature table, UVB distance and replacement, humidity, and the substrate that will not impact." },
       { slug: "bearded-dragon-feeding-guide", line: "A plate that flips from mostly insects to mostly greens with age, gut-loading and calcium dust, the foods to avoid, and brumation versus a vet visit." },
       { slug: "bearded-dragon-safe-foods-guide", line: "Staple greens, occasional foods, the daily salad, and the never-feed list." },
-      { slug: "bearded-dragon-handling-guide", line: "Wait 7 to 14 days, scoop from below, and the signals that end a session." },
+      { slug: "bearded-dragon-handling-guide", line: "Wait 7 to 14 days, scoop from below, the signals that end a session, and how to trim the claws." },
       { slug: "bearded-dragon-health-issues-guide", line: "Metabolic bone disease, impaction, parasites, yellow fungus, atadenovirus, and the list that means the vet today." },
       { slug: "bearded-dragon-brumation-guide", line: "How to tell brumation from illness, the pre-brumation vet check, and what a normal three months looks like." },
       { slug: "bearded-dragon-growth-weight-checks-guide", line: "Weekly weigh-ins, the growth reference by age, and the 10 percent drop that means a vet." },
