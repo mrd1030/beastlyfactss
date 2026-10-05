@@ -1457,13 +1457,13 @@ export default function Beastle() {
           <h2 className="font-display font-bold text-xl text-foreground mb-3">About Beastle</h2>
           <HowToPlay />
           <p className="text-sm font-body text-muted-foreground leading-relaxed mt-2">
-            {'Every answer comes from the '}
+            {'The daily animal always comes from the '}
             <Link to="/encyclopedia/" className="font-bold text-secondary hover:underline">Encyclopedia</Link>
             {' or '}
             <Link to="/beastlypedia/" className="font-bold text-secondary hover:underline">Beastlypedia</Link>
-            {', so each solve ends with the real animal and where to read more. The bonus round draws on our '}
+            {'. Unlimited mixes those with every animal in our '}
             <Link to="/facts/" className="font-bold text-secondary hover:underline">animal facts</Link>
-            {', and every one you get right goes into the field journal in '}
+            {', so each solve ends with the real animal and where to read more. The bonus round draws on the facts too, and every one you get right goes into the field journal in '}
             <Link to="/pack/" className="font-bold text-secondary hover:underline">My Pack</Link>
             .
           </p>
