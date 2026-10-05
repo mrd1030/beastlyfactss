@@ -627,9 +627,9 @@
     "path": "/content/guides/african-fat-tail-cost-guide.mdx",
     "slug": "african-fat-tail-cost-guide",
     "title": "How Much Does an African Fat-Tailed Gecko Really Cost?",
-    "seoTitle": "Fat-Tailed Gecko Price: $75 to $600, Plus $325 to $580 Setup",
+    "seoTitle": "Fat-Tailed Gecko Price: $75 to $600, Plus $485 to $835 Setup",
     "seoDescription": null,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "African fat-tailed geckos cost more upfront than most beginner geckos, and morphs push that number considerably higher, but the ongoing bills stay modest.",
     "date": "2026-07-26",
@@ -660,29 +660,30 @@
       },
       {
         "q": "What does a full setup cost before the gecko?",
-        "a": "Roughly $325 to $500 without UVB, $370 to $580 with the optional low-output UVB. That covers a 36x18x18 inch enclosure, an under-tank heat mat and thermostat, substrate, three hides, a thermometer/hygrometer, and a water dish."
+        "a": "$485 to $835 for the setup: a 36x18x18 inch enclosure, an under-tank heat mat and thermostat, three hides, sphagnum moss, the burrowing substrate, a thermometer/hygrometer, an infrared gun, a gram scale, a water dish, the optional low-output UVB and its timer, feeding tongs, cork and slate, and the first supply of calcium, calcium with D3 and multivitamin. Without the UVB and timer it is $375 to $680. The first vet exam and fecal test bring the full setup to $585 to $1,050."
       },
       {
         "q": "What are the ongoing monthly costs?",
-        "a": "Roughly $10 to $25 a month, mostly feeders: gut-loaded crickets, dubia roaches, occasional mealworms, plus calcium and multivitamin supplements. Heat mat and optional UVB electricity is modest."
+        "a": "$10 to $25 a month for food and supplements, mostly feeders: gut-loaded crickets, dubia roaches, occasional mealworms, plus about $5 a month in supplement top-ups. With two UVB tubes a year and the annual exam and fecal test, a healthy adult runs $270 to $570 a year. Electricity for the heat mat and optional UVB is modest."
       },
       {
         "q": "How long do African fat-tailed geckos live, and how does that affect budgeting?",
-        "a": "Plan for 15 to 20 years; the best-documented captive record is just over 16. At $220 to $515 a year for a healthy adult, that is roughly $3,300 to $7,700 over 15 years before the animal and the first setup."
+        "a": "Plan for 15 to 20 years; the best-documented captive record is just over 16. At $270 to $570 a year for a healthy adult, that is roughly $4,050 to $8,550 over 15 years before the animal and the first setup."
       }
     ],
     "relatedProducts": [
       "enclosure-repti-zoo-36x18x18-50gal",
-      "dimming-thermostat-reptizoo-pid",
+      "under-tank-heat-mat-thermostat-kit",
       "hide-exo-terra-gecko-cave-medium",
-      "calcium-repashy-plus-6oz"
+      "calcium-zoo-med-without-d3",
+      "uvi-meter-solarmeter-6-5r"
     ],
     "factFile": false,
     "animalDay": null,
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
+    "sourceCount": 6,
     "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -766,7 +767,7 @@
     "title": "African Fat-Tailed Gecko Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do African Fat-Tailed Geckos Eat? Diet and Schedule",
     "seoDescription": "African fat-tailed gecko feeding: a fat-storing tail lets adults fast for weeks to months. Schedule by age, phosphorus-free calcium, and what never to feed.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "The tail is a fat reserve, which is why healthy adults can go months without eating and be completely fine. Here's how to tell that from real trouble.",
     "date": "2026-07-31",
@@ -818,7 +819,7 @@
       }
     ],
     "relatedProducts": [
-      "calcium-repashy-plus-6oz",
+      "calcium-zoo-med-without-d3",
       "feeding-tongs-lasnten-long-rubber-tip"
     ],
     "factFile": false,
@@ -898,7 +899,7 @@
     "title": "Common African Fat-Tailed Gecko Health Issues",
     "seoTitle": "African Fat-Tailed Gecko Health Issues: Signs & Causes",
     "seoDescription": "African fat-tailed gecko health: metabolic bone disease is the most serious risk from missed calcium, D3, or UVB. Retained shed is the most common complaint.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Fat-tailed geckos are hardy when their two biggest needs, heat and humidity, are met. Nearly every common issue traces back to one of those two things.",
     "date": "2026-07-26",
@@ -947,8 +948,8 @@
     "relatedProducts": [
       "hide-exo-terra-gecko-cave-medium",
       "sphagnum-moss",
-      "dimming-thermostat-reptizoo-pid",
-      "uvb-zoo-med-5-0-t5-ho-14in-hood",
+      "thermostat-bn-link-on-off",
+      "arcadia-lumenize-prot5-24in-14w-2-5pct-shadedweller-max",
       "calcium-repashy-plus-6oz"
     ],
     "factFile": false,
@@ -968,7 +969,7 @@
     "title": "African Fat-Tailed Gecko Enclosure Setup: Built for the Ground, Not the Branches",
     "seoTitle": "African Fat-Tailed Gecko Enclosure Setup Guide",
     "seoDescription": "African fat-tailed gecko setup: a 36x18-inch floor minimum, warm side at 88-92F on a thermostat, a humid hide at 70-80%, and 4+ inches of burrowing substrate.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Unlike most of the geckos commonly kept as pets, fat-tailed geckos are ground-dwellers and burrowers, not climbers, and the whole setup should reflect that.",
     "date": "2026-07-26",
@@ -1017,13 +1018,13 @@
     "relatedProducts": [
       "enclosure-repti-zoo-36x18x18-50gal",
       "tank-aqueon-40-breeder",
-      "dimming-thermostat-reptizoo-pid",
+      "under-tank-heat-mat-thermostat-kit",
       "hide-exo-terra-gecko-cave-medium",
       "sphagnum-moss",
       "substrate-zoo-med-reptisand-burrowing",
       "infrared-temp-gun",
       "shallow-water-dish",
-      "uvb-zoo-med-5-0-t5-ho-14in-hood"
+      "arcadia-lumenize-prot5-24in-14w-2-5pct-shadedweller-max"
     ],
     "factFile": false,
     "animalDay": null,
@@ -2205,7 +2206,7 @@
     "path": "/content/guides/angelfish-cost-guide.mdx",
     "slug": "angelfish-cost-guide",
     "title": "How Much Does Angelfish Ownership Really Cost?",
-    "seoTitle": "Angelfish Price: $3 to $50, Plus $410 to $640 Setup",
+    "seoTitle": "Angelfish Price: $3 to $50, Plus $395 to $640 Setup",
     "seoDescription": null,
     "lastUpdated": "2026-09-25",
     "noIndex": false,
@@ -2238,7 +2239,7 @@
       },
       {
         "q": "What does a proper angelfish tank setup cost?",
-        "a": "Roughly $410 to $640 for the tank and stand, filtration, a heater, LED lighting, and substrate, driftwood, and broadleaf plants. A 55-gallon tank suits a small group, while a single fish can work in a 29-gallon tall tank, height matters more than length for this species."
+        "a": "Roughly $395 to $640 for the tank and stand, filtration, a heater, LED lighting, and substrate, driftwood, and broadleaf plants. A 55-gallon tank suits a small group, while a single fish can work in a 29-gallon tall tank, height matters more than length for this species."
       },
       {
         "q": "What are the ongoing monthly costs for an angelfish?",
@@ -3696,9 +3697,9 @@
     "path": "/content/guides/axolotl-cost-guide.mdx",
     "slug": "axolotl-cost-guide",
     "title": "How Much Does an Axolotl Really Cost?",
-    "seoTitle": "Axolotl Price: $30 to $100, Plus $120 to $375 Setup",
-    "seoDescription": "Axolotl cost breakdown: $30-100 for the animal, $270-775 for a full setup with a chiller, and $15-45 a month, the chiller is the real budget driver.",
-    "lastUpdated": "2026-10-02",
+    "seoTitle": "Axolotl Price: $30 to $100, Plus $185 to $530 Setup",
+    "seoDescription": "Axolotl cost breakdown: $30-100 for the animal, $335-1,180 for a full setup with a chiller, and $15-45 a month, the chiller is the real budget driver.",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Axolotls look deceptively simple to keep, a tank of water and a strange, smiling salamander. The cost driver isn't obvious until you get into the specifics: keeping the water cold enough is what determines your budget.",
     "date": "2026-07-18",
@@ -3729,11 +3730,11 @@
       },
       {
         "q": "What does a full axolotl setup cost, including a chiller?",
-        "a": "Plan on $120 to $375 for a basic setup, or $270 to $775 once you factor in a proper chiller. The chiller is the single item that does the most to separate the low and high ends of that range."
+        "a": "Plan on $185 to $530 for a basic setup, covering the tank, a secure lid, low-flow filtration, fine sand, hides, a cooling fan, water conditioner, a water thermometer, a test kit and the first pellets, or $335 to $1,180 once you factor in a proper chiller. The chiller is the single item that does the most to separate the low and high ends of that range."
       },
       {
         "q": "What are the ongoing monthly costs for an axolotl?",
-        "a": "Around $15 to $45 a month, with food (nightcrawlers) running $5 to $15 of that. The rest goes to water conditioner, filter media, and the electricity a chiller draws, which varies a lot by climate and season."
+        "a": "Around $15 to $45 a month, with food (nightcrawlers and pellet top-ups) running $5 to $15 of that. The rest goes to water conditioner top-ups, filter media, and the electricity a chiller draws, which varies a lot by climate and season."
       },
       {
         "q": "When does an axolotl need a chiller?",
@@ -3746,8 +3747,12 @@
       "aquarium-chiller-axolotl",
       "aquarium-chiller-jbj-arctica-titanium",
       "water-conditioner",
-      "digital-thermometer-hygrometer-combo",
-      "water-test-kit"
+      "paizoo-fish-tank-thermometer",
+      "water-test-kit",
+      "glass-lid-aqueon-versa-top-30in",
+      "hide-cave-aquarium-decoration",
+      "aquarium-chiller-fan-budget",
+      "soft-pellets-axolotl"
     ],
     "factFile": false,
     "animalDay": null,
@@ -4094,7 +4099,7 @@
     "title": "Axolotl Tank Setup: Cold Water and No Gravel",
     "seoTitle": "Axolotl Tank Setup Guide",
     "seoDescription": "Axolotl tank setup essentials: a 20-gallon long minimum, water kept at 60-64°F with no heater, and fine sand under 1mm or bare bottom, never gravel.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Axolotl husbandry comes down to a short list of rules that matter a lot: keep the water cold, skip the gravel, and don't overthink the rest. Get those two things right and this is a manageable pet.",
     "date": "2026-07-18",
@@ -4140,7 +4145,7 @@
       "tank-20-gallon-long",
       "aquarium-chiller-axolotl",
       "aquarium-chiller-jbj-arctica-titanium",
-      "digital-thermometer-hygrometer-combo",
+      "paizoo-fish-tank-thermometer",
       "water-test-kit",
       "sponge-filter",
       "soft-pellets-axolotl"
@@ -4161,10 +4166,10 @@
     "slug": "ball-python-cost-guide",
     "title": "How Much Does a Ball Python Really Cost?",
     "seoTitle": "How Much Does a Ball Python Really Cost?",
-    "seoDescription": "Ball python costs: $40-100 for a standard snake, $300-800 for a full PVC setup, and just $210-550 a year after, one of the cheapest 20-30 year pets around.",
-    "lastUpdated": "2026-10-02",
+    "seoDescription": "Ball python costs: $40 to $100 for a standard snake, $510 to $1,245 for a full PVC setup, and $290 to $635 a year after, one of the cheapest 20-30 year pets.",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
-    "excerpt": "Ball pythons have one of the best cost-to-lifespan ratios of any commonly kept reptile: $300-800 to set up, then low costs for the 20-30 years after.",
+    "excerpt": "Ball pythons have one of the best cost-to-lifespan ratios of any commonly kept reptile: $510 to $1,245 to set up, then $290 to $635 a year for the 20-30 years after.",
     "date": "2026-07-07",
     "category": "Reptiles",
     "categories": [
@@ -4193,7 +4198,7 @@
       },
       {
         "q": "Is a ball python expensive to keep long term?",
-        "a": "No, and this is one of its biggest selling points. After the first year, ongoing costs run $210 to $550 a year, the yearly vet exam included, and spread over a 20 to 30 year lifespan, that's one of the lowest per-year costs of any exotic pet."
+        "a": "No, and this is one of its biggest selling points. After the first year, ongoing costs run $290 to $635 a year, the yearly vet exam and two UVB tubes included, and spread over a 20 to 30 year lifespan, that's one of the lowest per-year costs of any exotic pet."
       },
       {
         "q": "Why does the enclosure material affect the price so much?",
@@ -4206,17 +4211,18 @@
     ],
     "relatedProducts": [
       "pvc-enclosure-4x2x2",
-      "under-tank-heat-mat-thermostat-kit",
+      "radiant-heat-panel-reptile-basics-80w",
       "digital-thermometer-hygrometer-combo",
       "cypress-mulch-substrate",
-      "large-soakable-water-dish"
+      "large-soakable-water-dish",
+      "uvb-arcadia-forest-6"
     ],
     "factFile": false,
     "animalDay": null,
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
+    "sourceCount": 6,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -4429,7 +4435,7 @@
     "title": "Common Ball Python Health Issues and What Causes Them",
     "seoTitle": "Ball Python Health Issues: Signs & Causes",
     "seoDescription": "Ball python respiratory infection is the signature illness, spiking each winter from low heat or humidity. Scale rot, mouth rot, and thermal burns follow.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Ball pythons are sensitive to husbandry mistakes in specific, predictable ways. Most of what shows up here traces back to temperature, humidity, or hygiene.",
     "date": "2026-07-07",
@@ -4473,7 +4479,7 @@
     ],
     "relatedProducts": [
       "digital-thermometer-hygrometer-combo",
-      "under-tank-heat-mat-thermostat-kit",
+      "thermostat-bn-link-on-off",
       "fine-mist-spray-bottle",
       "sphagnum-moss"
     ],
@@ -4549,7 +4555,7 @@
     "title": "Ball Python Enclosure Setup: Humidity Is the Detail That Makes or Breaks It",
     "seoTitle": "Ball Python Enclosure Setup Guide",
     "seoDescription": "Ball python setup now means a 4x2x2ft enclosure, not a small tub. Keep 88-92°F basking heat and humidity at 55-65%, rising to 70-80% during a shed.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Ball python husbandry has shifted toward bigger, more furnished enclosures. Here's what an adult setup needs, and why humidity deserves more attention than it gets.",
     "date": "2026-07-07",
@@ -4593,7 +4599,7 @@
     ],
     "relatedProducts": [
       "pvc-enclosure-4x2x2",
-      "under-tank-heat-mat-thermostat-kit",
+      "thermostat-bn-link-on-off",
       "digital-thermometer-hygrometer-combo",
       "cypress-mulch-substrate",
       "sphagnum-moss"
@@ -4829,7 +4835,7 @@
     "title": "Bearded Dragon Brumation: Triggers, the Routine, and When to Worry",
     "seoTitle": "Bearded Dragon Brumation Guide: What to Expect",
     "seoDescription": "Bearded dragon brumation typically runs 1 to 3 months. Covers the pre-brumation vet check, the weekly routine, and clear signs it has gone on too long.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "A bearded dragon that stops eating and sleeps for weeks might just be brumating. Here's the pre-brumation vet check, the weekly routine, and how long it should take.",
     "date": "2026-09-04",
@@ -4877,7 +4883,7 @@
     ],
     "relatedProducts": [
       "digital-thermometer-hygrometer-combo",
-      "calcium-repashy-superfoods-plus-4oz",
+      "calcium-zoo-med-without-d3",
       "feeding-tongs-lasnten-long-rubber-tip"
     ],
     "factFile": false,
@@ -4895,11 +4901,11 @@
     "path": "/content/guides/bearded-dragon-cost-guide.mdx",
     "slug": "bearded-dragon-cost-guide",
     "title": "How Much Does a Bearded Dragon Really Cost?",
-    "seoTitle": "Bearded Dragon Price: $40 to $100, Plus $400 to $800 Setup",
+    "seoTitle": "Bearded Dragon Price: $40 to $100, Plus $575 to $1,280 Setup",
     "seoDescription": null,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
-    "excerpt": "What a bearded dragon costs: $400-800 to set up right, $73-142 a month after that, and the vet bills correct husbandry prevents.",
+    "excerpt": "What a bearded dragon costs: $575 to $1,280 to set up right, $75 to $145 a month after that, and the vet bills correct husbandry prevents.",
     "date": "2026-07-05",
     "category": "Reptiles",
     "categories": [
@@ -4924,11 +4930,11 @@
     "faqs": [
       {
         "q": "Is a bearded dragon a cheap pet to own?",
-        "a": "The dragon itself is cheap, $40 to $100 for a standard morph. The equipment around it isn't optional and isn't cheap, so the honest answer is that the animal is affordable but the correct setup for it is a real expense, roughly $400 to $800 before the dragon even arrives."
+        "a": "The dragon itself is cheap, $40 to $100 for a standard morph. The equipment around it isn't optional and isn't cheap, so the honest answer is that the animal is affordable but the correct setup for it is a real expense, roughly $575 to $1,280 before the dragon even arrives."
       },
       {
         "q": "What's the single most expensive part of bearded dragon ownership?",
-        "a": "Upfront, it's the enclosure and UVB fixture together, often $250 to $650 of the initial $400 to $800 budget. Long term, the expense to fear is an unbudgeted vet emergency like impaction surgery ($800 to $2,500), which correct husbandry mostly prevents in the first place."
+        "a": "Upfront, it's the enclosure and UVB fixture together, $310 to $630 of the initial $575 to $1,280 budget. Long term, the expense to fear is an unbudgeted vet emergency like impaction surgery ($800 to $2,500), which correct husbandry mostly prevents in the first place."
       },
       {
         "q": "Can I buy a smaller starter enclosure to save money at first?",
@@ -4940,17 +4946,18 @@
       }
     ],
     "relatedProducts": [
-      "arcadia-t5-uvb-36in-14pct-dragon",
-      "under-tank-heat-mat-thermostat-kit",
+      "arcadia-lumenize-prot5-36in-12pct",
+      "thermostat-vivarium-electronics-ve-200",
       "digital-thermometer-hygrometer-combo",
-      "infrared-temp-gun"
+      "infrared-temp-gun",
+      "uvi-meter-solarmeter-6-5r"
     ],
     "factFile": false,
     "animalDay": null,
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 6,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -4962,7 +4969,7 @@
     "title": "Female Bearded Dragons: Eggs, Lay Boxes, and Egg Binding",
     "seoTitle": "Bearded Dragon Eggs & Egg Binding (Dystocia) Guide",
     "seoDescription": "Female bearded dragons lay infertile eggs without a male. Gravid signs, a lay box build, calcium needs, and the dystocia (egg binding) signs that need a vet.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Female bearded dragons can lay infertile eggs without ever meeting a male. Here's how to spot a gravid dragon, build a lay box, and recognize egg binding before it becomes an emergency.",
     "date": "2026-09-04",
@@ -5015,7 +5022,7 @@
       }
     ],
     "relatedProducts": [
-      "calcium-repashy-superfoods-plus-4oz",
+      "calcium-zoo-med-without-d3",
       "soaking-tub-large-38in",
       "infrared-temp-gun"
     ],
@@ -5107,7 +5114,7 @@
     "title": "Bearded Dragon Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Bearded Dragons Eat? Diet and Feeding Schedule",
     "seoDescription": "Bearded dragon diet flips with age, mostly insects as juveniles, mostly greens as adults. Gut-load and calcium-dust every feeder, and skip avocado, it's toxic.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-05",
     "noIndex": false,
     "excerpt": "Why a bearded dragon's plate should flip from mostly bugs to mostly greens as it grows up, and how to tell brumation from something that needs a vet.",
     "date": "2026-07-27",
@@ -5160,7 +5167,7 @@
       }
     ],
     "relatedProducts": [
-      "calcium-repashy-superfoods-plus-4oz",
+      "calcium-zoo-med-without-d3",
       "feeding-tongs-lasnten-long-rubber-tip"
     ],
     "factFile": false,
@@ -5313,7 +5320,7 @@
     "title": "Common Bearded Dragon Health Issues and What Causes Them",
     "seoTitle": "Bearded Dragon Health Issues: Signs & Causes",
     "seoDescription": "Metabolic bone disease is the most common serious bearded dragon illness, hitting dragons under 2 hardest. No poop for 5+ days signals impaction, see a vet.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Most serious bearded dragon health problems trace back to husbandry, not bad luck. Here's what to watch for, from MBD to yellow fungus disease, and when to call a vet.",
     "date": "2026-07-05",
@@ -5364,7 +5371,7 @@
       }
     ],
     "relatedProducts": [
-      "arcadia-t5-uvb-36in-14pct-dragon",
+      "arcadia-lumenize-prot5-36in-12pct",
       "digital-thermometer-hygrometer-combo",
       "infrared-temp-gun"
     ],
@@ -5385,7 +5392,7 @@
     "title": "Is It Legal to Own a Bearded Dragon? State-by-State Guide",
     "seoTitle": "Are Bearded Dragons Legal? Two Places Say No",
     "seoDescription": "Bearded dragons are legal in 46 of 52 US jurisdictions. Hawaii and DC bar them, New Jersey needs a permit, and Maine names the species on its cleared list.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "The bearded dragon is the most commonly kept pet lizard in the country and clears 46 of 52 jurisdictions without a permit. Its home country stopped exporting live native reptiles in 1982, which is why every animal in the trade is captive-bred stock.",
     "date": "2026-09-11",
@@ -5444,7 +5451,7 @@
     "title": "Bearded Dragon Safe Foods List: Staple, Occasional, and Never Foods",
     "seoTitle": "Bearded Dragon Food List: What's Safe to Feed (Chart)",
     "seoDescription": "Full bearded dragon food list: staple, occasional, rare, and never foods for insects, greens, vegetables, and fruit, plus the prey-size rule and gut-loading.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-05",
     "noIndex": false,
     "excerpt": "Every feeder insect, green, vegetable, and fruit a bearded dragon can eat, sorted into staple, occasional, rare, and never, with the reason behind each tier.",
     "date": "2026-09-12",
@@ -5501,7 +5508,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -5513,7 +5520,7 @@
     "title": "The Bearded Dragon Starter Shopping List (Buy Once, Cry Once)",
     "seoTitle": "Bearded Dragon Shopping List: Buy Once, Skip the Kit",
     "seoDescription": "The buy-once bearded dragon setup list: a real 4x2x2 enclosure, T5 UVB, a thermostat, and feeders, plus the pet store kit items to skip entirely.",
-    "lastUpdated": "2026-09-01",
+    "lastUpdated": "2026-10-04",
     "noIndex": false,
     "excerpt": "The buy-once bearded dragon setup list: a real 4x2x2 enclosure, T5 UVB, a thermostat, and feeders, plus the pet store kit items to skip entirely.",
     "date": "2026-09-01",
@@ -5568,7 +5575,7 @@
     "title": "Bearded Dragon Enclosure Setup: Temperature, UVB, and Everything Else",
     "seoTitle": "Bearded Dragon Enclosure Setup Guide",
     "seoDescription": "Bearded dragon enclosure setup: 4x2x2 ft minimum, 95-110°F basking heat, and a T5 HO UVB tube 16-18 inches out, the one piece worth spending on.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-05",
     "noIndex": false,
     "excerpt": "Bearded dragon husbandry has moved on from what old care sheets say. Bigger enclosures, stronger UVB, and more careful temperature gradients are now the standard.",
     "date": "2026-07-05",
@@ -5611,7 +5618,7 @@
       }
     ],
     "relatedProducts": [
-      "arcadia-t5-uvb-36in-14pct-dragon",
+      "arcadia-lumenize-prot5-36in-12pct",
       "infrared-temp-gun",
       "cork-bark-round-hide",
       "climbing-branch-mopani-wood",
@@ -5634,7 +5641,7 @@
     "title": "Bearded Dragon vs. Leopard Gecko: Which Beginner Reptile Should You Get",
     "seoTitle": "Bearded Dragon vs. Leopard Gecko: Which to Get?",
     "seoDescription": null,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Both get recommended as the best beginner reptile. Here's the honest difference in cost, daily care, and commitment before you pick one.",
     "date": "2026-07-08",
@@ -5683,7 +5690,7 @@
       }
     ],
     "relatedProducts": [
-      "arcadia-t5-uvb-36in-14pct-dragon",
+      "arcadia-lumenize-prot5-36in-12pct",
       "uvb-arcadia-forest-6",
       "pvc-enclosure-4x2x2",
       "dubia-roaches-bag"
@@ -5819,9 +5826,9 @@
     "path": "/content/guides/betta-fish-cost-guide.mdx",
     "slug": "betta-fish-cost-guide",
     "title": "How Much Does a Betta Fish Really Cost?",
-    "seoTitle": "Betta Fish Price: $5 to $30, Plus $105 to $280 Setup",
-    "seoDescription": "Betta fish cost breakdown: $5-30 for the fish (up to $55 rare), $105-280 for a heated tank setup, and $10-25 a month ongoing, vet visits are rare.",
-    "lastUpdated": "2026-10-02",
+    "seoTitle": "Betta Fish Price: $5 to $30, Plus $150 to $360 Setup",
+    "seoDescription": "Betta fish cost breakdown: $5-30 for the fish (up to $55 rare), $150-360 for a heated tank setup, and $10-25 a month ongoing, vet visits are rare.",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Betta fish have a reputation as a starter pet you can keep in almost nothing, which is exactly the misconception worth correcting. A proper setup costs more than the bowl-and-fish combo suggests, but it's still one of the more affordable pets you can keep once it's built.",
     "date": "2026-07-14",
@@ -5856,7 +5863,7 @@
       },
       {
         "q": "What does a proper betta tank setup cost?",
-        "a": "Plan on $105 to $280 for a full setup: tank, heater, filter, decor, substrate, water conditioner, and a basic test kit, before the fish. Add $5 to $30 for the fish and the all-in figure is $110 to $310. How much you spend on the tank itself and the quality of the heater and filter is what moves you around in that range."
+        "a": "Plan on $150 to $360 for a full setup before the fish: tank with lid and light, heater, sponge filter and air pump, thermometer, decor, substrate, water conditioner, a test kit, a gravel vacuum, a light timer, a net, and the first pellets and freeze-dried treats. Add $5 to $30 for the fish and the all-in figure is $155 to $390. How much you spend on the tank itself and the quality of the heater and filter is what moves you around in that range."
       },
       {
         "q": "What are the ongoing monthly costs for a betta?",
@@ -5868,10 +5875,20 @@
       }
     ],
     "relatedProducts": [
-      "submersible-aquarium-heater",
+      "betta-tank-5-gallon-starter-kit",
+      "betta-heater-hygger-25w",
       "sponge-filter",
-      "water-conditioner",
-      "water-test-kit"
+      "air-pump-hygger-mini-2-20gal",
+      "paizoo-fish-tank-thermometer",
+      "hide-cave-aquarium-decoration",
+      "aquarium-plant-anubias-nana-potted",
+      "betta-substrate-caribsea-freshwater-sand",
+      "api-tap-water-conditioner",
+      "water-test-kit",
+      "outlet-timer-bn-link-mechanical",
+      "net-aquatop-5in-fine-mesh",
+      "betta-food-hikari-bio-gold",
+      "freeze-dried-bloodworms-omega-one"
     ],
     "factFile": false,
     "animalDay": null,
@@ -5890,7 +5907,7 @@
     "title": "Betta Enrichment: Three Studies, and a Mirror Is Not a Toy",
     "seoTitle": "Betta Fish Enrichment Guide",
     "seoDescription": "Studies on space and planting in Betta splendens: restricted space raises hiding and inactivity, planted tanks produced the most active swimming.",
-    "lastUpdated": "2026-09-08",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Bettas are the best-studied fish in the hobby, and the findings are awkward for two things everyone does: tiny tanks and mirror sessions.",
     "date": "2026-09-04",
@@ -5941,7 +5958,7 @@
       }
     ],
     "relatedProducts": [
-      "live-terrarium-plants",
+      "aquarium-plant-anubias-nana-potted",
       "driftwood"
     ],
     "factFile": false,
@@ -6094,7 +6111,7 @@
     "title": "Common Betta Fish Health Issues (And Why Water Quality Comes First)",
     "seoTitle": "Betta Fish Health Issues: Signs & Causes",
     "seoDescription": "Betta fish health issues from fin rot to ich, velvet, and swim bladder disorder, with symptoms, causes, and why water quality is the first thing to check.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Almost every common betta illness traces back to one of two things: water quality or water temperature. That's good news, since it means the first response to a sick betta is almost always the same starting point.",
     "date": "2026-07-14",
@@ -6137,7 +6154,7 @@
       }
     ],
     "relatedProducts": [
-      "submersible-aquarium-heater",
+      "betta-heater-hygger-25w",
       "water-conditioner",
       "water-test-kit"
     ],
@@ -6158,7 +6175,7 @@
     "title": "Betta Fish Tank Setup: Bigger, Warmer, and Cycled",
     "seoTitle": "Betta Fish Tank Setup Guide",
     "seoDescription": "Betta fish tank setup: 5 gallons minimum, a 15-25W heater holding 76-82°F, and a gentle sponge filter, bettas' long fins can't handle strong current.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "The bowl-on-a-desk image most people have of betta fish is outdated. Modern betta care centers on a proper heated, filtered tank, and the setup itself isn't complicated once you know what matters.",
     "date": "2026-07-14",
@@ -6205,7 +6222,7 @@
       }
     ],
     "relatedProducts": [
-      "submersible-aquarium-heater",
+      "betta-heater-hygger-25w",
       "sponge-filter",
       "water-conditioner",
       "water-test-kit"
@@ -6225,9 +6242,9 @@
     "path": "/content/guides/betta-fish-vs-goldfish-guide.mdx",
     "slug": "betta-fish-vs-goldfish-guide",
     "title": "Betta vs Goldfish: Which Beginner Fish Is Easier?",
-    "seoTitle": "Betta vs Goldfish: Which Beginner Fish Is Easier?",
-    "seoDescription": "Betta or goldfish, which is actually easier to keep? Real tank size, heating, social behavior, and lifespan differences compared.",
-    "lastUpdated": "2026-09-22",
+    "seoTitle": "Betta vs Goldfish: Why the Betta Is the Easier Fish",
+    "seoDescription": "A betta is easier: a 5 gallon heated tank and a 2 to 4 year lifespan, versus 20+ gallons, heavy filtration and 10 to 15 years for a goldfish.",
+    "lastUpdated": "2026-10-05",
     "noIndex": false,
     "excerpt": "Betta or goldfish? The differences in tank size, temperature needs, social behavior, and lifespan - not just which one is cheaper at the pet store.",
     "date": "2026-07-08",
@@ -6276,10 +6293,10 @@
       }
     ],
     "relatedProducts": [
-      "submersible-aquarium-heater",
+      "betta-heater-hygger-25w",
       "sponge-filter",
       "tank-20-gallon-long",
-      "canister-filter"
+      "hob-filter-aquaclear-50"
     ],
     "factFile": false,
     "animalDay": null,
@@ -6298,7 +6315,7 @@
     "title": "Betta Fish Water Parameters: The Numbers That Actually Matter",
     "seoTitle": "Betta Fish Water Parameters Guide",
     "seoDescription": null,
-    "lastUpdated": "2026-06-16",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "The betta water numbers that matter - temperature, pH, ammonia, nitrite, and nitrate targets - plus what to test, how often, and which are non-negotiable.",
     "date": "2026-06-16",
@@ -6349,7 +6366,7 @@
     "relatedProducts": [
       "water-test-kit",
       "api-tap-water-conditioner",
-      "submersible-aquarium-heater"
+      "betta-heater-hygger-25w"
     ],
     "factFile": false,
     "animalDay": null,
@@ -7563,7 +7580,7 @@
     "title": "Blue Tongue Skink Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Blue Tongue Skinks Eat? Diet and Feeding Schedule",
     "seoDescription": "Blue tongue skink adult feeding advice is genuinely split: vets say every 1-3 days, care sheets say once or twice weekly, a 3-7x gap in real numbers.",
-    "lastUpdated": "2026-07-30",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Vets and pet-industry care sheets disagree on how often to feed an adult blue tongue skink, by a factor of up to 7x. Here's the range and why it exists.",
     "date": "2026-07-30",
@@ -7616,7 +7633,7 @@
       }
     ],
     "relatedProducts": [
-      "calcium-repashy-superfoods-plus-4oz"
+      "calcium-zoo-med-without-d3"
     ],
     "factFile": false,
     "animalDay": null,
@@ -7768,7 +7785,7 @@
     "title": "Is It Legal to Own a Blue-Tongued Skink? State Guide",
     "seoTitle": "Are Blue-Tongued Skinks Legal? Two Places Say No",
     "seoDescription": "Blue-tongued skinks are legal in 46 of 52 US jurisdictions. Hawaii names the species, DC bars all lizards, and New Jersey regulates them under a skink clause.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Blue-tongued skinks are cleared in 46 of 52 jurisdictions, but every rule that does reach them reaches them as skinks rather than as this species. That single fact explains why their legal map differs from a gecko's in places keepers assume are identical.",
     "date": "2026-09-11",
@@ -9544,8 +9561,8 @@
     "path": "/content/guides/budgie-cost-guide.mdx",
     "slug": "budgie-cost-guide",
     "title": "How Much Does a Budgie Really Cost?",
-    "seoTitle": "Budgie Price: $20 to $80, $165 to $465 Full Setup",
-    "seoDescription": "Budgie cost breakdown: $165 to $465 upfront, a $45 to $65 avian exam, emergencies from $100 to $1,500 or more, and $15 to $50 a month for food and toys.",
+    "seoTitle": "Budgie Price: $20 to $80, $315 to $750 Full Setup",
+    "seoDescription": "Budgie cost breakdown: $315 to $750 upfront, a $45 to $65 avian exam, emergencies from $100 to $1,500 or more, and $20 to $55 a month for food and toys.",
     "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Budgies are one of the more affordable pet birds to buy, but avian vet care is scarcer and pricier than dog or cat care, which is the piece people most often miss.",
@@ -9585,25 +9602,35 @@
       },
       {
         "q": "What should I budget for a starter setup?",
-        "a": "Most first-time owners land around $165 to $465 for a complete starter setup, with a bare-minimum first year, bird included, coming to about $390 and climbing with cage quality."
+        "a": "$315 to $750 for a complete starter setup, bird included. Every item is priced: the cage, perches, dishes, two kinds of toy, a cuttlebone, a cage cover, a full-spectrum UV light made for birds, a gram scale, a travel carrier, nail clippers and styptic powder, and the first pellets, seed and millet. A bare-minimum first year, bird included, comes to about $600 and climbs with cage quality."
       },
       {
         "q": "What are the ongoing monthly costs for a budgie?",
-        "a": "Food runs $5 to $30 a month for a pellet-forward diet with fresh vegetables. Toy and perch replacement runs $10 to $20 a month, chewing and shredding toys is normal healthy behavior, not waste. Add a well-bird exam of $45 to $65 at least once a year."
+        "a": "Food runs $5 to $30 a month for a pellet-forward diet with fresh vegetables and a little seed. Toy and perch replacement runs $10 to $20 a month, chewing and shredding toys is normal healthy behavior, not waste, and cuttlebone top-ups are about $5. That is $20 to $55 a month, or $25 to $60 with a $45 to $65 well-bird exam spread across the year."
       }
     ],
     "relatedProducts": [
       "bird-cage-prevue-steel-flight-large",
       "bird-perches",
       "bird-feeding-dishes-okllen-4pack",
-      "bird-food-zupreem-fruitblend-parakeet-2lb"
+      "bird-toy-kyouki-foraging-box",
+      "bird-toy-bbjinronjy-sola-ball-2pc",
+      "bird-cuttlebone-penn-plax-2ct",
+      "cage-cover-prevue-good-night-large",
+      "uvb-arcadia-puresun-compact-bird-kit",
+      "gram-scale-etekcity-kitchen",
+      "bird-travel-carrier-perch",
+      "nail-clippers-pet-republique-small-animal",
+      "styptic-powder-kwik-stop",
+      "bird-food-zupreem-fruitblend-parakeet-2lb",
+      "bird-treat-kaytee-spray-millet-7oz"
     ],
     "factFile": false,
     "animalDay": null,
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -9931,7 +9958,7 @@
     "title": "Budgie vs. Cockatiel: Which Beginner Bird Fits You Better",
     "seoTitle": "Budgie vs. Cockatiel: Beginner Bird Guide",
     "seoDescription": "Budgie vs cockatiel: budgies talk better and live 7-15 years, cockatiels are louder, more cuddly, and live 12-15 years, some to 25, a longer commitment.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Budgie or cockatiel? The differences in noise, lifespan, talking ability, and how affectionate each one is - not just which one is smaller at the pet store.",
     "date": "2026-07-08",
@@ -10550,7 +10577,7 @@
     "title": "How Much Does a Canary Really Cost?",
     "seoTitle": "Canary Price: $25 to $500, Plus $195 to $345 Setup",
     "seoDescription": "Canary costs: $25 to $500 for the bird, males 20 to 50% more since only they sing, $195 to $345 setup, $10 to $30 a month, over a 6 to 12 year lifespan.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Canaries are one of the more affordable pet birds to buy, but the cost scales up meaningfully once you get into specialized song and show breeds, and the cost decision here isn't about money at all.",
     "date": "2026-07-26",
@@ -10601,7 +10628,7 @@
       }
     ],
     "relatedProducts": [
-      "bird-flight-cage-large",
+      "bird-cage-prevue-steel-flight-large",
       "bird-perches",
       "bird-cuttlebone-penn-plax-2ct",
       "canary-shallow-bird-bath"
@@ -10623,7 +10650,7 @@
     "title": "Canary Enrichment: He May Be Singing Because He Is Alone",
     "seoTitle": "Canary Enrichment Guide",
     "seoDescription": "Male canaries sing more in the absence of a mate and much less once one arrives. Song volume is not a contentment measure.",
-    "lastUpdated": "2026-09-14",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Male canaries sing more when there is no mate present and much less once there is. The most cheerful thing about the bird is not the contentment signal owners assume.",
     "date": "2026-09-04",
@@ -10674,7 +10701,7 @@
       }
     ],
     "relatedProducts": [
-      "bird-flight-cage-large",
+      "bird-cage-prevue-steel-flight-large",
       "bird-perches",
       "canary-shallow-bird-bath"
     ],
@@ -10893,7 +10920,7 @@
     "title": "Canary Cage Setup: Width Matters More Than Height",
     "seoTitle": "Canary Cage Setup Guide",
     "seoDescription": "Canary cages need width over height: 24x18x18 in. minimum, 0.5 in. bar spacing, 65-75°F ideal, and total kitchen fume avoidance, nonstick fumes can be lethal.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Canary cage setup is simple, and the one detail that trips up first-time owners is choosing a tall, narrow parrot-style cage when this species needs the opposite shape entirely.",
     "date": "2026-07-26",
@@ -10944,7 +10971,7 @@
       }
     ],
     "relatedProducts": [
-      "bird-flight-cage-large",
+      "bird-cage-prevue-steel-flight-large",
       "bird-perches",
       "canary-shallow-bird-bath"
     ],
@@ -11022,8 +11049,8 @@
     "path": "/content/guides/cardinal-tetra-cost-guide.mdx",
     "slug": "cardinal-tetra-cost-guide",
     "title": "How Much Does Cardinal Tetra Ownership Really Cost?",
-    "seoTitle": "Cardinal Tetra Price: About $3 Each, Plus $70 to $260 Setup",
-    "seoDescription": "Cardinal tetra cost breakdown: about $3 per fish, a $105-280 starter setup, and why the school runs 8-10 rather than 6.",
+    "seoTitle": "Cardinal Tetra Price: About $3 Each, Plus $55 to $260 Setup",
+    "seoDescription": "Cardinal tetra cost breakdown: about $3 per fish, a $90-280 starter setup, and why the school runs 8-10 rather than 6.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Cardinal tetras cost about the same as their neon tetra cousins, but they're typically kept in a slightly bigger school, and a real Amazon fishery of wild-caught fish sits behind part of the price.",
@@ -11055,7 +11082,7 @@
       },
       {
         "q": "What does a basic cardinal tetra tank setup cost?",
-        "a": "Roughly $70 to $260 for the core equipment, a 10 to 20 gallon tank ($20-150), a heater ($15-35), a gentle filter ($5-15), and live plants ($30-60). Add substrate and basic decor and most first-time setups land around $105 to $280."
+        "a": "Roughly $55 to $260 for the core equipment, a 10 to 20 gallon tank ($20-150), a heater ($15-35), a gentle filter ($5-15), and live plants ($15-60). Add substrate and basic decor and most first-time setups land around $90 to $280."
       },
       {
         "q": "What are the ongoing costs of keeping cardinal tetras?",
@@ -11965,8 +11992,8 @@
     "path": "/content/guides/cherry-shrimp-cost-guide.mdx",
     "slug": "cherry-shrimp-cost-guide",
     "title": "How Much Does Cherry Shrimp Ownership Really Cost?",
-    "seoTitle": "Cherry Shrimp Price: $4 to $8 Each, Plus $50 to $150 Setup",
-    "seoDescription": "Cherry shrimp cost breakdown: roughly $4-8 per shrimp by grade, a $50-150 starter setup, and why a colony multiplies for free.",
+    "seoTitle": "Cherry Shrimp Price: $4 to $8 Each, Plus $35 to $150 Setup",
+    "seoDescription": "Cherry shrimp cost breakdown: roughly $4-8 per shrimp by grade, a $35-150 starter setup, and why a colony multiplies for free.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Cherry shrimp are cheap to buy, but the cost story isn't the shrimp, it's how fast a starting group turns into a colony you never budgeted for.",
@@ -11998,7 +12025,7 @@
       },
       {
         "q": "What does a basic cherry shrimp tank setup cost?",
-        "a": "Roughly $50 to $150 for the core equipment: a 5 to 10-gallon tank ($15-40), a sponge filter ($5-15), live plants or moss ($30-60), and a heater if your room runs cool ($15-35, often skippable). Add a water conditioner and test kit and most first setups land in the $85 to $190 range."
+        "a": "Roughly $35 to $150 for the core equipment: a 5 to 10-gallon tank ($15-40), a sponge filter ($5-15), live plants or moss ($15-60), and a heater if your room runs cool ($15-35, often skippable). Add a water conditioner and test kit and most first setups land in the $70 to $190 range."
       },
       {
         "q": "What are the ongoing costs of keeping cherry shrimp?",
@@ -13059,9 +13086,9 @@
     "path": "/content/guides/cockatiel-cost-guide.mdx",
     "slug": "cockatiel-cost-guide",
     "title": "How Much Does a Cockatiel Really Cost?",
-    "seoTitle": "Cockatiel Price: $75 to $250, Plus $320 to $860 Setup",
-    "seoDescription": "Cockatiel costs: $75-250 for the bird, $320-860 for a full setup, and $200-350 a year after that, plus avian vet care over a 12-15 year lifespan.",
-    "lastUpdated": "2026-10-01",
+    "seoTitle": "Cockatiel Price: $75 to $250, $370 to $765 Full Setup",
+    "seoDescription": "Cockatiel costs: $75-250 for the bird, $370-765 for a full setup, and $180-360 a year after that, plus avian vet care over a 12-15 year lifespan.",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Cockatiels are relatively affordable to buy, but the budgeting story here is how long you'll be caring for one. A 12 to 15 year lifespan means this is a long-term financial commitment even though the entry cost is modest.",
     "date": "2026-07-15",
@@ -13088,7 +13115,7 @@
     "faqs": [
       {
         "q": "How much does a cockatiel cost upfront?",
-        "a": "The bird itself runs $75 to $250 depending on color mutation, with normal gray typically the cheapest. A complete starter setup, cage, perches, dishes, and toys, brings most first-time owners to $320 to $860 total."
+        "a": "The bird itself runs $75 to $250 depending on color mutation, with normal gray typically the cheapest. A complete starter setup, bird included, comes to $370 to $765, with every item priced: the cage, perches, dishes, a foraging toy, shreddable toys, a cuttlebone, a night light, a gram scale, a travel carrier, nail clippers and styptic powder, and the first pellets, seed and millet."
       },
       {
         "q": "What's the vet cost people most underestimate with cockatiels?",
@@ -13096,7 +13123,7 @@
       },
       {
         "q": "What are the ongoing monthly costs for a cockatiel?",
-        "a": "Food, toys and cage upkeep for a pellet-based diet with fresh food come to roughly $200 to $350 a year, which works out to about $17 to $29 a month."
+        "a": "Food, toys and cage upkeep for a pellet-based diet with fresh food come to roughly $180 to $360 a year, which works out to $15 to $30 a month."
       },
       {
         "q": "Why does a cockatiel's cost add up more over time than the purchase price suggests?",
@@ -13104,10 +13131,18 @@
       }
     ],
     "relatedProducts": [
-      "bird-flight-cage-large",
-      "bird-perches",
+      "bird-cage-prevue-steel-flight-large",
       "bird-feeding-dishes-okllen-4pack",
-      "bird-food-zupreem-fruitblend-cockatiel-2lb"
+      "bird-toy-kyouki-foraging-box",
+      "bird-toy-bbjinronjy-sola-ball-2pc",
+      "bird-cuttlebone-prevue-5in",
+      "nightlight-amber-plug-in",
+      "gram-scale-etekcity-kitchen",
+      "bird-travel-carrier-perch",
+      "nail-clippers-pet-republique-small-animal",
+      "styptic-powder-kwik-stop",
+      "bird-food-zupreem-fruitblend-cockatiel-2lb",
+      "bird-treat-kaytee-spray-millet-7oz"
     ],
     "factFile": false,
     "animalDay": null,
@@ -13198,7 +13233,7 @@
     "title": "Cockatiel Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Cockatiels Eat? Diet and Feeding Schedule",
     "seoDescription": "Cockatiel diet: pellets should be 75-80% of intake, fresh produce 20-25%, and seeds a small minority. Avocado, onion, and chocolate are genuinely toxic.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Why pellets, not seeds, should make up most of a cockatiel's bowl, how much fresh food belongs in there, and the reasons a cockatiel goes off food.",
     "date": "2026-07-25",
@@ -13333,7 +13368,7 @@
     "title": "Common Cockatiel Health Issues (And Why the Kitchen Can Be Dangerous)",
     "seoTitle": "Cockatiel Health Issues: Signs & Causes",
     "seoDescription": "Cockatiel health risks: seed-only diets cause vitamin A and calcium deficiency, egg binding is an emergency, and overheated non-stick pans can kill in minutes.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Birds hide illness as a survival instinct, which means a cockatiel that looks visibly sick is often further along than the same symptoms would suggest in a cat or dog.",
     "date": "2026-07-15",
@@ -13384,8 +13419,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
-    "headingCount": 12,
+    "sourceCount": 4,
+    "headingCount": 13,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -13396,7 +13431,7 @@
     "title": "Cockatiel Cage Setup: Width, Safety, and the Diet Debate",
     "seoTitle": "Cockatiel Cage Setup Guide",
     "seoDescription": "Cockatiel cage setup: minimum 20x20x30 inches, bar spacing under half an inch, and never near the kitchen, overheated pans can kill a bird in 30 minutes.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "A cockatiel's cage is the single biggest factor in its day-to-day wellbeing, and a few specific details, width, bar spacing, and placement, matter more than overall size alone.",
     "date": "2026-07-15",
@@ -13439,8 +13474,7 @@
       }
     ],
     "relatedProducts": [
-      "bird-flight-cage-large",
-      "bird-perches",
+      "bird-cage-prevue-steel-flight-large",
       "bird-feeding-dishes-okllen-4pack",
       "bird-cuttlebone-penn-plax-2ct",
       "bird-food-zupreem-fruitblend-cockatiel-2lb"
@@ -13450,7 +13484,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -13460,9 +13494,9 @@
     "path": "/content/guides/cockatiel-vs-cockatoo-guide.mdx",
     "slug": "cockatiel-vs-cockatoo-guide",
     "title": "Cockatiel vs. Cockatoo: Which Parrot Actually Fits Your Life",
-    "seoTitle": "Cockatiel vs. Cockatoo: Full Comparison",
-    "seoDescription": "Cockatiel vs cockatoo: real differences in size, noise, lifespan, and daily attention needs, compared side by side.",
-    "lastUpdated": "2026-09-25",
+    "seoTitle": "Cockatiel vs Cockatoo: Why the Cockatiel Wins for Beginners",
+    "seoDescription": "The cockatiel is technically a small cockatoo, and the better first bird: an hour a day and $75-250, against 4-6 hours, $700-3,000 and 25-45 years.",
+    "lastUpdated": "2026-10-05",
     "noIndex": false,
     "excerpt": "Cockatiel or cockatoo? The differences in size, noise, lifespan, and how much daily attention each one demands, not just which one is friendlier at the pet store.",
     "date": "2026-08-30",
@@ -13529,9 +13563,9 @@
     "path": "/content/guides/cockatoo-cost-guide.mdx",
     "slug": "cockatoo-cost-guide",
     "title": "How Much Does a Cockatoo Really Cost?",
-    "seoTitle": "Cockatoo Price: $700 to $3,000, Plus $900 to $2,500 Setup",
-    "seoDescription": "Cockatoo costs: $700-3,000 for common species, up to $16,000 for a palm cockatoo, plus $900-2,500 setup and a 25 to 45 year lifespan, 70+ in large species.",
-    "lastUpdated": "2026-10-01",
+    "seoTitle": "Cockatoo Price: $700 to $3,000, $2,270 to $6,410 Set Up",
+    "seoDescription": "Cockatoo costs: $700-3,000 for common species, $2,270-6,410 set up with the bird, $875-1,995 a year, and a 25 to 45 year lifespan, 70+ in large species.",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Cockatoos are a serious financial and emotional commitment, and the purchase price is just the smallest part of a decision that plays out over decades.",
     "date": "2026-07-26",
@@ -13566,11 +13600,11 @@
       },
       {
         "q": "What does a cockatoo's upfront setup cost?",
-        "a": "Roughly $900 to $2,500, covering a large cage ($850 to $1,300 for heavy-gauge powder-coated steel, $1,350 to $2,200 for stainless), perches, bowls, and an initial set of toys ($20 to $200), and a destructible foraging set ($25 to $90). A play gym and an air purifier come on top of that."
+        "a": "$2,270 to $6,410 with the bird and a first exam with a PBFD test, every item priced. The equipment and first supplies alone come to $1,430 to $3,200: the cage ($850 for heavy-gauge powder-coated steel up to $2,200 for stainless), locks, a play stand, perches, dishes, a foraging toy set, palm for shredding, a HEPA air purifier, a gram scale, a large carrier, styptic powder and the first bag of pellets."
       },
       {
         "q": "What are the ongoing monthly costs of owning a cockatoo?",
-        "a": "$20 to $50 a month for food. Toy replacement is the bigger recurring cost, since cockatoos destroy wooden toys extremely fast and constant destructible enrichment is a welfare need."
+        "a": "$875 to $1,995 a year, roughly $70 to $170 a month. Food is $20 to $50 a month, and toy and destructible top-ups at $400 to $900 a year are the bigger line, since cockatoos destroy wooden toys extremely fast and constant destructible enrichment is a welfare need. Perch replacement, air purifier filters, paper liner, cleaning supplies and an annual wellness exam make up the rest."
       },
       {
         "q": "Do cockatoos need pet insurance?",
@@ -13583,9 +13617,15 @@
     ],
     "relatedProducts": [
       "cockatoo-cage-stainless-steel-large",
-      "cockatoo-cage-prevue-hendryx-large",
+      "play-stand-prevue-large-parrot",
+      "perch-yml-dragonwood-32in",
+      "coop-cup-prevue-30oz-bolt-on",
       "cockatoo-foraging-toys-large-parrot",
-      "air-purifier-levoit-core300-p"
+      "shredder-planet-pleasures-zig-zag",
+      "air-purifier-levoit-core300-p",
+      "gram-scale-etekcity-kitchen",
+      "styptic-powder-kwik-stop",
+      "bird-food-lafebers-premium-parrots-25lb"
     ],
     "factFile": false,
     "animalDay": null,
@@ -13604,7 +13644,7 @@
     "title": "Cockatoo Enrichment: What the Research Actually Supports",
     "seoTitle": "Cockatoo Enrichment Guide",
     "seoDescription": "What parrot feather-plucking research supports for cockatoo enrichment: foraging, environmental complexity and training, and where the evidence stops.",
-    "lastUpdated": "2026-10-01",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Feather damaging behavior is multifactorial, and the research on it is thinner than the confident claims suggest. What is supported: foraging enrichment, environmental complexity, and reinforcement-based training.",
     "date": "2026-09-04",
@@ -13656,7 +13696,7 @@
     ],
     "relatedProducts": [
       "cockatoo-foraging-toys-large-parrot",
-      "cockatoo-cage-prevue-hendryx-large",
+      "cockatoo-cage-stainless-steel-large",
       "bird-toy-kyouki-foraging-box"
     ],
     "factFile": false,
@@ -13877,7 +13917,7 @@
     "title": "Is It Legal to Own a Cockatoo? State-by-State Guide",
     "seoTitle": "Is a Cockatoo Legal in Your State? Full Guide",
     "seoDescription": "Cockatoos are legal in nearly every US state, but Maine requires a permit for the Moluccan, Goffin's, yellow-crested and umbrella under its CITES carve-out.",
-    "lastUpdated": "2026-10-01",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Most cockatoos are legal to own across the US, but 'is a cockatoo legal in Maine' doesn't have one answer, it depends on the species. Maine clears the whole parrot order except anything on CITES Appendix I or the IUCN's most endangered tiers, and that carve-out catches several of the most commonly kept pet cockatoos by name.",
     "date": "2026-08-29",
@@ -13998,7 +14038,7 @@
     "title": "Cockatoo Cage Setup: Size, Material, and Daily Enrichment That Actually Matters",
     "seoTitle": "Cockatoo Cage Setup Guide",
     "seoDescription": "Cockatoo cage setup: a 36x24x48 inch minimum (48x48x60 in. is better), 0.75-1 inch bar spacing, stainless steel construction, and daily destructible enrichment.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "A cockatoo's cage needs to support a large, powerful, intelligent, and emotionally demanding bird, and getting the size, material, and daily enrichment right matters as much as anything else in this species' care.",
     "date": "2026-07-26",
@@ -14050,7 +14090,6 @@
     ],
     "relatedProducts": [
       "cockatoo-cage-stainless-steel-large",
-      "cockatoo-cage-prevue-hendryx-large",
       "cockatoo-foraging-toys-large-parrot",
       "air-purifier-levoit-core300-p",
       "bird-food-harrisons-high-potency-fine-1lb",
@@ -14191,7 +14230,7 @@
     "title": "How Much Does a Green Cheek Conure Really Cost?",
     "seoTitle": "How Much Does a Green Cheek Conure Really Cost?",
     "seoDescription": "Green cheek conure costs: $250-700 for the bird (more at pet stores), $230-470 setup, $360-780 a year after, and a 20 to 25 year lifespan to plan around.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Green cheek conures sit at a moderate price point for a parrot, but color mutations and the wrong sales channel can both push that number up considerably, and a 20 to 25 year lifespan makes this a long-term investment.",
     "date": "2026-07-29",
@@ -14242,7 +14281,6 @@
       }
     ],
     "relatedProducts": [
-      "bird-flight-cage-large",
       "bird-perches",
       "bird-toy-bbjinronjy-sola-ball-2pc",
       "sugar-glider-bonding-pouch",
@@ -14265,7 +14303,7 @@
     "title": "Conure Enrichment: A Big Parrot's Needs in a Small Parrot's Body",
     "seoTitle": "Conure Enrichment Guide",
     "seoDescription": "Wild parrots spend much of the day finding and handling food. Foraging enrichment reduced feather picking in parrots, and conures need the same work.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Wild parrots spend a large share of the day working for food. A conure with a full bowl is done in three minutes and then has the rest of the day to fill.",
     "date": "2026-09-04",
@@ -14317,8 +14355,7 @@
     ],
     "relatedProducts": [
       "bird-toys-katumo-small-parrot-variety",
-      "bird-toy-kyouki-foraging-box",
-      "bird-flight-cage-large"
+      "bird-toy-kyouki-foraging-box"
     ],
     "factFile": false,
     "animalDay": null,
@@ -14466,7 +14503,7 @@
     "title": "Common Green Cheek Conure Health Issues and What Causes Them",
     "seoTitle": "Green Cheek Conure Health Issues: Signs & Causes",
     "seoDescription": "Common green cheek conure health issues: fatty liver disease, feather plucking, respiratory infection, and when to see a vet.",
-    "lastUpdated": "2026-07-29",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Most green cheek conure health problems trace back to diet, environment, or a lack of mental stimulation rather than pure genetics. Get those three things right and this is a resilient bird.",
     "date": "2026-07-29",
@@ -14516,8 +14553,7 @@
       "bird-food-roudybush-daily-mini-44oz",
       "bird-toy-bbjinronjy-sola-ball-2pc",
       "bird-toys-katumo-small-parrot-variety",
-      "sugar-glider-bonding-pouch",
-      "bird-flight-cage-large"
+      "sugar-glider-bonding-pouch"
     ],
     "factFile": false,
     "animalDay": null,
@@ -14536,7 +14572,7 @@
     "title": "Green Cheek Conure Cage Setup: What Your Bird Actually Needs",
     "seoTitle": "Green Cheek Conure Cage Setup Guide",
     "seoDescription": "Green cheek conure cage setup: 24x24x30 inches minimum, bar spacing under 5/8 inch, 65-80F room temp, and 10-12 hours of avian UV lighting daily.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "A conure's cage needs to support an active, intelligent bird, not just contain one, and a few details around size, lighting, and placement matter more than people expect.",
     "date": "2026-07-29",
@@ -14583,7 +14619,6 @@
       }
     ],
     "relatedProducts": [
-      "bird-flight-cage-large",
       "bird-perches",
       "bird-toy-bbjinronjy-sola-ball-2pc",
       "bird-toys-katumo-small-parrot-variety",
@@ -15623,9 +15658,9 @@
     "path": "/content/guides/crested-gecko-cost-guide.mdx",
     "slug": "crested-gecko-cost-guide",
     "title": "How Much Does a Crested Gecko Really Cost?",
-    "seoTitle": "Crested Gecko Price: $50 to $200, Plus $335 to $530 Setup",
-    "seoDescription": "Full crested gecko cost breakdown: $335-530 of equipment, low monthly costs, and what a 15-20+ year lifespan means for your budget.",
-    "lastUpdated": "2026-10-02",
+    "seoTitle": "Crested Gecko Price: $50 to $200, Plus $355 to $590 Setup",
+    "seoDescription": "Full crested gecko cost breakdown: $355 to $590 of equipment, low monthly costs, and what a 15-20+ year lifespan means for your budget.",
+    "lastUpdated": "2026-10-05",
     "noIndex": false,
     "excerpt": "Crested geckos sit near the affordable end of the reptile hobby, and unlike heat-hungry desert species, most of the ongoing cost is food and humidity, not electricity.",
     "date": "2026-07-12",
@@ -15656,11 +15691,11 @@
       },
       {
         "q": "Does a crested gecko need expensive heating equipment?",
-        "a": "Not usually, one of its budget advantages. Many rooms already sit in a crested gecko's comfortable range, so heating is often a light supplement: a 25-40 watt bulb, $20-40. Electricity costs stay minimal."
+        "a": "No, which is one of its budget advantages, but it does need some. Room temperature alone isn't enough: a 25 to 40 watt bulb and dome, $20 to $40, on a thermostat makes the gentle 82 to 85°F basking spot it needs. Electricity costs stay minimal."
       },
       {
         "q": "What are the ongoing monthly costs for a crested gecko?",
-        "a": "Roughly $31 to $52 a month. A complete crested gecko diet powder runs about $7 a month averaged out (one $20 bag lasts about three months), plus occasional live insects, substrate replacement, electricity, and amortized UVB bulb and vet costs."
+        "a": "Roughly $40 to $55 a month. A complete crested gecko diet powder runs about $5 a month averaged out (one $20 jar lasts about three months), plus occasional live insects, calcium top-ups, substrate replacement, electricity, and the yearly vet visit and two UVB tubes a year, averaged."
       },
       {
         "q": "How long do crested geckos live, and how does that affect budgeting?",
@@ -15673,7 +15708,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
+    "sourceCount": 6,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -15751,7 +15786,7 @@
     "title": "Crested Gecko Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Crested Geckos Eat? Diet and Feeding Schedule",
     "seoDescription": null,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Why powdered crested gecko diet, not live insects, should be the actual staple, and how to tell a picky eater from a gecko that needs help.",
     "date": "2026-07-29",
@@ -15805,7 +15840,7 @@
     ],
     "relatedProducts": [
       "crested-gecko-diet-pangea-watermelon-complete-8oz",
-      "calcium-repashy-plus-lod-3oz"
+      "calcium-zoo-med-without-d3"
     ],
     "factFile": false,
     "animalDay": null,
@@ -16021,7 +16056,7 @@
     "title": "Is It Legal to Own a Crested Gecko? State-by-State Guide",
     "seoTitle": "Are Crested Geckos Legal? The Seven Places They Aren't",
     "seoDescription": "Crested geckos are legal in 45 of 52 US jurisdictions. Hawaii and DC bar them, and Massachusetts needs a permit because the IUCN rates the species vulnerable.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Crested geckos clear 45 of 52 jurisdictions without a permit, which makes the seven exceptions worth knowing precisely. The one most keepers never see coming is Massachusetts, where the permit is triggered by the species' conservation status rather than by anything it does.",
     "date": "2026-09-12",
@@ -16076,7 +16111,7 @@
     "title": "Crested Gecko Enclosure Setup: Vertical Space, Humidity, and a Hard Temperature Ceiling",
     "seoTitle": "Crested Gecko Enclosure Setup Guide",
     "seoDescription": null,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Crested geckos flip the usual reptile setup logic. Where most lizards need a hot basking spot, this species needs you to actively avoid overheating them.",
     "date": "2026-07-12",
@@ -16115,7 +16150,7 @@
       },
       {
         "q": "Does a crested gecko need UVB?",
-        "a": "Not strictly, since a complete diet powder supplies vitamin D3, though low-level UVB is still a good idea. If you add it, keep it low: a 24-inch T5 HO around 5.0, for a UVI of 0.6 to 1.4."
+        "a": "Not strictly, since a complete diet powder supplies vitamin D3, though low-level UVB is still a good idea. If you add it, keep it low: a 12-inch T5 HO around 5.0, for a UVI of 0.6 to 1.4."
       }
     ],
     "relatedProducts": [
@@ -16897,8 +16932,8 @@
     "path": "/content/guides/discus-cost-guide.mdx",
     "slug": "discus-cost-guide",
     "title": "How Much Does Discus Ownership Really Cost?",
-    "seoTitle": "Discus Fish Price: $20 to $450, Plus $335 to $675 Setup",
-    "seoDescription": "Discus fish cost guide: fish price ($20-450+), full tank setup ($335-675+), monthly costs, vet care, and lifespan, all from verified sources.",
+    "seoTitle": "Discus Fish Price: $20 to $450, Plus $320 to $675 Setup",
+    "seoDescription": "Discus fish cost guide: fish price ($20-450+), full tank setup ($320-675+), monthly costs, vet care, and lifespan, all from verified sources.",
     "lastUpdated": "2026-09-24",
     "noIndex": false,
     "excerpt": "Discus are one of the pricier community fish you can keep, and the cost isn't the fish itself, it's the filtration and water-change routine this species demands.",
@@ -16930,7 +16965,7 @@
       },
       {
         "q": "What does a proper discus tank setup cost?",
-        "a": "Roughly $335 to $675 for a real 55-gallon setup, tank, strong filtration, heater, substrate, driftwood, and plants, and more once you add an RO/DI unit for hard tap water or step up to a 75-gallon-plus tank."
+        "a": "Roughly $320 to $675 for a real 55-gallon setup, tank, strong filtration, heater, substrate, driftwood, and plants, and more once you add an RO/DI unit for hard tap water or step up to a 75-gallon-plus tank."
       },
       {
         "q": "What are the ongoing monthly costs for a discus?",
@@ -17663,7 +17698,7 @@
     "title": "Emperor Scorpion Enrichment: One of the Few You Can Keep in a Group",
     "seoTitle": "Emperor Scorpion Enrichment Guide",
     "seoDescription": "Emperor scorpions are subsocial and can be housed communally with space, hides and food for each. Burrowing depth still matters most.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Emperor scorpions are subsocial in the wild, with mothers and offspring sharing a burrow. Communal housing is possible here, which is rare among arachnids, and it is not free.",
     "date": "2026-09-04",
@@ -17941,7 +17976,7 @@
     "title": "Are Emperor Scorpions Legal? Ten Places Restrict Them",
     "seoTitle": "Are Emperor Scorpions Legal? State Laws and the CITES Rule",
     "seoDescription": "Emperor scorpions are legal in most US states, but banned in NYC, Hawaii, and DC. They've been CITES Appendix II since 1995, affecting imports, not ownership.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Montana clears the emperor scorpion by name while banning every pet tarantula. Maine does the reverse. The one rule that follows this species everywhere is federal and it is about export paperwork, not possession.",
     "date": "2026-08-18",
@@ -17983,7 +18018,7 @@
     "title": "Emperor Scorpion Enclosure Setup: Deep Substrate, High Humidity, No UVB",
     "seoTitle": "Emperor Scorpion Enclosure Setup Guide",
     "seoDescription": "Emperor scorpions need a 10-gallon tank minimum, 70-90% humidity, 75-85°F, and 5-6 inches of substrate for burrowing. No UVB lighting required.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Emperor scorpion husbandry is simple once you internalize two priorities: substrate depth for burrowing, and humidity that stays consistently high.",
     "date": "2026-07-31",
@@ -19820,7 +19855,7 @@
     "title": "How Much Does a Pet Flying Squirrel Really Cost?",
     "seoTitle": "Flying Squirrel Price: $200 to $450, Plus $200 to $500 Setup",
     "seoDescription": "Flying squirrel cost breakdown: price, cage and setup costs, monthly expenses, vet care, lifespan, and why to check your state's wildlife laws first.",
-    "lastUpdated": "2026-09-15",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Flying squirrels are native US wildlife, not an imported exotic, so the first real question isn't the price tag, it's your state's wildlife law. Once that's settled, budget for two from day one.",
     "date": "2026-09-05",
@@ -19867,7 +19902,6 @@
       }
     ],
     "relatedProducts": [
-      "bird-flight-cage-large",
       "hedgehog-wheel-exotic-nutrition-silent-runner-12in-wide",
       "ferret-hammock-niteangel-nap-sack",
       "climbing-branch-mopani-wood",
@@ -19890,7 +19924,7 @@
     "title": "Flying Squirrel Enrichment: A Rodent That Solved the Same Problem",
     "seoTitle": "Flying Squirrel Enrichment Guide",
     "seoDescription": "Flying squirrels and sugar gliders evolved gliding separately and need much the same setup: height, real routes, company and a nest to sleep in.",
-    "lastUpdated": "2026-09-08",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "A flying squirrel and a sugar glider are not related. They are a rodent and a marsupial that arrived at the same body plan, and they need almost the same enclosure.",
     "date": "2026-09-04",
@@ -19941,7 +19975,6 @@
       }
     ],
     "relatedProducts": [
-      "bird-flight-cage-large",
       "climbing-branch-mopani-wood",
       "ferret-hammock-niteangel-nap-sack"
     ],
@@ -20217,7 +20250,7 @@
     "title": "Flying Squirrel Cage Setup: Tall, Not Wide",
     "seoTitle": "Flying Squirrel Cage Setup Guide",
     "seoDescription": "Flying squirrel cage setup: minimum size, bar spacing, temperature range, light needs, substrate, and the axle-free wheel this species needs to stay safe.",
-    "lastUpdated": "2026-09-15",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Flying squirrels are arboreal climbers and gliders, and their housing needs reflect that directly, height matters far more than floor space, the same priority as their unrelated look-alike, the sugar glider.",
     "date": "2026-09-09",
@@ -20263,7 +20296,6 @@
       }
     ],
     "relatedProducts": [
-      "bird-flight-cage-large",
       "hedgehog-wheel-exotic-nutrition-silent-runner-12in-wide",
       "ferret-hammock-niteangel-nap-sack",
       "climbing-branch-mopani-wood"
@@ -20595,9 +20627,9 @@
     "path": "/content/guides/gargoyle-gecko-cost-guide.mdx",
     "slug": "gargoyle-gecko-cost-guide",
     "title": "How Much Does a Gargoyle Gecko Really Cost?",
-    "seoTitle": "Gargoyle Gecko Price: $50 to $1,000, Plus $280 to $520 Setup",
-    "seoDescription": "Gargoyle geckos cost $50 to $1,000+ depending on morph, plus $280-520 in setup gear. They live 15-20+ years, so budget for decades, not just year one.",
-    "lastUpdated": "2026-10-02",
+    "seoTitle": "Gargoyle Gecko Price: $50 to $1,000, Plus $335 to $630 Setup",
+    "seoDescription": "Gargoyle geckos cost $50 to $1,000+ depending on morph, plus $335 to $630 to set up. They live 15-20+ years, so budget for decades, not just year one.",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Gargoyle geckos sit at an interesting price point: affordable for a common reticulated animal, but morphs and proven breeding lines can push the number into four figures.",
     "date": "2026-07-24",
@@ -20628,11 +20660,11 @@
       },
       {
         "q": "What does a complete gargoyle gecko setup cost upfront?",
-        "a": "Roughly $280 to $520 in gear (enclosure, UVB, heat bulb and dome, thermostat, substrate, decor, thermometer/hygrometer, misting bottle), plus the gecko itself. All-in, a typical setup with a common animal lands around $330 to $820, and a premium morph can push the first-year total past $1,000."
+        "a": "$335 to $630 for the setup (enclosure, UVB, heat bulb and dome, thermostat, thermometer/hygrometer, substrate, decor, misting bottle, water dish, feeding ledge, a gram scale, and the first bag of diet and calcium), and $385 to $780 with a first vet exam. Add a common animal and it lands around $435 to $1,080; a premium morph pushes it to roughly $885 to $1,780."
       },
       {
         "q": "What are the ongoing monthly costs for a gargoyle gecko?",
-        "a": "Most keepers land in the $15 to $30 a month range for food and supplements. One 8-ounce bag of powdered gecko diet lasts a single adult about two months and runs $20 to $28, so plan on six bags a year. Insects, the annual UVB bulb swap, and vet care are periodic add-ons rather than monthly expenses."
+        "a": "Most keepers land in the $15 to $30 a month range for food and supplements. One 8-ounce bag of powdered gecko diet lasts a single adult about two months and runs $20 to $30, so plan on six bags a year. Insects, two UVB tube swaps a year, and vet care are periodic add-ons rather than monthly expenses."
       },
       {
         "q": "Does a gargoyle gecko need expensive vet care?",
@@ -20640,21 +20672,22 @@
       },
       {
         "q": "How long do gargoyle geckos live, and how does that affect budgeting?",
-        "a": "15 to 20 years is typical, with some keepers reporting animals still breeding well past 20. Budget at least one UVB bulb a year. Tubes are replaced every 6 to 12 months depending on the model, so yearly is the longest a bulb should stay in. This isn't a short-term pet, budget for decades, not just the first year."
+        "a": "15 to 20 years is typical, with some keepers reporting animals still breeding well past 20. Budget two UVB tubes a year. Tubes are replaced every 6 to 12 months depending on the model, and the budget assumes the 6-month change. This isn't a short-term pet, budget for decades, not just the first year."
       }
     ],
     "relatedProducts": [
       "glass-terrarium-18x18x24",
       "uvb-zoo-med-5-0-t5-ho-14in-hood",
       "crested-gecko-diet-pangea-watermelon-complete-8oz",
-      "calcium-repashy-superfoods-plus-4oz"
+      "calcium-repashy-superfoods-plus-4oz",
+      "uvi-meter-solarmeter-6-5r"
     ],
     "factFile": false,
     "animalDay": null,
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
+    "sourceCount": 6,
     "headingCount": 7,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -20738,7 +20771,7 @@
     "title": "Gargoyle Gecko Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Gargoyle Geckos Eat? Diet and Feeding Schedule",
     "seoDescription": null,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Gargoyle geckos are more carnivorous than their crested gecko cousins, which is why insects are a required part of the diet here, not just enrichment.",
     "date": "2026-07-30",
@@ -20792,7 +20825,7 @@
     ],
     "relatedProducts": [
       "crested-gecko-diet-pangea-watermelon-complete-8oz",
-      "calcium-repashy-superfoods-plus-4oz"
+      "calcium-zoo-med-without-d3"
     ],
     "factFile": false,
     "animalDay": null,
@@ -20944,7 +20977,7 @@
     "title": "Gargoyle Gecko Enclosure Setup: A Low Ceiling, Not No Heat at All",
     "seoTitle": "Gargoyle Gecko Enclosure Setup Guide",
     "seoDescription": "Gargoyle geckos want a gentle gradient: a cool end near 72F and a basking spot around 82-85F, never above 86F. 18x18x24 in minimum, humidity 50-70%.",
-    "lastUpdated": "2026-09-14",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Gargoyle geckos run cooler than most kept reptiles, which gets repeated as a claim that they need no heat at all. That is a misconception: the ceiling is low, and there is still a gradient.",
     "date": "2026-07-24",
@@ -20983,7 +21016,7 @@
       },
       {
         "q": "Does a gargoyle gecko need UVB lighting?",
-        "a": "It can survive without, since a complete powdered diet supplies vitamin D3, but low-level UVB brings real digestive and immune benefits: a 12-inch low-output T5 set for a basking-area UVI near 1.0 to 2.0. Run 12 hours on, none overnight, and mount it over open mesh, since glass and plastic block UVB."
+        "a": "It can survive without, since a complete powdered diet supplies vitamin D3, but low-level UVB brings real digestive and immune benefits: a 12-inch low-output 5.0 (5%) T5 HO set for a basking-area UVI near 1.0 to 2.0, with the basking spot 6 to 12 inches below the tube. Run 12 hours on, none overnight, and mount it over open mesh, since glass and plastic block UVB."
       },
       {
         "q": "Why does a gargoyle gecko setup need so much clutter?",
@@ -22214,8 +22247,8 @@
     "path": "/content/guides/ghost-shrimp-cost-guide.mdx",
     "slug": "ghost-shrimp-cost-guide",
     "title": "How Much Does Ghost Shrimp Ownership Really Cost?",
-    "seoTitle": "Ghost Shrimp Price: Under $1 Each, Plus $40 to $180 Setup",
-    "seoDescription": "Ghost shrimp cost breakdown: often under $1 in bulk, $1-3 each at retail, a roughly $40-180 starter tank, and why feeder pricing isn't pet-quality care.",
+    "seoTitle": "Ghost Shrimp Price: Under $1 Each, Plus $50 to $180 Setup",
+    "seoDescription": "Ghost shrimp cost breakdown: often under $1 in bulk, $1-3 each at retail, a roughly $50-180 starter tank, and why feeder pricing isn't pet-quality care.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Ghost shrimp are some of the cheapest livestock in the aquarium hobby, sold in bulk as feeder stock for other fish as often as they're kept as pets in their own right, and that split identity is the story behind the price tag.",
@@ -22247,7 +22280,7 @@
       },
       {
         "q": "What does a basic ghost shrimp tank setup cost?",
-        "a": "Roughly $40 to $180 for the core equipment: a 5 to 10 gallon tank ($15-40), a gentle sponge filter ($5-15), a heater if your room runs cool ($15-35), sand or fine gravel substrate ($15-30), and live plants for cover ($30-60). A basic tank and filter alone can come in near the low end of that range."
+        "a": "Roughly $50 to $180 for the core equipment: a 5 to 10 gallon tank ($15-40), a gentle sponge filter ($5-15), a heater if your room runs cool ($15-35), sand or fine gravel substrate ($15-30), and live plants for cover ($15-60). The low end leaves out the heater, which a warm room can skip."
       },
       {
         "q": "What are the ongoing costs of keeping ghost shrimp?",
@@ -22631,7 +22664,7 @@
     "title": "How Much Does a Giant Millipede Really Cost? (And a Supply Note Worth Knowing)",
     "seoTitle": "Giant Millipede Price: $75 to $150, Plus $75 to $190 Setup",
     "seoDescription": "Giant millipede cost breakdown: $75-150+ per animal because USDA permits keep imports scarce, a $75-190 setup, minimal monthly costs, and 5-7+ years of life.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Giant African millipedes are inexpensive to keep month to month, though the animal itself costs more than you might expect for an invertebrate, and there's a real reason behind that.",
     "date": "2026-07-28",
@@ -22905,7 +22938,7 @@
     "title": "Common Giant Millipede Health Issues",
     "seoTitle": "Giant Millipede Health Issues: Signs & Causes",
     "seoDescription": "Giant millipede health issues: dehydration is the top cause of death, failed molts are often fatal, and heavy mite infestations signal a substrate problem.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Giant millipedes are hardy, and nearly every serious issue in this species traces back to substrate moisture, either too little or, in a couple of specific cases, conditions that stay too consistently wet.",
     "date": "2026-07-28",
@@ -23290,9 +23323,9 @@
     "path": "/content/guides/goldfish-cost-guide.mdx",
     "slug": "goldfish-cost-guide",
     "title": "How Much Does a Goldfish Really Cost?",
-    "seoTitle": "Goldfish Price: Under $10, Plus the $105 to $270 Setup",
-    "seoDescription": "Goldfish cost breakdown: the fish itself often under $10, a proper tank and filtration setup at $105-270, and just $10-30 a month once you skip the bowl.",
-    "lastUpdated": "2026-10-02",
+    "seoTitle": "Goldfish Price: Under $10, Plus the $310 to $615 Setup",
+    "seoDescription": "Goldfish cost breakdown: the fish itself often under $10, a proper tank and filtration setup at $310-615, and just $10-30 a month once you skip the bowl.",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Goldfish have the worst reputation-to-reality gap of almost any common pet. The fish itself costs next to nothing, but proper goldfish keeping requires a large tank and serious filtration, exactly the part the classic fish-in-a-bowl image leaves out entirely.",
     "date": "2026-07-20",
@@ -23323,7 +23356,7 @@
       },
       {
         "q": "What does a proper goldfish tank setup cost?",
-        "a": "A complete setup for one fancy goldfish, tank, basic filtration, optional heater, substrate, dechlorinator, decor, and a test kit, adds up to $105 to $270. Filtration is the part worth budgeting extra for, since goldfish produce far more waste than most fish their size and a canister filter costs more than the basic figure counted here."
+        "a": "A complete setup for one fancy goldfish adds up to $310 to $615: the tank and lid, a filter strong enough to turn the tank over 10 times an hour, a sponge filter on an air pump, an optional heater, a thermometer, substrate, dechlorinator, a test kit, decor, a gravel vacuum and buckets, a soft net and a transfer bucket, a bare quarantine tank, and the first pellets and gel food. The filter is the line not to cut, since goldfish produce far more waste than most fish their size, and a canister filter costs more than the hang-on-back counted here."
       },
       {
         "q": "What are the ongoing monthly costs for a goldfish?",
@@ -23335,11 +23368,20 @@
       }
     ],
     "relatedProducts": [
-      "tank-10-gallon",
-      "canister-filter-large",
+      "tank-20-gallon-long",
+      "hob-filter-aquaclear-70",
+      "sponge-filter",
+      "air-pump-hygger-mini-2-20gal",
+      "goldfish-heater-aqueon-50w-adjustable",
+      "paizoo-fish-tank-thermometer",
+      "glass-lid-aqueon-versa-top-30in",
       "betta-substrate-caribsea-freshwater-sand",
-      "water-conditioner",
-      "water-test-kit"
+      "api-tap-water-conditioner",
+      "water-test-kit",
+      "aquarium-plant-anubias-nana-potted",
+      "gravel-vac-python-pro-clean-large",
+      "tank-10-gallon",
+      "goldfish-gel-food-repashy-super-gold"
     ],
     "factFile": false,
     "animalDay": null,
@@ -23427,7 +23469,7 @@
     "title": "Goldfish Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Goldfish Eat? Diet and Feeding Schedule",
     "seoDescription": "Goldfish have no true stomach, so feed adults one small meal a day, only what's eaten in under 2 minutes, and stop feeding pond goldfish below 39°F.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Goldfish have no true stomach, which is exactly why small, frequent feedings matter so much. Here's a real feeding schedule, what to feed, and how to read appetite loss.",
     "date": "2026-07-26",
@@ -23479,9 +23521,7 @@
         "a": "A healthy adult in a mature, well-maintained tank can go 3 to 4 days with no real concern. Health effects can start to appear past about the 5-day mark, and if it stretches past a week to 10 days, lining up a feeder is worth doing. Outright survivability is commonly cited around 1 to 2 weeks thanks to a slow cold-water metabolism, though that's an upper bound, not a target. The bigger trigger to worry is 24 to 48 hours of refusal combined with lethargy, clamped fins, pineconing scales, or abnormal floating or sinking."
       }
     ],
-    "relatedProducts": [
-      "goldfish-pellets-hikari-gold"
-    ],
+    "relatedProducts": [],
     "factFile": false,
     "animalDay": null,
     "animal": null,
@@ -23499,7 +23539,7 @@
     "title": "How to \"Handle\" a Goldfish (Net and Cup, Not Hands)",
     "seoTitle": "How to Handle a Goldfish Safely",
     "seoDescription": "A goldfish's slime coat takes 24-48 hours to regrow after bare hand contact. Use a wet net or container transfer instead, never dry hands.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Like most fish, goldfish should not be routinely picked up by hand. This isn't an overcautious rule, their protective slime coat is a genuine, physical barrier against disease, and bare hands remove it on contact.",
     "date": "2026-07-20",
@@ -23622,7 +23662,7 @@
     "title": "Goldfish Tank Setup: Bigger Than You Think, Filtered More Than You'd Guess",
     "seoTitle": "Goldfish Tank Setup Guide",
     "seoDescription": "Goldfish need at least 20 gallons for one fancy fish, 55+ for single tails, and filtration turning over tank volume 10 times an hour or more.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "If you take away one thing from goldfish care, make it this: the bowl is wrong, and the tank you need is bigger than most people expect for what looks like a small, simple fish.",
     "date": "2026-07-20",
@@ -23666,7 +23706,7 @@
     ],
     "relatedProducts": [
       "tank-10-gallon",
-      "canister-filter",
+      "hob-filter-aquaclear-50",
       "canister-filter-large",
       "water-conditioner",
       "water-test-kit"
@@ -23688,7 +23728,7 @@
     "title": "The Goldfish Bowl Myth: What the Research Actually Shows",
     "seoTitle": "The Goldfish Bowl Myth Debunked",
     "seoDescription": null,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Why the goldfish bowl and 3-second-memory myths are wrong, what undersized tanks really do to goldfish, and the true space requirements by variety.",
     "date": "2026-06-26",
@@ -23737,7 +23777,7 @@
       }
     ],
     "relatedProducts": [
-      "canister-filter",
+      "hob-filter-aquaclear-50",
       "tank-20-gallon-long",
       "api-tap-water-conditioner"
     ],
@@ -24569,7 +24609,7 @@
     "title": "Is It Legal to Own a Green Iguana? State-by-State Guide",
     "seoTitle": "Are Green Iguanas Legal? Florida Banned Them in 2021",
     "seoDescription": "Green iguanas are banned in five US jurisdictions including Florida, which prohibited them in 2021. Three more need a permit, and Vermont restricts by omission.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "The green iguana is the most restricted lizard in common keeping, and the map changed recently. Florida added it to the prohibited list in 2021, which means a great deal of older advice describing Florida as the easy state for this animal is now backwards.",
     "date": "2026-09-11",
@@ -24819,8 +24859,8 @@
     "path": "/content/guides/guinea-pig-cost-guide.mdx",
     "slug": "guinea-pig-cost-guide",
     "title": "How Much Does a Guinea Pig Really Cost?",
-    "seoTitle": "Guinea Pig Price: $10 to $60, Plus $158 to $204 Setup",
-    "seoDescription": "Guinea pigs cost just $10-60, but budget $158-204 upfront and $60-135 a month for the pair every credible source recommends.",
+    "seoTitle": "Guinea Pig Price: $10 to $60, Plus $300 to $470 Setup",
+    "seoDescription": "Guinea pigs cost just $10-60, but budget $300-470 upfront and $75-185 a month for the pair every credible source recommends.",
     "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Guinea pigs are cheap to adopt and expensive to underestimate. The animal itself costs almost nothing, but guinea pigs are social animals that need a same-species companion, so most of the budgeting math here is about caring for two, not one.",
@@ -24856,18 +24896,29 @@
       },
       {
         "q": "What should I budget for a starter setup?",
-        "a": "Most first-time setups, including a properly sized cage, bedding, a food dish, a water bottle, and a hideout, add up to about $158 to $204. The cage is the single biggest line item, and it's worth getting the size right the first time rather than upgrading later."
+        "a": "Every item in the setup table adds up to $300 to $470: a cage sized for a pair, the first bag of bedding, a hay rack, the first hay, pellets and vitamin C supplement, a food dish, a water bottle, a wooden hideout, a second hide and a tunnel, chew toys, nail clippers, styptic powder, a carrier, a kitchen scale and a room thermometer. The cage is the single biggest line item, and it's worth getting the size right the first time rather than upgrading later."
       },
       {
         "q": "What are the ongoing monthly costs for guinea pigs?",
-        "a": "$33 to $70 a month for one, $60 to $135 for a pair, and a pair is the recommended minimum. Hay, pellets and fresh vegetables are the recurring lines, and hay grows with the number of animals because it is unlimited."
+        "a": "Hay, pellets and fresh vegetables run $30 to $70 a month for one and $60 to $135 for a pair, and a pair is the recommended minimum. Bedding top-ups ($10-35) and the vitamin C supplement ($5-15) bring a pair to $75 to $185 a month. Hay grows with the number of animals because it is unlimited."
       }
     ],
     "relatedProducts": [
       "cc-cage-guinea-pig",
+      "bedding-kaytee-clean-cozy-white",
+      "hay-manger-kaytee-large",
       "timothy-hay-small-pets",
+      "guinea-pig-vitamin-c-supplement",
+      "small-mammal-bowl-kaytee-vege-t-bowl",
+      "water-bottle-choco-nose-no-drip",
       "guinea-pig-hideout-niteangel-wood-house",
-      "bedding-kaytee-clean-cozy-white"
+      "small-mammal-play-pack-seagrass",
+      "chew-guinea-pig-natural-sticks",
+      "nail-clippers-pet-republique-small-animal",
+      "styptic-powder-kwik-stop",
+      "rabbit-carrier-amazon-basics-top-load",
+      "digital-thermometer-hygrometer-combo",
+      "gram-scale-etekcity-kitchen"
     ],
     "factFile": false,
     "animalDay": null,
@@ -25853,8 +25904,8 @@
     "path": "/content/guides/hamster-cost-guide.mdx",
     "slug": "hamster-cost-guide",
     "title": "How Much Does a Hamster Really Cost?",
-    "seoTitle": "Hamster Cost: $111 to $226 to Set Up, Animal Included",
-    "seoDescription": "Hamster cost breakdown: $16 to $26 for the animal, $111 to $226 to set up with it, $10 to $18 a month, and why a median 1.75-year lifespan changes the math.",
+    "seoTitle": "Hamster Cost: $165 to $550 to Set Up, Animal Included",
+    "seoDescription": "Hamster cost breakdown: $15 to $25 for the animal, $165 to $550 to set up with it, $10 to $25 a month, and why a median 1.75-year lifespan changes the math.",
     "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Hamsters are one of the cheapest pets to buy and one of the easiest to underfund properly. The animal costs almost nothing, doing right by it costs considerably more.",
@@ -25882,19 +25933,19 @@
     "faqs": [
       {
         "q": "How much does a hamster itself cost?",
-        "a": "About $26 for a Syrian at a pet store chain. Dwarf species run about $16 to $24, with the Russian dwarf at the low end and the Chinese, Winter White and Roborovski at the top. Rescues rehome hamsters too, so check one before buying."
+        "a": "About $25 for a Syrian at a pet store chain. Dwarf species run about $15 to $25, with the Russian dwarf at the low end and the Chinese, Winter White and Roborovski at the top. Rescues rehome hamsters too, so check one before buying."
       },
       {
         "q": "What does a full hamster setup cost upfront?",
-        "a": "$111 to $226 with the animal: $121 to $226 with a Syrian, $111 to $224 with a dwarf. That covers the enclosure, deep bedding, a solid wheel, a hideout, dishes and a thermometer. A water bottle, sand bath and chew items are not priced in those rows, so they come on top. A humane setup costs meaningfully more than the animal itself, which is exactly backwards from what the cheap sticker price suggests."
+        "a": "$165 to $550 with the animal: $185 to $550 with a Syrian, whose ready-made 47-inch cage is the priciest enclosure in the table, and $165 to $430 with a dwarf. Every item is priced: the enclosure, a wheel sized to the species, deep bedding, a hideout and a tunnel, a sand bath, a food dish, a water bottle, the first pellets, chews and hay, a thermometer, a kitchen scale and a carrier. A humane setup costs meaningfully more than the animal itself, which is exactly backwards from what the cheap sticker price suggests."
       },
       {
         "q": "What are the ongoing monthly costs for a hamster?",
-        "a": "About $10 to $18 a month for food, vegetables, bedding and chews together, which is $125 to $215 a year, and most of it goes on bedding, because a deep layer gets replaced regularly to keep it clean."
+        "a": "About $10 to $25 a month for food, vegetables, bedding, chews, bath sand and hay together, which is $140 to $265 a year, and most of it goes on bedding, because a deep layer gets replaced regularly to keep it clean."
       },
       {
         "q": "How much does hamster vet care cost?",
-        "a": "Exotic practices that publish their fees charge about $83 to $115 for a small-mammal wellness exam. An emergency exam runs about $200 before any tests or treatment. Treat wet tail as a same-day emergency, not a wait-and-see situation."
+        "a": "Exotic practices that publish their fees charge about $80 to $115 for a small-mammal wellness exam. An emergency exam runs about $200 before any tests or treatment. Treat wet tail as a same-day emergency, not a wait-and-see situation."
       },
       {
         "q": "How does a hamster's short lifespan affect the cost math?",
@@ -25902,14 +25953,19 @@
       }
     ],
     "relatedProducts": [
-      "hamster-cage-prevue-528-universal",
+      "hamster-cage-bucatstate-3-0-47in",
+      "tank-aqueon-40-breeder",
       "hamster-wheel-niteangel-super-silent-10in",
+      "wheel-kaytee-silent-spinner-6-5in",
       "small-pet-paper-bedding",
       "small-pet-hideout-igloo",
-      "bird-feeding-dishes-okllen-4pack",
-      "digital-thermometer-hygrometer-combo",
+      "burrow-tunnel-composable",
+      "bath-sand-niteangel-desert",
+      "small-mammal-bowl-kaytee-vege-t-bowl",
       "hamster-food-oxbow-garden-select",
-      "chew-guinea-pig-natural-sticks"
+      "chew-guinea-pig-natural-sticks",
+      "digital-thermometer-hygrometer-combo",
+      "gram-scale-etekcity-kitchen"
     ],
     "factFile": false,
     "animalDay": null,
@@ -26243,8 +26299,8 @@
     "slug": "hamster-skink-whitestreefrog-pacmanfrog-overview",
     "title": "Four Pets, Four Different Lessons",
     "seoTitle": "Hamster, Skink, Tree Frog & Pacman Frog",
-    "seoDescription": "A $16 to $26 hamster needing hundreds of square inches of floor space, a skink split by origin, and two pet frogs on opposite ends of the handling scale.",
-    "lastUpdated": "2026-09-25",
+    "seoDescription": "A $15 to $25 hamster needing hundreds of square inches of floor space, a skink split by origin, and two pet frogs on opposite ends of the handling scale.",
+    "lastUpdated": "2026-10-03",
     "noIndex": true,
     "excerpt": "A cheap animal with an expensive setup. A lizard whose whole care plan depends on where it was born. And two frogs that turn out to be near-opposites of each other.",
     "date": "2026-07-16",
@@ -26270,7 +26326,7 @@
     "canonicalUrl": null,
     "faqs": [
       {
-        "q": "Why does a $16 to $26 hamster need a setup that costs so much more?",
+        "q": "Why does a $15 to $25 hamster need a setup that costs so much more?",
         "a": "Current welfare guidance calls for hundreds of square inches of unbroken floor space and 6 or more inches of bedding depth for burrowing, far more than the small wire starter kits sold alongside most hamsters provide. The animal is cheap. Housing it correctly is where the budget goes."
       },
       {
@@ -26351,11 +26407,11 @@
       }
     ],
     "relatedProducts": [
-      "hamster-cage-prevue-528-universal",
+      "hamster-cage-bucatstate-3-0-47in",
+      "tank-aqueon-40-breeder",
       "hamster-wheel-niteangel-super-silent-10in",
       "small-pet-paper-bedding",
-      "small-pet-hideout-igloo",
-      "digital-thermometer-hygrometer-combo"
+      "small-pet-hideout-igloo"
     ],
     "factFile": false,
     "animalDay": null,
@@ -26442,7 +26498,7 @@
     "title": "How Much Does a Hedgehog Really Cost?",
     "seoTitle": "Hedgehog Price: $100 to $300, Plus $200 to $400 Setup",
     "seoDescription": "Hedgehogs cost $100-300 to buy, $200-400 to set up, and $20-40 monthly, but check legality first: they're banned in California, Georgia, Hawaii, DC, and NYC.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-04",
     "noIndex": false,
     "excerpt": "Hedgehogs are moderately priced, but the first real decision with this species isn't financial at all, it's legal. Several states and cities ban or restrict ownership outright, and that has to be settled before a single dollar gets budgeted.",
     "date": "2026-07-19",
@@ -26489,7 +26545,6 @@
       }
     ],
     "relatedProducts": [
-      "hamster-cage-prevue-528-universal",
       "hedgehog-wheel-exotic-nutrition-silent-runner-12in-wide",
       "small-pet-hideout-igloo",
       "digital-thermometer-hygrometer-combo",
@@ -26789,7 +26844,7 @@
     "title": "Is It Legal to Own a Hedgehog? State-by-State Guide",
     "seoTitle": "Are Hedgehogs Legal in Your State? The Real Answer",
     "seoDescription": "Hedgehogs are banned in California, Georgia, Hawaii, Pennsylvania, DC, and NYC. New Jersey is the only state requiring a permit, not Maine or Wisconsin.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Six places in the US will not let you keep a hedgehog, and almost every list of them gets the reasons wrong. Pennsylvania has no law against hedgehogs at all. Hawaii never names the pet species. Maine, widely reported as a permit state, does not require one.",
     "date": "2026-08-11",
@@ -26831,7 +26886,7 @@
     "title": "Hedgehog Enclosure Setup: Temperature Is the Non-Negotiable Part",
     "seoTitle": "Hedgehog Enclosure Setup Guide",
     "seoDescription": "Hedgehog enclosures need at least 2 by 3 feet of solid floor, 72 to 90°F heat, and a 10.5 to 12 inch wheel. Below 72°F risks fatal hibernation.",
-    "lastUpdated": "2026-09-14",
+    "lastUpdated": "2026-10-04",
     "noIndex": false,
     "excerpt": "Hedgehog housing is fairly straightforward once you understand one hard rule: this species cannot tolerate a cold enclosure, and getting temperature wrong isn't a minor mistake, it's dangerous.",
     "date": "2026-07-19",
@@ -26878,7 +26933,6 @@
       }
     ],
     "relatedProducts": [
-      "hamster-cage-prevue-528-universal",
       "hedgehog-wheel-exotic-nutrition-silent-runner-12in-wide",
       "ceramic-heat-emitter-zoo-med-repticare-150w",
       "digital-thermometer-hygrometer-combo",
@@ -27013,7 +27067,7 @@
     "title": "How Much Does a Hermit Crab Cost?",
     "seoTitle": "Hermit Crab Price: $5 to $40 Each, Plus $90 to $350 Setup",
     "seoDescription": "Hermit crab cost breakdown: $5-40 per crab, a $90-350 humidity-controlled setup, and just $10-30 a month, for a pet that can live 10 years or more.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-04",
     "noIndex": false,
     "excerpt": "Hermit crabs are often sold as an impulse buy at beach shops and boardwalk stands, which is exactly the wrong way to think about them. Done properly, they need a real setup, and they're social animals that shouldn't be kept alone.",
     "date": "2026-07-21",
@@ -27044,7 +27098,7 @@
       },
       {
         "q": "What does a proper hermit crab setup cost?",
-        "a": "Plan on $90 to $350 for a full setup: tank, substrate, heat mat, thermometer/hygrometer, extra shells, dishes, and marine salt. Tank size and how many crabs you're starting with are what move you around in that range."
+        "a": "Plan on $95 to $350 for a full setup: tank, substrate, heat mat, thermometer/hygrometer, extra shells, dishes, and marine salt. Tank size and how many crabs you're starting with are what move you around in that range."
       },
       {
         "q": "What are the ongoing monthly costs for a hermit crab?",
@@ -27056,7 +27110,7 @@
       }
     ],
     "relatedProducts": [
-      "tank-10-gallon",
+      "tank-20-gallon-long",
       "digital-thermometer-hygrometer-combo",
       "substrate-hermit-crab-flukers-sand-coco",
       "large-soakable-water-dish",
@@ -27068,7 +27122,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 3,
     "headingCount": 7,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -27273,7 +27327,7 @@
     "title": "Common Hermit Crab Health Issues (There's Almost No Vet Care, So Prevention Is Everything)",
     "seoTitle": "Hermit Crab Health Issues: Signs & Causes",
     "seoDescription": "Every pet hermit crab is wild-caught, and post-purchase stress is their leading cause of death. There's almost no vet care here, husbandry does the work.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Here's the thing to understand upfront about hermit crab health: there's essentially no practical veterinary care available for this species, similar to the situation with pet tarantulas. That reshapes everything about how to approach their wellbeing, husbandry and prevention do nearly all of the work.",
     "date": "2026-07-21",
@@ -27336,8 +27390,8 @@
     "slug": "hermit-crab-tank-setup-guide",
     "title": "Hermit Crab Enclosure Setup: Humidity, Deep Substrate, and Extra Shells",
     "seoTitle": "Hermit Crab Enclosure Setup Guide",
-    "seoDescription": "Hermit crabs need a 10-gallon tank for up to two crabs, 75 to 85% humidity, 6+ inches of substrate, and two water dishes, one fresh, one marine saltwater.",
-    "lastUpdated": "2026-09-25",
+    "seoDescription": "Hermit crabs need at least 10 gallons per crab, 75 to 85% humidity, 6+ inches of substrate, and two water dishes, one fresh, one marine saltwater.",
+    "lastUpdated": "2026-10-04",
     "noIndex": false,
     "excerpt": "Hermit crab care is different from most small-pet setups. This is a species that needs both land and water access, and its most important requirement, humidity, is the one first-time owners most often get wrong.",
     "date": "2026-07-21",
@@ -27364,7 +27418,7 @@
     "faqs": [
       {
         "q": "What size tank does a hermit crab need?",
-        "a": "10 gallons for up to two adult crabs, and at least 5 more gallons for each crab past the first two. The lid has to hold humidity in: glass or acrylic works best, and a screen lid should have part of it covered with plastic wrap or tape to help retain moisture."
+        "a": "At least 10 gallons for each small to medium crab and 15 for each large one, so a pair starts at 20 gallons, and bigger is better. The lid has to hold humidity in: glass or acrylic works best, and a screen lid should have part of it covered with plastic wrap or tape to help retain moisture."
       },
       {
         "q": "What humidity level do hermit crabs need?",
@@ -27380,7 +27434,7 @@
       }
     ],
     "relatedProducts": [
-      "tank-10-gallon",
+      "tank-20-gallon-long",
       "digital-thermometer-hygrometer-combo",
       "substrate-hermit-crab-flukers-sand-coco",
       "large-soakable-water-dish",
@@ -27392,7 +27446,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
+    "sourceCount": 3,
     "headingCount": 10,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -27467,9 +27521,9 @@
     "path": "/content/guides/hognose-snake-cost-guide.mdx",
     "slug": "hognose-snake-cost-guide",
     "title": "How Much Does a Western Hognose Snake Really Cost?",
-    "seoTitle": "Hognose Snake Price: $50 to $1,000+, Plus $200 to $500 Setup",
-    "seoDescription": "Western hognose cost: $50-100 for a normal morph up to $1,000+ for rare combos, a $200-500 setup, and about $15-28 monthly, cheaper to run than a ball python.",
-    "lastUpdated": "2026-10-02",
+    "seoTitle": "Hognose Snake Price: $50 to $1,000+, Plus $390 to $850 Setup",
+    "seoDescription": "Western hognose cost: $50 to $100 for a normal morph, $1,000+ for rare combos, a $390 to $850 setup, and $235 to $390 a year, cheaper to run than a ball python.",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Western hognose snakes are one of the more affordable pet snakes to keep long term, with a low ongoing cost that lands them close to a corn snake and well under a ball python.",
     "date": "2026-07-14",
@@ -27499,11 +27553,11 @@
       },
       {
         "q": "What does the upfront setup cost for a hognose snake?",
-        "a": "Roughly $200 to $500. That covers a PVC or glass enclosure sized around 2x2x2 feet or 36x18x18 inches, a halogen basking bulb in a fixture on a dimming thermostat, a digital thermometer and hygrometer, deep loose substrate for burrowing, hides, and a water bowl."
+        "a": "$390 to $850 with every item priced, or $280 to $710 without the optional UVB light and night heat. The first vet exam and fecal test bring it to $465 to $1,000. That covers a PVC or glass enclosure sized around 2x2x2 feet or 36x18x18 inches, a 50 W halogen basking bulb in a dome fixture on a dimming thermostat, a timer, a digital thermometer and hygrometer, an infrared thermometer, deep loose substrate for burrowing, three hides, cover, a water dish, a feeding tub, tongs, a snake hook, a gram scale and the first pack of mice."
       },
       {
         "q": "What are the ongoing monthly costs for a hognose snake?",
-        "a": "Roughly $15 to $28 a month, or $180 to $330 a year. Frozen and thawed rodents are the largest line even though hognoses don't eat as often as some other snakes, and electricity for the heat, an annual wellness check and the occasional substrate change make up the rest."
+        "a": "$235 to $390 a year, about $15 to $35 a month. Frozen and thawed rodents are the largest line even though hognoses don't eat as often as some other snakes, and electricity for the heat, an annual wellness check, the occasional substrate change and two UVB tubes a year, if you run one, make up the rest."
       },
       {
         "q": "What do vet visits cost for a hognose snake?",
@@ -27519,14 +27573,15 @@
       "milk-snake-halogen-bulb-exo-terra-sun-glo-50w",
       "cork-bark-round-hide",
       "digital-thermometer-hygrometer-combo",
-      "aspen-shavings-substrate"
+      "aspen-shavings-substrate",
+      "uvb-arcadia-forest-6-22in-24w"
     ],
     "factFile": false,
     "animalDay": null,
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 3,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -27859,7 +27914,7 @@
     "title": "Western Hognose Snake Enclosure Setup: Dry, Deep, and Built for Burrowing",
     "seoTitle": "Hognose Snake Enclosure Setup Guide",
     "seoDescription": "Western hognose enclosure setup: males need 20 gallons, females 40, basking 90-95°F, 30-50% humidity, and 3-6 inches of dry, diggable substrate.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Western hognose care comes down to a fairly short list of priorities: keep it dry, keep the substrate deep enough to burrow in, and get the heat source right.",
     "date": "2026-07-14",
@@ -27902,7 +27957,7 @@
       },
       {
         "q": "Does a hognose snake need UVB lighting?",
-        "a": "It isn't strictly required by every source, but hognoses are active during the day, unlike many pet snakes, and a low-output linear T5 bulb spanning part of the enclosure is increasingly recommended for this diurnal species, alongside a normal 12-hour light and dark cycle."
+        "a": "Not every source calls it essential. Because hognoses are active by day, keepers increasingly add a low-output linear T5 tube covering about two-thirds of the enclosure length, switched on and off with the lights on a 12-hour cycle."
       }
     ],
     "relatedProducts": [
@@ -28602,8 +28657,8 @@
     "slug": "invertebrate-quarantine-cleaning-and-escapes-guide",
     "title": "Invertebrate Housekeeping: Quarantining a New Arrival, Cleaning the Enclosure, and Finding an Escapee",
     "seoTitle": "Invertebrate Quarantine, Cleaning and Escapes",
-    "seoDescription": "Invertebrate quarantine, cleaning and escapes: three months apart, weekly spot cleans, substrate every 6 to 12 months, and where an escaped tarantula hides.",
-    "lastUpdated": "2026-09-25",
+    "seoDescription": "Invertebrate quarantine, cleaning and escapes: new arrivals kept apart, weekly spot cleans, substrate every 6 to 12 months, and finding an escaped tarantula.",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Three questions every new invertebrate keeper asks: how long to isolate a new animal, how often to clean an enclosure that never looks dirty, and where a tarantula goes when the lid was left open.",
     "date": "2026-09-16",
@@ -28631,7 +28686,7 @@
     "faqs": [
       {
         "q": "How long should I quarantine a new invertebrate?",
-        "a": "At least three months, in a different room from the rest of the collection if you have one, with its own tools. That is the tarantula hobby's figure and it covers the slow problems, mites and mold that build over weeks and the nematode infections that only show once the animal is established. A single first pet skips the room but not the watching."
+        "a": "There is no set number of weeks. Keep it apart, in a different room from the rest of the collection if you have one, with its own tools, until you have watched it feed, drink and settle, and longer for a wild-caught animal. The problems that come in with a new invertebrate are slow: mites and mold that build over weeks, and the oral nematodes that turn up mostly in wild-caught spiders. A single first pet skips the room but not the watching."
       },
       {
         "q": "How often do I clean an invertebrate enclosure?",
@@ -28639,7 +28694,7 @@
       },
       {
         "q": "My tarantula escaped. Where do I look?",
-        "a": "Low, dark and warm, in the room it escaped from if it has been under two hours: under furniture, in dark corners, under the bed, in piles of clothes or shoes. Tree-dwellers climb instead, so check walls and bookshelves. Search at night with a flashlight, and put out a water dish or damp paper towel as bait, since an escapee goes looking for water first."
+        "a": "Close the door of the room first, then search that room thoroughly before widening: low, under furniture and in corners, for a ground-dweller, and up the walls and bookshelves for a tree-dweller, which climbs. Recapture it under a clear cup with a stiff card slid underneath, never by hand."
       },
       {
         "q": "What do mites in the enclosure mean?",
@@ -28654,7 +28709,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 7,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
@@ -28949,7 +29004,7 @@
     "title": "Jackson's Chameleon Feeding: Three Insects Every Other Day, and the Supplement That Causes Edema",
     "seoTitle": "What Do Jackson's Chameleons Eat? Feeding Schedule",
     "seoDescription": "Jackson's chameleon diet: insects no wider than the eyes, adults 3 every other day with a 5 to 7 ceiling, calcium weekly, vitamin A and D low, water first.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-10-04",
     "noIndex": false,
     "excerpt": "A Jackson's chameleon is the one lizard where more supplement is the common mistake. Here is the feeding schedule by age, the five-to-seven insect ceiling, the eye-width prey rule, the calcium and vitamin rhythm that keeps a montane chameleon out of edema and gout, and why it drinks before it eats.",
     "date": "2026-09-16",
@@ -28994,7 +29049,7 @@
       }
     ],
     "relatedProducts": [
-      "calcium-miner-all-indoor-2pack",
+      "calcium-zoo-med-without-d3",
       "reptile-multivitamin-repcal-herptivite"
     ],
     "factFile": false,
@@ -29150,7 +29205,7 @@
     "title": "Is It Legal to Own a Jackson's Chameleon? State Guide",
     "seoTitle": "Are Jackson's Chameleons Legal? Hawaii Is the Twist",
     "seoDescription": "Jackson's chameleons are legal in 46 of 52 US jurisdictions. Hawaii bars them despite having feral populations, and Maine names the species on its cleared list.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Jackson's chameleons clear 46 of 52 jurisdictions, and the one that bars them is the one where they are most abundant. Hawaii's feral population descends from a single 1972 release in Kaneohe, and no private keeper there may hold one.",
     "date": "2026-09-11",
@@ -29487,8 +29542,8 @@
     "slug": "jumping-spider-feeding-guide",
     "title": "Jumping Spider Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Jumping Spiders Eat? Diet and Feeding Schedule",
-    "seoDescription": "Jumping spider feeding: spiderlings eat every 1-2 days, adults every 2-5, never feed ants, and a healthy adult can safely fast 2-3 weeks around a molt.",
-    "lastUpdated": "2026-09-24",
+    "seoDescription": "Jumping spiders eat live insects: flightless fruit flies for slings, then crickets, houseflies and roach nymphs. Feed by abdomen size, and never feed ants.",
+    "lastUpdated": "2026-10-05",
     "noIndex": false,
     "excerpt": "Let the abdomen do the talking. Here's a real feeding schedule by life stage, safe prey, and how to tell normal premolt fasting from a jumping spider that needs help.",
     "date": "2026-07-28",
@@ -29525,7 +29580,7 @@
       },
       {
         "q": "What should I never feed a jumping spider?",
-        "a": "Ants, above all: jumping spiders show an instinctive fear response to them, and an ant can bite or spray formic acid. Also unsafe are hard-shelled beetles, pill bugs, fireflies, and any prey larger than the spider's own body."
+        "a": "Ants, above all: jumping spiders show an instinctive fear response to them, and an ant can bite or spray formic acid. Also unsafe are hard-shelled beetles, pill bugs, fireflies, and any prey bigger than the spider's abdomen."
       },
       {
         "q": "Why has my jumping spider stopped eating?",
@@ -29546,7 +29601,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -30926,11 +30981,11 @@
     "path": "/content/guides/leopard-gecko-cost-guide.mdx",
     "slug": "leopard-gecko-cost-guide",
     "title": "How Much Does a Leopard Gecko Really Cost?",
-    "seoTitle": "Leopard Gecko Price: $20 to $150, Plus $175 to $495 Setup",
+    "seoTitle": "Leopard Gecko Price: $20 to $150, Plus $315 to $760 Setup",
     "seoDescription": null,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
-    "excerpt": "Leopard geckos are one of the more budget-friendly reptiles to keep: $175 to $495 of equipment, $325 to $710 with the first vet exam, then $20 to $82 a month.",
+    "excerpt": "Leopard geckos are one of the more budget-friendly reptiles to keep: $315 to $760 of equipment, $465 to $975 with the first vet exam, then $30 to $85 a month.",
     "date": "2026-07-06",
     "category": "Reptiles",
     "categories": [
@@ -30959,11 +31014,11 @@
       },
       {
         "q": "Is a leopard gecko cheaper to keep than other reptiles?",
-        "a": "Generally yes. Equipment runs $175 to $495, and ongoing costs of $20 to $82 a month are on the lower end for reptiles. Breeding your own feeders and buying supplies in bulk keeps a budget near the bottom of that range."
+        "a": "Generally yes. Equipment runs $315 to $760, and ongoing costs of $30 to $85 a month are on the lower end for reptiles. Breeding your own feeders and buying supplies in bulk keeps a budget near the bottom of that range."
       },
       {
         "q": "Do I need to budget for UVB even though it's optional?",
-        "a": "It's worth it even though not required. A low-level UVB fixture and bulb runs $20 to $50 upfront and about $4 to $7 a month in replacement tubes, and research shows even brief low-level exposure benefits vitamin D3 levels."
+        "a": "It's worth it even though not required. A low-output UVB fixture and tube runs $105 to $135 upfront and about $5 a month for replacement tubes (two a year, about $25 each), and research shows even brief low-level exposure benefits vitamin D3 levels."
       },
       {
         "q": "What should I budget for vet care?",
@@ -30972,15 +31027,16 @@
     ],
     "relatedProducts": [
       "under-tank-heat-mat-thermostat-kit",
-      "uvb-arcadia-desert-12",
-      "dubia-roach-colony-starter-kit"
+      "arcadia-lumenize-prot5-24in-14w-2-5pct-shadedweller-max",
+      "dubia-roach-colony-starter-kit",
+      "uvi-meter-solarmeter-6-5r"
     ],
     "factFile": false,
     "animalDay": null,
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
+    "sourceCount": 6,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -31193,7 +31249,7 @@
     "title": "Common Leopard Gecko Health Issues and What to Watch For",
     "seoTitle": "Leopard Gecko Health Issues: Signs & Causes",
     "seoDescription": null,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Leopard geckos are generally hardy, but stick tail disease has no cure and is easy to miss early. Here's what every owner should know how to recognize.",
     "date": "2026-07-06",
@@ -31237,7 +31293,7 @@
     ],
     "relatedProducts": [
       "under-tank-heat-mat-thermostat-kit",
-      "uvb-arcadia-desert-12",
+      "arcadia-lumenize-prot5-24in-14w-2-5pct-shadedweller-max",
       "digital-thermometer-hygrometer-combo",
       "sphagnum-moss"
     ],
@@ -31258,7 +31314,7 @@
     "title": "Is It Legal to Own a Leopard Gecko? State-by-State Guide",
     "seoTitle": "Are Leopard Geckos Legal? Banned in Only Two Places",
     "seoDescription": "Leopard geckos are legal in 46 of 52 US jurisdictions. Hawaii names the species individually, DC bars all lizards, and New Jersey requires a possession permit.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "The leopard gecko is one of the least restricted reptiles in the country, cleared without a permit in 46 of 52 jurisdictions. Hawaii is the interesting exception, because it names this species individually rather than reaching it through a family.",
     "date": "2026-09-15",
@@ -31313,7 +31369,7 @@
     "title": "Leopard Gecko Enclosure Setup: What Your Gecko Actually Needs",
     "seoTitle": "Leopard Gecko Enclosure Setup Guide",
     "seoDescription": "Leopard gecko enclosure setup: 36x18x18in minimum, 88-92F belly heat on a thermostat, and a 70-80% humid hide that prevents most shedding problems.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-05",
     "noIndex": false,
     "excerpt": "Leopard geckos have a reputation for being low-maintenance, and mostly they are, but a few details around humidity and heat placement matter more than the simplicity suggests.",
     "date": "2026-07-06",
@@ -31357,7 +31413,7 @@
     ],
     "relatedProducts": [
       "under-tank-heat-mat-thermostat-kit",
-      "uvb-arcadia-desert-12",
+      "arcadia-lumenize-prot5-24in-14w-2-5pct-shadedweller-max",
       "shallow-water-dish",
       "cork-bark-round-hide"
     ],
@@ -31446,9 +31502,9 @@
     "path": "/content/guides/leopard-gecko-vs-crested-gecko-guide.mdx",
     "slug": "leopard-gecko-vs-crested-gecko-guide",
     "title": "Leopard Gecko vs. Crested Gecko: Which Beginner Gecko Fits You Better",
-    "seoTitle": "Crested Gecko vs Leopard Gecko: Which Is Easier to Keep?",
-    "seoDescription": "Leopard gecko vs crested gecko: live insects and 88-92F belly heat versus a powdered fruit diet, room temperature, and a tail that never grows back.",
-    "lastUpdated": "2026-09-08",
+    "seoTitle": "Crested Gecko vs Leopard Gecko: Crested Is Easier to Feed",
+    "seoDescription": "Crested geckos are easier to feed: a powdered diet, no live insects, in an 18x18x24 tank. Leopard geckos need live feeders, 88-92°F belly heat and a 36x18x18.",
+    "lastUpdated": "2026-10-05",
     "noIndex": false,
     "excerpt": "Leopard gecko or crested gecko? The differences in diet, enclosure shape, heating needs, and tail regrowth - not just which one looks friendlier at the pet store.",
     "date": "2026-07-09",
@@ -31481,7 +31537,7 @@
       },
       {
         "q": "Which gecko needs supplemental heating, leopard or crested?",
-        "a": "Leopard geckos do - they need a warm belly-heat zone around 88 to 92 degrees F, usually from an under-tank heat mat. Crested geckos are unusual among pet reptiles in that they do best at normal room temperature, roughly 72 to 78 degrees F, and can become stressed or ill above about 85 degrees F."
+        "a": "Leopard geckos do - they need a warm belly-heat zone around 88 to 92 degrees F, usually from an under-tank heat mat. Crested geckos need much less: an enclosure around 72 to 78 degrees F with a low-wattage bulb making a gentle 82 to 85 degree F basking spot, and never more than 85 degrees F, where they quickly overheat."
       },
       {
         "q": "Can a crested gecko regrow its tail if it drops it?",
@@ -31489,7 +31545,7 @@
       },
       {
         "q": "Which is more likely to jump or escape during handling, leopard or crested gecko?",
-        "a": "Crested geckos, by a lot. They're arboreal and startlingly good jumpers with sticky toe pads that let them stick to glass, so a started crested gecko can go from your hand to across the room in an instant. Leopard geckos are ground-dwelling and calmer to hold, without the sudden leaping."
+        "a": "Crested geckos, by a lot. They're arboreal and startlingly good jumpers with sticky toe pads that let them stick to glass, so a started crested gecko can go from your hand to across the room in an instant. Leopard geckos are ground-dwelling and calmer to hold, though they can still dart or hop unexpectedly, so handle them low over a soft surface."
       },
       {
         "q": "Which enclosure is easier to set up, leopard or crested gecko?",
@@ -31507,7 +31563,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -31631,9 +31687,9 @@
     "path": "/content/guides/lovebird-cost-guide.mdx",
     "slug": "lovebird-cost-guide",
     "title": "How Much Does a Lovebird Really Cost?",
-    "seoTitle": "Lovebird Price: $50 to $400, Plus About $300 Setup",
-    "seoDescription": "Lovebird cost breakdown: $50-400 for the bird, a $300 setup, $20-35 monthly, and why buying one bird versus two changes the entire budget.",
-    "lastUpdated": "2026-09-25",
+    "seoTitle": "Lovebird Cost: $50 to $400, Plus $275 to $600 Setup",
+    "seoDescription": "Lovebird cost breakdown: $50-400 for the bird, a $275-600 setup, $20-40 monthly, and why buying one bird versus two changes the entire budget.",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Lovebirds are one of the more affordable parrots to buy, but the name suggests something gentler than what you get, and the biggest cost decision isn't a price tag at all, it's whether you buy one bird or two.",
     "date": "2026-07-20",
@@ -31664,11 +31720,11 @@
       },
       {
         "q": "What does a full lovebird setup cost upfront?",
-        "a": "Roughly $300, covering a quality cage ($80 to $200 for stainless or powder-coated), a cage cover, bowls, toys, varied perches, and a bath option. Avoid cages in the $30 to $50 range entirely, cheap cages rust, and a rusting cage introduces a genuine zinc toxicity risk."
+        "a": "$275 to $600 before the bird, with every item priced: a quality cage ($80 to $240 for stainless or powder-coated), varied perches, food and water dishes, a foraging toy, shreddable and chew toys, a breathable cage cover, a shallow bath, a full-spectrum UV light made for birds, a gram scale, a travel carrier and the first bag of pellets. Avoid cages in the $30 to $50 range entirely, cheap cages rust, and a rusting cage introduces a genuine zinc toxicity risk."
       },
       {
         "q": "What are the ongoing monthly costs for a lovebird?",
-        "a": "Roughly $20 to $35 a month once you average out the annual pellet, produce, toy, and vet-care costs, which run $260 to $430 a year total. Toys are the wild card, lovebirds are aggressive chewers and go through them fast."
+        "a": "$20 to $40 a month once you average out the annual pellet, produce, toy, and vet-care costs, which run $260 to $430 a year total. Toys are the wild card, lovebirds are aggressive chewers and go through them fast."
       },
       {
         "q": "How much does avian vet care cost for a lovebird?",
@@ -31680,18 +31736,23 @@
       }
     ],
     "relatedProducts": [
-      "bird-flight-cage-large",
-      "bird-perches",
+      "bird-cage-prevue-steel-flight-large",
+      "bird-feeding-dishes-okllen-4pack",
+      "bird-toy-kyouki-foraging-box",
       "bird-toy-bbjinronjy-sola-ball-2pc",
-      "bird-food-roudybush-daily-mini-44oz",
-      "bird-toys-katumo-small-parrot-variety"
+      "cage-cover-prevue-good-night-large",
+      "canary-shallow-bird-bath",
+      "uvb-arcadia-puresun-compact-bird-kit",
+      "gram-scale-etekcity-kitchen",
+      "bird-travel-carrier-perch",
+      "bird-food-roudybush-daily-mini-44oz"
     ],
     "factFile": false,
     "animalDay": null,
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -31702,10 +31763,10 @@
     "slug": "lovebird-enrichment-guide",
     "title": "Lovebird Enrichment: Foraging, Toys, and What Cuts Boredom",
     "seoTitle": "Lovebird Enrichment Guide",
-    "seoDescription": "Wild lovebirds spend 60-80% of waking hours foraging for food. Hidden-food toys and a 3-5 toy rotation replace that instinct better than a bowl ever can.",
-    "lastUpdated": "2026-09-25",
+    "seoDescription": "Wild lovebirds spend much of the day foraging. Hidden-food toys and a 3 to 5 toy rotation replace that instinct better than a bowl ever can.",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
-    "excerpt": "Lovebirds forage 60 to 80% of their waking hours in the wild. A cage with a food bowl and nothing else is asking for feather plucking, screaming, and pacing. Here's what replaces that lost behavior.",
+    "excerpt": "A wild lovebird spends much of its day searching for food. A cage with a food bowl and nothing else is asking for feather plucking, screaming, and pacing. Here's what replaces that lost behavior.",
     "date": "2026-08-21",
     "category": "Enrichment",
     "categories": [
@@ -31729,7 +31790,7 @@
     "faqs": [
       {
         "q": "Why is enrichment so important for lovebirds specifically?",
-        "a": "In the wild, parrots including lovebirds spend an estimated 60 to 80% of their waking hours foraging, searching, and problem-solving for food. A cage with a static food bowl removes almost all of that natural behavior at once, and boredom in lovebirds shows up as feather plucking, repetitive pacing, and excessive screaming."
+        "a": "In the wild, parrots including lovebirds spend a large share of the day foraging, searching, and problem-solving for food, and no source worth citing puts an hour figure on it. A cage with a static food bowl removes almost all of that natural behavior at once, and boredom in lovebirds shows up as feather plucking, repetitive pacing, and excessive screaming."
       },
       {
         "q": "What is contra-freeloading and why does it matter here?",
@@ -31768,7 +31829,7 @@
     "title": "Lovebird Feeding: Calcium, Vitamin A, and the Hen That Keeps Laying",
     "seoTitle": "Lovebird Feeding: Pellets, Calcium and Vitamin A",
     "seoDescription": "Lovebird feeding guide: pellet and vegetable proportions, the vitamin A and calcium gaps this species runs into, and why dusting a seed mix does nothing.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "A lone female lovebird will often lay clutch after clutch with no mate in sight, and every egg is built out of calcium she has to get from somewhere.",
     "date": "2026-09-09",
@@ -31818,7 +31879,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 5,
-    "headingCount": 10,
+    "headingCount": 11,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -31829,7 +31890,7 @@
     "title": "How to Handle a Lovebird (And Why the Name Is Misleading)",
     "seoTitle": "How to Handle a Lovebird Correctly",
     "seoDescription": "Lovebirds are territorial and aggressive despite the name, especially females. One bird bonds to you, a pair bonds to each other and mostly ignores you.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "The name suggests a sweet, gentle pet. The reality is more complicated, lovebirds are affectionate and bold, but known for being nippy and territorial, and the single biggest factor in how tame yours becomes is whether you keep one bird or two.",
     "date": "2026-07-20",
@@ -31882,7 +31943,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6,
-    "headingCount": 8,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -31893,7 +31954,7 @@
     "title": "Common Lovebird Health Issues and What Causes Them",
     "seoTitle": "Lovebird Health Issues: Signs & Causes",
     "seoDescription": "Lovebird health risks: PBFD is often fatal with no cure, hens lay eggs without a mate, and egg-binding can turn fatal fast if it's not caught early.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Lovebirds hide illness well, a survival instinct that means by the time symptoms are obvious, a problem is often more advanced than it would be in a more expressive pet. A handful of conditions come up often enough to know in advance.",
     "date": "2026-07-20",
@@ -31942,16 +32003,15 @@
     "relatedProducts": [
       "bird-food-roudybush-daily-mini-44oz",
       "bird-toy-bbjinronjy-sola-ball-2pc",
-      "bird-toys-katumo-small-parrot-variety",
-      "bird-flight-cage-large"
+      "bird-cage-prevue-steel-flight-large"
     ],
     "factFile": false,
     "animalDay": null,
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
-    "headingCount": 11,
+    "sourceCount": 6,
+    "headingCount": 14,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -31962,7 +32022,7 @@
     "title": "Lovebird Cage Setup: What Your Bird Actually Needs",
     "seoTitle": "Lovebird Cage Setup Guide",
     "seoDescription": "Lovebird cage setup: keep bar spacing between 3/8 and 5/8 inch, wider gaps can trap and kill a bird. Skip nest boxes and happy huts entirely.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Lovebird housing has a few specific safety details that matter more than they might seem to at first glance, bar spacing especially. Get those right, along with size and material, and the rest of the setup is fairly straightforward.",
     "date": "2026-07-20",
@@ -31989,7 +32049,7 @@
     "faqs": [
       {
         "q": "What size cage does a lovebird need?",
-        "a": "18 by 18 by 24 inches minimum for one bird, 24 by 18 by 24 for a pair, and bigger is always better. Long, horizontal cages suit lovebirds, which fly side to side rather than climbing."
+        "a": "18 by 18 by 24 inches is the least that is adequate for one bird, and 24 by 18 by 24 for a pair. VCA sets a larger minimum, 3 feet long by 2 feet wide by 2 feet tall, which is the better target. Long, horizontal cages suit lovebirds, which fly side to side rather than climbing."
       },
       {
         "q": "How wide can the bar spacing be on a lovebird cage?",
@@ -32009,18 +32069,16 @@
       }
     ],
     "relatedProducts": [
-      "bird-flight-cage-large",
-      "bird-perches",
-      "bird-toy-bbjinronjy-sola-ball-2pc",
-      "bird-toys-katumo-small-parrot-variety"
+      "bird-cage-prevue-steel-flight-large",
+      "bird-toy-bbjinronjy-sola-ball-2pc"
     ],
     "factFile": false,
     "animalDay": null,
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
-    "headingCount": 11,
+    "sourceCount": 4,
+    "headingCount": 13,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -33766,7 +33824,7 @@
     "title": "Mourning Gecko Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Mourning Geckos Eat? Diet and Feeding Schedule",
     "seoDescription": "Mourning gecko feeding guide: CGD vs. live insects, why calcium demand never stops, and how to read real appetite loss.",
-    "lastUpdated": "2026-09-15",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "A mourning gecko's calcium needs never pause, since a lone female still lays eggs every few weeks on her own. Here's a real feeding schedule and why the numbers vary so much between care sheets.",
     "date": "2026-07-31",
@@ -33820,7 +33878,7 @@
     ],
     "relatedProducts": [
       "crested-gecko-diet-pangea-watermelon-complete-8oz",
-      "calcium-repashy-superfoods-plus-4oz"
+      "calcium-zoo-med-without-d3"
     ],
     "factFile": false,
     "animalDay": null,
@@ -35240,7 +35298,7 @@
     "title": "Oscar Fish Aren't Handled, But They're the Closest Thing to a Pet Dog in Your Tank",
     "seoTitle": "Oscar Fish Behavior and Handling Guide",
     "seoDescription": "Oscar fish recognize their keeper, hand feed, and play dead, real personality no other fish here has. But anything that fits in their mouth becomes food.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-04",
     "noIndex": false,
     "excerpt": "Most fish are observation animals built around feeding and water care. Oscars are different, intelligent enough to recognize their keeper and develop real individual personality.",
     "date": "2026-07-30",
@@ -36060,7 +36118,7 @@
     "title": "How Much Does a Parrotlet Really Cost?",
     "seoTitle": "Parrotlet Price: $100 to $900, Plus $210 to $365 Setup",
     "seoDescription": "Parrotlet cost breakdown: $100-$900 for the bird, roughly $210-$365 setup, monthly costs, avian vet pricing, and one bird versus two.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Parrotlets are the smallest commonly kept parrot, but the price tag and the personality both punch above that size, pricier than a budgie, cheaper than most larger parrots, and with the same one-bird-or-two decision that reshapes a lovebird budget.",
     "date": "2026-09-20",
@@ -36107,7 +36165,6 @@
       }
     ],
     "relatedProducts": [
-      "bird-flight-cage-large",
       "bird-perches",
       "bird-toy-bbjinronjy-sola-ball-2pc",
       "bird-food-roudybush-daily-mini-44oz",
@@ -36337,7 +36394,7 @@
     "title": "Common Parrotlet Health Issues and What Causes Them",
     "seoTitle": "Parrotlet Health Issues: Signs & Causes",
     "seoDescription": "Common parrotlet health issues: respiratory infections, feather plucking, obesity, egg binding, and the hidden-illness signs owners miss.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Parrotlets hide illness well, the same survival instinct every prey bird relies on, and their small size means a problem can advance faster than it would in a larger parrot. A handful of conditions come up often enough to know in advance.",
     "date": "2026-09-20",
@@ -36386,8 +36443,7 @@
     "relatedProducts": [
       "bird-food-roudybush-daily-mini-44oz",
       "bird-toy-bbjinronjy-sola-ball-2pc",
-      "bird-cuttlebone-penn-plax-2ct",
-      "bird-flight-cage-large"
+      "bird-cuttlebone-penn-plax-2ct"
     ],
     "factFile": false,
     "animalDay": null,
@@ -36406,7 +36462,7 @@
     "title": "Parrotlet Cage Setup: Small Bird, Real Space and Enrichment Needs",
     "seoTitle": "Parrotlet Cage Setup Guide",
     "seoDescription": "Parrotlet cage setup guide: minimum size, bar spacing, materials, enrichment needs, and the real tradeoffs of housing one bird versus a pair.",
-    "lastUpdated": "2026-09-20",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Parrotlet housing gets underestimated for the same reason the bird itself does, the size fools people. A few specific details, bar spacing tighter than a lovebird's among them, matter more than the small footprint suggests.",
     "date": "2026-09-20",
@@ -36453,7 +36509,6 @@
       }
     ],
     "relatedProducts": [
-      "bird-flight-cage-large",
       "bird-perches",
       "bird-toy-bbjinronjy-sola-ball-2pc",
       "bird-cuttlebone-penn-plax-2ct"
@@ -38131,7 +38186,7 @@
     "title": "Are Quaker Parrots Legal? The Bird Banned for Nest Building",
     "seoTitle": "Are Quaker Parrots Legal? 14 States Ban Them",
     "seoDescription": "Fourteen states ban the quaker parrot outright. The reason is not danger: it is the only parrot that builds stick nests, and it builds them on substations.",
-    "lastUpdated": "2026-10-01",
+    "lastUpdated": "2026-10-04",
     "noIndex": false,
     "excerpt": "Fourteen states ban the quaker parrot, more than any other bird we have mapped, and not one of them does it because the bird is dangerous. Kansas puts it on a list with silver carp and zebra mussels.",
     "date": "2026-09-06",
@@ -38315,8 +38370,8 @@
     "path": "/content/guides/rabbit-cost-guide.mdx",
     "slug": "rabbit-cost-guide",
     "title": "How Much Does a Rabbit Really Cost?",
-    "seoTitle": "Rabbit Cost: $125 to $197 Setup, Then $62 to $135 a Month",
-    "seoDescription": "Rabbit cost breakdown: $125-197 setup, $150-500+ spay/neuter, and $62-135 a month in hay, pellets, vegetables, and litter, with a $500-1,000 emergency fund.",
+    "seoTitle": "Rabbit Cost: $250 to $545 Setup, Then $60 to $135 a Month",
+    "seoDescription": "Rabbit cost breakdown: $250-545 setup, $150-500+ spay/neuter, and $60-135 a month in hay, pellets, vegetables, and litter, with a $500-1,000 emergency fund.",
     "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Rabbits have a reputation as a simple starter pet, but the cost picture is bigger than the low adoption fee suggests, especially once spay/neuter is factored in.",
@@ -38344,7 +38399,7 @@
     "faqs": [
       {
         "q": "What does it cost to set up for a new rabbit?",
-        "a": "The five items in the setup table (exercise pen, litter box, dishes, nail clippers, and carrier) add up to $125 to $197. A hay feeder, cord tubing, flooring, a hide, and a dig box come on top, depending on what you already own."
+        "a": "Every item in the setup table adds up to $250 to $545: the exercise pen, washable flooring and a tarp under it, a litter box and the first bag of litter, a hay rack, the first hay and pellets, a measuring cup, dishes and a glass bottle, a hide, a dig box, chew material, nail clippers, styptic powder, a brush, a carrier, cord tubing, a kitchen scale and a room thermometer. The exercise pen is the biggest line."
       },
       {
         "q": "Why is spay or neuter such a big line item?",
@@ -38352,7 +38407,7 @@
       },
       {
         "q": "What are the ongoing monthly costs for a rabbit?",
-        "a": "Hay ($20-40), pellets ($12-20), fresh vegetables ($15-50), and litter ($15-25) add up to $62 to $135 a month. Two wellness exams and one RHDV2 booster add $180 to $275 a year, so a year after the first runs $924 to $1,895."
+        "a": "Hay ($20-40), pellets ($10-20), fresh vegetables ($15-50), and litter ($15-25) add up to $60 to $135 a month. Two wellness exams and one RHDV2 booster add $180 to $275 a year, so a year after the first runs $900 to $1,895."
       },
       {
         "q": "How much should I set aside for a rabbit vet emergency?",
@@ -38360,11 +38415,23 @@
       }
     ],
     "relatedProducts": [
-      "litter-box",
-      "food-water-bowls",
-      "nail-clippers",
+      "rabbit-exercise-pen-midwest-folding-30in",
+      "tarp-xpose-6x8-10mil",
+      "rabbit-litter-pan-ware-jumbo",
+      "litter-so-phresh-paper-pellets-20lb",
+      "hay-manger-kaytee-large",
       "timothy-hay-small-pets",
-      "small-pet-paper-bedding"
+      "rabbit-pellet-food-oxbow-garden-select",
+      "small-mammal-bowl-kaytee-vege-t-bowl",
+      "water-bottle-lixit-glass-16oz",
+      "storage-tub-sterilite-56qt",
+      "chew-rabbit-bamboo-sticks",
+      "nail-clippers-pet-republique-small-animal",
+      "styptic-powder-kwik-stop",
+      "rabbit-carrier-amazon-basics-top-load",
+      "cord-protector-sungrow-20ft",
+      "digital-thermometer-hygrometer-combo",
+      "gram-scale-etekcity-kitchen"
     ],
     "factFile": false,
     "animalDay": null,
@@ -41314,9 +41381,9 @@
     "path": "/content/guides/russian-tortoise-cost-guide.mdx",
     "slug": "russian-tortoise-cost-guide",
     "title": "How Much Does a Russian Tortoise Really Cost?",
-    "seoTitle": "Russian Tortoise Price: $50 to $400, Plus $372 to $775 Setup",
-    "seoDescription": "Full Russian tortoise cost breakdown: $50-400 for the tortoise, $372-775 setup, and why this one can live indoors for life.",
-    "lastUpdated": "2026-10-02",
+    "seoTitle": "Russian Tortoise Price: $50 to $400, Plus $490 to $935 Setup",
+    "seoDescription": "Full Russian tortoise cost breakdown: $50-400 for the tortoise, $490-935 setup, and why this one can live indoors for life.",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Russian tortoises are one of the more approachable tortoises to own, both in price and, unlike the sulcata, in the fact that this species can live its entire life indoors.",
     "date": "2026-07-30",
@@ -41347,11 +41414,11 @@
       },
       {
         "q": "What does the initial indoor setup cost?",
-        "a": "Roughly $372 to $775 total, covering an open-topped tortoise table, a T5 HO UVB fixture and bulb, a halogen basking bulb, substrate, hides, a water dish, and a thermometer and hygrometer. The tortoise table alone is worth $125 to $250 of that total."
+        "a": "Roughly $490 to $935 total, covering an open-topped tortoise table, a T5 HO UVB fixture and tube, a bright 6500 K daylight lamp, a halogen basking bulb in a dome fixture on a dimming thermostat, a timer, an infrared temperature gun, a thermometer and hygrometer, topsoil and coir substrate, hides, a dig box, slate for a feeding tile and flat stones, a water dish, a kitchen scale, and the first supplements and hay. The tortoise table alone is worth $125 to $250 of that total."
       },
       {
         "q": "What does a Russian tortoise cost to maintain day to day?",
-        "a": "Roughly $365 to $715 a year, covering food, substrate replacement, and electricity. Electricity can spike somewhat in winter if you're maintaining warmth in a colder climate."
+        "a": "Roughly $370 to $695 a year, covering food, substrate replacement, and electricity. Electricity can spike somewhat in winter if you're maintaining warmth in a colder climate."
       },
       {
         "q": "Are vet visits expensive for a Russian tortoise?",
@@ -41359,7 +41426,7 @@
       },
       {
         "q": "How long do Russian tortoises live, and why does that matter for budgeting?",
-        "a": "40 years or more is typical, and some individuals reach 50-plus. At $365 to $715 a year, that adds up to $14,600 to $28,600 before a single illness. Plan for a succession of care."
+        "a": "40 years or more is typical, and some individuals reach 50-plus. At $370 to $695 a year, that adds up to $14,800 to $27,800 before a single illness. Plan for a succession of care."
       },
       {
         "q": "Can a Russian tortoise live indoors for its whole life?",
@@ -41371,15 +41438,16 @@
       "milk-snake-halogen-bulb-exo-terra-sun-glo-50w",
       "uvb-zoo-med-reptisun-24in-high-output-hood",
       "substrate-tarantula-coconut-fiber-peat",
-      "bird-cuttlebone-penn-plax-2ct"
+      "dimming-thermostat-reptizoo-pid",
+      "uvi-meter-solarmeter-6-5r"
     ],
     "factFile": false,
     "animalDay": null,
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0,
-    "headingCount": 6,
+    "sourceCount": 1,
+    "headingCount": 8,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -41691,7 +41759,7 @@
     "title": "Russian Tortoise Enclosure Setup: Compact Housing With Real Requirements",
     "seoTitle": "Russian Tortoise Enclosure Setup Guide",
     "seoDescription": "Russian tortoises need a 4x2x2 foot minimum table, a 95F basking spot, 40-50% humidity, and indoor keepers can skip brumation entirely.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Russian tortoise care is manageable indoors for this species' entire life, and getting the enclosure type, temperature, and humidity right is most of what it takes to keep one thriving.",
     "date": "2026-07-30",
@@ -44277,7 +44345,7 @@
     "title": "Four Pets Decided Before You Ever Set Up the Tank",
     "seoTitle": "Sulcata Tortoise, Hedgehog, Lovebird & Guppy Compared",
     "seoDescription": null,
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": true,
     "excerpt": "Each of these has one decision that matters more than anything in the care sheet, and it happens before or at the moment of purchase, not after.",
     "date": "2026-07-20",
@@ -44312,7 +44380,7 @@
       },
       {
         "q": "Does it matter whether you get one lovebird or two?",
-        "a": "It changes the entire relationship. A single, hand-raised lovebird bonds to you and becomes tame and interactive, but needs real daily time, roughly two hours. A bonded pair bonds to each other instead and largely ignores you. Neither choice is wrong, but they're different pets."
+        "a": "It changes the entire relationship. A single, hand-raised lovebird bonds to you and becomes tame and interactive, but needs real daily time: interaction and time out of the cage every day. A bonded pair bonds to each other instead and largely ignores you. Neither choice is wrong, but they're different pets."
       },
       {
         "q": "How fast can a guppy population grow if I don't plan for it?",
@@ -44884,8 +44952,8 @@
     "path": "/content/guides/swordtail-cost-guide.mdx",
     "slug": "swordtail-cost-guide",
     "title": "How Much Does Swordtail Fish Ownership Really Cost?",
-    "seoTitle": "Swordtail Price: $3 to $25 Each, Plus $135 to $255 Setup",
-    "seoDescription": "Full swordtail fish cost breakdown: $3-25 per fish, a $135-255 starter setup, modest upkeep, and why sizing up past 20 gallons pays off.",
+    "seoTitle": "Swordtail Price: $3 to $25 Each, Plus $120 to $255 Setup",
+    "seoDescription": "Full swordtail fish cost breakdown: $3-25 per fish, a $120-255 starter setup, modest upkeep, and why sizing up past 20 gallons pays off.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Swordtails cost about the same per fish as a molly, but they're the common livebearer that outgrows a 20-gallon starting point the fastest.",
@@ -44917,7 +44985,7 @@
       },
       {
         "q": "What does a basic swordtail tank setup cost?",
-        "a": "A tank, filter, heater, and live plants commonly runs $135 to $255 using a 20-gallon long tank as the base. That 20-gallon figure is the floor for a small trio, but a group wants 30 gallons or more, since swordtails are noticeably more active swimmers than a molly or platy, which pushes the cost somewhat past the table above."
+        "a": "A tank, filter, heater, and live plants commonly runs $120 to $255 using a 20-gallon long tank as the base. That 20-gallon figure is the floor for a small trio, but a group wants 30 gallons or more, since swordtails are noticeably more active swimmers than a molly or platy, which pushes the cost somewhat past the table above."
       },
       {
         "q": "What are the ongoing costs of keeping swordtails?",
@@ -45355,9 +45423,9 @@
     "path": "/content/guides/tarantula-cost-guide.mdx",
     "slug": "tarantula-cost-guide",
     "title": "How Much Does a Tarantula Really Cost?",
-    "seoTitle": "Tarantula Price: $25 to $100, Plus $70 to $300 Setup",
-    "seoDescription": "Tarantula costs: $70-300 upfront setup, $60-180 a year feeding, no pet insurance needed, and a female Chilean rose hair can live 15-20+ years, a male about 5.",
-    "lastUpdated": "2026-09-25",
+    "seoTitle": "Tarantula Price: $25 to $100, Plus $105 to $305 Setup",
+    "seoDescription": "Tarantula costs: $105-305 upfront setup, $75-235 a year, no pet insurance needed, and a female Chilean rose hair can live 15-20+ years, a male about 5.",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Tarantulas are one of the most affordable exotic pets to keep, both upfront and over time, but a female can live 15 to 20 years or more, which makes the low sticker price a bit misleading if you only look at year one.",
     "date": "2026-07-17",
@@ -45384,11 +45452,11 @@
     "faqs": [
       {
         "q": "How much does a tarantula cost upfront?",
-        "a": "The spider itself runs $25 to $100 for common beginner species, a curly hair or pink toe typically lands at $30 to $40 and a Chilean rose hair nearer $60 to $70. Add the enclosure, substrate, hide, decor, and a water dish, and most first-time setups land in the $70 to $300 range before the spider itself."
+        "a": "The spider itself runs $25 to $100 for common beginner species, a curly hair or pink toe typically lands at $30 to $40 and a Chilean rose hair nearer $60 to $70. Every item is priced: the enclosure, substrate, a hide, two water dishes, a thermometer and hygrometer, feeding tongs, catch cups, a tub to rehouse over, safety glasses, and the first feeders and gut-load food. The setup comes to $105 to $305 before the spider itself, or $130 to $405 with it."
       },
       {
         "q": "What are the ongoing costs of keeping a tarantula?",
-        "a": "Feeding runs about $5 to $15 a month on crickets or dubia roaches, which adds up to roughly $60 to $180 a year depending on the size and appetite of your tarantula. There's no recurring supply or bedding cost anywhere close to what most pets need."
+        "a": "About $75 to $235 a year, or roughly $5 to $20 a month. Feeder insects are most of it at $5 to $15 a month, with gut-load food and fresh substrate once or twice a year in a damp setup making up the rest. There's no recurring supply or bedding cost anywhere close to what most pets need."
       },
       {
         "q": "Do tarantulas need vet care or pet insurance?",
@@ -45400,16 +45468,23 @@
       }
     ],
     "relatedProducts": [
+      "substrate-tarantula-coconut-fiber-peat",
       "cork-bark-round-hide",
       "shallow-water-dish",
-      "dubia-roaches-bag"
+      "digital-thermometer-hygrometer-combo",
+      "feeding-tongs-lasnten-long-rubber-tip",
+      "deli-cups-dubia-farms-32oz-vented",
+      "storage-tub-sterilite-56qt",
+      "safety-glasses-dewalt-concealer-clear",
+      "dubia-roaches-bag",
+      "gutload-flukers-high-calcium-dubia-roach-diet-7oz"
     ],
     "factFile": false,
     "animalDay": null,
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 7,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1600,
@@ -45493,7 +45568,7 @@
     "title": "Tarantula Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Tarantulas Eat? Diet and Feeding Schedule",
     "seoDescription": "Tarantulas can fast for weeks to months during premolt, that's normal. Skip calcium dusting, and watch for a shriveled abdomen, the real emergency sign.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "A tarantula going weeks without eating usually isn't a problem, it's premolt. Here's the feeding schedule, what they eat, and when a fast is a red flag.",
     "date": "2026-07-25",
@@ -45522,7 +45597,7 @@
     "faqs": [
       {
         "q": "How often should I feed my tarantula?",
-        "a": "It depends heavily on life stage and species. Slings eat every 2 to 3 days, juveniles roughly every week to two weeks, and adults every 1 to 2 weeks, sometimes far less for a slow-metabolism species. There's no single agreed number for any stage, treat abdomen size and appetite as the guide, not a fixed calendar."
+        "a": "It depends heavily on life stage and species. Slings eat every 2 to 3 days, juveniles every 4 to 7 days when young and every 7 to 14 days as they grow, and adults every 1 to 2 weeks, sometimes far less for a slow-metabolism species. There's no single agreed number for any stage, treat abdomen size and appetite as the guide, not a fixed calendar."
       },
       {
         "q": "Should I dust feeder insects with calcium for my tarantula?",
@@ -45537,10 +45612,6 @@
         "a": "Much longer than most owners expect. Adults can safely fast for weeks to several months during premolt. The one sourced concern threshold is for juveniles specifically, refusing food for more than 6 to 8 weeks alongside weight loss or lethargy is worth a vet consult."
       },
       {
-        "q": "Is it true tarantulas can go over a year without eating?",
-        "a": "There are documented outlier cases, including lab observations of tarantulas surviving roughly two years without food. That's an extreme, not a keeping benchmark, don't use it as a reason to stop paying attention to your own tarantula's condition."
-      },
-      {
         "q": "What's the bigger warning sign, not eating or something else?",
         "a": "Dehydration, not hunger. A shrunken, shriveled abdomen along with uncoordinated legs or an inability to lift the body is the emergency sign, and it can be fatal within days without a fix, immediate access to a shallow water dish. Check water access first whenever a tarantula stops eating."
       }
@@ -45553,8 +45624,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
-    "headingCount": 8,
+    "sourceCount": 4,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -45565,7 +45636,7 @@
     "title": "Should You Handle a Tarantula? Almost Always, No",
     "seoTitle": "Can You Handle a Tarantula Safely?",
     "seoDescription": "Tarantulas are look-don't-touch pets: a short fall can kill the spider, and urticating hairs can cause real corneal damage to your eyes.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "If you're hoping for a pet you can hold, a tarantula is probably the wrong choice. Handling carries real risk in both directions, a fall can be fatal to the spider, and its defenses can hurt you.",
     "date": "2026-07-17",
@@ -45625,7 +45696,7 @@
     "title": "Common Tarantula Health Issues (Prevention Matters More Than Treatment)",
     "seoTitle": "Tarantula Health Issues: Signs & Causes",
     "seoDescription": "Dehydration is the top tarantula health issue, watch for a shriveled abdomen and death curl. Stuck molts, ruptured abdomens, and DKS are the other real risks.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Veterinary care for tarantulas is limited, so prevention through correct husbandry does most of the heavy lifting, and knowing what's normal versus what's wrong matters more than knowing what to do once something's gone wrong.",
     "date": "2026-07-17",
@@ -45656,7 +45727,7 @@
       },
       {
         "q": "What should I do if my tarantula's molt looks stuck?",
-        "a": "A stuck or incomplete molt can be fatal, so the priority is prevention rather than treatment, proper humidity and never disturbing or feeding your tarantula during a molt. Once a molt completes normally, wait about a week for the new exoskeleton to fully harden before offering food again."
+        "a": "Leave it alone and never pull at the old skin. Prevention does most of the work here: steady humidity, and no disturbing or feeding during the molt. After a normal molt the fangs need time to harden, so the next meal waits 3 to 7 days for a sling or juvenile and 7 to 14 days for an adult."
       },
       {
         "q": "What does a tarantula injury or fall emergency look like?",
@@ -45664,7 +45735,7 @@
       },
       {
         "q": "My tarantula stopped eating for weeks, is something wrong?",
-        "a": "Probably not, a tarantula that stops eating for weeks is very often just entering a pre-molt period, which is completely normal behavior. That said, if it refuses food for more than a month, or shows dehydration signs on top of the appetite loss, that combination is worth investigating further."
+        "a": "Probably not. Weeks without food usually means premolt, and a healthy adult can go months. Look closer if a juvenile passes 6 to 8 weeks with weight loss or lethargy, or if the abdomen shrinks and wrinkles at any age, since that points to dehydration."
       }
     ],
     "relatedProducts": [
@@ -45677,7 +45748,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -45689,7 +45760,7 @@
     "title": "Are Tarantulas Legal? The Species Question Most States Never Ask",
     "seoTitle": "Are Tarantulas Legal? Where Spiders Need a Permit",
     "seoDescription": "Maine's unrestricted list names exactly three tarantulas: Brazilian black, Chaco golden knee, and Chilean rose. NYC bans every species by name instead.",
-    "lastUpdated": "2026-08-18",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Most states have no tarantula rule at all, because their wildlife laws stop at vertebrates. The places that do regulate one almost never mention spiders by name, and Maine clears exactly three species.",
     "date": "2026-08-18",
@@ -45731,7 +45802,7 @@
     "title": "Tarantula Enclosure Setup: Shape, Substrate, and a Humidity Debate",
     "seoTitle": "Tarantula Enclosure Setup Guide",
     "seoDescription": "Tarantula enclosures should be horizontal, under 12 inches tall, with 3+ inches of substrate. Skip mesh lids, they can catch and injure a tarantula's feet.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Tarantula enclosures are refreshingly simple compared to most exotic pets, no complex lighting, no elaborate temperature gradients, but enclosure shape and substrate depth matter quite a bit.",
     "date": "2026-07-17",
@@ -45785,8 +45856,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
-    "headingCount": 11,
+    "sourceCount": 6,
+    "headingCount": 12,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -48691,9 +48762,9 @@
     "path": "/content/guides/whites-tree-frog-cost-guide.mdx",
     "slug": "whites-tree-frog-cost-guide",
     "title": "How Much Does a White's Tree Frog Really Cost?",
-    "seoTitle": "White's Tree Frog Price: $20 to $60, Plus $265 to $490 Setup",
-    "seoDescription": "White's tree frog cost: $20-60 per frog, a $265-490 setup, and why the 16 year average lifespan (one hit 21) makes this a long haul, not a summer pet.",
-    "lastUpdated": "2026-10-01",
+    "seoTitle": "White's Tree Frog Price: $20 to $60, Plus $305 to $595 Setup",
+    "seoDescription": "White's tree frog cost: $20-60 per frog, a $305-595 setup, and why the 16 year average lifespan (one hit 21) makes this a long haul, not a summer pet.",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "White's tree frogs, sometimes called dumpy tree frogs for their round, waxy-skinned build, are one of the more affordable and forgiving amphibians to keep, both to buy and to maintain long term.",
     "date": "2026-07-16",
@@ -48724,11 +48795,11 @@
       },
       {
         "q": "What does a full White's tree frog setup cost upfront?",
-        "a": "Roughly $265 to $490, covering an 18x18x24 inch vertical terrarium, a heat source, a low-level UVB fixture, substrate, and climbing branches and decor."
+        "a": "$305 to $595, and $355 to $745 with the first vet exam. That covers an 18x18x24 inch vertical terrarium, a side-mounted heat mat on a thermostat, a low-level UVB fixture, a timer for the lights, a thermometer and hygrometer, coarse substrate, live and artificial plants, hides, climbing branches, a shallow water dish, a spray bottle, water conditioner, blunt feeding forceps and the first supply of supplements."
       },
       {
         "q": "What are the ongoing monthly costs for a White's tree frog?",
-        "a": "Roughly $15 to $30 a month. The recurring line items, feeder insects, supplements, the UVB bulb and water conditioner, come to $178 to $360 across a year, and substrate and modest electricity go on top of that. This isn't a species with heavy recurring expenses once the enclosure is built."
+        "a": "Roughly $10 to $25 a month. The recurring line items, feeder insects, supplements, two UVB tubes a year and water conditioner, come to $150 to $245 across a year, $200 to $395 with a yearly vet exam, and substrate and modest electricity go on top of that. This isn't a species with heavy recurring expenses once the enclosure is built."
       },
       {
         "q": "How much does veterinary care cost for a White's tree frog?",
@@ -48744,14 +48815,16 @@
       "uvb-zoo-med-5-0-t5-ho-14in-hood",
       "digital-thermometer-hygrometer-combo",
       "calcium-repashy-plus-6oz",
-      "water-conditioner"
+      "water-conditioner",
+      "under-tank-heat-mat-thermostat-kit",
+      "orchid-bark-better-gro-8qt"
     ],
     "factFile": false,
     "animalDay": null,
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -48960,7 +49033,7 @@
     "title": "Common White's Tree Frog Health Issues (Obesity Is the Signature Risk)",
     "seoTitle": "White's Tree Frog Health Issues: Signs & Causes",
     "seoDescription": "Obesity is the top health risk for White's tree frogs, feed adults just 3-4 insects 2-3 times weekly and limit waxworms to prevent hepatic lipidosis.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "White's tree frogs are hardy for an amphibian, but they have one health issue that shows up more in this species than almost any other pet frog, driven by the same enthusiastic-eater trait that makes them so satisfying to feed.",
     "date": "2026-07-16",
@@ -49029,7 +49102,7 @@
     "title": "White's Tree Frog Enclosure Setup: What Your Frog Actually Needs",
     "seoTitle": "White's Tree Frog Enclosure Setup Guide",
     "seoDescription": "White's tree frogs need an 18x18x24 inch enclosure and humidity that dips to 50-60% between mistings, not a constant 70-80% that causes bacterial infections.",
-    "lastUpdated": "2026-10-01",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "White's tree frogs are a forgiving amphibian to set up correctly once you understand the one detail that trips up a lot of first-time keepers: humidity that's too constantly high causes more problems than humidity that dips a bit low between mistings.",
     "date": "2026-07-16",
@@ -49068,7 +49141,7 @@
       },
       {
         "q": "Does a White's tree frog need UVB lighting?",
-        "a": "Recommended, though not strictly required: the species survives without UVB and does better with it. Use a low-output T5 in the 5 to 7% range with the basking branch at least 6 inches below the fixture, and replace it every 6 to 8 months even while it still lights up."
+        "a": "Recommended, though not strictly required: the species survives without UVB and does better with it. Use a low-output 5% T5 HO tube with the basking branch at least 6 inches below the fixture, and replace it every 6 to 8 months even while it still lights up."
       },
       {
         "q": "What substrate is safe for a White's tree frog?",
@@ -49263,7 +49336,7 @@
     "slug": "why-parrots-need-social-interaction-and-what-loneliness-does-to-them",
     "title": "Why Parrots Need Social Interaction (And What Loneliness Does to Them)",
     "seoTitle": "Why Parrots Need Social Interaction",
-    "seoDescription": null,
+    "seoDescription": "Single-housed African greys age faster at the cellular level. What loneliness does to a parrot, the warning signs, and how much daily contact actually helps.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Single-housed African greys carry telomeres like birds 23 years older. What isolation does to a parrot, what the evidence says about daily contact, and what helps.",
@@ -49303,7 +49376,7 @@
     "slug": "why-rabbits-need-unlimited-hay-and-what-happens-to-their-teeth-without-it",
     "title": "Why Rabbits Need Unlimited Hay (And What Happens to Their Teeth Without It)",
     "seoTitle": "Why Rabbits Need Unlimited Hay for Healthy Teeth",
-    "seoDescription": null,
+    "seoDescription": "Rabbit teeth grow about a centimeter a month, and only hours of chewing hay wear them down. What hay does for the teeth and gut, and what goes wrong without it.",
     "lastUpdated": "2026-09-24",
     "noIndex": false,
     "excerpt": "Rabbit teeth grow about a centimeter a month, and only hours of grinding hay keep up with them. What hay does for the teeth and gut, and what goes wrong without it.",
@@ -49682,8 +49755,8 @@
     "path": "/content/guides/zebra-danio-cost-guide.mdx",
     "slug": "zebra-danio-cost-guide",
     "title": "How Much Does Zebra Danio Ownership Really Cost?",
-    "seoTitle": "Zebra Danio Price: $2 to $3 Each, Plus $70 to $170 Setup",
-    "seoDescription": "Zebra danio cost: $2-3 per fish, a $70-170 starter setup, and why GloFish danios cost about four times as much.",
+    "seoTitle": "Zebra Danio Price: $2 to $3 Each, Plus $50 to $170 Setup",
+    "seoDescription": "Zebra danio cost: $2-3 per fish, a $50-170 starter setup, and why GloFish danios cost about four times as much.",
     "lastUpdated": "2026-09-25",
     "noIndex": false,
     "excerpt": "Zebra danios are about as cheap as a starter fish gets, and one of the few community species where a heater is optional. The price story is the gap between the plain wild-type fish and its glow-in-the-dark GloFish cousin.",
@@ -49715,7 +49788,7 @@
       },
       {
         "q": "What does a basic zebra danio tank setup cost?",
-        "a": "Roughly $70 to $170 for the core equipment: a 10 to 20-gallon long tank ($18-60), a gentle filter ($5-15), and live or silk plants for cover ($30-60). A heater ($15-35) is worth budgeting for if your home runs cool, but is optional in a warm, stable room. Add substrate and a water test kit and most first setups land around $105 to $210."
+        "a": "Roughly $50 to $170 for the core equipment: a 10 to 20-gallon long tank ($15-60), a gentle filter ($5-15), and live or silk plants for cover ($15-60). A heater ($15-35) is worth budgeting for if your home runs cool, but is optional in a warm, stable room. Add substrate and a water test kit and most first setups land around $85 to $210."
       },
       {
         "q": "What are the ongoing costs of keeping zebra danios?",
@@ -50102,7 +50175,7 @@
     "title": "How Much Does a Zebra Finch Really Cost?",
     "seoTitle": "Zebra Finch Price: $30 to $120, Plus $225 to $465 Setup",
     "seoDescription": "Real zebra finch cost breakdown: $15-60 per bird, why you must buy at least a pair, cage setup costs, and monthly food costs.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Zebra finches are among the cheapest pet birds you can buy, but the detail that reshapes the budget is that you can never buy just one.",
     "date": "2026-09-19",
@@ -50149,7 +50222,6 @@
       }
     ],
     "relatedProducts": [
-      "bird-flight-cage-large",
       "bird-perches",
       "canary-shallow-bird-bath",
       "bird-cuttlebone-penn-plax-2ct"
@@ -50492,7 +50564,7 @@
     "title": "Zebra Finch Cage Setup: The Pair Comes Before the Cage",
     "seoTitle": "Zebra Finch Cage Setup Guide",
     "seoDescription": "Zebra finch cage setup guide: minimum size for a pair, bar spacing, temperature, light cycle, and why solo housing isn't an option.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-03",
     "noIndex": false,
     "excerpt": "Cage size and bar spacing matter, but the setup decision that determines whether a zebra finch thrives is how many birds go into it, never just one.",
     "date": "2026-09-19",
@@ -50539,7 +50611,6 @@
       }
     ],
     "relatedProducts": [
-      "bird-flight-cage-large",
       "bird-perches",
       "canary-shallow-bird-bath"
     ],
@@ -51662,6 +51733,51 @@
     "imageAlt": "A bearded dragon chilling with his new friend the iguana",
     "emoji": "🦎",
     "lastReviewed": "2026-06-27",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0,
+    "headingCount": 0,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-dragon-of-main-street-part-18.mdx",
+    "slug": "chronicles-of-dex-the-bearded-dragon-the-dragon-of-main-street-part-18",
+    "title": "Chronicles of Dex the Bearded Dragon: The Dragon of Main Street (Part 18)",
+    "seoTitle": null,
+    "seoDescription": "A thunderstorm sends Dex into a dream where he's as big as a skyscraper, stomping through a tiny copy of his own neighborhood.",
+    "lastUpdated": "2026-10-05",
+    "noIndex": false,
+    "excerpt": "A rattling thunderstorm sends Dex into a dream where he wakes up the size of a skyscraper, stomping through a tiny replica of his own neighborhood, and has to decide what a dragon that size is actually for.",
+    "date": "2026-10-05",
+    "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
+    "tags": [
+      "bearded-dragon",
+      "short-story",
+      "animal-perspective",
+      "pet-fiction",
+      "humorous-fiction",
+      "series-fiction",
+      "dex-chronicles",
+      "dream-sequence"
+    ],
+    "readTime": 14,
+    "difficulty": null,
+    "image": "/assets/images/dex/dex-chron18.jpg",
+    "imageAlt": "An illustrated giant bearded dragon towering over a small toy-scale city street at night, lightning in the sky.",
+    "emoji": "🦎",
+    "lastReviewed": "2026-10-05",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [],
@@ -52815,6 +52931,51 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1920,
     "imageHeight": 1080
+  },
+  {
+    "path": "/content/short-story/chronicles-of-otis-the-bunny-the-greatest-hop-on-earth-part-18.mdx",
+    "slug": "chronicles-of-otis-the-bunny-the-greatest-hop-on-earth-part-18",
+    "title": "Chronicles of Otis the Bunny: The Greatest Hop on Earth (Part 18)",
+    "seoTitle": null,
+    "seoDescription": "A burst of zoomies carries Otis into a dream where he's the star of the circus big top: tightrope, cannon, and all.",
+    "lastUpdated": "2026-10-05",
+    "noIndex": false,
+    "excerpt": "A sudden burst of joyful zoomies around the garden carries Otis straight into a dream where he's the star performer under a circus big top, tightrope, cannon, and all.",
+    "date": "2026-10-05",
+    "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
+    "tags": [
+      "rabbit",
+      "short-story",
+      "animal-perspective",
+      "pet-fiction",
+      "humorous-fiction",
+      "series-fiction",
+      "otis-chronicles",
+      "dream-sequence"
+    ],
+    "readTime": 14,
+    "difficulty": null,
+    "image": "/assets/images/otis/otis-chron18.jpg",
+    "imageAlt": "An illustrated rabbit balancing on a tightrope high above a circus ring, spotlight shining down.",
+    "emoji": "📖",
+    "lastReviewed": "2026-10-05",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0,
+    "headingCount": 0,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1712,
+    "imageHeight": 1152
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-guest-in-the-house-part-6.mdx",
