@@ -34,11 +34,38 @@ function needsPriceNote(rows, linkCovers) {
   );
 }
 
+// tierColumn: the index of a column holding a feeding tier ("Staple",
+// "Never"...). Those cells render as a colored pill, green for everyday
+// through red for never. Opt-in per table, so a "Never" in any other table
+// stays plain text. An unknown tier word falls back to gray.
+const TIER_STYLES = {
+  'staple': 'text-emerald-800 bg-emerald-100 dark:bg-emerald-950 dark:text-emerald-400',
+  // Not orange: tailwind.config.js overrides `orange` with one brand hex, so
+  // orange-100 and friends don't exist on this site.
+  'occasional': 'text-yellow-800 bg-yellow-100 dark:bg-yellow-950 dark:text-yellow-400',
+  'treat only': 'text-amber-900 bg-amber-200 dark:bg-amber-900 dark:text-amber-200',
+  'topper only': 'text-amber-900 bg-amber-200 dark:bg-amber-900 dark:text-amber-200',
+  'rare': 'text-amber-900 bg-amber-200 dark:bg-amber-900 dark:text-amber-200',
+  'never': 'text-red-800 bg-red-100 dark:bg-red-950 dark:text-red-400',
+};
+const TIER_FALLBACK = 'text-slate-700 bg-slate-100 dark:bg-slate-800 dark:text-slate-300';
+
+function tierCell(cell) {
+  if (typeof cell !== 'string') return cell;
+  const style = TIER_STYLES[cell.trim().toLowerCase()] || TIER_FALLBACK;
+  return (
+    <span className={`inline-block whitespace-nowrap rounded-full px-2.5 py-0.5 text-xs font-semibold ${style}`}>
+      {cell}
+    </span>
+  );
+}
+
 export default function ComparisonTable({
-  headers = [], 
-  rows = [], 
+  headers = [],
+  rows = [],
   className = '',
   linkCovers = false,
+  tierColumn,
 }) {
   if (!headers.length || !rows.length) return null;
 
@@ -68,7 +95,9 @@ export default function ComparisonTable({
                   key={cellIndex} 
                   className="px-4 py-3 text-muted-foreground"
                 >
-                  {linkCovers && cellIndex === 0 ? linkedCell(cell) : cell}
+                  {cellIndex === tierColumn
+                    ? tierCell(cell)
+                    : linkCovers && cellIndex === 0 ? linkedCell(cell) : cell}
                 </td>
               ))}
             </tr>
