@@ -43,7 +43,8 @@ Live editions (2026-10-04): bearded dragon 4.1; leopard gecko, crested gecko, ba
 
 ### Crested gecko (3.1, `crested-gecko-src`)
 - [ ] Glossary: IUCN (`pages_07.html:40`) and VCA (`:58`) out; CITES (`:12`) moves to the law page mini glossary.
-- [ ] Gear: the fogger is left unlinked as the "or" alternative to the spray bottle (cost guide setup row).
+- [ ] Book: heat. `pages_02.html:53` says "many setups need no heat at all" and `pages_06.html:120` "If the room holds the range, skip the bulb and thermostat"; the site (cost guide FAQ, comparison, setup guide's 82 to 85°F basking spot, ReptiFiles) now says a small bulb on a thermostat is needed. Waiting on the owner's call; the book follows it. (Consistency sweep 2026-10-05.)
+- [ ] Book: `pages_02.html:44` pair space "double the space of an 18×18×36 in" enclosure; the setup guide's single-adult minimum is 18x18x24 (the cost guide :85 says the same 18x18x36, so settle both). (Sweep 2026-10-05.)
 
 ### Gargoyle gecko (1.1, `gargoyle-gecko-src`)
 - [ ] Glossary: ARAV (`pages_5.html:8`) and IUCN (`:42`) out.
@@ -88,6 +89,7 @@ Live editions (2026-10-04): bearded dragon 4.1; leopard gecko, crested gecko, ba
 ### Guinea pig (3.0, `guinea-pig-src`)
 - [ ] Book, Sources page: the VCA entry says "a United States veterinary hospital chain" but never what the letters stand for. Spell it out: Veterinary Centers of America.
 - [ ] Gear: only a 10 lb pellet bag in the catalog, where the book's 90-day rule needs 5 lb; the C&C cage floor area and the second hide are unconfirmed.
+- [ ] Book: "a wild guinea pig can spend up to 80% of the day foraging" at `pages_01.html:147`, `pages_04.html:119` and the glossary `pages_07.html:25`; there is no wild Cavia porcellus (legal guide :70). Should be wild cavies, once the source is checked. The site's enrichment guide carries the same claim. (Sweep 2026-10-05.)
 - (Glossary meets the rule; RSPCA is spelled out on the Sources page.)
 
 ### Hamster (3.0, `hamster-src`)
@@ -112,12 +114,14 @@ Live editions (2026-10-04): bearded dragon 4.1; leopard gecko, crested gecko, ba
 ### Cockatoo (1.4, `cockatoo.html` edited directly; never run its build.py)
 - [ ] Glossary: CITES (`cockatoo.html:2078`) moves to the law page mini glossary; out: CDC (`:2073`), CPSC (`:2082`), et al. (`:2096`), HOA (`:2103`), IUCN (`:2105`), MSD (`:2109`), NASPHV (`:2110`), NHLBI (`:2111`), UC Davis (`:2134`), VCA (`:2138`). CPBC (`:2081`) stays.
 - [ ] Gear: washable mat and sleep cage unpriced; the gram scale's perch tops out at 3/4 in.
+- [ ] Book: sexual maturity "3 to 4 years in medium species, 5 to 6 in large ones" (`cockatoo.html:320`, `:885`, Sources note `:2153`) vs the site handling guide :42 and :66 "roughly 5 to 7 years old". Check the source and settle both. (Sweep 2026-10-05; the sweep's other cockatoo items came from the stale fragments and are void.)
 - No fitting product: a 3/4 in bar cage at least 36x24x48 in for Goffin's and galahs; a cockatoo-sized travel carrier inside the $80 to $200 row; plain white tray paper; stainless cage locks or snaps (unsure: coating status unclear).
 
 ### Tarantula (3.0, `tarantula-src`)
 - [ ] Glossary: USDA APHIS (`pages_07.html:46`) and USPS (`:47`) out; CITES (`:13`) moves to the law page mini glossary.
 - [ ] Gear: no side-mounted heat source the book allows; the pink toe enclosure is not confirmed.
 - No fitting product: an enclosure about 20x10 in with a solid acrylic lid.
+- [ ] Book: uneaten prey. `pages_02.html:203` table says "Within 24 hours" vs `pages_02.html:91` "Never leave uneaten prey in overnight" (the site setup guide has the same pair at :98 and :110; the feeding guide :63 says 24 hours). Settle on one rule for book and site. (Sweep 2026-10-05.)
 
 ## 4. Across all packages
 
