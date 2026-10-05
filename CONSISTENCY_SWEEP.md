@@ -33,6 +33,9 @@ UVB tubes are replaced every 6 to 12 months on the maker's schedule.
 - [x] **Package fixes.** Book items logged in FIX_PACKAGES.md under each
   animal (crested gecko, guinea pig, tarantula, cockatoo) for the next editions.
   Website items get fixed here.
+
+## Safety
+
 - [ ] Gargoyle gecko: hub emergency card geckos.js:233 says a stuck toe band
   "is a same-day soak"; health guide :74 and package send a tight band or dark
   toe to the vet. Owner: health guide.
@@ -56,11 +59,11 @@ UVB tubes are replaced every 6 to 12 months on the maker's schedule.
 - [ ] Cockatoo weight: cockatiel-vs-cockatoo-guide.mdx:63/:78 "300-1,200g",
   hub birds.js:347 "1.1 to 1.7 lbs"; package pages_1:103 per species (Goffin's
   ~350 g, up to ~880 g) is best sourced.
-- [ ] Cockatoo package pages_2:7/:45 fresh food "20 to 40%" vs feeding guide
+- [x] VOID (stale fragment, see Correction): Cockatoo package pages_2:7/:45 fresh food "20 to 40%" vs feeding guide
   :40 "20 to 25%". (package)
-- [ ] Cockatoo package pages_4:340 (and pages_1:127/:154) "$1,160 to $2,380" a
+- [x] VOID (stale fragment, see Correction): Cockatoo package pages_4:340 (and pages_1:127/:154) "$1,160 to $2,380" a
   year vs cost guide :110 "$875 to $1,995". (package)
-- [ ] Cockatoo package pages_4:326 setup "$2,105 to $6,930", equipment
+- [x] VOID (stale fragment, see Correction): Cockatoo package pages_4:326 setup "$2,105 to $6,930", equipment
   "$1,205 to $2,980" vs cost guide :93 "$2,270 to $6,410", "$1,430 to $3,200".
   (package)
 - [ ] White's tree frog handling guide FAQ :40 nitrile gloves vs body :58
@@ -134,13 +137,13 @@ Russian tortoise
   handling guide :66 sourced max ~9 in.
 
 Cockatoo
-- [ ] Package pages_4:229 quarantine "45 to 60" with an existing bird vs hub
+- [x] VOID (stale fragment, see Correction): Package pages_4:229 quarantine "45 to 60" with an existing bird vs hub
   30-45, nearer 90 (bird quarantine guide). (package)
-- [ ] Package pages_1:104 lifespan "30 to 45... up to 70" vs cost guide :59
+- [x] VOID (stale fragment, see Correction): Package pages_1:104 lifespan "30 to 45... up to 70" vs cost guide :59
   25-45, 70-80+. (package)
-- [ ] Package pages_1:105 maturity 3-4 / 5-6 years vs handling :42/:66 and
+- [ ] Book (logged in FIX_PACKAGES) and handling guide: package pages_1:105 maturity 3-4 / 5-6 years vs handling :42/:66 and
   package pages_2:206 5 to 7. (package)
-- [ ] Package pages_2:114/:116 "up to six hours" foraging vs enrichment
+- [x] VOID (stale fragment, see Correction): Package pages_2:114/:116 "up to six hours" foraging vs enrichment
   :47/:69 unsourced. (package)
 
 White's tree frog
