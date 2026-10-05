@@ -636,7 +636,7 @@ export const invertebrateGuides = [
     faqs: [
       { q: "What size enclosure does a jumping spider need?", a: "Roughly 8 inches (20 cm) of height for an adult, oriented vertically, with smaller enclosures for spiderlings. Arboreal species: height counts for more than floor." },
       { q: "How often should I feed my jumping spider?", a: "It depends on life stage and varies a fair amount even among adults: spiderlings eat every 1 to 2 days, tapering to roughly every 2 to 5 days by adulthood. The guide is the abdomen, shrunken or wrinkled means feed, plump and noticeably wider than the cephalothorax means skip the next meal." },
-      { q: "What should I never feed a jumping spider?", a: "Ants, above all: jumping spiders show an instinctive fear response to them, and an ant can bite or spray formic acid. Also unsafe are hard-shelled beetles, pill bugs, fireflies, and any prey bigger than the spider's abdomen." },
+      { q: "What should I never feed a jumping spider?", a: "Ants, above all: jumping spiders show an instinctive fear response to them, and an ant can bite or spray formic acid. Also unsafe are hard-shelled beetles, pill bugs, fireflies, and any prey more than three quarters of the spider's body length." },
     ],
   },
   {

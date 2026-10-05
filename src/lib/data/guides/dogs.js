@@ -191,7 +191,7 @@ export const dogGuides = [
       setup: [
         { item: "XL crate (42-54 in)", low: 150, high: 300 },
         { item: "XL orthopedic dog bed", low: 80, high: 150 },
-        { item: "Slow-feeder bowl", low: 10, high: 30 },
+        { item: "Raised food bowl", low: 20, high: 35 },
         { item: "Collar ID tag + microchip", low: 60, high: 90 },
         { item: "Orthopedic rugs/ramps for slippery floors", low: 40, high: 80 },
       ],
@@ -205,7 +205,7 @@ export const dogGuides = [
     },
     sections: {
       housing: "Large breeds (60 lbs and up) need adequate space to move comfortably. A large crate (often 42 to 54 inches) that allows them to stand and turn around is important. Giant breeds like Great Danes and Saint Bernards need extra-large, orthopedic beds to protect their joints. Stairs and slippery floors can be hard on large-breed hips: use rugs and consider ramps for senior dogs.",
-      diet: "Feed large breed specific food to control calcium/phosphorus ratios and growth rate (critical for puppies). Avoid overfeeding: obesity is devastating to large breed joints. Do NOT feed large breed puppies regular puppy food, which promotes too-rapid growth and increases risk of hip and elbow dysplasia. Skip the raised bowl: it does not prevent bloat, and research ties it to a higher risk in large and giant breeds. Feed twice daily rather than once, from a slow-feeder bowl.",
+      diet: "Feed large breed specific food to control calcium/phosphorus ratios and growth rate (critical for puppies). Avoid overfeeding: obesity is devastating to large breed joints. Do NOT feed large breed puppies regular puppy food, which promotes too-rapid growth and increases risk of hip and elbow dysplasia. Skip the raised bowl: no study shows it prevents bloat, and one large study of big breeds found more bloat with it. Feed twice daily rather than once, from a slow-feeder bowl.",
       enrichment: "Large breeds vary enormously in energy level. A Greyhound needs short sprints but is actually quite calm indoors. A Labrador needs sustained exercise. A German Shepherd needs both physical exercise and complex problem-solving daily. Research your specific breed's original purpose. Large, powerful dogs must be well-trained: an untrained 100 lb dog is genuinely dangerous to others.",
       health: "Bloat and GDV (gastric dilatation-volvulus) is a life-threatening emergency more common in deep-chested large breeds (Great Dane, Weimaraner, German Shepherd, Boxers). Symptoms: unproductive retching, swollen abdomen, restlessness. Rush to emergency vet immediately. Prophylactic stomach tacking (gastropexy) is recommended for high-risk breeds. Hip and elbow dysplasia, osteosarcoma (bone cancer), heart disease, and joint issues are common. Annual vet exams are critical. Large breeds have shorter lifespans: 8 to 12 years for large breeds, 6 to 9 for giant breeds.",
       checklist: [
@@ -213,7 +213,7 @@ export const dogGuides = [
         "XL orthopedic dog bed",
         "Large or XL crate (42 to 54 inches)",
         "Joint supplements (glucosamine/chondroitin for at-risk breeds)",
-        "Slow-feeder bowl (raised bowls are tied to higher bloat risk)",
+        "Slow-feeder bowl on the floor (a raised bowl has never been shown to prevent bloat)",
         "Daily exercise matched to breed energy level",
         "Obedience training (essential for large powerful dogs)",
         "Bloat awareness and emergency vet plan",
@@ -228,7 +228,7 @@ export const dogGuides = [
       { q: "What are the warning signs of bloat, and what should I do?", a: "Unproductive retching, a swollen abdomen, and restlessness. Gastric dilatation-volvulus is a life-threatening emergency, not something to watch overnight, so go to an emergency vet immediately. It is most common in deep-chested breeds including Great Danes, Weimaraners, German Shepherds, and Boxers, and prophylactic stomach tacking is worth discussing for high-risk dogs." },
       { q: "Why can't large breed puppies eat regular puppy food?", a: "Standard puppy food promotes growth that is too rapid for a large frame, which raises the risk of hip and elbow dysplasia. Large breed puppy formulas control the calcium and phosphorus ratio and slow that growth rate deliberately. This is one of the few feeding decisions where the breed-specific label is doing real work rather than marketing." },
       { q: "How long do large and giant breeds live?", a: "Roughly 8 to 12 years for large breeds and 6 to 9 for giant breeds, meaningfully shorter than small dogs. Their size also brings a higher risk of osteosarcoma, heart disease, and joint problems, so annual exams matter more, not less, and joint screening is worth raising with your vet early rather than after a limp appears." },
-      { q: "Does a raised food bowl prevent bloat?", a: "No, and it is worth being clear about that because the advice circulates widely. The largest study of large and giant breeds tied raised bowls to a higher bloat risk, not a lower one, so skip it. Feeding twice daily rather than once, from a slow-feeder bowl, is the more useful habit." },
+      { q: "Does a raised food bowl prevent bloat?", a: "No, and it is worth being clear about that because the advice circulates widely. Nothing has shown that a raised bowl prevents bloat. A 2000 study of large and giant breeds found more bloat among dogs fed from one, and a later survey found no link either way, so the floor is the safer default. Feeding twice daily rather than once, from a slow-feeder bowl, is the more useful habit." },
     ],
   },
 
