@@ -60,6 +60,15 @@ function tierCell(cell) {
   );
 }
 
+const STACK_TEXT_LENGTH = 30;
+
+function textLength(node) {
+  if (typeof node === 'string' || typeof node === 'number') return String(node).length;
+  if (Array.isArray(node)) return node.reduce((sum, n) => sum + textLength(n), 0);
+  if (React.isValidElement(node)) return textLength(node.props?.children);
+  return 0;
+}
+
 export default function ComparisonTable({
   headers = [],
   rows = [],
@@ -69,10 +78,20 @@ export default function ComparisonTable({
 }) {
   if (!headers.length || !rows.length) return null;
 
+  // Phones: a table of 3+ columns with sentences in it squeezes every column
+  // to a sliver, so below md each row stacks into a card. The first cell (and
+  // a tier pill) is the title line; every other cell gets its header as a
+  // small label above it. Tables of short values (cost Low / High, two-column
+  // cost tables) fit a phone fine and stay tables.
+  const stacked = headers.length >= 3
+    && rows.some((row) => row.slice(1).some((cell) => textLength(cell) > STACK_TEXT_LENGTH));
+  const isTitleCell = (i) => i === 0 || i === tierColumn;
+  const s = (mobile, desktop) => (stacked ? `${mobile} ${desktop}` : '');
+
   return (
     <div className={`not-prose my-8 overflow-x-auto rounded-xl border border-border ${className}`}>
-      <table className="w-full text-sm">
-        <thead>
+      <table className={`w-full text-sm ${s('block', 'md:table')}`}>
+        <thead className={s('hidden', 'md:table-header-group')}>
           <tr className="border-b border-border bg-muted/50">
             {headers.map((header, index) => (
               <th 
@@ -84,16 +103,22 @@ export default function ComparisonTable({
             ))}
           </tr>
         </thead>
-        <tbody>
+        <tbody className={s('block', 'md:table-row-group')}>
           {rows.map((row, rowIndex) => (
-            <tr 
-              key={rowIndex} 
-              className="border-b border-border last:border-0 hover:bg-muted/30 transition-colors"
+            <tr
+              key={rowIndex}
+              className={`border-b border-border last:border-0 hover:bg-muted/30 transition-colors ${s('block py-2', 'md:table-row md:py-0')}`}
             >
               {row.map((cell, cellIndex) => (
-                <td 
-                  key={cellIndex} 
-                  className="px-4 py-3 text-muted-foreground"
+                <td
+                  key={cellIndex}
+                  data-label={stacked && !isTitleCell(cellIndex) ? headers[cellIndex] || undefined : undefined}
+                  className={`px-4 py-3 text-muted-foreground ${
+                    !stacked ? ''
+                    : isTitleCell(cellIndex)
+                      ? `inline-block align-middle py-1 pr-1 md:table-cell md:py-3 md:pr-4 ${cellIndex === 0 ? 'font-semibold text-foreground md:font-normal md:text-muted-foreground' : ''}`
+                      : 'block py-1 md:table-cell md:py-3 before:block before:text-xs before:font-semibold before:text-foreground/70 before:content-[attr(data-label)] md:before:content-none'
+                  }`}
                 >
                   {cellIndex === tierColumn
                     ? tierCell(cell)
