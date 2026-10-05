@@ -90,8 +90,12 @@ function scanProse(path: string, added: string): Hit[] {
       hits.push({ rule: '"see our" link phrasing', detail: snip(added, m.index ?? 0, m[0].length) })
     }
 
-    for (const para of added.split(/\n\s*\n/)) {
-      const links = para.match(/\]\(/g)?.length ?? 0
+    // A Sources block is a list of links by design, so it is never a link
+    // library. Strip it when the edit carries the tags, and count only
+    // internal links (](/...), since sources are always external.
+    const prose = added.replace(/<Sources>[\s\S]*?<\/Sources>/g, '')
+    for (const para of prose.split(/\n\s*\n/)) {
+      const links = para.match(/\]\(\//g)?.length ?? 0
       const bare = para.replace(/\[[^\]]*\]\([^)]*\)/g, '').replace(/[\s.,;:]+/g, ' ').trim()
       if ((links >= 3 && bare.length < 120) || (links >= 2 && CLOSER.test(para))) {
         hits.push({ rule: 'link-library paragraph', detail: snip(para, 0, 60) })
