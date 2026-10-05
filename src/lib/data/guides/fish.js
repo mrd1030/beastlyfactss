@@ -24,7 +24,7 @@ export const fishGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Tank size", value: "29 gallons, tall, for a single adult. A 55-gallon is the better choice for a group of four to six adults, and at a standard 20 inches tall it clears the height requirement on its own.", source: "angelfish-tank-setup-guide" },
+        { label: "Tank size", value: "29 gallons, tall, as the smallest worth starting with. A 55-gallon is the better choice for a group of four to six adults, and at a standard 20 inches tall it clears the height requirement on its own.", source: "angelfish-tank-setup-guide" },
         { label: "Height over length", value: "At least 18 to 20 inches tall. A 20-gallon long is often only about 12 inches tall, too shallow for this body shape.", source: "angelfish-tank-setup-guide" },
         { label: "Temperature", value: "78 to 82°F, tolerating down to about 75°F, with swings held within about 2 degrees. A heater is essential: 3 to 5 watts per gallon, 200 to 250 watts on a 55.", source: "angelfish-tank-setup-guide" },
         { label: "Water chemistry", value: "pH 6.5 to 7.0 and soft water preferred, especially if you want pairs to form. Zero ammonia and zero nitrite matters more here than for hardier community fish.", source: "angelfish-tank-setup-guide" },
@@ -64,7 +64,7 @@ export const fishGuides = [
       { slug: "angelfish-enrichment-guide", line: "The study that found group size did not matter for this fish, and what to optimize instead." },
     ],
     buyList: [
-      "55-gallon tank and stand, or a 29-gallon tall for a single adult",
+      "55-gallon tank and stand, or a 29-gallon tall to start",
       "Hang-on-back or canister filter sized for the tank, gentle to moderate flow",
       "Sponge filter if you plan to breed",
       "Aquarium heater, roughly 3 to 5 watts per gallon",
@@ -78,7 +78,7 @@ export const fishGuides = [
       "Frozen or live bloodworms, brine shrimp, daphnia, or mysis shrimp",
     ],
     faqs: [
-      { q: "What size tank does an angelfish need?", a: "29 gallons in a tall configuration is the practical minimum for one adult, and 55 gallons suits a small group of four to six adults. Watch out for the \"20-gallon long\": bigger volume, but often only about 12 inches of height, which is too shallow here. Buy height, at least 18 to 20 inches, before length." },
+      { q: "What size tank does an angelfish need?", a: "29 gallons in a tall configuration is the smallest tank worth starting with, and 55 gallons suits a small group of four to six adults. Watch out for the \"20-gallon long\": bigger volume, but often only about 12 inches of height, which is too shallow here. Buy height, at least 18 to 20 inches, before length." },
       { q: "Do angelfish need a tank lid?", a: "Yes. They can jump, so an uncovered tank, or one with meaningful gaps in the cover, is a real risk. The lid is a non-obvious requirement here." },
       { q: "Why is a sunken belly a warning sign even if my angelfish is still eating?", a: "Intestinal parasites common in cichlids, the family angelfish belong to, can cause a fish to keep eating voraciously while still losing significant weight and developing a sunken belly: Capillaria worms, found particularly in angelfish and discus, and the flagellate Spironucleus. Appetite alone isn't a reliable health check for this species." },
     ],
@@ -725,7 +725,7 @@ export const fishGuides = [
         { label: "Pond volume", value: "Roughly 250 gallons per adult, or 10 gallons per inch of fish. 1,000 gallons is the cited practical minimum and supports only a few fish; size for the adults they become, not the juveniles you bought.", source: "koi-tank-setup-guide" },
         { label: "Depth", value: "3 feet minimum, 3 to 5 feet or more preferred. Depth buys temperature stability, predator protection and survival through a frozen winter.", source: "koi-tank-setup-guide" },
         { label: "Indoors is temporary", value: "An aquarium can hold a juvenile. Matching an adult's volume and filtration indoors is impractical for most keepers, which is why the outdoor pond is the standard.", source: "koi-tank-setup-guide" },
-        { label: "Temperature", value: "Comfortable at 64 to 75°F, with 59 to 77°F the outer limits. The real risk is a rapid swing of more than about 2°F a day, not the absolute number.", source: "koi-tank-setup-guide" },
+        { label: "Temperature", value: "Comfortable at 64 to 75°F, growing best across 59 to 77°F, and able to live through far wider extremes. The real risk is a rapid swing of more than about 2°F a day, not the absolute number.", source: "koi-tank-setup-guide" },
         { label: "Filtration", value: "Oversized filtration with a UV clarifier and strong aeration, which is where most beginner ponds fall short. No UVB: the UV unit treats the water, not the fish.", source: "koi-tank-setup-guide" },
         { label: "Predators", value: "Herons and raccoons are real threats. Netting sized to the pond, and depth.", source: "koi-tank-setup-guide" },
         { label: "How many", value: "A single koi is a poorer arrangement than a group, and the constraint is pond volume, not compatibility.", source: "koi-enrichment-guide" },
@@ -1116,7 +1116,7 @@ export const fishGuides = [
       source: "platy-health-issues-guide",
       heading: "Test the water first, then act on these today. Platies rarely see a vet; nearly all of this is handled at home.",
       callNow: [
-        "Small white spots like grains of salt across the body and fins: ich, treated with copper sulfate or formalin medication plus the water fix that let it in",
+        "Small white spots like grains of salt across the body and fins: ich, treated by warming the tank slowly to 79°F, then aquarium salt or an ich medication, plus the water fix that let it in",
         "Fin edges turning white, ragged, or frayed from the tips inward",
         "Buoyancy problems: floating, sinking, or swimming at an odd angle",
         "A side-to-side, snake-like rocking as the fish swims: shimmy, fixed by correcting the water",
@@ -1246,7 +1246,7 @@ export const fishGuides = [
       "Zucchini, spinach or peas to blanch",
     ],
     faqs: [
-      { q: "What size tank does a swordtail need?", a: "20 gallons is the genuine floor for a small trio, one male and two or three females, but a group wants 30 gallons or more, on a footprint around 48 by 12 inches, since swordtails are more active, open-water swimmers than a molly or platy. Go long and rectangular over tall, and use a lid, swordtails are capable jumpers." },
+      { q: "What size tank does a swordtail need?", a: "20 gallons is the genuine floor for a small trio, one male and two or three females, but a group wants 30 gallons or more, since swordtails are more active, open-water swimmers than a molly or platy. Choose length over height, and use a lid, swordtails are capable jumpers." },
       { q: "What temperature do swordtails need?", a: "Tropical, roughly 65 to 82\u00B0F, with 75 to 79\u00B0F the steadier target. Hold it steady rather than chasing a number, and avoid sudden swings. A submersible heater is necessary unless the room stays warm all year." },
       { q: "Why does male-to-female ratio matter so much with swordtails?", a: "Because males can be persistent toward females and combative toward each other. Keep at least two or three females per male, and three or four where the tank allows: the higher end spreads out mating attempts more effectively and reduces the fin damage and stress that come with a single female fielding constant attention." },
     ],
