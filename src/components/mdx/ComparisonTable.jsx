@@ -107,17 +107,19 @@ export default function ComparisonTable({
           {rows.map((row, rowIndex) => (
             <tr
               key={rowIndex}
-              className={`border-b border-border last:border-0 hover:bg-muted/30 transition-colors ${s('block py-2', 'md:table-row md:py-0')}`}
+              className={`border-b border-border last:border-0 hover:bg-muted/30 transition-colors ${s('block py-3 space-y-1.5', 'md:table-row md:py-0')}`}
             >
               {row.map((cell, cellIndex) => (
                 <td
                   key={cellIndex}
                   data-label={stacked && !isTitleCell(cellIndex) ? headers[cellIndex] || undefined : undefined}
-                  className={`px-4 py-3 text-muted-foreground ${
-                    !stacked ? ''
+                  // Padding is set per layout, never as a base class: py-3
+                  // beside py-0 resolves by CSS order, not class order.
+                  className={`px-4 text-muted-foreground ${
+                    !stacked ? 'py-3'
                     : isTitleCell(cellIndex)
-                      ? `inline-block align-middle py-1 pr-1 md:table-cell md:py-3 md:pr-4 ${cellIndex === 0 ? 'font-semibold text-foreground md:font-normal md:text-muted-foreground' : ''}`
-                      : 'block py-1 md:table-cell md:py-3 before:block before:text-xs before:font-semibold before:text-foreground/70 before:content-[attr(data-label)] md:before:content-none'
+                      ? `block py-0 md:table-cell md:py-3 ${cellIndex === 0 ? 'font-semibold text-foreground md:font-normal md:text-muted-foreground' : ''}`
+                      : 'block py-0 md:table-cell md:py-3 before:block before:text-xs before:font-semibold before:text-foreground/70 before:content-[attr(data-label)] md:before:content-none'
                   }`}
                 >
                   {cellIndex === tierColumn
