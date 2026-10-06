@@ -27,6 +27,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { firsthandNote } from '../src/lib/data/firsthand.js';
+import { resolveCostTokens } from '../src/lib/costs.js';
 
 const args = process.argv.slice(2);
 const flag = (name) => args.includes(name);
@@ -117,7 +118,7 @@ function firstSentence(text) {
 
 // ---------- check one article ----------
 function check(file) {
-  const raw = fs.readFileSync(file, 'utf8');
+  const raw = resolveCostTokens(fs.readFileSync(file, 'utf8'));
   const { fm, body } = splitFrontmatter(raw);
   const slug = fmField(fm, 'slug') || path.basename(file, '.mdx');
   const date = fmField(fm, 'date') || fmField(fm, 'lastUpdated') || '';

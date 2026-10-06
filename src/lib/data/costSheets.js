@@ -42,4 +42,24 @@ export const COST_SHEETS = {
       { item: 'clicker-target-stick', text: '[Clicker and target stick]' },
     ],
   },
+  'african-grey-parrot': {
+    animal: [1000, 4000],
+    monthly: [50, 100],
+    vetExam: [150, 300],
+    necessities: [
+      { item: 'cage-parrot-36x24x48-bars-075-1in', text: 'Cage at least 36 by 24 by 48 inches with bars 3/4 to 1 inch apart, powder-coated steel (check the dimensions and bar spacing before you buy)' },
+      { item: 'perches-varied-large-parrot', text: 'Natural wood, rope and cement perches in varied diameters, sized for a large parrot' },
+      { item: 'uvb-avian-compact-kit', text: '[Avian UVB lamp and fixture], mounted 12 to 18 inches from the perch' },
+      { item: 'foraging-toys-large-parrot-set', text: '[Foraging toys built for a large parrot]' },
+      { item: 'dish-stainless-bolt-on-30oz', qty: 2, text: 'Two [stainless bolt-on dishes], one for food and one for water' },
+      { item: 'carrier-medium-large-parrot', text: 'Travel carrier sized for a grey, for vet visits' },
+      { item: 'cage-cover-large', text: '[Breathable cage cover] for 10 to 12 hours of darkness (check it fits your cage)' },
+      { item: 'mist-bottle', text: '[Fine mist spray bottle] for bathing' },
+      { item: 'gram-scale-aviary-perch', text: '[Gram scale with a perch]' },
+    ],
+    extras: [
+      { item: 'play-stand-large-parrot', text: '[Large parrot play stand] for the daily hours out of the cage' },
+      { item: 'air-purifier-hepa-room', text: '[HEPA air purifier] for the powder down' },
+    ],
+  },
 };

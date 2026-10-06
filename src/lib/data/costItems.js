@@ -93,6 +93,67 @@ export const COST_ITEMS = {
     spec: '',
     low: 5, high: 15, product: 'target-stick-clicker', checked: '2026-10',
   },
+  // Parrots. No cage in the catalog meets 36x24x48 with 3/4 to 1 in bars in
+  // powder-coated steel (the stainless one is far above this range).
+  'cage-parrot-36x24x48-bars-075-1in': {
+    label: 'Cage at least 36 by 24 by 48 inches, bars 3/4 to 1 inch apart, powder-coated',
+    spec: '36 x 24 x 48 in, 3/4 to 1 in bars',
+    low: 250, high: 800, product: null, checked: '2026-10',
+  },
+  'perches-varied-large-parrot': {
+    label: 'Natural wood, rope and cement perches in varied diameters',
+    spec: 'large parrot',
+    low: 10, high: 25, product: null, checked: '2026-10',
+  },
+  // PetSmart $64.99 regular; LLL Reptile, Arcata Pet and others $74.99 to $91.99.
+  'uvb-avian-compact-kit': {
+    label: 'Avian UVB lamp and fixture',
+    spec: 'compact, 12 to 18 in from the perch',
+    low: 60, high: 95, product: 'uvb-arcadia-puresun-compact-bird-kit', checked: '2026-10',
+  },
+  'foraging-toys-large-parrot-set': {
+    label: 'Foraging toys built for a large parrot',
+    spec: '5 piece set',
+    low: 40, high: 50, product: 'cockatoo-foraging-toys-large-parrot', checked: '2026-10',
+  },
+  'dish-stainless-bolt-on-30oz': {
+    label: 'Stainless bolt-on dish',
+    spec: '30 oz',
+    low: 15, high: 20, product: 'coop-cup-prevue-30oz-bolt-on', checked: '2026-10',
+  },
+  // PetSmart and Chewy, carriers sold for greys: $36.99 (A&E large) to $124.99
+  // (Prevue Playtop); the catalog has none at this size.
+  'carrier-medium-large-parrot': {
+    label: 'Travel carrier sized for a grey',
+    spec: 'medium to large parrot',
+    low: 35, high: 125, product: null, checked: '2026-10',
+  },
+  'cage-cover-large': {
+    label: 'Breathable cage cover for nighttime darkness',
+    spec: 'flat-top cages up to about 37 x 25 x 48 in',
+    low: 40, high: 40, product: 'cage-cover-prevue-good-night-large', checked: '2026-10',
+  },
+  'mist-bottle': {
+    label: 'Fine mist spray bottle',
+    spec: '',
+    low: 5, high: 15, product: 'fine-mist-spray-bottle', checked: '2026-10',
+  },
+  'gram-scale-aviary-perch': {
+    label: 'Gram scale with a perch',
+    spec: '1 g steps, perch top',
+    low: 30, high: 40, product: 'african-grey-parrot-digital-gram-scale', checked: '2026-10',
+  },
+  // PetSmart and Walmart $249.99, Tractor Supply $209.99 (Prevue 3180).
+  'play-stand-large-parrot': {
+    label: 'Large parrot play stand',
+    spec: 'about 30 x 22 x 73 in, rolling',
+    low: 205, high: 250, product: 'play-stand-prevue-large-parrot', checked: '2026-10',
+  },
+  'air-purifier-hepa-room': {
+    label: 'HEPA air purifier',
+    spec: 'rated for a large room',
+    low: 90, high: 110, product: 'air-purifier-levoit-core300-p', checked: '2026-10',
+  },
   'uv-index-meter': {
     label: 'UV index meter',
     spec: 'Solarmeter 6.5R',

@@ -1,4 +1,8 @@
-export const birdGuides = [
+// Cost figures in these entries are %%placeholders%% filled from the master
+// price list (src/lib/costs.js); never type a cost guide total here.
+import { fillCostTokens } from '../../costs.js';
+
+export const birdGuides = fillCostTokens([
   {
     id: "african-grey",
     name: "African Grey Parrot",
@@ -29,7 +33,7 @@ export const birdGuides = [
         { label: "Diet", value: "Pellets make up 75 to 80% of daily intake. Fresh vegetables make up most of the remaining 20 to 25%, with fruit held to 10% or less.", source: "african-grey-parrot-feeding-guide" },
         { label: "Interaction", value: "Roughly 4 to 5 hours of genuine daily time investment to stay well-adjusted. This isn't a bird that thrives on occasional attention.", source: "african-grey-parrot-handling-guide" },
         { label: "Not eating", value: "African greys hide illness well. Call an avian vet the same day for any clear, noticeable drop in appetite or activity rather than waiting to see if it resolves on its own.", source: "african-grey-parrot-feeding-guide" },
-        { label: "Budget", value: "$500 to $1,500 to set up. Roughly $50 to $100 a month ongoing. An annual avian wellness exam runs $150 to $300.", source: "african-grey-parrot-cost-guide" },
+        { label: "Budget", value: "%%setup:african-grey-parrot%% to set up. Roughly %%monthly:african-grey-parrot%% a month ongoing. An annual avian wellness exam runs %%vet:african-grey-parrot%%.", source: "african-grey-parrot-cost-guide" },
         { label: "Adult size", value: "13 inches; 14 to 21 oz." },
         { label: "Lifespan", value: "Mean 45 years in captivity, with some individuals reaching 60 and exceptional cases living 70 to 80 years, compared to about 23 years in the wild.", source: "african-grey-parrot-cost-guide" },
         { label: "Power outage", value: "Keep feeding and watering through an outage rather than pulling food the way you would for a reptile; an African grey carries far less fat reserve than its size suggests. The real danger is combustion, not cold: no candles, gas heat, or a generator run anywhere near the bird's room.", source: "bird-emergency-travel-guide" },
@@ -46,7 +50,7 @@ export const birdGuides = [
       vetLine: "An avian vet, found before you need one. A seizure is an emergency: get to a vet immediately for injectable calcium. Psittacosis is zoonotic and can spread to people in the household.",
     },
     routes: [
-      { slug: "african-grey-parrot-cost-guide", line: "$1,000 to $4,000 for the bird, $500 to $1,500 for the setup, and why the lifespan changes the entire budgeting picture." },
+      { slug: "african-grey-parrot-cost-guide", line: "%%animal:african-grey-parrot%% for the bird, %%setup:african-grey-parrot%% for the setup, and why the lifespan changes the entire budgeting picture." },
       { slug: "african-grey-parrot-tank-setup-guide", line: "Cage size and placement, the temperature range, and why enrichment isn't optional for this species." },
       { slug: "african-grey-parrot-feeding-guide", line: "The pellet-first diet, why grit isn't needed, toxic foods, and the honest list of reasons a grey stops eating." },
       { slug: "african-grey-parrot-handling-guide", line: "Just how intelligent Alex really was, why the bites happen, and how this species compares to smaller parrots." },
@@ -56,10 +60,13 @@ export const birdGuides = [
     ],
     buyList: [
       "36x24x48 inch cage or larger",
-      "Multiple perches of varied diameters and textures",
+      "Perches of varied diameters and textures, sized for a large parrot",
       "Full-spectrum UVB light",
-      "Foraging and puzzle toys",
-      "Sleep cage or covered area",
+      "UV index meter (optional, highly recommended)",
+      "Foraging toys (large parrot, heavy-duty)",
+      "Stainless bolt-on food and water dishes",
+      "Cage cover for nighttime darkness",
+      "Travel carrier sized for a grey",
       "Misting bottle or shower perch",
       "High-quality parrot pellets",
       "Fresh vegetables and limited fruit",
@@ -809,4 +816,4 @@ export const birdGuides = [
       { q: "Should I give them a nest?", a: "Only if you want eggs, since a nest and nesting material readily trigger breeding. Nesting material for shredding and carrying is enriching, and if you do not want chicks, offer the material without a nest site." },
     ],
   },
-];
+]);
