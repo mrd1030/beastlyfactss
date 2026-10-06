@@ -2629,3 +2629,33 @@ A sea otter floating on its back in a narrow salt marsh creek, holding a small d
 
 A sea otter just surfacing from a dive, floating upright in the water, with two or three clams tucked under one forearm against its chest and one more held in its paws. Pale grizzled face, wet dark brown fur. Not a river otter. Rocky kelp coast behind, soft gray daylight. No people, no text. Portrait.
 **Check:** the clams are held under the forearm, not just in the paws.
+
+# 2026-10-05 run, five facts (installed 2026-10-05)
+
+All five accepted on the first attempt. Not cropped: the hoopoe arrived near
+square at 1312x1199 and the other four at 1024x1536.
+
+**The Rotten Nest Trick** → `/assets/facts/hoopoe.jpg`
+
+A hoopoe chick at the round entrance of a nest hole in an old tree trunk, turned around with its rear raised and pointed out of the hole toward the viewer, head twisted back over its shoulder to watch. Half-grown chick with pinkish-buff feathers, a short stubby crest and a short down-curved bill. A wary adult hoopoe perched on a branch just outside, with a long thin curved bill, a tall orange crest tipped in black, and bold black-and-white barred wings. Not a woodpecker and not a jay: the barred wings and the fan crest decide it. Warm Mediterranean afternoon light, rough bark, olive leaves blurred behind. No visible droppings, no mess, no people, no hands, no text, no watermark. Portrait.
+**Check:** the chick's rear faces out of the hole, and the adult shows the barred wings and the black-tipped crest.
+
+**Born Without a Tail** → `/assets/facts/manx-cat.jpg`
+
+A Manx cat seen from directly behind, sitting upright on a sunlit wooden floor and looking back over its shoulder at the camera. Completely tailless "rumpy" type: a smooth rounded rump with no tail stump at all. Stocky round body, hind legs visibly longer than the front so the rump sits high, round head, brown classic tabby coat. Not a Japanese Bobtail, which has a short pom-pom tail, and not a British Shorthair: there is no tail whatsoever and the rear end is round like a ball. Soft window light, warm neutral palette. No people, no hands, no collar, no text, no watermark. Portrait.
+**Check:** no tail and no stump of any kind, and the rump is high and rounded.
+
+**Not Really a Wolf** → `/assets/facts/maned-wolf.jpg`
+
+A maned wolf standing alone in tall golden savanna grass at dusk, head turned toward the camera. Extremely long thin black legs, as if on stilts, a fox-like red-orange coat, large upright ears, a black mane down the back of the neck, a black muzzle and a white throat and tail tip. A small lobeira shrub in the foreground with one round green-yellow tomato-sized fruit hanging from it. Not a red fox and not a German Shepherd: the legs are far too long for either, and the black "stockings" run up the legs. Brazilian cerrado, scattered twisted trees, warm low sun, soft haze. Shot at 300mm, f/4. No people, no fences, no text, no watermark. Portrait.
+**Check:** the legs are long and black, the mane is visible, and the fruit is on the shrub, not in the mouth.
+
+**Mouth to Mouth Combat** → `/assets/facts/sarcastic-fringehead.jpg`
+
+Two sarcastic fringeheads facing each other on a sandy seafloor, mouths pressed together and stretched open far wider than their own heads, the gaping jaws edged in bright yellow and iridescent blue membrane. Small elongated brown-mottled bodies, a long dorsal fin, and small fleshy fringe-like tufts above each eye. Not a moray eel and not a frogfish: these are small slim blennies whose open mouths dwarf their bodies. One fringehead half-emerging from an empty shell on the sand. Southern California coastal water, blue-green, soft filtered daylight. Shot at 100mm macro, f/8. No divers, no hands, no text, no watermark. Landscape 3:2.
+**Check:** both mouths are open and touching, and each mouth is clearly bigger than the fish's head.
+
+**The Slime Cannon** → `/assets/facts/velvet-worm.jpg`
+
+A velvet worm in damp forest leaf litter firing two thin streams of white sticky slime from the sides of its head toward a cricket, the threads already tangled across the insect's legs. Soft caterpillar-like body with a velvety, matte, finely ridged skin, deep brown-purple, a pair of beaded antennae, and many stubby cone-shaped legs along its sides. Not a caterpillar and not a centipede: no hard segments, no pincers, no hairs, and the skin looks like velvet. Wet rainforest floor, mossy twigs and dark leaves, a low green-tinted light. Shot at 100mm macro, f/11. No people, no hands, no text, no watermark. Landscape 3:2.
+**Check:** two separate slime streams come from the head, and the skin reads as velvety rather than segmented.

@@ -43,8 +43,8 @@ feeding-guide heroes on 2026-09-09.
 
 ## Facts awaiting images
 
-**None.** The 2026-09-27 run of five and the 2026-09-28 serval run of three were
-promoted on 2026-09-28 as ids 334 to 341, and the sea otter pocket fact as 342, recorded in
+**None.** The 2026-10-05 run of five (hoopoe, Manx cat, maned wolf, sarcastic
+fringehead, velvet worm) was promoted the same day as ids 343 to 347, recorded in
 `archive/docs-completed/NEEDS_IMAGE_COMPLETED_2026-09-17.md`.
 
 ## How a blocked fact works
@@ -65,13 +65,3 @@ the photo lands.
 specific Beastfile page. Prompt style rules are in `IMAGE_PROMPTS.md`; the
 prompts that produced existing images are in
 `archive/docs-completed/IMAGE_PROMPTS_COMPLETED_2026-09-17.md`.
-
-## 2026-10-05 run: 5 facts drafted, awaiting images
-
-Ready for the site owner to generate photos and add to facts.js.
-
-1. **Hoopoe** (Birds) - The Rotten Nest Trick. Nesting hoopoe mothers coat their eggs in a foul smelling secretion from a gland near the tail, and once the chicks hatch they keep up the defense by aiming their own droppings at anything that gets too close to the nest. The smell has been compared to rotting meat, and it appears to help fend off predators and keep feather damaging bacteria in check. Visual hook: a hoopoe chick at the nest entrance with its rear raised toward an approaching intruder.
-2. **Manx Cat** (Dogs & Cats) - Born Without a Tail. A single dominant gene shortens the tail bones in Manx cats, so litters range from normal tailed kittens to completely tailless ones. That same gene can shorten the spine itself, and a kitten that inherits two copies of it is usually lost before birth, which is why responsible breeders never pair two tailless Manx cats together. Visual hook: a round rumped Manx cat seen from behind, sitting upright with no tail at all.
-3. **Maned Wolf** (Mammals) - Not Really a Wolf. The maned wolf is neither a wolf nor a fox. It is the only living member of its own genus, and roughly half its diet is fruit and vegetables, especially a tomato like fruit called lobeira. Pairs are mostly loners that share a home range and raise pups together but hunt separately through the tall grass at night. Visual hook: a tall, long legged canid with fox like coloring standing alone in savanna grass at dusk, a red lobeira fruit nearby.
-4. **Sarcastic Fringehead** (Ocean) - Mouth to Mouth Combat. This small territorial fish, rarely longer than about 8 inches, can stretch its mouth open to roughly four times its closed size. When a rival strays too close, two fringeheads press their gaping mouths together in a wrestling match, and the one with the smaller mouth backs down first. Visual hook: two small fish pressed mouth to mouth, jaws stretched open far wider than their own heads.
-5. **Velvet Worm** (Weird & Wonderful) - The Slime Cannon. Velvet worms fire two jets of sticky slime from nozzles near their head, reaching prey up to a foot away and hardening in seconds to trap it in place. Their basic body plan has barely changed in hundreds of millions of years, making them one of the closest things alive to a true living fossil. Visual hook: a velvet worm firing twin jets of slime at a cornered insect in leaf litter.

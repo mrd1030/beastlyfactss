@@ -367,6 +367,11 @@ export const FACT_IMAGES = {
   340: '/assets/facts/serval-leap.jpg', // "Plucks Birds From the Air"
   341: '/assets/facts/serval-burrow.jpg', // "An Arm Down the Burrow"
   342: '/assets/facts/sea-otter-3.jpg', // "Pockets Under the Arms"
+  343: '/assets/facts/hoopoe.jpg', // "The Rotten Nest Trick"
+  344: '/assets/facts/manx-cat.jpg', // "Born Without a Tail"
+  345: '/assets/facts/maned-wolf.jpg', // "Not Really a Wolf"
+  346: '/assets/facts/sarcastic-fringehead.jpg', // "Mouth to Mouth Combat"
+  347: '/assets/facts/velvet-worm.jpg', // "The Slime Cannon"
 };
 
 // Site-relative path for <img src>, or null if this fact has no dedicated photo yet.
