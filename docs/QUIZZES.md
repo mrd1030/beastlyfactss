@@ -58,8 +58,10 @@ export default {
   page before writing the question; never write from memory. The source link
   is required, and only released pages qualify (date already passed).
 - Source link behavior is automatic, no wiring needed: a `/facts/<slug>/`
-  source opens that fact as a popup in place on the quiz page (players are
-  never stranded on the Facts page), blog sources display with an "(article)"
+  source renders as a button that opens that fact as a popup in place on the
+  quiz page, never a link (players are never stranded on the Facts page, and
+  crawlers never reach the fact page's empty shell; see the fact page rule in
+  docs/RULES.md), blog sources display with an "(article)"
   suffix, and any article cited as a source gets a "Quiz Yourself" backlink
   in its sidebar.
 - **Theme tightly.** Eight questions about one world (one species, one

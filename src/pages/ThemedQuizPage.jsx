@@ -19,10 +19,12 @@ import { BookCheck, CircleHelp, Heart } from 'lucide-react';
 
 // A source pointing at /facts/<slug>/ is a fact card, not a page of its own:
 // that route just opens the Facts page with the fact's modal, and closing the
-// modal strands the player on the Facts page with the quiz gone. So fact
-// sources stay real links in the markup (the prerendered page keeps its
-// internal links) but a plain click opens the same modal here in place, the
-// way the homepage photo strip does. Modified clicks still get the real page.
+// modal strands the player on the Facts page with the quiz gone. So a fact
+// source is a button that opens the same modal here in place, the way the
+// homepage photo strip does, not a link. It used to be a real link with the
+// click intercepted, and crawlers followed it to the fact page's head-only
+// shell: 15 of the 17 "no outgoing links" pages in the 2026-10-06 Ahrefs
+// audit came from these two quizzes. Article sources stay real links.
 const factForSource = (to) => {
   const match = /^\/facts\/([^/]+)\/?$/.exec(to || '');
   if (!match) return null;
@@ -190,12 +192,12 @@ export default function ThemedQuizPage({ quiz }) {
     saveQuizResult(cardFor(best.score));
   };
 
-  const handleSourceClick = (e, source) => {
-    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  // A fact source opens its card in place; anything else is a normal link.
+  const renderSource = (source, className, children) => {
     const fact = factForSource(source.to);
-    if (!fact) return;
-    e.preventDefault();
-    setPopupFact(fact);
+    return fact
+      ? <button type="button" onClick={() => setPopupFact(fact)} className={`${className} text-left`}>{children}</button>
+      : <Link to={source.to} className={className}>{children}</Link>;
   };
 
   const handleShare = ({ withImage = false } = {}) => {
@@ -314,9 +316,9 @@ export default function ThemedQuizPage({ quiz }) {
                   <ul className="space-y-1.5">
                     {sourcePages.map(source => (
                       <li key={source.to}>
-                        <Link to={source.to} onClick={(e) => handleSourceClick(e, source)} className="inline-flex items-center gap-1.5 text-sm font-body font-semibold text-secondary hover:underline">
-                          <ArrowRight className="w-3.5 h-3.5 flex-shrink-0" />{source.label + sourceSuffix(source.to)}
-                        </Link>
+                        {renderSource(source, 'inline-flex items-center gap-1.5 text-sm font-body font-semibold text-secondary hover:underline', (
+                          <><ArrowRight className="w-3.5 h-3.5 flex-shrink-0" />{source.label + sourceSuffix(source.to)}</>
+                        ))}
                       </li>
                     ))}
                   </ul>
@@ -371,9 +373,9 @@ export default function ThemedQuizPage({ quiz }) {
                         </p>
                         <p className="text-sm font-body text-foreground leading-relaxed">{question.explain}</p>
                         {question.source && (
-                          <Link to={question.source.to} onClick={(e) => handleSourceClick(e, question.source)} className="inline-flex items-center gap-1 mt-2 text-xs font-body font-bold text-secondary hover:underline">
-                            {`From: ${question.source.label}${sourceSuffix(question.source.to)}`} <ArrowRight className="w-3 h-3" />
-                          </Link>
+                          renderSource(question.source, 'inline-flex items-center gap-1 mt-2 text-xs font-body font-bold text-secondary hover:underline', (
+                            <>{`From: ${question.source.label}${sourceSuffix(question.source.to)}`} <ArrowRight className="w-3 h-3" /></>
+                          ))
                         )}
                       </div>
                       <motion.button initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}

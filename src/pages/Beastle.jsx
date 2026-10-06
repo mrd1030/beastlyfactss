@@ -428,11 +428,15 @@ function Reveal({ entry, won, guesses, kicker, children }) {
             {AQUATIC_FISH[entry.answer]}
           </p>
         )}
-        {/* SHORTHAIR is two cats: a link to each. */}
+        {/* SHORTHAIR is two cats: a link to each. Only an animal with a page
+            of its own (an encyclopedia profile or a Beastlypedia entry) gets
+            "Meet the ...". A fact-only animal's fact is already the blurb
+            above, so it gets no link, and never one to its fact page's empty
+            shell (docs/RULES.md, fact pages). */}
         <div className="flex flex-wrap justify-center gap-x-4">
-          {[entry, ...(entry.also || [])].map((a) => (
+          {[entry, ...(entry.also || [])].filter((a) => /^\/(encyclopedia|beastlypedia)\//.test(a.link || '')).map((a) => (
             <Link key={a.link} to={a.link} className="inline-flex items-center gap-1 mt-3 text-sm font-body font-bold text-secondary hover:underline">
-              {`Meet the ${a.name}`} <ArrowRight className="w-4 h-4" />
+              {`Meet the ${a.name}`}<ArrowRight className="w-4 h-4" />
             </Link>
           ))}
         </div>
