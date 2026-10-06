@@ -791,7 +791,7 @@ export const lizardGuides = fillCostTokens([
       "A T5 HO UVB fixture with a ReptiSun 5.0 or Arcadia Forest 6% bulb",
       "A halogen basking bulb and a dimming thermostat for it",
       "A misting system, manual or automated, plus a dripper",
-      "A cool-mist humidifier on a humidistat for the overnight spike",
+      "A cool-mist humidifier on a humidistat, where the room cannot hold the humidity",
       "Distilled water for anything that mists or fogs",
       "Live plants, densely, plus climbing branches at several heights",
       "Paper towel for the floor, or a bioactive base if you prefer",

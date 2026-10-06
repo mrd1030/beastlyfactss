@@ -5,7 +5,7 @@ export const lizardSheets = {
     monthly: [40, 80],
     vetExam: [50, 100],
     necessities: [
-      { item: 'enclosure-60x30x48', text: 'Enclosure at least 5 by 2.5 by 4 feet, custom or PVC (check the dimensions before you buy)' },
+      { item: 'enclosure-60x30x48', text: 'Enclosure at least 5 by 2.5 by 4 feet, custom or PVC, with a substrate barrier at least 12 inches tall across the front (check the dimensions before you buy)' },
       { item: 'substrate-diy-topsoil-sand-60x30-deep', text: 'Deep burrowing substrate, a DIY topsoil and play sand mix 12 to 24 inches deep (bagged bioactive mixes cost several times more at this depth)' },
       { item: 'uvb-t5ho-12pct-36in-kit', text: 'Linear T5 HO 12% desert [UVB fixture] spanning roughly half the enclosure (check the length against your enclosure), tube included' },
       { item: 'basking-bulb-100w-2pack', text: '[Two 100 W basking bulbs], more wattage in a cold room' },
@@ -45,10 +45,10 @@ export const lizardSheets = {
     animal: [200, 1200],
     monthly: [40, 100],
     necessities: [
-      { item: "argentine-tegu-46in-high-output-uvb", text: "[46in high output UVB fixture]" },
+      { item: "uvb-t5ho-12pct-36in-kit", text: "[T5 HO 12% UVB kit], 36 inch, the longest 12% kit sold, hung over the basking zone (check the coverage against your enclosure)" },
       { item: "argentine-tegu-heavy-duty-thermostat", text: "[Heavy duty thermostat]" },
       { item: "argentine-tegu-automatic-misting-system", text: "[Automatic misting system]" },
-      { item: "argentine-tegu-deep-substrate-multiple-bags", text: "[Deep substrate] (multiple bags needed for 12-18in depth)" },
+      { item: "substrate-diy-topsoil-cypress-8x4-deep", text: "Deep, moisture-retentive substrate: a DIY mix of organic topsoil and cypress mulch, 12 to 18 inches over the 8 by 4 foot floor (32 to 48 cubic feet, about 30 to 45 garden-store bags)" },
       { item: "argentine-tegu-basking-radiant-heat-sources", text: "[Basking and radiant heat sources]" },
       { item: "argentine-tegu-full-8x4x4ft-pvc-enclosure", text: "Full 8x4x4ft PVC enclosure, built to order and shipped (the adult size)" },
       { text: "Initial vet exam", low: 50, high: 135 },
@@ -56,6 +56,7 @@ export const lizardSheets = {
       { item: "thermo-hygrometer-digital", text: "[Digital thermometer and hygrometer]" },
       { item: "calcium-plain-8oz", text: "First supply of [calcium without D3]" },
       { item: "multivitamin-reptivite-2oz", text: "First supply of a [reptile multivitamin]" },
+      { item: "rabbit-dig-box-storage-tub", qty: 2, text: "Two hides: [56 quart storage tubs] turned upside down with an entry cut in the side, one warm and one cool" },
     ],
     extras: [
       { item: "led-daylight-6500k", text: "[6500K LED] for brightness and live plants (check the length against your enclosure)" },
@@ -126,6 +127,9 @@ export const lizardSheets = {
       { item: "calcium-plain-8oz", text: "First supply of [calcium]" },
       { item: "multivitamin-vitamin-a-3oz", text: "First supply of a [vitamin and mineral supplement] with true vitamin A" },
     ],
+    extras: [
+      { item: "humidifier-on-humidistat", products: ["humidifier-everlasting-comfort-6l", "humidistat-inkbird-ihc200"], text: "[Cool-mist humidifier] on a [humidistat], where the room cannot hold the overnight humidity" },
+    ],
   },
   'savannah-monitor': {
     animal: [150, 800],
@@ -133,7 +137,7 @@ export const lizardSheets = {
     necessities: [
       { item: "argentine-tegu-full-8x4x4ft-pvc-enclosure", text: "8x4x4 ft enclosure, ordered direct from a maker (a DIY build has to do the same four jobs)" },
       { item: "savannah-monitor-halogen-basking-bulb-cluster", qty: 2, text: "Two or more [halogen flood bulbs] for the basking cluster" },
-      { item: "savannah-monitor-substrate-multiple-bags-needed", text: "[Substrate] (multiple bags needed for 12-24+ inches of depth)" },
+      { item: "substrate-diy-topsoil-sand-8x4-deep", text: "Deep diggable substrate: a DIY mix of topsoil and play sand, 12 to 24 inches over the 8 by 4 foot floor (32 to 64 cubic feet, about 55 to 105 garden-store bags)" },
       { item: "argentine-tegu-heavy-duty-thermostat", text: "[Thermostat] rated for the basking cluster" },
       { item: "argentine-tegu-46in-high-output-uvb", text: "[T5 HO UVB in the 10 to 12% range], 46 inch (check the length against your enclosure)" },
       { item: "infrared-thermometer", text: "[Infrared thermometer] for surface readings" },
@@ -141,6 +145,7 @@ export const lizardSheets = {
       { item: "calcium-plain-8oz", text: "First supply of [calcium without D3]" },
       { item: "multivitamin-reptivite-2oz", text: "First supply of a [multivitamin]" },
       { item: "feeding-tongs-reptile", text: "[Feeding tongs]" },
+      { item: "rabbit-dig-box-storage-tub", qty: 2, text: "Two hides: [56 quart storage tubs] turned upside down with an entry cut in the side, one warm and one cool" },
     ],
     extras: [
       { item: "led-daylight-6500k", text: "[6500K daylight LED] (check the length against your enclosure)" },
@@ -158,11 +163,15 @@ export const lizardSheets = {
       { item: "uromastyx-dimming-thermostat-halogens", text: "[Dimming thermostat] for the halogens" },
       { item: "uromastyx-digital-thermometer-hygrometer", text: "[Digital thermometer and hygrometer]" },
       { item: "uromastyx-infrared-temperature-gun", text: "[Infrared temperature gun]" },
-      { item: "uromastyx-sand-10-lb-bag", text: "Sand, 10 lb bag (a 4x2 ft floor takes at least 2.5 cubic ft)" },
+      { item: "uromastyx-burrowing-mix-4x2", text: "Burrowing mix 4 inches deep over the 4 by 2 foot floor (2.5 cubic feet): about half play sand (three 0.5 cubic foot bags), 30% topsoil (one bag) and 20% [excavator clay] (four to five 10 lb bags)" },
       { item: "retes-stack-slate", text: "[Stacked slate] for the basking stack" },
       { item: "water-dish-shallow", text: "[Shallow water bowl], even though it will mostly go untouched" },
       { item: "kitchen-scale-grams", text: "[Gram scale] for monthly weights" },
       { item: "calcium-multivitamin-miner-all-2pack", text: "First supply of [calcium and multivitamin supplements]" },
+      { item: "cork-bark-hide-round", qty: 2, text: "Two [hides], one at each end of the gradient" },
+    ],
+    extras: [
+      { item: "daylight-led-16in", text: "[Bright daylight LED bar] beside the UVB (check the length against your enclosure)" },
     ],
   },
   'veiled-chameleon': {

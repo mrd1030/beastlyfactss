@@ -1721,9 +1721,9 @@ export const COST_ITEMS = {
     low: 85, high: 90, product: "glass-lid-48x18-center-brace", checked: '2026-10',
   },
   'glass-lid-10-gallon': {
-    label: "Glass lid for a 10 gallon tank",
+    label: "Glass canopy for a 10 gallon tank",
     spec: "20x10 in",
-    low: 15, high: 25, product: null, checked: '2026-10',
+    low: 35, high: 40, product: "glass-canopy-h2pro-20in", checked: '2026-10',
   },
   'fish-food-sinking-wafers': {
     label: "First supply of sinking wafers",
@@ -2303,6 +2303,40 @@ export const COST_ITEMS = {
     label: "Smooth, well-fitted lid for a 20 gallon long",
     spec: "30x12 in",
     low: 35, high: 45, product: null, checked: '2026-10',
+  },
+  // Garden-store prices checked 2026-10-06: topsoil about $2.70 to $3.45 per cu ft, cypress mulch about $1.85 per cu ft.
+  'substrate-diy-topsoil-cypress-8x4-deep': {
+    label: "Deep moisture-retentive DIY mix of organic topsoil and cypress mulch",
+    spec: "12 to 18 in over 8 x 4 ft, 32 to 48 cu ft",
+    low: 60, high: 170, product: null, checked: '2026-10',
+  },
+  // Garden-store prices checked 2026-10-06: topsoil about $2.70 to $3.45 per cu ft, play sand about $10 per cu ft (0.5 cu ft bags at $4.97).
+  'substrate-diy-topsoil-sand-8x4-deep': {
+    label: "Deep DIY mix of topsoil and play sand",
+    spec: "12 to 24 in over 8 x 4 ft, 32 to 64 cu ft",
+    low: 160, high: 450, product: null, checked: '2026-10',
+  },
+  // Three 0.5 cu ft bags of play sand ($15 to $20), one 0.75 cu ft bag of topsoil ($5) and four to five 10 lb bags of excavator clay ($14 each, Amazon 2026-10-06).
+  'uromastyx-burrowing-mix-4x2': {
+    label: "Burrowing mix of play sand, topsoil and excavator clay",
+    spec: "4 in over 4 x 2 ft, 2.5 cu ft",
+    low: 70, high: 95, product: "substrate-zoo-med-excavator-clay-10lb", checked: '2026-10',
+  },
+  'angelfish-led-36-48': {
+    label: "Full spectrum aquarium LED, 36 to 48 in",
+    spec: "27 W",
+    low: 55, high: 60, product: "aquarium-led-nicrew-classicled-plus-36-48", checked: '2026-10',
+  },
+  // Garden-store price checked 2026-10-06, about $2 to $3.45 a bag.
+  'topsoil-two-bags': {
+    label: "Two bags of pesticide-free organic topsoil",
+    spec: "2 x 0.75 cu ft",
+    low: 5, high: 10, product: null, checked: '2026-10',
+  },
+  'humidifier-on-humidistat': {
+    label: "Cool-mist humidifier on a humidistat",
+    spec: "",
+    low: 70, high: 80, product: "humidifier-everlasting-comfort-6l", checked: '2026-10',
   },
   'uv-index-meter': {
     label: 'UV index meter',

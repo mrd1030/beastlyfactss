@@ -138,6 +138,19 @@ Collected while moving every cost guide onto the shared price list; answered tog
 - Giant millipede: the hub's Manna Pro oyster shell (B000MD59TC) is "Currently unavailable" on Amazon. Replace it, or keep cuttlebone as the calcium row?
 - Rosy boa: the old table linked a Zilla screen cover, but the hub asks for a smooth lid, not a coarse screen. The lid row is unlinked at $35 to $45. Want me to source a smooth-lid product?
 
+**Answered 2026-10-06** (owner, with a Fable opinion):
+- Big-lizard substrate priced at full depth as DIY garden-store mixes: tegu topsoil and cypress, 32 to 48 cu ft, $60 to $170; savannah topsoil and play sand, 32 to 64 cu ft, $160 to $450; uromastyx the guide's 50/30/20 sand, topsoil and excavator clay mix for 2.5 cu ft, $70 to $95.
+- Tegu and savannah hides: no Amazon hide fits a 4 ft lizard (the 20 in "XXL" box has a 5.25 in entry); two upturned 56 qt storage tubs with an entry cut. Uromastyx gained two hides and a daylight LED extra.
+- Tegu UVB: no 46 in 12% kit is sold on Amazon; the tegu moved to the 36 in Arcadia 12% kit (the savannah keeps the 46 in 10.0). Tank-setup guide relinked.
+- Jackson's humidifier on a humidistat: an extra ($70 to $80); hub line softened to "where the room cannot hold the humidity".
+- Ackie substrate dam: folded into the enclosure row text, not priced.
+- Angelfish light: replaced with the NICREW ClassicLED Plus 36 to 48 in (B07XDWJZ9J), now a setup row ($55 to $60).
+- 10 gallon glass lid (guppy, platy, Amano shrimp): the Aqueon 20 in Versa Top is unavailable; replaced with the H2Pro 20 in glass canopy (B07GCBRB9Q), $35 to $40.
+- Millipede substrate: two bags of organic topsoil plus one Milli Mix bag.
+- Millipede oyster shell: replaced with Small Pet Select Flaked Oyster Shell 5 lb (B0BN39CRR1); the table keeps the cuttlebone row.
+- Rosy boa lid: linked the 30 in hinged glass lid, with the back strip left partly open for humidity under 60%.
+- Rows with a quantity now say the count in their text (the table never prints qty).
+
 ## Open questions, to answer during the cost checks (logged 2026-10-03)
 
 - Bearded dragon: the thermostat row is $40 to $80 but the linked dimming thermostat is $73 to $93 in the catalog; raise the row to $40 to $95?

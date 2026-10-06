@@ -62,7 +62,7 @@ export const smallMammalSheets = {
       { item: "degu-hideouts-tunnels", text: "[Hideouts and tunnels]" },
       { item: "degu-water-bottle-food-dishes", text: "[Water bottle and food dishes]" },
       { item: "green-iguana-digital-thermometer-hygrometer", text: "[Digital thermometer]" },
-      { item: "mouse-paper-based-bedding", qty: 2, text: "[Paper-based bedding], enough for 6 to 10 inches (check the quantity against your tank's floor)" },
+      { item: "mouse-paper-based-bedding", qty: 2, text: "Two bags of [paper-based bedding], enough for 6 to 10 inches (check the quantity against your tank's floor)" },
       { item: "guinea-pig-supply-grass-hay", text: "[Hay], worked into the bedding to hold tunnel shape" },
       { item: "bath-sand-small", text: "[Chinchilla sand] for a sand bath" },
     ],
