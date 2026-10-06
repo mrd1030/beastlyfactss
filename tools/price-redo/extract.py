@@ -168,6 +168,8 @@ for f in sorted(glob.glob('content/guides/*-cost-guide.mdx')):
         return 'yes' if t['stated'] == t['sum'] else 'NO'
 
     ar = [r for r in rows if r['animal'] == key]
+    have = set(re.findall(r'\$\s?(\d{1,3}(?:,\d{3})+|\d+)', s))
+    hub_miss = sorted({'$' + n for n in re.findall(r'\$\s?(\d{1,3}(?:,\d{3})+|\d+)', budget + ' ' + route) if n not in have})
     animals.append(dict(
         animal=key, group=hub['group'] if hub else '?', package='yes' if key in PACK else '', slug=slug,
         setup_h2=su['h2'] if su else '(no setup table found)', setup_sum=fmt(su['sum']) if su else '', setup_ok=ok(su),
@@ -177,6 +179,7 @@ for f in sorted(glob.glob('content/guides/*-cost-guide.mdx')):
         n_rows=len(ar), n_unlinked=sum(1 for r in ar if r['unlinked'] and r['kind'] != 'other'),
         n_round=sum(1 for r in ar if r['rounding']), n_cover=sum(1 for r in ar if r['covers']),
         n_buy_unlinked=sum(1 for b in buy if b['animal'] == key and not b['product']),
+        hub_miss=', '.join(hub_miss) if hub else 'no hub',
         n_buy_not_costed=sum(1 for b in buy if b['animal'] == key and b['in_cost'] == 'NO')))
 
 # other pages that price an animal

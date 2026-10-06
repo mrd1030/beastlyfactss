@@ -77,18 +77,19 @@ for a in animals:
     st, notes = STATUS.get(a['animal'], ('To do', ''))
     srows.append([a['animal'], a['group'], 'package (site only)' if a['package'] else 'full redo', st,
                   a['setup_h2'], a['setup_sum'], a['setup_ok'], a['monthly_h2'], a['monthly_sum'], a['monthly_ok'], a['annual_sum'],
-                  a['budget'], a['route'], a['n_rows'], a['n_unlinked'], a['n_round'], a['n_cover'], a['n_buy_unlinked'],
+                  a['budget'], a['route'], a.get('hub_miss', ''), a['n_rows'], a['n_unlinked'], a['n_round'], a['n_cover'], a['n_buy_unlinked'],
                   a['n_buy_not_costed'], nm.get(a['animal'], {}).get('other page', 0) + nm.get(a['animal'], {}).get('encyclopedia', 0),
                   ncons.get(a['animal'], 0), notes])
 ws = sheet(wb, 'Summary', ['Animal', 'Group', 'Scope', 'Status', 'Setup heading', 'Setup rows add to', 'Heading matches rows',
                            'Monthly heading', 'Monthly rows add to', 'Heading matches rows', 'Annual rows add to', 'Hub Budget row',
-                           'Hub cost route line', 'Cost rows', 'Rows with no gear link', 'Rows not in $5 steps', 'Rows below catalog price',
+                           'Hub cost route line', 'Hub figures missing from cost guide', 'Cost rows', 'Rows with no gear link', 'Rows not in $5 steps', 'Rows below catalog price',
                            'Hub buy list items with no link', 'Hub items with no cost row', 'Other pages pricing it', 'Open consistency rows', 'Notes'],
-           [20, 11, 14, 10, 34, 18, 12, 30, 18, 12, 18, 50, 50, 8, 9, 9, 9, 9, 9, 9, 9, 50], srows, first=True)
+           [20, 11, 14, 10, 34, 18, 12, 30, 18, 12, 18, 50, 50, 18, 8, 9, 9, 9, 9, 9, 9, 9, 50], srows, first=True)
 for row in ws.iter_rows(min_row=2):
     for c in (row[6], row[9]):
         c.fill = GREEN if c.value == 'yes' else (RED if c.value == 'NO' else PatternFill())
-    for c in row[14:21]:
+    row[13].fill = RED if row[13].value else GREEN
+    for c in row[15:22]:
         if isinstance(c.value, int) and c.value:
             c.fill = YEL
     row[3].fill = GREEN if row[3].value == 'Done' else (YEL if row[3].value == 'In progress' else PatternFill())
