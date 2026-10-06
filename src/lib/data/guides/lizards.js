@@ -162,7 +162,7 @@ export const lizardGuides = [
         { label: "Brumation", value: "Roughly 2 to 4 months of slowing, eating less, and burrowing from mid-September, even indoors. Harmless to skip, and handling is closed for that season.", source: "argentine-tegu-handling-guide" },
         { label: "Adult size", value: "3 to 5 feet (90 to 150 cm)." },
         { label: "Budget", value: "$200 to $500 for a black and white, blue, or Chacoan tegu, $700 to $1,200 for rare morphs. Setup often exceeds $1,000 to $3,000, then $40 to $100 a month. A routine exam is $50 to $135.", source: "argentine-tegu-cost-guide" },
-        { label: "Lifespan", value: "15 to 20 years, some past 30.", source: "argentine-tegu-cost-guide" },
+        { label: "Lifespan", value: "15 to 20 years on average with good care.", source: "argentine-tegu-cost-guide" },
         { label: "Salmonella", value: "Never clean the enclosure in a kitchen sink or a shared bathtub, and children under 5 do not touch reptiles.", source: "reptile-salmonella-hygiene-guide" },
         { label: "Power outage", value: "A healthy adult tolerates one cool night. A day or two below the normal night low is when cold stress and respiratory infection become real.", source: "reptile-emergency-plan-guide" },
       ],
