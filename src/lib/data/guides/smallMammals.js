@@ -31,7 +31,7 @@ export const smallMammalGuides = [
         { label: "Not eating", value: "A chinchilla off food for more than 12 to 24 hours should be seen the same day. No droppings at all for about 12 hours is treated as needing immediate attention.", source: "chinchilla-feeding-guide" },
         { label: "Handling", value: "Both hands, body fully supported against your chest (a football hold). Never lift by the tail tip or grab at the fur, which can trigger fur slip.", source: "chinchilla-handling-guide" },
         { label: "Budget", value: "$455 to $1,225 for a complete setup. Roughly $30 to $85 a month ongoing. An annual exotic vet checkup runs $50 to $100 or more.", source: "chinchilla-cost-guide" },
-        { label: "Adult size", value: "9 to 15 inches body, plus a 3 to 6 inch tail; 1 to 1.5 lbs." },
+        { label: "Adult size", value: "9 to 15 inches body, plus a 3 to 6 inch tail; about 0.9 to 1.5 lbs (400 to 700 g)." },
         { label: "Lifespan", value: "Commonly 10 to 20 years in captivity; wild longevity for this species has not been well studied." },
         { label: "Antibiotics", value: "Certain ordinary antibiotics can wipe out a chinchilla's gut bacteria and let toxin-producing Clostridium take over, a reaction that can kill within days. Raise the drug list with your vet before any antibiotic starts.", source: "small-mammal-enterotoxemia-guide" },
         { label: "Vet trips", value: "A ventilated, hard-sided small-animal carrier, ready before a trip is ever needed rather than bought the morning of an appointment.", source: "small-mammal-vet-visits-and-travel-guide" },
@@ -121,7 +121,7 @@ export const smallMammalGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal", value: "Restricted in fifteen jurisdictions and banned outright in eight, the most regulated of the small rodents sold as pets.", source: "degu-legal-guide" },
+        { label: "Legal", value: "Restricted or unsettled in eighteen jurisdictions and banned outright in eight, the most regulated of the small rodents sold as pets.", source: "degu-legal-guide" },
         { label: "Never one", value: "Two minimum, same-sex or neutered, ideally littermates. Isolation is linked to aggression and self-mutilation, a stronger statement than for most rodents.", source: "degu-enrichment-guide" },
         { label: "The cage", value: "About 28 by 18 by 28 inches minimum for a pair, tall and multi-level, in metal with bar spacing no more than half an inch. Solid shelves, not wire. Not a fish tank or glass vivarium: they cannot breathe in one.", source: "degu-tank-setup-guide" },
         { label: "Solid roof", value: "Their wild predators are birds of prey, so movement overhead frightens them. A solid roof rather than open mesh.", source: "degu-tank-setup-guide" },
@@ -162,7 +162,7 @@ export const smallMammalGuides = [
       { slug: "degu-handling-guide", line: "Never solo and never by the tail, what tail slip actually is, and the diurnal schedule that is most of why people pick this species." },
       { slug: "degu-health-issues-guide", line: "Diabetes as the defining risk, molar malocclusion as the most diagnosed dental disorder, bumblefoot from wire, and why orange teeth are the healthy ones." },
       { slug: "degu-enrichment-guide", line: "The research that found degus dust bathing more on soil a familiar degu used, what that makes the tray, and the priority order that follows." },
-      { slug: "degu-legal-guide", line: "Banned in eight jurisdictions and restricted in fifteen, and the list-drafting accident that explains almost every one of them." },
+      { slug: "degu-legal-guide", line: "Banned in eight jurisdictions and restricted or unsettled in eighteen, and the list-drafting accident that explains almost every one of them." },
     ],
     buyList: [
       "A tall multi-level cage, 28x18x28 inches at minimum for a pair",
@@ -583,7 +583,7 @@ export const smallMammalGuides = [
         { label: "Legal check", value: "Banned in California, which restricts the whole rodent order, and in Hawaii. Legal in the other 50 of 52 jurisdictions.", source: "gerbil-legal-guide" },
         { label: "Budget", value: "$5 to $50 each and you need at least two, roughly $145 to $385 to set up a pair, about $10 to $20 a month.", source: "gerbil-cost-guide" },
         { label: "Lifespan", value: "2 to 3 years.", source: "gerbil-cost-guide" },
-        { label: "Adult size", value: "4 to 5 inches (10 to 13 cm) body, plus a furred tail of similar length; 2 to 4 oz." },
+        { label: "Adult size", value: "4 to 5 inches (10 to 13 cm) body, plus a furred tail of similar length; about 2.5 to 4.6 oz (70 to 130 g)." },
       ],
     },
     emergencyCard: {
@@ -1007,7 +1007,7 @@ export const smallMammalGuides = [
         { label: "Portion and timing", value: "Roughly 15 to 20% of body weight daily, in the evening, since gliders are nocturnal. Adult males weigh 100 to 160 grams, females 80 to 130. Fruit stays a small portion.", source: "sugar-glider-feeding-guide" },
         { label: "Calcium", value: "A 2:1 calcium-to-phosphorus target and a glider-specific calcium and D3 multivitamin, not a reptile vitamin, because fruit and insects run calcium-poor. Dust the insects.", source: "sugar-glider-feeding-guide" },
         { label: "Foods to avoid", value: "Chocolate, dairy, canned fruit, yogurt drops, peanut butter, and candy. Spinach and beets, the highest-oxalate produce, since oxalates block calcium absorption.", source: "sugar-glider-feeding-guide" },
-        { label: "Bonding", value: "Not direct handling. A glider bonds by being carried against your body in a pouch until it learns your scent, after several days of settling in, then one to two hours a day. Keep the room above roughly 68°F: they chill easily.", source: "sugar-glider-handling-guide" },
+        { label: "Bonding", value: "Not direct handling. A glider bonds by being carried against your body in a pouch until it learns your scent, after several days of settling in, then one to two hours a day. Keep the room at about 75°F or warmer: they chill easily.", source: "sugar-glider-handling-guide" },
         { label: "Crabbing", value: "A loud buzzing chatter means frightened. A restrained glider bites, and the bite can be deep.", source: "sugar-glider-handling-guide" },
         { label: "Budget", value: "$200 to $500 each and you need two, so $500 to $1,200 for a pair with setup and $30 to $60 a month. An exotic vet visit is $75 to $200, neutering $100 to $200, and at least $200 in reserve.", source: "sugar-glider-cost-guide" },
         { label: "Lifespan", value: "10 to 15 years in captivity.", source: "sugar-glider-cost-guide" },

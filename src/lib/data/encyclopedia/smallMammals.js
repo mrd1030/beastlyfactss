@@ -6,7 +6,7 @@ export const smallMammalEncyclopedia = [
       overview: "Chinchillas are native to the high-altitude Andes mountains of South America, where they inhabit rocky terrain at elevations up to 14,000 feet. In the wild they are critically endangered: their extraordinarily dense fur (up to 60 hairs per follicle, versus 2-3 for humans) has been prized for centuries and nearly led to their extinction. Most pet chinchillas descend from a founding population of just 13 animals brought to the United States in 1927.",
       origin: "Andes mountains of Chile (formerly also Bolivia, Peru, Argentina)",
       habitat: "Rocky, arid Andean mountains at high altitude",
-      adultSize: "9-15 inches (23-38 cm) body, plus a 3-6 inch tail; 1-1.5 lbs",
+      adultSize: "9-15 inches (23-38 cm) body, plus a 3-6 inch tail; about 0.9-1.5 lbs (400-700 g)",
       wildDiet: "Grasses, seeds, leaves, bark, and insects",
       wildLifespan: "Not documented (the widely quoted 10-20 years is a captive range; wild longevity for this species has not been studied)",
       conservation: "Critically Endangered (IUCN)",
