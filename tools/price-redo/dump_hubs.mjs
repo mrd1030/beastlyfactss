@@ -29,7 +29,7 @@ for (const [g, sheet] of Object.entries(COST_SHEETS)) {
   out.sheets[g] = {};
   for (const sec of ['necessities', 'extras']) {
     out.sheets[g][sec] = (sheet[sec] || []).map(r => {
-      const it = COST_ITEMS[r.item]; const prod = it.product && plinks[it.product];
+      const it = r.item ? COST_ITEMS[r.item] : { label: r.text, product: null }; const prod = it.product && plinks[it.product];
       return { item: (r.text || it.label).replace(/[\[\]]/g, ''), price: costs.formatRange(costs.rowRange(r), ' - '), href: prod ? prod.link : '', product: prod ? prod.product : '' };
     });
   }

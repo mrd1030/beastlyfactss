@@ -33,14 +33,14 @@ never invented. Where no price exists, say so and ask the owner.
 |---|---|---|---|
 | Goldfish | ✅ 2026-10-03 | ❌ needs fix | Filter row now $50 to $85 (200+ gallons an hour), setup $145 to $325 (was $105 to $270). Book budget page and profile still say $105 to $270. Branch claude/goldfish-filter. |
 | Betta fish | ✅ 2026-10-03 | ✅ no change | All totals, hub lines and links matched. |
-| Budgie | ◐ hub only | ❌ needs fix | Buy list fixed and linked (branch claude/budgie-rebuild). Cost table still has no rows for gram scale ($30 to $40), cuttlebone ($8 to $12), UV light (no catalog price). Waiting on the owner. |
-| Lovebird | ◐ hub only | ❌ needs fix | Buy list fixed and linked (branch claude/lovebird-rebuild). Cost table still has no rows for dishes ($10 to $18), bath ($12 to $16), gram scale ($30 to $40), UV light (no catalog price). Waiting on the owner. |
-| Cockatiel | ◐ rebuild | ✅ matches site | Rebuilt 3.0 on claude/cockatiel-rebuild: setup $295 to $601, book matches. Hub buy list items with no cost row: cuttlebone or mineral block, nightlight or cage cover. No gear available: the bird, annual total. |
+| Budgie | ◐ hub only | ❌ needs fix | Buy list fixed and linked (branch claude/budgie-rebuild). Cost table still has no rows for gram scale ($30 to $40), cuttlebone ($8 to $12), UV light (no catalog price). Waiting on the owner. Site: moved onto the shared price list 2026-10-06 with every figure unchanged ($315 to $750, bird included). |
+| Lovebird | ◐ hub only | ❌ needs fix | Buy list fixed and linked (branch claude/lovebird-rebuild). Cost table still has no rows for dishes ($10 to $18), bath ($12 to $16), gram scale ($30 to $40), UV light (no catalog price). Waiting on the owner. Site: moved onto the shared price list 2026-10-06 with every figure unchanged ($275 to $600). |
+| Cockatiel | ◐ rebuild | ✅ matches site | Rebuilt 3.0 on claude/cockatiel-rebuild: setup $295 to $601, book matches. Hub buy list items with no cost row: cuttlebone or mineral block, nightlight or cage cover. No gear available: the bird, annual total. Site: moved onto the shared price list 2026-10-06 with every figure unchanged ($370 to $765, bird included). |
 | Tarantula | ◐ rebuild | ✅ matches site | Rebuilt 3.0 on claude/tarantula-rebuild: setup $50 to $170 ($75 to $270 with the spider), book matches. Unlinked buy list: acrylic lid (no product), feeder insects (product has no covers). Thermometer/hygrometer links but has no cost row. No gear available: the spider, annual total. |
 | Rabbit | ☐ | ☐ | Cost guide re-totaled on claude/rabbit-rebuild (setup $125 to $197, monthly $62 to $135). |
 | Guinea pig | ☐ | ☐ | Cost guide re-totaled on claude/guinea-pig-rebuild (setup $158 to $204). |
 | Hamster | ☐ | ☐ | On claude/hamster-rebuild. |
-| Cockatoo | ☐ | ☐ | Found in the 1.4 light pass: the book's budget page itemizes setup at $2,195 to $7,340 (play stand, purifier, carrier, up to a $3,500 Moluccan); the site's first-year table says $1,975 to $6,300 before toys, bird $700 to $3,000. Scopes differ; the book's disagree page explains it. |
+| Cockatoo | ☐ | ☐ | Found in the 1.4 light pass: the book's budget page itemizes setup at $2,195 to $7,340 (play stand, purifier, carrier, up to a $3,500 Moluccan); the site's first-year table says $1,975 to $6,300 before toys, bird $700 to $3,000. Scopes differ; the book's disagree page explains it. Site: moved onto the shared price list 2026-10-06 with every figure unchanged ($2,270 to $6,410; gear $1,430 to $3,200). |
 | Bearded dragon | ☐ | ☐ | |
 | Leopard gecko | ☐ | ☐ | |
 | Crested gecko | ☐ | ☐ | |
@@ -68,11 +68,11 @@ Same checks 1 to 6. A change here touches the guide and the hub only.
 | Box turtle | ☐ |
 | Bristlenose pleco | ☐ |
 | California kingsnake | ☐ |
-| Canary | ☐ |
+| Canary | ✅ 2026-10-06, shared price list: setup $285 to $460 (was roughly $195 to $345, four rows). Added the must-haves the hub lists: first pellets and egg food (Amazon $13.64 for the Higgins 3 pack), cage cover, gram scale, carrier; cuttlebone now the single 5 in piece; the two-cage line no longer states a figure. Prevue F040 flight cage confirmed 31 x 20.5 in, 1/2 in bars. |
 | Cardinal tetra | ☐ |
 | Cherry shrimp | ☐ |
 | Chinchilla | ☐ |
-| Conure | ☐ |
+| Conure | ✅ 2026-10-06, shared price list: setup $315 to $530 before the bird (was roughly $230 to $470). The bird row left the setup table. The bundled dishes, bottle, cover, food and cuttlebone row split into dishes, cage cover, cuttlebone and first pellets; gram scale and carrier added; UVB on the shared avian kit item. Unlinked as wrong or below spec: the sugar glider pouch used as a bird tent (cost, setup and health guides; its "Snuggle pouch or bird tent" covers string removed) and the parakeet perch set. No gear available: a 24x24x30 cage with 1/2 to 5/8 in bars (the F040 is 20.5 in deep), conure perches, a bird tent. |
 | Corn snake | ☐ |
 | Corydoras catfish | ☐ |
 | Degu | ☐ |
@@ -103,10 +103,10 @@ Same checks 1 to 6. A change here touches the guide and the hub only.
 | Neon tetra | ☐ |
 | Oscar fish | ☐ |
 | Pacman frog | ☐ |
-| Parrotlet | ☐ |
+| Parrotlet | ✅ 2026-10-06, shared price list: setup $295 to $495 (was roughly $210 to $365). Added first pellets and millet, cage cover, gram scale, carrier; toys and cuttlebone rows now cover their catalog prices; perches are the CZWESTC set the hub links. No gear available: a cage with 1/4 in bars. |
 | Platy | ☐ |
 | Praying mantis | ☐ |
-| Quaker parakeet | ☐ |
+| Quaker parakeet | ☐ Held for the owner (2026-10-06): the cost guide prices a dated "worked example" shopping list (a 31 x 20 x 53 cage it calls too shallow, exact sale and list prices) instead of a setup table; converting means rewriting that section. |
 | Rat | ☐ |
 | Red-eared slider | ☐ |
 | Red-footed tortoise | ☐ |
@@ -121,7 +121,7 @@ Same checks 1 to 6. A change here touches the guide and the hub only.
 | Uromastyx | ☐ |
 | Veiled chameleon | ☐ |
 | Zebra danio | ☐ |
-| Zebra finch | ☐ |
+| Zebra finch | ✅ 2026-10-06, shared price list: setup $270 to $550 with the pair (was roughly $225 to $465). Added first pellets and egg food, clamp-on dishes, gram scale; cuttlebone row covers the Penn-Plax 2 pack. The 25 lb finch seed sack is not a setup item. No gear available: a cage with 3/8 in bars. |
 
 ## Open questions, to answer during the cost checks (logged 2026-10-03)
 

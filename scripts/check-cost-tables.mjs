@@ -41,12 +41,19 @@ const used = new Set();
 for (const [guide, sheet] of Object.entries(COST_SHEETS)) {
   for (const section of ['necessities', 'extras']) {
     for (const row of sheet[section] || []) {
+      if (!row.item) {
+        // One-off row: the animal itself, a first exam. Needs its own text and figures.
+        if (!row.text || row.low == null || row.high == null || row.low > row.high || row.low % 5 || row.high % 5) {
+          errors.push(`sheet ${guide}: one-off row needs text and a $5-step low and high (${JSON.stringify(row)})`);
+        }
+        continue;
+      }
       if (!COST_ITEMS[row.item]) { errors.push(`sheet ${guide}: unknown item "${row.item}"`); continue; }
       used.add(row.item);
       if (row.low != null) notes.push(`sheet ${guide}: "${row.item}" overrides its price (${row.why || 'no reason given'})`);
     }
   }
-  for (const k of ['animal', 'monthly', 'vetExam']) {
+  for (const k of ['animal', 'monthly', 'vetExam', 'annual']) {
     const v = sheet[k];
     if (v && (v.length !== 2 || v[0] > v[1])) errors.push(`sheet ${guide}: ${k} must be [low, high]`);
   }
@@ -90,6 +97,11 @@ const totals = Object.keys(COST_SHEETS).map((guide) => {
 
 for (const f of files) {
   const raw = fs.readFileSync(f, 'utf8');
+  // "a %%setup:x%%" reads "a $800" today and "a $1,100" wrong tomorrow: the
+  // article depends on the number, so it never sits right before one.
+  for (const m of raw.matchAll(/\b(a|an) %%[a-z]+:[a-z0-9-]+%%/gi)) {
+    errors.push(`${f}: "${m[0]}": reword so no "a" or "an" sits right before a placeholder`);
+  }
   for (const m of raw.matchAll(COST_TOKEN)) {
     if (m[1] === 'price') used.add(m[2]);
     try { resolveCostTokens(m[0]); } catch (e) { errors.push(`${f}: ${e.message}`); }

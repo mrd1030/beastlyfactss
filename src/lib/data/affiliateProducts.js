@@ -675,7 +675,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$10–$18",
     description: "Soft hanging pouch that gives small pets a cozy place to sleep, hide, and feel secure.",
-    covers: ["Bonding pouch", "Multiple sleeping pouches", "Snuggle pouch or bird tent", "A bonding pouch you can carry against your body", "Sleeping pouch, positioned high in the cage"],
+    covers: ["Bonding pouch", "Multiple sleeping pouches", "A bonding pouch you can carry against your body", "Sleeping pouch, positioned high in the cage"],
     pets: ["small-mammals", "birds"],
   },
   {
@@ -1324,7 +1324,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$10–$18",
     description: "Clamp-on feeding cup that keeps food or water off the cage floor and easy to refill.",
-    covers: ["Food and water dishes"],
+    covers: ["Clamp-on food and water dishes", "Food and water dishes"],
     altGroup: "bird-feeding-dishes",
     pets: ["birds", "reptiles-amphibians", "small-mammals"],
   },

@@ -24,6 +24,7 @@ const DEFAULT_HEADERS = {
 // "[Dimming thermostat] for the basking bulb": the bracketed words become the
 // link to the item's product. With no product the brackets just drop away.
 function rowText(row) {
+  if (!row.item) return row.text;
   const item = COST_ITEMS[row.item];
   const text = row.text || (item.product ? `[${item.label}]` : item.label);
   const product = item.product && PRODUCTS[item.product];
@@ -46,7 +47,7 @@ export default function CostTable({ guide, section = 'necessities', headers }) {
   if (!sheet || !sheet[section]) return null;
   const rows = sheet[section].map((row) => [rowText(row), formatRange(rowRange(row), ' - ')]);
   const footer = rows.length > 1
-    ? [FOOTER_LABELS[section] || 'Total', formatRange(sectionTotal(guide, section), ' - ')]
+    ? [(section === 'necessities' && sheet.totalLabel) || FOOTER_LABELS[section] || 'Total', formatRange(sectionTotal(guide, section), ' - ')]
     : undefined;
   return <ComparisonTable headers={headers || DEFAULT_HEADERS[section] || DEFAULT_HEADERS.necessities} rows={rows} footer={footer} />;
 }

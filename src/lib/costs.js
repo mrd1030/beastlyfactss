@@ -13,6 +13,8 @@ export function formatRange([low, high], sep = ' to ') {
 }
 
 export function rowRange(row) {
+  // A one-off row (the animal itself, a first exam) carries its own figures
+  // and no item; so does a row that overrides its item's price.
   if (row.low != null) return [row.low, row.high];
   const item = COST_ITEMS[row.item];
   if (!item) throw new Error(`costSheets: unknown item "${row.item}"`);
@@ -39,7 +41,13 @@ export function costFigure(kind, key) {
   const sheet = COST_SHEETS[key];
   if (!sheet) throw new Error(`cost placeholder: no sheet for "${key}"`);
   if (kind === 'setup') return sectionTotal(key, 'necessities');
-  const field = { animal: 'animal', monthly: 'monthly', vet: 'vetExam' }[kind];
+  // The gear alone: the setup rows that are items, without one-off rows such
+  // as the animal itself or a first exam.
+  if (kind === 'gear') {
+    return (sheet.necessities || []).filter((r) => r.item).reduce(
+      ([low, high], r) => { const [l, h] = rowRange(r); return [low + l, high + h]; }, [0, 0]);
+  }
+  const field = { animal: 'animal', monthly: 'monthly', vet: 'vetExam', annual: 'annual' }[kind];
   if (!field || !sheet[field]) throw new Error(`cost placeholder: "${kind}" not set for "${key}"`);
   return sheet[field];
 }
@@ -49,13 +57,13 @@ export function costFigure(kind, key) {
 // and wherever a script reads the raw file, so headings, titles, FAQs and the
 // prerendered HTML all carry the plain figure. An unknown placeholder throws,
 // which fails the build rather than printing the token.
-export const COST_TOKEN = /%%(setup|animal|monthly|vet|price):([a-z0-9-]+)%%/g;
+export const COST_TOKEN = /%%(setup|gear|animal|monthly|vet|annual|price):([a-z0-9-]+)%%/g;
 
 export function resolveCostTokens(text) {
   if (typeof text !== 'string' || !text.includes('%%')) return text;
   // "about %%price:x%%" stays one "about" when the figure is a single price,
   // which formatRange already prints as "about $N".
-  return text.replace(/(about )?%%(setup|animal|monthly|vet|price):([a-z0-9-]+)%%/g, (_, about, kind, key) => {
+  return text.replace(/(\babout )?%%(setup|gear|animal|monthly|vet|annual|price):([a-z0-9-]+)%%/g, (_, about, kind, key) => {
     const figure = formatRange(costFigure(kind, key));
     return about && !figure.startsWith('about') ? about + figure : figure;
   });
@@ -71,7 +79,7 @@ export function costTableProducts(text) {
     tables.push({
       guide: m[1],
       section: m[2],
-      products: rows.map((r) => COST_ITEMS[r.item] && COST_ITEMS[r.item].product).filter(Boolean),
+      products: rows.map((r) => r.item && COST_ITEMS[r.item] && COST_ITEMS[r.item].product).filter(Boolean),
     });
   }
   return tables;
