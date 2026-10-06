@@ -456,7 +456,7 @@ export default function CarePackageLibrary() {
         )}
 
         <p className="text-xs text-muted-foreground font-body mt-8">
-          Questions about format, printing or refunds are answered on the{' '}
+          {'Questions about format, printing or refunds are answered on the '}
           <Link to="/care-packages/faq/" className="underline hover:text-foreground">care package FAQ</Link>.
         </p>
       </div>

@@ -548,7 +548,7 @@ export default function GuideDetail() {
                   const costRoute = guide.routes.find(r => /-(cost-guide|shopping-list)$/.test(r.slug));
                   return costRoute ? (
                     <p className="text-xs text-muted-foreground font-body mt-4">
-                      Prices and the reasoning behind each item are in{' '}
+                      {'Prices and the reasoning behind each item are in '}
                       <Link to={`/blog/${costRoute.slug}/`} state={hubReturn} className="font-semibold text-secondary hover:underline">{titleOf(costRoute.slug)}</Link>.
                     </p>
                   ) : null;
