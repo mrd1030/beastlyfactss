@@ -591,7 +591,7 @@ export const geckoGuides = [
         { label: "Temperature", value: "Basking 90 to 105F, cooler zone 80 to 85F, and nights at 75 to 80F, warmer than many homes run, from a ceramic emitter or deep heat projector on a thermostat. This species needs night heat more than most.", source: "tokay-gecko-tank-setup-guide" },
         { label: "Humidity", value: "60 to 80%, from daily misting, 2 to 3 inches of coconut fiber under moss and leaf litter, and airflow so it does not mold. No pine or cedar.", source: "tokay-gecko-tank-setup-guide" },
         { label: "Lighting", value: "Survivable without UVB on a D3-supplemented diet, but a 5% forest-strength T5 has real benefit, replaced every 6 to 12 months. Nights genuinely dark.", source: "tokay-gecko-tank-setup-guide" },
-        { label: "Diet", value: "Gut-loaded crickets, dubia, and similar, nothing wider than the head, dusted with calcium, plain under UVB and with D3 only if there is none. Juveniles daily, adults every other day, with dechlorinated water in a shallow dish. A powdered fruit diet is a treat at most, no more than twice a month.", source: "tokay-gecko-tank-setup-guide" },
+        { label: "Diet", value: "Gut-loaded crickets, dubia, and similar, nothing wider than the head, dusted with calcium, plain under UVB and with D3 only if there is none. Juveniles daily, adults every other day, with dechlorinated water in a shallow dish. A powdered fruit diet is a treat at most, no more than twice a month.", source: "tokay-gecko-feeding-guide" },
         { label: "Gut-loading", value: "24 to 72 hours, 48 the most cited, and fed out within a few hours of coming off the gut-load, since insects void their gut once removed from food.", source: "gut-loading-feeder-insects-guide" },
         { label: "Handling", value: "A tokay that barks, gapes, or bites gets no sessions: this is a hands-off terrarium subject. One that tolerates a flat hand gets a few minutes sitting unrestrained on it.", source: "tokay-gecko-handling-guide" },
         { label: "If it bites", value: "Do not pull; tugging tightens the grip. Set it down with all four feet on a surface near a retreat and wait. Never lift by the tail, which detaches and regrows in about 30 days.", source: "tokay-gecko-handling-guide" },
@@ -646,7 +646,7 @@ export const geckoGuides = [
       "Reptile vet contact",
     ],
     faqs: [
-      { q: "What temperatures does a tokay gecko need?", a: "A basking area of 90 to 105F, a cooler zone of 80 to 85F, and nighttime temperatures staying warmer than many homes naturally run, 75 to 80F, not dropping below about 70F." },
+      { q: "What temperatures does a tokay gecko need?", a: "A basking area of 90 to 105F, a cooler zone of 80 to 85F, and nighttime temperatures staying warmer than many homes naturally run, 75 to 80F, never below 75F." },
       { q: "Does buying a captive-bred tokay gecko make it easier to handle?", a: "It helps, and meaningfully. A captive-bred tokay runs calmer and more tolerant than a wild-caught one, though most keep a real baseline of defensiveness. Even a settled individual is a display animal, not a handling pet." },
       { q: "Are tokay geckos legal in the US?", a: "In 48 of 52 jurisdictions, with no permit. Only Hawaii and the District of Columbia bar them, West Virginia asks for an importation permit, and Minnesota attaches conditions that apply to every lizard rather than to this species specifically." },
     ],

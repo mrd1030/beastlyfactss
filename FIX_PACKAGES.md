@@ -42,7 +42,6 @@ Live editions (2026-10-04): bearded dragon 4.1; leopard gecko, crested gecko, ba
 - Note: ReptiFiles' heights for the 2.5% ShadeDweller Max sit closer than Arcadia's chart implies; Arcadia's general guide gives a UVI of 2 to 3 where the book follows ReptiFiles' lower figure. No change planned.
 
 ### Crested gecko (3.1, `crested-gecko-src`)
-- [ ] Book: a pair needs "double the space of an 18x18x36" (`pages_02` line 44). The site's single-adult minimum is 18x18x24, so double that is about 15,500 cubic inches (cost guide fixed 2026-10-05). Match on the next edit.
 - [ ] Glossary: IUCN (`pages_07.html:40`) and VCA (`:58`) out; CITES (`:12`) moves to the law page mini glossary.
 - [ ] Gear: the fogger is left unlinked as the "or" alternative to the spray bottle (cost guide setup row).
 - [ ] Book: `pages_06.html:120` "If the room holds the range, skip the bulb and thermostat": add that the thermometer stays either way, as a safety check (owner, 2026-10-05; PetMD and Chicago Exotics both keep thermometers in with or without heat). The equipment page (`pages_02.html:92`) and daily check (`pages_06.html:342`) already have it, so this is one clause on the skip line.
