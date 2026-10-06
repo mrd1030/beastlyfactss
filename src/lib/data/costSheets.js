@@ -25,6 +25,7 @@
 // files in ./guides/; this file only merges them.
 import { lizardSheets } from './costSheets/lizards.js';
 import { birdSheets } from './costSheets/birds.js';
+import { smallMammalSheets } from './costSheets/smallMammals.js';
 import { invertebrateSheets } from './costSheets/invertebrates.js';
 import { fishSheets } from './costSheets/fish.js';
 import { amphibianSheets } from './costSheets/amphibians.js';
@@ -35,6 +36,7 @@ import { geckoSheets } from './costSheets/geckos.js';
 export const COST_SHEETS = {
   ...lizardSheets,
   ...birdSheets,
+  ...smallMammalSheets,
   ...invertebrateSheets,
   ...fishSheets,
   ...amphibianSheets,

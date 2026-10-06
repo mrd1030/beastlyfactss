@@ -48,12 +48,14 @@ function rowText(row) {
 
 // A cost guide table drawn from the animal's sheet in costSheets.js, so its
 // prices and total always match the master list. Use in MDX as
-// <CostTable guide="ackie-monitor" section="necessities" />.
-export default function CostTable({ guide, section = 'necessities', headers }) {
+// <CostTable guide="ackie-monitor" section="necessities" />. total={false}
+// drops the footer, for a table of swap-in rows whose own sum means nothing
+// (the hamster's Syrian rows, which replace the dwarf's).
+export default function CostTable({ guide, section = 'necessities', headers, total = true }) {
   const sheet = COST_SHEETS[guide];
   if (!sheet || !sheet[section]) return null;
   const rows = sheet[section].map((row) => [rowText(row), formatRange(rowRange(row), ' - ')]);
-  const footer = rows.length > 1
+  const footer = total && rows.length > 1
     ? [(section === 'necessities' && sheet.totalLabel) || FOOTER_LABELS[section] || 'Total', formatRange(sectionTotal(guide, section), ' - ')]
     : undefined;
   return <ComparisonTable headers={headers || DEFAULT_HEADERS[section] || DEFAULT_HEADERS.necessities} rows={rows} footer={footer} />;

@@ -1873,6 +1873,411 @@ export const COST_ITEMS = {
     spec: "30x12 in",
     low: 20, high: 30, product: null, checked: '2026-10',
   },
+  'chinchilla-multi-level-cage-solid': {
+    label: "Multi-level cage with solid floors",
+    spec: "",
+    low: 150, high: 400, product: "chinchilla-cage-midwest-critter-nation-double", checked: '2026-10',
+  },
+  'chinchilla-dust-bath-house-plus': {
+    label: "Dust bath house (plus dust)",
+    spec: "",
+    low: 15, high: 50, product: "chinchilla-dust-bath-house", checked: '2026-10',
+  },
+  'chinchilla-exercise-wheel-15-larger': {
+    label: "Exercise wheel (15\" or larger)",
+    spec: "",
+    low: 30, high: 120, product: "exercise-wheel-chinchilla", checked: '2026-10',
+  },
+  'chinchilla-ledges-hides-water-bottle': {
+    label: "Ledges, hides, water bottle, dish, chews, and bedding",
+    spec: "",
+    low: 75, high: 150, product: null, checked: '2026-10',
+  },
+  'degu-tall-multi-level-cage': {
+    label: "Tall multi-level cage, 28x18x28 in minimum for a pair",
+    spec: "",
+    low: 280, high: 375, product: "chinchilla-cage-midwest-critter-nation-double", checked: '2026-10',
+  },
+  'degu-12-14-solid-exercise': {
+    label: "12-14 in solid exercise wheel",
+    spec: "",
+    low: 30, high: 75, product: "exercise-wheel-chinchilla", checked: '2026-10',
+  },
+  'degu-dust-bath-house': {
+    label: "Dust bath house",
+    spec: "",
+    low: 15, high: 30, product: "chinchilla-dust-bath-house", checked: '2026-10',
+  },
+  'degu-hideouts-tunnels': {
+    label: "Hideouts and tunnels",
+    spec: "",
+    low: 5, high: 30, product: "small-pet-hideout-igloo", checked: '2026-10',
+  },
+  'degu-water-bottle-food-dishes': {
+    label: "Water bottle and food dishes",
+    spec: "",
+    low: 5, high: 15, product: "small-mammal-bowl-kaytee-vege-t-bowl", checked: '2026-10',
+  },
+  'ferret-30x24x48-multi-level-cage': {
+    label: "30x24x48 in multi-level cage",
+    spec: "",
+    low: 100, high: 360, product: "chinchilla-cage-midwest-critter-nation-double", checked: '2026-10',
+  },
+  'ferret-fleece-hammocks-sleep-sacks': {
+    label: "Fleece hammocks and sleep sacks",
+    spec: "",
+    low: 10, high: 40, product: "ferret-hammock-niteangel-nap-sack", checked: '2026-10',
+  },
+  'ferret-litter-box': {
+    label: "Litter box",
+    spec: "",
+    low: 10, high: 30, product: "litter-box", checked: '2026-10',
+  },
+  'ferret-toys-tunnels-dig-boxes': {
+    label: "Toys, tunnels, and dig boxes",
+    spec: "",
+    low: 25, high: 60, product: "small-mammal-play-pack-seagrass", checked: '2026-10',
+  },
+  'ferret-spay-neuter-initial-vaccinations': {
+    label: "Spay/neuter + initial vaccinations (if needed)",
+    spec: "",
+    low: 150, high: 300, product: null, checked: '2026-10',
+  },
+  'flying-squirrel-tall-aviary-style-cage': {
+    label: "Tall aviary-style cage, 24x24x36 in minimum, bars no wider than 1/2 in",
+    spec: "",
+    low: 120, high: 300, product: null, checked: '2026-10',
+  },
+  'flying-squirrel-solid-axle-free-exercise': {
+    label: "Solid, axle-free exercise wheel (12 in)",
+    spec: "",
+    low: 30, high: 60, product: "hedgehog-wheel-exotic-nutrition-silent-runner-12in-wide", checked: '2026-10',
+  },
+  'flying-squirrel-multiple-sleeping-pouches-nest': {
+    label: "Multiple sleeping pouches or a nest box",
+    spec: "",
+    low: 10, high: 50, product: "ferret-hammock-niteangel-nap-sack", checked: '2026-10',
+  },
+  'flying-squirrel-branches-ropes-climbing-structure': {
+    label: "Branches, ropes, and climbing structure",
+    spec: "",
+    low: 15, high: 50, product: "climbing-branch-mopani-wood", checked: '2026-10',
+  },
+  'gerbil-secure-mesh-lid': {
+    label: "Secure mesh lid",
+    spec: "",
+    low: 35, high: 45, product: "screen-cover-zilla-30x12", checked: '2026-10',
+  },
+  'gerbil-solid-exercise-wheel-10': {
+    label: "Solid exercise wheel (10-12 in)",
+    spec: "",
+    low: 20, high: 40, product: "hamster-wheel-niteangel-super-silent-10in", checked: '2026-10',
+  },
+  'guinea-pig-c-c-cage-similar': {
+    label: "C&C cage or similar, sized for a pair",
+    spec: "",
+    low: 100, high: 140, product: "cc-cage-guinea-pig", checked: '2026-10',
+  },
+  'guinea-pig-bag-paper-bedding': {
+    label: "First bag of paper bedding",
+    spec: "",
+    low: 15, high: 15, product: "bedding-kaytee-clean-cozy-white", checked: '2026-10',
+  },
+  'guinea-pig-hay-rack': {
+    label: "Hay rack",
+    spec: "",
+    low: 5, high: 15, product: "hay-manger-kaytee-large", checked: '2026-10',
+  },
+  'guinea-pig-supply-grass-hay': {
+    label: "First supply of grass hay",
+    spec: "",
+    low: 15, high: 30, product: "timothy-hay-small-pets", checked: '2026-10',
+  },
+  'guinea-pig-bag-vitamin-c-fortified': {
+    label: "First bag of vitamin-C-fortified guinea pig pellets, 5 lb",
+    spec: "",
+    low: 10, high: 20, product: null, checked: '2026-10',
+  },
+  'guinea-pig-bottle-vitamin-c-supplement': {
+    label: "First bottle of vitamin C supplement, a backup to fresh food",
+    spec: "",
+    low: 5, high: 15, product: "guinea-pig-vitamin-c-supplement", checked: '2026-10',
+  },
+  'guinea-pig-heavy-food-dish': {
+    label: "Heavy food dish",
+    spec: "",
+    low: 5, high: 10, product: "small-mammal-bowl-kaytee-vege-t-bowl", checked: '2026-10',
+  },
+  'guinea-pig-water-bottle': {
+    label: "Water bottle",
+    spec: "",
+    low: 15, high: 15, product: "water-bottle-choco-nose-no-drip", checked: '2026-10',
+  },
+  'guinea-pig-wooden-hideout-window': {
+    label: "Wooden hideout with a window",
+    spec: "",
+    low: 25, high: 30, product: "guinea-pig-hideout-niteangel-wood-house", checked: '2026-10',
+  },
+  'guinea-pig-second-hide-seagrass-tunnel': {
+    label: "A second hide and a seagrass tunnel, so neither of a pair is cornered",
+    spec: "",
+    low: 40, high: 60, product: "small-mammal-play-pack-seagrass", checked: '2026-10',
+  },
+  'guinea-pig-safe-chew-toys-more': {
+    label: "Safe chew toys, more than one in a shared cage",
+    spec: "",
+    low: 10, high: 20, product: "chew-guinea-pig-natural-sticks", checked: '2026-10',
+  },
+  'guinea-pig-hard-sided-carrier': {
+    label: "Hard-sided carrier",
+    spec: "",
+    low: 30, high: 35, product: "rabbit-carrier-amazon-basics-top-load", checked: '2026-10',
+  },
+  'guinea-pig-kitchen-scale-reads-grams': {
+    label: "Kitchen scale that reads in grams",
+    spec: "",
+    low: 5, high: 15, product: "gram-scale-etekcity-kitchen", checked: '2026-10',
+  },
+  'hamster-dwarf-hamster-russian-winter': {
+    label: "Dwarf hamster (Russian, Winter White, Roborovski, Chinese)",
+    spec: "",
+    low: 15, high: 25, product: null, checked: '2026-10',
+  },
+  'hamster-enclosure-syrian-700-775': {
+    label: "Enclosure for a Syrian: 700 to 775 sq in of unbroken floor, a bin, a wire cage with bars no wider than 1/2 in, a glass tank, or a 47-inch acrylic-and-metal cage (about 1,110 sq in; check the floor area before you buy)",
+    spec: "",
+    low: 30, high: 250, product: "hamster-cage-bucatstate-3-0-47in", checked: '2026-10',
+  },
+  'hamster-enclosure-dwarf-40-gallon': {
+    label: "Enclosure for a dwarf: a 40-gallon breeder tank (36 by 18 in, about 650 sq in) or a bin with the same floor",
+    spec: "",
+    low: 30, high: 150, product: "tank-aqueon-40-breeder", checked: '2026-10',
+  },
+  'hamster-solid-exercise-wheel-syrian': {
+    label: "Solid exercise wheel for a Syrian, 8 to 11 in",
+    spec: "",
+    low: 25, high: 40, product: "hamster-wheel-niteangel-super-silent-10in", checked: '2026-10',
+  },
+  'hamster-solid-exercise-wheel-dwarf': {
+    label: "Solid exercise wheel for a dwarf, 6 to 8 in",
+    spec: "",
+    low: 15, high: 20, product: "wheel-kaytee-silent-spinner-6-5in", checked: '2026-10',
+  },
+  'hamster-load-paper-based-bedding': {
+    label: "First load of paper-based bedding, 6 inches or more",
+    spec: "",
+    low: 15, high: 35, product: "small-pet-paper-bedding", checked: '2026-10',
+  },
+  'hamster-hideout': {
+    label: "Hideout",
+    spec: "",
+    low: 10, high: 30, product: "small-pet-hideout-igloo", checked: '2026-10',
+  },
+  'hamster-burrow-tunnel-connected-cover': {
+    label: "A burrow tunnel for connected cover",
+    spec: "",
+    low: 5, high: 15, product: "burrow-tunnel-composable", checked: '2026-10',
+  },
+  'hamster-dust-free-non-clumping': {
+    label: "Dust-free, non-clumping bath sand, in a heavy dish",
+    spec: "",
+    low: 20, high: 30, product: "bath-sand-niteangel-desert", checked: '2026-10',
+  },
+  'hamster-water-bottle-valveless-sipper': {
+    label: "Water bottle with a valveless sipper tube",
+    spec: "",
+    low: 5, high: 10, product: null, checked: '2026-10',
+  },
+  'hamster-bag-hamster-pellets': {
+    label: "First bag of hamster pellets",
+    spec: "",
+    low: 5, high: 15, product: "hamster-food-oxbow-garden-select", checked: '2026-10',
+  },
+  'hamster-small-bag-timothy-hay': {
+    label: "First small bag of timothy hay, for chewing",
+    spec: "",
+    low: 5, high: 10, product: null, checked: '2026-10',
+  },
+  'hamster-small-hard-sided-ventilated': {
+    label: "Small hard-sided, ventilated carrier",
+    spec: "",
+    low: 10, high: 25, product: null, checked: '2026-10',
+  },
+  'hedgehog-2x3-ft-minimum-enclosure': {
+    label: "2x3 ft minimum enclosure (bin or modified cage; check the floor dimensions before you buy)",
+    spec: "",
+    low: 60, high: 150, product: null, checked: '2026-10',
+  },
+  'hedgehog-solid-exercise-wheel-10': {
+    label: "Solid exercise wheel (10.5-12 in)",
+    spec: "",
+    low: 30, high: 50, product: "hedgehog-wheel-exotic-nutrition-silent-runner-12in-wide", checked: '2026-10',
+  },
+  'hedgehog-supplemental-heat-source': {
+    label: "Supplemental heat source",
+    spec: "",
+    low: 20, high: 60, product: "ceramic-heat-emitter-zoo-med-repticare-150w", checked: '2026-10',
+  },
+  'hedgehog-nail-clippers': {
+    label: "Nail clippers",
+    spec: "",
+    low: 5, high: 15, product: "nail-clippers", checked: '2026-10',
+  },
+  'mouse-cage-sized-spaced-mice': {
+    label: "Cage sized and spaced for mice (18x18x10 in minimum, solid floor)",
+    spec: "",
+    low: 35, high: 90, product: "mouse-cage-ferplast-favola", checked: '2026-10',
+  },
+  'mouse-smooth-mouse-sized-exercise': {
+    label: "Smooth, mouse-sized exercise wheel (6-8 in)",
+    spec: "",
+    low: 10, high: 25, product: "wheel-kaytee-silent-spinner-6-5in", checked: '2026-10',
+  },
+  'mouse-paper-based-bedding': {
+    label: "Paper-based bedding",
+    spec: "",
+    low: 15, high: 30, product: "small-pet-paper-bedding", checked: '2026-10',
+  },
+  'rat-multi-level-wire-cage': {
+    label: "Multi-level wire cage with solid ramped shelves",
+    spec: "",
+    low: 130, high: 360, product: "chinchilla-cage-midwest-critter-nation-double", checked: '2026-10',
+  },
+  'rat-hammocks-rats-genuinely-sleep': {
+    label: "Hammocks (rats genuinely sleep in these)",
+    spec: "",
+    low: 5, high: 20, product: "ferret-hammock-niteangel-nap-sack", checked: '2026-10',
+  },
+  'rat-solid-surface-exercise-wheel': {
+    label: "Solid-surface exercise wheel, 12 in or larger",
+    spec: "",
+    low: 25, high: 45, product: "rat-wheel-exotic-nutrition-silent-runner-12in-regular", checked: '2026-10',
+  },
+  'rat-chew-toys': {
+    label: "Chew toys",
+    spec: "",
+    low: 5, high: 25, product: "chew-rabbit-bamboo-sticks", checked: '2026-10',
+  },
+  'sugar-glider-tall-cage-sized-genuinely': {
+    label: "Tall cage, sized for a genuinely vertical, climbing pair",
+    spec: "",
+    low: 200, high: 400, product: "chinchilla-cage-midwest-critter-nation-double", checked: '2026-10',
+  },
+  'sugar-glider-accessories-hides-glider-safe': {
+    label: "Accessories: hides, a glider-safe wheel, dishes, enrichment",
+    spec: "",
+    low: 50, high: 150, product: null, checked: '2026-10',
+  },
+  'rabbit-foldable-metal-exercise-pen': {
+    label: "Foldable metal exercise pen, 4 by 4 feet or bigger",
+    spec: "",
+    low: 35, high: 100, product: "rabbit-exercise-pen-midwest-folding-30in", checked: '2026-10',
+  },
+  'rabbit-washable-flooring-pen-vinyl': {
+    label: "Washable flooring for the pen: vinyl, a washable rug, or fleece",
+    spec: "",
+    low: 10, high: 35, product: null, checked: '2026-10',
+  },
+  'rabbit-waterproof-tarp-under-pen': {
+    label: "Waterproof tarp under the pen",
+    spec: "",
+    low: 10, high: 25, product: "tarp-xpose-6x8-10mil", checked: '2026-10',
+  },
+  'rabbit-large-litter-box-cat': {
+    label: "Large litter box, cat-litter-box style",
+    spec: "",
+    low: 35, high: 40, product: "rabbit-litter-pan-ware-jumbo", checked: '2026-10',
+  },
+  'rabbit-bag-paper-pellet-litter': {
+    label: "First bag of paper pellet litter",
+    spec: "",
+    low: 15, high: 25, product: "litter-so-phresh-paper-pellets-20lb", checked: '2026-10',
+  },
+  'rabbit-bag-plain-timothy-based': {
+    label: "First bag of plain timothy-based pellets",
+    spec: "",
+    low: 10, high: 20, product: "rabbit-pellet-food-oxbow-garden-select", checked: '2026-10',
+  },
+  'rabbit-measuring-cup-pellets': {
+    label: "Measuring cup for the pellets",
+    spec: "",
+    low: 5, high: 5, product: null, checked: '2026-10',
+  },
+  'rabbit-heavy-food-water-dishes': {
+    label: "Heavy food and water dishes, two",
+    spec: "",
+    low: 5, high: 20, product: "small-mammal-bowl-kaytee-vege-t-bowl", checked: '2026-10',
+  },
+  'rabbit-chew-proof-glass-water': {
+    label: "Chew-proof glass water bottle, for a rabbit whose chin gets sore from the bowl",
+    spec: "",
+    low: 5, high: 15, product: "water-bottle-lixit-glass-16oz", checked: '2026-10',
+  },
+  'rabbit-hide-top-sit-on': {
+    label: "A hide with a top to sit on, or a cardboard castle",
+    spec: "",
+    low: 10, high: 45, product: null, checked: '2026-10',
+  },
+  'rabbit-dig-box-storage-tub': {
+    label: "Dig box: a storage tub filled with shredded paper, hay or soil",
+    spec: "",
+    low: 10, high: 15, product: "storage-tub-sterilite-56qt", checked: '2026-10',
+  },
+  'rabbit-chew-material-bamboo-sticks': {
+    label: "Chew material: bamboo sticks, untreated willow, plain cardboard",
+    spec: "",
+    low: 15, high: 25, product: "chew-rabbit-bamboo-sticks", checked: '2026-10',
+  },
+  'rabbit-brush-molts': {
+    label: "Brush for molts",
+    spec: "",
+    low: 5, high: 10, product: null, checked: '2026-10',
+  },
+  'rabbit-cord-protector-tubing-bunny': {
+    label: "Cord protector tubing for bunny-proofing",
+    spec: "",
+    low: 5, high: 15, product: "cord-protector-sungrow-20ft", checked: '2026-10',
+  },
+  'mineral-chew-blocks': {
+    label: "Mineral and lava chew blocks",
+    spec: "",
+    low: 10, high: 20, product: "chew-chinchilla-mineral-lava-blocks", checked: '2026-10',
+  },
+  'chinchilla-pellets-first': {
+    label: "First bag of chinchilla pellets",
+    spec: "",
+    low: 10, high: 20, product: "chinchilla-pellets-oxbow-essentials", checked: '2026-10',
+  },
+  'ferret-food-first': {
+    label: "First bag of ferret kibble",
+    spec: "",
+    low: 20, high: 30, product: "ferret-food-marshall-premium-diet", checked: '2026-10',
+  },
+  'bonding-pouch': {
+    label: "Bonding or sleeping pouch",
+    spec: "",
+    low: 10, high: 20, product: "sugar-glider-bonding-pouch", checked: '2026-10',
+  },
+  'bath-sand-small': {
+    label: "Bath sand",
+    spec: "",
+    low: 10, high: 15, product: "bath-sand-supreme-science-selective", checked: '2026-10',
+  },
+  'sugar-glider-wheel': {
+    label: "Glider-safe exercise wheel",
+    spec: "",
+    low: 45, high: 65, product: "exercise-wheel-sugar-glider", checked: '2026-10',
+  },
+  'sugar-glider-diet-first': {
+    label: "First supply of a formulated glider diet",
+    spec: "",
+    low: 15, high: 20, product: "sugar-glider-diet-exotic-nutrition-glider-complete", checked: '2026-10',
+  },
+  'sugar-glider-calcium-vitamin': {
+    label: "Glider calcium and multivitamin",
+    spec: "",
+    low: 15, high: 25, product: "calcium-sugar-glider-vitamin-combo", checked: '2026-10',
+  },
   'uv-index-meter': {
     label: 'UV index meter',
     spec: 'Solarmeter 6.5R',
