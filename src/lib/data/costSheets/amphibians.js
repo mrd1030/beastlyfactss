@@ -76,4 +76,19 @@ export const amphibianSheets = {
       { item: "multivitamin-reptivite-2oz", text: "A [reptile multivitamin]" },
     ],
   },
+  'tiger-salamander': {
+    necessities: [
+      { item: "hermit-crab-20-gallon-long-tank", text: "[20 gallon long tank], 30 by 12 by 12 inches" },
+      { item: "screen-lid-20-long", text: "Secure lid" },
+      { item: "argentine-tegu-deep-substrate-multiple-bags", text: "Deep, moisture-retentive [substrate]" },
+      { item: "hognose-snake-leaf-litter-surface-cover", text: "[Leaf litter] for surface cover" },
+      { item: "cork-bark-hide-round", text: "Flat [cork bark] and low hides" },
+      { item: "water-dish-shallow", text: "[Shallow water dish] large enough to sit in" },
+      { item: "water-conditioner", text: "[Water conditioner]" },
+      { item: "thermo-hygrometer-digital", text: "[Digital thermometer and hygrometer]" },
+      { item: "calcium-d3-3oz", text: "First supply of [calcium with D3]" },
+      { item: "multivitamin-reptivite-2oz", text: "A [reptile multivitamin]" },
+      { item: "feeding-tongs-reptile", text: "[Feeding tongs]" },
+    ],
+  },
 };

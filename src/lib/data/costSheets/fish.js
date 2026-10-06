@@ -132,7 +132,7 @@ export const fishSheets = {
     animal: [10, 50000],
     annual: [1000, 2000],
     necessities: [
-      { item: "koi-1-000-gallon-pond", text: "1,000+ gallon pond: excavation, underlayment and an [EPDM liner]", low: 2000, high: 8000 },
+      { item: "koi-1-000-gallon-pond", text: "1,000+ gallon pond: excavation, underlayment and an [EPDM liner]", low: 2000, high: 8000, why: "the row is the whole pond build; the item is only the liner it links" },
       { item: "koi-pond-filtration-system-uv", text: "[Pond filtration system + UV clarifier]" },
       { item: "koi-aeration-waterfall-pump", text: "[Aeration or waterfall pump]" },
       { item: "koi-predator-netting", text: "[Predator netting]" },

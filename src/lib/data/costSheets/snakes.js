@@ -95,4 +95,45 @@ export const snakeSheets = {
       { item: "kitchen-scale-grams", text: "[Kitchen scale]" },
     ],
   },
+  'boa-constrictor': {
+    necessities: [
+      { item: "boa-pvc-6x2x2", text: "[Adult PVC enclosure], 6 ft or longer" },
+      { item: "thermostat-pt02t", text: "[Thermostat]: non-negotiable for a snake this size" },
+      { item: "hedgehog-supplemental-heat-source", text: "[Ceramic heat emitter], paired with the thermostat" },
+      { item: "habba-hut-medium", qty: 2, text: "Two snug [hides], one warm side and one cool side" },
+      { item: "water-dish-large-soakable2", text: "[Large water dish] sized for a snake this large" },
+      { item: "green-iguana-cypress-mulch-substrate", qty: 3, text: "[Cypress mulch] or coconut fiber substrate (check the quantity against your enclosure's floor)" },
+      { item: "thermo-hygrometer-exo-terra-led", text: "[Thermometer and hygrometer]" },
+      { item: "feeding-tongs-reptile", text: "[Feeding tongs]" },
+    ],
+  },
+  'milk-snake': {
+    necessities: [
+      { item: "california-kingsnake-48x24x24-inch-front-opening", text: "[Wood or PVC vivarium], 48x24x24 inches, sized for the adult from the start" },
+      { item: "basking-bulb-and-dome", products: ["milk-snake-halogen-bulb-exo-terra-sun-glo-50w", "basking-dome-fixture"], text: "Halogen [basking bulb] and [fixture]" },
+      { item: "thermostat-pt02t", text: "[Thermostat] for the basking bulb" },
+      { item: "cork-bark-hide-round", qty: 2, text: "Snug [hides], including a dedicated humid hide" },
+      { item: "sphagnum-moss", text: "[Sphagnum moss] for the humid hide" },
+      { item: "aspen-shavings", text: "[Aspen bedding] or cypress mulch" },
+      { item: "water-dish-large-soakable2", text: "[Water bowl] large enough to soak in" },
+      { item: "thermo-hygrometer-digital", text: "[Digital thermometer and hygrometer]" },
+      { item: "feeding-tongs-reptile", text: "[Feeding tongs]" },
+    ],
+    extras: [
+      { item: "crested-gecko-low-output-uvb-hood", text: "[Low-level 5% UVB] fixture and bulb" },
+    ],
+  },
+  'rosy-boa': {
+    necessities: [
+      { item: "hermit-crab-20-gallon-long-tank", text: "[20 gallon long tank] for an adult of 24 to 36 inches" },
+      { item: "smooth-lid-20-long", text: "Smooth, well-fitted, secure lid, not a coarse screen: rosy boas are escape artists" },
+      { item: "heat-mat-thermostat-kit", text: "[Under-tank heater and thermostat]" },
+      { item: "habba-hut-medium", qty: 2, text: "Two snug [hides], warm side and cool side" },
+      { item: "water-dish-shallow", text: "[Small water dish]" },
+      { item: "aspen-shavings", text: "Dry [aspen shavings], deep enough to hold a tunnel" },
+      { item: "sphagnum-moss", text: "[Sphagnum moss] for a damp hide during the shed cycle" },
+      { item: "thermo-hygrometer-digital", text: "[Thermometer and hygrometer] for this species' unusually low humidity target" },
+      { item: "feeding-tongs-reptile", text: "[Feeding tongs]" },
+    ],
+  },
 };

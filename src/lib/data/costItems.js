@@ -2278,6 +2278,32 @@ export const COST_ITEMS = {
     spec: "",
     low: 15, high: 25, product: "calcium-sugar-glider-vitamin-combo", checked: '2026-10',
   },
+  'tokay-terrarium-18x18x36': {
+    label: "Front-opening glass terrarium, 18x18x36 in",
+    spec: "",
+    low: 285, high: 315, product: "tokay-gecko-terrarium-exo-terra-18x18x36", checked: '2026-10',
+  },
+  'boa-pvc-6x2x2': {
+    label: "PVC enclosure, 6x2x2 ft",
+    spec: "180 gallon",
+    low: 500, high: 530, product: "boa-enclosure-reptile-habitats-6x2x2-pvc", checked: '2026-10',
+  },
+  'habba-hut-medium': {
+    label: "Medium cave hide",
+    spec: "",
+    low: 10, high: 20, product: "hide-zoomed-habba-hut-medium", checked: '2026-10',
+  },
+  'thermo-hygrometer-exo-terra-led': {
+    label: "LED thermometer and hygrometer bundle",
+    spec: "",
+    low: 25, high: 40, product: "thermometer-hygrometer-exo-terra-led-bundle", checked: '2026-10',
+  },
+  // Unlinked on purpose: the rosy boa hub wants a smooth lid, not the coarse Zilla screen the old table linked.
+  'smooth-lid-20-long': {
+    label: "Smooth, well-fitted lid for a 20 gallon long",
+    spec: "30x12 in",
+    low: 35, high: 45, product: null, checked: '2026-10',
+  },
   'uv-index-meter': {
     label: 'UV index meter',
     spec: 'Solarmeter 6.5R',
