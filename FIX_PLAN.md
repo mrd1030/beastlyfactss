@@ -95,11 +95,6 @@ Checked against main on 2026-10-04. Each line: species, file, the problem, the f
 Every article's Sources block, site wide: combine several pages from one site into one entry naming the pages; drop a source whose every claim another listed source already covers; keep 3 to 5. About 308 articles list two or more pages from the same site (some are legal guides citing separate government documents, which stay separate). Common knowledge, such as prey that is too large causing impaction, can stand unsourced (owner, 2026-10-05).
 
 Claims found with no listed source, to source or soften during the sweep:
-- [ ] Boa constrictor wild lifespan: the encyclopedia says about 10 years in the wild, but Smithsonian's National Zoo says 20 to 30 and ADW averages 20. The boa facts article now follows Smithsonian. Settle the encyclopedia line.
-- [ ] Bird sleep: bird-photoperiod-sleep-guide states 10 to 12 hours of darkness, and several bird pages repeat it, but none of its listed sources (Merck, VCA chronic egg laying and sexual behavior, LafeberVet, UC Davis) says 10 to 12 hours. Find the source or soften.
-- [ ] Bird quarantine: 30 to 45 days in a separate room appears on many bird pages; CDFA and VCA give at least 30 days. Find a source for 45 or settle on "at least 30".
-- [ ] ferret-health-issues-guide: one source links only to the Merck homepage and two are unlinked text citations (Schoemaker 2000, PubMed 10649752; Simone-Freilicher 2008, PubMed 18165141). Link them to the real pages.
-- [ ] Green iguana 70% first-year deaths: cited only through Wikipedia (de Vosjoli 1992, The Green Iguana Manual), which could not be checked. Upgrade the source or soften on the cost guide, health guide, overview and hub.
 
 ---
 

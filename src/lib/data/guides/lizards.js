@@ -641,7 +641,7 @@ export const lizardGuides = [
         { label: "Handling", value: "From the side; from above reads as an aerial predator. Never by the tail, which drops under light pressure. In breeding season a mature male turns orange, head-bobs, and can be dangerous to keep.", source: "green-iguana-handling-guide" },
         { label: "Housing together", value: "Adults are territorial and adult males fight. One iguana.", source: "green-iguana-enrichment-guide" },
         { label: "Adult size", value: "A male reaches 6 to 7 feet including tail and up to 20 pounds, a different animal from the baby most people bring home.", source: "green-iguana-handling-guide" },
-        { label: "First year", value: "An estimated 70% of captive green iguanas die in their first year, from inadequate diet, lighting, and housing.", source: "green-iguana-health-issues-guide" },
+        { label: "First year", value: "Many captive green iguanas die young, from inadequate diet, lighting, and housing.", source: "green-iguana-health-issues-guide" },
         { label: "Budget", value: "Farm-raised babies run $20 to $100, morphs $300 to $1,000 or more. The first-year kit is about $1,032 to $1,101, and the adult enclosure is a second purchase a year or two later. Ongoing $60 to $150 a month.", source: "green-iguana-cost-guide" },
         { label: "Lifespan", value: "15 to 20 years, sometimes 25.", source: "green-iguana-cost-guide" },
         { label: "Hygiene", value: "Wash hands with soap after any contact, keep the iguana out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
