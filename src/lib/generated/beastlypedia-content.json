@@ -72,7 +72,7 @@
         "animal": "Pangolin",
         "myth": "Pangolin scales are worth taking.",
         "truth": "They are keratin, the same as fingernails. That belief has made the pangolin the most trafficked wild mammal on Earth.",
-        "sourceCount": 10
+        "sourceCount": 14
       }
     ],
     "siblings": [
@@ -315,7 +315,7 @@
         "animal": "Slow Loris",
         "myth": "No primate is venomous.",
         "truth": "The slow loris mixes venom from a gland on its own arm into its saliva. In one clinical series, 43 percent of people bitten needed hospital care.",
-        "sourceCount": 7
+        "sourceCount": 8
       }
     ],
     "siblings": [
@@ -459,7 +459,7 @@
         "animal": "Wolf",
         "myth": "Wolf packs are ruled by an alpha that fought its way to the top.",
         "truth": "A wild pack is a family, and the parents lead it. The alpha came from unrelated wolves forced together in a zoo pen.",
-        "sourceCount": 10
+        "sourceCount": 11
       }
     ],
     "siblings": [
@@ -649,7 +649,7 @@
         "animal": "Wombat",
         "myth": "A wombat has a square sphincter.",
         "truth": "There is no such thing. The cube is shaped much further up, by stiff and stretchy bands in the intestine wall.",
-        "sourceCount": 7
+        "sourceCount": 9
       }
     ],
     "siblings": [
@@ -772,7 +772,7 @@
         "animal": "Wolverine",
         "myth": "A wolverine will drive a bear, a cougar or a wolf pack off a kill.",
         "truth": "Alaska biologists have never seen one chase a bear off, and near Anchorage one wolf pack killed three of four collared wolverines.",
-        "sourceCount": 4
+        "sourceCount": 5
       }
     ],
     "siblings": [
@@ -1143,7 +1143,7 @@
         "animal": "Penguin",
         "myth": "Penguins mate for life.",
         "truth": "Divorce rates run from near zero to over 80 percent depending on the species, and what predicts loyalty is the nest.",
-        "sourceCount": 3
+        "sourceCount": 4
       }
     ],
     "siblings": [
@@ -1486,7 +1486,7 @@
         "animal": "Clownfish",
         "myth": "Marlin raises Nemo alone after Coral dies.",
         "truth": "Every clownfish is born male. Marlin would have become female and paired with his own son.",
-        "sourceCount": 8
+        "sourceCount": 9
       }
     ],
     "siblings": [
@@ -1555,7 +1555,7 @@
         "animal": "Immortal Jellyfish",
         "myth": "The immortal jellyfish lives forever.",
         "truth": "It can reverse its life cycle back to a polyp, which is not the same as not dying. Most get eaten long before they get the chance.",
-        "sourceCount": 12
+        "sourceCount": 14
       }
     ],
     "siblings": [
@@ -1651,7 +1651,7 @@
         "animal": "Shark",
         "myth": "Sharks are one of the more dangerous animals to humans.",
         "truth": "There were 65 unprovoked bites worldwide in 2025. Over the same period people killed roughly 80 million sharks.",
-        "sourceCount": 4
+        "sourceCount": 5
       },
       {
         "id": "sharks-are-older-than-trees-and-9-other-facts-that-will-blow-your-mind",
