@@ -1478,6 +1478,290 @@ export const COST_ITEMS = {
     spec: "",
     low: 5, high: 15, product: "feeding-tongs-short-soft-tip-4pack", checked: '2026-10',
   },
+  'betta-fish-5-gallon-plus-tank': {
+    label: "5-gallon-plus tank with a tight-fitting lid and a light, often sold together as a kit",
+    spec: "",
+    low: 30, high: 100, product: "betta-tank-5-gallon-starter-kit", checked: '2026-10',
+  },
+  'betta-fish-adjustable-submersible-heater-15': {
+    label: "Adjustable submersible heater, 15 to 25 watts for 5 gallons",
+    spec: "",
+    low: 15, high: 30, product: "betta-heater-hygger-25w", checked: '2026-10',
+  },
+  'betta-fish-small-air-pump-airline': {
+    label: "Small air pump with airline and a check valve, to run the sponge filter",
+    spec: "",
+    low: 10, high: 15, product: "air-pump-hygger-mini-2-20gal", checked: '2026-10',
+  },
+  'betta-fish-decor-smooth-hide-cave': {
+    label: "Decor: a smooth hide cave, live or soft silk plants, and a resting spot near the surface",
+    spec: "",
+    low: 10, high: 50, product: "hide-cave-aquarium-decoration", checked: '2026-10',
+  },
+  'betta-fish-substrate-sand-smooth-gravel': {
+    label: "Substrate: sand or smooth gravel",
+    spec: "",
+    low: 10, high: 20, product: "betta-substrate-caribsea-freshwater-sand", checked: '2026-10',
+  },
+  'betta-fish-water-conditioner-16-ounce': {
+    label: "Water conditioner, a 16-ounce bottle",
+    spec: "",
+    low: 5, high: 15, product: "api-tap-water-conditioner", checked: '2026-10',
+  },
+  'betta-fish-small-gravel-vacuum-sized': {
+    label: "Small gravel vacuum sized for the tank",
+    spec: "",
+    low: 10, high: 10, product: null, checked: '2026-10',
+  },
+  'betta-fish-soft-fine-mesh-net': {
+    label: "Soft fine-mesh net, with any clean cup for transfers",
+    spec: "",
+    low: 5, high: 5, product: "net-aquatop-5in-fine-mesh", checked: '2026-10',
+  },
+  'betta-fish-supply-betta-specific-pellets': {
+    label: "First supply of betta-specific pellets",
+    spec: "",
+    low: 5, high: 15, product: "betta-food-hikari-bio-gold", checked: '2026-10',
+  },
+  'betta-fish-supply-freeze-dried-bloodworms': {
+    label: "First supply of freeze-dried bloodworms for variety",
+    spec: "",
+    low: 15, high: 15, product: "freeze-dried-bloodworms-omega-one", checked: '2026-10',
+  },
+  'goldfish-hang-on-back-filter': {
+    label: "Hang-on-back filter moving at least 200 gallons an hour, 10 turnovers of the 20-gallon minimum",
+    spec: "",
+    low: 50, high: 85, product: "hob-filter-aquaclear-70", checked: '2026-10',
+  },
+  'goldfish-adjustable-50-watt-heater': {
+    label: "Adjustable 50-watt heater rated for up to 20 gallons, optional, only if the room falls below 65\u00b0F",
+    spec: "",
+    low: 15, high: 40, product: "goldfish-heater-aqueon-50w-adjustable", checked: '2026-10',
+  },
+  'goldfish-tight-fitting-glass-lid': {
+    label: "Tight-fitting glass lid, since goldfish jump",
+    spec: "",
+    low: 25, high: 30, product: "glass-lid-aqueon-versa-top-30in", checked: '2026-10',
+  },
+  'goldfish-decor-two-hardy-live': {
+    label: "Decor: two hardy live plants such as anubias or java fern, and one smooth piece of driftwood to tie them to",
+    spec: "",
+    low: 35, high: 65, product: "aquarium-plant-anubias-nana-potted", checked: '2026-10',
+  },
+  'goldfish-gravel-vacuum-sized-20': {
+    label: "Gravel vacuum sized for 20 to 55 gallon tanks",
+    spec: "",
+    low: 20, high: 25, product: "gravel-vac-python-pro-clean-large", checked: '2026-10',
+  },
+  'goldfish-two-5-gallon-buckets': {
+    label: "Two 5-gallon buckets used only for the tank",
+    spec: "",
+    low: 10, high: 15, product: null, checked: '2026-10',
+  },
+  'goldfish-soft-fine-mesh-net': {
+    label: "Soft, fine-mesh net and a small transfer bucket",
+    spec: "",
+    low: 5, high: 15, product: null, checked: '2026-10',
+  },
+  'goldfish-bare-10-gallon-tank': {
+    label: "Bare 10-gallon tank for quarantine, with no substrate or decor",
+    spec: "",
+    low: 15, high: 30, product: "tank-10-gallon", checked: '2026-10',
+  },
+  'goldfish-supply-sinking-goldfish-pellets': {
+    label: "First supply of sinking goldfish pellets",
+    spec: "",
+    low: 5, high: 15, product: null, checked: '2026-10',
+  },
+  'goldfish-supply-goldfish-gel-food': {
+    label: "First supply of goldfish gel food for variety",
+    spec: "",
+    low: 15, high: 25, product: "goldfish-gel-food-repashy-super-gold", checked: '2026-10',
+  },
+  'angelfish-55-gallon-tank-stand': {
+    label: "55-gallon tank and stand (or a 29-gallon tall to start)",
+    spec: "",
+    low: 290, high: 400, product: "angelfish-tank-tetra-55-gallon", checked: '2026-10',
+  },
+  'angelfish-aquarium-heater': {
+    label: "Aquarium heater",
+    spec: "",
+    low: 15, high: 35, product: "submersible-aquarium-heater", checked: '2026-10',
+  },
+  'angelfish-substrate-sand-smooth-gravel': {
+    label: "Substrate (sand or smooth gravel)",
+    spec: "",
+    low: 10, high: 30, product: "betta-substrate-caribsea-freshwater-sand", checked: '2026-10',
+  },
+  'angelfish-driftwood-tall-plants': {
+    label: "Driftwood and tall plants",
+    spec: "",
+    low: 10, high: 35, product: "driftwood", checked: '2026-10',
+  },
+  'angelfish-dense-live-silk-plants': {
+    label: "Dense live or silk plants",
+    spec: "",
+    low: 15, high: 60, product: "aquarium-plant-anubias-nana-potted", checked: '2026-10',
+  },
+  'bristlenose-pleco-20-gallon-long-tank': {
+    label: "20 gallon long tank (minimum)",
+    spec: "",
+    low: 35, high: 80, product: "tank-20-gallon-long", checked: '2026-10',
+  },
+  'cardinal-tetra-10-20-gallon-tank': {
+    label: "10-20 gallon tank",
+    spec: "",
+    low: 15, high: 150, product: "tank-10-gallon", checked: '2026-10',
+  },
+  'discus-55-gallon-tank-75': {
+    label: "55-gallon tank (or 75-gallon-plus for a larger group)",
+    spec: "",
+    low: 100, high: 310, product: "angelfish-tank-tetra-55-gallon", checked: '2026-10',
+  },
+  'discus-canister-filter-sized-well': {
+    label: "Canister filter, sized well above the tank's actual volume",
+    spec: "",
+    low: 150, high: 320, product: "canister-filter-large", checked: '2026-10',
+  },
+  'guppy-10-gallon-tank': {
+    label: "10+ gallon tank",
+    spec: "",
+    low: 15, high: 80, product: "tank-10-gallon", checked: '2026-10',
+  },
+  'guppy-aquarium-heater': {
+    label: "Aquarium heater",
+    spec: "",
+    low: 15, high: 30, product: "submersible-aquarium-heater", checked: '2026-10',
+  },
+  'guppy-gentle-filter': {
+    label: "Gentle filter",
+    spec: "",
+    low: 5, high: 25, product: "sponge-filter", checked: '2026-10',
+  },
+  'guppy-dense-live-silk-plants': {
+    label: "Dense live or silk plants",
+    spec: "",
+    low: 15, high: 25, product: "aquarium-plant-anubias-nana-potted", checked: '2026-10',
+  },
+  'koi-1-000-gallon-pond': {
+    label: "EPDM pond liner, 15x20 ft",
+    spec: "",
+    low: 180, high: 250, product: "pond-liner-firestone-epdm-15x20", checked: '2026-10',
+  },
+  'koi-pond-filtration-system-uv': {
+    label: "Pond filtration system + UV clarifier",
+    spec: "",
+    low: 150, high: 800, product: "pond-filter-totalpond-uv-clarifier", checked: '2026-10',
+  },
+  'koi-aeration-waterfall-pump': {
+    label: "Aeration or waterfall pump",
+    spec: "",
+    low: 80, high: 250, product: "pond-aerator-aquascape-pond-air-2", checked: '2026-10',
+  },
+  'koi-predator-netting': {
+    label: "Predator netting",
+    spec: "",
+    low: 15, high: 150, product: "pond-netting-alpinereach-15x20", checked: '2026-10',
+  },
+  'molly-20-gallon-tank': {
+    label: "20-gallon tank",
+    spec: "",
+    low: 35, high: 150, product: "tank-20-gallon-long", checked: '2026-10',
+  },
+  'molly-aquarium-salt-optional-long': {
+    label: "Aquarium salt (optional, long-lasting)",
+    spec: "",
+    low: 20, high: 25, product: "aquarium-salt-api-33oz", checked: '2026-10',
+  },
+  'neon-tetra-gentle-filter': {
+    label: "Gentle filter",
+    spec: "",
+    low: 5, high: 20, product: "sponge-filter", checked: '2026-10',
+  },
+  'neon-tetra-dense-live-silk-plants': {
+    label: "Dense live or silk plants",
+    spec: "",
+    low: 15, high: 30, product: "aquarium-plant-anubias-nana-potted", checked: '2026-10',
+  },
+  'oscar-fish-canister-filter': {
+    label: "Canister filter",
+    spec: "",
+    low: 225, high: 350, product: "oscar-fish-canister-filter-fluval-fx4", checked: '2026-10',
+  },
+  'oscar-fish-75-gallon-glass-aquarium': {
+    label: "75-gallon glass aquarium, tank only",
+    spec: "",
+    low: 230, high: 300, product: null, checked: '2026-10',
+  },
+  'zebra-danio-10-20-gallon-tank': {
+    label: "10-20 gallon tank",
+    spec: "",
+    low: 15, high: 60, product: "tank-10-gallon", checked: '2026-10',
+  },
+  'water-test-kit-liquid': {
+    label: "Liquid-reagent water test kit",
+    spec: "ammonia, nitrite, nitrate, pH",
+    low: 25, high: 40, product: "water-test-kit", checked: '2026-10',
+  },
+  'sand-caribsea-10lb': {
+    label: "Aquarium sand, 10 lb bag",
+    spec: "",
+    low: 10, high: 20, product: "betta-substrate-caribsea-freshwater-sand", checked: '2026-10',
+  },
+  // 2026-10
+  'glass-lid-48in-versa-top': {
+    label: "Hinged glass lid, 48 in",
+    spec: "fits a 55 gallon",
+    low: 80, high: 85, product: "glass-lid-aqueon-versa-top-48in", checked: '2026-10',
+  },
+  // 2026-10
+  'glass-canopy-48x18': {
+    label: "Glass canopy set, 48x18 in",
+    spec: "fits a 75 gallon",
+    low: 85, high: 90, product: "glass-lid-48x18-center-brace", checked: '2026-10',
+  },
+  'glass-lid-10-gallon': {
+    label: "Glass lid for a 10 gallon tank",
+    spec: "20x10 in",
+    low: 15, high: 25, product: null, checked: '2026-10',
+  },
+  'fish-food-sinking-wafers': {
+    label: "First supply of sinking wafers",
+    spec: "",
+    low: 5, high: 15, product: "corydoras-hikari-sinking-wafers", checked: '2026-10',
+  },
+  'fish-food-micro-pellets': {
+    label: "First supply of micro pellets",
+    spec: "",
+    low: 5, high: 10, product: "neon-tetra-food-hikari-micro-pellets", checked: '2026-10',
+  },
+  'fish-food-guppy': {
+    label: "First supply of guppy food",
+    spec: "",
+    low: 5, high: 10, product: "guppy-food-hikari-tropical-fancy-guppy", checked: '2026-10',
+  },
+  'fish-food-cichlid-pellets': {
+    label: "First supply of cichlid pellets",
+    spec: "",
+    low: 20, high: 30, product: "oscar-fish-hikari-cichlid-gold-pellets", checked: '2026-10',
+  },
+  // 2026-10
+  'fish-food-discus': {
+    label: "First supply of discus food",
+    spec: "2.82 oz",
+    low: 10, high: 15, product: "discus-food-hikari-bio-gold", checked: '2026-10',
+  },
+  // 2026-10
+  'fish-food-veggie-flakes': {
+    label: "First supply of vegetable flakes",
+    spec: "2.2 oz",
+    low: 15, high: 20, product: "fish-food-omega-one-veggie-kelp-flakes", checked: '2026-10',
+  },
+  'pond-bacteria-startup': {
+    label: "Pond beneficial bacteria",
+    spec: "",
+    low: 15, high: 25, product: "pond-beneficial-bacteria-aquascape", checked: '2026-10',
+  },
   'uv-index-meter': {
     label: 'UV index meter',
     spec: 'Solarmeter 6.5R',

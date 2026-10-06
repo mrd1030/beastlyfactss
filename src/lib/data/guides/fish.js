@@ -1,4 +1,8 @@
-export const fishGuides = [
+// Cost figures in these entries are %%placeholders%% filled from the master
+// price list (src/lib/costs.js); never type a cost guide total here.
+import { fillCostTokens } from '../../costs.js';
+
+export const fishGuides = fillCostTokens([
   {
     id: "angelfish",
     name: "Angelfish",
@@ -37,7 +41,7 @@ export const fishGuides = [
         { label: "Feeding schedule", value: "Adults once or twice a day, cleared within 2 to 5 minutes. Juveniles 2 to 3 times a day.", source: "angelfish-feeding-guide" },
         { label: "Diet", value: "A quality flake as the staple, with live or frozen protein at least twice a week: bloodworms, brine shrimp, daphnia, mysis. Tubifex only from a cultured source, never wild-collected.", source: "angelfish-feeding-guide" },
         { label: "Off food", value: "Normal for the first 2 to 4 days in a new tank. Past 4 to 5 days, or paired with a sunken belly, clamped fins or stringy white feces, test the water and quarantine.", source: "angelfish-feeding-guide" },
-        { label: "Budget", value: "$3 to $50 for a freshwater angelfish, most under $20. Roughly $395 to $640 for a proper tank, then $15 to $40 a month. Marine angelfish are a different group at $150 to $1,500 and need a reef tank.", source: "angelfish-cost-guide" },
+        { label: "Budget", value: "%%animal:angelfish%% for a freshwater angelfish, most under $20. Roughly %%setup:angelfish%% for a proper tank, then %%monthly:angelfish%% a month. Marine angelfish are a different group at $150 to $1,500 and need a reef tank.", source: "angelfish-cost-guide" },
         { label: "Lifespan", value: "8 to 12 years typical, up to around 15.", source: "angelfish-cost-guide" },
         { label: "Adult size", value: "6 inches (15 cm) body, 8 to 10 inches (20 to 25 cm) including fins." },
         { label: "Quarantine", value: "At least 30 days in a separate tank with its own nets and siphon, 30 to 60 for a fish you especially do not want to lose. Thirty is the floor, not the target.", source: "fish-quarantine-and-treatment-guide" },
@@ -56,7 +60,7 @@ export const fishGuides = [
       vetLine: "Treatment without fixing the water does not hold. Correct the environment, then treat.",
     },
     routes: [
-      { slug: "angelfish-cost-guide", line: "$3 to $50 for the fish, $395 to $640 for the tank that makes it work, and the marine-versus-freshwater price trap." },
+      { slug: "angelfish-cost-guide", line: "%%animal:angelfish%% for the fish, %%setup:angelfish%% for the tank that makes it work, and the marine-versus-freshwater price trap." },
       { slug: "angelfish-tank-setup-guide", line: "Why height beats length, heater wattage math, pH 6.5 to 7.0, gentle flow, and the lid nobody expects to need." },
       { slug: "angelfish-feeding-guide", line: "Schedule by life stage, the 2 to 5 minute rule, what is safe to feed, and the sunken belly that outranks appetite." },
       { slug: "angelfish-handling-guide", line: "The territoriality that arrives with maturity, why angelfish go in last, and how pairs form." },
@@ -112,7 +116,7 @@ export const fishGuides = [
         { label: "Feeding schedule", value: "2 to 4 small, high-protein betta pellets a meal, no more than would fit in the size of the fish's eye. Once or twice a day, or up to three smaller meals; a consistent routine matters more than the count. Fast one day a week.", source: "betta-fish-feeding-guide" },
         { label: "Not eating", value: "A healthy adult can physically survive up to about two weeks, but that's an emergency ceiling, not a target. Start investigating around 5 to 7 days of refused food, sooner with a swollen belly, clamped fins, or lethargy.", source: "betta-fish-feeding-guide" },
         { label: "Handling", value: "Never bare hands, it strips the protective slime coat on contact. Move the fish with a net or a cup. Float a new bag 20 to 30 minutes before release so temperatures can equalize.", source: "betta-fish-handling-guide" },
-        { label: "Budget", value: "$5 to $30 for the fish, up to about $55 for rare varieties. $150 to $360 for a full setup before the fish. $10 to $25 a month after that.", source: "betta-fish-cost-guide" },
+        { label: "Budget", value: "%%animal:betta-fish%% for the fish, up to about $55 for rare varieties. %%setup:betta-fish%% for a full setup before the fish. $10 to $25 a month after that.", source: "betta-fish-cost-guide" },
         { label: "Adult size", value: "2.5 to 3 inches." },
         { label: "Lifespan", value: "2 to 4 years typical, up to 5 years in captivity with excellent care." },
         { label: "Tankmates", value: "One male, alone or with corydoras, mystery snails, ghost shrimp or small tetras, in 10 to 20 gallons or more, and ghost shrimp only past 1.5 inches. Never tiger barbs, any nipper, or a long-finned fish. A female sorority needs 10 gallons and cover.", source: "betta-fish-handling-guide" },
@@ -134,7 +138,7 @@ export const fishGuides = [
       vetLine: "An aquatic vet, found before you need one, for the serious or unclear cases. Most of this list is prevented by a heated, filtered, cycled tank.",
     },
     routes: [
-      { slug: "betta-fish-cost-guide", line: "$5 to $30 for the fish, a $150 to $360 setup, and $10 to $25 a month after that." },
+      { slug: "betta-fish-cost-guide", line: "%%animal:betta-fish%% for the fish, %%setup:betta-fish%% for the setup, and $10 to $25 a month after that." },
       { slug: "betta-fish-tank-setup-guide", line: "The 5-gallon minimum, the heater and sponge filter that actually fit a betta's fins, and cycling before the fish goes in." },
       { slug: "betta-fish-water-parameters-guide", line: "The target ranges for temperature, pH, ammonia, nitrite, and nitrate, and the testing schedule that actually catches trouble early." },
       { slug: "betta-fish-feeding-guide", line: "Portion size relative to the fish's own eye, safe treats and foods to avoid, and the honest range of reasons a betta stops eating." },
@@ -219,7 +223,7 @@ export const fishGuides = [
         { label: "Moving one", value: "Lockable fin spines catch in net mesh. Herd it into a cup or wide container and lift that out instead.", source: "bristlenose-pleco-handling-guide" },
         { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
         { label: "Copper", value: "An unprotected belly and a mucous coat that copper damages badly. Copper-based treatments stay off the list entirely; use an alternative for any copper-susceptible parasite.", source: "bristlenose-pleco-health-issues-guide" },
-        { label: "Budget", value: "$7 to $10 for common albino and brown morphs, up to $20 to $25 for specialty fish. A 20-gallon setup runs about $150 to $310, then $45 to $85 a year. Aquatic vets are uncommon; the keeper manages most problems.", source: "bristlenose-pleco-cost-guide" },
+        { label: "Budget", value: "$7 to $10 for common albino and brown morphs, up to $20 to $25 for specialty fish. A 20-gallon setup runs about %%setup:bristlenose-pleco%%, then %%annual:bristlenose-pleco%% a year. Aquatic vets are uncommon; the keeper manages most problems.", source: "bristlenose-pleco-cost-guide" },
         { label: "Lifespan", value: "5 to 10 years typical, and some individuals live longer still.", source: "bristlenose-pleco-cost-guide" },
         { label: "Adult size", value: "4 to 6 inches (10 to 15 cm)." },
         { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
@@ -237,7 +241,7 @@ export const fishGuides = [
       vetLine: "A dedicated bottom-feeder food fixes the first, smooth substrate the last, and water quality sits under everything else. No copper-based treatment, ever.",
     },
     routes: [
-      { slug: "bristlenose-pleco-cost-guide", line: "$7 to $25 for the fish, $155 to $265 for the tank around it, and the labeling mistake that costs the most of all." },
+      { slug: "bristlenose-pleco-cost-guide", line: "%%animal:bristlenose-pleco%% for the fish, $155 to $265 for the tank around it, and the labeling mistake that costs the most of all." },
       { slug: "bristlenose-pleco-tank-setup-guide", line: "20 gallons as a floor and 29 to 30 as the real answer, 74 to 80F, and why driftwood is not decoration." },
       { slug: "bristlenose-pleco-feeding-guide", line: "Once a day after lights-out, and why the algae myth is the most damaging thing a new keeper believes." },
       { slug: "bristlenose-pleco-handling-guide", line: "Spines that lock into a net, why you herd one into a cup instead, and why you never see it during the day." },
@@ -301,7 +305,7 @@ export const fishGuides = [
         { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
         { label: "A dead fish", value: "Never leave one in the tank or let the others scavenge it. There is no cure for neon tetra disease, and fish that eat an infected body contract it.", source: "cardinal-tetra-feeding-guide" },
         { label: "Quarantine", value: "A full 30 days for any new fish, the most effective way to keep ich out of an established tank.", source: "cardinal-tetra-health-issues-guide" },
-        { label: "Budget", value: "About $3 a fish, roughly $25 to $30 for the school, and most first setups land around $90 to $280. Vet care does not apply; water quality and over-the-counter treatment are the whole of it.", source: "cardinal-tetra-cost-guide" },
+        { label: "Budget", value: "About $3 a fish, roughly $25 to $30 for the school. Setup roughly %%setup:cardinal-tetra%%. Vet care does not apply; water quality and over-the-counter treatment are the whole of it.", source: "cardinal-tetra-cost-guide" },
         { label: "Lifespan", value: "About five years, some to ten. In the wild it is close to an annual fish.", source: "cardinal-tetra-cost-guide" },
         { label: "Adult size", value: "2 inches (5 cm)." },
         { label: "Water chemistry, the wider picture", value: "KH holds pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Work with what the source water gives you.", source: "freshwater-ph-gh-kh-guide" },
@@ -320,7 +324,7 @@ export const fishGuides = [
       vetLine: "Everything treatable here traces back to water quality and stability. The untreatable one is prevented by quarantine.",
     },
     routes: [
-      { slug: "cardinal-tetra-cost-guide", line: "About $3 a fish, the $55 to $260 setup, and the Rio Negro fishery behind why this one prices above a neon." },
+      { slug: "cardinal-tetra-cost-guide", line: "About $3 a fish, the %%setup:cardinal-tetra%% setup, and the Rio Negro fishery behind why this one prices above a neon." },
       { slug: "cardinal-tetra-tank-setup-guide", line: "The 20-gallon long, 73 to 84°F, soft acidic water, gentle flow, and the blackwater tannins that change the fish." },
       { slug: "cardinal-tetra-feeding-guide", line: "Micro-pellet portions, the two-minute rule, and why removing a dead fish immediately is the real defense against an incurable disease." },
       { slug: "cardinal-tetra-handling-guide", line: "Why this is an observation fish, the ten-fish minimum that functions as a welfare need, and the stripe that tells it from a neon." },
@@ -386,7 +390,7 @@ export const fishGuides = [
         { label: "Barbel erosion", value: "Shortened, red or missing barbels, the signature cory problem. No study pins the cause; manage a dirty substrate first. Move to soft sand, do a big water change and hold nitrate under 20 ppm; barbels can regrow over 4 to 8 weeks.", source: "corydoras-catfish-health-issues-guide" },
         { label: "Medication", value: "Naked bellies make them more sensitive than most community fish: reduced doses, sometimes a half or a quarter, and no full-strength copper, malachite green or formalin. For ich, warm slowly to the top of the species' range, 78°F for most cories and 82°F for a sterbai, with strong aeration, and let a reduced-dose medication do the killing.", source: "corydoras-catfish-health-issues-guide" },
         { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
-        { label: "Budget", value: "$3 to $8 each, and six or more is the requirement, so price the school. Roughly $140 to $250 for the equipment, then $10 to $20 a month. Aquatic vets are uncommon; keepers handle most problems through water quality.", source: "corydoras-catfish-cost-guide" },
+        { label: "Budget", value: "$3 to $8 each, and six or more is the requirement, so price the school. Roughly %%setup:corydoras-catfish%% for the equipment, then %%monthly:corydoras-catfish%% a month. Aquatic vets are uncommon; keepers handle most problems through water quality.", source: "corydoras-catfish-cost-guide" },
         { label: "Lifespan", value: "5 to 10 years typical, with reports of up to 15.", source: "corydoras-catfish-cost-guide" },
         { label: "Adult size", value: "1 to 3 inches (2.5 to 7.5 cm), pygmy species at the low end." },
       ],
@@ -403,7 +407,7 @@ export const fishGuides = [
       vetLine: "Correct the water and treat at a reduced dose, sometimes a half or a quarter of the label amount. No full-strength copper, malachite green, or formalin.",
     },
     routes: [
-      { slug: "corydoras-catfish-cost-guide", line: "$3 to $8 a fish and you need six, the $150 to $215 setup, and why the substrate line matters more here than for most community fish." },
+      { slug: "corydoras-catfish-cost-guide", line: "$3 to $8 a fish and you need six, the %%setup:corydoras-catfish%% setup, and why the substrate line matters more here than for most community fish." },
       { slug: "corydoras-catfish-tank-setup-guide", line: "The 20-gallon-long minimum, the substrate that decides everything, gentle flow with calm resting spots, and clear access to the surface." },
       { slug: "corydoras-catfish-feeding-guide", line: "Why the cleanup-crew reputation starves them, the sinking staple, portion by the group, and seven reasons a cory stops eating." },
       { slug: "corydoras-catfish-handling-guide", line: "Why a container beats a net for a fish with locking spines, what foam in the bag means, water changes around a bottom feeder, and pygmy vs standard." },
@@ -482,7 +486,7 @@ export const fishGuides = [
         { label: "Acclimation", value: "The default is a slow drip of 60 to 90 minutes. One discus breeder argues for a fast temperature and pH match instead, since oxygen depletes in the shipping water. Either way: lights off, and no food on day one.", source: "discus-handling-guide" },
         { label: "Tankmates", value: "Cardinal and rummynose tetras are the ones named consistently. Sterbai cories fit only a tank held near 82°F, the top of their range, and a bristlenose is a compromise past its 80°F comfort. Neons are disputed at 82 to 86°F, so cardinals are the safer warm-water tetra.", source: "discus-handling-guide" },
         { label: "Sexing", value: "Difficult outside of breeding. Raise a group and let pairs reveal themselves.", source: "discus-handling-guide" },
-        { label: "Budget", value: "$20 to $40 for young common-strain fish, so a group of 5 to 6 starts at $150 to $250 even at the budget end; premium strains reach $200 to $450 a fish. Setup roughly $320 to $675, then $20 to $50 a month.", source: "discus-cost-guide" },
+        { label: "Budget", value: "$20 to $40 for young common-strain fish, so a group of 5 to 6 starts at $150 to $250 even at the budget end; premium strains reach $200 to $450 a fish. Setup roughly %%setup:discus%%, then %%monthly:discus%% a month.", source: "discus-cost-guide" },
         { label: "Lifespan", value: "8 to 10 years typical in captivity, up to 15 with excellent, stable care.", source: "discus-cost-guide" },
         { label: "Adult size", value: "6 to 8 inches (15 to 20 cm) in diameter." },
         { label: "Quarantine", value: "At least 30 days in a bare, sponge-filtered hospital tank with its own net and siphon, 30 to 60 for a fish you especially do not want to lose.", source: "fish-quarantine-and-treatment-guide" },
@@ -501,7 +505,7 @@ export const fishGuides = [
       vetLine: "Ich heat for discus starts at 86°F, the top of the 82 to 86°F they already live in, and discus quarantine protocols go to roughly 90°F.",
     },
     routes: [
-      { slug: "discus-cost-guide", line: "$20 to $450 a fish by strain, $320 to $675 for the tank around them, and why the fish is rarely the biggest line." },
+      { slug: "discus-cost-guide", line: "%%animal:discus%% a fish by strain, %%setup:discus%% for the tank around them, and why the fish is rarely the biggest line." },
       { slug: "discus-tank-setup-guide", line: "55 gallons as a floor and 75 as the real answer, 82 to 86F, and the water-change routine that defines the tank." },
       { slug: "discus-feeding-guide", line: "Two to three small meals for a short gut, the small-mouth sizing issue, and the peer-reviewed truth about discus milk." },
       { slug: "discus-handling-guide", line: "Why the acclimation advice genuinely splits, the narrow tankmate list, and sexing that mostly cannot be done by eye." },
@@ -557,7 +561,7 @@ export const fishGuides = [
         { label: "Diet", value: "A quality sinking pellet formulated specifically for goldfish as the base, not tropical fish flake. Supplement 2 to 3 times a week with blanched vegetables and high-protein treats in moderation.", source: "goldfish-feeding-guide" },
         { label: "Not eating", value: "Short gaps of 3 to 4 days are fine for a healthy adult in an established tank. The trigger to seek help is 24 to 48 hours of refusal combined with lethargy, pineconing scales, clamped fins, abnormal floating or sinking, gasping at the surface, visible wounds or white spots, cotton-like growths, or a visibly thinning body.", source: "goldfish-feeding-guide" },
         { label: "Handling", value: "Guide it into a container of tank water rather than lifting it out by hand. If a net is needed, wet it first and use soft rubber, never knotted nylon. Keep the fish out of water as briefly as possible.", source: "goldfish-handling-guide" },
-        { label: "Budget", value: "The fish itself often costs less than $10. A complete setup adds up to $310 to $615, and ongoing costs run $10 to $30 a month.", source: "goldfish-cost-guide" },
+        { label: "Budget", value: "The fish itself often costs less than $10. A complete setup adds up to %%setup:goldfish%%, and ongoing costs run %%monthly:goldfish%% a month.", source: "goldfish-cost-guide" },
         { label: "Adult size", value: "6 to 8 inches for a fancy goldfish, 10 to 14+ inches for a common or comet, 10 to 12 inches for a shubunkin.", source: "goldfish-tank-size-bowl-myth" },
         { label: "Lifespan", value: "10 to 15 years typical; 20 to 30+ years in spacious, well-kept ponds." },
         { label: "Tankmates", value: "Fancy with fancy, single-tail with single-tail. Not a tropical tank: guppies and anything slower at the food are the pairings that fail.", source: "aquarium-stocking-and-tankmates-guide" },
@@ -579,7 +583,7 @@ export const fishGuides = [
       vetLine: "An aquatic vet, found before you need one. Most of the health list is prevented, not treated, through water quality, quarantine, and appropriate feeding.",
     },
     routes: [
-      { slug: "goldfish-cost-guide", line: "The fish itself under $10, a $310 to $615 setup where the tank and filtration are the real cost, and $10 to $30 a month after that." },
+      { slug: "goldfish-cost-guide", line: "The fish itself under $10, %%setup:goldfish%% for a setup where the tank and filtration are the real cost, and %%monthly:goldfish%% a month after that." },
       { slug: "goldfish-tank-setup-guide", line: "The real tank size, filtration turnover math, water parameters, and cycling before the fish goes in." },
       { slug: "goldfish-tank-size-bowl-myth", line: "Why goldfish don't grow to fit their tank, the real space requirements by variety, and what self-cleaning bowl kits get wrong." },
       { slug: "goldfish-feeding-guide", line: "Schedule by life stage, pellets versus flakes versus gel, safe foods by tier, and the honest range of reasons a goldfish stops eating." },
@@ -715,7 +719,7 @@ export const fishGuides = [
     // 2 to 4 week quarantine against the health guide's 4 to 6 weeks or longer, a
     // 25 to 35 year lifespan against the cost guide's 25 to 50, peas as an
     // untroubled treat against the feeding guide's choking warning, and a setup
-    // table summing to $2,450-$9,200 under a cost guide that says $5,100-$15,875.
+    // table summing to $2,450-$9,200 under a cost guide that says $5,100 to $15,875.
     // Its headline funFact also ran the Hanako 226-year claim the cost guide
     // debunks in the same set, and that is gone.
     layout: "router",
@@ -754,7 +758,7 @@ export const fishGuides = [
       vetLine: "Correct water quality immediately. For valuable fish or any unclear diagnosis lean toward professional guidance, though aquatic vets are limited and many keepers rely on koi-specific resources.",
     },
     routes: [
-      { slug: "koi-cost-guide", line: "The fish from $10 to $50,000, what a pond actually costs to build, the yearly run rate, and a lifespan that outlasts most mortgages." },
+      { slug: "koi-cost-guide", line: "The fish from %%animal:koi%%, what a pond actually costs to build, the yearly run rate, and a lifespan that outlasts most mortgages." },
       { slug: "koi-tank-setup-guide", line: "Volume, depth, temperature, substrate, and the filtration sizing that decides whether the pond works." },
       { slug: "koi-feeding-guide", line: "The temperature-banded feeding schedule, seasonal protein, portion rules, and why koi stop eating." },
       { slug: "koi-handling-guide", line: "Why handling stays minimal, the net-into-a-floating-bowl method, and the one variety that acts like a dog." },
@@ -830,7 +834,7 @@ export const fishGuides = [
         { label: "Fry are coming", value: "Gestation 4 to 6 weeks and broods of 20 to 60. Females store sperm, so store-bought females keep producing without a male present.", source: "molly-handling-guide" },
         { label: "Quarantine", value: "At least 30 days in a separate tank before new fish join the display. It catches most problems, shimmy included, before they spread.", source: "molly-health-issues-guide" },
         { label: "Shimmy", value: "A side-to-side rocking as the fish swims, a sign of lost nerve and muscle control rather than a disease. Correct the water first: temperature toward 76 to 80°F, pH toward 7.5 to 8.5, hardness up if the water runs soft.", source: "molly-health-issues-guide" },
-        { label: "Budget", value: "$2 to $8 a fish for common short-fins, $15 to $20 for specialty strains. A 20-gallon setup runs $135 to $280 and upkeep $20 to $30 a month. Mollies rarely see a vet.", source: "molly-cost-guide" },
+        { label: "Budget", value: "$2 to $8 a fish for common short-fins, $15 to $20 for specialty strains. A 20-gallon setup runs %%setup:molly%% and upkeep %%monthly:molly%% a month. Mollies rarely see a vet.", source: "molly-cost-guide" },
         { label: "Lifespan", value: "3 to 5 years, up to 5 to 7 with stable water.", source: "molly-cost-guide" },
         { label: "Adult size", value: "3 to 4.5 inches for short-fin varieties, 4 to 6 inches for sailfins.", source: "molly-handling-guide" },
         { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
@@ -850,7 +854,7 @@ export const fishGuides = [
       vetLine: "Stress, unstable water, overcrowding, and skipped quarantine sit behind nearly every condition on this list.",
     },
     routes: [
-      { slug: "molly-cost-guide", line: "$2 to $8 a common molly, the $130 to $260 the tank costs around it, and the $20 to $30 a month after that." },
+      { slug: "molly-cost-guide", line: "$2 to $8 a common molly, the $130 to $260 the tank costs around it, and the %%monthly:molly%% a month after that." },
       { slug: "molly-tank-setup-guide", line: "A real 20 gallons, 72 to 82\u00B0F, hard alkaline water, four-times turnover, and the salt question answered honestly." },
       { slug: "molly-feeding-guide", line: "Once or twice a day, blanched vegetables two to three times a week, and why an all-protein diet is the molly-specific mistake." },
       { slug: "molly-handling-guide", line: "A netting-only fish, gonopodium versus gravid spot, and the breeding plan you need before you buy." },
@@ -917,7 +921,7 @@ export const fishGuides = [
         { label: "Quarantine", value: "At least 30 days in a separate tank before a new fish joins the school, given the disease risk this species carries.", source: "neon-tetra-tank-setup-guide" },
         { label: "Tankmates", value: "Peaceful, similarly sized community fish. Nothing with a mouth big enough for a neon, and no fin nippers.", source: "neon-tetra-handling-guide" },
         { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
-        { label: "Budget", value: "$1 to $3 a fish, occasionally $5, a school of 6 to 12 for $10 to $40. Setup roughly $100 to $300. Vet care does not apply; water quality and over-the-counter treatment are the whole of it.", source: "neon-tetra-cost-guide" },
+        { label: "Budget", value: "$1 to $3 a fish, occasionally $5, a school of 6 to 12 for $10 to $40. Setup roughly %%setup:neon-tetra%%. Vet care does not apply; water quality and over-the-counter treatment are the whole of it.", source: "neon-tetra-cost-guide" },
         { label: "Lifespan", value: "Around 5 years with stable care; average conditions see closer to 2 to 3.", source: "neon-tetra-cost-guide" },
         { label: "Adult size", value: "1 to 1.5 inches (2.5 to 4 cm)." },
         { label: "Water chemistry, the wider picture", value: "KH holds pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Work with what the source water gives you.", source: "freshwater-ph-gh-kh-guide" },
@@ -936,7 +940,7 @@ export const fishGuides = [
       vetLine: "Everything treatable here traces back to water quality and stability. Neon tetra disease is often mistaken for columnaris, which is treatable, so treat a suspect fish as bacterial first.",
     },
     routes: [
-      { slug: "neon-tetra-cost-guide", line: "$1 to $3 a fish, why the purchase is a group, and the $100 to $300 that goes into the tank around them." },
+      { slug: "neon-tetra-cost-guide", line: "$1 to $3 a fish, why the purchase is a group, and the %%setup:neon-tetra%% that goes into the tank around them." },
       { slug: "neon-tetra-tank-setup-guide", line: "10 gallons for six and a 20 long for ten, soft acidic water, gentle flow, dim light, and the blackwater detail." },
       { slug: "neon-tetra-feeding-guide", line: "Twice a day in 2 to 3 minutes, why a 1 to 2mm mouth changes what you buy, and the rule that stops an outbreak." },
       { slug: "neon-tetra-handling-guide", line: "Why this is a netting-only fish, the school floor, and the tankmates that turn a shoal into lunch." },
@@ -1010,7 +1014,7 @@ export const fishGuides = [
         { label: "Tank mates", value: "Predatory, not just assertive: what fits in the mouth ends up there. Large tough fish, severums or big plecos, in a large tank, or alone.", source: "oscar-fish-handling-guide" },
         { label: "Not a hands-on pet", value: "They recognize their keeper and can be hand-fed, but the relationship lives at the glass. Lying motionless as if dead is documented normal behavior, not illness.", source: "oscar-fish-handling-guide" },
         { label: "Quarantine", value: "At least 30 days in a separate tank with its own nets and siphon, 30 to 60 for a fish you especially do not want to lose.", source: "fish-quarantine-and-treatment-guide" },
-        { label: "Budget", value: "$7 to $35 for a common juvenile, over $100 for a specialty variety. A low-end 55-gallon build is around $560. The 75-gallon tank, canister filter and heater an adult needs run about $470 to $685, before the stand. Upkeep $35 to $40 a month.", source: "oscar-fish-cost-guide" },
+        { label: "Budget", value: "%%animal:oscar-fish%% for a common juvenile, over $100 for a specialty variety. A low-end 55-gallon build is around $560. The 75-gallon tank, canister filter and heater an adult needs run about %%setup:oscar-fish%%, before the stand. Upkeep %%monthly:oscar-fish%% a month.", source: "oscar-fish-cost-guide" },
         { label: "Lifespan", value: "10 to 15 years, occasionally close to 20.", source: "oscar-fish-cost-guide" },
         { label: "Adult size", value: "10 to 14 inches (25 to 36 cm); up to 16 inches in optimal conditions." },
         { label: "Sick fish check", value: "Clear water is not safe water. Ammonia, nitrite and low oxygen are invisible, and gasping at the surface is the visible sign. Test before assuming illness.", source: "spotting-a-sick-fish-guide" },
@@ -1029,7 +1033,7 @@ export const fishGuides = [
       vetLine: "Elevated nitrate is the common thread, hole-in-the-head most of all. Weekly water changes and heavy filtration are the primary defense.",
     },
     routes: [
-      { slug: "oscar-fish-cost-guide", line: "$7 to $35 for the fish and $575 to $670 for the tank, filter and heater it needs, the itemized build, and why the animal is the smallest number in the equation." },
+      { slug: "oscar-fish-cost-guide", line: "%%animal:oscar-fish%% for the fish and $575 to $670 for the tank, filter and heater it needs, the itemized build, and why the animal is the smallest number in the equation." },
       { slug: "oscar-fish-tank-setup-guide", line: "The 75-gallon adult minimum to build immediately rather than grow into, filtration sized to 4 or 5 times the volume, and the decor an oscar will move anyway." },
       { slug: "oscar-fish-feeding-guide", line: "The 80/20 pellet-and-frozen split, feeding frequency by size, and why feeder goldfish are the one mistake that matters most." },
       { slug: "oscar-fish-handling-guide", line: "The aquatic dog reputation and what is actually behind it, the sulking after a water change, and the rule that anything fitting in an oscar's mouth ends up there." },
@@ -1106,7 +1110,7 @@ export const fishGuides = [
         { label: "Sexing", value: "Males grow a rod-like anal fin, the gonopodium, at anywhere from about two to six and a half months. Females keep the fan-shaped fin and often show a dark gravid spot near the vent.", source: "platy-handling-guide" },
         { label: "Quarantine", value: "At least 30 days in a separate tank before new fish join the display, which catches most problems, shimmy included, before they spread.", source: "platy-health-issues-guide" },
         { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
-        { label: "Budget", value: "$2 to $6 a fish, a six-pack around $30. A basic setup runs $60 to $120, and a 10-gallon costs about $15 to $20 a month to run. Vet care does not apply.", source: "platy-cost-guide" },
+        { label: "Budget", value: "%%animal:platy%% a fish, a six-pack around $30. A basic setup runs %%setup:platy%%, and a 10-gallon costs about %%monthly:platy%% a month to run. Vet care does not apply.", source: "platy-cost-guide" },
         { label: "Lifespan", value: "2 to 4 years, with excellent water pushing a fish toward 5.", source: "platy-cost-guide" },
         { label: "Adult size", value: "2 to 3 inches (5 to 7.5 cm), females larger than males." },
         { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
@@ -1125,7 +1129,7 @@ export const fishGuides = [
       vetLine: "Stress, unstable water, overcrowding, and skipped quarantine sit behind nearly every condition on this list.",
     },
     routes: [
-      { slug: "platy-cost-guide", line: "$2 to $6 a fish, $60 to $120 for the tank around them, and the fry cost nobody budgets for." },
+      { slug: "platy-cost-guide", line: "%%animal:platy%% a fish, %%setup:platy%% for the tank around them, and the fry cost nobody budgets for." },
       { slug: "platy-tank-setup-guide", line: "A real 10 gallons and why a 20 long meets the stricter footprint, hard alkaline water, and a filter that won't shred fry." },
       { slug: "platy-feeding-guide", line: "Once or twice a day, why the vegetable side matters less here than for a molly, and the stringy-waste sign you overfed." },
       { slug: "platy-handling-guide", line: "Gonopodium versus gravid spot, when a platy is old enough to sex, and four concrete ways to manage the population." },
@@ -1204,7 +1208,7 @@ export const fishGuides = [
         { label: "Quarantine", value: "At least 30 days in a separate tank before a new fish joins the display.", source: "swordtail-handling-guide" },
         { label: "Sexing", value: "Males carry the sword and a rod-like anal fin. Females have neither and are the larger sex.", source: "swordtail-handling-guide" },
         { label: "Sex ratio", value: "At least two or three females per male, and three or four where the tank allows. Chewed fins or a clamped, listless fish in a male-heavy tank means move it to a recovery tank and fix the ratio at the same time.", source: "swordtail-health-issues-guide" },
-        { label: "Budget", value: "$3 to $25 a fish, more for lyretails. Setup $120 to $255, more at 29 or 30 gallons, then $20 to $35 a month. Swordtails rarely see a vet.", source: "swordtail-cost-guide" },
+        { label: "Budget", value: "%%animal:swordtail%% a fish, more for lyretails. Setup %%setup:swordtail%%, more at 29 or 30 gallons, then %%monthly:swordtail%% a month. Swordtails rarely see a vet.", source: "swordtail-cost-guide" },
         { label: "Lifespan", value: "3 to 5 years with stable water.", source: "swordtail-cost-guide" },
         { label: "Adult size", value: "Males up to 5.5 inches (14 cm) including the sword; females up to 6.2 inches (16 cm)." },
         { label: "Fry are coming", value: "A single female produces 20 to 100 or more fry roughly every 4 weeks without a fresh mating. Swordtails and platies interbreed readily, so a mixed livebearer tank breeds hybrids.", source: "swordtail-cost-guide" },
@@ -1225,7 +1229,7 @@ export const fishGuides = [
       vetLine: "An unbalanced male-to-female ratio measurably raises the odds of the pathogen-driven conditions above taking hold.",
     },
     routes: [
-      { slug: "swordtail-cost-guide", line: "$3 to $25 a fish, $120 to $255 for the tank, and why sizing up costs more than the table says." },
+      { slug: "swordtail-cost-guide", line: "%%animal:swordtail%% a fish, %%setup:swordtail%% for the tank, and why sizing up costs more than the table says." },
       { slug: "swordtail-tank-setup-guide", line: "A real 29 to 30 gallons, 65 to 82F, four to five times turnover, and a lid that actually seals." },
       { slug: "swordtail-feeding-guide", line: "The two-minute rule, vegetables a few times a week, and the five reasons a swordtail goes off its food." },
       { slug: "swordtail-handling-guide", line: "Float then drip, net rather than pour, quarantine at least 30 days, and sexing by the sword." },
@@ -1299,7 +1303,7 @@ export const fishGuides = [
         { label: "Fry you did not plan", value: "Daily live or frozen food is what triggers spawning. Keep it an occasional treat if you do not want fry.", source: "zebra-danio-feeding-guide" },
         { label: "Acclimation", value: "Float the sealed bag 15 to 20 minutes, then a quarter cup of tank water every 5 minutes for another 15 to 20. The bag water goes down the drain, not in the tank.", source: "zebra-danio-handling-guide" },
         { label: "Quarantine", value: "At least 30 days in a 10 to 20-gallon bare tank with its own sponge filter and heater. It doubles as the hospital tank later.", source: "zebra-danio-handling-guide" },
-        { label: "Budget", value: "$2 to $3 a fish, about $12 to $30 for the school; GloFish are the same species at about $8 each. Most first setups land around $85 to $210.", source: "zebra-danio-cost-guide" },
+        { label: "Budget", value: "%%animal:zebra-danio%% a fish, about $12 to $30 for the school; GloFish are the same species at about $8 each. Setup roughly %%setup:zebra-danio%%.", source: "zebra-danio-cost-guide" },
         { label: "Lifespan", value: "Around 3.5 years, up to 5.5 with excellent care.", source: "zebra-danio-cost-guide" },
         { label: "Adult size", value: "1.5 to 2.5 inches (4 to 6 cm); occasionally to 3 inches (7.5 cm) in captivity." },
         { label: "Mycobacteriosis", value: "Lethargy, emaciation, ulcers and pale patches, with no reliable cure once visible. It can infect people through a cut, so gloves for tank maintenance if you have one.", source: "zebra-danio-health-issues-guide" },
@@ -1320,7 +1324,7 @@ export const fishGuides = [
       vetLine: "A slow-growing, sometimes painful bump on your own skin after tank work is a doctor's visit; the same bacterium infects people through cuts.",
     },
     routes: [
-      { slug: "zebra-danio-cost-guide", line: "$2 a fish, $85 to $210 for a first setup, and why GloFish cost four times as much for identical care." },
+      { slug: "zebra-danio-cost-guide", line: "$2 a fish, %%setup:zebra-danio%% for a first setup, and why GloFish cost four times as much for identical care." },
       { slug: "zebra-danio-tank-setup-guide", line: "The 90x30cm footprint, 64 to 77F, and the rare community fish that might not need a heater." },
       { slug: "zebra-danio-feeding-guide", line: "Twice a day, two to three minutes, and the live food that triggers an accidental spawn." },
       { slug: "zebra-danio-handling-guide", line: "Trap and guide rather than chase, float-and-drip timings, and the school size that matters more than technique." },
@@ -1346,4 +1350,4 @@ export const fishGuides = [
       { q: "How many zebra danios should I keep together?", a: "At least 6. Five to 6 is the workable minimum, but 8 to 10 or more is the better start for natural schooling behavior. A group that's too small is more likely to direct fin-nipping energy at tankmates instead of schooling normally." },
     ],
   },
-];
+]);

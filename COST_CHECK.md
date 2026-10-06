@@ -31,8 +31,8 @@ never invented. Where no price exists, say so and ask the owner.
 
 | Package | Cost guide + hub | Package | Notes |
 |---|---|---|---|
-| Goldfish | ✅ 2026-10-03 | ❌ needs fix | Filter row now $50 to $85 (200+ gallons an hour), setup $145 to $325 (was $105 to $270). Book budget page and profile still say $105 to $270. Branch claude/goldfish-filter. |
-| Betta fish | ✅ 2026-10-03 | ✅ no change | All totals, hub lines and links matched. |
+| Goldfish | ✅ 2026-10-06 | ❌ needs fix | Filter row now $50 to $85 (200+ gallons an hour), setup $145 to $325 (was $105 to $270). Book budget page and profile still say $105 to $270. Branch claude/goldfish-filter. Site: moved onto the shared price list with the setup unchanged ($310 to $615); the fish and the "setup plus the fish" rows left the table, so the footer total is the setup. |
+| Betta fish | ✅ 2026-10-06 | ✅ no change | All totals, hub lines and links matched. Site: moved onto the shared price list with the setup unchanged ($150 to $360); the fish and the all-in rows left the table (the all-in row was being added into the total). |
 | Budgie | ◐ hub only | ❌ needs fix | Buy list fixed and linked (branch claude/budgie-rebuild). Cost table still has no rows for gram scale ($30 to $40), cuttlebone ($8 to $12), UV light (no catalog price). Waiting on the owner. Site: moved onto the shared price list 2026-10-06 with every figure unchanged ($315 to $750, bird included). |
 | Lovebird | ◐ hub only | ❌ needs fix | Buy list fixed and linked (branch claude/lovebird-rebuild). Cost table still has no rows for dishes ($10 to $18), bath ($12 to $16), gram scale ($30 to $40), UV light (no catalog price). Waiting on the owner. Site: moved onto the shared price list 2026-10-06 with every figure unchanged ($275 to $600). |
 | Cockatiel | ◐ rebuild | ✅ matches site | Rebuilt 3.0 on claude/cockatiel-rebuild: setup $295 to $601, book matches. Hub buy list items with no cost row: cuttlebone or mineral block, nightlight or cage cover. No gear available: the bird, annual total. Site: moved onto the shared price list 2026-10-06 with every figure unchanged ($370 to $765, bird included). |
@@ -61,22 +61,22 @@ Same checks 1 to 6. A change here touches the guide and the hub only.
 | Ackie monitor | ✅ 2026-10-06: setup $900 to $2,245 (was $850 to $2,150 or more; hub route line and the ackie overview said $800 to $1,500). Added rows (must-haves only, owner 2026-10-06): first supply of calcium and vitamin A multivitamin, kitchen scale for the weekly weights; the daylight LED, puzzle feeder and clicker are priced in a separate extras table, not counted in the setup total; the UV index meter keeps its own highly recommended note; UVB now the 36 in 12% kit (the 22 in kit spans about a third of a 5 ft enclosure), also on the setup guide. No gear available: a 5x2.5x4 ft enclosure (the catalog's 48x24x48 is below the minimum, so it is unlinked from the cost, setup and enrichment guides); hides. After the Fable check (2026-10-06): basking row first unlinked (the 250 W bulb is only the cold-room step-up), then linked to the owner's pick, LUCKY HERP 100 W 2 pack (B0BQW3Z9PJ), which the hub's basking line now links too; split (owner, 2026-10-06) into the bulbs, $10 to $15 from the owner's $11.99 for the linked pack, and two dome lamps rated to 150 W, $25 to $40 each, setup now $900 to $2,245; substrate row unlinked and priced as the DIY topsoil and sand mix (12 to 24 inches over 5x2.5 ft is 11 or more 36 qt bags of the bioactive mix, far over the row), the hub keeps its bioactive mix link; infrared gun and supplement floors lowered to cover the catalog prices; the below-spec enclosure lost its ackie covers string; catalog prices added for the Bio Dude LED (~$85, thebiodude.com $84.95) and the Daltile slate 6 pack ($39 to $56, Home Depot and Lowe's per square foot). Unpriced: substrate dam. Prices checked: Zoo Med plain calcium 8 oz $9.79 to $12.99 (Walmart, ReptileSupply, Poudre Feed), Repashy Vitamin A Plus 3 oz $8.99 to $10.99 (Josh's Frogs, LLL Reptile, Repashy). |
 | African grey parrot | ✅ 2026-10-06, on the shared price list: setup $500 to $1,230 (was "roughly $500 to $1,500"; seoTitle said "$500+"). Necessities: powder-coated cage 36x24x48 with 3/4 to 1 in bars (unlinked), perches, avian UVB kit (PetSmart $64.99, others $74.99 to $91.99), large-parrot foraging toys, two bolt-on dishes, a grey-size carrier ($36.99 to $124.99 at PetSmart and Chewy, unlinked), cage cover, mist bottle, gram scale; extras: play stand ($209.99 to $249.99), HEPA purifier. UV index meter note added. Unlinked as below spec on every grey page: the Yaheetech "large" flight cage (31 x 20.5 in body, sold for parakeets and cockatiels; cost, setup and vs-cockatoo guides), the parakeet perch set (cost, setup), the budgie apple-wood perch set (enrichment). Harrison's High Potency Fine and RoudyBush Mini (small-bird grinds) replaced by Lafeber's Premium Daily Diet for Parrots on the cost and health guides; the feeding guide's "tree nuts" link to a pellet product removed. No gear available: powder-coated grey cage, large-parrot perch set, grey-size carrier. |
 | Amano shrimp | ☐ |
-| Angelfish | ☐ |
+| Angelfish | ✅ 2026-10-06, shared price list: setup $500 to $785 (was $395 to $640). Added a 48 in glass lid ($80 to $85, Amazon 2026-10), test kit, water conditioner; the FAQ no longer claims LED lighting is in the setup. No gear available: the hub's NICREW light is currently unavailable on Amazon. |
 | Argentine tegu | ✅ 2026-10-06, shared price list: setup $2,520 to $3,945 (was "often exceeding $1,000 to $3,000"). The 8x2x2 ready-made enclosure was below spec and double-counted beside the 8x4x4 build; it is gone and the text now explains why the table prices the 8x4x4. Added: soaking tub, thermometer and hygrometer, calcium, multivitamin; extras: daylight LED, puzzle board, clicker. Title now "Argentine Tegu Cost: <setup> to Set Up" to fit 60 characters. No gear available: 8x4x4 enclosure, hides. Substrate still priced per pack (question). |
 | Blue-tongue skink | ✅ 2026-10-06, shared price list: setup $335 to $830 (was $330 to $635 stated). Linked the hub's dimming thermostat, soakable water dish and XL hide cave; added calcium, multivitamin, gram scale, tongs. Hub UVB and supplement lines reworded to the products the table prices. |
 | Boa constrictor | ☐ |
 | Box turtle | ✅ 2026-10-06, shared price list: setup $370 to $515 (was roughly $325 to $489, and the hub route line said $345 to $453). The first row was a "full setup" total of the rows below it and is gone; added the basking bulb and dome it named, a thermostat and calcium with D3; UVB on the shared 36 in 6% kit. |
-| Bristlenose pleco | ☐ |
+| Bristlenose pleco | ✅ 2026-10-06, shared price list: setup $165 to $375 (was $150 to $310). Added substrate, water conditioner (its prose link and "$9 to $15" line are gone) and first sinking wafers. |
 | California kingsnake | ✅ 2026-10-06, shared price list: setup $380 to $575 (was roughly $200 to $500 stated, $354 to $506 in rows). Linked the hub's 48x24x24 wooden vivarium, heat mat and thermostat kit, aspen, cork hides and soakable dish; added a sphagnum humid hide, thermometer and hygrometer, tongs. |
 | Canary | ✅ 2026-10-06, shared price list: setup $285 to $460 (was roughly $195 to $345, four rows). Added the must-haves the hub lists: first pellets and egg food (Amazon $13.64 for the Higgins 3 pack), cage cover, gram scale, carrier; cuttlebone now the single 5 in piece; the two-cage line no longer states a figure. Prevue F040 flight cage confirmed 31 x 20.5 in, 1/2 in bars. |
-| Cardinal tetra | ☐ |
+| Cardinal tetra | ✅ 2026-10-06, shared price list: setup $95 to $345 (was $55 to $260). Added dark substrate, test kit, water conditioner, first micro pellets; the FAQ's typed row prices and the "$90 to $280" figure (guide and hub) are gone. |
 | Cherry shrimp | ☐ |
 | Chinchilla | ☐ |
 | Conure | ✅ 2026-10-06, shared price list: setup $315 to $530 before the bird (was roughly $230 to $470). The bird row left the setup table. The bundled dishes, bottle, cover, food and cuttlebone row split into dishes, cage cover, cuttlebone and first pellets; gram scale and carrier added; UVB on the shared avian kit item. Unlinked as wrong or below spec: the sugar glider pouch used as a bird tent (cost, setup and health guides; its "Snuggle pouch or bird tent" covers string removed) and the parakeet perch set. No gear available: a 24x24x30 cage with 1/2 to 5/8 in bars (the F040 is 20.5 in deep), conure perches, a bird tent. |
 | Corn snake | ✅ 2026-10-06, shared price list: setup $190 to $720 for a solid basic setup (was "roughly $250 to $600, up to $1,150 fully equipped"). The snake and the first exam left the setup table (the exam stays in the prose, $50 to $160); the optional UVB moved to extras with climbing branches. Rows link the heat mat kit, PT02T thermostat, aspen, cork hide, soakable bowl, thermometer and hygrometer; tongs added. The ten-year line no longer states a sum that could drift. |
-| Corydoras catfish | ☐ |
+| Corydoras catfish | ✅ 2026-10-06, shared price list: setup $110 to $255 (was $140 to $250; hub line said $150 to $215). Added water conditioner, first sinking wafers, gravel vacuum. |
 | Degu | ☐ |
-| Discus | ☐ |
+| Discus | ✅ 2026-10-06, shared price list: setup $330 to $860 (was $320 to $675). The 55 gallon row now covers its linked tank ($100 to $310) and the canister filter row its Fluval 407 ($150 to $320); added water conditioner and first discus food ($10 to $15, Amazon 2026-10). |
 | Emperor scorpion | ☐ |
 | Ferret | ☐ |
 | Fire-bellied toad | ✅ 2026-10-06, shared price list: setup $80 to $175 (was $35 to $90, "before plants and hides"). Added the hub's must-haves: screen lid, thermometer, cork bark hide, calcium with D3, multivitamin; extras: 7% UVB, slate for the water section. Plants stay outside the tables. |
@@ -88,23 +88,23 @@ Same checks 1 to 6. A change here touches the guide and the hub only.
 | Giant millipede | ☐ |
 | Green anole | ✅ 2026-10-06, shared price list: setup $355 to $510. The 36 in UVB kit was longer than the 24 in enclosure; the row now links the ShadeDweller kit the hub names. Added live plants and an all-in-one calcium and multivitamin; extras: daylight LED. |
 | Green iguana | ✅ 2026-10-06, shared price list: setup $960 to $1,180 (was about $1,032 to $1,101). Rows now link the products the hub already names: 4x2x4 PVC enclosure, 36 in 12% UVB kit, Exo Terra dimming thermostat, MistKing, cypress mulch, soakable dish, thermometer and hygrometer. |
-| Guppy | ☐ |
+| Guppy | ✅ 2026-10-06, shared price list: setup $110 to $270 (no stated figure before; the heading stays "Modest"). Added lid, sand, test kit, water conditioner, first guppy food. No gear available: a 10 gallon glass lid ($15 to $25 estimate). |
 | Hedgehog | ☐ |
 | Hermit crab | ☐ |
 | Jackson's chameleon | ✅ 2026-10-06, shared price list: setup $355 to $530. UVB linked to the 22 in Forest 6% kit (a 36 in kit is longer than a 24 in wide enclosure); thermostat, mister and plants linked; added thermometer and hygrometer, calcium, vitamin A multivitamin. No gear available: a hybrid enclosure with solid sides (the catalog's is all screen). |
 | Jumping spider | ☐ |
-| Koi | ☐ |
+| Koi | ✅ 2026-10-06, shared price list: parts table $2,275 to $9,255. The pond row is back to $2,000 to $8,000 (it had dropped to $180 by covering only the liner it links). The guide's "$5,100 to $15,875" is the cited installed price with labor and stays typed. Added test kit and water conditioner; beneficial bacteria as an extra. |
 | Leaf-tailed gecko | ☐ |
 | Madagascar hissing cockroach | ☐ |
 | Milk snake | ☐ |
-| Molly | ☐ |
+| Molly | ✅ 2026-10-06, shared price list: setup $190 to $410 (was $135 to $280). Added 30 in lid, sand, test kit, water conditioner, vegetable flakes ($15 to $20, Amazon 2026-10); aquarium salt moved to extras (optional by the hub's own words). |
 | Mourning gecko | ✅ 2026-10-06, shared price list: setup $245 to $475 (was $230 to $405 stated). Linked the ShadeDweller UVB kit (sized for a 12 in enclosure), coconut fiber, live plants, thermometer and hygrometer, misting bottle; added the powdered gecko diet, a feeding ledge, calcium and the hub's multivitamin. |
 | Mouse | ☐ |
-| Neon tetra | ☐ |
-| Oscar fish | ☐ |
+| Neon tetra | ✅ 2026-10-06, shared price list: setup $95 to $315 (was $100 to $300). Added dark substrate, test kit, water conditioner, first micro pellets. |
+| Oscar fish | ✅ 2026-10-06, shared price list: setup $665 to $965 (was $470 to $685). Added a 48x18 in glass canopy ($85 to $90, Amazon 2026-10), sand, test kit, water conditioner, gravel vacuum, cichlid pellets; backup hang-on-back filter as an extra. |
 | Pacman frog | ✅ 2026-10-06, shared price list: setup $130 to $265 (was $110 to $210). Heat row now the hub's side-mounted heat mat and thermostat kit (the old link was a bare 25 W bulb); linked thermometer, water dish, tongs; added hide, sphagnum moss, water conditioner, calcium, multivitamin. Dropped the hand-added "$115 to $325 all in" figure. No gear available: the terrarium. |
 | Parrotlet | ✅ 2026-10-06, shared price list: setup $295 to $495 (was roughly $210 to $365). Added first pellets and millet, cage cover, gram scale, carrier; toys and cuttlebone rows now cover their catalog prices; perches are the CZWESTC set the hub links. No gear available: a cage with 1/4 in bars. |
-| Platy | ☐ |
+| Platy | ✅ 2026-10-06, shared price list: setup $100 to $210 (was $60 to $120). Added lid, test kit, water conditioner, first small pellets. No gear available: a 10 gallon glass lid. |
 | Praying mantis | ☐ |
 | Quaker parakeet | ✅ 2026-10-06 (owner chose the rewrite), shared price list: setup $295 to $560 (was roughly $300 to $800, with a dated worked example at $400 to $590). The worked example table, its exact sale and list prices and the first exam row are replaced by the usual setup table; the cage-depth advice and the toy note stay in the prose; the vet price table stays. Unlinked as below spec: the Prevue 5 ft wrought iron flight cage (37 x 23 in, under the 24 in depth) on the cost, setup and enrichment guides, and on the zebra finch enrichment guide (1/2 in bars, finches need 3/8); Harrison's High Potency Fine pellets link removed from the monthly line. No gear available: a 24x24x36 cage with 1/2 to 5/8 in bars, natural wood perches, starter toys. |
 | Rat | ☐ |
@@ -115,12 +115,12 @@ Same checks 1 to 6. A change here touches the guide and the hub only.
 | Stick insect | ☐ |
 | Sugar glider | ☐ |
 | Sulcata tortoise | ✅ 2026-10-06, shared price list: setup $265 to $585 for the hatchling's indoor setup (heading was "$300 for a hatchling"); the outdoor enclosure and heated shelter, $500 to $2,500, now sit in their own "Adult Housing, Within a Few Years" table, not in the setup total. Linked the tortoise table and 14% UVB kit; added thermostat, calcium and multivitamin, cuttlebone, soak dish. No gear available: substrate mix, humid hide, basking lamp. |
-| Swordtail | ☐ |
+| Swordtail | ✅ 2026-10-06, shared price list: setup $170 to $345 (was $120 to $255). Added 30 in lid, test kit, water conditioner. |
 | Tiger salamander | ✅ 2026-10-06, shared price list: not converted yet: its setup table prices hides and decor as "Varies", so it is on the build-by-hand list. |
 | Tokay gecko | ☐ |
 | Uromastyx | ✅ 2026-10-06, shared price list: setup $540 to $1,195. Linked the 36 in 14% UVB kit, dimming thermostat, thermometer and hygrometer, infrared gun; added slate for the basking stack, a shallow water bowl, Miner-All calcium and multivitamin (the hub's current link), gram scale. Sand still per bag (question). |
 | Veiled chameleon | ✅ 2026-10-06, shared price list: setup $345 to $800. Linked the Reptibreeze 24x24x48 screen cage, the 22 in Forest 6% UVB kit, basking bulb, mister and plants; added thermostat, thermometer and hygrometer, plain calcium, calcium with D3, vitamin A multivitamin. |
-| Zebra danio | ☐ |
+| Zebra danio | ✅ 2026-10-06, shared price list: setup $95 to $230 (was $50 to $170). Heater moved to extras (optional in a warm room); added 30 in lid, substrate, test kit, water conditioner, micro pellets; the "$85 to $210" figure (guide and hub) is gone. |
 | Zebra finch | ✅ 2026-10-06, shared price list: setup $270 to $550 with the pair (was roughly $225 to $465). Added first pellets and egg food, clamp-on dishes, gram scale; cuttlebone row covers the Penn-Plax 2 pack. The 25 lb finch seed sack is not a setup item. No gear available: a cage with 3/8 in bars. |
 
 ## Owner questions from the price list (2026-10-06)
@@ -132,6 +132,8 @@ Collected while moving every cost guide onto the shared price list; answered tog
 - Tegu UVB: the linked LUCKY HERP 46 in kit carries a Desert 10.0 tube; the tegu care text says 12 to 14%. Keep it, or find a 12% 46 in kit in the gear pass?
 - Jackson's chameleon: the hub lists a cool-mist humidifier on a humidistat for the overnight humidity spike. Is that a must-have (setup table) or an extra? Neither product has a price yet.
 - Ackie monitor: the substrate dam has no product and no price. Source one, or fold it into the enclosure row?
+- Angelfish: the hub's NICREW ClassicLED 36 to 48 in light (B07M6P6ZJD) shows "Currently unavailable" on Amazon. Replace it, or leave the light out of the setup table as now?
+- Guppy and platy: no catalog product for a 10 gallon glass lid, so the row is an unlinked $15 to $25 estimate. Want me to source one?
 
 ## Open questions, to answer during the cost checks (logged 2026-10-03)
 
