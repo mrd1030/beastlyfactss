@@ -4777,6 +4777,7 @@ export const AFFILIATE_PRODUCTS = [
     category: "Heating & Lighting",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0BQW3Z9PJ?tag=beastlyfacts-20",
+    price: "~$12",
     description: "Two 100 W incandescent basking bulbs (R25, E26 base) for a two-bulb basking spot. Run them on a dimming thermostat.",
     covers: ["Multiple high-wattage basking bulbs and fixtures"],
     pets: ["reptiles-amphibians"],

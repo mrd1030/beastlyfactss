@@ -32,10 +32,16 @@ export const COST_ITEMS = {
     spec: '36 in, 12%',
     low: 110, high: 130, product: 'arcadia-lumenize-prot5-36in-12pct', checked: '2026-10',
   },
-  'basking-bulbs-100w-pair-with-fixtures': {
-    label: 'Two 100 W basking bulbs and fixtures rated for them',
-    spec: '2 x 100 W',
-    low: 40, high: 80, product: 'basking-bulb-lucky-herp-100w-2pack', checked: '2026-10',
+  // $11.99 for the linked 2 pack (owner, 2026-10-06), rounded outward.
+  'basking-bulb-100w-2pack': {
+    label: 'Two 100 W basking bulbs',
+    spec: '2 x 100 W, E26',
+    low: 10, high: 15, product: 'basking-bulb-lucky-herp-100w-2pack', checked: '2026-10',
+  },
+  'basking-fixture-dome-150w': {
+    label: 'Dome lamp rated for at least 100 W',
+    spec: 'ceramic socket, rated to 150 W',
+    low: 25, high: 40, product: 'high-wattage-basking-fixture', checked: '2026-10',
   },
   'thermostat-dimming': {
     label: 'Dimming thermostat',
