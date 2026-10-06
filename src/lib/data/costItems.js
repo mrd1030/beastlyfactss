@@ -251,12 +251,6 @@ export const COST_ITEMS = {
     spec: "several",
     low: 30, high: 60, product: "bird-toy-bbjinronjy-sola-ball-2pc", checked: '2026-10',
   },
-  // The catalog pouch is a sugar glider pouch, not a bird tent.
-  'snuggle-tent-bird': {
-    label: "Snuggle pouch or bird tent",
-    spec: "",
-    low: 10, high: 20, product: null, checked: '2026-10',
-  },
   'budgie-wide-flight-style-cage': {
     label: "Wide flight-style cage: at least 18 by 18 by 18 in for one bird, about 30 by 18 by 18 for a pair, bars half an inch or less apart",
     spec: "",
@@ -413,6 +407,381 @@ export const COST_ITEMS = {
     label: "Foraging and shreddable toys, four or five to start",
     spec: "",
     low: 25, high: 75, product: null, checked: '2026-10',
+  },
+  'bearded-dragon-enclosure-4x2x2-ft-120': {
+    label: "Enclosure (4x2x2 ft, ~120 gallons; check the dimensions before you buy)",
+    spec: "",
+    low: 200, high: 500, product: "pvc-enclosure-4x2x2", checked: '2026-10',
+  },
+  'bearded-dragon-basking-bulb-dome-fixture': {
+    label: "Basking bulb and dome fixture",
+    spec: "",
+    low: 35, high: 100, product: "basking-bulb-75w", checked: '2026-10',
+  },
+  'bearded-dragon-dimming-thermostat-safety-shutoff': {
+    label: "Dimming thermostat with a safety shutoff",
+    spec: "",
+    low: 115, high: 160, product: "thermostat-vivarium-electronics-ve-200", checked: '2026-10',
+  },
+  'bearded-dragon-thermometer-hygrometer-plus-infrared': {
+    label: "Thermometer and hygrometer, plus an infrared temp gun",
+    spec: "",
+    low: 25, high: 80, product: "digital-thermometer-hygrometer-combo", checked: '2026-10',
+  },
+  'bearded-dragon-substrate-paper-towel-slate': {
+    label: "Substrate (paper towel or slate tile)",
+    spec: "",
+    low: 5, high: 25, product: "slate-tile-daltile-12x12-6pack", checked: '2026-10',
+  },
+  'bearded-dragon-hides-basking-platform-climbing': {
+    label: "Hides, basking platform, climbing decor",
+    spec: "",
+    low: 40, high: 200, product: "cork-bark-round-hide", checked: '2026-10',
+  },
+  'bearded-dragon-hammock': {
+    label: "Hammock",
+    spec: "",
+    low: 10, high: 20, product: "bearded-dragon-hammock-triangle", checked: '2026-10',
+  },
+  'bearded-dragon-shallow-water-dish': {
+    label: "Shallow water dish",
+    spec: "",
+    low: 5, high: 15, product: "shallow-water-dish", checked: '2026-10',
+  },
+  'bearded-dragon-feeding-tongs': {
+    label: "Feeding tongs",
+    spec: "",
+    low: 5, high: 15, product: "feeding-tongs-lasnten-long-rubber-tip", checked: '2026-10',
+  },
+  'bearded-dragon-supply-plain-calcium-calcium': {
+    label: "First supply of plain calcium, calcium with D3 and a multivitamin",
+    spec: "",
+    low: 15, high: 20, product: "calcium-zoo-med-without-d3", checked: '2026-10',
+  },
+  'argentine-tegu-46in-high-output-uvb': {
+    label: "46in high output UVB fixture",
+    spec: "",
+    low: 65, high: 110, product: "argentine-tegu-uvb-46in", checked: '2026-10',
+  },
+  'argentine-tegu-heavy-duty-thermostat': {
+    label: "Heavy duty thermostat",
+    spec: "",
+    low: 15, high: 50, product: "argentine-tegu-thermostat-heavy-duty", checked: '2026-10',
+  },
+  'argentine-tegu-automatic-misting-system': {
+    label: "Automatic misting system",
+    spec: "",
+    low: 35, high: 180, product: "automatic-misting-system-fogger", checked: '2026-10',
+  },
+  'argentine-tegu-deep-substrate-multiple-bags': {
+    label: "Deep substrate (multiple bags needed for 12-18in depth)",
+    spec: "",
+    low: 10, high: 20, product: "substrate-tarantula-coconut-fiber-peat", checked: '2026-10',
+  },
+  'argentine-tegu-basking-radiant-heat-sources': {
+    label: "Basking and radiant heat sources",
+    spec: "",
+    low: 25, high: 150, product: "high-wattage-basking-fixture", checked: '2026-10',
+  },
+  'argentine-tegu-full-8x4x4ft-pvc-enclosure': {
+    label: "Full 8x4x4ft PVC enclosure, built to order and shipped (the adult size)",
+    spec: "",
+    low: 2200, high: 3140, product: null, checked: '2026-10',
+  },
+  'blue-tongue-skink-4x2x2-ft-enclosure-pvc': {
+    label: "4x2x2 ft enclosure (PVC preferred)",
+    spec: "",
+    low: 150, high: 400, product: "pvc-enclosure-4x2x2", checked: '2026-10',
+  },
+  'blue-tongue-skink-moderate-uvb-t5-ho': {
+    label: "Moderate UVB (T5 HO Arcadia 6%)",
+    spec: "",
+    low: 50, high: 115, product: "uvb-arcadia-forest-6", checked: '2026-10',
+  },
+  'blue-tongue-skink-basking-bulb-fixture': {
+    label: "Basking bulb + fixture",
+    spec: "",
+    low: 10, high: 40, product: "basking-dome-fixture", checked: '2026-10',
+  },
+  'blue-tongue-skink-thermostat': {
+    label: "Dimming thermostat",
+    spec: "",
+    low: 40, high: 95, product: "dimming-thermostat-exo-terra-proportional", checked: '2026-10',
+  },
+  'blue-tongue-skink-digital-thermometer-hygrometer': {
+    label: "Digital thermometer and hygrometer",
+    spec: "",
+    low: 10, high: 25, product: "digital-thermometer-hygrometer-combo", checked: '2026-10',
+  },
+  'blue-tongue-skink-coconut-fiber-topsoil-substrate': {
+    label: "Coconut fiber + topsoil substrate",
+    spec: "",
+    low: 10, high: 35, product: "substrate-tarantula-coconut-fiber-peat", checked: '2026-10',
+  },
+  'blue-tongue-skink-large-water-dish': {
+    label: "Large water dish",
+    spec: "",
+    low: 15, high: 30, product: "large-soakable-water-dish", checked: '2026-10',
+  },
+  'green-anole-24x24x24in-front-opening-terrarium': {
+    label: "24x24x24in front-opening terrarium",
+    spec: "",
+    low: 225, high: 275, product: "green-anole-enclosure-24x24x24", checked: '2026-10',
+  },
+  'green-anole-basking-heat-bulb-dome': {
+    label: "Basking heat bulb and dome fixture",
+    spec: "",
+    low: 20, high: 35, product: "basking-bulb-75w", checked: '2026-10',
+  },
+  'green-anole-t5-ho-uvb-fixture': {
+    label: "ShadeDweller UVB kit",
+    spec: "",
+    low: 55, high: 70, product: "uvb-arcadia-shadedweller-7-12in", checked: '2026-10',
+  },
+  'green-anole-thermometer-hygrometer-combo': {
+    label: "Thermometer/hygrometer combo",
+    spec: "",
+    low: 10, high: 35, product: "digital-thermometer-hygrometer-combo", checked: '2026-10',
+  },
+  'green-iguana-juvenile-enclosure-4x2x4-ft': {
+    label: "Juvenile enclosure, 4x2x4 ft PVC",
+    spec: "",
+    low: 540, high: 555, product: "ackie-enclosure-reptile-habitats-48x24x48-pvc", checked: '2026-10',
+  },
+  'green-iguana-t5-ho-uvb-kit': {
+    label: "T5 HO UVB kit, 36 inch, 12% or 14% bulb",
+    spec: "",
+    low: 100, high: 130, product: "arcadia-lumenize-prot5-36in-12pct", checked: '2026-10',
+  },
+  'green-iguana-halogen-basking-bulbs-75': {
+    label: "Halogen basking bulbs, 75 watt, two or three for the juvenile box",
+    spec: "",
+    low: 25, high: 50, product: "halogen-flood-vinaco-par30-75w-6pack", checked: '2026-10',
+  },
+  'green-iguana-dimming-thermostat': {
+    label: "Dimming thermostat",
+    spec: "",
+    low: 70, high: 130, product: "dimming-thermostat-exo-terra-proportional", checked: '2026-10',
+  },
+  'green-iguana-automatic-misting-system': {
+    label: "Automatic misting system",
+    spec: "",
+    low: 180, high: 210, product: "misting-system-mistking-starter-5th-gen", checked: '2026-10',
+  },
+  'green-iguana-large-soak-able-water': {
+    label: "Large soak-able water dish",
+    spec: "",
+    low: 15, high: 30, product: "large-soakable-water-dish", checked: '2026-10',
+  },
+  'green-iguana-digital-thermometer-hygrometer': {
+    label: "Digital thermometer and hygrometer",
+    spec: "",
+    low: 10, high: 35, product: "digital-thermometer-hygrometer-combo", checked: '2026-10',
+  },
+  'jacksons-chameleon-24x24x48-tall-screen-hybrid': {
+    label: "24x24x48 in tall screen or hybrid enclosure",
+    spec: "",
+    low: 120, high: 150, product: null, checked: '2026-10',
+  },
+  'jacksons-chameleon-uvb-fixture-bulb': {
+    label: "UVB fixture and bulb",
+    spec: "",
+    low: 85, high: 115, product: "uvb-arcadia-forest-6-22in-24w", checked: '2026-10',
+  },
+  'jacksons-chameleon-halogen-basking-bulb': {
+    label: "Halogen basking bulb",
+    spec: "",
+    low: 20, high: 25, product: null, checked: '2026-10',
+  },
+  'jacksons-chameleon-dimmer-thermostat-basking-bulb': {
+    label: "Dimmer/thermostat for the basking bulb",
+    spec: "",
+    low: 55, high: 95, product: "dimming-thermostat-exo-terra-proportional", checked: '2026-10',
+  },
+  'jacksons-chameleon-misting-system-manual-automated': {
+    label: "Misting system, manual or automated",
+    spec: "",
+    low: 35, high: 60, product: "automatic-misting-system-fogger", checked: '2026-10',
+  },
+  'jacksons-chameleon-live-plants-moisture-retentive': {
+    label: "Live plants and moisture-retentive substrate",
+    spec: "",
+    low: 15, high: 35, product: "live-terrarium-plants", checked: '2026-10',
+  },
+  'savannah-monitor-halogen-basking-bulb-cluster': {
+    label: "Halogen basking bulb (cluster of 2 or more required)",
+    spec: "",
+    low: 15, high: 30, product: "uromastyx-halogen-flood-bulb-100w", checked: '2026-10',
+  },
+  'savannah-monitor-substrate-multiple-bags-needed': {
+    label: "Substrate (multiple bags needed for 12-24+ inches of depth)",
+    spec: "",
+    low: 55, high: 65, product: "ackie-substrate-bio-dude-terra-sahara-36qt", checked: '2026-10',
+  },
+  'uromastyx-large-enclosure-4x2x2-ft': {
+    label: "Large enclosure, 4x2x2 ft minimum",
+    spec: "",
+    low: 280, high: 700, product: "pvc-enclosure-4x2x2", checked: '2026-10',
+  },
+  'uromastyx-t5-ho-uvb-kit': {
+    label: "T5 HO UVB kit, 36 inch, 14%",
+    spec: "",
+    low: 110, high: 145, product: "arcadia-t5-uvb-36in-14pct-dragon", checked: '2026-10',
+  },
+  'uromastyx-dimming-thermostat-halogens': {
+    label: "Dimming thermostat for the halogens",
+    spec: "",
+    low: 20, high: 95, product: "dimming-thermostat-exo-terra-proportional", checked: '2026-10',
+  },
+  'uromastyx-infrared-temperature-gun': {
+    label: "Infrared temperature gun",
+    spec: "",
+    low: 15, high: 30, product: "infrared-temp-gun", checked: '2026-10',
+  },
+  'veiled-chameleon-strong-uvb-t5-ho': {
+    label: "Strong UVB (T5 HO Arcadia 6% or 12%)",
+    spec: "",
+    low: 70, high: 115, product: "uvb-arcadia-forest-6-22in-24w", checked: '2026-10',
+  },
+  'veiled-chameleon-dripper-system-automatic-mister': {
+    label: "Dripper system and automatic mister",
+    spec: "",
+    low: 35, high: 100, product: "automatic-misting-system-fogger", checked: '2026-10',
+  },
+  'veiled-chameleon-laying-bin-moist-sand': {
+    label: "Laying bin with moist sand/soil (females)",
+    spec: "",
+    low: 15, high: 30, product: "storage-tub-sterilite-56qt", checked: '2026-10',
+  },
+  'conure-snuggle-pouch-bird-tent': {
+    label: "Snuggle pouch or bird tent",
+    spec: "",
+    low: 10, high: 20, product: null, checked: '2026-10',
+  },
+  'cockatiel-bag-cockatiel-seed-small': {
+    label: "First bag of cockatiel seed, kept to a small part of the diet",
+    spec: "",
+    low: 10, high: 20, product: null, checked: '2026-10',
+  },
+  'blue-tongue-skink-multiple-hides-enrichment-items': {
+    label: "Multiple hides and enrichment items",
+    spec: "",
+    low: 20, high: 40, product: "hide-exo-terra-reptile-cave-xl", checked: '2026-10',
+  },
+  'green-iguana-cypress-mulch-substrate': {
+    label: "Cypress mulch substrate",
+    spec: "",
+    low: 10, high: 20, product: "cypress-mulch-substrate", checked: '2026-10',
+  },
+  'green-iguana-climbing-branches': {
+    label: "Climbing branches",
+    spec: "",
+    low: 10, high: 20, product: null, checked: '2026-10',
+  },
+  'uromastyx-digital-thermometer-hygrometer': {
+    label: "Digital thermometer and hygrometer",
+    spec: "",
+    low: 10, high: 20, product: "digital-thermometer-hygrometer-combo", checked: '2026-10',
+  },
+  'uromastyx-sand-10-lb-bag': {
+    label: "Sand, 10 lb bag (a 4x2 ft floor takes at least 2.5 cubic ft)",
+    spec: "",
+    low: 5, high: 15, product: null, checked: '2026-10',
+  },
+  'veiled-chameleon-24x24x48-screen-enclosure': {
+    label: "24x24x48 in all-screen enclosure",
+    spec: "",
+    low: 150, high: 300, product: "enclosure-zoo-med-reptibreeze-24x24x48", checked: '2026-10',
+  },
+  'veiled-chameleon-basking-bulb': {
+    label: "Basking bulb",
+    spec: "",
+    low: 5, high: 40, product: "basking-bulb-75w", checked: '2026-10',
+  },
+  'veiled-chameleon-live-plants-pothos-hibiscus': {
+    label: "Live plants (pothos, hibiscus, ficus)",
+    spec: "",
+    low: 15, high: 80, product: "live-terrarium-plants", checked: '2026-10',
+  },
+  'thermo-hygrometer-digital': {
+    label: "Digital thermometer and hygrometer",
+    spec: "",
+    low: 10, high: 20, product: "digital-thermometer-hygrometer-combo", checked: '2026-10',
+  },
+  'multivitamin-reptivite-2oz': {
+    label: "Reptile multivitamin without D3",
+    spec: "2 oz",
+    low: 5, high: 5, product: "multivitamin-zoo-med-reptivite-without-d3-2oz", checked: '2026-10',
+  },
+  'soaking-tub-large-38in': {
+    label: "Large soaking tub the animal can fully enter",
+    spec: "38 x 38 in",
+    low: 95, high: 120, product: "soaking-tub-large-38in", checked: '2026-10',
+  },
+  'feeding-tongs-reptile': {
+    label: "Feeding tongs",
+    spec: "10 in, 2 pack",
+    low: 5, high: 15, product: "feeding-tongs-lasnten-long-rubber-tip", checked: '2026-10',
+  },
+  'led-daylight-6500k': {
+    label: "Daylight LED for brightness and live plants",
+    spec: "16 in, 6500 K",
+    low: 75, high: 85, product: "grow-light-bio-dude-glow-grow-16in", checked: '2026-10',
+  },
+  'live-plants-terrarium': {
+    label: "Live terrarium plants",
+    spec: "several",
+    low: 15, high: 35, product: "live-terrarium-plants", checked: '2026-10',
+  },
+  'calcium-multivitamin-all-in-one': {
+    label: "Calcium and multivitamin, all in one",
+    spec: "6 oz",
+    low: 15, high: 25, product: "calcium-repashy-plus-6oz", checked: '2026-10',
+  },
+  'calcium-d3-3oz': {
+    label: "Calcium with D3",
+    spec: "3 oz",
+    low: 5, high: 5, product: "calcium-zoo-med-repti-calcium-with-d3-3oz", checked: '2026-10',
+  },
+  'water-dish-shallow': {
+    label: "Shallow water dish",
+    spec: "",
+    low: 5, high: 15, product: "shallow-water-dish", checked: '2026-10',
+  },
+  'calcium-multivitamin-miner-all-2pack': {
+    label: "Calcium and multivitamin supplements",
+    spec: "Miner-All Indoor, 2 x 6 oz",
+    low: 20, high: 30, product: "calcium-miner-all-indoor-2pack", checked: '2026-10',
+  },
+  'fire-skink-enclosure-36x18x18-inch-glass': {
+    label: "Enclosure, 36x18x18 inch glass terrarium",
+    spec: "",
+    low: 200, high: 280, product: "enclosure-repti-zoo-36x18x18-50gal", checked: '2026-10',
+  },
+  'fire-skink-t5-ho-uvb-kit': {
+    label: "T5 HO UVB kit, 36 inch, 6% bulb",
+    spec: "",
+    low: 95, high: 115, product: "uvb-arcadia-forest-6", checked: '2026-10',
+  },
+  'fire-skink-basking-bulb-2-pack': {
+    label: "Basking bulb (2 pack) and dome fixture",
+    spec: "",
+    low: 45, high: 45, product: null, checked: '2026-10',
+  },
+  'fire-skink-dimming-thermostat-basking-bulb': {
+    label: "Dimming thermostat, for the basking bulb",
+    spec: "",
+    low: 25, high: 35, product: "dimming-thermostat-pt02t", checked: '2026-10',
+  },
+  'fire-skink-coconut-fiber-substrate-6': {
+    label: "Coconut fiber substrate, about 6 inches deep (8 to 9 bags)",
+    spec: "",
+    low: 85, high: 100, product: null, checked: '2026-10',
+  },
+  'fire-skink-two-hides': {
+    label: "Two hides",
+    spec: "",
+    low: 5, high: 60, product: null, checked: '2026-10',
   },
   'uv-index-meter': {
     label: 'UV index meter',

@@ -27,14 +27,20 @@ function rowText(row) {
   if (!row.item) return row.text;
   const item = COST_ITEMS[row.item];
   const text = row.text || (item.product ? `[${item.label}]` : item.label);
-  const product = item.product && PRODUCTS[item.product];
+  // row.products links each bracket in turn (a "bulb and dome" row); without
+  // it every bracket links the item's own product.
+  const slugs = row.products || [item.product];
   const parts = text.split(/\[([^\]]+)\]/);
   if (parts.length === 1) return text;
   return (
     <>
-      {parts.map((part, i) => (i % 2 === 1 && product
-        ? <AffiliateLink key={i} href={product.link} product={product.product}>{part}</AffiliateLink>
-        : part))}
+      {parts.map((part, i) => {
+        if (i % 2 === 0) return part;
+        const product = PRODUCTS[slugs[Math.min((i - 1) / 2, slugs.length - 1)]];
+        return product
+          ? <AffiliateLink key={i} href={product.link} product={product.product}>{part}</AffiliateLink>
+          : part;
+      })}
     </>
   );
 }

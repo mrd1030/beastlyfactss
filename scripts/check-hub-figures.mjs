@@ -24,7 +24,7 @@
 // unchanged; the sentence around them can be shorter than the article's.
 import fs from 'node:fs';
 import path from 'node:path';
-import { resolveCostTokens } from '../src/lib/costs.js';
+import { resolveCostTokens, costTableText } from '../src/lib/costs.js';
 
 const args = process.argv.slice(2);
 const verbose = args.includes('--verbose');
@@ -79,7 +79,11 @@ function readArticle(slug) {
   let found = null;
   for (const dir of ['content/guides', 'content/blog']) {
     const p = path.join(dir, slug + '.mdx');
-    if (fs.existsSync(p)) { found = articleNumbers(mdxToText(resolveCostTokens(fs.readFileSync(p, 'utf8')))); break; }
+    if (fs.existsSync(p)) {
+      const raw = fs.readFileSync(p, 'utf8');
+      found = articleNumbers(mdxToText(resolveCostTokens(raw)) + '\n' + costTableText(raw));
+      break;
+    }
   }
   articleCache.set(slug, found);
   return found;

@@ -69,6 +69,22 @@ export function resolveCostTokens(text) {
   });
 }
 
+// The rows each <CostTable> in a raw MDX file draws, as plain text with their
+// prices and the total, for scripts that check an article's figures by
+// reading the file (the hub figure check).
+export function costTableText(text) {
+  const out = [];
+  for (const m of String(text).matchAll(/<CostTable\s+guide="([^"]+)"\s+section="([^"]+)"/g)) {
+    const rows = (COST_SHEETS[m[1]] || {})[m[2]] || [];
+    for (const r of rows) {
+      const label = r.text || (COST_ITEMS[r.item] || {}).label || '';
+      out.push(`${label.replace(/[\[\]]/g, '')} ${formatRange(rowRange(r), ' - ')}`);
+    }
+    if (rows.length) out.push(`Total ${formatRange(sectionTotal(m[1], m[2]), ' - ')}`);
+  }
+  return out.join('\n');
+}
+
 // The products each <CostTable> in a raw MDX file links, so scripts that find
 // an article's affiliate links by reading the file (the disclosure check, the
 // per-animal gear lists) see the table rows the component draws at render.
@@ -79,7 +95,7 @@ export function costTableProducts(text) {
     tables.push({
       guide: m[1],
       section: m[2],
-      products: rows.map((r) => r.item && COST_ITEMS[r.item] && COST_ITEMS[r.item].product).filter(Boolean),
+      products: rows.flatMap((r) => r.products || [r.item && COST_ITEMS[r.item] && COST_ITEMS[r.item].product]).filter(Boolean),
     });
   }
   return tables;

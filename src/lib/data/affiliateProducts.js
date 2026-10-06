@@ -245,7 +245,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$12–$20",
     description: "Moisture-holding mulch that works well for snakes and other species needing moderate humidity.",
-    covers: ["Coconut fiber or cypress mulch substrate", "Cypress mulch or coconut fiber substrate", "Aspen or cypress mulch substrate", "Cypress mulch or coconut coir substrate, 3 to 4 inches deep", "Enough cypress mulch, coconut fiber or organic topsoil for 12 to 18 inches across an 8 by 4 foot floor"],
+    covers: ["Coconut husk or large-particle cypress mulch, 2 to 4 inches", "Coconut fiber or cypress mulch substrate", "Cypress mulch or coconut fiber substrate", "Aspen or cypress mulch substrate", "Cypress mulch or coconut coir substrate, 3 to 4 inches deep", "Enough cypress mulch, coconut fiber or organic topsoil for 12 to 18 inches across an 8 by 4 foot floor"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1627,7 +1627,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$25–$35",
     description: "Thermostat that automatically adjusts heat output to hold a steadier basking temperature.",
-    covers: ["Thermostat"],
+    covers: ["A dimming thermostat for the basking bulb", "Thermostat"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1639,7 +1639,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$73–$93",
     description: "Thermostat that automatically adjusts heat output to hold a steadier basking temperature.",
-    covers: ["Quality thermostat", "Heat source + quality thermostat", "Thermostat for the heat source", "A dimming thermostat for the basking bulb", "Dimming thermostat", "Dimmer/thermostat for the basking bulb"],
+    covers: ["Quality thermostat", "Heat source + quality thermostat", "Thermostat for the heat source", "Dimming thermostat", "Dimmer/thermostat for the basking bulb"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -4746,7 +4746,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B00167S5GC?tag=beastlyfacts-20",
     price: "~$4",
     description: "Reptile vitamin, mineral and amino acid powder with no added D3, for dusting insects or greens on multivitamin days. It contains dicalcium phosphate, so it is not phosphorus free.",
-    covers: ["Reptile multivitamin"],
+    covers: ["A reptile multivitamin without D3", "Reptile multivitamin"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -4757,7 +4757,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B094DBWD8C?tag=beastlyfacts-20",
     price: "~$6",
     description: "Phosphorus free precipitated calcium carbonate with vitamin D3, for the dusting days that call for D3. A single 3 oz jar, listed by DBDPet with a printed tip card attached.",
-    covers: ["Calcium with D3 powder"],
+    covers: ["Calcium with D3", "Calcium with D3 powder"],
     pets: ["reptiles-amphibians"],
   },
   // --- Bearded dragon thermostat (2026-10-03) ---

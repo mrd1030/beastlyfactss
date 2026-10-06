@@ -41,7 +41,7 @@ never invented. Where no price exists, say so and ask the owner.
 | Guinea pig | ☐ | ☐ | Cost guide re-totaled on claude/guinea-pig-rebuild (setup $158 to $204). |
 | Hamster | ☐ | ☐ | On claude/hamster-rebuild. |
 | Cockatoo | ☐ | ☐ | Found in the 1.4 light pass: the book's budget page itemizes setup at $2,195 to $7,340 (play stand, purifier, carrier, up to a $3,500 Moluccan); the site's first-year table says $1,975 to $6,300 before toys, bird $700 to $3,000. Scopes differ; the book's disagree page explains it. Site: moved onto the shared price list 2026-10-06 with every figure unchanged ($2,270 to $6,410; gear $1,430 to $3,200). |
-| Bearded dragon | ☐ | ☐ | |
+| Bearded dragon | ✅ 2026-10-06 | ☐ | Site: moved onto the shared price list with every figure unchanged ($575 to $1,280). |
 | Leopard gecko | ☐ | ☐ | |
 | Crested gecko | ☐ | ☐ | |
 | Gargoyle gecko | ☐ | ☐ | |
@@ -62,8 +62,8 @@ Same checks 1 to 6. A change here touches the guide and the hub only.
 | African grey parrot | ✅ 2026-10-06, on the shared price list: setup $500 to $1,230 (was "roughly $500 to $1,500"; seoTitle said "$500+"). Necessities: powder-coated cage 36x24x48 with 3/4 to 1 in bars (unlinked), perches, avian UVB kit (PetSmart $64.99, others $74.99 to $91.99), large-parrot foraging toys, two bolt-on dishes, a grey-size carrier ($36.99 to $124.99 at PetSmart and Chewy, unlinked), cage cover, mist bottle, gram scale; extras: play stand ($209.99 to $249.99), HEPA purifier. UV index meter note added. Unlinked as below spec on every grey page: the Yaheetech "large" flight cage (31 x 20.5 in body, sold for parakeets and cockatiels; cost, setup and vs-cockatoo guides), the parakeet perch set (cost, setup), the budgie apple-wood perch set (enrichment). Harrison's High Potency Fine and RoudyBush Mini (small-bird grinds) replaced by Lafeber's Premium Daily Diet for Parrots on the cost and health guides; the feeding guide's "tree nuts" link to a pellet product removed. No gear available: powder-coated grey cage, large-parrot perch set, grey-size carrier. |
 | Amano shrimp | ☐ |
 | Angelfish | ☐ |
-| Argentine tegu | ☐ |
-| Blue-tongue skink | ☐ |
+| Argentine tegu | ✅ 2026-10-06, shared price list: setup $2,520 to $3,945 (was "often exceeding $1,000 to $3,000"). The 8x2x2 ready-made enclosure was below spec and double-counted beside the 8x4x4 build; it is gone and the text now explains why the table prices the 8x4x4. Added: soaking tub, thermometer and hygrometer, calcium, multivitamin; extras: daylight LED, puzzle board, clicker. Title now "Argentine Tegu Cost: <setup> to Set Up" to fit 60 characters. No gear available: 8x4x4 enclosure, hides. Substrate still priced per pack (question). |
+| Blue-tongue skink | ✅ 2026-10-06, shared price list: setup $335 to $830 (was $330 to $635 stated). Linked the hub's dimming thermostat, soakable water dish and XL hide cave; added calcium, multivitamin, gram scale, tongs. Hub UVB and supplement lines reworded to the products the table prices. |
 | Boa constrictor | ☐ |
 | Box turtle | ☐ |
 | Bristlenose pleco | ☐ |
@@ -80,18 +80,18 @@ Same checks 1 to 6. A change here touches the guide and the hub only.
 | Emperor scorpion | ☐ |
 | Ferret | ☐ |
 | Fire-bellied toad | ☐ |
-| Fire skink | ☐ |
+| Fire skink | ✅ 2026-10-06, shared price list: setup $480 to $680 (was roughly $554 to $627). Linked the 36x18x18 enclosure, the 36 in 6% UVB kit and the PT02T dimming thermostat the text names; added calcium with D3, multivitamin, tongs; the prose thermostat link dropped (one link per product, the table keeps it). |
 | Flying squirrel | ☐ |
 | Garter snake | ☐ |
 | Gerbil | ☐ |
 | Ghost shrimp | ☐ |
 | Giant millipede | ☐ |
-| Green anole | ☐ |
-| Green iguana | ☐ |
+| Green anole | ✅ 2026-10-06, shared price list: setup $355 to $510. The 36 in UVB kit was longer than the 24 in enclosure; the row now links the ShadeDweller kit the hub names. Added live plants and an all-in-one calcium and multivitamin; extras: daylight LED. |
+| Green iguana | ✅ 2026-10-06, shared price list: setup $960 to $1,180 (was about $1,032 to $1,101). Rows now link the products the hub already names: 4x2x4 PVC enclosure, 36 in 12% UVB kit, Exo Terra dimming thermostat, MistKing, cypress mulch, soakable dish, thermometer and hygrometer. |
 | Guppy | ☐ |
 | Hedgehog | ☐ |
 | Hermit crab | ☐ |
-| Jackson's chameleon | ☐ |
+| Jackson's chameleon | ✅ 2026-10-06, shared price list: setup $355 to $530. UVB linked to the 22 in Forest 6% kit (a 36 in kit is longer than a 24 in wide enclosure); thermostat, mister and plants linked; added thermometer and hygrometer, calcium, vitamin A multivitamin. No gear available: a hybrid enclosure with solid sides (the catalog's is all screen). |
 | Jumping spider | ☐ |
 | Koi | ☐ |
 | Leaf-tailed gecko | ☐ |
@@ -111,17 +111,27 @@ Same checks 1 to 6. A change here touches the guide and the hub only.
 | Red-eared slider | ☐ |
 | Red-footed tortoise | ☐ |
 | Rosy boa | ☐ |
-| Savannah monitor | ☐ |
+| Savannah monitor | ✅ 2026-10-06, shared price list: setup $2,495 to $3,620 (was "several hundred to over $1,000"). The 8x2x2 stand-in was below spec; the table now prices the 8x4x4 the guide says an adult needs, ordered from a maker, with the DIY-build advice kept. Added thermostat, 46 in UVB, infrared thermometer, water basin, calcium, multivitamin, tongs; extras: LED, puzzle, clicker. The prose link to a 22 in UVB kit (far too short for 8 ft) removed. Substrate per bag (question). |
 | Stick insect | ☐ |
 | Sugar glider | ☐ |
 | Sulcata tortoise | ☐ |
 | Swordtail | ☐ |
 | Tiger salamander | ☐ |
 | Tokay gecko | ☐ |
-| Uromastyx | ☐ |
-| Veiled chameleon | ☐ |
+| Uromastyx | ✅ 2026-10-06, shared price list: setup $540 to $1,195. Linked the 36 in 14% UVB kit, dimming thermostat, thermometer and hygrometer, infrared gun; added slate for the basking stack, a shallow water bowl, Miner-All calcium and multivitamin (the hub's current link), gram scale. Sand still per bag (question). |
+| Veiled chameleon | ✅ 2026-10-06, shared price list: setup $345 to $800. Linked the Reptibreeze 24x24x48 screen cage, the 22 in Forest 6% UVB kit, basking bulb, mister and plants; added thermostat, thermometer and hygrometer, plain calcium, calcium with D3, vitamin A multivitamin. |
 | Zebra danio | ☐ |
 | Zebra finch | ✅ 2026-10-06, shared price list: setup $270 to $550 with the pair (was roughly $225 to $465). Added first pellets and egg food, clamp-on dishes, gram scale; cuttlebone row covers the Penn-Plax 2 pack. The 25 lb finch seed sack is not a setup item. No gear available: a cage with 3/8 in bars. |
+
+## Owner questions from the price list (2026-10-06)
+
+Collected while moving every cost guide onto the shared price list; answered together at the end.
+
+- Substrate priced per bag on the big lizards: the tegu (12 to 18 in over 8x4 ft), savannah monitor (12 to 24 in over 8x4 ft) and uromastyx (sand, 2.5 cubic ft or more) rows still show one bag's price, so their setup totals are too low. Price the full depth (bags needed times the bag price), or keep per bag and say so in the row?
+- Tegu and savannah monitor hides: no catalog hide is sized for a 4 ft lizard, so they are unpriced. Source one on Amazon in the gear pass, or leave unpriced?
+- Tegu UVB: the linked LUCKY HERP 46 in kit carries a Desert 10.0 tube; the tegu care text says 12 to 14%. Keep it, or find a 12% 46 in kit in the gear pass?
+- Jackson's chameleon: the hub lists a cool-mist humidifier on a humidistat for the overnight humidity spike. Is that a must-have (setup table) or an extra? Neither product has a price yet.
+- Ackie monitor: the substrate dam has no product and no price. Source one, or fold it into the enclosure row?
 
 ## Open questions, to answer during the cost checks (logged 2026-10-03)
 

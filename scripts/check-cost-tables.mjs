@@ -50,6 +50,7 @@ for (const [guide, sheet] of Object.entries(COST_SHEETS)) {
       }
       if (!COST_ITEMS[row.item]) { errors.push(`sheet ${guide}: unknown item "${row.item}"`); continue; }
       used.add(row.item);
+      for (const p of row.products || []) if (!products.has(p)) errors.push(`sheet ${guide}: row product "${p}" is not in affiliateProducts.js`);
       if (row.low != null) notes.push(`sheet ${guide}: "${row.item}" overrides its price (${row.why || 'no reason given'})`);
     }
   }
