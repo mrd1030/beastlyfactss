@@ -123,6 +123,23 @@ Same checks 1 to 6. A change here touches the guide and the hub only.
 | Zebra danio | ✅ 2026-10-06, shared price list: setup $95 to $230 (was $50 to $170). Heater moved to extras (optional in a warm room); added 30 in lid, substrate, test kit, water conditioner, micro pellets; the "$85 to $210" figure (guide and hub) is gone. |
 | Zebra finch | ✅ 2026-10-06, shared price list: setup $270 to $550 with the pair (was roughly $225 to $465). Added first pellets and egg food, clamp-on dishes, gram scale; cuttlebone row covers the Penn-Plax 2 pack. The 25 lb finch seed sack is not a setup item. No gear available: a cage with 3/8 in bars. |
 
+## Gear-gap pass (2026-10-06)
+
+Catalog swept first, then Amazon searched with the spec from each care guide; every new product checked on its Amazon page (price, availability, dimensions, bar spacing).
+
+- Conure: cage, the 36 x 24 x 30 in wrought iron cage with 1/2 in bars (B0D9ZWR9FF, $140); perches, the CZWESTC apple wood set and rope perches; bird tent, the Wontee snuggle hut, large (B0CRNV564Z, $18). The Polly's cement perch is 1 1/4 in thick, too thick for a conure, so the grooming perch stays unlinked.
+- African grey: perches, the YML dragonwood perch and the Polly's cement perch (row now $70 to $100); carrier, a wrought iron bite-proof carrier with 3/4 in bars (B09KX5NGSZ, $73). Cage still unlinked: the only strict match on Amazon (36 x 24 or larger, 3/4 to 1 in bars) is the A&E 40 x 30 play top at $1,104, above the row's $250 to $800.
+- Quaker parakeet: perches, the CZWESTC set; toys, the KATUMO variety pack. Cage still unlinked: no 24 x 24 x 36 cage with heavy-gauge 1/2 to 5/8 in bars confirmed.
+- Parrotlet and zebra finch: a 30 x 18 x 36 in flight cage with 3/8 in bars (B08Q2ZK7MC, $60). The parrotlet row now reads "1/4 inch, 1/2 inch at the widest", matching its tank-setup guide.
+- Amano and cherry shrimp: the API GH and KH test kit ($12).
+- Giant millipede and tiger salamander: the Zilla 30 x 12 screen cover already in the catalog.
+- Pacman frog: the REPTI ZOO 20 gallon front-opening terrarium, 24 x 18 x 12 in (B08PFFQT3P, $171); the row is now $40 to $175.
+- Garter snake: the Zilla 36 x 18 screen lid ($50) with Zilla heavy-duty large clips (B01LXT6UZJ, $13); the locking clips in the catalog are unavailable.
+- Red-footed tortoise: a 150 W ceramic heat emitter in a second dome for night heat.
+- Sulcata: basking bulb and dome, a 60/40 topsoil and play sand mix 6 in deep, an X-large cave as the humid hide with sphagnum moss.
+- Not found: a Jackson's chameleon hybrid enclosure with solid sides, 24 x 24 x 48 in.
+- Not sourced, per the Fable list: replacement UVB tubes, the cockatoo cage and carrier, lovebird and cockatiel perches, tray paper, the acrylic tarantula lid, the 8x4x4 and 5x2.5x4 enclosures, garter vitamin B1.
+
 ## Owner questions from the price list (2026-10-06)
 
 Collected while moving every cost guide onto the shared price list; answered together at the end.

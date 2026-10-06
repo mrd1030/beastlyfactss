@@ -9,7 +9,7 @@ export const invertebrateSheets = {
       { item: "angelfish-driftwood-tall-plants", text: "[Driftwood and grazing surfaces]" },
       { item: "glass-lid-10-gallon", text: "Tight-fitting [glass lid] with every gap sealed (fits most standard 10 gallon tanks; measure your tank's opening)" },
       { item: "water-test-kit-liquid", text: "Liquid [water test kit] for ammonia, nitrite and nitrate" },
-      { item: "gh-kh-test-kit", text: "GH and KH test kit" },
+      { item: "gh-kh-test-kit", text: "[GH and KH test kit]" },
       { item: "water-conditioner", text: "[Water conditioner] that neutralizes chlorine and chloramine" },
     ],
   },
@@ -21,7 +21,7 @@ export const invertebrateSheets = {
       { item: "angelfish-aquarium-heater", text: "[Heater (if room runs cool)]" },
       { item: "angelfish-dense-live-silk-plants", text: "[Live plants or moss]" },
       { item: "water-test-kit-liquid", text: "Liquid [water test kit] for ammonia, nitrite and nitrate" },
-      { item: "gh-kh-test-kit", text: "GH and KH test kit" },
+      { item: "gh-kh-test-kit", text: "[GH and KH test kit]" },
       { item: "water-conditioner", text: "[Water conditioner] that neutralizes chlorine and chloramine" },
       { item: "fish-food-sinking-wafers", text: "First supply of [sinking wafers]" },
     ],
@@ -112,7 +112,7 @@ export const invertebrateSheets = {
   'giant-millipede': {
     necessities: [
       { item: "hermit-crab-20-gallon-long-tank", text: "A [20 gallon long tank], or a 40-gallon breeder tank or tub" },
-      { item: "screen-lid-20-long", text: "A secure, tightly fitting lid" },
+      { item: "screen-lid-20-long", text: "A secure, tightly fitting [screen lid]" },
       { item: "millipede-substrate-milli-mix", text: "One bag of [millipede substrate] as the starter and food layer, mixed in" },
       { item: "hognose-snake-leaf-litter-surface-cover", text: "Hardwood [leaf litter]" },
       { item: "cork-bark-hide-round", text: "[Cork bark] hides" },

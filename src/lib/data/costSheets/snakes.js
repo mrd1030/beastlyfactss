@@ -93,6 +93,7 @@ export const snakeSheets = {
       { item: "water-conditioner", text: "[Water conditioner] for the basin" },
       { item: "feeding-tongs-reptile", text: "[Feeding tongs]" },
       { item: "kitchen-scale-grams", text: "[Kitchen scale]" },
+      { item: "screen-lid-36x18-with-clips", products: ["screen-lid-zilla-36x18", "screen-clips-zilla-heavy-duty-large"], text: "[Screen lid] for the 36 by 18 inch top, held down with [heavy-duty clips]" },
     ],
   },
   'boa-constrictor': {

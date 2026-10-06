@@ -103,7 +103,7 @@ export const COST_ITEMS = {
   'perches-varied-large-parrot': {
     label: 'Natural wood, rope and cement perches in varied diameters',
     spec: 'large parrot',
-    low: 10, high: 25, product: null, checked: '2026-10',
+    low: 70, high: 100, product: "perch-yml-dragonwood-32in", checked: '2026-10',
   },
   // PetSmart $64.99 regular; LLL Reptile, Arcata Pet and others $74.99 to $91.99.
   'uvb-avian-compact-kit': {
@@ -126,7 +126,7 @@ export const COST_ITEMS = {
   'carrier-medium-large-parrot': {
     label: 'Travel carrier sized for a grey',
     spec: 'medium to large parrot',
-    low: 35, high: 125, product: null, checked: '2026-10',
+    low: 35, high: 125, product: "bird-carrier-wrought-iron-medium-parrot", checked: '2026-10',
   },
   'cage-cover-large': {
     label: 'Breathable cage cover for nighttime darkness',
@@ -197,7 +197,7 @@ export const COST_ITEMS = {
   'cage-flight-24x14x18-3-8-inch': {
     label: "Long flight cage, at least 24 by 14 by 18 inches, bars no wider than 3/8 inch",
     spec: "24 x 14 x 18 in, 3/8 in bars",
-    low: 175, high: 300, product: null, checked: '2026-10',
+    low: 60, high: 300, product: "bird-cage-flight-30x18x36-3-8in", checked: '2026-10',
   },
   'dishes-clamp-on-small-bird': {
     label: "Clamp-on food and water dishes",
@@ -233,18 +233,18 @@ export const COST_ITEMS = {
   'cage-small-parrot-18x18x24-quarter-inch': {
     label: "Cage at least 18 by 18 by 24 inches, bars 1/4 inch apart",
     spec: "18 x 18 x 24 in, 1/4 in bars",
-    low: 175, high: 300, product: null, checked: '2026-10',
+    low: 60, high: 300, product: "bird-cage-flight-30x18x36-3-8in", checked: '2026-10',
   },
   // The Prevue F040 is only 20.5 in deep, under a conure cage minimum.
   'cage-conure-24x24x30-half-to-5-8-inch': {
     label: "Cage at least 24 by 24 by 30 inches, bars 1/2 to 5/8 inch apart",
     spec: "24 x 24 x 30 in, 1/2 to 5/8 in bars",
-    low: 100, high: 180, product: null, checked: '2026-10',
+    low: 100, high: 180, product: "bird-cage-36x24x30-half-inch", checked: '2026-10',
   },
   'perches-conure-varied': {
     label: "Perches of varied diameters: natural wood, rope and a grooming perch",
     spec: "conure",
-    low: 20, high: 40, product: null, checked: '2026-10',
+    low: 10, high: 40, product: "bird-perch-czwestc-8pc-apple-wood", checked: '2026-10',
   },
   'toys-shreddable-conure': {
     label: "Foraging and shreddable toys",
@@ -396,7 +396,7 @@ export const COST_ITEMS = {
   'perches-quaker-natural-wood': {
     label: "Natural wood perches, three or four",
     spec: "manzanita or similar",
-    low: 30, high: 70, product: null, checked: '2026-10',
+    low: 10, high: 70, product: "bird-perch-czwestc-8pc-apple-wood", checked: '2026-10',
   },
   'pellets-small-22oz': {
     label: "First bag of pellets",
@@ -406,7 +406,7 @@ export const COST_ITEMS = {
   'toys-quaker-starter': {
     label: "Foraging and shreddable toys, four or five to start",
     spec: "",
-    low: 25, high: 75, product: null, checked: '2026-10',
+    low: 10, high: 75, product: "bird-toys-katumo-small-parrot-variety", checked: '2026-10',
   },
   'bearded-dragon-enclosure-4x2x2-ft-120': {
     label: "Enclosure (4x2x2 ft, ~120 gallons; check the dimensions before you buy)",
@@ -656,7 +656,7 @@ export const COST_ITEMS = {
   'conure-snuggle-pouch-bird-tent': {
     label: "Snuggle pouch or bird tent",
     spec: "",
-    low: 10, high: 20, product: null, checked: '2026-10',
+    low: 10, high: 20, product: "bird-snuggle-hut-wontee-large", checked: '2026-10',
   },
   'cockatiel-bag-cockatiel-seed-small': {
     label: "First bag of cockatiel seed, kept to a small part of the diet",
@@ -1441,7 +1441,7 @@ export const COST_ITEMS = {
   'pacman-frog-10-20-gallon-terrarium': {
     label: "10-20 gallon terrarium",
     spec: "",
-    low: 40, high: 80, product: null, checked: '2026-10',
+    low: 40, high: 175, product: "terrarium-repti-zoo-24x18x12", checked: '2026-10',
   },
   'pacman-frog-deep-coconut-fiber-topsoil': {
     label: "Deep coconut fiber or topsoil substrate",
@@ -1850,7 +1850,7 @@ export const COST_ITEMS = {
   'gh-kh-test-kit': {
     label: "GH and KH test kit",
     spec: "",
-    low: 10, high: 15, product: null, checked: '2026-10',
+    low: 10, high: 15, product: "test-kit-api-gh-kh", checked: '2026-10',
   },
   // 2026-10
   'water-tubes-floral-25pk': {
@@ -1871,7 +1871,7 @@ export const COST_ITEMS = {
   'screen-lid-20-long': {
     label: "Screen lid for a 20 gallon long",
     spec: "30x12 in",
-    low: 20, high: 30, product: null, checked: '2026-10',
+    low: 20, high: 45, product: "screen-cover-zilla-30x12", checked: '2026-10',
   },
   'chinchilla-multi-level-cage-solid': {
     label: "Multi-level cage with solid floors",
@@ -2343,6 +2343,27 @@ export const COST_ITEMS = {
     label: "Arid bioactive substrate, a DIY topsoil and play sand mix",
     spec: "4 to 6 in over 4 x 2 ft, 80 to 120 qt",
     low: 20, high: 35, product: null, checked: '2026-10',
+  },
+  'screen-lid-36x18-with-clips': {
+    label: "Screen lid for a 36 x 18 in tank, with heavy-duty clips",
+    spec: "",
+    low: 60, high: 65, product: "screen-lid-zilla-36x18", checked: '2026-10',
+  },
+  'che-150w-and-dome': {
+    label: "Ceramic heat emitter and a ceramic-socket dome",
+    spec: "150 W",
+    low: 35, high: 55, product: "ceramic-heat-emitter-zoo-med-repticare-150w", checked: '2026-10',
+  },
+  'hide-cave-xl': {
+    label: "X-large cave hide",
+    spec: "",
+    low: 20, high: 35, product: "hide-exo-terra-reptile-cave-xl", checked: '2026-10',
+  },
+  // About four 0.75 cu ft bags of topsoil and three or four 0.5 cu ft bags of play sand, garden-store prices checked 2026-10-06.
+  'substrate-diy-topsoil-sand-tortoise-table': {
+    label: "Diggable DIY mix of organic topsoil and play sand, 60/40",
+    spec: "6 in over a 4 x 2 ft table, about 4 cu ft",
+    low: 25, high: 40, product: null, checked: '2026-10',
   },
   'uv-index-meter': {
     label: 'UV index meter',

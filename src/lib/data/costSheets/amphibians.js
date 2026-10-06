@@ -63,7 +63,7 @@ export const amphibianSheets = {
   'pacman-frog': {
     animal: [15, 100],
     necessities: [
-      { item: "pacman-frog-10-20-gallon-terrarium", text: "10-20 gallon terrarium" },
+      { item: "pacman-frog-10-20-gallon-terrarium", text: "[10 to 20 gallon terrarium], 24 by 18 inches of floor if you want the ideal" },
       { item: "pacman-frog-deep-coconut-fiber-topsoil", text: "Deep coconut fiber or [topsoil] substrate" },
       { item: "heat-mat-thermostat-kit", text: "[Heat mat with thermostat], mounted on the side of the tank" },
       { item: "thermo-hygrometer-digital", text: "[Digital thermometer and hygrometer]" },
@@ -79,7 +79,7 @@ export const amphibianSheets = {
   'tiger-salamander': {
     necessities: [
       { item: "hermit-crab-20-gallon-long-tank", text: "[20 gallon long tank], 30 by 12 by 12 inches" },
-      { item: "screen-lid-20-long", text: "Secure lid" },
+      { item: "screen-lid-20-long", text: "Secure [screen lid]" },
       { item: "argentine-tegu-deep-substrate-multiple-bags", text: "Deep, moisture-retentive [substrate]" },
       { item: "hognose-snake-leaf-litter-surface-cover", text: "[Leaf litter] for surface cover" },
       { item: "cork-bark-hide-round", text: "Flat [cork bark] and low hides" },

@@ -66,6 +66,7 @@ export const turtleSheets = {
       { item: "water-dish-large-soakable2", text: "[Large soak-able water dish]" },
       { item: "calcium-multivitamin-miner-all-2pack", text: "First supply of [calcium and D3 supplement]" },
       { item: "cuttlebone-small", text: "[Cuttlebone]" },
+      { item: "che-150w-and-dome", text: "[Ceramic heat emitter] in a second ceramic-socket dome for night heat" },
     ],
     extras: [
       { item: "forage-seed-mix-tortoise", text: "[Tortoise forage seed mix] for growable browse" },
@@ -77,11 +78,14 @@ export const turtleSheets = {
     necessities: [
       { item: "sulcata-tortoise-indoor-tortoise-table-hatchling", text: "Indoor [tortoise table] (hatchling and juvenile)" },
       { item: "sulcata-tortoise-strong-uvb-arcadia-12", text: "Strong [T5 HO UVB fixture] for indoor housing (check the length against your enclosure)" },
-      { item: "sulcata-tortoise-basking-bulb", text: "Basking bulb" },
+      { item: "basking-bulb-and-dome", products: ["basking-bulb-75w", "basking-dome-fixture"], text: "[Basking bulb] and a [dome fixture]" },
       { item: "thermostat-pt02t", text: "[Thermostat]" },
       { item: "calcium-multivitamin-tortoise", text: "First supply of [phosphorus-free calcium and a tortoise multivitamin]" },
       { item: "cuttlebone-small", text: "[Cuttlebone]" },
       { item: "water-dish-large-soakable2", text: "[Shallow water dish] large enough to soak in" },
+      { item: "substrate-diy-topsoil-sand-tortoise-table", text: "Diggable substrate 6 inches deep: a DIY mix of about 60% organic topsoil and 40% play sand (about 4 cubic feet for a 4 by 2 foot table)" },
+      { item: "hide-cave-xl", text: "Humid hide: an [X-large cave]" },
+      { item: "sphagnum-moss", text: "Damp [sphagnum moss] for the humid hide, holding about 70% humidity" },
     ],
     adult: [
       { item: "sulcata-tortoise-outdoor-enclosure-materials-buried", text: "Outdoor enclosure materials + buried fencing" },
