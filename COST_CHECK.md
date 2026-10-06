@@ -42,10 +42,10 @@ never invented. Where no price exists, say so and ask the owner.
 | Hamster | ☐ | ☐ | On claude/hamster-rebuild. |
 | Cockatoo | ☐ | ☐ | Found in the 1.4 light pass: the book's budget page itemizes setup at $2,195 to $7,340 (play stand, purifier, carrier, up to a $3,500 Moluccan); the site's first-year table says $1,975 to $6,300 before toys, bird $700 to $3,000. Scopes differ; the book's disagree page explains it. Site: moved onto the shared price list 2026-10-06 with every figure unchanged ($2,270 to $6,410; gear $1,430 to $3,200). |
 | Bearded dragon | ✅ 2026-10-06 | ☐ | Site: moved onto the shared price list with every figure unchanged ($575 to $1,280). |
-| Leopard gecko | ☐ | ☐ | |
-| Crested gecko | ☐ | ☐ | |
-| Gargoyle gecko | ☐ | ☐ | |
-| African fat-tailed gecko | ☐ | ☐ | Found in the 1.1 light pass: the cost guide heading and prose say setup $325 to $580 but its table sums to $369 to $579 (the book uses the table); the description line says "$75-1,000+" while the body says $75 to $600. |
+| Leopard gecko | ✅ 2026-10-06 | ☐ | Site: moved onto the shared price list with every figure unchanged ($465 to $975). |
+| Crested gecko | ✅ 2026-10-06 | ☐ | Site: moved onto the shared price list with every figure unchanged ($890 to $1,800). |
+| Gargoyle gecko | ✅ 2026-10-06 | ☐ | Site: moved onto the shared price list with every figure unchanged ($385 to $780). |
+| African fat-tailed gecko | ✅ 2026-10-06 | ☐ | Found in the 1.1 light pass: the cost guide heading and prose say setup $325 to $580 but its table sums to $369 to $579 (the book uses the table); the description line says "$75-1,000+" while the body says $75 to $600. Site: moved onto the shared price list with every figure unchanged ($585 to $1,050 with the first exam, $485 to $835 for the gear). |
 | Ball python | ☐ | ☐ | |
 | Hognose snake | ☐ | ☐ | |
 | Russian tortoise | ☐ | ☐ | |
@@ -98,7 +98,7 @@ Same checks 1 to 6. A change here touches the guide and the hub only.
 | Madagascar hissing cockroach | ☐ |
 | Milk snake | ☐ |
 | Molly | ☐ |
-| Mourning gecko | ☐ |
+| Mourning gecko | ✅ 2026-10-06, shared price list: setup $245 to $475 (was $230 to $405 stated). Linked the ShadeDweller UVB kit (sized for a 12 in enclosure), coconut fiber, live plants, thermometer and hygrometer, misting bottle; added the powdered gecko diet, a feeding ledge, calcium and the hub's multivitamin. |
 | Mouse | ☐ |
 | Neon tetra | ☐ |
 | Oscar fish | ☐ |

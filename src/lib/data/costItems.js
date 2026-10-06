@@ -783,6 +783,236 @@ export const COST_ITEMS = {
     spec: "",
     low: 5, high: 60, product: null, checked: '2026-10',
   },
+  'african-fat-tail-enclosure-36x18x18-minimum-check': {
+    label: "Enclosure (36x18x18 in minimum; check the dimensions before you buy)",
+    spec: "",
+    low: 200, high: 260, product: "enclosure-repti-zoo-36x18x18-50gal", checked: '2026-10',
+  },
+  'african-fat-tail-under-tank-heat-mat': {
+    label: "Under-tank heat mat and thermostat",
+    spec: "",
+    low: 40, high: 70, product: "under-tank-heat-mat-thermostat-kit", checked: '2026-10',
+  },
+  'african-fat-tail-three-hides-warm-cool': {
+    label: "Three hides: warm, cool and humid",
+    spec: "",
+    low: 20, high: 105, product: "hide-exo-terra-gecko-cave-medium", checked: '2026-10',
+  },
+  'african-fat-tail-sphagnum-moss-humid-hide': {
+    label: "Sphagnum moss for the humid hide",
+    spec: "",
+    low: 5, high: 15, product: "sphagnum-moss", checked: '2026-10',
+  },
+  'african-fat-tail-coconut-fiber-reptile-sand': {
+    label: "Coconut fiber and reptile sand for the burrowing mix",
+    spec: "",
+    low: 15, high: 55, product: "substrate-zoo-med-eco-earth-coconut-fiber", checked: '2026-10',
+  },
+  'african-fat-tail-infrared-temp-gun-mat': {
+    label: "Infrared temp gun for the mat's surface",
+    spec: "",
+    low: 10, high: 25, product: "etekcity-infrared-thermometer-gun", checked: '2026-10',
+  },
+  'african-fat-tail-low-output-uvb-fixture': {
+    label: "Low-output UVB fixture about two-thirds the enclosure length, tube included, optional but beneficial",
+    spec: "",
+    low: 105, high: 135, product: "arcadia-lumenize-prot5-24in-14w-2-5pct-shadedweller-max", checked: '2026-10',
+  },
+  'african-fat-tail-plug-timer-light': {
+    label: "Plug-in timer for the light",
+    spec: "",
+    low: 5, high: 20, product: "outlet-timer-bn-link-mechanical", checked: '2026-10',
+  },
+  'african-fat-tail-feeding-tongs': {
+    label: "Feeding tongs",
+    spec: "",
+    low: 5, high: 15, product: "feeding-tongs-short-soft-tip-4pack", checked: '2026-10',
+  },
+  'african-fat-tail-cork-flat': {
+    label: "Cork flat",
+    spec: "",
+    low: 5, high: 10, product: null, checked: '2026-10',
+  },
+  'african-fat-tail-slate-tiles-stacked-low': {
+    label: "Slate tiles, stacked low and stable",
+    spec: "",
+    low: 35, high: 55, product: "slate-tile-daltile-12x12-6pack", checked: '2026-10',
+  },
+  'african-fat-tail-supply-plain-calcium-calcium': {
+    label: "First supply of plain calcium, calcium with D3 and a multivitamin",
+    spec: "",
+    low: 15, high: 20, product: "calcium-zoo-med-without-d3", checked: '2026-10',
+  },
+  'crested-gecko-enclosure-18x18x24-minimum-vertical': {
+    label: "Enclosure (18x18x24 in minimum, vertical/arboreal; check the dimensions before you buy)",
+    spec: "",
+    low: 150, high: 200, product: "glass-terrarium-18x18x24", checked: '2026-10',
+  },
+  'crested-gecko-low-output-uvb-hood': {
+    label: "Low-output UVB hood with a 5.0 (5%) T5 HO tube, about two-thirds the enclosure length",
+    spec: "",
+    low: 45, high: 75, product: "uvb-zoo-med-5-0-t5-ho-14in-hood", checked: '2026-10',
+  },
+  'crested-gecko-heat-bulb-dome-fixture': {
+    label: "Heat bulb and dome fixture (25-40W)",
+    spec: "",
+    low: 20, high: 40, product: "heat-bulb-zoo-med-basking-spot-25w", checked: '2026-10',
+  },
+  'crested-gecko-dimming-thermostat': {
+    label: "Dimming thermostat",
+    spec: "",
+    low: 30, high: 35, product: "dimming-thermostat-reptizoo-pid", checked: '2026-10',
+  },
+  'crested-gecko-substrate-coconut-fiber-2': {
+    label: "Substrate: coconut fiber, at least 2 inches deep",
+    spec: "",
+    low: 15, high: 40, product: "substrate-zoo-med-eco-earth-coconut-fiber", checked: '2026-10',
+  },
+  'crested-gecko-cork-bark-hides-climbing': {
+    label: "Cork bark hides, climbing branches, and plants or vines",
+    spec: "",
+    low: 45, high: 80, product: "cork-bark-round-hide", checked: '2026-10',
+  },
+  'crested-gecko-digital-thermometer-hygrometer': {
+    label: "Digital thermometer and hygrometer",
+    spec: "",
+    low: 15, high: 25, product: "digital-thermometer-hygrometer-combo", checked: '2026-10',
+  },
+  'crested-gecko-fine-misting-bottle-fogger': {
+    label: "Fine misting bottle, or a fogger",
+    spec: "",
+    low: 10, high: 40, product: "fine-mist-spray-bottle", checked: '2026-10',
+  },
+  'crested-gecko-supply-plain-calcium-dusting': {
+    label: "First supply of plain calcium for dusting insects",
+    spec: "",
+    low: 5, high: 15, product: "calcium-zoo-med-without-d3", checked: '2026-10',
+  },
+  'crested-gecko-jar-complete-crested-gecko': {
+    label: "First jar of complete crested gecko diet",
+    spec: "",
+    low: 10, high: 25, product: "crested-gecko-diet-repashy-classic-6oz", checked: '2026-10',
+  },
+  'gargoyle-gecko-arboreal-enclosure-18x18x24-minimum': {
+    label: "Arboreal enclosure (18x18x24 in minimum; check the dimensions before you buy)",
+    spec: "",
+    low: 100, high: 200, product: "glass-terrarium-18x18x24", checked: '2026-10',
+  },
+  'gargoyle-gecko-low-wattage-heat-bulb': {
+    label: "Low-wattage heat bulb and dome fixture (25-40W)",
+    spec: "",
+    low: 20, high: 40, product: "heat-bulb-zoo-med-basking-spot-25w", checked: '2026-10',
+  },
+  'gargoyle-gecko-coconut-fiber-bioactive-substrate': {
+    label: "Coconut fiber or bioactive substrate",
+    spec: "",
+    low: 20, high: 40, product: "substrate-zoo-med-eco-earth-coconut-fiber", checked: '2026-10',
+  },
+  'gargoyle-gecko-cork-bark-branches': {
+    label: "Cork bark and branches",
+    spec: "",
+    low: 20, high: 60, product: "cork-bark-round-hide", checked: '2026-10',
+  },
+  'gargoyle-gecko-live-artificial-plants': {
+    label: "Live or artificial plants",
+    spec: "",
+    low: 25, high: 45, product: "artificial-terrarium-plants", checked: '2026-10',
+  },
+  'gargoyle-gecko-magnetic-feeding-ledge': {
+    label: "Magnetic feeding ledge",
+    spec: "",
+    low: 10, high: 20, product: "leaf-tailed-gecko-magnetic-feeding-ledge", checked: '2026-10',
+  },
+  'gargoyle-gecko-bag-complete-powdered-gecko': {
+    label: "First bag of complete powdered gecko diet, 8 oz",
+    spec: "",
+    low: 20, high: 30, product: "crested-gecko-diet-pangea-watermelon-complete-8oz", checked: '2026-10',
+  },
+  'gargoyle-gecko-supply-plain-calcium-calcium': {
+    label: "First supply of plain calcium and calcium with D3",
+    spec: "",
+    low: 10, high: 15, product: "calcium-zoo-med-without-d3", checked: '2026-10',
+  },
+  'leopard-gecko-enclosure-36x18x18-minimum-check': {
+    label: "Enclosure (36x18x18 in minimum; check the dimensions before you buy)",
+    spec: "",
+    low: 50, high: 260, product: "enclosure-repti-zoo-36x18x18-50gal", checked: '2026-10',
+  },
+  'leopard-gecko-under-tank-heat-mat': {
+    label: "Under-tank heat mat and thermostat",
+    spec: "",
+    low: 50, high: 70, product: "under-tank-heat-mat-thermostat-kit", checked: '2026-10',
+  },
+  'leopard-gecko-plug-timer-lights': {
+    label: "Plug-in timer for the lights",
+    spec: "",
+    low: 10, high: 20, product: "outlet-timer-bn-link-mechanical", checked: '2026-10',
+  },
+  'leopard-gecko-digital-thermometer-hygrometer': {
+    label: "Digital thermometer and hygrometer",
+    spec: "",
+    low: 15, high: 40, product: "digital-thermometer-hygrometer-combo", checked: '2026-10',
+  },
+  'leopard-gecko-substrate-paper-towel-tile': {
+    label: "Substrate (paper towel or tile)",
+    spec: "",
+    low: 10, high: 25, product: "slate-tile-daltile-12x12-6pack", checked: '2026-10',
+  },
+  'leopard-gecko-hides-water-dish-calcium': {
+    label: "Hides, water dish and calcium dish (3 hides minimum)",
+    spec: "",
+    low: 30, high: 120, product: "hide-exo-terra-gecko-cave-medium", checked: '2026-10',
+  },
+  'leopard-gecko-supply-plain-calcium-calcium': {
+    label: "First supply of plain calcium, calcium with D3 and a multivitamin",
+    spec: "",
+    low: 15, high: 20, product: "calcium-zoo-med-without-d3", checked: '2026-10',
+  },
+  'mourning-gecko-12x12x18-front-opening-glass': {
+    label: "12x12x18 in front-opening glass terrarium",
+    spec: "",
+    low: 90, high: 110, product: "terrarium-exo-terra-12x12x18", checked: '2026-10',
+  },
+  'mourning-gecko-low-output-uvb-t5': {
+    label: "Low-output UVB (T5 HO)",
+    spec: "",
+    low: 45, high: 80, product: "uvb-arcadia-shadedweller-7-12in", checked: '2026-10',
+  },
+  'mourning-gecko-tight-fitting-escape-proof': {
+    label: "Tight-fitting escape-proof lid",
+    spec: "",
+    low: 20, high: 50, product: null, checked: '2026-10',
+  },
+  'mourning-gecko-bioactive-coconut-fiber-substrate': {
+    label: "Bioactive or coconut fiber substrate",
+    spec: "",
+    low: 20, high: 40, product: "substrate-zoo-med-eco-earth-coconut-fiber", checked: '2026-10',
+  },
+  'mourning-gecko-cork-bark-dense-planting': {
+    label: "Cork bark and dense planting",
+    spec: "",
+    low: 15, high: 60, product: "live-terrarium-plants", checked: '2026-10',
+  },
+  'mourning-gecko-fine-mist-system-manual': {
+    label: "Fine mist system or manual misting bottle",
+    spec: "",
+    low: 5, high: 40, product: "fine-mist-spray-bottle", checked: '2026-10',
+  },
+  'cgd-powdered-diet-first': {
+    label: "First supply of powdered crested gecko diet",
+    spec: "6 oz",
+    low: 10, high: 25, product: "crested-gecko-diet-repashy-classic-6oz", checked: '2026-10',
+  },
+  'feeding-ledge-magnetic': {
+    label: "Magnetic feeding ledge",
+    spec: "",
+    low: 10, high: 20, product: "leaf-tailed-gecko-magnetic-feeding-ledge", checked: '2026-10',
+  },
+  'multivitamin-herptivite': {
+    label: "Reptile multivitamin",
+    spec: "3.3 oz",
+    low: 10, high: 15, product: "reptile-multivitamin-repcal-herptivite", checked: '2026-10',
+  },
   'uv-index-meter': {
     label: 'UV index meter',
     spec: 'Solarmeter 6.5R',
