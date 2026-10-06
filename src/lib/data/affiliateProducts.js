@@ -4770,6 +4770,17 @@ export const AFFILIATE_PRODUCTS = [
     covers: ["Dimming thermostat with a safety shutoff, for the basking bulb"],
     pets: ["reptiles-amphibians"],
   },
+  // --- Owner's pick, ackie basking bulbs (2026-10-06) ---
+  {
+    slug: "basking-bulb-lucky-herp-100w-2pack",
+    product: "LUCKY HERP Reptile Heat Lamp, 100W (2nd Gen), 2 Pack",
+    category: "Heating & Lighting",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B0BQW3Z9PJ?tag=beastlyfacts-20",
+    description: "Two 100 W incandescent basking bulbs (R25, E26 base) for a two-bulb basking spot. Run them on a dimming thermostat.",
+    covers: ["Multiple high-wattage basking bulbs and fixtures"],
+    pets: ["reptiles-amphibians"],
+  },
 ];
 
 // Display order for category sections on the standalone gear page.
