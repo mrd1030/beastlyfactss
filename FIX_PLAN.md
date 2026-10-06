@@ -95,10 +95,6 @@ Checked against main on 2026-10-04. Each line: species, file, the problem, the f
 Every article's Sources block, site wide: combine several pages from one site into one entry naming the pages; drop a source whose every claim another listed source already covers; keep 3 to 5. About 308 articles list two or more pages from the same site (some are legal guides citing separate government documents, which stay separate). Common knowledge, such as prey that is too large causing impaction, can stand unsourced (owner, 2026-10-05).
 
 Claims found with no listed source, to source or soften during the sweep:
-- [ ] whites-tree-frog-handling-guide: 5 to 15 minute sessions, about twice a week; larger and hardier than American green tree frogs; takes in water and oxygen through the skin.
-- [ ] fire-bellied-toad-handling-guide: skin toxin harms tankmates of other species (FAQ and first-timer list); a small net as a handling option.
-- [ ] guppy-health-issues-guide: still lists Tankarium, which says guppies are not salt tolerant; since 2026-10-05 the page says they handle salt well (Chervinski 1984, Journal of Fish Biology; PetMD, listed). Swap Tankarium for the Chervinski paper or trim it.
-- [ ] chinchilla pages: the 50 to 68F comfort band comes from the setup guide; Merck (65 to 80F) and PetMD (55 to 70F), both listed on the comparison page, run warmer. Settle one band with sources.
 
 ---
 
