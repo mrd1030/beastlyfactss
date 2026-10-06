@@ -425,7 +425,7 @@ export const birdGuides = fillCostTokens([
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Day one", value: "At least 30 days quarantined in a separate room with its own airspace. Thirty is the floor, 30 to 45 the published range, and nearer 90 in a multi-bird household.", source: "bird-quarantine-guide" },
-        { label: "Cage size", value: "24x24x30 inches is the common minimum for a single adult, a floor: aim for 30 to 36 inches or more, or a flight cage. The bird should stretch and flap without touching the sides. Bar spacing 1/2 to 5/8 inch.", source: "conure-tank-setup-guide" },
+        { label: "Cage size", value: "24x24x30 inches is the common minimum for a single adult, a floor: go as large as you can, or a flight cage. The bird should stretch and flap without touching the sides. Bar spacing 1/2 to 5/8 inch.", source: "conure-tank-setup-guide" },
         { label: "Temperature", value: "65 to 80°F, off drafts and vents, no sudden swings, no supplemental heat.", source: "conure-tank-setup-guide" },
         { label: "Lighting and sleep", value: "An avian full-spectrum bulb 10 to 12 hours daily for vitamin D, and the cage covered at night for 10 to 12 hours of real darkness on a consistent photoperiod.", source: "conure-tank-setup-guide" },
         { label: "Cage bottom", value: "A grate over paper or a liner, cleaned daily. No corn cob or wood chips, which are eaten or mold.", source: "conure-tank-setup-guide" },
