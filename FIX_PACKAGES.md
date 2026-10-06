@@ -131,6 +131,7 @@ Live editions (2026-10-04): bearded dragon 4.1; leopard gecko, crested gecko, ba
 ## 4. Across all packages
 
 - Replacement UVB tubes in the catalog: deferred by the owner, kept as an option for later (nine UVB species; prices in COST_CHECK.md).
+- "Prices checked" / "as of" lines: the owner dropped them from the site on 2026-10-06 (every cost guide and the other guides that had one). Some books still carry one on the budget or sources page (ball python "Prices checked in October 2026 at ...", leopard gecko, others); remove at each book's next rebuild, never as a standalone edit.
 
 ## 5. Decisions made
 

@@ -140,10 +140,10 @@ exists to state it.
 
 A `<Sources>` entry is a vet, university, government, manufacturer spec, or
 established husbandry reference. Never a retailer product page or a
-for-sale listing. When a cost guide quotes retail prices, put one plain
-line under the last cost table, no links: "Prices last checked <Month
-Year> at <retailer names>. Retail prices move; treat the table as a
-snapshot, not a quote."
+for-sale listing. Cost guides carry no "Prices last checked" or "as of"
+line (owner, 2026-10-06): the table component already prints "Typical
+price ranges across retailers, not current Amazon prices." under every
+priced table, and a dated line only ages.
 
 ## Linking: everything to and from somewhere
 

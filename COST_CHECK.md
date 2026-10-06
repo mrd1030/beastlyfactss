@@ -15,9 +15,9 @@ before the next mass package upload.**
    out (food sits in the monthly line), and links to a product that fits.
 4. Each linked product fits its row: right size for the species, and a catalog
    price that sits inside the row's range.
-5. The line under the last cost table names the retailers:
-   "Prices last checked <Month Year> at <retailers>." It stays (RULES.md).
-   Rows priced from catalog fields say "at PetSmart and other retailers".
+5. No "Prices last checked" or "as of" line anywhere (owner, 2026-10-06;
+   all were removed site-wide that day). The table component prints its
+   own "not current Amazon prices" note.
 6. Every cost table row carries a gear link (`<AffiliateLink>` with the exact
    catalog link and product name) where a fitting product exists. Rows with no
    fitting product stay unlinked and go in the species' Notes as
