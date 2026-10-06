@@ -57,12 +57,30 @@ for (const [guide, sheet] of Object.entries(COST_SHEETS)) {
   }
 }
 
-// Every file a placeholder may live in, read raw.
-const files = [];
-for (const dir of ['content/guides', 'content/fun-facts', 'content/blog']) {
-  if (fs.existsSync(dir)) for (const f of fs.readdirSync(dir)) if (f.endsWith('.mdx')) files.push(path.join(dir, f));
+// Files whose placeholders get filled: every .mdx under content/ (Vite and
+// sync-articles fill them) and the hub files (fillCostTokens).
+const walk = (dir, ext, out = []) => {
+  if (!fs.existsSync(dir)) return out;
+  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+    const p = path.join(dir, e.name);
+    if (e.isDirectory()) walk(p, ext, out);
+    else if (p.endsWith(ext)) out.push(p);
+  }
+  return out;
+};
+const files = [
+  ...walk('content', '.mdx'),
+  ...fs.readdirSync('src/lib/data/guides').filter((f) => f.endsWith('.js')).map((f) => path.join('src/lib/data/guides', f)),
+];
+
+// Any other data file is printed as written, so a placeholder there would
+// reach readers as "%%setup:...%%".
+const DATA_OK = new Set(['costItems.js', 'costSheets.js']);
+for (const f of walk('src/lib/data', '.js')) {
+  if (f.split(path.sep).includes('guides') || DATA_OK.has(path.basename(f))) continue;
+  if (COST_TOKEN.test(fs.readFileSync(f, 'utf8'))) errors.push(`${f}: cost placeholder in a file that is never filled; only content/ articles and the hub files are`);
+  COST_TOKEN.lastIndex = 0;
 }
-for (const f of fs.readdirSync('src/lib/data/guides')) if (f.endsWith('.js')) files.push(path.join('src/lib/data/guides', f));
 
 const totals = Object.keys(COST_SHEETS).map((guide) => {
   const t = sectionTotal(guide, 'necessities');
@@ -76,9 +94,23 @@ for (const f of files) {
     if (m[1] === 'price') used.add(m[2]);
     try { resolveCostTokens(m[0]); } catch (e) { errors.push(`${f}: ${e.message}`); }
   }
+  // A typed copy of a converted animal's setup total counts only where that
+  // animal is the subject: its own articles, or within a few hundred
+  // characters of its name or id. Another animal's guide that happens to
+  // price its own gear at the same range is not drift.
   for (const { guide, written } of totals) {
+    const own = path.basename(f).startsWith(guide);
+    const names = [guide, guide.replace(/-/g, ' ')];
     for (const w of written) {
-      if (raw.includes(w)) errors.push(`${f}: hand-typed setup total "${w}" for ${guide}; use %%setup:${guide}%%`);
+      let i = raw.indexOf(w);
+      while (i >= 0) {
+        const win = raw.slice(Math.max(0, i - 400), i + w.length + 400).toLowerCase();
+        if (own || names.some((n) => win.includes(n))) {
+          errors.push(`${f}: hand-typed setup total "${w}" for ${guide}; use %%setup:${guide}%%`);
+          break;
+        }
+        i = raw.indexOf(w, i + 1);
+      }
     }
   }
 }

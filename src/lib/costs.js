@@ -53,7 +53,28 @@ export const COST_TOKEN = /%%(setup|animal|monthly|vet|price):([a-z0-9-]+)%%/g;
 
 export function resolveCostTokens(text) {
   if (typeof text !== 'string' || !text.includes('%%')) return text;
-  return text.replace(COST_TOKEN, (_, kind, key) => formatRange(costFigure(kind, key)));
+  // "about %%price:x%%" stays one "about" when the figure is a single price,
+  // which formatRange already prints as "about $N".
+  return text.replace(/(about )?%%(setup|animal|monthly|vet|price):([a-z0-9-]+)%%/g, (_, about, kind, key) => {
+    const figure = formatRange(costFigure(kind, key));
+    return about && !figure.startsWith('about') ? about + figure : figure;
+  });
+}
+
+// The products each <CostTable> in a raw MDX file links, so scripts that find
+// an article's affiliate links by reading the file (the disclosure check, the
+// per-animal gear lists) see the table rows the component draws at render.
+export function costTableProducts(text) {
+  const tables = [];
+  for (const m of String(text).matchAll(/<CostTable\s+guide="([^"]+)"\s+section="([^"]+)"/g)) {
+    const rows = (COST_SHEETS[m[1]] || {})[m[2]] || [];
+    tables.push({
+      guide: m[1],
+      section: m[2],
+      products: rows.map((r) => COST_ITEMS[r.item] && COST_ITEMS[r.item].product).filter(Boolean),
+    });
+  }
+  return tables;
 }
 
 // Fills every placeholder in a data structure (the hub files wrap their
