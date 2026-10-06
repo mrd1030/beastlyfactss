@@ -16,6 +16,7 @@ export const birdSheets = {
       { item: 'gram-scale-aviary-perch', text: '[Gram scale with a perch]' },
     ],
     extras: [
+      { item: 'puzzle-feeder-bird', text: '[Foraging puzzle feeder] for part of the daily food' },
       { item: 'play-stand-large-parrot', text: '[Large parrot play stand] for the daily hours out of the cage' },
       { item: 'air-purifier-hepa-room', text: '[HEPA air purifier] for the powder down' },
     ],

@@ -2365,6 +2365,11 @@ export const COST_ITEMS = {
     spec: "6 in over a 4 x 2 ft table, about 4 cu ft",
     low: 25, high: 40, product: null, checked: '2026-10',
   },
+  'puzzle-feeder-bird': {
+    label: "Foraging puzzle feeder",
+    spec: "",
+    low: 10, high: 25, product: "puzzle-feeder", checked: '2026-10',
+  },
   'uv-index-meter': {
     label: 'UV index meter',
     spec: 'Solarmeter 6.5R',
