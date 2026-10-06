@@ -2,6 +2,12 @@
 
 Finished items moved out of FIX_PLAN.md, newest batch first.
 
+## Source overlap sweep, unsourced claims (archived 2026-10-06)
+
+- [x] whites-tree-frog-handling-guide: 5 to 15 minute sessions, about twice a week; larger and hardier than American green tree frogs; takes in water and oxygen through the skin. Fixed 2026-10-06: FAQ now says short, well spaced sessions (Tree of Life: avoid frequent handling); size line uses Smithsonian 3 to 4.5 inches and Reptiles Magazine; skin breathing is in Merck Clinical Techniques, already listed. Hub handling row matched.
+- [x] fire-bellied-toad-handling-guide: skin toxin harms tankmates of other species (FAQ and first-timer list); a small net as a handling option. Fixed 2026-10-06: tankmate line now says the skin secretion irritates the mouth and eyes of animals that mouth them (Smithsonian); the net option was removed, since the site says never net an amphibian.
+- [x] guppy-health-issues-guide: still lists Tankarium, which says guppies are not salt tolerant; since 2026-10-05 the page says they handle salt well (Chervinski 1984, Journal of Fish Biology; PetMD, listed). Swap Tankarium for the Chervinski paper or trim it. Fixed 2026-10-06: Tankarium replaced by Merck Disorders and Diseases of Fish (velvet, dropsy) and Chervinski 1984 added for the salt line.
+
 ## Quick fixes shipped with the hermit crab branch (archived 2026-10-04)
 
 - [x] Oscar fish, oscar-fish-handling-guide.mdx line 80: "Use a large, soft rubber net or a cradle-style net." Pet stores sell no rubber nets. goldfish-handling-guide.mdx line 64 reads "a soft fine-mesh or rubber net over a knotted one", and goldfish-cost-guide prices a "Soft, fine-mesh net". Fix if wanted: align the oscar line to a soft fine-mesh or cradle net, never a knotted one. Resolved 2026-10-04: now "a soft fine-mesh or rubber net, never a knotted one, or a cradle-style net", matching the goldfish.
