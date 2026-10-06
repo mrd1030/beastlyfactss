@@ -50,7 +50,7 @@ export const lizardGuides = [
         { label: "Enrichment", value: "Burrow depth first, then footprint and height, then puzzle feeding, then the humid dig zone, then climbing and rock stacks.", source: "ackie-monitor-enrichment-guide" },
         { label: "Budget", value: "$150 to $450 for the monitor, red ackies at the top. Setup $850 to $2,150 or more, then $40 to $80 a month, most of it feeders and bulbs. A routine exam is $50 to $100.", source: "ackie-monitor-cost-guide" },
         { label: "Adult size", value: "Around 2 feet (0.6 m) typical, reported from 17.3 inches (44 cm) to 30 inches (76 cm)." },
-        { label: "Lifespan", value: "15 to 20 years on a demanding setup.", source: "ackie-monitor-cost-guide" },
+        { label: "Lifespan", value: "15 years or more on a demanding setup.", source: "ackie-monitor-cost-guide" },
         { label: "Hygiene", value: "Wash hands with soap after any contact, keep the lizard out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
       ],
     },
