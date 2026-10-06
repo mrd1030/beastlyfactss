@@ -290,7 +290,7 @@ export const fishGuides = [
       rows: [
         { label: "Before any fish", value: "A 2008 study on this species found it tolerates ammonia better than assumed but is sensitive to nitrite, so a finished cycle before stocking is the single most useful habit.", source: "cardinal-tetra-health-issues-guide" },
         { label: "School size", value: "Ten or more. Smaller groups develop stress sickness, and cardinals shoal tighter and color up better in bigger groups. Six is a floor, not a target.", source: "cardinal-tetra-handling-guide" },
-        { label: "Tank size", value: "A 20-gallon long, roughly 24x12 inches of base, for the 8 to 10 fish school. A 10-gallon holds only the bare minimum of 6.", source: "cardinal-tetra-tank-setup-guide" },
+        { label: "Tank size", value: "A 20-gallon long, roughly 24x12 inches of base, for the school of 10. A standard 10-gallon does not meet that footprint.", source: "cardinal-tetra-tank-setup-guide" },
         { label: "Temperature", value: "77 to 82°F for general care, inside a tolerated 73 to 84°F. Cardinals take water up to 86°F, past the roughly 77°F neons are comfortable with, so they suit a warmer community tank.", source: "cardinal-tetra-tank-setup-guide" },
         { label: "Water chemistry", value: "Soft and acidic, pH 5.0 to 7.0 and toward the low end. Test your source water first rather than assuming it fits, and ammonia and nitrite read zero before stocking.", source: "cardinal-tetra-tank-setup-guide" },
         { label: "Filtration and substrate", value: "Gentle flow, a sponge filter is the common choice, over fine gravel or sand. A darker substrate makes the red and blue stripe stand out.", source: "cardinal-tetra-tank-setup-guide" },
@@ -341,7 +341,7 @@ export const fishGuides = [
       "A separate bare tank with its own sponge filter, for quarantine",
     ],
     faqs: [
-      { q: "How many cardinal tetras should I keep together?", a: "Ten is the number to plan for, and 8 to 10 is the least that produces natural schooling. Smaller groups turn pale, hide, and get sick more often from the stress." },
+      { q: "How many cardinal tetras should I keep together?", a: "Ten is the number to plan for. Smaller groups turn pale, hide, and get sick more often from the stress." },
       { q: "Can cardinal tetras get neon tetra disease?", a: "Yes. It's named after neon tetra specifically, but the parasite affects tetras broadly, along with angelfish, rasboras, barbs, and zebrafish, so cardinal tetra falls within that group. It's caused by a microsporidian parasite, Pleistophora hyphessobryconis, that invades muscle tissue. Watch for restless or erratic swimming, fading or patchy color, visible lumps under the skin, and a curved spine in advanced cases." },
       { q: "What's the non-obvious detail that makes the biggest difference in a cardinal tetra tank?", a: "Recreating blackwater conditions. Driftwood and Indian almond leaves release natural tannins that stain the water and lower pH, mimicking the shaded, leaf-litter-covered streams this species evolved in. Pair that with dense planting and dim lighting, and color and confidence both improve noticeably." },
     ],
@@ -1052,7 +1052,7 @@ export const fishGuides = [
       "A quarantine tank with its own net and hose",
     ],
     faqs: [
-      { q: "What size tank does an oscar need?", a: "75 gallons is the usual minimum for one adult, and 100 to 125-plus for a pair or small group. A 2-inch juvenile hits 12 inches or more inside a year, so build for the adult rather than upgrading later." },
+      { q: "What size tank does an oscar need?", a: "75 gallons is the usual minimum for one adult, and 100 to 125-plus for a pair or small group. A 2-inch juvenile reaches about two-thirds of adult size inside a year, so build for the adult rather than upgrading later." },
       { q: "Can I feed my oscar live feeder goldfish?", a: "Don't make it a staple. Feeder goldfish and rosy-red minnows commonly carry thiaminase, an enzyme that destroys vitamin B1, along with real parasite and disease risk and excess fat. A thiamine deficiency shows up as lethargy, weight loss, and nerve problems, and it can eventually be fatal." },
       { q: "What is hole-in-the-head disease in oscars?", a: "The signature oscar problem, common enough here to have earned its own hobby name. Look for small pitted lesions or holes on the head and down the lateral line, along with appetite and weight loss, lethargy, and stringy white feces." },
     ],
