@@ -8,6 +8,24 @@ Newest first.
 
 ---
 
+## 2026-10-05: the 2026-10-05 run, five facts
+
+Five fact photos, generated and accepted the day the prompts were written,
+promoted as ids 343 to 347.
+
+| id | Fact | File | Size |
+|---|---|---|---|
+| 343 | Hoopoe, The Rotten Nest Trick | `hoopoe.jpg` | 1312x1199 |
+| 344 | Manx Cat, Born Without a Tail | `manx-cat.jpg` | 1024x1536 |
+| 345 | Maned Wolf, Not Really a Wolf | `maned-wolf.jpg` | 1024x1536 |
+| 346 | Sarcastic Fringehead, Mouth to Mouth Combat | `sarcastic-fringehead.jpg` | 1024x1536 |
+| 347 | Velvet Worm, The Slime Cannon | `velvet-worm.jpg` | 1024x1536 |
+
+Not cropped, none enlarged, all through mozjpeg at 80. Registered by id in both
+`src/lib/data/factImages.js` and `public/_worker.js`. All five passed their
+Check lines on the first attempt. The Manx stands rather than sits, and the
+hoopoe frame is close to square rather than portrait; both accepted.
+
 ## 2026-09-28: sea otter Beastfile, article and third fact
 
 Four images, all installed the day the prompts were written, none resized:
