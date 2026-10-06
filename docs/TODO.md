@@ -534,7 +534,10 @@ invertebrate pages are gone, no other file replaces them, and IFW's
 list "is automatically prohibited". Almost certainly a publishing error rather
 than a ban on hedgehogs and bearded dragons, so the 50 cells resting on it keep
 their August dates. Wayback holds the full list as late as 2026-02-12. Ask IFW,
-or recheck next month.
+or recheck next month. Rechecked 2026-10-05: the live file is still the
+2026-09-08 fish-only PDF (12 pages, no mammal, bird, reptile or invertebrate
+entries), and the IFW Purchasing or Possessing Wildlife page still links it
+and still says unlisted species are automatically prohibited.
 
 The 30 guides that discuss Maine carry a `<SourceNotice id="me-unrestricted" />`
 box saying so, and the Maine state page carries the same box at the top.

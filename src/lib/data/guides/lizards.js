@@ -155,7 +155,7 @@ export const lizardGuides = [
         { label: "UVB", value: "A 46-inch T5 HO at 12 to 14%, over a quarter to half the length on the warm side, targeting a UVI of 3.0 to 4.0, with a 6500K LED, on a 12 to 14 hour day.", source: "argentine-tegu-tank-setup-guide" },
         { label: "Feeding frequency", value: "Five times a week under six months, four to a year, three at one to two years, twice past two. Adults run to obesity.", source: "argentine-tegu-feeding-guide" },
         { label: "Diet", value: "Insects when young, then pre-killed rodents for protein, never live. Vegetables at every stage and more fruit with age: an all-rodent adult diet is the obesity on the emergency card. Lean meat, fish, and eggs as occasional treats.", source: "argentine-tegu-tank-setup-guide" },
-        { label: "Supplements", value: "Calcium without D3 on every meal, a multivitamin weekly, at every age.", source: "argentine-tegu-tank-setup-guide" },
+        { label: "Supplements", value: "Calcium without D3 on everything but whole prey, a multivitamin weekly, at every age.", source: "argentine-tegu-tank-setup-guide" },
         { label: "Never from your hand", value: "A hungry tegu does not distinguish a finger from food. A bowl, tongs, a puzzle feeder, or a separate feeding container, which teaches it the enclosure is not where food appears.", source: "argentine-tegu-tank-setup-guide" },
         { label: "Handling, the honest version", value: "The dog-like temperament is earned through regular supervised handling and free-roam time. Approach from the side, never from above, and never disturb one in its hide. Unlike a monitor, a tegu can drop its tail, and two males fight.", source: "argentine-tegu-handling-guide" },
         { label: "Two handlers", value: "The rule is one handler per 3 to 4 feet of lizard, and a full-grown Argentine is past it: two people for any job that needs it held still.", source: "argentine-tegu-handling-guide" },
@@ -502,7 +502,7 @@ export const lizardGuides = [
     faqs: [
       { q: "What size enclosure does a fire skink need?", a: "36 by 18 by 18 inches minimum for one adult, and bigger is worth it for an active species. Floor space beats height. Don't house two fire skinks together, especially two males: real fighting risk." },
       { q: "What does a fire skink enclosure setup cost?", a: "Roughly $554 to $627: a 36x18x18 inch enclosure, T5 UVB kit, basking bulb and dome, dimming thermostat, eight or nine bags of coconut fiber, two hides, and a hygrometer. The enclosure dominates, and the thermostat has to be a dimming model, since an on/off unit's maker says not to run a basking bulb on one." },
-      { q: "What causes respiratory infection in fire skinks?", a: "Substrate or overall enclosure conditions running too dry, or occasionally too cold. Watch for open-mouth breathing, mucus, and wheezing. See a vet, this needs professional treatment, and prevention is straightforward, maintain 60 to 70% substrate humidity consistently." },
+      { q: "What causes respiratory infection in fire skinks?", a: "Substrate or overall enclosure conditions running too dry, or occasionally too cold. Watch for open-mouth breathing, mucus, and wheezing. See a vet, this needs professional treatment, and prevention is straightforward, hold 60 to 70% ambient humidity with consistently damp substrate." },
     ],
   },
   {
@@ -546,7 +546,7 @@ export const lizardGuides = [
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Enclosure", value: "24 by 24 by 24 inches minimum for one adult, tall and front-opening with good ventilation, and housed alone: two males is an argument that never resolves, and the loser stops feeding.", source: "green-anole-tank-setup-guide" },
-        { label: "Temperature", value: "Basking around 90F, cool side 70 to 77F, nights 65 to 75F, from a 60-watt incandescent in a ceramic dome mounted above the mesh, never resting on it: anoles hang inverted on mesh and burn.", source: "green-anole-tank-setup-guide" },
+        { label: "Temperature", value: "Basking around 90F, cool side 70 to 77F, nights 65 to 75F, from a 75-watt incandescent in a ceramic dome mounted above the mesh, never resting on it: anoles hang inverted on mesh and burn.", source: "green-anole-tank-setup-guide" },
         { label: "Humidity", value: "60 to 70% by day, higher overnight, from morning and evening misting and a cool-mist humidifier or fogger overnight in dry climates, on distilled water.", source: "green-anole-tank-setup-guide" },
         { label: "UVB", value: "Necessary: a UV index of 3.0 to 4.0 at the basking branch from a ShadeDweller kit or a 5 to 6% T5 HO, with a separate 6500K LED, on a 10 to 14 hour day.", source: "green-anole-tank-setup-guide" },
         { label: "Substrate", value: "Coconut fiber or a 60% topsoil to 40% coconut fiber blend, about 2 inches deep under leaf litter. No gravel, sand, vermiculite, or pesticide residue.", source: "green-anole-tank-setup-guide" },
@@ -876,7 +876,7 @@ export const lizardGuides = [
     routes: [
       { slug: "savannah-monitor-cost-guide", line: "$150 to $300 for a juvenile and $300 to $800 for an adult, why that price is part of the problem, a setup that runs past $1,000, and the gap between what this species can live and what it usually does." },
       { slug: "savannah-monitor-tank-setup-guide", line: "The 8x4x4 foot standard and why nothing off the shelf meets it, a 140 to 150F basking surface, two feet of diggable substrate, the full-submersion basin, and what to feed." },
-      { slug: "savannah-monitor-feeding-guide", line: "Insects as the staple and rodents as the exception, daily young and two to three times a week adult, calcium weekly without vitamin D, and body condition as the portion." },
+      { slug: "savannah-monitor-feeding-guide", line: "Insects as the staple and rodents as the exception, daily young and two to three times a week adult, calcium weekly, plain under UVB and with D3 only without it, and body condition as the portion." },
       { slug: "savannah-monitor-handling-guide", line: "Why this is not the ackie, the five warning signals that end a session, the grip for when an animal has to be controlled, and the nail trim that takes three people." },
       { slug: "savannah-monitor-health-issues-guide", line: "Obesity and fatty liver disease as the defining problem, the wild feeding rhythm that explains it, MBD, and the parasite screen every new animal needs." },
       { slug: "savannah-monitor-enrichment-guide", line: "Eight of eight monitors opening a puzzle tube in ten minutes, why that evidence is genus-level rather than species-level, and puzzle feeding that adds work instead of calories." },
@@ -955,8 +955,8 @@ export const lizardGuides = [
         { label: "Substrate", value: "Fine sand, or a mix of 50% play sand, 30% topsoil and 20% excavator clay, at least 4 inches deep for burrowing. No calcium sand or walnut shell, both impaction risks. No moisture-holding coco fiber, mulch, or moss.", source: "uromastyx-tank-setup-guide" },
         { label: "UVB", value: "A T5 HO bulb around 14%, targeting a basking UVI of 4.5 to 6.0, with a bright daylight LED bar, replaced every 6 to 12 months.", source: "uromastyx-tank-setup-guide" },
         { label: "Feeding schedule", value: "Juveniles daily. Adults anywhere from 2 to 4 times a week up to daily, and lean toward the less frequent end, since overfeeding is a common mistake. Food down 1 to 2 hours after the basking light comes on.", source: "uromastyx-feeding-guide" },
-        { label: "What they eat", value: "Chopped dark leafy greens and edible flowers: collard, dandelion, mustard, turnip, endive, escarole, arugula, hibiscus. Seeds and sprouted lentils in small amounts several times weekly, inside both the feeding guide's limited and the setup guide's regular. Insects optional.", source: "uromastyx-feeding-guide" },
-        { label: "A uromastyx that stops eating", value: "1 to 2 weeks of acclimation fasting and a 1 to 2 month brumation slowdown are normal if it stays alert and hydrated. Past a week outside those, or losing more than 5 to 10% of body weight on a weekly weigh-in, it is a vet visit.", source: "uromastyx-feeding-guide" },
+        { label: "What they eat", value: "Chopped dark leafy greens and edible flowers: collard, dandelion, mustard, turnip, endive, escarole, arugula, hibiscus. Seeds and sprouted lentils a limited extra, never daily. Insects optional.", source: "uromastyx-feeding-guide" },
+        { label: "A uromastyx that stops eating", value: "1 to 2 weeks of acclimation fasting and a 1 to 2 month brumation slowdown are normal if it stays alert and hydrated. Past a week outside those, or losing more than 10% of body weight on a weekly weigh-in, it is a vet visit.", source: "uromastyx-feeding-guide" },
         { label: "Where the water comes from", value: "Almost all of it from food, so feed greens before they wilt. A bowl stays available even if it goes untouched.", source: "uromastyx-health-issues-guide" },
         { label: "Impaction and respiratory infection", value: "Bloating or stool that has stopped is a vet visit, not a wait. A lizard sitting with its mouth slightly open, or a bubble at a nostril, is the early sign of humidity too high or heat too low.", source: "uromastyx-health-issues-guide" },
         { label: "Metabolic bone disease", value: "The most common issue in captivity: poor appetite and weakness early, then a soft or hanging jaw, swollen limbs, tremors. Too little calcium or D3, or weak UVB. Always a vet.", source: "uromastyx-health-issues-guide" },
@@ -1031,7 +1031,7 @@ export const lizardGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal check", value: "Hawaii and Washington DC bar one. New Jersey wants a permit, Minnesota allows one from a permitted breeder. Check the city ordinance too.", source: "veiled-chameleon-legal-guide" },
+        { label: "Legal check", value: "Hawaii and Washington DC bar one. New Jersey wants a permit, West Virginia an importation permit, and Minnesota allows one from a permitted breeder. Check the city ordinance too.", source: "veiled-chameleon-legal-guide" },
         { label: "Day one", value: "Quarantine 3 to 6 months in a separate room, with a fecal exam before it meets an established pet.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "24x24x48 inches minimum for an adult, 4x2x4 feet better, screen or hybrid with partly solid sides. A juvenile can start at 18x18x36 but reaches adult size in 6 to 8 months, so buy the adult enclosure now.", source: "veiled-chameleon-tank-setup-guide" },
         { label: "Temperature", value: "Basking around 85°F for females and juveniles, 90 to 95°F for adult males. Ambient 72 to 80°F, with a beneficial night drop to 55 to 65°F.", source: "veiled-chameleon-tank-setup-guide" },

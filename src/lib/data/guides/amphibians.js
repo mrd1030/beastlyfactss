@@ -36,7 +36,7 @@ export const amphibianGuides = [
         { label: "Adult size", value: "9 to 12 inches." },
         { label: "Lifespan", value: "10 to 15 years typical in captivity." },
         { label: "Quarantine", value: "6 to 8 weeks per general veterinary guidance, landing closer to the 8-week end than the shortest end. The clock resets, not just pauses, if the animal shows illness partway through.", source: "amphibian-quarantine-and-water-guide" },
-        { label: "Heat wave / power outage", value: "The emergency runs in reverse for axolotls: heat is the danger, not cold. Sustained water above about 75°F causes reduced appetite, ascites, and uncontrollable floating. Insulate against heat, float sealed frozen water bottles rather than loose ice, and as a stopgap move the axolotl to a dish in the refrigerator.", source: "aquarium-power-outage-and-transport-guide" },
+        { label: "Heat wave / power outage", value: "The emergency runs in reverse for axolotls: heat is the danger, not cold. Sustained water above about 75°F causes reduced appetite, ascites, and uncontrollable floating. Insulate against heat, float sealed frozen water bottles rather than loose ice while watching a thermometer, since even a bottle can pull the water down faster than about 1°F an hour, and as a stopgap move the axolotl to a dish in the refrigerator.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
     emergencyCard: {
@@ -271,7 +271,7 @@ export const amphibianGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal check", value: "Eleven jurisdictions ban it. The January 2025 federal injurious-wildlife listing restricts import and shipment, not ownership. New Jersey's endangered listing reaches a pet whatever its origin.", source: "tiger-salamander-legal-guide" },
+        { label: "Legal check", value: "Twelve jurisdictions ban it. The January 2025 federal injurious-wildlife listing restricts import and shipment, not ownership. New Jersey's endangered listing reaches a pet whatever its origin.", source: "tiger-salamander-legal-guide" },
         { label: "Enclosure", value: "A 20-gallon long, 30 by 12 by 12 inches, minimum for one adult, floor over height for a burrower. Best kept alone; a pair only if close in size, since a large tiger eats a small one.", source: "tiger-salamander-tank-setup-guide" },
         { label: "Temperature", value: "60 to 75°F and never above about 78°F. No heat in a room that stays above 60°F, and never in direct sun: a window heats a tank dangerously fast.", source: "tiger-salamander-tank-setup-guide" },
         { label: "Humidity", value: "70 to 75%, from moist, never soggy, substrate and a shallow dish, with one end slightly damper than the other so it can choose.", source: "tiger-salamander-tank-setup-guide" },
@@ -280,7 +280,7 @@ export const amphibianGuides = [
         { label: "Lighting", value: "No UVB needed for a nocturnal burrower, though a low level is optional. A low-wattage light on a 10 to 12 hour cycle.", source: "tiger-salamander-tank-setup-guide" },
         { label: "Feeding schedule", value: "Juveniles every one to two days, adults two to three times a week, at night, in measured amounts: it does not stop when full, and obesity is its commonest problem.", source: "tiger-salamander-tank-setup-guide" },
         { label: "Supplements", value: "Calcium with D3 plus a multivitamin on the feeders, every feeding while growing and every second to fourth as an adult. A thawed pinkie is a rare treat, never live.", source: "tiger-salamander-tank-setup-guide" },
-        { label: "Handling", value: "Avoided. If necessary, wet powder-free nitrile gloves and a brief session.", source: "tiger-salamander-handling-guide" },
+        { label: "Handling", value: "Avoided. If necessary, wet powder-free vinyl gloves (nitrile as a fallback, never latex) and a brief session.", source: "tiger-salamander-handling-guide" },
         { label: "Out of sight is normal", value: "Fossorial, so it spends most of its time underground. Rarely visible does not mean unhealthy.", source: "tiger-salamander-handling-guide" },
         { label: "Appetite loss", value: "A specific red flag in an animal this voracious, not routine pickiness.", source: "tiger-salamander-health-issues-guide" },
         { label: "Life stage change", value: "A larval salamander starts fully aquatic, like an axolotl, and the enclosure changes entirely to deep burrowable land as it metamorphoses. Normal, not something gone wrong.", source: "tiger-salamander-tank-setup-guide" },

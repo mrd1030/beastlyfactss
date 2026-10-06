@@ -230,7 +230,7 @@ export const geckoGuides = [
         "A tail that stays deformed despite adding hides (possible FTS)",
         "Any sign of parasites or impaction",
       ],
-      vetLine: "Retained shed wraps a toe like a tourniquet until it dies, so a stuck band is a same-day soak. New geckos are quarantined and given a fecal exam before joining a collection.",
+      vetLine: "Retained shed wraps a toe like a tourniquet until it dies, so early stuck shed gets a warm soak, and a tight band or a darkened toe goes to a vet. New geckos are quarantined and given a fecal exam before joining a collection.",
     },
     routes: [
       { slug: "gargoyle-gecko-cost-guide", line: "$50 to $300 for a common animal and past $1,000 for a morph, $335 to $630 to set up, $320 to $565 a year, and what a 15-to-20-year lifespan costs." },
@@ -276,7 +276,7 @@ export const geckoGuides = [
     image: "/assets/guides/leaf-tailed-gecko.jpg",
     tagline: "Nature's ultimate camouflage artist, hiding in plain sight!",
     seoTitle: "Leaf-Tailed Gecko Care Guide: Setup, Humidity, and Health",
-    seoDescription: "Leaf-tailed geckos punish shortcuts: why captive-bred matters, a cool tank with no basking spot, humidity and a drying cycle, and dehydration, the fast killer.",
+    seoDescription: "Leaf-tailed geckos punish shortcuts: why captive-bred matters, cool temperatures set by species, humidity and a drying cycle, and dehydration, the fast killer.",
     funFact: "Satanic leaf-tailed geckos (Uroplatus phantasticus) look exactly like dead, decaying leaves, right down to the 'bite marks' and brown patches on their edges!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -308,10 +308,10 @@ export const geckoGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Buy captive-bred", value: "Wild-caught animals consistently live shorter lives, and the genus is often wild-caught with the health problems that brings.", source: "leaf-tailed-gecko-cost-guide" },
+        { label: "Buy captive-bred", value: "Wild-caught animals consistently live shorter lives. Most leaf-tails for sale now are captive-bred, since Madagascar has largely stopped exporting them, but wild-caught ones still turn up and bring the health problems imports are known for.", source: "leaf-tailed-gecko-cost-guide" },
         { label: "Quarantine", value: "3 to 6 months for a new reptile, on plain paper towel with dedicated tools, serviced last. For a wild-caught gecko, wait 1 to 2 months before parasite treatment so a stressed animal is not treated too soon.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "12x12x18 inches for the smaller species, 18x18x18 better; the satanic leaf-tail does well in 18x18x24 as an adult, and Henkel's needs much more. Height over floor.", source: "leaf-tailed-gecko-tank-setup-guide" },
-        { label: "Temperature", value: "Ambient 75 to 79F, nights 64 to 72F. No basking heat: thin-skinned, easily dehydrated, and heat stress is the danger, the opposite priority from most reptiles.", source: "leaf-tailed-gecko-tank-setup-guide" },
+        { label: "Temperature", value: "Set by species: roughly 75 to 82F by day, nights in the mid 60s to low 70s. The satanic leaf-tail gets no basking spot, while Henkel's gets a warm end near 92F. Thin-skinned and easily dehydrated, so heat stress is the bigger danger.", source: "leaf-tailed-gecko-tank-setup-guide" },
         { label: "Humidity", value: "60 to 80% for most species, and 90 to 100% overnight for the satanic leaf-tail, from morning and evening misting, live plants, and moisture-holding substrate.", source: "leaf-tailed-gecko-tank-setup-guide" },
         { label: "The drying cycle", value: "High humidity with drying periods between mistings. Constant saturation is as bad as constant dryness, and a misting system is one of the few pieces of gear that changes outcomes for this genus.", source: "leaf-tailed-gecko-enrichment-guide" },
         { label: "Lighting and water", value: "Low-output UVB for a UVI of 0.6 to 1.4 at the top branch, about 13 hours of light in summer and 11 in winter, never basking-strength. Tap water, not distilled, for misting and drinking, for the minerals.", source: "leaf-tailed-gecko-tank-setup-guide" },
@@ -340,7 +340,7 @@ export const geckoGuides = [
     },
     routes: [
       { slug: "leaf-tailed-gecko-cost-guide", line: "$250 to $800 by species and locality, $300 to $600 for the enclosure, and why wild-caught is the expensive option." },
-      { slug: "leaf-tailed-gecko-tank-setup-guide", line: "18x18x24 for the smallest species, a cool enclosure with no basking spot, the humidity that defines this genus, and tap water over distilled." },
+      { slug: "leaf-tailed-gecko-tank-setup-guide", line: "18x18x24 for the smallest species, cool temperatures set by species, the humidity that defines this genus, and tap water over distilled." },
       { slug: "leaf-tailed-gecko-feeding-guide", line: "As much as it eats in a night, daily young and every other day adult, insects sized to the species, dusted lightly, and the mist as the water supply." },
       { slug: "leaf-tailed-gecko-handling-guide", line: "Stress signals worth recognizing, and the species whose tail never grows back." },
       { slug: "leaf-tailed-gecko-health-issues-guide", line: "Dehydration as the fast killer, plus MBD, respiratory infection, and why you wait before deworming an import." },
@@ -360,7 +360,7 @@ export const geckoGuides = [
     ],
     faqs: [
       { q: "How humid should a leaf-tailed gecko enclosure be?", a: "60 to 80% for most species. The satanic leaf-tailed gecko is the exception, needing 90 to 100% overnight, and it dehydrates fast without it." },
-      { q: "What temperature does a leaf-tailed gecko need?", a: "Ambient 75 to 79F, dropping to 64 to 72F at night. No basking spot: heat is generally unnecessary here and can be dangerous, the reverse of most reptile setups." },
+      { q: "What temperature does a leaf-tailed gecko need?", a: "It depends on the species. Most sit around 75 to 82F by day with nights in the mid 60s to low 70s. The satanic leaf-tail gets no basking spot at all, while Henkel's leaf-tail is given a warm end of about 92F, so set the thermostat for the species you actually own." },
       { q: "Do they need a misting system?", a: "For most keepers it is the practical answer. Uroplatus need high humidity with proper drying cycles between mistings, and hand spraying several times a day is difficult to sustain. Automated misting is one of the few pieces of equipment that changes outcomes for this genus." },
     ],
   },
@@ -498,7 +498,7 @@ export const geckoGuides = [
         { label: "Enclosure", value: "A 12x12x18 inch tall, front-opening enclosure for 2 to 3 adults; an 18x18x24 houses the growing colony, up to about 9. Height over floor. Adults may eat hatchlings, so separate young as they appear.", source: "mourning-gecko-tank-setup-guide" },
         { label: "Escape-proofing", value: "Hatchlings are under an inch and slip through ventilation gaps and door frames that hold any other gecko. Seal every gap with aquarium-safe putty before the geckos go in.", source: "mourning-gecko-tank-setup-guide" },
         { label: "Temperature", value: "70 to 80°F by day with a basking spot up to 85°F, 65 to 72°F at night. Most homes need no heat source at all.", source: "mourning-gecko-tank-setup-guide" },
-        { label: "Humidity and substrate", value: "60 to 80% with brief peaks to 90% from daily misting, then a slight dry-down against mold. Coconut coir or a coir and sphagnum blend, moist but never waterlogged.", source: "mourning-gecko-tank-setup-guide" },
+        { label: "Humidity and substrate", value: "60 to 70% ambient with peaks to 80 to 90% from daily misting, then dried back to 50 to 60% before the next one against mold. Coconut coir or a coir and sphagnum blend, moist but never waterlogged.", source: "mourning-gecko-tank-setup-guide" },
         { label: "UVB", value: "A 5 to 6% low-output tube is strongly recommended, given how often females lay and the calcium that costs. A 12-hour cycle.", source: "mourning-gecko-tank-setup-guide" },
         { label: "Fill the height", value: "Live planting gives usable surface, cover so animals can avoid each other, and humidity at once. Empty height is wasted height.", source: "mourning-gecko-enrichment-guide" },
         { label: "Staple food", value: "A powdered crested gecko diet at 2 to 3 parts water to 1 part powder, fresh every 48 hours, in a cup mounted on a wall rather than the floor.", source: "mourning-gecko-feeding-guide" },
@@ -591,7 +591,7 @@ export const geckoGuides = [
         { label: "Temperature", value: "Basking 90 to 105F, cooler zone 80 to 85F, and nights at 75 to 80F, warmer than many homes run, from a ceramic emitter or deep heat projector on a thermostat. This species needs night heat more than most.", source: "tokay-gecko-tank-setup-guide" },
         { label: "Humidity", value: "60 to 80%, from daily misting, 2 to 3 inches of coconut fiber under moss and leaf litter, and airflow so it does not mold. No pine or cedar.", source: "tokay-gecko-tank-setup-guide" },
         { label: "Lighting", value: "Survivable without UVB on a D3-supplemented diet, but a 5% forest-strength T5 has real benefit, replaced every 6 to 12 months. Nights genuinely dark.", source: "tokay-gecko-tank-setup-guide" },
-        { label: "Diet", value: "Gut-loaded crickets, dubia, and similar, nothing wider than the head, dusted with calcium and D3. Juveniles daily, adults every other day, with dechlorinated water in a shallow dish. A tokay will not take powdered fruit diet.", source: "tokay-gecko-tank-setup-guide" },
+        { label: "Diet", value: "Gut-loaded crickets, dubia, and similar, nothing wider than the head, dusted with calcium, plain under UVB and with D3 only if there is none. Juveniles daily, adults every other day, with dechlorinated water in a shallow dish. A powdered fruit diet is a treat at most, no more than twice a month.", source: "tokay-gecko-feeding-guide" },
         { label: "Gut-loading", value: "24 to 72 hours, 48 the most cited, and fed out within a few hours of coming off the gut-load, since insects void their gut once removed from food.", source: "gut-loading-feeder-insects-guide" },
         { label: "Handling", value: "A tokay that barks, gapes, or bites gets no sessions: this is a hands-off terrarium subject. One that tolerates a flat hand gets a few minutes sitting unrestrained on it.", source: "tokay-gecko-handling-guide" },
         { label: "If it bites", value: "Do not pull; tugging tightens the grip. Set it down with all four feet on a surface near a retreat and wait. Never lift by the tail, which detaches and regrows in about 30 days.", source: "tokay-gecko-handling-guide" },
@@ -646,7 +646,7 @@ export const geckoGuides = [
       "Reptile vet contact",
     ],
     faqs: [
-      { q: "What temperatures does a tokay gecko need?", a: "A basking area of 90 to 105F, a cooler zone of 80 to 85F, and nighttime temperatures staying warmer than many homes naturally run, 75 to 80F, not dropping below about 70F." },
+      { q: "What temperatures does a tokay gecko need?", a: "A basking area of 90 to 105F, a cooler zone of 80 to 85F, and nighttime temperatures staying warmer than many homes naturally run, 75 to 80F, never below 75F." },
       { q: "Does buying a captive-bred tokay gecko make it easier to handle?", a: "It helps, and meaningfully. A captive-bred tokay runs calmer and more tolerant than a wild-caught one, though most keep a real baseline of defensiveness. Even a settled individual is a display animal, not a handling pet." },
       { q: "Are tokay geckos legal in the US?", a: "In 48 of 52 jurisdictions, with no permit. Only Hawaii and the District of Columbia bar them, West Virginia asks for an importation permit, and Minnesota attaches conditions that apply to every lizard rather than to this species specifically." },
     ],

@@ -62,7 +62,7 @@ export const birdEncyclopedia = [
       overview: "The umbrella cockatoo, native to the tropical rainforests of Indonesia's Maluku Islands, is one of the most commonly kept cockatoo species and among the most affection-dependent parrots in aviculture. In the wild, cockatoos maintain near-constant physical contact with their flock and mate, a trait that carries directly into captivity as an intense need for daily interaction with their keeper. Habitat loss and historic capture for the pet trade have made wild populations increasingly rare.",
       origin: "Maluku Islands, Indonesia",
       habitat: "Tropical lowland and hill rainforest",
-      adultSize: "18 inches (46 cm); 1.1-1.7 lbs",
+      adultSize: "18 inches (46 cm); 400 to 800 g (14 to 28 oz) for the umbrella cockatoo. Across the family, 12 to 27 inches and roughly 300 to 900 g by species",
       wildDiet: "Seeds, nuts, fruit, and insects",
       wildLifespan: "Not well documented in the wild; typically 25 to 45 years in captivity, with the larger species reaching 70 to 80 or more",
       conservation: "Endangered (IUCN)",

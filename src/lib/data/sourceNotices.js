@@ -23,7 +23,7 @@ export const SOURCE_NOTICES = {
     title: "Maine's species list is offline",
     // When the agency replaced the file, and when the replacement was last looked at.
     changedOn: '2026-09-08',
-    statusCheckedOn: '2026-10-02',
+    statusCheckedOn: '2026-10-05',
     // The last full copy anyone can still read: the Internet Archive's capture of
     // the list before Maine replaced it. Rendered as a link after the text.
     archive: {

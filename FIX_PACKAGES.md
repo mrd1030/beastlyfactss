@@ -65,15 +65,18 @@ Live editions (2026-10-04): bearded dragon 4.1; leopard gecko, crested gecko, ba
 - [ ] Gear: no snake hook in the catalog.
 
 ### Russian tortoise (3.1, `russian-tortoise-src`)
+- [ ] Book: adult size reads 5 to 10 inches (`pages_01` line 108). The site now says 5 to 9 inches everywhere, matching the handling guide's sourced maximum of about 22 cm. Match on the next edit.
 - [ ] Glossary: FDA (`pages_07.html:18`), IUCN (`:23`) and VCA (`:55`) out; 21 CFR 1240.62 (`:7`), CITES (`:13`) and CFR and CMR (`:15`) move to the law page mini glossary.
 - [ ] Gear: no herbivore multivitamin without added phosphorus; no hide sized for an adult; the cuttlebone link was removed (a bird product).
 
 ### Axolotl (3.1, `axolotl-src`)
 - [ ] Glossary: IUCN (`pages_07.html:25`) and VCA (`:59`) out; Injurious wildlife (`:24`) and Lacey Act (`:27`) move to the law page mini glossary.
 - [ ] Gear: sand unlinked (grain size specs conflict); no air pump for the sponge filter.
+- [ ] Book: gloves read "clean, disposable nitrile gloves" (`source/axolotl.html:781`, `pages_04.html:15`). The site's amphibian rule since 2026-10-05: powder-free vinyl wetted with dechlorinated water first, nitrile only as a fallback, never latex (LafeberVet Amphibian Handling and Restraint; Merck Clinical Techniques in Amphibians). Match it on the next rebuild.
 
 ### White's tree frog (1.1, `whites-tree-frog-src`; renders as "Whites Tree Frog")
 - [ ] Glossary: IUCN out (`pages_6.html:31`).
+- [ ] Book: the version-history table (`whites-tree-frog.html:1860`, `pages_6.html:103`) still describes the site articles as "Powder-free nitrile"; the site and the book body now say vinyl first, nitrile second, never latex.
 - [ ] Gear: Repashy Calcium Plus stands in for "calcium with D3 and a multivitamin" (the owner's ReptiVite is labeled for reptiles only); an under-tank heat mat kit is linked where the book asks for a side-mounted mat; substrate changes and electricity unpriced.
 
 ### Betta fish (3.1, `betta-fish-src`)
@@ -113,6 +116,7 @@ Live editions (2026-10-04): bearded dragon 4.1; leopard gecko, crested gecko, ba
 - (Glossary meets the rule.)
 
 ### Cockatoo (1.4, `cockatoo.html` edited directly; never run its build.py)
+- [ ] Book: sexual maturity reads 3 to 4 years, 5 to 6 in large species (`cockatoo.html` lines 320, 885). The site's handling guide and its listed PetMD source say about 5 to 7 years, when aggression tends to rise. Match on the next edit.
 - [ ] Glossary: CITES (`cockatoo.html:2078`) moves to the law page mini glossary; out: CDC (`:2073`), CPSC (`:2082`), et al. (`:2096`), HOA (`:2103`), IUCN (`:2105`), MSD (`:2109`), NASPHV (`:2110`), NHLBI (`:2111`), UC Davis (`:2134`), VCA (`:2138`). CPBC (`:2081`) stays.
 - [ ] Gear: washable mat and sleep cage unpriced; the gram scale's perch tops out at 3/4 in.
 - [ ] Book: sexual maturity "3 to 4 years in medium species, 5 to 6 in large ones" (`cockatoo.html:320`, `:885`, Sources note `:2153`) vs the site handling guide :42 and :66 "roughly 5 to 7 years old". Check the source and settle both. (Sweep 2026-10-05; the sweep's other cockatoo items came from the stale fragments and are void.)

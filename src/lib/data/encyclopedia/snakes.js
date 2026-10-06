@@ -76,7 +76,7 @@ export const snakeEncyclopedia = [
       overview: "Hognose snakes are famous for their dramatic bluffing behavior - they hiss loudly, flatten their heads cobra-like, and if that fails, roll over and play dead convincingly (complete with open mouth and lolling tongue). Native to North America, they have upturned snouts used to dig up buried toads - their primary wild prey. They are rear-fanged with mild venom effective on toads but harmless to humans in the vast majority of cases.",
       origin: "North America (eastern, western, and southern species)",
       habitat: "Sandy soil areas, prairies, woodland edges, and coastal plains",
-      adultSize: "1.5-3.5 feet (45-107 cm) depending on species",
+      adultSize: "14-46 inches (36-117 cm) across the species; western hognoses 14-37 inches",
       wildDiet: "Toads, frogs, salamanders, and occasionally small rodents",
       wildLifespan: "9-19 years in the wild, averaging 14; 15-20 years in human care",
       conservation: "Least Concern (most species); some state-level protections",

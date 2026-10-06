@@ -206,8 +206,8 @@ export const snakeGuides = [
         { label: "Budget", value: "$45 to $300 for the snake, $200 to $500 for the setup, then roughly $15 to $30 a month. A routine exam is $50 to $135; an emergency starts around $150 and can reach $500.", source: "california-kingsnake-cost-guide" },
         { label: "Adult size", value: "2.5 to 4 feet (75 to 120 cm)." },
         { label: "Lifespan", value: "20 years or more with good care; the captive record is 33.3 years.", source: "california-kingsnake-cost-guide" },
-        { label: "Where it is banned", value: "Hawaii bans all snakes, Delaware requires a permit, and Oregon and Nevada write their rules around the snake's color pattern rather than its species.", source: "kingsnake-legal-guide" },
-        { label: "Power outage", value: "65 to 75°F is the normal night low. Below 65°F, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
+        { label: "Where it is banned", value: "Hawaii bans all snakes and West Virginia bans its native kingsnakes. New Jersey and Delaware require a permit, and Oregon and Nevada write their rules around the snake's color pattern rather than its species.", source: "kingsnake-legal-guide" },
+        { label: "Power outage", value: "68 to 72°F is the normal night low. Below that, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },
     emergencyCard: {
@@ -228,7 +228,7 @@ export const snakeGuides = [
       { slug: "california-kingsnake-handling-guide", line: "Session lengths, the timing rules around feeding and shedding, the five fear signals, and why this snake must live alone." },
       { slug: "california-kingsnake-health-issues-guide", line: "Respiratory infection, scale rot, mites, mouth rot, retained shed, and why nearly all of it traces back to husbandry." },
       { slug: "california-kingsnake-enrichment-guide", line: "No kingsnake study exists, so this is the corn snake and ratsnake evidence, labeled as borrowed, on floor space, cover, climbing and scent." },
-      { slug: "kingsnake-legal-guide", line: "Hawaii's total snake ban, Delaware's permit, and the two states that judge a kingsnake by its color pattern rather than its species." },
+      { slug: "kingsnake-legal-guide", line: "Hawaii's total snake ban, West Virginia's native-species ban, the New Jersey and Delaware permits, and the two states that judge a kingsnake by its color pattern rather than its species." },
     ],
     buyList: [
       "48x24x24 inch front-opening enclosure",
@@ -306,7 +306,7 @@ export const snakeGuides = [
       { slug: "corn-snake-handling-guide", line: "Settling-in time, the two-handed support, the timing rules around feeding and shedding, and the stress signs." },
       { slug: "corn-snake-health-issues-guide", line: "Respiratory infection, scale rot, mites, retained shed, mouth rot, and the list that means the vet today." },
       { slug: "corn-snake-enrichment-guide", line: "The 2021 studies on enclosure size and odor discrimination, and why floor space is the enrichment for this species." },
-      { slug: "corn-snake-legal-guide", line: "Banned in Georgia as a native species, restricted morphs in New Jersey and Illinois, and where it's legal outright." },
+      { slug: "corn-snake-legal-guide", line: "Banned in Georgia and West Virginia as a native species and in Hawaii with every snake, nine named morphs only in New Jersey, rules in Illinois, and where it's legal outright." },
     ],
     buyList: [
       "40-gallon breeder or 4x2x2 ft PVC enclosure",
@@ -357,9 +357,9 @@ export const snakeGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal", value: "Native almost everywhere, so most states regulate it as wildlife rather than as a pet-trade reptile, which can mean more paperwork than a ball python. New York needs a permit even for one bought at a pet store.", source: "garter-snake-legal-guide" },
+        { label: "Legal", value: "Native almost everywhere, so most states regulate it as wildlife rather than as a pet-trade reptile, which can mean more paperwork than a ball python. New York has no permit path at all, even for one bought at a pet store.", source: "garter-snake-legal-guide" },
         { label: "Quarantine", value: "3 to 6 months in a bare enclosure on plain paper towel. Mites usually show within weeks.", source: "reptile-quarantine-guide" },
-        { label: "Enclosure", value: "A 36x18x18 inch enclosure or a 40-gallon breeder minimum for one adult, a 55-gallon for a pair. Active and inquisitive, so floor space gets used.", source: "garter-snake-tank-setup-guide" },
+        { label: "Enclosure", value: "A 36x18x18 inch enclosure or a 40-gallon breeder minimum for one adult. Common, checkered, wandering and coast garters are cannibalism-prone and live alone. Active and inquisitive, so floor space gets used.", source: "garter-snake-tank-setup-guide" },
         { label: "Escape-proofing", value: "Small, slender, and able to work through gaps that look too small to matter. A locking lid, and every vent gap and cord hole sealed with mesh or silicone.", source: "garter-snake-tank-setup-guide" },
         { label: "Temperature", value: "Warm side 85 to 90°F, up to 95°F for reliable digestion, so treat the low end as a floor. Cool side 70 to 75°F, nights to 64°F tolerated. Every heat source on a thermostat.", source: "garter-snake-tank-setup-guide" },
         { label: "Humidity and substrate", value: "30 to 60%, raised slightly for a shed, over 1 to 2 inches of coconut fiber, cypress mulch, or leaf litter. No cedar, pine, or sand alone.", source: "garter-snake-tank-setup-guide" },
@@ -367,7 +367,7 @@ export const snakeGuides = [
         { label: "Many will not eat mice", value: "Individuals fall into fish and amphibian specialists, worm and slug specialists, and generalists, with no way to know in advance. A specialist may refuse mice for life. Budget for fish and earthworms as the default.", source: "garter-snake-feeding-guide" },
         { label: "Feeding frequency", value: "Earthworm diets twice a week, fish every 5 to 7 days, mouse-eating adults about weekly, juveniles every other day to every 3 to 5 days. Prey no more than 1.5 times the snake's width, or up to 10% of body weight.", source: "garter-snake-feeding-guide" },
         { label: "The thiaminase problem", value: "Goldfish and rosy red minnows break down thiamine: feed thiaminase-free tilapia, salmon, or silversides, frozen and thawed, with B1 if fish exceed a quarter of the diet. Red wigglers are reported toxic; nightcrawlers are the safe worm.", source: "garter-snake-feeding-guide" },
-        { label: "Expect musk", value: "A threatened garter musks rather than strikes, and it fades with calm handling: a few minutes, a couple of times a week, after one to two weeks of settling. Groups work only with feeding separated.", source: "garter-snake-handling-guide" },
+        { label: "Expect musk", value: "A threatened garter musks rather than strikes, and it fades with calm handling: a few minutes, a couple of times a week, after one to two weeks of settling.", source: "garter-snake-handling-guide" },
         { label: "Bites", value: "A distant second choice, and a light pinch when they happen. Soap and water.", source: "garter-snake-handling-guide" },
         { label: "Enrichment", value: "A garter needs somewhere to search: dense low planting, leaf litter, varied ground texture, and prey scattered in a different place each time.", source: "garter-snake-enrichment-guide" },
         { label: "Weight checks", value: "Weigh monthly while growing. A rounded loaf in cross-section is right; a triangle with a ridge down the spine is underweight.", source: "snake-sexing-growth-body-condition-guide" },
@@ -464,7 +464,7 @@ export const snakeGuides = [
         { label: "Venom", value: "Rear-fanged and mildly venomous. Bites are uncommon and stay local: a quick bite often does nothing, while a snake that holds on or chews can cause marked swelling and bruising.", source: "hognose-snake-handling-guide" },
         { label: "Budget", value: "$50 to $100 for a wild-type, $390 to $850 for the setup, $465 to $1,000 with the first vet exam and fecal test, then $235 to $390 a year, about $15 to $35 a month. A routine exam is $50 to $100, a fecal test $25 to $50.", source: "hognose-snake-cost-guide" },
         { label: "Lifespan", value: "10 to 15 years, 15 to 20 achievable.", source: "hognose-snake-cost-guide" },
-        { label: "Adult size", value: "1.5 to 3.5 feet (45 to 107 cm) depending on species." },
+        { label: "Adult size", value: "14 to 46 inches (36 to 117 cm) across the species; western hognoses, the usual pet, run 14 to 37 inches." },
         { label: "Power outage", value: "Room temperature is a normal night, down to 60°F. Below 60°F, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },
@@ -559,7 +559,7 @@ export const snakeGuides = [
         { label: "Lifespan", value: "20 years or more with good care.", source: "milk-snake-cost-guide" },
         { label: "Adult size", value: "2 to 4 feet (60 to 120 cm) depending on subspecies." },
         { label: "Hygiene", value: "Wash hands with soap after any contact, keep the snake out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
-        { label: "Power outage", value: "65 to 75°F is the normal night low. Below 65°F, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
+        { label: "Power outage", value: "70 to 75°F is the normal night low. Below 70°F, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },
     emergencyCard: {
@@ -630,7 +630,7 @@ export const snakeGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal check", value: "Broadly legal, and the Boidae exemptions that clear the boa constrictor mostly clear it too. New York City bans the family, Colorado's 2026 rewrite dropped it from the exemption, New Jersey's exemption names a different genus, and Hawaii bans every snake.", source: "rosy-boa-legal-guide" },
+        { label: "Legal check", value: "Broadly legal, and the Boidae exemptions that clear the boa constrictor mostly clear it too. New York City bans the family, Colorado's 2026 rewrite dropped it from the exemption, New Jersey's exemption names a different genus, Delaware and West Virginia want permits, and Hawaii bans every snake.", source: "rosy-boa-legal-guide" },
         { label: "Quarantine", value: "3 to 6 months in a different room. A second tank in the same room as your established reptile is proximity with a lid on it.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "A 10 to 15 gallon terrarium for a young snake, 20 to 30 gallons as the floor for an adult of 24 to 36 inches, and 36x18x18 inches the better target. Housed individually with a snug hide, under a tight lid that is smooth, since rough screen abrades the nose.", source: "rosy-boa-tank-setup-guide" },
         { label: "Temperature", value: "A basking surface of 90°F, cool side 65 to 75°F, heat off at night with temperatures safely into the 60s. A brief winter cooldown toward the mid-50s mirrors its natural slowdown.", source: "rosy-boa-tank-setup-guide" },

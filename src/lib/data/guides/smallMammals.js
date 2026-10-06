@@ -9,7 +9,7 @@ export const smallMammalGuides = [
     tagline: "The incredibly soft, high-jumping rodent that needs dust baths!",
     seoTitle: "Chinchilla Care Guide: Cage, Heat, and Diet",
     seoDescription: "Chinchilla care comes down to staying cool: the 150 rule for heat danger, a tall cage with solid floors, dust baths done right, and the hay-first diet.",
-    funFact: "Chinchillas can jump up to 6 feet high and can rotate their ears 180 degrees! Their fur is so dense they can have up to 80 hairs per follicle, versus 2 to 3 for humans.",
+    funFact: "Chinchillas can jump up to 6 feet high and can rotate their ears 180 degrees! Their fur is so dense they can have up to 60 hairs per follicle, versus 2 to 3 for humans.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size and lifespan come from the
@@ -31,7 +31,7 @@ export const smallMammalGuides = [
         { label: "Not eating", value: "A chinchilla off food for more than 12 to 24 hours should be seen the same day. No droppings at all for about 12 hours is treated as needing immediate attention.", source: "chinchilla-feeding-guide" },
         { label: "Handling", value: "Both hands, body fully supported against your chest (a football hold). Never lift by the tail tip or grab at the fur, which can trigger fur slip.", source: "chinchilla-handling-guide" },
         { label: "Budget", value: "$455 to $1,225 for a complete setup. Roughly $30 to $85 a month ongoing. An annual exotic vet checkup runs $50 to $100 or more.", source: "chinchilla-cost-guide" },
-        { label: "Adult size", value: "9 to 15 inches body, plus a 3 to 6 inch tail; 1 to 1.5 lbs." },
+        { label: "Adult size", value: "9 to 15 inches body, plus a 3 to 6 inch tail; about 0.9 to 1.5 lbs (400 to 700 g)." },
         { label: "Lifespan", value: "Commonly 10 to 20 years in captivity; wild longevity for this species has not been well studied." },
         { label: "Antibiotics", value: "Certain ordinary antibiotics can wipe out a chinchilla's gut bacteria and let toxin-producing Clostridium take over, a reaction that can kill within days. Raise the drug list with your vet before any antibiotic starts.", source: "small-mammal-enterotoxemia-guide" },
         { label: "Vet trips", value: "A ventilated, hard-sided small-animal carrier, ready before a trip is ever needed rather than bought the morning of an appointment.", source: "small-mammal-vet-visits-and-travel-guide" },
@@ -121,7 +121,7 @@ export const smallMammalGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal", value: "Restricted in fifteen jurisdictions and banned outright in eight, the most regulated of the small rodents sold as pets.", source: "degu-legal-guide" },
+        { label: "Legal", value: "Restricted or unsettled in eighteen jurisdictions and banned outright in eight, the most regulated of the small rodents sold as pets.", source: "degu-legal-guide" },
         { label: "Never one", value: "Two minimum, same-sex or neutered, ideally littermates. Isolation is linked to aggression and self-mutilation, a stronger statement than for most rodents.", source: "degu-enrichment-guide" },
         { label: "The cage", value: "About 28 by 18 by 28 inches minimum for a pair, tall and multi-level, in metal with bar spacing no more than half an inch. Solid shelves, not wire. Not a fish tank or glass vivarium: they cannot breathe in one.", source: "degu-tank-setup-guide" },
         { label: "Solid roof", value: "Their wild predators are birds of prey, so movement overhead frightens them. A solid roof rather than open mesh.", source: "degu-tank-setup-guide" },
@@ -162,7 +162,7 @@ export const smallMammalGuides = [
       { slug: "degu-handling-guide", line: "Never solo and never by the tail, what tail slip actually is, and the diurnal schedule that is most of why people pick this species." },
       { slug: "degu-health-issues-guide", line: "Diabetes as the defining risk, molar malocclusion as the most diagnosed dental disorder, bumblefoot from wire, and why orange teeth are the healthy ones." },
       { slug: "degu-enrichment-guide", line: "The research that found degus dust bathing more on soil a familiar degu used, what that makes the tray, and the priority order that follows." },
-      { slug: "degu-legal-guide", line: "Banned in eight jurisdictions and restricted in fifteen, and the list-drafting accident that explains almost every one of them." },
+      { slug: "degu-legal-guide", line: "Banned in eight jurisdictions and restricted or unsettled in eighteen, and the list-drafting accident that explains almost every one of them." },
     ],
     buyList: [
       "A tall multi-level cage, 28x18x28 inches at minimum for a pair",
@@ -236,7 +236,7 @@ export const smallMammalGuides = [
         { label: "Nesting material", value: "A mouse in a room you find comfortable is below its own comfort range. The research puts the useful amount at six to ten grams, more than most pet cages hold.", source: "mouse-enrichment-guide" },
         { label: "Wheel", value: "Solid, axle-free, 6 to 8 inches rather than a hamster's 8 to 11, and not the only enrichment.", source: "mouse-tank-setup-guide" },
         { label: "Temperature and humidity", value: "64 to 79°F and 30 to 70% humidity. Damp, drafts, dust, and poor ventilation all raise respiratory risk.", source: "mouse-health-issues-guide" },
-        { label: "Diet", value: "A pellet formulated for mice or rats at 20 to 25% protein, higher than the 14 to 16% a hamster or gerbil needs, which is why the hamster-and-gerbil tub is wrong.", source: "mouse-feeding-guide" },
+        { label: "Diet", value: "A pellet formulated for mice or rats at 20 to 25% protein, more than a hamster or gerbil food carries, which is why the hamster-and-gerbil tub is wrong.", source: "mouse-feeding-guide" },
         { label: "How to feed it", value: "A measured ration once daily, some of it scattered for foraging. Pea-sized pieces of greens, carrot, pepper, or broccoli daily, pulled before they spoil. Eating its own droppings is normal, not illness.", source: "mouse-feeding-guide" },
         { label: "Foods to avoid", value: "Grapes and raisins, rhubarb, citrus, chocolate, caffeine, and alcohol are toxic. Garlic, onion, raw beans, and raw potato out, and lettuce reliably causes diarrhea.", source: "mouse-feeding-guide" },
         { label: "Females in groups, males usually alone", value: "Females need same-sex company, and it is not a close call. Adult males frequently fight seriously, so solitary housing is the common answer, which is a reason to think before choosing males.", source: "mouse-enrichment-guide" },
@@ -285,7 +285,7 @@ export const smallMammalGuides = [
     faqs: [
       { q: "How tight does the bar spacing need to be for a mouse cage?", a: "No more than about a quarter inch (6mm), and tighter still, down to 5mm, is sometimes recommended. That's tighter than most small pet cages, and mice can squeeze through gaps that would safely contain a hamster." },
       { q: "Is a glass tank a good enclosure for a pet mouse?", a: "No, and this is a real difference from gerbil housing. A glass tank can't move enough air, so ammonia builds up inside it. A well-ventilated wire cage is the better choice for mice specifically." },
-      { q: "How much protein do mice need?", a: "More than a hamster or gerbil. General maintenance crude protein for a mouse runs 20 to 25%, with breeding or growing mice needing even more depending on strain, well above the 14 to 16% that's adequate for a gerbil." },
+      { q: "How much protein do mice need?", a: "More than a hamster or gerbil. General maintenance crude protein for a mouse runs 20 to 25%, with breeding or growing mice needing even more depending on strain, against the 18 to 20% a gerbil does best on." },
     ],
   },
   {
@@ -315,7 +315,7 @@ export const smallMammalGuides = [
         { label: "Cage type", value: "A wire cage with a solid sealed base, never a glass tank. A tank traps the ammonia that drives the respiratory disease rats are prone to.", source: "rat-tank-setup-guide" },
         { label: "Cage size", value: "24x24x24 inches is the minimum for a single rat, and you are keeping at least two, so it is a starting point. Cages built for ferrets or chinchillas are usually the right size.", source: "rat-tank-setup-guide" },
         { label: "Bar spacing", value: "About half an inch or less. At three-quarters of an inch an adult can get its head stuck.", source: "rat-tank-setup-guide" },
-        { label: "Temperature", value: "66 to 73°F ideal, fine across 64 to 79°F. They cannot sweat or pant, and heat stress becomes a real risk above about 86°F.", source: "rat-tank-setup-guide" },
+        { label: "Temperature", value: "66 to 73°F ideal, fine across 64 to 79°F. They cannot sweat or pant, and heat stress becomes a real risk above about 80°F.", source: "rat-tank-setup-guide" },
         { label: "Bedding", value: "Paper or cellulose, changed at least twice a week so ammonia does not build. No sawdust, cedar, or pine.", source: "rat-tank-setup-guide" },
         { label: "Wheel", value: "Solid-surface, at least 12 inches and ideally 14 to 16 for adults, especially males. A small wheel forces an arched spine.", source: "rat-tank-setup-guide" },
         { label: "Company", value: "Never one. Two is a minimum and a small same-sex group is better; single housing is a welfare problem no enrichment fixes.", source: "rat-enrichment-guide" },
@@ -583,7 +583,7 @@ export const smallMammalGuides = [
         { label: "Legal check", value: "Banned in California, which restricts the whole rodent order, and in Hawaii. Legal in the other 50 of 52 jurisdictions.", source: "gerbil-legal-guide" },
         { label: "Budget", value: "$5 to $50 each and you need at least two, roughly $145 to $385 to set up a pair, about $10 to $20 a month.", source: "gerbil-cost-guide" },
         { label: "Lifespan", value: "2 to 3 years.", source: "gerbil-cost-guide" },
-        { label: "Adult size", value: "4 to 5 inches (10 to 13 cm) body, plus a furred tail of similar length; 2 to 4 oz." },
+        { label: "Adult size", value: "4 to 5 inches (10 to 13 cm) body, plus a furred tail of similar length; about 2.5 to 4.6 oz (70 to 130 g)." },
       ],
     },
     emergencyCard: {
@@ -684,7 +684,7 @@ export const smallMammalGuides = [
       { slug: "guinea-pig-feeding-guide", line: "Schedule, life-stage differences, safe and toxic foods, and the honest range of reasons a guinea pig stops eating." },
       { slug: "guinea-pig-handling-guide", line: "The correct two-handed pickup, why staying low matters, and the stress signs that mean the session is over." },
       { slug: "guinea-pig-health-issues-guide", line: "Respiratory infection, dental disease, GI stasis, bladder stones, and ovarian cysts, with what to watch for and when to call." },
-      { slug: "guinea-pig-enrichment-guide", line: "Hideouts, foraging enrichment that replaces up to 80% of a wild guinea pig's day, and supervised floor time." },
+      { slug: "guinea-pig-enrichment-guide", line: "Hideouts, foraging enrichment that stands in for up to 80% of a wild cavy's day, and supervised floor time." },
     ],
     buyList: [
       "C&C cage or similar (7.5 sq ft minimum, 10.5 for a pair)",
@@ -734,7 +734,7 @@ export const smallMammalGuides = [
         { label: "Legal", value: "Legal everywhere except Hawaii, which bans hamsters outright with no permit route, and Oregon, where the rule is unclear.", source: "hamster-legal-guide" },
         { label: "Enclosure", value: "Roughly 700 to 775 square inches of unbroken floor for a Syrian, around 600 for dwarf species, more always better. Bar spacing no more than 1/2 inch for Syrians, 1/4 inch for smaller species.", source: "hamster-tank-setup-guide" },
         { label: "Temperature", value: "65 to 75°F, held steady. Below 65°F is out of range; below about 41°F (5°C), especially with short days, risks torpor, a hibernation-like state; over 80°F risks heat stress.", source: "hamster-tank-setup-guide" },
-        { label: "Bedding", value: "At least 6 inches of dust-free paper bedding or aspen shavings as the floor, and in a bedding-depth study 40 to 80 cm, roughly 15 to 30 inches, seemed to improve welfare. Never cedar or pine.", source: "hamster-tank-setup-guide" },
+        { label: "Bedding", value: "At least 6 inches of dust-free paper bedding or aspen shavings as the floor, and in a bedding-depth study 40 to 80 cm, roughly 16 to 31 inches, seemed to improve welfare. Never cedar or pine.", source: "hamster-tank-setup-guide" },
         { label: "Wheel", value: "Solid surface, no rungs. 8 to 11 inches for a Syrian, 6 to 8 for a dwarf. Too small forces an arched running posture that's hard on the spine.", source: "hamster-tank-setup-guide" },
         { label: "Sand bath", value: "A dust-free, non-clumping sand bath is a species essential, not an extra, for working coat and skin oils out.", source: "hamster-tank-setup-guide" },
         { label: "Company", value: "Syrian hamsters are strictly solitary, and housing two together leads to fighting. This is one of the most common and preventable hamster-owner mistakes there is.", source: "hamster-handling-guide" },
@@ -994,7 +994,7 @@ export const smallMammalGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal check", value: "Illegal in California, Alaska, Hawaii, the District of Columbia, and New York City, effectively illegal in Pennsylvania, permit-required in New Jersey, import-permit in New Mexico. Georgia, Massachusetts, and Wyoming do not ban them, whatever the internet says.", source: "sugar-glider-legal-guide" },
+        { label: "Legal check", value: "Illegal in California, Alaska, Hawaii, the District of Columbia, and New York City, illegal in Pennsylvania with no pet permit path, permit-required in New Jersey, import-permit in New Mexico. Georgia, Massachusetts, and Wyoming do not ban them, whatever the internet says.", source: "sugar-glider-legal-guide" },
         { label: "Never one glider", value: "Colonial, so two minimum: pairs or small groups are the veterinary standard. One study found the solitary gliders in its sample healthy, so self-mutilation is a real risk, not a certainty, and it does not overturn the pair rule. Neutering males avoids breeding and most of the scent marking.", source: "sugar-glider-enrichment-guide" },
         { label: "Cage size", value: "At least 36 inches wide, 24 deep and 36 tall, bought for a pair. Put any extra space into height: this is a climbing, gliding animal.", source: "sugar-glider-tank-setup-guide" },
         { label: "Bar spacing", value: "No more than half an inch. Young gliders squeeze through wider gaps.", source: "sugar-glider-tank-setup-guide" },
@@ -1007,7 +1007,7 @@ export const smallMammalGuides = [
         { label: "Portion and timing", value: "Roughly 15 to 20% of body weight daily, in the evening, since gliders are nocturnal. Adult males weigh 100 to 160 grams, females 80 to 130. Fruit stays a small portion.", source: "sugar-glider-feeding-guide" },
         { label: "Calcium", value: "A 2:1 calcium-to-phosphorus target and a glider-specific calcium and D3 multivitamin, not a reptile vitamin, because fruit and insects run calcium-poor. Dust the insects.", source: "sugar-glider-feeding-guide" },
         { label: "Foods to avoid", value: "Chocolate, dairy, canned fruit, yogurt drops, peanut butter, and candy. Spinach and beets, the highest-oxalate produce, since oxalates block calcium absorption.", source: "sugar-glider-feeding-guide" },
-        { label: "Bonding", value: "Not direct handling. A glider bonds by being carried against your body in a pouch until it learns your scent, after several days of settling in, then one to two hours a day. Keep the room above roughly 68°F: they chill easily.", source: "sugar-glider-handling-guide" },
+        { label: "Bonding", value: "Not direct handling. A glider bonds by being carried against your body in a pouch until it learns your scent, after several days of settling in, then one to two hours a day. Keep the room at about 75°F or warmer: they chill easily.", source: "sugar-glider-handling-guide" },
         { label: "Crabbing", value: "A loud buzzing chatter means frightened. A restrained glider bites, and the bite can be deep.", source: "sugar-glider-handling-guide" },
         { label: "Budget", value: "$200 to $500 each and you need two, so $500 to $1,200 for a pair with setup and $30 to $60 a month. An exotic vet visit is $75 to $200, neutering $100 to $200, and at least $200 in reserve.", source: "sugar-glider-cost-guide" },
         { label: "Lifespan", value: "10 to 15 years in captivity.", source: "sugar-glider-cost-guide" },
