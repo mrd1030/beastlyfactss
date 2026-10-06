@@ -1762,6 +1762,117 @@ export const COST_ITEMS = {
     spec: "",
     low: 15, high: 25, product: "pond-beneficial-bacteria-aquascape", checked: '2026-10',
   },
+  'emperor-scorpion-10-20-gallon-enclosure': {
+    label: "10-20 gallon enclosure with secure lid",
+    spec: "",
+    low: 40, high: 80, product: "scorpion-enclosure-10gal-invertebrate", checked: '2026-10',
+  },
+  'emperor-scorpion-cork-bark-slabs-flat': {
+    label: "Cork bark slabs and flat stones",
+    spec: "",
+    low: 15, high: 40, product: "cork-bark-round-small", checked: '2026-10',
+  },
+  'emperor-scorpion-heat-mat-thermostat': {
+    label: "Heat mat with thermostat",
+    spec: "",
+    low: 25, high: 50, product: "under-tank-heat-mat-thermostat-kit", checked: '2026-10',
+  },
+  'emperor-scorpion-uv-black-light-optional': {
+    label: "UV/black light (optional)",
+    spec: "",
+    low: 15, high: 45, product: "uv-blacklight-uvbeast-v3", checked: '2026-10',
+  },
+  'hermit-crab-20-gallon-long-tank': {
+    label: "20-gallon long tank for a pair (at least 10 gallons per crab; check the dimensions before you buy)",
+    spec: "",
+    low: 35, high: 60, product: "tank-20-gallon-long", checked: '2026-10',
+  },
+  'hermit-crab-substrate-sand-coconut-fiber': {
+    label: "Substrate (sand and coconut fiber)",
+    spec: "",
+    low: 10, high: 30, product: "substrate-hermit-crab-flukers-sand-coco", checked: '2026-10',
+  },
+  'hermit-crab-extra-shells-dishes-hides': {
+    label: "Extra shells, dishes, hides, dechlorinator, marine salt",
+    spec: "",
+    low: 25, high: 60, product: "hermit-crab-shells-natural-12pk", checked: '2026-10',
+  },
+  'jumping-spider-small-vertical-arboreal-enclosure': {
+    label: "Small vertical, arboreal enclosure",
+    spec: "",
+    low: 45, high: 90, product: "mantis-enclosure-exo-terra-nano-tall", checked: '2026-10',
+  },
+  'jumping-spider-coconut-fiber-substrate': {
+    label: "Coconut fiber substrate",
+    spec: "",
+    low: 10, high: 40, product: "substrate-zoo-med-eco-earth-coconut-fiber", checked: '2026-10',
+  },
+  'jumping-spider-artificial-plants-mini-cork': {
+    label: "Artificial plants or mini cork bark for climbing and web anchoring",
+    spec: "",
+    low: 5, high: 15, product: "cork-bark-mini-flats-jumping-spider", checked: '2026-10',
+  },
+  'praying-mantis-feeding-tongs-fine-tip': {
+    label: "Feeding tongs (fine-tip precision, optional)",
+    spec: "",
+    low: 10, high: 20, product: "feeding-tongs-entomology-forceps-fine-tip", checked: '2026-10',
+  },
+  'tarantula-enclosure-secure-acrylic-lid': {
+    label: "Enclosure with a secure acrylic lid with drilled holes, never mesh: low and wide for a ground-dweller, about 20 by 10 by 10 in and under 12 in tall, or taller with cross-ventilation for a pink toe",
+    spec: "",
+    low: 20, high: 80, product: null, checked: '2026-10',
+  },
+  'tarantula-two-shallow-water-dishes': {
+    label: "Two shallow water dishes, one kept as a spare",
+    spec: "",
+    low: 15, high: 30, product: "shallow-water-dish", checked: '2026-10',
+  },
+  'tarantula-vented-32-oz-deli': {
+    label: "Vented 32 oz deli cups, for a catch cup and a spare (a stiff card from home seals the cup)",
+    spec: "",
+    low: 5, high: 20, product: "deli-cups-dubia-farms-32oz-vented", checked: '2026-10',
+  },
+  'tarantula-safety-glasses-rehousing-substrate': {
+    label: "Safety glasses, for rehousing and substrate changes",
+    spec: "",
+    low: 5, high: 15, product: "safety-glasses-dewalt-concealer-clear", checked: '2026-10',
+  },
+  'tarantula-supply-feeder-insects-crickets': {
+    label: "First supply of feeder insects, crickets or dubia roaches",
+    spec: "",
+    low: 15, high: 35, product: "dubia-roaches-bag", checked: '2026-10',
+  },
+  'tarantula-bag-gut-load-food': {
+    label: "First bag of gut-load food for the feeders",
+    spec: "",
+    low: 5, high: 10, product: "gutload-flukers-high-calcium-dubia-roach-diet-7oz", checked: '2026-10',
+  },
+  'gh-kh-test-kit': {
+    label: "GH and KH test kit",
+    spec: "",
+    low: 10, high: 15, product: null, checked: '2026-10',
+  },
+  // 2026-10
+  'water-tubes-floral-25pk': {
+    label: "Floral water tubes with caps, 25 pack",
+    spec: "",
+    low: 10, high: 15, product: "water-tubes-royal-imports-25pack", checked: '2026-10',
+  },
+  'petroleum-jelly': {
+    label: "Plain petroleum jelly",
+    spec: "7.5 oz",
+    low: 5, high: 5, product: "petroleum-jelly-amazon-basics", checked: '2026-10',
+  },
+  'millipede-substrate-milli-mix': {
+    label: "Millipede substrate, 2 quart bag",
+    spec: "",
+    low: 15, high: 25, product: "giant-millipede-organic-topsoil-substrate", checked: '2026-10',
+  },
+  'screen-lid-20-long': {
+    label: "Screen lid for a 20 gallon long",
+    spec: "30x12 in",
+    low: 20, high: 30, product: null, checked: '2026-10',
+  },
   'uv-index-meter': {
     label: 'UV index meter',
     spec: 'Solarmeter 6.5R',
