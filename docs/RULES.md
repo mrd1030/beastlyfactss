@@ -194,12 +194,15 @@ priced table, and a dated line only ages.
   head-only shell, noindex, follow, whose card and links only exist once
   JavaScript runs, so a crawler that follows a link to one hits a dead end
   (17 of them in the 2026-10-06 Ahrefs audit). Where facts are browsed
-  (quizzes, the homepage, the gallery) a fact opens as a popup; a quiz's
-  fact source is a button, not a link. In an article the fact is stated as
-  plain text, no link and no popup. Links to `/facts/` and
-  `/facts/category/<x>/` are fine, and share buttons may still copy a fact's
-  URL. `scripts/check-fact-links.mjs` fails the build on a link in content/.
-  Decided 2026-10-06.
+  (quizzes, the homepage, the gallery, Beastle) a fact opens as a popup; a
+  quiz's fact source and Beastle's "Meet the …" for a fact-only animal are
+  buttons, not links. In an article the fact is stated as plain text, no link
+  and no popup. Links to `/facts/` and `/facts/category/<x>/` are fine, share
+  buttons may still copy a fact's URL, and the Facts page putting a fact's URL
+  in the address bar when its popup opens is the popup itself, not a link, so
+  it stays. `scripts/check-fact-links.mjs` fails the build on a link in
+  content/ or a literal one in src/pages and src/components. Decided
+  2026-10-06.
 
 ## Hubs: the deep dives own the numbers
 
