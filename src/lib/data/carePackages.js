@@ -79,6 +79,7 @@ export const CARE_PACKAGES = [
     cover: '/assets/guides/bearded-dragon.jpg',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/beardeddragoncarepackage',
     blurb: 'Complete 50-page printable guide with temperature and UVB (ultraviolet B) targets, feeding by age, choosing a healthy dragon, brumation, the law in every state, seven health pages, and the owner tools.',
+    seoDescription: '50-page printable bearded dragon guide: temperature and UVB (ultraviolet B) targets, feeding by age, brumation, the law by state, and seven health pages.',
     bullets: [
       'The enclosure and where it goes, the temperature gradient, thermostats and probes, UVB (ultraviolet B) tube and distance, substrate and bioactive setups, and cleaning in one guide',
       'Feeding by age, insects, greens and supplements, handling and body language, choosing a dragon and quarantine, eggs and brumation, the law in every state, and seven health pages',
@@ -216,6 +217,7 @@ export const CARE_PACKAGES = [
     cover: '/assets/guides/leopard-gecko.jpg',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/leopardgeckocarepackage',
     blurb: 'Complete 52-page printable guide with belly heat and the three hides, optional low-output UVB (ultraviolet B), insect feeding by age and gut-loading, choosing a healthy gecko, the law in every state, seven health pages, and the owner tools.',
+    seoDescription: '52-page printable leopard gecko guide: belly heat and three hides, insect feeding and gut-loading by age, the law by state, and seven health pages.',
     bullets: [
       'The enclosure and where it goes, the temperature gradient and belly heat, heat mats, thermostats and probes, optional low-output UVB (ultraviolet B), substrate and the three hides, and cleaning in one guide',
       'Feeding by age, insects, gut-loading and supplements, growth and body condition, handling and body language, choosing a gecko and quarantine, eggs, shedding and brumation, the law in every state, and seven health pages',
@@ -354,6 +356,7 @@ export const CARE_PACKAGES = [
     cover: '/assets/guides/goldfish.jpg',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/goldfishcarepackage',
     blurb: 'Complete 49-page printable guide with tank size and filtration targets, cycling and water testing, feeding by age, choosing a healthy goldfish, quarantine, the Minnesota and New York rules on keeping goldfish and never releasing them, six health pages, and the owner tools.',
+    seoDescription: '49-page printable goldfish guide: tank size and filtration, cycling and water testing, feeding by age, quarantine, the release rules, and six health pages.',
     bullets: [
       'Tank size and the bowl myth, water temperature, filter sizing and media, cycling with or without a fish, water targets and testing, water changes, and substrate, plants and decor in one guide',
       'Feeding by age, the never-feed list, handling and body language, choosing a healthy goldfish, quarantine, spawning, heat waves and pond winters, the Minnesota and New York rules on keeping and never releasing goldfish, and six health pages',
@@ -490,6 +493,7 @@ export const CARE_PACKAGES = [
     cover: '/assets/guides/axolotl.jpg',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/axolotlcarepackage',
     blurb: 'Complete 46-page printable guide with the cold-water setup and cooling plan, the nitrogen cycle, feeding by age, choosing a healthy axolotl, the law in every state, six health pages, and the owner tools.',
+    seoDescription: '46-page printable axolotl guide: the cold-water setup and cooling plan, the nitrogen cycle, feeding by age, the law by state, and six health pages.',
     bullets: [
       'Tank size and where it goes, the temperature numbers that matter, chillers and fans, the nitrogen cycle, filtration and flow, substrate and hides, and cleaning in one guide',
       'Feeding by age, worms and pellets, handling and body language, choosing an axolotl and quarantine, pairs and breeding, the law in every state, and six health pages',
@@ -623,6 +627,7 @@ export const CARE_PACKAGES = [
     cover: '/assets/guides/budgie.jpg',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/budgiecarepackage',
     blurb: 'Complete 52-page printable guide with real cage size and bar spacing, bird-proofing the house, converting a seed eater to pellets, the daily scale, one budgie or two, hens and egg laying, seven health pages, and the owner tools.',
+    seoDescription: '52-page printable budgie guide: real cage size and bar spacing, bird-proofing, moving a seed eater to pellets, one budgie or two, and seven health pages.',
     bullets: [
       'Cage size, bar spacing and placement, perches and dishes, temperature, light and sleep, air quality and household hazards, and cleaning in one guide',
       'Pellets, seed and converting a seed eater, fresh food and the never-feed list, the daily scale, handling, flock needs and body language, flight and first aid, choosing a budgie and quarantine, sexing by cere, hens and egg binding, and seven health pages',
@@ -754,6 +759,7 @@ export const CARE_PACKAGES = [
     cover: '/assets/guides/crested-gecko.jpg',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/crestedgeckocarepackage',
     blurb: 'Complete 48-page printable guide with the humidity cycle and the 85°F ceiling, UVB, feeding by age, choosing a healthy gecko, the law in every state, six health pages, and the owner tools.',
+    seoDescription: '48-page printable crested gecko guide: the humidity cycle and 85°F ceiling, UVB (ultraviolet B), feeding by age, the law by state, and six health pages.',
     bullets: [
       'The vertical enclosure and where it goes, temperature and the 85°F ceiling, the humidity cycle, misting and airflow, UVB (ultraviolet B) and day length, substrate and bioactive setups, and cleaning in one guide',
       'Feeding by age, complete diet powder, insects and supplements, handling and body language, choosing a gecko and quarantine, eggs and the winter slowdown, the law in every state, and six health pages',
@@ -888,6 +894,7 @@ export const CARE_PACKAGES = [
     cover: '/assets/guides/guinea-pig.jpg',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/guineapigcarepackage',
     blurb: 'Complete 51-page printable guide with the real floor space standard, unlimited hay, the daily vitamin C rule, bonding a pair, choosing a healthy guinea pig, the law in every state, eleven health pages, and the owner tools.',
+    seoDescription: '51-page printable guinea pig guide: the real floor space standard, unlimited hay, the daily vitamin C rule, bonding a pair, and eleven health pages.',
     bullets: [
       'Enclosure size and where it goes, temperature, humidity and heat stress, bedding, hides and cage layout, and cleaning, water and hygiene in one guide',
       'Diet by age with unlimited hay, the daily vitamin C rule, vegetables and pellets, handling, grooming and body language, pairs and bonding, choosing a guinea pig and quarantine, the law in every state, and eleven health pages from GI (gastrointestinal) stasis and scurvy to antibiotics and anesthesia',
@@ -1024,6 +1031,7 @@ export const CARE_PACKAGES = [
     cover: '/assets/guides/lovebird.jpg',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/lovebirdcarepackage',
     blurb: 'Complete 49-page printable guide with the one-bird-or-two decision, real cage size and bar spacing, bird-proofing the house, converting a seed eater to pellets, the daily scale, hens and egg laying, six health pages, and the owner tools.',
+    seoDescription: '49-page printable lovebird guide: one bird or two, real cage size and bar spacing, moving a seed eater to pellets, hens and eggs, and six health pages.',
     bullets: [
       'Cage size, bar spacing and where it goes, perches and dishes, temperature, light and sleep, fumes, air quality and bird-proofing, and cleaning and bathing in one guide',
       'Pellets, seed and portions, converting a seed eater, greens, fruit and the never-feed list, supplements and the grit myth, the daily scale, handling and the bite problem, one bird or two, choosing a lovebird and quarantine, hens and egg binding, and six health pages',
@@ -1152,6 +1160,7 @@ export const CARE_PACKAGES = [
     cover: '/assets/guides/russian-tortoise.jpg',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/russiantortoisecarepackage',
     blurb: 'Complete 51-page printable guide with basking and UVB targets, outdoor pens, feeding by age, choosing a healthy tortoise, brumation, the law in every state, seven health pages, and the owner tools.',
+    seoDescription: '51-page printable Russian tortoise guide: basking and UVB (ultraviolet B) targets, outdoor pens, feeding by age, brumation, and seven health pages.',
     bullets: [
       'The enclosure and where it goes, temperature and night lows, thermostats and timers, UVB (ultraviolet B) tube and distance, humidity and substrate, outdoor pens, and cleaning in one guide',
       'Feeding by age, weeds and hay, calcium and water, handling and daily rhythm, choosing a tortoise and quarantine, eggs and brumation, the law in every state, and seven health pages',
@@ -1290,7 +1299,7 @@ export const CARE_PACKAGES = [
     samplePages: 5,
     cover: '/assets/guides/ball-python.jpg',
     blurb: 'Complete 49-page printable guide with thermostat and probe placement, humidity through the shed, feeding by age, why a ball python stops eating, choosing a healthy snake, the law in every state, seven health pages, and the owner tools.',
-    seoDescription: '49-page printable ball python guide: thermostat and probe placement, the humidity range that decides everything, feeding by age and the never-feed list, and health triage.',
+    seoDescription: '49-page printable ball python guide: thermostat and probe placement, the humidity range that decides everything, feeding by age, and health triage.',
     bullets: [
       'The enclosure and where it goes, the temperature gradient and heat sources, thermostats and probes, humidity and optional ultraviolet light, substrate and hides, and cleaning in one guide',
       'Feeding by age, prey, thawing and why a ball python stops eating, handling and body language, choosing a snake and quarantine, females and egg binding, the winter appetite dip, the law in every state, and seven health pages',
@@ -1568,6 +1577,7 @@ export const CARE_PACKAGES = [
     samplePages: 5,
     cover: '/assets/guides/hamster.jpg',
     blurb: 'Complete 47-page printable guide with the floor space and bedding depth the starter kit gets wrong, choosing a species, wet tail triage, torpor told apart from death, the law in every state, seven health pages, and the owner tools.',
+    seoDescription: '47-page printable hamster guide: the floor space and bedding depth starter kits get wrong, choosing a species, wet tail triage, and torpor versus death.',
     bullets: [
       'Enclosure size and bar spacing, bedding depth and the study behind it, temperature, humidity and light, the wheel and sand bath, and cleaning in one guide',
       'Diet and the schedule, fresh foods, treats and the never-feed list, water, weight and aging, handling and body language, choosing a species, sexing and litters, torpor, the law in every state, and seven health pages from wet tail to antibiotics',
@@ -1701,7 +1711,7 @@ export const CARE_PACKAGES = [
     samplePages: 5,
     cover: '/assets/guides/rabbit.jpg',
     blurb: 'Complete 50-page printable guide with the real space standard, unlimited hay as the base of the diet, two pages on GI (gastrointestinal) stasis, bonding a pair, spay and neuter, the law in every state, eight health pages, and the owner tools.',
-    seoDescription: '50-page printable rabbit guide: the real space standard, unlimited hay as the base of the diet, two pages on GI (gastrointestinal) stasis, bonding a pair, and the law by state.',
+    seoDescription: '50-page printable rabbit guide: the real space standard, unlimited hay, two pages on GI (gastrointestinal) stasis, bonding a pair, and the law by state.',
     bullets: [
       'Enclosure size and where it goes, flooring, the litter box and litter, temperature, heat and cold, indoors versus outdoors, rabbit-proofing the room, and cleaning in one guide',
       'Diet by age with hay first, greens, vegetables and pellets, handling and body language, bonding a companion, choosing a rabbit and quarantine, spay and neuter, the law in every state, and eight health pages from GI (gastrointestinal) stasis to the RHDV2 (rabbit hemorrhagic disease virus 2) vaccine',
@@ -1836,7 +1846,7 @@ export const CARE_PACKAGES = [
     samplePages: 5,
     cover: '/assets/guides/tarantula.jpg',
     blurb: 'Complete 49-page printable guide to the beginner tarantulas, with why the enclosure is low and wide, the tree-dwelling pink toe setup, the water dish that prevents the leading cause of death, the fasting that is normal, molting start to finish, a safe rehousing method, the law in every state, and six health pages.',
-    seoDescription: '49-page printable tarantula guide: low, wide enclosures, the pink toe setup, normal fasting against dehydration, molting, safe rehousing, and the law by state.',
+    seoDescription: '49-page printable tarantula guide: low, wide enclosures, the pink toe setup, fasting versus dehydration, molting, safe rehousing, and the law by state.',
     bullets: [
       'Enclosure shape and size, tree-dwelling enclosures and slings, temperature, humidity, water and ventilation, substrate and hides, and cleaning and escapes in one guide',
       'Diet by age, feeder insects and gut-loading, why a tarantula stops eating, body condition, why handling is off the table, choosing a spider and quarantine, rehousing, molting on two pages, sexing and mature males, the law in every state, and six health pages from dehydration to DKS (dyskinetic syndrome)',
