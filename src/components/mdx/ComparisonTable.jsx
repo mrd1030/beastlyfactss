@@ -80,6 +80,7 @@ export default function ComparisonTable({
   className = '',
   linkCovers = false,
   tierColumn,
+  footer,
 }) {
   if (!headers.length || !rows.length) return null;
 
@@ -138,6 +139,16 @@ export default function ComparisonTable({
             </tr>
           ))}
         </tbody>
+        {/* footer: one summary row (a cost table's total), set off in bold. */}
+        {footer && (
+          <tfoot className={s('block', 'md:table-footer-group')}>
+            <tr className={`border-t-2 border-border bg-muted/50 ${s('block py-3', 'md:table-row md:py-0')}`}>
+              {footer.map((cell, i) => (
+                <td key={i} className={`px-4 py-3 font-body font-semibold text-foreground${nowrap(i)}`}>{cell}</td>
+              ))}
+            </tr>
+          </tfoot>
+        )}
       </table>
       {needsPriceNote(rows, linkCovers) && (
         <p className="px-4 py-2 border-t border-border text-xs font-body text-muted-foreground">

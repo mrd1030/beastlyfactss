@@ -4,9 +4,17 @@ import AffiliateLink from './AffiliateLink';
 import { COST_SHEETS } from '@/lib/data/costSheets';
 import { COST_ITEMS } from '@/lib/data/costItems';
 import { AFFILIATE_PRODUCTS } from '@/lib/data/affiliateProducts';
-import { rowRange, formatRange } from '@/lib/costs';
+import { rowRange, formatRange, sectionTotal } from '@/lib/costs';
 
 const PRODUCTS = Object.fromEntries(AFFILIATE_PRODUCTS.map((p) => [p.slug, p]));
+
+// The bottom row: the setup total for the necessities (the same figure the
+// heading and every %%setup%% placeholder print), and what the extras come to
+// if a keeper buys every one.
+const FOOTER_LABELS = {
+  necessities: 'Setup total',
+  extras: 'All the extras together',
+};
 
 const DEFAULT_HEADERS = {
   necessities: ['Item', 'Cost Range'],
@@ -37,5 +45,8 @@ export default function CostTable({ guide, section = 'necessities', headers }) {
   const sheet = COST_SHEETS[guide];
   if (!sheet || !sheet[section]) return null;
   const rows = sheet[section].map((row) => [rowText(row), formatRange(rowRange(row), ' - ')]);
-  return <ComparisonTable headers={headers || DEFAULT_HEADERS[section] || DEFAULT_HEADERS.necessities} rows={rows} />;
+  const footer = rows.length > 1
+    ? [FOOTER_LABELS[section] || 'Total', formatRange(sectionTotal(guide, section), ' - ')]
+    : undefined;
+  return <ComparisonTable headers={headers || DEFAULT_HEADERS[section] || DEFAULT_HEADERS.necessities} rows={rows} footer={footer} />;
 }
