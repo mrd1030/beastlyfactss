@@ -1,4 +1,8 @@
-export const smallMammalGuides = [
+// Cost figures in these entries are %%placeholders%% filled from the master
+// price list (src/lib/costs.js); never type a cost guide total here.
+import { fillCostTokens } from '../../costs.js';
+
+export const smallMammalGuides = fillCostTokens([
   {
     id: "chinchilla",
     name: "Chinchilla",
@@ -30,7 +34,7 @@ export const smallMammalGuides = [
         { label: "Treats", value: "A small fraction of the diet, a few times a week rather than daily, somewhere under 5 to 10% of total intake.", source: "chinchilla-feeding-guide" },
         { label: "Not eating", value: "A chinchilla off food for more than 12 to 24 hours should be seen the same day. No droppings at all for about 12 hours is treated as needing immediate attention.", source: "chinchilla-feeding-guide" },
         { label: "Handling", value: "Both hands, body fully supported against your chest (a football hold). Never lift by the tail tip or grab at the fur, which can trigger fur slip.", source: "chinchilla-handling-guide" },
-        { label: "Budget", value: "$455 to $1,225 for a complete setup. Roughly $30 to $85 a month ongoing. An annual exotic vet checkup runs $50 to $100 or more.", source: "chinchilla-cost-guide" },
+        { label: "Budget", value: "%%setup:chinchilla%% for a complete setup, before the chinchilla. Roughly %%monthly:chinchilla%% a month ongoing. An annual exotic vet checkup runs $50 to $100 or more.", source: "chinchilla-cost-guide" },
         { label: "Adult size", value: "9 to 15 inches body, plus a 3 to 6 inch tail; about 0.9 to 1.5 lbs (400 to 700 g)." },
         { label: "Lifespan", value: "Commonly 10 to 20 years in captivity; wild longevity for this species has not been well studied." },
         { label: "Antibiotics", value: "Certain ordinary antibiotics can wipe out a chinchilla's gut bacteria and let toxin-producing Clostridium take over, a reaction that can kill within days. Raise the drug list with your vet before any antibiotic starts.", source: "small-mammal-enterotoxemia-guide" },
@@ -49,7 +53,7 @@ export const smallMammalGuides = [
       vetLine: "An exotic vet experienced with chinchillas, found before you need one. This species masks illness well and can decline fast once symptoms become visible, so call sooner rather than waiting to see if things improve.",
     },
     routes: [
-      { slug: "chinchilla-cost-guide", line: "$455 to $1,225 for a complete setup, $30 to $85 a month, and the air conditioning cost most owners don't factor in." },
+      { slug: "chinchilla-cost-guide", line: "%%setup:chinchilla%% for a complete setup, %%monthly:chinchilla%% a month, and the air conditioning cost most owners don't factor in." },
       { slug: "chinchilla-tank-setup-guide", line: "The cage, the 150 rule for heat danger, and dust baths done right." },
       { slug: "chinchilla-feeding-guide", line: "The hay-first schedule, why cecotropes matter, and the honest list of reasons a chinchilla stops eating." },
       { slug: "chinchilla-handling-guide", line: "The football hold, the fragile skeleton, and what fur slip actually means." },
@@ -136,7 +140,7 @@ export const smallMammalGuides = [
         { label: "Orange teeth", value: "Healthy teeth look orange. White or pale teeth in an adult are the sign of a problem.", source: "degu-health-issues-guide" },
         { label: "Never the tail", value: "The skin sloughs off under grasping pressure and does not grow back. Scoop by the body.", source: "degu-handling-guide" },
         { label: "Heat stress signs", value: "Rapid or open-mouth breathing, then drooling, then weakness, with tremors or collapse as the severe stage. Move it to the coolest room, cool it gradually, and get to a vet.", source: "small-mammal-temperature-heat-stress-guide" },
-        { label: "Budget", value: "$10 to $50 per degu and you need two. Equipment roughly $395 to $525, most of it a tall multi-level cage at $325 to $375, and an exotic vet check with dental at $80 to $160 a year.", source: "degu-cost-guide" },
+        { label: "Budget", value: "%%animal:degu%% per degu and you need two. Equipment roughly %%setup:degu%%, most of it a tall multi-level cage at %%price:degu-tall-multi-level-cage%%, and an exotic vet check with dental at $80 to $160 a year.", source: "degu-cost-guide" },
         { label: "Lifespan", value: "5 to 9 years in captivity.", source: "degu-cost-guide" },
         { label: "Adult size", value: "5 to 8 inches (12 to 20 cm) body, plus a 4 to 5 inch tufted tail; 6 to 11 oz." },
       ],
@@ -156,7 +160,7 @@ export const smallMammalGuides = [
       vetLine: "An exotics-experienced vet, registered with before you need one, since degus are a newer pet species and the veterinary picture is still filling in.",
     },
     routes: [
-      { slug: "degu-cost-guide", line: "$10 to $50 an animal and you need two, the roughly $375 to $520 of equipment the cage dominates, and the annual table where dental sits alongside hay." },
+      { slug: "degu-cost-guide", line: "%%animal:degu%% an animal and you need two, the roughly %%setup:degu%% of equipment the cage dominates, and the annual table where dental sits alongside hay." },
       { slug: "degu-tank-setup-guide", line: "The 28x18x28 minimum for a pair, the solid roof and deep dig layer, why a glass tank is the wrong box, and the 77°F line that is not a comfort figure." },
       { slug: "degu-feeding-guide", line: "Hay first and pellets measured, the sugar rule that is a metabolic limit rather than a caution, the coccidiostat in rabbit pellets, and six reasons a degu stops eating." },
       { slug: "degu-handling-guide", line: "Never solo and never by the tail, what tail slip actually is, and the diurnal schedule that is most of why people pick this species." },
@@ -243,7 +247,7 @@ export const smallMammalGuides = [
         { label: "Picking one up", value: "Cup both hands and let it walk on; never scruff or lift by the tail tip. They jump roughly 13 inches straight up and 2 feet along, so handle low over something soft.", source: "mouse-handling-guide" },
         { label: "Cleaning", value: "Spot-clean soiled corners often and leave some familiar bedding at a full clean. Stripping the cage makes a male re-mark it harder.", source: "mouse-health-issues-guide" },
         { label: "Adult size", value: "2 to 3 inches (5 to 8 cm) body, plus a 3 to 4 inch tail, at 1 to 1.6 oz." },
-        { label: "Budget", value: "$5 to $20 each, and you are buying two or three. A first setup runs roughly $100 to $225, then $10 to $20 a month. A routine exam at an exotics practice is $35 to $75, and not every vet sees mice.", source: "mouse-cost-guide" },
+        { label: "Budget", value: "%%animal:mouse%% each, and you are buying two or three. A first setup runs roughly %%setup:mouse%%, then %%monthly:mouse%% a month. A routine exam at an exotics practice is $35 to $75, and not every vet sees mice.", source: "mouse-cost-guide" },
         { label: "Lifespan", value: "1.5 to 2 years, the shortest commitment of almost any small mammal.", source: "mouse-cost-guide" },
       ],
     },
@@ -260,7 +264,7 @@ export const smallMammalGuides = [
       vetLine: "Mice decline quickly once a respiratory infection takes hold, and the organism behind most of it sits asymptomatic for a long stretch before flaring. Confirm ahead of time that a practice sees mice.",
     },
     routes: [
-      { slug: "mouse-cost-guide", line: "$5 to $20 a mouse and you are buying two or three, $100 to $210 for the cage around them, and $10 to $20 a month after." },
+      { slug: "mouse-cost-guide", line: "%%animal:mouse%% a mouse and you are buying two or three, %%setup:mouse%% for the setup around them, and %%monthly:mouse%% a month after." },
       { slug: "mouse-tank-setup-guide", line: "Why the glass tank that suits a gerbil is wrong here, the quarter-inch bar spacing that keeps a mouse inside, and bedding shallower than you would guess." },
       { slug: "mouse-feeding-guide", line: "Why a hamster pellet is the wrong tub, portions sized to an ounce-and-a-half animal, and the reason eating droppings is a good sign." },
       { slug: "mouse-handling-guide", line: "The cupped-hand pickup, never the tail tip, and why 13 inches of vertical jump changes where you sit down to do it." },
@@ -326,7 +330,7 @@ export const smallMammalGuides = [
         { label: "Handling", value: "Both hands scooping, one under the chest and one under the hindquarters, held close. Never by the tail: it is stressful and can injure them. A few days to settle first, and rats are the pocket pet least likely to bite.", source: "rat-handling-guide" },
         { label: "Respiratory disease", value: "Labored or noisy breathing, sneezing, a rough coat, and red-brown staining at the eyes and nose. 95% of pet ratteries carry the bacterium, there is no cure, and the chronic form rarely allows more than 2 years.", source: "rat-health-issues-guide" },
         { label: "Lumps", value: "Mammary tumors are the commonest, in both sexes, because the tissue runs from chin to tail. Any new lump is a vet visit; spaying a female before 7 months lowers her risk.", source: "rat-health-issues-guide" },
-        { label: "Budget", value: "Roughly $230 to $550 for a properly housed pair, the cage $130 to $360 of it. About $20 to $40 a month, and $60 to $110 for a routine exotic-vet exam, per rat.", source: "rat-cost-guide" },
+        { label: "Budget", value: "Roughly %%setup:rat%% for a properly housed pair, the cage %%price:rat-multi-level-wire-cage%% of it. About %%monthly:rat%% a month, and $60 to $110 for a routine exotic-vet exam, per rat.", source: "rat-cost-guide" },
         { label: "Adult size", value: "7 to 10 inches body, plus a 6 to 8 inch scaled tail; 0.8 to 1 lb females, 1 to 1.4 lb males." },
         { label: "Lifespan", value: "2 to 3 years, some to 4.", source: "rat-cost-guide" },
         { label: "Vet trips", value: "A hard-sided carrier ready before it is needed, and the cage mate along when the clinic allows it.", source: "small-mammal-vet-visits-and-travel-guide" },
@@ -403,7 +407,7 @@ export const smallMammalGuides = [
         { label: "Diet", value: "A high-quality, ferret-specific dry kibble, roughly 32 to 40% protein, free-fed around the clock for healthy adults. Never fruits, vegetables, grains, dairy, or chocolate.", source: "ferret-feeding-guide" },
         { label: "Not eating", value: "A healthy adult can develop dangerous blood sugar drops within a single day of not eating. Appetite loss is treated as needing same-day veterinary attention, not a few days of watching.", source: "ferret-feeding-guide" },
         { label: "Nipping", value: "Normal in kits, usually play, teething, fear, or overstimulation, peaking around 3 to 4 months old. Never pop or flick the nose, which increases fear-based biting; redirect to a toy instead.", source: "ferret-handling-guide" },
-        { label: "Budget", value: "$300 to $700 to set up. Roughly $50 to $60 a month for a pair. Lifetime vet cost is commonly estimated at $3,000 to $8,000 or more.", source: "ferret-cost-guide" },
+        { label: "Budget", value: "%%setup:ferret%% to set up. Roughly %%monthly:ferret%% a month for a pair. Lifetime vet cost is commonly estimated at $3,000 to $8,000 or more.", source: "ferret-cost-guide" },
         { label: "Adult size", value: "13 to 16 inches body length; males significantly larger." },
         { label: "Lifespan", value: "5 to 9 years on average for US pet ferrets today. Older sources citing 10 to 15 years reflect a healthier population than what's typical now.", source: "ferret-cost-guide" },
         { label: "Adrenal disease", value: "Symmetrical hair loss starting at the tail base and moving toward the head over weeks to months, skin usually not red or scabby, is the hallmark sign, unlike normal seasonal shedding, which is diffuse and resolves within a few weeks.", source: "ferret-adrenal-disease-guide" },
@@ -421,7 +425,7 @@ export const smallMammalGuides = [
       vetLine: "A ferret-experienced exotic vet, found before you need one. All three are genuine emergencies that need immediate veterinary care, not a wait-and-see approach.",
     },
     routes: [
-      { slug: "ferret-cost-guide", line: "$75 to $400 for the ferret, $300 to $700 for the setup, and the $3,000 to $8,000 lifetime vet cost most owners don't budget for." },
+      { slug: "ferret-cost-guide", line: "%%animal:ferret%% for the ferret, %%setup:ferret%% for the setup, and the $3,000 to $8,000 lifetime vet cost most owners don't budget for." },
       { slug: "ferret-tank-setup-guide", line: "Cage size for a pair, why overheating is the real danger, and the ferret-proofing that matters as much as the cage." },
       { slug: "ferret-feeding-guide", line: "Free-feeding kibble, the fastest gut transit of any common pet mammal, and the honest list of reasons a ferret stops eating." },
       { slug: "ferret-handling-guide", line: "Why kits nip, the right way to respond, and the coat patterns linked to congenital deafness." },
@@ -479,8 +483,8 @@ export const smallMammalGuides = [
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Check the law first", value: "A clean legal yes in nine jurisdictions, yes with a string in four (Texas caps you at 25 and forbids selling), and a permit in nineteen, several of which exist for rehabilitators rather than pet owners. Native wildlife, so the state wildlife agency is the one to ask.", source: "flying-squirrel-legal-guide" },
-        { label: "The squirrel, and realistically two", value: "$200 to $450 for a hand-raised baby, bought young at 6 to 8 weeks while the bonding window is open. Intensely social: budget for a same-sex pair from the start. Neutering is not the routine advice it is for gliders.", source: "flying-squirrel-cost-guide" },
-        { label: "Setup budget", value: "Roughly $200 to $500 for a pair, and most first-year totals land at $500 to $1,000-plus.", source: "flying-squirrel-cost-guide" },
+        { label: "The squirrel, and realistically two", value: "%%animal:flying-squirrel%% for a hand-raised baby, bought young at 6 to 8 weeks while the bonding window is open. Intensely social: budget for a same-sex pair from the start. Neutering is not the routine advice it is for gliders.", source: "flying-squirrel-cost-guide" },
+        { label: "Setup budget", value: "Roughly %%setup:flying-squirrel%% for a pair, and most first-year totals land at $500 to $1,000-plus.", source: "flying-squirrel-cost-guide" },
         { label: "Cage size", value: "Roughly 24x24x36 inches, or 30 by 18 by 36, height first, and bigger wherever you can for a pair. Bar spacing no more than half an inch.", source: "flying-squirrel-tank-setup-guide" },
         { label: "Temperature", value: "65 to 75°F, cooler than a glider, and they struggle with heat, so never much past 80°F. Away from drafts and direct sun.", source: "flying-squirrel-tank-setup-guide" },
         { label: "Light", value: "At least 20 minutes a day of natural daylight or full-spectrum light, since they make some vitamin D through the skin. This sits beside dietary calcium as the prevention for bone disease.", source: "flying-squirrel-tank-setup-guide" },
@@ -510,7 +514,7 @@ export const smallMammalGuides = [
       vetLine: "Caught early, bone disease is treatable with corrected calcium, vitamin D3, and light exposure under veterinary guidance. Prevention is a rodent-block staple, calcium, and daily light from the start.",
     },
     routes: [
-      { slug: "flying-squirrel-cost-guide", line: "$200 to $450 a squirrel and you need two, $200 to $500 of cage, and the legal check that comes first." },
+      { slug: "flying-squirrel-cost-guide", line: "%%animal:flying-squirrel%% a squirrel and you need two, %%setup:flying-squirrel%% of cage, and the legal check that comes first." },
       { slug: "flying-squirrel-tank-setup-guide", line: "Tall not wide, half-inch bar spacing, 65 to 75F, and the axle-free wheel that is not optional." },
       { slug: "flying-squirrel-feeding-guide", line: "Rodent block as the base, the 2:1 calcium ratio, and why a nut-and-seed diet is the trap." },
       { slug: "flying-squirrel-handling-guide", line: "Bonding starts in the pouch at 6 to 8 weeks, and what a startled glider does in an open room." },
@@ -581,7 +585,7 @@ export const smallMammalGuides = [
         { label: "Diarrhea", value: "Tyzzer's disease is the most common infectious disease here and kills quickly. Ruffled fur, hunched posture, poor appetite and diarrhea: a vet immediately.", source: "gerbil-health-issues-guide" },
         { label: "Past two years", value: "Head tilt from an ear canal growth in half of gerbils over two, and tumors at 25 to 40%. Seizures in some lines start at 2 to 3 months, last minutes, and leave no damage.", source: "gerbil-health-issues-guide" },
         { label: "Legal check", value: "Banned in California, which restricts the whole rodent order, and in Hawaii. Legal in the other 50 of 52 jurisdictions.", source: "gerbil-legal-guide" },
-        { label: "Budget", value: "$5 to $50 each and you need at least two, roughly $145 to $385 to set up a pair, about $10 to $20 a month.", source: "gerbil-cost-guide" },
+        { label: "Budget", value: "%%animal:gerbil%% each and you need at least two, roughly %%setup:gerbil%% to set up a pair, about %%monthly:gerbil%% a month.", source: "gerbil-cost-guide" },
         { label: "Lifespan", value: "2 to 3 years.", source: "gerbil-cost-guide" },
         { label: "Adult size", value: "4 to 5 inches (10 to 13 cm) body, plus a furred tail of similar length; about 2.5 to 4.6 oz (70 to 130 g)." },
       ],
@@ -601,7 +605,7 @@ export const smallMammalGuides = [
       vetLine: "Diarrhea in a gerbil is an emergency. The second list is a prompt visit, not a wait, and a red nose is a humidity fix first.",
     },
     routes: [
-      { slug: "gerbil-cost-guide", line: "$5 to $50 a gerbil and you need two, the $150 to $350 pair setup, and why the monthly figure is smaller than it looks." },
+      { slug: "gerbil-cost-guide", line: "%%animal:gerbil%% a gerbil and you need two, %%setup:gerbil%% for the pair setup, and why the monthly figure is smaller than it looks." },
       { slug: "gerbil-tank-setup-guide", line: "Why it has to be glass, the 6-to-10-inch digging depth most starter kits can't hold, and the humidity number that prevents sore nose." },
       { slug: "gerbil-feeding-guide", line: "The 18 to 20% protein target, the 4% fat ceiling, and why a seed mix that looks complete on the label doesn't get eaten that way." },
       { slug: "gerbil-handling-guide", line: "Same-sex pairs, day-active hours, and the one rule that matters most: never by the tail." },
@@ -658,7 +662,7 @@ export const smallMammalGuides = [
         { label: "Vitamin C", value: "10 to 25 mg/kg a day for a healthy adult, 30 mg/kg or more if growing, pregnant, lactating, or ill, roughly 20 to 25 mg a day for a typical adult. A quarter of a medium bell pepper covers it.", source: "guinea-pig-scurvy-vitamin-c-guide" },
         { label: "Not eating", value: "Call a vet at 8 to 12 hours without eating or producing droppings. Once GI stasis sets in, it can become life-threatening within 24 to 48 hours.", source: "guinea-pig-feeding-guide" },
         { label: "Handling", value: "Approach from the front, talking softly first. One hand under the chest behind the front legs, the other supporting the hindquarters. Stay low: a fall can be fatal.", source: "guinea-pig-handling-guide" },
-        { label: "Budget", value: "$10 to $60 from a shelter, around $50 at a pet store. $300 to $470 to set up. Food runs $30 to $70 a month for one; a pair runs $75 to $185 a month with bedding and the vitamin C supplement.", source: "guinea-pig-cost-guide" },
+        { label: "Budget", value: "$10 to $60 from a shelter, around $50 at a pet store. %%setup:guinea-pig%% to set up. Food runs $30 to $70 a month for one; a pair runs %%monthly:guinea-pig%% a month with bedding and the vitamin C supplement.", source: "guinea-pig-cost-guide" },
         { label: "Adult size", value: "8 to 12 inches, 1.5 to 2.6 lbs." },
         { label: "Lifespan", value: "4 to 8 years." },
         { label: "Nails", value: "A trim roughly every 6 to 8 weeks, with styptic powder within reach before you start, a flashlight held behind dark nails to find the quick.", source: "small-mammal-grooming-nails-molting-guide" },
@@ -678,7 +682,7 @@ export const smallMammalGuides = [
       vetLine: "A cavy-savvy exotic vet, found before you need one. Guinea pigs hide illness well, so an annual wellness exam matters even when everything looks fine.",
     },
     routes: [
-      { slug: "guinea-pig-cost-guide", line: "$10 to $60 for the animal, a $300 to $470 setup, $75 to $185 a month for a pair, and why the budget really needs to plan for two." },
+      { slug: "guinea-pig-cost-guide", line: "$10 to $60 for the animal, %%setup:guinea-pig%% for the setup, %%monthly:guinea-pig%% a month for a pair, and why the budget really needs to plan for two." },
       { slug: "guinea-pig-tank-setup-guide", line: "The 7.5 to 10.5 square foot minimum, temperature, bedding, and why vitamin C makes this diet different from a rabbit's or hamster's." },
       { slug: "guinea-pig-scurvy-vitamin-c-guide", line: "What scurvy actually looks like by stage, why fortified pellets alone aren't enough, and the real daily numbers." },
       { slug: "guinea-pig-feeding-guide", line: "Schedule, life-stage differences, safe and toxic foods, and the honest range of reasons a guinea pig stops eating." },
@@ -741,7 +745,7 @@ export const smallMammalGuides = [
         { label: "Diet", value: "A nutritionally complete hamster pellet or lab block as the staple, not a loose seed mix. Small daily fresh vegetables, under about 10% of the diet combined with fruit.", source: "hamster-feeding-guide" },
         { label: "Not eating", value: "6 to 12 hours without eating is worth watching, 12 to 24 hours warrants a vet call, 24+ hours is critical, 48+ life-threatening. A day of no visible eating can also just mean a hamster is working through a cheek-pouch hoard.", source: "hamster-feeding-guide" },
         { label: "Handling", value: "Let it wake up and orient itself before reaching in, never grab from above. Scoop from below with both hands. Syrians are the easiest to handle; dwarfs and Roborovski are faster and more nip-prone.", source: "hamster-handling-guide" },
-        { label: "Budget", value: "About $25 for a Syrian, $15 to $25 for dwarfs. $165 to $550 to set up, animal included, every item priced. $10 to $25 a month.", source: "hamster-cost-guide" },
+        { label: "Budget", value: "About $25 for a Syrian, %%animal:hamster%% for dwarfs. $165 to $550 to set up, animal included, every item priced. %%monthly:hamster%% a month.", source: "hamster-cost-guide" },
         { label: "Adult size", value: "5 to 7 inches, 3 to 5 oz." },
         { label: "Lifespan", value: "A large veterinary study found a median age at death of 1.75 years. Syrians and Roborovskis tend toward 2 to 3 years, Winter Whites often only about a year.", source: "hamster-cost-guide" },
       ],
@@ -758,7 +762,7 @@ export const smallMammalGuides = [
       vetLine: "An exotic vet, found before you need one. Wet tail is a same-day emergency, not a wait-and-see situation; most of the rest of this list is prevented through clean, dust-free bedding and a stress-free setup.",
     },
     routes: [
-      { slug: "hamster-cost-guide", line: "$15 to $25 for the animal, $165 to $550 to set up with it, $10 to $25 a month, and what a median 1.75-year lifespan means for the budget." },
+      { slug: "hamster-cost-guide", line: "%%animal:hamster%% for the animal, $165 to $550 to set up with it, %%monthly:hamster%% a month, and what a median 1.75-year lifespan means for the budget." },
       { slug: "hamster-tank-setup-guide", line: "The real floor space (bigger than any starter kit), bar spacing, bedding depth, wheel size, and the sand bath most kits skip." },
       { slug: "hamster-feeding-guide", line: "Free-choice versus scheduled feeding, safe and toxic foods, and how to tell cheek-pouch hoarding from real appetite loss." },
       { slug: "hamster-handling-guide", line: "Why species matters more than you'd think, the correct scoop-from-below technique, and why waking a sleeping hamster gets you bitten." },
@@ -829,7 +833,7 @@ export const smallMammalGuides = [
         { label: "Picking one up", value: "Scoop from underneath with flat or cupped hands and let the ball unroll on its own time. Never force a ball open. Huffing and balling are reflexes, and the 5,000 to 7,000 quills poke bare hands but do not embed.", source: "hedgehog-handling-guide" },
         { label: "Quilling and self-anointing", value: "Baby quills go at about a month and permanent spines replace them, later shed one at a time, with grumpiness that passes within a month. Foaming saliva over its own quills after a new smell is normal, not poisoning.", source: "hedgehog-handling-guide" },
         { label: "Quarantine", value: "At least two weeks for any new arrival, which is how mites are kept out.", source: "hedgehog-health-issues-guide" },
-        { label: "Budget", value: "$100 to $300 for the hedgehog, roughly $200 to $400 for the setup, about $20 to $40 a month plus heating. An exotic vet visit is $80 to $200, and an emergency fund of $500 or more is reasonable.", source: "hedgehog-cost-guide" },
+        { label: "Budget", value: "%%animal:hedgehog%% for the hedgehog, roughly %%setup:hedgehog%% for the setup, about %%monthly:hedgehog%% a month plus heating. An exotic vet visit is $80 to $200, and an emergency fund of $500 or more is reasonable.", source: "hedgehog-cost-guide" },
         { label: "Lifespan", value: "3 to 6 years typically, some to 8 to 10.", source: "hedgehog-cost-guide" },
         { label: "Adult size", value: "5 to 9 inches (13 to 23 cm); 8 to 24 oz." },
       ],
@@ -849,7 +853,7 @@ export const smallMammalGuides = [
       vetLine: "Always see a vet for wobbling or coordination changes, since cold-related sluggishness, minor strokes, and tumors look similar and are far more treatable.",
     },
     routes: [
-      { slug: "hedgehog-cost-guide", line: "$100 to $300 for the animal, $200 to $400 to set up, $20 to $40 a month, and why the legal question comes before any of it." },
+      { slug: "hedgehog-cost-guide", line: "%%animal:hedgehog%% for the animal, %%setup:hedgehog%% to set up, %%monthly:hedgehog%% a month, and why the legal question comes before any of it." },
       { slug: "hedgehog-tank-setup-guide", line: "The 2 by 3 foot floor, the 72 to 90°F range that is the whole ballgame, and the lightless heat emitter that holds it." },
       { slug: "hedgehog-feeding-guide", line: "Evening feeding, the portion by body condition, the foods that are genuinely toxic, and the 24-hour rule for a hedgehog that stops eating." },
       { slug: "hedgehog-handling-guide", line: "What huffing and balling actually mean, the scoop that works, quilling, and why self-anointing is not a seizure." },
@@ -914,7 +918,7 @@ export const smallMammalGuides = [
         { label: "Company", value: "A neutered, opposite-sex pair close in age. Solitary rabbits showed less behavior of every kind.", source: "rabbit-enrichment-guide" },
         { label: "Vet", value: "A rabbit-savvy exotic vet, found before you need one. Twice-yearly wellness exams, and the RHDV2 vaccine from 4 weeks, two doses 21 days apart, then yearly.", source: "rabbit-health-issues-guide" },
         { label: "Spay or neuter", value: "$150 to $500 or more, budgeted separately. Adoption fees often include it.", source: "rabbit-cost-guide" },
-        { label: "Budget", value: "$250 to $545 to set up, $60 to $135 a month for food and litter, and a $500 to $1,000 emergency fund.", source: "rabbit-cost-guide" },
+        { label: "Budget", value: "%%setup:rabbit%% to set up, %%monthly:rabbit%% a month for food and litter, and a $500 to $1,000 emergency fund.", source: "rabbit-cost-guide" },
         { label: "Lifespan", value: "8 to 12 years indoors, some to 14 or beyond. Outdoor rabbits average about 3 to 5.", source: "rabbit-tank-setup-guide" },
         { label: "Heat", value: "Comfortable at 61 to 72°F. Risk climbs once the room passes about 80°F. Indoors, a draft or damp bedding causes more trouble than a cool room.", source: "small-mammal-temperature-heat-stress-guide" },
         { label: "Nails", value: "A trim roughly every 6 to 8 weeks, with styptic powder within reach before you start, one or two nails per sitting for a rabbit that fights it.", source: "small-mammal-grooming-nails-molting-guide" },
@@ -935,7 +939,7 @@ export const smallMammalGuides = [
       vetLine: "Rabbits need a rabbit-savvy exotic vet, not a standard small-animal clinic. Find one before you need one.",
     },
     routes: [
-      { slug: "rabbit-cost-guide", line: "A $250 to $545 setup, $60 to $135 a month for food and litter, what the spay and the first year really cost, and why the emergency fund is not optional." },
+      { slug: "rabbit-cost-guide", line: "%%setup:rabbit%% setup, %%monthly:rabbit%% a month for food and litter, what the spay and the first year really cost, and why the emergency fund is not optional." },
       { slug: "rabbit-tank-setup-guide", line: "The space standard, why indoors nearly doubles the lifespan, flooring, and litter training in one move." },
       { slug: "rabbit-feeding-guide", line: "Hay, pellets, and greens by life stage, the toxic list, and the reasons a rabbit stops eating." },
       { slug: "rabbit-gi-stasis-guide", line: "The emergency itself: what normal droppings look like, the early signs, and why waiting is dangerous." },
@@ -1009,7 +1013,7 @@ export const smallMammalGuides = [
         { label: "Foods to avoid", value: "Chocolate, dairy, canned fruit, yogurt drops, peanut butter, and candy. Spinach and beets, the highest-oxalate produce, since oxalates block calcium absorption.", source: "sugar-glider-feeding-guide" },
         { label: "Bonding", value: "Not direct handling. A glider bonds by being carried against your body in a pouch until it learns your scent, after several days of settling in, then one to two hours a day. Keep the room at about 75°F or warmer: they chill easily.", source: "sugar-glider-handling-guide" },
         { label: "Crabbing", value: "A loud buzzing chatter means frightened. A restrained glider bites, and the bite can be deep.", source: "sugar-glider-handling-guide" },
-        { label: "Budget", value: "$200 to $500 each and you need two, so $500 to $1,200 for a pair with setup and $30 to $60 a month. An exotic vet visit is $75 to $200, neutering $100 to $200, and at least $200 in reserve.", source: "sugar-glider-cost-guide" },
+        { label: "Budget", value: "%%animal:sugar-glider%% each and you need two, then %%setup:sugar-glider%% for the pair's setup and %%monthly:sugar-glider%% a month. An exotic vet visit is $75 to $200, neutering $100 to $200, and at least $200 in reserve.", source: "sugar-glider-cost-guide" },
         { label: "Lifespan", value: "10 to 15 years in captivity.", source: "sugar-glider-cost-guide" },
         { label: "Adult size", value: "5 to 6 inches (13 to 15 cm) body." },
       ],
@@ -1028,7 +1032,7 @@ export const smallMammalGuides = [
       vetLine: "Caught early, hind-limb weakness is treatable with corrected calcium, vitamin D3, and a diet fix. The real fix is a balanced diet from the start.",
     },
     routes: [
-      { slug: "sugar-glider-cost-guide", line: "$200 to $500 each and you need two, a $500 to $1,200 setup, and the first-year number most keepers report." },
+      { slug: "sugar-glider-cost-guide", line: "%%animal:sugar-glider%% each and you need two, %%setup:sugar-glider%% for the setup, and the first-year number most keepers report." },
       { slug: "sugar-glider-tank-setup-guide", line: "Cage height over width, half-inch bar spacing, 75 to 88°F, and the wheel that can injure a glider's spine." },
       { slug: "sugar-glider-feeding-guide", line: "The thirds, the formulated diets, portion by body weight, and the calcium ratio that prevents paralysis." },
       { slug: "sugar-glider-handling-guide", line: "Why bonding starts in a pouch, what crabbing means, and why a lone glider is harder to reach." },
@@ -1056,4 +1060,4 @@ export const smallMammalGuides = [
       { q: "Is it true that sugar gliders are banned in Georgia?", a: "No, this is a common misconception. Georgia explicitly allows sugar gliders to be kept as pets without a license, as long as the owner has documentation showing the animal came from a USDA-inspected and regulated source." },
     ],
   },
-];
+]);

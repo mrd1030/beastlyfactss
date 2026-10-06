@@ -1,4 +1,8 @@
-export const lizardGuides = [
+// Cost figures in these entries are %%placeholders%% filled from the master
+// price list (src/lib/costs.js); never type a cost guide total here.
+import { fillCostTokens } from '../../costs.js';
+
+export const lizardGuides = fillCostTokens([
   {
     id: "ackie-monitor",
     name: "Ackie Monitor",
@@ -48,7 +52,7 @@ export const lizardGuides = [
         { label: "Weigh it weekly", value: "Wild ackies burn far more than a captive one can, and they are strongly food-motivated. A kitchen scale weekly.", source: "ackie-monitor-health-issues-guide" },
         { label: "Handling", value: "Never grab from above or chase one out of a hide. Let it climb onto you, with tong-feeding as the bonding tool. Fast, and it scratches or nips if startled.", source: "ackie-monitor-handling-guide" },
         { label: "Enrichment", value: "Burrow depth first, then footprint and height, then puzzle feeding, then the humid dig zone, then climbing and rock stacks.", source: "ackie-monitor-enrichment-guide" },
-        { label: "Budget", value: "$150 to $450 for the monitor, red ackies at the top. Setup $850 to $2,150 or more, then $40 to $80 a month, most of it feeders and bulbs. A routine exam is $50 to $100.", source: "ackie-monitor-cost-guide" },
+        { label: "Budget", value: "%%animal:ackie-monitor%% for the monitor, red ackies at the top. Setup %%setup:ackie-monitor%%, then %%monthly:ackie-monitor%% a month, most of it feeders and bulbs. A routine exam is %%vet:ackie-monitor%%.", source: "ackie-monitor-cost-guide" },
         { label: "Adult size", value: "Around 2 feet (0.6 m) typical, reported from 17.3 inches (44 cm) to 30 inches (76 cm)." },
         { label: "Lifespan", value: "15 years or more on a demanding setup.", source: "ackie-monitor-cost-guide" },
         { label: "Hygiene", value: "Wash hands with soap after any contact, keep the lizard out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
@@ -66,7 +70,7 @@ export const lizardGuides = [
       vetLine: "Nearly everything here comes back to building the ambitious setup this species needs. Weak or absent UVB combined with poor calcium supplementation is the direct cause of MBD, the most serious and most preventable condition on the list. An enclosure too small to support this species' natural activity level contributes directly to obesity. And getting temperature and substrate right prevents both impaction and digestive issues.",
     },
     routes: [
-      { slug: "ackie-monitor-cost-guide", line: "$150 to $450 for the animal, red against yellow, the $800 to $1,500 setup itemized, and why the enclosure rather than the monitor is the real commitment." },
+      { slug: "ackie-monitor-cost-guide", line: "%%animal:ackie-monitor%% for the animal, red against yellow, the %%setup:ackie-monitor%% setup itemized, and why the enclosure rather than the monitor is the real commitment." },
       { slug: "ackie-monitor-tank-setup-guide", line: "The 5 by 2.5 by 4 foot minimum, a basking surface hotter than almost any other pet lizard's, two feet of diggable substrate, and what a Retes stack is for." },
       { slug: "ackie-monitor-feeding-guide", line: "Daily for juveniles and every other day after, the insect staples worth building on, why rodents are the mistake, and six reasons an ackie stops eating." },
       { slug: "ackie-monitor-handling-guide", line: "A lizard that does backflips after crickets, tong-feeding as the bonding tool, and the body language that says stop before it bolts." },
@@ -82,6 +86,7 @@ export const lizardGuides = [
       "Thermostat",
       "Infrared thermometer gun",
       "T5 HO UVB in the 12% desert range",
+      "UV index meter (optional, highly recommended)",
       "Bright daylight LED",
       "Retes stack, shelves or tiles",
       "Hides and rock stacks",
@@ -89,7 +94,7 @@ export const lizardGuides = [
       "Gut-loaded feeder insects, or a roach colony",
       "Reptile calcium powder",
       "A multivitamin with true vitamin A",
-      "Kitchen scale for weekly weights",
+      "Kitchen scale that reads in grams",
       "Extraction puzzle feeder",
       "Clicker and target stick",
     ],
@@ -138,7 +143,7 @@ export const lizardGuides = [
     // $23; a UVB line at $80 to $120 against $65 to $75; a vet check at $70
     // to $120 against a $50 to $135 exam; and a setup table topping out near
     // $1,640 on a page whose own cost guide says the build "often exceeds
-    // $1,000 to $3,000". The hub also never gave a humidity figure while
+    // %%setup:argentine-tegu%%". The hub also never gave a humidity figure while
     // blaming husbandry for respiratory infection, and never mentioned that
     // Florida banned acquisition in 2021, which the cost guide treats as the
     // first thing a buyer needs to know. All of that is now sourced to a
@@ -161,7 +166,7 @@ export const lizardGuides = [
         { label: "Two handlers", value: "The rule is one handler per 3 to 4 feet of lizard, and a full-grown Argentine is past it: two people for any job that needs it held still.", source: "argentine-tegu-handling-guide" },
         { label: "Brumation", value: "Roughly 2 to 4 months of slowing, eating less, and burrowing from mid-September, even indoors. Harmless to skip, and handling is closed for that season.", source: "argentine-tegu-handling-guide" },
         { label: "Adult size", value: "3 to 5 feet (90 to 150 cm)." },
-        { label: "Budget", value: "$200 to $500 for a black and white, blue, or Chacoan tegu, $700 to $1,200 for rare morphs. Setup often exceeds $1,000 to $3,000, then $40 to $100 a month. A routine exam is $50 to $135.", source: "argentine-tegu-cost-guide" },
+        { label: "Budget", value: "$200 to $500 for a black and white, blue, or Chacoan tegu, $700 to $1,200 for rare morphs. Setup %%setup:argentine-tegu%%, then %%monthly:argentine-tegu%% a month. A routine exam is $50 to $135.", source: "argentine-tegu-cost-guide" },
         { label: "Lifespan", value: "15 to 20 years on average with good care.", source: "argentine-tegu-cost-guide" },
         { label: "Salmonella", value: "Never clean the enclosure in a kitchen sink or a shared bathtub, and children under 5 do not touch reptiles.", source: "reptile-salmonella-hygiene-guide" },
         { label: "Power outage", value: "A healthy adult tolerates one cool night. A day or two below the normal night low is when cold stress and respiratory infection become real.", source: "reptile-emergency-plan-guide" },
@@ -183,7 +188,7 @@ export const lizardGuides = [
     },
     routes: [
       { slug: "argentine-tegu-legal-guide", line: "Florida's prohibited list with the dates, the closed grandfather window, and the eight other jurisdictions that ban or gate one." },
-      { slug: "argentine-tegu-cost-guide", line: "$200 to $500 for the animal, a build that often exceeds $1,000 to $3,000, and what a true 8x4x4 enclosure costs built to order." },
+      { slug: "argentine-tegu-cost-guide", line: "$200 to $500 for the animal, %%setup:argentine-tegu%% for the build, and what a true 8x4x4 enclosure costs built to order." },
       { slug: "argentine-tegu-tank-setup-guide", line: "8x4x4 as a floor, 95 to 100F basking, 70 to 80% humidity, 12 to 18 inches of substrate, and the feeding schedule by age." },
       { slug: "argentine-tegu-feeding-guide", line: "Five meals a week as a hatchling to two as an adult, the 60/30/10 adult plate, the skull-sized portion, cooked eggs, and brumation versus a real refusal." },
       { slug: "argentine-tegu-handling-guide", line: "Why the dog comparison is earned rather than marketing, reading a tegu by its size, the bite protocol, and the season handling stops." },
@@ -202,8 +207,9 @@ export const lizardGuides = [
       "Hides at both ends of the temperature gradient",
       "Extraction puzzle board",
       "Clicker and target stick",
-      "Calcium without D3, plus a reptile multivitamin",
+      "Plain calcium without D3 or phosphorus",
       "Digital thermometer and hygrometer",
+      "A reptile multivitamin without D3",
     ],
     faqs: [
       { q: "What size enclosure does an Argentine tegu need?", a: "An adult male needs 8 by 4 by 4 feet at minimum; females need somewhat less, though still substantial space. Experienced keepers often go to 10 by 5 by 5 or a dedicated reptile room. A hatchling can start near 40 gallons, but expect to rehouse it within the first year." },
@@ -250,7 +256,7 @@ export const lizardGuides = [
         { label: "Calcium", value: "Gut-load the feeders, then dust with plain calcium: near-daily for juveniles, 2 to 3 times a week for adults, calcium with D3 a couple of times a week, a multivitamin once or twice a week.", source: "bearded-dragon-feeding-guide" },
         { label: "Handling", value: "Wait 7 to 14 days before the first session. Scoop from below with all four feet supported. A black beard means the session is over.", source: "bearded-dragon-handling-guide" },
         { label: "Vet", value: "An annual fecal exam with a sample less than 24 hours old, and a vet check before brumation season.", source: "bearded-dragon-health-issues-guide" },
-        { label: "Budget", value: "$575 to $1,280 to set up, $75 to $145 a month, and an emergency fund of a few hundred dollars.", source: "bearded-dragon-cost-guide" },
+        { label: "Budget", value: "%%setup:bearded-dragon%% to set up, %%monthly:bearded-dragon%% a month, and an emergency fund of a few hundred dollars.", source: "bearded-dragon-cost-guide" },
         { label: "Adult size", value: "16 to 24 inches nose to tail tip, most adults 18 to 22.", source: "bearded-dragon-growth-weight-checks-guide" },
         { label: "Lifespan", value: "10 to 15 years in captivity." },
         { label: "Shedding", value: "Raise humidity toward the high end during the shed, give rough surfaces to rub on, and never pull loose skin. A 30-minute chin-deep soak at cage temperature loosens retained shed.", source: "reptile-shedding-complete-guide" },
@@ -281,7 +287,7 @@ export const lizardGuides = [
       vetLine: "A reptile vet, not a general clinic. Never dose an over-the-counter dewormer blind: get a fecal exam and treat what it finds.",
     },
     routes: [
-      { slug: "bearded-dragon-cost-guide", line: "$40 to $100 for the dragon, $575 to $1,280 for the setup around it, and the surgery bill correct husbandry prevents." },
+      { slug: "bearded-dragon-cost-guide", line: "$40 to $100 for the dragon, %%setup:bearded-dragon%% for the setup around it, and the surgery bill correct husbandry prevents." },
       { slug: "bearded-dragon-shopping-list", line: "Every item in the cart with a price range and the reason it is there." },
       { slug: "bearded-dragon-tank-setup-guide", line: "The full temperature table, UVB distance and replacement, humidity, and the substrate that will not impact." },
       { slug: "bearded-dragon-feeding-guide", line: "A plate that flips from mostly insects to mostly greens with age, gut-loading and calcium dust, the foods to avoid, and brumation versus a vet visit." },
@@ -362,7 +368,7 @@ export const lizardGuides = [
         { label: "Handling", value: "Leave a new skink 2 to 3 weeks, then 5 minutes a day, adding a minute each time it sits still, up to 15. Come in from the side, slide a hand under, support it along your forearm, never by the tail.", source: "blue-tongue-skink-handling-guide" },
         { label: "Reading the animal", value: "Short huffs mean annoyance, tail flicking irritation, long hisses with a puffed, tilted body aggression. At every step: stop and end the session.", source: "blue-tongue-skink-handling-guide" },
         { label: "Legal check", value: "Cleared in 46 of 52 jurisdictions. Hawaii and the District of Columbia do not allow one, New Jersey and West Virginia require a permit, and Minnesota and Maine attach conditions.", source: "blue-tongue-skink-legal-guide" },
-        { label: "Budget", value: "Northerns $150 to $250, morphs to $400 to $700; Indonesians $100 to $250. Setup $330 to $635, then about $41 to $69 a month. A routine exam runs $100 to $150, and a wild-caught Indonesian needs a fecal exam and deworming at purchase.", source: "blue-tongue-skink-cost-guide" },
+        { label: "Budget", value: "Northerns $150 to $250, morphs to $400 to $700; Indonesians $100 to $250. Setup %%setup:blue-tongue-skink%%, then about $41 to $69 a month. A routine exam runs $100 to $150, and a wild-caught Indonesian needs a fecal exam and deworming at purchase.", source: "blue-tongue-skink-cost-guide" },
         { label: "Lifespan", value: "15 to 20 years in captivity, some past 30.", source: "blue-tongue-skink-cost-guide" },
         { label: "Adult size", value: "17-24 inches (43-60 cm)." },
         { label: "Power outage", value: "The night low stays above about 70°F. Below that, add heat, move the animal, or call ahead to a sitter.", source: "reptile-emergency-plan-guide" },
@@ -390,18 +396,19 @@ export const lizardGuides = [
     ],
     buyList: [
       "4x2x2 ft front-opening PVC enclosure",
-      "T5 HO UVB kit spanning at least half the warm side",
-      "Halogen bulb or deep heat projector, and a basking dome fixture",
+      "Moderate UVB (T5 HO Arcadia 6%)",
+      "Basking dome/fixture",
       "Thermostat for the heat source",
       "Digital thermometer and hygrometer",
       "Topsoil and play sand, or a coco-fiber-based substrate, 4 to 6 inches deep",
       "Leaf litter or sphagnum moss, for an Indonesian setup",
       "Multiple hides, one at each end of the gradient",
       "A water dish large enough for the skink to fully submerge in",
-      "Calcium, low or no phosphorus, and a reptile multivitamin",
+      "Plain calcium without D3 or phosphorus",
       "Gut-loaded feeder insects, and soft-tipped feeding tongs",
-      "A gram-accurate scale for weekly weigh-ins",
+      "Kitchen scale that reads in grams",
       "A storage tub for a dig box",
+      "A reptile multivitamin without D3",
     ],
     faqs: [
       { q: "Do Northern and Indonesian skinks need different temperatures?", a: "Yes, slightly. Northern basking surface should run 105 to 115°F, Indonesian basking surface a bit cooler at 100 to 105°F. Both need a cool side of 70 to 80°F and nighttime temperatures staying above roughly 70°F." },
@@ -462,7 +469,7 @@ export const lizardGuides = [
         { label: "Retained shed", value: "From low humidity, and it constricts toes and tail if left. Fix the humidity and the humid hide at home; retained eye caps or a severe case go to a vet.", source: "fire-skink-health-issues-guide" },
         { label: "Handling, honestly", value: "Skittish, fast, and quick to burrow out of sight: a display animal you occasionally interact with. Never by the tail, which drops under grasping pressure, and low over a soft surface.", source: "fire-skink-handling-guide" },
         { label: "Why you never see it", value: "Semi-fossorial, and hiding looks identical to having nothing to do. Deep damp coconut fiber that holds a tunnel, and cork cover at both ends of the gradient so it never trades temperature for security.", source: "fire-skink-enrichment-guide" },
-        { label: "Budget", value: "$25 to $40 for a wild-caught skink, more for captive-bred, which tames better. Setup roughly $554 to $627 with a dimming thermostat, then $40 to $65 a month. An annual exotic checkup, with parasite screening for a wild-caught animal.", source: "fire-skink-cost-guide" },
+        { label: "Budget", value: "%%animal:fire-skink%% for a wild-caught skink, more for captive-bred, which tames better. Setup roughly %%setup:fire-skink%% with a dimming thermostat, then %%monthly:fire-skink%% a month. An annual exotic checkup, with parasite screening for a wild-caught animal.", source: "fire-skink-cost-guide" },
         { label: "Lifespan", value: "15 to 20 years, a two-decade commitment for a cheap lizard.", source: "fire-skink-cost-guide" },
         { label: "Adult size", value: "12 to 15 inches (30 to 38 cm) including tail." },
         { label: "Hygiene", value: "Wash hands with soap after any contact, keep the skink out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
@@ -480,7 +487,7 @@ export const lizardGuides = [
       vetLine: "Low humidity is behind the respiratory infection and poor shedding that make up most of this species' real risk, and dry substrate behind the impaction.",
     },
     routes: [
-      { slug: "fire-skink-cost-guide", line: "$25 to $40 for the skink, $554 to $627 for the setup, and the thermostat line people try to skip." },
+      { slug: "fire-skink-cost-guide", line: "%%animal:fire-skink%% for the skink, %%setup:fire-skink%% for the setup, and the thermostat line people try to skip." },
       { slug: "fire-skink-tank-setup-guide", line: "36x18x18 as a floor, 92 to 96F basking, 60 to 70%, the 4 to 6 inch mix, and what to feed." },
       { slug: "fire-skink-handling-guide", line: "Why this is not the blue-tongued skink, and why the tail is the part to leave alone." },
       { slug: "fire-skink-feeding-guide", line: "Five minutes of insects scattered in the litter, daily young and twice a week adult, dusted every time, and pinky mice monthly at most." },
@@ -496,12 +503,13 @@ export const lizardGuides = [
       "A dimming thermostat for the basking bulb",
       "A digital probe thermometer and hygrometer",
       "Two hides, one at each end of the gradient, plus cork flats",
-      "Calcium with D3 and a reptile multivitamin",
+      "Calcium with D3",
       "Feeder insects, varied, and tongs",
+      "A reptile multivitamin without D3",
     ],
     faqs: [
       { q: "What size enclosure does a fire skink need?", a: "36 by 18 by 18 inches minimum for one adult, and bigger is worth it for an active species. Floor space beats height. Don't house two fire skinks together, especially two males: real fighting risk." },
-      { q: "What does a fire skink enclosure setup cost?", a: "Roughly $554 to $627: a 36x18x18 inch enclosure, T5 UVB kit, basking bulb and dome, dimming thermostat, eight or nine bags of coconut fiber, two hides, and a hygrometer. The enclosure dominates, and the thermostat has to be a dimming model, since an on/off unit's maker says not to run a basking bulb on one." },
+      { q: "What does a fire skink enclosure setup cost?", a: "Roughly %%setup:fire-skink%%: a 36x18x18 inch enclosure, T5 UVB kit, basking bulb and dome, dimming thermostat, eight or nine bags of coconut fiber, two hides, and a hygrometer. The enclosure dominates, and the thermostat has to be a dimming model, since an on/off unit's maker says not to run a basking bulb on one." },
       { q: "What causes respiratory infection in fire skinks?", a: "Substrate or overall enclosure conditions running too dry, or occasionally too cold. Watch for open-mouth breathing, mucus, and wheezing. See a vet, this needs professional treatment, and prevention is straightforward, hold 60 to 70% ambient humidity with consistently damp substrate." },
     ],
   },
@@ -557,7 +565,7 @@ export const lizardGuides = [
         { label: "Water", value: "Droplets, not standing water: a fine mist on foliage and glass once or twice a day. Keep a shallow dish and do not count on it.", source: "green-anole-enrichment-guide" },
         { label: "Handling", value: "A display animal. If you want a lizard to hold often, this is the wrong species.", source: "green-anole-handling-guide" },
         { label: "Adult size", value: "5 to 8 inches (13 to 20 cm), including the tail." },
-        { label: "Budget", value: "$5 to $30 for the anole, most under $15, and roughly $350 to $520 for the setup, the terrarium most of it. $20 to $35 a month, and $50 to $100 for a routine exam, with an emergency visit from $150.", source: "green-anole-cost-guide" },
+        { label: "Budget", value: "%%animal:green-anole%% for the anole, most under $15, and roughly %%setup:green-anole%% for the setup, the terrarium most of it. %%monthly:green-anole%% a month, and $50 to $100 for a routine exam, with an emergency visit from $150.", source: "green-anole-cost-guide" },
         { label: "Lifespan", value: "3 to 4 years when kept casually, up to 10 with the setup right. The gap is a setup problem, not a species limit.", source: "green-anole-cost-guide" },
         { label: "The law", value: "Unregulated in 37 jurisdictions and restricted in the southeastern states where it is native. Georgia bars it as a pet regardless of origin, so a captive-bred animal from out of state is in the same position as one from a Georgia yard.", source: "green-anole-legal-guide" },
         { label: "Quarantine", value: "3 to 6 months for a new reptile, on plain paper towel with dedicated tools, serviced last.", source: "reptile-quarantine-guide" },
@@ -577,7 +585,7 @@ export const lizardGuides = [
     },
     routes: [
       { slug: "green-anole-legal-guide", line: "Why a native species raises a wildlife question rather than an exotic-pet one, and what to check in your own state." },
-      { slug: "green-anole-cost-guide", line: "$5 to $30 for the lizard, $390 to $470 for the enclosure around it, and why the cheap price tag is what drives bad setups." },
+      { slug: "green-anole-cost-guide", line: "%%animal:green-anole%% for the lizard, $390 to $470 for the enclosure around it, and why the cheap price tag is what drives bad setups." },
       { slug: "green-anole-tank-setup-guide", line: "24x24x24 as a floor, 90F basking with the mesh-burn rule, 60 to 70% humidity, real UVB, and what to feed." },
       { slug: "green-anole-feeding-guide", line: "Two or three insects smaller than the head every other day, dusted every time, water as droplets, and the two feeders to skip." },
       { slug: "green-anole-handling-guide", line: "A display animal rather than a held one, what the handling study actually measured, and never taking the tail." },
@@ -642,7 +650,7 @@ export const lizardGuides = [
         { label: "Housing together", value: "Adults are territorial and adult males fight. One iguana.", source: "green-iguana-enrichment-guide" },
         { label: "Adult size", value: "A male reaches 6 to 7 feet including tail and up to 20 pounds, a different animal from the baby most people bring home.", source: "green-iguana-handling-guide" },
         { label: "First year", value: "Many captive green iguanas die young, from inadequate diet, lighting, and housing.", source: "green-iguana-health-issues-guide" },
-        { label: "Budget", value: "Farm-raised babies run $20 to $100, morphs $300 to $1,000 or more. The first-year kit is about $1,032 to $1,101, and the adult enclosure is a second purchase a year or two later. Ongoing $60 to $150 a month.", source: "green-iguana-cost-guide" },
+        { label: "Budget", value: "Farm-raised babies run $20 to $100, morphs $300 to $1,000 or more. The first-year kit is about %%setup:green-iguana%%, and the adult enclosure is a second purchase a year or two later. Ongoing %%monthly:green-iguana%% a month.", source: "green-iguana-cost-guide" },
         { label: "Lifespan", value: "15 to 20 years, sometimes 25.", source: "green-iguana-cost-guide" },
         { label: "Hygiene", value: "Wash hands with soap after any contact, keep the iguana out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
         { label: "Power outage", value: "Not in the guide's cold-floor table: use the tank setup guide's documented nighttime low, the low 70s, as the floor.", source: "reptile-emergency-plan-guide" },
@@ -752,7 +760,7 @@ export const lizardGuides = [
         { label: "Sexing and live birth", value: "Males grow three forward horns; females have little or none. Females bear live young and can store sperm, so a lone female can still give birth. The repeated toll of pregnancy is why females live shorter lives.", source: "jacksons-chameleon-health-issues-guide" },
         { label: "Planting density", value: "Layered live plants so the animal can cross the cage at several heights unseen. If you can always spot it immediately, it is too sparse.", source: "jacksons-chameleon-enrichment-guide" },
         { label: "Legal, before you buy", value: "Hawaii and the District of Columbia bar private ownership, New Jersey and West Virginia require a permit, Minnesota and Maine attach conditions. The other 46 jurisdictions place no restriction.", source: "jacksons-chameleon-legal-guide" },
-        { label: "Budget", value: "$50 to $250 for the chameleon, and captive-bred is worth the price over a parasitized wild-caught Hawaiian animal. Setup roughly $345 to $475, then $50 to $100 a month. A routine exam runs $50 to $100.", source: "jacksons-chameleon-cost-guide" },
+        { label: "Budget", value: "%%animal:jacksons-chameleon%% for the chameleon, and captive-bred is worth the price over a parasitized wild-caught Hawaiian animal. Setup roughly %%setup:jacksons-chameleon%%, then %%monthly:jacksons-chameleon%% a month. A routine exam runs $50 to $100.", source: "jacksons-chameleon-cost-guide" },
         { label: "Lifespan, by sex", value: "Males 8 to 10 years, females 3 to 5.", source: "jacksons-chameleon-cost-guide" },
         { label: "Adult size", value: "Typically 6 to 10 inches (15 to 25 cm); males up to 15 (38 cm)." },
         { label: "Hygiene", value: "Wash hands with soap after any contact, keep the chameleon out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
@@ -783,12 +791,13 @@ export const lizardGuides = [
       "A T5 HO UVB fixture with a ReptiSun 5.0 or Arcadia Forest 6% bulb",
       "A halogen basking bulb and a dimming thermostat for it",
       "A misting system, manual or automated, plus a dripper",
-      "A cool-mist humidifier on a humidistat for the overnight spike",
+      "A cool-mist humidifier on a humidistat, where the room cannot hold the humidity",
       "Distilled water for anything that mists or fogs",
       "Live plants, densely, plus climbing branches at several heights",
       "Paper towel for the floor, or a bioactive base if you prefer",
-      "A digital thermometer and hygrometer",
-      "A calcium supplement and a general vitamin and mineral supplement",
+      "Digital thermometer and hygrometer",
+      "Plain calcium without D3 or phosphorus",
+      "A multivitamin with true vitamin A",
     ],
     faqs: [
       { q: "What size enclosure does an adult Jackson's chameleon need?", a: "24 by 24 by 48 inches for one adult, and bigger is better. A juvenile under about 10 months can sit temporarily in something like 16x16x30. One chameleon per enclosure: males fight." },
@@ -856,7 +865,7 @@ export const lizardGuides = [
         { label: "Handling", value: "From underneath, never from above, supporting the body and tail. Hissing, snapping, a puffed throat, standing on the hind limbs, or tail flicking means do not. Adult nail trims can take two or three people.", source: "savannah-monitor-handling-guide" },
         { label: "Feed with tongs", value: "Food in and leftovers out with tongs: a hungry monitor mistakes fingers for prey. Wash hands after handling its food.", source: "savannah-monitor-handling-guide" },
         { label: "Adult size", value: "3 to 4 feet and 8 to 15 pounds, with real teeth, claws, and tail.", source: "savannah-monitor-handling-guide" },
-        { label: "Budget", value: "$150 to $300 for a juvenile, $300 to $800 for an adult. Setup well past $500 and sometimes over $1,000, then $30 to $50 a month, and $50 to $100 for a routine exam.", source: "savannah-monitor-cost-guide" },
+        { label: "Budget", value: "$150 to $300 for a juvenile, $300 to $800 for an adult. Setup %%setup:savannah-monitor%%, then %%monthly:savannah-monitor%% a month, and $50 to $100 for a routine exam.", source: "savannah-monitor-cost-guide" },
         { label: "Lifespan", value: "10 to 15 years cited, 15 to 20 achievable, and many die in their early teens or younger from fatty liver, kidney failure, or gout, nearly all from overfeeding.", source: "savannah-monitor-cost-guide" },
         { label: "Hygiene", value: "Wash hands with soap after any contact, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
       ],
@@ -874,7 +883,7 @@ export const lizardGuides = [
       vetLine: "Workups for obesity, parasites, or bone disease run into the hundreds, and all three are common enough here to budget for. Body condition scoring beats eyeballing an animal you see daily.",
     },
     routes: [
-      { slug: "savannah-monitor-cost-guide", line: "$150 to $300 for a juvenile and $300 to $800 for an adult, why that price is part of the problem, a setup that runs past $1,000, and the gap between what this species can live and what it usually does." },
+      { slug: "savannah-monitor-cost-guide", line: "$150 to $300 for a juvenile and $300 to $800 for an adult, why that price is part of the problem, %%setup:savannah-monitor%% for the setup, and the gap between what this species can live and what it usually does." },
       { slug: "savannah-monitor-tank-setup-guide", line: "The 8x4x4 foot standard and why nothing off the shelf meets it, a 140 to 150F basking surface, two feet of diggable substrate, the full-submersion basin, and what to feed." },
       { slug: "savannah-monitor-feeding-guide", line: "Insects as the staple and rodents as the exception, daily young and two to three times a week adult, calcium weekly, plain under UVB and with D3 only without it, and body condition as the portion." },
       { slug: "savannah-monitor-handling-guide", line: "Why this is not the ackie, the five warning signals that end a session, the grip for when an animal has to be controlled, and the nail trim that takes three people." },
@@ -961,7 +970,7 @@ export const lizardGuides = [
         { label: "Impaction and respiratory infection", value: "Bloating or stool that has stopped is a vet visit, not a wait. A lizard sitting with its mouth slightly open, or a bubble at a nostril, is the early sign of humidity too high or heat too low.", source: "uromastyx-health-issues-guide" },
         { label: "Metabolic bone disease", value: "The most common issue in captivity: poor appetite and weakness early, then a soft or hanging jaw, swollen limbs, tremors. Too little calcium or D3, or weak UVB. Always a vet.", source: "uromastyx-health-issues-guide" },
         { label: "Handling", value: "Scoop from below, never from above, whole body supported, 10 to 15 minutes at most. Never by the tail, which does not drop.", source: "uromastyx-handling-guide" },
-        { label: "Budget", value: "$150 to $400 for a captive-bred Mali or ornate, $300 to $800 for rarer species. Setup roughly $515 to $1,210, the enclosure $300 to $700 of it, then $25 to $45 a month. A routine exam runs $50 to $100.", source: "uromastyx-cost-guide" },
+        { label: "Budget", value: "%%animal:uromastyx%% for a captive-bred Mali or ornate, $300 to $800 for rarer species. Setup roughly %%setup:uromastyx%%, the enclosure $300 to $700 of it, then %%monthly:uromastyx%% a month. A routine exam runs $50 to $100.", source: "uromastyx-cost-guide" },
         { label: "Lifespan", value: "15 to 20 years, past 25 with excellent care.", source: "uromastyx-cost-guide" },
         { label: "Adult size", value: "10 to 30 inches (25 to 75 cm) depending on species." },
         { label: "Supplements", value: "Phosphorus-free calcium on the greens, more often for juveniles, tapering with age, and a multivitamin roughly weekly to every couple of weeks. UVB, not oral D3.", source: "uromastyx-feeding-guide" },
@@ -980,7 +989,7 @@ export const lizardGuides = [
       vetLine: "Each of these is on its own a reason to call. Most problems trace back to getting this species' unusually specific heat, humidity, or diet wrong.",
     },
     routes: [
-      { slug: "uromastyx-cost-guide", line: "$150 to $400 for the lizard, $500 to $900 of setup, and the starter kits that are sized wrong." },
+      { slug: "uromastyx-cost-guide", line: "%%animal:uromastyx%% for the lizard, $500 to $900 of setup, and the starter kits that are sized wrong." },
       { slug: "uromastyx-tank-setup-guide", line: "4x2x2 as a floor, a 110 to 120F basking surface, 20 to 30% humidity, and the substrate recipe." },
       { slug: "uromastyx-feeding-guide", line: "Schedule by age, the near-strict herbivore diet, the treats and foods to avoid, and why a cool basking spot causes weight loss even when it eats." },
       { slug: "uromastyx-handling-guide", line: "Two weeks hands-off, scoop from below, and why the tail is a permanent weapon rather than a sacrifice." },
@@ -997,7 +1006,7 @@ export const lizardGuides = [
       "Hides at both ends of the gradient",
       "A shallow water bowl, even though it will mostly go untouched",
       "Calcium and multivitamin supplements",
-      "A gram scale for monthly weights",
+      "Kitchen scale that reads in grams",
     ],
     faqs: [
       { q: "What size enclosure does a uromastyx need?", a: "Plan on 4x2x2 feet for species that top out around 18 inches, and up to 8x4x4 for a full-grown Egyptian. Keep it to one animal per enclosure." },
@@ -1045,7 +1054,7 @@ export const lizardGuides = [
         { label: "Supplements", value: "Plain calcium at nearly every feeding, calcium with D3 about every other week, and a multivitamin with real vitamin A on the same twice-monthly schedule. D3 is toxic in excess, which is why it is dosed less often.", source: "veiled-chameleon-feeding-guide" },
         { label: "Handling", value: "A solitary display animal. Approach from below with an open palm and let it climb on; hissing, gaping, and darkening mean frightened, so back off.", source: "veiled-chameleon-handling-guide" },
         { label: "Company", value: "Hatchlings reared alone for two months grew up duller. Adults are still never housed together.", source: "veiled-chameleon-enrichment-guide" },
-        { label: "Budget", value: "$20 to $100 for a captive-bred juvenile and roughly $400 to $800 for the setup. A routine exam runs $50 to $100; egg-binding runs $200 to $400 medically and $800 to $1,500 or more in surgery.", source: "veiled-chameleon-cost-guide" },
+        { label: "Budget", value: "%%animal:veiled-chameleon%% for a captive-bred juvenile and roughly %%setup:veiled-chameleon%% for the setup. A routine exam runs $50 to $100; egg-binding runs $200 to $400 medically and $800 to $1,500 or more in surgery.", source: "veiled-chameleon-cost-guide" },
         { label: "Lifespan", value: "Males 6 to 8 years. Females 2 to 6, many not past 2 to 3, from the toll of egg clutches.", source: "veiled-chameleon-cost-guide" },
         { label: "Adult size", value: "Males 18 to 24 inches (46 to 61 cm), females 10 to 14 inches (25 to 36 cm)." },
         { label: "Hygiene", value: "Wash hands with soap after any contact, never clean the enclosure in a kitchen sink or shared bathtub, and children under 5 do not touch reptiles or their environments.", source: "reptile-salmonella-hygiene-guide" },
@@ -1062,7 +1071,7 @@ export const lizardGuides = [
       vetLine: "Egg-binding is the emergency: it can kill within 24 hours, and severe cases often require surgery. Metabolic bone disease caught early is only partly reversible and advanced cases are permanent, so it is a vet visit rather than a wait. Sky-blue spots on the flanks are a normal sign after a female has successfully laid, worth knowing so you don't mistake healthy post-laying color for illness.",
     },
     routes: [
-      { slug: "veiled-chameleon-cost-guide", line: "$20 to $100 for the animal, $400 to $800 for the setup, and why a female's vet bill is the line that matters." },
+      { slug: "veiled-chameleon-cost-guide", line: "%%animal:veiled-chameleon%% for the animal, %%setup:veiled-chameleon%% for the setup, and why a female's vet bill is the line that matters." },
       { slug: "veiled-chameleon-tank-setup-guide", line: "24x24x48 as the floor, the thermal gradient, UVB distance, the laying bin, and why the dripper is not optional." },
       { slug: "veiled-chameleon-feeding-guide", line: "Portions by age, the eye-spacing prey rule, and the supplement schedule that decides whether this animal gets bone disease." },
       { slug: "veiled-chameleon-handling-guide", line: "Why this is a display animal, what gaping and darkening actually mean, and how to pick one up when you must." },
@@ -1074,17 +1083,18 @@ export const lizardGuides = [
       "24x24x48 inch screen or hybrid enclosure, larger if the space allows",
       "Linear T5 HO UVB fixture and tube, ReptiSun 5.0 or Arcadia 6%",
       "Basking bulb",
-      "Thermostat, thermometer and hygrometer",
+      "Digital thermometer and hygrometer",
       "Dripper system or automatic mister",
       "Drainage tray or setup for misting runoff",
       "Live plants: pothos, hibiscus, ficus, parlor palm",
       "Branches at varied diameters",
       "Laying bin with 5 to 10 inches of moist sand or soil, for females",
       "Plain calcium without D3 or phosphorus",
-      "Calcium with D3, and a multivitamin with a real vitamin A source",
+      "A multivitamin with true vitamin A",
       "Gut-load greens: collard, mustard, dandelion, squash",
       "Varied feeder insects",
       "Reptile vet contact",
+      "Dimming thermostat",
     ],
     faqs: [
       { q: "What size enclosure does an adult veiled chameleon need?", a: "24x24x48 inches is the practical floor for an adult, and 4x2x4 feet is better if the space is there. Because they hit adult size in 6 to 8 months, buy the adult enclosure up front rather than planning an upgrade." },
@@ -1092,4 +1102,4 @@ export const lizardGuides = [
       { q: "What is the correct calcium and vitamin schedule for a veiled chameleon?", a: "Plain calcium, no D3 and no phosphorus, on nearly every feeding. Calcium with D3 goes on about every other week, and a multivitamin carrying a real vitamin A source runs on that same twice-monthly schedule. Excess D3 can turn toxic, which is why it's dosed less often." },
     ],
   },
-];
+]);

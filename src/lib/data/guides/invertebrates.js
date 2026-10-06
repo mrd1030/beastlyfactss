@@ -1,4 +1,8 @@
-export const invertebrateGuides = [
+// Cost figures in these entries are %%placeholders%% filled from the master
+// price list (src/lib/costs.js); never type a cost guide total here.
+import { fillCostTokens } from '../../costs.js';
+
+export const invertebrateGuides = fillCostTokens([
   {
     id: "amano-shrimp",
     name: "Amano Shrimp",
@@ -44,7 +48,7 @@ export const invertebrateGuides = [
         { label: "Quarantine", value: "Two to four weeks in a separate cycled tank, a bare 10 to 20 gallons. Virtually every amano sold is wild-caught, so hitchhikers and stress get time to show.", source: "amano-shrimp-handling-guide" },
         { label: "Molting", value: "A failed molt is the shell splitting all the way around the body instead of at the head, usually from GH and KH swinging around a water change or a diet short on calcium. There is no treatment once it starts.", source: "amano-shrimp-health-issues-guide" },
         { label: "Water changes", value: "Small and steady, since swings in hardness around a change trigger failed molts. Test nitrate rather than changing by the calendar.", source: "aquarium-water-changes-guide" },
-        { label: "Budget", value: "$5 to $12 each, cheaper in a group. Core equipment roughly $45 to $170.", source: "amano-shrimp-cost-guide" },
+        { label: "Budget", value: "%%animal:amano-shrimp%% each, cheaper in a group. Core equipment roughly %%setup:amano-shrimp%%.", source: "amano-shrimp-cost-guide" },
         { label: "Lifespan", value: "2 to 3 years, longer at the cool end of the range.", source: "amano-shrimp-cost-guide" },
         { label: "Adult size", value: "Up to about 2 inches (5 cm); large for a dwarf shrimp." },
       ],
@@ -60,7 +64,7 @@ export const invertebrateGuides = [
       vetLine: "Check the label of any fish medication or fertilizer before it goes near the tank: the copper doses considered safe for fish sit inside the range that harms shrimp.",
     },
     routes: [
-      { slug: "amano-shrimp-cost-guide", line: "$5 to $12 a shrimp with real listings behind it, the $60 to $150 setup, and why a cooler tank is the cheaper one across a shrimp's life." },
+      { slug: "amano-shrimp-cost-guide", line: "%%animal:amano-shrimp%% a shrimp with real listings behind it, the %%setup:amano-shrimp%% setup, and why a cooler tank is the cheaper one across a shrimp's life." },
       { slug: "amano-shrimp-tank-setup-guide", line: "The 10-gallon minimum and one shrimp per 2 gallons, general hardness as a molting input, a sponge filter for intake safety rather than calm water, and the lid." },
       { slug: "amano-shrimp-feeding-guide", line: "What the best algae eater in the hobby actually eats, the flat adhered algae it can't, and why a clean tank means supplementing before they starve." },
       { slug: "amano-shrimp-handling-guide", line: "Netting instead of hands, drip acclimation over one to two hours, and the quarantine a wild-caught animal earns." },
@@ -140,7 +144,7 @@ export const invertebrateGuides = [
         { label: "New plants", value: "Quarantine them in clean water for at least five days with daily water changes before they go near the shrimp tank.", source: "cherry-shrimp-health-issues-guide" },
         { label: "Acclimation", value: "A slow drip, one drop every one to two seconds until the water volume doubles, 60 to 90 minutes. A sudden shift in pH, hardness or temperature triggers osmotic shock.", source: "cherry-shrimp-handling-guide" },
         { label: "Quarantine", value: "At least two weeks in a separate established tank before new shrimp join a colony. Some retailers hold shrimp a full 30 days before sale.", source: "cherry-shrimp-handling-guide" },
-        { label: "Budget", value: "$4 to $5 a shrimp for standard grades, $6 to $8 for the deepest color. Core equipment roughly $35 to $150, and a complete first setup lands around $70 to $190. No practical vet care exists for a shrimp.", source: "cherry-shrimp-cost-guide" },
+        { label: "Budget", value: "$4 to $5 a shrimp for standard grades, $6 to $8 for the deepest color. Setup roughly %%setup:cherry-shrimp%%. No practical vet care exists for a shrimp.", source: "cherry-shrimp-cost-guide" },
         { label: "Lifespan", value: "Up to 2 years under stable conditions, often closer to one in a typical home tank.", source: "cherry-shrimp-cost-guide" },
         { label: "Never release them", value: "A 2025 federal screening rates this species a high invasion risk across much of the US. Rehome extras through a local fish store or forum.", source: "cherry-shrimp-cost-guide" },
         { label: "Adult size", value: "Up to about 1.5 inches (4 cm)." },
@@ -159,7 +163,7 @@ export const invertebrateGuides = [
       vetLine: "Nearly all of it traces to water stability and mineral content. A failed molt is usually fatal once it happens, so stable GH, gradual water changes, and a test kit are the leverage.",
     },
     routes: [
-      { slug: "cherry-shrimp-cost-guide", line: "$4 to $8 a shrimp by grade, $35 to $150 for the tank around them, and why you never release the extras." },
+      { slug: "cherry-shrimp-cost-guide", line: "%%animal:cherry-shrimp%% a shrimp by grade, %%setup:cherry-shrimp%% for the tank around them, and why you never release the extras." },
       { slug: "cherry-shrimp-tank-setup-guide", line: "5 gallons as a floor and 10 for a colony, the GH and KH that decide whether a molt works, and a filter intake that won't eat the babies." },
       { slug: "cherry-shrimp-feeding-guide", line: "Why a colony mostly feeds itself, a portion the size of a pea, and the shed shell you leave in the tank." },
       { slug: "cherry-shrimp-handling-guide", line: "Netting only, and why drip acclimation matters more for a shrimp than for any fish you have kept." },
@@ -226,7 +230,7 @@ export const invertebrateGuides = [
         { label: "Handling", value: "Stressful and risky on both sides, and a fall can seriously injure the scorpion. If necessary, padded long forceps, or let it walk onto a tool or hand over a soft low surface. Never grab the tail.", source: "emperor-scorpion-handling-guide" },
         { label: "Pinch versus sting", value: "Far more likely to pinch than sting. The venom is mild: local pain, redness and swelling, unless you are already sensitive to bites and stings.", source: "emperor-scorpion-handling-guide" },
         { label: "Molting", value: "Live prey out and no handling around a molt. The new exoskeleton is too soft to protect it from predators or other scorpions, and an adult no longer molts.", source: "emperor-scorpion-health-issues-guide" },
-        { label: "Budget", value: "$25 to $100 for a captive-bred scorpion, roughly $80 to $250 for the setup. Exotic vets who see invertebrates are uncommon; an exam, where one exists, runs $80 to $200-plus with limited treatment options.", source: "emperor-scorpion-cost-guide" },
+        { label: "Budget", value: "$25 to $100 for a captive-bred scorpion, roughly %%setup:emperor-scorpion%% for the setup. Exotic vets who see invertebrates are uncommon; an exam, where one exists, runs $80 to $200-plus with limited treatment options.", source: "emperor-scorpion-cost-guide" },
         { label: "Lifespan", value: "5 to 8 years in captivity, a full range of 4 to 9.", source: "emperor-scorpion-cost-guide" },
         { label: "Adult size", value: "7 to 8 inches (18 to 20 cm)." },
         { label: "Rehousing and pesticides", value: "A move is the likeliest moment for an escape or an injury, so plan it as a procedure. Household insecticide reaches an enclosure by more routes than keepers expect.", source: "invertebrate-rehousing-guide" },
@@ -244,7 +248,7 @@ export const invertebrateGuides = [
       vetLine: "Mild dehydration, minor mites, and early humidity-related lethargy generally resolve once the husbandry is corrected.",
     },
     routes: [
-      { slug: "emperor-scorpion-cost-guide", line: "$25 to $100 for the animal, roughly $80 to $250 for the setup, what invertebrate vet care costs, and the $800 price claim debunked." },
+      { slug: "emperor-scorpion-cost-guide", line: "$25 to $100 for the animal, roughly %%setup:emperor-scorpion%% for the setup, what invertebrate vet care costs, and the $800 price claim debunked." },
       { slug: "emperor-scorpion-tank-setup-guide", line: "Enclosure size, the humidity that matters most, substrate deep enough to burrow in, and why no UVB is needed." },
       { slug: "emperor-scorpion-feeding-guide", line: "Gut-loaded feeders, frequency by life stage, the abdomen rule for prey size, and the fast before a molt." },
       { slug: "emperor-scorpion-handling-guide", line: "Why handling stays occasional, the pinch that is more likely than the sting, and the falls that do the real damage." },
@@ -326,7 +330,7 @@ export const invertebrateGuides = [
         { label: "Tankmates", value: "Prey or predator by size. A shrimp past roughly 1.5 inches is too big for most bettas to bother with; juveniles are at risk. Think about size in both directions, not the word \"peaceful\".", source: "ghost-shrimp-tank-setup-guide" },
         { label: "Getting them into the tank", value: "A soft net, never hands, and a slow drip of 1 to 2 hours before they touch new water. A thin permeable shell makes sudden change far harder on a shrimp than a fish.", source: "ghost-shrimp-handling-guide" },
         { label: "Quarantine", value: "2 to 4 weeks in a separate tank before new shrimp join an established one.", source: "ghost-shrimp-handling-guide" },
-        { label: "Budget", value: "Well under $1 each in bulk, $1 to $3 individually as pets. Equipment roughly $50 to $180, and ongoing costs minimal. There is no practical vet care for a shrimp this size.", source: "ghost-shrimp-cost-guide" },
+        { label: "Budget", value: "Well under $1 each in bulk, $1 to $3 individually as pets. Equipment roughly %%setup:ghost-shrimp%%, and ongoing costs minimal. There is no practical vet care for a shrimp this size.", source: "ghost-shrimp-cost-guide" },
         { label: "Lifespan", value: "Roughly one year, some closer to two, shorter than an Amano's 2 to 3.", source: "ghost-shrimp-cost-guide" },
         { label: "Water changes", value: "Small and steady, since swings in hardness around a change trigger failed molts. Test nitrate rather than changing by the calendar.", source: "aquarium-water-changes-guide" },
         { label: "A hot week", value: "Room air conditioning and a fan first, frozen bottles as a last resort, and the aeration running throughout: warm water holds less oxygen.", source: "cooling-an-aquarium-without-a-chiller-guide" },
@@ -406,7 +410,7 @@ export const invertebrateGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Budget", value: "$75 to $150 or more for the millipede, priced by scarcity rather than difficulty: there is no import ban, but USDA permits have dried up imports, so stock is captive-bred. Setup another $75 to $150, then a few dollars a month. Vets are rarely needed.", source: "giant-millipede-cost-guide" },
+        { label: "Budget", value: "$75 to $150 or more for the millipede, priced by scarcity rather than difficulty: there is no import ban, but USDA permits have dried up imports, so stock is captive-bred. Setup another %%setup:giant-millipede%%, then a few dollars a month. Vets are rarely needed.", source: "giant-millipede-cost-guide" },
         { label: "Lifespan", value: "Typically 5 to 7 years in captivity, some past 10, a real multi-year commitment.", source: "giant-millipede-cost-guide" },
         { label: "Adult size", value: "10 to 15 inches (25 to 38 cm)." },
         { label: "Legal, before you buy", value: "Federally the species sits under the plant pest rules and the USDA PPQ 526 permit. Florida requires a state permit, Hawaii omits it from its approved lists, Oregon approves it with no permit, and DC and Montana leave it outside their permitted categories.", source: "giant-millipede-legal-guide" },
@@ -440,7 +444,7 @@ export const invertebrateGuides = [
       vetLine: "Low humidity drives the dehydration and failed molts; excess wetness with poor airflow drives the mites and lesions; falls cause the injuries. Balanced humidity is the key.",
     },
     routes: [
-      { slug: "giant-millipede-cost-guide", line: "$75 to $150 or more for the animal, the same again for setup, and the import rule behind the price." },
+      { slug: "giant-millipede-cost-guide", line: "$75 to $150 or more for the animal, %%setup:giant-millipede%% for setup, and the import rule behind the price." },
       { slug: "giant-millipede-tank-setup-guide", line: "10 to 15 gallons as a floor, 72 to 80F, 70 to 80%, the 4 to 6 inch substrate that is also the food, and why isopods stay out of a breeding tank." },
       { slug: "giant-millipede-feeding-guide", line: "The substrate as the diet, produce every two to three days and out before it molds, calcium left in, and the molt that looks like a fast." },
       { slug: "giant-millipede-handling-guide", line: "Falls rather than bites, what the curl and the secretion mean, and when to leave a buried animal alone." },
@@ -501,7 +505,7 @@ export const invertebrateGuides = [
         { label: "The first molt", value: "Every pet hermit crab is wild-caught, and the adjustment period is where most deaths happen. Isolate new crabs, change humidity and temperature gradually, and count a crab past the risk only after its first molt in your care.", source: "hermit-crab-health-issues-guide" },
         { label: "Food to avoid", value: "Copper sulfate, toxic to invertebrates, and ethoxyquin, a preservative that hides in fish meal without appearing on the label.", source: "hermit-crab-feeding-guide" },
         { label: "A lost limb", value: "Regrows over successive molts, first as a small bud.", source: "hermit-crab-health-issues-guide" },
-        { label: "Budget", value: "$5 to $40 per crab, roughly $95 to $350 for a complete setup, then $10 to $30 a month.", source: "hermit-crab-cost-guide" },
+        { label: "Budget", value: "%%animal:hermit-crab%% per crab, roughly %%setup:hermit-crab%% for a complete setup, then %%monthly:hermit-crab%% a month.", source: "hermit-crab-cost-guide" },
         { label: "Lifespan", value: "10 years or more when kept well, and some reach 30.", source: "hermit-crab-cost-guide" },
         { label: "Adult size", value: "Up to 4 inches (10 cm) across, including legs." },
         { label: "Household pesticides", value: "Every insecticide sold for a home kills arthropods, and ant spray in the kitchen, a plug-in in the hallway, or a dog's flea treatment all reach an enclosure.", source: "invertebrate-pesticide-hazards-guide" },
@@ -521,7 +525,7 @@ export const invertebrateGuides = [
       vetLine: "Correct the husbandry behind it, and isolate any crab that is aggressive, injured, or showing post-purchase stress while it recovers.",
     },
     routes: [
-      { slug: "hermit-crab-cost-guide", line: "$5 to $40 for the crab itself, why the setup is the part that actually costs money, and the monthly budget after that." },
+      { slug: "hermit-crab-cost-guide", line: "%%animal:hermit-crab%% for the crab itself, why the setup is the part that actually costs money, and the monthly budget after that." },
       { slug: "hermit-crab-tank-setup-guide", line: "Humidity, temperature, substrate depth, the two water dishes, and the shells that go in the tank." },
       { slug: "hermit-crab-handling-guide", line: "Why handling stays minimal, the open-palm method, and how long a buried crab can stay down." },
       { slug: "hermit-crab-health-issues-guide", line: "Post-purchase stress, dehydration and gill suffocation, bad molts, and what seeking help looks like when there's almost no vet care." },
@@ -572,7 +576,7 @@ export const invertebrateGuides = [
     // would write down, which is how the reader put it: enclosure 5x5x8 inches
     // against the setup guide's 4x4x7 minimum and 8 to 10 inches tall;
     // enclosure price $15 to $30 against the cost guide's $60 to $70;
-    // feeder insects $20 to $40 a year against $5 to $15 a month; lifespan 1
+    // feeder insects $20 to $40 a year against %%monthly:jumping-spider%% a month; lifespan 1
     // to 2 years against 1 to 3; temperature 70 to 80F against 72 to 82F;
     // misting "every day or two" against every 2 to 3 days; and "remove
     // anything uneaten after a day" against pulling live prey within a few
@@ -582,7 +586,7 @@ export const invertebrateGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Budget", value: "$15 to $25 for a captive-bred spiderling, $25 to $60 for a juvenile or sub-adult female, which lives longer. Setup roughly $75 to $180, then $5 to $15 a month in feeders. Few exotic vets treat spiders.", source: "jumping-spider-cost-guide" },
+        { label: "Budget", value: "$15 to $25 for a captive-bred spiderling, $25 to $60 for a juvenile or sub-adult female, which lives longer. Setup roughly %%setup:jumping-spider%%, then %%monthly:jumping-spider%% a month in feeders. Few exotic vets treat spiders.", source: "jumping-spider-cost-guide" },
         { label: "Lifespan", value: "Males a few months after maturity, females considerably longer. Expect one to two years in captivity.", source: "jumping-spider-cost-guide" },
         { label: "Adult size", value: "0.5 to 0.75 inches (1.3 to 1.9 cm), females larger than males." },
         { label: "Enclosure", value: "Vertical, about 8 inches (20 cm) tall for an adult, smaller for spiderlings. Front-opening, cross-ventilated, the door low since the silk retreat goes at the top. One spider per enclosure: they eat each other.", source: "jumping-spider-tank-setup-guide" },
@@ -616,7 +620,7 @@ export const invertebrateGuides = [
       vetLine: "Hobbyist-reported, not veterinary-established. A healthy adult goes 2 to 3 weeks without food safely, so refusal alone is not the alarm; the last three mean act now, and little can be done once a molt has failed.",
     },
     routes: [
-      { slug: "jumping-spider-cost-guide", line: "$15 to $60 for the spider, $112 to $150 for setup, and why the short lifespan is the real cost." },
+      { slug: "jumping-spider-cost-guide", line: "%%animal:jumping-spider%% for the spider, %%setup:jumping-spider%% for setup, and why the short lifespan is the real cost." },
       { slug: "jumping-spider-tank-setup-guide", line: "About 8 inches of height, 69 to 83F, 50 to 60%, and why the door belongs low." },
       { slug: "jumping-spider-feeding-guide", line: "A schedule by life stage, the never-feed list with ants at the top, and how to read a spider that has stopped eating." },
       { slug: "jumping-spider-handling-guide", line: "Why a visual hunter behaves differently in your hand, and why the fall is the risk." },
@@ -676,7 +680,7 @@ export const invertebrateGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Budget", value: "Around $3 a nymph, about $24 for a pair, around $65 for a starter colony of 25. Setup roughly $40 to $100 with the animals, then a few dollars a month. Very few vets treat invertebrates.", source: "madagascar-hissing-cockroach-cost-guide" },
+        { label: "Budget", value: "Around $3 a nymph, about $24 for a pair, around $65 for a starter colony of 25. Setup roughly %%setup:madagascar-hissing-cockroach%% before the animals, then a few dollars a month. Very few vets treat invertebrates.", source: "madagascar-hissing-cockroach-cost-guide" },
         { label: "Lifespan", value: "2 to 5 years, most commonly 2 to 3.", source: "madagascar-hissing-cockroach-cost-guide" },
         { label: "Adult size", value: "2 to 4 inches (5 to 10 cm)." },
         { label: "Enclosure", value: "A 5-gallon tank for a small group, a 10 to 20-plus gallon tank or tub for a colony. Floor space matters more than height.", source: "madagascar-hissing-cockroach-tank-setup-guide" },
@@ -756,7 +760,7 @@ export const invertebrateGuides = [
     // The old hub carried unverified pricing by its own admission and every
     // one of its figures lost to a deep dive. Retired rather than moved:
     // an enclosure at "$15 to $35" against the cost guide's $60 to $70;
-    // feeders at "$30 to $60" a year against $10 to $40 a month; a lifespan
+    // feeders at "$30 to $60" a year against %%monthly:praying-mantis%% a month; a lifespan
     // of "12 to 18 months" against 6 to 12 for most kept species, which is
     // what both the Chinese mantis care sheet and Animal Diversity Web
     // support; "a 12x12x18 inch mesh or acrylic enclosure" against the setup
@@ -785,7 +789,7 @@ export const invertebrateGuides = [
         { label: "Feeding around a molt", value: "Off food usually means a molt is coming: stop offering and pull live prey out, since a cricket chews on a soft mantis. After the molt, wait several hours to a day for the legs and mouthparts to harden.", source: "praying-mantis-tank-setup-guide" },
         { label: "Handling", value: "Calm around people and it rarely bites. Let it walk onto a hand or tool, in a closed room: adults of most kept species fly. Never restrain or squeeze, and nothing at all in the days before a molt.", source: "praying-mantis-handling-guide" },
         { label: "One per enclosure", value: "Cannibalistic at any size difference and often at none. Solo housing outside supervised breeding.", source: "praying-mantis-enrichment-guide" },
-        { label: "Budget", value: "$15 to $35 for a Carolina or Chinese mantis, up to $150 for an Orchid. A full setup runs $80 to $165, then $10 to $40 a month in feeders. Exotic vets rarely treat invertebrates.", source: "praying-mantis-cost-guide" },
+        { label: "Budget", value: "$15 to $35 for a Carolina or Chinese mantis, up to $150 for an Orchid. Setup runs %%setup:praying-mantis%%, then %%monthly:praying-mantis%% a month in feeders. Exotic vets rarely treat invertebrates.", source: "praying-mantis-cost-guide" },
         { label: "Lifespan", value: "6 to 12 months for most kept species, females outliving males; a few reach around 18 months.", source: "praying-mantis-cost-guide" },
         { label: "Adult size", value: "0.5 to 6 inches (1 to 15 cm) depending on species." },
         { label: "If you get an ootheca", value: "Dozens to hundreds of nymphs, sometimes in a single rush and sometimes trickling out over weeks, and they eat their siblings. Individual containers and a fruit fly culture are ready before the hatch, not after.", source: "praying-mantis-ootheca-guide" },
@@ -805,7 +809,7 @@ export const invertebrateGuides = [
       vetLine: "Low humidity drives the mismolts that cause most mantis deaths; high humidity invites mold and infection instead. Regurgitation is usually overfeeding, not illness. A mantis with a crooked limb may need hand-feeding with fine tongs. Little can be done once a molt has failed.",
     },
     routes: [
-      { slug: "praying-mantis-cost-guide", line: "$15 to $35 for a common species, $85 to $145 for the setup around it, and the lifespan that changes what you are buying." },
+      { slug: "praying-mantis-cost-guide", line: "$15 to $35 for a common species, %%setup:praying-mantis%% for the setup around it, and the lifespan that changes what you are buying." },
       { slug: "praying-mantis-tank-setup-guide", line: "8 by 8 by 12 as a floor, the perch drop that decides a molt, humidity by species, and what live prey to offer when." },
       { slug: "praying-mantis-handling-guide", line: "Walk it onto your hand, keep the door shut, and the pre-molt window when you do not touch it at all." },
       { slug: "praying-mantis-feeding-guide", line: "Live prey a third of its length every other day, fruit flies to flies and roaches by stage, leftovers out, and the pre-molt refusal that is normal." },
@@ -870,7 +874,7 @@ export const invertebrateGuides = [
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "The permit, first", value: "Non-native species, the common Indian and Vietnamese ones included, technically require a USDA APHIS permit that hobbyists cannot get. Only species native to and collected in your own state are clearly legal without one, and releasing any stick insect or its eggs is prohibited.", source: "stick-insect-cost-guide" },
-        { label: "Budget", value: "A few dollars a nymph for common species, often free from keepers, while rare giants can pass $1,000. Setup roughly $60 to $125, then almost nothing: foraged cuttings and water for misting.", source: "stick-insect-cost-guide" },
+        { label: "Budget", value: "A few dollars a nymph for common species, often free from keepers, while rare giants can pass $1,000. Setup roughly %%setup:stick-insect%%, then almost nothing: foraged cuttings and water for misting.", source: "stick-insect-cost-guide" },
         { label: "Lifespan", value: "Around a year: 4 to 10 months as a nymph, then 5 to 12 as an adult. Females, which is what hobby stock mostly is, often reach 18 months.", source: "stick-insect-cost-guide" },
         { label: "Adult size", value: "1 to 22 inches (2 to 55 cm) depending on species." },
         { label: "Enclosure", value: "Length and width at least twice the adult's body length, height at least three times, since height is what allows a molt. A single Indian stick insect does fine in about 8 by 8 by 12 inches; a group or a larger species needs more.", source: "stick-insect-tank-setup-guide" },
@@ -953,7 +957,7 @@ export const invertebrateGuides = [
         { label: "Feeding schedule", value: "Slings every 2 to 3 days, juveniles every 4 to 7 days when young and every 7 to 14 days as they grow, adults every 1 to 2 weeks, sometimes far less for a slow-metabolism species.", source: "tarantula-feeding-guide" },
         { label: "Not eating", value: "Usually not an emergency. A plump, active spider refusing food for weeks is typically just in premolt. For juveniles specifically, refusing food for more than 6 to 8 weeks alongside weight loss or lethargy is worth a vet consult.", source: "tarantula-feeding-guide" },
         { label: "Handling", value: "Mostly, no. Best kept as a look, don't touch pet: a fall can fatally injure the spider, and a hand, shoulder, or couch cushion is enough height for that.", source: "tarantula-handling-guide" },
-        { label: "Budget", value: "$25 to $100 for the spider (common beginner species), $105 to $305 for the setup with every item priced, and $75 to $235 a year after that, most of it feeder insects.", source: "tarantula-cost-guide" },
+        { label: "Budget", value: "$25 to $100 for the spider (common beginner species), %%setup:tarantula%% for the setup with every item priced, and %%annual:tarantula%% a year after that, most of it feeder insects.", source: "tarantula-cost-guide" },
         { label: "Adult size", value: "2 to 12 inch leg span, depending on species." },
         { label: "Lifespan", value: "15 to 20 years or more for a female Chilean rose hair, and about 5 for a male, 10 at the outside. A female is a long-term commitment, though the ongoing budget stays very small the whole time.", source: "tarantula-cost-guide" },
         { label: "Power outage", value: "A non-event for most tarantulas at home; they don't need supplemental heat in a typical room and can go without food far longer than most pets. The real risk in this corner of pet keeping is in a car or a shipping box, not a home outage.", source: "invertebrate-emergency-travel-shipping-guide" },
@@ -973,7 +977,7 @@ export const invertebrateGuides = [
       vetLine: "Prevention matters more than treatment. A shallow water dish and correct humidity prevent most dehydration; never disturb, handle, or feed a molting tarantula.",
     },
     routes: [
-      { slug: "tarantula-cost-guide", line: "$25 to $100 for the spider, $105 to $305 for setup, $75 to $235 a year, and why the ongoing budget stays small for decades." },
+      { slug: "tarantula-cost-guide", line: "$25 to $100 for the spider, %%setup:tarantula%% for setup, %%annual:tarantula%% a year, and why the ongoing budget stays small for decades." },
       { slug: "tarantula-handling-guide", line: "Why the answer is almost always no, the real fall risk, and New World versus Old World defenses." },
       { slug: "tarantula-health-issues-guide", line: "Dehydration, stuck molts, injury, and the difference between normal fasting and a real problem." },
       { slug: "tarantula-tank-setup-guide", line: "Enclosure shape and size, substrate depth, the humidity debate, and why mesh lids are out." },
@@ -996,9 +1000,9 @@ export const invertebrateGuides = [
       "Gut-load food for the feeders",
     ],
     faqs: [
-      { q: "How much does a tarantula cost upfront?", a: "The spider itself runs $25 to $100 for common beginner species, a curly hair or pink toe typically lands at $30 to $40 and a Chilean rose hair nearer $60 to $70. Every item is priced: the enclosure, substrate, a hide, two water dishes, a thermometer and hygrometer, feeding tongs, catch cups, a tub to rehouse over, safety glasses, and the first feeders and gut-load food. The setup comes to $105 to $305 before the spider itself, or $130 to $405 with it." },
+      { q: "How much does a tarantula cost upfront?", a: "The spider itself runs $25 to $100 for common beginner species, a curly hair or pink toe typically lands at $30 to $40 and a Chilean rose hair nearer $60 to $70. Every item is priced: the enclosure, substrate, a hide, two water dishes, a thermometer and hygrometer, feeding tongs, catch cups, a tub to rehouse over, safety glasses, and the first feeders and gut-load food. The setup comes to %%setup:tarantula%% before the spider itself, or $130 to $405 with it." },
       { q: "What size enclosure does a pet tarantula need?", a: "About 20 by 10 by 10 inches for an adult, roughly a 10-gallon, sized to around three times the leg span. Keep it low, under about 12 inches tall, since a fall is a genuine danger for most tarantulas." },
       { q: "Can you hold a tarantula?", a: "Mostly, no. Most tarantulas, including the Chilean rose hair, are best kept as strictly look, don't touch pets, since a fall can be fatal to the spider and its defenses can hurt you." },
     ],
   },
-];
+]);

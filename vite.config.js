@@ -4,7 +4,7 @@ import mdx from '@mdx-js/rollup';
 import remarkFrontmatter from 'remark-frontmatter';
 import remarkMdxFrontmatter from 'remark-mdx-frontmatter';
 import path from 'path';
-import { fileURLToPath } from 'url';
+import { fileURLToPath, pathToFileURL } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -17,6 +17,24 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // generate-fact-pages.mjs already strips comments from its own copy of the
 // shell, so nothing changes there. Runs post so it sees the final markup after
 // Vite has rewritten asset URLs.
+// Fills the cost placeholders (%%setup:ackie-monitor%% and friends, see
+// src/lib/costs.js) in every .mdx before it compiles, so headings, titles,
+// FAQs and the prerendered HTML carry the plain figure from the master price
+// list. Runs pre so the MDX compiler never sees a placeholder. In dev, restart
+// the server after changing a price: Node caches the imported data files.
+function costTokens() {
+  const costs = path.resolve(__dirname, 'src/lib/costs.js');
+  return {
+    name: 'cost-tokens',
+    enforce: 'pre',
+    async transform(code, id) {
+      if (!id.split('?')[0].endsWith('.mdx') || !code.includes('%%')) return null;
+      const { resolveCostTokens } = await import(pathToFileURL(costs).href);
+      return { code: resolveCostTokens(code), map: null };
+    },
+  };
+}
+
 function stripHtmlComments() {
   return {
     name: 'strip-html-comments',
@@ -60,6 +78,7 @@ function lowPriorityScripts() {
 
 export default defineConfig({
   plugins: [
+    costTokens(),
     mdx({
       remarkPlugins: [
         remarkFrontmatter,      // Parses the YAML frontmatter

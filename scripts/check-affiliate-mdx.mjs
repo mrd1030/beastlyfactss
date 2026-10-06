@@ -43,6 +43,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 import { AFFILIATE_PRODUCTS, getAffiliateForItem } from '../src/lib/data/affiliateProducts.js';
+import { costTableProducts } from '../src/lib/costs.js';
 
 const MAX_PROSE_LINKS = 5;
 
@@ -120,6 +121,16 @@ for (const file of files) {
       }
     });
   }
+
+  // <CostTable> rows come from the shared price list and are linked by the
+  // component, so they are derived from the sheet the same way. Each CostTable
+  // counts as its own table for the repeat rule.
+  costTableProducts(body).forEach((t, k) => {
+    for (const slug of t.products) {
+      const product = AFFILIATE_PRODUCTS.find((p) => p.slug === slug);
+      if (product) autoLinks.push({ href: product.link, table: 10000 + k });
+    }
+  });
 
   const isAffiliate = /^affiliate:\s*true/m.test(frontmatter);
   if ((isAffiliate || opens > 0 || autoLinks.length > 0) && !body.includes('<AffiliateDisclosure')) {

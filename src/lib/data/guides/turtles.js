@@ -1,4 +1,8 @@
-export const turtleGuides = [
+// Cost figures in these entries are %%placeholders%% filled from the master
+// price list (src/lib/costs.js); never type a cost guide total here.
+import { fillCostTokens } from '../../costs.js';
+
+export const turtleGuides = fillCostTokens([
   {
     id: "box-turtle",
     name: "Box Turtle",
@@ -39,7 +43,7 @@ export const turtleGuides = [
         { label: "Handling", value: "Both hands under the full body, short sessions, never dropped, shaken, or flipped. Hiding with lethargy and reduced appetite is a vet visit, not shyness.", source: "box-turtle-handling-guide" },
         { label: "Enrichment", value: "Deep substrate to burrow through first, then hides and cover throughout, then floor space and outdoor time. Never on newspaper or a bare liner.", source: "box-turtle-enrichment-guide" },
         { label: "Brumation", value: "Its own protocol, not a tortoise's: a vet exam first, a 10 to 14 day fast, a band of 45 to 50 degrees Fahrenheit, and action by about 7% weight loss, well before the 10% stop line.", source: "tortoise-brumation-guide" },
-        { label: "Budget", value: "Roughly $325 to $489 upfront and $40 to $70 a month. A routine exam is $60 to $135; an emergency starts around $150 and can reach $500.", source: "box-turtle-cost-guide" },
+        { label: "Budget", value: "Roughly %%setup:box-turtle%% upfront and $40 to $70 a month. A routine exam is $60 to $135; an emergency starts around $150 and can reach $500.", source: "box-turtle-cost-guide" },
         { label: "Adult size", value: "4.5 to 7 inches (11 to 18 cm)." },
         { label: "Lifespan", value: "Documented past 60, with very old individuals over 100.", source: "box-turtle-cost-guide" },
         { label: "Hygiene", value: "Wash hands with soap after any contact, and never clean the enclosure or water dish in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
@@ -58,7 +62,7 @@ export const turtleGuides = [
       vetLine: "A reptile-experienced vet with chelonian experience, found before you need one. Because box turtles hide illness so effectively, an annual wellness exam is genuinely worth doing even when your turtle seems completely healthy, and vitamin A deficiency often sets the stage for a respiratory infection, so treating one without addressing the other doesn't fully solve the problem.",
     },
     routes: [
-      { slug: "box-turtle-cost-guide", line: "The $345 to $453 setup where lighting and heating dominate, the $40 to $70 month, what an exotic exam and an emergency visit cost, and the sourcing question that comes before any of it." },
+      { slug: "box-turtle-cost-guide", line: "The %%setup:box-turtle%% setup where lighting and heating dominate, the $40 to $70 month, what an exotic exam and an emergency visit cost, and the sourcing question that comes before any of it." },
       { slug: "box-turtle-tank-setup-guide", line: "The 36x18 inch minimum and the sizes worth building to instead, the basking and cool-end targets, 60 to 80% humidity, burrowable substrate, T5 HO UVB, and why land and water are both non-negotiable." },
       { slug: "box-turtle-handling-guide", line: "Why this is a limited-handling species, the two-handed support, the hinged plastron that gives the animal its name, telling males from females, and shyness against actual illness." },
       { slug: "box-turtle-health-issues-guide", line: "Metabolic bone disease, vitamin A deficiency and the respiratory infection it sets up, shell rot, internal parasites, and why the annual exam matters on a turtle that looks fine." },
@@ -130,7 +134,7 @@ export const turtleGuides = [
         { label: "Brumation and refusal", value: "Appetite drops roughly October through March, though a warm indoor slider often does not fully brumate. Outside brumation, 2 to 3 weeks of total refusal is the point to see a vet, sooner with lethargy.", source: "red-eared-slider-feeding-guide" },
         { label: "Handling", value: "Scooped from underneath with the full body supported, never from above. A drop can kill a turtle this size, and the sharp beak draws blood.", source: "red-eared-slider-handling-guide" },
         { label: "Cohabiting", value: "Several sliders without enough space and basking spots means aggression, stacking, and injuries.", source: "red-eared-slider-handling-guide" },
-        { label: "Budget", value: "Roughly $550 to $1,250 or more upfront and $380 to $720 a year. A wellness exam runs $80 to $180, an emergency $150 to $400 before treatment.", source: "red-eared-slider-cost-guide" },
+        { label: "Budget", value: "Roughly %%setup:red-eared-slider%% or more upfront and %%annual:red-eared-slider%% a year. A wellness exam runs $80 to $180, an emergency $150 to $400 before treatment.", source: "red-eared-slider-cost-guide" },
         { label: "Lifespan", value: "20 to 30 years, 20 to 25 typical; the documented captive record is 41.3.", source: "red-eared-slider-cost-guide" },
         { label: "Hygiene", value: "Wash hands with soap after any contact with the turtle, its tank, or its water, and never clean any of it in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
       ],
@@ -221,7 +225,7 @@ export const turtleGuides = [
         { label: "Handling", value: "Low to the ground, shell supported from underneath with both hands, never flipped. Adults reach 20 pounds, so a drop is a real risk. Occasional and purposeful.", source: "red-footed-tortoise-handling-guide" },
         { label: "Growth", value: "1.5 to 2 inches at hatching, 3 to 4 by the first birthday, 7 to 9 by age 2, 9 to 11 by 5. Size the enclosure for the adult.", source: "red-footed-tortoise-handling-guide" },
         { label: "Feed it scattered", value: "One salad in one dish gives no foraging. Scatter food, vary what appears and where, and grow edible planting inside.", source: "red-footed-tortoise-enrichment-guide" },
-        { label: "Budget", value: "$150 to $300 for a captive-bred hatchling, $350 to $600 for a started juvenile, $550 to $900 for an adult. Setup $500 to $950, then $650 to $850 a year. A checkup is $75 to $100 with a chelonian-experienced vet, and an illness with bloodwork or medication $150 to $400 or more.", source: "red-footed-tortoise-cost-guide" },
+        { label: "Budget", value: "$150 to $300 for a captive-bred hatchling, $350 to $600 for a started juvenile, $550 to $900 for an adult. Setup %%setup:red-footed-tortoise%%, then %%annual:red-footed-tortoise%% a year. A checkup is $75 to $100 with a chelonian-experienced vet, and an illness with bloodwork or medication $150 to $400 or more.", source: "red-footed-tortoise-cost-guide" },
         { label: "Adult size", value: "11 to 16 inches, occasionally up to 20, reached within 5 to 10 years.", source: "red-footed-tortoise-handling-guide" },
         { label: "Lifespan", value: "50 to 70 years or more, some reported close to 90.", source: "red-footed-tortoise-cost-guide" },
       ],
@@ -238,7 +242,7 @@ export const turtleGuides = [
       vetLine: "Shell rot comes from substrate that is soggy and dirty, not from humidity: humid and constantly wet are different things. Chronically dry, cool conditions are what put this species at risk, the exact opposite husbandry mistake from the one that threatens a Russian or sulcata tortoise, so raise humidity and warmth while you arrange the appointment. It's worth finding a vet with chelonian experience specifically rather than a general exotics practice.",
     },
     routes: [
-      { slug: "red-footed-tortoise-cost-guide", line: "$150 to $300 for a hatchling and up to $900 for an adult, the $500 to $950 setup, roughly $650 to $850 a year, and the humidity equipment a Russian tortoise owner never buys." },
+      { slug: "red-footed-tortoise-cost-guide", line: "$150 to $300 for a hatchling and up to $900 for an adult, the %%setup:red-footed-tortoise%% setup, roughly %%annual:red-footed-tortoise%% a year, and the humidity equipment a Russian tortoise owner never buys." },
       { slug: "red-footed-tortoise-tank-setup-guide", line: "The 18 to 24 square foot floor, why an open-topped table fails here, 70 to 80% humidity and how to actually hold it, damp substrate, and the two UVB strengths that both work." },
       { slug: "red-footed-tortoise-feeding-guide", line: "The 90/10 split and the plant-side split under it, why fruit gets more room here than with any other pet tortoise, and why skipping animal protein cripples this species." },
       { slug: "red-footed-tortoise-handling-guide", line: "An observation pet that comes when called, the two-handed lift a 20 pound adult demands, and the growth chart that tells you what to build." },
@@ -300,7 +304,7 @@ export const turtleGuides = [
         { label: "Diet", value: "Unlimited grass hay and a rotation of wild weeds, dandelion, plantain, and clover among them, as the staple, rather than cultivated grocery greens. High-oxalate greens like spinach and chard stay off the rotation. Fruit stays off the menu altogether.", source: "russian-tortoise-tank-setup-guide" },
         { label: "Brumation", value: "Physiologically programmed to brumate, held at 35 to 50°F, ideally 41°F, for no longer than 10 weeks in a small tortoise and 14 in a large one. Indoor keepers can skip it entirely by maintaining full lighting, heat, and feeding year-round.", source: "russian-tortoise-tank-setup-guide" },
         { label: "Handling", value: "An observation pet, not one built for regular handling. House males separately, they ram and bully other tortoises. Skilled climber and digger, more of an escape risk than it looks.", source: "russian-tortoise-handling-guide" },
-        { label: "Budget", value: "$50 to $150 for a hatchling ($225 to $400 older captive-bred). $490 to $935 to set up. $370 to $695 a year, about $30 to $60 a month.", source: "russian-tortoise-cost-guide" },
+        { label: "Budget", value: "$50 to $150 for a hatchling ($225 to $400 older captive-bred). %%setup:russian-tortoise%% to set up. %%annual:russian-tortoise%% a year, about $30 to $60 a month.", source: "russian-tortoise-cost-guide" },
         { label: "Adult size", value: "5 to 9 inches." },
         { label: "Lifespan", value: "40 years or more typical, and with excellent care some reach 50 or beyond.", source: "russian-tortoise-cost-guide" },
         { label: "Quarantine", value: "A minimum of six months, completely separate from any other chelonian, with lab testing. Two or three weeks is not long enough for the herpesvirus.", source: "chelonian-herpesvirus-quarantine-guide" },
@@ -319,7 +323,7 @@ export const turtleGuides = [
       vetLine: "A reptile-experienced vet, found before you need one. Run a fecal test on any newly acquired tortoise regardless of symptoms; respiratory infection needs antibiotics and doesn't wait.",
     },
     routes: [
-      { slug: "russian-tortoise-cost-guide", line: "$50 to $400 for the tortoise, $490 to $935 to set up, $370 to $695 a year after that, and why the 40-plus year lifespan should decide the purchase." },
+      { slug: "russian-tortoise-cost-guide", line: "%%animal:russian-tortoise%% for the tortoise, %%setup:russian-tortoise%% to set up, %%annual:russian-tortoise%% a year after that, and why the 40-plus year lifespan should decide the purchase." },
       { slug: "russian-tortoise-tank-setup-guide", line: "The real floor target beyond the 8 sq ft minimum, the 95°F basking spot, low ambient humidity with a moist hide, and the brumation decision indoor keepers get to make." },
       { slug: "russian-tortoise-handling-guide", line: "Why this is an observation pet, the talented climbing and digging that makes escapes easy, and why males need separate enclosures." },
       { slug: "russian-tortoise-health-issues-guide", line: "Metabolic bone disease, respiratory infection, shell rot, pyramiding, parasites, and the kidney infection specific to this genus." },
@@ -443,4 +447,4 @@ export const turtleGuides = [
       { q: "Can you pick up an adult sulcata tortoise?", a: "Not safely. An adult runs 80 to 110 pounds, and a male can reach 200. Interaction with a grown sulcata happens at ground level: time in its space, hand-feeding, and letting it come to you." },
     ],
   },
-];
+]);

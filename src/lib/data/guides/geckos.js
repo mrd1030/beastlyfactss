@@ -1,4 +1,8 @@
-export const geckoGuides = [
+// Cost figures in these entries are %%placeholders%% filled from the master
+// price list (src/lib/costs.js); never type a cost guide total here.
+import { fillCostTokens } from '../../costs.js';
+
+export const geckoGuides = fillCostTokens([
   {
     id: "african-fat-tail",
     name: "African Fat-Tailed Gecko",
@@ -40,7 +44,7 @@ export const geckoGuides = [
         { label: "The tail is the gauge", value: "A fall and winter appetite drop is normal in adults, and the tail fat lets a healthy adult fast for weeks. A tail thinner than the neck is the warning sign.", source: "african-fat-tail-feeding-guide" },
         { label: "Handling, week one", value: "Two weeks after it comes home and once it is eating. Support the whole body and let it walk across your hands; a chirp or squeak means put it down. Never the tail, which drops and regrows smoother.", source: "african-fat-tail-handling-guide" },
         { label: "Stuck shed", value: "Retained shed on the toes and tail tip is the commonest fat-tail problem, from low humidity or no moist hide, and the hide prevents almost all of it.", source: "african-fat-tail-health-issues-guide" },
-        { label: "Budget", value: "Normals around $100 inside a $75 to $600 range, morphs to $600 to $1,000. $485 to $835 to set up, $585 to $1,050 with the first vet exam and fecal test. $270 to $570 a year after that.", source: "african-fat-tail-cost-guide" },
+        { label: "Budget", value: "Normals around $100 inside the %%animal:african-fat-tail%% range, morphs to $600 to $1,000. %%gear:african-fat-tail%% to set up, %%setup:african-fat-tail%% with the first vet exam and fecal test. %%annual:african-fat-tail%% a year after that.", source: "african-fat-tail-cost-guide" },
         { label: "Lifespan", value: "15 to 20 years cited; the best-documented captive maximum is just over 16.", source: "african-fat-tail-cost-guide" },
         { label: "Adult size", value: "7 to 9 inches (18 to 23 cm)." },
         { label: "Hygiene", value: "Wash hands with soap after any contact, keep the gecko out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
@@ -61,7 +65,7 @@ export const geckoGuides = [
       vetLine: "Eye problems are reported relatively often in this species, so anything outside a shed cycle is worth a visit.",
     },
     routes: [
-      { slug: "african-fat-tail-cost-guide", line: "$75 to $600 for a normal and past $1,000 for stacked morphs, $485 to $835 to set up, $270 to $570 a year, and what a documented 16-year maximum means for budgeting." },
+      { slug: "african-fat-tail-cost-guide", line: "%%animal:african-fat-tail%% for a normal and past $1,000 for stacked morphs, %%gear:african-fat-tail%% to set up, %%annual:african-fat-tail%% a year, and what a documented 16-year maximum means for budgeting." },
       { slug: "african-fat-tail-tank-setup-guide", line: "The 36x18-inch floor, the heat mat gradient, the humidity that separates this species from a leopard gecko, and 4 inches of substrate to burrow in." },
       { slug: "african-fat-tail-feeding-guide", line: "Portion by body length, the schedule by age, the phosphorus-free calcium rule, and why the tail is a better gauge than a day count." },
       { slug: "african-fat-tail-handling-guide", line: "Two weeks before the first session, what a chirp means, and why the tail is never a handhold." },
@@ -126,7 +130,7 @@ export const geckoGuides = [
         { label: "Feeding schedule", value: "Hatchlings and juveniles get commercial crested gecko diet (CGD) daily, with live insects 1 to 2 times a week. Adults move to CGD every 2 to 3 days, with insects about once a week.", source: "crested-gecko-feeding-guide" },
         { label: "Not eating", value: "A healthy, good-weight adult can typically go 2 to 3 weeks without eating, but a vet consult is worth considering after the second week, especially with visible weight loss.", source: "crested-gecko-feeding-guide" },
         { label: "Handling", value: "Wait about two weeks, and until the gecko is a sub-adult of 10 to 15 grams (roughly 4 to 5 inches, about 6 months old). Then 5 minute sessions building to 15 minutes, under 20 minutes total a day. Never grab the tail, it does not grow back.", source: "crested-gecko-handling-guide" },
-        { label: "Budget", value: "$50 to $200 for a normal morph, upward of $1,000 for rare and specialty morphs. $355 to $590 of equipment, $420 to $800 with the first vet exam. $40 to $55 a month after that.", source: "crested-gecko-cost-guide" },
+        { label: "Budget", value: "$50 to $200 for a normal morph, upward of $1,000 for rare and specialty morphs. %%setup:crested-gecko%% of equipment, $420 to $800 with the first vet exam. %%monthly:crested-gecko%% a month after that.", source: "crested-gecko-cost-guide" },
         { label: "Adult size", value: "7 to 9 inches including tail." },
         { label: "Lifespan", value: "15 to 20 years in captivity, with the earliest known captive individuals living into their 30s.", source: "crested-gecko-cost-guide" },
         { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the gecko out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
@@ -145,7 +149,7 @@ export const geckoGuides = [
       vetLine: "An exotic vet, found before you need one. Bring a new gecko in within the first 30 days of ownership, then an annual wellness exam with a fecal test as a baseline, not just when something looks wrong.",
     },
     routes: [
-      { slug: "crested-gecko-cost-guide", line: "$50 to $200 for the gecko, $355 to $590 of equipment, and $40 to $55 a month after that." },
+      { slug: "crested-gecko-cost-guide", line: "$50 to $200 for the gecko, %%setup:crested-gecko%% of equipment, and %%monthly:crested-gecko%% a month after that." },
       { slug: "crested-gecko-tank-setup-guide", line: "The 18x18x24 vertical minimum, the 85°F hard ceiling, and why this species needs you to avoid heat rather than provide it." },
       { slug: "crested-gecko-humidity-guide", line: "The 60 to 80% daily swing, a misting schedule that actually works, and the signs humidity is running too low or too high." },
       { slug: "crested-gecko-feeding-guide", line: "Why powdered diet, not live insects, should be the staple, portion size by age, and the honest range of reasons a gecko stops eating." },
@@ -216,7 +220,7 @@ export const geckoGuides = [
         { label: "Not eating", value: "A healthy adult goes up to 2 to 3 weeks; a juvenile not past 4 to 5 days. Water is the time-critical one: no more than 2 to 3 days without access. Weigh regularly; a thinning tail is the early sign.", source: "gargoyle-gecko-feeding-guide" },
         { label: "Handling, week one", value: "Wait two weeks after it comes home, then 5-minute sessions every other day, working toward 15 and a daily total near 20. Adults are calm; juveniles are jumpy.", source: "gargoyle-gecko-handling-guide" },
         { label: "Tail and teeth", value: "Never hold the tail. It regrows, unlike a crested gecko's. A bite is rare and provoked, and can break skin: soap and water.", source: "gargoyle-gecko-handling-guide" },
-        { label: "Budget", value: "$50 to $300 for a common animal, $500 to $1,000 or more for a premium morph. $335 to $630 to set up, $385 to $780 with the first vet exam. $320 to $565 a year after that, and $50 to $150 for a routine exam.", source: "gargoyle-gecko-cost-guide" },
+        { label: "Budget", value: "$50 to $300 for a common animal, $500 to $1,000 or more for a premium morph. $335 to $630 to set up, %%setup:gargoyle-gecko%% with the first vet exam. %%annual:gargoyle-gecko%% a year after that, and $50 to $150 for a routine exam.", source: "gargoyle-gecko-cost-guide" },
         { label: "Lifespan", value: "15 to 20 years, some breeding well past 20.", source: "gargoyle-gecko-cost-guide" },
         { label: "Adult size", value: "7 to 9 inches (18 to 23 cm) including tail." },
         { label: "Hygiene", value: "Wash hands with soap after any contact, keep the gecko out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
@@ -233,7 +237,7 @@ export const geckoGuides = [
       vetLine: "Retained shed wraps a toe like a tourniquet until it dies, so early stuck shed gets a warm soak, and a tight band or a darkened toe goes to a vet. New geckos are quarantined and given a fecal exam before joining a collection.",
     },
     routes: [
-      { slug: "gargoyle-gecko-cost-guide", line: "$50 to $300 for a common animal and past $1,000 for a morph, $335 to $630 to set up, $320 to $565 a year, and what a 15-to-20-year lifespan costs." },
+      { slug: "gargoyle-gecko-cost-guide", line: "$50 to $300 for a common animal and past $1,000 for a morph, $335 to $630 to set up, %%annual:gargoyle-gecko%% a year, and what a 15-to-20-year lifespan costs." },
       { slug: "gargoyle-gecko-tank-setup-guide", line: "The gradient this species needs, the 86°F ceiling it cannot cross, the daily wet-dry humidity cycle, and the clutter that prevents floppy tail syndrome." },
       { slug: "gargoyle-gecko-feeding-guide", line: "Powdered diet versus live insects, the schedule by age, why pinky mice are the real obesity risk, and how to read appetite loss." },
       { slug: "gargoyle-gecko-handling-guide", line: "Two weeks before the first session, the two defense mechanisms, the bite that breaks skin, and the tail that grows back." },
@@ -321,7 +325,7 @@ export const geckoGuides = [
         { label: "Feed at height", value: "A magnetic ledge mounted high, or live prey released at night, since an arboreal ambush hunter will not descend to a floor dish.", source: "leaf-tailed-gecko-enrichment-guide" },
         { label: "Leave them alone", value: "Highly strung and easily stressed. Low traffic, low disturbance, and minimal handling do more than anything you can add. The satanic leaf-tail never regrows a dropped tail.", source: "leaf-tailed-gecko-handling-guide" },
         { label: "Adult size", value: "2.5 to 12 inches (6 to 30 cm) depending on species." },
-        { label: "Budget", value: "$250 to $800 or more for the gecko, priced by species and locality. Roughly $300 to $600 for the setup, then $20 to $40 a month. A routine exam runs $60 to $135.", source: "leaf-tailed-gecko-cost-guide" },
+        { label: "Budget", value: "$250 to $800 or more for the gecko, priced by species and locality. %%setup:leaf-tailed-gecko%% for the setup, then $20 to $40 a month. A routine exam runs $60 to $135.", source: "leaf-tailed-gecko-cost-guide" },
         { label: "Lifespan", value: "5 to 15 years in captivity.", source: "leaf-tailed-gecko-cost-guide" },
         { label: "Salmonella", value: "Never clean the enclosure or its equipment in a kitchen sink or a shared bathtub, and children under 5 do not touch reptiles or their environments.", source: "reptile-salmonella-hygiene-guide" },
         { label: "Power outage", value: "A healthy adult tolerates a few hours to one cool night. A day or two below the normal night low is when cold stress and respiratory infection become real.", source: "reptile-emergency-plan-guide" },
@@ -339,7 +343,7 @@ export const geckoGuides = [
       vetLine: "Dehydration is the fastest-moving danger here, manageable at home if caught early by raising humidity immediately. MBD can worsen rapidly once it starts and respiratory infection needs prescription antibiotics, so both are vet-now rather than wait-and-see. A dropped tail is usually managed at home by minimizing handling, with a vet only if the site looks infected.",
     },
     routes: [
-      { slug: "leaf-tailed-gecko-cost-guide", line: "$250 to $800 by species and locality, $300 to $600 for the enclosure, and why wild-caught is the expensive option." },
+      { slug: "leaf-tailed-gecko-cost-guide", line: "$250 to $800 by species and locality, %%setup:leaf-tailed-gecko%% for the enclosure, and why wild-caught is the expensive option." },
       { slug: "leaf-tailed-gecko-tank-setup-guide", line: "18x18x24 for the smallest species, cool temperatures set by species, the humidity that defines this genus, and tap water over distilled." },
       { slug: "leaf-tailed-gecko-feeding-guide", line: "As much as it eats in a night, daily young and every other day adult, insects sized to the species, dusted lightly, and the mist as the water supply." },
       { slug: "leaf-tailed-gecko-handling-guide", line: "Stress signals worth recognizing, and the species whose tail never grows back." },
@@ -398,7 +402,7 @@ export const geckoGuides = [
         { label: "Calcium", value: "Gut-load feeders for 24 to 72 hours, dust with plain calcium at most feedings for juveniles and breeding females and 2 to 3 times a week for adults, calcium with D3 a couple of times a week if there is no UVB, a multivitamin about once a week.", source: "leopard-gecko-feeding-guide" },
         { label: "Not eating", value: "A healthy adult with a plump tail can go a couple of weeks. A visibly thinning tail is the signal to stop waiting and see a reptile vet.", source: "leopard-gecko-feeding-guide" },
         { label: "Handling", value: "Wait one to two weeks, and until it eats normally and stops fleeing. Then 5-minute sessions every other day, building to 10 to 20 minutes. Never by the tail, never during a shed.", source: "leopard-gecko-handling-guide" },
-        { label: "Budget", value: "$315 to $760 of equipment, $465 to $975 with the first vet exam, then $30 to $85 a month. An annual wellness exam runs $85 to $105; sick visits $100 to $800 or more.", source: "leopard-gecko-cost-guide" },
+        { label: "Budget", value: "$315 to $760 of equipment, %%setup:leopard-gecko%% with the first vet exam, then %%monthly:leopard-gecko%% a month. An annual wellness exam runs $85 to $105; sick visits $100 to $800 or more.", source: "leopard-gecko-cost-guide" },
         { label: "Adult size", value: "6 to 9 inches; males 60 to 90 grams, females as light as 45.", source: "leopard-gecko-handling-guide" },
         { label: "Lifespan", value: "10 to 20 years with proper care, some reaching 25 to 30.", source: "leopard-gecko-cost-guide" },
         { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the gecko out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
@@ -420,7 +424,7 @@ export const geckoGuides = [
       vetLine: "A reptile-experienced vet, found before you need one. Treat a tail thinning to a stick as cryptosporidiosis until a fecal PCR says otherwise: one clear test doesn't fully rule it out, and there is no cure.",
     },
     routes: [
-      { slug: "leopard-gecko-cost-guide", line: "$20 to $45 for the gecko, $315 to $760 of equipment, $30 to $85 a month, and what a sick visit really costs." },
+      { slug: "leopard-gecko-cost-guide", line: "$20 to $45 for the gecko, $315 to $760 of equipment, %%monthly:leopard-gecko%% a month, and what a sick visit really costs." },
       { slug: "leopard-gecko-tank-setup-guide", line: "The 36x18x18 minimum, belly heat on a thermostat, the three-hide system, and the humid hide that prevents most shedding problems." },
       { slug: "leopard-gecko-temperature-guide", line: "Every zone's target, mat versus overhead, the thermostat rule, night temperatures, and the signs the numbers are wrong." },
       { slug: "leopard-gecko-feeding-guide", line: "How often by age, what they eat, the safe treats and the foods to avoid, and the reasons one refuses food, from a normal shed to a vet visit." },
@@ -508,7 +512,7 @@ export const geckoGuides = [
         { label: "Feed in more than one place", value: "Shallow dishes at several heights, since a dominant female may guard a single dish.", source: "mourning-gecko-enrichment-guide" },
         { label: "Do not handle", value: "Adults are 3.5 to 4 inches and hatchlings under an inch, and a small drop can be fatal at that scale. Let one walk onto your hand, low and slow. Firing between brown and light tan is normal, not stress.", source: "mourning-gecko-handling-guide" },
         { label: "Shedding", value: "It comes off in pieces rather than one sock. A band left around a toe or tail tip needs humidity raised and a moist hide.", source: "reptile-shedding-complete-guide" },
-        { label: "Budget", value: "$15 to $50 each, a trio around $60. Setup roughly $230 to $405, upkeep $10 to $25 a month, and a routine exam $35 to $105.", source: "mourning-gecko-cost-guide" },
+        { label: "Budget", value: "$15 to $50 each, a trio around $60. Setup roughly %%setup:mourning-gecko%%, upkeep %%monthly:mourning-gecko%% a month, and a routine exam $35 to $105.", source: "mourning-gecko-cost-guide" },
         { label: "Adult size", value: "3.5 to 4 inches (8.5 to 10 cm)." },
         { label: "Lifespan", value: "Up to 10 years, some reports of 15.", source: "mourning-gecko-cost-guide" },
       ],
@@ -526,7 +530,7 @@ export const geckoGuides = [
       vetLine: "Skipping UVB or calcium and D3 supplementation doesn't just risk MBD in the abstract, it directly raises egg-binding risk in a species that's laying eggs constantly regardless of whether you're trying to breed it. Given how small a mourning gecko is, a thermometer and hygrometer that's actually accurate matters more than usual for catching drift before it becomes a health problem.",
     },
     routes: [
-      { slug: "mourning-gecko-cost-guide", line: "$15 to $50 a gecko and cheaper by the trio, the $230 to $405 planted setup, and why the Type A to D labels on listings are not morphs." },
+      { slug: "mourning-gecko-cost-guide", line: "$15 to $50 a gecko and cheaper by the trio, the %%setup:mourning-gecko%% planted setup, and why the Type A to D labels on listings are not morphs." },
       { slug: "mourning-gecko-tank-setup-guide", line: "The 12x12x18 that holds 2 to 3 adults, the escape-proofing step that matters more than anything else here, humidity that peaks and dries back, and low-output UVB." },
       { slug: "mourning-gecko-feeding-guide", line: "Powdered diet every 48 hours and dusted insects weekly, the calcium demand that never pauses, and seven reasons a mourning gecko stops eating." },
       { slug: "mourning-gecko-handling-guide", line: "Why an animal this size is a display pet, what tail loss actually is, and why easy care and handleable are not the same claim." },
@@ -548,7 +552,7 @@ export const geckoGuides = [
       "Shallow feeding dishes for several heights",
       "Small ventilated plastic cups and 32 oz deli cups, for eggs and hatchlings",
       "Fruit fly culture or pinhead crickets",
-      "Calcium powder, for dusting and for an open dish",
+      "Plain calcium for dusting insects",
       "A multivitamin for the weekly rotation",
       "Two or more geckos",
     ],
@@ -598,7 +602,7 @@ export const geckoGuides = [
         { label: "Two males", value: "Never. They fight, often with serious or fatal results.", source: "tokay-gecko-handling-guide" },
         { label: "Pair housing", value: "A 2024 study found pair housing improved welfare in captive-bred tokays. One study, and pairing needs quarantine, careful introduction, space and cover for both, and a plan for separating them. Do not pair casually.", source: "tokay-gecko-enrichment-guide" },
         { label: "Parasites", value: "A 2025 study of 21 farmed tokays found intestinal parasites in 42.9% of them, a small sample. A gecko carries a load for months before it shows, so an annual exam with fecal testing.", source: "tokay-gecko-health-issues-guide" },
-        { label: "Budget", value: "$15 to $50 for a wild-caught tokay, which is not the budget option once parasite treatment and a harder animal are counted. Captive-bred normals $100 to $150, morphs $150 to $400. Setup $300 to $500, then $15 to $30 a month, and $50 to $100 for a routine exam.", source: "tokay-gecko-cost-guide" },
+        { label: "Budget", value: "$15 to $50 for a wild-caught tokay, which is not the budget option once parasite treatment and a harder animal are counted. Captive-bred normals $100 to $150, morphs $150 to $400. Setup %%setup:tokay-gecko%%, then $15 to $30 a month, and $50 to $100 for a routine exam.", source: "tokay-gecko-cost-guide" },
         { label: "Lifespan", value: "10 to 15 years, documented past 20.", source: "tokay-gecko-cost-guide" },
         { label: "Adult size", value: "10 to 15 inches (25 to 38 cm)." },
         { label: "Daily stool check", value: "Yellow, orange, or gritty urates instead of smooth white point to dehydration. A free, five-second check.", source: "reptile-stool-urates-hydration-guide" },
@@ -620,7 +624,7 @@ export const geckoGuides = [
       vetLine: "Any of these means a call, not a wait. Retained shed alone is a humidity boost and a fine mist at home.",
     },
     routes: [
-      { slug: "tokay-gecko-cost-guide", line: "$15 to $400 for the gecko depending on where it came from, a $300 to $500 setup, and why the cheap one is not the budget option." },
+      { slug: "tokay-gecko-cost-guide", line: "$15 to $400 for the gecko depending on where it came from, %%setup:tokay-gecko%% for the setup, and why the cheap one is not the budget option." },
       { slug: "tokay-gecko-tank-setup-guide", line: "18x18x36 minimum, a 90 to 105F basking zone, 60 to 80% humidity, night heat, and what this insectivore eats." },
       { slug: "tokay-gecko-handling-guide", line: "The two kinds of bite, reading a tokay before it bites, what to do when it has hold of you, and session length by tameness." },
       { slug: "tokay-gecko-feeding-guide", line: "Five minutes of insects no wider than the head, daily young and every other day adult, gut-loaded 24 to 72 hours, mice twice a month at most." },
@@ -651,4 +655,4 @@ export const geckoGuides = [
       { q: "Are tokay geckos legal in the US?", a: "In 48 of 52 jurisdictions, with no permit. Only Hawaii and the District of Columbia bar them, West Virginia asks for an importation permit, and Minnesota attaches conditions that apply to every lizard rather than to this species specifically." },
     ],
   },
-];
+]);

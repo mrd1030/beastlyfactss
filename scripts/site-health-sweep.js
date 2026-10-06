@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { parse as parseYaml } from 'yaml';
+import { resolveCostTokens } from '../src/lib/costs.js';
 
 // Deterministic site-health check: finds orphan pages, dead internal links,
 // species missing from relatedArticles.js, and missing hero images. Read-only,
@@ -22,7 +23,7 @@ function readAllArticles() {
     const dirPath = path.join('content', dir);
     if (!fs.existsSync(dirPath)) continue;
     for (const file of fs.readdirSync(dirPath).filter(f => f.endsWith('.mdx'))) {
-      const raw = fs.readFileSync(path.join(dirPath, file), 'utf8');
+      const raw = resolveCostTokens(fs.readFileSync(path.join(dirPath, file), 'utf8'));
       const { fm, body } = parseFrontmatter(raw);
       const slug = fm.slug || file.replace('.mdx', '');
       articles.push({ dir, file, slug, fm, body, path: path.join(dirPath, file) });
@@ -36,7 +37,7 @@ function readStructuredGuideIds() {
   const ids = new Set();
   if (!fs.existsSync(dirPath)) return ids;
   for (const file of fs.readdirSync(dirPath).filter(f => f.endsWith('.js') && f !== 'index.js')) {
-    const raw = fs.readFileSync(path.join(dirPath, file), 'utf8');
+    const raw = resolveCostTokens(fs.readFileSync(path.join(dirPath, file), 'utf8'));
     for (const m of raw.matchAll(/id:\s*["']([a-z0-9-]+)["']/g)) ids.add(m[1]);
   }
   return ids;
@@ -44,7 +45,7 @@ function readStructuredGuideIds() {
 
 function readRelatedArticlesKeys() {
   const filePath = 'src/lib/data/relatedArticles.js';
-  const raw = fs.readFileSync(filePath, 'utf8');
+  const raw = resolveCostTokens(fs.readFileSync(filePath, 'utf8'));
   const map = {};
   for (const m of raw.matchAll(/'([a-z0-9-]+)':\s*\[([^\]]*)\]/g)) {
     const key = m[1];
@@ -63,7 +64,7 @@ function readBeastlypediaRelatedFiles() {
   const slugs = [];
   if (!fs.existsSync(dirPath)) return slugs;
   for (const file of fs.readdirSync(dirPath).filter(f => f.endsWith('.js') && f !== 'index.js')) {
-    const raw = fs.readFileSync(path.join(dirPath, file), 'utf8');
+    const raw = resolveCostTokens(fs.readFileSync(path.join(dirPath, file), 'utf8'));
     for (const m of raw.matchAll(/relatedFiles:\s*\[([^\]]*)\]/g)) {
       for (const s of m[1].matchAll(/'([a-z0-9-]+)'/g)) slugs.push(s[1]);
     }

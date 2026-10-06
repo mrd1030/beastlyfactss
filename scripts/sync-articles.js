@@ -5,6 +5,7 @@ import { parse as parseYaml } from 'yaml';
 import { facts } from '../src/lib/data/facts.js';
 import { CATEGORIES } from '../src/lib/data/categories.js';
 import { matchesAnimal } from '../src/lib/utils/matchAnimal.js';
+import { resolveCostTokens } from '../src/lib/costs.js';
 
 // Emoji for a post that sets none in frontmatter. Tries the animal the post is
 // actually about, then the category, then a neutral paw.
@@ -119,7 +120,9 @@ function readDir(dir) {
   return fs.readdirSync(dirPath)
     .filter(f => f.endsWith('.mdx'))
     .map(file => {
-      const raw = fs.readFileSync(path.join(dirPath, file), 'utf8');
+      // Cost placeholders filled first, so titles, descriptions and FAQs
+      // carry the figure from the master price list (src/lib/costs.js).
+      const raw = resolveCostTokens(fs.readFileSync(path.join(dirPath, file), 'utf8'));
       // body as well as frontmatter: the Fact Files source count is counted
       // from the real <Sources> list rather than declared in frontmatter, so
       // it cannot drift when a source is added or removed.

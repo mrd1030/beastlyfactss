@@ -23,6 +23,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { costTableProducts } from '../src/lib/costs.js';
 
 import { amphibianGuides } from '../src/lib/data/guides/amphibians.js';
 import { birdGuides } from '../src/lib/data/guides/birds.js';
@@ -81,6 +82,13 @@ function productsInArticle(slug) {
   for (const m of text.matchAll(/<AffiliateLink\b[^>]*href=["']([^"']+)["']/g)) {
     const p = byLink.get(m[1]);
     if (p) found.push(p);
+  }
+  // Tables drawn from the shared price list link their rows at render time.
+  for (const t of costTableProducts(text)) {
+    for (const s of t.products) {
+      const p = bySlug.get(s);
+      if (p) found.push(p);
+    }
   }
   if (slug.endsWith('-cost-guide')) {
     for (const t of text.matchAll(/<ComparisonTable[\s\S]*?\n\/>/g)) {

@@ -69,12 +69,18 @@ function textLength(node) {
   return 0;
 }
 
+// A short price cell ("$475 - $1,475", "about $5", "$20 - $40 a year")
+// should never break mid-range; a column made only of them keeps its figures,
+// and its header, on one line so the item column takes the squeeze instead.
+const PRICE_CELL = /^\s*(about |roughly |~)?\$[\d,]+(\.\d+)?(\s*(-|to)\s*\$[\d,]+(\.\d+)?)?\+?(\s+(a|per)\s+\w+)?\s*$/i;
+
 export default function ComparisonTable({
   headers = [],
   rows = [],
   className = '',
   linkCovers = false,
   tierColumn,
+  footer,
 }) {
   if (!headers.length || !rows.length) return null;
 
@@ -87,6 +93,9 @@ export default function ComparisonTable({
     && rows.some((row) => row.slice(1).some((cell) => textLength(cell) > STACK_TEXT_LENGTH));
   const isTitleCell = (i) => i === 0 || i === tierColumn;
   const s = (mobile, desktop) => (stacked ? `${mobile} ${desktop}` : '');
+  const priceColumns = new Set(headers.map((_, i) => i).filter((i) => i > 0
+    && rows.every((row) => typeof row[i] === 'string' && PRICE_CELL.test(row[i]))));
+  const nowrap = (i) => (priceColumns.has(i) ? ' whitespace-nowrap' : '');
 
   return (
     <div className={`not-prose my-8 overflow-x-auto rounded-xl border border-border ${className}`}>
@@ -96,7 +105,7 @@ export default function ComparisonTable({
             {headers.map((header, index) => (
               <th 
                 key={index} 
-                className="px-4 py-3 text-left font-body font-semibold text-foreground"
+                className={`px-4 py-3 text-left font-body font-semibold text-foreground${nowrap(index)}`}
               >
                 {header}
               </th>
@@ -115,7 +124,7 @@ export default function ComparisonTable({
                   data-label={stacked && !isTitleCell(cellIndex) ? headers[cellIndex] || undefined : undefined}
                   // Padding is set per layout, never as a base class: py-3
                   // beside py-0 resolves by CSS order, not class order.
-                  className={`px-4 text-muted-foreground ${
+                  className={`px-4 text-muted-foreground${nowrap(cellIndex)} ${
                     !stacked ? 'py-3'
                     : isTitleCell(cellIndex)
                       ? `block py-0 md:table-cell md:py-3 ${cellIndex === 0 ? 'font-semibold text-foreground md:font-normal md:text-muted-foreground' : ''}`
@@ -130,10 +139,20 @@ export default function ComparisonTable({
             </tr>
           ))}
         </tbody>
+        {/* footer: one summary row (a cost table's total), set off in bold. */}
+        {footer && (
+          <tfoot className={s('block', 'md:table-footer-group')}>
+            <tr className={`border-t-2 border-border bg-muted/50 ${s('block py-3', 'md:table-row md:py-0')}`}>
+              {footer.map((cell, i) => (
+                <td key={i} className={`px-4 py-3 font-body font-semibold text-foreground${nowrap(i)}`}>{cell}</td>
+              ))}
+            </tr>
+          </tfoot>
+        )}
       </table>
       {needsPriceNote(rows, linkCovers) && (
         <p className="px-4 py-2 border-t border-border text-xs font-body text-muted-foreground">
-          Typical price ranges across retailers, not current Amazon prices.
+          Typical price ranges across retailers.
         </p>
       )}
     </div>
