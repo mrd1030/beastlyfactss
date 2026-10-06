@@ -18,7 +18,6 @@ import { SITE_TIMEZONE } from '@/lib/utils/date';
 import { useIsMobileViewport } from '@/lib/hooks/useIsMobileViewport';
 import { useDialogFocus } from '@/lib/critterKeeper/ui';
 import { getBeastleReminder, getExistingSubscription, isPushSupported, setBeastleReminder } from '@/lib/pushNotifications';
-import FactModal from '@/components/shared/FactModal';
 
 const EMPTY_STATS = { played: 0, wins: 0, streak: 0, maxStreak: 0, lastWinDay: null, dist: [0, 0, 0, 0, 0, 0] };
 const EMPTY_UNLIMITED = { seen: [], current: null, played: 0, wins: 0 };
@@ -410,7 +409,6 @@ function ResultBox({ day, entry, game, streak, children }) {
 }
 
 function Reveal({ entry, won, guesses, kicker, children }) {
-  const [popupFact, setPopupFact] = useState(null);
   const fact = entry.factIds[0] ? factFor(entry.factIds[0]) : null;
   const blurb = entry.blurb || fact?.fact || '';
   return (
@@ -430,22 +428,20 @@ function Reveal({ entry, won, guesses, kicker, children }) {
             {AQUATIC_FISH[entry.answer]}
           </p>
         )}
-        {/* SHORTHAIR is two cats: a link to each. A fact-only animal has no
-            page of its own, so it opens its fact as a popup instead of
-            linking the fact page's empty shell (docs/RULES.md, fact pages). */}
+        {/* SHORTHAIR is two cats: a link to each. Only an animal with a page
+            of its own (an encyclopedia profile or a Beastlypedia entry) gets
+            "Meet the ...". A fact-only animal's fact is already the blurb
+            above, so it gets no link, and never one to its fact page's empty
+            shell (docs/RULES.md, fact pages). */}
         <div className="flex flex-wrap justify-center gap-x-4">
-          {[entry, ...(entry.also || [])].map((a) => {
-            const className = 'inline-flex items-center gap-1 mt-3 text-sm font-body font-bold text-secondary hover:underline';
-            const label = <>{`Meet the ${a.name}`} <ArrowRight className="w-4 h-4" /></>;
-            const factOnly = a.link?.startsWith('/facts/') && a.factIds?.[0] ? factFor(a.factIds[0]) : null;
-            return factOnly
-              ? <button key={a.link} type="button" onClick={() => setPopupFact(factOnly)} className={className}>{label}</button>
-              : <Link key={a.link} to={a.link} className={className}>{label}</Link>;
-          })}
+          {[entry, ...(entry.also || [])].filter((a) => /^\/(encyclopedia|beastlypedia)\//.test(a.link || '')).map((a) => (
+            <Link key={a.link} to={a.link} className="inline-flex items-center gap-1 mt-3 text-sm font-body font-bold text-secondary hover:underline">
+              {`Meet the ${a.name}`}<ArrowRight className="w-4 h-4" />
+            </Link>
+          ))}
         </div>
         {children}
       </div>
-      <FactModal fact={popupFact} onClose={() => setPopupFact(null)} />
     </div>
   );
 }
