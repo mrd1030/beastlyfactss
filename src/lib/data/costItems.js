@@ -2338,6 +2338,12 @@ export const COST_ITEMS = {
     spec: "",
     low: 70, high: 80, product: "humidifier-everlasting-comfort-6l", checked: '2026-10',
   },
+  // Three or four 0.75 cu ft bags of topsoil ($2 to $3.45 each) and three or four 0.5 cu ft bags of play sand ($4.97 each), garden-store prices checked 2026-10-06.
+  'substrate-diy-arid-bioactive-4x2': {
+    label: "Arid bioactive substrate, a DIY topsoil and play sand mix",
+    spec: "4 to 6 in over 4 x 2 ft, 80 to 120 qt",
+    low: 20, high: 35, product: null, checked: '2026-10',
+  },
   'uv-index-meter': {
     label: 'UV index meter',
     spec: 'Solarmeter 6.5R',

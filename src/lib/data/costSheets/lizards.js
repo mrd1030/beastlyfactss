@@ -40,6 +40,13 @@ export const lizardSheets = {
       { item: "kitchen-scale-grams", text: "[Kitchen scale that reads in grams]" },
       { item: "bearded-dragon-supply-plain-calcium-calcium", text: "First supply of [plain calcium], [calcium with D3] and a [multivitamin]" },
     ],
+    optional: [
+      { item: "substrate-diy-arid-bioactive-4x2", text: "Arid bioactive substrate 4 to 6 inches deep over the 4 by 2 foot floor (80 to 120 quarts): a DIY mix of about 60% organic topsoil and 40% play sand, three or four bags of each" },
+      { item: "hognose-snake-leaf-litter-surface-cover", text: "Dry [leaf litter] for the surface" },
+      { text: "Isopods, one culture of 20 to 30 powder orange or powder blue", low: 15, high: 40 },
+      { text: "Arid springtails, one 8 ounce culture", low: 15, high: 25 },
+      { text: "Desert-safe live plants for a 4 foot enclosure (check every species against a reptile-safe plant list first)", low: 40, high: 75 },
+    ],
   },
   'argentine-tegu': {
     animal: [200, 1200],
