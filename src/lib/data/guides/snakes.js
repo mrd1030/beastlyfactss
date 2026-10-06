@@ -206,7 +206,7 @@ export const snakeGuides = [
         { label: "Budget", value: "$45 to $300 for the snake, $200 to $500 for the setup, then roughly $15 to $30 a month. A routine exam is $50 to $135; an emergency starts around $150 and can reach $500.", source: "california-kingsnake-cost-guide" },
         { label: "Adult size", value: "2.5 to 4 feet (75 to 120 cm)." },
         { label: "Lifespan", value: "20 years or more with good care; the captive record is 33.3 years.", source: "california-kingsnake-cost-guide" },
-        { label: "Where it is banned", value: "Hawaii bans all snakes, Delaware requires a permit, and Oregon and Nevada write their rules around the snake's color pattern rather than its species.", source: "kingsnake-legal-guide" },
+        { label: "Where it is banned", value: "Hawaii bans all snakes and West Virginia bans its native kingsnakes. New Jersey and Delaware require a permit, and Oregon and Nevada write their rules around the snake's color pattern rather than its species.", source: "kingsnake-legal-guide" },
         { label: "Power outage", value: "65 to 75°F is the normal night low. Below 65°F, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },
@@ -228,7 +228,7 @@ export const snakeGuides = [
       { slug: "california-kingsnake-handling-guide", line: "Session lengths, the timing rules around feeding and shedding, the five fear signals, and why this snake must live alone." },
       { slug: "california-kingsnake-health-issues-guide", line: "Respiratory infection, scale rot, mites, mouth rot, retained shed, and why nearly all of it traces back to husbandry." },
       { slug: "california-kingsnake-enrichment-guide", line: "No kingsnake study exists, so this is the corn snake and ratsnake evidence, labeled as borrowed, on floor space, cover, climbing and scent." },
-      { slug: "kingsnake-legal-guide", line: "Hawaii's total snake ban, Delaware's permit, and the two states that judge a kingsnake by its color pattern rather than its species." },
+      { slug: "kingsnake-legal-guide", line: "Hawaii's total snake ban, West Virginia's native-species ban, the New Jersey and Delaware permits, and the two states that judge a kingsnake by its color pattern rather than its species." },
     ],
     buyList: [
       "48x24x24 inch front-opening enclosure",
@@ -306,7 +306,7 @@ export const snakeGuides = [
       { slug: "corn-snake-handling-guide", line: "Settling-in time, the two-handed support, the timing rules around feeding and shedding, and the stress signs." },
       { slug: "corn-snake-health-issues-guide", line: "Respiratory infection, scale rot, mites, retained shed, mouth rot, and the list that means the vet today." },
       { slug: "corn-snake-enrichment-guide", line: "The 2021 studies on enclosure size and odor discrimination, and why floor space is the enrichment for this species." },
-      { slug: "corn-snake-legal-guide", line: "Banned in Georgia as a native species, restricted morphs in New Jersey and Illinois, and where it's legal outright." },
+      { slug: "corn-snake-legal-guide", line: "Banned in Georgia and West Virginia as a native species and in Hawaii with every snake, nine named morphs only in New Jersey, rules in Illinois, and where it's legal outright." },
     ],
     buyList: [
       "40-gallon breeder or 4x2x2 ft PVC enclosure",
@@ -357,7 +357,7 @@ export const snakeGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal", value: "Native almost everywhere, so most states regulate it as wildlife rather than as a pet-trade reptile, which can mean more paperwork than a ball python. New York needs a permit even for one bought at a pet store.", source: "garter-snake-legal-guide" },
+        { label: "Legal", value: "Native almost everywhere, so most states regulate it as wildlife rather than as a pet-trade reptile, which can mean more paperwork than a ball python. New York has no permit path at all, even for one bought at a pet store.", source: "garter-snake-legal-guide" },
         { label: "Quarantine", value: "3 to 6 months in a bare enclosure on plain paper towel. Mites usually show within weeks.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "A 36x18x18 inch enclosure or a 40-gallon breeder minimum for one adult. Common, checkered, wandering and coast garters are cannibalism-prone and live alone. Active and inquisitive, so floor space gets used.", source: "garter-snake-tank-setup-guide" },
         { label: "Escape-proofing", value: "Small, slender, and able to work through gaps that look too small to matter. A locking lid, and every vent gap and cord hole sealed with mesh or silicone.", source: "garter-snake-tank-setup-guide" },

@@ -308,10 +308,10 @@ export const geckoGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Buy captive-bred", value: "Wild-caught animals consistently live shorter lives, and the genus is often wild-caught with the health problems that brings.", source: "leaf-tailed-gecko-cost-guide" },
+        { label: "Buy captive-bred", value: "Wild-caught animals consistently live shorter lives. Most leaf-tails for sale now are captive-bred, since Madagascar has largely stopped exporting them, but wild-caught ones still turn up and bring the health problems imports are known for.", source: "leaf-tailed-gecko-cost-guide" },
         { label: "Quarantine", value: "3 to 6 months for a new reptile, on plain paper towel with dedicated tools, serviced last. For a wild-caught gecko, wait 1 to 2 months before parasite treatment so a stressed animal is not treated too soon.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "12x12x18 inches for the smaller species, 18x18x18 better; the satanic leaf-tail does well in 18x18x24 as an adult, and Henkel's needs much more. Height over floor.", source: "leaf-tailed-gecko-tank-setup-guide" },
-        { label: "Temperature", value: "Ambient 75 to 79F, nights 64 to 72F. No basking heat: thin-skinned, easily dehydrated, and heat stress is the danger, the opposite priority from most reptiles.", source: "leaf-tailed-gecko-tank-setup-guide" },
+        { label: "Temperature", value: "Set by species: roughly 75 to 82F by day, nights in the mid 60s to low 70s. The satanic leaf-tail gets no basking spot, while Henkel's gets a warm end near 92F. Thin-skinned and easily dehydrated, so heat stress is the bigger danger.", source: "leaf-tailed-gecko-tank-setup-guide" },
         { label: "Humidity", value: "60 to 80% for most species, and 90 to 100% overnight for the satanic leaf-tail, from morning and evening misting, live plants, and moisture-holding substrate.", source: "leaf-tailed-gecko-tank-setup-guide" },
         { label: "The drying cycle", value: "High humidity with drying periods between mistings. Constant saturation is as bad as constant dryness, and a misting system is one of the few pieces of gear that changes outcomes for this genus.", source: "leaf-tailed-gecko-enrichment-guide" },
         { label: "Lighting and water", value: "Low-output UVB for a UVI of 0.6 to 1.4 at the top branch, about 13 hours of light in summer and 11 in winter, never basking-strength. Tap water, not distilled, for misting and drinking, for the minerals.", source: "leaf-tailed-gecko-tank-setup-guide" },
@@ -360,7 +360,7 @@ export const geckoGuides = [
     ],
     faqs: [
       { q: "How humid should a leaf-tailed gecko enclosure be?", a: "60 to 80% for most species. The satanic leaf-tailed gecko is the exception, needing 90 to 100% overnight, and it dehydrates fast without it." },
-      { q: "What temperature does a leaf-tailed gecko need?", a: "Ambient 75 to 79F, dropping to 64 to 72F at night. No basking spot: heat is generally unnecessary here and can be dangerous, the reverse of most reptile setups." },
+      { q: "What temperature does a leaf-tailed gecko need?", a: "It depends on the species. Most sit around 75 to 82F by day with nights in the mid 60s to low 70s. The satanic leaf-tail gets no basking spot at all, while Henkel's leaf-tail is given a warm end of about 92F, so set the thermostat for the species you actually own." },
       { q: "Do they need a misting system?", a: "For most keepers it is the practical answer. Uroplatus need high humidity with proper drying cycles between mistings, and hand spraying several times a day is difficult to sustain. Automated misting is one of the few pieces of equipment that changes outcomes for this genus." },
     ],
   },

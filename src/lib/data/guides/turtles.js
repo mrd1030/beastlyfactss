@@ -206,7 +206,7 @@ export const turtleGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal", value: "Banned nowhere. New Jersey, New Mexico, and Delaware require a permit; Massachusetts, Hawaii, Vermont, Minnesota, and New York City attach conditions, New York City's by size: a hatchling under four inches is barred.", source: "red-footed-tortoise-legal-guide" },
+        { label: "Legal", value: "Banned nowhere. New Jersey, New Mexico, Delaware and West Virginia require a permit; Massachusetts, Hawaii, Vermont, Minnesota, and New York City attach conditions, New York City's by size: a hatchling under four inches is barred.", source: "red-footed-tortoise-legal-guide" },
         { label: "Quarantine", value: "A minimum of six months, completely separate from any other chelonian, with lab testing. Two or three weeks is not long enough for the herpesvirus.", source: "chelonian-herpesvirus-quarantine-guide" },
         { label: "Enclosure", value: "18 to 24 square feet of floor for an adult indoors. A 4x2x2 ft enclosed enclosure carries a hatchling through juvenile; adults outgrow the shelf and get a custom build or a stock tank.", source: "red-footed-tortoise-tank-setup-guide" },
         { label: "Enclosed, not open-top", value: "An open tortoise table cannot hold humidity; it escapes upward. A front-opening enclosure with a solid top, still ventilated.", source: "red-footed-tortoise-tank-setup-guide" },
@@ -244,7 +244,7 @@ export const turtleGuides = [
       { slug: "red-footed-tortoise-handling-guide", line: "An observation pet that comes when called, the two-handed lift a 20 pound adult demands, and the growth chart that tells you what to build." },
       { slug: "red-footed-tortoise-health-issues-guide", line: "Respiratory infection from dry and cool, the difference between humid and soggy that decides shell rot, and the controlled study on what drives pyramiding." },
       { slug: "red-footed-tortoise-enrichment-guide", line: "The cognitive bias study that found enriched tortoises judging ambiguity optimistically, the touchscreen work, and the priority order that follows from both." },
-      { slug: "red-footed-tortoise-legal-guide", line: "No outright ban anywhere, the three permit states, and the five jurisdictions that attach conditions, including one that measures the shell rather than naming the species." },
+      { slug: "red-footed-tortoise-legal-guide", line: "No outright ban anywhere, the four permit states, and the five jurisdictions that attach conditions, including one that measures the shell rather than naming the species." },
     ],
     buyList: [
       "Enclosed, front-opening enclosure (4x2x2 ft from hatchling through juvenile)",
