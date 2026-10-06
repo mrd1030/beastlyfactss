@@ -39,7 +39,7 @@ for (const [id, item] of Object.entries(COST_ITEMS)) {
 
 const used = new Set();
 for (const [guide, sheet] of Object.entries(COST_SHEETS)) {
-  for (const section of ['necessities', 'extras']) {
+  for (const section of Object.keys(sheet).filter((k) => Array.isArray(sheet[k]) && k !== 'animal' && k !== 'monthly' && k !== 'vetExam' && k !== 'annual')) {
     for (const row of sheet[section] || []) {
       if (!row.item) {
         // One-off row: the animal itself, a first exam. Needs its own text and figures.

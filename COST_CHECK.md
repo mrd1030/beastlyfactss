@@ -48,7 +48,7 @@ never invented. Where no price exists, say so and ask the owner.
 | African fat-tailed gecko | ✅ 2026-10-06 | ☐ | Found in the 1.1 light pass: the cost guide heading and prose say setup $325 to $580 but its table sums to $369 to $579 (the book uses the table); the description line says "$75-1,000+" while the body says $75 to $600. Site: moved onto the shared price list with every figure unchanged ($585 to $1,050 with the first exam, $485 to $835 for the gear). |
 | Ball python | ✅ 2026-10-06 | ☐ | Site: moved onto the shared price list with every figure unchanged ($560 to $1,395). |
 | Hognose snake | ✅ 2026-10-06 | ☐ | Site: moved onto the shared price list with every figure unchanged ($465 to $1,000). |
-| Russian tortoise | ☐ | ☐ | |
+| Russian tortoise | ✅ 2026-10-06 | ☐ | Site: moved onto the shared price list with every figure unchanged ($490 to $935); its UVB row keeps the ReptiSun 24 in hood link. |
 | Axolotl | ☐ | ☐ | |
 | White's tree frog | ☐ | ☐ | |
 
@@ -65,7 +65,7 @@ Same checks 1 to 6. A change here touches the guide and the hub only.
 | Argentine tegu | ✅ 2026-10-06, shared price list: setup $2,520 to $3,945 (was "often exceeding $1,000 to $3,000"). The 8x2x2 ready-made enclosure was below spec and double-counted beside the 8x4x4 build; it is gone and the text now explains why the table prices the 8x4x4. Added: soaking tub, thermometer and hygrometer, calcium, multivitamin; extras: daylight LED, puzzle board, clicker. Title now "Argentine Tegu Cost: <setup> to Set Up" to fit 60 characters. No gear available: 8x4x4 enclosure, hides. Substrate still priced per pack (question). |
 | Blue-tongue skink | ✅ 2026-10-06, shared price list: setup $335 to $830 (was $330 to $635 stated). Linked the hub's dimming thermostat, soakable water dish and XL hide cave; added calcium, multivitamin, gram scale, tongs. Hub UVB and supplement lines reworded to the products the table prices. |
 | Boa constrictor | ☐ |
-| Box turtle | ☐ |
+| Box turtle | ✅ 2026-10-06, shared price list: setup $370 to $515 (was roughly $325 to $489, and the hub route line said $345 to $453). The first row was a "full setup" total of the rows below it and is gone; added the basking bulb and dome it named, a thermostat and calcium with D3; UVB on the shared 36 in 6% kit. |
 | Bristlenose pleco | ☐ |
 | California kingsnake | ✅ 2026-10-06, shared price list: setup $380 to $575 (was roughly $200 to $500 stated, $354 to $506 in rows). Linked the hub's 48x24x24 wooden vivarium, heat mat and thermostat kit, aspen, cork hides and soakable dish; added a sphagnum humid hide, thermometer and hygrometer, tongs. |
 | Canary | ✅ 2026-10-06, shared price list: setup $285 to $460 (was roughly $195 to $345, four rows). Added the must-haves the hub lists: first pellets and egg food (Amazon $13.64 for the Higgins 3 pack), cage cover, gram scale, carrier; cuttlebone now the single 5 in piece; the two-cage line no longer states a figure. Prevue F040 flight cage confirmed 31 x 20.5 in, 1/2 in bars. |
@@ -108,13 +108,13 @@ Same checks 1 to 6. A change here touches the guide and the hub only.
 | Praying mantis | ☐ |
 | Quaker parakeet | ✅ 2026-10-06 (owner chose the rewrite), shared price list: setup $295 to $560 (was roughly $300 to $800, with a dated worked example at $400 to $590). The worked example table, its exact sale and list prices and the first exam row are replaced by the usual setup table; the cage-depth advice and the toy note stay in the prose; the vet price table stays. Unlinked as below spec: the Prevue 5 ft wrought iron flight cage (37 x 23 in, under the 24 in depth) on the cost, setup and enrichment guides, and on the zebra finch enrichment guide (1/2 in bars, finches need 3/8); Harrison's High Potency Fine pellets link removed from the monthly line. No gear available: a 24x24x36 cage with 1/2 to 5/8 in bars, natural wood perches, starter toys. |
 | Rat | ☐ |
-| Red-eared slider | ☐ |
-| Red-footed tortoise | ☐ |
+| Red-eared slider | ✅ 2026-10-06, shared price list: setup $590 to $1,410. Linked the hub's canister filter, basking platform, UVB hood, heater and test kit (each row widened to cover the product); added thermostat, turtle pellets, cuttlebone, multivitamin. |
+| Red-footed tortoise | ✅ 2026-10-06, shared price list: setup $535 to $1,205 (was $500 to $950). The first row was a "full enclosed setup" total and is gone; the parts it named are now rows: UVB, basking bulb and dome, thermostat, thermometer and hygrometer, coconut fiber, humid hide moss, soak dish, Miner-All, cuttlebone; extras: forage seed mix, clicker. No gear available: a ceramic heat emitter for night heat. |
 | Rosy boa | ☐ |
 | Savannah monitor | ✅ 2026-10-06, shared price list: setup $2,495 to $3,620 (was "several hundred to over $1,000"). The 8x2x2 stand-in was below spec; the table now prices the 8x4x4 the guide says an adult needs, ordered from a maker, with the DIY-build advice kept. Added thermostat, 46 in UVB, infrared thermometer, water basin, calcium, multivitamin, tongs; extras: LED, puzzle, clicker. The prose link to a 22 in UVB kit (far too short for 8 ft) removed. Substrate per bag (question). |
 | Stick insect | ☐ |
 | Sugar glider | ☐ |
-| Sulcata tortoise | ☐ |
+| Sulcata tortoise | ✅ 2026-10-06, shared price list: setup $265 to $585 for the hatchling's indoor setup (heading was "$300 for a hatchling"); the outdoor enclosure and heated shelter, $500 to $2,500, now sit in their own "Adult Housing, Within a Few Years" table, not in the setup total. Linked the tortoise table and 14% UVB kit; added thermostat, calcium and multivitamin, cuttlebone, soak dish. No gear available: substrate mix, humid hide, basking lamp. |
 | Swordtail | ☐ |
 | Tiger salamander | ☐ |
 | Tokay gecko | ☐ |

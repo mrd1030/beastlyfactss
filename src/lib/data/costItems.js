@@ -1213,6 +1213,156 @@ export const COST_ITEMS = {
     spec: "",
     low: 15, high: 30, product: "large-soakable-water-dish", checked: '2026-10',
   },
+  'russian-tortoise-tortoise-table-bought-built': {
+    label: "Tortoise table, bought or built, 4x2 ft or larger",
+    spec: "",
+    low: 125, high: 250, product: "tortoise-table", checked: '2026-10',
+  },
+  'russian-tortoise-t5-ho-uvb-fixture': {
+    label: "T5 HO UVB fixture about a third to half the table length, 10 or 12% tube included",
+    spec: "",
+    low: 60, high: 130, product: "uvb-zoo-med-reptisun-24in-high-output-hood", checked: '2026-10',
+  },
+  'russian-tortoise-bright-6500-k-daylight': {
+    label: "Bright 6500 K daylight LED beside the UVB tube over the warm end, with its plug-in cord adapter",
+    spec: "",
+    low: 80, high: 100, product: "grow-light-bio-dude-glow-grow-16in", checked: '2026-10',
+  },
+  'russian-tortoise-infrared-temperature-gun-basking': {
+    label: "Infrared temperature gun for the basking surface",
+    spec: "",
+    low: 15, high: 30, product: "etekcity-infrared-thermometer-gun", checked: '2026-10',
+  },
+  'russian-tortoise-substrate-50-50-mix': {
+    label: "Substrate: a 50/50 mix of topsoil and coconut coir, 6 in deep for an adult",
+    spec: "",
+    low: 30, high: 70, product: "topsoil-michigan-peat-garden-magic-40lb", checked: '2026-10',
+  },
+  'russian-tortoise-two-hides-one-warm': {
+    label: "Two hides, one warm and dry and one cool and moist lined with damp peat moss, plus cork flats",
+    spec: "",
+    low: 30, high: 70, product: "peat-moss-espoma-organic", checked: '2026-10',
+  },
+  'russian-tortoise-dig-box-storage-tub': {
+    label: "Dig box: a storage tub of deeper substrate for the 6 to 12 in dig zone",
+    spec: "",
+    low: 5, high: 15, product: "storage-tub-sterilite-56qt", checked: '2026-10',
+  },
+  'russian-tortoise-digital-kitchen-scale-grams': {
+    label: "Digital kitchen scale in grams",
+    spec: "",
+    low: 5, high: 20, product: "gram-scale-etekcity-kitchen", checked: '2026-10',
+  },
+  'russian-tortoise-supply-plain-calcium-without': {
+    label: "First supply of plain calcium without D3, a herbivore multivitamin with no added phosphorus, and a cuttlebone",
+    spec: "",
+    low: 15, high: 30, product: "calcium-zoo-med-without-d3", checked: '2026-10',
+  },
+  'russian-tortoise-bag-grass-hay': {
+    label: "First bag of grass hay",
+    spec: "",
+    low: 10, high: 15, product: "hay-oxbow-orchard-40oz", checked: '2026-10',
+  },
+  'box-turtle-enclosure-36x18x18-inch-minimum': {
+    label: "Enclosure, 36x18x18 inch minimum",
+    spec: "",
+    low: 200, high: 275, product: "enclosure-repti-zoo-36x18x18-50gal", checked: '2026-10',
+  },
+  'red-eared-slider-100-gallon-enclosure-pond': {
+    label: "100+ gallon enclosure or pond setup",
+    spec: "",
+    low: 300, high: 700, product: null, checked: '2026-10',
+  },
+  'red-eared-slider-powerful-canister-filter-2': {
+    label: "Powerful canister filter (2-3x tank volume)",
+    spec: "",
+    low: 120, high: 340, product: "oscar-fish-canister-filter-fluval-fx4", checked: '2026-10',
+  },
+  'red-eared-slider-large-basking-platform': {
+    label: "Large basking platform",
+    spec: "",
+    low: 25, high: 70, product: "turtle-basking-platform-turtle-topper-large", checked: '2026-10',
+  },
+  'red-eared-slider-strong-uvb-t5-ho': {
+    label: "Strong UVB (T5 HO)",
+    spec: "",
+    low: 55, high: 100, product: "uvb-zoo-med-reptisun-24in-high-output-hood", checked: '2026-10',
+  },
+  'red-eared-slider-basking-heat-lamp': {
+    label: "Basking heat lamp",
+    spec: "",
+    low: 20, high: 40, product: null, checked: '2026-10',
+  },
+  'red-eared-slider-submersible-water-heater': {
+    label: "Submersible water heater",
+    spec: "",
+    low: 15, high: 60, product: "submersible-aquarium-heater", checked: '2026-10',
+  },
+  'red-eared-slider-water-quality-test-kit': {
+    label: "Water quality test kit",
+    spec: "",
+    low: 15, high: 40, product: "water-test-kit", checked: '2026-10',
+  },
+  'sulcata-tortoise-indoor-tortoise-table-hatchling': {
+    label: "Indoor tortoise table (hatchling/juvenile)",
+    spec: "",
+    low: 120, high: 300, product: "tortoise-table", checked: '2026-10',
+  },
+  'sulcata-tortoise-strong-uvb-arcadia-12': {
+    label: "Strong UVB (Arcadia 12%, indoor setups)",
+    spec: "",
+    low: 60, high: 145, product: "arcadia-t5-uvb-36in-14pct-dragon", checked: '2026-10',
+  },
+  'sulcata-tortoise-basking-bulb': {
+    label: "Basking bulb",
+    spec: "",
+    low: 20, high: 40, product: null, checked: '2026-10',
+  },
+  'uvb-t5ho-6pct-36in-kit': {
+    label: "Linear T5 HO 6% UVB kit, 36 inch",
+    spec: "36 in, 6%",
+    low: 95, high: 115, product: "uvb-arcadia-forest-6", checked: '2026-10',
+  },
+  'basking-bulb-and-dome': {
+    label: "Basking bulb and a basking dome fixture",
+    spec: "75 W",
+    low: 20, high: 35, product: "basking-bulb-75w", checked: '2026-10',
+  },
+  'thermostat-pt02t': {
+    label: "Dimming thermostat",
+    spec: "PT02T",
+    low: 25, high: 35, product: "dimming-thermostat-pt02t", checked: '2026-10',
+  },
+  'substrate-coconut-fiber-eco-earth': {
+    label: "Coconut fiber substrate",
+    spec: "",
+    low: 25, high: 40, product: "substrate-zoo-med-eco-earth-coconut-fiber", checked: '2026-10',
+  },
+  'turtle-pellets-first': {
+    label: "First supply of aquatic turtle pellets",
+    spec: "",
+    low: 5, high: 15, product: "turtle-pellets-mazuri-aquatic", checked: '2026-10',
+  },
+  'calcium-multivitamin-tortoise': {
+    label: "Phosphorus-free calcium and tortoise multivitamin",
+    spec: "",
+    low: 20, high: 30, product: "calcium-tortoise-turtle-herbivorous-sulcata", checked: '2026-10',
+  },
+  'forage-seed-mix-tortoise': {
+    label: "Tortoise forage seed mix",
+    spec: "",
+    low: 15, high: 25, product: "tortoise-forage-seed-mix", checked: '2026-10',
+  },
+  'sulcata-tortoise-outdoor-enclosure-materials-buried': {
+    label: "Outdoor enclosure materials + buried fencing",
+    spec: "",
+    low: 300, high: 1500, product: null, checked: '2026-10',
+  },
+  'sulcata-tortoise-heated-shelter-materials-heater': {
+    label: "Heated shelter (materials + heater)",
+    spec: "",
+    low: 200, high: 1000, product: null, checked: '2026-10',
+  },
   'uv-index-meter': {
     label: 'UV index meter',
     spec: 'Solarmeter 6.5R',
