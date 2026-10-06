@@ -48,7 +48,7 @@ export const turtleEncyclopedia = [
       overview: "The Russian tortoise (also called Horsfield's tortoise) is a compact, hardy species native to the arid steppes and rocky desert from Kazakhstan to Pakistan and China. They are one of the world's most cold-tolerant tortoises, surviving extreme temperature swings by hibernating deep underground for months at a time. Among the smallest and hardiest of the commonly kept tortoise species, they have been popular pets for decades.",
       origin: "Central Asia (Kazakhstan, Uzbekistan, Iran, Pakistan, China)",
       habitat: "Semi-arid steppe, rocky desert, and dry scrubland",
-      adultSize: "5-10 inches (13-25 cm)",
+      adultSize: "5-9 inches (13-23 cm)",
       wildDiet: "Grasses, leaves, flowers, and plant matter",
       wildLifespan: "Not well documented in the wild; the widely quoted 40 to 50 years, with some individuals reported past 60, is a captive-care range",
       conservation: "Vulnerable (IUCN)",

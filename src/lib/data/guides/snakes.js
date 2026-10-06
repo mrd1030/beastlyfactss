@@ -207,7 +207,7 @@ export const snakeGuides = [
         { label: "Adult size", value: "2.5 to 4 feet (75 to 120 cm)." },
         { label: "Lifespan", value: "20 years or more with good care; the captive record is 33.3 years.", source: "california-kingsnake-cost-guide" },
         { label: "Where it is banned", value: "Hawaii bans all snakes and West Virginia bans its native kingsnakes. New Jersey and Delaware require a permit, and Oregon and Nevada write their rules around the snake's color pattern rather than its species.", source: "kingsnake-legal-guide" },
-        { label: "Power outage", value: "65 to 75°F is the normal night low. Below 65°F, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
+        { label: "Power outage", value: "68 to 72°F is the normal night low. Below that, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },
     emergencyCard: {
@@ -464,7 +464,7 @@ export const snakeGuides = [
         { label: "Venom", value: "Rear-fanged and mildly venomous. Bites are uncommon and stay local: a quick bite often does nothing, while a snake that holds on or chews can cause marked swelling and bruising.", source: "hognose-snake-handling-guide" },
         { label: "Budget", value: "$50 to $100 for a wild-type, $390 to $850 for the setup, $465 to $1,000 with the first vet exam and fecal test, then $235 to $390 a year, about $15 to $35 a month. A routine exam is $50 to $100, a fecal test $25 to $50.", source: "hognose-snake-cost-guide" },
         { label: "Lifespan", value: "10 to 15 years, 15 to 20 achievable.", source: "hognose-snake-cost-guide" },
-        { label: "Adult size", value: "1.5 to 3.5 feet (45 to 107 cm) depending on species." },
+        { label: "Adult size", value: "14 to 46 inches (36 to 117 cm) across the species; western hognoses, the usual pet, run 14 to 37 inches." },
         { label: "Power outage", value: "Room temperature is a normal night, down to 60°F. Below 60°F, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },
@@ -559,7 +559,7 @@ export const snakeGuides = [
         { label: "Lifespan", value: "20 years or more with good care.", source: "milk-snake-cost-guide" },
         { label: "Adult size", value: "2 to 4 feet (60 to 120 cm) depending on subspecies." },
         { label: "Hygiene", value: "Wash hands with soap after any contact, keep the snake out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
-        { label: "Power outage", value: "65 to 75°F is the normal night low. Below 65°F, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
+        { label: "Power outage", value: "70 to 75°F is the normal night low. Below 70°F, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },
     emergencyCard: {
@@ -630,7 +630,7 @@ export const snakeGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal check", value: "Broadly legal, and the Boidae exemptions that clear the boa constrictor mostly clear it too. New York City bans the family, Colorado's 2026 rewrite dropped it from the exemption, New Jersey's exemption names a different genus, and Hawaii bans every snake.", source: "rosy-boa-legal-guide" },
+        { label: "Legal check", value: "Broadly legal, and the Boidae exemptions that clear the boa constrictor mostly clear it too. New York City bans the family, Colorado's 2026 rewrite dropped it from the exemption, New Jersey's exemption names a different genus, Delaware wants a $25 permit, West Virginia an import permit, and Hawaii bans every snake.", source: "rosy-boa-legal-guide" },
         { label: "Quarantine", value: "3 to 6 months in a different room. A second tank in the same room as your established reptile is proximity with a lid on it.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "A 10 to 15 gallon terrarium for a young snake, 20 to 30 gallons as the floor for an adult of 24 to 36 inches, and 36x18x18 inches the better target. Housed individually with a snug hide, under a tight lid that is smooth, since rough screen abrades the nose.", source: "rosy-boa-tank-setup-guide" },
         { label: "Temperature", value: "A basking surface of 90°F, cool side 65 to 75°F, heat off at night with temperatures safely into the 60s. A brief winter cooldown toward the mid-50s mirrors its natural slowdown.", source: "rosy-boa-tank-setup-guide" },
