@@ -142,7 +142,7 @@ A `<Sources>` entry is a vet, university, government, manufacturer spec, or
 established husbandry reference. Never a retailer product page or a
 for-sale listing. Cost guides carry no "Prices last checked" or "as of"
 line (owner, 2026-10-06): the table component already prints "Typical
-price ranges across retailers, not current Amazon prices." under every
+price ranges across retailers." under every
 priced table, and a dated line only ages.
 
 ## Linking: everything to and from somewhere

@@ -152,7 +152,7 @@ export default function ComparisonTable({
       </table>
       {needsPriceNote(rows, linkCovers) && (
         <p className="px-4 py-2 border-t border-border text-xs font-body text-muted-foreground">
-          Typical price ranges across retailers, not current Amazon prices.
+          Typical price ranges across retailers.
         </p>
       )}
     </div>
