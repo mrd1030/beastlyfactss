@@ -90,6 +90,16 @@ Checked against main on 2026-10-04. Each line: species, file, the problem, the f
 
 ---
 
+## Source overlap sweep (after the consistency sweep, owner-approved 2026-10-05)
+
+Every article's Sources block, site wide: combine several pages from one site into one entry naming the pages; drop a source whose every claim another listed source already covers; keep 3 to 5. About 308 articles list two or more pages from the same site (some are legal guides citing separate government documents, which stay separate). Common knowledge, such as prey that is too large causing impaction, can stand unsourced (owner, 2026-10-05).
+
+Claims found with no listed source, to source or soften during the sweep:
+- [ ] whites-tree-frog-handling-guide: 5 to 15 minute sessions, about twice a week; larger and hardier than American green tree frogs; takes in water and oxygen through the skin.
+- [ ] fire-bellied-toad-handling-guide: skin toxin harms tankmates of other species (FAQ and first-timer list); a small net as a handling option.
+
+---
+
 ## 3. Species sections by group
 
 ## Birds (10)
