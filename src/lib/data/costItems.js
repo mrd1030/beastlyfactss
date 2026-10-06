@@ -103,7 +103,7 @@ export const COST_ITEMS = {
   'perches-varied-large-parrot': {
     label: 'Natural wood, rope and cement perches in varied diameters',
     spec: 'large parrot',
-    low: 70, high: 100, product: "perch-yml-dragonwood-32in", checked: '2026-10',
+    low: 10, high: 25, product: null, checked: '2026-10',
   },
   // PetSmart $64.99 regular; LLL Reptile, Arcata Pet and others $74.99 to $91.99.
   'uvb-avian-compact-kit': {
@@ -2369,6 +2369,11 @@ export const COST_ITEMS = {
     label: "Foraging puzzle feeder",
     spec: "",
     low: 10, high: 25, product: "puzzle-feeder", checked: '2026-10',
+  },
+  'perches-grey-large-parrot': {
+    label: "Dragonwood and cement perches for a large parrot",
+    spec: "1 to 1.5 in",
+    low: 70, high: 100, product: "perch-yml-dragonwood-32in", checked: '2026-10',
   },
   'uv-index-meter': {
     label: 'UV index meter',

@@ -298,7 +298,7 @@
   "guinea-pig-legal-guide": {
     "total": 52,
     "modal": "2026-10-01",
-    "modalCount": 50,
+    "modalCount": 49,
     "others": [
       [
         "2026-08-05",
@@ -307,10 +307,14 @@
       [
         "2026-10-02",
         "North Dakota"
+      ],
+      [
+        "2026-10-03",
+        "Hawaii"
       ]
     ],
     "from": "2026-08-05",
-    "to": "2026-10-02"
+    "to": "2026-10-03"
   },
   "green-iguana-legal-guide": {
     "total": 52,

@@ -6,7 +6,7 @@ export const birdSheets = {
     vetExam: [150, 300],
     necessities: [
       { item: 'cage-parrot-36x24x48-bars-075-1in', text: 'Cage at least 36 by 24 by 48 inches with bars 3/4 to 1 inch apart, powder-coated steel (check the dimensions and bar spacing before you buy)' },
-      { item: 'perches-varied-large-parrot', products: ['perch-yml-dragonwood-32in', 'perch-pollys-pastel-medium'], text: 'Natural wood, rope and cement perches in varied diameters, sized for a large parrot: a [dragonwood perch] and a [cement grooming perch] to start' },
+      { item: 'perches-grey-large-parrot', products: ['perch-yml-dragonwood-32in', 'perch-pollys-pastel-medium'], text: 'Natural wood, rope and cement perches in varied diameters, sized for a large parrot: a [dragonwood perch] and a [cement grooming perch] to start' },
       { item: 'uvb-avian-compact-kit', text: '[Avian UVB lamp and fixture], mounted 12 to 18 inches from the perch' },
       { item: 'foraging-toys-large-parrot-set', text: '[Foraging toys built for a large parrot]' },
       { item: 'dish-stainless-bolt-on-30oz', qty: 2, text: 'Two [stainless bolt-on dishes], one for food and one for water' },
