@@ -1,4 +1,8 @@
-export const snakeGuides = [
+// Cost figures in these entries are %%placeholders%% filled from the master
+// price list (src/lib/costs.js); never type a cost guide total here.
+import { fillCostTokens } from '../../costs.js';
+
+export const snakeGuides = fillCostTokens([
   {
     id: "ball-python",
     name: "Ball Python",
@@ -36,7 +40,7 @@ export const snakeGuides = [
         { label: "Not eating", value: "A healthy adult goes 3-6 months without eating, with a seasonal dip from roughly October through March. Worry only with rapid weight loss, lethargy, mucus at the mouth, or wheezing.", source: "ball-python-feeding-guide" },
         { label: "Handling", value: "Nothing for the first one to two weeks or until it eats regularly. Then 2 to 3 sessions a week of 15 to 30 minutes, 48 to 72 hours after a meal, never during a shed.", source: "ball-python-handling-guide" },
         { label: "Weight checks", value: "Weigh monthly while growing. A rounded loaf in cross-section is right; a triangle with a ridge down the spine is underweight.", source: "snake-sexing-growth-body-condition-guide" },
-        { label: "Budget", value: "$40 to $100 for a wild-type, $510 to $1,245 for the setup, $560 to $1,395 with the first vet exam, then $290 to $635 a year, about $20 to $55 a month.", source: "ball-python-cost-guide" },
+        { label: "Budget", value: "$40 to $100 for a wild-type, $510 to $1,245 for the setup, %%setup:ball-python%% with the first vet exam, then %%annual:ball-python%% a year, about $20 to $55 a month.", source: "ball-python-cost-guide" },
         { label: "Adult size", value: "3 to 5 feet, females significantly larger." },
         { label: "Lifespan", value: "20 to 30 years, up to 48 recorded in captivity." },
         { label: "Quarantine", value: "3 to 6 months, with a fecal exam before assuming it is healthy. Mites show within weeks; inclusion body disease can sit silent for months to years.", source: "reptile-quarantine-guide" },
@@ -57,7 +61,7 @@ export const snakeGuides = [
       vetLine: "A reptile-experienced vet, found before you need one. Respiratory infection needs vet-prescribed antibiotics, not a wait-and-see approach, and left untreated it can progress to pneumonia and become fatal.",
     },
     routes: [
-      { slug: "ball-python-cost-guide", line: "$40 to $100 for a standard snake, $510 to $1,245 for the setup, $290 to $635 a year after that, and what a sick visit really costs." },
+      { slug: "ball-python-cost-guide", line: "$40 to $100 for a standard snake, $510 to $1,245 for the setup, %%annual:ball-python%% a year after that, and what a sick visit really costs." },
       { slug: "ball-python-tank-setup-guide", line: "The 4x2x2 standard, the temperature gradient, why PVC beats glass, and the humidity range that decides how this goes." },
       { slug: "ball-python-feeding-guide", line: "Schedule by age, prey size and type, how to thaw and warm a rodent properly, and the honest list of reasons one stops eating." },
       { slug: "ball-python-handling-guide", line: "The settling-in weeks, the two timing rules around feeding and shed, how to support the body, and the stress signs." },
@@ -203,7 +207,7 @@ export const snakeGuides = [
         { label: "Living alone", value: "It eats other snakes in the wild, rattlesnakes included, and the instinct stays on in captivity. Never with, or in contact with, another snake.", source: "california-kingsnake-handling-guide" },
         { label: "Floor space and cover", value: "An enclosure longer than the snake is the one change with a preference test behind it, and cork tubes, leaf litter, and clutter make the snake cross it. A shed from another enclosure or prey dragged across the substrate gives a colubrid something to investigate.", source: "california-kingsnake-enrichment-guide" },
         { label: "Shed trouble", value: "Retained skin from humidity running low, managed at home with a humid hide of damp sphagnum.", source: "california-kingsnake-health-issues-guide" },
-        { label: "Budget", value: "$45 to $300 for the snake, $200 to $500 for the setup, then roughly $15 to $30 a month. A routine exam is $50 to $135; an emergency starts around $150 and can reach $500.", source: "california-kingsnake-cost-guide" },
+        { label: "Budget", value: "%%animal:california-kingsnake%% for the snake, %%setup:california-kingsnake%% for the setup, then roughly %%monthly:california-kingsnake%% a month. A routine exam is $50 to $135; an emergency starts around $150 and can reach $500.", source: "california-kingsnake-cost-guide" },
         { label: "Adult size", value: "2.5 to 4 feet (75 to 120 cm)." },
         { label: "Lifespan", value: "20 years or more with good care; the captive record is 33.3 years.", source: "california-kingsnake-cost-guide" },
         { label: "Where it is banned", value: "Hawaii bans all snakes and West Virginia bans its native kingsnakes. New Jersey and Delaware require a permit, and Oregon and Nevada write their rules around the snake's color pattern rather than its species.", source: "kingsnake-legal-guide" },
@@ -222,7 +226,7 @@ export const snakeGuides = [
       vetLine: "Early cases of respiratory infection sometimes resolve once parameters are corrected, advanced cases need a vet for antibiotics. Mouth rot: always see a vet, this can become life-threatening if untreated. Mites can become genuinely life-threatening if left unaddressed, and treatment needs to cover both the snake and a full enclosure cleaning. The vast majority of health problems in captive kingsnakes trace directly to incorrect temperatures, inadequate humidity, dirty conditions, or improper feeding, not genetic susceptibility.",
     },
     routes: [
-      { slug: "california-kingsnake-cost-guide", line: "$45 to $300 for the snake, $200 to $500 for the setup, $15 to $30 a month, and the one cost consideration that isn't about money." },
+      { slug: "california-kingsnake-cost-guide", line: "%%animal:california-kingsnake%% for the snake, %%setup:california-kingsnake%% for the setup, %%monthly:california-kingsnake%% a month, and the one cost consideration that isn't about money." },
       { slug: "california-kingsnake-tank-setup-guide", line: "The 48x24x24 adult enclosure, the temperature and humidity targets, substrate, feeding, and the two security rules this species carries." },
       { slug: "california-kingsnake-feeding-guide", line: "Prey as wide as the thickest point, every 5 to 7 days young and 10 to 14 as an adult, never live, and one snake per feeding." },
       { slug: "california-kingsnake-handling-guide", line: "Session lengths, the timing rules around feeding and shedding, the five fear signals, and why this snake must live alone." },
@@ -280,7 +284,7 @@ export const snakeGuides = [
         { label: "Feeding schedule", value: "Hatchlings under about 3 months eat every 5 to 7 days, working down to every 14 to 21 days for a fully mature adult. Size prey at roughly 1 to 1.5 times the width of the snake's body at its widest point.", source: "corn-snake-feeding-guide" },
         { label: "Not eating", value: "A healthy adult can physically survive roughly 2 to 3 months without food thanks to a slow reptile metabolism. A hatchling going without food for over about a week is already worth taking seriously and may need veterinary attention.", source: "corn-snake-feeding-guide" },
         { label: "Handling", value: "Give it time to acclimate and eat successfully 3 to 4 times, roughly one to two weeks at minimum, before handling. Then 5 or 10 minute sessions a couple of times a week, building up gradually. Wait 48 to 72 hours after feeding and skip handling during a shed.", source: "corn-snake-handling-guide" },
-        { label: "Budget", value: "$250 to $600 to set up, up to $1,150 fully equipped. Most owners land around $200 to $500 a year. An initial vet exam runs $50 to $160.", source: "corn-snake-cost-guide" },
+        { label: "Budget", value: "%%setup:corn-snake%% to set up. Most owners land around %%annual:corn-snake%% a year. An initial vet exam runs $50 to $160.", source: "corn-snake-cost-guide" },
         { label: "Adult size", value: "3.5 to 5 feet." },
         { label: "Lifespan", value: "10 to 15 years is common in captivity, a well-kept snake can pass 20, and the oldest on record reached 32.", source: "corn-snake-cost-guide" },
         { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the snake out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
@@ -300,7 +304,7 @@ export const snakeGuides = [
       vetLine: "A reptile-experienced vet, found through the Association of Reptile and Amphibian Veterinarians before you need one. Get a new corn snake checked within the first few weeks of ownership, then an annual wellness exam with a fecal test after that.",
     },
     routes: [
-      { slug: "corn-snake-cost-guide", line: "$25 to $70 for the snake, $250 to $600 for the setup, $200 to $500 a year, and what it costs over a two-decade lifespan." },
+      { slug: "corn-snake-cost-guide", line: "%%animal:corn-snake%% for the snake, %%setup:corn-snake%% for the setup, %%annual:corn-snake%% a year, and what it costs over a two-decade lifespan." },
       { slug: "corn-snake-tank-setup-guide", line: "The 40-gallon breeder minimum, the one non-negotiable thermostat rule, and the genuine humidity disagreement worth knowing about." },
       { slug: "corn-snake-feeding-guide", line: "Every 5 to 7 days as a hatchling to every 14 to 21 as an adult, why frozen-thawed beats live, and the reasons one goes off food, from shed to brumation." },
       { slug: "corn-snake-handling-guide", line: "Settling-in time, the two-handed support, the timing rules around feeding and shedding, and the stress signs." },
@@ -371,7 +375,7 @@ export const snakeGuides = [
         { label: "Bites", value: "A distant second choice, and a light pinch when they happen. Soap and water.", source: "garter-snake-handling-guide" },
         { label: "Enrichment", value: "A garter needs somewhere to search: dense low planting, leaf litter, varied ground texture, and prey scattered in a different place each time.", source: "garter-snake-enrichment-guide" },
         { label: "Weight checks", value: "Weigh monthly while growing. A rounded loaf in cross-section is right; a triangle with a ridge down the spine is underweight.", source: "snake-sexing-growth-body-condition-guide" },
-        { label: "Budget", value: "$20 to $50 for a wild-type, $150 to $350 for an albino. Setup roughly $200 to $400. A routine exam is $50 to $100, a fecal test $25 to $50.", source: "garter-snake-cost-guide" },
+        { label: "Budget", value: "%%animal:garter-snake%% for a wild-type, $150 to $350 for an albino. Setup roughly %%setup:garter-snake%%. A routine exam is $50 to $100, a fecal test $25 to $50.", source: "garter-snake-cost-guide" },
         { label: "Adult size", value: "18 to 26 inches (46 to 66 cm) typical; large females occasionally exceed 3.5 feet (107+ cm)." },
         { label: "Lifespan", value: "6 to 10 years in captivity, documented past 20, against 2 to 4 in the wild.", source: "garter-snake-cost-guide" },
         { label: "Hygiene", value: "Wash hands with soap after any contact with the snake, its enclosure, or its water, and never clean any of it in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
@@ -389,7 +393,7 @@ export const snakeGuides = [
       vetLine: "A veterinary fecal exam is genuinely worth prioritizing for this species, for any newly acquired garter snake and periodically after that, rather than treating it as optional. Earthworms, fish, and any wild-caught prey are more likely to introduce internal parasites than a diet of commercially bred frozen rodents, and that is especially true for a wild-caught snake, which may already be carrying a parasite load picked up before it was ever your pet.",
     },
     routes: [
-      { slug: "garter-snake-cost-guide", line: "$20 to $50 for a normal and up past $350 for a morph, the $200 to $400 setup, and why a free wild-caught snake still costs the same to keep." },
+      { slug: "garter-snake-cost-guide", line: "%%animal:garter-snake%% for a normal and up past $350 for a morph, the %%setup:garter-snake%% setup, and why a free wild-caught snake still costs the same to keep." },
       { slug: "garter-snake-tank-setup-guide", line: "The 36x18x18 minimum, a water feature sized to swim in rather than sip from, the thermostat with zero exceptions, and the lid that has to latch." },
       { slug: "garter-snake-feeding-guide", line: "Why a real share of garter snakes never take a mouse, the frequency table by diet type, and the thiaminase problem behind the cheapest feeder fish." },
       { slug: "garter-snake-handling-guide", line: "Musk before bite and what a 2014 field study found about which snakes do it, the rear-fanged question answered honestly, and a settling-in timeline." },
@@ -412,7 +416,7 @@ export const snakeGuides = [
       "Earthworms",
       "Vitamin B1 supplement, for a fish-heavy diet",
       "Feeding tongs",
-      "A kitchen scale",
+      "Kitchen scale that reads in grams",
     ],
     faqs: [
       { q: "Why do some garter snakes refuse to eat mice?", a: "Garter snake populations split into rough dietary groups, fish and amphibian specialists, worm and slug specialists, and generalists, and that specialization is real enough that some individuals will refuse even a mouse scented with fish to disguise it, for their entire lives. New keepers who assume every snake eventually 'converts' to convenient frozen mice are often caught off guard. Plan for fish and earthworms as the default expectation, not a fallback." },
@@ -462,7 +466,7 @@ export const snakeGuides = [
         { label: "Weight checks", value: "Weigh weekly on a gram scale and keep a record of weight, meals, sheds and behavior. A sudden drop is the first thing to show a vet.", source: "hognose-snake-health-issues-guide" },
         { label: "Handling", value: "Bites are rare and are feeding responses, so wash hands first and never handle right after a meal. Stay calm through the hood-and-hiss display rather than dropping the snake.", source: "hognose-snake-handling-guide" },
         { label: "Venom", value: "Rear-fanged and mildly venomous. Bites are uncommon and stay local: a quick bite often does nothing, while a snake that holds on or chews can cause marked swelling and bruising.", source: "hognose-snake-handling-guide" },
-        { label: "Budget", value: "$50 to $100 for a wild-type, $390 to $850 for the setup, $465 to $1,000 with the first vet exam and fecal test, then $235 to $390 a year, about $15 to $35 a month. A routine exam is $50 to $100, a fecal test $25 to $50.", source: "hognose-snake-cost-guide" },
+        { label: "Budget", value: "$50 to $100 for a wild-type, $390 to $850 for the setup, %%setup:hognose-snake%% with the first vet exam and fecal test, then %%annual:hognose-snake%% a year, about $15 to $35 a month. A routine exam is $50 to $100, a fecal test $25 to $50.", source: "hognose-snake-cost-guide" },
         { label: "Lifespan", value: "10 to 15 years, 15 to 20 achievable.", source: "hognose-snake-cost-guide" },
         { label: "Adult size", value: "14 to 46 inches (36 to 117 cm) across the species; western hognoses, the usual pet, run 14 to 37 inches." },
         { label: "Power outage", value: "Room temperature is a normal night, down to 60°F. Below 60°F, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
@@ -479,7 +483,7 @@ export const snakeGuides = [
       vetLine: "A reptile-experienced vet, found before you need one. A respiratory infection always needs a vet, since it needs antibiotics and won't resolve on its own. With impaction there is no fixed number of days: a missed stool with bloating, lethargy or refused food needs a vet, and severe cases sometimes require surgery.",
     },
     routes: [
-      { slug: "hognose-snake-cost-guide", line: "What the snake costs by morph, the $390 to $850 setup, $235 to $390 a year after that, and what vet visits run." },
+      { slug: "hognose-snake-cost-guide", line: "What the snake costs by morph, the $390 to $850 setup, %%annual:hognose-snake%% a year after that, and what vet visits run." },
       { slug: "hognose-snake-tank-setup-guide", line: "Enclosure size split by sex, the temperature gradient, the dry humidity range, and the deep substrate this species digs into." },
       { slug: "hognose-snake-handling-guide", line: "The puff adder act, the death-feigning routine, what documented bites actually involve, and when bites happen." },
       { slug: "hognose-snake-health-issues-guide", line: "Respiratory infection, impaction, obesity and fatty liver, scale rot, and parasites, with the cause behind each." },
@@ -688,4 +692,4 @@ export const snakeGuides = [
       { q: "What causes respiratory infection in rosy boas?", a: "Almost always humidity running too high, the reverse of the usual snake-care warning. Watch for audible or open-mouth breathing, mucus around the nostrils, wheezing or popping sounds, and lethargy. This needs veterinary care and antibiotics, correcting the humidity alone isn't enough once an infection has set in, though it's essential to prevent a recurrence." },
     ],
   },
-];
+]);

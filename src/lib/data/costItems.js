@@ -1013,6 +1013,206 @@ export const COST_ITEMS = {
     spec: "3.3 oz",
     low: 10, high: 15, product: "reptile-multivitamin-repcal-herptivite", checked: '2026-10',
   },
+  'ball-python-enclosure-4x2x2-ft-adult': {
+    label: "Enclosure (4x2x2 ft for an adult; check the dimensions before you buy)",
+    spec: "",
+    low: 100, high: 450, product: "pvc-enclosure-4x2x2", checked: '2026-10',
+  },
+  'ball-python-heat-source-80-w': {
+    label: "Heat source: an 80 W radiant heat panel, or heat tape, an under-tank heater or a ceramic heat emitter",
+    spec: "",
+    low: 30, high: 95, product: "radiant-heat-panel-reptile-basics-80w", checked: '2026-10',
+  },
+  'ball-python-thermostat-one-every-heat': {
+    label: "Thermostat, one for every heat source",
+    spec: "",
+    low: 10, high: 100, product: "thermostat-bn-link-on-off", checked: '2026-10',
+  },
+  'ball-python-thermometers-hygrometer': {
+    label: "Thermometers and hygrometer",
+    spec: "",
+    low: 25, high: 50, product: "digital-thermometer-hygrometer-combo", checked: '2026-10',
+  },
+  'ball-python-substrate-cypress-mulch-coconut': {
+    label: "Substrate (cypress mulch or coconut coir, 3 to 4 inches deep)",
+    spec: "",
+    low: 10, high: 40, product: "cypress-mulch-substrate", checked: '2026-10',
+  },
+  'ball-python-two-snug-hides-one': {
+    label: "Two snug hides, one warm side and one cool side",
+    spec: "",
+    low: 45, high: 70, product: "hide-exo-terra-reptile-cave-xl", checked: '2026-10',
+  },
+  'ball-python-cover-cork-bark-sturdy': {
+    label: "Cover: cork bark, a sturdy branch, leaf litter and plants",
+    spec: "",
+    low: 65, high: 115, product: "cork-bark-round-xl", checked: '2026-10',
+  },
+  'ball-python-plug-timer-lights': {
+    label: "Plug-in timer for the lights",
+    spec: "",
+    low: 5, high: 15, product: "outlet-timer-bn-link-mechanical", checked: '2026-10',
+  },
+  'hognose-snake-36x18x18-enclosure-female-minimum': {
+    label: "36x18x18 in enclosure (female minimum 36x18x16 in; a male needs only 30x13x13 in; check the dimensions before you buy)",
+    spec: "",
+    low: 100, high: 260, product: "enclosure-repti-zoo-36x18x18-50gal", checked: '2026-10',
+  },
+  'hognose-snake-low-wattage-halogen-basking': {
+    label: "Low-wattage halogen basking bulb, 50 W",
+    spec: "",
+    low: 15, high: 25, product: "milk-snake-halogen-bulb-exo-terra-sun-glo-50w", checked: '2026-10',
+  },
+  'hognose-snake-dome-fixture-basking-bulb': {
+    label: "Dome fixture for the basking bulb",
+    spec: "",
+    low: 10, high: 20, product: "basking-dome-fixture", checked: '2026-10',
+  },
+  'hognose-snake-dimming-thermostat-basking-bulb': {
+    label: "Dimming thermostat, for the basking bulb",
+    spec: "",
+    low: 20, high: 35, product: "dimming-thermostat-reptizoo-pid", checked: '2026-10',
+  },
+  'hognose-snake-aspen-coconut-fiber-substrate': {
+    label: "Aspen or coconut fiber substrate (deep substrate can take more than one bag)",
+    spec: "",
+    low: 15, high: 35, product: "aspen-shavings-substrate", checked: '2026-10',
+  },
+  'hognose-snake-reptile-sand-burrowing-mix': {
+    label: "Reptile sand for the burrowing mix",
+    spec: "",
+    low: 5, high: 15, product: "substrate-zoo-med-reptisand-burrowing", checked: '2026-10',
+  },
+  'hognose-snake-warm-cool-humid-hides': {
+    label: "Warm, cool, and humid hides",
+    spec: "",
+    low: 15, high: 85, product: "cork-bark-round-hide", checked: '2026-10',
+  },
+  'hognose-snake-branches-cover': {
+    label: "Branches for cover",
+    spec: "",
+    low: 10, high: 30, product: "climbing-branch-mopani-wood", checked: '2026-10',
+  },
+  'hognose-snake-leaf-litter-surface-cover': {
+    label: "Leaf litter for surface cover",
+    spec: "",
+    low: 10, high: 20, product: "leaf-litter-joshs-frogs-magnolia", checked: '2026-10',
+  },
+  'hognose-snake-water-dish-big-enough': {
+    label: "Water dish big enough for the snake to get into",
+    spec: "",
+    low: 5, high: 30, product: "large-soakable-water-dish", checked: '2026-10',
+  },
+  'hognose-snake-lidded-plastic-tub-feeding': {
+    label: "Lidded plastic tub for feeding off the substrate",
+    spec: "",
+    low: 10, high: 10, product: "storage-tub-sterilite-32qt-latching", checked: '2026-10',
+  },
+  'hognose-snake-snake-hook': {
+    label: "Snake hook",
+    spec: "",
+    low: 5, high: 15, product: null, checked: '2026-10',
+  },
+  'hognose-snake-kitchen-scale-grams': {
+    label: "Kitchen scale in grams",
+    spec: "",
+    low: 10, high: 20, product: "gram-scale-etekcity-kitchen", checked: '2026-10',
+  },
+  'hognose-snake-optional-low-output-t5': {
+    label: "Optional low-output T5 UVB fixture about two-thirds the enclosure length, 5.0 or 6% tube included",
+    spec: "",
+    low: 85, high: 100, product: "uvb-arcadia-forest-6-22in-24w", checked: '2026-10',
+  },
+  'hognose-snake-optional-night-heat-only': {
+    label: "Optional night heat, only if the room drops below 60\u00b0F: heat mat and on/off thermostat",
+    spec: "",
+    low: 25, high: 40, product: "under-tank-heat-mat-thermostat-kit", checked: '2026-10',
+  },
+  'california-kingsnake-48x24x24-inch-front-opening': {
+    label: "48x24x24 inch front-opening enclosure",
+    spec: "",
+    low: 280, high: 360, product: "milk-snake-vivarium-wooden-48x24x24", checked: '2026-10',
+  },
+  'california-kingsnake-cork-bark-hides': {
+    label: "Cork bark hides",
+    spec: "",
+    low: 20, high: 60, product: "cork-bark-round-hide", checked: '2026-10',
+  },
+  'corn-snake-enclosure-40-gal-breeder': {
+    label: "Enclosure (40 gal breeder / 4x2x2 ft PVC)",
+    spec: "",
+    low: 80, high: 400, product: "tank-aqueon-40-breeder", checked: '2026-10',
+  },
+  'corn-snake-thermostat': {
+    label: "Thermostat",
+    spec: "",
+    low: 25, high: 100, product: "dimming-thermostat-pt02t", checked: '2026-10',
+  },
+  'corn-snake-hides-two': {
+    label: "Hides (at least two)",
+    spec: "",
+    low: 10, high: 40, product: "cork-bark-round-hide", checked: '2026-10',
+  },
+  'corn-snake-water-bowl-decor': {
+    label: "Water bowl and decor",
+    spec: "",
+    low: 15, high: 70, product: "large-soakable-water-dish", checked: '2026-10',
+  },
+  'corn-snake-optional-uvb-setup': {
+    label: "Optional T5 HO UVB, 5.0 or 6%",
+    spec: "",
+    low: 50, high: 150, product: "uvb-arcadia-forest-6", checked: '2026-10',
+  },
+  'garter-snake-36x18x18-40-gallon-breeder': {
+    label: "36x18x18 in or 40-gallon breeder enclosure",
+    spec: "",
+    low: 120, high: 260, product: "enclosure-repti-zoo-36x18x18-50gal", checked: '2026-10',
+  },
+  'garter-snake-under-tank-heater-thermostat': {
+    label: "Under-tank heater + thermostat",
+    spec: "",
+    low: 25, high: 70, product: "under-tank-heat-mat-thermostat-kit", checked: '2026-10',
+  },
+  'garter-snake-warm-cool-humid-hides': {
+    label: "Warm, cool, and humid hides",
+    spec: "",
+    low: 15, high: 30, product: null, checked: '2026-10',
+  },
+  'garter-snake-substrate-coconut-fiber-cypress': {
+    label: "Substrate (coconut fiber, cypress mulch, or leaf litter)",
+    spec: "",
+    low: 10, high: 25, product: "cypress-mulch-substrate", checked: '2026-10',
+  },
+  'heat-mat-thermostat-kit': {
+    label: "Under-tank heat mat and thermostat kit",
+    spec: "",
+    low: 25, high: 40, product: "under-tank-heat-mat-thermostat-kit", checked: '2026-10',
+  },
+  'aspen-shavings': {
+    label: "Aspen shavings substrate",
+    spec: "",
+    low: 20, high: 35, product: "aspen-shavings-substrate", checked: '2026-10',
+  },
+  'sphagnum-moss': {
+    label: "Sphagnum moss for a humid hide",
+    spec: "",
+    low: 5, high: 15, product: "sphagnum-moss", checked: '2026-10',
+  },
+  'water-conditioner': {
+    label: "Water conditioner",
+    spec: "",
+    low: 5, high: 15, product: "water-conditioner", checked: '2026-10',
+  },
+  'branch-mopani': {
+    label: "Climbing branch",
+    spec: "mopani wood",
+    low: 15, high: 30, product: "climbing-branch-mopani-wood", checked: '2026-10',
+  },
+  'water-dish-large-soakable2': {
+    label: "Large water dish it can soak in",
+    spec: "",
+    low: 15, high: 30, product: "large-soakable-water-dish", checked: '2026-10',
+  },
   'uv-index-meter': {
     label: 'UV index meter',
     spec: 'Solarmeter 6.5R',

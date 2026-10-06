@@ -46,8 +46,8 @@ never invented. Where no price exists, say so and ask the owner.
 | Crested gecko | ✅ 2026-10-06 | ☐ | Site: moved onto the shared price list with every figure unchanged ($890 to $1,800). |
 | Gargoyle gecko | ✅ 2026-10-06 | ☐ | Site: moved onto the shared price list with every figure unchanged ($385 to $780). |
 | African fat-tailed gecko | ✅ 2026-10-06 | ☐ | Found in the 1.1 light pass: the cost guide heading and prose say setup $325 to $580 but its table sums to $369 to $579 (the book uses the table); the description line says "$75-1,000+" while the body says $75 to $600. Site: moved onto the shared price list with every figure unchanged ($585 to $1,050 with the first exam, $485 to $835 for the gear). |
-| Ball python | ☐ | ☐ | |
-| Hognose snake | ☐ | ☐ | |
+| Ball python | ✅ 2026-10-06 | ☐ | Site: moved onto the shared price list with every figure unchanged ($560 to $1,395). |
+| Hognose snake | ✅ 2026-10-06 | ☐ | Site: moved onto the shared price list with every figure unchanged ($465 to $1,000). |
 | Russian tortoise | ☐ | ☐ | |
 | Axolotl | ☐ | ☐ | |
 | White's tree frog | ☐ | ☐ | |
@@ -67,13 +67,13 @@ Same checks 1 to 6. A change here touches the guide and the hub only.
 | Boa constrictor | ☐ |
 | Box turtle | ☐ |
 | Bristlenose pleco | ☐ |
-| California kingsnake | ☐ |
+| California kingsnake | ✅ 2026-10-06, shared price list: setup $380 to $575 (was roughly $200 to $500 stated, $354 to $506 in rows). Linked the hub's 48x24x24 wooden vivarium, heat mat and thermostat kit, aspen, cork hides and soakable dish; added a sphagnum humid hide, thermometer and hygrometer, tongs. |
 | Canary | ✅ 2026-10-06, shared price list: setup $285 to $460 (was roughly $195 to $345, four rows). Added the must-haves the hub lists: first pellets and egg food (Amazon $13.64 for the Higgins 3 pack), cage cover, gram scale, carrier; cuttlebone now the single 5 in piece; the two-cage line no longer states a figure. Prevue F040 flight cage confirmed 31 x 20.5 in, 1/2 in bars. |
 | Cardinal tetra | ☐ |
 | Cherry shrimp | ☐ |
 | Chinchilla | ☐ |
 | Conure | ✅ 2026-10-06, shared price list: setup $315 to $530 before the bird (was roughly $230 to $470). The bird row left the setup table. The bundled dishes, bottle, cover, food and cuttlebone row split into dishes, cage cover, cuttlebone and first pellets; gram scale and carrier added; UVB on the shared avian kit item. Unlinked as wrong or below spec: the sugar glider pouch used as a bird tent (cost, setup and health guides; its "Snuggle pouch or bird tent" covers string removed) and the parakeet perch set. No gear available: a 24x24x30 cage with 1/2 to 5/8 in bars (the F040 is 20.5 in deep), conure perches, a bird tent. |
-| Corn snake | ☐ |
+| Corn snake | ✅ 2026-10-06, shared price list: setup $190 to $720 for a solid basic setup (was "roughly $250 to $600, up to $1,150 fully equipped"). The snake and the first exam left the setup table (the exam stays in the prose, $50 to $160); the optional UVB moved to extras with climbing branches. Rows link the heat mat kit, PT02T thermostat, aspen, cork hide, soakable bowl, thermometer and hygrometer; tongs added. The ten-year line no longer states a sum that could drift. |
 | Corydoras catfish | ☐ |
 | Degu | ☐ |
 | Discus | ☐ |
@@ -82,7 +82,7 @@ Same checks 1 to 6. A change here touches the guide and the hub only.
 | Fire-bellied toad | ☐ |
 | Fire skink | ✅ 2026-10-06, shared price list: setup $480 to $680 (was roughly $554 to $627). Linked the 36x18x18 enclosure, the 36 in 6% UVB kit and the PT02T dimming thermostat the text names; added calcium with D3, multivitamin, tongs; the prose thermostat link dropped (one link per product, the table keeps it). |
 | Flying squirrel | ☐ |
-| Garter snake | ☐ |
+| Garter snake | ✅ 2026-10-06, shared price list: setup $215 to $480 (was roughly $200 to $400). Heat mat kit, soakable basin, thermometer and hygrometer linked; added water conditioner, tongs, kitchen scale. No gear available: a vitamin B1 supplement for a fish-heavy diet, a latching lid. |
 | Gerbil | ☐ |
 | Ghost shrimp | ☐ |
 | Giant millipede | ☐ |
