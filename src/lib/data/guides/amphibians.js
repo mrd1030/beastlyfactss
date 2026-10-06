@@ -1,4 +1,8 @@
-export const amphibianGuides = [
+// Cost figures in these entries are %%placeholders%% filled from the master
+// price list (src/lib/costs.js); never type a cost guide total here.
+import { fillCostTokens } from '../../costs.js';
+
+export const amphibianGuides = fillCostTokens([
   {
     id: "axolotl",
     name: "Axolotl",
@@ -32,7 +36,7 @@ export const amphibianGuides = [
         { label: "Diet", value: "Earthworms or nightcrawlers as the gold-standard staple, paired with a quality sinking pellet formulated for axolotls. Size each meal to roughly the axolotl's head, remove anything uneaten after 15 to 30 minutes.", source: "axolotl-feeding-guide" },
         { label: "Handling", value: "Minimal, reserved for genuine necessity. Guide it into a submerged container rather than lifting it out by hand or using a net, and keep it in water at all times.", source: "axolotl-handling-guide" },
         { label: "Not eating / floating", value: "See a vet promptly for fungal growth that hasn't improved within 48 hours of correcting water quality, suspected impaction, red streaking or open wounds, or appetite loss lasting 5 days or more.", source: "axolotl-health-issues-guide" },
-        { label: "Budget", value: "$30 to $100 for the axolotl itself, $185 to $530 for a basic setup or $335 to $1,180 with a chiller, and $15 to $45 a month after that.", source: "axolotl-cost-guide" },
+        { label: "Budget", value: "%%animal:axolotl%% for the axolotl itself, %%setup:axolotl%% for a basic setup or %%full:axolotl%% with a chiller, and %%monthly:axolotl%% a month after that.", source: "axolotl-cost-guide" },
         { label: "Adult size", value: "9 to 12 inches." },
         { label: "Lifespan", value: "10 to 15 years typical in captivity." },
         { label: "Quarantine", value: "6 to 8 weeks per general veterinary guidance, landing closer to the 8-week end than the shortest end. The clock resets, not just pauses, if the animal shows illness partway through.", source: "amphibian-quarantine-and-water-guide" },
@@ -50,7 +54,7 @@ export const amphibianGuides = [
       vetLine: "An aquatic or exotic-amphibian vet, found before you need one. General small-animal clinics often aren't equipped for this species.",
     },
     routes: [
-      { slug: "axolotl-cost-guide", line: "The axolotl itself $30 to $100, $185 to $530 to set up or $335 to $1,180 with a chiller, $15 to $45 a month, and why the chiller can double your setup cost." },
+      { slug: "axolotl-cost-guide", line: "The axolotl itself %%animal:axolotl%%, %%setup:axolotl%% to set up or %%full:axolotl%% with a chiller, %%monthly:axolotl%% a month, and why the chiller can double your setup cost." },
       { slug: "axolotl-tank-setup-guide", line: "Cold water 60 to 64°F, no gravel ever, low-flow filtration, and the water parameters that matter." },
       { slug: "axolotl-feeding-guide", line: "Schedule by life stage, the gold-standard nightcrawler diet, and why gravel is the mistake that sends axolotls to surgery." },
       { slug: "axolotl-handling-guide", line: "Why hands-off is the default, the submerged-container method, and drip-matching a new arrival in without touching it." },
@@ -118,7 +122,7 @@ export const amphibianGuides = [
         { label: "What you will see", value: "Diurnal and busy, moving between land and water all day. In the water they preferred artificial plants over PVC pipes by around 40 percent, and both over open space.", source: "fire-bellied-toad-enrichment-guide" },
         { label: "Red leg syndrome", value: "Reddening on the underside and legs, lethargy, and sores, from dirty water. Fast and frequently fatal without antibiotics.", source: "fire-bellied-toad-health-issues-guide" },
         { label: "Wild-caught stock", value: "Most in the trade are wild-caught, which is why a fecal exam for any new toad is worth doing.", source: "fire-bellied-toad-health-issues-guide" },
-        { label: "Budget", value: "$10 to $25 for a standard toad, $100 or more for an albino. Setup roughly $35 to $90 before plants and hides, then $15 to $30 a month. An exam runs $50 to $135, an emergency from $150 to $300.", source: "fire-bellied-toad-cost-guide" },
+        { label: "Budget", value: "%%animal:fire-bellied-toad%% for a standard toad, $100 or more for an albino. Setup roughly %%setup:fire-bellied-toad%% before plants, then %%monthly:fire-bellied-toad%% a month. An exam runs $50 to $135, an emergency from $150 to $300.", source: "fire-bellied-toad-cost-guide" },
         { label: "Lifespan", value: "10 to 15 years to plan around, with 20 recorded and a maximum of 30.", source: "fire-bellied-toad-cost-guide" },
         { label: "Adult size", value: "1.5 to 2 inches (4 to 5 cm)." },
         { label: "Quarantine", value: "Six to eight weeks for a new amphibian; zoos run a 30-day minimum with 60 preferred.", source: "amphibian-quarantine-and-water-guide" },
@@ -136,7 +140,7 @@ export const amphibianGuides = [
       vetLine: "Mild swelling tied specifically to water chemistry issues sometimes improves once the water is properly conditioned and cleaned, worth ruling out before assuming a more serious cause. For a newly acquired toad, a vet fecal exam is genuinely worth doing: parasite loads carried in from the wild are common in this species' trade.",
     },
     routes: [
-      { slug: "fire-bellied-toad-cost-guide", line: "The toad at $10 to $25, what the paludarium actually costs to build, the monthly run rate, and a lifespan with a documented ceiling of 30 years." },
+      { slug: "fire-bellied-toad-cost-guide", line: "The toad at %%animal:fire-bellied-toad%%, what the paludarium actually costs to build, the monthly run rate, and a lifespan with a documented ceiling of 30 years." },
       { slug: "fire-bellied-toad-tank-setup-guide", line: "The half-land half-water build, water quality as the whole game, temperature, substrate, lighting, and diet basics." },
       { slug: "fire-bellied-toad-feeding-guide", line: "Live prey it leaps for, two to six items every two to three days, no wider than the head, calcium every feeding, and no hard-shelled feeders." },
       { slug: "fire-bellied-toad-handling-guide", line: "The staged warning display, which toxin this animal actually has, and why it is a minimal-handling, single-species animal." },
@@ -198,7 +202,7 @@ export const amphibianGuides = [
         { label: "Buried and motionless", value: "For days at a time is not under-stimulated, it is hunting.", source: "pacman-frog-enrichment-guide" },
         { label: "Handling", value: "Brief and infrequent, supported from underneath or held around the base of the rear legs, ready for a jump, with hands washed before and after.", source: "pacman-frog-handling-guide" },
         { label: "Off food", value: "Fine while active, alert, hydrated, with normal feces and stable weight. Weigh weekly; about 10% loss over a couple of weeks is the signal to act.", source: "pacman-frog-feeding-guide" },
-        { label: "Budget", value: "$15 to $100 for the frog, $100 to $225 for the setup, roughly $115 to $325 all in. An exam is $50 to $150, an exotic emergency fee from around $250.", source: "pacman-frog-cost-guide" },
+        { label: "Budget", value: "%%animal:pacman-frog%% for the frog, %%setup:pacman-frog%% for the setup. An exam is $50 to $150, an exotic emergency fee from around $250.", source: "pacman-frog-cost-guide" },
         { label: "Adult size", value: "4 to 7 inches, females close to double a male's mass.", source: "pacman-frog-handling-guide" },
         { label: "Lifespan", value: "6 to 10 years, 10 to 15 achievable.", source: "pacman-frog-cost-guide" },
         { label: "Quarantine", value: "6 to 8 weeks, and the clock resets if illness shows partway. A new amphibian moves in a container, never a net.", source: "amphibian-quarantine-and-water-guide" },
@@ -218,7 +222,7 @@ export const amphibianGuides = [
       vetLine: "An exotic or amphibian-experienced vet, found before you need one. Severe swelling with an inability to right itself needs immediate veterinary attention rather than a wait-and-see approach.",
     },
     routes: [
-      { slug: "pacman-frog-cost-guide", line: "The frog $15 to $100, the modest setup this species actually needs, and the vet bill that impaction brings." },
+      { slug: "pacman-frog-cost-guide", line: "The frog %%animal:pacman-frog%%, the modest setup this species actually needs, and the vet bill that impaction brings." },
       { slug: "pacman-frog-tank-setup-guide", line: "Enclosure size, 75 to 85°F days, 60 to 80% humidity, and why the heat mat never goes underneath." },
       { slug: "pacman-frog-feeding-guide", line: "Portion control over schedule, prey no wider than the head, the foods to avoid, and when a long fast is normal and when it needs a vet." },
       { slug: "pacman-frog-handling-guide", line: "Why this is a display animal, how to pick one up on the rare occasion you must, and sexing a mature frog." },
@@ -367,7 +371,7 @@ export const amphibianGuides = [
         { label: "Obesity check", value: "Fat bulging over the tympanum and in the armpits, not general roundness, is the line between the natural dumpy look and a problem.", source: "whites-tree-frog-health-issues-guide" },
         { label: "Handling", value: "Short and infrequent, with hands washed in plain water only, no soap, or in wet powder-free vinyl gloves (nitrile second, never latex).", source: "whites-tree-frog-handling-guide" },
         { label: "Cover", value: "Broad-leaved live plants at several heights so it can sit supported and unseen; artificial ones fill the dense parts but do not do the humidity. Always immediately visible means not enough in there.", source: "whites-tree-frog-enrichment-guide" },
-        { label: "Budget", value: "$20 to $60 for the frog, $305 to $595 for the setup, $355 to $745 with the first vet exam, then $150 to $245 a year in supplies, about $10 to $25 a month. An exam runs $50 to $150, an exotic emergency fee from around $250.", source: "whites-tree-frog-cost-guide" },
+        { label: "Budget", value: "%%animal:whites-tree-frog%% for the frog, %%gear:whites-tree-frog%% for the setup, %%setup:whites-tree-frog%% with the first vet exam, then %%annual:whites-tree-frog%% a year in supplies, about $10 to $25 a month. An exam runs $50 to $150, an exotic emergency fee from around $250.", source: "whites-tree-frog-cost-guide" },
         { label: "Lifespan", value: "About 16 years on average, one recorded at 21; conservative figures say 10 to 15-plus.", source: "whites-tree-frog-cost-guide" },
         { label: "Adult size", value: "3 to 4.5 inches (7 to 11 cm)." },
         { label: "Quarantine", value: "Six to eight weeks, resetting if illness shows partway. Zoos run a 30-day minimum with 60 preferred.", source: "amphibian-quarantine-and-water-guide" },
@@ -387,7 +391,7 @@ export const amphibianGuides = [
       vetLine: "An amphibian-experienced vet, found before you need one. Amphibian medicine has real limits, and husbandry does more than treatment ever will.",
     },
     routes: [
-      { slug: "whites-tree-frog-cost-guide", line: "The frog at $20 to $60, a $305 to $595 setup, $150 to $245 a year in supplies after that, and what a 16-year average lifespan does to the budget." },
+      { slug: "whites-tree-frog-cost-guide", line: "The frog at %%animal:whites-tree-frog%%, %%gear:whites-tree-frog%% for the setup, %%annual:whites-tree-frog%% a year in supplies after that, and what a 16-year average lifespan does to the budget." },
       { slug: "whites-tree-frog-tank-setup-guide", line: "The 18x18x24 minimum, the temperature gradient, the humidity that dips instead of sitting high, substrate, UVB, and the water that is safe to mist with." },
       { slug: "whites-tree-frog-handling-guide", line: "Why plain water beats soap, when gloves are the safer option, how long a session runs, and why the risk points at the frog rather than at you." },
       { slug: "whites-tree-frog-health-issues-guide", line: "Obesity as the signature risk, chytridiomycosis, red-leg syndrome, bacterial and skin infections, metabolic bone disease, and the husbandry pattern behind all of them." },
@@ -419,4 +423,4 @@ export const amphibianGuides = [
       { q: "Is it safe to handle a White's tree frog?", a: "Yes, more so than the great majority of frog and toad species kept as pets. They're docile, slow-moving, and tolerate handling well once they're used to it. The risk isn't the frog hurting you, it's accidentally harming the frog through chemical exposure on your hands." },
     ],
   },
-];
+]);

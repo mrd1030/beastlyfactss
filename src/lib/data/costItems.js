@@ -1363,6 +1363,121 @@ export const COST_ITEMS = {
     spec: "",
     low: 200, high: 1000, product: null, checked: '2026-10',
   },
+  'axolotl-tank-20-gallon-long': {
+    label: "Tank, 20-gallon long minimum, 40-gallon breeder better",
+    spec: "",
+    low: 50, high: 150, product: "tank-20-gallon-long", checked: '2026-10',
+  },
+  'axolotl-hinged-glass-lid-30': {
+    label: "Hinged glass lid, 30 by 12 in for a 20-gallon long",
+    spec: "",
+    low: 25, high: 40, product: "glass-lid-aqueon-versa-top-30in", checked: '2026-10',
+  },
+  'axolotl-filtration-low-flow-sponge': {
+    label: "Filtration, a low-flow sponge filter, or a canister rated for about 30 gallons with the output through a spray bar",
+    spec: "",
+    low: 20, high: 160, product: "sponge-filter", checked: '2026-10',
+  },
+  'axolotl-substrate-fine-sand-under': {
+    label: "Substrate: fine sand under 1mm, or bare bottom",
+    spec: "",
+    low: 10, high: 25, product: null, checked: '2026-10',
+  },
+  'axolotl-smooth-hide-cave-length': {
+    label: "Smooth hide cave, or a length of PVC pipe",
+    spec: "",
+    low: 10, high: 30, product: "hide-cave-aquarium-decoration", checked: '2026-10',
+  },
+  'axolotl-aquarium-cooling-fan-room': {
+    label: "Aquarium cooling fan, for a room that runs only a little warm",
+    spec: "",
+    low: 20, high: 35, product: "aquarium-chiller-fan-budget", checked: '2026-10',
+  },
+  'axolotl-digital-aquarium-thermometer-water': {
+    label: "Digital aquarium thermometer for the water",
+    spec: "",
+    low: 10, high: 15, product: "paizoo-fish-tank-thermometer", checked: '2026-10',
+  },
+  'axolotl-liquid-water-test-kit': {
+    label: "Liquid water test kit for ammonia, nitrite, nitrate and pH",
+    spec: "",
+    low: 25, high: 40, product: "water-test-kit", checked: '2026-10',
+  },
+  'axolotl-supply-sinking-pellets-formulated': {
+    label: "First supply of sinking pellets formulated for axolotls",
+    spec: "",
+    low: 10, high: 20, product: "soft-pellets-axolotl", checked: '2026-10',
+  },
+  'axolotl-chiller': {
+    label: "Chiller",
+    spec: "",
+    low: 150, high: 650, product: "aquarium-chiller-axolotl", checked: '2026-10',
+  },
+  'whites-tree-frog-artificial-foliage-dense-parts': {
+    label: "Artificial foliage for the dense parts",
+    spec: "",
+    low: 10, high: 20, product: "artificial-terrarium-plants", checked: '2026-10',
+  },
+  'whites-tree-frog-cork-bark-pvc-pipe': {
+    label: "Cork bark and PVC pipe hides",
+    spec: "",
+    low: 15, high: 30, product: "cork-bark-round-hide", checked: '2026-10',
+  },
+  'whites-tree-frog-coarse-orchid-bark-coco': {
+    label: "Coarse orchid bark, coco husk, or a bioactive soil mix",
+    spec: "",
+    low: 25, high: 40, product: "orchid-bark-better-gro-8qt", checked: '2026-10',
+  },
+  'fire-bellied-toad-10-20-gallon-tank': {
+    label: "10 to 20 gallon tank, set up as a paludarium",
+    spec: "",
+    low: 15, high: 40, product: "tank-10-gallon", checked: '2026-10',
+  },
+  'fire-bellied-toad-small-aquarium-filter-water': {
+    label: "Small aquarium filter for the water section",
+    spec: "",
+    low: 5, high: 15, product: "sponge-filter", checked: '2026-10',
+  },
+  'pacman-frog-10-20-gallon-terrarium': {
+    label: "10-20 gallon terrarium",
+    spec: "",
+    low: 40, high: 80, product: null, checked: '2026-10',
+  },
+  'pacman-frog-deep-coconut-fiber-topsoil': {
+    label: "Deep coconut fiber or topsoil substrate",
+    spec: "",
+    low: 15, high: 25, product: "topsoil-michigan-peat-garden-magic-40lb", checked: '2026-10',
+  },
+  'screen-lid-10-gallon': {
+    label: "Screen lid for a 10 gallon tank",
+    spec: "20x10 in",
+    low: 15, high: 25, product: "screen-lid-zilla-20x10", checked: '2026-10',
+  },
+  'thermometer-digital-3pack': {
+    label: "Digital thermometers, 3 pack",
+    spec: "",
+    low: 10, high: 20, product: "zoo-med-digital-thermometer-3pack", checked: '2026-10',
+  },
+  'cork-bark-hide-round': {
+    label: "Round cork bark hide",
+    spec: "",
+    low: 10, high: 30, product: "cork-bark-round-hide", checked: '2026-10',
+  },
+  'uvb-shadedweller-7pct': {
+    label: "Low-output 7% UVB kit",
+    spec: "ShadeDweller 7%",
+    low: 55, high: 70, product: "uvb-arcadia-shadedweller-7-12in", checked: '2026-10',
+  },
+  'slate-tile-6pack': {
+    label: "Slate tiles, 12x12 in, 6 pack",
+    spec: "",
+    low: 35, high: 60, product: "slate-tile-daltile-12x12-6pack", checked: '2026-10',
+  },
+  'feeding-tongs-soft-tip': {
+    label: "Short soft-tipped feeding tongs",
+    spec: "",
+    low: 5, high: 15, product: "feeding-tongs-short-soft-tip-4pack", checked: '2026-10',
+  },
   'uv-index-meter': {
     label: 'UV index meter',
     spec: 'Solarmeter 6.5R',

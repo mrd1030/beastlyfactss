@@ -14,6 +14,7 @@ const PRODUCTS = Object.fromEntries(AFFILIATE_PRODUCTS.map((p) => [p.slug, p]));
 const FOOTER_LABELS = {
   necessities: 'Setup total',
   extras: 'All the extras together',
+  optional: 'Total',
 };
 
 const DEFAULT_HEADERS = {

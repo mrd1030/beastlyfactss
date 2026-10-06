@@ -41,6 +41,13 @@ export function costFigure(kind, key) {
   const sheet = COST_SHEETS[key];
   if (!sheet) throw new Error(`cost placeholder: no sheet for "${key}"`);
   if (kind === 'setup') return sectionTotal(key, 'necessities');
+  // The setup plus the sheet's 'optional' table (an axolotl's chiller):
+  // "$185 to $530, or $335 to $1,180 with a chiller".
+  if (kind === 'full') {
+    const [a, b] = sectionTotal(key, 'necessities');
+    const [c, d] = sectionTotal(key, 'optional');
+    return [a + c, b + d];
+  }
   // The gear alone: the setup rows that are items, without one-off rows such
   // as the animal itself or a first exam.
   if (kind === 'gear') {
@@ -57,13 +64,13 @@ export function costFigure(kind, key) {
 // and wherever a script reads the raw file, so headings, titles, FAQs and the
 // prerendered HTML all carry the plain figure. An unknown placeholder throws,
 // which fails the build rather than printing the token.
-export const COST_TOKEN = /%%(setup|gear|animal|monthly|vet|annual|price):([a-z0-9-]+)%%/g;
+export const COST_TOKEN = /%%(setup|full|gear|animal|monthly|vet|annual|price):([a-z0-9-]+)%%/g;
 
 export function resolveCostTokens(text) {
   if (typeof text !== 'string' || !text.includes('%%')) return text;
   // "about %%price:x%%" stays one "about" when the figure is a single price,
   // which formatRange already prints as "about $N".
-  return text.replace(/(\babout )?%%(setup|gear|animal|monthly|vet|annual|price):([a-z0-9-]+)%%/g, (_, about, kind, key) => {
+  return text.replace(/(\babout )?%%(setup|full|gear|animal|monthly|vet|annual|price):([a-z0-9-]+)%%/g, (_, about, kind, key) => {
     const figure = formatRange(costFigure(kind, key));
     return about && !figure.startsWith('about') ? about + figure : figure;
   });

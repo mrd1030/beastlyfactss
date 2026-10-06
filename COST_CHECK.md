@@ -49,8 +49,8 @@ never invented. Where no price exists, say so and ask the owner.
 | Ball python | ✅ 2026-10-06 | ☐ | Site: moved onto the shared price list with every figure unchanged ($560 to $1,395). |
 | Hognose snake | ✅ 2026-10-06 | ☐ | Site: moved onto the shared price list with every figure unchanged ($465 to $1,000). |
 | Russian tortoise | ✅ 2026-10-06 | ☐ | Site: moved onto the shared price list with every figure unchanged ($490 to $935); its UVB row keeps the ReptiSun 24 in hood link. |
-| Axolotl | ☐ | ☐ | |
-| White's tree frog | ☐ | ☐ | |
+| Axolotl | ✅ 2026-10-06 | ☐ | Site: moved onto the shared price list with every figure unchanged: setup $185 to $530, or $335 to $1,180 with the chiller, which now sits in its own "If Your Room Runs Warm" table. The axolotl itself left the setup table (it was counted in the total). |
+| White's tree frog | ✅ 2026-10-06 | ☐ | Site: gear $305 to $595, $355 to $745 with the first vet exam, both unchanged. The frog itself left the setup table: it was counted in the total, so "with the first vet exam" was printing $20 to $60 too high. |
 
 ## Cost guides without a package (64): site only
 
@@ -79,7 +79,7 @@ Same checks 1 to 6. A change here touches the guide and the hub only.
 | Discus | ☐ |
 | Emperor scorpion | ☐ |
 | Ferret | ☐ |
-| Fire-bellied toad | ☐ |
+| Fire-bellied toad | ✅ 2026-10-06, shared price list: setup $80 to $175 (was $35 to $90, "before plants and hides"). Added the hub's must-haves: screen lid, thermometer, cork bark hide, calcium with D3, multivitamin; extras: 7% UVB, slate for the water section. Plants stay outside the tables. |
 | Fire skink | ✅ 2026-10-06, shared price list: setup $480 to $680 (was roughly $554 to $627). Linked the 36x18x18 enclosure, the 36 in 6% UVB kit and the PT02T dimming thermostat the text names; added calcium with D3, multivitamin, tongs; the prose thermostat link dropped (one link per product, the table keeps it). |
 | Flying squirrel | ☐ |
 | Garter snake | ✅ 2026-10-06, shared price list: setup $215 to $480 (was roughly $200 to $400). Heat mat kit, soakable basin, thermometer and hygrometer linked; added water conditioner, tongs, kitchen scale. No gear available: a vitamin B1 supplement for a fish-heavy diet, a latching lid. |
@@ -102,7 +102,7 @@ Same checks 1 to 6. A change here touches the guide and the hub only.
 | Mouse | ☐ |
 | Neon tetra | ☐ |
 | Oscar fish | ☐ |
-| Pacman frog | ☐ |
+| Pacman frog | ✅ 2026-10-06, shared price list: setup $130 to $265 (was $110 to $210). Heat row now the hub's side-mounted heat mat and thermostat kit (the old link was a bare 25 W bulb); linked thermometer, water dish, tongs; added hide, sphagnum moss, water conditioner, calcium, multivitamin. Dropped the hand-added "$115 to $325 all in" figure. No gear available: the terrarium. |
 | Parrotlet | ✅ 2026-10-06, shared price list: setup $295 to $495 (was roughly $210 to $365). Added first pellets and millet, cage cover, gram scale, carrier; toys and cuttlebone rows now cover their catalog prices; perches are the CZWESTC set the hub links. No gear available: a cage with 1/4 in bars. |
 | Platy | ☐ |
 | Praying mantis | ☐ |
@@ -116,7 +116,7 @@ Same checks 1 to 6. A change here touches the guide and the hub only.
 | Sugar glider | ☐ |
 | Sulcata tortoise | ✅ 2026-10-06, shared price list: setup $265 to $585 for the hatchling's indoor setup (heading was "$300 for a hatchling"); the outdoor enclosure and heated shelter, $500 to $2,500, now sit in their own "Adult Housing, Within a Few Years" table, not in the setup total. Linked the tortoise table and 14% UVB kit; added thermostat, calcium and multivitamin, cuttlebone, soak dish. No gear available: substrate mix, humid hide, basking lamp. |
 | Swordtail | ☐ |
-| Tiger salamander | ☐ |
+| Tiger salamander | ✅ 2026-10-06, shared price list: not converted yet: its setup table prices hides and decor as "Varies", so it is on the build-by-hand list. |
 | Tokay gecko | ☐ |
 | Uromastyx | ✅ 2026-10-06, shared price list: setup $540 to $1,195. Linked the 36 in 14% UVB kit, dimming thermostat, thermometer and hygrometer, infrared gun; added slate for the basking stack, a shallow water bowl, Miner-All calcium and multivitamin (the hub's current link), gram scale. Sand still per bag (question). |
 | Veiled chameleon | ✅ 2026-10-06, shared price list: setup $345 to $800. Linked the Reptibreeze 24x24x48 screen cage, the 22 in Forest 6% UVB kit, basking bulb, mister and plants; added thermostat, thermometer and hygrometer, plain calcium, calcium with D3, vitamin A multivitamin. |
