@@ -236,7 +236,7 @@ export const smallMammalGuides = [
         { label: "Nesting material", value: "A mouse in a room you find comfortable is below its own comfort range. The research puts the useful amount at six to ten grams, more than most pet cages hold.", source: "mouse-enrichment-guide" },
         { label: "Wheel", value: "Solid, axle-free, 6 to 8 inches rather than a hamster's 8 to 11, and not the only enrichment.", source: "mouse-tank-setup-guide" },
         { label: "Temperature and humidity", value: "64 to 79°F and 30 to 70% humidity. Damp, drafts, dust, and poor ventilation all raise respiratory risk.", source: "mouse-health-issues-guide" },
-        { label: "Diet", value: "A pellet formulated for mice or rats at 20 to 25% protein, higher than the 14 to 16% a hamster or gerbil needs, which is why the hamster-and-gerbil tub is wrong.", source: "mouse-feeding-guide" },
+        { label: "Diet", value: "A pellet formulated for mice or rats at 20 to 25% protein, more than a hamster or gerbil food carries, which is why the hamster-and-gerbil tub is wrong.", source: "mouse-feeding-guide" },
         { label: "How to feed it", value: "A measured ration once daily, some of it scattered for foraging. Pea-sized pieces of greens, carrot, pepper, or broccoli daily, pulled before they spoil. Eating its own droppings is normal, not illness.", source: "mouse-feeding-guide" },
         { label: "Foods to avoid", value: "Grapes and raisins, rhubarb, citrus, chocolate, caffeine, and alcohol are toxic. Garlic, onion, raw beans, and raw potato out, and lettuce reliably causes diarrhea.", source: "mouse-feeding-guide" },
         { label: "Females in groups, males usually alone", value: "Females need same-sex company, and it is not a close call. Adult males frequently fight seriously, so solitary housing is the common answer, which is a reason to think before choosing males.", source: "mouse-enrichment-guide" },
@@ -285,7 +285,7 @@ export const smallMammalGuides = [
     faqs: [
       { q: "How tight does the bar spacing need to be for a mouse cage?", a: "No more than about a quarter inch (6mm), and tighter still, down to 5mm, is sometimes recommended. That's tighter than most small pet cages, and mice can squeeze through gaps that would safely contain a hamster." },
       { q: "Is a glass tank a good enclosure for a pet mouse?", a: "No, and this is a real difference from gerbil housing. A glass tank can't move enough air, so ammonia builds up inside it. A well-ventilated wire cage is the better choice for mice specifically." },
-      { q: "How much protein do mice need?", a: "More than a hamster or gerbil. General maintenance crude protein for a mouse runs 20 to 25%, with breeding or growing mice needing even more depending on strain, well above the 14 to 16% that's adequate for a gerbil." },
+      { q: "How much protein do mice need?", a: "More than a hamster or gerbil. General maintenance crude protein for a mouse runs 20 to 25%, with breeding or growing mice needing even more depending on strain, against the 18 to 20% a gerbil does best on." },
     ],
   },
   {
@@ -684,7 +684,7 @@ export const smallMammalGuides = [
       { slug: "guinea-pig-feeding-guide", line: "Schedule, life-stage differences, safe and toxic foods, and the honest range of reasons a guinea pig stops eating." },
       { slug: "guinea-pig-handling-guide", line: "The correct two-handed pickup, why staying low matters, and the stress signs that mean the session is over." },
       { slug: "guinea-pig-health-issues-guide", line: "Respiratory infection, dental disease, GI stasis, bladder stones, and ovarian cysts, with what to watch for and when to call." },
-      { slug: "guinea-pig-enrichment-guide", line: "Hideouts, foraging enrichment that replaces up to 80% of a wild guinea pig's day, and supervised floor time." },
+      { slug: "guinea-pig-enrichment-guide", line: "Hideouts, foraging enrichment that stands in for up to 80% of a wild cavy's day, and supervised floor time." },
     ],
     buyList: [
       "C&C cage or similar (7.5 sq ft minimum, 10.5 for a pair)",

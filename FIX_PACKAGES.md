@@ -71,9 +71,11 @@ Live editions (2026-10-04): bearded dragon 4.1; leopard gecko, crested gecko, ba
 ### Axolotl (3.1, `axolotl-src`)
 - [ ] Glossary: IUCN (`pages_07.html:25`) and VCA (`:59`) out; Injurious wildlife (`:24`) and Lacey Act (`:27`) move to the law page mini glossary.
 - [ ] Gear: sand unlinked (grain size specs conflict); no air pump for the sponge filter.
+- [ ] Book: gloves read "clean, disposable nitrile gloves" (`source/axolotl.html:781`, `pages_04.html:15`). The site's amphibian rule since 2026-10-05: powder-free vinyl wetted with dechlorinated water first, nitrile only as a fallback, never latex (LafeberVet Amphibian Handling and Restraint; Merck Clinical Techniques in Amphibians). Match it on the next rebuild.
 
 ### White's tree frog (1.1, `whites-tree-frog-src`; renders as "Whites Tree Frog")
 - [ ] Glossary: IUCN out (`pages_6.html:31`).
+- [ ] Book: the version-history table (`whites-tree-frog.html:1860`, `pages_6.html:103`) still describes the site articles as "Powder-free nitrile"; the site and the book body now say vinyl first, nitrile second, never latex.
 - [ ] Gear: Repashy Calcium Plus stands in for "calcium with D3 and a multivitamin" (the owner's ReptiVite is labeled for reptiles only); an under-tank heat mat kit is linked where the book asks for a side-mounted mat; substrate changes and electricity unpriced.
 
 ### Betta fish (3.1, `betta-fish-src`)

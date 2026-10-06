@@ -788,7 +788,7 @@ export const invertebrateGuides = [
         { label: "Budget", value: "$15 to $35 for a Carolina or Chinese mantis, up to $150 for an Orchid. A full setup runs $80 to $165, then $10 to $40 a month in feeders. Exotic vets rarely treat invertebrates.", source: "praying-mantis-cost-guide" },
         { label: "Lifespan", value: "6 to 12 months for most kept species, females outliving males; a few reach around 18 months.", source: "praying-mantis-cost-guide" },
         { label: "Adult size", value: "0.5 to 6 inches (1 to 15 cm) depending on species." },
-        { label: "If you get an ootheca", value: "Dozens to hundreds of nymphs hatch within an hour or two of each other, and they eat their siblings. Individual containers and a fruit fly culture are ready before the hatch, not after.", source: "praying-mantis-ootheca-guide" },
+        { label: "If you get an ootheca", value: "Dozens to hundreds of nymphs, all at once or in waves over several weeks, and they eat their siblings. Individual containers and a fruit fly culture are ready before the hatch, not after.", source: "praying-mantis-ootheca-guide" },
         { label: "Pre-molt signs", value: "Off food, dulled color, stillness. Not illness, and not the moment to intervene; leave the shed skin where it falls until the animal has hardened.", source: "invertebrate-molting-guide" },
       ],
     },
