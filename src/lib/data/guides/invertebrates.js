@@ -313,7 +313,7 @@ export const invertebrateGuides = [
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Where yours came from", value: "Most ghost shrimp move through the trade as live feed with no screening or quarantine. Lethargy, hiding, refusing food, and losses inside a small group shortly after purchase are feeder-tank stress.", source: "ghost-shrimp-health-issues-guide" },
-        { label: "Recovery first", value: "A quiet, stable, planted tank and low expectations for two weeks. Losses in that window are common and usually not something you did.", source: "ghost-shrimp-enrichment-guide" },
+        { label: "Buy carefully", value: "Much of the supply is shipped in bulk as feeder stock, so the cheapest source is not always the healthiest, and a bag labeled ghost shrimp can hold whisker shrimp.", source: "ghost-shrimp-cost-guide" },
         { label: "Tank size", value: "5 gallons is the workable minimum, 10 gallons gives a small colony stability and room to forage.", source: "ghost-shrimp-tank-setup-guide" },
         { label: "Temperature and water chemistry", value: "72 to 82°F, pH 7 to 8, hardness 3 to 15 dGH. Wide tolerance does not mean ammonia and nitrite can read anything but zero before stocking.", source: "ghost-shrimp-tank-setup-guide" },
         { label: "Filtration", value: "A sponge filter. It has no intake tube to pull in a shrimp, freshly molted ones especially, the way a hang-on-back does.", source: "ghost-shrimp-tank-setup-guide" },
@@ -348,7 +348,7 @@ export const invertebrateGuides = [
       { slug: "ghost-shrimp-feeding-guide", line: "A wafer every day or two, why they are not an algae crew, and the cannibalism nobody warns about." },
       { slug: "ghost-shrimp-handling-guide", line: "Net rather than hands, drip for 1 to 2 hours, quarantine two to four weeks, and what stress looks like." },
       { slug: "ghost-shrimp-health-issues-guide", line: "Copper lethal at 0.0313 mg/L to a related prawn, the feeder-tank history behind most early losses, and the white ring of death." },
-      { slug: "ghost-shrimp-enrichment-guide", line: "Recovery as the real enrichment, the decapod sentience review, and why the label is not always the species in the bag." },
+      { slug: "ghost-shrimp-enrichment-guide", line: "Night foraging, dense planting, what the wild diet means for the tank, the decapod sentience review, and why one shrimp needs no group." },
     ],
     buyList: [
       "5 gallon tank as a floor, 10 gallons for a colony",
@@ -879,7 +879,7 @@ export const invertebrateGuides = [
         { label: "Humidity", value: "60 to 80% for tropical species, far less fussy for Indian ones. Daily light misting with dechlorinated or distilled water over an inch or two of coir, peat, or paper towel, and a hygrometer.", source: "stick-insect-tank-setup-guide" },
         { label: "Food", value: "Leaves, and nothing else. Washed bramble suits almost every kept species; Indian stick insects also take privet and ivy, and rose, hawthorn, oak, and eucalyptus each suit others. Match the plant to the species you have.", source: "stick-insect-tank-setup-guide" },
         { label: "Keeping the leaves alive", value: "Cut stems standing in a jar of water stay good for days. Block the jar's opening so a nymph cannot fall in and drown.", source: "stick-insect-tank-setup-guide" },
-        { label: "Water", value: "They drink droplets from misting, not from a dish, and an open reservoir drowns small nymphs.", source: "stick-insect-health-issues-guide" },
+        { label: "Water", value: "Most drink droplets from misting rather than from a dish, and an open reservoir drowns small nymphs; a few species, Haaniella among them, want an open water bowl.", source: "stick-insect-health-issues-guide" },
         { label: "Failed molts", value: "The single biggest risk, from too little vertical space or low humidity in the days before. It cannot be treated after the fact; the enclosure height and the misting are the whole prevention.", source: "stick-insect-health-issues-guide" },
         { label: "Mold", value: "From an enclosure too damp with poor airflow. Ventilate and change the substrate about weekly.", source: "stick-insect-health-issues-guide" },
         { label: "Handling", value: "Grasp the body or thorax, never a leg: they drop legs to escape, and an adult's lost leg is permanent. A few large species pinch if not used to hands. A dropped leg, a rigid drop, or a defensive scent all mean the session was too rough.", source: "stick-insect-handling-guide" },
