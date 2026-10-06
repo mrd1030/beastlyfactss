@@ -302,7 +302,7 @@ export const turtleGuides = [
         { label: "Handling", value: "An observation pet, not one built for regular handling. House males separately, they ram and bully other tortoises. Skilled climber and digger, more of an escape risk than it looks.", source: "russian-tortoise-handling-guide" },
         { label: "Budget", value: "$50 to $150 for a hatchling ($225 to $400 older captive-bred). $490 to $935 to set up. $370 to $695 a year, about $30 to $60 a month.", source: "russian-tortoise-cost-guide" },
         { label: "Adult size", value: "5 to 9 inches." },
-        { label: "Lifespan", value: "40 years or more typical, some individuals reaching 50-plus.", source: "russian-tortoise-cost-guide" },
+        { label: "Lifespan", value: "40 years or more typical, and with excellent care some reach 50 or beyond.", source: "russian-tortoise-cost-guide" },
         { label: "Quarantine", value: "A minimum of six months, completely separate from any other chelonian, with lab testing. Two or three weeks is not long enough for the herpesvirus.", source: "chelonian-herpesvirus-quarantine-guide" },
         { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the tortoise out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
         { label: "Soaking", value: "Juveniles 10 to 15 minutes twice a week, adults about once a week, in lukewarm water no deeper than the elbows, and never unattended. Watch for urates: white and soft is hydrated, dry and gritty is not.", source: "tortoise-soaking-guide" },
