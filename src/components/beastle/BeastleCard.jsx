@@ -171,7 +171,7 @@ export default function BeastleCard({ showJournal = false }) {
           </p>
         </div>
         <span className="flex-shrink-0 inline-flex items-center gap-1.5 text-sm font-body font-bold text-secondary">
-          {state?.done ? 'See it' : 'Play'} <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          {state?.done ? 'See it' : 'Play'}<ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
         </span>
       </Link>
       {showJournal && state && (

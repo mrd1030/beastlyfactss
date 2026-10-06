@@ -411,6 +411,27 @@ async function renderRoute(page, route, timeoutMs) {
     });
   });
 
+  // Keep adjacent text nodes apart. JSX like {label} <Icon/>, "text{' '}"
+  // or `{count} animals, each checked against all {total}` renders several
+  // text nodes side by side, and serialising the live DOM merges them into
+  // one ("Play "), so hydration expected "Play", found "Play ", threw React
+  // #418 and redrew the whole page: the first-load flash on the homepage,
+  // every care guide hub, /care-packages/ and /exotic-pet-laws/ (found
+  // 2026-10-06 with a development build hydrating the captured HTML).
+  // react-dom/server separates such nodes with an empty comment, <!-- -->,
+  // which hydration skips; doing the same here makes the captured HTML match
+  // what the client's first render expects, wherever the pattern appears.
+  await page.evaluate(() => {
+    const root = document.getElementById('root');
+    if (!root) return;
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    const pairs = [];
+    for (let node = walker.nextNode(); node; node = walker.nextNode()) {
+      if (node.nextSibling && node.nextSibling.nodeType === Node.TEXT_NODE) pairs.push(node);
+    }
+    for (const node of pairs) node.parentNode.insertBefore(document.createComment(' '), node.nextSibling);
+  });
+
   const html = await page.content();
 
   // Strip <script src> tags that the analytics loader in index.html (gtag.js
