@@ -45,6 +45,8 @@ def kind_of(t):
     hdr, h2 = t['hdr'], t['h2']
     if not t['rows'] or any(x in hdr for x in ('"Notes"', 'Why', 'Morph', '"Type"', 'Component')):
         return 'other'
+    if re.search(r'extra|not counted', h2 + hdr, re.I):
+        return 'extras'
     if 'Monthly' in hdr:
         return 'monthly'
     if 'Annual' in hdr or 'Yearly' in hdr:
@@ -78,7 +80,9 @@ for f in sorted(glob.glob('content/guides/*-cost-guide.mdx')):
     i = 0
     while i < len(lines):
         l = lines[i]
-        if l.startswith('## '):
+        if l.startswith('### '):
+            h2 = l[4:].strip()
+        elif l.startswith('## '):
             h2 = l[3:].strip()
             if '$' in h2:
                 mentions.append((key, 'cost guide', slug, 'H2', h2))
@@ -129,7 +133,7 @@ for f in sorted(glob.glob('content/guides/*-cost-guide.mdx')):
                 rnd = 'not $5 steps'
             rows.append(dict(animal=key, table=t['h2'], kind=t['kind'], item=r['item'], price=r['price'], lo=r['lo'], hi=r['hi'],
                              linked='; '.join('%s (%s)' % c for c in cat), unlinked='' if r['links'] else 'unlinked',
-                             covers=cov, rounding=rnd if t['kind'] != 'other' else '', is_total='total row' if r['total'] else ''))
+                             covers=cov, rounding=rnd if t['kind'] not in ('other',) else '', is_total='total row' if r['total'] else ''))
 
     def first(kind):
         return next((t for t in tables if t['kind'] == kind), None)
