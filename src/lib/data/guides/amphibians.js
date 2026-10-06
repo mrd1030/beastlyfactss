@@ -36,7 +36,7 @@ export const amphibianGuides = [
         { label: "Adult size", value: "9 to 12 inches." },
         { label: "Lifespan", value: "10 to 15 years typical in captivity." },
         { label: "Quarantine", value: "6 to 8 weeks per general veterinary guidance, landing closer to the 8-week end than the shortest end. The clock resets, not just pauses, if the animal shows illness partway through.", source: "amphibian-quarantine-and-water-guide" },
-        { label: "Heat wave / power outage", value: "The emergency runs in reverse for axolotls: heat is the danger, not cold. Sustained water above about 75°F causes reduced appetite, ascites, and uncontrollable floating. Insulate against heat, float sealed frozen water bottles rather than loose ice, and as a stopgap move the axolotl to a dish in the refrigerator.", source: "aquarium-power-outage-and-transport-guide" },
+        { label: "Heat wave / power outage", value: "The emergency runs in reverse for axolotls: heat is the danger, not cold. Sustained water above about 75°F causes reduced appetite, ascites, and uncontrollable floating. Insulate against heat, float sealed frozen water bottles rather than loose ice while watching a thermometer, since even a bottle can pull the water down faster than about 1°F an hour, and as a stopgap move the axolotl to a dish in the refrigerator.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
     emergencyCard: {
