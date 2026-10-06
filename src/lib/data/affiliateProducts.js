@@ -4712,7 +4712,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0002AQ5ZC?tag=beastlyfacts-20",
     price: "~$40",
     description: "Breathable nylon night cover, model 12503, for flat-top cages up to about 37x25x48 in. Fits the 31 x 20.5 in Prevue flight cage with room to spare, and the front flap lifts for a check without taking the cover off.",
-    covers: ["A plain breathable cage cover, not an enclosed \"happy hut\"", "Cage cover for nighttime darkness"],
+    covers: ["A plain breathable cage cover, not an enclosed \"happy hut\"", "Cage cover for nighttime darkness", "A cage cover, for 10 to 12 hours of dark"],
     pets: ["birds"],
   },
   {

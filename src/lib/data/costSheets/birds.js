@@ -173,4 +173,20 @@ export const birdSheets = {
       { text: "Pre-purchase exam and PBFD test", low: 140, high: 210 },
     ],
   },
+  'quaker-parakeet': {
+    animal: [250, 500],
+    monthly: [40, 110],
+    vetExam: [85, 115],
+    necessities: [
+      { item: "cage-quaker-24x24x36-half-to-5-8-inch", text: "Cage at least 24 by 24 by 36 inches, wider preferred, heavy-gauge bars 1/2 to 5/8 inch apart (check the dimensions and bar spacing before you buy)" },
+      { item: "perches-quaker-natural-wood", text: "Natural wood perches, three or four, in varied diameters" },
+      { item: "dishes-clamp-on-small-bird", text: "[Stainless food and water cups]" },
+      { item: "pellets-small-22oz", text: "First bag of [formulated pellets]" },
+      { item: "toys-quaker-starter", text: "Foraging and shreddable toys, four or five to start" },
+      { item: "cuttlebone-small", text: "[Cuttlebone]" },
+      { item: "cage-cover-large", text: "[Breathable cage cover] for 10 to 12 hours of dark (check it fits your cage)" },
+      { item: "kitchen-scale-grams", text: "[Gram scale]" },
+      { item: "carrier-small-bird", text: "[Travel carrier] sized for a Quaker, for vet visits" },
+    ],
+  },
 };

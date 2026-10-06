@@ -106,7 +106,7 @@ Same checks 1 to 6. A change here touches the guide and the hub only.
 | Parrotlet | ✅ 2026-10-06, shared price list: setup $295 to $495 (was roughly $210 to $365). Added first pellets and millet, cage cover, gram scale, carrier; toys and cuttlebone rows now cover their catalog prices; perches are the CZWESTC set the hub links. No gear available: a cage with 1/4 in bars. |
 | Platy | ☐ |
 | Praying mantis | ☐ |
-| Quaker parakeet | ☐ Held for the owner (2026-10-06): the cost guide prices a dated "worked example" shopping list (a 31 x 20 x 53 cage it calls too shallow, exact sale and list prices) instead of a setup table; converting means rewriting that section. |
+| Quaker parakeet | ✅ 2026-10-06 (owner chose the rewrite), shared price list: setup $295 to $560 (was roughly $300 to $800, with a dated worked example at $400 to $590). The worked example table, its exact sale and list prices and the first exam row are replaced by the usual setup table; the cage-depth advice and the toy note stay in the prose; the vet price table stays. Unlinked as below spec: the Prevue 5 ft wrought iron flight cage (37 x 23 in, under the 24 in depth) on the cost, setup and enrichment guides, and on the zebra finch enrichment guide (1/2 in bars, finches need 3/8); Harrison's High Potency Fine pellets link removed from the monthly line. No gear available: a 24x24x36 cage with 1/2 to 5/8 in bars, natural wood perches, starter toys. |
 | Rat | ☐ |
 | Red-eared slider | ☐ |
 | Red-footed tortoise | ☐ |

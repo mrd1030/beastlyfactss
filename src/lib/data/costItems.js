@@ -392,6 +392,28 @@ export const COST_ITEMS = {
     spec: "",
     low: 25, high: 100, product: "bird-food-lafebers-premium-parrots-25lb", checked: '2026-10',
   },
+  // No catalog cage is deep enough: the Prevue F040 is 20.5 in deep, the
+  // Prevue 5 ft wrought iron flight cage 23 in.
+  'cage-quaker-24x24x36-half-to-5-8-inch': {
+    label: "Cage at least 24 by 24 by 36 inches, heavy-gauge bars 1/2 to 5/8 inch apart",
+    spec: "24 x 24 x 36 in, 1/2 to 5/8 in bars",
+    low: 150, high: 300, product: null, checked: '2026-10',
+  },
+  'perches-quaker-natural-wood': {
+    label: "Natural wood perches, three or four",
+    spec: "manzanita or similar",
+    low: 30, high: 70, product: null, checked: '2026-10',
+  },
+  'pellets-small-22oz': {
+    label: "First bag of pellets",
+    spec: "22 oz",
+    low: 10, high: 15, product: "bird-food-roudybush-daily-small-22oz", checked: '2026-10',
+  },
+  'toys-quaker-starter': {
+    label: "Foraging and shreddable toys, four or five to start",
+    spec: "",
+    low: 25, high: 75, product: null, checked: '2026-10',
+  },
   'uv-index-meter': {
     label: 'UV index meter',
     spec: 'Solarmeter 6.5R',
