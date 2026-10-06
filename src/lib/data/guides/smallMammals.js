@@ -9,7 +9,7 @@ export const smallMammalGuides = [
     tagline: "The incredibly soft, high-jumping rodent that needs dust baths!",
     seoTitle: "Chinchilla Care Guide: Cage, Heat, and Diet",
     seoDescription: "Chinchilla care comes down to staying cool: the 150 rule for heat danger, a tall cage with solid floors, dust baths done right, and the hay-first diet.",
-    funFact: "Chinchillas can jump up to 6 feet high and can rotate their ears 180 degrees! Their fur is so dense they can have up to 80 hairs per follicle, versus 2 to 3 for humans.",
+    funFact: "Chinchillas can jump up to 6 feet high and can rotate their ears 180 degrees! Their fur is so dense they can have up to 60 hairs per follicle, versus 2 to 3 for humans.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
     // hub keeps no number of its own. Adult size and lifespan come from the
@@ -994,7 +994,7 @@ export const smallMammalGuides = [
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal check", value: "Illegal in California, Alaska, Hawaii, the District of Columbia, and New York City, effectively illegal in Pennsylvania, permit-required in New Jersey, import-permit in New Mexico. Georgia, Massachusetts, and Wyoming do not ban them, whatever the internet says.", source: "sugar-glider-legal-guide" },
+        { label: "Legal check", value: "Illegal in California, Alaska, Hawaii, the District of Columbia, and New York City, illegal in Pennsylvania with no pet permit path, permit-required in New Jersey, import-permit in New Mexico. Georgia, Massachusetts, and Wyoming do not ban them, whatever the internet says.", source: "sugar-glider-legal-guide" },
         { label: "Never one glider", value: "Colonial, so two minimum: pairs or small groups are the veterinary standard. One study found the solitary gliders in its sample healthy, so self-mutilation is a real risk, not a certainty, and it does not overturn the pair rule. Neutering males avoids breeding and most of the scent marking.", source: "sugar-glider-enrichment-guide" },
         { label: "Cage size", value: "At least 36 inches wide, 24 deep and 36 tall, bought for a pair. Put any extra space into height: this is a climbing, gliding animal.", source: "sugar-glider-tank-setup-guide" },
         { label: "Bar spacing", value: "No more than half an inch. Young gliders squeeze through wider gaps.", source: "sugar-glider-tank-setup-guide" },

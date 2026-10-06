@@ -276,7 +276,7 @@ export const geckoGuides = [
     image: "/assets/guides/leaf-tailed-gecko.jpg",
     tagline: "Nature's ultimate camouflage artist, hiding in plain sight!",
     seoTitle: "Leaf-Tailed Gecko Care Guide: Setup, Humidity, and Health",
-    seoDescription: "Leaf-tailed geckos punish shortcuts: why captive-bred matters, a cool tank with no basking spot, humidity and a drying cycle, and dehydration, the fast killer.",
+    seoDescription: "Leaf-tailed geckos punish shortcuts: why captive-bred matters, cool temperatures set by species, humidity and a drying cycle, and dehydration, the fast killer.",
     funFact: "Satanic leaf-tailed geckos (Uroplatus phantasticus) look exactly like dead, decaying leaves, right down to the 'bite marks' and brown patches on their edges!",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
@@ -340,7 +340,7 @@ export const geckoGuides = [
     },
     routes: [
       { slug: "leaf-tailed-gecko-cost-guide", line: "$250 to $800 by species and locality, $300 to $600 for the enclosure, and why wild-caught is the expensive option." },
-      { slug: "leaf-tailed-gecko-tank-setup-guide", line: "18x18x24 for the smallest species, a cool enclosure with no basking spot, the humidity that defines this genus, and tap water over distilled." },
+      { slug: "leaf-tailed-gecko-tank-setup-guide", line: "18x18x24 for the smallest species, cool temperatures set by species, the humidity that defines this genus, and tap water over distilled." },
       { slug: "leaf-tailed-gecko-feeding-guide", line: "As much as it eats in a night, daily young and every other day adult, insects sized to the species, dusted lightly, and the mist as the water supply." },
       { slug: "leaf-tailed-gecko-handling-guide", line: "Stress signals worth recognizing, and the species whose tail never grows back." },
       { slug: "leaf-tailed-gecko-health-issues-guide", line: "Dehydration as the fast killer, plus MBD, respiratory infection, and why you wait before deworming an import." },
