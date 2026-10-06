@@ -2,6 +2,15 @@ import io, re, json, glob, os, html
 SP = os.path.dirname(os.path.abspath(__file__))
 H = json.load(io.open(os.path.join(SP, 'hubs.json'), encoding='utf-8'))
 PROD = {p['link']: p for p in H['products']}
+# Articles with cost placeholders, already filled (dump_hubs.mjs), and the
+# table rows of every animal on the shared price list.
+RESOLVED = {k.replace(chr(92), '/'): v for k, v in H.get('resolved', {}).items()}
+SHEETS = H.get('sheets', {})
+
+
+def read(f):
+    k = f.replace(chr(92), '/')
+    return RESOLVED[k] if k in RESOLVED else io.open(f, encoding='utf-8').read()
 PACK = {'bearded-dragon', 'leopard-gecko', 'crested-gecko', 'gargoyle-gecko', 'african-fat-tail', 'ball-python', 'hognose-snake',
         'russian-tortoise', 'axolotl', 'whites-tree-frog', 'betta-fish', 'goldfish', 'rabbit', 'guinea-pig', 'hamster', 'budgie',
         'lovebird', 'cockatiel', 'cockatoo', 'tarantula'}
@@ -65,7 +74,7 @@ animals, rows, mentions, buy = [], [], [], []
 for f in sorted(glob.glob('content/guides/*-cost-guide.mdx')):
     slug = os.path.basename(f)[:-4]
     key = slug[:-len('-cost-guide')]
-    s = io.open(f, encoding='utf-8').read().replace('\r\n', '\n')
+    s = read(f).replace('\r\n', '\n')
     fm, body = re.match(r'---\n(.*?)\n---\n(.*)', s, re.S).groups()
     for k in FM_FIELDS:
         m = re.search(r'^' + k + r':\s*"(.*)"\s*$', fm, re.M)
@@ -86,6 +95,14 @@ for f in sorted(glob.glob('content/guides/*-cost-guide.mdx')):
             h2 = l[3:].strip()
             if '$' in h2:
                 mentions.append((key, 'cost guide', slug, 'H2', h2))
+        elif '<CostTable' in l:
+            m = re.search(r'guide="([^"]+)"\s+section="([^"]+)"', l)
+            g, sec = (m.group(1), m.group(2)) if m else (key, 'necessities')
+            trs = []
+            for r in SHEETS.get(g, {}).get(sec, []):
+                lo, hi = rng(r['price'])
+                trs.append(dict(item=r['item'], price=r['price'], lo=lo, hi=hi, links=[(r['href'], r['product'])] if r['href'] else []))
+            tables.append(dict(h2=h2, hdr='"Extra", "Cost Range"' if sec == 'extras' else '"Item", "Cost Range"', rows=trs))
         elif '<ComparisonTable' in l:
             hdr = ''
             j = i
@@ -200,7 +217,7 @@ for f in sorted(glob.glob('content/guides/*.mdx') + glob.glob('content/fun-facts
     b = os.path.basename(f)[:-4]
     if b.endswith('-cost-guide') or b.endswith('-legal-guide'):
         continue
-    s = io.open(f, encoding='utf-8').read().replace('\r\n', '\n').split('<Sources>')[0]
+    s = read(f).replace('\r\n', '\n').split('<Sources>')[0]
     for ln in s.split('\n'):
         c = clean(ln)
         if not re.search(r'\$\s?\d', c):

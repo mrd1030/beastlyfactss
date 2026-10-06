@@ -16,6 +16,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { withBrand, pickWithinLimit, plural, TITLE_MAX, DESCRIPTION_MAX, BRAND } from '../src/lib/utils/seo.js';
+import { resolveCostTokens } from '../src/lib/costs.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const failures = [];
@@ -43,7 +44,7 @@ function frontmatter(text) {
 let articles = 0;
 for (const name of fs.readdirSync(GUIDES)) {
   if (!name.endsWith('.mdx')) continue;
-  const fm = frontmatter(fs.readFileSync(path.join(GUIDES, name), 'utf8'));
+  const fm = frontmatter(resolveCostTokens(fs.readFileSync(path.join(GUIDES, name), 'utf8')));
   const source = fm.seoTitle || fm.title;
   if (!source) continue;
   articles += 1;

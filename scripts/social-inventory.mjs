@@ -33,6 +33,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { resolveCostTokens } from '../src/lib/costs.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
@@ -228,7 +229,7 @@ function loadArticles() {
     const abs = path.join(ROOT, dir);
     if (!fs.existsSync(abs)) continue;
     for (const file of fs.readdirSync(abs).filter(f => f.endsWith('.mdx'))) {
-      const fm = parseFrontmatter(fs.readFileSync(path.join(abs, file), 'utf8'));
+      const fm = parseFrontmatter(resolveCostTokens(fs.readFileSync(path.join(abs, file), 'utf8')));
       const slug = fm.slug || file.replace(/\.mdx$/, '');
       rows.push({
         file: `${dir}/${file}`,
@@ -425,7 +426,7 @@ function loadCarouselCandidates() {
     if (isRoundup(file)) continue;
     for (const guideId of Object.keys(species)) {
       if (!file.startsWith(`${guideId}-`)) continue;
-      const fm = parseFrontmatter(fs.readFileSync(path.join(guidesDir, file), 'utf8'));
+      const fm = parseFrontmatter(resolveCostTokens(fs.readFileSync(path.join(guidesDir, file), 'utf8')));
       if (fm.image) species[guideId].images.add(fm.image);
     }
   }

@@ -1,4 +1,8 @@
-export const lizardGuides = [
+// Cost figures in these entries are %%placeholders%% filled from the master
+// price list (src/lib/costs.js); never type a cost guide total here.
+import { fillCostTokens } from '../../costs.js';
+
+export const lizardGuides = fillCostTokens([
   {
     id: "ackie-monitor",
     name: "Ackie Monitor",
@@ -48,7 +52,7 @@ export const lizardGuides = [
         { label: "Weigh it weekly", value: "Wild ackies burn far more than a captive one can, and they are strongly food-motivated. A kitchen scale weekly.", source: "ackie-monitor-health-issues-guide" },
         { label: "Handling", value: "Never grab from above or chase one out of a hide. Let it climb onto you, with tong-feeding as the bonding tool. Fast, and it scratches or nips if startled.", source: "ackie-monitor-handling-guide" },
         { label: "Enrichment", value: "Burrow depth first, then footprint and height, then puzzle feeding, then the humid dig zone, then climbing and rock stacks.", source: "ackie-monitor-enrichment-guide" },
-        { label: "Budget", value: "$150 to $450 for the monitor, red ackies at the top. Setup $880 to $2,230, then $40 to $80 a month, most of it feeders and bulbs. A routine exam is $50 to $100.", source: "ackie-monitor-cost-guide" },
+        { label: "Budget", value: "%%animal:ackie-monitor%% for the monitor, red ackies at the top. Setup %%setup:ackie-monitor%%, then %%monthly:ackie-monitor%% a month, most of it feeders and bulbs. A routine exam is %%vet:ackie-monitor%%.", source: "ackie-monitor-cost-guide" },
         { label: "Adult size", value: "Around 2 feet (0.6 m) typical, reported from 17.3 inches (44 cm) to 30 inches (76 cm)." },
         { label: "Lifespan", value: "15 years or more on a demanding setup.", source: "ackie-monitor-cost-guide" },
         { label: "Hygiene", value: "Wash hands with soap after any contact, keep the lizard out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
@@ -66,7 +70,7 @@ export const lizardGuides = [
       vetLine: "Nearly everything here comes back to building the ambitious setup this species needs. Weak or absent UVB combined with poor calcium supplementation is the direct cause of MBD, the most serious and most preventable condition on the list. An enclosure too small to support this species' natural activity level contributes directly to obesity. And getting temperature and substrate right prevents both impaction and digestive issues.",
     },
     routes: [
-      { slug: "ackie-monitor-cost-guide", line: "$150 to $450 for the animal, red against yellow, the $880 to $2,230 setup itemized, and why the enclosure rather than the monitor is the real commitment." },
+      { slug: "ackie-monitor-cost-guide", line: "%%animal:ackie-monitor%% for the animal, red against yellow, the %%setup:ackie-monitor%% setup itemized, and why the enclosure rather than the monitor is the real commitment." },
       { slug: "ackie-monitor-tank-setup-guide", line: "The 5 by 2.5 by 4 foot minimum, a basking surface hotter than almost any other pet lizard's, two feet of diggable substrate, and what a Retes stack is for." },
       { slug: "ackie-monitor-feeding-guide", line: "Daily for juveniles and every other day after, the insect staples worth building on, why rodents are the mistake, and six reasons an ackie stops eating." },
       { slug: "ackie-monitor-handling-guide", line: "A lizard that does backflips after crickets, tong-feeding as the bonding tool, and the body language that says stop before it bolts." },
@@ -1093,4 +1097,4 @@ export const lizardGuides = [
       { q: "What is the correct calcium and vitamin schedule for a veiled chameleon?", a: "Plain calcium, no D3 and no phosphorus, on nearly every feeding. Calcium with D3 goes on about every other week, and a multivitamin carrying a real vitamin A source runs on that same twice-monthly schedule. Excess D3 can turn toxic, which is why it's dosed less often." },
     ],
   },
-];
+]);

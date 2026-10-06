@@ -5,6 +5,7 @@
 // as clean. Run after any hub rebuild.
 import fs from 'fs';
 import path from 'path';
+import { resolveCostTokens } from '../src/lib/costs.js';
 
 const files = fs.readdirSync('src/lib/data/guides').filter(f => f.endsWith('.js') && f !== 'index.js');
 const mods = {};
@@ -20,7 +21,7 @@ function ddFaqs(slug) {
   const p = `content/guides/${slug}.mdx`;
   let out = [];
   if (fs.existsSync(p)) {
-    const t = fs.readFileSync(p, 'utf8');
+    const t = resolveCostTokens(fs.readFileSync(p, 'utf8'));
     const fm = t.split(/^---$/m)[1] || '';
     const block = fm.split(/^faqs:/m)[1];
     if (block) {

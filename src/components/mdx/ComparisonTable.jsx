@@ -69,6 +69,11 @@ function textLength(node) {
   return 0;
 }
 
+// A short price cell ("$475 - $1,475", "about $5", "$20 - $40 a year")
+// should never break mid-range; a column made only of them keeps its figures,
+// and its header, on one line so the item column takes the squeeze instead.
+const PRICE_CELL = /^\s*(about |roughly |~)?\$[\d,]+(\.\d+)?(\s*(-|to)\s*\$[\d,]+(\.\d+)?)?\+?(\s+(a|per)\s+\w+)?\s*$/i;
+
 export default function ComparisonTable({
   headers = [],
   rows = [],
@@ -87,6 +92,9 @@ export default function ComparisonTable({
     && rows.some((row) => row.slice(1).some((cell) => textLength(cell) > STACK_TEXT_LENGTH));
   const isTitleCell = (i) => i === 0 || i === tierColumn;
   const s = (mobile, desktop) => (stacked ? `${mobile} ${desktop}` : '');
+  const priceColumns = new Set(headers.map((_, i) => i).filter((i) => i > 0
+    && rows.every((row) => typeof row[i] === 'string' && PRICE_CELL.test(row[i]))));
+  const nowrap = (i) => (priceColumns.has(i) ? ' whitespace-nowrap' : '');
 
   return (
     <div className={`not-prose my-8 overflow-x-auto rounded-xl border border-border ${className}`}>
@@ -96,7 +104,7 @@ export default function ComparisonTable({
             {headers.map((header, index) => (
               <th 
                 key={index} 
-                className="px-4 py-3 text-left font-body font-semibold text-foreground"
+                className={`px-4 py-3 text-left font-body font-semibold text-foreground${nowrap(index)}`}
               >
                 {header}
               </th>
@@ -115,7 +123,7 @@ export default function ComparisonTable({
                   data-label={stacked && !isTitleCell(cellIndex) ? headers[cellIndex] || undefined : undefined}
                   // Padding is set per layout, never as a base class: py-3
                   // beside py-0 resolves by CSS order, not class order.
-                  className={`px-4 text-muted-foreground ${
+                  className={`px-4 text-muted-foreground${nowrap(cellIndex)} ${
                     !stacked ? 'py-3'
                     : isTitleCell(cellIndex)
                       ? `block py-0 md:table-cell md:py-3 ${cellIndex === 0 ? 'font-semibold text-foreground md:font-normal md:text-muted-foreground' : ''}`

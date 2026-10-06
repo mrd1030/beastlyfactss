@@ -9,6 +9,7 @@ export { default as CarePackageBlock } from './CarePackageBlock';
 export { default as AffiliateDisclosure } from './AffiliateDisclosure';
 export { default as ProsCons } from './ProsCons';
 export { default as ComparisonTable } from './ComparisonTable';
+export { default as CostTable } from './CostTable';
 export { default as Sources } from './Sources';
 export { default as AlsoConsulted } from './AlsoConsulted';
 export { default as VetDisclaimer } from './VetDisclaimer';

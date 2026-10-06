@@ -269,6 +269,27 @@ third care sheet.
 - `affiliate: true` always pairs with `<AffiliateDisclosure />` immediately
   after the H1. No product linked twice in the same article.
 
+## Cost guides: the shared price list
+
+- Prices live in one place: `src/lib/data/costItems.js` (one entry per item
+  at one spec, with its product and its $5-step range) and each animal's
+  sheet in `src/lib/data/costSheets.js` (which items its necessities and
+  extras tables use, plus the animal's own price, monthly figure and exam).
+- A converted cost guide draws its tables with
+  `<CostTable guide="<id>" section="necessities" />` and
+  `section="extras"`. The necessities rows make the setup total; extras are
+  never counted. The UV index meter keeps its own "Highly recommended, not
+  counted in the total" line under the setup table.
+- Every total is a placeholder filled in at build time: `%%setup:<id>%%`,
+  `%%animal:<id>%%`, `%%monthly:<id>%%`, `%%vet:<id>%%`, `%%price:<item>%%`.
+  Use them in titles, descriptions, FAQs, headings, the hub Budget row and
+  route line, and any other article quoting the figure. Never put "a" or
+  "an" right before one: the article depends on the number.
+- To change a price, change the item in costItems.js and nothing else.
+  `scripts/check-cost-tables.mjs` (front of `build`) fails on an unknown
+  item or product, a figure off the $5 grid, a broken placeholder, or a
+  hand-typed copy of a converted animal's setup total.
+
 ## Care package card
 
 - `<CarePackageBlock>` goes on exactly two guides per packaged species: the
