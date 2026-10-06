@@ -997,7 +997,7 @@ export const fishGuides = [
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Before any fish", value: "A finished cycle reads zero ammonia and zero nitrite while still processing a dose, which is a different question from how long the tank has been running.", source: "aquarium-cycling-guide" },
-        { label: "Tank size", value: "75 gallons for a single adult, 100 to 125-plus for a pair. A 2-inch juvenile reaches 12 inches or more inside its first year, so buy the adult tank now.", source: "oscar-fish-tank-setup-guide" },
+        { label: "Tank size", value: "75 gallons for a single adult, 100 to 125-plus for a pair. A 2-inch juvenile reaches about two-thirds of adult size inside its first year, so buy the adult tank now.", source: "oscar-fish-tank-setup-guide" },
         { label: "Space first", value: "Everything else is downstream. No enrichment compensates for an adult oscar in a 40 gallon.", source: "oscar-fish-enrichment-guide" },
         { label: "Filtration", value: "A canister sized to 4 to 5 times the tank volume an hour, often with a second hang-on-back for redundancy, which in oscar keeping is the baseline rather than overkill.", source: "oscar-fish-tank-setup-guide" },
         { label: "Temperature", value: "74 to 81°F, kept stable, from a reliable submersible heater. No cold tolerance at all.", source: "oscar-fish-tank-setup-guide" },
@@ -1200,7 +1200,7 @@ export const fishGuides = [
         { label: "Filtration", value: "Flow of 4 to 5 times the tank volume an hour, from a hang-on-back or canister. A sponge filter only if fry survival is the priority.", source: "swordtail-tank-setup-guide" },
         { label: "Cover", value: "Dense live plants along the sides and back, open water through the middle. Cover for pursued females, and broken sight lines that stop a dominant male tracking a subordinate across the tank.", source: "swordtail-enrichment-guide" },
         { label: "Feeding", value: "Once or twice a day, or two to three smaller meals; the count matters less than clearing each one within about 2 minutes. Overfeeding is the common mistake. Vegetable content a few times a week, and bloodworms, brine shrimp or daphnia in regular rotation.", source: "swordtail-feeding-guide" },
-        { label: "Acclimation", value: "Float the sealed bag 15 to 20 minutes, then drip over 45 to 60 minutes. Net the fish in; bag water carries transport ammonia.", source: "swordtail-handling-guide" },
+        { label: "Acclimation", value: "Float the sealed bag 15 to 20 minutes; drip over 45 to 60 minutes only if your water is soft or acidic. Net the fish in; bag water carries transport ammonia.", source: "swordtail-handling-guide" },
         { label: "Quarantine", value: "At least 30 days in a separate tank before a new fish joins the display.", source: "swordtail-handling-guide" },
         { label: "Sexing", value: "Males carry the sword and a rod-like anal fin. Females have neither and are the larger sex.", source: "swordtail-handling-guide" },
         { label: "Sex ratio", value: "At least two or three females per male, and three or four where the tank allows. Chewed fins or a clamped, listless fish in a male-heavy tank means move it to a recovery tank and fix the ratio at the same time.", source: "swordtail-health-issues-guide" },
