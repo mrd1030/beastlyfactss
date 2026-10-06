@@ -10,12 +10,17 @@ import TurnstileWidget, { isTurnstileEnabled } from '@/components/shared/Turnsti
 
 // /care-packages/library/
 //
-// Where a buyer comes back for the file. noindex,nofollow and out of the
+// Where a buyer comes back for the file. noindex (follow, see below) and out of the
 // sitemap, but prerendered anyway: with no static file Cloudflare falls
 // through to 404.html and the 404 page paints for real before the SPA boots,
 // which a buyer saw on every single visit. Same reasoning as /pack. The
 // prerender captures the loading state and never a signed-in one; see the
 // __IS_PRERENDER__ guard below.
+//
+// follow, not nofollow: the footer links here from every page, so crawlers
+// reach it, and nofollow turned its header and footer into one nofollow
+// inlink on 19 site pages (Ahrefs audit 2026-10-06). noindex alone keeps it
+// out of search.
 //
 // Sign-in is an emailed one time code, no password. There are no buyer accounts
 // at checkout - Stripe collects an email, the webhook writes it onto the
@@ -268,7 +273,7 @@ export default function CarePackageLibrary() {
     <div className="min-h-screen px-4 sm:px-6 py-12">
       <Helmet>
         <title>Your care package library | Beastly Facts</title>
-        <meta name="robots" content="noindex, nofollow" />
+        <meta name="robots" content="noindex, follow" />
       </Helmet>
 
       <div className="max-w-2xl mx-auto">
