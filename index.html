@@ -167,6 +167,11 @@
       });
     </script>
 
+    <!-- The homepage's day-picked sections start at opacity 0 and fade up once
+         today's picks are in (src/components/home/DailyFade.jsx). Without
+         JavaScript they would never appear, so show them as prerendered. -->
+    <noscript><style>.daily-fade { opacity: 1 !important; }</style></noscript>
+
 </head>
   <body>
     <div id="app-splash"></div>
