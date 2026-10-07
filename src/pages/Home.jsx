@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import HeroSection from '@/components/home/HeroSection';
 import SectionDivider from '@/components/home/SectionDivider';
+import DailyFade from '@/components/home/DailyFade';
 import FactModal from '@/components/shared/FactModal';
 import ImageLightbox from '@/components/shared/ImageLightbox';
 import { imagePathFor } from '@/lib/data/factImages';
@@ -58,13 +59,13 @@ export default function Home() {
       
       <HeroSection onOpenFact={setSelectedFact} />
 
-      <HomeChild name="FeaturedEvent" />
+      <DailyFade><HomeChild name="FeaturedEvent" /></DailyFade>
 
-      <HomeChild name="TrendingFacts" onOpenFact={setSelectedFact} onOpenImage={setImageFact} />
+      <DailyFade><HomeChild name="TrendingFacts" onOpenFact={setSelectedFact} onOpenImage={setImageFact} /></DailyFade>
       {/* Directly under the fact cards: the strip continues the same rotation
           they use, and gives /gallery/ a real entry point. It had exactly one
           inbound link site-wide, on the Facts page. */}
-      <HomeChild name="FactPhotoStrip" onOpenFact={setSelectedFact} />
+      <DailyFade><HomeChild name="FactPhotoStrip" onOpenFact={setSelectedFact} /></DailyFade>
       <HomeChild name="FactsToGuidesBanner" />
       <HomeChild name="BeastleTeaser" />
 
@@ -73,20 +74,20 @@ export default function Home() {
           was tried here and taken back out - see SectionDivider.jsx. */}
       <SectionDivider />
 
-      <HomeChild name="CategoryBrowse" />
+      <DailyFade><HomeChild name="CategoryBrowse" /></DailyFade>
       {/* Reference content: animal profiles + care guides, together.
           Beastlypedia leads it because the wild-animal thread runs unbroken
           from TrendingFacts through CategoryBrowse into here, and the fact
           database is mostly wild animals. The handover to pet care happens
           once, at EncyclopediaTeaser, instead of twice. */}
-      <HomeChild name="BeastlypediaTeaser" />
-      <HomeChild name="EncyclopediaTeaser" />
-      <HomeChild name="GuideSpotlight" />
+      <DailyFade><HomeChild name="BeastlypediaTeaser" /></DailyFade>
+      <DailyFade><HomeChild name="EncyclopediaTeaser" /></DailyFade>
+      <DailyFade><HomeChild name="GuideSpotlight" /></DailyFade>
 
       <SectionDivider />
 
       {/* Editorial content: articles + fiction + play, together */}
-      <HomeChild name="CritterDigestPreview" />
+      <DailyFade><HomeChild name="CritterDigestPreview" /></DailyFade>
       <HomeChild name="DexTeaser" />
       <HomeChild name="QuizzesTeaser" />
       <HomeChild name="Newsletter" />

@@ -70,10 +70,14 @@ export default function HeroSection({ onOpenFact }) {
   const [, setTick] = useState(0);
   const facts = getHomeChild('facts');
   const [dayIndex, setDayIndex] = useState(0);
+  // The card frame stays put; only the fact text waits for today's pick and
+  // fades up, so nobody watches the build-day default swap out (DailyFade).
+  const [factReady, setFactReady] = useState(false);
   useEffect(() => {
     if (!facts) { preloadHomeChildren().then(() => setTick((n) => n + 1)); return; }
     if (window.__IS_PRERENDER__) return;
     setDayIndex(new Date().getDate() % facts.length);
+    setFactReady(true);
   }, [facts]);
   const dailyFact = facts ? facts[dayIndex] : null;
   const [learned, setLearned] = useState(false);
@@ -241,13 +245,15 @@ export default function HeroSection({ onOpenFact }) {
               delay), and a non-composited animation runs on the main thread and
               can feed CLS. It is also above the fold, so a 0.3s delay meant
               prerendered content sat invisible waiting for framer to hydrate.
-              The markup is already in the HTML; it should simply be visible. */}
+              The card itself is in the HTML and visible from first paint; only
+              the fact text fades, with a plain CSS opacity transition (composited,
+              no delay) once today's pick replaces the build-day default. */}
           {dailyFact && <div className="mt-5 sm:mt-6 bg-card/80 backdrop-blur-md border border-border rounded-2xl p-4 max-w-lg">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">⭐</span>
               <span className="font-body font-bold text-xs text-secondary">DAILY FACT</span>
             </div>
-            <p className="text-sm text-foreground font-body leading-relaxed">
+            <p className={`daily-fade text-sm text-foreground font-body leading-relaxed transition-opacity duration-300 motion-reduce:transition-none ${factReady ? 'opacity-100' : 'opacity-0'}`}>
               {`${dailyFact.emoji} `}
               <strong>{`${dailyFact.title}:`}</strong>
               {` ${truncateDescription(dailyFact.fact, 120)} `}
