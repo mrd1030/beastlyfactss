@@ -678,12 +678,17 @@ export default function GuideDetail() {
                   <Printer className="w-3.5 h-3.5" aria-hidden="true" />Printable Guide
                 </p>
                 <Link to={carePackage.storefront === 'stripe' ? `/care-packages/${carePackage.id}/` : '/care-packages/store/'} className="group block">
-                  <div className="flex items-start gap-3 mb-3">
+                  {/* Whole cover at book shape (a letter page, 17:22), the
+                      same as the in-article CarePackageBlock, not a 48px
+                      square crop of it. */}
+                  <div className="flex items-center gap-4 mb-3">
                     <img
                       src={carePackage.thumbnail || carePackageBookCover(carePackage)}
                       alt={`${carePackage.name} cover`}
                       loading="lazy"
-                      className="w-12 h-12 object-cover rounded-lg border border-border flex-shrink-0 bg-white"
+                      width="1224"
+                      height="1584"
+                      className="w-20 h-auto aspect-[17/22] object-cover rounded-md border border-border shadow-sm flex-shrink-0 bg-white"
                     />
                     <div>
                       <p className="font-body font-bold text-sm text-foreground group-hover:text-secondary transition-colors leading-snug">

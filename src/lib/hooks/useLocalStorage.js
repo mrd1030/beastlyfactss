@@ -50,7 +50,7 @@ export function useLocalStorage(key, initialValue) {
 const DARK_EVENT = 'beastly-dark-mode-change';
 
 export function useDarkMode() {
-  const [dark, setDarkState] = useLocalStorage('beastly-dark-mode', false);
+  const [dark, setDarkState, loaded] = useLocalStorage('beastly-dark-mode', false);
 
   useEffect(() => {
     const follow = (e) => setDarkState(e.detail);
@@ -64,6 +64,13 @@ export function useDarkMode() {
   };
 
   useEffect(() => {
+    // Not until the stored value has been read. On the mount pass `dark` is
+    // still the default false, and toggling here stripped the class that
+    // index.html's inline script had already set for a dark-mode visitor:
+    // the page painted light for a frame, then went dark again once the read
+    // landed. That was the dark-mode-only flash on every load. The inline
+    // script owns the class until the read; this effect owns it after.
+    if (!loaded) return;
     document.documentElement.classList.toggle('dark', dark);
     // Keeps the browser/OS chrome color (status bar, task switcher) matching
     // the live theme instead of the static index.html fallback - otherwise
@@ -71,7 +78,7 @@ export function useDarkMode() {
     document
       .querySelector('meta[name="theme-color"]')
       ?.setAttribute('content', dark ? '#0f1a15' : '#FDF9F1');
-  }, [dark]);
+  }, [dark, loaded]);
 
   return [dark, setDark];
 }
