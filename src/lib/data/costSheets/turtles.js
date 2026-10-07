@@ -42,7 +42,7 @@ export const turtleSheets = {
       { item: "red-eared-slider-powerful-canister-filter-2", text: "Powerful [canister filter] (2-3x tank volume)" },
       { item: "red-eared-slider-large-basking-platform", text: "Large [basking platform]" },
       { item: "red-eared-slider-strong-uvb-t5-ho", text: "Strong [UVB] (T5 HO; check the length against your enclosure)" },
-      { item: "red-eared-slider-basking-heat-lamp", text: "Basking heat lamp" },
+      { item: "red-eared-slider-basking-heat-lamp", products: ["basking-bulb-75w", "basking-dome-fixture"], text: "Basking heat lamp: a [basking bulb] in a [dome fixture] (check the wattage against your basking distance)" },
       { item: "red-eared-slider-submersible-water-heater", text: "[Submersible water heater] (check the wattage against your water volume)" },
       { item: "red-eared-slider-water-quality-test-kit", text: "[Water quality test kit]" },
       { item: "thermostat-pt02t", text: "[Thermostat] for the basking lamp" },

@@ -140,6 +140,21 @@ Catalog swept first, then Amazon searched with the spec from each care guide; ev
 - Not found: a Jackson's chameleon hybrid enclosure with solid sides, 24 x 24 x 48 in.
 - Not sourced, per the Fable list: replacement UVB tubes, the cockatoo cage and carrier, lovebird and cockatiel perches, tray paper, the acrylic tarantula lid, the 8x4x4 and 5x2.5x4 enclosures, garter vitamin B1.
 
+## Setup-row linking pass (2026-10-07)
+
+Live sweep of all 84 cost tables found about 40 setup rows with no link. Linked only where a catalog product strictly matches the row and its guide; each row's range now covers the combined catalog price of what it links.
+
+- Bearded dragon, Going Bioactive: the owner's own mix (owner, 2026-10-07), Michigan Peat Garden Magic topsoil (three or four 40 lb bags, $29), Quikrete Play Sand (two or three 50 lb bags, B0896YDW45, $24.99, new to the catalog; sold by a reseller, genuine Quikrete) and Exo Terra Desert Sand (one or two 10 lb bags, B0017JG1IS, $17.99, new). Row $20 to $35 (hardware-store prices) is now $155 to $230. The prose no longer says bagged mixes cost "several times more".
+- Uromastyx: burrowing mix now links the play sand, the topsoil (owner, 2026-10-07) and the Excavator clay it already linked: $70 to $95 is now $155 to $175.
+- Jackson's chameleon: halogen basking bulb, the Exo Terra Sun Glo 50 W the setup guide already links ($15 to $25). Enclosure still unlinked: the ReptiBreeze 24 x 24 x 48 is all screen and the guide wants two or three solid sides.
+- Fire skink: the 75 W "2 pack" row was an incandescent; the guide calls for a halogen of about 50 W in a dome, so the row is now the Exo Terra Sun Glo 50 W in the basking dome fixture, $30 to $45 (was $45).
+- Red-eared slider: basking heat lamp, the 75 W basking bulb in the dome fixture the setup guide links ($20 to $40, unchanged).
+- Ackie monitor: hides, the Exo Terra Reptile Cave XL ($20 to $40, unchanged).
+- Garter snake: warm, cool and humid hides, the cork bark round hide whose covers already name that row ($10 to $30, was $15 to $30).
+- Unsure, left unlinked: perches for the lovebird (3/8 to 1/2 in) and the large parrot row (5/8 to 1.5 in): the CZWESTC set is 0.6 to 1 in; the LIMIO set lists no diameters. Green iguana climbing branches: the mopani listing gives no size for an adult iguana.
+- No gear available (no catalog product, or only a wrong size; new products need the owner): snake hook (hognose), small gravel vacuum (betta; the catalog's Python Pro-Clean is the large size), fine-mesh net and transfer bucket and two 5 gallon buckets (goldfish), 75 gallon tank only (oscar), acrylic-lid enclosure (tarantula), fine aquarium sand (axolotl), cork flat (African fat-tail; only mini flats), tight-fitting lid (mourning gecko), large travel carrier (cockatoo; the catalog's is a medium parrot carrier at $73), water bottle and small carrier (hamster), 2 x 3 ft enclosure (hedgehog), aviary cage with 1/2 in bars (flying squirrel), hide, brush, washable flooring and measuring cup (rabbit), accessory bundles (sugar glider, chinchilla).
+- Nothing to buy by nature, stays unlinked: the custom or PVC enclosures (ackie, tegu), the sulcata's outdoor pen and heated shelter, the red-eared slider's 100+ gallon tank or pond, and the deep DIY topsoil mixes for the ackie, tegu and 8 x 4 builds (at Amazon prices for bagged topsoil and sand those rows would multiply). Grey and Quaker cages stay unlinked as decided.
+
 ## Owner questions from the price list (2026-10-06)
 
 Collected while moving every cost guide onto the shared price list; answered together at the end.

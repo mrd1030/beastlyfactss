@@ -56,7 +56,7 @@ export const COST_ITEMS = {
   'hides-large-lizard': {
     label: 'Hides',
     spec: 'large lizard',
-    low: 20, high: 40, product: null, checked: '2026-10',
+    low: 20, high: 40, product: 'hide-exo-terra-reptile-cave-xl', checked: '2026-10',
   },
   'infrared-thermometer': {
     label: 'Infrared thermometer gun',
@@ -591,7 +591,7 @@ export const COST_ITEMS = {
   'jacksons-chameleon-halogen-basking-bulb': {
     label: "Halogen basking bulb",
     spec: "",
-    low: 20, high: 25, product: null, checked: '2026-10',
+    low: 15, high: 25, product: "milk-snake-halogen-bulb-exo-terra-sun-glo-50w", checked: '2026-10',
   },
   'jacksons-chameleon-dimmer-thermostat-basking-bulb': {
     label: "Dimmer/thermostat for the basking bulb",
@@ -764,9 +764,9 @@ export const COST_ITEMS = {
     low: 95, high: 115, product: "uvb-arcadia-forest-6", checked: '2026-10',
   },
   'fire-skink-basking-bulb-2-pack': {
-    label: "Basking bulb (2 pack) and dome fixture",
+    label: "Halogen basking bulb, about 50 W, in a dome fixture",
     spec: "",
-    low: 45, high: 45, product: null, checked: '2026-10',
+    low: 30, high: 45, product: null, checked: '2026-10',
   },
   'fire-skink-dimming-thermostat-basking-bulb': {
     label: "Dimming thermostat, for the basking bulb",
@@ -1176,7 +1176,7 @@ export const COST_ITEMS = {
   'garter-snake-warm-cool-humid-hides': {
     label: "Warm, cool, and humid hides",
     spec: "",
-    low: 15, high: 30, product: null, checked: '2026-10',
+    low: 10, high: 30, product: "cork-bark-round-hide", checked: '2026-10',
   },
   'garter-snake-substrate-coconut-fiber-cypress': {
     label: "Substrate (coconut fiber, cypress mulch, or leaf litter)",
@@ -1289,7 +1289,7 @@ export const COST_ITEMS = {
     low: 55, high: 100, product: "uvb-zoo-med-reptisun-24in-high-output-hood", checked: '2026-10',
   },
   'red-eared-slider-basking-heat-lamp': {
-    label: "Basking heat lamp",
+    label: "Basking heat lamp: a bulb in a dome fixture",
     spec: "",
     low: 20, high: 40, product: null, checked: '2026-10',
   },
@@ -2320,7 +2320,7 @@ export const COST_ITEMS = {
   'uromastyx-burrowing-mix-4x2': {
     label: "Burrowing mix of play sand, topsoil and excavator clay",
     spec: "4 in over 4 x 2 ft, 2.5 cu ft",
-    low: 70, high: 95, product: "substrate-zoo-med-excavator-clay-10lb", checked: '2026-10',
+    low: 155, high: 175, product: "substrate-zoo-med-excavator-clay-10lb", checked: '2026-10',
   },
   'angelfish-led-36-48': {
     label: "Full spectrum aquarium LED, 36 to 48 in",
@@ -2342,7 +2342,7 @@ export const COST_ITEMS = {
   'substrate-diy-arid-bioactive-4x2': {
     label: "Arid bioactive substrate, a DIY topsoil and play sand mix",
     spec: "4 to 6 in over 4 x 2 ft, 80 to 120 qt",
-    low: 20, high: 35, product: null, checked: '2026-10',
+    low: 155, high: 230, product: null, checked: '2026-10',
   },
   'screen-lid-36x18-with-clips': {
     label: "Screen lid for a 36 x 18 in tank, with heavy-duty clips",
