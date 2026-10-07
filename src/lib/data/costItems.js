@@ -2342,7 +2342,13 @@ export const COST_ITEMS = {
   'substrate-diy-arid-bioactive-4x2': {
     label: "Arid bioactive substrate, a DIY topsoil and play sand mix",
     spec: "4 to 6 in over 4 x 2 ft, 80 to 120 qt",
-    low: 80, high: 90, product: null, checked: '2026-10',
+    low: 65, high: 75, product: null, checked: '2026-10',
+  },
+  // Owner, 2026-10-07: optional, a finer sifted sand to mix into the play sand.
+  'desert-sand-optional-10lb': {
+    label: "Desert sand, optional, a finer sand to mix in",
+    spec: "one 10 lb bag",
+    low: 15, high: 20, product: "desert-sand-exo-terra-10lb", checked: '2026-10',
   },
   // Owner, 2026-10-07: optional, but recommended so burrows hold their shape.
   'excavator-clay-optional-4x2': {
