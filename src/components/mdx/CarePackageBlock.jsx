@@ -32,13 +32,17 @@ export default function CarePackageBlock({ animal, variant = 'setup' }) {
     ? ` puts these red flags, a symptom quick reference and an emergency card on paper, in a ${pkg.pages}-page PDF, ${pkg.price}.`
     : ` carries this setup as a checklist with the targets to hit, in a ${pkg.pages}-page PDF you can keep by the ${carePackageHome(pkg)}, ${pkg.price}.`;
 
+  // not-prose: the article's typography would otherwise add paragraph and
+  // image margins inside the card, which left a tall empty band under the
+  // sample link on phones. The cover shows at every width, smaller on phones,
+  // the same as the hub sidebar card.
   return (
-    <div className="my-8 rounded-2xl border border-secondary/30 border-l-4 border-l-secondary bg-secondary/5 p-5 flex items-center gap-4">
+    <div className="not-prose my-8 rounded-2xl border border-secondary/30 border-l-4 border-l-secondary bg-secondary/5 p-5 flex items-start sm:items-center gap-4">
       <img
         src={pkg.thumbnail || carePackageBookCover(pkg)}
         alt={`${pkg.name} cover`}
         loading="lazy"
-        className="hidden sm:block w-16 h-16 object-cover rounded-xl border border-border flex-shrink-0 bg-white"
+        className="w-12 h-12 sm:w-16 sm:h-16 object-cover rounded-lg sm:rounded-xl border border-border flex-shrink-0 bg-white"
       />
       <div className="min-w-0 flex-1">
         <div className="flex items-center gap-1.5 text-xs font-body font-bold uppercase tracking-wider text-secondary mb-1">
