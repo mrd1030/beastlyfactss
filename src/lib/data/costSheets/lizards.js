@@ -41,7 +41,9 @@ export const lizardSheets = {
       { item: "bearded-dragon-supply-plain-calcium-calcium", text: "First supply of [plain calcium], [calcium with D3] and a [multivitamin]" },
     ],
     optional: [
-      { item: "substrate-diy-arid-bioactive-4x2", text: "Arid bioactive substrate 4 to 6 inches deep over the 4 by 2 foot floor (80 to 120 quarts): a DIY mix of about 60% organic topsoil and 40% play sand, three or four bags of each" },
+      { item: "substrate-diy-arid-bioactive-4x2", products: ["topsoil-michigan-peat-garden-magic-40lb"], text: "Arid bioactive substrate 4 to 6 inches deep over the 4 by 2 foot floor: a DIY mix of about two-thirds [organic topsoil] and one-third hardware-store play sand. Two 40 lb bags of topsoil and one or two 50 lb bags of play sand, since the hides, climbing branches and basking platform fill part of the floor" },
+      { item: "desert-sand-optional-10lb", text: "[Desert sand], optional: a 10 lb bag of finer sifted sand to mix into the play sand, which runs dusty" },
+      { item: "excavator-clay-optional-4x2", text: "[Excavator clay] mixed in, optional but recommended so burrows and tunnels hold their shape: one or two 10 lb bags" },
       { item: "hognose-snake-leaf-litter-surface-cover", text: "Dry [leaf litter] for the surface" },
       { text: "Isopods, one culture of 20 to 30 powder orange or powder blue", low: 15, high: 40 },
       { text: "Arid springtails, one 8 ounce culture", low: 15, high: 25 },
@@ -170,7 +172,7 @@ export const lizardSheets = {
       { item: "uromastyx-dimming-thermostat-halogens", text: "[Dimming thermostat] for the halogens" },
       { item: "uromastyx-digital-thermometer-hygrometer", text: "[Digital thermometer and hygrometer]" },
       { item: "uromastyx-infrared-temperature-gun", text: "[Infrared temperature gun]" },
-      { item: "uromastyx-burrowing-mix-4x2", text: "Burrowing mix 4 inches deep over the 4 by 2 foot floor (2.5 cubic feet): about half play sand (three 0.5 cubic foot bags), 30% topsoil (one bag) and 20% [excavator clay] (four to five 10 lb bags)" },
+      { item: "uromastyx-burrowing-mix-4x2", products: ["topsoil-michigan-peat-garden-magic-40lb", "substrate-zoo-med-excavator-clay-10lb"], text: "Burrowing mix 4 inches deep over the 4 by 2 foot floor (2.5 cubic feet): about half hardware-store play sand (three 50 lb bags), 30% [organic topsoil] (one 40 lb bag) and 20% [excavator clay] (four to five 10 lb bags)" },
       { item: "retes-stack-slate", text: "[Stacked slate] for the basking stack" },
       { item: "water-dish-shallow", text: "[Shallow water bowl], even though it will mostly go untouched" },
       { item: "kitchen-scale-grams", text: "[Gram scale] for monthly weights" },
@@ -204,7 +206,7 @@ export const lizardSheets = {
     necessities: [
       { item: "fire-skink-enclosure-36x18x18-inch-glass", text: "[Enclosure, 36x18x18 inch] glass terrarium (check the dimensions before you buy)" },
       { item: "fire-skink-t5-ho-uvb-kit", text: "[T5 HO UVB kit, 36 inch, 6% bulb] (check the length against your enclosure)" },
-      { item: "fire-skink-basking-bulb-2-pack", text: "Basking bulb (2 pack) and dome fixture" },
+      { item: "fire-skink-basking-bulb-2-pack", products: ["milk-snake-halogen-bulb-exo-terra-sun-glo-50w", "basking-dome-fixture"], text: "Halogen [basking bulb], about 50 W, in a [dome fixture]" },
       { item: "fire-skink-dimming-thermostat-basking-bulb", text: "[Dimming thermostat], for the basking bulb" },
       { item: "fire-skink-coconut-fiber-substrate-6", text: "Coconut fiber substrate, about 6 inches deep (8 to 9 bags)" },
       { item: "fire-skink-two-hides", text: "Two hides" },

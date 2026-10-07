@@ -3874,8 +3874,21 @@ export const AFFILIATE_PRODUCTS = [
     category: "Substrate",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B000GQ4KX6?tag=beastlyfacts-20",
+    price: "$29",
     description: "Reed sedge peat and sand topsoil for mixing burrowing and bioactive substrates. Check the bag for added fertilizer before using it in an enclosure.",
     covers: ["Topsoil for the 50/50 topsoil and coconut coir mix"],
+    pets: ["reptiles-amphibians"],
+  },
+  // Owner-chosen 2026-10-07: the desert sand he mixes with hardware-store play sand for his own bearded dragon.
+  {
+    slug: "desert-sand-exo-terra-10lb",
+    product: "Exo Terra Desert Sand, Red, 10 lb",
+    category: "Substrate",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B0017JG1IS?tag=beastlyfacts-20",
+    price: "$18",
+    description: "Sifted natural desert sand with no added dyes, mixed in with play sand for color and texture in an arid bioactive substrate.",
+    covers: ["Desert sand mixed in with the play sand"],
     pets: ["reptiles-amphibians"],
   },
   {
