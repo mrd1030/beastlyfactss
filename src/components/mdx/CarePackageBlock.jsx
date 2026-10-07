@@ -32,19 +32,29 @@ export default function CarePackageBlock({ animal, variant = 'setup' }) {
     ? ` puts these red flags, a symptom quick reference and an emergency card on paper, in a ${pkg.pages}-page PDF, ${pkg.price}.`
     : ` carries this setup as a checklist with the targets to hit, in a ${pkg.pages}-page PDF you can keep by the ${carePackageHome(pkg)}, ${pkg.price}.`;
 
+  // not-prose: the article's typography would otherwise add paragraph and
+  // image margins inside the card, which left a tall empty band under the
+  // sample link on phones. The cover is a letter-size page (17:22), shown
+  // whole at book shape rather than cropped to a square, at every width.
+  // On phones the text wrapper is display: contents, so the cover and the
+  // label share the first grid row and the sentence runs full width beneath;
+  // beside an 80px cover it was squeezed to about four words a line. From sm
+  // up the wrapper is a block in the second column, cover and text side by side.
   return (
-    <div className="my-8 rounded-2xl border border-secondary/30 border-l-4 border-l-secondary bg-secondary/5 p-5 flex items-center gap-4">
+    <div className="not-prose my-8 rounded-2xl border border-secondary/30 border-l-4 border-l-secondary bg-secondary/5 p-5 grid grid-cols-[auto_1fr] gap-x-4 gap-y-3 items-center">
       <img
         src={pkg.thumbnail || carePackageBookCover(pkg)}
         alt={`${pkg.name} cover`}
         loading="lazy"
-        className="hidden sm:block w-16 h-16 object-cover rounded-xl border border-border flex-shrink-0 bg-white"
+        width="1224"
+        height="1584"
+        className="col-start-1 row-start-1 w-20 sm:w-24 h-auto aspect-[17/22] object-cover rounded-md border border-border shadow-sm bg-white"
       />
-      <div className="min-w-0 flex-1">
-        <div className="flex items-center gap-1.5 text-xs font-body font-bold uppercase tracking-wider text-secondary mb-1">
+      <div className="contents sm:block sm:col-start-2 sm:row-start-1 sm:min-w-0">
+        <div className="col-start-2 row-start-1 flex items-center gap-1.5 text-xs font-body font-bold uppercase tracking-wider text-secondary sm:mb-1">
           <Printer className="h-3.5 w-3.5" /> Printable Guide
         </div>
-        <p className="text-foreground font-body text-sm">
+        <p className="col-span-2 text-foreground font-body text-sm">
           {/* Single strings either side of the link: this block is prerendered
               inside articles, and text beside {expressions} renders as several
               nodes that the captured HTML merges, failing hydration. See main.jsx. */}
@@ -55,7 +65,7 @@ export default function CarePackageBlock({ animal, variant = 'setup' }) {
           {tail}
         </p>
         {sampleHref && (
-          <p className="font-body text-sm mt-2">
+          <p className="col-span-2 font-body text-sm sm:mt-2">
             <Link to={sampleHref} className="font-semibold text-secondary underline decoration-secondary/40 hover:decoration-secondary">
               {`Read the first ${pkg.samplePages} pages free`}
             </Link>
