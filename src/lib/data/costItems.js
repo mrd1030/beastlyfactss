@@ -2320,7 +2320,7 @@ export const COST_ITEMS = {
   'uromastyx-burrowing-mix-4x2': {
     label: "Burrowing mix of play sand, topsoil and excavator clay",
     spec: "4 in over 4 x 2 ft, 2.5 cu ft",
-    low: 155, high: 175, product: "substrate-zoo-med-excavator-clay-10lb", checked: '2026-10',
+    low: 105, high: 125, product: "substrate-zoo-med-excavator-clay-10lb", checked: '2026-10',
   },
   'angelfish-led-36-48': {
     label: "Full spectrum aquarium LED, 36 to 48 in",
@@ -2342,7 +2342,13 @@ export const COST_ITEMS = {
   'substrate-diy-arid-bioactive-4x2': {
     label: "Arid bioactive substrate, a DIY topsoil and play sand mix",
     spec: "4 to 6 in over 4 x 2 ft, 80 to 120 qt",
-    low: 100, high: 130, product: null, checked: '2026-10',
+    low: 80, high: 90, product: null, checked: '2026-10',
+  },
+  // Owner, 2026-10-07: optional, but recommended so burrows hold their shape.
+  'excavator-clay-optional-4x2': {
+    label: "Excavator clay, optional, so burrows hold their shape",
+    spec: "one or two 10 lb bags",
+    low: 10, high: 30, product: "substrate-zoo-med-excavator-clay-10lb", checked: '2026-10',
   },
   'screen-lid-36x18-with-clips': {
     label: "Screen lid for a 36 x 18 in tank, with heavy-duty clips",

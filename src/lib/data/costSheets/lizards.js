@@ -41,7 +41,8 @@ export const lizardSheets = {
       { item: "bearded-dragon-supply-plain-calcium-calcium", text: "First supply of [plain calcium], [calcium with D3] and a [multivitamin]" },
     ],
     optional: [
-      { item: "substrate-diy-arid-bioactive-4x2", products: ["topsoil-michigan-peat-garden-magic-40lb", "play-sand-quikrete-50lb", "desert-sand-exo-terra-10lb"], text: "Arid bioactive substrate 4 to 6 inches deep over the 4 by 2 foot floor (80 to 120 quarts): a DIY mix of about 60% [organic topsoil] and 40% sand, mostly [play sand] with some [desert sand] mixed in: two 40 lb bags of topsoil, one or two 50 lb bags of play sand and a 10 lb bag of desert sand, since the hides, climbing branches and basking platform fill part of the floor" },
+      { item: "substrate-diy-arid-bioactive-4x2", products: ["topsoil-michigan-peat-garden-magic-40lb", "desert-sand-exo-terra-10lb"], text: "Arid bioactive substrate 4 to 6 inches deep over the 4 by 2 foot floor: a DIY mix of about two-thirds [organic topsoil] and one-third sand, hardware-store play sand with some [desert sand] mixed in. Two 40 lb bags of topsoil, one 50 lb bag of play sand and a 10 lb bag of desert sand, since the hides, climbing branches and basking platform fill part of the floor" },
+      { item: "excavator-clay-optional-4x2", text: "[Excavator clay] mixed in, optional but recommended so burrows and tunnels hold their shape: one or two 10 lb bags" },
       { item: "hognose-snake-leaf-litter-surface-cover", text: "Dry [leaf litter] for the surface" },
       { text: "Isopods, one culture of 20 to 30 powder orange or powder blue", low: 15, high: 40 },
       { text: "Arid springtails, one 8 ounce culture", low: 15, high: 25 },
@@ -170,7 +171,7 @@ export const lizardSheets = {
       { item: "uromastyx-dimming-thermostat-halogens", text: "[Dimming thermostat] for the halogens" },
       { item: "uromastyx-digital-thermometer-hygrometer", text: "[Digital thermometer and hygrometer]" },
       { item: "uromastyx-infrared-temperature-gun", text: "[Infrared temperature gun]" },
-      { item: "uromastyx-burrowing-mix-4x2", products: ["play-sand-quikrete-50lb", "topsoil-michigan-peat-garden-magic-40lb", "substrate-zoo-med-excavator-clay-10lb"], text: "Burrowing mix 4 inches deep over the 4 by 2 foot floor (2.5 cubic feet): about half [play sand] (three 50 lb bags), 30% [organic topsoil] (one 40 lb bag) and 20% [excavator clay] (four to five 10 lb bags)" },
+      { item: "uromastyx-burrowing-mix-4x2", products: ["topsoil-michigan-peat-garden-magic-40lb", "substrate-zoo-med-excavator-clay-10lb"], text: "Burrowing mix 4 inches deep over the 4 by 2 foot floor (2.5 cubic feet): about half hardware-store play sand (three 50 lb bags), 30% [organic topsoil] (one 40 lb bag) and 20% [excavator clay] (four to five 10 lb bags)" },
       { item: "retes-stack-slate", text: "[Stacked slate] for the basking stack" },
       { item: "water-dish-shallow", text: "[Shallow water bowl], even though it will mostly go untouched" },
       { item: "kitchen-scale-grams", text: "[Gram scale] for monthly weights" },

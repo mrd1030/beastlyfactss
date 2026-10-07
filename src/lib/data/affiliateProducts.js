@@ -3879,18 +3879,7 @@ export const AFFILIATE_PRODUCTS = [
     covers: ["Topsoil for the 50/50 topsoil and coconut coir mix"],
     pets: ["reptiles-amphibians"],
   },
-  // Owner-chosen 2026-10-07: the play sand and desert sand he mixes for his own bearded dragon.
-  {
-    slug: "play-sand-quikrete-50lb",
-    product: "Quikrete Play Sand, 50 lb",
-    category: "Substrate",
-    retailer: "amazon",
-    link: "https://www.amazon.com/dp/B0896YDW45?tag=beastlyfacts-20",
-    price: "$25",
-    description: "Washed, dried and screened play sand, the sand half of a DIY topsoil and sand mix for desert lizards. A bag is about half a cubic foot.",
-    covers: ["Play sand for the topsoil and sand mix"],
-    pets: ["reptiles-amphibians"],
-  },
+  // Owner-chosen 2026-10-07: the desert sand he mixes with hardware-store play sand for his own bearded dragon.
   {
     slug: "desert-sand-exo-terra-10lb",
     product: "Exo Terra Desert Sand, Red, 10 lb",
