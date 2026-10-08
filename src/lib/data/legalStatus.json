@@ -28447,7 +28447,7 @@
           "sourceId": "nv-nac-503-140",
           "cite": "NAC 503.140(1)(q)",
           "quote": "(q) All felines, except mountain lions and bobcats;",
-          "note": "Nevada clears every cat except the mountain lion and the bobcat, and the Canada lynx is neither, so the state requires no permit, the serval's position. The lynx is federally threatened, which brings federal rules on interstate sale and import, and NAC 503.140(4) says the clearance does not authorize anything that violates federal law. NAC 503.140(4) preserves county and city ordinances, and Clark County, Las Vegas and Henderson are all stricter than the state.",
+          "note": "Nevada clears every cat except the mountain lion and the bobcat, and the Canada lynx is neither, so the state requires no permit, the serval's position. The Canada lynx is federally threatened in the lower 48, which does not bar keeping one but requires a federal permit to move one across state lines in commerce. NAC 503.140(4) says the clearance does not authorize anything that violates federal law. NAC 503.140(4) preserves county and city ordinances, and Clark County, Las Vegas and Henderson are all stricter than the state.",
           "localOverride": true,
           "verifiedOn": "2026-10-01"
         },
@@ -28517,7 +28517,7 @@
           "sourceId": "tn-1660-01-18",
           "cite": "Tenn. Code Ann. § 70-4-403(3); Tenn. Comp. R. & Regs. 1660-01-18-.03",
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q).",
-          "note": "Class I's cats are lions, tigers, leopards, jaguars, cheetahs and cougars, and the Canada lynx is none of them and not a Tennessee animal, so it is Class III. It is federally threatened, which brings federal rules on interstate sale, and rule .01(2) requires a threatened species to have been legally obtained where it came from. The commission's rule chapter adds no mammal to Class I except hybrids of two Class I species. Rule .01(4) asks every keeper of live wildlife to be able to prove legal ownership, a purchase receipt from a licensed propagator among the accepted forms.",
+          "note": "Class I's cats are lions, tigers, leopards, jaguars, cheetahs and cougars, and the Canada lynx is none of them and not a Tennessee animal, so it is Class III. The Canada lynx is federally threatened in the lower 48, which does not bar keeping one but requires a federal permit to move one across state lines in commerce. Rule .01(2) requires a threatened species to have been legally obtained where it came from. The commission's rule chapter adds no mammal to Class I except hybrids of two Class I species. Rule .01(4) asks every keeper of live wildlife to be able to prove legal ownership, a purchase receipt from a licensed propagator among the accepted forms.",
           "verifiedOn": "2026-10-08"
         },
         "NC": {
@@ -28525,7 +28525,7 @@
           "sourceId": "nc-14-417",
           "cite": "N.C. Gen. Stat. § 14-417",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "The serval's position: no statewide rule reaches a nonnative wild cat. The game and fur-bearer definitions name the bobcat and not the lynx. The Canada lynx is federally threatened, which brings federal rules on interstate sale. § 153A-131 lets counties regulate dangerous animals, and several have used it, so the county ordinance is the rule to check.",
+          "note": "The serval's position: no statewide rule reaches a nonnative wild cat. The game and fur-bearer definitions name the bobcat and not the lynx. The Canada lynx is federally threatened in the lower 48, which does not bar keeping one but requires a federal permit to move one across state lines in commerce. § 153A-131 lets counties regulate dangerous animals, and several have used it, so the county ordinance is the rule to check.",
           "localOverride": true,
           "verifiedOn": "2026-10-01"
         },
@@ -28601,7 +28601,7 @@
           "sourceId": "ks-115-20-3",
           "cite": "K.A.R. 115-20-3(a), (b), (d); K.S.A. 32-1301(d)",
           "quote": "(a) Subject to federal or state law or rules and regulations, exotic wildlife species may be imported, possessed, sold, offered for sale or purchased, provided the exotic wildlife was legally captured, raised, exported, possessed, sold or purchased or any combination of these activities in its place of origin. (b) Exotic wildlife may be possessed without limit in time and number.",
-          "note": "Not a Kansas animal, so exotic wildlife, and the dangerous regulated animal list names only lions, tigers, leopards, jaguars, cheetahs and mountain lions among cats. It is federally threatened, which brings federal rules on interstate sale. It is not a dangerous regulated animal under K.S.A. 32-1301 and not on the 115-18-10 prohibited list, whose only canid is the Asian raccoon dog.",
+          "note": "Not a Kansas animal, so exotic wildlife, and the dangerous regulated animal list names only lions, tigers, leopards, jaguars, cheetahs and mountain lions among cats. The Canada lynx is federally threatened in the lower 48, which does not bar keeping one but requires a federal permit to move one across state lines in commerce. It is not a dangerous regulated animal under K.S.A. 32-1301 and not on the 115-18-10 prohibited list, whose only canid is the Asian raccoon dog.",
           "verifiedOn": "2026-10-01"
         },
         "SC": {
@@ -28609,7 +28609,7 @@
           "sourceId": "sc-47-2",
           "cite": "§ 47-2-10(2); § 50-16-20(A)(1)",
           "quote": "Family Felidae, Genus panthera - all lions, tigers, leopards, jaguars, cougars, cheetahs, snow leopards, and clouded leopards;",
-          "note": "Read and nothing found. The large cat ban is drawn at genus Panthera and the lynx is outside it, and it is not among the named furbearers, the serval's position. It is federally threatened, which brings federal rules on interstate sale.",
+          "note": "Read and nothing found. The large cat ban is drawn at genus Panthera and the lynx is outside it, and it is not among the named furbearers, the serval's position. The Canada lynx is federally threatened in the lower 48, which does not bar keeping one but requires a federal permit to move one across state lines in commerce.",
           "verifiedOn": "2026-10-01"
         },
         "MT": {
@@ -28654,7 +28654,7 @@
           "sourceId": "al-220-2-26",
           "cite": "§ (1)",
           "quote": "Any of the following from any area outside the state of Alabama; any member of the family Cervidae (to include but not be limited to deer, elk, moose, caribou), species of coyote, species of fox, species of raccoon, species of skunk, wild rodent, or strain of wild turkey, black bear (Ursus americanus), mountain lion (Felis concolor), bobcat (Felis rufus)",
-          "note": "The only cats the rule names are Alabama's own mountain lion and bobcat. The Canada lynx is neither, is not native, and is not federally injurious, so the state rule does not reach it. Its federal threatened listing in the lower 48 is a separate layer: a federal permit is needed to move one across state lines in commerce.",
+          "note": "The only cats the rule names are Alabama's own mountain lion and bobcat. The Canada lynx is neither, is not native, and is not federally injurious, so the state rule does not reach it. The Canada lynx is federally threatened in the lower 48, which does not bar keeping one but requires a federal permit to move one across state lines in commerce.",
           "localOverride": true,
           "verifiedOn": "2026-10-01"
         },
@@ -28689,7 +28689,7 @@
           "sourceId": "ms-40-2-8-3",
           "cite": "Rule 8.3(A)(1)(b), (A)(5)(b)(v)",
           "quote": "Family Canidae: Genus Canis (wolves, jackals, and dingos; all species, including crosses between wolves and domestic animals); excluding coyote (Canis latrans); Chrysocyon brachyurus (maned wolf); Cuon alpinus (red dog or dhole); Lycaon pictus (African hunting dog); ii. Family Ursidae (bears) - all species; iii. Family Mustelidae - Gulo gulo (wolverine); iv. Family Hyaenidae (hyenas) - all species; v. Family Felidae: Genus Leo or Panthera or Neofelis (lions, tigers, jaguars, and leopards) - all species; Acinonyx iubatus (cheetah); Felis concolor (cougar) - all subspecies;",
-          "note": "Rule 8.3's cat entry names the lion, tiger, jaguar, leopard, clouded leopard, cheetah and cougar only, so the lynx is not an inherently dangerous animal here, and it is not on the Rule 8.4 game list. The federal threatened listing in the lower 48 still requires a federal permit to move one across state lines in commerce.",
+          "note": "Rule 8.3's cat entry names the lion, tiger, jaguar, leopard, clouded leopard, cheetah and cougar only, so the lynx is not an inherently dangerous animal here, and it is not on the Rule 8.4 game list. The Canada lynx is federally threatened in the lower 48, which does not bar keeping one but requires a federal permit to move one across state lines in commerce.",
           "localOverride": true,
           "verifiedOn": "2026-10-08"
         },
@@ -28698,7 +28698,7 @@
           "sourceId": "la-76-v-115",
           "cite": "LAC 76:V.115.C.1.h",
           "quote": "C.1.Except as provided herein, it shall be unlawful to import into, possess, purchase or sell within the state of Louisiana, by any means whatsoever including but not limited to transactions conducted via the internet, any of the following species or its subspecies of live wild quadrupeds, big exotic cats, or non-human primates, domesticated or otherwise (hereinafter \"listed animals\"): a.black bear (Ursus americanus); ... h.the following big exotic cats: i.tigers; ii.lions; iii.leopards ... iv.jaguars; v.cheetahs; vi.cougars or mountain lions (Felis concolor);",
-          "note": "The § 115 cat list is six named big cats and their hybrids, the same reading that leaves the serval legal. The lynx is not a Louisiana wild quadruped either. The federal threatened listing in the lower 48 requires a federal permit to move one across state lines in commerce.",
+          "note": "The § 115 cat list is six named big cats and their hybrids, the same reading that leaves the serval legal. The lynx is not a Louisiana wild quadruped either. The Canada lynx is federally threatened in the lower 48, which does not bar keeping one but requires a federal permit to move one across state lines in commerce.",
           "localOverride": true,
           "verifiedOn": "2026-10-08"
         },
@@ -28707,7 +28707,7 @@
           "sourceId": "ok-800-25-25-3",
           "cite": "OAC 800:25-25-3(a)(4)",
           "quote": "(4) Cats (except native cats and bears).",
-          "note": "The same entry that clears the serval: cats are exempt except native cats, and the Canada lynx is not native to Oklahoma. Its federal threatened listing in the lower 48 still requires a federal permit to move one across state lines in commerce, and § 7-502(A)(2) bars possessing a threatened species \"except as otherwise provided by law\", which a reader should weigh.",
+          "note": "The same entry that clears the serval: cats are exempt except native cats, and the Canada lynx is not native to Oklahoma. The Canada lynx is federally threatened in the lower 48, which does not bar keeping one but requires a federal permit to move one across state lines in commerce. § 7-502(A)(2) bars possessing a threatened species \"except as otherwise provided by law\", which a reader should weigh.",
           "localOverride": true,
           "verifiedOn": "2026-10-01"
         },
