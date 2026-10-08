@@ -18735,12 +18735,11 @@
           "verifiedOn": "2026-10-01"
         },
         "IA": {
-          "status": "permit",
+          "status": "conditional",
           "sourceId": "ia-481a-definitions",
           "cite": "§ 481A.1(21)(f); § 481A.38; § 481A.61(1)",
-          "quote": "The Sciuridae: such as gray squirrels and fox squirrels.",
-          "permitFor": "commercial-exhibition-research",
-          "note": "Iowa defines game by family and then gives two examples, so the whole of Sciuridae is game and the southern flying squirrel, a native, is inside it. § 481A.38 then makes it unlawful \"to take, pursue, kill, trap or ensnare, buy, sell, possess, transport ... any game\" except as the chapter provides, and the only provision under which a person may hold a live game animal is § 481A.61(1): \"a licensed game breeder whose original stock is obtained from a lawful source may possess any game bird, game animal, or fur-bearing animal\". § 481A.60 requires that license before raising or selling. Recorded permit rather than banned because the license does authorize possession, and permitFor commercial rather than personal because it is a breeder's license: Iowa writes no pet allowance for game anywhere in the chapter.",
+          "quote": "1. Except as otherwise provided by law, a licensed game breeder whose original stock is obtained from a lawful source may possess any game bird, game animal, or fur-bearing animal, or any of their parts. Possession and use of the game birds, game animals, or fur-bearing animals obtained from a licensed game breeder are lawful.",
+          "note": "Iowa defines game by family and then gives two examples, \"The Sciuridae: such as gray squirrels and fox squirrels\", so the whole of Sciuridae is game and the southern flying squirrel, a native, is inside it. § 481A.38 then makes it unlawful \"to take, pursue, kill, trap or ensnare, buy, sell, possess, transport ... any game\" except as the chapter provides. § 481A.61(1) provides two things: a licensed game breeder may hold any game animal, and possession of a game animal \"obtained from a licensed game breeder\" is lawful. So the condition is the source, a licensed game breeder, and the keeper who buys from one needs no license of their own.",
           "verifiedOn": "2026-10-01"
         },
         "DC": {
