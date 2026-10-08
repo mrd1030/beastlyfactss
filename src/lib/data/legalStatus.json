@@ -1774,6 +1774,11 @@
       "title": "31 Tex. Admin. Code § 65.175, state threatened species, as compiled in TPWD's Updated List of State T & E Species in Texas (effective 30 March 2020)",
       "url": "https://tpwd.texas.gov/huntwild/wild/wildlife_diversity/nongame/listed-species/media/fedState-ListedSpeciesComplete-3302020.pdf",
       "note": "The § 65.175 figure is an image in the Texas Register, so TPWD's own compilation is the readable copy. It lists the black bear (Ursus americanus) and the white-nosed coati (Nasua narica) as state threatened. TPWD's species protection page, https://tpwd.texas.gov/wildlife/wildlife-diversity/nongame/listed-species/species-protection/, states the consequence: its regulations \"prohibit the taking, possession, transportation, or sale of any of the animal species designated by state law as endangered or threatened without the issuance of a permit\", and the permits are for science, zoos, education and rehabilitation."
+    },
+    "mt-87-4-8": {
+      "title": "MCA Title 87, Chapter 4, Part 8, Menageries, Sanctuaries, and Zoos",
+      "url": "https://mca.legmt.gov/bills/mca/title_0870/chapter_0040/part_0080/section_0010/0870-0040-0080-0010.html",
+      "note": "§ 87-4-801(3) defines a wild animal menagerie as bears or large cats kept \"for use other than public exhibition\"; § 87-4-803 sets the permit, § 87-4-804 bars capture from the wild for it and caps it at 10 animals. Cached as MT-mt-rabies-and-menagerie.txt."
     }
   },
   "animals": {
@@ -27114,6 +27119,492 @@
         }
       },
       "article": "/blog/coati-legal-guide/"
+    },
+    "bobcat": {
+      "name": "Bobcat",
+      "scientific": "Lynx rufus",
+      "jurisdictions": {
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(K)(1)",
+          "quote": "Family Felidae-All species (W)",
+          "note": "Every felid is restricted and only domestic cats and their hybrids are carved out; the order heading names bobcats. The bobcat is a native California furbearer, but § 671 reaches it whatever its origin, and no permit type covers pet keeping.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-391-4-8-05",
+          "cite": "R. 391-4-8-.04(1)(a)2(ii); O.C.G.A. § 27-5-4(b)(1); DNR Guide to Legal Pets",
+          "quote": "Family Felidae (cats) - All species;",
+          "note": "Georgia reaches the bobcat twice. It is in the inherently dangerous tier with every other felid, needing a license and liability insurance that § 27-5-4(b)(1) makes available only to the animal trade and exhibitors, and DNR's list of natives that may not be held as a pet \"regardless of its origin or morphology\" names it.",
+          "verifiedOn": "2026-10-08"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-rule",
+          "cite": "§ 4-71-6",
+          "quote": "The introduction into Hawaii of live animals or live non-domestic animals ... is prohibited except for those animals on the lists",
+          "note": "Lynx rufus is on none of Hawaii's three lists. The only lynx Part A names is the caracal, written as Felis caracal (=Lynx caracal), which is a different animal. Unlisted means barred by default here. The prohibited list's hybrid entry also names the bobcat among the wild parents of a prohibited cat cross, which shows the board had the animal in view.",
+          "verifiedOn": "2026-10-01"
+        },
+        "PA": {
+          "status": "banned",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)(1); § 137.31(a)",
+          "quote": "Lawfully acquired bobcats ... may be imported or possessed, or both, by licensed propagators specifically for propagation for fur farming purposes. ... Bobcats imported under this exception and their progeny may not be sold or transferred for wildlife pet purposes or released into the wild.",
+          "note": "The Felidae line bans every cat but the house cat and then writes one bobcat exception, for fur-farm propagation, with an express bar on transfer \"for wildlife pet purposes\". The bobcat is also a Pennsylvania native, so § 137.31(a) closes the wild-caught route, and it is not on the 34 Pa.C.S. § 2961 list of exotic wildlife that the possession permit serves.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)",
+          "quote": "a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following",
+          "note": "None of the seven categories covers a wild cat; (B) admits domestic cats only.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "§ 161.01(b)(2)",
+          "quote": "All cats other than domesticated cats (Felis catus), including, but not limited to, lion, tiger, leopard, ocelot, jaguar, puma, panther, mountain lion, cheetah, wild cat, cougar, bobcat, lynx, serval, caracal, jaguarundi, margay and any hybrid or cross-breed offspring of a wild cat and domesticated or other cat.",
+          "note": "Named in the wild cat clause, which covers every cat but Felis catus. § 161.01(d) lets the Department consent to an owner removing a seized animal to a jurisdiction where it is not prohibited, which is the only relief in the article.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NJ": {
+          "status": "banned",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.13(b); 7:25-10.10",
+          "quote": "34.  Bobcat, Lynx rufus",
+          "note": "The bobcat is on New Jersey's own endangered list, and the Division's notice says endangered species \"may not be kept as pets or for hobby purposes for any reason\". It is also a nondomestic cat, potentially dangerous under 7:25-10.10, for which the Division issues no new hobby permits. Two separate bars, no pet route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "ME": {
+          "status": "banned",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.18(2)(F); § 7.06(3)(A)(2)(a)",
+          "quote": "Family Felidae All Species in Family Felidae (Cats)",
+          "note": "Every felid is Category 1, exhibitors, rehabilitators and research facilities only. The bobcat is also a Maine native, and § 7.11(3)(A) bars possessing a native restricted species under the general possession permit in any case.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "WI": {
+          "status": "permit",
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(1)(b), 169.15(1)(b); NR 16.15(1)",
+          "quote": "The department shall issue a Class B captive wild animal farm license to operate a captive wild animal farm that grosses less than $10,000 in annual sales to any person who files a proper application for the license and who pays the applicable fee.",
+          "note": "The bobcat is a native fur-bearing wild animal under § 169.01(14), and the seventeen native animals § 169.04(4)(a) frees from licensing stop at weasels and opossums, so § 169.04(1)(b) requires a license. The one that fits a keeper is the Class B captive wild animal farm license, which the department must issue to any applicant and which NR 16.15(1) applies to hobbyists as well as businesses; it names the species held, and pens must meet NR 16.30 to 16.38. Felids are among the animals whose escape must be reported within 24 hours under § 169.15(4)(b). The cougar is the only cat on the harmful list.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "FL": {
+          "status": "permit",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.002(1)(b)17; 68A-6.003(7); 68A-6.004",
+          "quote": "Class II: ... 15. Servals (Leptailurus serval) 16. European and Canadian lynx (Lynx lynx) 17. Bobcats (Lynx rufus) 18. Caracals (Caracal caracal) ...",
+          "note": "Named at Class II item 17, next to the serval and the lynx. A Permit to Possess Class II Wildlife for Personal Use costs $140 a year, requires the applicant to be 18, and requires documented experience plus the facility and caging standards of 68A-6.004 and 68A-6.010. The bobcat is a Florida native, and a wild-caught one is still subject to the general bar on possessing wildlife without a permit in 68A-6.003(1).",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL §§ 11-0103(6)(e)(2), 11-0512(1)(a); 6 NYCRR § 180.1(b)(8)",
+          "quote": "no person shall import, transport, possess, purchase, barter, transfer, sell, offer for sale, exchange, propagate or release or cause to be released within New York State any of the following live native or non-native dangerous animals including those which are captive bred in any of the following orders, families and individual species or subspecies including all subspecies and hybrids thereof: ... (8) Cats in the Family Felidae with the exception of the species Felis catus ...",
+          "note": "Every cat but Felis catus and five-generation registered hybrids is a wild animal that § 11-0512 bars as a pet, and 180.1 reaches it independently. The bobcat is also small game. Licenses under 180.1(c) issue only for scientific, educational, exhibition, zoological or propagation purposes, and the 180.1(d)(2) exemption for this species is for licensed rehabilitators.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)(A), (b)(1)",
+          "quote": "\"Category One Wild Animal\" means, notwithstanding changes in taxonomic nomenclature, any wild animal, gamete or hybrid of any of the following: (A) A member within the family Felidae (including, but not limited to, lion, leopard, cheetah, jaguar, ocelot, jaguarundi cat, puma, lynx and bobcat) except Bengal cat pursuant to section 26-40a of the Connecticut General Statutes; (B) A member within the family Canidae (including, but not limited to, wolf and coyote); (C) A member within the family Ursidae (including, but not limited to, black bear, grizzly bear and brown bear); or (D) A member within the family Hominidae ...",
+          "note": "The bobcat is named among the Felidae examples in Category One. Subsection (b)(1) allows a Category One animal only to a municipal park, zoo, public nonprofit aquarium, nature center, museum, or a USDA-licensed exhibitor, laboratory or research facility, so there is no private route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(1), (12)(a)",
+          "quote": "The purpose of 321 CMR 9.01 is to list those species which are exempt from the licensing provisions of M.G.L. c. 131, § 23, and which may be imported, possessed, maintained, propagated, bought, sold, exchanged or offered for sale without a license or permit from the Division. Species not listed, or which are expressly listed as \"require(s) a permit\", are not exempt from the provisions of M.G.L. c. 131, § 23.",
+          "note": "No felid is on the exemption list and the domestic list carries only Felis catus. It is also a Massachusetts native, and the only animals MassWildlife lets a person take from the wild are certain reptiles and amphibians. The license under § 23 exists on paper, but MassWildlife says permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\"",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
+          "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
+          "note": "A wild felid is not Felis catus, so the domestic-cat line that clears hybrids does not reach it, and the bobcat is on no unregulated list. It is a Colorado native as well, and C.R.S. 33-6-109 bars keeping native wildlife taken from the wild. Chapter W-11 says noncommercial (pet) possession of regulated mammals has been prohibited since 1983, and its wildlife park licenses are commercial or closed to new entrants.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AZ": {
+          "status": "restricted",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(F)",
+          "quote": "All species of the order Carnivora",
+          "note": "All of Carnivora is restricted, so the bobcat needs a special license. It is also an Arizona native, and taking one alive from the wild is a separate regime under R12-4-404, R12-4-405 and Commission Order 43 that needs a hunting license.",
+          "verifiedOn": "2026-10-01"
+        },
+        "OR": {
+          "status": "banned",
+          "sourceId": "or-635-044",
+          "cite": "OAR 635-044-0460(1), (3); 0470",
+          "quote": "Black bears, cougars, bobcats, and wolves, acquired by transfer or new acquisition as part of an existing permit or new holding application after January 20, 2017, shall only be held at AZA accredited facilities or as approved by the Department in Wildlife Exhibitor/Animal Entertainment or Wildlife Sanctuary facilities.",
+          "note": "The bobcat is native, so ORS 609.305, which reaches only non-indigenous cats, does not apply, and ODFW's holding rule does. Since 20 January 2017 a new bobcat goes only to an AZA, exhibitor or sanctuary facility, and pets held on that date were grandfathered on application. 0460(5) also makes the owner prove that a claimed bobcat hybrid is one, or it is regulated as a bobcat.",
+          "localOverride": true,
+          "grandfathered": {
+            "before": "2017-01-20",
+            "detail": "An animal legally held as a pet on 20 January 2017, with a Wildlife Holding Permit applied for by 21 January 2018, may be kept for its life under OAR 635-044-0470. It may not be bred, and may be transferred only to an AZA, exhibitor or sanctuary facility."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "WA": {
+          "status": "conditional",
+          "sourceId": "wa-rcw-77-08-010",
+          "cite": "WAC 220-450-030(1), (3), (4), (5); RCW 16.30.020(1)(k)",
+          "quote": "It is unlawful to possess or hold in captivity live wild animals, wild birds, or game fish unless lawfully acquired. Any person possessing or holding wild animals, wild birds, or game fish in captivity must provide proof of lawful acquisition and possession for inspection if asked to do so by a department employee.",
+          "note": "The bobcat is a Washington wild animal, so RCW 16.30, which exempts native wildlife subject to Title 77 and lists only big cats anyway, does not reach it. Title 77 does not ban keeping one: WAC 220-450-030 requires a permit to take one from the wild, a health certificate to import one, and proof of lawful acquisition naming species, origin and source for any held animal, and bars selling a captive one or its progeny except as department rule allows. A captive-bred bobcat lawfully acquired and documented is the condition.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "OH": {
+          "status": "permit",
+          "sourceId": "oh-1531-01",
+          "cite": "R.C. 1531.01(W); § 1533.71(A)(2); § 935.01(C)(7)(b)",
+          "quote": "\"Noncommercial propagating license\" permitting the licensee to propagate game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, or fur-bearing animals and to hold the animals in captivity. Game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, and fur-bearing animals propagated or held in captivity by authority of a noncommercial propagating license are for the licensee's own use and shall not be sold. The fee for such a license is twenty-five dollars per annum.",
+          "note": "Bobcats are named fur-bearing animals under R.C. 1531.01(W), which puts them under the § 1533.71 captivity license. The dangerous wild animal list may reach them as well: § 935.01(C)(7)(b) lists \"Lynxes, including Canadian lynxes, Eurasian lynxes, and Iberian lynxes\", and the bobcat is Lynx rufus though not named there. On that reading it also needs an Agriculture permit under Chapter 935, as the serval does. Either way it is a permit animal.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "TX": {
+          "status": "permit",
+          "sourceId": "tx-822-101",
+          "cite": "Health & Safety Code §§ 822.101(4)(H), 822.103, 822.107, 822.116(b)",
+          "quote": "\"Dangerous wild animal\" means: ... (H) a bobcat; (I) a lynx; (J) a serval; ...",
+          "note": "Named at clause (H), so a bobcat needs the dangerous wild animal certificate of registration from the local animal control office or the sheriff, at most $50 an animal, with liability insurance of at least $100,000 per occurrence, and § 822.116(b) lets any municipality or county prohibit it outright. The nongame rules expressly exclude bobcats at § 65.325(b)(3), and the bobcat is not a fur-bearing animal under § 71.001.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MI": {
+          "status": "permit",
+          "sourceId": "mi-captive-game",
+          "cite": "NREPA Part 427, MCL 324.42701 et seq.",
+          "quote": "badger, bobcat, red and gray fox, raccoon, coyote, beaver, otter, muskrat, mink, squirrels, striped skunk, woodchuck, opossum, ring-necked pheasant, bobwhite quail, Hungarian partridge, ducks, geese and wild turkeys",
+          "note": "The bobcat is on the closed list of game that may be held under the DNR's Permit to Hold Game in Captivity, so a keeper needs that permit. It covers captive-bred animals only, so one taken from the wild cannot be brought under it. The Large Carnivore Act's cat clause names lion, leopard, jaguar, tiger, cougar, panther and cheetah, so it does not reach the bobcat.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "IL": {
+          "status": "banned",
+          "sourceId": "il-720-48-10",
+          "cite": "720 ILCS 5/48-10(a), (b)",
+          "quote": "\"Dangerous animal\" means a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote. Dangerous animal does not mean any herptiles included in the Herptiles-Herps Act.",
+          "note": "The bobcat is named as a dangerous animal, and that decides it even though the Wildlife Code also lists it as a fur-bearing mammal: the fur-bearer breeder permit cannot authorize what the Criminal Code bars outside the listed institutions. § 48-10(b) allows a dangerous animal only at a zoological park, federally licensed exhibit, circus, college or university, scientific institution, research laboratory, veterinary hospital, hound running area or animal refuge, so there is no private route. Illinois is a home rule state, so a municipal ordinance can be stricter and often decides it.",
+          "localOverride": true,
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MN": {
+          "status": "banned",
+          "sourceId": "mn-346-155",
+          "cite": "§ 346.155, subd. 1(e)(1), subd. 2",
+          "quote": "all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association; (2) bears; and (3) all nonhuman primates",
+          "note": "Every felid other than domestic cats is a regulated animal, and since 1 January 2005 no one may take possession of one, a bar the serval cell records the same way. The bobcat is also small game, a protected wild animal, but the special permit route in § 97A.401 cannot override the regulated animal ban.",
+          "grandfathered": {
+            "before": "2005-01-01",
+            "detail": "Possessed on 1 January 2005 and brought into Animal Welfare Act compliance within 90 days. Breeding after that date is barred, and a non-USDA-licensed keeper may replace the animal only once."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "NV": {
+          "status": "permit",
+          "sourceId": "nv-nrs-503-597",
+          "cite": "NRS 503.597(1); NAC 503.110, 503.140",
+          "quote": "it is unlawful, except by the written consent and approval of the Department, for any person at any time to receive, bring or have brought or shipped into this State, or remove from one stream or body of water in this State to any other...any aquatic life or wildlife",
+          "note": "The no-permit list clears \"All felines, except mountain lions and bobcats\", so the bobcat is expressly carved out of the clearance, and it is not on the prohibited list either. That leaves it under the Department's written consent. It is also a Nevada fur-bearing mammal under NAC 503.025. An animal on neither Nevada list is not unregulated: NRS 503.597 requires the Department's written consent to bring any wildlife into the state, and NAC 503.140 is the list of exemptions from that. NAC 503.140(4) preserves county and city ordinances, and Clark County, Las Vegas and Henderson are all stricter than the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "VA": {
+          "status": "banned",
+          "sourceId": "va-29-1-521",
+          "cite": "Va. Code § 29.1-521(A)(10); 4VAC15-20-50",
+          "quote": "To hunt, trap, take, capture, kill, attempt to take, capture, or kill, possess, deliver for transportation, transport, cause to be transported, by any means whatever, receive for transportation or export, or import, at any time or in any manner, any wild bird or wild animal or the carcass or any part thereof, except as specifically permitted by law and only by the manner or means and within the numbers stated.",
+          "note": "The bobcat is a Virginia native wild animal. Because it is a Virginia native, it is not a nonnative (exotic) animal, so the permit table at 4VAC15-30-40 is not its rule, even though the table names its family; § 29.1-521(A)(10) is, and it bars possessing a wild animal except as specifically permitted. The one-per-address allowance at 4VAC15-360-10(A) reaches no mammal, and Chapter 290's permits are for exhibits and scientific collection, the reasoning the flying squirrel cell sets out.",
+          "verifiedOn": "2026-10-01"
+        },
+        "MD": {
+          "status": "banned",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1)(iii)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Every member of the cat family other than the domestic cat is barred. There is no private permit: the exemptions run to zoos, sanctuaries, research and licensed exhibitors. Subsection (e) preserves stricter county and municipal rules.",
+          "localOverride": true,
+          "grandfathered": {
+            "before": "2006-05-31",
+            "detail": "Lawful possession on or before 31 May 2006 may continue, but only if the keeper gave written notification to the local animal control authority by 1 August 2006, with the number and type of animals and a photograph or a description of a tattoo or microchip. That window is long closed."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.",
+          "note": "The only bobcat named is the Mexican subspecies, Lynx rufus escuinapae, in Group IV as federally endangered. The bobcat as a species has no row, so the default clause designates it Group IV as well. It is also a New Mexico furbearer, protected by the Game and Fish rules. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. 19.35.7 NMAC is an importation rule, so it governs bringing the animal into New Mexico rather than keeping one already here.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "The only cats on the Unrestricted list are wild and domestic hybrids of the fourth generation or later, so a bobcat is Restricted by default. It is also a Vermont native, and 10 V.S.A. § 4709 bars possessing a live wild animal without authorization. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "UT": {
+          "status": "permit",
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1, controlled mammals",
+          "quote": "Bobcat Lynx rufus captive-bred",
+          "note": "The bobcat is a controlled mammal if captive bred, the same column as the fennec fox, so a certificate of registration is required before importation or possession, and a route exists. A wild bobcat is not covered by the entry.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "DE": {
+          "status": "unclear",
+          "sourceId": "de-903",
+          "cite": "Del. Code tit. 3 § 7201; tit. 7 ch. 7",
+          "quote": "No person shall bring into this State, possess, sell or exhibit any live wild mammal or hybrid of a wild mammal or live reptile not native to or generally found in Delaware without first securing a permit under this chapter.",
+          "note": "Which agency answers the bobcat depends on whether it is \"native to or generally found in Delaware\". It is historically native and was long gone from the state, with only occasional records now. If it counts as native, it belongs to DNREC, which says state regulations forbid owning native wildlife, and the answer is no. If not, it is an exotic under the Agriculture chapter and needs the $25 Individual permit, like the serval. Neither agency has published which.",
+          "verifiedOn": "2026-10-01"
+        },
+        "TN": {
+          "status": "permit",
+          "sourceId": "tn-1660-01-18",
+          "cite": "Tenn. Code Ann. §§ 70-4-403(2), 70-4-401(b), 70-4-404(d)(1)(B); Tenn. Comp. R. & Regs. 1660-01-18-.03(2), (3)(b)",
+          "quote": "(2) Native species of wildlife are considered to be Class II unless specifically designated otherwise by T.C.A. § 70-4-403 or rules and regulations authorized therein. (3) ... (b) 1. The following species or groups of wildlife are deleted from the existing listing designated by legislation as Class III: (i) All native, nonpoisonous reptiles and amphibians; and (ii) All native, furbearing mammals. 2. All species or groups of wildlife deleted from Class III in part 1. are considered to be Class II wildlife.",
+          "note": "The bobcat is a native furbearing mammal, and the commission's rule moves native furbearers out of Class III and into Class II. TWRA says no one may possess a Class II species without the permit, which costs $10 an animal for personal possession, and § 70-4-401(b) requires documentary evidence of the supplier's name and address and the date acquired. The statute's Class III entry for furbearers \"raised solely for the sale of fur\" covers fur farming, not a pet. Bobcat hybrids with domestic cats are Class III by statute at (3)(N), and Class IV's hybrid clause expressly leaves the bobcat out, which shows the legislature placing the bobcat itself in Class II.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "NC": {
+          "status": "permit",
+          "sourceId": "nc-113-272-5",
+          "cite": "G.S. §§ 113-129(7a), (7c), (15), (16); 113-272.5(a)",
+          "quote": "the wild animal or wild bird was not acquired unlawfully or merely as a pet",
+          "note": "The bobcat is a North Carolina game animal, and a fur-bearer when trapped, so it is a wild animal under § 113-129(15), and (16) carries the definition to animals of wild species raised or kept in captivity. Holding one alive needs a captivity license, and § 113-272.5(a) tells the Executive Director not to issue it unless the animal \"was not acquired unlawfully or merely as a pet\", the reasoning the flying squirrel cell rests on. ",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "AR": {
+          "status": "banned",
+          "sourceId": "ar-code-0900",
+          "cite": "Code 09.14(A)(1)(iii), (B); Addendum R1.03(B)",
+          "quote": "Bobcat, coyote, gray fox, and red fox that were captured by hand prior to July 1, 2022, may be retained until their death.",
+          "note": "The hand-capture route for the bobcat closed on 1 July 2022. The captive-born route needs a permitted breeder or an importation permit, and the bobcat is on none of the three addenda, which R1.03(B) makes \"prohibited until evaluated\". Only animals captured before the 2022 date remain.",
+          "grandfathered": {
+            "before": "2022-07-01",
+            "detail": "A bobcat, coyote, gray fox or red fox captured by hand in Arkansas before 1 July 2022 may be kept as a pet until it dies, within the six-per-household limit, and may not be sold or taken out of state."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "ID": {
+          "status": "permit",
+          "sourceId": "id-130110",
+          "cite": "IDAPA 13.01.10.200.01, .03; .010.03, .010.06",
+          "quote": "No person may import into Idaho, export from Idaho, transport, possess or otherwise hold in captivity, propagate, sell or release into the wild any live wildlife, except those animals exempted by Idaho Code or these rules, without a corresponding import, export, transport, captive possession (individual animal license or multiple animal license at a private, commercial or rehabilitation facility), sale or release license/permit from the Department.",
+          "note": "The bobcat is Idaho wildlife and not a conventional pet, whose closed list stops at dogs, cats, ferrets, rabbits, rodents, harmless herps, non-poultry birds, hedgehogs, tenrecs and sugar gliders. So holding one needs a Fish and Game captive possession license, which the rule offers as an individual animal license at a private facility. § 200.03 lets the Department refuse any license that would threaten public safety or native wildlife.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "IA": {
+          "status": "banned",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(3)",
+          "quote": "A member of the family felidae of the order carnivora, including but not limited to lions, tigers, cougars, leopards, cheetahs, ocelots, and servals. However, a dangerous wild animal does not include a domestic cat.",
+          "note": "A felid other than the domestic cat. § 717F.3 bars owning, possessing, breeding or importing a dangerous wild animal, and the only route was the 2007 registration.",
+          "grandfathered": {
+            "before": "2007-07-01",
+            "detail": "An owner in possession on 1 July 2007 could keep the animal after implanting an electronic identification device within sixty days and registering with the department by 31 December 2007. No new route exists."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "KY": {
+          "status": "banned",
+          "sourceId": "ky-301-2-081",
+          "cite": "301 KAR 2:081 § 6(1)",
+          "quote": "(1) Except as established in Sections 2(7) and 7 of this administrative regulation, 301 KAR 2:075, and 301 KAR 3:120, a person shall not import, transport into Kentucky, or possess: ... (d) Bobcat (Lynx rufus);",
+          "note": "The bobcat is named on the prohibited natives list. § 1(3) defines native wildlife \"regardless of ... being captive-bred or taken from the wild\", so a captive-bred animal from another state is in the same position. KRS 65.877 lets local governments go further.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "RI": {
+          "status": "banned",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17 native mammal list; §§ 3.7(A), (C)",
+          "quote": "The possession of native mammals is restricted to those institutions identified within § 3.7(C) of this Part, and as exempted per § 3.8 of this Part. Terrestrial mammals considered native either currently or historically to Rhode Island and which possession as pets is prohibited include the following: ... (5) Bobcat (Lynx rufus),",
+          "note": "Named on the native mammal list. Rhode Island's native definition applies \"regardless of where the animal originated\", so a captive-bred animal from out of state is no different, and § 3.7(A) separately restricts every carnivore without a licensed rabies vaccine to researchers, USDA exhibitors and AZA facilities.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.05, Table 800.2",
+          "quote": "Bobcat   Lynx rufus   5",
+          "note": "The bobcat is in the controlled table with category 5 alone. Permittee category 5 is the exhibitor category, with no category 1 for an individual, so a private keeper cannot be issued a possession permit.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MO": {
+          "status": "permit",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.420(1); 3 CSR 10-4.110(4); 3 CSR 10-9.110(1)(A); 3 CSR 10-9.223(2)",
+          "quote": "Wildlife Hobby Permit. Authorizes the holder to purchase, possess, and propagate not more than fifty (50) ring-necked pheasants and bobwhite quail, in the aggregate, for personal use only and not for sale; and to hold in captivity not more than one (1) game mammal purchased from a Missouri wildlife breeder permit holder, except that Class II wildlife, hoofed mammals, and skunks may not be held under this permit.",
+          "note": "The bobcat is a Missouri furbearer, which 3 CSR 10-20.805(33) makes a game mammal, and the take-five rule for natives expressly excludes anything listed in 3 CSR 10-4.110(4), which is game mammals and furbearers. What remains is the Wildlife Hobby Permit: one animal, bought from a Missouri wildlife breeder permit holder, held for personal use, never propagated or sold. The bobcat is also on the dangerous wild animal list in RSMo § 578.023, so the keeper must register it with the local law enforcement agency in the county where it is kept.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "KS": {
+          "status": "unclear",
+          "sourceId": "ks-115-5-2",
+          "cite": "K.A.R. 115-5-2(b); K.S.A. 32-1002(a)(2), (b)",
+          "quote": "(b) Live furbearers legally taken during a furbearer season may be possessed only through the last day of the season in which taken.",
+          "note": "K.S.A. 32-1002(a)(2) bars possessing any wildlife unless a regulation permits it, and the bobcat is a Kansas furbearer. The only regulation that permits a live furbearer is 115-5-2(b), and it lets a Kansas-caught animal be held only to the end of the season it was taken in, so a wild-caught pet is out. What is not settled is a captive-bred animal bought in another state: 32-1002(b) lifts the possession bar for animals \"legally taken outside this state\", and no Kansas text says whether that reaches one bred in captivity. The handoff records this as the one question Kansas has never closed.",
+          "verifiedOn": "2026-10-08"
+        },
+        "SC": {
+          "status": "permit",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-20(A)(1), (B)",
+          "quote": "a furbearer, a member of the family Cervidae, a nondomestic member of the families Suidae (pigs), Tayassuidae (peccaries), Bovidae (bison, mountain goat, mountain sheep), coyote, bear, or turkey (genus Meleagris). Furbearer includes, but is not limited to, red and gray fox, raccoon, opossum, muskrat, mink, skunk, otter, bobcat, weasel, and beaver;",
+          "note": "The bobcat is named as a furbearer, so importing one needs a Department permit. The large cat ban stops at genus Panthera. § 50-16-20(B) lets the Department issue the permit only if the animal was taken lawfully where it came from and its possession is not expected to harm the state's wildlife, and § 50-16-60's pet-trade exemption does not list it.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MT": {
+          "status": "unclear",
+          "sourceId": "mt-87-4-8",
+          "cite": "MCA §§ 87-4-801(3), 87-4-803, 87-4-804(4), (6)",
+          "quote": "\"Wild animal menagerie\" means any place where one or more bears or large cats, including cougars, lions, tigers, jaguars, leopards, pumas, cheetahs, ocelots, and hybrids of those large cats are kept in captivity for use other than public exhibition.",
+          "note": "The bobcat is native, so the exotic wildlife white list does not reach it, and it is not one of the four animals in the rabies law. What arguably does is the wild animal menagerie permit, which licenses private keeping of \"large cats\". The list of examples runs down to the ocelot, a cat no bigger than a bobcat, but does not name the bobcat, so whether a bobcat needs that permit, or falls outside Part 8 altogether, is not settled by the text. If it is covered, the permit allows up to 10 animals bought captive bred from a licensed source.",
+          "verifiedOn": "2026-10-08"
+        },
+        "WV": {
+          "status": "permit",
+          "sourceId": "wv-20-2-51",
+          "cite": "W. Va. Code § 19-34-2(2), § 20-1-2, § 20-2-4(a), § 20-2-51; W. Va. C.S.R. § 74-1-3.1.g.2",
+          "quote": "The director may issue a permit to a person to keep and maintain in captivity as a pet, a wild animal or wild bird that has been acquired from a commercial dealer or during the legal open season. The fee therefor shall be $2.",
+          "note": "The Dangerous Wild Animal list names \"Lynxes, including Canadian lynxes, Eurasian lynxes, and Iberian lynxes\" and leaves the bobcat out, and § 19-34-2(2) excludes \"wildlife\" from the Act altogether. The bobcat is a native fur-bearer, so it falls to Chapter 20 instead, where § 20-2-51 is the pet permit. Worth checking with the DNR, since the board's lynx line could be read to reach Lynx rufus as a member of the genus.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "AK": {
+          "status": "banned",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(a), (c); AS 16.05.940(19)",
+          "quote": "The department may not issue a permit for the capture, possession, import, or export of any game animal, including a hybrid of a game animal and a species listed in (b) of this section, for use as a pet",
+          "note": "Every felid but Felis catus is off the clean list, and subsection (c) bars a pet permit. The bobcat does not range into Alaska, which does not matter under a definition that reaches any mammal.",
+          "verifiedOn": "2026-10-01"
+        },
+        "SD": {
+          "status": "permit",
+          "sourceId": "sd-12-68-18",
+          "cite": "ARSD 12:68:18:03(1)(a); 12:68:18:03.03(4)",
+          "quote": "(1) Of the order Carnivora, all nondomestic members of the following families: (a) Felidae;",
+          "note": "Every nondomestic felid needs the ten-dollar possession permit, the same route the serval takes. The bobcat is also a South Dakota furbearer, but Game, Fish and Parks has no captive wildlife rule that adds to this.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "AL": {
+          "status": "banned",
+          "sourceId": "al-220-2-26",
+          "cite": "§ (1), (3)",
+          "quote": "Any of the following from any area outside the state of Alabama; any member of the family Cervidae (to include but not be limited to deer, elk, moose, caribou), species of coyote, species of fox, species of raccoon, species of skunk, wild rodent, or strain of wild turkey, black bear (Ursus americanus), mountain lion (Felis concolor), bobcat (Felis rufus)",
+          "note": "The bobcat is named by its old binomial, Felis rufus, among the animals barred from outside Alabama, and in-state transport of a listed animal is barred except by a licensed game breeder. One taken in Alabama is a protected furbearer, which § (3) bars keeping alive. The serval, by contrast, is unlisted and legal.",
+          "verifiedOn": "2026-10-01"
+        },
+        "IN": {
+          "status": "permit",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)(3); 9-11-7(a); 9-11-2(c), (e)",
+          "quote": "(1) Wolves that are purebred. (2) Bears (all species). (3) Wild cats (all species), except feral cats and cats listed in section 7 of this rule.",
+          "note": "The bobcat is not among the 15 small cats on the Class II list, so it falls into Class III as a wild cat \"except ... cats listed in section 7\". A Class III permit has to be in hand before taking possession and needs a recapture or destruction plan with the equipment to carry it out, a cage inspection and proof of lawful acquisition. It is still a pet permit.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "ND": {
+          "status": "permit",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(2)(b), (3)(b); 48.1-09-01-03(1)",
+          "quote": "Category 2 species of nontraditional livestock includes the following species and their hybrids, all nondomestic ungulates, including all deer (cervidae) and pronghorn, zebras, nondomestic cats not listed in category 3, waterfowl, shorebirds, upland game birds not listed in category 1, crows, wolverines, otters, bats, martens, fishers, kit or swift foxes, badgers, coyotes, mink, red and gray foxes",
+          "note": "Category 3 names only the big cats, so the bobcat is a \"nondomestic cat not listed in category 3\" and falls to category 2, the same place as the serval. The license must be in hand before acquiring the animal, with the premises approved first.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "WY": {
+          "status": "permit",
+          "sourceId": "wy-ch10",
+          "cite": "Ch. 10 § 13(a); Wyo. Stat. §§ 23-1-101(a)(iii), 23-2-305",
+          "quote": "A permit is required prior to importation, possession and transportation for the following warm-blooded wildlife unless otherwise specified in this regulation: (a) Furbearing animals",
+          "note": "The bobcat is a \"furbearing animal\" by statute, and Chapter 10 § 13(a) requires a permit before importing or possessing one. For a wild-caught animal, § 23-2-305 adds a resident-only license to capture furbearers \"for domestication or propagation\", issued \"under such restrictions as it deems necessary\".",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "MS": {
+          "status": "banned",
+          "sourceId": "ms-40-2-8-4",
+          "cite": "Rule 8.4(A), (B)",
+          "quote": "Game and furbearing animals are defined as the following: white-tailed deer, black bear, gray squirrel, fox squirrel, cottontail rabbit, swamp rabbit, raccoon, opossum, bobcat, river otter, muskrat, mink, and weasel. B. Possession of live game and furbearing animals is prohibited with the following exceptions",
+          "note": "Named in Rule 8.4's game and furbearing list, so possessing one alive is prohibited outside a zoo or a veterinarian's temporary care. Rule 8.3's cat entry stops at the big cats, so it offers no permit for a bobcat either.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "LA": {
+          "status": "unclear",
+          "sourceId": "la-rs-56-8",
+          "cite": "La. R.S. 56:8(151)(a)(iii); LAC 76:V.113, 115.C.1",
+          "quote": "(iii) Protected quadrupeds: wolves, cougars, bobcats, and foxes; provided that foxes and bobcats may be run with dogs.",
+          "note": "The bobcat is a \"protected quadruped\" alongside the fox, but the fox rule at § 113 is written for foxes and coyotes only, and § 115's cat list is the six big cats. No text read sets a captivity rule for a bobcat in either direction. Its classification next to the fox suggests the department would treat it the same way, but that is inference, not text.",
+          "verifiedOn": "2026-10-08"
+        },
+        "OK": {
+          "status": "permit",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(a)(4); 29 O.S. § 7-502(A)(3), (B)(4)",
+          "quote": "(4) Cats (except native cats and bears).",
+          "note": "The cat exemption excludes native cats, so the bobcat needs the import permit and the noncommercial wildlife breeder's license. The stricter statutory bar on native cats \"that will grow to reach the weight of fifty (50) pounds or more\", which forces a commercial wildlife breeder's license, would apply only to an unusually large bobcat; most never reach fifty pounds.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NE": {
+          "status": "banned",
+          "sourceId": "ne-37-477",
+          "cite": "Neb. Rev. Stat. § 37-477(2)(c), (3); 166 NAC 8 § 001.01B",
+          "quote": "(2) Except as provided in subsection (3) of this section, no person shall keep in captivity in this state any wolf, any skunk, or any member of the families Felidae and Ursidae. This subsection shall not apply to ... (c) any person who holds a captive wildlife permit issued pursuant to section 37-479 and who raises Canada Lynx (Lynx canadensis) or bobcats (Lynx rufus) solely for the purpose of producing furs",
+          "note": "Every felid is banned by statute. The bobcat appears on the Captive Wildlife Permit list, but asterisked \"For commercial purposes only\", because the statute's one exception is a permit holder raising bobcats solely for fur or for breeding stock sold to fur producers.",
+          "grandfathered": {
+            "before": "1986-03-01",
+            "detail": "A person legally holding such an animal on 1 March 1986 may keep it for its lifetime under § 37-477(3), and may not trade, sell or dispose of it without the commission's written permission."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        }
+      },
+      "article": "/blog/bobcat-legal-guide/"
     }
   }
 }
