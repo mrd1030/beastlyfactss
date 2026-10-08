@@ -25713,6 +25713,484 @@
         }
       },
       "article": "/blog/red-fox-legal-guide/"
+    },
+    "skunk": {
+      "name": "Striped skunk",
+      "scientific": "Mephitis mephitis",
+      "jurisdictions": {
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(K), (K)(5), (K)(6)",
+          "quote": "Order Carnivora-Raccoons, Ringtailed Cats, Kinkajous, Coatis, Cacomistles, Weasels, Ferrets, Skunks, Polecats, Stoats, Mongoose, Civets, Wolves, Foxes, Coyotes, Lions, Tigers, Ocelots, Bobcats, Servals, Leopards, Jaguars, Cheetahs, Bears, etc.",
+          "note": "The order heading names skunks. The section files them with the mustelids, which is where its caging standards put the striped skunk, and current taxonomy puts them in their own family, Mephitidae, which the section reaches through \"All other Families-(W)\". Either way the animal is restricted and no permit type covers a pet. Descenting does not change the species.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-dnr-legal-pets",
+          "cite": "DNR Guide to Legal Pets; R. 391-4-8-.05(1)(a)3; O.C.G.A. § 27-5-4(b)(1)",
+          "quote": "The following list of species native to Georgia may not be held as a pet regardless of its origin or morphology.",
+          "note": "\"Skunk\" is on DNR's native list without a species qualifier, and the striped skunk is a Georgia native. The .05 license rule also reaches it as a carnivore, and its licenses go only to dealers and exhibitors, so a descented skunk from a breeder has no route either.",
+          "verifiedOn": "2026-10-08"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6-5",
+          "cite": "§ 4-71-6.5, Restricted Animal List Part A",
+          "quote": "Mephitis (all species in genus) skunk",
+          "note": "Part A takes the striped skunk's whole genus, filed under the mustelids on the older taxonomy. Research and exhibition only.",
+          "verifiedOn": "2026-10-01"
+        },
+        "PA": {
+          "status": "banned",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)(6)",
+          "quote": "In the family Mustelidae. All species of the skunks.",
+          "note": "Every skunk is on the prohibited list, filed under Mustelidae on the older taxonomy, and that is the line the ferret cell shows is the only mustelid entry. The skunk is a native here, so § 137.31(a) and § 137.1(a)(11) close the wild-caught and out-of-state routes too. Descenting does not change the answer.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)",
+          "quote": "a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following",
+          "note": "None of the seven categories covers a skunk. Ferrets are the only carnivore other than dogs and cats on the list, and a skunk is not a ferret.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "§ 161.01(b)(4)",
+          "quote": "All fur bearing mammals of the family Mustelidae, including, but not limited to, weasel, marten, mink, badger, ermine, skunk, otter, pole cat, zorille, wolverine, stoat and ferret.",
+          "note": "\"Skunk\" is named in the mustelid clause, which follows the older taxonomy that filed skunks in Mustelidae. Naming it by common name makes the family question moot. § 161.01(d) lets the Department consent to an owner removing a seized animal to a jurisdiction where it is not prohibited, which is the only relief in the article.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-10",
+          "cite": "N.J.A.C. 7:25-10.5(a), 10.6(a)14, 10.7(a)1, 10.8(a)1",
+          "quote": "\"Individual Hobby\" may be issued to persons holding game animals for hobby purposes or as pets;",
+          "note": "The striped skunk is named at 10.6(a)14 as a game animal needing a possession permit, and the Individual Hobby permit at 10.7(a)1 covers pets; the Division's own synopsis uses a pet skunk as its worked example. It must be captive bred under 10.8(a)1. The rabies vector policy bars importing a skunk from any state with a non-raccoon rabies variant, and the Division's example is that no skunk may come in from Texas even from a breeder.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "ME": {
+          "status": "banned",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.18(2)(F); § 7.06(4)",
+          "quote": "Family Mustelidae All Species in Family Mustelidae (Badgers, Otters, Weasels, and Relatives)",
+          "note": "Either way the answer is no. On the older taxonomy the striped skunk is a mustelid and Category 1, open only to exhibitors, rehabilitators and research facilities. On current taxonomy it is in Mephitidae, which chapter 7 never names, so it is uncategorized and § 7.06(4) makes it ineligible for any permit. It is also a Maine native mammal with no wild-take exemption.",
+          "verifiedOn": "2026-10-01"
+        },
+        "WI": {
+          "status": "permit",
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(1)(b), 169.15(1)(b); NR 16.15(1)",
+          "quote": "The department shall issue a Class B captive wild animal farm license to operate a captive wild animal farm that grosses less than $10,000 in annual sales to any person who files a proper application for the license and who pays the applicable fee.",
+          "note": "The striped skunk is a native fur-bearing wild animal under § 169.01(14), and the seventeen native animals § 169.04(4)(a) frees from licensing stop at weasels and opossums, so § 169.04(1)(b) requires a license. The one that fits a keeper is the Class B captive wild animal farm license, which the department must issue to any applicant and which NR 16.15(1) applies to hobbyists as well as businesses; it names the species held, and pens must meet NR 16.30 to 16.38. The statute is direct about the skunk: § 169.04(2)(e) bars descenting one unless the owner holds a Class A or Class B license, and tells a veterinarian to say that \"possession of a live skunk is illegal\" without one.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "FL": {
+          "status": "permit",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.002(1)(c); 68A-6.003(8), (13)",
+          "quote": "Fox, skunks, bats, raccoons, or whitetail deer taken from the wild shall not be possessed as personal use wildlife and shall be possessed only in accordance with permits issued under Rules 68A-9.002, 68A-9.006, F.A.C., or Section 379.3761, F.S.",
+          "note": "Skunks are in neither Class I nor Class II, so they are Class III. That means the no-cost Permit to Possess Class III Wildlife for Personal Use under 68A-6.003(8), and the animal is not on the 22-item no-permit list at 68A-6.003(14). 68A-6.003(13) names skunks among the animals that may never be personal pets if taken from the wild, which leaves the captive-bred animal on the free permit.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-11-0103",
+          "cite": "6 NYCRR § 180.1(b)(6), (c); ECL § 11-0511",
+          "quote": "no person shall import, transport, possess, purchase, barter, transfer, sell, offer for sale, exchange, propagate or release or cause to be released within New York State any of the following live native or non-native dangerous animals including those which are captive bred in any of the following orders, families and individual species or subspecies including all subspecies and hybrids thereof: ... (6) Skunks in the Family Mephitidae;",
+          "note": "180.1 uses the current family name, so there is no taxonomy question, and § 11-0511 names the skunk among animals that need a license to possess. The skunk is also small game. Licenses under 180.1(c) issue only for scientific, educational, exhibition, zoological or propagation purposes, and the 180.1(d)(2) exemption for this species is for licensed rehabilitators.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(3)(B)(xx), (b)(3)",
+          "quote": "(xx) A member within the family Mephitidae (including, but not limited to, striped skunk),",
+          "note": "The striped skunk is the rule's own example, under the current family name, and the clause applies \"notwithstanding changes in taxonomic nomenclature\". Subsection (b)(3) allows a Category Two animal only to a treating veterinarian, a municipal park, zoo, marine mammal park, aquarium, nature center, museum, exhibitor, laboratory or research facility, so there is no private route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(1), (12)(a)",
+          "quote": "The purpose of 321 CMR 9.01 is to list those species which are exempt from the licensing provisions of M.G.L. c. 131, § 23, and which may be imported, possessed, maintained, propagated, bought, sold, exchanged or offered for sale without a license or permit from the Division. Species not listed, or which are expressly listed as \"require(s) a permit\", are not exempt from the provisions of M.G.L. c. 131, § 23.",
+          "note": "No skunk is on the mammal exemption list or the domestic list. It is also a Massachusetts native, and the only animals MassWildlife lets a person take from the wild are certain reptiles and amphibians. The license under § 23 exists on paper, but MassWildlife says permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\"",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-w0-008",
+          "cite": "Chapter W-0, § 008(B)(8)",
+          "quote": "B. The following terrestrial wildlife species or viable gametes (eggs and sperm) are hereby determined to be detrimental to existing wildlife and their habitat in Colorado, and except as authorized in writing by the Division after consideration of the criteria in Commission Regulation #1102(A)(4), their possession is prohibited. Persons who have proof of possession of those species listed in subsections 1 through 8 of this section prior to September 1, 1990, may possess the following species for the life of the animal(s). ... 8. Striped skunks.",
+          "note": "Named on the prohibited list by common name, so the taxonomy question does not arise. Descenting does not help, and CPW names skunks among animals not allowed even where another state permits them. It is a Colorado native as well, and C.R.S. 33-6-109 bars keeping native wildlife taken from the wild.",
+          "grandfathered": {
+            "before": "1990-09-01",
+            "detail": "Proof of possession before 1 September 1990 allows the animal to be kept for its life, tagged and reported, but not sold, traded or moved within Colorado."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "AZ": {
+          "status": "restricted",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(F)",
+          "quote": "All species of the order Carnivora",
+          "note": "All of Carnivora is restricted, and the skunk is a carnivore on any taxonomy, so it needs a special license. It is also an Arizona native, and taking one alive from the wild is a separate regime under R12-4-404, R12-4-405 and Commission Order 43 that needs a hunting license.",
+          "verifiedOn": "2026-10-01"
+        },
+        "OR": {
+          "status": "unclear",
+          "sourceId": "or-635-044",
+          "cite": "OAR 635-044-0450(3), 0460(1), (4), (6)(b); 0470(4)",
+          "quote": "Black bears, cougars, bobcats, wolves, raccoons and skunks held in captivity require a Wildlife Holding or Wildlife Exhibitor/Animal Entertainment Industry or Wildlife Sanctuary Permit and associated fees paid for those species held.",
+          "note": "The rule covers \"Skunk (Mephitis spp.)\" by genus and reads two ways, as the raccoon does. 0460(1) lists a Wildlife Holding Permit among the permits that cover a skunk and 0460(6)(b) writes sterilization conditions for held skunks, while 0450(3) says an exhibitor or sanctuary permit is required for any 0460 species, 0470 frames pets as grandfathered from 20 January 2017, and ORS 498.029 as cited in 0460(4)(d) bars offering a skunk for sale as a household pet in Oregon. Any skunk held must come from an out-of-state USDA breeder.",
+          "localOverride": true,
+          "grandfathered": {
+            "before": "2017-01-20",
+            "detail": "An animal legally held as a pet on 20 January 2017, with a Wildlife Holding Permit applied for by 21 January 2018, may be kept for its life under OAR 635-044-0470. It may not be bred, and may be transferred only to an AZA, exhibitor or sanctuary facility."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "WA": {
+          "status": "banned",
+          "sourceId": "wa-wac-246-100-197",
+          "cite": "WAC 246-100-197(5)(a), (b)",
+          "quote": "All persons are prohibited from acquiring, selling, bartering, exchanging, giving, purchasing, distributing, or trapping to retain any bat, skunk, fox, raccoon, or coyote, except a zoological park, animal exhibitor, research facility, or wildlife rehabilitator.",
+          "note": "The rabies rule names the skunk, and bars anyone but zoos, exhibitors, research facilities and rehabilitators from acquiring or importing one. Descented or not makes no difference.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "OH": {
+          "status": "permit",
+          "sourceId": "oh-1531-01",
+          "cite": "R.C. 1531.01(W); § 1533.71(A)(2)",
+          "quote": "\"Noncommercial propagating license\" permitting the licensee to propagate game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, or fur-bearing animals and to hold the animals in captivity. Game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, and fur-bearing animals propagated or held in captivity by authority of a noncommercial propagating license are for the licensee's own use and shall not be sold. The fee for such a license is twenty-five dollars per annum.",
+          "note": "Skunks are named fur-bearing animals under R.C. 1531.01(W), so a pet skunk needs the $25 noncommercial propagating license under § 1533.71(A)(2), for the licensee's own use and not for sale.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "TX": {
+          "status": "permit",
+          "sourceId": "tx-71-001",
+          "cite": "Parks & Wild. Code §§ 71.001(1), 71.005(c), 71.010",
+          "quote": "No person may capture or possess a live fur-bearing animal for any purpose, except as otherwise authorized by this code, unless he has acquired and possesses a fur-bearing animal propagation license.",
+          "note": "The striped skunk is a fur-bearing animal under § 71.001(1), and § 71.005(c) requires a fur-bearing animal propagation license to possess a live one \"for any purpose\", so the license is a keeper's license as well as a breeder's; the fee is $50.75. The definition is headed \"wild\", which is the argument a captive-bred animal is outside it, but the word reads as describing the species rather than the animal's history. Not on the dangerous wild animal list.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "MI": {
+          "status": "permit",
+          "sourceId": "mi-captive-game",
+          "cite": "NREPA Part 427, MCL 324.42701 et seq.",
+          "quote": "badger, bobcat, red and gray fox, raccoon, coyote, beaver, otter, muskrat, mink, squirrels, striped skunk, woodchuck, opossum, ring-necked pheasant, bobwhite quail, Hungarian partridge, ducks, geese and wild turkeys",
+          "note": "The striped skunk is on the closed list of game that may be held under the DNR's Permit to Hold Game in Captivity, so a keeper needs that permit. It covers captive-bred animals only, so one taken from the wild cannot be brought under it. The list names the striped skunk specifically.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "IL": {
+          "status": "permit",
+          "sourceId": "il-520-5",
+          "cite": "520 ILCS 5/2.2; 5/3.25",
+          "quote": "Before any individual shall hold, possess or engage in the breeding or raising of live fur-bearing mammals, he shall first procure a fur-bearing mammal breeder permit. Fur-bearing mammal breeder permits shall be issued by the Department. The annual fee for each fur-bearing mammal breeder permit shall be $25.",
+          "note": "The striped skunk is named among Illinois's protected fur-bearing mammals in § 2.2 as Mephitis mephitis, and § 2.2 makes possessing one unlawful except as the Wildlife Code provides. § 3.25 provides it: a fur-bearing mammal breeder permit, $25 a year, required of anyone who holds a live fur-bearer, breeding or not. The protection follows the species, not the animal's origin, so a captive-bred animal from out of state needs it too.  Illinois is a home rule state, so a municipal ordinance can be stricter and often decides it.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-97a-015",
+          "cite": "§ 97A.015, subd. 53; § 97A.501, subd. 1",
+          "quote": "\"Unprotected wild animals\" means wild animals that are not protected wild animals including coyote, plains pocket gopher, porcupine, striped skunk, and unprotected birds, except any animal species listed as endangered, threatened, or of special concern in Minnesota Rules, chapter 6134.",
+          "note": "Minnesota names the striped skunk as an unprotected wild animal, and the possession bar in § 97A.501 reaches protected wild animals only. It is not a regulated animal under § 346.155 either. Read and nothing found; local ordinances may still restrict it.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NV": {
+          "status": "banned",
+          "sourceId": "nv-nac-503",
+          "cite": "NAC 503.110(1)(d)",
+          "quote": "1. Except as otherwise provided in this section, the importation, transportation or possession of the following species of live wildlife or hybrids thereof, including viable embryos or gametes, is prohibited: ... (d) Mammals: ... (12) Skunk............................................... All species in the genera Spilogale, Mephitis and Conepatus",
+          "note": "Every skunk genus is on the prohibited list. Permits for prohibited species go only to accredited zoos, universities, scientific institutions, commercial aquaculture and nonprofit educational exhibitors. NAC 503.140(4) preserves county and city ordinances, and Clark County, Las Vegas and Henderson are all stricter than the state.",
+          "localOverride": true,
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VA": {
+          "status": "banned",
+          "sourceId": "va-29-1-521",
+          "cite": "Va. Code § 29.1-521(A)(10); 4VAC15-20-50",
+          "quote": "To hunt, trap, take, capture, kill, attempt to take, capture, or kill, possess, deliver for transportation, transport, cause to be transported, by any means whatever, receive for transportation or export, or import, at any time or in any manner, any wild bird or wild animal or the carcass or any part thereof, except as specifically permitted by law and only by the manner or means and within the numbers stated.",
+          "note": "The striped skunk is a Virginia native wild animal. Because it is a Virginia native, it is not a nonnative (exotic) animal, so the permit table at 4VAC15-30-40 is not its rule, even though the table names its family; § 29.1-521(A)(10) is, and it bars possessing a wild animal except as specifically permitted. The one-per-address allowance at 4VAC15-360-10(A) reaches no mammal, and Chapter 290's permits are for exhibits and scientific collection, the reasoning the flying squirrel cell sets out.",
+          "verifiedOn": "2026-10-01"
+        },
+        "MD": {
+          "status": "banned",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1)(i)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Named in clause (i), so taxonomy does not matter and neither does descenting. There is no private permit: the exemptions run to zoos, sanctuaries, research and licensed exhibitors. Subsection (e) preserves stricter county and municipal rules.",
+          "localOverride": true,
+          "grandfathered": {
+            "before": "2006-05-31",
+            "detail": "Lawful possession on or before 31 May 2006 may continue, but only if the keeper gave written notification to the local animal control authority by 1 August 2006, with the number and type of animals and a photograph or a description of a tattoo or microchip. That window is long closed."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Mammal | Skunk | Mephitidae all species | Skunk (any type) | IV",
+          "note": "The list takes the whole skunk family under its current name, so there is no taxonomy question. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. 19.35.7 NMAC is an importation rule, so it governs bringing the animal into New Mexico rather than keeping one already here.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "No skunk is on the Unrestricted or Domestic list, so it is Restricted by default. It is also a Vermont native, and 10 V.S.A. § 4709 bars possessing a live wild animal without authorization. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "UT": {
+          "status": "restricted",
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1 header",
+          "quote": "Except as otherwise listed, all species are presumed prohibited. All species not listed will require an assessment before collection, importation, or possession will be authorized.",
+          "note": "The striped skunk is on none of Table 3b-1's five sections. Unlisted birds and mammals are presumed prohibited and need a division assessment before possession is authorized, so this is neither cleared nor expressly banned; it is an application to DWR with no published answer, the serval's position.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DE": {
+          "status": "banned",
+          "sourceId": "de-7-c7-sc6",
+          "cite": "Del. Code tit. 7 § 795",
+          "quote": "No live skunks or raccoons shall be sold or possessed in this State or transported into this State for any purpose without a permit from the Division.",
+          "note": "§ 795 requires a Division permit for a live skunk for any purpose, and DNREC says that when people ask about buying a skunk from an out-of-state breeder it tells them \"this is not allowed\". The permit is for rehabilitators, not keepers.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "TN": {
+          "status": "permit",
+          "sourceId": "tn-1660-01-18",
+          "cite": "Tenn. Code Ann. §§ 70-4-403(2), 70-4-401(b), 70-4-404(d)(1)(B); Tenn. Comp. R. & Regs. 1660-01-18-.03(2), (3)(b)",
+          "quote": "(2) Native species of wildlife are considered to be Class II unless specifically designated otherwise by T.C.A. § 70-4-403 or rules and regulations authorized therein. (3) ... (b) 1. The following species or groups of wildlife are deleted from the existing listing designated by legislation as Class III: (i) All native, nonpoisonous reptiles and amphibians; and (ii) All native, furbearing mammals. 2. All species or groups of wildlife deleted from Class III in part 1. are considered to be Class II wildlife.",
+          "note": "The striped skunk is a native furbearing mammal, and the commission's rule moves native furbearers out of Class III and into Class II. TWRA says no one may possess a Class II species without the permit, which costs $10 an animal for personal possession, and § 70-4-401(b) requires documentary evidence of the supplier's name and address and the date acquired. The statute's Class III entry for furbearers \"raised solely for the sale of fur\" covers fur farming, not a pet. ",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "NC": {
+          "status": "permit",
+          "sourceId": "nc-113-272-5",
+          "cite": "G.S. §§ 113-129(7a), (7c), (15), (16); 113-272.5(a)",
+          "quote": "the wild animal or wild bird was not acquired unlawfully or merely as a pet",
+          "note": "The striped skunk is a North Carolina fur-bearing animal, so it is a wild animal under § 113-129(15), and (16) carries the definition to animals of wild species raised or kept in captivity. Holding one alive needs a captivity license, and § 113-272.5(a) tells the Executive Director not to issue it unless the animal \"was not acquired unlawfully or merely as a pet\", the reasoning the flying squirrel cell rests on. ",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "AR": {
+          "status": "banned",
+          "sourceId": "ar-unrestricted",
+          "cite": "Addendum R1.03; Codes 01.00, 09.14",
+          "quote": "The Commission will not issue permits for breeding, sale, or importation of the following species other than in accordance with the exceptions listed in Codes 09.07, 09.10, 09.11, and Addenda F1.03, F1.04 (possession of some species may be allowed in accordance with Codes 09.02, 09.05, 09.08, and 09.14): ... Skunks (Genera: Mephitis, Spilogale)",
+          "note": "Both native routes are shut. A skunk is a furbearer under Code 01.00, not nongame wildlife, so it is not among the animals 09.14(A) lets a household catch by hand. And the captive-born route in 09.14(B) needs a permitted breeder or an importation permit, which R1.03 says the Commission will not issue for skunks.",
+          "verifiedOn": "2026-10-08"
+        },
+        "ID": {
+          "status": "banned",
+          "sourceId": "id-25-236",
+          "cite": "Idaho Code § 25-236(1), (3)",
+          "quote": "No person shall possess, offer for sale, trade, barter, exchange or importation into the state of Idaho any fox, skunk or raccoon, except as provided in subsection (2) or (3) of this section.",
+          "note": "The skunk is named in the statute, and it is predatory wildlife under § 36-201. The only exceptions are fur farms holding domestic fur-bearing animals and public parks, zoos, museums and educational institutions with an Agriculture permit, so there is no pet route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "IA": {
+          "status": "conditional",
+          "sourceId": "ia-481a-definitions",
+          "cite": "Iowa Code §§ 481A.1(20), 481A.38, 481A.61(1), (4)",
+          "quote": "1. Except as otherwise provided by law, a licensed game breeder whose original stock is obtained from a lawful source may possess any game bird, game animal, or fur-bearing animal, or any of their parts. Possession and use of the game birds, game animals, or fur-bearing animals obtained from a licensed game breeder are lawful.",
+          "note": "The striped skunk is one of Iowa's named fur-bearing animals, and § 481A.38 bars possessing one except as the chapter provides. The chapter provides two things: a licensed game breeder may hold it, and possession of a fur-bearer \"obtained from a licensed game breeder\" is lawful. So the condition is the source, an Iowa-licensed game breeder, and § 481A.61(4) bars a breeder from acquiring fur-bearers taken from the wild in Iowa. It is not a dangerous wild animal under chapter 717F. The list also names the spotted skunk.",
+          "verifiedOn": "2026-10-01"
+        },
+        "KY": {
+          "status": "banned",
+          "sourceId": "ky-301-2-081",
+          "cite": "301 KAR 2:081 § 6(1)",
+          "quote": "(1) Except as established in Sections 2(7) and 7 of this administrative regulation, 301 KAR 2:075, and 301 KAR 3:120, a person shall not import, transport into Kentucky, or possess: ... (j) Rabies Vector Species: 1. Coyote (Canis latrans); 2. Gray fox (Urocyon cinereoargenteus); 3. Raccoon (Procyon lotor); 4. Red fox (Vulpes vulpes); 5. Spotted skunk (Spilogale putorius); 6. Striped skunk (Mephitis mephitis); or 7. Any hybrid of rabies vector species.",
+          "note": "Both the striped and spotted skunks are named as rabies vector species. § 1(3) defines native wildlife \"regardless of ... being captive-bred or taken from the wild\", so a captive-bred animal from another state is in the same position. KRS 65.877 lets local governments go further.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "RI": {
+          "status": "banned",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17 native mammal list; §§ 3.7(A), (C)",
+          "quote": "The possession of native mammals is restricted to those institutions identified within § 3.7(C) of this Part, and as exempted per § 3.8 of this Part. Terrestrial mammals considered native either currently or historically to Rhode Island and which possession as pets is prohibited include the following: ... (40) Striped Skunk (Mephitis mephitis),",
+          "note": "Named on the native mammal list, and skunks are rabies target species. Rhode Island's native definition applies \"regardless of where the animal originated\", so a captive-bred animal from out of state is no different, and § 3.7(A) separately restricts every carnivore without a licensed rabies vaccine to researchers, USDA exhibitors and AZA facilities.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.05, Table 800.2",
+          "quote": "Skunk, Striped   Mephitis mephitis   5",
+          "note": "The striped skunk is in the controlled table with category 5 alone. Permittee category 5 is the exhibitor category, with no category 1 for an individual, so a private keeper cannot be issued a possession permit.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MO": {
+          "status": "banned",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.223(3); 3 CSR 10-9.420(1); 3 CSR 10-4.110(4)",
+          "quote": "(3) Live skunks may not be imported, bought, sold, transported, given away, or otherwise disposed of in this state.",
+          "note": "Missouri closes every door on the skunk. It may not be imported, bought, sold or given away, the Wildlife Hobby Permit excludes skunks by name, and as a furbearer it is outside the take-five rule for natives.",
+          "verifiedOn": "2026-10-08"
+        },
+        "KS": {
+          "status": "unclear",
+          "sourceId": "ks-115-5-2",
+          "cite": "K.A.R. 115-5-2(b); K.S.A. 32-1002(a)(2), (b)",
+          "quote": "(b) Live furbearers legally taken during a furbearer season may be possessed only through the last day of the season in which taken.",
+          "note": "K.S.A. 32-1002(a)(2) bars possessing any wildlife unless a regulation permits it, and the striped skunk is a Kansas furbearer. The only regulation that permits a live furbearer is 115-5-2(b), and it lets a Kansas-caught animal be held only to the end of the season it was taken in, so a wild-caught pet is out. What is not settled is a captive-bred animal bought in another state: 32-1002(b) lifts the possession bar for animals \"legally taken outside this state\", and no Kansas text says whether that reaches one bred in captivity. The handoff records this as the one question Kansas has never closed.",
+          "verifiedOn": "2026-10-08"
+        },
+        "SC": {
+          "status": "permit",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-20(A)(1), (B)",
+          "quote": "a furbearer, a member of the family Cervidae, a nondomestic member of the families Suidae (pigs), Tayassuidae (peccaries), Bovidae (bison, mountain goat, mountain sheep), coyote, bear, or turkey (genus Meleagris). Furbearer includes, but is not limited to, red and gray fox, raccoon, opossum, muskrat, mink, skunk, otter, bobcat, weasel, and beaver;",
+          "note": "The skunk is named as a furbearer, so importing one needs a Department permit. § 50-16-20(B) lets the Department issue the permit only if the animal was taken lawfully where it came from and its possession is not expected to harm the state's wildlife, and § 50-16-60's pet-trade exemption does not list it.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MT": {
+          "status": "banned",
+          "sourceId": "mt-50-23-102",
+          "cite": "MCA §§ 50-23-101(4), 50-23-102",
+          "quote": "\"Wild animal\" means a skunk, fox, raccoon, or bat.",
+          "note": "The skunk is the first animal the rabies law names, and § 50-23-102 bars possessing one outside a fur farm, a no-contact zoo exhibit or research. Descenting does not change the species, and the 1982 grandfather date means no pet route is left.",
+          "grandfathered": {
+            "before": "1981-07-01",
+            "detail": "Held for at least 6 months before 1 January 1982."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "WV": {
+          "status": "permit",
+          "sourceId": "wv-20-2-51",
+          "cite": "W. Va. Code § 20-1-2, § 20-2-4(a), § 20-2-51",
+          "quote": "The director may issue a permit to a person to keep and maintain in captivity as a pet, a wild animal or wild bird that has been acquired from a commercial dealer or during the legal open season. The fee therefor shall be $2.",
+          "note": "The striped skunk is native, so the same Chapter 20 path applies as for the raccoon: § 20-2-4(a) bars keeping a wild animal except as the chapter provides, and § 20-2-51 provides a pet permit for one from a commercial dealer or the open season. No West Virginia text read singles the skunk out on rabies grounds.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "AK": {
+          "status": "banned",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(a), (c); AS 16.05.940(19)",
+          "quote": "The department may not issue a permit for the capture, possession, import, or export of any game animal, including a hybrid of a game animal and a species listed in (b) of this section, for use as a pet",
+          "note": "Every mammal is game, the skunk is not on the clean list, and subsection (c) bars a pet permit. Descenting does not change that.",
+          "verifiedOn": "2026-10-01"
+        },
+        "SD": {
+          "status": "unclear",
+          "sourceId": "sd-12-68-18",
+          "cite": "ARSD 12:68:18:03(1)(d)",
+          "quote": "(1) Of the order Carnivora, all nondomestic members of the following families: ...(d) Mustelidae;",
+          "note": "The rule dates from 1993, when skunks were classed in Mustelidae, and current taxonomy puts them in their own family, Mephitidae, which the list does not name. Read with the taxonomy of its day the skunk needs a ten-dollar possession permit; read with today's it needs nothing beyond the free entry permit. Either way there is no ban.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AL": {
+          "status": "banned",
+          "sourceId": "al-220-2-26",
+          "cite": "§ (1), (3); r. 220-2-.92(1)(e)",
+          "quote": "Any of the following from any area outside the state of Alabama; any member of the family Cervidae (to include but not be limited to deer, elk, moose, caribou), species of coyote, species of fox, species of raccoon, species of skunk, wild rodent, or strain of wild turkey, black bear (Ursus americanus), mountain lion (Felis concolor), bobcat (Felis rufus)",
+          "note": "\"Species of skunk\" from outside the state is barred, an Alabama-caught striped skunk is a protected wild animal under § (3), and the spotted skunk is on the protected nongame list as well. No pet route either way.",
+          "verifiedOn": "2026-10-01"
+        },
+        "IN": {
+          "status": "permit",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-7(a)(9); 9-11-2(b)",
+          "quote": "(9) Striped skunk (Mephitis mephitis).",
+          "note": "Named by binomial on the Class II list, so the same five-day permit as the raccoon, with inspection, proof of lawful acquisition and a vet's statement.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "ND": {
+          "status": "banned",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4; NDAC 48.1-09-01-02(5)(a)",
+          "quote": "A person may not keep a skunk or raccoon in captivity. This section does not apply to a zoo licensed by the animal care program of the animal and plant health inspection service of the United States department of agriculture.",
+          "note": "Banned by statute alongside the raccoon, with an import bar \"for any purpose\" in the board's rule. The only exception is a USDA-licensed zoo, so descenting or captive breeding makes no difference.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "WY": {
+          "status": "conditional",
+          "sourceId": "wy-ch10",
+          "cite": "Ch. 10 §§ 12, 14(b); Wyo. Stat. § 23-1-101(a)(viii)(A)",
+          "quote": "The following wildlife may be possessed without a permit if captured in the state, but no importation is allowed. ... (b) Mammals declared as pests by W.S. 11-5-101 through W.S. 11-5-119, or animals defined in W.S. 23-1-101 as predatory animals.",
+          "note": "\"Skunk\" is on the statutory predatory animal list without a species limit. A skunk from out of state is barred at the border by Chapter 10 § 12, and one captured in Wyoming may be kept with no permit under § 14(b). A descented pet-trade skunk is always an import, so in practice that route is closed.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MS": {
+          "status": "banned",
+          "sourceId": "ms-40-2-7-1",
+          "cite": "Rule 7.1(A), (F); Miss. Code § 49-7-1",
+          "quote": "F. Live nuisance animals may not be possessed except: 1. Coyotes in permitted coyote enclosures; 2. Fox in permitted fox enclosures",
+          "note": "\"Skunks\" are nuisance animals by statute, and the exceptions in Rule 7.1(F) cover only coyotes, foxes and hogs. So no live skunk may be possessed at all, descented or not.",
+          "verifiedOn": "2026-10-08"
+        },
+        "LA": {
+          "status": "unclear",
+          "sourceId": "la-76-v-131",
+          "cite": "LAC 76:V.131.D.3; La. R.S. 56:8(92), (151)(a)(iv)",
+          "quote": "ii.A raccoon or skunk that is sick, injured, or orphaned may also be possessed pursuant to the provisions of this Paragraph upon notification to the Department of Wildlife and Fisheries of possession of the wildlife and upon receipt of information regarding rabies vector species and a list of available wildlife rehabilitators.",
+          "note": "Same position as the raccoon. The skunk is a nongame quadruped and a rabies vector species, the rescuer rule lets a sick, injured or orphaned skunk be held and, if non-releasable, kept for life on a special purpose permit, and pet-trade use of such an animal is barred. No text read decides a captive-bred, descented skunk bought as a pet.",
+          "verifiedOn": "2026-10-08"
+        },
+        "OK": {
+          "status": "permit",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(a); 29 O.S. § 7-502(B)(4)",
+          "quote": "The following wildlife species are exempt from import and export permits, commercial wildlife breeders licenses, noncommercial wildlife breeders licenses and commercial hunting area license requirements",
+          "note": "Native and not on the exemption list, so the import permit and noncommercial wildlife breeder's license apply. § 7-502(B)(4) keeps a captive-bred pet outside the statutory possession bar. No Oklahoma text read singles out skunks on rabies grounds.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NE": {
+          "status": "banned",
+          "sourceId": "ne-37-477",
+          "cite": "Neb. Rev. Stat. § 37-477(2), (3)",
+          "quote": "(2) Except as provided in subsection (3) of this section, no person shall keep in captivity in this state any wolf, any skunk, or any member of the families Felidae and Ursidae.",
+          "note": "Nebraska names the skunk in the statute's flat ban, beside the wolf and every cat and bear, with no permit behind it. The exceptions are public and accredited zoos and pre-1986 animals.",
+          "grandfathered": {
+            "before": "1986-03-01",
+            "detail": "A person legally holding such an animal on 1 March 1986 may keep it for its lifetime under § 37-477(3), and may not trade, sell or dispose of it without the commission's written permission."
+          },
+          "verifiedOn": "2026-10-01"
+        }
+      },
+      "article": "/blog/skunk-legal-guide/"
     }
   }
 }
