@@ -15034,12 +15034,12 @@
           "verifiedOn": "2026-10-01"
         },
         "HI": {
-          "status": "permit",
+          "status": "banned",
           "sourceId": "hi-4-71-6-5b",
-          "cite": "List of Restricted Animals, Part B",
+          "cite": "Restricted Animal List Part B; HAR §§ 4-71-2, 4-71-6.5(b)(3)",
           "quote": "Trachemys (all species in genus)",
-          "note": "Part B is the restricted list for private and commercial use, so unlike a Part A animal this one has a route, but it needs a permit rather than being freely importable.",
-          "permitFor": "personal",
+          "note": "Hawaii names the whole slider genus on Part B, the private and commercial use list, so a slider can come in by permit. That permit is not a pet permit: § 4-71-2 defines private use as \"use for non-commercial purposes, such as non-profit research, and does not include individual possession of an animal as a pet.\" A red-eared slider can be held by a business, zoo or research body, not kept as a pet.",
+          "permitFor": "commercial-exhibition-research",
           "verifiedOn": "2026-10-01"
         },
         "RI": {

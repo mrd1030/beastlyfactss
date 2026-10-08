@@ -304,6 +304,10 @@ turned up on its way through.
   the bare "fox" in R.C. 1531.01(W) and G.S. 113-129(7c), matching the arctic fox, with the fennec
   guide's counts and table corrected.
 
+- **Resolved 2026-10-08: the Hawaii red-eared slider cell.** `banned` with permitFor
+  "commercial-exhibition-research" on Part B read with HAR § 4-71-2, matching the wallaby, with the
+  slider guide's Hawaii row corrected.
+
 - **Kansas answers a native herp in three regulations and the famous one is none of them. Priority 1
   is done and it moved nine cells.** K.S.A. 32-1301, the dangerous regulated animal statute the whole
   Kansas column had been written against, names six cats, bears and non-native venomous snakes.
@@ -678,13 +682,6 @@ turned up on its way through.
   rabbits" with no permit available, and 17 Ill. Adm. Code 805.20(a) listing the genus
   Oryctolagus as injurious. Neither writes an express exception for domestic stock. The note
   sets out why both read as aimed at wild-type animals; it is the thinnest Illinois answer.
-- **Hawaii's Part B permit is not a pet permit, which puts the red-eared slider cell in question.**
-  The slider records `permit` with permitFor "personal" on Restricted List Part B. HAR § 4-71-2, in
-  `HI-hi-4-71-rule.txt`, defines the private use that Part B allows: "'Private use' means use for
-  non-commercial purposes, such as non-profit research, and does not include individual possession of
-  an animal as a pet." Read with § 4-71-6.5(b)(3), a Part B animal can come in for a business, zoo or
-  research body but not for a keeper, which is how the new wallaby cell reads it (`banned`, permitFor
-  "commercial-exhibition-research").
 
 ## Articles
 
