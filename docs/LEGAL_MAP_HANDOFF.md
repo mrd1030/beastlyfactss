@@ -272,6 +272,32 @@ turned up on its way through.
 
 ## Loose ends
 
+- **Six Bengal cells contradict the primary text, found 2026-10-08 while reading the Savannah
+  cat row. Not changed, because the published Bengal guide would go out of sync; they need one
+  sitting that re-reads each, fixes the cell, and edits the guide's state table in the same
+  commit.** The Savannah cells beside them were written from the text as it reads now, so the two
+  hybrids currently disagree in these states for no reason the law supports.
+  - **AZ Bengal is `restricted` and R12-4-401 says the opposite.** "Offspring from a wildlife
+    species and a domestic animal species are not considered wildlife." The guide's Arizona row
+    reads "Restricted by order", and the AZ paragraph in stateNotes.js says Arizona's hybrid rule
+    "points against the Bengal rather than for it". The Savannah is `legal` on that sentence.
+  - **VA Bengal is `unclear`.** 4VAC15-20-50 lists "Domestic cat (Felis catus), including hybrids
+    with wild felines" as domestic, and the exotic table excludes domestic species. Reads `legal`.
+  - **WY Bengal note says Wyoming "folds hybrids into the domestic category".** Ch. 10 § 2(z) says
+    warm-blooded wildlife includes "hybrids between wildlife and domestic or domesticated animals".
+    The Savannah is `permit` on that clause.
+  - **ND Bengal.** 48.1-09-01-02(2)(b) puts nondomestic cats "and their hybrids" in category 2,
+    which needs a license before acquiring. The Savannah is `permit`.
+  - **NH Bengal.** Fis 802.03(f) and 804.04(a) reach cat hybrids: registered and three
+    generations clear is exempt, otherwise exhibitor-only. The Savannah is `conditional`.
+  - **DE Bengal.** 903 defines a hybrid by its parents, so the generation matters: an F1 needs the
+    $25 permit, F2 and later fall outside the definition. The Savannah is `conditional`.
+  - Also found in the same sitting: the **TN serval, fennec fox and quaker parakeet are `unclear`
+    for want of the rule chapter**, and Cornell LII now carries it (cached as TN-tn-1660-01-18.txt).
+    It adds no mammal to Class I and puts the monk parakeet in Class V at .03(4)(b). And the **ME
+    serval is `permit`** where § 7.18(2)(F) lists all Felidae in Category 1, exhibitor and research
+    only, which reads `banned`.
+
 - **Kansas answers a native herp in three regulations and the famous one is none of them. Priority 1
   is done and it moved nine cells.** K.S.A. 32-1301, the dangerous regulated animal statute the whole
   Kansas column had been written against, names six cats, bears and non-native venomous snakes.
