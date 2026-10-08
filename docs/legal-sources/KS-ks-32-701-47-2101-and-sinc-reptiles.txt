@@ -1,0 +1,41 @@
+# Kansas: K.S.A. 32-701 game and furbearer definitions, K.S.A. 47-2101 domesticated deer, K.A.R. 115-15-2 reptile list
+
+sourceId: ks-32-701
+jurisdiction: KS
+url: https://www.kslegislature.gov/li/b2025_26/statute/032_000_0000_chapter/032_007_0000_article/032_007_0001_section/032_007_0001_k/
+fetched: 2026-10-08
+fetch notes: kslegislature.gov with curl -L; Cornell LII for 115-15-2. 47-2101 is at .../047_000_0000_chapter/047_021_0000_article/047_021_0001_section/047_021_0001_k/.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+==== K.S.A. 32-701(a), (e), (g), (r) (kslegislature.gov) ====
+32-701. Wildlife and parks laws, definitions. As used in the wildlife and parks laws of this state,
+unless the context otherwise requires or specifically defined otherwise: (a) "Big game animal" means
+any antelope, deer or elk.
+(e) "Furbearing animal" means any badger, beaver, bobcat, grey fox, lynx, marten, mink, muskrat,
+opossum, otter, raccoon, red fox, spotted skunk, striped skunk, swift fox or weasel.
+(g) "Game animal" means any big game animal, wild turkey or small game animal.
+(r) "Small game" means any game bird, hare, rabbit or squirrel.
+
+==== K.S.A. 47-2101(a) and definitions (kslegislature.gov) ====
+47-2101. Raising domesticated deer; unlawful acts; criminal penalty; permit; identification of deer;
+inspection of premises; communications with and assistance from the department of wildlife and
+parks; definitions. (a) It shall be unlawful for any person to possess domesticated deer unless such
+person has obtained from the animal health commissioner a domesticated deer permit. Application for
+such permit shall be made in writing on a form provided by the commissioner. The permit period shall
+be for the permit year ending on September 30 following the issuance date.
+As used in this section: (1) "Deer" means any member of the family cervidae. (2) "Domesticated deer"
+means any member of the family cervidae that was legally obtained and is being sold or raised in a
+confined area for: (A) Breeding stock; (B) any carcass, skin or part of such animal; (C) exhibition;
+or (D) companionship.
+
+==== K.A.R. 115-15-2(a)(4), nongame species in need of conservation, reptiles (law.cornell.edu) ====
+(4) Reptiles Rough earthsnake, Haldea striatula (Linnaeus, 1766) Plains hog-nosed snake, Heterodon
+nasicus (Baird and Girard, 1852) Timber rattlesnake, Crotalus horridus (Linnaeus, 1758) Eastern hog-
+nosed snake, Heterodon platirhinos (Latreille, 1801) Glossy snake, Arizona elegans (Kennicott, 1859)
+Chihuahuan nightsnake, Hypsiglena jani (Duges, 1865) Red-bellied snake, Storeria occipitomaculata
+(Storer, 1839) Long-nosed snake, Rhinocheilus lecontei (Baird and Girard, 1853) Smooth earthsnake,
+Virginia valeriae (Baird and Girard, 1853)

@@ -1844,6 +1844,16 @@
       "title": "Arkansas Game and Fish Commission Code Book, Chapter 12.00 (Alligator Regulations)",
       "url": "https://agfc-omnibus.s3.amazonaws.com/eregs/regulation_pdfs/large/agfc_regulations_codebook_large.pdf",
       "note": "Code 12.01 makes it unlawful to hunt, buy, sell or possess an American alligator \"or other crocodilian species\". The only possession exception for a live animal is a written permit or letter of authorization for display and education, which Code 12.01(C) confines to established facilities such as parks, zoos, aquariums and nature centers."
+    },
+    "ks-32-701": {
+      "title": "K.S.A. 32-701, Wildlife and parks laws, definitions",
+      "url": "https://www.kslegislature.gov/li/b2025_26/statute/032_000_0000_chapter/032_007_0000_article/032_007_0001_section/032_007_0001_k/",
+      "note": "Defines big game (antelope, deer, elk), furbearing animals (the opossum among them), game animals and small game (any game bird, hare, rabbit or squirrel), and wildlife as any member of the animal kingdom."
+    },
+    "tx-44-002": {
+      "title": "Tex. Parks & Wild. Code ch. 44, Game Breeder's License",
+      "url": "https://statutes.capitol.texas.gov/Docs/PW/htm/PW.44.htm",
+      "note": "For this chapter a game animal is a pronghorn, javelina, or red or gray squirrel. § 44.002 bars selling, placing in captivity or propagating any of them without a game breeder's license, and § 44.006 lets the licensee hold one in captivity \"for the purpose of propagation or sale\", which is a breeder's license rather than a keeper's."
     }
   },
   "animals": {
@@ -36444,6 +36454,462 @@
         }
       },
       "article": "/blog/caiman-legal-guide/"
+    },
+    "gray-squirrel": {
+      "name": "Eastern gray squirrel",
+      "scientific": "Sciurus carolinensis",
+      "jurisdictions": {
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(J)",
+          "quote": "Order Rodentia-Hamsters, Field Mice, Voles, Muskrats, Gerbils, Squirrels, Chipmunks, Woodchucks, and Prairie Dogs 1. All species (D), except:",
+          "note": "Every rodent is restricted, marked (D) for detrimental, and squirrels are named in the heading. The exceptions are muskrats under Fish and Game Code § 2250 and domesticated hamsters, rats, mice, guinea pigs and chinchillas; no squirrel is among them. The eastern gray squirrel is an introduced animal in California and the rule reaches it whatever its origin.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-dnr-legal-pets",
+          "cite": "DNR Guide to Legal Pets; R. 391-4-8-.05(1)(a)16",
+          "quote": "The following list of species native to Georgia may not be held as a pet regardless of its origin or morphology. ... Gray Squirrel",
+          "note": "DNR names the gray squirrel on its native list, and the rule's rodent entry reaches every genus but six named pet genera and three commensal species. No pet route.",
+          "verifiedOn": "2026-10-08"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6",
+          "cite": "§ 4-71-6, List of Prohibited Animals",
+          "quote": "FAMILY Sciuridae Sciuridae (all in family, except the following two species for exhibition in government zoos only: Callosciurus prevosti (squirrel, prevost's) and Sciurus variegatoides (squirrel, variegated) and except all species in the genus Marmota for research in government universities only)",
+          "note": "Every squirrel is on the prohibited list, the tier with no permit, and the three exceptions are for government zoos and universities. The eastern gray squirrel is not among them.",
+          "verifiedOn": "2026-10-01"
+        },
+        "PA": {
+          "status": "banned",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code §§ 137.1(a)(10), (11), 137.31(a)",
+          "quote": "It is unlawful for a person to possess live wildlife taken from a wild state within this Commonwealth",
+          "note": "The gray squirrel is a Pennsylvania game animal, and both routes into a home are closed, as for the flying squirrel. § 137.31(a) bars keeping one taken from the wild here, its only exception being a permit to hold foxes for urine collection, and § 137.1(a)(11) bars one held captive or captive bred in another state.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following",
+          "note": "Category (C) admits domesticated rodents only, and a gray squirrel is a wild rodent, the same reading that keeps out the flying squirrel. No permit route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "§ 161.01(b)(9)",
+          "quote": "All squirrels (Sciuridae).",
+          "note": "Every member of the squirrel family is prohibited, and the gray squirrel is also New York State wildlife, which (b)(ii) imports into the city as a second bar. The Code's only exceptions are the Parks Department and Wildlife Conservation Society zoos, labs, veterinary facilities and permitted temporary exhibits, so there is no pet route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-10",
+          "cite": "N.J.A.C. 7:25-10.6(a)5, 10.7(a)1, 10.8(a)1",
+          "quote": "\"Individual Hobby\" may be issued to persons holding game animals for hobby purposes or as pets;",
+          "note": "The gray squirrel has a hunting season, so it is a game animal and the captive game rule answers it: 10.6(a)5 names Sciurus carolinensis among game animals needing a possession permit, and 10.7(a)1 issues an Individual Hobby permit for pets. Under 10.8(a)1 the animal must not come from the wild stock of any state, so a squirrel caught in the yard does not qualify.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "ME": {
+          "status": "banned",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.06(4); 12 M.R.S. § 12152(1-A), (1-B)",
+          "quote": "Unclassified Species: A person may not possess any species that has not been categorized. Any species which has not been identified as a Prohibited, Restricted, or Unrestricted species will not be eligible for a permit under this chapter, however a request may be made to review the categorization of a species subject to section 7.06(5).",
+          "note": "The eastern gray squirrel is a Maine native and sits in none of the four buckets: the only squirrel chapter 7 names is Prevost's squirrel in Category 1, and the Unrestricted List's rodents are cage species. So § 7.06(4) bars it and says it is not eligible for a permit. The wild-take exemption at 12 M.R.S. § 12152(1-B) covers reptiles, amphibians and invertebrates, not mammals.",
+          "verifiedOn": "2026-10-01"
+        },
+        "WI": {
+          "status": "permit",
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(1), (4)(a), 169.15(1)(b)",
+          "quote": "The department shall issue a Class B captive wild animal farm license to operate a captive wild animal farm that grosses less than $10,000 in annual sales to any person who files a proper application for the license and who pays the applicable fee.",
+          "note": "The gray squirrel is a native game animal, and the seventeen native animals § 169.04(4)(a) frees from licensing name ground squirrels and red squirrels but not gray squirrels, so § 169.04(1)(b) requires a license. The Class B captive wild animal farm license is the one that fits a keeper, and the department must issue it to any applicant. Under § 169.04(1)(a) the animal must be legally obtained, which a squirrel caught in the wild is not.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(g)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: ... (g) Squirrels; chipmunks",
+          "note": "Florida names squirrels on its no-permit list for personal use. The proviso keeps other rules in play, and the gray squirrel is a game animal with hunting seasons, so a squirrel taken from the wild is a hunting question; the wild-taken bar at 68A-6.003(13) names foxes, skunks, bats, raccoons and white-tailed deer and not squirrels.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL §§ 11-0103(2)(c), (6)(c), 11-0107(2), 11-0515",
+          "quote": "\"Small game\" means black, gray and fox squirrels, European hares, varying hares, cottontail rabbits, native frogs, native salamanders, native turtles, native lizards, native snakes, coyotes, red fox (Vulpes vulpes) and gray fox (Urocyon cinereoargenteus) except captive bred red fox or gray fox, raccoon, opossum, or weasel,",
+          "note": "The gray squirrel is small game by name. Game is protected wildlife under § 11-0103(6)(c), and § 11-0107(2) bars possessing protected wildlife \"whether taken within the state or coming from without the state\", so a captive-bred animal from another state is in the same position as one caught here. The only possession license, § 11-0515, is for propagation, banding, scientific or exhibition purposes, not pets.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(3)(B)(xxv), (b)(3)",
+          "quote": "(xxv) A member within the order Rodentia, except for guinea pig (Cavia porcellus), gerbil (Meriones unguiculatus), chinchilla (Chinchilla lanigera), rat (Rattus norvegicus), mouse (Mus musculus), hamster (Mesocricetus auratus), dwarf hamster (genera Phodopus and Cricetulus), Patagonia mara (Dolichotis patagonum) and American beaver (Castor canadensis),",
+          "note": "Category Two takes the whole rodent order minus nine named exceptions, and no squirrel is among them. The gray squirrel is a Connecticut native, but Category Three, the native tier that bars only import and export, applies only to an animal not already in Category One or Two. Subsection (b)(3) allows a Category Two animal only to a treating vet, municipal parks, zoos, aquaria, nature centers, museums, exhibitors, laboratories and research facilities, so there is no private route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(1), (12)(a)",
+          "quote": "The purpose of 321 CMR 9.01 is to list those species which are exempt from the licensing provisions of M.G.L. c. 131, § 23, and which may be imported, possessed, maintained, propagated, bought, sold, exchanged or offered for sale without a license or permit from the Division. Species not listed, or which are expressly listed as \"require(s) a permit\", are not exempt from the provisions of M.G.L. c. 131, § 23.",
+          "note": "The thirteen-entry mammal exemption list has no gray squirrel; its only squirrel is the southern flying squirrel, so in this closed-list state it needs a § 23 license; MassWildlife's own summary says \"You cannot have in your possession any mammal not listed as legal or domestic.\" The gray squirrel is also a native, and MassWildlife says the only animals that may be taken from the wild are certain reptiles and amphibians. The license under § 23 exists on paper, but MassWildlife says permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\"",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife; 2 CCR 406-11 § 1103",
+          "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
+          "note": "No squirrel is on the unregulated list, and the only squirrels on the prohibited list are African tree, sun and rope squirrels, so the eastern gray squirrel is regulated wildlife with no pet license. Chapter W-11 says noncommercial (pet) possession of regulated mammals has been prohibited since 1983, and its wildlife park licenses are commercial or closed to new entrants.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AZ": {
+          "status": "restricted",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(F)(9)(g)",
+          "quote": "g. The family Sciuridae . Common names include: chipmunks, marmots, prairie dogs, squirrels, and woodchucks.",
+          "note": "The whole squirrel family is restricted live wildlife. Restricted live wildlife may be held only under a special license listed in R12-4-409(A) or a listed exemption, and none of the R12-4-407 exemptions is a pet route.",
+          "verifiedOn": "2026-10-08"
+        },
+        "OR": {
+          "status": "banned",
+          "sourceId": "or-635-056-0050",
+          "cite": "OAR 635-056-0050(1)(a)(J)(xxi)",
+          "quote": "(xxi) Eastern gray squirrel ... Sciuridae ... Sciurus carolinensis;",
+          "note": "Named to the species on the prohibited list, beside the eastern fox squirrel. The eastern gray squirrel is introduced in Oregon rather than native, which is why the nonnative wildlife rules answer it. 0050(2) allows a prohibited species permit on facility, security and veterinary standards, but it is written for zoos, universities and similar holders. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "WA": {
+          "status": "conditional",
+          "sourceId": "wa-rcw-77-08-010",
+          "cite": "RCW 77.08.010(72), (74); WAC 220-450-030(1), (3), (4), (5)",
+          "quote": "It is unlawful to possess or hold in captivity live wild animals, wild birds, or game fish unless lawfully acquired. Lawful acquisition and possession include department permits and any other applicable authorization.",
+          "note": "The eastern gray squirrel is an introduced animal that lives wild in Washington, so it is a \"wild animal\" under RCW 77.08.010(72), which turns on whether a species exists in Washington in a wild state rather than on where it came from. Title 77 then asks for lawful acquisition: no taking from the wild without a director's permit, a health certificate to import, documented proof of source, and no commercial use of a captive animal or its young except as rule allows. RCW 16.30 names no rodent.",
+          "verifiedOn": "2026-10-08"
+        },
+        "OH": {
+          "status": "permit",
+          "sourceId": "oh-1531-01",
+          "cite": "R.C. 1531.01(V); § 1533.71(A)(2)",
+          "quote": "\"Noncommercial propagating license\" permitting the licensee to propagate game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, or fur-bearing animals and to hold the animals in captivity. Game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, and fur-bearing animals propagated or held in captivity by authority of a noncommercial propagating license are for the licensee's own use and shall not be sold. The fee for such a license is twenty-five dollars per annum.",
+          "note": "Ohio names gray squirrels among its game quadrupeds in R.C. 1531.01(V), and § 1533.71(A) requires anyone who wants to have game quadrupeds in captivity to hold a license. The noncommercial propagating license is the keeper's one: $25 a year, for the licensee's own use, no sales.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "TX": {
+          "status": "permit",
+          "sourceId": "tx-44-002",
+          "cite": "Parks & Wild. Code §§ 63.001(a), 63.002, 44.001(3), 44.002, 44.006",
+          "quote": "No person may sell, place in captivity, or engage in the business of propagating any game animal of this state unless the person has obtained a license issued under this chapter from the department.",
+          "note": "The gray or cat squirrel is a Texas game animal, and § 63.002 bars possessing a live one for any purpose the code does not authorize. Chapter 44 is the authorization: a game breeder's license, which names red and gray squirrels, is needed to place one in captivity. The license lets the holder keep game animals \"for the purpose of propagation or sale\", and no section authorizes holding a squirrel purely as a pet, so the license is a breeder's one that a keeper would hold on those terms.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "MI": {
+          "status": "permit",
+          "sourceId": "mi-captive-game",
+          "cite": "NREPA Part 427, MCL 324.42701 et seq.",
+          "quote": "badger, bobcat, red and gray fox, raccoon, coyote, beaver, otter, muskrat, mink, squirrels, striped skunk, woodchuck, opossum, ring-necked pheasant, bobwhite quail, Hungarian partridge, ducks, geese and wild turkeys",
+          "note": "Squirrels are on the closed list of game that may be held under the DNR's Permit to Hold Game in Captivity, so a keeper needs that permit. It covers captive-bred game only, so a squirrel taken from the wild cannot be brought under it.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "IL": {
+          "status": "permit",
+          "sourceId": "il-520-5-3-23",
+          "cite": "520 ILCS 5/2.2, 5/3.23",
+          "quote": "Any person desiring to possess, propagate, hold in captivity but not offer for sale any species protected by this Act may do so by acquiring either a Class A Noncommercial bird breeders permit or a Class A Noncommercial game breeders permit.",
+          "note": "Illinois names the gray squirrel among its game mammals in § 2.2, which makes possessing one unlawful except as the Wildlife Code provides. § 3.23 provides it: a Class A Noncommercial game breeders permit, $10 a year, for anyone who wants to hold a protected species without selling it. Illinois is a home rule state, so a municipal ordinance can be stricter.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MN": {
+          "status": "permit",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.015, subds. 39, 45; § 97A.501, subd. 1; § 97A.401, subd. 3(a)",
+          "quote": "Except as provided in paragraph (b), special permits may be issued without a fee to take, possess, and transport wild animals as pets and for scientific, educational, rehabilitative, wildlife disease prevention and control, and exhibition purposes. The commissioner shall prescribe the conditions for taking, possessing, transporting, and disposing of the wild animals.",
+          "note": "The gray squirrel is small game under subd. 45 and so a protected wild animal, which § 97A.501 bars possessing unless the game and fish laws allow it. The allowance is the special permit in § 97A.401 subd. 3, issued free \"as pets\" on the commissioner's conditions, the same route the raccoon takes. It is discretionary.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NV": {
+          "status": "permit",
+          "sourceId": "nv-nrs-503-597",
+          "cite": "NRS 503.597(1); NAC 503.110, 503.140",
+          "quote": "it is unlawful, except by the written consent and approval of the Department, for any person at any time to receive, bring or have brought or shipped into this State, or remove from one stream or body of water in this State to any other...any aquatic life or wildlife",
+          "note": "The eastern gray squirrel is not a Nevada native, and it is on neither the prohibited list nor the no-permit list; the only gray squirrel Nevada names is its own western gray squirrel, a protected mammal. An animal on neither list needs the Department's written consent to be brought into the state under NRS 503.597. NAC 503.140(4) preserves county and city ordinances, so check the municipality as well.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "VA": {
+          "status": "banned",
+          "sourceId": "va-29-1-521",
+          "cite": "Va. Code § 29.1-521(A)(10); 4VAC15-20-50",
+          "quote": "To hunt, trap, take, capture, kill, attempt to take, capture, or kill, possess, deliver for transportation, transport, cause to be transported, by any means whatever, receive for transportation or export, or import, at any time or in any manner, any wild bird or wild animal or the carcass or any part thereof, except as specifically permitted by law and only by the manner or means and within the numbers stated.",
+          "note": "The eastern gray squirrel is on the department's list of native fauna. Because it is native it is not a nonnative (exotic) animal, so the permit table at 4VAC15-30-40 is not its rule; § 29.1-521(A)(10) is, and it bars possessing a wild animal except as specifically permitted. The one-per-address allowance at 4VAC15-360-10(A) reaches herps, aquatic invertebrates and nongame fish, not mammals.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MD": {
+          "status": "permit",
+          "sourceId": "md-10-902",
+          "cite": "Nat. Res. § 10-902(a), (b)",
+          "quote": "Any person desiring to possess, import, export, breed, raise, protect, rehabilitate, hunt, kill, trap, capture, purchase, or sell any wildlife native to Maryland, shall first obtain a permit or license from the Department.",
+          "note": "The eastern gray squirrel is native to Maryland and on no § 10-621 list. § 10-902(a) attaches a permit requirement to possessing any native wildlife, with no exception for captive-bred animals or animals bought out of state. The Secretary sets the permit classes by regulation, and no personal pet permit class for a native mammal was located in COMAR subtitle 08.03, the reading the flying squirrel cell sets out, so the permit exists in statute and the class a keeper would apply under is not evident.",
+          "localOverride": true,
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Squirrel | Sciuridae | Sciurus spp | Squirrels | IV | State Protected Species",
+          "note": "Every Sciurus squirrel is in Group IV and flagged as a state protected species. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. 19.35.7 NMAC is an importation rule, so it governs bringing the animal into New Mexico rather than keeping one already here.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "No squirrel is on any of Vermont's three lists; the Unrestricted list's rodents are pet species. The gray squirrel is also a Vermont native, so taking one from the wild is a separate question under the Fish and Wildlife statutes. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "UT": {
+          "status": "restricted",
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1 header",
+          "quote": "Except as otherwise listed, all species are presumed prohibited. All species not listed will require an assessment before collection, importation, or possession will be authorized.",
+          "note": "The eastern gray squirrel is on none of Table 3b-1's sections. Unlisted birds and mammals are presumed prohibited and need a division assessment before possession is authorized, so it is neither cleared nor expressly banned, the kinkajou's position.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DE": {
+          "status": "banned",
+          "sourceId": "de-dnrec-wild-pets",
+          "cite": "DNREC, The perils of wild pets; Del. Code tit. 7, ch. 7",
+          "quote": "\"State regulations explicitly forbid Delawareans from owning\" \"native wildlife,\" \"with an exception for wildlife rehabilitation experts, who must hold permits from DNREC to care for the animals.\"",
+          "note": "The gray squirrel is native to Delaware. Native wildlife is DNREC's, not the Department of Agriculture's, so the exotic animal permit does not reach it, and DNREC says keeping native wildlife is not allowed outside its rehabilitation permits. The regulation DNREC refers to was not read here.",
+          "verifiedOn": "2026-10-08"
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "Tenn. Code Ann. § 70-4-403(3)(B); Tenn. Comp. R. & Regs. 1660-01-18-.03(2), (3)(b)",
+          "quote": "(3) Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... (B) Rodents--Gerbils, hamsters, guinea pigs, rats, mice, squirrels and chipmunks;",
+          "note": "Squirrels are named in Class III, which overrides the Class II default for native species, and the commission's rule moves only native nonpoisonous herps and native furbearers out of Class III. So a gray squirrel needs no wildlife permit. Taking one from the wild is a hunting question.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NC": {
+          "status": "permit",
+          "sourceId": "nc-113-272-5",
+          "cite": "G.S. §§ 113-129(7c), (15), (16); 113-272.5(a)",
+          "quote": "the wild animal or wild bird was not acquired unlawfully or merely as a pet",
+          "note": "The gray squirrel is a game animal under G.S. 113-129(7c), which names \"squirrel\", and so a wild animal under (15), with (16) carrying the definition to animals of wild species kept in captivity. Holding one alive needs a Wildlife Resources Commission captivity license, and § 113-272.5(a) tells the Executive Director not to issue it unless the animal \"was not acquired unlawfully or merely as a pet\", the reasoning the black bear and raccoon cells rest on.",
+          "localOverride": true,
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "AR": {
+          "status": "conditional",
+          "sourceId": "ar-code-0900",
+          "cite": "Code 09.14(A)(1)(i), (B); Code 01.00",
+          "quote": "It is unlawful to possess native wildlife as pets except as follows: ... No more than 6 per household of any combination of the following animals may be possessed as pets: Hand-captured opossum, rabbit, raccoon and squirrel;",
+          "note": "The gray squirrel is an Arkansas game animal under Code 01.00, and Code 09.14 lets a household keep one it catches by hand in Arkansas, within a combined limit of six native pets, with no sale and no removal from the state. A captive-born squirrel bought from a permitted breeder/dealer or imported on a permit is the other route under 09.14(B), also within the six.",
+          "verifiedOn": "2026-10-08"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "IDAPA 13.01.10.010.06, 200.06.b; IDAPA 13.01.06.101, 250",
+          "quote": "Privately owned companion animals not intended for research or resale that are not native wildlife captured from the wild in Idaho: dogs, cats ferrets, rabbits, rodents,",
+          "note": "Rodents are conventional pets, which 200.06.b frees from any Department permit, unless the animal is native wildlife captured from the wild in Idaho. The only tree squirrel Idaho classifies as game is the North American red squirrel, so an eastern gray squirrel falls under unprotected wildlife in 13.01.06.250 in any case. Not intended for research or resale is part of the definition.",
+          "verifiedOn": "2026-10-08"
+        },
+        "IA": {
+          "status": "conditional",
+          "sourceId": "ia-481a-definitions",
+          "cite": "§ 481A.1(21)(f); § 481A.38; § 481A.61(1)",
+          "quote": "1. Except as otherwise provided by law, a licensed game breeder whose original stock is obtained from a lawful source may possess any game bird, game animal, or fur-bearing animal, or any of their parts. Possession and use of the game birds, game animals, or fur-bearing animals obtained from a licensed game breeder are lawful.",
+          "note": "Iowa names the gray squirrel as its first example of game, \"The Sciuridae: such as gray squirrels and fox squirrels\", and § 481A.38 bars possessing game except as the chapter provides. § 481A.61(1) provides two things: a licensed game breeder may hold any game animal, and possession of one \"obtained from a licensed game breeder\" is lawful. So the condition is the source, the flying squirrel's position, and the keeper who buys from a breeder needs no license of their own.",
+          "verifiedOn": "2026-10-01"
+        },
+        "KY": {
+          "status": "permit",
+          "sourceId": "ky-301-2-081",
+          "cite": "301 KAR 2:081 §§ 2(3), 3(2)(a), 6, 9",
+          "quote": "Except as established in Sections 5(9) and 7(1) of this administrative regulation and subsections (4), (5), (6), and (9) of this section, a person holding native wildlife in captivity shall apply for and obtain the appropriate permit prior to acquiring wildlife.",
+          "note": "The gray squirrel is a Kentucky native, so 2:081 governs it, and it is not on the § 6 prohibited natives list. A noncommercial captive wildlife permit is required before acquiring one, and § 9 sets its enclosure size by name. § 2(2) bars buying or selling a native taken from the wild, the flying squirrel's position.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "RI": {
+          "status": "banned",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17 native mammal list; § 3.7(C)",
+          "quote": "The possession of native mammals is restricted to those institutions identified within § 3.7(C) of this Part, and as exempted per § 3.8 of this Part. Terrestrial mammals considered native either currently or historically to Rhode Island and which possession as pets is prohibited include the following: ... (10) Eastern Gray Squirrel (Sciurus carolinensis),",
+          "note": "Named on the native mammal list, and the native definition applies regardless of where the animal originated, so a captive-bred squirrel is no different.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.05(b), Table 800.2",
+          "quote": "(b) A permit shall be issued only to a person in the permittee category(ies), as defined in Fis 802.01, and cited in Table 800.2 as follows: ... 5 Squirrel, Gray Sciurus carolinensis",
+          "note": "Table 800.2 marks it for permittee category 5 only, and category 5 is exhibitors, so no permit can issue to an individual (category 1).",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MO": {
+          "status": "permit",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.420(1); 3 CSR 10-9.110(1)(A); 3 CSR 10-4.110(4); 3 CSR 10-20.805(33)",
+          "quote": "to hold in captivity not more than one (1) game mammal purchased from a Missouri wildlife breeder permit holder, except that Class II wildlife, hoofed mammals, and skunks may not be held under this permit.",
+          "note": "The gray squirrel is a game mammal under 3 CSR 10-20.805(33), so it is outside the take-five allowance for natives, which excludes anything listed in 3 CSR 10-4.110(4). The Wildlife Hobby Permit is the pet route: one game mammal bought from a Missouri wildlife breeder, kept but not bred or sold.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "KS": {
+          "status": "unclear",
+          "sourceId": "ks-32-701",
+          "cite": "K.S.A. 32-701(g), (r); K.S.A. 32-1002(a)(2), (b); K.A.R. 115-20-2(b)",
+          "quote": "(r) \"Small game\" means any game bird, hare, rabbit or squirrel.",
+          "note": "A squirrel is Kansas small game and so a game animal, and K.S.A. 32-1002(a)(2) bars possessing any wildlife unless a regulation permits it. 115-20-2, the personal-use list, reaches ground squirrels but not tree squirrels, and 115-20-3 covers only species not native to Kansas, so no regulation read here permits keeping one. As with the raccoon, 32-1002(b) lifts the possession bar for animals \"legally taken outside this state\", and no Kansas text says whether that reaches a captive-bred animal from elsewhere.",
+          "verifiedOn": "2026-10-08"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-20(A); S.C. Code Title 50 ch. 11",
+          "quote": "It is unlawful for a person to import, possess, or transport for the purpose of release or to introduce or bring into this State any live wildlife of the following types without a permit from the department: (1) a furbearer, a member of the family Cervidae, a nondomestic member of the families Suidae (pigs), Tayassuidae (peccaries), Bovidae (bison, mountain goat, mountain sheep), coyote, bear, or turkey (genus Meleagris).",
+          "note": "The squirrel is South Carolina small game, and Title 50 ch. 11 sets its seasons and a bag limit of ten a day, but nothing read in chapters 11, 15 or 16 bars keeping a live one. It is not a furbearer, so the § 50-16-20 import permit does not reach it. Taking one from the wild is hunting, in season and under a license.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MT": {
+          "status": "unclear",
+          "sourceId": "mt-87-5-702",
+          "cite": "MCA § 87-5-702(2), (3), (12)(b); § 87-5-705(1)",
+          "quote": "(2) \"Domestic animal\" means an animal that, through long association with humans, has been bred to a degree that has resulted in genetic changes affecting color, temperament, conformation, or other attributes of the species to an extent that makes the animal unique and distinguishable from wild individuals of the species and that is readily controllable if accidentally released into the wild. The term includes livestock, as defined in 81-2-702, dogs, cats, rodents, Eurasian ferrets, and poultry.",
+          "note": "The eastern gray squirrel is on none of Montana's three exotic lists, which would make it barred under the white list, but the domestic animal definition says \"The term includes ... rodents\", and domestic animals are not wildlife. Whether that word reaches a wild-type tree squirrel, or only rodents bred to the definition's standard, is the same open question as the prairie dog and capybara. The southern flying squirrel, by contrast, is named on the prohibited list.",
+          "verifiedOn": "2026-10-01"
+        },
+        "WV": {
+          "status": "permit",
+          "sourceId": "wv-20-2-51",
+          "cite": "W. Va. Code §§ 20-1-2, 20-2-4(a), 20-2-51",
+          "quote": "The director may issue a permit to a person to keep and maintain in captivity as a pet, a wild animal or wild bird that has been acquired from a commercial dealer or during the legal open season. The fee therefor shall be $2.",
+          "note": "The gray squirrel is a West Virginia game animal by name, \"gray squirrels and all their color phases\", and a native mammal, so § 20-2-4(a) makes it unlawful to keep one in captivity except as the chapter provides. § 20-2-51 is that provision: a two dollar pet permit from the director, for an animal acquired from a commercial dealer or taken in the open season, the flying squirrel's position.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "AK": {
+          "status": "banned",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(a), (c); AS 16.05.940(19)",
+          "quote": "The department may not issue a permit for the capture, possession, import, or export of any game animal, including a hybrid of a game animal and a species listed in (b) of this section, for use as a pet",
+          "note": "A mammal, so game under AS 16.05.940(19). Absent from the clean list in § 92.029(b), and subsection (c) closes the permit route for anything kept as a pet.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-12-68-18",
+          "cite": "ARSD 12:68:18:03; 12:68:18:03.01",
+          "quote": "a permit as described in § 12:68:18:03.03 is required to possess in South Dakota any nondomestic mammal, or any of its hybrids, listed in this section",
+          "note": "Rodents are absent from the possession permit list, which runs to five carnivore families, hoofed mammals, tapirs, rhinos, elephants and primates, and the only specifically prohibited mammal is the raccoon dog. The free entry permit under 12:68:18:03.03(1) applies to bringing one in. Game, Fish and Parks has no captive wildlife chapter for mammals, so a text barring the keeping of a native animal was not found, the flying squirrel's position.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AL": {
+          "status": "banned",
+          "sourceId": "al-220-2-06",
+          "cite": "r. 220-2-.06; r. 220-2-.26(1), (3)",
+          "quote": "The following animals are hereby designated as game animals: Bear, Beaver, Coyote, Deer, Opossum, Eastern Cottontail and Swamp Rabbit, Raccoon, Squirrel, Nutria, Fox, Mountain Lion (Cougar), Groundhog, Bobcat, Red Wolf, Feral Swine (Wild Hog or Wild Pig), and Alligator.",
+          "note": "An Alabama squirrel is a designated game animal, which 220-2-.26(3) bars keeping alive, the raccoon's reading, and one from out of state is a \"wild rodent\" that 220-2-.26(1) bars bringing in.",
+          "verifiedOn": "2026-10-08"
+        },
+        "IN": {
+          "status": "permit",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-6(a)(2); 9-11-2(b); 312 IAC 9-10-4",
+          "quote": "(a) A permit is required under this rule for the following Class I wild animals: (1) Rabbit (Sylvilagus floridanus). (2) Squirrel (Sciurus carolinensis, Sciurus niger, and Glaucomys volans).",
+          "note": "The gray squirrel is a Class I wild animal by binomial. A Class I permit is applied for within five days of taking possession of a lawfully acquired animal, at a ten dollar fee, with a cage inspection and a veterinary check within 45 days. A game breeder may hold one only if it was born in captivity.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(2)(b), (6); 48.1-09-02-01",
+          "quote": "Category 2 species of nontraditional livestock includes the following species and their hybrids, all nondomestic ungulates ... prairie dogs, and other ground squirrels, other species as ordered by the board",
+          "note": "The category 2 squirrel entry is written for ground squirrels, and the gray squirrel is a tree squirrel, so the license requirement does not reach it, the flying squirrel's position. Bringing one into North Dakota needs a certificate of veterinary inspection and an importation permit number, and 48.1-09-01-02(6) asks for board review of a species in no category before importation.",
+          "verifiedOn": "2026-10-01"
+        },
+        "WY": {
+          "status": "permit",
+          "sourceId": "wy-ch10",
+          "cite": "Ch. 10 § 13(d)",
+          "quote": "A permit may be authorized upon approval for other warm-blooded wildlife unless otherwise specified in this regulation.",
+          "note": "Not on the prohibited list at § 11 and not on either the domestic or the domesticated list, so the gray squirrel lands in the discretionary permit category, the serval's position. May be authorized is not the same as shall be issued. \"Fox, grey and red squirrels\" are small game animals under Wyo. Stat. § 23-1-101(a)(xi), and § 11(a) bars private ownership only of big and trophy game, so the small game status does not close the route.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "MS": {
+          "status": "banned",
+          "sourceId": "ms-40-2-8-4",
+          "cite": "Rule 8.4(A), (B)",
+          "quote": "A. Game and furbearing animals are defined as the following: white-tailed deer, black bear, gray squirrel, fox squirrel, cottontail rabbit, swamp rabbit, raccoon, opossum, bobcat, river otter, muskrat, mink, and weasel. B. Possession of live game and furbearing animals is prohibited with the following exceptions:",
+          "note": "The gray squirrel is on Mississippi's closed list of game and furbearing animals, and possessing one alive is prohibited except by public zoos and educational institutions, veterinarians treating it, someone taking a sick animal for care, and permitted deer and fox, coyote and rabbit enclosures, the raccoon's position.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "LA": {
+          "status": "permit",
+          "sourceId": "la-76-v-107",
+          "cite": "La. R.S. 56:8(151)(a)(i); LAC 76:V.107(B)(6), (C)(1)(a), (C)(2)(a)",
+          "quote": "A game breeder's license must be issued before any game quadrupeds (deer, rabbits, squirrels, etc.) are obtained.",
+          "note": "Squirrels are game quadrupeds by statute, and the game breeder rule writes pen specifications for \"Squirrels (gray, fox, red, flying and others endemic to North America)\" with a veterinary certificate against rabies. The license must be in hand first, and game quadrupeds may not be taken from the wild, so the animal must be captive bred, the flying squirrel's position.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "OK": {
+          "status": "permit",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(a); 29 O.S. § 4-121; § 7-502(B)(4)",
+          "quote": "(a) The following wildlife species are exempt from import and export permits, commercial wildlife breeders licenses, noncommercial wildlife breeders licenses and commercial hunting area license requirements.",
+          "note": "No squirrel is among the thirty-seven exempt entries, so a gray squirrel is not exempt from import permits and the wildlife breeder licenses, the flying squirrel's position. 29 O.S. § 7-502(B)(4) exempts a legally obtained animal from a source other than the wild kept as a pet from the statute's closed season and endangered species bars, so a wild-caught squirrel has no such route.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NE": {
+          "status": "permit",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 8 § 001.01B, 001.01D; Neb. Rev. Stat. § 37-479",
+          "quote": "It shall be unlawful for any person or persons to retain any wild birds or wild mammals (as defined in Nebraska revised statute 37-245 and 37-246) in captivity except the following species may be kept under authority of a Captive Wildlife Permit, a Controlled Shooting Area Permit, a Rehabilitation Permit or a Scientific Collectors Permit, issued by the Nebraska Game and Parks Commission ... Squirrel - Fox (Sciurus niger) Gray (Sciurus carolinensis)",
+          "note": "The gray squirrel is named on the § 001.01B list. A Captive Wildlife Permit expires 31 December of the year issued, with a fee of not more than $30 under § 37-479, and § 001.01D bars one for an animal taken from the wild, so the animal must come from a licensed breeder or another permittee, the flying squirrel's position.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        }
+      },
+      "article": "/blog/gray-squirrel-legal-guide/"
     }
   }
 }
