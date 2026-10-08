@@ -36910,6 +36910,461 @@
         }
       },
       "article": "/blog/gray-squirrel-legal-guide/"
+    },
+    "virginia-opossum": {
+      "name": "Virginia opossum",
+      "scientific": "Didelphis virginiana",
+      "jurisdictions": {
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(C)",
+          "quote": "Order Marsupialia-Marsupials or Pouched Animals: All species (W)",
+          "note": "Marsupials are restricted as a whole order, marked (W) for welfare, and the Virginia opossum is the one North American marsupial. It has been established in California for a century, but § 671 reaches a listed order whatever the animal's origin, and no permit type covers pet keeping.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-dnr-legal-pets",
+          "cite": "DNR Guide to Legal Pets",
+          "quote": "The following list of species native to Georgia may not be held as a pet regardless of its origin or morphology. ... Opossum",
+          "note": "DNR names the opossum on its native list. The rule's marsupial entry covers the orders Diprotodontia and Peramelemorphia, which does not reach the opossum's order, so the native wildlife scheme is what bars it.",
+          "verifiedOn": "2026-10-08"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-rule",
+          "cite": "HAR § 4-71-6(a); Restricted Animal List Part A",
+          "quote": "The introduction into Hawaii of live animals or live non-domestic animals as defined in this chapter at any stage of development is prohibited except for those animals on the lists incorporated in §4-71-6.5, by permit, and except as provided by section 150A-6.2, HRS.",
+          "note": "Part A names one opossum, Didelphis marsupialis, the common opossum of Central and South America, for research and exhibition only. The Virginia opossum is on none of the lists, so the default bar applies; the special permits for unlisted animals are for emergencies, research and filming, not pets. Either way there is no pet route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "PA": {
+          "status": "banned",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code §§ 137.1(a)(10), (11), 137.31(a)",
+          "quote": "It is unlawful for a person to possess live wildlife taken from a wild state within this Commonwealth",
+          "note": "The opossum is a native wild mammal and so wildlife under 34 Pa.C.S. § 102. Taking one into captivity here is barred by § 137.31(a), and § 137.1(a)(11) bars one held captive or captive bred in another state. Licensed wildlife rehabilitators hold opossums under their own permits, which is not a pet route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following",
+          "note": "No marsupial fits any of the District's seven categories, and the section has no permit route; a licensed rehabilitator may hold one only for treatment or pending disposition.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "§ 161.01(b)(17)",
+          "quote": "All marsupials, including, but not limited to, Tasmanian devil, dasyure, bandicoot, kangaroo, wallaby, opossum, wombat, koala bear, cuscus, numbat and pigmy, sugar and greater glider.",
+          "note": "The marsupial clause names the opossum. The Code's only exceptions are the Parks Department and Wildlife Conservation Society zoos, labs, veterinary facilities and permitted temporary exhibits, so there is no pet route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-10",
+          "cite": "N.J.A.C. 7:25-10.6(a)13, 10.7(a)1, 10.8(a)1",
+          "quote": "\"Individual Hobby\" may be issued to persons holding game animals for hobby purposes or as pets;",
+          "note": "The opossum has a trapping season, so it is a game animal: 10.6(a)13 names Didelphis virginiana among game animals needing a possession permit, and 10.7(a)1 issues an Individual Hobby permit for pets. Under 10.8(a)1 it must not come from wild stock. It is not on the Division's rabies vector species list, which names raccoons, skunks, woodchucks, foxes and bats.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "ME": {
+          "status": "banned",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.06(4); 12 M.R.S. § 12152(1-A), (1-B)",
+          "quote": "Unclassified Species: A person may not possess any species that has not been categorized. Any species which has not been identified as a Prohibited, Restricted, or Unrestricted species will not be eligible for a permit under this chapter, however a request may be made to review the categorization of a species subject to section 7.06(5).",
+          "note": "The only opossum chapter 7 names is the gray short-tailed opossum, Monodelphis domestica, in Category 1. Didelphis virginiana, which now ranges into Maine, is in none of the four buckets, so § 7.06(4) bars it and says it is not eligible for a permit. The wild-take exemption at 12 M.R.S. § 12152(1-B) does not reach mammals.",
+          "verifiedOn": "2026-10-01"
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. § 169.04(4)(a)7; NR 10.04(1)",
+          "quote": "A person is exempt from holding a license or other approval as required under this chapter to possess live native wild animals if the wild animals are not endangered or threatened species and are any of the following: ... 7. Opossums.",
+          "note": "Wisconsin names opossums among the seventeen native animals anyone may keep without a captive wildlife license, and NR 10.04(1) makes the opossum an unprotected wild animal with no season or possession limit. The rule's note says taking one from the wild still needs a hunting or trapping license and compliance with the methods of take. The animal must be legally obtained under § 169.04(1)(a).",
+          "verifiedOn": "2026-10-08"
+        },
+        "FL": {
+          "status": "permit",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.002(1)(c); 68A-6.003(8)",
+          "quote": "Class III: All other wildlife not listed herein, except those for which a permit is not required pursuant to Rule 68A-6.003, F.A.C.",
+          "note": "No opossum is on Class I or II or on the no-permit list, which names honey possums and sugar gliders but not Didelphis, so the Virginia opossum falls to Class III and the free personal use permit. The wild-taken bar at 68A-6.003(13) names foxes, skunks, bats, raccoons and white-tailed deer, not opossums.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL §§ 11-0103(2)(c), (6)(c), 11-0107(2), 11-0515",
+          "quote": "\"Small game\" means black, gray and fox squirrels, European hares, varying hares, cottontail rabbits, native frogs, native salamanders, native turtles, native lizards, native snakes, coyotes, red fox (Vulpes vulpes) and gray fox (Urocyon cinereoargenteus) except captive bred red fox or gray fox, raccoon, opossum, or weasel,",
+          "note": "The opossum is small game by name. Game is protected wildlife under § 11-0103(6)(c), and § 11-0107(2) bars possessing protected wildlife \"whether taken within the state or coming from without the state\", so a captive-bred animal from another state is in the same position as one caught here. The only possession license, § 11-0515, is for propagation, banding, scientific or exhibition purposes, not pets.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2) to (5), (b)",
+          "quote": "\"Category Three Wild Animal\" means any wild animal, gamete, or hybrid thereof, as follows: (A) That is not a Category One, Category Two or Category Four Wild Animal; and (B) That is, notwithstanding any changes to taxonomic nomenclature:",
+          "note": "No opossum is in any of the four categories. Category Two's marsupials are all macropods, and Category Three, Connecticut's list of natives barred from import and export, runs to deer, beaver, mustelids, a harbor seal, birds and a handful of herps without the opossum. So the regulation does not restrict keeping one. The Connecticut General Statutes, which govern taking wildlife and could be stricter about holding a wild-caught native, could not be read from this container.",
+          "verifiedOn": "2026-10-01"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(1), (12)(a)",
+          "quote": "The purpose of 321 CMR 9.01 is to list those species which are exempt from the licensing provisions of M.G.L. c. 131, § 23, and which may be imported, possessed, maintained, propagated, bought, sold, exchanged or offered for sale without a license or permit from the Division. Species not listed, or which are expressly listed as \"require(s) a permit\", are not exempt from the provisions of M.G.L. c. 131, § 23.",
+          "note": "The thirteen-entry mammal exemption list has no opossum; its only marsupial is the sugar glider, so in this closed-list state it needs a § 23 license; MassWildlife's own summary says \"You cannot have in your possession any mammal not listed as legal or domestic.\" The opossum is also a native, and MassWildlife says the only animals that may be taken from the wild are certain reptiles and amphibians. The license under § 23 exists on paper, but MassWildlife says permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\"",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife; 2 CCR 406-11 § 1103",
+          "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
+          "note": "The unregulated list names one opossum, the short-tailed possum Monodelphis domestica, and the prohibited list names the brush-tailed possums. The Virginia opossum is neither, so it is regulated wildlife with no pet license. Chapter W-11 says noncommercial (pet) possession of regulated mammals has been prohibited since 1983, and its wildlife park licenses are commercial or closed to new entrants.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AZ": {
+          "status": "restricted",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(F)(5)",
+          "quote": "5. All species of the genus Didelphis . Common name: American opossums.",
+          "note": "Arizona names the opossum genus outright. Restricted live wildlife may be held only under a special license listed in R12-4-409(A) or a listed exemption, and none of the R12-4-407 exemptions is a pet route.",
+          "verifiedOn": "2026-10-08"
+        },
+        "OR": {
+          "status": "banned",
+          "sourceId": "or-635-056-0050",
+          "cite": "OAR 635-056-0050(1)(a)(F)",
+          "quote": "(F) Order Didelphimorphia: Virginia opossum ... Didelphidae ... Didelphis virginiana.",
+          "note": "Named to the species on the prohibited list. The opossum is introduced in Oregon, not native, and only the short-tailed opossums of Monodelphis are on the noncontrolled list. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "WA": {
+          "status": "conditional",
+          "sourceId": "wa-rcw-77-08-010",
+          "cite": "RCW 77.08.010(72), (74); WAC 220-450-030(1), (3), (4), (5)",
+          "quote": "It is unlawful to possess or hold in captivity live wild animals, wild birds, or game fish unless lawfully acquired. Lawful acquisition and possession include department permits and any other applicable authorization.",
+          "note": "The Virginia opossum is an introduced animal that lives wild in Washington, so it is a \"wild animal\" under RCW 77.08.010(72). Title 77 asks for lawful acquisition: no taking from the wild without a director's permit, a health certificate to import, documented proof of source, and no commercial use of a captive animal or its young except as rule allows. RCW 16.30 names no marsupial.",
+          "verifiedOn": "2026-10-08"
+        },
+        "OH": {
+          "status": "permit",
+          "sourceId": "oh-1531-01",
+          "cite": "R.C. 1531.01(W); § 1533.71(A)(2)",
+          "quote": "\"Noncommercial propagating license\" permitting the licensee to propagate game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, or fur-bearing animals and to hold the animals in captivity. Game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, and fur-bearing animals propagated or held in captivity by authority of a noncommercial propagating license are for the licensee's own use and shall not be sold. The fee for such a license is twenty-five dollars per annum.",
+          "note": "Ohio names opossums among its fur-bearing animals in R.C. 1531.01(W), and § 1533.71(A) requires a license to hold fur-bearing animals in captivity. The noncommercial propagating license is the keeper's one: $25 a year, own use, no sales.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "TX": {
+          "status": "permit",
+          "sourceId": "tx-71-001",
+          "cite": "Parks & Wild. Code §§ 71.001(1), 71.005(c), 71.010",
+          "quote": "\"Fur-bearing animal\" means wild beaver, otter, mink, ring-tailed cat, badger, skunk, raccoon, muskrat, opossum, fox, or nutria.",
+          "note": "The opossum is a fur-bearing animal by name, and § 71.005(c) requires a fur-bearing animal propagation license to possess a live one \"for any purpose\", which makes it a keeper's license as well as a breeder's, the reading the raccoon gets. Fur-bearers are excluded from the nongame caps.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "MI": {
+          "status": "permit",
+          "sourceId": "mi-captive-game",
+          "cite": "NREPA Part 427, MCL 324.42701 et seq.",
+          "quote": "badger, bobcat, red and gray fox, raccoon, coyote, beaver, otter, muskrat, mink, squirrels, striped skunk, woodchuck, opossum, ring-necked pheasant, bobwhite quail, Hungarian partridge, ducks, geese and wild turkeys",
+          "note": "The opossum is on the closed list of game that may be held under the DNR's Permit to Hold Game in Captivity, so a keeper needs that permit. It covers captive-bred animals only.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "IL": {
+          "status": "permit",
+          "sourceId": "il-520-5",
+          "cite": "520 ILCS 5/2.2; 5/3.25",
+          "quote": "Before any individual shall hold, possess or engage in the breeding or raising of live fur-bearing mammals, he shall first procure a fur-bearing mammal breeder permit.",
+          "note": "The opossum is named among Illinois's fur-bearing mammals in § 2.2, and § 3.25 requires a fur-bearing mammal breeder permit, $25 a year, of anyone who holds a live one, breeding or not. Illinois is a home rule state, so a municipal ordinance can be stricter.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MN": {
+          "status": "permit",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.015, subds. 39, 45; § 97A.501, subd. 1; § 97A.401, subd. 3(a)",
+          "quote": "Except as provided in paragraph (b), special permits may be issued without a fee to take, possess, and transport wild animals as pets and for scientific, educational, rehabilitative, wildlife disease prevention and control, and exhibition purposes. The commissioner shall prescribe the conditions for taking, possessing, transporting, and disposing of the wild animals.",
+          "note": "The opossum is small game under subd. 45 and so a protected wild animal. The special permit in § 97A.401 subd. 3 may be issued free \"as pets\" on the commissioner's conditions. It is discretionary.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(o), (4)",
+          "quote": "Except as otherwise provided in subsection 4 and NAC 503.500 to 503.535, inclusive, the following animals may be possessed, transported, imported and exported without a permit or license issued by the Department: ... (o)Marsupials;",
+          "note": "Nevada clears every marsupial from any state permit, which takes in the opossum. It is not a Nevada native. NAC 503.140(4) preserves county and city ordinances, so check the municipality as well.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "VA": {
+          "status": "banned",
+          "sourceId": "va-29-1-521",
+          "cite": "Va. Code § 29.1-521(A)(10); 4VAC15-20-50",
+          "quote": "To hunt, trap, take, capture, kill, attempt to take, capture, or kill, possess, deliver for transportation, transport, cause to be transported, by any means whatever, receive for transportation or export, or import, at any time or in any manner, any wild bird or wild animal or the carcass or any part thereof, except as specifically permitted by law and only by the manner or means and within the numbers stated.",
+          "note": "The Virginia opossum is on the department's list of native fauna. Because it is native it is not a nonnative (exotic) animal, so the permit table at 4VAC15-30-40 is not its rule; § 29.1-521(A)(10) is, and it bars possessing a wild animal except as specifically permitted. The one-per-address allowance at 4VAC15-360-10(A) reaches herps, aquatic invertebrates and nongame fish, not mammals.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MD": {
+          "status": "permit",
+          "sourceId": "md-10-902",
+          "cite": "Nat. Res. § 10-902(a), (b)",
+          "quote": "Any person desiring to possess, import, export, breed, raise, protect, rehabilitate, hunt, kill, trap, capture, purchase, or sell any wildlife native to Maryland, shall first obtain a permit or license from the Department.",
+          "note": "The opossum is native to Maryland and on no § 10-621 list. § 10-902(a) attaches a permit requirement to possessing any native wildlife, with no exception for captive-bred animals or animals bought out of state. The Secretary sets the permit classes by regulation, and no personal pet permit class for a native mammal was located in COMAR subtitle 08.03, the reading the flying squirrel cell sets out, so the permit exists in statute and the class a keeper would apply under is not evident.",
+          "localOverride": true,
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023; 19.35.7 NMAC",
+          "quote": "Marsupial | Didelphidae | Monodelphis domestica | Shorttail Oppossum | II | Captive Bred",
+          "note": "The only opossum on the list is the short-tailed opossum, Group II. The Virginia opossum is not on it, so it falls to Group IV by default. The Director's list is not exhaustive, and 19.35.7 NMAC says \"Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.\" Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. 19.35.7 NMAC is an importation rule, so it governs bringing the animal into New Mexico rather than keeping one already here.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "The Unrestricted list's only marsupials are the feathertail glider and the sugar glider, so the opossum is restricted by absence. It is also a Vermont native. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "UT": {
+          "status": "banned",
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1, prohibited mammals; R657-3b",
+          "quote": "Prohibited mammals ... known detrimental impacts to native wildlife populations, human health and safety, or agriculture. Personal possession will not be authorized. ... Virginia opossum Didelphis virginiana",
+          "note": "Utah names the Virginia opossum on its prohibited mammal list, while the gray short-tailed opossum is noncontrolled.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DE": {
+          "status": "banned",
+          "sourceId": "de-dnrec-wild-pets",
+          "cite": "DNREC, The perils of wild pets; Del. Code tit. 7, ch. 7",
+          "quote": "\"State regulations explicitly forbid Delawareans from owning\" \"native wildlife,\" \"with an exception for wildlife rehabilitation experts, who must hold permits from DNREC to care for the animals.\"",
+          "note": "The Virginia opossum is native to Delaware. Regulation 903-6.1.1 exempts \"Possums\" from the Agriculture permit, but that rule governs exotics, and DNREC says non-native wildlife is Agriculture's and native wildlife its own, so the exemption does not reach the native opossum. Native wildlife is DNREC's, not the Department of Agriculture's, so the exotic animal permit does not reach it, and DNREC says keeping native wildlife is not allowed outside its rehabilitation permits. The regulation DNREC refers to was not read here.",
+          "verifiedOn": "2026-10-08"
+        },
+        "TN": {
+          "status": "unclear",
+          "sourceId": "tn-1660-01-18",
+          "cite": "Tenn. Code Ann. § 70-4-403(3)(J); Tenn. Comp. R. & Regs. 1660-01-18-.03(3)(b)",
+          "quote": "(b) 1. The following species or groups of wildlife are deleted from the existing listing designated by legislation as Class III: (i) All native, nonpoisonous reptiles and amphibians; and (ii) All native, furbearing mammals. 2. All species or groups of wildlife deleted from Class III in part 1. are considered to be Class II wildlife.",
+          "note": "Two Tennessee texts pull this animal different ways. The statute's Class III names \"Marsupials\", which reaches the Virginia opossum and needs no wildlife permit. The commission's rule then moves \"All native, furbearing mammals\" out of Class III into Class II, which needs a TWRA permit, $10 an animal for personal possession, with supplier documentation. Whether the opossum counts as a furbearing mammal for that rule is not defined in what was read. Either way it can be kept; the open question is whether a permit is needed.",
+          "verifiedOn": "2026-10-08"
+        },
+        "NC": {
+          "status": "permit",
+          "sourceId": "nc-113-272-5",
+          "cite": "G.S. §§ 113-129(7a), (7c), (15), (16); 113-272.5(a)",
+          "quote": "the wild animal or wild bird was not acquired unlawfully or merely as a pet",
+          "note": "The opossum is a game animal under G.S. 113-129(7c), or a fur-bearer under (7a) when trapped, and either way a wild animal under (15), with (16) carrying the definition to animals of wild species kept in captivity. Holding one alive needs a Wildlife Resources Commission captivity license, and § 113-272.5(a) tells the Executive Director not to issue it unless the animal \"was not acquired unlawfully or merely as a pet\", the reasoning the black bear and raccoon cells rest on.",
+          "localOverride": true,
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "AR": {
+          "status": "conditional",
+          "sourceId": "ar-code-0900",
+          "cite": "Code 09.14(A)(1)(i), (B); Code 01.00",
+          "quote": "It is unlawful to possess native wildlife as pets except as follows: ... No more than 6 per household of any combination of the following animals may be possessed as pets: Hand-captured opossum, rabbit, raccoon and squirrel;",
+          "note": "The opossum is both a furbearer and a game animal under Code 01.00, and Code 09.14 lets a household keep one it catches by hand in Arkansas, within a combined limit of six native pets, with no sale and no removal from the state. A captive-born opossum bought from a permitted breeder/dealer or imported on a permit is the other route under 09.14(B), also within the six.",
+          "verifiedOn": "2026-10-08"
+        },
+        "ID": {
+          "status": "conditional",
+          "sourceId": "id-130110",
+          "cite": "IDAPA 13.01.10.200.01, .07.a; IDAPA 13.01.06.250",
+          "quote": "Wildlife classified as Unprotected Wildlife or Predatory Wildlife that are lawfully taken by a person licensed or authorized to hunt or trap in accordance with Chapter 4, Title 36, Idaho Code, may be exported, transported, possessed, or sold without additional permit from the Department,",
+          "note": "Idaho classifies no opossum, so it falls under unprotected wildlife, \"all wildlife not classified in the preceding categories\". One lawfully taken in Idaho by a licensed hunter or trapper may be kept with no further permit. A marsupial is not on the conventional pets list, so one acquired any other way needs a captive possession license under 200.01.",
+          "verifiedOn": "2026-10-08"
+        },
+        "IA": {
+          "status": "conditional",
+          "sourceId": "ia-481a-definitions",
+          "cite": "Iowa Code §§ 481A.1(20), 481A.38, 481A.61(1), (4)",
+          "quote": "1. Except as otherwise provided by law, a licensed game breeder whose original stock is obtained from a lawful source may possess any game bird, game animal, or fur-bearing animal, or any of their parts. Possession and use of the game birds, game animals, or fur-bearing animals obtained from a licensed game breeder are lawful.",
+          "note": "The opossum is one of Iowa's named fur-bearing animals, and § 481A.38 bars possessing one except as the chapter provides. The chapter provides two things: a licensed game breeder may hold it, and possession of a fur-bearer \"obtained from a licensed game breeder\" is lawful. So the condition is the source, an Iowa-licensed game breeder, and § 481A.61(4) bars a breeder from acquiring fur-bearers taken from the wild in Iowa. It is not a dangerous wild animal under chapter 717F.",
+          "verifiedOn": "2026-10-01"
+        },
+        "KY": {
+          "status": "permit",
+          "sourceId": "ky-301-2-081",
+          "cite": "301 KAR 2:081 §§ 2(3), 3(2)(a), 6, 9",
+          "quote": "Except as established in Sections 5(9) and 7(1) of this administrative regulation and subsections (4), (5), (6), and (9) of this section, a person holding native wildlife in captivity shall apply for and obtain the appropriate permit prior to acquiring wildlife.",
+          "note": "The opossum is a Kentucky native, so 2:081 governs it, and it is not on the § 6 prohibited natives list. A noncommercial captive wildlife permit is required before acquiring one, and § 9 sets its enclosure size by name. § 2(2) bars buying or selling a native taken from the wild, the flying squirrel's position.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "RI": {
+          "status": "banned",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17 native mammal list; § 3.7(C)",
+          "quote": "The possession of native mammals is restricted to those institutions identified within § 3.7(C) of this Part, and as exempted per § 3.8 of this Part. Terrestrial mammals considered native either currently or historically to Rhode Island and which possession as pets is prohibited include the following: ... (42) Virginia Opossum (Didelphis virginiana),",
+          "note": "Named on the native mammal list, and the native definition applies regardless of where the animal originated, so a captive-bred opossum is no different.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.05(b), Table 800.2",
+          "quote": "(b) A permit shall be issued only to a person in the permittee category(ies), as defined in Fis 802.01, and cited in Table 800.2 as follows: ... 5 Opossum, Virginia Didelphis virginiana",
+          "note": "Table 800.2 marks it for permittee category 5 only, and category 5 is exhibitors, so no permit can issue to an individual (category 1).",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MO": {
+          "status": "permit",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.420(1); 3 CSR 10-9.110(1)(A); 3 CSR 10-20.805(30), (33)",
+          "quote": "to hold in captivity not more than one (1) game mammal purchased from a Missouri wildlife breeder permit holder, except that Class II wildlife, hoofed mammals, and skunks may not be held under this permit.",
+          "note": "The opossum is a furbearer under 3 CSR 10-20.805(30), and furbearers count as game mammals under (33), so it is outside the take-five allowance for natives. The Wildlife Hobby Permit is the pet route: one game mammal bought from a Missouri wildlife breeder, kept but not bred or sold.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "KS": {
+          "status": "unclear",
+          "sourceId": "ks-115-5-2",
+          "cite": "K.S.A. 32-701(e); K.A.R. 115-5-2(b); K.S.A. 32-1002(a)(2), (b)",
+          "quote": "(b) Live furbearers legally taken during a furbearer season may be possessed only through the last day of the season in which taken.",
+          "note": "The opossum is a Kansas furbearer under K.S.A. 32-701(e), so it stands where the raccoon does. 115-5-2(b) lets a Kansas-caught animal be held only to the end of its season, which rules out a wild-caught pet, and whether 32-1002(b), lifting the bar for animals \"legally taken outside this state\", reaches a captive-bred opossum from another state is the question Kansas has never closed.",
+          "verifiedOn": "2026-10-08"
+        },
+        "SC": {
+          "status": "permit",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-20(A)(1), (B)",
+          "quote": "a furbearer, a member of the family Cervidae, a nondomestic member of the families Suidae (pigs), Tayassuidae (peccaries), Bovidae (bison, mountain goat, mountain sheep), coyote, bear, or turkey (genus Meleagris). Furbearer includes, but is not limited to, red and gray fox, raccoon, opossum, muskrat, mink, skunk, otter, bobcat, weasel, and beaver;",
+          "note": "The opossum is named as a furbearer, so bringing one into South Carolina needs a Department of Natural Resources permit, the raccoon's position. § 50-16-20(B) lets the Department issue it only if the animal was taken lawfully where it came from and its possession is not expected to harm the state's wildlife, and § 50-16-60's pet-trade exemption does not list it.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MT": {
+          "status": "banned",
+          "sourceId": "mt-arm-12-6-22",
+          "cite": "ARM 12.6.2215(4)(s)",
+          "quote": "(4) The following mammals are classified as prohibited species: ... (s) Virginia opossum - Didelphis virginiana.",
+          "note": "Named on the prohibited list by binomial, beside the short-tailed opossum.",
+          "verifiedOn": "2026-10-01"
+        },
+        "WV": {
+          "status": "permit",
+          "sourceId": "wv-20-2-51",
+          "cite": "W. Va. Code §§ 20-1-2, 20-2-4(a), 20-2-51",
+          "quote": "The director may issue a permit to a person to keep and maintain in captivity as a pet, a wild animal or wild bird that has been acquired from a commercial dealer or during the legal open season. The fee therefor shall be $2.",
+          "note": "The opossum is a West Virginia fur-bearing animal by name in § 20-1-2, so § 20-2-4(a) makes it unlawful to keep one in captivity except as the chapter provides. § 20-2-51 is that provision: a two dollar pet permit from the director, for an animal acquired from a commercial dealer or taken in the open season, the raccoon's position.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "AK": {
+          "status": "banned",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(a), (c); AS 16.05.940(19)",
+          "quote": "The department may not issue a permit for the capture, possession, import, or export of any game animal, including a hybrid of a game animal and a species listed in (b) of this section, for use as a pet",
+          "note": "A mammal, so game under AS 16.05.940(19). Absent from the clean list in § 92.029(b), and subsection (c) closes the permit route for anything kept as a pet.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-12-68-18",
+          "cite": "ARSD 12:68:18:03; 12:68:18:03.01",
+          "quote": "a permit as described in § 12:68:18:03.03 is required to possess in South Dakota any nondomestic mammal, or any of its hybrids, listed in this section",
+          "note": "Marsupials are absent from the possession permit list, which runs to five carnivore families, hoofed mammals, tapirs, rhinos, elephants and primates, and the only specifically prohibited mammal is the raccoon dog. The free entry permit under 12:68:18:03.03(1) applies to bringing one in. Game, Fish and Parks has no captive wildlife chapter for mammals, so a text barring the keeping of a native animal was not found, the flying squirrel's position.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AL": {
+          "status": "banned",
+          "sourceId": "al-220-2-06",
+          "cite": "r. 220-2-.06; r. 220-2-.26(3)",
+          "quote": "The following animals are hereby designated as game animals: Bear, Beaver, Coyote, Deer, Opossum, Eastern Cottontail and Swamp Rabbit, Raccoon, Squirrel, Nutria, Fox, Mountain Lion (Cougar), Groundhog, Bobcat, Red Wolf, Feral Swine (Wild Hog or Wild Pig), and Alligator.",
+          "note": "Alabama designates the opossum a game animal, and 220-2-.26(3) bars keeping a live protected wild animal except under a permit issued before that amendment, the raccoon's reading. Unlike the raccoon, the opossum is not on the out-of-state list, so the bar rests on § (3) alone.",
+          "verifiedOn": "2026-10-08"
+        },
+        "IN": {
+          "status": "permit",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-7(a)(7); 9-11-2(b)",
+          "quote": "(a) A permit is required under this rule for the following Class II wild animals: ... (7) Virginia opossum (Didelphis marsupialis).",
+          "note": "Named on the Class II list, under the binomial of the common opossum but by the Virginia opossum's common name. A Class II permit is applied for within five days of taking possession of a lawfully acquired animal, at a ten dollar fee, with a cage inspection.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "ND": {
+          "status": "permit",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(2)(b); 48.1-09-01-03(1), (2)",
+          "quote": "Category 2 species of nontraditional livestock includes the following species and their hybrids, all nondomestic ungulates, ... mink, red and gray foxes, muskrats, beavers, weasels, opossums, prairie dogs, and other ground squirrels,",
+          "note": "Opossums are category 2 nontraditional livestock by name. The owner must hold a nontraditional livestock license from the Board of Animal Health before acquiring one, and the board must inspect and approve the premises first, under 48.1-09-01-03(1) and (2)(b). The annual fee is fifteen dollars under NDCC 36-01-08.1.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "WY": {
+          "status": "permit",
+          "sourceId": "wy-ch10",
+          "cite": "Ch. 10 § 13(d)",
+          "quote": "A permit may be authorized upon approval for other warm-blooded wildlife unless otherwise specified in this regulation.",
+          "note": "Not on the prohibited list at § 11 and not on either the domestic or the domesticated list, so the opossum lands in the discretionary permit category, the serval's position. May be authorized is not the same as shall be issued. The opossum is not a Wyoming furbearer, predatory animal or protected animal under § 23-1-101.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MS": {
+          "status": "banned",
+          "sourceId": "ms-40-2-8-4",
+          "cite": "Rule 8.4(A), (B)",
+          "quote": "A. Game and furbearing animals are defined as the following: white-tailed deer, black bear, gray squirrel, fox squirrel, cottontail rabbit, swamp rabbit, raccoon, opossum, bobcat, river otter, muskrat, mink, and weasel. B. Possession of live game and furbearing animals is prohibited with the following exceptions:",
+          "note": "The opossum is on Mississippi's closed list of game and furbearing animals, and possessing one alive is prohibited except by public zoos and educational institutions, veterinarians treating it, someone taking a sick animal for care, and permitted deer and fox, coyote and rabbit enclosures, the raccoon's position.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "LA": {
+          "status": "unclear",
+          "sourceId": "la-76-v-131",
+          "cite": "LAC 76:V.131.D.3; La. R.S. 56:8(92), (151)(a)(iv); LAC 76:V.113",
+          "quote": "i.Wildlife included under this Paragraph shall be limited to the following species: squirrel, opossum, rabbit, or chipmunk, with such possession limited to one animal or litter of animals per individual.",
+          "note": "The opossum is a \"nongame quadruped\" by statute, and the only text read that speaks to keeping one is the wildlife rescuer rule: a sick, injured or orphaned opossum may be held for 90 days, and kept for life only on a special purpose permit after a vet finds it non-releasable, with use \"for the purposes of pet trade\" barred. The nongame quadruped breeder and exhibitor licenses are business licenses. No text read either bars or allows keeping a captive-bred opossum bought as a pet, the raccoon's position.",
+          "verifiedOn": "2026-10-01"
+        },
+        "OK": {
+          "status": "permit",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(a); 29 O.S. § 7-502(B)(4), (E)",
+          "quote": "(a) The following wildlife species are exempt from import and export permits, commercial wildlife breeders licenses, noncommercial wildlife breeders licenses and commercial hunting area license requirements.",
+          "note": "The opossum is native and not on the 37-entry exemption list, so the import permit and the noncommercial wildlife breeder's license apply, the raccoon's position. § 7-502(B)(4) exempts legally obtained wildlife from a source other than the wild kept as a pet; an opossum taken from the wild has no such exemption.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NE": {
+          "status": "permit",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 8 § 001.01B, 001.01D; Neb. Rev. Stat. § 37-479",
+          "quote": "It shall be unlawful for any person or persons to retain any wild birds or wild mammals (as defined in Nebraska revised statute 37-245 and 37-246) in captivity except the following species may be kept under authority of a Captive Wildlife Permit, a Controlled Shooting Area Permit, a Rehabilitation Permit or a Scientific Collectors Permit, issued by the Nebraska Game and Parks Commission ... Opossum - (Didelphis virginiana)",
+          "note": "The opossum is named on the § 001.01B list. A Captive Wildlife Permit expires 31 December of the year issued, with a fee of not more than $30 under § 37-479, and § 001.01D bars one for an animal taken from the wild, so the animal must come from a licensed breeder or another permittee, the flying squirrel's position.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        }
+      },
+      "article": "/blog/virginia-opossum-legal-guide/"
     }
   }
 }
