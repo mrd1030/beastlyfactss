@@ -140,6 +140,8 @@ moves verification dates forward; a research sitting never does.
 | `KY-ky-082-grandfather-083-cervids.txt` | 2:082 §§ 5 and 6 (exemptions and the 13 July 2005 grandfather for inherently dangerous exotics), 2:083 captive cervid permits with no new noncommercial permit after 28 February 2016, and the KDFWR pit viper list |
 | `MO-mo-578-023-and-4-117.txt` | RSMo § 578.023 (the dangerous wild animal registration list), the 4.117 prohibited species list, the furbearer definition and the Class III (cervid) breeder rules |
 | `SC-sc-47-2-and-native-reptile-regs.txt` | Title 47 ch. 2 (Panthera cats including cougars, non-native bears and great apes barred since 1 January 2018), § 50-11-1910 (no sale of live deer), and Regs 123-151.3, 151.4 and 152 on native reptiles and the alligator |
+| `AR-ar-20-19-501-large-carnivores.txt` | Ark. Code §§ 20-19-501 to 511: bears, lions and tigers barred except animals held by 12 August 2005 and permitted within 180 days |
+| `NE-ne-37-477-and-37-806.txt` | § 37-477 in full (captive permit for wild birds and mammals and for any federally listed species; the Felidae ban) and § 37-806(1), which adopts every federal endangered and threatened listing |
 
 ## Reading the awkward ones
 
