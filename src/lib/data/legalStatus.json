@@ -9785,12 +9785,12 @@
           "verifiedOn": "2026-10-01"
         },
         "TN": {
-          "status": "unclear",
-          "sourceId": "tn-70-4-403",
-          "cite": "§ 70-4-403(1)(A)(ii)(c), (3); § 70-4-404(c)(1)",
-          "quote": "Class I--This class includes all species inherently dangerous to humans. ... The following is a listing of animals considered inherently dangerous: (A) Mammals: (i) Primates--Gorillas, orangutans, chimpanzees, gibbons, siamangs, mandrills, drills, baboons, Gelada baboons; (ii) Carnivores: (a) Wolves--All species; (b) Bears--All species; and (c) Lions, tigers, leopards, jaguars, cheetahs, cougars--All species;",
-          "note": "The Class I cat entry names six kinds and the serval is none of them: lions, tigers, leopards, jaguars, cheetahs and cougars, each \"all species\". Leptailurus serval is not a Panthera, an Acinonyx or a Puma, and the statute names no other felid. On the statute alone the serval is Class III under the catch-all and needs no permit, and Tennessee reinforces that reading two subdivisions later by putting bobcat hybrids in Class III expressly. What could not be checked is the commission's own rules. Section 70-4-403(1) gives the commission, with the commissioner of agriculture, express power to add or delete species from the Class I list by regulation, and Tenn. Comp. R. & Regs. 1660-01-18 is where such an addition would sit. That chapter could not be read here: publications.tnsosfiles.com returns 403 to this container on every path, and Tennessee's official code is behind LexisNexis. Recorded unclear on that gap rather than on the statute, which is the improvement over the previous note here; the statute itself is readable and does not reach this animal. What rides on it is more than paperwork. Section 70-4-404(c)(1) closed personal possession of Class I wildlife in 1991: the permit it describes is for people who already held the animal on 25 June 1991, \"no new animals shall be brought into possession under authority of a personal possession permit\", and the subsection ends by saying it \"shall not be construed to authorize new personal possession of Class I wildlife\". TWRA restates it in one line on its permits page: \"Personal possession of any Class 1 species is not allowed.\" So an addition by rule would not mean a $150 permit for a private keeper. It would mean no.",
-          "verifiedOn": "2026-10-01"
+          "status": "legal",
+          "sourceId": "tn-1660-01-18",
+          "cite": "Tenn. Code Ann. § 70-4-403(1)(A)(ii)(c), (3); Tenn. Comp. R. & Regs. 1660-01-18-.03(1)",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q).",
+          "note": "The Class I cat entry names six kinds and the serval is none of them: lions, tigers, leopards, jaguars, cheetahs and cougars, each \"all species\". Leptailurus serval is not a Panthera, an Acinonyx or a Puma, so it falls into the Class III catch-all, which needs no permit. Section 70-4-403(1) lets the commission add species to Class I by rule, and its rule chapter adds only hybrids of two Class I species, at 1660-01-18-.03(1). The statute points the same way two subdivisions later by putting bobcat and domestic cat hybrids in Class III expressly. Rule .01(4) asks every keeper of live wildlife to be able to prove legal ownership, a purchase receipt from a licensed propagator among the accepted forms.",
+          "verifiedOn": "2026-10-08"
         },
         "ID": {
           "status": "permit",
@@ -9984,12 +9984,13 @@
           "verifiedOn": "2026-10-01"
         },
         "ME": {
-          "sourceId": "me-unrestricted",
-          "cite": "Unrestricted Species list",
-          "status": "permit",
-          "quote": "Carnivora (Carnivores)   Mustela putorius furo   Domestic Ferret",
-          "note": "Same one-line carnivore list. The serval is not on it.",
-          "verifiedOn": "2026-08-05"
+          "status": "banned",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.18(2)(F); § 7.06(3)(A)(2)(a)",
+          "quote": "Family Felidae All Species in Family Felidae (Cats)",
+          "note": "Every member of the cat family is Category 1, and a Category 1 permit goes only to an exhibitor, a wildlife rehabilitator, a USDA-registered laboratory or an accredited research facility. The Unrestricted List clears no felid, so nothing lifts the serval out of Category 1 and there is no permit a private keeper can hold.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
         },
         "AR": {
           "sourceId": "ar-unrestricted",
