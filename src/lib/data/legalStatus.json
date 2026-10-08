@@ -2946,7 +2946,7 @@
           "status": "legal",
           "sourceId": "va-4vac15-30-40",
           "cite": "§ 15-30-40(A)",
-          "note": "Petaurus is absent from the permit table. The marsupial entries there are other genera.",
+          "note": "Petaurus is absent from the permit table, which has no marsupial entry at all.",
           "verifiedOn": "2026-10-01"
         },
         "MD": {
@@ -28207,7 +28207,7 @@
           "sourceId": "la-76-v-113",
           "cite": "LAC 76:V.113.A, D.1, D.6",
           "quote": "6.No person shall transport, possess, purchase or sell any live foxes or coyotes taken outside the state of Louisiana. Live foxes and coyotes obtained from outside the state of Louisiana prior to the enacted date of these regulations and in possession of properly licensed persons shall be exempt.",
-          "note": "The rule's stated purpose is to \"prohibit the importation and exportation of any species of foxes\", and D.6 bars possessing any live fox taken outside Louisiana. Every arctic fox comes from outside the state, so there is no route in. The fennec fox cell reads only § 115 and answers legal; see the loose end on it.",
+          "note": "The rule's stated purpose is to \"prohibit the importation and exportation of any species of foxes\", and D.6 bars possessing any live fox taken outside Louisiana. Every arctic fox comes from outside the state, so there is no route in. The fennec fox cell reads D.6 the same way.",
           "verifiedOn": "2026-10-08"
         },
         "OK": {
@@ -30130,7 +30130,7 @@
           "sourceId": "la-76-v-115",
           "cite": "LAC 76:V.115.C.1.f, D.1",
           "quote": "D.1.Wolf-Dog Hybrids. The prohibition against wolf-dog hybrids expired January 1, 1997. Persons are cautioned that local ordinances or other state regulations may prohibit possession of these animals. Any animal which appears indistinguishable from a wolf, or is in any way represented to be a wolf shall be considered to be a wolf in the absence of bona fide documentation to the contrary.",
-          "note": "The rule contradicts itself. The \"wolf dog hybrid\" is still printed in the § 115.C.1 list of banned animals, while D.1 says that prohibition expired on 1 January 1997. On the D.1 reading a wolfdog is legal, but one that looks like a wolf, or is sold as one, is treated as a wolf and banned unless documented otherwise. The fennec fox cell quotes the C.1.f line as a live entry.",
+          "note": "The rule contradicts itself. The \"wolf dog hybrid\" is still printed in the § 115.C.1 list of banned animals, while D.1 says that prohibition expired on 1 January 1997. On the D.1 reading a wolfdog is legal, but one that looks like a wolf, or is sold as one, is treated as a wolf and banned unless documented otherwise. The fennec fox cell reads the C.1.f line as expired on the same D.1 sentence.",
           "verifiedOn": "2026-10-08"
         },
         "OK": {
