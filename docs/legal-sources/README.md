@@ -153,6 +153,15 @@ moves verification dates forward; a research sitting never does.
 | `AL-al-220-2-06-game-animals.txt` | Rule 220-2-.06, the game animal list: opossum, squirrel, deer, mountain lion and alligator among them |
 | `KS-ks-32-701-47-2101-and-sinc-reptiles.txt` | K.S.A. 32-701 (squirrel is small game, opossum a furbearer, deer big game), 47-2101 (domesticated deer permit, which names companionship) and the 115-15-2 reptile list with the timber rattlesnake |
 | `LA-la-deer-and-alligator-rules.txt` | LAC 76:V.107.B.8 (no new game breeder license for deer after 4 October 2002), 76:V.117 (no import of live deer) and 76:V.701 (live alligators only for licensed farmers, exhibitors and permitted displays) |
+| `WI-wi-nr-10-02.txt` | NR 10.02 and 10.04, the protected list (cougar, flying squirrel, timber rattlesnake) and the unprotected list (opossum) |
+| `WI-wi-95-55.txt` | Wis. Stat. § 95.55, the DATCP registration every keeper of farm-raised deer needs, outside the DNR captive wildlife chapter |
+| `OR-or-635-049.txt` | OAR 635-049, the captive cervid license: Type 1 for white-tailed deer and five other species, no live cervid imports |
+| `MI-mi-cervidae-act.txt` | MCL 287.952 and 287.955: anyone possessing a deer in Michigan needs a DNR cervidae livestock facility registration |
+| `MT-mt-87-4-406-407-alternative-livestock.txt` | MCA 87-4-406 and 407: a privately owned white-tailed deer is alternative livestock, kept only on a ranch licensed before 7 November 2000, with no license granted since |
+| `WV-wv-fur-bearers-and-captive-cervids.txt` | § 20-1-2 fur-bearing animals (the opossum among them) and the Captive Cervid Farming Act, whose two license classes are both for breeding or harvest |
+| `IN-in-312-9-10-4-game-breeder.txt` | 312 IAC 9-10-4, the game breeder license: gray squirrel and opossum among its species, no deer |
+| `MS-ms-40-2-8-2-deer-enclosures.txt` | Rule 8.2: a live white-tailed deer only by MDWFP permit, in a registered high-fenced enclosure or a breeding pen inside 300 acres, no sale and no import |
+| `OK-ok-2-6-504-farmed-cervidae.txt` | 2 O.S. § 6-504: a farmed cervidae facility license from the Department of Agriculture to breed, possess or raise cervidae for commercial or noncommercial purposes |
 
 ## Reading the awkward ones
 
