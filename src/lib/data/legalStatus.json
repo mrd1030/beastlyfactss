@@ -35966,6 +35966,484 @@
         }
       },
       "article": "/blog/american-alligator-legal-guide/"
+    },
+    "caiman": {
+      "name": "Spectacled caiman",
+      "scientific": "Caiman crocodilus",
+      "jurisdictions": {
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(7)(A)",
+          "quote": "Order Crocodilia-Crocodiles, Caimans, Alligators and Gavials: All species (D)",
+          "note": "Every crocodilian is restricted, marked (D) for detrimental, and caimans are named in the heading. No permit type covers pet keeping.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-391-4-8-05",
+          "cite": "R. 391-4-8-.04(1)(b)1; O.C.G.A. § 27-5-4(b)(1)",
+          "quote": "Order Crocodilia (alligators and caimans, crocodiles, gharials) - All species;",
+          "note": "Caimans are named in the heading of the inherently dangerous crocodilian entry, which needs a license and liability insurance and is licensed only to dealers and exhibitors. No pet route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6-5",
+          "cite": "§ 4-71-6.5, Restricted Animal List Part A",
+          "quote": "Caiman crocodilus caiman, spectacled",
+          "note": "Named on Part A, the research and exhibition list, under the crocodilian order. No pet route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.11(a)",
+          "quote": "It is unlawful to introduce a nonnative species into the natural environment of this Commonwealth. Persons who import nonnative reptiles or amphibians into this Commonwealth shall institute appropriate safeguards to prevent their introduction into the natural environment of this Commonwealth.",
+          "note": "No Pennsylvania text names a crocodilian, the reptile chapter reaches a nonnative one only to bar its release, and the Game Commission's list covers wild birds and mammals only. The state does not restrict a caiman. Local ordinances were not checked.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following",
+          "note": "Category (E) admits snakes, fish and turtles; no crocodilian fits any of the seven categories. No permit route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "§ 161.01(b)(10)",
+          "quote": "all members of the order Crocodylia, including, but not limited to, alligator, caiman and crocodile.",
+          "note": "The crocodilian clause names the caiman. The Code's only exceptions are the Parks Department and Wildlife Conservation Society zoos, labs, veterinary facilities and permitted temporary exhibits, so there is no pet route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NJ": {
+          "status": "banned",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.8(a); 7:25-4.9(a)3",
+          "quote": "The potentially dangerous species shall not be kept as a pet, for hobby purposes or in situations, which, in the judgment of the Department, could adversely affect the health of the animal or which could constitute a hazard to the public.",
+          "note": "\"Alligatoridae--Alligators and caiman\" is on the potentially dangerous species table, and 4.9(a)3 rules out keeping one as a pet.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "ME": {
+          "status": "banned",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.18(2)(G); § 7.06(3)(A)(2)(a)",
+          "quote": "Order Crocodilia All Species in Order Crocodilia (Crocodilians) ... An applicant for a permit pertaining to Category 1 Restricted Species must be an exhibitor, wildlife rehabilitator; laboratory registered with the United States Department of Agriculture, or accredited research facility.",
+          "note": "Every crocodilian is Category 1. Category 1 permits go only to exhibitors, rehabilitators, USDA-registered laboratories and accredited research facilities, so there is no pet route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.01(9), 169.11(1)(a)",
+          "quote": "A person is exempt from holding a license or other approval as required under this chapter to possess live nonnative wild animals that are not endangered or threatened species, except for any of the following:",
+          "note": "A spectacled caiman is nonnative, not harmful, and not indigenous to the United States or Canada, so whatever its federal listing it is outside § 169.01(9) and the § 169.04(4)(b) exemption applies. No state license. Local ordinances were not checked.",
+          "verifiedOn": "2026-10-01"
+        },
+        "FL": {
+          "status": "permit",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.002(1)(b)33; 68A-6.003(7)",
+          "quote": "Class II: ... 32. Dwarf crocodiles (Osteolaemus tetraspis) 33. Alligators, caimans (family Alligatoridae)",
+          "note": "Caimans are named at Class II item 33; only the black caiman is Class I. A Permit to Possess Class II Wildlife for Personal Use costs $140 a year and requires documented experience and caging that meets 68A-6.010 and 68A-6.011.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL §§ 11-0103(6)(e)(6), 11-0512(1)(a); 6 NYCRR § 180.1(b)(13)",
+          "quote": "Wild animal includes, and is limited to, any or all of the following orders and families: ... (6) Crocodylia.",
+          "note": "Every crocodilian is a wild animal that may not be kept as a pet, and 180.1(b)(13) lists the order again. The exemptions in § 11-0512(2) are zoos, licensed exhibitors and research facilities, vets, shelters, universities, rehabilitators, sanctuaries and travelers, all holding the animal for a purpose other than a pet, and 6 NYCRR 180.1(c) issues dangerous animal licenses only for scientific, educational, exhibition, zoological or propagation purposes.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(3)(B)(xxviii), (b)(3)",
+          "quote": "(xxviii) A member within the order Crocodylia (including, but not limited to, alligator, crocodile and caiman),",
+          "note": "Connecticut names the caiman in the Category Two crocodilian entry. Subsection (b)(3) allows a Category Two animal only to a treating vet, municipal parks, zoos, aquaria, nature centers, museums, exhibitors, laboratories and research facilities, so there is no private route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MA": {
+          "status": "banned",
+          "sourceId": "ma-masswildlife-pets",
+          "cite": "321 CMR 9.01(1), (10); MassWildlife, Wildlife as pets",
+          "quote": "You cannot have any crocodilian species in your possession in Massachusetts. This includes Alligators Crocodiles Caimans Gavials",
+          "note": "No crocodilian is on the reptile exemption list, so the rule requires a § 23 license, and MassWildlife says flatly that no crocodilian may be possessed, naming the caiman on its own line. Its guidance adds that permits are not issued for keeping a wild animal as a pet.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w7",
+          "cite": "2 CCR 406-7 Appendix A(E)(5), #703(A)",
+          "quote": "5. Any species from the subfamily Caimaninae (caimans)",
+          "note": "Colorado clears every caiman outright in Appendix A's other-species block, which CPW introduces as species that are not native only to the tropics, so the 26 degree range test does not apply. No license or documentation is needed. The alligator, by contrast, is not authorized at all.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AZ": {
+          "status": "restricted",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)(1)",
+          "quote": "1. All species of the order Crocodilia . Common names include: alligators, caimans, crocodiles, and gavials.",
+          "note": "Arizona names caimans in the Crocodilia entry. Restricted live wildlife may be held only under a special license listed in R12-4-409(A) or a listed exemption, and none of the R12-4-407 exemptions is a pet route.",
+          "verifiedOn": "2026-10-08"
+        },
+        "OR": {
+          "status": "banned",
+          "sourceId": "or-609-305",
+          "cite": "ORS 609.305(5); ORS 609.341(1); ORS 609.351(1); OAR 635-056-0060(4)",
+          "quote": "(5) Any member of the order Crocodylia.",
+          "note": "Every crocodilian is an exotic animal, and ODFW's own rule says so, adding that releasing one is unlawful. ORS 609.341(1) bars keeping an exotic animal without a Department of Agriculture permit issued before 1 January 2010 or under ORS 609.351, whose application window closed 90 days after that date and never reopened, so there is no route for a new animal. Oregon cities and counties may prohibit exotic animals by ordinance as well.",
+          "grandfathered": {
+            "before": "2010-01-01",
+            "detail": "A State Department of Agriculture permit issued before 1 January 2010, or issued within a year of that date on proof the animal was already held. Applications closed 90 days after 1 January 2010, breeding a permitted animal is barred, and possession ends 30 days after a permit lapses."
+          },
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "WA": {
+          "status": "banned",
+          "sourceId": "wa-rcw-16-30",
+          "cite": "RCW 16.30.010(2)(b)(ii); RCW 16.30.030",
+          "quote": "(ii) Order crocodilia, all species, such as crocodiles, alligators, caimans, and gavials.",
+          "note": "Caimans are named in the crocodilian entry. RCW 16.30.030(1) bars owning, possessing, keeping or bringing one into the state, and (2) bars breeding; the exemptions in 16.30.020 are for zoos, sanctuaries, exhibitors, research and similar bodies.",
+          "grandfathered": {
+            "before": "2007-07-22",
+            "detail": "A person in legal possession before 22 July 2007 may keep the animal for the rest of its life, with veterinary records or acquisition papers proving the date, but may not breed it."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "OH": {
+          "status": "banned",
+          "sourceId": "oh-935-02",
+          "cite": "R.C. 935.01(C)(17); R.C. 935.02(A), (B)(1)",
+          "quote": "(A) No person shall possess a dangerous wild animal on or after January 1, 2014. (B)(1) Except as provided in divisions (G)(1) and (2) of section 935.06 of the Revised Code, no person shall acquire, buy, sell, trade, or transfer possession or ownership of a dangerous wild animal on or after the effective date of this section.",
+          "note": "\"Caimans, excluding dwarf caimans\" are dangerous wild animals, and the spectacled caiman is not a dwarf caiman. The exceptions in R.C. 935.03 are accredited zoos, research facilities, circuses, sanctuaries, rehabilitators of Ohio natives and vets, so there is no route for a new keeper.",
+          "grandfathered": {
+            "before": "2013-10-01",
+            "detail": "Only a person who registered the animal with the Department of Agriculture in 2012 and possessed it on 1 October 2013 could apply for a wildlife shelter or wildlife propagation permit under R.C. 935.05 or 935.07; the permit requires sterilizing males, insurance, caging standards and, outside the small primates, at least one acre."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101",
+          "cite": "Health & Safety Code § 822.101(4); Parks & Wild. Code §§ 43.851, 65.001(1)",
+          "quote": "(1) \"Alligator\" means a living or dead American alligator (Alligator mississippiensis).",
+          "note": "Texas's alligator chapter defines its subject as the American alligator alone, the dangerous wild animal list names no reptile, and the controlled exotic snake permit covers snakes. A spectacled caiman is reached by none of them, so the state does not restrict it. Local ordinances were not checked.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224; MCL 287.731",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild...except as provided within this order.",
+          "note": "Fisheries Order 224 reaches \"any state reptile or amphibian from the wild\", so it governs Michigan's native herps and not a captive animal of a species from elsewhere, and no Michigan rule read here restricts a caiman. The Animal Industry Act asks for a certificate of veterinary inspection to import a nonnative reptile. NREPA Part 413's prohibited and restricted species list could not be read from this container, so that is the open check.",
+          "verifiedOn": "2026-10-01"
+        },
+        "IL": {
+          "status": "banned",
+          "sourceId": "il-510-68",
+          "cite": "510 ILCS 68/20-5, 20-10, 85-5",
+          "quote": "\"Crocodilians\" means any species of the Order Crocodilia, such as crocodiles, alligators, caimans, and gavials.",
+          "note": "Caimans are named crocodilians, special use herptiles, and the special use permit issues only for bona fide educational programs, six documented a year. No pet route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.015, subds. 39, 53, 55; § 97A.501, subd. 1; § 346.155, subd. 1(e)",
+          "quote": "\"Unprotected wild animals\" means wild animals that are not protected wild animals including coyote, plains pocket gopher, porcupine, striped skunk, and unprotected birds, except any animal species listed as endangered, threatened, or of special concern in Minnesota Rules, chapter 6134.",
+          "note": "Subd. 39 protects turtles, snakes and lizards and not crocodilians, so a caiman is an unprotected wild animal outside the § 97A.501 possession bar, and § 346.155 regulates only cats, bears and primates. The state does not restrict it; local ordinances were not checked.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NV": {
+          "status": "banned",
+          "sourceId": "nv-nac-503",
+          "cite": "NAC 503.110(1)(b)(1), (3)",
+          "quote": "the importation, transportation or possession of the following species of live wildlife or hybrids thereof, including viable embryos or gametes, is prohibited: ... (1)Alligators, crocodiles and gharials..... All species in the order Crocodilia",
+          "note": "Every crocodilian is on the prohibited list, which reaches the caimans. Permits for a prohibited species go only to accredited zoos and aquaria, colleges, universities and government agencies for research, other scientific institutions, commercial aquaculture, and nonprofits that exhibit wildlife solely for education or science, so there is no pet route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VA": {
+          "status": "permit",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "4VAC15-30-40(A), (B)",
+          "quote": "Crocodilia Alligatoridae All species Alligators, caimans*",
+          "note": "The table names caimans in the Alligatoridae entry. A special permit is required to import, possess or sell one, and the department issues it only if consistent with its fish and wildlife management program; the rule does not say whether a private keeper qualifies.",
+          "grandfathered": {
+            "before": "1992-07-01",
+            "detail": "The entry carries the asterisk, so an animal held before 1 July 1992 and declared in writing by 1 January 1993 may be kept under a possession-only permit that renews every five years and cannot be transferred."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "MD": {
+          "status": "banned",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1)(ii)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: ... (ii) caiman, alligator, or crocodile;",
+          "note": "Maryland names the caiman first in the crocodilian clause. The exemptions run to research facilities, licensed exhibitors, DNR licensees, sanctuaries, vets and circuses, and a licensed exhibitor may acquire a primate or big cat only with $1,000,000 of insurance, paid full-time staff and a disposition policy. Subsection (e) preserves stricter county and municipal rules.",
+          "grandfathered": {
+            "before": "2006-05-31",
+            "detail": "Lawful possession on or before 31 May 2006 may continue, but only if the keeper gave written notification to the local animal control authority by 1 August 2006, with the number and type of animals and a photograph or a description of a tattoo or microchip. That window is long closed."
+          },
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Alligator | Alligatoridae | Caiman crocodilus crocodilus | Common Caiman | IV | Federally Threatened",
+          "note": "The spectacled or common caiman is named in Group IV, with every other caiman on the list. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. 19.35.7 NMAC is an importation rule, so it governs bringing the animal into New Mexico rather than keeping one already here.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "No crocodilian is on any of Vermont's three lists, so a caiman is restricted by absence. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "UT": {
+          "status": "banned",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-9(1)(b), R657-53-7(4)",
+          "quote": "(1)(a) A species of the Order Squamata (snakes and lizards) is classified as a prohibited species if: (i) it is venomous; (ii) not native to Utah; and (iii) a bite from which may cause substantial physical injury to humans ordinarily requiring medical treatment. (b) Species of the Order Crocodilia (crocodiles, gharials, caimans, and alligators) are classified as prohibited.",
+          "note": "Every crocodilian is a prohibited species, caimans named. A prohibited species needs a variance from the Wildlife Board before any certificate of registration, and its possession limit is zero, so there is no pet route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, 7.1.1, with Del. Code tit. 3 § 7201",
+          "quote": "When an exotic is kept as a pet, the owner or custodian of the exotic must apply to the Department for an Individual Permit on a form supplied by the Department.",
+          "note": "Delaware's reptile class expressly includes crocodilians and none is exempt, so a caiman needs an Individual Permit. Caimans are named in 7.5.2.10 only as animals Sales Permit holders may not breed. The Individual Permit is issued per animal for three years, after the Department is satisfied the animal will be held in a sturdy, escape-proof primary enclosure inside a secondary enclosure that keeps the public out, and a background check may be run. Delaware's only outright refusals at 4.7 are the gila monster, the beaded lizard and the komodo dragon. County and municipal ordinances were not checked.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-1660-01-18",
+          "cite": "Tenn. Comp. R. & Regs. 1660-01-18-.03(3)(a)2; Tenn. Code Ann. § 70-4-403(3)",
+          "quote": "(3) (a) The following species or groups of wildlife are added to the existing listing designated by legislation as Class III: ... 2. Ostriches, cassowaries, caimans, and gavials.",
+          "note": "The statute's Class III reptile entry excepts \"caimans and gavials\", and Class I names \"Crocodiles and alligators\", which left the caiman uncertain. The commission's rule settles it by adding caimans to Class III by name, the class that needs no wildlife permit. Local ordinances were not checked.",
+          "verifiedOn": "2026-10-08"
+        },
+        "NC": {
+          "status": "unclear",
+          "sourceId": "nc-14-417",
+          "cite": "G.S. §§ 14-417.2(a), 113-129(15)",
+          "quote": "All crocodilians, excluding the American alligator, shall be regulated under this Article. It shall be unlawful for any person to own, possess, use, transport, or traffic in any crocodilian that is not housed in a sturdy and secure enclosure.",
+          "note": "The reptile statute regulates a caiman by how it is kept: an escape-proof, locked enclosure with a fence that prevents contact, a posted safety protocol and escape plan, and immediate notice of an escape. That alone would make it conditional. But § 113-129(15) counts as wild animals any wild reptiles on the federal list of endangered or threatened species, the spectacled caiman is on that list, and a wild animal needs a captivity license that is not issued for a pet. Whether the definition reaches a nonnative species is not said. Recorded unclear between the two.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "AR": {
+          "status": "banned",
+          "sourceId": "ar-code-1200",
+          "cite": "Code 12.01",
+          "quote": "It is unlawful to hunt, buy, sell or possess an American alligator (Alligator mississippiensis) or other crocodilian species, or any part, nest or eggs.",
+          "note": "Code 12.01 reaches \"other crocodilian species\" in the same words as the alligator, and the only live-animal exception, Code 12.01(C), is a display and education authorization for established facilities such as parks, zoos, aquariums and nature centers.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "ID": {
+          "status": "unclear",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06; § 200.01",
+          "quote": "non-venomous or non-dangerous reptiles and amphibians",
+          "note": "The spectacled caiman is non-venomous, which on the literal wording makes it a conventional pet exempt from any permit, but \"non-dangerous\" is not defined and a crocodilian is hard to call that. If it is not a conventional pet, it needs a Fish and Game captive possession license. The Agriculture deleterious list has no reptile.",
+          "verifiedOn": "2026-10-08"
+        },
+        "IA": {
+          "status": "banned",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(8); §§ 717F.3, 717F.4",
+          "quote": "A member of the order crocodilia, including but not limited to alligators, caimans, crocodiles, and gharials.",
+          "note": "The crocodilian clause names caimans. § 717F.3 bars owning, possessing, breeding or bringing one into the state, and the only private route was the § 717F.4 registration of animals already held on 1 July 2007.",
+          "grandfathered": {
+            "before": "2007-07-01",
+            "detail": "An owner in possession on 1 July 2007 could keep the animal after implanting an electronic identification device within sixty days and registering with the department by 31 December 2007. No new route exists."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "KY": {
+          "status": "banned",
+          "sourceId": "ky-301-2-082",
+          "cite": "301 KAR 2:082 §§ 4(2)(a), 5, 6(3)",
+          "quote": "(2) Except as established in Sections 5 and 6 of this administrative regulation, a person shall not import, transport, or possess the following inherently dangerous exotic wildlife: (a) Alligators or caimans (Family Alligatoridae);",
+          "note": "The first entry on the inherently dangerous list names caimans. The only routes left are an AZA-accredited facility and the commissioner's exemption in § 5, which is open to municipal zoos, colleges, circuses and earlier exempted facilities, not private keepers.",
+          "grandfathered": {
+            "before": "2005-07-13",
+            "detail": "A person who legally possessed the animal before 13 July 2005 may keep it for its life with veterinary records, acquisition papers or other proof, but may not replace it, breed it or transfer it."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "RI": {
+          "status": "permit",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.6(A)(9); § 3.9(A)-(C); § 3.17",
+          "quote": "9. \"Exotic animal\" or \"Exotic wild animal\" means any vertebrate or invertebrate other than those defined as domestic animals, native wildlife, or exempt exotic animals.",
+          "note": "The reptile list in § 3.17 exempts turtles, some snakes and many lizards but no crocodilian, so the spectacled caiman is an exotic animal that needs an exotic animal possession permit from the Division of Agriculture. § 3.9(A) makes that permit available to private persons for animals § 3.7 does not expressly prohibit, and § 3.7 does not name it.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.05(b), Table 800.2; Fis 804.02(b)(4)",
+          "quote": "(b) A permit shall be issued only to a person in the permittee category(ies), as defined in Fis 802.01, and cited in Table 800.2 as follows: ... Reptiles 5 Alligator Alligatoridae, spp",
+          "note": "Caimans belong to Alligatoridae, the family the alligator row names, and Fis 804.02(b)(4) excepts that family from the free exotic reptile class. The row is category 5 only, so no permit can issue to an individual.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MO": {
+          "status": "conditional",
+          "sourceId": "mo-578-023",
+          "cite": "§ 578.023(1); 3 CSR 10-9.110(2)",
+          "quote": "any deadly, dangerous, or poisonous reptile, or any deadly or dangerous reptile over eight feet long, in any place other than a properly maintained zoological park, circus, scientific, or educational institution, research laboratory, veterinary hospital, or animal refuge, unless he or she has registered such animals with the local law enforcement agency in the county in which the animal is kept",
+          "note": "Not banned, and the spectacled caiman is not native to Missouri, so it needs no Wildlife Code permit under 3 CSR 10-9.110(2). The statute does not define a dangerous reptile, so whether a small one must be registered is not settled, but one over eight feet plainly must be registered with the county law enforcement agency.",
+          "verifiedOn": "2026-10-08"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-3(a), (b), (d); K.S.A. 32-1301(d)",
+          "quote": "(a) Subject to federal or state law or rules and regulations, exotic wildlife species may be imported, possessed, sold, offered for sale or purchased, provided the exotic wildlife was legally captured, raised, exported, possessed, sold or purchased or any combination of these activities in its place of origin. (b) Exotic wildlife may be possessed without limit in time and number.",
+          "note": "Not native to Kansas, so exotic wildlife under 115-20-3(d), which may be possessed without limit in time and number if legally obtained where it came from. The dangerous regulated animal statute reaches only big cats, bears and non-native venomous snakes, and the 115-18-10 prohibited list has no reptile.",
+          "verifiedOn": "2026-10-01"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60; S.C. Code Regs. 123-152",
+          "quote": "15. reptiles",
+          "note": "South Carolina lets reptiles be imported for the pet trade without a permit, the caiman is not native, and the only restricted nonnative species under Regulation 123-152 is the black and white tegu. The alligator rules in Chapter 123 reach caimans only to require caiman leather to be labeled as such.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MT": {
+          "status": "banned",
+          "sourceId": "mt-arm-12-6-22",
+          "cite": "ARM 12.6.2215(6)(b)",
+          "quote": "(6) The following reptiles are classified as prohibited: ... (b) Alligatoridae family;",
+          "note": "Caimans belong to Alligatoridae, which Montana prohibits as a family.",
+          "verifiedOn": "2026-10-01"
+        },
+        "WV": {
+          "status": "permit",
+          "sourceId": "wv-20-2-13",
+          "cite": "W. Va. Code §§ 20-2-13, 20-1-2; W. Va. C.S.R. § 74-1-3",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "note": "A spectacled caiman is a reptile from outside West Virginia: § 20-1-2 counts reptiles as wildlife with no nativity limit, so one brought in from outside the state needs an importation permit from the director under § 20-2-13, the Burmese python's position. The board's Dangerous Wild Animal list names no snake and no crocodilian, although § 19-34-5 allowed both.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "AK": {
+          "status": "legal",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(b)",
+          "quote": "Any nonvenomous reptile Class Reptilia (crocodile, alligator, snake, turtle, or lizard)",
+          "note": "The clean list clears every nonvenomous reptile and names \"crocodile, alligator\" in its own gloss, so a spectacled caiman may be possessed without a permit. § 92.029(e) adds that an endangered species still needs a federal permit.",
+          "verifiedOn": "2026-10-01"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-40-3-24",
+          "cite": "SDCL 40-3-24; ARSD 12:68:18:03",
+          "quote": "No person may bring into the state or possess in the state any nondomestic mammal unless the mammal is allowed in the state pursuant to § 40-3-25.",
+          "note": "South Dakota's bar is written for mammals only, so a spectacled caiman is outside it, and Game, Fish and Parks has no captive wildlife chapter for reptiles. A free entry permit under 12:68:18:03 still applies to bringing any nondomestic animal into the state.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-26",
+          "cite": "r. 220-2-.26(1)",
+          "quote": "(1) No person, firm, corporation, partnership, or association shall possess, sell, offer for sale, import, bring, release, or cause to be brought or imported into the State of Alabama any of the following live fish or animals:",
+          "note": "A caiman is not venomous, not on the federal injurious list and not native, so none of the restricted entries reaches it, and the game animal list names only the American alligator. No other Alabama rule read here applies.",
+          "verifiedOn": "2026-10-08"
+        },
+        "IN": {
+          "status": "permit",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)(5); 9-11-2(c)",
+          "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+          "note": "A spectacled caiman under five feet needs no permit, but one at least five feet long is a Class III animal, and a Class III permit must be obtained before taking possession, with a recapture plan and a cage inspection. 312 IAC 9-5-6 also counts a crocodilian of five feet or more as a dangerous reptile.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "ND": {
+          "status": "unclear",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(3)(b)(5), (6); 48.1-09-02-01",
+          "quote": "b. Category 3 species of nontraditional livestock includes the following species and their hybrids: ... (2) Big cats, including mountain lion, jaguar, leopard, lion, tiger, and cheetah. (3) Bears. (4) Wolves. (5) Venomous reptiles and nonvenomous injurious reptiles. (6) Primates.",
+          "note": "A spectacled caiman is nonvenomous and not on the federal injurious wildlife list, so whether it is a \"nonvenomous injurious reptile\" in category 3 depends on what the undefined word means. If it means federally listed, the animal is in no category and needs only an importation permit number and a veterinary certificate, plus the board review 48.1-09-01-02(6) requires for an unlisted species. If it means harmful, a crocodilian is the obvious case and needs a license.",
+          "verifiedOn": "2026-10-01"
+        },
+        "WY": {
+          "status": "banned",
+          "sourceId": "wy-ch69",
+          "cite": "Ch. 69 § 8(d); 50 CFR 17.11",
+          "quote": "An importation/possession permit shall not be issued for importation or possession of the live cold-blooded wildlife in this section, except as otherwise specified. ... (d) Endangered and threatened wildlife listed in 50 CFR 17.11.",
+          "note": "50 CFR 17.11 lists the common caiman, Caiman crocodilus crocodilus, as threatened by similarity of appearance, with the brown caiman alongside and the Apaporis River caiman endangered, and § 8(d) bars a permit for anything on that list, so the free reptile clause in § 10(a)(i) does not reach a spectacled caiman.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-5-2-3",
+          "cite": "Rule 2.3(A)(1)(a); Rule 8.3(A)(5)",
+          "quote": "1. Nongame species in need of management in Mississippi include: a. Thirty-two (32) species of small mammals, one species of freshwater fish, and all native species of reptiles and amphibians except those regulated by other rules of the Commission on Wildlife, Fisheries and Parks.",
+          "note": "The nongame rule reaches native reptiles only, and the inherently dangerous list in Rule 8.3 names no reptile, so no Mississippi rule read here reaches a spectacled caiman.",
+          "verifiedOn": "2026-10-01"
+        },
+        "LA": {
+          "status": "banned",
+          "sourceId": "la-76-xv-101",
+          "cite": "LAC 76:XV.101.K.2.a.i",
+          "quote": "a. The following nonnative reptile and amphibian species are prohibited from importation, possession, sale, attempting to sell, transfer, release, and reproduction in the state due to the potential risk of establishment in the wild and detrimental hazard to native wildlife and public health and safety. ... i. All crocodilians;",
+          "note": "All nonnative crocodilians head Louisiana's prohibited list. Owners had 365 days from the January 2025 effective date to register and obtain a permit.",
+          "grandfathered": {
+            "before": "2025-01-01",
+            "detail": "Registration within 365 days of the rule taking effect, no breeding, no further acquisition."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(c)",
+          "quote": "(c) Except as otherwise provided, monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license;",
+          "note": "A caiman is not native to Oklahoma and not federal injurious wildlife, so it is exempt from import permits and breeder licenses. The alligator permit in 800:25-7-7(8) names only the American alligator.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NE": {
+          "status": "unclear",
+          "sourceId": "ne-37-477",
+          "cite": "Neb. Rev. Stat. §§ 37-477(1), 37-806(1); 166 NAC 10 § 001.03",
+          "quote": "(1) No person shall keep in captivity in this state any wild birds, any wild mammals, any nongame wildlife in need of conservation as determined by the commission under section 37-805, or any wildlife determined to be an endangered or threatened species under the Endangered Species Act or section 37-806 without first having obtained a permit to do so as provided by section 37-478 or 37-479.",
+          "note": "The reptile rule reaches only Nebraska natives, which would leave a caiman free, but 50 CFR 17.11 lists the common caiman, Caiman crocodilus crocodilus, as threatened by similarity of appearance, § 37-806(1) makes every federally threatened species threatened in Nebraska, and § 37-477(1) requires a captive permit for any such wildlife. The captive wildlife rules name no reptile, so whether and how that permit would issue for a pet is not settled.",
+          "verifiedOn": "2026-10-08"
+        }
+      },
+      "article": "/blog/caiman-legal-guide/"
     }
   }
 }
