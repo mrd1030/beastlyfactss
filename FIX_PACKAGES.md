@@ -73,6 +73,10 @@ Live editions (2026-10-04): bearded dragon 4.1; leopard gecko, crested gecko, ba
 - [ ] Glossary: IUCN (`pages_07.html:25`) and VCA (`:59`) out; Injurious wildlife (`:24`) and Lacey Act (`:27`) move to the law page mini glossary.
 - [ ] Gear: sand unlinked (grain size specs conflict); no air pump for the sponge filter.
 - [ ] Book: gloves read "clean, disposable nitrile gloves" (`source/axolotl.html:781`, `pages_04.html:15`). The site's amphibian rule since 2026-10-05: powder-free vinyl wetted with dechlorinated water first, nitrile only as a fallback, never latex (LafeberVet Amphibian Handling and Restraint; Merck Clinical Techniques in Amphibians). Match it on the next rebuild.
+- [ ] Book, law page: the Arkansas row (`pages_05.html:25`, `axolotl.html:966`) reads "Unclear. The unrestricted captive wildlife list has no amphibian section, so a non-native salamander is neither exempted nor addressed." The matrix now reads banned (2026-10-08): Addendum R1.03(A)(1) names the axolotl, and its *** note limits possession to animals owned before 16 May 2024 and registered with the Game and Fish Commission by 30 June 2025. Move the row up with the bans.
+- [ ] Book, law page: the count line (`pages_05.html:8`, `axolotl.html:949`) reads "banned in 6 ... and unclear in 1". The matrix now gives banned in 7 and unclear in none; legal 38, permit 4 and conditional 3 are unchanged, so "fourteen places" in the subtitle (`:6`) still holds.
+- [ ] Book: the opening (`pages_01.html:65`, `axolotl.html:282`) reads "banned, permit-only, conditional or unclear in fourteen places". Still fourteen, but no axolotl cell is unclear now: drop "or unclear".
+- [ ] Book, Sources page: the law sources line (`pages_07.html:92`, `axolotl.html:1768`) cites the "Arkansas unrestricted captive wildlife list". The Arkansas answer now comes from the Game and Fish Commission Code Book, Addendum R1.03 and its *** note.
 
 ### White's tree frog (1.1, `whites-tree-frog-src`; renders as "Whites Tree Frog")
 - [ ] Glossary: IUCN out (`pages_6.html:31`).
