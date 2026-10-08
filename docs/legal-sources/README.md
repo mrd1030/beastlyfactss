@@ -147,6 +147,7 @@ moves verification dates forward; a research sitting never does.
 | `NC-nc-14-article-55.txt` | N.C. Article 55 in full: venomous reptiles, the five named large constrictors and every crocodilian but the American alligator, all lawful if housed and labeled to the statute |
 | `AR-ar-codebook-reptiles-alligator.txt` | Codebook rows the other two AR files lack: 09.07, the 09.17 venomous permit and F1.08, R1.02's venomous genera, and Chapter 12's bar on alligators and every other crocodilian |
 | `WY-wy-50cfr17-11-rows.txt` | The 50 CFR 17.11 rows that Wyoming, Missouri and South Carolina pick up by reference: tiger and Lemuridae endangered, lion endangered or threatened by subspecies, American alligator and common caiman threatened by similarity of appearance |
+| `AR-ar-20-19-601-primates.txt` | Ark. Code §§ 20-19-601 to 610: apes, baboons and macaques barred, every other primate lawful with county sheriff registration within 30 days |
 
 ## Reading the awkward ones
 

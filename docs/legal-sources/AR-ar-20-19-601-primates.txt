@@ -1,0 +1,140 @@
+# Ark. Code Ann. §§ 20-19-601 to 20-19-610, Nonhuman Primates
+
+sourceId: ar-unrestricted
+jurisdiction: AR
+url: https://www.animallaw.info/statute/ar-primates-subchapter-6-nonhuman-primates
+fetched: 2026-10-08
+fetch notes: Plain curl of the Animal Legal and Historical Center's statute page. The Arkansas primate cells cite it under ar-unrestricted, beside Code 09.02(H), which incorporates it. law.justia.com answers a cloud session with a Cloudflare challenge. Credits on the page run to Acts of 2023, Act 852.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+§ 20-19-601. Definitions 
+As used in this subchapter:
+(1) “Interested person” means an individual, partnership, firm, joint stock company, corporation, association, trust, estate, or other legal entity that a court determines may have a pecuniary interest in a primate that is the subject of the petition under § 20-19-607;
+(2) “Law enforcement officer” means a public servant vested by law with a duty to maintain public order or to make an arrest for an offense, including without limitation:
+(A) An animal control officer; and
+(B) An Arkansas State Game and Fish Commission game warden;
+(3) “Person” means an individual, a partnership, a corporation, an organization, or another legal entity or an officer, a member, a shareholder, a director, an employee, an agent, or a representative of a partnership, a corporation, an organization, or another legal entity;
+(4) “Primate” means a live individual animal of the taxonomic order Primates, excluding humans;
+(5)(A) “Temporary holding facility” means an incorporated nonprofit animal protection organization, such as a registered humane society and shelter, that temporarily houses a primate at the written request of a law enforcement officer.
+(B) “Temporary holding facility” includes a person that is a registered primate owner that is temporarily caring for a primate; and
+(6) “Wildlife sanctuary” means a nonprofit entity that:
+(A) Operates a place of refuge where abused, neglected, unwanted, impounded, abandoned, orphaned, or displaced animals are provided care;
+(B) Does not conduct a commercial activity with respect to primates, including without limitation:
+(i) Sale, trade, auction, lease, or loan of primates or parts of primates; or
+(ii) Use of primates in a for-profit business or operation;
+(C) Does not use primates for entertainment purposes or in a traveling exhibit;
+(D) Does not breed primates; and
+(E) Does not allow members of the public to be in proximity to primates without sufficient distance and protective barriers, including without limitation offering photographic opportunities next to a primate of any age.
+Credits
+Acts of 2013, Act 1337, § 1, eff. Aug. 16, 2013; Acts of 2023, Act 852, § 7, eff. Aug. 1, 2023.
+ § 20-19-602. Prohibited activities 
+(a) A person shall not import, possess, sell, or breed the following primates:
+(1) An ape;
+(2) A baboon; or
+(3) A macaque.
+(b)(1)(A) It is unlawful for a person to allow a member of the public to come into direct contact with a primate.
+(B) Subdivision (b)(1)(A) of this section does not apply to a registered primate owner, the family of a registered primate owner, an invited guest of a registered primate owner.
+(2) If a primate potentially exposes a human to rabies or another zoonotic disease by penetration or abrasion of the skin, the owner of the primate shall report the potential exposure to the local public health office within twenty-four (24) hours.
+(c)(1) It is unlawful for a person to tether a primate outdoors, such as on a leash or chain, or to allow a primate to run at-large.
+(2) If a primate escapes or is released, the owner of the primate immediately shall contact a law enforcement officer in the county in which the primate is kept and the Arkansas State Game and Fish Commission to report the loss, escape, or release.
+(3) The owner of a primate that escapes or is released is liable for all expenses associated with efforts to recapture the primate.
+(d) It is unlawful to violate the caging and care standards in this subchapter or to keep a primate in a manner that threatens animal welfare or public safety.
+(e) It is unlawful to operate a primate commercial breeding facility in this state.
+CREDIT(S)
+Acts of 2013, Act 1337, § 1, eff. Aug. 16, 2013.
+ § 20-19-603. Exemptions 
+(a) Subsections 20-19-602(a), (c), and (d) and § 20-19-605 do not apply to:
+(1) Either:
+(A) An institution accredited by a zoological accreditation agency, including without limitation the Association of Zoos and Aquariums, or the Zoological Association of America; or
+(B) A certified related facility that coordinates with an Association of Zoos and Aquariums Species Survival Plan Program for breeding of species listed as threatened or endangered under 16 U.S.C. § 1533, as it existed on January 1, 2013;
+(2) A research facility as defined in the Animal Welfare Act, 7 U.S.C. § 2132(e), as it existed on January 1, 2013;
+(3) A wildlife sanctuary;
+(4) A temporary holding facility;
+(5) A licensed veterinarian for the purpose of providing treatment to a primate;
+(6) A law enforcement officer for purposes of enforcement or investigation;
+(7) A circus defined as an exhibitor holding a Class C license under the Animal Welfare Act, 7 U.S.C. § 2131 et seq., as it existed on January 1, 2013, that:
+(A) Is in the state for less than ninety (90) days per year;
+(B) Regularly conducts performances featuring live, dangerous, wild animals and multiple trained human entertainers, including clowns and acrobats; and
+(C) Does not allow a member of the public to be in proximity to a dangerous, wild animal without sufficient distance and protective barriers, including without limitation offering photographic opportunities next to a dangerous, wild animal;
+(8)(A) A person temporarily transporting a legally owned primate, including an ape, macaque, or baboon, through this state if:
+(i) The transit time is not more than ten (10) days;
+(ii) The primate, including an ape, macaque, or baboon, is not exhibited; and
+(iii) The transporter has complied with all state laws and federal regulations regarding the transport.
+(B)(i) A transporter exempted under subdivision (a)(8)(A) of this section shall provide notice of the transport to the Arkansas State Game and Fish Commission before entering the state, identifying the number and type of primate, including an ape, macaque, or baboon, that will be transported.
+(ii) The notification required under subdivision (a)(8)(B)(i) of this section is in addition to a veterinary certificate or other permit required by state, local, or federal law; or
+(9) A person that is temporarily transporting a legally owned primate under § 20-19-604.
+(b) However, a registered primate owner, including an ape, macaque, or baboon owner, may transfer a registered primate, including an ape, macaque, or baboon.
+Credits
+Acts of 2013, Act 1337, § 1, eff. Aug. 16, 2013; Acts of 2015, Act 1243, § 1, eff. July 22, 2015; Acts of 2019, Act 315, § 1981, eff. July 24, 2019
+.
+ § 20-19-604. Prior possession 
+A person eighteen (18) years of age or older may continue to lawfully possess a primate, including an ape, macaque, or baboon, if within one hundred eighty (180) days after the effective date of this subchapter the primate, including an ape, macaque, or baboon is registered under § 20-19-605 and if:
+(1) The person maintains veterinary records, acquisition papers, or other documents or records that establish that the person possessed the primate, including an ape, macaque, or baboon, before the effective date of this subchapter;
+(2) The person does not acquire an ape, macaque, or baboon after the effective date of this subchapter by purchase, trade, or breeding;
+(3) The person has not pleaded guilty or nolo contendere to or been found guilty of an offense involving the abuse or neglect of an animal under a state, local, or federal law;
+(4) The person is not subject to a court order requiring the forfeiture of a primate;
+(5) The person has not had a license or permit regarding the care, possession, exhibition, breeding, or sale of an animal revoked or suspended for more than six (6) months by a state, local, or federal authority;
+(6) The facility and the conditions in which each primate is kept comply with this subchapter;
+(7) The person does not bring a primate to a commercial or retail establishment, unless it is owned or rented by the registered primate owner, or a license veterinarian's office, an educational facility, a facility rented for the sole purpose of education, or a hotel/motel where the primate would not have direct contact with the public; or
+(8) The person has an identification number placed in the primate via subcutaneous microchip, at the expense of the owner, unless a veterinarian determines the implantation would be harmful to the primate's well-being.
+CREDIT(S)
+Acts of 2013, Act 1337, § 1, eff. Aug. 16, 2013.
+ § 20-19-605. Registration of primates 
+(a)(1)(A) Within one hundred eighty (180) days after the effective date of this subchapter, a person who currently owns or possesses a primate shall submit to the county sheriff of the county in which the person keeps a primate a registration form provided by the sheriff's office.
+(B) A person who in the future may purchase, import, trade for, or otherwise own or possess a primate not prohibited under this subchapter shall within thirty (30) days after acquisition of the primate submit to the county sheriff of the county in which the person keeps the primate a registration form provided by the sheriff's office.
+(2)(A) The registration form shall include:
+(i) The name, address, and telephone number of the registrant;
+(ii) A description of each primate, including the scientific classification, name, gender, age, color, weight, and distinguishing marks;
+(iii) A photograph of the primate and the enclosure in which the primate is kept with measurements to show compliance with this subchapter;
+(iv) The location at which the primate is kept;
+(v) The name, address, and telephone number of the person from whom the registrant obtained the primate, if known; and
+(vi) A written statement giving the name and address of the veterinarian who provides veterinary care to the primate, signed by the veterinarian; and
+(B) The registrant shall submit with the registration form a one-time registration fee of fifty dollars ($50.00) for the initial registration and a fee of ten dollars ($10.00) for each additional registration to be deposited into the county treasury, which the county sheriff's department shall use to offset the cost of issuing registration for possession of a primate and for costs involved in controlling primates located within the county.
+(3) The county sheriff's office shall notify the Arkansas State Game and Fish Commission of each registration received by the county sheriff's office.
+(b) The person shall notify the county sheriff's office of any changes in the information provided on the registration form, including the death or transfer of the primate.
+CREDIT(S)
+Acts of 2013, Act 1337, § 1, eff. Aug. 16, 2013.
+ § 20-19-606. Facility and care requirements 
+(a) A person possessing a primate shall maintain the primate in an enclosure that meets or exceeds the minimum standards set forth by the United States Department of Agriculture under the Animal Welfare Act, 7 U.S.C. § 2132(e), as it existed on January 1, 2013, for each species of primate.
+(b) A person possessing a primate shall comply with the minimum standards of care set forth by the United States Department of Agriculture under the Animal Welfare Act, 7 U.S.C. § 2132(e), as it existed on January 1, 2013.
+CREDIT(S)
+Acts of 2013, Act 1337, § 1, eff. Aug. 16, 2013.
+ § 20-19-607. Enforcement 
+(a) Upon probable cause, a law enforcement officer may, seize a primate possessed or kept in violation of this subchapter.
+(b) A primate seized under this section is forfeited upon a judicial determination that:
+(1) The seized animal is a primate; and
+(2) The owner of the seized primate has violated this subchapter with regard to the seized primate.
+(c)(1) A primate seized and forfeited under this section shall be placed in the custody and control of a registered primate owner if possible.
+(2) If placement is not possible under subdivision (c)(1) of this section, a primate seized and forfeited under this section shall be placed in the custody and control of a zoo accredited by the Association of Zoos and Aquariums or a wildlife sanctuary.
+(d)(1) A primate seized but not forfeited under this section shall be impounded or quarantined at the home of a registered primate owner if possible.
+(2) If impoundment and quarantine under subdivision (d)(1) of this section is not possible, a primate seized but not forfeited under this section shall be kept in the custody of an institution accredited by the Association of Zoos and Aquariums, a wildlife sanctuary, or a temporary holding facility under § 20-19-603 until disposition of the seized primate.
+(e)(1) A zoo, wildlife sanctuary, or temporary holding facility having custody of a primate under this section may file a petition with the court requesting that the person from whom the primate was seized or the owner of the primate be ordered to post security.
+(2)(A) Security ordered under subdivision (e)(1) of this section shall be in an amount sufficient to secure payment of all reasonable expenses expected to be incurred by the zoo, the wildlife sanctuary, or the temporary holding facility in caring for and providing for the primate pending the disposition of the primate.
+(B) Reasonable expenses under subdivision (e)(2)(A) of this section include without limitation, estimated medical care and boarding of the primate before disposition.
+(C) The amount of the security under subdivision (e)(2)(A) of this section shall be determined by the court after taking into consideration the facts and circumstances of the case, including without limitation the recommendation of the organization having custody and care of the seized primate and the cost of caring for the primate.
+(D) If security under subdivision (e)(2)(A) of this section has been posted, the zoo, the wildlife sanctuary, a registered primate owner, or, or the temporary holding facility may draw from the security the actual costs incurred in caring for the seized primate.
+(3)(A) Upon receipt of a petition the court shall set a hearing on the petition to be conducted within five (5) business days after the petition is filed.
+(B) The petitioner shall serve a copy of the petition on the owner of the primate and the law enforcement entity that seized the primate.
+(C) The petitioner also shall serve a copy of the petition on any interested person.
+(D) If the court orders the posting of security under this section; the person ordered to do so shall post the security with the clerk of the court within five (5) business days after the hearing.
+(E) Upon judicial determination on the disposition of the seized primate, a person who posted the security under this section is entitled to a refund of the security for any expenses not incurred by the impounding organization.
+(f) Voluntary relinquishment does not affect criminal charges that may be pursued by the appropriate authorities.
+CREDIT(S)
+Acts of 2013, Act 1337, § 1, eff. Aug. 16, 2013.
+ § 20-19-608. Penalty 
+A violation of this subchapter is a Class A misdemeanor.
+CREDIT(S)
+Acts of 2013, Act 1337, § 1, eff. Aug. 16, 2013.
+ § 20-19-609. Additional local restrictions authorized 
+ This subchapter does not preempt the authority of a city, town, or county.
+CREDIT(S)
+Acts of 2013, Act 1337, § 1, eff. Aug. 16, 2013.
+ § 20-19-610. Rules 
+(a) The Arkansas State Game and Fish Commission may adopt rules to implement this subchapter.
+(b) A rule adopted under this subchapter shall not add to the list of exempt entities or species of primates or impose additional fees or insurance requirements.
+CREDIT(S)
+Acts of 2013, Act 1337, § 1, eff. Aug. 16, 2013.
