@@ -130,6 +130,16 @@ moves verification dates forward; a research sitting never does.
 | `WI-wi-nr-16.txt` | Wis. Stat. §§ 169.01, 169.15 and 169.18 and Wis. Admin. Code NR 16.11 and NR 16.15, captive wild animal licensing and the wolf hybrid provisions |
 | `WV-wv-19-34-dwa-act.txt` | W. Va. Code §§ 19-34-2, -4, -5 and -6, the Dangerous Wild Animals Act around the board's list: the ban, the pre-rule-only permit, and the exclusion of native wildlife |
 | `WY-wy-23-1-101-definitions.txt` | Wyo. Stat. § 23-1-101(a) definitions (furbearing, predatory, protected and trophy game animals) and § 23-2-305, the license to capture furbearers for domestication |
+| `AZ-az-r12-4-406-text.txt` | R12-4-406 verbatim from Cornell LII, the text behind the summary in AZ-az-r12-4-406.txt; read the second letter where two appear |
+| `WA-wa-16-30-020-and-220-450-030.txt` | RCW 16.30.020, the dangerous wild animal exemptions in full, and WAC 220-450-030 as renumbered, with the native cervid bar at (2) and its research and display route at (8) |
+| `OH-oh-935-02-to-10.txt` | R.C. 935.02 to 935.101: no new dangerous wild animal since 2012, the small primates (and lemurs) sent to registration at 935.041, and the restricted snake permit still open to new keepers |
+| `VA-va-29-1-521-and-native-list.txt` | Va. Code § 29.1-521(A)(10) verbatim, the native list lines that make the gray squirrel, opossum, deer and timber rattlesnake natives (and the cougar not one), and the full 4VAC15-30-40 table |
+| `DE-de-903-and-c72-text.txt` | The text behind DE-de-903.txt: § 7201 with its flat bar on nonnative venomous snakes, and regulation 903 in full, including the 7.1 Individual Permit for an exotic kept as a pet |
+| `ID-id-deleterious-and-classification.txt` | IDAPA 02.04.27 deleterious exotic list in full (AZA-only big cats and primates, the four exempt primate entries), 13.01.06 big game and unprotected classes, and § 25-3701 domestic cervidae |
+| `IA-ia-717F-4-and-170-farm-deer.txt` | Iowa 717F.3 and 717F.4, the dangerous wild animal ban and its 2007 registration grandfather, and ch. 170, which lets a landowner keep whitetail only as farm deer behind a certified fence or on a hunting preserve |
+| `KY-ky-082-grandfather-083-cervids.txt` | 2:082 §§ 5 and 6 (exemptions and the 13 July 2005 grandfather for inherently dangerous exotics), 2:083 captive cervid permits with no new noncommercial permit after 28 February 2016, and the KDFWR pit viper list |
+| `MO-mo-578-023-and-4-117.txt` | RSMo § 578.023 (the dangerous wild animal registration list), the 4.117 prohibited species list, the furbearer definition and the Class III (cervid) breeder rules |
+| `SC-sc-47-2-and-native-reptile-regs.txt` | Title 47 ch. 2 (Panthera cats including cougars, non-native bears and great apes barred since 1 January 2018), § 50-11-1910 (no sale of live deer), and Regs 123-151.3, 151.4 and 152 on native reptiles and the alligator |
 
 ## Reading the awkward ones
 

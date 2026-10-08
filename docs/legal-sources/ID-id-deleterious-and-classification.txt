@@ -1,0 +1,196 @@
+# Idaho: IDAPA 02.04.27 deleterious exotic animal list, IDAPA 13.01.10.250 and 261, IDAPA 13.01.06 classification, Idaho Code § 25-3701
+
+sourceId: id-020427
+jurisdiction: ID
+url: https://adminrules.idaho.gov/rules/current/02/020427.pdf
+fetched: 2026-10-08
+fetch notes: Plain curl of adminrules.idaho.gov/rules/current/02/020427.pdf, /13/130110.pdf and /13/130106.pdf, pdftotext -layout; § 25-3701 from legislature.idaho.gov. ID-id-conventional-pets.txt holds 13.01.10.010 and .200; this file adds the full deleterious list and the classification rows it leaves out. Note 02.04.27.407 swaps the genera of its marmoset and squirrel monkey entries; copied as printed.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+==== IDAPA 02.04.27.100.01 ====
+100.     POSSESSION AND PROPAGATION OF DELETERIOUS EXOTIC ANIMALS.
+
+         01.      Possession. No person may possess a deleterious exotic animal in the state, unless such person
+obtains a possession permit issued by the Administrator.                                               (3-31-22)
+
+
+==== IDAPA 02.04.27.400 to 412, the list ====
+400.     LIST OF DELETERIOUS EXOTIC ANIMALS.
+The Administrator may add or remove animal species to the list of deleterious exotic animals in this chapter by
+issuing a written order listing animals and the reasons for adding them to or removing them from the list deleterious
+exotic animals.                                                                                            (3-31-22)
+
+401.     DELETERIOUS EXOTIC ANIMALS - BIRDS.
+
+         01.      Mute Swan, (Cygnus olor). Mute swans except those that have been pinioned.                (3-31-22)
+
+
+
+Section 121                                             Page 8
+IDAHO ADMINISTRATIVE CODE                                                                    IDAPA 02.04.27
+Department of Agriculture                                        Rules Governing Deleterious Exotic Animals
+
+402.     DELETERIOUS EXOTIC ANIMALS - MAMMALS: CANIDAE.
+
+         01.      All Non-native Canidae Species.                                                     (3-31-22)
+
+403.     DELETERIOUS EXOTIC ANIMALS -- MAMMALS: LARGE FELIDAE.
+All deleterious exotic Large Felidae must be possessed on a facility that is AZA accredited.          (3-31-22)
+
+         01.      Caracal (Felis caracal).                                                            (3-31-22)
+
+         02.      Cheetah (Acinonyx jubatus).                                                         (3-31-22)
+
+         03.      Jaguar (Panthera onca).                                                             (3-31-22)
+
+         04.      Leopard (Panthera pardus). All leopards.                                            (3-31-22)
+
+         05.      Lion (Panthera leo).                                                                (3-31-22)
+
+         06.      Tiger (Panthera tigris). All tigers and tiger-hybrids.                              (3-31-22)
+
+404.     DELETERIOUS EXOTIC ANIMALS -- MAMMALS: SMALL FELIDAE.
+
+         01.      Geoffroy’s Cat (Felis geoffroyi).                                                   (3-31-22)
+
+         02.      Margay (Felis wiedii).                                                              (3-31-22)
+
+         03.      Ocelot (Felis pardalis).                                                            (3-31-22)
+
+         04.      Serval (Felis serval).                                                              (3-31-22)
+
+405.     DELETERIOUS EXOTIC ANIMALS - MAMMALS: INSECTIVORES.
+
+         01.      European Hedgehog (Erinaceus europeaus).                                            (3-31-22)
+
+406.     DELETERIOUS EXOTIC ANIMALS - MAMMALS: MARSUPIALS.
+
+         01.      Brush Tailed Possum (Trichsurus vulpecula).                                         (3-31-22)
+
+407.    DELETERIOUS EXOTIC ANIMALS - MAMMALS: NON-HUMAN PRIMATES.
+All non-human primates must be possessed on a facility that is AZA accredited. The following primate species are
+exempt from this rule:                                                                                (3-31-22)
+
+         01.      Capuchin (Cebus spp).                                                               (3-31-22)
+
+         02.      Marmoset (Saimiri spp).                                                             (3-31-22)
+
+         03.      Spider Monkeys (Atleles spp).                                                       (3-31-22)
+
+         04.      Squirrel Monkeys (Callithrix, Cebuella, Callibella, and Mico spp).                  (3-31-22)
+
+408.     DELETERIOUS EXOTIC ANIMALS - MAMMALS: OVIDAE.
+
+         01.      Barbary Sheep (Ammotragus lervia).                                                  (3-31-22)
+
+         02.      Mouflon Sheep (Ovis musimon).                                                       (3-31-22)
+
+409.     DELETERIOUS EXOTIC ANIMALS - MAMMALS: PROCYONIDAE.
+
+
+
+Section 402                                             Page 9
+IDAHO ADMINISTRATIVE CODE                                                              IDAPA 02.04.27
+Department of Agriculture                                  Rules Governing Deleterious Exotic Animals
+
+         01.   Coatimundi.                                                                         (3-31-22)
+
+         02.   Kinkajou.                                                                           (3-31-22)
+
+410.     DELETERIOUS EXOTIC ANIMALS - MAMMALS: RODENTIA.
+
+         01.   African Dormice (Graphiurus).                                                       (3-31-22)
+
+         02.   African Rope Squirrels (Funisciurus).                                               (3-31-22)
+
+         03.   African Striped Mice (Hybomys).                                                     (3-31-22)
+
+         04.   African Tree Squirrels (Heliosciurus).                                              (3-31-22)
+
+         05.   Brush-Tailed Porcupines (Atherurus).                                                (3-31-22)
+
+         06.   Gambian Giant Pouched Rats (Cricetomys).                                            (3-31-22)
+
+         07.   Prairie Dogs (Cynomys).                                                             (3-31-22)
+
+         08.   South American Rodents. All South American rodents except guinea pigs and chinchillas.
+                                                                                                   (3-31-22)
+
+411.     DELETERIOUS EXOTIC ANIMALS - MAMMALS: SUIDAE.
+
+         01.   European or Russian Wild Boar (Sus scrofa).                                         (3-31-22)
+
+412.     DELETERIOUS EXOTIC ANIMALS - MAMMALS: TAYASSUIDAE.
+
+         01.   Peccary (Dicotyles tajacu).                                                         (3-31-22)
+
+413. -- 999.   (RESERVED)
+
+
+
+
+==== IDAPA 13.01.10.250, 251.01 and 261.02.e ====
+
+
+Section 201                                             Page 9
+IDAHO ADMINISTRATIVE CODE                                            IDAPA 13.01.10 – Importation, Possession,
+Department of Fish and Game                                               Release, Sale, or Salvage of Wildlife
+
+         c.       Long legs, approximately twenty-six (26) to thirty-two (32) inches at the shoulder in adult height;
+                                                                                                              (4-6-23)
+         e.       For all venomous reptiles, enclosures will have safety glass and cages will have small enough mesh
+to prevent the animal’s escape and double walls sufficient to prevent penetration of fangs to the outside; and all cages
+and enclosures will be kept locked.                                                                            (4-6-23)
+
+
+==== IDAPA 13.01.06.100, 101, 201, 250 ====
+100.     CLASSIFICATION OF WILDLIFE – BIG GAME ANIMALS.
+
+         01.      American Black bear.                                                                  (7-1-24)
+
+          02.      Bighorn sheep – Ovis canadensis, identified as “California bighorn sheep” when occurring south
+of Interstate 84 and as “Rocky Mountain bighorn sheep” when occurring north of Interstate 84.            (7-1-24)
+
+         03.      Elk.                                                                                  (7-1-24)
+
+         04.      Gray wolf.                                                                            (7-1-24)
+
+         05.      Grizzly bear.                                                                         (7-1-24)
+
+         06.      Moose.                                                                                (7-1-24)
+
+         07.      Rocky Mountain goat.                                                                  (7-1-24)
+
+         08.      Mountain lion.                                                                        (7-1-24)
+
+         09.      Mule deer.                                                                            (7-1-24)
+
+         10.      Pronghorn.                                                                            (7-1-24)
+
+         11.      White-tailed deer.                                                                    (7-1-24)
+
+101.     CLASSIFICATION OF WILDLIFE – UPLAND GAME ANIMALS.
+
+         01.      Mountain cottontail.                                                                  (7-1-24)
+
+         02.      Pygmy rabbit.                                                                         (7-1-24)
+
+         03.      Snowshoe hare.                                                                        (7-1-24)
+
+         04.      North American red squirrel.                                                          (7-1-24)
+
+201.    PREDATORY WILDLIFE.
+Predatory wildlife are defined in Section 36-201, Idaho Code.                                       (7-1-24)
+
+202. – 249.       (RESERVED)
+
+250.    UNPROTECTED WILDLIFE.
+Unprotected Wildlife includes all wildlife not classified in the preceding categories.              (7-1-24)
+
+
+==== Idaho Code § 25-3701 (legislature.idaho.gov/statutesrules/idstat/title25/t25ch37/sect25-3701/) ====
+25-3701. Domestic cervidae farming deemed agricultural pursuit. It shall be lawful for any person, association or corporation to breed, own or control domestic cervidae, which are defined as fallow deer (dama dama), elk (cervus elaphus) or reindeer (rangifer tarandus), but shall not include red deer (urasian cervidae) or any subspecies or hybrids thereof, and hold such animal in captivity for breeding or other useful purposes on domestic cervidae farms or ranches, provided the premises have been registered with the division of animal industries. For the purposes of all classification and administration of the laws of the state of Idaho, and all administrative orders and rules pertaining thereto, the breeding, raising, producing, harvesting or marketing of such animals or their products by the producer or his agent shall be deemed an agricultural pursuit; such animals shall be deemed livestock and their products shall be deemed agricultural products; the persons engaged in such agricultural pursuits shall be deemed farmers, cervidae farmers, cervidae breeders or cervidae ranchers; the premises within which such pursuit is conducted shall be deemed farms, cervidae farms, or cervidae ranches.

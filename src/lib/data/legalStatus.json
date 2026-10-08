@@ -1809,6 +1809,11 @@
       "title": "K.A.R. 115-20-4, Possession of certain wildlife",
       "url": "https://www.law.cornell.edu/regulations/kansas/K-A-R-115-20-4",
       "note": "A possession permit for exactly four animals, the mountain lion, the wolf (Canis lupus), the black bear and the grizzly, which \"Any individual may apply\" for with proof of purchase and the purpose of possession, subject to all local ordinances. Zoos, vets, schools, circuses and possession of five days or less are exempt. For the cats and bears it sits under K.S.A. 32-1302(c), which since 1 July 2006 bars anyone but a qualifying USDA licensee from taking possession of a dangerous regulated animal."
+    },
+    "oh-935-02": {
+      "title": "Ohio Rev. Code §§ 935.02 to 935.101, Dangerous Wild Animals and Restricted Snakes: possession, registration and permits",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-935.02",
+      "note": "The operative half of Chapter 935. § 935.02(A) bars possessing a dangerous wild animal on or after 1 January 2014 and (B)(1) bars acquiring one after the chapter took effect; the wildlife shelter and propagation permits at §§ 935.05 and 935.07 are open only to someone who possessed a registered animal on 1 October 2013. § 935.041 sends four marmosets, squirrel monkeys, four capuchins and lemurs to registration with the director of agriculture. The restricted snake permits at §§ 935.08 and 935.10 remain open to a snake acquired after 1 January 2014, within 120 days of acquiring it."
     }
   },
   "animals": {
@@ -30031,6 +30036,499 @@
         }
       },
       "article": "/blog/wolfdog-legal-guide/"
+    },
+    "capuchin": {
+      "name": "Capuchin monkey",
+      "scientific": "Cebus and Sapajus spp.",
+      "jurisdictions": {
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(A)",
+          "quote": "Order Primates-Monkeys, Apes: All species (W), except humans in the Family Hominidae are not restricted.",
+          "note": "Every nonhuman primate is restricted, marked (W) for welfare, so capuchins of both genera are covered without being named. No California permit type covers pet keeping: the only possession permit, Animal Care, requires lawful possession in California before January 1992, so no route is open to a new keeper.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-391-4-8-05",
+          "cite": "R. 391-4-8-.05(1)(a)15; O.C.G.A. § 27-5-4(b)(1), (2)",
+          "quote": "The department shall issue a wild animal permit only for an animal in the genus Cebus (capuchin monkeys) to any person who establishes to the satisfaction of the department that: (A) Such person has a permanent disability or disease which interferes with the person's ability to perform one or more routine daily living activities;",
+          "note": "Every primate needs a wild animal license or permit, and § 27-5-4(b)(1) issues licenses only to dealers and exhibitors. Georgia writes one route for this animal and it is not a pet route: a free permit for a capuchin trained to assist a person with a permanent disability, furnished by a nonprofit with ten years' record of placing assistance animals, kept only in the permittee's residence and the only wild animal that person holds. The statute names the genus Cebus; the tufted capuchins now placed in Sapajus were split from it in 2012, after the statute was written. DNR's pet guide lists \"Primates (monkeys, apes, etc.); all species\" among exotics that may not be held as pets.",
+          "verifiedOn": "2026-10-01"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-rule",
+          "cite": "HAR § 4-71-6.5(b)(3); § 4-71-2; Restricted List Part B",
+          "quote": "except that animals in the order Primates shall not be allowed for import or possession for private or commercial use other than for purposes described in subsection (b)(2) or for primate sanctuaries, as determined by the board.",
+          "note": "Part B of the restricted list names \"Cebidae (all species in family)\", the New World monkeys, which takes in both capuchin genera. Part B normally allows private and commercial use, but the rule withholds that use from every primate, leaving only the Part A purposes (research, government zoos and approved institutions) and nonprofit primate sanctuaries. § 4-71-2 also defines private use so that it \"does not include individual possession of an animal as a pet\". No pet route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "PA": {
+          "status": "banned",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)(7), (d)",
+          "quote": "(7) The order Primates. All families of nonhuman primates.",
+          "note": "Every nonhuman primate is on the Game Commission's prohibited list. The import and transfer permits in § 137.1(d) and (e) go only to menagerie, exotic wildlife, dealer and propagation permittees, and primates are not among the animals 34 Pa.C.S. § 2961 names as exotic wildlife, so the exotic wildlife possession permit does not reach them either. Zoos and circuses are exempt; a pet keeper is not.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following",
+          "note": "The District allows seven categories of household pet: dogs, cats, domesticated rodents and rabbits, captive-bred cage birds, non-venomous snakes, fish and turtles, ferrets and racing pigeons. No primate fits any of them, and the section has no permit. Only public zoos, federally licensed exhibitors and rehabilitators or vets holding an animal for treatment are outside it.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "§ 161.01(b)(8)",
+          "quote": "All non-human primates, including, but not limited to, monkey, ape, chimpanzee, gorilla and lemur.",
+          "note": "Every nonhuman primate is prohibited by name of the order, and monkeys are the first example given. The Code's only exceptions are the Parks Department and Wildlife Conservation Society zoos, labs, veterinary facilities and permitted temporary exhibits, so there is no pet route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NJ": {
+          "status": "banned",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.8(a); 7:25-4.9(a)3",
+          "quote": "The potentially dangerous species shall not be kept as a pet, for hobby purposes or in situations, which, in the judgment of the Department, could adversely affect the health of the animal or which could constitute a hazard to the public.",
+          "note": "\"Cebidae--New World Monkeys\" is the first entry on the potentially dangerous species table, which takes in both capuchin genera. A permit for a potentially dangerous species can issue only on a clear showing of the 4.9 criteria, and 4.9(a)3 rules out a pet or hobby animal, so the only routes are institutional.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "ME": {
+          "status": "banned",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.18(2)(F); § 7.06(3)(A)(2)(a)",
+          "quote": "Order Primates All Species in Order Primates (Primates) ... An applicant for a permit pertaining to Category 1 Restricted Species must be an exhibitor, wildlife rehabilitator; laboratory registered with the United States Department of Agriculture, or accredited research facility.",
+          "note": "Maine puts the whole primate order in Category 1. Category 1 permits go only to exhibitors, rehabilitators, USDA-registered laboratories and accredited research facilities, so there is no pet route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.01(9), 169.11(1)(a)",
+          "quote": "A person is exempt from holding a license or other approval as required under this chapter to possess live nonnative wild animals that are not endangered or threatened species, except for any of the following:",
+          "note": "Wisconsin frees every nonnative wild animal from captive wildlife licensing unless it is a harmful wild animal or an endangered or threatened species, and § 169.01(9) limits that last term to species indigenous to the United States or Canada. No primate is a harmful wild animal; § 169.11(1)(a) has the department designate cougars, bears and wild or feral swine. So a capuchin needs no state license. Local ordinances can be stricter and were not checked.",
+          "verifiedOn": "2026-10-01"
+        },
+        "FL": {
+          "status": "permit",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.002(1)(c); 68A-6.003(8)",
+          "quote": "Class III: All other wildlife not listed herein, except those for which a permit is not required pursuant to Rule 68A-6.003, F.A.C.",
+          "note": "Florida writes its primate classes genus by genus. Class I takes the great apes, gibbons, baboons and drills; Class II takes howlers, uakaris, mangabeys, guenons, patas, vervets, sakis, colobus, indris, macaques and langurs. Neither capuchin genus is on neither list, so it falls to Class III and a Permit to Possess Class III Wildlife for Personal Use, which costs nothing. Primates have their own caging standard at 68A-6.0121.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL §§ 11-0103(6)(e)(1), 11-0512(1)(a), (2)(j); 6 NYCRR § 180.1(b)(9)",
+          "quote": "Wild animal includes, and is limited to, any or all of the following orders and families: (1) Nonhuman primates and prosimians,",
+          "note": "Every nonhuman primate is a wild animal that may not be kept as a pet, and 180.1(b)(9) lists them again as dangerous animals. One exemption is written for this kind of animal: § 11-0512(2)(j) covers a person paralyzed from the neck down who has a New World monkey trained to assist them by a 501(c) organization dedicated to people with that disability. That is an assistance-animal carve out, not a pet route. The exemptions in § 11-0512(2) are zoos, licensed exhibitors and research facilities, vets, shelters, universities, rehabilitators, sanctuaries and travelers, all holding the animal for a purpose other than a pet, and 6 NYCRR 180.1(c) issues dangerous animal licenses only for scientific, educational, exhibition, zoological or propagation purposes.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(3)(B)(iii), (b)(3)",
+          "quote": "(iii) A member within the order Primate (including, but not limited to, capuchin, macaque, lemur and marmoset),",
+          "note": "Connecticut names the capuchin first among the primate examples in Category Two. Subsection (b)(3) allows a Category Two animal only to a treating vet, municipal parks, zoos, aquaria, nature centers, museums, exhibitors, laboratories and research facilities, so there is no private route.",
+          "grandfathered": {
+            "before": "2003-10-01",
+            "detail": "A primate weighing less than 35 pounds at maturity and legally possessed in Connecticut on or before 1 October 2003 may be kept by that person if registered with the department under § 26-55-6(c), with no breeding or release."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(1), (12)(a)",
+          "quote": "The purpose of 321 CMR 9.01 is to list those species which are exempt from the licensing provisions of M.G.L. c. 131, § 23, and which may be imported, possessed, maintained, propagated, bought, sold, exchanged or offered for sale without a license or permit from the Division. Species not listed, or which are expressly listed as \"require(s) a permit\", are not exempt from the provisions of M.G.L. c. 131, § 23.",
+          "note": "The thirteen-entry mammal exemption list has no primate, so in this closed-list state it needs a § 23 license; MassWildlife's own summary says \"You cannot have in your possession any mammal not listed as legal or domestic.\" The license under § 23 exists on paper, but MassWildlife says permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\"",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-w0-008",
+          "cite": "Chapter W-0, § 008(B)(19)",
+          "quote": "19. All species and hybrids of non-human primates, except as authorized by §35-80-108 C.R.S.",
+          "note": "Colorado puts every nonhuman primate on its prohibited list. The exception points to a section of the Pet Animal Care Facilities Act, C.R.S. 35-80-108, which was not read; nothing in the wildlife rules offers a keeper's route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AZ": {
+          "status": "restricted",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(F)(8)",
+          "quote": "8. All nonhuman primates. Common names include: chimpanzees, gorillas, macaques, orangutans, and spider monkeys.",
+          "note": "Every nonhuman primate is restricted live wildlife. Restricted live wildlife may be held only under a special license listed in R12-4-409(A) or a listed exemption, and none of the R12-4-407 exemptions is a pet route.",
+          "verifiedOn": "2026-10-08"
+        },
+        "OR": {
+          "status": "banned",
+          "sourceId": "or-609-305",
+          "cite": "ORS 609.305(2); ORS 609.341(1); ORS 609.351(1)",
+          "quote": "(2) Any nonhuman primate;",
+          "note": "Every nonhuman primate is an exotic animal. ORS 609.341(1) bars keeping an exotic animal without a Department of Agriculture permit issued before 1 January 2010 or under ORS 609.351, whose application window closed 90 days after that date and never reopened, so there is no route for a new animal. Oregon cities and counties may prohibit exotic animals by ordinance as well.",
+          "grandfathered": {
+            "before": "2010-01-01",
+            "detail": "A State Department of Agriculture permit issued before 1 January 2010, or issued within a year of that date on proof the animal was already held. Applications closed 90 days after 1 January 2010, breeding a permitted animal is barred, and possession ends 30 days after a permit lapses."
+          },
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "WA": {
+          "status": "banned",
+          "sourceId": "wa-rcw-16-30",
+          "cite": "RCW 16.30.010(2)(a)(iii); RCW 16.30.030",
+          "quote": "(iii) Order primates, all nonhuman primate species;",
+          "note": "Every nonhuman primate is a potentially dangerous wild animal. RCW 16.30.030(1) bars owning, possessing, keeping or bringing one into the state, and (2) bars breeding; the exemptions in 16.30.020 are for accredited zoos, sanctuaries, research facilities, circuses, shelters, vets, rehabilitators and fairs.",
+          "grandfathered": {
+            "before": "2007-07-22",
+            "detail": "A person in legal possession before 22 July 2007 may keep the animal for the rest of its life, with veterinary records or acquisition papers proving the date, but may not breed it."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "OH": {
+          "status": "unclear",
+          "sourceId": "oh-935-02",
+          "cite": "R.C. 935.01(C)(19); 935.041(C); 935.02",
+          "quote": "A person that possesses any of the following animals shall register the animal in the same manner as provided in section 935.04 of the Revised Code: (A) Pygmy, white-tufted-ear, silvery, and black-pencilled marmosets; (B) Squirrel monkeys; (C) Brown, white-faced, weeping, and white-fronted capuchins; (D) Lemurs.",
+          "note": "Ohio's statute points two ways. R.C. 935.01(C)(19) makes a dangerous wild animal of \"Nonhuman primates other than lemurs and the nonhuman primates specified in division (C)(20)\", which on its words takes in every capuchin, and dangerous wild animals cannot be newly acquired. But § 935.041, enacted in the same bill, singles out four capuchins, the brown, white-faced, weeping and white-fronted, with the lemurs for registration with the director of agriculture, which only makes sense if they are not dangerous wild animals. If 935.041 governs, a registered animal is lawful; if (C)(19) governs, it is barred unless it was registered in 2012. Recorded unclear because the two sections cannot both be read at full strength.",
+          "verifiedOn": "2026-10-08"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101",
+          "cite": "Health & Safety Code § 822.101(4)(P) to (S)",
+          "quote": "(P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla;",
+          "note": "The only primates on Texas's dangerous wild animal list are the baboon, chimpanzee, orangutan and gorilla, so a capuchin needs no state certificate, and nothing in the Parks and Wildlife Code reaches a nonnative primate. Local ordinances were not checked, and they are where a primate is most likely to be regulated in Texas.",
+          "verifiedOn": "2026-10-01"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-large-carnivore",
+          "cite": "MCL 287.1102(f); NREPA Part 427; MCL 287.731",
+          "quote": "(f) \"Large carnivore\" means any of the following cats of the Felidae family, whether wild or captive bred, including a hybrid cross with such a cat: a lion, a leopard (including a snow leopard or clouded leopard), a jaguar, a tiger, a cougar, a panther, or a cheetah; or a bear of a species that is native or nonnative to Michigan, whether wild or captive bred.",
+          "note": "Michigan has no state rule on primates in what was read here: the Large Carnivore Act names cats and bears, the Permit to Hold Game in Captivity lists native game, and the Animal Industry Act asks only for a certificate of veterinary inspection to import an exotic animal. NREPA Part 413's prohibited and restricted species list could not be read from this container, so that is the open check. Local ordinances may be stricter.",
+          "verifiedOn": "2026-10-01"
+        },
+        "IL": {
+          "status": "banned",
+          "sourceId": "il-720-48-10",
+          "cite": "720 ILCS 5/48-10(a), (b), (c)(1)",
+          "quote": "No person shall have a right of property in, keep, harbor, care for, act as custodian of or maintain in his or her possession any dangerous animal or primate except at a properly maintained zoological park, federally licensed exhibit, circus, college or university, scientific institution, research laboratory, veterinary hospital, hound running area, or animal refuge in an escape-proof enclosure.",
+          "note": "Illinois defines a primate as any nonhuman member of the order, \"including but not limited to ... monkey\", and bars keeping one. The exceptions are zoos, licensed exhibits, circuses, colleges, research and veterinary bodies and refuges, not homes.",
+          "grandfathered": {
+            "before": "2011-01-01",
+            "detail": "A person in lawful possession of a primate before 1 January 2011 may keep it if they registered it with the local animal control administrator by 1 April 2011, and must report moves, deaths, escapes and bites."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MN": {
+          "status": "banned",
+          "sourceId": "mn-346-155",
+          "cite": "§ 346.155, subd. 1(e)(3); subd. 2(a), (c)",
+          "quote": "(a) Except as provided in this section, it is unlawful for a person to possess a regulated animal. ... (c) Except as provided in paragraph (e), a person must not take possession of a regulated animal after January 1, 2005.",
+          "note": "Every nonhuman primate is a regulated animal, monkeys named. Paragraph (e) lets only a USDA licensee in compliance on 1 January 2005 acquire new animals, to keep up its operating inventory, and subdivision 7 exempts institutions accredited by the American Zoo and Aquarium Association, among others.",
+          "grandfathered": {
+            "before": "2005-01-01",
+            "detail": "A person who possessed the animal on 1 January 2005 and registered it with the local animal control authority within 60 days may keep it under the subdivision 4 requirements, and a registrant without a USDA license may replace it once if it dies."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(m), (4)",
+          "quote": "Except as otherwise provided in subsection 4 and NAC 503.500 to 503.535, inclusive, the following animals may be possessed, transported, imported and exported without a permit or license issued by the Department: ... (m)Monkeys and other primates;",
+          "note": "Nevada names monkeys and other primates on its list of animals that need no permit at all. NAC 503.140(4) preserves county and city ordinances, so check the municipality as well.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "4VAC15-30-40(A); 4VAC15-20-50",
+          "quote": "A special permit is required and may be issued by the department, if consistent with the department's fish and wildlife management program, to import, possess, or sell those nonnative (exotic) animals listed in the following table",
+          "note": "Virginia's exotic permit table lists pigs, deer, the carnivore families, bats, five lagomorphs, African rodents and a handful of named North American rodents and shrews among mammals, and no primate. A capuchin is a nonnative animal outside the table, so the state does not restrict it. Local ordinances were not checked.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MD": {
+          "status": "banned",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1)(vii); (a)(3)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: ... (vii) nonhuman primate, including a lemur, monkey, chimpanzee, gorilla, orangutan, marmoset, loris, or tamarin;",
+          "note": "Maryland names monkeys in its primate clause. One exception reaches this kind of animal: § 10-621(a)(3) lets a person whose disability severely limits mobility keep an animal trained to perform tasks for them by a 501(c) organization, which is the assistance capuchin. That is not a pet route. The exemptions run to research facilities, licensed exhibitors, DNR licensees, sanctuaries, vets and circuses, and a licensed exhibitor may acquire a primate or big cat only with $1,000,000 of insurance, paid full-time staff and a disposition policy. Subsection (e) preserves stricter county and municipal rules.",
+          "grandfathered": {
+            "before": "2006-05-31",
+            "detail": "Lawful possession on or before 31 May 2006 may continue, but only if the keeper gave written notification to the local animal control authority by 1 August 2006, with the number and type of animals and a photograph or a description of a tattoo or microchip. That window is long closed."
+          },
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Primate (non-human) | Cebidae all species | Monkeys | IV | Federally Endangered",
+          "note": "The Director's list puts the whole family Cebidae in Group IV, which takes in both capuchin genera, and a separate row puts all non-human primates there too. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. 19.35.7 NMAC is an importation rule, so it governs bringing the animal into New Mexico rather than keeping one already here.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "Vermont's Unrestricted list carries only late-generation cat hybrids, two gliders, a run of pet rodents and the African pygmy hedgehog among mammals, and the Domestic list's mammals are livestock, two deer, the dog, the cat, the ferret and the rabbit. A capuchin is on none of the three lists, and Vermont treats that absence as a restriction. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "UT": {
+          "status": "banned",
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1, prohibited mammals; R657-3b",
+          "quote": "Prohibited mammals ... known detrimental impacts to native wildlife populations, human health and safety, or agriculture. Personal possession will not be authorized. ... Primates order Primates all non-human species",
+          "note": "Utah puts every nonhuman primate on its prohibited mammal list, under a heading that says personal possession will not be authorized.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, 7.1.1, with Del. Code tit. 3 § 7201",
+          "quote": "When an exotic is kept as a pet, the owner or custodian of the exotic must apply to the Department for an Individual Permit on a form supplied by the Department.",
+          "note": "Delaware defines a primate as a mammal of the highest order \"including monkeys and lemurs\", makes primates a class of exotic, and exempts none, so a capuchin needs an Individual Permit, which the regulation writes for an exotic \"kept as a pet\". The Individual Permit is issued per animal for three years, after the Department is satisfied the animal will be held in a sturdy, escape-proof primary enclosure inside a secondary enclosure that keeps the public out, and a background check may be run. Delaware's only outright refusals at 4.7 are the gila monster, the beaded lizard and the komodo dragon. County and municipal ordinances were not checked.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "Tenn. Code Ann. § 70-4-403(3)(M)",
+          "quote": "(3) Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... (M) Primates not otherwise listed;",
+          "note": "Tennessee's Class I primates are the great apes, gibbons, siamangs, mandrills, drills and baboons, and Class III names \"Primates not otherwise listed\", which needs no wildlife permit. The commission's rule chapter adds no primate to Class I. Local ordinances were not checked.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NC": {
+          "status": "legal",
+          "sourceId": "nc-153a-131",
+          "cite": "§ 153A-131",
+          "quote": "A county may by ordinance regulate, restrict, or prohibit the possession or harboring of animals which are dangerous to persons or property.",
+          "note": "No statewide North Carolina rule names a primate. § 153A-131 hands the question to counties, several of which have used it, so the local ordinance decides most cases.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "AR": {
+          "status": "permit",
+          "sourceId": "ar-unrestricted",
+          "cite": "Code Addendum R1.02; Code 09.02(H); Ark. Code Ann. §§ 20-19-602, 20-19-605",
+          "quote": "A. Permits for breeding, sale, and importation may be issued for the following species in accordance with Codes 09.07 (Wildlife Breeder/ Dealer Permit Required) and 09.10 (Wildlife Importation Permit Required): ... 3. Mammals ... Capuchin Monkeys (Subfamily Cebinae)",
+          "note": "Named on the permit list. Code 09.02(H) adds that a primate may be possessed only in compliance with Ark. Code Ann. §§ 20-19-601 to 20-19-610, which bar only apes, baboons and macaques, so the capuchin stays lawful. The owner must register it with the county sheriff within 30 days of acquiring it under § 20-19-605(a)(1)(B), may not tether it outdoors or let the public touch it under § 20-19-602, and must meet USDA caging standards under § 20-19-606. A non-native animal on the permit list may be kept if it came from a Commission-permitted Wildlife Breeder/Dealer or in on a Wildlife Importation Permit, with acquisition records, a veterinary disease certificate and sexes housed apart unless neutered, under Code 09.02. Code 09.07 Exception I leaves primates out of the private resale allowance. § 20-19-609 lets cities and counties go further.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "ID": {
+          "status": "permit",
+          "sourceId": "id-020427",
+          "cite": "IDAPA 02.04.27.407.01; IDAPA 13.01.10.200.01, .02",
+          "quote": "All non-human primates must be possessed on a facility that is AZA accredited. The following primate species are exempt from this rule: 01. Capuchin (Cebus spp). 02. Marmoset (Saimiri spp). 03. Spider Monkeys (Atleles spp). 04. Squirrel Monkeys (Callithrix, Cebuella, Callibella, and Mico spp).",
+          "note": "The capuchin is one of four primate entries exempt from the Department of Agriculture's AZA-only rule. The entry names Cebus only, so the robust capuchins now placed in Sapajus are covered only on the older usage. Idaho Code § 36-202(g) defines wildlife as animal life \"native or exotic, generally living in a state of nature\", and the conventional pets list in 13.01.10.010.06 has no primate, so Fish and Game's captive possession license under 13.01.10.200.01 is still required, and 200.02 adds compliance with city and county ordinances.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "IA": {
+          "status": "banned",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(7); §§ 717F.3, 717F.4",
+          "quote": "A member of the order of primates other than humans, and including the following families: callitrichiadae, cebidae, cercopithecidae, cheirogaleidae, daubentoniidae, galagonidae, hominidae, hylobatidae, indridae, lemuridae, loridae, megaladapidae, or tarsiidae. A member includes but is not limited to marmosets, tamarins, monkeys, lemurs, galagos, bushbabies, great apes, gibbons, lesser apes, indris, sifakas, and tarsiers.",
+          "note": "Every nonhuman primate is a dangerous wild animal in Iowa, and the capuchins belong to cebidae, one of the families the definition names. § 717F.3 bars owning, possessing, breeding or bringing one into the state, and the only private route was the § 717F.4 registration of animals already held on 1 July 2007.",
+          "grandfathered": {
+            "before": "2007-07-01",
+            "detail": "An owner in possession on 1 July 2007 could keep the animal after implanting an electronic identification device within sixty days and registering with the department by 31 December 2007. No new route exists."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "KY": {
+          "status": "banned",
+          "sourceId": "ky-301-2-082",
+          "cite": "301 KAR 2:082 §§ 4(2)(q), 5, 6(3)",
+          "quote": "(2) Except as established in Sections 5 and 6 of this administrative regulation, a person shall not import, transport, or possess the following inherently dangerous exotic wildlife: ... (q) Primates, nonhuman (Order Primates);",
+          "note": "Every nonhuman primate is an inherently dangerous exotic, so the capuchin is barred. The only routes left are an AZA-accredited facility and the commissioner's exemption in § 5, which is open to municipal zoos, colleges, circuses and earlier exempted facilities, not private keepers.",
+          "grandfathered": {
+            "before": "2005-07-13",
+            "detail": "A person who legally possessed the animal before 13 July 2005 may keep it for its life with veterinary records, acquisition papers or other proof, but may not replace it, breed it or transfer it."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "RI": {
+          "status": "banned",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.7(B)",
+          "quote": "B. Possession of Non-Human Primates. All exotic wild animals of the order Primates are expressly prohibited from importation or ownership without the issuance of a valid permit by the Department. Possession is restricted to bona fide researchers, USDA licensed exhibitors authorized to possess animals of this order for short-term exhibition purposes and AZA certified facilities.",
+          "note": "Every exotic primate falls under § 3.7(B), so a permit for a capuchin exists only for researchers, short-term USDA exhibitors and AZA facilities. § 3.9(A) opens permits to private persons only where § 3.7 does not expressly prohibit the animal.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.05(b), Table 800.2",
+          "quote": "(b) A permit shall be issued only to a person in the permittee category(ies), as defined in Fis 802.01, and cited in Table 800.2 as follows: ... 5 Primates to include: ... Capuchin Cebus spp",
+          "note": "The primate row names capuchins by genus Cebus. Table 800.2 marks it for permittee category 5 only, and category 5 is exhibitors, so no permit can issue to an individual (category 1).",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MO": {
+          "status": "permit",
+          "sourceId": "mo-578-023",
+          "cite": "RSMo § 578.023(1); 3 CSR 10-9.110(2)",
+          "quote": "if he or she keeps any lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, Canada lynx, bobcat, jaguarundi, hyena, wolf, bear, nonhuman primate, coyote, any deadly, dangerous, or poisonous reptile, or any deadly or dangerous reptile over eight feet long",
+          "note": "\"Nonhuman primate\" is on Missouri's dangerous wild animal list, which does not ban it but makes it an offense to keep one without registering it with the local law enforcement agency in the county where it is kept. As a non-native mammal the capuchin needs no Wildlife Code permit under 3 CSR 10-9.110(2), and the 4.117 prohibited species list has no primate.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-3(a), (b), (d); K.S.A. 32-1301(d)",
+          "quote": "(a) Subject to federal or state law or rules and regulations, exotic wildlife species may be imported, possessed, sold, offered for sale or purchased, provided the exotic wildlife was legally captured, raised, exported, possessed, sold or purchased or any combination of these activities in its place of origin. (b) Exotic wildlife may be possessed without limit in time and number.",
+          "note": "Not native to Kansas, so exotic wildlife under 115-20-3(d), which may be possessed without limit in time and number if legally obtained where it came from. No primate is a dangerous regulated animal under K.S.A. 32-1301, and the 115-18-10 prohibited list has none.",
+          "verifiedOn": "2026-10-01"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-47-2",
+          "cite": "§ 47-2-10(2)(c); § 50-16-20(A)",
+          "quote": "(c) Family Hominidae ... all great apes; to include all species of chimpanzees, gorillas, and orangutans.",
+          "note": "South Carolina's 2018 ban reaches primates only through the great apes, and the capuchin is not one. It is not among the animals § 50-16-20(A) requires an import permit for either, so no state rule reaches it. A city or county may have its own.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MT": {
+          "status": "banned",
+          "sourceId": "mt-arm-12-6-22",
+          "cite": "ARM 12.6.2215(4)(g); MCA § 87-5-705(1)",
+          "quote": "(4) The following mammals are classified as prohibited species: ... (g) Cebidae family (new world primates);",
+          "note": "Capuchins belong to Cebidae, which Montana lists as a prohibited family, so no permit route exists for a private keeper.",
+          "verifiedOn": "2026-10-01"
+        },
+        "WV": {
+          "status": "banned",
+          "sourceId": "wv-19-34",
+          "cite": "W. Va. Code § 19-34-4; W. Va. C.S.R. § 74-1-3.1.o",
+          "quote": "3.1.o. Nonhuman primates, excluding: 3.1.o.1. Lemurs; 3.1.o.2. Golden lion, black faced lion, golden-rumped lion, cotton top, emperor, saddlebacked, blackmantled, and Geoffroys tamarins;",
+          "note": "Every nonhuman primate is on the Dangerous Wild Animal list unless one of eleven exclusions names it, and none names a capuchin. § 19-34-4(a) bars possessing a listed animal, and the only permit in § 19-34-4(b) is for someone who already lawfully had it before the rules took effect, with § 19-34-6(b)(1) barring breeding, receiving or replacing one.",
+          "grandfathered": {
+            "before": "2022-04-05",
+            "detail": "Lawfully possessed before the board's rules took effect, then permitted by the board, with no breeding, acquiring or replacing."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "AK": {
+          "status": "banned",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(a), (c); AS 16.05.940(19)",
+          "quote": "The department may not issue a permit for the capture, possession, import, or export of any game animal, including a hybrid of a game animal and a species listed in (b) of this section, for use as a pet",
+          "note": "A mammal, so game under AS 16.05.940(19). Absent from the clean list in § 92.029(b), and subsection (c) closes the permit route for anything kept as a pet. The only primate exception was for chimpanzees already held as pets before 31 January 2010.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "SD": {
+          "status": "permit",
+          "sourceId": "sd-12-68-18",
+          "cite": "ARSD 12:68:18:03(5); 12:68:18:03.03(4)",
+          "quote": "a permit as described in § 12:68:18:03.03 is required to possess in South Dakota any nondomestic mammal, or any of its hybrids, listed in this section: ... (5) Of the order Primates.",
+          "note": "The whole order Primates is on the possession permit list, so a capuchin needs the board's permit. A possession permit under 12:68:18:03.03(4) costs ten dollars an animal, to a maximum of one hundred, and the board must find the facilities adequate. The rule writes no pet exclusion, and the only outright prohibition in the chapter is the raccoon dog.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-26",
+          "cite": "r. 220-2-.26(1)",
+          "quote": "(1) No person, firm, corporation, partnership, or association shall possess, sell, offer for sale, import, bring, release, or cause to be brought or imported into the State of Alabama any of the following live fish or animals:",
+          "note": "Alabama's restricted list names fish, snails, venomous reptiles, the federal injurious list, tegus, mongooses, wild rabbits and a set of native game species from out of state, and no primate. No other Alabama rule read here reaches a capuchin. A city or county may have its own rule.",
+          "verifiedOn": "2026-10-01"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-1(a); 9-11-6, 9-11-7, 9-11-8",
+          "quote": "(a) Except as provided in IC 14-22-26-2 or as exempted under subsections (d) and (e), a person must have a permit issued by the department under this rule to possess a wild animal if the wild animal is either of the following: (1) Referenced in this rule. (2) Listed in this article as an endangered species or a threatened species.",
+          "note": "Indiana's wild animal possession permit reaches only animals the rule references or that the article lists as endangered or threatened. The three class lists name squirrels, rabbits, furbearers, small and large wild cats, wolves, bears, venomous reptiles and big crocodilians, and no primate, so no state permit is needed for a capuchin.",
+          "verifiedOn": "2026-10-01"
+        },
+        "ND": {
+          "status": "permit",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(3)(b)(6); 48.1-09-01-03(1), (2); NDCC 36-01-08.4",
+          "quote": "b. Category 3 species of nontraditional livestock includes the following species and their hybrids: ... (2) Big cats, including mountain lion, jaguar, leopard, lion, tiger, and cheetah. (3) Bears. (4) Wolves. (5) Venomous reptiles and nonvenomous injurious reptiles. (6) Primates.",
+          "note": "Primates are category 3 nontraditional livestock, so a capuchin needs a license. The owner must hold a nontraditional livestock license from the Board of Animal Health before acquiring one, and the board must inspect and approve the premises first, under 48.1-09-01-03(1) and (2)(b). The annual fee is fifteen dollars under NDCC 36-01-08.1. NDCC 36-01-08.4 also directs the board to adopt rules on keeping primates.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "WY": {
+          "status": "banned",
+          "sourceId": "wy-ch10",
+          "cite": "Ch. 10 § 11(b)(iv)",
+          "quote": "(b) In addition, a permit shall not be issued for importation or possession of the following live warm-blooded wildlife in Wyoming, except as otherwise specified in this regulation. ... (iv) All members of the order nonhuman primates;",
+          "note": "Every nonhuman primate is on the list for which a permit \"shall not be issued\", so a capuchin has no route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "Rule 8.3(A)(5)(a)",
+          "quote": "5. The following wild animals are classified as animals inherently dangerous to humans: a. Order Primates: i. Family Pongidae (includes gibbons, orangutans, chimpanzees, siamangs, and gorillas) - all species; ii. Family Cercopithecidae: Genus Macaca (macaques) - all species; Genus Papio (mandrills, drills, and baboons) - all species; Genus Theropithecus (gelada baboon);",
+          "note": "Mississippi's inherently dangerous list takes in only the apes, macaques, baboons and the gelada among primates, so a capuchin needs no permit, and no other Mississippi rule read here reaches it. A city or county may have its own rule.",
+          "verifiedOn": "2026-10-01"
+        },
+        "LA": {
+          "status": "banned",
+          "sourceId": "la-76-v-115",
+          "cite": "LAC 76:V.115.C.1.g, C.2",
+          "quote": "C.1.Except as provided herein, it shall be unlawful to import into, possess, purchase or sell within the state of Louisiana, by any means whatsoever including but not limited to transactions conducted via the internet, any of the following species or its subspecies of live wild quadrupeds, big exotic cats, or non-human primates, domesticated or otherwise (hereinafter \"listed animals\"): ... g.all non-human primates;",
+          "note": "Every nonhuman primate is a listed animal, so importing, possessing, buying or selling a capuchin is barred, \"domesticated or otherwise\". Holders of a potentially dangerous wild quadruped permit valid when the rule took effect were grandfathered but may not acquire more, \"including breeding\", the black bear's position.",
+          "grandfathered": {
+            "before": "1995-12-20",
+            "detail": "A potentially dangerous wild quadruped permit valid on the rule's effective date, renewed annually until the animal dies or leaves; no new animals. The rule was first published in the Louisiana Register in December 1995 (LR 21:1356); the exact effective day was not read."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(a)(37); 29 O.S. § 7-502(A)(2), (B)(4)",
+          "quote": "(a) The following wildlife species are exempt from import and export permits, commercial wildlife breeders licenses, noncommercial wildlife breeders licenses and commercial hunting area license requirements. ... (37) Primates.",
+          "note": "\"Primates\" is the last entry on Oklahoma's exemption list, so a capuchin needs no import permit or breeder's license.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NE": {
+          "status": "banned",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 8 § 001.08A, A1; Neb. Rev. Stat. § 37-246",
+          "quote": "001.08A Importation: the following wildlife may be imported: Alpaca ... Chinchilla, Chinchilla spp. ... Coatimundi ... Degu, Octodon spp. ... Fox, Vulpes spp. ... Genet ... Gerbil, Gerbillus spp. ... Guinea pig, Cavia porcellus ... Eurasian Hedgehogs, Erinaceus spp. ... Jerboa, greater ... Sugar Glider(s), Petaurus spp. ... Wallabies ... All Ratites, All Waterfowl, All Peafowl, All Game Birds, All Cage and Aviary Birds",
+          "note": "A capuchin is not native, so it is not a wild mammal and the Captive Wildlife Permit scheme never reaches it, but Nebraska's importation list is closed and names no primate, so there is no lawful way to bring one into the state except to an accredited or public zoo under § 001.08A1, the kinkajou's position.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        }
+      },
+      "article": "/blog/capuchin-legal-guide/"
     }
   }
 }

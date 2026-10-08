@@ -657,6 +657,30 @@ turned up on its way through.
   rabbits" with no permit available, and 17 Ill. Adm. Code 805.20(a) listing the genus
   Oryctolagus as injurious. Neither writes an express exception for domestic stock. The note
   sets out why both read as aimed at wild-type animals; it is the thinnest Illinois answer.
+- **Ohio's dangerous wild animal cells read as open permits, and the statute closed them in 2014.**
+  The serval, black bear and Canada lynx cells for Ohio record `permit` with permitFor "personal" on
+  R.C. 935.01. The operative sections were not on file and are now (`OH-oh-935-02-to-10.txt`):
+  § 935.02(A) "No person shall possess a dangerous wild animal on or after January 1, 2014", (B)(1)
+  bars acquiring one after the chapter took effect, and the wildlife shelter permit at § 935.05(A) is
+  open only to "A person that possesses a registered dangerous wild animal in this state on October 1,
+  2013". On that text all three are `banned` with a 2012 registration grandfather, the shape the tiger
+  and lion rows now carry. The bobcat cell is answered by the § 1533.71 fur-bearer license and only
+  mentions Chapter 935, so it may stand.
+- **Hawaii's Part B permit is not a pet permit, which puts the red-eared slider cell in question.**
+  The slider records `permit` with permitFor "personal" on Restricted List Part B. HAR § 4-71-2, in
+  `HI-hi-4-71-rule.txt`, defines the private use that Part B allows: "'Private use' means use for
+  non-commercial purposes, such as non-profit research, and does not include individual possession of
+  an animal as a pet." Read with § 4-71-6.5(b)(3), a Part B animal can come in for a business, zoo or
+  research body but not for a keeper, which is how the new wallaby cell reads it (`banned`, permitFor
+  "commercial-exhibition-research").
+- **The fennec fox cells for Ohio and North Carolina read `legal` on the same bare "fox" that made the
+  arctic fox `unclear` there. Confirmed.** R.C. 1531.01(W), in `OH-oh-wildlife-code.txt`:
+  "'Fur-bearing animals' includes minks, weasels, raccoons, skunks, opossums, muskrats, fox, beavers,
+  badgers, otters, coyotes, and bobcats", with no species or nativity limit; the Ohio fennec cell
+  rests only on the dangerous wild animal list. G.S. 113-129(7c), in `NC-nc-wildlife-definitions.txt`:
+  "Game Animals. - Bear, fox, rabbit, squirrel, white-tailed deer, ...", read with (16), which carries
+  the definitions to wild species kept in captivity; the North Carolina fennec cell rests only on
+  § 14-417. Both should match their arctic fox cells.
 
 ## Articles
 
