@@ -1679,6 +1679,21 @@
       "title": "Vermont Act 47 (2025), H.231, An act relating to technical corrections to fish and wildlife statutes, as enacted",
       "url": "https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT047/ACT047%20As%20Enacted.pdf",
       "note": "Signed June 5, 2025. Sec. 14 bars importing, possessing or selling a pond slider (Trachemys scripta) in Vermont, except a turtle legally acquired as a pet before July 1, 2025, and stock a pet dealer or commercial collection permittee can document holding before that date. Sec. 14(b) repeals the section once the Commissioner adopts a slider rule under 10 V.S.A. § 4085. Sec. 13 adds § 4085, which from January 1, 2027 bars intentionally taking any reptile or amphibian in Vermont unless a rule allows it. The Fish and Wildlife Department's notice (https://www.vtfishandwildlife.com/press-releases/sale-pond-slider-turtles-prohibited) tells an owner from before July 1, 2025 that nothing needs doing."
+    },
+    "az-r12-4-401": {
+      "title": "Ariz. Admin. Code R12-4-401, Live Wildlife Definitions",
+      "url": "https://www.law.cornell.edu/regulations/arizona/Ariz-Admin-Code-SS-R12-4-401",
+      "note": "The definitions section for Article 4, and the one that decides every wild and domestic cross in Arizona. \"Hybrid wildlife\" means an offspring from two different wildlife species or genera, and \"Offspring from a wildlife species and a domestic animal species are not considered wildlife.\" So the hybrid clause in R12-4-406(C)(1), which restricts hybrid wildlife with one restricted parent, reaches crosses of two wild species only. The Secretary of State's copy at apps.azsos.gov sits behind a Cloudflare challenge, so this was read from Cornell LII and checked against animallaw.info's reproduction of Article 4, which carries the same two sentences. Last amended effective 1 July 2021."
+    },
+    "tn-1660-01-18": {
+      "title": "Tenn. Comp. R. & Regs. 1660-01-18, Rules and Regulations of Live Wildlife",
+      "url": "https://www.law.cornell.edu/regulations/tennessee/Tenn-Comp-R-Regs-1660-01-18-.03",
+      "note": "The commission's own additions to the statutory classes, the chapter earlier sittings could not read because publications.tnsosfiles.com refuses this container. Cornell LII carries all six rules. Rule .03 is short: (1) adds to Class I only hybrids of two Class I species; (2) makes native species Class II unless designated otherwise; (3) adds waterfowl other than migratory game birds, ostriches, cassowaries, caimans and gavials to Class III and moves native nonpoisonous reptiles and amphibians and native furbearers out of it into Class II; (4) adds the nanday parakeet, the monk parakeet, the African clawed frog and most non-native freshwater aquatic life to Class V; and (5) regulates a hybrid of species from different classes as a member of the least restrictive class involved. No mammal is added to Class I by name. Rule .01(4) requires anyone possessing live wildlife to be able to prove legal ownership. Last amended effective 30 January 2022."
+    },
+    "fl-fwc-captive-faq": {
+      "title": "Florida Fish and Wildlife Conservation Commission, Captive Wildlife frequently asked questions",
+      "url": "https://myfwc.com/license/captive-wildlife/faq/",
+      "note": "FWC's own reading of the hybrid clause at 68A-6.002(1)(d). The answer to \"Do I need a permit for a hybrid wild/domestic animal?\" restates the rule, that a hybrid indistinguishable from the wild parent is regulated at that parent's class, says wolf-dog hybrids are regulated case by case, and closes: \"Savannah cats, Bengal cats, and Chausie cats are considered domesticated species and are not regulated by the Captive Wildlife Office.\""
     }
   },
   "animals": {
@@ -24209,6 +24224,459 @@
           "verifiedOn": "2026-10-01"
         }
       }
+    },
+    "savannah-cat": {
+      "name": "Savannah cat",
+      "scientific": "Felis catus x Leptailurus serval",
+      "jurisdictions": {
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(K)(1)(b)",
+          "quote": "Domestic cats and hybrids of domestic cats are not restricted",
+          "note": "Same answer as the Bengal, for the same reason. The Felidae line restricts every species in the family, and the order heading names servals among its examples, but the one exception written under it takes domestic cats and their hybrids out with no filial generation, weight or registry condition. A Savannah is a hybrid of a domestic cat, so an F1 sits where an F7 does. The wolf entry directly below shows California knew how to draw a generation line, restricting the F1 wolf hybrid and freeing its progeny, and it drew none for cats. § 671(a) says cities and counties may still prohibit species that need no state permit.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "DC": {
+          "status": "legal",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)(B)",
+          "quote": "Domestic cats, excluding hybrids with ocelots or margays",
+          "note": "The District names the two cat hybrids it means to keep out, the ocelot and margay crosses, and the serval is neither, so a Savannah stays inside the domestic cat category at any filial generation. A list that carves two named hybrids out of \"domestic cats\" assumes the other hybrids are in it, which is the same reading the Bengal gets. The serval itself is barred, so this is one of the places where the hybrid is plainly lawful and its wild parent plainly is not.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "§ 161.01(b)(2)",
+          "quote": "All cats other than domesticated cats (Felis catus), including, but not limited to, lion, tiger, leopard, ocelot, jaguar, puma, panther, mountain lion, cheetah, wild cat, cougar, bobcat, lynx, serval, caracal, jaguarundi, margay and any hybrid or cross-breed offspring of a wild cat and domesticated or other cat.",
+          "note": "The serval is named in the cat clause, and the clause ends by catching \"any hybrid or cross-breed offspring of a wild cat and domesticated or other cat\", with no filial number, no weight test and no registry exception. The only way out is to be a domesticated cat, Felis catus, and the article never says when a hybrid becomes one. New York State lets a registered hybrid through once it is five generations clear of wild parentage; the five boroughs do not, so a cat that is lawful in Buffalo is unlawful in Brooklyn. Same answer as the Bengal. § 161.01(d) lets the Department consent to a seized animal being removed to a jurisdiction where it is lawful, which is the only relief in the article.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NY": {
+          "status": "conditional",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e)(2); 6 NYCRR § 180.1(b)(8)",
+          "quote": "Felidae and all hybrids thereof, with the exception of the species Felis catus ... and hybrids of Felis catus that are registered by the American Cat Fanciers Association or the International Cat Association provided that such cats be without any wild felid parentage for a minimum of five generations",
+          "note": "The Bengal rule, applied to the Savannah: two conditions together, registration with ACFA or TICA and five generations without any wild felid parentage. Counted the way MassWildlife counts the identical three-generation formula, where three generations clear is an F4 Savannah, five generations clear means no serval among the cat's parents, grandparents or the three generations above them, which is an F6. A Savannah that falls short is a wild animal under clause (2), and § 11-0512(1)(a) bars keeping a wild animal as a pet with no personal permit behind it. The serval itself is barred outright, and New York City applies no five-generation exit at all.",
+          "verifiedOn": "2026-10-01"
+        },
+        "MN": {
+          "status": "unclear",
+          "sourceId": "mn-346-155",
+          "cite": "§ 346.155, subd. 1(e)",
+          "quote": "all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association",
+          "note": "The Bengal's internal conflict, with the hybrid sentence pointing harder at this cat. The serval is named in clause (1) itself, and the definition closes by saying a regulated animal \"includes any hybrid or cross between an animal listed in clause (1), (2), or (3) and a domestic animal and offspring from all subsequent generations of those crosses or hybrids\". Read alone, that reaches every Savannah ever bred. Against it, the same clause excludes cats recognized, registered and shown as a domestic breed by a multibreed registry, all three, and if a Savannah meets that description the carve-out reads it out; the statute never ties those three words to a filial generation. Recorded unclear because the conflict is on the face of the statute and enforcement sits with local animal control. If the hybrid sentence wins, the answer is a ban, since possession has been closed to new animals since 1 January 2005.",
+          "grandfathered": {
+            "before": "2005-01-01",
+            "detail": "Only if the cat is a regulated animal: possessed on 1 January 2005 and brought into Animal Welfare Act compliance within 90 days. Breeding after that date is barred, and a non-USDA-licensed keeper may replace the animal only once."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "MD": {
+          "status": "conditional",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1)(iii), (iv)",
+          "quote": "(iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds;",
+          "note": "Maryland answers by weight and nothing else. A Savannah is a hybrid of a member of the cat family and a domestic cat, so clause (iv) is the one that reaches it, and it reaches it only \"if the hybrid weighs over 30 pounds\". There is no generation test and no registry requirement, so an F1 under the line is lawful and an F5 over it is not: the answer is read off the scale rather than the pedigree, and can change as the cat grows. The serval itself is caught by clause (iii) with no permit route, which is why the Savannah and the Bengal share a bucket here and the serval does not. Subsection (e) preserves stricter county and municipal rules on any potentially dangerous animal.",
+          "grandfathered": {
+            "before": "2006-05-31",
+            "detail": "Lawful possession on or before 31 May 2006 of a hybrid over the weight line may continue, but only if the keeper gave written notification to the local animal control authority by 1 August 2006, with the number and type of animals and a photograph or a description of a tattoo or microchip. That window is long closed."
+          },
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-020427",
+          "cite": "IDAPA 02.04.27.404.04",
+          "quote": "06. Tiger (Panthera tigris). All tigers and tiger-hybrids. (3-31-22) 404. DELETERIOUS EXOTIC ANIMALS -- MAMMALS: SMALL FELIDAE. ... 04. Serval (Felis serval).",
+          "note": "This is where the Savannah and the Bengal differ in the text, if not in the result. The serval is a deleterious exotic animal by name at 404.04, and 100.01 bars possessing one without a possession permit; the Asian leopard cat behind the Bengal is not listed at all. But the list writes hybrids in where it means them: the entry just above reads \"All tigers and tiger-hybrids\", the serval entry carries no such words, and 010.02 defines a deleterious exotic animal as one the Administrator has determined to be dangerous, which is done by listing. A Savannah is not Felis serval and is not listed, and cats are conventional pets under IDAPA 13.01.10, so it is recorded legal on the tiger-hybrid contrast rather than on any express exclusion.",
+          "verifiedOn": "2026-10-01"
+        },
+        "IA": {
+          "status": "conditional",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(b)(2)(b)",
+          "quote": "The offspring of a domestic cat and another member of the family felidae classified as a savannah with an ancestor classified as a serval which is a member of the species leptailurus serval. The savannah must be the fourth or later filial generation of offspring with the first filial generation being the offspring of a domestic cat and a serval, and each subsequent generation being the offspring of a domestic cat.",
+          "note": "Iowa names the Savannah in its statute, in the same sentence pattern it uses for the Bengal. The serval is a dangerous wild animal by name at § 717F.1(5)(a)(3); paragraph (b) makes the offspring of a listed animal and \"any other animal\", and every subsequent generation, a dangerous wild animal too; and (b)(2)(b) carves the Savannah back out from the fourth filial generation. So F4 and later are ordinary cats, and F1 to F3 are dangerous wild animals that § 717F.3 bars anyone from owning, possessing, breeding or importing. The carve-out also requires each generation after the first to be \"the offspring of a domestic cat\", and a cat bred from two Savannahs does not meet those words on their face; the statute raises that question and does not answer it.",
+          "grandfathered": {
+            "before": "2007-07-01",
+            "detail": "An F1 to F3 owned on 1 July 2007 could be kept after implanting an electronic identification device within sixty days and registering with the department by 31 December 2007. No new route exists."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4(2)",
+          "quote": "(u) Wolverine (Gulo gulo); or (v) Hybrids of a species listed in this subsection.",
+          "note": "Kentucky ties its hybrid clause to its own list. Section 4(2) names the inherently dangerous species, with Panthera, Lynx, the cheetah and the clouded and snow leopards as its cats, and (v) reaches \"Hybrids of a species listed in this subsection\" and nothing wider. The serval is on neither that list nor the prohibited list at 4(1), so neither it nor a Savannah is restricted at state level, the same result the Bengal gets. One wrinkle: KRS 150.010 defines wildlife as any normally undomesticated animal \"including any part, product, egg, or offspring thereof\", which could make an early-generation Savannah exotic wildlife needing the Section 2 transportation permit to enter the state, as the serval does.",
+          "verifiedOn": "2026-10-01"
+        },
+        "RI": {
+          "status": "unclear",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.6(A)(5)(e); § 3.6(A)(13); § 3.7(A)",
+          "quote": "Domestic Cat (Felis catus) excluding hybrids with wild felines,",
+          "note": "The Bengal's position exactly. The domestic animal list takes the domestic cat \"excluding hybrids with wild felines\", and § 3.7(A) bars importing or possessing exotic wild animals \"and hybrids of the order Carnivora\" with no USDA licensed rabies vaccine, restricting them to researchers, USDA licensed exhibitors and AZA facilities. An F1 Savannah is plainly caught. But § 3.6(A)(13) defines a hybrid as an animal that \"is a result of the cross breeding of a domestic and wild animal\", and an F2 or later is the offspring of a Savannah and a domestic cat, so on the definition it is arguably not a hybrid at all. Nothing in the regulation counts filial generations to settle it. Ask the Division of Agriculture before buying.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NH": {
+          "status": "conditional",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 802.03(f); Fis 804.04(a); Table 800.2",
+          "quote": "The provisions of this chapter shall not apply to an owner or person possessing a wolf hybrid, as defined in RSA 466-A:1, VII, or a domesticated show or pet cat registered with a nationally or internationally recognized breeding association or registry which certifies the pedigree and registration of such cat to be without any wild felid parentage for a minimum of 3 generations.",
+          "note": "New Hampshire uses the Massachusetts sentence, nearly word for word, as an exemption from the whole of Fis 800. A registered Savannah whose certified pedigree shows no wild felid parentage for three generations, which MassWildlife reads as F4 and later, is outside the chapter. Anything short of that is inside it, and there the serval decides the answer: Fis 804.04(a) bars possessing controlled wildlife \"or their hybrids\" without a permit, and the serval sits in the controlled table with permittee category 5 alone, the exhibitor category, so no permit issues to a private keeper. Registration and the certified pedigree are both part of the exemption, so an unregistered cat fails it at any generation.",
+          "verifiedOn": "2026-10-01"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-578-023",
+          "cite": "§ 578.023(1)",
+          "quote": "A person commits the offense of keeping a dangerous wild animal if he or she keeps any lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, Canada lynx, bobcat, jaguarundi, hyena, wolf, bear, nonhuman primate, coyote, any deadly, dangerous, or poisonous reptile, or any deadly or dangerous reptile over eight feet long",
+          "note": "Missouri names eleven cats and the serval is not one of them, and the section has no hybrid clause, generation rule or weight test. Even for the listed animals the offense is keeping one without registering it with the local law enforcement agency, not keeping one at all. A Savannah is outside the section at any generation, and it is not Missouri wildlife, so 3 CSR 10-9 does not reach it either.",
+          "verifiedOn": "2026-10-08"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "K.S.A. 32-1301(d)(1)",
+          "quote": "\"Dangerous regulated animal\" means a live or slaughtered parts of: (1) Lions, tigers, leopards, jaguars, cheetahs and mountain lions, or any hybrid thereof;",
+          "note": "The Kansas hybrid clause belongs to the six big cats it follows, so a serval hybrid is outside it just as a Bengal is, and the serval itself is outside the statute too. If a Savannah counts as wildlife at all under K.S.A. 32-701, it is exotic wildlife under K.A.R. 115-20-3, which may be imported, possessed and sold provided it was legally obtained at its place of origin, and possessed \"without limit in time and number\".",
+          "verifiedOn": "2026-10-08"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-47-2",
+          "cite": "§ 47-2-10(2)",
+          "quote": "\"Large wild cat, non-native bear and great ape\" means one of the following types of animals of the order Carnivora or Primate, and any hybrids of these animals:",
+          "note": "The 2018 Act reaches hybrids, but only hybrids of the animals it lists, and its cat entry is drawn at the genus Panthera: lions, tigers, leopards, jaguars, cougars, cheetahs, snow leopards and clouded leopards. Leptailurus serval is outside that genus, so neither the serval nor a Savannah of any generation is caught, the same answer the Bengal gets. A serval is not a South Carolina furbearer, so the import permit at § 50-16-20 does not reach its hybrid either.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MT": {
+          "status": "legal",
+          "sourceId": "mt-arm-12-6-22",
+          "cite": "ARM 12.6.2201(8); 12.6.2205(1)(d); MCA § 87-5-702(2)",
+          "quote": "\"Noncontrolled species\" means a live, exotic wildlife species, subspecies, or hybrid of that species that may be possessed, sold, purchased or exchanged in the state without a permit",
+          "note": "Montana reaches the same place by two roads. Cats are domestic animals under MCA § 87-5-702(2), and the serval is a noncontrolled species by name at 12.6.2205(1)(d), where the definition of noncontrolled expressly carries \"or hybrid of that species\". So even a Savannah treated as a serval hybrid rather than as a cat needs no permit, at any generation. The same definition says it does not authorize possession in violation of a county or city ordinance.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "WV": {
+          "status": "legal",
+          "sourceId": "wv-74-1",
+          "cite": "W. Va. C.S.R. § 74-1-3.1.g",
+          "quote": "3.1.g. All of the following, including hybrids with domestic cats unless otherwise specified: 3.1.g.1. Cheetahs; 3.1.g.2. Lynxes, including Canadian lynxes, Eurasian lynxes, and Iberian lynxes; 3.1.g.3. Cougars, also known as pumas or mountain lions; and 3.1.g.4. Caracals.",
+          "note": "West Virginia's board wrote hybrids with domestic cats into its list in so many words, then put four cats under that clause: cheetahs, lynxes, cougars and caracals. The serval is not among them, so neither it nor a Savannah is a dangerous wild animal. The clause reads like Ohio's § 935.01(C)(7), which lists the serval under the same words and carves the Savannah out by name; West Virginia has no serval line at all. § 20-2-13 does not reach the cat either, because \"wild animals\" in § 20-1-2 means mammals native to West Virginia.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AK": {
+          "status": "banned",
+          "sourceId": "ak-5aac92-029",
+          "cite": "5 AAC 92.029(b), (c)",
+          "quote": "(c) The department may not issue a permit for the capture, possession, import, or export of any game animal, including a hybrid of a game animal and a species listed in (b) of this section, for use as a pet",
+          "note": "Same answer as the Bengal. Felis catus is on the clean list at (b), but the list opens by excluding \"a hybrid of a game animal and a species listed in this subsection\", and (c) then bars a pet permit for exactly that hybrid. Game under AS 16.05.940 is any mammal found or introduced in the state other than a domestic one, which takes in a serval, so a Savannah is the hybrid both subsections describe. No generation cutoff, so an F5 stands where an F1 does.",
+          "verifiedOn": "2026-10-01"
+        },
+        "SD": {
+          "status": "permit",
+          "sourceId": "sd-12-68-18",
+          "cite": "ARSD 12:68:18:03(1)(a)",
+          "quote": "a permit as described in § 12:68:18:03.03 is required to possess in South Dakota any nondomestic mammal, or any of its hybrids, listed in this section: (1) Of the order Carnivora, all nondomestic members of the following families: (a) Felidae;",
+          "note": "The hybrid words sit in the operative sentence, so a serval hybrid needs the same possession permit as a serval: ten dollars an animal from the Animal Industry Board, renewed each year. No generation line is drawn, so a late-generation Savannah reads the same as an F1, which is also how the Bengal is answered here. The board's prohibited list names only the raccoon dog, so this is a real route for a private keeper.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-26",
+          "cite": "Ala. Admin. Code r. 220-2-.26(1)",
+          "quote": "black bear (Ursus americanus), mountain lion (Felis concolor), bobcat (Felis rufus)",
+          "note": "The only cats on Alabama's list are its own two, and only when brought in from outside the state; the rule's hybrid wording is all about fish. The serval is not listed and is not federally injurious, so neither it nor a Savannah is restricted at state level.",
+          "verifiedOn": "2026-10-01"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-7(a)(11)",
+          "quote": "(11) Serval (Leptailurus serval). ... A hybrid of any of these species with a domestic dog or domestic cat is exempt from permitting under this section.",
+          "note": "Indiana answers the Savannah through its parent. The serval is a Class II wild animal at 9-11-7(a)(11) and needs a permit, and the list closes by exempting \"A hybrid of any of these species with a domestic dog or domestic cat\", with no filial generation condition. So a Savannah of any generation needs no permit while its wild parent does. The Bengal gets the same answer from item (12) of the same list.",
+          "verifiedOn": "2026-10-01"
+        },
+        "ND": {
+          "status": "permit",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(2)(b); 48.1-09-01-03(1)",
+          "quote": "Category 2 species of nontraditional livestock includes the following species and their hybrids, all nondomestic ungulates, including all deer (cervidae) and pronghorn, zebras, nondomestic cats not listed in category 3",
+          "note": "North Dakota writes hybrids into the category sentence itself: category 2 is the listed species \"and their hybrids\", and nondomestic cats not in category 3 are among them. Category 3 stops at the mountain lion, jaguar, leopard, lion, tiger and cheetah, so the serval is a category 2 cat and a Savannah is a category 2 hybrid, and 48.1-09-01-03(1) requires the license before the animal is acquired, with the premises approved first. The counter-reading is NDCC 36-01-00.1(3), which lists \"cat\" as a domestic animal, while nontraditional livestock means wildlife held in confinement; a late-generation Savannah sold as a domestic cat has the better claim to that. No generation line is written anywhere.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "WY": {
+          "status": "permit",
+          "sourceId": "wy-ch10",
+          "cite": "Ch. 10 §§ 2(z), 3, 13(d)",
+          "quote": "\"Warm-Blooded Wildlife\" means every live wild mammal and bird, their viable gametes (eggs and sperm), fertilized eggs, or any hybrid (including hybrids between wildlife and wildlife, and hybrids between wildlife and domestic or domesticated animals) or any transgenic product thereof.",
+          "note": "Wyoming defines warm-blooded wildlife to include \"hybrids between wildlife and domestic or domesticated animals\" in terms, and a Savannah is that hybrid. Section 3 requires a permit before importing or possessing any live warm-blooded wildlife; the serval is on neither the Section 11 prohibited list nor the domestic list; and Section 13(d) leaves it to a permit that \"may be authorized upon approval\", which is discretion rather than entitlement. The pull the other way is § 2(i), whose domestic animal definition also mentions \"any hybrid\" of the domestic populations and lists cat (Felis catus). But that list is closed, names the mule separately where it means a hybrid, and § 2(z) is the clause written for exactly this cross. No generation line is drawn.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5.b.v",
+          "quote": "Family Felidae: Genus Leo or Panthera or Neofelis (lions, tigers, jaguars, and leopards) - all species; Acinonyx iubatus (cheetah); Felis concolor (cougar) - all subspecies;",
+          "note": "Mississippi's cat entry is drawn by genus and the serval is not in it. Where the rule means hybrids it says so, in fee and caging schedules for felids \"or hybrids thereof\", and every one of those is tied to the big cats it lists. Neither the serval nor a Savannah is an animal inherently dangerous to humans under this rule.",
+          "verifiedOn": "2026-10-08"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-v-115",
+          "cite": "§ 115.C.1.h",
+          "quote": "vii. all subspecies of the above listed exotic cats; viii. hybrids resulting from cross breeding of the above listed exotic cats.",
+          "note": "Louisiana's hybrid clause reaches only crosses of the six big cats it lists: tigers, lions, leopards, jaguars, cheetahs and cougars. The serval is none of them, so a Savannah is outside § 115 the same way a Bengal is.",
+          "verifiedOn": "2026-10-01"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(a)(4)",
+          "quote": "(4) Cats (except native cats and bears).",
+          "note": "Oklahoma exempts cats as a group and carves out only native cats, so neither a serval nor a Savannah needs an import permit or a breeder license. The exemption is from licensing rather than from a ban, and there is no ban behind it for a non-native cat.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NE": {
+          "status": "conditional",
+          "sourceId": "ne-37-477",
+          "cite": "Neb. Rev. Stat. § 37-477(2)(a)",
+          "quote": "(2) Except as provided in subsection (3) of this section, no person shall keep in captivity in this state any wolf, any skunk, or any member of the families Felidae and Ursidae. This subsection shall not apply to (a) the species Felis domesticus,",
+          "note": "The same two words decide the Savannah as the Bengal. Nebraska bans every member of Felidae by statute, with no permit behind it, and excepts \"the species Felis domesticus\". An early-generation Savannah is a serval hybrid rather than a member of that species; a late-generation cat registered and sold as a domestic cat has the better claim to be one; and nothing in the statute or in 166 NAC 8 says where the line falls. The serval itself is plainly banned, and § 37-477(3) protects only animals held on 1 March 1986.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NC": {
+          "status": "legal",
+          "sourceId": "nc-14-417",
+          "cite": "N.C. Gen. Stat. § 14-417",
+          "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
+          "note": "North Carolina's only statewide exotic animal statute reaches venomous reptiles, so no state rule reaches a serval or a Savannah. § 153A-131 lets counties regulate dangerous animals, and several have used it, so the county ordinance is the rule to check.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-20-50",
+          "cite": "4VAC15-20-50; 4VAC15-30-40(A)",
+          "quote": "\"Nonnative (exotic) animal\" means those species and subspecies of animals not naturally occurring in Virginia, excluding domestic and naturalized species. The following animals are defined as domestic animals: Domestic dog (Canis familiaris), including wolf hybrids. Domestic cat (Felis catus), including hybrids with wild felines.",
+          "note": "The answer is in the definitions rather than the permit table. 4VAC15-30-40 requires a special permit for every animal on its table, and the table takes the whole cat family, which is how the serval needs one. But that section governs nonnative (exotic) animals only, 4VAC15-20-50 defines those as excluding domestic species, and the same section defines the domestic cat as Felis catus \"including hybrids with wild felines\". A Savannah is a hybrid of a domestic cat and a wild feline, so it is a domestic animal and the Felidae row never reaches it, at any generation.",
+          "verifiedOn": "2026-10-01"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6",
+          "cite": "§ 4-71-6, List of Prohibited Animals; § 4-71-6.5, Restricted Animal List Part A",
+          "quote": "Felis catus crossed with lynx, ocelot, margay, puma, jaguarandi, bobcat, leopard cat, wild cat, etc. ... cat, hybrid; (all hybrid-crosses where one or both parents are prohibited or restricted)",
+          "note": "Hawaii writes cat hybrids into its prohibited list and defines the class by the parents: every hybrid cross where one or both parents are prohibited or restricted. The serval is on the restricted list, Part A, under its older name Felis serval, so a Savannah is a prohibited animal. The serval is not among the named crosses, but the list of names ends with \"etc.\" and the parenthetical is the rule. No filial generation cutoff appears, so a late-generation Savannah is in the same position as an F1.",
+          "verifiedOn": "2026-10-01"
+        },
+        "ME": {
+          "status": "unclear",
+          "sourceId": "me-09-137-c7",
+          "cite": "09-137 CMR ch. 7, §§ 7.01, 7.18(2)(F); 12 M.R.S. § 10001(71)",
+          "quote": "These rules shall apply to: 1.The possession, propagation, research, rehabilitation, or exhibition of any wildlife in captivity and to the importation of live wildlife from an area outside the state, including wildlife that has been hybridized, genetically altered, or reared in captivity, pursuant to 12 M.R.S. Part 13.",
+          "note": "Maine reaches further toward the Savannah than toward the Bengal, but never names it. Chapter 7 applies to wildlife \"that has been hybridized\"; 12 M.R.S. § 10001(71) defines wildlife to include \"any part, egg or offspring\" of a species wild by nature; and § 7.18(2)(F) lists \"All Species in Family Felidae (Cats)\" as Category 1 restricted, which only exhibitors, rehabilitators, accredited research facilities and USDA-registered laboratories may hold. Follow that chain and an F1 Savannah, the offspring of a serval, is Category 1 wildlife with no pet route. Against it, a domestic cat is not wildlife, § 10001(69) draws wild animals \"as distinguished from the common domestic animals\", and chapter 7 writes a whole permit scheme for wolf hybrids and nothing for cat hybrids. No generation line exists either way. Ask Inland Fisheries and Wildlife before buying.",
+          "verifiedOn": "2026-10-08"
+        },
+        "AR": {
+          "status": "unclear",
+          "sourceId": "ar-code-0900",
+          "cite": "Code 01.00 (definitions of wild and wildlife); Codes 09.01, 09.02",
+          "quote": "To be living in a state of nature and not domesticated.",
+          "note": "Arkansas turns on whether a Savannah is wildlife at all. Code 01.00 defines wild as \"living in a state of nature and not domesticated\" and wildlife as wild animals \"regardless of classification\", including animals living in a captive state. If a Savannah is wildlife it is non-native wildlife under Code 09.02, and no felid hybrid appears on any of the three addenda, whose closing clause makes an unlisted species prohibited until evaluated. If it is a domesticated cat, nothing in Chapter 09.00 applies. The codebook never says which, the same question the Bengal raises. Ask the Game and Fish Commission.",
+          "verifiedOn": "2026-10-01"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01",
+          "cite": "Ohio Rev. Code § 935.01(C)(7)(e)",
+          "quote": "(7) All of the following, including hybrids with domestic cats unless otherwise specified: (a) Cheetahs; (b) Lynxes, including Canadian lynxes, Eurasian lynxes, and Iberian lynxes; (c) Cougars, also known as pumas or mountain lions; (d) Caracals; (e) Servals, excluding hybrids with domestic cats commonly known as savannah cats.",
+          "note": "Ohio names the Savannah in its statute and frees it in the same line that restricts the serval. The clause brings hybrids with domestic cats into the dangerous wild animal definition for every cat under it \"unless otherwise specified\", and the serval line is the one place it is specified otherwise. No generation is mentioned, so the exclusion covers a Savannah of any filial generation, while the serval itself is a dangerous wild animal.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-16-30",
+          "cite": "RCW 16.30.010(2)(a)(i)(A)",
+          "quote": "\"Potentially dangerous wild animal\" means one of the following types of animals, whether bred in the wild or in captivity, and any or all hybrids thereof: (a) Class mammalia (i) Order carnivora (A) Family felidae, only lions, tigers, captive-bred cougars, jaguars, cheetahs, leopards, snow leopards, and clouded leopards;",
+          "note": "The hybrid words cover only the animals the definition lists, and the felid entry is limited by the word \"only\" to eight big cats. The serval is not one of them, which is why Washington is permissive about the serval itself, and a Savannah, as the hybrid of an unlisted cat, is outside the statute at any generation. RCW 16.30.050 lets a city or county regulate potentially dangerous wild animals more strictly, which does not reach a cat the statute does not list.",
+          "verifiedOn": "2026-10-08"
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.11(1)(a)",
+          "quote": "A person is exempt from holding a license or other approval as required under this chapter to possess live nonnative wild animals that are not endangered or threatened species, except for any of the following:",
+          "note": "Whether a Savannah is a domestic animal or a nonnative wild animal under chapter 169, the answer is the same. Nonnative wild animals need no captive wildlife license under § 169.04(4)(b) unless they fall in one of its exceptions, the relevant one being harmful wild animals, and § 169.11(1)(a) designates only cougars, the bear family and wild and feral swine as harmful. The serval is neither endangered nor harmful, so neither it nor its hybrid needs a license.",
+          "verifiedOn": "2026-10-01"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1, domestic mammals",
+          "quote": "Cat - Felis catus - including breeds that are recognized by The International Cat Association as Preliminary New, Advanced New, Non-championship, and Championship Breeds",
+          "note": "Utah draws the line at the breed, not the generation: the domestic cat row takes in every breed TICA recognizes at any of four levels, from Preliminary New to Championship. The Savannah is a TICA-recognized breed, so it sits in the domestic column outside the rule, and because the test is breed recognition rather than filial number, the row does not distinguish an F1 from an F7. The serval itself is unlisted, which under the table's header means presumed prohibited pending a division assessment, so the parent and the hybrid land on opposite sides of the table.",
+          "verifiedOn": "2026-10-01"
+        },
+        "PA": {
+          "status": "unclear",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)(1)",
+          "quote": "it is unlawful for a person to import, possess, sell, offer for sale or release within this Commonwealth the following wild animals or wild birds or the eggs of the birds or a crossbreed or hybrid of the wild animals or wild birds, which are similar in appearance: (1) In the family Felidae . Species and subspecies, except species which are commonly called house cats which may be possessed but not released into the wild.",
+          "note": "The same structural problem as the Bengal, and the Savannah sits nearer the wrong side of it. The opening sentence reaches a crossbreed or hybrid of a listed animal \"which are similar in appearance\", and the Felidae line lists every species and subspecies, the serval among them; against that, the line excepts \"species which are commonly called house cats\". A Savannah is bred as a house cat, and an early-generation animal is also the cat most likely to look like a serval. The regulation gives no filial generation, no registry route and no test of what similar in appearance means, and no Game Commission statement on the breed was found. Rendered gray rather than guessed.",
+          "verifiedOn": "2026-10-01"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-large-carnivore",
+          "cite": "MCL 287.1102(f)",
+          "quote": "any of the following cats of the Felidae family, whether wild or captive bred, including a hybrid cross with such a cat: a lion, a leopard (including a snow leopard or clouded leopard), a jaguar, a tiger, a cougar, a panther, or a cheetah",
+          "note": "The Large Carnivore Act reaches a hybrid only of the seven cats it names, and the serval is not among them, which is why the serval itself is unregulated at state level. A Savannah is outside the act at any generation. Michigan municipalities may prohibit what the state allows, and many ban exotic cats, so the local ordinance is the rule to check.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "VT": {
+          "status": "conditional",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025",
+          "quote": "Carnivora | Feliformia | Felidae | All wild-domestic hybrid cats of F4 generation or greater",
+          "note": "Vermont writes the generation line into the list itself, and it applies to every wild and domestic cat hybrid alike, so the Savannah gets exactly the Bengal's answer. An F4 or later Savannah is unrestricted. An F1 to F3 is on no list, which the list's closing line makes restricted, and Regulation 881 issues permits for restricted animals only for bona fide scientific or educational purposes, so for a private keeper an early-generation Savannah is a no rather than a permit. Ask the breeder for the filial generation in writing.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NM": {
+          "status": "legal",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, January 2023",
+          "quote": "Mammal | Cat | Felidae | Felis catus | Common house cat & hybrids | I",
+          "note": "New Mexico puts cat hybrids in the domestic cat row, Group I, which needs no importation permit, and the row carries no exception for the wild parent. That is worth noticing because the dog row does: \"Dog, Common & Hybrids\" is Group I for all species \"except as restricted in another group\". The serval itself is Group IV, prohibited to the general public, but the cat row does not send its hybrids there. 19.35.7 NMAC is an importation rule, so this governs bringing the cat into the state rather than keeping one already here.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(q)",
+          "quote": "(q) All felines, except mountain lions and bobcats;",
+          "note": "Nevada clears the whole cat family except two native cats, so the serval needs no state permit and a Savannah of any generation needs nothing either; no hybrid question arises. Subsection 4 leaves county and city ordinances untouched, and Clark County, Las Vegas and Henderson are all stricter than the state, so check the municipality first.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-401",
+          "cite": "Ariz. Admin. Code R12-4-401; R12-4-406(C)(1)",
+          "quote": "\"Hybrid wildlife\" means an offspring from two different wildlife species or genera. Offspring from a wildlife species and a domestic animal species are not considered wildlife.",
+          "note": "Arizona restricts the whole order Carnivora, which takes in the serval, and R12-4-406(C)(1) makes hybrid wildlife restricted wherever one parent species is restricted. But the definition that clause points to settles the Savannah: hybrid wildlife is the offspring of two wildlife species, and offspring of a wildlife species and a domestic animal species \"are not considered wildlife\". A Savannah is the offspring of a serval and a domestic cat, so it is not wildlife at all, and the Commission's live wildlife rules do not reach it at any generation. Read the hybrid clause in R12-4-406 without R12-4-401 and the Savannah looks restricted; read them together and it is a cat.",
+          "verifiedOn": "2026-10-08"
+        },
+        "DE": {
+          "status": "conditional",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-3.0, 903-6.1, 903-6.2; Del. Code tit. 3 § 7201",
+          "quote": "\"Hybrid of a wild mammal\" means a mammal whose parents are different varieties of the same species or belong to different but closely allied species, one parent being a wild mammal not native to or generally found in Delaware and the other parent being a domestic mammal native to or generally found in Delaware.",
+          "note": "Delaware's statute requires a permit before anyone possesses a \"hybrid of a wild mammal\", and the regulation defines the term by the animal's parents: one a non-native wild mammal, the other a domestic mammal. An F1 Savannah, a serval crossed with a domestic cat, is exactly that animal and needs the $25 Individual permit under regulation 6.2, since no cat is on the exempt list at 6.1. A later-generation Savannah has a Savannah parent rather than a serval, so on the regulation's own words it is not a hybrid of a wild mammal and falls outside the permit requirement. The statute leaves the term undefined, so the F2 line is the regulation's reading rather than a filial rule anyone wrote down.",
+          "verifiedOn": "2026-10-08"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w11",
+          "cite": "§ 1103(A)",
+          "quote": "Domestic cat (Felis catus) including hybrids with wild felines",
+          "note": "Colorado's domestic animal list clears Felis catus \"including hybrids with wild felines\", with no generation cutoff, weight threshold or registration, so a Savannah of any generation is a domestic cat. The serval itself is regulated wildlife that CPW will not license for private possession, so the parent and the hybrid sit on opposite sides of one sentence. CPW tells keepers to check their city or county as well.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-720-48-10",
+          "cite": "720 ILCS 5/48-10(a)",
+          "quote": "\"Dangerous animal\" means a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote. Dangerous animal does not mean any herptiles included in the Herptiles-Herps Act.",
+          "note": "Illinois names eleven wild cats and the serval is not one of them, whatever secondary sources say. The section has no hybrid clause, no generation rule and no weight test, so a Savannah is outside it at any generation, as its wild parent is. Illinois is a home rule state, so a municipal ordinance can be stricter and is often the rule that decides this.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-609-305",
+          "cite": "ORS 609.305(1); ORS 609.341(4)",
+          "quote": "Any member of the family Felidae not indigenous to Oregon, except the species Felis catus (domestic cat)",
+          "note": "Oregon's exotic animal statute has no hybrid clause. It defines the regulated cats as non-indigenous Felidae except Felis catus, and then, at ORS 609.341(4)(a)(B), lets a permit holder breed a \"small exotic feline\", any non-domestic cat of 50 pounds or less at maturity, with a domestic cat for retail sale of the offspring. The statute describes the breeding program behind the Savannah and the Bengal and then does nothing to the kittens, and the wildlife rules separately declare all domestic cat breeds not wild. The serval itself is closed to new keepers.",
+          "verifiedOn": "2026-10-01"
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)(A), (b)(1)",
+          "quote": "\"Category One Wild Animal\" means, notwithstanding changes in taxonomic nomenclature, any wild animal, gamete or hybrid of any of the following: (A) A member within the family Felidae (including, but not limited to, lion, leopard, cheetah, jaguar, ocelot, jaguarundi cat, puma, lynx and bobcat) except Bengal cat pursuant to section 26-40a of the Connecticut General Statutes;",
+          "note": "Connecticut is where the Bengal and the Savannah come apart most sharply. Category One is any wild animal \"or hybrid\" of a member of Felidae, and the only cat carved out is the Bengal, by name. A Savannah is a hybrid of a felid, the serval, and is not the cat the exception names, so it is a Category One animal, and (b)(1) lets only municipal parks, zoos, public nonprofit aquariums, nature centers, museums and licensed exhibitors, laboratories and research facilities hold one. No generation line and no private route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-1660-01-18",
+          "cite": "Tenn. Comp. R. & Regs. 1660-01-18-.03(1), (5); Tenn. Code Ann. § 70-4-403(3)",
+          "quote": "(5) Hybrids involving two species from different Classes of animals shall be regulated as a member of the least restrictive Class involved, unless otherwise specified.",
+          "note": "The serval is Class III under the statute's catch-all, since the Class I cats are lions, tigers, leopards, jaguars, cheetahs and cougars, and the commission's rule chapter adds nothing to that: 1660-01-18-.03(1) adds to Class I only hybrids of two Class I species. Rule .03(5) then puts any hybrid across classes in the least restrictive class involved, so a Savannah lands in Class III, which needs no permit, even on a reading that would put its wild parent higher. The statute points the same way, putting bobcat and domestic cat hybrids in Class III expressly. If the cat counts as live wildlife at all, rule .01(4) asks the keeper to be able to prove legal ownership, a purchase receipt from a licensed propagator among the accepted forms. Read from Cornell LII's copy of the rule, because Tennessee's own publishing host refuses this container.",
+          "verifiedOn": "2026-10-08"
+        },
+        "TX": {
+          "status": "permit",
+          "sourceId": "tx-822-101",
+          "cite": "§ 822.101(4)(J), (T); §§ 822.103, 822.107, 822.116(b)",
+          "quote": "\"Dangerous wild animal\" means: (A) a lion; (B) a tiger; (C) an ocelot; (D) a cougar; (E) a leopard; (F) a cheetah; (G) a jaguar; (H) a bobcat; (I) a lynx; (J) a serval; (K) a caracal; (L) a hyena; (M) a bear; (N) a coyote; (O) a jackal; (P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla; or (T) any hybrid of an animal listed in this subdivision.",
+          "note": "Texas catches the Savannah in the same sentence that frees the Bengal. Clause (T) reaches \"any hybrid of an animal listed in this subdivision\", and the serval is listed at clause (J), so a Savannah is a dangerous wild animal and § 822.103(a) bars keeping one \"for any purpose\" without a certificate of registration from the local animal control office, or the county sheriff where there is none. The fee is capped at $50 an animal, § 822.107 adds liability insurance of at least $100,000 per occurrence, and § 822.116(b) lets any municipality or county prohibit the animal outright. No generation line is drawn, so on the statute's words a late-generation Savannah is as much a hybrid of a serval as an F1.",
+          "permitFor": "personal",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "MA": {
+          "status": "conditional",
+          "sourceId": "ma-131-77a",
+          "cite": "M.G.L. c. 131, § 77A; 321 CMR 9.02(2)(e)",
+          "quote": "No person shall possess, sell, trade, breed, import, export or release a wild canid hybrid or wild felid hybrid, except as otherwise provided by rules and regulations of the division. ... The provisions of this section shall not apply to an owner or person possessing a domesticated show or pet cat registered with a nationally or internationally recognized breeding association or registry which certifies the pedigree and registration of such cat to be without any wild felid parentage for a minimum of three generations.",
+          "note": "Massachusetts applies the Bengal test to the Savannah, and MassWildlife states it for the Savannah by name: the cat \"is considered a domestic breed only if it can be documented to be generations (F4) past the original mating with an African Serval\". § 77A prohibits possessing a wild felid hybrid outright and defines one to include the offspring of a hybrid wild felid and a domestic cat, so every generation is caught until the exit applies, and the exit needs both the registration and a registry-certified pedigree three generations clear. 321 CMR 9.02(2)(e) treats every other wild and domestic mammal hybrid as domestic and sends felid and canid hybrids back to § 77A.",
+          "grandfathered": {
+            "before": "1994-01-01",
+            "detail": "An owner in possession on 1 January 1994 who obtained a permit from the director on or before 31 July 1994 is outside the section."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-fwc-captive-faq",
+          "cite": "68A-6.002(1)(d), F.A.C.; FWC Captive Wildlife FAQ",
+          "quote": "Savannah cats, Bengal cats, and Chausie cats are considered domesticated species and are not regulated by the Captive Wildlife Office.",
+          "note": "The rule leaves room for doubt and the agency closes it. The serval is a Class II animal by name, and 68A-6.002(1)(d) regulates a wildlife and domestic hybrid at the wild parent's class where it is \"substantially similar in size, characteristics and behavior so as to be indistinguishable from the wild animal\", which on its words could reach an early-generation Savannah and would mean the $140 Class II permit. FWC answers that in its captive wildlife FAQ, naming the Savannah, the Bengal and the Chausie as domesticated and outside its regulation, while wolf-dog hybrids are handled case by case.",
+          "verifiedOn": "2026-10-08"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-dnr-legal-pets",
+          "cite": "DNR Guide to Legal Pets; R. 391-4-8-.04(1)(a)2(ii); O.C.G.A. § 27-5-4(b)(1)",
+          "quote": "Hybrids or crosses between any combination of domestic animals, wildlife, or regulated wild animals and all subsequent generations are regulated in Georgia and may not be held without a license. ... Most exotic cat hybrids, such as a savannah cat, are not a legal pet in Georgia.",
+          "note": "Georgia's agency uses the Savannah as its example of what it will not allow. The rule lists \"Family Felidae (cats) - All species\" as inherently dangerous, DNR says hybrids \"and all subsequent generations\" are regulated and need a license, and O.C.G.A. § 27-5-4(b)(1) issues wild animal licenses only to the wild animal trade and to public exhibitors, so there is no license a pet keeper can hold. No generation exit and no registry exception.",
+          "verifiedOn": "2026-10-08"
+        },
+        "NJ": {
+          "status": "unclear",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.8(a), 4.9(a)3",
+          "quote": "Carnivora Canidae--Nondomestic dogs / Ursidae--Bears / Felidae--Nondomestic cats",
+          "note": "Same gap as the Bengal. The potentially dangerous list takes \"Felidae--Nondomestic cats\" and 4.9(a)3 bars keeping a listed species as a pet, which is what makes the serval a ban here. Whether a Savannah is a nondomestic cat is the whole question, and subchapter 4 has no hybrid clause for mammals, no generation count and no registry exit; its only hybrid provision is about cross-bred birds. The statute above it excludes \"domesticated companion animals ... as defined by the Fish and Game Council\", and the Council has not defined the term. Nondomestic means banned; domestic means unregulated; the rule does not say which.",
+          "verifiedOn": "2026-10-01"
+        }
+      },
+      "article": "/blog/savannah-cat-legal-guide/"
     }
   }
 }

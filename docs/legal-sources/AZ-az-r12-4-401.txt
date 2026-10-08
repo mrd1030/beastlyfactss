@@ -1,0 +1,39 @@
+SOURCE: Arizona: Ariz. Admin. Code R12-4-401 (definitions for Article 4), with R12-4-406(C) and (D)
+sourceId: az-r12-4-401
+jurisdiction: AZ
+URL: https://www.law.cornell.edu/regulations/arizona/Ariz-Admin-Code-SS-R12-4-401 and .../Ariz-Admin-Code-SS-R12-4-406
+FETCHED: 2026-10-08 (apps.azsos.gov is behind a Cloudflare challenge. The same two sentences of the hybrid wildlife
+definition appear in animallaw.info's reproduction of Article 4, so two reproductions agree.)
+
+READ THIS FIRST. The hybrid clause in R12-4-406 points at this definition, and the definition stops it
+at wild crosses. A serval or leopard cat crossed with a domestic cat is not wildlife at all. The
+R12-4-406 subsections were relettered: the hybrid clause is now (C)(1) and the domestic animal
+exemption is (D).
+
+==== R12-4-401, "Hybrid wildlife" ====
+
+"Hybrid wildlife" means an offspring from two different wildlife species or genera. Offspring from a
+wildlife species and a domestic animal species are not considered wildlife. This definition does not
+apply to bird hybrids as defined under the Migratory Bird Treaty Act, under 50 CFR 21.3 , revised
+
+Notes Ariz. Admin. Code § R12-4-401 Adopted effective April 28, 1989 (Supp. 89-2). Amended effective
+January 1, 1995; filed in the Office of the Secretary of State December 9, 1994 (Supp. 94-4).
+Amended by final rulemaking at 9 A.A.R. 3186, effective August 30, 2003 (Supp. 03-3). Amended by
+final rulemaking at 12 A.A.R. 980, effective May 6, 2006 (Supp. 06-1). Amended by final rulemaking
+at 21 A.A.R. 2813 , effective 11/20/2015 . Amended by final rulemaking at 25 A.A.R. 1048 , effective
+6/1/2019 . Amended by final rulemaking at 27 A.A.R. 283 , effective 7/1/2021 .
+
+==== R12-4-406(C) and (D) ====
+
+C. All of the following are considered restricted live wildlife and are subject to the requirements
+of this Article, unless otherwise specified: 1. Hybrid wildlife, as defined under R12-4-401 ,
+resulting from the interbreeding of at least one parent species of wildlife that is listed as
+restricted under this Section. Hybrid wildlife that is the progeny of a restricted wildlife species
+and a nonrestricted wildlife species is considered restricted wildlife. 2. Transgenic species,
+unless otherwise specified under this Article. For the purposes of this Section, "transgenic
+species" means any organism that has had genes from another organism put into its genome through
+direct human manipulation of that genome. Transgenic species do not include natural hybrids or
+individuals that have had their chromosome number altered to induce sterility. A transgenic animal
+is considered wildlife if the genetic material originated from a restricted wildlife species. D.
+Domestic animals, as defined under R12-4-401 , are not subject to restrictions under A.R.S. Title
+17, 12 A.A.C. 4 , or Commission Orders.
