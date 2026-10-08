@@ -1824,6 +1824,26 @@
       "title": "68A-6.017, F.A.C., Possession and Exhibition of Venomous Reptiles and Reptiles of Concern",
       "url": "https://www.flrules.org/gateway/RuleNo.asp?id=68A-6.017",
       "note": "Florida's venomous reptile permit. Anyone who keeps a venomous reptile must comply with ch. 379 F.S. and this rule; an applicant must be 18, have a clean record on wildlife and cruelty violations for three years, have the facility inspected before animals arrive, and show at least one year and 1,000 hours of experience with the species or its family, with two references from licensed keepers or professional bodies. Individuals as well as businesses may apply. The reptiles of concern list is currently empty."
+    },
+    "la-76-v-701": {
+      "title": "LAC 76:V.701, Alligator Regulations",
+      "url": "https://www.doa.la.gov/media/ln5kb5vu/76.docx",
+      "note": "Governs taking, possessing, raising and selling alligators. No person other than a licensed alligator farmer or nongame quadruped exhibitor may possess live alligators except under a department permit for displays and educational purposes or for scientific purposes, and live alligators may be brought into the state only with written permission."
+    },
+    "tx-31tac-65-353": {
+      "title": "31 Tex. Admin. Code § 65.353, Alligator Proclamation, General Provisions",
+      "url": "https://www.law.cornell.edu/regulations/texas/31-Tex-Admin-Code-SS-65-353",
+      "note": "Read from Cornell LII; the official Texas Administrative Code viewer is an Appian portal. Subsection (b): \"Except as provided in this subchapter or Parks and Wildlife Code, Chapter 43, Subchapter C, no person may possess a live alligator\". The subchapter's permits are for alligator farmers, dealers, control hunters and nuisance hunters, and Chapter 43 Subchapter C covers permits for scientific research, zoological collection, rehabilitation and educational display."
+    },
+    "al-220-2-06": {
+      "title": "Ala. Admin. Code r. 220-2-.06, Game Animals Designated",
+      "url": "https://admincode.legislature.state.al.us/api/rule/220-2-.06",
+      "note": "Designates bear, beaver, coyote, deer, opossum, eastern cottontail and swamp rabbit, raccoon, squirrel, nutria, fox, mountain lion (cougar), groundhog, bobcat, red wolf, feral swine and alligator as game animals."
+    },
+    "ar-code-1200": {
+      "title": "Arkansas Game and Fish Commission Code Book, Chapter 12.00 (Alligator Regulations)",
+      "url": "https://agfc-omnibus.s3.amazonaws.com/eregs/regulation_pdfs/large/agfc_regulations_codebook_large.pdf",
+      "note": "Code 12.01 makes it unlawful to hunt, buy, sell or possess an American alligator \"or other crocodilian species\". The only possession exception for a live animal is a written permit or letter of authorization for display and education, which Code 12.01(C) confines to established facilities such as parks, zoos, aquariums and nature centers."
     }
   },
   "animals": {
@@ -35464,6 +35484,488 @@
         }
       },
       "article": "/blog/green-anaconda-legal-guide/"
+    },
+    "american-alligator": {
+      "name": "American alligator",
+      "scientific": "Alligator mississippiensis",
+      "jurisdictions": {
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(7)(A)",
+          "quote": "Order Crocodilia-Crocodiles, Caimans, Alligators and Gavials: All species (D)",
+          "note": "Every crocodilian is restricted, marked (D) for detrimental, and alligators are named in the heading. No permit type covers pet keeping.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-dnr-legal-pets",
+          "cite": "DNR Guide to Legal Pets; R. 391-4-8-.04(1)(b)1",
+          "quote": "The following list of species native to Georgia may not be held as a pet regardless of its origin or morphology. ... Alligator",
+          "note": "DNR names the alligator first on its native reptile list, and the rule puts every crocodilian in the inherently dangerous tier, licensed only to dealers and exhibitors. No pet route.",
+          "verifiedOn": "2026-10-08"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6-5",
+          "cite": "§ 4-71-6.5, Restricted Animal List Part A",
+          "quote": "ORDER Crocodylia FAMILY Crocodylidae Alligator mississippiensis alligator, American",
+          "note": "Named on Part A, the research and exhibition list. No pet route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.11(a)",
+          "quote": "It is unlawful to introduce a nonnative species into the natural environment of this Commonwealth. Persons who import nonnative reptiles or amphibians into this Commonwealth shall institute appropriate safeguards to prevent their introduction into the natural environment of this Commonwealth.",
+          "note": "No Pennsylvania text names a crocodilian. The reptile chapter manages native species and bars releasing a nonnative one, and the Game Commission's list, which carries a clause on federally listed animals, covers wild birds and mammals only. So the state does not restrict an alligator. Local ordinances were not checked.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following",
+          "note": "Category (E) admits snakes, fish and turtles; no crocodilian fits any of the seven categories. No permit route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "§ 161.01(b)(10)",
+          "quote": "all members of the order Crocodylia, including, but not limited to, alligator, caiman and crocodile.",
+          "note": "The crocodilian clause names the alligator first. The Code's only exceptions are the Parks Department and Wildlife Conservation Society zoos, labs, veterinary facilities and permitted temporary exhibits, so there is no pet route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NJ": {
+          "status": "banned",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.8(a); 7:25-4.9(a)3",
+          "quote": "The potentially dangerous species shall not be kept as a pet, for hobby purposes or in situations, which, in the judgment of the Department, could adversely affect the health of the animal or which could constitute a hazard to the public.",
+          "note": "\"Alligatoridae--Alligators and caiman\" is on the potentially dangerous species table, and 4.9(a)3 rules out keeping one as a pet.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "ME": {
+          "status": "banned",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.18(2)(G); § 7.06(3)(A)(2)(a)",
+          "quote": "Order Crocodilia All Species in Order Crocodilia (Crocodilians) ... An applicant for a permit pertaining to Category 1 Restricted Species must be an exhibitor, wildlife rehabilitator; laboratory registered with the United States Department of Agriculture, or accredited research facility.",
+          "note": "Every crocodilian is Category 1. Category 1 permits go only to exhibitors, rehabilitators, USDA-registered laboratories and accredited research facilities, so there is no pet route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "WI": {
+          "status": "unclear",
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.01(9), 169.04(1)(b), (4)(b)",
+          "quote": "\"Endangered or threatened species\" means those species of wild animals that are indigenous to the United States or Canada and are identified on the federal list of endangered and threatened species or on the Wisconsin list of endangered and threatened species.",
+          "note": "The alligator is nonnative to Wisconsin and not a harmful wild animal, so it would ordinarily be exempt. But it is indigenous to the United States, and it appears on the federal list of endangered and threatened wildlife, listed as threatened because it looks like other protected crocodilians rather than because it is itself at risk. If that entry counts as being identified on the federal list, the exemption in § 169.04(4)(b) does not apply and § 169.04(1)(b) requires a license; if it does not, no license is needed. The statute does not distinguish similarity-of-appearance listings, so it is recorded unclear.",
+          "verifiedOn": "2026-10-01"
+        },
+        "FL": {
+          "status": "permit",
+          "sourceId": "fl-turtles",
+          "cite": "68A-25.002(1); 68A-6.002(1)(b)33; 68A-6.003(7)",
+          "quote": "No person shall buy, sell, take, possess, transport, release, or import any American alligator, or any part thereof, or the nests or eggs of any American alligator except under permit from the executive director, as otherwise provided by this Title, or as follows:",
+          "note": "Two rules stack. The reptile rule bars possessing a live alligator except under permit or as the title otherwise provides, and the captive wildlife rule puts \"Alligators, caimans (family Alligatoridae)\" in Class II, whose personal use permit costs $140 a year and needs documented experience and caging. The alligator rule's own exceptions are for exhibitors and licensed sellers, so the Class II personal permit is the only keeper's route on the text; whether FWC issues it for a native alligator rather than steering keepers to exhibitor licensing is worth confirming with the agency.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL §§ 11-0103(6)(e)(6), 11-0512(1)(a); 6 NYCRR § 180.1(b)(13)",
+          "quote": "Wild animal includes, and is limited to, any or all of the following orders and families: ... (6) Crocodylia.",
+          "note": "Every crocodilian is a wild animal that may not be kept as a pet, and 180.1(b)(13) lists the order again. The exemptions in § 11-0512(2) are zoos, licensed exhibitors and research facilities, vets, shelters, universities, rehabilitators, sanctuaries and travelers, all holding the animal for a purpose other than a pet, and 6 NYCRR 180.1(c) issues dangerous animal licenses only for scientific, educational, exhibition, zoological or propagation purposes.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(3)(B)(xxviii), (b)(3)",
+          "quote": "(xxviii) A member within the order Crocodylia (including, but not limited to, alligator, crocodile and caiman),",
+          "note": "Connecticut names the alligator first in the Category Two crocodilian entry. Subsection (b)(3) allows a Category Two animal only to a treating vet, municipal parks, zoos, aquaria, nature centers, museums, exhibitors, laboratories and research facilities, so there is no private route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MA": {
+          "status": "banned",
+          "sourceId": "ma-masswildlife-pets",
+          "cite": "321 CMR 9.01(1), (10); MassWildlife, Wildlife as pets",
+          "quote": "You cannot have any crocodilian species in your possession in Massachusetts. This includes Alligators Crocodiles Caimans Gavials",
+          "note": "No crocodilian is on the reptile exemption list, so the rule requires a § 23 license, and MassWildlife says flatly that no crocodilian may be possessed, naming the alligator on its own line. Its guidance adds that permits are not issued for keeping a wild animal as a pet.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW species determinations; 2 CCR 406-7 #701",
+          "quote": "Crocodilia Alligator mississippiensis American Alligator Common alligator, gator -> W-07: Not an authorized species for private possession. CPW license required.",
+          "note": "CPW rules on the alligator by name. Only the caimans are cleared, by Appendix A's other-species block, so an alligator is regulated wildlife with no pet license.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AZ": {
+          "status": "restricted",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)(1)",
+          "quote": "1. All species of the order Crocodilia . Common names include: alligators, caimans, crocodiles, and gavials.",
+          "note": "Arizona names alligators in the Crocodilia entry. Restricted live wildlife may be held only under a special license listed in R12-4-409(A) or a listed exemption, and none of the R12-4-407 exemptions is a pet route.",
+          "verifiedOn": "2026-10-08"
+        },
+        "OR": {
+          "status": "banned",
+          "sourceId": "or-609-305",
+          "cite": "ORS 609.305(5); ORS 609.341(1); ORS 609.351(1); OAR 635-056-0060(4)",
+          "quote": "(5) Any member of the order Crocodylia.",
+          "note": "Every crocodilian is an exotic animal, and ODFW's own rule says so, adding that releasing one is unlawful. ORS 609.341(1) bars keeping an exotic animal without a Department of Agriculture permit issued before 1 January 2010 or under ORS 609.351, whose application window closed 90 days after that date and never reopened, so there is no route for a new animal. Oregon cities and counties may prohibit exotic animals by ordinance as well.",
+          "grandfathered": {
+            "before": "2010-01-01",
+            "detail": "A State Department of Agriculture permit issued before 1 January 2010, or issued within a year of that date on proof the animal was already held. Applications closed 90 days after 1 January 2010, breeding a permitted animal is barred, and possession ends 30 days after a permit lapses."
+          },
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "WA": {
+          "status": "banned",
+          "sourceId": "wa-rcw-16-30",
+          "cite": "RCW 16.30.010(2)(b)(ii); RCW 16.30.030",
+          "quote": "(ii) Order crocodilia, all species, such as crocodiles, alligators, caimans, and gavials.",
+          "note": "Alligators are named in the crocodilian entry. RCW 16.30.030(1) bars owning, possessing, keeping or bringing one into the state, and (2) bars breeding; the exemptions in 16.30.020 are for zoos, sanctuaries, exhibitors, research and similar bodies.",
+          "grandfathered": {
+            "before": "2007-07-22",
+            "detail": "A person in legal possession before 22 July 2007 may keep the animal for the rest of its life, with veterinary records or acquisition papers proving the date, but may not breed it."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "OH": {
+          "status": "banned",
+          "sourceId": "oh-935-02",
+          "cite": "R.C. 935.01(C)(15); R.C. 935.02(A), (B)(1)",
+          "quote": "(A) No person shall possess a dangerous wild animal on or after January 1, 2014. (B)(1) Except as provided in divisions (G)(1) and (2) of section 935.06 of the Revised Code, no person shall acquire, buy, sell, trade, or transfer possession or ownership of a dangerous wild animal on or after the effective date of this section.",
+          "note": "Alligators are named dangerous wild animals. The exceptions in R.C. 935.03 are accredited zoos, research facilities, circuses, sanctuaries, rehabilitators of Ohio natives and vets, so there is no route for a new keeper.",
+          "grandfathered": {
+            "before": "2013-10-01",
+            "detail": "Only a person who registered the animal with the Department of Agriculture in 2012 and possessed it on 1 October 2013 could apply for a wildlife shelter or wildlife propagation permit under R.C. 935.05 or 935.07; the permit requires sterilizing males, insurance, caging standards and, outside the small primates, at least one acre."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "TX": {
+          "status": "banned",
+          "sourceId": "tx-31tac-65-353",
+          "cite": "31 TAC § 65.353(b); Parks & Wild. Code § 65.002",
+          "quote": "Except as provided in this subchapter or Parks and Wildlife Code, Chapter 43, Subchapter C, no person may possess a live alligator;",
+          "note": "The alligator has its own chapter in Texas, which governs its possession to the exclusion of other licensing laws, and the proclamation bars possessing a live one. Its permits are for alligator farmers, dealers and control hunters, and Chapter 43 Subchapter C covers scientific research, zoological collection, rehabilitation and educational display. No pet route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224; MCL 287.731",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild...except as provided within this order.",
+          "note": "Fisheries Order 224 reaches \"any state reptile or amphibian from the wild\", so it governs Michigan's native herps and not a captive animal of a species from elsewhere, and no Michigan rule read here restricts an alligator. The Animal Industry Act asks for a certificate of veterinary inspection to import a nonnative reptile. NREPA Part 413's prohibited and restricted species list could not be read from this container, so that is the open check.",
+          "verifiedOn": "2026-10-01"
+        },
+        "IL": {
+          "status": "banned",
+          "sourceId": "il-510-68",
+          "cite": "510 ILCS 68/20-5, 20-10, 85-5",
+          "quote": "\"Crocodilians\" means any species of the Order Crocodilia, such as crocodiles, alligators, caimans, and gavials.",
+          "note": "Alligators are named crocodilians, special use herptiles that § 85-5 bars possessing except as the Act provides, and § 20-10 issues the special use permit only for bona fide educational programs, six documented a year, with an inspected facility. Crocodilians may not be bred or sold in Illinois. No pet route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.015, subds. 39, 53, 55; § 97A.501, subd. 1; § 346.155, subd. 1(e)",
+          "quote": "\"Unprotected wild animals\" means wild animals that are not protected wild animals including coyote, plains pocket gopher, porcupine, striped skunk, and unprotected birds, except any animal species listed as endangered, threatened, or of special concern in Minnesota Rules, chapter 6134.",
+          "note": "Minnesota's possession bar in § 97A.501 reaches protected wild animals, and subd. 39 names the reptile groups it protects: turtles, snakes and lizards. Crocodilians are not among them and are not on the state's chapter 6134 list, so an alligator is a wild animal under subd. 55 but an unprotected one, outside the bar. It is not a regulated animal under § 346.155 either. The state does not restrict it; local ordinances were not checked.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NV": {
+          "status": "banned",
+          "sourceId": "nv-nac-503",
+          "cite": "NAC 503.110(1)(b)(1), (3)",
+          "quote": "the importation, transportation or possession of the following species of live wildlife or hybrids thereof, including viable embryos or gametes, is prohibited: ... (1)Alligators, crocodiles and gharials..... All species in the order Crocodilia",
+          "note": "Every crocodilian is on the prohibited list, alligators named first. Permits for a prohibited species go only to accredited zoos and aquaria, colleges, universities and government agencies for research, other scientific institutions, commercial aquaculture, and nonprofits that exhibit wildlife solely for education or science, so there is no pet route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VA": {
+          "status": "permit",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "4VAC15-30-40(A), (B)",
+          "quote": "Crocodilia Alligatoridae All species Alligators, caimans*",
+          "note": "The table names alligators in the Alligatoridae entry. A special permit is required to import, possess or sell one, and the department issues it only if consistent with its fish and wildlife management program; the rule does not say whether a private keeper qualifies.",
+          "grandfathered": {
+            "before": "1992-07-01",
+            "detail": "The entry carries the asterisk, so an animal held before 1 July 1992 and declared in writing by 1 January 1993 may be kept under a possession-only permit that renews every five years and cannot be transferred."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "MD": {
+          "status": "banned",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1)(ii)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: ... (ii) caiman, alligator, or crocodile;",
+          "note": "Maryland names the alligator. The exemptions run to research facilities, licensed exhibitors, DNR licensees, sanctuaries, vets and circuses, and a licensed exhibitor may acquire a primate or big cat only with $1,000,000 of insurance, paid full-time staff and a disposition policy. Subsection (e) preserves stricter county and municipal rules.",
+          "grandfathered": {
+            "before": "2006-05-31",
+            "detail": "Lawful possession on or before 31 May 2006 may continue, but only if the keeper gave written notification to the local animal control authority by 1 August 2006, with the number and type of animals and a photograph or a description of a tattoo or microchip. That window is long closed."
+          },
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Alligator | Alligatoridae | Alligator mississippiensis | American Alligator | IV | Federally Threatened",
+          "note": "Named outright in Group IV. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. 19.35.7 NMAC is an importation rule, so it governs bringing the animal into New Mexico rather than keeping one already here.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "No crocodilian is on any of Vermont's three lists, so an alligator is restricted by absence. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "UT": {
+          "status": "banned",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-9(1)(b), R657-53-7(4)",
+          "quote": "(1)(a) A species of the Order Squamata (snakes and lizards) is classified as a prohibited species if: (i) it is venomous; (ii) not native to Utah; and (iii) a bite from which may cause substantial physical injury to humans ordinarily requiring medical treatment. (b) Species of the Order Crocodilia (crocodiles, gharials, caimans, and alligators) are classified as prohibited.",
+          "note": "Every crocodilian is a prohibited species, alligators named. A prohibited species needs a variance from the Wildlife Board before any certificate of registration, and its possession limit is zero, so there is no pet route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, 7.1.1, with Del. Code tit. 3 § 7201",
+          "quote": "When an exotic is kept as a pet, the owner or custodian of the exotic must apply to the Department for an Individual Permit on a form supplied by the Department.",
+          "note": "Delaware's reptile class expressly includes crocodilians and none is exempt, so an alligator needs an Individual Permit. Crocodilians appear otherwise only in 7.5.2.10, which bars Sales Permit holders from breeding them. The Individual Permit is issued per animal for three years, after the Department is satisfied the animal will be held in a sturdy, escape-proof primary enclosure inside a secondary enclosure that keeps the public out, and a background check may be run. Delaware's only outright refusals at 4.7 are the gila monster, the beaded lizard and the komodo dragon. County and municipal ordinances were not checked.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "TN": {
+          "status": "banned",
+          "sourceId": "tn-70-4-403",
+          "cite": "Tenn. Code Ann. §§ 70-4-403(1), 70-4-404(c)(1)",
+          "quote": "(i) Order Crocodylia: Crocodiles and alligators--All species;",
+          "note": "Alligators are named in Class I. Class I \"may only be possessed by zoos, circuses and commercial propagators\", and § 70-4-404(c)(1) says that after 25 June 1991 \"no new animals shall be brought into possession under authority of a personal possession permit\".",
+          "grandfathered": {
+            "before": "1991-06-25",
+            "detail": "Persons legally possessing Class I wildlife before 25 June 1991 must hold an annual personal possession permit and may keep the lineage up to three animals per species; no new animal may be brought into possession under a personal possession permit."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "NC": {
+          "status": "permit",
+          "sourceId": "nc-113-129",
+          "cite": "G.S. §§ 14-417.2(a), 113-129(15), (16), 113-272.5(a)",
+          "quote": "In addition, this definition includes members of the following groups which are on the federal list of endangered or threatened species: wild amphibians, wild reptiles except sea turtles inhabiting and depending upon coastal fishing waters,",
+          "note": "The reptile housing statute leaves the American alligator out by name, so the alligator is a wildlife question. § 113-129(15) counts as wild animals any wild reptiles on the federal list of endangered or threatened species, and the alligator is on that list, so holding one alive needs a captivity license, which § 113-272.5(a) says may not issue for an animal acquired \"merely as a pet\".",
+          "localOverride": true,
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "AR": {
+          "status": "banned",
+          "sourceId": "ar-code-1200",
+          "cite": "Codes 12.01, 12.02",
+          "quote": "It is unlawful to hunt, buy, sell or possess an American alligator (Alligator mississippiensis) or other crocodilian species, or any part, nest or eggs.",
+          "note": "The only exception for a live alligator is Code 12.01(C): a written permit or letter of authorization for display and education, which only established facilities such as state and federal parks, zoos, aquariums and nature centers may hold. The alligator is also a game animal under Code 01.00.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "ID": {
+          "status": "unclear",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06; § 200.01",
+          "quote": "non-venomous or non-dangerous reptiles and amphibians",
+          "note": "The American alligator is non-venomous, which on the literal wording makes it a conventional pet exempt from any permit, but \"non-dangerous\" is not defined and a crocodilian is hard to call that. If it is not a conventional pet, it needs a Fish and Game captive possession license. The Agriculture deleterious list has no reptile.",
+          "verifiedOn": "2026-10-08"
+        },
+        "IA": {
+          "status": "banned",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(8); §§ 717F.3, 717F.4",
+          "quote": "A member of the order crocodilia, including but not limited to alligators, caimans, crocodiles, and gharials.",
+          "note": "The crocodilian clause names alligators. § 717F.3 bars owning, possessing, breeding or bringing one into the state, and the only private route was the § 717F.4 registration of animals already held on 1 July 2007.",
+          "grandfathered": {
+            "before": "2007-07-01",
+            "detail": "An owner in possession on 1 July 2007 could keep the animal after implanting an electronic identification device within sixty days and registering with the department by 31 December 2007. No new route exists."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "KY": {
+          "status": "banned",
+          "sourceId": "ky-301-2-082",
+          "cite": "301 KAR 2:082 §§ 4(2)(a), 5, 6(3)",
+          "quote": "(2) Except as established in Sections 5 and 6 of this administrative regulation, a person shall not import, transport, or possess the following inherently dangerous exotic wildlife: (a) Alligators or caimans (Family Alligatoridae);",
+          "note": "The first entry on the inherently dangerous list names alligators. The American alligator has never lived wild in Kentucky, so it is exotic wildlife under § 1. The only routes left are an AZA-accredited facility and the commissioner's exemption in § 5, which is open to municipal zoos, colleges, circuses and earlier exempted facilities, not private keepers.",
+          "grandfathered": {
+            "before": "2005-07-13",
+            "detail": "A person who legally possessed the animal before 13 July 2005 may keep it for its life with veterinary records, acquisition papers or other proof, but may not replace it, breed it or transfer it."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "RI": {
+          "status": "permit",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.6(A)(9); § 3.9(A)-(C); § 3.17",
+          "quote": "9. \"Exotic animal\" or \"Exotic wild animal\" means any vertebrate or invertebrate other than those defined as domestic animals, native wildlife, or exempt exotic animals.",
+          "note": "The reptile list in § 3.17 exempts turtles, some snakes and many lizards but no crocodilian, so the American alligator is an exotic animal that needs an exotic animal possession permit from the Division of Agriculture. § 3.9(A) makes that permit available to private persons for animals § 3.7 does not expressly prohibit, and § 3.7 does not name it.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.05(b), Table 800.2; Fis 804.02(b)(4)",
+          "quote": "(b) A permit shall be issued only to a person in the permittee category(ies), as defined in Fis 802.01, and cited in Table 800.2 as follows: ... Reptiles 5 Alligator Alligatoridae, spp",
+          "note": "Fis 804.02(b)(4) excepts alligators from the free exotic reptile class, and the Alligatoridae row in Table 800.2 is category 5 only, so no permit can issue to an individual.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MO": {
+          "status": "conditional",
+          "sourceId": "mo-578-023",
+          "cite": "§ 578.023(1); 3 CSR 10-9.110(2)",
+          "quote": "any deadly, dangerous, or poisonous reptile, or any deadly or dangerous reptile over eight feet long, in any place other than a properly maintained zoological park, circus, scientific, or educational institution, research laboratory, veterinary hospital, or animal refuge, unless he or she has registered such animals with the local law enforcement agency in the county in which the animal is kept",
+          "note": "Not banned, and the American alligator is not native to Missouri, so it needs no Wildlife Code permit under 3 CSR 10-9.110(2). The statute does not define a dangerous reptile, so whether a small one must be registered is not settled, but one over eight feet plainly must be registered with the county law enforcement agency.",
+          "verifiedOn": "2026-10-08"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-3(a), (b), (d); K.S.A. 32-1301(d)",
+          "quote": "(a) Subject to federal or state law or rules and regulations, exotic wildlife species may be imported, possessed, sold, offered for sale or purchased, provided the exotic wildlife was legally captured, raised, exported, possessed, sold or purchased or any combination of these activities in its place of origin. (b) Exotic wildlife may be possessed without limit in time and number.",
+          "note": "Not native to Kansas, so exotic wildlife under 115-20-3(d), which may be possessed without limit in time and number if legally obtained where it came from. The dangerous regulated animal statute reaches only big cats, bears and non-native venomous snakes, and the 115-18-10 prohibited list has no reptile.",
+          "verifiedOn": "2026-10-01"
+        },
+        "SC": {
+          "status": "banned",
+          "sourceId": "sc-123-151",
+          "cite": "S.C. Code Regs. 123-150.2, 123-151.4(A); S.C. Code §§ 50-15-20(C), 50-15-40(D)",
+          "quote": "A. A person shall not possess any species listed as endangered or threatened and in need of management pursuant to S.C. Code Sections 50-15-10, et seq. except by permit issued by the Department.",
+          "note": "The American alligator is first on South Carolina's list of nongame species in need of management in Regulation 123-150.2, and § 50-15-20(C) makes possessing one unlawful except as the regulations provide. The permits that exist are for scientific, zoological, educational and propagation purposes under § 50-15-40(D), plus the alligator propagator permit for a licensed facility with setbacks and a five-foot chain-link fence. None is a pet permit.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "MT": {
+          "status": "banned",
+          "sourceId": "mt-arm-12-6-22",
+          "cite": "ARM 12.6.2215(6)(b)",
+          "quote": "(6) The following reptiles are classified as prohibited: ... (b) Alligatoridae family;",
+          "note": "The whole alligator family is prohibited, and Crocodylidae separately at (h).",
+          "verifiedOn": "2026-10-01"
+        },
+        "WV": {
+          "status": "permit",
+          "sourceId": "wv-20-2-13",
+          "cite": "W. Va. Code §§ 20-2-13, 20-1-2; W. Va. C.S.R. § 74-1-3",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "note": "A American alligator is a reptile from outside West Virginia: § 20-1-2 counts reptiles as wildlife with no nativity limit, so one brought in from outside the state needs an importation permit from the director under § 20-2-13, the Burmese python's position. The board's Dangerous Wild Animal list names no snake and no crocodilian, although § 19-34-5 allowed both.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "AK": {
+          "status": "legal",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(b)",
+          "quote": "Any nonvenomous reptile Class Reptilia (crocodile, alligator, snake, turtle, or lizard)",
+          "note": "The clean list clears every nonvenomous reptile and names \"crocodile, alligator\" in its own gloss, so an American alligator may be possessed without a permit. § 92.029(e) adds that an endangered species still needs a federal permit.",
+          "verifiedOn": "2026-10-01"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-40-3-24",
+          "cite": "SDCL 40-3-24; ARSD 12:68:18:03",
+          "quote": "No person may bring into the state or possess in the state any nondomestic mammal unless the mammal is allowed in the state pursuant to § 40-3-25.",
+          "note": "South Dakota's bar is written for mammals only, so a American alligator is outside it, and Game, Fish and Parks has no captive wildlife chapter for reptiles. A free entry permit under 12:68:18:03 still applies to bringing any nondomestic animal into the state.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AL": {
+          "status": "banned",
+          "sourceId": "al-220-2-06",
+          "cite": "r. 220-2-.06; r. 220-2-.26(3)",
+          "quote": "The following animals are hereby designated as game animals: Bear, Beaver, Coyote, Deer, Opossum, Eastern Cottontail and Swamp Rabbit, Raccoon, Squirrel, Nutria, Fox, Mountain Lion (Cougar), Groundhog, Bobcat, Red Wolf, Feral Swine (Wild Hog or Wild Pig), and Alligator.",
+          "note": "Alabama designates the alligator a game animal, and 220-2-.26(3) makes it unlawful to keep a live protected wild animal except under a permit issued before that amendment, the reading the raccoon and black bear cells rest on.",
+          "verifiedOn": "2026-10-08"
+        },
+        "IN": {
+          "status": "permit",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)(5); 9-11-2(c)",
+          "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+          "note": "A American alligator under five feet needs no permit, but one at least five feet long is a Class III animal, and a Class III permit must be obtained before taking possession, with a recapture plan and a cage inspection. 312 IAC 9-5-6 also counts a crocodilian of five feet or more as a dangerous reptile.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "ND": {
+          "status": "unclear",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(3)(b)(5), (6); 48.1-09-02-01",
+          "quote": "b. Category 3 species of nontraditional livestock includes the following species and their hybrids: ... (2) Big cats, including mountain lion, jaguar, leopard, lion, tiger, and cheetah. (3) Bears. (4) Wolves. (5) Venomous reptiles and nonvenomous injurious reptiles. (6) Primates.",
+          "note": "A American alligator is nonvenomous and not on the federal injurious wildlife list, so whether it is a \"nonvenomous injurious reptile\" in category 3 depends on what the undefined word means. If it means federally listed, the animal is in no category and needs only an importation permit number and a veterinary certificate, plus the board review 48.1-09-01-02(6) requires for an unlisted species. If it means harmful, a crocodilian is the obvious case and needs a license.",
+          "verifiedOn": "2026-10-01"
+        },
+        "WY": {
+          "status": "banned",
+          "sourceId": "wy-ch69",
+          "cite": "Ch. 69 § 8(d); 50 CFR 17.11",
+          "quote": "An importation/possession permit shall not be issued for importation or possession of the live cold-blooded wildlife in this section, except as otherwise specified. ... (d) Endangered and threatened wildlife listed in 50 CFR 17.11.",
+          "note": "50 CFR 17.11 lists the American alligator as threatened by similarity of appearance, and § 8(d) bars a permit for anything on that list, threatened as well as endangered, so the free reptile clause in § 10(a)(i) does not reach it.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MS": {
+          "status": "unclear",
+          "sourceId": "ms-40-5-2-3",
+          "cite": "Rule 2.3(A)(1)(b)(iii); Rule 8.4(A); Rule 5.3",
+          "quote": "b. Species not regulated by this rule include: i. endangered reptiles and amphibians; ii. reptiles and amphibians considered game species (Bullfrog, Pig Frog, Bronze Frog); iii. American Alligator;",
+          "note": "The nongame rule carves the American alligator out as regulated elsewhere, and Rule 8.4's closed list of game and furbearing animals does not include it. The only other alligator rules on the department's record are the hunting season rules, which govern harvest under an alligator possession permit, not keeping a live animal. No Mississippi rule read here says whether a live alligator may be kept.",
+          "verifiedOn": "2026-10-08"
+        },
+        "LA": {
+          "status": "banned",
+          "sourceId": "la-76-v-701",
+          "cite": "LAC 76:V.701",
+          "quote": "d.No person other than a licensed alligator farmer or licensed nongame quadruped exhibitor shall possess live alligators at any time other than by a permit issued by the department upon request for use in displays and educational purposes, and by holders of valid department issued permits for scientific purposes.",
+          "note": "The native alligator is governed by the alligator rule rather than the reptile rule, and it limits live alligators to licensed farmers and exhibitors, both business licenses, and to display, educational and scientific permits. Bringing a live alligator into the state also needs written permission.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "OK": {
+          "status": "permit",
+          "sourceId": "ok-800-25-7",
+          "cite": "OAC 800:25-7-7(8); 800:25-7-8(5)(D)",
+          "quote": "(8) It is unlawful to possess an American Alligator without appropriate permit from the Department.",
+          "note": "Oklahoma requires a Department permit by name for the American alligator and keeps a statewide closed season on it, so one may not be taken from the wild. The rule does not say which permit or who may hold it.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NE": {
+          "status": "unclear",
+          "sourceId": "ne-37-477",
+          "cite": "Neb. Rev. Stat. §§ 37-477(1), 37-806(1); 166 NAC 10 § 001.03",
+          "quote": "(1) No person shall keep in captivity in this state any wild birds, any wild mammals, any nongame wildlife in need of conservation as determined by the commission under section 37-805, or any wildlife determined to be an endangered or threatened species under the Endangered Species Act or section 37-806 without first having obtained a permit to do so as provided by section 37-478 or 37-479.",
+          "note": "The reptile rule reaches only Nebraska natives, which would leave a alligator free, but 50 CFR 17.11 lists the American alligator as threatened by similarity of appearance, § 37-806(1) makes every federally threatened species threatened in Nebraska, and § 37-477(1) requires a captive permit for any such wildlife. The captive wildlife rules name no reptile, so whether and how that permit would issue for a pet is not settled.",
+          "verifiedOn": "2026-10-08"
+        }
+      },
+      "article": "/blog/american-alligator-legal-guide/"
     }
   }
 }

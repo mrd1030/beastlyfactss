@@ -1,0 +1,44 @@
+# Ala. Admin. Code r. 220-2-.06, Game Animals Designated
+
+sourceId: al-220-2-06
+jurisdiction: AL
+url: https://admincode.legislature.state.al.us/api/rule/220-2-.06
+fetched: 2026-10-08
+fetch notes: The /api/rule/<number> endpoint returns the rule as a PDF to plain curl; pdftotext -layout.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+Conservation                                      Rule 220-2-.06
+
+    ALABAMA DEPARTMENT OF CONSERVATION AND NATURAL RESOURCES
+                       ADMINISTRATIVE CODE
+
+                             CHAPTER 220-2
+                        GAME AND FISH DIVISION
+
+
+220-2-.06       Game Animals Designated.
+
+The following animals are hereby designated as game animals: Bear,
+Beaver, Coyote, Deer, Opossum, Eastern Cottontail and Swamp
+Rabbit, Raccoon, Squirrel, Nutria, Fox, Mountain Lion (Cougar),
+Groundhog, Bobcat, Red Wolf, Feral Swine (Wild Hog or Wild Pig),
+and Alligator.
+Author: N. Gunter Guy, Jr.
+Statutory Authority: Code of Ala. 1975, §§9-2-7, 9-2-8, 9-2-12.
+History: Authority: Code of Ala. 1975, §§9-2-7, 9-2-8, 9-2-12.
+History: Filed September 30, 1982. Amended: March 20, 1990; April
+21, 1992; September 16, 1992. Amended: Filed May 20, 2014;
+effective June 24, 2014. Amended: Filed June 14, 2016; effective
+July 29, 2016. Amended: Filed May 9, 2017; effective June 23,
+2017.
+
+Penalty:    As provided by law.
+
+
+
+
+                                  2-.06-1

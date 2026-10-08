@@ -148,6 +148,9 @@ moves verification dates forward; a research sitting never does.
 | `AR-ar-codebook-reptiles-alligator.txt` | Codebook rows the other two AR files lack: 09.07, the 09.17 venomous permit and F1.08, R1.02's venomous genera, and Chapter 12's bar on alligators and every other crocodilian |
 | `WY-wy-50cfr17-11-rows.txt` | The 50 CFR 17.11 rows that Wyoming, Missouri and South Carolina pick up by reference: tiger and Lemuridae endangered, lion endangered or threatened by subspecies, American alligator and common caiman threatened by similarity of appearance |
 | `AR-ar-20-19-601-primates.txt` | Ark. Code §§ 20-19-601 to 610: apes, baboons and macaques barred, every other primate lawful with county sheriff registration within 30 days |
+| `FL-fl-68a-25-002.txt` | 68A-25.002(1), the American alligator possession bar, permit only, with the exhibitor transport and sale provisions |
+| `TX-tx-game-deer-alligator.txt` | Texas natives the four famous rules miss: the live game animal bar (63.002), the game breeder license that covers gray squirrels (ch. 44), the deer breeder permit (43.351 to 43.357) and the live alligator bar (31 TAC 65.353) |
+| `AL-al-220-2-06-game-animals.txt` | Rule 220-2-.06, the game animal list: opossum, squirrel, deer, mountain lion and alligator among them |
 
 ## Reading the awkward ones
 
