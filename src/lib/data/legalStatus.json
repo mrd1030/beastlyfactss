@@ -4471,11 +4471,11 @@
           "verifiedOn": "2026-10-01"
         },
         "NH": {
-          "status": "legal",
+          "status": "conditional",
           "sourceId": "nh-fis800",
-          "cite": "Fis 804.05, Table 800.2",
-          "quote": "5   Tiger; Golden Tabby, Siberian, White Siberian, Bengal   Panthera tigeris",
-          "note": "The only Bengal in the controlled table is the tiger color morph. Neither Prionailurus bengalensis nor domestic cat hybrids appear, and domestic cats are not wildlife under these rules.",
+          "cite": "Fis 802.03(f); Fis 804.04(b); Fis 802.05(c)",
+          "quote": "The provisions of this chapter shall not apply to an owner or person possessing a wolf hybrid, as defined in RSA 466-A:1, VII, or a domesticated show or pet cat registered with a nationally or internationally recognized breeding association or registry which certifies the pedigree and registration of such cat to be without any wild felid parentage for a minimum of 3 generations.",
+          "note": "New Hampshire exempts a registered cat from the whole of Fis 800 once its certified pedigree shows no wild felid parentage for three generations, which reads as F4 and later. A registered Bengal that meets it is outside the chapter. Anything short of that is inside it, and there the Bengal is on no list: neither the Asian leopard cat nor its hybrids appear in any table, the only Bengal in the controlled table being the tiger color morph. Fis 804.04(b) designates every unlisted species prohibited, and the waiver for an unlisted species is closed by Fis 802.05(c) to every permittee category but exhibitors. Registration and the certified pedigree are both part of the exemption, so an unregistered cat fails it at any generation.",
           "verifiedOn": "2026-10-01"
         },
         "MO": {
@@ -4553,20 +4553,22 @@
           "verifiedOn": "2026-10-01"
         },
         "ND": {
-          "status": "legal",
-          "sourceId": "nd-36-01",
-          "cite": "§ 36-01-01(3)",
-          "quote": "\"Domestic animal\" means dog, cat, horse, bovine animal, sheep, goat, bison, farmed elk, llama, alpaca, or swine.",
-          "note": "Cats are domestic animals under the statute and no hybrid clause appears anywhere in the chapter.",
+          "status": "permit",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(2)(b); 48.1-09-01-03(1)",
+          "quote": "Category 2 species of nontraditional livestock includes the following species and their hybrids, all nondomestic ungulates, including all deer (cervidae) and pronghorn, zebras, nondomestic cats not listed in category 3",
+          "note": "North Dakota writes hybrids into the category sentence itself: category 2 is the listed species \"and their hybrids\", and nondomestic cats not in category 3 are among them. Category 3 stops at the mountain lion, jaguar, leopard, lion, tiger and cheetah, so the Asian leopard cat is a category 2 cat and a Bengal is a category 2 hybrid, and 48.1-09-01-03(1) requires the license before the animal is acquired, with the premises approved first. The counter-reading is NDCC 36-01-00.1(3), which lists \"cat\" as a domestic animal, while nontraditional livestock means wildlife held in confinement; a late-generation Bengal registered as a domestic cat has the better claim to that. No generation line is written anywhere.",
+          "permitFor": "personal",
           "verifiedOn": "2026-10-01"
         },
         "WY": {
-          "status": "legal",
+          "status": "permit",
           "sourceId": "wy-ch10",
-          "cite": "§ 2(i)",
-          "quote": "\"Domestic Animals\" means those populations of animals, their viable gametes (eggs and sperm), fertilized eggs, or any hybrid or transgenic product thereof, which through long association with humans have been bred to a degree which has resulted in genetic changes of the species to an extent that makes them unique and distinguishable from wild individuals of their species. For the purpose of this regulation, only the following animals are considered domestic: ...cat (Felis catus),",
-          "note": "The definition folds hybrids into the domestic category rather than carving them out, which is the opposite of how Rhode Island and Alaska handle the same question.",
-          "verifiedOn": "2026-10-01"
+          "cite": "Ch. 10 §§ 2(z), 3, 13(d)",
+          "quote": "\"Warm-Blooded Wildlife\" means every live wild mammal and bird, their viable gametes (eggs and sperm), fertilized eggs, or any hybrid (including hybrids between wildlife and wildlife, and hybrids between wildlife and domestic or domesticated animals) or any transgenic product thereof.",
+          "note": "Wyoming defines warm-blooded wildlife to include \"hybrids between wildlife and domestic or domesticated animals\" in terms, and a Bengal, the Asian leopard cat crossed with the domestic cat, is that hybrid. Section 3 requires a permit before importing or possessing any live warm-blooded wildlife; the leopard cat is on neither the Section 11 prohibited list nor the domestic list; and Section 13(d) leaves it to a permit that \"may be authorized upon approval\", which is discretion rather than entitlement. The pull the other way is § 2(i), whose domestic animal definition also mentions \"any hybrid\" of the domestic populations and lists cat (Felis catus). But that list is closed, names the mule separately where it means a hybrid, and § 2(z) is the clause written for exactly this cross. No generation line is drawn.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
         },
         "MS": {
           "status": "legal",
@@ -4610,11 +4612,11 @@
           "localOverride": true
         },
         "VA": {
-          "sourceId": "va-4vac15-30-40",
-          "cite": "§ 15-30-40(A)",
-          "status": "unclear",
-          "quote": "Felidae   All Species   Cats*",
-          "note": "The table restricts the cat family without exception and without a hybrid clause, which is the problem. A Bengal is registered as Felis catus but carries leopard cat ancestry, and the rule offers no filial generation line to settle which side it falls. Ask the Department of Wildlife Resources before buying.",
+          "status": "legal",
+          "sourceId": "va-4vac15-20-50",
+          "cite": "4VAC15-20-50; 4VAC15-30-40(A)",
+          "quote": "\"Nonnative (exotic) animal\" means those species and subspecies of animals not naturally occurring in Virginia, excluding domestic and naturalized species. The following animals are defined as domestic animals: Domestic dog (Canis familiaris), including wolf hybrids. Domestic cat (Felis catus), including hybrids with wild felines.",
+          "note": "The answer is in the definitions rather than the permit table. 4VAC15-30-40 requires a special permit for every animal on its table, and the table takes the whole cat family. But that section governs nonnative (exotic) animals only, 4VAC15-20-50 defines those as excluding domestic species, and the same section defines the domestic cat as Felis catus \"including hybrids with wild felines\". A Bengal is a hybrid of a domestic cat and the Asian leopard cat, so it is a domestic animal and the Felidae row never reaches it, at any generation.",
           "verifiedOn": "2026-10-01"
         },
         "HI": {
@@ -4717,21 +4719,20 @@
           "verifiedOn": "2026-10-01"
         },
         "AZ": {
-          "status": "restricted",
-          "sourceId": "az-r12-4-406",
-          "cite": "R12-4-406(E)",
-          "quote": "Hybrid wildlife, as defined in R12-4-401, that result from the interbreeding of at least one parent species of wildlife that is listed under this Section are regulated by this Section.",
-          "note": "Arizona is one of the few states with an express rule on hybrids, and it points the wrong way for the Bengal. The whole order Carnivora is restricted, which takes in the Asian leopard cat behind the breed, and subsection E then says hybrids resulting from the interbreeding of at least one listed parent species are regulated by the same section. No filial generation cutoff appears, so on the text a late-generation Bengal is caught alongside an F1. The counterweight is subsection D, which exempts domestic animals, defined as a species that does not exist in the wild, and a Bengal is a cross rather than a species. Recorded restricted rather than banned or legal, because the permit regime plainly reaches it and pet keeping is not clearly ruled out.",
-          "verifiedOn": "2026-10-01"
+          "status": "legal",
+          "sourceId": "az-r12-4-401",
+          "cite": "Ariz. Admin. Code R12-4-401; R12-4-406(C)(1), (D)",
+          "quote": "\"Hybrid wildlife\" means an offspring from two different wildlife species or genera. Offspring from a wildlife species and a domestic animal species are not considered wildlife.",
+          "note": "Arizona restricts the whole order Carnivora, which takes in the Asian leopard cat behind the breed, and R12-4-406(C)(1) makes hybrid wildlife restricted wherever one parent species is restricted. But that clause reaches only hybrid wildlife as R12-4-401 defines it, and the definition stops at crosses of two wildlife species: offspring of a wildlife species and a domestic animal species \"are not considered wildlife\". A Bengal descends from a leopard cat and a domestic cat, so it is not wildlife at all, and the Commission's live wildlife rules do not reach it at any generation. Read the hybrid clause in R12-4-406 without R12-4-401 and the Bengal looks restricted; read them together and it is a cat.",
+          "verifiedOn": "2026-10-08"
         },
         "DE": {
-          "status": "permit",
+          "status": "conditional",
           "sourceId": "de-903",
-          "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
-          "quote": "Unless specifically exempt from the permitting requirement as presented in regulation 6.1, all persons who would own or have custody of an exotic animal must first obtain a permit issued by the Department.",
-          "note": "The Bengal is a hybrid of a wild mammal, which § 7201 names expressly alongside wild mammals themselves, and no cat appears on the exempt list. So an Individual permit is required and the filial generation does not enter into it, because the statute reaches the hybrid as such. The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
-          "permitFor": "personal",
-          "verifiedOn": "2026-10-01"
+          "cite": "3 Del. Admin. Code 903-3.0, 903-6.1, 903-6.2; Del. Code tit. 3 § 7201",
+          "quote": "\"Hybrid of a wild mammal\" means a mammal whose parents are different varieties of the same species or belong to different but closely allied species, one parent being a wild mammal not native to or generally found in Delaware and the other parent being a domestic mammal native to or generally found in Delaware.",
+          "note": "Delaware's statute requires a permit before anyone possesses a \"hybrid of a wild mammal\", and the regulation defines the term by the animal's parents: one a non-native wild mammal, the other a domestic mammal. An F1 Bengal, an Asian leopard cat crossed with a domestic cat, is exactly that animal and needs the $25 Individual permit under regulation 6.2, since no cat is on the exempt list at 6.1. A later-generation Bengal has a Bengal parent rather than a leopard cat, so on the regulation's own words it is not a hybrid of a wild mammal and falls outside the permit requirement. The statute leaves the term undefined, so the F2 line is the regulation's reading rather than a filial rule anyone wrote down.",
+          "verifiedOn": "2026-10-08"
         },
         "CO": {
           "status": "legal",
