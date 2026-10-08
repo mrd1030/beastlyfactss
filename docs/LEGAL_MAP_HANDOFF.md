@@ -300,6 +300,10 @@ turned up on its way through.
   with the serval guide, the hub line and the OH state note corrected. The bobcat cell was left: it
   rests on the § 1533.71 fur-bearer license.
 
+- **Resolved 2026-10-08: the Ohio and North Carolina fennec fox cells.** Both went to `unclear` on
+  the bare "fox" in R.C. 1531.01(W) and G.S. 113-129(7c), matching the arctic fox, with the fennec
+  guide's counts and table corrected.
+
 - **Kansas answers a native herp in three regulations and the famous one is none of them. Priority 1
   is done and it moved nine cells.** K.S.A. 32-1301, the dangerous regulated animal statute the whole
   Kansas column had been written against, names six cats, bears and non-native venomous snakes.
@@ -681,14 +685,6 @@ turned up on its way through.
   an animal as a pet." Read with § 4-71-6.5(b)(3), a Part B animal can come in for a business, zoo or
   research body but not for a keeper, which is how the new wallaby cell reads it (`banned`, permitFor
   "commercial-exhibition-research").
-- **The fennec fox cells for Ohio and North Carolina read `legal` on the same bare "fox" that made the
-  arctic fox `unclear` there. Confirmed.** R.C. 1531.01(W), in `OH-oh-wildlife-code.txt`:
-  "'Fur-bearing animals' includes minks, weasels, raccoons, skunks, opossums, muskrats, fox, beavers,
-  badgers, otters, coyotes, and bobcats", with no species or nativity limit; the Ohio fennec cell
-  rests only on the dangerous wild animal list. G.S. 113-129(7c), in `NC-nc-wildlife-definitions.txt`:
-  "Game Animals. - Bear, fox, rabbit, squirrel, white-tailed deer, ...", read with (16), which carries
-  the definitions to wild species kept in captivity; the North Carolina fennec cell rests only on
-  § 14-417. Both should match their arctic fox cells.
 
 ## Articles
 

@@ -9351,11 +9351,13 @@
           "verifiedOn": "2026-10-08"
         },
         "OH": {
-          "status": "legal",
-          "sourceId": "oh-935-01",
-          "note": "The canid entries are gray wolves and African wild dogs only.",
-          "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "status": "unclear",
+          "sourceId": "oh-1531-01",
+          "cite": "R.C. 1531.01(W), (X); § 1533.71(A)",
+          "quote": "\"Fur-bearing animals\" includes minks, weasels, raccoons, skunks, opossums, muskrats, fox, beavers, badgers, otters, coyotes, and bobcats.",
+          "note": "The dangerous wild animal list does not reach it, since its canids are gray wolves and African wild dogs. What arguably does is the fur-bearing animal definition, which names \"fox\" with no species and no nativity limit, inside a definition of wild animals that takes in \"all other wild mammals\". On that reading the fennec fox needs a § 1533.71 license; read as Ohio's own foxes, it needs nothing. The Division of Wildlife has published nothing on it.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
         },
         "TX": {
           "status": "unclear",
@@ -9591,13 +9593,13 @@
           "verifiedOn": "2026-10-01"
         },
         "NC": {
-          "sourceId": "nc-14-417",
-          "cite": "§ 14-417",
-          "status": "legal",
-          "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "No statewide rule reaches it. § 153A-131 hands the question to counties, several of which have used it.",
-          "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "status": "unclear",
+          "sourceId": "nc-113-129",
+          "cite": "G.S. §§ 113-129(7c), (15), (16); 113-272.5(a); 14-417",
+          "quote": "(7a) Fur-bearing Animals. - Beaver, mink, muskrat, nutria, otter, skunk, and weasel; bobcat, opossum, and raccoon when lawfully taken with traps. ... (7c) Game Animals. - Bear, fox, rabbit, squirrel, white-tailed deer, and, except when trapped in accordance with provisions relating to fur-bearing animals, bobcat, opossum, and raccoon.",
+          "note": "No statewide exotic animal statute reaches it, but the game animal definition names \"fox\" with no species, and § 113-129(16) extends the wildlife definitions to animals of wild species kept in captivity. Read that way, a fennec fox is a game animal needing a captivity license that is not issued for a pet; read as North Carolina's own foxes, nothing reaches it. Counties may regulate it under § 153A-131.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
         },
         "VA": {
           "sourceId": "va-4vac15-30-40",
