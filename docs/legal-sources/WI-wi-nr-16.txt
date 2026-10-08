@@ -1,0 +1,92 @@
+SOURCE: Wisconsin: Wis. Stat. §§ 169.01(9), (14), 169.15 and 169.18, and Wis. Admin. Code NR 16.11 and NR 16.15
+sourceId: wi-nr-16 (NR 16) / wi-169 (statute sections)
+jurisdiction: WI
+URL: https://docs.legis.wisconsin.gov/code/admin_code/nr/001/16/11
+     https://docs.legis.wisconsin.gov/code/admin_code/nr/001/16/15
+     https://docs.legis.wisconsin.gov/statutes/statutes/169/15
+     https://docs.legis.wisconsin.gov/statutes/statutes/169/01
+FETCHED: 2026-10-08 (plain curl; tags stripped)
+
+READ THIS FIRST. WI-wi-ch-169.txt answers the exotic carnivores: 169.04(4)(b) frees a nonnative wild
+animal unless it is endangered, threatened or harmful. It does not answer the natives, because the
+seventeen native exemptions in 169.04(4)(a) stop at weasels and opossums. A native carnivore needs a
+licence under 169.04(1)(b), and the licence that fits a keeper is the Class B captive wild animal farm
+licence, which 169.15(1)(b) says the department SHALL issue to any person who applies and pays, and
+which NR 16.15(1) applies to "commercial operations and hobbyists" alike. Two more things decide cells.
+NR 16.11 designates bears and wolf-dog hybrids, "and subsequent generations", as harmful wild animals,
+and NR 16.15(4) then writes neutering and identification conditions for wolf-dog owners, so the
+hybrid is licensed rather than banned. And 169.01(9) makes a species on the federal threatened list an
+"endangered or threatened species" for this chapter, which is what takes the Canada lynx out of it.
+
+==== Wis. Stat. § 169.01(9) and (14) ====
+169.01(9)(9) “Endangered or threatened species” means those species of wild animals that are indigenous to the United States or Canada and are identified on the federal list of endangered and threatened species or on the Wisconsin list of endangered and threatened species.
+169.01(14)(14) “Fur-bearing wild animal” includes badger, beaver, bobcat, coyote, fisher, red fox, gray fox, lynx, marten, mink, muskrat, opossum, otter, raccoon, skunk, weasel, and wolf.
+
+==== Wis. Stat. §§ 169.15 and 169.18 ====
+169.15169.15 Captive wild animal farm licenses. 
+169.15(1)(1) Issuance. 
+169.15(1)(a)(a) The department shall issue a Class A captive wild animal farm license to operate a captive wild animal farm that grosses $10,000 or more in annual sales to any person who files a proper application for the license and who pays the applicable fee.
+169.15(1)(b)(b) The department shall issue a Class B captive wild animal farm license to operate a captive wild animal farm that grosses less than $10,000 in annual sales to any person who files a proper application for the license and who pays the applicable fee.
+169.15(1)(d)(d) The applicant shall specify the location of the enclosures for the wild animals on the application.
+169.15(2)(2) Authorization. 
+169.15(2)(a)(a) A captive wild animal farm license authorizes the holder of the license to possess, propagate, kill, exhibit, purchase, and sell live captive wild animals of the species specified by the department on the license.
+169.15(2)(b)(b) A captive wild animal farm license authorizes the killing of captive wild animals only by the holder of the license or an employee of the holder of the license.
+169.15(3)(3) Calculation of annual sales. 
+169.15(3)(a)(a) The calculation of annual sales under sub. (1) and par. (b) shall be based on sales from the prior year that involve live captive wild animals that are any of the following:
+169.15(3)(a)1.1. Native wild animals.
+169.15(3)(a)3.3. Harmful wild animals.
+169.15(3)(a)4.4. Endangered or threatened species.
+169.15(3)(b)(b) For the first year that a person is issued a captive wild animal farm license, the person shall be issued a Class B captive wild animal farm license, unless one of the following applies:
+169.15(3)(b)1.1. The person operated a game bird and animal farm licensed under s. 29.867, 1999 stats., on January 1, 2003, that grossed $10,000 or more in annual sales.
+169.15(3)(b)2.2. The person elects to be issued a Class A captive wild animal farm license.
+169.15(4)(4) Control of wild animals. 
+169.15(4)(a)(a) A person holding a captive wild animal farm license shall control the wild animals at all times in the manner required by the department and shall keep the wild animals at the locations specified on the application for the license.
+169.15(4)(b)(b) If any member of the family ursidae, felidae, or canidae escapes from its enclosure or fenced area on a captive wild animal farm, the person holding the captive wild animal farm license shall notify the department within 24 hours after the escape.
+169.15(5)(5) Rules. The department may promulgate rules to establish additional standards, limitations, and requirements for captive wild animal farm licenses and for captive wild animal farms, including fencing of the farms.
+169.15 HistoryHistory: 2001 a. 56.
+169.18169.18 Wild fur farm license. 
+169.18(1)(1) Issuance. The department shall issue a wild fur farm license to any person who files a proper application and who pays the applicable fee.
+169.18(2)(2) Authorization; limitations. 
+169.18(2)(a)(a) A wild fur farm license authorizes all of the following:
+169.18(2)(a)1.1. The holder of the license to possess and propagate live muskrat, beaver, coyote, raccoon, otter, and mink on the land subject to the license.
+169.18(2)(a)2.2. The holder of the license and other persons authorized by the holder to take the live fur-bearing wild animals specified in subd. 1. or kill by trapping the fur-bearing wild animals specified in subd. 1.
+169.18(2)(a)3.3. The holder of the license to sell the live fur-bearing wild animals specified in subd. 1. to persons authorized to possess the fur-bearing wild animals.
+169.18(2)(b)(b) Section 29.501 applies to the possession and selling of the raw furs and dressed furs of the fur-bearing wild animals that are possessed as authorized under a wild fur farm license.
+169.18(2)(c)(c) The number of otter that are taken or killed may not exceed the quota established by rule by the department under sub. (5) (a).
+169.18(3)(3) Eligible land. 
+169.18(3)(a)(a) Except as provided in par. (b), a wild fur farm licensed under this section shall be in a single parcel and may not exceed 640 acres.
+
+==== NR 16.11 Harmful wild animals ====
+NR 16.11NR 16.11 Harmful wild animals. The following wild animals are designated as harmful wild animals:
+NR 16.11(1)(1) Ursidae. Members of the family ursidae commonly known as bears.
+NR 16.11(2)(2) Felidae. The species felis concolor commonly known as cougars.
+NR 16.11 NoteNote: As of December 20, 2022, the possession of cougars is heavily restricted federally due to the passage of the Big Cat Public Safety Act.
+NR 16.11(3)(3) Suidae. Members of the family suidae including pure wild strains of swine commonly known by the name European, Eurasian, Russian or hybrids with domestic strains. Feral domestic strains include animals which are confined but which exhibit characteristics of being in an untamed state, and hybrids of wild or feral with domestic swine. Included in this definition are any swine which is captured in the wild or from an unconfined environment after it has existed in the wild or unconfined environment outside of an enclosure for more than 7 days, regardless of its physical characteristics, except that in emergency situations the department may designate a period of less than 7 days.
+NR 16.11(4)(4) Anatidae. The species anserinae Cygnus, commonly known as mute swans.
+NR 16.11(5)(5) Canidae. Hybrids of the species Canis lupus, C. lycaon, or C. rufus commonly known as wolves and the species Canis familiaris, domestic dogs, and subsequent generations from such matings. These animals are commonly called wolf-dog hybrids or wolf dogs.
+NR 16.11(5)(a)(a) Canids may be presumed to be wolf-dog hybrids if they have some wolf-like physical characteristics and the owner presents such animals verbally or in writing to be a wolf-dog hybrid. Canids with very distinct wolf-like characteristics may be determined by the Department to be wolves or wolf-dog hybrids.
+NR 16.11(5)(b)(b) An owner may challenge such a determination by providing the department with genetic testing results. The department will be responsible for the costs of testing if the animal is determined to have only the DNA of domestic dogs.
+NR 16.11 HistoryHistory: CR 03-030: cr. Register October 2003 No. 574, eff. 11-1-03; CR 09-052: am. (1), cr. (3) to (5) Register June 2010 No. 654, eff. 7-1-10.
+
+==== NR 16.15 Captive wild animal farm ====
+NR 16.15NR 16.15 Captive wild animal farm. 
+NR 16.15(1)(1) Application. This section is developed pursuant to s. 169.15, Stats., to establish qualifications and conditions for a captive wild animal farm and applies to all captive wild animal farms including commercial operations and hobbyists.
+NR 16.15(2)(2) Pen requirement. 
+NR 16.15(2)(a)(a) Confinement. No person subject to ch. 169, Stats., may possess captive wild animals unless the animals held in captivity are confined at all times to appropriate pens except wolf-dog hybrids which are under the immediate control of a person with a leash. Wolf-dog hybrids are not allowed in a dog park or similar area which is open to the public. Pens shall meet the specifications of ss. NR 16.30 to 16.38 except as otherwise authorized by this chapter.
+NR 16.15(2)(b)(b) Proper care. No person subject to ch. 169, Stats., may possess captive wild animals unless the animals held in captivity are provided proper care meeting the environmental enrichment requirements of s. NR 16.30 (7), and the animal health and husbandry requirements of s. NR 16.30 (8).
+NR 16.15(2)(c)(c) Variation approval. Variations in pen construction other than specified in ss. NR 16.30 to 16.38 shall be submitted to the department and may be approved by the department if found to comply with the intent and purpose of this section.
+NR 16.15(2)(d)(d) Waterfowl. All waterfowl bred, propagated or held on a captive wild animal farm shall be enclosed within a covered pen throughout the open season for hunting waterfowl in the state when written or oral notice is given to the licensee by the department or its agents.
+NR 16.15(2)(e)(e) Mute swans. All mute swans held on a captive wild animal farm shall be confined within a covered pen except as follows:
+NR 16.15(2)(e)1.1. Mute swans that are pinioned by 4 weeks of age shall be confined but do not require a covered pen.
+NR 16.15(2)(e)2.2. Mute swans that are both sexually neutered and pinioned by 4 weeks of age need not be confined in a pen but shall be confined to the owner’s property and not allowed to roam freely on waters of the state unless those waters are entirely bordered by lands owned or leased by the owner of the mute swans.
+NR 16.15(2)(f)(f) Compliance with local regulations. No initial captive wild animal farm application may be approved for the possession of harmful wild animals unless the application is accompanied by written assurance that the application is in compliance with local ordinances and zoning regulations.
+NR 16.15(3)(3) Wild or feral swine and their hybrids. 
+NR 16.15(3)(a)(a) Only individuals who possessed wild or feral swine on July 1, 2010 may be licensed under s. 169.15, Stats., to possess wild or feral swine. Licenses shall be applied for within 90 days of July 1, 2010. Animals must be held in strict confinement and possessed for the purpose of producing food for humans. Except as provided in ss. 169.02 (1) and 169.15 (2) (b), Stats., and for custom slaughter or mobile custom slaughter as defined by the Department of Agriculture, Trade and Consumer Protection, animals may not be killed on premises. Animals may only be transported live directly to facilities licensed for wild or feral under ch. 169, Stats., or to a slaughter establishment as defined by the Department of Agriculture, Trade and Consumer Protection.
+NR 16.15(3)(b)(b) Wild or feral swine must have an official individual identification as defined by s. ATCP 10.01 (70).
+NR 16.15(3)(c)(c) An individual who possesses wild or feral swine under this rule must keep herd inventory records which include the age, sex and official individual identification of the animals. These records must be available to the department upon request.
+NR 16.15 NoteNote: Animal markets, slaughter and meat establishments that meet the requirements of s. NR 16.15 (3) are defined and regulated by the Department of Agriculture, Trade, and Consumer Protection in s. ATCP 10.01 (90) and ch. ATCP 55.
+NR 16.15 NoteNote: A person who is licensed under s. 169.15, Stats., to possess wild or feral swine may also need a permit under ch. NR 40, Wis. Adm. Code. Section NR 40.04 (2) (f) 2. and 3., identifies live Sus domestica (feral domestic swine), Sus scrofa (Russian boar), and other wild swine, including their hybrids, as “prohibited invasive species”. With certain exceptions, under s. NR 40.04 (3), no person may possess, transport, transfer or introduce prohibited invasive species unless the person has a permit issued under s. NR 40.06.
+NR 16.15(4)(4) Wolf-dog hybrids. 
+NR 16.15(4)(a)(a) A person who owns a wolf-dog hybrid shall have the animal sexually neutered by six months of age.
+NR 16.15(4)(b)(b) A person who owns a wolf-dog hybrid shall have the animal individually tattooed, implanted with a microchip, or otherwise permanently marked with information identifying the owner.
+NR 16.15 HistoryHistory: CR 03-030: cr. Register October 2003 No. 574, eff. 11-1-03; CR 09-052: am. (2) (a), (e) 1. and 2., cr. (3) and (4) Register June 2010 No. 654, eff. 7-1-10.

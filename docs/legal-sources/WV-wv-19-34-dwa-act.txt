@@ -1,0 +1,87 @@
+SOURCE: W. Va. Code §§ 19-34-2, 19-34-4, 19-34-5 and 19-34-6, the Dangerous Wild Animals Act
+sourceId: wv-19-34
+jurisdiction: WV
+URL: https://code.wvlegislature.gov/19-34-4/
+FETCHED: 2026-10-08 (plain curl with a browser User-Agent; site chrome stripped)
+
+READ THIS FIRST. The list itself is W. Va. C.S.R. § 74-1-3, cached in
+WV-wv-two-lists-and-a-native-bar.txt. These are the statute sections around it. § 19-34-4(a) is the
+ban and § 19-34-4(b) the only permit, which goes to a person who already lawfully had the animal
+before the rules took effect, 5 April 2022. § 19-34-2(2) and § 19-34-5(c)(2) keep "wildlife" as
+defined in § 20-1-2 off the list, which is why the native black bear is excluded by name and why a
+West Virginia native such as the bobcat is governed by Chapter 20 instead.
+
+§19-34-2. Definitions. As used in this article unless otherwise specified: (1) "Board" means the
+Dangerous Wild Animal Board; (2) "Dangerous wild animal" means a mammal, bird, reptile, amphibian or
+aquatic animal, including a hybrid, that is dangerous to humans, other animals or the environment
+due to its inherent nature and capability to do significant harm. "Wildlife", as defined by section
+two, article one, chapter twenty of this code, "livestock", as defined in section two, article
+ten-b, chapter nineteen of this code, and "domestic animals", as defined in this section, are
+excluded. (3) "Domestic animal" means an animal which, through extremely long association with
+humans, has been bred to a degree which has resulted in genetic changes affecting the temperament,
+color, conformation or other attributes of the species to an extent that makes it unique and
+distinguishable from a wild individual of its species, and includes an animal that has been bred as
+a companion animal. (4) "Person" means an individual, partnership, corporation, organization, trade
+or professional association, firm, limited liability company, joint venture, association, trust,
+estate or other legal entity and an officer, member, shareholder, director, employee, agent or
+representative thereof.
+
+§19-34-4. Prohibition on the possession of a dangerous wild animal; exceptions. (a) Except as
+otherwise provided in this article, a person may not possess a dangerous wild animal. (b) Pursuant
+to the provisions of this article, the board may issue a permit for the possession of a dangerous
+wild animal if the applicant was in legal possession of the animal prior to the effective date of
+the rules promulgated under this article.
+
+§19-34-5. Dangerous Wild Animal Board; composition; duties. (a) The Dangerous Wild Animal Board is
+established with the following members: The Commissioner of the Department of Agriculture, the
+Secretary of the Department of Health and the Director of the Division of Natural Resources, or
+their designees. The board shall develop a comprehensive list of dangerous wild animals pursuant to
+the rule-making authority of this article. (b) The Commissioner of Agriculture shall serve as the
+chair, the Secretary of the Department of Health as the vice chair and the Director of the Division
+of Natural Resources shall serve as the secretary of the board. The Department of Agriculture shall
+provide necessary staff and support services to the board as needed. (c) The board shall: (1)
+Establish minimum caging or enclosure requirements for various dangerous wild animals; (2) Create a
+comprehensive list of dangerous wild animals, excluding wildlife, livestock and domestic animals as
+defined herein. The list may include, but not be limited to: (A) Bears; (B) Big cats; (C) Canids;
+(D) Primates; (E) Constrictor snakes greater than six feet, and venomous snakes; and (F) Alligators
+and caimans; (3) Enforce the permit requirements and set the fees for permits; (4) Issue, renew,
+revoke and maintain records for dangerous wild animal permits; (5) Annually review the list of
+prohibited dangerous wild animals to determine if animals should be added or subtracted from the
+list; and (6) Address any other issues required by this article.
+
+§19-34-6. Permit applications, requirements, issuance and revocation. (a) Application. - A person
+applying for a permit to possess a dangerous wild animal shall submit an application that includes
+the following: (1) A fee established by the board for each dangerous wild animal; (2) The name,
+address and telephone number of the applicant, and the address where the dangerous wild animal is
+located; (3) A description of each dangerous wild animal, including the scientific name, common
+name, permanent and unique identifier, and any information that would aid in the identification of
+the animal; and (4) A description of the exact location on the property and a description of the
+enclosure or cage where each dangerous wild animal is kept. (b) Permit requirements and
+restrictions. - The application shall state, and the person shall acknowledge his or her
+understanding, that: (1) He or she may not breed, receive or replace a dangerous wild animal; (2) He
+or she shall notify the sheriff or humane officer in his or her county immediately if the dangerous
+wild animal escapes; (3) He or she may not allow the dangerous wild animal to come into physical
+contact with a person other than the permitee, the animal's designated handler, an employee of a
+law-enforcement agency enforcing this article or a veterinarian administering medical treatment or
+care; (4) He or she has not been convicted for an offense involving the abuse or neglect of any
+animal; (5) He or she has not had a permit or license concerning the care, possession, exhibition,
+breeding or sale of a dangerous wild animal revoked or suspended by a governmental agency; (6) He or
+she shall permanently mark each dangerous wild animal with a unique identifier; (7) He or she shall
+maintain records for each dangerous wild animal, including veterinary records, acquisition papers,
+the purchase date and other records that prove ownership of the dangerous wild animal; (8) He or she
+presents proof of liability insurance in an amount of not less than $300,000 with a deductible of
+not more than $250 for each occurrence of property damage, bodily injury or death caused by a
+dangerous wild animal possessed by the person; (9) He or she shall notify the board not less than
+three days before a dangerous wild animal is transferred to another person out of state; (10) He or
+she may not transfer dangerous wild animals in the state without the written consent of the board;
+(11) He or she shall notify the board of any plans to move or change his or her address, and may not
+move the animal without the written consent of the board. However, in the event of a medical
+emergency, a dangerous wild animal may be transported to a licensed veterinarian's facility for
+treatment and care if the animal is at all times confined sufficiently to prevent escape; and (12)
+He or she shall comply with all rules promulgated by the board pursuant to the provisions of this
+article. (c) The board may issue a permit to possess a dangerous wild animal if it determines that
+the applicant has met the requirements of this article. (d) The board shall take final action upon
+all completed permit applications within thirty days of receipt if the application is uncontested,
+or within ninety days if the application is contested. (e) A permit to possess a dangerous wild
+animal is valid for one calendar year and must be renewed annually.
+

@@ -108,6 +108,28 @@ moves verification dates forward; a research sitting never does.
 | `TN-tn-1660-01-18.txt` | Tennessee's rule chapter that earlier sittings could not read: no mammal added to Class I, the monk parakeet added to Class V, and cross-class hybrids put in the least restrictive class |
 | `AZ-az-r12-4-401.txt` | Arizona's hybrid wildlife definition, which takes every wild and domestic cross out of wildlife, and the relettered R12-4-406(C) and (D) it governs |
 | `FL-fl-fwc-captive-faq.txt` | FWC's answer on wild and domestic hybrids, naming the Savannah, Bengal and Chausie as domesticated and unregulated |
+| `AR-ar-addenda-mammals.txt` | The mammal rows of Arkansas Code Addenda R1.01 to R1.03, extracted from the full codebook, plus R1.03(B), "prohibited until evaluated", which bars any species on none of the three lists |
+| `DE-de-7-c7-sc6.txt` | Del. Code tit. 7, ch. 7, subchapter VI, the furbearer subchapter that bars possessing a live red fox, raccoon or skunk, with DNREC's notice on keeping wild animals as pets |
+| `GA-ga-dnr-legal-pets.txt` | Georgia DNR's Guide to Legal Pets: the native species that "may not be held as a pet regardless of its origin or morphology", and the wolf hybrid and hybrid-generation statements |
+| `ID-id-25-236.txt` | Idaho Code § 25-236, the Agriculture statute barring possession of "any fox, skunk or raccoon" outside fur farms and public institutions |
+| `IN-in-312-9-11-class-ii.txt` | 312 IAC 9-11-1, -2, -3 and -7: applicability, first permit and renewal, and the Class II list (Indiana's furbearers plus fifteen small cats) that IN-in-312-iac-9.txt lacked |
+| `KS-ks-dra-and-furbearers.txt` | K.S.A. 32-1302 to 32-1304, the dangerous regulated animal sections, with K.A.R. 115-5-2 on possessing furbearers and K.A.R. 115-20-4, the possession permit for mountain lions, wolves and bears |
+| `LA-la-fox-and-quadrupeds.txt` | La. R.S. 56:8(92) and (151) in full, LAC 76:V.113 (the live fox rule that bars any fox taken outside Louisiana), 115.B to D.1 (with the wolf-dog expiry) and 131.D.3 (wildlife rescuer) |
+| `ME-me-c7-wolf-hybrids.txt` | 09-137 CMR ch. 7, the wolf hybrid provisions and the § 7.07 permit types |
+| `MI-mi-wolf-dog-and-carnivores.txt` | Michigan's Wolf-dog Cross Act, Large Carnivore Act MCL 287.1103 and 287.1104, and R 299.1027, the state endangered mammal list |
+| `MN-mn-17-351.txt` | Minn. Stat. §§ 17.351 and 17.352, fur farming, with § 97A.105 subd. 1 on game farms |
+| `MO-mo-3csr10-9-223.txt` | Missouri 3 CSR 10-4.110(4), 10-9.223(2) and (3), the import bar on live raccoons, foxes and coyotes, and the Approved Confined Wildlife list |
+| `MS-ms-captivity-and-nuisance.txt` | Mississippi Rule 8.4 (game and furbearing animals in captivity, from Cornell), Rule 7.1 (nuisance animals, the live fox and skunk bar) and the operative parts of Rule 8.3 as revised April 2025 |
+| `MT-mt-rabies-and-menagerie.txt` | MCA §§ 50-23-101 and -102, the rabies-law ban on possessing a skunk, fox, raccoon or bat, and §§ 87-4-801 to -804, the wild animal menagerie permit for bears and large cats |
+| `NJ-nj-7-25-10.txt` | N.J.A.C. 7:25-10, the captive game animal regulations, with the Division's captive game synopsis and its policy on importing captive rabies vector species |
+| `OR-or-635-044.txt` | OAR 635-044-0430 to 0470, protected wildlife and the holding of live native wildlife |
+| `TX-tx-fur-and-threatened.txt` | Tex. Parks & Wild. Code ch. 71 on fur-bearing animals, including § 71.005(c), and the state threatened and endangered species list |
+| `UT-ut-r58-14-3.txt` | Utah Admin. Code R58-14-3, the Department of Agriculture and Food's raccoon and coyote possession bar |
+| `VT-vt-20-ch-193.txt` | 20 V.S.A. chapter 193, Domestic Pet or Wolf-Hybrid Control, §§ 3541 and 3581 |
+| `WA-wa-rabies-and-endangered.txt` | WAC 246-100-197, the rabies rule barring acquiring or importing any bat, skunk, fox, raccoon or coyote, with RCW 16.30 and RCW 77.15.120 |
+| `WI-wi-nr-16.txt` | Wis. Stat. §§ 169.01, 169.15 and 169.18 and Wis. Admin. Code NR 16.11 and NR 16.15, captive wild animal licensing and the wolf hybrid provisions |
+| `WV-wv-19-34-dwa-act.txt` | W. Va. Code §§ 19-34-2, -4, -5 and -6, the Dangerous Wild Animals Act around the board's list: the ban, the pre-rule-only permit, and the exclusion of native wildlife |
+| `WY-wy-23-1-101-definitions.txt` | Wyo. Stat. § 23-1-101(a) definitions (furbearing, predatory, protected and trophy game animals) and § 23-2-305, the license to capture furbearers for domestication |
 
 ## Reading the awkward ones
 

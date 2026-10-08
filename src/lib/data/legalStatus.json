@@ -1694,6 +1694,61 @@
       "title": "Florida Fish and Wildlife Conservation Commission, Captive Wildlife frequently asked questions",
       "url": "https://myfwc.com/license/captive-wildlife/faq/",
       "note": "FWC's own reading of the hybrid clause at 68A-6.002(1)(d). The answer to \"Do I need a permit for a hybrid wild/domestic animal?\" restates the rule, that a hybrid indistinguishable from the wild parent is regulated at that parent's class, says wolf-dog hybrids are regulated case by case, and closes: \"Savannah cats, Bengal cats, and Chausie cats are considered domesticated species and are not regulated by the Captive Wildlife Office.\""
+    },
+    "nj-7-25-10": {
+      "title": "N.J.A.C. 7:25-10, Possession, Propagation, Liberation, Sale and Importation of Game Animals and Game Birds",
+      "url": "https://nj.gov/dep/fgw/pdf/captv_regs.pdf",
+      "note": "The rule that answers New Jersey's native furbearers, which subchapter 4 never reaches because it governs only exotic and nongame species and these have trapping seasons. 10.5(a) bars possessing any game animal without a permit, 10.6(a) names the raccoon, striped skunk, red and gray fox, coyote, black bear and bobcat, and 10.7(a)1 offers an Individual Hobby permit \"for hobby purposes or as pets\". 10.8(a)1 requires the animal not to be of wild origin. 10.10 makes nondomestic dogs, bears and nondomestic cats potentially dangerous, and 10.11(a)6 says they \"may not be kept as a household pet except when compelled by the infancy of the animal\"."
+    },
+    "or-635-044": {
+      "title": "OAR 635-044-0430 to 0470, Protected Wildlife and the Holding of Live Black Bear, Cougar, Bobcat, Wolf, Raccoon and Skunk",
+      "url": "https://secure.sos.state.or.us/oard/view.action?ruleNumber=635-044-0460",
+      "note": "The ODFW division that answers Oregon's native carnivores, which neither ORS 609.305 nor division 56 reaches. 0460 requires a Wildlife Holding, Exhibitor/Animal Entertainment Industry or Sanctuary permit for black bears, cougars, bobcats, wolves, raccoons and skunks, sourced from an out-of-state USDA breeder, and 0460(3) confines black bears, cougars, bobcats and wolves acquired after 20 January 2017 to AZA, exhibitor and sanctuary facilities. 0470 grandfathers pets legally held on 20 January 2017 whose owners applied by 21 January 2018. 0460(5) puts the burden of proving a wolf-cross or bobcat-cross is a hybrid on the owner. 0430(1)(a) protects every federally listed species. 0430, 0440, 0450 and 0470 are at the same address with their own rule numbers."
+    },
+    "wa-wac-246-100-197": {
+      "title": "WAC 246-100-197, Rabies: measures to prevent human disease (Washington State Department of Health)",
+      "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=246-100-197",
+      "note": "The rule that answers the rabies-vector carnivores in Washington, and it is a health rule rather than a wildlife one. Subsection (5)(a) bars all persons from acquiring, selling, bartering, exchanging, giving, purchasing, distributing or trapping to retain any bat, skunk, fox, raccoon or coyote, except a zoological park, animal exhibitor, research facility or wildlife rehabilitator, and (5)(b) bars importing one except by those bodies under an entry permit from the Department of Agriculture. \"Fox\" is unqualified. The rule also defines a canid hybrid, including any animal its owner represents to be a wolf hybrid, and orders a hybrid that bites someone euthanized and tested, but does not bar keeping one."
+    },
+    "ut-r58-14-3": {
+      "title": "Utah Admin. Code R58-14-3, raccoons and coyotes (Agricultural and Wildlife Damage Prevention Board)",
+      "url": "https://www.law.cornell.edu/regulations/utah/Utah-Admin-Code-R58-14-3",
+      "note": "The rule that answers the raccoon in Utah, which Table 3b-1 leaves out because R657-3b-1(2) hands raccoons and coyotes to the Agricultural and Wildlife Damage Prevention Board. Subsection (2) declares it unlawful to import, distribute, relocate or possess a live raccoon or coyote, and (3) allows only an organization or corporation to request a per-animal variance for research or exhibition. Read from Cornell LII because adminrules.utah.gov serves nothing readable by URL; amended effective 23 May 2023."
+    },
+    "de-7-c7-sc6": {
+      "title": "Del. Code tit. 7, ch. 7, subchapter VI, §§ 789, 791 and 795, live red foxes, skunks and raccoons",
+      "url": "https://delcode.delaware.gov/title7/c007/sc06/index.html",
+      "note": "The DNREC statute that answers Delaware's native carnivores, which the Agriculture exotic animal chapter never reaches. § 789 bars selling, buying or possessing a live red fox, except at a State or local government animal exhibition; § 791 lets a holder of five or more foxhounds raise wild whelps under permit and release them by 15 August; § 795 bars selling or possessing a live skunk or raccoon \"for any purpose without a permit from the Division\"."
+    },
+    "id-25-236": {
+      "title": "Idaho Code § 25-236, Possession, sale, trade, barter, exchange and importation of animals",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/title25/t25ch2/sect25-236/",
+      "note": "An Agriculture statute that bars anyone from possessing, selling, trading or importing \"any fox, skunk or raccoon\", with two exceptions: fur farms holding domestic fur-bearing animals, and public parks, zoos, museums and educational institutions with an Agriculture permit. There is no pet exception and no species limit on \"any fox\". IDAPA 13.01.10.200.07(a) cross-references it."
+    },
+    "ks-115-5-2": {
+      "title": "K.A.R. 115-5-2, Furbearers and coyotes; possession, disposal, and general provisions",
+      "url": "https://www.law.cornell.edu/regulations/kansas/K-A-R-115-5-2",
+      "note": "Subsection (b) is the possession rule for a live Kansas furbearer: one legally taken during a furbearer season \"may be possessed only through the last day of the season in which taken\", which rules out keeping a wild-caught raccoon, fox, skunk or bobcat as a pet. Coyotes alone may be held live without limit in time under (d). Read from Cornell LII, since ksoutdoors.gov is blocked to this container."
+    },
+    "mt-50-23-102": {
+      "title": "MCA §§ 50-23-101 and 50-23-102, rabies control: prohibition of possession of wild animals",
+      "url": "https://mca.legmt.gov/bills/mca/title_0500/chapter_0230/part_0010/section_0020/0500-0230-0010-0020.html",
+      "note": "Defines \"wild animal\" for this part as a skunk, fox, raccoon or bat and bars possessing one except in a fur-bearing enterprise, a zoo exhibit with no public contact, or research, or if held for 6 months before 1 January 1982. Cached as MT-mt-rabies-and-menagerie.txt."
+    },
+    "ms-40-2-8-4": {
+      "title": "40 Miss. Admin. Code Part 2, Rule 8.4, Regulations for Game and Furbearing Animals in Captivity",
+      "url": "https://www.law.cornell.edu/regulations/mississippi/40-Miss-Code-R-SS-2-8-4",
+      "note": "Defines game and furbearing animals as a closed list (white-tailed deer, black bear, gray and fox squirrels, two rabbits, raccoon, opossum, bobcat, river otter, muskrat, mink, weasel) and prohibits possessing any of them alive, except public zoos, veterinarians, transport to care and permitted enclosures. Amended 10/22/2017. Not on mdwfp.com's rules record page, so read from Cornell LII. Cached as MS-ms-captivity-and-nuisance.txt."
+    },
+    "la-76-v-131": {
+      "title": "LAC 76:V.131, Wildlife Rehabilitation Program (wildlife rescuer, D.3)",
+      "url": "https://www.doa.la.gov/media/ln5kb5vu/76.docx",
+      "note": "D.3 lets an individual hold a sick, injured or orphaned squirrel, opossum, rabbit or chipmunk, and on notice a raccoon or skunk, for up to 90 days, and keep it for life on a special purpose and possession permit once trained and a vet finds it non-releasable. Pet-trade use is barred. Cached as LA-la-fox-and-quadrupeds.txt."
+    },
+    "de-dnrec-wild-pets": {
+      "title": "Delaware DNREC, The perils of wild pets: DNREC warns against keeping non-domesticated animals",
+      "url": "https://dnrec.delaware.gov/outdoor-delaware/the-perils-of-wild-pets-dnrec-warns-against-keeping-non-domesticated-animals/",
+      "note": "The enforcing agency's own reading. It says state regulations \"explicitly forbid Delawareans from owning\" native wildlife, with an exception for permitted rehabilitators, and that when asked about skunks from out-of-state breeders \"the agency informs the inquirer this is not allowed\". The site refuses curl from this container and was read through WebFetch."
     }
   },
   "animals": {
@@ -24677,6 +24732,485 @@
         }
       },
       "article": "/blog/savannah-cat-legal-guide/"
+    },
+    "raccoon": {
+      "name": "Raccoon",
+      "scientific": "Procyon lotor",
+      "jurisdictions": {
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(K)(4)",
+          "quote": "Family Procyonidae-All species-(D)",
+          "note": "The whole procyonid family is restricted, marked (D) as detrimental, and the four exceptions written under it (the two pandas, the ringtail and the cacomistle) are only moved to the welfare category, not freed. The raccoon is also a native California animal, but § 671 reaches any live animal of a listed family whatever its origin, and the only route for a native one is the Native Species Exhibiting permit for unreleasable rehabilitation animals. No permit type covers pet keeping, so it is a ban.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-dnr-legal-pets",
+          "cite": "DNR Guide to Legal Pets; R. 391-4-8-.05(1)(a)3; O.C.G.A. § 27-5-4(b)(1)",
+          "quote": "The following list of species native to Georgia may not be held as a pet regardless of its origin or morphology.",
+          "note": "The raccoon is on DNR's list of natives that may not be held as a pet, and the phrase \"regardless of its origin\" takes in a captive-bred animal from another state. It is also caught a second time by the license rule, which reaches all of Order Carnivora, and § 27-5-4(b)(1) issues those licenses only to the animal trade and to public exhibitors. No pet route exists either way.",
+          "verifiedOn": "2026-10-08"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6-5",
+          "cite": "§ 4-71-6.5, Restricted Animal List Part A",
+          "quote": "FAMILY Procyonidae ... Procyon lotor racoon",
+          "note": "Named by binomial on Part A, the research and exhibition list. Part A animals come in only to a university or a licensed exhibitor under permit and may not be kept as pets.",
+          "verifiedOn": "2026-10-01"
+        },
+        "PA": {
+          "status": "banned",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code §§ 137.1(a)(4), (10), (11), 137.31(a)",
+          "quote": "In the family Procyonidae. All species of raccoons.",
+          "note": "Named on the Game Commission's prohibited list, and the raccoon is a Pennsylvania native, so both other doors are shut as well: § 137.31(a) bars keeping one taken from the wild here and § 137.1(a)(11) bars one captive bred in another state. The import and transfer permits in § 137.1(d) and (e) go only to menagerie, exotic wildlife, dealer and propagation permittees, and the raccoon is not exotic wildlife under 34 Pa.C.S. § 2961, so no pet route exists.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)",
+          "quote": "a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following",
+          "note": "None of the seven permitted categories covers a raccoon, and the District bans by omission from a closed list, including animals \"born or raised in captivity\". The exceptions in (j)(2) to (j)(4) reach zoos, federally licensed exhibitors and rehabilitators, not keepers.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "§ 161.01(b)(5)",
+          "quote": "All Procyonidae: All raccoon (eastern, desert, ring-tailed cat), kinkajou, cacomistle, cat-bear, panda and coatimundi.",
+          "note": "The whole family is prohibited and the raccoon is named first. There is no permit for a private keeper, only the zoo, laboratory, veterinary and permitted temporary exhibit settings the section opens with. § 161.01(d) lets the Department consent to an owner removing a seized animal to a jurisdiction where it is not prohibited, which is the only relief in the article.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-10",
+          "cite": "N.J.A.C. 7:25-10.5(a), 10.6(a)15, 10.7(a)1, 10.8(a)1",
+          "quote": "\"Individual Hobby\" may be issued to persons holding game animals for hobby purposes or as pets;",
+          "note": "The raccoon has a trapping season, so it is a game animal and the exotic and nongame rule in subchapter 4 does not reach it. 7:25-10 does: 10.6(a) names Procyon lotor among game animals needing a possession permit, and 10.7(a)1 issues an Individual Hobby permit for pets. The animal must not come from wild stock under 10.8(a)1, so it has to be captive bred. The Division's rabies vector policy also bars importing a raccoon from any state with a rabies variant other than the raccoon variant, even from a breeder.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "ME": {
+          "status": "banned",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.06(4)",
+          "quote": "Unclassified Species: A person may not possess any species that has not been categorized. Any species which has not been identified as a Prohibited, Restricted, or Unrestricted species will not be eligible for a permit under this chapter, however a request may be made to review the categorization of a species subject to section 7.06(5).",
+          "note": "Procyon lotor is in none of Maine's four buckets. The only procyonids chapter 7 names are the kinkajou in Category 1 and three coatis in Category 2, Procyonidae is not among the Category 1 families, and the Unrestricted List's carnivore section is the domestic ferret alone. So § 7.06(4) bars it and says it is not eligible for a permit. The raccoon is also a Maine native, the wild-take exemption at 12 M.R.S. § 12152(1-B) covers only reptiles, amphibians and invertebrates, and § 7.11(3)(A) would bar a native from the Category 2 permit even if it were listed there.",
+          "verifiedOn": "2026-10-01"
+        },
+        "WI": {
+          "status": "permit",
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(1)(b), 169.15(1)(b); NR 16.15(1)",
+          "quote": "The department shall issue a Class B captive wild animal farm license to operate a captive wild animal farm that grosses less than $10,000 in annual sales to any person who files a proper application for the license and who pays the applicable fee.",
+          "note": "The raccoon is a native fur-bearing wild animal under § 169.01(14), and the seventeen native animals § 169.04(4)(a) frees from licensing stop at weasels and opossums, so § 169.04(1)(b) requires a license. The one that fits a keeper is the Class B captive wild animal farm license, which the department must issue to any applicant and which NR 16.15(1) applies to hobbyists as well as businesses; it names the species held, and pens must meet NR 16.30 to 16.38. The animal must be legally obtained under § 169.04(1)(a), which a wild-caught kit is not.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "FL": {
+          "status": "permit",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.002(1)(c); 68A-6.003(8), (13)",
+          "quote": "Fox, skunks, bats, raccoons, or whitetail deer taken from the wild shall not be possessed as personal use wildlife and shall be possessed only in accordance with permits issued under Rules 68A-9.002, 68A-9.006, F.A.C., or Section 379.3761, F.S.",
+          "note": "The raccoon is in neither Class I nor Class II, so it is Class III, and FWC's own personal pet page names the raccoon among common Class III species. That means the no-cost Permit to Possess Class III Wildlife for Personal Use under 68A-6.003(8), and the animal is not on the 22-item no-permit list at 68A-6.003(14). The one bar is 68A-6.003(13): a raccoon taken from the wild may never be a personal pet, so it has to be captive bred.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-11-0103",
+          "cite": "6 NYCRR § 180.1(b)(5), (c); ECL §§ 11-0511, 11-0103(2)(c)",
+          "quote": "no person shall import, transport, possess, purchase, barter, transfer, sell, offer for sale, exchange, propagate or release or cause to be released within New York State any of the following live native or non-native dangerous animals including those which are captive bred in any of the following orders, families and individual species or subspecies including all subspecies and hybrids thereof: ... (5) Raccoons in the Genus Procyon;",
+          "note": "New York reaches the raccoon three ways. 180.1 lists the genus as a dangerous animal \"including those which are captive bred\", § 11-0511 names the raccoon among animals that need a license to possess at all, and § 11-0103(2)(c) makes it small game, which § 11-0107(2) bars possessing whether taken here or brought in. Licenses under 180.1(c) issue only for scientific, educational, exhibition, zoological or propagation purposes, and the 180.1(d)(2) exemption for this species is for licensed rehabilitators.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(3)(B)(xxi), (b)(3)",
+          "quote": "(xxi) A member within the family Procyonidae (including, but not limited to, common raccoon),",
+          "note": "The common raccoon is the example the rule gives for the whole procyonid family in Category Two. It is a Connecticut native, but Category Three, the natives tier that bars only import and export, applies only to an animal that is not already in Category One or Two. Subsection (b)(3) allows a Category Two animal only to a treating veterinarian, a municipal park, zoo, marine mammal park, aquarium, nature center, museum, exhibitor, laboratory or research facility, so there is no private route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(1), (12)(a)",
+          "quote": "The purpose of 321 CMR 9.01 is to list those species which are exempt from the licensing provisions of M.G.L. c. 131, § 23, and which may be imported, possessed, maintained, propagated, bought, sold, exchanged or offered for sale without a license or permit from the Division. Species not listed, or which are expressly listed as \"require(s) a permit\", are not exempt from the provisions of M.G.L. c. 131, § 23.",
+          "note": "The thirteen-entry mammal exemption list has no procyonid, so in this closed-list state the raccoon needs a § 23 license. It is also a Massachusetts native, and the only animals MassWildlife lets a person take from the wild are certain reptiles and amphibians. The license under § 23 exists on paper, but MassWildlife says permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\"",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-w0-008",
+          "cite": "Chapter W-0, § 008(B)(6)",
+          "quote": "B. The following terrestrial wildlife species or viable gametes (eggs and sperm) are hereby determined to be detrimental to existing wildlife and their habitat in Colorado, and except as authorized in writing by the Division after consideration of the criteria in Commission Regulation #1102(A)(4), their possession is prohibited. Persons who have proof of possession of those species listed in subsections 1 through 8 of this section prior to September 1, 1990, may possess the following species for the life of the animal(s). ... 6. Raccoon.",
+          "note": "Named on Colorado's prohibited list, which CPW's mammal list confirms row by row for Procyon lotor. This is a harder answer than the regulated tier: the possession itself is prohibited, and CPW's possession page uses the raccoon as its example of an animal not allowed here even where another state permits it. It is a Colorado native as well, and C.R.S. 33-6-109 bars keeping native wildlife taken from the wild.",
+          "grandfathered": {
+            "before": "1990-09-01",
+            "detail": "Proof of possession before 1 September 1990 allows the animal to be kept for its life, tagged and reported, but not sold, traded or moved within Colorado."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "AZ": {
+          "status": "restricted",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(F)",
+          "quote": "All species of the order Carnivora",
+          "note": "The restricted live wildlife list takes the whole order Carnivora, so a raccoon needs a special license. None of the R12-4-407 exemptions is a pet route. It is also an Arizona native, and taking one alive from the wild is a separate regime under R12-4-404, R12-4-405 and Commission Order 43 that needs a hunting license.",
+          "verifiedOn": "2026-10-01"
+        },
+        "OR": {
+          "status": "unclear",
+          "sourceId": "or-635-044",
+          "cite": "OAR 635-044-0450(3), 0460(1), (4), (6)(a); 0470(4)",
+          "quote": "Wildlife Exhibitor/Animal Entertainment Industry or Wildlife Sanctuary Permit is required to hold species listed in 635-044-0460 and 635-044-0480.",
+          "note": "Oregon's raccoon rule reads two ways. 0460(1) says raccoons in captivity require \"a Wildlife Holding or Wildlife Exhibitor/Animal Entertainment Industry or Wildlife Sanctuary Permit\", 0460(6)(a) caps a Wildlife Holding Permit at two raccoons, and 0460(4) requires the animal to come from an out-of-state USDA breeder, which reads as a live route for an individual. Against that, 0450(3) says an exhibitor or sanctuary permit is required to hold any 0460 species, 0470 is headed as the grandfathering of raccoons \"legally held as pets\" on 20 January 2017, and 0460(4)(d) and 0470(4) bar offering a raccoon for sale as a household pet in Oregon under ORS 498.029. A pet raccoon acquired since 2017 sits between those texts. A wild-caught one is barred by 0460(4)(b).",
+          "localOverride": true,
+          "grandfathered": {
+            "before": "2017-01-20",
+            "detail": "An animal legally held as a pet on 20 January 2017, with a Wildlife Holding Permit applied for by 21 January 2018, may be kept for its life under OAR 635-044-0470. It may not be bred, and may be transferred only to an AZA, exhibitor or sanctuary facility."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "WA": {
+          "status": "banned",
+          "sourceId": "wa-wac-246-100-197",
+          "cite": "WAC 246-100-197(5)(a), (b)",
+          "quote": "All persons are prohibited from acquiring, selling, bartering, exchanging, giving, purchasing, distributing, or trapping to retain any bat, skunk, fox, raccoon, or coyote, except a zoological park, animal exhibitor, research facility, or wildlife rehabilitator.",
+          "note": "Washington's answer for the raccoon comes from the Department of Health rather than Fish and Wildlife. The rabies rule bars any person but a zoo, a USDA exhibitor, a research facility or a rehabilitator from acquiring a raccoon by any means, and bars importing one except by those bodies on an entry permit, so a captive-bred animal from another state has no route either.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "OH": {
+          "status": "permit",
+          "sourceId": "oh-1531-01",
+          "cite": "R.C. 1531.01(W); § 1533.71(A)(2)",
+          "quote": "\"Noncommercial propagating license\" permitting the licensee to propagate game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, or fur-bearing animals and to hold the animals in captivity. Game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, and fur-bearing animals propagated or held in captivity by authority of a noncommercial propagating license are for the licensee's own use and shall not be sold. The fee for such a license is twenty-five dollars per annum.",
+          "note": "Ohio names the raccoon as a fur-bearing animal in R.C. 1531.01(W), and § 1533.71(A) requires anyone who wants \"to have ... fur-bearing animals in captivity\" to hold a license. The noncommercial propagating license is the one written for a keeper: $25 a year, for the licensee's own use, no sales. It is not on the § 935.01 dangerous wild animal list.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "TX": {
+          "status": "permit",
+          "sourceId": "tx-71-001",
+          "cite": "Parks & Wild. Code §§ 71.001(1), 71.005(c), 71.010",
+          "quote": "No person may capture or possess a live fur-bearing animal for any purpose, except as otherwise authorized by this code, unless he has acquired and possesses a fur-bearing animal propagation license.",
+          "note": "The raccoon is a fur-bearing animal under § 71.001(1), and § 71.005(c) requires a fur-bearing animal propagation license to possess a live one \"for any purpose\", so the license is a keeper's license as well as a breeder's; the fee is $50.75. The definition is headed \"wild\", which is the argument a captive-bred animal is outside it, but the word reads as describing the species rather than the animal's history. Not on the dangerous wild animal list, and fur-bearers are excluded from the nongame caps. Cities and counties may still regulate it.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "MI": {
+          "status": "permit",
+          "sourceId": "mi-captive-game",
+          "cite": "NREPA Part 427, MCL 324.42701 et seq.",
+          "quote": "badger, bobcat, red and gray fox, raccoon, coyote, beaver, otter, muskrat, mink, squirrels, striped skunk, woodchuck, opossum, ring-necked pheasant, bobwhite quail, Hungarian partridge, ducks, geese and wild turkeys",
+          "note": "The raccoon is on the closed list of game that may be held under the DNR's Permit to Hold Game in Captivity, so a keeper needs that permit. It covers captive-bred animals only, so one taken from the wild cannot be brought under it. Importing one needs an MDARD certificate of veterinary inspection, and local ordinances may prohibit it.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "IL": {
+          "status": "permit",
+          "sourceId": "il-520-5",
+          "cite": "520 ILCS 5/2.2; 5/3.25",
+          "quote": "Before any individual shall hold, possess or engage in the breeding or raising of live fur-bearing mammals, he shall first procure a fur-bearing mammal breeder permit. Fur-bearing mammal breeder permits shall be issued by the Department. The annual fee for each fur-bearing mammal breeder permit shall be $25.",
+          "note": "The raccoon is named among Illinois's protected fur-bearing mammals in § 2.2 as Procyon lotor, and § 2.2 makes possessing one unlawful except as the Wildlife Code provides. § 3.25 provides it: a fur-bearing mammal breeder permit, $25 a year, required of anyone who holds a live fur-bearer, breeding or not. The protection follows the species, not the animal's origin, so a captive-bred animal from out of state needs it too.  Illinois is a home rule state, so a municipal ordinance can be stricter and often decides it.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MN": {
+          "status": "permit",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.015, subds. 39, 45; § 97A.501, subd. 1; § 97A.401, subd. 3(a)",
+          "quote": "Except as provided in paragraph (b), special permits may be issued without a fee to take, possess, and transport wild animals as pets and for scientific, educational, rehabilitative, wildlife disease prevention and control, and exhibition purposes. The commissioner shall prescribe the conditions for taking, possessing, transporting, and disposing of the wild animals.",
+          "note": "The raccoon is small game under subd. 45, so it is a protected wild animal, and § 97A.501 bars possessing one \"unless allowed by the game and fish laws\". The game and fish laws allow it through the special permit in § 97A.401 subd. 3, which may be issued free \"as pets\", on conditions the commissioner sets; the only animal that subdivision rules out is deer. It is a discretionary permit, and the DNR decides whether to issue one. The raccoon is not a regulated animal under § 346.155 and is not on the § 17.351 fur farm list.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NV": {
+          "status": "banned",
+          "sourceId": "nv-nac-503",
+          "cite": "NAC 503.110(1)(d)",
+          "quote": "1. Except as otherwise provided in this section, the importation, transportation or possession of the following species of live wildlife or hybrids thereof, including viable embryos or gametes, is prohibited: ... (d) Mammals: ... (11) Raccoon........................................... Procyon lotor",
+          "note": "Named by binomial on the prohibited list, so importing, transporting or possessing one is barred, captive bred or not. Permits for prohibited species go only to accredited zoos, universities, scientific institutions, commercial aquaculture and nonprofit educational exhibitors. NAC 503.140(4) preserves county and city ordinances, and Clark County, Las Vegas and Henderson are all stricter than the state.",
+          "localOverride": true,
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VA": {
+          "status": "banned",
+          "sourceId": "va-29-1-521",
+          "cite": "Va. Code § 29.1-521(A)(10); 4VAC15-20-50",
+          "quote": "To hunt, trap, take, capture, kill, attempt to take, capture, or kill, possess, deliver for transportation, transport, cause to be transported, by any means whatever, receive for transportation or export, or import, at any time or in any manner, any wild bird or wild animal or the carcass or any part thereof, except as specifically permitted by law and only by the manner or means and within the numbers stated.",
+          "note": "The raccoon is a Virginia native wild animal. Because it is a Virginia native, it is not a nonnative (exotic) animal, so the permit table at 4VAC15-30-40 is not its rule, even though the table names its family; § 29.1-521(A)(10) is, and it bars possessing a wild animal except as specifically permitted. The one-per-address allowance at 4VAC15-360-10(A) reaches no mammal, and Chapter 290's permits are for exhibits and scientific collection, the reasoning the flying squirrel cell sets out.",
+          "verifiedOn": "2026-10-01"
+        },
+        "MD": {
+          "status": "banned",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1)(i)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Named in the first clause, the rabies vector clause, with the fox, the skunk and the bear. The raccoon is also native, which would bring the § 10-902 permit on top, but the criminal bar comes first. There is no private permit: the exemptions run to zoos, sanctuaries, research and licensed exhibitors. Subsection (e) preserves stricter county and municipal rules.",
+          "localOverride": true,
+          "grandfathered": {
+            "before": "2006-05-31",
+            "detail": "Lawful possession on or before 31 May 2006 may continue, but only if the keeper gave written notification to the local animal control authority by 1 August 2006, with the number and type of animals and a photograph or a description of a tattoo or microchip. That window is long closed."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Mammal | Furbear, small | Procyonidae | Procyon | Raccoon (any type) | IV | State Protected Species",
+          "note": "Named in Group IV, any type, and flagged as a state protected species, so the native animal is covered as well as an imported one. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. 19.35.7 NMAC is an importation rule, so it governs bringing the animal into New Mexico rather than keeping one already here.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "The raccoon is on none of Vermont's three lists; the only carnivores on the Domestic list are the dog, the cat and the European ferret, and the Unrestricted list's only carnivores are late-generation cat hybrids. It is also a Vermont native, and 10 V.S.A. § 4709 bars possessing a live wild animal without authorization. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "UT": {
+          "status": "banned",
+          "sourceId": "ut-r58-14-3",
+          "cite": "Utah Admin. Code R58-14-3(2), (3); R657-3b-1(2)",
+          "quote": "The Agricultural and Wildlife Damage Prevention Board, by authority granted under Title 4, Chapter 23, the Agricultural and Wildlife Damage Prevention Act, declares it unlawful to import, distribute, relocate, or possess a live raccoon (Procyon lotor) or coyote (Canis latrans).",
+          "note": "Utah hands the raccoon to its agriculture board rather than to DWR, which is why Table 3b-1 does not list it. The board's rule bars possessing a live raccoon outright, and the one exception is a per-animal variance for \"An organization or corporation\" holding raccoons for research or exhibition. No individual or pet route exists.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "DE": {
+          "status": "banned",
+          "sourceId": "de-7-c7-sc6",
+          "cite": "Del. Code tit. 7 § 795",
+          "quote": "No live skunks or raccoons shall be sold or possessed in this State or transported into this State for any purpose without a permit from the Division.",
+          "note": "The raccoon is a Delaware native, so it belongs to DNREC rather than to the Agriculture exotic animal permit. § 795 requires a Division permit to possess one for any purpose, and DNREC says state regulations forbid owning native wildlife, the exception being permitted rehabilitators. The permit exists in the statute and is not issued for a pet.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "TN": {
+          "status": "permit",
+          "sourceId": "tn-1660-01-18",
+          "cite": "Tenn. Code Ann. §§ 70-4-403(2), 70-4-401(b), 70-4-404(d)(1)(B); Tenn. Comp. R. & Regs. 1660-01-18-.03(2), (3)(b)",
+          "quote": "(2) Native species of wildlife are considered to be Class II unless specifically designated otherwise by T.C.A. § 70-4-403 or rules and regulations authorized therein. (3) ... (b) 1. The following species or groups of wildlife are deleted from the existing listing designated by legislation as Class III: (i) All native, nonpoisonous reptiles and amphibians; and (ii) All native, furbearing mammals. 2. All species or groups of wildlife deleted from Class III in part 1. are considered to be Class II wildlife.",
+          "note": "The raccoon is a native furbearing mammal, and the commission's rule moves native furbearers out of Class III and into Class II. TWRA says no one may possess a Class II species without the permit, which costs $10 an animal for personal possession, and § 70-4-401(b) requires documentary evidence of the supplier's name and address and the date acquired. The statute's Class III entry for furbearers \"raised solely for the sale of fur\" covers fur farming, not a pet. Rule .01(3) bars taking one from the wild except as statute, proclamation or rule allows.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "NC": {
+          "status": "permit",
+          "sourceId": "nc-113-272-5",
+          "cite": "G.S. §§ 113-129(7a), (7c), (15), (16); 113-272.5(a)",
+          "quote": "the wild animal or wild bird was not acquired unlawfully or merely as a pet",
+          "note": "The raccoon is a North Carolina game animal, and a fur-bearer when trapped, so it is a wild animal under § 113-129(15), and (16) carries the definition to animals of wild species raised or kept in captivity. Holding one alive needs a captivity license, and § 113-272.5(a) tells the Executive Director not to issue it unless the animal \"was not acquired unlawfully or merely as a pet\", the reasoning the flying squirrel cell rests on. ",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "AR": {
+          "status": "conditional",
+          "sourceId": "ar-code-0900",
+          "cite": "Code 09.14(A)(1)(i); Addendum R1.03",
+          "quote": "It is unlawful to possess native wildlife as pets except as follows: ... No more than 6 per household of any combination of the following animals may be possessed as pets: Hand-captured opossum, rabbit, raccoon and squirrel;",
+          "note": "Arkansas lets a household keep a raccoon it catches by hand in Arkansas, within a combined limit of six native pets, with no sale and no removal from the state. The other route, a captive-born animal bought from a permitted breeder or imported on a permit under 09.14(B), is closed for the raccoon: Addendum R1.03 says the Commission will not issue breeding, sale or importation permits for it. So the condition is a wild-caught Arkansas raccoon, in the limit.",
+          "verifiedOn": "2026-10-01"
+        },
+        "ID": {
+          "status": "banned",
+          "sourceId": "id-25-236",
+          "cite": "Idaho Code § 25-236(1), (3)",
+          "quote": "No person shall possess, offer for sale, trade, barter, exchange or importation into the state of Idaho any fox, skunk or raccoon, except as provided in subsection (2) or (3) of this section.",
+          "note": "Idaho bans the raccoon by statute. Fish and Game's rule even points at it, saying the Department of Agriculture may restrict the possession of \"fox, skunk, raccoon\" under § 25-236. The raccoon is also predatory wildlife under Idaho Code § 36-201. The only exceptions are fur farms holding domestic fur-bearing animals and public parks, zoos, museums and educational institutions with an Agriculture permit, so there is no pet route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "IA": {
+          "status": "conditional",
+          "sourceId": "ia-481a-definitions",
+          "cite": "Iowa Code §§ 481A.1(20), 481A.38, 481A.61(1), (4)",
+          "quote": "1. Except as otherwise provided by law, a licensed game breeder whose original stock is obtained from a lawful source may possess any game bird, game animal, or fur-bearing animal, or any of their parts. Possession and use of the game birds, game animals, or fur-bearing animals obtained from a licensed game breeder are lawful.",
+          "note": "The raccoon is one of Iowa's named fur-bearing animals, and § 481A.38 bars possessing one except as the chapter provides. The chapter provides two things: a licensed game breeder may hold it, and possession of a fur-bearer \"obtained from a licensed game breeder\" is lawful. So the condition is the source, an Iowa-licensed game breeder, and § 481A.61(4) bars a breeder from acquiring fur-bearers taken from the wild in Iowa. It is not a dangerous wild animal under chapter 717F. ",
+          "verifiedOn": "2026-10-01"
+        },
+        "KY": {
+          "status": "banned",
+          "sourceId": "ky-301-2-081",
+          "cite": "301 KAR 2:081 § 6(1)",
+          "quote": "(1) Except as established in Sections 2(7) and 7 of this administrative regulation, 301 KAR 2:075, and 301 KAR 3:120, a person shall not import, transport into Kentucky, or possess: ... (j) Rabies Vector Species: 1. Coyote (Canis latrans); 2. Gray fox (Urocyon cinereoargenteus); 3. Raccoon (Procyon lotor); 4. Red fox (Vulpes vulpes); 5. Spotted skunk (Spilogale putorius); 6. Striped skunk (Mephitis mephitis); or 7. Any hybrid of rabies vector species.",
+          "note": "The raccoon is named as a rabies vector species on Kentucky's prohibited natives list, so no permit route exists. § 1(3) defines native wildlife \"regardless of ... being captive-bred or taken from the wild\", so a captive-bred animal from another state is in the same position. KRS 65.877 lets local governments go further.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "RI": {
+          "status": "banned",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17 native mammal list; §§ 3.7(A), (C)",
+          "quote": "The possession of native mammals is restricted to those institutions identified within § 3.7(C) of this Part, and as exempted per § 3.8 of this Part. Terrestrial mammals considered native either currently or historically to Rhode Island and which possession as pets is prohibited include the following: ... (27) Raccoon (Procyon lotor),",
+          "note": "Named on the list of native mammals that may not be kept as pets. The raccoon is also a rabies target species under § 3.6(A)(23). Rhode Island's native definition applies \"regardless of where the animal originated\", so a captive-bred animal from out of state is no different, and § 3.7(A) separately restricts every carnivore without a licensed rabies vaccine to researchers, USDA exhibitors and AZA facilities.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.05, Table 800.2",
+          "quote": "Raccoon   Procyon lotor   5",
+          "note": "The raccoon is in the controlled table with category 5 alone. Permittee category 5 is the exhibitor category, with no category 1 for an individual, so a private keeper cannot be issued a possession permit.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MO": {
+          "status": "permit",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.420(1); 3 CSR 10-4.110(4); 3 CSR 10-9.110(1)(A); 3 CSR 10-9.223(2)",
+          "quote": "Wildlife Hobby Permit. Authorizes the holder to purchase, possess, and propagate not more than fifty (50) ring-necked pheasants and bobwhite quail, in the aggregate, for personal use only and not for sale; and to hold in captivity not more than one (1) game mammal purchased from a Missouri wildlife breeder permit holder, except that Class II wildlife, hoofed mammals, and skunks may not be held under this permit.",
+          "note": "The raccoon is a Missouri furbearer, which 3 CSR 10-20.805(33) makes a game mammal, and the take-five rule for natives expressly excludes anything listed in 3 CSR 10-4.110(4), which is game mammals and furbearers. What remains is the Wildlife Hobby Permit: one animal, bought from a Missouri wildlife breeder permit holder, held for personal use, never propagated or sold. Live raccoons may not be imported into Missouri under 3 CSR 10-9.223(2), so the animal has to come from a Missouri breeder.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "KS": {
+          "status": "unclear",
+          "sourceId": "ks-115-5-2",
+          "cite": "K.A.R. 115-5-2(b); K.S.A. 32-1002(a)(2), (b)",
+          "quote": "(b) Live furbearers legally taken during a furbearer season may be possessed only through the last day of the season in which taken.",
+          "note": "K.S.A. 32-1002(a)(2) bars possessing any wildlife unless a regulation permits it, and the raccoon is a Kansas furbearer. The only regulation that permits a live furbearer is 115-5-2(b), and it lets a Kansas-caught animal be held only to the end of the season it was taken in, so a wild-caught pet is out. What is not settled is a captive-bred animal bought in another state: 32-1002(b) lifts the possession bar for animals \"legally taken outside this state\", and no Kansas text says whether that reaches one bred in captivity. The handoff records this as the one question Kansas has never closed.",
+          "verifiedOn": "2026-10-08"
+        },
+        "SC": {
+          "status": "permit",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-20(A)(1), (B)",
+          "quote": "a furbearer, a member of the family Cervidae, a nondomestic member of the families Suidae (pigs), Tayassuidae (peccaries), Bovidae (bison, mountain goat, mountain sheep), coyote, bear, or turkey (genus Meleagris). Furbearer includes, but is not limited to, red and gray fox, raccoon, opossum, muskrat, mink, skunk, otter, bobcat, weasel, and beaver;",
+          "note": "The raccoon is named as a furbearer, and bringing one into South Carolina or possessing one for release needs a Department of Natural Resources permit. § 50-16-20(B) lets the Department issue the permit only if the animal was taken lawfully where it came from and its possession is not expected to harm the state's wildlife, and § 50-16-60's pet-trade exemption does not list it.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MT": {
+          "status": "banned",
+          "sourceId": "mt-50-23-102",
+          "cite": "MCA §§ 50-23-101(4), 50-23-102",
+          "quote": "A person may not possess a wild animal unless the person possessed it for at least 6 months prior to January 1, 1982, or it is used in a fur-bearing enterprise, contained in a zoological exhibition in a manner that it may not come in physical contact with members of the public, or acquired by an educational institution for scientific research.",
+          "note": "Montana's rabies law defines \"wild animal\" as \"a skunk, fox, raccoon, or bat\" and bars possessing one. The exceptions are a fur farm, a zoo exhibit with no public contact and research, none of which is a pet, plus a grandfather clause that ran out in 1982. Because the raccoon is native, the exotic wildlife white list does not reach it; this older Title 50 ban is what does.",
+          "grandfathered": {
+            "before": "1981-07-01",
+            "detail": "Held for at least 6 months before 1 January 1982."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "WV": {
+          "status": "permit",
+          "sourceId": "wv-20-2-51",
+          "cite": "W. Va. Code § 20-1-2, § 20-2-4(a), § 20-2-51",
+          "quote": "The director may issue a permit to a person to keep and maintain in captivity as a pet, a wild animal or wild bird that has been acquired from a commercial dealer or during the legal open season. The fee therefor shall be $2.",
+          "note": "The raccoon is a mammal native to West Virginia and a game animal by name in § 20-1-2, so § 20-2-4(a) bars keeping one in captivity except as the chapter provides. § 20-2-51 is the provision that does: a two dollar pet permit from the director for an animal bought from a commercial dealer or taken in the open season. Being native keeps it off the Dangerous Wild Animal list, which excludes wildlife.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "AK": {
+          "status": "banned",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(a), (c); AS 16.05.940(19)",
+          "quote": "The department may not issue a permit for the capture, possession, import, or export of any game animal, including a hybrid of a game animal and a species listed in (b) of this section, for use as a pet",
+          "note": "Game in Alaska is \"any species of bird, reptile, and mammal\" found or introduced in the state, so nativity does not matter. The raccoon is not on the § 92.029(b) clean list, and subsection (c) bars any permit for keeping game as a pet.",
+          "verifiedOn": "2026-10-01"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-12-68-18",
+          "cite": "ARSD 12:68:18:03; SDCL 40-3-24",
+          "quote": "(1) Of the order Carnivora, all nondomestic members of the following families: (a) Felidae; (b) Canidae; (c) Ursidae; (d) Mustelidae; and (e) Hyaenidae;",
+          "note": "Procyonidae is not one of the five carnivore families on the possession permit list, and the only outright prohibition in the chapter is the raccoon dog, a canid despite its name. The free entry permit applies to bringing one in from another state. Game, Fish and Parks has no captive wildlife chapter for mammals, so a South Dakota text barring the keeping of a native raccoon was not found.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AL": {
+          "status": "banned",
+          "sourceId": "al-220-2-26",
+          "cite": "§ (1), (3)",
+          "quote": "Any of the following from any area outside the state of Alabama; any member of the family Cervidae (to include but not be limited to deer, elk, moose, caribou), species of coyote, species of fox, species of raccoon, species of skunk, wild rodent, or strain of wild turkey, black bear (Ursus americanus), mountain lion (Felis concolor), bobcat (Felis rufus)",
+          "note": "\"Species of raccoon\" from outside Alabama is barred, and the rule also forbids transporting a listed animal within the state whatever its origin, except by a licensed game breeder under Code § 9-11-31. A raccoon from inside the state is a protected wild animal, which § (3) bars possessing alive except under a permit issued before that amendment. The game breeder license is a propagation license, not a pet one.",
+          "verifiedOn": "2026-10-01"
+        },
+        "IN": {
+          "status": "permit",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-7(a)(8); 9-11-2(b)",
+          "quote": "A permit is required under this rule for the following Class II wild animals: ... (8) Raccoon (Procyon lotor).",
+          "note": "A Class II wild animal, so the keeper applies within five days of taking possession, pays ten dollars, passes a conservation officer's cage inspection, shows the animal was lawfully acquired and files a vet's health statement within 45 days. One permit per animal, renewed yearly.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "ND": {
+          "status": "banned",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4; NDAC 48.1-09-01-02(5)(a)",
+          "quote": "A person may not keep a skunk or raccoon in captivity. This section does not apply to a zoo licensed by the animal care program of the animal and plant health inspection service of the United States department of agriculture.",
+          "note": "North Dakota bans the raccoon by statute, and the board's rule adds that raccoons \"may not be imported into the state for any purpose\" and sets out confiscation. The only exception is a USDA-licensed zoo.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "WY": {
+          "status": "conditional",
+          "sourceId": "wy-ch10",
+          "cite": "Ch. 10 §§ 12, 14(b); Wyo. Stat. § 23-1-101(a)(viii)(A)",
+          "quote": "The following wildlife may be possessed without a permit if captured in the state, but no importation is allowed. ... (b) Mammals declared as pests by W.S. 11-5-101 through W.S. 11-5-119, or animals defined in W.S. 23-1-101 as predatory animals.",
+          "note": "The raccoon is a \"predatory animal\" by statute, which gives it an unusual split. Chapter 10 § 12 bars importing predatory animals, so one from a breeder in another state cannot come in, while § 14(b) lets a person keep one captured in Wyoming with no permit at all.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MS": {
+          "status": "banned",
+          "sourceId": "ms-40-2-8-4",
+          "cite": "Rule 8.4(A), (B)",
+          "quote": "Game and furbearing animals are defined as the following: white-tailed deer, black bear, gray squirrel, fox squirrel, cottontail rabbit, swamp rabbit, raccoon, opossum, bobcat, river otter, muskrat, mink, and weasel. B. Possession of live game and furbearing animals is prohibited with the following exceptions",
+          "note": "The raccoon is named in Rule 8.4's closed list of game and furbearing animals, and possessing one alive is prohibited. The exceptions are public zoos, veterinarians treating a sick animal, someone taking an injured animal to care, and permitted deer enclosures and fox, coyote and rabbit pens; none is a pet. Rule 8.4(C) has animals found in violation confiscated.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "LA": {
+          "status": "unclear",
+          "sourceId": "la-76-v-131",
+          "cite": "LAC 76:V.131.D.3; La. R.S. 56:8(92), (151)(a)(iv); LAC 76:V.113.B",
+          "quote": "ii.A raccoon or skunk that is sick, injured, or orphaned may also be possessed pursuant to the provisions of this Paragraph upon notification to the Department of Wildlife and Fisheries of possession of the wildlife and upon receipt of information regarding rabies vector species and a list of available wildlife rehabilitators.",
+          "note": "The raccoon is a \"nongame quadruped\" by statute, and the only text read that speaks to keeping one is the wildlife rescuer rule: a sick, injured or orphaned raccoon may be held for 90 days on notice to the department, and kept for life only on a special purpose permit after a vet finds it non-releasable, spayed or neutered and microchipped, with use \"for the purposes of pet trade\" barred. The nongame quadruped breeder and exhibitor licenses are business licenses. No text read either bars or allows keeping a captive-bred raccoon bought as a pet, which is the gap.",
+          "verifiedOn": "2026-10-08"
+        },
+        "OK": {
+          "status": "permit",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(a); 29 O.S. § 7-502(B)(4), (E)",
+          "quote": "The following wildlife species are exempt from import and export permits, commercial wildlife breeders licenses, noncommercial wildlife breeders licenses and commercial hunting area license requirements",
+          "note": "The raccoon is native and not on the 37-entry exemption list, so the import permit and the noncommercial wildlife breeder's license apply, the same answer as the prairie dog and flying squirrel. The statute's possession bar is survivable for a pet: § 7-502(B)(4) exempts legally obtained wildlife from a source other than the wild kept as a pet. A raccoon taken from the wild has no such exemption.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NE": {
+          "status": "permit",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 8 §§ 001.01B, 001.01D, 001.02A",
+          "quote": "001.01B It shall be unlawful for any person or persons to retain any wild birds or wild mammals (as defined in Nebraska revised statute 37-245 and 37-246) in captivity except the following species may be kept under authority of a Captive Wildlife Permit ... Raccoon - (Procyon lotor)",
+          "note": "The raccoon is a Nebraska native and on the list of wild mammals that may be kept under a Captive Wildlife Permit, obtained before acquisition. The permit is not for wild-caught animals: § 001.01D bars issuing one for an animal taken from the wild, and § 001.02A requires proof it came from a licensed breeder or permittee.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        }
+      },
+      "article": "/blog/raccoon-legal-guide/"
     }
   }
 }

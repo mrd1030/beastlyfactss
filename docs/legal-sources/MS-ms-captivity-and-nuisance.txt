@@ -1,0 +1,206 @@
+SOURCE: Mississippi: 40 Miss. Admin. Code Part 2, Rule 8.4 (game and furbearing animals in captivity), Rule 7.1 (taking of nuisance animals) and Rule 8.3 (animals inherently dangerous to humans, Rev. 04-2025)
+sourceId: ms-40-2-8-4 (Rule 8.4); ms-40-2-7-1 (Rule 7.1); ms-40-2-8-3 (Rule 8.3)
+jurisdiction: MS
+URL: https://www.law.cornell.edu/regulations/mississippi/40-Miss-Code-R-SS-2-8-4 and https://www.mdwfp.com/sites/default/files/2024-04/40-miss-admin-code-part-2-rule-71-general-regulations-for-the-taking-of-nuisance-animals-rev-05-2022-final.pdf and https://www.mdwfp.com/sites/default/files/2025-06/40%20Miss%20Admin%20Code%20Part2%20Rule%208.3%20Animals%20Inherently%20Dangerous%20to%20Humans%20Rev.%2004-2025%20FINAL.pdf
+FETCHED: 2026-10-08 (mdwfp.com PDFs with the completed GlobalSign chain described in MS-ms-nongame-in-need.txt, then pdftotext -layout. Rule 8.4 is not in mdwfp.com's rules record list, so it is read from Cornell LII, which shows it amended 10/22/2017; sos.ms.gov refuses plain curl with Access Denied.)
+
+READ THIS FIRST. Rule 8.3 answers only the inherently dangerous list. The natives are answered by two
+other rules. Rule 8.4 defines game and furbearing animals as a closed list (white-tailed deer, black
+bear, gray and fox squirrels, cottontail and swamp rabbits, raccoon, opossum, bobcat, river otter,
+muskrat, mink, weasel) and prohibits possessing any of them alive, with exceptions only for public
+zoos, veterinarians, transport to care, and permitted deer enclosures and fox, coyote and rabbit
+pens. Rule 7.1 recites that Miss. Code § 49-7-1 classifies "nutria, beaver, fox, skunks, coyotes and
+wild hogs" as nuisance animals and bars possessing them alive except coyotes and foxes in permitted
+hunting enclosures. Note the black bear: Rule 8.3 offers a personal possession permit for every
+bear, but Rule 8.4 names the black bear as game and bars possessing one alive with no permit
+exception, so the native bear cannot use the 8.3 permit.
+
+
+==== Rule 8.4, from Cornell LII ====
+RULE 8.4 REGULATIONS FOR GAME AND FURBEARING ANIMALS IN CAPTIVITY.
+A. Game and furbearing animals are defined as the following: white-tailed deer, black bear, gray
+squirrel, fox squirrel, cottontail rabbit, swamp rabbit, raccoon, opossum, bobcat, river otter,
+muskrat, mink, and weasel. B. Possession of live game and furbearing animals is prohibited with the
+following exceptions: 1. Public zoological gardens or educational institutions. Public zoological
+garden and/or educational institution shall be defined as a permanent cultural institution which
+owns and maintains captive wild animals under the direction of a professional staff, provides its
+collection with appropriate care, and exhibits them in an aesthetic manner to the public on a
+regularly scheduled basis. a. "Public Zoo" shall further be defined as having as its primary
+business the exhibition, conservation, and preservation of wild animals in an educational and
+scientific manner. b. Public zoos must be accredited by the American Zoo and Aquarium Association
+(AZA), the Zoological Association of America (ZAA), or be designated as the official zoo of a
+municipality. c. Public zoos shall hold a USDA Class "C" Exhibitor's License. 2. Licensed
+veterinarians who possess and hold diseased or injured animals while providing needed medical care,
+except that a record must be kept of animals received, name and address of the person from whom it
+was received, and the disposition of such animals. 3. Any person possessing or having custody of a
+sick or injured animal solely for the purpose of transporting the animal to a licensed veterinarian,
+rehabilitator, animal shelter or MDWFP officer. 4. High-fenced enclosures that contain white-tailed
+deer and are permitted by MDWFP as required by Part 2, Chapter 8, Rule 8.2 AND fox, coyote, and
+rabbit pens that are permitted by MDWFP as required by Part 2, Chapter 8, Rule 8.1 . C. All live
+game and furbearing animals discovered being possessed in violation of this rule shall be
+confiscated by MDWFP. MDWFP shall transport the animal to a licensed wildlife rehabilitator or shall
+humanely euthanize the animal and submit samples for biological testing. Additionally, white-tailed
+deer inside permitted breeding pens, as defined in Part 2, Chapter 8, Rule 8.2 , may be humanely
+euthanized by permit from MDWFP. All animals euthanized by such permit must be tested for bovine
+tuberculosis, brucellosis, and chronic wasting disease. D. Animals and facilities permitted under
+this, or any other rule of the Commission, shall be subject to periodic inspection by any MDWFP
+personnel to determine if the animals are being held and maintained in accordance with the
+provisions of this rule, or any other rule of the Commission, and the requirements of the MDWFP
+issued permit. E. No provisions of this rule shall authorize any person to possess any live animal
+in violation of any city or county ordinance. Notes 40 Miss. Code. R. 2-8.4 Miss. Code Ann. §§
+49-1-29 , 49-4-4 , 49-1-41 Revised September 2016 Amended 5/2/2017 Updated August 2017 Amended
+10/22/2017
+
+==== Rule 7.1, sections A, B.5 and F ====
+RULE 7.1 GENERAL REGULATION FOR THE TAKING OF NUISANCE ANIMALS.
+ A. MISS. CODE ANN. §49-7-1, as amended, classifies nutria, beaver, fox, skunks, coyotes
+and wild hogs, as “nuisance” animals. Pursuant to the authority stated therein, the Commission
+issues this regulation for the taking of nuisance animals:
+ 4. Nuisance animals may be hunted with the aid of electronic calls.
+ 5. Any part of any nuisance animal that has been lawfully taken, may be sold year-
+round, with the exception of wild hog meat, as set forth elsewhere in this rule. The only nuisance
+animals that may be sold alive are coyotes and fox per 40 Miss. Admin. Code Pt. 2, Rule 8.1
+ F. Live nuisance animals may not be possessed except:
+ 1. Coyotes in permitted coyote enclosures;
+ 2. Fox in permitted fox enclosures, or
+ 3. Coyote and fox may be possessed by licensed fur trappers for the sole purpose
+of transporting and selling to a MDWFP licensed coyote/fox enclosure. Possession over 30
+consecutive days for this purpose is prohibited.
+ 4. Hogs for the purpose of slaughter in an enclosure no larger than 500 square feet
+in size and constructed in a manner that prevents the escape of any wild hog.
+ G. For the purpose of this rule, “wild hogs” are hereby defined as any feral hog, wild swine,
+
+==== Rule 8.3, sections A, B.3, C.2 and D.4 to D.5 ====
+RULE 8.3 REGULATIONS FOR ANIMALS INHERENTLY DANGEROUS TO HUMANS.
+A. INTRODUCTION
+ 1. a. It is unlawful for any person to import, export, transport, receive, transfer,
+sell, purchase, acquire or possess by intrastate, interstate or foreign commerce, any wild animal
+classified as inherently dangerous by law or regulation unless that person holds a permit or is
+exempt from holding a permit.
+ b. Effective December 20, 2022, with the enacting of the Big Cat Public Safety
+Act, 16 U.S.C. §3370 et. seq., by the United States Congress, no new permits for the transfer or
+possession of members of the order Carnivora, family Felidae, or “big cats,” will be issued.
+Pursuant to the terms of the Act, all current permittees/owners of big cats must register the animals
+with the US Fish & Wildlife Service, by or before June 18, 2023. More information regarding
+registering big cats and/or exceptions to the prohibition contained in the Act, may be found on the
+US Fish & Wildlife Service’s website at: https://www.fws.gov/what-you-need-know-about-big-
+cat-public-safety-act.
+ c. All other provisions of this rule regarding Carnivora Felidae are and shall
+remain in full force and effect for current “big cat” permittees.
+ 2. Public zoos, university research facilities, governmental agencies, exhibitors, and
+ rehabilitation/sanctuary facilities may be exempted from having a permit if the exemption
+ is approved by the Commission or DWFP.
+ 3. Any permit issued under this act shall be valid for one (1) year and only for the species
+ specified. A permit is required for each wild animal possessed. A permit for a female
+ wild animal shall cover her progeny only while her progeny are physically dependent
+ upon her or until her progeny are three (3) months old, whichever period is longer.
+ 4. It is unlawful for any person to sell, transfer, deliver or give a wild animal classified as
+ inherently dangerous to any other person unless the other person holds a permit for the
+ wild animal or is exempt from holding a permit.
+ 5. The following wild animals are classified as animals inherently dangerous to humans:
+ a. Order Primates:
+ i. Family Pongidae (includes gibbons, orangutans, chimpanzees,
+ siamangs, and gorillas) - all species;
+ ii. Family Cercopithecidae: Genus Macaca (macaques) - all species;
+Genus Papio (mandrills, drills, and baboons) - all species; Genus Theropithecus (gelada baboon);
+ b. Order Carnivora:
+ i. Family Canidae: Genus Canis (wolves, jackals, and dingos; all
+ species, including crosses between wolves and domestic animals);
+ excluding coyote (Canis latrans); Chrysocyon brachyurus (maned
+ wolf); Cuon alpinus (red dog or dhole); Lycaon pictus (African
+ hunting dog);
+ ii. Family Ursidae (bears) - all species;
+ iii. Family Mustelidae - Gulo gulo (wolverine);
+ iv. Family Hyaenidae (hyenas) - all species;
+ v. Family Felidae: Genus Leo or Panthera or Neofelis (lions, tigers,
+ jaguars, and leopards) - all species; Acinonyx iubatus (cheetah); Felis
+ concolor (cougar) - all subspecies;
+ c. Order Proboscidea: Family Elephantidae (elephants) - all species;
+ d. Order Perissodactyla: Family Rhinocerotidae (rhinoceroses) all species;
+ e. Order Artiodactyla:
+ i. Family Hippopotamidae: Hippopotamus amphibius
+(hippopotamus);
+ ii. Family Bovidae: Syncerus caffer (African buffalo).
+B. DEFINITIONS
+ 2. Fee Exempt - A permit issued to a public zoo, university research facility, governmental
+ agency, or rehabilitation/sanctuary facility, as defined herein, if such exemption is
+ approved by the Commission.
+ a. Any facility not meeting the definition of one of the above but that was in
+ existence on or before January 1, 1999, may apply for a fee-exempt permit.
+ b. Such application must be made on or before May 1, 1999.
+ c. Such facility may temporarily exhibit permitted animals "off premises" provided
+ such exhibition is educational in nature and permittee obtains an Exhibitor
+ permit.
+ d. Fee-exempt facilities must comply with all other requirements contained herein.
+ 3. Personal possession - A non-commercial type permit issued to a citizen for ownership
+ or possession of a wild animal or animals. Such permit does not authorize the public
+ display or exhibition of permitted animal(s).
+ 4. Public zoo - Public zoos and zoological gardens shall be defined as a permanent cultural
+ 3. Personal possession - A non-commercial type permit issued to a citizen for ownership
+ or possession of a wild animal or animals. Such permit does not authorize the public
+ display or exhibition of permitted animal(s).
+C. TYPES OF PERMITS AND FEES
+ 2. Personal Possession: Fee is for each wild animal held.
+ a. Canids (includes wolves, jackals, dingos, maned wolves, dholes, African
+ hunting dogs or hybrids thereof) - $75.00.
+ b. Primates (includes gorillas, chimpanzees, orangutans, gibbons, siamangs,
+ macaques, and baboons) - $150.00.
+ c. Ursids (includes all species of bears) - $200.00.
+ d. Felids (includes lions, tigers, cheetahs, jaguars, leopards, cougars, snow
+ leopards, clouded leopards or hybrids thereof) - $300.00.
+ e. All species listed below - $300.00
+ i. Wolverines
+ ii. hyenas
+ iii. elephants
+ iv. rhinoceroses
+ v. hippopotamuses, and
+ vi. African buffalo.
+D. PERMIT APPLICATION PROCEDURES
+ 2. Any person possessing or desiring to possess a wild animal must, unless otherwise
+ exempted, have a valid permit.
+ 3. Permit applications for possession of a wild animal shall be on a form prescribed by the
+ DWFP.
+ 4. Applicants for a permit to possess a wild animal shall meet the following minimum
+ qualifications:
+ a. Applicant must be at least twenty-one (21) years of age.
+ b. Applicant must have at least two (2) years of experience in the care and handling
+ of the species for which the applicant is applying.
+ c. In lieu of experience, applicant must take a written examination, developed and
+ administered by the DWFP, evidencing knowledge in the basic biology, habits,
+ and requirements, in regard to proper diet, health care, exercise needs and
+ housing, of the species to be covered by the permit.
+ d. Applicant must have a plan for the quick and safe recapture of the animal(s), or
+ if recapture is impossible, for the destruction of any animal held under the
+ permit.
+ e. Applicant shall not have been convicted of any violation of captive wildlife
+ regulations, any offense involving the illegal commercialization of wildlife, or
+ any offense involving cruelty to animals within three (3) years of the date of
+ application.
+5. Personal Possession Permit:
+ a. Name, complete street address, and phone number. Post office box address will
+ not be accepted.
+ b. Location where wild animal(s) will be housed. Facilities for holding permitted
+ wild animal(s) must be located on the premises on which the permittee resides
+ or shall have a full-time caretaker to supervise the care and security of the
+ facilities.
+ c. Copy of bill of sale or other documentation acceptable to DWFP showing
+ ownership of the wild animal by applicant, including date of acquisition.
+ d. Current animal inventory including the common and scientific name, sex, age,
+ and source of each animal.
+ e. A signed statement by a licensed veterinarian stating that he/she is the
+ veterinarian of record and including the veterinarian's complete address, phone
+ number, and license number. The veterinarian shall certify that he/she has
+ observed each of the applicant's animals at least once during the prior year and
+ that they have been appropriately immunized and cared for.
+ f. Proof of liability insurance in the amount of One Hundred Thousand Dollars
+ ($100,000.00) for each wild animal up to a maximum of One Million Dollars
+ ($1,000,000.00).
+ g. No personal possession permit will be issued to a corporation, partnership, or
+ other legal entity of any kind.
+ h. Applicant shall be provided a copy of the regulations governing the possession
+ of a wild animal upon request for a permit application. Before such a permit is
+ issued, all animals records, and facilities shall be inspected by DWFP to ensure
+ compliance with the regulations. Inspection procedures are found under Section
+ VIII of these regulations. Any false statement made by applicant on the permit
+ application will render such application null and void, and subject applicant to
+ the penalties provided by law.

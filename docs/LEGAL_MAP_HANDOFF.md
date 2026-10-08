@@ -298,6 +298,66 @@ turned up on its way through.
     serval is `permit`** where § 7.18(2)(F) lists all Felidae in Category 1, exhibitor and research
     only, which reads `banned`.
 
+- **Eight fennec fox cells, one flying squirrel cell and one quote contradict the primary text,
+  found 2026-10-08 while reading the eleven-animal batch (raccoon through wolfdog). Not changed,
+  because the rule for that sitting was add-only and the fennec fox guide's state table would move
+  with them; they want one sitting that re-reads each, fixes the cell, and edits the guide in the
+  same commit.** The new arctic fox and red fox cells beside them were written from the text as it
+  reads now, so the foxes currently disagree in these states.
+  - **ME fennec fox is `permit`** on the Unrestricted List, but 09-137 CMR ch. 7 § 7.18(2)(F) lists
+    "Family Canidae All Species in Family Canidae (Canids)" in Category 1, and § 7.06(3)(A)(2)(a)
+    says a Category 1 applicant "must be an exhibitor, wildlife rehabilitator; laboratory registered
+    with the United States Department of Agriculture, or accredited research facility". Reads
+    `banned` with permitFor commercial-exhibition-research, the same shape as the ME serval above.
+  - **WA fennec fox is `legal`** on RCW 16.30, whose canid entry is wolves only. WAC
+    246-100-197(5)(a), the Department of Health rabies rule, bars "acquiring, selling, bartering,
+    exchanging, giving, purchasing, distributing, or trapping to retain any bat, skunk, fox, raccoon,
+    or coyote, except a zoological park, animal exhibitor, research facility, or wildlife
+    rehabilitator", and (5)(b) bars importing one except by those bodies. "Fox" is unqualified.
+    Reads `banned` with permitFor commercial-exhibition-research. Cached as
+    WA-wa-rabies-and-endangered.txt.
+  - **TX fennec fox note says "nothing in Chapter 71 bars keeping one".** § 71.005(c) reads: "No
+    person may capture or possess a live fur-bearing animal for any purpose, except as otherwise
+    authorized by this code, unless he has acquired and possesses a fur-bearing animal propagation
+    license." The cell's other ground, that the definition is of wild foxes and a captive-bred fennec
+    is not a Texas population, survives, so the status may stand, but the sentence is wrong and the
+    cell now reads differently from the red fox (`permit`) and arctic fox (`unclear`) beside it.
+    Cached as TX-tx-fur-and-threatened.txt.
+  - **AR fennec fox is `permit`** on Addendum R1.01, but it is on none of R1.01, R1.02 or R1.03, and
+    R1.03(B) reads: "Species not listed in Addenda R1.01, R1.02, or R1.03 are prohibited until
+    evaluated." R1.02's mammal list names the arctic fox, both lynxes, the kinkajou, both coatis, the
+    serval and the wolf, and no fennec. Reads `banned` pending a Commission evaluation. The mammal
+    rows are cached as AR-ar-addenda-mammals.txt; the older AR cache carried only the headings.
+  - **ID fennec fox is `permit`** on IDAPA 02.04.27.402. Idaho Code § 25-236(1): "No person shall
+    possess, offer for sale, trade, barter, exchange or importation into the state of Idaho any fox,
+    skunk or raccoon, except as provided in subsection (2) or (3) of this section." The exceptions
+    are fur farms and public parks, zoos, museums and educational institutions with a permit. "Any
+    fox" has no species limit, so it reads `banned` with permitFor commercial-exhibition-research.
+    Cached as ID-id-25-236.txt.
+  - **MO fennec fox note says the 3 CSR 10-9 import bar "does not reach the fennec".** 3 CSR
+    10-9.223(2): "Live white-tailed deer, white-tailed deer-hybrids, mule deer, mule deer-hybrids,
+    raccoons, foxes, and coyotes may not be imported into this state." "Foxes" carries no species or
+    nativity limit, so the cell probably reads `unclear` or `conditional` (Missouri-bred only), as
+    the arctic fox cell now does. Cached as MO-mo-3csr10-9-223.txt.
+  - **MS fennec fox is `legal`** on Rule 8.3 alone. 40 Miss. Admin. Code Pt. 2, R. 7.1(A) recites
+    that Miss. Code § 49-7-1 classes "fox" as a nuisance animal, with no species limit, and R. 7.1(F)
+    says "Live nuisance animals may not be possessed except" coyotes and foxes in permitted hound
+    enclosures. Whether "fox" reaches a non-native fox is the question; the arctic fox cell records
+    it as `unclear`. Cached as MS-ms-captivity-and-nuisance.txt.
+  - **LA fennec fox is `legal`** on LAC 76:V.115 alone. LAC 76:V.113.A gives the rule's purpose as
+    to "prohibit the importation and exportation of any species of foxes or coyotes to or from
+    Louisiana", and 113.D.6 reads: "No person shall transport, possess, purchase or sell any live
+    foxes or coyotes taken outside the state of Louisiana." A fennec always comes from outside the
+    state, so it reads `banned`; the arctic fox cell does. The same cell quotes "f. wolf dog hybrid"
+    from 115.C.1 as a live entry, but 115.D.1 says "The prohibition against wolf-dog hybrids expired
+    January 1, 1997." Only the quote is affected there. Cached as LA-la-fox-and-quadrupeds.txt.
+  - Also found in the same sitting: the **IA flying squirrel is `permit` with permitFor
+    commercial-exhibition-research**, and its note says Iowa "writes no pet allowance for game
+    anywhere in the chapter". § 481A.61(1) continues: "Possession and use of the game birds, game
+    animals, or fur-bearing animals obtained from a licensed game breeder are lawful." That is a
+    buyer's route without a license, so it reads `conditional` (obtained from a licensed game
+    breeder). The sentence is already in IA-ia-wildlife-and-dangerous.txt.
+
 - **Kansas answers a native herp in three regulations and the famous one is none of them. Priority 1
   is done and it moved nine cells.** K.S.A. 32-1301, the dangerous regulated animal statute the whole
   Kansas column had been written against, names six cats, bears and non-native venomous snakes.

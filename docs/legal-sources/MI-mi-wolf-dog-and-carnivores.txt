@@ -1,0 +1,145 @@
+SOURCE: Michigan: Wolf-dog Cross Act (MCL 287.1001 to 287.1023), Large Carnivore Act MCL 287.1103 and
+        287.1104, and Mich. Admin. Code R 299.1027 (endangered mammals)
+sourceId: mi-wolf-dog-cross-act / mi-large-carnivore / mi-r-299-1027
+jurisdiction: MI
+URL: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-287-1004 (official; read with WebFetch)
+     https://www.animallaw.info/statute/mi-exotic-pets-chapter-287-animal-industry-wolf-dog-cross-act
+     https://www.animallaw.info/statute/mi-exotic-pets-chapter-287-animal-industry-large-carnivore-act
+     https://www.law.cornell.edu/regulations/michigan/Mich-Admin-Code-R-299-1027
+FETCHED: 2026-10-08. legislature.mi.gov refuses curl from this container but answered WebFetch, which
+returned MCL 287.1004(1) word for word as the animallaw.info reproduction below prints it, so the two
+agree. Cornell LII by plain curl.
+
+READ THIS FIRST. Michigan bans the wolfdog by statute with a closed grandfather, the same shape as its
+Large Carnivore Act. MCL 287.1003(1)(a) bars possessing a wolf-dog cross except in compliance with the
+act, and 287.1004(1) allows possession only of an animal held on the act's effective date (29 June
+2000) whose owner applied for a local permit within four months. "Wolf-dog cross" at 287.1002(p) runs
+to every generation: a wolf-dog cross bred with a dog is still one. The Large Carnivore Act's bear
+clause reaches "a bear of a species that is native or nonnative to Michigan", so the black bear is
+caught too, with a 90-day grandfather from 7 July 2000. R 299.1027 puts Lynx canadensis on the state
+endangered list.
+
+==== Wolf-dog Cross Act, MCL 287.1001 to 287.1005 (animallaw.info reproduction) ====
+ 287.1001. Short title 
+Sec. 1. This act shall be known and may be cited as the "wolf-dog cross act" and is enacted in memory of Angie Nickerson. 
+CREDIT(S) 
+P.A.2000, No. 246, § 1, Imd. Eff. June 29, 2000. 
+ 287.1002. Definitions 
+Sec. 2. As used in this act: 
+(a) “Animal control officer” means a county animal control officer as described in sections 29a and 29b of the dog law of 1919, 1919 PA 339, MCL 287.289a and 287.289b, or a city, village, or township animal control officer as described in section 29c of the dog law of 1919, 1919 PA 339, MCL 287.289c. 
+(b) “Animal control shelter” or “animal protection shelter” means an animal control shelter or animal protection shelter, respectively, registered with the department under section 6 of 1969 PA 287, MCL 287.336. 
+(c) “Department” means the department of agriculture and rural development. 
+(d) “Dog” means an animal of the species Canis familiaris or Canis lupus familiaris. 
+(e) “Expert on wolf-dog cross identification” means an individual who has, cumulatively, no fewer than 10 years of training and field experience in wolf and wolf-dog cross behavioral and morphological characteristics and who is recognized as an expert at the state and national levels by others in the same field. 
+(f) “Facility” means an indoor or outdoor cage, pen, or similar enclosure where a wolf-dog cross is kept. 
+(g) “Law enforcement officer” means: 
+(i) A sheriff or sheriff's deputy. 
+(ii) A village or township marshal. 
+(iii) An officer of the police department of a city, village, or township. 
+(iv) An officer of the Michigan state police. 
+(v) A peace officer who is trained and licensed or certified under the Michigan commission on law enforcement standards act, 1965 PA 203, MCL 28.601 to 28.615. 
+(vi) A conservation officer appointed by the department of natural resources. 
+(vii) An animal control officer. 
+(viii) A law enforcement officer of the federal government authorized to enforce any federal law regulating animals. 
+(h) “Livestock” means that term as defined in section 3 of the animal industry act, 1988 PA 466, MCL 287.703. 
+(i) “Local unit” means a city, village, township, or county. 
+(j) “Permit” means a permit issued under section 4.1 
+(k) “Permitting agency” means the agency of a local unit that issues permits under section 4. 
+(l) “Person” means an individual, partnership, corporation, association, governmental entity, or other legal entity. 
+(m) “Pet shop” means a pet shop licensed by the department under section 3 of 1969 PA 287, MCL 287.333. 
+(n) “Veterinarian” means a person licensed to practice veterinary medicine under article 15 of the public health code, 1978 PA 368, MCL 333.16101 to 333.18838. 
+(o) “Wolf” means an animal of the species Canis rufus or Canis lupus, but does not include an animal of the species Canis lupus familiaris. 
+(p) “Wolf-dog cross” means a canid resulting from the breeding of any of the following: 
+(i) A wolf with a dog. 
+(ii) A wolf-dog cross with a wolf. 
+(iii) A wolf-dog cross with a dog. 
+(iv) A wolf-dog cross with a wolf-dog cross. 
+Credits
+P.A.2000, No. 246, § 2, Imd. Eff. June 29, 2000. Amended by P.A.2016, No. 299, Eff. Jan. 2, 2017; P.A.2019, No. 137, Eff. Feb. 19, 2020. 
+ 287.1003. Prohibited acts 
+Sec. 3. (1) A person shall not do any of the following: 
+(a) Possess a wolf-dog cross except in compliance with this act. 
+(b) Breed a wolf-dog cross. 
+(c) Subject to subsection (2), transfer ownership or possession of or receive a transfer of ownership or possession of a wolf-dog cross, with or without remuneration. 
+(d) Subject to subsection (2), transfer ownership or possession of a canid, with or without remuneration, if the person has represented to the transferee 
+that the canid is a wolf-dog cross or offer or advertise to transfer ownership or possession of a canid, with or without remuneration, representing the canid to be a wolf-dog cross. 
+(e) Subject to subsection (2), receive a transfer or offer to receive a transfer of ownership or possession of a canid, with or without remuneration, if the owner of the canid has represented to the person that the canid is a wolf-dog cross. 
+(2) Subsection (1)(c), (d), and (e) do not apply to the temporary transfer of possession of a wolf-dog cross under section 4(1)(a) [FN1] or any other transfer of possession or ownership of a wolf-dog cross expressly authorized or required by this act. 
+(3) In a civil forfeiture proceeding under this act, there is a rebuttable presumption that a canid is a wolf-dog cross if the current owner represents or has represented that the canid is a wolf-dog cross or if a previous owner transferred ownership or possession of the canid to the current owner, with or without remuneration, representing it to be a wolf-dog cross. 
+(4) For the purposes of this section, a representation may be by advertisement, registration paper, or any other method. 
+[FN1] M.C.L.A. § 287.1004. 
+CREDIT(S) 
+P.A.2000, No. 246, § 3, Imd. Eff. June 29, 2000. 
+ 287.1004. Possession of wolf-dog cross 
+Sec. 4. (1) A person shall not possess 1 or more wolf-dog crosses unless all of the following apply: 
+(a) The person owns the wolf-dog crosses or has temporarily been given possession of the wolf-dog crosses by the owner. 
+(b) The owner was in possession of those individual wolf-dog crosses on the effective date of this act. 
+(c) The owner applies for a permit for those wolf-dog crosses within 4 months after the effective date of this act, and obtains a permit for those wolf-dog crosses. The permit applies only to those individual wolf-dog crosses. The permit is not transferable to another person except through testate or intestate succession. The permit is valid in any local unit in which the possession of the wolf-dog cross is not prohibited by ordinance. 
+(2) A person shall file an application for a permit with the person specified by the first of the following subdivisions that applies: 
+(a) If the wolf-dog crosses are kept in a city or village and the city or village employs an animal control officer, with the city or village agency to which the animal control officer is assigned. 
+(b) If the wolf-dog crosses are kept in a township and the township employs an animal control officer, with the township agency to which the animal control officer is assigned. 
+(c) If the county in which the wolf-dog crosses are kept employs an animal control officer, with the county agency to which the animal control officer is assigned. 
+(d) If subdivisions (a), (b), and (c) do not apply, with the county sheriff of the county where the wolf-dog crosses are kept. 
+(3) An applicant for a permit shall include with the application all of the following: 
+(a) An annual permit fee. The annual permit fee shall be established by the governing body of the local unit whose agency issues the permit under subsection (2) and shall be not less than the greater of the following 2 amounts: 
+(i) Twenty-five dollars, or at the option of the local unit if the applicant keeps more than 1 wolf-dog cross in that local unit, $25.00 for each wolf-dog cross. 
+(ii) An amount necessary to cover the local unit's actual, reasonable costs of enforcing this act. 
+(b) A written statement that does all of the following: 
+(i) Specifies the number of wolf-dog crosses owned by the applicant. 
+(ii) Describes in detail each wolf-dog cross owned by the applicant, including, but not limited to, its identification number required under section 5. [FN1] 
+(iii) Specifies the name, address, and telephone number of the person from whom the owner obtained the wolf-dog cross, if known. 
+(c) A certificate signed by a veterinarian that the wolf-dog cross has been sexually sterilized. 
+(4) A local unit shall not issue a permit unless it finds that all of the following apply: 
+(a) The requirements of subsections (1), (2), and (3) are met. 
+(b) The applicant is 21 years of age or older. 
+(c) The applicant has not been convicted of or found responsible for violating a local ordinance or state law prohibiting neglect or mistreatment of an animal and has not within the past 10 years been convicted of a felony . 
+(d) The applicant is not subject to a court order requiring the forfeiture of a wolf-dog cross or prohibiting the ownership or possession of a wolf-dog cross. 
+(e) The facility and the conditions in which each wolf-dog cross will be kept comply with this act. 
+(f) The applicant is knowledgeable about the wolf-dog cross's disposition and care requirements. 
+(5) A permit shall set forth all of the following: 
+(a) The name and address of the permit holder and the address where each wolf-dog cross will be kept, if different from that of the permit holder. 
+(b) The number of wolf-dog crosses owned by the permit holder. 
+(c) The identification number of each wolf-dog cross required under section 5. 
+(d) The name, address, and signature of the veterinarian who is expected to provide veterinary care to the wolf-dog cross. 
+(e) Any other reasonable information as determined by the local unit, which may include, but need not be limited to, a designation of permits required by a local unit, the department, the department of community health, the department of natural resources, the United States department of agriculture, or the fish and wildlife service of the United States department of the interior. 
+(6) A local unit that issues a permit shall notify the department of the name and address of the permit holder and the number of wolf-dog crosses owned by the permit holder. 
+(7) The owner of a wolf-dog cross shall annually pay the local unit the annual permit fee established under subsection (3)(a). 
+[FN1] M.C.L.A. § 287.1005. 
+CREDIT(S) 
+P.A.2000, No. 246, § 4, Imd. Eff. June 29, 2000. 
+ 287.1005. Identification number placed in wolf-dog; subcutaneous microchip 
+Sec. 5. The owner of a wolf-dog cross shall have an identification number placed in the wolf-dog cross via subcutaneous microchip, at the expense of the owner, by or under the supervision of a veterinarian. 
+CREDIT(S) 
+
+==== Large Carnivore Act, MCL 287.1103 and 287.1104(1) (animallaw.info reproduction) ====
+ 287.1103. Possession, Breeding, or Transfer of Large Carnivore; Prohibitions 
+Sec. 3. A person shall not do any of the following: 
+(a) Own or possess a large carnivore except in compliance with this act. 
+(b) Except as provided in section 22,1 breed a large carnivore. 
+(c) Transfer ownership or possession of or receive a transfer of ownership or possession of a large carnivore, with or without remuneration. This subdivision does not apply to a transfer of ownership or possession of a large carnivore expressly authorized or required by this act. 
+Credits 
+P.A.2000, No. 274, § 3, Imd. Eff. July 7, 2000. Amended by P.A.2018, No. 610, Eff. March 28, 2019. 
+Footnotes 
+1 M.C.L.A. § 287.1122 . 
+ 287.1104. Permit to Possess Large Carnivores; Application Requirements; Issuance 
+Sec. 4. (1) A person shall not possess 1 or more large carnivores unless all of the following apply: 
+(a) The person owns the large carnivores. 
+(b) The person was in possession of those individual large carnivores on the effective date of this act. 
+(c) The person applies for a permit for those large carnivores within 90 days after the effective date of this act and obtains a permit for those large carnivores. The permit applies only to those individual large carnivores. The permit is not transferable to another person except through testate or intestate succession. The permit is valid in any local unit in which the possession of the large carnivores is not prohibited by ordinance. 
+
+==== Mich. Admin. Code R 299.1027(1), endangered mammals (Cornell LII) ====
+Rule 7. 
+ (1) The
+ following mammal species are included on the state list of endangered species: 
+ Felis concolor 
+Cougar 
+ Lynx canadensis 
+Lynx 
+ Microtus ochrogaster 
+Prairie vole 
+ Myotis sodalis 
+Indiana bat 
+ (2) 
+ The following mammal species are included on the state list of threatened
+ species: 
+ Cryptotis parva 

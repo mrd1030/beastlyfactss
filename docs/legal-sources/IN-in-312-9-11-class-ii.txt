@@ -1,0 +1,101 @@
+SOURCE: 312 IAC 9-11-1, 9-11-2, 9-11-3 and 9-11-7 (Wild Animal Possession Permits: applicability, first permit, renewal, Class II list)
+sourceId: in-312-9-11
+jurisdiction: IN
+URL: https://www.law.cornell.edu/regulations/indiana/312-IAC-9-11-7 (and -9-11-1, -9-11-2, -9-11-3)
+FETCHED: 2026-10-08 (plain curl with a browser User-Agent from Cornell LII, because iar.iga.in.gov serves only its React shell; cited to the official sections; site chrome stripped)
+
+READ THIS FIRST. IN-in-312-iac-9.txt holds Class I (9-11-6) and Class III (9-11-8) but not the
+Class II list, which is here. Class II is Indiana's own furbearers (beaver, coyote, both foxes,
+mink, muskrat, opossum, raccoon, striped skunk, weasels) plus fifteen small wild cats. The bobcat
+is not on it, so it falls into Class III, "Wild cats (all species), except feral cats and cats
+listed in section 7". 9-11-1(a) limits the whole rule to animals referenced in it or listed as
+state endangered or threatened. 9-11-2 has a Class I or II animal permitted within five days of
+taking possession and a Class III animal permitted before it.
+
+==== 312 IAC 9-11-1 ====
+Sec. 1. (a) Except as provided in IC 14-22-26-2 or as exempted under subsections (d) and (e), a
+person must have a permit issued by the department under this rule to possess a wild animal if the
+wild animal is either of the following: (1) Referenced in this rule. (2) Listed in this article as
+an endangered species or a threatened species. (b) A separate permit: (1) is required for each
+individual wild animal; and (2) applies only to the location stated in the permit. (c) A permit
+issued under this rule expires one (1) year from the date of issuance. If a timely and sufficient
+application is made for a permit renewal under section 3 of this rule, however, the permit does not
+expire until the department has entered a final determination with respect to the renewal
+application. (d) A wild animal that is possessed under any of the following licenses and permits is
+exempted from this rule: (1) A game breeder license issued under 312 IAC 9-10-4 . (2) A scientific
+purposes license issued under 312 IAC 9-10-6 . (3) A wild animal rehabilitation permit issued under
+312 IAC 9-10-9 . (4) An endangered species of turtle possessed under 312 IAC 9-5-11 . (e) This rule
+does not apply to the lawful taking or possessing of a wild animal as follows: (1) During a season
+established under this article. (2) During the first six (6) months from the date of birth, if the
+animal is the offspring of a wild animal lawfully possessed under this rule. (3) The mammal is
+possessed by a zoo, carnival, animal dealer, pet shop, circus, or nature center licensed under 9
+CFR, Chapter 1, Subchapter A , Pa rts I through IV. (4) During the interstate shipment of animals
+through the state of Indiana. (f) A person who possesses a wild animal under this rule is
+responsible for complying with all applicable requirements of this rule, including those that govern
+permit renewals and permit site relocations.
+
+==== 312 IAC 9-11-2 ====
+Sec. 2. (a) This section governs the first permit under this rule to possess a particular wild
+animal. (b) A person who wishes to possess a wild animal, described as Class I or Class II in this
+rule, must apply for a permit under this rule within five (5) days of taking possession of the
+animal that was lawfully acquired and in accordance with this rule. (c) A person who wishes to
+possess a wild animal, described as Class III in this rule must obtain a permit under this rule
+before the person takes possession of the animal and in accordance with this rule. In addition to
+any procedural requirements, a notice under this subsection must also describe the following: (1)
+The species of the wild animal. (2) Where the animal will be possessed. (d) Within forty-five (45)
+days after the issuance of a permit, the permit holder must submit written verification from a
+licensed veterinarian that the animal appears to be: (1) free of disease; and (2) in good health; to
+the division of fish and wildlife. (e) An application for a Class III wild animal must present a
+plan for the quick and safe recapture of the wild animal if the animal escapes or, if recapture is
+impracticable, for the destruction of the animal. After notification by the department of an
+intention to issue a permit, but before the permit is issued, the applicant must obtain the
+equipment needed to carry out the recapture and destruction plan. The nature and extent of the
+recapture plan and the equipment needed are dependent on the danger the escaped animal poses to: (1)
+persons; (2) domestic animals; (3) livestock; and (4) other wildlife; in the vicinity of the escape.
+(f) A permit holder who possesses a Class III wild animal must notify the department immediately
+after the discovery of any escape of the animal from the perimeter fence. (g) A permit application
+must be: (1) completed on a department form; and (2) accompanied by a fee in the amount of ten
+dollars ($10). (h) A conservation officer shall inspect the: (1) cages or enclosures; (2) wild
+animal (if already in possession); and (3) documentation of legal acquisition (if the wild animal is
+already in possession); after the application is received and prior to the issuance of a permit. (i)
+An applicant must provide documentation that the wild animal was lawfully acquired. A receipted
+invoice, bill of lading, or other evidence approved by the director shall accompany the application
+to establish compliance with this subsection.
+
+==== 312 IAC 9-11-3 ====
+Sec. 3. (a) This section governs a renewal permit to possess a wild animal where a permit was
+previously issued for the same wild animal at the same site under section 2 of this rule. (b) A
+person who wishes to continue in possession of a wild animal after the expiration date in the permit
+must file an application for a renewal permit within thirty (30) days of the expiration date. (c) An
+application for a renewal permit must be accompanied by a written verification by a veterinarian
+which states the following: (1) The wild animal was observed at least once during the prior year or
+more frequently if necessary to provide adequate veterinarian care. Frequency of the visits is
+determined by the attending veterinarian, not the facility. (2) The wild animal was properly
+immunized. (3) The wild animal appears to have been properly cared for in the following other areas
+of animal husbandry: (A) Appropriate: (i) facilities, personnel, and equipment for pest control,
+sanitation, quarantine, capture, and restraint; and (ii) medical observation. (B) Appropriate
+handling, tranquilization, and euthanasia was provided under veterinarian guidance. (C) Nutrition
+and diets. (d) A conservation officer may reinspect the cages or enclosures at any time. The
+conservation officer shall attempt to give a permittee a twenty-four (24) hour notice prior to the
+reinspection, but, if the officer is unsuccessful in contacting the permittee, the officer may
+proceed with the scheduled inspection without making any further attempts to notify anyone. No
+notice is necessary if the officer has reason to believe the health and safety of the animal is in
+danger if there is a delay. The conditions observed by the conservation officer during a
+reinspection will be considered in determining whether to renew a permit.
+
+==== 312 IAC 9-11-7 ====
+Sec. 7. (a) A permit is required under this rule for the following Class II wild animals: (1) Beaver
+(Castor canadensis). (2) Coyote (Castor latrans). (3) Gray fox (Urocyon cinereoargenteus). (4) Red
+fox (Vulpes fulva). (5) Mink (Mustela vison). (6) Muskrat (Ondatra zibethicus). (7) Virginia opossum
+(Didelphis marsupialis). (8) Raccoon (Procyon lotor). (9) Striped skunk (Mephitis mephitis). (10)
+Weasel (Mustela frenata, Mustela nivalis, and Mustela rixosa). (11) Serval (Leptailurus serval).
+(12) Leopard cat (Prionailurus bengalensis). (13) Margay cat (Felis wiedi). (14) Jaguarundi cat
+(Felis yagouaroundi). (15) Jungle cat (Felis chaus). (16) Pallas' cat (Felis manul). (17) Sand cat
+(Felis margarita). (18) Black-footed cat (Felis nigripes). (19) Flat-headed cat (Prionailurus
+planiceps). (20) Fishing cat (Prionailurus viverrinus). (21) Geoffroy's cat (Leopardus geoffroyi).
+(22) Pampas cat (Leopardus pajeros). (23) Little spotted cat (Leopardus tigrinus). (24) Pantanal cat
+(Leopardus braccatus). (25) Marbled cat (Pardofelis marmorata). A hybrid of any of these species
+with a domestic dog or domestic cat is exempt from permitting under this section. (b) As used in
+this rule, "Class II wild animal" means a wild animal that, because of its nature, habits, or
+status, may pose a threat to human safety.
+
