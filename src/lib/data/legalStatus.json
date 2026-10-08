@@ -34072,6 +34072,492 @@
         }
       },
       "article": "/blog/rattlesnake-legal-guide/"
+    },
+    "cobra": {
+      "name": "Cobra",
+      "scientific": "Naja spp.",
+      "jurisdictions": {
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(7)(C)",
+          "quote": "Family Elapidae-Cobras, Coral Snakes, Mambas, Kraits, etc. All species (D)",
+          "note": "California names the cobras in the family heading and restricts every elapid, marked (D) for detrimental, which takes in the king cobra with the Naja species. No permit type covers pet keeping. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-391-4-8-05",
+          "cite": "R. 391-4-8-.04(1)(b)2(iii); O.C.G.A. § 27-5-4(b)(1)",
+          "quote": "Family Elapidae - All species;",
+          "note": "Every elapid, the king cobra included, is in the inherently dangerous tier, which needs a license and liability insurance and is licensed only to dealers and exhibitors. No pet route. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "verifiedOn": "2026-10-01"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6",
+          "cite": "§ 4-71-6, List of Prohibited Animals",
+          "quote": "Serpentes (all species in suborder, except for two male nonvenomous snakes for exhibition in a government zoo, and for four sterile male brown tree snakes, Boiga irregularis, for research or training of snake detector dogs by the department)",
+          "note": "Every snake is on the prohibited list, the tier with no permit, and the zoo carve out reaches only nonvenomous snakes. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "verifiedOn": "2026-10-01"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.11(a)",
+          "quote": "It is unlawful to introduce a nonnative species into the natural environment of this Commonwealth. Persons who import nonnative reptiles or amphibians into this Commonwealth shall institute appropriate safeguards to prevent their introduction into the natural environment of this Commonwealth.",
+          "note": "The Fish and Boat Commission's reptile chapter manages native species and reaches a nonnative snake only to forbid releasing it. The Game Commission's prohibited list covers birds and mammals. No Pennsylvania text restricts keeping a venomous exotic snake. Local ordinances were not checked. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following",
+          "note": "Category (E) admits non-venomous snakes only, so a cobra fits nothing on the closed list. No permit route. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "§ 161.01(b)(10)",
+          "quote": "Reptiles (Reptilia). All Helodermatidae (gila monster and Mexican beaded lizard); all front-fanged venomous snakes, even if devenomized, including, but not limited to, all Viperidae (viper, pit viper), all Elapidae (cobra, mamba, krait, coral snake)",
+          "note": "Cobras are named in the Elapidae clause, and the front-fanged venomous snake clause applies \"even if devenomized\", so a venomoid cobra is no answer. The king cobra is an elapid as well. The Code's only exceptions are the Parks Department and Wildlife Conservation Society zoos, labs, veterinary facilities and permitted temporary exhibits, so there is no pet route. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NJ": {
+          "status": "banned",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.8(a); 7:25-4.9(a)3",
+          "quote": "The potentially dangerous species shall not be kept as a pet, for hobby purposes or in situations, which, in the judgment of the Department, could adversely affect the health of the animal or which could constitute a hazard to the public.",
+          "note": "\"Elapidae--Coral snakes and cobras\" is on the potentially dangerous species table, which reaches the king cobra too, and 4.9(a)3 rules out keeping one as a pet. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "ME": {
+          "status": "banned",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.18(2)(G); § 7.06(3)(A)(2)(a)",
+          "quote": "Family Elapidae All Species in Family Elapidae (Cobras, Coral Snakes, Elapids, Kraits) ... An applicant for a permit pertaining to Category 1 Restricted Species must be an exhibitor, wildlife rehabilitator; laboratory registered with the United States Department of Agriculture, or accredited research facility.",
+          "note": "The whole cobra family is Category 1, which takes in the king cobra. Category 1 permits go only to exhibitors, rehabilitators, USDA-registered laboratories and accredited research facilities, so there is no pet route. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.01(9), 169.11(1)(a)",
+          "quote": "A person is exempt from holding a license or other approval as required under this chapter to possess live nonnative wild animals that are not endangered or threatened species, except for any of the following:",
+          "note": "A cobra is a nonnative wild animal that is neither harmful under § 169.11(1)(a) nor an indigenous listed species, so no Wisconsin license is needed. Local ordinances were not checked. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "verifiedOn": "2026-10-01"
+        },
+        "FL": {
+          "status": "permit",
+          "sourceId": "fl-68a-6-017",
+          "cite": "68A-6.017(1), (2); 68A-6.003(14)(a)",
+          "quote": "Any person who keeps, possesses, exhibits or sells any venomous reptiles or reptile of concern shall comply with Sections 379.303, 379.304, 379.305, 379.372, 379.373, 379.374 and 379.3761, F.S., and the provisions of subparagraph 68-5.007(5)(a)1., F.A.C., and the rules of this chapter.",
+          "note": "A cobra needs Florida's venomous reptile permit, which an individual can hold: 18 or older, at least one year and 1,000 hours of experience with the species or its family with two qualified references, the Commission's examination, and an inspected facility before the animal arrives. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL §§ 11-0103(6)(e)(5), 11-0511, 11-0512(1)(a); 6 NYCRR § 180.1(b)(17)(i)",
+          "quote": "(5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus),",
+          "note": "Every venomous reptile is a wild animal that may not be kept as a pet, and 180.1(b)(17) lists all Elapidae, the king cobra with them. The exemptions in § 11-0512(2) are zoos, licensed exhibitors and research facilities, vets, shelters, universities, rehabilitators, sanctuaries and travelers, all holding the animal for a purpose other than a pet, and 6 NYCRR 180.1(c) issues dangerous animal licenses only for scientific, educational, exhibition, zoological or propagation purposes. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(3)(B)(xxix), (b)(3)",
+          "quote": "(xxix) A member within the family Elapidae (including, but not limited to, cobra, coral snake, mamba, sea snake and sea krait),",
+          "note": "Connecticut names the cobra in the Elapidae entry of Category Two, which reaches the king cobra too. Subsection (b)(3) allows a Category Two animal only to a treating vet, municipal parks, zoos, aquaria, nature centers, museums, exhibitors, laboratories and research facilities, so there is no private route. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(10)(b)",
+          "quote": "All venomous snakes require a permit. The following snakes may be kept without a permit: 1. All species of boas and pythons (family Boidae), except those species categorically non-exempt pursuant to 321 CMR 9.01(3), and except the African Rock Python (Python sebae), Reticulated Python (Python reticulatus) and all species of Anaconda (Eunectes spp.), which require a permit.",
+          "note": "Every venomous snake requires a permit, so a cobra is outside the exemption list. The license under § 23 exists on paper, but MassWildlife says permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "2 CCR 406-7 #701, Appendix A(A)",
+          "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
+          "note": "Appendix A's snake families are file snakes, pipe snakes, boas, colubrids, pythons, shield-tails and sunbeam snakes; Elapidae is not among them, so a cobra is regulated wildlife with no pet license. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AZ": {
+          "status": "restricted",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)(2)(c)",
+          "quote": "c. The family Elapidae . Common names include: Australian elapids, cobras, coral snakes, kraits, mambas, and sea snakes.",
+          "note": "Arizona names cobras in the Elapidae entry, which takes in the king cobra too. Restricted live wildlife may be held only under a special license listed in R12-4-409(A) or a listed exemption, and none of the R12-4-407 exemptions is a pet route. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "verifiedOn": "2026-10-08"
+        },
+        "OR": {
+          "status": "conditional",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(c)(G) to (K); 0050(1)(d)(C)(iii), (iv); 0130(1)",
+          "quote": "(G) Egyptian cobra -- Elapidae -- Naja haje; (H) Black & white cobra -- Elapidae -- Naja melanoleuca; (I) Indian cobra -- Elapidae -- Naja naja; (J) Red spitting cobra -- Elapidae -- Naja pallida; (K) King cobra -- Elapidae -- Ophiophagus hannah;",
+          "note": "Oregon answers cobras one species at a time. Four Naja species and the king cobra are noncontrolled, so they need no ODFW permit at all; the black-necked spitting cobra and the Cape cobra are prohibited; and any other cobra is unlisted, which OAR 635-056-0130(1) treats as barred. Whether a cobra is lawful depends entirely on which species it is. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "WA": {
+          "status": "banned",
+          "sourceId": "wa-rcw-16-30",
+          "cite": "RCW 16.30.010(2)(b)(i)(C); RCW 16.30.030",
+          "quote": "(C) Family elapidae, all species, such as cobras, mambas, kraits, coral snakes, and Australian tiger snakes;",
+          "note": "Cobras are named in the elapid entry, which reaches the king cobra too. RCW 16.30.030(1) bars owning, possessing, keeping or bringing one into the state, and (2) bars breeding; the exemptions in 16.30.020 are for zoos, sanctuaries, exhibitors, research and similar bodies. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "grandfathered": {
+            "before": "2007-07-22",
+            "detail": "A person in legal possession before 22 July 2007 may keep the animal for the rest of its life, with veterinary records or acquisition papers proving the date, but may not breed it."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "OH": {
+          "status": "permit",
+          "sourceId": "oh-935-02",
+          "cite": "R.C. 935.01(L)(2)(b); 935.08(A)(2); 935.09(A)",
+          "quote": "(2) A person that acquires a restricted snake in this state on or after January 1, 2014, and that does not intend to propagate, sell, trade, or otherwise transfer the snake shall obtain a restricted snake possession permit under this section not later than one hundred twenty days after acquiring the snake.",
+          "note": "Every elapid is a restricted snake under § 935.01(L)(2)(b), the king cobra included. The restricted snake possession permit is still open to a new keeper: the director issues it to an applicant 18 or older with two years' experience with the species or a passed examination, proof of financial responsibility, a clean criminal record and a facility that meets the rules, who signs that the public will have no physical contact with the snake. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "TX": {
+          "status": "permit",
+          "sourceId": "tx-exotic-snakes",
+          "cite": "Parks & Wild. Code § 43.851(a)(1), (b), (d); 31 TAC §§ 55.651, 55.652",
+          "quote": "Sec. 43.851. PERMIT. (a) The commission by rule shall establish permits that allow permit holders to possess or transport in this state a live nonindigenous snake, including a hybrid of any kind, that is: (1) venomous; or (2) a constrictor that is one of the following:",
+          "note": "Every cobra is a nonindigenous venomous snake, which needs a controlled exotic snake permit. § 43.851(b) has the commission establish separate recreational and commercial permits, so a private keeper has a route. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224; MCL 287.731",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild...except as provided within this order.",
+          "note": "Fisheries Order 224 reaches \"any state reptile or amphibian from the wild\", so it governs Michigan's native herps and not a captive animal of a species from elsewhere, and no Michigan rule read here restricts a cobra. The Animal Industry Act asks for a certificate of veterinary inspection to import a nonnative reptile. NREPA Part 413's prohibited and restricted species list could not be read from this container, so that is the open check. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "verifiedOn": "2026-10-01"
+        },
+        "IL": {
+          "status": "banned",
+          "sourceId": "il-510-68",
+          "cite": "510 ILCS 68/10-5, 10-15, 10-20, 85-5",
+          "quote": "Permittees may keep legally obtained venomous reptile specimens native to the United States, except the following species:",
+          "note": "Cobras are named in the Elapidae entry of the venomous reptile definition, and the special use permit that is the Act's only route is for educational programs. Even a permittee may keep only venomous species native to the United States, which no cobra is. No route at all. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8; § 97A.015, subd. 39; § 97A.501, subd. 1",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota makes every snake a protected wild animal, whatever its origin, under § 97A.015 subd. 39, and § 97A.501 bars possessing one unless the game and fish laws allow it. Subdivision 8 is the allowance: a snake from a permitted breeder, or one held before 1 August 2021, may be kept as a pet. No Minnesota statute read here treats a venomous or giant snake differently. The breeder permit the condition depends on is not on the DNR's permits page and no rule implements it, so the condition is real on paper and its machinery is not visibly in place, the same gap the Burmese python carries. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NV": {
+          "status": "banned",
+          "sourceId": "nv-nac-503",
+          "cite": "NAC 503.110(1)(b)(6), (3)",
+          "quote": "the importation, transportation or possession of the following species of live wildlife or hybrids thereof, including viable embryos or gametes, is prohibited: ... (6)Coral snakes, cobras, kraits, mambas, Australian elapids and sea snakes...... All species in the family Elapidae",
+          "note": "Nevada names cobras in the Elapidae entry of the prohibited list. Permits for a prohibited species go only to accredited zoos and aquaria, colleges, universities and government agencies for research, other scientific institutions, commercial aquaculture, and nonprofits that exhibit wildlife solely for education or science, so there is no pet route. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "4VAC15-30-40(A); 4VAC15-20-50",
+          "quote": "A special permit is required and may be issued by the department, if consistent with the department's fish and wildlife management program, to import, possess, or sell those nonnative (exotic) animals listed in the following table",
+          "note": "The exotic permit table's only snake is the brown tree snake, so a cobra is a nonnative animal Virginia does not restrict. Local ordinances were not checked. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MD": {
+          "status": "banned",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1)(viii)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: ... (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Every elapid is barred by family name, the king cobra with the Naja species. The exemptions run to research facilities, licensed exhibitors, DNR licensees, sanctuaries, vets and circuses, and a licensed exhibitor may acquire a primate or big cat only with $1,000,000 of insurance, paid full-time staff and a disposition policy. Subsection (e) preserves stricter county and municipal rules. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "grandfathered": {
+            "before": "2006-05-31",
+            "detail": "Lawful possession on or before 31 May 2006 may continue, but only if the keeper gave written notification to the local animal control authority by 1 August 2006, with the number and type of animals and a photograph or a description of a tattoo or microchip. That window is long closed."
+          },
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Snake | Elapidae | all venomous species | Snakes, Venomous | IV",
+          "note": "Every venomous elapid is in Group IV, the king cobra included. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. 19.35.7 NMAC is an importation rule, so it governs bringing the animal into New Mexico rather than keeping one already here. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "The Unrestricted list clears boas and pythons and colubrids, and no elapid, so a cobra is restricted by absence. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "UT": {
+          "status": "banned",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-9(1)(a), R657-53-7(4)",
+          "quote": "(1)(a) A species of the Order Squamata (snakes and lizards) is classified as a prohibited species if: (i) it is venomous; (ii) not native to Utah; and (iii) a bite from which may cause substantial physical injury to humans ordinarily requiring medical treatment. (b) Species of the Order Crocodilia (crocodiles, gharials, caimans, and alligators) are classified as prohibited.",
+          "note": "A cobra is venomous, not native to Utah and dangerous to bite, so it is a prohibited species. A prohibited species needs a variance from the Wildlife Board before any certificate of registration, and its possession limit is zero, so there is no pet route. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "DE": {
+          "status": "banned",
+          "sourceId": "de-nonnative-reptile-permit",
+          "cite": "Del. Code tit. 3 § 7201",
+          "quote": "Notwithstanding any provision of this chapter to the contrary, except for medical or psychological research or for display in any licensed zoological park or traveling circus, no person shall bring into this State, possess, sell or exhibit any poisonous snake not native to or generally found in Delaware where the venom of such snake poses a risk of serious injury or death to a human, and no permit for the same shall be issued by the Department of Agriculture.",
+          "note": "The statute bars every venomous snake not native to Delaware outside research and licensed zoos and circuses, and says no permit shall issue. No pet route. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "TN": {
+          "status": "banned",
+          "sourceId": "tn-70-4-403",
+          "cite": "Tenn. Code Ann. §§ 70-4-403(1), 70-4-404(c)(1)",
+          "quote": "(ii) Order Serpentes: Snakes--All venomous species;",
+          "note": "Every venomous snake is in Class I. Class I \"may only be possessed by zoos, circuses and commercial propagators\", and § 70-4-404(c)(1) says that after 25 June 1991 \"no new animals shall be brought into possession under authority of a personal possession permit\". The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "grandfathered": {
+            "before": "1991-06-25",
+            "detail": "Persons legally possessing Class I wildlife before 25 June 1991 must hold an annual personal possession permit and may keep the lineage up to three animals per species; no new animal may be brought into possession under a personal possession permit."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "NC": {
+          "status": "conditional",
+          "sourceId": "nc-14-417",
+          "cite": "G.S. § 14-417",
+          "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure. Enclosures shall be designed to be escape-proof, bite-proof, and have an operable lock.",
+          "note": "North Carolina regulates venomous reptiles by how they are kept, not whether. A cobra is lawful only in a sturdy, escape-proof, bite-proof, locked enclosure. Each enclosure must be labeled \"Venomous Reptile Inside\" with the species, the appropriate antivenin and the owner's details, a written bite protocol and escape recovery plan must be posted within sight of the housing and travel with the animal, and an escape must be reported to local law enforcement at once. Counties may go further under § 153A-131. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "AR": {
+          "status": "permit",
+          "sourceId": "ar-code-0900",
+          "cite": "Code 09.17; Addendum F1.08; Addendum R1.02(A)(4); Code 09.02(I)",
+          "quote": "It is unlawful to possess any medically significant venomous reptile after July 1, 2021, whether native or non-native to Arkansas, without obtaining a valid Venomous Reptile Permit issued by the Commission and complying with all permit requirements in Addendum F1.08.",
+          "note": "\"Cobras (Genus Naja)\" and \"King Cobras (Genus Ophiophagus)\" both sit on the R1.02 permit list, and Code 09.17 requires a Venomous Reptile Permit to keep one. Addendum F1.08 issues the permit to an applicant at least 18 with no captive wildlife or cruelty conviction in five years who shows written proof that local ordinances allow the animal, and sets locked enclosures, a locked escape-proof room and warning signage. The animal must also come from a permitted breeder/dealer or in on an importation permit under Code 09.02. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "ID": {
+          "status": "permit",
+          "sourceId": "id-130110",
+          "cite": "IDAPA 13.01.10.200.01, 010.06, 261.02.e",
+          "quote": "No person may import into Idaho, export from Idaho, transport, possess or otherwise hold in captivity, propagate, sell or release into the wild any live wildlife, except those animals exempted by Idaho Code or these rules, without a corresponding import, export, transport, captive possession (individual animal license or multiple animal license at a private, commercial or rehabilitation facility), sale or release license/permit from the Department.",
+          "note": "A cobra is venomous and so outside the conventional pets definition, which exempts only \"non-venomous or non-dangerous reptiles\". Keeping one needs a Fish and Game captive possession license, and § 261.02.e requires venomous reptile enclosures with safety glass, double walls against fangs and locks. The Agriculture deleterious list has no reptile. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "IA": {
+          "status": "banned",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(9)(d); §§ 717F.3, 717F.4",
+          "quote": "A member of the family elapidae, viperidae, crotalidae, atractaspidae, or hydrophidae which are venomous, including but not limited to cobras, mambas, coral snakes, kraits, adders, vipers, rattlesnakes, copperheads, pit vipers, keelbacks, cottonmouths, and sea snakes.",
+          "note": "Cobras are named in the venomous snake clause, and elapidae is one of the families it covers. § 717F.3 bars owning, possessing, breeding or bringing one into the state, and the only private route was the § 717F.4 registration of animals already held on 1 July 2007. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "grandfathered": {
+            "before": "2007-07-01",
+            "detail": "An owner in possession on 1 July 2007 could keep the animal after implanting an electronic identification device within sixty days and registering with the department by 31 December 2007. No new route exists."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "KY": {
+          "status": "banned",
+          "sourceId": "ky-301-2-082",
+          "cite": "301 KAR 2:082 §§ 4(2)(t), 5, 6(3)",
+          "quote": "(2) Except as established in Sections 5 and 6 of this administrative regulation, a person shall not import, transport, or possess the following inherently dangerous exotic wildlife: ... (t) Venomous exotic snakes of the families Viperidae, Atractaspididae, Elapidae, Hydrophidae, and Colubridae, except for hognose snakes (Genus Heterodon);",
+          "note": "Cobras are elapids, one of the families of venomous exotic snakes on the inherently dangerous list. The only routes left are an AZA-accredited facility and the commissioner's exemption in § 5, which is open to municipal zoos, colleges, circuses and earlier exempted facilities, not private keepers. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "grandfathered": {
+            "before": "2005-07-13",
+            "detail": "A person who legally possessed the animal before 13 July 2005 may keep it for its life with veterinary records, acquisition papers or other proof, but may not replace it, breed it or transfer it."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "RI": {
+          "status": "permit",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(b)(1); § 3.9(A), (C)",
+          "quote": "(1) All venomous snakes require an exotic animal possession permit.",
+          "note": "A cobra needs an exotic animal possession permit from the Division of Agriculture, which § 3.9(A) makes available to private persons for animals § 3.7 does not expressly prohibit, and § 3.7 does not name venomous snakes. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.05(b), Table 800.2; Fis 804.02(b)(4)",
+          "quote": "(b) A permit shall be issued only to a person in the permittee category(ies), as defined in Fis 802.01, and cited in Table 800.2 as follows: ... Reptiles ... 5 All venomous reptiles",
+          "note": "Fis 804.02(b)(4) frees exotic reptiles from any permit except alligators, crocodiles and venomous reptiles, and the venomous row in Table 800.2 is category 5 only, so no permit can issue to an individual. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MO": {
+          "status": "permit",
+          "sourceId": "mo-578-023",
+          "cite": "RSMo § 578.023(1); 3 CSR 10-9.110(2)",
+          "quote": "if he or she keeps any lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, Canada lynx, bobcat, jaguarundi, hyena, wolf, bear, nonhuman primate, coyote, any deadly, dangerous, or poisonous reptile, or any deadly or dangerous reptile over eight feet long",
+          "note": "A cobra is a poisonous reptile under Missouri's dangerous wild animal statute, which does not ban it but makes it an offense to keep one without registering it with the local law enforcement agency in the county where it is kept. As a non-native reptile it needs no Wildlife Code permit under 3 CSR 10-9.110(2). The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "KS": {
+          "status": "banned",
+          "sourceId": "ks-32-1301",
+          "cite": "K.S.A. 32-1301(d), 32-1302(a), (c), (d)",
+          "quote": "\"Dangerous regulated animal\" means a live or slaughtered parts of: (1) Lions, tigers, leopards, jaguars, cheetahs and mountain lions, or any hybrid thereof; (2) bears or any hybrid thereof; and (3) all non-native, venomous snakes.",
+          "note": "All non-native venomous snakes are dangerous regulated animals, and since 1 July 2006 no one may take possession of one except a USDA licensee keeping up the inventory it held that day. A cobra is never native to Kansas. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "grandfathered": {
+            "before": "2006-07-01",
+            "detail": "An animal possessed on 1 July 2006 may be kept if registered with the local animal control authority, caged to K.S.A. 32-1306, covered by $250,000 liability insurance or bond, and not bred."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60",
+          "quote": "15. reptiles",
+          "note": "South Carolina lets reptiles be imported for the pet trade without a permit and nothing read in Title 50 or in Chapter 123 of the regulations restricts venomous reptiles. A cobra is not native, so the native reptile limits in Regulations 123-151.3 and 151.4 do not apply, and the only restricted nonnative species under 123-152 is the black and white tegu. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MT": {
+          "status": "banned",
+          "sourceId": "mt-arm-12-6-22",
+          "cite": "ARM 12.6.2215(6)(g)",
+          "quote": "(6) The following reptiles are classified as prohibited: ... (g) Cobras (all species in family Elapidae);",
+          "note": "Cobras are named on the prohibited list, as are mambas, kraits and coral snakes, all by the family Elapidae. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "verifiedOn": "2026-10-01"
+        },
+        "WV": {
+          "status": "permit",
+          "sourceId": "wv-20-2-13",
+          "cite": "W. Va. Code §§ 20-2-13, 20-1-2; W. Va. Code § 19-34-5(c)(2)(E)",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "note": "A cobra is wildlife from without the state: § 20-1-2 counts reptiles as wildlife with no nativity limit, so one brought in from outside the state needs an importation permit from the director under § 20-2-13, the Burmese python's position. The board's Dangerous Wild Animal list names no snake and no crocodilian, although § 19-34-5 allowed both. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "AK": {
+          "status": "banned",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(a), (b), (c)",
+          "quote": "The department may not issue a permit for the capture, possession, import, or export of any game animal, including a hybrid of a game animal and a species listed in (b) of this section, for use as a pet",
+          "note": "Reptiles are game in Alaska, and the clean list clears only \"Any nonvenomous reptile\", so a cobra stays under § 92.029(a), and subsection (c) bars a pet permit. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-40-3-24",
+          "cite": "SDCL 40-3-24; ARSD 12:68:18:03",
+          "quote": "No person may bring into the state or possess in the state any nondomestic mammal unless the mammal is allowed in the state pursuant to § 40-3-25.",
+          "note": "South Dakota's bar is written for mammals only, so a cobra is outside it, and Game, Fish and Parks has no captive wildlife chapter for reptiles. A free entry permit under 12:68:18:03 still applies to bringing any nondomestic animal into the state. Neither statute nor rule read here sets any venomous reptile rule. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AL": {
+          "status": "banned",
+          "sourceId": "al-220-2-26",
+          "cite": "r. 220-2-.26(1)",
+          "quote": "Any species of venomous reptile which has never naturally existed in the wild in Alabama including but not limited to venomous snakes of the families Viperidae, Atractaspididae, Elapidae, Hydrophiidae and Colubridae, except for hognose snakes (genus Heterodon);",
+          "note": "Cobras are elapids and have never lived wild in Alabama, so possessing one is barred. Only accredited educational, research and rehabilitation facilities may be exempted, by the Commissioner's written permission under § (6). The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "IN": {
+          "status": "permit",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)(4); 9-11-2(c), (e); 312 IAC 9-5-6(s)",
+          "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+          "note": "Venomous reptiles are Class III, and 312 IAC 9-5-6(s) lets an individual possess one only under a wild animal possession permit or a scientific purposes license. A Class III permit has to be in hand before taking possession and needs a recapture or destruction plan with the equipment to carry it out, a cage inspection and proof of lawful acquisition. It is still a pet permit. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "ND": {
+          "status": "permit",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(3)(b)(5); 48.1-09-01-03(1), (2)",
+          "quote": "b. Category 3 species of nontraditional livestock includes the following species and their hybrids: ... (2) Big cats, including mountain lion, jaguar, leopard, lion, tiger, and cheetah. (3) Bears. (4) Wolves. (5) Venomous reptiles and nonvenomous injurious reptiles. (6) Primates.",
+          "note": "Venomous reptiles are category 3 nontraditional livestock, so a cobra needs a license. The owner must hold a nontraditional livestock license from the Board of Animal Health before acquiring one, and the board must inspect and approve the premises first, under 48.1-09-01-03(1) and (2)(b). The annual fee is fifteen dollars under NDCC 36-01-08.1. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "WY": {
+          "status": "permit",
+          "sourceId": "wy-ch69",
+          "cite": "Ch. 69 § 9(a)",
+          "quote": "An importation/possession permit shall be required for the activities listed in this section. ... (a) Importation or possession of venomous reptiles or poisonous amphibians. A certificate of veterinary inspection is also required prior to importation.",
+          "note": "Venomous reptiles are the one group Chapter 69 pulls out of its free reptile clause, so a cobra needs an importation/possession permit and a veterinary certificate before import. § 9 lets the Department deny one where it would pose a risk to the state's wildlife resources. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-5-2-3",
+          "cite": "Rule 2.3(A)(1)(a); Rule 8.3(A)(5)",
+          "quote": "1. Nongame species in need of management in Mississippi include: a. Thirty-two (32) species of small mammals, one species of freshwater fish, and all native species of reptiles and amphibians except those regulated by other rules of the Commission on Wildlife, Fisheries and Parks.",
+          "note": "The nongame rule reaches native reptiles only, and the inherently dangerous list in Rule 8.3 names no reptile, so no Mississippi rule read here reaches a cobra. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "verifiedOn": "2026-10-01"
+        },
+        "LA": {
+          "status": "banned",
+          "sourceId": "la-76-xv-101",
+          "cite": "LAC 76:XV.101.K.2.a.xi",
+          "quote": "xi. All species in the Genera Naja, Ophiophagus, Pseudohaje, Aspidelaps, and Walterinnesia (cobras); Dendroaspis (mambas), Oxyuranus (taipans), and Bungarus (kraits) of the Family Elapidae;",
+          "note": "Cobras, the king cobra included, are on Louisiana's prohibited nonnative list, which bars importing, possessing, selling, transferring and breeding them. Owners had 365 days from the January 2025 effective date to register and obtain a permit, the Burmese python's position. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "grandfathered": {
+            "before": "2025-01-01",
+            "detail": "Registration within 365 days of the rule taking effect, no breeding, no further acquisition."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(c)",
+          "quote": "(c) Except as otherwise provided, monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license;",
+          "note": "Reptiles not native to Oklahoma are exempt unless they could establish themselves in the wild and are injurious under federal rules, and no venomous reptile rule appears in the Oklahoma texts read. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species.",
+          "note": "Nebraska regulates reptiles only where they are its own, and the captive wildlife chapter covers wild birds and mammals defined by Nebraska geography, so a cobra needs no permit, the Burmese python's position. Nebraska has no venomous, constrictor or size rule. The king cobra and the Asian Naja species are on CITES Appendix II, which governs import and export, not keeping.",
+          "verifiedOn": "2026-10-01"
+        }
+      },
+      "article": "/blog/cobra-legal-guide/"
     }
   }
 }
