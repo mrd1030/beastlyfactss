@@ -27605,6 +27605,477 @@
         }
       },
       "article": "/blog/bobcat-legal-guide/"
+    },
+    "arctic-fox": {
+      "name": "Arctic fox",
+      "scientific": "Vulpes lagopus",
+      "jurisdictions": {
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(K)(2)",
+          "quote": "Family Canidae-All species (W)",
+          "note": "Every canid is restricted, and the department's caging table lists the arctic fox by name beside the bat-eared fox. No permit type covers pet keeping.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-391-4-8-05",
+          "cite": "R. 391-4-8-.05(1)(a)3; O.C.G.A. § 27-5-4(b)(1)",
+          "quote": "Order Carnivora (weasels, ferrets, cats, bears, wolves, etc.) - All species, except that European ferret (Mustela putorius furo) may be sold, purchased, exhibited, or held as a pet without a license or permit",
+          "note": "Same as the fennec fox. Vulpes is not among the four canid genera in the inherently dangerous tier, but the license rule takes all of Carnivora, and § 27-5-4(b)(1) issues those licenses only to dealers and public exhibitors.",
+          "verifiedOn": "2026-10-01"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6-5",
+          "cite": "§ 4-71-6.5, Restricted Animal List Part A",
+          "quote": "Vulpes (all species in genus) fox",
+          "note": "The arctic fox is Vulpes lagopus on current taxonomy and was long filed as Alopex lagopus. On the current name the Part A genus entry reaches it; on the old one it is on no list and barred by Hawaii's default rule. Banned on either reading.",
+          "verifiedOn": "2026-10-01"
+        },
+        "PA": {
+          "status": "unclear",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)(2), (11)",
+          "quote": "In the family Canidae. Species and subspecies of the coyote, the red and gray fox and a full-blooded wolf or crossbreed thereof not licensed by the Department of Agriculture.",
+          "note": "Same answer as the fennec fox. The Canidae line reaches only the coyote, the red fox, the gray fox and the wolf, and the arctic fox is none of them. What arguably reaches it is the § 137.1(a)(11) catch-all for wildlife captive bred in another state, which rests on an agency reading of 34 Pa.C.S. § 102 rather than on text naming the animal.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)",
+          "quote": "a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following",
+          "note": "None of the seven categories covers a wild canid, so the arctic fox is barred the same way the fennec fox is.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "§ 161.01(b)(1)",
+          "quote": "All dogs other than domesticated dogs (Canis familiaris), including, but not limited to, wolf, fox, coyote, hyaena, dingo, jackal, dhole, fennec, raccoon dog, zorro, bush dog, aardwolf, cape hunting dog and any hybrid or cross-breed offspring of a wild dog and domesticated dog.",
+          "note": "The wild dog clause reaches every canid but the domestic dog and names \"fox\" generally, so the arctic fox is in without being listed by species. § 161.01(d) lets the Department consent to an owner removing a seized animal to a jurisdiction where it is not prohibited, which is the only relief in the article.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NJ": {
+          "status": "banned",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.8(a); 7:25-4.9(a)3",
+          "quote": "Carnivora Canidae--Nondomestic dogs / Ursidae--Bears / Felidae--Nondomestic cats ... The potentially dangerous species shall not be kept as a pet, for hobby purposes or in situations, which, in the judgment of the Department, could adversely affect the health of the animal or which could constitute a hazard to the public.",
+          "note": "Same answer as the fennec fox. An exotic canid is a nondomestic dog under 4.8(a), and 4.9(a)3 bars keeping a potentially dangerous species as a pet; the permit at 4.8(b) is for zoos, researchers and exhibitors.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "ME": {
+          "status": "banned",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.18(2)(F); § 7.06(3)(A)(2)(a)",
+          "quote": "Family Canidae All Species in Family Canidae (Canids)",
+          "note": "Every canid is Category 1, and the permit goes only to exhibitors, rehabilitators, USDA-registered laboratories and accredited research facilities. The domestic ferret is the only carnivore on the Unrestricted List.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.11(1)(a)",
+          "quote": "A person is exempt from holding a license or other approval as required under this chapter to possess live nonnative wild animals that are not endangered or threatened species, except for any of the following:",
+          "note": "Same answer as the fennec fox: nonnative, unlisted and not harmful, so no captive wildlife license is needed. A DATCP import permit applies to an animal brought in from out of state.",
+          "verifiedOn": "2026-10-01"
+        },
+        "FL": {
+          "status": "permit",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.002(1)(b)24, (1)(c); 68A-6.003(8)",
+          "quote": "(c) Class III: All other wildlife not listed herein, except those for which a permit is not required pursuant to Rule 68A-6.003, F.A.C.",
+          "note": "Same reading as the fennec fox: FWC's personal pet page treats foxes as Class III despite the Canidae parenthetical in Class II item 24, so the answer is the free personal use permit rather than the $140 one, on the agency's reading of its own rule.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL §§ 11-0103(6)(e)(3), 11-0512(1)(a); 6 NYCRR § 180.1(b)(1)",
+          "quote": "no person shall import, transport, possess, purchase, barter, transfer, sell, offer for sale, exchange, propagate or release or cause to be released within New York State any of the following live native or non-native dangerous animals including those which are captive bred in any of the following orders, families and individual species or subspecies including all subspecies and hybrids thereof: ... (1) Canines in the Family Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda));",
+          "note": "The Canidae carve-out names the fennec fox and nothing else, so the arctic fox is a wild animal that § 11-0512 bars as a pet.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)(B), (b)(1)",
+          "quote": "\"Category One Wild Animal\" means, notwithstanding changes in taxonomic nomenclature, any wild animal, gamete or hybrid of any of the following: (A) A member within the family Felidae (including, but not limited to, lion, leopard, cheetah, jaguar, ocelot, jaguarundi cat, puma, lynx and bobcat) except Bengal cat pursuant to section 26-40a of the Connecticut General Statutes; (B) A member within the family Canidae (including, but not limited to, wolf and coyote); (C) A member within the family Ursidae (including, but not limited to, black bear, grizzly bear and brown bear); or (D) A member within the family Hominidae ...",
+          "note": "Same answer as the fennec fox: every canid is Category One. Subsection (b)(1) allows a Category One animal only to a municipal park, zoo, public nonprofit aquarium, nature center, museum, or a USDA-licensed exhibitor, laboratory or research facility, so there is no private route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(1), (12)(a)",
+          "quote": "The purpose of 321 CMR 9.01 is to list those species which are exempt from the licensing provisions of M.G.L. c. 131, § 23, and which may be imported, possessed, maintained, propagated, bought, sold, exchanged or offered for sale without a license or permit from the Division. Species not listed, or which are expressly listed as \"require(s) a permit\", are not exempt from the provisions of M.G.L. c. 131, § 23.",
+          "note": "No wild canid of any kind is on either list, so the arctic fox needs a § 23 license, the same as the fennec fox. The license under § 23 exists on paper, but MassWildlife says permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\"",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
+          "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
+          "note": "Same answer as the fennec fox: on no Colorado list, so regulated, and no pet license exists. Chapter W-11 says noncommercial (pet) possession of regulated mammals has been prohibited since 1983, and its wildlife park licenses are commercial or closed to new entrants.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AZ": {
+          "status": "restricted",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(F)",
+          "quote": "All species of the order Carnivora",
+          "note": "All of Carnivora is restricted, so the arctic fox needs a special license, the same answer as the fennec fox.",
+          "verifiedOn": "2026-10-01"
+        },
+        "OR": {
+          "status": "banned",
+          "sourceId": "or-609-305",
+          "cite": "ORS 609.305; ORS 609.341(1); ORS 609.351(1)",
+          "quote": "Any nonwolf member of the family Canidae not indigenous to Oregon, except the species Canis familiaris (domestic dog)",
+          "note": "Same answer as the fennec fox. The arctic fox is a non-indigenous canid, so it is an exotic animal on its family membership alone, and the Agriculture permit window closed in 2010 and never reopened.",
+          "localOverride": true,
+          "grandfathered": {
+            "before": "2010-01-01",
+            "detail": "A State Department of Agriculture permit issued before 1 January 2010, or issued within a year of that date on proof the animal was already held. Applications closed 90 days after 1 January 2010, breeding a permitted animal is barred, and possession ends 30 days after a permit lapses."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "WA": {
+          "status": "banned",
+          "sourceId": "wa-wac-246-100-197",
+          "cite": "WAC 246-100-197(5)(a), (b)",
+          "quote": "All persons are prohibited from acquiring, selling, bartering, exchanging, giving, purchasing, distributing, or trapping to retain any bat, skunk, fox, raccoon, or coyote, except a zoological park, animal exhibitor, research facility, or wildlife rehabilitator.",
+          "note": "The rabies rule names the fox without a species, so an arctic fox is caught the same as a native one: no acquisition or import except by zoos, exhibitors, research facilities and rehabilitators.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "OH": {
+          "status": "unclear",
+          "sourceId": "oh-1531-01",
+          "cite": "R.C. 1531.01(W), (X); § 1533.71(A)",
+          "quote": "\"Fur-bearing animals\" includes minks, weasels, raccoons, skunks, opossums, muskrats, fox, beavers, badgers, otters, coyotes, and bobcats.",
+          "note": "The dangerous wild animal list does not reach it, since its canids are gray wolves and African wild dogs. What arguably does is the fur-bearing animal definition, which names \"fox\" with no species and no nativity limit, inside a definition of wild animals that takes in \"all other wild mammals\". On that reading the arctic fox, long farmed for fur as the blue fox, needs a § 1533.71 license; read as Ohio's own foxes, it needs nothing. The Division of Wildlife has published nothing on it.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "TX": {
+          "status": "unclear",
+          "sourceId": "tx-71-001",
+          "cite": "Parks & Wild. Code §§ 71.001(1), 71.005(c)",
+          "quote": "\"Fur-bearing animal\" means wild beaver, otter, mink, ring-tailed cat, badger, skunk, raccoon, muskrat, opossum, fox, or nutria.",
+          "note": "Not on the dangerous wild animal list. The fur-bearing definition names \"fox\" with no species, and § 71.005(c) requires a propagation license to possess any live fur-bearing animal. Whether \"wild ... fox\" reaches a nonnative fox bred in captivity is the question: the fennec fox cell reads it as not reaching one, on the word \"wild\" and on Chapter 71 being written for Texas populations, and the text arguably reaches it anyway.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-captive-game",
+          "cite": "NREPA Part 427; MCL 287.1102(f); MCL 287.731",
+          "quote": "badger, bobcat, red and gray fox, raccoon, coyote, beaver, otter, muskrat, mink, squirrels, striped skunk, woodchuck, opossum, ring-necked pheasant, bobwhite quail, Hungarian partridge, ducks, geese and wild turkeys",
+          "note": "Read and nothing found. The captive game list names red and gray fox, the two Michigan species, and the arctic fox is neither, so it stands where the fennec fox does. Michigan regulates its own wildlife and leaves non-native exotics to the import rules: the captive game permit list is native game only, and the Large Carnivore Act reaches seven named cats and bears. Importing one calls for an MDARD certificate of veterinary inspection, and cities and townships may prohibit it by ordinance.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-720-48-10",
+          "cite": "720 ILCS 5/48-10(a); 520 ILCS 5/2.2",
+          "quote": "\"Dangerous animal\" means a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote. Dangerous animal does not mean any herptiles included in the Herptiles-Herps Act.",
+          "note": "Read and nothing found. It is not on the 720 ILCS 5/48-10 dangerous animal list, which is fifteen named mammals plus primates, and it is not one of the Illinois species protected by name in the Wildlife Code at 520 ILCS 5/2.2. Its foxes are the red and gray fox by binomial, so the arctic fox is where the fennec fox is. Illinois is a home rule state, so a municipal ordinance can be stricter and often decides it.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-17-351",
+          "cite": "§ 346.155, subd. 1(e); § 97A.015, subd. 45; §§ 17.351, 17.352",
+          "quote": "\"Fur-bearing animal\" means a fox, mink, fitch, chinchilla, karakul, marten, nutria, or fisher that is the second or later generation raised in captivity.",
+          "note": "Not a regulated animal, and not small game, which names only the red and gray fox. A farmed arctic fox two or more generations from the wild is a domestic animal under §§ 17.351 and 17.352 in any case.",
+          "verifiedOn": "2026-10-08"
+        },
+        "NV": {
+          "status": "banned",
+          "sourceId": "nv-nac-503",
+          "cite": "NAC 503.110(1)(d)",
+          "quote": "1. Except as otherwise provided in this section, the importation, transportation or possession of the following species of live wildlife or hybrids thereof, including viable embryos or gametes, is prohibited: ... (d) Mammals: ... (10) Foxes................................................ All species in the genera Vulpes, Fennecus, Urocyon, Alopex, Lycalopex and Pseudalopex",
+          "note": "The prohibited list names the genus Alopex, the arctic fox's old genus, as well as Vulpes, its current one, so it is barred on either taxonomy. Permits for prohibited species go only to accredited zoos, universities, scientific institutions, commercial aquaculture and nonprofit educational exhibitors. NAC 503.140(4) preserves county and city ordinances, and Clark County, Las Vegas and Henderson are all stricter than the state.",
+          "localOverride": true,
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VA": {
+          "status": "permit",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "§ 15-30-40(A)",
+          "quote": "Canidae   All Species   Wild Dogs, Wolves, Coyotes or Coyote hybrids, Jackals and Foxes",
+          "note": "The Canidae row spells out foxes, and the arctic fox is nonnative, so it is a special permit animal like the fennec fox.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MD": {
+          "status": "banned",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1)(i), (v)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Caught twice, by \"fox\" in clause (i) and by the dog family clause, the fennec fox's position. There is no private permit: the exemptions run to zoos, sanctuaries, research and licensed exhibitors. Subsection (e) preserves stricter county and municipal rules.",
+          "localOverride": true,
+          "grandfathered": {
+            "before": "2006-05-31",
+            "detail": "Lawful possession on or before 31 May 2006 may continue, but only if the keeper gave written notification to the local animal control authority by 1 August 2006, with the number and type of animals and a photograph or a description of a tattoo or microchip. That window is long closed."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Mammal | Dog, wild | Canidae | Vulpes (sp. variety) | Fox (any type) | IV | State Protected Species",
+          "note": "The arctic fox is Vulpes lagopus on current taxonomy, inside the Vulpes \"any type\" row in Group IV; on its old genus, Alopex, it is unlisted and the default clause sends it to Group IV anyway. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. 19.35.7 NMAC is an importation rule, so it governs bringing the animal into New Mexico rather than keeping one already here.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "No canid appears on the Unrestricted list, so the arctic fox is Restricted by default. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "UT": {
+          "status": "restricted",
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1 header",
+          "quote": "Except as otherwise listed, all species are presumed prohibited. All species not listed will require an assessment before collection, importation, or possession will be authorized.",
+          "note": "The only foxes in Table 3b-1 are the domestic red fox and the controlled fennec fox, so the arctic fox is unlisted. Unlisted birds and mammals are presumed prohibited and need a division assessment before possession is authorized, so this is neither cleared nor expressly banned; it is an application to DWR with no published answer, the serval's position.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
+          "quote": "Unless specifically exempt from the permitting requirement as presented in regulation 6.1, all persons who would own or have custody of an exotic animal must first obtain a permit issued by the Department.",
+          "note": "The arctic fox is a nonnative wild mammal not on the exempt list, so 6.2 requires an Individual permit, the fennec fox's position. The live red fox bar in tit. 7 § 789 names the red fox only. The $25 Individual permit from the Department of Agriculture is issued where possession will be in the public interest, and Delaware's only outright refusals under 4.7 are the gila monster, the beaded lizard and the komodo dragon. County and municipal ordinances are the more likely obstacle.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-1660-01-18",
+          "cite": "Tenn. Code Ann. § 70-4-403(3); Tenn. Comp. R. & Regs. 1660-01-18-.03",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q).",
+          "note": "The only canids in Class I are the wolves, and the arctic fox is not native, so it falls into the Class III catch-all. The commission's rule chapter adds no mammal to Class I except hybrids of two Class I species. Rule .01(4) asks every keeper of live wildlife to be able to prove legal ownership, a purchase receipt from a licensed propagator among the accepted forms.",
+          "verifiedOn": "2026-10-08"
+        },
+        "NC": {
+          "status": "unclear",
+          "sourceId": "nc-113-129",
+          "cite": "G.S. §§ 113-129(7c), (15), (16); 113-272.5(a); 14-417",
+          "quote": "(7a) Fur-bearing Animals. - Beaver, mink, muskrat, nutria, otter, skunk, and weasel; bobcat, opossum, and raccoon when lawfully taken with traps. ... (7c) Game Animals. - Bear, fox, rabbit, squirrel, white-tailed deer, and, except when trapped in accordance with provisions relating to fur-bearing animals, bobcat, opossum, and raccoon.",
+          "note": "The fennec fox is recorded legal here on the venomous reptile statute. The arctic fox is harder because the game animal definition names \"fox\" with no species, and § 113-129(16) extends the wildlife definitions to animals of wild species kept in captivity. Read that way, an arctic fox is a game animal needing a captivity license that is not issued for a pet; read as North Carolina's own foxes, nothing reaches it. Counties may regulate it under § 153A-131.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "AR": {
+          "status": "permit",
+          "sourceId": "ar-unrestricted",
+          "cite": "Code Addendum R1.02; Codes 09.02, 09.07, 09.10",
+          "quote": "A. Permits for breeding, sale, and importation may be issued for the following species in accordance with Codes 09.07 (Wildlife Breeder/ Dealer Permit Required) and 09.10 (Wildlife Importation Permit Required): ... 3. Mammals ... Arctic Fox (Vulpes lagopus)",
+          "note": "Named on the permit list, which is more than the fennec fox gets. A non-native animal on the permit list may be kept if it came from a Commission-permitted Wildlife Breeder/Dealer or in on a Wildlife Importation Permit, with acquisition records, a veterinary disease certificate and sexes housed apart unless neutered, under Code 09.02.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "ID": {
+          "status": "banned",
+          "sourceId": "id-25-236",
+          "cite": "Idaho Code § 25-236(1), (3)",
+          "quote": "No person shall possess, offer for sale, trade, barter, exchange or importation into the state of Idaho any fox, skunk or raccoon, except as provided in subsection (2) or (3) of this section.",
+          "note": "\"Any fox\" carries no species or nativity limit, so it reaches the arctic fox as well as Idaho's own, and the deleterious exotic animal list separately takes all non-native canids. The only exceptions are fur farms holding domestic fur-bearing animals and public parks, zoos, museums and educational institutions with an Agriculture permit, so there is no pet route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "IA": {
+          "status": "banned",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(1)",
+          "quote": "A member of the family canidae of the order carnivora, including but not limited to wolves, coyotes, and jackals. However, a dangerous wild animal does not include a domestic dog.",
+          "note": "A canid other than the domestic dog, the fennec fox's position. § 717F.3 bars owning, possessing, breeding or importing a dangerous wild animal, and the only route was the 2007 registration.",
+          "grandfathered": {
+            "before": "2007-07-01",
+            "detail": "An owner in possession on 1 July 2007 could keep the animal after implanting an electronic identification device within sixty days and registering with the department by 31 December 2007. No new route exists."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "KY": {
+          "status": "banned",
+          "sourceId": "ky-301-2-082",
+          "cite": "301 KAR 2:082 § 4(1)(j)",
+          "quote": "Fox (Genus Cerdocyon, Genus Lycalopex, Genus Otocyon, Genus Urocyon, and Genus Vulpes);",
+          "note": "The arctic fox is Vulpes lagopus, inside the last genus named, the fennec fox's position. The section bars importing, transporting into Kentucky, and possessing.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "RI": {
+          "status": "banned",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.7(A); § 3.9(B)",
+          "quote": "All exotic and native wild animals and hybrids of the order Carnivora for which there is no USDA conditionally licensed or unconditionally licensed rabies vaccine are expressly prohibited from importation or possession without the issuance of a valid permit by the Department. Possession is restricted to bona fide researchers, USDA licensed exhibitors authorized to possess animals of this order for short-term exhibition purposes, and Association of Zoos and Aquariums (AZA) certified facilities.",
+          "note": "The arctic fox is a carnivore with no licensed rabies vaccine, the fennec fox's position. § 3.9(B) adds that no permit shall be granted to a private person for an exotic carnivore without a licensed rabies vaccine.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.04(b); Fis 804.03(a)",
+          "quote": "(b) All species not specifically listed under the categories of non-controlled, prohibited, or controlled shall be designated as prohibited.",
+          "note": "The controlled table names the gray, fennec and red foxes and no arctic fox, and an unlisted species is prohibited by default. Fis 804.03(a) issues no permit for a prohibited species, and the waiver in Fis 802.05 is closed to every permittee category but exhibitors.",
+          "verifiedOn": "2026-10-01"
+        },
+        "MO": {
+          "status": "unclear",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.110(2); 3 CSR 10-9.223(2)",
+          "quote": "(2) Live white-tailed deer, white-tailed deer-hybrids, mule deer, mule deer-hybrids, raccoons, foxes, and coyotes may not be imported into this state.",
+          "note": "Two Missouri rules point different ways. 9.110(2) clears non-native mammals to be bought, sold and possessed without permit, which reaches the arctic fox. 9.223(2) bars importing live \"foxes\" with no species or nativity limit. Read together, an arctic fox bred in Missouri may be kept, and whether one may be brought in from another state turns on whether the import bar means Missouri's own foxes or any fox. It is not on the § 578.023 registration list.",
+          "verifiedOn": "2026-10-08"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-3(a), (b), (d); K.S.A. 32-1301(d)",
+          "quote": "(a) Subject to federal or state law or rules and regulations, exotic wildlife species may be imported, possessed, sold, offered for sale or purchased, provided the exotic wildlife was legally captured, raised, exported, possessed, sold or purchased or any combination of these activities in its place of origin. (b) Exotic wildlife may be possessed without limit in time and number.",
+          "note": "Not native to Kansas, so exotic wildlife; the fennec fox's position. It is not a dangerous regulated animal under K.S.A. 32-1301 and not on the 115-18-10 prohibited list, whose only canid is the Asian raccoon dog.",
+          "verifiedOn": "2026-10-01"
+        },
+        "SC": {
+          "status": "permit",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-20(A)(1), (B)",
+          "quote": "a furbearer, a member of the family Cervidae, a nondomestic member of the families Suidae (pigs), Tayassuidae (peccaries), Bovidae (bison, mountain goat, mountain sheep), coyote, bear, or turkey (genus Meleagris). Furbearer includes, but is not limited to, red and gray fox, raccoon, opossum, muskrat, mink, skunk, otter, bobcat, weasel, and beaver;",
+          "note": "The furbearer list names \"red and gray fox\" and is open ended, \"includes, but is not limited to\", so an arctic fox reads as a furbearer needing the import permit, the fennec fox's position. § 50-16-20(B) lets the Department issue the permit only if the animal was taken lawfully where it came from and its possession is not expected to harm the state's wildlife, and § 50-16-60's pet-trade exemption does not list it.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MT": {
+          "status": "banned",
+          "sourceId": "mt-50-23-102",
+          "cite": "MCA §§ 50-23-101(4), 50-23-102; § 87-5-705(1)",
+          "quote": "\"Wild animal\" means a skunk, fox, raccoon, or bat.",
+          "note": "Banned twice. The arctic fox is a \"fox\" under the rabies law, which bars possessing one outside a fur farm, a no-contact zoo exhibit or research, and it is non-native exotic wildlife appearing on none of Montana's white-list classifications, the same ground that bans the fennec.",
+          "grandfathered": {
+            "before": "1981-07-01",
+            "detail": "Held for at least 6 months before 1 January 1982."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "WV": {
+          "status": "legal",
+          "sourceId": "wv-74-1",
+          "cite": "W. Va. C.S.R. § 74-1-3.1; W. Va. Code § 20-1-2",
+          "quote": "3.1.b. Gray wolves, excluding hybrids;",
+          "note": "Same as the fennec fox. The only canids on the board's list are gray wolves and African wild dogs, and the arctic fox is not native, so Chapter 20 does not reach it.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "AK": {
+          "status": "banned",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(a), (c); AS 16.05.940(19)",
+          "quote": "The department may not issue a permit for the capture, possession, import, or export of any game animal, including a hybrid of a game animal and a species listed in (b) of this section, for use as a pet",
+          "note": "The arctic fox is an Alaska native and a furbearer, but that only confirms it is game; the clean list has no fox, and subsection (c) bars a pet permit.",
+          "verifiedOn": "2026-10-01"
+        },
+        "SD": {
+          "status": "permit",
+          "sourceId": "sd-12-68-18",
+          "cite": "ARSD 12:68:18:03(1)(b); 12:68:18:03.03(4)",
+          "quote": "(1) Of the order Carnivora, all nondomestic members of the following families: ...(b) Canidae;",
+          "note": "Same as the fennec fox: a canid, so a possession permit at ten dollars an animal, renewed annually.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "AL": {
+          "status": "banned",
+          "sourceId": "al-220-2-26",
+          "cite": "§ (1)",
+          "quote": "Any of the following from any area outside the state of Alabama; any member of the family Cervidae (to include but not be limited to deer, elk, moose, caribou), species of coyote, species of fox, species of raccoon, species of skunk, wild rodent, or strain of wild turkey, black bear (Ursus americanus), mountain lion (Felis concolor), bobcat (Felis rufus)",
+          "note": "\"Species of fox\" carries no species limit, and every arctic fox in the trade comes from outside Alabama, which is the trigger. Same answer as the fennec fox.",
+          "verifiedOn": "2026-10-01"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-7(a)(3), (4); 9-11-1(a)",
+          "quote": "(3) Gray fox (Urocyon cinereoargenteus). (4) Red fox (Vulpes fulva).",
+          "note": "Same answer as the fennec fox. The two foxes on the Class II list are Indiana's own, the arctic fox is on none of the three lists, and 9-11-1 limits the permit requirement to animals referenced in the rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "ND": {
+          "status": "unclear",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(1)(b), (2)(b), (6)",
+          "quote": "Nontraditional livestock not otherwise referred to in this section or Century Code must be reviewed by the board for determination of importation requirements and licensure requirements prior to importation.",
+          "note": "The foxes the rule names are ranch foxes in category 1, and kit, swift, red and gray foxes in category 2. The arctic fox is in neither list by name. It is farmed for fur as the blue fox, so one from a fur ranch arguably counts as a category 1 \"ranch fox\" needing no license; otherwise subsection 6 sends it to the board for review before import. Same gap as the fennec fox.",
+          "verifiedOn": "2026-10-01"
+        },
+        "WY": {
+          "status": "permit",
+          "sourceId": "wy-ch10",
+          "cite": "Ch. 10 § 13(d); Wyo. Stat. § 23-1-101(a)(viii)(A)",
+          "quote": "A permit may be authorized upon approval for other warm-blooded wildlife unless otherwise specified in this regulation.",
+          "note": "The statute's predatory animal list names the red fox only, so the arctic fox is not barred from import the way the red fox is. Like the fennec it lands on the discretionary § 13(d) permit.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "MS": {
+          "status": "unclear",
+          "sourceId": "ms-40-2-7-1",
+          "cite": "Rule 7.1(A), (F); Miss. Code § 49-7-1",
+          "quote": "F. Live nuisance animals may not be possessed except: 1. Coyotes in permitted coyote enclosures; 2. Fox in permitted fox enclosures",
+          "note": "The statute classes \"fox\" as a nuisance animal with no species qualifier, and Rule 7.1(F) bars possessing a live one outside a hound pen. Read literally that reaches the arctic fox; read as a list of Mississippi's own pest species, it does not, and Rule 8.3 names no fox. The fennec fox cell reads only Rule 8.3 and answers legal.",
+          "verifiedOn": "2026-10-08"
+        },
+        "LA": {
+          "status": "banned",
+          "sourceId": "la-76-v-113",
+          "cite": "LAC 76:V.113.A, D.1, D.6",
+          "quote": "6.No person shall transport, possess, purchase or sell any live foxes or coyotes taken outside the state of Louisiana. Live foxes and coyotes obtained from outside the state of Louisiana prior to the enacted date of these regulations and in possession of properly licensed persons shall be exempt.",
+          "note": "The rule's stated purpose is to \"prohibit the importation and exportation of any species of foxes\", and D.6 bars possessing any live fox taken outside Louisiana. Every arctic fox comes from outside the state, so there is no route in. The fennec fox cell reads only § 115 and answers legal; see the loose end on it.",
+          "verifiedOn": "2026-10-08"
+        },
+        "OK": {
+          "status": "unclear",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(a)(8), (a)(35)",
+          "quote": "(8) Dogs (except coyotes and native foxes).",
+          "note": "Two readings. The dog exemption excludes only coyotes and native foxes, which implies a non-native fox counts as a \"dog\" and is exempt. But the Commission gave the fennec fox its own line at (35), which suggests it did not read \"Dogs\" as covering foxes at all, and on that reading the arctic fox, unnamed, needs the import permit and breeder's license. Either way it is not banned.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 8 § 001.08A; Neb. Rev. Stat. § 37-246",
+          "quote": "001.08A Importation: the following wildlife may be imported: ... Fox Vulpes spp.",
+          "note": "Same answer as the fennec fox. The import list takes the genus Vulpes, and the arctic fox is Vulpes lagopus on current taxonomy, and it is not a Nebraska native, so the Captive Wildlife Permit scheme does not apply. Under its older name, Alopex lagopus, it would not be on the list.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        }
+      },
+      "article": "/blog/arctic-fox-legal-guide/"
     }
   }
 }
