@@ -1794,6 +1794,21 @@
       "title": "Wis. Admin. Code ch. NR 16, Captive Wildlife: NR 16.11 harmful wild animals and NR 16.15 captive wild animal farms",
       "url": "https://docs.legis.wisconsin.gov/code/admin_code/nr/001/16/11",
       "note": "The rule that answers Wisconsin's native carnivores and the wolfdog. NR 16.11 designates bears and \"Hybrids of the species Canis lupus, C. lycaon, or C. rufus ... and the species Canis familiaris, domestic dogs, and subsequent generations from such matings\" as harmful wild animals, which Wis. Stat. § 169.11(1)(b) bars possessing unless the department authorizes it. NR 16.15 applies to every captive wild animal farm \"including commercial operations and hobbyists\", requires local zoning assurance before a first licence for a harmful animal, and requires a wolf-dog owner to neuter the animal by six months and mark it permanently. The licence itself is § 169.15, which the department shall issue to any person who applies. NR 16.15 is at https://docs.legis.wisconsin.gov/code/admin_code/nr/001/16/15."
+    },
+    "mi-wolf-dog-cross-act": {
+      "title": "Michigan Wolf-dog Cross Act, MCL 287.1001 to 287.1023",
+      "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-287-1004",
+      "note": "A ban with a closed grandfather. § 1003(1)(a) bars possessing a wolf-dog cross except in compliance with the act, and § 1004(1) allows possession only of individual animals held on the act's effective date, 29 June 2000, whose owner applied for a local permit within four months. § 1002(p) defines a wolf-dog cross to include a cross of a wolf-dog cross with a dog, so the definition runs to every generation, and § 1003(3) presumes a canid is a cross when its owner has represented it as one. legislature.mi.gov refuses curl from this container; § 1004 was read there through WebFetch and agrees with the animallaw.info reproduction cached in docs/legal-sources."
+    },
+    "vt-20-ch-193": {
+      "title": "20 V.S.A. chapter 193, Domestic Pet or Wolf-Hybrid Control, §§ 3541 and 3581",
+      "url": "https://legislature.vermont.gov/statutes/section/20/193/03581",
+      "note": "The statute that answers the wolfdog in Vermont, where the Fish and Wildlife lists are silent. § 3541(8) (https://legislature.vermont.gov/statutes/section/20/193/03541) defines a wolf-hybrid as the progeny or descendant of a domestic dog and a wolf, or an animal advertised, registered or described as one or showing primary wolf characteristics, and § 3581(a) requires its owner to register and license it annually with the town clerk on the same terms and fees as a dog. The chapter's title treats the wolf-hybrid as a pet the state licenses, not as a restricted wild animal."
+    },
+    "ks-115-20-4": {
+      "title": "K.A.R. 115-20-4, Possession of certain wildlife",
+      "url": "https://www.law.cornell.edu/regulations/kansas/K-A-R-115-20-4",
+      "note": "A possession permit for exactly four animals, the mountain lion, the wolf (Canis lupus), the black bear and the grizzly, which \"Any individual may apply\" for with proof of purchase and the purpose of possession, subject to all local ordinances. Zoos, vets, schools, circuses and possession of five days or less are exempt. For the cats and bears it sits under K.S.A. 32-1302(c), which since 1 July 2006 bars anyone but a qualifying USDA licensee from taking possession of a dangerous regulated animal."
     }
   },
   "animals": {
@@ -29540,6 +29555,476 @@
         }
       },
       "article": "/blog/black-bear-legal-guide/"
+    },
+    "wolfdog": {
+      "name": "Wolfdog",
+      "scientific": "Canis lupus x Canis familiaris",
+      "jurisdictions": {
+        "CA": {
+          "status": "conditional",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(K)(2)(a)",
+          "quote": "Wolf hybrids Canis familiaris (domestic dog) x Canis lupus (wolf) are considered F1 generation wolf hybrids and are restricted (W). i. No state permit is required to possess the progeny of F1 generation wolf hybrids, but cities and counties may prohibit possession or require a permit.",
+          "note": "California draws its line at the first generation. A direct wolf by dog cross is restricted and no permit type covers a pet; anything bred from F1 animals onward needs no state permit. The rule says in terms that cities and counties may still ban or license those later generations, so the local ordinance is the second check.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-dnr-legal-pets",
+          "cite": "DNR Guide to Legal Pets; R. 391-4-8-.04(1)(a)2(i); O.C.G.A. § 27-5-4(b)(1)",
+          "quote": "Hybrids or crosses between any combination of domestic animals, wildlife, or regulated wild animals and all subsequent generations are regulated in Georgia and may not be held without a license. ... Wolf hybrids are not a legal pet in Georgia.",
+          "note": "DNR names the wolf hybrid outright. The wolf is in the inherently dangerous tier under genus Canis, the hybrid sentence carries that to \"all subsequent generations\", so no percentage or generation gets a wolfdog out, and § 27-5-4(b)(1) gives no license to a pet keeper.",
+          "verifiedOn": "2026-10-08"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6",
+          "cite": "§ 4-71-6, List of Prohibited Animals",
+          "quote": "Canis familiaris crossed with wolf, coyote, dingo, jackal, fox, dhole, African wild dog, racoon dog, bush dog, etc. dog, hybrid; (all hybrid-crosses where one or both parents are prohibited or restricted)",
+          "note": "Hawaii names the wolf and dog cross on its prohibited list, the tier with no permit at all. No generation or percentage is written, so a low-content wolfdog is in the same position as an F1.",
+          "verifiedOn": "2026-10-01"
+        },
+        "PA": {
+          "status": "conditional",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)(2)",
+          "quote": "In the family Canidae. Species and subspecies of the coyote, the red and gray fox and a full-blooded wolf or crossbreed thereof not licensed by the Department of Agriculture.",
+          "note": "The prohibition reaches a wolf crossbreed \"not licensed by the Department of Agriculture\", which is the agency that runs Pennsylvania's dog licensing, so a wolfdog carrying that license is outside the Game Commission list and one without it is not. No generation or percentage is written. The opening of § 137.1(a) also reaches any crossbreed \"similar in appearance\" to a listed animal, and 34 Pa.C.S. § 2961 counts wolf crossbreeds with similar features as exotic wildlife, so a high-content animal that reads as a wolf is where the Commission would be most likely to look past the license. The Dog Law's own definition was not read.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)(A)",
+          "quote": "Domestic dogs, excluding hybrids with wolves, coyotes, or jackals",
+          "note": "The District names this animal and keeps it out. Category (A) admits domestic dogs \"excluding hybrids with wolves, coyotes, or jackals\", with no generation or percentage line, and nothing else on the closed list covers a wolfdog.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "§ 161.01(b)(1)",
+          "quote": "All dogs other than domesticated dogs (Canis familiaris), including, but not limited to, wolf, fox, coyote, hyaena, dingo, jackal, dhole, fennec, raccoon dog, zorro, bush dog, aardwolf, cape hunting dog and any hybrid or cross-breed offspring of a wild dog and domesticated dog.",
+          "note": "The wild dog clause ends with \"any hybrid or cross-breed offspring of a wild dog and domesticated dog\", and the wolf is the first wild dog it names. No generation or percentage line is drawn, so a low-content wolfdog is in the same position as an F1. § 161.01(d) lets the Department consent to an owner removing a seized animal to a jurisdiction where it is not prohibited, which is the only relief in the article.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NJ": {
+          "status": "unclear",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.8(a)",
+          "quote": "Carnivora Canidae--Nondomestic dogs / Ursidae--Bears / Felidae--Nondomestic cats",
+          "note": "The same gap as the Bengal. The dangerous table reaches \"Nondomestic dogs\" and stops, subchapter 4 has no hybrid provision and no generation count anywhere, and N.J.S.A. 23:4-63.3(j) excludes \"domesticated companion animals ... as defined by the Fish and Game Council\", a term the Council has never defined. A wolfdog is half of each category the word \"nondomestic\" separates. Recorded unclear rather than guessed, because the two readings are a licensed dog and an animal that may not be kept at all.",
+          "verifiedOn": "2026-10-01"
+        },
+        "ME": {
+          "status": "permit",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.12; § 7.07(2)",
+          "quote": "Wolf Hybrids: No Wolf Hybrid may be permitted under this chapter unless the applicant has first presented proof from a licensed veterinarian that: A.The wolf hybrid has been permanently identified in accordance with 7 M.R.S. §3921-A; B.The wolf hybrid has been spayed or neutered; and C.All other criteria for a Wildlife Possession Permit have been met.",
+          "note": "Maine treats a wolfdog as wildlife that an individual may be permitted to keep, which it does for no pure canid. Chapter 7 applies to wildlife \"that has been hybridized\", the exhibition permit excludes wolf hybrids in terms, and § 7.12 sets the conditions for a possession permit: a vet's proof of permanent identification and sterilization. The rule's stray provisions refer to wolf hybrids licensed under the dog licensing statute in Title 7 as well, so the dog license is a second requirement rather than an alternative. No generation or percentage line is written.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "WI": {
+          "status": "permit",
+          "sourceId": "wi-nr-16",
+          "cite": "NR 16.11(5); NR 16.15(2)(a), (4); Wis. Stat. § 169.11(1)(b)",
+          "quote": "Canidae. Hybrids of the species Canis lupus, C. lycaon, or C. rufus commonly known as wolves and the species Canis familiaris, domestic dogs, and subsequent generations from such matings. These animals are commonly called wolf-dog hybrids or wolf dogs.",
+          "note": "Wisconsin names the wolfdog and every later generation as a harmful wild animal, so it needs department authorization through a captive wild animal farm license. The rule then writes the keeper's conditions: neutered by six months, tattooed or microchipped with the owner's details, penned or on a leash under a person's immediate control, and never in a dog park. NR 16.11(5)(a) lets the department presume a canid is a wolf-dog from wolf-like looks or the owner's own description, and (b) lets the owner rebut that with a DNA test. Local zoning assurance is required before a first license.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "FL": {
+          "status": "conditional",
+          "sourceId": "fl-fwc-captive-faq",
+          "cite": "68A-6.002(1)(d), F.A.C.; FWC Captive Wildlife FAQ",
+          "quote": "Wolf-dog hybrids are regulated on a case-by-case basis. Wolf-dogs considered to be indistinguishable from a wolf will be regulated as a Class II canid and will require a Class II license for possession.",
+          "note": "Florida's hybrid rule is a resemblance test, not a generation or percentage rule: a hybrid \"substantially similar in size, characteristics and behavior so as to be indistinguishable from the wild animal\" is regulated at the wild parent's class. FWC applies it to wolfdogs case by case. One that reads as a dog needs nothing from FWC; one that reads as a wolf is a Class II canid needing the $140 personal use permit with documented experience and caging.",
+          "verifiedOn": "2026-10-08"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0511; 6 NYCRR § 180.1(b)(1), (c)",
+          "quote": "no person shall import, transport, possess, purchase, barter, transfer, sell, offer for sale, exchange, propagate or release or cause to be released within New York State any of the following live native or non-native dangerous animals including those which are captive bred in any of the following orders, families and individual species or subspecies including all subspecies and hybrids thereof: ... (1) Canines in the Family Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda));",
+          "note": "New York names the animal. § 11-0511 bars possessing \"any live wolf, wolfdog, coyote, coydog\" without a department license, and 180.1 reaches every canid other than the domestic dog and the fennec \"including all subspecies and hybrids thereof\". 180.1(c) issues licenses only for scientific, educational, exhibition, zoological or propagation purposes, so no generation or percentage gives a pet route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)(B), (a)(10), (b)(1)",
+          "quote": "\"Category One Wild Animal\" means, notwithstanding changes in taxonomic nomenclature, any wild animal, gamete or hybrid of any of the following: (A) A member within the family Felidae (including, but not limited to, lion, leopard, cheetah, jaguar, ocelot, jaguarundi cat, puma, lynx and bobcat) except Bengal cat pursuant to section 26-40a of the Connecticut General Statutes; (B) A member within the family Canidae (including, but not limited to, wolf and coyote); (C) A member within the family Ursidae (including, but not limited to, black bear, grizzly bear and brown bear); or (D) A member within the family Hominidae ...",
+          "note": "Category One reaches \"any wild animal, gamete or hybrid\" of a canid, and (a)(10) defines a hybrid as any animal from \"the combining of a gamete of a wild animal with a gamete of another species\", which is a wolfdog. Connecticut wrote a hybrid exception for exactly one animal, the Bengal cat, and none for canids, and drew no generation line. Subsection (b)(1) allows a Category One animal only to a municipal park, zoo, public nonprofit aquarium, nature center, museum, or a USDA-licensed exhibitor, laboratory or research facility, so there is no private route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MA": {
+          "status": "banned",
+          "sourceId": "ma-131-77a",
+          "cite": "M.G.L. c. 131, § 77A; 321 CMR 9.02(2)(e)",
+          "quote": "No person shall possess, sell, trade, breed, import, export or release a wild canid hybrid or wild felid hybrid, except as otherwise provided by rules and regulations of the division. Any mammal which is the offspring of the reproduction between any species of wild canid or hybrid wild canid and a domestic dog or hybrid wild canid, or is represented by its owner to be a wolf hybrid, coyote hybrid, coy dog or any other kind of wild canid hybrid, ...",
+          "note": "A flat ban, and wider than most because it reaches any animal \"represented by its owner to be a wolf hybrid\" as well as the offspring of a hybrid and a dog, so there is no generation exit. The section's only exit for later generations is written for registered cats, and none is written for dogs. 321 CMR 9.02(2)(e) treats every other wild and domestic mammal hybrid as domestic and sends canid hybrids back to § 77A, and MassWildlife says plainly that wolf-dog hybrids \"are not domestic animals\".",
+          "grandfathered": {
+            "before": "1994-01-01",
+            "detail": "An owner in possession on 1 January 1994 who obtained a permit from the director on or before 31 July 1994 is outside the section."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w11",
+          "cite": "§ 1103(A)",
+          "quote": "Domestic dog (Canis familiaris) including hybrids with wild canids",
+          "note": "Colorado answers the wolfdog the way it answers the Bengal: the domestic animal list clears the domestic dog \"including hybrids with wild canids\", with no generation, percentage or registration test, so a wolfdog is a dog to the state wildlife agency. CPW tells keepers to check their city or county, and several Colorado municipalities restrict wolf hybrids, so the local ordinance can be the binding rule.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-401",
+          "cite": "Ariz. Admin. Code R12-4-401; R12-4-406(C)(1), (D)",
+          "quote": "\"Hybrid wildlife\" means an offspring from two different wildlife species or genera. Offspring from a wildlife species and a domestic animal species are not considered wildlife.",
+          "note": "The same definition that settles the Savannah settles the wolfdog. R12-4-406(C)(1) restricts hybrid wildlife with a restricted parent, but hybrid wildlife is a cross of two wildlife species, and a wolf by dog cross is the offspring of a wildlife species and a domestic one, so it \"is not considered wildlife\" at any generation and the Game and Fish rules do not reach it. Arizona counties and cities regulate dogs, so the local ordinance is the second check.",
+          "verifiedOn": "2026-10-08"
+        },
+        "OR": {
+          "status": "conditional",
+          "sourceId": "or-635-044",
+          "cite": "OAR 635-044-0460(5); 0470(3)",
+          "quote": "The burden of proof of the hybridity of a bobcat-cross or wolf-cross animal is the responsibility of the animal owner. A wolf is considered \"pure-bred\" when the animal's genetic and phenotypic makeup does not include any genetic material or characteristics of a domestic dog or other canine. ... Lack of sufficient proof of hybridity as determined by the Department will genetically classify the animal as a bobcat or wolf requiring a Wildlife Holding Permit or Exhibitor/Animal Entertainment Industry or Sanctuary Permit and regulation under the conditions of these rules",
+          "note": "Oregon regulates the pure-bred wolf, defined as an animal with no dog genetics or characteristics at all, and since 0470(3) no new private permit for one is issued. A wolfdog is outside that, but only if the owner can prove it: pedigree and breeding records, acquisition records and sworn statements, with Department genetic testing possible. An animal the owner cannot prove is a hybrid is classified as a wolf, which no new private keeper may hold. Cities and counties regulate dogs and exotic animals on top.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-16-30",
+          "cite": "RCW 16.30.010(2)(a)(i)(B); WAC 246-100-197(2)(i), (6)(f), (8)(c)",
+          "quote": "(B) Family canidae, wolves, excluding wolf-hybrids;",
+          "note": "Washington wrote the wolfdog out of its dangerous wild animal ban in terms. The health department's rabies rule does reach it, but only after an incident: it defines a hybrid to include any animal its owner represents as a wolf hybrid, and orders one exposed to rabies or that bites someone euthanized and tested, because no rabies vaccine is licensed for it. No state rule bars keeping one. RCW 16.30 leaves local animal control in charge, and many Washington cities and counties regulate wolf hybrids.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01",
+          "cite": "R.C. 935.01(C)(2)",
+          "quote": "\"Dangerous wild animal\" means any of the following, including hybrids unless otherwise specified: ... (2) Gray wolves, excluding hybrids;",
+          "note": "Ohio's list includes hybrids by default and then excludes them from the wolf entry in terms, so a wolfdog is not a dangerous wild animal at any generation. Ohio's dog laws and local ordinances are the rules that apply to it.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101",
+          "cite": "Health & Safety Code § 822.101(4)(N), (O), (T)",
+          "quote": "(M) a bear; (N) a coyote; (O) a jackal; ... or (T) any hybrid of an animal listed in this subdivision.",
+          "note": "Texas reaches hybrids only of the animals it lists, and its canids are the coyote and the jackal. The wolf is not listed, so a wolfdog is outside the dangerous wild animal statute at any generation, while a coydog is inside it. The gray wolf is not a Texas fur-bearing or nongame animal either. Cities and counties regulate dogs and may restrict wolf hybrids.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "MI": {
+          "status": "banned",
+          "sourceId": "mi-wolf-dog-cross-act",
+          "cite": "MCL 287.1002(p), 287.1003(1), 287.1004(1)",
+          "quote": "A person shall not possess 1 or more wolf-dog crosses unless all of the following apply: (a) The person owns the wolf-dog crosses or has temporarily been given possession of the wolf-dog crosses by the owner. (b) The owner was in possession of those individual wolf-dog crosses on the effective date of this act. (c) The owner applies for a permit for those wolf-dog crosses within 4 months after the effective date of this act, and obtains a permit for those wolf-dog crosses.",
+          "note": "Michigan's Wolf-dog Cross Act is a ban with a closed grandfather. It also bars breeding, transferring or receiving one, and its definition reaches \"A wolf-dog cross with a dog\", so no generation of dilution takes an animal out. An owner who has represented a canid as a wolf-dog cross is presumed to have one. Only animals held on 29 June 2000 and permitted within four months may be kept.",
+          "localOverride": true,
+          "grandfathered": {
+            "before": "2000-06-29",
+            "detail": "Individual wolf-dog crosses held on the act's effective date, 29 June 2000, whose owner applied for a local permit within four months and obtained one; sterilization was a condition of the permit."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "IL": {
+          "status": "unclear",
+          "sourceId": "il-720-48-10",
+          "cite": "720 ILCS 5/48-10(a), (b)",
+          "quote": "\"Dangerous animal\" means a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote. Dangerous animal does not mean any herptiles included in the Herptiles-Herps Act.",
+          "note": "The dangerous animal list names \"wolf\" and has no hybrid clause either way, unlike Ohio's and Washington's, which exclude hybrids in terms, or Texas's, which includes them. Whether a wolfdog is a \"wolf\" for § 48-10 is the whole question, and the statute does not answer it; a high-content animal is where a prosecutor would argue that it is. If it is, only the listed institutions may keep one. Illinois is a home rule state, so a municipal ordinance can be stricter and often decides it.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "MN": {
+          "status": "unclear",
+          "sourceId": "mn-97a-015",
+          "cite": "§ 97A.015, subds. 39, 45, 55; § 346.155, subd. 1(e)",
+          "quote": "\"Small game\" means game birds, gray squirrel, fox squirrel, cottontail rabbit, snowshoe hare, jack rabbit, raccoon, lynx, bobcat, short-tailed weasel, long-tailed weasel, wolf, red fox and gray fox, fisher, pine marten, opossum, badger, cougar, wolverine, muskrat, mink, otter, and beaver.",
+          "note": "The regulated animal statute reaches hybrids only of cats, bears and primates, so a wolfdog is not a regulated animal. What arguably reaches it is the game law: \"wolf\" is small game and a protected wild animal, and a wild animal is one \"wild by nature\". Minnesota has no canid hybrid provision saying whether a wolfdog is a wolf, a dog, or neither, so the answer turns on that unwritten line. Local ordinances commonly regulate wolf hybrids.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NV": {
+          "status": "conditional",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(r), (5)(b)",
+          "quote": "(r) Wolves that are lawfully acquired and bred in captivity; ... (b) \"Wolves\" includes any wolf or hybrid of a wolf. As used in this paragraph, \"hybrid\" means any canid hybrid resulting from the mating of a wolf and a dog.",
+          "note": "Nevada puts the wolfdog on its no-permit list in terms, defining wolves to include \"any canid hybrid resulting from the mating of a wolf and a dog\". The condition is that the animal was lawfully acquired and bred in captivity. No generation or percentage matters. NAC 503.140(4) preserves county and city ordinances, and Clark County, Las Vegas and Henderson are all stricter than the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-20-50",
+          "cite": "4VAC15-20-50; 4VAC15-30-40(A)",
+          "quote": "\"Nonnative (exotic) animal\" means those species and subspecies of animals not naturally occurring in Virginia, excluding domestic and naturalized species. The following animals are defined as domestic animals: Domestic dog (Canis familiaris), including wolf hybrids.",
+          "note": "Virginia defines the domestic dog to include wolf hybrids in terms, so a wolfdog is a domestic animal at any generation. The Canidae row of the permit table, which names \"Coyote hybrids\" but not wolf hybrids, governs nonnative exotic animals only and never reaches it. Virginia's dog laws apply, and localities regulate dogs and hybrids.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "MD": {
+          "status": "banned",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1)(vi)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Clause (vi) reaches any \"hybrid of a member of the dog family and a domestic dog\", and unlike the cat hybrid clause beside it there is no weight test and no generation line, so every wolfdog is caught. There is no private permit: the exemptions run to zoos, sanctuaries, research and licensed exhibitors. Subsection (e) preserves stricter county and municipal rules.",
+          "localOverride": true,
+          "grandfathered": {
+            "before": "2006-05-31",
+            "detail": "Lawful possession on or before 31 May 2006 may continue, but only if the keeper gave written notification to the local animal control authority by 1 August 2006, with the number and type of animals and a photograph or a description of a tattoo or microchip. That window is long closed."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "NM": {
+          "status": "unclear",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Mammal | Dog | Canidae | Canis familiaris | Dog, Common & Hybrids | I | all species except as restricted in another group",
+          "note": "The dog row puts hybrids in Group I, which needs no importation permit, but qualifies it \"except as restricted in another group\", and the gray wolf is Group IV. The wolf row does not say it includes hybrids, as the wild turkey rows do in terms, so it is unclear whether the exception sends a wolfdog to Group IV or leaves it a Group I dog. The cat row carries no such exception, which is why the Savannah cat is clear here and the wolfdog is not. 19.35.7 NMAC governs importation, not keeping an animal already in New Mexico.",
+          "verifiedOn": "2026-10-01"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-20-ch-193",
+          "cite": "20 V.S.A. §§ 3541(8), 3581(a)",
+          "quote": "\"Wolf-hybrid\" means an animal that is the progeny or descendant of a domestic dog (Canis familiaris) and a wolf (Canis lupus or Canis rufus).",
+          "note": "Vermont's wildlife lists are silent on the wolfdog, which on their own would make it Restricted, but the legislature wrote it into the dog law instead. Chapter 193 is headed \"Domestic Pet or Wolf-Hybrid Control\", and § 3581(a) requires the owner of a wolf-hybrid over six months old to register and license it with the town clerk each year, at the dog fees. The definition reaches every descendant and any animal represented as a wolf-hybrid. Towns may regulate them further.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1, domestic mammals",
+          "quote": "Dog Canis lupus familiaris domestic including hybrids between wild and domestic species and subspecies",
+          "note": "Utah puts dog hybrids with wild canids in the domestic column, outside the rule, while listing the wolf itself as prohibited. So a wolfdog is a dog to DWR at any generation, the way the Savannah is a cat. Cities and counties regulate dogs and may restrict hybrids.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "DE": {
+          "status": "conditional",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-3.0, 903-6.2; Del. Code tit. 3 § 7201",
+          "quote": "\"Hybrid of a wild mammal\" means a mammal whose parents are different varieties of the same species or belong to different but closely allied species, one parent being a wild mammal not native to or generally found in Delaware and the other parent being a domestic mammal native to or generally found in Delaware.",
+          "note": "Delaware defines a hybrid by its parents, so the Savannah cat's answer applies. A first-generation wolf by dog cross is a hybrid of a wild mammal and needs the $25 Individual permit under 6.2. A later generation has a wolfdog parent rather than a wolf, so on the regulation's words it is outside the permit requirement. The statute leaves \"hybrid\" undefined, so the F2 line is the regulation's reading rather than a filial rule anyone wrote.",
+          "verifiedOn": "2026-10-08"
+        },
+        "TN": {
+          "status": "unclear",
+          "sourceId": "tn-1660-01-18",
+          "cite": "Tenn. Code Ann. § 70-4-403(1)(A)(ii)(a), (3)(O); Tenn. Comp. R. & Regs. 1660-01-18-.03(1), (5)",
+          "quote": "(5) Hybrids involving two species from different Classes of animals shall be regulated as a member of the least restrictive Class involved, unless otherwise specified.",
+          "note": "Wolves of all species are Class I, closed to private keepers, and Tennessee writes hybrid rules that do not quite fit this cross. The statute puts hybrids of a Class II species and a domestic animal in Class III, but the wolf is Class I. The rule adds hybrids of two Class I species to Class I and puts cross-class hybrids in the least restrictive class involved, but a domestic dog is not wildlife in any class. So whether a wolfdog is a Class I wolf, a Class III hybrid or outside the scheme as a dog is not answered by any of the three provisions.",
+          "verifiedOn": "2026-10-08"
+        },
+        "NC": {
+          "status": "conditional",
+          "sourceId": "nc-113-129",
+          "cite": "G.S. § 113-129(15), (16); § 153A-131",
+          "quote": "Unless the context clearly requires otherwise, the definitions of wildlife, wildlife resources, wild animals, wild birds, fish, and the like are deemed to include species normally wild, or indistinguishable from wild species, which are raised or kept in captivity.",
+          "note": "North Carolina has no wolf hybrid statute. A wolfdog is not a species normally wild, so it is outside the wildlife definitions unless it is \"indistinguishable from wild species\", in which case it is a wild animal needing a captivity license that is not issued for a pet. So the condition is that the animal can be told from a wolf. Counties regulate dogs and dangerous animals under § 153A-131, and some restrict wolf hybrids.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "AR": {
+          "status": "legal",
+          "sourceId": "ar-unrestricted",
+          "cite": "Code Addendum R1.01(A)(2)",
+          "quote": "The following species are exempt from Codes 09.02 (Possession Of Non-Native Wildlife In Captivity Restricted), 09.07 (Wildlife Breeder/Dealer Permit Required), and 09.10 (Wildlife Importation Permit Required): ... 2. Mammals ... Wolf/Dog hybrids",
+          "note": "Arkansas names \"Wolf/Dog hybrids\" on its unrestricted list, so a wolfdog needs no Commission permit at any generation, while the wolf itself is a permit-list animal. Cities and counties may still regulate it.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "IDAPA 13.01.10.010.06, .200.06; IDAPA 02.04.27.402",
+          "quote": "Conventional Pets. Privately owned companion animals not intended for research or resale that are not native wildlife captured from the wild in Idaho: dogs, cats ferrets, rabbits, rodents, non-venomous or non-dangerous reptiles and amphibians, non-poultry birds, hedgehogs, tenrecs, and sugar gliders.",
+          "note": "Read and nothing found that reaches a wolfdog. The Agriculture list takes all non-native canids, and the wolf is native to Idaho; Fish and Game's wildlife is animal life generally living in a state of nature, which a wolfdog bred as a pet is not; and dogs are the first conventional pet named. Idaho writes no hybrid rule for canids either way. Cities and counties regulate dogs and may restrict hybrids.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "IA": {
+          "status": "conditional",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(b), (b)(1)",
+          "quote": "However, a dangerous wild animal does not include any of the following: (1) The offspring of a domestic dog and a wolf, or the offspring from each subsequent generation in which at least one parent is a domestic dog.",
+          "note": "Iowa writes the wolfdog out of its dangerous wild animal ban, but with a pedigree test. A first cross of a wolf and a dog is excluded, and so is every later generation in which at least one parent is a domestic dog. The opening of (b) brings \"the offspring of each subsequent generation\" of a listed animal back in, so a wolfdog bred from two wolfdogs, with no dog parent, is not covered by the exclusion and reads as a dangerous wild animal. Cities and counties may restrict wolf hybrids further.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "KY": {
+          "status": "unclear",
+          "sourceId": "ky-301-2-081",
+          "cite": "301 KAR 2:081 § 6(1)(j)7, (l); 301 KAR 2:082 § 4(2)(v)",
+          "quote": "(l) Wolf (Canis lupus).",
+          "note": "Kentucky prohibits the wolf as a native and writes hybrid language twice, for \"Any hybrid of rabies vector species\", which reaches the coydog, and for hybrids of the inherently dangerous exotics, which do not include the wolf. Neither hybrid clause names the wolf. The wolf entry is a bare binomial, and the domestic dog is itself classed by many authorities as Canis lupus familiaris, so whether the entry reaches a wolfdog is not settled by the text. KRS 65.877 lets local governments regulate.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "RI": {
+          "status": "unclear",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.6(A)(5)(h), (A)(13); § 3.7(A)",
+          "quote": "h. Domestic Dog (Canis familiaris) excluding hybrids with wild canids,",
+          "note": "The Savannah cat's position. The domestic dog entry excludes \"hybrids with wild canids\", and § 3.7(A) restricts carnivore hybrids without a licensed rabies vaccine to researchers, USDA exhibitors and AZA facilities, so a first-generation wolf by dog cross is plainly barred. But § 3.6(A)(13) defines a hybrid as \"the cross breeding of a domestic and wild animal\", and a later-generation wolfdog is the offspring of a wolfdog, so it is arguably not a hybrid at all. Nothing counts generations to settle it. The wolf itself is on the native mammal list.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 802.03(f)",
+          "quote": "The provisions of this chapter shall not apply to an owner or person possessing a wolf hybrid, as defined in RSA 466-A:1, VII, or a domesticated show or pet cat registered with a nationally or internationally recognized breeding association or registry which certifies the pedigree and registration of such cat to be without any wild felid parentage for a minimum of 3 generations.",
+          "note": "New Hampshire takes the wolf hybrid out of the Fish and Game possession rules in terms, while the wolf itself is a category 5 controlled animal. The hybrid is left to RSA 466-A, the dog licensing chapter whose definition the rule borrows, which could not be read from here (gencourt.state.nh.us refused the connection). Unlike the cat clause beside it, the wolf hybrid exemption has no generation or registry condition.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "MO": {
+          "status": "banned",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.240; 3 CSR 10-9.105(7) and Approved Confined Wildlife Species List",
+          "quote": "Class II wildlife shall include copperheads, cottonmouths, timber rattlesnakes, pygmy rattlesnakes, eastern massasauga, prairie massasauga, mountain lions or mountain lion-hybrids, wolves or wolf-hybrids, and black bears or black bear hybrids.",
+          "note": "Missouri writes \"wolves or wolf-hybrids\" into Class II, which may be held only under a Class II wildlife breeder permit, and 9.105(7) limits confined wildlife to species on the approved list. That list's only wolf entry is \"Wolf, Gray legally obtained under a valid Class II Wildlife Breeder Permit prior to August 30, 2021\", and no wolf hybrid appears on it at all. So the Wildlife Code reaches the wolfdog and offers no permit for a new one. RSMo § 578.023 separately requires a wolf to be registered with county law enforcement.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "KS": {
+          "status": "unclear",
+          "sourceId": "ks-115-20-4",
+          "cite": "K.A.R. 115-20-4(a)(2), (b); K.S.A. 32-1301(d)",
+          "quote": "(a) Any person possessing one of the following animals shall be required to obtain a possession permit: (1) mountain lion, Felis concolor Linnaeus; (2) wolf, Canis lupus Say; (3) black bear, Ursus americanus Pallas; and (4) grizzly bear, Ursus arctos horribilis Ord.",
+          "note": "The wolf is not a dangerous regulated animal in Kansas; it needs a wildlife possession permit under 115-20-4, which any individual may apply for. Kansas writes no canid hybrid rule, so whether a wolfdog is a \"wolf, Canis lupus\" needing that permit or a dog needing nothing is unanswered. If it is a wolf, the answer is a personal permit; local ordinances apply either way.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-47-2",
+          "cite": "§ 47-2-10(2); § 50-16-20(A)(1)",
+          "quote": "Family Felidae, Genus panthera - all lions, tigers, leopards, jaguars, cougars, cheetahs, snow leopards, and clouded leopards;",
+          "note": "Read and nothing found. The 2018 Act's hybrid clause reaches hybrids of Panthera cats, non-native bears and great apes only, and the § 50-16-20 import permit names the coyote and no wolf. Counties and cities regulate dogs and may restrict hybrids.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "MT": {
+          "status": "legal",
+          "sourceId": "mt-87-5-702",
+          "cite": "§ 87-5-702(2), (3)",
+          "quote": "The term includes livestock, as defined in 81-2-702, dogs, cats, rodents, Eurasian ferrets, and poultry.",
+          "note": "Dogs are domestic animals under the exotic wildlife definitions, and the gray wolf is native, so a wolf cross is not \"exotic wildlife\" on either reading. No Montana text read names wolf hybrids: the wild animal menagerie permit covers bears and large cats only, and the rabies law names only the skunk, fox, raccoon and bat. Local ordinances may still restrict them.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "WV": {
+          "status": "legal",
+          "sourceId": "wv-74-1",
+          "cite": "W. Va. C.S.R. § 74-1-3.1.b",
+          "quote": "3.1.b. Gray wolves, excluding hybrids;",
+          "note": "The board listed the gray wolf and wrote the hybrid out of that line in terms, so a wolfdog is not a dangerous wild animal. A dog is not a native wild mammal under § 20-1-2 either. Local ordinances may still restrict them.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "AK": {
+          "status": "banned",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(b), (c)",
+          "quote": "The department may not issue a permit for the capture, possession, import, or export of any game animal, including a hybrid of a game animal and a species listed in (b) of this section, for use as a pet",
+          "note": "Alaska names this case. The dog is on the clean list, but subsection (b) carves out \"a hybrid of a game animal and a species listed in this subsection\", and the wolf is game, so a wolfdog drops off the list and subsection (c) then bars a pet permit for exactly that hybrid. No generation or percentage is written.",
+          "verifiedOn": "2026-10-01"
+        },
+        "SD": {
+          "status": "permit",
+          "sourceId": "sd-12-68-18",
+          "cite": "ARSD 12:68:18:03(1)(b)",
+          "quote": "a permit as described in § 12:68:18:03.03 is required to possess in South Dakota any nondomestic mammal, or any of its hybrids, listed in this section: (1) Of the order Carnivora, all nondomestic members of the following families: ...(b) Canidae;",
+          "note": "The wolf is a nondomestic canid and the operative sentence reaches \"any of its hybrids\", so a wolfdog needs the same possession permit as a wolf. No generation or percentage is written, so a low-content animal reads the same as an F1.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-26",
+          "cite": "§ (1)",
+          "quote": "Any of the following from any area outside the state of Alabama; any member of the family Cervidae (to include but not be limited to deer, elk, moose, caribou), species of coyote, species of fox, species of raccoon, species of skunk, wild rodent, or strain of wild turkey, black bear (Ursus americanus), mountain lion (Felis concolor), bobcat (Felis rufus)",
+          "note": "The canids the rule names are coyotes and foxes. No wolf or wolf hybrid is named, and no hybrid clause covers mammals in this list, so a wolfdog is treated as a dog at the state level. Local ordinances may still restrict them.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)",
+          "quote": "(1) Wolves that are purebred. ... A hybrid of any of these species with a domestic dog or domestic cat is exempt from permitting under this section.",
+          "note": "Indiana answers this directly. Only purebred wolves are Class III, and the list closes by exempting a hybrid with a domestic dog, with no generation or percentage condition. Local ordinances may still restrict them.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "ND": {
+          "status": "permit",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(3)(b)(4); NDCC §§ 36-01-08.2, 36-01-08.4",
+          "quote": "Category 3 species of nontraditional livestock includes the following species and their hybrids: ... (2) Big cats, including mountain lion, jaguar, leopard, lion, tiger, and cheetah. (3) Bears. (4) Wolves.",
+          "note": "Category 3 covers wolves \"and their hybrids\", and the Century Code defines a wolf hybrid as \"any animal that is any part wolf\", so no low percentage escapes. A category 3 license is needed before acquiring one, and § 36-01-08.2 also requires a board identification number tattooed inside the ear.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "WY": {
+          "status": "banned",
+          "sourceId": "wy-ch10",
+          "cite": "Ch. 10 § 11(b)(xiii)",
+          "quote": "In addition, a permit shall not be issued for importation or possession of the following live warm-blooded wildlife in Wyoming, except as otherwise specified in this regulation. ... (ix) Gray wolf (Canis Lupis); (x) Red wolf (Canis Rufus); ... (xiii) Wolf hybrid",
+          "note": "Wolf hybrid is named on the no-permit list. The domestic animal definition does fold \"any hybrid\" of a listed domestic animal into the domestic category, and the dog is listed, but § 11(b)(xiii) is the specific entry and is the one that governs. No generation or percentage is written.",
+          "verifiedOn": "2026-10-01"
+        },
+        "MS": {
+          "status": "permit",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "Rule 8.3(A)(5)(b)(i), (B)(3), (C)(2)(a), (D)(4)",
+          "quote": "Family Canidae: Genus Canis (wolves, jackals, and dingos; all species, including crosses between wolves and domestic animals); excluding coyote (Canis latrans); Chrysocyon brachyurus (maned wolf); Cuon alpinus (red dog or dhole); Lycaon pictus (African hunting dog); ii. Family Ursidae (bears) - all species; iii. Family Mustelidae - Gulo gulo (wolverine); iv. Family Hyaenidae (hyenas) - all species; v. Family Felidae: Genus Leo or Panthera or Neofelis (lions, tigers, jaguars, and leopards) - all species; Acinonyx iubatus (cheetah); Felis concolor (cougar) - all subspecies;",
+          "note": "Mississippi lists genus Canis \"including crosses between wolves and domestic animals\" as inherently dangerous, with no generation cut-off. A personal possession permit exists at $75 an animal, but the bar is high: age 21, two years' experience with the species or a written exam, a recapture plan, $100,000 liability insurance per animal, a DWFP-implanted microchip and an inspection.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "LA": {
+          "status": "unclear",
+          "sourceId": "la-76-v-115",
+          "cite": "LAC 76:V.115.C.1.f, D.1",
+          "quote": "D.1.Wolf-Dog Hybrids. The prohibition against wolf-dog hybrids expired January 1, 1997. Persons are cautioned that local ordinances or other state regulations may prohibit possession of these animals. Any animal which appears indistinguishable from a wolf, or is in any way represented to be a wolf shall be considered to be a wolf in the absence of bona fide documentation to the contrary.",
+          "note": "The rule contradicts itself. The \"wolf dog hybrid\" is still printed in the § 115.C.1 list of banned animals, while D.1 says that prohibition expired on 1 January 1997. On the D.1 reading a wolfdog is legal, but one that looks like a wolf, or is sold as one, is treated as a wolf and banned unless documented otherwise. The fennec fox cell quotes the C.1.f line as a live entry.",
+          "verifiedOn": "2026-10-08"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(a)(8)",
+          "quote": "(8) Dogs (except coyotes and native foxes).",
+          "note": "The dog exemption carves out coyotes and native foxes but not wolves or wolf crosses, and no Oklahoma text read names a wolf hybrid. A wolfdog is treated as a dog at the state level. Local ordinances may still restrict them.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "NE": {
+          "status": "unclear",
+          "sourceId": "ne-37-477",
+          "cite": "Neb. Rev. Stat. §§ 37-247, 37-477(2)",
+          "quote": "(2) Except as provided in subsection (3) of this section, no person shall keep in captivity in this state any wolf, any skunk, or any member of the families Felidae and Ursidae.",
+          "note": "The statute bans \"any wolf\" and says nothing about hybrids, while § 37-247 defines wildlife as a member of a \"nondomesticated species\", which a dog cross arguably is not. 166 NAC 8 defines a hybrid but never applies the definition to wolves. Whether a wolfdog is a \"wolf\" for § 37-477(2) is not settled by any text read, and a high-content animal is where enforcement would be most likely.",
+          "verifiedOn": "2026-10-01"
+        }
+      },
+      "article": "/blog/wolfdog-legal-guide/"
     }
   }
 }
