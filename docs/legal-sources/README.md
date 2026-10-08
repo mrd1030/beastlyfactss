@@ -5,9 +5,14 @@ research sitting can grep a statute instead of refetching it. Every file carries
 header with its `sourceId`, jurisdiction, official URL, and the date it was fetched.
 
 This is a cache, not a citation. The matrix cites the official URL, and a cell's
-`verifiedOn` date means someone read the source on that date. If you are setting a
-fresh `verifiedOn`, refetch. Use these files to answer "what does the statute say
-about this species", not to claim a new verification date.
+`verifiedOn` date means someone read the source on that date.
+
+Every source in the matrix was re-read against its live page on 2026-10-01 (owner,
+2026-10-08). A new animal read from a cached file therefore carries
+`verifiedOn: "2026-10-01"`, and a research sitting reads from the cache rather than
+refetching. Fetch only where no cached file reaches the animal, and date that cell
+the day it was fetched. The monthly `scripts/check-legal-sources.mjs` run is what
+moves verification dates forward; a research sitting never does.
 
 ## What is here
 
