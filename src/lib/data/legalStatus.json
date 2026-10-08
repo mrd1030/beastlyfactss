@@ -31197,11 +31197,12 @@
           "verifiedOn": "2026-10-01"
         },
         "NJ": {
-          "status": "unclear",
+          "status": "banned",
           "sourceId": "nj-njac-7-25",
-          "cite": "N.J.A.C. 7:25-4.2(a), 4.5, 4.8(a), 4.9(a)3",
-          "quote": "\"Potentially dangerous species\" is defined as any exotic mammals, birds, reptiles or amphibians or nongame species which, in the opinion of the Division, is capable of inflicting serious or fatal injuries ... including, but not limited to the following:",
-          "note": "A lemur needs a permit in any case under 4.2(a) and 4.5. The potentially dangerous table names New World monkeys, Old World monkeys and baboons, and apes, and no lemur family, but the definition rests on the Division's opinion and the table is open-ended. If the Division treats a lemur as potentially dangerous, 4.9(a)3 bars keeping it as a pet; if not, the individual hobby permit at 4.6(a)1 is available. No text settles which, so it is recorded unclear. Lemur catta is on CITES Appendix I, which bars commercial international trade, so a pet lemur here can only come from captive breeding inside the country, and the whole family Lemuridae is listed endangered under the Endangered Species Act (50 CFR 17.11).",
+          "cite": "N.J.A.C. 7:25-4.10(a), (b); 7:25-4.14(a), (b); 7:25-4.2(a)",
+          "quote": "Except as specifically hereinafter provided, no permit shall be issued for the possession of any species designated as endangered by the U.S. Department of the Interior or the New Jersey Department of Environmental Protection pursuant to N.J.S.A. 23:2A-4.",
+          "note": "A lemur needs a permit in any case under 4.2(a) and 4.5, and 4.10(a) bars one for any species the U.S. Department of the Interior designates endangered, which 50 CFR 17.11 does for the whole family Lemuridae. The only exception is 4.10(b), a permit issued after a clear showing under 4.14, which requires a federal endangered species permit, a sponsoring organization and a designated professional, and a written proposal for scientific research that needs the species. That is not a pet route, so the individual hobby permit at 4.6(a)1 is closed whatever the potentially dangerous table says about lemurs. Lemur catta is on CITES Appendix I, which bars commercial international trade, so a pet lemur here can only come from captive breeding inside the country, and the whole family Lemuridae is listed endangered under the Endangered Species Act (50 CFR 17.11).",
+          "permitFor": "commercial-exhibition-research",
           "verifiedOn": "2026-10-01"
         },
         "ME": {
