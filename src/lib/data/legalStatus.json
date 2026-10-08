@@ -26191,6 +26191,465 @@
         }
       },
       "article": "/blog/skunk-legal-guide/"
+    },
+    "kinkajou": {
+      "name": "Kinkajou",
+      "scientific": "Potos flavus",
+      "jurisdictions": {
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(K)(4)",
+          "quote": "Family Procyonidae-All species-(D)",
+          "note": "The kinkajou is a procyonid and the family line reaches it; the order heading names kinkajous outright, and the exceptions under the family are the pandas, the ringtail and the cacomistle only. No permit type covers pet keeping.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-391-4-8-05",
+          "cite": "R. 391-4-8-.05(1)(a)3; O.C.G.A. § 27-5-4(b)(1)",
+          "quote": "Order Carnivora (weasels, ferrets, cats, bears, wolves, etc.) - All species, except that European ferret (Mustela putorius furo) may be sold, purchased, exhibited, or held as a pet without a license or permit",
+          "note": "The kinkajou is a carnivore, and the license rule takes the whole order with one exception written for the European ferret. Under § 27-5-4(b)(1) those licenses go only to the wholesale or retail wild animal trade and to public exhibitors, so there is no license a pet keeper can hold.",
+          "verifiedOn": "2026-10-01"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6-5",
+          "cite": "§ 4-71-6.5, Restricted Animal List Part A",
+          "quote": "Potos flavus kinkajou",
+          "note": "Named by binomial under Procyonidae on Part A. Research and exhibition only.",
+          "verifiedOn": "2026-10-01"
+        },
+        "PA": {
+          "status": "unclear",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)(4), (11)",
+          "quote": "In the family Procyonidae. All species of raccoons.",
+          "note": "The Procyonidae line names the family and then limits itself to raccoons, so it does not reach the kinkajou by its words. What arguably does is the catch-all at § 137.1(a)(11), barring possession of wildlife captive bred in another state, read with 34 Pa.C.S. § 102, which makes every mammal but livestock a wild animal. That is the same agency reading the fennec fox cell turns on, and no Pennsylvania text names the kinkajou, so it is recorded unclear rather than banned.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)",
+          "quote": "a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following",
+          "note": "None of the seven categories covers a kinkajou. The District bans by omission from a closed list, so nothing has to name it.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "§ 161.01(b)(5)",
+          "quote": "All Procyonidae: All raccoon (eastern, desert, ring-tailed cat), kinkajou, cacomistle, cat-bear, panda and coatimundi.",
+          "note": "Named in the Procyonidae clause, which bans the whole family. § 161.01(d) lets the Department consent to an owner removing a seized animal to a jurisdiction where it is not prohibited, which is the only relief in the article.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-4-3",
+          "cite": "N.J.A.C. 7:25-4.3(a)2.ii",
+          "quote": "ii. Kinkajou--Potos flavus;",
+          "note": "Named on the 4.3 permit list, the second mammal after the ferret. That makes it a hobby permit animal under 4.6(a)1, subject to the general possession criteria at 4.7. New Jersey does not treat procyonids as potentially dangerous; 4.8's carnivore entries are dogs, bears and cats.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "ME": {
+          "status": "banned",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.18(2)(F); § 7.06(3)(A)(2)(a)",
+          "quote": "Potos flavus Kinkajou",
+          "note": "Named by binomial in Category 1, where the permit goes only to exhibitors, rehabilitators, USDA-registered laboratories and accredited research facilities. The coati, its relative, is a Category 2 animal; the kinkajou is not.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.11(1)(a)",
+          "quote": "A person is exempt from holding a license or other approval as required under this chapter to possess live nonnative wild animals that are not endangered or threatened species, except for any of the following:",
+          "note": "Nonnative, not federally or state listed, and not on the § 169.11 harmful list, which names cougars, bears, swine and wolf-dog hybrids. So § 169.04(4)(b) frees it from any captive wildlife license. An animal brought in from out of state still needs a DATCP import permit.",
+          "verifiedOn": "2026-10-01"
+        },
+        "FL": {
+          "status": "permit",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.002(1)(c); 68A-6.003(8)",
+          "quote": "(c) Class III: All other wildlife not listed herein, except those for which a permit is not required pursuant to Rule 68A-6.003, F.A.C.",
+          "note": "Not named in Class I or Class II, so Class III by default. That means the no-cost Permit to Possess Class III Wildlife for Personal Use under 68A-6.003(8), and the animal is not on the 22-item no-permit list at 68A-6.003(14).",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1(b)(5)",
+          "quote": "(5) Raccoons in the Genus Procyon;",
+          "note": "New York's procyonid entry is drawn at the genus Procyon, so it reaches raccoons and stops. The kinkajou is not on the six-clause wild animal list, not elsewhere on 180.1, not native and so not small game. Read and nothing found, the same position as the ferret. New York City, a separate cell, bans it by name.",
+          "verifiedOn": "2026-10-01"
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(3)(B)(xxi), (b)(3)",
+          "quote": "(xxi) A member within the family Procyonidae (including, but not limited to, common raccoon),",
+          "note": "The kinkajou is a procyonid, and Category Two takes the whole family. Subsection (b)(3) allows a Category Two animal only to a treating veterinarian, a municipal park, zoo, marine mammal park, aquarium, nature center, museum, exhibitor, laboratory or research facility, so there is no private route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(1), (12)(a)",
+          "quote": "The purpose of 321 CMR 9.01 is to list those species which are exempt from the licensing provisions of M.G.L. c. 131, § 23, and which may be imported, possessed, maintained, propagated, bought, sold, exchanged or offered for sale without a license or permit from the Division. Species not listed, or which are expressly listed as \"require(s) a permit\", are not exempt from the provisions of M.G.L. c. 131, § 23.",
+          "note": "Not on the thirteen-entry mammal exemption list, so not exempt from § 23 licensing. The license under § 23 exists on paper, but MassWildlife says permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\"",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
+          "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
+          "note": "Potos flavus appears on none of Colorado's lists, which puts it in the regulated middle by default. The raccoon is on the prohibited list by species, not by family, so the kinkajou is regulated rather than prohibited. Chapter W-11 says noncommercial (pet) possession of regulated mammals has been prohibited since 1983, and its wildlife park licenses are commercial or closed to new entrants.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AZ": {
+          "status": "restricted",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(F)",
+          "quote": "All species of the order Carnivora",
+          "note": "All of Carnivora is restricted, which reaches the kinkajou as a procyonid, so it needs a special license.",
+          "verifiedOn": "2026-10-01"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(1)(b)(F)",
+          "quote": "(F) Kinkajou -- Procyonidae -- Potos flavus ;",
+          "note": "Named on the noncontrolled list, which ODFW says may be imported, possessed, sold and transported without a Department permit. ORS 609.305 does not reach procyonids. Oregon cities and counties may still prohibit exotic animals by ordinance.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-77-08-010",
+          "cite": "RCW 77.08.010(74); WAC 220-640-200(1); RCW 16.30.010(2)",
+          "quote": "\"Wildlife\" means all species of the animal kingdom whose members exist in Washington in a wild state.",
+          "note": "Read and nothing found. It is not wildlife under RCW 77.08.010(74), because it does not exist in Washington in a wild state, it is not deleterious exotic wildlife under WAC 220-640-200, and RCW 16.30.010(2) does not list it. The health department's rabies rule names raccoons, foxes and skunks by common name and does not reach it. A Washington Department of Agriculture health certificate applies to an imported animal.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01",
+          "cite": "R.C. 935.01(C); 1531.01(V), (W)",
+          "quote": "\"Fur-bearing animals\" includes minks, weasels, raccoons, skunks, opossums, muskrats, fox, beavers, badgers, otters, coyotes, and bobcats.",
+          "note": "Read and nothing found. The kinkajou is not on the § 935.01 dangerous wild animal list, and the Division of Wildlife's captivity license in § 1533.71 reaches game birds, game quadrupeds, reptiles, amphibians and fur-bearing animals, whose definitions name the raccoon by common name and no other procyonid.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101",
+          "cite": "Health & Safety Code § 822.101(4); Parks & Wild. Code § 71.001(1)",
+          "quote": "\"Fur-bearing animal\" means wild beaver, otter, mink, ring-tailed cat, badger, skunk, raccoon, muskrat, opossum, fox, or nutria.",
+          "note": "Read and nothing found. The kinkajou is not one of the twenty clauses of the dangerous wild animal list, is not a fur-bearing animal (the only procyonids there are the raccoon and the ring-tailed cat), and is not indigenous, so the nongame rules do not reach it.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-captive-game",
+          "cite": "NREPA Part 427; MCL 287.1102(f); MCL 287.731",
+          "quote": "badger, bobcat, red and gray fox, raccoon, coyote, beaver, otter, muskrat, mink, squirrels, striped skunk, woodchuck, opossum, ring-necked pheasant, bobwhite quail, Hungarian partridge, ducks, geese and wild turkeys",
+          "note": "Read and nothing found. Michigan regulates its own wildlife and leaves non-native exotics to the import rules: the captive game permit list is native game only, and the Large Carnivore Act reaches seven named cats and bears. Importing one calls for an MDARD certificate of veterinary inspection, and cities and townships may prohibit it by ordinance.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-720-48-10",
+          "cite": "720 ILCS 5/48-10(a); 520 ILCS 5/2.2",
+          "quote": "\"Dangerous animal\" means a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote. Dangerous animal does not mean any herptiles included in the Herptiles-Herps Act.",
+          "note": "Read and nothing found. It is not on the 720 ILCS 5/48-10 dangerous animal list, which is fifteen named mammals plus primates, and it is not one of the Illinois species protected by name in the Wildlife Code at 520 ILCS 5/2.2. Illinois is a home rule state, so a municipal ordinance can be stricter and often decides it.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-346-155",
+          "cite": "§ 346.155, subd. 1(e); § 97A.015, subd. 39",
+          "quote": "all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association; (2) bears; and (3) all nonhuman primates",
+          "note": "Read and nothing found. Minnesota's regulated animal definition is cats, bears and nonhuman primates, so a procyonid is outside it, and the kinkajou is not a Minnesota game or protected animal.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NV": {
+          "status": "permit",
+          "sourceId": "nv-nrs-503-597",
+          "cite": "NRS 503.597(1); NAC 503.110, 503.140",
+          "quote": "it is unlawful, except by the written consent and approval of the Department, for any person at any time to receive, bring or have brought or shipped into this State, or remove from one stream or body of water in this State to any other...any aquatic life or wildlife",
+          "note": "The kinkajou is on neither the prohibited list nor the no-permit list. An animal on neither Nevada list is not unregulated: NRS 503.597 requires the Department's written consent to bring any wildlife into the state, and NAC 503.140 is the list of exemptions from that. NAC 503.140(4) preserves county and city ordinances, and Clark County, Las Vegas and Henderson are all stricter than the state.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "VA": {
+          "status": "permit",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "§ 15-30-40(A)",
+          "quote": "Procyonidae   All Species   Raccoons and Relatives*",
+          "note": "The table takes the whole procyonid family, \"Raccoons and Relatives\", and the kinkajou is a nonnative procyonid, so a special permit from the department is required to import, possess or sell one, the fennec fox's position.",
+          "grandfathered": {
+            "before": "1992-07-01",
+            "detail": "Asterisked rows allow an animal held before 1 July 1992 and declared in writing by 1 January 1993 to be kept under a possession-only permit that renews every five years and cannot be transferred."
+          },
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1); Nat. Res. §§ 10-902(a), 10-903",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Read and nothing found. The kinkajou is not on the eight-clause list, whose only procyonid is the raccoon by common name. The native wildlife permit in Nat. Res. § 10-902 attaches only to wildlife native to Maryland, and Maryland has not used its § 10-903 power to restrict nonnative mammals. Subsection (e) of § 10-621 preserves stricter county and municipal rules.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Mammal | Furbear, small | Procyonidae | Potos | Kinkajou | IV",
+          "note": "Named outright in Group IV. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. 19.35.7 NMAC is an importation rule, so it governs bringing the animal into New Mexico rather than keeping one already here.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "The kinkajou is on none of the three lists, so the Unrestricted list's closing line makes it Restricted. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "UT": {
+          "status": "restricted",
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1 header",
+          "quote": "Except as otherwise listed, all species are presumed prohibited. All species not listed will require an assessment before collection, importation, or possession will be authorized.",
+          "note": "The kinkajou is on none of Table 3b-1's sections. Unlisted birds and mammals are presumed prohibited and need a division assessment before possession is authorized, so this is neither cleared nor expressly banned; it is an application to DWR with no published answer, the serval's position.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
+          "quote": "Unless specifically exempt from the permitting requirement as presented in regulation 6.1, all persons who would own or have custody of an exotic animal must first obtain a permit issued by the Department.",
+          "note": "The kinkajou is a live wild mammal not native to Delaware and is not on the exempt list at 6.1, so regulation 6.2 requires an Individual permit, the fennec fox's position. The $25 Individual permit from the Department of Agriculture is issued where possession will be in the public interest, and Delaware's only outright refusals under 4.7 are the gila monster, the beaded lizard and the komodo dragon. County and municipal ordinances are the more likely obstacle.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-1660-01-18",
+          "cite": "Tenn. Code Ann. § 70-4-403(3); Tenn. Comp. R. & Regs. 1660-01-18-.03",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q).",
+          "note": "The kinkajou is not native and is not named in Class I, IV or V, so it falls into the Class III catch-all, which needs no TWRA permit. The commission's rule chapter adds no mammal to Class I except hybrids of two Class I species. Rule .01(4) asks every keeper of live wildlife to be able to prove legal ownership, a purchase receipt from a licensed propagator among the accepted forms.",
+          "verifiedOn": "2026-10-08"
+        },
+        "NC": {
+          "status": "legal",
+          "sourceId": "nc-14-417",
+          "cite": "N.C. Gen. Stat. § 14-417",
+          "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
+          "note": "Read and nothing found that reaches a kinkajou, the fennec fox's position. North Carolina's only statewide exotic animal statute covers venomous reptiles, and the Wildlife Resources Commission's game and fur-bearer definitions name native animals. § 153A-131 lets counties regulate dangerous animals, and several have used it, so the county ordinance is the rule to check.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "AR": {
+          "status": "permit",
+          "sourceId": "ar-unrestricted",
+          "cite": "Code Addendum R1.02; Codes 09.02, 09.07, 09.10",
+          "quote": "A. Permits for breeding, sale, and importation may be issued for the following species in accordance with Codes 09.07 (Wildlife Breeder/ Dealer Permit Required) and 09.10 (Wildlife Importation Permit Required): ... 3. Mammals ... Kinkajou (Potos flavus)",
+          "note": "Named on the permit list. A non-native animal on the permit list may be kept if it came from a Commission-permitted Wildlife Breeder/Dealer or in on a Wildlife Importation Permit, with acquisition records, a veterinary disease certificate and sexes housed apart unless neutered, under Code 09.02.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "ID": {
+          "status": "permit",
+          "sourceId": "id-020427",
+          "cite": "IDAPA 02.04.27.409.02; 100.01",
+          "quote": "409. DELETERIOUS EXOTIC ANIMALS - MAMMALS: PROCYONIDAE. 01. Coatimundi. 02. Kinkajou.",
+          "note": "Named on the deleterious exotic animal list, and § 100.01 bars possessing a listed animal without a possession permit from the Administrator. Only the large felids and most primates carry the extra AZA-accredited facility requirement, so a route exists, the serval's position. § 25-236 names the raccoon only, not its relatives.",
+          "verifiedOn": "2026-10-01"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5); § 481A.1(36)",
+          "quote": "A member of the family felidae of the order carnivora, including but not limited to lions, tigers, cougars, leopards, cheetahs, ocelots, and servals. However, a dangerous wild animal does not include a domestic cat.",
+          "note": "Read and nothing found. Chapter 717F's carnivores are canids, hyaenids, felids and bears, and § 481A.1(36) limits Iowa's wild animals to wildlife \"found in this state\", which puts an exotic pet outside the game and fur-bearer chapter.",
+          "verifiedOn": "2026-10-01"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "301 KAR 2:082 §§ 4, 7",
+          "quote": "Lions, jaguars, leopards, or tigers (Genus Panthera); Lynx (Genus Lynx);",
+          "note": "Read and nothing found. It is on neither of the two exotic possession bars in 301 KAR 2:082 § 4, the potentially injurious list and the inherently dangerous list, nor on the § 7 permit-exempt list, so it may be possessed, but a transportation permit is needed to bring it into Kentucky. KRS 65.877 lets a city or county prohibit exotic animals.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "RI": {
+          "status": "banned",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.7(A); § 3.9(B)",
+          "quote": "All exotic and native wild animals and hybrids of the order Carnivora for which there is no USDA conditionally licensed or unconditionally licensed rabies vaccine are expressly prohibited from importation or possession without the issuance of a valid permit by the Department. Possession is restricted to bona fide researchers, USDA licensed exhibitors authorized to possess animals of this order for short-term exhibition purposes, and Association of Zoos and Aquariums (AZA) certified facilities.",
+          "note": "The kinkajou is a carnivore with no USDA licensed rabies vaccine, so the same closed door applies as to the fennec fox and the serval. § 3.9(B) adds that no permit shall be granted to a private person for an exotic carnivore without a licensed rabies vaccine.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.05, Table 800.2",
+          "quote": "Kinkajou   Potos flavus   5",
+          "note": "Named in the controlled table with category 5 alone. Permittee category 5 is the exhibitor category, with no category 1 for an individual, so a private keeper cannot be issued a possession permit.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.110(2); RSMo § 578.023",
+          "quote": "(2) Except for federally-designated endangered species and species listed in 3 CSR 10-4.117 and 3 CSR 10-9.240, the following may be bought, sold, possessed, transported, and exhibited without permit: ... amphibians, reptiles, and mammals not native to Missouri except those mammals located in a licensed big game hunting preserve;",
+          "note": "A non-native mammal, so the Wildlife Code clears it to be bought, sold and possessed without permit, and it is not on the § 578.023 dangerous wild animal registration list.",
+          "verifiedOn": "2026-10-01"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-3(a), (b), (d); K.S.A. 32-1301(d)",
+          "quote": "(a) Subject to federal or state law or rules and regulations, exotic wildlife species may be imported, possessed, sold, offered for sale or purchased, provided the exotic wildlife was legally captured, raised, exported, possessed, sold or purchased or any combination of these activities in its place of origin. (b) Exotic wildlife may be possessed without limit in time and number.",
+          "note": "Not native to Kansas, so exotic wildlife under 115-20-3(d), which may be possessed without limit in time and number if legally obtained where it came from. It is not a dangerous regulated animal under K.S.A. 32-1301 and not on the 115-18-10 prohibited list, whose only canid is the Asian raccoon dog.",
+          "verifiedOn": "2026-10-01"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-47-2",
+          "cite": "§ 47-2-10(2); § 50-16-20(A)(1)",
+          "quote": "Family Felidae, Genus panthera - all lions, tigers, leopards, jaguars, cougars, cheetahs, snow leopards, and clouded leopards;",
+          "note": "Read and nothing found. The large animal ban reaches only genus Panthera, non-native bears and great apes, and the kinkajou is not named in the furbearer list, so the § 50-16-20 import permit does not reach it on its words, the serval's position.",
+          "verifiedOn": "2026-10-01"
+        },
+        "MT": {
+          "status": "banned",
+          "sourceId": "mt-87-5-7",
+          "cite": "§ 87-5-705(1); ARM 12.6.2205, 12.6.2208, 12.6.2215",
+          "quote": "A person may not import into the state, possess, or sell any exotic wildlife unless: (a) the importation, possession, or sale of the exotic wildlife is allowed by law or commission rule",
+          "note": "Same reasoning as the fennec fox. The kinkajou is not native, so it is exotic wildlife, and it appears on none of the noncontrolled, controlled or prohibited lists. Montana runs a white list, so an unlisted exotic has no rule allowing it.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "WV": {
+          "status": "legal",
+          "sourceId": "wv-74-1",
+          "cite": "W. Va. C.S.R. § 74-1-3.1; W. Va. Code § 20-1-2",
+          "quote": "\"Wild animals\" means all mammals native to the State of West Virginia occurring either in a natural state or in captivity",
+          "note": "Same reasoning as the fennec fox. The Dangerous Wild Animal list names no procyonid, and Chapter 20 reaches only mammals native to West Virginia, so a kinkajou is on neither list. Local ordinances may still apply.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "AK": {
+          "status": "banned",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(a), (c); AS 16.05.940(19)",
+          "quote": "The department may not issue a permit for the capture, possession, import, or export of any game animal, including a hybrid of a game animal and a species listed in (b) of this section, for use as a pet",
+          "note": "No procyonid is on the § 92.029(b) clean list, and an unlisted mammal cannot be permitted as a pet under subsection (c). The route onto the list is a petition to the Board of Game under § 92.029(h).",
+          "verifiedOn": "2026-10-01"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-12-68-18",
+          "cite": "ARSD 12:68:18:03; 12:68:18:03.01",
+          "quote": "(1) Of the order Carnivora, all nondomestic members of the following families: (a) Felidae; (b) Canidae; (c) Ursidae; (d) Mustelidae; and (e) Hyaenidae;",
+          "note": "No procyonid is on the possession permit list, and the only prohibited animal is the raccoon dog. The free entry permit applies to bringing one in.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-26",
+          "cite": "§ (1)",
+          "quote": "Any of the following from any area outside the state of Alabama; any member of the family Cervidae (to include but not be limited to deer, elk, moose, caribou), species of coyote, species of fox, species of raccoon, species of skunk, wild rodent, or strain of wild turkey, black bear (Ursus americanus), mountain lion (Felis concolor), bobcat (Felis rufus)",
+          "note": "The rule names \"species of raccoon\", and the kinkajou is a procyonid but not a raccoon. Alabama runs a prohibited list, so an animal not on it is unrestricted at the state level. It is not federally injurious either.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-1(a); 9-11-6, 9-11-7, 9-11-8",
+          "quote": "Except as provided in IC 14-22-26-2 or as exempted under subsections (d) and (e), a person must have a permit issued by the department under this rule to possess a wild animal if the wild animal is either of the following: (1) Referenced in this rule. (2) Listed in this article as an endangered species or a threatened species.",
+          "note": "The kinkajou is on none of the three class lists and is not a state listed species, so 9-11-1(a) does not require a permit. Local ordinances may still apply.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "ND": {
+          "status": "unclear",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(6); NDCC § 36-01-08.1",
+          "quote": "Nontraditional livestock not otherwise referred to in this section or Century Code must be reviewed by the board for determination of importation requirements and licensure requirements prior to importation.",
+          "note": "The kinkajou is in none of the three categories, and nothing in the Century Code names it. An unlisted animal is not free, though: subsection 6 sends it to the board to set importation and licensure requirements before it comes in, so the answer is whatever the board decides on the application.",
+          "verifiedOn": "2026-10-01"
+        },
+        "WY": {
+          "status": "permit",
+          "sourceId": "wy-ch10",
+          "cite": "Ch. 10 § 13(d)",
+          "quote": "A permit may be authorized upon approval for other warm-blooded wildlife unless otherwise specified in this regulation.",
+          "note": "Same answer as the fennec fox. The kinkajou is on neither the domestic nor the domesticated list and not on the § 11 prohibited list, so it falls to the discretionary permit. \"May be authorized\" is not \"shall be issued\".",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "Rule 8.3(A)(5)(b)",
+          "quote": "Family Canidae: Genus Canis (wolves, jackals, and dingos; all species, including crosses between wolves and domestic animals); excluding coyote (Canis latrans); Chrysocyon brachyurus (maned wolf); Cuon alpinus (red dog or dhole); Lycaon pictus (African hunting dog); ii. Family Ursidae (bears) - all species; iii. Family Mustelidae - Gulo gulo (wolverine); iv. Family Hyaenidae (hyenas) - all species; v. Family Felidae: Genus Leo or Panthera or Neofelis (lions, tigers, jaguars, and leopards) - all species; Acinonyx iubatus (cheetah); Felis concolor (cougar) - all subspecies;",
+          "note": "Rule 8.3's carnivore entries are wolves and three wild dogs, bears, the wolverine, hyenas and the big cats. No procyonid is named, and the kinkajou is not on the Rule 8.4 game list or the nuisance list either.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-v-115",
+          "cite": "LAC 76:V.115.C.1; La. R.S. 56:8(151)",
+          "quote": "C.1.Except as provided herein, it shall be unlawful to import into, possess, purchase or sell within the state of Louisiana, by any means whatsoever including but not limited to transactions conducted via the internet, any of the following species or its subspecies of live wild quadrupeds, big exotic cats, or non-human primates, domesticated or otherwise (hereinafter \"listed animals\"): a.black bear (Ursus americanus);",
+          "note": "The § 115 list is bears, wolves, primates and six big cats, and the kinkajou is not native, so it is none of Louisiana's game, protected, outlaw or nongame quadrupeds. No text read reaches it.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "OK": {
+          "status": "permit",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(a)",
+          "quote": "The following wildlife species are exempt from import and export permits, commercial wildlife breeders licenses, noncommercial wildlife breeders licenses and commercial hunting area license requirements",
+          "note": "The exemption list names the coatimundi but not the kinkajou, so the kinkajou needs the import permit and the noncommercial wildlife breeder's license, as the capybara does. It is a permit requirement, not a ban.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NE": {
+          "status": "banned",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 8 § 001.08A",
+          "quote": "001.08A Importation: the following wildlife may be imported: ... Coatimundi Nasua spp. ... Fox Vulpes spp. ... Genet Genetia spp.",
+          "note": "Nebraska's import list is closed and names the coatimundi but not the kinkajou. A kinkajou is not native, so no Nebraska source can supply one, and it cannot lawfully be brought in except to an accredited or public zoo under § 001.08A1.",
+          "verifiedOn": "2026-10-01"
+        }
+      },
+      "article": "/blog/kinkajou-legal-guide/"
     }
   }
 }
