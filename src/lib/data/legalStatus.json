@@ -29338,14 +29338,16 @@
           "verifiedOn": "2026-10-08"
         },
         "OH": {
-          "status": "permit",
-          "sourceId": "oh-935-01",
-          "cite": "R.C. 935.01(C)(8); 1531.01(V); § 1533.71",
-          "quote": "(8) Bears;",
-          "note": "Every bear is a dangerous wild animal under Chapter 935, which needs the Department of Agriculture permit, the serval's position, and the black bear is also a game quadruped under R.C. 1531.01(V), which brings the Division of Wildlife's § 1533.71 captivity license on top.",
-          "localOverride": true,
-          "permitFor": "personal",
-          "verifiedOn": "2026-10-01"
+          "status": "banned",
+          "sourceId": "oh-935-02",
+          "cite": "R.C. 935.01(C)(8); R.C. 935.02(A), (B)(1); R.C. 935.03(A)(3)",
+          "quote": "(A) No person shall possess a dangerous wild animal on or after January 1, 2014. (B)(1) Except as provided in divisions (G)(1) and (2) of section 935.06 of the Revised Code, no person shall acquire, buy, sell, trade, or transfer possession or ownership of a dangerous wild animal on or after the effective date of this section.",
+          "note": "Every bear is a named dangerous wild animal. The exceptions in R.C. 935.03 are accredited zoos, research facilities, circuses, sanctuaries, rehabilitators of Ohio natives and vets, so there is no route for a new keeper. The black bear is also a game quadruped under R.C. 1531.01(V), but the Division of Wildlife's § 1533.71 license does not lift the bar: 935.03(A)(3) exempts only possession under a permit issued under Chapter 935.",
+          "grandfathered": {
+            "before": "2013-10-01",
+            "detail": "Only a person who registered the animal with the Department of Agriculture in 2012 and possessed it on 1 October 2013 could apply for a wildlife shelter or wildlife propagation permit under R.C. 935.05 or 935.07; the permit requires sterilizing males, insurance, caging standards and, outside the small primates, at least one acre."
+          },
+          "verifiedOn": "2026-10-08"
         },
         "TX": {
           "status": "banned",
