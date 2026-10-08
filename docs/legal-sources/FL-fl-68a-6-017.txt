@@ -1,0 +1,66 @@
+# 68A-6.017, F.A.C., Possession and Exhibition of Venomous Reptiles and Reptiles of Concern
+
+sourceId: fl-68a-6-017
+jurisdiction: FL
+url: https://www.flrules.org/gateway/RuleNo.asp?id=68A-6.017
+fetched: 2026-10-08
+fetch notes: flrules.org with a browser User-Agent; the rule is a Word .doc behind readFile.asp, extracted with a printable-run regex as described in FL-fl-captive-and-nonnative.txt. Rule effective 7/17/2023.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+68A-6.017 Possession and Exhibition of Venomous Reptiles and Reptiles of Concern.
+(1) Any person who keeps, possesses, exhibits or sells any venomous reptiles or reptile of concern shall comply with Sections 379.303, 379.304, 379.305, 379.372, 379.373, 379.374 and 379.3761, F.S., and the provisions of subparagraph 68-5.007(5)(a)1., F.A.C., and the rules of this chapter. The following reptiles, including their taxonomic synonymies, subspecies or hybrids thereof, are designated as reptiles of concern: None listed at this time.
+(2) Qualification requirements for a permit to possess venomous reptiles or reptiles of concern:
+(a) Age Requirement: Applicants to possess venomous reptiles or reptiles of concern shall be at least 18 years of age.
+(b) Applicants shall not have been convicted of any violation of venomous reptile, reptile of concern, conditional species, prohibited species, or captive wildlife regulations involving unsafe housing of wildlife or that could potentially endanger the public; any violation involving the illegal commercialization of wildlife; any violation involving cruelty to animals; or any violation involving importation of wildlife within three (3) years of the date of application.
+(c) Not have refused a captive wildlife inspection within three (3) years of the date of application. Venomous reptile licenses issued to a person who refuses any such inspection shall be revoked.
+(d) Specify the location of the facility at which the venomous reptiles or reptiles of concern shall be maintained. Facilities for venomous reptiles shall be inspected and approved by Commission personnel prior to the issuance of the permit and placement of animals at the facility location.
+(e) Experience requirements for authorization to possess venomous reptiles:
+1. Applicants shall demonstrate no less than one (1) year of substantial practical experience (to consist of no less than 1,000 hours) in the care, feeding, handling and husbandry of the species or other species within the same biological family which are similar in characteristics and care to the species for which the permit is sought. For the purposes of demonstrating compliance, applicants shall submit documentation of such experience including:
+a. A description of the specific experience acquired.
+b. The dates the experience was obtained and the specific location(s) where acquired.
+c. References of no less than two (2) individuals having firsthand knowledge of the applicant’s stated experience. References shall be from persons licensed by the Commission for venomous reptiles of the same family for which the applicant is seeking authorization or a representative of a professional organization or governmental institution which deals directly with venomous reptiles as a part of their organization or institution. Examples of such organizations or institutions include, but are not limited to, universities, public service agencies, zoological associations, herpetological societies and veterinarians.
+d. Additional documentation may include records of prior permits for the keeping of venomous reptiles, employment records, and any other competent documentation of the requisite experience.
+2. If the applicant is unable to document such experience, as an alternative the applicant may take a written examination. The successful completion of a written examination for the particular species or family, administered by the Division of Law Enforcement, together with the documentation of not less than 500 hours of substantial practical experience in the care, feeding, handling and husbandry of the species or family for which the permit is sought may be substituted for the one year/1,000-hour requirement. Applicants scoring at least 80 percent correct on the examination shall be deemed as meeting the examination requirement for the particular species or family.
+a. Examinations shall be completed without the use of any reference materials or other resources during the examination. Improper access to or use of any information or material in the examination shall be considered submission of materially false information in the application or other supporting documentation relating to the license, permit or other authorization.
+b. Applicants who fail to pass the written examination after two (2) attempts shall wait six (6) months from the date of the last examination to retake the examination.
+3. Providing materially false information to document the applicant’s experience, by the applicant or any reference, is prohibited and shall result in denial or revocation of the applicant or reference’s license, permit or other authorization, in accordance with Rule 68-1.010, F.A.C.
+4. Any licensed corporation authorized to do business in Florida may apply for a permit or other authorization to possess venomous reptiles. Such corporation must have qualified personnel responsible for the care of such venomous reptiles. The corporation must provide documentation of experience for at least one person. Such person shall comply with the requirements defined in paragraphs 68A-6.017(2)(a)-(b), and subparagraphs (2)(e)1.-3., F.A.C., above. Such documentation of experience shall be submitted to the Florida Fish and Wildlife Conservation Commission, Division of Law Enforcement, and subject to approval upon initial application and upon each instance of change in qualified personnel. Such corporation shall be fully responsible for any violation(s) committed by their employees or occurring at their facility.
+(f) Reptiles of concern: Species possessed for personal use by reptile of concern license holders prior to July 1, 2010 may continue in the possession of the owner for the life of the animal. A valid license to possess these animals must be maintained pursuant to Section 379.372, F.S.
+(3) Venomous reptile or reptile of concern permit application requirements: An applicant shall make application to the Commission by submitting the online application through http://www.GoOutdoorsFlorida.com. The applicant for a permit to possess venomous reptiles or reptiles of concern shall provide the following information:
+(a) The applicant’s legal name, date of birth, and contact information to include personal phone number, business phone number, and email address, if any.
+(b) To be permitted as a business, in addition to paragraph (a), the applicant shall provide the name of the business and the business shall be currently registered through the Florida Department of State, Division of Corporations.
+(c) The complete mailing address to include city, state, and zip code for the applicant/business.
+(d) The complete facility address where the venomous reptile(s) or reptile(s) of concern are located to include city, state, and zip code.
+(e) The county or counties where the facility is located.
+(f) The current inventory of venomous reptiles or reptiles of concern possessed, identified by species and quantity. If no venomous reptiles or reptiles of concern are currently possessed, then the planned inventory shall be provided, identified by species.
+(g) The applicant’s acknowledgement that the information provided in the application is true, accurate, and complete. 
+(h) Reptiles of concern: On or after January 1, 2008, any person or entity not currently permitted to possess reptiles of concern shall satisfactorily answer questions developed by the Commission that assess the applicant’s knowledge of general husbandry, nutritional needs, and behavioral characteristics of the reptile of concern to be possessed.
+(4) Disaster and Critical Incident Plans: Applicants for permits to possess venomous reptiles or reptiles of concern in captivity shall document a course of action to be taken in preparation for disasters or critical incidents. Provisions of this subsection shall apply to permittees maintaining venomous reptiles or reptiles of concern in Florida. Such course of action shall be made available for inspection upon request of Commission personnel and the director of the local emergency management agency for the county where the facility is located. Such course of action shall include the following information:
+(a) The name, business name (if applicable), physical address, and personal or business phone number for an emergency contact who does not reside at the facility location. Such individual may be responsible for assisting with emergency response or may assist in providing contact information for the permittee in the event of a critical incident or disaster. Such information shall be submitted to the Commission at the time of initial or renewal application.
+(b) The name, business name (if applicable), physical address, and personal or business phone number for the veterinarian used to provide veterinary services for wildlife maintained at the facility. Such information shall be submitted to the Commission at the time of initial or renewal application. 
+(c) Emergency plan specifying the plan of action to be taken in the event of an emergency (natural disaster, fire, etc.) and critical incident. Plan shall specify pre-event, event, and post-event actions, including action plan for securing wildlife on site, evacuation of wildlife, location and contact information for temporary housing, length of stay at temporary housing, and re-entry to facility.
+(d) A list of chemical capture equipment (including drugs, delivery systems, and supplies) and location where equipment is stored, if applicable.
+(e) The name, physical address, and personal or business phone number for an emergency contact authorized to utilize chemical capture equipment, if applicable.
+(f) A list of physical capture equipment (i.e., nets, catch poles, gloves, hooks, tongs, etc.) and location where equipment is stored.
+(g) The name, physical address, and personal or business phone number for an emergency contact authorized to utilize physical capture equipment.
+(h) A list of equipment utilized to temporarily house and transport wildlife (including transport cages and vehicles) and location where equipment is stored.
+(i) The name, physical address, and personal or business phone number for an emergency contact authorized to utilize temporary housing and transport equipment.
+(j) A schematic or graphic depiction of the facility, including the following:
+1. Site plan of the facility.
+2. Location of access point to facility if access is controlled by fences, gates, etc.
+3. Location of area(s) where captive wildlife is kept.
+4. Location of supplies (i.e., food, medicines, capture equipment, etc.).
+5. Location of each electricity and gas shutoff switch/valve.
+(k) Emergency supply checklist, including food, water, medical supplies, generator(s), ice, or other miscellaneous supplies, if applicable.
+(l) Location of storage and/or contact information for obtaining supplies.
+(m) Current animal inventory, identified by species and quantity, and any identifying methods (microchip numbers, tattoos, marks, scars, etc.).
+(n) For permittees where the facility is located out of state, the provisions of this subsection shall apply when such permittee is in travel status in Florida with venomous reptiles or reptiles of concern. In this instance, information as specified in paragraphs (c)-(m) above must accompany the venomous reptile or reptile of concern while in travel status in Florida and shall describe the course of action to be taken in the event of a critical incident or natural disaster in Florida.
+Rulemaking Authority Art. IV, Sec. 9, Fla. Const. Law Implemented Art. IV, Sec. 9, Fla. Const. History–New 9-30-19, Amended 8-23-22, 7-17-23.
+
+68A-6
+Title
+Microsoft Office Word Document

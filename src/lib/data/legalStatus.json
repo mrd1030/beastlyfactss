@@ -1819,6 +1819,11 @@
       "title": "Ark. Code Ann. §§ 20-19-501 to 20-19-511, Ownership and Possession of Large Carnivores",
       "url": "https://www.animallaw.info/statute/ar-exotic-pets-large-carnivores-subchapter-5-ownership-and-possession-large-carnivores",
       "note": "The 2005 large carnivore act. § 20-19-502 makes it unlawful to own, possess, breed or transfer a bear, lion or tiger, § 20-19-503 exempts zoos, USDA exhibitors and Commission breeder/dealer permittees among others, and § 20-19-504 lets a private owner keep only an animal held on or before 12 August 2005 and permitted by the sheriff within 180 days."
+    },
+    "fl-68a-6-017": {
+      "title": "68A-6.017, F.A.C., Possession and Exhibition of Venomous Reptiles and Reptiles of Concern",
+      "url": "https://www.flrules.org/gateway/RuleNo.asp?id=68A-6.017",
+      "note": "Florida's venomous reptile permit. Anyone who keeps a venomous reptile must comply with ch. 379 F.S. and this rule; an applicant must be 18, have a clean record on wildlife and cruelty violations for three years, have the facility inspected before animals arrive, and show at least one year and 1,000 hours of experience with the species or its family, with two references from licensed keepers or professional bodies. Individuals as well as businesses may apply. The reptiles of concern list is currently empty."
     }
   },
   "animals": {
@@ -33596,6 +33601,477 @@
         }
       },
       "article": "/blog/cougar-legal-guide/"
+    },
+    "rattlesnake": {
+      "name": "Rattlesnake",
+      "scientific": "Crotalus spp.",
+      "jurisdictions": {
+        "CA": {
+          "status": "conditional",
+          "sourceId": "ca-5-60",
+          "cite": "14 CCR § 671(c)(7)(E); § 5.60(a), (b)(59) to (65)",
+          "quote": "No sportfishing license is required for the sport take of any rattlesnake, but bag and possession limits do apply.",
+          "note": "California splits the genus by origin. § 671(c)(7)(E) restricts \"Family Crotalidae-Pitvipers: All nonnative species (D)\", so a rattlesnake from outside the state is barred with no pet route. The seven natives are sport-take animals under § 5.60: the western diamond-backed, Mohave, western, speckled and Panamint rattlesnakes and the sidewinder carry the default limit of two, a daily bag and possession limit, while the red diamond rattlesnake's limit is zero. So a native rattlesnake within the limit is lawful to hold, and anything else is not.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-391-4-8-05",
+          "cite": "R. 391-4-8-.04(1)(b)2(v); O.C.G.A. § 27-5-4(b)(1)",
+          "quote": "Family Viperidae (vipers and pit vipers) - All species;",
+          "note": "Every viper and pit viper is in the inherently dangerous tier, licensed only to dealers and exhibitors, so a rattlesnake from outside the state has no pet route. The native species are less clear: DNR's pet guide says Georgia law \"allows the taking of certain native species\" including venomous snakes because of their nuisance status, and the rule incorporates a statutory definition of wild animal that was not read here. Whether a timber, eastern diamondback or pygmy rattlesnake caught in Georgia may be held under that sentence is worth a call to the Special Permit Unit.",
+          "verifiedOn": "2026-10-01"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6",
+          "cite": "§ 4-71-6, List of Prohibited Animals",
+          "quote": "Serpentes (all species in suborder, except for two male nonvenomous snakes for exhibition in a government zoo, and for four sterile male brown tree snakes, Boiga irregularis, for research or training of snake detector dogs by the department)",
+          "note": "Hawaii prohibits the whole snake suborder, and both carve outs are institutional; the zoo one is limited to nonvenomous snakes. No snake of any kind is keepable.",
+          "verifiedOn": "2026-10-01"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code §§ 79.3, 79.6(b), 79.10(a), 79.11(a)",
+          "quote": "It is unlawful to hunt, take, catch, kill or possess a timber rattlesnake or Eastern copperhead, in whole or in parts, without first procuring the required permit from the Commission.",
+          "note": "Pennsylvania regulates one rattlesnake, its own. The timber rattlesnake needs a Venomous Snake Permit, carries a season and an annual limit of one snake at least 42 inches long with 21 or more subcaudal scales, no one may possess more than one at a time, and § 79.10 bars bringing a native species in from another state; there is no open season west of Route 15 and south of Interstate 81. Chapter 79 otherwise reaches nonnative reptiles only to bar releasing them, and the Game Commission's rules cover birds and mammals, so a rattlesnake from outside the state is unregulated by the Commonwealth. Local ordinances were not checked.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following",
+          "note": "Category (E) admits non-venomous snakes only, so a rattlesnake fits nothing on the closed list. No permit route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "§ 161.01(b)(10)",
+          "quote": "Reptiles (Reptilia). All Helodermatidae (gila monster and Mexican beaded lizard); all front-fanged venomous snakes, even if devenomized, including, but not limited to, all Viperidae (viper, pit viper), all Elapidae (cobra, mamba, krait, coral snake)",
+          "note": "Every front-fanged venomous snake is prohibited, \"even if devenomized\", and all Viperidae are named, which takes in the pit vipers and so every rattlesnake. A native timber rattlesnake is caught a second time by (b)(ii), which imports the state's protected wildlife. The Code's only exceptions are the Parks Department and Wildlife Conservation Society zoos, labs, veterinary facilities and permitted temporary exhibits, so there is no pet route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NJ": {
+          "status": "banned",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.8(a); 7:25-4.9(a)3; 7:25-4.13",
+          "quote": "The potentially dangerous species shall not be kept as a pet, for hobby purposes or in situations, which, in the judgment of the Department, could adversely affect the health of the animal or which could constitute a hazard to the public.",
+          "note": "\"Crotalidae--Pit Vipers\" is on the potentially dangerous species table under the venomous serpents, which takes in every rattlesnake, and 4.9(a)3 rules out keeping one as a pet. New Jersey's own rattlesnake, the timber rattlesnake, is also on the state endangered list at 4.13, and 4.10 bars a permit for an endangered species except on a clear showing under 4.14.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "ME": {
+          "status": "banned",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.18(2)(G); § 7.06(3)(A)(2)(a)",
+          "quote": "Family Viperidae All Species in Family Viperidae (Vipers) ... An applicant for a permit pertaining to Category 1 Restricted Species must be an exhibitor, wildlife rehabilitator; laboratory registered with the United States Department of Agriculture, or accredited research facility.",
+          "note": "The whole viper family, pit vipers included, is Category 1. The wild-take allowance for native reptiles in 12 M.R.S. § 12152(1-B) covers only reptiles native to Maine and not listed as threatened, endangered or of special concern. Category 1 permits go only to exhibitors, rehabilitators, USDA-registered laboratories and accredited research facilities, so there is no pet route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.01(9), 169.11(1)(a)",
+          "quote": "A person is exempt from holding a license or other approval as required under this chapter to possess live nonnative wild animals that are not endangered or threatened species, except for any of the following:",
+          "note": "A rattlesnake from outside the state is a nonnative wild animal, not harmful and not an indigenous listed species, so it needs no license. Wisconsin's own timber rattlesnake is a protected wild animal under NR 10.02(9), which bars taking or possessing one except as authorized; the department's note says possession of one lawfully taken in Wisconsin before 1 April 1998, lawfully purchased, or lawfully taken outside the state is not prohibited, with the burden of proof on the keeper. Local ordinances were not checked.",
+          "verifiedOn": "2026-10-08"
+        },
+        "FL": {
+          "status": "permit",
+          "sourceId": "fl-68a-6-017",
+          "cite": "68A-6.017(1), (2); 68A-6.003(14)(a)",
+          "quote": "Any person who keeps, possesses, exhibits or sells any venomous reptiles or reptile of concern shall comply with Sections 379.303, 379.304, 379.305, 379.372, 379.373, 379.374 and 379.3761, F.S., and the provisions of subparagraph 68-5.007(5)(a)1., F.A.C., and the rules of this chapter.",
+          "note": "The no-permit list at 68A-6.003(14)(a) covers only nonvenomous reptiles, so every rattlesnake, native or not, needs Florida's venomous reptile permit. It is open to an individual: the applicant must be 18, show at least one year and 1,000 hours of hands-on experience with the species or its family backed by two references from licensed keepers or professional bodies, pass the Commission's examination, and have the facility inspected before the snake arrives. That is a demanding permit, but it is a personal one.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL §§ 11-0103(6)(e)(5), 11-0511, 11-0512(1)(a); 6 NYCRR §§ 180.1(b)(17)(ii), 3.3",
+          "quote": "(5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus),",
+          "note": "Every venomous reptile is a wild animal that may not be kept as a pet, and 180.1(b)(17) lists all Viperidae. New York's own timber rattlesnake is also a native snake with no open season under 6 NYCRR 3.3, and native snakes are small game, so it is caught a third time. The exemptions in § 11-0512(2) are zoos, licensed exhibitors and research facilities, vets, shelters, universities, rehabilitators, sanctuaries and travelers, all holding the animal for a purpose other than a pet, and 6 NYCRR 180.1(c) issues dangerous animal licenses only for scientific, educational, exhibition, zoological or propagation purposes.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(3)(B)(xxx), (b)(3)",
+          "quote": "(xxx) A member within the family Viperidae (including, but not limited to, copperhead, rattlesnake, cottonmouth, adder, viper, pit viper and night adder),",
+          "note": "Connecticut names the rattlesnake in the Viperidae entry of Category Two. Because Category Two comes first, the state's own timber rattlesnake gets no help from the native tiers. Subsection (b)(3) allows a Category Two animal only to a treating vet, municipal parks, zoos, aquaria, nature centers, museums, exhibitors, laboratories and research facilities, so there is no private route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(10)(b)",
+          "quote": "All venomous snakes require a permit. The following snakes may be kept without a permit: 1. All species of boas and pythons (family Boidae), except those species categorically non-exempt pursuant to 321 CMR 9.01(3), and except the African Rock Python (Python sebae), Reticulated Python (Python reticulatus) and all species of Anaconda (Eunectes spp.), which require a permit.",
+          "note": "Every venomous snake requires a permit, native or exotic, and MassWildlife lists \"Any venomous (poisonous) snakes\" among snakes you cannot have as a pet. The license under § 23 exists on paper, but MassWildlife says permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\"",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW species determinations, Crotalus atrox and C. viridis; 2 CCR 406-7 Appendices A and C",
+          "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
+          "note": "CPW has ruled on two rattlesnakes, the western diamondback and Colorado's own prairie rattlesnake, and gives both the same answer: \"Family Viperidae not approved in regulation\". Appendix A clears only listed nonvenomous families, and Appendix C, the wild-collection list for Colorado natives, names no rattlesnake, so every rattlesnake is regulated wildlife with no pet license.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AZ": {
+          "status": "restricted",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)(2)(e)",
+          "quote": "e. The family Viperidae . Common names include: pit and true vipers, including rattlesnakes.",
+          "note": "Arizona names rattlesnakes in the Viperidae entry. Live take of native reptiles under a hunting license runs through R12-4-404, R12-4-405 and Commission Order 43, which were not read here; an exemption there would be the only keeper's route for a native snake. Restricted live wildlife may be held only under a special license listed in R12-4-409(A) or a listed exemption, and none of the R12-4-407 exemptions is a pet route.",
+          "verifiedOn": "2026-10-08"
+        },
+        "OR": {
+          "status": "conditional",
+          "sourceId": "or-635-056-0050",
+          "cite": "OAR 635-056-0050(1)(d)(C)(ix); 0060(4)(c)(P); 635-044-0440",
+          "quote": "(ix) Rattlesnakes ... Viperidae ... All nonnative species and hybrids except Crotalus aquilus, C. basiliscus, C. durissus, C. intermedius, C. polystictus, C. pusillus, C. tortugensis, C. triseriatus, C. unicolor, and C. vegrandis;",
+          "note": "Oregon splits the genus by species. Every nonnative rattlesnake is prohibited except ten Mexican, Central and South American species, which the noncontrolled list at 0060(4)(c)(P) names one by one and which need no ODFW permit. So a western diamondback is barred and a Mexican west coast rattlesnake (C. basiliscus) is not. Oregon's own western rattlesnake is native wildlife, which OAR 635-044-0440 bars capturing from the wild or holding except under the listed holding, scientific, rehabilitation and similar permits. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "WA": {
+          "status": "conditional",
+          "sourceId": "wa-rcw-16-30",
+          "cite": "RCW 16.30.010(2)(b)(i)(F), 16.30.020(1)(k), 16.30.030; WAC 220-450-030(1), (4)",
+          "quote": "(F) Family viperidae, all species, such as rattlesnakes, cottonmouths, bushmasters, puff adders, and gaboon vipers;",
+          "note": "Every viper is a potentially dangerous wild animal, and the statute names rattlesnakes, so a rattlesnake from outside the state is barred, with possession before 22 July 2007 grandfathered. The exception is Washington's own western rattlesnake: 16.30.020(1)(k) exempts native wildlife subject to Title 77, and Title 77 asks only that a captive animal be lawfully acquired, with a department permit needed to take one from the wild. That is the same reading the black bear gets, and it is thin for a venomous snake.",
+          "grandfathered": {
+            "before": "2007-07-22",
+            "detail": "A person in legal possession before 22 July 2007 may keep the animal for the rest of its life, with veterinary records or acquisition papers proving the date, but may not breed it."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "OH": {
+          "status": "permit",
+          "sourceId": "oh-935-02",
+          "cite": "R.C. 935.01(L)(2)(c); 935.08(A)(2); 935.09(A)",
+          "quote": "(2) A person that acquires a restricted snake in this state on or after January 1, 2014, and that does not intend to propagate, sell, trade, or otherwise transfer the snake shall obtain a restricted snake possession permit under this section not later than one hundred twenty days after acquiring the snake.",
+          "note": "Every viper is a restricted snake under § 935.01(L)(2)(c), which takes in the rattlesnakes. The restricted snake possession permit is still open to a new keeper: the director issues it to an applicant 18 or older with two years' experience with the species or a passed examination, proof of financial responsibility, a clean criminal record and a facility that meets the rules, who signs that the public will have no physical contact with the snake. Ohio's own timber rattlesnake and massasauga are a Division of Wildlife question as well, since R.C. 1531.01(X) makes reptiles wild animals; that side was not read for this cell.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "TX": {
+          "status": "conditional",
+          "sourceId": "tx-nongame",
+          "cite": "31 TAC §§ 65.325(a), 65.327(b)(3)(B), 65.331(d); Parks & Wild. Code § 43.851(a)(1)",
+          "quote": "Western diamondback rattlesnake (Crotalus atrox) Rock rattlesnake (Crotalus lepidus) Blacktail rattlesnake (Crotalus molossus) Mojave rattlesnake (Crotalus scutulatus) Prairie rattlesnake (Crotalus viridis)",
+          "note": "Texas answers its own rattlesnakes and everyone else's differently. Five native rattlesnakes are on the 65.331(d) list, so a person may hold up to 25 of each without a permit, captive-bred animals included. A rattlesnake not native to Texas is a nonindigenous venomous snake, which § 43.851 puts under a controlled exotic snake permit, available to private keepers for recreational purposes. Local ordinances were not checked.",
+          "verifiedOn": "2026-10-01"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224; MCL 287.731",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild...except as provided within this order.",
+          "note": "Fisheries Order 224 reaches \"any state reptile or amphibian from the wild\", so it governs Michigan's native herps and not a captive animal of a species from elsewhere, and no Michigan rule read here restricts a rattlesnake from outside the state. The Animal Industry Act asks for a certificate of veterinary inspection to import a nonnative reptile. NREPA Part 413's prohibited and restricted species list could not be read from this container, so that is the open check. Michigan's only rattlesnake, the eastern massasauga, is on the order's protected list and may not be taken or possessed except as the DNR Director authorizes.",
+          "verifiedOn": "2026-10-01"
+        },
+        "IL": {
+          "status": "banned",
+          "sourceId": "il-510-68",
+          "cite": "510 ILCS 68/10-5, 10-15, 10-20, 85-5",
+          "quote": "Herptile Special Use permits may be issued to residents using approved venomous reptile species only for bona fide educational programs, following an inspection and approval of the proposed facilities. A minimum of 6 documented programs shall be required of each permittee per calendar year.",
+          "note": "Every pit viper is a venomous reptile under § 10-5, and § 85-5 bars possessing a special use herptile except as the Act provides. The Act's only route is a special use permit for bona fide educational programs, at least six documented a year, with 250 hours of venomous experience, insurance and an inspected facility. Even then § 10-20 allows only venomous species native to the United States and excludes the eastern and western diamondbacks, the Mojave, the southern Pacific and the southern timber or canebrake rattlesnake by name. No pet route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8; § 97A.015, subd. 39; § 97A.501, subd. 1",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota makes every snake a protected wild animal, whatever its origin, under § 97A.015 subd. 39, and § 97A.501 bars possessing one unless the game and fish laws allow it. Subdivision 8 is the allowance: a snake from a permitted breeder, or one held before 1 August 2021, may be kept as a pet. Subd. 39 also folds in any species on Minnesota's chapter 6134 endangered, threatened and special concern lists, which were not read for the state's own rattlesnakes. No Minnesota statute read here treats a venomous or giant snake differently. The breeder permit the condition depends on is not on the DNR's permits page and no rule implements it, so the condition is real on paper and its machinery is not visibly in place, the same gap the Burmese python carries.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NV": {
+          "status": "conditional",
+          "sourceId": "nv-nac-503",
+          "cite": "NAC 503.110(1)(b)(7); 503.080(3); 503.093",
+          "quote": "(7)Pit vipers and true vipers, except species indigenous to this State..... All species in the family Viperidae, except species indigenous to this State",
+          "note": "Nevada splits the genus by origin. Every viper from outside the state is prohibited, with permits only for zoos, research and nonprofit educational exhibitors. Nevada's own rattlesnakes are carved out of that entry, and under NAC 503.080(3) any reptile not classified as protected, sensitive, threatened or endangered is unprotected, so a native rattlesnake needs no license to keep. The answer turns on the species. NAC 503.140(4) preserves county and city ordinances, so check the municipality as well.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "4VAC15-30-40(A); 4VAC15-360-10(A), (A)(6); 4VAC15-20-50",
+          "quote": "REPTILES Order Family Genus/Species Common Name Crocodilia Alligatoridae All species Alligators, caimans* Crocodylidae All species Crocodiles* Gavialidae All species Gavials* Squamata Colubridae Boiga irregularis Brown tree snake*",
+          "note": "The exotic permit table's only snake is the brown tree snake, so a rattlesnake from outside Virginia is a nonnative animal the state does not restrict. Virginia's own timber rattlesnake is on the native list, which puts it under 4VAC15-360-10(A): one per physical address, for private use, not for sale. The coastal plain canebrake population is on the department's Species of Greatest Conservation Need list, and subdivision (A)(6) bars possessing an SGCN reptile in any number. Local ordinances were not checked.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MD": {
+          "status": "banned",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1)(viii); COMAR 08.03.11.03C",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: ... (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Every pit viper is barred by family name, \"Crotolidae\" as well as Viperidae, and Maryland's own timber rattlesnake is also on the COMAR 08.03.11.03C list of native herps that may not be possessed at all outside scientific or endangered species permits. The exemptions run to research facilities, licensed exhibitors, DNR licensees, sanctuaries, vets and circuses, and a licensed exhibitor may acquire a primate or big cat only with $1,000,000 of insurance, paid full-time staff and a disposition policy. Subsection (e) preserves stricter county and municipal rules.",
+          "grandfathered": {
+            "before": "2006-05-31",
+            "detail": "Lawful possession on or before 31 May 2006 may continue, but only if the keeper gave written notification to the local animal control authority by 1 August 2006, with the number and type of animals and a photograph or a description of a tattoo or microchip. That window is long closed."
+          },
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Snake | Viperidae | any venomous species | IV",
+          "note": "Every venomous viper is in Group IV, and two rattlesnakes are named on their own rows. New Mexico's own rattlesnakes are a separate question: the importation rule does not reach an animal already in the state, and the native reptile rules were not read here. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. 19.35.7 NMAC is an importation rule, so it governs bringing the animal into New Mexico rather than keeping one already here.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "The Unrestricted list clears boas and pythons and colubrids, each except named species, and no viper family, so every rattlesnake, native or not, is restricted by absence. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "UT": {
+          "status": "permit",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-9(1)(a), R657-53-12(1) to (3)",
+          "quote": "An individual must obtain a certificate of registration prior to collecting, possessing, importing, or propagating any reptile, whether wild caught or captive-bred, that is: (a) native to Utah; (b) venomous; and (c) a bite from which may cause substantial physical injury to humans ordinarily requiring medical treatment.",
+          "note": "Utah splits venomous snakes by origin. A rattlesnake native to Utah needs a certificate of registration, wild-caught or captive-bred: the applicant must be 18, describe their experience with venomous reptiles and any mentor, show local government verification that the activity is consistent with its ordinances, and show that medical treatment is available nearby. A rattlesnake not native to Utah is a prohibited species under R657-53-9(1)(a), with a possession limit of zero and a Wildlife Board variance needed for any document, so the permit route exists only for the state's own species.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "DE": {
+          "status": "banned",
+          "sourceId": "de-nonnative-reptile-permit",
+          "cite": "Del. Code tit. 3 § 7201",
+          "quote": "Notwithstanding any provision of this chapter to the contrary, except for medical or psychological research or for display in any licensed zoological park or traveling circus, no person shall bring into this State, possess, sell or exhibit any poisonous snake not native to or generally found in Delaware where the venom of such snake poses a risk of serious injury or death to a human, and no permit for the same shall be issued by the Department of Agriculture.",
+          "note": "The statute itself bars every venomous snake not native to or generally found in Delaware, with exceptions only for medical or psychological research and licensed zoos and traveling circuses, and says no permit shall issue. It reaches every rattlesnake that is not native to or generally found in Delaware.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "TN": {
+          "status": "banned",
+          "sourceId": "tn-70-4-403",
+          "cite": "Tenn. Code Ann. §§ 70-4-403(1), 70-4-404(c)(1)",
+          "quote": "(B) Reptiles: (i) Order Crocodylia: Crocodiles and alligators--All species; and (ii) Order Serpentes: Snakes--All venomous species;",
+          "note": "Every venomous snake is in Class I, which reaches Tennessee's native rattlesnakes as well as any from elsewhere. Class I \"may only be possessed by zoos, circuses and commercial propagators\", and § 70-4-404(c)(1) says that after 25 June 1991 \"no new animals shall be brought into possession under authority of a personal possession permit\".",
+          "grandfathered": {
+            "before": "1991-06-25",
+            "detail": "Persons legally possessing Class I wildlife before 25 June 1991 must hold an annual personal possession permit and may keep the lineage up to three animals per species; no new animal may be brought into possession under a personal possession permit."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "NC": {
+          "status": "conditional",
+          "sourceId": "nc-14-417",
+          "cite": "G.S. § 14-417",
+          "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure. Enclosures shall be designed to be escape-proof, bite-proof, and have an operable lock.",
+          "note": "North Carolina regulates venomous reptiles by how they are kept, not whether. A rattlesnake is lawful only in a sturdy, escape-proof, bite-proof, locked enclosure. Each enclosure must be labeled \"Venomous Reptile Inside\" with the species, the appropriate antivenin and the owner's details, a written bite protocol and escape recovery plan must be posted within sight of the housing and travel with the animal, and an escape must be reported to local law enforcement at once. Counties may go further under § 153A-131. Taking one of the state's own rattlesnakes from the wild is a Wildlife Resources Commission question that was not read here.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "AR": {
+          "status": "permit",
+          "sourceId": "ar-code-0900",
+          "cite": "Code 09.17; Addendum F1.08; Addendum R1.02(A)(4); Code 09.14(A)",
+          "quote": "It is unlawful to possess any medically significant venomous reptile after July 1, 2021, whether native or non-native to Arkansas, without obtaining a valid Venomous Reptile Permit issued by the Commission and complying with all permit requirements in Addendum F1.08.",
+          "note": "\"Rattlesnakes (Genus Crotalus)\" sit on the R1.02 permit list, and Code 09.17 requires a Venomous Reptile Permit to keep one. Addendum F1.08 issues the permit to an applicant at least 18 with no captive wildlife or cruelty conviction in five years who shows written proof that local ordinances allow the animal, and sets locked enclosures, a locked escape-proof room and warning signage. A rattlesnake native to Arkansas caught by hand in the state may instead be kept as one of six native pets under Code 09.14(A), which Code 09.17 Exception B frees from the permit, though 09.14 still applies the F1.08 caging rules and bars sale and removal from the state.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "ID": {
+          "status": "conditional",
+          "sourceId": "id-130110",
+          "cite": "Idaho Code § 36-201; IDAPA 13.01.10.200.01, .07.a, 010.06, 261.02.e",
+          "quote": "Wildlife classified as Unprotected Wildlife or Predatory Wildlife that are lawfully taken by a person licensed or authorized to hunt or trap in accordance with Chapter 4, Title 36, Idaho Code, may be exported, transported, possessed, or sold without additional permit from the Department,",
+          "note": "Idaho Code § 36-201 lists \"Rattlesnake\" as predatory wildlife, so a native rattlesnake taken by someone holding an Idaho hunting or trapping license may be kept with no further Department permit. Any other rattlesnake is venomous and so outside the conventional pets definition, which needs a captive possession license under 200.01; § 261.02.e sets locked, double-walled enclosures with safety glass for venomous reptiles.",
+          "verifiedOn": "2026-10-08"
+        },
+        "IA": {
+          "status": "banned",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(9)(d); §§ 717F.3, 717F.4",
+          "quote": "A member of the family elapidae, viperidae, crotalidae, atractaspidae, or hydrophidae which are venomous, including but not limited to cobras, mambas, coral snakes, kraits, adders, vipers, rattlesnakes, copperheads, pit vipers, keelbacks, cottonmouths, and sea snakes.",
+          "note": "Rattlesnakes are named in the venomous snake clause. § 717F.3 bars owning, possessing, breeding or bringing one into the state, and the only private route was the § 717F.4 registration of animals already held on 1 July 2007.",
+          "grandfathered": {
+            "before": "2007-07-01",
+            "detail": "An owner in possession on 1 July 2007 could keep the animal after implanting an electronic identification device within sixty days and registering with the department by 31 December 2007. No new route exists."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "KY": {
+          "status": "conditional",
+          "sourceId": "ky-301-2-081",
+          "cite": "301 KAR 2:081 § 2(5)(a); 301 KAR 2:082 § 4(2)(t), 6(3)",
+          "quote": "Five (5) or fewer individuals of each species of native reptile or amphibian may be taken year-round or possessed for personal use without a permit,",
+          "note": "The Department's reptile checklist gives Kentucky one Crotalus, the timber rattlesnake, beside the western pigmy rattlesnake of the genus Sistrurus. As a native reptile the timber rattlesnake may be taken or kept for personal use, up to five, with no permit. Every other rattlesnake is an exotic member of Viperidae, which 2:082 § 4(2)(t) bars as an inherently dangerous venomous snake, with only the 13 July 2005 grandfather and the § 5 exemptions left.",
+          "verifiedOn": "2026-10-08"
+        },
+        "RI": {
+          "status": "permit",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(b)(1), (3)(M); §§ 3.7(C), 3.9(A)",
+          "quote": "(1) All venomous snakes require an exotic animal possession permit.",
+          "note": "An exotic rattlesnake needs an exotic animal possession permit from the Division of Agriculture, which § 3.9(A) makes available to private persons for animals § 3.7 does not expressly prohibit. The timber rattlesnake is different: it is on the native snake list, and § 3.7(C) restricts native wildlife to the Department, researchers, AZA zoos and short-term USDA exhibitors.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.05(b), Table 800.2; Fis 804.02(b)(4)",
+          "quote": "(b) A permit shall be issued only to a person in the permittee category(ies), as defined in Fis 802.01, and cited in Table 800.2 as follows: ... Reptiles ... 5 All venomous reptiles",
+          "note": "Fis 804.02(b)(4) frees exotic reptiles from any permit except alligators, crocodiles and venomous reptiles, and the venomous row in Table 800.2 is category 5 only, so no permit can issue to an individual. That covers the state's own rattlesnake as well, since it is not among the indigenous reptiles listed for category 1.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MO": {
+          "status": "permit",
+          "sourceId": "mo-578-023",
+          "cite": "RSMo § 578.023(1); 3 CSR 10-9.110(2); 3 CSR 10-9.240",
+          "quote": "if he or she keeps any lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, Canada lynx, bobcat, jaguarundi, hyena, wolf, bear, nonhuman primate, coyote, any deadly, dangerous, or poisonous reptile, or any deadly or dangerous reptile over eight feet long",
+          "note": "A rattlesnake is a poisonous reptile under Missouri's dangerous wild animal statute, which does not ban it but makes it an offense to keep one without registering it with the local law enforcement agency in the county where it is kept. A rattlesnake not native to Missouri needs no Wildlife Code permit under 3 CSR 10-9.110(2). The state's own timber rattlesnake is Class II wildlife under 3 CSR 10-9.240, which only a Class II wildlife breeder permit may hold.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "KS": {
+          "status": "conditional",
+          "sourceId": "ks-115-20-2",
+          "cite": "K.A.R. 115-20-2(b)(13), (e); K.A.R. 115-15-2(a)(4); K.S.A. 32-1301(d)(3)",
+          "quote": "(a) Subject to federal and state laws and regulations, wildlife listed in subsection (b) may be taken for personal use on a noncommercial basis. (b) For purposes of this regulation, wildlife shall include the following, excluding any species listed in K.A.R. 115-15-1 or K.A.R. 115-15-2 : ... (13) reptiles, except common snapping turtles and soft-shelled turtles;",
+          "note": "Kansas splits rattlesnakes by nativity. A non-native rattlesnake is a dangerous regulated animal under K.S.A. 32-1301(d)(3), closed to new keepers since 1 July 2006. A rattlesnake native to Kansas may be taken for personal use under 115-20-2, no more than two of a species and five reptiles in all per person or domicile, unless it is on the 115-15-1 or 115-15-2 lists. The timber rattlesnake is on 115-15-2, so it is excluded.",
+          "verifiedOn": "2026-10-08"
+        },
+        "SC": {
+          "status": "conditional",
+          "sourceId": "sc-123-151",
+          "cite": "S.C. Code Regs. 123-151.3(A), 123-151.4(I); S.C. Code §§ 50-15-15, 50-16-60",
+          "quote": "A. No native reptile or amphibian, including parts, products, eggs, and derivatives may be sold, purchased, traded, exchanged, bartered, exported or shipped, transferred and/or re-homed, except:",
+          "note": "South Carolina splits rattlesnakes by nativity. A rattlesnake not native to the state comes under § 50-16-60, which lets reptiles be imported for the pet trade without a permit. A native rattlesnake may not be bought, sold, traded or re-homed under Regulation 123-151.3, and 123-151.4(I) says § 50-16-60 does not reach natives, so the routes are catching one yourself, which the regulations set no snake possession limit on, or a non-native color morph of a native species, which 151.3(A)(5) exempts.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MT": {
+          "status": "unclear",
+          "sourceId": "mt-arm-12-6-22",
+          "cite": "ARM 12.6.2215(6)(m); MCA §§ 87-5-702(3), 87-5-705(1)",
+          "quote": "(6) The following reptiles are classified as prohibited: ... (m) Pit vipers and true vipers (all species in family Viperidae except species indigenous to Montana);",
+          "note": "Every rattlesnake not native to Montana is a prohibited pit viper. The rule carves out the species indigenous to Montana, which as native wildlife are outside the exotic wildlife scheme altogether, and no Montana rule read here says whether or how a native rattlesnake may be kept. Recorded unclear rather than legal for that reason.",
+          "verifiedOn": "2026-10-08"
+        },
+        "WV": {
+          "status": "permit",
+          "sourceId": "wv-20-2-13",
+          "cite": "W. Va. Code §§ 20-2-13, 20-1-2; W. Va. C.S.R. § 58-73-1.1",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "note": "A rattlesnake not native to West Virginia is wildlife from without the state: § 20-1-2 counts reptiles as wildlife with no nativity limit, so one brought in from outside the state needs an importation permit from the director under § 20-2-13, the Burmese python's position. The board's Dangerous Wild Animal list names no snake and no crocodilian, although § 19-34-5 allowed both. The timber rattlesnake is different. It is on the DNR's native snake checklist, and § 58-73-1.1 prohibits taking or possessing any native reptile not listed in the rule, which lists no snake.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "AK": {
+          "status": "banned",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(a), (b), (c)",
+          "quote": "The department may not issue a permit for the capture, possession, import, or export of any game animal, including a hybrid of a game animal and a species listed in (b) of this section, for use as a pet",
+          "note": "Reptiles are game in Alaska, and the clean list clears only \"Any nonvenomous reptile\", so a rattlesnake stays under § 92.029(a), and subsection (c) bars a pet permit. Venom, not size, is the line.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-40-3-24",
+          "cite": "SDCL 40-3-24; ARSD 12:68:18:03",
+          "quote": "No person may bring into the state or possess in the state any nondomestic mammal unless the mammal is allowed in the state pursuant to § 40-3-25.",
+          "note": "South Dakota's bar is written for mammals only, so a rattlesnake is outside it, and Game, Fish and Parks has no captive wildlife chapter for reptiles. A free entry permit under 12:68:18:03 still applies to bringing any nondomestic animal into the state. Neither statute nor rule read here sets any venomous reptile rule.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AL": {
+          "status": "conditional",
+          "sourceId": "al-220-2-26",
+          "cite": "r. 220-2-.26(1); r. 220-2-.92(3)",
+          "quote": "Any species of venomous reptile which has never naturally existed in the wild in Alabama including but not limited to venomous snakes of the families Viperidae, Atractaspididae, Elapidae, Hydrophiidae and Colubridae, except for hognose snakes (genus Heterodon);",
+          "note": "Alabama splits rattlesnakes by nativity. Any rattlesnake that has never lived wild in Alabama is barred outright. A native one is not on the protected nongame list in 220-2-.92(1), so it falls outside the restricted rules, with one exception: 220-2-.92(3) bars possessing a live eastern diamondback rattlesnake without the Commissioner's permit.",
+          "verifiedOn": "2026-10-01"
+        },
+        "IN": {
+          "status": "permit",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)(4); 9-11-2(c), (e); 312 IAC 9-5-6(s)",
+          "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+          "note": "Venomous reptiles are Class III, and 312 IAC 9-5-6(s) lets an individual possess one only under a wild animal possession permit or a scientific purposes license. A Class III permit has to be in hand before taking possession and needs a recapture or destruction plan with the equipment to carry it out, a cage inspection and proof of lawful acquisition. It is still a pet permit. The timber rattlesnake is on Indiana's endangered reptile list in 312 IAC 9-5-4, which adds that layer for the state's own rattlesnake.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "ND": {
+          "status": "permit",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(3)(b)(5); 48.1-09-01-03(1), (2)",
+          "quote": "b. Category 3 species of nontraditional livestock includes the following species and their hybrids: ... (2) Big cats, including mountain lion, jaguar, leopard, lion, tiger, and cheetah. (3) Bears. (4) Wolves. (5) Venomous reptiles and nonvenomous injurious reptiles. (6) Primates.",
+          "note": "Venomous reptiles are category 3 nontraditional livestock, so a rattlesnake needs a license. The owner must hold a nontraditional livestock license from the Board of Animal Health before acquiring one, and the board must inspect and approve the premises first, under 48.1-09-01-03(1) and (2)(b). The annual fee is fifteen dollars under NDCC 36-01-08.1.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "WY": {
+          "status": "permit",
+          "sourceId": "wy-ch69",
+          "cite": "Ch. 69 § 9(a)",
+          "quote": "An importation/possession permit shall be required for the activities listed in this section. ... (a) Importation or possession of venomous reptiles or poisonous amphibians. A certificate of veterinary inspection is also required prior to importation.",
+          "note": "Venomous reptiles are the one group Chapter 69 pulls out of its free reptile clause, so a rattlesnake needs an importation/possession permit and a veterinary certificate before import. § 9 lets the Department deny one where it would pose a risk to the state's wildlife resources. A Wyoming rattlesnake that Chapter 52 puts behind a scientific or educational take permit falls under § 9(b) as well.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MS": {
+          "status": "permit",
+          "sourceId": "ms-40-5-2-3",
+          "cite": "Rule 2.3(A)(1)(a), (C)(2), (D)(2)",
+          "quote": "2. License requirements for possession of nongame species for personal use. a. Mississippi Resident - Valid Resident Sportsman's License, All Game Hunting/Freshwater Fishing License, or Small Game Hunting/Freshwater Fishing License. b. Nonresident - Valid Nonresident All Game Hunting License.",
+          "note": "Every native Mississippi reptile is a nongame species in need of management, so keeping a native rattlesnake needs a hunting license, the green anole's position, within twenty snakes and lizards and no more than four of a species, and its cage must be labeled \"DANGER\" with the species name. Rattlesnakes taken from the wild may not be sold. A rattlesnake not native to Mississippi is outside the rule, and Rule 8.3 names no reptile.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "LA": {
+          "status": "permit",
+          "sourceId": "la-76-xv-101",
+          "cite": "LAC 76:XV.101.K.1, K.1.a, K.1.b",
+          "quote": "Restricted Snakes. The importation, private possession, selling, and/or purchasing of constrictor snakes in excess of eight feet, ... and venomous snakes, as defined in Subparagraph K.1.a herein, (hereinafter \"restricted snakes\") obtained in any manner, shall only be allowed via permit issued by the Department of Wildlife and Fisheries",
+          "note": "Rattlesnakes are pit vipers, which K.1.a counts as venomous snakes, and K covers \"All Venomous Snakes\", native or not. A Restricted Snake Permit needs an applicant of 18 or over with at least 500 hours of documented experience with the species or a similar one, locked enclosures in a locked room, an inspection before issue and annual renewal.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "OK": {
+          "status": "conditional",
+          "sourceId": "ok-800-25-7",
+          "cite": "OAC 800:25-7-7(2)(A), (3); 800:25-7-8(3), (4); 800:25-25-3(c)",
+          "quote": "(3) Legal reptiles. The following reptiles shall be legal to harvest during the dates of March 1-June 30: (A) Prairie Rattlesnake (Crotalus viridis). (B) Western Diamondback Rattlesnake (Crotalus atrox). (C) Timber Rattlesnake (Crotalus horridus). (D) Massasauga (Sistrurus catenatus).",
+          "note": "Oklahoma's three native rattlesnakes may be taken from 1 March to 30 June with no bag limit, and anyone taking or possessing one needs a hunting license under 7-7(2)(A), the hognose snake's position; a wild-caught rattlesnake may be sold only to a wildlife breeder license holder. A rattlesnake not native to Oklahoma is exempt from import permits and breeder licenses under 800:25-25-3(c).",
+          "verifiedOn": "2026-10-01"
+        },
+        "NE": {
+          "status": "conditional",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 §§ 001.02, 001.03, 001.03A2, A3",
+          "quote": "001.03A3 Take of individuals from the wild within Nebraska and associated in-state transport, possession, or processing will be permitted with a bag and possession limit of ten (10) individuals per species, or products derived from ten (10) individuals per species. Species with Take Up to 10 Individuals: ... Prairie Rattlesnake Crotalus viridis",
+          "note": "Nebraska regulates reptiles only where they are its own. The prairie rattlesnake is on the take-ten list, so up to ten may be taken and kept, and one bought outside Nebraska may be held without limit with proof of legal acquisition under § 001.03A2. The timber rattlesnake is a nongame species in need of conservation under § 001.02 and may not be possessed. A rattlesnake not native to Nebraska is outside the chapter entirely.",
+          "verifiedOn": "2026-10-01"
+        }
+      },
+      "article": "/blog/rattlesnake-legal-guide/"
     }
   }
 }

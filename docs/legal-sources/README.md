@@ -142,6 +142,11 @@ moves verification dates forward; a research sitting never does.
 | `SC-sc-47-2-and-native-reptile-regs.txt` | Title 47 ch. 2 (Panthera cats including cougars, non-native bears and great apes barred since 1 January 2018), § 50-11-1910 (no sale of live deer), and Regs 123-151.3, 151.4 and 152 on native reptiles and the alligator |
 | `AR-ar-20-19-501-large-carnivores.txt` | Ark. Code §§ 20-19-501 to 511: bears, lions and tigers barred except animals held by 12 August 2005 and permitted within 180 days |
 | `NE-ne-37-477-and-37-806.txt` | § 37-477 in full (captive permit for wild birds and mammals and for any federally listed species; the Felidae ban) and § 37-806(1), which adopts every federal endangered and threatened listing |
+| `CA-ca-5-60.txt` | 14 CCR § 5.60, the sport-take rule for California native reptiles: two each, no license for a rattlesnake, zero for the red diamond |
+| `FL-fl-68a-6-017.txt` | 68A-6.017, the venomous reptile permit: 18 or older, 1,000 hours with the family, an exam and an inspected facility, open to individuals |
+| `NC-nc-14-article-55.txt` | N.C. Article 55 in full: venomous reptiles, the five named large constrictors and every crocodilian but the American alligator, all lawful if housed and labeled to the statute |
+| `AR-ar-codebook-reptiles-alligator.txt` | Codebook rows the other two AR files lack: 09.07, the 09.17 venomous permit and F1.08, R1.02's venomous genera, and Chapter 12's bar on alligators and every other crocodilian |
+| `WY-wy-50cfr17-11-rows.txt` | The 50 CFR 17.11 rows that Wyoming, Missouri and South Carolina pick up by reference: tiger and Lemuridae endangered, lion endangered or threatened by subspecies, American alligator and common caiman threatened by similarity of appearance |
 
 ## Reading the awkward ones
 
