@@ -283,6 +283,18 @@ turned up on its way through.
   question as the arctic fox), the expired wolf-dog quote was dropped, and the IA flying squirrel went
   to `conditional`, with both guides and the WA, TX, LA and IA state notes corrected in the same commits.
 
+- **Resolved 2026-10-08: the Burmese python NC cell.** `conditional` on § 14-417.1, which names it
+  as Python molurus "or any of their subspecies", with the NC state note's Article 55 sentence
+  corrected.
+
+- **Resolved 2026-10-08: the Burmese python AR cell.** `restricted` on Addendum R1.03(A)(4) and its
+  21 May 2020 note, matching the reticulated python.
+
+- **Resolved 2026-10-08: the Burmese python ND cell.** `permit` on category 3's "nonvenomous
+  injurious reptiles", matching the reticulated python, with the guide's counts and table, the hub
+  line, and the Lacey Act sentences in the CA, PA, MN, DE and VT notes and the CA state note
+  corrected to USARK v. Zinke.
+
 - **Kansas answers a native herp in three regulations and the famous one is none of them. Priority 1
   is done and it moved nine cells.** K.S.A. 32-1301, the dangerous regulated animal statute the whole
   Kansas column had been written against, names six cats, bears and non-native venomous snakes.
@@ -681,30 +693,6 @@ turned up on its way through.
   "Game Animals. - Bear, fox, rabbit, squirrel, white-tailed deer, ...", read with (16), which carries
   the definitions to wild species kept in captivity; the North Carolina fennec cell rests only on
   § 14-417. Both should match their arctic fox cells.
-- **The North Carolina Burmese python cell misses the statute that names it.** It records `legal` on
-  § 14-417, the venomous reptile section, with a note that the state's "only statewide exotic animal
-  statute covers venomous reptiles". § 14-417.1, in `NC-nc-14-article-55.txt`, defines large
-  constricting snakes as "Reticulated Python, Python reticulatus; Burmese Python, Python molurus;
-  African Rock Python, Python sebae; Amethystine Python, Morelia amethistina; and Green Anaconda,
-  Eunectes murinus; or any of their subspecies or hybrids" and makes it unlawful to keep one that is
-  not in a sturdy, escape-proof, locked and labeled enclosure with a written safety protocol. The new
-  reticulated python and green anaconda cells read it as `conditional`; the Burmese cell probably
-  should too.
-- **Arkansas's Burmese python cell reads the wrong addendum.** It records `permit` on Addendum R1.01,
-  with a note that "Python bivittatus is on none of those entries, so the Burmese python stays
-  restricted". Addendum R1.03(A)(4), the prohibited list, in `AR-ar-addenda-mammals.txt`, names it:
-  "Large Asian and African Pythons: Reticulated, Burmese, and Rock Pythons (Malayopython reticulatus,
-  Python bivittatus, P. molurus, P. natalensis, P. sebae) **", and the ** note restricts new breeding
-  and importation permits "to only those permittees permitted for these species prior to May 21,
-  2020". The new reticulated python cell reads that as `restricted`; the Burmese cell should match it.
-- **North Dakota's Burmese python cell says no reptile appears in the rules, and category 3 now names
-  reptiles.** It records `legal` on NDCC 36-01-08.4 with the note "No reptile appears anywhere in the
-  chapter or in the current administrative rules". NDAC 48.1-09-01-02(3)(b)(5), in
-  `ND-nd-nontraditional-livestock.txt` (history: amended effective 1 July 2024 and 1 April 2026),
-  lists among category 3 species "Venomous reptiles and nonvenomous injurious reptiles", and
-  48.1-09-01-03(1) requires a license before acquiring any category 3 animal. The Burmese python is
-  federal injurious wildlife, so the cell is probably `permit`, matching the new reticulated python
-  and green anaconda cells.
 
 ## Articles
 

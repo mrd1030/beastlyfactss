@@ -13390,10 +13390,12 @@
           "verifiedOn": "2026-10-01"
         },
         "ND": {
-          "status": "legal",
-          "sourceId": "nd-36-01",
-          "cite": "§ 36-01-08.4",
-          "note": "No reptile appears anywhere in the chapter or in the current administrative rules, and North Dakota sets no constrictor length limit.",
+          "status": "permit",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(3)(b)(5); 48.1-09-01-03(1), (2)",
+          "quote": "b. Category 3 species of nontraditional livestock includes the following species and their hybrids: ... (2) Big cats, including mountain lion, jaguar, leopard, lion, tiger, and cheetah. (3) Bears. (4) Wolves. (5) Venomous reptiles and nonvenomous injurious reptiles. (6) Primates.",
+          "note": "Category 3 now reaches \"nonvenomous injurious reptiles\". The rule does not define injurious, but the Burmese python is federal injurious wildlife and a giant constrictor on any plain reading of the word, so it needs a license. The owner must hold a nontraditional livestock license from the Board of Animal Health before acquiring one, and the board must inspect and approve the premises first, under 48.1-09-01-03(1) and (2)(b). The annual fee is fifteen dollars under NDCC 36-01-08.1. Federally, the Burmese python has been injurious wildlife under the Lacey Act since 2012 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "permitFor": "personal",
           "verifiedOn": "2026-10-01"
         },
         "WY": {
@@ -13433,13 +13435,13 @@
           "verifiedOn": "2026-10-01"
         },
         "NC": {
+          "status": "conditional",
           "sourceId": "nc-14-417",
-          "cite": "§ 14-417",
-          "status": "legal",
-          "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
-          "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "cite": "G.S. § 14-417.1",
+          "quote": "(a) As used in this Article, large constricting snakes shall mean: Reticulated Python, Python reticulatus; Burmese Python, Python molurus; African Rock Python, Python sebae; Amethystine Python, Morelia amethistina; and Green Anaconda, Eunectes murinus; or any of their subspecies or hybrids. (b) It shall be unlawful for any person to own, possess, use, transport, or traffic in any of the large constricting snakes that are not housed in a sturdy and secure enclosure.",
+          "note": "North Carolina names the Burmese python among its large constricting snakes, under the older name Python molurus, and \"any of their subspecies\" reaches it whichever taxonomy is used. Keeping one is unlawful unless it is housed to the statute. The enclosure must be escape-proof and locked and labeled with the species, number and owner, a written safety protocol and escape recovery plan must be posted and travel with the snake, and an escape must be reported at once. Counties may go further under § 153A-131. Federally, the Burmese python has been injurious wildlife under the Lacey Act since 2012 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
         },
         "VA": {
           "sourceId": "va-4vac15-30-40",
@@ -13482,19 +13484,19 @@
           "verifiedOn": "2026-08-05"
         },
         "AR": {
+          "status": "restricted",
           "sourceId": "ar-unrestricted",
-          "cite": "Code Addendum R1.01, Unrestricted Captive Wildlife Species List",
-          "status": "permit",
-          "quote": "Ball Python (Python regius) ... Blood Python (Python curtus) ... Bornean Shorttail and Red Blood Pythons (Python breitensteini, P. brongersmai)",
-          "note": "Arkansas clears pythons species by species and by genus for the Australasian group. Python bivittatus is on none of those entries, so the Burmese python stays restricted. It is federal injurious wildlife as well, which bars bringing one across a state line.",
-          "verifiedOn": "2026-10-01"
+          "cite": "Addendum R1.03(A)(4) and its ** note; Codes 09.02(A), 09.07 Exception F",
+          "quote": "The Commission will not issue permits for breeding, sale, or importation of the following species other than in accordance with the exceptions listed in Codes 09.07, 09.10, 09.11, and Addenda F1.03, F1.04 (possession of some species may be allowed in accordance with Codes 09.02, 09.05, 09.08, and 09.14): ... 4. Reptiles ... Large Asian and African Pythons: Reticulated, Burmese, and Rock Pythons (Malayopython reticulatus, Python bivittatus, P. molurus, P. natalensis, P. sebae) **",
+          "note": "The Burmese python is on the prohibited list by name, so no new breeding, sale or importation permit will issue for it. The list's own opening leaves possession open under Code 09.02, which allows a non-native animal acquired from a permitted breeder/dealer or imported on a permit. For the large pythons the ** note keeps those permits for permittees who held them before 21 May 2020, so a pet can come only from such a holder. Federally, the Burmese python has been injurious wildlife under the Lacey Act since 2012 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-08"
         },
         "CA": {
           "sourceId": "ca-671",
           "cite": "§ 671(c)(7)",
           "status": "legal",
           "quote": "Class Reptilia   Reptiles: (A) Order Crocodilia ... (C) Family Elapidae ... (D) Family Viperidae ... (E) Family Crotalidae-Pitvipers: All nonnative species (D) ... (F) Family Colubridae",
-          "note": "California restricts snakes by family and only the venomous ones, plus three colubrid genera. Pythonidae is not listed, so the Burmese python is unrestricted under state law. Federal law is the real constraint: it has been injurious wildlife under the Lacey Act since 2012, so it cannot be brought across a state line.",
+          "note": "California restricts snakes by family and only the venomous ones, plus three colubrid genera. Pythonidae is not listed, so the Burmese python is unrestricted under state law. Federally, it has been injurious wildlife under the Lacey Act since 2012, which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -13519,7 +13521,7 @@
           "sourceId": "pa-58-79",
           "cite": "58 Pa. Code § 79.1",
           "quote": "A reptile or amphibian species or subspecies, where applicable, that has not been introduced into this Commonwealth and occurs historically within the boundaries of this Commonwealth.",
-          "note": "Pennsylvania itself does not restrict the Burmese python. It is not on the Fish and Boat Commission's native species list, so Chapter 79 does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework. Federal law is the live constraint instead: the Burmese python has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation and interstate transport, so a Pennsylvania keeper cannot lawfully bring one across a state line even though possession here is unregulated.",
+          "note": "Pennsylvania itself does not restrict the Burmese python. It is not on the Fish and Boat Commission's native species list, so Chapter 79 does not reach it. Nothing else in Pennsylvania reaches it either. The Game and Wildlife Code applies to wildlife, which 34 Pa.C.S. § 102 defines as wild birds and wild mammals, so reptiles and amphibians sit entirely outside the Game Commission's exotic wildlife permit framework. Federally, the Burmese python has been injurious wildlife under the Lacey Act since 2012 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
           "verifiedOn": "2026-10-01"
         },
         "MI": {
@@ -13536,7 +13538,7 @@
           "sourceId": "vt-restricted-list",
           "cite": "Restricted Wild Animal List, July 2025",
           "quote": "Squamata | Serpentes | Boidae | Python | molurus | Indian/Burmese python",
-          "note": "Named on the Restricted list, which uses the older taxonomy: the Burmese python was Python molurus bivittatus before being raised to Python bivittatus, and the list's common name column says Indian/Burmese outright, so the species is covered. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in. Federal law bars interstate transport of this species anyway, since it has been listed as injurious wildlife under the Lacey Act since 2012.",
+          "note": "Named on the Restricted list, which uses the older taxonomy: the Burmese python was Python molurus bivittatus before being raised to Python bivittatus, and the list's common name column says Indian/Burmese outright, so the species is covered. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in. Federally, the Burmese python has been injurious wildlife under the Lacey Act since 2012 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
           "permitFor": "commercial-exhibition-research",
           "verifiedOn": "2026-10-01"
         },
@@ -13570,7 +13572,7 @@
           "sourceId": "de-903",
           "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
           "quote": "All giant snakes when average adult body length of the species is larger than 5 feet: Anacondas, Pythons and Boas",
-          "note": "The Burmese python is a non-native reptile and no snake is exempt in Delaware, so an Individual permit is required. The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. It is not banned here: pythons appear in these rules only at 7.5.2.10, which bars Sales Permit holders from breeding giant snakes over five feet, and that is a breeding restriction on a permit class rather than a prohibition on keeping one. Federal law is the harder constraint, since the species has been listed as injurious wildlife under the Lacey Act since 2012 and cannot lawfully cross a state line.",
+          "note": "The Burmese python is a non-native reptile and no snake is exempt in Delaware, so an Individual permit is required. The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. It is not banned here: pythons appear in these rules only at 7.5.2.10, which bars Sales Permit holders from breeding giant snakes over five feet, and that is a breeding restriction on a permit class rather than a prohibition on keeping one. Federally, the Burmese python has been injurious wildlife under the Lacey Act since 2012 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
           "permitFor": "personal",
           "verifiedOn": "2026-10-01"
         },
@@ -13597,7 +13599,7 @@
           "sourceId": "mn-97a-401",
           "cite": "§ 97A.401, subd. 8",
           "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
-          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A Burmese python is a snake and takes the same breeder-source condition. Federal law is the sharper constraint: the species has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation and interstate transport, so one cannot lawfully be brought into Minnesota at all. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
+          "note": "Minnesota gets here in three steps, and the surprise is that none of them turns on the species being native. Section 97A.015, subd. 55 defines wild animals as creatures wild by nature and includes reptiles, with no geographic limit. Subd. 39 makes snakes, lizards and salamanders protected wild animals as whole categories. Section 97A.501, subd. 1 then bars possessing a protected wild animal unless the game and fish laws allow it, and this subdivision is the allowance. A Burmese python is a snake and takes the same breeder-source condition. Federally, the Burmese python has been injurious wildlife under the Lacey Act since 2012 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states. Two things to know about how firm this is. The statute says the commissioner \"must\" prescribe conditions, but there is no snake, lizard or salamander breeder permit on the DNR's permits page, Minnesota Rules chapter 6256 covers only frogs and turtles, and no rule chapter implements the subdivision. And the DNR's own pet-trade page describes the change as reaching \"wild collected Minnesota snakes, lizards, and/or salamanders\", which is narrower than the statute's words and does not mention the breeder permit at all. So the condition is real on paper and its machinery is not visibly in place.",
           "verifiedOn": "2026-10-01"
         },
         "OR": {
