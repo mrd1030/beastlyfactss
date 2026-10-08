@@ -26631,7 +26631,7 @@
           "sourceId": "nc-14-417",
           "cite": "N.C. Gen. Stat. § 14-417",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "Read and nothing found that reaches a kinkajou, the fennec fox's position. North Carolina's only statewide exotic animal statute covers venomous reptiles, and the Wildlife Resources Commission's game and fur-bearer definitions name native animals. § 153A-131 lets counties regulate dangerous animals, and several have used it, so the county ordinance is the rule to check.",
+          "note": "Read and nothing found that reaches a kinkajou, the serval's position. North Carolina's statewide exotic animal statute, Article 55 of Chapter 14, covers venomous reptiles, five large constricting snakes and the crocodilians, and the Wildlife Resources Commission's game and fur-bearer definitions name native animals. § 153A-131 lets counties regulate dangerous animals, and several have used it, so the county ordinance is the rule to check.",
           "localOverride": true,
           "verifiedOn": "2026-10-01"
         },
@@ -27090,7 +27090,7 @@
           "sourceId": "nc-14-417",
           "cite": "N.C. Gen. Stat. § 14-417",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "Read and nothing found that reaches a coati, the same position as the fennec fox and the serval. § 153A-131 lets counties regulate dangerous animals, and several have used it, so the county ordinance is the rule to check.",
+          "note": "Read and nothing found that reaches a coati, the same position as the serval and the kinkajou. § 153A-131 lets counties regulate dangerous animals, and several have used it, so the county ordinance is the rule to check.",
           "localOverride": true,
           "verifiedOn": "2026-10-01"
         },
@@ -27436,7 +27436,7 @@
           "sourceId": "oh-1531-01",
           "cite": "R.C. 1531.01(W); § 1533.71(A)(2); § 935.01(C)(7)(b)",
           "quote": "\"Noncommercial propagating license\" permitting the licensee to propagate game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, or fur-bearing animals and to hold the animals in captivity. Game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, and fur-bearing animals propagated or held in captivity by authority of a noncommercial propagating license are for the licensee's own use and shall not be sold. The fee for such a license is twenty-five dollars per annum.",
-          "note": "Bobcats are named fur-bearing animals under R.C. 1531.01(W), which puts them under the § 1533.71 captivity license. The dangerous wild animal list may reach them as well: § 935.01(C)(7)(b) lists \"Lynxes, including Canadian lynxes, Eurasian lynxes, and Iberian lynxes\", and the bobcat is Lynx rufus though not named there. On that reading it also needs an Agriculture permit under Chapter 935, as the serval does. Either way it is a permit animal.",
+          "note": "Bobcats are named fur-bearing animals under R.C. 1531.01(W), which puts them under the § 1533.71 captivity license. The dangerous wild animal list at § 935.01(C)(7)(b) names \"Lynxes, including Canadian lynxes, Eurasian lynxes, and Iberian lynxes\", and the bobcat is Lynx rufus but is not among them, while the same definitions section names bobcats separately as fur-bearing animals. That separate naming is the better reading. If the bobcat were a lynx under Chapter 935, no new keeper could have one at all, since § 935.02 closed dangerous wild animals to new owners as it did the serval.",
           "localOverride": true,
           "permitFor": "personal",
           "verifiedOn": "2026-10-01"
@@ -28040,7 +28040,7 @@
           "sourceId": "nc-113-129",
           "cite": "G.S. §§ 113-129(7c), (15), (16); 113-272.5(a); 14-417",
           "quote": "(7a) Fur-bearing Animals. - Beaver, mink, muskrat, nutria, otter, skunk, and weasel; bobcat, opossum, and raccoon when lawfully taken with traps. ... (7c) Game Animals. - Bear, fox, rabbit, squirrel, white-tailed deer, and, except when trapped in accordance with provisions relating to fur-bearing animals, bobcat, opossum, and raccoon.",
-          "note": "The fennec fox is recorded legal here on the venomous reptile statute. The arctic fox is harder because the game animal definition names \"fox\" with no species, and § 113-129(16) extends the wildlife definitions to animals of wild species kept in captivity. Read that way, an arctic fox is a game animal needing a captivity license that is not issued for a pet; read as North Carolina's own foxes, nothing reaches it. Counties may regulate it under § 153A-131.",
+          "note": "The arctic fox turns on the same question as the fennec fox: the game animal definition names \"fox\" with no species, and § 113-129(16) extends the wildlife definitions to animals of wild species kept in captivity. Read that way, an arctic fox is a game animal needing a captivity license that is not issued for a pet; read as North Carolina's own foxes, nothing reaches it. Counties may regulate it under § 153A-131.",
           "localOverride": true,
           "verifiedOn": "2026-10-01"
         },
