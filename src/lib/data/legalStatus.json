@@ -9805,13 +9805,16 @@
           "localOverride": true
         },
         "OH": {
-          "status": "permit",
-          "sourceId": "oh-935-01",
-          "quote": "Servals, excluding hybrids with domestic cats commonly known as savannah cats",
-          "note": "The serval itself is a dangerous wild animal; savannah cat hybrids are expressly carved out.",
-          "verifiedOn": "2026-10-01",
-          "localOverride": true,
-          "permitFor": "personal"
+          "status": "banned",
+          "sourceId": "oh-935-02",
+          "cite": "R.C. 935.01(C)(7)(e); R.C. 935.02(A), (B)(1)",
+          "quote": "(A) No person shall possess a dangerous wild animal on or after January 1, 2014. (B)(1) Except as provided in divisions (G)(1) and (2) of section 935.06 of the Revised Code, no person shall acquire, buy, sell, trade, or transfer possession or ownership of a dangerous wild animal on or after the effective date of this section.",
+          "note": "Servals are named dangerous wild animals, with savannah cat hybrids expressly excluded. The exceptions in R.C. 935.03 are accredited zoos, research facilities, circuses, sanctuaries, rehabilitators of Ohio natives and vets, so there is no route for a new keeper.",
+          "grandfathered": {
+            "before": "2013-10-01",
+            "detail": "Only a person who registered the animal with the Department of Agriculture in 2012 and possessed it on 1 October 2013 could apply for a wildlife shelter or wildlife propagation permit under R.C. 935.05 or 935.07; the permit requires sterilizing males, insurance, caging standards and, outside the small primates, at least one acre."
+          },
+          "verifiedOn": "2026-10-08"
         },
         "TX": {
           "status": "permit",

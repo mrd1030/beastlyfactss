@@ -160,7 +160,7 @@ export const STATE_NOTES = {
   ],
 
   OH: [
-    "Ohio works from two enumerated lists and nothing else. Dangerous wild animals need a wildlife shelter permit from the Department of Agriculture. Restricted snakes are constrictors of twelve feet or more, plus the venomous families. An animal on neither list needs no state permit at all, which is why forty-nine of the fifty-two entries here are clear.",
+    "Ohio works from two enumerated lists and nothing else. Dangerous wild animals have been barred since 2014 to everyone but the keepers who registered one in 2012, whose animals went onto wildlife shelter or propagation permits from the Department of Agriculture. Restricted snakes are constrictors of twelve feet or more, plus the venomous families. An animal on neither list needs no state permit at all, which is why forty-nine of the fifty-two entries here are clear.",
     "Ohio is one of the few states to draw its line by length rather than by species, and the Burmese python is where that shows. Under twelve feet it is not a restricted snake and needs nothing; at twelve feet it becomes one and the keeper needs a restricted snake permit. That is a rule about the animal in front of you rather than the species on the receipt, and a Burmese python will cross it.",
     "Two smaller points. The serval is a dangerous wild animal and savannah cat hybrids are expressly carved out, so Ohio answers the hybrid question in the same breath as the parent species. And § 1531.01(X) defines wild animals to include aquatic insects, where the word aquatic is the whole answer for a pet invertebrate: a land insect or an arachnid is not a wild animal in Ohio, and the Division of Wildlife has nothing to say about one.",
   ],
