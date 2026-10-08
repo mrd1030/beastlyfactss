@@ -28577,6 +28577,465 @@
         }
       },
       "article": "/blog/canada-lynx-legal-guide/"
+    },
+    "asian-small-clawed-otter": {
+      "name": "Asian small-clawed otter",
+      "scientific": "Aonyx cinereus",
+      "jurisdictions": {
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(K)(5)(a)",
+          "quote": "Family Mustelidae-All species (D), except: a. Ambloynx cinerea (Oriental small-clawed otter)-(W)",
+          "note": "The rule names this otter, under an old genus spelling, and the exception only moves it from the detrimental category to the welfare category. It is still restricted, and no California permit type covers pet keeping. Separately, the species has been on CITES Appendix I since 2019, which bars commercial international trade.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-391-4-8-05",
+          "cite": "R. 391-4-8-.05(1)(a)3; O.C.G.A. § 27-5-4(b)(1)",
+          "quote": "Order Carnivora (weasels, ferrets, cats, bears, wolves, etc.) - All species, except that European ferret (Mustela putorius furo) may be sold, purchased, exhibited, or held as a pet without a license or permit",
+          "note": "An otter is a mustelid and so a carnivore, and the ferret is the only mustelid the rule frees. The license under § 27-5-4(b)(1) goes only to dealers and exhibitors. The species has also been on CITES Appendix I since 2019, which bars commercial international trade.",
+          "verifiedOn": "2026-10-01"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6-5",
+          "cite": "§ 4-71-6.5, Restricted Animal List Part A",
+          "quote": "Aonyx cinerea otter, Asian small-clawed",
+          "note": "Named on Part A by the binomial in use when the list was drawn. The only otter on Part B, the private and commercial list, is the Malayan smooth-coated otter, Lutra perspicillata, so this species stays research and exhibition only. CITES Appendix I since 2019 is a separate bar on commercial international trade.",
+          "verifiedOn": "2026-10-01"
+        },
+        "PA": {
+          "status": "unclear",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)(6), (8), (11)",
+          "quote": "In the family Mustelidae. All species of the skunks.",
+          "note": "The only mustelid line on the list reaches skunks, so an otter is not named. It is not listed by the Department of the Interior as threatened or endangered, so § 137.1(a)(8) misses it as well, and the answer turns on the same § 137.1(a)(11) catch-all for out-of-state captive-bred wildlife that the fennec fox does. CITES Appendix I since 2019 bars commercial international trade but is not a Pennsylvania rule.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)",
+          "quote": "a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following",
+          "note": "None of the seven categories covers an otter. Ferrets are named in (F), and that category does not stretch to other mustelids. CITES Appendix I since 2019 is a separate bar on commercial international trade.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "§ 161.01(b)(4)",
+          "quote": "All fur bearing mammals of the family Mustelidae, including, but not limited to, weasel, marten, mink, badger, ermine, skunk, otter, pole cat, zorille, wolverine, stoat and ferret.",
+          "note": "\"Otter\" is named in the mustelid clause. CITES Appendix I since 2019 is a separate bar on commercial international trade. § 161.01(d) lets the Department consent to an owner removing a seized animal to a jurisdiction where it is not prohibited, which is the only relief in the article.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NJ": {
+          "status": "unclear",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.5; restricted species notice",
+          "quote": "A permit shall be required for any other exotic mammals, birds, reptiles or amphibians or nongame species not specifically exempted by N.J.A.C. 7:25-4.4.",
+          "note": "By the rule alone this is a hobby permit animal: it is an exotic mammal, it is not on the 4.8 dangerous table, and the 4.5 catch-all requires a permit for anything not exempted. Against that, the Division's restricted species notice says it classifies an animal as endangered when it is on \"any relevant State or Federal endangered species list, including ... IUCN Red List\", and endangered species may not be kept as pets for any reason. The Asian small-clawed otter is IUCN Vulnerable and has been CITES Appendix I since 2019. Whether a Vulnerable rating counts is the same unresolved question as the African grey cell.",
+          "verifiedOn": "2026-10-01"
+        },
+        "ME": {
+          "status": "banned",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.18(2)(F); § 7.06(3)(A)(1)(b)",
+          "quote": "Family Mustelidae All Species in Family Mustelidae (Badgers, Otters, Weasels, and Relatives)",
+          "note": "Otters are named in the Category 1 family entry, and § 7.06(3)(A)(1)(b) separately puts any CITES Appendix I species in Category 1, which this otter has been since 2019. Permits go only to exhibitors, rehabilitators and research facilities.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.11(1)(a)",
+          "quote": "A person is exempt from holding a license or other approval as required under this chapter to possess live nonnative wild animals that are not endangered or threatened species, except for any of the following:",
+          "note": "Nonnative and not on the federal list or Wisconsin's list, which is what § 169.01(9) makes an endangered or threatened species here, so § 169.04(4)(b) frees it from licensing. CITES Appendix I since 2019 bars commercial international trade but is not a Wisconsin listing. A DATCP import permit applies to an animal brought in from out of state.",
+          "verifiedOn": "2026-10-01"
+        },
+        "FL": {
+          "status": "permit",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.002(1)(c); 68A-6.003(8)",
+          "quote": "(c) Class III: All other wildlife not listed herein, except those for which a permit is not required pursuant to Rule 68A-6.003, F.A.C.",
+          "note": "No otter is named in Class I or Class II, and the badgers are the only mustelids there, so the Asian small-clawed otter is Class III. That means the no-cost Permit to Possess Class III Wildlife for Personal Use under 68A-6.003(8), and the animal is not on the 22-item no-permit list at 68A-6.003(14). CITES Appendix I since 2019 bars commercial international trade, which governs where a lawful animal can come from.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NY": {
+          "status": "unclear",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL §§ 11-0103(2)(c), 11-0107(2); 6 NYCRR § 180.1",
+          "quote": "\"Small game\" means ... raccoon, opossum, or weasel, skunk, bobcat, lynx, muskrat, mink, except mink born in captivity, fisher, otter, beaver, sable and marten but does not include coydogs.",
+          "note": "The exotic side is clear: the only mustelids on 180.1 are the wolverine and the badgers, and no mustelid is on the closed wild animal list. What is not clear is the small game definition, which names \"otter\" with no species and no nativity qualifier, where the same sentence writes \"native\" in front of every herp group. Read as New York's own river otter, this animal is unregulated; read literally, it is small game, and § 11-0107(2) bars possessing small game \"whether taken within the state or coming from without the state\". DEC has published nothing on it. CITES Appendix I since 2019 governs international trade separately.",
+          "verifiedOn": "2026-10-01"
+        },
+        "CT": {
+          "status": "conditional",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(4)(B)(iii), (b)(4)",
+          "quote": "(iii) A member within the family Mustelidae (including, but not limited to, short-tailed weasel, long-tailed weasel, mink, fisher, otter and marten),",
+          "note": "Mustelidae is a Category Three family, and the entry is drawn by family rather than by native species, so it reaches an Asian otter as well as Connecticut's own. Category Three bars import and export except by institutions and persons authorized under the named statutes, and does not bar possession. So an animal already lawfully in the state may be kept, and one may not be brought in, which in practice is the whole of the pet trade. CITES Appendix I since 2019 governs international trade separately. Connecticut's statutes could not be read from here, so only the regulation is behind this.",
+          "verifiedOn": "2026-10-01"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(1), (12)(a)",
+          "quote": "The purpose of 321 CMR 9.01 is to list those species which are exempt from the licensing provisions of M.G.L. c. 131, § 23, and which may be imported, possessed, maintained, propagated, bought, sold, exchanged or offered for sale without a license or permit from the Division. Species not listed, or which are expressly listed as \"require(s) a permit\", are not exempt from the provisions of M.G.L. c. 131, § 23.",
+          "note": "Not on the exemption list, and 9.01(3) would bar adding it, because it is on the IUCN Red List as Vulnerable and § 23 says no animal \"listed in any category\" of the Red Data Books shall be exempted. It is also CITES Appendix I since 2019. The license under § 23 exists on paper, but MassWildlife says permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\"",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
+          "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
+          "note": "CPW's mammal list rules on Aonyx cinereus by name as regulated wildlife, not on the domestic or unregulated list. CITES Appendix I since 2019 bars commercial international trade separately. Chapter W-11 says noncommercial (pet) possession of regulated mammals has been prohibited since 1983, and its wildlife park licenses are commercial or closed to new entrants.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AZ": {
+          "status": "restricted",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(F)",
+          "quote": "All species of the order Carnivora",
+          "note": "All of Carnivora is restricted, which reaches every otter, so it needs a special license. CITES Appendix I since 2019 bars commercial international trade separately.",
+          "verifiedOn": "2026-10-01"
+        },
+        "OR": {
+          "status": "banned",
+          "sourceId": "or-635-056-0050",
+          "cite": "OAR 635-056-0050(1)(a)(B)(iv)",
+          "quote": "(iv) Asian Small-clawed Otter | Mustelidae | Lutrinae Aonyx cinerea (also classified as Aonyx cinereus);",
+          "note": "Oregon prohibits this otter by name, under both spellings of its binomial. OAR 635-056-0150 lets someone who held one before it was listed keep it for life, with no transfer, sale or transport inside Oregon. CITES Appendix I since 2019 is a separate bar on commercial international trade.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-77-08-010",
+          "cite": "RCW 77.08.010(74); WAC 220-640-200(1); RCW 16.30.010(2)",
+          "quote": "\"Wildlife\" means all species of the animal kingdom whose members exist in Washington in a wild state.",
+          "note": "Read and nothing found. It does not live wild in Washington, so it is not wildlife; it is not on the deleterious exotic list, which names no mustelid; and RCW 16.30.010(2) does not list it. CITES Appendix I since 2019 governs where a lawful animal can come from.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "OH": {
+          "status": "unclear",
+          "sourceId": "oh-1531-01",
+          "cite": "R.C. 1531.01(W), (X); § 1533.71(A)",
+          "quote": "\"Fur-bearing animals\" includes minks, weasels, raccoons, skunks, opossums, muskrats, fox, beavers, badgers, otters, coyotes, and bobcats.",
+          "note": "Not on the dangerous wild animal list. The fur-bearing definition names \"otters\" with no species or nativity limit, inside a definition of wild animals that reaches \"all other wild mammals\", so it arguably puts an Asian otter under the § 1533.71 captivity license; read as Ohio's river otter, it needs nothing. CITES Appendix I since 2019 governs international trade separately.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "TX": {
+          "status": "unclear",
+          "sourceId": "tx-71-001",
+          "cite": "Parks & Wild. Code §§ 71.001(1), 71.005(c)",
+          "quote": "\"Fur-bearing animal\" means wild beaver, otter, mink, ring-tailed cat, badger, skunk, raccoon, muskrat, opossum, fox, or nutria.",
+          "note": "Not on the dangerous wild animal list. The fur-bearing definition names \"otter\" with no species, and § 71.005(c) requires a propagation license to possess any live fur-bearing animal, so the question is whether \"wild ... otter\" reaches a captive-bred Asian otter or only the Texas river otter. CITES Appendix I since 2019 governs international trade separately.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-captive-game",
+          "cite": "NREPA Part 427; MCL 287.1102(f); MCL 287.731",
+          "quote": "badger, bobcat, red and gray fox, raccoon, coyote, beaver, otter, muskrat, mink, squirrels, striped skunk, woodchuck, opossum, ring-necked pheasant, bobwhite quail, Hungarian partridge, ducks, geese and wild turkeys",
+          "note": "Read and nothing found. \"Otter\" on the captive game list is Michigan's river otter, part of a list of the state's own game, and Michigan leaves non-native exotics to the import rules, the same reason the fennec fox needs no permit. Importing one calls for an MDARD certificate of veterinary inspection. CITES Appendix I since 2019 governs international trade separately, and local ordinances may prohibit it.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-720-48-10",
+          "cite": "720 ILCS 5/48-10(a); 520 ILCS 5/2.2",
+          "quote": "\"Dangerous animal\" means a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote. Dangerous animal does not mean any herptiles included in the Herptiles-Herps Act.",
+          "note": "Read and nothing found. It is not on the 720 ILCS 5/48-10 dangerous animal list, which is fifteen named mammals plus primates, and it is not one of the Illinois species protected by name in the Wildlife Code at 520 ILCS 5/2.2. The Wildlife Code protects the river otter by binomial, Lontra canadensis, so the Asian otter is outside it. CITES Appendix I since 2019 governs international trade separately. Illinois is a home rule state, so a municipal ordinance can be stricter and often decides it.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "MN": {
+          "status": "unclear",
+          "sourceId": "mn-97a-015",
+          "cite": "§ 97A.015, subds. 39, 45, 55; § 97A.501",
+          "quote": "\"Small game\" means game birds, gray squirrel, fox squirrel, cottontail rabbit, snowshoe hare, jack rabbit, raccoon, lynx, bobcat, short-tailed weasel, long-tailed weasel, wolf, red fox and gray fox, fisher, pine marten, opossum, badger, cougar, wolverine, muskrat, mink, otter, and beaver.",
+          "note": "Not a regulated animal. The small game definition names \"otter\" with no species, and small game is a protected wild animal that § 97A.501 bars possessing without a special permit. Read as Minnesota's river otter, an Asian otter is untouched; read literally, it needs the § 97A.401 permit. A wild animal is one \"wild by nature\", which a captive-bred otter still is. CITES Appendix I since 2019 governs international trade separately.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NV": {
+          "status": "permit",
+          "sourceId": "nv-nrs-503-597",
+          "cite": "NRS 503.597(1); NAC 503.110, 503.140",
+          "quote": "it is unlawful, except by the written consent and approval of the Department, for any person at any time to receive, bring or have brought or shipped into this State, or remove from one stream or body of water in this State to any other...any aquatic life or wildlife",
+          "note": "No otter or mustelid is on the prohibited list, and the only mustelids on the no-permit list are the European ferret and domesticated mink. CITES Appendix I since 2019 governs international trade separately. An animal on neither Nevada list is not unregulated: NRS 503.597 requires the Department's written consent to bring any wildlife into the state, and NAC 503.140 is the list of exemptions from that. NAC 503.140(4) preserves county and city ordinances, and Clark County, Las Vegas and Henderson are all stricter than the state.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "VA": {
+          "status": "permit",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "§ 15-30-40(A)",
+          "quote": "Mustelidae   All Species   Weasels, Badgers, Skunks and Otters (except Mustela putorius furo) Ferret*",
+          "note": "Otters are named in the Mustelidae row, which frees only the domestic ferret, so a nonnative otter needs a special permit to import, possess or sell. CITES Appendix I since 2019 governs international trade separately.",
+          "grandfathered": {
+            "before": "1992-07-01",
+            "detail": "Asterisked rows allow an animal held before 1 July 1992 and declared in writing by 1 January 1993 to be kept under a possession-only permit that renews every five years and cannot be transferred."
+          },
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1); Nat. Res. §§ 10-902(a), 10-903",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Read and nothing found. No mustelid is on the eight-clause list, and the Asian otter is not native to Maryland. CITES Appendix I since 2019 governs international trade separately. The native wildlife permit in Nat. Res. § 10-902 attaches only to wildlife native to Maryland, and Maryland has not used its § 10-903 power to restrict nonnative mammals. Subsection (e) of § 10-621 preserves stricter county and municipal rules.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.",
+          "note": "The only otter on the list is the North American river otter, Group IV as a state protected species. The Asian small-clawed otter has no row, so the default clause designates it Group IV. CITES Appendix I since 2019 governs international trade separately. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. 19.35.7 NMAC is an importation rule, so it governs bringing the animal into New Mexico rather than keeping one already here.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "No otter is on any list; the only mustelid Vermont clears is the European ferret, on the Domestic list. CITES Appendix I since 2019 governs international trade separately. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "UT": {
+          "status": "restricted",
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1 header",
+          "quote": "Except as otherwise listed, all species are presumed prohibited. All species not listed will require an assessment before collection, importation, or possession will be authorized.",
+          "note": "No otter is in Table 3b-1. CITES Appendix I since 2019 governs international trade separately. Unlisted birds and mammals are presumed prohibited and need a division assessment before possession is authorized, so this is neither cleared nor expressly banned; it is an application to DWR with no published answer, the serval's position.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
+          "quote": "Unless specifically exempt from the permitting requirement as presented in regulation 6.1, all persons who would own or have custody of an exotic animal must first obtain a permit issued by the Department.",
+          "note": "A nonnative wild mammal not on the exempt list, so 6.2 requires an Individual permit. Ferrets are the only mustelid exempted. CITES Appendix I since 2019 governs international trade separately. The $25 Individual permit from the Department of Agriculture is issued where possession will be in the public interest, and Delaware's only outright refusals under 4.7 are the gila monster, the beaded lizard and the komodo dragon. County and municipal ordinances are the more likely obstacle.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-1660-01-18",
+          "cite": "Tenn. Code Ann. § 70-4-403(3); Tenn. Comp. R. & Regs. 1660-01-18-.03",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q).",
+          "note": "The rule moves only NATIVE furbearing mammals into Class II, and the Asian otter is not native, so it is Class III. CITES Appendix I since 2019 governs international trade separately. The commission's rule chapter adds no mammal to Class I except hybrids of two Class I species. Rule .01(4) asks every keeper of live wildlife to be able to prove legal ownership, a purchase receipt from a licensed propagator among the accepted forms.",
+          "verifiedOn": "2026-10-08"
+        },
+        "NC": {
+          "status": "unclear",
+          "sourceId": "nc-113-129",
+          "cite": "G.S. §§ 113-129(7a), (15), (16); 113-272.5(a)",
+          "quote": "(7a) Fur-bearing Animals. - Beaver, mink, muskrat, nutria, otter, skunk, and weasel; bobcat, opossum, and raccoon when lawfully taken with traps. ... (7c) Game Animals. - Bear, fox, rabbit, squirrel, white-tailed deer, and, except when trapped in accordance with provisions relating to fur-bearing animals, bobcat, opossum, and raccoon.",
+          "note": "The fur-bearer definition names \"otter\" with no species, and § 113-129(16) extends the wildlife definitions to animals of wild species kept in captivity, so on a literal reading an Asian otter is a fur-bearing wild animal needing a captivity license that is not issued for a pet. Read as North Carolina's river otter, nothing statewide reaches it. CITES Appendix I since 2019 governs international trade separately.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "AR": {
+          "status": "banned",
+          "sourceId": "ar-unrestricted",
+          "cite": "Addendum R1.03(B)",
+          "quote": "Species not listed in Addenda R1.01, R1.02, or R1.03 are prohibited until evaluated.",
+          "note": "No otter is on any of the three lists, and the closing clause makes an unlisted species prohibited until the Commission evaluates it. The only mustelids named anywhere are the domestic ferret, cleared on R1.01, and the tayra on R1.02. CITES Appendix I since 2019 governs international trade separately.",
+          "verifiedOn": "2026-10-08"
+        },
+        "ID": {
+          "status": "permit",
+          "sourceId": "id-130110",
+          "cite": "IDAPA 13.01.10.200.01; .010.06; Idaho Code § 36-202(g)",
+          "quote": "No person may import into Idaho, export from Idaho, transport, possess or otherwise hold in captivity, propagate, sell or release into the wild any live wildlife, except those animals exempted by Idaho Code or these rules, without a corresponding import, export, transport, captive possession (individual animal license or multiple animal license at a private, commercial or rehabilitation facility), sale or release license/permit from the Department.",
+          "note": "Idaho Code § 36-202(g) defines wildlife as animal life \"native or exotic, generally living in a state of nature\", which an otter is, and the conventional pets list has no mustelid but the ferret, so a captive possession license from Fish and Game is required. It is not on the Agriculture deleterious exotic list. CITES Appendix I since 2019 governs international trade separately.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5); § 481A.1(20), (36)",
+          "quote": "A member of the family felidae of the order carnivora, including but not limited to lions, tigers, cougars, leopards, cheetahs, ocelots, and servals. However, a dangerous wild animal does not include a domestic cat.",
+          "note": "Read and nothing found. Chapter 717F's carnivores are canids, hyaenids, felids and bears, and § 481A.1(36) limits Iowa's wild animals to wildlife \"found in this state\", which puts an exotic pet outside the game and fur-bearer chapter. The fur-bearer list names \"otter\", meaning Iowa's river otter; an Asian otter is not wildlife found in this state. CITES Appendix I since 2019 governs international trade separately.",
+          "verifiedOn": "2026-10-01"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "301 KAR 2:082 §§ 4, 7; 301 KAR 2:081 § 6(1)(i)",
+          "quote": "(i) Otter (Lontra canadensis);",
+          "note": "Read and nothing found. It is on neither of the two exotic possession bars in 301 KAR 2:082 § 4, the potentially injurious list and the inherently dangerous list, nor on the § 7 permit-exempt list, so it may be possessed, but a transportation permit is needed to bring it into Kentucky. The prohibited natives list names the river otter by binomial, so it does not reach an Asian otter. CITES Appendix I since 2019 governs international trade separately.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "RI": {
+          "status": "banned",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.7(A); § 3.9(B)",
+          "quote": "All exotic and native wild animals and hybrids of the order Carnivora for which there is no USDA conditionally licensed or unconditionally licensed rabies vaccine are expressly prohibited from importation or possession without the issuance of a valid permit by the Department. Possession is restricted to bona fide researchers, USDA licensed exhibitors authorized to possess animals of this order for short-term exhibition purposes, and Association of Zoos and Aquariums (AZA) certified facilities.",
+          "note": "An otter is a carnivore with no licensed rabies vaccine. CITES Appendix I since 2019 governs international trade separately. § 3.9(B) adds that no permit shall be granted to a private person for an exotic carnivore without a licensed rabies vaccine.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.04(b); Fis 804.03(a)",
+          "quote": "(b) All species not specifically listed under the categories of non-controlled, prohibited, or controlled shall be designated as prohibited.",
+          "note": "The only otter in the controlled table is the river otter, Lutra canadensis, and an unlisted species is prohibited by default. CITES Appendix I since 2019 governs international trade separately. Fis 804.03(a) issues no permit for a prohibited species, and the waiver in Fis 802.05 is closed to every permittee category but exhibitors.",
+          "verifiedOn": "2026-10-01"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.110(2); RSMo § 578.023",
+          "quote": "(2) Except for federally-designated endangered species and species listed in 3 CSR 10-4.117 and 3 CSR 10-9.240, the following may be bought, sold, possessed, transported, and exhibited without permit: ... amphibians, reptiles, and mammals not native to Missouri except those mammals located in a licensed big game hunting preserve;",
+          "note": "Non-native, so the Wildlife Code clears it without permit; the furbearer rules reach only Missouri's river otter. Not on the § 578.023 list. CITES Appendix I since 2019 governs international trade separately.",
+          "verifiedOn": "2026-10-01"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-3(a), (b), (d); K.S.A. 32-1301(d)",
+          "quote": "(a) Subject to federal or state law or rules and regulations, exotic wildlife species may be imported, possessed, sold, offered for sale or purchased, provided the exotic wildlife was legally captured, raised, exported, possessed, sold or purchased or any combination of these activities in its place of origin. (b) Exotic wildlife may be possessed without limit in time and number.",
+          "note": "Not native to Kansas, so exotic wildlife that may be possessed without a permit; the furbearer rules reach only Kansas's river otter. CITES Appendix I since 2019 governs international trade separately. It is not a dangerous regulated animal under K.S.A. 32-1301 and not on the 115-18-10 prohibited list, whose only canid is the Asian raccoon dog.",
+          "verifiedOn": "2026-10-01"
+        },
+        "SC": {
+          "status": "permit",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-20(A)(1), (B)",
+          "quote": "a furbearer, a member of the family Cervidae, a nondomestic member of the families Suidae (pigs), Tayassuidae (peccaries), Bovidae (bison, mountain goat, mountain sheep), coyote, bear, or turkey (genus Meleagris). Furbearer includes, but is not limited to, red and gray fox, raccoon, opossum, muskrat, mink, skunk, otter, bobcat, weasel, and beaver;",
+          "note": "The furbearer list names \"otter\" without a species and is open ended, so an Asian otter reads as a furbearer needing the import permit. CITES Appendix I since 2019 governs international trade separately. § 50-16-20(B) lets the Department issue the permit only if the animal was taken lawfully where it came from and its possession is not expected to harm the state's wildlife, and § 50-16-60's pet-trade exemption does not list it.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MT": {
+          "status": "banned",
+          "sourceId": "mt-87-5-7",
+          "cite": "§ 87-5-705(1); ARM 12.6.2205, 12.6.2208, 12.6.2215",
+          "quote": "A person may not import into the state, possess, or sell any exotic wildlife unless: (a) the importation, possession, or sale of the exotic wildlife is allowed by law or commission rule",
+          "note": "Not native, so exotic wildlife, and no otter appears on any of the three lists. Under Montana's white list that means no rule allows it. CITES Appendix I since 2019 is a separate bar on commercial international trade.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "WV": {
+          "status": "legal",
+          "sourceId": "wv-74-1",
+          "cite": "W. Va. C.S.R. § 74-1-3.1; W. Va. Code § 20-1-2",
+          "quote": "\"Wild animals\" means all mammals native to the State of West Virginia occurring either in a natural state or in captivity",
+          "note": "No mustelid is on the board's list, and this Asian otter is not native, so Chapter 20 does not reach it. The native river otter would be a different answer. CITES Appendix I since 2019 bars commercial international trade.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "AK": {
+          "status": "banned",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(a), (c); AS 16.05.940(19)",
+          "quote": "The department may not issue a permit for the capture, possession, import, or export of any game animal, including a hybrid of a game animal and a species listed in (b) of this section, for use as a pet",
+          "note": "Not on the clean list and no pet permit is available under subsection (c). CITES Appendix I since 2019 is a separate bar on commercial international trade.",
+          "verifiedOn": "2026-10-01"
+        },
+        "SD": {
+          "status": "permit",
+          "sourceId": "sd-12-68-18",
+          "cite": "ARSD 12:68:18:03(1)(d); 12:68:18:03.03(4)",
+          "quote": "(1) Of the order Carnivora, all nondomestic members of the following families: ...(d) Mustelidae;",
+          "note": "Otters are mustelids on every taxonomy, so this one needs the ten-dollar possession permit. CITES Appendix I since 2019 bars commercial international trade, which limits supply to captive-bred animals already in the country.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-26",
+          "cite": "§ (1); r. 220-2-.92(1)(e)",
+          "quote": "Any of the following from any area outside the state of Alabama; any member of the family Cervidae (to include but not be limited to deer, elk, moose, caribou), species of coyote, species of fox, species of raccoon, species of skunk, wild rodent, or strain of wild turkey, black bear (Ursus americanus), mountain lion (Felis concolor), bobcat (Felis rufus)",
+          "note": "No otter is named in the prohibited list, and the protected nongame mammal list names bats, mice, shrews, rabbits, a skunk, a weasel and a woodrat but no otter. An Asian otter is not native, so the protected wild animal clause in § (3) does not reach it. CITES Appendix I since 2019 bars commercial international trade.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-1(a); 9-11-7(a)(5), (10)",
+          "quote": "Except as provided in IC 14-22-26-2 or as exempted under subsections (d) and (e), a person must have a permit issued by the department under this rule to possess a wild animal if the wild animal is either of the following: (1) Referenced in this rule. (2) Listed in this article as an endangered species or a threatened species.",
+          "note": "The mustelids Indiana names are the mink and three weasels, each by binomial. No otter is referenced, so the rule does not reach this one. CITES Appendix I since 2019 bars commercial international trade.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "ND": {
+          "status": "permit",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(2)(b); 48.1-09-01-03(1)",
+          "quote": "Category 2 species of nontraditional livestock includes the following species and their hybrids, all nondomestic ungulates, including all deer (cervidae) and pronghorn, zebras, nondomestic cats not listed in category 3, waterfowl, shorebirds, upland game birds not listed in category 1, crows, wolverines, otters, bats, martens, fishers, kit or swift foxes, badgers, coyotes, mink, red and gray foxes",
+          "note": "\"Otters\" is in the category 2 list without a species limit, so the license is required before acquiring one, with the premises inspected first. CITES Appendix I since 2019 bars commercial international trade.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "WY": {
+          "status": "permit",
+          "sourceId": "wy-ch10",
+          "cite": "Ch. 10 § 13(d)",
+          "quote": "A permit may be authorized upon approval for other warm-blooded wildlife unless otherwise specified in this regulation.",
+          "note": "Not on the domestic, domesticated or prohibited lists, and not listed under 50 CFR 17.11, so the discretionary § 13(d) permit applies. CITES Appendix I since 2019 bars commercial international trade.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-4",
+          "cite": "Rule 8.4(A); Rule 8.3(A)(5)(b)(iii)",
+          "quote": "Game and furbearing animals are defined as the following: white-tailed deer, black bear, gray squirrel, fox squirrel, cottontail rabbit, swamp rabbit, raccoon, opossum, bobcat, river otter, muskrat, mink, and weasel. B. Possession of live game and furbearing animals is prohibited with the following exceptions",
+          "note": "Rule 8.4 names the river otter, a different species, and the only mustelid on the inherently dangerous list is the wolverine. This otter is reached by neither. CITES Appendix I since 2019 bars commercial international trade.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-v-115",
+          "cite": "LAC 76:V.115.C.1; La. R.S. 56:8(151)(a)(iv)",
+          "quote": "C.1.Except as provided herein, it shall be unlawful to import into, possess, purchase or sell within the state of Louisiana, by any means whatsoever including but not limited to transactions conducted via the internet, any of the following species or its subspecies of live wild quadrupeds, big exotic cats, or non-human primates, domesticated or otherwise (hereinafter \"listed animals\"): a.black bear (Ursus americanus);",
+          "note": "Not on the § 115 list. R.S. 56:8 names \"otter\" among nongame quadrupeds, but those are Louisiana's furbearers, and no captivity rule read applies to nongame quadrupeds generally. CITES Appendix I since 2019 bars commercial international trade.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "OK": {
+          "status": "permit",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(a)",
+          "quote": "The following wildlife species are exempt from import and export permits, commercial wildlife breeders licenses, noncommercial wildlife breeders licenses and commercial hunting area license requirements",
+          "note": "No otter is on the exemption list, so the import permit and the noncommercial wildlife breeder's license apply. CITES Appendix I since 2019 bars commercial international trade.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NE": {
+          "status": "banned",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 8 §§ 001.01B, 001.08A",
+          "quote": "001.08A Importation: the following wildlife may be imported:",
+          "note": "The only otter Nebraska names is its native river otter, on the Captive Wildlife Permit list. This Asian otter is not on the closed import list, so it cannot lawfully be brought in except to an accredited or public zoo under § 001.08A1. CITES Appendix I since 2019 bars commercial international trade.",
+          "verifiedOn": "2026-10-01"
+        }
+      },
+      "article": "/blog/asian-small-clawed-otter-legal-guide/"
     }
   }
 }
