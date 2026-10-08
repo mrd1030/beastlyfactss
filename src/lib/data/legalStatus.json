@@ -1919,6 +1919,11 @@
       "title": "40 Miss. Admin. Code Part 2, Rule 8.2, Regulations for Enclosures Preventing the Free Ingress and Egress of White-tailed Deer",
       "url": "https://www.mdwfp.com/sites/default/files/2024-04/40-miss-admin-code-part-2-rule-82-regulations-for-white-tailed-deer-enclosures-rev-04-2021-final.pdf",
       "note": "No person may possess a live white-tailed deer without an MDWFP permit, sell one, or import one. Captive breeding is permitted only in breeding pens of up to five acres inside a registered high-fenced enclosure of at least 300 contiguous acres, and deer may not be moved from the wild into an enclosure."
+    },
+    "tn-70-4-208": {
+      "title": "Tenn. Code Ann. § 70-4-208, Skunks, importation, possession, sale prohibited",
+      "url": "https://codes.findlaw.com/tn/title-70-wildlife-resources/tn-code-sect-70-4-208/",
+      "note": "A one-section statute in the hunting and trapping part, outside the five-class exotic animal scheme. (a) makes it unlawful to import, possess, sell, barter, exchange or otherwise transfer any live skunk, with bona fide zoological parks and research institutions the only exemption; (b) lets a permitted wildlife rehabilitator receive skunks from the wild for rehabilitation and release only; (c) makes a violation a Class C misdemeanor. Tennessee has no free official code and FindLaw (current as of 2 January 2024) was the one reproduction this container could read, so cite the section number."
     }
   },
   "animals": {
@@ -26153,12 +26158,11 @@
           "verifiedOn": "2026-10-08"
         },
         "TN": {
-          "status": "permit",
-          "sourceId": "tn-1660-01-18",
-          "cite": "Tenn. Code Ann. §§ 70-4-403(2), 70-4-401(b), 70-4-404(d)(1)(B); Tenn. Comp. R. & Regs. 1660-01-18-.03(2), (3)(b)",
-          "quote": "(2) Native species of wildlife are considered to be Class II unless specifically designated otherwise by T.C.A. § 70-4-403 or rules and regulations authorized therein. (3) ... (b) 1. The following species or groups of wildlife are deleted from the existing listing designated by legislation as Class III: (i) All native, nonpoisonous reptiles and amphibians; and (ii) All native, furbearing mammals. 2. All species or groups of wildlife deleted from Class III in part 1. are considered to be Class II wildlife.",
-          "note": "The striped skunk is a native furbearing mammal, and the commission's rule moves native furbearers out of Class III and into Class II. TWRA says no one may possess a Class II species without the permit, which costs $10 an animal for personal possession, and § 70-4-401(b) requires documentary evidence of the supplier's name and address and the date acquired. The statute's Class III entry for furbearers \"raised solely for the sale of fur\" covers fur farming, not a pet. ",
-          "permitFor": "personal",
+          "status": "banned",
+          "sourceId": "tn-70-4-208",
+          "cite": "Tenn. Code Ann. § 70-4-208(a), (b)",
+          "quote": "It is unlawful for any person to import, possess, or cause to be imported into this state any type of live skunk, or to sell, barter, exchange or otherwise transfer any live skunk, except that the prohibitions of this section shall not apply to bona fide zoological parks and research institutions.",
+          "note": "A specific statute bars the animal, and it controls over the five-class scheme that would otherwise file a native furbearer in Class II on a $10 permit. \"Any type of live skunk\" reaches a descented, captive-bred one. The only routes are a bona fide zoological park or research institution, and a wildlife rehabilitation permit holder receiving skunks from the wild for rehabilitation and release only. A violation is a Class C misdemeanor.",
           "verifiedOn": "2026-10-08"
         },
         "NC": {

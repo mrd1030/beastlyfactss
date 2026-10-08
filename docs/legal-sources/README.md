@@ -164,6 +164,7 @@ moves verification dates forward; a research sitting never does.
 | `IN-in-312-9-10-4-game-breeder.txt` | 312 IAC 9-10-4, the game breeder license: gray squirrel and opossum among its species, no deer |
 | `MS-ms-40-2-8-2-deer-enclosures.txt` | Rule 8.2: a live white-tailed deer only by MDWFP permit, in a registered high-fenced enclosure or a breeding pen inside 300 acres, no sale and no import |
 | `OK-ok-2-6-504-farmed-cervidae.txt` | 2 O.S. § 6-504: a farmed cervidae facility license from the Department of Agriculture to breed, possess or raise cervidae for commercial or noncommercial purposes |
+| `TN-tn-70-4-208.txt` | Tenn. Code § 70-4-208, the skunk statute outside the five-class scheme: no import, possession, sale or transfer of any live skunk, zoos and research institutions excepted, rehabilitators for release only |
 
 ## Reading the awkward ones
 
