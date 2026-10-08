@@ -4337,12 +4337,13 @@
           "localOverride": true
         },
         "TN": {
-          "status": "unclear",
-          "sourceId": "tn-70-4-403",
-          "cite": "§ 70-4-403(3)(F), (5)",
-          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... Avian species not otherwise listed, excluding North American game birds, ostriches and cassowary",
-          "note": "The statute does not reach the monk parakeet. It is named nowhere in the five classes, and the avian catch-all at (3)(F) puts it in the no-permit class. What keeps this unresolved is Class V, which is not a list at all but whatever the commission designates by rule as injurious to the environment, and an agricultural pest bird is exactly what a Class V designation is for. Those designations live in Tenn. Comp. R. & Regs. 1660-01-18, Rules and Regulations of Live Wildlife, which could not be read here: publications.tnsosfiles.com, sos.tn.gov and tnsos.org all sit behind a filter that returns 403 to this container, and Tennessee's official code is behind LexisNexis. Tennessee appears on most circulated lists of states banning the monk parakeet, and if that is right the rule chapter is where it comes from. Recorded unclear rather than legal because the statute alone cannot settle a question the commission was given the power to answer elsewhere.",
-          "verifiedOn": "2026-10-01"
+          "status": "banned",
+          "sourceId": "tn-1660-01-18",
+          "cite": "Tenn. Comp. R. & Regs. 1660-01-18-.03(4)(b); Tenn. Code Ann. § 70-4-403(5)",
+          "quote": "(4) The following species or groups of wildlife are added to the group of animals designated by legislation as Class V: (a) Nandaya or Black-Hooded parakeets (Nandayus nenday); (b) Quaker or Monk parakeets (Myiopsitta monachus);",
+          "note": "The statute alone would put the monk parakeet in the no-permit Class III under its avian catch-all, but the commission's rule chapter adds it to Class V by name, alongside the nanday parakeet. Class V is the statute's class for species designated injurious to the environment, and § 70-4-403(5) says species so designated \"may only be held in zoos under such conditions as to prevent the release or escape of such wildlife into the environment.\" There is no permit a private keeper can hold.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
         },
         "TX": {
           "status": "legal",
