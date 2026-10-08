@@ -9231,11 +9231,13 @@
           "localOverride": true
         },
         "WA": {
-          "status": "legal",
-          "sourceId": "wa-rcw-16-30",
-          "note": "The Canidae entry covers wolves only.",
-          "verifiedOn": "2026-10-01",
-          "localOverride": true
+          "status": "banned",
+          "sourceId": "wa-wac-246-100-197",
+          "cite": "WAC 246-100-197(5)(a), (b)",
+          "quote": "All persons are prohibited from acquiring, selling, bartering, exchanging, giving, purchasing, distributing, or trapping to retain any bat, skunk, fox, raccoon, or coyote, except a zoological park, animal exhibitor, research facility, or wildlife rehabilitator.",
+          "note": "The Department of Health's rabies rule names the fox without a species, so a fennec is caught the same as a native one: no one but a zoo, exhibitor, research facility or rehabilitator may acquire one, and (5)(b) lets only a zoo, exhibitor or research facility import one, under an entry permit. RCW 16.30, the dangerous wild animal statute, does not reach it, since its canid entry is wolves only.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
         },
         "OH": {
           "status": "legal",
@@ -9245,12 +9247,12 @@
           "localOverride": true
         },
         "TX": {
-          "status": "legal",
+          "status": "unclear",
           "sourceId": "tx-71-001",
-          "cite": "Parks & Wild. Code § 71.001(1); 31 TAC § 65.375(a)(2); Health & Safety Code § 822.101(4)",
-          "quote": "\"Fur-bearing animal\" means wild beaver, otter, mink, ring-tailed cat, badger, skunk, raccoon, muskrat, opossum, fox, or nutria.",
-          "note": "The word \"fox\" appears once in Texas wildlife law, in the fur-bearing animal definition, and it belongs to a trapping and pelt chapter rather than a possession one. The proclamation under it says at 31 TAC § 65.375(a)(2) that there are no bag or possession limits for fur-bearing animals, and nothing in Chapter 71 bars keeping one. The series is headed by \"wild\", which a captive-bred fennec is not, and Vulpes zerda is not a Texas fur-bearer population in any case. The dangerous wild animal list names the coyote and the jackal and no other canid. The rabies rules are the other place to look and they do not help either: Health & Safety Code Chapter 826 imposes vaccination duties on dogs and cats only, and 25 TAC Chapter 169 Subchapter A carries no high-risk-species possession ban of the kind several states use to reach foxes.",
-          "verifiedOn": "2026-10-01"
+          "cite": "Parks & Wild. Code §§ 71.001(1), 71.005(c); Health & Safety Code § 822.101(4)",
+          "quote": "No person may capture or possess a live fur-bearing animal for any purpose, except as otherwise authorized by this code, unless he has acquired and possesses a fur-bearing animal propagation license.",
+          "note": "Chapter 71 is a possession rule as well as a trapping one: the fur-bearing animal definition names \"fox\" with no species, and § 71.005(c) requires a fur-bearing animal propagation license to possess a live one \"for any purpose\". Whether that reaches a fennec is the question. The definition is headed \"wild\", which a captive-bred fennec is not, and Vulpes zerda has no Texas population for the chapter to manage; read as describing the kind of animal rather than its history, the text reaches it anyway. The dangerous wild animal list names the coyote and the jackal and no other canid, and the rabies rules carry no fox possession ban.",
+          "verifiedOn": "2026-10-08"
         },
         "IL": {
           "status": "legal",
@@ -9300,20 +9302,21 @@
           "verifiedOn": "2026-10-01"
         },
         "TN": {
-          "status": "unclear",
-          "sourceId": "tn-70-4-403",
-          "cite": "§ 70-4-403(1)(A)(ii)(a), (3); § 70-4-404(c)(1)",
-          "quote": "Class I--This class includes all species inherently dangerous to humans. ... The following is a listing of animals considered inherently dangerous: (A) Mammals: (i) Primates--Gorillas, orangutans, chimpanzees, gibbons, siamangs, mandrills, drills, baboons, Gelada baboons; (ii) Carnivores: (a) Wolves--All species; (b) Bears--All species; and (c) Lions, tigers, leopards, jaguars, cheetahs, cougars--All species;",
-          "note": "The only canids in Class I are the wolves, \"all species\", and the fennec fox is a Vulpes rather than a Canis. Tennessee names no fox anywhere in the classification, which is a real contrast with Maryland, where the bare word \"fox\" is the whole of the ban. On the statute alone the fennec fox is Class III under the catch-all and needs no permit. What could not be checked is the commission's own rules. Section 70-4-403(1) gives the commission, with the commissioner of agriculture, express power to add or delete species from the Class I list by regulation, and Tenn. Comp. R. & Regs. 1660-01-18 is where such an addition would sit. That chapter could not be read here: publications.tnsosfiles.com returns 403 to this container on every path, and Tennessee's official code is behind LexisNexis. Recorded unclear on that gap rather than on the statute, which is the improvement over the previous note here; the statute itself is readable and does not reach this animal. What rides on it is more than paperwork. Section 70-4-404(c)(1) closed personal possession of Class I wildlife in 1991: the permit it describes is for people who already held the animal on 25 June 1991, \"no new animals shall be brought into possession under authority of a personal possession permit\", and the subsection ends by saying it \"shall not be construed to authorize new personal possession of Class I wildlife\". TWRA restates it in one line on its permits page: \"Personal possession of any Class 1 species is not allowed.\" So an addition by rule would not mean a $150 permit for a private keeper. It would mean no.",
-          "verifiedOn": "2026-10-01"
+          "status": "legal",
+          "sourceId": "tn-1660-01-18",
+          "cite": "Tenn. Code Ann. § 70-4-403(3); Tenn. Comp. R. & Regs. 1660-01-18-.03",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q).",
+          "note": "The only canids in Class I are the wolves, \"all species\", and the fennec fox is a Vulpes rather than a Canis, so it falls into the Class III catch-all, which needs no permit. The commission's rule chapter, where § 70-4-403(1) lets it add species to Class I, adds no mammal except hybrids of two Class I species, and the furbearers it moves to Class II are native ones only. Rule .01(4) asks every keeper of live wildlife to be able to prove legal ownership, a purchase receipt from a licensed propagator among the accepted forms.",
+          "verifiedOn": "2026-10-08"
         },
         "ID": {
-          "status": "permit",
-          "sourceId": "id-020427",
-          "cite": "§ 402.01",
-          "quote": "All Non-native Canidae Species.",
-          "verifiedOn": "2026-10-01",
-          "note": "All non-native canids are on the deleterious exotic animal list, and possessing one requires a permit from the Administrator."
+          "status": "banned",
+          "sourceId": "id-25-236",
+          "cite": "Idaho Code § 25-236(1), (3)",
+          "quote": "No person shall possess, offer for sale, trade, barter, exchange or importation into the state of Idaho any fox, skunk or raccoon, except as provided in subsection (2) or (3) of this section.",
+          "note": "\"Any fox\" carries no species or nativity limit, so it reaches the fennec, and the Department of Agriculture's deleterious exotic animal list separately takes all non-native canids. The statute comes first: its only exceptions are fur farms holding domestic fur-bearing animals and public parks, zoos, museums and educational institutions with an Agriculture permit, so there is no pet route for a deleterious exotic animal permit to open.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
         },
         "IA": {
           "status": "banned",
@@ -9353,12 +9356,12 @@
           "verifiedOn": "2026-10-01"
         },
         "MO": {
-          "status": "legal",
-          "sourceId": "mo-578-023",
-          "cite": "§ 578.023(1)",
-          "quote": "hyena, wolf, bear, nonhuman primate, coyote, any deadly, dangerous, or poisonous reptile",
-          "note": "Wolves and coyotes are named but foxes are not. Missouri's own red and gray foxes are separately barred from importation under 3 CSR 10-9, which does not reach the fennec.",
-          "verifiedOn": "2026-10-01"
+          "status": "unclear",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.110(2); 3 CSR 10-9.223(2); RSMo § 578.023",
+          "quote": "(2) Live white-tailed deer, white-tailed deer-hybrids, mule deer, mule deer-hybrids, raccoons, foxes, and coyotes may not be imported into this state.",
+          "note": "Two Missouri rules point different ways. 9.110(2) clears mammals not native to Missouri to be bought, sold and possessed without permit, which reaches the fennec. 9.223(2) bars importing live \"foxes\" with no species or nativity limit. Read together, a fennec bred in Missouri may be kept, and whether one may be brought in from another state turns on whether the import bar means Missouri's own foxes or any fox. The dangerous wild animal registration at § 578.023 names the wolf and the coyote and no fox.",
+          "verifiedOn": "2026-10-08"
         },
         "KS": {
           "status": "legal",
@@ -9445,20 +9448,20 @@
           "verifiedOn": "2026-10-01"
         },
         "MS": {
-          "status": "legal",
-          "sourceId": "ms-40-2-8-3",
-          "cite": "§ A.5.b.i",
-          "quote": "Family Canidae: Genus Canis (wolves, jackals, and dingos; all species, including crosses between wolves and domestic animals); excluding coyote (Canis latrans); Chrysocyon brachyurus (maned wolf); Cuon alpinus (red dog or dhole); Lycaon pictus (African hunting dog);",
-          "note": "Four named canids plus the genus Canis. Vulpes zerda is none of them.",
-          "verifiedOn": "2026-10-01"
+          "status": "unclear",
+          "sourceId": "ms-40-2-7-1",
+          "cite": "Rule 7.1(A), (F); Miss. Code § 49-7-1; Rule 8.3",
+          "quote": "F. Live nuisance animals may not be possessed except: 1. Coyotes in permitted coyote enclosures; 2. Fox in permitted fox enclosures",
+          "note": "The statute classes \"fox\" as a nuisance animal with no species qualifier, and Rule 7.1(F) bars possessing a live one outside a permitted fox enclosure, which is a pen for running hounds. Read literally that reaches the fennec; read as a list of Mississippi's own pest species, it does not. Rule 8.3, the inherently dangerous list, names the genus Canis and three other wild dogs, and Vulpes zerda is none of them, so the nuisance rule is the only question.",
+          "verifiedOn": "2026-10-08"
         },
         "LA": {
-          "status": "legal",
-          "sourceId": "la-76-v-115",
-          "cite": "§ 115.C.1",
-          "quote": "d. red wolf (Canis rufus); e. gray wolf (Canis lupus); f. wolf dog hybrid (Canis lupus or Canis rufus x Canis familiarus);",
-          "note": "The only canids listed are the two wolves and their dog hybrids.",
-          "verifiedOn": "2026-10-01"
+          "status": "banned",
+          "sourceId": "la-76-v-113",
+          "cite": "LAC 76:V.113.A, D.1, D.6",
+          "quote": "6.No person shall transport, possess, purchase or sell any live foxes or coyotes taken outside the state of Louisiana. Live foxes and coyotes obtained from outside the state of Louisiana prior to the enacted date of these regulations and in possession of properly licensed persons shall be exempt.",
+          "note": "The fox rule's stated purpose is to \"prohibit the importation and exportation of any species of foxes\", and D.6 bars possessing any live fox taken outside Louisiana. A fennec always comes from outside the state, so there is no route in. The dangerous quadruped rule at § 115 names bears, wolves, primates and big cats and no fox, and the wolf dog hybrid entry printed in its list expired on 1 January 1997.",
+          "verifiedOn": "2026-10-08"
         },
         "OK": {
           "status": "legal",
@@ -9503,20 +9506,21 @@
           "verifiedOn": "2026-10-01"
         },
         "ME": {
-          "sourceId": "me-unrestricted",
-          "cite": "Unrestricted Species list",
-          "status": "permit",
-          "quote": "Carnivora (Carnivores)   Mustela putorius furo   Domestic Ferret",
-          "note": "Maine's entire unrestricted carnivore list is one animal, the domestic ferret. Every other carnivore, the fennec included, needs a permit.",
-          "verifiedOn": "2026-08-05"
+          "status": "banned",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.18(2)(F); § 7.06(3)(A)(2)(a)",
+          "quote": "Family Canidae All Species in Family Canidae (Canids)",
+          "note": "Every canid is Category 1, and a Category 1 permit goes only to an exhibitor, a wildlife rehabilitator, a USDA-registered laboratory or an accredited research facility. The fennec is not on the Unrestricted List, whose only carnivore is the domestic ferret, so nothing lifts it out of Category 1 and there is no permit a private keeper can hold.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
         },
         "AR": {
+          "status": "banned",
           "sourceId": "ar-unrestricted",
-          "cite": "Code Addendum R1.01, Unrestricted Captive Wildlife Species List",
-          "status": "permit",
-          "quote": "The following species are exempt from Codes 09.02 (Possession Of Non-Native Wildlife In Captivity Restricted), 09.07 (Wildlife Breeder/Dealer Permit Required), and 09.10 (Wildlife Importation Permit Required)",
-          "note": "The unrestricted mammal list has one carnivore, the European domestic ferret, plus wolf and dog hybrids. The fennec is on neither.",
-          "verifiedOn": "2026-10-01"
+          "cite": "Addendum R1.03(B)",
+          "quote": "Species not listed in Addenda R1.01, R1.02, or R1.03 are prohibited until evaluated.",
+          "note": "The fennec is on none of the three lists. R1.01 clears one carnivore, the European domestic ferret, plus wolf and dog hybrids; R1.02, the permit list, names the arctic fox, the serval, the kinkajou and the wolf and no fennec; and R1.03 names only red and gray foxes from listed states. The closing clause makes an unlisted species prohibited until the Commission evaluates it, so there is no permit to apply for until it does.",
+          "verifiedOn": "2026-10-08"
         },
         "WI": {
           "sourceId": "wi-169",
