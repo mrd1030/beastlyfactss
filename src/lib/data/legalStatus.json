@@ -1749,6 +1749,26 @@
       "title": "Delaware DNREC, The perils of wild pets: DNREC warns against keeping non-domesticated animals",
       "url": "https://dnrec.delaware.gov/outdoor-delaware/the-perils-of-wild-pets-dnrec-warns-against-keeping-non-domesticated-animals/",
       "note": "The enforcing agency's own reading. It says state regulations \"explicitly forbid Delawareans from owning\" native wildlife, with an exception for permitted rehabilitators, and that when asked about skunks from out-of-state breeders \"the agency informs the inquirer this is not allowed\". The site refuses curl from this container and was read through WebFetch."
+    },
+    "nj-captive-game-info": {
+      "title": "NJ Division of Fish and Wildlife, Captive game synopsis and Policy on the Importation of Captive Rabies Vector Species",
+      "url": "https://www.nj.gov/dep/fgw/pdf/captv_info.pdf",
+      "note": "The Division's own reading of 7:25-10. Two things in it decide cells. It \"does not currently issue new permits for the possession of potentially dangerous species within the hobby permit category\", confining nondomestic dogs, bears and nondomestic cats to scientific, propagation, zoological, exhibitor, theatrical and fur farming permits. And it bans importing raccoons, skunks, foxes, woodchucks and bats from any state with a rabies variant other than the raccoon variant, \"even if the RVS originates from a captive breeder\". The rabies policy itself is at https://www.nj.gov/dep/fgw/pdf/captv_rvs_policy.pdf."
+    },
+    "mn-17-351": {
+      "title": "Minn. Stat. §§ 17.351 and 17.352, fur-bearing animals as domestic animals",
+      "url": "https://www.revisor.mn.gov/statutes/cite/17.351",
+      "note": "Minnesota's fur farming statute does something the game laws do not: § 17.351 subd. 3 defines a fur-bearing animal as \"a fox, mink, fitch, chinchilla, karakul, marten, nutria, or fisher that is the second or later generation raised in captivity\", and § 17.352 (https://www.revisor.mn.gov/statutes/cite/17.352) declares such animals domestic animals. So a fox two or more generations from the wild is out of the game laws entirely, while a wild or first-generation red fox stays small game. The raccoon, skunk and bobcat are not on the list."
+    },
+    "ms-40-2-7-1": {
+      "title": "40 Miss. Admin. Code Part 2, Rule 7.1, General Regulation for the Taking of Nuisance Animals",
+      "url": "https://www.mdwfp.com/sites/default/files/2024-04/40-miss-admin-code-part-2-rule-71-general-regulations-for-the-taking-of-nuisance-animals-rev-05-2022-final.pdf",
+      "note": "Recites that Miss. Code § 49-7-1 classes nutria, beaver, fox, skunks, coyotes and wild hogs as nuisance animals, and at (F) bars possessing a live one except coyotes and foxes in permitted hunting enclosures, short-term trapper transport to them, and hogs for slaughter. Cached as MS-ms-captivity-and-nuisance.txt."
+    },
+    "la-76-v-113": {
+      "title": "LAC 76:V.113, Fox/Coyote Hunting Preserve, Purchase and Sale of Live Foxes and Coyotes",
+      "url": "https://www.doa.la.gov/media/ln5kb5vu/76.docx",
+      "note": "States its purpose as prohibiting the importation and exportation of any species of foxes or coyotes. D.1 bars taking, possessing, buying or selling live foxes except under the rule; D.6 bars possessing any live fox or coyote taken outside Louisiana. The licenses it offers are a trapper's license and nongame quadruped exhibitor and breeder licenses, defined as business licenses. Cached as LA-la-fox-and-quadrupeds.txt."
     }
   },
   "animals": {
@@ -25211,6 +25231,488 @@
         }
       },
       "article": "/blog/raccoon-legal-guide/"
+    },
+    "red-fox": {
+      "name": "Red fox",
+      "scientific": "Vulpes vulpes",
+      "jurisdictions": {
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(K)(2)",
+          "quote": "Family Canidae-All species (W)",
+          "note": "Same line that bans the fennec fox. Every canid is restricted for welfare, the red fox is named in the department's own caging table, and no California permit type covers pet keeping. A native red fox taken from the wild is a separate offence under the Fish and Game Code; a captive-bred one from out of state is still a restricted species.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-dnr-legal-pets",
+          "cite": "DNR Guide to Legal Pets; R. 391-4-8-.05(1)(a)3; O.C.G.A. § 27-5-4(b)(1)",
+          "quote": "The following list of species native to Georgia may not be held as a pet regardless of its origin or morphology.",
+          "note": "The red fox is on DNR's native list by name, and as a carnivore it is also inside the .05 license rule, whose licenses go only to dealers and exhibitors under § 27-5-4(b)(1). The fennec fox is banned on the second ground alone; the red fox is banned on both.",
+          "verifiedOn": "2026-10-08"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6-5",
+          "cite": "§ 4-71-6.5, Restricted Animal List Part A",
+          "quote": "Vulpes (all species in genus) fox",
+          "note": "Part A takes the whole fox genus, the same entry that bans the fennec. Research and exhibition only.",
+          "verifiedOn": "2026-10-01"
+        },
+        "PA": {
+          "status": "banned",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)(2); § 137.31(a)",
+          "quote": "In the family Canidae. Species and subspecies of the coyote, the red and gray fox and a full-blooded wolf or crossbreed thereof not licensed by the Department of Agriculture. Lawfully acquired coyotes and red or gray foxes may be imported or possessed, or both, by licensed propagators specifically for propagation for fur farming purposes. Coyotes and red and gray foxes imported under this exception and their progeny may not be sold or transferred for wildlife pet purposes or released into the wild.",
+          "note": "The red fox is named, and the one exception is fur farming by a licensed propagator, whose animals and their progeny \"may not be sold or transferred for wildlife pet purposes\". The only other fox permit, in § 137.31(a)(1), lets a trapper hold five wild foxes for urine collection until the end of the season and then requires them to be euthanized.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)",
+          "quote": "a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following",
+          "note": "None of the seven categories covers a wild canid; the fennec fox and the red fox get the same answer. There is no permit behind the list.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "§ 161.01(b)(1)",
+          "quote": "All dogs other than domesticated dogs (Canis familiaris), including, but not limited to, wolf, fox, coyote, hyaena, dingo, jackal, dhole, fennec, raccoon dog, zorro, bush dog, aardwolf, cape hunting dog and any hybrid or cross-breed offspring of a wild dog and domesticated dog.",
+          "note": "\"Fox\" is named in the wild dog clause, which covers every canid but the domestic dog. New York State's own rules bar the red fox as a native furbearer too, and § 161.01(b)(ii) imports that. § 161.01(d) lets the Department consent to an owner removing a seized animal to a jurisdiction where it is not prohibited, which is the only relief in the article.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NJ": {
+          "status": "banned",
+          "sourceId": "nj-captive-game-info",
+          "cite": "N.J.A.C. 7:25-10.6(a)16, 10.10, 10.11(a)6",
+          "quote": "The Division does not currently issue new permits for the possession of potentially dangerous species within the hobby permit category.",
+          "note": "The red fox is a game animal listed at 10.6(a)16, which would put it on the hobby permit, but 10.10 makes every nondomestic dog a potentially dangerous species and 10.11(a)6 says one \"may not be kept as a household pet\". The Division confirms it issues no new hobby permits for these animals, leaving only scientific, propagation, zoo, exhibitor, theatrical and fur farming permits.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "ME": {
+          "status": "banned",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.18(2)(F); § 7.06(3)(A)(2)(a)",
+          "quote": "Family Canidae All Species in Family Canidae (Canids)",
+          "note": "Every canid is Category 1, and a Category 1 permit goes only to an exhibitor, a wildlife rehabilitator, a USDA-registered laboratory or an accredited research facility. The red fox is also a Maine native furbearer with no wild-take route for mammals.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "WI": {
+          "status": "permit",
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(1)(b), 169.15(1)(b); NR 16.15(1)",
+          "quote": "The department shall issue a Class B captive wild animal farm license to operate a captive wild animal farm that grosses less than $10,000 in annual sales to any person who files a proper application for the license and who pays the applicable fee.",
+          "note": "The red fox is a native fur-bearing wild animal under § 169.01(14), and the seventeen native animals § 169.04(4)(a) frees from licensing stop at weasels and opossums, so § 169.04(1)(b) requires a license. The one that fits a keeper is the Class B captive wild animal farm license, which the department must issue to any applicant and which NR 16.15(1) applies to hobbyists as well as businesses; it names the species held, and pens must meet NR 16.30 to 16.38. Canids are among the animals whose escape a licensee must report within 24 hours under § 169.15(4)(b).",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "FL": {
+          "status": "permit",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.002(1)(b)24, (1)(c); 68A-6.003(8), (13)",
+          "quote": "Fox, skunks, bats, raccoons, or whitetail deer taken from the wild shall not be possessed as personal use wildlife and shall be possessed only in accordance with permits issued under Rules 68A-9.002, 68A-9.006, F.A.C., or Section 379.3761, F.S.",
+          "note": "Same reading as the fennec fox. Class II item 24 says \"Wolves, coyotes, jackals (family Canidae)\", and the parenthetical on its face would make every fox a $140 Class II animal, but FWC's personal pet page lists \"fox\" among common Class III species, the free permit. 68A-6.003(13) adds that a fox taken from the wild may not be a personal pet, so a red fox has to be captive bred.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL §§ 11-0103(6)(e)(3), 11-0512(1)(a); 6 NYCRR § 180.1(b)(1)",
+          "quote": "no person shall import, transport, possess, purchase, barter, transfer, sell, offer for sale, exchange, propagate or release or cause to be released within New York State any of the following live native or non-native dangerous animals including those which are captive bred in any of the following orders, families and individual species or subspecies including all subspecies and hybrids thereof: ... (1) Canines in the Family Canidae (with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda));",
+          "note": "The same sentence that clears the captive-bred fennec fox bans every other fox: Canidae is on the closed wild animal list and on 180.1, and § 11-0512 bars keeping a wild animal as a pet. The small game definition's carve-out for \"captive bred red fox\" takes a farmed red fox out of the game rules, not out of the pet ban. Licenses under 180.1(c) issue only for scientific, educational, exhibition, zoological or propagation purposes, and the 180.1(d)(2) exemption for this species is for licensed rehabilitators.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)(B), (b)(1)",
+          "quote": "\"Category One Wild Animal\" means, notwithstanding changes in taxonomic nomenclature, any wild animal, gamete or hybrid of any of the following: (A) A member within the family Felidae (including, but not limited to, lion, leopard, cheetah, jaguar, ocelot, jaguarundi cat, puma, lynx and bobcat) except Bengal cat pursuant to section 26-40a of the Connecticut General Statutes; (B) A member within the family Canidae (including, but not limited to, wolf and coyote); (C) A member within the family Ursidae (including, but not limited to, black bear, grizzly bear and brown bear); or (D) A member within the family Hominidae ...",
+          "note": "Every canid is Category One, so the red fox sits with the wolf and the coyote whatever its origin. Subsection (b)(1) allows a Category One animal only to a municipal park, zoo, public nonprofit aquarium, nature center, museum, or a USDA-licensed exhibitor, laboratory or research facility, so there is no private route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(1), (12)(a)",
+          "quote": "The purpose of 321 CMR 9.01 is to list those species which are exempt from the licensing provisions of M.G.L. c. 131, § 23, and which may be imported, possessed, maintained, propagated, bought, sold, exchanged or offered for sale without a license or permit from the Division. Species not listed, or which are expressly listed as \"require(s) a permit\", are not exempt from the provisions of M.G.L. c. 131, § 23.",
+          "note": "No canid but the domestic dog appears on either Massachusetts list, so the red fox needs a § 23 license, the same as the fennec fox. It is also a Massachusetts native, and the only animals MassWildlife lets a person take from the wild are certain reptiles and amphibians. The license under § 23 exists on paper, but MassWildlife says permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\"",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
+          "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
+          "note": "Not on the domestic list, the unregulated list or the prohibited list, so the red fox is regulated wildlife, and CPW's possession page names foxes among animals not allowed as pets even where another state permits them. It is a Colorado native as well, and C.R.S. 33-6-109 bars keeping native wildlife taken from the wild. Chapter W-11 says noncommercial (pet) possession of regulated mammals has been prohibited since 1983, and its wildlife park licenses are commercial or closed to new entrants.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AZ": {
+          "status": "restricted",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(F)",
+          "quote": "All species of the order Carnivora",
+          "note": "All of Carnivora is restricted, so the red fox needs a special license, the same answer as the fennec fox. It is also an Arizona native, and taking one alive from the wild is a separate regime under R12-4-404, R12-4-405 and Commission Order 43 that needs a hunting license.",
+          "verifiedOn": "2026-10-01"
+        },
+        "OR": {
+          "status": "banned",
+          "sourceId": "or-635-056-0050",
+          "cite": "OAR 635-056-0050(1)(a)(B)(i); OAR 635-044-0440(12)",
+          "quote": "(i) Wild canids | Canidae | All native species. However, fox (Vulpes vulpes and Urocyon cinereoargenteus) are exempt from this prohibition if when part of a commercial fur farming operation or for wildlife rehabilitation purposes by a licensed wildlife rehabilitator;",
+          "note": "The red fox is a native canid on Oregon's prohibited list, and its only exemptions are a commercial fur farm licensed by the Department of Agriculture and a licensed rehabilitator. Neither is a pet route.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "WA": {
+          "status": "banned",
+          "sourceId": "wa-wac-246-100-197",
+          "cite": "WAC 246-100-197(5)(a), (b)",
+          "quote": "All persons are prohibited from acquiring, selling, bartering, exchanging, giving, purchasing, distributing, or trapping to retain any bat, skunk, fox, raccoon, or coyote, except a zoological park, animal exhibitor, research facility, or wildlife rehabilitator.",
+          "note": "The rabies rule names the fox without a species, and bars anyone but zoos, exhibitors, research facilities and rehabilitators from acquiring or importing one. It reaches the native red fox whatever Title 77 would say about lawful acquisition.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "OH": {
+          "status": "permit",
+          "sourceId": "oh-1531-01",
+          "cite": "R.C. 1531.01(W); § 1533.71(A)(2)",
+          "quote": "\"Noncommercial propagating license\" permitting the licensee to propagate game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, or fur-bearing animals and to hold the animals in captivity. Game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, and fur-bearing animals propagated or held in captivity by authority of a noncommercial propagating license are for the licensee's own use and shall not be sold. The fee for such a license is twenty-five dollars per annum.",
+          "note": "\"Fox\" is a fur-bearing animal under R.C. 1531.01(W), so holding one needs a § 1533.71 license, and the noncommercial propagating license covers a keeper's own animal for $25 a year. The § 935.01 canid entries are gray wolves and African wild dogs only.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "TX": {
+          "status": "permit",
+          "sourceId": "tx-71-001",
+          "cite": "Parks & Wild. Code §§ 71.001(1), 71.005(c), 71.010",
+          "quote": "No person may capture or possess a live fur-bearing animal for any purpose, except as otherwise authorized by this code, unless he has acquired and possesses a fur-bearing animal propagation license.",
+          "note": "The red fox is a fur-bearing animal under § 71.001(1), and § 71.005(c) requires a fur-bearing animal propagation license to possess a live one \"for any purpose\", so the license is a keeper's license as well as a breeder's; the fee is $50.75. The definition is headed \"wild\", which is the argument a captive-bred animal is outside it, but the word reads as describing the species rather than the animal's history. The dangerous wild animal list names the coyote and the jackal and no fox.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "MI": {
+          "status": "permit",
+          "sourceId": "mi-captive-game",
+          "cite": "NREPA Part 427, MCL 324.42701 et seq.",
+          "quote": "badger, bobcat, red and gray fox, raccoon, coyote, beaver, otter, muskrat, mink, squirrels, striped skunk, woodchuck, opossum, ring-necked pheasant, bobwhite quail, Hungarian partridge, ducks, geese and wild turkeys",
+          "note": "The red fox is on the closed list of game that may be held under the DNR's Permit to Hold Game in Captivity, so a keeper needs that permit. It covers captive-bred animals only, so one taken from the wild cannot be brought under it. This is the line the fennec fox cell draws: the native red fox needs the permit and the non-native fennec does not.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "IL": {
+          "status": "permit",
+          "sourceId": "il-520-5",
+          "cite": "520 ILCS 5/2.2; 5/3.25",
+          "quote": "Before any individual shall hold, possess or engage in the breeding or raising of live fur-bearing mammals, he shall first procure a fur-bearing mammal breeder permit. Fur-bearing mammal breeder permits shall be issued by the Department. The annual fee for each fur-bearing mammal breeder permit shall be $25.",
+          "note": "The red fox is named among Illinois's protected fur-bearing mammals in § 2.2 as Vulpes vulpes, and § 2.2 makes possessing one unlawful except as the Wildlife Code provides. § 3.25 provides it: a fur-bearing mammal breeder permit, $25 a year, required of anyone who holds a live fur-bearer, breeding or not. The protection follows the species, not the animal's origin, so a captive-bred animal from out of state needs it too. The dangerous animal list's canids are the wolf and the coyote. Illinois is a home rule state, so a municipal ordinance can be stricter and often decides it.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-17-351",
+          "cite": "Minn. Stat. §§ 17.351, subd. 3, 17.352; § 97A.015, subd. 45; § 97A.401, subd. 3",
+          "quote": "\"Fur-bearing animal\" means a fox, mink, fitch, chinchilla, karakul, marten, nutria, or fisher that is the second or later generation raised in captivity. ... Fur-bearing animals are domestic animals and products of fur-bearing animals are agricultural products.",
+          "note": "Minnesota splits the red fox by pedigree. A fox at least two generations removed from the wild is a fur-bearing animal under the fur farming statute, and § 17.352 makes it a domestic animal, outside the game laws. A wild-caught or first-generation fox is still small game and a protected wild animal, which needs the § 97A.401 subd. 3 special permit the commissioner may issue for pets. Canids are not regulated animals under § 346.155.",
+          "verifiedOn": "2026-10-08"
+        },
+        "NV": {
+          "status": "banned",
+          "sourceId": "nv-nac-503",
+          "cite": "NAC 503.110(1)(d)",
+          "quote": "1. Except as otherwise provided in this section, the importation, transportation or possession of the following species of live wildlife or hybrids thereof, including viable embryos or gametes, is prohibited: ... (d) Mammals: ... (10) Foxes................................................ All species in the genera Vulpes, Fennecus, Urocyon, Alopex, Lycalopex and Pseudalopex",
+          "note": "The prohibited list takes every fox genus, including Vulpes, so the red fox is barred with the fennec fox. Permits for prohibited species go only to accredited zoos, universities, scientific institutions, commercial aquaculture and nonprofit educational exhibitors. NAC 503.140(4) preserves county and city ordinances, and Clark County, Las Vegas and Henderson are all stricter than the state.",
+          "localOverride": true,
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VA": {
+          "status": "banned",
+          "sourceId": "va-29-1-521",
+          "cite": "Va. Code § 29.1-521(A)(10); 4VAC15-20-50(B)",
+          "quote": "To hunt, trap, take, capture, kill, attempt to take, capture, or kill, possess, deliver for transportation, transport, cause to be transported, by any means whatever, receive for transportation or export, or import, at any time or in any manner, any wild bird or wild animal or the carcass or any part thereof, except as specifically permitted by law and only by the manner or means and within the numbers stated.",
+          "note": "The red fox is a Virginia native, and 4VAC15-20-50(B) shows the board had pet foxes in view: domesticated red foxes with coat colors distinguishable from wild ones that were held on 1 July 2017 and declared by 1 January 2018 may be kept until they die, and may not be bred or sold without a permit. No later acquisition has a route. Because it is a Virginia native, it is not a nonnative (exotic) animal, so the permit table at 4VAC15-30-40 is not its rule, even though the table names its family; § 29.1-521(A)(10) is, and it bars possessing a wild animal except as specifically permitted. The one-per-address allowance at 4VAC15-360-10(A) reaches no mammal, and Chapter 290's permits are for exhibits and scientific collection, the reasoning the flying squirrel cell sets out.",
+          "grandfathered": {
+            "before": "2017-07-01",
+            "detail": "A domesticated red fox with a coat color distinguishable from wild red foxes, held on 1 July 2017 and declared in writing by 1 January 2018, may be kept for its life on that declaration, which is a non-transferable possession-only permit. It may not be bred or sold without a department permit."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "MD": {
+          "status": "banned",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1)(i), (v)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Caught by the word \"fox\" in clause (i) and again by clause (v), every member of the dog family other than the domestic dog. There is no private permit: the exemptions run to zoos, sanctuaries, research and licensed exhibitors. Subsection (e) preserves stricter county and municipal rules.",
+          "localOverride": true,
+          "grandfathered": {
+            "before": "2006-05-31",
+            "detail": "Lawful possession on or before 31 May 2006 may continue, but only if the keeper gave written notification to the local animal control authority by 1 August 2006, with the number and type of animals and a photograph or a description of a tattoo or microchip. That window is long closed."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Mammal | Dog, wild | Canidae | Vulpes (sp. variety) | Fox (any type) | IV | State Protected Species",
+          "note": "The whole genus Vulpes, \"any type\", is Group IV, so the red fox is barred with the fennec fox. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. 19.35.7 NMAC is an importation rule, so it governs bringing the animal into New Mexico rather than keeping one already here.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "No canid of any kind appears on the Unrestricted list, so the red fox is Restricted by default, the fennec fox's position. It is also a Vermont native, and 10 V.S.A. § 4709 bars possessing a live wild animal without authorization. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "UT": {
+          "status": "conditional",
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1, domestic mammals",
+          "quote": "Fox, red Vulpes vulpes privately owned, domestically bred and raised",
+          "note": "Utah lists the red fox in the domestic column, outside the rule entirely, with the condition written beside it: privately owned, domestically bred and raised. A red fox taken from the wild, or bred wild and then held, does not meet it and falls back under Utah's wildlife rules. Utah is the one state on this map that names the farmed red fox a domestic animal in its own species table.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DE": {
+          "status": "banned",
+          "sourceId": "de-7-c7-sc6",
+          "cite": "Del. Code tit. 7 §§ 789, 791",
+          "quote": "No live red fox shall be sold, purchased, possessed or exposed for sale in this State, or shipped by freight or express, or otherwise, or taken from any place within this State to any place outside this State.",
+          "note": "Delaware bars possessing a live red fox by statute, with no permit, and the only exceptions are a State or local government animal exhibition and the foxhound owner's seasonal permit in § 791 to raise wild whelps for chasing, which must be released by 15 August.",
+          "verifiedOn": "2026-10-08"
+        },
+        "TN": {
+          "status": "permit",
+          "sourceId": "tn-1660-01-18",
+          "cite": "Tenn. Code Ann. §§ 70-4-403(2), 70-4-401(b), 70-4-404(d)(1)(B); Tenn. Comp. R. & Regs. 1660-01-18-.03(2), (3)(b)",
+          "quote": "(2) Native species of wildlife are considered to be Class II unless specifically designated otherwise by T.C.A. § 70-4-403 or rules and regulations authorized therein. (3) ... (b) 1. The following species or groups of wildlife are deleted from the existing listing designated by legislation as Class III: (i) All native, nonpoisonous reptiles and amphibians; and (ii) All native, furbearing mammals. 2. All species or groups of wildlife deleted from Class III in part 1. are considered to be Class II wildlife.",
+          "note": "The red fox is a native furbearing mammal, and the commission's rule moves native furbearers out of Class III and into Class II. TWRA says no one may possess a Class II species without the permit, which costs $10 an animal for personal possession, and § 70-4-401(b) requires documentary evidence of the supplier's name and address and the date acquired. The statute's Class III entry for furbearers \"raised solely for the sale of fur\" covers fur farming, not a pet. ",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "NC": {
+          "status": "permit",
+          "sourceId": "nc-113-272-5",
+          "cite": "G.S. §§ 113-129(7a), (7c), (15), (16); 113-272.5(a)",
+          "quote": "the wild animal or wild bird was not acquired unlawfully or merely as a pet",
+          "note": "The red fox is a North Carolina game animal (\"fox\"), so it is a wild animal under § 113-129(15), and (16) carries the definition to animals of wild species raised or kept in captivity. Holding one alive needs a captivity license, and § 113-272.5(a) tells the Executive Director not to issue it unless the animal \"was not acquired unlawfully or merely as a pet\", the reasoning the flying squirrel cell rests on. Selling or buying a fox unlawfully is a separate misdemeanor under § 113-294(j).",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "AR": {
+          "status": "unclear",
+          "sourceId": "ar-code-0900",
+          "cite": "Code 09.14(A)(1)(iii), (B); Addendum R1.03",
+          "quote": "Bobcat, coyote, gray fox, and red fox that were captured by hand prior to July 1, 2022, may be retained until their death.",
+          "note": "The hand-capture route for the red fox closed on 1 July 2022, with existing animals kept until death. What is left is 09.14(B), a captive-born native animal from a Commission-permitted breeder or imported on a permit, and the addenda do not say whether such a permit can be had for a red fox: R1.03 refuses breeding, sale and importation permits only for red and gray foxes that originate from or have lived in a list of twenty states and Canada, and R1.02, the permit list, does not name the red fox. The fox is on a list, so the \"prohibited until evaluated\" clause does not settle it either.",
+          "grandfathered": {
+            "before": "2022-07-01",
+            "detail": "A bobcat, coyote, gray fox or red fox captured by hand in Arkansas before 1 July 2022 may be kept as a pet until it dies, within the six-per-household limit, and may not be sold or taken out of state."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "ID": {
+          "status": "banned",
+          "sourceId": "id-25-236",
+          "cite": "Idaho Code § 25-236(1), (3)",
+          "quote": "No person shall possess, offer for sale, trade, barter, exchange or importation into the state of Idaho any fox, skunk or raccoon, except as provided in subsection (2) or (3) of this section.",
+          "note": "\"Any fox\" is named, and the red fox is also an Idaho native. The only exceptions are fur farms holding domestic fur-bearing animals and public parks, zoos, museums and educational institutions with an Agriculture permit, so there is no pet route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "IA": {
+          "status": "banned",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(1)",
+          "quote": "A member of the family canidae of the order carnivora, including but not limited to wolves, coyotes, and jackals. However, a dangerous wild animal does not include a domestic dog.",
+          "note": "The red fox is a canid, so it is a dangerous wild animal, and that outranks its listing as a fur-bearer. § 717F.3 bars owning, possessing, breeding or importing a dangerous wild animal, and the only route was the 2007 registration.",
+          "grandfathered": {
+            "before": "2007-07-01",
+            "detail": "An owner in possession on 1 July 2007 could keep the animal after implanting an electronic identification device within sixty days and registering with the department by 31 December 2007. No new route exists."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "KY": {
+          "status": "banned",
+          "sourceId": "ky-301-2-081",
+          "cite": "301 KAR 2:081 § 6(1)",
+          "quote": "(1) Except as established in Sections 2(7) and 7 of this administrative regulation, 301 KAR 2:075, and 301 KAR 3:120, a person shall not import, transport into Kentucky, or possess: ... (j) Rabies Vector Species: 1. Coyote (Canis latrans); 2. Gray fox (Urocyon cinereoargenteus); 3. Raccoon (Procyon lotor); 4. Red fox (Vulpes vulpes); 5. Spotted skunk (Spilogale putorius); 6. Striped skunk (Mephitis mephitis); or 7. Any hybrid of rabies vector species.",
+          "note": "The red fox is a rabies vector species on the prohibited natives list; the only live-fox exceptions in § 2 are for moving wild-caught foxes into a permitted foxhound training enclosure. § 1(3) defines native wildlife \"regardless of ... being captive-bred or taken from the wild\", so a captive-bred animal from another state is in the same position. KRS 65.877 lets local governments go further.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "RI": {
+          "status": "banned",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17 native mammal list; §§ 3.7(A), (C)",
+          "quote": "The possession of native mammals is restricted to those institutions identified within § 3.7(C) of this Part, and as exempted per § 3.8 of this Part. Terrestrial mammals considered native either currently or historically to Rhode Island and which possession as pets is prohibited include the following: ... (28) Red Fox (Vulpes vulpes),",
+          "note": "Named on the native mammal list. Rhode Island's native definition applies \"regardless of where the animal originated\", so a captive-bred animal from out of state is no different, and § 3.7(A) separately restricts every carnivore without a licensed rabies vaccine to researchers, USDA exhibitors and AZA facilities.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.05, Table 800.2",
+          "quote": "Fox, Red   Vulpes vulpes   5",
+          "note": "The red fox is in the controlled table with category 5 alone, the fennec fox's row beside it. Permittee category 5 is the exhibitor category, with no category 1 for an individual, so a private keeper cannot be issued a possession permit.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MO": {
+          "status": "permit",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.420(1); 3 CSR 10-4.110(4); 3 CSR 10-9.110(1)(A); 3 CSR 10-9.223(2)",
+          "quote": "Wildlife Hobby Permit. Authorizes the holder to purchase, possess, and propagate not more than fifty (50) ring-necked pheasants and bobwhite quail, in the aggregate, for personal use only and not for sale; and to hold in captivity not more than one (1) game mammal purchased from a Missouri wildlife breeder permit holder, except that Class II wildlife, hoofed mammals, and skunks may not be held under this permit.",
+          "note": "The red fox is a Missouri furbearer, which 3 CSR 10-20.805(33) makes a game mammal, and the take-five rule for natives expressly excludes anything listed in 3 CSR 10-4.110(4), which is game mammals and furbearers. What remains is the Wildlife Hobby Permit: one animal, bought from a Missouri wildlife breeder permit holder, held for personal use, never propagated or sold. 3 CSR 10-9.223(2) bars importing live foxes, so it has to be Missouri bred. Missouri's dangerous wild animal registration names the wolf and the coyote and no fox.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "KS": {
+          "status": "unclear",
+          "sourceId": "ks-115-5-2",
+          "cite": "K.A.R. 115-5-2(b); K.S.A. 32-1002(a)(2), (b)",
+          "quote": "(b) Live furbearers legally taken during a furbearer season may be possessed only through the last day of the season in which taken.",
+          "note": "K.S.A. 32-1002(a)(2) bars possessing any wildlife unless a regulation permits it, and the red fox is a Kansas furbearer. The only regulation that permits a live furbearer is 115-5-2(b), and it lets a Kansas-caught animal be held only to the end of the season it was taken in, so a wild-caught pet is out. What is not settled is a captive-bred animal bought in another state: 32-1002(b) lifts the possession bar for animals \"legally taken outside this state\", and no Kansas text says whether that reaches one bred in captivity. The handoff records this as the one question Kansas has never closed.",
+          "verifiedOn": "2026-10-08"
+        },
+        "SC": {
+          "status": "permit",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-20(A)(1), (B)",
+          "quote": "a furbearer, a member of the family Cervidae, a nondomestic member of the families Suidae (pigs), Tayassuidae (peccaries), Bovidae (bison, mountain goat, mountain sheep), coyote, bear, or turkey (genus Meleagris). Furbearer includes, but is not limited to, red and gray fox, raccoon, opossum, muskrat, mink, skunk, otter, bobcat, weasel, and beaver;",
+          "note": "The red fox is named first in the furbearer list, so importing one needs a Department permit, the fennec fox's position. § 50-16-20(B) lets the Department issue the permit only if the animal was taken lawfully where it came from and its possession is not expected to harm the state's wildlife, and § 50-16-60's pet-trade exemption does not list it.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MT": {
+          "status": "banned",
+          "sourceId": "mt-50-23-102",
+          "cite": "MCA §§ 50-23-101(4), 50-23-102",
+          "quote": "\"Wild animal\" means a skunk, fox, raccoon, or bat.",
+          "note": "\"Fox\" in the rabies law has no species qualifier, and § 50-23-102 bars possessing one outside a fur farm, a no-contact zoo exhibit or research. The red fox is native, so the exotic wildlife white list that bans the fennec does not apply; the rabies law does the work instead.",
+          "grandfathered": {
+            "before": "1981-07-01",
+            "detail": "Held for at least 6 months before 1 January 1982."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "WV": {
+          "status": "permit",
+          "sourceId": "wv-20-2-51",
+          "cite": "W. Va. Code § 20-1-2, § 20-2-4(a), § 20-2-51",
+          "quote": "The director may issue a permit to a person to keep and maintain in captivity as a pet, a wild animal or wild bird that has been acquired from a commercial dealer or during the legal open season. The fee therefor shall be $2.",
+          "note": "The red fox is a West Virginia native and so a \"wild animal\" under § 20-1-2, which § 20-2-4(a) bars keeping except as the chapter provides. The § 20-2-51 pet permit is that route, for a fox bought from a commercial dealer or taken in the open season. This is the opposite of the fennec, which is outside Chapter 20 because it is not native.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "AK": {
+          "status": "banned",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(a), (c); AS 16.05.940(19)",
+          "quote": "The department may not issue a permit for the capture, possession, import, or export of any game animal, including a hybrid of a game animal and a species listed in (b) of this section, for use as a pet",
+          "note": "A native furbearer and game under AS 16.05.940(19). The only canid on the clean list is the domestic dog, and subsection (c) bars a pet permit, so a captive-bred red fox is in the same position as one taken from the wild.",
+          "verifiedOn": "2026-10-01"
+        },
+        "SD": {
+          "status": "permit",
+          "sourceId": "sd-12-68-18",
+          "cite": "ARSD 12:68:18:03(1)(b); 12:68:18:03.03(4)",
+          "quote": "(1) Of the order Carnivora, all nondomestic members of the following families: ...(b) Canidae;",
+          "note": "Same answer as the fennec fox. Canidae is on the possession permit list, so a red fox needs a possession permit at ten dollars an animal, renewed each year, plus the free entry permit if it comes from out of state.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "AL": {
+          "status": "banned",
+          "sourceId": "al-220-2-26",
+          "cite": "§ (1), (3)",
+          "quote": "Any of the following from any area outside the state of Alabama; any member of the family Cervidae (to include but not be limited to deer, elk, moose, caribou), species of coyote, species of fox, species of raccoon, species of skunk, wild rodent, or strain of wild turkey, black bear (Ursus americanus), mountain lion (Felis concolor), bobcat (Felis rufus)",
+          "note": "Same entry that bans the fennec: \"species of fox\" from outside Alabama, and no in-state transport except by a licensed game breeder. A red fox from inside the state is a protected furbearer, which § (3) bars keeping alive.",
+          "verifiedOn": "2026-10-01"
+        },
+        "IN": {
+          "status": "permit",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-7(a)(4); 9-11-2(b)",
+          "quote": "(4) Red fox (Vulpes fulva).",
+          "note": "Named on the Class II list under an older binomial, Vulpes fulva, beside the gray fox. The permit is applied for within five days of taking possession and needs an inspection, proof of lawful acquisition and a vet's statement. The fennec fox, by contrast, is on no list and needs nothing.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "ND": {
+          "status": "permit",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(1)(b), (2)(b); 48.1-09-01-03(1)",
+          "quote": "Category 2 species of nontraditional livestock includes the following species and their hybrids, all nondomestic ungulates, including all deer (cervidae) and pronghorn, zebras, nondomestic cats not listed in category 3, waterfowl, shorebirds, upland game birds not listed in category 1, crows, wolverines, otters, bats, martens, fishers, kit or swift foxes, badgers, coyotes, mink, red and gray foxes",
+          "note": "Red foxes are named in category 2, so a license is needed before acquiring one, with the premises inspected first. Category 1, which needs no license, includes \"ranch foxes\", a term the rule does not define; a red fox from a fur ranch, in a ranch color phase, may sit there instead. A wild-type red fox is plainly category 2.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "WY": {
+          "status": "conditional",
+          "sourceId": "wy-ch10",
+          "cite": "Ch. 10 §§ 12, 14(b); Wyo. Stat. § 23-1-101(a)(viii)(A)",
+          "quote": "The following wildlife may be possessed without a permit if captured in the state, but no importation is allowed. ... (b) Mammals declared as pests by W.S. 11-5-101 through W.S. 11-5-119, or animals defined in W.S. 23-1-101 as predatory animals.",
+          "note": "The red fox is named as a \"predatory animal\" in the statute, unlike the fennec. That means no importation under Chapter 10 § 12, but no permit needed under § 14(b) to keep one captured in Wyoming.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MS": {
+          "status": "banned",
+          "sourceId": "ms-40-2-7-1",
+          "cite": "Rule 7.1(A), (F); Miss. Code § 49-7-1",
+          "quote": "F. Live nuisance animals may not be possessed except: 1. Coyotes in permitted coyote enclosures; 2. Fox in permitted fox enclosures",
+          "note": "Mississippi law classes \"fox\" as a nuisance animal, and Rule 7.1(F) bars possessing a live one except in a permitted fox enclosure, which under Rule 8.1 is a fenced pen for running hounds, or briefly by a trapper delivering it to one. That is not a pet route.",
+          "verifiedOn": "2026-10-08"
+        },
+        "LA": {
+          "status": "banned",
+          "sourceId": "la-76-v-113",
+          "cite": "LAC 76:V.113.C, D.1, D.2, D.6",
+          "quote": "6.No person shall transport, possess, purchase or sell any live foxes or coyotes taken outside the state of Louisiana. Live foxes and coyotes obtained from outside the state of Louisiana prior to the enacted date of these regulations and in possession of properly licensed persons shall be exempt.",
+          "note": "Louisiana's fox rule bars taking, possessing, buying or selling live foxes \"except as provided in these regulations\", and what it provides is a trapper's license and the nongame quadruped breeder and exhibitor licenses, defined as licenses to engage in a business, for stocking hound-running preserves. A red fox from another state is barred outright by D.6.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "OK": {
+          "status": "permit",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(a)(8); 29 O.S. § 7-502(B)(4)",
+          "quote": "(8) Dogs (except coyotes and native foxes).",
+          "note": "The dog exemption carves out \"native foxes\" by name, and the red fox is native, so it is not exempt and needs the import permit and the noncommercial wildlife breeder's license. Captive-bred and kept as a pet, it is outside the § 7-502 possession bar under (B)(4).",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NE": {
+          "status": "permit",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 8 §§ 001.01B, 001.01D",
+          "quote": "001.01B It shall be unlawful for any person or persons to retain any wild birds or wild mammals (as defined in Nebraska revised statute 37-245 and 37-246) in captivity except the following species may be kept under authority of a Captive Wildlife Permit ... Fox-Gray - (Urocyon cinereoargenteus) Red - (Vulpes vulpes)",
+          "note": "Named on the Captive Wildlife Permit list by binomial. Unlike the bobcat and lynx it carries no \"commercial purposes only\" asterisk, so it is a pet permit, for a captive-bred animal only.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        }
+      },
+      "article": "/blog/red-fox-legal-guide/"
     }
   }
 }
