@@ -32536,6 +32536,536 @@
         }
       },
       "article": "/blog/tiger-legal-guide/"
+    },
+    "lion": {
+      "name": "Lion",
+      "scientific": "Panthera leo",
+      "jurisdictions": {
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(K)(1)",
+          "quote": "Family Felidae-All species (W) except: a. Acinonyx jubatus (cheetahs)-(D) b. Domestic cats and hybrids of domestic cats are not restricted.",
+          "note": "The order heading names lions among the carnivores and the whole cat family is restricted, marked (W) for welfare. The only possession permit, Animal Care, requires lawful possession before January 1992, so there is no pet route. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-391-4-8-05",
+          "cite": "R. 391-4-8-.04(1)(a)2(ii); O.C.G.A. § 27-5-4(b)(1), (f)",
+          "quote": "Family Felidae (cats) - All species;",
+          "note": "Every cat is in the inherently dangerous tier, license plus liability insurance, and licenses issue only to dealers and exhibitors. No pet route. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "verifiedOn": "2026-10-01"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6-5",
+          "cite": "§ 4-71-6.5, Restricted Animal List Part A",
+          "quote": "FAMILY Felidae ... Panthera leo lion",
+          "note": "Named on Part A, the research and exhibition list. No pet route. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "verifiedOn": "2026-10-01"
+        },
+        "PA": {
+          "status": "permit",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)(1); 34 Pa.C.S. § 2961; Ch. 147 Subchapter N",
+          "quote": "In the family Felidae . Species and subspecies, except species which are commonly called house cats which may be possessed but not released into the wild.",
+          "note": "Every cat but the house cat is prohibited, and lions are named in the § 2961 definition of exotic wildlife, so the exotic wildlife possession permit is the route: one permit per animal and two years of documented hands-on experience at a recognized facility. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following",
+          "note": "Category (B) admits domestic cats only, and the section has no permit route. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "§ 161.01(b)(2)",
+          "quote": "All cats other than domesticated cats (Felis catus), including, but not limited to, lion, tiger, leopard, ocelot, jaguar, puma, panther, mountain lion, cheetah, wild cat, cougar, bobcat, lynx, serval, caracal, jaguarundi, margay and any hybrid or cross-breed offspring of a wild cat and domesticated or other cat.",
+          "note": "The lion is the first animal named in the wild cat clause. The Code's only exceptions are the Parks Department and Wildlife Conservation Society zoos, labs, veterinary facilities and permitted temporary exhibits, so there is no pet route. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NJ": {
+          "status": "banned",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.8(a); 7:25-4.9(a)3",
+          "quote": "The potentially dangerous species shall not be kept as a pet, for hobby purposes or in situations, which, in the judgment of the Department, could adversely affect the health of the animal or which could constitute a hazard to the public.",
+          "note": "\"Felidae--Nondomestic cats\" is on the potentially dangerous species table, and 4.9(a)3 rules out keeping one as a pet. No pet route. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "ME": {
+          "status": "banned",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.18(2)(F); § 7.06(3)(A)(2)(a)",
+          "quote": "Family Felidae All Species in Family Felidae (Cats) ... An applicant for a permit pertaining to Category 1 Restricted Species must be an exhibitor, wildlife rehabilitator; laboratory registered with the United States Department of Agriculture, or accredited research facility.",
+          "note": "Every wild cat is Category 1. Category 1 permits go only to exhibitors, rehabilitators, USDA-registered laboratories and accredited research facilities, so there is no pet route. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.01(9), 169.11(1)(a)",
+          "quote": "A person is exempt from holding a license or other approval as required under this chapter to possess live nonnative wild animals that are not endangered or threatened species, except for any of the following:",
+          "note": "The only cat Wisconsin designates harmful is the cougar, and the endangered and threatened exception reaches only species indigenous to the United States or Canada. Under state law a lion needs no license. Local ordinances were not checked. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "verifiedOn": "2026-10-01"
+        },
+        "FL": {
+          "status": "banned",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.002(1)(a)12; 68A-6.003(6)",
+          "quote": "Class I wildlife shall not be possessed for personal use, except as follows: (a) Any Class I wildlife possessed for personal use on August 1, 1980, shall be eligible for a permit in accordance with the provisions for Class II wildlife.",
+          "note": "Lions (Panthera leo) are named at Class I item 12, and Class I is closed to personal possession. Class I animals may be held by licensed exhibitors and dealers under § 379.3761, F.S., not as pets. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "grandfathered": {
+            "before": "1980-08-01",
+            "detail": "Class I wildlife possessed for personal use on 1 August 1980 became eligible for a permit on Class II terms; no other Class I animal may be transferred or kept for personal use."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL §§ 11-0103(6)(e)(2), 11-0512(1)(a); 6 NYCRR § 180.1(b)(8)",
+          "quote": "(2) Felidae and all hybrids thereof, with the exception of the species Felis catus (domesticated and feral cats, which shall mean domesticated cats that were formerly owned and that have been abandoned and that are no longer socialized, as well as offspring of such cats) and hybrids of Felis catus",
+          "note": "Every felid but the domestic cat and qualifying registered hybrids is a wild animal that may not be kept as a pet. The exemptions in § 11-0512(2) are zoos, licensed exhibitors and research facilities, vets, shelters, universities, rehabilitators, sanctuaries and travelers, all holding the animal for a purpose other than a pet, and 6 NYCRR 180.1(c) issues dangerous animal licenses only for scientific, educational, exhibition, zoological or propagation purposes. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)(A), (b)(1)",
+          "quote": "(A) A member within the family Felidae (including, but not limited to, lion, leopard, cheetah, jaguar, ocelot, jaguarundi cat, puma, lynx and bobcat) except Bengal cat pursuant to section 26-40a of the Connecticut General Statutes;",
+          "note": "The lion is the first example the Category One felid entry gives. Subsection (b)(1) allows a Category One animal only to municipal parks, zoos, public nonprofit aquaria, nature centers, museums and USDA-registered exhibitors, laboratories and research facilities, so there is no private route. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(1), (12)(a)",
+          "quote": "The purpose of 321 CMR 9.01 is to list those species which are exempt from the licensing provisions of M.G.L. c. 131, § 23, and which may be imported, possessed, maintained, propagated, bought, sold, exchanged or offered for sale without a license or permit from the Division. Species not listed, or which are expressly listed as \"require(s) a permit\", are not exempt from the provisions of M.G.L. c. 131, § 23.",
+          "note": "The thirteen-entry mammal exemption list has no felid, so in this closed-list state it needs a § 23 license; MassWildlife's own summary says \"You cannot have in your possession any mammal not listed as legal or domestic.\" The license under § 23 exists on paper, but MassWildlife says permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife; 2 CCR 406-11 § 1103",
+          "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
+          "note": "No wild cat is on the domestic or unregulated list, so a lion is regulated wildlife with no pet license. Chapter W-11 says noncommercial (pet) possession of regulated mammals has been prohibited since 1983, and its wildlife park licenses are commercial or closed to new entrants. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AZ": {
+          "status": "restricted",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(F)(3)",
+          "quote": "3. All species of the order Carnivora . Common names include: bears, foxes, ocelot, raccoons, ser-vals, skunks, wolves, and weasels.",
+          "note": "The whole order Carnivora is restricted live wildlife. Restricted live wildlife may be held only under a special license listed in R12-4-409(A) or a listed exemption, and none of the R12-4-407 exemptions is a pet route. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "verifiedOn": "2026-10-08"
+        },
+        "OR": {
+          "status": "banned",
+          "sourceId": "or-609-305",
+          "cite": "ORS 609.305(1); ORS 609.341(1); ORS 609.351(1)",
+          "quote": "(1) Any member of the family Felidae not indigenous to Oregon, except the species Felis catus (domestic cat);",
+          "note": "The lion is a felid not indigenous to Oregon, so an exotic animal. ORS 609.341(1) bars keeping an exotic animal without a Department of Agriculture permit issued before 1 January 2010 or under ORS 609.351, whose application window closed 90 days after that date and never reopened, so there is no route for a new animal. Oregon cities and counties may prohibit exotic animals by ordinance as well. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "grandfathered": {
+            "before": "2010-01-01",
+            "detail": "A State Department of Agriculture permit issued before 1 January 2010, or issued within a year of that date on proof the animal was already held. Applications closed 90 days after 1 January 2010, breeding a permitted animal is barred, and possession ends 30 days after a permit lapses."
+          },
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "WA": {
+          "status": "banned",
+          "sourceId": "wa-rcw-16-30",
+          "cite": "RCW 16.30.010(2)(a)(i)(A); RCW 16.30.030",
+          "quote": "(A) Family felidae, only lions, tigers, captive-bred cougars, jaguars, cheetahs, leopards, snow leopards, and clouded leopards;",
+          "note": "Lions are the first cat the felid entry names. RCW 16.30.030(1) bars owning, possessing, keeping or bringing one into the state, and (2) bars breeding; the exemptions in 16.30.020 are for zoos, sanctuaries, exhibitors, research and similar bodies. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "grandfathered": {
+            "before": "2007-07-22",
+            "detail": "A person in legal possession before 22 July 2007 may keep the animal for the rest of its life, with veterinary records or acquisition papers proving the date, but may not breed it."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "OH": {
+          "status": "banned",
+          "sourceId": "oh-935-02",
+          "cite": "R.C. 935.01(C)(3); R.C. 935.02(A), (B)(1)",
+          "quote": "(A) No person shall possess a dangerous wild animal on or after January 1, 2014. (B)(1) Except as provided in divisions (G)(1) and (2) of section 935.06 of the Revised Code, no person shall acquire, buy, sell, trade, or transfer possession or ownership of a dangerous wild animal on or after the effective date of this section.",
+          "note": "Lions are named dangerous wild animals. The exceptions in R.C. 935.03 are accredited zoos, research facilities, circuses, sanctuaries, rehabilitators of Ohio natives and vets, so there is no route for a new keeper. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "grandfathered": {
+            "before": "2013-10-01",
+            "detail": "Only a person who registered the animal with the Department of Agriculture in 2012 and possessed it on 1 October 2013 could apply for a wildlife shelter or wildlife propagation permit under R.C. 935.05 or 935.07; the permit requires sterilizing males, insurance, caging standards and, outside the small primates, at least one acre."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "TX": {
+          "status": "permit",
+          "sourceId": "tx-822-101",
+          "cite": "Health & Safety Code §§ 822.101(4)(A), 822.103, 822.107, 822.116(b)",
+          "quote": "\"Dangerous wild animal\" means: (A) a lion; (B) a tiger; (C) an ocelot; (D) a cougar; (E) a leopard; (F) a cheetah; (G) a jaguar; (H) a bobcat; (I) a lynx; (J) a serval; (K) a caracal; (L) a hyena; (M) a bear; (N) a coyote; (O) a jackal; (P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla; or (T) any hybrid of an animal listed in this subdivision.",
+          "note": "The lion heads the list at clause (A). A certificate of registration from the local animal control office, or the county sheriff where there is none, is required under § 822.103, with liability insurance of at least $100,000 per occurrence under § 822.107, and § 822.116(b) lets any municipality or county prohibit the animal outright instead. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MI": {
+          "status": "banned",
+          "sourceId": "mi-large-carnivore",
+          "cite": "MCL 287.1102(f), 287.1103(a), 287.1104(1)",
+          "quote": "(f) \"Large carnivore\" means any of the following cats of the Felidae family, whether wild or captive bred, including a hybrid cross with such a cat: a lion, a leopard (including a snow leopard or clouded leopard), a jaguar, a tiger, a cougar, a panther, or a cheetah; or a bear of a species that is native or nonnative to Michigan, whether wild or captive bred.",
+          "note": "The lion is the first cat named as a large carnivore. MCL 287.1104(1) lets a person possess a large carnivore only if they owned that individual animal on the act's effective date and applied for a permit within 90 days, so no new animal can be acquired. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "grandfathered": {
+            "before": "2000-06-29",
+            "detail": "Only a person who owned the individual animal on the act's effective date and applied for a permit within 90 days may keep it; the permit covers only those animals and passes on only by will or descent."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "IL": {
+          "status": "banned",
+          "sourceId": "il-720-48-10",
+          "cite": "720 ILCS 5/48-10(a), (b)",
+          "quote": "No person shall have a right of property in, keep, harbor, care for, act as custodian of or maintain in his or her possession any dangerous animal or primate except at a properly maintained zoological park, federally licensed exhibit, circus, college or university, scientific institution, research laboratory, veterinary hospital, hound running area, or animal refuge in an escape-proof enclosure.",
+          "note": "The lion is the first dangerous animal named. The exceptions are zoos, licensed exhibits, circuses, colleges, research and veterinary bodies and refuges, not homes. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MN": {
+          "status": "banned",
+          "sourceId": "mn-346-155",
+          "cite": "§ 346.155, subd. 1(e)(1); subd. 2(a), (c)",
+          "quote": "(a) Except as provided in this section, it is unlawful for a person to possess a regulated animal. ... (c) Except as provided in paragraph (e), a person must not take possession of a regulated animal after January 1, 2005.",
+          "note": "Every felid but domestic cats and registered domestic breeds is a regulated animal, and lions are named first. Paragraph (e) lets only a USDA licensee in compliance on 1 January 2005 acquire new animals, to keep up its operating inventory, and subdivision 7 exempts institutions accredited by the American Zoo and Aquarium Association, among others. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "grandfathered": {
+            "before": "2005-01-01",
+            "detail": "A person who possessed the animal on 1 January 2005 and registered it with the local animal control authority within 60 days may keep it under the subdivision 4 requirements, and a registrant without a USDA license may replace it once if it dies."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(q), (4)",
+          "quote": "Except as otherwise provided in subsection 4 and NAC 503.500 to 503.535, inclusive, the following animals may be possessed, transported, imported and exported without a permit or license issued by the Department: ... (q)All felines, except mountain lions and bobcats;",
+          "note": "Nevada clears every cat but its two natives from any state permit, which takes in the lion. NAC 503.140(4) preserves county and city ordinances, so check the municipality as well. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "VA": {
+          "status": "permit",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "4VAC15-30-40(A), (B)",
+          "quote": "Felidae All Species Cats*",
+          "note": "The table restricts the whole cat family. A special permit is required to import, possess or sell one, and the department issues it only if consistent with its fish and wildlife management program; the rule does not say whether a private keeper qualifies. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "grandfathered": {
+            "before": "1992-07-01",
+            "detail": "The entry carries the asterisk, so an animal held before 1 July 1992 and declared in writing by 1 January 1993 may be kept under a possession-only permit that renews every five years and cannot be transferred."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "MD": {
+          "status": "banned",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1)(iii)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: ... (iii) member of the cat family other than the domestic cat;",
+          "note": "The whole cat family but the domestic cat is barred. The exemptions run to research facilities, licensed exhibitors, DNR licensees, sanctuaries, vets and circuses, and a licensed exhibitor may acquire a primate or big cat only with $1,000,000 of insurance, paid full-time staff and a disposition policy. Subsection (e) preserves stricter county and municipal rules. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "grandfathered": {
+            "before": "2006-05-31",
+            "detail": "Lawful possession on or before 31 May 2006 may continue, but only if the keeper gave written notification to the local animal control authority by 1 August 2006, with the number and type of animals and a photograph or a description of a tattoo or microchip. That window is long closed."
+          },
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023; 19.35.7 NMAC",
+          "quote": "Cat, wild | Felidae | Panthera leo persica | Lion, Asiatic | IV | Federally Endangered",
+          "note": "The list names only the Asiatic lion. The African lion is not on it, so it falls to Group IV by default. The Director's list is not exhaustive, and 19.35.7 NMAC says \"Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.\" Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. 19.35.7 NMAC is an importation rule, so it governs bringing the animal into New Mexico rather than keeping one already here. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "The only cats on the Unrestricted list are wild and domestic hybrids of the fourth generation or later, and the Domestic list has only Felis catus, so a lion is restricted by absence. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "UT": {
+          "status": "banned",
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1, prohibited mammals; R657-3b",
+          "quote": "Prohibited mammals ... known detrimental impacts to native wildlife populations, human health and safety, or agriculture. Personal possession will not be authorized. ... Big cats Panthera leo, Panthera tigris, Panthera pardus, Acinonyx jubatus, Uncia uncia, Puma concolor, Panthera onca lion, tiger, leopard, cheetah, snow leopard, cougar (= puma), jaguar, or any hybrid of these species; in accordance with Federal Big Cat Public Safety Act",
+          "note": "The lion is named first on the prohibited big cat row, which cites the federal act itself. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, 7.1.1, with Del. Code tit. 3 § 7201",
+          "quote": "When an exotic is kept as a pet, the owner or custodian of the exotic must apply to the Department for an Individual Permit on a form supplied by the Department.",
+          "note": "A lion is a live wild mammal not native to Delaware and is not on the exempt list, so an Individual Permit is required. No big cat is refused by name. The Individual Permit is issued per animal for three years, after the Department is satisfied the animal will be held in a sturdy, escape-proof primary enclosure inside a secondary enclosure that keeps the public out, and a background check may be run. Delaware's only outright refusals at 4.7 are the gila monster, the beaded lizard and the komodo dragon. County and municipal ordinances were not checked. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "TN": {
+          "status": "banned",
+          "sourceId": "tn-70-4-403",
+          "cite": "Tenn. Code Ann. §§ 70-4-403(1), 70-4-404(c)(1)",
+          "quote": "(c) Lions, tigers, leopards, jaguars, cheetahs, cougars--All species;",
+          "note": "Lions are named first in the Class I big cat clause. Class I \"may only be possessed by zoos, circuses and commercial propagators\", and § 70-4-404(c)(1) says that after 25 June 1991 \"no new animals shall be brought into possession under authority of a personal possession permit\". Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "grandfathered": {
+            "before": "1991-06-25",
+            "detail": "Persons legally possessing Class I wildlife before 25 June 1991 must hold an annual personal possession permit and may keep the lineage up to three animals per species; no new animal may be brought into possession under a personal possession permit."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "NC": {
+          "status": "legal",
+          "sourceId": "nc-153a-131",
+          "cite": "§ 153A-131",
+          "quote": "A county may by ordinance regulate, restrict, or prohibit the possession or harboring of animals which are dangerous to persons or property.",
+          "note": "No statewide North Carolina rule names a big cat, the serval's answer. § 153A-131 hands the question to counties, several of which have used it, so the local ordinance decides most cases. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "AR": {
+          "status": "banned",
+          "sourceId": "ar-20-19-501",
+          "cite": "Ark. Code Ann. §§ 20-19-502, 20-19-503, 20-19-504; Code 09.02(E); Addendum R1.03",
+          "quote": "(a) A person may possess a large carnivore only if: (1) The person was in possession of the large carnivore and was the legal possessor of the large carnivore on or before August 12, 2005; and (2) The person applies for and is granted a permit for personal possession for each large carnivore in the person's possession not more than one hundred eighty (180) days after August 12, 2005.",
+          "note": "The lion is a large carnivore under § 20-19-501 and Code 01.00. A private keeper could hold one only if it was owned by 12 August 2005 and permitted by the county sheriff within 180 days, and § 20-19-504(b)(2) bars any new animal under that permit. The exemptions in § 20-19-503 are zoos, humane societies, veterinary clinics, USDA exhibitors, scientific collectors and Commission breeder/dealer permittees, and Addendum R1.03 lists large carnivores among the species the Commission will not permit for breeding, sale or importation. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "grandfathered": {
+            "before": "2005-08-12",
+            "detail": "A lion legally held on or before 12 August 2005 could stay if the owner obtained a sheriff's personal possession permit within 180 days and renews it every year. No additional animal may be acquired under it."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "ID": {
+          "status": "banned",
+          "sourceId": "id-020427",
+          "cite": "IDAPA 02.04.27.403.05; 100.01",
+          "quote": "All deleterious exotic Large Felidae must be possessed on a facility that is AZA accredited. ... 05. Lion (Panthera leo).",
+          "note": "The lion is listed under large felidae, the group the rule confines to AZA-accredited facilities, so no private possession permit route exists. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "IA": {
+          "status": "banned",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(3); §§ 717F.3, 717F.4",
+          "quote": "A member of the family felidae of the order carnivora, including but not limited to lions, tigers, cougars, leopards, cheetahs, ocelots, and servals. However, a dangerous wild animal does not include a domestic cat.",
+          "note": "The felid definition names lions. § 717F.3 bars owning, possessing, breeding or bringing one into the state, and the only private route was the § 717F.4 registration of animals already held on 1 July 2007. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "grandfathered": {
+            "before": "2007-07-01",
+            "detail": "An owner in possession on 1 July 2007 could keep the animal after implanting an electronic identification device within sixty days and registering with the department by 31 December 2007. No new route exists."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "KY": {
+          "status": "banned",
+          "sourceId": "ky-301-2-082",
+          "cite": "301 KAR 2:082 §§ 4(2)(n), 5, 6(3)",
+          "quote": "(2) Except as established in Sections 5 and 6 of this administrative regulation, a person shall not import, transport, or possess the following inherently dangerous exotic wildlife: ... (n) Lions, jaguars, leopards, or tigers (Genus Panthera);",
+          "note": "Lions are named in the Panthera entry. The only routes left are an AZA-accredited facility and the commissioner's exemption in § 5, which is open to municipal zoos, colleges, circuses and earlier exempted facilities, not private keepers. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "grandfathered": {
+            "before": "2005-07-13",
+            "detail": "A person who legally possessed the animal before 13 July 2005 may keep it for its life with veterinary records, acquisition papers or other proof, but may not replace it, breed it or transfer it."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "RI": {
+          "status": "banned",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§§ 3.7(A), 3.9(B)",
+          "quote": "no permits shall be granted by the Department to a private person authorizing the import, and/or possession of any exotic wild animals of the order Carnivora, or hybrids thereof, for which there is no USDA conditionally licensed or unconditionally licensed rabies vaccine",
+          "note": "There is no USDA licensed rabies vaccine for lions, the serval's position, so the permit route is closed to private owners. § 3.7(A) restricts possession to researchers, short-term USDA exhibitors and AZA facilities. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.05(b), Table 800.2",
+          "quote": "(b) A permit shall be issued only to a person in the permittee category(ies), as defined in Fis 802.01, and cited in Table 800.2 as follows: ... 5 Lion Panthera leo",
+          "note": "Table 800.2 marks it for permittee category 5 only, and category 5 is exhibitors, so no permit can issue to an individual (category 1). Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MO": {
+          "status": "unclear",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.110(2); 3 CSR 10-4.110(1); RSMo § 578.023(1)",
+          "quote": "(2) Except for federally-designated endangered species and species listed in 3 CSR 10-4.117 and 3 CSR 10-9.240, the following may be bought, sold, possessed, transported, and exhibited without permit: ... amphibians, reptiles, and mammals not native to Missouri except those mammals located in a licensed big game hunting preserve;",
+          "note": "Missouri's free pass for non-native mammals carves out federally designated endangered species. 50 CFR 17.11 lists the lion in two parts, Panthera leo leo as endangered and Panthera leo melanochaita as threatened, and the rule does not say how a lion of unrecorded subspecies is treated, so whether a given lion falls inside the carve-out is not settled. If it does, 3 CSR 10-4.110(1) bars possession except as the rules permit; if not, the lion needs no Wildlife Code permit and only the county registration § 578.023 requires. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "KS": {
+          "status": "banned",
+          "sourceId": "ks-32-1301",
+          "cite": "K.S.A. 32-1301(d), 32-1302(a), (c), (d)",
+          "quote": "\"Dangerous regulated animal\" means a live or slaughtered parts of: (1) Lions, tigers, leopards, jaguars, cheetahs and mountain lions, or any hybrid thereof; (2) bears or any hybrid thereof; and (3) all non-native, venomous snakes.",
+          "note": "Lions are dangerous regulated animals, and since 1 July 2006 no one may take possession of one except a USDA licensee keeping up the inventory it held that day. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "grandfathered": {
+            "before": "2006-07-01",
+            "detail": "An animal possessed on 1 July 2006 may be kept if registered with the local animal control authority, caged to K.S.A. 32-1306, covered by $250,000 liability insurance or bond, and not bred."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "SC": {
+          "status": "banned",
+          "sourceId": "sc-47-2",
+          "cite": "§§ 47-2-10(2)(a), 47-2-20(A)(6), (7), 47-2-30",
+          "quote": "(a) Family Felidae, Genus panthera ... all lions, tigers, leopards, jaguars, cougars, cheetahs, snow leopards, and clouded leopards;",
+          "note": "The large wild cat definition names lions. § 47-2-30(A) makes it unlawful to import, possess, buy, breed or sell one, and the exemptions in § 47-2-20 are for USDA Class A, B or C licensees, research facilities, circuses and similar holders. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "grandfathered": {
+            "before": "2018-01-01",
+            "detail": "A legal possessor before 1 January 2018 may keep the animal for life after registering with the city or county animal control authority by that date, paying a $500 site fee and $100 a year per animal, and filing an escape contingency plan."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "MT": {
+          "status": "permit",
+          "sourceId": "mt-87-4-8",
+          "cite": "MCA §§ 87-4-801(3), 87-4-803(2)(b), 87-4-804(4), (6); § 87-5-705(1)",
+          "quote": "\"Wild animal menagerie\" means any place where one or more bears or large cats, including cougars, lions, tigers, jaguars, leopards, pumas, cheetahs, ocelots, and hybrids of those large cats are kept in captivity for use other than public exhibition.",
+          "note": "The menagerie definition names lions. Montana writes a permit for keeping large cats privately: a wild animal menagerie is defined by use \"other than public exhibition\", the application asks for the site, species, caging and proof the applicant is responsible, and the department must inspect before issuing. It is capped at 10 animals, which must come captive bred from a licensed zoo, menagerie, fur farm or similar source, the black bear's position. The exotic wildlife white list in § 87-5-705(1) allows possession that is \"allowed by law\", and Part 8 is the law that allows this. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "WV": {
+          "status": "banned",
+          "sourceId": "wv-19-34",
+          "cite": "W. Va. Code § 19-34-4; W. Va. C.S.R. § 74-1-3.1.c",
+          "quote": "3.1.c. Lions; 3.1.d. Tigers; ... 3.1.g. All of the following, including hybrids with domestic cats unless otherwise specified: ... 3.1.g.3. Cougars, also known as pumas or mountain lions;",
+          "note": "Lions are named on the Dangerous Wild Animal list. § 19-34-4(a) bars possessing a listed animal, and the only permit in § 19-34-4(b) is for someone who already lawfully had it before the rules took effect, with § 19-34-6(b)(1) barring breeding, receiving or replacing one. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "grandfathered": {
+            "before": "2022-04-05",
+            "detail": "Lawfully possessed before the board's rules took effect, then permitted by the board, with no breeding, acquiring or replacing."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "AK": {
+          "status": "banned",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(a), (c); AS 16.05.940(19)",
+          "quote": "The department may not issue a permit for the capture, possession, import, or export of any game animal, including a hybrid of a game animal and a species listed in (b) of this section, for use as a pet",
+          "note": "A mammal, so game under AS 16.05.940(19). Absent from the clean list in § 92.029(b), and subsection (c) closes the permit route for anything kept as a pet. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "SD": {
+          "status": "permit",
+          "sourceId": "sd-12-68-18",
+          "cite": "ARSD 12:68:18:03(1)(a); 12:68:18:03.03(4)",
+          "quote": "a permit as described in § 12:68:18:03.03 is required to possess in South Dakota any nondomestic mammal, or any of its hybrids, listed in this section: (1) Of the order Carnivora, all nondomestic members of the following families: (a) Felidae;",
+          "note": "Every nondomestic felid is on the possession permit list, so a lion takes the same permit as a serval. A possession permit under 12:68:18:03.03(4) costs ten dollars an animal, to a maximum of one hundred, and the board must find the facilities adequate. The rule writes no pet exclusion, and the only outright prohibition in the chapter is the raccoon dog. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-26",
+          "cite": "r. 220-2-.26(1)",
+          "quote": "black bear (Ursus americanus), mountain lion (Felis concolor), bobcat (Felis rufus)",
+          "note": "The only cats Alabama's restricted list names are its own two, and only when brought in from outside the state, the serval's position. No Alabama rule read here reaches a lion, so the state layer is silent and the federal one decides. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "verifiedOn": "2026-10-01"
+        },
+        "IN": {
+          "status": "permit",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)(3); 9-11-2(c), (e)",
+          "quote": "(1) Wolves that are purebred. (2) Bears (all species). (3) Wild cats (all species), except feral cats and cats listed in section 7 of this rule.",
+          "note": "The lion is a wild cat not on the Class II small cat list, so it falls into Class III. A Class III permit has to be in hand before taking possession and needs a recapture or destruction plan with the equipment to carry it out, a cage inspection and proof of lawful acquisition, the bobcat's position. It is still a pet permit. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "ND": {
+          "status": "permit",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(3)(b)(2); 48.1-09-01-03(1), (2)",
+          "quote": "b. Category 3 species of nontraditional livestock includes the following species and their hybrids: ... (2) Big cats, including mountain lion, jaguar, leopard, lion, tiger, and cheetah. (3) Bears. (4) Wolves. (5) Venomous reptiles and nonvenomous injurious reptiles. (6) Primates.",
+          "note": "The lion is named among the category 3 big cats. The owner must hold a nontraditional livestock license from the Board of Animal Health before acquiring one, and the board must inspect and approve the premises first, under 48.1-09-01-03(1) and (2)(b). The annual fee is fifteen dollars under NDCC 36-01-08.1. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "WY": {
+          "status": "banned",
+          "sourceId": "wy-ch10",
+          "cite": "Ch. 10 § 11(b)(xv); 50 CFR 17.11",
+          "quote": "(b) In addition, a permit shall not be issued for importation or possession of the following live warm-blooded wildlife in Wyoming, except as otherwise specified in this regulation. ... (xv) Endangered and threatened wildlife listed in 50 CFR 17.11;",
+          "note": "Wyoming would otherwise treat a lion like a serval, under the discretionary permit in § 13(d), but § 11(b)(xv) bars a permit for any animal on the federal endangered and threatened list, and 50 CFR 17.11 has the lion listed in two parts, Panthera leo leo as endangered and Panthera leo melanochaita as threatened. Because the bar takes in threatened as well as endangered, either subspecies is caught. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MS": {
+          "status": "banned",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "Rule 8.3(A)(1)(b), (c), (A)(5)(b)(v)",
+          "quote": "1. b. Effective December 20, 2022, with the enacting of the Big Cat Public Safety Act, 16 U.S.C. §3370 et. seq., by the United States Congress, no new permits for the transfer or possession of members of the order Carnivora, family Felidae, or \"big cats,\" will be issued.",
+          "note": "The inherently dangerous felid entry names lions, and the rule used to offer a personal possession permit for felids at $300 an animal. Since 20 December 2022 Mississippi issues no new permit for the transfer or possession of a felid, and the rest of the rule stays in force only for current big cat permittees. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "grandfathered": {
+            "before": "2022-12-20",
+            "detail": "Current big cat permittees keep their permits under the rest of Rule 8.3, and had to register the animals with the U.S. Fish and Wildlife Service by 18 June 2023."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "LA": {
+          "status": "banned",
+          "sourceId": "la-76-v-115",
+          "cite": "LAC 76:V.115.C.1.h.ii, C.2",
+          "quote": "C.1.Except as provided herein, it shall be unlawful to import into, possess, purchase or sell within the state of Louisiana, by any means whatsoever including but not limited to transactions conducted via the internet, any of the following species or its subspecies of live wild quadrupeds, big exotic cats, or non-human primates, domesticated or otherwise (hereinafter \"listed animals\"): ... h.the following big exotic cats: ... ii.lions;",
+          "note": "Lions are named in the big exotic cat entry. Holders of a potentially dangerous wild quadruped permit valid when the rule took effect were grandfathered but may not acquire more, \"including breeding\", the black bear's position. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "grandfathered": {
+            "before": "1995-12-20",
+            "detail": "A potentially dangerous wild quadruped permit valid on the rule's effective date, renewed annually until the animal dies or leaves; no new animals. The rule was first published in the Louisiana Register in December 1995 (LR 21:1356); the exact effective day was not read."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(a)(4); 29 O.S. § 7-502(A)(3)",
+          "quote": "(4) Cats (except native cats and bears).",
+          "note": "The exemption is written for cats generally and carves out only native cats, the serval's position, and the statute's big cat clause, § 7-502(A)(3), reaches only native cats. So the state layer is silent for a lion and the federal one decides. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NE": {
+          "status": "banned",
+          "sourceId": "ne-37-477",
+          "cite": "Neb. Rev. Stat. § 37-477(2), (3)",
+          "quote": "(2) Except as provided in subsection (3) of this section, no person shall keep in captivity in this state any wolf, any skunk, or any member of the families Felidae and Ursidae.",
+          "note": "Nebraska bans the whole of Felidae by statute, so a lion has no permit route. The exceptions are Felis domesticus, public and accredited zoos, and a captive wildlife permit holder raising Canada lynx or bobcats for fur, the serval's position. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before 20 December 2022 and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
+          "grandfathered": {
+            "before": "1986-03-01",
+            "detail": "A person legally holding such an animal on 1 March 1986 may keep it for its lifetime under § 37-477(3), and may not trade, sell or dispose of it without the commission's written permission."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        }
+      },
+      "article": "/blog/lion-legal-guide/"
     }
   }
 }
