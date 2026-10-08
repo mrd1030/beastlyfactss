@@ -28384,14 +28384,16 @@
           "verifiedOn": "2026-10-08"
         },
         "OH": {
-          "status": "permit",
-          "sourceId": "oh-935-01",
-          "cite": "R.C. 935.01(C)(7)(b)",
-          "quote": "(7) All of the following, including hybrids with domestic cats unless otherwise specified: ... (b) Lynxes, including Canadian lynxes, Eurasian lynxes, and Iberian lynxes;",
-          "note": "Named as a dangerous wild animal, so it needs the Ohio Department of Agriculture permit under Chapter 935, the same position as the serval. The Canada lynx is also federally threatened, which brings federal rules on interstate sale.",
-          "localOverride": true,
-          "permitFor": "personal",
-          "verifiedOn": "2026-10-01"
+          "status": "banned",
+          "sourceId": "oh-935-02",
+          "cite": "R.C. 935.01(C)(7)(b); R.C. 935.02(A), (B)(1)",
+          "quote": "(A) No person shall possess a dangerous wild animal on or after January 1, 2014. (B)(1) Except as provided in divisions (G)(1) and (2) of section 935.06 of the Revised Code, no person shall acquire, buy, sell, trade, or transfer possession or ownership of a dangerous wild animal on or after the effective date of this section.",
+          "note": "Lynxes, Canadian lynxes by name, are dangerous wild animals. The exceptions in R.C. 935.03 are accredited zoos, research facilities, circuses, sanctuaries, rehabilitators of Ohio natives and vets, so there is no route for a new keeper. The Canada lynx is also federally threatened, which brings federal rules on interstate sale.",
+          "grandfathered": {
+            "before": "2013-10-01",
+            "detail": "Only a person who registered the animal with the Department of Agriculture in 2012 and possessed it on 1 October 2013 could apply for a wildlife shelter or wildlife propagation permit under R.C. 935.05 or 935.07; the permit requires sterilizing males, insurance, caging standards and, outside the small primates, at least one acre."
+          },
+          "verifiedOn": "2026-10-08"
         },
         "TX": {
           "status": "permit",

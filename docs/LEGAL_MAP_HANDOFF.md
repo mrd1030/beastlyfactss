@@ -295,6 +295,11 @@ turned up on its way through.
   line, and the Lacey Act sentences in the CA, PA, MN, DE and VT notes and the CA state note
   corrected to USARK v. Zinke.
 
+- **Resolved 2026-10-08: the Ohio serval, black bear and Canada lynx cells.** All three went to
+  `banned` on R.C. 935.02(A) with the 2012 registration grandfather, matching the tiger and lion,
+  with the serval guide, the hub line and the OH state note corrected. The bobcat cell was left: it
+  rests on the § 1533.71 fur-bearer license.
+
 - **Kansas answers a native herp in three regulations and the famous one is none of them. Priority 1
   is done and it moved nine cells.** K.S.A. 32-1301, the dangerous regulated animal statute the whole
   Kansas column had been written against, names six cats, bears and non-native venomous snakes.
@@ -669,15 +674,6 @@ turned up on its way through.
   rabbits" with no permit available, and 17 Ill. Adm. Code 805.20(a) listing the genus
   Oryctolagus as injurious. Neither writes an express exception for domestic stock. The note
   sets out why both read as aimed at wild-type animals; it is the thinnest Illinois answer.
-- **Ohio's dangerous wild animal cells read as open permits, and the statute closed them in 2014.**
-  The serval, black bear and Canada lynx cells for Ohio record `permit` with permitFor "personal" on
-  R.C. 935.01. The operative sections were not on file and are now (`OH-oh-935-02-to-10.txt`):
-  § 935.02(A) "No person shall possess a dangerous wild animal on or after January 1, 2014", (B)(1)
-  bars acquiring one after the chapter took effect, and the wildlife shelter permit at § 935.05(A) is
-  open only to "A person that possesses a registered dangerous wild animal in this state on October 1,
-  2013". On that text all three are `banned` with a 2012 registration grandfather, the shape the tiger
-  and lion rows now carry. The bobcat cell is answered by the § 1533.71 fur-bearer license and only
-  mentions Chapter 935, so it may stand.
 - **Hawaii's Part B permit is not a pet permit, which puts the red-eared slider cell in question.**
   The slider records `permit` with permitFor "personal" on Restricted List Part B. HAR § 4-71-2, in
   `HI-hi-4-71-rule.txt`, defines the private use that Part B allows: "'Private use' means use for
