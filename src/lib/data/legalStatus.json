@@ -1779,6 +1779,16 @@
       "title": "MCA Title 87, Chapter 4, Part 8, Menageries, Sanctuaries, and Zoos",
       "url": "https://mca.legmt.gov/bills/mca/title_0870/chapter_0040/part_0080/section_0010/0870-0040-0080-0010.html",
       "note": "§ 87-4-801(3) defines a wild animal menagerie as bears or large cats kept \"for use other than public exhibition\"; § 87-4-803 sets the permit, § 87-4-804 bars capture from the wild for it and caps it at 10 animals. Cached as MT-mt-rabies-and-menagerie.txt."
+    },
+    "wa-rcw-77-15-120": {
+      "title": "RCW 77.15.120, unlawful taking of endangered fish or wildlife, with WAC 220-610-010, wildlife classified as endangered",
+      "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=77.15.120",
+      "note": "Possessing wildlife the Fish and Wildlife Commission designates as endangered is unlawful taking in the second degree unless authorized by commission rule, a department permit or a federal Endangered Species Act permit. WAC 220-610-010, at https://app.leg.wa.gov/WAC/default.aspx?cite=220-610-010, is the list, and it names the North American lynx, Lynx canadensis."
+    },
+    "mi-r-299-1027": {
+      "title": "Mich. Admin. Code R 299.1027, Endangered and Threatened Species: Mammals",
+      "url": "https://www.law.cornell.edu/regulations/michigan/Mich-Admin-Code-R-299-1027",
+      "note": "Michigan's state list of endangered and threatened mammals under NREPA Part 365, amended effective 20 March 2023. Lynx canadensis is on the endangered list, with the cougar, the prairie vole and the Indiana bat. Part 365 bars taking, possessing, transporting or selling a listed species without a DNR permit, which serves science, zoological and conservation purposes. michigan.gov refuses this container, so the rule was read from Cornell LII."
     }
   },
   "animals": {
@@ -28076,6 +28086,497 @@
         }
       },
       "article": "/blog/arctic-fox-legal-guide/"
+    },
+    "canada-lynx": {
+      "name": "Canada lynx",
+      "scientific": "Lynx canadensis",
+      "jurisdictions": {
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(K)(1)",
+          "quote": "Family Felidae-All species (W)",
+          "note": "Every felid is restricted, and the department's caging standards name the Canada lynx in Group III beside the bobcat and the serval. No permit type covers pet keeping.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-391-4-8-05",
+          "cite": "R. 391-4-8-.04(1)(a)2(ii); O.C.G.A. § 27-5-4(b)(1)",
+          "quote": "Family Felidae (cats) - All species;",
+          "note": "Every felid is in the inherently dangerous tier, needing a license and liability insurance, and the license goes only to the wild animal trade and public exhibitors. No pet route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-rule",
+          "cite": "§ 4-71-6",
+          "quote": "The introduction into Hawaii of live animals or live non-domestic animals ... is prohibited except for those animals on the lists",
+          "note": "Lynx canadensis is on none of the three lists, and Hawaii bars an unlisted animal by default. The only lynx-genus cat on Part A is the caracal.",
+          "verifiedOn": "2026-10-01"
+        },
+        "PA": {
+          "status": "permit",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)(1), (a)(8)",
+          "quote": "In the family Felidae . Species and subspecies, except species which are commonly called house cats which may be possessed but not released into the wild.",
+          "note": "Same answer as the serval. The whole felid family is prohibited and the route out is the exotic wildlife possession permit under 34 Pa.C.S. § 2963 and 58 Pa. Code Ch. 147 Subchapter N, which is written around facilities: one permit per animal, and two years of documented hands-on work with the species at a recognized facility before a first application. The Canada lynx is also federally threatened in the lower 48, and § 137.1(a)(8) separately reaches any animal the Department of the Interior lists as threatened.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)",
+          "quote": "a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following",
+          "note": "None of the seven categories covers a wild cat; (B) admits domestic cats only.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "§ 161.01(b)(2)",
+          "quote": "All cats other than domesticated cats (Felis catus), including, but not limited to, lion, tiger, leopard, ocelot, jaguar, puma, panther, mountain lion, cheetah, wild cat, cougar, bobcat, lynx, serval, caracal, jaguarundi, margay and any hybrid or cross-breed offspring of a wild cat and domesticated or other cat.",
+          "note": "\"Lynx\" is named in the wild cat clause, which covers every cat but Felis catus. § 161.01(d) lets the Department consent to an owner removing a seized animal to a jurisdiction where it is not prohibited, which is the only relief in the article.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NJ": {
+          "status": "banned",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.8(a); 7:25-4.9(a)3",
+          "quote": "Carnivora Canidae--Nondomestic dogs / Ursidae--Bears / Felidae--Nondomestic cats ... The potentially dangerous species shall not be kept as a pet, for hobby purposes or in situations, which, in the judgment of the Department, could adversely affect the health of the animal or which could constitute a hazard to the public.",
+          "note": "Same answer as the serval. A nondomestic cat is a potentially dangerous species and 4.9(a)3 bars keeping one as a pet or for hobby purposes. The Canada lynx is also federally threatened in the lower 48, and the Division treats any federally listed animal as endangered.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "ME": {
+          "status": "banned",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.18(2)(F); § 7.06(3)(A)(2)(a)",
+          "quote": "Family Felidae All Species in Family Felidae (Cats)",
+          "note": "Category 1 for every felid, and the Canada lynx meets the Category 1 criteria twice over: it is a Maine native and it is federally threatened. Permits go only to exhibitors, rehabilitators and research facilities.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "WI": {
+          "status": "banned",
+          "sourceId": "wi-29-604",
+          "cite": "Wis. Stat. §§ 169.01(9), 169.30, 29.604",
+          "quote": "\"Endangered or threatened species\" means those species of wild animals that are indigenous to the United States or Canada and are identified on the federal list of endangered and threatened species or on the Wisconsin list of endangered and threatened species.",
+          "note": "The Canada lynx is indigenous and federally threatened in the lower 48, so it is an endangered or threatened species for chapter 169 and is handed to § 169.30 and § 29.604 rather than to the captive wild animal farm license. Endangered and threatened species permits go to education, research and conservation, not to pet keeping.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "FL": {
+          "status": "permit",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.002(1)(b)16; 68A-6.003(7)",
+          "quote": "Class II: ... 15. Servals (Leptailurus serval) 16. European and Canadian lynx (Lynx lynx) 17. Bobcats (Lynx rufus) 18. Caracals (Caracal caracal) ...",
+          "note": "Class II item 16 names \"European and Canadian lynx\" with the binomial Lynx lynx, from when the Canada lynx was treated as a subspecies of it, and the class list covers \"taxonomic successors and subspecies\". So it is a $140 Class II personal use permit with documented experience and caging standards. The Canada lynx is federally threatened in the lower 48, which brings federal rules on interstate sale but not a Florida bar.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL §§ 11-0103(6)(e)(2), 11-0512(1)(a); 6 NYCRR § 180.1(b)(8)",
+          "quote": "no person shall import, transport, possess, purchase, barter, transfer, sell, offer for sale, exchange, propagate or release or cause to be released within New York State any of the following live native or non-native dangerous animals including those which are captive bred in any of the following orders, families and individual species or subspecies including all subspecies and hybrids thereof: ... (8) Cats in the Family Felidae with the exception of the species Felis catus ...",
+          "note": "A felid, so a wild animal that may not be kept as a pet, and \"lynx\" is also named in the small game definition.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)(A), (b)(1)",
+          "quote": "\"Category One Wild Animal\" means, notwithstanding changes in taxonomic nomenclature, any wild animal, gamete or hybrid of any of the following: (A) A member within the family Felidae (including, but not limited to, lion, leopard, cheetah, jaguar, ocelot, jaguarundi cat, puma, lynx and bobcat) except Bengal cat pursuant to section 26-40a of the Connecticut General Statutes; (B) A member within the family Canidae (including, but not limited to, wolf and coyote); (C) A member within the family Ursidae (including, but not limited to, black bear, grizzly bear and brown bear); or (D) A member within the family Hominidae ...",
+          "note": "\"Lynx\" is named among the Felidae examples in Category One. Subsection (b)(1) allows a Category One animal only to a municipal park, zoo, public nonprofit aquarium, nature center, museum, or a USDA-licensed exhibitor, laboratory or research facility, so there is no private route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(1), (12)(a)",
+          "quote": "The purpose of 321 CMR 9.01 is to list those species which are exempt from the licensing provisions of M.G.L. c. 131, § 23, and which may be imported, possessed, maintained, propagated, bought, sold, exchanged or offered for sale without a license or permit from the Division. Species not listed, or which are expressly listed as \"require(s) a permit\", are not exempt from the provisions of M.G.L. c. 131, § 23.",
+          "note": "No felid is on the exemption list, and the Canada lynx could not be added to it anyway: 9.01(3) bars exempting any species listed under the federal Endangered Species Act, and the lynx is threatened in the lower 48. The license under § 23 exists on paper, but MassWildlife says permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\"",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
+          "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
+          "note": "A wild felid on no Colorado list, so regulated. The Canada lynx is also a reintroduced Colorado native and federally threatened, which adds the native-wildlife bar in C.R.S. 33-6-109 and federal rules on top. Chapter W-11 says noncommercial (pet) possession of regulated mammals has been prohibited since 1983, and its wildlife park licenses are commercial or closed to new entrants.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AZ": {
+          "status": "restricted",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(F)",
+          "quote": "All species of the order Carnivora",
+          "note": "All of Carnivora is restricted, so the Canada lynx needs a special license. It is also federally threatened in the lower 48, which brings federal rules on interstate sale.",
+          "verifiedOn": "2026-10-01"
+        },
+        "OR": {
+          "status": "banned",
+          "sourceId": "or-609-305",
+          "cite": "ORS 609.305; ORS 609.351(1); OAR 635-044-0430(1)(a)",
+          "quote": "Any member of the family Felidae not indigenous to Oregon, except the species Felis catus (domestic cat)",
+          "note": "Banned on either reading of its status here. Treated as non-indigenous, it is an exotic animal under ORS 609.305 with the permit window closed since 2010, the serval's position. Treated as an Oregon native, it is federally threatened, and OAR 635-044-0430(1)(a) makes it unlawful to hold any federally listed species without specific authorization.",
+          "localOverride": true,
+          "grandfathered": {
+            "before": "2010-01-01",
+            "detail": "A State Department of Agriculture permit issued before 1 January 2010, or issued within a year of that date on proof the animal was already held. Applications closed 90 days after 1 January 2010, breeding a permitted animal is barred, and possession ends 30 days after a permit lapses."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "WA": {
+          "status": "banned",
+          "sourceId": "wa-rcw-77-15-120",
+          "cite": "RCW 77.15.120(1); WAC 220-610-010",
+          "quote": "(a) The person hunts for, fishes for, possesses, maliciously harasses, or kills fish or wildlife, or possesses or intentionally destroys the nests or eggs of fish or wildlife; (b) The fish or wildlife is designated by the commission as endangered; and (c) The taking of the fish or wildlife or the destruction of the nests or eggs has not been authorized by rule of the commission, a permit issued by the department, or a permit issued pursuant to the federal endangered species act.",
+          "note": "Washington lists the North American lynx, Lynx canadensis, as endangered, and possessing endangered wildlife without a commission rule or department or federal permit is a crime. Those permits serve research and recovery, not pets. The lynx is federally threatened as well.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "OH": {
+          "status": "permit",
+          "sourceId": "oh-935-01",
+          "cite": "R.C. 935.01(C)(7)(b)",
+          "quote": "(7) All of the following, including hybrids with domestic cats unless otherwise specified: ... (b) Lynxes, including Canadian lynxes, Eurasian lynxes, and Iberian lynxes;",
+          "note": "Named as a dangerous wild animal, so it needs the Ohio Department of Agriculture permit under Chapter 935, the same position as the serval. The Canada lynx is also federally threatened, which brings federal rules on interstate sale.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "TX": {
+          "status": "permit",
+          "sourceId": "tx-822-101",
+          "cite": "Health & Safety Code §§ 822.101(4)(I), 822.103, 822.107, 822.116(b)",
+          "quote": "\"Dangerous wild animal\" means: ... (H) a bobcat; (I) a lynx; (J) a serval; ...",
+          "note": "Named at clause (I), the serval's position: a certificate of registration from local animal control or the sheriff, liability insurance of at least $100,000, and a local power to prohibit outright. The Canada lynx is not a Texas animal, so the state threatened list does not reach it; it is federally threatened, which brings federal rules on interstate sale.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MI": {
+          "status": "banned",
+          "sourceId": "mi-r-299-1027",
+          "cite": "Mich. Admin. Code R 299.1027(1); NREPA Part 365",
+          "quote": "The following mammal species are included on the state list of endangered species: Felis concolor Cougar Lynx canadensis Lynx Microtus ochrogaster Prairie vole Myotis sodalis Indiana bat",
+          "note": "The Large Carnivore Act does not name the lynx, but Michigan lists Lynx canadensis as state endangered, and Part 365 bars possessing a listed species without a DNR permit, which is issued for scientific, zoological and conservation purposes rather than to keep a pet. It is federally threatened as well.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "IL": {
+          "status": "banned",
+          "sourceId": "il-720-48-10",
+          "cite": "720 ILCS 5/48-10(a), (b)",
+          "quote": "\"Dangerous animal\" means a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote. Dangerous animal does not mean any herptiles included in the Herptiles-Herps Act.",
+          "note": "\"Lynx\" is named as a dangerous animal. § 48-10(b) allows a dangerous animal only at a zoological park, federally licensed exhibit, circus, college or university, scientific institution, research laboratory, veterinary hospital, hound running area or animal refuge, so there is no private route. Illinois is a home rule state, so a municipal ordinance can be stricter and often decides it.",
+          "localOverride": true,
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MN": {
+          "status": "banned",
+          "sourceId": "mn-346-155",
+          "cite": "§ 346.155, subd. 1(e)(1), subd. 2",
+          "quote": "all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association; (2) bears; and (3) all nonhuman primates",
+          "note": "A felid, so a regulated animal that no one may take possession of after 1 January 2005. It is also small game and federally threatened.",
+          "grandfathered": {
+            "before": "2005-01-01",
+            "detail": "Possessed on 1 January 2005 and brought into Animal Welfare Act compliance within 90 days. Breeding after that date is barred, and a non-USDA-licensed keeper may replace the animal only once."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(q)",
+          "quote": "(q) All felines, except mountain lions and bobcats;",
+          "note": "Nevada clears every cat except the mountain lion and the bobcat, and the Canada lynx is neither, so the state requires no permit, the serval's position. The lynx is federally threatened, which brings federal rules on interstate sale and import, and NAC 503.140(4) says the clearance does not authorize anything that violates federal law. NAC 503.140(4) preserves county and city ordinances, and Clark County, Las Vegas and Henderson are all stricter than the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "VA": {
+          "status": "permit",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "§ 15-30-40(A)",
+          "quote": "Felidae   All Species   Cats*",
+          "note": "The Canada lynx is not a Virginia animal, so it is a nonnative (exotic) animal caught by the whole-family Felidae row, the serval's position: a special permit to import, possess or sell. It is federally threatened as well.",
+          "grandfathered": {
+            "before": "1992-07-01",
+            "detail": "Asterisked rows allow an animal held before 1 July 1992 and declared in writing by 1 January 1993 to be kept under a possession-only permit that renews every five years and cannot be transferred."
+          },
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MD": {
+          "status": "banned",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1)(iii)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "Every member of the cat family other than the domestic cat is barred. There is no private permit: the exemptions run to zoos, sanctuaries, research and licensed exhibitors. Subsection (e) preserves stricter county and municipal rules.",
+          "localOverride": true,
+          "grandfathered": {
+            "before": "2006-05-31",
+            "detail": "Lawful possession on or before 31 May 2006 may continue, but only if the keeper gave written notification to the local animal control authority by 1 August 2006, with the number and type of animals and a photograph or a description of a tattoo or microchip. That window is long closed."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Mammal | Cat, wild | Felidae | Lynx canadensis | Lynx, Canada | IV | Federally Threatened",
+          "note": "Named outright in Group IV. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. 19.35.7 NMAC is an importation rule, so it governs bringing the animal into New Mexico rather than keeping one already here.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "A wild felid on no list, so Restricted by default. The Canada lynx is also a Vermont native and federally threatened. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "UT": {
+          "status": "restricted",
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1 header",
+          "quote": "Except as otherwise listed, all species are presumed prohibited. All species not listed will require an assessment before collection, importation, or possession will be authorized.",
+          "note": "Table 3b-1 names the bobcat and the Eurasian lynx as controlled, captive bred, and not the Canada lynx, which is unlisted. It is also federally threatened and a Utah native. Unlisted birds and mammals are presumed prohibited and need a division assessment before possession is authorized, so this is neither cleared nor expressly banned; it is an application to DWR with no published answer, the serval's position.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
+          "quote": "Unless specifically exempt from the permitting requirement as presented in regulation 6.1, all persons who would own or have custody of an exotic animal must first obtain a permit issued by the Department.",
+          "note": "The Canada lynx is not a Delaware animal and is not on the exempt list, so it needs the Individual permit, the serval's position. It is federally threatened, which brings federal rules on interstate sale. The $25 Individual permit from the Department of Agriculture is issued where possession will be in the public interest, and Delaware's only outright refusals under 4.7 are the gila monster, the beaded lizard and the komodo dragon. County and municipal ordinances are the more likely obstacle.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-1660-01-18",
+          "cite": "Tenn. Code Ann. § 70-4-403(3); Tenn. Comp. R. & Regs. 1660-01-18-.03",
+          "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q).",
+          "note": "Class I's cats are lions, tigers, leopards, jaguars, cheetahs and cougars, and the Canada lynx is none of them and not a Tennessee animal, so it is Class III. It is federally threatened, which brings federal rules on interstate sale, and rule .01(2) requires a threatened species to have been legally obtained where it came from. The commission's rule chapter adds no mammal to Class I except hybrids of two Class I species. Rule .01(4) asks every keeper of live wildlife to be able to prove legal ownership, a purchase receipt from a licensed propagator among the accepted forms.",
+          "verifiedOn": "2026-10-08"
+        },
+        "NC": {
+          "status": "legal",
+          "sourceId": "nc-14-417",
+          "cite": "N.C. Gen. Stat. § 14-417",
+          "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
+          "note": "The serval's position: no statewide rule reaches a nonnative wild cat. The game and fur-bearer definitions name the bobcat and not the lynx. The Canada lynx is federally threatened, which brings federal rules on interstate sale. § 153A-131 lets counties regulate dangerous animals, and several have used it, so the county ordinance is the rule to check.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "AR": {
+          "status": "permit",
+          "sourceId": "ar-unrestricted",
+          "cite": "Code Addendum R1.02; Codes 09.02, 09.07, 09.10",
+          "quote": "A. Permits for breeding, sale, and importation may be issued for the following species in accordance with Codes 09.07 (Wildlife Breeder/ Dealer Permit Required) and 09.10 (Wildlife Importation Permit Required): ... 3. Mammals ... Canadian Lynx (Lynx canadensis)",
+          "note": "Named on the permit list beside the Eurasian lynx and the serval. It is federally threatened, which brings federal rules on interstate sale. A non-native animal on the permit list may be kept if it came from a Commission-permitted Wildlife Breeder/Dealer or in on a Wildlife Importation Permit, with acquisition records, a veterinary disease certificate and sexes housed apart unless neutered, under Code 09.02.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "ID": {
+          "status": "permit",
+          "sourceId": "id-130110",
+          "cite": "IDAPA 13.01.10.200.01, .03",
+          "quote": "No person may import into Idaho, export from Idaho, transport, possess or otherwise hold in captivity, propagate, sell or release into the wild any live wildlife, except those animals exempted by Idaho Code or these rules, without a corresponding import, export, transport, captive possession (individual animal license or multiple animal license at a private, commercial or rehabilitation facility), sale or release license/permit from the Department.",
+          "note": "The Canada lynx is Idaho wildlife and not a conventional pet, so it needs a Fish and Game captive possession license. It is federally threatened and an Idaho native, and § 200.03 lets the Department refuse any license that would threaten native wildlife, which makes this a permit on paper more than a likely one. The deleterious exotic animal list names only the caracal among lynx-like cats.",
+          "verifiedOn": "2026-10-01"
+        },
+        "IA": {
+          "status": "banned",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(3)",
+          "quote": "A member of the family felidae of the order carnivora, including but not limited to lions, tigers, cougars, leopards, cheetahs, ocelots, and servals. However, a dangerous wild animal does not include a domestic cat.",
+          "note": "A felid other than the domestic cat. § 717F.3 bars owning, possessing, breeding or importing a dangerous wild animal, and the only route was the 2007 registration.",
+          "grandfathered": {
+            "before": "2007-07-01",
+            "detail": "An owner in possession on 1 July 2007 could keep the animal after implanting an electronic identification device within sixty days and registering with the department by 31 December 2007. No new route exists."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "KY": {
+          "status": "banned",
+          "sourceId": "ky-301-2-082",
+          "cite": "301 KAR 2:082 § 4(2)(o)",
+          "quote": "(o) Lynx (Genus Lynx);",
+          "note": "The whole genus Lynx is inherently dangerous exotic wildlife, which may not be imported, transported or possessed except under the § 5 and § 6 exceptions for zoos, exhibitors and grandfathered holders.",
+          "localOverride": true,
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "RI": {
+          "status": "banned",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.7(A); § 3.9(B)",
+          "quote": "All exotic and native wild animals and hybrids of the order Carnivora for which there is no USDA conditionally licensed or unconditionally licensed rabies vaccine are expressly prohibited from importation or possession without the issuance of a valid permit by the Department. Possession is restricted to bona fide researchers, USDA licensed exhibitors authorized to possess animals of this order for short-term exhibition purposes, and Association of Zoos and Aquariums (AZA) certified facilities.",
+          "note": "A wild cat with no licensed rabies vaccine, the serval's position. § 3.9(B) adds that no permit shall be granted to a private person for an exotic carnivore without a licensed rabies vaccine.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.05, Table 800.2",
+          "quote": "Lynx, Canadian, Siberian   Lynx canadensis   5",
+          "note": "Named in the controlled table with category 5 alone. Permittee category 5 is the exhibitor category, with no category 1 for an individual, so a private keeper cannot be issued a possession permit.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MO": {
+          "status": "permit",
+          "sourceId": "mo-578-023",
+          "cite": "RSMo § 578.023(1); 3 CSR 10-9.110(2)",
+          "quote": "if he or she keeps any lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, Canada lynx, bobcat, jaguarundi, hyena, wolf, bear, nonhuman primate, coyote, any deadly, dangerous, or poisonous reptile, or any deadly or dangerous reptile over eight feet long",
+          "note": "The Canada lynx is named on Missouri's dangerous wild animal list, which does not ban it but makes it an offense to keep one without registering it with the local law enforcement agency in the county where it is kept. As a non-native mammal it needs no Wildlife Code permit. It is federally threatened, which brings federal rules on interstate sale.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-3(a), (b), (d); K.S.A. 32-1301(d)",
+          "quote": "(a) Subject to federal or state law or rules and regulations, exotic wildlife species may be imported, possessed, sold, offered for sale or purchased, provided the exotic wildlife was legally captured, raised, exported, possessed, sold or purchased or any combination of these activities in its place of origin. (b) Exotic wildlife may be possessed without limit in time and number.",
+          "note": "Not a Kansas animal, so exotic wildlife, and the dangerous regulated animal list names only lions, tigers, leopards, jaguars, cheetahs and mountain lions among cats. It is federally threatened, which brings federal rules on interstate sale. It is not a dangerous regulated animal under K.S.A. 32-1301 and not on the 115-18-10 prohibited list, whose only canid is the Asian raccoon dog.",
+          "verifiedOn": "2026-10-01"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-47-2",
+          "cite": "§ 47-2-10(2); § 50-16-20(A)(1)",
+          "quote": "Family Felidae, Genus panthera - all lions, tigers, leopards, jaguars, cougars, cheetahs, snow leopards, and clouded leopards;",
+          "note": "Read and nothing found. The large cat ban is drawn at genus Panthera and the lynx is outside it, and it is not among the named furbearers, the serval's position. It is federally threatened, which brings federal rules on interstate sale.",
+          "verifiedOn": "2026-10-01"
+        },
+        "MT": {
+          "status": "unclear",
+          "sourceId": "mt-87-4-8",
+          "cite": "MCA §§ 87-4-801(3), 87-4-803, 87-4-804",
+          "quote": "\"Wild animal menagerie\" means any place where one or more bears or large cats, including cougars, lions, tigers, jaguars, leopards, pumas, cheetahs, ocelots, and hybrids of those large cats are kept in captivity for use other than public exhibition.",
+          "note": "Same position as the bobcat: native, so outside the exotic white list, and not named among the \"large cats\" a wild animal menagerie permit covers, although the list reaches the smaller ocelot. The lynx is also federally threatened in the lower 48, which bars taking one from the wild and requires a federal permit to move one across state lines in commerce.",
+          "verifiedOn": "2026-10-08"
+        },
+        "WV": {
+          "status": "banned",
+          "sourceId": "wv-19-34",
+          "cite": "W. Va. Code § 19-34-4; W. Va. C.S.R. § 74-1-3.1.g.2",
+          "quote": "3.1.g.2. Lynxes, including Canadian lynxes, Eurasian lynxes, and Iberian lynxes;",
+          "note": "Named on the Dangerous Wild Animal list, and § 19-34-4(a) bars possessing a listed animal. The only permit in § 19-34-4(b) is for someone who already lawfully had the animal before the rules took effect, and § 19-34-6(b)(1) then bars breeding, receiving or replacing one.",
+          "grandfathered": {
+            "before": "2022-04-05",
+            "detail": "Lawfully possessed before the board's rules took effect, then permitted annually by the board, with no breeding, acquiring or replacing."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "AK": {
+          "status": "banned",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(a), (c); AS 16.05.940(19)",
+          "quote": "The department may not issue a permit for the capture, possession, import, or export of any game animal, including a hybrid of a game animal and a species listed in (b) of this section, for use as a pet",
+          "note": "A native Alaska furbearer, so game, and the only cat on the clean list is the house cat. Subsection (c) bars a pet permit. Alaska's lynx is not federally listed, unlike the lower 48 population, but that changes nothing here.",
+          "verifiedOn": "2026-10-01"
+        },
+        "SD": {
+          "status": "permit",
+          "sourceId": "sd-12-68-18",
+          "cite": "ARSD 12:68:18:03(1)(a); 12:68:18:03.03(4)",
+          "quote": "(1) Of the order Carnivora, all nondomestic members of the following families: (a) Felidae;",
+          "note": "A felid, so the ten-dollar possession permit. The Canada lynx is federally threatened in the lower 48, which adds a federal permit for moving one across state lines in commerce; South Dakota's rule itself draws no distinction.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-26",
+          "cite": "§ (1)",
+          "quote": "Any of the following from any area outside the state of Alabama; any member of the family Cervidae (to include but not be limited to deer, elk, moose, caribou), species of coyote, species of fox, species of raccoon, species of skunk, wild rodent, or strain of wild turkey, black bear (Ursus americanus), mountain lion (Felis concolor), bobcat (Felis rufus)",
+          "note": "The only cats the rule names are Alabama's own mountain lion and bobcat. The Canada lynx is neither, is not native, and is not federally injurious, so the state rule does not reach it. Its federal threatened listing in the lower 48 is a separate layer: a federal permit is needed to move one across state lines in commerce.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "IN": {
+          "status": "permit",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)(3); 9-11-2(c), (e)",
+          "quote": "(1) Wolves that are purebred. (2) Bears (all species). (3) Wild cats (all species), except feral cats and cats listed in section 7 of this rule.",
+          "note": "A wild cat not on the Class II list, so Class III: permit first, then possession, with a recapture plan, a cage inspection and proof of lawful acquisition. The lynx is also federally threatened in the lower 48, which adds a federal permit to move one across state lines in commerce.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "ND": {
+          "status": "permit",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(2)(b), (3)(b); 48.1-09-01-03(1)",
+          "quote": "Category 2 species of nontraditional livestock includes the following species and their hybrids, all nondomestic ungulates, including all deer (cervidae) and pronghorn, zebras, nondomestic cats not listed in category 3, waterfowl, shorebirds, upland game birds not listed in category 1, crows, wolverines, otters, bats, martens, fishers, kit or swift foxes, badgers, coyotes, mink, red and gray foxes",
+          "note": "A nondomestic cat not among the big cats in category 3, so category 2: a license before acquisition and an approved premises. The Canada lynx is federally threatened in the lower 48, which adds a federal permit for moving one across state lines in commerce.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "WY": {
+          "status": "banned",
+          "sourceId": "wy-ch10",
+          "cite": "Ch. 10 § 11(b)(xv), (xvi); Wyo. Stat. § 23-1-101(a)(ix)",
+          "quote": "In addition, a permit shall not be issued for importation or possession of the following live warm-blooded wildlife in Wyoming, except as otherwise specified in this regulation. ... (xv) Endangered and threatened wildlife listed in 50 CFR 17.11; and (xvi) Protected animals",
+          "note": "Barred twice. The lynx is a \"protected animal\" by statute, and it is federally threatened under 50 CFR 17.11. Both are on the § 11(b) list for which no permit may be issued.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "Rule 8.3(A)(1)(b), (A)(5)(b)(v)",
+          "quote": "Family Canidae: Genus Canis (wolves, jackals, and dingos; all species, including crosses between wolves and domestic animals); excluding coyote (Canis latrans); Chrysocyon brachyurus (maned wolf); Cuon alpinus (red dog or dhole); Lycaon pictus (African hunting dog); ii. Family Ursidae (bears) - all species; iii. Family Mustelidae - Gulo gulo (wolverine); iv. Family Hyaenidae (hyenas) - all species; v. Family Felidae: Genus Leo or Panthera or Neofelis (lions, tigers, jaguars, and leopards) - all species; Acinonyx iubatus (cheetah); Felis concolor (cougar) - all subspecies;",
+          "note": "Rule 8.3's cat entry names the lion, tiger, jaguar, leopard, clouded leopard, cheetah and cougar only, so the lynx is not an inherently dangerous animal here, and it is not on the Rule 8.4 game list. The federal threatened listing in the lower 48 still requires a federal permit to move one across state lines in commerce.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-v-115",
+          "cite": "LAC 76:V.115.C.1.h",
+          "quote": "C.1.Except as provided herein, it shall be unlawful to import into, possess, purchase or sell within the state of Louisiana, by any means whatsoever including but not limited to transactions conducted via the internet, any of the following species or its subspecies of live wild quadrupeds, big exotic cats, or non-human primates, domesticated or otherwise (hereinafter \"listed animals\"): a.black bear (Ursus americanus); ... h.the following big exotic cats: i.tigers; ii.lions; iii.leopards ... iv.jaguars; v.cheetahs; vi.cougars or mountain lions (Felis concolor);",
+          "note": "The § 115 cat list is six named big cats and their hybrids, the same reading that leaves the serval legal. The lynx is not a Louisiana wild quadruped either. The federal threatened listing in the lower 48 requires a federal permit to move one across state lines in commerce.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(a)(4)",
+          "quote": "(4) Cats (except native cats and bears).",
+          "note": "The same entry that clears the serval: cats are exempt except native cats, and the Canada lynx is not native to Oklahoma. Its federal threatened listing in the lower 48 still requires a federal permit to move one across state lines in commerce, and § 7-502(A)(2) bars possessing a threatened species \"except as otherwise provided by law\", which a reader should weigh.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "NE": {
+          "status": "banned",
+          "sourceId": "ne-37-477",
+          "cite": "Neb. Rev. Stat. § 37-477(1), (2)(c), (3)",
+          "quote": "(2) Except as provided in subsection (3) of this section, no person shall keep in captivity in this state any wolf, any skunk, or any member of the families Felidae and Ursidae. This subsection shall not apply to ... (c) any person who holds a captive wildlife permit issued pursuant to section 37-479 and who raises Canada Lynx (Lynx canadensis) or bobcats (Lynx rufus) solely for the purpose of producing furs",
+          "note": "A felid, so banned by statute, with the fur-producer exception named for this species and the bobcat only. The Captive Wildlife Permit list marks the lynx \"For commercial purposes only\". It is also federally threatened, which § 37-477(1) separately puts under special permit.",
+          "grandfathered": {
+            "before": "1986-03-01",
+            "detail": "A person legally holding such an animal on 1 March 1986 may keep it for its lifetime under § 37-477(3), and may not trade, sell or dispose of it without the commission's written permission."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        }
+      },
+      "article": "/blog/canada-lynx-legal-guide/"
     }
   }
 }
