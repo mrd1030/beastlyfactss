@@ -79,6 +79,7 @@ moves verification dates forward; a research sitting never does.
 | `IN-in-312-iac-9.txt` | Indiana's three regimes: the native herp rule at 9-5, the invertebrate exemption at 9-9-5, and the permit classes at 9-11 |
 | `OK-ok-wildlife-rules.txt` | Oklahoma's exemption list, its reptile and amphibian part, the commercial turtle rule, and the four statutes that frame them |
 | `VT-vt-domestic-list.txt` | Vermont's third list, the one earlier sittings could not read; it decides the parrots, the rabbit, the dog and the cat |
+| `VT-vt-reg-881.txt` | Vermont Regulation 881 in full, whose § 5.2 has a second sentence the other VT files leave out: a permit for purposes other than research or education issues on a finding that the animal does not conflict with the rule's purpose |
 | `WI-wi-ch-169.txt` | Wisconsin's captive wildlife chapter: the definitions, the exemptions at 169.04(4), and the harmful wild animal power at 169.11 |
 | `NC-nc-wildlife-definitions.txt` | The one definition that answers North Carolina, plus the captivity licence it does not reach |
 | `SC-sc-wildlife-rules.txt` | South Carolina's import chapter and its 2021 native reptile rules, which override the pet-trade exemption |
