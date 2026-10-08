@@ -37365,6 +37365,451 @@
         }
       },
       "article": "/blog/virginia-opossum-legal-guide/"
+    },
+    "wallaby": {
+      "name": "Bennett's wallaby",
+      "scientific": "Notamacropus rufogriseus",
+      "jurisdictions": {
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(C)",
+          "quote": "Order Marsupialia-Marsupials or Pouched Animals: All species (W)",
+          "note": "Marsupials are restricted as a whole order, marked (W) for welfare, so a wallaby has no pet route. The only possession permit, Animal Care, requires lawful possession before January 1992.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-391-4-8-05",
+          "cite": "R. 391-4-8-.04(1)(a)3; O.C.G.A. § 27-5-4(b)(1), (f)",
+          "quote": "Order Diprotodontia: Family Macropodidae (Kangaroos, wallabies, wallaroos, etc.) - All species;",
+          "note": "Georgia puts wallabies by name in the inherently dangerous tier, which needs a license and liability insurance, and licenses issue only to dealers and exhibitors. DNR's pet guide lists marsupials \"(wallabies, kangaroos, sugar gliders, etc.)\" among exotics that may not be held as pets, with the sugar glider the only exception.",
+          "verifiedOn": "2026-10-01"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6-5b",
+          "cite": "Restricted Animal List Part B; HAR § 4-71-2",
+          "quote": "FAMILY Macropodidae Macropus eugenii wallaby, dama ... Macropus rufogriseus wallaby, Bennett's",
+          "note": "Hawaii names this exact animal on Part B, the private and commercial use list, so it can come in by permit. That permit is not a pet permit: § 4-71-2 defines private use as \"use for non-commercial purposes, such as non-profit research, and does not include individual possession of an animal as a pet.\" A Bennett's wallaby can be held by a business, zoo or research body, not kept as a pet.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "PA": {
+          "status": "unclear",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)(11); 34 Pa.C.S. §§ 102, 2961",
+          "quote": "Game or wild held captive . Game or wildlife held in captivity or captive bred in another state or nation.",
+          "note": "No Pennsylvania text names a wallaby or any macropod. What arguably reaches it is the catch-all barring wildlife captive bred in another state, read with 34 Pa.C.S. § 102, under which every mammal but livestock is a wild animal, and the Game Commission's reading of the open-ended exotic wildlife definition, which is how it bars the sugar glider, another marsupial. Recorded unclear rather than banned because no text names the animal, the same answer the capybara and kinkajou get.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following",
+          "note": "No marsupial fits any of the District's seven categories, and the section has no permit route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "§ 161.01(b)(17)",
+          "quote": "All marsupials, including, but not limited to, Tasmanian devil, dasyure, bandicoot, kangaroo, wallaby, opossum, wombat, koala bear, cuscus, numbat and pigmy, sugar and greater glider.",
+          "note": "The marsupial clause names the wallaby. The Code's only exceptions are the Parks Department and Wildlife Conservation Society zoos, labs, veterinary facilities and permitted temporary exhibits, so there is no pet route.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-njac-7-25",
+          "cite": "N.J.A.C. 7:25-4.2(a), 4.5, 4.6(a)1",
+          "quote": "Individual hobby--issued to persons holding exotic mammals, birds, reptiles or amphibians or nongame species for hobby purposes or as pets.",
+          "note": "No wallaby or other macropod appears on the exempt list, the permit list or the potentially dangerous table, so 4.5 sweeps it into the general permit requirement, the same route the sugar glider takes. The permit that fits is the individual hobby permit, issued on the 4.7 criteria: diet, escape-proof caging, lawful acquisition, veterinary care and freedom from disease.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "ME": {
+          "status": "banned",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.18(2)(F); § 7.06(3)(A)(2)(a)",
+          "quote": "Family Macropodidae All Species in Family Macropodidae (Kangaroos, Wallabies, and Allies) ... An applicant for a permit pertaining to Category 1 Restricted Species must be an exhibitor, wildlife rehabilitator; laboratory registered with the United States Department of Agriculture, or accredited research facility.",
+          "note": "Every macropod is Category 1. The only marsupial on the Unrestricted List is the sugar glider. Category 1 permits go only to exhibitors, rehabilitators, USDA-registered laboratories and accredited research facilities, so there is no pet route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.01(9), 169.11(1)(a)",
+          "quote": "A person is exempt from holding a license or other approval as required under this chapter to possess live nonnative wild animals that are not endangered or threatened species, except for any of the following:",
+          "note": "A wallaby is a nonnative wild animal that is neither harmful nor an indigenous listed species, so it needs no Wisconsin license. Local ordinances were not checked.",
+          "verifiedOn": "2026-10-01"
+        },
+        "FL": {
+          "status": "permit",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.002(1)(c); 68A-6.003(8)",
+          "quote": "Class III: All other wildlife not listed herein, except those for which a permit is not required pursuant to Rule 68A-6.003, F.A.C.",
+          "note": "No macropod is on Class I or II, and the no-permit list's only marsupials are honey possums and sugar gliders, so a wallaby falls to Class III and the free personal use permit. Marsupials have their own caging standard at 68A-6.0127.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e); 6 NYCRR § 180.1(b)",
+          "quote": "Wild animal includes, and is limited to, any or all of the following orders and families:",
+          "note": "The wild animal list is closed, \"includes, and is limited to\", and runs to primates, cats, canids, bears, a set of reptiles and crocodilians. No marsupial is on it, and none is among the dangerous animals in 180.1, so the state does not restrict a wallaby. New York City's Health Code bars every marsupial and is mapped separately.",
+          "verifiedOn": "2026-10-01"
+        },
+        "CT": {
+          "status": "unclear",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(3)(B)(vi) to (xvi)",
+          "quote": "(xi) A member within the subgenus Macropus (including, but not limited to, gray kangaroo);",
+          "note": "Connecticut lists macropods one genus or subgenus at a time: tree kangaroos, the forest wallabies, hare-wallabies, the subgenus Osphranter, the subgenus Macropus, nail-tailed and rock wallabies, the quokka, pademelons and the swamp wallaby. Bennett's wallaby belongs to neither subgenus named: it was Macropus (Notamacropus) rufogriseus and is now Notamacropus rufogriseus. Read as written, the rule names subgenera with care and leaves Notamacropus out, which would make the animal unrestricted. Read as the drafters likely meant it, \"subgenus Macropus\" could be taken for the old genus, and the definition applies \"notwithstanding changes in taxonomic nomenclature\". Recorded unclear rather than legal because the text arguably reaches the animal without naming it.",
+          "verifiedOn": "2026-10-01"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(1), (12)(a)",
+          "quote": "The purpose of 321 CMR 9.01 is to list those species which are exempt from the licensing provisions of M.G.L. c. 131, § 23, and which may be imported, possessed, maintained, propagated, bought, sold, exchanged or offered for sale without a license or permit from the Division. Species not listed, or which are expressly listed as \"require(s) a permit\", are not exempt from the provisions of M.G.L. c. 131, § 23.",
+          "note": "The thirteen-entry mammal exemption list has no wallaby; its only marsupial is the sugar glider, so in this closed-list state it needs a § 23 license; MassWildlife's own summary says \"You cannot have in your possession any mammal not listed as legal or domestic.\" The license under § 23 exists on paper, but MassWildlife says permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\"",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w11",
+          "cite": "2 CCR 406-11 § 1103(B)",
+          "quote": "Mammals: African pygmy hedgehog (Atelerix albiventris, Erinaceus albiventris) Sugar Gliders (Petaurus breviceps) Short-tailed Possum (Monodelphis domestica) Dama (Tammar) Wallaby (Macropus eugenii) Swamp Wallaby (Wallabia bicolor) Bennet (Red-necked) Wallaby (Macropus rufogriseus)",
+          "note": "Colorado names Bennett's wallaby on its unregulated wildlife list, which may be \"imported, sold, bartered, traded, transferred, possessed, propagated and transported in Colorado\" with no license, subject to importation and disease rules. CPW's species list gives the same answer under the current name.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(F)",
+          "quote": "Unless otherwise specified, all mammals listed below are considered restricted live wildlife:",
+          "note": "The mammal list names one marsupial genus, Didelphis, the American opossums. No macropod is on it, so a wallaby is not restricted live wildlife in Arizona.",
+          "verifiedOn": "2026-10-08"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(1)(h)(B)",
+          "quote": "(B) Kangaroos and wallabies -- Macropodidae -- All species;",
+          "note": "Every macropod is on the noncontrolled list, which may be imported, possessed, sold and transported without an ODFW permit; the list's heading notes that some species need a Department of Agriculture permit. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-77-08-010",
+          "cite": "RCW 77.08.010(72); WAC 220-640-200(1); RCW 16.30.010(2)",
+          "quote": "\"Wild animals\" means those species of the class Mammalia whose members exist in Washington in a wild state.",
+          "note": "A wallaby does not live wild in Washington, so the Title 77 wildlife rules do not reach it; it is not on the deleterious exotic wildlife list, and RCW 16.30 names no marsupial. The state does not restrict it.",
+          "verifiedOn": "2026-10-01"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01",
+          "cite": "R.C. 935.01(C); 1533.71(A)",
+          "quote": "\"Dangerous wild animal\" means any of the following, including hybrids unless otherwise specified:",
+          "note": "No marsupial is on Ohio's dangerous wild animal list, and the Division of Wildlife's captivity license in § 1533.71 reaches game birds, game quadrupeds, reptiles, amphibians and fur-bearers, none of which a wallaby is. The state does not restrict it.",
+          "verifiedOn": "2026-10-01"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101",
+          "cite": "Health & Safety Code § 822.101(4)",
+          "quote": "\"Dangerous wild animal\" means: (A) a lion; (B) a tiger; (C) an ocelot; (D) a cougar; (E) a leopard; (F) a cheetah; (G) a jaguar; (H) a bobcat; (I) a lynx; (J) a serval; (K) a caracal; (L) a hyena; (M) a bear; (N) a coyote; (O) a jackal; (P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla; or (T) any hybrid of an animal listed in this subdivision.",
+          "note": "No marsupial is on the dangerous wild animal list, and a wallaby is neither a Texas native nor a snake, so neither the nongame rules nor the controlled exotic snake permit reach it. The state does not restrict it. Local ordinances were not checked.",
+          "verifiedOn": "2026-10-01"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-large-carnivore",
+          "cite": "MCL 287.1102(f); NREPA Part 427; MCL 287.731",
+          "quote": "(f) \"Large carnivore\" means any of the following cats of the Felidae family, whether wild or captive bred, including a hybrid cross with such a cat: a lion, a leopard (including a snow leopard or clouded leopard), a jaguar, a tiger, a cougar, a panther, or a cheetah; or a bear of a species that is native or nonnative to Michigan, whether wild or captive bred.",
+          "note": "No Michigan rule read here reaches a wallaby: the Large Carnivore Act names cats and bears, the captive game permit lists native game, and the Animal Industry Act asks only for a certificate of veterinary inspection to import an exotic animal. NREPA Part 413's prohibited and restricted species list could not be read, so that is the open check.",
+          "verifiedOn": "2026-10-01"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-720-48-10",
+          "cite": "720 ILCS 5/48-10(a); 17 Ill. Adm. Code 805.20(a)",
+          "quote": "\"Dangerous animal\" means a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote.",
+          "note": "No marsupial is a dangerous animal, the Wildlife Code reaches only native wild birds and mammals, and the one marsupial on the Part 805 injurious list is the brushtail possum. Illinois does not restrict a wallaby. It is a home rule state, so a municipal ordinance can be stricter.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.015, subds. 39, 53; § 346.155, subd. 1(e)",
+          "quote": "\"Unprotected wild animals\" means wild animals that are not protected wild animals including coyote, plains pocket gopher, porcupine, striped skunk, and unprotected birds, except any animal species listed as endangered, threatened, or of special concern in Minnesota Rules, chapter 6134.",
+          "note": "A wallaby is a wild animal under subd. 55 but not a protected one: it is not game, not one of the protected groups and not on the state list. That leaves it outside the § 97A.501 bar, and § 346.155 regulates only cats, bears and primates. The state does not restrict it; local ordinances were not checked.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(o), (4)",
+          "quote": "Except as otherwise provided in subsection 4 and NAC 503.500 to 503.535, inclusive, the following animals may be possessed, transported, imported and exported without a permit or license issued by the Department: ... (o)Marsupials;",
+          "note": "Nevada clears every marsupial from any state permit, which takes in the wallaby. NAC 503.140(4) preserves county and city ordinances, so check the municipality as well.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "4VAC15-30-40(A); 4VAC15-20-50",
+          "quote": "A special permit is required and may be issued by the department, if consistent with the department's fish and wildlife management program, to import, possess, or sell those nonnative (exotic) animals listed in the following table",
+          "note": "No marsupial is on Virginia's exotic permit table, so a wallaby is a nonnative animal the state does not restrict. Local ordinances were not checked.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1); Nat. Res. §§ 10-902(a), 10-903",
+          "quote": "Any person desiring to possess, import, export, breed, raise, protect, rehabilitate, hunt, kill, trap, capture, purchase, or sell any wildlife native to Maryland, shall first obtain a permit or license from the Department.",
+          "note": "§ 10-621 reaches cats, dogs, primates, the rabies vector mammals, crocodilians and venomous snakes, and § 10-902's permit attaches only to wildlife native to Maryland. A wallaby is neither, and Maryland has used its power over nonnative wildlife in § 10-903 only for aquatic organisms, so the state does not restrict it. Subsection (e) of § 10-621 preserves stricter county and municipal rules.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Kangaroo | Macropodidae all species | Kangaroos, wallabies | IV",
+          "note": "Every macropod is in Group IV. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. 19.35.7 NMAC is an importation rule, so it governs bringing the animal into New Mexico rather than keeping one already here.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "The Unrestricted list's only marsupials are the feathertail glider and the sugar glider, so a wallaby is restricted by absence. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "UT": {
+          "status": "permit",
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1, controlled mammals; R657-3b",
+          "quote": "Kangaroos and wallabies family Macropodidae",
+          "note": "Every macropod is a controlled mammal, the bobcat's and fennec fox's column, so a certificate of registration is required before importation or possession, and a route exists.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, 7.1.1, with Del. Code tit. 3 § 7201",
+          "quote": "When an exotic is kept as a pet, the owner or custodian of the exotic must apply to the Department for an Individual Permit on a form supplied by the Department.",
+          "note": "A wallaby is a live wild mammal not native to Delaware and is not on the exempt list, so an Individual Permit is required. The Individual Permit is issued per animal for three years, after the Department is satisfied the animal will be held in a sturdy, escape-proof primary enclosure inside a secondary enclosure that keeps the public out, and a background check may be run. Delaware's only outright refusals at 4.7 are the gila monster, the beaded lizard and the komodo dragon. County and municipal ordinances were not checked.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "Tenn. Code Ann. § 70-4-403(3)(J)",
+          "quote": "(3) Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... (J) Marsupials;",
+          "note": "Marsupials are named in Class III, which needs no wildlife permit. Local ordinances were not checked.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NC": {
+          "status": "legal",
+          "sourceId": "nc-153a-131",
+          "cite": "§ 153A-131",
+          "quote": "A county may by ordinance regulate, restrict, or prohibit the possession or harboring of animals which are dangerous to persons or property.",
+          "note": "No statewide North Carolina rule names a marsupial other than the opossum. § 153A-131 hands the question to counties, several of which have used it, so the local ordinance decides most cases.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "AR": {
+          "status": "permit",
+          "sourceId": "ar-unrestricted",
+          "cite": "Code Addendum R1.02; Codes 09.02, 09.07, 09.10",
+          "quote": "A. Permits for breeding, sale, and importation may be issued for the following species in accordance with Codes 09.07 (Wildlife Breeder/ Dealer Permit Required) and 09.10 (Wildlife Importation Permit Required): ... 3. Mammals ... Red-necked or Bennet’s Wallaby (Macropus rufogriseus)",
+          "note": "Named on the permit list under its older genus, beside the red kangaroo. A non-native animal on the permit list may be kept if it came from a Commission-permitted Wildlife Breeder/Dealer or in on a Wildlife Importation Permit, with acquisition records, a veterinary disease certificate and sexes housed apart unless neutered, under Code 09.02.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "ID": {
+          "status": "permit",
+          "sourceId": "id-130110",
+          "cite": "IDAPA 13.01.10.200.01; .010.06; Idaho Code § 36-202(g); IDAPA 02.04.27.406",
+          "quote": "No person may import into Idaho, export from Idaho, transport, possess or otherwise hold in captivity, propagate, sell or release into the wild any live wildlife, except those animals exempted by Idaho Code or these rules, without a corresponding import, export, transport, captive possession (individual animal license or multiple animal license at a private, commercial or rehabilitation facility), sale or release license/permit from the Department.",
+          "note": "Idaho Code § 36-202(g) defines wildlife as animal life \"native or exotic, generally living in a state of nature\", and the conventional pets list has no marsupial but the sugar glider, so a captive possession license from Fish and Game is required. The Agriculture deleterious list names only the brush-tailed possum among marsupials.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-481a-definitions",
+          "cite": "§ 481A.1(36); § 717F.1(5)",
+          "quote": "\"Wild animal\" means a wild mammal, bird, fish, amphibian, reptile, or other wildlife found in this state,",
+          "note": "No marsupial is among the dangerous wild animal families in § 717F.1(5), and chapter 481A reaches only wildlife found in Iowa, so no state rule reaches a wallaby. Cities and counties may still have their own rules.",
+          "verifiedOn": "2026-10-08"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4; § 2(1); § 7",
+          "quote": "Except as established in Sections 5 and 6 of this administrative regulation, a person shall not import, transport, or possess the following inherently dangerous exotic wildlife:",
+          "note": "No marsupial is on either prohibited list, so possession of a wallaby is lawful. It is not on the § 7 permit-exempt list either, so a transportation permit is needed to bring one into the state, and a city or county may prohibit it under KRS 65.877.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "RI": {
+          "status": "permit",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.6(A)(9); § 3.9(A)-(C); § 3.17",
+          "quote": "9. \"Exotic animal\" or \"Exotic wild animal\" means any vertebrate or invertebrate other than those defined as domestic animals, native wildlife, or exempt exotic animals.",
+          "note": "The mammal exemption in § 3.17(A)(6)(a) clears only the sugar glider among marsupials, so the wallaby is an exotic animal that needs an exotic animal possession permit from the Division of Agriculture. § 3.9(A) makes that permit available to private persons for animals § 3.7 does not expressly prohibit, and § 3.7 does not name it.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.05(b), Table 800.2",
+          "quote": "(b) A permit shall be issued only to a person in the permittee category(ies), as defined in Fis 802.01, and cited in Table 800.2 as follows: ... 5 Wallaby, Dama, Tammar, Bennett",
+          "note": "The wallaby row names Bennett's wallaby. Table 800.2 marks it for permittee category 5 only, and category 5 is exhibitors, so no permit can issue to an individual (category 1).",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.110(2); 3 CSR 10-4.117; RSMo § 578.023",
+          "quote": "the following may be bought, sold, possessed, transported, and exhibited without permit: ... amphibians, reptiles, and mammals not native to Missouri except those mammals located in a licensed big game hunting preserve;",
+          "note": "A wallaby is a mammal not native to Missouri, so it may be kept without a permit. It is not on the 4.117 prohibited species list, whose only marsupial is the brushtail possum, and not on the § 578.023 dangerous wild animal list.",
+          "verifiedOn": "2026-10-08"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-3(a), (b), (d); K.S.A. 32-1301(d)",
+          "quote": "(a) Subject to federal or state law or rules and regulations, exotic wildlife species may be imported, possessed, sold, offered for sale or purchased, provided the exotic wildlife was legally captured, raised, exported, possessed, sold or purchased or any combination of these activities in its place of origin. (b) Exotic wildlife may be possessed without limit in time and number.",
+          "note": "Not native to Kansas, so exotic wildlife under 115-20-3(d), which may be possessed without limit in time and number if legally obtained where it came from. It is not a dangerous regulated animal, and the 115-18-10 prohibited list has no marsupial.",
+          "verifiedOn": "2026-10-01"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-20(A); § 47-2-10(2)",
+          "quote": "It is unlawful for a person to import, possess, or transport for the purpose of release or to introduce or bring into this State any live wildlife of the following types without a permit from the department:",
+          "note": "A wallaby is none of the animals § 50-16-20(A) requires an import permit for, and not a large wild cat, non-native bear or great ape under Title 47, so no state rule reaches it. A city or county may have its own.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MT": {
+          "status": "legal",
+          "sourceId": "mt-arm-12-6-22",
+          "cite": "ARM 12.6.2205(1)(g)",
+          "quote": "(1) The following mammals are classified as noncontrolled species: ... (g) Wallaby (Bennets) - Macropus rufogriseus;",
+          "note": "Named on the noncontrolled list under its older genus, so no permit is needed. The wallaroo, by contrast, is controlled.",
+          "verifiedOn": "2026-10-01"
+        },
+        "WV": {
+          "status": "legal",
+          "sourceId": "wv-20-1-2",
+          "cite": "W. Va. C.S.R. § 74-1-3; W. Va. Code § 20-1-2",
+          "quote": "\"Wild animals\" means all mammals native to the State of West Virginia occurring either in a natural state or in captivity,",
+          "note": "The wallaby is not on the Dangerous Wild Animal list, and as a mammal not native to West Virginia it is not a \"wild animal\" under § 20-1-2, so neither the wildlife chapter nor the importation permit in § 20-2-13 reaches it. No West Virginia rule read here applies.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AK": {
+          "status": "banned",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(a), (c); AS 16.05.940(19)",
+          "quote": "The department may not issue a permit for the capture, possession, import, or export of any game animal, including a hybrid of a game animal and a species listed in (b) of this section, for use as a pet",
+          "note": "A mammal, so game under AS 16.05.940(19). Absent from the clean list in § 92.029(b), and subsection (c) closes the permit route for anything kept as a pet.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-12-68-18",
+          "cite": "ARSD 12:68:18:03; 12:68:18:03.01",
+          "quote": "a permit as described in § 12:68:18:03.03 is required to possess in South Dakota any nondomestic mammal, or any of its hybrids, listed in this section",
+          "note": "Marsupials are absent from the possession permit list, which runs to five carnivore families, hoofed mammals, tapirs, rhinos, elephants and primates, and the only specifically prohibited mammal is the raccoon dog. The free entry permit under 12:68:18:03.03(1) applies to bringing one in.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-26",
+          "cite": "r. 220-2-.26(1)",
+          "quote": "(1) No person, firm, corporation, partnership, or association shall possess, sell, offer for sale, import, bring, release, or cause to be brought or imported into the State of Alabama any of the following live fish or animals:",
+          "note": "Alabama's restricted list has no marsupial or sloth, and no other Alabama rule read here reaches a wallaby. A city or county may have its own rule.",
+          "verifiedOn": "2026-10-01"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-1(a); 9-11-6, 9-11-7, 9-11-8",
+          "quote": "(a) Except as provided in IC 14-22-26-2 or as exempted under subsections (d) and (e), a person must have a permit issued by the department under this rule to possess a wild animal if the wild animal is either of the following: (1) Referenced in this rule. (2) Listed in this article as an endangered species or a threatened species.",
+          "note": "Indiana's wild animal possession permit reaches only animals the rule references or that the article lists as endangered or threatened. The three class lists name squirrels, rabbits, furbearers, small and large wild cats, wolves, bears, venomous reptiles and big crocodilians, and no marsupial but the opossum, so no state permit is needed for a wallaby.",
+          "verifiedOn": "2026-10-01"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02; 48.1-09-02-01",
+          "quote": "6. Nontraditional livestock not otherwise referred to in this section or Century Code must be reviewed by the board for determination of importation requirements and licensure requirements prior to importation.",
+          "note": "A wallaby is in none of the three categories, so no license is required, and NDCC 36-01-08.4 prohibits only skunks and raccoons. Bringing one in needs a certificate of veterinary inspection and an importation permit number, and 48.1-09-01-02(6) asks the board to review an unlisted species before importation, which is a review, not a bar.",
+          "verifiedOn": "2026-10-01"
+        },
+        "WY": {
+          "status": "permit",
+          "sourceId": "wy-ch10",
+          "cite": "Ch. 10 § 13(d)",
+          "quote": "A permit may be authorized upon approval for other warm-blooded wildlife unless otherwise specified in this regulation.",
+          "note": "Not on the prohibited list at § 11 and not on either the domestic or the domesticated list, so the wallaby lands in the discretionary permit category, the serval's position. May be authorized is not the same as shall be issued. 50 CFR 17.11 lists several wallabies, but not Bennett's.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "Rule 8.3(A)(5); Rule 8.4(A)",
+          "quote": "5. The following wild animals are classified as animals inherently dangerous to humans:",
+          "note": "A wallaby is not on the inherently dangerous list and not among Mississippi's game and furbearing animals, and no other Mississippi rule read here reaches it.",
+          "verifiedOn": "2026-10-01"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-v-115",
+          "cite": "LAC 76:V.115.C.1",
+          "quote": "C.1.Except as provided herein, it shall be unlawful to import into, possess, purchase or sell within the state of Louisiana, by any means whatsoever including but not limited to transactions conducted via the internet, any of the following species or its subspecies of live wild quadrupeds, big exotic cats, or non-human primates, domesticated or otherwise (hereinafter \"listed animals\"):",
+          "note": "Louisiana's restricted mammal list is bears, wolves, nonhuman primates and big cats, and a wallaby is none of them. It is not a game, outlaw, protected or nongame quadruped under La. R.S. 56:8(151) either, and no other Louisiana rule read here reaches it.",
+          "verifiedOn": "2026-10-01"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "OAC 800:25-25-3(a)(33)",
+          "quote": "(a) The following wildlife species are exempt from import and export permits, commercial wildlife breeders licenses, noncommercial wildlife breeders licenses and commercial hunting area license requirements. ... (33) Wallaby.",
+          "note": "\"Wallaby\" is on Oklahoma's exemption list by name, beside the kangaroo, so no import permit or breeder's license applies.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 8 § 001.08A; Neb. Rev. Stat. § 37-246",
+          "quote": "001.08A Importation: the following wildlife may be imported: ... Wallabies Macropus spp. & Petrogale spp.",
+          "note": "Wallabies are on Nebraska's closed importation list, and as a non-native mammal a wallaby is not a wild mammal, so the Captive Wildlife Permit scheme does not reach it. The entry gives Macropus, the genus Bennett's wallaby was long placed in; it is now usually placed in Notamacropus, but \"Wallabies\" names it either way.",
+          "verifiedOn": "2026-10-01"
+        }
+      },
+      "article": "/blog/wallaby-legal-guide/"
     }
   }
 }
