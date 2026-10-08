@@ -35011,6 +35011,459 @@
         }
       },
       "article": "/blog/reticulated-python-legal-guide/"
+    },
+    "green-anaconda": {
+      "name": "Green anaconda",
+      "scientific": "Eunectes murinus",
+      "jurisdictions": {
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(7)",
+          "quote": "Class Reptilia Reptiles (A) Order Crocodilia ... (C) Family Elapidae ... (D) Family Viperidae ... (E) Family Crotalidae-Pitvipers: All nonnative species (D) (F) Family Colubridae",
+          "note": "Boidae is not on California's reptile list, which reaches crocodilians, snapping turtles, venomous snakes, three colubrid groups and the reticulate Gila monster. The green anaconda is unrestricted under state law. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "GA": {
+          "status": "legal",
+          "sourceId": "ga-391-4-8-05",
+          "cite": "R. 391-4-8-.05(1)(c)1",
+          "quote": "Family Pythonidae - Python molurus (Indian rock python); (ii) Family Pythonidae - Python bivittatus (Burmese python);",
+          "note": "The license tier names six reptiles, two pythons among them, and no boa or anaconda. The green anaconda appears nowhere in the subject, so no license is needed under state law. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-01"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6",
+          "cite": "§ 4-71-6, List of Prohibited Animals",
+          "quote": "Serpentes (all species in suborder, except for two male nonvenomous snakes for exhibition in a government zoo, and for four sterile male brown tree snakes, Boiga irregularis, for research or training of snake detector dogs by the department)",
+          "note": "Every snake is on the prohibited list, the tier with no permit. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), and shipment between the mainland and Hawaii is one of the movements that listing still bars after USARK v. Zinke (D.C. Cir. 2017).",
+          "verifiedOn": "2026-10-01"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code § 79.11(a)",
+          "quote": "It is unlawful to introduce a nonnative species into the natural environment of this Commonwealth. Persons who import nonnative reptiles or amphibians into this Commonwealth shall institute appropriate safeguards to prevent their introduction into the natural environment of this Commonwealth.",
+          "note": "Chapter 79 reaches a nonnative reptile only to bar its release, and the Game Commission's list covers wild birds and mammals. Pennsylvania does not restrict the green anaconda. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DC": {
+          "status": "legal",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)(E)",
+          "quote": "Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes",
+          "note": "Non-venomous, so it clears on the wording, the same reading the Burmese python gets. The District sets no size limit; the only argument against is the \"traditionally kept in the home\" qualifier. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "§ 161.01(b)(10)",
+          "quote": "any member, or hybrid offspring of the family Boidae, including, but not limited to, the common or green anaconda and yellow anaconda",
+          "note": "The Code names this animal in the boa family clause. The Code's only exceptions are the Parks Department and Wildlife Conservation Society zoos, labs, veterinary facilities and permitted temporary exhibits, so there is no pet route. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-4-3",
+          "cite": "N.J.A.C. 7:25-4.3(a)3.iii",
+          "quote": "iii. Bosas- Family Boidae (other than Boa Constrictors)",
+          "note": "The Division's list prints the heading as \"Bosas\"; the rule text reads \"Boas--Family Boidae (other than Boa Constrictors)\". Every boid but the boa constrictor needs a permit, which takes in the anacondas. The permit is the individual hobby permit at 4.6(a)1, subject to the 4.7 criteria. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "ME": {
+          "status": "banned",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.18(2)(G); § 7.06(3)(A)(2)(a)",
+          "quote": "Eunectes spp. All Species in Genus Eunectes ... An applicant for a permit pertaining to Category 1 Restricted Species must be an exhibitor, wildlife rehabilitator; laboratory registered with the United States Department of Agriculture, or accredited research facility.",
+          "note": "Every anaconda is Category 1, and § 7.18(2)(A) catches the green anaconda a second time as federally injurious. Category 1 permits go only to exhibitors, rehabilitators, USDA-registered laboratories and accredited research facilities, so there is no pet route. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. §§ 169.04(4)(b), 169.01(9), 169.11(1)(a)",
+          "quote": "A person is exempt from holding a license or other approval as required under this chapter to possess live nonnative wild animals that are not endangered or threatened species, except for any of the following:",
+          "note": "Nonnative, not harmful under § 169.11(1)(a) and not indigenous to the United States, so the § 169.04(4)(b) exemption applies. No state license. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-01"
+        },
+        "FL": {
+          "status": "banned",
+          "sourceId": "fl-prohibited",
+          "cite": "68-5.006(4)(k); 68-5.007",
+          "quote": "Live specimens of the following species, including their taxonomic successors, subspecies, or hybrids or eggs thereof may be possessed only pursuant to permit issued by the Executive Director except as provided in Rule 68-5.007, F.A.C. ... (k) Green anaconda (Eunectes murinus).",
+          "note": "Named on the prohibited nonnative list with all three other anacondas. As for the Burmese python, 68-5.007 lets only someone in lawful possession before the listing keep the animal for its life, PIT-tagged and with no further specimens. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "grandfathered": {
+            "before": "2021-04-29",
+            "detail": "Only a person in lawful possession before the species was listed may keep it, for that animal's life, under permit, PIT-tagged, with no further specimens acquired."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL §§ 11-0103(6)(e)(5), 11-0512(1)(a); 6 NYCRR § 180.1(b)(15)(ii)",
+          "quote": "(5) All reptiles that are venomous by nature, pursuant to department regulation, and the following species and orders: Burmese Python (Python m. bivittatus), Reticulated Python (Python reticulatus), African Rock Python (Python sabae), Green Anaconda (Eunectes maurinus), Yellow Anaconda (Eunectes notaeus),",
+          "note": "New York names the green anaconda in the statute, spelled \"Eunectes maurinus\", and correctly in 180.1(b)(15)(ii). The exemptions in § 11-0512(2) are zoos, licensed exhibitors and research facilities, vets, shelters, universities, rehabilitators, sanctuaries and travelers, all holding the animal for a purpose other than a pet, and 6 NYCRR 180.1(c) issues dangerous animal licenses only for scientific, educational, exhibition, zoological or propagation purposes. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(3)(B)(xxxii), (b)(3)",
+          "quote": "(xxxii) Green or common anaconda (Eunectus murinus), yellow anaconda (Eunectus notaeus) and Bolivian anaconda (Eunectus beniensis),",
+          "note": "Named in Category Two, with the genus misspelled \"Eunectus\"; the definition applies \"notwithstanding changes in taxonomic nomenclature\". Category Two (i) also reaches federally injurious species. Subsection (b)(3) allows a Category Two animal only to a treating vet, municipal parks, zoos, aquaria, nature centers, museums, exhibitors, laboratories and research facilities, so there is no private route. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(10)(b)",
+          "quote": "All venomous snakes require a permit. The following snakes may be kept without a permit: 1. All species of boas and pythons (family Boidae), except those species categorically non-exempt pursuant to 321 CMR 9.01(3), and except the African Rock Python (Python sebae), Reticulated Python (Python reticulatus) and all species of Anaconda (Eunectes spp.), which require a permit.",
+          "note": "The boa and python clearance carves out \"all species of Anaconda (Eunectes spp.)\" as requiring a permit, and MassWildlife lists \"All anaconda species\" among snakes you cannot have as a pet. The license under § 23 exists on paper, but MassWildlife says permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CO": {
+          "status": "unclear",
+          "sourceId": "co-w7",
+          "cite": "2 CCR 406-7 #700(G), Appendix A(A)(3)",
+          "quote": "A. Any species of snake native only to the tropical and subtropical region from the following families: ... 3. Boidae (giant snakes)",
+          "note": "Boidae is on Appendix A, but only for species \"native only to the tropical and subtropical region\", which #700(G) defines as 26.0 degrees north to 26.0 degrees south. Colorado decides that species by species and CPW's published determinations cover several boas but not the green anaconda. Its range is centered on the Amazon and Orinoco basins, and whether any of it falls south of 26 degrees south is the question the rule turns on. Recorded unclear until CPW rules on it, the same answer the ackie monitor gets; CPW takes questions on unlisted species at Wildlife.SpecialLicensing@state.co.us. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(H)",
+          "quote": "Reptiles listed below are considered restricted live wildlife: 1. All species of the order Crocodilia . ... 2. All species of the following families or genera of the order Squamata : a. The family Atractaspididae . ... c. The family Elapidae . ... d. The family Helodermatidae . ... e. The family Viperidae .",
+          "note": "Arizona's reptile list reaches crocodilians, the venomous families, four named colubrids, the Gila monster family, snapping turtles and Gopherus. Boidae is not on it, so the green anaconda is not restricted. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-08"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(4)(c)(B)",
+          "quote": "(B) Pythons and Boas -- Boidae -- All nonnative species (including those also classified as Loxocemidae spp.);",
+          "note": "Every nonnative boid is on the noncontrolled list, so the green anaconda needs no ODFW permit. Oregon sets no size tier. Oregon cities and counties may prohibit exotic animals by ordinance on top of state law, so check the municipality as well. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-16-30",
+          "cite": "RCW 16.30.010(2)(b)",
+          "quote": "(E) Family varanidae, only water monitors and crocodile monitors;",
+          "note": "Washington's reptile list reaches burrowing asps, the boomslang, elapids, sea snakes, two monitors, vipers and crocodilians, and no constrictor. A green anaconda does not live wild in Washington, so the Title 77 wildlife rules miss it too. The state does not restrict it. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-08"
+        },
+        "OH": {
+          "status": "conditional",
+          "sourceId": "oh-935-01",
+          "cite": "R.C. 935.01(L)(1)(a); 935.08",
+          "quote": "\"Restricted snake\" means any of the following: (1) All of the following constricting snakes that are twelve feet or longer: (a) Green anacondas;",
+          "note": "The green anaconda heads Ohio's list of constrictors that become restricted snakes at twelve feet. Under that length it needs nothing; at twelve feet the keeper needs a restricted snake possession permit, with insurance, experience and caging. Adult females routinely pass twelve feet, so this is a deadline rather than an exemption. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-01"
+        },
+        "TX": {
+          "status": "permit",
+          "sourceId": "tx-exotic-snakes",
+          "cite": "Parks & Wild. Code § 43.851(a)(2)(D), (b), (d)",
+          "quote": "Sec. 43.851. PERMIT. (a) The commission by rule shall establish permits that allow permit holders to possess or transport in this state a live nonindigenous snake, including a hybrid of any kind, that is: (1) venomous; or (2) a constrictor that is one of the following: ... (D) green anaconda, Eunectes murinus;",
+          "note": "Named as one of six constrictors that need a controlled exotic snake permit, available in a recreational version for private keepers. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-fo-224",
+          "cite": "Fisheries Order 224; MCL 287.731",
+          "quote": "It shall be unlawful to kill, take, trap, possess, buy, sell, offer to buy or sell, barter, or attempt to take, trap, possess or barter any state reptile or amphibian from the wild...except as provided within this order.",
+          "note": "Fisheries Order 224 reaches \"any state reptile or amphibian from the wild\", so it governs Michigan's native herps and not a captive animal of a species from elsewhere, and no Michigan rule read here restricts a green anaconda. The Animal Industry Act asks for a certificate of veterinary inspection to import a nonnative reptile. NREPA Part 413's prohibited and restricted species list could not be read from this container, so that is the open check. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-01"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-510-68-15-5",
+          "cite": "510 ILCS 68/15-5, 15-10",
+          "quote": "Unless contrary to any other law or rule, nothing shall prohibit lawfully acquired possession of any of the Boidae family, such as boas, pythons, and anacondas, provided captive maintenance requirements from the Department as set forth in this Act are met",
+          "note": "The Herptiles-Herps Act clears the Boidae family by statute and names the anacondas, so a green anaconda needs no permit, kept to the escape-proof enclosure standard in § 15-10. Illinois is a home rule state, so a municipal ordinance can be stricter. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "§ 97A.401, subd. 8; § 97A.015, subd. 39; § 97A.501, subd. 1",
+          "quote": "The commissioner must prescribe conditions and may issue permits to breed, propagate, and sell snakes, lizards, and salamanders. A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota makes every snake a protected wild animal, whatever its origin, under § 97A.015 subd. 39, and § 97A.501 bars possessing one unless the game and fish laws allow it. Subdivision 8 is the allowance: a snake from a permitted breeder, or one held before 1 August 2021, may be kept as a pet. No Minnesota statute read here treats a venomous or giant snake differently. The breeder permit the condition depends on is not on the DNR's permits page and no rule implements it, so the condition is real on paper and its machinery is not visibly in place, the same gap the Burmese python carries. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503-140",
+          "cite": "NAC 503.140(1)(aa), (4)",
+          "quote": "Except as otherwise provided in subsection 4 and NAC 503.500 to 503.535, inclusive, the following animals may be possessed, transported, imported and exported without a permit or license issued by the Department: ... (aa)Nonvenomous, nonindigenous reptile species and subspecies;",
+          "note": "Every nonvenomous reptile not native to Nevada is cleared from any state permit, with no size line, so the green anaconda needs nothing from the Department. NAC 503.140(4) preserves county and city ordinances, so check the municipality as well. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "4VAC15-30-40(A); 4VAC15-20-50",
+          "quote": "A special permit is required and may be issued by the department, if consistent with the department's fish and wildlife management program, to import, possess, or sell those nonnative (exotic) animals listed in the following table",
+          "note": "The exotic permit table's only snake is the brown tree snake, so a green anaconda is a nonnative animal Virginia does not restrict. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1); Nat. Res. §§ 10-902(a), 10-903",
+          "quote": "Any person desiring to possess, import, export, breed, raise, protect, rehabilitate, hunt, kill, trap, capture, purchase, or sell any wildlife native to Maryland, shall first obtain a permit or license from the Department.",
+          "note": "§ 10-621 reaches cats, dogs, primates, the rabies vector mammals, crocodilians and venomous snakes, and § 10-902's permit attaches only to wildlife native to Maryland. A green anaconda is neither, and Maryland has used its power over nonnative wildlife in § 10-903 only for aquatic organisms, so the state does not restrict it. Subsection (e) of § 10-621 preserves stricter county and municipal rules. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Snake | Boidae | Eunectes ssp | Anacondas | IV",
+          "note": "Every anaconda is in Group IV. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. 19.35.7 NMAC is an importation rule, so it governs bringing the animal into New Mexico rather than keeping one already here. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-restricted-list",
+          "cite": "Restricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Reptiles | Squamata | Serpentes | Boidae | Eunectes | all species | Anacondas",
+          "note": "The Unrestricted list clears all boas and pythons except those named on the Restricted list, and every anaconda is named there. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-9(1); R657-53-8(1)",
+          "quote": "(1)(a) A species of the Order Squamata (snakes and lizards) is classified as a prohibited species if: (i) it is venomous; (ii) not native to Utah; and (iii) a bite from which may cause substantial physical injury to humans ordinarily requiring medical treatment. (b) Species of the Order Crocodilia (crocodiles, gharials, caimans, and alligators) are classified as prohibited.",
+          "note": "Utah prohibits non-native venomous squamates and every crocodilian and has no giant constrictor tier, so a green anaconda is not prohibited, and a captive-bred or lawfully imported one needs no wildlife document under R657-53-8(1). Local government restrictions are preserved by R657-53-1(c). Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, 7.1.1, with Del. Code tit. 3 § 7201",
+          "quote": "When an exotic is kept as a pet, the owner or custodian of the exotic must apply to the Department for an Individual Permit on a form supplied by the Department.",
+          "note": "No snake is exempt in Delaware, so a green anaconda needs an Individual Permit. Anacondas appear in the rules only in 7.5.2.10's breeding limit on Sales Permit holders, not as a ban on keeping one. The Individual Permit is issued per animal for three years, after the Department is satisfied the animal will be held in a sturdy, escape-proof primary enclosure inside a secondary enclosure that keeps the public out, and a background check may be run. Delaware's only outright refusals at 4.7 are the gila monster, the beaded lizard and the komodo dragon. County and municipal ordinances were not checked. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "Tenn. Code Ann. § 70-4-403(3)(A)",
+          "quote": "(3) Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q). ... (A) Nonpoisonous reptiles and amphibians except caimans and gavials;",
+          "note": "A nonvenomous exotic reptile is Class III, which needs no wildlife permit; Tennessee has no constrictor tier. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NC": {
+          "status": "conditional",
+          "sourceId": "nc-14-417",
+          "cite": "G.S. § 14-417.1",
+          "quote": "(a) As used in this Article, large constricting snakes shall mean: Reticulated Python, Python reticulatus; Burmese Python, Python molurus; African Rock Python, Python sebae; Amethystine Python, Morelia amethistina; and Green Anaconda, Eunectes murinus; or any of their subspecies or hybrids. (b) It shall be unlawful for any person to own, possess, use, transport, or traffic in any of the large constricting snakes that are not housed in a sturdy and secure enclosure.",
+          "note": "North Carolina names the green anaconda among its large constricting snakes and makes keeping one unlawful unless it is housed to the statute. The enclosure must be escape-proof and locked and labeled with the species, number and owner, a written safety protocol and escape recovery plan must be posted and travel with the snake, and an escape must be reported at once. Counties may go further under § 153A-131. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "AR": {
+          "status": "restricted",
+          "sourceId": "ar-unrestricted",
+          "cite": "Addendum R1.03(A)(4); Codes 09.02(A), 09.07 Exception F",
+          "quote": "The Commission will not issue permits for breeding, sale, or importation of the following species other than in accordance with the exceptions listed in Codes 09.07, 09.10, 09.11, and Addenda F1.03, F1.04 (possession of some species may be allowed in accordance with Codes 09.02, 09.05, 09.08, and 09.14): ... 4. Reptiles ... Anacondas (Genus Eunectes)",
+          "note": "Anacondas are on the prohibited list without the asterisk that keeps permits for earlier permittees, so no breeding, sale or importation permit will issue for one. The list's own opening leaves possession open under Code 09.02, which needs an animal acquired from a permitted breeder/dealer or imported on a permit, and neither can now be had for an anaconda. An animal already lawfully held is the case the wording leaves open. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-08"
+        },
+        "ID": {
+          "status": "unclear",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06",
+          "quote": "non-venomous or non-dangerous reptiles and amphibians",
+          "note": "The green anaconda is non-venomous, which on the literal wording makes it a conventional pet exempt from any permit, but \"non-dangerous\" is not defined and a giant constrictor is the animal it appears aimed at. Same reading as the Burmese python. Ask Idaho Fish and Game before relying on it. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-08"
+        },
+        "IA": {
+          "status": "banned",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(9)(e); §§ 717F.3, 717F.4",
+          "quote": "A member of the superfamily henophidia, which are limited to reticulated pythons, anacondas, and African rock pythons.",
+          "note": "Iowa's constrictor clause is limited to three animals and names anacondas. § 717F.3 bars owning, possessing, breeding or bringing one into the state, and the only private route was the § 717F.4 registration of animals already held on 1 July 2007. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "grandfathered": {
+            "before": "2007-07-01",
+            "detail": "An owner in possession on 1 July 2007 could keep the animal after implanting an electronic identification device within sixty days and registering with the department by 31 December 2007. No new route exists."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4; § 2(1)",
+          "quote": "Venomous exotic snakes of the families Viperidae, Atractaspididae, Elapidae, Hydrophidae, and Colubridae, except for hognose snakes (Genus Heterodon);",
+          "note": "Kentucky's inherently dangerous list reaches only venomous snakes, and the green anaconda is on neither prohibited list, so possession is lawful. A transportation permit is needed to bring one into the state under § 2(1), and a city or county may prohibit it under KRS 65.877. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "RI": {
+          "status": "permit",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(b)(2)(A); § 3.9(A), (C)",
+          "quote": "(A) All species of boas and pythons (family Boidae), may be kept without an exotic animal possession permit except those species that are endangered, and except the Emerald Tree Boa (Corallus caninus), Green Tree Python (Chondropython spp.), African Rock Python (Python sebae), Reticulated Python (Python reticulatus) and all species of Anaconda (Eunectes spp.).",
+          "note": "The boa and python exemption excepts \"all species of Anaconda\", so a green anaconda needs an exotic animal possession permit, which § 3.9(A) makes available to private persons. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(a), (b)(4)",
+          "quote": "(4) Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
+          "note": "New Hampshire clears exotic reptiles as a class, excepting only alligators, crocodiles and venomous species, so a green anaconda is non-controlled and needs no possession permit, the Burmese python's position. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-01"
+        },
+        "MO": {
+          "status": "conditional",
+          "sourceId": "mo-578-023",
+          "cite": "§ 578.023(1)",
+          "quote": "any deadly, dangerous, or poisonous reptile, or any deadly or dangerous reptile over eight feet long, in any place other than a properly maintained zoological park, circus, scientific, or educational institution, research laboratory, veterinary hospital, or animal refuge, unless he or she has registered such animals with the local law enforcement agency in the county in which the animal is kept",
+          "note": "Not banned, and as a non-native reptile it needs no Wildlife Code permit under 3 CSR 10-9.110(2). Once a green anaconda passes eight feet it must be registered with the county law enforcement agency, the Burmese python's position. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-08"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-115-20-3",
+          "cite": "K.A.R. 115-20-3(a), (b), (d); K.S.A. 32-1301(d)",
+          "quote": "(a) Subject to federal or state law or rules and regulations, exotic wildlife species may be imported, possessed, sold, offered for sale or purchased, provided the exotic wildlife was legally captured, raised, exported, possessed, sold or purchased or any combination of these activities in its place of origin. (b) Exotic wildlife may be possessed without limit in time and number.",
+          "note": "Not native to Kansas, so exotic wildlife under 115-20-3(d), which may be possessed without limit in time and number if legally obtained where it came from. The dangerous regulated animal statute reaches only venomous snakes among reptiles. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-01"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60; S.C. Code Regs. 123-152",
+          "quote": "15. reptiles",
+          "note": "Written as a single word covering the whole class, with no carve out for giant constrictors, the Burmese python's position. The only restricted nonnative species under Regulation 123-152 is the black and white tegu, so the green anaconda is unaffected. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MT": {
+          "status": "banned",
+          "sourceId": "mt-arm-12-6-22",
+          "cite": "ARM 12.6.2215(6)(i)",
+          "quote": "(6) The following reptiles are classified as prohibited: ... (i) Green Anaconda - Eunectes marinus;",
+          "note": "Named on the prohibited list, misspelled marinus for murinus, which overrides the statute's general clearance of nonvenomous Boidae. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-01"
+        },
+        "WV": {
+          "status": "permit",
+          "sourceId": "wv-20-2-13",
+          "cite": "W. Va. Code §§ 20-2-13, 20-1-2; W. Va. C.S.R. § 74-1-3",
+          "quote": "No person shall transport into or have in his possession within this state any live wildlife or viable eggs thereof from without the state, except as authorized by an importation permit issued by the director",
+          "note": "A green anaconda is a reptile from outside West Virginia: § 20-1-2 counts reptiles as wildlife with no nativity limit, so one brought in from outside the state needs an importation permit from the director under § 20-2-13, the Burmese python's position. The board's Dangerous Wild Animal list names no snake and no crocodilian, although § 19-34-5 allowed both. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "AK": {
+          "status": "legal",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(b)",
+          "quote": "Any nonvenomous reptile Class Reptilia (crocodile, alligator, snake, turtle, or lizard)",
+          "note": "The clean list clears every nonvenomous reptile, and its gloss names crocodiles, alligators and snakes, so a green anaconda may be possessed, imported and sold without a permit, the Burmese python's position. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-01"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-40-3-24",
+          "cite": "SDCL 40-3-24; ARSD 12:68:18:03",
+          "quote": "No person may bring into the state or possess in the state any nondomestic mammal unless the mammal is allowed in the state pursuant to § 40-3-25.",
+          "note": "South Dakota's bar is written for mammals only, so a green anaconda is outside it, and Game, Fish and Parks has no captive wildlife chapter for reptiles. A free entry permit under 12:68:18:03 still applies to bringing any nondomestic animal into the state. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AL": {
+          "status": "banned",
+          "sourceId": "al-220-2-26",
+          "cite": "r. 220-2-.26(1)",
+          "quote": "Any species of bird, mammal, fish, crustacea, mollusk, reptile, or amphibian listed as injurious wildlife under the Lacey Act (18 U.S.C. 42) from the U.S. Fish and Wildlife Service;",
+          "note": "Alabama adopts the federal injurious wildlife list rather than naming the species, and the green anaconda is on it, so possession is barred in the state whatever the federal transport position, the Burmese python's position. Only accredited educational, research and rehabilitation facilities may be exempted under § (6). Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)",
+          "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+          "note": "Indiana applies a length test to crocodilians and none at all to constrictors, so a green anaconda needs no permit, the Burmese python's position. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-01"
+        },
+        "ND": {
+          "status": "permit",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(3)(b)(5); 48.1-09-01-03(1), (2)",
+          "quote": "b. Category 3 species of nontraditional livestock includes the following species and their hybrids: ... (2) Big cats, including mountain lion, jaguar, leopard, lion, tiger, and cheetah. (3) Bears. (4) Wolves. (5) Venomous reptiles and nonvenomous injurious reptiles. (6) Primates.",
+          "note": "Category 3 now reaches \"nonvenomous injurious reptiles\". The rule does not define injurious, but the green anaconda is federal injurious wildlife and a giant constrictor on any plain reading of the word, so it needs a license. The owner must hold a nontraditional livestock license from the Board of Animal Health before acquiring one, and the board must inspect and approve the premises first, under 48.1-09-01-03(1) and (2)(b). The annual fee is fifteen dollars under NDCC 36-01-08.1. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "WY": {
+          "status": "banned",
+          "sourceId": "wy-ch69",
+          "cite": "Ch. 69 § 8(a)",
+          "quote": "An importation/possession permit shall not be issued for importation or possession of the live cold-blooded wildlife in this section, except as otherwise specified. ... (a) Injurious wildlife listed in 50 CFR 16.",
+          "note": "Wyoming adopts the federal injurious wildlife list, and the green anaconda is on it, so no permit may issue, the Burmese python's position. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-01"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-5-2-3",
+          "cite": "Rule 2.3(A)(1)(a); Rule 8.3(A)(5)",
+          "quote": "1. Nongame species in need of management in Mississippi include: a. Thirty-two (32) species of small mammals, one species of freshwater fish, and all native species of reptiles and amphibians except those regulated by other rules of the Commission on Wildlife, Fisheries and Parks.",
+          "note": "The nongame rule reaches native reptiles only, and the inherently dangerous list in Rule 8.3 names no reptile, so no Mississippi rule read here reaches a green anaconda. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-01"
+        },
+        "LA": {
+          "status": "permit",
+          "sourceId": "la-76-xv-101",
+          "cite": "LAC 76:XV.101.K.2.c.v, K.1",
+          "quote": "c. The following restricted nonnative species may be in possession only via permit to be approved and monitored by the department. ... v. All species in the Genus Eunectes (Anacondas);",
+          "note": "Anacondas are on the restricted nonnative list, not the prohibited one, so a private keeper may hold one under a Restricted Snake Permit, which K.1 requires for the listed large constrictors \"regardless of size in length\", with locked enclosures, an inspection before issue and annual renewal. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "OK": {
+          "status": "permit",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(c)",
+          "quote": "except those which are biologically capable of establishing self-sustaining populations in the wild of Oklahoma and which may be potentially injurious or detrimental to Oklahoma's wildlife, agriculture or public safety in accordance with existing USDI or APHIS regulations",
+          "note": "The reptile exemption turns on the federal injurious wildlife listing, which covers the green anaconda, the Burmese python's position. Losing the exemption means import permits and a breeder's license apply, not that the animal is banned. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
+          "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species.",
+          "note": "Nebraska regulates reptiles only where they are its own, and the captive wildlife chapter covers wild birds and mammals defined by Nebraska geography, so a green anaconda needs no permit, the Burmese python's position. Nebraska has no venomous, constrictor or size rule. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "verifiedOn": "2026-10-01"
+        }
+      },
+      "article": "/blog/green-anaconda-legal-guide/"
     }
   }
 }
