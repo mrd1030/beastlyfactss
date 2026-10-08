@@ -1789,6 +1789,11 @@
       "title": "Mich. Admin. Code R 299.1027, Endangered and Threatened Species: Mammals",
       "url": "https://www.law.cornell.edu/regulations/michigan/Mich-Admin-Code-R-299-1027",
       "note": "Michigan's state list of endangered and threatened mammals under NREPA Part 365, amended effective 20 March 2023. Lynx canadensis is on the endangered list, with the cougar, the prairie vole and the Indiana bat. Part 365 bars taking, possessing, transporting or selling a listed species without a DNR permit, which serves science, zoological and conservation purposes. michigan.gov refuses this container, so the rule was read from Cornell LII."
+    },
+    "wi-nr-16": {
+      "title": "Wis. Admin. Code ch. NR 16, Captive Wildlife: NR 16.11 harmful wild animals and NR 16.15 captive wild animal farms",
+      "url": "https://docs.legis.wisconsin.gov/code/admin_code/nr/001/16/11",
+      "note": "The rule that answers Wisconsin's native carnivores and the wolfdog. NR 16.11 designates bears and \"Hybrids of the species Canis lupus, C. lycaon, or C. rufus ... and the species Canis familiaris, domestic dogs, and subsequent generations from such matings\" as harmful wild animals, which Wis. Stat. § 169.11(1)(b) bars possessing unless the department authorizes it. NR 16.15 applies to every captive wild animal farm \"including commercial operations and hobbyists\", requires local zoning assurance before a first licence for a harmful animal, and requires a wolf-dog owner to neuter the animal by six months and mark it permanently. The licence itself is § 169.15, which the department shall issue to any person who applies. NR 16.15 is at https://docs.legis.wisconsin.gov/code/admin_code/nr/001/16/15."
     }
   },
   "animals": {
@@ -29036,6 +29041,505 @@
         }
       },
       "article": "/blog/asian-small-clawed-otter-legal-guide/"
+    },
+    "black-bear": {
+      "name": "American black bear",
+      "scientific": "Ursus americanus",
+      "jurisdictions": {
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(K)(6)",
+          "quote": "All other Families-(W)",
+          "note": "Bears are named in the order heading and Ursidae falls under the closing \"All other Families\" line, and the caging standards put the American black bear in Group II. The black bear is also a California game animal. No permit type covers pet keeping.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-391-4-8-05",
+          "cite": "R. 391-4-8-.04(1)(a)2(v); O.C.G.A. § 27-5-4(b)(1); DNR Guide to Legal Pets",
+          "quote": "Family Ursidae (bears) - All species;",
+          "note": "Bears are in the inherently dangerous tier, needing a license and liability insurance that § 27-5-4(b)(1) issues only to the animal trade and exhibitors, and DNR's native list names the black bear among animals that may not be held as a pet regardless of origin.",
+          "verifiedOn": "2026-10-08"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6-5",
+          "cite": "§ 4-71-6.5, Restricted Animal List Part A",
+          "quote": "Ursus (all species in genus) bear",
+          "note": "Part A takes the whole genus Ursus, which includes Ursus americanus. Research and exhibition only.",
+          "verifiedOn": "2026-10-01"
+        },
+        "PA": {
+          "status": "permit",
+          "sourceId": "pa-58-137-1",
+          "cite": "58 Pa. Code § 137.1(a)(3), (d)(2); Ch. 147 Subchapter N",
+          "quote": "In the family Ursidae. All species of the bears.",
+          "note": "Every bear is prohibited, and bears are the first animal named in the 34 Pa.C.S. § 2961 definition of exotic wildlife, so the exotic wildlife possession permit is the only route. It needs a separate permit per animal and two years of documented hands-on experience at a recognized facility, the shape the serval cell records as a facility permit rather than a pet one. A black bear taken from the wild in Pennsylvania is barred outright by § 137.31(a).",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)",
+          "quote": "a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following",
+          "note": "None of the seven categories covers a bear. The exceptions reach zoos, federally licensed exhibitors and rehabilitators only.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "§ 161.01(b)(3)",
+          "quote": "All bears, including polar, grizzly, brown and black bear.",
+          "note": "The black bear is named. § 161.01(d) lets the Department consent to an owner removing a seized animal to a jurisdiction where it is not prohibited, which is the only relief in the article.",
+          "verifiedOn": "2026-10-01"
+        },
+        "NJ": {
+          "status": "banned",
+          "sourceId": "nj-captive-game-info",
+          "cite": "N.J.A.C. 7:25-10.6(a)19, 10.10, 10.11(a)6",
+          "quote": "The Division does not currently issue new permits for the possession of potentially dangerous species within the hobby permit category.",
+          "note": "The black bear is a game animal at 10.6(a)19, but bears are potentially dangerous under 10.10, 10.11(a)6 says one may not be kept as a household pet, and the Division issues no new hobby permits for them. Only scientific, propagation, zoo, exhibitor, theatrical and fur farming permits remain.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "ME": {
+          "status": "banned",
+          "sourceId": "me-09-137-c7",
+          "cite": "§ 7.06(4); § 7.11(4)(A)",
+          "quote": "Unclassified Species: A person may not possess any species that has not been categorized. Any species which has not been identified as a Prohibited, Restricted, or Unrestricted species will not be eligible for a permit under this chapter, however a request may be made to review the categorization of a species subject to section 7.06(5).",
+          "note": "Ursidae appears nowhere in chapter 7's lists, so a black bear is an uncategorized species and § 7.06(4) makes it ineligible for any permit. Maine plainly has bears in view: § 7.11(4)(A) bars even rehabilitators from taking black bears without the commissioner's authorization. A native mammal has no wild-take route under 12 M.R.S. § 12152(1-B).",
+          "verifiedOn": "2026-10-01"
+        },
+        "WI": {
+          "status": "permit",
+          "sourceId": "wi-nr-16",
+          "cite": "Wis. Stat. §§ 169.11(1)(b), 169.15; NR 16.11(1), NR 16.15(2)(f)",
+          "quote": "Ursidae. Members of the family ursidae commonly known as bears.",
+          "note": "Bears are harmful wild animals, and § 169.11(1)(b) bars possessing one \"unless specifically authorized to do so by the department\". The authorization is a captive wild animal farm license naming the species, and NR 16.15(2)(f) says no first application for a harmful animal is approved without written assurance that it complies with local ordinances and zoning. A license exists for an individual on paper; the local zoning step is where most applications would stop.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-08"
+        },
+        "FL": {
+          "status": "banned",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.002(1)(a)13; 68A-6.003(6)",
+          "quote": "Class I wildlife shall not be possessed for personal use, except as follows: (a) Any Class I wildlife possessed for personal use on August 1, 1980, shall be eligible for a permit in accordance with the provisions for Class II wildlife.",
+          "note": "\"Bears (family Ursidae)\" is Class I item 13, and Class I wildlife may not be possessed for personal use. The only exception is an animal already held on 1 August 1980, and the rule says no other Class I wildlife \"shall be transferred or kept for personal use\". Exhibitor and commercial permits remain.",
+          "grandfathered": {
+            "before": "1980-08-01",
+            "detail": "A Class I animal possessed for personal use on 1 August 1980 is eligible for a permit on Class II terms."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL §§ 11-0103(6)(e)(4), 11-0512(1)(a); 6 NYCRR § 180.1(b)(7)",
+          "quote": "no person shall import, transport, possess, purchase, barter, transfer, sell, offer for sale, exchange, propagate or release or cause to be released within New York State any of the following live native or non-native dangerous animals including those which are captive bred in any of the following orders, families and individual species or subspecies including all subspecies and hybrids thereof: ... (7) Bears in the Family Ursidae:",
+          "note": "Ursidae is a whole clause of the wild animal list, so § 11-0512 bars a bear as a pet, and 180.1 lists the family again. Licenses under 180.1(c) issue only for scientific, educational, exhibition, zoological or propagation purposes, and the 180.1(d)(2) exemption for this species is for licensed rehabilitators.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-55-6",
+          "cite": "§ 26-55-6(a)(2)(C), (b)(1)",
+          "quote": "\"Category One Wild Animal\" means, notwithstanding changes in taxonomic nomenclature, any wild animal, gamete or hybrid of any of the following: (A) A member within the family Felidae (including, but not limited to, lion, leopard, cheetah, jaguar, ocelot, jaguarundi cat, puma, lynx and bobcat) except Bengal cat pursuant to section 26-40a of the Connecticut General Statutes; (B) A member within the family Canidae (including, but not limited to, wolf and coyote); (C) A member within the family Ursidae (including, but not limited to, black bear, grizzly bear and brown bear); or (D) A member within the family Hominidae ...",
+          "note": "The black bear is the first example named in Category One's Ursidae clause. Subsection (b)(1) allows a Category One animal only to a municipal park, zoo, public nonprofit aquarium, nature center, museum, or a USDA-licensed exhibitor, laboratory or research facility, so there is no private route.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(1), (12)(a)",
+          "quote": "The purpose of 321 CMR 9.01 is to list those species which are exempt from the licensing provisions of M.G.L. c. 131, § 23, and which may be imported, possessed, maintained, propagated, bought, sold, exchanged or offered for sale without a license or permit from the Division. Species not listed, or which are expressly listed as \"require(s) a permit\", are not exempt from the provisions of M.G.L. c. 131, § 23.",
+          "note": "No bear is on either list. It is also a Massachusetts native, and the only animals MassWildlife lets a person take from the wild are certain reptiles and amphibians. The license under § 23 exists on paper, but MassWildlife says permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\"",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "CO": {
+          "status": "banned",
+          "sourceId": "co-cpw-species-list",
+          "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
+          "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
+          "note": "No bear is on the domestic or unregulated list, so the black bear is regulated wildlife with no pet license, and it is a Colorado native game animal. It is a Colorado native as well, and C.R.S. 33-6-109 bars keeping native wildlife taken from the wild. Chapter W-11 says noncommercial (pet) possession of regulated mammals has been prohibited since 1983, and its wildlife park licenses are commercial or closed to new entrants.",
+          "verifiedOn": "2026-10-01"
+        },
+        "AZ": {
+          "status": "restricted",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406(F)",
+          "quote": "All species of the order Carnivora",
+          "note": "All of Carnivora is restricted, so a bear needs a special license. It is also an Arizona native, and taking one alive from the wild is a separate regime under R12-4-404, R12-4-405 and Commission Order 43 that needs a hunting license.",
+          "verifiedOn": "2026-10-01"
+        },
+        "OR": {
+          "status": "banned",
+          "sourceId": "or-635-044",
+          "cite": "OAR 635-044-0460(1), (3); 0470; ORS 609.305",
+          "quote": "Black bears, cougars, bobcats, and wolves, acquired by transfer or new acquisition as part of an existing permit or new holding application after January 20, 2017, shall only be held at AZA accredited facilities or as approved by the Department in Wildlife Exhibitor/Animal Entertainment or Wildlife Sanctuary facilities.",
+          "note": "ORS 609.305 reaches \"Any bear, except the black bear\", which hands the black bear to ODFW, and ODFW's holding rule confines any black bear acquired after 20 January 2017 to AZA, exhibitor and sanctuary facilities. Pets held on that date were grandfathered on application.",
+          "localOverride": true,
+          "grandfathered": {
+            "before": "2017-01-20",
+            "detail": "An animal legally held as a pet on 20 January 2017, with a Wildlife Holding Permit applied for by 21 January 2018, may be kept for its life under OAR 635-044-0470. It may not be bred, and may be transferred only to an AZA, exhibitor or sanctuary facility."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "WA": {
+          "status": "conditional",
+          "sourceId": "wa-rcw-77-08-010",
+          "cite": "WAC 220-450-030(1), (3), (4), (5); RCW 16.30.010(2)(a)(i)(C), 16.30.020(1)(k)",
+          "quote": "It is unlawful to possess or hold in captivity live wild animals, wild birds, or game fish unless lawfully acquired. Any person possessing or holding wild animals, wild birds, or game fish in captivity must provide proof of lawful acquisition and possession for inspection if asked to do so by a department employee.",
+          "note": "RCW 16.30 lists \"Family ursidae, all bears\" as potentially dangerous, but 16.30.020(1)(k) exempts \"native wildlife subject to Title 77 RCW\", and the black bear is a Washington animal, so the dangerous animal ban does not reach it. Title 77 then asks only for lawful acquisition: no taking from the wild without a permit, a health certificate to import, documented proof of source, and no sale of a captive animal or its progeny except as rule allows. That is a thin answer for a bear and turns on the native-wildlife exemption doing what it says.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-08"
+        },
+        "OH": {
+          "status": "permit",
+          "sourceId": "oh-935-01",
+          "cite": "R.C. 935.01(C)(8); 1531.01(V); § 1533.71",
+          "quote": "(8) Bears;",
+          "note": "Every bear is a dangerous wild animal under Chapter 935, which needs the Department of Agriculture permit, the serval's position, and the black bear is also a game quadruped under R.C. 1531.01(V), which brings the Division of Wildlife's § 1533.71 captivity license on top.",
+          "localOverride": true,
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "TX": {
+          "status": "banned",
+          "sourceId": "tx-65-175",
+          "cite": "31 TAC § 65.175; Health & Safety Code § 822.101(4)(M)",
+          "quote": "TPWD regulations prohibit the taking, possession, transportation, or sale of any of the animal species designated by state law as endangered or threatened without the issuance of a permit.",
+          "note": "Texas lists the black bear, Ursus americanus, as state threatened, and TPWD permits for threatened animals go to science, zoos, education and rehabilitation. The dangerous wild animal statute also names \"a bear\" and would require a local certificate, but the threatened listing comes first: a certificate does not authorize possessing a threatened animal.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "MI": {
+          "status": "banned",
+          "sourceId": "mi-large-carnivore",
+          "cite": "MCL 287.1102(f), 287.1103(a), 287.1104(1)",
+          "quote": "any of the following cats of the Felidae family, whether wild or captive bred, including a hybrid cross with such a cat: a lion, a leopard (including a snow leopard or clouded leopard), a jaguar, a tiger, a cougar, a panther, or a cheetah; or a bear of a species that is native or nonnative to Michigan, whether wild or captive bred.",
+          "note": "The Large Carnivore Act names every bear, native or not, wild or captive bred. § 1103 bars owning one except in compliance with the act, and § 1104 allows possession only of animals held on 7 July 2000 whose owners applied for a permit within 90 days. The black bear is not on the captive game list either.",
+          "localOverride": true,
+          "grandfathered": {
+            "before": "2000-07-07",
+            "detail": "Individual animals held on the act's effective date, 7 July 2000, whose owner applied for a local permit within 90 days and obtained one. Not transferable except by inheritance."
+          },
+          "verifiedOn": "2026-10-08"
+        },
+        "IL": {
+          "status": "banned",
+          "sourceId": "il-720-48-10",
+          "cite": "720 ILCS 5/48-10(a), (b)",
+          "quote": "\"Dangerous animal\" means a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote. Dangerous animal does not mean any herptiles included in the Herptiles-Herps Act.",
+          "note": "\"Bear\" is named as a dangerous animal, and the Wildlife Code separately protects the American black bear by name. § 48-10(b) allows a dangerous animal only at a zoological park, federally licensed exhibit, circus, college or university, scientific institution, research laboratory, veterinary hospital, hound running area or animal refuge, so there is no private route. Illinois is a home rule state, so a municipal ordinance can be stricter and often decides it.",
+          "localOverride": true,
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MN": {
+          "status": "banned",
+          "sourceId": "mn-346-155",
+          "cite": "§ 346.155, subd. 1(e)(2), subd. 2",
+          "quote": "all members of the Felidae family including, but not limited to, lions, tigers, cougars, leopards, cheetahs, ocelots, and servals, but not including domestic cats or cats recognized as a domestic breed, registered as a domestic breed, and shown as a domestic breed by a national or international multibreed cat registry association; (2) bears; and (3) all nonhuman primates",
+          "note": "Bears are regulated animals, and no one may take possession of one after 1 January 2005. The black bear is also big game, and § 97A.105 offers game farm licenses for bear propagation as a business, which does not lift the regulated animal ban for a pet.",
+          "grandfathered": {
+            "before": "2005-01-01",
+            "detail": "Possessed on 1 January 2005 and brought into Animal Welfare Act compliance within 90 days. Breeding after that date is barred, and a non-USDA-licensed keeper may replace the animal only once."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "NV": {
+          "status": "permit",
+          "sourceId": "nv-nrs-503-597",
+          "cite": "NRS 503.597(1); NAC 503.110, 503.140",
+          "quote": "it is unlawful, except by the written consent and approval of the Department, for any person at any time to receive, bring or have brought or shipped into this State, or remove from one stream or body of water in this State to any other...any aquatic life or wildlife",
+          "note": "No bear appears on the prohibited list or the no-permit list. The black bear is a Nevada game mammal, and whether the Department would consent to a private keeper holding one is not something the rule says; the wildlife facility licensing in NAC chapter 504 was not read. An animal on neither Nevada list is not unregulated: NRS 503.597 requires the Department's written consent to bring any wildlife into the state, and NAC 503.140 is the list of exemptions from that. NAC 503.140(4) preserves county and city ordinances, and Clark County, Las Vegas and Henderson are all stricter than the state.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "VA": {
+          "status": "banned",
+          "sourceId": "va-29-1-521",
+          "cite": "Va. Code § 29.1-521(A)(10); 4VAC15-20-50",
+          "quote": "To hunt, trap, take, capture, kill, attempt to take, capture, or kill, possess, deliver for transportation, transport, cause to be transported, by any means whatever, receive for transportation or export, or import, at any time or in any manner, any wild bird or wild animal or the carcass or any part thereof, except as specifically permitted by law and only by the manner or means and within the numbers stated.",
+          "note": "The black bear is a Virginia native wild animal and a game species. Because it is a Virginia native, it is not a nonnative (exotic) animal, so the permit table at 4VAC15-30-40 is not its rule, even though the table names its family; § 29.1-521(A)(10) is, and it bars possessing a wild animal except as specifically permitted. The one-per-address allowance at 4VAC15-360-10(A) reaches no mammal, and Chapter 290's permits are for exhibits and scientific collection, the reasoning the flying squirrel cell sets out.",
+          "verifiedOn": "2026-10-01"
+        },
+        "MD": {
+          "status": "banned",
+          "sourceId": "md-10-621",
+          "cite": "Crim. Law § 10-621(b)(1)(i)",
+          "quote": "A person may not import into the State, offer for sale, trade, barter, possess, breed, or exchange a live: (i) fox, skunk, raccoon, or bear; (ii) caiman, alligator, or crocodile; (iii) member of the cat family other than the domestic cat; (iv) hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds; (v) member of the dog family other than the domestic dog; (vi) hybrid of a member of the dog family and a domestic dog; (vii) nonhuman primate ...; or (viii) poisonous snake in the family groups of Hydrophidae, Elapidae, Viperidae, or Crotolidae.",
+          "note": "\"Bear\" is named in clause (i), and § 10-621(c)(2) separately bars USDA Class C exhibitors from acquiring a bear they did not own on 30 June 2014 without meeting accreditation conditions. There is no private permit: the exemptions run to zoos, sanctuaries, research and licensed exhibitors. Subsection (e) preserves stricter county and municipal rules.",
+          "localOverride": true,
+          "grandfathered": {
+            "before": "2006-05-31",
+            "detail": "Lawful possession on or before 31 May 2006 may continue, but only if the keeper gave written notification to the local animal control authority by 1 August 2006, with the number and type of animals and a photograph or a description of a tattoo or microchip. That window is long closed."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "NM": {
+          "status": "banned",
+          "sourceId": "nm-importation-list",
+          "cite": "Director's Species Importation List, 2023",
+          "quote": "Mammal | Bear | Ursidae | Ursus americanus | Bear, Black | IV",
+          "note": "Named in Group IV, and the list also carries every bear of any species in Group IV as a state protected species. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. 19.35.7 NMAC is an importation rule, so it governs bringing the animal into New Mexico rather than keeping one already here.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-unrestricted-list",
+          "cite": "Unrestricted Wild Animal List, July 2025, and Regulation 881",
+          "quote": "Species not found on the Restricted, Unrestricted or Domestic species lists are considered Restricted.",
+          "note": "No bear is on any list, so it is Restricted by default. It is also a Vermont native, and 10 V.S.A. § 4709 bars possessing a live wild animal without authorization. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "UT": {
+          "status": "banned",
+          "sourceId": "ut-table-3b-1",
+          "cite": "Table 3b-1, prohibited mammals",
+          "quote": "Personal possession will not be authorized. ... Bears family Ursidae all species",
+          "note": "Every bear is in the prohibited section, under a heading that says personal possession will not be authorized.",
+          "verifiedOn": "2026-10-01"
+        },
+        "DE": {
+          "status": "unclear",
+          "sourceId": "de-903",
+          "cite": "Del. Code tit. 3 § 7201; tit. 7 ch. 7",
+          "quote": "No person shall bring into this State, possess, sell or exhibit any live wild mammal or hybrid of a wild mammal or live reptile not native to or generally found in Delaware without first securing a permit under this chapter.",
+          "note": "The same question as the bobcat. The black bear is historically native to Delaware and has no resident population now. Treated as native, it is DNREC's, and DNREC says native wildlife may not be owned. Treated as not generally found here, it is an Agriculture exotic that needs the Individual permit, and nothing in 903 refuses a bear by name. Neither agency has said which.",
+          "verifiedOn": "2026-10-01"
+        },
+        "TN": {
+          "status": "banned",
+          "sourceId": "tn-70-4-403",
+          "cite": "Tenn. Code Ann. § 70-4-403(4)(A); (1)(A)(ii)(b)",
+          "quote": "(4) Class IV--This class includes those native species that may be possessed only by zoos and temporary exhibitors; provided, that rehabilitation facilities may possess Class IV wildlife as provided by rules established by the commission if authorized by a letter from the director of the agency: (A) Black bear (Ursus americanus);",
+          "note": "Named in Class IV, which only zoos and temporary exhibitors may hold, with rehabilitators allowed by letter. Bears of all species are also in Class I, which has been closed to personal possession since 25 June 1991.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "NC": {
+          "status": "permit",
+          "sourceId": "nc-113-272-5",
+          "cite": "G.S. §§ 113-129(7a), (7c), (15), (16); 113-272.5(a)",
+          "quote": "the wild animal or wild bird was not acquired unlawfully or merely as a pet",
+          "note": "The black bear is a North Carolina big game animal, so it is a wild animal under § 113-129(15), and (16) carries the definition to animals of wild species raised or kept in captivity. Holding one alive needs a captivity license, and § 113-272.5(a) tells the Executive Director not to issue it unless the animal \"was not acquired unlawfully or merely as a pet\", the reasoning the flying squirrel cell rests on. § 113-272.5(f) applies the captivity license to black bears and defers to Article 2 of Chapter 19A on how captive bears are kept, and § 113-294(c1) makes unlawfully possessing a bear a Class 1 misdemeanor with a $2,000 minimum fine.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "AR": {
+          "status": "banned",
+          "sourceId": "ar-unrestricted",
+          "cite": "Addendum R1.03; Code 01.00; Code 09.02",
+          "quote": "The Commission will not issue permits for breeding, sale, or importation of the following species other than in accordance with the exceptions listed in Codes 09.07, 09.10, 09.11, and Addenda F1.03, F1.04 (possession of some species may be allowed in accordance with Codes 09.02, 09.05, 09.08, and 09.14): ... Large carnivores",
+          "note": "Code 01.00 defines a large carnivore to include \"all species of bears\", R1.03 refuses breeding, sale and importation permits for large carnivores, and Code 09.02 ties bear possession to Ark. Code Ann. §§ 20-19-501 to 20-19-511 or a breeder permit. The black bear is an Arkansas game animal and is not among the natives 09.14 lets a household keep.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "ID": {
+          "status": "permit",
+          "sourceId": "id-130110",
+          "cite": "IDAPA 13.01.10.200.01, .03, .04",
+          "quote": "No person may import into Idaho, export from Idaho, transport, possess or otherwise hold in captivity, propagate, sell or release into the wild any live wildlife, except those animals exempted by Idaho Code or these rules, without a corresponding import, export, transport, captive possession (individual animal license or multiple animal license at a private, commercial or rehabilitation facility), sale or release license/permit from the Department.",
+          "note": "A black bear is Idaho big game, and the rule's own marking requirement for \"All captive big game animals\" shows the Department licenses them. A captive possession license is required, and § 200.03 lets the Department refuse one on public safety grounds, which for a bear is the likely answer.",
+          "verifiedOn": "2026-10-01"
+        },
+        "IA": {
+          "status": "banned",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(4)",
+          "quote": "A member of the family ursidae of the order carnivora, including bears and pandas.",
+          "note": "Every bear is a dangerous wild animal. § 717F.3 bars owning, possessing, breeding or importing a dangerous wild animal, and the only route was the 2007 registration.",
+          "grandfathered": {
+            "before": "2007-07-01",
+            "detail": "An owner in possession on 1 July 2007 could keep the animal after implanting an electronic identification device within sixty days and registering with the department by 31 December 2007. No new route exists."
+          },
+          "verifiedOn": "2026-10-01"
+        },
+        "KY": {
+          "status": "banned",
+          "sourceId": "ky-301-2-081",
+          "cite": "301 KAR 2:081 § 6(1)",
+          "quote": "(1) Except as established in Sections 2(7) and 7 of this administrative regulation, 301 KAR 2:075, and 301 KAR 3:120, a person shall not import, transport into Kentucky, or possess: ... (c) Black bear (Ursus americanus);",
+          "note": "Named on the prohibited natives list, and every bear is also inherently dangerous exotic wildlife under 2:082 § 4(2)(c). § 1(3) defines native wildlife \"regardless of ... being captive-bred or taken from the wild\", so a captive-bred animal from another state is in the same position. KRS 65.877 lets local governments go further.",
+          "localOverride": true,
+          "verifiedOn": "2026-10-01"
+        },
+        "RI": {
+          "status": "banned",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17 native mammal list; §§ 3.7(A), (C)",
+          "quote": "The possession of native mammals is restricted to those institutions identified within § 3.7(C) of this Part, and as exempted per § 3.8 of this Part. Terrestrial mammals considered native either currently or historically to Rhode Island and which possession as pets is prohibited include the following: ... (4) Black Bear (Ursus americana),",
+          "note": "Named on the native mammal list. Rhode Island's native definition applies \"regardless of where the animal originated\", so a captive-bred animal from out of state is no different, and § 3.7(A) separately restricts every carnivore without a licensed rabies vaccine to researchers, USDA exhibitors and AZA facilities.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.05, Table 800.2",
+          "quote": "Bear, Black   Ursus americanus   5",
+          "note": "The black bear is in the controlled table with category 5 alone. Permittee category 5 is the exhibitor category, with no category 1 for an individual, so a private keeper cannot be issued a possession permit.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-01"
+        },
+        "MO": {
+          "status": "banned",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.240; 3 CSR 10-9.105 Approved Confined Wildlife Species List; RSMo § 578.023",
+          "quote": "Class II wildlife shall include copperheads, cottonmouths, timber rattlesnakes, pygmy rattlesnakes, eastern massasauga, prairie massasauga, mountain lions or mountain lion-hybrids, wolves or wolf-hybrids, and black bears or black bear hybrids.",
+          "note": "The black bear is Class II wildlife, held only under a Class II wildlife breeder permit, and the approved species list confines that to \"Bear, Black (& hybrids) legally obtained under a valid Class II Wildlife Breeder Permit prior to August 30, 2021\". The Wildlife Hobby Permit excludes Class II. So no new bear may be acquired.",
+          "grandfathered": {
+            "before": "2021-08-30",
+            "detail": "Black bears and black bear hybrids legally obtained under a valid Class II wildlife breeder permit before 30 August 2021 remain on the approved list."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "KS": {
+          "status": "banned",
+          "sourceId": "ks-32-1301",
+          "cite": "K.S.A. 32-1301(d)(2), 32-1302(a), (c), (d); K.A.R. 115-20-4",
+          "quote": "(c) Except as provided in subsection (d), a person shall not take possession of a dangerous regulated animal or allow dangerous regulated animals in such person's possession to breed.",
+          "note": "Bears are dangerous regulated animals, and since 1 July 2006 no one may take possession of one except a USDA licensee keeping up the inventory it held that day. K.A.R. 115-20-4 offers any individual a possession permit for a black bear, but it is a wildlife permit that cannot override the statute. Animals held on 1 July 2006 had to be registered with local animal control and insured for $250,000.",
+          "grandfathered": {
+            "before": "2006-07-01",
+            "detail": "A bear possessed on 1 July 2006 may be kept if registered with the local animal control authority, caged to K.S.A. 32-1306, covered by $250,000 liability insurance or bond, and not bred."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "SC": {
+          "status": "permit",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-20(A)(1), (B)",
+          "quote": "a furbearer, a member of the family Cervidae, a nondomestic member of the families Suidae (pigs), Tayassuidae (peccaries), Bovidae (bison, mountain goat, mountain sheep), coyote, bear, or turkey (genus Meleagris). Furbearer includes, but is not limited to, red and gray fox, raccoon, opossum, muskrat, mink, skunk, otter, bobcat, weasel, and beaver;",
+          "note": "\"Bear\" is named in § 50-16-20(A)(1), so importing one needs a Department permit. The 2018 ban in Title 47 reaches non-native bears only, so the native black bear is outside it. § 50-16-20(B) lets the Department issue the permit only if the animal was taken lawfully where it came from and its possession is not expected to harm the state's wildlife, and § 50-16-60's pet-trade exemption does not list it.",
+          "verifiedOn": "2026-10-01"
+        },
+        "MT": {
+          "status": "permit",
+          "sourceId": "mt-87-4-8",
+          "cite": "MCA §§ 87-4-801(3), 87-4-803(2)(b), 87-4-804(4), (6)",
+          "quote": "\"Wild animal menagerie\" means any place where one or more bears or large cats, including cougars, lions, tigers, jaguars, leopards, pumas, cheetahs, ocelots, and hybrids of those large cats are kept in captivity for use other than public exhibition.",
+          "note": "Montana writes a permit for keeping bears privately: a wild animal menagerie is defined by use \"other than public exhibition\", the application asks only for the site, species, caging and proof the applicant is responsible, and the department must inspect before issuing. It is capped at 10 animals, which must come captive bred from a licensed zoo, menagerie, fur farm or similar source; a black bear may not be captured from the wild for it.",
+          "verifiedOn": "2026-10-08"
+        },
+        "WV": {
+          "status": "permit",
+          "sourceId": "wv-20-2-51",
+          "cite": "W. Va. C.S.R. § 74-1-3.1.h; W. Va. Code § 20-1-2, § 20-2-4(a), § 20-2-51",
+          "quote": "3.1.h. Bears; (excluding black bears native to this state);",
+          "note": "The board's list carves the native black bear out of its bear entry in terms, and the black bear is a game animal by name in § 20-1-2. That leaves Chapter 20, where § 20-2-4(a) bars captivity except as provided and § 20-2-51 provides a pet permit for an animal from a commercial dealer or the open season. On the words a black bear is in the same position as a raccoon, which is surprising enough that the DNR's practice deserves a check before anyone relies on it.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "AK": {
+          "status": "banned",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(a), (c); AS 16.05.940(19)",
+          "quote": "The department may not issue a permit for the capture, possession, import, or export of any game animal, including a hybrid of a game animal and a species listed in (b) of this section, for use as a pet",
+          "note": "A native big game animal, not on the clean list, and subsection (c) bars a pet permit. The 5 AAC 92.029 framework has no bear exception.",
+          "verifiedOn": "2026-10-01"
+        },
+        "SD": {
+          "status": "permit",
+          "sourceId": "sd-12-68-18",
+          "cite": "ARSD 12:68:18:03(1)(c); 12:68:18:03.03(4)",
+          "quote": "(1) Of the order Carnivora, all nondomestic members of the following families: ...(c) Ursidae;",
+          "note": "Bears are on the possession permit list and nowhere on the prohibited list, so a black bear takes the same ten-dollar permit as a serval. The board must find the facilities adequate, but the rule writes no pet exclusion.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "AL": {
+          "status": "banned",
+          "sourceId": "al-220-2-26",
+          "cite": "§ (1), (3)",
+          "quote": "Any of the following from any area outside the state of Alabama; any member of the family Cervidae (to include but not be limited to deer, elk, moose, caribou), species of coyote, species of fox, species of raccoon, species of skunk, wild rodent, or strain of wild turkey, black bear (Ursus americanus), mountain lion (Felis concolor), bobcat (Felis rufus)",
+          "note": "Named by binomial among the animals barred from outside Alabama, and in-state transport is barred except by a licensed game breeder. An Alabama black bear is a protected wild animal that § (3) bars keeping alive.",
+          "verifiedOn": "2026-10-01"
+        },
+        "IN": {
+          "status": "permit",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)(2); 9-11-2(c), (e)",
+          "quote": "(1) Wolves that are purebred. (2) Bears (all species). (3) Wild cats (all species), except feral cats and cats listed in section 7 of this rule.",
+          "note": "Bears of all species are Class III. The permit must be obtained before taking possession, and the applicant must present a recapture or destruction plan, own the equipment for it and pass a cage inspection. The rule draws no pet line, so it is a permit rather than a ban.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "ND": {
+          "status": "permit",
+          "sourceId": "nd-48-1-09",
+          "cite": "NDAC 48.1-09-01-02(3)(b)(3); 48.1-09-01-03(1)",
+          "quote": "Category 3 species of nontraditional livestock includes the following species and their hybrids: ... (2) Big cats, including mountain lion, jaguar, leopard, lion, tiger, and cheetah. (3) Bears. (4) Wolves.",
+          "note": "Bears are category 3, the inherently dangerous tier, but category 3 is licensed on the same footing as category 2: a license before acquisition and an approved premises. The rule writes no pet exclusion.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "WY": {
+          "status": "banned",
+          "sourceId": "wy-ch10",
+          "cite": "Ch. 10 § 11(a); Wyo. Stat. § 23-1-101(a)(xii)(A)",
+          "quote": "There shall be no private ownership, private importation or private possession of live big or trophy game animals, except as otherwise specified in this regulation.",
+          "note": "The black bear is a \"trophy game animal\" by statute, and § 11(a) bars private ownership of trophy game outright.",
+          "verifiedOn": "2026-10-08"
+        },
+        "MS": {
+          "status": "banned",
+          "sourceId": "ms-40-2-8-4",
+          "cite": "Rule 8.4(A), (B); Rule 8.3(A)(5)(b)(ii)",
+          "quote": "Game and furbearing animals are defined as the following: white-tailed deer, black bear, gray squirrel, fox squirrel, cottontail rabbit, swamp rabbit, raccoon, opossum, bobcat, river otter, muskrat, mink, and weasel. B. Possession of live game and furbearing animals is prohibited with the following exceptions",
+          "note": "Rule 8.3 lists every bear and offers a personal possession permit at $200, but Rule 8.4 separately names the black bear as a game animal and prohibits possessing one alive, and its exceptions do not include a Rule 8.3 permit. So the 8.3 permit is a route for exotic bears, not for Mississippi's own.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "LA": {
+          "status": "banned",
+          "sourceId": "la-76-v-115",
+          "cite": "LAC 76:V.115.C.1.a, C.2",
+          "quote": "C.1.Except as provided herein, it shall be unlawful to import into, possess, purchase or sell within the state of Louisiana, by any means whatsoever including but not limited to transactions conducted via the internet, any of the following species or its subspecies of live wild quadrupeds, big exotic cats, or non-human primates, domesticated or otherwise (hereinafter \"listed animals\"): a.black bear (Ursus americanus);",
+          "note": "The black bear is the first animal on the list, which bars importing, possessing, buying or selling one, \"domesticated or otherwise\". Holders of a potentially dangerous wild quadruped permit valid when the rule took effect were grandfathered but may not acquire more, \"including breeding\". Exemptions are accredited zoos, research facilities and transit.",
+          "grandfathered": {
+            "before": "1995-12-20",
+            "detail": "A potentially dangerous wild quadruped permit valid on the rule's effective date, renewed annually until the animal dies or leaves; no new animals. The rule was first published in the Louisiana Register in December 1995 (LR 21:1356); the exact effective day was not read."
+          },
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-10-08"
+        },
+        "OK": {
+          "status": "permit",
+          "sourceId": "ok-29-7-502",
+          "cite": "29 O.S. §§ 7-502(A)(3), 4-107(B), (E)",
+          "quote": "A. Except as otherwise provided by law, no person may possess: ... 3. Any native bear or native cat that will grow to reach the weight of fifty (50) pounds or more.",
+          "note": "Oklahoma bars possessing a native bear except as provided by law, and § 4-107(E) is that provision: the keeper must hold a commercial wildlife breeder's license, keep the bear confined to the licensed premises and allow no public contact. The pet exemption in § 7-502(B)(4) does not reach paragraph 3. Despite its name the license goes to anyone the Director believes is acting in good faith, at $48 a year, and § 4-107(B) lets a breeder sell a bear only to another license holder.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-10-01"
+        },
+        "NE": {
+          "status": "banned",
+          "sourceId": "ne-37-477",
+          "cite": "Neb. Rev. Stat. § 37-477(2), (3)",
+          "quote": "(2) Except as provided in subsection (3) of this section, no person shall keep in captivity in this state any wolf, any skunk, or any member of the families Felidae and Ursidae.",
+          "note": "Every member of Ursidae is banned by statute with no permit, and the fur-producer exception covers only the lynx and the bobcat. Exceptions are public and accredited zoos and pre-1986 animals.",
+          "grandfathered": {
+            "before": "1986-03-01",
+            "detail": "A person legally holding such an animal on 1 March 1986 may keep it for its lifetime under § 37-477(3), and may not trade, sell or dispose of it without the commission's written permission."
+          },
+          "verifiedOn": "2026-10-01"
+        }
+      },
+      "article": "/blog/black-bear-legal-guide/"
     }
   }
 }
