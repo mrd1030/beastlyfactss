@@ -6,13 +6,15 @@ url: https://www.law.cornell.edu/regulations/vermont/12-021-Code-Vt-R-12-010-021
 fetched: 2026-10-08
 fetch notes: curl -A "Mozilla/5.0" from Cornell LII; tags stripped, whitespace collapsed, rewrapped at section numbers.
 
-READ THIS FIRST. The other VT files, the vt-reg-881 source note and the VT scope line quote only the
-first sentence of § 5.2, the bar on permits except for bona fide scientific or educational purposes.
+READ THIS FIRST. Until 2026-10-08 the other VT files, the vt-reg-881 source note and the VT scope line
+quoted only the first sentence of § 5.2, the bar on permits except for bona fide scientific or educational purposes.
 The second sentence opens a route for every other purpose: "the Commissioner shall not issue a permit
 unless it has been determined that the wild animal ... does not conflict with the purpose of this
 regulation." Read alone, the first sentence says a Restricted species can never be a pet; read with the
 second, a personal Importation and Possession Permit can issue on a no-conflict determination. The
 Restricted list's own header ("require an importation and possession permit") fits the second reading.
+Nothing else in the regulation closes the second sentence to pets, and the matrix follows it: every
+Vermont cell resting on the restricted-animal permit reads `permit` with permitFor "personal" (2026-10-08).
 
 Extracted text follows verbatim. This is a cache of the primary source, not a
 substitute for it. Re-fetch before relying on it for a new verification date.

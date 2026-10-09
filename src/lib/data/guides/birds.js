@@ -56,7 +56,7 @@ export const birdGuides = fillCostTokens([
       { slug: "african-grey-parrot-handling-guide", line: "Just how intelligent Alex really was, why the bites happen, and how this species compares to smaller parrots." },
       { slug: "african-grey-parrot-health-issues-guide", line: "Hypocalcemia, feather-destructive behavior, aspergillosis, psittacosis, and PBFD, with what causes each." },
       { slug: "african-grey-parrot-enrichment-guide", line: "The foraging studies that actually measured an outcome, and why a food bowl is the enemy of this species' wellbeing." },
-      { slug: "african-grey-parrot-legal-guide", line: "CITES Appendix I explained, the captive-breeding exemption that keeps ownership legal, and Vermont's one real ban." },
+      { slug: "african-grey-parrot-legal-guide", line: "CITES Appendix I explained, the captive-breeding exemption that keeps ownership legal, and how Vermont restricts the bird without naming it." },
     ],
     buyList: [
       "36x24x48 inch cage or larger",
@@ -678,7 +678,7 @@ export const birdGuides = fillCostTokens([
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal check first", value: "Fourteen states ban it: California, Colorado, Connecticut, Georgia, Hawaii, Kansas, Kentucky, Maine, Nebraska, New Jersey, Pennsylvania, Vermont, Wisconsin, and Wyoming. Rhode Island and Arkansas require a permit, Virginia attaches a condition, Tennessee is unresolved.", source: "quaker-parakeet-legal-guide" },
+        { label: "Legal check first", value: "Fourteen states ban it: California, Colorado, Connecticut, Georgia, Hawaii, Kansas, Kentucky, Maine, Nebraska, New Jersey, Pennsylvania, Tennessee, Wisconsin, and Wyoming. Rhode Island, Arkansas and Vermont require a permit, and Virginia attaches a condition.", source: "quaker-parakeet-legal-guide" },
         { label: "Why the bans exist", value: "The only parrot that builds a stick nest rather than using a cavity, often on electrical infrastructure. Florida Power and Light logged 498 outages from the birds in the first five months of 2001.", source: "quaker-parakeet-legal-guide" },
         { label: "Cage", value: "24 by 24 by 36 inches minimum, a 30 to 36 inch flight-style cage the better target, on heavy-gauge bars spaced 1/2 to 5/8 inch and never past 3/4. Never a nest box: it triggers hormonal aggression.", source: "quaker-parakeet-tank-setup-guide" },
         { label: "Temperature and light", value: "Room temperature, off drafts, and never outdoors as it climbs toward 90°F. Full-spectrum lighting is optional, up to about 4 hours a day if you run one.", source: "quaker-parakeet-tank-setup-guide" },
@@ -734,7 +734,7 @@ export const birdGuides = fillCostTokens([
       "Avian vet contact, located before you need one",
     ],
     faqs: [
-      { q: "Which states ban quaker parrots?", a: "Fourteen: California, Colorado, Connecticut, Georgia, Hawaii, Kansas, Kentucky, Maine, Nebraska, New Jersey, Pennsylvania, Vermont, Wisconsin and Wyoming. Rhode Island and Arkansas require a permit, Virginia allows them on a condition, and Tennessee is unresolved. In the remaining 34 jurisdictions on our map, including New York City, nothing reaches the species." },
+      { q: "Which states ban quaker parrots?", a: "Fourteen: California, Colorado, Connecticut, Georgia, Hawaii, Kansas, Kentucky, Maine, Nebraska, New Jersey, Pennsylvania, Tennessee, Wisconsin and Wyoming. Rhode Island, Arkansas and Vermont require a permit, and Virginia allows them on a condition. In the remaining 34 jurisdictions on our map, including New York City, nothing reaches the species." },
       { q: "What size cage does a Quaker parakeet need?", a: "24 by 24 by 36 inches is a reasonable minimum, though a wider flight-style cage at 30 to 36 inches is the better real-world target for an active bird. Bar spacing 1/2 to 5/8 inch, never past 3/4, on heavy-gauge bars, since this species chews hard." },
       { q: "What is the most common health issue in Quaker parakeets?", a: "Fatty liver disease (hepatic lipidosis), almost always tied to a seed-heavy, high-fat diet. Signs include anorexia, lethargy, an overgrown beak and nails, and green-tinted droppings, and Quaker parakeets are among the parrot species prone to obesity, which raises the risk." },
     ],

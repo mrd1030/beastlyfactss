@@ -630,10 +630,11 @@ turned up on its way through.
   tnsos.org. Anyone with a browser can settle three cells by opening one PDF. What rides on the
   first two is bigger than a fee: § 70-4-404(c)(1) closed personal possession of Class I
   wildlife in 1991, so an addition by rule means a flat no, not a permit.
-- **Vermont has three cells left**: quaker parakeet, African grey and rabbit. They depend
-  on the 2010 Domestic Species List, whose text is stored as glyph outlines and could not
-  be extracted by any method tried, WebFetch included. Everything else about Vermont is
-  cached and settled.
+- **Resolved 2026-10-08: the Vermont parrot cells and the Regulation 881 reading.** The Domestic
+  list is read (rabbit `legal`), and § 5.2's second sentence is a discretionary personal permit, so
+  the quaker, African grey and cockatoo moved from `banned` to `permit`, all 46 VT permit cells
+  resting on the restricted-animal permit carry permitFor "personal", and the Bengal, Savannah and
+  slider notes, scope line, source note, state note, hub rows and guides were corrected to match.
 - **Michigan's Part 413 prohibited species list** was never read. michigan.gov refuses this
   container on every path. It is an invasive species list and almost certainly names no pet
   reptile, but it is unverified and flagged in the cache.
