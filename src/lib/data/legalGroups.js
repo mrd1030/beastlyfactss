@@ -19,6 +19,8 @@ export const LEGAL_GROUPS = [
       'leopard-gecko', 'milk-snake', 'nile-monitor', 'red-eared-slider',
       'red-footed-tortoise', 'rosy-boa', 'russian-tortoise', 'savannah-monitor',
       'snapping-turtle', 'sulcata-tortoise', 'tokay-gecko', 'veiled-chameleon',
+      'rattlesnake', 'cobra', 'reticulated-python', 'green-anaconda',
+      'american-alligator', 'caiman',
     ],
   },
   {
@@ -34,11 +36,25 @@ export const LEGAL_GROUPS = [
     ids: [
       'chinchilla', 'degu', 'ferret', 'flying-squirrel', 'gerbil', 'guinea-pig',
       'hamster', 'hedgehog', 'prairie-dog', 'rabbit', 'sugar-glider',
+      'gray-squirrel', 'virginia-opossum',
     ],
   },
   {
     label: 'Larger mammals',
-    ids: ['bengal-cat', 'capybara', 'fennec-fox', 'savannah-cat', 'serval'],
+    ids: [
+      'bengal-cat', 'capybara', 'fennec-fox', 'savannah-cat', 'serval',
+      'raccoon', 'red-fox', 'arctic-fox', 'skunk', 'kinkajou', 'coati',
+      'bobcat', 'canada-lynx', 'asian-small-clawed-otter', 'black-bear',
+      'wolfdog', 'wallaby', 'two-toed-sloth', 'white-tailed-deer',
+    ],
+  },
+  {
+    label: 'Primates',
+    ids: ['capuchin', 'marmoset', 'ring-tailed-lemur', 'squirrel-monkey'],
+  },
+  {
+    label: 'Big cats',
+    ids: ['tiger', 'lion', 'cougar'],
   },
   {
     label: 'Invertebrates',

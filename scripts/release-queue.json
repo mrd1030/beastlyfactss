@@ -1,0 +1,205 @@
+{
+  "_readme": [
+    "The release queue for content/_scheduled-*. scripts/release-scheduled.mjs reads it.",
+    "Each entry: the scheduled file's slug, the directory under content/ it ships to,",
+    "the US Eastern date it ships, and the hub group it is listed under on the",
+    "exotic-pet-legal-hub article. hubGroup is needed only for pages with no matrix",
+    "animal id (group pages); species pages derive it from legalGroups.js.",
+    "inbound lists edits to live articles that should carry a link to the page",
+    "from the day it goes live: a file, an exact sentence to find, and its",
+    "replacement. Pages that link each other must share a day or the target",
+    "ships first; the order below respects that, so change dates in pairs."
+  ],
+  "pages": [
+    {
+      "slug": "raccoon-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-10"
+    },
+    {
+      "slug": "skunk-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-10"
+    },
+    {
+      "slug": "red-fox-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-10"
+    },
+    {
+      "slug": "arctic-fox-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-10"
+    },
+    {
+      "slug": "big-cat-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-11",
+      "hubGroup": "Big cats",
+      "inbound": [
+        {
+          "file": "content/guides/exotic-pet-legal-hub.mdx",
+          "find": "It's not relevant to the species this site covers, but it's a useful contrast to how lightly federal law otherwise touches private exotic pet ownership.",
+          "replace": "The [big cat laws guide](/blog/big-cat-legal-guide/) works through what the Act left to the states, and the Act is a useful contrast to how lightly federal law otherwise touches private exotic pet ownership."
+        },
+        {
+          "file": "content/guides/federal-exotic-pet-laws-guide.mdx",
+          "find": "This is the only federal law on the list that tells a private citizen they may not possess an animal, and it is worth seeing clearly for that reason.",
+          "replace": "This is the only federal law on the list that tells a private citizen they may not possess an animal, and it is worth seeing clearly for that reason; the [big cat laws by state guide](/blog/big-cat-legal-guide/) sets out what each state adds for the grandfathered animals and the cougar."
+        }
+      ],
+      "hubName": "Big Cat Laws"
+    },
+    {
+      "slug": "bobcat-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-11"
+    },
+    {
+      "slug": "canada-lynx-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-11"
+    },
+    {
+      "slug": "savannah-cat-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-11"
+    },
+    {
+      "slug": "kinkajou-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-12"
+    },
+    {
+      "slug": "coati-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-12"
+    },
+    {
+      "slug": "two-toed-sloth-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-12"
+    },
+    {
+      "slug": "asian-small-clawed-otter-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-12"
+    },
+    {
+      "slug": "black-bear-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-13"
+    },
+    {
+      "slug": "white-tailed-deer-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-13"
+    },
+    {
+      "slug": "wolfdog-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-13"
+    },
+    {
+      "slug": "gray-squirrel-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-13"
+    },
+    {
+      "slug": "virginia-opossum-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-14"
+    },
+    {
+      "slug": "wallaby-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-14"
+    },
+    {
+      "slug": "pet-monkey-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-14",
+      "hubGroup": "Primates",
+      "hubName": "Pet Monkey Laws"
+    },
+    {
+      "slug": "ring-tailed-lemur-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-14"
+    },
+    {
+      "slug": "capuchin-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-15"
+    },
+    {
+      "slug": "marmoset-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-15"
+    },
+    {
+      "slug": "squirrel-monkey-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-15"
+    },
+    {
+      "slug": "venomous-snake-laws-by-state",
+      "dir": "guides",
+      "date": "2026-10-15",
+      "hubGroup": "Reptiles",
+      "inbound": [
+        {
+          "file": "content/guides/hognose-snake-legal-guide.mdx",
+          "find": "Hognose snakes are mildly rear-fanged, with a weak venom used mostly to subdue toads, and case reports describe local effects, not systemic ones.",
+          "replace": "Hognose snakes are mildly rear-fanged, with a weak venom used mostly to subdue toads, and case reports describe local effects, not systemic ones; the [venomous snake laws by state](/blog/venomous-snake-laws-by-state/) guide covers the class rule the hognose mostly escapes."
+        }
+      ],
+      "hubName": "Venomous Snake Laws"
+    },
+    {
+      "slug": "rattlesnake-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-16"
+    },
+    {
+      "slug": "cobra-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-16"
+    },
+    {
+      "slug": "tiger-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-16"
+    },
+    {
+      "slug": "lion-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-16"
+    },
+    {
+      "slug": "cougar-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-16"
+    },
+    {
+      "slug": "reticulated-python-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-17"
+    },
+    {
+      "slug": "green-anaconda-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-17"
+    },
+    {
+      "slug": "american-alligator-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-17"
+    },
+    {
+      "slug": "caiman-legal-guide",
+      "dir": "guides",
+      "date": "2026-10-17"
+    }
+  ]
+}
