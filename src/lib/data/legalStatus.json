@@ -38334,9 +38334,9 @@
         "NE": {
           "status": "banned",
           "sourceId": "ne-166-nac-8",
-          "cite": "166 NAC 8 § 001.08A, A1",
+          "cite": "166 NAC 8 § 001.08A, A1; Neb. Rev. Stat. §§ 37-246, 37-477(1)",
           "quote": "001.08A Importation: the following wildlife may be imported: Alpaca ... Chinchilla, Chinchilla spp. ... Coatimundi ... Degu, Octodon spp. ... Fox, Vulpes spp. ... Genet ... Gerbil, Gerbillus spp. ... Guinea pig, Cavia porcellus ... Eurasian Hedgehogs, Erinaceus spp. ... Jerboa, greater ... Sugar Glider(s), Petaurus spp. ... Wallabies ... All Ratites, All Waterfowl, All Peafowl, All Game Birds, All Cage and Aviary Birds",
-          "note": "A sloth is not native, so the Captive Wildlife Permit scheme does not reach it, but the importation list is closed and names no sloth, so there is no lawful way to bring one into Nebraska except to an accredited or public zoo, the kinkajou's position.",
+          "note": "The bar is on bringing one in, not on keeping one. §§ 37-245 and 37-246 define wild mammals as species native to, migrating through or established in Nebraska, so a sloth is not a wild mammal, and neither two-toed sloth is a federally endangered or threatened species, so neither the § 37-477(1) captive permit nor the Captive Wildlife Permit scheme reaches it. What reaches it is § 001.08A, a closed importation list that names no sloth, so a sloth can lawfully come into Nebraska only to an accredited or public zoo or another facility § 001.08A1 names, the kinkajou's position. No Nebraska rule was found on possessing a sloth already in the state; banned here means no lawful way to get one here.",
           "permitFor": "commercial-exhibition-research",
           "verifiedOn": "2026-10-01"
         }
