@@ -124,6 +124,7 @@ Live editions (2026-10-04): bearded dragon 4.1; leopard gecko, crested gecko, ba
 - [ ] Book: sexual maturity reads 3 to 4 years, 5 to 6 in large species (`cockatoo.html` lines 320, 885). The site's handling guide and its listed PetMD source say about 5 to 7 years, when aggression tends to rise. Match on the next edit.
 - [ ] Glossary: CITES (`cockatoo.html:2078`) moves to the law page mini glossary; out: CDC (`:2073`), CPSC (`:2082`), et al. (`:2096`), HOA (`:2103`), IUCN (`:2105`), MSD (`:2109`), NASPHV (`:2110`), NHLBI (`:2111`), UC Davis (`:2134`), VCA (`:2138`). CPBC (`:2081`) stays.
 - [ ] Gear: washable mat and sleep cage unpriced; the gram scale's perch tops out at 3/4 in.
+- [ ] Book: Vermont row reads "Banned" (`cockatoo.html:1198`). The matrix now reads Regulation 881 § 5.2 as a discretionary personal permit, so the row should read Permit, with the note that the Commissioner decides case by case and no standard is published (matrix change 2026-10-08).
 - [ ] Book: sexual maturity "3 to 4 years in medium species, 5 to 6 in large ones" (`cockatoo.html:320`, `:885`, Sources note `:2153`) vs the site handling guide :42 and :66 "roughly 5 to 7 years old". Check the source and settle both. (Sweep 2026-10-05; the sweep's other cockatoo items came from the stale fragments and are void.)
 - No fitting product: a 3/4 in bar cage at least 36x24x48 in for Goffin's and galahs; a cockatoo-sized travel carrier inside the $80 to $200 row; plain white tray paper; stainless cage locks or snaps (unsure: coating status unclear).
 
