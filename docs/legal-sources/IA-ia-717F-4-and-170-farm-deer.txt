@@ -1,0 +1,124 @@
+# Iowa Code 717F.3 and 717F.4 (dangerous wild animal prohibitions and the 2007 registration) and chapter 170 (farm deer)
+
+sourceId: ia-717F
+jurisdiction: IA
+url: https://www.legis.iowa.gov/docs/code/717F.pdf
+fetched: 2026-10-08
+fetch notes: Plain curl of legis.iowa.gov PDFs, pdftotext with whitespace collapsed and rewrapped. IA-ia-wildlife-and-dangerous.txt holds 717F.1 and ch. 481A; this file adds the operative prohibition, the 1 July 2007 grandfather, and the farm deer chapter that decides a captive whitetail.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+==== Iowa Code 717F.3 and 717F.4 (https://www.legis.iowa.gov/docs/code/717F.pdf) ====
+717F.3 Dangerous wild animals — prohibitions. Except as otherwise provided in this chapter, a person
+shall not do any of the following: 1. Own or possess a dangerous wild animal. 2. Cause or allow a
+dangerous wild animal owned by a person or in the person’s possession to breed. 3. Transport a
+dangerous wild animal into this state. 2007 Acts, ch 195, §3 717F.4 Owning or possessing dangerous
+wild animals on July 1, 2007. A person who owns or possesses a dangerous wild animal on July 1,
+2007, may continue to own or possess the dangerous wild animal subject to all of the following: 1.
+The person must be eighteen years old or older. 2. a. The person must not have been convicted of an
+offense involving the abuse or neglect of an animal pursuant to a law of this state or another
+state, including but not limited to chapter 717, 717B, 717C, or 717D or an ordinance adopted by a
+city or county. b. The department, another state, or the federal government must not have suspended
+an application for a permit or license or revoked a permit or license required to operate a
+commercial establishment for the care, breeding, or sale of animals, including as provided in
+chapter 162. c. The person must not have been convicted of a felony for an offense committed within
+the last ten years, as provided by this Code, under the laws of another state, or under federal law.
+d. The person must not have been convicted of a misdemeanor or felony for an offense committed
+within the last ten years involving a controlled substance as defined in section 124.101 in this
+state, under the laws of another state, or under federal law. 3. Within sixty days after July 1,
+2007, the person must have an electronic identification device implanted beneath the skin or hide of
+the dangerous wild animal, unless a licensed veterinarian states in writing that the implantation
+would endanger the comfort or health of the dangerous wild animal. In such case, an electronic
+identification device may be otherwise attached to the dangerous wild animal as required by the
+department. 4. Not later than December 31, 2007, the person must notify the department using a
+registration form prepared by the department. The registration form shall include all of the
+following information: a. The person’s name, address, and telephone number. b. A sworn affidavit
+that the person meets the requirements necessary to own or possess a dangerous wild animal as
+provided in this section. c. A complete inventory of each dangerous wild animal which the person
+owns or possesses. The inventory shall include all of the following information: (1) The number of
+the dangerous wild animals according to species. (2) The manufacturer and manufacturer’s number of
+the electronic device implanted in or attached to each dangerous wild animal. Tue Dec 09 21:55:53
+2025 Iowa Code 2026, Chapter 717F (27, 0)  §717F.4, DANGEROUS WILD ANIMALS 4 (3) The location where
+each dangerous wild animal is kept. The person must notify the department in writing within ten days
+of a change of address or location where the dangerous wild animal is kept. (4) The approximate age,
+sex, color, weight, scars, and any distinguishing marks of each dangerous wild animal. (5) The name,
+business mailing address, and business telephone number of the licensed veterinarian who is
+responsible for providing care to the dangerous wild animal. The information shall include a
+statement signed by the licensed veterinarian certifying that the dangerous wild animal is in good
+health. (6) A color photograph of the dangerous wild animal. (7) A copy of a current liability
+insurance policy as required in this section. The person shall send a copy of the current liability
+policy to the department each year. 5. The person must pay the department a registration fee as
+provided in section 717F.8. 6. The person must maintain health and ownership records for the
+dangerous wild animal for the life of the dangerous wild animal. 7. The person must confine the
+dangerous wild animal in a primary enclosure as required by the department on the person’s premises.
+The person must not allow the dangerous wild animal outside of the primary enclosure unless the
+dangerous wild animal is moved pursuant to any of the following: a. To receive veterinary care from
+a licensed veterinarian. b. To comply with the directions of the department or an animal warden. c.
+To transfer ownership and possession of the dangerous wild animal to a wildlife sanctuary or provide
+for its destruction by euthanasia as required by the department. 8. The person must display at least
+one sign on the person’s premises where the dangerous wild animal is kept warning the public that
+the dangerous wild animal is confined there. The sign must include a symbol warning children of the
+presence of the dangerous wild animal. 9. The person must immediately notify an animal warden or
+other local law enforcement official of any escape of a dangerous wild animal. 10. The person must
+maintain liability insurance coverage in an amount of not less than one hundred thousand dollars
+with a deductible of not more than two hundred fifty dollars, for each occurrence of property
+damage, bodily injury, or death caused by each dangerous wild animal kept by the person. 11. The
+person who owns or possesses the dangerous wild animal is strictly liable for any damages, injury,
+or death caused by the dangerous wild animal. The person must reimburse the department or other
+public agency for actual expenses incurred by capturing and maintaining custody of the dangerous
+wild animal. 12. If the person is no longer able to care for the dangerous wild animal, all of the
+following apply: a. The person must so notify the department, stating the planned disposition of the
+dangerous wild animal. b. The person must dispose of the dangerous wild animal by transferring
+ownership and possession to a wildlife sanctuary or providing for its destruction by euthanasia as
+required by the department. 2007 Acts, ch 195, §4 Referred to in §717F.6, 717F.7, 717F.8
+
+==== Iowa Code 170.1, 170.1A, 170.3 and 170.4 (https://www.legis.iowa.gov/docs/code/170.pdf) ====
+170.1 Definitions. As used in this chapter, unless the context otherwise requires: 1. “Chronic
+wasting disease” means the animal disease afflicting deer, elk, or moose that is a transmissible
+disease of the nervous system resulting in distinctive lesions in the brain and that belongs to the
+group of diseases that is known as transmissible spongiform encephalopathies (TSE). 2. “Department”
+means the department of agriculture and land stewardship. 3. a. “Farm deer” means an animal
+belonging to the cervidae family and classified as part of the dama species of the dama genus,
+commonly referred to as fallow deer; part of the elaphus species of the cervus genus, commonly
+referred to as red deer or elk; part of the virginianus species of the odocoileus genus, commonly
+referred to as whitetail; part of the hemionus species of the odocoileus genus, commonly referred to
+as mule deer; part of the nippon species of the cervus genus, commonly referred to as sika; or part
+of the alces species of the alces genus, commonly referred to as moose. b. “Farm deer” does not
+include any unmarked free-ranging elk, whitetail, or mule deer. “Farm deer” also does not include
+preserve whitetail which are kept on a hunting preserve as provided in chapter 484C. 4. “Fence”
+means a boundary fence which encloses farm deer within a landowner’s property as required to be
+constructed and maintained pursuant to section 170.4. 5. “Landowner” means a person who holds an
+interest in land, including a titleholder or tenant. 2003 Acts, ch 149, §4, 23; 2005 Acts, ch 139,
+§1; 2012 Acts, ch 1095, §58, 59; 2024 Acts, ch 1170, §242 Referred to in §10.1, 167.22, 169A.1,
+169C.1, 189A.2, 190A.2, 423.1, 481A.1, 481A.134, 481A.135, 673A.3, 715E.1, 716.7, 716.7A, 716.8,
+716.13, 716.14, 717.1 170.1A Application of chapter. 1. A landowner shall not keep whitetail unless
+the whitetail are kept as farm deer under this chapter or kept as preserve whitetail on a hunting
+preserve pursuant to chapter 484C. 2. This chapter authorizes the department of agriculture and land
+stewardship to regulate whitetail kept as farm deer. However, the department of natural resources
+shall regulate preserve whitetail kept on a hunting preserve pursuant to chapter 484C. 2005 Acts, ch
+139, §2 170.2 Farm deer council. Repealed by 2024 Acts, ch 1170, §368. 170.3 Departmental
+jurisdiction — administration and enforcement. 1. Farm deer are livestock as provided in this title
+and are principally subject to regulation by the department of agriculture and land stewardship, and
+also the department of natural resources as specifically provided in this chapter. The regulations
+adopted by the department of agriculture and land stewardship may include but are not limited to
+providing for the importation, transportation, and disease control of farm deer. The department of
+natural Tue Dec 09 22:23:42 2025 Iowa Code 2026, Chapter 170 (19, 0)  §170.3, FARM DEER 2 resources
+shall not require that the landowner be issued a license or permit for keeping farm deer or for the
+construction of a fence for keeping farm deer. 2. The department of agriculture and land stewardship
+and the department of natural resources shall cooperate in administering and enforcing this chapter.
+2003 Acts, ch 149, §6, 23
+
+170.4 Requirements for keeping whitetail — fence certification. A landowner shall not keep whitetail
+as farm deer, unless the whitetail is kept on land which is enclosed by a fence. The fence must be
+constructed and maintained as prescribed by rules adopted by the department. A landowner shall not
+keep the whitetail unless the fence is certified in a manner and according to procedures required by
+the department. The fence shall be constructed and maintained to ensure that whitetail are kept in
+the enclosure and that other deer are excluded from the enclosure. A fence that is constructed on or
+after May 23, 2003, shall be at least eight feet in height above ground level. The department of
+agriculture and land stewardship may require that the fence is inspected and approved prior to
+certification. The department of natural resources may periodically inspect the fence according to
+appointment with the enclosure’s landowner. 2003 Acts, ch 149, §7, 23 Referred to in §170.1, 170.5,
+170.6, 170.8

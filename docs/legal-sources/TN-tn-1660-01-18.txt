@@ -1,0 +1,67 @@
+SOURCE: Tennessee: Tenn. Comp. R. & Regs. 1660-01-18, Rules and Regulations of Live Wildlife, rules .01 and .03
+sourceId: tn-1660-01-18
+jurisdiction: TN
+URL: https://www.law.cornell.edu/regulations/tennessee/Tenn-Comp-R-Regs-1660-01-18-.03 and .../Tenn-Comp-R-Regs-1660-01-18-.01
+FETCHED: 2026-10-08 (Tennessee's own host, publications.tnsosfiles.com, refuses this container on every path. Cornell LII
+carries the chapter at /regulations/tennessee/title-1660/subtitle-1660-01/chapter-1660-01-18, one page per rule, .01 to .06,
+and answers plain curl. This is a reproduction, so cite the official rule number.)
+
+READ THIS FIRST. This is the chapter the serval, fennec fox and quaker parakeet cells were left unclear
+on, because nobody here could read it. Rule .03 adds no mammal to Class I by name: the only Class I
+addition is hybrids of two Class I species. It does add the monk parakeet to Class V at .03(4)(b).
+And .03(5) settles every cross-class hybrid at the least restrictive class involved, which is what
+answers the Savannah cat.
+
+==== Rule 1660-01-18-.03, Classes of Wildlife ====
+
+(1) Hybrids resulting from the cross of two Class I species are added to the list of Class I
+wildlife codified in T.C.A. § 70-4-403(1) . (2) Native species of wildlife are considered to be
+Class II unless specifically designated otherwise by T.C.A. § 70-4-403 or rules and regulations
+authorized therein. (3) (a) The following species or groups of wildlife are added to the existing
+listing designated by legislation as Class III: 1. All waterfowl species except those defined in
+Chapter I, Title 50, of the U.S. Code of Federal regulations as North American migratory game birds.
+2. Ostriches, cassowaries, caimans, and gavials. (b) 1. The following species or groups of wildlife
+are deleted from the existing listing designated by legislation as Class III: (i) All native,
+nonpoisonous reptiles and amphibians; and (ii) All native, furbearing mammals. 2. All species or
+groups of wildlife deleted from Class III in part 1. are considered to be Class II wildlife. (4) The
+following species or groups of wildlife are added to the group of animals designated by legislation
+as Class V: (a) Nandaya or Black-Hooded parakeets ( Nandayus nenday ); (b) Quaker or Monk parakeets
+( Myiopsitta monachus ); (c) African clawed frog ( Xenopus lacvis ); and (d) All non-native
+freshwater aquatic life except the following: 1. Triploid grass carp certified by the United States
+Fish and Wildlife Service; 2. Species approved for fish farming; and 3. Fish, crustaceans, and
+mollusks held in aquaria. This exception does not apply to the following species which shall be
+regarded as Class V: (i) Zebra mussels ( Dreissena polymorpha ); (ii) Black carp ( Mylopharyngodon
+piceus ); (iii) Blueback herring ( Alosa aestivalis ); (iv) Ruffe ( Gymnocephalus cernua ); (v)
+Bighead carp ( Aristichthys nobilis ); (vi) Silver carp ( Hypophthalmichthys molitrix ); (vii)
+Snakeheads (all members of the Family Channidae ); (viii) New Zealand mud snail ( Potamopyrgus
+antipodarum ); (ix) Round goby ( Neogobius melanostomus ); (x) Rudd ( Scardinius erythrophthalmus );
+(xi) Swamp eels (all members of the Family Synbranchidae ); (xii) Marbled crayfish (Marmorkreb) (
+Procambarus fallax f. virginalis ); and (xiii) Gold Asian clam ( Corbicula fluminalis ). (5) Hybrids
+involving two species from different Classes of animals shall be regulated as a member of the least
+restrictive Class involved, unless otherwise specified. Notes Tenn. Comp. R. & Regs. 1660-01-18-.03
+Original rule filed July 15, 1986; effective September 8, 1986. Amendment filed February 26, 1987;
+effective April 12, 1987. Amendment filed April 20, 1992; effective June 4, 1992. Amendment filed
+December 18, 2002; effective March 3, 2003. Amendment filed July 22, 2015; effective October 22,
+2015. Amendments filed November 1, 2021; effective 1/30/2022 . Authority: T.C.A. §§ 70-1-206 ,
+70-4-107 , 70-4-401 , 70-4-403 , 70-4-404 , and 70-4-405 .
+
+==== Rule 1660-01-18-.01, General Provisions Governing Possession of Live Wildlife ====
+
+(1) All live wildlife possessed within the State of Tennessee must be held in accordance with T.C.A.
+§§ 70-4-401 et seq., except in those instances where species are addressed under other existing
+statutes. (2) The possession of state or federally threatened or endangered species is permitted
+only when the species have been legally obtained in the state or country of origin. All imported
+live wildlife must be legally obtained in the state of origin. (3) No wildlife may be taken from the
+wild in Tennessee except as provided for by statute, proclamation, and/or rule. (4) All individuals
+possessing live wildlife must be able to produce proof of legal ownership. Proof of legal ownership
+includes evidence of legal importation (importation permit), purchase receipt from a licensed
+propagation facility, possession of the parent animals, or evidence of disposition of the parent
+animals. (5) The following species may be legally released if approval is obtained in advance from
+the TWRA: (a) Bobwhite Quail; (b) Red Fox; (c) Grey Fox; (d) Raccoon; (e) Non-native game birds; (f)
+Mallard ducks; (g) Native species of fish that are not approved for fish farming intended for
+release into private lakes and ponds; and (h) Cottontail rabbit. (6) Fish that are approved for fish
+farming may be released into private lakes and ponds without obtaining approval from the Tennessee
+Wildlife Resources Agency (TWRA). Notes Tenn. Comp. R. & Regs. 1660-01-18-.01 Original rule filed
+July 25, 1986; effective September 8, 1986. Amendment filed February 26, 1987; effective April 12,
+1987. Amendment filed April 20, 1992; effective June 4, 1992. Amendments filed November 1, 2021;
+effective 1/30/2022 . Authority: T.C.A. §§ 70-1-206 , 70-4-403 , 70-4-404 , and 70-4-405 .

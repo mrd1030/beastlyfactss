@@ -1,0 +1,81 @@
+SOURCE: Arkansas Game and Fish Commission Code Book (as of 1 July 2025), the amphibian rows of Addenda
+        R1.01, R1.02 and R1.03, R1.01's closing clauses, and R1.03's three footnotes in full
+sourceId: ar-unrestricted / ar-code-0900
+jurisdiction: AR
+URL: https://agfc-omnibus.s3.amazonaws.com/eregs/regulation_pdfs/large/agfc_regulations_codebook_large.pdf
+FETCHED: 2026-10-08 (plain curl from AGFC's S3 bucket; pdftotext -layout)
+
+READ THIS FIRST. AR-ar-addenda-mammals.txt stops mid-sentence in R1.03's *** footnote; the
+registration deadline it cuts off is 30 June 2025, and the full footnote is below. R1.01 has no
+amphibian section, but R1.02(A)(1) and R1.03(A)(1) both do. The axolotl is on R1.03 by name, and its
+*** footnote restricts possession itself, not only new permits, to animals owned before 16 May 2024
+and registered by 30 June 2025. R1.01(C) says R1.02 includes native species, which is R1.02(B)(1)
+(in AR-ar-codebook-reptiles-alligator.txt): every native species on neither R1.01 nor R1.03 is a
+permit-list species, so "prohibited until evaluated" reaches only a non-native animal on no list.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+==== Addendum R1.01(B) and (C), closing clauses ====
+      B. Additionally, persons may possess and hold captive fish, bullfrogs,
+         mussels, aquatic turtles, alligators, and other aquatic wildlife in
+         compliance with Code Chapters 26.00, 27.00, 29.00, 30.00, 31.00,
+
+500
+                              As of July 1, 2025
+
+  32.00, 33.00, 34.00, 35.00, and Addenda Chapters I1.00, J1.00, and
+  V1.00.
+
+C. Any species not listed in Addenda R1.01, R1.02 (including native
+   species), or R1.03 are prohibited until evaluated.
+
+
+
+
+==== Addendum R1.02(A)(1), amphibians ====
+      R1.02 Permit Required Captive Wildlife
+      Species List
+      A. Permits for breeding, sale, and importation may be issued for the
+         following species in accordance with Codes 09.07 (Wildlife Breeder/
+         Dealer Permit Required) and 09.10 (Wildlife Importation Permit
+         Required):
+          1. Amphibians
+              ▪ African Bullfrogs (Genus Pyxicephalus)
+              ▪ African Dwarf Aquatic Frog (Genus Hymenochirus)
+              ▪ Australasian Treefrogs (Genera: Litoria, Nyctimystes,
+                Ranoidea)
+              ▪ False Brook Salamanders (Genus Isthmura)
+              ▪ Fire-bellied Toads (Genus Bombina)
+              ▪ Horned or Pacman Frog (Genus Ceratophrys spp.)
+              ▪ Milk Treefrogs (Genus Trachycephalus)
+              ▪ Poison Dart Frogs (Genera: Dendrobates, Epipedobates,
+                Phyllobates, Oophaga, Ranitomeya)
+              ▪ Tomato Frogs (Genus Dyscophus)
+
+==== Addendum R1.03(A), opening and amphibians ====
+R1.03 Prohibited Captive Wildlife Species List
+A. The Commission will not issue permits for breeding, sale, or
+   importation of the following species other than in accordance with the
+   exceptions listed in Codes 09.07, 09.10, 09.11, and Addenda F1.03,
+   F1.04 (possession of some species may be allowed in accordance with
+   Codes 09.02, 09.05, 09.08, and 09.14):
+    1. Amphibians
+        ▪ Axolotl (Ambystoma mexicanum)***
+        ▪ Newts, fire salamanders, etc. (Family Salamandridae) **
+
+==== Addendum R1.03(B) and footnotes ====
+      B. Species not listed in Addenda R1.01, R1.02, or R1.03 are prohibited
+         until evaluated.
+
+      * Issuance of Wildlife Importation Permits and Wildlife Breeder/Dealer
+      Permits for these species is restricted to only those permittees permitted for
+      these species prior to February 20, 2019.
+
+      ** Issuance of Wildlife Importation Permits and Wildlife Breeder/Dealer
+      Permits for these species is restricted to only those permittees permitted for
+      these species prior to May 21, 2020.
+
+      *** Legal possession of these species is restricted to only those owned prior
+      to May 16, 2024, that register the animal with the Commission by June 30,
+      2025.

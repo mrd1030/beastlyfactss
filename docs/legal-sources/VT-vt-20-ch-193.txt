@@ -1,0 +1,72 @@
+SOURCE: Vermont: 20 V.S.A. chapter 193, Domestic Pet or Wolf-Hybrid Control, §§ 3541 and 3581
+sourceId: vt-20-ch-193
+jurisdiction: VT
+URL: https://legislature.vermont.gov/statutes/section/20/193/03541
+     https://legislature.vermont.gov/statutes/section/20/193/03581
+FETCHED: 2026-10-08 (plain curl with a browser User-Agent; site chrome stripped)
+
+READ THIS FIRST. Vermont's Fish and Wildlife lists name no wolf hybrid, which would make one
+Restricted by default, but the legislature wrote a whole chapter around the animal. Chapter 193 is
+titled "Domestic Pet or Wolf-Hybrid Control", § 3541(8) defines a wolf-hybrid as the progeny or
+descendant of a domestic dog and a wolf (or an animal represented or presenting as one), and
+§ 3581(a) requires its owner to register and license it with the town clerk exactly as a dog owner
+does, at the same fees. A statute that licenses the animal to private owners is the answer.
+
+==== 20 V.S.A. § 3541 ====
+ (Cite as: 20 V.S.A. § 3541)
+§ 3541. Definitions
+As used in this chapter:
+(1) “Secretary” where no other department is referenced means the Secretary of Agriculture,
+ Food and Markets and includes his or her designee.
+(2) “Domestic animal” means those animals defined by 6 V.S.A. § 1151(2).
+(3) “Domestic pet” or “pet” means any domestic dogs, domestic cats, and ferrets. The term
+ shall also include such other domestic animals as the Secretary shall establish by
+ rule, provided that the Secretary finds that the animal has the potential to become
+ an imminent danger to public health or welfare if not subjected to the provisions
+ of this chapter.
+(4) “Ferret” means only the European ferret (Mustela putorious furo).
+(5) “Legislative body” means the legislative body of a town, city, or incorporated village.
+(6) “Owner” means any person who owns a domestic pet or wolf-hybrid and includes any person
+ who has actual or constructive possession of the pet or wolf-hybrid. The term also
+ includes those persons who provide feed or shelter to a domestic pet or wolf-hybrid.
+(7) “Respondent” means a person alleged to have violated any provision of this chapter.
+(8) “Wolf-hybrid” means an animal that is the progeny or descendant of a domestic dog
+ (Canis familiaris) and a wolf (Canis lupus or Canis rufus). “Wolf-hybrid” also means an animal that is advertised, registered, licensed, or
+ otherwise described or represented as a wolf-hybrid by its owner or an animal that
+ exhibits primary physical and behavioral wolf characteristics. The Commissioner of
+ Fish and Wildlife shall adopt a rule describing primary physical and behavioral wolf
+ characteristics.
+(9) “Working farm dog” means a dog that is bred or trained to herd or protect livestock
+ or poultry or to protect crops and that is used for those purposes and that is registered
+ as a working farm dog pursuant to subsection 3581(a) of this title.
+(10) “Pet dealer” means any person who sells or exchanges or who offers to sell or exchange
+ cats, dogs, or wolf-hybrids, or any combination thereof, from three or more litters
+ of cats, dogs, or wolf-hybrids in any 12-month period. This definition shall not apply
+ to pet shops, animal shelters, or rescue organizations as those terms are defined
+
+==== 20 V.S.A. § 3581 (subsections (a) and (b)) ====
+(Cite as: 20 V.S.A. § 3581)
+§ 3581. General requirements
+(a) A person who is the owner of a dog or wolf-hybrid more than six months old shall annually
+ on or before April 1 cause it to be registered, numbered, described, and licensed
+ on a form approved by the Secretary for one year from that day in the office of the
+ clerk of the municipality in which the dog or wolf-hybrid is kept. A person who owns
+ a working farm dog and who intends to use that dog on a farm pursuant to the exemptions
+ in section 3549 of this title shall cause the working farm dog to be registered as a working farm dog and shall,
+ in addition to all other fees required by this section, pay $5.00 for a working farm
+ dog license. The owner of a dog or wolf-hybrid shall cause it to wear a collar and
+ attach a license tag issued by the municipal clerk to the collar. Dog or wolf-hybrid
+ owners shall pay for the license $4.00 for each neutered dog or wolf-hybrid, and $8.00
+ for each unneutered dog or wolf-hybrid. If the license fee for any dog or wolf-hybrid
+ is not paid on or before April 1, its owner or keeper may thereafter procure a license
+ for that license year by paying a fee of 50 percent in excess of that otherwise required.
+(b) Before a person shall be entitled to obtain a license for a neutered dog or wolf-hybrid,
+ he or she shall exhibit to the clerk a certificate signed by a duly licensed veterinarian
+ showing that the dog or wolf-hybrid has been sterilized.
+(c)(1) A mandatory license fee surcharge of $4.00 per license shall be collected by each
+ city, town, or village for the purpose of funding the dog, cat, and wolf-hybrid spaying
+ and neutering program established in chapter 193, subchapter 6 of this title.
+(2) An optional license fee surcharge of up to $10.00 per license is to be implemented
+ by the legislative body of a city, town, or village that has established an animal
+ and rabies control program for the sole purpose of funding the rabies control program.
+(3) The license fee surcharges in this subsection shall not be considered part of the

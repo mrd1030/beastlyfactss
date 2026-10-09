@@ -1,0 +1,303 @@
+# 3 Del. Admin. Code 903 and Del. Code tit. 3 ch. 72, the texts behind DE-de-903.txt
+
+sourceId: de-903 / de-nonnative-reptile-permit
+jurisdiction: DE
+url: https://www.animallaw.info/administrative/de-exotic-animals-chapter-903-exotic-animal-regulations ; https://delcode.delaware.gov/title3/c072/index.html
+fetched: 2026-10-08
+fetch notes: animallaw.info with a browser User-Agent and delcode by plain curl; tags stripped. regulations.delaware.gov still serves only an Angular shell. DE-de-903.txt is a summary; this is the text.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+==== Del. Code tit. 3, ch. 72 (sourceId de-nonnative-reptile-permit) ====
+            § 7201
+            § 7202
+            § 7203
+        TITLE 3
+Agriculture
+Domestic and Foreign Animals, Birds, Reptiles and Insects
+        CHAPTER 72. Possession of Mammals or Reptiles Exotic to Delaware
+          §
+        7201. Possession; permit required.
+No person shall bring into this State, possess, sell or exhibit any live wild mammal or hybrid of a wild mammal or live reptile not native to or generally found in Delaware without first securing a permit under this chapter. The Department of Agriculture may adopt regulations to exempt such mammals and reptiles that do not represent a significant threat to community interests from the provisions of this chapter. Notwithstanding any provision of this chapter to the contrary, except for medical or psychological research or for display in any licensed zoological park or traveling circus, no person shall bring into this State, possess, sell or exhibit any poisonous snake not native to or generally found in Delaware where the venom of such snake poses a risk of serious injury or death to a human, and no permit for the same shall be issued by the Department of Agriculture.
+3 Del. C. 1953,
+                §
+               7201; 
+57 Del. Laws, c. 553
+; 
+69 Del. Laws, c. 84,
+                §
+               1
+; 
+72 Del. Laws, c. 285,
+                §
+               1
+; 
+          §
+        7202. Permit; rules and regulations; exemptions.
+The Department of Agriculture shall enforce this chapter and may issue a permit where the possession or exhibition of a live wild mammal or hybrid of a wild mammal or live reptile will be in the public interest, and may promulgate rules and regulations for the proper enforcement of this chapter.  The Department may designate agencies authorized to conduct animal cruelty enforcement and/or dog control enforcement to enforce the provisions of this chapter.  The Department shall receive a fee of $25 for each and every permit issued.  Nothing in this chapter shall be deemed to prevent the use of any live wild mammal or hybrid of a wild mammal or live reptile in medical or psychological research or for display in any municipal zoological park or traveling circus after issuance of a permit.
+3 Del. C. 1953,
+                §
+               7202; 
+57 Del. Laws, c. 553
+; 
+67 Del. Laws, c. 260,
+                §
+               1
+; 
+67 Del. Laws, c. 277,
+                §
+               1
+; 
+69 Del. Laws, c. 84,
+                §
+
+==== 3 Del. Admin. Code 903 (sourceId de-903), from the animallaw.info reproduction ====
+Adopted Jan. 1, 2010.
+ 9
+03
+-2.0. Purpose 
+These regulations govern the permitting process, possession, sale, rehabilitation and exhibition of exotic animals, i.e., live wild mammals, hybrids of wild mammals, and live reptiles not native to or generally found in the State of Delaware. The State Veterinarian or her or his designee shall have the authority to administer these regulations and shall be solely responsible for making the determinations required herein.
+Adopted Jan. 1, 2010.
+903
+-3.0. Definitions 
+“Accurate Description of the Exotic” means the name, location, age, gender (when visible or known), markings/color, tattoo, identification tag, microchip and/ or other distinguishing characteristics of the exotic together with the name and residence of the owner or custodian.
+“Adopter” means a person who becomes an owner or custodian of an exotic animal.
+“Animal Attack Protocol” means a document that outlines an owner's or custodian's action plan should the exotic animal bite, injure or attack a human or animal.
+“Carnivore” means a flesh-eating mammal, which possesses teeth and claws adapted for attacking and devouring prey.
+“Class of Exotic” means each of the following groups constitute a separate and distinct class: Carnivore, Herbivore, Hybrid of a wild animal, Omnivore, Primate and Reptile.
+“Custodian” means a person who possesses or cares for an exotic animal. A custodian has immediate charge and control of the exotic.
+“Department” means the Delaware Department of Agriculture.
+“DNREC” means the Delaware Department of Natural Resource and Environmental Control.
+“Emergency Evacuation Plan” means a written document that outlines the actions the owner or custodian plans to implement in an emergency or ordered departure in order to provide for the exotic's welfare and the public's health and safety.
+“Exhibitor” means a person who displays exotic animals to the public.
+“Exotic” means a live wild mammal, hybrid of a wild mammal, and a live reptile not native to or generally found in Delaware. An exotic animal is ecologically foreign to Delaware.
+“Herbivore” means a mammal that feeds exclusively on vegetable matter.
+“Hybrid of a wild mammal” means a mammal whose parents are different varieties of the same species or belong to different but closely allied species, one parent being a wild mammal not native to or generally found in Delaware and the other parent being a domestic mammal native to or generally found in Delaware.
+“Nuisance” means an act or the threat of an action that unreasonably interferes with the health, safety or property rights of the community at large.
+“Omnivore” means an animal which eats any sort of food, both animal and vegetable in origin.
+“Owner” means a person who owns an exotic animal. An owner has or holds the exotic animal as property.
+“Permit Holder” means an owner or custodian of an exotic animal who holds an applicable exotic animal permit.
+“Person” means any individual, partnership, corporation, trade or professional association, firm, limited liability company, joint venture, association, trust, estate or any other legal entity, and any officer, member, shareholder, director, employee, agent or representative thereof.
+“Pet” means an exotic animal that is kept for interest, companionship and amusement and is associated with a household.
+“Primate” means a mammal that belongs to the highest order of mammals including monkeys and lemurs.
+“Purchaser” means a person who becomes an owner of an exotic animal by exchange of cash, goods, or animals. A “Purchaser” also means a person who becomes an owner or custodian of an exotic by adoption.
+“Rehabilitator” means a person who restores an exotic animal to good condition by providing short term care.
+“Relocate” means to move an exotic from a rehabilitator, a zoo, an agency or the Department to a new rehabilitator, a different zoo, or another agency.
+“Reptile” means any cold-blooded vertebrate of the class Reptilia including turtles, lizards, snakes, crocodilians and tuatara.
+“Seller” means a person who is engaged in the sale or trade of exotic animals for cash, goods, or animals. With the exception of a rehabilitator or a zoo, a “Seller” also means a person who offers exotics through gifting or adoption.
+“Secretary” means the Secretary of the Delaware Department of Agriculture or his or her designee.
+“State Veterinarian” means the State Veterinarian of the Delaware Department of Agriculture, or his or her designee.
+“USDA” means the United States Department of Agriculture.
+“Valid Identification” (Valid ID) means a photo identification such as a Delaware driver's license, a State of Delaware Identification card, or a Passport that includes the name and address of the purchaser of the exotic animal.
+"Welfare” means that the owner or custodian provides for the health and well-being, and safeguards the physiological requirements, of the exotic animal.
+“Zoo” means a park or institution accredited by the Association of Zoos and Aquariums (AZA) (or its designated successor organization) where: exotics are primarily kept in cages or enclosures for people to come and see; exotics are exhibited outside of the park to the public for educational purposes; and exotics are bred and studied by scientists.
+Adopted Jan. 1, 2010.
+903
+-4.0. The State Veterinarian Powers; Duties 
+4.1 The State Veterinarian is responsible for administering and enforcing these regulations. The State Veterinarian has the power to grant, deny, or revoke permits to own or have custody of exotics in this state.
+4.2 The State Veterinarian is vested with the power to designate agencies to seize and when warranted to humanely destroy an exotic if necessary to protect the public health, safety, or welfare and to protect the health of other animals. The State Veterinarian or his/her agent can humanely destroy an exotic without first notifying the exotic animal's owner or custodian.
+4.3 The State Veterinarian will designate a list of exotic animals that are exempt from the permitting requirement (regulation 6.1). The State Veterinarian will review the list and may add or delete species when suggested by the public through the rule making process and with sufficient documentation for the requested species. Pursuant to 29 Del.C. § 10119, the State Veterinarian may change the list of exotic animals that are exempt from the permitting requirement at any time in response to current animal and human health and safety concerns.
+4.4 The State Veterinarian will designate exotic animals in the Herbivore and Reptile Classes that are prohibited from being bred by Sales Permit Holders (regulation 7.5.2.10). The State Veterinarian will review the list and may add or delete species prohibited from being bred when suggested by the public through the rule making process and with sufficient documentation for the requested species. Pursuant to 29 Del.C. § 10119, the State Veterinarian may change the list of exotic animals in the Herbivore and Reptile Classes that are prohibited from being bred at any time in response to current animal and human health and safety concerns.
+4.5 The State Veterinarian is charged with preventing the introduction and spread of contagious and infectious diseases into and within the domestic animal population of the state, therefore:
+4.5.1 The State Veterinarian can prohibit activities by any Permit class if there is a threat to domestic animals in the state.
+4.5.2 The State Veterinarian can prohibit Accredited Zoo Permit and Sales Permit holders from breeding exotics if there is a threat to domestic animals in the state.
+4.6 The State Veterinarian or his/her agents must be allowed access to the exotics and to the premises that house exotics.
+4.7 The State Veterinarian will not issue Individual, Exhibitor or Sales permits for gila monsters, beaded lizards or komodo dragons.
+Adopted Jan. 1, 2010.
+903
+-5.0. Information and Reporting requirements for exempt and permitted exotics 
+5.1 All sellers of reptiles must advise purchasers in writing that most reptiles carry Salmonella bacteria, which can be a source of human infection. The seller must present written information to the purchaser on sanitation measures that can decrease the transmission of Salmonella from captive reptiles to humans.
+5.1.1 Failure to inform the purchaser, adopter or custodian in writing of the Salmonella risk posed by reptiles and to provide written sanitation measures that can decrease the transmission of Salmonella constitutes an offense punishable under 3 Del.C. § 7203.
+5.2 It is the duty of all governmental agencies, veterinarians, veterinary technicians, permit holders, rehabilitators, and owners or custodians of exotics to promptly report to the State Veterinarian and the Department any contagious, infectious or zoonotic disease, agent or organism infecting or carried by an exotic animal.
+5.2.1 Failure to promptly inform the State Veterinarian and the Department of any contagious, infectious or zoonotic disease, agent or organism infecting or carried by an exotic animal constitutes an offense punishable under 3 Del.C. § 7203.
+Adopted Jan. 1, 2010.
+903
+-6.0. Permit Exemptions; Permit Requirements; Permit Prerequisites; Waivers 
+6.1 The following exotics are exempt from the permitting requirement of the Department:
+6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders.
+6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.
+6.1.3 Exempt exotics are subject to the regulations 1.0, 2.0, 3.0, 4.0, 5.0, 11.4.6, 12.0, and 14.2.2.
+6.2 Unless specifically exempt from the permitting requirement as presented in regulation 6.1, all persons who would own or have custody of an exotic animal must first obtain a permit issued by the Department. To obtain the required permit from the Department, the prospective adopter, owner or custodian of an exotic animal must:
+6.2.1 Provide the Department with satisfactory proof that the exotic animal will be confined within two enclosures, designated herein as primary and secondary.
+6.2.1.1 The primary enclosure shall be a pen, cage or other structure where the exotic will be kept and which must be of sturdy and escape-proof construction. The primary enclosure must be consistent in size, structure, lighting, temperature control, and ventilation according to the welfare standards prescribed in the scientific literature or in the USDA regulations for the species being enclosed. The permit applicant is required to demonstrate knowledge of enclosure and welfare standards for the species under consideration with the application.
+6.2.1.2 The secondary enclosure must be sufficient to prevent the exotic animal from escaping from the property of the owner or custodian should it be set free or escape from its primary enclosure. The secondary enclosure must ensure there will be no physical contact between members of the public and the exotic. The secondary enclosure must prevent the exotic from escaping the premises if it is out of its primary enclosure.
+6.2.1.3 The holder of an Accredited Zoo, Exhibitor or Rehabilitator permit issued in accordance with regulations 7.2, 7.3, and 7.4 may request in writing that the State Veterinarian consider waiving the enclosure requirements set forth in regulations 6.2.1.1 and 6.2.1.2 because the exotic animal has unique enclosure requirements.
+6.2.1.4 Shared enclosures:
+6.2.1.4.1 Accredited Zoo Permit holders are allowed to breed exotic animals in all classes in the State of Delaware in accordance with Regulations 4.5.2 and 11.4.2; therefore exotics permitted by the Accredited Zoo Permit may share enclosures.
+6.2.1.4.2 Sales Permit holders:
+6.2.1.4.2.1 Sales Permit holders are allowed to breed exotic animals in the Herbivore and Reptile class in the State of Delaware in accordance with regulations 4.5.2, 7.5.2.10, and 11.4.5; therefore exotics in the Herbivore and Reptile classes prohibited from being bred must not share enclosures unless they are sterile or unable to reproduce and those exotics not included in the prohibited from being bred list may share enclosures.
+6.2.1.4.2.2 Sales Permit holders are not permitted to breed Carnivores, Hybrids of Wild Mammals, Omnivores or Primates; hence shared enclosures for these Classes of Exotics are only for sterile exotics or exotics unable to reproduce.
+6.2.1.4.3 All other Permit Class holders are not permitted to breed exotic animals; hence shared enclosures are only for sterile exotics or exotics unable to reproduce.
+6.2.2 Provide the Department with a copy of an emergency evacuation plan upon request.
+6.2.3 Provide the Department with a copy of an animal attack protocol upon request.
+6.3 To obtain the renewal of an exotic animal permit, exotic animal owners or custodians must confirm the ongoing existence of all the requirements set forth at regulation 6.2 and must, in addition, allow Department designees access to inspect the premises where exotics are located to confirm the health and humane treatment of the exotic.
+6.4 Any existing permits issued by the Delaware Department of Agriculture will become void sixty (60) days after the effective date of these proposed regulations and must be renewed in accordance with regulations 6.3 and 9.0 at no additional cost to the owner or custodian.
+6.5 If an exotic was previously considered by the Department to be exempt from the permitting process and does not appear in section 6.1, then a permit is required. The initial permit for the “no longer exempt” exotic must be in accordance with Regulation 8.0. If the initial permit is obtained within sixty (60) days after the effective date of these proposed regulations, there will be no additional cost for this initial permit.
+Adopted Jan. 1, 2010.
+903
+-7.0. Permit Classes 
+7.1 Individual Permit
+7.1.1 When an exotic is kept as a pet, the owner or custodian of the exotic must apply to the Department for an Individual Permit on a form supplied by the Department. Individual Permits granted by the Department shall become null and void when the owner or custodian transfers ownership or custodianship of the exotic to another person. The owner or custodian must obtain a separate Individual Permit for each exotic animal kept as a pet. A background check of an owner or custodian applying for an Individual Permit may be completed by the Department.
+7.1.2 An Individual Permit is not transferable, is valid for three years, and must be renewed in accordance with regulation 9.1.
+7.1.3 When the owner or custodian of an exotic holds an Individual Permit for that exotic and he or she transfers ownership through gifting or adoption then he or she is not considered to be a seller and is not required to have a Sales Permit.
+7.2 Accredited Zoo Permit
+7.2.1 All zoos in Delaware must obtain an Accredited Zoo Permit which is not transferable.
+7.2.2 All zoos in Delaware must be in keeping with the Association of Zoos and Aquariums (AZA) accreditation process.
+7.2.3 An Accredited Zoo Permit is not transferable, is valid for five (5) years and must be renewed in accordance with section 9.2.
+7.3 Exhibitor Permit
+7.3.1 All owners or custodians (with the exception of permitted Accredited Zoos located in Delaware) that wish to present exotic animals for public viewing must obtain an Exhibitor Permit.
+7.3.2 An Exhibitor Permit is not transferable, is valid for the calendar year in which it was issued and must be renewed in accordance with regulation 9.3.
+7.3.3 A background check of an owner or custodian applying for an Exhibitor Permit may be completed by the Department.
+7.3.4 Exotic Animal Exhibitors Duties:
+7.3.4.1 Notify the Department within sixty (60) days prior to exhibiting exotic animals in Delaware;
+7.3.4.2 Provide the Department with an annual inventory which includes an Accurate Description of each exotic animal to be exhibited. The inventory does not need to include exempt exotics (regulation 6.1). If changes to the annual inventory previously provided to the Department occur prior to exhibiting in Delaware then notify the Department by e-mail, fax or writing of the changed inventory by listing the addition or removal of each exotic animal;
+7.3.4.3 Provide the Department with the dates of exhibition;
+7.3.4.4 Provide the Department with a list of exhibition activities;
+7.3.4.5 Provide the Department with a public health and safety plan, an animal attack protocol, and an animal health plan upon request;
+7.3.4.6 Show proof of exotic animal permits or licenses from the state or states where the exhibitor is based to the Department upon request;
+7.3.4.7 Provide valid health certificates upon request;
+7.3.4.8 When applicable have a valid DE business license and provide proof of same upon request; and
+7.3.4.9 Provide proof of knowledge of exotics' health, safety and proper care upon request.
+7.4 Rehabilitator Permit
+7.4.1 The Rehabilitator Permit must be obtained from the Department by an owner or a custodian who provides short term care and rehabilitation of exotic animals.
+7.4.2 The applicant for the Rehabilitator Permit for native species must provide documentation that he or she holds a Wildlife Rehabilitator Permit from DNREC.
+7.4.3 A Rehabilitator Permit is not transferable, is valid for three years and must be renewed in accordance with regulation 9.4.
+7.4.4 A background check of an owner or custodian applying for a Rehabilitator Permit may be completed by the Department.
+7.4.5 Rehabilitator Permit Holder's Duties:
+7.4.5.1 By December 31st of each calendar year the exotic animal Rehabilitator must:
+7.4.5.1.1 Provide the Department with a yearly inventory of every exotic currently being rehabilitated. The inventory does not need to include exempt exotics (regulation 6.1). The inventory must include an Accurate Description of each exotic;
+7.4.5.1.2 Request in writing permission from the State Veterinarian or his/her designee for an extension of the exotic's rehabilitation time when the exotic is carried over from the prior year's inventory;
+7.4.5.1.3 Identify each dead, adopted or relocated exotic from the prior year's inventory and note whether exotic has been relocated in the State of Delaware or outside the State of Delaware;
+7.4.5.1.4 Identify each exotic newly acquired during the calendar year ending on December 31st. The identification should include: an Accurate Description, a brief explanation of the reason each exotic animal was acquired or born and note whether the newly, acquired exotic remains in the yearly inventory, has died, has been adopted, or has been relocated in the State of Delaware or outside the State of Delaware; and
+7.4.5.1.5 Include the adopter's name, address and when available, telephone and e-mail.
+7.4.5.2 Provide the Department with a public health and safety plan, an animal attack protocol, an emergency evacuation plan and an animal health, proper care and rehabilitation plan upon request.
+7.4.5.3 Be limited to a maximum of twenty (20) exotic animals per Class of Exotic unless a written request to exceed the maximum number is approved by the State Veterinarian within sixty (60) days of exceeding the maximum.
+7.4.5.4 The rehabilitator must require at the time of an exotic's adoption that the adopter has obtained the appropriate class of Exotic Animal Permit from the Department.
+7.4.5.5 The rehabilitator must verify at the time of the exotic's adoption that the adopter's name and address on a Valid Identification card is the same as noted on the appropriate class of Exotic Animal Permit presented.
+7.4.5.6 Provide the adopter with written information regarding the exotic's enclosure, proper care, nutrition and welfare requirements.
+7.4.5.7 The rehabilitator must inform the adopter that there may be county, city, local laws, rules and regulations that may govern or proscribe the possession of exotics in their area.
+7.4.5.8 If the adopter resides outside the State of Delaware, the rehabilitator must maintain a record of the interstate transfer of ownership, including adopter's address; and the rehabilitator is responsible for notifying the appropriate state veterinarian's office or applicable state agency.
+7.4.5.9 Keep a record of the adopter's name, address and when available, telephone and e-mail for three years.
+7.4.6 Adopters of Rehabilitated Exotics; Duties: When an adopter proposes to become an owner or custodian of an exotic that requires permitting by the Department the following conditions prior to becoming an owner/custodian must be met:
+7.4.6.1 The adopter must obtain the appropriate class of Exotic Animal Permit from the Department prior to the time of the exotic's adoption.
+7.4.6.2 The adopter must present to the rehabilitator at the time of the exotic's adoption a Valid ID with the same name and address that are on the Exotic Animal Permit.
+7.5 Sales Permit
+7.5.1 Owners or custodians that sell exotics in Delaware or sell exotics from Delaware to locations outside of Delaware must obtain a Sales Permit from the Department for each Class of Exotic sold.
+7.5.1.1 A Sales Permit is not transferable, is valid for the calendar year in which it was issued and must be renewed in accordance with regulation 9.5.
+7.5.1.2 Accredited Zoo Permit and Rehabilitator Permit holders are not required to hold a Sales Permit.
+7.5.1.3 Exhibitor Permit holders engaged in the sale of exotics are required to hold a Sales Permit in accordance with regulations 7.5, 8.5, and 9.5.
+7.5.1.4 With the exception stated in regulation 7.1.3, Individual Permit holders engaged in the sale of exotics or the breeding of exotics in the Herbivore or Reptile class are required to hold a Sales Permit in accordance with regulations 7.5, 8.5, and 9.5.
+7.5.1.5 A background check of an owner or custodian applying for a Sales Permit may be completed by the Department.
+7.5.1.6 When applicable have a valid Delaware business license and provide proof of same upon request by the Department.
+7.5.1.7 Notify the Department in writing by June 30th each year of any exotic that was acquired, born or died since the prior year's (December 31st) inventory. This notification does not apply to exempt exotics (regulation 6.1).
+7.5.2 Seller's Duties- When an owner or custodian proposes to sell an exotic that requires permitting by the Department the following conditions of sale must be met:
+7.5.2.1 The seller must require at the time of the sale that the purchaser has obtained the appropriate class of Exotic Animal Permit from the Department.
+7.5.2.2 The seller must verify at the time of the sale that the purchaser's name and address on a Valid Identification card is the same as noted on the appropriate class of Exotic Animal Permit presented.
+7.5.2.3 The seller must provide the purchaser with written information regarding the exotic's enclosure and welfare requirements.
+7.5.2.4 The seller must notify the purchaser that there may be county, city, and local laws, rules and regulations within the State of Delaware that may proscribe or govern the possession of exotics in their area.
+7.5.2.5 The seller must notify the Department in writing of the purchaser's name and address, and when available, e-mail address or telephone number and an Accurate Description of the Exotic by the first of every month after the sale of an Exotic.
+7.5.2.6 If the purchaser resides outside the State of Delaware, the seller must maintain a record of the interstate sale, including purchaser's address, and must notify the appropriate state veterinarian's office or applicable state agency.
+7.5.2.7 A legible copy of the purchaser's sale record must be maintained by the seller for 3 years after the sale of the exotic animal.
+7.5.2.8 The seller must attest in writing that all exotic animals put up for sale are in good health at the time of sale.
+7.5.2.9 The seller of reptiles must be in keeping with regulation 5.1.
+7.5.2.10 Sales permit holders are prohibited from breeding the following exotics in the Herbivore and Reptile classes:
+7.5.2.10.1 Members of Herbivore class prohibited from breeding:
+7.5.2.10.1.1 Herbivores whose average adult body weight of the species is greater than thirty pounds; and
+7.5.2.10.1.2 All rare and endangered species.
+7.5.2.10.2 Members of Reptile class prohibited from breeding:
+7.5.2.10.2.1 All members of the Crocodilian group: Alligators, Caimans, Crocodiles, and Gharials;
+7.5.2.10.2.2 All members of the Tuatara group;
+7.5.2.10.2.3 All giant snakes when average adult body length of the species is larger than 5 feet: Anacondas, Pythons and Boas;
+7.5.2.10.2.4 All giant lizards: Monitors (Varanidae);
+7.5.2.10.2.5 All giant tortoises: Aldabras and Galapagos; and
+7.5.2.10.2.6 All rare and endangered species.
+7.5.3 Purchaser's Duties. When a purchaser proposes to become an owner or custodian of an exotic that requires permitting by the Department the following conditions prior to purchase must be met:
+7.5.3.1 The purchaser must obtain the appropriate class of Exotic Animal Permit from the Department prior to the time of purchase.
+7.5.3.2 The purchaser must present to the seller at the time of the sale a Valid ID with the same name and address that are on the Exotic Animal Permit.
+Adopted Jan. 1, 2010.
+903
+-8.0. Initial Permit Applications 
+8.1 Individual Permit. Initial applications must be filed with the Department prior to acquiring the exotic and prior to moving to reside in the State of Delaware with an exotic pet(s). Initial applications do not apply to exempt exotics (regulation 6.1). The State Veterinarian, for good causes shown, and upon written request of the owner/custodian may grant an extension of time to apply for an initial permit. The pre-purchase or pre-adoption fees required to obtain an Individual Permit for an exotic are non refundable.
+8.2 Accredited Zoo Permit. Initial applications must be filed with the Department upon accreditation by the Association of Zoos and Aquariums, or its successor association. A single Accredited Zoo Permit covers every exotic animal housed or kept at the Zoo. The Accredited Zoo Permit application must include a current copy of the Zoo's on-going accreditation document and identify an inventory of every exotic animal by Accurate Description kept at the Zoo at the time of application. The inventory does not apply to exempt exotics (regulation 6.1).
+8.3 Exhibitor Permit. Initial applications must be filed with the Department prior to exhibiting exotic animals in the State of Delaware. A single Exhibitor Permit covers every exotic animal housed or kept by the exhibitor. The application must include an inventory of every exotic animal by Accurate Description kept at the time of application. The inventory does not apply to exempt exotics (regulation 6.1).
+8.4 Rehabilitator Permit. Initial applications must be filed with the Department prior to rehabilitating an exotic animal. A single Rehabilitator Permit covers every exotic animal housed or kept by the rehabilitator.
+8.5 Sales Permit. Initial applications must be filed with the Department prior to the sale of any exotic animal and in accordance with regulation 7.5. Sales Permits must be obtained for each Class of exotic sold. If an exotic animal can be placed in more than one Class, the applicant need only apply for one class per exotic animal. The yearly Sales Permit request must include an inventory of each exotic animal per Class of Exotic animal identified on the Permit Application. The inventory must identify every exotic animal by Accurate Description of the exotic stocked at the business at the time of application for the yearly Permit. This yearly inventory does not apply to exempt exotics (regulation 6.1).
+Adopted Jan. 1, 2010.
+903
+-9.0. Permit Renewal 
+9.1 Individual Permits are valid for 3 years and must be renewed by March 31st of the fourth year.
+9.2 Accredited Zoo permits are required to be renewed every fifth year by March 31st in keeping with the AZA accreditation schedule. An updated inventory must be submitted with each permit renewal application.
+9.3 Exhibitor Permits are required to be renewed as stipulated in regulations 9.3.1 and 9.3.2. An updated inventory must be submitted with each permit renewal application.
+9.3.1 When an Exhibitor is based in Delaware or exhibits in Delaware on a customary basis each calendar year, then the Exhibitor Permit holder must renew by December 31st of each year.
+9.3.2 When an Exhibitor exhibits in Delaware sporadically and not each calendar year, then the Exhibitor Permit holder must renew within sixty (60) days prior to the initial exhibition. Such permits are only valid for the calendar year in which the permit was issued.
+9.4 Rehabilitator Permits are valid for three years and renewal must occur by March 31st of the fourth year. The renewal application must include proof of an active Wildlife Rehabilitator Permit issued by DNREC and an updated inventory.
+9.5 Sales Permits for each class of exotic sold are required to be renewed on an annual basis and renewal must occur by December 31st of each year. An updated inventory must be submitted with each permit renewal application.
+Adopted Jan. 1, 2010.
+903
+-10.0. Possessing or Owning an Exotic Animal Without a Permit 
+10.1 When the Department determines that an owner or custodian of an exotic animal has not obtained the required permit, or has failed to timely renew a permit, the Department shall inform the owner or custodian by mailing a letter to the owner or custodian's last known address of the legal requirement to obtain a permit. The owner or custodian will then have ten (10) business days from the date the Department's letter was mailed to obtain the required permit. The State Veterinarian may grant additional time to obtain a permit for good cause if petitioned in writing during the ten (10) business days from the date the Department's letter. No permit will be issued if possession of an exotic animal is prohibited by other applicable statutes.
+10.2 Failure to obtain a permit or to timely renew a permit are grounds for the State Veterinarian to seize and dispose of the exotic without the administrative hearing contemplated by regulation 14.2 and/or to institute criminal proceedings in accordance with 3 Del.C. § 7203.
+Adopted Jan. 1, 2010.
+903
+-11.0. Transporting; Permit Information Changes; Transfer of Ownership; Births and Deaths 
+11.1 If an exotic is to be moved from one location to another for any reason, the exotic shall be transported in a cage or other container that will be strong enough to prevent its escape while in transport, that will protect the public from physical contact with the exotic and that meets the exotic's welfare requirements.
+11.2 All permit holders are required to notify the Department in writing within thirty (30) business days if they change their name, permanent address or other contact information and a failure to do so constitutes and offense punishable in accordance with 3 Del.C. § 7203.
+11.3 Transfer of Ownership or Custodianship
+11.3.1 All permit holders are required to:
+11.3.1.1 Keep written records of any change of ownership or custodianship of an exotic animal.
+11.3.1.2 Make these records available to the Department immediately upon request.
+11.3.2 Individual Permit holders that gift or adopt out an exotic in accordance with regulation 7.1.3 must notify the Department in writing within ten (10) days of the transfer of ownership or custody.
+11.3.3 Rehabilitator Permit holders must be in keeping with regulation 7.4.
+11.3.4 Sales Permit holders must be in keeping with regulations 7.5 and 8.5.
+11.3.5 A failure to comply with any of the duties imposed by regulation 11.3 constitutes an offense punishable in accordance with 3 Del.C. § 7203.
+11.4 Births and Deaths
+11.4.1 Individual Permit holders must notify the Department of the birth(s) or death(s) of each exotic by the first of every month.
+11.4.1.1 In the instance of unplanned birth(s) of exotic(s), the Individual Permit holder must obtain a permit for each exotic in keeping with regulations 7.1 and 8.1.
+11.4.1.2 If an exotic is pregnant when purchased and gives birth then the Individual Permit holder must obtain a permit for each exotic in keeping with regulations 7.1 and 8.1.
+11.4.2 Accredited Zoo Permit holders may breed exotics in keeping regulation 4.5.2.
+11.4.3 Exhibitor Permit holders who are based in Delaware must notify the Department of any birth(s) or death(s) of each exotic by the first of every month.
+11.4.4 Rehabilitator Permit Holders must be in keeping with regulations 7.4.5.1.3, 7.4.5.1.4 and 9.4.
+11.4.5 Sales Permit holders are limited to breeding the following classes: Reptile and Herbivore and must be in keeping with regulations 4.5.2, 7.5.1.7, 7.5.2.10, 8.5, and 9.5.
+11.4.6 Exotics exempt from permitting in accordance with regulation 6.1:
+11.4.6.1 May be bred; and
+11.4.6.2 Births and deaths do not need to be reported to the Department.
+Adopted Jan. 1, 2010.
+903
+-12.0. Nuisances Prohibited 
+No exotic, whether exempt from permitting in accordance with regulation 6.1 or requiring permitting in accordance with regulations 6.2 and 6.3 (i.e., exempt or not exempt), may become a nuisance. Any exotic, exempt or not exempt, that is an immediate threat and/or poses a risk of danger to the public may be subject to seizure and destruction in accordance with regulation 4.2 and without the administrative hearing contemplated by regulation 14.2.
+Adopted Jan. 1, 2010.
+903
+-13.0. Escape, Loss, and Release 
+When an exotic requiring permitting in accordance with these regulations escapes or is lost from its enclosures, the owner or custodian of said exotic must notify the Department and the appropriate animal control agency of the escape/loss as soon as possible but no later then three (3) days after first learning of the escape or loss. The owner or custodian of an escaped or lost exotic has a duty to offer assistance to recapture the exotic and must reimburse the Department for any expenses it incurs associated with recapturing the exotic including damage to persons, animals or property. It is unlawful to release an exotic requiring permitting in accordance with these regulations. If the Department is not notified by the owner or custodian of the escape or loss within aforementioned three (3) days, the exotic shall be presumed to be released unlawfully. A failure to comply with this provision constitutes an offense punishable in accordance with 3 Del.C. § 7203.
+Adopted Jan. 1, 2010.
+903
+-14.0. Permit Denials and Revocations; Administrative Hearings; Appeals 
+14.1 The State Veterinarian or his/her designee may deny or revoke an initial application, renewal application, or a permit for good cause. Reasons for denials or revocations may include, but are not limited to the following: a zoo losing its accreditation; an exotic animal biting, maiming, or injuring a human; an exotic animal escaping from its enclosures; release of an exotic animal; failure to require and verify that a purchaser/adopter has obtained the appropriate class of Exotic Animal Permit from the Department prior to the time of purchase/adoption of the Exotic; failure to notify the Department of the transfer or sale of any exotic animal; exotic animals being bred or reproducing by Permit class holders not permitted to breed exotics; failure to notify the Department of the birth or death of an exotic; failure to keep copies of sales records for three years; failure to perform the duties stated in these regulations; failure to promptly report any contagious, infectious, or zoonotic disease, agent or organism concerns; prior animal cruelty violations; and the applicant/permit holder fails to maintain enclosure, proper care, nutrition and welfare standards.
+14.2 Administrative Hearing: The owner or custodian of an exotic animal may appeal from the State Veterinarian's determinations pursuant to regulation 14.1 by requesting an Administrative Hearing before the Secretary or his or her designee.
+14.2.1 Whenever the State Veterinarian proposes to revoke a permit or deny an application for any reason other than that the exotic poses an immediate and unreasonable risk of harm to the public, the Department shall first give written notice to the permit holder or applicant of the State Veterinarian's determination. The written notice shall inform the permit holder or applicant that he or she has the right to challenge the determination and to request a hearing before the Secretary of the Department or his or her designee. A request for an administrative hearing must be made in writing and must be received by the Department within ten (10) business days of the date of the written notice to such permit holder or applicant; otherwise, the State Veterinarian's determination becomes final. The hearing shall be informal, and the technical rules of evidence shall not apply. The administrative hearing shall be scheduled by the Department as soon as practical, but in no event more than thirty (30) business days after receiving the written request for an administrative hearing.
+14.2.2 Whenever the State Veterinarian determines that an exotic, whether exempt or not exempt, poses an immediate and unreasonable risk of harm to public health and safety or domestic animal health, the same exotic is subject to immediate seizure and possible destruction. In such circumstances no administrative hearing is available to the applicant/permit holder or owner/custodian to challenge the State Veterinarian's determination.
+14.2.3 Administrative hearings shall be recorded. The Secretary or his or her designee shall render his or her decision in writing to all interested parties within sixty (60) days of the date of the administrative hearing.
+14.3 Appeals shall be on the record to the Superior Court of the State of Delaware.
+Adopted Jan. 1, 2010.
+Share
+|
+Full Site Search
+Main menu
+Legal Topics
+Topical Introductions
+Comparative Laws Across the U.S.
+U.S. Maps of Laws
+Search Materials
+Articles
+Frequently Asked Questions (FAQs)
+Donations
+            Topics          
+- Any -
+Ag-gag, Ecoterrorism, Agroterrorism
+Animal Fighting
+Animal Rights
+Animal Welfare Act
+Anti-Cruelty

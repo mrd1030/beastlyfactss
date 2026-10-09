@@ -1,0 +1,196 @@
+# RCW 16.30.020, the dangerous wild animal exemptions, and WAC 220-450-030 in its current numbering
+
+sourceId: wa-rcw-16-30 / wa-rcw-77-08-010
+jurisdiction: WA
+url: https://app.leg.wa.gov/RCW/default.aspx?cite=16.30.020 and https://app.leg.wa.gov/WAC/default.aspx?cite=220-450-030
+fetched: 2026-10-08
+fetch notes: plain curl; tags stripped. WAC 220-450-030 has been renumbered since WA-wa-wildlife-definitions.txt was cached: the scientific research and display authorization is now (8).
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+16.30.020 >>  
+16.30.030
+PDF
+RCW  16.30.020
+Exceptions.
+(1) The provisions of this chapter do not apply to:
+(a) Institutions authorized by the Washington department of fish and wildlife to hold, possess, and propagate deleterious exotic wildlife pursuant to RCW  
+77.12.047
+;
+(b) Institutions accredited or certified by the American zoo and aquarium association or a facility with a current signed memorandum of participation with an association of zoos and aquariums species survival plan;
+(c) Duly incorporated nonprofit animal protection organizations, such as humane societies and shelters, housing an animal at the written request of the animal control authority or acting under the authority of this chapter;
+(d) Animal control authority, law enforcement officers, or county sheriffs acting under the authority of this chapter;
+(e) Veterinary hospitals or clinics;
+(f) A holder of a valid wildlife rehabilitation permit issued by the Washington department of fish and wildlife;
+(g) Any wildlife sanctuary as defined under RCW  
+16.30.010
+(5);
+(h) A research facility as defined by the animal welfare act, 7 U.S.C.A. 2131, as amended, for the species of animals for which they are registered. This includes but is not limited to universities, colleges, and laboratories holding a valid class R license under the animal welfare act;
+(i) Circuses, defined as incorporated, class C licensees under the animal welfare act, 7 U.S.C.A. 2131, as amended, that are temporarily in this state, and that offer performances by live animals, clowns, and acrobats for public entertainment;
+(j) A person temporarily transporting and displaying a potentially dangerous wild animal through the state if the transit time is not more than twenty-one days and the animal is at all times maintained within a confinement sufficient to prevent the animal from escaping;
+(k) Domesticated animals subject to this title or native wildlife subject to Title 
+77
+ RCW;
+(l) A person displaying animals at a fair approved by the Washington department of agriculture pursuant to chapter  
+15.76
+ or  
+36.37
+ RCW; and
+(m) A game farm meeting the requirements of WAC 232-12-027(1).
+(2) This chapter does not require a city or county that does not have an animal control authority to create that office.
+[ 
+
+==== WAC 220-450-030 ====
+WAC 220-450-030
+Live wildlife
+—
+Taking from the wild, importation, possession, transfer, and holding in captivity.
+Agency filings affecting this section
+WAC 220-450-030
+(1) It is unlawful to take live wildlife, wild birds, or game fish from the wild without a permit issued by the department. This subsection does not apply to starlings, house sparrows, Eurasian collared doves, and rock doves taken by falconers, or rock doves and Eurasian collared doves taken by bird dog trainers.
+(2) It is unlawful to import into the state, hold, possess, propagate, offer for sale, sell, transfer, or release live specimens of or the gametes and/or embryos of the following species in the family 
+Cervidae
+.
+Common Name
+Scientific Name
+Elk
+Cervus canadensis
+Mule deer and
+Black-tailed deer
+Odocoileus hemionus
+White-tailed deer
+Odocoileus virginianus
+Moose
+Alces alces
+Woodland Caribou
+Rangifer tarandus caribou
+(3) It is unlawful to import into the state or to hold or possess live wildlife taken, held, possessed, or transported contrary to federal or state law, local ordinance, or department rule. All importations of live wildlife must comply with the requirements of WAC  
+16-54-180
+.
+(4) It is unlawful to possess or hold in captivity live wild animals, wild birds, or game fish unless lawfully acquired. Lawful acquisition and possession include department permits and any other applicable authorization. Any person possessing or holding wild animals, wild birds, or game fish in captivity must provide proof of lawful acquisition and possession for inspection if asked to do so by a department employee. The proof must identify the following information for the wild animal, wild bird, or game fish:
+(a) Species;
+(b) Age and sex;
+(c) Origin;
+(d) Receiving party's name;
+(e) Source's name and address;
+(f) Invoice/statement date; and
+(g) Documentation of prior transfers.
+(5) Live wild animals, wild birds, or game fish held in captivity, or their progeny or parts thereof, may not be sold or otherwise used commercially except as provided by department rule.
+(6) It is unlawful to release wildlife from captivity except as provided in WAC  
+220-450-010
+.
+(7) It is unlawful to release fish into any state waters, including private, natural, or man-made ponds, without first obtaining a fish planting permit. However, if a person catches game fish and keeps the fish alive on stringers, in live wells, or in other containers while fishing, he or she may release the fish back into the same waters that he or she caught the game fish in.
+(8) 
+Scientific research or display.
+ The department may authorize, by written approval, a person to import into the state, hold, possess, and propagate specimens of live wildlife for scientific research by a research institution approved by the department or for display by institutions that are accredited institutional members of the Association of Zoos and Aquariums (AZA), the Zoological Association of America (ZAA), or the American Sanctuary Association (ASA); provided that the person or institution:
+(a) Confines the specimen(s) to a secure facility;
+(b) Does not transfer the specimen(s) to any other location without the department's written authorization, and the specimen(s) are transferred to a research institution approved by the department or to an AZA, ZAA or ASA-accredited institutional member or their authorized agent;
+(c) Does not sell or otherwise dispose of specimens unless the department gives written approval to sell or dispose of the specimen(s);
+(d) Keeps records on the specimen(s) and makes reports as the department requires; and
+(e) Complies with the requirements in this section.
+(9) The provisions of this section do not prohibit the importation, possession, propagation, sale, transfer, or release of live specimens of federally listed threatened or endangered species, their gametes or embryos, where in compliance with federal law.
+(10) 
+Escaped wildlife:
+(a) Escaped wildlife that were held in captivity will be considered a public nuisance. The department or any peace officer may seize, capture, or destroy wildlife that have escaped the possessor's control. The former possessor will be responsible for costs incurred by the department in recovering, maintaining, or disposing of such animals, as well as any damage to the state's wildlife or habitat.
+(b) Possessors must report escaped wildlife to the department within 24 hours of detection of the escape.
+(c) Possessors must report the recapture or death of escaped wildlife to the department within 24 hours of the recapture or discovery of death.
+(11) 
+Inspection:
+ All permitted holding facilities for captive wildlife located in the state are subject to inspection, conducted at a reasonable time, for compliance with the provisions of this section.
+(12) 
+Notification and disposition of diseased animals:
+(a) Any person who has reason to believe that wildlife being held pursuant to this rule has contracted or been exposed to a dangerous or communicable disease or parasite shall notify the department immediately.
+(b) When the department has reason to believe that wildlife held pursuant to this rule have contracted or been exposed to a dangerous or contagious disease or parasite, the department may inspect such animals, records, and holding facilities.
+(c) The department will determine when destruction of wildlife, quarantine, or cleaning and disinfection is required at any facility holding wildlife pursuant to this section. If the department determines that destruction of wildlife, quarantine, or cleaning and disinfection of facilities is required, a written order shall be issued to the possessor describing the procedure to be followed and the time period for carrying out such actions. Such activities shall be at the expense of the possessor.
+(13) 
+Seizure:
+(a) The department may seize any unlawfully possessed wildlife.
+(b) The cost of any seizure and/or holding of seized wildlife may be charged to the possessor of such wildlife.
+(14) Violation of this section is a misdemeanor punishable under RCW  
+77.15.750
+, Unlawful use of a department permit
+—
+Penalty.
+[Statutory Authority: RCW  
+77.04.012
+,  
+77.04.020
+,  
+77.04.055
+,  
+77.04.130
+,  
+77.08.010
+,  
+77.12.047
+, and  
+77.15.250
+. WSR 26-18-074 (Order 26-05), s 220-450-030, filed 9/1/26, effective 10/2/26. Statutory Authority: RCW  
+77.04.012
+,  
+77.04.013
+,  
+77.04.020
+,  
+77.04.055
+,  
+77.12.047
+, and  
+77.12.240
+. WSR 18-19-011 (Order 18-230), § 220-450-030, filed 9/7/18, effective 10/8/18. Statutory Authority: RCW  
+77.04.012
+,  
+77.04.013
+,  
+77.04.020
+,  
+77.04.055
+, and  
+77.12.047
+. WSR 17-05-112 (Order 17-04), amended and recodified as § 220-450-030, filed 2/15/17, effective 3/18/17. Statutory Authority: RCW  
+77.04.012
+,  
+77.04.055
+,  
+77.12.047
+,  
+77.12.150
+, and  
+77.12.240
+. WSR 15-10-033 (Order 15-95), § 232-12-064, filed 4/28/15, effective 5/29/15. Statutory Authority: RCW  
+77.04.012
+,  
+77.04.013
+,  
+77.04.055
+,  
+77.12.045
+, and  
+77.12.047
+. WSR 13-02-043 (Order 12-290), § 232-12-064, filed 12/21/12, effective 1/21/13. Statutory Authority: RCW  
+77.12.047
+. WSR 10-07-105 (Order 10-64), § 232-12-064, filed 3/19/10, effective 5/1/10. Statutory Authority: RCW  
+77.12.020
+,  
+77.12.047
+, and  
+77.12.455
+. WSR 10-03-088 (Order 10-08), § 232-12-064, filed 1/19/10, effective 2/19/10. Statutory Authority: RCW  
+77.12.047
+ and  
+77.12.020
+. WSR 04-11-036 (Order 04-98), § 232-12-064, filed 5/12/04, effective 6/12/04. Statutory Authority: RCW  
+77.12.040
+ and  
+77.12.010
+. WSR 96-18-059 (Order 96-135), § 232-12-064, filed 8/30/96, effective 9/30/96. Statutory Authority: RCW  
+77.12.030
+. WSR 93-04-038 (Order 581), § 232-12-064, filed 1/27/93, effective 2/13/93. Statutory Authority: RCW  
+77.16.040
+. WSR 85-09-008 (Order 243), § 232-12-064, filed 4/5/85; WSR 84-09-052 (Order 224), § 232-12-064, filed 4/16/84. Statutory Authority: RCW  
+77.12.040
+. WSR 82-04-034 (Order 177), § 232-12-064, filed 1/28/82; WSR 81-12-029 (Order 165), § 232-12-064, filed 6/1/81. Formerly WAC 232-12-173.]
+Legislative questions or comments

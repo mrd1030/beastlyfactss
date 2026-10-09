@@ -1,0 +1,193 @@
+SOURCE: Arkansas Game and Fish Commission Code Book (as of 1 July 2025), Addenda R1.01, R1.02 and R1.03 mammal
+        sections, with the Code 01.00 definitions of furbearers, game animals, nongame and large carnivore
+sourceId: ar-unrestricted / ar-code-0900
+jurisdiction: AR
+URL: https://agfc-omnibus.s3.amazonaws.com/eregs/regulation_pdfs/large/agfc_regulations_codebook_large.pdf
+FETCHED: 2026-10-08 (plain curl from AGFC's S3 bucket; pdftotext -layout)
+
+READ THIS FIRST. AR-ar-agfc-codebook.txt promises "Addenda R1.01/R1.02/R1.03 in full" and carries only
+their three headings, so the mammal rows are here. R1.01 clears exactly one canid entry, "Wolf/Dog
+hybrids". R1.02 is the permit list and names the arctic fox, Canada lynx, kinkajou, ring-tailed coati,
+white-nosed coati, serval and wolf. R1.03 refuses breeding, sale and importation permits for raccoons,
+skunks, large carnivores (which Code 01.00 defines to include every bear) and red and gray foxes from
+listed states. Its closing line makes anything on none of the three lists "prohibited until
+evaluated", which is what decides an unlisted animal such as the Asian small-clawed otter. Native
+pets are Code 09.14 (in AR-ar-agfc-codebook.txt): six per household, hand-captured raccoons allowed,
+and hand-captured bobcats and foxes only if taken before 1 July 2022.
+
+==== Code 01.00, selected definitions ====
+     FURBEARERS - Badger, beaver, bobcat, coyote, gray fox, red fox, mink,
+     muskrat, nutria, opossum, raccoon, river otter, spotted skunk, striped
+     skunk, and weasel.
+     GAFF - To take or attempt to take fish with a hand-held or handled hook.
+     GAME ANIMALS - Alligator, black bear, bobcat, coyote, deer, elk, gray fox,
+     red fox, mink, opossum, eastern cottontail rabbit, swamp rabbit, raccoon,
+     gray squirrel, and fox squirrel.
+
+     LARGE CARNIVORE - Mountain Lion (Puma concolor), Tigers (Panthera
+     tigris), African Lions (Panthera leo), or any hybrid thereof, and all species of
+     bears (family Ursuidae).
+NONGAME WILDLIFE - All wildlife other than furbearing or game
+animals, game birds, and game fish.
+NON-NATIVE WILDLIFE - Any wildlife not defined as native wildlife.
+
+==== Addendum R1.01, mammals ====
+                               As of July 1, 2025
+
+
+R1.01 Unrestricted Captive Wildlife Species
+List
+      2. Mammals
+          ▪ Bactrian, Dromedary Camel (Camelus bactrianus,
+            Camelus dromedaries)
+          ▪ Buffalo (Bos bison)
+          ▪ European Domestic Ferret (Mustela putorius)
+          ▪ Four-toed, African Pygmy Hedgehog (Atelerix albiventris)
+          ▪ Gerbils (Subfamily Gerbillinae)
+          ▪ Guinea Pig (Cavia porcellus)
+          ▪ Hamster (Mesocricetus auratus, Phodopus campbelli,
+            Phodopus sungorus, Cricetulusgriseus, Phodopus
+            roborovskii)
+          ▪ House Mouse (Mus musculus)
+          ▪ Llama (Lama glama)
+          ▪ Long-tailed Chinchilla (Chinchilla lanigera)
+          ▪ Norway Rat (Rattus norvegicus)
+          ▪ Sugar Glider (Petaurus breviceps)
+          ▪ Wolf/Dog hybrids
+
+==== Addendum R1.02, opening and mammals ====
+      R1.02 Permit Required Captive Wildlife
+      Species List
+      A. Permits for breeding, sale, and importation may be issued for the
+         following species in accordance with Codes 09.07 (Wildlife Breeder/
+         Dealer Permit Required) and 09.10 (Wildlife Importation Permit
+         Required):
+          3. Mammals
+              ▪ Addax (Addax nasomaculatus)
+              ▪ Arctic Fox (Vulpes lagopus)
+              ▪ Black-tufted Marmoset (Callithrix penicillata)
+              ▪ Brindled Gnu (Connochaetes taurinus)
+              ▪ Brown Lemur (Eulemur fulvus)
+              ▪ Cairo Spiny Mouse (Acomys cahirinus)
+              ▪ Canadian Lynx (Lynx canadensis)
+              ▪ Capuchin Monkeys (Subfamily Cebinae)
+              ▪ Caracal (Caracal caracal)
+              ▪ Common Degu (Octodon degus)
+              ▪ Common Marmoset (Callithrix jacchus)
+              ▪ Elands (Genus Taurotragus)
+              ▪ Eurasian Lynx (Lynx lynx)
+              ▪ European Hedgehog (Erinaceus europaeus)
+              ▪ Gaur (Bos gaurus)
+              ▪ Geoffroy’s Cat (Leopardus geoffroyi)
+              ▪ Geoffroy's or White-headed Marmoset (Callithrix
+                geoffroyi)
+502
+                          As of July 1, 2025
+    ▪ Gerenuk (Litocranius walleri)
+    ▪ Giraffe (Giraffa camelopardalis)
+    ▪ Himalayan Tahr Goat (Hemitragus jemlahicus)
+    ▪ Hyenas (Family Hyaenidae)
+    ▪ Impala (Aepyceros melampus)
+    ▪ Kinkajou (Potos flavus)
+    ▪ Lesser Spot-nosed Guenon (Cercopithecus petaurista)
+    ▪ Mountain Coatis (Genus Nasuella)
+    ▪ North American Porcupine (Erethizon dorsatum)
+    ▪ Nyala (Tragelaphus angasii)
+    ▪ Old World Porcupines (Subgenus Hystrix)
+    ▪ Owl Monkeys (Genus Aotus)
+    ▪ Patagonian Cavy (Dolichotis patagonum)
+    ▪ Patas Monkeys (Genus Erythrocebus)
+    ▪ Red Kangaroo (Macropus rufus)
+    ▪ Red-necked or Bennet’s Wallaby (Macropus rufogriseus)
+    ▪ Ring-tailed Coati (Nasua nasua)
+    ▪ Ring-tailed Lemur (Lemur catta)
+    ▪ Ruffed Lemurs (Varecia variegata, Varecia rubra)
+    ▪ Sable Antelope (Hippotragus niger)
+    ▪ Serval (Leptailurus serval)
+    ▪ Squirrel Monkeys (Genus Saimiri)
+    ▪ Spider Monkeys (Genus Ateles)
+    ▪ Steenbok (Raphicerus campestris)
+    ▪ Tamandua (Genus Tamandua)
+    ▪ Tamarin Monkeys (Genus Saguinus)
+    ▪ Tayra (Eira barbara)
+    ▪ Two-toed Sloths (Genus Choloepus)
+    ▪ Vervet Mondkeys (Genus Chlorocebus)
+    ▪ Waterbuck (Kobus ellipsiprymnus)
+    ▪ Water Buffalo (Bubalus bubalis)
+    ▪ White-nosed Coati (Nasua narica)
+    ▪ Wolf (Canis lupus)
+    ▪ Zebras (Equus grevyi, E. quagga, E. zebra)
+
+==== Addendum R1.03, opening, mammals and closing clause ====
+R1.03 Prohibited Captive Wildlife Species List
+A. The Commission will not issue permits for breeding, sale, or
+   importation of the following species other than in accordance with the
+   exceptions listed in Codes 09.07, 09.10, 09.11, and Addenda F1.03,
+   F1.04 (possession of some species may be allowed in accordance with
+   Codes 09.02, 09.05, 09.08, and 09.14):
+    1. Amphibians
+        ▪ Axolotl (Ambystoma mexicanum)***
+        ▪ Newts, fire salamanders, etc. (Family Salamandridae) **
+    2. Birds
+        ▪ Waterfowl (Family Antidae)
+    3. Mammals
+        ▪ African Soft Fur Rats (Genus Mastomys)
+        ▪ Apes
+        ▪ Aoudad Sheep (Ammotragus lervia) **
+        ▪ Baboons (Genus Papio)
+        ▪ Bats (Order Chiroptera)
+        ▪ Blackbuck Antelope (Antilope cervicapra) *
+        ▪ Black-tailed Prairie Dogs (Cynomys ludovicianus) *
+        ▪ Capybara (Hydrochoerus hydrochaeris) **
+        ▪ Cervids (Family Cervidae)
+        ▪ Coyotes (Canis latrans) that originate from or have lived in
+          Alaska, Idaho, Illinois, Indiana, Iowa, Minnesota, Missouri,
+          Montana, Nebraska, North Dakota, Ohio, South Dakota,
+          Texas, Wisconsin, Wyoming, or Canada
+        ▪ Foxes (Urocyon cinereoargenteus, Vulpes vulpes) that
+          originate or have lived in Alaska, Arizona, Idaho, Illinois,
+          Indiana, Iowa, Minnesota, Missouri, Montana, Nebraska,
+          New Hampshire, New York, North Dakota, Ohio, South
+          Dakota, Texas, Vermont, Wisconsin, Wyoming, or Canada
+        ▪ Hippopotamus (Hippopotamus amphibious) **
+        ▪ Ibex (Genus Capra) **
+        ▪ Jaguar (Panthera onca) **
+        ▪ Kudu (Genus Tragelaphus) **
+        ▪ Large carnivores
+        ▪ Leopard (Panthera pardus) **
+        ▪ Lechwe (Kobus leche) **
+        ▪ Macaques (Genus Macaca)
+        ▪ Mountain lion (Puma concolor)
+        ▪ Nilgai (Boselaphus tragocamelus) **
+        ▪ Ocelot (Leopardus Pardalis)
+        ▪ Oryx (Genus Oryx) **
+        ▪ Raccoon (Procyon lotor)
+        ▪ Rhinoceros (Family Rhinocerotidae) **
+        ▪ Rodents (Order Rodentia) captured in the wild from
+          Arizona, California, Colorado, Idaho, Montana, Nebraska,
+          Nevada, North Dakota, Oklahoma, Oregon, Texas, Utah, or
+          Wyoming
+        ▪ Skunks (Genera: Mephitis, Spilogale)
+                                                                            505
+                                     As of July 1, 2025
+             ▪ Snow Leopard (Panthera uncia) **
+             ▪ Warthog (Genus Phacochoerus) **
+         4. Reptiles
+             ▪ Anacondas (Genus Eunectes)
+             ▪ Box turtles (Genus Terrapene)
+             ▪ Large Asian and African Pythons: Reticulated, Burmese,
+               and Rock Pythons (Malayopython reticulatus, Python
+               bivittatus, P. molurus, P. natalensis, P. sebae) **
+      B. Species not listed in Addenda R1.01, R1.02, or R1.03 are prohibited
+         until evaluated.
+
+      * Issuance of Wildlife Importation Permits and Wildlife Breeder/Dealer
+      Permits for these species is restricted to only those permittees permitted for
+      these species prior to February 20, 2019.
+
+      ** Issuance of Wildlife Importation Permits and Wildlife Breeder/Dealer
+      Permits for these species is restricted to only those permittees permitted for
+      these species prior to May 21, 2020.
+
+      *** Legal possession of these species is restricted to only those owned prior
+      to May 16, 2024, that register the animal with the Commission by June 30,

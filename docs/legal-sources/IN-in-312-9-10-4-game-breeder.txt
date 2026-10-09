@@ -1,0 +1,109 @@
+# 312 IAC 9-10-4, Game breeder license
+
+sourceId: in-312-9-10-4
+jurisdiction: IN
+url: https://www.law.cornell.edu/regulations/indiana/312-IAC-9-10-4
+fetched: 2026-10-08
+fetch notes: Plain curl with a browser User-Agent from Cornell LII, because iar.iga.in.gov serves only its React shell; cited to the official section; site chrome stripped. 312 IAC 9-3-2 to 9-3-20 were also scanned on Cornell for any rule on keeping a live deer and none was found.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+Sec. 4. (a) A person shall apply for a game breeder's license in a form and manner prescribed by the
+department that includes the following information: (1) The name of the applicant. (2) The address
+of the applicant. (3) The county of residence for the applicant. (4) The location where wild animals
+are kept if not at the applicant's address under subdivision (2). (5) The phone number of the
+applicant. (6) The species of wild animal to be kept under the game breeder's license. (b) A person
+holding a game breeder's license under this section may possess at least one (1) of the following:
+(1) Ring-necked pheasant (Phasianus colchicus). (2) Bobwhite quail (Colinus virginianus). (3)
+Eastern cottontail rabbit (Sylvilagus floridanus). (4) Gray squirrel (Sciurus carolinensis). (5) Fox
+squirrel (Sciurus niger). (6) Beaver (Castor canadensis). (7) Coyote (Canis latrans). (8) Gray fox
+(Urocyon cinereoargenteus). (9) Red fox (Vulpes vulpes). (10) Mink (Neovison vison). (11) Muskrat
+(Ondatra zibethicus). (12) Opossum (Didelphis virginiana). (13) Raccoon (Procyon lotor). (14)
+Striped skunk (Mephitis mephitis). (15) Long-tailed weasel (Neogale frenata). (16) Least weasel
+(Mustela nivalis or Mustela rixosa). (17) Bobcat (Lynx rufus). (c) A person holding a game breeder's
+license may lawfully acquire and possess the following: (1) A furbearing or an eastern cottontail
+rabbit that is: (A) lawfully taken during a season to take the wild animal; or (B) born in
+captivity. (2) A squirrel or a gray squirrel that is born in captivity. (3) A ring-necked pheasant
+or a bobwhite quail hatched in captivity. (d) A person holding a game breeder's license under
+subsection (a) may possess the following: (1) A furbearing mammal, as defined by IC 14-8-2-108 ,
+squirrel, or eastern cottontail rabbit for breeding purposes under IC 14-22-20. (2) A ring-necked
+pheasant or a bobwhite quail for: (A) breeding; (B) food; or (C) release. (e) A person shall apply
+for a game breeder's license under this section: (1) not later than five (5) days after acquiring a
+wild animal in the state; (2) not later than five (5) days after importing a wild animal to the
+state; or (3) if the wild animal is a raccoon, red fox, gray fox, or coyote and obtained in a
+trapping season for the species of animal, not later than five (5) days after the close of the
+season for the species. (f) An enclosure for a wild animal must be inspected by a conservation
+officer before a game breeder's license may be issued. (g) A person holding a game breeder's license
+may add a species other than a species identified in the application upon: (1) inspection by a
+conservation officer; or (2) approval by the division. A person holding game breeder's license shall
+notify a conservation officer not later than five (5) days after acquiring a new species. (h) A
+person holding a game breeder's license that imports: (1) a live animal; or (2) the eggs of a bird;
+shall secure a certificate of veterinary inspection from an accredited veterinarian in the state of
+origin or certificate of compliance under 345 IAC 1-3-24 before the live animal or egg is shipped to
+the state. Documentation in the form of a copy of a valid game breeder's license or valid dated
+receipt that establishes lawful acquisition or ownership must accompany transportation of the live
+animal or egg. (i) A person holding a game breeder's license shall present at least one (1) of the
+following for inspection upon the request of a conservation officer for each animal possessed by the
+person holding a game breeder's license: (1) A receipt. (2) An invoice. (3) Other satisfactory
+evidence of lawful acquisition. (j) The following requirements apply to possession of a wild animal
+under subsection (b): (1) Confine a wild animal to a cage or other enclosure that: (A) makes escape
+of the wild animal unlikely; and (B) prevents the entrance of a free-roaming wild animal of the same
+species. (2) Provide a cage or enclosure large enough to: (A) allow the wild animal to turn about
+freely; and (B) make normal postural adjustments. (3) Provide a chainlink or welded wire edges shall
+be: (A) smoothly secured to prevent injury to the wild animal; and (B) kept properly maintained. (4)
+Provide a night quarter, a holding pen, or a nesting box may not be used as primary housing. (5)
+Provide the following for the comfort of the particular species of wild animal: (A) Fresh water. (B)
+Rainproof dens. (C) Nest boxes. (D) Windbreaks. (E) Shelters. (F) Shade. (G) Bedding. (6) Handle,
+house, and transport a wild animal in a sanitary and humane manner. (7) Provide enclosures with
+sufficient drainage to prevent standing water from accumulating. (8) Make a cage or other enclosure
+available upon request for inspection by a conservation officer. (k) A wild animal possessed under
+this section may be administered a pharmaceutical product under state and federal law and approved
+by a state or federal agency for the purpose of preventing or treating the following: (1)
+Malnutrition. (2) Illness. (3) Disease. (4) Injury. (5) Stress. A licensed veterinarian may
+administer an immobilizing agent, a tranquilizer, or a drug for euthanasia to a wild animal in
+compliance with state and federal laws. (l) A person holding a game breeder's license shall not
+release an animal possessed under this section except for a bobwhite quail or a ring-necked
+pheasant. A person holding a game breeder's license shall not release a known diseased bobwhite
+quail or a ring-necked pheasant. (m) A person holding a game breeder's license shall not sell a wild
+animal possessed under this section if the wild animal is known to be diseased. (n) A person holding
+a game breeder's license shall comply with all applicable state, local, or other federal laws that
+govern the possession and sale of a wild animal possessed under this section. (o) A person holding a
+game breeder's license shall do the following: (1) Maintain an inventory of all wild animals
+possessed under this section. (2) Record all additions and deletions to the inventory for every wild
+animal that is: (A) born or has died; (B) sold; (C) traded; (D) loaned; (E) bartered; or (F) given
+to another person; in a form and manner prescribed by the department. (3) Keep a copy of the
+complete and accurate inventory on the premises of the game breeder. (4) Provide a copy of the
+inventory to a conservation officer upon request. (5) Issue a valid, dated receipt prepared in ink
+for a wild animal or product that is sold, traded, bartered, or gifted and include the following
+information: (A) The game breeder's license number. (B) The buyer and seller name and address. (C)
+The number of animals or products sold. (D) The species of animal sold. A copy of the receipts must
+be on the premises of the game breeder for at least five (5) years after the transaction. (p) A game
+breeder's license expires on December 31 of the year the license is issued. A person holding a game
+breeder's license shall file an application with the division not later than January 31 of each
+calendar year to renew the game breeder's license. An annual report must accompany the renewal
+application and must include for each species possessed under the game breeder's license the number
+of wild animals: (1) bought; (2) sold; (3) born; (4) traded; (5) gifted; (6) that died; and (7) on
+hand. (q) A conservation officer may enter the premises of a person holding a game breeder's license
+at a reasonable time to conduct an inspection in accordance with subsections (r) and (s). (r) During
+an inspection, a person holding a game breeder's license or the designee of the person holding the
+game breeder's license shall comply with the following: (1) Meet the conservation officer at the
+time of inspection to provide access to all enclosures where wild animals possessed under the game
+breeder's license are housed. (2) Provide access to all records relative to the game breeder's
+license. (s) While conducting an inspection, the conservation officer shall comply with the
+following: (1) Upon request of the person holding the game breeder's license or the designee of the
+person holding a game breeder's license, and prior to entering the enclosure where wild animals are
+housed, follow appropriate sanitation practices to prevent the spread of disease if the person
+holding the game breeder's license provides sanitation supplies or protective equipment. (2) Give
+due consideration to the safety and welfare of the wild animals. (3) Notify the person holding the
+game breeder's license if the inspection reveals a violation under this section or IC 14-22-20. The
+conservation officer may make a second inspection not earlier than fifteen (15) days after the
+reported violations unless critical conditions exist as determined at the reasonable discretion of
+the conservation officer. The wild animals may be confiscated if the person holding a game breeder's
+license fails to correct the violations of the game breeder's license requirements. (t) A game
+breeder's license may be suspended, denied, or revoked under IC 4-21.5 if the person holding a game
+breeder's license fails to comply with the following: (1) A provision of a game breeder's license
+issued under this section. (2) IC 14-22-20. (3) Applicable state, local, or other federal laws. (u)
+A person shall pay the fee for a game breeder's license under 312 IAC 1.5-4-11 .

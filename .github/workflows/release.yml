@@ -1,0 +1,67 @@
+name: release scheduled articles
+
+# Ships the articles in scripts/release-queue.json on their day. Articles
+# written ahead wait in content/_scheduled-*/, where the build never looks;
+# every morning this moves the ones that are due into content/, numbers them
+# for Today's reads, runs the checks the build would run, and pushes main,
+# which is what deploys. A morning with nothing due costs one checkout.
+#
+# The commit carries no [CI Skip], on purpose: the push is the deploy.
+
+on:
+  schedule:
+    # 11:00 UTC is 07:00 Eastern in summer and 06:00 in winter. GitHub
+    # queues scheduled jobs under load, so treat it as "that morning".
+    - cron: '0 11 * * *'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Ship everything due on or before this date (YYYY-MM-DD, US Eastern). Leave blank for today.'
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      PUPPETEER_SKIP_DOWNLOAD: '1'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Ship what is due
+        id: ship
+        run: |
+          if [ -n "${{ inputs.date }}" ]; then
+            node scripts/release-scheduled.mjs --date "${{ inputs.date }}"
+          else
+            node scripts/release-scheduled.mjs
+          fi
+          if [ -f .release-shipped ]; then
+            echo "shipped=$(paste -sd ', ' .release-shipped)" >> "$GITHUB_OUTPUT"
+            rm .release-shipped
+          fi
+
+      - name: Commit and push
+        if: steps.ship.outputs.shipped != ''
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -A content src/lib/data/rotation.json src/lib/generated
+          git diff --staged --quiet && echo 'Nothing to commit.' && exit 0
+          git commit -m "Publish: ${{ steps.ship.outputs.shipped }}"
+          git push origin main

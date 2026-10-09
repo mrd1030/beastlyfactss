@@ -1,0 +1,81 @@
+# Va. Code § 29.1-521(A)(10), the 2026 native and naturalized fauna list lines, and the whole 4VAC15-30-40 permit table
+
+sourceId: va-29-1-521 / va-4vac15-30-40
+jurisdiction: VA
+url: https://law.lis.virginia.gov/vacode/title29.1/chapter5/section29.1-521/ ; https://dwr.virginia.gov/wp-content/uploads/media/virginia-native-naturalized-species.pdf ; https://law.lis.virginia.gov/admincode/title4/agency15/chapter30/section40/
+fetched: 2026-10-08
+fetch notes: law.lis.virginia.gov by plain curl; the DWR list PDF with a browser User-Agent and pdftotext -layout. The list PDF is now dated May 2026 while 4VAC15-20-50 incorporates the 2024 list. The permit table has no primate, marsupial or xenarthran entry and no snake but the brown tree snake.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+§ 29.1-521. Unlawful to hunt, trap, possess, sell, or transport wild birds and wild animals except as permitted; exception; penalty Virginia General Assembly / LIS Learning Center / Privacy Policy / LIS home / Register Account / Login Session Information Bills & Resolutions State Budget Virginia Law
+[...]
+10. To hunt, trap, take, capture, kill, attempt to take, capture, or kill, possess, deliver for transportation, transport, cause to be transported, by any means whatever, receive for transportation or export, or import, at any time or in any manner, any wild bird or wild animal or the carcass or any part thereof, except as specifically permitted by law and only by the manner or means and within the numbers stated. However, the provisions of this section shall not be construed to prohibit the (i) use or transportation of legally taken turkey carcasses, or portions thereof, for the purposes of making or selling turkey callers; (ii) the manufacture or sale of implements, including tools or utensils made from legally harvested deer skeletal parts, including antlers; (iii) the possession of shed antlers; or (iv) the possession, manufacture, or sale of other parts or implements authorized by regulations adopted by the Board. 11. To offer for sale, sell, offer to purchase, or purchase, at any time or in any manner, any wild bird or wild animal or the carcass or any part thereof, except as specifically permitted by law, including subsection D of § 29.1-553 . However, any nonprofit organization exempt from taxation under § 501(c)(3) of the Internal Revenue Code that is (i) organized to provide wild game as food to the hungry and (ii) authorized by the Department to possess, transport, and distribute donated or unclaimed meat to the hungry may pay a processing fee in order to obtain su
+
+==== DWR List of Native and Naturalized Fauna of Virginia, May 2026: header and the mammal and snake lines this sitting used ====
+                   Virginia Department of Wildlife Resources
+                List of Native and Naturalized Fauna of Virginia
+                                   May, 2026
+(* denotes naturalized species; ** denotes species native to some areas of Virginia and naturalized
+                                     in other areas of Virginia)
+
+[...]
+Scarlet Kingsnake                       Lampropeltis elapsoides
+Smooth Greensnake                       Opheodrys vernalis
+Southeastern Crowned Snake              Tantilla coronata
+Southern Ring-necked Snake              Diadophis punctatus punctatus
+Timber Rattlesnake                      Crotalus horridus
+
+[...]
+Eastern Chipmunk                            Tamias striatus
+Eastern Cottontail                          Sylvilagus floridanus
+Eastern Fox Squirrel                        Sciurus niger
+Eastern Gray Squirrel                       Sciurus carolinensis
+Eastern Harvest Mouse                       Reithrodontomys humulis
+Eastern Mole                                Scalopus aquaticus aquaticus
+[...]
+Tri-colored (=Tricolored) Bat            Perimyotis subflavus
+Virginia Big-eared Bat                   Corynorhinus (= Plecotus) townsendii virginianus
+Virginia Northern Flying Squirrel        Glaucomys sabrinus fuscus
+Virginia Opossum                         Didelphis virginiana virginiana
+White-footed Mouse                       Peromyscus leucopus
+White-tailed Deer                        Odocoileus virginianus
+Woodchuck                                Marmota monax
+
+No Puma, Felis concolor or cougar entry appears anywhere in the list (grep checked).
+
+==== 4VAC15-30-40(A) table, MAMMALS through CRUSTACEANS, as served on 2026-10-08 ====
+MAMMALS Order Family Genus/Species Common Name Artiodactyla Suidae All Species Pigs or Hogs* Cervidae All 
+Species Deer* Carnivora Canidae All Species Wild Dogs,* Wolves, Coyotes or Coyote hybrids, Jackals and Foxes 
+Ursidae All Species Bears* Procyonidae All Species Raccoons and* Relatives Mustelidae All Species Weasels, 
+Badgers,* Skunks and Otters (except Mustela putorius furo) Ferret Viverridae All Species Civets, Genets,* 
+Lingsangs, Mongooses, and Fossas Herpestidae All Species Mongooses* Hyaenidae All Species Hyenas and 
+Aardwolves* Felidae All Species Cats* Chiroptera All Species Bats* Lagomorpha Lepridae Brachylagus idahoensis 
+Pygmy rabbit Lepus europeaeous European hare Oryctolagus cuniculus European rabbit Sylvilagus bachmani 
+riparius Riparian brush rabbit Sylvilagus palustris hefneri Lower Keys marsh rabbit Rodentia All species 
+native to Africa All species native to Africa Dipodidae Zapus hudsonius preblei Preble's meadow jumping mouse 
+Muridae Microtus californicus scirpensis Amargosa vole Microtus mexicanus hualpaiensis Hualapai Mexican vole 
+Microtus pennsylvanicus dukecampbelli Florida salt marsh vole Neotoma floridana smalli Key Largo woodrat 
+Neotoma fuscipes riparia Riparian (= San Joaquin Valley) woodrat Oryzomys palustris natator Rice rat 
+Peromyscus gossypinus allapaticola Key Largo cotton mouse Peromyscus polionotus allophrys Choctawhatchee 
+beach mouse Peromyscus polionotus ammobates Alabama beach mouse Peromyscus polionotus niveiventris 
+Southeastern beach mouse Peromyscus polionotus peninsularis St. Andrew beach mouse Peromyscus polionotus 
+phasma Anastasia Island beach mouse Peromyscus polionotus trissyllepsis Perdido Key beach mouse 
+Reithrodontomys raviventris Salt marsh harvest mouse Heteromyidae Dipodomys heermanni morroensis Morro Bay 
+kangaroo rat Dipodomys ingens Giant kangaroo rat Dipodomys merriami parvus San Bernadino Merriam's kangaroo 
+rat Dipodomys nitratoides exilis Fresno kangaroo rat Dipodomys nitratoides nitratoides Tipton kangaroo rat 
+Dipodomys stephensi (including D. cascus) Stephens' kangaroo rat Perognathus longimembris pacificus Pacific 
+pocket mouse Sciuridae Cynomys spp. Prairie dogs Spermophilus brunneus brunneus Northern Idaho ground 
+squirrel Tamiasciurus hudsonicus grahamensis Mount Graham red squirrel Soricomorpha Soricidae Sorex ornatus 
+relictus Buena Vista Lake ornate shrew MOLLUSKS Order Family Genus/Species Common Name Neotaenioglossa 
+Hydrobiidae Potamopyrgus antipodarum New Zealand mudsnail Veneroida Dreissenidae Dreissena bugensis Quagga 
+mussel Dreissena bugensis Quagga mussel REPTILES Order Family Genus/Species Common Name Crocodilia 
+Alligatoridae All species Alligators, caimans* Crocodylidae All species Crocodiles* Gavialidae All species 
+Gavials* Squamata Colubridae Boiga irregularis Brown tree snake* CRUSTACEANS Order Family Genus/Species 
+Common Name Decapoda Cambaridae Cambarus aculabrum Cave crayfish Cambarus zophonastes Cave crayfish 
+Orconectes rusticus Rusty crayfish Orconectes shoupi Nashville crayfish Pacifastacus fortis Shasta crayfish 
+Procambarus sp. Marbled crayfish Parastacidae Cherax spp. Australian crayfish Varunidea Eriocheir sinensis 
+Chinese mitten crab

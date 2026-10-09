@@ -1,0 +1,33 @@
+# Tennessee: the skunk is barred by statute, outside the five-class scheme
+
+sourceId: tn-70-4-208
+jurisdiction: TN
+url: https://codes.findlaw.com/tn/title-70-wildlife-resources/tn-code-sect-70-4-208/
+fetched: 2026-10-08
+fetch notes: Tennessee's official code is behind LexisNexis, law.justia.com answers 403 to this
+  container, lawserver.com redirects, casetext.com cannot be fetched, and Cornell LII carries
+  Tennessee's regulations but not its code. FindLaw's reproduction (marked "Current as of
+  January 02, 2024") was the one copy that answered. It is a reproduction, so cite the section
+  number, not FindLaw. The section was last amended before 2024 and nothing in the 2024 exotic
+  animal amendments (Pub. Acts c. 636) touched Part 2.
+
+WHY THIS MATTERS: § 70-4-208 sits in Part 2 of Chapter 4 (hunting and trapping), not in the
+  Exotic Animals part (Part 4) that the five-class scheme lives in. The skunk cell was read as
+  Class II (native furbearer, $10 permit) from 1660-01-18-.03(3)(b). This section bars the
+  animal outright regardless of class: no import, no possession, no sale or transfer, with
+  zoos and research institutions as the only exemption and a rehabilitation-and-release
+  route for permitted rehabilitators. A specific statutory ban on the animal controls over a
+  general rule-made class, so the skunk cell is banned, not permit.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+Tennessee Code Title 70. Wildlife Resources § 70-4-208
+
+(a) It is unlawful for any person to import, possess, or cause to be imported into this state any type of live skunk, or to sell, barter, exchange or otherwise transfer any live skunk, except that the prohibitions of this section shall not apply to bona fide zoological parks and research institutions.
+
+(b) Notwithstanding subsection (a), a person who possesses a valid wildlife rehabilitation permit issued by the agency may receive skunks from the wild for the purposes of rehabilitation and release only.
+
+(c) A violation of this section is a Class C misdemeanor.

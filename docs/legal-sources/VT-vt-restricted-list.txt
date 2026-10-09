@@ -15,9 +15,12 @@ whole and then clawed back species by species here, which is how Vermont allows 
 python but not a Burmese, a California kingsnake but not an eastern milk snake, and
 every gecko but no Ambystoma salamander.
 
-Regulation 881 is what makes restricted bite: the Commissioner shall not issue a permit
-for keeping or possessing a wild animal in captivity except for bona fide scientific or
-educational purposes. Restricted therefore means no pet, not extra paperwork.
+Regulation 881 § 5.2 is what decides what restricted means. Its first sentence bars a permit
+for keeping a wild animal in captivity except for bona fide scientific or educational purposes;
+its second opens one for any other purpose once the Commissioner determines the animal does not
+conflict with the purpose of the regulation (full text in VT-vt-reg-881.txt). Restricted
+therefore means a discretionary permit a private keeper can apply for, not a flat no.
+(Corrected 2026-10-08; this note previously quoted the first sentence alone and read it as no pet.)
 
 STILL UNREAD: the Domestic Species List (August 2010). Its text is embedded as glyph
 outlines and could not be extracted by any method tried here, including WebFetch. The

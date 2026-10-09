@@ -1,0 +1,214 @@
+SOURCE: Oregon: OAR 635-044-0430 to 0470, protected wildlife and the holding of live native wildlife
+sourceId: or-635-044
+jurisdiction: OR
+URL: https://secure.sos.state.or.us/oard/view.action?ruleNumber=635-044-0460 (and -0430, -0440, -0450, -0470)
+FETCHED: 2026-10-08 (plain curl with a browser User-Agent; one rule per view.action page; tags and site chrome stripped)
+
+READ THIS FIRST. Neither ORS 609.305 nor division 56 answers an Oregon native carnivore. Division 56 is
+the nonnative list, and ORS 609.305 reaches only non-indigenous cats and canids and bears other than
+the black bear. This division does. 0460 names the black bear, cougar, bobcat, wolf, raccoon and skunk
+and requires a holding, exhibitor or sanctuary permit for each; 0460(3) sends any black bear, bobcat or
+wolf acquired after 20 January 2017 to an AZA, exhibitor or sanctuary facility; 0470 grandfathers pets
+held on that date if a permit was applied for by 21 January 2018. The raccoon and skunk are the hard
+pair: 0460(1) and (6)(a) contemplate holding them on a Wildlife Holding Permit, two raccoons a permit,
+while 0450(3) says an exhibitor or sanctuary permit "is required to hold species listed in
+635-044-0460", and 0460(4)(d) and 0470(4) bar offering either for sale as a household pet in Oregon.
+0460(5) puts the burden of proving a wolf-cross or bobcat-cross is a hybrid on the owner; an animal
+without that proof is regulated as the wild parent. 0430(1)(a) protects every federally listed species.
+
+==== OAR 635-044-0430 ====
+635-044-0430 
+Protected Wildlife
+(1) Except as provided by Oregon statute or rule or letter of authorization, it is unlawful for any person to take, capture, hold, release or have in possession, either dead or alive, whole or in part, any wildlife listed in this section:
+(a) Threatened or Endangered animals as provided for in 635-100-0125, Sensitive Species of Oregon as provided by 635-100-0040, species listed by Oregon Biodiversity Information Center (ORBIC) as “rare, threatened or endangered” in Oregon in the ORBIC published book (2016) and federally listed threatened and endangered listed species;
+(b) All non-game birds except European starling (Sturnus vulgaris), house sparrow (Passer domesticus), and Eurasian collared-dove (Streptopelia decaocto); unless as authorized by a Migratory Bird Depredation Order, or in compliance with all terms and conditions of a Migratory Bird Depredation Permit issued by the US Fish and Wildlife Service under Title 50 Code of Federal Regulations Part 21, Subpart D. Nothing in this rule is intended to affect the provisions of ORS 610.002 to 610.990, or
+(c) Fish:
+(A) Alvord Lake chub (Siphateles alvordensis);
+(B) Oregon lakes tui chub (Siphateles bicolor oregonensis);
+(C) Sheldon tui chub (Siphateles bicolor eurysomus);
+(D) Oregon chub (Oregonichthys crameri);
+(E) Goose Lake tui chub (Siphateles bicolor thalassinus);
+(F) Northern pit roach (Hesperoleucus symmetricus mitrulus);
+(G) Millicoma longnose dace (Rhinichthys cataractae ssp.);
+(H) Lahonton redside shiner (Richardsonius egregius);
+(I) Goose Lake sucker (Catostomus occidentalis lacusanserinus);
+(J) Klamath smallscale sucker, Jenny Creek population (Catostomus rimiculus);
+(K) Tahoe sucker (Catostomus tahoensis);
+(L) Malheur sculpin (Cottus bendirei );
+(M) Margined sculpin (Cottus marginatus);
+(N) Pit sculpin (Cottus pitensis);
+(O) Pacific lamprey (Entosphenus tridentatus);
+(P) Western river lamprey (Lampetra ayresii);
+(Q) Western brook lamprey (Lampetra richardsoni);
+(R) Miller Lake lamprey (Entosphenus minimus);
+(S) Klamath River lamprey (Entosphenus similis);
+(T) Pit-Klamath brook lamprey (Entosphenus lethophagus);
+(U) Goose Lake lamprey (Entosphenus spp.);
+(d) Amphibians:
+(A) Cope's giant salamander (Dicamptodon copei);
+(B) Clouded salamander (Aneides ferreus);
+(C) Black salamander (Aneides flavipunctatus);
+(D) California slender salamander (Batrachoseps attenuatus);
+(E) Oregon slender salamander (Batrachoseps wrightorum);
+(F) Del Norte salamander (Plethodon elongatus);
+(G) Larch Mountain salamander (Plethodon larselli);
+(H) Siskiyou Mountains salamander (Plethodon stormi);
+(I) Blotched tiger salamander (Ambystoma mavortium melanostictum);
+(J) Dunn’s salamander (Plethodon dunni);
+(K) Southern torrent salamander (Rhyacotriton variegatus);
+(L) Columbia torrent salamander (Rhyacotriton kezeri);
+(M) Cascade torrent salamander (Rhyacotriton cascadae);
+(N) Crater lake Newt (Taricha granulosa mazamae);
+(O) Rocky Mountain tailed frog (Ascaphus montanus);
+(P) Coastal tailed frog (Ascaphus truei);
+(Q) Northern red-legged frog (Rana aurora);
+(R) Foothill yellow-legged frog (Rana boylii);
+(S) Cascades frog (Rana cascadae);
+(T) Northern leopard frog (Lithobates pipiens);
+(U) Columbia spotted frog (Rana luteiventris);
+(V) Oregon spotted frog (Rana pretiosa);
+(W) Western toad (Bufo boreas);
+(X) Woodhouse toad (Anaxyrus woodhousii);
+(Y) Great Basin spadefoot (Spea intermontana);
+(e) Reptiles:
+(A) Western painted turtle (Chrysemys picta bellii);
+(B) Western pond turtle (Actinemys marmorata);
+(C) Great Basin collared lizard (Crotaphytus bicinctores);
+(D) Long-nosed leopard lizard (Gambelia wislizenii)
+(E) Pygmy short-horned lizard (Phyrnosoma douglassi);
+(F) Desert horned lizard (Phrynosoma platyrhinos);
+(G) Sharp-tailed snake (Contia tenuis);
+(H) Common kingsnake (Lampropeltis getula);
+(I) California mountain kingsnake (Lampropeltis zonata);
+(J) Western ground snake (Sonora semiannulata);
+(K) Racer (Coluber constrictor);
+(L) Rubber boa (Charina bottae);
+(M) Night snake (Hypsiglena chlorophaea);
+(N) Striped Whip snake (Coluber taeniatus);
+(O) Ring-necked snake (Diadophis punctatus);
+(P) Pacific coast aquatic garter snake (Thamnophis atratus);
+(Q) Western whiptail (Aspidoscelis tigris);
+(f) Mammals:
+(A) All bats in the Order Chiroptera;
+(B) American pika (cony) (Ochotona princeps);
+(C) Pygmy rabbit (Brachylagus idahoensis);
+(D) White-tailed jack rabbit (Lepus townsendii);
+(E) Chipmunk (Tamias amoenus, T. minimus., T. senex, T. siskiyou and T. townsendii);
+(F) Golden-mantled ground squirrel (Spermophilus lateralis);
+(G) Red squirrel (Tamiasciurus. hudsonicus);
+(H) White-tailed antelope squirrel (Ammospermophilus leucurus);
+(I) Northern flying squirrel (Glaucomys sabrinus);
+(J) White-footed vole (Arborimus albipes);
+(K) Red Tree Vole (Arborimus longicaudus);
+(L) Ringtail (Bassariscus astutus);
+(M) Fisher (Martes pennanti);
+(N) All marine mammals.
+(2) Notwithstanding section (1) of this rule, it shall be lawful to purchase, sell, or exchange, or have in possession any pelt of wildlife listed in this rule which was lawfully taken in another state and transported into Oregon. A bill of lading or freight bill from a common carrier or other documentary proof indicating the state of origin of the pelt and the name and address of the person from whom the pelt was received shall be sufficient.
+ Statutory/Other Authority: ORS 496.138, 496.146, 496.162, 498.012 & 506.119
+ Statutes/Other Implemented: ORS 496.162 & 506.129
+ History:
+ DFW 3-2017, f. & cert. ef. 1-24-17
+
+==== OAR 635-044-0440 ====
+635-044-0440 
+Capture and Holding of Wildlife
+Wildlife may not be captured from the wild and/or held except as provided by OAR 635-044-0450(1), or with the following permits or licenses:
+(1) Wildlife Holding Permit (OAR 635-044-0460(1) and 635-044-0480(2a));
+(2) Wildlife Exhibitor/Animal Entertainment Industry Permit (OAR 635-044-0460(1) and 635-044-0470(2));
+(3) Wildlife Sanctuary Permit (OAR 635-044-0460(1) and 635-044-0470(2a));
+(4) Game bird Propagation License (OAR 635-044-0540(1));
+(5) Falconry License (OAR 635-055-0010);
+(6) Wildlife Rehabilitation Permit (OAR 635-062-0010);
+(7) Scientific Taking Permit (OAR 635-043-0023 and 635-007-0900);
+(8) Game Bird Release Permit for Hunting Dog and Raptor Training and Competitive Hunting Dog Trial Permit as defined in OAR 635 division 046;
+(9) Hunting Preserve License (pheasants, quail, and partridge) defined in OAR 635-047-0015;
+(10) Captive Cervid Holding and Propagation permits as defined in OAR 635, division 049;
+(11) A federal permit or qualifying exception under the Code of Federal Regulations will serve in lieu of a state Wildlife Holding Permit for birds protected by the federal Migratory Bird Treaty;
+(12) Fox (Vulpes vulpes or Urocyon cinereoargenteus) or mink (Mustela vison) may be held by a commercial fur farm under authority of the Oregon Department of Agriculture (ORS 596.010(3); 609.125; 596.020(2)).
+(13) Fish Transport Permit (OAR 635-007-0600);
+(14) Fish Propagation License (OAR 635-007-0650);
+(15) Sturgeon Propagation Permit (OAR 635-007-0725)
+ Statutory/Other Authority: ORS 496.012, 496.138, 496.146, 497.298, 497.308, 497.312, 497.318, 498.002, 498.022, 498.029, 498.052, 498.222 & 498.242, 596.010, 596.020 & 609.125;
+ Statutes/Other Implemented: ORS 496.012, 496.138, 496.146, 497.298, 497.308, 497.312, 497.318 & 498.022
+ History:
+ DFW 3-2017, f. & cert. ef. 1-24-17
+
+==== OAR 635-044-0450 ====
+635-044-0450 
+Holding Permit Requirements
+(1) No person shall capture or hold three or more animals listed in OAR 635-044-0480 or legally held grandfathered animals (635-044-0470) without a valid Wildlife Holding Permit.
+(2) Wildlife Holding Permits are specific to the species held, permit holder and to the holding facility described on the permit.
+(3) Wildlife Exhibitor/Animal Entertainment Industry or Wildlife Sanctuary Permit is required to hold species listed in 635-044-0460 and 635-044-0480.
+(4) All Wildlife Holding, Wildlife Exhibitor/Animal Entertainment Industry and Wildlife Sanctuary permittees shall certify to the Department that the species held complies with any applicable city or county ordinances and any applicable federal laws.
+(5) No Wildlife Holding Permit is required to hold:
+(a) Game birds legally acquired and held under a Game Bird Propagation License; game birds legally acquired from a licensed propagator or with a valid import permit from the Oregon Department of Agriculture;
+(b) Captive or farmed cervids held under a Cervid Holding Permit or a Cervid Propagation License (OAR chapter 635 division 49);
+(c) Domesticated fur-bearing fox or mink (596.020(2));
+(d) Game fish legally acquired and possessed with a valid Fish Transport Permit.
+(6) Wildlife held for purposes of Exhibition or Animal Entertainment or in a wildlife sanctuary as defined in 635-044-0420(1), (5), (6), (7) or (22) require a Wildlife Exhibitor/Animal Entertainment Industry or Sanctuary permit.
+(a) Wildlife Exhibitor/Animal Entertainment Industry or Sanctuary Permits must be renewed annually and include updated animal inventory, employee, facility, and business information, and associated fees.
+(b) The annual fee for Wildlife Exhibitor/Animal Entertainment Industry or Sanctuary Permit is $100 plus the $2 agent fee.
+(c) AZA or ZAA accredited facilities can submit fees for their Wildlife Exhibitor/Animal Entertainment Industry permit at the same interval as their accreditation renewal. A five year AZA accreditation renewal requires payment of the cumulative annual fee for a Wildlife Exhibitor/Animal Entertainment Industry permit of $500 plus the $2 agent fee. An annual renewal report is required to document animal inventory, employee, or facility changes.
+(7) Revocation or non-renewal of licenses or permits and contested case procedure are defined in 635-044-0570.
+ Statutory/Other Authority: ORS 496.012, 496.138, 496.146, 497.298, 497.308, 497.312, 497.318, 498.022, 498.029, 498.052, 498.222 & 498.242
+ Statutes/Other Implemented: ORS 496.012, 496.138, 496.146, 497.298, 497.308, 497.312, 497.318, 498.022, 498.029, 498.052, 498.222 & 498.242
+ History:
+ DFW 3-2017, f. & cert. ef. 1-24-17
+
+==== OAR 635-044-0460 ====
+635-044-0460 
+Holding of Live Black Bear (Ursus americanus), Cougar (Puma concolor), Bobcat (Lynx rufus), Wolf (Canis lupus), Raccoon (Procyon lotor) and Skunk (Mephitis spp.)
+(1) Black bears, cougars, bobcats, wolves, raccoons and skunks held in captivity require a Wildlife Holding or Wildlife Exhibitor/Animal Entertainment Industry or Wildlife Sanctuary Permit and associated fees paid for those species held.
+(2) Black bears, cougars, bobcats, wolves, raccoons and skunks may only be held at AZA accredited facilities or in Department approved facilities meeting standards defined in the Oregon Enclosure and Caging Standards for Holding Wildlife (Exhibit 1) or as defined in 635-044-0500(5)(b).
+(3) Black bears, cougars, bobcats, and wolves, acquired by transfer or new acquisition as part of an existing permit or new holding application after January 20, 2017, shall only be held at AZA accredited facilities or as approved by the Department in Wildlife Exhibitor/Animal Entertainment or Wildlife Sanctuary facilities. No more than one black bear, one cougar, or one bobcat may be held on a Wildlife Exhibitor/Animal Entertainment or Wildlife Sanctuary Permit unless approved by the Department.
+(4) Black bears, cougars, bobcats, wolves, raccoons, and skunks must have been acquired from an out-of-state licensed USDA breeder with approved documentation that may include a valid sales receipt, Certificate of Veterinary Inspection with import permit from Oregon Department of Agriculture, valid agency transfer of ownership permit identifying the animal was propagated and born in legal captivity, or as approved by the Department.
+(a) Black bears, cougars, bobcats, wolves, raccoons and skunks must be marked permanently and uniquely with either a lip or ear tattoo and/or implanted Radio Frequency Identification Device (microchip). Holders of these defined species of animals shall meet these requirements by January 21, 2018.
+(b) Live black bears, cougars, bobcats, wolves, raccoons, and skunks shall not be removed from the wild, with the exception of animals captured and placed by the Department in an AZA accredited facility, or as authorized by a Scientific Taking Permit (OAR 635-043-0023), Wildlife Rehabilitation Rules (OAR 635 Div. 062), as nuisance wildlife captured by permit (OAR 635 Div. 435), or as approved by the Department.
+(c) Black bears, cougars, bobcats, wolves, raccoons, and skunks held on a Wildlife Holding Permit or Wildlife Exhibitor/Animal Entertainment Industry or Sanctuary Permit cannot be bred, reproduced, or propagated in Oregon or offered for sale, trade, barter or exchange, including grandfathered animals with one exception: The Department recognizes that AZA-accredited facilities participate in native species conservation, in part, by the breeding of native species in captivity; therefore, AZA-accredited facilities may breed native species for which there is a current AZA-approved SSP Program which calls for breeding in captivity at the AZA facility with prior approval by the Department. AZA accredited facilities must submit a copy of the relevant AZA SSP Breeding and Transfer Plan Recommendations. If an AZA accredited facility wishes to breed a native species that does not have an AZA-approved SSP Program or is not part of a federal and/or state species recovery plan, the facility may request authorization for breeding from the Department by including information on justification for breeding, number of young desired, and proposed final disposition of resulting progeny.
+(d) Black bears, cougars, bobcats, and wolves may only be transferred between valid Wildlife Exhibitor/Animal Entertainment Industry, Sanctuary or AZA or ZAA accredited facilities with prior approval by the Department. Raccoons and skunks may not be offered for sale, trade, barter, or exchange as a household pet in Oregon (ORS 498.029).
+(e) Black bears, cougars, bobcats, wolves, and raccoons must be held within AZA accredited facilities or facilities defined in Exhibit 1 and approved by the Department, except when:
+(A) Transported to or from licensed Oregon veterinary clinics or other ODFW-approved facilities in temporary holding or transportation caging that is pre-approved by the Department; or
+(B) With a Department letter of authorization for requested activities.
+(f) Application renewals must include a description of permanent and unique animal identification mark and mark location, and veterinary documentation of reproductive sterilization (if required when both sexes are held). No access or contact shall occur between wild animals and captive wildlife including but not limited to black bear, cougar, bobcats, wolves, raccoons and skunks or other wildlife held on a Wildlife Holding or Exhibitor/Animal Entertainment Industry or Sanctuary Permit.
+(5) The burden of proof of the hybridity of a bobcat-cross or wolf-cross animal is the responsibility of the animal owner. A wolf is considered “pure-bred” when the animal’s genetic and phenotypic makeup does not include any genetic material or characteristics of a domestic dog or other canine. A bobcat is considered “pure-bred” when the animal’s genetic and phenotypic makeup does not include any genetic material or characteristics of a domesticated cat or exotic felid species. Documentation in the form of breeding evidence by pedigree and record, records of acquisition and disposition, transactions, and sworn statements, will be required of all bobcats and wolves claimed to be hybrids, and genetic testing may be conducted by the Department. Lack of sufficient proof of hybridity as determined by the Department will genetically classify the animal as a bobcat or wolf requiring a Wildlife Holding Permit or Exhibitor/Animal Entertainment Industry or Sanctuary Permit and regulation under the conditions of these rules (635-044-0460(3), (7)(a), and 635-044-0470(2)).
+(6) Raccoons and Skunks:
+(a) No more than two raccoons may be held on a Wildlife Holding Permit. Additional animals may be held or added to a permit with Department approval.
+(b) Two or more held raccoons or skunks of different sexes requires sterilization of either sex. Animals older than 6 months of age and adult animals presently held or newly acquired must be sterilized within 30 days of rule adoption or animal acquisition. Written documentation of the completed procedure by a licensed veterinarian is required.
+(c) Held raccoons must be caged or restrained when transported beyond the permitted facility.
+(7) Gray Wolves in Captivity:
+(a) Except as provided in 635-044-0470(3), pure-bred wolves acquired after January 20, 2017 must be held in AZA accredited facilities unless specifically approved by the Department.
+(b) Current holders of captive wolves must:
+(A) Not import, export, purchase, sell or exchange any pure-bred gray wolf except with written authorization from the Department prior to transferring a pure-bred gray wolf to another facility;
+(B) Comply with the requirements of OAR 635-044-0470, and;
+(C) Possess a valid USDA permit, and;
+(D) Provide the Department a copy of their current federal permit/licenses with their Permit application or renewal.
+[ED. NOTE: To view attachments referenced in rule text, click here for PDF copy.]
+ Statutory/Other Authority: ORS 498.002, 497.228 & 496.171 - 182
+ Statutes/Other Implemented: ORS 498.002, 497.228 & 496.171 - 182
+ History:
+ DFW 3-2017, f. & cert. ef. 1-24-17
+
+==== OAR 635-044-0470 ====
+635-044-0470 
+Grandfathering the Possession of Black Bear, Cougar, Bobcat, Wolf, Raccoon, Skunk, Squirrel, Chipmunk and Other Non-game Wildlife Species Legally Held as Pets
+(1) Grandfathered wildlife may be held as pets, or for exhibitor, educational, or animal entertainment industry or sanctuary purposes, or in AZA accredited facilities as defined in these rules.
+(2) A person who legally held native wildlife (black bear, cougar, bobcat, wolf,  raccoon, skunk,  squirrel, chipmunk) or other  nongame species  in Oregon prior  to and on January 20, 2017 may continue to hold those animal(s) for the remainder of the animal(s) life provided: 
+(a) The holder submits an application for an annual Wildlife Holding, Exhibitor/Animal Entertainment Industry or Sanctuary Permit by January 21, 2018.  Included with the application, the person must:
+(A)  Remit to the Department a fee of $29.00 per species held for a Wildlife Holding permit or $105.00 for a Wildlife Exhibitor/Animal Entertainment Industry or Sanctuary Permit for the permit or permit renewal;  and
+(B) Demonstrate to the Department that the person’s black bear, cougar, bobcat, wolf, raccoon and skunk holding facility complies with any applicable city or county ordinances and any applicable federal laws.
+(C) Permit conditions may include, but are not limited to, facility design standards and actions to protect native wildlife and human safety.
+(D) Permit renewal must occur before the expiration date printed on the permit issued by the Department 
+(b) Grandfathered animals are held in Department approved facilities meeting standards defined in the Oregon Enclosure and Caging Standards for Holding Wildlife (Exhibit 1). The facilities housing legally acquired grandfathered black bears, cougars, bobcats, wolves, raccoons, skunks, squirrels, chipmunks, and other legally held non-game species, must meet the minimum facility standards defined herein in Exhibit 1 by January 21, 2018.
+(c) Grandfathered bears, cougars, bobcats, wolves, raccoons, skunks, squirrels, and chipmunks must have been acquired from a legally propagated out-of-state source or legally acquired with approved documentation that may include a valid sales receipt, Certificate of Veterinary Inspection with import permit from Oregon Department of Agriculture, valid agency transfer of ownership permit identifying the animal was propagated and born in legal captivity, or as approved by the Department. All permit holders of grandfathered animals shall provide to the Department a signed and notarized affidavit stating how the grandfathered animal(s) were legally acquired.
+(d) Grandfathered wildlife held as pets may not be bred. Two or more held grandfathered black bears, cougars, bobcats,  wolves, raccoons, skunks, squirrels, chipmunks, or other grandfathered wildlife of the same species of different sexes, requires sterilization of either sex for animals older than 6 months of age, within 30 days of rule adoption.  Written documentation of the completed procedure by a licensed veterinarian is required.   Avoidance of reproduction of nongame wildlife of different sexes can be accomplished by separation of the sexes, disposal of eggs, veterinary sterilization, etc., and is the responsibility of the wildlife holding permittee.
+(3) The only person(s) who may hold pure-bred wolves in captivity are those who, as of December 31, 2009, held a gray wolf or wolves in captivity in Oregon under previous Oregon Department of Agriculture, Class I Exotic Canine, Exotic Animal Division 603 Rules or held a valid license or registration from the U.S. Department of Agriculture, under the federal Animal Welfare Act of 1970. These persons must also obtain authority under the requirements of 635-044-0460(7) [Gray Wolves in Captivity] of this rule. 
+(a) Beyond the persons described in paragraph (2), the Department will not issue any new permits to hold a pure-bred wolf in captivity except as defined in OAR 635-044-0460 (7) (a).
+(b) Wolves legally held under the provisions of paragraph (2) may only be transferred to an AZA accredited facility unless specifically approved by the Department.
+(4) Grandfathered black bears, cougars, and bobcats may only be transferred from the original Wildlife Holding Permit to an AZA accredited facility or an approved Wildlife Exhibitor/Animal Entertainment Industry or Sanctuary facility, or as approved by the Department. Raccoons and skunks may not be offered for sale, trade, barter, or exchange as a household pet (ORS 498.029).
+ Statutory/Other Authority: ORS 498.002, ORS 497.228 & ORS 496.171 - 182
+ Statutes/Other Implemented: ORS 498.002, ORS 497.228 & ORS 496.171 - 182
+ History:
+ DFW 165-2019, amend filed 10/29/2019, effective 12/01/2019
+ DFW 147-2017, amend filed 11/29/2017, effective 12/01/2017
+ DFW 3-2017, f. & cert. ef. 1-24-17
+

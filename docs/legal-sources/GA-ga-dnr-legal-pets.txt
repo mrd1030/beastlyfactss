@@ -1,0 +1,136 @@
+SOURCE: Georgia: DNR Law Enforcement Division, Guide to Legal Pets, the native and exotic lists in full
+sourceId: ga-dnr-legal-pets
+jurisdiction: GA
+URL: https://gadnrle.org/legal-pets
+FETCHED: 2026-10-08 (plain curl with a browser User-Agent; tags stripped)
+
+READ THIS FIRST. GA-ga-wild-animals.txt carries the opening of this page and stops before the list.
+This is the whole of the two operative sections. The native list names the black bear, bobcat, gray
+fox, raccoon, red fox, river otter and skunk among mammals that "may not be held as a pet regardless
+of its origin or morphology". The exotic section carries the hybrid sentence ("all subsequent
+generations") and says outright "Wolf hybrids are not a legal pet in Georgia."
+
+Native Wildlife
+By Georgia Law, most native species of wildlife cannot be held without permits or licenses. 
+These licenses are not issued for the purpose of holding native wildlife as pets. These restrictions apply to the various species of animal, regardless of the origin or morphology.
+Exceptions
+Georgia Law allows the taking of certain native species -- namely rats, mice, armadillos, coyotes, groundhogs, beaver, freshwater turtles, venomous snakes, frogs, spring lizards, fiddler crabs, freshwater crayfish, freshwater mussels, and nutria -- because of their status as a nuisance or other reason. State regulations prohibit the holding of live armadillos, coyotes, groundhogs, and beaver without the proper permits or licenses. Certain freshwater turtles, mussels, and other species on Georgia's Protected Wildlife List cannot be possessed or collected without proper licenses.
+The following list of species native to Georgia may not be held as a pet regardless of its origin or morphology. Although extensive, this list does not include all native wildlife that is prohibited. If there is any doubt about the legality of possessing any species, contact the 
+Special Permit Unit
+ at 770-918-6408.
+Mammals
+Armadillo
+Bats, all species
+Black Bear
+Bobcat
+Chipmunk
+Cottontail Rabbit
+Coyote
+Cougar
+Flying Squirrel
+Fox Squirrel
+Gray Fox
+Gray Squirrel
+Groundhog
+Marsh Rabbit
+Mink
+Mole
+Muskrat
+Opossum
+Pocket Gopher
+Raccoon
+Red Fox
+River Otter
+Skunk
+Swamp Rabbit
+Weasel
+White-tailed Deer
+Reptiles and Amphibians
+Alligator
+Alligator Snapping Turtle
+Black Racer
+Bog Turtle
+Box Turtle (Eastern, Florida, Gulf Coast, Three-toed)
+Brown Snake
+Coachwhip
+Corn Snake
+Crayfish Snake (Glossy, Striped)
+Crowned Snake (Southeastern, Central Florida)
+Diamondback Terrapin
+Earth Snake (Rough, Smooth)
+Fence Lizard
+Flatwoods Salamander
+Florida Worm Lizard
+Garter Snake
+Georgia Blind Salamander
+Glass Lizard (Eastern, Island, Mimic, Slender)
+Gopher Tortoise
+Green Anole
+Green Salamander
+Hellbender
+Hognose Snake (Eastern, Southern)
+Indigo Snake
+Kingsnake (Black, Eastern, Mole, Scarlet)
+Map Turtle (Alabama, Barbour's, Common)
+Milksnake
+Mud Snake
+One-toed Amphiuma
+Pigeon Mountain Salamander
+Pine Snake (Florida, Northern)
+Pine Woods Snake
+Queen Snake
+Rainbow Snake
+Rat Snake (Black, Gray, Yellow)
+Redbellied Snake
+Ribbon Snake
+Ringneck Snake
+Rough Green Snake
+Scarlet Snake
+Sea Turtle (Green, Hawksbill, Leatherback, Loggerhead, Ridley)
+Six-lined Racerunner
+Skink (Broadhead, Coal, Five-lined, Southeastern Five-lined, Ground, Mole)
+Spotted Turtle
+Striped Newt
+Water Snake (Banded, Brown, Florida Green, Northern, Redbelly)
+Worm Snake
+Birds and Fishes
+All species of birds encountered in the wild in Georgia are protected by state and federal laws except English sparrows, European starlings, and pigeons.  
+All species of fish native to the waters of Georgia are protected.
+Non-Native Wild Animals/Exotics
+The animals listed below are examples of the exotic species regulated under Georgia Law. The Department should be consulted before any exotic animals which are not normally domesticated in Georgia are acquired. Hybrids or crosses between any combination of domestic animals, wildlife, or regulated wild animals and all subsequent generations are regulated in Georgia and may not be held without a license. The exotic species listed below, except where otherwise noted, may not be held as pets in Georgia. This list is not all inclusive.
+Marsupials (wallabies, kangaroos, 
+sugar gliders
+, etc.); all species
+Note
+: 
+Sugar gliders
+ are legal as pets if the owner possesses valid documentation that the animal originated from a source inspected and regulated by the United States Department of Agriculture.
+Insectivores (shrews, moles, hedgehogs, tenrecs, etc.); all species
+Lemurs; all species
+Bats; all species
+Primates (monkeys, apes, etc.); all species
+Sloths, armadillos, etc.; all species
+Pangolins or scaly anteaters; all species
+Rabbits and hares; all species except those normally domesticated
+Rodents (capybaras, cavies, prairie dogs, degus, etc.); all species except those normally domesticated in Georgia such as hamsters, gerbils, and guinea pigs
+Whales, dolphins, etc.; all species
+Carnivores 
+(weasels, ferrets, foxes, cats, bears, wolves, etc.)
+; all species.
+Note
+: European 
+ferrets 
+are legal as pets if neutered by 7 months old and vaccinated against rabies. 
+Wolf hybrids
+ are not a legal pet in Georgia. Most 
+exotic cat hybrids
+, such as a savannah cat, are not a legal pet in Georgia.
+Aardvark; all species
+Elephants; all species
+Conies; all species
+Manatee, dugong; all species
+Ungulates (hoof stock); all species except American bison, water buffalos, and llamas
+Rhinoceros
+Wart hog
+Hippopotamus
+Hawks, eagles, vultures, etc.; all species

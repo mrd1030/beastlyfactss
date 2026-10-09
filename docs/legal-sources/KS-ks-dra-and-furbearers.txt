@@ -1,0 +1,153 @@
+SOURCE: Kansas: K.S.A. 32-1302 to 32-1304 (dangerous regulated animals), K.A.R. 115-5-2 (furbearers, possession)
+        and K.A.R. 115-20-4 (possession permit for mountain lion, wolf and bears)
+sourceId: ks-32-1301 / ks-115-5-2 / ks-115-20-4
+jurisdiction: KS
+URL: https://www.kslegislature.gov/li/b2025_26/statute/032_000_0000_chapter/032_013_0000_article/032_013_0002_section/032_013_0002_k/ (and _0003_, _0004_)
+     https://www.law.cornell.edu/regulations/kansas/K-A-R-115-5-2
+     https://www.law.cornell.edu/regulations/kansas/K-A-R-115-20-4
+FETCHED: 2026-10-08 (kslegislature.gov by plain curl with -L; Cornell LII by plain curl)
+
+READ THIS FIRST. KS-ks-exotic-and-native.txt carries the definition in 32-1301 but not what the act
+does with it. 32-1302(c) bars anyone from taking possession of a dangerous regulated animal after 1 July
+2006 unless they are a USDA licensee maintaining the inventory they held that day, so a bear is closed
+to a new keeper. 115-20-4 is the possession permit for the mountain lion, wolf, black bear and grizzly,
+which "Any individual may apply" for, but it cannot reopen what 32-1302 closed for bears. For
+furbearers, 115-5-2(b) lets a live furbearer taken in a Kansas season be held only to the last day of
+that season, which rules out a wild-caught pet; whether a captive-bred furbearer bought out of state
+is covered by the 32-1002(b) exception for animals "legally taken outside this state" is the open
+Kansas question the handoff already names.
+
+32-1302.   Unlawful acts; compliance with USDA regulations; USDA license. (a) Except as provided in this section, it is unlawful for a person to possess, slaughter, sell, purchase or otherwise acquire a dangerous regulated animal. 
+(b) On and after October 1, 2006, a person who possesses a dangerous regulated animal shall be in compliance with regulations promulgated by the United States department of agriculture for dangerous regulated animals, except non-native, venomous snakes, under the animal welfare act, public law 89-544, as amended and in effect on July 1, 2006, and the regulations and standards adopted under such act in effect on July 1, 2006, relating to operations, animal health and husbandry; and to provide adequate veterinary care for dangerous regulated animals. All dangerous regulated animals shall be caged in compliance with the provisions set forth in K.S.A. 32-1306, and amendments thereto. 
+(c) Except as provided in subsection (d), a person shall not take possession of a dangerous regulated animal or allow dangerous regulated animals in such person's possession to breed. 
+(d) A person who possesses a valid United States department of agriculture license, is in compliance with the United States department of agriculture animal welfare act, regulations and standards on July 1, 2006, and, within 10 years preceding July 1, 2006, has not been convicted of a felony under the laws of Kansas or a crime under a law of another jurisdiction which is substantially the same as a felony, may breed, purchase or otherwise acquire new dangerous regulated animals after July 1, 2006, in order to: 
+(1) Maintain the operating inventory of dangerous regulated animals possessed on July 1, 2006; 
+(2) sell dangerous regulated animals to other United States department of agriculture licensed and compliant facilities within Kansas for replacement purposes as provided in paragraph (1); and 
+(3) sell dangerous regulated animals outside Kansas. 
+ History:  L. 2006, ch. 131, § 2; July 1. 
+ 32-1303.   Registration with local animal control authority; notification; microchip implant; inspection. (a) On and after September 1, 2006, a person who possesses a dangerous regulated animal shall notify, in writing, and register the dangerous regulated animal with the local animal control authority. 
+(b) The notification shall include the person's name, address, telephone number and a complete inventory of each dangerous regulated animal that the person possesses. The inventory shall include the following information: Number and species of each dangerous regulated animal; the microchip identification number and manufacturer of such microchip for each dangerous regulated animal, if available; the exact location where each dangerous regulated animal is kept; the age, sex, color, weight, scars and any distinguishing marks of each dangerous regulated animal; and the name of any person who is a registered designated handler. 
+(c) When a person who possesses a dangerous regulated animal has a microchip implanted in such animal for identification, the name of the microchip manufacturer and the microchip identification number shall be provided to the local animal control authority. If a dangerous regulated animal is sedated for any reason and such animal does not have a microchip implanted, a microchip shall be implanted in such animal. Within 30 days after the microchip is implanted, the name of the microchip manufacturer and the microchip identification number shall be provided to the local animal control authority. Within 30 days of acquisition, a person acquiring ownership of an offspring with a microchip implanted shall comply with microchip information reporting requirements of this subsection. 
+(d) A local animal control authority may inspect the premises where dangerous regulated animals are physically located. 
+ History:  L. 2006, ch. 131, § 3; July 1. 
+ 32-1304.   Fees; liability coverage or bond. (a) The local animal control authority may charge the following annual fees: 
+(1) Premises inspection fee not more than $100. 
+(2) Dangerous regulated animal registration fee, per animal, not more than $50. The maximum amount charged for such animal registration per person is $500. 
+(3) Additional premise inspection fee, if the person acquires and possesses another type of dangerous regulated animal, not more than $100. 
+(b) A certificate of registration shall be issued by the local animal control authority to the person for each dangerous regulated animal and inspection upon payment of the fee. 
+(c) Any person who possesses a dangerous regulated animal shall maintain liability insurance coverage or secure a bond in an amount of not less than $250,000 for each occurrence for liability damages for destruction of or damage to property and death or bodily injury to a person caused by the dangerous regulated animal. The person possessing the animal shall provide a copy of the policy for liability insurance or proof of the bond to the local animal control authority. Any insurer shall notify the local animal control authority, in writing, of any expiration, reduction or cancellation of liability insurance, furnished as required by this subsection, not later than 10 days before the expiration, reduction or cancellation takes effect. Any surety company who secures the performance of the bond shall notify the local animal control authority, in writing, of any expiration, reduction or cancellation of the bond, furnished as required by this subsection, not later than 10 days before the expiration, reduction or cancellation takes effect. 
+(d) Any fees charged and collected shall be retained by the local animal control authority to be used to implement the provisions of this act. 
+ History:  L. 2006, ch. 131, § 4; July 1. 
+ 
+==== K.A.R. 115-5-2 ====
+Kan. Admin. Regs. § 115-5-2 - Furbearers and coyotes; possession, disposal, and general provisions 
+ Kan. Admin. Regs. § 115-5-2 - Furbearers and coyotes; possession, disposal, and general provisions 
+ State Regulations 
+ Compare
+ (a) Legally taken
+ raw furs, pelts, skins, carcasses, or meat of furbearers may be possessed
+ without limit in time. 
+ (b) Live
+ furbearers legally taken during a furbearer season may be possessed only
+ through the last day of the season in which taken. 
+ (c) Legally acquired skinned carcasses and
+ meat of furbearers may be sold or given to and possessed by another, and
+ legally acquired raw furs, pelts, and skins of furbearers may be given to and
+ possessed by another, if a written notice that includes the seller's or donor's
+ name, address, and furharvester license number accompanies the carcass, pelt,
+ or meat. A bobcat, otter, or swift fox tag as described in subsection (f) shall
+ meet the requirements of written notice. 
+ (d) Legally taken raw furs, pelts, skins, or
+ carcasses of coyotes or legally taken live coyotes may be possessed without
+ limit in time. 
+ (e) Any person in
+ lawful possession of raw furbearer or coyote furs, pelts, skins, or carcasses
+ may sell or ship or offer for sale or shipment the same to licensed fur dealers
+ or any person legally authorized to purchase raw fur-bearer or coyote furs,
+ pelts, skins, or carcasses. 
+ (f) 
+ Each bobcat, otter, or swift fox pelt legally taken in Kansas shall be
+ submitted to the department so that an export tag provided by the department
+ can be affixed to the pelt. 
+ (1) The pelt of
+ any bobcat, otter, or swift fox taken in Kansas shall be presented to the
+ department for tagging within seven days following closure of the bobcat,
+ otter, or swift fox hunting and trapping season. 
+ (2) Each pelt presented for tagging shall be
+ accompanied by the furharvester license number under which the pelt was
+ taken. 
+ (g) Properly
+ licensed persons may legally salvage fur-bearers and coyotes found dead during
+ the established open seasons for hunting or trapping of furbearers or coyotes.
+ Salvaged furbearers and coyotes may be possessed or disposed of as authorized
+==== K.A.R. 115-20-4 ====
+Kan. Admin. Regs. § 115-20-4 - Possession of certain wildlife 
+ Kan. Admin. Regs. § 115-20-4 - Possession of certain wildlife 
+ State Regulations 
+ Compare
+ (a) Any person
+ possessing one of the following animals shall be required to obtain a
+ possession permit: 
+ (1) mountain lion,
+ Felis concolor Linnaeus; 
+ (2) wolf, Canis lupus
+ Say; 
+ (3) black
+ bear, Ursus americanus Pallas ; and 
+ (4) grizzly bear, Ursus arctos
+ horribilis Ord. 
+ (b) Any individual may apply to the secretary
+ for a possession permit. The applicant shall provide the following information:
+ (1) the name of the applicant; 
+ (2) the address of the applicant; 
+ (3) the telephone number of the applicant;
+ (4) the species and number of
+ wildlife for which the possession permit is requested; 
+ (5) the purpose for which the wildlife would
+ be possessed; 
+ (6) proof of
+ purchase or receipt; and 
+ (7) other
+ information as requested by the secretary. 
+ (c) Each permittee shall submit a report to
+ the department describing changes in wildlife possession as authorized by the
+ possession permit. The report shall be submitted within five days after the
+ change occurred, except that the escape of any possessed wildlife shall be
+ reported within 24 hours. Changes for which a report shall be required include:
+ (1) any possessed wildlife sold or otherwise
+ disposed of; 
+ (2) any wildlife
+ purchased or otherwise ac-quired; 
+ (3) the death of any possessed wildlife; or
+ (4) the escape of any possessed
+ wildlife. 
+ (d) Each
+ permittee shall only possess wildlife species and numbers as authorized in the
+ possession permit. 
+ (e) The
+ possession permit shall be valid from date of issue and shall expire upon
+ request of the permittee or as so ordered by any legal authority. 
+ (f) The possession of wildlife listed in
+ subsection (a) shall be subject to all federal and state laws and regulations
+ and to all local ordinances. 
+ (g) 
+ The provisions of this regulation shall not apply to: 
+ (1) zoos; 
+ (2) licensed veterinarians; 
+ (3) transportation of such wildlife through
+ the state; 
+ (4) possession of such
+ wildlife when the possession shall not exceed five days; or 
+ (5) such wildlife possessed for scientific,
+ educational or display purposes by: 
+ (A) a
+ school or university; or 
+ (B) a
+ circus or other similar business enterprise offering public viewing
+ opportunity. 
+Notes 
+ Kan. Admin. Regs.
+ §
+ 115-20-4 
+ Authorized by K.S.A. 1990
+ Supp. 

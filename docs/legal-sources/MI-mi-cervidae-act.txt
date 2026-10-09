@@ -1,0 +1,60 @@
+# Michigan Privately Owned Cervidae Producers Marketing Act, MCL 287.952 and 287.955
+
+sourceId: mi-287-955
+jurisdiction: MI
+url: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-287-955
+fetched: 2026-10-08
+fetch notes: legislature.mi.gov now answers plain curl with a browser User-Agent (it refused this container in earlier sittings); tags stripped.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+PRIVATELY OWNED CERVIDAE PRODUCERS MARKETING ACT (EXCERPT)
+Act 190 of 2000
+287.952 Definitions.
+Sec. 2.
+As used in this act:
+(a) "Business plan" means a written document of intent that a person submits to the department that defines the methods, protocols, or procedures that the person intends on implementing to be in compliance with this act.
+(b) "Biosecurity" means measures, actions, or precautions taken to prevent the transmission of disease in, among, or between free-ranging and privately owned cervidae species.
+(c) "Cervidae livestock facility" means a privately owned cervidae livestock operation on privately controlled lands capable of holding cervidae species.
+(d) "Cervidae livestock operation" means an operation that contains 1 or more privately owned cervidae species involving the producing, growing, propagating, using, harvesting, transporting, exporting, importing, or marketing of cervidae species or cervidae products under an appropriate registration.
+(e) "Cervidae products" means any products, co-products, or by-products of cervidae, including antler, antler velvet, meat, or any part of the animal.
+(f) "Cervidae species" means members of the cervidae family including, but not limited to, deer, elk, moose, reindeer, and caribou.
+(g) "Department" means the Michigan department of natural resources.
+(h) "Director" means the director of the Michigan department of natural resources or his or her designee.
+(i) "Farm" or "farm operation" means those terms as defined in the Michigan right to farm act, 1981 PA 93, MCL 286.471 to 286.474.
+(j) "Flush" or "flushed" means to move or chase from a cervidae livestock facility.
+(k) "Identify" means any documentable system or process that allows a person to recognize as separate or different an individual animal.
+(l) "Law enforcement officer" means a person appointed by the state or a local governmental unit who is responsible for the enforcement of the criminal laws of this state.
+(m) "Owner" means the person who owns or is responsible for a cervidae livestock operation.
+(n) "Person" means an individual, corporation, limited liability corporation, partnership, association, joint venture, or other legal entity.
+(o) "Release" means to cause or allow an animal to become located outside the perimeter fence of a cervidae livestock facility not under the direct control of the owner.
+History:
+2000, Act 190
+, Eff. June 1, 2001 
+          ;--
+        Am. 
+
+[...]
+
+PRIVATELY OWNED CERVIDAE PRODUCERS MARKETING ACT (EXCERPT)
+Act 190 of 2000
+287.955 Cervidae livestock operation; registration; records; compliance with facility standards.
+Sec. 5.
+(1) A person shall not possess cervidae or engage in a cervidae livestock operation unless he or she obtains from the department a cervidae livestock facility registration or unless otherwise exempt by rule or law. If the activity in which the cervidae livestock facility is engaged is required to be regulated under any other act, registration under this act does not exempt the person or cervidae livestock facility from requirements imposed under any local, state, or federal regulation. Zoos accredited under the American zoological association or other accreditations or standards determined appropriate by and acceptable to the department are exempt from this act.
+(2) A person registered under this act shall keep and maintain records of production, purchases, or imports in order to establish proof of ownership and shall keep any other records required under standards incorporated by reference under section 6. A person transporting cervidae species shall produce documentation that contains the origin of shipment, registration or permit copies or documentation, documentation demonstrating shipping destination, and any other proof that may be required under the animal industry act, 1988 PA 466, MCL 287.701 to 287.745, upon demand of the director or a law enforcement officer.
+(3) Until July 1, 2008, a cervidae livestock facility registered prior to the effective date of the amendatory act that added this subsection must comply with the facility standards contained in "Operational Standards for Registered Privately Owned Cervid Facilities", published by the Michigan department of agriculture, (May 2000). A cervidae livestock facility in existence on or before the effective date of the amendatory act that added this subsection shall be in compliance with the facility standards by July 1, 2008, which are contained in "Operational Standards for Registered Privately Owned Cervidae Facilities" published by the Michigan department of natural resources, (revised December 2005), adopted by the Michigan commission of agriculture on January 9, 2006, and adopted by the natural resources commission on January 12, 2006, and are incorporated by reference.
+History:
+2000, Act 190
+, Eff. June 1, 2001 
+          ;--
+        Am. 
+2006, Act 561
+, Imd. Eff. Dec. 29, 2006 
+Compiler's Notes:
+ For transfer of certain powers and duties under the cervidae act from the department of agriculture, or its director, to the department of natural resources by type II transfer, see E.R.O. No. 2004-2, compiled at MCL 287.981.
+Acceptable Use Policy
+Privacy Policy
+DMCA P

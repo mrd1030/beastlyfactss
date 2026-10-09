@@ -1,0 +1,20 @@
+SOURCE: Florida: FWC Captive Wildlife frequently asked questions, the hybrid answer
+sourceId: fl-fwc-captive-faq
+jurisdiction: FL
+URL: https://myfwc.com/license/captive-wildlife/faq/
+FETCHED: 2026-10-08 (plain curl with a browser User-Agent; the answers sit in collapsed accordion markup)
+
+READ THIS FIRST. The rule text at 68A-6.002(1)(d) regulates a wildlife and domestic hybrid at the wild
+parent's class when it is indistinguishable from that parent. This is the agency saying how it applies
+that to the cat hybrids: it does not regulate them.
+
+==== "Do I need a permit for a hybrid wild/domestic animal?" ====
+
+Do I need a permit for a hybrid wild/domestic animal? Hybrids resulting from the cross between
+wildlife and domestic animals which are substantially similar in size, characteristics, and behavior
+so as to be indistinguishable from the wild animal shall be regulated as wildlife at the higher and
+more restricted class of the wild parent. Wolf-dog hybrids are regulated on a case-by-case basis.
+Wolf-dogs considered to be indistinguishable from a wolf will be regulated as a Class II canid and
+will require a Class II license for possession. Savannah cats, Bengal cats, and Chausie cats are
+considered domesticated species and are not regulated by the Captive Wildlife Office. Do I need a
+permit for

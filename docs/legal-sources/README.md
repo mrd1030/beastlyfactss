@@ -5,9 +5,14 @@ research sitting can grep a statute instead of refetching it. Every file carries
 header with its `sourceId`, jurisdiction, official URL, and the date it was fetched.
 
 This is a cache, not a citation. The matrix cites the official URL, and a cell's
-`verifiedOn` date means someone read the source on that date. If you are setting a
-fresh `verifiedOn`, refetch. Use these files to answer "what does the statute say
-about this species", not to claim a new verification date.
+`verifiedOn` date means someone read the source on that date.
+
+Every source in the matrix was re-read against its live page on 2026-10-01 (owner,
+2026-10-08). A new animal read from a cached file therefore carries
+`verifiedOn: "2026-10-01"`, and a research sitting reads from the cache rather than
+refetching. Fetch only where no cached file reaches the animal, and date that cell
+the day it was fetched. The monthly `scripts/check-legal-sources.mjs` run is what
+moves verification dates forward; a research sitting never does.
 
 ## What is here
 
@@ -74,6 +79,7 @@ about this species", not to claim a new verification date.
 | `IN-in-312-iac-9.txt` | Indiana's three regimes: the native herp rule at 9-5, the invertebrate exemption at 9-9-5, and the permit classes at 9-11 |
 | `OK-ok-wildlife-rules.txt` | Oklahoma's exemption list, its reptile and amphibian part, the commercial turtle rule, and the four statutes that frame them |
 | `VT-vt-domestic-list.txt` | Vermont's third list, the one earlier sittings could not read; it decides the parrots, the rabbit, the dog and the cat |
+| `VT-vt-reg-881.txt` | Vermont Regulation 881 in full, whose § 5.2 has a second sentence the other VT files leave out: a permit for purposes other than research or education issues on a finding that the animal does not conflict with the rule's purpose |
 | `WI-wi-ch-169.txt` | Wisconsin's captive wildlife chapter: the definitions, the exemptions at 169.04(4), and the harmful wild animal power at 169.11 |
 | `NC-nc-wildlife-definitions.txt` | The one definition that answers North Carolina, plus the captivity licence it does not reach |
 | `SC-sc-wildlife-rules.txt` | South Carolina's import chapter and its 2021 native reptile rules, which override the pet-trade exemption |
@@ -100,6 +106,65 @@ about this species", not to claim a new verification date.
 | `ND-nd-nontraditional-livestock.txt` | The North Dakota category system, which is alive at article 48.1-09 and not repealed, plus the importation rule and the catch-all board review for anything in no category |
 | `SD-sd-nondomestic-mammals.txt` | South Dakota's one-word answer: the statute bars nondomestic MAMMALS, so reptiles and invertebrates are outside the scheme entirely, and the entry permit is free and by telephone |
 | `WV-wv-two-lists-and-a-native-bar.txt` | West Virginia's adopted dangerous wild animal list, which most sources say does not exist, and the reptile rule that bans the state's own snakes and lizards while leaving exotics alone |
+| `TN-tn-1660-01-18.txt` | Tennessee's rule chapter that earlier sittings could not read: no mammal added to Class I, the monk parakeet added to Class V, and cross-class hybrids put in the least restrictive class |
+| `AZ-az-r12-4-401.txt` | Arizona's hybrid wildlife definition, which takes every wild and domestic cross out of wildlife, and the relettered R12-4-406(C) and (D) it governs |
+| `FL-fl-fwc-captive-faq.txt` | FWC's answer on wild and domestic hybrids, naming the Savannah, Bengal and Chausie as domesticated and unregulated |
+| `AR-ar-addenda-mammals.txt` | The mammal rows of Arkansas Code Addenda R1.01 to R1.03, extracted from the full codebook, plus R1.03(B), "prohibited until evaluated", which bars any species on none of the three lists |
+| `DE-de-7-c7-sc6.txt` | Del. Code tit. 7, ch. 7, subchapter VI, the furbearer subchapter that bars possessing a live red fox, raccoon or skunk, with DNREC's notice on keeping wild animals as pets |
+| `GA-ga-dnr-legal-pets.txt` | Georgia DNR's Guide to Legal Pets: the native species that "may not be held as a pet regardless of its origin or morphology", and the wolf hybrid and hybrid-generation statements |
+| `ID-id-25-236.txt` | Idaho Code § 25-236, the Agriculture statute barring possession of "any fox, skunk or raccoon" outside fur farms and public institutions |
+| `IN-in-312-9-11-class-ii.txt` | 312 IAC 9-11-1, -2, -3 and -7: applicability, first permit and renewal, and the Class II list (Indiana's furbearers plus fifteen small cats) that IN-in-312-iac-9.txt lacked |
+| `KS-ks-dra-and-furbearers.txt` | K.S.A. 32-1302 to 32-1304, the dangerous regulated animal sections, with K.A.R. 115-5-2 on possessing furbearers and K.A.R. 115-20-4, the possession permit for mountain lions, wolves and bears |
+| `LA-la-fox-and-quadrupeds.txt` | La. R.S. 56:8(92) and (151) in full, LAC 76:V.113 (the live fox rule that bars any fox taken outside Louisiana), 115.B to D.1 (with the wolf-dog expiry) and 131.D.3 (wildlife rescuer) |
+| `ME-me-c7-wolf-hybrids.txt` | 09-137 CMR ch. 7, the wolf hybrid provisions and the § 7.07 permit types |
+| `MI-mi-wolf-dog-and-carnivores.txt` | Michigan's Wolf-dog Cross Act, Large Carnivore Act MCL 287.1103 and 287.1104, and R 299.1027, the state endangered mammal list |
+| `MN-mn-17-351.txt` | Minn. Stat. §§ 17.351 and 17.352, fur farming, with § 97A.105 subd. 1 on game farms |
+| `MO-mo-3csr10-9-223.txt` | Missouri 3 CSR 10-4.110(4), 10-9.223(2) and (3), the import bar on live raccoons, foxes and coyotes, and the Approved Confined Wildlife list |
+| `MS-ms-captivity-and-nuisance.txt` | Mississippi Rule 8.4 (game and furbearing animals in captivity, from Cornell), Rule 7.1 (nuisance animals, the live fox and skunk bar) and the operative parts of Rule 8.3 as revised April 2025 |
+| `MT-mt-rabies-and-menagerie.txt` | MCA §§ 50-23-101 and -102, the rabies-law ban on possessing a skunk, fox, raccoon or bat, and §§ 87-4-801 to -804, the wild animal menagerie permit for bears and large cats |
+| `NJ-nj-7-25-10.txt` | N.J.A.C. 7:25-10, the captive game animal regulations, with the Division's captive game synopsis and its policy on importing captive rabies vector species |
+| `OR-or-635-044.txt` | OAR 635-044-0430 to 0470, protected wildlife and the holding of live native wildlife |
+| `TX-tx-fur-and-threatened.txt` | Tex. Parks & Wild. Code ch. 71 on fur-bearing animals, including § 71.005(c), and the state threatened and endangered species list |
+| `UT-ut-r58-14-3.txt` | Utah Admin. Code R58-14-3, the Department of Agriculture and Food's raccoon and coyote possession bar |
+| `VT-vt-20-ch-193.txt` | 20 V.S.A. chapter 193, Domestic Pet or Wolf-Hybrid Control, §§ 3541 and 3581 |
+| `WA-wa-rabies-and-endangered.txt` | WAC 246-100-197, the rabies rule barring acquiring or importing any bat, skunk, fox, raccoon or coyote, with RCW 16.30 and RCW 77.15.120 |
+| `WI-wi-nr-16.txt` | Wis. Stat. §§ 169.01, 169.15 and 169.18 and Wis. Admin. Code NR 16.11 and NR 16.15, captive wild animal licensing and the wolf hybrid provisions |
+| `WV-wv-19-34-dwa-act.txt` | W. Va. Code §§ 19-34-2, -4, -5 and -6, the Dangerous Wild Animals Act around the board's list: the ban, the pre-rule-only permit, and the exclusion of native wildlife |
+| `WY-wy-23-1-101-definitions.txt` | Wyo. Stat. § 23-1-101(a) definitions (furbearing, predatory, protected and trophy game animals) and § 23-2-305, the license to capture furbearers for domestication |
+| `AZ-az-r12-4-406-text.txt` | R12-4-406 verbatim from Cornell LII, the text behind the summary in AZ-az-r12-4-406.txt; read the second letter where two appear |
+| `WA-wa-16-30-020-and-220-450-030.txt` | RCW 16.30.020, the dangerous wild animal exemptions in full, and WAC 220-450-030 as renumbered, with the native cervid bar at (2) and its research and display route at (8) |
+| `OH-oh-935-02-to-10.txt` | R.C. 935.02 to 935.101: no new dangerous wild animal since 2012, the small primates (and lemurs) sent to registration at 935.041, and the restricted snake permit still open to new keepers |
+| `VA-va-29-1-521-and-native-list.txt` | Va. Code § 29.1-521(A)(10) verbatim, the native list lines that make the gray squirrel, opossum, deer and timber rattlesnake natives (and the cougar not one), and the full 4VAC15-30-40 table |
+| `DE-de-903-and-c72-text.txt` | The text behind DE-de-903.txt: § 7201 with its flat bar on nonnative venomous snakes, and regulation 903 in full, including the 7.1 Individual Permit for an exotic kept as a pet |
+| `ID-id-deleterious-and-classification.txt` | IDAPA 02.04.27 deleterious exotic list in full (AZA-only big cats and primates, the four exempt primate entries), 13.01.06 big game and unprotected classes, and § 25-3701 domestic cervidae |
+| `IA-ia-717F-4-and-170-farm-deer.txt` | Iowa 717F.3 and 717F.4, the dangerous wild animal ban and its 2007 registration grandfather, and ch. 170, which lets a landowner keep whitetail only as farm deer behind a certified fence or on a hunting preserve |
+| `KY-ky-082-grandfather-083-cervids.txt` | 2:082 §§ 5 and 6 (exemptions and the 13 July 2005 grandfather for inherently dangerous exotics), 2:083 captive cervid permits with no new noncommercial permit after 28 February 2016, and the KDFWR pit viper list |
+| `MO-mo-578-023-and-4-117.txt` | RSMo § 578.023 (the dangerous wild animal registration list), the 4.117 prohibited species list, the furbearer definition and the Class III (cervid) breeder rules |
+| `SC-sc-47-2-and-native-reptile-regs.txt` | Title 47 ch. 2 (Panthera cats including cougars, non-native bears and great apes barred since 1 January 2018), § 50-11-1910 (no sale of live deer), and Regs 123-151.3, 151.4 and 152 on native reptiles and the alligator |
+| `AR-ar-20-19-501-large-carnivores.txt` | Ark. Code §§ 20-19-501 to 511: bears, lions and tigers barred except animals held by 12 August 2005 and permitted within 180 days |
+| `NE-ne-37-477-and-37-806.txt` | § 37-477 in full (captive permit for wild birds and mammals and for any federally listed species; the Felidae ban) and § 37-806(1), which adopts every federal endangered and threatened listing |
+| `CA-ca-5-60.txt` | 14 CCR § 5.60, the sport-take rule for California native reptiles: two each, no license for a rattlesnake, zero for the red diamond |
+| `FL-fl-68a-6-017.txt` | 68A-6.017, the venomous reptile permit: 18 or older, 1,000 hours with the family, an exam and an inspected facility, open to individuals |
+| `NC-nc-14-article-55.txt` | N.C. Article 55 in full: venomous reptiles, the five named large constrictors and every crocodilian but the American alligator, all lawful if housed and labeled to the statute |
+| `AR-ar-codebook-reptiles-alligator.txt` | Codebook rows the other two AR files lack: 09.07, the 09.17 venomous permit and F1.08, R1.02's venomous genera, and Chapter 12's bar on alligators and every other crocodilian |
+| `WY-wy-50cfr17-11-rows.txt` | The 50 CFR 17.11 rows that Wyoming, Missouri and South Carolina pick up by reference: tiger and Lemuridae endangered, lion endangered or threatened by subspecies, American alligator and common caiman threatened by similarity of appearance |
+| `AR-ar-20-19-601-primates.txt` | Ark. Code §§ 20-19-601 to 610: apes, baboons and macaques barred, every other primate lawful with county sheriff registration within 30 days |
+| `AR-ar-addenda-amphibians.txt` | The amphibian rows of Arkansas Addenda R1.02 and R1.03, R1.01's closing clauses, and R1.03's three footnotes in full, including the *** note that limits the axolotl to animals owned before 16 May 2024 and registered by 30 June 2025 |
+| `FL-fl-68a-25-002.txt` | 68A-25.002(1), the American alligator possession bar, permit only, with the exhibitor transport and sale provisions |
+| `TX-tx-game-deer-alligator.txt` | Texas natives the four famous rules miss: the live game animal bar (63.002), the game breeder license that covers gray squirrels (ch. 44), the deer breeder permit (43.351 to 43.357) and the live alligator bar (31 TAC 65.353) |
+| `AL-al-220-2-06-game-animals.txt` | Rule 220-2-.06, the game animal list: opossum, squirrel, deer, mountain lion and alligator among them |
+| `KS-ks-32-701-47-2101-and-sinc-reptiles.txt` | K.S.A. 32-701 (squirrel is small game, opossum a furbearer, deer big game), 47-2101 (domesticated deer permit, which names companionship) and the 115-15-2 reptile list with the timber rattlesnake |
+| `LA-la-deer-and-alligator-rules.txt` | LAC 76:V.107.B.8 (no new game breeder license for deer after 4 October 2002), 76:V.117 (no import of live deer) and 76:V.701 (live alligators only for licensed farmers, exhibitors and permitted displays) |
+| `WI-wi-nr-10-02.txt` | NR 10.02 and 10.04, the protected list (cougar, flying squirrel, timber rattlesnake) and the unprotected list (opossum) |
+| `WI-wi-95-55.txt` | Wis. Stat. § 95.55, the DATCP registration every keeper of farm-raised deer needs, outside the DNR captive wildlife chapter |
+| `OR-or-635-049.txt` | OAR 635-049, the captive cervid license: Type 1 for white-tailed deer and five other species, no live cervid imports |
+| `MI-mi-cervidae-act.txt` | MCL 287.952 and 287.955: anyone possessing a deer in Michigan needs a DNR cervidae livestock facility registration |
+| `MT-mt-87-4-406-407-alternative-livestock.txt` | MCA 87-4-406 and 407: a privately owned white-tailed deer is alternative livestock, kept only on a ranch licensed before 7 November 2000, with no license granted since |
+| `WV-wv-fur-bearers-and-captive-cervids.txt` | § 20-1-2 fur-bearing animals (the opossum among them) and the Captive Cervid Farming Act, whose two license classes are both for breeding or harvest |
+| `IN-in-312-9-10-4-game-breeder.txt` | 312 IAC 9-10-4, the game breeder license: gray squirrel and opossum among its species, no deer |
+| `MS-ms-40-2-8-2-deer-enclosures.txt` | Rule 8.2: a live white-tailed deer only by MDWFP permit, in a registered high-fenced enclosure or a breeding pen inside 300 acres, no sale and no import |
+| `OK-ok-2-6-504-farmed-cervidae.txt` | 2 O.S. § 6-504: a farmed cervidae facility license from the Department of Agriculture to breed, possess or raise cervidae for commercial or noncommercial purposes |
+| `TN-tn-70-4-208.txt` | Tenn. Code § 70-4-208, the skunk statute outside the five-class scheme: no import, possession, sale or transfer of any live skunk, zoos and research institutions excepted, rehabilitators for release only |
 
 ## Reading the awkward ones
 
@@ -330,7 +395,7 @@ not on the sites, so a person with a browser can open all of them.
 | `drive.google.com` | CPW publishes its species lists here | Fetch `https://drive.google.com/uc?export=download&id=<id>`; the ids are in the accordion markup, not in any `.pdf` link |
 | `revisor.mn.gov` | Works with plain curl, occasional TLS handshake failure on the first try | Retry once. Statutes at `/statutes/cite/<section>`, rules at `/rules/<part>/`; a bare chapter number gives only the table of parts |
 | `secure.sos.state.or.us` | Rules serve fine from `view.action?ruleNumber=<rule>`; `displayDivisionRules.action` returns a near-empty page | Probe rule numbers one at a time; a missing rule answers "not found" |
-| `publications.tnsosfiles.com`, `sos.tn.gov`, `tnsos.org` | 403 "Request blocked" from CloudFront on every path, with or without a browser User-Agent and Referer. This is the whole of Tennessee's rules and proclamations publishing | No workaround found. `www.tn.gov` IS reachable, so read the TWRA pages instead, and cross-check the statutes against two reproductions |
+| `publications.tnsosfiles.com`, `sos.tn.gov`, `tnsos.org` | 403 "Request blocked" from CloudFront on every path, with or without a browser User-Agent and Referer. This is the whole of Tennessee's rules and proclamations publishing | `www.tn.gov` IS reachable, so read the TWRA pages instead, and cross-check the statutes against two reproductions. The rules themselves are on Cornell LII: chapter 1660-01-18 is at `law.cornell.edu/regulations/tennessee/title-1660/subtitle-1660-01/chapter-1660-01-18`, one page per rule |
 | `statutes.capitol.texas.gov` | Angular SPA. Every `/Docs/` path returns the same 250KB shell, so a fetch looks successful and contains no law; headless Chromium cannot reach it at all | Fetch `https://tcss.legis.texas.gov/resources/<CODE>/htm/<CODE>.<CHAPTER>.htm` instead and cite the capitol URL. The base is in the SPA chunk `chunk-7GRZWKYH.js` as `TCASCore` |
 | `texreg.sos.state.tx.us` | Retired. Serves "Site Has Moved" to every path, the old `TacPage` viewer included | The TAC is on an Appian portal now: POST `{"#t":"UiConfig"}` to `texas-sos.appianportalsgov.com/rules-and-meetings/_/ui?interface=VIEW_TAC&title=..&part=..&chapter=..` with a cookie jar and `X-Client-Version: APNX-1-4105-002`. Full recipe in `TX-tx-nongame.txt` |
 | `rules.sos.ga.gov` | Works with plain curl, but only at SUBJECT level. Individual rule pages such as `/GAC/391-4-8-.05` are JavaScript shells containing no law | Always fetch the subject page, `/GAC/391-4-8`, which returns every rule in it |

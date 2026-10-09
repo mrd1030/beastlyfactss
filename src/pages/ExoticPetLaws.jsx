@@ -4,6 +4,7 @@ import { Link, useParams, useLocation } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
 import { ChevronDown, X } from 'lucide-react';
 import LEGAL from '@/lib/data/legalStatus.json';
+import { groupLegalAnimals } from '@/lib/data/legalGroups';
 import LEGAL_GUIDES from '@/lib/generated/legal-guides.json';
 import { STATE_NAMES } from '@/lib/data/usStatePaths';
 import { CODE_TO_SLUG, SLUG_TO_CODE } from '@/lib/data/stateSlugs';
@@ -41,14 +42,14 @@ const GUIDE_TO_ANIMAL = Object.fromEntries(
     .map(([id, a]) => [a.article.replace(/^\/blog\/|\/$/g, ''), id]),
 );
 
-// The chips run A to Z. They used to run most-restricted first, which reads
-// well as an editorial ranking and badly as navigation: almost everyone arrives
-// for one animal out of the 44 and scans for its name, and there is no way to
-// guess where a name falls in an ordering by restriction count. Alphabetical is
-// the only order a reader can predict without reading every chip.
-const ANIMALS_AZ = [...ANIMAL_IDS].sort((a, b) =>
-  LEGAL.animals[a].name.localeCompare(LEGAL.animals[b].name),
-);
+// The chips sit under hardcoded group headings (Reptiles, Small mammals and so
+// on) and run A to Z inside each group. They used to be one A to Z row, which
+// held up to about fifty animals and then became a wall nobody could scan;
+// before that they ran most-restricted first, which reads well as an editorial
+// ranking and badly as navigation, because nobody can guess where a name falls
+// in an ordering by restriction count. A reader arrives for one animal, knows
+// what kind of animal it is, and reads one short alphabetical row.
+const ANIMAL_GROUPS = groupLegalAnimals(LEGAL.animals);
 
 function statusRank(status) {
   return { banned: 0, permit: 1, conditional: 2, restricted: 3, unclear: 4 }[status] ?? 5;
@@ -423,7 +424,7 @@ export default function ExoticPetLaws() {
                     <li>
                       {'The chips at the foot of the page '}
                       <span className="font-semibold text-foreground">switch animals</span>
-                      {', A to Z. The map, the list and the counts all follow whichever one is selected.'}
+                      {', grouped by kind and A to Z within each group. The map, the list and the counts all follow whichever one is selected.'}
                     </li>
                     <li>
                       {'On the colours: flat gray was read and had no rule, dotted was never read for this animal, and hatched means the rule does not resolve either way. The first two are easy to confuse and mean very different things.'}
@@ -638,26 +639,33 @@ export default function ExoticPetLaws() {
         {/* Animal picker, deliberately below the map */}
         <div className="mt-8">
           <h2 className="font-display font-bold text-sm uppercase tracking-wider text-muted-foreground mb-3">
-            {`Choose an animal (A to Z, ${ANIMAL_IDS.length} of them)`}
+            {`Choose an animal (${ANIMAL_IDS.length} of them)`}
           </h2>
-          <div className="flex flex-wrap gap-2">
-            {ANIMALS_AZ.map((id) => {
-              const isActive = id === activeId;
-              return (
-                <Link
-                  key={id}
-                  to={`/exotic-pet-laws/${id}/`}
-                  aria-current={isActive ? 'page' : undefined}
-                  className={`rounded-full border px-3 py-1.5 text-sm font-body transition-colors ${
-                    isActive
-                      ? 'bg-primary text-primary-foreground border-primary font-semibold'
-                      : 'border-border text-foreground hover:border-primary/50 hover:text-primary'
-                  }`}
-                >
-                  {LEGAL.animals[id].name}
-                </Link>
-              );
-            })}
+          <div className="space-y-5">
+            {ANIMAL_GROUPS.map(({ label, ids }) => (
+              <div key={label}>
+                <h3 className="font-display font-semibold text-sm text-foreground mb-2">{label}</h3>
+                <div className="flex flex-wrap gap-2">
+                  {ids.map((id) => {
+                    const isActive = id === activeId;
+                    return (
+                      <Link
+                        key={id}
+                        to={`/exotic-pet-laws/${id}/`}
+                        aria-current={isActive ? 'page' : undefined}
+                        className={`rounded-full border px-3 py-1.5 text-sm font-body transition-colors ${
+                          isActive
+                            ? 'bg-primary text-primary-foreground border-primary font-semibold'
+                            : 'border-border text-foreground hover:border-primary/50 hover:text-primary'
+                        }`}
+                      >
+                        {LEGAL.animals[id].name}
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
