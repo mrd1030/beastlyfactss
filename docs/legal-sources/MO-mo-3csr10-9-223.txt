@@ -1,0 +1,34 @@
+SOURCE: Missouri Wildlife Code: 3 CSR 10-4.110(4), 3 CSR 10-9.223(2) and (3), and the Approved Confined Wildlife
+        Species List at 3 CSR 10-9.105 (Class II rows and the Wildlife Hobby Permit column)
+sourceId: mo-3csr10-9 / mo-3csr10-4
+jurisdiction: MO
+URL: https://www.sos.mo.gov/adrules/csr/current/3csr/3c10-9.pdf
+     https://www.sos.mo.gov/adrules/csr/current/3csr/3c10-4.pdf
+FETCHED: 2026-10-08 (the first request returned a Cloudflare "Attention Required" page saved under the .pdf
+name; a retry with a browser User-Agent and Accept: application/pdf served the PDFs. pdftotext. The
+species list is a multi-column table and extracts with its columns interleaved, so read the rows
+below as a set of names rather than as lines.)
+
+READ THIS FIRST. MO-mo-wildlife-code.txt answers non-native mammals through 9.110(2), which clears them
+outright, and natives through the take-five rule at 9.110(1)(A). That rule excludes anything "listed
+in 3 CSR 10-4.110(4)", and 4.110(4) lists game mammals and furbearers, so the raccoon, foxes, bobcat
+and otter never had a take-five route. What a keeper has instead is the Wildlife Hobby Permit (in the
+existing cache), one game mammal bought from a Missouri breeder, skunks excluded. 9.223 then bars
+importing live raccoons, foxes and coyotes and bars any dealing in live skunks. Class II is wolves,
+wolf-hybrids, black bears and black bear hybrids, and the approved list confines Class II bears and
+wolves to animals legally held under a Class II breeder permit before 30 August 2021.
+
+==== 3 CSR 10-4.110(4) ====
+(4) Birds, game mammals, furbearers, fish, bullfrogs and
+green frogs, mussels, crayfish, and common snapping and
+soft-shelled turtles may be taken only within the limits and
+  [the sentence continues: within the limits and seasons prescribed in the Code]
+
+==== 3 CSR 10-9.223(1) to (3) ====
+3 CSR 10-9.223 Wildlife Movement: Certification, Requirements PURPOSE: This rule clarifies that all wildlife held or transported in confinement shall comply with applicable state and federal animal health standards and movement requirements. (1) All persons holding or transporting wildlife in confinement shall comply with applicable state and federal regulations for animal health standards and movement requirements. These records shall be maintained on the premises and shall be subject to inspection by a conservation agent at any reasonable time for a period of at least five (5) years. (2) Live white-tailed deer, white-tailed deer-hybrids, mule deer, mule deer-hybrids, raccoons, foxes, and coyotes may not be imported into this state. The movement of Class III wildlife held under permit within the provisions of this chapter shall also comply with 3 CSR 10-9.354 and 3 CSR 10-9.565. (3) Live skunks may not be imported, bought, sold, transported, given away, or otherwise disposed of in this state. 
+
+==== Approved Confined Wildlife Species List, Class II rows (interleaved columns) ====
+Snake, Red-sided Squirrel, Thirteen-lined Ground Snake, Western Hog-nosed (Plains) Squirrel, Southern Flying Weasel, Least Bear, Black (& hybrids) legally obtained under Weasel, Long-tailed a valid Class II Wildlife Breeder Permit prior to  Terrapene carolina triunguis Taxidea taxus Chrysemys picta belli Lynx rufus Tamias striatus Crotaphytus collaris Canis latrans Sceloporus consobrinus (undulates) Urocyon cinereoargenteus Ophisaurus attenuatus Vulpes Vulpescornutum Phrynosoma Marmota Plestiodonmonax fasciatus Mustela vison Ondatra Pituophiszibethicus catenifer sayi Didelphis virginiana Lampropeltis calligaster Lontra canadensis Lampropeltis getula holbrooki Sylvilagus floridanus Pantherophis obsoleteus Sylvilagus aquaticus Thamnophis sirtalis sirtalis Procyon lotor Heterodon platirhinos Sciurus carolinensis Pantherophis emoryi Sciurus niger triangulum syspila Lampropeltis Spermophilus franklinii Thamnophis sirtalis parietalis Spermophilus tridecemlineatus Heterodon nasicus Glaucomys Volans Mustela nivalis Mustela frenata  August 30, 2021 Copperhead Cottonmouth Lion, Mountain (& hybrids) legally obtained Salamander, under a validTiger Class II Wildlife Breeder Permit prior to August 30, 2021 Rattlesnake, Pygmy Rattlesnake, Timber (Canebrake) Wolf, Gray legally obtained under a valid Class II Wildlife Breeder Permit prior to August 30, 2021  Ursus americanus Agkistrodon contortrix Agkistrodon piscivorus  Ambystoma tigrinum Puma concolor Sistrurus miliarius Crotalus horridus Canis lupus  CODE OF STATE REGULATIONS				 
+
+==== Approved Confined Wildlife Species List, Wildlife Hobby Permit and Class I mammal rows (interleaved columns) ====
+Boar, Wild (including feral hogs, razorback Quail,European Scaled boars and other pig species) Callipepla squamata hogs, Turkey, Wild (all subspecies) Meleagristarandus gallopava Caribou (Reindeer Rangifer Deer, Fallow Badger Deer, Mule Bobcat Deer, Red Chipmunk, Deer, Sika Eastern Coyote Deer, White-tailed Fox, Gray Elk Fox, Red Goat, Mountain Groundhog (Woodchuck) Moose Mink Bighorn Sheep, MuskratDall Sheep, Opossum (other species) Ungulates Otter, River Rabbit, Eastern Cottontail Rabbit, Swamp Badger Raccoon Bobcat Squirrel, Eastern Gray Coyote Squirrel, Fox Fox, GrayFranklin’s Ground Squirrel, Fox, Red Thirteen-lined Ground Squirrel, Groundhog (Woodchuck) Squirrel, Southern Flying Mink Weasel, Least Muskrat Weasel, Long-tailed Opossum Otter, River Pheasant, Ring-necked (all subspecies) Quail, Bobwhite (all subspecies) Rabbit, Eastern Cottontail Salamander, Tiger Rabbit, Swamp Raccoon Squirrel, Eastern Gray Squirrel, Fox Weasel, Least Weasel, Long-tailed  Dama dama Taxidea taxus Odocoileus hemionus Lynx rufus 

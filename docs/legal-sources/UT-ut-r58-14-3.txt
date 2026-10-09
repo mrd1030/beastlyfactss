@@ -1,0 +1,45 @@
+SOURCE: Utah: Utah Admin. Code R58-14-3, the raccoon and coyote possession bar (Department of Agriculture and Food)
+sourceId: ut-r58-14-3
+jurisdiction: UT
+URL: https://www.law.cornell.edu/regulations/utah/Utah-Admin-Code-R58-14-3
+FETCHED: 2026-10-08 (plain curl from Cornell LII; adminrules.utah.gov is unreadable by URL, per the README's Utah row)
+
+READ THIS FIRST. Table 3b-1 never mentions the raccoon, and R657-3b-1(2) explains why: possession of
+coyotes and raccoons belongs to the Agricultural and Wildlife Damage Prevention Board, not to DWR. This
+is that board's rule. It bars importing, distributing, relocating or possessing a live raccoon, and the
+only way out is a per-animal variance for "An organization or corporation" possessing one for research
+or exhibition. The rule was amended effective 23 May 2023. The enabling statute is cited in R657-3b as
+Utah Code 4-23-11; the Act was renumbered to 4-23-101 to 4-23-111 in 2017, so the current section is
+probably 4-23-111, which le.utah.gov did not serve to this container.
+
+==== Utah Admin. Code R58-14-3, General ====
+ (1) The Division of Wildlife Resources with
+ the cooperation of the Department of Agriculture and Food and the Department of
+ Health and Human Services, shall enforce this rule. 
+ (2) The Agricultural and Wildlife Damage
+ Prevention Board, by authority granted under Title 4, Chapter 23, the
+ Agricultural and Wildlife Damage Prevention Act, declares it unlawful to
+ import, distribute, relocate, or possess a live raccoon (Procyon
+ lotor ) or coyote (Canis latrans). 
+ (3) An organization or corporation wishing to
+ possess raccoons or coyotes for research, or exhibition purposes may request a
+ variance from the Department.
+ (a) A separate
+ variance shall be obtained from the Department for each raccoon and coyote
+ possessed. 
+ (b) A variance for a
+ raccoon or coyote may not be transferred without the express permission of the
+ Department. 
+ (4) Nuisance
+ raccoons and coyotes may not be relocated following capture, but may be
+ captured and euthanized or otherwise destroyed at the location where capture is
+ unfeasible. 
+ (5) Any raccoon or
+ coyote that bites or scratches a person or domestic animal shall be handled in
+ accordance with Section
+ R386-702-12 . 
+Notes 
+ Utah Admin. Code
+ R58-14-3 
+ Amended by
+ Utah

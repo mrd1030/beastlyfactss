@@ -1,0 +1,74 @@
+SOURCE: Maine: 09-137 CMR ch. 7 § 7.12, the wolf hybrid provisions, and the § 7.07 permit types
+sourceId: me-09-137-c7
+jurisdiction: ME
+URL: https://www.maine.gov/sos/sites/maine.gov.sos/files/content/assets/137c007.docx
+FETCHED: 2026-10-08 (plain curl with a browser User-Agent; python zipfile on word/document.xml)
+
+READ THIS FIRST. ME-me-captive-wildlife.txt carries § 7.06 and the § 7.18 lists. This file adds the
+two pieces it leaves out. § 7.07 lists the permit types, and the exhibition permit excludes wolf
+hybrids in terms. § 7.12 then writes a separate wolf hybrid condition: no wolf hybrid may be
+permitted unless a veterinarian shows it is permanently identified under 7 M.R.S. § 3921-A and spayed
+or neutered, and every other criterion for a wildlife possession permit is met. Maine treats the
+wolfdog as wildlife that an individual can be permitted to keep, which is the one canid it does.
+
+==== § 7.01 scope ====
+These rules are organized into general provisions applying to all permits under this Chapter, followed by specific provisions applying to each permit. The approval of permits shall be subject to the ability of the applicant to meet the provisions of these rules and other legal requirements. 
+
+These rules shall apply to:
+
+1.The possession, propagation, research, rehabilitation, or exhibition of any wildlife in captivity and to the importation of live wildlife from an area outside the state, including wildlife that has been hybridized, genetically altered, or reared in captivity, pursuant to 12 M.R.S. Part 13. 
+
+These rules do not apply to: 
+
+==== § 7.07 Permit Types ====
+7.07Permit Types
+
+1.Importation Permit: The commissioner may issue an importation permit to a person or institution, pursuant to 12 M.R.S. §12152, to import wildlife in the State. No species of wildlife, except those listed by the commissioner as Unrestricted or those which are in continuous transit through Maine as provided within 7.11, shall be imported into the State of Maine without a Wildlife Importation Permit issued by the commissioner. For the purpose of this regulation, importation includes transporting or relocating into Maine either on a permanent or temporary basis, any regulated wildlife by any means including the subsequent possession of other vertebrates not subject to the wildlife definition pursuant to 12 M.R.S. §10001.
+
+2.Exhibition Permit: The commissioner may issue an exhibition permit to a person or institution, pursuant to 12 M.R.S. §12152, for the purpose of keeping or possessing wildlife (except wolf hybrids) in captivity for commercial exhibition, attracting trade, or for educational purposes. 
+
+3.General Possession Permit for Category 2 Species: The commissioner may issue a general possession permit to a person or institution, pursuant to 12 M.R.S. §12152, to possess a Category 2 Species that requires special housing or care. 
+
+4.Rehabilitation Permit: The commissioner may issue a rehabilitation permit to a person or institution, pursuant to 12 M.R.S. §12152, to possess debilitated or orphaned wildlife for the purpose of restoring them to full health and release to the wild, or to be humanely euthanized.
+
+5. Research Permit: The commissioner may issue a research permit, pursuant to 12 M.R.S. §12152 which allows the holder to import and possess wildlife that is endangered or threatened or presents a risk to humans or that requires special housing or care to conduct scientific research or to use for educational purposes. 
+
+
+==== § 7.11(3) General Possession Permit, Category 2 ====
+
+3.General Possession Permit Category 2 Restricted Species: In addition to the requirements described in 7.10, the following requirements and conditions apply:
+
+A.Native Species Prohibited: Possession of any Restricted Species that is native to Maine is prohibited.
+
+
+==== § 7.12 Exceptions and Conditions for Specific Restricted Species ====
+7.12Exceptions and Conditions for Specific Restricted Species
+
+1.Exception for Possession Permits for Non-human Primates: Capuchin monkeys (primates in the Genus Cebus and Sapajus) may be possessed by individuals if the following conditions are met: 
+
+A.The applicant/permit holder demonstrates a legitimate need for physical aide from a primate, and the animal in question is specifically trained for such purposes, or the applicant must be providing foster care or training for the primate under direction or supervision of a recognized authority for same;
+
+B.The animal is supplied by, or approved by, a recognized institution or organization specializing in such use of primates; 
+
+C.The primate held in captivity for said purposes is vaccinated as may be prescribed by a qualified veterinarian or public health official, and is prevented at all times from direct contact with the public in such a way that physical injury or disease transmission may occur.
+
+Wildlife in the Family Cervidae: Rehabilitators must contact the Department upon the death of any adult animal in the family Cervidae. Other permit holders must submit the head of any species in the family Cervidae to the Department of Agriculture, Conservation, and Forestry for disease testing upon death of the animal. 
+
+Wolf Hybrids: No Wolf Hybrid may be permitted under this chapter unless the applicant has first presented proof from a licensed veterinarian that:
+
+A.The wolf hybrid has been permanently identified in accordance with 7 M.R.S. §3921-A;
+
+B.The wolf hybrid has been spayed or neutered; and
+
+C.All other criteria for a Wildlife Possession Permit have been met.
+
+Disposition of Wolf Hybrid at large
+
+A.Owner of wolf hybrid located. If a wolf hybrid at large is licensed under 7 M.R.S. §3922, §3-B or 12 M.R.S. §12152 or its owner can otherwise be identified and located, an animal control officer or person acting in that capacity shall take the wolf hybrid to its owner and may issue citations for violations of 7 M.R.S. §3911-B.
+
+B.Unable to locate owner. In the event owner of record cannot be located, an animal control officer or person acting in that capacity shall take the wolf hybrid to the animal shelter designated by the respective municipality in which the wolf hybrid was found. An animal shelter that accepts a wolf hybrid under this subsection is entitled to receive from the department the sum of $4 a day for the period for which food and shelter are furnished, not to exceed 6 days. The wolf hybrid will be held for 6 days during which the owner may reclaim the animal provided it is sufficiently demonstrated that animal is/will be properly licensed under 7 M.R.S. or 12 M.R.S. Upon expiration of the 6-day period, ownership of the wolf hybrid is vested in the shelter. The animal shelter shall:
+
+(1)Transfer ownership of the wolf hybrid to a person holding a permit to possess wildlife under 12 M.R.S. §12152 who is authorized to accept wolf hybrids in compliance with rules adopted under 12 M.R.S. §12160(2) or,
+
+(2)After keeping the wolf hybrid for 8 days, euthanize the wolf hybrid humanely in accordance with 17 M.R.S. Chapter 42, subchapter 4.
+

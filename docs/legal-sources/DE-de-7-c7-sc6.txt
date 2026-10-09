@@ -1,0 +1,36 @@
+SOURCE: Delaware: Del. Code tit. 7, ch. 7, subchapter VI (furbearers and the live red fox, raccoon and skunk
+        bars), with DNREC's own statement on native wildlife as pets
+sourceId: de-7-c7-sc6 / de-dnrec-wild-pets
+jurisdiction: DE
+URL: https://delcode.delaware.gov/title7/c007/sc06/index.html
+     https://dnrec.delaware.gov/outdoor-delaware/the-perils-of-wild-pets-dnrec-warns-against-keeping-non-domesticated-animals/
+FETCHED: 2026-10-08. delcode by plain curl. dnrec.delaware.gov answers curl with "Request Rejected";
+the article was read through WebFetch and the sentences below are its verbatim quotations.
+
+READ THIS FIRST. DE-de-903.txt says native animals go to DNREC and stops there. This is where DNREC's
+statute says it. § 789 bars possessing a live red fox outright, except at a State or local government
+animal exhibition (§ 791 lets a foxhound owner raise wild whelps for chasing and release them by 15
+August). § 795 bars selling or possessing a live skunk or raccoon "for any purpose without a permit
+from the Division", and DNREC says it tells people asking about skunks from out-of-state breeders that
+"this is not allowed", and that state regulations "explicitly forbid Delawareans from owning" native
+wildlife, with an exception for permitted rehabilitators.
+
+==== Del. Code tit. 7, §§ 789, 791 and 795 ====
+ 789. Sale or shipment of red fox or red fox hides; penalty.
+(a) No live red fox shall be sold, purchased, possessed or exposed for sale in this State, or shipped by freight or express, or otherwise, or taken from any place within this State to any place outside this State. Nothing in this section shall be construed to prevent the possession or transfer of red fox hides legally taken in Delaware or in another state. It shall be legal to sell the hides of red foxes legally taken in Delaware within the State or in another state.
+(b) The provisions of the preceding paragraph insofar as they relate to the possession of live red foxes shall not apply to animal exhibitions owned or operated by the State or any political subdivision thereof.
+(c) Whoever violates this section shall be guilty of a class B environmental misdemeanor for each offense.26 Del. Laws, c. 166; 
+ 791. Possession of red fox whelps.
+Notwithstanding any other provision of this subchapter to the contrary, the taking and possession of red fox whelps between April 1 and August 15 of each year by persons possessing no less than 5 foxhounds kept for chasing mature red foxes and having a permit issued by the Department shall be permitted for the purpose of raising the whelps for fox chasing. Any whelps possessed by virtue of this section shall have been taken only with permission of the landowner. Any whelp possessed by virtue of this section must be released each year prior to August 15. Only red fox whelps found within this State shall be subject to this section.64 Del. Laws, c. 36,
+ §
+ 795. Prohibition of sale or transportation of live skunks or raccoons.
+No live skunks or raccoons shall be sold or possessed in this State or transported into this State for any purpose without a permit from the Division.63 Del. Laws, c. 389,
+ §
+
+==== DNREC, "The perils of wild pets", quoted sentences (via WebFetch) ====
+"There's also the simple fact it's illegal in Delaware to keep wild animals as pets."
+"State regulations explicitly forbid Delawareans from owning" "native wildlife," "with an exception
+for wildlife rehabilitation experts, who must hold permits from DNREC to care for the animals."
+On skunks from out-of-state breeders: "the agency informs the inquirer this is not allowed."
+"Non-native wildlife fall under the jurisdiction not of DNREC but of the Delaware Department of
+Agriculture."

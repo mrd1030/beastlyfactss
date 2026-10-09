@@ -1,0 +1,59 @@
+# Missouri: RSMo § 578.023, 3 CSR 10-4.117, 3 CSR 10-20.805(30), 3 CSR 10-9.352 and 9.354
+
+sourceId: mo-578-023
+jurisdiction: MO
+url: https://revisor.mo.gov/main/OneSection.aspx?section=578.023
+fetched: 2026-10-08
+fetch notes: revisor.mo.gov with plain curl; the three CSR chapter PDFs from sos.mo.gov with a browser User-Agent and Accept: application/pdf, pdftotext, whitespace collapsed. Companion to MO-mo-wildlife-code.txt and MO-mo-3csr10-9-223.txt.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+==== RSMo § 578.023 (revisor.mo.gov, effective 1 January 2017) ====
+578.023. Keeping a dangerous wild animal — penalty. — 1. A person commits the offense of keeping a
+dangerous wild animal if he or she keeps any lion, tiger, leopard, ocelot, jaguar, cheetah, margay,
+mountain lion, Canada lynx, bobcat, jaguarundi, hyena, wolf, bear, nonhuman primate, coyote, any
+deadly, dangerous, or poisonous reptile, or any deadly or dangerous reptile over eight feet long, in
+any place other than a properly maintained zoological park, circus, scientific, or educational
+institution, research laboratory, veterinary hospital, or animal refuge, unless he or she has
+registered such animals with the local law enforcement agency in the county in which the animal is
+kept. 2. The offense of keeping a dangerous wild animal is a class C misdemeanor. ­­-------- (L.
+1983 S.B. 211 § 9, A.L. 2001 S.B. 462, A.L. 2014 S.B. 491) Effective 1-01-17
+
+==== 3 CSR 10-4.117(1) and (2)(A) to (D), Prohibited Species ====
+3 CSR 10-4.117 Prohibited Species PURPOSE: This rule establishes a list of species that may not be
+possessed in Missouri. (1) Prohibited species may not be imported, exported, transported, sold,
+purchased, or possessed alive in Missouri without written approval of the director. (2) For the
+purpose of this rule, prohibited species of wildlife shall include the following: (A) Mammals: Any
+species of flying fox or fruit bat of the genus Pteropus; any species of mongoose or meerkat of the
+genera Atilax, Cynictis, Helogale, Herpestes, Ichneumia, Mungos, or Suricata; any species of the
+Indian wild dog, red dog, or dhole of the genus Cuon; any species of the multimammat rat or mouse of
+the genus Mastomys; raccoon dog, Nyctereutes procyonoides; brushtail possum, Trichosurus vulpecula;
+(B) Birds: pink starling or rosy pastor, Sturnus roseus; species of dioch (including the subspecies
+black-fronted, red-billed, or Sudan dioch), Quelea quelea; Java sparrow, Padda oryzivora; red
+whiskered bul-bul, Pycnonotus jocosus; (C) Fishes: Live fish or viable eggs of black carp
+(Mylopharyngodon piceus); round goby (Neogobius melanostomus); tubenose goby (Proterorhinus
+semilunaris); snakehead fish of the genera Channa or Parachanna (or the generic synonyms of
+Bostrychoides, Ophicephalus, Ophiocephalus, and Parophiocephalus); walking catfish of the family
+Clariidae; (D) Invertebrates: New Zealand mudsnail, Potamopyrgus antipodarum; rusty crayfish,
+Faxonius rusticus; marbled crayfish, Procambarus virginalis; crayfish of the genus Cherax; electric
+blue crayfish, Procambarus alleni; mitten crabs of the genus Eriocheir; zebra mussels, Dreissena
+polymorpha; quagga mussels, Dreissena rostriformis; mystery snails of the genus Cipangopaludina; and
+
+==== 3 CSR 10-20.805(30) ====
+(30) Furbearing animals: Furbearers: Badger, beaver, bobcat, coyote, gray fox, long-tailed weasel,
+mink, mountain lion, muskrat, nutria, opossum, raccoon, red fox, river otter, spotted skunk, and
+striped skunk.
+
+==== 3 CSR 10-9.352(2)(A) and 9.354(1), Class III wildlife breeders ====
+(2) The following exemptions to the Class III Wildlife Breeder Permit requirements of this chapter
+shall apply: (A) Class III wildlife held in confinement that are not listed on the Approved Confined
+Wildlife Species List in 3 CSR 10-9.105 are exempt from permit requirements; and
+
+3 CSR 10-9.354 Privileges of Class III Wildlife Breeders PURPOSE: This rule establishes the
+privileges and requirements for Class III wildlife breeders. (1) Except as otherwise provided in 3
+CSR 10-9.352, Class III wildlife may be propagated, bought, sold, reared, or held in captivity by
+the holder of the appropriate Class III Wildlife Breeder Permit only at the specific location
+identified on the permit.

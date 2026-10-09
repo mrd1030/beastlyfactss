@@ -1,0 +1,98 @@
+# 40 Miss. Admin. Code Part 2, Rule 8.2, Regulations for Enclosures Preventing the Free Ingress and Egress of White-tailed Deer (Rev. 04-2021)
+
+sourceId: ms-40-2-8-2
+jurisdiction: MS
+url: https://www.mdwfp.com/sites/default/files/2024-04/40-miss-admin-code-part-2-rule-82-regulations-for-white-tailed-deer-enclosures-rev-04-2021-final.pdf
+fetched: 2026-10-08
+fetch notes: mdwfp.com PDF with the completed GlobalSign chain described in MS-ms-nongame-in-need.txt, pdftotext -layout. Sections A, C and D.1 to D.4(a); the fencing and inspection sections are omitted.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+MISSISSIPPI COMMISSION ON WILDLIFE, FISHERIES, AND PARKS
+             MISSISSIPPI DEPARTMENT OF WILDLIFE, FISHERIES, AND PARKS
+
+Title 40: Wildlife, Fisheries, and Parks
+
+Part 2: Wildlife
+
+Part 2, Chapter 8: Regulations regarding animals in captivity and enclosures.
+
+RULE 8.2 REGULATIONS FOR ENCLOSURES PREVENTING THE FREE INGRESS AND
+EGRESS OF WHITE-TAILED DEER.
+
+        A.      Possession of White-tailed Deer.
+
+              1.      No person may possess a live white-tailed deer in Mississippi unless that
+person possesses a valid permit issued by the Mississippi Department of Wildlife, Fisheries, and
+Parks (MDWFP).
+
+                2.      No person may sell a live white-tailed deer pursuant to MISS. CODE ANN.
+§49-7-51.
+
+               3.     Orphaned or injured white-tailed deer may not be placed in high-fenced
+enclosures without written permission from the MDWFP.
+
+        B.      High-Fenced Enclosures
+
+               1.    A high-fenced enclosure is man-made or man-placed fenced structure, or
+combination of fencing and terrain features, which prevents the free ingress and/or egress of any
+white-tailed deer.
+
+[...]
+                              v.      Quarantine the enclosure.
+
+       C.      Captive Breeding
+
+             1.      Controlled breeding of white-tailed deer within a high-fenced enclosure
+may be allowed by permit at an annual cost of Four Hundred Fifty Dollars ($450.00).
+
+          2.          A breeding plan and inventory report must be submitted annually to the
+MDWFP by May 1.
+
+               3.     Breeding Pens
+
+                         a.     Each breeding pen must be contained within a high-fenced
+enclosure of at least 300 contiguous acres and no portion of any breeding pen may be within six
+(6) feet of the external enclosure fence.
+
+                      b.      Each breeding pen cannot exceed a total confined area of 5 acres.
+
+                       c.      All white-tailed deer 1½ years of age and older within a breeding
+pen and all white-tailed deer released from a breeding pen into a larger enclosure must be tagged
+with a uniquely numbered ear tag.
+               4.     Artificial Insemination
+
+                      a.     White-tailed deer semen, ova, and embryos may be imported into
+and translocated within Mississippi by permit. The permit must be obtained prior to importation
+and translocation.
+
+                      b.      White-tailed deer semen, ova, and embryos must be obtained from
+a source within the continental United States.
+
+                     c.     An annual report must be submitted by May 1 to the MDWFP
+regarding any importation or translocation of white-tailed deer semen, ova, and embryos into
+Mississippi.
+
+       D.      Movement of White-tailed Deer
+
+              1.     No person may import a live white-tailed deer into the State of Mississippi
+pursuant to MISS. CODE ANN. §49-7-54.
+
+                2.      No white-tailed deer originating from a high-fenced enclosure may be
+released into the wild in Mississippi.
+
+
+
+                                                4
+              3.      White-tailed deer may not be transported from the wild and placed into a
+high-fenced enclosure or a breeding pen.
+
+                4.    Transportation
+
+                      a.     Transport permits at a cost of Twenty-five Dollars ($25.00) per
+white- tailed deer must be purchased prior to transporting white-tailed deer from one registered
+high- fenced enclosure or breeding pen to another registered high-fenced enclosure or breeding
+pen.

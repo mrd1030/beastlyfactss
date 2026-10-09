@@ -1,0 +1,95 @@
+# Ariz. Admin. Code R12-4-406, Restricted Live Wildlife, verbatim from Cornell LII
+
+sourceId: az-r12-4-406
+jurisdiction: AZ
+url: https://www.law.cornell.edu/regulations/arizona/Ariz-Admin-Code-SS-R12-4-406
+fetched: 2026-10-08
+fetch notes: plain curl with a browser User-Agent from Cornell LII, because apps.azsos.gov sits behind a Cloudflare challenge (see AZ-az-r12-4-406.txt, which is a summary rather than the text). Cornell prints the most recent amendment inline, so old and new letters sit side by side ("E. F.", "G. H."): the second letter is the current one. Cited to the official section.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+Ariz. Admin. Code § R12-4-406 - Restricted Live Wildlife Ariz. Admin. Code § R12-4-406 - 
+Restricted Live Wildlife State Regulations Compare A. In order to lawfully possess wildlife listed 
+as restricted under this Section, for any activity prohibited under A.R.S. §§ 17-255.02 , 17-306 
+, R12-4-902 , or this Article, a person shall possess: 1. All applicable federal licenses and 
+permits; and 2. The appropriate special license listed under R12-4-409 (A) ; or 3. Act under a 
+lawful exemption authorized under A.R.S. § 17-255.04 , R12-4-316 , R12-4-404 , R12-4-405 , 
+R12-4-407 , R12-4-425 , R12-4-427 , and R12-4-430 . B. The Commission recognizes the online 
+taxonomic classification from the Integrated Taxonomic Information System as the authority in 
+determining the designations of restricted live mammals, birds, reptiles, amphibians, fish, 
+crustaceans, and mollusks referenced under this Article. The Integrated Taxonomic Information 
+System is available at any Department office and at www.itis.gov . C. All of the following are 
+considered restricted live wildlife and are subject to the requirements of this Article, unless 
+otherwise specified: 1. Hybrid wildlife, as defined under R12-4-401 , resulting from the 
+interbreeding of at least one parent species of wildlife that is listed as restricted under this 
+Section. Hybrid wildlife that is the progeny of a restricted wildlife species and a nonrestricted 
+wildlife species is considered restricted wildlife. 2. Transgenic species, unless otherwise 
+specified under this Article. For the purposes of this Section, "transgenic species" means any 
+organism that has had genes from another organism put into its genome through direct human 
+manipulation of that genome. Transgenic species do not include natural hybrids or individuals that 
+have had their chromosome number altered to induce sterility. A transgenic animal is considered 
+wildlife if the genetic material originated from a restricted wildlife species. D. Domestic 
+animals, as defined under R12-4-401 , are not subject to restrictions under A.R.S. Title 17, 12 
+A.A.C. 4 , or Commission Orders. E. For subsections (F) through (M), the common names are provided 
+as examples only and are not all-inclusive of the order, family, or genus. E. F. Unless otherwise 
+specified, all mammals listed below are considered restricted live wildlife: 1. All species of the 
+order Afrosoricida . Common names include: golden moles and tenrecs and. 2. All species of the 
+following families of the order Artiodactyla . Common name: even-toed ungulates: a. The family 
+Antilocapridae . Common name: pronghorns. b. The family Bovidae . Common names include: antelopes, 
+bison, buffalo, cattle, duikers, gazelles, goats, oxen, and sheep. Except the following genera 
+which are not restricted: i. The genus Bubalus . Common name: water buffalo. ii. The genus Bison . 
+Common name: American bison, bison, or buffalo. c. The family Cervidae . Common names include: 
+cervid, deer, elk, moose, red deer, and wapiti. d. The family Tayassuidae . Common name: peccaries. 
+3. All species of the order Carnivora . Common names include: bears, foxes, ocelot, raccoons, 
+ser-vals, skunks, wolves, and weasels. 4. All species of the order Chiroptera . Common name: bats. 
+5. All species of the genus Didelphis . Common name: American opossums. 6. All species of the order 
+Erinaceomorpha . Common names include: European hedgehogs, gymnures, and moonrats. Except members 
+of the genus Atelerix , which are not restricted. Common name: longeared and pygmy hedgehogs. 7. 
+All species of the order Lagomorpha . Common names include: hares, pikas, and rabbits. Except for 
+members of the genus Oryctolagus containing domestic rabbits, which are not wildlife and are not 
+restricted. 8. All nonhuman primates. Common names include: chimpanzees, gorillas, macaques, 
+orangutans, and spider monkeys. 9. All species of the following families of the order Rodentia . 
+Common name: rodents: a. The family Capromyidae . Common name: hutias. b. The family Castoridae . 
+Common name: beavers. c. The family Dipodidae . Common name: jumping mouse. c. d. The family 
+Echimyidae . Common names include: coypus and nutrias. d. e. The family Erethizontidae . Common 
+name: new world porcupines. e. f. The family Geomyidae . Common name: pocket gophers. f. g. The 
+family Sciuridae . Common names include: chipmunks, marmots, prairie dogs, squirrels, and 
+woodchucks. 10. All species of the order Soricomorpha . Common names include: desmans, moles, 
+shrews, and shrew-moles. 11. All species of the order Xenarthra . Common names include: anteaters, 
+armadillos, and edentates, or sloths,. F. G. Birds listed below are considered restricted live 
+wildlife: 1. The following species within the family Phasianidae . Common names: grouse, pheasants, 
+partridges, quail, and turkeys: a. Alectoris chukar . Common name: chukar. a. b. Callipepla 
+gambelii . Common name: Gambel's quail. b. c. Callipepla squamata . Common name: scaled quail. c. 
+d. Colinus virginianus . Common name: northern bobwhite. Restricted only in game management units 
+36A, 36B, and 36C as prescribed under R12-4-108 . d. e. Cyrtonyx montezumae . Common name: 
+harlequin, Mearn's, or Montezuma quail. e. f. Dendragapus obscurus . Common name: dusky grouse. g. 
+Mealagris gallopavo gallopavo, M. g. intermedia, M. g. merriami, M. g. mexicana, M. g. osceola, B. 
+g. silvestris, and M. ocellata . Common name: wild turkey. 2. All species listed under the 
+Migratory Bird Treaty Act listed under 50 CFR 10.13 revised October 1, 2019, and no later 
+amendments or editions. The incorporated material is available from the U.S. Government Printing 
+Office, Superintendent of Documents, P.O. Box 979050, St. Louis, MO 63197-9000, and is on file with 
+the Department. G. H. Reptiles listed below are considered restricted live wildlife: 1. All species 
+of the order Crocodilia . Common names include: alligators, caimans, crocodiles, and gavials. 2. 
+All species of the following families or genera of the order Squamata : a. The family 
+Atractaspididae . Common name: burrowing asps. b. The following species and genera of the family 
+Colubridae : i. Boiga irregularis . Common name: brown tree snake. ii. Dispholidus typus . Common 
+name: boomslang. iii. Rhabdophis . Common name: keelback. iv. Thelotornis kirtlandii . Common names 
+include: bird snake or twig snake. c. The family Elapidae . Common names include: Australian 
+elapids, cobras, coral snakes, kraits, mambas, and sea snakes. d. The family Helodermatidae . 
+Common names include: Gila monster and Mexican beaded lizard. e. The family Viperidae . Common 
+names include: pit and true vipers, including rattlesnakes. 3. The following species of the order 
+Testudines : a. All species of the family Chelydridae . Common name: snapping turtles. b. All 
+species of the genus Gopherus . Common names include: gopher tortoises, including the desert 
+tortoise. H. I. Amphibians listed below are considered restricted live wildlife. The following 
+species within the order Anura , common names frogs and toads: 1. The species Bufo horribilis , 
+Bufo marinus , Bufo schneideri . Common names include: giant or marine toads. 2. All species of the 
+genus Rana . Common names include: bullfrogs and leopard frogs. Except bullfrogs possessed under 
+A.R.S. § 17-102 . 3. All species of the genus Xenopus . Common name: clawed frogs. I. J. Fish 
+listed below are considered restricted live wildlife: 1. All species of the family Acipenseridae . 
+Common name: sturgeon. 2. The species Amia calva . Common name: bowfin. 3. The species Aplodinotus 
+grunniens . Common name: freshwater drum. 4. The species Arapaima gigas . Common name: bony tongue. 
+5. All species of the genus Astyanax . Common name: tetra. 6. The species Belonesox belizanus . 
+Common name: pike topminnow. 7. All species, both marine and freshwater,

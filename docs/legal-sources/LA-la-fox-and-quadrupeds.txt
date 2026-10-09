@@ -1,0 +1,142 @@
+SOURCE: Louisiana: LAC 76:V.113 (fox and coyote hunting preserves; purchase and sale of live foxes and coyotes), LAC 76:V.115.B to D.1 (potentially dangerous wild quadrupeds), LAC 76:V.131.D.3 (wildlife rescuer), and La. R.S. 56:8(92) and (151)
+sourceId: la-76-v-113; la-76-v-115; la-76-v-131; la-rs-56-8
+jurisdiction: LA
+URL: https://www.doa.la.gov/media/ln5kb5vu/76.docx and https://legis.la.gov/legis/Law.aspx?d=105616
+FETCHED: 2026-10-08 (the Title 76 .docx, extracted with python zipfile from word/document.xml as described in LA-la-wildlife-rules.txt; legis.la.gov with plain curl, tags stripped. The rule's own long dashes in definitions are rendered here as colons.)
+
+READ THIS FIRST. LA-la-wildlife-rules.txt quotes R.S. 56:8(151) cut off with "...". The full text
+is below, and it matters: foxes and bobcats are "protected quadrupeds" and raccoons, skunks and
+otters are "nongame quadrupeds". The fox rule at LAC 76:V.113 then does more than regulate hound
+pens. D.1 bars taking, possessing, buying or selling live foxes except under the rule, D.6 bars
+possessing "any live foxes or coyotes taken outside the state of Louisiana", and the stated purpose
+is to "prohibit the importation and exportation of any species of foxes". The only licenses the rule
+offers are a trapper's license and the nongame quadruped exhibitor and breeder licenses, which the
+rule defines as licenses to engage in a business. Also note § 115.D.1: the wolf-dog hybrid entry is
+still printed in the § 115.C.1 list, but D.1 says that prohibition expired on 1 January 1997.
+
+
+==== La. R.S. 56:8(92) and (151) ====
+(92) "Nongame quadruped" means alligators, beavers, bobcats, coyotes, gray foxes, minks, muskrats,
+nutrias, opossums, otters, raccoons, red foxes, skunks, and other wild quadrupeds valuable for their
+skins or furs.
+
+(151)(a) "Wild quadrupeds" means and includes any and all of the following: (i) Game quadrupeds:
+wild deer, bears, squirrels, and wild rabbits. (ii) Outlaw quadrupeds: coyotes, armadillos, and
+feral hogs. (iii) Protected quadrupeds: wolves, cougars, bobcats, and foxes; provided that foxes and
+bobcats may be run with dogs. (iv) Nongame quadrupeds: mink, otter, muskrat, nutria, beaver,
+weasels, raccoons, skunks, opossum, alligator, and other wild quadrupeds valuable for their skins or
+furs. (b) Wild quadrupeds does not include wild quadrupeds taken, possessed, or transported under
+the provisions set forth in the game breeder license. The terms "wild quadrupeds" and "wild game
+quadrupeds" shall not include buffalo, bison, or beefalo.
+
+==== LAC 76:V.113, selected subsections ====
+§113.Fox/Coyote Hunting Preserve, Purchase and Sale of Live Foxes and Coyotes, Permitting Year-Round Coyote Trapping
+A.Purpose. These regulations are to govern the trapping, purchasing, selling and captive possession
+of live foxes and coyotes for chasing with hounds. These regulations prohibit the importation and
+exportation of any species of foxes or coyotes to or from Louisiana in an effort to prevent possible
+disease and parasite contamination of native wild canids and humans. These regulations allow the
+sport of fox/coyote hunting with dogs within enclosed areas.
+Licensee: any lawful holder of a valid trapper’s or nongame quadruped exhibitor/breeder license duly
+issued under the authority of the department for the purposes of operating a fox/coyote hunting
+preserve.
+Nongame Quadruped: alligators, beavers, bobcats, coyotes, grey foxes, minks, muskrats, nutrias,
+opossums, otters, raccoons, red foxes, skunks and other wild quadrupeds valuable for their furs or
+skins.
+Nongame Quadruped Breeder: any person properly licensed to engage in the business of raising,
+exhibiting and selling nongame quadrupeds.
+Nongame Quadruped Exhibitor: any person properly licensed to engage in the business of raising and/or
+exhibiting nongame quadrupeds.
+C.Licenses and Fees.
+1.A trapper’s license is required to take foxes or coyotes by means of a trap during the open season
+for nongame quadrupeds, however, coyotes may be taken by trap during the closed season by any
+properly licensed trapper.
+2.A nongame quadruped exhibitor's license may be issued permitting the applicant to possess, breed
+and/or exhibit live foxes or coyotes outside of the open trapping season, provided he meets the
+rules and regulations of the department;
+3.A nongame quadruped breeder license may be issued permitting the applicant to possess, breed,
+propagate, exhibit, and sell live foxes or coyotes outside of the open trapping season.
+D.General Rules
+1.No person shall take, possess, purchase or sell live foxes or coyotes, except as provided in these
+regulations.
+2.No person shall hold in captivity any live foxes or coyotes outside of the open trapping season,
+except as provided in these regulations.
+6.No person shall transport, possess, purchase or sell any live foxes or coyotes taken outside the
+state of Louisiana. Live foxes and coyotes obtained from outside the state of Louisiana prior to the
+enacted date of these regulations and in possession of properly licensed persons shall be exempt.
+7.No person shall transport from the state or offer for sale out of state any live foxes or coyotes.
+9.No person may engage in the business of raising or exhibiting or otherwise possessing fox or
+coyotes for the purpose of operating a fox/coyote hunting preserve unless he or she has acquired and
+possesses a valid nongame quadruped breeder or exhibitor license.
+
+==== LAC 76:V.115.B to D.1 ====
+§115.Possession of Potentially Dangerous Wild Quadrupeds, Big Exotic Cats, and Non-Human Primates
+B.This commission regulation prohibits importation and private possession, and otherwise regulates
+certain wild quadrupeds, big exotic cats, and non-human primates as provided herein.
+C.1.Except as provided herein, it shall be unlawful to import into, possess, purchase or sell within
+the state of Louisiana, by any means whatsoever including but not limited to transactions conducted
+via the internet, any of the following species or its subspecies of live wild quadrupeds, big exotic
+cats, or non-human primates, domesticated or otherwise (hereinafter "listed animals"):
+a.black bear (Ursus americanus);
+b.grizzly bear (Ursus arctos);
+c.polar bear (Ursus maritimus);
+d.red wolf (Canis rufus);
+e.gray wolf (Canis lupus);
+f.wolf dog hybrid (Canis lupus or Canis rufus x Canis familiarus);
+g.all non-human primates;
+h.the following big exotic cats:
+i.tigers;
+ii.lions;
+iii.leopards (including, but not limited to snow leopard and clouded leopard);
+iv.jaguars;
+v.cheetahs;
+vi.cougars or mountain lions (Felis concolor);
+vii.all subspecies of the above listed exotic cats;
+viii.hybrids resulting from cross breeding of the above listed exotic cats.
+2.Holders of a potentially dangerous wild quadruped permit allowing possession of any listed animal,
+where the permit is valid on the effective date of this regulation, will be "grandfathered" and the
+permit will be renewed annually until existing permitted captive animals expire, or are legally
+transferred out of state, or are transferred to a suitable facility. No additional listed animals
+may be acquired by any means whatsoever, including breeding.
+D.1.Wolf-Dog Hybrids. The prohibition against wolf-dog hybrids expired January 1, 1997. Persons are
+cautioned that local ordinances or other state regulations may prohibit possession of these animals.
+Any animal which appears indistinguishable from a wolf, or is in any way represented to be a wolf
+shall be considered to be a wolf in the absence of bona fide documentation to the contrary.
+
+==== LAC 76:V.131.D.3(a) and (b) ====
+§131.Wildlife Rehabilitation Program
+3.Wildlife Rescuer
+a.Individuals may possess in captivity certain sick, injured, or orphaned wildlife while providing
+care for such wildlife for a period of up to 90 days as provided for in this Paragraph.
+i.Wildlife included under this Paragraph shall be limited to the following species: squirrel,
+opossum, rabbit, or chipmunk, with such possession limited to one animal or litter of animals per
+individual.
+ii.A raccoon or skunk that is sick, injured, or orphaned may also be possessed pursuant to the
+provisions of this Paragraph upon notification to the Department of Wildlife and Fisheries of
+possession of the wildlife and upon receipt of information regarding rabies vector species and a
+list of available wildlife rehabilitators.
+iii.Individuals in possession of any of these animals shall be held strictly liable for any damages
+for injuries to persons or property caused by the animal.
+b.To continue to possess the wildlife beyond ninety days from finding the sick, injured, or orphaned
+wildlife all of the following shall occur.
+i.The individual has satisfied wildlife rescuer training requirements. The curriculum shall be
+offered online and shall cover at a minimum safety considerations, wildlife husbandry requirements,
+transfer of diseases, and that a person possessing an animal pursuant to this Paragraph is held
+strictly liable for any damage or injury the animal causes.
+ii.The individual applied for a Special Purpose and Possession permit.
+iii.A Louisiana licensed veterinarian has determined that the animal is medically non-releasable or
+exhibits signs of adjusted life in captivity.
+c.i.If the conditions of Subparagraph b of this Paragraph have been met, the Department of Wildlife
+and Fisheries shall issue a special purpose and possession permit and the individual shall be able
+to continue to possess the animal for the duration of its natural life.
+ii.Any animal possessed pursuant to the provisions of this Paragraph shall be spayed or neutered.
+Rabies vector species shall also be microchipped by a Louisiana licensed veterinarian.
+d.A Louisiana licensed veterinarian shall not be liable to any person for any injury, illness,
+death, loss, civil penalty, or damage as a result of any act or omission in determining that the
+animal is medically non-releasable or exhibits signs of adjusted life in captivity as required by
+the provisions of this Paragraph. However, this limitation of liability shall not be applicable if
+the damage, injury, or loss was caused by the gross negligence or willful or wanton misconduct of
+the licensed Louisiana veterinarian.
+e.It shall be unlawful for an individual exempted under the provisions of this Paragraph to use the
+wildlife in any manner for the purposes of exploitation, including for any promotional or commercial
+purpose, or for the purposes of pet trade. Any such act shall be grounds for seizure of the wildlife
+by the department and revocation of any issued permit.

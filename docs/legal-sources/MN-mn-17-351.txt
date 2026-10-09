@@ -1,0 +1,45 @@
+SOURCE: Minnesota: Minn. Stat. §§ 17.351 and 17.352 (fur farming), with § 97A.105 subd. 1 (game farms)
+sourceId: mn-17-351
+jurisdiction: MN
+URL: https://www.revisor.mn.gov/statutes/cite/17.351
+     https://www.revisor.mn.gov/statutes/cite/17.352
+     https://www.revisor.mn.gov/statutes/cite/97A.105
+FETCHED: 2026-10-08 (plain curl; tags stripped)
+
+READ THIS FIRST. Minnesota takes a farmed fox out of the game laws by statute. § 17.351 subd. 3
+defines a fur-bearing animal as "a fox, mink, fitch, chinchilla, karakul, marten, nutria, or fisher
+that is the second or later generation raised in captivity", and § 17.352 says "Fur-bearing animals
+are domestic animals". So a red fox that is at least the second captive-bred generation is a domestic
+animal, while a wild-caught or first-generation one is still small game under § 97A.015 subd. 45 and
+a protected wild animal. The raccoon is not on the § 17.351 list. § 97A.105's game farm license covers
+game birds, bear and mute swans only, so it is not a route to a pet raccoon; the route is the
+§ 97A.401 subd. 3 special permit, which may be issued "as pets" (cached in MN-mn-statutes.txt).
+
+==== § 17.351 ====
+17.351 DEFINITIONS.
+ §
+Subdivision 1.Applicability.
+The definitions in this section apply to sections 17.352 to 17.354.
+ §
+Subd. 2.
+[Repealed, 1996 c 310 s 1]
+ §
+Subd. 3.Fur-bearing animal.
+"Fur-bearing animal" means a fox, mink, fitch, chinchilla, karakul, marten, nutria, or fisher that is the second or later generation raised in captivity.
+ §
+Subd. 4.Fur farmer.
+"Fur farmer" means a person engaged in breeding, raising, producing, and marketing fur-bearing animals or the products of fur-bearing animals.
+History: 
+ 1985 c 44 s 1
+
+==== § 17.352 ====
+17.352 AGRICULTURAL PRODUCTS AND PURSUITS.
+Fur-bearing animals are domestic animals and products of fur-bearing animals are agricultural products. A fur farmer is engaged in an agricultural pursuit.
+History: 
+ 1985 c 44 s 2
+
+==== § 97A.105 subd. 1 ====
+Subdivision 1.License requirements.
+(a) A person may breed and propagate game birds, bear, or mute swans only on privately owned or leased land and after obtaining a license. Any of the permitted animals on a game farm may be sold to other licensed game farms. "Privately owned or leased land" includes waters that are shallow or marshy, are not actually navigable, and are not of substantial beneficial public use. Before an application for a license is considered, the applicant must enclose the area to sufficiently confine the animals to be raised in a manner approved by the commissioner. A license may be granted only if the commissioner finds the application is made in good faith with intention to actually carry on the business described in the application and the commissioner determines that the facilities are adequate for the business.
+(b) A person may purchase live game birds or their eggs without a license if the birds or eggs, or birds hatched from the eggs, are released into the wild, consumed, or processed for consumption within one year after they were purchased or hatched. This paragraph does not apply to the purchase of migratory waterfowl or their eggs.
+(c) A person may not introduce mute swans into the wild without a permit issued by the commissioner.

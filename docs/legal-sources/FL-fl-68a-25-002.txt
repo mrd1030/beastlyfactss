@@ -1,0 +1,44 @@
+# 68A-25.002, F.A.C., General Provisions for Taking, Possession and Sale of Reptiles: the alligator subsection and the opening of the turtle subsection
+
+sourceId: fl-turtles
+jurisdiction: FL
+url: https://www.flrules.org/gateway/RuleNo.asp?id=68A-25.002
+fetched: 2026-10-08
+fetch notes: flrules.org with a browser User-Agent, .doc extracted with a printable-run regex. Cut after the opening of subsection (6); the turtle rules are summarized in FL-fl-captive-and-nonnative.txt.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+68A-25.002 General Provisions for Taking, Possession and Sale of Reptiles.
+(1) In order to assure the optimal utilization of the estimated available alligator resource, the commission may by rule limit the number of participants engaged in the taking of alligators or their eggs from the wild. No person shall buy, sell, take, possess, transport, release, or import any American alligator, or any part thereof, or the nests or eggs of any American alligator except under permit from the executive director, as otherwise provided by this Title, or as follows:
+(a) Lawfully acquired, unskinned alligator carcasses with CITES tags legally affixed; skinned alligator carcasses with the CITES tag number and, if applicable, harvest tag number recorded on an attached tag; untanned hides with CITES tags legally affixed; and alligator feet, viscera, and skeletal parts may be bought, sold, possessed, transported, and imported without a permit provided that untanned alligator hides may only be bought by persons licensed pursuant to Section 379.364, F.S., and that records of transfers of alligator feet, viscera, and skeletal parts shall be maintained as specified in Rule 68A-25.052, F.A.C.
+(b) Persons permitted pursuant to Section 379.3761, F.S., and their employees may transport live, lawfully-possessed, untagged alligators to Florida locations for exhibition purposes and persons permitted pursuant to Section 379.3761, F.S., may sell, and they and their employees may transport, such alligators to:
+1. Other persons permitted pursuant to Section 379.3761, F.S.,
+2. To persons permitted to receive such alligators, or
+3. To persons out of state, provided that all transports/transfers conducted pursuant to subparagraphs 68A-25.002(1)(b)1., 2. and 3., F.A.C., shall be documented on a Captive Alligator and Egg Transportation/Transfer Document (FWC Form 1006AF).
+4. All originating exhibitor/seller(s) acting pursuant to this paragraph shall complete and sign the Captive Alligator and Egg Transportation/Transfer Document before the transport, obtain the signature of the recipient on the document, if appropriate, and forward the document to the Commission within 30 days following the date of transport. A copy of the completed document must accompany the alligators during transport.
+(2) Notwithstanding other provisions in this Title, untagged, lawfully-acquired, cured, and mounted crocodilian trophies; untagged, tanned crocodilian hides; and manufactured goods wholly or partly composed of crocodilian hide or other parts may be possessed, transported, and imported without a permit, but may only be sold in accordance with the following:
+(a) Documentary evidence of the source of acquisition of such crocodilian products held for sale shall be maintained until the products are sold. Such products held for sale and documentary evidence of the source of acquisition shall be subject to inspection by Commission personnel during reasonable hours.
+(b) No person shall sell such crocodilian products manufactured from a species declared to be endangered or threatened by the U.S. Fish and Wildlife Service or the Commission.
+(c) No person shall sell any crocodilian product manufactured in the form of a stuffed baby crocodilian less than three feet in length as measured from the tip of the snout to the tip of the tail that depicts an unnatural crocodilian body or body part positioning.
+(3) Any alligator, crocodile, caiman or similar reptile, or any part thereof, seized or otherwise acquired by the Commission may be sold.
+(4) The records of individuals or concerns selling any species of crocodilian will be subject to inspection and such individuals or concerns shall have in their possession invoices or other documentary evidence of the suppliers of such crocodilians. The advertisement or representation of any crocodilian other than American alligator, and meat and parts thereof, as alligator or “gator” and of caimans, and meat and parts thereof, as crocodile is prohibited.
+(5) No person shall use, be in possession of or attend any hook, peg or other such device baited in such a manner as to be capable of taking alligators and suspended so that the bait is above water or submerged less than six inches except nuisance-alligator trappers taking nuisance alligators pursuant to Rule 68A-25.003, F.A.C., and except as otherwise provided in Rules 68A-25.032, 68A-25.042, and 68A-25.049 F.A.C.
+(6) Turtles.
+(a) Take and possession – For turtles not listed in Chapter 68A-27, F.A.C., the following restrictions control the take or possession unless authorized in the Commission’s Species Conservation Measures and Permitting Guidelines, hereby incorporated by reference and available at the following links: Alligator Snapping Turtles, Macrochelys suwanniensis, M. apalachicolae, and M. temminckii, effective September 2018 (
+ HYPERLINK "https://www.flrules.org/Gateway/reference.asp?No=Ref-10418" 
+https://www.flrules.org/Gateway/reference.asp?No=Ref-10418
+); Lower Keys populations of peninsula ribbonsnake, Thamnophis sauritus sackenii, red rat snake, Pantherophis guttatus, and striped mud turtle, Kinosternon baurii, effective July 2020 (
+ HYPERLINK "http://www.flrules.org/Gateway/reference.asp?No=Ref-12169" 
+http://www.flrules.org/Gateway/reference.asp?No=Ref-12169
+); Suwannee cooter, effective July 2020 (
+ HYPERLINK "http://www.flrules.org/Gateway/reference.asp?No=Ref-12171" 
+http://www.flrules.org/Gateway/reference.asp?No=Ref-12171
+).
+1. No person shall take more than one turtle per day unless authorized by permit from the executive director as provided in Rule 68A-9.002, F.A.C.
+2. Turtle eggs may not be taken from the wild.
+3. Turtles may only be taken by hand, baited hooks, minnow seine nets or dip nets.
+4. No person shall take Escambia map turtles (Graptemys ernsti), cooters (Pseudemys spp.), striped mud turtles (Lower Keys population) (Kinosternon baurii) or snapping turtles (Chelydra spp.) from the wild.
+5. No person shall take, possess, transport, o

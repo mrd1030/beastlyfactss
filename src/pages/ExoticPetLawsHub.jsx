@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Map as MapIcon, MapPin } from 'lucide-react';
 import LEGAL from '@/lib/data/legalStatus.json';
+import { groupLegalAnimals } from '@/lib/data/legalGroups';
 import { JURISDICTIONS_AZ, CODE_TO_SLUG } from '@/lib/data/stateSlugs';
 import * as MdxComponents from '@/components/mdx';
 import MdxArticleBody from '@/components/shared/MdxArticleBody';
@@ -32,6 +33,9 @@ const SITE = 'https://beastlyfacts.com';
 const ANIMALS_AZ = Object.keys(LEGAL.animals).sort((a, b) =>
   LEGAL.animals[a].name.localeCompare(LEGAL.animals[b].name),
 );
+// The same animals under the picker's group headings, so the hub and the map
+// page lay the list out the same way.
+const ANIMAL_GROUPS = groupLegalAnimals(LEGAL.animals);
 
 // Read by the breadcrumb on every page this hub links into, which uses it to
 // go back through history rather than push this URL. The lists it links from
@@ -126,18 +130,25 @@ export default function ExoticPetLawsHub() {
             {ANIMALS_AZ.length} animals, each checked against all {stateCount}{' '}
             jurisdictions.
           </p>
-          <ul className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-2 list-none p-0">
-            {ANIMALS_AZ.map((id) => (
-              <li key={id} className="text-sm font-body">
-                <Link
-                  to={`/exotic-pet-laws/${id}/`} state={FROM_HUB}
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  {LEGAL.animals[id].name}
-                </Link>
-              </li>
+          <div className="space-y-6">
+            {ANIMAL_GROUPS.map(({ label, ids }) => (
+              <div key={label}>
+                <h3 className="font-display font-semibold text-base text-foreground mb-2">{label}</h3>
+                <ul className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-2 list-none p-0">
+                  {ids.map((id) => (
+                    <li key={id} className="text-sm font-body">
+                      <Link
+                        to={`/exotic-pet-laws/${id}/`} state={FROM_HUB}
+                        className="text-muted-foreground hover:text-foreground transition-colors"
+                      >
+                        {LEGAL.animals[id].name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
-          </ul>
+          </div>
         </section>
 
         {/* Real anchors rather than a state picker. A <select> that navigates on

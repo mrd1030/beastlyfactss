@@ -1,0 +1,39 @@
+# W. Va. Code § 20-1-2 (fur-bearing animals) and §§ 19-2H-2 to 19-2H-4, the Captive Cervid Farming Act
+
+sourceId: wv-19-2h
+jurisdiction: WV
+url: https://code.wvlegislature.gov/19-2H-2/
+fetched: 2026-10-08
+fetch notes: Plain curl with a browser User-Agent; site chrome stripped.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+==== W. Va. Code § 20-1-2, fur-bearing animals (https://code.wvlegislature.gov/20-1-2/) ====
+“Fur-bearing animals” includes: (a) The mink; (b) the weasel; (c) the muskrat; (d) the beaver; (e)
+the opossum; (f) the skunk and civet cat, commonly called polecat; (g) the otter; (h) the red fox;
+(i) the gray fox; (j) the wildcat, bobcat or bay lynx; (k) the raccoon; (l) the fisher; and (m)
+canis latrans var., more commonly known as the coyote.
+
+==== W. Va. Code § 19-2H-2(a), (b) (https://code.wvlegislature.gov/19-2H-2/) ====
+§19-2H-2. Definitions. As used in this article: (a) "Biosecurity" means measures, actions or
+precautions taken to prevent the transmission of disease in, among or between free-ranging and
+captive cervids. (b) "Captive cervid" or the plural means a member of the Cervidae family of animals
+including, but not limited to, fallow deer, red deer, white-tailed deer, axis deer, elk, moose,
+reindeer and caribou which are domesticated animals under the control of the owner of the animal.
+
+==== W. Va. Code § 19-2H-3(a) (https://code.wvlegislature.gov/19-2H-3/) ====
+§19-2H-3. Authority of the department; duties and obligations of the commissioner. (a) The
+department is hereby granted authority to regulate captive cervid farming facilities in this state
+in accordance with this article. Subject to the transition provisions contained in this article, no
+person may operate a captive cervid farming facility in this state unless that person holds a
+license issued by the commissioner pursuant to this article.
+
+==== W. Va. Code § 19-2H-4(c) (https://code.wvlegislature.gov/19-2H-4/) ====
+(c) The application shall be accompanied by the annual license fee as follows: (1) Class one
+license. -- For a facility to breed and propagate captive cervids, and create cervid byproducts, for
+sale to others, $375; or (2) Class two license. -- For a facility to breed, propagate, harvest or
+slaughter captive cervids, create cervid byproducts, permit hunting of captive cervids or sell
+venison to others, $750.

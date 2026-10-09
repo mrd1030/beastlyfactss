@@ -1,0 +1,23 @@
+# 50 CFR 17.11(h), the federal list that Wyoming Chapter 10 § 11(b)(xv) and Chapter 69 § 8(d) incorporate: tiger, lion, lemur, Florida panther, American alligator and caiman rows
+
+sourceId: wy-ch69
+jurisdiction: WY
+url: https://www.law.cornell.edu/cfr/text/50/17.11
+fetched: 2026-10-08
+fetch notes: Plain curl of Cornell LII's eCFR copy (www.ecfr.gov 404s to a cloud session); table rows flattened. Also read by the Missouri (3 CSR 10-9.110(2)) and South Carolina (S.C. Code § 50-15-30(C)(3)) cells, which incorporate the same list.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+==== 50 CFR 17.11(h), List of Endangered and Threatened Wildlife, selected rows (common name | scientific name | where listed | status | listing citations) ====
+Tiger | Panthera tigris | Wherever found | E | 35 FR 8491, 6/2/1970; 37 FR 6476, 3/30/1972. 
+Lion | Panthera leo leo | Wherever found | E | 80 FR 79999, 12/23/2015.
+Lion | Panthera leo melanochaita | Wherever found | T | 80 FR 79999, 12/23/2015; 50 CFR 17.40(r). 
+Lemurs | Lemuridae (incl. genera Lemur, Phaner, Hapalemur, Lepilemur, Microcebus, Allocebus, Cheirogaleus, Varecia ) | Wherever found | E | 35 FR 8491, 6/2/1970; 41 FR 24062, 6/14/1976; 41 FR 26019, 6/24/1976. 
+Panther, Florida | Puma (=Felis) concolor coryi | Wherever found | E | 32 FR 4001, 3/11/1967.
+Alligator, American | Alligator mississippiensis | Wherever found | T(S/A) | 32 FR 4001, 3/11/1967; 40 FR 44412, 9/26/1975; 
+Caiman, Apaporis River | Caiman crocodilus apaporiensis | Wherever found | E | 41 FR 24062, 6/14/1976.
+Caiman, brown | Caiman crocodilus fuscus (includes Caiman crocodilus chiapasius ) | Wherever found | T(S/A) | 65 FR 25867, 5/4/2000; 50 CFR 17.42(c). 4d
+Caiman, common | Caiman crocodilus crocodilus | Wherever found | T(S/A) | 65 FR 25867, 5/4/2000; 50 CFR 17.42(c).

@@ -1,0 +1,94 @@
+SOURCE: Wyo. Stat. § 23-1-101(a), definitions of wildlife (big game, furbearing, predatory, protected, trophy game), and § 23-2-305, capture of furbearing animals for domestication
+sourceId: wy-23-1-101
+jurisdiction: WY
+URL: https://www.wyoleg.gov/statutes/compress/title23.pdf
+FETCHED: 2026-10-08 (plain curl, pdftotext -layout; the compressed Title 23 PDF from wyoleg.gov)
+
+READ THIS FIRST. WY-wy-ch10-ch69.txt has only § 23-1-101(a)(xiii), the definition of wildlife.
+Chapter 10 of the Commission's rules turns on the other definitions, which are here. A "predatory
+animal" (coyote, jackrabbit, porcupine, raccoon, red fox, skunk, stray cat, and gray wolves outside
+the trophy area) is barred from IMPORTATION by Chapter 10 § 12 but may be POSSESSED without a permit
+if captured in Wyoming, by § 14(b). The lynx is a "protected animal", which Chapter 10 § 11(b)(xvi)
+puts beyond any permit. The black bear is a "trophy game animal", which § 11(a) bars from private
+ownership. The bobcat is a "furbearing animal", which § 13(a) puts under a permit, and § 23-2-305
+is the license to capture one for domestication or propagation.
+
+                        TITLE 23 - GAME AND FISH
+
+                       CHAPTER 1 - ADMINISTRATION
+
+                     ARTICLE 1 - GENERAL PROVISIONS
+
+    23-1-101.       Definitions of wildlife.
+
+    (a)     As used in this act:
+
+          (i) "Big game animal" means antelope, bighorn sheep,
+deer, elk, moose or mountain goat;
+
+          (ii) "Exotic species" means any wild animals,
+including amphibians, reptiles, mollusks, crustaceans or birds
+not found in a wild, free or unconfined status in Wyoming;
+
+          (iii) "Furbearing animal" means badger, beaver,
+bobcat, marten, mink, muskrat or weasel;
+
+          (iv) "Game bird" means grouse, partridge, pheasant,
+ptarmigan, quail, wild turkey and migratory game birds;
+
+          (v) "Game fish" means bass, catfish, crappie,
+grayling, burbot, northern pike, perch, salmon, sauger, sunfish,
+trout, walleye or whitefish unless the species is otherwise
+designated by the commission in specific waters through rule and
+regulation;
+
+          (vi) "Migratory game bird" means all migratory game
+birds defined and protected under federal law;
+
+            (vii)    "Predacious bird" means English sparrow and
+starling;
+
+            (viii)    "Predatory animal" means:
+
+               (A) Coyote, jackrabbit, porcupine, raccoon, red
+fox, skunk or stray cat; and
+
+               (B) Until the date gray wolves are removed from
+the list of experimental nonessential population, endangered
+species or threatened species in Wyoming as provided by W.S.
+23-1-108, "predatory animal" includes wolves. After that date,
+"predatory animal" shall include any gray wolf within areas of
+the state where the state of Wyoming has jurisdiction for
+wildlife management, but not within an area of the state in
+which the gray wolf is:
+
+                    (I) Designated as a trophy game animal
+under subdivision (xii)(B)(I) or (II) of this subsection.
+
+                    (II)   Repealed By Laws 2012, Ch. 25, § 2.
+
+          (ix) "Protected animal" means black-footed ferret,
+fisher, lynx, pika or wolverine;
+
+          (x) "Protected bird" means migratory birds as defined
+and protected under federal law;
+
+          (xi) "Small game animal" means cottontail rabbit or
+snowshoe hare, and fox, grey and red squirrels;
+
+         (xii)   "Trophy game animal" means:
+
+              (A)   Black bear, grizzly bear or mountain lion;
+and
+          [subparagraph (B), the gray wolf trophy game areas, omitted]
+
+     23-2-305.   Capture of furbearing animals for domestication;
+license; fee.
+
+Any resident person who desires to capture furbearing animals
+for domestication or propagation shall apply for and pay to the
+department the proper fee for a license to capture furbearing
+animals for the purposes of domestication or propagation. The
+department may issue the license under such restrictions as it
+deems necessary.
+

@@ -1,0 +1,296 @@
+# OAR 635-049, Private Holding or Propagating of Cervid Species
+
+sourceId: or-635-049
+jurisdiction: OR
+url: https://secure.sos.state.or.us/oard/ruleSearchResults.action?ruleNumber=635-049-0015
+fetched: 2026-10-08
+fetch notes: secure.sos.state.or.us now 302s view.action to ruleSearchResults.action with a session id; fetch https://secure.sos.state.or.us/oard/ruleSearchResults.action?ruleNumber=635-049-<n> with a browser User-Agent and a cookie jar (-c/-b). Tags stripped; repealed rules kept as their history lines.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+635-049-0005
+Definitions
+The following define terms used in these Division 049 cervid-holding rules:
+(1) “Cervids” are animals of the family Cervidae (deer, elk, moose, reindeer, and caribou).
+(2) A “captive cervid” is any live cervid held in a state of more than temporary confinement.
+(3) “Department”, unless otherwise specified in these rules, means the Oregon Department of Fish and Wildlife.
+(4) “Division Administrator” means the Wildlife Division Administrator of the Oregon Fish and Wildlife Department.
+(5) “Director”, unless otherwise specified in these rules, means the Director of the Oregon Department of Fish and Wildlife.
+(6) “Double-fenced” means two parallel lines of fence spaced no less than 10 feet apart.
+(7) “Escape” is when a captive cervid leaves a holding facility and wanders freely without an intentional or negligent act by the holder.
+(8) A “hybrid” is an animal produced by crossing the sperm or egg of an individual of one species or subspecies with the egg or sperm of an individual of any other species or subspecies.
+(9) “Native cervids” are those endemic to Oregon (mule deer, black-tailed deer, white-tailed deer, Roosevelt elk, Rocky Mountain elk and moose).
+(10) “Non-native cervids” are cervids other than native cervids.
+(11) “Person” means any individual, partnership, corporation, limited liability company, trust, association or governmental entity.
+(12) “Release” is when a holder intentionally or through negligence allows a captive cervid to leave a holding facility and wander freely.
+(13) A “wild cervid” is a native cervid born in the wild.
+Statutory/Other Authority:
+ ORS 496.012, 496.138, 496.146, 496.162, 497.228, 498.002, 498.019, 498.052 & 174.106
+Statutes/Other Implemented:
+ ORS 496.012, 496.138, 496.146, 496.162, 497.228, 498.002, 498.019, 498.052 & 174.106
+History:
+        DFW 52-2008, f. & cert. ef. 5-28-08
+
+
+
+635-049-0010
+Cervid Holding and Propagation Policy
+History:
+        Repealed by DFW 52-2008, f. & cert. ef. 5-28-08
+        DFW 15-2000, f. & cert.ef. 3-31-00
+        FWC 9-1993, f. & cert. ef. 2-8-93
+
+
+
+635-049-0015
+Basic Requirements
+(1) Cervids may not be held except as authorized by a cervid license issued by the Department.
+(a) To hold Rocky Mountain elk (Cervus elaphus nelsoni), Roosevelt elk (Cervus elaphus roosevelti), Sika deer (Cervus nippon), Muntjac deer (Muntiacus sp.), white-tailed deer (Odocoileus virginianus) or black-tailed deer (Odocoileus hemionus columbianus), a Type 1 license is required.
+(b) To hold fallow deer (Dama dama) or reindeer (Rangifer tarandus), a Type 2 license is required.
+(c) No other species or subspecies of cervids may be held under a cervid license.
+(2) The following are exceptions to the cervid license requirements of subsection (1):
+(a) A scientific take permit issued pursuant to OAR chapter 635, division 043 may authorize the holding of cervids for the purpose of scientific research;
+(b) A wildlife rehabilitation permit issued pursuant to OAR dhapter 635, division 044 may authorize the temporary holding of wild cervids for the purpose of rehabilitation and return to the wild;
+(c) Public agencies may hold cervids as necessary in the performance of their official duties. Temporary holding of cervids by public agencies is not subject to these division 049 rules. The Director may exempt a public agency’s permanent holding of cervids from any or all of these division 049 rules upon a finding that the operation would not tend to be harmful to existing wildlife populations and would significantly benefit the public.
+(3) Hybridization of native cervids held in captivity is prohibited, except that:
+(a) Hybrids of Rocky Mountain and Roosevelt elk may be held if specifically authorized in the license.
+(b) Hybrids of native cervids and other native or non-native cervids may be held as part of a scientific effort if determined by the Director of the Department to be of overwhelming benefit to wildlife or wildlife habitat in Oregon and if specifically authorized as a condition of a license.
+(4) No pairings between wild and captive cervids are allowed for the purpose of producing offspring unless specifically authorized as a license condition.
+(5) If a licensed facility contains no cervids for more than 180 consecutive days, the license is deemed forfeited. Anyone whose license the Department proposes to forfeit may request a contested case hearing within 14 days of notice of the proposed decision.
+Statutory/Other Authority:
+ ORS 496.012, 496.138, 496.146, 496.162, 497.228, 498.002, 498.019, 498.052 & 174.106
+Statutes/Other Implemented:
+ ORS 496.012, 496.138, 496.146, 496.162, 497.228, 498.002, 498.019, 498.052 & 174.106
+History:
+        DFW 52-2008, f. & cert. ef. 5-28-08
+
+
+
+635-049-0020
+Exceptions
+History:
+        Repealed by DFW 52-2008, f. & cert. ef. 5-28-08
+        DFW 4-2001, f. & cert. ef. 2-22-01
+        DFW 15-2000, f. & cert.ef. 3-31-00
+        DFW 21-1999, f. & cert. ef. 3-30-99
+        DFW 96-1998, f. & cert. ef. 11-25-98
+        FWC 12-1995, f. & cert. ef. 2-15-95
+        FWC 9-1993, f. & cert. ef. 2-8-93
+
+
+
+635-049-0025
+Import, Export, Transport Other than to Licensed Facilities
+(1) It is unlawful to import live cervids. However, live fallow deer and/or reindeer that leave Oregon temporarily for educational or display purposes may return to Oregon upon obtaining any necessary Department of Agriculture permits, provided:
+(a) The fallow deer and/or reindeer have had no contact with other cervids while outside Oregon; and
+(b) The Department of Fish and Wildlife is notified each time before the fallow deer and/or reindeer re-enter Oregon.
+(c) The Department of Fish and Wildlife is provided a schedule of off facility locations and dates before the fallow deer and/or reindeer are transported outside the facility.
+(2) Cervid gametes or embryos may be imported into Oregon only under the following conditions:
+(a) The person proposing to import provides the Department with documentation of the pedigree of the parents;
+(b) The gametes or embryos are of the species or subspecies for which the recipient is licensed to hold; and
+(c) The Department approves the import proposal in advance as posing no threat to native wildlife.
+(3) Live cervids, gametes and embryos may be exported from Oregon, and cervid gametes and embryos may be imported into Oregon, only by a holder of an Oregon license valid for that species or subspecies, and provided that the licensee complies with all requirements of the Oregon Department of Agriculture governing transport, import and export in addition to provisions of OAR chapter 635 division 049.
+(4) To the extent import or export of cervids, gametes or embryos is allowed by the above, any person proposing such import or export must obtain a permit from the Department of Fish and Wildlife in advance.
+(5) Note the requirements of OAR 635-049-0265 governing transport of cervids.
+(6) Effective January 1, 2009, it is unlawful for any person to export any bull elk that the person knows or should know will be used in a shooter bull operation. A “shooter bull operation” means a privately owned entity offering the hunting of bull elk for a fee or other remuneration within a fenced enclosure designed to prevent the elk’s escape into the wild.
+Statutory/Other Authority:
+ ORS 496.012, 496.138, 496.146, 496.162, 497.228, 498.002, 498.019, 498.052 & 174.106
+Statutes/Other Implemented:
+ ORS 496.012, 496.138, 496.146, 496.162, 497.228, 498.002, 498.019, 498.052 & 174.106
+History:
+        DFW 107-2011, f. & cert. ef. 8-4-11
+        DFW 62-2011, f. & cert. ef. 6-3-11
+        DFW 169-2010(Temp), f. 12-29-10, cert. ef. 1-1-11 thru 6-27-11
+        DFW 65-2009, f. & cert. ef. 6-10-09
+        DFW 52-2008, f. & cert. ef. 5-28-08
+
+
+
+635-049-0030
+Cervids that May Not Be Held
+History:
+        Repealed by DFW 52-2008, f. & cert. ef. 5-28-08
+        DFW 126-2002, f. & cert. ef. 11-12-02
+        DFW 15-2000, f. & cert.ef. 3-31-00
+        FWC 9-1993, f. & cert. ef. 2-8-93
+
+
+
+635-049-0035
+Hunting of Privately Held Cervids Prohibited
+It is unlawful to hunt, kill, or attempt to hunt or kill cervids held by a private party; however:
+(1) Any person may slaughter such a cervid for meat or leather production;
+(2) Any person may euthanize such a cervid for scientific, health, safety or other valid husbandry concerns; and
+(3) The Department's Wildlife Division Administrator may authorize any person to hunt or kill a captive cervid if the Division Administrator determines it would be in the best interest of sound wildlife management. The Division Administrator may impose conditions on such authorizations.
+Statutory/Other Authority:
+ ORS 496.012, 496.138, 496.146, 496.162, 497.228, 498.002, 498.019, 498.052 & 174.106
+Statutes/Other Implemented:
+ ORS 496.012, 496.138, 496.146, 496.162, 497.228, 498.002, 498.019, 498.052 & 174.106
+History:
+        DFW 52-2008, f. & cert. ef. 5-28-08
+
+
+
+635-049-0040
+Cervids that May Be Held
+History:
+        Repealed by DFW 52-2008, f. & cert. ef. 5-28-08
+        DFW 15-2000, f. & cert.ef. 3-31-00
+        FWC 12-1995, f. & cert. ef. 2-15-95
+        FWC 9-1993, f. & cert. ef. 2-8-93
+
+
+
+635-049-0045
+Release or Escape of Captive Cervids
+(1) It is unlawful to release, or to negligently allow to escape, any captive cervids without first obtaining a permit from the Department pursuant to ORS 498.052, or unless operating under a rehabilitation or scientific take permit.
+(2) Any cervids that have escaped or been illegally released from captivity are deemed a public nuisance.
+(3) Captive cervids that have escaped or been illegally released from a holding facility are unprotected wildlife, and therefore may be killed by any person authorized under provisions of 635-049-0035(3).
+(4) Any person holding cervids other than under a rehabilitation or scientific take license or permit must notify the Department immediately of any release or escape of cervids and must, at their own expense, recapture or destroy the cervids within 72 hours of discovering the release or escape. If they do not recapture or destroy the released or escaped cervids within 72 hours, the Department or its agent may capture or destroy such cervids. The Department may seek reimbursement from the holder for any expenses the State of Oregon incurs in recovering, maintaining or disposing of such cervids, plus any damage to the state's wildlife or wildlife habitat. In deciding whether to seek reimbursement, the Department will consider the nature, scope and environmental impact of the release or escape, as well as whether the holder acted promptly and in a cooperative manner to deal with the release or escape. If the Department demands reimbursement, the holder must reimburse the Department in full within 30 days of receipt of the written demand.
+(5) Any person holding cervids must keep wild cervids out of enclosures holding at least one captive cervid. If a wild cervid enters an enclosure holding at least one captive cervid, the holder must notify the Department and remove the wild cervid as soon as practicable.
+(6) Notwithstanding subsection (4), if the Division Administrator determines that released or escaped cervids present an imminent danger to wildlife, the Division Administrator may take whatever action deemed appropriate, including destruction of the released or escaped cervids. Similarly, if the Division Administrator determines that a holder has failed to remove a wild cervid from an enclosure holding at least one captive cervid as soon as practicable, the Department may remove the wild cervid.
+Statutory/Other Authority:
+ ORS 496.012, 496.138, 496.146, 496.162, 497.228, 498.002, 498.019, 498.052 & 174.106
+Statutes/Other Implemented:
+ ORS 496.012, 496.138, 496.146, 496.162, 497.228, 498.002, 498.019, 498.052 & 174.106
+History:
+        DFW 52-2008, f. & cert. ef. 5-28-08
+
+
+
+635-049-0050
+Petition Process for Those Holding Cervids Without a License or Permit
+History:
+        Repealed by DFW 52-2008, f. & cert. ef. 5-28-08
+        DFW 15-2000, f. & cert.ef. 3-31-00
+        FWC 9-1993, f. & cert. ef. 2-8-93
+
+
+
+635-049-0055
+Disease Testing
+History:
+        Repealed by DFW 65-2009, f. & cert. ef. 6-10-09
+        DFW 52-2008, f. & cert. ef. 5-28-08
+
+
+
+635-049-0060
+Hunting of Cervids that Are Held Specifically Prohibited
+History:
+        Repealed by DFW 52-2008, f. & cert. ef. 5-28-08
+        DFW 15-2000, f. & cert.ef. 3-31-00
+        FWC 9-1993, f. & cert. ef. 2-8-93
+
+
+
+635-049-0065
+Disease Testing; Cervid Disease Surveillance List
+(1) Any person holding cervids must, after discovery of the death of any captive cervid in their custody:
+(a) Report the death to a Department veterinarian by telephone, electronic mail or fax within 24 hours, providing animal ID number, date, and cause of death; and
+(b) Test the cervid per the requirements of the Cervid Disease Surveillance List (CDSL). Table 1 summarizes the current requirements of the CDSL. Paragraph (2) below addresses those requirements in detail. [Table not included. See ED. NOTE]
+(2) The following apply to any tests required by the CDSL:
+(a) Where, in consultation with the Oregon Department of Agriculture’s State Veterinarian, the Department determines that a captive cervid’s clinical signs or death suggests a high risk of disease, the Department may (in addition to any testing required by the CDSL) also subject the carcass to a necropsy by a state or federal veterinarian or veterinary pathologist or accredited veterinarian as directed by the Department at the Department’s expense.
+(b) The CDSL testing requirements apply to any captive cervid dying of any cause at the age of six months or older. The holder is responsible for having the required tests performed, as per one of the following three options:
+(A) The holder may choose to have the Department collect the samples;
+(B) The holder may choose to have an accredited veterinarian collect the samples (so long as the veterinarian is not the holder or a member of the holder’s immediate family); or
+(C) The holder may choose to make other arrangements to collect and submit samples for required testing. The holder is responsible for ensuring that the test results are immediately and directly reported to the Department’s veterinarian. If the holder chooses this option, the holder must submit all required tissues (obex, tonsilar, and medial retropharyngeal lymph nodes) to a testing facility accredited by the U.S. Department of Agriculture. The producer bears all collection and submission costs.
+(c) The Department may waive the testing requirements of paragraph (1)(b) if the Department finds that the person was unable to complete testing due to one of the following circumstances:
+(A) The animal was destroyed by fire (as verified in writing by a fire official with jurisdiction over the area where the fire occurred);
+(B) The head was destroyed by a predator (as verified in writing by a Department biologist, an Oregon State Police Fish and Wildlife Division trooper or an employee of U.S. Department of Agriculture, Wildlife Services);
+(C) The animal was stolen (as verified in writing by a law enforcement officer with jurisdiction over the area where the animal was stolen);
+(D) The test sample was lost or destroyed while in the custody of a veterinarian, laboratory, the Department, Oregon Department of Agriculture or U.S. Department of Agriculture (as verified in writing by the responsible party);
+(E) The test sample was damaged or destroyed during slaughter at a USDA certified facility during the culling process or removal of the head (as verified by a USDA inspector); or
+(F) Any other circumstance where the Department determines that loss of the animal or sample was due to a circumstance that was reasonably outside the control of the person.
+(3) An “unauthorized cervid” is one which was required to be listed in the holder’s annual report for the previous year but was not so listed, or is one of a species or subspecies (or a hybrid of a species) which is not authorized by the holder’s license. Upon a finding that an unauthorized cervid poses a risk to other captive cervids in a facility, the Department may also require testing of all cervids within the facility.
+(4) If the Department determines that a captive cervid herd has been exposed to a disease on the Cervid Disease Surveillance List and that the exposure poses an imminent threat to wildlife, livestock or public health, the Department may take any appropriate action it determines necessary, including but not limited to confinement, testing or destruction of the affected captive cervids.
+(5) If the Department determines that a licensed cervid holder has failed to comply with the testing requirements of this rule, and that such failure puts captive cervids or native wildlife at risk of disease or genetic harm, the Department may issue a hold order for any of the holder’s captive cervids. A hold order may prohibit captive cervids from being moved outside the facility, from entering designated portions of the facility, or from contact with other captive animals.
+[ED. NOTE: Tables referenced are available from the agency.]
+[ED. NOTE: To view attachments referenced in rule text, click here for PDF copy.]
+Statutory/Other Authority:
+ ORS 496.012, 496.138, 496.146, 496.162, 497.228, 498.002, 498.019, 498.052 & 174.106
+Statutes/Other Implemented:
+ ORS 496.012, 496.138, 496.146, 496.162, 497.228, 498.002, 498.019, 498.052 & 174.106
+History:
+        DFW 65-2009, f. & cert. ef. 6-10-09
+
+
+
+635-049-0070
+Possession of Cervids Without a Permit or License Prohibited
+History:
+        Repealed by DFW 52-2008, f. & cert. ef. 5-28-08
+        DFW 15-2000, f. & cert.ef. 3-31-00
+        FWC 12-1995, f. & cert. ef. 2-15-95
+        FWC 9-1993, f. & cert. ef. 2-8-93
+
+
+
+635-049-0075
+Genetic Requirements
+Any person holding cervids must comply with the following genetics management requirements:
+(1) The holder must inform the Department in advance of any in vitro fertilization or artificial insemination of captive cervids;
+(2) Upon demand by the Department, the holder must verify that a cervid born from in vitro fertilization or artificial insemination is of a species or subspecies authorized by the holder’s license.
+(3) The Department may, at its discretion and expense, subject any captive cervids to genetic analysis;
+(4) If the Department determines that an unauthorized cervid exists at a cervid holding facility, the holder must have all cervids in the facility genetically tested as directed by the Department and at the holder’s expense. An “unauthorized cervid” is one which was not listed in the holder’s annual report for the previous year or one of a species or subspecies (or a hybrid of a species) which is not authorized by the holder’s license.
+(5) If the Department determines that a holder is holding any unauthorized cervids, the holder must kill or otherwise legally dispose of those cervids within 30 days of the Department’s determination. The Department bears no liability for such a determination. “Otherwise legally dispose” means to legally export from Oregon or transfer to a licensed Oregon facility that is authorized to hold such cervids.
+Statutory/Other Authority:
+ ORS 496.012, 496.138, 496.146, 496.162, 497.228, 498.002, 498.019, 498.052 & 174.106
+Statutes/Other Implemented:
+ ORS 496.012, 496.138, 496.146, 496.162, 497.228, 498.002, 498.019, 498.052 & 174.106
+History:
+        DFW 52-2008, f. & cert. ef. 5-28-08
+
+
+
+635-049-0080
+Release of Cervids Held Specifically Prohibited
+History:
+        Repealed by DFW 52-2008, f. & cert. ef. 5-28-08
+        DFW 15-2000, f. & cert.ef. 3-31-00
+        FWC 9-1993, f. & cert. ef. 2-8-93
+
+
+
+635-049-0090
+Requirements Upon the Death of Any Cervids Held
+History:
+        Repealed by DFW 65-2009, f. & cert. ef. 6-10-09
+        DFW 52-2008, f. & cert. ef. 5-28-08
+        DFW 15-2000, f. & cert.ef. 3-31-00
+        FWC 9-1993, f. & cert. ef. 2-8-93
+
+
+
+635-049-0100
+Requirements for Disease Testing of Cervids Held or Imported
+History:
+        Repealed by DFW 52-2008, f. & cert. ef. 5-28-08
+    Reverted to DFW 126-2002, f. & cert. ef. 11-12-02
+        DFW 127-2002(Temp), f. & cert. ef. 11-14-02 thru 2-11-03
+        DFW 126-2002, f. & cert. ef. 11-12-02
+        DFW 114-2002(Temp), f. & cert. ef. 10-18-02 thru 2-11-03
+        DFW 90-2002(Temp), f. & cert. ef. 8-16-02 thru 2-11-03
+        DFW 15-2000, f. & cert.ef. 3-31-00
+        FWC 9-1993, f. & cert. ef. 2-8-93
+
+
+
+635-049-0110
+Requirements for Genetic Testing of Cervids Held or Imported
+History:
+        Repealed by DFW 52-2008, f. & cert. ef. 5-28-08
+        DFW 15-2000, f. & cert.ef. 3-31-00
+        FWC 9-1993, f. & cert. ef. 2-8-93
+
+
+
+635-049-0120
+Suspension, Revocation, or Non-Renewal of Permits or Licenses for Cervids Held
+History:
+        Repealed by DFW 52-2008, f. & cert. ef. 5-28-08
+        DFW 15-2000, f. & cert.ef. 3-31-00
+        FWC 9-1993, f. & cert. ef. 2-8-93

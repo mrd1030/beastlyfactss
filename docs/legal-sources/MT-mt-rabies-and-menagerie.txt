@@ -1,0 +1,89 @@
+SOURCE: Montana Code Annotated §§ 50-23-101 and 50-23-102 (rabies control, possession of wild animals) and §§ 87-4-801 to 87-4-804 (menageries, sanctuaries and zoos)
+sourceId: mt-50-23-102 (rabies part); mt-87-4-8 (menagerie part)
+jurisdiction: MT
+URL: https://mca.legmt.gov/bills/mca/title_0500/chapter_0230/part_0010/section_0020/0500-0230-0010-0020.html and https://mca.legmt.gov/bills/mca/title_0870/chapter_0040/part_0080/section_0010/0870-0040-0080-0010.html
+FETCHED: 2026-10-08 (plain curl with a browser User-Agent; site chrome stripped, Montana Code Annotated 2025)
+
+READ THIS FIRST. Montana has a second, older possession ban outside the exotic wildlife scheme.
+Title 50 makes it unlawful to possess a "wild animal", defined as "a skunk, fox, raccoon, or bat",
+unless it was held for 6 months before 1 January 1982 or is in a fur farm, a no-contact zoo exhibit
+or a research institution. "Fox" carries no species or nativity limit. Separately, Title 87 part 8
+licenses a "wild animal menagerie", which is a place where bears or large cats are kept "for use
+other than public exhibition", that is, privately; it is capped at 10 animals, which must come
+captive bred from a licensed source.
+
+TITLE 50. HEALTH AND SAFETY
+CHAPTER 23. RABIES CONTROL
+Part 1. Restrictions on Possession of Wild Animals
+Definitions
+50-23-101 . Definitions. Unless the context requires otherwise, in this part, the following definitions apply:
+(1) "Department of livestock" means the department of livestock provided for in Title 2, chapter 15, part 31.
+(2) "Department of public health and human services" means the department of public health and human services provided for in 2-15-2201 .
+(3) "Person" means an individual, group of individuals, partnership, corporation, firm, or association.
+(4) "Wild animal" means a skunk, fox, raccoon, or bat. Other species of normally nondomesticated animals known to be capable of transmitting rabies may be added to this list through the adoption of rules by the department of public health and human services, with the approval of the department of livestock.
+History:  En. Sec. 1, Ch. 448, L. 1981; amd. Sec. 124, Ch. 418, L. 1995; amd. Sec. 302, Ch. 546, L. 1995.
+
+TITLE 50. HEALTH AND SAFETY
+CHAPTER 23. RABIES CONTROL
+Part 1. Restrictions on Possession of Wild Animals
+Prohibition Of Possession Of Wild Animals - Exceptions
+50-23-102 . Prohibition of possession of wild animals - exceptions. A person may not possess a wild animal unless the person possessed it for at least 6 months prior to January 1, 1982, or it is used in a fur-bearing enterprise, contained in a zoological exhibition in a manner that it may not come in physical contact with members of the public, or acquired by an educational institution for scientific research.
+History:  En. Sec. 2, Ch. 448, L. 1981; amd. Sec. 1834, Ch. 56, L. 2009.
+
+TITLE 87. FISH AND WILDLIFE
+CHAPTER 4. COMMERCIAL ACTIVITIES
+Part 8. Menageries, Sanctuaries, and Zoos
+Definitions
+87-4-801 . Definitions. As used in this part unless the context requires otherwise, the following definitions apply:
+(1) "Roadside menagerie" means any place where one or more wild animals, including birds, reptiles, and the like, are kept in captivity for the evident purpose of exhibition, attracting trade, or other commercial purposes on or off the facility premises. It does not include the exhibition of any animal by an educational institution or by a traveling theatrical exhibition or circus based outside of Montana.
+(2) "Wild animal" means an animal that is wild by nature as distinguished from the common domestic animals, whether the animal was bred or reared in captivity, and includes birds and reptiles.
+(3) "Wild animal menagerie" means any place where one or more bears or large cats, including cougars, lions, tigers, jaguars, leopards, pumas, cheetahs, ocelots, and hybrids of those large cats are kept in captivity for use other than public exhibition.
+(4) "Wildlife sanctuary" means a facility organized as a Montana nonprofit corporation pursuant to Title 35, chapter 2, or in good standing with and accredited by the American sanctuary association or the global federation of animal sanctuaries for the purpose of providing homes for nonreleasable wild animals. Accreditation and good standing must be proven with a copy of an accreditation report completed as required by the accrediting organization.
+(5) "Zoo" means any zoological garden chartered as a nonprofit corporation by the state or in good standing with and accredited by the association of zoos and aquariums or the zoological association of America for the purpose of exhibiting wild animals for public viewing. Accreditation and good standing must be proven with a copy of an accreditation report completed as required by the accrediting organization.
+History:  En. Sec. 1, Ch. 130, L. 1969; amd. Sec. 45, Ch. 511, L. 1973; R.C.M. 1947, 26-1205; amd. Sec. 2, Ch. 322, L. 1999; amd. Sec. 1, Ch. 211, L. 2021.
+
+TITLE 87. FISH AND WILDLIFE
+CHAPTER 4. COMMERCIAL ACTIVITIES
+Part 8. Menageries, Sanctuaries, and Zoos
+Permits
+87-4-803 . Permits. (1) (a) The department may grant permits for roadside menageries, wild animal menageries, wildlife sanctuaries, and zoos. Application for a permit must be made to the director on a form prescribed by the director.
+(b) The annual permit fee for five or fewer animals is $10. The annual permit fee for more than five animals is $25. Permits are valid for the year in which they are issued through February 28 of the year following issuance but may be renewed upon payment of the annual fee and submission of a renewal application.
+(c) This section does not apply to roadside menageries, wild animal menageries, wildlife sanctuaries, and zoos operated by the United States, the state of Montana, or any county or city.
+(d) A person who subscribes to any false statement in an application for a permit is subject to the provisions of 87-6-715 and may be denied a permit.
+(2) (a) A permit application for a roadside menagerie must include:
+(i) the applicant's name and address;
+(ii) the exact location of the facility;
+(iii) a list of species and the number of animals to be held in the facility;
+(iv) the type of facility contemplated, including cage specifications;
+(v) a copy of all required federal permits for exhibition of wild animals; and
+(vi) a copy of a liability insurance policy to cover bodily injury or property damage.
+(b) A permit application for a wild animal menagerie must include:
+(i) the applicant's name and address;
+(ii) the exact location of the facility, together with the nature of the applicant's title to the land, whether in fee, under lease, by contract for deed, or otherwise;
+(iii) a list of species and the number of animals to be held in the facility;
+(iv) the type of facility contemplated, including cage specifications; and
+(v) information demonstrating that the applicant is responsible.
+(c) A permit application for a wildlife sanctuary or a zoo must include:
+(i) the applicant's name and address;
+(ii) the exact location of the facility;
+(iii) a copy of the nonprofit corporation documents approved by the secretary of state's office;
+(iv) a copy of the required federal permits for exhibition of wild animals; and
+(v) if applicable, a copy of the association of zoos and aquariums, the zoological association of America, the American sanctuary association, or the global federation of animal sanctuaries accreditation program specific to the facility.
+(3) Renewal applications for roadside menageries and wild animal menageries must include an accounting of all wild animals on the facility.
+(4) A permit may not be granted by the department until it has satisfactorily verified that the provisions for housing and caring for the animals and for protecting the public are proper and adequate and in accordance with the standards established by the department.
+(5) A permit is not transferable to another person.
+History:  En. Secs. 2, 3, Ch. 130, L. 1969; amd. Sec. 13, Ch. 417, L. 1977; R.C.M. 1947, 26-1206(1), 26-1207; amd. Sec. 4, Ch. 322, L. 1999; amd. Sec. 112, Ch. 258, L. 2011; amd. Sec. 3, Ch. 211, L. 2021; amd. Sec. 4, Ch. 50, L. 2025.
+
+TITLE 87. FISH AND WILDLIFE
+CHAPTER 4. COMMERCIAL ACTIVITIES
+Part 8. Menageries, Sanctuaries, and Zoos
+Permit To Obtain Wild Animals
+87-4-804 . Permit to obtain wild animals. (1) It is unlawful to obtain healthy wild animals for a roadside menagerie, wild animal menagerie, wildlife sanctuary, or zoo by capture from the wild or by purchase except that the capture and holding of injured wildlife or wildlife deemed nonreleasable by the department and the United States fish and wildlife service due to injury, human conflict, or seizure is permissible in accordance with the terms of a permit issued pursuant to this section.
+(2) Application for a capture permit may be made only by a wildlife sanctuary or a zoo and must be made to the director on a form prescribed by the director. After investigation by the department, the director may issue a capture permit without charge if the director finds:
+(a) that all provisions of this part and of the department regulations are complied with by the applicant; and
+(b) that the number and species of wildlife desired is not excessive under the circumstances.
+(3) If wild animals are to be obtained by capture for use in a wildlife sanctuary or a zoo, the permit must designate the number and the means of capture, but ownership of the wild animals captured must remain in the state of Montana.
+(4) Roadside menageries, wild animal menageries, wildlife sanctuaries, and zoos may obtain captive-bred wild animals from a licensed zoo, menagerie, alternative livestock ranch, fur farm, game bird farm, wildlife sanctuary, or animal rehabilitation center.
+(5) Wild animals may be bought, sold, or transferred under regulations that the department prescribes.
+(6) The number of wild animals in a wild animal menagerie may not exceed 10.
+History:  En. Sec. 4, Ch. 130, L. 1969; amd. Sec. 13, Ch. 417, L. 1977; R.C.M. 1947, 26-1208; amd. Sec. 5, Ch. 322, L. 1999; (5) and (6) En. Sec. 7, Ch. 322, L. 1999; amd. Sec. 4, Ch. 211, L. 2021.

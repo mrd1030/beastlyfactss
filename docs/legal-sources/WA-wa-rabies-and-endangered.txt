@@ -1,0 +1,92 @@
+SOURCE: Washington: WAC 246-100-197 (rabies), RCW 16.30.010 to 16.30.030 (dangerous wild animals),
+        RCW 77.15.120 and WAC 220-610-010 (endangered wildlife)
+sourceId: wa-wac-246-100-197 / wa-rcw-16-30 / wa-rcw-77-15-120
+jurisdiction: WA
+URL: https://app.leg.wa.gov/WAC/default.aspx?cite=246-100-197
+     https://app.leg.wa.gov/RCW/default.aspx?cite=16.30&full=true
+     https://app.leg.wa.gov/RCW/default.aspx?cite=77.15.120
+     https://app.leg.wa.gov/WAC/default.aspx?cite=220-610-010
+FETCHED: 2026-10-08 (plain curl; tags and site chrome stripped)
+
+READ THIS FIRST. The rule that answers the rabies-vector carnivores in Washington is not a wildlife
+rule at all. It is the Department of Health's rabies rule, and WAC 246-100-197(5)(a) bars ALL PERSONS
+from acquiring, selling, bartering, exchanging, giving, purchasing, distributing or trapping to retain
+"any bat, skunk, fox, raccoon, or coyote", except a zoological park, animal exhibitor, research
+facility or wildlife rehabilitator, and (5)(b) bars importing one except by those bodies under an
+entry permit. "Fox" is unqualified, so it reaches every fox, exotic or native. RCW 16.30 does not
+reach a native animal: 16.30.020(1)(k) exempts "native wildlife subject to Title 77 RCW", and its
+canid entry is "wolves, excluding wolf-hybrids". RCW 77.15.120 makes possessing commission-listed
+endangered wildlife an offence, and WAC 220-610-010 lists the North American lynx.
+
+==== WAC 246-100-197, definitions (2)(c), (e), (i) and subsection (5) ====
+(c) "Cat" means an animal of the species Felis domesticus, and excludes felid hybrid animals.
+(d) "Certificate of veterinary inspection" means a legible veterinary health inspection certificate on an official form (electronic or paper) from the state of origin or from Animal and Plant Health Inspection Service (APHIS), United States Department of Agriculture (USDA) executed by a licensed and accredited veterinarian or a veterinarian approved by APHIS, USDA.
+(e) "Dog" means an animal of the species Canis familiaris and excludes canid hybrid animals.
+(f) "Entry permit" means prior written permission from the director of the department of agriculture.
+(g) "Euthanize" means to humanely destroy an animal by a method that involves instantaneous unconsciousness and immediate death or by a method that causes painless loss of consciousness and death during the loss of consciousness.
+(h) "Ferret" means an animal of the species Mustela furo.
+(i) "Hybrid" means any mammal which is the offspring of the reproduction between any species of:
+(i) Wild canid or hybrid wild canid and a domestic dog or hybrid wild canid, or is represented by its owner to be a wolf hybrid, coyote hybrid, coy dog or any other kind of wild canid hybrid; or
+(ii) Wild felid or hybrid wild felid and a domestic cat or hybrid wild felid or is represented by its owner to be a wild felid hybrid.
+(5) The following restrictions apply to the importation and movement of certain mammals in Washington state.
+(a) All persons are prohibited from acquiring, selling, bartering, exchanging, giving, purchasing, distributing, or trapping to retain any bat, skunk, fox, raccoon, or coyote, except a zoological park, animal exhibitor, research facility, or wildlife rehabilitator.
+(b) All persons are prohibited from importing into the state any bat, skunk, fox, raccoon, or coyote, except a zoological park, animal exhibitor, or research facility under an entry permit issued by the director of the department of agriculture in consultation with the secretary of the department.
+(c) Any person importing a dog internationally that requires confinement according to requirements of 42 C.F.R. 71.51, shall notify the secretary of the department within seventy-two hours of the animal's arrival in the state.
+(6) When a local health officer receives a report that a dog, cat, ferret, or hybrid has been exposed to a rabid or suspected rabid animal, the local health officer shall assess the vaccination status of the animal. Based on the species and vaccination status of the animal, the local health officer may require any of the following:
+[Statutory Authority: RCW 43.20.050 and 16.70.040. WSR 17-15-021, filed 7/7/17, effective 8/7/17.]
+
+==== RCW 16.30.010, 16.30.020(1)(k), 16.30.030 ====
+PDFRCW 16.30.010
+Definitions.
+(1) "Animal control authority" means an entity acting alone or in concert with other local governmental units for enforcement of the animal control laws of the city, county, and state and the shelter and welfare of animals.
+(2) "Potentially dangerous wild animal" means one of the following types of animals, whether bred in the wild or in captivity, and any or all hybrids thereof:
+(a) Class mammalia
+(i) Order carnivora
+(A) Family felidae, only lions, tigers, captive-bred cougars, jaguars, cheetahs, leopards, snow leopards, and clouded leopards;
+(B) Family canidae, wolves, excluding wolf-hybrids;
+(C) Family ursidae, all bears;
+(D) Family hyaenidae, such as hyenas;
+(ii) Order perissodactyla, only rhinoceroses;
+(iii) Order primates, all nonhuman primate species;
+(iv) Order proboscidae, all elephants [elephant] species;
+(b) Class reptilia
+(i) Order squamata
+(A) Family atractaspidae, all species;
+(B) Family colubridae, only dispholidus typus;
+(C) Family elapidae, all species, such as cobras, mambas, kraits, coral snakes, and Australian tiger snakes;
+(D) Family hydrophiidae, all species, such as sea snakes;
+(E) Family varanidae, only water monitors and crocodile monitors;
+(F) Family viperidae, all species, such as rattlesnakes, cottonmouths, bushmasters, puff adders, and gaboon vipers;
+(ii) Order crocodilia, all species, such as crocodiles, alligators, caimans, and gavials.
+(3) "Person" means any individual, partnership, corporation, organization, trade or professional association, firm, limited liability company, joint venture, association, trust, estate, or any other legal entity, and any officer, member, shareholder, director, employee, agent, or representative thereof.
+(4) "Possessor" means any person who owns, possesses, keeps, harbors, brings into the state, or has custody or control of a potentially dangerous wild animal.
+(5) "Wildlife sanctuary" means a nonprofit organization, as described in RCW 84.36.800, that cares for animals defined as potentially dangerous and:
+(a) No activity that is not inherent to the animal's nature, natural conduct, or the animal in its natural habitat is conducted;
+(b) No commercial activity involving an animal occurs including, but not limited to, the sale of or trade in animals, animal parts, animal by-products, or animal offspring, or the sale of photographic opportunities involving an animal, or the use of an animal for any type of entertainment purpose;
+(c) No unescorted public visitations or direct contact between the public and an animal; or
+(d) No breeding of animals occurs in the facility.
+[ 2007 c 238 s 2.]
+(k) Domesticated animals subject to this title or native wildlife subject to Title 77 RCW;
+PDFRCW 16.30.030
+Prohibited behavior.
+(1) A person shall not own, possess, keep, harbor, bring into the state, or have custody or control of a potentially dangerous wild animal, except as provided in subsection (3) of this section.
+(2) A person shall not breed a potentially dangerous wild animal.
+(3) A person in legal possession of a potentially dangerous wild animal prior to July 22, 2007, and who is the legal possessor of the animal may keep possession of the animal for the remainder of the animal's life. The person must maintain veterinary records, acquisition papers for the animal, if available, or other documents or records that establish that the person possessed the animal prior to July 22, 2007, and present the paperwork to an animal control or law enforcement authority upon request. The person shall have the burden of proving that he or she possessed the animal prior to July 22, 2007.
+[ 2007 c 238 s 4.]
+
+==== RCW 77.15.120(1) ====
+ RCW 77.15.120 
+ Endangered fish or wildlife, unlawful taking, penalty. 
+(1) A person is guilty of unlawful taking of endangered fish or wildlife in the second degree if: 
+(a) The person hunts for, fishes for, possesses, maliciously harasses, or kills fish or wildlife, or possesses or intentionally destroys the nests or eggs of fish or wildlife; 
+(b) The fish or wildlife is designated by the commission as endangered; and 
+(c) The taking of the fish or wildlife or the destruction of the nests or eggs has not been authorized by rule of the commission, a permit issued by the department, or a permit issued pursuant to the federal endangered species act. 
+
+==== WAC 220-610-010, endangered species (excerpt) ====
+WAC 220-610-010 Wildlife classified as endangered species. Endangered species include: [list excerpt]
+Tufted puffin 
+ Fratercula cirrhata 
+North American lynx 
+ Lynx canadensis 
+marbled murrelet 
+ Brachyramphus marmoratus 

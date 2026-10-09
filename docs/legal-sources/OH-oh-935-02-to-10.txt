@@ -1,0 +1,399 @@
+# Ohio Rev. Code §§ 935.02 to 935.101: the dangerous wild animal possession bar, its exemptions, the 2012 registration, the small primate registration at 935.041, and the wildlife shelter, propagation and restricted snake permits
+
+sourceId: oh-935-02
+jurisdiction: OH
+url: https://codes.ohio.gov/ohio-revised-code/section-935.02 (and 935.03 to 935.101)
+fetched: 2026-10-08
+fetch notes: codes.ohio.gov by plain curl, one section per page; tags and site chrome stripped. Each section printed as one paragraph.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+==== R.C. 935.02 ====
+ Possession of dangerous wild animal prohibited. September 5, 2012 (A) No person shall possess a dangerous 
+wild animal on or after January 1, 2014. (B)(1) Except as provided in divisions (G)(1) and (2) of section 
+935.06 of the Revised Code, no person shall acquire, buy, sell, trade, or transfer possession or ownership of 
+a dangerous wild animal on or after the effective date of this section. (2) Notwithstanding division (B)(1) 
+of this section, a person that operates a rescue facility may acquire, except by purchase, possession or 
+ownership of a dangerous wild animal if one of the following applies: (a) Prior to January 1, 2014, the 
+person is authorized to do so by the director of agriculture in accordance with procedures adopted by the 
+director. (b) On or after January 1, 2014, the person has obtained a rescue facility permit under section 
+935.101 of the Revised Code. 
+
+==== R.C. 935.03 ====
+ Exceptions. March 20, 2026 House Bill 247 - 136th General Assembly (A) Division (A) of section 935.02 of the 
+Revised Code does not apply to any of the following: (1) A person to which all of the following apply: (a) 
+The person possesses a dangerous wild animal. (b) The person has been issued a license by the United States 
+department of agriculture under the federal animal welfare act. (c) The director of agriculture has 
+determined that the person is in the process of becoming an accredited member of the association of zoos and 
+aquariums or the zoological association of America. (d) The director has informed the person that the person 
+is exempt from division (A) of section 935.02 of the Revised Code. (2) An organization to which all of the 
+following apply: (a) The organization possesses a dangerous wild animal. (b) The director has determined that 
+the organization is in the process of being accredited or verified by the global federation of animal 
+sanctuaries as a wildlife sanctuary. (c) The director has informed the organization that it is exempt from 
+division (A) of section 935.02 of the Revised Code. (3) A person whose possession of a dangerous wild animal 
+is authorized by an unexpired permit issued under this chapter. (B) Except for the purposes of divisions (A) 
+and (B) of section 935.04 of the Revised Code, this chapter does not apply to any of the following: (1) A 
+facility that is an accredited member of the association of zoos and aquariums or the zoological association 
+of America and that is licensed by the United States department of agriculture under the federal animal 
+welfare act; (2) A research facility as defined in the federal animal welfare act; (3) A research facility 
+that is accredited by the association for the assessment and accreditation of laboratory animal care 
+international; (4) A circus; (5) A wildlife rehabilitation facility that is issued a permit by the chief of 
+the division of wildlife in rules adopted under section 1531.08 of the Revised Code and that rehabilitates 
+dangerous wild animals or restricted snakes that are native to the state for the purpose of reintroduction 
+into the wild; (6) A veterinarian that is providing temporary veterinary care to a dangerous wild animal or 
+restricted snake; (7) A wildlife sanctuary; (8) An individual who does not reside in this state, is traveling 
+through this state with a dangerous wild animal or restricted snake, and does all of the following: (a) 
+Confines the animal or snake in a cage at all times; (b) Confines the animal or snake in a cage that is not 
+accessible to the public; (c) Does not exhibit the animal or snake; (d) Is in the state not more than 
+forty-eight hours unless the animal or snake is receiving veterinary care. (9) An educational institution 
+that displays a single dangerous wild animal as a sports mascot and that meets all of the following criteria: 
+(a) An official of the educational institution has submitted an affidavit attesting that the institution will 
+care for the animal as long as the animal lives and in a facility that is an accredited member of the 
+association of zoos and aquariums or the zoological association of America. (b) The educational institution 
+maintains a liability insurance policy with an insurer authorized or approved to write such insurance in this 
+state that covers claims for injury or damage to persons or property caused by a dangerous wild animal. The 
+amount of the insurance coverage shall be not less than one million dollars. (c) During display and 
+transport, the educational institution confines the dangerous wild animal in a cage that does not permit 
+physical contact between the animal and the public. (d) The educational institution began displaying a 
+dangerous wild animal as a mascot prior to September 5, 2012. (10) Any person who has been issued a permit 
+under section 1533.08 of the Revised Code, provided that the permit lists each specimen of wild animal that 
+is a dangerous wild animal or restricted snake in the person's possession; (11) Any person authorized to 
+possess a dangerous wild animal or restricted snake under section 1531.25 of the Revised Code or rules 
+adopted under it; (12) A person with a mobility impairment, as defined in section 955.021 of the Revised 
+Code, who possesses a dangerous wild animal specified in division (C)(20)(h) of section 935.01 of the Revised 
+Code that has been trained by a nonprofit agency or is in such training to assist the person with a mobility 
+impairment; (13) A deaf or hearing-impaired person who possesses a dangerous wild animal specified in 
+division (C)(20)(h) of section 935.01 of the Revised Code that has been trained by a nonprofit agency or is 
+in such training to assist the deaf or hearing-impaired person; (14) A person who is blind, as defined in 
+section 955.021 of the Revised Code, and possesses a dangerous wild animal specified in division (C)(20)(h) 
+of section 935.01 of the Revised Code that has been trained by a nonprofit agency or is in such training to 
+assist the blind person. Last updated January 16, 2026 at 8:21 AM 
+
+==== R.C. 935.04 ====
+ Registration of dangerous wild animals. September 5, 2012 (A) A person that possesses a dangerous wild 
+animal on the effective date of this section shall register the animal with the director of agriculture in 
+accordance with this section not later than sixty days after the effective date of this section. (B) A person 
+shall register a dangerous wild animal on a form prescribed and provided by the director. The form shall 
+include all of the following: (1) The name, address, social security number, and federal employer 
+identification number, if applicable, of the person registering the dangerous wild animal; (2) If different 
+from the information provided under division (B)(1) of this section, the name and address of the location 
+where the dangerous wild animal is confined; (3) A description of the dangerous wild animal, including the 
+scientific and common names of the animal, the name that the person has given the animal, the animal's sex, 
+age, color, and weight, and any distinguishing marks or coloration that would aid in the identification of 
+the animal; (4) The name, address, and telephone number of the veterinarian that provides veterinary care to 
+the dangerous wild animal; (5) Any other information required by the director in rules. (C) Beginning ninety 
+days after the director adopts rules under division (A) of section 935.17 of the Revised Code, a person that 
+has registered a dangerous wild animal under this section shall comply with the applicable requirements 
+regarding the care and housing of dangerous wild animals established in those rules. (D) A person that 
+registers a dangerous wild animal under this section shall have permanently implanted in the dangerous wild 
+animal a microchip at the time of registration. The microchip shall have an identification number that is 
+unique to the microchip. In addition, the microchip shall contain a passive integrated transponder, which 
+shall have a frequency of one hundred twenty-five, one hundred thirty-four and two-tenths, or four hundred 
+kilohertz. (E) A person that possesses a registered dangerous wild animal on October 1, 2013, and that wishes 
+to continue to possess the dangerous wild animal on and after January 1, 2014, shall obtain a wildlife 
+shelter permit issued under section 935.06 of the Revised Code or a wildlife propagation permit issued under 
+section 935.07 of the Revised Code. 
+
+==== R.C. 935.041 ====
+ Registration of certain marmosets, monkeys, capuchins and lemurs. September 5, 2012 A person that possesses 
+any of the following animals shall register the animal in the same manner as provided in section 935.04 of 
+the Revised Code: (A) Pygmy, white-tufted-ear, silvery, and black-pencilled marmosets; (B) Squirrel monkeys; 
+(C) Brown, white-faced, weeping, and white-fronted capuchins; (D) Lemurs. 
+
+==== R.C. 935.05 ====
+ Wildlife shelter permit. September 5, 2012 (A) A person that possesses a registered dangerous wild animal in 
+this state on October 1, 2013, that wishes to continue to possess the dangerous wild animal on and after 
+January 1, 2014, and that does not intend to propagate the animal shall apply for a wildlife shelter permit 
+under this section. (B) An applicant for a wildlife shelter permit shall file an application for a permit 
+with the director of agriculture on a form prescribed and provided by the director. An applicant need apply 
+for only one permit regardless of the number of dangerous wild animals that the applicant possesses. The 
+application shall include all of the following: (1) The name, date of birth, address, social security number, 
+and federal employer identification number, if applicable, of the applicant; (2) If different from the 
+information provided under division (B)(1) of this section, the name and address of the location where each 
+dangerous wild animal will be confined; (3) A description of each dangerous wild animal, including the 
+scientific and common names, the name that the applicant has given the animal, the animal's sex, age, color, 
+and weight, and any distinguishing marks or coloration that would aid in the identification of the animal; 
+(4) The identification number of the microchip that is implanted in each dangerous wild animal and the 
+frequency of the passive integrated transponder contained in the microchip as required in section 935.04 of 
+the Revised Code; (5) Proof of financial responsibility as required in division (D) of this section; (6) 
+Except as otherwise provided in this section, proof that the applicant has at least two years of experience 
+in the care of the species of dangerous wild animal or animals that are the subject of the application. If an 
+applicant cannot provide such proof, the applicant shall pass a written examination regarding the care of 
+dangerous wild animals that is established and administered in accordance with rules. (7) A plan of action to 
+be undertaken if a dangerous wild animal escapes; (8) Proof that the applicant has established a 
+veterinarian-client relationship as described in section 4741.04 of the Revised Code with regard to each 
+dangerous wild animal; (9) Any additional information required in rules. An applicant shall submit a copy of 
+the plan of action required in division (B)(7) of this section to the sheriff of the county and to the chief 
+law enforcement officer and fire chief of the township or municipal corporation having jurisdiction where the 
+dangerous wild animal or animals are confined. (C) An applicant shall submit one of the following fees, as 
+applicable, with an application: (1) Two hundred fifty dollars if the applicant possesses not more than three 
+dangerous wild animals; (2) Five hundred dollars if the applicant possesses at least four, but not more than 
+ten dangerous wild animals; (3) One thousand dollars if the applicant possesses at least eleven, but not more 
+than fifteen dangerous wild animals; (4) One thousand dollars if the applicant possesses sixteen or more 
+dangerous wild animals plus an additional one hundred twenty-five dollars for each animal that the applicant 
+possesses in an amount greater than fifteen dangerous wild animals. (D)(1) An applicant shall obtain and 
+maintain proof of financial responsibility in one of the following forms: (a) A liability insurance policy 
+with an insurer authorized or approved to write such insurance in this state that covers claims for injury or 
+damage to persons or property caused by a dangerous wild animal possessed by the applicant or any resulting 
+claims against the state; (b) A surety bond, which shall be executed by a surety company authorized to do 
+business in this state that covers claims for injury or damage to persons or property caused by a dangerous 
+wild animal possessed by the applicant or any resulting claims against the state. The bond shall be in a form 
+approved by the director of agriculture. (2) Proof of financial responsibility shall be in one of the 
+following amounts, as applicable: (a) Two hundred thousand dollars if the applicant possesses not more than 
+five dangerous wild animals; (b) Five hundred thousand dollars if the applicant possesses at least six, but 
+not more than fifteen dangerous wild animals; (c) One million dollars if the applicant possesses sixteen or 
+more dangerous wild animals. The amounts specified in division (D)(2) of this section shall be for each 
+occurrence of injury or damage. 
+
+==== R.C. 935.06 ====
+ Issuance or denial of wildlife shelter permit. September 30, 2025 House Bill 96 - 136th General Assembly (A) 
+Not later than ninety days after receipt of an application under section 935.05 of the Revised Code, the 
+director of agriculture shall issue or deny a wildlife shelter permit. The director shall issue a permit to 
+an applicant only if all of the following apply: (1) The applicant is eighteen years of age or older. (2) The 
+applicant has registered the dangerous wild animal or animals that are the subject of the application under 
+section 935.04 of the Revised Code. (3) The applicant is in compliance with the standards of care established 
+in rules adopted under division (A)(2) of section 935.17 of the Revised Code. (4) The applicant has 
+sterilized each male dangerous wild animal that is possessed by the applicant. However, a dangerous wild 
+animal is not required to be sterilized if a veterinarian that is qualified to provide veterinary care to the 
+dangerous wild animal determines that the sterilization is medically contraindicated and the applicant has 
+submitted a copy of the veterinarian's written determination with the applicant's application. (5) The 
+applicant has signed an affidavit attesting that the applicant will not allow members of the public to be in 
+physical contact with a dangerous wild animal possessed by the applicant. Division (A)(5) of this section 
+does not apply to an employee of the applicant or a volunteer who has entered into a written agreement with 
+the applicant to work for or volunteer for the applicant and assists in the care of a dangerous wild animal 
+or animals specified in division (C)(20) of section 935.01 of the Revised Code possessed by the applicant if 
+the care is provided under the direction of the applicant. (6) The applicant has not been convicted of or 
+pleaded guilty to a a disqualifying offense as determined in accordance with section 9.79 of the Revised Code 
+and a criminal records check performed in accordance with division (B) of this section. (7) The facility at 
+which a dangerous wild animal or dangerous wild animals will be maintained under the permit consists of at 
+least one acre. Division (A)(7) of this section does not apply to either of the following: (a) Dangerous wild 
+animals specified in division (C)(20) of section 935.01 of the Revised Code; (b) An applicant to whom the 
+director issues a written waiver stating that the acreage requirement does not apply to the applicant. (8) 
+The applicant has signed an affidavit attesting that the facility at which a dangerous wild animal or 
+dangerous wild animals will be maintained under the permit and the conditions in which each dangerous wild 
+animal will be kept in that facility are in compliance with this chapter and rules. (9) The applicant has 
+submitted a complete application that meets the requirements established in section 935.05 of the Revised 
+Code. (10) The applicant has submitted the applicable fee under section 935.05 of the Revised Code. If a 
+permit is issued, the director shall assign a unique identification number to the permit. (B) Prior to 
+issuing or denying a wildlife shelter permit, the director shall submit a request to the bureau of criminal 
+identification and investigation in the office of the attorney general for a criminal records check of the 
+applicant for the permit. Upon receipt of a request, the superintendent of the bureau shall conduct a 
+criminal records check in the manner described in division (B) of section 109.572 of the Revised Code to 
+determine whether any information exists that indicates that the applicant previously has been convicted of 
+or pleaded guilty to any of the following: (1) A felony drug abuse offense; (2) An offense of violence that 
+is a felony; (3) A violation of section 959.13 or 959.131 of the Revised Code or of section 2927.21 of the 
+Revised Code as that section existed prior to its repeal by S.B. 310 of the 129th general assembly. The 
+applicant is responsible for paying all costs associated with the criminal records check. (C) If a permit 
+application is denied, two hundred fifty dollars of the permit application fee shall be retained by the 
+director as payment for the reasonable expense of processing the application, and the remainder of the fee 
+shall be returned to the applicant. (D) Not later than the first day of December of each year, a permit 
+holder shall apply to the director, on a form prescribed and provided by the director, for a renewal of the 
+permit if the permit holder intends to retain possession of the dangerous wild animal or animals that are 
+identified in the permit. Not later than thirty days after receipt of an application for renewal, the 
+director shall renew or deny the renewal of the permit. The director shall renew the permit if the permit 
+holder complies with this chapter and rules and pays a renewal fee in the same amount as the fee established 
+for the initial permit in section 935.05 of the Revised Code. If a renewal permit is denied, two hundred 
+fifty dollars of the renewal fee shall be retained by the director as payment for the reasonable expense of 
+processing the application, and the remainder of the renewal fee shall be returned to the applicant. (E) If 
+the director denies an application for a permit or a renewal of a permit, the director shall notify the 
+person of the denial, the grounds for the denial, and the person's right to an adjudication under Chapter 
+119. of the Revised Code. (F) If a person does not appeal the determination of the director to deny an 
+application for a permit or a renewal of a permit or if the determination of the director is affirmed under 
+Chapter 119. of the Revised Code, not later than thirty days after the decision not to appeal or after the 
+determination is affirmed, as applicable, the person shall transfer the dangerous wild animal or animals that 
+the person possesses to a humane society, wildlife sanctuary, rescue facility, facility that is an accredited 
+member of either the association of zoos and aquariums or the zoological association of America, or facility 
+that is located in another state and that complies with that state's applicable laws. After the transfer has 
+occurred, the person shall submit proof to the director that the dangerous wild animal or animals were 
+transferred and shall specify the society, sanctuary, or facility to which the animal or animals were 
+transferred. The person is responsible for all costs associated with the transfer of the dangerous wild 
+animal or animals. (G) If a person that has been issued a wildlife shelter permit under this section or a 
+wildlife propagation permit under section 935.07 of the Revised Code dies, the person's next of kin shall do 
+one of the following: (1) If the next of kin wishes to possess the dangerous wild animal or animals, obtain a 
+wildlife shelter permit under this section or a wildlife propagation permit under section 935.07 of the 
+Revised Code, as applicable. That next of kin shall comply with this chapter and rules, except that, with 
+respect to the next of kin's initial permit, the person need not pay the applicable permit application fee. 
+(2) If the deceased person has a last will and testament that specifies that the dangerous wild animal or 
+animals possessed by the person are to be transferred to another person that has been issued a wildlife 
+shelter permit, wildlife propagation permit, or rescue facility permit issued under this chapter, transfer 
+the dangerous wild animal or animals to the applicable permit holder; (3) Transfer the dangerous wild animal 
+or animals that were possessed by the deceased person in accordance with division (F) of this section. (H) 
+All fees collected under this section shall be credited to the animal and consumer protection fund created in 
+section 943.26 of the Revised Code. Last updated July 17, 2025 at 12:38 PM 
+
+==== R.C. 935.07 ====
+ Wildlife propagation permit. September 30, 2025 House Bill 96 - 136th General Assembly (A) A person that 
+possesses a registered dangerous wild animal in this state on October 1, 2013, that wishes to continue to 
+possess the dangerous wild animal on and after January 1, 2014, and that intends to propagate the animal 
+solely for the purposes of a species survival program that complies with rules shall apply for a wildlife 
+propagation permit under this section. An applicant need apply for only one permit regardless of the number 
+of dangerous wild animals that the applicant possesses. (B) Except as otherwise provided in this section, an 
+applicant for a wildlife propagation permit shall comply with the requirements and procedures established in 
+sections 935.05 and 935.06 of the Revised Code. The application fee for a wildlife propagation permit shall 
+be one of the following, as applicable: (1) One thousand dollars if the applicant possesses not more than 
+fifty dangerous wild animals; (2) Three thousand dollars if the applicant possesses more than fifty dangerous 
+wild animals. (C) The facility at which a dangerous wild animal or dangerous wild animals will be maintained 
+under a wildlife propagation permit shall consist of at least two acres. Division (C) of this section does 
+not apply to either of the following: (1) Dangerous wild animals specified in division (C)(20) of section 
+935.01 of the Revised Code; (2) An applicant to whom the director of agriculture issues a written waiver 
+stating that the acreage requirement does not apply to the applicant. (D) All fees collected under this 
+section shall be credited to the animal and consumer protection fund created in section 943.26 of the Revised 
+Code. (E) Division (A)(4) of section 935.06 of the Revised Code does not apply to an applicant for a wildlife 
+propagation permit. Last updated July 17, 2025 at 12:40 PM 
+
+==== R.C. 935.08 ====
+ Restricted snake possession permit. September 5, 2012 (A)(1) A person that possesses a restricted snake in 
+this state prior to January 1, 2014, that wishes to continue to possess the restricted snake on and after 
+that date, and that does not intend to propagate, sell, trade, or otherwise transfer the snake shall obtain a 
+restricted snake possession permit under this section not later than January 1, 2014. (2) A person that 
+acquires a restricted snake in this state on or after January 1, 2014, and that does not intend to propagate, 
+sell, trade, or otherwise transfer the snake shall obtain a restricted snake possession permit under this 
+section not later than one hundred twenty days after acquiring the snake. (3) An applicant need apply for 
+only one permit regardless of the number of restricted snakes that the applicant possesses. (B) An applicant 
+for a restricted snake possession permit shall file an application for a permit with the director of 
+agriculture on a form prescribed and provided by the director. The application shall include all of the 
+following: (1) The name, date of birth, address, social security number, and federal employer identification 
+number, if applicable, of the applicant; (2) If different from the information provided under division (B)(1) 
+of this section, the name and address of the location where each restricted snake will be confined; (3) A 
+description of each restricted snake, including the scientific and common names, the name that the applicant 
+has given the snake, the snake's sex, age, color, and weight, and any distinguishing marks or coloration that 
+would aid in the identification of the snake; (4) Proof of financial responsibility as required in division 
+(D) of this section; (5) Except as otherwise provided in this section, proof that the applicant has at least 
+two years of experience in the care of the species of restricted snake or snakes that are the subject of the 
+application. If an applicant cannot provide such proof, the applicant shall pass a written examination 
+regarding the care of restricted snakes that is established and administered in accordance with rules. The 
+requirements of division (B)(5) of this section do not apply with respect to a restricted snake specified in 
+division (L)(1) of section 935.01 of the Revised Code. (6) A plan of action to be undertaken if a restricted 
+snake escapes; (7) A written statement from a veterinarian stating that the veterinarian is willing to 
+provide veterinary care to an applicant's restricted snake or snakes when the care is needed; (8) Any 
+additional information required in rules. An applicant shall submit a copy of the plan of action required in 
+division (B)(6) of this section to the sheriff of the county and to the chief law enforcement officer and 
+fire chief of the township or municipal corporation having jurisdiction where the restricted snake or snakes 
+are confined. (C) An applicant shall submit a fee of one hundred fifty dollars with an application. (D)(1) 
+Except as provided in division (D)(3) of this section, an applicant shall obtain and maintain proof of 
+financial responsibility in one of the following forms: (a) A liability insurance policy with an insurer 
+authorized or approved to write such insurance in this state that covers claims for injury or damage to 
+persons or property caused by a restricted snake possessed by the applicant or any resulting claims against 
+the state; (b) A surety bond, which shall be executed by a surety company authorized to do business in this 
+state that covers claims for injury or damage to persons or property caused by a restricted snake possessed 
+by the applicant or any resulting claims against the state. The bond shall be in a form approved by the 
+director of agriculture. (2) Proof of financial responsibility shall be in one of the following amounts, as 
+applicable: (a) One hundred thousand dollars if the applicant possesses not more than five restricted snakes; 
+(b) Two hundred fifty thousand dollars if the applicant possesses at least six, but not more than fifteen 
+restricted snakes; (c) Five hundred thousand dollars if the applicant possesses sixteen or more restricted 
+snakes. The amounts specified in division (D)(2) of this section shall be for each occurrence of injury or 
+damage. (3) Division (D)(1) of this section does not apply to an applicant that possesses one or more 
+restricted snakes specified in division (L)(1) of section 935.01 of the Revised Code, but no other restricted 
+snakes. 
+
+==== R.C. 935.09 ====
+ Issuance or denial of restricted snake possession permit. September 30, 2025 House Bill 96 - 136th General 
+Assembly (A) Not later than ninety days after receipt of an application under section 935.08 of the Revised 
+Code, the director of agriculture shall issue or deny a restricted snake possession permit. The director 
+shall issue a permit to an applicant only if all of the following apply: (1) The applicant is eighteen years 
+of age or older. (2) The applicant has signed an affidavit attesting that the applicant will not allow 
+members of the public to be in physical contact with a restricted snake possessed by the applicant. Division 
+(A)(2) of this section does not apply to either of the following: (a) An applicant that displays a restricted 
+snake or snakes specified in division (L)(1) of section 935.01 of the Revised Code to a primary or secondary 
+school age student; (b) An employee of the applicant or a volunteer who has entered into a written agreement 
+with the applicant to work for or volunteer for the applicant and assists in the care of a restricted snake 
+or snakes possessed by the applicant if the care is provided under the direction of the applicant. (3) The 
+applicant has not been convicted of or pleaded guilty to a felony drug abuse offense, an offense of violence 
+that is a felony, or a violation of section 959.13 or 959.131 of the Revised Code or of section 2927.21 of 
+the Revised Code as that section existed prior to its repeal by S.B. 310 of the 129th general assembly, as 
+determined by a criminal records check performed in accordance with division (B) of this section. (4) The 
+applicant has signed an affidavit attesting that the facility at which a restricted snake or snakes will be 
+maintained under the permit and the conditions in which each restricted snake will be kept in that facility 
+are in compliance with this chapter and rules. (5) The applicant has submitted a complete application that 
+meets the requirements established in section 935.08 of the Revised Code. (6) The applicant has submitted the 
+application fee established in section 935.08 of the Revised Code. If a permit is issued, the director shall 
+assign a unique identification number to the permit. (B) Prior to issuing or denying a restricted snake 
+possession permit, the director shall submit a request to the bureau of criminal identification and 
+investigation in the office of the attorney general for a criminal records check of the applicant for the 
+permit. Upon receipt of a request, the superintendent of the bureau shall conduct a criminal records check in 
+the manner described in division (B) of section 109.572 of the Revised Code to determine whether any 
+information exists that indicates that the applicant previously has been convicted of or pleaded guilty to 
+any of the following: (1) A felony drug abuse offense; (2) An offense of violence that is a felony; (3) A 
+violation of section 959.13 or 959.131 of the Revised Code or of section 2927.21 of the Revised Code as that 
+section existed prior to its repeal by S.B. 310 of the 129th general assembly. The applicant is responsible 
+for paying all costs associated with the criminal records check. (C) If a permit application is denied, 
+seventy-five dollars of the permit application fee shall be retained by the director as payment for the 
+reasonable expense of processing the application, and the remainder of the fee shall be returned to the 
+applicant. (D) Not later than the first day of December of each year, a permit holder shall apply to the 
+director, on a form prescribed and provided by the director, for a renewal of the permit if the permit holder 
+intends to retain possession of the restricted snake or snakes that are identified in the permit. Not later 
+than thirty days after receipt of an application for renewal, the director shall renew or deny the renewal of 
+the permit. The director shall renew the permit if the permit holder complies with this chapter and rules and 
+pays a renewal fee in the same amount as the fee established for the initial permit in section 935.08 of the 
+Revised Code. If a renewal permit is denied, seventy-five dollars of the renewal fee shall be retained by the 
+director as payment for the reasonable expense of processing the application, and the remainder of the 
+renewal fee shall be returned to the applicant. (E) If the director denies an application for a permit or a 
+renewal of a permit, the director shall notify the person of the denial, the grounds for the denial, and the 
+person's right to an adjudication under Chapter 119. of the Revised Code. (F) If a person does not appeal the 
+determination of the director to deny an application for a permit or a renewal of a permit or if the 
+determination of the director is affirmed under Chapter 119. of the Revised Code, not later than thirty days 
+after the decision not to appeal or after the determination is affirmed, as applicable, the person shall 
+transfer the restricted snake or snakes that the person possesses to a humane society, wildlife sanctuary, 
+facility that is an accredited member of either the association of zoos and aquariums or the zoological 
+association of America, or facility that is located in another state and that complies with that state's 
+applicable laws. After the transfer has occurred, the person shall submit proof to the director that the 
+restricted snake or snakes were transferred and shall specify the society, sanctuary, or facility to which 
+the snake or snakes were transferred. The person is responsible for all costs associated with the transfer of 
+the restricted snake or snakes. (G) If a person that has been issued a restricted snake possession permit 
+under this section or a restricted snake propagation permit under section 935.10 of the Revised Code dies, 
+the person's next of kin shall do one of the following: (1) If the next of kin wishes to possess the 
+restricted snake or snakes, obtain a restricted snake possession permit under this section or a restricted 
+snake propagation permit under section 935.10 of the Revised Code, as applicable. That next of kin shall 
+comply with this chapter and rules, except that, with respect to the next of kin's initial permit, the person 
+need not pay the applicable permit application fee. (2) If the deceased person has a last will and testament 
+that specifies that the restricted snake or snakes possessed by the person are to be transferred to another 
+person that has been issued a restricted snake possession permit under this section or a restricted snake 
+propagation permit issued under section 935.10 of the Revised Code, transfer the restricted snake or snakes 
+to the applicable permit holder; (3) Transfer the restricted snake or snakes that were possessed by the 
+deceased person in accordance with division (F) of this section. (H) All fees collected under this section 
+shall be credited to the animal and consumer protection fund created in section 943.26 of the Revised Code. 
+Last updated July 17, 2025 at 12:41 PM 
+
+==== R.C. 935.10 ====
+ Restricted snake propagation permit. September 30, 2025 House Bill 96 - 136th General Assembly (A)(1) A 
+person that possesses a restricted snake in this state prior to January 1, 2014, that wishes to continue to 
+possess the restricted snake on and after that date, and that intends to propagate, sell, trade, or otherwise 
+transfer the snake shall obtain a restricted snake propagation permit under this section not later than 
+January 1, 2014. (2) A person that acquires a restricted snake in this state on or after January 1, 2014, and 
+that intends to propagate, sell, trade, or otherwise transfer the snake shall obtain a restricted snake 
+propagation permit under this section not later than one hundred twenty days after acquiring the snake. (3) 
+An applicant need apply for only one permit regardless of the number of restricted snakes that the applicant 
+possesses. (B) Except as otherwise provided in this section, an applicant for a restricted snake propagation 
+permit shall comply with the requirements and procedures established in sections 935.08 and 935.09 of the 
+Revised Code. The application fee for a restricted snake propagation permit shall be three hundred dollars. 
+(C) If a permit application is denied, one hundred fifty dollars of the permit application fee shall be 
+retained by the director of agriculture as payment for the reasonable expense of processing the application, 
+and the remainder of the fee shall be returned to the applicant. (D) All fees collected under this section 
+shall be credited to the animal and consumer protection fund created in section 943.26 of the Revised Code. 
+Last updated July 17, 2025 at 12:43 PM 
+
+==== R.C. 935.101 ====
+ Rescue facility permit. September 5, 2012 (A)(1) In lieu of obtaining any other permit under this chapter, a 
+person that operates a rescue facility in this state prior to January 1, 2014, and that wishes to continue to 
+operate a rescue facility on and after that date shall obtain a rescue facility permit under this section not 
+later than January 1, 2014. (2) A person that wishes to begin operation of a rescue facility in this state on 
+or after January 1, 2014, shall obtain a rescue facility permit under this section not later than sixty days 
+prior to beginning operation. (B)(1) An applicant for a rescue facility permit shall file an application for 
+a permit with the director of agriculture on a form prescribed and provided by the director. The application 
+shall include information that the director requires in rules. (2) An applicant for a rescue facility permit 
+shall submit one of the following fees, as applicable, with an application: (a) Five hundred dollars if the 
+applicant possesses not more than three dangerous wild animals; (b) One thousand dollars if the applicant 
+possesses at least four, but not more than fifteen dangerous wild animals; (c) Two thousand dollars if the 
+applicant possesses sixteen or more dangerous wild animals. (3) If a permit application is denied, two 
+hundred fifty dollars of the application fee shall be retained by the director as payment for the reasonable 
+expense of processing the application and the remainder of the fee shall be returned to the applicant. (C) 
+The director shall issue or deny a rescue facility permit in accordance with rules. The director shall issue 
+a rescue facility permit only if the dangerous wild animal or animals that are or are to be possessed by an 
+applicant are sterilized. (D) A person that has been issued a rescue facility permit under this section shall 
+comply with the requirements regarding the care and housing of dangerous wild animals established in rules 
+adopted under division (G) of section 935.17 of the Revised Code. (E) A person that has been issued a rescue 
+facility permit under this section may acquire, except by purchase, possession or ownership of a dangerous 
+wild animal.
