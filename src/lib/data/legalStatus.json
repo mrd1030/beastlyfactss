@@ -441,7 +441,7 @@
     "NC": {
       "name": "North Carolina",
       "level": "state",
-      "scope": "N.C. Gen. Stat. § 14-417, the only statewide statute regulating exotic animal possession, and § 153A-131, which delegates the rest to counties. There is no statewide exotic pet permit scheme to read."
+      "scope": "N.C. Gen. Stat. Chapter 14, Article 55 (§§ 14-417 to 14-417.2), the only statewide statute regulating exotic animal possession, which sets housing rules for venomous reptiles, five named large constricting snakes and every crocodilian but the American alligator, and § 153A-131, which delegates the rest to counties. There is no statewide exotic pet permit scheme to read."
     },
     "AR": {
       "name": "Arkansas",
@@ -2175,7 +2175,7 @@
           "sourceId": "nc-14-417",
           "cite": "§ 14-417",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "Previously recorded as unclear on the strength of a secondary source, which was wrong on both counts. North Carolina's only statewide exotic animal statute covers venomous reptiles, so it does not reach a hedgehog, and § 153A-131 leaves everything else to county ordinance. Legal at state level, worth checking your county.",
+          "note": "Previously recorded as unclear on the strength of a secondary source, which was wrong on both counts. North Carolina's only statewide exotic animal statute covers venomous reptiles, five large constricting snakes and the crocodilians, so it does not reach a hedgehog, and § 153A-131 leaves everything else to county ordinance. Legal at state level, worth checking your county.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -2561,7 +2561,7 @@
           "sourceId": "nc-153a-131",
           "cite": "§ 153A-131",
           "quote": "A county may by ordinance regulate, restrict, or prohibit the possession or harboring of animals which are dangerous to persons or property.",
-          "note": "No statewide rule reaches the ferret. North Carolina's only exotic animal statute, § 14-417, is limited to venomous reptiles, and everything else is left to county ordinance. Check your county before assuming yes.",
+          "note": "No statewide rule reaches the ferret. North Carolina's only exotic animal statute, Article 55 of Chapter 14 (§§ 14-417 to 14-417.2), is limited to venomous reptiles, five large constricting snakes and the crocodilians, and everything else is left to county ordinance. Check your county before assuming yes.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -3009,7 +3009,7 @@
           "sourceId": "nc-153a-131",
           "cite": "§ 153A-131",
           "quote": "A county may by ordinance regulate, restrict, or prohibit the possession or harboring of animals which are dangerous to persons or property.",
-          "note": "No statewide rule reaches the sugar glider. The state statute covers venomous reptiles only, so the question is entirely a county one.",
+          "note": "No statewide rule reaches the sugar glider. The state statute covers only venomous reptiles, five large constricting snakes and the crocodilians, so the question is entirely a county one.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -4288,7 +4288,7 @@
           "cite": "§ 14-417",
           "status": "legal",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "The only statewide statute covers venomous reptiles. Your county code is the operative layer.",
+          "note": "The only statewide statute covers venomous reptiles, five large constricting snakes and the crocodilians. Your county code is the operative layer.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -5218,7 +5218,7 @@
           "cite": "§ 14-417",
           "status": "legal",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
+          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, five large constricting snakes and the crocodilians, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -5567,7 +5567,7 @@
           "cite": "§ 14-417",
           "status": "legal",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
+          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, five large constricting snakes and the crocodilians, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -6065,7 +6065,7 @@
           "cite": "§ 14-417",
           "status": "legal",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
+          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, five large constricting snakes and the crocodilians, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -6491,7 +6491,7 @@
           "cite": "§ 14-417",
           "status": "legal",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
+          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, five large constricting snakes and the crocodilians, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -6728,7 +6728,7 @@
           "cite": "§ 14-417",
           "status": "legal",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "The only statewide statute covers venomous reptiles. Counties may regulate animals dangerous to persons or property under § 153A-131.",
+          "note": "The only statewide statute covers venomous reptiles, five large constricting snakes and the crocodilians. Counties may regulate animals dangerous to persons or property under § 153A-131.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -7164,7 +7164,7 @@
           "cite": "§ 14-417",
           "status": "legal",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "The only statewide statute covers venomous reptiles. Counties may regulate animals dangerous to persons or property under § 153A-131.",
+          "note": "The only statewide statute covers venomous reptiles, five large constricting snakes and the crocodilians. Counties may regulate animals dangerous to persons or property under § 153A-131.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -7712,7 +7712,7 @@
           "cite": "§ 14-417",
           "status": "legal",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
+          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, five large constricting snakes and the crocodilians, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -8132,7 +8132,7 @@
           "cite": "§ 14-417",
           "status": "legal",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
+          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, five large constricting snakes and the crocodilians, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -11236,7 +11236,7 @@
           "cite": "§ 14-417",
           "status": "legal",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
+          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, five large constricting snakes and the crocodilians, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -11627,7 +11627,7 @@
           "cite": "§ 14-417",
           "status": "legal",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
+          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, five large constricting snakes and the crocodilians, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -12087,7 +12087,7 @@
           "cite": "§ 14-417",
           "status": "legal",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
+          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, five large constricting snakes and the crocodilians, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -12459,7 +12459,7 @@
           "cite": "§ 14-417",
           "status": "legal",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "The only statewide statute covers venomous reptiles. No amphibian is reached by it, and § 153A-131 leaves the rest to counties.",
+          "note": "The only statewide statute covers venomous reptiles, five large constricting snakes and the crocodilians. No amphibian is reached by it, and § 153A-131 leaves the rest to counties.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -12965,7 +12965,7 @@
           "cite": "§ 14-417",
           "status": "legal",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
+          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, five large constricting snakes and the crocodilians, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -14234,7 +14234,7 @@
           "cite": "§ 14-417",
           "status": "legal",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "The only statewide statute covers venomous reptiles. No amphibian is reached by it, and § 153A-131 leaves the rest to counties.",
+          "note": "The only statewide statute covers venomous reptiles, five large constricting snakes and the crocodilians. No amphibian is reached by it, and § 153A-131 leaves the rest to counties.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -14666,7 +14666,7 @@
           "cite": "§ 14-417",
           "status": "legal",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
+          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, five large constricting snakes and the crocodilians, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -15113,7 +15113,7 @@
           "cite": "§ 14-417",
           "status": "legal",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
+          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, five large constricting snakes and the crocodilians, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -15555,7 +15555,7 @@
           "cite": "§ 14-417",
           "status": "legal",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
+          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, five large constricting snakes and the crocodilians, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -16014,7 +16014,7 @@
           "cite": "§ 14-417",
           "status": "legal",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
+          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, five large constricting snakes and the crocodilians, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -16418,7 +16418,7 @@
           "cite": "§ 14-417",
           "status": "legal",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "The only statewide statute covers venomous reptiles. Your county code is the operative layer.",
+          "note": "The only statewide statute covers venomous reptiles, five large constricting snakes and the crocodilians. Your county code is the operative layer.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -16847,7 +16847,7 @@
           "cite": "§ 14-417",
           "status": "legal",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "The only statewide statute covers venomous reptiles. Counties may regulate animals dangerous to persons or property under § 153A-131.",
+          "note": "The only statewide statute covers venomous reptiles, five large constricting snakes and the crocodilians. Counties may regulate animals dangerous to persons or property under § 153A-131.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -17396,7 +17396,7 @@
           "sourceId": "nc-14-417",
           "cite": "§ 14-417",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles. Everything else is left to county ordinance under § 153A-131.",
+          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, five large constricting snakes and the crocodilians. Everything else is left to county ordinance under § 153A-131.",
           "verifiedOn": "2026-10-01"
         },
         "ND": {
@@ -17816,7 +17816,7 @@
           "status": "legal",
           "sourceId": "nc-14-417",
           "cite": "§ 14-417",
-          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles. Everything else is left to county ordinance under § 153A-131.",
+          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, five large constricting snakes and the crocodilians. Everything else is left to county ordinance under § 153A-131.",
           "verifiedOn": "2026-10-01"
         },
         "ND": {
@@ -18254,7 +18254,7 @@
           "status": "legal",
           "sourceId": "nc-14-417",
           "cite": "§ 14-417",
-          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles. Everything else is left to county ordinance under § 153A-131.",
+          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles, five large constricting snakes and the crocodilians. Everything else is left to county ordinance under § 153A-131.",
           "verifiedOn": "2026-10-01"
         },
         "ND": {
@@ -19134,7 +19134,7 @@
           "status": "legal",
           "sourceId": "nc-14-417",
           "cite": "§ 14-417",
-          "note": "North Carolina's only statewide exotic-animal statute covers venomous reptiles, and does not ban even those. Everything else is a county question under § 153A-131.",
+          "note": "North Carolina's only statewide exotic-animal statute covers venomous reptiles, five large constricting snakes and the crocodilians, and does not ban even those. Everything else is a county question under § 153A-131.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -19571,7 +19571,7 @@
           "status": "legal",
           "sourceId": "nc-14-417",
           "cite": "§ 14-417; § 153A-131",
-          "note": "North Carolina's only statewide exotic-animal statute covers venomous reptiles. Everything else, including a garter snake, is left to county ordinance.",
+          "note": "North Carolina's only statewide exotic-animal statute covers venomous reptiles, five large constricting snakes and the crocodilians. Everything else, including a garter snake, is left to county ordinance.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -19990,7 +19990,7 @@
           "status": "legal",
           "sourceId": "nc-14-417",
           "cite": "§ 14-417; § 153A-131",
-          "note": "North Carolina's only statewide exotic-animal statute covers venomous reptiles. Everything else is left to county ordinance.",
+          "note": "North Carolina's only statewide exotic-animal statute covers venomous reptiles, five large constricting snakes and the crocodilians. Everything else is left to county ordinance.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -20404,7 +20404,7 @@
           "status": "legal",
           "sourceId": "nc-14-417",
           "cite": "§ 14-417",
-          "note": "No bird provision exists in North Carolina's only statewide exotic-animal statute; it covers venomous reptiles.",
+          "note": "No bird provision exists in North Carolina's only statewide exotic-animal statute; it covers venomous reptiles, five large constricting snakes and the crocodilians.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -20741,7 +20741,7 @@
           "status": "legal",
           "sourceId": "nc-14-417",
           "cite": "§ 14-417",
-          "note": "North Carolina's only statewide exotic-animal statute covers venomous reptiles and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
+          "note": "North Carolina's only statewide exotic-animal statute covers venomous reptiles, five large constricting snakes and the crocodilians, and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
           "verifiedOn": "2026-10-01",
           "localOverride": true
         },
@@ -21279,7 +21279,7 @@
           "sourceId": "nc-113-129",
           "cite": "N.C. Gen. Stat. § 113-129(15)",
           "quote": "Wild Animals. - Game animals; fur-bearing animals; feral swine; and all other wild mammals except marine mammals found in coastal fishing waters. In addition, this definition includes members of the following groups which are on the federal list of endangered or threatened species: wild amphibians, wild reptiles except sea turtles inhabiting and depending upon coastal fishing waters, and wild invertebrates except invertebrates declared to be pests under the Structural Pest Control Act of North Carolina of 1955 or the North Carolina Pesticide Law of 1971.",
-          "note": "North Carolina answers this in its definitions rather than its permit sections, and the answer is that the Wildlife Resources Commission has no jurisdiction. § 113-129(15) defines wild animals as game animals, fur-bearing animals, feral swine and other wild mammals, and then extends only to \"wild amphibians, wild reptiles ... and wild invertebrates\" that are \"on the federal list of endangered or threatened species\". The bearded dragon is not federally listed, so it is not a wild animal in North Carolina at all and the captivity license at § 113-272.5 has nothing to attach to. § 14-417 reaches venomous reptiles and large constrictors, and § 153A-131 lets counties regulate dangerous animals, which is where any local restriction would come from.",
+          "note": "North Carolina answers this in its definitions rather than its permit sections, and the answer is that the Wildlife Resources Commission has no jurisdiction. § 113-129(15) defines wild animals as game animals, fur-bearing animals, feral swine and other wild mammals, and then extends only to \"wild amphibians, wild reptiles ... and wild invertebrates\" that are \"on the federal list of endangered or threatened species\". The bearded dragon is not federally listed, so it is not a wild animal in North Carolina at all and the captivity license at § 113-272.5 has nothing to attach to. Article 55 of Chapter 14 (§§ 14-417 to 14-417.2) reaches venomous reptiles, five large constricting snakes and the crocodilians, and § 153A-131 lets counties regulate dangerous animals, which is where any local restriction would come from.",
           "verifiedOn": "2026-10-01"
         },
         "SC": {
@@ -21709,7 +21709,7 @@
           "sourceId": "nc-113-129",
           "cite": "N.C. Gen. Stat. § 113-129(15)",
           "quote": "Wild Animals. - Game animals; fur-bearing animals; feral swine; and all other wild mammals except marine mammals found in coastal fishing waters. In addition, this definition includes members of the following groups which are on the federal list of endangered or threatened species: wild amphibians, wild reptiles except sea turtles inhabiting and depending upon coastal fishing waters, and wild invertebrates except invertebrates declared to be pests under the Structural Pest Control Act of North Carolina of 1955 or the North Carolina Pesticide Law of 1971.",
-          "note": "North Carolina answers this in its definitions rather than its permit sections, and the answer is that the Wildlife Resources Commission has no jurisdiction. § 113-129(15) defines wild animals as game animals, fur-bearing animals, feral swine and other wild mammals, and then extends only to \"wild amphibians, wild reptiles ... and wild invertebrates\" that are \"on the federal list of endangered or threatened species\". The leopard gecko is not federally listed, so it is not a wild animal in North Carolina at all and the captivity license at § 113-272.5 has nothing to attach to. § 14-417 reaches venomous reptiles and large constrictors, and § 153A-131 lets counties regulate dangerous animals, which is where any local restriction would come from.",
+          "note": "North Carolina answers this in its definitions rather than its permit sections, and the answer is that the Wildlife Resources Commission has no jurisdiction. § 113-129(15) defines wild animals as game animals, fur-bearing animals, feral swine and other wild mammals, and then extends only to \"wild amphibians, wild reptiles ... and wild invertebrates\" that are \"on the federal list of endangered or threatened species\". The leopard gecko is not federally listed, so it is not a wild animal in North Carolina at all and the captivity license at § 113-272.5 has nothing to attach to. Article 55 of Chapter 14 (§§ 14-417 to 14-417.2) reaches venomous reptiles, five large constricting snakes and the crocodilians, and § 153A-131 lets counties regulate dangerous animals, which is where any local restriction would come from.",
           "verifiedOn": "2026-10-01"
         },
         "SC": {
@@ -22139,7 +22139,7 @@
           "sourceId": "nc-113-129",
           "cite": "N.C. Gen. Stat. § 113-129(15)",
           "quote": "Wild Animals. - Game animals; fur-bearing animals; feral swine; and all other wild mammals except marine mammals found in coastal fishing waters. In addition, this definition includes members of the following groups which are on the federal list of endangered or threatened species: wild amphibians, wild reptiles except sea turtles inhabiting and depending upon coastal fishing waters, and wild invertebrates except invertebrates declared to be pests under the Structural Pest Control Act of North Carolina of 1955 or the North Carolina Pesticide Law of 1971.",
-          "note": "North Carolina answers this in its definitions rather than its permit sections, and the answer is that the Wildlife Resources Commission has no jurisdiction. § 113-129(15) defines wild animals as game animals, fur-bearing animals, feral swine and other wild mammals, and then extends only to \"wild amphibians, wild reptiles ... and wild invertebrates\" that are \"on the federal list of endangered or threatened species\". The crested gecko is not federally listed, so it is not a wild animal in North Carolina at all and the captivity license at § 113-272.5 has nothing to attach to. § 14-417 reaches venomous reptiles and large constrictors, and § 153A-131 lets counties regulate dangerous animals, which is where any local restriction would come from.",
+          "note": "North Carolina answers this in its definitions rather than its permit sections, and the answer is that the Wildlife Resources Commission has no jurisdiction. § 113-129(15) defines wild animals as game animals, fur-bearing animals, feral swine and other wild mammals, and then extends only to \"wild amphibians, wild reptiles ... and wild invertebrates\" that are \"on the federal list of endangered or threatened species\". The crested gecko is not federally listed, so it is not a wild animal in North Carolina at all and the captivity license at § 113-272.5 has nothing to attach to. Article 55 of Chapter 14 (§§ 14-417 to 14-417.2) reaches venomous reptiles, five large constricting snakes and the crocodilians, and § 153A-131 lets counties regulate dangerous animals, which is where any local restriction would come from.",
           "verifiedOn": "2026-10-01"
         },
         "SC": {
@@ -22569,7 +22569,7 @@
           "sourceId": "nc-113-129",
           "cite": "N.C. Gen. Stat. § 113-129(15)",
           "quote": "Wild Animals. - Game animals; fur-bearing animals; feral swine; and all other wild mammals except marine mammals found in coastal fishing waters. In addition, this definition includes members of the following groups which are on the federal list of endangered or threatened species: wild amphibians, wild reptiles except sea turtles inhabiting and depending upon coastal fishing waters, and wild invertebrates except invertebrates declared to be pests under the Structural Pest Control Act of North Carolina of 1955 or the North Carolina Pesticide Law of 1971.",
-          "note": "North Carolina answers this in its definitions rather than its permit sections, and the answer is that the Wildlife Resources Commission has no jurisdiction. § 113-129(15) defines wild animals as game animals, fur-bearing animals, feral swine and other wild mammals, and then extends only to \"wild amphibians, wild reptiles ... and wild invertebrates\" that are \"on the federal list of endangered or threatened species\". The blue-tongue skink is not federally listed, so it is not a wild animal in North Carolina at all and the captivity license at § 113-272.5 has nothing to attach to. § 14-417 reaches venomous reptiles and large constrictors, and § 153A-131 lets counties regulate dangerous animals, which is where any local restriction would come from.",
+          "note": "North Carolina answers this in its definitions rather than its permit sections, and the answer is that the Wildlife Resources Commission has no jurisdiction. § 113-129(15) defines wild animals as game animals, fur-bearing animals, feral swine and other wild mammals, and then extends only to \"wild amphibians, wild reptiles ... and wild invertebrates\" that are \"on the federal list of endangered or threatened species\". The blue-tongue skink is not federally listed, so it is not a wild animal in North Carolina at all and the captivity license at § 113-272.5 has nothing to attach to. Article 55 of Chapter 14 (§§ 14-417 to 14-417.2) reaches venomous reptiles, five large constricting snakes and the crocodilians, and § 153A-131 lets counties regulate dangerous animals, which is where any local restriction would come from.",
           "verifiedOn": "2026-10-01"
         },
         "SC": {
@@ -22999,7 +22999,7 @@
           "sourceId": "nc-113-129",
           "cite": "N.C. Gen. Stat. § 113-129(15)",
           "quote": "Wild Animals. - Game animals; fur-bearing animals; feral swine; and all other wild mammals except marine mammals found in coastal fishing waters. In addition, this definition includes members of the following groups which are on the federal list of endangered or threatened species: wild amphibians, wild reptiles except sea turtles inhabiting and depending upon coastal fishing waters, and wild invertebrates except invertebrates declared to be pests under the Structural Pest Control Act of North Carolina of 1955 or the North Carolina Pesticide Law of 1971.",
-          "note": "North Carolina answers this in its definitions rather than its permit sections, and the answer is that the Wildlife Resources Commission has no jurisdiction. § 113-129(15) defines wild animals as game animals, fur-bearing animals, feral swine and other wild mammals, and then extends only to \"wild amphibians, wild reptiles ... and wild invertebrates\" that are \"on the federal list of endangered or threatened species\". Jackson's chameleon is not federally listed, so it is not a wild animal in North Carolina at all and the captivity license at § 113-272.5 has nothing to attach to. § 14-417 reaches venomous reptiles and large constrictors, and § 153A-131 lets counties regulate dangerous animals, which is where any local restriction would come from.",
+          "note": "North Carolina answers this in its definitions rather than its permit sections, and the answer is that the Wildlife Resources Commission has no jurisdiction. § 113-129(15) defines wild animals as game animals, fur-bearing animals, feral swine and other wild mammals, and then extends only to \"wild amphibians, wild reptiles ... and wild invertebrates\" that are \"on the federal list of endangered or threatened species\". Jackson's chameleon is not federally listed, so it is not a wild animal in North Carolina at all and the captivity license at § 113-272.5 has nothing to attach to. Article 55 of Chapter 14 (§§ 14-417 to 14-417.2) reaches venomous reptiles, five large constricting snakes and the crocodilians, and § 153A-131 lets counties regulate dangerous animals, which is where any local restriction would come from.",
           "verifiedOn": "2026-10-01"
         },
         "SC": {
@@ -23428,7 +23428,7 @@
           "sourceId": "nc-113-129",
           "cite": "N.C. Gen. Stat. § 113-129(15)",
           "quote": "Wild Animals. - Game animals; fur-bearing animals; feral swine; and all other wild mammals except marine mammals found in coastal fishing waters. In addition, this definition includes members of the following groups which are on the federal list of endangered or threatened species: wild amphibians, wild reptiles except sea turtles inhabiting and depending upon coastal fishing waters, and wild invertebrates except invertebrates declared to be pests under the Structural Pest Control Act of North Carolina of 1955 or the North Carolina Pesticide Law of 1971.",
-          "note": "North Carolina answers this in its definitions rather than its permit sections, and the answer is that the Wildlife Resources Commission has no jurisdiction. § 113-129(15) defines wild animals as game animals, fur-bearing animals, feral swine and other wild mammals, and then extends only to \"wild amphibians, wild reptiles ... and wild invertebrates\" that are \"on the federal list of endangered or threatened species\". The green anole is not federally listed, so it is not a wild animal in North Carolina at all and the captivity license at § 113-272.5 has nothing to attach to. § 14-417 reaches venomous reptiles and large constrictors, and § 153A-131 lets counties regulate dangerous animals, which is where any local restriction would come from. This is the entry that shows how far the definition reaches. The green anole is a North Carolina native, and in most southeastern states that alone starts a problem: Georgia bans keeping a native, Alabama and Oklahoma protect natives species by species, South Carolina bars selling one. North Carolina simply does not treat a non-listed reptile as wildlife, so its own native lizard is unregulated.",
+          "note": "North Carolina answers this in its definitions rather than its permit sections, and the answer is that the Wildlife Resources Commission has no jurisdiction. § 113-129(15) defines wild animals as game animals, fur-bearing animals, feral swine and other wild mammals, and then extends only to \"wild amphibians, wild reptiles ... and wild invertebrates\" that are \"on the federal list of endangered or threatened species\". The green anole is not federally listed, so it is not a wild animal in North Carolina at all and the captivity license at § 113-272.5 has nothing to attach to. Article 55 of Chapter 14 (§§ 14-417 to 14-417.2) reaches venomous reptiles, five large constricting snakes and the crocodilians, and § 153A-131 lets counties regulate dangerous animals, which is where any local restriction would come from. This is the entry that shows how far the definition reaches. The green anole is a North Carolina native, and in most southeastern states that alone starts a problem: Georgia bans keeping a native, Alabama and Oklahoma protect natives species by species, South Carolina bars selling one. North Carolina simply does not treat a non-listed reptile as wildlife, so its own native lizard is unregulated.",
           "verifiedOn": "2026-10-01"
         },
         "SC": {
@@ -24289,7 +24289,7 @@
           "sourceId": "nc-113-129",
           "cite": "N.C. Gen. Stat. § 113-129(15)",
           "quote": "Wild Animals. - Game animals; fur-bearing animals; feral swine; and all other wild mammals except marine mammals found in coastal fishing waters. In addition, this definition includes members of the following groups which are on the federal list of endangered or threatened species: wild amphibians, wild reptiles except sea turtles inhabiting and depending upon coastal fishing waters, and wild invertebrates except invertebrates declared to be pests under the Structural Pest Control Act of North Carolina of 1955 or the North Carolina Pesticide Law of 1971.",
-          "note": "North Carolina answers this in its definitions rather than its permit sections, and the answer is that the Wildlife Resources Commission has no jurisdiction. § 113-129(15) defines wild animals as game animals, fur-bearing animals, feral swine and other wild mammals, and then extends only to \"wild amphibians, wild reptiles ... and wild invertebrates\" that are \"on the federal list of endangered or threatened species\". The Madagascar hissing cockroach is not federally listed, so it is not a wild animal in North Carolina at all and the captivity license at § 113-272.5 has nothing to attach to. § 14-417 reaches venomous reptiles and large constrictors, and § 153A-131 lets counties regulate dangerous animals, which is where any local restriction would come from. The invertebrate limb of the definition carries its own exception, for \"invertebrates declared to be pests under the Structural Pest Control Act of North Carolina of 1955 or the North Carolina Pesticide Law of 1971\", which is a reminder that the pest agencies are the ones with authority over arthropods here. The federal PPQ 526 permit still governs moving this species across a state line.",
+          "note": "North Carolina answers this in its definitions rather than its permit sections, and the answer is that the Wildlife Resources Commission has no jurisdiction. § 113-129(15) defines wild animals as game animals, fur-bearing animals, feral swine and other wild mammals, and then extends only to \"wild amphibians, wild reptiles ... and wild invertebrates\" that are \"on the federal list of endangered or threatened species\". The Madagascar hissing cockroach is not federally listed, so it is not a wild animal in North Carolina at all and the captivity license at § 113-272.5 has nothing to attach to. Article 55 of Chapter 14 (§§ 14-417 to 14-417.2) reaches venomous reptiles, five large constricting snakes and the crocodilians, and § 153A-131 lets counties regulate dangerous animals, which is where any local restriction would come from. The invertebrate limb of the definition carries its own exception, for \"invertebrates declared to be pests under the Structural Pest Control Act of North Carolina of 1955 or the North Carolina Pesticide Law of 1971\", which is a reminder that the pest agencies are the ones with authority over arthropods here. The federal PPQ 526 permit still governs moving this species across a state line.",
           "verifiedOn": "2026-10-01"
         },
         "SC": {
@@ -24707,7 +24707,7 @@
           "sourceId": "nc-14-417",
           "cite": "N.C. Gen. Stat. § 14-417",
           "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
-          "note": "North Carolina's only statewide exotic animal statute reaches venomous reptiles, so no state rule reaches a serval or a Savannah. § 153A-131 lets counties regulate dangerous animals, and several have used it, so the county ordinance is the rule to check.",
+          "note": "North Carolina's only statewide exotic animal statute reaches venomous reptiles, five large constricting snakes and the crocodilians, so no state rule reaches a serval or a Savannah. § 153A-131 lets counties regulate dangerous animals, and several have used it, so the county ordinance is the rule to check.",
           "localOverride": true,
           "verifiedOn": "2026-10-08"
         },
