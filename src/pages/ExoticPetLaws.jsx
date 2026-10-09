@@ -5,6 +5,7 @@ import { motion } from '@/lib/motion-safe';
 import { ChevronDown, X } from 'lucide-react';
 import LEGAL from '@/lib/data/legalStatus.json';
 import { groupLegalAnimals } from '@/lib/data/legalGroups';
+import { liveLegalArticle } from '@/lib/data/liveLegalArticle';
 import LEGAL_GUIDES from '@/lib/generated/legal-guides.json';
 import { STATE_NAMES } from '@/lib/data/usStatePaths';
 import { CODE_TO_SLUG, SLUG_TO_CODE } from '@/lib/data/stateSlugs';
@@ -77,6 +78,7 @@ export default function ExoticPetLaws() {
 
   const activeId = LEGAL.animals[animalId] ? animalId : DEFAULT_ANIMAL;
   const animal = LEGAL.animals[activeId];
+  const articleLink = liveLegalArticle(animal);
   const isIndex = !animalId;
 
   const [selectedState, setSelectedState] = React.useState(null);
@@ -552,9 +554,9 @@ export default function ExoticPetLaws() {
                     why it says that, and the foot of a 52-row list is a long way from
                     here. Outside the ternary on purpose: an unread jurisdiction is
                     exactly when the wider write-up is most useful. */}
-                {animal.article && (
+                {articleLink && (
                   <Link
-                    to={animal.article}
+                    to={articleLink}
                     className="mt-3 block text-xs font-body text-primary hover:underline"
                   >
                     {`The full ${inSentence(animal.name)} legal guide →`}
@@ -735,10 +737,10 @@ export default function ExoticPetLaws() {
             ))}
           </div>
 
-          {animal.article && (
+          {articleLink && (
             <p className="mt-6 text-sm font-body text-foreground">
               {'For the full write-up, including the states that get reported wrongly, '}
-              <Link to={animal.article} className="text-primary font-semibold hover:underline">
+              <Link to={articleLink} className="text-primary font-semibold hover:underline">
                 {`read the ${inSentence(animal.name)} legal guide`}
               </Link>
               .
