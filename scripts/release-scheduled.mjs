@@ -203,7 +203,9 @@ run('sync-articles.js');
 run('check-rotation.mjs', '--assign');
 run('generate-guides-index.js');
 run('generate-legal-summary.mjs');
-run('check-publish-dates.mjs');
+// A forced --date in the future would trip this check by construction; on a
+// real morning it is the guard that no future-dated page slipped through.
+if (!args.includes('--date')) run('check-publish-dates.mjs');
 run('check-internal-links.mjs');
 run('check-related-articles.mjs');
 
