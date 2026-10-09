@@ -20,10 +20,20 @@ if [ -d node_modules ] && [ -f "$stamp" ] && cmp -s "$stamp" package-lock.json; 
 fi
 
 echo "Installing npm dependencies..."
+# npm install rewrites the committed lockfile (it is out of sync on picomatch,
+# so npm ci refuses it), which left a dirty package-lock.json in every session
+# and, once reverted, a stamp mismatch that reinstalled on every resume. Put
+# the committed file back and stamp that, so the tree stays clean and a resume
+# skips the install.
+lock_backup=$(mktemp)
+cp package-lock.json "$lock_backup"
 if npm install --no-audit --no-fund --loglevel=error; then
+  cp "$lock_backup" package-lock.json
   cp package-lock.json "$stamp"
   echo "npm dependencies installed."
 else
+  cp "$lock_backup" package-lock.json
   echo "npm install failed; eslint and sync-articles will not work until it is rerun."
 fi
+rm -f "$lock_backup"
 exit 0
