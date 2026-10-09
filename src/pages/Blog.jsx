@@ -301,6 +301,10 @@ export default function Blog() {
   const hubId = !origin && !arrivedByClick && selectedSlug ? primaryGuideId(selectedSlug) : null;
   const hubName = hubId ? speciesNameFor(selectedSlug) : null;
   const backToHub = Boolean(hubId && hubName);
+  // Animal day articles hang off /animal-days, not a species hub, so a cold
+  // landing on one goes back to the calendar instead of Critter Digest.
+  const backToAnimalDays = !origin && !arrivedByClick && Boolean(selectedSlug)
+    && ARTICLE_TOPIC[selectedSlug] === 'animal-days';
 
   // Reached by a click from somewhere on the site that did not say where. There
   // is a history entry behind it, so going back is both correct and the only
@@ -318,7 +322,9 @@ export default function Blog() {
           ? 'Back'
           : backToHub
             ? `Back to ${hubName}`
-            : 'Back to Critter Digest';
+            : backToAnimalDays
+              ? 'Back to Animal Days'
+              : 'Back to Critter Digest';
 
   const handleBack = () => {
     if (cameFromFactFiles) {
@@ -342,6 +348,10 @@ export default function Blog() {
     }
     if (backToHub) {
       navigate(`/guides/${hubId}/`);
+      return;
+    }
+    if (backToAnimalDays) {
+      navigate('/animal-days/');
       return;
     }
     // Prefer the real URL slug from the route; slugify only for legacy ?category= titles.
