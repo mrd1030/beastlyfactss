@@ -13,7 +13,7 @@
 // Usage:
 //   node scripts/generate-pins.mjs <spec.json>
 // where spec.json is an array of:
-//   { "out": "bearded-dragon-shopping-list",   -> public/assets/pins/<out>.jpg
+//   { "out": "bearded-dragon-shopping-list",   -> social-batches/pins/<out>.jpg
 //     "image": "public/assets/images/....jpg", -> source photo (any aspect)
 //     "kicker": "CARE GUIDE",                  -> small orange eyebrow line
 //     "title": "The Buy-Once Bearded Dragon Setup" }
@@ -56,7 +56,9 @@ if (!specPath) {
   process.exit(1);
 }
 const specs = JSON.parse(fs.readFileSync(specPath, 'utf8'));
-const outDir = 'public/assets/pins';
+// Cards render outside public/ so they never ride a site deploy: they go to
+// the beastlyfacts-pins R2 bucket through scripts/upload-pins.mjs.
+const outDir = 'social-batches/pins';
 fs.mkdirSync(outDir, { recursive: true });
 
 // Greedy word wrap against an estimated average glyph width. 0.58em per

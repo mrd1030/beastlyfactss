@@ -231,9 +231,10 @@ are no replies at all.
 - `link`, `title`, and `board` are all **required**, and rejected on every
   other platform.
 - The board must already exist in Pinterest before the import runs.
-- One image per pin, and it has to be a generated card under `/assets/pins/`
-  from `scripts/generate-pins.mjs`, **merged and deployed first** or Publer
-  fetches a 404.
+- One image per pin, and it has to be a generated card from
+  `scripts/generate-pins.mjs` at `https://pins.beastlyfacts.com/<out>.jpg`,
+  **uploaded first** with `scripts/upload-pins.mjs` or Publer fetches a 404.
+  Cards made before 2026-10-11 under `/assets/pins/` are still accepted.
 - `comments` must be absent. Passing one is an error.
 
 Full channel rules, boards, cadence, and the font setup the generator needs

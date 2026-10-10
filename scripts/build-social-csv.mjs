@@ -35,7 +35,7 @@
 //     "link": "https://beastlyfacts.com/blog/...",   the outbound link, required
 //     "title": "the pin title",                       required
 //     "board": "Reptile Care & Setups",               must already exist, required
-//     "media": ["https://beastlyfacts.com/assets/pins/....jpg"],
+//     "media": ["https://pins.beastlyfacts.com/....jpg"],
 //     "alt": ["what is actually in the image"]
 //   }
 //
@@ -52,6 +52,10 @@ import path from 'path';
 
 const PLATFORMS = ['x', 'ig', 'threads', 'pinterest'];
 const SITE = 'https://beastlyfacts.com';
+// Pin cards live in the beastlyfacts-pins R2 bucket behind this domain, so a
+// batch never waits on a site deploy (scripts/upload-pins.mjs). Cards from
+// before 2026-10-11 still sit under SITE/assets/pins/ and stay valid.
+const PINS = 'https://pins.beastlyfacts.com';
 
 // pinterest inverts the central rule of every other platform here. Elsewhere
 // Link(s) must stay empty or Publer builds a link-preview post instead of the
@@ -129,17 +133,17 @@ function validate(batch, file) {
     if (!Array.isArray(media) || media.length === 0) err(i, 'missing media, expected at least one url');
     media.forEach(m => {
       if (!/^https:\/\//.test(m)) err(i, `media url must be a full https url, got ${JSON.stringify(m)}`);
-      else if (!m.startsWith(SITE + '/')) err(i, `media url is not on ${SITE}: ${m}`);
+      else if (!m.startsWith(SITE + '/') && !(isPin(batch) && m.startsWith(PINS + '/'))) err(i, `media url is not on ${SITE}: ${m}`);
       if (seenMedia.has(m)) err(i, `image reused from post ${seenMedia.get(m) + 1}: ${m}`);
       else seenMedia.set(m, i);
     });
     if (isPin(batch)) {
       if (media.length !== 1) err(i, `a pin is one image, got ${media.length}`);
       // Pins are generated 2:3 cards, not site photos reused straight, and
-      // they must be deployed before the import or Publer fetches a 404.
+      // they must be uploaded before the import or Publer fetches a 404.
       media.forEach(m => {
-        if (!m.includes('/assets/pins/')) {
-          err(i, `pin media should be a generated card under /assets/pins/, got ${m}. Run scripts/generate-pins.mjs, then merge and deploy before importing`);
+        if (!m.startsWith(PINS + '/') && !m.includes('/assets/pins/')) {
+          err(i, `pin media should be a generated card on ${PINS}, got ${m}. Run scripts/generate-pins.mjs, then scripts/upload-pins.mjs before importing`);
         }
       });
     }

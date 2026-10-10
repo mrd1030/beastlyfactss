@@ -12,10 +12,13 @@ beats volume.
    title in Schibsted Grotesk, orange kicker and BeastlyFacts.com footer. No new
    photography, no text on the photo itself.
 2. The generator takes a JSON spec (`out`, `image`, `kicker`, `title`) and
-   writes JPEGs to `public/assets/pins/`, which deploy with the site, so
-   Publer's Media URL column can reference them at
-   `https://beastlyfacts.com/assets/pins/<out>.jpg`. Pins must be MERGED AND
-   DEPLOYED before importing the CSV, or Publer fetches 404s.
+   writes JPEGs to `social-batches/pins/`. `node scripts/upload-pins.mjs
+   <spec.json>` puts them in the `beastlyfacts-pins` R2 bucket and checks each
+   one answers at `https://pins.beastlyfacts.com/<out>.jpg`, which is what
+   Publer's Media URL column references. No site deploy is involved, so a pin
+   batch commits to main with [CI Skip] and is importable the moment the
+   upload finishes. Cards made before 2026-10-11 still live under
+   `public/assets/pins/` and keep their beastlyfacts.com urls.
 3. Layouts (`layout` in the spec): the photo card (default) for single facts
    and comparisons, plus five text-forward panels with a 1000x520 photo strip:
    `checklist` (tank setup, item names only), `cost` (a hook from the guide,

@@ -1,0 +1,47 @@
+// Uploads rendered pin cards to the beastlyfacts-pins R2 bucket, served at
+// https://pins.beastlyfacts.com/<out>.jpg. No site build is involved, so a
+// batch is importable into Publer the moment this finishes.
+//
+// Usage:
+//   node scripts/upload-pins.mjs <spec.json>
+// Takes the same spec file as generate-pins.mjs and uploads each
+// social-batches/pins/<out>.jpg, then fetches every public url and fails
+// unless all of them answer 200.
+//
+// Needs wrangler signed in (`npx wrangler login` once, in a real terminal).
+import fs from 'node:fs';
+import { execFileSync } from 'node:child_process';
+
+const BUCKET = 'beastlyfacts-pins';
+const PUBLIC = 'https://pins.beastlyfacts.com';
+
+const specPath = process.argv[2];
+if (!specPath) {
+  console.error('usage: node scripts/upload-pins.mjs <spec.json>');
+  process.exit(1);
+}
+const specs = JSON.parse(fs.readFileSync(specPath, 'utf8'));
+
+const missing = specs.filter((s) => !fs.existsSync(`social-batches/pins/${s.out}.jpg`));
+if (missing.length) {
+  console.error(`not rendered yet, run generate-pins.mjs first: ${missing.map((s) => s.out).join(', ')}`);
+  process.exit(1);
+}
+
+for (const { out } of specs) {
+  execFileSync('npx', ['wrangler', 'r2', 'object', 'put', `${BUCKET}/${out}.jpg`,
+    '--file', `social-batches/pins/${out}.jpg`, '--content-type', 'image/jpeg', '--remote'],
+  { stdio: ['ignore', 'ignore', 'inherit'], shell: process.platform === 'win32' });
+  console.log(`uploaded ${out}.jpg`);
+}
+
+const bad = [];
+for (const { out } of specs) {
+  const res = await fetch(`${PUBLIC}/${out}.jpg`, { method: 'HEAD' });
+  if (res.status !== 200) bad.push(`${out}.jpg (${res.status})`);
+}
+if (bad.length) {
+  console.error(`uploaded but not publicly reachable: ${bad.join(', ')}`);
+  process.exit(1);
+}
+console.log(`${specs.length} pins live at ${PUBLIC}`);
