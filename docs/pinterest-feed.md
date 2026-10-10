@@ -16,11 +16,22 @@ beats volume.
    Publer's Media URL column can reference them at
    `https://beastlyfacts.com/assets/pins/<out>.jpg`. Pins must be MERGED AND
    DEPLOYED before importing the CSV, or Publer fetches 404s.
-3. Fonts: the generator renders through fontconfig. Instance the site's
+3. Layouts (`layout` in the spec): the photo card (default) for single facts
+   and comparisons, plus five text-forward panels with a 1000x520 photo strip:
+   `checklist` (tank setup, item names only), `cost` (a hook from the guide,
+   never a price), `numbered` (first 3 of a fun facts list or enrichment
+   guide), `legal` (the question, never the verdict) and `feeding` (staple,
+   sometimes, avoid). Panels refuse any "$" or cost token: a pin outlives the
+   cost sheet and the law it would quote. Samples are in
+   `social-batches/pinterest-layout-samples.json`.
+4. Fonts: the generator renders through fontconfig. Instance the site's
    variable fonts once per machine/session (Schibsted Grotesk at wght 700 as
    "Schibsted-Bold", Atkinson Hyperlegible Next at 700 as "Atkinson-Bold", via fonttools
    instancer into ~/.fonts, then `fc-cache -f`), or titles fall back to
-   DejaVu.
+   DejaVu. On the Windows desktop the instanced TTFs and a `fonts.conf`
+   pointing at them live in `%LOCALAPPDATA%\beastly-pin-fonts`; run the
+   generator with `FONTCONFIG_FILE` set to that `fonts.conf` (fonttools needs
+   the `brotli` package to read the woff2 sources).
 
 ## Publer CSV (12-column bulk template)
 
@@ -59,14 +70,23 @@ own little search index:
 - Weird Animal Facts
 - Aquarium & Fish Keeping
 - Small Pet Care
+- Pet Bird Care
+- Tarantula & Invertebrate Care
+- Turtle & Tortoise Care
+- Frog & Amphibian Care
+- Exotic Pet Laws by State
+- Best Pets for Beginners
+- Pet Enrichment Ideas
 
 Add Dog Care / Cat Care boards when that content lane has enough pins to
 open with 5+ (an emptyish board looks abandoned).
 
 ## Cadence and rules
 
-- 2 pins per day, one care/comparison pin and one fact pin, spread morning
-  and late afternoon. Steady daily beats weekly bursts; Pinterest rewards
+- 4 pins per day since 2026-10-10: 08:00 single fact (photo card), 12:00
+  checklist, feeding or enrichment, 16:00 legal question or comparison,
+  20:00 cost or numbered fun facts (Beastle about once a week). No species
+  twice in one day. Steady daily beats weekly bursts; Pinterest rewards
   fresh pins (new image + new URL combinations) over re-pins.
 - Never pin the same image twice; a page may be re-pinned later only with a
   NEW image composition.

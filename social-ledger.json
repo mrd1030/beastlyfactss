@@ -2495,27 +2495,27 @@
         "date": "2026-10-10"
       },
       {
-        "id": 188,
+        "id": 254,
         "date": "2026-10-11"
       },
       {
-        "id": 189,
+        "id": 159,
         "date": "2026-10-12"
       },
       {
-        "id": 192,
+        "id": 233,
         "date": "2026-10-13"
       },
       {
-        "id": 257,
+        "id": 255,
         "date": "2026-10-14"
       },
       {
-        "id": 276,
+        "id": 167,
         "date": "2026-10-15"
       },
       {
-        "id": 287,
+        "id": 248,
         "date": "2026-10-16"
       }
     ],
@@ -2637,27 +2637,83 @@
         "date": "2026-10-10"
       },
       {
-        "file": "content/guides/sugar-glider-tank-setup-guide.mdx",
+        "file": "content/guides/ball-python-enrichment-guide.mdx",
+        "date": "2026-10-10"
+      },
+      {
+        "file": "content/guides/chinchilla-cost-guide.mdx",
+        "date": "2026-10-10"
+      },
+      {
+        "file": "content/guides/leopard-gecko-tank-setup-guide.mdx",
         "date": "2026-10-11"
       },
       {
-        "file": "content/guides/degu-tank-setup-guide.mdx",
+        "file": "content/guides/fennec-fox-legal-guide.mdx",
+        "date": "2026-10-11"
+      },
+      {
+        "file": "content/fun-facts/10-surprising-bearded-dragon-facts.mdx",
+        "date": "2026-10-11"
+      },
+      {
+        "file": "content/guides/axolotl-feeding-guide.mdx",
         "date": "2026-10-12"
       },
       {
-        "file": "content/guides/flying-squirrel-tank-setup-guide.mdx",
+        "file": "content/guides/leopard-gecko-vs-crested-gecko-guide.mdx",
+        "date": "2026-10-12"
+      },
+      {
+        "file": "content/guides/guinea-pig-cost-guide.mdx",
+        "date": "2026-10-12"
+      },
+      {
+        "file": "content/guides/budgie-feeding-guide.mdx",
         "date": "2026-10-13"
       },
       {
-        "file": "content/guides/ferret-tank-setup-guide.mdx",
+        "file": "content/guides/ball-python-vs-corn-snake-guide.mdx",
+        "date": "2026-10-13"
+      },
+      {
+        "file": "content/fun-facts/10-surprising-emperor-scorpion-facts.mdx",
+        "date": "2026-10-13"
+      },
+      {
+        "file": "content/guides/rabbit-enrichment-guide.mdx",
         "date": "2026-10-14"
       },
       {
-        "file": "content/guides/hamster-tank-setup-guide.mdx",
+        "file": "content/guides/hedgehog-legal-guide.mdx",
+        "date": "2026-10-14"
+      },
+      {
+        "file": "content/guides/hamster-cost-guide.mdx",
+        "date": "2026-10-14"
+      },
+      {
+        "file": "content/guides/hermit-crab-tank-setup-guide.mdx",
         "date": "2026-10-15"
       },
       {
-        "file": "content/guides/guinea-pig-tank-setup-guide.mdx",
+        "file": "content/guides/budgie-vs-cockatiel-guide.mdx",
+        "date": "2026-10-15"
+      },
+      {
+        "file": "content/guides/corn-snake-cost-guide.mdx",
+        "date": "2026-10-15"
+      },
+      {
+        "file": "content/guides/axolotl-tank-setup-guide.mdx",
+        "date": "2026-10-16"
+      },
+      {
+        "file": "content/guides/sugar-glider-legal-guide.mdx",
+        "date": "2026-10-16"
+      },
+      {
+        "file": "content/fun-facts/10-surprising-cockatoo-facts.mdx",
         "date": "2026-10-16"
       }
     ],
