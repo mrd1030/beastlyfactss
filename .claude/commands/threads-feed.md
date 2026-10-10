@@ -181,12 +181,14 @@ PHASE 2: WRITE (after approval only)
 3.  NO url anywhere, post or replies (owner, 2026-10-10), same as X. People
     reach the site through the profile link, and the card's footer already
     names BeastlyFacts.com. No "link in bio" line in the text either.
-4.  Exactly ONE topic tag per post (Threads allows one), a single word
-    typed as #Word at the end of the post: Zoology, Ocean, Reptiles,
-    Amphibians, Cats, Dogs, Insects, Wildlife, Chickens, Birds and so on.
-    Single words because a multi-word topic only works when picked from the
-    app's menu; through a Publer CSV the tag stops at the first space. Pick
-    the community that fits the animal (a frog is Amphibians, never Reptiles).
+4.  Exactly ONE topic tag per post (Threads allows one), on a single word
+    that is ALREADY in the sentence: "#Cats cannot taste sweet." Threads keeps
+    the tagged word in the text, so a tag tacked onto the end leaves a stray
+    word there (seen in Publer's preview, 2026-10-10). Tag a plain word with
+    no apostrophe ("#Dogs have a nose", not "A #dog's nose"), because the tag
+    stops at punctuation, and single words only, since a multi-word topic
+    through a Publer CSV stops at the first space. Pick the community that
+    fits the animal (a frog is a frog or an amphibian, never a reptile).
 5.  Write for the reply. Every post should leave an obvious opening: a number
     someone will want to correct, a setup someone will want to compare, or a
     claim someone will want to qualify.
@@ -360,7 +362,7 @@ State pass or fail on each. Fix failures before outputting.
   [ ] No banned phrase
   [ ] Every post leads with the take, no setup line
   [ ] No url anywhere, posts or replies
-  [ ] Exactly one single-word topic tag per post, matching the animal
+  [ ] Exactly one topic tag per post, on a word already in the sentence, none trailing
   [ ] No shape used twice consecutively
   [ ] No species repeats across the week
   [ ] Every fact QUOTE USED appears verbatim in facts.js under that id
