@@ -1,0 +1,30 @@
+[
+  {
+    "layout": "checklist",
+    "out": "axolotl-tank-checklist",
+    "image": "public/assets/images/axolotl-tank-setup.jpg",
+    "kicker": "Tank checklist",
+    "title": "Axolotl Tank Checklist",
+    "items": [
+      "Long tank with a secure lid",
+      "Chiller or fan cooling, no heater",
+      "Water thermometer",
+      "Fine sand or bare bottom",
+      "Low-flow sponge filter",
+      "Water test kit",
+      "Hides and dim lighting"
+    ],
+    "cta": "Sizes, temps and costs at"
+  },
+  {
+    "layout": "cost",
+    "out": "chinchilla-real-cost",
+    "image": "public/assets/images/chinchilla-cost.jpg",
+    "kicker": "Cost guide",
+    "title": "What a Chinchilla Really Costs",
+    "stat": "%%setup:chinchilla%%",
+    "statLabel": "to set up, before the chinchilla itself",
+    "items": ["The cage", "Exercise wheel", "Dust bath", "Hay and pellets", "Vet checkups", "Air conditioning"],
+    "cta": "Every price, line by line, at"
+  }
+]
