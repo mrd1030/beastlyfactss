@@ -208,6 +208,12 @@ run('generate-legal-summary.mjs');
 if (!args.includes('--date')) run('check-publish-dates.mjs');
 run('check-internal-links.mjs');
 run('check-related-articles.mjs');
+// The build runs these too, and a page that fails them breaks the deploy for
+// the whole site. Scheduled pages are invisible to them until they move, so
+// this is the first moment they can be checked against the live set. Failing
+// here stops the workflow before it commits, which leaves main deployable.
+run('check-voice.mjs', '--strict');
+run('check-seo-tags.mjs');
 
 // The map sync check has one known pre-existing finding (cockatoo, Maine). It
 // is informative here, not blocking: a page already passed it when written.
