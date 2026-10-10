@@ -22,8 +22,7 @@
     "image": "public/assets/images/chinchilla-cost.jpg",
     "kicker": "Cost guide",
     "title": "What a Chinchilla Really Costs",
-    "stat": "%%setup:chinchilla%%",
-    "statLabel": "to set up, before the chinchilla itself",
+    "hook": "The chinchilla is the cheap part.",
     "items": ["The cage", "Exercise wheel", "Dust bath", "Hay and pellets", "Vet checkups", "Air conditioning"],
     "cta": "Every price, line by line, at"
   }

@@ -20,21 +20,19 @@
 //
 // Two text-forward layouts sit beside that photo card, for care content that
 // reads better as a reference than as a picture. Both shrink the photo to a
-// strip and give the panel to a list. Cost tokens (%%setup:chinchilla%%) in
-// any field resolve against the live cost sheets, so a pin never quotes a
-// price the guide has since changed.
+// strip and give the panel to a list. Neither carries a price: a pin keeps
+// circulating for months after the guide's cost sheet moves, so the dollar
+// figures stay on the page and the generator refuses any "$" or cost token.
 //   { "layout": "checklist", "out", "image", "kicker", "title",
 //     "items": ["Water thermometer", ...],      -> 5 to 7 rows, names only
 //     "cta": "Sizes, temps and costs at" }       -> footer, domain appended
 //   { "layout": "cost", "out", "image", "kicker", "title",
-//     "stat": "%%setup:chinchilla%%",            -> the one number shown
-//     "statLabel": "to set up, before the chinchilla itself",
+//     "hook": "The chinchilla is the cheap part.", -> a claim the guide makes
 //     "items": ["The cage", ...],                -> 4 or 6, no prices
 //     "cta": "Every price, line by line, at" }
 import fs from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
-import { resolveCostTokens } from '../src/lib/costs.js';
 
 const W = 1000;
 const H = 1500;
@@ -104,22 +102,24 @@ function checklistSvg(spec) {
 
 function costSvg(spec) {
   const head = panelHead(spec);
-  const statY = head.bottom + 150;
+  const hook = layoutTitle(spec.hook, [64, 58, 52], 2);
+  const hookTop = head.bottom + 130;
+  const hookBottom = hookTop + (hook.lines.length - 1) * hook.size * 1.15;
+  const dividerY = hookBottom + 120;
   const half = Math.ceil(spec.items.length / 2);
   const rows = spec.items.map((item, i) => {
     const col = i < half ? 0 : 1;
-    const y = statY + 236 + (i % half) * 84;
+    const y = dividerY + 84 + (i % half) * 84;
     const x = 80 + col * 430;
     return `<circle cx="${x + 10}" cy="${y - 13}" r="9" fill="${ORANGE}"/>
     <text x="${x + 36}" y="${y}" font-family="Atkinson-Bold" font-size="38" fill="${INK}">${esc(item)}</text>`;
   });
   const svg = `${head.svg}
-    <text x="80" y="${statY}" font-family="Schibsted-Bold" font-size="104" fill="${ORANGE}">${esc(spec.stat)}</text>
-    <text x="80" y="${statY + 58}" font-family="Atkinson-Bold" font-size="34" fill="${INK}">${esc(spec.statLabel)}</text>
-    <text x="80" y="${statY + 156}" font-family="Atkinson-Bold" font-size="30" letter-spacing="6" fill="${ORANGE}">WHERE IT GOES</text>
+    ${hook.lines.map((l, i) => `<text x="80" y="${hookTop + i * hook.size * 1.15}" font-family="Schibsted-Bold" font-size="${hook.size}" fill="${ORANGE}">${esc(l)}</text>`).join('\n')}
+    <text x="80" y="${dividerY}" font-family="Atkinson-Bold" font-size="30" letter-spacing="6" fill="${ORANGE}">WHERE THE MONEY GOES</text>
     ${rows.join('\n')}
     ${footer(spec.cta)}`;
-  return { svg, note: `${spec.stat}, ${spec.items.length} items` };
+  return { svg, note: `${spec.items.length} items` };
 }
 
 async function renderPanel(spec, build) {
@@ -141,9 +141,13 @@ async function renderPanel(spec, build) {
 
 const LAYOUTS = { checklist: checklistSvg, cost: costSvg };
 
-for (const raw of specs) {
-  const spec = JSON.parse(resolveCostTokens(JSON.stringify(raw)));
+for (const spec of specs) {
   if (LAYOUTS[spec.layout]) {
+    const text = JSON.stringify({ ...spec, image: '', out: '' });
+    if (/\$|%%/.test(text)) {
+      console.error(`${spec.out}: pins carry no prices, remove the "$" or cost token`);
+      process.exit(1);
+    }
     await renderPanel(spec, LAYOUTS[spec.layout]);
     continue;
   }
