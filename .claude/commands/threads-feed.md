@@ -181,10 +181,12 @@ PHASE 2: WRITE (after approval only)
 3.  NO url anywhere, post or replies (owner, 2026-10-10), same as X. People
     reach the site through the profile link, and the card's footer already
     names BeastlyFacts.com. No "link in bio" line in the text either.
-4.  No hashtags. Threads has topic tags, attach 1 to 2 when they're genuinely
-    the obvious ones for the species and topic, more than that dilutes the
-    signal. Zero is fine when nothing fits naturally, but 1 to 2 is normal,
-    not the exception.
+4.  Exactly ONE topic tag per post (Threads allows one), a single word
+    typed as #Word at the end of the post: Zoology, Ocean, Reptiles,
+    Amphibians, Cats, Dogs, Insects, Wildlife, Chickens, Birds and so on.
+    Single words because a multi-word topic only works when picked from the
+    app's menu; through a Publer CSV the tag stops at the first space. Pick
+    the community that fits the animal (a frog is Amphibians, never Reptiles).
 5.  Write for the reply. Every post should leave an obvious opening: a number
     someone will want to correct, a setup someone will want to compare, or a
     claim someone will want to qualify.
@@ -358,8 +360,7 @@ State pass or fail on each. Fix failures before outputting.
   [ ] No banned phrase
   [ ] Every post leads with the take, no setup line
   [ ] No url anywhere, posts or replies
-  [ ] At most 1-2 topic tags per post, only when genuinely obvious for the
-      species and topic
+  [ ] Exactly one single-word topic tag per post, matching the animal
   [ ] No shape used twice consecutively
   [ ] No species repeats across the week
   [ ] Every fact QUOTE USED appears verbatim in facts.js under that id
