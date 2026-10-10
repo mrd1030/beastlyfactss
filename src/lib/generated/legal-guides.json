@@ -1,5 +1,10 @@
 [
   {
+    "slug": "arctic-fox-legal-guide",
+    "title": "Are Arctic Foxes Legal? When a Statute Says Fox and Means Its Own",
+    "excerpt": "Most fox laws say 'fox' and stop, and the arctic fox is the animal that tests whether a non-native fox is inside the word. Twenty-four jurisdictions ban it, nine permit it, nine have no rule, and..."
+  },
+  {
     "slug": "bengal-cat-legal-guide",
     "title": "Are Bengal Cats Legal? The Generation Rules Explained",
     "excerpt": "The same Bengal is a domestic cat in Indiana, legal in Iowa only from the fourth generation, and in Minnesota caught by one sentence of a definition and exempted by another. Four states draw the line..."
@@ -40,6 +45,16 @@
     "excerpt": "Most state wildlife law was written for animals with a backbone, and the hissing cockroach lands in the hole that leaves. Four jurisdictions ban it, one requires an agriculture permit, and three..."
   },
   {
+    "slug": "raccoon-legal-guide",
+    "title": "Are Pet Raccoons Legal? The Rabies-Vector Rule, State by State",
+    "excerpt": "Twenty-six jurisdictions ban a pet raccoon and eighteen issue a permit, and almost none of those rules were written about pets. They are furbearer statutes and rabies laws aimed at the wild animal..."
+  },
+  {
+    "slug": "skunk-legal-guide",
+    "title": "Are Pet Skunks Legal? The Seventeen-State List, Checked",
+    "excerpt": "Every pet skunk site repeats the same list of seventeen states where a skunk is legal, and the statutes do not agree with it. Alabama is on most versions and bars the animal in regulation. Descenting..."
+  },
+  {
     "slug": "prairie-dog-legal-guide",
     "title": "Are Prairie Dogs Legal? The Federal Ban Ended in 2008",
     "excerpt": "For five years it was federally illegal to sell or move a prairie dog across state lines, because of a monkeypox outbreak traced to a Texas pet distributor. The FDA lifted that in 2008. Fifteen..."
@@ -48,6 +63,11 @@
     "slug": "quaker-parakeet-legal-guide",
     "title": "Are Quaker Parrots Legal? The Bird Banned for Nest Building",
     "excerpt": "Fourteen states ban the quaker parrot, more than any other bird we have mapped, and not one of them does it because the bird is dangerous. Kansas puts it on a list with silver carp and zebra mussels."
+  },
+  {
+    "slug": "red-fox-legal-guide",
+    "title": "Are Red Foxes Legal? Where a Pet Fox Is a Fur-Farm Animal",
+    "excerpt": "The red fox is native to nearly every state, so the law that answers a pet fox is almost never an exotic pet law. It is a furbearer chapter or a rabies statute, and the route it offers is a fur-farm..."
   },
   {
     "slug": "russian-tortoise-legal-guide",
@@ -61,8 +81,8 @@
   },
   {
     "slug": "serval-legal-guide",
-    "title": "Are Servals Legal? The Most Restricted Pet in America",
-    "excerpt": "Thirty-five of the 52 jurisdictions restrict the serval, eighteen of them outright. Ohio bans the cat and expressly legalizes its hybrid, and Montana clears it by name."
+    "title": "Are Servals Legal? Why 20 Jurisdictions Ban This Cat",
+    "excerpt": "Thirty-five of the 52 jurisdictions restrict the serval, twenty of them outright. Ohio bans the cat and expressly legalizes its hybrid, and Montana clears it by name."
   },
   {
     "slug": "snapping-turtle-legal-guide",
@@ -132,7 +152,7 @@
   {
     "slug": "degu-legal-guide",
     "title": "Is It Legal to Own a Degu? State-by-State Guide",
-    "excerpt": "The degu is the most restricted small rodent kept as a pet in the US, and the reason repeats almost word for word from state to state: the cleared-rodent list names the chinchilla, guinea pig..."
+    "excerpt": "The degu is barred in eight jurisdictions, and the reason repeats almost word for word from state to state: the cleared-rodent list names the chinchilla, guinea pig, gerbil, hamster, mouse and rat..."
   },
   {
     "slug": "ferret-legal-guide",
@@ -227,7 +247,7 @@
   {
     "slug": "sulcata-tortoise-legal-guide",
     "title": "Is It Legal to Own a Sulcata Tortoise? State-by-State Guide",
-    "excerpt": "No US state bans owning a sulcata tortoise. The legal fact is a federal import ban dating to 2000, and the practical problem is that these tortoises grow to about 200 pounds and overwhelm rescues..."
+    "excerpt": "No US state bans owning a sulcata tortoise. The legal fact is a federal import ban dating to 2000, and the practical problem is that these tortoises grow to 80 to 110 pounds, big males to 200, and..."
   },
   {
     "slug": "tiger-salamander-legal-guide",
