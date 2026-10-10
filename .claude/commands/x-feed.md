@@ -1,5 +1,5 @@
 ---
-description: Build a 7 day X calendar for @Beastly_Facts from repo content. Native posts, url in first reply only.
+description: Build a 7 day X calendar for @Beastly_Facts from repo content. Native posts with a card, no links anywhere: the profile link carries the click.
 argument-hint: "[blank = Phase 1 shortlist] [go = Phase 2 write] [cadence e.g. '2 facts 2 articles'] [notes to steer picks]"
 allowed-tools: Read, Glob, Grep, Bash(ls:*), Bash(sed:*), Bash(head:*), Bash(wc:*), Bash(sort:*), Bash(grep:*), Bash(awk:*)
 ---
@@ -196,22 +196,12 @@ PHASE 2: WRITE (after approval only)
 =====================================================================
 
 --- X MECHANICS (non-negotiable) ---
-1.  Main post carries NO url, no beastlyfacts.com, no link card, ever.
-2.  The url goes in the FIRST REPLY only. One line of context, then the url.
-    Not "read the full guide". Give a reason to click that is different from
-    what the main post already said.
-    For an ARTICLE post, the linked guide genuinely has more than the tweet,
-    so it's fair to gesture at what that is.
-    For a FACT post, be honest about what's actually there: /facts/{slug}/
-    opens the same one-line fact in its own shareable card, nothing deeper.
-    Never write "more on this" or imply extra depth that doesn't exist. Frame
-    it as an action, not a description of the site: give the reader a
-    specific person or moment to send the card to ("send this to whoever
-    still thinks X", "grab this for the next person who says Y"), tied to
-    that fact's actual punchline. Avoid "its own page" / "saved here" /
-    anything that talks about the site's architecture instead of the
-    reader's reason to tap through. Warm and varied, never a repeated
-    template line, a different phrase for every fact post, every week.
+1.  NO url anywhere, main post or replies (owner, 2026-10-10). People reach
+    the site through the profile link, and the card's footer already names
+    BeastlyFacts.com. No link card, and no "link in bio" line in the text.
+2.  The FIRST REPLY adds one real detail the main post left out: a number, a
+    mechanism, a consequence from the same source. Never a url, never "more
+    on the site". It exists to give a reader something to answer.
 3.  Post the requested cadence, no more. Give every post its own time slot and
     space them across waking hours, never back to back. Two posts sit in
     opposite halves of the day. Four or more should be at least 3 hours apart,
@@ -267,7 +257,7 @@ ones.
   Post 1: state the mistake so it stings slightly.
   Middle: the mechanism and the real numbers from the article.
   Last:   the fix, specific enough to do today.
-  Reply to the last post: the url. Nowhere else in the thread.
+  No url anywhere in the thread.
 Number nothing. No "1/5". Let the thread carry itself.
 
 Mechanically this is one CSV row: the main post is Post 1, every post after
@@ -316,7 +306,7 @@ Repeat this block once per post, in posting order, labelled FACT or ARTICLE.
   chars: <n>
 
   FIRST REPLY
-  <one line + url>
+  <one added detail, no url>
 
   IMAGE:        <resolved path>
   WHY THIS ONE: <one sentence>
@@ -347,13 +337,12 @@ CSV columns (Publer's 12-column bulk template, do not remove or reorder any):
                 link-preview post instead of the native photo post this
                 whole format exists to deliver. Confirmed: an empty
                 Link(s) column is what makes the image attach natively.
-  Media URL(s)  the FULL https://beastlyfacts.com/... path, not the
-                relative frontmatter path. Must be a real, live, public
-                URL. Confirmed working before use, never assumed correct
-                from the path alone.
-  Comment(s)    the first reply, carrying the url. For a thread, every post
+  Media URL(s)  the card, https://pins.beastlyfacts.com/<out>-4x5.jpg (see
+                IMAGES). upload-pins.mjs confirms it is live before the CSV
+                is built.
+  Comment(s)    the first reply, no url (2026-10-10 rule). For a thread, every post
                 after the first goes here too, joined by ||, e.g.
-                "second post||third post||fourth post with the url". Each
+                "second post||third post||fourth post". Each
                 fires automatically in order once the main post goes live,
                 no Condition needs to be set. Confirmed live, both a single
                 reply and a full 3-comment || chain (posted roughly 4
@@ -383,7 +372,7 @@ State pass or fail on each. Fix failures before outputting. Do not ship a
 failing calendar with a note attached.
   [ ] No em or en dashes anywhere
   [ ] No banned phrase
-  [ ] No url in any main post
+  [ ] No url anywhere, main posts or replies
   [ ] Every main post under 280 chars
   [ ] No species repeats, across BOTH tracks
   [ ] No three reptiles in a row

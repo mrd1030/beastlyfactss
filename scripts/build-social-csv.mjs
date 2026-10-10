@@ -110,11 +110,10 @@ function validate(batch, file) {
 
     if (!p.text || !String(p.text).trim()) err(i, 'missing text');
 
-    // Urls belong in comments. In Text they either get stripped or turn the
-    // post into a link post, which is the low-reach format this whole approach
-    // exists to avoid.
-    if (p.text && /https?:\/\//.test(p.text)) {
-      err(i, 'text contains a url, urls go in comments');
+    // No url in Text: it either gets stripped or turns the post into a link
+    // post, the low-reach format this whole approach exists to avoid.
+    if (p.text && /https?:\/\/|beastlyfacts\.com\//i.test(p.text)) {
+      err(i, 'text contains a url, no post carries one, the profile link does that job');
     }
 
     if (isPin(batch)) {
@@ -176,6 +175,11 @@ function validate(batch, file) {
 
     if (batch.platform === 'ig' && comments.some(c => /https?:\/\//.test(c))) {
       err(i, 'ig comments are not clickable, a url here does nothing, use the bio link instead');
+    }
+    // Since 2026-10-10 X and Threads carry no link anywhere either: readers
+    // reach the site through the profile link, the card's footer names it.
+    if ((batch.platform === 'x' || batch.platform === 'threads') && comments.some(c => /https?:\/\/|beastlyfacts\.com\//i.test(c))) {
+      err(i, `${batch.platform} replies carry no url since 2026-10-10, the profile link does that job`);
     }
   });
 

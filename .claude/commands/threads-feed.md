@@ -1,5 +1,5 @@
 ---
-description: Build a 7 day Threads calendar from repo content. Take first, reply driven, links suppressed.
+description: Build a 7 day Threads calendar from repo content. Take first, reply driven, a card on every post, no links anywhere.
 argument-hint: "[blank = Phase 1 shortlist] [go = Phase 2 write] [cadence e.g. '2 facts 2 articles'] [mirror x]"
 allowed-tools: Read, Glob, Grep, Bash(ls:*), Bash(sed:*), Bash(head:*), Bash(wc:*), Bash(sort:*), Bash(grep:*), Bash(awk:*)
 ---
@@ -163,14 +163,9 @@ PHASE 2: WRITE (after approval only)
     First sentence is the position.
 2.  One to three lines for most posts. Under 200 characters is the target, even
     though the limit is higher. Show the character count.
-3.  Every post links, fact or article, same as X. For an ARTICLE post the
-    first reply carries the link (or, for a thread, the last chain item
-    does). For a FACT post the link goes in a second comment, after the
-    SELF REPLY, since /facts/{slug}/ opens the same one-line fact in its own
-    shareable card, nothing deeper, exactly the honesty rule x-feed.md
-    codifies. Never write "more on this" for a fact link. Frame it as an
-    action tied to the fact's punchline instead ("send this to whoever still
-    thinks X"), warm and varied, never a repeated template line.
+3.  NO url anywhere, post or replies (owner, 2026-10-10), same as X. People
+    reach the site through the profile link, and the card's footer already
+    names BeastlyFacts.com. No "link in bio" line in the text either.
 4.  No hashtags. Threads has topic tags, attach 1 to 2 when they're genuinely
     the obvious ones for the species and topic, more than that dilutes the
     signal. Zero is fine when nothing fits naturally, but 1 to 2 is normal,
@@ -181,17 +176,13 @@ PHASE 2: WRITE (after approval only)
 6.  Write a PLANNED REPLY for each post: what the account says back when the
     first person responds. This is reactive, off the CSV, not something to
     schedule, and it should not be improvised when the moment comes.
-7.  Write a SELF REPLY for every FACT post: one added detail, stat, or angle
-    the main post didn't cover, never a repeat of it. This is a documented
-    working signal on Threads specifically, distinct from engagement bait,
-    because it adds real content and extends dwell time rather than faking
-    an engagement number. Fact posts carry two comments, in order: the SELF
-    REPLY first, then the link (rule 3). An ARTICLE post that isn't already
-    a thread just gets the one first-reply link, no separate self reply
-    needed, the linked guide is already the added depth. Every comment goes
-    in Comment(s), joined by || when there's more than one, so they fire
-    within seconds of the main post, comfortably inside the 15-to-30-minute
-    window that counts most.
+7.  Write a SELF REPLY for every post: one added detail, stat, or angle the
+    main post didn't cover, never a repeat of it and never a url. This is a
+    documented working signal on Threads specifically, distinct from
+    engagement bait, because it adds real content and extends dwell time.
+    Every post carries exactly that one comment (a thread carries its chain
+    instead). It goes in Comment(s), so it fires within seconds of the main
+    post, inside the 15-to-30-minute window that counts most.
 8.  Post the requested cadence, no more. Give each post its own slot, spaced
     across the day, and never two from the same track back to back.
 
@@ -234,7 +225,7 @@ declarative than the X version of the same idea.
   Post 1: the mistake, stated as something we see constantly.
   Middle: mechanism and real numbers from the article.
   Last:   the fix.
-  Url, if any, goes on a reply to the last post only.
+  No url anywhere in the thread.
 No numbering. No "1/5".
 
 Mechanically this is one CSV row: the main post is Post 1, every post after
@@ -264,7 +255,7 @@ OUTPUT FORMAT. Nothing outside these sections.
 =====================================================================
 
 ## Week at a glance
-Table: Day | Species | Shape | Linked? | Source file
+Table: Day | Species | Shape | Card layout | Source file
 
 ## Day 1 through Day 7
 Repeat this block once per post, in posting order, labelled FACT or ARTICLE.
@@ -280,14 +271,8 @@ Repeat this block once per post, in posting order, labelled FACT or ARTICLE.
   <paste ready>
   chars: <n>
 
-  FIRST REPLY (article posts, or the last item in a thread chain)
-  <one line + url>
-
-  SELF REPLY (fact posts only)
-  <one added detail, stat, or angle, not a repeat of the post>
-
-  FACT LINK REPLY (fact posts only, comes after the self reply)
-  <action hook naming who to send it to, not "more on this" + fact card url>
+  SELF REPLY
+  <one added detail, stat, or angle, not a repeat of the post, no url>
 
   PLANNED REPLY
   <what we say back to the first responder>
@@ -314,9 +299,7 @@ CSV columns (Publer's 12-column bulk template, do not remove or reorder any):
                 unscheduled draft with no error shown, confirmed by a real
                 failed batch on X. Slashes in the date part also work but
                 are not required once the time uses a colon.
-  Text          the main post, verbatim from above. No url in this field,
-                ever. Same as X: even for a linked post, the url goes in the
-                first reply (Comment(s), below), never in the post itself.
+  Text          the main post, verbatim from above. No url, ever.
   Link(s)       leave EMPTY. Per Publer's docs this column takes priority
                 over Media URL(s) on platforms that support link sharing,
                 and produces a link-preview post instead of the native image
@@ -330,22 +313,14 @@ CSV columns (Publer's 12-column bulk template, do not remove or reorder any):
                 not the relative frontmatter path. Must be a real, live, public
                 URL. Confirmed working before use, never assumed correct
                 from the path alone.
-  Comment(s)    every FACT post carries two, joined by ||: the SELF REPLY
-                first, then the FACT LINK REPLY with the fact card url. The
-                PLANNED REPLY is different, that's for the account to send
-                once someone actually responds, it is reactive and does not
-                belong in the CSV. An ARTICLE post that isn't a thread just
-                gets the FIRST REPLY (with the url) as its one comment. For
-                a thread, every post after the first goes here, joined by
-                ||, ending with a reply carrying the url. Each fires
-                automatically in order once the main post goes live, no
-                Condition needs to be set, so even a two-comment fact chain
-                lands within seconds, well inside the 15-to-30-minute window
-                that counts most. Confirmed
-                live on both X and Threads: a single reply, a full 3-comment
-                || chain, and a 4-comment chain ending in a
-                url reply, all landing in order within seconds of the main
-                post.
+  Comment(s)    the SELF REPLY, no url. For a thread, every post after the
+                first goes here, joined by ||. The PLANNED REPLY is
+                different: it is for the account to send once someone
+                actually responds, and it does not belong in the CSV. Each
+                comment fires automatically in order once the main post goes
+                live, no Condition needs to be set. Confirmed live on both X
+                and Threads: a single reply and chains of 3 and 4 comments,
+                all landing in order within seconds of the main post.
   Everything else (Link Title, Label, Alt text, Board/Album, Post subtype,
   CTA, Reminder) stays empty for a plain native Threads post.
 
@@ -367,9 +342,7 @@ State pass or fail on each. Fix failures before outputting.
   [ ] No em or en dashes anywhere
   [ ] No banned phrase
   [ ] Every post leads with the take, no setup line
-  [ ] Every post links: article posts in the first reply (or last thread
-      item), fact posts as a second comment after the self reply, honest
-      action-hook wording, never "more on this"
+  [ ] No url anywhere, posts or replies
   [ ] At most 1-2 topic tags per post, only when genuinely obvious for the
       species and topic
   [ ] No shape used twice consecutively
@@ -379,9 +352,8 @@ State pass or fail on each. Fix failures before outputting.
   [ ] Every fact QUOTE USED appears verbatim in facts.js under that id
   [ ] No image path used twice across the whole week
   [ ] Every post has a planned reply written
-  [ ] Every fact post has two comments (self reply, then link), every
-      non-thread article post has one (the link), none of them a repeat of
-      the main post
+  [ ] Every post has one self reply (threads carry their chain), none a
+      repeat of the main post, none with a url
   [ ] No copy identical to the X or IG calendar
   [ ] Every article url is /blog/{slug}/, never /guides/{article-slug}/
   [ ] Every chronicles part number was derived from date order, not filename

@@ -31,7 +31,8 @@
       "Vet checkups",
       "Air conditioning"
     ],
-    "cta": "Every price, line by line, at"
+    "cta": "Every price, line by line, at",
+    "focusY": 0.65
   },
   {
     "layout": "numbered",
@@ -45,7 +46,8 @@
       "A water bowl big enough to soak in"
     ],
     "more": "Plus the free one, and what not to do",
-    "cta": "How to set each one up at"
+    "cta": "How to set each one up at",
+    "focusY": 0.6
   },
   {
     "layout": "legal",
@@ -59,7 +61,8 @@
       "Where you need a permit",
       "Why rabies decides it"
     ],
-    "cta": "State by state at"
+    "cta": "State by state at",
+    "focusY": 0.4
   },
   {
     "layout": "feeding",

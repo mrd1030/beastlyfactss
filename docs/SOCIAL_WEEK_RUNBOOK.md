@@ -150,9 +150,18 @@ Skip this unless the batch includes Pinterest. It is the one platform whose
 images do not already exist on the site.
 
 ```bash
-node scripts/generate-pins.mjs pin-spec.json   # writes social-batches/pins/*.jpg
-node scripts/upload-pins.mjs pin-spec.json     # R2 bucket, pins.beastlyfacts.com
+node scripts/generate-pins.mjs pin-spec.json         # 2:3 pins, social-batches/pins/
+node scripts/generate-pins.mjs pin-spec.json --4x5   # X and Threads cards
+node scripts/pin-crop-sheet.mjs pin-spec.json        # crop check, look at every row
+node scripts/upload-pins.mjs pin-spec.json           # R2 bucket, pins.beastlyfacts.com
 ```
+
+**Check every card's crop before uploading** (owner, 2026-10-10). The sheet
+shows each card's photo at both sizes. Automatic cropping on the thin 4x5
+strip has cut a fennec to its ears, a glider at the eyes, and left a ball
+python, a chinchilla and a hermit crab out of frame entirely. A row that
+loses the animal gets `"focusY"` (0 to 1, the vertical center of the crop
+as a share of the photo's height) in its spec and a re-render.
 
 **Upload before importing the CSV.** Publer fetches the image at import time,
 so a pin referencing a missing file just 404s. The upload script checks every

@@ -1,110 +1,251 @@
 [
-  { "out": "fact-rhino-horn-regrows", "image": "public/assets/facts/rhino-2.jpg", "kicker": "Weird animal fact", "title": "Cut a Rhino's Horn, It Regrows" },
-  { "out": "fact-honey-badger-pinned", "image": "public/assets/facts/honey-badger-2.jpg", "kicker": "Weird animal fact", "title": "Pinned Honey Badgers Still Bite Back" },
-  { "out": "fact-slow-loris-licks", "image": "public/assets/facts/slow-loris-2.jpg", "kicker": "Weird animal fact", "title": "A Slow Loris Licks Before Biting" },
-  { "out": "fact-sloth-weekly-risk", "image": "public/assets/facts/sloth-3.jpg", "kicker": "Weird animal fact", "title": "Sloths Risk Death Once a Week" },
-  { "out": "fact-pangolin-tongue", "image": "public/assets/facts/pangolin-3.jpg", "kicker": "Weird animal fact", "title": "A Pangolin's Tongue Outreaches Its Body" },
-  { "out": "fact-emperor-penguin-fast", "image": "public/assets/facts/penguin-3.jpg", "kicker": "Weird animal fact", "title": "This Dad Fasts for Two Months" },
-
-  { "out": "leopard-vs-crested-gecko", "image": "public/assets/images/leopard-gecko-vs-crested-gecko.jpg", "kicker": "Which pet fits you", "title": "Leopard Gecko or Crested Gecko?" },
-  { "out": "ball-python-vs-corn-snake", "image": "public/assets/images/ball-python-vs-corn-snake.jpg", "kicker": "Which pet fits you", "title": "Ball Python or Corn Snake?" },
-  { "out": "budgie-vs-cockatiel", "image": "public/assets/images/budgie-vs-cockatiel.jpg", "kicker": "Which pet fits you", "title": "Budgie or Cockatiel?" },
-
   {
-    "layout": "checklist", "out": "leopard-gecko-tank-checklist",
+    "out": "fact-rhino-horn-regrows",
+    "image": "public/assets/facts/rhino-2.jpg",
+    "kicker": "Weird animal fact",
+    "title": "Cut a Rhino's Horn, It Regrows"
+  },
+  {
+    "out": "fact-honey-badger-pinned",
+    "image": "public/assets/facts/honey-badger-2.jpg",
+    "kicker": "Weird animal fact",
+    "title": "Pinned Honey Badgers Still Bite Back"
+  },
+  {
+    "out": "fact-slow-loris-licks",
+    "image": "public/assets/facts/slow-loris-2.jpg",
+    "kicker": "Weird animal fact",
+    "title": "A Slow Loris Licks Before Biting"
+  },
+  {
+    "out": "fact-sloth-weekly-risk",
+    "image": "public/assets/facts/sloth-3.jpg",
+    "kicker": "Weird animal fact",
+    "title": "Sloths Risk Death Once a Week"
+  },
+  {
+    "out": "fact-pangolin-tongue",
+    "image": "public/assets/facts/pangolin-3.jpg",
+    "kicker": "Weird animal fact",
+    "title": "A Pangolin's Tongue Outreaches Its Body"
+  },
+  {
+    "out": "fact-emperor-penguin-fast",
+    "image": "public/assets/facts/penguin-3.jpg",
+    "kicker": "Weird animal fact",
+    "title": "This Dad Fasts for Two Months"
+  },
+  {
+    "out": "leopard-vs-crested-gecko",
+    "image": "public/assets/images/leopard-gecko-vs-crested-gecko.jpg",
+    "kicker": "Which pet fits you",
+    "title": "Leopard Gecko or Crested Gecko?"
+  },
+  {
+    "out": "ball-python-vs-corn-snake",
+    "image": "public/assets/images/ball-python-vs-corn-snake.jpg",
+    "kicker": "Which pet fits you",
+    "title": "Ball Python or Corn Snake?"
+  },
+  {
+    "out": "budgie-vs-cockatiel",
+    "image": "public/assets/images/budgie-vs-cockatiel.jpg",
+    "kicker": "Which pet fits you",
+    "title": "Budgie or Cockatiel?"
+  },
+  {
+    "layout": "checklist",
+    "out": "leopard-gecko-tank-checklist",
     "image": "public/assets/images/leopard-gecko-tank-setup.jpg",
-    "kicker": "Tank checklist", "title": "Leopard Gecko Tank Checklist",
-    "items": ["Front-opening enclosure", "Heat mat on a thermostat", "Three hides: warm, cool, humid", "Damp sphagnum moss", "Low-output UVB tube", "Paper towel or tile floor", "Shallow water dish"],
-    "cta": "Temps, sizes and humidity at"
+    "kicker": "Tank checklist",
+    "title": "Leopard Gecko Tank Checklist",
+    "items": [
+      "Front-opening enclosure",
+      "Heat mat on a thermostat",
+      "Three hides: warm, cool, humid",
+      "Damp sphagnum moss",
+      "Low-output UVB tube",
+      "Paper towel or tile floor",
+      "Shallow water dish"
+    ],
+    "cta": "Temps, sizes and humidity at",
+    "focusY": 0.7
   },
   {
-    "layout": "checklist", "out": "hermit-crab-tank-checklist",
+    "layout": "checklist",
+    "out": "hermit-crab-tank-checklist",
     "image": "public/assets/images/hermit-crab-tank-setup.jpg",
-    "kicker": "Tank checklist", "title": "Hermit Crab Tank Checklist",
-    "items": ["Glass tank with a sealing lid", "Side-mounted heat mat", "Hygrometer", "Deep sand and coconut fiber", "Fresh and saltwater dishes", "Spare natural shells", "Cuttlebone and leaf litter"],
-    "cta": "Depths, mixes and humidity at"
+    "kicker": "Tank checklist",
+    "title": "Hermit Crab Tank Checklist",
+    "items": [
+      "Glass tank with a sealing lid",
+      "Side-mounted heat mat",
+      "Hygrometer",
+      "Deep sand and coconut fiber",
+      "Fresh and saltwater dishes",
+      "Spare natural shells",
+      "Cuttlebone and leaf litter"
+    ],
+    "cta": "Depths, mixes and humidity at",
+    "focusY": 0.55
   },
   {
-    "layout": "feeding", "out": "budgie-what-they-eat",
+    "layout": "feeding",
+    "out": "budgie-what-they-eat",
     "image": "public/assets/images/budgie-feeding.jpg",
-    "kicker": "Feeding guide", "title": "What Do Budgies Eat?",
+    "kicker": "Feeding guide",
+    "title": "What Do Budgies Eat?",
     "tiers": [
-      { "label": "Staple", "foods": "Formulated pellets, fresh vegetables" },
-      { "label": "Sometimes", "foods": "Seed, fruit, millet spray" },
-      { "label": "Avoid", "foods": "Avocado, onion, garlic, chocolate, grit" }
+      {
+        "label": "Staple",
+        "foods": "Formulated pellets, fresh vegetables"
+      },
+      {
+        "label": "Sometimes",
+        "foods": "Seed, fruit, millet spray"
+      },
+      {
+        "label": "Avoid",
+        "foods": "Avocado, onion, garlic, chocolate, grit"
+      }
     ],
     "cta": "How much a day at"
   },
   {
-    "layout": "numbered", "out": "rabbit-enrichment-ideas",
+    "layout": "numbered",
+    "out": "rabbit-enrichment-ideas",
     "image": "public/assets/images/rabbit-enrichment.jpg",
-    "kicker": "Enrichment ideas", "title": "Rabbit Enrichment Ideas",
-    "items": ["A bonded companion, close in age", "Permanent run access", "Hay that takes time to eat"],
+    "kicker": "Enrichment ideas",
+    "title": "Rabbit Enrichment Ideas",
+    "items": [
+      "A bonded companion, close in age",
+      "Permanent run access",
+      "Hay that takes time to eat"
+    ],
     "more": "Plus four more, and what not to do",
-    "cta": "How to set each one up at"
+    "cta": "How to set each one up at",
+    "focusY": 0.62
   },
   {
-    "layout": "legal", "out": "hedgehog-legal-question",
+    "layout": "legal",
+    "out": "hedgehog-legal-question",
     "image": "public/assets/guides/hedgehog-legal.jpg",
-    "kicker": "Exotic pet laws", "title": "Can You Own a Hedgehog?",
+    "kicker": "Exotic pet laws",
+    "title": "Can You Own a Hedgehog?",
     "hook": "It depends on where you live.",
-    "items": ["Where you can't keep one", "Why each ban exists", "Whether a permit helps"],
+    "items": [
+      "Where you can't keep one",
+      "Why each ban exists",
+      "Whether a permit helps"
+    ],
     "cta": "State by state at"
   },
   {
-    "layout": "legal", "out": "sugar-glider-legal-question",
+    "layout": "legal",
+    "out": "sugar-glider-legal-question",
     "image": "public/assets/guides/sugar-glider-legal.jpg",
-    "kicker": "Exotic pet laws", "title": "Can You Own a Sugar Glider?",
+    "kicker": "Exotic pet laws",
+    "title": "Can You Own a Sugar Glider?",
     "hook": "It depends on your state.",
-    "items": ["Where they're restricted", "Pennsylvania's ongoing fight", "Bans that turn out to be myths"],
-    "cta": "State by state at"
+    "items": [
+      "Where they're restricted",
+      "Pennsylvania's ongoing fight",
+      "Bans that turn out to be myths"
+    ],
+    "cta": "State by state at",
+    "focusY": 0.5
   },
   {
-    "layout": "numbered", "out": "bearded-dragon-surprising-facts",
+    "layout": "numbered",
+    "out": "bearded-dragon-surprising-facts",
     "image": "public/assets/images/bearded-dragon-brumation.jpg",
-    "kicker": "Surprising facts", "title": "10 Surprising Bearded Dragon Facts",
-    "items": ["They have a third eye", "They darken on purpose", "A hot nest can flip their sex"],
+    "kicker": "Surprising facts",
+    "title": "10 Surprising Bearded Dragon Facts",
+    "items": [
+      "They have a third eye",
+      "They darken on purpose",
+      "A hot nest can flip their sex"
+    ],
     "more": "Plus REM sleep, and six more",
     "cta": "All 10, with the science, at"
   },
   {
-    "layout": "numbered", "out": "emperor-scorpion-surprising-facts",
+    "layout": "numbered",
+    "out": "emperor-scorpion-surprising-facts",
     "image": "public/assets/images/fun-facts-emperor-scorpion.jpg",
-    "kicker": "Surprising facts", "title": "10 Surprising Emperor Scorpion Facts",
-    "items": ["Their sting is about a bee's", "They glow under UV light", "Moms carry babies on their backs"],
+    "kicker": "Surprising facts",
+    "title": "10 Surprising Emperor Scorpion Facts",
+    "items": [
+      "Their sting is about a bee's",
+      "They glow under UV light",
+      "Moms carry babies on their backs"
+    ],
     "more": "Plus seven more",
     "cta": "All 10 at"
   },
   {
-    "layout": "numbered", "out": "cockatoo-surprising-facts",
+    "layout": "numbered",
+    "out": "cockatoo-surprising-facts",
     "image": "public/assets/images/fun-facts-cockatoo.jpg",
-    "kicker": "Surprising facts", "title": "10 Surprising Cockatoo Facts",
-    "items": ["Wild ones pass tricks like a fad", "One could dance to a beat", "Their beaks can bend metal"],
+    "kicker": "Surprising facts",
+    "title": "10 Surprising Cockatoo Facts",
+    "items": [
+      "Wild ones pass tricks like a fad",
+      "One could dance to a beat",
+      "Their beaks can bend metal"
+    ],
     "more": "Plus seven more",
     "cta": "All 10 at"
   },
   {
-    "layout": "cost", "out": "guinea-pig-real-cost",
+    "layout": "cost",
+    "out": "guinea-pig-real-cost",
     "image": "public/assets/images/guinea-pig-cost.jpg",
-    "kicker": "Cost guide", "title": "What a Guinea Pig Really Costs",
+    "kicker": "Cost guide",
+    "title": "What a Guinea Pig Really Costs",
     "hook": "You're really budgeting for two.",
-    "items": ["A cage sized for two", "Hay and pellets", "Fresh vegetables", "Bedding", "Vitamin C", "Exotic vet visits"],
+    "items": [
+      "A cage sized for two",
+      "Hay and pellets",
+      "Fresh vegetables",
+      "Bedding",
+      "Vitamin C",
+      "Exotic vet visits"
+    ],
     "cta": "Every price, line by line, at"
   },
   {
-    "layout": "cost", "out": "hamster-real-cost",
+    "layout": "cost",
+    "out": "hamster-real-cost",
     "image": "public/assets/images/hamster-cost.jpg",
-    "kicker": "Cost guide", "title": "What a Hamster Really Costs",
+    "kicker": "Cost guide",
+    "title": "What a Hamster Really Costs",
     "hook": "The cheapest animal, not the cheapest pet.",
-    "items": ["A big enclosure", "Deep bedding", "A wheel", "Bath sand", "Food and hay", "Exotic vet visits"],
+    "items": [
+      "A big enclosure",
+      "Deep bedding",
+      "A wheel",
+      "Bath sand",
+      "Food and hay",
+      "Exotic vet visits"
+    ],
     "cta": "Every price, line by line, at"
   },
   {
-    "layout": "cost", "out": "corn-snake-real-cost",
+    "layout": "cost",
+    "out": "corn-snake-real-cost",
     "image": "public/assets/images/corn-snake-cost.jpg",
-    "kicker": "Cost guide", "title": "What a Corn Snake Really Costs",
+    "kicker": "Cost guide",
+    "title": "What a Corn Snake Really Costs",
     "hook": "Cheap to run for two decades.",
-    "items": ["Enclosure", "Thermostat", "Frozen mice", "Substrate", "Electricity", "Vet exams"],
+    "items": [
+      "Enclosure",
+      "Thermostat",
+      "Frozen mice",
+      "Substrate",
+      "Electricity",
+      "Vet exams"
+    ],
     "cta": "Every price, line by line, at"
   }
 ]

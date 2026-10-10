@@ -211,11 +211,22 @@ function costSvg(spec) {
   return { svg, note: `${spec.items.length} items` };
 }
 
+// Crops the source to W x h. Sharp's attention crop picks the busiest region,
+// which on a thin strip can be the wrong one (a fennec's ears, not its face).
+// "focusY": 0 to 1 in the spec pins the vertical center of the crop instead,
+// as a share of the photo's height, for both the pin and the 4x5 render.
+async function crop(spec, h) {
+  if (spec.focusY == null) return sharp(spec.image).resize(W, h, { fit: 'cover', position: 'attention' }).toBuffer();
+  const meta = await sharp(spec.image).metadata();
+  const scaledH = Math.round(meta.height * (W / meta.width));
+  if (scaledH <= h) return sharp(spec.image).resize(W, h, { fit: 'cover' }).toBuffer();
+  const top = Math.min(scaledH - h, Math.max(0, Math.round(spec.focusY * scaledH - h / 2)));
+  return sharp(spec.image).resize(W, scaledH).extract({ left: 0, top, width: W, height: h }).toBuffer();
+}
+
 async function renderPanel(spec, build) {
   const { svg, note } = build(spec);
-  const strip = await sharp(spec.image)
-    .resize(W, STRIP_H, { fit: 'cover', position: 'attention' })
-    .toBuffer();
+  const strip = await crop(spec, STRIP_H);
   const file = path.join(outDir, `${spec.out}${SUFFIX}.jpg`);
   await sharp({ create: { width: W, height: H, channels: 3, background: CREAM } })
     .composite([
@@ -255,9 +266,7 @@ for (const spec of specs) {
     <text x="80" y="${H - 62}" font-family="Atkinson-Bold" font-size="34" fill="${ORANGE}">BeastlyFacts.com</text>
   </svg>`;
 
-  const photo = await sharp(spec.image)
-    .resize(W, PHOTO_H, { fit: 'cover', position: 'attention' })
-    .toBuffer();
+  const photo = await crop(spec, PHOTO_H);
 
   await sharp({ create: { width: W, height: H, channels: 3, background: CREAM } })
     .composite([
