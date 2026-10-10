@@ -27,9 +27,15 @@ beats volume.
    sometimes, avoid). Panels refuse any "$" or cost token: a pin outlives the
    cost sheet and the law it would quote. Samples are in
    `social-batches/pinterest-layout-samples.json`.
+   Every card carries "Illustrated with AI" in small muted text in the bottom
+   right corner (owner, 2026-10-10: honest, and quiet enough not to read as
+   a warning). A card on a real licensed photo from IMAGE_CREDITS.md sets
+   `"ai": false` in its spec and drops it. `"focusY"` (0 to 1) pins the crop
+   when automatic cropping loses the animal.
 4. Fonts: the generator renders through fontconfig. Instance the site's
    variable fonts once per machine/session (Schibsted Grotesk at wght 700 as
-   "Schibsted-Bold", Atkinson Hyperlegible Next at 700 as "Atkinson-Bold", via fonttools
+   "Schibsted-Bold", Atkinson Hyperlegible Next at 700 as "Atkinson-Bold" and
+   at 400 as "Atkinson-Regular", via fonttools
    instancer into ~/.fonts, then `fc-cache -f`), or titles fall back to
    DejaVu. On the Windows desktop the instanced TTFs and a `fonts.conf`
    pointing at them live in `%LOCALAPPDATA%\beastly-pin-fonts`; run the

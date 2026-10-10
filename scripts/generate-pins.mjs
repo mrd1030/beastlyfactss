@@ -105,7 +105,7 @@ function panelHead(spec) {
 // are generated; a spec using a real photo sets "ai": false.
 function aiTag(spec) {
   if (spec.ai === false) return '';
-  return `<text x="${W - 40}" y="${H - 22}" text-anchor="end" font-family="Atkinson-Regular" font-size="20" fill="${INK}" fill-opacity="0.5">Image made with AI</text>`;
+  return `<text x="${W - 40}" y="${H - 22}" text-anchor="end" font-family="Atkinson-Regular" font-size="20" fill="${INK}" fill-opacity="0.5">Illustrated with AI</text>`;
 }
 
 const footer = (cta) => `<text x="80" y="${H - 62}" font-family="Atkinson-Bold" font-size="34" fill="${INK}">${esc(cta)} <tspan fill="${ORANGE}">BeastlyFacts.com</tspan></text>`;
