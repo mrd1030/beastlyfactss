@@ -275,10 +275,24 @@ it goes in that row's Comment(s) column joined by ||, and each fires
 automatically in order once the main post goes live. See Publer CSV below.
 
 --- IMAGES ---
-Use the source's frontmatter `image` verbatim. Never invent a path. Prefer a
-real Dex or Otis photo (/assets/images/dex/...) when the topic allows. Never
-reuse one image across two posts in the same week. Flag any post where the
-image does not actually show what the post claims.
+Since 2026-10-11 every post carries a card, not a bare photo (owner: the
+cards are the visual, text-only reach was poor). Cards come from
+scripts/generate-pins.mjs rendered with `--4x5` (1000x1250) and uploaded
+with scripts/upload-pins.mjs, so the media url is
+https://pins.beastlyfacts.com/<out>-4x5.jpg.
+  ARTICLE posts: the layout that fits the source, same rules as Pinterest
+  (docs/pinterest-feed.md): checklist for tank setup, feeding tiers, numbered
+  for fun facts and enrichment, cost with a hook and never a price, legal
+  with the question and never the verdict, photo card for comparisons. If a
+  Pinterest card already exists for that source, render its spec at 4x5
+  rather than writing a new one.
+  FACT posts: the photo card (fact photo + a six word headline). The post
+  text states the fact, so the headline here may state it too.
+The card's photo is still the source's own image: frontmatter `image` for
+articles, the fact's photo for facts. Never invent a path, never reuse one
+image across two posts in the same week, and flag any card whose photo does
+not show what the post claims. A strip crop that loses the animal (only
+ears showing) gets a different photo.
 
 =====================================================================
 OUTPUT FORMAT. Nothing outside these sections.

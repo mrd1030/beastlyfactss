@@ -42,8 +42,14 @@ import path from 'node:path';
 import sharp from 'sharp';
 
 const W = 1000;
-const H = 1500;
-const PHOTO_H = 940;
+// --4x5 renders the same cards at 1000x1250 for X and Threads feeds, where a
+// 2:3 pin is too tall: a shorter photo, tighter rows, files named <out>-4x5.jpg.
+const FEED = process.argv.includes('--4x5');
+const H = FEED ? 1250 : 1500;
+const PHOTO_H = FEED ? 700 : 940;
+const ROW_H = FEED ? 78 : 84;
+const TIER_GAP = FEED ? 70 : 92;
+const SUFFIX = FEED ? '-4x5' : '';
 // The site's light theme, mirrored: warm cream ground, deep green ink,
 // the deepened brand orange used for links and accents.
 const CREAM = '#F9F1E1';
@@ -52,7 +58,7 @@ const ORANGE = '#B5491B';
 
 const specPath = process.argv[2];
 if (!specPath) {
-  console.error('usage: node scripts/generate-pins.mjs <spec.json>');
+  console.error('usage: node scripts/generate-pins.mjs <spec.json> [--4x5]');
   process.exit(1);
 }
 const specs = JSON.parse(fs.readFileSync(specPath, 'utf8'));
@@ -81,8 +87,8 @@ function layoutTitle(title, sizes = [76, 68, 60, 52], maxLines = 3) {
 
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
-// Checklist and cost pins: a 1000x520 photo strip, then the panel.
-const STRIP_H = 520;
+// Text-forward panels: a photo strip (1000x520, or 1000x290 at 4x5), then the panel.
+const STRIP_H = FEED ? 290 : 520;
 
 function panelHead(spec) {
   const { size, lines } = layoutTitle(spec.title, [68, 62, 56], 2);
@@ -109,7 +115,7 @@ function hookLines(text, top) {
 // The footer baseline sits at H - 62; a row below this line collides with it.
 const PANEL_FLOOR = H - 128;
 
-function checkRows(items, first, rowH = 84) {
+function checkRows(items, first, rowH = ROW_H) {
   if (first + (items.length - 1) * rowH > PANEL_FLOOR) throw new Error(`${items.length} rows run into the footer, cut one`);
   return items.map((item, i) => {
     const y = first + i * rowH;
@@ -178,10 +184,10 @@ function feedingSvg(spec) {
     const lines = wrapText(tier.foods, 40);
     const out = `${label(tier.label, y)}
     ${lines.map((l, i) => `<text x="80" y="${y + 58 + i * 50}" font-family="Atkinson-Bold" font-size="40" fill="${INK}">${esc(l)}</text>`).join('\n')}`;
-    y += 58 + (lines.length - 1) * 50 + 92;
+    y += 58 + (lines.length - 1) * 50 + TIER_GAP;
     return out;
   }).join('\n');
-  if (y - 92 > PANEL_FLOOR) throw new Error('tiers run into the footer, shorten the food lists');
+  if (y - TIER_GAP > PANEL_FLOOR) throw new Error('tiers run into the footer, shorten the food lists');
   return { svg: `${head.svg}\n${tiers}\n${footer(spec.cta)}`, note: `${spec.tiers.length} tiers` };
 }
 
@@ -210,7 +216,7 @@ async function renderPanel(spec, build) {
   const strip = await sharp(spec.image)
     .resize(W, STRIP_H, { fit: 'cover', position: 'attention' })
     .toBuffer();
-  const file = path.join(outDir, `${spec.out}.jpg`);
+  const file = path.join(outDir, `${spec.out}${SUFFIX}.jpg`);
   await sharp({ create: { width: W, height: H, channels: 3, background: CREAM } })
     .composite([
       { input: strip, top: 0, left: 0 },
@@ -219,7 +225,7 @@ async function renderPanel(spec, build) {
     .jpeg({ quality: 78, mozjpeg: true })
     .toFile(file);
   const kb = Math.round(fs.statSync(file).size / 1024);
-  console.log(`pin: ${spec.out}.jpg (${spec.layout}, ${note}, ${kb}KB)`);
+  console.log(`pin: ${spec.out}${SUFFIX}.jpg (${spec.layout}, ${note}, ${kb}KB)`);
 }
 
 const LAYOUTS = { checklist: checklistSvg, cost: costSvg, numbered: numberedSvg, legal: legalSvg, feeding: feedingSvg };
@@ -259,9 +265,9 @@ for (const spec of specs) {
       { input: Buffer.from(svg), top: 0, left: 0 },
     ])
     .jpeg({ quality: 78, mozjpeg: true })
-    .toFile(path.join(outDir, `${spec.out}.jpg`));
+    .toFile(path.join(outDir, `${spec.out}${SUFFIX}.jpg`));
 
-  const kb = Math.round(fs.statSync(path.join(outDir, `${spec.out}.jpg`)).size / 1024);
-  console.log(`pin: ${spec.out}.jpg (${size}px title, ${lines.length} lines, ${kb}KB)`);
+  const kb = Math.round(fs.statSync(path.join(outDir, `${spec.out}${SUFFIX}.jpg`)).size / 1024);
+  console.log(`pin: ${spec.out}${SUFFIX}.jpg (${size}px title, ${lines.length} lines, ${kb}KB)`);
 }
 console.log(`${specs.length} pins in ${outDir}`);

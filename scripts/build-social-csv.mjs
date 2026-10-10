@@ -52,7 +52,8 @@ import path from 'path';
 
 const PLATFORMS = ['x', 'ig', 'threads', 'pinterest'];
 const SITE = 'https://beastlyfacts.com';
-// Pin cards live in the beastlyfacts-pins R2 bucket behind this domain, so a
+// Cards (pins, and the 4x5 feed cards X and Threads use) live in the
+// beastlyfacts-pins R2 bucket behind this domain, so a
 // batch never waits on a site deploy (scripts/upload-pins.mjs). Cards from
 // before 2026-10-11 still sit under SITE/assets/pins/ and stay valid.
 const PINS = 'https://pins.beastlyfacts.com';
@@ -133,7 +134,7 @@ function validate(batch, file) {
     if (!Array.isArray(media) || media.length === 0) err(i, 'missing media, expected at least one url');
     media.forEach(m => {
       if (!/^https:\/\//.test(m)) err(i, `media url must be a full https url, got ${JSON.stringify(m)}`);
-      else if (!m.startsWith(SITE + '/') && !(isPin(batch) && m.startsWith(PINS + '/'))) err(i, `media url is not on ${SITE}: ${m}`);
+      else if (!m.startsWith(SITE + '/') && !m.startsWith(PINS + '/')) err(i, `media url is not on ${SITE} or ${PINS}: ${m}`);
       if (seenMedia.has(m)) err(i, `image reused from post ${seenMedia.get(m) + 1}: ${m}`);
       else seenMedia.set(m, i);
     });

@@ -322,8 +322,12 @@ CSV columns (Publer's 12-column bulk template, do not remove or reorder any):
                 and produces a link-preview post instead of the native image
                 this format exists to deliver. Confirmed: an empty Link(s)
                 column is what makes the image attach natively.
-  Media URL(s)  the FULL https://beastlyfacts.com/... path, not the
-                relative frontmatter path. Must be a real, live, public
+  Media URL(s)  the card: https://pins.beastlyfacts.com/<out>-4x5.jpg. Since
+                2026-10-11 every post carries a 4x5 card, not a bare photo;
+                the card rules (which layout, no prices, no legal verdicts,
+                the source's own photo) are the IMAGES block in
+                .claude/commands/x-feed.md. Upload before building the CSV,
+                not the relative frontmatter path. Must be a real, live, public
                 URL. Confirmed working before use, never assumed correct
                 from the path alone.
   Comment(s)    every FACT post carries two, joined by ||: the SELF REPLY
